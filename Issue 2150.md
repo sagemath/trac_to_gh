@@ -3,7 +3,7 @@
 archive/issues_002150.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nThe best compression I got was with the following command\n\n\nc:\\\"program files\"\\7-zip\\7z a -t7z sage.7z sage -mx=9 -mfb=256\n\n\nthis breaks down as follows :  c:\\\"program files\"\\7-zip\\7z : path to the executable\n                           : 7z requires \"dll's\" 7za is complete\n                           : a : this is the add command\n                           : -t7z : use LZMA compression\n                           : sage.7z : output file name\n                           : sage  : input directory name\n                           : -mx9  : use ultra compression options\n                           : -mfb=256 : increase bit compare string to 256 bytes\ntime differential from base compression is roughly 30% 1:20 VS 1:00\n\nthis cuts the size from 522 to about 467\n\nI hope this is useful It should save your downloaders 10min to who knows what\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2150\n\n",
+    "body": "Assignee: mabshoff\n\n```\nThe best compression I got was with the following command\n\n\nc:\\\"program files\"\\7-zip\\7z a -t7z sage.7z sage -mx=9 -mfb=256\n\n\nthis breaks down as follows :  c:\\\"program files\"\\7-zip\\7z : path to the executable\n                           : 7z requires \"dll's\" 7za is complete\n                           : a : this is the add command\n                           : -t7z : use LZMA compression\n                           : sage.7z : output file name\n                           : sage  : input directory name\n                           : -mx9  : use ultra compression options\n                           : -mfb=256 : increase bit compare string to 256 bytes\ntime differential from base compression is roughly 30% 1:20 VS 1:00\n\nthis cuts the size from 522 to about 467\n\nI hope this is useful It should save your downloaders 10min to who knows what\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2150\n\n",
     "created_at": "2008-02-13T20:18:22Z",
     "labels": [
         "component: distribution"
@@ -16,7 +16,6 @@ archive/issues_002150.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 The best compression I got was with the following command
@@ -41,7 +40,6 @@ I hope this is useful It should save your downloaders 10min to who knows what
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2150
 

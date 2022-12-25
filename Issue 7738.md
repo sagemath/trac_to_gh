@@ -3,7 +3,7 @@
 archive/issues_007738.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nMichael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:\n\n```\noptional/graphviz-2.16.1.p0.txt: * Michael Abshoff\noptional/guppy-0.1.8.txt: * Michael Abshoff\noptional/jsmath-image-fonts-1.4.p2.txt: * Michael Abshoff\noptional/lrs-4.2b.p1.txt: * Michael Abshoff\noptional/valgrind_3.3.1.txt: * Michael Abshoff\nstandard/boost-cropped-1.34.1.txt: * Michael Abshoff\nstandard/eclib-20080310.p7.txt: * Michael Abshoff\nstandard/ecm-6.2.1.p1.txt: * Michael Abshoff\nstandard/gap-4.4.10.p12.txt: * Michael Abshoff\nstandard/gdmodule-0.56.p6.txt: * Michael Abshoff\nstandard/gsl-1.10.p1.txt: * Michael Abshoff\nstandard/iml-1.0.1.p11.txt: * Michael Abshoff\nstandard/ipython-0.9.1.p0.txt: * Michael Abshoff\nstandard/libfplll-3.0.12.p0.txt: * Michael Abshoff\nstandard/libpng-1.2.35.txt: * Michael Abshoff\nstandard/mpfr-2.4.1.p0.txt: * Michael Abshoff \nstandard/networkx-0.99.p1-fake_really-0.36.p1.txt: * Michael Abshoff\nstandard/ntl-5.4.2.p9.txt: * Michael Abshoff\nstandard/numpy-1.3.0.p2.txt:  Michael Abshoff\nstandard/pari-2.3.3.p5.txt: * Michael Abshoff\nstandard/polybori-0.6.3-20090827.txt: * Michael Abshoff\nstandard/pynac-0.1.9.p0.txt: * Michael Abshoff \nstandard/python-2.6.2.p4.txt: * Included a fix by Michael Abshoff: patch posixmodule.c to avoid an\nstandard/scipy_sandbox-20071020.p4.txt: * Michael Abshoff\nstandard/scons-1.2.0.txt: * Michael Abshoff\nstandard/setuptools-0.6c9.p0.txt: * Michael Abshoff\nstandard/symmetrica-2.0.p4.txt: * Michael Abshoff\nstandard/tachyon-0.98beta.p10.txt: * Michael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7738\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nMichael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:\n\n```\noptional/graphviz-2.16.1.p0.txt: * Michael Abshoff\noptional/guppy-0.1.8.txt: * Michael Abshoff\noptional/jsmath-image-fonts-1.4.p2.txt: * Michael Abshoff\noptional/lrs-4.2b.p1.txt: * Michael Abshoff\noptional/valgrind_3.3.1.txt: * Michael Abshoff\nstandard/boost-cropped-1.34.1.txt: * Michael Abshoff\nstandard/eclib-20080310.p7.txt: * Michael Abshoff\nstandard/ecm-6.2.1.p1.txt: * Michael Abshoff\nstandard/gap-4.4.10.p12.txt: * Michael Abshoff\nstandard/gdmodule-0.56.p6.txt: * Michael Abshoff\nstandard/gsl-1.10.p1.txt: * Michael Abshoff\nstandard/iml-1.0.1.p11.txt: * Michael Abshoff\nstandard/ipython-0.9.1.p0.txt: * Michael Abshoff\nstandard/libfplll-3.0.12.p0.txt: * Michael Abshoff\nstandard/libpng-1.2.35.txt: * Michael Abshoff\nstandard/mpfr-2.4.1.p0.txt: * Michael Abshoff \nstandard/networkx-0.99.p1-fake_really-0.36.p1.txt: * Michael Abshoff\nstandard/ntl-5.4.2.p9.txt: * Michael Abshoff\nstandard/numpy-1.3.0.p2.txt:  Michael Abshoff\nstandard/pari-2.3.3.p5.txt: * Michael Abshoff\nstandard/polybori-0.6.3-20090827.txt: * Michael Abshoff\nstandard/pynac-0.1.9.p0.txt: * Michael Abshoff \nstandard/python-2.6.2.p4.txt: * Included a fix by Michael Abshoff: patch posixmodule.c to avoid an\nstandard/scipy_sandbox-20071020.p4.txt: * Michael Abshoff\nstandard/scons-1.2.0.txt: * Michael Abshoff\nstandard/setuptools-0.6c9.p0.txt: * Michael Abshoff\nstandard/symmetrica-2.0.p4.txt: * Michael Abshoff\nstandard/tachyon-0.98beta.p10.txt: * Michael Abshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7738\n\n",
     "created_at": "2009-12-18T22:04:03Z",
     "labels": [
         "component: packages: standard",
@@ -53,7 +53,6 @@ standard/setuptools-0.6c9.p0.txt: * Michael Abshoff
 standard/symmetrica-2.0.p4.txt: * Michael Abshoff
 standard/tachyon-0.98beta.p10.txt: * Michael Abshoff
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7738
 
@@ -331,7 +330,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066377.json:
 ```json
 {
-    "body": "missing one:\n\n```\ngrep -r --include=\"*.txt\" \"* Michael Abshoff\" .\n./scons/SPKG.txt: * Michael Abshoff\n./tachyon/SPKG.txt: * Michael Abshoff\n./setuptools/SPKG.txt: * Michael Abshoff\n./boost_cropped/SPKG.txt: * Michael Abshoff\n\n```\n",
+    "body": "missing one:\n\n```\ngrep -r --include=\"*.txt\" \"* Michael Abshoff\" .\n./scons/SPKG.txt: * Michael Abshoff\n./tachyon/SPKG.txt: * Michael Abshoff\n./setuptools/SPKG.txt: * Michael Abshoff\n./boost_cropped/SPKG.txt: * Michael Abshoff\n\n```",
     "created_at": "2015-01-18T16:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
@@ -350,7 +349,6 @@ grep -r --include="*.txt" "* Michael Abshoff" .
 ./boost_cropped/SPKG.txt: * Michael Abshoff
 
 ```
-
 
 
 
@@ -431,7 +429,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_066382.json:
 ```json
 {
-    "body": "if you agree, please set this to positive review\n----\nNew commits:",
+    "body": "if you agree, please set this to positive review\n\n---\nNew commits:",
     "created_at": "2015-01-21T08:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
@@ -441,7 +439,8 @@ archive/issue_comments_066382.json:
 ```
 
 if you agree, please set this to positive review
-----
+
+---
 New commits:
 
 
@@ -451,7 +450,7 @@ New commits:
 archive/issue_comments_066383.json:
 ```json
 {
-    "body": "Couldn't you just remove\n\n```\n## Maintainers\n\nNone\n```\n\ncompletely?",
+    "body": "Couldn't you just remove\n\n```\n## Maintainers\n\nNone\n```\ncompletely?",
     "created_at": "2015-01-21T09:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
@@ -467,7 +466,6 @@ Couldn't you just remove
 
 None
 ```
-
 completely?
 
 

@@ -103,7 +103,7 @@ Nathann
 archive/issue_comments_056216.json:
 ```json
 {
-    "body": "Hi Nathann,\n\nI like the new names for the vertices, and it looks much better for graphs with low edge probability the way you are doing it now.  Some more comments:\n\n1.  Checking for errors usually involves raising an error, rather than using an assert.  Poke around in the code and I think you will see more often a style like:\n\n\n```\nif not((p>=0 and p<=1):\n  raise ValueError, \"Parameter p is a probability, and so should be a real value between 0 and 1\"\n```\n\n\nI'd place them after the imports, but that's just me.\n\n2.  You need to paste in the output of your test.  Right now it is failing.  You really should make sure all your tests pass before someone stops in to do a review.\n\n3.  You should also test the two checks on the input - in a section called `TESTS`\n\n4.  Your EXAMPLE section needs to have two semicolons to create the verbatim section, so at least you need a `::` on a line by itself prior to each test.  (Maybe two semicolons right after EXAMPLE will work as well - I'm having trouble checking this right now with my setup.)  This ensures you get the right formatting in the reference manual.  Again, take a look at what is done elsewhere in the source and compare with the output, then make sure your output also works properly before seeking a review.\n\nI think most of the above applies to #6823, which I haven't commented on.  Adding the Odd graphs there is great, though.\n\nRob",
+    "body": "Hi Nathann,\n\nI like the new names for the vertices, and it looks much better for graphs with low edge probability the way you are doing it now.  Some more comments:\n\n1.  Checking for errors usually involves raising an error, rather than using an assert.  Poke around in the code and I think you will see more often a style like:\n\n```\nif not((p>=0 and p<=1):\n  raise ValueError, \"Parameter p is a probability, and so should be a real value between 0 and 1\"\n```\n\nI'd place them after the imports, but that's just me.\n\n2.  You need to paste in the output of your test.  Right now it is failing.  You really should make sure all your tests pass before someone stops in to do a review.\n\n3.  You should also test the two checks on the input - in a section called `TESTS`\n\n4.  Your EXAMPLE section needs to have two semicolons to create the verbatim section, so at least you need a `::` on a line by itself prior to each test.  (Maybe two semicolons right after EXAMPLE will work as well - I'm having trouble checking this right now with my setup.)  This ensures you get the right formatting in the reference manual.  Again, take a look at what is done elsewhere in the source and compare with the output, then make sure your output also works properly before seeking a review.\n\nI think most of the above applies to #6823, which I haven't commented on.  Adding the Odd graphs there is great, though.\n\nRob",
     "created_at": "2009-09-27T06:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
@@ -118,12 +118,10 @@ I like the new names for the vertices, and it looks much better for graphs with 
 
 1.  Checking for errors usually involves raising an error, rather than using an assert.  Poke around in the code and I think you will see more often a style like:
 
-
 ```
 if not((p>=0 and p<=1):
   raise ValueError, "Parameter p is a probability, and so should be a real value between 0 and 1"
 ```
-
 
 I'd place them after the imports, but that's just me.
 

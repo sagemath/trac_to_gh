@@ -3,7 +3,7 @@
 archive/issues_000501.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThese are all from Ifti:\n\n\nThe original code at\n\nhttp://www.sagemath.org:9002/sage_trac/ticket/274\n\n\n```\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n'281M'\n```\n\n\nnow only leaks about 0.1MB, but extending the for loop range from 10**3\nto 10**5 leaks about 6.3MB!\n\nAlso the following code\n\n\n```\ndef Supercomp():\n   p=ZZ(10**5).next_prime()\n   szfilename = \"timings100k.txt\"\n   mem_szfilename = \"memory100k.txt\"\n   while true:\n       t = cputime()\n       M = get_memory_usage()\n       X = SupersingularModule(p)\n       X.hecke_matrix(2)\n       f = open(szfilename, 'a')\n       f.write(str([p, cputime(t)]) + \", \")\n       f.close()\n       g = open(mem_szfilename, 'a')\n       g.write(str([p, get_memory_usage()-M]) + \", \")\n       g.close()\n       X.save('X' + str(p))\n       p = ZZ(p).next_prime()\n\nSupercomp()\n```\n\n\nhad consumed 20% of memory on sage.math after a day of computation and I\nhad to kill it.\n\n### PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n24320 burhanud  39  19 12.2g  11g  15m R  100 18.9   1453:36 sage-ipython\n### I'll have to spend some time to pin down where the leaks are.\n\nRegards,\nIfti\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/501\n\n",
+    "body": "Assignee: somebody\n\nThese are all from Ifti:\n\n\nThe original code at\n\nhttp://www.sagemath.org:9002/sage_trac/ticket/274\n\n```\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n'281M'\n```\n\nnow only leaks about 0.1MB, but extending the for loop range from 10**3\nto 10**5 leaks about 6.3MB!\n\nAlso the following code\n\n```\ndef Supercomp():\n   p=ZZ(10**5).next_prime()\n   szfilename = \"timings100k.txt\"\n   mem_szfilename = \"memory100k.txt\"\n   while true:\n       t = cputime()\n       M = get_memory_usage()\n       X = SupersingularModule(p)\n       X.hecke_matrix(2)\n       f = open(szfilename, 'a')\n       f.write(str([p, cputime(t)]) + \", \")\n       f.close()\n       g = open(mem_szfilename, 'a')\n       g.write(str([p, get_memory_usage()-M]) + \", \")\n       g.close()\n       X.save('X' + str(p))\n       p = ZZ(p).next_prime()\n\nSupercomp()\n```\n\nhad consumed 20% of memory on sage.math after a day of computation and I\nhad to kill it.\n\n### PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n24320 burhanud  39  19 12.2g  11g  15m R  100 18.9   1453:36 sage-ipython\n### I'll have to spend some time to pin down where the leaks are.\n\nRegards,\nIfti\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/501\n\n",
     "created_at": "2007-08-28T19:53:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ The original code at
 
 http://www.sagemath.org:9002/sage_trac/ticket/274
 
-
 ```
 sage: get_memory_usage()
 '276M'
@@ -39,12 +38,10 @@ sage: get_memory_usage()
 '281M'
 ```
 
-
 now only leaks about 0.1MB, but extending the for loop range from 10**3
 to 10**5 leaks about 6.3MB!
 
 Also the following code
-
 
 ```
 def Supercomp():
@@ -68,7 +65,6 @@ def Supercomp():
 Supercomp()
 ```
 
-
 had consumed 20% of memory on sage.math after a day of computation and I
 had to kill it.
 
@@ -91,7 +87,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/501
 archive/issue_comments_002490.json:
 ```json
 {
-    "body": "Some of this is caused by __repr__ in ntl.pyx.  Demo code:\n\n\n```\nntl.set_modulus(ntl.ZZ(20)) \nf = ntl.ZZ_pX(range(10000))\nt = get_memory_usage()\nfor i in range(100):\n    s = str(f)\nprint get_memory_usage(t)\n///\nbig bad number\n```\n\n\nThe fix is to change the repr methods to look like this:\n\n\n```\n    def __repr__(self):\n        cdef char* s = ZZ_pX_repr(self.x)\n        t = str(s)\n        free(s)\n        return t\n```\n\n\n*except* that we must use C++'s delete rather than malloc's free here.",
+    "body": "Some of this is caused by __repr__ in ntl.pyx.  Demo code:\n\n```\nntl.set_modulus(ntl.ZZ(20)) \nf = ntl.ZZ_pX(range(10000))\nt = get_memory_usage()\nfor i in range(100):\n    s = str(f)\nprint get_memory_usage(t)\n///\nbig bad number\n```\n\nThe fix is to change the repr methods to look like this:\n\n```\n    def __repr__(self):\n        cdef char* s = ZZ_pX_repr(self.x)\n        t = str(s)\n        free(s)\n        return t\n```\n\n*except* that we must use C++'s delete rather than malloc's free here.",
     "created_at": "2007-08-29T01:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/501",
     "type": "issue_comment",
@@ -101,7 +97,6 @@ archive/issue_comments_002490.json:
 ```
 
 Some of this is caused by __repr__ in ntl.pyx.  Demo code:
-
 
 ```
 ntl.set_modulus(ntl.ZZ(20)) 
@@ -114,9 +109,7 @@ print get_memory_usage(t)
 big bad number
 ```
 
-
 The fix is to change the repr methods to look like this:
-
 
 ```
     def __repr__(self):
@@ -125,7 +118,6 @@ The fix is to change the repr methods to look like this:
         free(s)
         return t
 ```
-
 
 *except* that we must use C++'s delete rather than malloc's free here.
 
@@ -136,7 +128,7 @@ The fix is to change the repr methods to look like this:
 archive/issue_comments_002491.json:
 ```json
 {
-    "body": "The biggest problem is in the ntl wrapper:\n\n```\n==22784== 791,674 bytes in 65,421 blocks are definitely lost in loss record 2,472 of 2,481\n==22784==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)\n==22784==    by 0x9280247: ZZ_pX_repr (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libcsage.so.0.0.0)\n==22784==    by 0x176D6D57: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6216)\n==22784==    by 0x443C61: _PyObject_Str (object.c:406)\n==22784==    by 0x443D0A: PyObject_Str (object.c:426)\n==22784==    by 0x44EA8F: string_new (stringobject.c:3892)\n==22784==    by 0x45A272: type_call (typeobject.c:422)\n==22784==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==22784==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==22784==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==22784==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==22784==    by 0x4CFF37: function_call (funcobject.c:517)\n```\n\nCheers,\n\nMichael",
+    "body": "The biggest problem is in the ntl wrapper:\n\n```\n==22784== 791,674 bytes in 65,421 blocks are definitely lost in loss record 2,472 of 2,481\n==22784==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)\n==22784==    by 0x9280247: ZZ_pX_repr (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libcsage.so.0.0.0)\n==22784==    by 0x176D6D57: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6216)\n==22784==    by 0x443C61: _PyObject_Str (object.c:406)\n==22784==    by 0x443D0A: PyObject_Str (object.c:426)\n==22784==    by 0x44EA8F: string_new (stringobject.c:3892)\n==22784==    by 0x45A272: type_call (typeobject.c:422)\n==22784==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==22784==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==22784==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==22784==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==22784==    by 0x4CFF37: function_call (funcobject.c:517)\n```\nCheers,\n\nMichael",
     "created_at": "2007-08-29T11:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/501",
     "type": "issue_comment",
@@ -162,7 +154,6 @@ The biggest problem is in the ntl wrapper:
 ==22784==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)
 ==22784==    by 0x4CFF37: function_call (funcobject.c:517)
 ```
-
 Cheers,
 
 Michael
@@ -210,7 +201,7 @@ Changing component from basic arithmetic to memleak.
 archive/issue_comments_002494.json:
 ```json
 {
-    "body": "Hello,\n\nI looked at the first bit of code with 2.8.3rc3:\n\n```\nsage: get_memory_usage()\n577.2734375\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(10**5):\n....:        s = K.random_element(); t = K.random_element()\n....:    poly = s + t*X\n....:\nsage: get_memory_usage()\n581.1953125\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\n```\n\nNotice that the RAM consumption grows by 6 MB after the first round and then a little bit after the second. After that the RAM consumption stays consistent. The reason for the initial growth is python internal, so there is little we can do short term. I am planning to look into this in the long term, but there are still \"low hanging fruits\" memleak-wise in sage to fix.\n\nI am about to revisit the second computation. Stay tuned.\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\nI looked at the first bit of code with 2.8.3rc3:\n\n```\nsage: get_memory_usage()\n577.2734375\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(10**5):\n....:        s = K.random_element(); t = K.random_element()\n....:    poly = s + t*X\n....:\nsage: get_memory_usage()\n581.1953125\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\nsage: for i in range(10**5):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n581.63671875\n```\nNotice that the RAM consumption grows by 6 MB after the first round and then a little bit after the second. After that the RAM consumption stays consistent. The reason for the initial growth is python internal, so there is little we can do short term. I am planning to look into this in the long term, but there are still \"low hanging fruits\" memleak-wise in sage to fix.\n\nI am about to revisit the second computation. Stay tuned.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-30T16:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/501",
     "type": "issue_comment",
@@ -253,7 +244,6 @@ sage: for i in range(10**5):
 sage: get_memory_usage()
 581.63671875
 ```
-
 Notice that the RAM consumption grows by 6 MB after the first round and then a little bit after the second. After that the RAM consumption stays consistent. The reason for the initial growth is python internal, so there is little we can do short term. I am planning to look into this in the long term, but there are still "low hanging fruits" memleak-wise in sage to fix.
 
 I am about to revisit the second computation. Stay tuned.
@@ -285,7 +275,7 @@ archive/issue_events_001278.json:
 archive/issue_comments_002495.json:
 ```json
 {
-    "body": "And the other half passes Valgrind, too:\n\n```\nsage: def Supercomp():\n....:        p=ZZ(10**5).next_prime()\n....:    for i in range(4):\n....:          print(i)\n....:      print get_memory_usage()\n....:      t = cputime()\n....:      X = SupersingularModule(p)\n....:      X.hecke_matrix(2)\n....:      p = ZZ(p).next_prime()\n....:      print get_memory_usage()\n....:\nsage: Supercomp(); quit\n0\n741.2421875\n764.8984375\n1\n764.8984375\n768.6484375\n2\n768.6484375\n768.6484375\n3\n768.6484375\n768.6328125\n```\n\nI removed the whole writing to file bit. If that causes leaks we can open another ticket for that.\n\nI am closing the ticket for 2.8.3\n\nCheers,\n\nMichael",
+    "body": "And the other half passes Valgrind, too:\n\n```\nsage: def Supercomp():\n....:        p=ZZ(10**5).next_prime()\n....:    for i in range(4):\n....:          print(i)\n....:      print get_memory_usage()\n....:      t = cputime()\n....:      X = SupersingularModule(p)\n....:      X.hecke_matrix(2)\n....:      p = ZZ(p).next_prime()\n....:      print get_memory_usage()\n....:\nsage: Supercomp(); quit\n0\n741.2421875\n764.8984375\n1\n764.8984375\n768.6484375\n2\n768.6484375\n768.6484375\n3\n768.6484375\n768.6328125\n```\nI removed the whole writing to file bit. If that causes leaks we can open another ticket for that.\n\nI am closing the ticket for 2.8.3\n\nCheers,\n\nMichael",
     "created_at": "2007-08-30T20:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/501",
     "type": "issue_comment",
@@ -322,7 +312,6 @@ sage: Supercomp(); quit
 768.6484375
 768.6328125
 ```
-
 I removed the whole writing to file bit. If that causes leaks we can open another ticket for that.
 
 I am closing the ticket for 2.8.3

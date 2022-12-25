@@ -3,7 +3,7 @@
 archive/issues_004940.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: z = K.zeta_function()\nsage: z(0)\nTraceback (most recent call last):\n...\nArithmeticError:   ###   user error: L*(s) has a pole at s=0\nsage: z(0.0000001)\n-4.40686861437826e-8\n```\n\n\nNotice that there is in fact a zero at s=0, not a pole as the ArithmeticError claims.\n\nIn fact, it's a theorem that there is a zero at s=0 of order the unit rank of the number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4940\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: z = K.zeta_function()\nsage: z(0)\nTraceback (most recent call last):\n...\nArithmeticError:   ###   user error: L*(s) has a pole at s=0\nsage: z(0.0000001)\n-4.40686861437826e-8\n```\n\nNotice that there is in fact a zero at s=0, not a pole as the ArithmeticError claims.\n\nIn fact, it's a theorem that there is a zero at s=0 of order the unit rank of the number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4940\n\n",
     "created_at": "2009-01-05T08:01:29Z",
     "labels": [
         "component: number theory",
@@ -18,7 +18,6 @@ archive/issues_004940.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: K.<a> = NumberField(x^2-2)
 sage: z = K.zeta_function()
@@ -29,7 +28,6 @@ ArithmeticError:   ###   user error: L*(s) has a pole at s=0
 sage: z(0.0000001)
 -4.40686861437826e-8
 ```
-
 
 Notice that there is in fact a zero at s=0, not a pole as the ArithmeticError claims.
 

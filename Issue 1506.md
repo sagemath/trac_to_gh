@@ -3,7 +3,7 @@
 archive/issues_001506.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is dumb:\n\n\n```\ndmharvey: i'm building sage-2.9alpha7, and there's a problem in the build log with the NTL build, but the rest of it seems to be going okay (for the moment)\n[06:49am] dmharvey: i686-apple-darwin8-g++-4.0.1: unrecognized option '-shared'\n[06:49am] dmharvey: _main\n[06:49am] dmharvey: ___gmpn_add_n\n[06:49am] dmharvey: ___gmpn_addmul_1\n[06:49am] dmharvey: ___gmpn_divrem_1\n[06:49am] dmharvey: ___gmpn_gcd\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1506\n\n",
+    "body": "Assignee: @williamstein\n\nThis is dumb:\n\n```\ndmharvey: i'm building sage-2.9alpha7, and there's a problem in the build log with the NTL build, but the rest of it seems to be going okay (for the moment)\n[06:49am] dmharvey: i686-apple-darwin8-g++-4.0.1: unrecognized option '-shared'\n[06:49am] dmharvey: _main\n[06:49am] dmharvey: ___gmpn_add_n\n[06:49am] dmharvey: ___gmpn_addmul_1\n[06:49am] dmharvey: ___gmpn_divrem_1\n[06:49am] dmharvey: ___gmpn_gcd\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1506\n\n",
     "created_at": "2007-12-14T17:11:11Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 This is dumb:
 
-
 ```
 dmharvey: i'm building sage-2.9alpha7, and there's a problem in the build log with the NTL build, but the rest of it seems to be going okay (for the moment)
 [06:49am] dmharvey: i686-apple-darwin8-g++-4.0.1: unrecognized option '-shared'
@@ -30,7 +29,6 @@ dmharvey: i'm building sage-2.9alpha7, and there's a problem in the build log wi
 [06:49am] dmharvey: ___gmpn_divrem_1
 [06:49am] dmharvey: ___gmpn_gcd
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1506
 

@@ -3,7 +3,7 @@
 archive/issues_007799.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI have done\n\n\n```\ninstall_scripts(\"/usr/local/bin/\")\n```\n\n\non a Ubuntu machine with installed Macaulay2 and it stopped working. Apparently, M2 is one of the scripts that the above command has copied and it tries to use M2 shipped with Sage. However, Sage does not include Macaulay2, the package for it is broken and the recommended way to use them together is to install Macaulay2 separately. This works fine before installing scripts and after, if I remove M2 from /usr/local/bin manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7799\n\n",
+    "body": "Assignee: tbd\n\nI have done\n\n```\ninstall_scripts(\"/usr/local/bin/\")\n```\n\non a Ubuntu machine with installed Macaulay2 and it stopped working. Apparently, M2 is one of the scripts that the above command has copied and it tries to use M2 shipped with Sage. However, Sage does not include Macaulay2, the package for it is broken and the recommended way to use them together is to install Macaulay2 separately. This works fine before installing scripts and after, if I remove M2 from /usr/local/bin manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7799\n\n",
     "created_at": "2009-12-31T01:50:51Z",
     "labels": [
         "component: distribution",
@@ -20,11 +20,9 @@ Assignee: tbd
 
 I have done
 
-
 ```
 install_scripts("/usr/local/bin/")
 ```
-
 
 on a Ubuntu machine with installed Macaulay2 and it stopped working. Apparently, M2 is one of the scripts that the above command has copied and it tries to use M2 shipped with Sage. However, Sage does not include Macaulay2, the package for it is broken and the recommended way to use them together is to install Macaulay2 separately. This works fine before installing scripts and after, if I remove M2 from /usr/local/bin manually.
 

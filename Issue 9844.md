@@ -3,7 +3,7 @@
 archive/issues_009844.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @rishikesha @nexttime @jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\n\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rishikesha @nexttime @jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
     "created_at": "2010-09-01T02:17:51Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ One needs to add
 ```
 #include <time.h> 
 ```
-
 to `include/Lcommandline_numbertheory.h`
 to get lcalc to build on cygwin.
 
@@ -120,7 +119,7 @@ Replacing `-lmpir` by `-lgmp` is perhaps a minor issue; using `$MAKE` instead of
 archive/issue_comments_096992.json:
 ```json
 {
-    "body": "P.S.:\n\n```\nall:\n#       make print_vars\n        make libLfunction.so\n        make lcalc\n        make examples\n#       make find_L\n#       make test\n```\n\nshould simply (for our purposes) be\n\n```\nall:    libLfunction.so lcalc examples\n```\n\nor even just\n\n```\nall:    lcalc examples\n```\n\nbut one has to add the proper dependency, i.e.:\n\n```\nexamples: libLfunction.so\n        $(CC) $(CCFLAGS) $(INCLUDEFILES) example_programs/example.cc libLfunction.so -o example_programs/example $(GMP_FLAGS)\n```\n",
+    "body": "P.S.:\n\n```\nall:\n#       make print_vars\n        make libLfunction.so\n        make lcalc\n        make examples\n#       make find_L\n#       make test\n```\nshould simply (for our purposes) be\n\n```\nall:    libLfunction.so lcalc examples\n```\nor even just\n\n```\nall:    lcalc examples\n```\nbut one has to add the proper dependency, i.e.:\n\n```\nexamples: libLfunction.so\n        $(CC) $(CCFLAGS) $(INCLUDEFILES) example_programs/example.cc libLfunction.so -o example_programs/example $(GMP_FLAGS)\n```",
     "created_at": "2010-09-02T00:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -140,26 +139,22 @@ all:
 #       make find_L
 #       make test
 ```
-
 should simply (for our purposes) be
 
 ```
 all:    libLfunction.so lcalc examples
 ```
-
 or even just
 
 ```
 all:    lcalc examples
 ```
-
 but one has to add the proper dependency, i.e.:
 
 ```
 examples: libLfunction.so
         $(CC) $(CCFLAGS) $(INCLUDEFILES) example_programs/example.cc libLfunction.so -o example_programs/example $(GMP_FLAGS)
 ```
-
 
 
 
@@ -263,7 +258,7 @@ Mike, are there Windows virtual machines running Cygwin available to potential r
 archive/issue_comments_096998.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> Mike, are there Windows virtual machines running Cygwin available to potential reviewers?  (We could give access instructions off-trac.)\n\nI wouldn't mind testing this if needed.",
+    "body": "Replying to [comment:10 mpatel]:\n> Mike, are there Windows virtual machines running Cygwin available to potential reviewers?  (We could give access instructions off-trac.)\n\n\nI wouldn't mind testing this if needed.",
     "created_at": "2010-09-19T16:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -274,6 +269,7 @@ archive/issue_comments_096998.json:
 
 Replying to [comment:10 mpatel]:
 > Mike, are there Windows virtual machines running Cygwin available to potential reviewers?  (We could give access instructions off-trac.)
+
 
 I wouldn't mind testing this if needed.
 
@@ -362,7 +358,7 @@ Diff between p4 and p5 - for review/reference.
 archive/issue_comments_097003.json:
 ```json
 {
-    "body": "Looks as if we no longer need `patches/Lcommandline_elliptic.cc.cygwin` (and `patches/Lcommandline_elliptic.cc.cygwin.diff`), since this patch isn't applied.\n\nMike (or Jeroen, if you can test this), is this Cygwin patch / addition obsolete:\n\n```C\n// SAGE -- used below -- needed for Cygwin.\n#ifndef llrint\ninline long long int llrint (double x)\n{\n    long long int llrintres;\n    asm\n    (\"fistpll %0\"\n    : \"=m\" (llrintres) : \"t\" (x) : \"st\");\n    return llrintres;\n}\n#endif\n```\n\n\n(It's *not* included in the generic patch to `Lcommandline_elliptic.cc`, nor upstream.)\n\nApart from old typos, an obsolete comment regarding `SAGE_DEBUG`, and the recent changelog headings lacking the upstream (snapshot?) date (20100428), I'm quite happy with the new spkg (i.e., the Sage part; the patched Makefile is still suboptimal, but never mind). :)\n\nIf this spkg really contains an upstream snapshot, it is unclear from SPKG.txt when this was taken / actually put into the spkg.",
+    "body": "Looks as if we no longer need `patches/Lcommandline_elliptic.cc.cygwin` (and `patches/Lcommandline_elliptic.cc.cygwin.diff`), since this patch isn't applied.\n\nMike (or Jeroen, if you can test this), is this Cygwin patch / addition obsolete:\n\n```C\n// SAGE -- used below -- needed for Cygwin.\n#ifndef llrint\ninline long long int llrint (double x)\n{\n    long long int llrintres;\n    asm\n    (\"fistpll %0\"\n    : \"=m\" (llrintres) : \"t\" (x) : \"st\");\n    return llrintres;\n}\n#endif\n```\n\n(It's *not* included in the generic patch to `Lcommandline_elliptic.cc`, nor upstream.)\n\nApart from old typos, an obsolete comment regarding `SAGE_DEBUG`, and the recent changelog headings lacking the upstream (snapshot?) date (20100428), I'm quite happy with the new spkg (i.e., the Sage part; the patched Makefile is still suboptimal, but never mind). :)\n\nIf this spkg really contains an upstream snapshot, it is unclear from SPKG.txt when this was taken / actually put into the spkg.",
     "created_at": "2010-09-19T19:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -388,7 +384,6 @@ inline long long int llrint (double x)
 }
 #endif
 ```
-
 
 (It's *not* included in the generic patch to `Lcommandline_elliptic.cc`, nor upstream.)
 
@@ -441,7 +436,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_097006.json:
 ```json
 {
-    "body": "Replying to [comment:15 leif]:\n> The new p5 spkg successfully installed on Sage 4.6.alpha1 (with `MAKE=\"make -j32\"`) and passed `ptestlong` on Ubuntu 10.04 x86_64, [...]\n\nSame on Ubuntu 9.04 x86 (with `MAKE=\"make -j8\"`).",
+    "body": "Replying to [comment:15 leif]:\n> The new p5 spkg successfully installed on Sage 4.6.alpha1 (with `MAKE=\"make -j32\"`) and passed `ptestlong` on Ubuntu 10.04 x86_64, [...]\n\n\nSame on Ubuntu 9.04 x86 (with `MAKE=\"make -j8\"`).",
     "created_at": "2010-09-19T23:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
@@ -452,6 +447,7 @@ archive/issue_comments_097006.json:
 
 Replying to [comment:15 leif]:
 > The new p5 spkg successfully installed on Sage 4.6.alpha1 (with `MAKE="make -j32"`) and passed `ptestlong` on Ubuntu 10.04 x86_64, [...]
+
 
 Same on Ubuntu 9.04 x86 (with `MAKE="make -j8"`).
 

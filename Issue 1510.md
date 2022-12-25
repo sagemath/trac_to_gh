@@ -3,7 +3,7 @@
 archive/issues_001510.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nI am using JSON objects (http://json.org) as a language neutral way to allow SAGE to communicate with clients.  I have installed SimpleJSON (http://cheeseshop.python.org/pypi/simplejson) on a SAGE server and have it sending 2D plot data to an applet in the notebook.  I would now like to request that SimpleJSON be added to SAGE.\n\nIn order to test SAGE->Applet communications using JSON, perform the following steps:\n\n1) Install SimpleJSON in SAGE.  The user must be able to import SimpleJSON by entering \"import simplejson\" in a cell.\n\n2) Paste the following code into CELL 0 of a new worksheet and execute it in order to launch the applet:\n\n\n```\nhtml('<applet id=\"mathrider\" code=\"org.mathrider.MathRider.class\" width=\"800\" height=\"650\" codebase=\"http://sage.math.washington.edu/home/tkosan/mathrider/\" archive=\"mathrider.jar\" MAYSCRIPT></applet>')\n```\n\n\n3) After the applet launches, select the \"Cell\" tab, paste the following code into the \"Send Cell\" text area, and execute it with <shift><tab>.\n\n\n```\na = MathRider()\na.show(plot(2*x,0,1))\n```\n\n\n4) The code will be sent to SAGE for evaluation and a JSON object which contains the plot data will be returned to the applet.\n\n5) The plot will then be displayed in the \"2DPlot\" tab.\n\nIf you would like to see the data that is returned by the above code, just execute it in a blank cell in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1510\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nI am using JSON objects (http://json.org) as a language neutral way to allow SAGE to communicate with clients.  I have installed SimpleJSON (http://cheeseshop.python.org/pypi/simplejson) on a SAGE server and have it sending 2D plot data to an applet in the notebook.  I would now like to request that SimpleJSON be added to SAGE.\n\nIn order to test SAGE->Applet communications using JSON, perform the following steps:\n\n1) Install SimpleJSON in SAGE.  The user must be able to import SimpleJSON by entering \"import simplejson\" in a cell.\n\n2) Paste the following code into CELL 0 of a new worksheet and execute it in order to launch the applet:\n\n```\nhtml('<applet id=\"mathrider\" code=\"org.mathrider.MathRider.class\" width=\"800\" height=\"650\" codebase=\"http://sage.math.washington.edu/home/tkosan/mathrider/\" archive=\"mathrider.jar\" MAYSCRIPT></applet>')\n```\n\n3) After the applet launches, select the \"Cell\" tab, paste the following code into the \"Send Cell\" text area, and execute it with <shift><tab>.\n\n```\na = MathRider()\na.show(plot(2*x,0,1))\n```\n\n4) The code will be sent to SAGE for evaluation and a JSON object which contains the plot data will be returned to the applet.\n\n5) The plot will then be displayed in the \"2DPlot\" tab.\n\nIf you would like to see the data that is returned by the above code, just execute it in a blank cell in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1510\n\n",
     "created_at": "2007-12-14T18:15:26Z",
     "labels": [
         "component: packages: standard"
@@ -27,20 +27,16 @@ In order to test SAGE->Applet communications using JSON, perform the following s
 
 2) Paste the following code into CELL 0 of a new worksheet and execute it in order to launch the applet:
 
-
 ```
 html('<applet id="mathrider" code="org.mathrider.MathRider.class" width="800" height="650" codebase="http://sage.math.washington.edu/home/tkosan/mathrider/" archive="mathrider.jar" MAYSCRIPT></applet>')
 ```
 
-
 3) After the applet launches, select the "Cell" tab, paste the following code into the "Send Cell" text area, and execute it with <shift><tab>.
-
 
 ```
 a = MathRider()
 a.show(plot(2*x,0,1))
 ```
-
 
 4) The code will be sent to SAGE for evaluation and a JSON object which contains the plot data will be returned to the applet.
 
@@ -114,7 +110,7 @@ Changing status from new to assigned.
 archive/issue_comments_009647.json:
 ```json
 {
-    "body": "Spkg can be found here:\n\nhttp://sage.math.washington.edu/home/tkosan/misc/simplejson-1.7.3.spkg\n\nTest with the following code:\n\n\n```\nsage: import simplejson\nsage: simplejson.dumps([int(3),int(4)])\n'[3, 4]'\nsage: simplejson.dumps(['foo', {'bar': ('baz', None, float(1.0), int(2))}])\n'[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'\n```\n",
+    "body": "Spkg can be found here:\n\nhttp://sage.math.washington.edu/home/tkosan/misc/simplejson-1.7.3.spkg\n\nTest with the following code:\n\n```\nsage: import simplejson\nsage: simplejson.dumps([int(3),int(4)])\n'[3, 4]'\nsage: simplejson.dumps(['foo', {'bar': ('baz', None, float(1.0), int(2))}])\n'[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'\n```",
     "created_at": "2008-01-20T10:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
@@ -129,7 +125,6 @@ http://sage.math.washington.edu/home/tkosan/misc/simplejson-1.7.3.spkg
 
 Test with the following code:
 
-
 ```
 sage: import simplejson
 sage: simplejson.dumps([int(3),int(4)])
@@ -137,7 +132,6 @@ sage: simplejson.dumps([int(3),int(4)])
 sage: simplejson.dumps(['foo', {'bar': ('baz', None, float(1.0), int(2))}])
 '["foo", {"bar": ["baz", null, 1.0, 2]}]'
 ```
-
 
 
 
@@ -192,7 +186,7 @@ The above was quick brainstorming.   It is not meant to be some well thought out
 archive/issue_comments_009650.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> The package is relatively small and MIT license, so I would say it's suitable for inclusion. How does it handle Cython classes? \n\nAccording to the home page, it should handle them OK. From the webpage:\n\"\"\"\nJSON is built on two structures:\n\n* A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.\n* An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.\n\nThese are universal data structures. Virtually all modern programming languages support them in one form or another. It makes sense that a data format that is interchangable with programming languages also be based on these structures.\n\"\"\"",
+    "body": "Replying to [comment:3 robertwb]:\n> The package is relatively small and MIT license, so I would say it's suitable for inclusion. How does it handle Cython classes? \n\n\nAccording to the home page, it should handle them OK. From the webpage:\n\"\"\"\nJSON is built on two structures:\n\n* A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.\n* An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.\n\nThese are universal data structures. Virtually all modern programming languages support them in one form or another. It makes sense that a data format that is interchangable with programming languages also be based on these structures.\n\"\"\"",
     "created_at": "2008-01-22T18:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
@@ -203,6 +197,7 @@ archive/issue_comments_009650.json:
 
 Replying to [comment:3 robertwb]:
 > The package is relatively small and MIT license, so I would say it's suitable for inclusion. How does it handle Cython classes? 
+
 
 According to the home page, it should handle them OK. From the webpage:
 """

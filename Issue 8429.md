@@ -3,7 +3,7 @@
 archive/issues_008429.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe file `word.py` is getting very huge and forces one to create new classes inside of it (see below for explanation) which will get the file `word.py` even more huge in the future...\n\nIf a file contains the following :\n\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nclass C(A):\n    #huge class\n    pass\n```\n \n\none can not create a new class between A and C in another file (because of loops of import) :\n\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nfrom file2 import B\nclass C(B):\n    #huge class\n    pass\n```\n \n\n\n```\n#file2.py\nfrom file1 import A\nclass B(A)\n    #large intermediate class\n    pass\n```\n\n\nSo the solution is either to put everything in the same file or to put everything in different files. In this case, I choose the last solution because `word.py` is getting huge.\n\nThis ticket removes `Word_class`, `FiniteWord_class` and `InfiniteWord_class` from `word.py` and put them in new files called respectively `abstrac_word.py`, `finite_word.py` and `infinite_word.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8429\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe file `word.py` is getting very huge and forces one to create new classes inside of it (see below for explanation) which will get the file `word.py` even more huge in the future...\n\nIf a file contains the following :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nclass C(A):\n    #huge class\n    pass\n``` \n\none can not create a new class between A and C in another file (because of loops of import) :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nfrom file2 import B\nclass C(B):\n    #huge class\n    pass\n``` \n\n```\n#file2.py\nfrom file1 import A\nclass B(A)\n    #large intermediate class\n    pass\n```\n\nSo the solution is either to put everything in the same file or to put everything in different files. In this case, I choose the last solution because `word.py` is getting huge.\n\nThis ticket removes `Word_class`, `FiniteWord_class` and `InfiniteWord_class` from `word.py` and put them in new files called respectively `abstrac_word.py`, `finite_word.py` and `infinite_word.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8429\n\n",
     "created_at": "2010-03-03T18:18:23Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ The file `word.py` is getting very huge and forces one to create new classes ins
 
 If a file contains the following :
 
-
 ```
 #file1.py
 class A:
@@ -32,11 +31,9 @@ class A:
 class C(A):
     #huge class
     pass
-```
- 
+``` 
 
 one can not create a new class between A and C in another file (because of loops of import) :
-
 
 ```
 #file1.py
@@ -47,9 +44,7 @@ from file2 import B
 class C(B):
     #huge class
     pass
-```
- 
-
+``` 
 
 ```
 #file2.py
@@ -58,7 +53,6 @@ class B(A)
     #large intermediate class
     pass
 ```
-
 
 So the solution is either to put everything in the same file or to put everything in different files. In this case, I choose the last solution because `word.py` is getting huge.
 
@@ -212,7 +206,7 @@ Sorry, remove #8313 from the list, that was a typo. So the only tickets to look 
 archive/issue_comments_075449.json:
 ```json
 {
-    "body": "Replying to [comment:5 abmasse]:\n> Sorry, remove #8313 from the list, that was a typo. So the only tickets to look at are #8475 and #8296.\n\nAlexandre, I just moved the patch `trac_8429_split_word-sl.patch` before #8475 and #8296 in the sage-combinat tree. I can confirm that they commute so that this ticket doesn't \"mercurialy\" depend on #8296 and #8475.",
+    "body": "Replying to [comment:5 abmasse]:\n> Sorry, remove #8313 from the list, that was a typo. So the only tickets to look at are #8475 and #8296.\n\n\nAlexandre, I just moved the patch `trac_8429_split_word-sl.patch` before #8475 and #8296 in the sage-combinat tree. I can confirm that they commute so that this ticket doesn't \"mercurialy\" depend on #8296 and #8475.",
     "created_at": "2010-03-08T11:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
@@ -223,6 +217,7 @@ archive/issue_comments_075449.json:
 
 Replying to [comment:5 abmasse]:
 > Sorry, remove #8313 from the list, that was a typo. So the only tickets to look at are #8475 and #8296.
+
 
 Alexandre, I just moved the patch `trac_8429_split_word-sl.patch` before #8475 and #8296 in the sage-combinat tree. I can confirm that they commute so that this ticket doesn't "mercurialy" depend on #8296 and #8475.
 

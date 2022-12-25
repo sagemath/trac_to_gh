@@ -56,7 +56,7 @@ The conversion should just work, if the conversions dictionary argument of `Buil
 archive/issue_comments_066581.json:
 ```json
 {
-    "body": "Replying to [comment:1 burcin]:\n> After a quick look at the GiNaC sources, I don't think there is an implementation of the incomplete gamma function in there.\n> \nOkay.\n> Numerical evaluation of this can be done with the `gammainc()` function of mpmath.\nBut will it give us symbolic evaluation ala gamma_inc(1,1)=1/e?  That would be best.\n\n> The conversion should just work, if the conversions dictionary argument of `BuiltinFunction.__init__` contains `maxima='gamma_incomplete'`.\nYes, of course, but we still have to do it :)",
+    "body": "Replying to [comment:1 burcin]:\n> After a quick look at the GiNaC sources, I don't think there is an implementation of the incomplete gamma function in there.\n> \n\nOkay.\n> Numerical evaluation of this can be done with the `gammainc()` function of mpmath.\n\nBut will it give us symbolic evaluation ala gamma_inc(1,1)=1/e?  That would be best.\n\n> The conversion should just work, if the conversions dictionary argument of `BuiltinFunction.__init__` contains `maxima='gamma_incomplete'`.\n\nYes, of course, but we still have to do it :)",
     "created_at": "2009-12-23T04:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -68,11 +68,14 @@ archive/issue_comments_066581.json:
 Replying to [comment:1 burcin]:
 > After a quick look at the GiNaC sources, I don't think there is an implementation of the incomplete gamma function in there.
 > 
+
 Okay.
 > Numerical evaluation of this can be done with the `gammainc()` function of mpmath.
+
 But will it give us symbolic evaluation ala gamma_inc(1,1)=1/e?  That would be best.
 
 > The conversion should just work, if the conversions dictionary argument of `BuiltinFunction.__init__` contains `maxima='gamma_incomplete'`.
+
 Yes, of course, but we still have to do it :)
 
 
@@ -82,7 +85,7 @@ Yes, of course, but we still have to do it :)
 archive/issue_comments_066582.json:
 ```json
 {
-    "body": "> Numerical evaluation of this can be done with the gammainc() function of mpmath.\n\nDoesn't PARI also have an incomplete gamma implementation (it's used by RR and CC, I think)?",
+    "body": "> Numerical evaluation of this can be done with the gammainc() function of mpmath.\n\n\nDoesn't PARI also have an incomplete gamma implementation (it's used by RR and CC, I think)?",
     "created_at": "2009-12-24T20:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -92,6 +95,7 @@ archive/issue_comments_066582.json:
 ```
 
 > Numerical evaluation of this can be done with the gammainc() function of mpmath.
+
 
 Doesn't PARI also have an incomplete gamma implementation (it's used by RR and CC, I think)?
 
@@ -176,7 +180,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066587.json:
 ```json
 {
-    "body": "I tried the exponential integral patch and it works ok. However I don't understand the changes in\nrandom_tests.py. Also the following could be evaluated:\n\n```\nsage: diff(Ei(x),x)\nD[0](Ei)(x)\nsage: integrate(Ei(x),x)\nintegrate(Ei(x), x)\n```\n\nShould this be in a separate ticket?",
+    "body": "I tried the exponential integral patch and it works ok. However I don't understand the changes in\nrandom_tests.py. Also the following could be evaluated:\n\n```\nsage: diff(Ei(x),x)\nD[0](Ei)(x)\nsage: integrate(Ei(x),x)\nintegrate(Ei(x), x)\n```\nShould this be in a separate ticket?",
     "created_at": "2010-02-07T21:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -194,7 +198,6 @@ D[0](Ei)(x)
 sage: integrate(Ei(x),x)
 integrate(Ei(x), x)
 ```
-
 Should this be in a separate ticket?
 
 
@@ -204,7 +207,7 @@ Should this be in a separate ticket?
 archive/issue_comments_066588.json:
 ```json
 {
-    "body": "Replying to [comment:5 zimmerma]:\n> I tried the exponential integral patch and it works ok. However I don't understand the changes in\n> random_tests.py. \n\nThis makes a 'random' symbolic expression, and when we add new symbolic functions (and sometimes when we change them) this doctest needs to be changed, not because anything bad happened.",
+    "body": "Replying to [comment:5 zimmerma]:\n> I tried the exponential integral patch and it works ok. However I don't understand the changes in\n> random_tests.py. \n\n\nThis makes a 'random' symbolic expression, and when we add new symbolic functions (and sometimes when we change them) this doctest needs to be changed, not because anything bad happened.",
     "created_at": "2010-02-08T02:19:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -217,6 +220,7 @@ Replying to [comment:5 zimmerma]:
 > I tried the exponential integral patch and it works ok. However I don't understand the changes in
 > random_tests.py. 
 
+
 This makes a 'random' symbolic expression, and when we add new symbolic functions (and sometimes when we change them) this doctest needs to be changed, not because anything bad happened.
 
 
@@ -226,7 +230,7 @@ This makes a 'random' symbolic expression, and when we add new symbolic function
 archive/issue_comments_066589.json:
 ```json
 {
-    "body": "Replying to [comment:5 zimmerma]:\n> I tried the exponential integral patch and it works ok. However I don't understand the changes in\n> random_tests.py. Also the following could be evaluated:\n\n```\nsage: diff(Ei(x),x)\nD[0](Ei)(x)\nsage: integrate(Ei(x),x)\nintegrate(Ei(x), x)\n```\n\n> Should this be in a separate ticket?\n\nThank you for the review. I'll include the derivative and submit again. Integration looks more complicated.\n\nGreetings, \n\nFlavia",
+    "body": "Replying to [comment:5 zimmerma]:\n> I tried the exponential integral patch and it works ok. However I don't understand the changes in\n> random_tests.py. Also the following could be evaluated:\n  \n{{{\nsage: diff(Ei(x),x)\nD[0](Ei)(x)\nsage: integrate(Ei(x),x)\nintegrate(Ei(x), x)\n}}}\n> Should this be in a separate ticket?\n\n\nThank you for the review. I'll include the derivative and submit again. Integration looks more complicated.\n\nGreetings, \n\nFlavia",
     "created_at": "2010-02-08T11:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -238,15 +242,15 @@ archive/issue_comments_066589.json:
 Replying to [comment:5 zimmerma]:
 > I tried the exponential integral patch and it works ok. However I don't understand the changes in
 > random_tests.py. Also the following could be evaluated:
-
-```
+  
+{{{
 sage: diff(Ei(x),x)
 D[0](Ei)(x)
 sage: integrate(Ei(x),x)
 integrate(Ei(x), x)
-```
-
+}}}
 > Should this be in a separate ticket?
+
 
 Thank you for the review. I'll include the derivative and submit again. Integration looks more complicated.
 
@@ -297,7 +301,7 @@ Changing assignee from @burcin to @zimmermann6.
 archive/issue_comments_066592.json:
 ```json
 {
-    "body": "I tried sage -t * with both patches, and I get one additional failure with respect to those I get\ndue to #7773:\n\n```\ntarte% sage -t \"rings/complex_number.pyx\"\nsage -t  \"rings/complex_number.pyx\"                         \n**********************************************************************\nFile \"/usr/local/sage-4.3-core2/devel/sage-main/sage/rings/complex_number.pyx\", line 1611:\n    sage: gamma_inc(2, 5)\nExpected:\n    0.0404276819945128\nGot:\n    gamma(2, 5)\n```\n\nConsider also the following:\n\n```\nsage: gamma_inc(2, 5.)\n0.0404276819945128\nsage: gamma(2, 5) \n1\n```\n",
+    "body": "I tried sage -t * with both patches, and I get one additional failure with respect to those I get\ndue to #7773:\n\n```\ntarte% sage -t \"rings/complex_number.pyx\"\nsage -t  \"rings/complex_number.pyx\"                         \n**********************************************************************\nFile \"/usr/local/sage-4.3-core2/devel/sage-main/sage/rings/complex_number.pyx\", line 1611:\n    sage: gamma_inc(2, 5)\nExpected:\n    0.0404276819945128\nGot:\n    gamma(2, 5)\n```\nConsider also the following:\n\n```\nsage: gamma_inc(2, 5.)\n0.0404276819945128\nsage: gamma(2, 5) \n1\n```",
     "created_at": "2010-02-08T13:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -320,7 +324,6 @@ Expected:
 Got:
     gamma(2, 5)
 ```
-
 Consider also the following:
 
 ```
@@ -332,13 +335,12 @@ sage: gamma(2, 5)
 
 
 
-
 ---
 
 archive/issue_comments_066593.json:
 ```json
 {
-    "body": "Replying to [comment:8 zimmerma]:\n\n> Consider also the following:\n\n```\nsage: gamma_inc(2, 5.)\n0.0404276819945128\nsage: gamma(2, 5) \n1\n```\n\n\nWe should write a python function wrapping `gamma_inc` and `gamma`, similar to the provided for `psi()` in #6961.\n\nThe fact that `gamma()` accepts two arguments at the moment is a bug that I introduced in #7490. Looking at the code, it also doesn't handle the `prec` parameter correctly. I'll upload a patch with a wrapper `gamma()` function and a fix for the `prec` issue.\n\nReplying to [comment:7 fstan]:\n\n> Integration looks more complicated. \n\nIntegration cannot be handled with a custom method in symbolic functions. The patches attached to #6465 should make this easier.",
+    "body": "Replying to [comment:8 zimmerma]:\n\n> Consider also the following:\n\n{{{\nsage: gamma_inc(2, 5.)\n0.0404276819945128\nsage: gamma(2, 5) \n1\n}}}\n\nWe should write a python function wrapping `gamma_inc` and `gamma`, similar to the provided for `psi()` in #6961.\n\nThe fact that `gamma()` accepts two arguments at the moment is a bug that I introduced in #7490. Looking at the code, it also doesn't handle the `prec` parameter correctly. I'll upload a patch with a wrapper `gamma()` function and a fix for the `prec` issue.\n\nReplying to [comment:7 fstan]:\n\n> Integration looks more complicated. \n\n\nIntegration cannot be handled with a custom method in symbolic functions. The patches attached to #6465 should make this easier.",
     "created_at": "2010-02-08T16:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -351,13 +353,12 @@ Replying to [comment:8 zimmerma]:
 
 > Consider also the following:
 
-```
+{{{
 sage: gamma_inc(2, 5.)
 0.0404276819945128
 sage: gamma(2, 5) 
 1
-```
-
+}}}
 
 We should write a python function wrapping `gamma_inc` and `gamma`, similar to the provided for `psi()` in #6961.
 
@@ -366,6 +367,7 @@ The fact that `gamma()` accepts two arguments at the moment is a bug that I intr
 Replying to [comment:7 fstan]:
 
 > Integration looks more complicated. 
+
 
 Integration cannot be handled with a custom method in symbolic functions. The patches attached to #6465 should make this easier.
 
@@ -579,7 +581,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066604.json:
 ```json
 {
-    "body": "a partial review against 4.3.3:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\n...\n    sage: E.Lambda(1.4+0.5*I, 50)\n      File \"/usr/local/sage-4.3.3/sage/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3088, in Lambda\n        Gamma_inc = transcendental.gamma_inc\n    AttributeError: 'module' object has no attribute 'gamma_inc'\n```\n\nThis test was ok with vanilla 4.3.3.",
+    "body": "a partial review against 4.3.3:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\n...\n    sage: E.Lambda(1.4+0.5*I, 50)\n      File \"/usr/local/sage-4.3.3/sage/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3088, in Lambda\n        Gamma_inc = transcendental.gamma_inc\n    AttributeError: 'module' object has no attribute 'gamma_inc'\n```\nThis test was ok with vanilla 4.3.3.",
     "created_at": "2010-02-24T07:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -598,7 +600,6 @@ sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py"
         Gamma_inc = transcendental.gamma_inc
     AttributeError: 'module' object has no attribute 'gamma_inc'
 ```
-
 This test was ok with vanilla 4.3.3.
 
 
@@ -770,7 +771,7 @@ Burcin
 archive/issue_comments_066613.json:
 ```json
 {
-    "body": "Replying to [comment:17 burcin]:\n> What is holding up this ticket?\nI can't merge this ticket. We are now in feature freeze.",
+    "body": "Replying to [comment:17 burcin]:\n> What is holding up this ticket?\n\nI can't merge this ticket. We are now in feature freeze.",
     "created_at": "2010-03-17T08:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
@@ -781,6 +782,7 @@ archive/issue_comments_066613.json:
 
 Replying to [comment:17 burcin]:
 > What is holding up this ticket?
+
 I can't merge this ticket. We are now in feature freeze.
 
 

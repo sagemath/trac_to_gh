@@ -71,7 +71,7 @@ I had a hard figuring that one out when I tried to fix this myself.
 archive/issue_comments_092595.json:
 ```json
 {
-    "body": "Replying to [comment:2 fbissey]:\n> out of curiosity what did you replace \"gi\" with? \n\n> I had a hard figuring that one out when I tried to fix this myself. \n\ngi should be replaced by gen_I().",
+    "body": "Replying to [comment:2 fbissey]:\n> out of curiosity what did you replace \"gi\" with? \n\n\n> I had a hard figuring that one out when I tried to fix this myself. \n\n\ngi should be replaced by gen_I().",
     "created_at": "2010-07-24T22:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -83,7 +83,9 @@ archive/issue_comments_092595.json:
 Replying to [comment:2 fbissey]:
 > out of curiosity what did you replace "gi" with? 
 
+
 > I had a hard figuring that one out when I tried to fix this myself. 
+
 
 gi should be replaced by gen_I().
 
@@ -147,7 +149,7 @@ By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and in
 archive/issue_comments_092598.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?\n\nI guess it makes sense to include it in the sage library since it's just 1 file.  But I don't think it is very important.",
+    "body": "Replying to [comment:7 mpatel]:\n> By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?\n\n\nI guess it makes sense to include it in the sage library since it's just 1 file.  But I don't think it is very important.",
     "created_at": "2010-08-13T22:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -158,6 +160,7 @@ archive/issue_comments_092598.json:
 
 Replying to [comment:7 mpatel]:
 > By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?
+
 
 I guess it makes sense to include it in the sage library since it's just 1 file.  But I don't think it is very important.
 
@@ -204,7 +207,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092601.json:
 ```json
 {
-    "body": "If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\nBut this fails to build on OpenSolaris 32-bit, despite the previous version working fine. \n\n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nInstalling http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nCalling sage-spkg on http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\ngenus2reduction-0.3.p8\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of genus2reduction-0.3.p8\nExtracting package /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg ...\n-rw-r--r--   1 drkirkby staff      53471 Aug 14 23:35 /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg\ngenus2reduction-0.3.p8/\ngenus2reduction-0.3.p8/.hg/\ngenus2reduction-0.3.p8/.hg/requires\ngenus2reduction-0.3.p8/.hg/store/\ngenus2reduction-0.3.p8/.hg/store/data/\ngenus2reduction-0.3.p8/.hg/store/data/src/\ngenus2reduction-0.3.p8/.hg/store/data/src/genus2reduction.c.i\ngenus2reduction-0.3.p8/.hg/store/data/.hgignore.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/rules.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/compat.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/copyright.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/series.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/makefile.patch.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.in.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/changelog.i\ngenus2reduction-0.3.p8/.hg/store/data/spkg-install.i\ngenus2reduction-0.3.p8/.hg/store/data/_s_p_k_g.txt.i\ngenus2reduction-0.3.p8/.hg/store/undo\ngenus2reduction-0.3.p8/.hg/store/00manifest.i\ngenus2reduction-0.3.p8/.hg/store/00changelog.i\ngenus2reduction-0.3.p8/.hg/undo.dirstate\ngenus2reduction-0.3.p8/.hg/dirstate\ngenus2reduction-0.3.p8/.hg/00changelog.i\ngenus2reduction-0.3.p8/.hg/branch\ngenus2reduction-0.3.p8/.hg/undo.branch\ngenus2reduction-0.3.p8/src/\ngenus2reduction-0.3.p8/src/.pc/\ngenus2reduction-0.3.p8/src/.pc/.version\ngenus2reduction-0.3.p8/src/TODO\ngenus2reduction-0.3.p8/src/README\ngenus2reduction-0.3.p8/src/THANKS\ngenus2reduction-0.3.p8/src/genus2reduction.c\ngenus2reduction-0.3.p8/src/gpl-email.txt\ngenus2reduction-0.3.p8/src/SAGE.txt\ngenus2reduction-0.3.p8/src/RELEASE.NOTES\ngenus2reduction-0.3.p8/src/WARNING\ngenus2reduction-0.3.p8/src/INSTALL\ngenus2reduction-0.3.p8/src/CHANGES\ngenus2reduction-0.3.p8/src/COPYING\ngenus2reduction-0.3.p8/dist/\ngenus2reduction-0.3.p8/dist/debian/\ngenus2reduction-0.3.p8/dist/debian/control\ngenus2reduction-0.3.p8/dist/debian/rules\ngenus2reduction-0.3.p8/dist/debian/changelog\ngenus2reduction-0.3.p8/dist/debian/compat\ngenus2reduction-0.3.p8/dist/debian/control.in\ngenus2reduction-0.3.p8/dist/debian/patches/\ngenus2reduction-0.3.p8/dist/debian/patches/makefile.patch\ngenus2reduction-0.3.p8/dist/debian/patches/series\ngenus2reduction-0.3.p8/dist/debian/copyright\ngenus2reduction-0.3.p8/.hgignore\ngenus2reduction-0.3.p8/SPKG.txt\ngenus2reduction-0.3.p8/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n****************************************************\nCompiling genus2reduction.c\ngenus2reduction.c:32:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:32:1: error: expected ')' before '>' token\ngenus2reduction.c:39:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:39:1: error: expected ')' before '>' token\ngenus2reduction.c: In function 'main':\ngenus2reduction.c:494:27: error: called object 'pol_1' is not a function\ngenus2reduction.c:545:24: error: called object 'pol_1' is not a function\ngenus2reduction.c:618:37: error: called object 'pol_x' is not a function\ngenus2reduction.c:618:55: error: called object 'pol_x' is not a function\ngenus2reduction.c:676:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:692:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:741:44: error: called object 'pol_x' is not a function\ngenus2reduction.c:770:42: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'factorpadicnonun':\ngenus2reduction.c:1685:37: error: subscripted value is neither array nor pointer\ngenus2reduction.c:1694:58: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:54: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:7: warning: passing argument 1 of 'gsubst' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1138:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c: In function 'polymini':\ngenus2reduction.c:1719:28: error: called object 'pol_x' is not a function\ngenus2reduction.c:1719:59: error: called object 'pol_x' is not a function\ngenus2reduction.c:1734:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1753:33: error: called object 'pol_x' is not a function\ngenus2reduction.c:1762:34: error: called object 'pol_x' is not a function\ngenus2reduction.c:1774:42: error: called object 'pol_x' is not a function\ngenus2reduction.c:1783:31: error: called object 'pol_x' is not a function\ngenus2reduction.c:1789:47: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'discpart':\ngenus2reduction.c:1836:13: error: called object 'pol_1' is not a function\ngenus2reduction.c: In function 'polyminizi':\ngenus2reduction.c:1874:3: warning: passing argument 2 of 'gadd' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1014:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c:1877:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1882:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1900:38: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'polyminizi2':\ngenus2reduction.c:1956:39: error: called object 'pol_x' is not a function\ngenus2reduction.c:1959:68: warning: assignment makes pointer from integer without a cast\ngenus2reduction.c:1969:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1974:46: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'zi2mod':\ngenus2reduction.c:2018:3: warning: passing argument 2 of 'gmul' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1018:9: note: expected 'GEN' but argument is of type 'int'\nError building genus2reduction\n\nreal\t0m0.069s\nuser\t0m0.052s\nsys\t0m0.014s\nsage: An error occurred while installing genus2reduction-0.3.p8\n```\n",
+    "body": "If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\nBut this fails to build on OpenSolaris 32-bit, despite the previous version working fine. \n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nInstalling http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nCalling sage-spkg on http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\ngenus2reduction-0.3.p8\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of genus2reduction-0.3.p8\nExtracting package /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg ...\n-rw-r--r--   1 drkirkby staff      53471 Aug 14 23:35 /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg\ngenus2reduction-0.3.p8/\ngenus2reduction-0.3.p8/.hg/\ngenus2reduction-0.3.p8/.hg/requires\ngenus2reduction-0.3.p8/.hg/store/\ngenus2reduction-0.3.p8/.hg/store/data/\ngenus2reduction-0.3.p8/.hg/store/data/src/\ngenus2reduction-0.3.p8/.hg/store/data/src/genus2reduction.c.i\ngenus2reduction-0.3.p8/.hg/store/data/.hgignore.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/rules.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/compat.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/copyright.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/series.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/makefile.patch.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.in.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/changelog.i\ngenus2reduction-0.3.p8/.hg/store/data/spkg-install.i\ngenus2reduction-0.3.p8/.hg/store/data/_s_p_k_g.txt.i\ngenus2reduction-0.3.p8/.hg/store/undo\ngenus2reduction-0.3.p8/.hg/store/00manifest.i\ngenus2reduction-0.3.p8/.hg/store/00changelog.i\ngenus2reduction-0.3.p8/.hg/undo.dirstate\ngenus2reduction-0.3.p8/.hg/dirstate\ngenus2reduction-0.3.p8/.hg/00changelog.i\ngenus2reduction-0.3.p8/.hg/branch\ngenus2reduction-0.3.p8/.hg/undo.branch\ngenus2reduction-0.3.p8/src/\ngenus2reduction-0.3.p8/src/.pc/\ngenus2reduction-0.3.p8/src/.pc/.version\ngenus2reduction-0.3.p8/src/TODO\ngenus2reduction-0.3.p8/src/README\ngenus2reduction-0.3.p8/src/THANKS\ngenus2reduction-0.3.p8/src/genus2reduction.c\ngenus2reduction-0.3.p8/src/gpl-email.txt\ngenus2reduction-0.3.p8/src/SAGE.txt\ngenus2reduction-0.3.p8/src/RELEASE.NOTES\ngenus2reduction-0.3.p8/src/WARNING\ngenus2reduction-0.3.p8/src/INSTALL\ngenus2reduction-0.3.p8/src/CHANGES\ngenus2reduction-0.3.p8/src/COPYING\ngenus2reduction-0.3.p8/dist/\ngenus2reduction-0.3.p8/dist/debian/\ngenus2reduction-0.3.p8/dist/debian/control\ngenus2reduction-0.3.p8/dist/debian/rules\ngenus2reduction-0.3.p8/dist/debian/changelog\ngenus2reduction-0.3.p8/dist/debian/compat\ngenus2reduction-0.3.p8/dist/debian/control.in\ngenus2reduction-0.3.p8/dist/debian/patches/\ngenus2reduction-0.3.p8/dist/debian/patches/makefile.patch\ngenus2reduction-0.3.p8/dist/debian/patches/series\ngenus2reduction-0.3.p8/dist/debian/copyright\ngenus2reduction-0.3.p8/.hgignore\ngenus2reduction-0.3.p8/SPKG.txt\ngenus2reduction-0.3.p8/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n****************************************************\nCompiling genus2reduction.c\ngenus2reduction.c:32:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:32:1: error: expected ')' before '>' token\ngenus2reduction.c:39:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:39:1: error: expected ')' before '>' token\ngenus2reduction.c: In function 'main':\ngenus2reduction.c:494:27: error: called object 'pol_1' is not a function\ngenus2reduction.c:545:24: error: called object 'pol_1' is not a function\ngenus2reduction.c:618:37: error: called object 'pol_x' is not a function\ngenus2reduction.c:618:55: error: called object 'pol_x' is not a function\ngenus2reduction.c:676:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:692:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:741:44: error: called object 'pol_x' is not a function\ngenus2reduction.c:770:42: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'factorpadicnonun':\ngenus2reduction.c:1685:37: error: subscripted value is neither array nor pointer\ngenus2reduction.c:1694:58: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:54: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:7: warning: passing argument 1 of 'gsubst' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1138:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c: In function 'polymini':\ngenus2reduction.c:1719:28: error: called object 'pol_x' is not a function\ngenus2reduction.c:1719:59: error: called object 'pol_x' is not a function\ngenus2reduction.c:1734:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1753:33: error: called object 'pol_x' is not a function\ngenus2reduction.c:1762:34: error: called object 'pol_x' is not a function\ngenus2reduction.c:1774:42: error: called object 'pol_x' is not a function\ngenus2reduction.c:1783:31: error: called object 'pol_x' is not a function\ngenus2reduction.c:1789:47: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'discpart':\ngenus2reduction.c:1836:13: error: called object 'pol_1' is not a function\ngenus2reduction.c: In function 'polyminizi':\ngenus2reduction.c:1874:3: warning: passing argument 2 of 'gadd' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1014:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c:1877:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1882:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1900:38: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'polyminizi2':\ngenus2reduction.c:1956:39: error: called object 'pol_x' is not a function\ngenus2reduction.c:1959:68: warning: assignment makes pointer from integer without a cast\ngenus2reduction.c:1969:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1974:46: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'zi2mod':\ngenus2reduction.c:2018:3: warning: passing argument 2 of 'gmul' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1018:9: note: expected 'GEN' but argument is of type 'int'\nError building genus2reduction\n\nreal\t0m0.069s\nuser\t0m0.052s\nsys\t0m0.014s\nsage: An error occurred while installing genus2reduction-0.3.p8\n```",
     "created_at": "2010-08-14T22:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -216,7 +219,6 @@ archive/issue_comments_092601.json:
 If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. 
 
 But this fails to build on OpenSolaris 32-bit, despite the previous version working fine. 
-
 
 ```
 drkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg
@@ -358,7 +360,6 @@ sage: An error occurred while installing genus2reduction-0.3.p8
 
 
 
-
 ---
 
 archive/issue_comments_092602.json:
@@ -419,7 +420,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092605.json:
 ```json
 {
-    "body": "Replying to [comment:12 fbissey]:\n> I had that when making the ebuild for gentoo earlier. You are not compiling it\n> against pari-2.4.xx - that's what the problem is.\n\nYes, sorry, my mistake. \n\nI've stuck it back to \"needs review\". I dn't feel able to review it, but after installing the pari package, this installs cleanly. \n\n**I've only tested on OpenSolaris x64 as a 32-bit binary** - so I have not tested on Solaris SPARC (e.g. t2)\n\nDave",
+    "body": "Replying to [comment:12 fbissey]:\n> I had that when making the ebuild for gentoo earlier. You are not compiling it\n> against pari-2.4.xx - that's what the problem is.\n\n\nYes, sorry, my mistake. \n\nI've stuck it back to \"needs review\". I dn't feel able to review it, but after installing the pari package, this installs cleanly. \n\n**I've only tested on OpenSolaris x64 as a 32-bit binary** - so I have not tested on Solaris SPARC (e.g. t2)\n\nDave",
     "created_at": "2010-08-15T02:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -431,6 +432,7 @@ archive/issue_comments_092605.json:
 Replying to [comment:12 fbissey]:
 > I had that when making the ebuild for gentoo earlier. You are not compiling it
 > against pari-2.4.xx - that's what the problem is.
+
 
 Yes, sorry, my mistake. 
 
@@ -447,7 +449,7 @@ Dave
 archive/issue_comments_092606.json:
 ```json
 {
-    "body": "Replying to [comment:11 drkirkby]:\n> If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\nWell, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.",
+    "body": "Replying to [comment:11 drkirkby]:\n> If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\n\nWell, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.",
     "created_at": "2010-08-15T06:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -459,6 +461,7 @@ archive/issue_comments_092606.json:
 Replying to [comment:11 drkirkby]:
 > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. 
 
+
 Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.
 
 
@@ -468,7 +471,7 @@ Well, there has been a .p7 on this ticket for a while, even if it was never actu
 archive/issue_comments_092607.json:
 ```json
 {
-    "body": "Replying to [comment:14 jdemeyer]:\n> Replying to [comment:11 drkirkby]:\n> > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n> \n> Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.\n\nI think Dave is right strictly speaking, but having .p8 means an easier time for people working on the pari issue to upgrade it. And now that I have updated my own package (after I had created a .p7 less than 12 hours beforehand) for Gentoo I'd like it to stay at that number - if possible.",
+    "body": "Replying to [comment:14 jdemeyer]:\n> Replying to [comment:11 drkirkby]:\n> > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\n> \n> Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.\n\n\nI think Dave is right strictly speaking, but having .p8 means an easier time for people working on the pari issue to upgrade it. And now that I have updated my own package (after I had created a .p7 less than 12 hours beforehand) for Gentoo I'd like it to stay at that number - if possible.",
     "created_at": "2010-08-15T07:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -480,8 +483,10 @@ archive/issue_comments_092607.json:
 Replying to [comment:14 jdemeyer]:
 > Replying to [comment:11 drkirkby]:
 > > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. 
+
 > 
 > Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.
+
 
 I think Dave is right strictly speaking, but having .p8 means an easier time for people working on the pari issue to upgrade it. And now that I have updated my own package (after I had created a .p7 less than 12 hours beforehand) for Gentoo I'd like it to stay at that number - if possible.
 
@@ -550,7 +555,7 @@ Unfortunately, I'm not qualified to review the rest of the patch, since I'm not 
 archive/issue_comments_092611.json:
 ```json
 {
-    "body": "Replying to [comment:18 mpatel]:\n> I can give a positive review to the \"EOF\" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.\n\nSpecifically, I get no dumped cores from running `genus2reduction` and testing `sage/interfaces/genus2reduction.py`.  There are still unrelated cores stemming probably from the doctesting system (cf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10), #9739).",
+    "body": "Replying to [comment:18 mpatel]:\n> I can give a positive review to the \"EOF\" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.\n\n\nSpecifically, I get no dumped cores from running `genus2reduction` and testing `sage/interfaces/genus2reduction.py`.  There are still unrelated cores stemming probably from the doctesting system (cf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10), #9739).",
     "created_at": "2010-08-31T00:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -561,6 +566,7 @@ archive/issue_comments_092611.json:
 
 Replying to [comment:18 mpatel]:
 > I can give a positive review to the "EOF" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.
+
 
 Specifically, I get no dumped cores from running `genus2reduction` and testing `sage/interfaces/genus2reduction.py`.  There are still unrelated cores stemming probably from the doctesting system (cf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10), #9739).
 
@@ -745,7 +751,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092621.json:
 ```json
 {
-    "body": "Replying to [comment:24 leif]:\n> Mitesh, could you update the link on the NewPARI wiki page?\n\nDone.",
+    "body": "Replying to [comment:24 leif]:\n> Mitesh, could you update the link on the NewPARI wiki page?\n\n\nDone.",
     "created_at": "2010-09-04T09:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
@@ -756,6 +762,7 @@ archive/issue_comments_092621.json:
 
 Replying to [comment:24 leif]:
 > Mitesh, could you update the link on the NewPARI wiki page?
+
 
 Done.
 

@@ -496,7 +496,7 @@ Changing component from documentation to translations.
 archive/issue_comments_092349.json:
 ```json
 {
-    "body": "> Since chinese is not TeX'ed using babel we'd have to disable pdf output.\n\nIs that fairly easy to do with something analogous to the solution in #12559?   It looks like it might \"just work\" if this ticket depends on that one (I have not tried this yet, though).",
+    "body": "> Since chinese is not TeX'ed using babel we'd have to disable pdf output.\n\n\nIs that fairly easy to do with something analogous to the solution in #12559?   It looks like it might \"just work\" if this ticket depends on that one (I have not tried this yet, though).",
     "created_at": "2014-12-04T19:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9577",
     "type": "issue_comment",
@@ -506,6 +506,7 @@ archive/issue_comments_092349.json:
 ```
 
 > Since chinese is not TeX'ed using babel we'd have to disable pdf output.
+
 
 Is that fairly easy to do with something analogous to the solution in #12559?   It looks like it might "just work" if this ticket depends on that one (I have not tried this yet, though).
 
@@ -538,7 +539,7 @@ For pdf we'll at least need a config file change, not sure if the solution at #1
 archive/issue_comments_092351.json:
 ```json
 {
-    "body": "Okay, once I do that I get the same error as there,\n\n```\n\nWriting index file SageTutorial.idx\nkpathsea: Invalid fontname `AR PL UMing CN', contains ' '\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!\n! fontspec error: \"font-not-found\"\n! \n! The font \"AR PL UMing CN\" cannot be found.\n! \n! See the fontspec documentation for further information.\n! \n! For immediate help type H <return>.\n!...............................................  \n```\n\nwhich is presumably my lack of fontitude.  Good.",
+    "body": "Okay, once I do that I get the same error as there,\n\n```\n\nWriting index file SageTutorial.idx\nkpathsea: Invalid fontname `AR PL UMing CN', contains ' '\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!\n! fontspec error: \"font-not-found\"\n! \n! The font \"AR PL UMing CN\" cannot be found.\n! \n! See the fontspec documentation for further information.\n! \n! For immediate help type H <return>.\n!...............................................  \n```\nwhich is presumably my lack of fontitude.  Good.",
     "created_at": "2014-12-04T20:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9577",
     "type": "issue_comment",
@@ -565,7 +566,6 @@ kpathsea: Invalid fontname `AR PL UMing CN', contains ' '
 ! For immediate help type H <return>.
 !...............................................  
 ```
-
 which is presumably my lack of fontitude.  Good.
 
 
@@ -651,7 +651,7 @@ archive/issue_comments_092355.json:
 archive/issue_comments_092356.json:
 ```json
 {
-    "body": "> `\\DeclareUnicodeCharacter` for each Chinese character would be fun :-)\nYikes!  Luckily, I didn't need any of them, just\n\n```\n\\newcommand{\\Bold}[1]{\\mathbf{#1}}\n\\newcommand{\\ZZ}{\\Bold{Z}}\n\\newcommand{\\QQ}{\\Bold{Q}}\n\\newcommand{\\GF}[1]{\\Bold{F}_{#1}}\n```\n\nAs it turns out, the problem is that `xelatex` doesn't recognize `\\DeclareUnicodeCharacter`, and so one never gets to this stuff in the first place.  Of course, I didn't check whether some fairly important math characters for Sage such as\n\n```\n\\DeclareUnicodeCharacter{0428}{cyrillic Sha}\n```\n\nappeared correctly, but from a little browsing I think most of those declarations are just to make things look \"nice\", e.g.\n\n```\n\\DeclareUnicodeCharacter{221A}{\\sqrt}\n```\n",
+    "body": "> `\\DeclareUnicodeCharacter` for each Chinese character would be fun :-)\n\nYikes!  Luckily, I didn't need any of them, just\n\n```\n\\newcommand{\\Bold}[1]{\\mathbf{#1}}\n\\newcommand{\\ZZ}{\\Bold{Z}}\n\\newcommand{\\QQ}{\\Bold{Q}}\n\\newcommand{\\GF}[1]{\\Bold{F}_{#1}}\n```\nAs it turns out, the problem is that `xelatex` doesn't recognize `\\DeclareUnicodeCharacter`, and so one never gets to this stuff in the first place.  Of course, I didn't check whether some fairly important math characters for Sage such as\n\n```\n\\DeclareUnicodeCharacter{0428}{cyrillic Sha}\n```\nappeared correctly, but from a little browsing I think most of those declarations are just to make things look \"nice\", e.g.\n\n```\n\\DeclareUnicodeCharacter{221A}{\\sqrt}\n```",
     "created_at": "2014-12-05T17:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9577",
     "type": "issue_comment",
@@ -661,6 +661,7 @@ archive/issue_comments_092356.json:
 ```
 
 > `\DeclareUnicodeCharacter` for each Chinese character would be fun :-)
+
 Yikes!  Luckily, I didn't need any of them, just
 
 ```
@@ -669,19 +670,16 @@ Yikes!  Luckily, I didn't need any of them, just
 \newcommand{\QQ}{\Bold{Q}}
 \newcommand{\GF}[1]{\Bold{F}_{#1}}
 ```
-
 As it turns out, the problem is that `xelatex` doesn't recognize `\DeclareUnicodeCharacter`, and so one never gets to this stuff in the first place.  Of course, I didn't check whether some fairly important math characters for Sage such as
 
 ```
 \DeclareUnicodeCharacter{0428}{cyrillic Sha}
 ```
-
 appeared correctly, but from a little browsing I think most of those declarations are just to make things look "nice", e.g.
 
 ```
 \DeclareUnicodeCharacter{221A}{\sqrt}
 ```
-
 
 
 

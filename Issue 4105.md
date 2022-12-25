@@ -3,7 +3,7 @@
 archive/issues_004105.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nI think the following session (reported by Beezer) says it all:\n\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print g*h\n///\n\nTraceback (most recent call last):       print g*h\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 3, in <module>\n    \n  File \"element.pyx\", line 1090, in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7938)\n  File \"coerce.pyx\", line 651, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6154)\n  File \"permgroup_element.pyx\", line 463, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement._r_action (sage/groups/perm_gps/permgroup_element.c:3598)\n  File \"permgroup_element.pyx\", line 254, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2097)\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_named.py\", line 134, in __init__\n    raise ValueError, \"n (=%s) must be >= 1\"%n\nValueError: n (=0) must be >= 1\n```\n\n\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print tetra(g)*tetra(h)\n///\n\n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4105\n\n",
+    "body": "Assignee: joyner\n\nI think the following session (reported by Beezer) says it all:\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print g*h\n///\n\nTraceback (most recent call last):       print g*h\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 3, in <module>\n    \n  File \"element.pyx\", line 1090, in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7938)\n  File \"coerce.pyx\", line 651, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6154)\n  File \"permgroup_element.pyx\", line 463, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement._r_action (sage/groups/perm_gps/permgroup_element.c:3598)\n  File \"permgroup_element.pyx\", line 254, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2097)\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_named.py\", line 134, in __init__\n    raise ValueError, \"n (=%s) must be >= 1\"%n\nValueError: n (=0) must be >= 1\n```\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print tetra(g)*tetra(h)\n///\n\n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4105\n\n",
     "created_at": "2008-09-12T15:47:05Z",
     "labels": [
         "component: group theory",
@@ -20,7 +20,6 @@ archive/issues_004105.json:
 Assignee: joyner
 
 I think the following session (reported by Beezer) says it all:
-
 
 ```
 tetra=AlternatingGroup(4)
@@ -43,8 +42,6 @@ Traceback (most recent call last):       print g*h
 ValueError: n (=0) must be >= 1
 ```
 
-
-
 ```
 tetra=AlternatingGroup(4)
 stab1=PermutationGroup_subgroup(tetra, ["(1,2,3)"])
@@ -64,7 +61,6 @@ for g in stab1:
 (1,4,2)
 (1,2)(3,4)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4105
 
@@ -115,7 +111,7 @@ Apparently #4139 fixes this, according to the description there.
 archive/issue_comments_029670.json:
 ```json
 {
-    "body": "This remains unfixed by #4139:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:      for h in stab4:\n....:        print g*h\n....: \n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:6829)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5206)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:5743)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:6842)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:8090)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:7495)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in __cmp__(self, other)\n   1910         c = cmp(self.ambient_group(), other.ambient_group())\n   1911         if c: return c\n-> 1912         if self.is_subgroup(other):\n   1913             return -1\n   1914         else:\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in is_subgroup(self, other)\n   1541         for i in range(len(gens)):\n   1542             x = gens[i]\n-> 1543             if not (G.has_element(x)):\n   1544                 return False\n   1545         return True\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in has_element(self, item)\n    491 \n    492         \"\"\"\n--> 493         item = PermutationGroupElement(item, self, check=False)\n    494         return item in self.list()\n    495 \n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_element.so in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2663)()\n\nAssertionError: \nsage: \nExiting SAGE (CPU time 0m1.22s, Wall time 0m28.50s).\nExiting spawned Gap process.\n```\n\n\nCheers,\n\nMichael",
+    "body": "This remains unfixed by #4139:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:      for h in stab4:\n....:        print g*h\n....: \n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:6829)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5206)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:5743)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:6842)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:8090)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:7495)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in __cmp__(self, other)\n   1910         c = cmp(self.ambient_group(), other.ambient_group())\n   1911         if c: return c\n-> 1912         if self.is_subgroup(other):\n   1913             return -1\n   1914         else:\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in is_subgroup(self, other)\n   1541         for i in range(len(gens)):\n   1542             x = gens[i]\n-> 1543             if not (G.has_element(x)):\n   1544                 return False\n   1545         return True\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in has_element(self, item)\n    491 \n    492         \"\"\"\n--> 493         item = PermutationGroupElement(item, self, check=False)\n    494         return item in self.list()\n    495 \n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_element.so in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2663)()\n\nAssertionError: \nsage: \nExiting SAGE (CPU time 0m1.22s, Wall time 0m28.50s).\nExiting spawned Gap process.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T03:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
@@ -184,7 +180,6 @@ Exiting SAGE (CPU time 0m1.22s, Wall time 0m28.50s).
 Exiting spawned Gap process.
 ```
 
-
 Cheers,
 
 Michael
@@ -196,7 +191,7 @@ Michael
 archive/issue_comments_029671.json:
 ```json
 {
-    "body": "Sorry for the necro, but this seems fixed at least in sage-5.0beta2.\n\n```\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:     for h in stab4:\n....:         print g*h\n....:         \n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```\n",
+    "body": "Sorry for the necro, but this seems fixed at least in sage-5.0beta2.\n\n```\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:     for h in stab4:\n....:         print g*h\n....:         \n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```",
     "created_at": "2012-03-20T06:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
@@ -225,7 +220,6 @@ sage: for g in stab1:
 (1,4,2)
 (1,2)(3,4)
 ```
-
 
 
 

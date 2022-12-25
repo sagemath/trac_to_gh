@@ -237,7 +237,7 @@ The patch **Sage-3.1.4-release-notes-draft2.patch** fixes some trivial typos and
 archive/issue_comments_034145.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> The file **Sage-3.1.4-release-notes-draft2.txt** claims that Sage 3.1.4 was released on 2008-10-16, which is indeed the case from the \"Last modified\" field at this [directory listing](http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.4/). But note that at this [download page](http://www.sagemath.org/download-source.html), the row for release 294 (i.e. sage-3.1.4.tar) says that the particular source tarball was released on 2008-10-20. This inconsistency in release date for sage-3.1.4 has caused me some problem in the past. In particular, please refer to [this comment](http://trac.sagemath.org/sage_trac/ticket/1389#comment:24). Now, is it correct to change the release date for sage-3.1.4 from 2008-10-16 to 2008-10-20?\n\nHi Minh,\n\n\nI use the trac date when a milestone was closed, but I guess the official time stamp of the release tarball at sagemath.org would be better. We should just make sure that it is consistent in the future.\n\nCheers,\n\nMichal",
+    "body": "Replying to [comment:3 mvngu]:\n> The file **Sage-3.1.4-release-notes-draft2.txt** claims that Sage 3.1.4 was released on 2008-10-16, which is indeed the case from the \"Last modified\" field at this [directory listing](http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.4/). But note that at this [download page](http://www.sagemath.org/download-source.html), the row for release 294 (i.e. sage-3.1.4.tar) says that the particular source tarball was released on 2008-10-20. This inconsistency in release date for sage-3.1.4 has caused me some problem in the past. In particular, please refer to [this comment](http://trac.sagemath.org/sage_trac/ticket/1389#comment:24). Now, is it correct to change the release date for sage-3.1.4 from 2008-10-16 to 2008-10-20?\n\n\nHi Minh,\n\n\nI use the trac date when a milestone was closed, but I guess the official time stamp of the release tarball at sagemath.org would be better. We should just make sure that it is consistent in the future.\n\nCheers,\n\nMichal",
     "created_at": "2008-11-29T10:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4567",
     "type": "issue_comment",
@@ -248,6 +248,7 @@ archive/issue_comments_034145.json:
 
 Replying to [comment:3 mvngu]:
 > The file **Sage-3.1.4-release-notes-draft2.txt** claims that Sage 3.1.4 was released on 2008-10-16, which is indeed the case from the "Last modified" field at this [directory listing](http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.4/). But note that at this [download page](http://www.sagemath.org/download-source.html), the row for release 294 (i.e. sage-3.1.4.tar) says that the particular source tarball was released on 2008-10-20. This inconsistency in release date for sage-3.1.4 has caused me some problem in the past. In particular, please refer to [this comment](http://trac.sagemath.org/sage_trac/ticket/1389#comment:24). Now, is it correct to change the release date for sage-3.1.4 from 2008-10-16 to 2008-10-20?
+
 
 Hi Minh,
 

@@ -3,7 +3,7 @@
 archive/issues_001135.json:
 ```json
 {
-    "body": "Assignee: @ncalexan\n\nKeywords: preparse generators QuadraticField\n\n\n```\nsage: K.<a> = QuadraticField(-55, 'a')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/emacs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1135\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: preparse generators QuadraticField\n\n```\nsage: K.<a> = QuadraticField(-55, 'a')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/emacs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1135\n\n",
     "created_at": "2007-11-09T21:03:33Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +20,6 @@ Assignee: @ncalexan
 
 Keywords: preparse generators QuadraticField
 
-
 ```
 sage: K.<a> = QuadraticField(-55, 'a')
 ---------------------------------------------------------------------------
@@ -30,7 +29,6 @@ sage: K.<a> = QuadraticField(-55, 'a')
 
 <type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1135
 

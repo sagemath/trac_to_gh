@@ -149,7 +149,7 @@ archive/issue_events_015439.json:
 archive/issue_comments_053281.json:
 ```json
 {
-    "body": "A preliminary patch is attached. Just wanted to get an implementation out there, so that others can look at it or enhance it.\n----\nNew commits:",
+    "body": "A preliminary patch is attached. Just wanted to get an implementation out there, so that others can look at it or enhance it.\n\n---\nNew commits:",
     "created_at": "2014-06-22T14:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6546",
     "type": "issue_comment",
@@ -159,7 +159,8 @@ archive/issue_comments_053281.json:
 ```
 
 A preliminary patch is attached. Just wanted to get an implementation out there, so that others can look at it or enhance it.
-----
+
+---
 New commits:
 
 

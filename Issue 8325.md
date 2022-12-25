@@ -3,7 +3,7 @@
 archive/issues_008325.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
     "created_at": "2010-02-22T05:45:15Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ Sphinx warnings from building the HTML reference manual include:
 matrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec
 plot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec
 ```
-
 
 Related: #8244.
 
@@ -154,7 +153,7 @@ archive/issue_comments_073771.json:
 archive/issue_comments_073772.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> (Is it dangerous to use \"exec\" here?  It looks okay to me, but I feel as though I should always be suspicious of using it.)\nI think you're right.  The `exec`'d code could have bad side effects.  I'm about to attach a patch that uses [comment:ticket:8244:5 this AST code], instead.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> (Is it dangerous to use \"exec\" here?  It looks okay to me, but I feel as though I should always be suspicious of using it.)\n\nI think you're right.  The `exec`'d code could have bad side effects.  I'm about to attach a patch that uses [comment:ticket:8244:5 this AST code], instead.",
     "created_at": "2010-02-25T07:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -165,6 +164,7 @@ archive/issue_comments_073772.json:
 
 Replying to [comment:3 jhpalmieri]:
 > (Is it dangerous to use "exec" here?  It looks okay to me, but I feel as though I should always be suspicious of using it.)
+
 I think you're right.  The `exec`'d code could have bad side effects.  I'm about to attach a patch that uses [comment:ticket:8244:5 this AST code], instead.
 
 
@@ -248,7 +248,7 @@ I've attached the AST version, which seems to work for me, although I have no fo
 archive/issue_comments_073777.json:
 ```json
 {
-    "body": "On one hand, this seems to fix the two particular doctests in question.  On the other, it's not perfect. I can see two problems, one of which I know how to fix:\n\n- if the source has the (unlikely) form `def f({(1,2,3): True}): ...`, then this version (and all previous versions) will think that the arg spec ends after `(1,2,3):`.  The function `_sage_getargspec_from_ast` can actually handle this kind of thing, though, so I think we should pass the entire source code to it, rather than truncate at the first `):`.  That is, delete line 470 and change line 471 from\n\n```\nproxy = 'def dummy' + source[beg:end] + '\\n    return' \n```\n\n to\n\n```\nproxy = 'def dummy' + source[beg:] + '\\n    return' \n```\n\n\n- if the docstring has type information, it can't handle it.  I don't know what to do about this, or if it's worth it.\n\nShould we fix the first problem and then go ahead with this?  I also notice that the methods for `SageArgSpecVisitor` don't have doctests.  Is that possible for these sorts of things?  I know nothing about ast.",
+    "body": "On one hand, this seems to fix the two particular doctests in question.  On the other, it's not perfect. I can see two problems, one of which I know how to fix:\n\n- if the source has the (unlikely) form `def f({(1,2,3): True}): ...`, then this version (and all previous versions) will think that the arg spec ends after `(1,2,3):`.  The function `_sage_getargspec_from_ast` can actually handle this kind of thing, though, so I think we should pass the entire source code to it, rather than truncate at the first `):`.  That is, delete line 470 and change line 471 from\n\n```\nproxy = 'def dummy' + source[beg:end] + '\\n    return' \n```\n to\n\n```\nproxy = 'def dummy' + source[beg:] + '\\n    return' \n```\n\n- if the docstring has type information, it can't handle it.  I don't know what to do about this, or if it's worth it.\n\nShould we fix the first problem and then go ahead with this?  I also notice that the methods for `SageArgSpecVisitor` don't have doctests.  Is that possible for these sorts of things?  I know nothing about ast.",
     "created_at": "2010-03-04T05:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -264,13 +264,11 @@ On one hand, this seems to fix the two particular doctests in question.  On the 
 ```
 proxy = 'def dummy' + source[beg:end] + '\n    return' 
 ```
-
  to
 
 ```
 proxy = 'def dummy' + source[beg:] + '\n    return' 
 ```
-
 
 - if the docstring has type information, it can't handle it.  I don't know what to do about this, or if it's worth it.
 
@@ -303,7 +301,7 @@ Another clause.  More doctests.  Apply only this patch.   sage repo.
 archive/issue_comments_073779.json:
 ```json
 {
-    "body": "V3:\n\n* Implements your idea to pass the entire source code.  I've included the previous version as a fallback, since `LLL` has a Cython-only construct:\n\n```python\nR = <Matrix_integer_dense>self.new_matrix(entries=map(ZZ,A.list()))\n```\n\n\n* Has extra, more direct doctests of `SageArgSpecVisitor`'s methods.\n\nI don't mind leaving the second problem for another day.",
+    "body": "V3:\n\n* Implements your idea to pass the entire source code.  I've included the previous version as a fallback, since `LLL` has a Cython-only construct:\n\n```python\nR = <Matrix_integer_dense>self.new_matrix(entries=map(ZZ,A.list()))\n```\n\n* Has extra, more direct doctests of `SageArgSpecVisitor`'s methods.\n\nI don't mind leaving the second problem for another day.",
     "created_at": "2010-03-04T09:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
@@ -319,7 +317,6 @@ V3:
 ```python
 R = <Matrix_integer_dense>self.new_matrix(entries=map(ZZ,A.list()))
 ```
-
 
 * Has extra, more direct doctests of `SageArgSpecVisitor`'s methods.
 

@@ -3,7 +3,7 @@
 archive/issues_007410.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nNoticed that some strings are truncated when viewed by print. Example:\n\n```\nG=graphs.Grid2dGraph(2,9)\nS=G.graph6_string()\nprint S\nprint G.graph6_string()\n```\n\nWe expect this to print the same string two times, but when this code is evaluated in the notebook, this is what is printed:\n\n```\nQhCGGC@_A?c@C@A?__GC@?OC?_G\nQhCGGC@_A?c@C@A?__GC@?OC?\n```\n\nThe former is the correct answer, the latter removes the last two characters for some reason.\n\nThis only happens in the notebook(tested on alpha.sagenb.org for Ubuntu, Debian and Windows XP, with browsers Firefox and IE). When the code above is run in the terminal without a notebook, it works as expected. Running './sage -notebook' also displays the error. This is all tested with Sage 4.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7410\n\n",
+    "body": "Assignee: boothby\n\nNoticed that some strings are truncated when viewed by print. Example:\n\n```\nG=graphs.Grid2dGraph(2,9)\nS=G.graph6_string()\nprint S\nprint G.graph6_string()\n```\nWe expect this to print the same string two times, but when this code is evaluated in the notebook, this is what is printed:\n\n```\nQhCGGC@_A?c@C@A?__GC@?OC?_G\nQhCGGC@_A?c@C@A?__GC@?OC?\n```\nThe former is the correct answer, the latter removes the last two characters for some reason.\n\nThis only happens in the notebook(tested on alpha.sagenb.org for Ubuntu, Debian and Windows XP, with browsers Firefox and IE). When the code above is run in the terminal without a notebook, it works as expected. Running './sage -notebook' also displays the error. This is all tested with Sage 4.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7410\n\n",
     "created_at": "2009-11-08T10:41:45Z",
     "labels": [
         "component: notebook",
@@ -26,14 +26,12 @@ S=G.graph6_string()
 print S
 print G.graph6_string()
 ```
-
 We expect this to print the same string two times, but when this code is evaluated in the notebook, this is what is printed:
 
 ```
 QhCGGC@_A?c@C@A?__GC@?OC?_G
 QhCGGC@_A?c@C@A?__GC@?OC?
 ```
-
 The former is the correct answer, the latter removes the last two characters for some reason.
 
 This only happens in the notebook(tested on alpha.sagenb.org for Ubuntu, Debian and Windows XP, with browsers Firefox and IE). When the code above is run in the terminal without a notebook, it works as expected. Running './sage -notebook' also displays the error. This is all tested with Sage 4.2.

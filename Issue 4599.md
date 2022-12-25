@@ -3,7 +3,7 @@
 archive/issues_004599.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nJaap reported:\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n************** ******************************************************** \nFile \"/home/jaap/downloads/sage-3.2.1.alpha0/devel/sage/sage/schemes/elliptic_cu rves/ell_rational_field.py\", line 1183: \n     sage: EllipticCurve('14a1').three_selmer_rank() \nException raised: \n[...] \n     TypeError: Unable to start magma because the command 'magma -n' failed. \n********************************************************************** \n1 items had failures: \n    1 of   3 in __main__.example_29 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha0/tmp/.doctest_ell_rational_field.py \n         [79.8 s] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4599\n\n",
+    "body": "Assignee: mabshoff\n\nJaap reported:\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n************** ******************************************************** \nFile \"/home/jaap/downloads/sage-3.2.1.alpha0/devel/sage/sage/schemes/elliptic_cu rves/ell_rational_field.py\", line 1183: \n     sage: EllipticCurve('14a1').three_selmer_rank() \nException raised: \n[...] \n     TypeError: Unable to start magma because the command 'magma -n' failed. \n********************************************************************** \n1 items had failures: \n    1 of   3 in __main__.example_29 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha0/tmp/.doctest_ell_rational_field.py \n         [79.8 s] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4599\n\n",
     "created_at": "2008-11-23T22:12:06Z",
     "labels": [
         "component: doctest coverage",
@@ -35,7 +35,6 @@ Exception raised:
 For whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha0/tmp/.doctest_ell_rational_field.py 
          [79.8 s] 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4599
 
@@ -88,7 +87,7 @@ Michael
 archive/issue_comments_034416.json:
 ```json
 {
-    "body": "Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by @jaapspies created at 2008-11-24 23:33:30\n\nThe patch worked for me:\n\n\n\n```\n[jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [86.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 86.9 seconds\n\n```\n",
+    "body": "Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by @jaapspies created at 2008-11-24 23:33:30\n\nThe patch worked for me:\n\n\n```\n[jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [86.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 86.9 seconds\n\n```",
     "created_at": "2008-11-24T23:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4599",
     "type": "issue_comment",
@@ -102,7 +101,6 @@ Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/tra
 The patch worked for me:
 
 
-
 ```
 [jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
@@ -113,7 +111,6 @@ All tests passed!
 Total time for all tests: 86.9 seconds
 
 ```
-
 
 
 

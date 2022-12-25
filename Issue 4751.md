@@ -3,7 +3,7 @@
 archive/issues_004751.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n  File \"/home/was/build/sage-3.2.2.alpha0/local/bin/sage-update\", line 178, in do_update\n    if 'Placeholder spkg file' in open(F).readline():\nIOError: [Errno 21] Is a directory\nError getting new packages!\nwas@sage:~/build/sage-3.2.2.alpha0$ \n```\n\n\nAlso, later it would try to move the directory out of the way, which will fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4751\n\n",
+    "body": "Assignee: mabshoff\n\n```\n  File \"/home/was/build/sage-3.2.2.alpha0/local/bin/sage-update\", line 178, in do_update\n    if 'Placeholder spkg file' in open(F).readline():\nIOError: [Errno 21] Is a directory\nError getting new packages!\nwas@sage:~/build/sage-3.2.2.alpha0$ \n```\n\nAlso, later it would try to move the directory out of the way, which will fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4751\n\n",
     "created_at": "2008-12-10T13:28:03Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_004751.json:
 ```
 Assignee: mabshoff
 
-
 ```
   File "/home/was/build/sage-3.2.2.alpha0/local/bin/sage-update", line 178, in do_update
     if 'Placeholder spkg file' in open(F).readline():
@@ -26,7 +25,6 @@ IOError: [Errno 21] Is a directory
 Error getting new packages!
 was@sage:~/build/sage-3.2.2.alpha0$ 
 ```
-
 
 Also, later it would try to move the directory out of the way, which will fail.
 

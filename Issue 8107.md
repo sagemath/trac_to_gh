@@ -145,7 +145,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071035.json:
 ```json
 {
-    "body": "A big +1 from me too. I'm curious about the comment \n\n\n```\n# We import the following two only for doctesting purposes\n```\n\n\nthough.",
+    "body": "A big +1 from me too. I'm curious about the comment \n\n```\n# We import the following two only for doctesting purposes\n```\n\nthough.",
     "created_at": "2010-01-28T09:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
@@ -156,11 +156,9 @@ archive/issue_comments_071035.json:
 
 A big +1 from me too. I'm curious about the comment 
 
-
 ```
 # We import the following two only for doctesting purposes
 ```
-
 
 though.
 
@@ -171,7 +169,7 @@ though.
 archive/issue_comments_071036.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> A big +1 from me too. I'm curious about the comment \n\n```\n# We import the following two only for doctesting purposes\n```\n\nI'm not sure, but post-#7650, these imports should be unnecessary.  The patch above does not affect the results of `make ptestlong` on sage.math.",
+    "body": "Replying to [comment:4 robertwb]:\n> A big +1 from me too. I'm curious about the comment \n\n{{{\n# We import the following two only for doctesting purposes\n}}}\nI'm not sure, but post-#7650, these imports should be unnecessary.  The patch above does not affect the results of `make ptestlong` on sage.math.",
     "created_at": "2010-01-30T05:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
@@ -183,10 +181,9 @@ archive/issue_comments_071036.json:
 Replying to [comment:4 robertwb]:
 > A big +1 from me too. I'm curious about the comment 
 
-```
+{{{
 # We import the following two only for doctesting purposes
-```
-
+}}}
 I'm not sure, but post-#7650, these imports should be unnecessary.  The patch above does not affect the results of `make ptestlong` on sage.math.
 
 

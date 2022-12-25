@@ -3,7 +3,7 @@
 archive/issues_009908.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nFrom a user who found it difficult to uninvite Share people:\n\n```\nI wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click \"invite collaborators.\" \u00a0I had tried deleting the name and then clicking \"save and quit\" in the upper right.\n```\n\nThis should be clarified.  Perhaps it should be \"update collaborator list\" or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9909\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nFrom a user who found it difficult to uninvite Share people:\n\n```\nI wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click \"invite collaborators.\" \u00a0I had tried deleting the name and then clicking \"save and quit\" in the upper right.\n```\nThis should be clarified.  Perhaps it should be \"update collaborator list\" or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9909\n\n",
     "created_at": "2010-09-14T13:19:38Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ From a user who found it difficult to uninvite Share people:
 ```
 I wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click "invite collaborators."  I had tried deleting the name and then clicking "save and quit" in the upper right.
 ```
-
 This should be clarified.  Perhaps it should be "update collaborator list" or something like that.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9909
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9909
 archive/issue_comments_098394.json:
 ```json
 {
-    "body": "Another idea from another user:\n\n```\nwould it not be a nice and simple fix to just change the button from \"invite collaborators\" to \"set collaborators\"\n```\n",
+    "body": "Another idea from another user:\n\n```\nwould it not be a nice and simple fix to just change the button from \"invite collaborators\" to \"set collaborators\"\n```",
     "created_at": "2010-09-14T14:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_comment",
@@ -54,7 +53,6 @@ Another idea from another user:
 ```
 would it not be a nice and simple fix to just change the button from "invite collaborators" to "set collaborators"
 ```
-
 
 
 

@@ -90,7 +90,7 @@ If A and B are coprime integral ideals, express 1=a+b with a in A, b in B.  (cf 
 archive/issue_comments_033756.json:
 ```json
 {
-    "body": "Replying to [comment:1 davidloeffler]:\n> I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n> \n> I've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet). \n\nNote that #4536 now has a second bug-fixing patch attached, though the coordinates() funciton is not affected.  John",
+    "body": "Replying to [comment:1 davidloeffler]:\n> I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n> \n> I've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet). \n\n\nNote that #4536 now has a second bug-fixing patch attached, though the coordinates() funciton is not affected.  John",
     "created_at": "2008-11-18T17:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
@@ -103,6 +103,7 @@ Replying to [comment:1 davidloeffler]:
 > I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). 
 > 
 > I've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet). 
+
 
 Note that #4536 now has a second bug-fixing patch attached, though the coordinates() funciton is not affected.  John
 

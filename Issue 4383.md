@@ -3,7 +3,7 @@
 archive/issues_004383.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: composition series, generators\n\nAt the tail end of a composition series of a group, the trivial subgroup has no generators, rather than the identity permutation as a generator.  This appears unacceptable to GAP for subsequent computations.\n\nOn 3.1.4 built from source on x86.\n\n\n```\nsage: G=CyclicPermutationGroup(2)\nsage: comps\n```\n\n\n\n```\n[Permutation Group with generators [(1,2)],\n Permutation Group with generators []]\n```\n\n\n\n```\nsage: comps[1].order()\n```\n\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/5.py\", line 7, in <module>\n    comps[_sage_const_1 ].order()\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 770, in order\n    return Integer(self._gap_().Size())\n  File \"sage_object.pyx\", line 270, in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2442)\n  File \"sage_object.pyx\", line 246, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2186)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 965, in __call__\n    return cls(self, x, name=name)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1283, in __init__\n    raise TypeError, x\nTypeError: Gap produced error output\nError, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)\n\n   executing $sage6:=Group([]);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4383\n\n",
+    "body": "Assignee: somebody\n\nKeywords: composition series, generators\n\nAt the tail end of a composition series of a group, the trivial subgroup has no generators, rather than the identity permutation as a generator.  This appears unacceptable to GAP for subsequent computations.\n\nOn 3.1.4 built from source on x86.\n\n```\nsage: G=CyclicPermutationGroup(2)\nsage: comps\n```\n\n```\n[Permutation Group with generators [(1,2)],\n Permutation Group with generators []]\n```\n\n```\nsage: comps[1].order()\n```\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/5.py\", line 7, in <module>\n    comps[_sage_const_1 ].order()\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 770, in order\n    return Integer(self._gap_().Size())\n  File \"sage_object.pyx\", line 270, in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2442)\n  File \"sage_object.pyx\", line 246, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2186)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 965, in __call__\n    return cls(self, x, name=name)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1283, in __init__\n    raise TypeError, x\nTypeError: Gap produced error output\nError, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)\n\n   executing $sage6:=Group([]);;\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4383\n\n",
     "created_at": "2008-10-30T04:02:58Z",
     "labels": [
         "component: group theory",
@@ -25,26 +25,19 @@ At the tail end of a composition series of a group, the trivial subgroup has no 
 
 On 3.1.4 built from source on x86.
 
-
 ```
 sage: G=CyclicPermutationGroup(2)
 sage: comps
 ```
-
-
 
 ```
 [Permutation Group with generators [(1,2)],
  Permutation Group with generators []]
 ```
 
-
-
 ```
 sage: comps[1].order()
 ```
-
-
 
 ```
 Traceback (most recent call last):
@@ -67,7 +60,6 @@ Error, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)
    executing $sage6:=Group([]);;
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4383
 
 
@@ -79,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4383
 archive/issue_comments_032181.json:
 ```json
 {
-    "body": "First bit of code above lost the middle line, which should read\n\n\n```\nsage: comps=G.composition_series()\n```\n",
+    "body": "First bit of code above lost the middle line, which should read\n\n```\nsage: comps=G.composition_series()\n```",
     "created_at": "2008-10-30T04:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -90,11 +82,9 @@ archive/issue_comments_032181.json:
 
 First bit of code above lost the middle line, which should read
 
-
 ```
 sage: comps=G.composition_series()
 ```
-
 
 
 
@@ -103,7 +93,7 @@ sage: comps=G.composition_series()
 archive/issue_comments_032182.json:
 ```json
 {
-    "body": "I'm guessing that this this ticket is not named accurately. \n\nIt appears the problem isn't with the composition series but with the order function:\n\n\n```\nsage: G = PermutationGroup([])\nsage: G.order()\nERROR: An unexpected error occurred while tokenizing input\n<snip>\n```\n\nThis will possibly raise the issue of whether the trivial group should be PermutationGroup([]) (as it is now) or PermutationGroup([()]) (for which order works). According to Rotman, the group whose generating set is the empty set is the trivial group, so I think they way we have it is fine. Therefore, I elected to simply fix this bug in the order method. \nPatch attached is based on sage-3.2.alpha1 and pases sage -t.",
+    "body": "I'm guessing that this this ticket is not named accurately. \n\nIt appears the problem isn't with the composition series but with the order function:\n\n```\nsage: G = PermutationGroup([])\nsage: G.order()\nERROR: An unexpected error occurred while tokenizing input\n<snip>\n```\nThis will possibly raise the issue of whether the trivial group should be PermutationGroup([]) (as it is now) or PermutationGroup([()]) (for which order works). According to Rotman, the group whose generating set is the empty set is the trivial group, so I think they way we have it is fine. Therefore, I elected to simply fix this bug in the order method. \nPatch attached is based on sage-3.2.alpha1 and pases sage -t.",
     "created_at": "2008-10-30T19:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -116,14 +106,12 @@ I'm guessing that this this ticket is not named accurately.
 
 It appears the problem isn't with the composition series but with the order function:
 
-
 ```
 sage: G = PermutationGroup([])
 sage: G.order()
 ERROR: An unexpected error occurred while tokenizing input
 <snip>
 ```
-
 This will possibly raise the issue of whether the trivial group should be PermutationGroup([]) (as it is now) or PermutationGroup([()]) (for which order works). According to Rotman, the group whose generating set is the empty set is the trivial group, so I think they way we have it is fine. Therefore, I elected to simply fix this bug in the order method. 
 Patch attached is based on sage-3.2.alpha1 and pases sage -t.
 
@@ -216,7 +204,7 @@ based on 3.2.alpha1 - apply after the first patch
 archive/issue_comments_032187.json:
 ```json
 {
-    "body": "I agree that a constructor with an empty list should be interpreted as the trivial subgroup, but it seems that passing this to GAP will cause an error.  On 3.1.4 I get a different error message than David, which suggests that GAP doesn't like the construction.\n\nCalling other commands on a group with no generators (such as exponent() or is_simple() or derived_series()), yields an error similar (or identical) to the one from a call to order().\n\nFurthermore, it appears that until recently composition_series() returned a trivial subgroup with the identity element as a generator for the tail end of the series.  For example, see sample output in [3364](http://trac.sagemath.org/sage_trac/ticket/3364).\n\nIt seems to me that having the output of one command be acceptable to all subsequent commands is preferable.  The experiment below suggests to me that GAP doesn't like an empty list of generators.\n\n\n\n```\nsage: gap.eval(\"G := Group(())\")\n'Group(())'\n\nsage: gap.eval(\"G := Group()\")\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/17.py\", line 6, in <module>\n    gap.eval(\"G := Group()\")\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 404, in eval\n    s = Expect.eval(self, x)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 627, in _eval_line\n    raise RuntimeError, message\nRuntimeError: Gap produced error output\nError, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)\n\n   executing G := Group();\n```\n",
+    "body": "I agree that a constructor with an empty list should be interpreted as the trivial subgroup, but it seems that passing this to GAP will cause an error.  On 3.1.4 I get a different error message than David, which suggests that GAP doesn't like the construction.\n\nCalling other commands on a group with no generators (such as exponent() or is_simple() or derived_series()), yields an error similar (or identical) to the one from a call to order().\n\nFurthermore, it appears that until recently composition_series() returned a trivial subgroup with the identity element as a generator for the tail end of the series.  For example, see sample output in [3364](http://trac.sagemath.org/sage_trac/ticket/3364).\n\nIt seems to me that having the output of one command be acceptable to all subsequent commands is preferable.  The experiment below suggests to me that GAP doesn't like an empty list of generators.\n\n\n```\nsage: gap.eval(\"G := Group(())\")\n'Group(())'\n\nsage: gap.eval(\"G := Group()\")\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/17.py\", line 6, in <module>\n    gap.eval(\"G := Group()\")\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 404, in eval\n    s = Expect.eval(self, x)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 627, in _eval_line\n    raise RuntimeError, message\nRuntimeError: Gap produced error output\nError, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)\n\n   executing G := Group();\n```",
     "created_at": "2008-10-31T02:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -232,7 +220,6 @@ Calling other commands on a group with no generators (such as exponent() or is_s
 Furthermore, it appears that until recently composition_series() returned a trivial subgroup with the identity element as a generator for the tail end of the series.  For example, see sample output in [3364](http://trac.sagemath.org/sage_trac/ticket/3364).
 
 It seems to me that having the output of one command be acceptable to all subsequent commands is preferable.  The experiment below suggests to me that GAP doesn't like an empty list of generators.
-
 
 
 ```
@@ -257,7 +244,6 @@ Error, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)
 
    executing G := Group();
 ```
-
 
 
 
@@ -392,7 +378,7 @@ Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/so
 archive/issue_comments_032194.json:
 ```json
 {
-    "body": "REPORT:\n\nLooks good.   Mabshoff, apply the following patches in order (to 3.2.1.alpha):\n\n\n```\ntrac_4383-order-trivial-permgp.patch \ntrac_4383-order-trivial-permgp2.patch\ntrac_4383-order-trivial-permgp3-REBASE.patch\n```\n",
+    "body": "REPORT:\n\nLooks good.   Mabshoff, apply the following patches in order (to 3.2.1.alpha):\n\n```\ntrac_4383-order-trivial-permgp.patch \ntrac_4383-order-trivial-permgp2.patch\ntrac_4383-order-trivial-permgp3-REBASE.patch\n```",
     "created_at": "2008-11-29T01:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -405,13 +391,11 @@ REPORT:
 
 Looks good.   Mabshoff, apply the following patches in order (to 3.2.1.alpha):
 
-
 ```
 trac_4383-order-trivial-permgp.patch 
 trac_4383-order-trivial-permgp2.patch
 trac_4383-order-trivial-permgp3-REBASE.patch
 ```
-
 
 
 
@@ -438,7 +422,7 @@ Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachm
 archive/issue_comments_032196.json:
 ```json
 {
-    "body": "One trivial doctesting failure is to fix:\n\n```\nsage -t -long \"devel/sage/sage/combinat/designs/incidence_structures.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha3/devel/sage/sage/combinat/designs/incidence_structures.py\", line 174:\n    sage: G = BD.automorphism_group(); G\nExpected:\n    Permutation Group with generators []\nGot:\n    Permutation Group with generators [()]\n```\n",
+    "body": "One trivial doctesting failure is to fix:\n\n```\nsage -t -long \"devel/sage/sage/combinat/designs/incidence_structures.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha3/devel/sage/sage/combinat/designs/incidence_structures.py\", line 174:\n    sage: G = BD.automorphism_group(); G\nExpected:\n    Permutation Group with generators []\nGot:\n    Permutation Group with generators [()]\n```",
     "created_at": "2008-11-29T02:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -462,13 +446,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_032197.json:
 ```json
 {
-    "body": "Another doctest failure:\n\n```\nFile \"/home/was/build/sage-3.2.1.alpha1/devel/sage-review/sage/combinat/designs/incidence_structures.py\", line 174:\n    sage: G = BD.automorphism_group(); G\nExpected:\n    Permutation Group with generators []\nGot:\n    Permutation Group with generators [()]\n```\n",
+    "body": "Another doctest failure:\n\n```\nFile \"/home/was/build/sage-3.2.1.alpha1/devel/sage-review/sage/combinat/designs/incidence_structures.py\", line 174:\n    sage: G = BD.automorphism_group(); G\nExpected:\n    Permutation Group with generators []\nGot:\n    Permutation Group with generators [()]\n```",
     "created_at": "2008-11-29T02:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -487,7 +470,6 @@ Expected:
 Got:
     Permutation Group with generators [()]
 ```
-
 
 
 
@@ -532,7 +514,7 @@ Resolution: fixed
 archive/issue_comments_032200.json:
 ```json
 {
-    "body": "Merged\n\n```\ntrac_4383-order-trivial-permgp.patch \ntrac_4383-order-trivial-permgp2.patch\ntrac_4383-order-trivial-permgp3-REBASE.patch\ntrac_4383-order-trivial-permgp4.patch\n```\n\nin Sage 3.2.1.rc0\n\nCheers,\n\nMichael",
+    "body": "Merged\n\n```\ntrac_4383-order-trivial-permgp.patch \ntrac_4383-order-trivial-permgp2.patch\ntrac_4383-order-trivial-permgp3-REBASE.patch\ntrac_4383-order-trivial-permgp4.patch\n```\nin Sage 3.2.1.rc0\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T03:31:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
@@ -549,7 +531,6 @@ trac_4383-order-trivial-permgp2.patch
 trac_4383-order-trivial-permgp3-REBASE.patch
 trac_4383-order-trivial-permgp4.patch
 ```
-
 in Sage 3.2.1.rc0
 
 Cheers,

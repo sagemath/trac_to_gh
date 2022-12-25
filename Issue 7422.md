@@ -82,7 +82,7 @@ Just a python and Sage style note: unless there is a huge significant reason, th
 archive/issue_comments_062349.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Just a python and Sage style note: unless there is a huge significant reason, things in function names should be spelled out.  So, for example, residual_pt should be residual_point, blck should be \"block\", etc.  This makes a huge difference in readability for someone that is using the module, reading code written by others, etc.\n\n\nOK, I will make this change, thanks.",
+    "body": "Replying to [comment:2 jason]:\n> Just a python and Sage style note: unless there is a huge significant reason, things in function names should be spelled out.  So, for example, residual_pt should be residual_point, blck should be \"block\", etc.  This makes a huge difference in readability for someone that is using the module, reading code written by others, etc.\n\n\n\nOK, I will make this change, thanks.",
     "created_at": "2009-11-10T17:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
@@ -93,6 +93,7 @@ archive/issue_comments_062349.json:
 
 Replying to [comment:2 jason]:
 > Just a python and Sage style note: unless there is a huge significant reason, things in function names should be spelled out.  So, for example, residual_pt should be residual_point, blck should be "block", etc.  This makes a huge difference in readability for someone that is using the module, reading code written by others, etc.
+
 
 
 OK, I will make this change, thanks.
@@ -226,7 +227,7 @@ Dave
 archive/issue_comments_062355.json:
 ```json
 {
-    "body": "I do not know if this patch is still necessary, but if it is it needs to be rebased.\n\n\n```\n12 out of 12 hunks FAILED -- saving rejects to file sage/combinat/designs/incidence_structures.py.rej\n```\n\n\nNathann",
+    "body": "I do not know if this patch is still necessary, but if it is it needs to be rebased.\n\n```\n12 out of 12 hunks FAILED -- saving rejects to file sage/combinat/designs/incidence_structures.py.rej\n```\n\nNathann",
     "created_at": "2010-05-16T16:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
@@ -237,11 +238,9 @@ archive/issue_comments_062355.json:
 
 I do not know if this patch is still necessary, but if it is it needs to be rebased.
 
-
 ```
 12 out of 12 hunks FAILED -- saving rejects to file sage/combinat/designs/incidence_structures.py.rej
 ```
-
 
 Nathann
 

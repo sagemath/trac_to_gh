@@ -127,7 +127,7 @@ Cc me
 archive/issue_comments_057803.json:
 ```json
 {
-    "body": "I tried reproducing this:\n\n```\nG = posets.IntegerPartitions(3).hasse_diagram() \nG.plot(layout=\"acyclic_dummy\", spring = True)\n```\n\n\nBut I got:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.2/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in plot(self, **options)\n   9137         \"\"\"\n   9138         from sage.graphs.graph_plot import GraphPlot\n-> 9139         return GraphPlot(graph=self, options=options).plot()\n   9140 \n   9141     def show(self, **kwds):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in __init__(self, graph, options)\n     83         self._graph = graph\n     84         self._options = options\n---> 85         self.set_pos()\n     86         self._arcs = self._graph.has_multiple_edges(to_undirected=True)\n     87         self._loops = self._graph.has_loops()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in set_pos(self)\n    183                 self._pos = pos\n    184 \n--> 185         if not self._pos:\n    186             self._pos = generic_graph_pyx.spring_layout_fast(self._graph, iterations=self._options['iterations'], height=(self._options['heights'] is not None))\n    187             \n\nAttributeError: 'GraphPlot' object has no attribute '_pos'\n```\n\n\nLooks like the first if of `set_pos` needs an `else` clause. But this wasn't the problem you indicated.",
+    "body": "I tried reproducing this:\n\n```\nG = posets.IntegerPartitions(3).hasse_diagram() \nG.plot(layout=\"acyclic_dummy\", spring = True)\n```\n\nBut I got:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.2/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in plot(self, **options)\n   9137         \"\"\"\n   9138         from sage.graphs.graph_plot import GraphPlot\n-> 9139         return GraphPlot(graph=self, options=options).plot()\n   9140 \n   9141     def show(self, **kwds):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in __init__(self, graph, options)\n     83         self._graph = graph\n     84         self._options = options\n---> 85         self.set_pos()\n     86         self._arcs = self._graph.has_multiple_edges(to_undirected=True)\n     87         self._loops = self._graph.has_loops()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in set_pos(self)\n    183                 self._pos = pos\n    184 \n--> 185         if not self._pos:\n    186             self._pos = generic_graph_pyx.spring_layout_fast(self._graph, iterations=self._options['iterations'], height=(self._options['heights'] is not None))\n    187             \n\nAttributeError: 'GraphPlot' object has no attribute '_pos'\n```\n\nLooks like the first if of `set_pos` needs an `else` clause. But this wasn't the problem you indicated.",
     "created_at": "2010-02-11T04:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ I tried reproducing this:
 G = posets.IntegerPartitions(3).hasse_diagram() 
 G.plot(layout="acyclic_dummy", spring = True)
 ```
-
 
 But I got:
 
@@ -182,7 +181,6 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'GraphPlot' object has no attribute '_pos'
 ```
 
-
 Looks like the first if of `set_pos` needs an `else` clause. But this wasn't the problem you indicated.
 
 
@@ -192,7 +190,7 @@ Looks like the first if of `set_pos` needs an `else` clause. But this wasn't the
 archive/issue_comments_057804.json:
 ```json
 {
-    "body": "I tried this again, and now I am getting a different (!) error:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.2/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in plot(self, **options)\n   9596         \"\"\"\n   9597         from sage.graphs.graph_plot import GraphPlot\n-> 9598         return GraphPlot(graph=self, options=options).plot()\n   9599 \n   9600     def show(self, **kwds):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in __init__(self, graph, options)\n     91         self._graph = graph\n     92         self._options = options\n---> 93         self.set_pos()\n     94         self._arcs = self._graph.has_multiple_edges(to_undirected=True)\n     95         self._loops = self._graph.has_loops()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in set_pos(self)\n    137             sage: t.plot(heights={0:[0], 1:[4,5,1], 2:[2], 3:[3,6]})\n    138         \"\"\"\n--> 139         self._pos = self._graph.layout(**self._options)\n    140 \n    141     def set_vertices(self, **vertex_options):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in layout(self, layout, pos, dim, save_pos, **options)\n   8952 \n   8953         if hasattr(self, \"layout_%s\"%layout):\n-> 8954             pos = getattr(self, \"layout_%s\"%layout)(dim = dim, **options)\n   8955         elif layout is not None:\n   8956             raise ValueError, \"unknown layout algorithm: %s\"%layout\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/digraph.pyc in layout_acyclic_dummy(self, heights, **options)\n   1482             levels = [sorted(z) for z in levels]\n   1483             heights = dict([[i, levels[i]] for i in range(len(levels))])\n-> 1484         return self.layout_graded(heights = heights, **options)\n   1485 \n   1486     def level_sets(self):\n\nAttributeError: 'DiGraph' object has no attribute 'layout_graded'\n```\n\n\nI'm baffled.",
+    "body": "I tried this again, and now I am getting a different (!) error:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.2/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in plot(self, **options)\n   9596         \"\"\"\n   9597         from sage.graphs.graph_plot import GraphPlot\n-> 9598         return GraphPlot(graph=self, options=options).plot()\n   9599 \n   9600     def show(self, **kwds):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in __init__(self, graph, options)\n     91         self._graph = graph\n     92         self._options = options\n---> 93         self.set_pos()\n     94         self._arcs = self._graph.has_multiple_edges(to_undirected=True)\n     95         self._loops = self._graph.has_loops()\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/graph_plot.pyc in set_pos(self)\n    137             sage: t.plot(heights={0:[0], 1:[4,5,1], 2:[2], 3:[3,6]})\n    138         \"\"\"\n--> 139         self._pos = self._graph.layout(**self._options)\n    140 \n    141     def set_vertices(self, **vertex_options):\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in layout(self, layout, pos, dim, save_pos, **options)\n   8952 \n   8953         if hasattr(self, \"layout_%s\"%layout):\n-> 8954             pos = getattr(self, \"layout_%s\"%layout)(dim = dim, **options)\n   8955         elif layout is not None:\n   8956             raise ValueError, \"unknown layout algorithm: %s\"%layout\n\n/Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/digraph.pyc in layout_acyclic_dummy(self, heights, **options)\n   1482             levels = [sorted(z) for z in levels]\n   1483             heights = dict([[i, levels[i]] for i in range(len(levels))])\n-> 1484         return self.layout_graded(heights = heights, **options)\n   1485 \n   1486     def level_sets(self):\n\nAttributeError: 'DiGraph' object has no attribute 'layout_graded'\n```\n\nI'm baffled.",
     "created_at": "2010-02-11T05:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -253,7 +251,6 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'DiGraph' object has no attribute 'layout_graded'
 ```
 
-
 I'm baffled.
 
 
@@ -263,7 +260,7 @@ I'm baffled.
 archive/issue_comments_057805.json:
 ```json
 {
-    "body": "Ooops, sorry Robert for the wasted time, I completely forgot to upload the latest version on trac yesterday night. I also screwed up in my example which too small. Please try instead:\n\n```\nG = posets.IntegerPartitions(5).hasse_diagram()\n```\n\n\n```\nG = DiGraph({1:(2,3), 2:[4], 3:[4]})\n```\n\n\nLooking again at those pictures, it feels like the nodes of same height do not repulse each other, or at least not as much as in the pure spring layout.",
+    "body": "Ooops, sorry Robert for the wasted time, I completely forgot to upload the latest version on trac yesterday night. I also screwed up in my example which too small. Please try instead:\n\n```\nG = posets.IntegerPartitions(5).hasse_diagram()\n```\n\n```\nG = DiGraph({1:(2,3), 2:[4], 3:[4]})\n```\n\nLooking again at those pictures, it feels like the nodes of same height do not repulse each other, or at least not as much as in the pure spring layout.",
     "created_at": "2010-02-11T10:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -278,11 +275,9 @@ Ooops, sorry Robert for the wasted time, I completely forgot to upload the lates
 G = posets.IntegerPartitions(5).hasse_diagram()
 ```
 
-
 ```
 G = DiGraph({1:(2,3), 2:[4], 3:[4]})
 ```
-
 
 Looking again at those pictures, it feels like the nodes of same height do not repulse each other, or at least not as much as in the pure spring layout.
 
@@ -311,7 +306,7 @@ See discussion on http://groups.google.com/group/sage-devel/browse_thread/thread
 archive/issue_comments_057807.json:
 ```json
 {
-    "body": "All graphs used to plot as square plots, whether you wanted them to or not. This would stretch any plot into a square, so if the relative distances were larger in one dimension than in the other, this would not show in the plot.\n\nThe following adjustment seems to improve the situation a bit, but I'm really not sure what the \"right\" fix is here.\n\n\n```\n--- a/sage/graphs/generic_graph.py\tThu Feb 11 15:36:58 2010 +0100\n+++ b/sage/graphs/generic_graph.py\tThu Feb 11 07:39:46 2010 -0800\n@@ -9058,6 +9058,8 @@\n             # We restore back the original height.\n             for x in self.vertices():\n                 newpos[x][dim-1] = pos[x][dim-1]\n+                for i in range(dim-1):\n+                    newpos[x][i] *= 10\n             pos = newpos\n         return pos\n```\n",
+    "body": "All graphs used to plot as square plots, whether you wanted them to or not. This would stretch any plot into a square, so if the relative distances were larger in one dimension than in the other, this would not show in the plot.\n\nThe following adjustment seems to improve the situation a bit, but I'm really not sure what the \"right\" fix is here.\n\n```\n--- a/sage/graphs/generic_graph.py\tThu Feb 11 15:36:58 2010 +0100\n+++ b/sage/graphs/generic_graph.py\tThu Feb 11 07:39:46 2010 -0800\n@@ -9058,6 +9058,8 @@\n             # We restore back the original height.\n             for x in self.vertices():\n                 newpos[x][dim-1] = pos[x][dim-1]\n+                for i in range(dim-1):\n+                    newpos[x][i] *= 10\n             pos = newpos\n         return pos\n```",
     "created_at": "2010-02-11T15:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -323,7 +318,6 @@ archive/issue_comments_057807.json:
 All graphs used to plot as square plots, whether you wanted them to or not. This would stretch any plot into a square, so if the relative distances were larger in one dimension than in the other, this would not show in the plot.
 
 The following adjustment seems to improve the situation a bit, but I'm really not sure what the "right" fix is here.
-
 
 ```
 --- a/sage/graphs/generic_graph.py	Thu Feb 11 15:36:58 2010 +0100
@@ -340,13 +334,12 @@ The following adjustment seems to improve the situation a bit, but I'm really no
 
 
 
-
 ---
 
 archive/issue_comments_057808.json:
 ```json
 {
-    "body": "Hi there,\n\nCompiling the doc in our queue if found a missing `r\"\"\"` in an `\"\"\"`, which prevented the doc to compile. I just pushed a trivial patch in our queue under the name \n\n```\n    trac_7004-graphviz-doc-fix.patch\n```\n\nNicolas: please upload or fold in yours at will.",
+    "body": "Hi there,\n\nCompiling the doc in our queue if found a missing `r\"\"\"` in an `\"\"\"`, which prevented the doc to compile. I just pushed a trivial patch in our queue under the name \n\n```\n    trac_7004-graphviz-doc-fix.patch\n```\nNicolas: please upload or fold in yours at will.",
     "created_at": "2010-02-13T10:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -362,7 +355,6 @@ Compiling the doc in our queue if found a missing `r"""` in an `"""`, which prev
 ```
     trac_7004-graphviz-doc-fix.patch
 ```
-
 Nicolas: please upload or fold in yours at will.
 
 
@@ -453,7 +445,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057813.json:
 ```json
 {
-    "body": "> It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.\n\nThe documentation is quite clear and complete but in an \"hidden\" file: sage.graphs.graph_latex\n\nThe refactorization of the code is really good, I will just talk about the graphviz, string and latex possibilities. Perhaps for other tickets...\n\n1) __graph to text conversion__\n\nThere is different standards format for string representations of graph objects. At least two or three\n* graphml (http://graphml.graphdrawing.org) which uses XML\n* dot (http://www.graphviz.org) which was created by graphviz\n* xdot which is can be considered as an extension of dot with non standard options\n\nFrom now, there exists a method graphviz_string. Could we prefer a dot_string ? and in the same manner think about a graphml_string ?\nThe main problem with those two names is that there does not start with the same prefix... and we get a contradiction with the use of the tab completion. As the refactorization for layout is perhaps we can consider string_dot and string_gml ? and string(format='dot') string(format='gml')\n\n2) __latex generation__\n\nThere is a intersection between the two format of GraphLatex (which is written in the description). dot2tex is able to produce a lot of different format...\n\nCouldn't we prefer in the GraphLatex file some different methods\n\n* picture_tikz\n* picture_pstricks\n* which can also be used from picture(format='tikz') picture(format='pstricks')\n\nand have an option inside picture_tikz to consider whether we use dot2tex or we use the actual code ?\n\n3) __latency__\n\nIt took one second to execute in a console\n\n\n```\nneato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex\n```\n\n\nAnd almost one minute for\n\n```\nsage: G = MyGraph()\nsage: G.set_latex_options(format='dot2tex')\nsage: view(G)\n```\n\n\nDo you have an idea where the time is lost ?\n\n4) __graph editor__\n\nThere is a java program which can be used to interact with graphviz: http://www.dynagraph.org/\nThe program is made of two things dynagraph and grappa. It could be really nice to have an applet inside the notebook to use it directly as graph_editor works !!\n\nIt is available under the Common Public License",
+    "body": "> It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.\n\n\nThe documentation is quite clear and complete but in an \"hidden\" file: sage.graphs.graph_latex\n\nThe refactorization of the code is really good, I will just talk about the graphviz, string and latex possibilities. Perhaps for other tickets...\n\n1) __graph to text conversion__\n\nThere is different standards format for string representations of graph objects. At least two or three\n* graphml (http://graphml.graphdrawing.org) which uses XML\n* dot (http://www.graphviz.org) which was created by graphviz\n* xdot which is can be considered as an extension of dot with non standard options\n\nFrom now, there exists a method graphviz_string. Could we prefer a dot_string ? and in the same manner think about a graphml_string ?\nThe main problem with those two names is that there does not start with the same prefix... and we get a contradiction with the use of the tab completion. As the refactorization for layout is perhaps we can consider string_dot and string_gml ? and string(format='dot') string(format='gml')\n\n2) __latex generation__\n\nThere is a intersection between the two format of GraphLatex (which is written in the description). dot2tex is able to produce a lot of different format...\n\nCouldn't we prefer in the GraphLatex file some different methods\n\n* picture_tikz\n* picture_pstricks\n* which can also be used from picture(format='tikz') picture(format='pstricks')\n\nand have an option inside picture_tikz to consider whether we use dot2tex or we use the actual code ?\n\n3) __latency__\n\nIt took one second to execute in a console\n\n```\nneato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex\n```\n\nAnd almost one minute for\n\n```\nsage: G = MyGraph()\nsage: G.set_latex_options(format='dot2tex')\nsage: view(G)\n```\n\nDo you have an idea where the time is lost ?\n\n4) __graph editor__\n\nThere is a java program which can be used to interact with graphviz: http://www.dynagraph.org/\nThe program is made of two things dynagraph and grappa. It could be really nice to have an applet inside the notebook to use it directly as graph_editor works !!\n\nIt is available under the Common Public License",
     "created_at": "2010-02-28T11:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -463,6 +455,7 @@ archive/issue_comments_057813.json:
 ```
 
 > It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.
+
 
 The documentation is quite clear and complete but in an "hidden" file: sage.graphs.graph_latex
 
@@ -494,11 +487,9 @@ and have an option inside picture_tikz to consider whether we use dot2tex or we 
 
 It took one second to execute in a console
 
-
 ```
 neato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex
 ```
-
 
 And almost one minute for
 
@@ -507,7 +498,6 @@ sage: G = MyGraph()
 sage: G.set_latex_options(format='dot2tex')
 sage: view(G)
 ```
-
 
 Do you have an idea where the time is lost ?
 
@@ -525,7 +515,7 @@ It is available under the Common Public License
 archive/issue_comments_057814.json:
 ```json
 {
-    "body": "Replying to [comment:21 vdelecroix]:\n> > It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.\n> The documentation is quite clear and complete but in an \"hidden\" file: sage.graphs.graph_latex\n\n+1 on adding appropriate links.\n\n> The refactorization of the code is really good, \n\n:-)\n\n> I will just talk about the graphviz, string and latex possibilities. Perhaps for other tickets...\n\n> 1) __graph to text conversion__\n> \n> There is different standards format for string representations of graph objects. At least two or three\n>   * graphml (http://graphml.graphdrawing.org) which uses XML\n>   * dot (http://www.graphviz.org) which was created by graphviz\n>   * xdot which is can be considered as an extension of dot with non standard options\n>\n> From now, there exists a method graphviz_string. Could we prefer a\n> dot_string ? and in the same manner think about a graphml_string ?\n\nYup. Note that there already exists methods graph6_string\nsparse6_string, and so on.\n\n> The main problem with those two names is that there does not start\n> with the same prefix... and we get a contradiction with the use of\n> the tab completion. As the refactorization for layout is perhaps we\n> can consider string_dot and string_gml ? and string(format='dot')\n> string(format='gml')\n\nThe ..._string convention is followed consistently; so it might be a\nbit late to change it. On the other hand, it could be nice indeed to\nhave a string(format='...') method\n\n\n> 2) __latex generation__\n> \n> There is a intersection between the two format of GraphLatex (which is written in the description). dot2tex is able to produce a lot of different format...\n> \n> Couldn't we prefer in the GraphLatex file some different methods\n> \n>   * picture_tikz\n>   * picture_pstricks\n>   * which can also be used from picture(format='tikz') picture(format='pstricks')\n> \n> and have an option inside picture_tikz to consider whether we use dot2tex or we use the actual code ?\n\nI see all those methods as internal (actually, maybe they should start\nwith _), while the main entry point for the user is the latex method.\nWith this in mind, each picture_* method should concentrate on a\nspecific task (creating a tikz picture manually / creating a picture\nby calling dot2tex), whereas all the dispatching job should go in the\nlatex method.\n\nI would not mind if the latex method would take extra arguments (as a\nshortcut to calling set_latex_options).\n\n> 3) __latency__\n> \n> It took one second to execute in a console\n> \n> {{{\n> neato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex\n> }}}\n> \n> And almost one minute for\n> {{{\n> sage: G = MyGraph()\n> sage: G.set_latex_options(format='dot2tex')\n> sage: view(G)\n> }}}\n> \n> Do you have an idea where the time is lost ?\n\nAh, interesting! On extra thing that dot2tex does it to run latex on\neach node to get the dimension of its bounding box. In principle, this\nis done in one swoop for all nodes, so that should not be that bad. So\nwe should check whether it is dot2tex or the interface to dot2tex\nwhich is to be blamed. Could you give me your example and/or run the\ndot2tex script on it?\n\n> 4) __graph editor__\n> \n> There is a java program which can be used to interact with graphviz: http://www.dynagraph.org/\n> The program is made of two things dynagraph and grappa. It could be really nice to have an applet inside the notebook to use it directly as graph_editor works !!\n> \n> It is available under the Common Public License\n\n+1 definitely!\n\nIt does not seem to have been very active recently though.\n\nCheers,",
+    "body": "Replying to [comment:21 vdelecroix]:\n> > It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.\n\n> The documentation is quite clear and complete but in an \"hidden\" file: sage.graphs.graph_latex\n\n+1 on adding appropriate links.\n\n> The refactorization of the code is really good, \n\n\n:-)\n\n> I will just talk about the graphviz, string and latex possibilities. Perhaps for other tickets...\n\n\n> 1) __graph to text conversion__\n> \n> There is different standards format for string representations of graph objects. At least two or three\n> * graphml (http://graphml.graphdrawing.org) which uses XML\n> * dot (http://www.graphviz.org) which was created by graphviz\n> * xdot which is can be considered as an extension of dot with non standard options\n\n>\n> From now, there exists a method graphviz_string. Could we prefer a\n> dot_string ? and in the same manner think about a graphml_string ?\n\n\nYup. Note that there already exists methods graph6_string\nsparse6_string, and so on.\n\n> The main problem with those two names is that there does not start\n> with the same prefix... and we get a contradiction with the use of\n> the tab completion. As the refactorization for layout is perhaps we\n> can consider string_dot and string_gml ? and string(format='dot')\n> string(format='gml')\n\n\nThe ..._string convention is followed consistently; so it might be a\nbit late to change it. On the other hand, it could be nice indeed to\nhave a string(format='...') method\n\n\n> 2) __latex generation__\n> \n> There is a intersection between the two format of GraphLatex (which is written in the description). dot2tex is able to produce a lot of different format...\n> \n> Couldn't we prefer in the GraphLatex file some different methods\n> \n> * picture_tikz\n> * picture_pstricks\n> * which can also be used from picture(format='tikz') picture(format='pstricks')\n> \n> and have an option inside picture_tikz to consider whether we use dot2tex or we use the actual code ?\n\n\nI see all those methods as internal (actually, maybe they should start\nwith _), while the main entry point for the user is the latex method.\nWith this in mind, each picture_* method should concentrate on a\nspecific task (creating a tikz picture manually / creating a picture\nby calling dot2tex), whereas all the dispatching job should go in the\nlatex method.\n\nI would not mind if the latex method would take extra arguments (as a\nshortcut to calling set_latex_options).\n\n> 3) __latency__\n> \n> It took one second to execute in a console\n> \n> \n> ```\n> neato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex\n> ```\n> \n> And almost one minute for\n> \n> ```\n> sage: G = MyGraph()\n> sage: G.set_latex_options(format='dot2tex')\n> sage: view(G)\n> ```\n> \n> Do you have an idea where the time is lost ?\n\n\nAh, interesting! On extra thing that dot2tex does it to run latex on\neach node to get the dimension of its bounding box. In principle, this\nis done in one swoop for all nodes, so that should not be that bad. So\nwe should check whether it is dot2tex or the interface to dot2tex\nwhich is to be blamed. Could you give me your example and/or run the\ndot2tex script on it?\n\n> 4) __graph editor__\n> \n> There is a java program which can be used to interact with graphviz: http://www.dynagraph.org/\n> The program is made of two things dynagraph and grappa. It could be really nice to have an applet inside the notebook to use it directly as graph_editor works !!\n> \n> It is available under the Common Public License\n\n\n+1 definitely!\n\nIt does not seem to have been very active recently though.\n\nCheers,",
     "created_at": "2010-03-08T09:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
@@ -536,25 +526,30 @@ archive/issue_comments_057814.json:
 
 Replying to [comment:21 vdelecroix]:
 > > It's not clear from the graph documentation that we can use latex for the output. It could be clearer to have a link in the docstring of the plot method or in the one of the object (Graph or DiGraph) itself.
+
 > The documentation is quite clear and complete but in an "hidden" file: sage.graphs.graph_latex
 
 +1 on adding appropriate links.
 
 > The refactorization of the code is really good, 
 
+
 :-)
 
 > I will just talk about the graphviz, string and latex possibilities. Perhaps for other tickets...
 
+
 > 1) __graph to text conversion__
 > 
 > There is different standards format for string representations of graph objects. At least two or three
->   * graphml (http://graphml.graphdrawing.org) which uses XML
->   * dot (http://www.graphviz.org) which was created by graphviz
->   * xdot which is can be considered as an extension of dot with non standard options
+> * graphml (http://graphml.graphdrawing.org) which uses XML
+> * dot (http://www.graphviz.org) which was created by graphviz
+> * xdot which is can be considered as an extension of dot with non standard options
+
 >
 > From now, there exists a method graphviz_string. Could we prefer a
 > dot_string ? and in the same manner think about a graphml_string ?
+
 
 Yup. Note that there already exists methods graph6_string
 sparse6_string, and so on.
@@ -564,6 +559,7 @@ sparse6_string, and so on.
 > the tab completion. As the refactorization for layout is perhaps we
 > can consider string_dot and string_gml ? and string(format='dot')
 > string(format='gml')
+
 
 The ..._string convention is followed consistently; so it might be a
 bit late to change it. On the other hand, it could be nice indeed to
@@ -576,11 +572,12 @@ have a string(format='...') method
 > 
 > Couldn't we prefer in the GraphLatex file some different methods
 > 
->   * picture_tikz
->   * picture_pstricks
->   * which can also be used from picture(format='tikz') picture(format='pstricks')
+> * picture_tikz
+> * picture_pstricks
+> * which can also be used from picture(format='tikz') picture(format='pstricks')
 > 
 > and have an option inside picture_tikz to consider whether we use dot2tex or we use the actual code ?
+
 
 I see all those methods as internal (actually, maybe they should start
 with _), while the main entry point for the user is the latex method.
@@ -596,18 +593,21 @@ shortcut to calling set_latex_options).
 > 
 > It took one second to execute in a console
 > 
-> {{{
+> 
+> ```
 > neato -Txdot my_graph.dot | dot2tex -ftikz | pdflatex
-> }}}
+> ```
 > 
 > And almost one minute for
-> {{{
+> 
+> ```
 > sage: G = MyGraph()
 > sage: G.set_latex_options(format='dot2tex')
 > sage: view(G)
-> }}}
+> ```
 > 
 > Do you have an idea where the time is lost ?
+
 
 Ah, interesting! On extra thing that dot2tex does it to run latex on
 each node to get the dimension of its bounding box. In principle, this
@@ -622,6 +622,7 @@ dot2tex script on it?
 > The program is made of two things dynagraph and grappa. It could be really nice to have an applet inside the notebook to use it directly as graph_editor works !!
 > 
 > It is available under the Common Public License
+
 
 +1 definitely!
 

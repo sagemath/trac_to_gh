@@ -3,7 +3,7 @@
 archive/issues_007488.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Nov 18, 2009 at 9:16 AM, Laurent <> wrote:\n> Hi.\n>\n> I'm writing the following code in order to plot sin(x^2+x^2) :\n>\n> var('x,y')\n> g(x,y)=sin(x**2+y**2)\n> plot3d(g(x,y),(x,-5,5),(y,-5,5))\n>\n> My problem is that the result is quite bad because of the sampling : all\n> the points with x^2+y^2=pi/2 are not taken, so that I don't get\n> beautiful circles.\n>\n> How can I ask for a finer sampling, or to compute more intermediate points ?\n\nUse the plot_points option.  Type \"parametric_plot3d?\" for more details:\n\n        -  ``plot_points`` - (default: \"automatic\", which is\n           75 for curves and [40,40] for surfaces) initial number of sample\n           points in each parameter; an integer for a curve, and a pair of\n           integers for a surface.\n        \nNote that the documentation output by \"plot3d?\" doesn't even mention the plot_points option, which is why you're confused.  \n\nWilliam\n\n\n\n -- William\n\n> I'm sure there is an option to add, but I don't see in the documentation\n> which one. (I'm reading the Sage reference manual, version 4.1.1, Agust\n> 14 2009).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7488\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Wed, Nov 18, 2009 at 9:16 AM, Laurent <> wrote:\n> Hi.\n>\n> I'm writing the following code in order to plot sin(x^2+x^2) :\n>\n> var('x,y')\n> g(x,y)=sin(x**2+y**2)\n> plot3d(g(x,y),(x,-5,5),(y,-5,5))\n>\n> My problem is that the result is quite bad because of the sampling : all\n> the points with x^2+y^2=pi/2 are not taken, so that I don't get\n> beautiful circles.\n>\n> How can I ask for a finer sampling, or to compute more intermediate points ?\n\nUse the plot_points option.  Type \"parametric_plot3d?\" for more details:\n\n        -  ``plot_points`` - (default: \"automatic\", which is\n           75 for curves and [40,40] for surfaces) initial number of sample\n           points in each parameter; an integer for a curve, and a pair of\n           integers for a surface.\n        \nNote that the documentation output by \"plot3d?\" doesn't even mention the plot_points option, which is why you're confused.  \n\nWilliam\n\n\n\n -- William\n\n> I'm sure there is an option to add, but I don't see in the documentation\n> which one. (I'm reading the Sage reference manual, version 4.1.1, Agust\n> 14 2009).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7488\n\n",
     "created_at": "2009-11-18T17:32:44Z",
     "labels": [
         "component: graphics",
@@ -17,7 +17,6 @@ archive/issues_007488.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 

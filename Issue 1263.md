@@ -3,7 +3,7 @@
 archive/issues_001263.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThis is from Anton Mellit, and basically explains how to do what we\nwant, maybe. \n\n\n```\nBy the way I put my sources on sourceforge (http://pari-\npython.cvs.sourceforge.net/pari-python/pari-python/)\nThe error handlers are in errors.cpp and errors.h\nI use slightly modified version of the pari exception handling which\nis implemented using setjmp/longjmp and you use it like this:\nCATCH(CATCH_ALL) {\n   // if error occures\n} TRY {\n   // do something\n} ENDCATCH\nI made similar macros, but I catch exceptions not when they arise in\nPARI, but after PARI prints error message and calls\ndefault_exception_handler, which I set as follows:\ndefault_exception_handler = exception_handler,\nwhere exception_handler simply should return 0 if there is a handler\ninstalled. And the actual handler must be installed in GP_DATA->env\nusing setjmp(GP_DATA->env) (don't forget to store the old handler\nsomewhere and put it back afterwards)\n\nI've recently worked on it so that it catches SIGINT (Ctrl-C).\n\nFirst I turned off PARI's own signal handling. Instead of pari_init I\nuse this:\n\npari_init_opts(64000000, 500000, INIT_DFTm);\n\nThen I install my own signal handler which simply raises pari\nexception. I install the handler at the first CATCH and uninstall it\nand return the Python's one on the last ENDCATCH.\n- Show quoted text -\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1263\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThis is from Anton Mellit, and basically explains how to do what we\nwant, maybe. \n\n```\nBy the way I put my sources on sourceforge (http://pari-\npython.cvs.sourceforge.net/pari-python/pari-python/)\nThe error handlers are in errors.cpp and errors.h\nI use slightly modified version of the pari exception handling which\nis implemented using setjmp/longjmp and you use it like this:\nCATCH(CATCH_ALL) {\n   // if error occures\n} TRY {\n   // do something\n} ENDCATCH\nI made similar macros, but I catch exceptions not when they arise in\nPARI, but after PARI prints error message and calls\ndefault_exception_handler, which I set as follows:\ndefault_exception_handler = exception_handler,\nwhere exception_handler simply should return 0 if there is a handler\ninstalled. And the actual handler must be installed in GP_DATA->env\nusing setjmp(GP_DATA->env) (don't forget to store the old handler\nsomewhere and put it back afterwards)\n\nI've recently worked on it so that it catches SIGINT (Ctrl-C).\n\nFirst I turned off PARI's own signal handling. Instead of pari_init I\nuse this:\n\npari_init_opts(64000000, 500000, INIT_DFTm);\n\nThen I install my own signal handler which simply raises pari\nexception. I install the handler at the first CATCH and uninstall it\nand return the Python's one on the last ENDCATCH.\n- Show quoted text -\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1263\n\n",
     "created_at": "2007-11-25T06:39:30Z",
     "labels": [
         "component: packages: standard",
@@ -22,7 +22,6 @@ CC:  @jdemeyer
 
 This is from Anton Mellit, and basically explains how to do what we
 want, maybe. 
-
 
 ```
 By the way I put my sources on sourceforge (http://pari-
@@ -56,7 +55,6 @@ exception. I install the handler at the first CATCH and uninstall it
 and return the Python's one on the last ENDCATCH.
 - Show quoted text -
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1263
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8697
 archive/issue_comments_079095.json:
 ```json
 {
-    "body": ">  - Please Florent, add here what we had thought about\n\nThis looks like a duplicate of #8402... and should be closed.",
+    "body": ">  - Please Florent, add here what we had thought about\n\n\nThis looks like a duplicate of #8402... and should be closed.",
     "created_at": "2010-04-16T23:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_comment",
@@ -49,6 +49,7 @@ archive/issue_comments_079095.json:
 ```
 
 >  - Please Florent, add here what we had thought about
+
 
 This looks like a duplicate of #8402... and should be closed.
 
@@ -77,7 +78,7 @@ Resolution: duplicate
 archive/issue_comments_079097.json:
 ```json
 {
-    "body": "Replying to [comment:1 hivert]:\n> >  - Please Florent, add here what we had thought about\n> \n> This looks like a duplicate of #8402... and should be closed.\n\nOops, right. Sorry.",
+    "body": "Replying to [comment:1 hivert]:\n> >  - Please Florent, add here what we had thought about\n \n> \n> This looks like a duplicate of #8402... and should be closed.\n\n\nOops, right. Sorry.",
     "created_at": "2010-04-18T10:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_comment",
@@ -88,8 +89,10 @@ archive/issue_comments_079097.json:
 
 Replying to [comment:1 hivert]:
 > >  - Please Florent, add here what we had thought about
+ 
 > 
 > This looks like a duplicate of #8402... and should be closed.
+
 
 Oops, right. Sorry.
 

@@ -3,7 +3,7 @@
 archive/issues_003866.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nThis is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrings are blatantly wrong and the code is full of ugly things.  But it works, sort of.  It's a starting point for someone to finish.\n\nAn example:\n\n\n```\n@interact\ndef _(pos=locator(3)):\n    print pos\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3866\n\n",
+    "body": "Assignee: @itolkov\n\nThis is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrings are blatantly wrong and the code is full of ugly things.  But it works, sort of.  It's a starting point for someone to finish.\n\nAn example:\n\n```\n@interact\ndef _(pos=locator(3)):\n    print pos\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3866\n\n",
     "created_at": "2008-08-15T03:46:33Z",
     "labels": [
         "component: interact"
@@ -21,13 +21,11 @@ This is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrin
 
 An example:
 
-
 ```
 @interact
 def _(pos=locator(3)):
     print pos
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3866

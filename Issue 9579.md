@@ -93,7 +93,7 @@ test both arguments, not only one of them
 archive/issue_comments_092365.json:
 ```json
 {
-    "body": "Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by @nathanncohen created at 2010-07-23 09:02:46\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
+    "body": "Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by @nathanncohen created at 2010-07-23 09:02:46\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
     "created_at": "2010-07-23T09:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
@@ -106,6 +106,7 @@ Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9
 
 Replying to [comment:2 schilly]:
 > I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.
+
 
 You do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D
 
@@ -212,7 +213,7 @@ archive/issue_events_023858.json:
 archive/issue_comments_092370.json:
 ```json
 {
-    "body": "Replying to [comment:6 schilly]:\n> dear release manager, first merge trac_9579.patch and then trac_9579_review.patch\n\nMerged in 4.5.2.alpha1.",
+    "body": "Replying to [comment:6 schilly]:\n> dear release manager, first merge trac_9579.patch and then trac_9579_review.patch\n\n\nMerged in 4.5.2.alpha1.",
     "created_at": "2010-07-26T02:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
@@ -223,6 +224,7 @@ archive/issue_comments_092370.json:
 
 Replying to [comment:6 schilly]:
 > dear release manager, first merge trac_9579.patch and then trac_9579_review.patch
+
 
 Merged in 4.5.2.alpha1.
 

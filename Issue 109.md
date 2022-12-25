@@ -3,7 +3,7 @@
 archive/issues_000109.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<x> = PolynomialRing(pAdicField(5))\nsage: type(x)\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type(x**int(0))\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type((x**3)**int(0))\n <type 'int'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/109\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x> = PolynomialRing(pAdicField(5))\nsage: type(x)\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type(x**int(0))\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type((x**3)**int(0))\n <type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/109\n\n",
     "created_at": "2006-10-04T21:25:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000109.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<x> = PolynomialRing(pAdicField(5))
 sage: type(x)
@@ -27,7 +26,6 @@ sage: type(x**int(0))
 sage: type((x**3)**int(0))
  <type 'int'>
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/109

@@ -3,7 +3,7 @@
 archive/issues_003826.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n\n```\n[1, 2, 3, '\\x00']\n```\n\n\nwhile should be :\n\n\n```\n[1, 2, 3, '']\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
+    "body": "Assignee: boothby\n\nCC:  @saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n```\n[1, 2, 3, '\\x00']\n```\n\nwhile should be :\n\n```\n[1, 2, 3, '']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
     "created_at": "2008-08-12T23:23:21Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ In the notebook of sage 3.0.6:
 
 Write
 
-
 ```
 @interact
 def f(a=input_box(default='aaa',type=str,label='Your name :')):
@@ -34,22 +33,17 @@ def f(a=input_box(default='aaa',type=str,label='Your name :')):
     print [1,2,3,a]
 ```
 
-
 Then, delete 'aaa' from the box. Press enter and the list prints like this :
-
 
 ```
 [1, 2, 3, '\x00']
 ```
 
-
 while should be :
-
 
 ```
 [1, 2, 3, '']
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3826
@@ -121,7 +115,7 @@ Michael
 archive/issue_comments_027161.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by @itolkov created at 2008-08-13 21:19:06\n\n\n```\njavascript: encode64(\"\")\n```\n\nAA==\n\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\n\nAAAA",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by @itolkov created at 2008-08-13 21:19:06\n\n```\njavascript: encode64(\"\")\n```\nAA==\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\nAAAA",
     "created_at": "2008-08-13T21:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
@@ -132,18 +126,14 @@ archive/issue_comments_027161.json:
 
 Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by @itolkov created at 2008-08-13 21:19:06
 
-
 ```
 javascript: encode64("")
 ```
-
 AA==
-
 
 ```
 sage.server.notebook.interact.standard_b64decode("AA==")
 ```
-
 '\x00'
 
 My patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,
@@ -151,7 +141,6 @@ My patch adds a check in the interact() function. However, encode64() and decode
 ```
 javascript: encode64(decode64(""))
 ```
-
 AAAA
 
 

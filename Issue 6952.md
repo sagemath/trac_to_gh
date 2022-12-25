@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6952
 archive/issue_comments_057383.json:
 ```json
 {
-    "body": "There's a warning when building the tutorial with the two patches at #6774:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/devel/sage-main/doc/en/tutorial/tour_graphtheory.rst:91: (WARNING/2) Title underline too short.\n\nCompute maximum matchings\n^^^^^^^^^^^^^^^^^^^\n```\n\nThere are also some stylistic errors that I'll take care of.",
+    "body": "There's a warning when building the tutorial with the two patches at #6774:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/devel/sage-main/doc/en/tutorial/tour_graphtheory.rst:91: (WARNING/2) Title underline too short.\n\nCompute maximum matchings\n^^^^^^^^^^^^^^^^^^^\n```\nThere are also some stylistic errors that I'll take care of.",
     "created_at": "2009-09-17T23:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6952",
     "type": "issue_comment",
@@ -49,7 +49,6 @@ WARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/devel/sage-main/doc/en/tutoria
 Compute maximum matchings
 ^^^^^^^^^^^^^^^^^^^
 ```
-
 There are also some stylistic errors that I'll take care of.
 
 
@@ -137,7 +136,7 @@ Resolution: fixed
 archive/issue_comments_057388.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> I assume you merged the necessary patches to make the functions in these examples work. \nYes, I tried that.\n\n\n\n\n> So doctests really ought to be run on this file just to make sure that the examples are correct.\nWith other dependencies and this patch, all doctests in the tutorial pass.",
+    "body": "Replying to [comment:3 jason]:\n> I assume you merged the necessary patches to make the functions in these examples work. \n\nYes, I tried that.\n\n\n\n\n> So doctests really ought to be run on this file just to make sure that the examples are correct.\n\nWith other dependencies and this patch, all doctests in the tutorial pass.",
     "created_at": "2009-09-19T19:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6952",
     "type": "issue_comment",
@@ -148,12 +147,14 @@ archive/issue_comments_057388.json:
 
 Replying to [comment:3 jason]:
 > I assume you merged the necessary patches to make the functions in these examples work. 
+
 Yes, I tried that.
 
 
 
 
 > So doctests really ought to be run on this file just to make sure that the examples are correct.
+
 With other dependencies and this patch, all doctests in the tutorial pass.
 
 

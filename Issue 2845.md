@@ -90,7 +90,7 @@ Actually, I noticed because we have a doctest. I compiled PolyBoRi with debuggin
 archive/issue_comments_019486.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> Actually, I noticed because we have a doctest. I compiled PolyBoRi with debugging support and this triggered the assertion error when running the doctests.\n\nHi malb,\n\nI figured this was actually the case after thinking about this a little later, so I am merging this. No objections, positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 malb]:\n> Actually, I noticed because we have a doctest. I compiled PolyBoRi with debugging support and this triggered the assertion error when running the doctests.\n\n\nHi malb,\n\nI figured this was actually the case after thinking about this a little later, so I am merging this. No objections, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-07T20:05:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2845",
     "type": "issue_comment",
@@ -101,6 +101,7 @@ archive/issue_comments_019486.json:
 
 Replying to [comment:2 malb]:
 > Actually, I noticed because we have a doctest. I compiled PolyBoRi with debugging support and this triggered the assertion error when running the doctests.
+
 
 Hi malb,
 

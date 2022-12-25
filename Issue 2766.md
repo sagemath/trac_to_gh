@@ -139,7 +139,7 @@ Resolution: fixed
 archive/issue_comments_018961.json:
 ```json
 {
-    "body": "Please mention the fact that you didn't doctest:\n\n```\nsage -t -long devel/sage-main/sage/graphs/graph.py\n*********************************************************************\nFile \"graph.py\", line 505:\n    sage: m = matrix(G); m.parent()\nExpected:\n    Full MatrixSpace of 5 by 5 sparse matrices over Integer Ring\nGot:\n    Full MatrixSpace of 5 by 5 dense matrices over Integer Ring\n```\n\nand \n\n```\nsage -t -long devel/sage-main/sage/matrix/constructor.py \n**********************************************************************\nFile \"constructor.py\", line 136:\n    sage: m = matrix(g); m; m.parent()\nExpected:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 sparse matrices over Integer Ring\nGot:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 dense matrices over Integer Ring\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Please mention the fact that you didn't doctest:\n\n```\nsage -t -long devel/sage-main/sage/graphs/graph.py\n*********************************************************************\nFile \"graph.py\", line 505:\n    sage: m = matrix(G); m.parent()\nExpected:\n    Full MatrixSpace of 5 by 5 sparse matrices over Integer Ring\nGot:\n    Full MatrixSpace of 5 by 5 dense matrices over Integer Ring\n```\nand \n\n```\nsage -t -long devel/sage-main/sage/matrix/constructor.py \n**********************************************************************\nFile \"constructor.py\", line 136:\n    sage: m = matrix(g); m; m.parent()\nExpected:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 sparse matrices over Integer Ring\nGot:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 dense matrices over Integer Ring\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T20:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
@@ -160,7 +160,6 @@ Expected:
 Got:
     Full MatrixSpace of 5 by 5 dense matrices over Integer Ring
 ```
-
 and 
 
 ```
@@ -194,7 +193,6 @@ Got:
     Full MatrixSpace of 10 by 10 dense matrices over Integer Ring
 **********************************************************************
 ```
-
 
 Cheers,
 

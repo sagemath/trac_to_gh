@@ -3,7 +3,7 @@
 archive/issues_009806.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  brunellus\n\nKeywords: merge_vertices, loops\n\nSuppose G is a graph with loops permitted containing the edge (0, 1).  I would expect that G.merge_vertices([0, 1]) would create a loop (0, 0), but it doesn't:\n\n```\nsage: G = Graph(loops = True)\nsage: G.add_edge(0, 1)\nsage: G.merge_vertices([0, 1])\nsage: G.edges()\n[]\n```\n\nI think either we should change this, or we should write explicitly in the documentation that merge_vertices doesn't create self-loops even when G allows them.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9807\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  brunellus\n\nKeywords: merge_vertices, loops\n\nSuppose G is a graph with loops permitted containing the edge (0, 1).  I would expect that G.merge_vertices([0, 1]) would create a loop (0, 0), but it doesn't:\n\n```\nsage: G = Graph(loops = True)\nsage: G.add_edge(0, 1)\nsage: G.merge_vertices([0, 1])\nsage: G.edges()\n[]\n```\nI think either we should change this, or we should write explicitly in the documentation that merge_vertices doesn't create self-loops even when G allows them.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9807\n\n",
     "created_at": "2010-08-26T18:41:52Z",
     "labels": [
         "component: graph theory",
@@ -32,7 +32,6 @@ sage: G.merge_vertices([0, 1])
 sage: G.edges()
 []
 ```
-
 I think either we should change this, or we should write explicitly in the documentation that merge_vertices doesn't create self-loops even when G allows them.
 
 

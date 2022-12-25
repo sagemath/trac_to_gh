@@ -3,7 +3,7 @@
 archive/issues_000948.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\n\nSome magma timings:\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/948\n\n",
+    "body": "Assignee: @malb\n\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\nSome magma timings:\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/948\n\n",
     "created_at": "2007-10-20T19:01:17Z",
     "labels": [
         "component: commutative algebra",
@@ -18,7 +18,6 @@ archive/issues_000948.json:
 ```
 Assignee: @malb
 
-
 ```
 [11:50am] wstein2: hi: regarding #872.
 [11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.
@@ -27,7 +26,6 @@ Assignee: @malb
 [11:51am] wstein2: > minpoly = a^2+1;
 [11:51am] wstein2: > factorize(x^12 + y^12);
 ```
-
 Some magma timings:
 
 ```
@@ -72,7 +70,6 @@ Time: 0.030
 ]
 Time: 0.050
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/948
 
@@ -140,7 +137,7 @@ Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/si
 archive/issue_comments_005771.json:
 ```json
 {
-    "body": "The attached patch was applied to http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071031.spkg\n\nTimings:\n\n```\nsage: f = (x^4 - y^4)\nsage: %time F = f.factor()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n\nsage: f = (x^12 - y^12)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05\n\nsage: f = (x^20 - y^20)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.07\n```\n",
+    "body": "The attached patch was applied to http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071031.spkg\n\nTimings:\n\n```\nsage: f = (x^4 - y^4)\nsage: %time F = f.factor()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n\nsage: f = (x^12 - y^12)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05\n\nsage: f = (x^20 - y^20)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.07\n```",
     "created_at": "2007-10-31T12:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
@@ -169,7 +166,6 @@ sage: %time F = f.factor()
 CPU times: user 0.03 s, sys: 0.01 s, total: 0.03 s
 Wall time: 0.07
 ```
-
 
 
 

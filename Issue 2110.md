@@ -73,7 +73,7 @@ Resolution: fixed
 archive/issue_comments_013731.json:
 ```json
 {
-    "body": "As of http://hg.sagemath.org/scripts-main/annotate/b1badfb26e13/sage-cython#1\n\nYou can do \n\n\n```\nsage -cython -a /path/to/file.spyx\n```\n\n\nor \n\n\n```\nsage -cython -a /sage/library/file.pyx\n```\n\n\nor even \n\n\n```\nsage -cython -a -sage /path/to/non/library/file.pyx\n```\n\n\nTo do this.  \n\nAlso, as of Cython 0.15 , existing .html files will automatically get updated even if the -a flag is not used to ensure they stay in sync.",
+    "body": "As of http://hg.sagemath.org/scripts-main/annotate/b1badfb26e13/sage-cython#1\n\nYou can do \n\n```\nsage -cython -a /path/to/file.spyx\n```\n\nor \n\n```\nsage -cython -a /sage/library/file.pyx\n```\n\nor even \n\n```\nsage -cython -a -sage /path/to/non/library/file.pyx\n```\n\nTo do this.  \n\nAlso, as of Cython 0.15 , existing .html files will automatically get updated even if the -a flag is not used to ensure they stay in sync.",
     "created_at": "2011-09-19T19:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2110",
     "type": "issue_comment",
@@ -86,27 +86,21 @@ As of http://hg.sagemath.org/scripts-main/annotate/b1badfb26e13/sage-cython#1
 
 You can do 
 
-
 ```
 sage -cython -a /path/to/file.spyx
 ```
 
-
 or 
-
 
 ```
 sage -cython -a /sage/library/file.pyx
 ```
 
-
 or even 
-
 
 ```
 sage -cython -a -sage /path/to/non/library/file.pyx
 ```
-
 
 To do this.  
 

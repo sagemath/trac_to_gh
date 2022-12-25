@@ -3,7 +3,7 @@
 archive/issues_004670.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCalling the primepi function on a large pari integer (10^10) causes an error.  The issue is that in sage/libs/pari/gen.pyx the function init_primes casts the input to an unsigned long.  If we don't want to allow initialization with input bigger than this, we should give a better error.\n\n\nsage: prime_pi(10^10)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/Roed/Math/sage-3.2/<ipython console> in <module>()\n\n/Users/Roed/Math/sage-3.2/local/lib/python2.5/site-packages/sage/functions/transcendental.pyc in __call__(self, x)\n    363             from sage.rings.integer import Integer\n    364             pari.init_primes(pari(x)+Integer(1))\n--> 365             return ZZ(pari(x).primepi())\n    366 \n    367     def plot(self, xmin=0, xmax=100, *args, **kwds):\n\n/Users/Roed/Math/sage-3.2/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:37972)()\n\nPariError: impossible assignment I-->S (23)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4670\n\n",
+    "body": "Assignee: @williamstein\n\nCalling the primepi function on a large pari integer (10^10) causes an error.  The issue is that in sage/libs/pari/gen.pyx the function init_primes casts the input to an unsigned long.  If we don't want to allow initialization with input bigger than this, we should give a better error.\n\n\nsage: prime_pi(10^10)\n\n---\nPariError                                 Traceback (most recent call last)\n\n/Users/Roed/Math/sage-3.2/<ipython console> in <module>()\n\n/Users/Roed/Math/sage-3.2/local/lib/python2.5/site-packages/sage/functions/transcendental.pyc in __call__(self, x)\n    363             from sage.rings.integer import Integer\n    364             pari.init_primes(pari(x)+Integer(1))\n--> 365             return ZZ(pari(x).primepi())\n    366 \n    367     def plot(self, xmin=0, xmax=100, *args, **kwds):\n\n/Users/Roed/Math/sage-3.2/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:37972)()\n\nPariError: impossible assignment I-->S (23)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4670\n\n",
     "created_at": "2008-12-01T16:55:44Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,8 @@ Calling the primepi function on a large pari integer (10^10) causes an error.  T
 
 
 sage: prime_pi(10^10)
----------------------------------------------------------------------------
+
+---
 PariError                                 Traceback (most recent call last)
 
 /Users/Roed/Math/sage-3.2/<ipython console> in <module>()

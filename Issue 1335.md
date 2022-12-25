@@ -3,7 +3,7 @@
 archive/issues_001335.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn my Linux PPC 32 bit box I got the following doctest failure due to numerical noise:\n\n```\nFile \"lcalc.py\", line 188:\n    sage: E.Lseries().values_along_line(0.5, 3, 5)\nExpected:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303),\n     (0.500000000, -2...e-16),\n     (1.00000000, 0.133768433),\n     (2.00000000, 0.552975867)]\nGot:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303), (0.500000000, -3.16949699e-16), (1.00000000, 0.133768433), (2.00000000, 0.552975867)]\n```\n\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1335\n\n",
+    "body": "Assignee: mabshoff\n\nOn my Linux PPC 32 bit box I got the following doctest failure due to numerical noise:\n\n```\nFile \"lcalc.py\", line 188:\n    sage: E.Lseries().values_along_line(0.5, 3, 5)\nExpected:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303),\n     (0.500000000, -2...e-16),\n     (1.00000000, 0.133768433),\n     (2.00000000, 0.552975867)]\nGot:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303), (0.500000000, -3.16949699e-16), (1.00000000, 0.133768433), (2.00000000, 0.552975867)]\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1335\n\n",
     "created_at": "2007-11-29T09:40:03Z",
     "labels": [
         "component: doctest coverage",
@@ -37,7 +37,6 @@ Got:
     lcalc:  nan nan
     [(0, 0.209951303), (0.500000000, -3.16949699e-16), (1.00000000, 0.133768433), (2.00000000, 0.552975867)]
 ```
-
 
 The attached patch fixes that.
 

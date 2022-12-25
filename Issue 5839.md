@@ -3,7 +3,7 @@
 archive/issues_005839.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @malb\n\nIn `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.\n\nIt took me quite a while to come up with a small reproducible test case for the problem; here it is.  (This test case is also in the patch, as a doctest.)\n\n```\nimport gc\nfrom sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\nR1 = MPolynomialRing_libsingular(GF(5), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR2 = MPolynomialRing_libsingular(GF(11), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR3 = MPolynomialRing_libsingular(GF(13), 2, ('x', 'y'), TermOrder('degrevlex', 2))\ngc.collect()\nfoo = R1.gen(0)\ndel foo\ndel R1\ngc.collect()\ndel R2\ngc.collect()\ndel R3\ngc.collect()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5839\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @malb\n\nIn `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.\n\nIt took me quite a while to come up with a small reproducible test case for the problem; here it is.  (This test case is also in the patch, as a doctest.)\n\n```\nimport gc\nfrom sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\nR1 = MPolynomialRing_libsingular(GF(5), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR2 = MPolynomialRing_libsingular(GF(11), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR3 = MPolynomialRing_libsingular(GF(13), 2, ('x', 'y'), TermOrder('degrevlex', 2))\ngc.collect()\nfoo = R1.gen(0)\ndel foo\ndel R1\ngc.collect()\ndel R2\ngc.collect()\ndel R3\ngc.collect()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5839\n\n",
     "created_at": "2009-04-20T22:22:09Z",
     "labels": [
         "component: commutative algebra",
@@ -41,7 +41,6 @@ gc.collect()
 del R3
 gc.collect()
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5839

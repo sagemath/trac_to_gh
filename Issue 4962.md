@@ -3,7 +3,7 @@
 archive/issues_004962.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nLook at:\n\n```\ncdef int init_c_vector_modint(c_vector_modint* v, int p, Py_ssize_t degree,\n                              Py_ssize_t num_nonzero) except -1:\n    \"\"\"\n    Initialize a c_vector_modint.\n    \"\"\"\n    if (allocate_c_vector_modint(v, num_nonzero) == -1):\n        raise MemoryError, \"Error allocating memory for sparse vector.\"\n    if p > 46340:\n        raise OverflowError, \"The prime must be <= 46340.\"\n    v.num_nonzero = num_nonzero\n    v.degree = degree\n    v.p = p\n    return 0\n```\n\nOn OverflowError v is leaked. Switching check and allocation will fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4962\n\n",
+    "body": "Assignee: @craigcitro\n\nLook at:\n\n```\ncdef int init_c_vector_modint(c_vector_modint* v, int p, Py_ssize_t degree,\n                              Py_ssize_t num_nonzero) except -1:\n    \"\"\"\n    Initialize a c_vector_modint.\n    \"\"\"\n    if (allocate_c_vector_modint(v, num_nonzero) == -1):\n        raise MemoryError, \"Error allocating memory for sparse vector.\"\n    if p > 46340:\n        raise OverflowError, \"The prime must be <= 46340.\"\n    v.num_nonzero = num_nonzero\n    v.degree = degree\n    v.p = p\n    return 0\n```\nOn OverflowError v is leaked. Switching check and allocation will fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4962\n\n",
     "created_at": "2009-01-10T10:01:20Z",
     "labels": [
         "component: memleak",
@@ -35,7 +35,6 @@ cdef int init_c_vector_modint(c_vector_modint* v, int p, Py_ssize_t degree,
     v.p = p
     return 0
 ```
-
 On OverflowError v is leaked. Switching check and allocation will fix the problem.
 
 Cheers,

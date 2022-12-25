@@ -401,7 +401,7 @@ archive/issue_events_012085.json:
 archive/issue_comments_039912.json:
 ```json
 {
-    "body": "Note:\nThe patch that fixes this sdist issue is:\n\n```\nwstein@sage:~/tmp/python-2.5.4.p0$ diff src/Lib/distutils/command/sdist.py patches/sdist.py\n350c350\n<           * any RCS, CVS, .svn, .hg, .git, .bzr, _darcs directories\n---\n>           * any RCS, CVS, .svn, .git, .bzr, _darcs directories\n357c357\n<         self.filelist.exclude_pattern(r'(^|/)(RCS|CVS|\\.svn|\\.hg|\\.git|\\.bzr|_darcs)/.*', is_regex=1)\n---\n>         self.filelist.exclude_pattern(r'(^|/)(RCS|CVS|\\.svn|\\.git|\\.bzr|_darcs)/.*', is_regex=1)\n```\n\n\nI'm concerned since I bet this problem will just come back later again when we upgrade to some newer python, since it seems that it is the intention of the python devs to make it impossible to include repo's in sdists.  Thus, in the long run, we may have to fix this by (1) doing sdist, then (2) extract the sdist tar ball and manually copying over the hg repo, then (3) remaking the sdist tar ball.    We already extract and remake the tar ball to go from .tar.gz to .tar.bz2 format, so this isn't so bad. \n\nSo, positive review, but with a \"just for the record\" caveat.",
+    "body": "Note:\nThe patch that fixes this sdist issue is:\n\n```\nwstein@sage:~/tmp/python-2.5.4.p0$ diff src/Lib/distutils/command/sdist.py patches/sdist.py\n350c350\n<           * any RCS, CVS, .svn, .hg, .git, .bzr, _darcs directories\n---\n>           * any RCS, CVS, .svn, .git, .bzr, _darcs directories\n357c357\n<         self.filelist.exclude_pattern(r'(^|/)(RCS|CVS|\\.svn|\\.hg|\\.git|\\.bzr|_darcs)/.*', is_regex=1)\n---\n>         self.filelist.exclude_pattern(r'(^|/)(RCS|CVS|\\.svn|\\.git|\\.bzr|_darcs)/.*', is_regex=1)\n```\n\nI'm concerned since I bet this problem will just come back later again when we upgrade to some newer python, since it seems that it is the intention of the python devs to make it impossible to include repo's in sdists.  Thus, in the long run, we may have to fix this by (1) doing sdist, then (2) extract the sdist tar ball and manually copying over the hg repo, then (3) remaking the sdist tar ball.    We already extract and remake the tar ball to go from .tar.gz to .tar.bz2 format, so this isn't so bad. \n\nSo, positive review, but with a \"just for the record\" caveat.",
     "created_at": "2009-05-28T22:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5218",
     "type": "issue_comment",
@@ -424,7 +424,6 @@ wstein@sage:~/tmp/python-2.5.4.p0$ diff src/Lib/distutils/command/sdist.py patch
 ---
 >         self.filelist.exclude_pattern(r'(^|/)(RCS|CVS|\.svn|\.git|\.bzr|_darcs)/.*', is_regex=1)
 ```
-
 
 I'm concerned since I bet this problem will just come back later again when we upgrade to some newer python, since it seems that it is the intention of the python devs to make it impossible to include repo's in sdists.  Thus, in the long run, we may have to fix this by (1) doing sdist, then (2) extract the sdist tar ball and manually copying over the hg repo, then (3) remaking the sdist tar ball.    We already extract and remake the tar ball to go from .tar.gz to .tar.bz2 format, so this isn't so bad. 
 
@@ -455,7 +454,7 @@ I made http://sage.math.washington.edu/home/mhansen/python-2.5.4.p1.spkg which i
 archive/issue_comments_039914.json:
 ```json
 {
-    "body": "This looks suspicous:\n\n```\nwstein@sage:~/tmp/python-2.5.4.p1$ hg status\n? patches/posixmodule.c.patch.rej\n```\n\n\nOtherwise this looks perfect.  \n\nhttp://sage.math.washington.edu/home/wstein/tmp/python-2.5.4.p1.spkg\n\nis the spkg but with that rej file deleted.",
+    "body": "This looks suspicous:\n\n```\nwstein@sage:~/tmp/python-2.5.4.p1$ hg status\n? patches/posixmodule.c.patch.rej\n```\n\nOtherwise this looks perfect.  \n\nhttp://sage.math.washington.edu/home/wstein/tmp/python-2.5.4.p1.spkg\n\nis the spkg but with that rej file deleted.",
     "created_at": "2009-05-29T13:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5218",
     "type": "issue_comment",
@@ -470,7 +469,6 @@ This looks suspicous:
 wstein@sage:~/tmp/python-2.5.4.p1$ hg status
 ? patches/posixmodule.c.patch.rej
 ```
-
 
 Otherwise this looks perfect.  
 

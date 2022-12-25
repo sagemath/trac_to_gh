@@ -3,7 +3,7 @@
 archive/issues_004307.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
     "created_at": "2008-10-16T09:21:45Z",
     "labels": [
         "component: modular forms",
@@ -18,7 +18,6 @@ archive/issues_004307.json:
 ```
 Assignee: @craigcitro
 
-
 ```
 sage: SupersingularModule(15)
 Traceback (most recent call last):
@@ -26,13 +25,11 @@ Traceback (most recent call last):
 ValueError: order of finite field must be a prime power
 ```
 
-
 The error message should say something like:
 
 ```
 NotImplementedError: supersingular module of non-prime level not yet implemented
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4307
 

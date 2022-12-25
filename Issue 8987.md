@@ -241,7 +241,7 @@ Apply after the big patch.
 archive/issue_comments_082828.json:
 ```json
 {
-    "body": "Maybe I'm missing something, but is there a reason why comparison of cones depends on the ray ordering?\n\n```\nsage: Cone([(1,0), (0,1)]) == Cone([(1,0), (0,1)]) \nTrue\nsage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) \nFalse\n```\n\nIt seems more natural to compare `ray_set()` instead of `rays()`.",
+    "body": "Maybe I'm missing something, but is there a reason why comparison of cones depends on the ray ordering?\n\n```\nsage: Cone([(1,0), (0,1)]) == Cone([(1,0), (0,1)]) \nTrue\nsage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) \nFalse\n```\nIt seems more natural to compare `ray_set()` instead of `rays()`.",
     "created_at": "2010-06-06T13:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -258,7 +258,6 @@ True
 sage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) 
 False
 ```
-
 It seems more natural to compare `ray_set()` instead of `rays()`.
 
 
@@ -268,7 +267,7 @@ It seems more natural to compare `ray_set()` instead of `rays()`.
 archive/issue_comments_082829.json:
 ```json
 {
-    "body": "Replying to [comment:7 vbraun]:\n\n> Maybe I'm missing something, but is there a reason why comparison of cones depends on the ray ordering?\n\n```\nsage: Cone([(1,0), (0,1)]) == Cone([(1,0), (0,1)]) \nTrue\nsage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) \nFalse\n```\n\n> It seems more natural to compare `ray_set()` instead of `rays()`.\n\nThis is done like this:\n\n\n```\nsage: Cone([(1,0), (0,1)]).is_equivalent(Cone([(0,1), (1,0)]))\nTrue\n```\n\nOne reason for such behaviour of `==` is simplicity of comparison, which probably should be fast for sorting purposes (and I was implementing only `__cmp__` for all classes, not `__eq__`). In the case of not strictly convex cones equality of ray sets is not necessary for equality of cones as sets of points (see the code of `is_equivalent` for cones).\n\nAnother reason is consistency with the implementation of fans. For fans checking mathematical equality is a bit more tedious (although still can be done quickly using sorted lists for rays and cones, see `is_equivalent` for fans), but the main reason is that I would prefer to be able to use plain integers to index divisors or charts. I was participating in the discussion how the equality of fans should be interpreted in Macaulay2, and in the documentation to one of the cohomology related functions there was a line about \"canonical identification with `ZZ^n`\". Well, such identifications can be canonical only if the order of things is fixed.\n\nMaybe these arguments are not very strong, but since there is a way to check equality in both senses, I think that it should be fine. The plan is also to have equivalence check relevant for toric varieties, i.e. up to `GL(ZZ^n)` action, but `is_isomorphic` functions throw `NotImplementedError` so far.\n\nWould you like me to add some comments on this behaviour to the \"main\" documentation of cone and fan modules? It is already described in `is_equivalent` and `is_isomorphic` docstrings, but perhaps deserves more visibility.",
+    "body": "Replying to [comment:7 vbraun]:\n\n> Maybe I'm missing something, but is there a reason why comparison of cones depends on the ray ordering?\n\n{{{\nsage: Cone([(1,0), (0,1)]) == Cone([(1,0), (0,1)]) \nTrue\nsage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) \nFalse\n}}}\n> It seems more natural to compare `ray_set()` instead of `rays()`.\n\n\nThis is done like this:\n\n```\nsage: Cone([(1,0), (0,1)]).is_equivalent(Cone([(0,1), (1,0)]))\nTrue\n```\nOne reason for such behaviour of `==` is simplicity of comparison, which probably should be fast for sorting purposes (and I was implementing only `__cmp__` for all classes, not `__eq__`). In the case of not strictly convex cones equality of ray sets is not necessary for equality of cones as sets of points (see the code of `is_equivalent` for cones).\n\nAnother reason is consistency with the implementation of fans. For fans checking mathematical equality is a bit more tedious (although still can be done quickly using sorted lists for rays and cones, see `is_equivalent` for fans), but the main reason is that I would prefer to be able to use plain integers to index divisors or charts. I was participating in the discussion how the equality of fans should be interpreted in Macaulay2, and in the documentation to one of the cohomology related functions there was a line about \"canonical identification with `ZZ^n`\". Well, such identifications can be canonical only if the order of things is fixed.\n\nMaybe these arguments are not very strong, but since there is a way to check equality in both senses, I think that it should be fine. The plan is also to have equivalence check relevant for toric varieties, i.e. up to `GL(ZZ^n)` action, but `is_isomorphic` functions throw `NotImplementedError` so far.\n\nWould you like me to add some comments on this behaviour to the \"main\" documentation of cone and fan modules? It is already described in `is_equivalent` and `is_isomorphic` docstrings, but perhaps deserves more visibility.",
     "created_at": "2010-06-06T17:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -281,23 +280,21 @@ Replying to [comment:7 vbraun]:
 
 > Maybe I'm missing something, but is there a reason why comparison of cones depends on the ray ordering?
 
-```
+{{{
 sage: Cone([(1,0), (0,1)]) == Cone([(1,0), (0,1)]) 
 True
 sage: Cone([(1,0), (0,1)]) == Cone([(0,1), (1,0)]) 
 False
-```
-
+}}}
 > It seems more natural to compare `ray_set()` instead of `rays()`.
 
-This is done like this:
 
+This is done like this:
 
 ```
 sage: Cone([(1,0), (0,1)]).is_equivalent(Cone([(0,1), (1,0)]))
 True
 ```
-
 One reason for such behaviour of `==` is simplicity of comparison, which probably should be fast for sorting purposes (and I was implementing only `__cmp__` for all classes, not `__eq__`). In the case of not strictly convex cones equality of ray sets is not necessary for equality of cones as sets of points (see the code of `is_equivalent` for cones).
 
 Another reason is consistency with the implementation of fans. For fans checking mathematical equality is a bit more tedious (although still can be done quickly using sorted lists for rays and cones, see `is_equivalent` for fans), but the main reason is that I would prefer to be able to use plain integers to index divisors or charts. I was participating in the discussion how the equality of fans should be interpreted in Macaulay2, and in the documentation to one of the cohomology related functions there was a line about "canonical identification with `ZZ^n`". Well, such identifications can be canonical only if the order of things is fixed.
@@ -313,7 +310,7 @@ Would you like me to add some comments on this behaviour to the "main" documenta
 archive/issue_comments_082830.json:
 ```json
 {
-    "body": "1) I agree that we should test `==` without identifying `GL(n,Z)` images as it is expensive. But I'm afraid of the following, which is probably a common use case:\n\n```\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1(dim=2)   \nFalse\nsage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   \nTrue\n```\n\nAlso, note that `Fan()` is implicitly sorting:\n\n```\nsage: fan1 = Fan([Cone([(1,0), (0,1)])])\nsage: fan2 = Fan([Cone([(0,1), (1,0)])])\nsage: fan1==fan2\nTrue\n```\n\nI would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.\n\n\n2) `Fan()` should always error out if the cones are not generating cones. In particular, this one from the documentation\n\n```\nsage: cone1 = Cone([(1,0), (0,1)])\nsage: cone2 = Cone([(0,1), (-1,-1)])\nsage: cone3 = Cone([(-1,-1), (1,0)])\nsage: P2 = Fan([cone1, cone2, cone2])\nsage: P2.ngenerating_cones() \n2\n```\n\nshould have raised an exception. \n\nIn normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.\n\nThere is certainly a need for a function that extracts the generating cones from a collection of cones, but I don't think it should be implicit in the Fan constructor.\n\n\n3) Rename `Cone_of_fan.fan_generating_cones()` to `star_generators()`.\n\nThere are similar methods to this one that we probably want to add later, so let me just throw out some names:\n* `Cone_of_fan.faces()`: all subcones of the cone\n* `Cone_of_fan.facets()`: subcones of one dimension lower\n* `Cone_of_fan.bounds()`: supercones of one dimension higher\n* `Cone_of_fan.star()`: the star of the cone \n* `Cone_of_fan.adjacent()`: Adjacent cones (of the same dimension)\n\n\n4) Do we need to know the set of ray indices, that is `set(cone.fan_rays())`, of a cone often? Right now there is the function `cone_to_rays(cone_index)` that is only used as a helper in `cone_lattice()`. If it is just a helper function, then it should be `_cone_to_rays()`. If you want to expose that functionality, it should be stored in the `Cone_of_fan` and retrieved via `cone.fan_rays_set()` or so.\n\nI also think that `cone.rays_idx()` would be a better name than `cone.fan_rays()`, but if you disagree then I can live with the current name as well :-)\n\n\n5) similarly to 4), `ray_to_cones()` is not very self-explanatory. We obviously need a way to find out which cones contain a given set of rays. I would prefer one (or all) of the following\n* `ray_to_cone(ray_index)`: the 1-cone spanned by the ray\n* `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n\nThe functionality of `ray_to_cones` would then be provided by `ray_to_cone(i).star_generators()`.\n\nLet me know what you think...",
+    "body": "1) I agree that we should test `==` without identifying `GL(n,Z)` images as it is expensive. But I'm afraid of the following, which is probably a common use case:\n\n```\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1(dim=2)   \nFalse\nsage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   \nTrue\n```\nAlso, note that `Fan()` is implicitly sorting:\n\n```\nsage: fan1 = Fan([Cone([(1,0), (0,1)])])\nsage: fan2 = Fan([Cone([(0,1), (1,0)])])\nsage: fan1==fan2\nTrue\n```\nI would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.\n\n\n2) `Fan()` should always error out if the cones are not generating cones. In particular, this one from the documentation\n\n```\nsage: cone1 = Cone([(1,0), (0,1)])\nsage: cone2 = Cone([(0,1), (-1,-1)])\nsage: cone3 = Cone([(-1,-1), (1,0)])\nsage: P2 = Fan([cone1, cone2, cone2])\nsage: P2.ngenerating_cones() \n2\n```\nshould have raised an exception. \n\nIn normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.\n\nThere is certainly a need for a function that extracts the generating cones from a collection of cones, but I don't think it should be implicit in the Fan constructor.\n\n\n3) Rename `Cone_of_fan.fan_generating_cones()` to `star_generators()`.\n\nThere are similar methods to this one that we probably want to add later, so let me just throw out some names:\n* `Cone_of_fan.faces()`: all subcones of the cone\n* `Cone_of_fan.facets()`: subcones of one dimension lower\n* `Cone_of_fan.bounds()`: supercones of one dimension higher\n* `Cone_of_fan.star()`: the star of the cone \n* `Cone_of_fan.adjacent()`: Adjacent cones (of the same dimension)\n\n\n4) Do we need to know the set of ray indices, that is `set(cone.fan_rays())`, of a cone often? Right now there is the function `cone_to_rays(cone_index)` that is only used as a helper in `cone_lattice()`. If it is just a helper function, then it should be `_cone_to_rays()`. If you want to expose that functionality, it should be stored in the `Cone_of_fan` and retrieved via `cone.fan_rays_set()` or so.\n\nI also think that `cone.rays_idx()` would be a better name than `cone.fan_rays()`, but if you disagree then I can live with the current name as well :-)\n\n\n5) similarly to 4), `ray_to_cones()` is not very self-explanatory. We obviously need a way to find out which cones contain a given set of rays. I would prefer one (or all) of the following\n* `ray_to_cone(ray_index)`: the 1-cone spanned by the ray\n* `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n\nThe functionality of `ray_to_cones` would then be provided by `ray_to_cone(i).star_generators()`.\n\nLet me know what you think...",
     "created_at": "2010-06-06T19:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -332,7 +329,6 @@ False
 sage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   
 True
 ```
-
 Also, note that `Fan()` is implicitly sorting:
 
 ```
@@ -341,7 +337,6 @@ sage: fan2 = Fan([Cone([(0,1), (1,0)])])
 sage: fan1==fan2
 True
 ```
-
 I would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.
 
 
@@ -355,7 +350,6 @@ sage: P2 = Fan([cone1, cone2, cone2])
 sage: P2.ngenerating_cones() 
 2
 ```
-
 should have raised an exception. 
 
 In normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.
@@ -411,7 +405,7 @@ I noticed that `containing_cones(ray_indices)` does essentially what I wanted in
 archive/issue_comments_082832.json:
 ```json
 {
-    "body": "Replying to [comment:9 vbraun]:\n> 1) I agree that we should test `==` without identifying `GL(n,Z)` images as it is expensive. But I'm afraid of the following, which is probably a common use case:\n\n```\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1(dim=2)   \nFalse\nsage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   \nTrue\n```\n\n\nYou got a point here, I don't like this behaviour...\n\n> Also, note that `Fan()` is implicitly sorting:\n\n```\nsage: fan1 = Fan([Cone([(1,0), (0,1)])])\nsage: fan2 = Fan([Cone([(0,1), (1,0)])])\nsage: fan1==fan2\nTrue\n```\n\n\nThere was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple. I am not sure if the same set will always lead to the same tuple or it depends on something. I definitely don't want to force sorting - if a user gives rays in a specific order, then (s)he probably wants them in that order.\n\n \n> I would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.\n\nIn general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?\n\nAs I understand, it is not enough to just add `__eq__` method to cones, since it will conflict wiht `__cmp__` in the sense that it will be possible to have `cone1 < cone2` and `cone1 == cone2` at the same time, which is not cool. In fact, I do not see any good (and fast) way to compare cones in agreement with mathematical equivalence. It will require constructing `Polyhedron` objects for each cone to check strict convexity and deal with possible non-uniqueness of ray generators, this will make it highly undesirable to sort sequences of cones. It will also make hashing of cones either slow or inconsistent with equality check (which is accepted in Sage, but should not be the case unless necessary).\n\nYeah... I think my position is: I will do this change if you still want it after arguments above, but I am very against it, especially since a method performing mathematical equality check is provided. A compromise is to add `__contains__` and `contains` to the `Fan` class so that one can do\n\n\n```\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1   # no (dim=2)   \nTrue\nsage: Cone([(1,0), (0,1)]) in P1xP1   # no (dim=2)   \nTrue\n```\n\n\nIt would be also nice, perhaps, to be able to check points in such a way, i.e. if a point is in the support of a fan.\n\n> 2) `Fan()` should always error out if the cones are not generating cones. In particular, this one from the documentation\n> {{{\n> sage: cone1 = Cone([(1,0), (0,1)])\n> sage: cone2 = Cone([(0,1), (-1,-1)])\n> sage: cone3 = Cone([(-1,-1), (1,0)])\n> sage: P2 = Fan([cone1, cone2, cone2])\n> sage: P2.ngenerating_cones() \n> 2\n> }}}\n> should have raised an exception. \n> \n> In normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.\n> \n> There is certainly a need for a function that extracts the generating cones from a collection of cones, but I don't think it should be implicit in the Fan constructor.\n\nMy intention was to write a fan constructor that will construct a fan if at all possible. (Similarly, the cone constructor by default will discard non-generating rays.) One may, for example, start with some fan and add more cones to it. In this case some of the old generating cones may become unnecessary. Or, if cones of a fan come one by one from a certain procedure (e.g. in computing GKZ decomposition) and it is not known in advance how to easily select generating cones (e.g. all generating cones are full-dimensional for complete fans), it would be nice if the fan constructor could automatically select necessary cones. If you really against silent discard, we can perhaps either add a warning about a non-generating cone present, or a default parameter `generating_cones=True` to `Fan(...)` and then throw an exception if there are such cones. If one (like me ;-)) wants to discard them, it will be possible to use `generating_cones=False` option.\n\n> 3) Rename `Cone_of_fan.fan_generating_cones()` to `star_generators()`.\n\nOK.\n\n> There are similar methods to this one that we probably want to add later, so let me just throw out some names:\n>   * `Cone_of_fan.faces()`: all subcones of the cone\n>   * `Cone_of_fan.facets()`: subcones of one dimension lower\n\nNote that these are inherited from plain cones. However, they are likely to be `ConeFace` objects and for fans it would make more sense to return other `Cone_of_fan` ones...\n\n>   * `Cone_of_fan.bounds()`: supercones of one dimension higher\n\nI don't like the name. I guess it means that `self` bounds those that are returned by this function. But it can also be interpreted as that it returns bounds of `self` in the sense its facets. How about `facet_of` for this one?\n\n>   * `Cone_of_fan.star()`: the star of the cone \n\nWhat exactly do you mean by `star` here? Do you want to get back the fan in the quotient lattice? Anything else attached to it? I think we can use coercion system to define the canonical map from the lattice of the original fan to this one.\n\n>   * `Cone_of_fan.adjacent()`: Adjacent cones (of the same dimension)\n\nIs this name standard? I see that it may be convenient to have such a function, but I am not sure I would guess from the name what it does. \n \n> 4) Do we need to know the set of ray indices, that is `set(cone.fan_rays())`, of a cone often? Right now there is the function `cone_to_rays(cone_index)` that is only used as a helper in `cone_lattice()`. If it is just a helper function, then it should be `_cone_to_rays()`. If you want to expose that functionality, it should be stored in the `Cone_of_fan` and retrieved via `cone.fan_rays_set()` or so.\n\nI think it is just a helper and can go to `_cone_to_rays` to clean up the namespace. \n\n> I also think that `cone.rays_idx()` would be a better name than `cone.fan_rays()`, but if you disagree then I can live with the current name as well :-)\n\nI disagree, because `idx` is cryptic (indices?) and `fan_rays` clearly tells one that it has something to do with the fan, even if it is not obvious that it will return indices rather than rays. (But what else can one expect? Rays themselves have no explicit relation to the fan.)\n\n> 5) similarly to 4), `ray_to_cones()` is not very self-explanatory.\n\nAgreed.\n\n> We obviously need a way to find out which cones contain a given set of rays. I would prefer one (or all) of the following\n>   * `ray_to_cone(ray_index)`: the 1-cone spanned by the ray\n\nI was tempted to say that\n\n```\nsage: fan(1)[i]\n```\n\nwill do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\nWell, I think at least \n\n```\nsage: fan.cones(1)[i]\n```\n\nshould do this work, even if it may fail to do so now because there is no particular sorting of 1-dimensional cones in the lattice. This actually seriously bugs me, since it was very annoying in `LatticePolytope` until I fixed it. Fixing it for cones and fans was on my todo list for the future, but I guess the best time to do it is now. Assuming that this will be done, I propose to get rid of `ray_to_cones` (or perhaps rename it to `_ray_to_cones`) and do not add `ray_to_cone`.\n\n>   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n\nCan I remove `smallest_`? I think since `cone_containing` promises to return a single cone, it is quite reasonable to expect that it will be smallest (and of course it will be written in the documentation).\n\n> The functionality of `ray_to_cones` would then be provided by `ray_to_cone(i).star_generators()`.\n\nOr, as I propose\n\n```\nfan.cones(1)[i].star_generators()\n```\n\n\nLet me know what you think now!\n\nI am switching this ticket back to needs work. Regarding the last two tickets in the sequence - while I am working on this one, you can probably go ahead and review them too in the sense of comments. They will likely need some minor changes after updating this patch, but I currently don't plan to do anything else unless you request it.",
+    "body": "Replying to [comment:9 vbraun]:\n> 1) I agree that we should test `==` without identifying `GL(n,Z)` images as it is expensive. But I'm afraid of the following, which is probably a common use case:\n\n{{{\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1(dim=2)   \nFalse\nsage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   \nTrue\n}}}\n\nYou got a point here, I don't like this behaviour...\n\n> Also, note that `Fan()` is implicitly sorting:\n\n{{{\nsage: fan1 = Fan([Cone([(1,0), (0,1)])])\nsage: fan2 = Fan([Cone([(0,1), (1,0)])])\nsage: fan1==fan2\nTrue\n}}}\n\nThere was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple. I am not sure if the same set will always lead to the same tuple or it depends on something. I definitely don't want to force sorting - if a user gives rays in a specific order, then (s)he probably wants them in that order.\n\n \n> I would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.\n\n\nIn general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?\n\nAs I understand, it is not enough to just add `__eq__` method to cones, since it will conflict wiht `__cmp__` in the sense that it will be possible to have `cone1 < cone2` and `cone1 == cone2` at the same time, which is not cool. In fact, I do not see any good (and fast) way to compare cones in agreement with mathematical equivalence. It will require constructing `Polyhedron` objects for each cone to check strict convexity and deal with possible non-uniqueness of ray generators, this will make it highly undesirable to sort sequences of cones. It will also make hashing of cones either slow or inconsistent with equality check (which is accepted in Sage, but should not be the case unless necessary).\n\nYeah... I think my position is: I will do this change if you still want it after arguments above, but I am very against it, especially since a method performing mathematical equality check is provided. A compromise is to add `__contains__` and `contains` to the `Fan` class so that one can do\n\n```\nsage: diamond = lattice_polytope.octahedron(2) \nsage: P1xP1 = FaceFan(diamond)\nsage: Cone([(0,1), (1,0)]) in P1xP1   # no (dim=2)   \nTrue\nsage: Cone([(1,0), (0,1)]) in P1xP1   # no (dim=2)   \nTrue\n```\n\nIt would be also nice, perhaps, to be able to check points in such a way, i.e. if a point is in the support of a fan.\n\n> 2) `Fan()` should always error out if the cones are not generating cones. In particular, this one from the documentation\n> \n> ```\n> sage: cone1 = Cone([(1,0), (0,1)])\n> sage: cone2 = Cone([(0,1), (-1,-1)])\n> sage: cone3 = Cone([(-1,-1), (1,0)])\n> sage: P2 = Fan([cone1, cone2, cone2])\n> sage: P2.ngenerating_cones() \n> 2\n> ```\n> should have raised an exception. \n> \n> In normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.\n> \n> There is certainly a need for a function that extracts the generating cones from a collection of cones, but I don't think it should be implicit in the Fan constructor.\n\n\nMy intention was to write a fan constructor that will construct a fan if at all possible. (Similarly, the cone constructor by default will discard non-generating rays.) One may, for example, start with some fan and add more cones to it. In this case some of the old generating cones may become unnecessary. Or, if cones of a fan come one by one from a certain procedure (e.g. in computing GKZ decomposition) and it is not known in advance how to easily select generating cones (e.g. all generating cones are full-dimensional for complete fans), it would be nice if the fan constructor could automatically select necessary cones. If you really against silent discard, we can perhaps either add a warning about a non-generating cone present, or a default parameter `generating_cones=True` to `Fan(...)` and then throw an exception if there are such cones. If one (like me ;-)) wants to discard them, it will be possible to use `generating_cones=False` option.\n\n> 3) Rename `Cone_of_fan.fan_generating_cones()` to `star_generators()`.\n\n\nOK.\n\n> There are similar methods to this one that we probably want to add later, so let me just throw out some names:\n> * `Cone_of_fan.faces()`: all subcones of the cone\n> * `Cone_of_fan.facets()`: subcones of one dimension lower\n\n\nNote that these are inherited from plain cones. However, they are likely to be `ConeFace` objects and for fans it would make more sense to return other `Cone_of_fan` ones...\n\n>   * `Cone_of_fan.bounds()`: supercones of one dimension higher\n\n\nI don't like the name. I guess it means that `self` bounds those that are returned by this function. But it can also be interpreted as that it returns bounds of `self` in the sense its facets. How about `facet_of` for this one?\n\n>   * `Cone_of_fan.star()`: the star of the cone \n\n\nWhat exactly do you mean by `star` here? Do you want to get back the fan in the quotient lattice? Anything else attached to it? I think we can use coercion system to define the canonical map from the lattice of the original fan to this one.\n\n>   * `Cone_of_fan.adjacent()`: Adjacent cones (of the same dimension)\n\n\nIs this name standard? I see that it may be convenient to have such a function, but I am not sure I would guess from the name what it does. \n \n> 4) Do we need to know the set of ray indices, that is `set(cone.fan_rays())`, of a cone often? Right now there is the function `cone_to_rays(cone_index)` that is only used as a helper in `cone_lattice()`. If it is just a helper function, then it should be `_cone_to_rays()`. If you want to expose that functionality, it should be stored in the `Cone_of_fan` and retrieved via `cone.fan_rays_set()` or so.\n\n\nI think it is just a helper and can go to `_cone_to_rays` to clean up the namespace. \n\n> I also think that `cone.rays_idx()` would be a better name than `cone.fan_rays()`, but if you disagree then I can live with the current name as well :-)\n\n\nI disagree, because `idx` is cryptic (indices?) and `fan_rays` clearly tells one that it has something to do with the fan, even if it is not obvious that it will return indices rather than rays. (But what else can one expect? Rays themselves have no explicit relation to the fan.)\n\n> 5) similarly to 4), `ray_to_cones()` is not very self-explanatory.\n\n\nAgreed.\n\n> We obviously need a way to find out which cones contain a given set of rays. I would prefer one (or all) of the following\n> * `ray_to_cone(ray_index)`: the 1-cone spanned by the ray\n\n\nI was tempted to say that\n\n```\nsage: fan(1)[i]\n```\nwill do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\nWell, I think at least \n\n```\nsage: fan.cones(1)[i]\n```\nshould do this work, even if it may fail to do so now because there is no particular sorting of 1-dimensional cones in the lattice. This actually seriously bugs me, since it was very annoying in `LatticePolytope` until I fixed it. Fixing it for cones and fans was on my todo list for the future, but I guess the best time to do it is now. Assuming that this will be done, I propose to get rid of `ray_to_cones` (or perhaps rename it to `_ray_to_cones`) and do not add `ray_to_cone`.\n\n>   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n\n\nCan I remove `smallest_`? I think since `cone_containing` promises to return a single cone, it is quite reasonable to expect that it will be smallest (and of course it will be written in the documentation).\n\n> The functionality of `ray_to_cones` would then be provided by `ray_to_cone(i).star_generators()`.\n\n\nOr, as I propose\n\n```\nfan.cones(1)[i].star_generators()\n```\n\nLet me know what you think now!\n\nI am switching this ticket back to needs work. Regarding the last two tickets in the sequence - while I am working on this one, you can probably go ahead and review them too in the sense of comments. They will likely need some minor changes after updating this patch, but I currently don't plan to do anything else unless you request it.",
     "created_at": "2010-06-06T21:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -423,39 +417,37 @@ archive/issue_comments_082832.json:
 Replying to [comment:9 vbraun]:
 > 1) I agree that we should test `==` without identifying `GL(n,Z)` images as it is expensive. But I'm afraid of the following, which is probably a common use case:
 
-```
+{{{
 sage: diamond = lattice_polytope.octahedron(2) 
 sage: P1xP1 = FaceFan(diamond)
 sage: Cone([(0,1), (1,0)]) in P1xP1(dim=2)   
 False
 sage: Cone([(1,0), (0,1)]) in P1xP1(dim=2)   
 True
-```
-
+}}}
 
 You got a point here, I don't like this behaviour...
 
 > Also, note that `Fan()` is implicitly sorting:
 
-```
+{{{
 sage: fan1 = Fan([Cone([(1,0), (0,1)])])
 sage: fan2 = Fan([Cone([(0,1), (1,0)])])
 sage: fan1==fan2
 True
-```
-
+}}}
 
 There was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple. I am not sure if the same set will always lead to the same tuple or it depends on something. I definitely don't want to force sorting - if a user gives rays in a specific order, then (s)he probably wants them in that order.
 
  
 > I would argue that is is ok to treat fans and cones a bit different, one will compare cones often but fans only seldomly. I'm happy with comparison of fans to depend on the order of the rays and generating cones, otherwise all derived quantities (like cohomology generators of toric varieties) will not be equal (only isomorphic). But for `cone1==cone2` to depend on the order of the rays is neither helpful nor intuitive.
 
+
 In general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?
 
 As I understand, it is not enough to just add `__eq__` method to cones, since it will conflict wiht `__cmp__` in the sense that it will be possible to have `cone1 < cone2` and `cone1 == cone2` at the same time, which is not cool. In fact, I do not see any good (and fast) way to compare cones in agreement with mathematical equivalence. It will require constructing `Polyhedron` objects for each cone to check strict convexity and deal with possible non-uniqueness of ray generators, this will make it highly undesirable to sort sequences of cones. It will also make hashing of cones either slow or inconsistent with equality check (which is accepted in Sage, but should not be the case unless necessary).
 
 Yeah... I think my position is: I will do this change if you still want it after arguments above, but I am very against it, especially since a method performing mathematical equality check is provided. A compromise is to add `__contains__` and `contains` to the `Fan` class so that one can do
-
 
 ```
 sage: diamond = lattice_polytope.octahedron(2) 
@@ -466,69 +458,78 @@ sage: Cone([(1,0), (0,1)]) in P1xP1   # no (dim=2)
 True
 ```
 
-
 It would be also nice, perhaps, to be able to check points in such a way, i.e. if a point is in the support of a fan.
 
 > 2) `Fan()` should always error out if the cones are not generating cones. In particular, this one from the documentation
-> {{{
+> 
+> ```
 > sage: cone1 = Cone([(1,0), (0,1)])
 > sage: cone2 = Cone([(0,1), (-1,-1)])
 > sage: cone3 = Cone([(-1,-1), (1,0)])
 > sage: P2 = Fan([cone1, cone2, cone2])
 > sage: P2.ngenerating_cones() 
 > 2
-> }}}
+> ```
 > should have raised an exception. 
 > 
 > In normal use you'll never want to type in all the cones of the fan since there are so many. But its easy to get confused and add a cone that turns out to be not a generating cone, and its nice to catch this when generating the `Fan`.
 > 
 > There is certainly a need for a function that extracts the generating cones from a collection of cones, but I don't think it should be implicit in the Fan constructor.
 
+
 My intention was to write a fan constructor that will construct a fan if at all possible. (Similarly, the cone constructor by default will discard non-generating rays.) One may, for example, start with some fan and add more cones to it. In this case some of the old generating cones may become unnecessary. Or, if cones of a fan come one by one from a certain procedure (e.g. in computing GKZ decomposition) and it is not known in advance how to easily select generating cones (e.g. all generating cones are full-dimensional for complete fans), it would be nice if the fan constructor could automatically select necessary cones. If you really against silent discard, we can perhaps either add a warning about a non-generating cone present, or a default parameter `generating_cones=True` to `Fan(...)` and then throw an exception if there are such cones. If one (like me ;-)) wants to discard them, it will be possible to use `generating_cones=False` option.
 
 > 3) Rename `Cone_of_fan.fan_generating_cones()` to `star_generators()`.
 
+
 OK.
 
 > There are similar methods to this one that we probably want to add later, so let me just throw out some names:
->   * `Cone_of_fan.faces()`: all subcones of the cone
->   * `Cone_of_fan.facets()`: subcones of one dimension lower
+> * `Cone_of_fan.faces()`: all subcones of the cone
+> * `Cone_of_fan.facets()`: subcones of one dimension lower
+
 
 Note that these are inherited from plain cones. However, they are likely to be `ConeFace` objects and for fans it would make more sense to return other `Cone_of_fan` ones...
 
 >   * `Cone_of_fan.bounds()`: supercones of one dimension higher
 
+
 I don't like the name. I guess it means that `self` bounds those that are returned by this function. But it can also be interpreted as that it returns bounds of `self` in the sense its facets. How about `facet_of` for this one?
 
 >   * `Cone_of_fan.star()`: the star of the cone 
+
 
 What exactly do you mean by `star` here? Do you want to get back the fan in the quotient lattice? Anything else attached to it? I think we can use coercion system to define the canonical map from the lattice of the original fan to this one.
 
 >   * `Cone_of_fan.adjacent()`: Adjacent cones (of the same dimension)
 
+
 Is this name standard? I see that it may be convenient to have such a function, but I am not sure I would guess from the name what it does. 
  
 > 4) Do we need to know the set of ray indices, that is `set(cone.fan_rays())`, of a cone often? Right now there is the function `cone_to_rays(cone_index)` that is only used as a helper in `cone_lattice()`. If it is just a helper function, then it should be `_cone_to_rays()`. If you want to expose that functionality, it should be stored in the `Cone_of_fan` and retrieved via `cone.fan_rays_set()` or so.
+
 
 I think it is just a helper and can go to `_cone_to_rays` to clean up the namespace. 
 
 > I also think that `cone.rays_idx()` would be a better name than `cone.fan_rays()`, but if you disagree then I can live with the current name as well :-)
 
+
 I disagree, because `idx` is cryptic (indices?) and `fan_rays` clearly tells one that it has something to do with the fan, even if it is not obvious that it will return indices rather than rays. (But what else can one expect? Rays themselves have no explicit relation to the fan.)
 
 > 5) similarly to 4), `ray_to_cones()` is not very self-explanatory.
 
+
 Agreed.
 
 > We obviously need a way to find out which cones contain a given set of rays. I would prefer one (or all) of the following
->   * `ray_to_cone(ray_index)`: the 1-cone spanned by the ray
+> * `ray_to_cone(ray_index)`: the 1-cone spanned by the ray
+
 
 I was tempted to say that
 
 ```
 sage: fan(1)[i]
 ```
-
 will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?
 
 Well, I think at least 
@@ -536,21 +537,21 @@ Well, I think at least
 ```
 sage: fan.cones(1)[i]
 ```
-
 should do this work, even if it may fail to do so now because there is no particular sorting of 1-dimensional cones in the lattice. This actually seriously bugs me, since it was very annoying in `LatticePolytope` until I fixed it. Fixing it for cones and fans was on my todo list for the future, but I guess the best time to do it is now. Assuming that this will be done, I propose to get rid of `ray_to_cones` (or perhaps rename it to `_ray_to_cones`) and do not add `ray_to_cone`.
 
 >   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).
 
+
 Can I remove `smallest_`? I think since `cone_containing` promises to return a single cone, it is quite reasonable to expect that it will be smallest (and of course it will be written in the documentation).
 
 > The functionality of `ray_to_cones` would then be provided by `ray_to_cone(i).star_generators()`.
+
 
 Or, as I propose
 
 ```
 fan.cones(1)[i].star_generators()
 ```
-
 
 Let me know what you think now!
 
@@ -581,7 +582,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082834.json:
 ```json
 {
-    "body": "Replying to [comment:10 vbraun]:\n> Generally speaking, I think the user should never need the ray indices. And if he still needs them, then they can be gotten easily enough from the `Cone_of_fan` object.\n\nYes. I tried to make cones and fans better compared to `LatticePolytopes` where everything is based on indices, but there is still room for improvement. Will work on it.",
+    "body": "Replying to [comment:10 vbraun]:\n> Generally speaking, I think the user should never need the ray indices. And if he still needs them, then they can be gotten easily enough from the `Cone_of_fan` object.\n\n\nYes. I tried to make cones and fans better compared to `LatticePolytopes` where everything is based on indices, but there is still room for improvement. Will work on it.",
     "created_at": "2010-06-06T21:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -593,6 +594,7 @@ archive/issue_comments_082834.json:
 Replying to [comment:10 vbraun]:
 > Generally speaking, I think the user should never need the ray indices. And if he still needs them, then they can be gotten easily enough from the `Cone_of_fan` object.
 
+
 Yes. I tried to make cones and fans better compared to `LatticePolytopes` where everything is based on indices, but there is still room for improvement. Will work on it.
 
 
@@ -602,7 +604,7 @@ Yes. I tried to make cones and fans better compared to `LatticePolytopes` where 
 archive/issue_comments_082835.json:
 ```json
 {
-    "body": "Replying to [comment:11 novoselt]:\n> There was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple.\n\nI think the integer vectors get sorted lexicographically by their entries, and I think the rays inherit that. So the result should be deterministic :-)\n\n> In general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?\n\nI think that right now `Fan( cone_list_1 ) == Fan( cone_list_2 )` as long as the cones are in the same order even if the order of the rays in each cone is different. I think that would be good enough :-). If somebody by hand specifies different orders of the rays of the fan then its only fair to treat the fans as different.\n\nThe \"mathematical\" comparison of the cones is only slow if they are not strictly convex, so I don't think that would be a big problem. Also, in the non-strict case one could work with facet normals which might be cached already... I'm not necessarily insisting that we do it that way, but just throwing out some options.\n\n2) I think the warning would be the fine, too.\n\n3) I only want to traverse the face lattice with those methods. By \"star\", I mean without quotient (in the triangulation sense, not how star is used for fans usually). I'm open to other names :)  And adjacent works in the same way as \"adjacency matrix\", but I don't have a reference at hand right now that uses that.\n\n> I was tempted to say that\n> {{{\n> sage: fan(1)[i]\n> }}}\n> will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\nOww I didn't notice that... Can we have it return the 1-cones in the same order as the rays of the fan?\n\n> >   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n> \n> Can I remove `smallest_`?\n\nFine by me!",
+    "body": "Replying to [comment:11 novoselt]:\n> There was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple.\n\n\nI think the integer vectors get sorted lexicographically by their entries, and I think the rays inherit that. So the result should be deterministic :-)\n\n> In general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?\n\n\nI think that right now `Fan( cone_list_1 ) == Fan( cone_list_2 )` as long as the cones are in the same order even if the order of the rays in each cone is different. I think that would be good enough :-). If somebody by hand specifies different orders of the rays of the fan then its only fair to treat the fans as different.\n\nThe \"mathematical\" comparison of the cones is only slow if they are not strictly convex, so I don't think that would be a big problem. Also, in the non-strict case one could work with facet normals which might be cached already... I'm not necessarily insisting that we do it that way, but just throwing out some options.\n\n2) I think the warning would be the fine, too.\n\n3) I only want to traverse the face lattice with those methods. By \"star\", I mean without quotient (in the triangulation sense, not how star is used for fans usually). I'm open to other names :)  And adjacent works in the same way as \"adjacency matrix\", but I don't have a reference at hand right now that uses that.\n\n> I was tempted to say that\n> \n> ```\n> sage: fan(1)[i]\n> ```\n> will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\n\nOww I didn't notice that... Can we have it return the 1-cones in the same order as the rays of the fan?\n\n> >   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).\n \n> \n> Can I remove `smallest_`?\n\n\nFine by me!",
     "created_at": "2010-06-07T00:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -614,9 +616,11 @@ archive/issue_comments_082835.json:
 Replying to [comment:11 novoselt]:
 > There was no sorting, rays were determined first as a set (union of ray sets of all cones) and then converted to a tuple.
 
+
 I think the integer vectors get sorted lexicographically by their entries, and I think the rays inherit that. So the result should be deterministic :-)
 
 > In general, I agree, but it may potentially lead to `cone1 == cone2` while `Fan([cone1]) != Fan([cone2])`. Are you OK with this?
+
 
 I think that right now `Fan( cone_list_1 ) == Fan( cone_list_2 )` as long as the cones are in the same order even if the order of the rays in each cone is different. I think that would be good enough :-). If somebody by hand specifies different orders of the rays of the fan then its only fair to treat the fans as different.
 
@@ -627,16 +631,20 @@ The "mathematical" comparison of the cones is only slow if they are not strictly
 3) I only want to traverse the face lattice with those methods. By "star", I mean without quotient (in the triangulation sense, not how star is used for fans usually). I'm open to other names :)  And adjacent works in the same way as "adjacency matrix", but I don't have a reference at hand right now that uses that.
 
 > I was tempted to say that
-> {{{
+> 
+> ```
 > sage: fan(1)[i]
-> }}}
+> ```
 > will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?
+
 
 Oww I didn't notice that... Can we have it return the 1-cones in the same order as the rays of the fan?
 
 > >   * `smallest_cone_containing(*Nlist)`: the smallest cone containing all points (which can be specified by a ray index or as a N-lattice element).
+ 
 > 
 > Can I remove `smallest_`?
+
 
 Fine by me!
 
@@ -647,7 +655,7 @@ Fine by me!
 archive/issue_comments_082836.json:
 ```json
 {
-    "body": "Replying to [comment:11 novoselt]:\n> {{{\n> sage: fan(1)[i]\n> }}}\n> will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\nI've played a bit more with it and I don't understand your comment:\n\n```\nsage: fan = Fan(cones=[(0,1), (1,2)], rays=[(1,0), (0,1), (-1,0), (-1,-1)])\nsage: fan(1)\n(1-dimensional cone, 1-dimensional cone, 1-dimensional cone)\nsage: fan(2)\n(2-dimensional cone, 2-dimensional cone)\nsage: type( fan(1)[0] )\n<class 'sage.geometry.fan.Cone_of_fan'>\nsage: type( fan(2)[0] )\n<class 'sage.geometry.fan.Cone_of_fan'>\n```\n\nSo `fan(1)` definitely returns the one-cones in the current incarnation...",
+    "body": "Replying to [comment:11 novoselt]:\n> {{{\n> sage: fan(1)[i]\n> }}}\n> will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?\n\n\nI've played a bit more with it and I don't understand your comment:\n\n```\nsage: fan = Fan(cones=[(0,1), (1,2)], rays=[(1,0), (0,1), (-1,0), (-1,-1)])\nsage: fan(1)\n(1-dimensional cone, 1-dimensional cone, 1-dimensional cone)\nsage: fan(2)\n(2-dimensional cone, 2-dimensional cone)\nsage: type( fan(1)[0] )\n<class 'sage.geometry.fan.Cone_of_fan'>\nsage: type( fan(2)[0] )\n<class 'sage.geometry.fan.Cone_of_fan'>\n```\nSo `fan(1)` definitely returns the one-cones in the current incarnation...",
     "created_at": "2010-06-07T09:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -662,6 +670,7 @@ Replying to [comment:11 novoselt]:
 > }}}
 > will do exactly this, but it will not since `fan(1)` purposefully returns the list of rays, rather than one-dimensional cones... Did you notice this convention? What do you think of it?
 
+
 I've played a bit more with it and I don't understand your comment:
 
 ```
@@ -675,7 +684,6 @@ sage: type( fan(1)[0] )
 sage: type( fan(2)[0] )
 <class 'sage.geometry.fan.Cone_of_fan'>
 ```
-
 So `fan(1)` definitely returns the one-cones in the current incarnation...
 
 
@@ -941,7 +949,7 @@ Sounds good to me. Since we don't really need `ConeFace` for toric varieties I'm
 archive/issue_comments_082848.json:
 ```json
 {
-    "body": "Replying to [comment:25 vbraun]:\n> Sounds good to me. Since we don't really need `ConeFace` for toric varieties I'm happy to see it go. If anybody just wants to look at the geometry of a cone then he can use `Polyhedron`.\n> \nWonderful!",
+    "body": "Replying to [comment:25 vbraun]:\n> Sounds good to me. Since we don't really need `ConeFace` for toric varieties I'm happy to see it go. If anybody just wants to look at the geometry of a cone then he can use `Polyhedron`.\n> \n\nWonderful!",
     "created_at": "2010-06-10T19:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -953,6 +961,7 @@ archive/issue_comments_082848.json:
 Replying to [comment:25 vbraun]:
 > Sounds good to me. Since we don't really need `ConeFace` for toric varieties I'm happy to see it go. If anybody just wants to look at the geometry of a cone then he can use `Polyhedron`.
 > 
+
 Wonderful!
 
 
@@ -1018,7 +1027,7 @@ I'd rather not allow shifting away from the origin, for totally general things u
 archive/issue_comments_082852.json:
 ```json
 {
-    "body": "Hi Volker,\n\nI have posted a new patch, it is still not a final version but I need approvals/opinions for some changes once again... After trying to make things work, I came to the conclusion that `Cone_of_fan` is a natural class to introduce, but its added functionality should be minimal. On the other hand, there is no need for `ConeFace` at all. So this class is gone but `Cone_of_fan` is reincarnated.\n\nIt also feels natural to treat fans as cones in many respects and put some extra functions into `IntegralRayCollection` class. In particular, I have added `ambient` and `ambient_ray_indices` there. For fans they will always return fan itself and `range(fan.nrays())`. Should they be hidden as `_ambient` etc.?\n\nFrom the coding point of view it would be also convenient to refer to cones of fans as faces. On the other hand cones feel more natural. Choices: 1) refer to cones as faces; 2) refer to cones as faces, but also have aliases allowing to refer to them as cones; 3) refer to cones of fans as cones only. What would you choose?\n\nI have changed `_repr_` of cones so that they print \"face of\" if `self.ambient() is not self`, i.e. if this cone represents a face of another cone or fan. In the previous version that's how `ConeFace` was printed, but `Cone_of_fan` was printed just as cone without mentioning the fan. I have kept the old style so far, but maybe it would be more consistent to print cones of fans as faces of these fans. This is somewhat related to the previous question. Your opinion?\n\nHere is a sample of current code output (with an example of how cone of fan printing may look like):\n\n```\nsage: fan = FaceFan(lattice_polytope.octahedron(3))\nsage: two_face = fan(2)[0]\nsage: two_face\n2-dimensional cone\nsage: print super(type(two_face), two_face)._repr_()\n2-dimensional face of Rational polyhedral fan in 3-dimensional lattice N\nsage: two_face.facets()\n(1-dimensional cone, 1-dimensional cone)\nsage: two_face.facet_of()\n(3-dimensional cone, 3-dimensional cone)\nsage: two_face.adjacent()\n(2-dimensional cone, 2-dimensional cone, 2-dimensional cone, 2-dimensional cone)\nsage: two_face.ambient()\nRational polyhedral fan in 3-dimensional lattice N\nsage: two_face.ambient_ray_indices()\n(0, 1)\nsage: two_face.star_generators()\n(3-dimensional cone, 3-dimensional cone)\nsage: two_face.star_generator_indices()\n(0, 4)\nsage: fan.ambient()\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan.ambient_ray_indices()\n(0, 1, 2, 3, 4, 5)\nsage: fan.cone_lattice() is fan.face_lattice()\nTrue\n```\n\n\nNot all new functions are yet documented, fan module has doctest failures related to containment checks (which are not yet fully implemented), and subsequent patches don't work with this version yet. Fully functional/documented/working_with_other_patches version is guaranteed by Friday evening.\n\nThank you!\nAndrey",
+    "body": "Hi Volker,\n\nI have posted a new patch, it is still not a final version but I need approvals/opinions for some changes once again... After trying to make things work, I came to the conclusion that `Cone_of_fan` is a natural class to introduce, but its added functionality should be minimal. On the other hand, there is no need for `ConeFace` at all. So this class is gone but `Cone_of_fan` is reincarnated.\n\nIt also feels natural to treat fans as cones in many respects and put some extra functions into `IntegralRayCollection` class. In particular, I have added `ambient` and `ambient_ray_indices` there. For fans they will always return fan itself and `range(fan.nrays())`. Should they be hidden as `_ambient` etc.?\n\nFrom the coding point of view it would be also convenient to refer to cones of fans as faces. On the other hand cones feel more natural. Choices: 1) refer to cones as faces; 2) refer to cones as faces, but also have aliases allowing to refer to them as cones; 3) refer to cones of fans as cones only. What would you choose?\n\nI have changed `_repr_` of cones so that they print \"face of\" if `self.ambient() is not self`, i.e. if this cone represents a face of another cone or fan. In the previous version that's how `ConeFace` was printed, but `Cone_of_fan` was printed just as cone without mentioning the fan. I have kept the old style so far, but maybe it would be more consistent to print cones of fans as faces of these fans. This is somewhat related to the previous question. Your opinion?\n\nHere is a sample of current code output (with an example of how cone of fan printing may look like):\n\n```\nsage: fan = FaceFan(lattice_polytope.octahedron(3))\nsage: two_face = fan(2)[0]\nsage: two_face\n2-dimensional cone\nsage: print super(type(two_face), two_face)._repr_()\n2-dimensional face of Rational polyhedral fan in 3-dimensional lattice N\nsage: two_face.facets()\n(1-dimensional cone, 1-dimensional cone)\nsage: two_face.facet_of()\n(3-dimensional cone, 3-dimensional cone)\nsage: two_face.adjacent()\n(2-dimensional cone, 2-dimensional cone, 2-dimensional cone, 2-dimensional cone)\nsage: two_face.ambient()\nRational polyhedral fan in 3-dimensional lattice N\nsage: two_face.ambient_ray_indices()\n(0, 1)\nsage: two_face.star_generators()\n(3-dimensional cone, 3-dimensional cone)\nsage: two_face.star_generator_indices()\n(0, 4)\nsage: fan.ambient()\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan.ambient_ray_indices()\n(0, 1, 2, 3, 4, 5)\nsage: fan.cone_lattice() is fan.face_lattice()\nTrue\n```\n\nNot all new functions are yet documented, fan module has doctest failures related to containment checks (which are not yet fully implemented), and subsequent patches don't work with this version yet. Fully functional/documented/working_with_other_patches version is guaranteed by Friday evening.\n\nThank you!\nAndrey",
     "created_at": "2010-06-14T06:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1067,7 +1076,6 @@ sage: fan.ambient_ray_indices()
 sage: fan.cone_lattice() is fan.face_lattice()
 True
 ```
-
 
 Not all new functions are yet documented, fan module has doctest failures related to containment checks (which are not yet fully implemented), and subsequent patches don't work with this version yet. Fully functional/documented/working_with_other_patches version is guaranteed by Friday evening.
 
@@ -1127,7 +1135,7 @@ Oops accidentally deleted the summary
 archive/issue_comments_082855.json:
 ```json
 {
-    "body": "OK, I also think that any cone in the fan must be called a cone. The only \"face thing\" that I would still like to keep is \"face_lattice\" since it allows the same code in `Cone` work for a cone which is not a part of anything, a part or another cone, or a part of a fan. \n(However, I can do it using a privite function or `__getattr__` hook, if you think it would be better.)\n\nShould cones of fan print as \n\n```\n2-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N\n```\n\n? Right now the following is a bit inconsistent:\n\n```\nsage: cone = Cone([(1,0), (0,1)])\nsage: for l in cone.face_lattice().level_sets(): print l\n....: \n[0-dimensional face of 2-dimensional cone]\n[1-dimensional face of 2-dimensional cone, 1-dimensional face of 2-dimensional cone]\n[2-dimensional cone]\nsage: fan = Fan([cone])\nsage: for l in fan.cone_lattice().level_sets(): print l\n....: \n[0-dimensional cone]\n[1-dimensional cone, 1-dimensional cone]\n[2-dimensional cone]\n[Rational polyhedral fan in 2-dimensional lattice N]\nsage: cone_of_fan = fan(2)[0]\nsage: for l in cone_of_fan.face_lattice().level_sets(): print l\n....: \n[0-dimensional cone]\n[1-dimensional cone, 1-dimensional cone]\n[2-dimensional cone]\n```\n\nSo I think either all cones should just print as plain standalone cones, or they should always mention the ambient structure if it exists. For latexing I am using `\\subset` between `self` and `ambient` and think that it looks awesome ;-) For string representation I try to keep it short, but it is nice to see something distinguishing about objects.\n\nI don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.\n\nSo far I was thinking of `ambient` as an ambient `RayCollection`, i.e. we have a collection of rays that happened to be a subset of another ray collection. I do, however, want to put some face-related internal functions that will assume that `self` is a face of `ambient` and, therefore, face lattice of `self` is a sublattice of face lattice of `ambient`. The reason is that the main point of knowing that `self` is a part of something bigger is to allow nice walking along the \"largest containing face lattice.\" I didn't really think about it before, so I wrote only `face_lattice` and `faces` for cones and `cone_lattice` and `cones` for fans. But when you have suggested adding methods to cones that allow to go up/down/\"horizontally\" starting from the cone itself and without direct use of face/cone lattice of the containing object, I have realized that it will be extremely cool and convenient, and that behaviour of elements of face lattice for cones should be the same as for elements of cone lattice for fans. So I tried to make uniform methods instead of `cone/fan` to access the ambient structure and `cone_rays/fan_rays` to see how something sits inside it.",
+    "body": "OK, I also think that any cone in the fan must be called a cone. The only \"face thing\" that I would still like to keep is \"face_lattice\" since it allows the same code in `Cone` work for a cone which is not a part of anything, a part or another cone, or a part of a fan. \n(However, I can do it using a privite function or `__getattr__` hook, if you think it would be better.)\n\nShould cones of fan print as \n\n```\n2-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N\n```\n? Right now the following is a bit inconsistent:\n\n```\nsage: cone = Cone([(1,0), (0,1)])\nsage: for l in cone.face_lattice().level_sets(): print l\n....: \n[0-dimensional face of 2-dimensional cone]\n[1-dimensional face of 2-dimensional cone, 1-dimensional face of 2-dimensional cone]\n[2-dimensional cone]\nsage: fan = Fan([cone])\nsage: for l in fan.cone_lattice().level_sets(): print l\n....: \n[0-dimensional cone]\n[1-dimensional cone, 1-dimensional cone]\n[2-dimensional cone]\n[Rational polyhedral fan in 2-dimensional lattice N]\nsage: cone_of_fan = fan(2)[0]\nsage: for l in cone_of_fan.face_lattice().level_sets(): print l\n....: \n[0-dimensional cone]\n[1-dimensional cone, 1-dimensional cone]\n[2-dimensional cone]\n```\nSo I think either all cones should just print as plain standalone cones, or they should always mention the ambient structure if it exists. For latexing I am using `\\subset` between `self` and `ambient` and think that it looks awesome ;-) For string representation I try to keep it short, but it is nice to see something distinguishing about objects.\n\nI don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.\n\nSo far I was thinking of `ambient` as an ambient `RayCollection`, i.e. we have a collection of rays that happened to be a subset of another ray collection. I do, however, want to put some face-related internal functions that will assume that `self` is a face of `ambient` and, therefore, face lattice of `self` is a sublattice of face lattice of `ambient`. The reason is that the main point of knowing that `self` is a part of something bigger is to allow nice walking along the \"largest containing face lattice.\" I didn't really think about it before, so I wrote only `face_lattice` and `faces` for cones and `cone_lattice` and `cones` for fans. But when you have suggested adding methods to cones that allow to go up/down/\"horizontally\" starting from the cone itself and without direct use of face/cone lattice of the containing object, I have realized that it will be extremely cool and convenient, and that behaviour of elements of face lattice for cones should be the same as for elements of cone lattice for fans. So I tried to make uniform methods instead of `cone/fan` to access the ambient structure and `cone_rays/fan_rays` to see how something sits inside it.",
     "created_at": "2010-06-14T16:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1144,7 +1152,6 @@ Should cones of fan print as
 ```
 2-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N
 ```
-
 ? Right now the following is a bit inconsistent:
 
 ```
@@ -1168,7 +1175,6 @@ sage: for l in cone_of_fan.face_lattice().level_sets(): print l
 [1-dimensional cone, 1-dimensional cone]
 [2-dimensional cone]
 ```
-
 So I think either all cones should just print as plain standalone cones, or they should always mention the ambient structure if it exists. For latexing I am using `\subset` between `self` and `ambient` and think that it looks awesome ;-) For string representation I try to keep it short, but it is nice to see something distinguishing about objects.
 
 I don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.
@@ -1280,7 +1286,7 @@ Updated patch passes all existing doctests. `adjacent` and `facet_of` don't have
 archive/issue_comments_082860.json:
 ```json
 {
-    "body": "I'm also in favor of 3). The \"holes\" in the fan make faces non-adjacent, thats just how it works. \n\n> I don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.\n\nThe dual cones can be returned as `Polyhedron` objects, which is probably more useful since you'll most likely want to shift their origin and then intersect them.",
+    "body": "I'm also in favor of 3). The \"holes\" in the fan make faces non-adjacent, thats just how it works. \n\n> I don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.\n\n\nThe dual cones can be returned as `Polyhedron` objects, which is probably more useful since you'll most likely want to shift their origin and then intersect them.",
     "created_at": "2010-06-15T08:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1293,6 +1299,7 @@ I'm also in favor of 3). The "holes" in the fan make faces non-adjacent, thats j
 
 > I don't want to prohibit non-strictly convex cones completely, since I think that we definitely should have a function for computing dual cones.
 
+
 The dual cones can be returned as `Polyhedron` objects, which is probably more useful since you'll most likely want to shift their origin and then intersect them.
 
 
@@ -1302,7 +1309,7 @@ The dual cones can be returned as `Polyhedron` objects, which is probably more u
 archive/issue_comments_082861.json:
 ```json
 {
-    "body": "OK, I have implemented 3) with the change \"unless `d` is the dimension of the ambient structure\". This allows to work with embedded fans in an \"intuitive\" way. I think that changes to the cone module are finished, coverage is at 100% and all doctests pass. I will go over fan module tomorrow and see what else has to be documented/fixed there (so far doctests pass).\n\nRegarding names: `cone.ambient().dim()` and `cone.ambient_dim()` are different things. The first is the actual dimension of the ambient cone or fan, while the second is the dimension of the ambient lattice. Are you OK with this or should we change it? In principle, the second one just returns `cone.lattice().dim()` and it is not that much more to type, so `cone.ambient_dim()` can be removed.\n\nRegarding printing using `_repr_`: I think we should have either all short version (only say what the object is)\n\n```\nsage: cone\n2-dimensional cone\nsage: cone_face\n1-dimensional cone\nsage: fan\nRational polyhedral fan\nsage: fan_face\n1-dimensional cone\n```\n\nor all long version (state the ambient structure and the lattice):\n\n```\nsage: cone\n2-dimensional cone in 3-dimensional lattice N\nsage: cone_face\n1-dimensional face of 2-dimensional cone in 3-dimensional lattice N\nsage: fan\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan_face\n1-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N\n```\n\nRight now we have something along these lines:\n\n```\nsage: cone\n2-dimensional cone\nsage: cone_face\n1-dimensional face of 2-dimensional cone\nsage: fan\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan_face\n1-dimensional cone\n```\n\nI think I was trying to be informative but short, but I find the result inconsistent and would like to change it to one of the first two options (probably the second variant is the best, even if it is the longest...)\n\nBy the way - I intentionally didn't print the actual dimension of the fan since it seem to be less relevant than the ambient one: we can have a 2-d fan generated by 1-d cones in a 3-d space and from the toric varieties point of view the last dimension is the most important and clear one.\n\nLet me know what you think!",
+    "body": "OK, I have implemented 3) with the change \"unless `d` is the dimension of the ambient structure\". This allows to work with embedded fans in an \"intuitive\" way. I think that changes to the cone module are finished, coverage is at 100% and all doctests pass. I will go over fan module tomorrow and see what else has to be documented/fixed there (so far doctests pass).\n\nRegarding names: `cone.ambient().dim()` and `cone.ambient_dim()` are different things. The first is the actual dimension of the ambient cone or fan, while the second is the dimension of the ambient lattice. Are you OK with this or should we change it? In principle, the second one just returns `cone.lattice().dim()` and it is not that much more to type, so `cone.ambient_dim()` can be removed.\n\nRegarding printing using `_repr_`: I think we should have either all short version (only say what the object is)\n\n```\nsage: cone\n2-dimensional cone\nsage: cone_face\n1-dimensional cone\nsage: fan\nRational polyhedral fan\nsage: fan_face\n1-dimensional cone\n```\nor all long version (state the ambient structure and the lattice):\n\n```\nsage: cone\n2-dimensional cone in 3-dimensional lattice N\nsage: cone_face\n1-dimensional face of 2-dimensional cone in 3-dimensional lattice N\nsage: fan\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan_face\n1-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N\n```\nRight now we have something along these lines:\n\n```\nsage: cone\n2-dimensional cone\nsage: cone_face\n1-dimensional face of 2-dimensional cone\nsage: fan\nRational polyhedral fan in 3-dimensional lattice N\nsage: fan_face\n1-dimensional cone\n```\nI think I was trying to be informative but short, but I find the result inconsistent and would like to change it to one of the first two options (probably the second variant is the best, even if it is the longest...)\n\nBy the way - I intentionally didn't print the actual dimension of the fan since it seem to be less relevant than the ambient one: we can have a 2-d fan generated by 1-d cones in a 3-d space and from the toric varieties point of view the last dimension is the most important and clear one.\n\nLet me know what you think!",
     "created_at": "2010-06-15T19:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1327,7 +1334,6 @@ Rational polyhedral fan
 sage: fan_face
 1-dimensional cone
 ```
-
 or all long version (state the ambient structure and the lattice):
 
 ```
@@ -1340,7 +1346,6 @@ Rational polyhedral fan in 3-dimensional lattice N
 sage: fan_face
 1-dimensional cone of Rational polyhedral fan in 3-dimensional lattice N
 ```
-
 Right now we have something along these lines:
 
 ```
@@ -1353,7 +1358,6 @@ Rational polyhedral fan in 3-dimensional lattice N
 sage: fan_face
 1-dimensional cone
 ```
-
 I think I was trying to be informative but short, but I find the result inconsistent and would like to change it to one of the first two options (probably the second variant is the best, even if it is the longest...)
 
 By the way - I intentionally didn't print the actual dimension of the fan since it seem to be less relevant than the ambient one: we can have a 2-d fan generated by 1-d cones in a 3-d space and from the toric varieties point of view the last dimension is the most important and clear one.
@@ -1367,7 +1371,7 @@ Let me know what you think!
 archive/issue_comments_082862.json:
 ```json
 {
-    "body": "I would be in favor of removing `ambient_dim`. As you say, we'd then have\n* `self.ambient().dim()`\n* `self.lattice().dim()`\nOn a related note, the dimension of the toric variety is currently `ToricVariety_field.dimension()`. Maybe we can shorten that to `dim()` as well to be consistent?\n\nFor the output I also think that the verbose option is best. Maybe we can abbreviate the \"Dimension\", that would save space yet remain informative:\n\n```\nsage: cone\n2d cone in 3d lattice N\nsage: cone_face\n1d face of 2d cone in 3d lattice N\nsage: fan\nRational polyhedral fan in 3d lattice N\nsage: fan_face\n1d cone of Rational polyhedral fan in 3d lattice N\n```\n",
+    "body": "I would be in favor of removing `ambient_dim`. As you say, we'd then have\n* `self.ambient().dim()`\n* `self.lattice().dim()`\nOn a related note, the dimension of the toric variety is currently `ToricVariety_field.dimension()`. Maybe we can shorten that to `dim()` as well to be consistent?\n\nFor the output I also think that the verbose option is best. Maybe we can abbreviate the \"Dimension\", that would save space yet remain informative:\n\n```\nsage: cone\n2d cone in 3d lattice N\nsage: cone_face\n1d face of 2d cone in 3d lattice N\nsage: fan\nRational polyhedral fan in 3d lattice N\nsage: fan_face\n1d cone of Rational polyhedral fan in 3d lattice N\n```",
     "created_at": "2010-06-15T22:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1396,13 +1400,12 @@ sage: fan_face
 
 
 
-
 ---
 
 archive/issue_comments_082863.json:
 ```json
 {
-    "body": "1) Can we remove `Fan.containing_cones()`. It seems to be unused and its functionality is provided by the much more flexible method `Fan.cone_containing()`. \n\n2) The following raises an exception instead of returning the desired answer:\n\n```\nsage: F = Fan([[0,1,2,3],[0,1,4]], [(1, 1, 1), (1, -1, 1), (1, -1, -1), (1, 1, -1), (0, 0, 1)])\nsage: F.cone_containing(0)\n```\n",
+    "body": "1) Can we remove `Fan.containing_cones()`. It seems to be unused and its functionality is provided by the much more flexible method `Fan.cone_containing()`. \n\n2) The following raises an exception instead of returning the desired answer:\n\n```\nsage: F = Fan([[0,1,2,3],[0,1,4]], [(1, 1, 1), (1, -1, 1), (1, -1, -1), (1, 1, -1), (0, 0, 1)])\nsage: F.cone_containing(0)\n```",
     "created_at": "2010-06-16T09:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1422,13 +1425,12 @@ sage: F.cone_containing(0)
 
 
 
-
 ---
 
 archive/issue_comments_082864.json:
 ```json
 {
-    "body": "1) Yes, I thought about renaming it or making it hidden since `containing_cones` and `cone_containing` are so similar yet give quite different result. Thanks for pointing out that it is unused anymore at all. In fact, I have repeated its code in `cone_containing` when I needed its functionality, so I guess it was not something extremely natural anyway. Will be gone.\n\n2) There was a typo, will be fixed and your example goes into doctests!\n\nI also like your suggestion for `_repr_` strings, except that I would like to insert `-`:\n\n```\nsage: cone_face\n1-d face of 2-d cone in 3-d lattice N\n```\n\nI think it makes it a little easier to see the actual dimension and in the case of \"1d\" there is less confusion with \"ld\".",
+    "body": "1) Yes, I thought about renaming it or making it hidden since `containing_cones` and `cone_containing` are so similar yet give quite different result. Thanks for pointing out that it is unused anymore at all. In fact, I have repeated its code in `cone_containing` when I needed its functionality, so I guess it was not something extremely natural anyway. Will be gone.\n\n2) There was a typo, will be fixed and your example goes into doctests!\n\nI also like your suggestion for `_repr_` strings, except that I would like to insert `-`:\n\n```\nsage: cone_face\n1-d face of 2-d cone in 3-d lattice N\n```\nI think it makes it a little easier to see the actual dimension and in the case of \"1d\" there is less confusion with \"ld\".",
     "created_at": "2010-06-16T17:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
@@ -1447,7 +1449,6 @@ I also like your suggestion for `_repr_` strings, except that I would like to in
 sage: cone_face
 1-d face of 2-d cone in 3-d lattice N
 ```
-
 I think it makes it a little easier to see the actual dimension and in the case of "1d" there is less confusion with "ld".
 
 

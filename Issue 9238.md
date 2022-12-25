@@ -84,7 +84,7 @@ Did you update the version of jmol in Sage as well?
 archive/issue_comments_086578.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> Did you update the version of jmol in Sage as well?\nJason,\n\nThanks!!! I forgot about that.  Yes, for all of this to work you need to use Jmol 11.8.  The latest release.  Should I add a .zip of the necessary applet files to the trac?\n\nJonathan",
+    "body": "Replying to [comment:1 jason]:\n> Did you update the version of jmol in Sage as well?\n\nJason,\n\nThanks!!! I forgot about that.  Yes, for all of this to work you need to use Jmol 11.8.  The latest release.  Should I add a .zip of the necessary applet files to the trac?\n\nJonathan",
     "created_at": "2010-06-14T17:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -95,6 +95,7 @@ archive/issue_comments_086578.json:
 
 Replying to [comment:1 jason]:
 > Did you update the version of jmol in Sage as well?
+
 Jason,
 
 Thanks!!! I forgot about that.  Yes, for all of this to work you need to use Jmol 11.8.  The latest release.  Should I add a .zip of the necessary applet files to the trac?
@@ -188,7 +189,7 @@ That zip file has a lot of __MACOSX and .DS_Store files...
 archive/issue_comments_086583.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> That zip file has a lot of __MACOSX and .DS_Store files...\nOops...It will still work, but I will clean it up and post an update later today.  People can try it with this, but look for a clean file tomorrow.\n\nJonathan",
+    "body": "Replying to [comment:7 jason]:\n> That zip file has a lot of __MACOSX and .DS_Store files...\n\nOops...It will still work, but I will clean it up and post an update later today.  People can try it with this, but look for a clean file tomorrow.\n\nJonathan",
     "created_at": "2010-06-14T18:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -199,6 +200,7 @@ archive/issue_comments_086583.json:
 
 Replying to [comment:7 jason]:
 > That zip file has a lot of __MACOSX and .DS_Store files...
+
 Oops...It will still work, but I will clean it up and post an update later today.  People can try it with this, but look for a clean file tomorrow.
 
 Jonathan
@@ -210,7 +212,7 @@ Jonathan
 archive/issue_comments_086584.json:
 ```json
 {
-    "body": "If you replace the existing jmol directory with the above zip, then you delete the \"jmol\" file inside that directory, which is necessary for the spkg to work.  The jmol file is:\n\n\n```/bin/sh\n#JMOL_HOME=`dirname \"$0\"`\nJMOL_HOME=\"`\"$SAGE_LOCAL\"/bin/sage-pypkg-location sagenb`\"\"/sagenb/data/jmol\"\n\n# Collect -D & -m options as java arguments\ncommand=java\nwhile [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n        command=\"$command $1\"\n        shift\ndone\n\nif [ -f ./Jmol.jar ] ; then\n  jarpath=./Jmol.jar\nelif [ -f $JMOL_HOME/Jmol.jar ] ; then\n  jarpath=$JMOL_HOME/Jmol.jar\nelif [ -f /usr/share/jmol/Jmol.jar ] ; then\n  jarpath=/usr/share/jmol/Jmol.jar\nelse\n  echo Jmol.jar not found\n  exit\nfi\n$command -Xmx512m -jar $jarpath $@\n\n\n```\n\n\nIs that file still needed?  I think it probably makes jmol work from the command line for us.",
+    "body": "If you replace the existing jmol directory with the above zip, then you delete the \"jmol\" file inside that directory, which is necessary for the spkg to work.  The jmol file is:\n\n```/bin/sh\n#JMOL_HOME=`dirname \"$0\"`\nJMOL_HOME=\"`\"$SAGE_LOCAL\"/bin/sage-pypkg-location sagenb`\"\"/sagenb/data/jmol\"\n\n# Collect -D & -m options as java arguments\ncommand=java\nwhile [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n        command=\"$command $1\"\n        shift\ndone\n\nif [ -f ./Jmol.jar ] ; then\n  jarpath=./Jmol.jar\nelif [ -f $JMOL_HOME/Jmol.jar ] ; then\n  jarpath=$JMOL_HOME/Jmol.jar\nelif [ -f /usr/share/jmol/Jmol.jar ] ; then\n  jarpath=/usr/share/jmol/Jmol.jar\nelse\n  echo Jmol.jar not found\n  exit\nfi\n$command -Xmx512m -jar $jarpath $@\n\n\n```\n\nIs that file still needed?  I think it probably makes jmol work from the command line for us.",
     "created_at": "2010-06-14T19:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -220,7 +222,6 @@ archive/issue_comments_086584.json:
 ```
 
 If you replace the existing jmol directory with the above zip, then you delete the "jmol" file inside that directory, which is necessary for the spkg to work.  The jmol file is:
-
 
 ```/bin/sh
 #JMOL_HOME=`dirname "$0"`
@@ -248,7 +249,6 @@ $command -Xmx512m -jar $jarpath $@
 
 ```
 
-
 Is that file still needed?  I think it probably makes jmol work from the command line for us.
 
 
@@ -258,7 +258,7 @@ Is that file still needed?  I think it probably makes jmol work from the command
 archive/issue_comments_086585.json:
 ```json
 {
-    "body": "Hmmm...good eye!  I think you are correct.  I have never used Jmol from the command line.  It does look like the application is used.  I can certainly include that in the package as well as the shell script.  I thought that was the old Jmol linux shell script...I didn't even look inside....My bad.  When I clean things up I will get the necessary files for command line back in there.  I will do that this evening.  Let me know if you notice anything else.\n\nJonathan\nReplying to [comment:9 jason]:\n> If you replace the existing jmol directory with the above zip, then you delete the \"jmol\" file inside that directory, which is necessary for the spkg to work.  The jmol file is:\n> \n> {{{\n> #!/bin/sh\n> #JMOL_HOME=`dirname \"$0\"`\n> JMOL_HOME=\"`\"$SAGE_LOCAL\"/bin/sage-pypkg-location sagenb`\"\"/sagenb/data/jmol\"\n> \n> # Collect -D & -m options as java arguments\n> command=java\n> while [ `echo $1 | egrep '<sup>-D|</sup>-m' | wc -l` != 0 ]; do\n>         command=\"$command $1\"\n>         shift\n> done\n> \n> if [ -f ./Jmol.jar ] ; then\n>   jarpath=./Jmol.jar\n> elif [ -f $JMOL_HOME/Jmol.jar ] ; then\n>   jarpath=$JMOL_HOME/Jmol.jar\n> elif [ -f /usr/share/jmol/Jmol.jar ] ; then\n>   jarpath=/usr/share/jmol/Jmol.jar\n> else\n>   echo Jmol.jar not found\n>   exit\n> fi\n> $command -Xmx512m -jar $jarpath $`@`\n> \n> \n> }}}\n> \n> Is that file still needed?  I think it probably makes jmol work from the command line for us.",
+    "body": "Hmmm...good eye!  I think you are correct.  I have never used Jmol from the command line.  It does look like the application is used.  I can certainly include that in the package as well as the shell script.  I thought that was the old Jmol linux shell script...I didn't even look inside....My bad.  When I clean things up I will get the necessary files for command line back in there.  I will do that this evening.  Let me know if you notice anything else.\n\nJonathan\nReplying to [comment:9 jason]:\n> If you replace the existing jmol directory with the above zip, then you delete the \"jmol\" file inside that directory, which is necessary for the spkg to work.  The jmol file is:\n> \n> \n> ```\n> #!/bin/sh\n> #JMOL_HOME=`dirname \"$0\"`\n> JMOL_HOME=\"`\"$SAGE_LOCAL\"/bin/sage-pypkg-location sagenb`\"\"/sagenb/data/jmol\"\n> \n> # Collect -D & -m options as java arguments\n> command=java\n> while [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n>         command=\"$command $1\"\n>         shift\n> done\n> \n> if [ -f ./Jmol.jar ] ; then\n>   jarpath=./Jmol.jar\n> elif [ -f $JMOL_HOME/Jmol.jar ] ; then\n>   jarpath=$JMOL_HOME/Jmol.jar\n> elif [ -f /usr/share/jmol/Jmol.jar ] ; then\n>   jarpath=/usr/share/jmol/Jmol.jar\n> else\n>   echo Jmol.jar not found\n>   exit\n> fi\n> $command -Xmx512m -jar $jarpath $@\n> \n> \n> ```\n> \n> Is that file still needed?  I think it probably makes jmol work from the command line for us.",
     "created_at": "2010-06-14T19:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -273,14 +273,15 @@ Jonathan
 Replying to [comment:9 jason]:
 > If you replace the existing jmol directory with the above zip, then you delete the "jmol" file inside that directory, which is necessary for the spkg to work.  The jmol file is:
 > 
-> {{{
+> 
+> ```
 > #!/bin/sh
 > #JMOL_HOME=`dirname "$0"`
 > JMOL_HOME="`"$SAGE_LOCAL"/bin/sage-pypkg-location sagenb`""/sagenb/data/jmol"
 > 
 > # Collect -D & -m options as java arguments
 > command=java
-> while [ `echo $1 | egrep '<sup>-D|</sup>-m' | wc -l` != 0 ]; do
+> while [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do
 >         command="$command $1"
 >         shift
 > done
@@ -295,10 +296,10 @@ Replying to [comment:9 jason]:
 >   echo Jmol.jar not found
 >   exit
 > fi
-> $command -Xmx512m -jar $jarpath $`@`
+> $command -Xmx512m -jar $jarpath $@
 > 
 > 
-> }}}
+> ```
 > 
 > Is that file still needed?  I think it probably makes jmol work from the command line for us.
 
@@ -309,7 +310,7 @@ Replying to [comment:9 jason]:
 archive/issue_comments_086586.json:
 ```json
 {
-    "body": "I've make a new sagenb-0.8.p3.spkg file that includes Jonathan's changes above (as an applied mercurial patch), plus the new jmol.  So to test this, all a person should have to do is:\n\n\n```\nsage -f http://sage.math.washington.edu/home/jason/sagenb-0.8.p3.spkg\n```\n\n\nIt seems to work pretty well for me.  I wish the default was Medium Size instead of \"small\"",
+    "body": "I've make a new sagenb-0.8.p3.spkg file that includes Jonathan's changes above (as an applied mercurial patch), plus the new jmol.  So to test this, all a person should have to do is:\n\n```\nsage -f http://sage.math.washington.edu/home/jason/sagenb-0.8.p3.spkg\n```\n\nIt seems to work pretty well for me.  I wish the default was Medium Size instead of \"small\"",
     "created_at": "2010-06-14T19:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -320,11 +321,9 @@ archive/issue_comments_086586.json:
 
 I've make a new sagenb-0.8.p3.spkg file that includes Jonathan's changes above (as an applied mercurial patch), plus the new jmol.  So to test this, all a person should have to do is:
 
-
 ```
 sage -f http://sage.math.washington.edu/home/jason/sagenb-0.8.p3.spkg
 ```
-
 
 It seems to work pretty well for me.  I wish the default was Medium Size instead of "small"
 
@@ -357,7 +356,7 @@ Replying to [comment:11 jason]:
 archive/issue_comments_086588.json:
 ```json
 {
-    "body": "Replying to [comment:12 gutow]:\n> Let's take some votes on the default size.  \n\nI agree.",
+    "body": "Replying to [comment:12 gutow]:\n> Let's take some votes on the default size.  \n\n\nI agree.",
     "created_at": "2010-06-14T20:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -368,6 +367,7 @@ archive/issue_comments_086588.json:
 
 Replying to [comment:12 gutow]:
 > Let's take some votes on the default size.  
+
 
 I agree.
 
@@ -492,7 +492,7 @@ Jonathan
 archive/issue_comments_086594.json:
 ```json
 {
-    "body": "No, you won't - pesky \"someone else has already edited this page\"!!!\n\nJonathan,\n\nSweet.  Great work!\n\nSome comments upon a very small amount of testing (which is all I have time for right now).  I apologize for their telegraphic nature.\n\nPopup 3dviewer is great.\n\nFunctions tab did not immediately have something in it, I had to click \"request...\", which is nonintuitive.  I understand if that step is necessary, but the message could be better; as it is, the person using it wouldn't necessarily realize that this would give mesh etc. info for each object (nice to do it separately, so so so nice).\n\nColorpicker in Functions tab: awesome.  \n\nInitial size Small might be good for iPhone (if Jmol even works there?) but is a little on the small side for normal laptop/PC web browsing.   Can the browsing thing be detected for this?\n\nThere is an awful lot of space given to the info, not so much to the actual graphic.  Would it be possible to put that stuff below the image as opposed to on the right?  In fact, that stuff should not necessarily resize with the graphic...\n\nState is cool for those of us who might want to access it, but it should default (when clicked upon) to creating a slider or something, or \"click here for full\" or something like that.  Otherwise the potential for really upsetting work flow is there, it changes the window size so much.\n\nSleep/Wake works great, might be nice to CSS those words into something less \\texttt{}-ish.  Note that \"Arbitrarily resizable in own window Get static image to save\" looks like one command; maybe some <ul></ul> useful here?\n\nDidn't break any old worksheets, though they all have this new little Jmol double window now, which makes sense.\n\nThis may be unrelated, but the axes seem to be in the wrong spots, at least in \n\n```\nvar('y')\nP=plot3d(x^2+y^2,(x,-3,3),(y,-3,3))\nQ=plot3d(sin(x^2+y^2),(x,-3,3),(y,-3,3))\nshow(P+Q)\n```\n\n\nI did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  \n\nOne really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.  However\n\n```\nTypeError: Result of expression '(stateStr.match(re_modelinline))' [null] is not an object.\n```\n\noccurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).\n\nBut thank you!  This would be a big improvement.  Looking forward to being able to evaluate it properly - clearly a big change needs big testing.",
+    "body": "No, you won't - pesky \"someone else has already edited this page\"!!!\n\nJonathan,\n\nSweet.  Great work!\n\nSome comments upon a very small amount of testing (which is all I have time for right now).  I apologize for their telegraphic nature.\n\nPopup 3dviewer is great.\n\nFunctions tab did not immediately have something in it, I had to click \"request...\", which is nonintuitive.  I understand if that step is necessary, but the message could be better; as it is, the person using it wouldn't necessarily realize that this would give mesh etc. info for each object (nice to do it separately, so so so nice).\n\nColorpicker in Functions tab: awesome.  \n\nInitial size Small might be good for iPhone (if Jmol even works there?) but is a little on the small side for normal laptop/PC web browsing.   Can the browsing thing be detected for this?\n\nThere is an awful lot of space given to the info, not so much to the actual graphic.  Would it be possible to put that stuff below the image as opposed to on the right?  In fact, that stuff should not necessarily resize with the graphic...\n\nState is cool for those of us who might want to access it, but it should default (when clicked upon) to creating a slider or something, or \"click here for full\" or something like that.  Otherwise the potential for really upsetting work flow is there, it changes the window size so much.\n\nSleep/Wake works great, might be nice to CSS those words into something less \\texttt{}-ish.  Note that \"Arbitrarily resizable in own window Get static image to save\" looks like one command; maybe some <ul></ul> useful here?\n\nDidn't break any old worksheets, though they all have this new little Jmol double window now, which makes sense.\n\nThis may be unrelated, but the axes seem to be in the wrong spots, at least in \n\n```\nvar('y')\nP=plot3d(x^2+y^2,(x,-3,3),(y,-3,3))\nQ=plot3d(sin(x^2+y^2),(x,-3,3),(y,-3,3))\nshow(P+Q)\n```\n\nI did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  \n\nOne really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.  However\n\n```\nTypeError: Result of expression '(stateStr.match(re_modelinline))' [null] is not an object.\n```\noccurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).\n\nBut thank you!  This would be a big improvement.  Looking forward to being able to evaluate it properly - clearly a big change needs big testing.",
     "created_at": "2010-06-14T21:00:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -534,7 +534,6 @@ Q=plot3d(sin(x^2+y^2),(x,-3,3),(y,-3,3))
 show(P+Q)
 ```
 
-
 I did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  
 
 One really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.  However
@@ -542,7 +541,6 @@ One really interesting thing is this.  We had complaints about the snappiness of
 ```
 TypeError: Result of expression '(stateStr.match(re_modelinline))' [null] is not an object.
 ```
-
 occurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).
 
 But thank you!  This would be a big improvement.  Looking forward to being able to evaluate it properly - clearly a big change needs big testing.
@@ -554,7 +552,7 @@ But thank you!  This would be a big improvement.  Looking forward to being able 
 archive/issue_comments_086595.json:
 ```json
 {
-    "body": "Replying to [comment:19 kcrisman]:\n> Sweet.  Great work!\nGlad you like it.\n> \n> Some comments upon a very small amount of testing (which is all I have time for right now).  I apologize for their telegraphic nature.\n> \n> Popup 3dviewer is great.\n> \n> Functions tab did not immediately have something in it, I had to click \"request...\", which is nonintuitive.  I understand if that step is necessary, but the message could be better; as it is, the person using it wouldn't necessarily realize that this would give mesh etc. info for each object (nice to do it separately, so so so nice).\n> \nYou are correct that I could not originally get the information from Jmol on load because of timing issues.  I have an idea about this and will work on it a little.  In the meantime, I think you are correct that we need better instructions in this tab.\n> Colorpicker in Functions tab: awesome.  \nWe use it for other Jmol stuff, but it was originally inspired by the needs of SAGE.\n> \n> Initial size Small might be good for iPhone (if Jmol even works there?) but is a little on the small side for normal laptop/PC web browsing.   Can the browsing thing be detected for this?\n> \nI believe we can get the surrounding window size.  I will look into that.  Maybe it should default to no more than 405 of width or height, whichever is higher?\n\n> There is an awful lot of space given to the info, not so much to the actual graphic.  Would it be possible to put that stuff below the image as opposed to on the right?  In fact, that stuff should not necessarily resize with the graphic...\n> \nI can play with the table formatting a little. I don't see any problems off the top of my head with it not resizing. I think underneath is a problem as the applet can be big enough that the controls will be off screen.\n\n> State is cool for those of us who might want to access it, but it should default (when clicked upon) to creating a slider or something, or \"click here for full\" or something like that.  Otherwise the potential for really upsetting work flow is there, it changes the window size so much.\n> \nEventually I want it hidden.  But I think I can set it up to be scrolling....\n\n> Sleep/Wake works great, might be nice to CSS those words into something less \\texttt{}-ish.  Note that \"Arbitrarily resizable in own window Get static image to save\" looks like one command; maybe some <ul></ul> useful here?\n> \nThese are formatting issues that I can deal with easily.\n\n> Didn't break any old worksheets, though they all have this new little Jmol double window now, which makes sense.\n> \nGood!\n\n> This may be unrelated, but the axes seem to be in the wrong spots, at least in \n> {{{\n> var('y')\n> P=plot3d(x<sup>2+y</sup>2,(x,-3,3),(y,-3,3))\n> Q=plot3d(sin(x<sup>2+y</sup>2),(x,-3,3),(y,-3,3))\n> show(P+Q)\n> }}}\n> \nThat is likely to be a SAGE python bug as Jmol just draws lines where SAGE tells it to.  I will double check the parsing, but since the axes look correct for everything I've tried, I'm guessing something funny is passed to Jmol.\n\n> I did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  \n> \n> One really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.\n  \nThis is because I switched to using the incrementally loaded applet.  Thus only the parts needed are loaded.  This significantly reduces load time.\n\n\nHowever\n> {{{\n> TypeError: Result of expression '(stateStr.match(re_modelinline))' [null] is not an object.\n> }}}\n> occurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).\n> \nIs that completely reproducible?  I've seen it occasionally when javascript gets executed before the applets are completely loaded.  However, I've never seen any ill effects since things get reset later.  If it causes problems and you can pin it down, let me know.\n\nThanks for the initial testing.\n\nJonathan",
+    "body": "Replying to [comment:19 kcrisman]:\n> Sweet.  Great work!\n  \nGlad you like it.\n> \n> Some comments upon a very small amount of testing (which is all I have time for right now).  I apologize for their telegraphic nature.\n> \n> Popup 3dviewer is great.\n> \n> Functions tab did not immediately have something in it, I had to click \"request...\", which is nonintuitive.  I understand if that step is necessary, but the message could be better; as it is, the person using it wouldn't necessarily realize that this would give mesh etc. info for each object (nice to do it separately, so so so nice).\n> \n\nYou are correct that I could not originally get the information from Jmol on load because of timing issues.  I have an idea about this and will work on it a little.  In the meantime, I think you are correct that we need better instructions in this tab.\n> Colorpicker in Functions tab: awesome.  \n\nWe use it for other Jmol stuff, but it was originally inspired by the needs of SAGE.\n> \n> Initial size Small might be good for iPhone (if Jmol even works there?) but is a little on the small side for normal laptop/PC web browsing.   Can the browsing thing be detected for this?\n> \n\nI believe we can get the surrounding window size.  I will look into that.  Maybe it should default to no more than 405 of width or height, whichever is higher?\n\n> There is an awful lot of space given to the info, not so much to the actual graphic.  Would it be possible to put that stuff below the image as opposed to on the right?  In fact, that stuff should not necessarily resize with the graphic...\n> \n\nI can play with the table formatting a little. I don't see any problems off the top of my head with it not resizing. I think underneath is a problem as the applet can be big enough that the controls will be off screen.\n\n> State is cool for those of us who might want to access it, but it should default (when clicked upon) to creating a slider or something, or \"click here for full\" or something like that.  Otherwise the potential for really upsetting work flow is there, it changes the window size so much.\n> \n\nEventually I want it hidden.  But I think I can set it up to be scrolling....\n\n> Sleep/Wake works great, might be nice to CSS those words into something less \\texttt{}-ish.  Note that \"Arbitrarily resizable in own window Get static image to save\" looks like one command; maybe some <ul></ul> useful here?\n> \n\nThese are formatting issues that I can deal with easily.\n\n> Didn't break any old worksheets, though they all have this new little Jmol double window now, which makes sense.\n> \n\nGood!\n\n> This may be unrelated, but the axes seem to be in the wrong spots, at least in \n> \n> ```\n> var('y')\n> P=plot3d(x^2+y^2,(x,-3,3),(y,-3,3))\n> Q=plot3d(sin(x^2+y^2),(x,-3,3),(y,-3,3))\n> show(P+Q)\n> ```\n> \n\nThat is likely to be a SAGE python bug as Jmol just draws lines where SAGE tells it to.  I will double check the parsing, but since the axes look correct for everything I've tried, I'm guessing something funny is passed to Jmol.\n\n> I did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  \n> \n> One really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.\n\n  \nThis is because I switched to using the incrementally loaded applet.  Thus only the parts needed are loaded.  This significantly reduces load time.\n\n\nHowever\n> {{{\n> TypeError: Result of expression '(stateStr.match(re_modelinline))' [null] is not an object.\n> }}}\n> occurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).\n> \n\nIs that completely reproducible?  I've seen it occasionally when javascript gets executed before the applets are completely loaded.  However, I've never seen any ill effects since things get reset later.  If it causes problems and you can pin it down, let me know.\n\nThanks for the initial testing.\n\nJonathan",
     "created_at": "2010-06-14T21:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -565,6 +563,7 @@ archive/issue_comments_086595.json:
 
 Replying to [comment:19 kcrisman]:
 > Sweet.  Great work!
+  
 Glad you like it.
 > 
 > Some comments upon a very small amount of testing (which is all I have time for right now).  I apologize for their telegraphic nature.
@@ -573,43 +572,53 @@ Glad you like it.
 > 
 > Functions tab did not immediately have something in it, I had to click "request...", which is nonintuitive.  I understand if that step is necessary, but the message could be better; as it is, the person using it wouldn't necessarily realize that this would give mesh etc. info for each object (nice to do it separately, so so so nice).
 > 
+
 You are correct that I could not originally get the information from Jmol on load because of timing issues.  I have an idea about this and will work on it a little.  In the meantime, I think you are correct that we need better instructions in this tab.
 > Colorpicker in Functions tab: awesome.  
+
 We use it for other Jmol stuff, but it was originally inspired by the needs of SAGE.
 > 
 > Initial size Small might be good for iPhone (if Jmol even works there?) but is a little on the small side for normal laptop/PC web browsing.   Can the browsing thing be detected for this?
 > 
+
 I believe we can get the surrounding window size.  I will look into that.  Maybe it should default to no more than 405 of width or height, whichever is higher?
 
 > There is an awful lot of space given to the info, not so much to the actual graphic.  Would it be possible to put that stuff below the image as opposed to on the right?  In fact, that stuff should not necessarily resize with the graphic...
 > 
+
 I can play with the table formatting a little. I don't see any problems off the top of my head with it not resizing. I think underneath is a problem as the applet can be big enough that the controls will be off screen.
 
 > State is cool for those of us who might want to access it, but it should default (when clicked upon) to creating a slider or something, or "click here for full" or something like that.  Otherwise the potential for really upsetting work flow is there, it changes the window size so much.
 > 
+
 Eventually I want it hidden.  But I think I can set it up to be scrolling....
 
 > Sleep/Wake works great, might be nice to CSS those words into something less \texttt{}-ish.  Note that "Arbitrarily resizable in own window Get static image to save" looks like one command; maybe some <ul></ul> useful here?
 > 
+
 These are formatting issues that I can deal with easily.
 
 > Didn't break any old worksheets, though they all have this new little Jmol double window now, which makes sense.
 > 
+
 Good!
 
 > This may be unrelated, but the axes seem to be in the wrong spots, at least in 
-> {{{
-> var('y')
-> P=plot3d(x<sup>2+y</sup>2,(x,-3,3),(y,-3,3))
-> Q=plot3d(sin(x<sup>2+y</sup>2),(x,-3,3),(y,-3,3))
-> show(P+Q)
-> }}}
 > 
+> ```
+> var('y')
+> P=plot3d(x^2+y^2,(x,-3,3),(y,-3,3))
+> Q=plot3d(sin(x^2+y^2),(x,-3,3),(y,-3,3))
+> show(P+Q)
+> ```
+> 
+
 That is likely to be a SAGE python bug as Jmol just draws lines where SAGE tells it to.  I will double check the parsing, but since the axes look correct for everything I've tried, I'm guessing something funny is passed to Jmol.
 
 > I did *not* get to test having billions of applets open at the same time, unfortunately, but will be happy to do so if no one else can over the next week or two.  
 > 
 > One really interesting thing is this.  We had complaints about the snappiness of 3D interacts recently, but now I get almost instantaneous recomputation with 'small', which is great.
+
   
 This is because I switched to using the incrementally loaded applet.  Thus only the parts needed are loaded.  This significantly reduces load time.
 
@@ -620,6 +629,7 @@ However
 > }}}
 > occurs if I change the size in an interact, and then move the slider.  Obviously, other things don't stay the same with an interact - say if I change one function to green, it goes back to blue after moving the slider, but there shouldn't be the error message (ideally).
 > 
+
 Is that completely reproducible?  I've seen it occasionally when javascript gets executed before the applets are completely loaded.  However, I've never seen any ill effects since things get reset later.  If it causes problems and you can pin it down, let me know.
 
 Thanks for the initial testing.
@@ -633,7 +643,7 @@ Jonathan
 archive/issue_comments_086596.json:
 ```json
 {
-    "body": "I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n\n```\nsage: point3d([0,0,1])\n```\n\ndoesn't do anything now.  No applet, etc.",
+    "body": "I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n\n```\nsage: point3d([0,0,1])\n```\ndoesn't do anything now.  No applet, etc.",
     "created_at": "2010-06-15T16:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -647,7 +657,6 @@ I want to point out that apparently Jmol won't load from the command line now.  
 ```
 sage: point3d([0,0,1])
 ```
-
 doesn't do anything now.  No applet, etc.
 
 
@@ -657,7 +666,7 @@ doesn't do anything now.  No applet, etc.
 archive/issue_comments_086597.json:
 ```json
 {
-    "body": "Please check to see if the following two files are in the directory\nsage/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol\n\nJmol.jar & Jmol (a shell script).\n\nIf they are not then try downloading the .spkg again to see if that fixes it.\n\nIf the files are there then there is something we don't understand or the path in the Jmol shell script is wrong.\n\nJonathan\n\nReplying to [comment:23 kcrisman]:\n> I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n> {{{\n> sage: point3d([0,0,1])\n> }}}\n> doesn't do anything now.  No applet, etc.",
+    "body": "Please check to see if the following two files are in the directory\nsage/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol\n\nJmol.jar & Jmol (a shell script).\n\nIf they are not then try downloading the .spkg again to see if that fixes it.\n\nIf the files are there then there is something we don't understand or the path in the Jmol shell script is wrong.\n\nJonathan\n\nReplying to [comment:23 kcrisman]:\n> I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n> \n> ```\n> sage: point3d([0,0,1])\n> ```\n> doesn't do anything now.  No applet, etc.",
     "created_at": "2010-06-15T16:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -679,9 +688,10 @@ Jonathan
 
 Replying to [comment:23 kcrisman]:
 > I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like
-> {{{
+> 
+> ```
 > sage: point3d([0,0,1])
-> }}}
+> ```
 > doesn't do anything now.  No applet, etc.
 
 
@@ -691,7 +701,7 @@ Replying to [comment:23 kcrisman]:
 archive/issue_comments_086598.json:
 ```json
 {
-    "body": "Replying to [comment:24 gutow]:\n> Please check to see if the following two files are in the directory\n> sage/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol\n> \n> Jmol.jar & Jmol (a shell script).\n> \nYup, both there (well, Jmol is jmol, but would that make the difference?).\n> If the files are there then there is something we don't understand or the path in the Jmol shell script is wrong.\nI want to emphasize things worked fine from the notebook.\n> Replying to [comment:23 kcrisman]:\n> > I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n> > {{{\n> > sage: point3d([0,0,1])\n> > }}}\n> > doesn't do anything now.  No applet, etc.",
+    "body": "Replying to [comment:24 gutow]:\n> Please check to see if the following two files are in the directory\n> sage/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol\n> \n> Jmol.jar & Jmol (a shell script).\n> \n\nYup, both there (well, Jmol is jmol, but would that make the difference?).\n> If the files are there then there is something we don't understand or the path in the Jmol shell script is wrong.\n\nI want to emphasize things worked fine from the notebook.\n> Replying to [comment:23 kcrisman]:\n> > I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like\n> > \n> > ```\n> > sage: point3d([0,0,1])\n> > ```\n> > doesn't do anything now.  No applet, etc.",
     "created_at": "2010-06-15T17:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -706,14 +716,17 @@ Replying to [comment:24 gutow]:
 > 
 > Jmol.jar & Jmol (a shell script).
 > 
+
 Yup, both there (well, Jmol is jmol, but would that make the difference?).
 > If the files are there then there is something we don't understand or the path in the Jmol shell script is wrong.
+
 I want to emphasize things worked fine from the notebook.
 > Replying to [comment:23 kcrisman]:
 > > I want to point out that apparently Jmol won't load from the command line now.  I don't have time to revert the spkg right now, but at any rate things like
-> > {{{
+> > 
+> > ```
 > > sage: point3d([0,0,1])
-> > }}}
+> > ```
 > > doesn't do anything now.  No applet, etc.
 
 
@@ -855,7 +868,7 @@ Replying to [comment:29 gutow]:
 archive/issue_comments_086604.json:
 ```json
 {
-    "body": "Server is back up.\nReplying to [comment:30 gutow]:\n> June 28, 2010---My server is down because of a power outage.  Hopefully, it wasn't killed and I will have it up again tomorrow.\n>",
+    "body": "Server is back up.\nReplying to [comment:30 gutow]:\n> June 28, 2010---My server is down because of a power outage.  Hopefully, it wasn't killed and I will have it up again tomorrow.\n\n>",
     "created_at": "2010-06-30T15:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -867,6 +880,7 @@ archive/issue_comments_086604.json:
 Server is back up.
 Replying to [comment:30 gutow]:
 > June 28, 2010---My server is down because of a power outage.  Hopefully, it wasn't killed and I will have it up again tomorrow.
+
 >
 
 
@@ -1040,7 +1054,7 @@ Changing assignee from jason, was to @gutow.
 archive/issue_comments_086614.json:
 ```json
 {
-    "body": "I tried installing this on a recent alpha of Sage:\n\n```\n\nUpdating sagenb-0.8.10-py2.6.egg\nremoving old jmol_lib.js and notebook_lib.js\u2026\nNew jmol_lib.js installed.\nNew notebook_lib.js installed.\nremoving Jmol*.jar and support files\u2026\ninstalling Jmol.jar and support files\u2026\nNew Jmol*.jar and support files installed.\n\nreal\t0m0.335s\nuser\t0m0.012s\nsys\t0m0.075s\nSuccessfully installed Jmol_for_SageNoteBook-1.1.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing Jmol_for_SageNoteBook-1.1.1.spkg\n```\n\nSo all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?",
+    "body": "I tried installing this on a recent alpha of Sage:\n\n```\n\nUpdating sagenb-0.8.10-py2.6.egg\nremoving old jmol_lib.js and notebook_lib.js\u2026\nNew jmol_lib.js installed.\nNew notebook_lib.js installed.\nremoving Jmol*.jar and support files\u2026\ninstalling Jmol.jar and support files\u2026\nNew Jmol*.jar and support files installed.\n\nreal\t0m0.335s\nuser\t0m0.012s\nsys\t0m0.075s\nSuccessfully installed Jmol_for_SageNoteBook-1.1.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing Jmol_for_SageNoteBook-1.1.1.spkg\n```\nSo all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?",
     "created_at": "2011-01-23T02:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1070,7 +1084,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing Jmol_for_SageNoteBook-1.1.1.spkg
 ```
-
 So all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?
 
 
@@ -1080,7 +1093,7 @@ So all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactl
 archive/issue_comments_086615.json:
 ```json
 {
-    "body": "You beat me to finishing the update to the trac ticket.  Everything has been moved to the notebook google site.  This will not work with the latest release as the location of the notebook code has changed.  This .spkg will not properly update 4.6.1.\n\nSee http://code.google.com/p/sagenb/issues/detail?id=1  for details of what works with 4.6.1.  I will now finish updating this trac.\n\nSorry,\nJonathan\nReplying to [comment:42 kcrisman]:\n> I tried installing this on a recent alpha of Sage:\n> {{{\n> \n> Updating sagenb-0.8.10-py2.6.egg\n> removing old jmol_lib.js and notebook_lib.js\u2026\n> New jmol_lib.js installed.\n> New notebook_lib.js installed.\n> removing Jmol*.jar and support files\u2026\n> installing Jmol.jar and support files\u2026\n> New Jmol*.jar and support files installed.\n> \n> real\t0m0.335s\n> user\t0m0.012s\n> sys\t0m0.075s\n> Successfully installed Jmol_for_SageNoteBook-1.1.1\n> Now cleaning up tmp files.\n> Making Sage/Python scripts relocatable...\n> Making script relocatable\n> Finished installing Jmol_for_SageNoteBook-1.1.1.spkg\n> }}}\n> So all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?",
+    "body": "You beat me to finishing the update to the trac ticket.  Everything has been moved to the notebook google site.  This will not work with the latest release as the location of the notebook code has changed.  This .spkg will not properly update 4.6.1.\n\nSee http://code.google.com/p/sagenb/issues/detail?id=1  for details of what works with 4.6.1.  I will now finish updating this trac.\n\nSorry,\nJonathan\nReplying to [comment:42 kcrisman]:\n> I tried installing this on a recent alpha of Sage:\n> \n> ```\n> \n> Updating sagenb-0.8.10-py2.6.egg\n> removing old jmol_lib.js and notebook_lib.js\u2026\n> New jmol_lib.js installed.\n> New notebook_lib.js installed.\n> removing Jmol*.jar and support files\u2026\n> installing Jmol.jar and support files\u2026\n> New Jmol*.jar and support files installed.\n> \n> real\t0m0.335s\n> user\t0m0.012s\n> sys\t0m0.075s\n> Successfully installed Jmol_for_SageNoteBook-1.1.1\n> Now cleaning up tmp files.\n> Making Sage/Python scripts relocatable...\n> Making script relocatable\n> Finished installing Jmol_for_SageNoteBook-1.1.1.spkg\n> ```\n> So all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?",
     "created_at": "2011-01-23T02:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1097,7 +1110,8 @@ Sorry,
 Jonathan
 Replying to [comment:42 kcrisman]:
 > I tried installing this on a recent alpha of Sage:
-> {{{
+> 
+> ```
 > 
 > Updating sagenb-0.8.10-py2.6.egg
 > removing old jmol_lib.js and notebook_lib.js…
@@ -1115,7 +1129,7 @@ Replying to [comment:42 kcrisman]:
 > Making Sage/Python scripts relocatable...
 > Making script relocatable
 > Finished installing Jmol_for_SageNoteBook-1.1.1.spkg
-> }}}
+> ```
 > So all seemed well.  But after ./sage -b, the Jmol applet now seems to be exactly as it was originally.  Did I miss something I was supposed to do other than ./sage -f this spkg?
 
 
@@ -1147,7 +1161,7 @@ But this will make it quite easy to review, at any rate, and hopefully that is j
 archive/issue_comments_086617.json:
 ```json
 {
-    "body": "Replying to [comment:46 kcrisman]:\n> Thanks for the clarification.  I have to say, since your ticket is the only listed 'issue' on that code.google.com site, I am not sure how useful that will be for people to help.  Of course, I've been against separating the sagenb out that much, because it becomes too easy to get out of the loop.\n> \nI sort of wondered about that too, but since that is where the notebook is now hosted, I thought I should move this stuff there.\n\n> I have to say, though it now works, I'm still a little mystified, because the 'click to own 3d window' just gives a blank window (the Jmol doesn't appear, except brief Jmol logo), and if you click 'wake up' when it's already awake, it disappears too.  I wonder if they are related.  \n> \nMight be.  I can't reproduce it however on 4.6.1.  If I click the \"Arbitrarily resizable in own window\" it works fine from my server.  (Safari MacOSX, and FireFox with Linux.  There is a problem for logged in users with the way the notebook passes headers for Firefox on MacOS--this is long standing and probably part of Twisted.)  If you can send me more specifics I can try to track this down.  \n> But this will make it quite easy to review, at any rate, and hopefully that is just something silly I did.  This was with 4.6.2.alpha0.\nThanks for looking at this.\n\nJonathan",
+    "body": "Replying to [comment:46 kcrisman]:\n> Thanks for the clarification.  I have to say, since your ticket is the only listed 'issue' on that code.google.com site, I am not sure how useful that will be for people to help.  Of course, I've been against separating the sagenb out that much, because it becomes too easy to get out of the loop.\n> \n\nI sort of wondered about that too, but since that is where the notebook is now hosted, I thought I should move this stuff there.\n\n> I have to say, though it now works, I'm still a little mystified, because the 'click to own 3d window' just gives a blank window (the Jmol doesn't appear, except brief Jmol logo), and if you click 'wake up' when it's already awake, it disappears too.  I wonder if they are related.  \n> \n\nMight be.  I can't reproduce it however on 4.6.1.  If I click the \"Arbitrarily resizable in own window\" it works fine from my server.  (Safari MacOSX, and FireFox with Linux.  There is a problem for logged in users with the way the notebook passes headers for Firefox on MacOS--this is long standing and probably part of Twisted.)  If you can send me more specifics I can try to track this down.  \n> But this will make it quite easy to review, at any rate, and hopefully that is just something silly I did.  This was with 4.6.2.alpha0.\n\nThanks for looking at this.\n\nJonathan",
     "created_at": "2011-01-23T02:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1159,12 +1173,15 @@ archive/issue_comments_086617.json:
 Replying to [comment:46 kcrisman]:
 > Thanks for the clarification.  I have to say, since your ticket is the only listed 'issue' on that code.google.com site, I am not sure how useful that will be for people to help.  Of course, I've been against separating the sagenb out that much, because it becomes too easy to get out of the loop.
 > 
+
 I sort of wondered about that too, but since that is where the notebook is now hosted, I thought I should move this stuff there.
 
 > I have to say, though it now works, I'm still a little mystified, because the 'click to own 3d window' just gives a blank window (the Jmol doesn't appear, except brief Jmol logo), and if you click 'wake up' when it's already awake, it disappears too.  I wonder if they are related.  
 > 
+
 Might be.  I can't reproduce it however on 4.6.1.  If I click the "Arbitrarily resizable in own window" it works fine from my server.  (Safari MacOSX, and FireFox with Linux.  There is a problem for logged in users with the way the notebook passes headers for Firefox on MacOS--this is long standing and probably part of Twisted.)  If you can send me more specifics I can try to track this down.  
 > But this will make it quite easy to review, at any rate, and hopefully that is just something silly I did.  This was with 4.6.2.alpha0.
+
 Thanks for looking at this.
 
 Jonathan
@@ -1296,7 +1313,7 @@ For review purposes only!  Diffs with previous files, apparently.
 archive/issue_comments_086623.json:
 ```json
 {
-    "body": "Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by @kcrisman created at 2011-02-22 17:52:38\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\nNot true, ignore this statement.",
+    "body": "Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by @kcrisman created at 2011-02-22 17:52:38\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\n\nNot true, ignore this statement.",
     "created_at": "2011-02-22T17:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1309,6 +1326,7 @@ Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/som
 
 >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.
 
+
 Not true, ignore this statement.
 
 
@@ -1318,7 +1336,7 @@ Not true, ignore this statement.
 archive/issue_comments_086624.json:
 ```json
 {
-    "body": "So is there anything you guys need me to do.  Did I miss anything that isn't related to getting stuff into mercurial?\nJonathan\nReplying to [comment:54 kcrisman]:\n> >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n> \n> Not true, ignore this statement.",
+    "body": "So is there anything you guys need me to do.  Did I miss anything that isn't related to getting stuff into mercurial?\nJonathan\nReplying to [comment:54 kcrisman]:\n> >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\n> \n> Not true, ignore this statement.",
     "created_at": "2011-02-22T18:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1331,6 +1349,7 @@ So is there anything you guys need me to do.  Did I miss anything that isn't rel
 Jonathan
 Replying to [comment:54 kcrisman]:
 > >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.
+
 > 
 > Not true, ignore this statement.
 
@@ -1341,7 +1360,7 @@ Replying to [comment:54 kcrisman]:
 archive/issue_comments_086625.json:
 ```json
 {
-    "body": "Replying to [comment:55 gutow]:\n> So is there anything you guys need me to do.  Did I miss anything that isn't related to getting stuff into mercurial?\n> Jonathan\n\nWell, of course it would be best if you could update the sagenb package.  But if you aren't familiar with HG, you shouldn't necessarily have to do this.  \n\nThe problem is that after sagenb became its own spkg, for a while there was a lot of activity and it was easy to update, but now the sagenb folks are much more dormant (with respect to sagenb, not in general) so one has to do this on one's own.  I hope to get some help making this spkg, though, and get people to test it/test it myself.",
+    "body": "Replying to [comment:55 gutow]:\n> So is there anything you guys need me to do.  Did I miss anything that isn't related to getting stuff into mercurial?\n> Jonathan\n\n\nWell, of course it would be best if you could update the sagenb package.  But if you aren't familiar with HG, you shouldn't necessarily have to do this.  \n\nThe problem is that after sagenb became its own spkg, for a while there was a lot of activity and it was easy to update, but now the sagenb folks are much more dormant (with respect to sagenb, not in general) so one has to do this on one's own.  I hope to get some help making this spkg, though, and get people to test it/test it myself.",
     "created_at": "2011-02-22T20:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1354,6 +1373,7 @@ Replying to [comment:55 gutow]:
 > So is there anything you guys need me to do.  Did I miss anything that isn't related to getting stuff into mercurial?
 > Jonathan
 
+
 Well, of course it would be best if you could update the sagenb package.  But if you aren't familiar with HG, you shouldn't necessarily have to do this.  
 
 The problem is that after sagenb became its own spkg, for a while there was a lot of activity and it was easy to update, but now the sagenb folks are much more dormant (with respect to sagenb, not in general) so one has to do this on one's own.  I hope to get some help making this spkg, though, and get people to test it/test it myself.
@@ -1365,7 +1385,7 @@ The problem is that after sagenb became its own spkg, for a while there was a lo
 archive/issue_comments_086626.json:
 ```json
 {
-    "body": "Just FYI, from the SPKG.txt file in devel/sagenb, here are the instructions for making a new sagenb spkg:\n\n\n```\n * To release a new spkg, check that\n\n   * All changes are committed.\n   * .hgignore and MANIFEST.in are current.\n   * The patch queue is clear.\n   * The notebook runs.\n   * The doctests pass: sage -t -sagenb\n   * Test for ability to install without internet connection.\n     Any dependencies that must be downloaded can be added in ./spkg-dist and in\nserted\n     in setup.py. Dependencies of dependencies need not be put in setup.py, but\n     need to be put in ./spkg-dist.\n   * The Selenium tests pass (optional, for now).\n\n   Then,\n\n   * Update the version in setup.py and commit this change.\n   * Run spkg-dist.\n   * Install and test the new spkg: sage -f dist/sagenb-*.spkg\n```\n",
+    "body": "Just FYI, from the SPKG.txt file in devel/sagenb, here are the instructions for making a new sagenb spkg:\n\n```\n * To release a new spkg, check that\n\n   * All changes are committed.\n   * .hgignore and MANIFEST.in are current.\n   * The patch queue is clear.\n   * The notebook runs.\n   * The doctests pass: sage -t -sagenb\n   * Test for ability to install without internet connection.\n     Any dependencies that must be downloaded can be added in ./spkg-dist and in\nserted\n     in setup.py. Dependencies of dependencies need not be put in setup.py, but\n     need to be put in ./spkg-dist.\n   * The Selenium tests pass (optional, for now).\n\n   Then,\n\n   * Update the version in setup.py and commit this change.\n   * Run spkg-dist.\n   * Install and test the new spkg: sage -f dist/sagenb-*.spkg\n```",
     "created_at": "2011-02-22T20:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1375,7 +1395,6 @@ archive/issue_comments_086626.json:
 ```
 
 Just FYI, from the SPKG.txt file in devel/sagenb, here are the instructions for making a new sagenb spkg:
-
 
 ```
  * To release a new spkg, check that
@@ -1398,7 +1417,6 @@ serted
    * Run spkg-dist.
    * Install and test the new spkg: sage -f dist/sagenb-*.spkg
 ```
-
 
 
 
@@ -1425,7 +1443,7 @@ Thanks, Jason.  Just to confirm, one wouldn't need to use `./sage -pkg` to do th
 archive/issue_comments_086628.json:
 ```json
 {
-    "body": "Replying to [comment:58 kcrisman]:\n> Thanks, Jason.  Just to confirm, one wouldn't need to use `./sage -pkg` to do this, just run `./path/to/it/spkg-dist`?  Also, I have no idea how to run Selenium tests!  Though this shouldn't really affect them, as there would be no changes to the notebook per se.\nAnswered my own question.  From `spkg-dist`:\n\n```\n# recent).  This script *does* need a sage executable to be in the PATH\n# because we need to run \"sage -pkg\" below and also the \"sdist\" script\n# runs \"sage -python\" and \"sage -hg\". -- Jeroen Demeyer\n```\n",
+    "body": "Replying to [comment:58 kcrisman]:\n> Thanks, Jason.  Just to confirm, one wouldn't need to use `./sage -pkg` to do this, just run `./path/to/it/spkg-dist`?  Also, I have no idea how to run Selenium tests!  Though this shouldn't really affect them, as there would be no changes to the notebook per se.\n\nAnswered my own question.  From `spkg-dist`:\n\n```\n# recent).  This script *does* need a sage executable to be in the PATH\n# because we need to run \"sage -pkg\" below and also the \"sdist\" script\n# runs \"sage -python\" and \"sage -hg\". -- Jeroen Demeyer\n```",
     "created_at": "2011-02-22T21:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1436,6 +1454,7 @@ archive/issue_comments_086628.json:
 
 Replying to [comment:58 kcrisman]:
 > Thanks, Jason.  Just to confirm, one wouldn't need to use `./sage -pkg` to do this, just run `./path/to/it/spkg-dist`?  Also, I have no idea how to run Selenium tests!  Though this shouldn't really affect them, as there would be no changes to the notebook per se.
+
 Answered my own question.  From `spkg-dist`:
 
 ```
@@ -1443,7 +1462,6 @@ Answered my own question.  From `spkg-dist`:
 # because we need to run "sage -pkg" below and also the "sdist" script
 # runs "sage -python" and "sage -hg". -- Jeroen Demeyer
 ```
-
 
 
 
@@ -1480,7 +1498,7 @@ Some usage comments from playing with it again:
 archive/issue_comments_086630.json:
 ```json
 {
-    "body": "I *love* the mesh feature.  It seems that sometimes I get artifacts in it, though.  For example, this code:\n\n```\nf(x,y)=x*cos(y)\nplot3d(f,(x,-3,3),(y,-3,3))\n```\n\nproduces an image like the attached \"index.jpg\" image (see attached files above).",
+    "body": "I *love* the mesh feature.  It seems that sometimes I get artifacts in it, though.  For example, this code:\n\n```\nf(x,y)=x*cos(y)\nplot3d(f,(x,-3,3),(y,-3,3))\n```\nproduces an image like the attached \"index.jpg\" image (see attached files above).",
     "created_at": "2011-02-26T08:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1495,7 +1513,6 @@ I *love* the mesh feature.  It seems that sometimes I get artifacts in it, thoug
 f(x,y)=x*cos(y)
 plot3d(f,(x,-3,3),(y,-3,3))
 ```
-
 produces an image like the attached "index.jpg" image (see attached files above).
 
 
@@ -1525,7 +1542,7 @@ Those little white sparkles (artifacts in the mesh) seem to only happen at the i
 archive/issue_comments_086632.json:
 ```json
 {
-    "body": "Replying to [comment:61 jason]:\nJason,\n\nThanks for all the comments.  I am still running a time deficit at the moment.  So probably cannot address any of these immediately.  Which are blockers?  If I know what to start on I may be able to squeeze a little time in between reviews and grading this week.\n\n1)I think I know how to fix the issue with clicking links with sleeping applets.\n2) The firefox problem cannot be fixed until the notebook passes information properly.  A number of things work poorly in FF on MacOS because the twisted server adds some html header information to files that are not html.  I've reported this as a bug long ago.  I don't know enough about the server to fix it easily.\n3) Except for putting things in the right click menu most of your interface requests are doable.  How about a button that changes between an advanced options interface and a minimalist interface, rather than making them part of the right click menu?\nJonathan\n> Some usage comments from playing with it again:\n> \n>   * First, this is awesome!  Thanks for the huge amount of work you've put into it.\n>   * Under the Functions tab, clicking the link to get info from a sleeping JMOL gives an error and doesn't retrieve info\n>   * In firefox 3.6.13, OSX 10.6.6, changing the size of the applet to a smaller size seems to not recenter the image, so I end up with a smaller window that shows a corner of the object.  Sometimes changing the sizes back and forth several times leads to the object disappearing from the visible view.\n>   * (this may be hard)---it would be nice if there was some way for the java applet to gauge how much memory was left in the java system, so that instead of drawing a hard line of 5 awake applets, the applets could determine if they had enough memory to display, and if not, ask for another applet to go to sleep.\n>   * A lot of these next suggestions are for minimizing the interface the user has to interact with.  The purpose for this is to avoid confusing most users with a huge array of choices and options that they need to make.  The idea is to make most of these choices behind a right-click menu (if possible) so they are available to advanced users, but are not taking up space for most users.\n>   * When an applet is sleeping, it says \"Sleeping...\".  Maybe make that text instead say \"Click to interact\" and make it a link that is the same link as the \"Wake this 3-D view\" link is.\n>   * Is there a way to put the \"Click to Sleep this 3-D view\" and the \"Help for Jmol 3-D viewer\" in the right-click menu for the applet?\n>   * Can we make the display sizes and static image to save also links inside the jmol applet right-click menu?\n>   * Is the State box likely to be useful to lots of people?  If it is mainly a debug or developer thing, can we make it also a right-click menu thing?",
+    "body": "Replying to [comment:61 jason]:\nJason,\n\nThanks for all the comments.  I am still running a time deficit at the moment.  So probably cannot address any of these immediately.  Which are blockers?  If I know what to start on I may be able to squeeze a little time in between reviews and grading this week.\n\n1)I think I know how to fix the issue with clicking links with sleeping applets.\n2) The firefox problem cannot be fixed until the notebook passes information properly.  A number of things work poorly in FF on MacOS because the twisted server adds some html header information to files that are not html.  I've reported this as a bug long ago.  I don't know enough about the server to fix it easily.\n3) Except for putting things in the right click menu most of your interface requests are doable.  How about a button that changes between an advanced options interface and a minimalist interface, rather than making them part of the right click menu?\nJonathan\n> Some usage comments from playing with it again:\n> \n> * First, this is awesome!  Thanks for the huge amount of work you've put into it.\n> * Under the Functions tab, clicking the link to get info from a sleeping JMOL gives an error and doesn't retrieve info\n> * In firefox 3.6.13, OSX 10.6.6, changing the size of the applet to a smaller size seems to not recenter the image, so I end up with a smaller window that shows a corner of the object.  Sometimes changing the sizes back and forth several times leads to the object disappearing from the visible view.\n> * (this may be hard)---it would be nice if there was some way for the java applet to gauge how much memory was left in the java system, so that instead of drawing a hard line of 5 awake applets, the applets could determine if they had enough memory to display, and if not, ask for another applet to go to sleep.\n> * A lot of these next suggestions are for minimizing the interface the user has to interact with.  The purpose for this is to avoid confusing most users with a huge array of choices and options that they need to make.  The idea is to make most of these choices behind a right-click menu (if possible) so they are available to advanced users, but are not taking up space for most users.\n> * When an applet is sleeping, it says \"Sleeping...\".  Maybe make that text instead say \"Click to interact\" and make it a link that is the same link as the \"Wake this 3-D view\" link is.\n> * Is there a way to put the \"Click to Sleep this 3-D view\" and the \"Help for Jmol 3-D viewer\" in the right-click menu for the applet?\n> * Can we make the display sizes and static image to save also links inside the jmol applet right-click menu?\n> * Is the State box likely to be useful to lots of people?  If it is mainly a debug or developer thing, can we make it also a right-click menu thing?",
     "created_at": "2011-02-26T18:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1545,15 +1562,15 @@ Thanks for all the comments.  I am still running a time deficit at the moment.  
 Jonathan
 > Some usage comments from playing with it again:
 > 
->   * First, this is awesome!  Thanks for the huge amount of work you've put into it.
->   * Under the Functions tab, clicking the link to get info from a sleeping JMOL gives an error and doesn't retrieve info
->   * In firefox 3.6.13, OSX 10.6.6, changing the size of the applet to a smaller size seems to not recenter the image, so I end up with a smaller window that shows a corner of the object.  Sometimes changing the sizes back and forth several times leads to the object disappearing from the visible view.
->   * (this may be hard)---it would be nice if there was some way for the java applet to gauge how much memory was left in the java system, so that instead of drawing a hard line of 5 awake applets, the applets could determine if they had enough memory to display, and if not, ask for another applet to go to sleep.
->   * A lot of these next suggestions are for minimizing the interface the user has to interact with.  The purpose for this is to avoid confusing most users with a huge array of choices and options that they need to make.  The idea is to make most of these choices behind a right-click menu (if possible) so they are available to advanced users, but are not taking up space for most users.
->   * When an applet is sleeping, it says "Sleeping...".  Maybe make that text instead say "Click to interact" and make it a link that is the same link as the "Wake this 3-D view" link is.
->   * Is there a way to put the "Click to Sleep this 3-D view" and the "Help for Jmol 3-D viewer" in the right-click menu for the applet?
->   * Can we make the display sizes and static image to save also links inside the jmol applet right-click menu?
->   * Is the State box likely to be useful to lots of people?  If it is mainly a debug or developer thing, can we make it also a right-click menu thing?
+> * First, this is awesome!  Thanks for the huge amount of work you've put into it.
+> * Under the Functions tab, clicking the link to get info from a sleeping JMOL gives an error and doesn't retrieve info
+> * In firefox 3.6.13, OSX 10.6.6, changing the size of the applet to a smaller size seems to not recenter the image, so I end up with a smaller window that shows a corner of the object.  Sometimes changing the sizes back and forth several times leads to the object disappearing from the visible view.
+> * (this may be hard)---it would be nice if there was some way for the java applet to gauge how much memory was left in the java system, so that instead of drawing a hard line of 5 awake applets, the applets could determine if they had enough memory to display, and if not, ask for another applet to go to sleep.
+> * A lot of these next suggestions are for minimizing the interface the user has to interact with.  The purpose for this is to avoid confusing most users with a huge array of choices and options that they need to make.  The idea is to make most of these choices behind a right-click menu (if possible) so they are available to advanced users, but are not taking up space for most users.
+> * When an applet is sleeping, it says "Sleeping...".  Maybe make that text instead say "Click to interact" and make it a link that is the same link as the "Wake this 3-D view" link is.
+> * Is there a way to put the "Click to Sleep this 3-D view" and the "Help for Jmol 3-D viewer" in the right-click menu for the applet?
+> * Can we make the display sizes and static image to save also links inside the jmol applet right-click menu?
+> * Is the State box likely to be useful to lots of people?  If it is mainly a debug or developer thing, can we make it also a right-click menu thing?
 
 
 
@@ -1562,7 +1579,7 @@ Jonathan
 archive/issue_comments_086633.json:
 ```json
 {
-    "body": "Replying to [comment:63 jason]:\n> Those little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.\nI'll have to look into this.  That is a Jmol rendering issue.  A while back I know Bob Hanson tried to produce another way of making messes.  I haven't been able to get it to work reliably.  I'll put my head together with him, but this may take a while to fix.",
+    "body": "Replying to [comment:63 jason]:\n> Those little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.\n\nI'll have to look into this.  That is a Jmol rendering issue.  A while back I know Bob Hanson tried to produce another way of making messes.  I haven't been able to get it to work reliably.  I'll put my head together with him, but this may take a while to fix.",
     "created_at": "2011-02-26T18:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1573,6 +1590,7 @@ archive/issue_comments_086633.json:
 
 Replying to [comment:63 jason]:
 > Those little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.
+
 I'll have to look into this.  That is a Jmol rendering issue.  A while back I know Bob Hanson tried to produce another way of making messes.  I haven't been able to get it to work reliably.  I'll put my head together with him, but this may take a while to fix.
 
 
@@ -1669,7 +1687,7 @@ Also still need
 archive/issue_comments_086638.json:
 ```json
 {
-    "body": "Replying to [comment:69 kcrisman]:\n> Just a comment to Jonathan - William changed the description to have both sets of spkgs be 1.1.4, but I think that only one of them was supposed to be (to enable testing for sage > or < 4.5).  If that's so, please change the instructions back.\n\nYou are correct.  I will change it back.  This is because I don't have an old install to test on and the package locations changed for the notebook.\n  \n> \n> Also still need\n> \n>  * testing on Linux?  Or maybe Jason did that\nI developed this on Linux, so this will work on Linux installs with a JVM that Jmol works in.  We only test against the Oracle/Sun JVM.\n\n>  * at least SOME testing with a VM, if possible before release (?)\n>  * A new sagenb package, though that wouldn't be needed for positive review of this, it would just be needed for actually incorporating it :)",
+    "body": "Replying to [comment:69 kcrisman]:\n> Just a comment to Jonathan - William changed the description to have both sets of spkgs be 1.1.4, but I think that only one of them was supposed to be (to enable testing for sage > or < 4.5).  If that's so, please change the instructions back.\n\n\nYou are correct.  I will change it back.  This is because I don't have an old install to test on and the package locations changed for the notebook.\n  \n> \n> Also still need\n> \n> * testing on Linux?  Or maybe Jason did that\n\nI developed this on Linux, so this will work on Linux installs with a JVM that Jmol works in.  We only test against the Oracle/Sun JVM.\n\n>  * at least SOME testing with a VM, if possible before release (?)\n>  * A new sagenb package, though that wouldn't be needed for positive review of this, it would just be needed for actually incorporating it :)",
     "created_at": "2011-02-27T21:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1681,12 +1699,14 @@ archive/issue_comments_086638.json:
 Replying to [comment:69 kcrisman]:
 > Just a comment to Jonathan - William changed the description to have both sets of spkgs be 1.1.4, but I think that only one of them was supposed to be (to enable testing for sage > or < 4.5).  If that's so, please change the instructions back.
 
+
 You are correct.  I will change it back.  This is because I don't have an old install to test on and the package locations changed for the notebook.
   
 > 
 > Also still need
 > 
->  * testing on Linux?  Or maybe Jason did that
+> * testing on Linux?  Or maybe Jason did that
+
 I developed this on Linux, so this will work on Linux installs with a JVM that Jmol works in.  We only test against the Oracle/Sun JVM.
 
 >  * at least SOME testing with a VM, if possible before release (?)
@@ -1769,7 +1789,7 @@ Interestingly, Chrome wouldn't even let me open it (and said, `Aw, snap` when it
 archive/issue_comments_086642.json:
 ```json
 {
-    "body": "Replying to [comment:74 kcrisman]:\nOK.  Thanks for testing.  Two things:\n1) I'm grading exams this weekend, but will try to look at this.\n2) In order to look at what you are looking at I need to understand how I get things out of the mercurial system.  On a linux distro what would I need to set up?  \n\nOn the command line stuff.  We've had trouble because different operating systems use different protocols for opening java applications.  If you actually have a copy of the Jmol.jar (not JmolApplet.jar) then I will need more details about OS and so on.  This may relate to the fact that the location of the notebook code has changed.  I will look at that.\n\nJonathan\n> Third try... some comments from heavier testing.\n> \n>  * For me, command line does not work.  I get a jmol window with 'zapped' and some other error message about a .sage/temp/....jmol file.  This could be because I just dragged in the files from the jmol spkg, but I wanted to be able to create a new sagenb spkg.  But changing the jmol script as indicated above didn't seem to help this.\n> \n>  * Regular use seems to perform as advertised.\n> \n>  * Jason's patch is necessary, works great.  However, it's worthless without changing that sleeping to a link to wake up, as Jason said, since not everyone will associate 'advanced' with waking up.\n> \n>  * The smaller sizes don't seem to work so well with that patch.  It's hard to see what I mean until you try it.  It's possible for the miniature size to almost completely disappear.  Try spin on with that size - you'll get something coming in and out of view.\n> \n>  * Heavy use is another matter.  I can get ALL kinds of horrible crashes (such as the ones that twice killed this comment, until I wised up and used a different browser for Trac) and other errors, some of which occurred above, others are new.  \n> \n> The worst was when I was trying to open the page with 6 or 7 jmols, none of which I had evaluated, but were left over from earlier openings of the worksheet, and I tried to evaluate another cell and got a Java exception window that would not close, would not let me change focus to another browser window, and was completely full of security exceptions I did not understand.  Wow!  So we probably need to encourage people to be CAREFUL with this still.  \n> \n> Interestingly, Chrome wouldn't even let me open it (and said, `Aw, snap` when it failed) because it spotted the problem early!  Actually, I find this to be a bug, because I never did open it, which didn't happen with FF and Safari.  It doesn't give the chance to just kill the script but still open the page.  Weird.",
+    "body": "Replying to [comment:74 kcrisman]:\nOK.  Thanks for testing.  Two things:\n1) I'm grading exams this weekend, but will try to look at this.\n2) In order to look at what you are looking at I need to understand how I get things out of the mercurial system.  On a linux distro what would I need to set up?  \n\nOn the command line stuff.  We've had trouble because different operating systems use different protocols for opening java applications.  If you actually have a copy of the Jmol.jar (not JmolApplet.jar) then I will need more details about OS and so on.  This may relate to the fact that the location of the notebook code has changed.  I will look at that.\n\nJonathan\n> Third try... some comments from heavier testing.\n> \n> * For me, command line does not work.  I get a jmol window with 'zapped' and some other error message about a .sage/temp/....jmol file.  This could be because I just dragged in the files from the jmol spkg, but I wanted to be able to create a new sagenb spkg.  But changing the jmol script as indicated above didn't seem to help this.\n> \n> * Regular use seems to perform as advertised.\n> \n> * Jason's patch is necessary, works great.  However, it's worthless without changing that sleeping to a link to wake up, as Jason said, since not everyone will associate 'advanced' with waking up.\n> \n> * The smaller sizes don't seem to work so well with that patch.  It's hard to see what I mean until you try it.  It's possible for the miniature size to almost completely disappear.  Try spin on with that size - you'll get something coming in and out of view.\n> \n> * Heavy use is another matter.  I can get ALL kinds of horrible crashes (such as the ones that twice killed this comment, until I wised up and used a different browser for Trac) and other errors, some of which occurred above, others are new.  \n> \n> The worst was when I was trying to open the page with 6 or 7 jmols, none of which I had evaluated, but were left over from earlier openings of the worksheet, and I tried to evaluate another cell and got a Java exception window that would not close, would not let me change focus to another browser window, and was completely full of security exceptions I did not understand.  Wow!  So we probably need to encourage people to be CAREFUL with this still.  \n> \n> Interestingly, Chrome wouldn't even let me open it (and said, `Aw, snap` when it failed) because it spotted the problem early!  Actually, I find this to be a bug, because I never did open it, which didn't happen with FF and Safari.  It doesn't give the chance to just kill the script but still open the page.  Weird.",
     "created_at": "2011-03-05T17:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1788,15 +1808,15 @@ On the command line stuff.  We've had trouble because different operating system
 Jonathan
 > Third try... some comments from heavier testing.
 > 
->  * For me, command line does not work.  I get a jmol window with 'zapped' and some other error message about a .sage/temp/....jmol file.  This could be because I just dragged in the files from the jmol spkg, but I wanted to be able to create a new sagenb spkg.  But changing the jmol script as indicated above didn't seem to help this.
+> * For me, command line does not work.  I get a jmol window with 'zapped' and some other error message about a .sage/temp/....jmol file.  This could be because I just dragged in the files from the jmol spkg, but I wanted to be able to create a new sagenb spkg.  But changing the jmol script as indicated above didn't seem to help this.
 > 
->  * Regular use seems to perform as advertised.
+> * Regular use seems to perform as advertised.
 > 
->  * Jason's patch is necessary, works great.  However, it's worthless without changing that sleeping to a link to wake up, as Jason said, since not everyone will associate 'advanced' with waking up.
+> * Jason's patch is necessary, works great.  However, it's worthless without changing that sleeping to a link to wake up, as Jason said, since not everyone will associate 'advanced' with waking up.
 > 
->  * The smaller sizes don't seem to work so well with that patch.  It's hard to see what I mean until you try it.  It's possible for the miniature size to almost completely disappear.  Try spin on with that size - you'll get something coming in and out of view.
+> * The smaller sizes don't seem to work so well with that patch.  It's hard to see what I mean until you try it.  It's possible for the miniature size to almost completely disappear.  Try spin on with that size - you'll get something coming in and out of view.
 > 
->  * Heavy use is another matter.  I can get ALL kinds of horrible crashes (such as the ones that twice killed this comment, until I wised up and used a different browser for Trac) and other errors, some of which occurred above, others are new.  
+> * Heavy use is another matter.  I can get ALL kinds of horrible crashes (such as the ones that twice killed this comment, until I wised up and used a different browser for Trac) and other errors, some of which occurred above, others are new.  
 > 
 > The worst was when I was trying to open the page with 6 or 7 jmols, none of which I had evaluated, but were left over from earlier openings of the worksheet, and I tried to evaluate another cell and got a Java exception window that would not close, would not let me change focus to another browser window, and was completely full of security exceptions I did not understand.  Wow!  So we probably need to encourage people to be CAREFUL with this still.  
 > 
@@ -1809,7 +1829,7 @@ Jonathan
 archive/issue_comments_086643.json:
 ```json
 {
-    "body": "> OK.  Thanks for testing.  Two things:\n> 1) I'm grading exams this weekend, but will try to look at this.\nWell, first things first!  I was doing that until a few days ago.\n> 2) In order to look at what you are looking at I need to understand how I get things out of the mercurial system.  On a linux distro what would I need to set up?  \nI don't know what you need that for.  Luckily, it's all in Sage.  You can do\n\n```\nsage: hg_sagenb.[tab]\n```\n\nand everything is there, at least basic stuff.  In particular\n\n```\nsage: hg_sagenb.status()\n```\n\nand \n\n```\nsage: hg_sagenb.import_patch('http://trac.sagemath.org...') \n```\n\nare very useful.  This latter one MUST be used with the 'raw attachment', not just the link to the diff; you can just plug in the link to Jason's patch to see his contribution here.\n> On the command line stuff.  We've had trouble because different operating systems use different protocols for opening java applications.  If you actually have a copy of the Jmol.jar (not JmolApplet.jar) then I will need more details about OS and so on.  This may relate to the fact that the location of the notebook code has changed.  I will look at that.\nYeah, you mention that.  I definitely have all the right stuff from that standpoint (e.g. Jmol.jar) but changing the `jmol` file (shell script) as you recommend above did not help with the 'zapped'.  \n\nJason, did your command line work?  I have the same setup as you, I think.  Maybe I should have just used the jmol spkg.",
+    "body": "> OK.  Thanks for testing.  Two things:\n> 1) I'm grading exams this weekend, but will try to look at this.\n\nWell, first things first!  I was doing that until a few days ago.\n> 2) In order to look at what you are looking at I need to understand how I get things out of the mercurial system.  On a linux distro what would I need to set up?  \n\nI don't know what you need that for.  Luckily, it's all in Sage.  You can do\n\n```\nsage: hg_sagenb.[tab]\n```\nand everything is there, at least basic stuff.  In particular\n\n```\nsage: hg_sagenb.status()\n```\nand \n\n```\nsage: hg_sagenb.import_patch('http://trac.sagemath.org...') \n```\nare very useful.  This latter one MUST be used with the 'raw attachment', not just the link to the diff; you can just plug in the link to Jason's patch to see his contribution here.\n> On the command line stuff.  We've had trouble because different operating systems use different protocols for opening java applications.  If you actually have a copy of the Jmol.jar (not JmolApplet.jar) then I will need more details about OS and so on.  This may relate to the fact that the location of the notebook code has changed.  I will look at that.\n\nYeah, you mention that.  I definitely have all the right stuff from that standpoint (e.g. Jmol.jar) but changing the `jmol` file (shell script) as you recommend above did not help with the 'zapped'.  \n\nJason, did your command line work?  I have the same setup as you, I think.  Maybe I should have just used the jmol spkg.",
     "created_at": "2011-03-06T01:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1820,28 +1840,28 @@ archive/issue_comments_086643.json:
 
 > OK.  Thanks for testing.  Two things:
 > 1) I'm grading exams this weekend, but will try to look at this.
+
 Well, first things first!  I was doing that until a few days ago.
 > 2) In order to look at what you are looking at I need to understand how I get things out of the mercurial system.  On a linux distro what would I need to set up?  
+
 I don't know what you need that for.  Luckily, it's all in Sage.  You can do
 
 ```
 sage: hg_sagenb.[tab]
 ```
-
 and everything is there, at least basic stuff.  In particular
 
 ```
 sage: hg_sagenb.status()
 ```
-
 and 
 
 ```
 sage: hg_sagenb.import_patch('http://trac.sagemath.org...') 
 ```
-
 are very useful.  This latter one MUST be used with the 'raw attachment', not just the link to the diff; you can just plug in the link to Jason's patch to see his contribution here.
 > On the command line stuff.  We've had trouble because different operating systems use different protocols for opening java applications.  If you actually have a copy of the Jmol.jar (not JmolApplet.jar) then I will need more details about OS and so on.  This may relate to the fact that the location of the notebook code has changed.  I will look at that.
+
 Yeah, you mention that.  I definitely have all the right stuff from that standpoint (e.g. Jmol.jar) but changing the `jmol` file (shell script) as you recommend above did not help with the 'zapped'.  
 
 Jason, did your command line work?  I have the same setup as you, I think.  Maybe I should have just used the jmol spkg.
@@ -1871,7 +1891,7 @@ I can plot a 3d function from the command line.  A jmol instance pops up and I s
 archive/issue_comments_086645.json:
 ```json
 {
-    "body": "I take that back---I had the old jmol installed.  I have the same thing that you have.  When I do this from the command line (OSX Snow Leopard):\n\n```\nsage: f(x,y)=x^2*y\nsage: plot3d(f,(x,-3,3),(y,-3,3))\n```\n\n\nI get a jmol window that pops up, but the title bar says \"zapped\", the menu and title bar appear, but where the plot should be, it's only black with some red text.  The text says (where I've replaced my computer name with <MYCOMPUTERNAME>:\n\n```\nunrecognized file format for file /Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036/tmp_0-size500.jmol\n\nset defaultdirectory \"/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size500.jmol.zip\"\n\nscript SCRIPT\n```\n",
+    "body": "I take that back---I had the old jmol installed.  I have the same thing that you have.  When I do this from the command line (OSX Snow Leopard):\n\n```\nsage: f(x,y)=x^2*y\nsage: plot3d(f,(x,-3,3),(y,-3,3))\n```\n\nI get a jmol window that pops up, but the title bar says \"zapped\", the menu and title bar appear, but where the plot should be, it's only black with some red text.  The text says (where I've replaced my computer name with <MYCOMPUTERNAME>:\n\n```\nunrecognized file format for file /Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036/tmp_0-size500.jmol\n\nset defaultdirectory \"/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size500.jmol.zip\"\n\nscript SCRIPT\n```",
     "created_at": "2011-03-06T04:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1887,7 +1907,6 @@ sage: f(x,y)=x^2*y
 sage: plot3d(f,(x,-3,3),(y,-3,3))
 ```
 
-
 I get a jmol window that pops up, but the title bar says "zapped", the menu and title bar appear, but where the plot should be, it's only black with some red text.  The text says (where I've replaced my computer name with <MYCOMPUTERNAME>:
 
 ```
@@ -1897,7 +1916,6 @@ set defaultdirectory "/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size
 
 script SCRIPT
 ```
-
 
 
 
@@ -1984,7 +2002,7 @@ Replying to [comment:81 kcrisman]:
 archive/issue_comments_086650.json:
 ```json
 {
-    "body": "I'm not sure, but I think that \n\n```\nsage: P = point3d((1,0,0))\nsage: P.export_jmol?\n```\n\nmight have what you are looking for.  I don't think it's the whole story, because I don't see the type of filename (including the size 500) that Jason is reporting, but at least it's a start.\n\nOh, and \n\n```\n\nsage: search_src('jmol','size')\nplot/plot3d/base.pyx:988:           figsize[0]. This is ignored for the jmol embedded renderer.\nplot/plot3d/implicit_surface.pyx:69:# vertex_color/jmol_color), and output of size about n^2.\nplot/plot3d/shapes2.py:750:        return [\"draw %s DIAMETER %s {%s %s %s}\\n%s\" % (name, int(self.size), cen[0], cen[1], cen[2], self.texture.jmol_str('$' + name))]\nserver/notebook/cell.py:2246:                # If F ends in -size500.jmol then we make the viewer applet with size 500.\nserver/notebook/cell.py:2266:                #script = '<script>jmol_applet(%s, \"%s\");</script>%s' % (size, url, popup)\nserver/notebook/cell.py:2269:                script = '<div><script>jmol_applet(%s, \"%s?%d\");</script></div>' % (size, url, time.time())\n```\n\nsuggests that maybe it's in server/notebook/cell.py, which is a little surprising, but line 2259 pretty much seals the deal:\n\n```\n                    jmol_script = jmol_script.replace('defaultdirectory \"', 'defaultdirectory \"' + self.url_to_self() + '/')\n```\n\nThat looks like what you are describing.  Why is this called for non-notebook usage?",
+    "body": "I'm not sure, but I think that \n\n```\nsage: P = point3d((1,0,0))\nsage: P.export_jmol?\n```\nmight have what you are looking for.  I don't think it's the whole story, because I don't see the type of filename (including the size 500) that Jason is reporting, but at least it's a start.\n\nOh, and \n\n```\n\nsage: search_src('jmol','size')\nplot/plot3d/base.pyx:988:           figsize[0]. This is ignored for the jmol embedded renderer.\nplot/plot3d/implicit_surface.pyx:69:# vertex_color/jmol_color), and output of size about n^2.\nplot/plot3d/shapes2.py:750:        return [\"draw %s DIAMETER %s {%s %s %s}\\n%s\" % (name, int(self.size), cen[0], cen[1], cen[2], self.texture.jmol_str('$' + name))]\nserver/notebook/cell.py:2246:                # If F ends in -size500.jmol then we make the viewer applet with size 500.\nserver/notebook/cell.py:2266:                #script = '<script>jmol_applet(%s, \"%s\");</script>%s' % (size, url, popup)\nserver/notebook/cell.py:2269:                script = '<div><script>jmol_applet(%s, \"%s?%d\");</script></div>' % (size, url, time.time())\n```\nsuggests that maybe it's in server/notebook/cell.py, which is a little surprising, but line 2259 pretty much seals the deal:\n\n```\n                    jmol_script = jmol_script.replace('defaultdirectory \"', 'defaultdirectory \"' + self.url_to_self() + '/')\n```\nThat looks like what you are describing.  Why is this called for non-notebook usage?",
     "created_at": "2011-03-09T20:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -1999,7 +2017,6 @@ I'm not sure, but I think that
 sage: P = point3d((1,0,0))
 sage: P.export_jmol?
 ```
-
 might have what you are looking for.  I don't think it's the whole story, because I don't see the type of filename (including the size 500) that Jason is reporting, but at least it's a start.
 
 Oh, and 
@@ -2014,13 +2031,11 @@ server/notebook/cell.py:2246:                # If F ends in -size500.jmol then w
 server/notebook/cell.py:2266:                #script = '<script>jmol_applet(%s, "%s");</script>%s' % (size, url, popup)
 server/notebook/cell.py:2269:                script = '<div><script>jmol_applet(%s, "%s?%d");</script></div>' % (size, url, time.time())
 ```
-
 suggests that maybe it's in server/notebook/cell.py, which is a little surprising, but line 2259 pretty much seals the deal:
 
 ```
                     jmol_script = jmol_script.replace('defaultdirectory "', 'defaultdirectory "' + self.url_to_self() + '/')
 ```
-
 That looks like what you are describing.  Why is this called for non-notebook usage?
 
 
@@ -2030,7 +2045,7 @@ That looks like what you are describing.  Why is this called for non-notebook us
 archive/issue_comments_086651.json:
 ```json
 {
-    "body": "Replying to [comment:83 kcrisman]:\nI think what you've found is the stuff for the notebook, which does seem to be working.  I've found the following in the base.pyx file inside the plot3d directory, but am not sure what is going on.\n\n```        \nif 'filename' in kwds:\n            filename = kwds['filename']\n            del kwds['filename']\n        else:\n            filename = sage.misc.misc.tmp_filename()\n\n        from sage.plot.plot import EMBEDDED_MODE, DOCTEST_MODE\n        ext = None\n[snip...]\n        if DOCTEST_MODE or viewer=='jmol':\n            # Temporary hack: encode the desired applet size in the end of the filename:\n            # (This will be removed once we have dynamic resizing of applets in the browser.)\n            base, ext = os.path.splitext(filename)\n            fg = figsize[0]\n            #if fg >= 2:\n            #    fg = 2\n            filename = '%s-size%s%s'%(base, fg*100, ext)\n            ext = \"jmol\"\n            archive_name = \"%s.%s.zip\" % (filename, ext)\n            if EMBEDDED_MODE:\n                # jmol doesn't seem to correctly parse the ?params part of a URL\n                archive_name = \"%s-%s.%s.zip\" % (filename, randint(0, 1 << 30), ext)\n\n            T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n            T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)\n            viewer_app = \"sage-native-execute \" + os.path.join(sage.misc.misc.SAGE_LOCAL, \"bin/jmol\")\n\n            # We need a script to load the file\n            f = open(filename + '.jmol', 'w')\n            f.write('set defaultdirectory \"%s\"\\n' % archive_name)\n            f.write('script SCRIPT\\n')\n            f.close()\n```\n\n\nSomehow the building of \"archive_name\" is getting messed up.  I'm suspicious of \n filename = sage.misc.misc.tmp_filename()\nnear the top or\n base, ext = os.path.splitext(filename)\nin the viewer=='jmol' block.",
+    "body": "Replying to [comment:83 kcrisman]:\nI think what you've found is the stuff for the notebook, which does seem to be working.  I've found the following in the base.pyx file inside the plot3d directory, but am not sure what is going on.\n\n```        \nif 'filename' in kwds:\n            filename = kwds['filename']\n            del kwds['filename']\n        else:\n            filename = sage.misc.misc.tmp_filename()\n\n        from sage.plot.plot import EMBEDDED_MODE, DOCTEST_MODE\n        ext = None\n[snip...]\n        if DOCTEST_MODE or viewer=='jmol':\n            # Temporary hack: encode the desired applet size in the end of the filename:\n            # (This will be removed once we have dynamic resizing of applets in the browser.)\n            base, ext = os.path.splitext(filename)\n            fg = figsize[0]\n            #if fg >= 2:\n            #    fg = 2\n            filename = '%s-size%s%s'%(base, fg*100, ext)\n            ext = \"jmol\"\n            archive_name = \"%s.%s.zip\" % (filename, ext)\n            if EMBEDDED_MODE:\n                # jmol doesn't seem to correctly parse the ?params part of a URL\n                archive_name = \"%s-%s.%s.zip\" % (filename, randint(0, 1 << 30), ext)\n\n            T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n            T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)\n            viewer_app = \"sage-native-execute \" + os.path.join(sage.misc.misc.SAGE_LOCAL, \"bin/jmol\")\n\n            # We need a script to load the file\n            f = open(filename + '.jmol', 'w')\n            f.write('set defaultdirectory \"%s\"\\n' % archive_name)\n            f.write('script SCRIPT\\n')\n            f.close()\n```\n\nSomehow the building of \"archive_name\" is getting messed up.  I'm suspicious of \n filename = sage.misc.misc.tmp_filename()\nnear the top or\n base, ext = os.path.splitext(filename)\nin the viewer=='jmol' block.",
     "created_at": "2011-03-09T21:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2077,7 +2092,6 @@ if 'filename' in kwds:
             f.close()
 ```
 
-
 Somehow the building of "archive_name" is getting messed up.  I'm suspicious of 
  filename = sage.misc.misc.tmp_filename()
 near the top or
@@ -2091,7 +2105,7 @@ in the viewer=='jmol' block.
 archive/issue_comments_086652.json:
 ```json
 {
-    "body": "Oh, yeah, you've got it.  \n\n```\nsage: filename = sage.misc.misc.tmp_filename()\nsage: filename\n'/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367//tmp_0'\n```\n\nand base gets that double slash.\n\nBut that part really comes from `sage.misc.misc.SAGE_TMP`, I think.\n\n```\n    while True:\n        tmp = \"%s/%s_%s\"%(SAGE_TMP, name, __tmp_n)\n        __tmp_n += 1\n        if not os.path.exists(tmp):\n            break\n    return tmp\n```\n\n\n```\nSAGE_TMP='%s/temp/%s/%s/'%(DOT_SAGE, HOSTNAME, os.getpid())\n```\n\n\n```\nsage: sage.misc.misc.SAGE_TMP\n'/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367/'\n```\n\nwhich then has yet another / appended to it.  I guess this is helpful in the notebook?",
+    "body": "Oh, yeah, you've got it.  \n\n```\nsage: filename = sage.misc.misc.tmp_filename()\nsage: filename\n'/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367//tmp_0'\n```\nand base gets that double slash.\n\nBut that part really comes from `sage.misc.misc.SAGE_TMP`, I think.\n\n```\n    while True:\n        tmp = \"%s/%s_%s\"%(SAGE_TMP, name, __tmp_n)\n        __tmp_n += 1\n        if not os.path.exists(tmp):\n            break\n    return tmp\n```\n\n```\nSAGE_TMP='%s/temp/%s/%s/'%(DOT_SAGE, HOSTNAME, os.getpid())\n```\n\n```\nsage: sage.misc.misc.SAGE_TMP\n'/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367/'\n```\nwhich then has yet another / appended to it.  I guess this is helpful in the notebook?",
     "created_at": "2011-03-09T22:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2107,7 +2121,6 @@ sage: filename = sage.misc.misc.tmp_filename()
 sage: filename
 '/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367//tmp_0'
 ```
-
 and base gets that double slash.
 
 But that part really comes from `sage.misc.misc.SAGE_TMP`, I think.
@@ -2121,17 +2134,14 @@ But that part really comes from `sage.misc.misc.SAGE_TMP`, I think.
     return tmp
 ```
 
-
 ```
 SAGE_TMP='%s/temp/%s/%s/'%(DOT_SAGE, HOSTNAME, os.getpid())
 ```
-
 
 ```
 sage: sage.misc.misc.SAGE_TMP
 '/Users/<MYNAME>/.sage//temp/<MYCOMPUTERNAME>.local/77367/'
 ```
-
 which then has yet another / appended to it.  I guess this is helpful in the notebook?
 
 
@@ -2141,7 +2151,7 @@ which then has yet another / appended to it.  I guess this is helpful in the not
 archive/issue_comments_086653.json:
 ```json
 {
-    "body": "Hmmm...it looks like those things should be using os.path.join, like this:\n\n```\nsage: os.path.join('test/','asdf')\n'test/asdf'\nsage: os.path.join('test','asdf')\n'test/asdf'\n```\n\n\nNotice that there is no double-slash when using os.path.join.",
+    "body": "Hmmm...it looks like those things should be using os.path.join, like this:\n\n```\nsage: os.path.join('test/','asdf')\n'test/asdf'\nsage: os.path.join('test','asdf')\n'test/asdf'\n```\n\nNotice that there is no double-slash when using os.path.join.",
     "created_at": "2011-03-09T22:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2158,7 +2168,6 @@ sage: os.path.join('test/','asdf')
 sage: os.path.join('test','asdf')
 'test/asdf'
 ```
-
 
 Notice that there is no double-slash when using os.path.join.
 
@@ -2205,7 +2214,7 @@ OK, so this looks like a problem that will show up elsewhere too.  That double s
 archive/issue_comments_086656.json:
 ```json
 {
-    "body": "Replying to [comment:86 jason]:\n> Hmmm...it looks like those things should be using os.path.join, like this:\n> {{{\n> sage: os.path.join('test/','asdf')\n> 'test/asdf'\n> sage: os.path.join('test','asdf')\n> 'test/asdf'\n> }}}\nYeah, we had this problem with some of the temp files in e.g. R interface before.\n\nAs to the Python temp files, this is the system-wide `SAGE_TMP`, so you'd have to ask whoever wrote that why they didn't use builtin Python stuff - probably William or Tom or someone in prehistory...\n\nAs to Jonathan's question, I think this can just be fixed here for now, with a followup ticket for fixing it anyplace else it might cause problems.",
+    "body": "Replying to [comment:86 jason]:\n> Hmmm...it looks like those things should be using os.path.join, like this:\n> \n> ```\n> sage: os.path.join('test/','asdf')\n> 'test/asdf'\n> sage: os.path.join('test','asdf')\n> 'test/asdf'\n> ```\n\nYeah, we had this problem with some of the temp files in e.g. R interface before.\n\nAs to the Python temp files, this is the system-wide `SAGE_TMP`, so you'd have to ask whoever wrote that why they didn't use builtin Python stuff - probably William or Tom or someone in prehistory...\n\nAs to Jonathan's question, I think this can just be fixed here for now, with a followup ticket for fixing it anyplace else it might cause problems.",
     "created_at": "2011-03-10T01:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2216,12 +2225,14 @@ archive/issue_comments_086656.json:
 
 Replying to [comment:86 jason]:
 > Hmmm...it looks like those things should be using os.path.join, like this:
-> {{{
+> 
+> ```
 > sage: os.path.join('test/','asdf')
 > 'test/asdf'
 > sage: os.path.join('test','asdf')
 > 'test/asdf'
-> }}}
+> ```
+
 Yeah, we had this problem with some of the temp files in e.g. R interface before.
 
 As to the Python temp files, this is the system-wide `SAGE_TMP`, so you'd have to ask whoever wrote that why they didn't use builtin Python stuff - probably William or Tom or someone in prehistory...
@@ -2235,7 +2246,7 @@ As to Jonathan's question, I think this can just be fixed here for now, with a f
 archive/issue_comments_086657.json:
 ```json
 {
-    "body": "I successfully used os.path.join, but to no avail when it comes to the zapping.\n\nIn fact, after much playing around with this, I don't think it's the issue.  Remember the error message:\n\n```\nunrecognized file format for file /Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036/tmp_0-size500.jmol\n\nset defaultdirectory \"/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size500.jmol.zip\"\n\nscript SCRIPT\n```\n\nSo jmol, while running, clearly resolves the // to /, otherwise it wouldn't give the correct error message.  (When the directory no longer existed, I got a !java.io.FileNotFoundException, quite different.)   And the directory that pops open when you use the open button is the correct directory.\n\nSo perhaps it's the 'unrecognized file format' that's the problem, in the sense of an unrecognized file format.   I'm continuing to dig; it seems that jmol's file recognizer/resolver is where the exception is thrown.",
+    "body": "I successfully used os.path.join, but to no avail when it comes to the zapping.\n\nIn fact, after much playing around with this, I don't think it's the issue.  Remember the error message:\n\n```\nunrecognized file format for file /Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036/tmp_0-size500.jmol\n\nset defaultdirectory \"/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size500.jmol.zip\"\n\nscript SCRIPT\n```\nSo jmol, while running, clearly resolves the // to /, otherwise it wouldn't give the correct error message.  (When the directory no longer existed, I got a !java.io.FileNotFoundException, quite different.)   And the directory that pops open when you use the open button is the correct directory.\n\nSo perhaps it's the 'unrecognized file format' that's the problem, in the sense of an unrecognized file format.   I'm continuing to dig; it seems that jmol's file recognizer/resolver is where the exception is thrown.",
     "created_at": "2011-03-14T14:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2255,7 +2266,6 @@ set defaultdirectory "/Users/grout/.sage/temp/<MYCOMPUTERNAME>/79036//tmp_0-size
 
 script SCRIPT
 ```
-
 So jmol, while running, clearly resolves the // to /, otherwise it wouldn't give the correct error message.  (When the directory no longer existed, I got a !java.io.FileNotFoundException, quite different.)   And the directory that pops open when you use the open button is the correct directory.
 
 So perhaps it's the 'unrecognized file format' that's the problem, in the sense of an unrecognized file format.   I'm continuing to dig; it seems that jmol's file recognizer/resolver is where the exception is thrown.
@@ -2285,7 +2295,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086659.json:
 ```json
 {
-    "body": "Unfortunately, I can't afford to spend any more time on this, knowing as little about Jmol and Java as I do.  Here is some of the investigating I did, which *may* be useful - hopefully it will be.  I suspect that there is something very subtle that changed in the newer Jmol (there have been changes) to this resolving business, and somehow the difference between the applet being used and just the standalone Jmol viewer must be involved.  \n\nThe changes made in `EMBEDDED_MODE=True` and the notebook code should not make a difference; the only substantive ones are that there is something random in the filename for the notebook, and the notebook rewrites the .jmol file to get the full url for the cell (as opposed to the full path to the file in the other case).  Neither of these should make a difference, right?\n\n* When Jmol looks to resolve the file, it 'smartly' actually reads the file and looks at the contents to see if it's one of a variety of accepted formats.\n* The code for this is [here](http://prodata.swmed.edu/CASP9/evaluation/jmol/src/org/jmol/adapter/smarter/Resolver.java), among other places (hopefully this isn't too old of a version - sadly, the sourceforge site requires one to download code, not browse, so this could all be based on something incorrect).\n* The only place there that this message occurs is in the following code, which means the !determineAtomSetCollectionReader has returned something with a newline character:\n\n```\n    } else {\n      atomSetCollectionReaderName = determineAtomSetCollectionReader(\n          bufferedReader, true);\n      if (atomSetCollectionReaderName.indexOf(\"\\n\") >= 0)\n        errMsg = \"unrecognized file format for file \" + fullName + \"\\n\"\n            + atomSetCollectionReaderName;\n<snip>\n    if (errMsg != null) {\n      bufferedReader.close();\n      return errMsg;\n    }\n```\n\n* Since the error message which is returned is the thing that Jason cut and pasted for us, you'll notice that the contents of our .jmol file itself is the output of the !determineAtomSetCollectionReader - so no surprise there is a `\\n`, since after going through all the possible things, it returns the first several lines of the file, with `\\n` in between lines.\n\n```\n    return (returnLines ? \"\\n\" + lines[0] + \"\\n\" + lines[1] + \"\\n\" + lines[2] + \"\\n\" : null);\n```\n\n* Of course, why this would work fine in the notebook AND when loading from the open window is completely mystifying to me.",
+    "body": "Unfortunately, I can't afford to spend any more time on this, knowing as little about Jmol and Java as I do.  Here is some of the investigating I did, which *may* be useful - hopefully it will be.  I suspect that there is something very subtle that changed in the newer Jmol (there have been changes) to this resolving business, and somehow the difference between the applet being used and just the standalone Jmol viewer must be involved.  \n\nThe changes made in `EMBEDDED_MODE=True` and the notebook code should not make a difference; the only substantive ones are that there is something random in the filename for the notebook, and the notebook rewrites the .jmol file to get the full url for the cell (as opposed to the full path to the file in the other case).  Neither of these should make a difference, right?\n\n* When Jmol looks to resolve the file, it 'smartly' actually reads the file and looks at the contents to see if it's one of a variety of accepted formats.\n* The code for this is [here](http://prodata.swmed.edu/CASP9/evaluation/jmol/src/org/jmol/adapter/smarter/Resolver.java), among other places (hopefully this isn't too old of a version - sadly, the sourceforge site requires one to download code, not browse, so this could all be based on something incorrect).\n* The only place there that this message occurs is in the following code, which means the !determineAtomSetCollectionReader has returned something with a newline character:\n\n```\n    } else {\n      atomSetCollectionReaderName = determineAtomSetCollectionReader(\n          bufferedReader, true);\n      if (atomSetCollectionReaderName.indexOf(\"\\n\") >= 0)\n        errMsg = \"unrecognized file format for file \" + fullName + \"\\n\"\n            + atomSetCollectionReaderName;\n<snip>\n    if (errMsg != null) {\n      bufferedReader.close();\n      return errMsg;\n    }\n```\n* Since the error message which is returned is the thing that Jason cut and pasted for us, you'll notice that the contents of our .jmol file itself is the output of the !determineAtomSetCollectionReader - so no surprise there is a `\\n`, since after going through all the possible things, it returns the first several lines of the file, with `\\n` in between lines.\n\n```\n    return (returnLines ? \"\\n\" + lines[0] + \"\\n\" + lines[1] + \"\\n\" + lines[2] + \"\\n\" : null);\n```\n* Of course, why this would work fine in the notebook AND when loading from the open window is completely mystifying to me.",
     "created_at": "2011-03-14T15:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2315,13 +2325,11 @@ The changes made in `EMBEDDED_MODE=True` and the notebook code should not make a
       return errMsg;
     }
 ```
-
 * Since the error message which is returned is the thing that Jason cut and pasted for us, you'll notice that the contents of our .jmol file itself is the output of the !determineAtomSetCollectionReader - so no surprise there is a `\n`, since after going through all the possible things, it returns the first several lines of the file, with `\n` in between lines.
 
 ```
     return (returnLines ? "\n" + lines[0] + "\n" + lines[1] + "\n" + lines[2] + "\n" : null);
 ```
-
 * Of course, why this would work fine in the notebook AND when loading from the open window is completely mystifying to me.
 
 
@@ -2578,7 +2586,7 @@ plot3d/base.pyx fixes to launch Jmol from cmd line
 archive/issue_comments_086672.json:
 ```json
 {
-    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by @kcrisman created at 2011-03-21 15:30:00\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
+    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by @kcrisman created at 2011-03-21 15:30:00\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
     "created_at": "2011-03-21T15:30:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2590,6 +2598,7 @@ archive/issue_comments_086672.json:
 Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by @kcrisman created at 2011-03-21 15:30:00
 
 > Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?
+
 
 Hmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.
 
@@ -2604,7 +2613,7 @@ But anything that is about changing those jmol files would have to be another pa
 archive/issue_comments_086673.json:
 ```json
 {
-    "body": "Replying to [comment:102 kcrisman]:\n\n> Hmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nOn  my machine I set it up to have hg track those files.  The patch I made does list them as being added or changed, but the binaries are not included, just the file names.  Thus the patch won't work.  I gather from what you are saying, an .spkg is the only way.  I can do that.  It will take a little time to reconfigure so that it is only updating the binary files.  The rest can be put in as a patch so it will be tracked properly.  (I'm getting less enthusiastic about hg...svn would  handle this with no problem).\n> \n> If the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nThere was a bug in the version of Jmol things were originally written for, which meant the default lighting was fullylit (despite being documented as otherwise).  To update SAGE to a newer Jmol this needs to be accounted for.  The fix I put in is temporary.  I would like use a more complete and up-to-date file format for the generated .jmol files, but first I want to have basic stuff working.  Notebook vs command line depends on which version of the jmol_lib.js you have.  This fix is also in there.\n> \n> But anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?\n\nChanging the extension doesn't work out-of-the-box because of bugs in some versions of Jmol.  12.0.35 is the first 12.0.x series I could get this working with.  There are some newer versions, but the menu system has been damaged, so I am avoiding anything newer until we get that fixed.",
+    "body": "Replying to [comment:102 kcrisman]:\n\n> Hmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\n\nOn  my machine I set it up to have hg track those files.  The patch I made does list them as being added or changed, but the binaries are not included, just the file names.  Thus the patch won't work.  I gather from what you are saying, an .spkg is the only way.  I can do that.  It will take a little time to reconfigure so that it is only updating the binary files.  The rest can be put in as a patch so it will be tracked properly.  (I'm getting less enthusiastic about hg...svn would  handle this with no problem).\n> \n> If the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\n\nThere was a bug in the version of Jmol things were originally written for, which meant the default lighting was fullylit (despite being documented as otherwise).  To update SAGE to a newer Jmol this needs to be accounted for.  The fix I put in is temporary.  I would like use a more complete and up-to-date file format for the generated .jmol files, but first I want to have basic stuff working.  Notebook vs command line depends on which version of the jmol_lib.js you have.  This fix is also in there.\n> \n> But anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?\n\n\nChanging the extension doesn't work out-of-the-box because of bugs in some versions of Jmol.  12.0.35 is the first 12.0.x series I could get this working with.  There are some newer versions, but the menu system has been damaged, so I am avoiding anything newer until we get that fixed.",
     "created_at": "2011-03-21T16:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2617,13 +2626,16 @@ Replying to [comment:102 kcrisman]:
 
 > Hmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.
 
+
 On  my machine I set it up to have hg track those files.  The patch I made does list them as being added or changed, but the binaries are not included, just the file names.  Thus the patch won't work.  I gather from what you are saying, an .spkg is the only way.  I can do that.  It will take a little time to reconfigure so that it is only updating the binary files.  The rest can be put in as a patch so it will be tracked properly.  (I'm getting less enthusiastic about hg...svn would  handle this with no problem).
 > 
 > If the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?
 
+
 There was a bug in the version of Jmol things were originally written for, which meant the default lighting was fullylit (despite being documented as otherwise).  To update SAGE to a newer Jmol this needs to be accounted for.  The fix I put in is temporary.  I would like use a more complete and up-to-date file format for the generated .jmol files, but first I want to have basic stuff working.  Notebook vs command line depends on which version of the jmol_lib.js you have.  This fix is also in there.
 > 
 > But anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?
+
 
 Changing the extension doesn't work out-of-the-box because of bugs in some versions of Jmol.  12.0.35 is the first 12.0.x series I could get this working with.  There are some newer versions, but the menu system has been damaged, so I am avoiding anything newer until we get that fixed.
 
@@ -2785,7 +2797,7 @@ Looking forward to trying this out!  Hopefully Jason can take some time to revie
 archive/issue_comments_086681.json:
 ```json
 {
-    "body": "Replying to [comment:108 kcrisman]:\n\n> Does that mean that Jason's patch for hiding the advanced controls is subsumed in this?  It looks like it is, just checking.\n\nYes\n\n> Also, when you say it needs the patch for Jmol at command line in #9232, I assume that you also mean it needs the spkg/new Jmol files there.  You may want to then delete the instructions for testing that refer to loading previous versions of that spkg/new Jmol files above.   Looking forward to trying this out!  Hopefully Jason can take some time to review the js stuff I'm not really qualified to while he's at Sage Days 29 :)\n\nYes, to get this all to work together  you need the complete update to Jmol.\n\nI wasn't sure if it was appropriate to remove all the earlier stuff.  If your first pass at this looks pretty good.  I'll remove it.",
+    "body": "Replying to [comment:108 kcrisman]:\n\n> Does that mean that Jason's patch for hiding the advanced controls is subsumed in this?  It looks like it is, just checking.\n\n\nYes\n\n> Also, when you say it needs the patch for Jmol at command line in #9232, I assume that you also mean it needs the spkg/new Jmol files there.  You may want to then delete the instructions for testing that refer to loading previous versions of that spkg/new Jmol files above.   Looking forward to trying this out!  Hopefully Jason can take some time to review the js stuff I'm not really qualified to while he's at Sage Days 29 :)\n\n\nYes, to get this all to work together  you need the complete update to Jmol.\n\nI wasn't sure if it was appropriate to remove all the earlier stuff.  If your first pass at this looks pretty good.  I'll remove it.",
     "created_at": "2011-03-23T01:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2798,9 +2810,11 @@ Replying to [comment:108 kcrisman]:
 
 > Does that mean that Jason's patch for hiding the advanced controls is subsumed in this?  It looks like it is, just checking.
 
+
 Yes
 
 > Also, when you say it needs the patch for Jmol at command line in #9232, I assume that you also mean it needs the spkg/new Jmol files there.  You may want to then delete the instructions for testing that refer to loading previous versions of that spkg/new Jmol files above.   Looking forward to trying this out!  Hopefully Jason can take some time to review the js stuff I'm not really qualified to while he's at Sage Days 29 :)
+
 
 Yes, to get this all to work together  you need the complete update to Jmol.
 
@@ -2831,7 +2845,7 @@ Update: This probably also requires the attachment called `trac_9232_notebook_fi
 archive/issue_comments_086683.json:
 ```json
 {
-    "body": "Replying to [comment:110 kcrisman]:\n> Update: This probably also requires the attachment called `trac_9232_notebook_fixes.patch` at #9232.   Or that could be combined into a total patch. \nNow I think that might not be the case.  See below.\n\n> The issues with importing that patch should also be resolved.\n\nOkay, I experimented, and the change from angstrom to square root of umlaut O (which I think causes the problem) happens during the exporting of a patch.  See the sample I'm uploading next.  SO what needs to happen is for the sagenb package to 'manually' add this file, rather than by importing a patch, I guess?   \n\nIn fact, Jonathan, if there are no changes in the SageMenu.mnu file involved, we might want to let it remain untracked, except put a comment in the .hgignore file about *why* it's untracked.  Unless you imagine needing to change it often (? I have no idea) it might be worth sparing the hassle over angstroms.  \n\nGiven Jonathan's comments, this could be some kind of Unicode bug on Mac...",
+    "body": "Replying to [comment:110 kcrisman]:\n> Update: This probably also requires the attachment called `trac_9232_notebook_fixes.patch` at #9232.   Or that could be combined into a total patch. \n\nNow I think that might not be the case.  See below.\n\n> The issues with importing that patch should also be resolved.\n\n\nOkay, I experimented, and the change from angstrom to square root of umlaut O (which I think causes the problem) happens during the exporting of a patch.  See the sample I'm uploading next.  SO what needs to happen is for the sagenb package to 'manually' add this file, rather than by importing a patch, I guess?   \n\nIn fact, Jonathan, if there are no changes in the SageMenu.mnu file involved, we might want to let it remain untracked, except put a comment in the .hgignore file about *why* it's untracked.  Unless you imagine needing to change it often (? I have no idea) it might be worth sparing the hassle over angstroms.  \n\nGiven Jonathan's comments, this could be some kind of Unicode bug on Mac...",
     "created_at": "2011-03-23T20:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -2842,9 +2856,11 @@ archive/issue_comments_086683.json:
 
 Replying to [comment:110 kcrisman]:
 > Update: This probably also requires the attachment called `trac_9232_notebook_fixes.patch` at #9232.   Or that could be combined into a total patch. 
+
 Now I think that might not be the case.  See below.
 
 > The issues with importing that patch should also be resolved.
+
 
 Okay, I experimented, and the change from angstrom to square root of umlaut O (which I think causes the problem) happens during the exporting of a patch.  See the sample I'm uploading next.  SO what needs to happen is for the sagenb package to 'manually' add this file, rather than by importing a patch, I guess?   
 
@@ -2993,7 +3009,7 @@ I haven't noticed a lot of other problems as yet.  Lots of applets at once do se
 archive/issue_comments_086691.json:
 ```json
 {
-    "body": "Replying to [comment:116 kcrisman]:\n\n> Okay, in testing, it seems that  * The resizing of the \"3-D display size: \" is not working. \nI assume you mean using the pop-up menu. I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  \n>* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.\nThis one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.",
+    "body": "Replying to [comment:116 kcrisman]:\n\n> Okay, in testing, it seems that  * The resizing of the \"3-D display size: \" is not working. \n\nI assume you mean using the pop-up menu. I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  \n>* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.\n \nThis one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.",
     "created_at": "2011-03-23T21:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3005,8 +3021,10 @@ archive/issue_comments_086691.json:
 Replying to [comment:116 kcrisman]:
 
 > Okay, in testing, it seems that  * The resizing of the "3-D display size: " is not working. 
+
 I assume you mean using the pop-up menu. I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  
 >* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.
+ 
 This one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.
 
 
@@ -3052,7 +3070,7 @@ It appears that there are still some java memory issues if you have a lot of app
 archive/issue_comments_086694.json:
 ```json
 {
-    "body": "> > Okay, in testing, it seems that  * The resizing of the \"3-D display size: \" is not working. \n> I assume you mean using the pop-up menu. \nNo, I do not.  I'm referring to the advanced controls menu, where it says \"3-D display size\" and you can pick from four sizes. \n>I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  \n\nThis is on Mac OS X.  With Safari 5.0.4 it doesn't seem to work at all, and does nothing bad.  With FF 3.6 it works, but has the same problems I mention somewhere above regarding the images not really fitting properly into the window.  \n\nI wouldn't consider this a deal-breaker, but since it seems quite unreliable, maybe you can just comment that out for now until it's working more reliably?  As long as people can pop out the picture, that is the important thing.\n\n> >* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.\n> This one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.\nI think this is a small enough issue - only for certain window sizes and shapes - that it shouldn't block anything.\n\nHowever, on FF if I pop it out, sometimes nothing at all shows up.  And in fact, just now it completely froze FF - as far as I know there weren't too many applets open, I just asked for it to pop up one too many times, maybe.\n\nIs it possible that the extra applets from resizable pop-up windows could hog more Java memory than is supposed to be allowed? \n\nSorry, that's the thing you just mentioned in your last comment.   Yes, I agree that something should be done with that.  It seems reasonable to perhaps sleep all applets in the main window except the same one, or maybe the last two.  \n\nIn fact, I wouldn't mind reducing from five 'awake' applets to four.   Anyway, this needs to be at least somewhat resolved, so 'needs work' for now.",
+    "body": "> > Okay, in testing, it seems that  * The resizing of the \"3-D display size: \" is not working. \n\n> I assume you mean using the pop-up menu. \nNo, I do not.  I'm referring to the advanced controls menu, where it says \"3-D display size\" and you can pick from four sizes. \n>I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  \n\n\nThis is on Mac OS X.  With Safari 5.0.4 it doesn't seem to work at all, and does nothing bad.  With FF 3.6 it works, but has the same problems I mention somewhere above regarding the images not really fitting properly into the window.  \n\nI wouldn't consider this a deal-breaker, but since it seems quite unreliable, maybe you can just comment that out for now until it's working more reliably?  As long as people can pop out the picture, that is the important thing.\n\n> >* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.\n \n> This one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.\nI think this is a small enough issue - only for certain window sizes and shapes - that it shouldn't block anything.\n\nHowever, on FF if I pop it out, sometimes nothing at all shows up.  And in fact, just now it completely froze FF - as far as I know there weren't too many applets open, I just asked for it to pop up one too many times, maybe.\n\nIs it possible that the extra applets from resizable pop-up windows could hog more Java memory than is supposed to be allowed? \n\nSorry, that's the thing you just mentioned in your last comment.   Yes, I agree that something should be done with that.  It seems reasonable to perhaps sleep all applets in the main window except the same one, or maybe the last two.  \n\nIn fact, I wouldn't mind reducing from five 'awake' applets to four.   Anyway, this needs to be at least somewhat resolved, so 'needs work' for now.",
     "created_at": "2011-03-24T01:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3062,15 +3080,18 @@ archive/issue_comments_086694.json:
 ```
 
 > > Okay, in testing, it seems that  * The resizing of the "3-D display size: " is not working. 
+
 > I assume you mean using the pop-up menu. 
 No, I do not.  I'm referring to the advanced controls menu, where it says "3-D display size" and you can pick from four sizes. 
 >I need OS, browser and java versions to work any more on that.  I've not seen what you describe.  
+
 
 This is on Mac OS X.  With Safari 5.0.4 it doesn't seem to work at all, and does nothing bad.  With FF 3.6 it works, but has the same problems I mention somewhere above regarding the images not really fitting properly into the window.  
 
 I wouldn't consider this a deal-breaker, but since it seems quite unreliable, maybe you can just comment that out for now until it's working more reliably?  As long as people can pop out the picture, that is the important thing.
 
 > >* The pop-out window usually resizes appropriately, but for certain sizes that are just a little wider than tall, the image disappears. I haven't noticed a lot of other problems as yet.  Lots of applets at once do seem to load properly.  Once in a while I have problems with some additional plot loading if I do an additional one, and once in a while a plot seems to disappear.  But the situation is certainly much better than before.
+ 
 > This one is going to be very hard to track.  It sounds like I haven't quite figured out all the situations where there can be timing issues between the server and the notebook.  Again any specifics about how to reproduce would help.
 I think this is a small enough issue - only for certain window sizes and shapes - that it shouldn't block anything.
 
@@ -3131,7 +3152,7 @@ I'm inclined to just remove the pop-up window initially.  I can keep working on
 archive/issue_comments_086697.json:
 ```json
 {
-    "body": "Okay, here are my recommendations.\n* To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose.\n* Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!  Pop-out still works in that case, though.\n* If it's not too hard, you could have the applets in main window sleep when you do a pop-out, except for the one you popped out (an instructor might want that smaller view immediately available after closing the pop-out window).\n\nOtherwise I'm fine.\n\nI think the pop-up windows are ok, actually.  It's a nice feature.  I have no problems making them when logged in.  The only issues are with the big resizing sometimes not working (but it's easy to find a size that does work) and that for some reason Command-W doesn't close the window.  Well, that doesn't work in MS Word, either, so no biggie.\n\n>  the twisted server appends html header information to the script files with MacOS FF when the user is logged in.\u00a0 I would need to do more investigating to provide a detailed bug report.\u00a0 \nLike I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.  Are you saying it's only with Mac, and only with FF, that this extra info is appended?\n\nI'm going to test this on Safari again now, on an older Mac with FF, and then with IE and FF on my Windows Parallels.",
+    "body": "Okay, here are my recommendations.\n* To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose.\n* Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!  Pop-out still works in that case, though.\n* If it's not too hard, you could have the applets in main window sleep when you do a pop-out, except for the one you popped out (an instructor might want that smaller view immediately available after closing the pop-out window).\n\nOtherwise I'm fine.\n\nI think the pop-up windows are ok, actually.  It's a nice feature.  I have no problems making them when logged in.  The only issues are with the big resizing sometimes not working (but it's easy to find a size that does work) and that for some reason Command-W doesn't close the window.  Well, that doesn't work in MS Word, either, so no biggie.\n\n>  the twisted server appends html header information to the script files with MacOS FF when the user is logged in.\u00a0 I would need to do more investigating to provide a detailed bug report.\u00a0 \n\nLike I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.  Are you saying it's only with Mac, and only with FF, that this extra info is appended?\n\nI'm going to test this on Safari again now, on an older Mac with FF, and then with IE and FF on my Windows Parallels.",
     "created_at": "2011-03-24T13:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3150,6 +3171,7 @@ Otherwise I'm fine.
 I think the pop-up windows are ok, actually.  It's a nice feature.  I have no problems making them when logged in.  The only issues are with the big resizing sometimes not working (but it's easy to find a size that does work) and that for some reason Command-W doesn't close the window.  Well, that doesn't work in MS Word, either, so no biggie.
 
 >  the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.  
+
 Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.  Are you saying it's only with Mac, and only with FF, that this extra info is appended?
 
 I'm going to test this on Safari again now, on an older Mac with FF, and then with IE and FF on my Windows Parallels.
@@ -3184,7 +3206,7 @@ One more *tiny* thing added to 'needs work':
 archive/issue_comments_086699.json:
 ```json
 {
-    "body": "Replying to [comment:122 kcrisman]:\n\n> Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!\n\nOK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.\n\n> > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n> Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n\nUh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n\nWhat I am seeing now is extra things appended to the filename sent to Jmol (I'd have to start a sniffer to check out the header stuff I've seen before).  So instead of a filename like \"/home/Test/0/cells/1/sage0-size500.jmol\" being passed to Jmol something like this is passed \"/home/Test/0/cells/1/sage0-size500.jmol?1300976412\".  So Jmol cannot find the data as that file doesn't exist.  Are you sure you don't see blank Jmols when you open the examples in FF when logged in to my example server?\n\nProper behavior is what I've seen with webkit browsers on MacOS and Linux.\u00a0 Things work fine with FF on Linux as well.\n\nThe change in placement of the \"on\" checkbox for color can be changed.",
+    "body": "Replying to [comment:122 kcrisman]:\n\n> Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!\n\n\nOK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.\n\n> > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n\n> Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n\nUh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n\nWhat I am seeing now is extra things appended to the filename sent to Jmol (I'd have to start a sniffer to check out the header stuff I've seen before).  So instead of a filename like \"/home/Test/0/cells/1/sage0-size500.jmol\" being passed to Jmol something like this is passed \"/home/Test/0/cells/1/sage0-size500.jmol?1300976412\".  So Jmol cannot find the data as that file doesn't exist.  Are you sure you don't see blank Jmols when you open the examples in FF when logged in to my example server?\n\nProper behavior is what I've seen with webkit browsers on MacOS and Linux.\u00a0 Things work fine with FF on Linux as well.\n\nThe change in placement of the \"on\" checkbox for color can be changed.",
     "created_at": "2011-03-24T14:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3197,9 +3219,11 @@ Replying to [comment:122 kcrisman]:
 
 > Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says "3-D display size:" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!
 
+
 OK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.
 
 > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.
+
 > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.
 
 Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.
@@ -3217,7 +3241,7 @@ The change in placement of the "on" checkbox for color can be changed.
 archive/issue_comments_086700.json:
 ```json
 {
-    "body": "Replying to [comment:124 gutow]:\n> Replying to [comment:122 kcrisman]:\n> \n> > Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!\n> \n> OK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.\n\nAnyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.\n\n> > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n> > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n> \n> Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n\nHmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24.\n\nThis time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that didn't happen an hour ago.",
+    "body": "Replying to [comment:124 gutow]:\n> Replying to [comment:122 kcrisman]:\n> \n> > Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says \"3-D display size:\" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!\n\n> \n> OK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.\n\n\nAnyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.\n\n> > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n\n> > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n> \n> Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n\n\nHmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24.\n\nThis time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that didn't happen an hour ago.",
     "created_at": "2011-03-24T15:09:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3230,15 +3254,19 @@ Replying to [comment:124 gutow]:
 > Replying to [comment:122 kcrisman]:
 > 
 > > Okay, here are my recommendations. * To ensure good memory usage for many systems, reduce the number of 'awake' applets at any one time by one, to four.  Eventually this could be user-customizable, I suppose. * Remove the pull-down menu that says "3-D display size:" with different pixel sizes, as it either doesn't work or produces poor results.  In addition, at least in my testing on your server just now, I can't get the applet to sleep after I use that menu!
+
 > 
 > OK, I now see something like this in FF if I have lots of things (not just applets) open in FF 3.6.  I'm guessing another browser memory issue.  Doesn't reproduce in FF 4, which was just released.
+
 
 Anyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.
 
 > > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.
+
 > > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.
 > 
 > Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.
+
 
 Hmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24.
 
@@ -3251,7 +3279,7 @@ This time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that d
 archive/issue_comments_086701.json:
 ```json
 {
-    "body": "Replying to [comment:125 kcrisman]:\n\n> Anyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.\n\nBut now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n\n> > > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n> > > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n> > Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n> Hmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24. This time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that didn't happen an hour ago.\n\nI'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.\u00a0 I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.",
+    "body": "Replying to [comment:125 kcrisman]:\n\n> Anyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.\n\n\nBut now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n\n> > > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.\n\n> > > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.\n> > Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.\n\n> Hmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24. This time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that didn't happen an hour ago.\n\nI'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.\u00a0 I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.",
     "created_at": "2011-03-24T15:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3264,11 +3292,14 @@ Replying to [comment:125 kcrisman]:
 
 > Anyway, I still think that for now we can remove the pull-down menu (temporarily) if the pop-out window works ok.
 
+
 But now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?
 
 > > > > the twisted server appends html header information to the script files with MacOS FF when the user is logged in.  I would need to do more investigating to provide a detailed bug report.
+
 > > > Like I said, I didn't have this problem, even with your server and Mac FF, but you might as well put the info of where you found this info on the ticket somewhere.
 > > Uh-Oh!  This is inconsistent behavior please post your MacOS, FF and JavaVM version #'s.
+
 > Hmm.  I have 10.6.7, FF 3.6.13, Jmol menu says I have Apple Java !1.6.0_24. This time, it just totally froze FF.  Yes, blank Jmols.  But like I said, that didn't happen an hour ago.
 
 I'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.  I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.
@@ -3280,7 +3311,7 @@ I'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 
 archive/issue_comments_086702.json:
 ```json
 {
-    "body": "> But now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n\nNo.  Way too many users default to FF on Mac OS, IIRC.\n\nI tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  On my nice new one, I actually keep being able to freeze FF 3.6.13 with a wrong click here or there, but in general it worked; I didn't have empty Jmols.\n\nIn fact, the only empty Jmols I saw were ones that were just waiting to be seen; once I waited a little bit, they appeared.  Until I requested a function or something weird too early.  There must be some bad memory handling on FF 3.6 on Mac, maybe.  But the thing you are describing is not what I am seeing; certainly not trouble finding the Jmols themselves.  Can you borrow a colleague's Mac with FF to test this?\n\n> I'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.\u00a0 I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.\n\nI think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.",
+    "body": "> But now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n\n\nNo.  Way too many users default to FF on Mac OS, IIRC.\n\nI tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  On my nice new one, I actually keep being able to freeze FF 3.6.13 with a wrong click here or there, but in general it worked; I didn't have empty Jmols.\n\nIn fact, the only empty Jmols I saw were ones that were just waiting to be seen; once I waited a little bit, they appeared.  Until I requested a function or something weird too early.  There must be some bad memory handling on FF 3.6 on Mac, maybe.  But the thing you are describing is not what I am seeing; certainly not trouble finding the Jmols themselves.  Can you borrow a colleague's Mac with FF to test this?\n\n> I'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.\u00a0 I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.\n\n\nI think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.",
     "created_at": "2011-03-24T16:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3291,6 +3322,7 @@ archive/issue_comments_086702.json:
 
 > But now we're both seeing that logged in users can't use FF (by the way I've seen this problem for a number of years even without any updates to Jmol or the notebook).  Can we recommend against using FF on MacOS as it doesn't work reliably anyway?
 
+
 No.  Way too many users default to FF on Mac OS, IIRC.
 
 I tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  On my nice new one, I actually keep being able to freeze FF 3.6.13 with a wrong click here or there, but in general it worked; I didn't have empty Jmols.
@@ -3298,6 +3330,7 @@ I tested this again on your server on two different Macs.  On the very old slow 
 In fact, the only empty Jmols I saw were ones that were just waiting to be seen; once I waited a little bit, they appeared.  Until I requested a function or something weird too early.  There must be some bad memory handling on FF 3.6 on Mac, maybe.  But the thing you are describing is not what I am seeing; certainly not trouble finding the Jmols themselves.  Can you borrow a colleague's Mac with FF to test this?
 
 > I'm testing against 10.6.6, but otherwise the same as you. (also just tested FF 3.6.14-same results). This gives me a little to go on, but I fear if we choose to call this a blocker we will be waiting for a significant notebook rewrite.  I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.
+
 
 I think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.
 
@@ -3308,7 +3341,7 @@ I think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has 
 archive/issue_comments_086703.json:
 ```json
 {
-    "body": "Replying to [comment:127 kcrisman]:\n\n> > Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n> No. Way too many users default to FF on Mac OS, IIRC.\n\nMakes sense.\n\n> I tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  [snip. Can you borrow a colleague's Mac with FF to test this?\n\nI'm in charge of about 30 computers for my department.  I've tried it on many of them with the same results.\n\n> > I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.\n> I think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.\n\nSo here are my priorities:\n\n1. Lower # of live Jmols (easy, I've got a place to do that.)\n2. Check Browser/OS combination before launch of first Jmol.\u00a0 Pop alert if FF+MacOS.\u00a0 Should I only do this for logged in users or always?\n3. Sleep all (or all but one) Jmol applet when pop-up Jmol is activated.\n\nI'm just about to the end of my school break so I want to work on the highest priority things now.\u00a0 Things will proceed much more slowly starting next week.",
+    "body": "Replying to [comment:127 kcrisman]:\n\n> > Can we recommend against using FF on MacOS as it doesn't work reliably anyway?\n\n> No. Way too many users default to FF on Mac OS, IIRC.\n\nMakes sense.\n\n> I tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  [snip. Can you borrow a colleague's Mac with FF to test this?\n\n\nI'm in charge of about 30 computers for my department.  I've tried it on many of them with the same results.\n\n> > I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.\n\n> I think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.\n\nSo here are my priorities:\n\n1. Lower # of live Jmols (easy, I've got a place to do that.)\n2. Check Browser/OS combination before launch of first Jmol.\u00a0 Pop alert if FF+MacOS.\u00a0 Should I only do this for logged in users or always?\n3. Sleep all (or all but one) Jmol applet when pop-up Jmol is activated.\n\nI'm just about to the end of my school break so I want to work on the highest priority things now.\u00a0 Things will proceed much more slowly starting next week.",
     "created_at": "2011-03-24T17:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3320,15 +3353,18 @@ archive/issue_comments_086703.json:
 Replying to [comment:127 kcrisman]:
 
 > > Can we recommend against using FF on MacOS as it doesn't work reliably anyway?
+
 > No. Way too many users default to FF on Mac OS, IIRC.
 
 Makes sense.
 
 > I tested this again on your server on two different Macs.  On the very old slow one (<1 GHz, FF 3.6.14), it was achingly slow, but no problems.  [snip. Can you borrow a colleague's Mac with FF to test this?
 
+
 I'm in charge of about 30 computers for my department.  I've tried it on many of them with the same results.
 
 > > I could put in a browser check that pops up an alert for MacOS users telling them to use Safari if they have problems.
+
 > I think that's not a bad idea.   As soon as a Java/Jmol is detected, if one has FF+Mac, the script for Jmol to the browser gives a little alert.  This shouldn't be default; lots of people use Sage without ever touching 3D plotting, and it could be confusing.
 
 So here are my priorities:
@@ -3346,7 +3382,7 @@ I'm just about to the end of my school break so I want to work on the highest pr
 archive/issue_comments_086704.json:
 ```json
 {
-    "body": "> So here are my priorities:\nUpdated list:\n\n1. Lower # of live Jmols (easy, I've got a place to do that.)\n2. Check Browser/OS combination before launch of first Jmol.\u00a0 Pop alert if FF+MacOS.\u00a0 \n3. Sleep all (or all but one) Jmol applet when pop-up Jmol is activated.\n4. Remove pull-down menu for size of applet (pixel #)\n5. Move the 'On?' checkbox so it's clear what's being turned on.\n\nAs for the second one, whatever is easier for you is fine.  Are you *sure* that this behavior was fairly frequent before?  I'd hate to have a lot of people complaining because we broke their Jmol.  I'm still perplexed by why you are so consistently getting these blank Jmols and I am not in FF.",
+    "body": "> So here are my priorities:\n\nUpdated list:\n\n1. Lower # of live Jmols (easy, I've got a place to do that.)\n2. Check Browser/OS combination before launch of first Jmol.\u00a0 Pop alert if FF+MacOS.\u00a0 \n3. Sleep all (or all but one) Jmol applet when pop-up Jmol is activated.\n4. Remove pull-down menu for size of applet (pixel #)\n5. Move the 'On?' checkbox so it's clear what's being turned on.\n\nAs for the second one, whatever is easier for you is fine.  Are you *sure* that this behavior was fairly frequent before?  I'd hate to have a lot of people complaining because we broke their Jmol.  I'm still perplexed by why you are so consistently getting these blank Jmols and I am not in FF.",
     "created_at": "2011-03-24T19:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3356,6 +3392,7 @@ archive/issue_comments_086704.json:
 ```
 
 > So here are my priorities:
+
 Updated list:
 
 1. Lower # of live Jmols (easy, I've got a place to do that.)
@@ -3417,7 +3454,7 @@ I'll try to do some checking on some of our IE equipped machines tomorrow.
 archive/issue_comments_086707.json:
 ```json
 {
-    "body": "> If I can get the browser check working properly I will hide the pull-down menu only for the MacOS FF combination, since I don't think we've seen problems with it in any other cases.\nYeah, I think my Safari problems with the pull-down menu must have been memory problems.\n> I'll try to do some checking on some of our IE equipped machines tomorrow.\nIE 7 doesn't work at all with Jmol, but even on XP it was no problem to upgrade to IE 8 and it worked ok there, except the \"Toggle Advanced Controls\" button didn't work at all.  Which means the functionality is the same as it was before, which is ok, I guess.\n\nI managed to crash my Safari several times just now by trying to evaluate another cell (in a worksheet of mine) that would produce an applet while several were open.  Ordinarily that just sleeps one of the other ones, but this particular one must have a malformed applet in its directory or something.  I'm going to try to see what's going on with it.  The error message talks about height and width =0 but should be >0, so maybe that's a clue...",
+    "body": "> If I can get the browser check working properly I will hide the pull-down menu only for the MacOS FF combination, since I don't think we've seen problems with it in any other cases.\n\nYeah, I think my Safari problems with the pull-down menu must have been memory problems.\n> I'll try to do some checking on some of our IE equipped machines tomorrow.\n\nIE 7 doesn't work at all with Jmol, but even on XP it was no problem to upgrade to IE 8 and it worked ok there, except the \"Toggle Advanced Controls\" button didn't work at all.  Which means the functionality is the same as it was before, which is ok, I guess.\n\nI managed to crash my Safari several times just now by trying to evaluate another cell (in a worksheet of mine) that would produce an applet while several were open.  Ordinarily that just sleeps one of the other ones, but this particular one must have a malformed applet in its directory or something.  I'm going to try to see what's going on with it.  The error message talks about height and width =0 but should be >0, so maybe that's a clue...",
     "created_at": "2011-03-25T01:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3427,8 +3464,10 @@ archive/issue_comments_086707.json:
 ```
 
 > If I can get the browser check working properly I will hide the pull-down menu only for the MacOS FF combination, since I don't think we've seen problems with it in any other cases.
+
 Yeah, I think my Safari problems with the pull-down menu must have been memory problems.
 > I'll try to do some checking on some of our IE equipped machines tomorrow.
+
 IE 7 doesn't work at all with Jmol, but even on XP it was no problem to upgrade to IE 8 and it worked ok there, except the "Toggle Advanced Controls" button didn't work at all.  Which means the functionality is the same as it was before, which is ok, I guess.
 
 I managed to crash my Safari several times just now by trying to evaluate another cell (in a worksheet of mine) that would produce an applet while several were open.  Ordinarily that just sleeps one of the other ones, but this particular one must have a malformed applet in its directory or something.  I'm going to try to see what's going on with it.  The error message talks about height and width =0 but should be >0, so maybe that's a clue...
@@ -3599,7 +3638,7 @@ I think this suggestion works.  The only problem is that Volker's patch really n
 archive/issue_comments_086716.json:
 ```json
 {
-    "body": "Replying to [comment:140 gutow]:\n> I think this suggestion works.  The only problem is that Volker's patch really needs to be included in any update to Sage as well.\u00a0 \nI don't see why it couldn't be folded immediately.  It is a very small change, and a sensible one - one that doesn't depend on any sagenb or jmol stuff.\n>Can it be made high enough priority that it will be folded in?\u00a0 The only other option I see is to include it here and close that ticket.\nI don't think that will be necessary.  I think that making #9232 just about that makes sense.  His fix would work with both old and new Jmol, right?  I mean, it's just changing how the binary is called...",
+    "body": "Replying to [comment:140 gutow]:\n> I think this suggestion works.  The only problem is that Volker's patch really needs to be included in any update to Sage as well.\u00a0 \n\nI don't see why it couldn't be folded immediately.  It is a very small change, and a sensible one - one that doesn't depend on any sagenb or jmol stuff.\n>Can it be made high enough priority that it will be folded in?\u00a0 The only other option I see is to include it here and close that ticket.\n\nI don't think that will be necessary.  I think that making #9232 just about that makes sense.  His fix would work with both old and new Jmol, right?  I mean, it's just changing how the binary is called...",
     "created_at": "2011-03-29T01:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3610,8 +3649,10 @@ archive/issue_comments_086716.json:
 
 Replying to [comment:140 gutow]:
 > I think this suggestion works.  The only problem is that Volker's patch really needs to be included in any update to Sage as well.  
+
 I don't see why it couldn't be folded immediately.  It is a very small change, and a sensible one - one that doesn't depend on any sagenb or jmol stuff.
 >Can it be made high enough priority that it will be folded in?  The only other option I see is to include it here and close that ticket.
+
 I don't think that will be necessary.  I think that making #9232 just about that makes sense.  His fix would work with both old and new Jmol, right?  I mean, it's just changing how the binary is called...
 
 
@@ -3715,7 +3756,7 @@ So from now on this ticket can feel free to focus only on Jmol update, and whate
 archive/issue_comments_086722.json:
 ```json
 {
-    "body": "Replying to [comment:144 gutow]:\n> This last patch tried to fix IE not working with advanced toggle button, but it didn't work. \u00a0Did significantly lower Jmol memory usage. \u00a0This should improve Safari performance. \u00a0Note this also gets rid of the white\u00a0speckles that Jason complained about because no antialiasing is done.\u00a0\n\n+1 to turning off antialiasing (which is what we have currently with our old version of Jmol, right?) until we figure out that white sparkle issue with gridlines.\n\nIn Sage, you have jqueryui; I wonder if using a toggle button from jqueryui might be more cross-platform, if we're not using it now.",
+    "body": "Replying to [comment:144 gutow]:\n> This last patch tried to fix IE not working with advanced toggle button, but it didn't work. \u00a0Did significantly lower Jmol memory usage. \u00a0This should improve Safari performance. \u00a0Note this also gets rid of the white\u00a0speckles that Jason complained about because no antialiasing is done.\u00a0\n\n\n+1 to turning off antialiasing (which is what we have currently with our old version of Jmol, right?) until we figure out that white sparkle issue with gridlines.\n\nIn Sage, you have jqueryui; I wonder if using a toggle button from jqueryui might be more cross-platform, if we're not using it now.",
     "created_at": "2011-03-29T14:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3726,6 +3767,7 @@ archive/issue_comments_086722.json:
 
 Replying to [comment:144 gutow]:
 > This last patch tried to fix IE not working with advanced toggle button, but it didn't work.  Did significantly lower Jmol memory usage.  This should improve Safari performance.  Note this also gets rid of the white speckles that Jason complained about because no antialiasing is done. 
+
 
 +1 to turning off antialiasing (which is what we have currently with our old version of Jmol, right?) until we figure out that white sparkle issue with gridlines.
 
@@ -3738,7 +3780,7 @@ In Sage, you have jqueryui; I wonder if using a toggle button from jqueryui migh
 archive/issue_comments_086723.json:
 ```json
 {
-    "body": "Replying to [comment:146 jason]:\n\n> In Sage, you have jqueryui; I wonder if using a toggle button from jqueryui might be more cross-platform, if we're not using it now.\nWe are using the jqueryui toggle() feature.  The problem seems to be with how IE handles calling strings as functions inside buttons.  I've tried forcing the use of eval(), but that didn't help.  May have to resort to a function call that calls toggle() on a string.",
+    "body": "Replying to [comment:146 jason]:\n\n> In Sage, you have jqueryui; I wonder if using a toggle button from jqueryui might be more cross-platform, if we're not using it now.\n\nWe are using the jqueryui toggle() feature.  The problem seems to be with how IE handles calling strings as functions inside buttons.  I've tried forcing the use of eval(), but that didn't help.  May have to resort to a function call that calls toggle() on a string.",
     "created_at": "2011-03-29T14:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3750,6 +3792,7 @@ archive/issue_comments_086723.json:
 Replying to [comment:146 jason]:
 
 > In Sage, you have jqueryui; I wonder if using a toggle button from jqueryui might be more cross-platform, if we're not using it now.
+
 We are using the jqueryui toggle() feature.  The problem seems to be with how IE handles calling strings as functions inside buttons.  I've tried forcing the use of eval(), but that didn't help.  May have to resort to a function call that calls toggle() on a string.
 
 
@@ -3889,7 +3932,7 @@ Changing keywords from "" to "sd31".
 archive/issue_comments_086731.json:
 ```json
 {
-    "body": "Some nitpicks with spkg-install in http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.7.spkg\n\n1. Delete all the commented out code from spkg-install.  It is *not* comments, but code that makes no sense now.  It just makes it harder to read spkg-install.  The original code is in the hg history, anyways.\n\n2. You use \"cp -v\" near the bottom, but this is not POSIX compliant, e.g., on Solaris we have:\n\n```\nwstein@t2:~$ touch a\nwstein@t2:~$ cp -v a b\ncp: illegal option -- v\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\n\n(Yep, I learned something from David Kirkby.)",
+    "body": "Some nitpicks with spkg-install in http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.7.spkg\n\n1. Delete all the commented out code from spkg-install.  It is *not* comments, but code that makes no sense now.  It just makes it harder to read spkg-install.  The original code is in the hg history, anyways.\n\n2. You use \"cp -v\" near the bottom, but this is not POSIX compliant, e.g., on Solaris we have:\n\n```\nwstein@t2:~$ touch a\nwstein@t2:~$ cp -v a b\ncp: illegal option -- v\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\n(Yep, I learned something from David Kirkby.)",
     "created_at": "2011-06-17T01:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3913,7 +3956,6 @@ Usage: cp [-f] [-i] [-p] [-@] f1 f2
        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 ```
 
-
 (Yep, I learned something from David Kirkby.)
 
 
@@ -3923,7 +3965,7 @@ Usage: cp [-f] [-i] [-p] [-@] f1 f2
 archive/issue_comments_086732.json:
 ```json
 {
-    "body": "> (Yep, I learned something from David Kirkby.)\n\n :)",
+    "body": "> (Yep, I learned something from David Kirkby.)\n\n\n :)",
     "created_at": "2011-06-17T02:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -3933,6 +3975,7 @@ archive/issue_comments_086732.json:
 ```
 
 > (Yep, I learned something from David Kirkby.)
+
 
  :)
 
@@ -4083,7 +4126,7 @@ Changing keywords from "sd31" to "sd31, sd32".
 archive/issue_comments_086740.json:
 ```json
 {
-    "body": "I've tested some of the features of this ticket on vanilla sage-4.7.2.alpha2 and I have some questions. I installed Jmol_for_SageNoteBook-1.1.6.spkg and applied the patches\n\n```\ntrac_9238_interactive_js.patch\ntrac_9238-add-help.patch\ntrac_9238_jmol_lib_async.patch\n```\n\nThe add-help patch would not apply with the response that a JmolHelp.html file already existed. I did not attempt to apply the IE patches. After applying the patches I issued \"sage -b\" and started sage and the notebook. Now when I load a worksheet that has Jmol applets I get pop-ups. If there are numerous applets, I get numerous pop-ups. These pop-ups seem to be triggered by the follow alerts in trac_9238_jmol_lib_async.patch\n\n```\n+    if(loading>=0){//we found a loading applet\n+        jmolStatus.attempts[loading]+=1; //update number of checks for load completion.\n+        if(jmolStatus.defaultdirectory[loading]==\"done\"){//Applet is ready.\n+            jmolAppletLive(loading);\n+            }else{ //Applet not ready. How many checks have we done?\n+            if(jmolStatus.attempts[loading]==10){\n+                alert(\"Jmol Applet #\"+loading+\" is having trouble loading.  Will retry once.\");\n+                var scriptStr = 'x=defaultdirectory; data \"directory @x\";';\n+                scriptStr += 'set MessageCallback \"jmolMessageHandler\"; show defaultdirectory;';\n+                jmolScript(scriptStr);\n+                }\n+            if(jmolStatus.attempts[loading]==20){\n+                alert(\"Second attempt to finish launch of Jmol Applet #\"+loading+\" failed.  Recommend reevaluating the cell manually.\");\n+                jmolStatus.jmolArray[loading]=-2; //launch failed.\n+                }\n+            }\n+        }else{//no loading applets. Search for queued applet.\n```\n\nsince the quoted expressions in the alerts appear in the pop-ups. Loading the applets is extremely slow and the pop-ups have to be \"clicked\" before loading continues. Now if I do not install trac_9238_jmol_lib_async.patch then I do not get the pop-ups and the loading of the applets is much faster. I have used Firefox 3 and Firefox 6 with the same result. Are the pop-ups a feature or is the jmol_lib_async only intended for safari browsers?",
+    "body": "I've tested some of the features of this ticket on vanilla sage-4.7.2.alpha2 and I have some questions. I installed Jmol_for_SageNoteBook-1.1.6.spkg and applied the patches\n\n```\ntrac_9238_interactive_js.patch\ntrac_9238-add-help.patch\ntrac_9238_jmol_lib_async.patch\n```\nThe add-help patch would not apply with the response that a JmolHelp.html file already existed. I did not attempt to apply the IE patches. After applying the patches I issued \"sage -b\" and started sage and the notebook. Now when I load a worksheet that has Jmol applets I get pop-ups. If there are numerous applets, I get numerous pop-ups. These pop-ups seem to be triggered by the follow alerts in trac_9238_jmol_lib_async.patch\n\n```\n+    if(loading>=0){//we found a loading applet\n+        jmolStatus.attempts[loading]+=1; //update number of checks for load completion.\n+        if(jmolStatus.defaultdirectory[loading]==\"done\"){//Applet is ready.\n+            jmolAppletLive(loading);\n+            }else{ //Applet not ready. How many checks have we done?\n+            if(jmolStatus.attempts[loading]==10){\n+                alert(\"Jmol Applet #\"+loading+\" is having trouble loading.  Will retry once.\");\n+                var scriptStr = 'x=defaultdirectory; data \"directory @x\";';\n+                scriptStr += 'set MessageCallback \"jmolMessageHandler\"; show defaultdirectory;';\n+                jmolScript(scriptStr);\n+                }\n+            if(jmolStatus.attempts[loading]==20){\n+                alert(\"Second attempt to finish launch of Jmol Applet #\"+loading+\" failed.  Recommend reevaluating the cell manually.\");\n+                jmolStatus.jmolArray[loading]=-2; //launch failed.\n+                }\n+            }\n+        }else{//no loading applets. Search for queued applet.\n```\nsince the quoted expressions in the alerts appear in the pop-ups. Loading the applets is extremely slow and the pop-ups have to be \"clicked\" before loading continues. Now if I do not install trac_9238_jmol_lib_async.patch then I do not get the pop-ups and the loading of the applets is much faster. I have used Firefox 3 and Firefox 6 with the same result. Are the pop-ups a feature or is the jmol_lib_async only intended for safari browsers?",
     "created_at": "2011-09-04T03:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -4099,7 +4142,6 @@ trac_9238_interactive_js.patch
 trac_9238-add-help.patch
 trac_9238_jmol_lib_async.patch
 ```
-
 The add-help patch would not apply with the response that a JmolHelp.html file already existed. I did not attempt to apply the IE patches. After applying the patches I issued "sage -b" and started sage and the notebook. Now when I load a worksheet that has Jmol applets I get pop-ups. If there are numerous applets, I get numerous pop-ups. These pop-ups seem to be triggered by the follow alerts in trac_9238_jmol_lib_async.patch
 
 ```
@@ -4121,7 +4163,6 @@ The add-help patch would not apply with the response that a JmolHelp.html file a
 +            }
 +        }else{//no loading applets. Search for queued applet.
 ```
-
 since the quoted expressions in the alerts appear in the pop-ups. Loading the applets is extremely slow and the pop-ups have to be "clicked" before loading continues. Now if I do not install trac_9238_jmol_lib_async.patch then I do not get the pop-ups and the loading of the applets is much faster. I have used Firefox 3 and Firefox 6 with the same result. Are the pop-ups a feature or is the jmol_lib_async only intended for safari browsers?
 
 
@@ -4161,7 +4202,7 @@ Replying to [comment:172 strogdon]:
 archive/issue_comments_086742.json:
 ```json
 {
-    "body": "Replying to [comment:173 gutow]:\n\n> First, take note of the first paragraph of this ticket.  Because this involves working with the notebook interface all development since June 2011 has been on the Flask notebook version.  That means the package and patches here have not been updated since about 4.7.1.  They are up primarily so that people using 4.7.1 and older can get the controls that allow changing the display of surfaces.  Development has been limited to the Flask version of the notebook.  I have very limited time to work on this (I'm a chemistry professor), but if the Flask notebook is going to be severely delayed could try to package a version to work with the older notebook.\n\nNo problem relative to time since things are rather busy here now too.\n\n> If you really want to test this you should test it in a Flask install (see the appropriate tickets). That said your concerns about the patch warnings are valid.  I did not know that any of it had been folded into 4.7.2.  This is odd. The pop-up warnings are because your server connection is relatively slow.\n\nI believe the server (desktop) is fast enough. The pop-ups seem to be associated with an inability to put certain applets in a sleep state. This code\n\n\n```\nx,y=var('x y'); plot3d( 4*x*exp(-x^2-y^2), (x,-2,2), (y,-2,2) )\n```\n\ngenerates an applet that can be put in a sleep state. If I replicate the code, say ten times, in a worksheet then I have no problem loading the saved worksheet with and without the async patch. I get four active applets and six that are sleeping. However, things are faster without the patch. The following code\n\n\n```\nx, y = var('x y');W = plot3d(sin(pi*((x)^2+(y)^2))/2,(x,-1,1),(y,-1,1), frame=False,color='purple', opacity=0.8);S = sphere((0,0,0),size=0.3, color='red', aspect_ratio=[1,1,1]);show(W + S, figsize=8)\n```\n\ngenerates an applet that cannot put in a sleep state, at least here it can't. The 'frame=False' option seems to be controlling the inability to do this. I get pop-ups with just one applet in a worksheet, even though the applet appears to have loaded within a second or two. Of course there are no pop-ups without the async patch. If I replicate the code, say six times, in a worksheet then loading the worksheet is extremely tedious with the async patch since for each applet I eventually get two pop-ups. As I mentioned, I don't believe the desktop is slow. Without the patch the applets load immediately, particularly when 'Action -> Evaluate All' is used; but only four or so of them can be re-evaluated if done individually. Then, I get a pop-up with\n\n\n```\nTypeError: stateStr.match(re_modelinline) is null\n```\n\n> The notebook now allows about 15 seconds for an applet to load.  If it hasn't loaded by that time, one of these warnings pops up.  The idea is to provide some feedback when it takes a long time to load.  The reason for the async load code is that worksheets with lots of applets in them can overwhelm the browsers if too many applets try to load simultaneously.  This code requires them to load sequentially and limits worksheets to 4 running Jmol applets at a time.  Those that are not running are replaced with a picture and a button to wake them.  The primary reason for this is constraints on the memory available for applets within browsers.  The async code is for all browsers.  There are warnings associated with specific browsers that we have had difficulty with (e.g. MS IE and certain versions of FF and Safari). If your worksheets worked without the async code, that suggests you were: 1) lucky; 2) had only one or very few applets in your worksheet.\n\nLucky, perhaps but I certainly have more than a few applets. I can't see where the second chunk of code would be associated with slowness. Perhaps the 'frame=False' option is triggering something it shouldn't?\n\n> If your worksheet did not work at all with the async code could you package it up so that we could test it in the latest code? Thanks.\n\nI would be nice to know if the same behavior is present in the flask-notebook. I could do this but it would take some time. Hopefully, the code I've provided can be easily tested by someone that has the flask stuff in place.\n\n> Does this answer your questions?  I think the key message is that without more work on my part the enhanced Jmol interface may be tied to the Flask notebook.\n\nThanks for your feedback. It has caused me to look more carefully at what I've been doing. FWIW, the jmol issue surfaced in using the sage-on-gentoo port of Sage. There jmol has been outside the notebook for some time. But only recently, with jmol-12.0.45 and the patches of this ticket, have things started to act up. There is, not yet, a flask-notebook in sage-on-gentoo. And I'm guessing it won't be in sage-on-gentoo until it appears in Sage first. Therefore my ramblings here have been an attempt to determine whether vanilla Sage with the present notebook has the same issues as I have with sage-on-gentoo. It seems it does.",
+    "body": "Replying to [comment:173 gutow]:\n\n> First, take note of the first paragraph of this ticket.  Because this involves working with the notebook interface all development since June 2011 has been on the Flask notebook version.  That means the package and patches here have not been updated since about 4.7.1.  They are up primarily so that people using 4.7.1 and older can get the controls that allow changing the display of surfaces.  Development has been limited to the Flask version of the notebook.  I have very limited time to work on this (I'm a chemistry professor), but if the Flask notebook is going to be severely delayed could try to package a version to work with the older notebook.\n\n\nNo problem relative to time since things are rather busy here now too.\n\n> If you really want to test this you should test it in a Flask install (see the appropriate tickets). That said your concerns about the patch warnings are valid.  I did not know that any of it had been folded into 4.7.2.  This is odd. The pop-up warnings are because your server connection is relatively slow.\n\n\nI believe the server (desktop) is fast enough. The pop-ups seem to be associated with an inability to put certain applets in a sleep state. This code\n\n```\nx,y=var('x y'); plot3d( 4*x*exp(-x^2-y^2), (x,-2,2), (y,-2,2) )\n```\ngenerates an applet that can be put in a sleep state. If I replicate the code, say ten times, in a worksheet then I have no problem loading the saved worksheet with and without the async patch. I get four active applets and six that are sleeping. However, things are faster without the patch. The following code\n\n```\nx, y = var('x y');W = plot3d(sin(pi*((x)^2+(y)^2))/2,(x,-1,1),(y,-1,1), frame=False,color='purple', opacity=0.8);S = sphere((0,0,0),size=0.3, color='red', aspect_ratio=[1,1,1]);show(W + S, figsize=8)\n```\ngenerates an applet that cannot put in a sleep state, at least here it can't. The 'frame=False' option seems to be controlling the inability to do this. I get pop-ups with just one applet in a worksheet, even though the applet appears to have loaded within a second or two. Of course there are no pop-ups without the async patch. If I replicate the code, say six times, in a worksheet then loading the worksheet is extremely tedious with the async patch since for each applet I eventually get two pop-ups. As I mentioned, I don't believe the desktop is slow. Without the patch the applets load immediately, particularly when 'Action -> Evaluate All' is used; but only four or so of them can be re-evaluated if done individually. Then, I get a pop-up with\n\n```\nTypeError: stateStr.match(re_modelinline) is null\n```\n> The notebook now allows about 15 seconds for an applet to load.  If it hasn't loaded by that time, one of these warnings pops up.  The idea is to provide some feedback when it takes a long time to load.  The reason for the async load code is that worksheets with lots of applets in them can overwhelm the browsers if too many applets try to load simultaneously.  This code requires them to load sequentially and limits worksheets to 4 running Jmol applets at a time.  Those that are not running are replaced with a picture and a button to wake them.  The primary reason for this is constraints on the memory available for applets within browsers.  The async code is for all browsers.  There are warnings associated with specific browsers that we have had difficulty with (e.g. MS IE and certain versions of FF and Safari). If your worksheets worked without the async code, that suggests you were: 1) lucky; 2) had only one or very few applets in your worksheet.\n\n\nLucky, perhaps but I certainly have more than a few applets. I can't see where the second chunk of code would be associated with slowness. Perhaps the 'frame=False' option is triggering something it shouldn't?\n\n> If your worksheet did not work at all with the async code could you package it up so that we could test it in the latest code? Thanks.\n\n\nI would be nice to know if the same behavior is present in the flask-notebook. I could do this but it would take some time. Hopefully, the code I've provided can be easily tested by someone that has the flask stuff in place.\n\n> Does this answer your questions?  I think the key message is that without more work on my part the enhanced Jmol interface may be tied to the Flask notebook.\n\n\nThanks for your feedback. It has caused me to look more carefully at what I've been doing. FWIW, the jmol issue surfaced in using the sage-on-gentoo port of Sage. There jmol has been outside the notebook for some time. But only recently, with jmol-12.0.45 and the patches of this ticket, have things started to act up. There is, not yet, a flask-notebook in sage-on-gentoo. And I'm guessing it won't be in sage-on-gentoo until it appears in Sage first. Therefore my ramblings here have been an attempt to determine whether vanilla Sage with the present notebook has the same issues as I have with sage-on-gentoo. It seems it does.",
     "created_at": "2011-09-07T19:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -4174,40 +4215,39 @@ Replying to [comment:173 gutow]:
 
 > First, take note of the first paragraph of this ticket.  Because this involves working with the notebook interface all development since June 2011 has been on the Flask notebook version.  That means the package and patches here have not been updated since about 4.7.1.  They are up primarily so that people using 4.7.1 and older can get the controls that allow changing the display of surfaces.  Development has been limited to the Flask version of the notebook.  I have very limited time to work on this (I'm a chemistry professor), but if the Flask notebook is going to be severely delayed could try to package a version to work with the older notebook.
 
+
 No problem relative to time since things are rather busy here now too.
 
 > If you really want to test this you should test it in a Flask install (see the appropriate tickets). That said your concerns about the patch warnings are valid.  I did not know that any of it had been folded into 4.7.2.  This is odd. The pop-up warnings are because your server connection is relatively slow.
 
-I believe the server (desktop) is fast enough. The pop-ups seem to be associated with an inability to put certain applets in a sleep state. This code
 
+I believe the server (desktop) is fast enough. The pop-ups seem to be associated with an inability to put certain applets in a sleep state. This code
 
 ```
 x,y=var('x y'); plot3d( 4*x*exp(-x^2-y^2), (x,-2,2), (y,-2,2) )
 ```
-
 generates an applet that can be put in a sleep state. If I replicate the code, say ten times, in a worksheet then I have no problem loading the saved worksheet with and without the async patch. I get four active applets and six that are sleeping. However, things are faster without the patch. The following code
-
 
 ```
 x, y = var('x y');W = plot3d(sin(pi*((x)^2+(y)^2))/2,(x,-1,1),(y,-1,1), frame=False,color='purple', opacity=0.8);S = sphere((0,0,0),size=0.3, color='red', aspect_ratio=[1,1,1]);show(W + S, figsize=8)
 ```
-
 generates an applet that cannot put in a sleep state, at least here it can't. The 'frame=False' option seems to be controlling the inability to do this. I get pop-ups with just one applet in a worksheet, even though the applet appears to have loaded within a second or two. Of course there are no pop-ups without the async patch. If I replicate the code, say six times, in a worksheet then loading the worksheet is extremely tedious with the async patch since for each applet I eventually get two pop-ups. As I mentioned, I don't believe the desktop is slow. Without the patch the applets load immediately, particularly when 'Action -> Evaluate All' is used; but only four or so of them can be re-evaluated if done individually. Then, I get a pop-up with
-
 
 ```
 TypeError: stateStr.match(re_modelinline) is null
 ```
-
 > The notebook now allows about 15 seconds for an applet to load.  If it hasn't loaded by that time, one of these warnings pops up.  The idea is to provide some feedback when it takes a long time to load.  The reason for the async load code is that worksheets with lots of applets in them can overwhelm the browsers if too many applets try to load simultaneously.  This code requires them to load sequentially and limits worksheets to 4 running Jmol applets at a time.  Those that are not running are replaced with a picture and a button to wake them.  The primary reason for this is constraints on the memory available for applets within browsers.  The async code is for all browsers.  There are warnings associated with specific browsers that we have had difficulty with (e.g. MS IE and certain versions of FF and Safari). If your worksheets worked without the async code, that suggests you were: 1) lucky; 2) had only one or very few applets in your worksheet.
+
 
 Lucky, perhaps but I certainly have more than a few applets. I can't see where the second chunk of code would be associated with slowness. Perhaps the 'frame=False' option is triggering something it shouldn't?
 
 > If your worksheet did not work at all with the async code could you package it up so that we could test it in the latest code? Thanks.
 
+
 I would be nice to know if the same behavior is present in the flask-notebook. I could do this but it would take some time. Hopefully, the code I've provided can be easily tested by someone that has the flask stuff in place.
 
 > Does this answer your questions?  I think the key message is that without more work on my part the enhanced Jmol interface may be tied to the Flask notebook.
+
 
 Thanks for your feedback. It has caused me to look more carefully at what I've been doing. FWIW, the jmol issue surfaced in using the sage-on-gentoo port of Sage. There jmol has been outside the notebook for some time. But only recently, with jmol-12.0.45 and the patches of this ticket, have things started to act up. There is, not yet, a flask-notebook in sage-on-gentoo. And I'm guessing it won't be in sage-on-gentoo until it appears in Sage first. Therefore my ramblings here have been an attempt to determine whether vanilla Sage with the present notebook has the same issues as I have with sage-on-gentoo. It seems it does.
 
@@ -4272,7 +4312,7 @@ I just found something.  Is this what you are describing?  I don't see it all 
 archive/issue_comments_086745.json:
 ```json
 {
-    "body": "Replying to [comment:175 gutow]:\n\n> Replying to [comment:174 strogdon]: Thanks for the code snippets.  I have run them through a system with most of our latest patches in the flask version.  They do not seem to be problematic.  I had no trouble with a worksheet using your second (no-frame) example with 12 duplicates in a worksheet.  It does take a while to work its way back to the top from the 12th applet (about 25 seconds using my slow home connection).  This was a relatively severe test as the whole connection is encrypted as well, which slows things down further.  I did get a warning pop-up while the system was waiting for me to OK trusting the applet over the encrypted connection when I evaluated the first cell.  Once this was done things worked rapidly each time I evaluated an additional cell, because the applet was cached. Does that sound like I checked everything?\n\nThis sounds good. If you get 12 applets to load in 25 seconds with the (no-frame) option then the flask implementation is definitely an improvement. With the async patch I'm able to load 12 applets, with frames, over nfs in about 40 seconds. I get one sequence of pop-ups after everything has loaded relative to trouble loading jmol Applet #0. However, with the (no-frame) option I get a sequence of pop-ups for each loading Applet.\u00a0\n\nThe odd behavior with \"TypeError\" in a pop-up seems to occur only if the async patch isn't applied. With the async patch and with frames doing either of\n\n  a) select \"delete all output\", then select \"evaluate all\"\u00a0\n  b) select \"evaluate all\" without first deleting the output\n\ngives the above behavior of one sequence of pop-ups relative to loading jmol Applet #0. For the several times I've tried, all Applets do load.",
+    "body": "Replying to [comment:175 gutow]:\n\n> Replying to [comment:174 strogdon]: Thanks for the code snippets.  I have run them through a system with most of our latest patches in the flask version.  They do not seem to be problematic.  I had no trouble with a worksheet using your second (no-frame) example with 12 duplicates in a worksheet.  It does take a while to work its way back to the top from the 12th applet (about 25 seconds using my slow home connection).  This was a relatively severe test as the whole connection is encrypted as well, which slows things down further.  I did get a warning pop-up while the system was waiting for me to OK trusting the applet over the encrypted connection when I evaluated the first cell.  Once this was done things worked rapidly each time I evaluated an additional cell, because the applet was cached. Does that sound like I checked everything?\n\n\nThis sounds good. If you get 12 applets to load in 25 seconds with the (no-frame) option then the flask implementation is definitely an improvement. With the async patch I'm able to load 12 applets, with frames, over nfs in about 40 seconds. I get one sequence of pop-ups after everything has loaded relative to trouble loading jmol Applet #0. However, with the (no-frame) option I get a sequence of pop-ups for each loading Applet.\u00a0\n\nThe odd behavior with \"TypeError\" in a pop-up seems to occur only if the async patch isn't applied. With the async patch and with frames doing either of\n\n  a) select \"delete all output\", then select \"evaluate all\"\u00a0\n  b) select \"evaluate all\" without first deleting the output\n\ngives the above behavior of one sequence of pop-ups relative to loading jmol Applet #0. For the several times I've tried, all Applets do load.",
     "created_at": "2011-09-08T23:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
@@ -4284,6 +4324,7 @@ archive/issue_comments_086745.json:
 Replying to [comment:175 gutow]:
 
 > Replying to [comment:174 strogdon]: Thanks for the code snippets.  I have run them through a system with most of our latest patches in the flask version.  They do not seem to be problematic.  I had no trouble with a worksheet using your second (no-frame) example with 12 duplicates in a worksheet.  It does take a while to work its way back to the top from the 12th applet (about 25 seconds using my slow home connection).  This was a relatively severe test as the whole connection is encrypted as well, which slows things down further.  I did get a warning pop-up while the system was waiting for me to OK trusting the applet over the encrypted connection when I evaluated the first cell.  Once this was done things worked rapidly each time I evaluated an additional cell, because the applet was cached. Does that sound like I checked everything?
+
 
 This sounds good. If you get 12 applets to load in 25 seconds with the (no-frame) option then the flask implementation is definitely an improvement. With the async patch I'm able to load 12 applets, with frames, over nfs in about 40 seconds. I get one sequence of pop-ups after everything has loaded relative to trouble loading jmol Applet #0. However, with the (no-frame) option I get a sequence of pop-ups for each loading Applet. 
 

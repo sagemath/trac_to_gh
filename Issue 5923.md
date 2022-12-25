@@ -3,7 +3,7 @@
 archive/issues_005923.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThe ModularForms command has some slightly counter-intuitive behaviour on some types of input:\n\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
+    "body": "Assignee: @craigcitro\n\nThe ModularForms command has some slightly counter-intuitive behaviour on some types of input:\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
     "created_at": "2009-04-28T22:41:04Z",
     "labels": [
         "component: modular forms",
@@ -21,7 +21,6 @@ Assignee: @craigcitro
 
 The ModularForms command has some slightly counter-intuitive behaviour on some types of input:
 
-
 ```
 sage: ModularForms(gp(1),12)
 ---------------------------------------------------------------------------
@@ -36,7 +35,6 @@ GP/PARI ERROR:
   ***   expected character: ',' instead of: sage[4]=level(sage[3]);
                                                               ^-----
 ```
-
 
 I realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.
 

@@ -3,7 +3,7 @@
 archive/issues_009275.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nThis is from a user:\n\n\n```\n\nHi.\n\nI was recently trying to use the Simple Sage Server API as described here:\nhttp://www.sagemath.org/doc/reference/sagenb/simple/twist.html\nI am using the opensuse-64bit build of Sage-4.4.\n\nWell it didn't work (always got an error when I tried to compute\nsomething), so I started to follow the error.\n\nOn my way I found to Bugs:\n\nFile sage.server.notebook.worksheet, Line 3497, in def preparse(self, s)\nreplace:   s = preparse_file(s, magic=False, do_time=True,\nignore_prompts=False)\nwith   :   s = preparse_file(s)\n(The arguments magic and do_time do not exist in preparse_file)\n\nFile sage.server.notebook.worksheet, Line 2871, in def\nstart_next_comp(self) before:    input +=\n'sage.server.notebook.interact.SAGE_CELL_ID=%s\\n'%(C.id())\ninsert:    input += 'import sage.server.notebook.interact\\n'\n(You need to import the module before using it)\n\nWhen I applied those two patches the tutorial worked out for me.\n\ngreetings,\nDavid Poetzsch-Heffter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9275\n\n",
+    "body": "Assignee: jason, was\n\nThis is from a user:\n\n```\n\nHi.\n\nI was recently trying to use the Simple Sage Server API as described here:\nhttp://www.sagemath.org/doc/reference/sagenb/simple/twist.html\nI am using the opensuse-64bit build of Sage-4.4.\n\nWell it didn't work (always got an error when I tried to compute\nsomething), so I started to follow the error.\n\nOn my way I found to Bugs:\n\nFile sage.server.notebook.worksheet, Line 3497, in def preparse(self, s)\nreplace:   s = preparse_file(s, magic=False, do_time=True,\nignore_prompts=False)\nwith   :   s = preparse_file(s)\n(The arguments magic and do_time do not exist in preparse_file)\n\nFile sage.server.notebook.worksheet, Line 2871, in def\nstart_next_comp(self) before:    input +=\n'sage.server.notebook.interact.SAGE_CELL_ID=%s\\n'%(C.id())\ninsert:    input += 'import sage.server.notebook.interact\\n'\n(You need to import the module before using it)\n\nWhen I applied those two patches the tutorial worked out for me.\n\ngreetings,\nDavid Poetzsch-Heffter\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9275\n\n",
     "created_at": "2010-06-19T18:16:11Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_009275.json:
 Assignee: jason, was
 
 This is from a user:
-
 
 ```
 
@@ -51,7 +50,6 @@ When I applied those two patches the tutorial worked out for me.
 greetings,
 David Poetzsch-Heffter
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9275
 

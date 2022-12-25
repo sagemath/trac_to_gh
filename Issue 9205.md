@@ -3,7 +3,7 @@
 archive/issues_009205.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAt present, we have a discrete log function which claims to work for Z/NZ when this group is cyclic, but it can be wrong when N is not prime, as in this example:\n\n```\nsage: Mod(5,9).log(Mod(2, 9))\n6\nsage: sage: discrete_log(Mod(5, 9), Mod(2, 9))\n5\n```\n\n\nThe first answer is totally wrong, because Pari's znlog function is intended to be used with a prime modulus and silently returns junk in the non-prime case.\n\nI need to be able to express elements of Z/NZ* in terms of generators in the non-cyclic case anway, so I will fix this in the process.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9205\n\n",
+    "body": "Assignee: @williamstein\n\nAt present, we have a discrete log function which claims to work for Z/NZ when this group is cyclic, but it can be wrong when N is not prime, as in this example:\n\n```\nsage: Mod(5,9).log(Mod(2, 9))\n6\nsage: sage: discrete_log(Mod(5, 9), Mod(2, 9))\n5\n```\n\nThe first answer is totally wrong, because Pari's znlog function is intended to be used with a prime modulus and silently returns junk in the non-prime case.\n\nI need to be able to express elements of Z/NZ* in terms of generators in the non-cyclic case anway, so I will fix this in the process.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9205\n\n",
     "created_at": "2010-06-10T14:11:02Z",
     "labels": [
         "component: number theory",
@@ -26,7 +26,6 @@ sage: Mod(5,9).log(Mod(2, 9))
 sage: sage: discrete_log(Mod(5, 9), Mod(2, 9))
 5
 ```
-
 
 The first answer is totally wrong, because Pari's znlog function is intended to be used with a prime modulus and silently returns junk in the non-prime case.
 
@@ -153,7 +152,7 @@ apply over previous patch
 archive/issue_comments_086026.json:
 ```json
 {
-    "body": "Attachment [trac_9205-doctest.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-doctest.patch) by @loefflerd created at 2010-06-30 19:04:11\n\nReplying to [comment:2 cremona]:\n> Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.\n\n... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.",
+    "body": "Attachment [trac_9205-doctest.patch](tarball://root/attachments/some-uuid/ticket9205/trac_9205-doctest.patch) by @loefflerd created at 2010-06-30 19:04:11\n\nReplying to [comment:2 cremona]:\n> Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.\n\n\n... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.",
     "created_at": "2010-06-30T19:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9205",
     "type": "issue_comment",
@@ -166,6 +165,7 @@ Attachment [trac_9205-doctest.patch](tarball://root/attachments/some-uuid/ticket
 
 Replying to [comment:2 cremona]:
 > Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.
+
 
 ... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.
 

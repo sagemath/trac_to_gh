@@ -133,7 +133,7 @@ Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uui
 archive/issue_comments_060038.json:
 ```json
 {
-    "body": "Karl-Dieter,\n\nThanks for the comments.  I've replaced the patch with a new one addressing your comments.\n\nIf you test building the docs will you see if you get the warning\n\n\n```\n/doc/en/reference/sage/groups/perm_gps/permgroup_named.rst:: document isn't included in any toctree\n```\n\n\nThis file really needs a workover, and probably shouldn't be in the docs as-is, but I'm not sure if the warning was there before, or if I've induced it.\n\nThanks,\nRob",
+    "body": "Karl-Dieter,\n\nThanks for the comments.  I've replaced the patch with a new one addressing your comments.\n\nIf you test building the docs will you see if you get the warning\n\n```\n/doc/en/reference/sage/groups/perm_gps/permgroup_named.rst:: document isn't included in any toctree\n```\n\nThis file really needs a workover, and probably shouldn't be in the docs as-is, but I'm not sure if the warning was there before, or if I've induced it.\n\nThanks,\nRob",
     "created_at": "2009-10-22T02:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
@@ -148,11 +148,9 @@ Thanks for the comments.  I've replaced the patch with a new one addressing your
 
 If you test building the docs will you see if you get the warning
 
-
 ```
 /doc/en/reference/sage/groups/perm_gps/permgroup_named.rst:: document isn't included in any toctree
 ```
-
 
 This file really needs a workover, and probably shouldn't be in the docs as-is, but I'm not sure if the warning was there before, or if I've induced it.
 

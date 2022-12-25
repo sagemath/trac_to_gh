@@ -3,7 +3,7 @@
 archive/issues_009979.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @nilesjohnson\n\nKeywords: power series, deprecation warning\n\nMultivariate power series are implemented by #1956.  As mentioned on that ticket, the existing code for `PowerSeriesRing` did not allow multivariate power series rings to be constructed using the same arguments as multivariate polynomials accept:\n\n\n```\nsage: T = PowerSeriesRing(QQ,3,'t'); T\nMultivariate Power Series Ring in t0, t1, t2 over Rational Field\n\nsage: T = PowerSeriesRing(QQ,'t',3); T\nPower Series Ring in t over Rational Field\nsage: T.default_prec()\n3\n\nsage: P = PolynomialRing(QQ,'t',3); P\nMultivariate Polynomial Ring in t0, t1, t2 over Rational Field\n```\n\n\nThere is a non-trivial body of code (elliptic curves, and maybe p-adics) which makes use of this syntax.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9980\n\n",
+    "body": "Assignee: @malb\n\nCC:  @nilesjohnson\n\nKeywords: power series, deprecation warning\n\nMultivariate power series are implemented by #1956.  As mentioned on that ticket, the existing code for `PowerSeriesRing` did not allow multivariate power series rings to be constructed using the same arguments as multivariate polynomials accept:\n\n```\nsage: T = PowerSeriesRing(QQ,3,'t'); T\nMultivariate Power Series Ring in t0, t1, t2 over Rational Field\n\nsage: T = PowerSeriesRing(QQ,'t',3); T\nPower Series Ring in t over Rational Field\nsage: T.default_prec()\n3\n\nsage: P = PolynomialRing(QQ,'t',3); P\nMultivariate Polynomial Ring in t0, t1, t2 over Rational Field\n```\n\nThere is a non-trivial body of code (elliptic curves, and maybe p-adics) which makes use of this syntax.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9980\n\n",
     "created_at": "2010-09-23T17:44:33Z",
     "labels": [
         "component: commutative algebra",
@@ -23,7 +23,6 @@ Keywords: power series, deprecation warning
 
 Multivariate power series are implemented by #1956.  As mentioned on that ticket, the existing code for `PowerSeriesRing` did not allow multivariate power series rings to be constructed using the same arguments as multivariate polynomials accept:
 
-
 ```
 sage: T = PowerSeriesRing(QQ,3,'t'); T
 Multivariate Power Series Ring in t0, t1, t2 over Rational Field
@@ -36,7 +35,6 @@ sage: T.default_prec()
 sage: P = PolynomialRing(QQ,'t',3); P
 Multivariate Polynomial Ring in t0, t1, t2 over Rational Field
 ```
-
 
 There is a non-trivial body of code (elliptic curves, and maybe p-adics) which makes use of this syntax.
 

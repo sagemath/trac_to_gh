@@ -201,7 +201,7 @@ Ticket #7201 is related.
 archive/issue_comments_019967.json:
 ```json
 {
-    "body": "ISSUES:\n\n1.\n\n> That will not work on cells that are created after the page loads. \n\nIndeed.  I don't think this patch should go in with that major shortcoming.  Can we just set the onpaste handler for all worksheet cells whenever they are created? \n\n2. I just tried pasting text into both firefox and safari cells and they *already* do resize.  So is this whole ticket just invalid?   Maybe no patch is needed at all anyways?    That matches with my memory, which is that Tom and I fixed this problem a year ago or so by rewriting the textarea resize code.",
+    "body": "ISSUES:\n\n1.\n\n> That will not work on cells that are created after the page loads. \n\n\nIndeed.  I don't think this patch should go in with that major shortcoming.  Can we just set the onpaste handler for all worksheet cells whenever they are created? \n\n2. I just tried pasting text into both firefox and safari cells and they *already* do resize.  So is this whole ticket just invalid?   Maybe no patch is needed at all anyways?    That matches with my memory, which is that Tom and I fixed this problem a year ago or so by rewriting the textarea resize code.",
     "created_at": "2009-12-08T19:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
@@ -215,6 +215,7 @@ ISSUES:
 1.
 
 > That will not work on cells that are created after the page loads. 
+
 
 Indeed.  I don't think this patch should go in with that major shortcoming.  Can we just set the onpaste handler for all worksheet cells whenever they are created? 
 
@@ -263,7 +264,7 @@ In FF 3.5.5 on Linux, the cells do not resize on paste.  V16 at #6855 includes a
 archive/issue_comments_019970.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> In FF 3.5.5 on Linux, the cells do not resize on paste.  V16 at #6855 includes a fix that seems to work.  I'll try to check other browser-OS combinations.\n\nGood point that I should remark that I was testing with FF 3.5.5 on OS X.\n\n -- William",
+    "body": "Replying to [comment:11 mpatel]:\n> In FF 3.5.5 on Linux, the cells do not resize on paste.  V16 at #6855 includes a fix that seems to work.  I'll try to check other browser-OS combinations.\n\n\nGood point that I should remark that I was testing with FF 3.5.5 on OS X.\n\n -- William",
     "created_at": "2009-12-09T14:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
@@ -274,6 +275,7 @@ archive/issue_comments_019970.json:
 
 Replying to [comment:11 mpatel]:
 > In FF 3.5.5 on Linux, the cells do not resize on paste.  V16 at #6855 includes a fix that seems to work.  I'll try to check other browser-OS combinations.
+
 
 Good point that I should remark that I was testing with FF 3.5.5 on OS X.
 

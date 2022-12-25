@@ -3,7 +3,7 @@
 archive/issues_009744.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\n\nThe docs say it should fill the region f(x)<0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\nThe docs say it should fill the region f(x)<0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
     "created_at": "2010-08-14T09:13:18Z",
     "labels": [
         "component: graphics",
@@ -22,13 +22,11 @@ CC:  @kcrisman
 
 I was browsing the docs and noticed this example completely fills the plot black:
 
-
 ```
 x,y = var('x,y')
 f(x,y) = x^2 + y^2 - 2
 implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)
 ```
-
 
 The docs say it should fill the region f(x)<0.
 
@@ -189,7 +187,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095255.json:
 ```json
 {
-    "body": "I ran into this bug and thought I would review the patch here. The patch applies cleanly to 4.8.alpha6 (I'm still waiting for 4.8.rc0 to build). Doctests on `sage/plot/contour_plot.py` pass. More importantly, I went through all the docstring examples for `implicit_plot` by hand in the notebook to make sure they look correct, and they all do so that's great!\n\nHowever, when I try the following (a modification of one of the doctests):\n\n\n```\nsage: def mandel(n):\n...       c = polygen(CDF, 'c')\n...       z = 0\n...       for i in range(n):\n...           z = z*z + c\n...       def f(x, y):\n...           val = z(CDF(x, y))\n...           return val.norm() - 4\n...       return f\nsage: implicit_plot(mandel(1), (-3, 3), (-3, 3), fill=True)\n```\n\nI get an error:\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_21.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"aW1wbGljaXRfcGxvdChtYW5kZWwoMSksICgtMywgMyksICgtMywgMyksIGZpbGw9VHJ1ZSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpp9xXZj/___code___.py\", line 3, in <module>\n    exec compile(u'implicit_plot(mandel(_sage_const_1 ), (-_sage_const_3 , _sage_const_3 ), (-_sage_const_3 , _sage_const_3 ), fill=True)\n  File \"\", line 1, in <module>\n    \n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/misc/decorators.py\", line 534, in wrapper\n    return func(*args, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 609, in implicit_plot\n    return region_plot(f<0, xrange, yrange, borderwidth=linewidths, borderstyle=linestyles, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/misc/decorators.py\", line 534, in wrapper\n    return func(*args, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 726, in region_plot\n    for func in g],dtype=float)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 783, in <lambda>\n    return lambda x,y: -1 if f(x,y) else 1\nTypeError: 'bool' object is not callable\n```\n\n\nAny idea what's going on here?",
+    "body": "I ran into this bug and thought I would review the patch here. The patch applies cleanly to 4.8.alpha6 (I'm still waiting for 4.8.rc0 to build). Doctests on `sage/plot/contour_plot.py` pass. More importantly, I went through all the docstring examples for `implicit_plot` by hand in the notebook to make sure they look correct, and they all do so that's great!\n\nHowever, when I try the following (a modification of one of the doctests):\n\n```\nsage: def mandel(n):\n...       c = polygen(CDF, 'c')\n...       z = 0\n...       for i in range(n):\n...           z = z*z + c\n...       def f(x, y):\n...           val = z(CDF(x, y))\n...           return val.norm() - 4\n...       return f\nsage: implicit_plot(mandel(1), (-3, 3), (-3, 3), fill=True)\n```\nI get an error:\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_21.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"aW1wbGljaXRfcGxvdChtYW5kZWwoMSksICgtMywgMyksICgtMywgMyksIGZpbGw9VHJ1ZSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpp9xXZj/___code___.py\", line 3, in <module>\n    exec compile(u'implicit_plot(mandel(_sage_const_1 ), (-_sage_const_3 , _sage_const_3 ), (-_sage_const_3 , _sage_const_3 ), fill=True)\n  File \"\", line 1, in <module>\n    \n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/misc/decorators.py\", line 534, in wrapper\n    return func(*args, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 609, in implicit_plot\n    return region_plot(f<0, xrange, yrange, borderwidth=linewidths, borderstyle=linestyles, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/misc/decorators.py\", line 534, in wrapper\n    return func(*args, **options)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 726, in region_plot\n    for func in g],dtype=float)\n  File \"/home/jonesbe/sage/sage-4.8.alpha6/local/lib/python2.6/site-packages/sage/plot/contour_plot.py\", line 783, in <lambda>\n    return lambda x,y: -1 if f(x,y) else 1\nTypeError: 'bool' object is not callable\n```\n\nAny idea what's going on here?",
     "created_at": "2012-01-16T20:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -201,7 +199,6 @@ archive/issue_comments_095255.json:
 I ran into this bug and thought I would review the patch here. The patch applies cleanly to 4.8.alpha6 (I'm still waiting for 4.8.rc0 to build). Doctests on `sage/plot/contour_plot.py` pass. More importantly, I went through all the docstring examples for `implicit_plot` by hand in the notebook to make sure they look correct, and they all do so that's great!
 
 However, when I try the following (a modification of one of the doctests):
-
 
 ```
 sage: def mandel(n):
@@ -215,7 +212,6 @@ sage: def mandel(n):
 ...       return f
 sage: implicit_plot(mandel(1), (-3, 3), (-3, 3), fill=True)
 ```
-
 I get an error:
 
 ```
@@ -241,7 +237,6 @@ Traceback (most recent call last):
     return lambda x,y: -1 if f(x,y) else 1
 TypeError: 'bool' object is not callable
 ```
-
 
 Any idea what's going on here?
 
@@ -288,7 +283,7 @@ Changing priority from major to critical.
 archive/issue_comments_095258.json:
 ```json
 {
-    "body": "BFJ, I assume this means positive review apart from this error?\n\nHuh, yeah, this definitely means 'needs work'.  Even though the functionality didn't work at all before, lambdas shouldn't break too many things, and this is a very natural change to make.    The problem is in `equify` (see the [very bottom of the file](http://hg.sagemath.org/sage-main/file/c239be1054e0/sage/plot/contour_plot.py#l748).\n\n\n```\nsage: c = polygen(CDF,'c')\nsage: z = 0\nsage: for i in range(1):\n    z = z*z + c\n....: \nsage: def g(x,y):\n    val = z(CDF(x, y))\n    return val.norm() - 4\n....: \nsage: implicit_plot(g,(-3,3),(-3,3))  # looks fine, no surprise\n\nsage: sage.plot.contour_plot.equify(g)  # no problem, so plotting should work with fill\n<function <lambda> at 0x10df9d578>\nsage: implicit_plot(g,(-3,3),(-3,3),fill=True) # error above\n```\n\nGot it.  The problem is \n\n```\nf<0\n```\n\nin `region_plot`.   In the case I just did, \n\n```\nsage: g<0\nTrue\n```\n\nso we are now plotting `True` instead of `g`, which of course makes the error message quite understandable.\n\nI tried a few things to see if I could fix it in a few minutes, but I think the \"right\" answer might be more complicated.\n\nUnless we think we *should* just fix this and put in a warning about lambdas being broken?  Seems poor form.",
+    "body": "BFJ, I assume this means positive review apart from this error?\n\nHuh, yeah, this definitely means 'needs work'.  Even though the functionality didn't work at all before, lambdas shouldn't break too many things, and this is a very natural change to make.    The problem is in `equify` (see the [very bottom of the file](http://hg.sagemath.org/sage-main/file/c239be1054e0/sage/plot/contour_plot.py#l748).\n\n```\nsage: c = polygen(CDF,'c')\nsage: z = 0\nsage: for i in range(1):\n    z = z*z + c\n....: \nsage: def g(x,y):\n    val = z(CDF(x, y))\n    return val.norm() - 4\n....: \nsage: implicit_plot(g,(-3,3),(-3,3))  # looks fine, no surprise\n\nsage: sage.plot.contour_plot.equify(g)  # no problem, so plotting should work with fill\n<function <lambda> at 0x10df9d578>\nsage: implicit_plot(g,(-3,3),(-3,3),fill=True) # error above\n```\nGot it.  The problem is \n\n```\nf<0\n```\nin `region_plot`.   In the case I just did, \n\n```\nsage: g<0\nTrue\n```\nso we are now plotting `True` instead of `g`, which of course makes the error message quite understandable.\n\nI tried a few things to see if I could fix it in a few minutes, but I think the \"right\" answer might be more complicated.\n\nUnless we think we *should* just fix this and put in a warning about lambdas being broken?  Seems poor form.",
     "created_at": "2012-01-27T04:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -300,7 +295,6 @@ archive/issue_comments_095258.json:
 BFJ, I assume this means positive review apart from this error?
 
 Huh, yeah, this definitely means 'needs work'.  Even though the functionality didn't work at all before, lambdas shouldn't break too many things, and this is a very natural change to make.    The problem is in `equify` (see the [very bottom of the file](http://hg.sagemath.org/sage-main/file/c239be1054e0/sage/plot/contour_plot.py#l748).
-
 
 ```
 sage: c = polygen(CDF,'c')
@@ -318,20 +312,17 @@ sage: sage.plot.contour_plot.equify(g)  # no problem, so plotting should work wi
 <function <lambda> at 0x10df9d578>
 sage: implicit_plot(g,(-3,3),(-3,3),fill=True) # error above
 ```
-
 Got it.  The problem is 
 
 ```
 f<0
 ```
-
 in `region_plot`.   In the case I just did, 
 
 ```
 sage: g<0
 True
 ```
-
 so we are now plotting `True` instead of `g`, which of course makes the error message quite understandable.
 
 I tried a few things to see if I could fix it in a few minutes, but I think the "right" answer might be more complicated.
@@ -381,7 +372,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095261.json:
 ```json
 {
-    "body": "I uploaded [attachment:trac_9744_v2.patch] which solves the main problem by calling `region_plot(lambda x,y: f(x,y)<0, ...)` instead of `region_plot(f<0, ...)` \n\n...but it introduces a strange artefact. Try the following (this doesn't require applying the patch).\n\n\n```\nsage: region_plot(x^2+y^2-2<0, (x,-3,3), (y,-3,3))\n# looks normal\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3))\n# looks ragged around the edges\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3), plot_points=200)\n# better, but not great\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3), plot_points=500)\n# looks about like the original, but takes a long time.\n```\n",
+    "body": "I uploaded [attachment:trac_9744_v2.patch] which solves the main problem by calling `region_plot(lambda x,y: f(x,y)<0, ...)` instead of `region_plot(f<0, ...)` \n\n...but it introduces a strange artefact. Try the following (this doesn't require applying the patch).\n\n```\nsage: region_plot(x^2+y^2-2<0, (x,-3,3), (y,-3,3))\n# looks normal\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3))\n# looks ragged around the edges\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3), plot_points=200)\n# better, but not great\nsage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3), plot_points=500)\n# looks about like the original, but takes a long time.\n```",
     "created_at": "2012-02-24T01:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -393,7 +384,6 @@ archive/issue_comments_095261.json:
 I uploaded [attachment:trac_9744_v2.patch] which solves the main problem by calling `region_plot(lambda x,y: f(x,y)<0, ...)` instead of `region_plot(f<0, ...)` 
 
 ...but it introduces a strange artefact. Try the following (this doesn't require applying the patch).
-
 
 ```
 sage: region_plot(x^2+y^2-2<0, (x,-3,3), (y,-3,3))
@@ -408,13 +398,12 @@ sage: region_plot(lambda x,y: x^2+y^2-2<0, (x,-3,3), (y,-3,3), plot_points=500)
 
 
 
-
 ---
 
 archive/issue_comments_095262.json:
 ```json
 {
-    "body": "The following doctest that is currently in `region_plot` has the same artefact:\n\n\n```\nregion_plot(lambda x,y: x^2+y^2<1 or x<y, (x,-2,2), (y,-2,2))\n```\n\n\nI uploaded a new, new patch that only has the artefact when a python function is passed\nto implicit_plot in which case the user should increase the point count appropriately. I\nadded a doctest to that effect as well.\n\nWith the patch applied, compare:\n\n\n```\nsage: x,y=var('x,y')\nsage: implicit_plot(x^2+y^2-2, (x,-3,3), (y,-3,3), fill=True)\nsage: g = lambda x,y: x^2+y^2-2\nsage: implicit_plot(g,  (x,-3,3), (y,-3,3), fill=True)\n```\n",
+    "body": "The following doctest that is currently in `region_plot` has the same artefact:\n\n```\nregion_plot(lambda x,y: x^2+y^2<1 or x<y, (x,-2,2), (y,-2,2))\n```\n\nI uploaded a new, new patch that only has the artefact when a python function is passed\nto implicit_plot in which case the user should increase the point count appropriately. I\nadded a doctest to that effect as well.\n\nWith the patch applied, compare:\n\n```\nsage: x,y=var('x,y')\nsage: implicit_plot(x^2+y^2-2, (x,-3,3), (y,-3,3), fill=True)\nsage: g = lambda x,y: x^2+y^2-2\nsage: implicit_plot(g,  (x,-3,3), (y,-3,3), fill=True)\n```",
     "created_at": "2012-02-24T02:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -425,18 +414,15 @@ archive/issue_comments_095262.json:
 
 The following doctest that is currently in `region_plot` has the same artefact:
 
-
 ```
 region_plot(lambda x,y: x^2+y^2<1 or x<y, (x,-2,2), (y,-2,2))
 ```
-
 
 I uploaded a new, new patch that only has the artefact when a python function is passed
 to implicit_plot in which case the user should increase the point count appropriately. I
 added a doctest to that effect as well.
 
 With the patch applied, compare:
-
 
 ```
 sage: x,y=var('x,y')
@@ -447,13 +433,12 @@ sage: implicit_plot(g,  (x,-3,3), (y,-3,3), fill=True)
 
 
 
-
 ---
 
 archive/issue_comments_095263.json:
 ```json
 {
-    "body": "I'm between classes now, but I'll check it out later.  In the meantime, what is going on with the new code?  When is the last line\n\n```\nreturn contour_plot(f, xrange, yrange, linewidths=linewidths, linestyles=linestyles, **options)\n```\n\never reached?\n\nAlso, \n\n```\nif options.pop('fill'):\n```\n\nwill give a `KeyError` if `'fill'` isn't defined in the options dictionary.  Could that happen?  If so, you may want to take the previous entry\n\n```\nif 'color' in options: \n```\n\nand go from there... this may not be a problem, but it's probably wisest to guard against it.",
+    "body": "I'm between classes now, but I'll check it out later.  In the meantime, what is going on with the new code?  When is the last line\n\n```\nreturn contour_plot(f, xrange, yrange, linewidths=linewidths, linestyles=linestyles, **options)\n```\never reached?\n\nAlso, \n\n```\nif options.pop('fill'):\n```\nwill give a `KeyError` if `'fill'` isn't defined in the options dictionary.  Could that happen?  If so, you may want to take the previous entry\n\n```\nif 'color' in options: \n```\nand go from there... this may not be a problem, but it's probably wisest to guard against it.",
     "created_at": "2012-02-24T15:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -467,7 +452,6 @@ I'm between classes now, but I'll check it out later.  In the meantime, what is 
 ```
 return contour_plot(f, xrange, yrange, linewidths=linewidths, linestyles=linestyles, **options)
 ```
-
 ever reached?
 
 Also, 
@@ -475,13 +459,11 @@ Also,
 ```
 if options.pop('fill'):
 ```
-
 will give a `KeyError` if `'fill'` isn't defined in the options dictionary.  Could that happen?  If so, you may want to take the previous entry
 
 ```
 if 'color' in options: 
 ```
-
 and go from there... this may not be a problem, but it's probably wisest to guard against it.
 
 
@@ -491,7 +473,7 @@ and go from there... this may not be a problem, but it's probably wisest to guar
 archive/issue_comments_095264.json:
 ```json
 {
-    "body": "The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`\n\n\n```\n@options(plot_points=150, contours=(0,0), fill=False, cmap=[\"blue\"])\n```\n\n\nYou're correct about that last line, somehow I let that slip through. I updated the patch. I think it's more readable and less redundant now.",
+    "body": "The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`\n\n```\n@options(plot_points=150, contours=(0,0), fill=False, cmap=[\"blue\"])\n```\n\nYou're correct about that last line, somehow I let that slip through. I updated the patch. I think it's more readable and less redundant now.",
     "created_at": "2012-02-24T18:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -502,11 +484,9 @@ archive/issue_comments_095264.json:
 
 The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`
 
-
 ```
 @options(plot_points=150, contours=(0,0), fill=False, cmap=["blue"])
 ```
-
 
 You're correct about that last line, somehow I let that slip through. I updated the patch. I think it's more readable and less redundant now.
 
@@ -517,7 +497,7 @@ You're correct about that last line, somehow I let that slip through. I updated 
 archive/issue_comments_095265.json:
 ```json
 {
-    "body": "> The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`\n\nI figured, but was too rushed to check.\n\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\nIt works!\n\nLet me just look at a few more things.  I think I'll want to add something to the other example you give, with the region plot lambda, so that it looks nicer in the doc.\n\n----\n\nI was going to complain about `artefact` but then read [this](http://www.worldwidewords.org/qa/qa-art1.htm).  Harrumph.",
+    "body": "> The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`\n\n\nI figured, but was too rushed to check.\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\nIt works!\n\nLet me just look at a few more things.  I think I'll want to add something to the other example you give, with the region plot lambda, so that it looks nicer in the doc.\n\n---\n\nI was going to complain about `artefact` but then read [this](http://www.worldwidewords.org/qa/qa-art1.htm).  Harrumph.",
     "created_at": "2012-02-24T20:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -528,20 +508,19 @@ archive/issue_comments_095265.json:
 
 > The `if options.pop('fill'):` is okay because of the `@`options decorator before `def implicit_plot(...):`
 
-I figured, but was too rushed to check.
 
+I figured, but was too rushed to check.
 
 ```
 x,y = var('x,y')
 f(x,y) = x^2 + y^2 - 2
 implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)
 ```
-
 It works!
 
 Let me just look at a few more things.  I think I'll want to add something to the other example you give, with the region plot lambda, so that it looks nicer in the doc.
 
-----
+---
 
 I was going to complain about `artefact` but then read [this](http://www.worldwidewords.org/qa/qa-art1.htm).  Harrumph.
 
@@ -610,7 +589,7 @@ Reviewer patch looks good to me. Thanks.
 archive/issue_comments_095269.json:
 ```json
 {
-    "body": "Wow, I wasn't even done reviewing my own reviewer patch :)   I got hung up on trying to decide whether to add any more `# long time`s, but decided it wasn't worth it.\n\nThe code currently allows this.  \n\n```\nsage: f(x,y) = x^2 + y^2 - 2\nsage: implicit_plot(f, (-3, 3), (-3, 3),fill='55').show(aspect_ratio=1)  # nice graph is filled\n```\n\nShould we maybe raise an error if this happens?  Given that one can ask for all kinds of fills in regular plots, not just `True` or `False`, perhaps this should be disallowed.",
+    "body": "Wow, I wasn't even done reviewing my own reviewer patch :)   I got hung up on trying to decide whether to add any more `# long time`s, but decided it wasn't worth it.\n\nThe code currently allows this.  \n\n```\nsage: f(x,y) = x^2 + y^2 - 2\nsage: implicit_plot(f, (-3, 3), (-3, 3),fill='55').show(aspect_ratio=1)  # nice graph is filled\n```\nShould we maybe raise an error if this happens?  Given that one can ask for all kinds of fills in regular plots, not just `True` or `False`, perhaps this should be disallowed.",
     "created_at": "2012-02-24T21:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -627,7 +606,6 @@ The code currently allows this.
 sage: f(x,y) = x^2 + y^2 - 2
 sage: implicit_plot(f, (-3, 3), (-3, 3),fill='55').show(aspect_ratio=1)  # nice graph is filled
 ```
-
 Should we maybe raise an error if this happens?  Given that one can ask for all kinds of fills in regular plots, not just `True` or `False`, perhaps this should be disallowed.
 
 
@@ -675,7 +653,7 @@ The reviewer patch still applies on top (with a tiny bit of fuzz).
 archive/issue_comments_095272.json:
 ```json
 {
-    "body": "I think you might want to do \n\n```\nif foo is True\n```\n\nnot\n\n```\nif foo == True\n```\n\nfor reasons that escape me right now.",
+    "body": "I think you might want to do \n\n```\nif foo is True\n```\nnot\n\n```\nif foo == True\n```\nfor reasons that escape me right now.",
     "created_at": "2012-02-24T23:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
@@ -689,13 +667,11 @@ I think you might want to do
 ```
 if foo is True
 ```
-
 not
 
 ```
 if foo == True
 ```
-
 for reasons that escape me right now.
 
 

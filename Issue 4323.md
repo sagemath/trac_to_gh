@@ -108,7 +108,7 @@ P.S. By the way, I think it takes a certain amount of hubris to write a program 
 archive/issue_comments_031614.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> Is this the same as #877?\n> \n>   John (who's not quite sure what \"closures\" are)\n\nNot sure.\n\n> P.S. By the way, I think it takes a certain amount of hubris to write a program like 'sage-coverage' which itself has no doctests or documentation :)\n\nYes, this certainly registered rather strongly on my irony meter, but right now there is no coverage for the scripts in local/bin, even though most people agreed that it would be a pretty good idea. This will hopefully happen sooner or later.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> Is this the same as #877?\n> \n>   John (who's not quite sure what \"closures\" are)\n\n\nNot sure.\n\n> P.S. By the way, I think it takes a certain amount of hubris to write a program like 'sage-coverage' which itself has no doctests or documentation :)\n\n\nYes, this certainly registered rather strongly on my irony meter, but right now there is no coverage for the scripts in local/bin, even though most people agreed that it would be a pretty good idea. This will hopefully happen sooner or later.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T23:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
@@ -122,9 +122,11 @@ Replying to [comment:4 jhpalmieri]:
 > 
 >   John (who's not quite sure what "closures" are)
 
+
 Not sure.
 
 > P.S. By the way, I think it takes a certain amount of hubris to write a program like 'sage-coverage' which itself has no doctests or documentation :)
+
 
 Yes, this certainly registered rather strongly on my irony meter, but right now there is no coverage for the scripts in local/bin, even though most people agreed that it would be a pretty good idea. This will hopefully happen sooner or later.
 
@@ -139,7 +141,7 @@ Michael
 archive/issue_comments_031615.json:
 ```json
 {
-    "body": "> Is this the same as #877?\n\nyes.",
+    "body": "> Is this the same as #877?\n\n\nyes.",
     "created_at": "2009-02-10T07:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
@@ -149,6 +151,7 @@ archive/issue_comments_031615.json:
 ```
 
 > Is this the same as #877?
+
 
 yes.
 

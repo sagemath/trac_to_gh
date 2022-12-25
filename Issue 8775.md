@@ -3,7 +3,7 @@
 archive/issues_008775.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\n\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
+    "body": "Assignee: @burcin\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
     "created_at": "2010-04-27T01:02:12Z",
     "labels": [
         "component: symbolics",
@@ -30,7 +30,6 @@ sqrt(-3)
 sage: bool(a==a.conjugate()) 
 True 
 ```
-
 Could this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8775
@@ -44,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8775
 archive/issue_comments_080193.json:
 ```json
 {
-    "body": "From Burcin Erocal on the same thread:\n\n```\nThis is a bug in GiNaC: \nginsh - GiNaC Interactive Shell (ginac V1.5.7) \n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz, \n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY. \n  ._) i N a C | You are welcome to redistribute it under certain conditions. \n<-------------' For details type `warranty;'. \nType ?? for a list of help topics. \n> sqrt(-3); \nsqrt(-3) \n> conjugate(sqrt(-3)); \n\nsqrt(-3) \nFor conjugation, power objects just compute the conjugate of the basis \nand the exponent, and construct a new power object from these. Here is \nthe relevant function: \nhttp://pynac.sagemath.org/hg/file/3ece9ba22005/ginac/power.cpp#l805 \n```\n\nI'm changing this to \"not yet reported upstream\".",
+    "body": "From Burcin Erocal on the same thread:\n\n```\nThis is a bug in GiNaC: \nginsh - GiNaC Interactive Shell (ginac V1.5.7) \n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz, \n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY. \n  ._) i N a C | You are welcome to redistribute it under certain conditions. \n<-------------' For details type `warranty;'. \nType ?? for a list of help topics. \n> sqrt(-3); \nsqrt(-3) \n> conjugate(sqrt(-3)); \n\nsqrt(-3) \nFor conjugation, power objects just compute the conjugate of the basis \nand the exponent, and construct a new power object from these. Here is \nthe relevant function: \nhttp://pynac.sagemath.org/hg/file/3ece9ba22005/ginac/power.cpp#l805 \n```\nI'm changing this to \"not yet reported upstream\".",
     "created_at": "2010-04-27T13:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -73,7 +72,6 @@ and the exponent, and construct a new power object from these. Here is
 the relevant function: 
 http://pynac.sagemath.org/hg/file/3ece9ba22005/ginac/power.cpp#l805 
 ```
-
 I'm changing this to "not yet reported upstream".
 
 
@@ -177,7 +175,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080199.json:
 ```json
 {
-    "body": "For some reason, although Sage 4.4.4.alpha0 has pynac-0.2.0.p3\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: N(sqrt(-2),200)\n8.0751148893563733350506651837615871941533119425962889089783e-62 + 1.4142135623730950488016887242096980785696718753769480731767*I\nsage: conjugate(sqrt(-3))\nsqrt(-3)\n```\n\nDid this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.",
+    "body": "For some reason, although Sage 4.4.4.alpha0 has pynac-0.2.0.p3\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: N(sqrt(-2),200)\n8.0751148893563733350506651837615871941533119425962889089783e-62 + 1.4142135623730950488016887242096980785696718753769480731767*I\nsage: conjugate(sqrt(-3))\nsqrt(-3)\n```\nDid this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.",
     "created_at": "2010-06-10T01:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -201,7 +199,6 @@ sage: N(sqrt(-2),200)
 sage: conjugate(sqrt(-3))
 sqrt(-3)
 ```
-
 Did this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.
 
 
@@ -229,7 +226,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080201.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> Did this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.\n\nThat patched was backed out since it caused some problems with doctests in `sage/rings/qqbar.py`.\n\nI merged the upstream patch from GiNaC fixing this problem in the latest version of pynac. I will upload a new patch with doctest fixes later.",
+    "body": "Replying to [comment:4 kcrisman]:\n> Did this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.\n\n\nThat patched was backed out since it caused some problems with doctests in `sage/rings/qqbar.py`.\n\nI merged the upstream patch from GiNaC fixing this problem in the latest version of pynac. I will upload a new patch with doctest fixes later.",
     "created_at": "2010-09-12T16:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
@@ -240,6 +237,7 @@ archive/issue_comments_080201.json:
 
 Replying to [comment:4 kcrisman]:
 > Did this change not end up making it into the Pynac package after all?  According to [http://pynac.sagemath.org/hg/rev/60acd6985820](http://pynac.sagemath.org/hg/rev/60acd6985820), it should be in there, but now I find it hard to explain the above.
+
 
 That patched was backed out since it caused some problems with doctests in `sage/rings/qqbar.py`.
 

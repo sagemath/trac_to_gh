@@ -3,7 +3,7 @@
 archive/issues_003787.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cwitty @JohnCremona\n\n\n```\n[7:14pm] cwitty: 1) My spiffy new Xeon-branded core 2 quad computer is\nvery slow at compiling ATLAS.\n[7:14pm] mabshoff: mhhh, how long?\n[7:15pm] cwitty: I think ATLAS doesn't support the extended cpuid.\n[7:15pm] cwitty: About 2 hours.\n[7:15pm] mabshoff: On an Itanium 2 with loads of memory it takes about\n3 hours with loads of cache.\n[7:15pm] mabshoff: Can you check the ARCH in the makefile?\n[7:16pm] cwitty: PIII64SSE3\n[7:17pm] mabshoff: Ok, then it is identified. We might not have tuning\ninfo.\n[7:18pm] mabshoff: Let me check in a little while, but the compile\ntime depends on the L2 size.\n[7:18pm] cwitty: Umm... Pentium 3?  I'm pretty sure it's not a pentium\n3.\n[7:18pm] mabshoff: Oops\n[7:18pm] mabshoff: Yeah, you are right.\n[7:18pm] mabshoff: ATLAS uses cpuid, not extended cpuid.\n[7:18pm] mabshoff: I am not sure if 3.8.2 fixes that, but I can patch\nit in case it does not.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3787\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  cwitty @JohnCremona\n\n```\n[7:14pm] cwitty: 1) My spiffy new Xeon-branded core 2 quad computer is\nvery slow at compiling ATLAS.\n[7:14pm] mabshoff: mhhh, how long?\n[7:15pm] cwitty: I think ATLAS doesn't support the extended cpuid.\n[7:15pm] cwitty: About 2 hours.\n[7:15pm] mabshoff: On an Itanium 2 with loads of memory it takes about\n3 hours with loads of cache.\n[7:15pm] mabshoff: Can you check the ARCH in the makefile?\n[7:16pm] cwitty: PIII64SSE3\n[7:17pm] mabshoff: Ok, then it is identified. We might not have tuning\ninfo.\n[7:18pm] mabshoff: Let me check in a little while, but the compile\ntime depends on the L2 size.\n[7:18pm] cwitty: Umm... Pentium 3?  I'm pretty sure it's not a pentium\n3.\n[7:18pm] mabshoff: Oops\n[7:18pm] mabshoff: Yeah, you are right.\n[7:18pm] mabshoff: ATLAS uses cpuid, not extended cpuid.\n[7:18pm] mabshoff: I am not sure if 3.8.2 fixes that, but I can patch\nit in case it does not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3787\n\n",
     "created_at": "2008-08-07T03:02:05Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ archive/issues_003787.json:
 Assignee: mabshoff
 
 CC:  cwitty @JohnCremona
-
 
 ```
 [7:14pm] cwitty: 1) My spiffy new Xeon-branded core 2 quad computer is
@@ -44,7 +43,6 @@ time depends on the L2 size.
 [7:18pm] mabshoff: I am not sure if 3.8.2 fixes that, but I can patch
 it in case it does not.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3787
 
@@ -162,7 +160,7 @@ archive/issue_events_008691.json:
 archive/issue_comments_026872.json:
 ```json
 {
-    "body": "The latest errata is the following:\n\n```\nTo fix this, simply comment out lines 95 and 99 of ATLAS/CONFIG/src/backend\n/archinfo_x86.c. So, change line 95 from:\n\n   if (*family == 0xf || *family == 0) /* extended family is added in */\n\nto:\n\n/* if (*family == 0xf || *family == 0)*/ /* extended family is added in */\n\nand change line 99 from\n\n   if (*model == 0xf)                  /* extended model is concatenated */\n\nto:\n\n/* if (*model == 0xf)*/                /* extended model is concatenated */\n\nEssentially, all the Core2-based systems are treated the same by ATLAS. So, \nto get to use the architectural defaults on Core2-based XEONs, change line \n297 from:\n\n      case 15:\n\nto:\n\n      case 15: ; case 23:\n\nFinally, to enable better P4E identification, change line 313 from:\n\n      case 4:\n\nto:\n\n      case 4: ; case 6:\n```\n",
+    "body": "The latest errata is the following:\n\n```\nTo fix this, simply comment out lines 95 and 99 of ATLAS/CONFIG/src/backend\n/archinfo_x86.c. So, change line 95 from:\n\n   if (*family == 0xf || *family == 0) /* extended family is added in */\n\nto:\n\n/* if (*family == 0xf || *family == 0)*/ /* extended family is added in */\n\nand change line 99 from\n\n   if (*model == 0xf)                  /* extended model is concatenated */\n\nto:\n\n/* if (*model == 0xf)*/                /* extended model is concatenated */\n\nEssentially, all the Core2-based systems are treated the same by ATLAS. So, \nto get to use the architectural defaults on Core2-based XEONs, change line \n297 from:\n\n      case 15:\n\nto:\n\n      case 15: ; case 23:\n\nFinally, to enable better P4E identification, change line 313 from:\n\n      case 4:\n\nto:\n\n      case 4: ; case 6:\n```",
     "created_at": "2008-12-17T13:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3787",
     "type": "issue_comment",
@@ -209,7 +207,6 @@ to:
 
       case 4: ; case 6:
 ```
-
 
 
 

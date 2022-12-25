@@ -253,7 +253,7 @@ New commits:
 archive/issue_comments_077522.json:
 ```json
 {
-    "body": "Rebased on 6.2.beta3. Tests OK --long in rings/. Seems to be an uncomplicated change.\n----\nNew commits:",
+    "body": "Rebased on 6.2.beta3. Tests OK --long in rings/. Seems to be an uncomplicated change.\n\n---\nNew commits:",
     "created_at": "2014-03-10T10:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8573",
     "type": "issue_comment",
@@ -263,7 +263,8 @@ archive/issue_comments_077522.json:
 ```
 
 Rebased on 6.2.beta3. Tests OK --long in rings/. Seems to be an uncomplicated change.
-----
+
+---
 New commits:
 
 
@@ -327,7 +328,7 @@ Changing status from positive_review to needs_review.
 archive/issue_comments_077526.json:
 ```json
 {
-    "body": "Why change the branch all the time?\n----\nNew commits:",
+    "body": "Why change the branch all the time?\n\n---\nNew commits:",
     "created_at": "2014-03-12T10:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8573",
     "type": "issue_comment",
@@ -337,7 +338,8 @@ archive/issue_comments_077526.json:
 ```
 
 Why change the branch all the time?
-----
+
+---
 New commits:
 
 
@@ -365,7 +367,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077528.json:
 ```json
 {
-    "body": "Replying to [comment:13 jdemeyer]:\n> Why change the branch all the time?\n\nhttps://groups.google.com/forum/#!topic/sage-devel/sTLT83d1g14",
+    "body": "Replying to [comment:13 jdemeyer]:\n> Why change the branch all the time?\n\n\nhttps://groups.google.com/forum/#!topic/sage-devel/sTLT83d1g14",
     "created_at": "2014-03-12T10:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8573",
     "type": "issue_comment",
@@ -376,6 +378,7 @@ archive/issue_comments_077528.json:
 
 Replying to [comment:13 jdemeyer]:
 > Why change the branch all the time?
+
 
 https://groups.google.com/forum/#!topic/sage-devel/sTLT83d1g14
 

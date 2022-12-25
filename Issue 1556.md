@@ -103,7 +103,7 @@ archive/issue_events_003903.json:
 archive/issue_comments_009896.json:
 ```json
 {
-    "body": "\n```\n- Hide quoted text -\nOn Dec 20, 2007 10:57 PM, William Stein <wstein@gmail.com> wrote:\n> On Dec 20, 2007 6:24 PM, Robert Miller <rlmillster@gmail.com> wrote:\n> >\n> > As pointed out by Michael Abshoff, it seems like an information leak\n> > to list all the usernames on a notebook when you fail to use a valid\n> > one to log in. Thoughts?\n>\n> This exact question comes up about every other week.   Are you talking\n> about a public notebook like sagenb.org or sagenb.com?  If so, then\n> note that *anybody* can make a new account, and once they login\n> with that account, it is trivial for them -- in several different ways -- to get\n> a list of all user names.  If you're talking about a server that you personally\n> run but with no user accounts, then there is just one name, i.e., \"admin\".\n> In both cases, security by obscuring the existing usernames is no security\n> at all.\n>\n> So maybe you are talking about semi-private servers that have a fixed list\n> of accounts and users, like a normal UNIX system say, where potential\n> users cannot sign up for a new account -- only an admin can create accounts.\n> In this case getting a list of users would be a security issue.  But\n> you probably\n> don't mean this since it isn't implemented in sage (yet!).\n\nI should have finished by adding that there is no point at all in\nnot listing usernames in the scenarios in the first paragraph above -- that\nwould just be security by obscurity.  There is a point in not listing\nuser names in paragraph two above.  When Sage actually supports\nwhat is described in paragraph two, then when the notebook is in\nthat mode it shouldn't list usernames.\n\n```\n",
+    "body": "```\n- Hide quoted text -\nOn Dec 20, 2007 10:57 PM, William Stein <wstein@gmail.com> wrote:\n> On Dec 20, 2007 6:24 PM, Robert Miller <rlmillster@gmail.com> wrote:\n> >\n> > As pointed out by Michael Abshoff, it seems like an information leak\n> > to list all the usernames on a notebook when you fail to use a valid\n> > one to log in. Thoughts?\n>\n> This exact question comes up about every other week.   Are you talking\n> about a public notebook like sagenb.org or sagenb.com?  If so, then\n> note that *anybody* can make a new account, and once they login\n> with that account, it is trivial for them -- in several different ways -- to get\n> a list of all user names.  If you're talking about a server that you personally\n> run but with no user accounts, then there is just one name, i.e., \"admin\".\n> In both cases, security by obscuring the existing usernames is no security\n> at all.\n>\n> So maybe you are talking about semi-private servers that have a fixed list\n> of accounts and users, like a normal UNIX system say, where potential\n> users cannot sign up for a new account -- only an admin can create accounts.\n> In this case getting a list of users would be a security issue.  But\n> you probably\n> don't mean this since it isn't implemented in sage (yet!).\n\nI should have finished by adding that there is no point at all in\nnot listing usernames in the scenarios in the first paragraph above -- that\nwould just be security by obscurity.  There is a point in not listing\nuser names in paragraph two above.  When Sage actually supports\nwhat is described in paragraph two, then when the notebook is in\nthat mode it shouldn't list usernames.\n\n```",
     "created_at": "2007-12-21T06:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_comment",
@@ -111,7 +111,6 @@ archive/issue_comments_009896.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 - Hide quoted text -
@@ -146,4 +145,3 @@ what is described in paragraph two, then when the notebook is in
 that mode it shouldn't list usernames.
 
 ```
-

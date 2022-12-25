@@ -3,7 +3,7 @@
 archive/issues_000381.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
     "created_at": "2007-05-28T21:14:39Z",
     "labels": [
         "component: user interface",
@@ -17,7 +17,6 @@ archive/issues_000381.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:
@@ -46,7 +45,6 @@ Cheers,
 Michael Abshoff
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/381
 
 
@@ -58,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/381
 archive/issue_comments_001836.json:
 ```json
 {
-    "body": "\n```\n\n\nWell, the idea is to detach the running SAGE instance from the shell\nto let it run in the background until it is killed or the system is\nrebooted.\n\nThere is more than one way to do it: For a good C example see\nhttp://www.enderunix.org/docs/eng/daemon.php - for a python example\nsee http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66012\n\nThe python example could be more or less copied (I guess because I am\nnot a python expert), but it should be done very early in the SAGE\nstartup as far as I can tell. Writing a little C wrapper that just\ndoes\n\n i=fork();\n if (i<0) exit(1); /* fork error */\n if (i>0) exit(0); /* parent exits */\n /* child (daemon) continues */\n execv(\"./sage\");\n\nmight be easier.\n```\n",
+    "body": "```\n\n\nWell, the idea is to detach the running SAGE instance from the shell\nto let it run in the background until it is killed or the system is\nrebooted.\n\nThere is more than one way to do it: For a good C example see\nhttp://www.enderunix.org/docs/eng/daemon.php - for a python example\nsee http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66012\n\nThe python example could be more or less copied (I guess because I am\nnot a python expert), but it should be done very early in the SAGE\nstartup as far as I can tell. Writing a little C wrapper that just\ndoes\n\n i=fork();\n if (i<0) exit(1); /* fork error */\n if (i>0) exit(0); /* parent exits */\n /* child (daemon) continues */\n execv(\"./sage\");\n\nmight be easier.\n```",
     "created_at": "2007-05-28T22:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -66,7 +64,6 @@ archive/issue_comments_001836.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -92,7 +89,6 @@ does
 
 might be easier.
 ```
-
 
 
 
@@ -286,7 +282,7 @@ The right way to solve this problem would almost certainly involve including thi
 archive/issue_comments_001844.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> I think nohup doesn't daemonize.\nTrue, `nohup` itself doesn't daemonize. But normally you would do\n\n```\n$ nohup sage -n &\n```\n\nIt's the `&` at the end which does the \"daemonization\".\n\n> There is a long list of things that should happen when a process is damonized:\n> \n>      http://en.wikipedia.org/wiki/Daemon_(computing) \nThis refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\nSo it's not clear to me what would be needed for a Sage daemon which is not covered by\n\n```\n$ nohup sage &\n```\n",
+    "body": "Replying to [comment:8 was]:\n> I think nohup doesn't daemonize.\n\nTrue, `nohup` itself doesn't daemonize. But normally you would do\n\n```\n$ nohup sage -n &\n```\nIt's the `&` at the end which does the \"daemonization\".\n\n> There is a long list of things that should happen when a process is damonized:\n> \n>      http://en.wikipedia.org/wiki/Daemon_(computing) \n\nThis refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\nSo it's not clear to me what would be needed for a Sage daemon which is not covered by\n\n```\n$ nohup sage &\n```",
     "created_at": "2013-06-13T18:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -297,17 +293,18 @@ archive/issue_comments_001844.json:
 
 Replying to [comment:8 was]:
 > I think nohup doesn't daemonize.
+
 True, `nohup` itself doesn't daemonize. But normally you would do
 
 ```
 $ nohup sage -n &
 ```
-
 It's the `&` at the end which does the "daemonization".
 
 > There is a long list of things that should happen when a process is damonized:
 > 
 >      http://en.wikipedia.org/wiki/Daemon_(computing) 
+
 This refers to traditional Unix daemons, which would be quite different from a Sage "daemon" started by an ordinary user.
 
 So it's not clear to me what would be needed for a Sage daemon which is not covered by
@@ -318,13 +315,12 @@ $ nohup sage &
 
 
 
-
 ---
 
 archive/issue_comments_001845.json:
 ```json
 {
-    "body": "> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\nI think traditional daemonization is the right way to solve this problem.  Moreover, it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix.",
+    "body": "> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\n\nI think traditional daemonization is the right way to solve this problem.  Moreover, it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix.",
     "created_at": "2013-06-13T18:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -335,6 +331,7 @@ archive/issue_comments_001845.json:
 
 > This refers to traditional Unix daemons, which would be quite different from a Sage "daemon" started by an ordinary user.
 
+
 I think traditional daemonization is the right way to solve this problem.  Moreover, it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix.
 
 
@@ -344,7 +341,7 @@ I think traditional daemonization is the right way to solve this problem.  Moreo
 archive/issue_comments_001846.json:
 ```json
 {
-    "body": "Replying to [comment:10 was]:\n> it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix. \nWhich is #7893, this ticket seems to be about single-user use.",
+    "body": "Replying to [comment:10 was]:\n> it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix. \n\nWhich is #7893, this ticket seems to be about single-user use.",
     "created_at": "2013-06-13T18:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -355,6 +352,7 @@ archive/issue_comments_001846.json:
 
 Replying to [comment:10 was]:
 > it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix. 
+
 Which is #7893, this ticket seems to be about single-user use.
 
 
@@ -364,7 +362,7 @@ Which is #7893, this ticket seems to be about single-user use.
 archive/issue_comments_001847.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 was]:\n> > I think nohup doesn't daemonize.\n> True, `nohup` itself doesn't daemonize. But normally you would do\n> {{{\n> $ nohup sage -n &\n> }}}\n> It's the `&` at the end which does the \"daemonization\".\n> \n> > There is a long list of things that should happen when a process is damonized:\n> > \n> >      http://en.wikipedia.org/wiki/Daemon_(computing) \n> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n> \n> So it's not clear to me what would be needed for a Sage daemon which is not covered by\n> {{{\n> $ nohup sage &\n> }}}\n\nWell, you'd at least also have to `>/dev/null`.\n\nInherited file descriptors other than 0, 1 and 2 are left untouched.\n\n`nohup` doesn't change the working directory, nor e.g. modify the umask.\n\nThe background process doesn't get adopted by `init` until you logout, and similar process group specific stuff I think.\n\n(...)",
+    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 was]:\n> > I think nohup doesn't daemonize.\n\n> True, `nohup` itself doesn't daemonize. But normally you would do\n> {{{\n> $ nohup sage -n &\n> }}}\n> It's the `&` at the end which does the \"daemonization\".\n> \n> > There is a long list of things that should happen when a process is damonized:\n> > \n> >      http://en.wikipedia.org/wiki/Daemon_(computing) \n\n> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n> \n> So it's not clear to me what would be needed for a Sage daemon which is not covered by\n> \n> ```\n> $ nohup sage &\n> ```\n\n\nWell, you'd at least also have to `>/dev/null`.\n\nInherited file descriptors other than 0, 1 and 2 are left untouched.\n\n`nohup` doesn't change the working directory, nor e.g. modify the umask.\n\nThe background process doesn't get adopted by `init` until you logout, and similar process group specific stuff I think.\n\n(...)",
     "created_at": "2013-06-13T18:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -376,6 +374,7 @@ archive/issue_comments_001847.json:
 Replying to [comment:9 jdemeyer]:
 > Replying to [comment:8 was]:
 > > I think nohup doesn't daemonize.
+
 > True, `nohup` itself doesn't daemonize. But normally you would do
 > {{{
 > $ nohup sage -n &
@@ -385,12 +384,15 @@ Replying to [comment:9 jdemeyer]:
 > > There is a long list of things that should happen when a process is damonized:
 > > 
 > >      http://en.wikipedia.org/wiki/Daemon_(computing) 
+
 > This refers to traditional Unix daemons, which would be quite different from a Sage "daemon" started by an ordinary user.
 > 
 > So it's not clear to me what would be needed for a Sage daemon which is not covered by
-> {{{
+> 
+> ```
 > $ nohup sage &
-> }}}
+> ```
+
 
 Well, you'd at least also have to `>/dev/null`.
 

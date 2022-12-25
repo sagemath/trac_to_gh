@@ -228,7 +228,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068688.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> To which repository did you try to apply the patch?\n\nI applied the patch to the alpha0 version of sage on my local PC - built from source (if thats what you meant). I installed scilab yesterday so Im in a position to try reviewing the ticket again if you want (if you want to take this offline contact me at \"bw7890 at gmail dot com\")",
+    "body": "Replying to [comment:3 mpatel]:\n> To which repository did you try to apply the patch?\n\n\nI applied the patch to the alpha0 version of sage on my local PC - built from source (if thats what you meant). I installed scilab yesterday so Im in a position to try reviewing the ticket again if you want (if you want to take this offline contact me at \"bw7890 at gmail dot com\")",
     "created_at": "2010-02-01T11:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -239,6 +239,7 @@ archive/issue_comments_068688.json:
 
 Replying to [comment:3 mpatel]:
 > To which repository did you try to apply the patch?
+
 
 I applied the patch to the alpha0 version of sage on my local PC - built from source (if thats what you meant). I installed scilab yesterday so Im in a position to try reviewing the ticket again if you want (if you want to take this offline contact me at "bw7890 at gmail dot com")
 
@@ -269,7 +270,7 @@ Same as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.
 archive/issue_comments_068690.json:
 ```json
 {
-    "body": "The notebook is now actually a [separate project](http://nb.sagemath.org/), with it's own \"sagenb\" repository.  (I'm assuming that you didn't apply the patch to this repository.  In any case, absolutely no offense is intended.)  Since you built Sage from source, there should be a ~20 MB file `$SAGE_ROOT/spkg/standard/sagenb-0.6.spkg`, where `$SAGE_ROOT` is the distribution's base install directory.  To test the patch, try, e.g., \n\n```sh\nmkdir tmp\ncd tmp\ntar jxvf $SAGE_ROOT/spkg/standard/sagenb-0.6.spkg  # [1]\ncd sagenb-0.6/src/sagenb\nsage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-missing_scilab.2.patch  # [2, 3]\nsage -hg qpush\nsage -python setup.py install     # [4]\n```\n\nThen start the notebook and see if/how I messed up. :)  You can run the notebook doctests with `sage -t -sagenb`.\n\nBy the way, if you'd like to apply the patch to the upcoming SageNB release (0.7.x), get the spkg from #8051 and use the first patch above.\n\n* ![1] To install an spkg directly, use, e.g., `sage -f sagenb-0.6.spkg`.\n* ![2] This assumes you've enabled the [Mercurial Queues](http://wiki.sagemath.org/MercurialQueues?highlight=%28queues%29) extension.\n* ![3] If your system already has a relatively recent version of Mercurial installed, you can substitute `hg` for `sage -hg`.\n* ![4] Or run `sage -python setup.py develop` to work \"in place.\"  This is great for experimenting.\n\nPlease let me know if you have any questions.",
+    "body": "The notebook is now actually a [separate project](http://nb.sagemath.org/), with it's own \"sagenb\" repository.  (I'm assuming that you didn't apply the patch to this repository.  In any case, absolutely no offense is intended.)  Since you built Sage from source, there should be a ~20 MB file `$SAGE_ROOT/spkg/standard/sagenb-0.6.spkg`, where `$SAGE_ROOT` is the distribution's base install directory.  To test the patch, try, e.g., \n\n```sh\nmkdir tmp\ncd tmp\ntar jxvf $SAGE_ROOT/spkg/standard/sagenb-0.6.spkg  # [1]\ncd sagenb-0.6/src/sagenb\nsage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-missing_scilab.2.patch  # [2, 3]\nsage -hg qpush\nsage -python setup.py install     # [4]\n```\nThen start the notebook and see if/how I messed up. :)  You can run the notebook doctests with `sage -t -sagenb`.\n\nBy the way, if you'd like to apply the patch to the upcoming SageNB release (0.7.x), get the spkg from #8051 and use the first patch above.\n\n* ![1] To install an spkg directly, use, e.g., `sage -f sagenb-0.6.spkg`.\n* ![2] This assumes you've enabled the [Mercurial Queues](http://wiki.sagemath.org/MercurialQueues?highlight=%28queues%29) extension.\n* ![3] If your system already has a relatively recent version of Mercurial installed, you can substitute `hg` for `sage -hg`.\n* ![4] Or run `sage -python setup.py develop` to work \"in place.\"  This is great for experimenting.\n\nPlease let me know if you have any questions.",
     "created_at": "2010-02-01T13:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -289,7 +290,6 @@ sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/t
 sage -hg qpush
 sage -python setup.py install     # [4]
 ```
-
 Then start the notebook and see if/how I messed up. :)  You can run the notebook doctests with `sage -t -sagenb`.
 
 By the way, if you'd like to apply the patch to the upcoming SageNB release (0.7.x), get the spkg from #8051 and use the first patch above.
@@ -308,7 +308,7 @@ Please let me know if you have any questions.
 archive/issue_comments_068691.json:
 ```json
 {
-    "body": "\"Uncompressed sagenb-0.6.spkg in tmp\", etc (as suggested) and (1) there were no patch errors and (2) ran doctests - all passed :-)\n\nStarted the notebook using $SAGE_ROOT/sage and found \"scilab (optional)\" is magically now present! \n\nI tried a simple scilab command in the scilab console to make sure scilab was ok (I used eye(3,3) ), then tried it in the notebook and got\n\n\n```\n\neye(3)\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_3.py\", line 4, in <module>\n    print _support_.syseval(scilab, ur\\u0027\\u0027\\u0027eye(3,3)\\u0027\\u0027\\u0027, \\u0027/home/ross/.sage/sage_notebook.sagenb/home/admin/65/cells/1\\u0027)\n  File \"\", line 1, in <module>\n    \n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg/sagenb/misc/support.py\", line 470, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\nTypeError: eval() takes exactly 2 non-keyword arguments (3 given)\n```\n\n\nLet me know if I skipped something. (And definitely no offence taken - you left very good instructions - thanks :-)",
+    "body": "\"Uncompressed sagenb-0.6.spkg in tmp\", etc (as suggested) and (1) there were no patch errors and (2) ran doctests - all passed :-)\n\nStarted the notebook using $SAGE_ROOT/sage and found \"scilab (optional)\" is magically now present! \n\nI tried a simple scilab command in the scilab console to make sure scilab was ok (I used eye(3,3) ), then tried it in the notebook and got\n\n```\n\neye(3)\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_3.py\", line 4, in <module>\n    print _support_.syseval(scilab, ur\\u0027\\u0027\\u0027eye(3,3)\\u0027\\u0027\\u0027, \\u0027/home/ross/.sage/sage_notebook.sagenb/home/admin/65/cells/1\\u0027)\n  File \"\", line 1, in <module>\n    \n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg/sagenb/misc/support.py\", line 470, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\nTypeError: eval() takes exactly 2 non-keyword arguments (3 given)\n```\n\nLet me know if I skipped something. (And definitely no offence taken - you left very good instructions - thanks :-)",
     "created_at": "2010-02-01T14:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -322,7 +322,6 @@ archive/issue_comments_068691.json:
 Started the notebook using $SAGE_ROOT/sage and found "scilab (optional)" is magically now present! 
 
 I tried a simple scilab command in the scilab console to make sure scilab was ok (I used eye(3,3) ), then tried it in the notebook and got
-
 
 ```
 
@@ -338,7 +337,6 @@ Traceback (most recent call last):
     return system.eval(cmd, sage_globals, locals = sage_globals)
 TypeError: eval() takes exactly 2 non-keyword arguments (3 given)
 ```
-
 
 Let me know if I skipped something. (And definitely no offence taken - you left very good instructions - thanks :-)
 
@@ -385,7 +383,7 @@ Make `scilab.eval` accept extra non-keyword arguments.  **sage** repository.
 archive/issue_comments_068694.json:
 ```json
 {
-    "body": "Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by @qed777 created at 2010-02-02 20:57:22\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```\n",
+    "body": "Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by @qed777 created at 2010-02-02 20:57:22\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```",
     "created_at": "2010-02-02T20:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -409,13 +407,12 @@ sage -b    # This rebuilds the updated files.
 
 
 
-
 ---
 
 archive/issue_comments_068695.json:
 ```json
 {
-    "body": "Theres new (but different errors) :-(\n\nTo confirm them as reproducible, I \n\n* started from a pristine (backup) build,\n\n* did only the \"sage -python setup.py install\" again, \n\n* started the notebook to confirm scilab dropdown option had been added (it was),\n\n* quit the notebook (and sage) and added the new patch (as per your 4 line tip),\n\n* checked scilab opens ok and can do eye(3,3) then I closed it and \n\n* restarted Sage and the notebook and selected the scilab option from the dropdown\n\nI then tested both eye(3,3) and 1+1 (both resulted in the following error)\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nRuntimeError: Unable to start scilab\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 4, in <module>\n    print _support_.syseval(scilab, ur\\u0027\\u0027\\u00271+1\\u0027\\u0027\\u0027, \\u0027/home/ross/.sage/sage_notebook.sagenb/home/admin/66/cells/2\\u0027)\n  File \"\", line 1, in <module>\n    \n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg/sagenb/misc/support.py\", line 470, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n    s = Expect.eval(self, command, **kwds).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 983, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 637, in _eval_line\n    self._start()\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n    Expect._start(self)\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 472, in _start\n    raise RuntimeError, \"Unable to start %s\"%self.__name\nRuntimeError: Unable to start scilab\n```\n",
+    "body": "Theres new (but different errors) :-(\n\nTo confirm them as reproducible, I \n\n* started from a pristine (backup) build,\n\n* did only the \"sage -python setup.py install\" again, \n\n* started the notebook to confirm scilab dropdown option had been added (it was),\n\n* quit the notebook (and sage) and added the new patch (as per your 4 line tip),\n\n* checked scilab opens ok and can do eye(3,3) then I closed it and \n\n* restarted Sage and the notebook and selected the scilab option from the dropdown\n\nI then tested both eye(3,3) and 1+1 (both resulted in the following error)\n\n```\nTraceback (click to the left of this block for traceback)\n...\nRuntimeError: Unable to start scilab\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 4, in <module>\n    print _support_.syseval(scilab, ur\\u0027\\u0027\\u00271+1\\u0027\\u0027\\u0027, \\u0027/home/ross/.sage/sage_notebook.sagenb/home/admin/66/cells/2\\u0027)\n  File \"\", line 1, in <module>\n    \n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg/sagenb/misc/support.py\", line 470, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n    s = Expect.eval(self, command, **kwds).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 983, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 637, in _eval_line\n    self._start()\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n    Expect._start(self)\n  File \"/home/ross/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 472, in _start\n    raise RuntimeError, \"Unable to start %s\"%self.__name\nRuntimeError: Unable to start scilab\n```",
     "created_at": "2010-02-03T12:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -441,7 +438,6 @@ To confirm them as reproducible, I
 * restarted Sage and the notebook and selected the scilab option from the dropdown
 
 I then tested both eye(3,3) and 1+1 (both resulted in the following error)
-
 
 ```
 Traceback (click to the left of this block for traceback)
@@ -471,13 +467,12 @@ RuntimeError: Unable to start scilab
 
 
 
-
 ---
 
 archive/issue_comments_068696.json:
 ```json
 {
-    "body": "What happens if you run `scilab -nogui` at a shell prompt?  It possible that Sage can't find `scilab` in the search `PATH`.\n\nTo get some additional data:\n\n```sh\ncd $SAGE_ROOT\nsage -t -optional devel/sage/sage/interfaces/scilab.py\n```\n\nWith Scilab 5.2.0 on Linux, I get failures at lines 19, 123, 157, 340, and 505.  With the worksheet system set to `sage` (in the drop-down menu), evaluating `scilab('1 + 1')`, `scilab.eval('1 + 1')`, or\n\n```py\n%scilab\n1 + 1\n```\n\ngives the expected answer, as does evaluating `1+1` with the worksheet system set to `scilab`.  Evaluating `scilab('1 + 1')` and `scilab.eval('1 + 1')` at the Sage command-line also works.",
+    "body": "What happens if you run `scilab -nogui` at a shell prompt?  It possible that Sage can't find `scilab` in the search `PATH`.\n\nTo get some additional data:\n\n```sh\ncd $SAGE_ROOT\nsage -t -optional devel/sage/sage/interfaces/scilab.py\n```\nWith Scilab 5.2.0 on Linux, I get failures at lines 19, 123, 157, 340, and 505.  With the worksheet system set to `sage` (in the drop-down menu), evaluating `scilab('1 + 1')`, `scilab.eval('1 + 1')`, or\n\n```py\n%scilab\n1 + 1\n```\ngives the expected answer, as does evaluating `1+1` with the worksheet system set to `scilab`.  Evaluating `scilab('1 + 1')` and `scilab.eval('1 + 1')` at the Sage command-line also works.",
     "created_at": "2010-02-04T05:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -494,14 +489,12 @@ To get some additional data:
 cd $SAGE_ROOT
 sage -t -optional devel/sage/sage/interfaces/scilab.py
 ```
-
 With Scilab 5.2.0 on Linux, I get failures at lines 19, 123, 157, 340, and 505.  With the worksheet system set to `sage` (in the drop-down menu), evaluating `scilab('1 + 1')`, `scilab.eval('1 + 1')`, or
 
 ```py
 %scilab
 1 + 1
 ```
-
 gives the expected answer, as does evaluating `1+1` with the worksheet system set to `scilab`.  Evaluating `scilab('1 + 1')` and `scilab.eval('1 + 1')` at the Sage command-line also works.
 
 
@@ -511,7 +504,7 @@ gives the expected answer, as does evaluating `1+1` with the worksheet system se
 archive/issue_comments_068697.json:
 ```json
 {
-    "body": "I dont think we have a path problem because \"scilab -nogui\" works with the 1+1 example ... other than a complaint about the -nogui switch i.e.\n\n```\nStartup execution:\n  loading initial environment\n !--error 999 \nScilab 'GUI' module disabled in -nogui or -nwni mode.at line     117 of function toolboxes called by :  \ntoolboxes(SCI+'/contrib');\nline     2 of exec file called by :    \n  exec(SCI+'/contrib/loader.sce');\nline   127 of exec file called by :    \nexec('SCI/etc/scilab.start',-1);;\n \n \n-->1+1\n ans  =\n \n    2.  \n```\n\n(a \"benign\" error/warning couldnt possibly be the problem could it!?)\n\nsage -t threw MANY errors (i.e. more than those listed)\n\nThe scilab('1+1') and eval.scilab('1+1') with scilab selected in notebook, all reported \"cant start scilab\".\n\nThis \"couldnt start scilab\" \n\n```\n%scilab\n1+1\n```\n\n\nand the 3 lines of code in a cell \n\n\n```\n-----------------\n#!py\n%scilab\n1+1\n-----------------          \t\n```\n\n\nreturned\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nSyntaxError: invalid syntax\n\nTraceback (most recent call last):    %scilab\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmp7iOaVh/___code___.py\", line 3\n    %scilab\n    ^\nSyntaxError: invalid syntax\n\n```\n\n\n(Im almost wondering if the error being thrown about -nogui IS the problem)",
+    "body": "I dont think we have a path problem because \"scilab -nogui\" works with the 1+1 example ... other than a complaint about the -nogui switch i.e.\n\n```\nStartup execution:\n  loading initial environment\n !--error 999 \nScilab 'GUI' module disabled in -nogui or -nwni mode.at line     117 of function toolboxes called by :  \ntoolboxes(SCI+'/contrib');\nline     2 of exec file called by :    \n  exec(SCI+'/contrib/loader.sce');\nline   127 of exec file called by :    \nexec('SCI/etc/scilab.start',-1);;\n \n \n-->1+1\n ans  =\n \n    2.  \n```\n(a \"benign\" error/warning couldnt possibly be the problem could it!?)\n\nsage -t threw MANY errors (i.e. more than those listed)\n\nThe scilab('1+1') and eval.scilab('1+1') with scilab selected in notebook, all reported \"cant start scilab\".\n\nThis \"couldnt start scilab\" \n\n```\n%scilab\n1+1\n```\n\nand the 3 lines of code in a cell \n\n```\n-----------------\n#!py\n%scilab\n1+1\n-----------------          \t\n```\n\nreturned\n\n```\nTraceback (click to the left of this block for traceback)\n...\nSyntaxError: invalid syntax\n\nTraceback (most recent call last):    %scilab\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmp7iOaVh/___code___.py\", line 3\n    %scilab\n    ^\nSyntaxError: invalid syntax\n\n```\n\n(Im almost wondering if the error being thrown about -nogui IS the problem)",
     "created_at": "2010-02-04T06:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -539,7 +532,6 @@ exec('SCI/etc/scilab.start',-1);;
  
     2.  
 ```
-
 (a "benign" error/warning couldnt possibly be the problem could it!?)
 
 sage -t threw MANY errors (i.e. more than those listed)
@@ -553,9 +545,7 @@ This "couldnt start scilab"
 1+1
 ```
 
-
 and the 3 lines of code in a cell 
-
 
 ```
 -----------------
@@ -565,9 +555,7 @@ and the 3 lines of code in a cell
 -----------------          	
 ```
 
-
 returned
-
 
 ```
 Traceback (click to the left of this block for traceback)
@@ -584,7 +572,6 @@ SyntaxError: invalid syntax
 
 ```
 
-
 (Im almost wondering if the error being thrown about -nogui IS the problem)
 
 
@@ -594,7 +581,7 @@ SyntaxError: invalid syntax
 archive/issue_comments_068698.json:
 ```json
 {
-    "body": "Replying to [comment:12 rossk]:\n> (Im almost wondering if the error being thrown about -nogui IS the problem)\n\nIt's quite possible.  Which OS and Scilab version are you using?",
+    "body": "Replying to [comment:12 rossk]:\n> (Im almost wondering if the error being thrown about -nogui IS the problem)\n\n\nIt's quite possible.  Which OS and Scilab version are you using?",
     "created_at": "2010-02-04T07:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -606,6 +593,7 @@ archive/issue_comments_068698.json:
 Replying to [comment:12 rossk]:
 > (Im almost wondering if the error being thrown about -nogui IS the problem)
 
+
 It's quite possible.  Which OS and Scilab version are you using?
 
 
@@ -615,7 +603,7 @@ It's quite possible.  Which OS and Scilab version are you using?
 archive/issue_comments_068699.json:
 ```json
 {
-    "body": "\n```\n$ uname -a \nLinux gauss 2.6.31-18-generic #55-Ubuntu SMP Fri Jan 8 14:55:26 UTC 2010 i686 GNU/Linux\n\n$ scilab -version \nScilab version \"5.1.0.1239693280\" scilab-5.1.1\n```\n",
+    "body": "```\n$ uname -a \nLinux gauss 2.6.31-18-generic #55-Ubuntu SMP Fri Jan 8 14:55:26 UTC 2010 i686 GNU/Linux\n\n$ scilab -version \nScilab version \"5.1.0.1239693280\" scilab-5.1.1\n```",
     "created_at": "2010-02-04T07:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -624,7 +612,6 @@ archive/issue_comments_068699.json:
 }
 ```
 
-
 ```
 $ uname -a 
 Linux gauss 2.6.31-18-generic #55-Ubuntu SMP Fri Jan 8 14:55:26 UTC 2010 i686 GNU/Linux
@@ -632,7 +619,6 @@ Linux gauss 2.6.31-18-generic #55-Ubuntu SMP Fri Jan 8 14:55:26 UTC 2010 i686 GN
 $ scilab -version 
 Scilab version "5.1.0.1239693280" scilab-5.1.1
 ```
-
 
 
 
@@ -659,7 +645,7 @@ I'm not sure what's wrong.  Have you tried reinstalling Scilab or installing the
 archive/issue_comments_068701.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> I'm not sure what's wrong.  Have you tried reinstalling Scilab or installing the [latest version](http://www.scilab.org/download/index_download.php?page=release)?\n\nIll start again to make sure. Ill get+build the latest sage and scilab\n\nThen Ill do \n\n```\ncd ~/sagenb-0.6/src/sagenb\n~/sage4.3.2rc0/sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-missing_scilab.2.patch \n~/sage4.3.2rc0/sage -hg qpush\n~/sage4.3.2rc0/sage -python setup.py install\n```\n\nThat should do it, shouldnt it?\n\n(BTW if you can, can you explain or refer me to an explanation of the only line I dont understand i.e. \"sage -python setup.py install\"? How does this command get code from sagenb-0.6/src/sagenb into my sage distribution in ~/sage4.3.2rc0 ?",
+    "body": "Replying to [comment:15 mpatel]:\n> I'm not sure what's wrong.  Have you tried reinstalling Scilab or installing the [latest version](http://www.scilab.org/download/index_download.php?page=release)?\n\n\nIll start again to make sure. Ill get+build the latest sage and scilab\n\nThen Ill do \n\n```\ncd ~/sagenb-0.6/src/sagenb\n~/sage4.3.2rc0/sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-missing_scilab.2.patch \n~/sage4.3.2rc0/sage -hg qpush\n~/sage4.3.2rc0/sage -python setup.py install\n```\nThat should do it, shouldnt it?\n\n(BTW if you can, can you explain or refer me to an explanation of the only line I dont understand i.e. \"sage -python setup.py install\"? How does this command get code from sagenb-0.6/src/sagenb into my sage distribution in ~/sage4.3.2rc0 ?",
     "created_at": "2010-02-04T09:08:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -671,6 +657,7 @@ archive/issue_comments_068701.json:
 Replying to [comment:15 mpatel]:
 > I'm not sure what's wrong.  Have you tried reinstalling Scilab or installing the [latest version](http://www.scilab.org/download/index_download.php?page=release)?
 
+
 Ill start again to make sure. Ill get+build the latest sage and scilab
 
 Then Ill do 
@@ -681,7 +668,6 @@ cd ~/sagenb-0.6/src/sagenb
 ~/sage4.3.2rc0/sage -hg qpush
 ~/sage4.3.2rc0/sage -python setup.py install
 ```
-
 That should do it, shouldnt it?
 
 (BTW if you can, can you explain or refer me to an explanation of the only line I dont understand i.e. "sage -python setup.py install"? How does this command get code from sagenb-0.6/src/sagenb into my sage distribution in ~/sage4.3.2rc0 ?
@@ -715,7 +701,7 @@ It may be a false lead, but the 999 error is interesting because Sage runs `scil
 archive/issue_comments_068703.json:
 ```json
 {
-    "body": "First, thanks for saving me all that work (and the explanation :-)\n\n1) I installed scilab 5.2.0 (and I modified my path to include its binary path) and in running it I tried \"scilab -nogui\" and guess what... (it found scilab on the path and) NO ERROR!\n\n2) Fired up the notebook, selected \"scilab (optional)\" then tried \"1+1\" and got...\n\n...an error :-( \n\nBut something was different, my spider-sense was tingling...  ;-)\n\nI had forgot to export the new path (to scilab) in the terminal I was running Sage in.\n\nI did that and... voila!\n\nThe following worked\n\n```\n# \"scilab (optional)\" selected from dropdown\n1+1\n------\neye(3,3)\n------\n# \"sage\" selected\n%scilab\n1+1\n------\nscilab('eye(3,3)')\n------\n% scilab\n1+1\n------\n# only format that didnt work under \"sage\" dropdown was...\neval.scilab('1+1')\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'builtin_function_or_method' object has no attribute\n'scilab'\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_8.py\", line 4, in <module>\n    open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"ZXZhbC5zY2lsYWIoJzErMScp\"),globals())+\"\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpScHOqE/___code___.py\", line 2, in <module>\n    eval.scilab(\\u00271+1\\u0027)\n  File \"\", line 1, in <module>\n    \nAttributeError: 'builtin_function_or_method' object has no attribute 'scilab'\n```\n\n\nNow pls let me know what other checks I need to do and how to do some doc tests (all doc test might wait till I get a sage account soon)",
+    "body": "First, thanks for saving me all that work (and the explanation :-)\n\n1) I installed scilab 5.2.0 (and I modified my path to include its binary path) and in running it I tried \"scilab -nogui\" and guess what... (it found scilab on the path and) NO ERROR!\n\n2) Fired up the notebook, selected \"scilab (optional)\" then tried \"1+1\" and got...\n\n...an error :-( \n\nBut something was different, my spider-sense was tingling...  ;-)\n\nI had forgot to export the new path (to scilab) in the terminal I was running Sage in.\n\nI did that and... voila!\n\nThe following worked\n\n```\n# \"scilab (optional)\" selected from dropdown\n1+1\n------\neye(3,3)\n------\n# \"sage\" selected\n%scilab\n1+1\n------\nscilab('eye(3,3)')\n------\n% scilab\n1+1\n------\n# only format that didnt work under \"sage\" dropdown was...\neval.scilab('1+1')\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'builtin_function_or_method' object has no attribute\n'scilab'\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_8.py\", line 4, in <module>\n    open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"ZXZhbC5zY2lsYWIoJzErMScp\"),globals())+\"\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpScHOqE/___code___.py\", line 2, in <module>\n    eval.scilab(\\u00271+1\\u0027)\n  File \"\", line 1, in <module>\n    \nAttributeError: 'builtin_function_or_method' object has no attribute 'scilab'\n```\n\nNow pls let me know what other checks I need to do and how to do some doc tests (all doc test might wait till I get a sage account soon)",
     "created_at": "2010-02-04T15:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -777,7 +763,6 @@ Traceback (most recent call last):
 AttributeError: 'builtin_function_or_method' object has no attribute 'scilab'
 ```
 
-
 Now pls let me know what other checks I need to do and how to do some doc tests (all doc test might wait till I get a sage account soon)
 
 
@@ -805,7 +790,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068705.json:
 ```json
 {
-    "body": "That's great!  (`eval.scilab` should be `scilab.eval`.)\n\nWe should fix all doctests, i.e., ensure that\n\n```sh\ncd $SAGE_ROOT\nsage -t -optional devel/sage/sage/interfaces/scilab.py\n```\n\nyields no failures.  This will require improving the sage repository patch above.  I'm changing this ticket to \"needs work,\" for this reason.\n\nThe [developer's guide](http://www.sagemath.org/doc/developer/index.html) (4.3.2.rc0 includes #8147), the [wiki page on Mercurial queues](http://wiki.sagemath.org/MercurialQueues?highlight=%28queues%29), and [sage-devel](http://groups.google.com/group/sage-devel) might be useful.  Don't hesitate to ask, if you have questions.",
+    "body": "That's great!  (`eval.scilab` should be `scilab.eval`.)\n\nWe should fix all doctests, i.e., ensure that\n\n```sh\ncd $SAGE_ROOT\nsage -t -optional devel/sage/sage/interfaces/scilab.py\n```\nyields no failures.  This will require improving the sage repository patch above.  I'm changing this ticket to \"needs work,\" for this reason.\n\nThe [developer's guide](http://www.sagemath.org/doc/developer/index.html) (4.3.2.rc0 includes #8147), the [wiki page on Mercurial queues](http://wiki.sagemath.org/MercurialQueues?highlight=%28queues%29), and [sage-devel](http://groups.google.com/group/sage-devel) might be useful.  Don't hesitate to ask, if you have questions.",
     "created_at": "2010-02-05T01:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
@@ -822,7 +807,6 @@ We should fix all doctests, i.e., ensure that
 cd $SAGE_ROOT
 sage -t -optional devel/sage/sage/interfaces/scilab.py
 ```
-
 yields no failures.  This will require improving the sage repository patch above.  I'm changing this ticket to "needs work," for this reason.
 
 The [developer's guide](http://www.sagemath.org/doc/developer/index.html) (4.3.2.rc0 includes #8147), the [wiki page on Mercurial queues](http://wiki.sagemath.org/MercurialQueues?highlight=%28queues%29), and [sage-devel](http://groups.google.com/group/sage-devel) might be useful.  Don't hesitate to ask, if you have questions.

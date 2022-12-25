@@ -3,7 +3,7 @@
 archive/issues_001043.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhy does this take any time?  It shouldn't:\n\n\n```\nsage: p = next_prime(10^24); q = next_prime(10^26); D = p*q; D\nsage: time K.<b> = NumberField(x^2 - D, check=False)\nCPU time: 2.39 s,  Wall time: 3.10 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1043\n\n",
+    "body": "Assignee: @williamstein\n\nWhy does this take any time?  It shouldn't:\n\n```\nsage: p = next_prime(10^24); q = next_prime(10^26); D = p*q; D\nsage: time K.<b> = NumberField(x^2 - D, check=False)\nCPU time: 2.39 s,  Wall time: 3.10 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1043\n\n",
     "created_at": "2007-10-31T21:08:39Z",
     "labels": [
         "component: number theory",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 Why does this take any time?  It shouldn't:
 
-
 ```
 sage: p = next_prime(10^24); q = next_prime(10^26); D = p*q; D
 sage: time K.<b> = NumberField(x^2 - D, check=False)
 CPU time: 2.39 s,  Wall time: 3.10 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1043
 

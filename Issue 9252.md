@@ -162,7 +162,7 @@ I don't think this works with the static documentation; the backslashes that you
 archive/issue_comments_086938.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> I don't think this works with the static documentation; the backslashes that you've inserted are visible there.\n\nWhen you(or really anyone) says \"static version\" do they mean the pdf's? Would I be able to see them with \n\n```\nsage -docbuild tutorial pdf\n```\n\n?\n\nOn that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.\n\nWhat about the literal blocks that are meant for the interactive shell? 'sage:' always gets turned into a cell, so I needed to add some kind of header in the literal block (a bad hack) to get it to print correctly in the live-help.\n\nThanks for looking at my patch!",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> I don't think this works with the static documentation; the backslashes that you've inserted are visible there.\n\n\nWhen you(or really anyone) says \"static version\" do they mean the pdf's? Would I be able to see them with \n\n```\nsage -docbuild tutorial pdf\n```\n?\n\nOn that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.\n\nWhat about the literal blocks that are meant for the interactive shell? 'sage:' always gets turned into a cell, so I needed to add some kind of header in the literal block (a bad hack) to get it to print correctly in the live-help.\n\nThanks for looking at my patch!",
     "created_at": "2010-06-18T04:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9252",
     "type": "issue_comment",
@@ -174,12 +174,12 @@ archive/issue_comments_086938.json:
 Replying to [comment:3 jhpalmieri]:
 > I don't think this works with the static documentation; the backslashes that you've inserted are visible there.
 
+
 When you(or really anyone) says "static version" do they mean the pdf's? Would I be able to see them with 
 
 ```
 sage -docbuild tutorial pdf
 ```
-
 ?
 
 On that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.
@@ -195,7 +195,7 @@ Thanks for looking at my patch!
 archive/issue_comments_086939.json:
 ```json
 {
-    "body": "Replying to [comment:4 wjlaffin]:\n> When you(or really anyone) says \"static version\" do they mean the pdf's? \n\nNo, the html version.  From the command line, execute \"tutorial()\", or from the notebook click the \"Help\" button and then the button for \"Fast Static Versions of the Documentation\".  Then click on the word \"Tutorial\".  Or open the file SAGE_ROOT/devel/sage/doc/output/html/en/tutorial/index.html in your web browser.\n\n> On that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.\n> \n> What about the literal blocks that are meant for the interactive shell? 'sage:' always gets turned into a cell, so I needed to add some kind of header in the literal block (a bad hack) to get it to print correctly in the live-help.\n\nSome of this is in sage/sage/misc/sagedoc.py (e.g., `process_dollars`).  See also SAGE_ROOT/devel/sage/doc/common/conf.py.\n\nIt looks like the conversion from the html file to the \"live\" version of the docs is in the notebook code: SAGE_ROOT/local/lib/python/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/docHTMLProcessor.py, it looks like.  Since you're dealing with differences between the static and the live versions, you may need to look there.",
+    "body": "Replying to [comment:4 wjlaffin]:\n> When you(or really anyone) says \"static version\" do they mean the pdf's? \n\n\nNo, the html version.  From the command line, execute \"tutorial()\", or from the notebook click the \"Help\" button and then the button for \"Fast Static Versions of the Documentation\".  Then click on the word \"Tutorial\".  Or open the file SAGE_ROOT/devel/sage/doc/output/html/en/tutorial/index.html in your web browser.\n\n> On that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.\n> \n> What about the literal blocks that are meant for the interactive shell? 'sage:' always gets turned into a cell, so I needed to add some kind of header in the literal block (a bad hack) to get it to print correctly in the live-help.\n\n\nSome of this is in sage/sage/misc/sagedoc.py (e.g., `process_dollars`).  See also SAGE_ROOT/devel/sage/doc/common/conf.py.\n\nIt looks like the conversion from the html file to the \"live\" version of the docs is in the notebook code: SAGE_ROOT/local/lib/python/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/docHTMLProcessor.py, it looks like.  Since you're dealing with differences between the static and the live versions, you may need to look there.",
     "created_at": "2010-06-18T05:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9252",
     "type": "issue_comment",
@@ -207,11 +207,13 @@ archive/issue_comments_086939.json:
 Replying to [comment:4 wjlaffin]:
 > When you(or really anyone) says "static version" do they mean the pdf's? 
 
+
 No, the html version.  From the command line, execute "tutorial()", or from the notebook click the "Help" button and then the button for "Fast Static Versions of the Documentation".  Then click on the word "Tutorial".  Or open the file SAGE_ROOT/devel/sage/doc/output/html/en/tutorial/index.html in your web browser.
 
 > On that note, where is the code that adds the $$=latex hack to the documentation? Maybe I can just patch that a little instead.
 > 
 > What about the literal blocks that are meant for the interactive shell? 'sage:' always gets turned into a cell, so I needed to add some kind of header in the literal block (a bad hack) to get it to print correctly in the live-help.
+
 
 Some of this is in sage/sage/misc/sagedoc.py (e.g., `process_dollars`).  See also SAGE_ROOT/devel/sage/doc/common/conf.py.
 

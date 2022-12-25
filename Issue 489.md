@@ -70,7 +70,7 @@ Changing status from new to assigned.
 archive/issue_comments_002428.json:
 ```json
 {
-    "body": "and it already has been build on neron. Just add -L${SAGE_LOCAL} -lncurses to the link flags, i.e. \n\n```\nmabshoff@neron LiE$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -L /extra/home/mabshoff/SAGE-build/sage-2.8.2.rc1/local/lib/ -lreadline -lcurses\n```\n\n\nCheers,\n\nMichael",
+    "body": "and it already has been build on neron. Just add -L${SAGE_LOCAL} -lncurses to the link flags, i.e. \n\n```\nmabshoff@neron LiE$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -L /extra/home/mabshoff/SAGE-build/sage-2.8.2.rc1/local/lib/ -lreadline -lcurses\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-24T17:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ and it already has been build on neron. Just add -L${SAGE_LOCAL} -lncurses to th
 ```
 mabshoff@neron LiE$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -L /extra/home/mabshoff/SAGE-build/sage-2.8.2.rc1/local/lib/ -lreadline -lcurses
 ```
-
 
 Cheers,
 
@@ -119,7 +118,7 @@ Michael
 archive/issue_comments_002430.json:
 ```json
 {
-    "body": "The ncurses/curses issue also rears its ugly head on a Centos 5/RedHat Enterprise 5 box on x86-64:\n\n```\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline\nlearn.o: In function `Learn':\nlearn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `PC'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetflag'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetent'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `UP'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tputs'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgoto'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetnum'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `BC'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetstr'\ncollect2: ld returned 1 exit status\nmake[1]: *** [Lie.exe] Error 1\nmake[1]: Leaving directory `/tmp/Work2/LiE'\nmake: *** [all] Error 2\n[mabshoff@m940 LiE]$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lncurses\nlearn.o: In function `Learn':\nlearn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'\n```\n\n\nCheers,\n\nMichael",
+    "body": "The ncurses/curses issue also rears its ugly head on a Centos 5/RedHat Enterprise 5 box on x86-64:\n\n```\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline\nlearn.o: In function `Learn':\nlearn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `PC'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetflag'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetent'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `UP'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tputs'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgoto'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetnum'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `BC'\n/usr/lib/gcc/x86_64-redhat-linux/4.1.1/../../../../lib64/libreadline.so: undefined reference to `tgetstr'\ncollect2: ld returned 1 exit status\nmake[1]: *** [Lie.exe] Error 1\nmake[1]: Leaving directory `/tmp/Work2/LiE'\nmake: *** [all] Error 2\n[mabshoff@m940 LiE]$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lncurses\nlearn.o: In function `Learn':\nlearn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-24T21:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
@@ -152,7 +151,6 @@ learn.o: In function `Learn':
 learn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
 ```
 
-
 Cheers,
 
 Michael
@@ -164,7 +162,7 @@ Michael
 archive/issue_comments_002431.json:
 ```json
 {
-    "body": "And while we are at it some valgrinding can't hurt:\n\n```\n[mabshoff@m940 LiE]$ valgrind --tool=memcheck --leak-resolution=high ./Lie.exe < progs/maxsub\n==22512== Memcheck, a memory error detector.\n==22512== Copyright (C) 2002-2006, and GNU GPL'd, by Julian Seward et al.\n==22512== Using LibVEX rev 1658, a library for dynamic binary translation.\n==22512== Copyright (C) 2004-2006, and GNU GPL'd, by OpenWorks LLP.\n==22512== Using valgrind-3.2.1, a dynamic binary instrumentation framework.\n==22512== Copyright (C) 2000-2006, and GNU GPL'd, by Julian Seward et al.\n==22512== For more details, rerun with: -v\n==22512==\nNew tree space with maximum number of nodes: 50000.\n     type A\n==22512== Syscall param write(buf) points to uninitialised byte(s)\n==22512==    at 0x31058BFA60: __write_nocancel (in /lib64/libc-2.5.so)\n==22512==    by 0x31058686D2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x31058685E5: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x310586971F: _IO_file_close_it@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x310585E249: fclose@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x40565C: Objectwrite (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x41241E: vid_writestring_tex_grp_tex (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x406325: eval_value (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x41346F: arg_sequence (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x406169: eval_value (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x40291D: yyparse (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x40764D: main (in /tmp/Work2/LiE/Lie.exe)\n==22512==  Address 0x4C0B00F is not stack'd, malloc'd or (recently) free'd\n     type B\n     type C\n<SNIP>\n```\n\n\nGenerally speaking there is a varying amount of still-reachable memory at exit time:\n\n\n```\n==22519== LEAK SUMMARY:\n==22519==    definitely lost: 0 bytes in 0 blocks.\n==22519==      possibly lost: 0 bytes in 0 blocks.\n==22519==    still reachable: 1,769,812 bytes in 55 blocks.\n==22519==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nThis might or might not become a problem if you do a bunch of computations using the same executable instance. If somebody has an example of something big that we can run in a loop let me know.\n\nCheers,\n\nMichael",
+    "body": "And while we are at it some valgrinding can't hurt:\n\n```\n[mabshoff@m940 LiE]$ valgrind --tool=memcheck --leak-resolution=high ./Lie.exe < progs/maxsub\n==22512== Memcheck, a memory error detector.\n==22512== Copyright (C) 2002-2006, and GNU GPL'd, by Julian Seward et al.\n==22512== Using LibVEX rev 1658, a library for dynamic binary translation.\n==22512== Copyright (C) 2004-2006, and GNU GPL'd, by OpenWorks LLP.\n==22512== Using valgrind-3.2.1, a dynamic binary instrumentation framework.\n==22512== Copyright (C) 2000-2006, and GNU GPL'd, by Julian Seward et al.\n==22512== For more details, rerun with: -v\n==22512==\nNew tree space with maximum number of nodes: 50000.\n     type A\n==22512== Syscall param write(buf) points to uninitialised byte(s)\n==22512==    at 0x31058BFA60: __write_nocancel (in /lib64/libc-2.5.so)\n==22512==    by 0x31058686D2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x31058685E5: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x310586971F: _IO_file_close_it@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x310585E249: fclose@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)\n==22512==    by 0x40565C: Objectwrite (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x41241E: vid_writestring_tex_grp_tex (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x406325: eval_value (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x41346F: arg_sequence (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x406169: eval_value (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x40291D: yyparse (in /tmp/Work2/LiE/Lie.exe)\n==22512==    by 0x40764D: main (in /tmp/Work2/LiE/Lie.exe)\n==22512==  Address 0x4C0B00F is not stack'd, malloc'd or (recently) free'd\n     type B\n     type C\n<SNIP>\n```\n\nGenerally speaking there is a varying amount of still-reachable memory at exit time:\n\n```\n==22519== LEAK SUMMARY:\n==22519==    definitely lost: 0 bytes in 0 blocks.\n==22519==      possibly lost: 0 bytes in 0 blocks.\n==22519==    still reachable: 1,769,812 bytes in 55 blocks.\n==22519==         suppressed: 0 bytes in 0 blocks.\n```\n\nThis might or might not become a problem if you do a bunch of computations using the same executable instance. If somebody has an example of something big that we can run in a loop let me know.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-24T21:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
@@ -206,9 +204,7 @@ New tree space with maximum number of nodes: 50000.
 <SNIP>
 ```
 
-
 Generally speaking there is a varying amount of still-reachable memory at exit time:
-
 
 ```
 ==22519== LEAK SUMMARY:
@@ -217,7 +213,6 @@ Generally speaking there is a varying amount of still-reachable memory at exit t
 ==22519==    still reachable: 1,769,812 bytes in 55 blocks.
 ==22519==         suppressed: 0 bytes in 0 blocks.
 ```
-
 
 This might or might not become a problem if you do a bunch of computations using the same executable instance. If somebody has an example of something big that we can run in a loop let me know.
 

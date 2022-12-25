@@ -3,7 +3,7 @@
 archive/issues_005485.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nConsider this:\n\n\n```\nsage: R.<x, y> = ZZ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\n\nBut judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:\n\n\n```\nsage: R.krull_dimension()\n3\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5485\n\n",
+    "body": "Assignee: @malb\n\nConsider this:\n\n```\nsage: R.<x, y> = ZZ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\nBut judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:\n\n```\nsage: R.krull_dimension()\n3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5485\n\n",
     "created_at": "2009-03-11T08:25:23Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 Consider this:
 
-
 ```
 sage: R.<x, y> = ZZ[]
 sage: I = R.ideal(0)
@@ -29,15 +28,12 @@ verbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to v
 1
 ```
 
-
 But judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:
-
 
 ```
 sage: R.krull_dimension()
 3
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5485
@@ -119,7 +115,7 @@ If you want to go ahead and do this, that's great.  If not I can probably get ar
 archive/issue_comments_042490.json:
 ```json
 {
-    "body": "Hi Alex,\n\nWhat is EGA IV? If my university's library has it, I'd be glad to take a look at it.\n\nYou wrote,\n\n> I have just spent some quality time with EGA IV and found\n> something that we can use: Corollary 5.5.4 (page 95 in\n> volume 2 of EGA IV) says that if the ring A is noetherian,\n> then the dimension of A[x_1,...,x_n] is equal to n + dim(A).\n> ...\n> \n> So here's what we need to do for polynomial rings: check\n> whether the base ring is noetherian; if not, raise a\n> NotImplementedError.  If yes, return the Krull dimension of\n> the base ring plus the number of generators.\n\n\nHold on: `dimension()` is a method of an ideal, not of a ring. I can see that this would work with (0), but will it work with other ideals? i.e., can I assume that if R is Noetherian, then I should add the affine dimension? (I'm not sure that *affine dimension* is the right term, probably not, but I hope you get the idea.)\n\nFor example:\n\n\n```\nsage: R.<x,y> = ZZ[]\nsage: I = R.ideal(x+y)\nsage. I.dimension()\n```\n\n\n\nShould the answer be 1 (current) or 2 (my wholly uninformed guess, dim ZZ + affine dim of ideal) or something else?",
+    "body": "Hi Alex,\n\nWhat is EGA IV? If my university's library has it, I'd be glad to take a look at it.\n\nYou wrote,\n\n> I have just spent some quality time with EGA IV and found\n> something that we can use: Corollary 5.5.4 (page 95 in\n> volume 2 of EGA IV) says that if the ring A is noetherian,\n> then the dimension of A[x_1,...,x_n] is equal to n + dim(A).\n> ...\n> \n> So here's what we need to do for polynomial rings: check\n> whether the base ring is noetherian; if not, raise a\n> NotImplementedError.  If yes, return the Krull dimension of\n> the base ring plus the number of generators.\n\n\n\nHold on: `dimension()` is a method of an ideal, not of a ring. I can see that this would work with (0), but will it work with other ideals? i.e., can I assume that if R is Noetherian, then I should add the affine dimension? (I'm not sure that *affine dimension* is the right term, probably not, but I hope you get the idea.)\n\nFor example:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: I = R.ideal(x+y)\nsage. I.dimension()\n```\n\n\nShould the answer be 1 (current) or 2 (my wholly uninformed guess, dim ZZ + affine dim of ideal) or something else?",
     "created_at": "2009-03-18T15:47:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
@@ -146,17 +142,16 @@ You wrote,
 > the base ring plus the number of generators.
 
 
+
 Hold on: `dimension()` is a method of an ideal, not of a ring. I can see that this would work with (0), but will it work with other ideals? i.e., can I assume that if R is Noetherian, then I should add the affine dimension? (I'm not sure that *affine dimension* is the right term, probably not, but I hope you get the idea.)
 
 For example:
-
 
 ```
 sage: R.<x,y> = ZZ[]
 sage: I = R.ideal(x+y)
 sage. I.dimension()
 ```
-
 
 
 Should the answer be 1 (current) or 2 (my wholly uninformed guess, dim ZZ + affine dim of ideal) or something else?
@@ -186,7 +181,7 @@ EGA is Grothendieck's Elements de Geometrie Algebrique.  Here is a better refere
 archive/issue_comments_042492.json:
 ```json
 {
-    "body": "OK, so there are several issues here.\n\nOne is that we're not sure that the naive algorithm implemented in dimension() works over base rings that are not fields.  The most interesting instance of this (in my opinion) is when the base ring is ZZ.  We are currently returning wrong answers, so even raising a `NotImplementedError` would be preferable.  Of course, it would be nice if we could get it to work -- but note that Singular 3.1.0 will have support for polynomial rings over ZZ, so in the worst case we can wait until they release.\n\nThe more pressing issue is that the naive algorithm returns wrong answers even if you run it over QQ.  To see this, try the following as it is now:\n\n\n```\nsage: R.<x, y> = QQ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\n2\n```\n\n\nThis is the correct answer, and it's coming directly from Singular.  However, we can force Sage to use the naive algorithm by inserting `raise TypeError` on line 977 of `multi_polynomial_ideal.py`.  Run `sage -br` and try the same computation again:\n\n\n```\nsage: R.<x, y> = QQ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (932: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\n\nThis is wrong and should be our main priority.  In fact, I think it would be ok to just fix this for this ticket and open enhancement tickets for dimension() over tricky base rings.",
+    "body": "OK, so there are several issues here.\n\nOne is that we're not sure that the naive algorithm implemented in dimension() works over base rings that are not fields.  The most interesting instance of this (in my opinion) is when the base ring is ZZ.  We are currently returning wrong answers, so even raising a `NotImplementedError` would be preferable.  Of course, it would be nice if we could get it to work -- but note that Singular 3.1.0 will have support for polynomial rings over ZZ, so in the worst case we can wait until they release.\n\nThe more pressing issue is that the naive algorithm returns wrong answers even if you run it over QQ.  To see this, try the following as it is now:\n\n```\nsage: R.<x, y> = QQ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\n2\n```\n\nThis is the correct answer, and it's coming directly from Singular.  However, we can force Sage to use the naive algorithm by inserting `raise TypeError` on line 977 of `multi_polynomial_ideal.py`.  Run `sage -br` and try the same computation again:\n\n```\nsage: R.<x, y> = QQ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (932: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\nThis is wrong and should be our main priority.  In fact, I think it would be ok to just fix this for this ticket and open enhancement tickets for dimension() over tricky base rings.",
     "created_at": "2009-03-29T02:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
@@ -201,7 +196,6 @@ One is that we're not sure that the naive algorithm implemented in dimension() w
 
 The more pressing issue is that the naive algorithm returns wrong answers even if you run it over QQ.  To see this, try the following as it is now:
 
-
 ```
 sage: R.<x, y> = QQ[]
 sage: I = R.ideal(0)
@@ -209,9 +203,7 @@ sage: I.dimension()
 2
 ```
 
-
 This is the correct answer, and it's coming directly from Singular.  However, we can force Sage to use the naive algorithm by inserting `raise TypeError` on line 977 of `multi_polynomial_ideal.py`.  Run `sage -br` and try the same computation again:
-
 
 ```
 sage: R.<x, y> = QQ[]
@@ -220,7 +212,6 @@ sage: I.dimension()
 verbose 0 (932: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.
 1
 ```
-
 
 This is wrong and should be our main priority.  In fact, I think it would be ok to just fix this for this ticket and open enhancement tickets for dimension() over tricky base rings.
 

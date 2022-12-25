@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6236
 archive/issue_comments_049688.json:
 ```json
 {
-    "body": "just in case sagenb.org goes down, here is the code:\n\n\n```\ndef faces(g):\n   d={}\n   for key,val in g.get_embedding().iteritems():\n       d[key]=dict(zip(val,val[1:]+[val[0]]))\n   list_faces=[]\n   for start in d:\n       while d[start]:\n           face=[]\n           prev=start\n           _,curr = d[start].popitem()\n           face.append(start)\n           while curr != start:\n               face.append(curr)\n               prev,curr = (curr, d[curr].pop(prev))\n           list_faces.append(face)\n   return list_faces\n\ndef graph_dual(g):\n   f = [tuple(face) for face in faces(g)]\n   f_edges = [tuple(zip(i,i[1:]+(i[0],))) for i in f]\n   dual = Graph([f_edges,lambda f1,f2: set(f1).intersection([(e[1],e[0]) for e in f2])])\n   return dual \n\nh=graphs.PathGraph(2)\ng=h.disjoint_union(h).disjoint_union(h)\ng=g.complement()\ng.relabel()\nshow(g) \n        \t\n\ng.is_planar(set_embedding=True, set_pos=True)\nshow(g) \n        \t\n\n# The vertices forming the faces of the graph\nfaces(g) \n        \t\ndual_g=graph_dual(g) \n        \t\n# Each vertex is labeled with the edges of the face that it represents.\nshow(dual_g) \n        \t\n\n# We can relabel the vertices to get a \"nice\" graph, but then we lose the information about which face corresponds to which vertex.\ndual_g.relabel()\nshow(dual_g) \n```\n",
+    "body": "just in case sagenb.org goes down, here is the code:\n\n```\ndef faces(g):\n   d={}\n   for key,val in g.get_embedding().iteritems():\n       d[key]=dict(zip(val,val[1:]+[val[0]]))\n   list_faces=[]\n   for start in d:\n       while d[start]:\n           face=[]\n           prev=start\n           _,curr = d[start].popitem()\n           face.append(start)\n           while curr != start:\n               face.append(curr)\n               prev,curr = (curr, d[curr].pop(prev))\n           list_faces.append(face)\n   return list_faces\n\ndef graph_dual(g):\n   f = [tuple(face) for face in faces(g)]\n   f_edges = [tuple(zip(i,i[1:]+(i[0],))) for i in f]\n   dual = Graph([f_edges,lambda f1,f2: set(f1).intersection([(e[1],e[0]) for e in f2])])\n   return dual \n\nh=graphs.PathGraph(2)\ng=h.disjoint_union(h).disjoint_union(h)\ng=g.complement()\ng.relabel()\nshow(g) \n        \t\n\ng.is_planar(set_embedding=True, set_pos=True)\nshow(g) \n        \t\n\n# The vertices forming the faces of the graph\nfaces(g) \n        \t\ndual_g=graph_dual(g) \n        \t\n# Each vertex is labeled with the edges of the face that it represents.\nshow(dual_g) \n        \t\n\n# We can relabel the vertices to get a \"nice\" graph, but then we lose the information about which face corresponds to which vertex.\ndual_g.relabel()\nshow(dual_g) \n```",
     "created_at": "2009-06-06T22:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_049688.json:
 ```
 
 just in case sagenb.org goes down, here is the code:
-
 
 ```
 def faces(g):
@@ -95,7 +94,6 @@ show(dual_g)
 dual_g.relabel()
 show(dual_g) 
 ```
-
 
 
 
@@ -214,7 +212,7 @@ IIRC, the only case I was interested in was cubic planar graphs, and it seemed t
 archive/issue_comments_049695.json:
 ```json
 {
-    "body": "Hi,\n\nI'm interested in this functionality too!\n\n> It seems that the code given as an example only 'works' for 3-edge-connected simple planar graphs. Is this sufficient, or should we also try to make it work for other graphs? Supporting multigraphs might depend on #14657.\n\nWhat do you mean by 'works'? I don't know enough graph theory to interpret the code above, but if someone could fix this to take care of all planar graphs, I could try to include it.",
+    "body": "Hi,\n\nI'm interested in this functionality too!\n\n> It seems that the code given as an example only 'works' for 3-edge-connected simple planar graphs. Is this sufficient, or should we also try to make it work for other graphs? Supporting multigraphs might depend on #14657.\n\n\nWhat do you mean by 'works'? I don't know enough graph theory to interpret the code above, but if someone could fix this to take care of all planar graphs, I could try to include it.",
     "created_at": "2014-11-17T06:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -228,6 +226,7 @@ Hi,
 I'm interested in this functionality too!
 
 > It seems that the code given as an example only 'works' for 3-edge-connected simple planar graphs. Is this sufficient, or should we also try to make it work for other graphs? Supporting multigraphs might depend on #14657.
+
 
 What do you mean by 'works'? I don't know enough graph theory to interpret the code above, but if someone could fix this to take care of all planar graphs, I could try to include it.
 
@@ -258,7 +257,7 @@ If the input graph is not 3-edge-connected, then the dual will not be a simple p
 archive/issue_comments_049697.json:
 ```json
 {
-    "body": "> If the input graph is not 3-edge-connected, then the dual will not be a simple plane graph, so no code will work for those graphs until we first add support for plane multigraphs and plane graphs with loops.\n\nAh, I see! Thanks for explaining the issue. Can we write a program to check for 3-edge-connectedness? If that is not too hard, then we can at least include the dual graph method for a large class of graphs (and many that other people are interested in). For graphs which fail that test, we can leave a `NotImplemented` error. Does that seem doable?",
+    "body": "> If the input graph is not 3-edge-connected, then the dual will not be a simple plane graph, so no code will work for those graphs until we first add support for plane multigraphs and plane graphs with loops.\n\n\nAh, I see! Thanks for explaining the issue. Can we write a program to check for 3-edge-connectedness? If that is not too hard, then we can at least include the dual graph method for a large class of graphs (and many that other people are interested in). For graphs which fail that test, we can leave a `NotImplemented` error. Does that seem doable?",
     "created_at": "2014-11-18T08:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -268,6 +267,7 @@ archive/issue_comments_049697.json:
 ```
 
 > If the input graph is not 3-edge-connected, then the dual will not be a simple plane graph, so no code will work for those graphs until we first add support for plane multigraphs and plane graphs with loops.
+
 
 Ah, I see! Thanks for explaining the issue. Can we write a program to check for 3-edge-connectedness? If that is not too hard, then we can at least include the dual graph method for a large class of graphs (and many that other people are interested in). For graphs which fail that test, we can leave a `NotImplemented` error. Does that seem doable?
 
@@ -370,7 +370,7 @@ Creating a new branch and adding to the graph methods seems the best approach. B
 archive/issue_comments_049703.json:
 ```json
 {
-    "body": "Meanwhile there is a function `.faces` for graphs. Therefore it would be quite straightforward to implement the planar dual; something along the lines of :\n\n\n```\ndef planar_dual(P):\n    return Graph([[tuple(_) for _ in P.faces()], lambda f,g: len(find_intersection(f,g))==1])\n```\n\n\nTherefore my question: Is this ticket really still open or has it been implemented elsewhere?",
+    "body": "Meanwhile there is a function `.faces` for graphs. Therefore it would be quite straightforward to implement the planar dual; something along the lines of :\n\n```\ndef planar_dual(P):\n    return Graph([[tuple(_) for _ in P.faces()], lambda f,g: len(find_intersection(f,g))==1])\n```\n\nTherefore my question: Is this ticket really still open or has it been implemented elsewhere?",
     "created_at": "2017-08-17T08:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -381,12 +381,10 @@ archive/issue_comments_049703.json:
 
 Meanwhile there is a function `.faces` for graphs. Therefore it would be quite straightforward to implement the planar dual; something along the lines of :
 
-
 ```
 def planar_dual(P):
     return Graph([[tuple(_) for _ in P.faces()], lambda f,g: len(find_intersection(f,g))==1])
 ```
-
 
 Therefore my question: Is this ticket really still open or has it been implemented elsewhere?
 
@@ -471,7 +469,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_049708.json:
 ```json
 {
-    "body": "I added the method, avoiding the potential difficulties with multi-edges etc, by requiring the graph to be 3-connected.  (Better to have it in these cases than nothing...)\n----\nNew commits:",
+    "body": "I added the method, avoiding the potential difficulties with multi-edges etc, by requiring the graph to be 3-connected.  (Better to have it in these cases than nothing...)\n\n---\nNew commits:",
     "created_at": "2017-08-18T15:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -481,7 +479,8 @@ archive/issue_comments_049708.json:
 ```
 
 I added the method, avoiding the potential difficulties with multi-edges etc, by requiring the graph to be 3-connected.  (Better to have it in these cases than nothing...)
-----
+
+---
 New commits:
 
 
@@ -491,7 +490,7 @@ New commits:
 archive/issue_comments_049709.json:
 ```json
 {
-    "body": "Why are you asking for 3-edge-connectivity ? If it's to prevent graphs with a cut-vertex, the requirement is not sufficient and actually the method is apparently working in this case.\n\n```\nsage: G = graphs.IcosahedralGraph()*2\nsage: G.merge_vertices([0,12])\nsage: G.planar_dual()\nGraph on 39 vertices\n```\n\nWe cannot get the dual of a 2d grid or a cycle. \n------\nWe really need a proper implementation of the decomposition into 3 connected components, or an interface with `OGDF` since it has a fast (and surely the only) implementation of the linear time algorithm.",
+    "body": "Why are you asking for 3-edge-connectivity ? If it's to prevent graphs with a cut-vertex, the requirement is not sufficient and actually the method is apparently working in this case.\n\n```\nsage: G = graphs.IcosahedralGraph()*2\nsage: G.merge_vertices([0,12])\nsage: G.planar_dual()\nGraph on 39 vertices\n```\nWe cannot get the dual of a 2d grid or a cycle. \n\n---\nWe really need a proper implementation of the decomposition into 3 connected components, or an interface with `OGDF` since it has a fast (and surely the only) implementation of the linear time algorithm.",
     "created_at": "2017-08-18T16:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -508,9 +507,9 @@ sage: G.merge_vertices([0,12])
 sage: G.planar_dual()
 Graph on 39 vertices
 ```
-
 We cannot get the dual of a 2d grid or a cycle. 
-------
+
+---
 We really need a proper implementation of the decomposition into 3 connected components, or an interface with `OGDF` since it has a fast (and surely the only) implementation of the linear time algorithm.
 
 
@@ -595,7 +594,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_049714.json:
 ```json
 {
-    "body": "Replying to [comment:23 dcoudert]:\n> Why 3 ? With 2-vertex-connected we could get the dual of cycles, grids, etc.\nBecause then the dual will potentially have multiple edges. Take a square as an example: the dual graph has two vertices with 4 parallel edges. \n \n> Please change:\n> - `Finding the planar_dual is only works if the graph is at least 3 vertex-connected` -> `the graph must be at least 3-vertex-connected`\ndone",
+    "body": "Replying to [comment:23 dcoudert]:\n> Why 3 ? With 2-vertex-connected we could get the dual of cycles, grids, etc.\n\nBecause then the dual will potentially have multiple edges. Take a square as an example: the dual graph has two vertices with 4 parallel edges. \n \n> Please change:\n> - `Finding the planar_dual is only works if the graph is at least 3 vertex-connected` -> `the graph must be at least 3-vertex-connected`\n \ndone",
     "created_at": "2017-08-18T18:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6236",
     "type": "issue_comment",
@@ -606,10 +605,12 @@ archive/issue_comments_049714.json:
 
 Replying to [comment:23 dcoudert]:
 > Why 3 ? With 2-vertex-connected we could get the dual of cycles, grids, etc.
+
 Because then the dual will potentially have multiple edges. Take a square as an example: the dual graph has two vertices with 4 parallel edges. 
  
 > Please change:
 > - `Finding the planar_dual is only works if the graph is at least 3 vertex-connected` -> `the graph must be at least 3-vertex-connected`
+ 
 done
 
 

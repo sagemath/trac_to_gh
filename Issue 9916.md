@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9917
 archive/issue_comments_098509.json:
 ```json
 {
-    "body": "Perhaps temporarily fix this in Sage's 10.2.1 by patching it to the obvious:\n\n```C\n    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\", nreq);\n```\n\nand\n\n```C\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            function_code);\n```\n\n\n(You **don't** have to report this upstream since it is already fixed.)",
+    "body": "Perhaps temporarily fix this in Sage's 10.2.1 by patching it to the obvious:\n\n```C\n    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\", nreq);\n```\nand\n\n```C\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            function_code);\n```\n\n(You **don't** have to report this upstream since it is already fixed.)",
     "created_at": "2010-09-16T16:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -73,14 +73,12 @@ Perhaps temporarily fix this in Sage's 10.2.1 by patching it to the obvious:
 ```C
     fprintf(out, "\tif (ecl_unlikely(narg!=%d))", nreq);
 ```
-
 and
 
 ```C
     fprintf(out, "\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\n",
             function_code);
 ```
-
 
 (You **don't** have to report this upstream since it is already fixed.)
 
@@ -127,7 +125,7 @@ Changing status from new to needs_info.
 archive/issue_comments_098512.json:
 ```json
 {
-    "body": "Now when this is compiled, the warnings messages have gone:\n\n\n```\n        gcc -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/build -I./ /export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c/dpp.c  -I/export/home/drkirkby/sage-4.6.alpha0/local/include  -O2  -g  -Wall  -fPIC  -Dsun4sol2 -o dpp \n```\n\n\nAn updated package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p3.spkg\n\nThis needs further testing, as I've only currently tested this on OpenSolaris, but I think it is as safe as a bank vault. Hence for now I've marked it \"needs info\" until such time as I can confirm it works fully on other systems. \n\nDave",
+    "body": "Now when this is compiled, the warnings messages have gone:\n\n```\n        gcc -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/build -I./ /export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c/dpp.c  -I/export/home/drkirkby/sage-4.6.alpha0/local/include  -O2  -g  -Wall  -fPIC  -Dsun4sol2 -o dpp \n```\n\nAn updated package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p3.spkg\n\nThis needs further testing, as I've only currently tested this on OpenSolaris, but I think it is as safe as a bank vault. Hence for now I've marked it \"needs info\" until such time as I can confirm it works fully on other systems. \n\nDave",
     "created_at": "2010-09-17T00:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -138,11 +136,9 @@ archive/issue_comments_098512.json:
 
 Now when this is compiled, the warnings messages have gone:
 
-
 ```
         gcc -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c -I/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/build -I./ /export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p3/src/src/c/dpp.c  -I/export/home/drkirkby/sage-4.6.alpha0/local/include  -O2  -g  -Wall  -fPIC  -Dsun4sol2 -o dpp 
 ```
-
 
 An updated package can be found at 
 
@@ -223,7 +219,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_098516.json:
 ```json
 {
-    "body": "In the spkg, the file dpp.c.patch is empty.  That should be fixed.  Other than that, the changes look fine.  I'll test it on a few systems, but I can't imagine there being a problem.\n\nRegarding\n\n```\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            nreq, function_code);\n```\n\nI find it amusing that this problem occurs in a line containing \"wrong_num_arguments\"...",
+    "body": "In the spkg, the file dpp.c.patch is empty.  That should be fixed.  Other than that, the changes look fine.  I'll test it on a few systems, but I can't imagine there being a problem.\n\nRegarding\n\n```\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            nreq, function_code);\n```\nI find it amusing that this problem occurs in a line containing \"wrong_num_arguments\"...",
     "created_at": "2010-09-17T01:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -240,7 +236,6 @@ Regarding
     fprintf(out, "\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\n",
             nreq, function_code);
 ```
-
 I find it amusing that this problem occurs in a line containing "wrong_num_arguments"...
 
 
@@ -250,7 +245,7 @@ I find it amusing that this problem occurs in a line containing "wrong_num_argum
 archive/issue_comments_098517.json:
 ```json
 {
-    "body": "It's also fixed in 10.4.1, which I think is a *stable* release.\n\n----\n\nThat's called *\"Literal programming\"* I think, self-referential.",
+    "body": "It's also fixed in 10.4.1, which I think is a *stable* release.\n\n---\n\nThat's called *\"Literal programming\"* I think, self-referential.",
     "created_at": "2010-09-17T01:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -261,7 +256,7 @@ archive/issue_comments_098517.json:
 
 It's also fixed in 10.4.1, which I think is a *stable* release.
 
-----
+---
 
 That's called *"Literal programming"* I think, self-referential.
 
@@ -272,7 +267,7 @@ That's called *"Literal programming"* I think, self-referential.
 archive/issue_comments_098518.json:
 ```json
 {
-    "body": "\n```diff\ndiff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c\n--- ecl-10.2.1.p1/src/src/c/dpp.c\t2010-02-13 15:04:41.000000000 +0100\n+++ ecl-10.4.1/src/src/c/dpp.c\t2010-04-04 16:31:27.000000000 +0200\n@@ -251,13 +251,26 @@\n }\n \n char *\n-search_symbol(char *name, int *symbol_code)\n+search_symbol(char *name, int *symbol_code, int code)\n {\n \tint i;\n \tfor (i = 0; cl_symbols[i].name != NULL; i++) {\n \t\tif (!strcasecmp(name, cl_symbols[i].name)) {\n \t\t\tname = poolp;\n-\t\t\tif (i == 0) {\n+                        if (code) {\n+                                pushstr(\"MAKE_FIXNUM(/*\");\n+                                pushstr(cl_symbols[i].name);\n+\t\t\t\tpushstr(\"*/\");\n+\t\t\t\tif (i >= 1000)\n+\t\t\t\t\tpushc((i / 1000) % 10 + '0');\n+\t\t\t\tif (i >= 100)\n+\t\t\t\t\tpushc((i / 100) % 10 + '0');\n+\t\t\t\tif (i >= 10)\n+\t\t\t\t\tpushc((i / 10) % 10 + '0');\n+\t\t\t\tpushc(i % 10 + '0');\n+\t\t\t\tpushstr(\")\");\n+\t\t\t\tpushc(0);\n+                        } else if (i == 0) {\n \t\t\t\tpushstr(\"Cnil\");\n \t\t\t\tpushc(0);\n \t\t\t} else {\n@@ -283,19 +296,20 @@\n }\n \n char *\n-read_symbol()\n+read_symbol(int code)\n {\n \tchar c, *name = poolp;\n+        char end = code? ']' : '\\'';\n \n \tc = readc();\n-\twhile (c != '\\'') {\n+\twhile (c != end) {\n \t\tif (c == '_') c = '-';\n \t\tpushc(c); \n \t\tc = readc();\n \t}\n \tpushc(0);\n \n-\tname = search_symbol(poolp = name, 0);\n+\tname = search_symbol(poolp = name, 0, code);\n \tif (name == NULL) {\n \t\tname = poolp;\n \t\tprintf(\"\\nUnknown symbol: %s\\n\", name);\n@@ -387,7 +401,10 @@\n \t\t} else if (c == '@') {\n \t\t\tc = readc();\n \t\t\tif (c == '\\'') {\n-\t\t\t\t(void)read_symbol();\n+\t\t\t\t(void)read_symbol(0);\n+\t\t\t\tpoolp--;\n+\t\t\t} else if (c == '[') {\n+\t\t\t\t(void)read_symbol(1);\n \t\t\t\tpoolp--;\n \t\t\t} else if (c == '@') {\n \t\t\t\tpushc(c);\n@@ -448,7 +465,7 @@\n get_function(void)\n {\n \tfunction = read_function();\n-\tfunction_symbol = search_symbol(function, &function_code);\n+\tfunction_symbol = search_symbol(function, &function_code, 0);\n \tif (function_symbol == NULL) {\n \t\tfunction_symbol = poolp;\n \t\tpushstr(\"Cnil\");\n@@ -675,9 +692,9 @@\n   }\n   if (nopt == 0 && !rest_flag && !key_flag) {\n     put_lineno();\n-    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\");\n+    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\", nreq);\n     fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n-            nreq, function_code);\n+            function_code);\n   } else {\n     simple_varargs = !rest_flag && !key_flag && ((nreq + nopt) < 32);\n     if (key_flag) {\n@@ -833,7 +850,14 @@\n \t} else if (c == '\\'') {\n \t\tchar *p;\n \t\tpoolp = pool;\n-\t\tp = read_symbol();\n+\t\tp = read_symbol(0);\n+\t\tpushc('\\0');\n+\t\tfprintf(out,\"%s\",p);\n+\t\tgoto LOOP;\n+\t}  else if (c == '[') {\n+\t\tchar *p;\n+\t\tpoolp = pool;\n+\t\tp = read_symbol(1);\n \t\tpushc('\\0');\n \t\tfprintf(out,\"%s\",p);\n \t\tgoto LOOP;\n```\n\n\nIf that convinces you more.",
+    "body": "```diff\ndiff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c\n--- ecl-10.2.1.p1/src/src/c/dpp.c\t2010-02-13 15:04:41.000000000 +0100\n+++ ecl-10.4.1/src/src/c/dpp.c\t2010-04-04 16:31:27.000000000 +0200\n@@ -251,13 +251,26 @@\n }\n \n char *\n-search_symbol(char *name, int *symbol_code)\n+search_symbol(char *name, int *symbol_code, int code)\n {\n \tint i;\n \tfor (i = 0; cl_symbols[i].name != NULL; i++) {\n \t\tif (!strcasecmp(name, cl_symbols[i].name)) {\n \t\t\tname = poolp;\n-\t\t\tif (i == 0) {\n+                        if (code) {\n+                                pushstr(\"MAKE_FIXNUM(/*\");\n+                                pushstr(cl_symbols[i].name);\n+\t\t\t\tpushstr(\"*/\");\n+\t\t\t\tif (i >= 1000)\n+\t\t\t\t\tpushc((i / 1000) % 10 + '0');\n+\t\t\t\tif (i >= 100)\n+\t\t\t\t\tpushc((i / 100) % 10 + '0');\n+\t\t\t\tif (i >= 10)\n+\t\t\t\t\tpushc((i / 10) % 10 + '0');\n+\t\t\t\tpushc(i % 10 + '0');\n+\t\t\t\tpushstr(\")\");\n+\t\t\t\tpushc(0);\n+                        } else if (i == 0) {\n \t\t\t\tpushstr(\"Cnil\");\n \t\t\t\tpushc(0);\n \t\t\t} else {\n@@ -283,19 +296,20 @@\n }\n \n char *\n-read_symbol()\n+read_symbol(int code)\n {\n \tchar c, *name = poolp;\n+        char end = code? ']' : '\\'';\n \n \tc = readc();\n-\twhile (c != '\\'') {\n+\twhile (c != end) {\n \t\tif (c == '_') c = '-';\n \t\tpushc(c); \n \t\tc = readc();\n \t}\n \tpushc(0);\n \n-\tname = search_symbol(poolp = name, 0);\n+\tname = search_symbol(poolp = name, 0, code);\n \tif (name == NULL) {\n \t\tname = poolp;\n \t\tprintf(\"\\nUnknown symbol: %s\\n\", name);\n@@ -387,7 +401,10 @@\n \t\t} else if (c == '@') {\n \t\t\tc = readc();\n \t\t\tif (c == '\\'') {\n-\t\t\t\t(void)read_symbol();\n+\t\t\t\t(void)read_symbol(0);\n+\t\t\t\tpoolp--;\n+\t\t\t} else if (c == '[') {\n+\t\t\t\t(void)read_symbol(1);\n \t\t\t\tpoolp--;\n \t\t\t} else if (c == '@') {\n \t\t\t\tpushc(c);\n@@ -448,7 +465,7 @@\n get_function(void)\n {\n \tfunction = read_function();\n-\tfunction_symbol = search_symbol(function, &function_code);\n+\tfunction_symbol = search_symbol(function, &function_code, 0);\n \tif (function_symbol == NULL) {\n \t\tfunction_symbol = poolp;\n \t\tpushstr(\"Cnil\");\n@@ -675,9 +692,9 @@\n   }\n   if (nopt == 0 && !rest_flag && !key_flag) {\n     put_lineno();\n-    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\");\n+    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\", nreq);\n     fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n-            nreq, function_code);\n+            function_code);\n   } else {\n     simple_varargs = !rest_flag && !key_flag && ((nreq + nopt) < 32);\n     if (key_flag) {\n@@ -833,7 +850,14 @@\n \t} else if (c == '\\'') {\n \t\tchar *p;\n \t\tpoolp = pool;\n-\t\tp = read_symbol();\n+\t\tp = read_symbol(0);\n+\t\tpushc('\\0');\n+\t\tfprintf(out,\"%s\",p);\n+\t\tgoto LOOP;\n+\t}  else if (c == '[') {\n+\t\tchar *p;\n+\t\tpoolp = pool;\n+\t\tp = read_symbol(1);\n \t\tpushc('\\0');\n \t\tfprintf(out,\"%s\",p);\n \t\tgoto LOOP;\n```\n\nIf that convinces you more.",
     "created_at": "2010-09-17T01:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -280,7 +275,6 @@ archive/issue_comments_098518.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```diff
 diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
@@ -390,7 +384,6 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
  		goto LOOP;
 ```
 
-
 If that convinces you more.
 
 
@@ -473,7 +466,7 @@ Dave
 archive/issue_comments_098522.json:
 ```json
 {
-    "body": "Replying to [comment:6 jhpalmieri]:\n\n> I find it amusing that this problem occurs in a line containing \"wrong_num_arguments\"...\n\nYes the line in ECL is rather funny. It's a bit like that ATLAS file `make_correct_shared.sh`, which seems to screw up making the shared libraries! \n\nDave",
+    "body": "Replying to [comment:6 jhpalmieri]:\n\n> I find it amusing that this problem occurs in a line containing \"wrong_num_arguments\"...\n\n\nYes the line in ECL is rather funny. It's a bit like that ATLAS file `make_correct_shared.sh`, which seems to screw up making the shared libraries! \n\nDave",
     "created_at": "2010-09-18T12:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
@@ -485,6 +478,7 @@ archive/issue_comments_098522.json:
 Replying to [comment:6 jhpalmieri]:
 
 > I find it amusing that this problem occurs in a line containing "wrong_num_arguments"...
+
 
 Yes the line in ECL is rather funny. It's a bit like that ATLAS file `make_correct_shared.sh`, which seems to screw up making the shared libraries! 
 

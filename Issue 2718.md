@@ -3,7 +3,7 @@
 archive/issues_002718.json:
 ```json
 {
-    "body": "Assignee: failure\n\nE.g., issues like this:\n\n\n```\nThe athlon 32-bit linux box has the most files failing:\n   http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log\n\n\tsage -t  devel/sage-main/sage/interfaces/psage.py\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py\n\tsage -t  devel/sage-main/sage/dsage/tests/testdoc.py\n\tsage -t  devel/sage-main/sage/calculus/calculus.py\n\nAlso tut.tex fails due to the timeout. \n\nWe should raise the timeout, since calculus is a timeout issue, and\nit should be possible to test Sage even on a mere 2.1Ghz machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2718\n\n",
+    "body": "Assignee: failure\n\nE.g., issues like this:\n\n```\nThe athlon 32-bit linux box has the most files failing:\n   http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log\n\n\tsage -t  devel/sage-main/sage/interfaces/psage.py\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py\n\tsage -t  devel/sage-main/sage/dsage/tests/testdoc.py\n\tsage -t  devel/sage-main/sage/calculus/calculus.py\n\nAlso tut.tex fails due to the timeout. \n\nWe should raise the timeout, since calculus is a timeout issue, and\nit should be possible to test Sage even on a mere 2.1Ghz machine.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2718\n\n",
     "created_at": "2008-03-29T16:28:51Z",
     "labels": [
         "component: doctest coverage",
@@ -21,7 +21,6 @@ Assignee: failure
 
 E.g., issues like this:
 
-
 ```
 The athlon 32-bit linux box has the most files failing:
    http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log
@@ -36,7 +35,6 @@ Also tut.tex fails due to the timeout.
 We should raise the timeout, since calculus is a timeout issue, and
 it should be possible to test Sage even on a mere 2.1Ghz machine.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2718
 

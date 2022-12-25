@@ -61,7 +61,7 @@ Dave
 archive/issue_comments_087559.json:
 ```json
 {
-    "body": "I'm not in a position to check this quickly, as I need to go out soon. It needs a bit of work. But the spkg-install makes little sense to me. \n\n* There's no spkg-check to we are once again trusting things work. \n* I've no idea what all this 'make prefix' is about. \n* I've no idea why so many lines end in &&\n* Since MV, CP, etc are not universally used, it would seem better to just unset these, rather than try to add -f to them. It just seems to be overly complicating things. \n \nIt would be better if the person that put it together looked over some other spkg-install files and the Sage Developers Guide. \n\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\n# The version of libtool in this glpk package requires that\n# RM/MV/CP if they are set include the -f option\n# See for example the discussion at:\n# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=523750\n\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n\ncd src &&\nLIBS=-ldl ./configure --prefix=$SAGE_LOCAL &&\nmake prefix=$SAGE_LOCAL &&\nmake install && \ncd .. && \npython setup.py install &&\necho \"********************************************************************************\" && \necho \"\" &&\necho \"    ATTENTION: YOU HAVE TO REBUILD THE SAGE LIBRARY TO GET THIS TO WORK\" &&\necho \"    exit any running sage instances and call \\\"sage -b\\\"\" &&\necho \"\" &&\necho \"********************************************************************************\"\n```\n",
+    "body": "I'm not in a position to check this quickly, as I need to go out soon. It needs a bit of work. But the spkg-install makes little sense to me. \n\n* There's no spkg-check to we are once again trusting things work. \n* I've no idea what all this 'make prefix' is about. \n* I've no idea why so many lines end in &&\n* Since MV, CP, etc are not universally used, it would seem better to just unset these, rather than try to add -f to them. It just seems to be overly complicating things. \n \nIt would be better if the person that put it together looked over some other spkg-install files and the Sage Developers Guide. \n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\n# The version of libtool in this glpk package requires that\n# RM/MV/CP if they are set include the -f option\n# See for example the discussion at:\n# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=523750\n\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n\ncd src &&\nLIBS=-ldl ./configure --prefix=$SAGE_LOCAL &&\nmake prefix=$SAGE_LOCAL &&\nmake install && \ncd .. && \npython setup.py install &&\necho \"********************************************************************************\" && \necho \"\" &&\necho \"    ATTENTION: YOU HAVE TO REBUILD THE SAGE LIBRARY TO GET THIS TO WORK\" &&\necho \"    exit any running sage instances and call \\\"sage -b\\\"\" &&\necho \"\" &&\necho \"********************************************************************************\"\n```",
     "created_at": "2010-06-22T17:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -78,7 +78,6 @@ I'm not in a position to check this quickly, as I need to go out soon. It needs 
 * Since MV, CP, etc are not universally used, it would seem better to just unset these, rather than try to add -f to them. It just seems to be overly complicating things. 
  
 It would be better if the person that put it together looked over some other spkg-install files and the Sage Developers Guide. 
-
 
 ```
 if [ "$SAGE_LOCAL" = "" ]; then
@@ -109,7 +108,6 @@ echo "    exit any running sage instances and call \"sage -b\"" &&
 echo "" &&
 echo "********************************************************************************"
 ```
-
 
 
 
@@ -182,7 +180,7 @@ Dave
 archive/issue_comments_087563.json:
 ```json
 {
-    "body": "Replying to [comment:4 drkirkby]:\n> Be aware this is GPL version 3. I was under the impression GPL 3 code was not permitted as standard - only optional or experimental. \n> \n> Dave \n\nI was under the same impression, but apparently that has changed. I don't think this is relevant here, since this ticket isn't even about making GLPK standard anyway! I'd mention this on sage-devel instead.",
+    "body": "Replying to [comment:4 drkirkby]:\n> Be aware this is GPL version 3. I was under the impression GPL 3 code was not permitted as standard - only optional or experimental. \n> \n> Dave \n\n\nI was under the same impression, but apparently that has changed. I don't think this is relevant here, since this ticket isn't even about making GLPK standard anyway! I'd mention this on sage-devel instead.",
     "created_at": "2010-06-23T03:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -195,6 +193,7 @@ Replying to [comment:4 drkirkby]:
 > Be aware this is GPL version 3. I was under the impression GPL 3 code was not permitted as standard - only optional or experimental. 
 > 
 > Dave 
+
 
 I was under the same impression, but apparently that has changed. I don't think this is relevant here, since this ticket isn't even about making GLPK standard anyway! I'd mention this on sage-devel instead.
 
@@ -243,7 +242,7 @@ Mercurial patch which fixes the SAGE64 issue and tons more beside
 archive/issue_comments_087566.json:
 ```json
 {
-    "body": "I've updated this package somewhat\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/glpk-4.44.spkg\n\nto fix what were quite a number of problems with how the package was put together. I've not tested this as a library. Someone more knowledgeable can test this properly. I've only tested it on Solaris and OpenSolaris to see that it builds ok and passes the self-tests in the source code.\n\nI've not changed any of the python stuff, so it should be unchanged. The major change was to disable building of the static libraries, which I doubt Python needs. \n\n## Changes made\n\n* Updated to the latest upstream code, version 4.44.\n* Added code to allow a 64-bit build on any platform.\n  If SAGE64 is set to \"yes\", the compiler flag -m64 is added\n  by default. That flag works with GCC and SunStudio, but not\n  all compilers - IBM's compiler for AIX and HP's for HP-UX\n  both use different flags to create a 64-bit build.\n  If the compiler does not use -m64 for 64-bit builds, then\n  the environment variable CFLAG64 can be set to indicate what\n  flag gets added.\n* Added a file spkg-check so the self-test code is built.\n  This includes code which will add the appropriate flag\n  for 64-bit builds if the test procedures need code to be\n  compiled. (Sometimes running 'make test' actually needs\n  the compiler flags set properly, so I do it just in case.\n  It appears to be unnecessary with this version of GLPK,\n  but might with later releases.\n* Added the configure option --with-gmp which will speed up\n  processing of large integers (see src/INSTALL)\n* Added the configure option --disable-static since there is\n  no need to build static libraries. (see src/INSTALL)\n* Added the configure option --with-zlib. Adding this allows\n  GLPK API routines and the stand-alone solver to read and\n  write compressed data files performing compression and\n  decompression \"on the fly\" (see src/INSTALL)\n* Removed linking of the 'ld' library in spkg-install, as the\n  reason for it being added was not clear.\n* Corrected SPKG.txt to indicate this code is GPL 3.\n  (see src/COPYING)\n* Added the ChangeLog section to the SPKG.txt file\n* Added zlib, python and mpir as dependencies in SPKG.txt\n* Checked that the configure script actually does configure\n  properly, if not exits.\n* Checked that 'make' does build the code properly, if not exits.\n* Checked that 'make install' does actually install the library\n* Checked that running 'python setup.py install' does actually work.\n  If this is not done, code can appear to install properly as it\n  passes 'configure', 'make' and 'make install'. So unusually there\n  are 4 cases where spkg-install can fail.\n\n == Desirable changes not made ==\n* There is a \"patch\" directory which I did not remove, as there is one file referenced there. It should be called \"patches\" and I believe from discussions on sage-devel it can perhaps be removed. \n* setup.py has no comments. \n* setup.py has lots of ../../../.. in directory entires and does not refer to $SAGE_ROOT or $SAGE_LOCAL. Since I'm not a good Python programmer, I've not attempted to fix this. \nAs you can see, if SAGE_CHECK is set to \"yes\", this passes the one self test that there is (pretty dismal IMHO)\n\n## Test system #1 (others MUST test on other hardware and test properly)\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n* SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)\n* UFS (not ZFS) local file system.\n* Sage 4.4.4.alpha1\n* GLPK 4.44 source code integrated. \n\n\n```\nRemoving /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\n\nreal\t3m13.451s\nuser\t2m41.607s\nsys\t0m28.154s\nSuccessfully installed glpk-4.44\nRunning the test suite.\nGLPK will now be tested\nMaking check in include\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/include'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/include'\nMaking check in src\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/src'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/src'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/examples'\n./glpsol --version\nGLPSOL: GLPK LP/MIP Solver, v4.44\n\nCopyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,\n2009, 2010 Andrew Makhorin, Department for Applied Informatics, Moscow\nAviation Institute, Moscow, Russia. All rights reserved.\n\nThis program has ABSOLUTELY NO WARRANTY.\n\nThis program is free software; you may re-distribute it under the terms\nof the GNU General Public License version 3 or later.\n./glpsol --mps ./plan.mps\nGLPSOL: GLPK LP/MIP Solver, v4.44\nParameter(s) specified in the command line:\n --mps ./plan.mps\nReading problem data from `./plan.mps'...\nProblem: PLAN\nObjective: VALUE\n8 rows, 7 columns, 48 non-zeros\n54 records were read\nGLPK Simplex Optimizer, v4.44\n8 rows, 7 columns, 48 non-zeros\nPreprocessing...\n7 rows, 7 columns, 41 non-zeros\nScaling...\n A: min|aij| =  1.000e-02  max|aij| =  1.000e+00  ratio =  1.000e+02\nGM: min|aij| =  2.534e-01  max|aij| =  3.946e+00  ratio =  1.557e+01\nEQ: min|aij| =  6.422e-02  max|aij| =  1.000e+00  ratio =  1.557e+01\nConstructing initial basis...\nSize of triangular part = 7\n      0: obj =   6.500000000e+02  infeas =  3.788e+03 (0)\n*     2: obj =   4.376770833e+02  infeas =  0.000e+00 (0)\n*    10: obj =   2.962166065e+02  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\nTime used:   0.0 secs\nMemory used: 0.0 Mb (51150 bytes)\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing glpk-4.44.spkg\n```\n",
+    "body": "I've updated this package somewhat\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/glpk-4.44.spkg\n\nto fix what were quite a number of problems with how the package was put together. I've not tested this as a library. Someone more knowledgeable can test this properly. I've only tested it on Solaris and OpenSolaris to see that it builds ok and passes the self-tests in the source code.\n\nI've not changed any of the python stuff, so it should be unchanged. The major change was to disable building of the static libraries, which I doubt Python needs. \n\n## Changes made\n\n* Updated to the latest upstream code, version 4.44.\n* Added code to allow a 64-bit build on any platform.\n  If SAGE64 is set to \"yes\", the compiler flag -m64 is added\n  by default. That flag works with GCC and SunStudio, but not\n  all compilers - IBM's compiler for AIX and HP's for HP-UX\n  both use different flags to create a 64-bit build.\n  If the compiler does not use -m64 for 64-bit builds, then\n  the environment variable CFLAG64 can be set to indicate what\n  flag gets added.\n* Added a file spkg-check so the self-test code is built.\n  This includes code which will add the appropriate flag\n  for 64-bit builds if the test procedures need code to be\n  compiled. (Sometimes running 'make test' actually needs\n  the compiler flags set properly, so I do it just in case.\n  It appears to be unnecessary with this version of GLPK,\n  but might with later releases.\n* Added the configure option --with-gmp which will speed up\n  processing of large integers (see src/INSTALL)\n* Added the configure option --disable-static since there is\n  no need to build static libraries. (see src/INSTALL)\n* Added the configure option --with-zlib. Adding this allows\n  GLPK API routines and the stand-alone solver to read and\n  write compressed data files performing compression and\n  decompression \"on the fly\" (see src/INSTALL)\n* Removed linking of the 'ld' library in spkg-install, as the\n  reason for it being added was not clear.\n* Corrected SPKG.txt to indicate this code is GPL 3.\n  (see src/COPYING)\n* Added the ChangeLog section to the SPKG.txt file\n* Added zlib, python and mpir as dependencies in SPKG.txt\n* Checked that the configure script actually does configure\n  properly, if not exits.\n* Checked that 'make' does build the code properly, if not exits.\n* Checked that 'make install' does actually install the library\n* Checked that running 'python setup.py install' does actually work.\n  If this is not done, code can appear to install properly as it\n  passes 'configure', 'make' and 'make install'. So unusually there\n  are 4 cases where spkg-install can fail.\n\n == Desirable changes not made ==\n* There is a \"patch\" directory which I did not remove, as there is one file referenced there. It should be called \"patches\" and I believe from discussions on sage-devel it can perhaps be removed. \n* setup.py has no comments. \n* setup.py has lots of ../../../.. in directory entires and does not refer to $SAGE_ROOT or $SAGE_LOCAL. Since I'm not a good Python programmer, I've not attempted to fix this. \nAs you can see, if SAGE_CHECK is set to \"yes\", this passes the one self test that there is (pretty dismal IMHO)\n\n## Test system #1 (others MUST test on other hardware and test properly)\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n* SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)\n* UFS (not ZFS) local file system.\n* Sage 4.4.4.alpha1\n* GLPK 4.44 source code integrated. \n\n```\nRemoving /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\n\nreal\t3m13.451s\nuser\t2m41.607s\nsys\t0m28.154s\nSuccessfully installed glpk-4.44\nRunning the test suite.\nGLPK will now be tested\nMaking check in include\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/include'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/include'\nMaking check in src\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/src'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/src'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/examples'\n./glpsol --version\nGLPSOL: GLPK LP/MIP Solver, v4.44\n\nCopyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,\n2009, 2010 Andrew Makhorin, Department for Applied Informatics, Moscow\nAviation Institute, Moscow, Russia. All rights reserved.\n\nThis program has ABSOLUTELY NO WARRANTY.\n\nThis program is free software; you may re-distribute it under the terms\nof the GNU General Public License version 3 or later.\n./glpsol --mps ./plan.mps\nGLPSOL: GLPK LP/MIP Solver, v4.44\nParameter(s) specified in the command line:\n --mps ./plan.mps\nReading problem data from `./plan.mps'...\nProblem: PLAN\nObjective: VALUE\n8 rows, 7 columns, 48 non-zeros\n54 records were read\nGLPK Simplex Optimizer, v4.44\n8 rows, 7 columns, 48 non-zeros\nPreprocessing...\n7 rows, 7 columns, 41 non-zeros\nScaling...\n A: min|aij| =  1.000e-02  max|aij| =  1.000e+00  ratio =  1.000e+02\nGM: min|aij| =  2.534e-01  max|aij| =  3.946e+00  ratio =  1.557e+01\nEQ: min|aij| =  6.422e-02  max|aij| =  1.000e+00  ratio =  1.557e+01\nConstructing initial basis...\nSize of triangular part = 7\n      0: obj =   6.500000000e+02  infeas =  3.788e+03 (0)\n*     2: obj =   4.376770833e+02  infeas =  0.000e+00 (0)\n*    10: obj =   2.962166065e+02  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\nTime used:   0.0 secs\nMemory used: 0.0 Mb (51150 bytes)\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/glpk-4.44\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing glpk-4.44.spkg\n```",
     "created_at": "2010-06-23T19:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -318,7 +317,6 @@ As you can see, if SAGE_CHECK is set to "yes", this passes the one self test tha
 * Sage 4.4.4.alpha1
 * GLPK 4.44 source code integrated. 
 
-
 ```
 Removing /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info
 Writing /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info
@@ -388,7 +386,6 @@ Finished installing glpk-4.44.spkg
 
 
 
-
 ---
 
 archive/issue_comments_087567.json:
@@ -414,7 +411,7 @@ Nathann
 archive/issue_comments_087568.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> Nothing wrong to report on my laptop (debian).\n> \n> Nathann\nYou should put more information than just \"Debian laptop\". Things like version of Debian, processor, RAM, gcc version etc can all be useful. Note what I put above about my SPARC system. The only really unnecessary info was the disks and file systems, as I'd cut-n-pasted that from a ticket where it was relevant, and forgot to remove it. \n\nDave",
+    "body": "Replying to [comment:8 ncohen]:\n> Nothing wrong to report on my laptop (debian).\n> \n> Nathann\n\nYou should put more information than just \"Debian laptop\". Things like version of Debian, processor, RAM, gcc version etc can all be useful. Note what I put above about my SPARC system. The only really unnecessary info was the disks and file systems, as I'd cut-n-pasted that from a ticket where it was relevant, and forgot to remove it. \n\nDave",
     "created_at": "2010-06-23T20:21:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -427,6 +424,7 @@ Replying to [comment:8 ncohen]:
 > Nothing wrong to report on my laptop (debian).
 > 
 > Nathann
+
 You should put more information than just "Debian laptop". Things like version of Debian, processor, RAM, gcc version etc can all be useful. Note what I put above about my SPARC system. The only really unnecessary info was the disks and file systems, as I'd cut-n-pasted that from a ticket where it was relevant, and forgot to remove it. 
 
 Dave
@@ -458,7 +456,7 @@ Nathann
 archive/issue_comments_087570.json:
 ```json
 {
-    "body": "Replying to [comment:10 ncohen]:\n> Hmmmm... Do you know how I could get these informations ? :-)\n> \n> Nathann\n\nGoogle should come to your rescue.",
+    "body": "Replying to [comment:10 ncohen]:\n> Hmmmm... Do you know how I could get these informations ? :-)\n> \n> Nathann\n\n\nGoogle should come to your rescue.",
     "created_at": "2010-06-23T20:38:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -471,6 +469,7 @@ Replying to [comment:10 ncohen]:
 > Hmmmm... Do you know how I could get these informations ? :-)
 > 
 > Nathann
+
 
 Google should come to your rescue.
 
@@ -508,7 +507,7 @@ Build succeeded and all tests pass.
 archive/issue_comments_087572.json:
 ```json
 {
-    "body": "I'm attaching an **very briefly tested** `spkg/standard/deps` file. It is based on the deps file at #9351, so if this is merged, #9351 can be closed too. \n\nI've not tried building Sage from scratch using this deps file - just tried that\n\n\n```\ndrkirkby@hawk:~/SAGE-4.5.alpha1$ ./sage -f glpk-4.44\nForce installing glpk-4.44\nCalling sage-spkg on glpk-4.44\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nglpk-4.44\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of glpk-4.44\nExtracting package /export/home/drkirkby/SAGE-4.5.alpha1/spkg/standard/glpk-4.44.spkg ...\n-rw-r--r--   1 drkirkby staff    2937482 Jun 23 20:24 /export/home/drkirkby/SAGE-4.5.alpha1/spkg/standard/glpk-4.44.spkg\nglpk-4.44/\nglpk-4.44/patch/\n\n<SNIP>\n\npatch/mipGlpk.cpp:857: warning: dereferencing pointer '__pyx_t_3' does break strict-aliasing rules\npatch/mipGlpk.cpp:857: warning: dereferencing pointer '__pyx_t_3' does break strict-aliasing rules\npatch/mipGlpk.cpp:853: note: initialized from here\ncreating build/lib.solaris-2.11-i86pc-2.6\ncreating build/lib.solaris-2.11-i86pc-2.6/sage\ncreating build/lib.solaris-2.11-i86pc-2.6/sage/numerical\ng++ -m64 -shared -L/export/home/drkirkby/SAGE-4.5.alpha1/local/lib -m64 -m64 -I /export/home/drkirkby/SAGE-4.5.alpha1/local/include -m64 build/temp.solaris-2.11-i86pc-2.6/patch/mipGlpk.o -L/export/home/drkirkby/SAGE-4.5.alpha1/local/lib -lcsage -lstdc++ -lglpk -lpython2.6 -o build/lib.solaris-2.11-i86pc-2.6/sage/numerical/mipGlpk.so\nrunning install_lib\ncopying build/lib.solaris-2.11-i86pc-2.6/sage/numerical/mipGlpk.so -> /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/sage/numerical\nrunning install_egg_info\nRemoving /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\nWriting /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\n\nreal\t0m13.830s\nuser\t0m9.231s\nsys\t0m3.341s\nSuccessfully installed glpk-4.44\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/SAGE-4.5.alpha1/spkg/build/glpk-4.44\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing glpk-4.44.spkg\n```\n\n\nworked. \n\nI've not attached a diff. Not sure if that should be a mercurial one or not. I'll sort that out after I've had some sleep. \n\nDave",
+    "body": "I'm attaching an **very briefly tested** `spkg/standard/deps` file. It is based on the deps file at #9351, so if this is merged, #9351 can be closed too. \n\nI've not tried building Sage from scratch using this deps file - just tried that\n\n```\ndrkirkby@hawk:~/SAGE-4.5.alpha1$ ./sage -f glpk-4.44\nForce installing glpk-4.44\nCalling sage-spkg on glpk-4.44\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nglpk-4.44\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of glpk-4.44\nExtracting package /export/home/drkirkby/SAGE-4.5.alpha1/spkg/standard/glpk-4.44.spkg ...\n-rw-r--r--   1 drkirkby staff    2937482 Jun 23 20:24 /export/home/drkirkby/SAGE-4.5.alpha1/spkg/standard/glpk-4.44.spkg\nglpk-4.44/\nglpk-4.44/patch/\n\n<SNIP>\n\npatch/mipGlpk.cpp:857: warning: dereferencing pointer '__pyx_t_3' does break strict-aliasing rules\npatch/mipGlpk.cpp:857: warning: dereferencing pointer '__pyx_t_3' does break strict-aliasing rules\npatch/mipGlpk.cpp:853: note: initialized from here\ncreating build/lib.solaris-2.11-i86pc-2.6\ncreating build/lib.solaris-2.11-i86pc-2.6/sage\ncreating build/lib.solaris-2.11-i86pc-2.6/sage/numerical\ng++ -m64 -shared -L/export/home/drkirkby/SAGE-4.5.alpha1/local/lib -m64 -m64 -I /export/home/drkirkby/SAGE-4.5.alpha1/local/include -m64 build/temp.solaris-2.11-i86pc-2.6/patch/mipGlpk.o -L/export/home/drkirkby/SAGE-4.5.alpha1/local/lib -lcsage -lstdc++ -lglpk -lpython2.6 -o build/lib.solaris-2.11-i86pc-2.6/sage/numerical/mipGlpk.so\nrunning install_lib\ncopying build/lib.solaris-2.11-i86pc-2.6/sage/numerical/mipGlpk.so -> /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/sage/numerical\nrunning install_egg_info\nRemoving /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\nWriting /export/home/drkirkby/SAGE-4.5.alpha1/local/lib/python2.6/site-packages/UNKNOWN-0.0.0-py2.6.egg-info\n\nreal\t0m13.830s\nuser\t0m9.231s\nsys\t0m3.341s\nSuccessfully installed glpk-4.44\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/SAGE-4.5.alpha1/spkg/build/glpk-4.44\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing glpk-4.44.spkg\n```\n\nworked. \n\nI've not attached a diff. Not sure if that should be a mercurial one or not. I'll sort that out after I've had some sleep. \n\nDave",
     "created_at": "2010-07-03T23:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -520,7 +519,6 @@ archive/issue_comments_087572.json:
 I'm attaching an **very briefly tested** `spkg/standard/deps` file. It is based on the deps file at #9351, so if this is merged, #9351 can be closed too. 
 
 I've not tried building Sage from scratch using this deps file - just tried that
-
 
 ```
 drkirkby@hawk:~/SAGE-4.5.alpha1$ ./sage -f glpk-4.44
@@ -566,7 +564,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing glpk-4.44.spkg
 ```
-
 
 worked. 
 
@@ -649,7 +646,7 @@ Untested $SAGE_ROOT/spkg/install file diff file. Relative to to 'install' in sag
 archive/issue_comments_087576.json:
 ```json
 {
-    "body": "I'm going to upload revised versions of 'deps' and 'deps.diff'. This removes the dependency of GLPK on Python, so GLPK can be built before Python, or in parallel with Python - it does not need to wait for Python. \n\nThis should improve the parallel build process. I made it a dependency on Python before, since there was a call to python in spkg-install, but since Nathann has removed that, so the dependency can be removed. \n\nHere's the MD5 checksums of the two files. I'm just going to overwrite these on the ticket. \n\n\n```\ndrkirkby@hawk:~$ digest -a md5 deps deps.diff\n(deps) = 8ddc6b0fcc9445ba566fa647451d871c\n(deps.diff) = 5e9a409b2ec49f00039802b20a28d7cd\n```\n",
+    "body": "I'm going to upload revised versions of 'deps' and 'deps.diff'. This removes the dependency of GLPK on Python, so GLPK can be built before Python, or in parallel with Python - it does not need to wait for Python. \n\nThis should improve the parallel build process. I made it a dependency on Python before, since there was a call to python in spkg-install, but since Nathann has removed that, so the dependency can be removed. \n\nHere's the MD5 checksums of the two files. I'm just going to overwrite these on the ticket. \n\n```\ndrkirkby@hawk:~$ digest -a md5 deps deps.diff\n(deps) = 8ddc6b0fcc9445ba566fa647451d871c\n(deps.diff) = 5e9a409b2ec49f00039802b20a28d7cd\n```",
     "created_at": "2010-07-05T17:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -664,13 +661,11 @@ This should improve the parallel build process. I made it a dependency on Python
 
 Here's the MD5 checksums of the two files. I'm just going to overwrite these on the ticket. 
 
-
 ```
 drkirkby@hawk:~$ digest -a md5 deps deps.diff
 (deps) = 8ddc6b0fcc9445ba566fa647451d871c
 (deps.diff) = 5e9a409b2ec49f00039802b20a28d7cd
 ```
-
 
 
 
@@ -893,7 +888,7 @@ Changing assignee from tbd to drkirkby.
 archive/issue_comments_087588.json:
 ```json
 {
-    "body": "Replying to [comment:17 drkirkby]:\n> Robert can decide whether he merges it or not. \n\nNope. This is part of #9274, and belongs there.",
+    "body": "Replying to [comment:17 drkirkby]:\n> Robert can decide whether he merges it or not. \n\n\nNope. This is part of #9274, and belongs there.",
     "created_at": "2010-07-05T21:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -904,6 +899,7 @@ archive/issue_comments_087588.json:
 
 Replying to [comment:17 drkirkby]:
 > Robert can decide whether he merges it or not. 
+
 
 Nope. This is part of #9274, and belongs there.
 
@@ -1028,7 +1024,7 @@ archive/issue_events_022954.json:
 archive/issue_comments_087594.json:
 ```json
 {
-    "body": "It looks to me as though cython should be a prerequisite for glpk in spkg/standard/deps.  From setup.py:\n\n```\nfrom Cython.Distutils import build_ext\n```\n\nWhen I tried to build Sage on sage.math (using parallel spkg building), it bombed when it got to glpk because of this issue.",
+    "body": "It looks to me as though cython should be a prerequisite for glpk in spkg/standard/deps.  From setup.py:\n\n```\nfrom Cython.Distutils import build_ext\n```\nWhen I tried to build Sage on sage.math (using parallel spkg building), it bombed when it got to glpk because of this issue.",
     "created_at": "2010-07-06T00:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -1042,7 +1038,6 @@ It looks to me as though cython should be a prerequisite for glpk in spkg/standa
 ```
 from Cython.Distutils import build_ext
 ```
-
 When I tried to build Sage on sage.math (using parallel spkg building), it bombed when it got to glpk because of this issue.
 
 
@@ -1070,7 +1065,7 @@ If I'm right about deps, can we deal with it in #9274?
 archive/issue_comments_087596.json:
 ```json
 {
-    "body": "Replying to [comment:25 jhpalmieri]:\n> If I'm right about deps, can we deal with it in #9274?\n\nYes, and sage-4.5.alpha4 will be a very short release, so that people can actually test GLPK.",
+    "body": "Replying to [comment:25 jhpalmieri]:\n> If I'm right about deps, can we deal with it in #9274?\n\n\nYes, and sage-4.5.alpha4 will be a very short release, so that people can actually test GLPK.",
     "created_at": "2010-07-06T00:10:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -1081,6 +1076,7 @@ archive/issue_comments_087596.json:
 
 Replying to [comment:25 jhpalmieri]:
 > If I'm right about deps, can we deal with it in #9274?
+
 
 Yes, and sage-4.5.alpha4 will be a very short release, so that people can actually test GLPK.
 
@@ -1113,7 +1109,7 @@ Nathann
 archive/issue_comments_087598.json:
 ```json
 {
-    "body": "Replying to [comment:27 ncohen]:\n> O_o\n> \n> There should not be any setup.py file anymore in the GLPK spkg O_o\n\nNathann,\n\nWhat are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.",
+    "body": "Replying to [comment:27 ncohen]:\n> O_o\n> \n> There should not be any setup.py file anymore in the GLPK spkg O_o\n\n\nNathann,\n\nWhat are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.",
     "created_at": "2010-07-06T07:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -1127,6 +1123,7 @@ Replying to [comment:27 ncohen]:
 > 
 > There should not be any setup.py file anymore in the GLPK spkg O_o
 
+
 Nathann,
 
 What are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.
@@ -1138,7 +1135,7 @@ What are you talking about? I don't see one anywhere in the GLPK spkg that was m
 archive/issue_comments_087599.json:
 ```json
 {
-    "body": "> What are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.\n\nThat's what I mean ! There is no setup.py in the glpk SPKG embedded in alpha 3, and so no reason at all to make it dependent on Cython !\n\nNathann",
+    "body": "> What are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.\n\n\nThat's what I mean ! There is no setup.py in the glpk SPKG embedded in alpha 3, and so no reason at all to make it dependent on Cython !\n\nNathann",
     "created_at": "2010-07-06T07:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -1148,6 +1145,7 @@ archive/issue_comments_087599.json:
 ```
 
 > What are you talking about? I don't see one anywhere in the GLPK spkg that was merged into sage-4.5.alpha3.
+
 
 That's what I mean ! There is no setup.py in the glpk SPKG embedded in alpha 3, and so no reason at all to make it dependent on Cython !
 
@@ -1160,7 +1158,7 @@ Nathann
 archive/issue_comments_087600.json:
 ```json
 {
-    "body": "Nathann is saying there is no setup.py, so there should be no need for Cython. I agree with this. \n\nAs Robert knows, I did a quick hack of a 'deps' file to \n\n* Add Cython as a dependency of GLPK\n* Sort out the parallel building stuff. \n\nwhich I posted a link to (much to Roberts dislike). Sage built ok with that. \n\nHaving seen Nathann's comments, I hacked this file again and removed the Cython dependency, so now the GLPK entry says:\n\n\n```\n$(INST)/$(GLPK): $(BASE) $(INST)/$(MPIR) $(INST)/$(ZLIB)\n        $(INSTALL) \"$(SAGE_SPKG) $(GLPK) 2>&1\" \"tee -a $(SAGE_LOGS)/$(GLPK).log\"\n```\n\n\ni.e. it was back to what I had before. Sage still built ok. So I agree with Nathann, there seems no need for Cython to be a dependency of GLPK. Whatever the reasons for the failed build by someone, it was not a lack of Cython. \n\nI think until a release is made with all the parallel issues resolved, building will be unrelieable in parallel, and may throw up some 'red herrings'. What appears to be due to X, might in fact be due to Y. \n\nDave",
+    "body": "Nathann is saying there is no setup.py, so there should be no need for Cython. I agree with this. \n\nAs Robert knows, I did a quick hack of a 'deps' file to \n\n* Add Cython as a dependency of GLPK\n* Sort out the parallel building stuff. \n\nwhich I posted a link to (much to Roberts dislike). Sage built ok with that. \n\nHaving seen Nathann's comments, I hacked this file again and removed the Cython dependency, so now the GLPK entry says:\n\n```\n$(INST)/$(GLPK): $(BASE) $(INST)/$(MPIR) $(INST)/$(ZLIB)\n        $(INSTALL) \"$(SAGE_SPKG) $(GLPK) 2>&1\" \"tee -a $(SAGE_LOGS)/$(GLPK).log\"\n```\n\ni.e. it was back to what I had before. Sage still built ok. So I agree with Nathann, there seems no need for Cython to be a dependency of GLPK. Whatever the reasons for the failed build by someone, it was not a lack of Cython. \n\nI think until a release is made with all the parallel issues resolved, building will be unrelieable in parallel, and may throw up some 'red herrings'. What appears to be due to X, might in fact be due to Y. \n\nDave",
     "created_at": "2010-07-06T09:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
@@ -1180,12 +1178,10 @@ which I posted a link to (much to Roberts dislike). Sage built ok with that.
 
 Having seen Nathann's comments, I hacked this file again and removed the Cython dependency, so now the GLPK entry says:
 
-
 ```
 $(INST)/$(GLPK): $(BASE) $(INST)/$(MPIR) $(INST)/$(ZLIB)
         $(INSTALL) "$(SAGE_SPKG) $(GLPK) 2>&1" "tee -a $(SAGE_LOGS)/$(GLPK).log"
 ```
-
 
 i.e. it was back to what I had before. Sage still built ok. So I agree with Nathann, there seems no need for Cython to be a dependency of GLPK. Whatever the reasons for the failed build by someone, it was not a lack of Cython. 
 

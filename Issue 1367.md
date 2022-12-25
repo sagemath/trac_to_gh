@@ -3,7 +3,7 @@
 archive/issues_001367.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI noticed this bug when thinking about implementing factorization of integers\nin a general relative number field (via the absolute field corresponding\nto it).  If this bug were fixed, then general factorization would be\ntrivial to implement, as suggested by the example below. \n\n\n```\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: I = A.factor_integer(3)[0][0]\nsage: from_A, to_A = A.structure()\nsage: G = [from_A(z) for z in I.gens()]; G\n[3, (-2*b - 1)*a + b - 1]\nsage: K.fractional_ideal(G)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/s/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/s/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/s/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in __repr__(self)\n    215 \n    216     def __repr__(self):\n--> 217         return \"Fractional ideal %s\"%self._repr_short()\n    218 \n    219     def _repr_short(self):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in _repr_short(self)\n    232         # makes things insanely slow in general.\n    233         # When I fix this, I *have* to also change the _latex_ method.\n--> 234         return '(%s)'%(', '.join([str(x) for x in self.gens_reduced()]))\n    235 \n    236     def __div__(self, other):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py in gens_reduced(self)\n     84             S = L['x']\n     85             gens = L.pari_rnf().rnfidealtwoelt(self.pari_rhnf())\n---> 86             gens = [ L(R(x.lift().lift())) for x in gens ]\n     87             ## Make sure that gens[1] is in L, not K\n     88             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __call__(self, x)\n   3321             return self.base_field()(x)\n   3322         \n-> 3323         return self._element_class(self, x)\n   3324 \n   3325     def _coerce_impl(self, x):\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/number_field_element.pyx in sage.rings.number_field.number_field_element.NumberFieldElement.__init__()\n    231         num = f * den\n    232         for i from 0 <= i <= num.degree():\n--> 233             (<Integer>ZZ(num[i]))._to_ZZ(&coeff)\n    234             ZZX_SetCoeff( self.__numerator, i, coeff )\n    235 \n\n/Users/was/s/devel/sage-main/sage/rings/number_field/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Unable to coerce -b - 2 to an integer\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1367\n\n",
+    "body": "Assignee: @williamstein\n\nI noticed this bug when thinking about implementing factorization of integers\nin a general relative number field (via the absolute field corresponding\nto it).  If this bug were fixed, then general factorization would be\ntrivial to implement, as suggested by the example below. \n\n```\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: I = A.factor_integer(3)[0][0]\nsage: from_A, to_A = A.structure()\nsage: G = [from_A(z) for z in I.gens()]; G\n[3, (-2*b - 1)*a + b - 1]\nsage: K.fractional_ideal(G)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/s/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/s/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/s/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in __repr__(self)\n    215 \n    216     def __repr__(self):\n--> 217         return \"Fractional ideal %s\"%self._repr_short()\n    218 \n    219     def _repr_short(self):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in _repr_short(self)\n    232         # makes things insanely slow in general.\n    233         # When I fix this, I *have* to also change the _latex_ method.\n--> 234         return '(%s)'%(', '.join([str(x) for x in self.gens_reduced()]))\n    235 \n    236     def __div__(self, other):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py in gens_reduced(self)\n     84             S = L['x']\n     85             gens = L.pari_rnf().rnfidealtwoelt(self.pari_rhnf())\n---> 86             gens = [ L(R(x.lift().lift())) for x in gens ]\n     87             ## Make sure that gens[1] is in L, not K\n     88             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __call__(self, x)\n   3321             return self.base_field()(x)\n   3322         \n-> 3323         return self._element_class(self, x)\n   3324 \n   3325     def _coerce_impl(self, x):\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/number_field_element.pyx in sage.rings.number_field.number_field_element.NumberFieldElement.__init__()\n    231         num = f * den\n    232         for i from 0 <= i <= num.degree():\n--> 233             (<Integer>ZZ(num[i]))._to_ZZ(&coeff)\n    234             ZZX_SetCoeff( self.__numerator, i, coeff )\n    235 \n\n/Users/was/s/devel/sage-main/sage/rings/number_field/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Unable to coerce -b - 2 to an integer\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1367\n\n",
     "created_at": "2007-12-02T07:52:55Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ I noticed this bug when thinking about implementing factorization of integers
 in a general relative number field (via the absolute field corresponding
 to it).  If this bug were fixed, then general factorization would be
 trivial to implement, as suggested by the example below. 
-
 
 ```
 sage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])
@@ -141,7 +140,6 @@ sage: K.fractional_ideal(G)
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1367
 
 
@@ -210,7 +208,7 @@ This is still broken in sage-3.0.
 archive/issue_comments_008746.json:
 ```json
 {
-    "body": "The problem is triggered at line 89 of `number_field_ideal_rel.py` (in 3.0.5):\n\n```\n            gens = [ L(R(x.lift().lift())) for x in gens ]\n```\n\nIn the case above , `L` is the field `K` and (when `x` is `gens[1]`) `R(x.lift().lift())` is the polynomial `(-b + 1)*x - b - 2` over the base field of `K`.   But the real difficulty is that `NumberFieldElement.__init__` doesn't work properly for relative fields; it ought to coerce a polynomial over the base field into the field, but doesn't.\n\nRather than trying to resolve the general problem with this coercion, it's easy to rewrite the above line 89, as in \nthe attached patch.  Then the following works:\n\n```\nsage: K.<a, b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: from_A, to_A = A.structure()\nsage: abs_ideals = [f[0] for f in A.factor(3)]\nsage: rel_ideals = [K.ideal([from_A(y) for y in I.gens()]) for I in abs_ideals]\nsage: rel_ideals\n[Fractional ideal (3, a - 1), Fractional ideal (3, (-1)*a - 1)]\nsage: prod(rel_ideals)\nFractional ideal (3)\nsage: [J.is_principal() for J in rel_ideals]\n[True, True]\n```\n",
+    "body": "The problem is triggered at line 89 of `number_field_ideal_rel.py` (in 3.0.5):\n\n```\n            gens = [ L(R(x.lift().lift())) for x in gens ]\n```\nIn the case above , `L` is the field `K` and (when `x` is `gens[1]`) `R(x.lift().lift())` is the polynomial `(-b + 1)*x - b - 2` over the base field of `K`.   But the real difficulty is that `NumberFieldElement.__init__` doesn't work properly for relative fields; it ought to coerce a polynomial over the base field into the field, but doesn't.\n\nRather than trying to resolve the general problem with this coercion, it's easy to rewrite the above line 89, as in \nthe attached patch.  Then the following works:\n\n```\nsage: K.<a, b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: from_A, to_A = A.structure()\nsage: abs_ideals = [f[0] for f in A.factor(3)]\nsage: rel_ideals = [K.ideal([from_A(y) for y in I.gens()]) for I in abs_ideals]\nsage: rel_ideals\n[Fractional ideal (3, a - 1), Fractional ideal (3, (-1)*a - 1)]\nsage: prod(rel_ideals)\nFractional ideal (3)\nsage: [J.is_principal() for J in rel_ideals]\n[True, True]\n```",
     "created_at": "2008-07-18T17:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -224,7 +222,6 @@ The problem is triggered at line 89 of `number_field_ideal_rel.py` (in 3.0.5):
 ```
             gens = [ L(R(x.lift().lift())) for x in gens ]
 ```
-
 In the case above , `L` is the field `K` and (when `x` is `gens[1]`) `R(x.lift().lift())` is the polynomial `(-b + 1)*x - b - 2` over the base field of `K`.   But the real difficulty is that `NumberFieldElement.__init__` doesn't work properly for relative fields; it ought to coerce a polynomial over the base field into the field, but doesn't.
 
 Rather than trying to resolve the general problem with this coercion, it's easy to rewrite the above line 89, as in 
@@ -243,7 +240,6 @@ Fractional ideal (3)
 sage: [J.is_principal() for J in rel_ideals]
 [True, True]
 ```
-
 
 
 
@@ -294,7 +290,7 @@ Michael
 archive/issue_comments_008749.json:
 ```json
 {
-    "body": "Hi,\n\nTwo things. First, the patch needs at least one doctest.\n\nSecond, something very fishy is going on. After applying this patch, I try out the example at the top of the definition of `NumberFieldFractionalIdeal_rel`, under the WARNING:\n\n\n```\nsage: K.<a> = NumberField([x^2 + 1, x^2 + 2]); K\nNumber Field in a0 with defining polynomial x^2 + 1 over its base field\nsage: i = K.ideal([a+1])\nsage: i\nFractional ideal (1)\n```\n\n\nIf `a+1` generates the unit ideal, it had better be a unit. But a+1 is really 1+i (the Gaussian integer), which is not a unit. Alternatively\n\n```\nsage: (a+1).norm()\n4\n```\n\nwhich is not +1 or -1.",
+    "body": "Hi,\n\nTwo things. First, the patch needs at least one doctest.\n\nSecond, something very fishy is going on. After applying this patch, I try out the example at the top of the definition of `NumberFieldFractionalIdeal_rel`, under the WARNING:\n\n```\nsage: K.<a> = NumberField([x^2 + 1, x^2 + 2]); K\nNumber Field in a0 with defining polynomial x^2 + 1 over its base field\nsage: i = K.ideal([a+1])\nsage: i\nFractional ideal (1)\n```\n\nIf `a+1` generates the unit ideal, it had better be a unit. But a+1 is really 1+i (the Gaussian integer), which is not a unit. Alternatively\n\n```\nsage: (a+1).norm()\n4\n```\nwhich is not +1 or -1.",
     "created_at": "2008-07-18T18:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -309,7 +305,6 @@ Two things. First, the patch needs at least one doctest.
 
 Second, something very fishy is going on. After applying this patch, I try out the example at the top of the definition of `NumberFieldFractionalIdeal_rel`, under the WARNING:
 
-
 ```
 sage: K.<a> = NumberField([x^2 + 1, x^2 + 2]); K
 Number Field in a0 with defining polynomial x^2 + 1 over its base field
@@ -318,14 +313,12 @@ sage: i
 Fractional ideal (1)
 ```
 
-
 If `a+1` generates the unit ideal, it had better be a unit. But a+1 is really 1+i (the Gaussian integer), which is not a unit. Alternatively
 
 ```
 sage: (a+1).norm()
 4
 ```
-
 which is not +1 or -1.
 
 
@@ -335,7 +328,7 @@ which is not +1 or -1.
 archive/issue_comments_008750.json:
 ```json
 {
-    "body": "Continuing the calculation, we have\n\n```\nsage: i.gens()\n(a + 1,)\nsage: i.gens_reduced()\n(1,)\n```\n\nand `i.__repr__()` via `i._repr_short(self)` uses `i.gens_reduced()`\n\nThe problem is with lines 90\u201392 of `number_field_ideal_rel.py`\n\n```\n            ## Make sure that gens[1] is in L, not K\n            Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n            gens[1] = S.hom([L.gen()])(S(Lcoeff))\n```\n\nwhich seem totally wrong-headed.  In the case in question `gens` is `[2, (-b)*a]` (which is ok).  Then `(-b)*a` gets \nconverted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the *absolute* field, after which `x` is (in a most\nconvoluted way) replaced by `a`, giving (of course) `1` (which is not ok).\n\nThere must be a much simpler way to achieve the object of ensuring that the generator is an element of the relative field.",
+    "body": "Continuing the calculation, we have\n\n```\nsage: i.gens()\n(a + 1,)\nsage: i.gens_reduced()\n(1,)\n```\nand `i.__repr__()` via `i._repr_short(self)` uses `i.gens_reduced()`\n\nThe problem is with lines 90\u201392 of `number_field_ideal_rel.py`\n\n```\n            ## Make sure that gens[1] is in L, not K\n            Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n            gens[1] = S.hom([L.gen()])(S(Lcoeff))\n```\nwhich seem totally wrong-headed.  In the case in question `gens` is `[2, (-b)*a]` (which is ok).  Then `(-b)*a` gets \nconverted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the *absolute* field, after which `x` is (in a most\nconvoluted way) replaced by `a`, giving (of course) `1` (which is not ok).\n\nThere must be a much simpler way to achieve the object of ensuring that the generator is an element of the relative field.",
     "created_at": "2008-07-18T23:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -352,7 +345,6 @@ sage: i.gens()
 sage: i.gens_reduced()
 (1,)
 ```
-
 and `i.__repr__()` via `i._repr_short(self)` uses `i.gens_reduced()`
 
 The problem is with lines 90–92 of `number_field_ideal_rel.py`
@@ -362,7 +354,6 @@ The problem is with lines 90–92 of `number_field_ideal_rel.py`
             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]
             gens[1] = S.hom([L.gen()])(S(Lcoeff))
 ```
-
 which seem totally wrong-headed.  In the case in question `gens` is `[2, (-b)*a]` (which is ok).  Then `(-b)*a` gets 
 converted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the *absolute* field, after which `x` is (in a most
 convoluted way) replaced by `a`, giving (of course) `1` (which is not ok).
@@ -416,7 +407,7 @@ Anyway, while I cannot guarantee to have time to review this properly soon, I'll
 archive/issue_comments_008753.json:
 ```json
 {
-    "body": "The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  For example, in\n\n```\n    def absolute_ideal(self):\n        \"\"\"\n        If this is an ideal in the extension L/K, return the ideal with\n        the same generators in the absolute field L/Q.\n        \"\"\"\n        try:\n            return self.__absolute_ideal\n        except AttributeError:\n            rnf = self.number_field().pari_rnf()\n            L = self.number_field().absolute_field('a')\n            R = L['x']\n            nf = L.pari_nf()\n            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n            self.__absolute_ideal = L.ideal(genlist)\n            return self.__absolute_ideal\n```\n\n(1) The generator of the absolute field is always called 'a'; it would be much better if the user could choose the name, and, even better, was also able to get the absolute ideal via something like `A = K.absolute_field('z'); A(J)`. (2) Neither `rnf` nor `nf` get used. (3) Since `x.polynomial()` is a rational polynomial, `L(R(x.polynomial()))` is the same as `L(x.polynomial())`. (4) In this context, `list(self.gens())`is no different from `self.gens()`.\n\nI've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.",
+    "body": "The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  For example, in\n\n```\n    def absolute_ideal(self):\n        \"\"\"\n        If this is an ideal in the extension L/K, return the ideal with\n        the same generators in the absolute field L/Q.\n        \"\"\"\n        try:\n            return self.__absolute_ideal\n        except AttributeError:\n            rnf = self.number_field().pari_rnf()\n            L = self.number_field().absolute_field('a')\n            R = L['x']\n            nf = L.pari_nf()\n            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n            self.__absolute_ideal = L.ideal(genlist)\n            return self.__absolute_ideal\n```\n(1) The generator of the absolute field is always called 'a'; it would be much better if the user could choose the name, and, even better, was also able to get the absolute ideal via something like `A = K.absolute_field('z'); A(J)`. (2) Neither `rnf` nor `nf` get used. (3) Since `x.polynomial()` is a rational polynomial, `L(R(x.polynomial()))` is the same as `L(x.polynomial())`. (4) In this context, `list(self.gens())`is no different from `self.gens()`.\n\nI've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.",
     "created_at": "2008-07-19T09:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -444,7 +435,6 @@ The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  
             self.__absolute_ideal = L.ideal(genlist)
             return self.__absolute_ideal
 ```
-
 (1) The generator of the absolute field is always called 'a'; it would be much better if the user could choose the name, and, even better, was also able to get the absolute ideal via something like `A = K.absolute_field('z'); A(J)`. (2) Neither `rnf` nor `nf` get used. (3) Since `x.polynomial()` is a rational polynomial, `L(R(x.polynomial()))` is the same as `L(x.polynomial())`. (4) In this context, `list(self.gens())`is no different from `self.gens()`.
 
 I've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.
@@ -612,7 +602,7 @@ Overall, though, it looks quite good.
 archive/issue_comments_008759.json:
 ```json
 {
-    "body": "The patch explains why the first behaviour is correct.  Do you want\n\n```\nsage: x = ZZ['x'].0\nsage: K.<a> = QuadraticField(5)\nsage: L.<b> = K.extension(x^2 - a)\nsage: L(x + 2) in L\nTrue\n```\n\nor\n\n```\nsage: L(x + 2) in K\nTrue\n```\n\n\nI think the first is *much* more desirable.\n\nYour second issue is a good point.  I should make sure you're either giving QQ['x'] (or something isomorphic) or QQ['base']['ext'] or base['ext'].  But that's hard at this time.\n\nAs for naming: make it a new ticket.  It's not worth shuffing a rename in with a reorganization in my opinion.",
+    "body": "The patch explains why the first behaviour is correct.  Do you want\n\n```\nsage: x = ZZ['x'].0\nsage: K.<a> = QuadraticField(5)\nsage: L.<b> = K.extension(x^2 - a)\nsage: L(x + 2) in L\nTrue\n```\nor\n\n```\nsage: L(x + 2) in K\nTrue\n```\n\nI think the first is *much* more desirable.\n\nYour second issue is a good point.  I should make sure you're either giving QQ['x'] (or something isomorphic) or QQ['base']['ext'] or base['ext'].  But that's hard at this time.\n\nAs for naming: make it a new ticket.  It's not worth shuffing a rename in with a reorganization in my opinion.",
     "created_at": "2009-01-24T20:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -630,14 +620,12 @@ sage: L.<b> = K.extension(x^2 - a)
 sage: L(x + 2) in L
 True
 ```
-
 or
 
 ```
 sage: L(x + 2) in K
 True
 ```
-
 
 I think the first is *much* more desirable.
 
@@ -700,7 +688,7 @@ I think this should be applied and more tickets opened for any additional issues
 archive/issue_comments_008762.json:
 ```json
 {
-    "body": "Replying to [comment:17 ncalexan]:\n> I think this should be applied and more tickets opened for any additional issues.\n> \n>  * It's an improvement upon the old code and addresses 3 tickets.\n> \n>  * It was never going to be the final say in this area.\n> \n>  * I don't have time to work on it more, and neither does David Roe.\n\nThanks Nick. Please open followup tickets and chance it to a positive review. I will then merge this ticket and its dependencies.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:17 ncalexan]:\n> I think this should be applied and more tickets opened for any additional issues.\n> \n> * It's an improvement upon the old code and addresses 3 tickets.\n> \n> * It was never going to be the final say in this area.\n> \n> * I don't have time to work on it more, and neither does David Roe.\n\n\nThanks Nick. Please open followup tickets and chance it to a positive review. I will then merge this ticket and its dependencies.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T05:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -712,11 +700,12 @@ archive/issue_comments_008762.json:
 Replying to [comment:17 ncalexan]:
 > I think this should be applied and more tickets opened for any additional issues.
 > 
->  * It's an improvement upon the old code and addresses 3 tickets.
+> * It's an improvement upon the old code and addresses 3 tickets.
 > 
->  * It was never going to be the final say in this area.
+> * It was never going to be the final say in this area.
 > 
->  * I don't have time to work on it more, and neither does David Roe.
+> * I don't have time to work on it more, and neither does David Roe.
+
 
 Thanks Nick. Please open followup tickets and chance it to a positive review. I will then merge this ticket and its dependencies.
 
@@ -749,7 +738,7 @@ Opened #5126 and #5127.
 archive/issue_comments_008764.json:
 ```json
 {
-    "body": "Ok, to make this patch apply I need to do two things:\n\n* change cannonical in this patch to canonical\n* apply the following patch\n\n```\ndiff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py\n--- a/sage/rings/number_field/number_field_ideal_rel.py Sun Jan 25 08:47:06 2009 +0100\n+++ b/sage/rings/number_field/number_field_ideal_rel.py Wed Jan 28 21:27:03 2009 -0800\n@@ -69,8 +69,11 @@\n         try:\n             return self.__absolute_ideal\n         except AttributeError:\n+            rnf = self.number_field().pari_rnf()\n             L = self.number_field().absolute_field('a')\n-            genlist = [L(x.polynomial()) for x in list(self.gens())]\n+            R = L['x']\n+            nf = L.pari_nf()\n+            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n             self.__absolute_ideal = L.ideal(genlist)\n             return self.__absolute_ideal\n```\n\ndue to \n\n```\nchangeset:   11444:4196cd54c996\nuser:        Robert Bradshaw <robertwb@math.washington.edu>\ndate:        Fri Jan 23 03:38:03 2009 -0800\nsummary:     Convert univariate polynomials to new coercion model.\n```\n\nThis changes\n\n```\ngenlist = [L(R(x.polynomial())) for x in list(self.gens())]\n```\n\nto \n\n```\ngenlist = [L(R(x.polynomial())) for x in self.gens()]\n```\n\nbut doctests do pass. \n\nCheers,\n\nMichael",
+    "body": "Ok, to make this patch apply I need to do two things:\n\n* change cannonical in this patch to canonical\n* apply the following patch\n\n```\ndiff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py\n--- a/sage/rings/number_field/number_field_ideal_rel.py Sun Jan 25 08:47:06 2009 +0100\n+++ b/sage/rings/number_field/number_field_ideal_rel.py Wed Jan 28 21:27:03 2009 -0800\n@@ -69,8 +69,11 @@\n         try:\n             return self.__absolute_ideal\n         except AttributeError:\n+            rnf = self.number_field().pari_rnf()\n             L = self.number_field().absolute_field('a')\n-            genlist = [L(x.polynomial()) for x in list(self.gens())]\n+            R = L['x']\n+            nf = L.pari_nf()\n+            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n             self.__absolute_ideal = L.ideal(genlist)\n             return self.__absolute_ideal\n```\ndue to \n\n```\nchangeset:   11444:4196cd54c996\nuser:        Robert Bradshaw <robertwb@math.washington.edu>\ndate:        Fri Jan 23 03:38:03 2009 -0800\nsummary:     Convert univariate polynomials to new coercion model.\n```\nThis changes\n\n```\ngenlist = [L(R(x.polynomial())) for x in list(self.gens())]\n```\nto \n\n```\ngenlist = [L(R(x.polynomial())) for x in self.gens()]\n```\nbut doctests do pass. \n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T05:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
@@ -780,7 +769,6 @@ diff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py
              self.__absolute_ideal = L.ideal(genlist)
              return self.__absolute_ideal
 ```
-
 due to 
 
 ```
@@ -789,19 +777,16 @@ user:        Robert Bradshaw <robertwb@math.washington.edu>
 date:        Fri Jan 23 03:38:03 2009 -0800
 summary:     Convert univariate polynomials to new coercion model.
 ```
-
 This changes
 
 ```
 genlist = [L(R(x.polynomial())) for x in list(self.gens())]
 ```
-
 to 
 
 ```
 genlist = [L(R(x.polynomial())) for x in self.gens()]
 ```
-
 but doctests do pass. 
 
 Cheers,

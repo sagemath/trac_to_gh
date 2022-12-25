@@ -451,7 +451,7 @@ The final patch is the attached file abvar.hg
 archive/issue_comments_017327.json:
 ```json
 {
-    "body": "From CRAIG:\n\n```\nSo I think I'm ready for this to get merged. I've played around with\njust about all of the code, and I looked through the last 2-3 files\nthat I hadn't looked at much since Tucson. I can't say that I read\nevery line of everything, of course, but I feel pretty comfortable\nwith the code overall. There are lots of things I want to start\nworking on, of course, but none of them are defects -- they're all\nenhancements.\n\nI went ahead and reformatted one or two things, and added some long\ndoctests to the top of homspace.py. I feel like adding a 387th patch\nto the ticket is silly, since you'll probably also have one or two\nsmall touch-ups, so you'll probably just re-roll the bundle. I'm\nattaching the patch to this email.\n\nAs long as you feel like the code you didn't write seems reasonable\nenough, I feel like this is ready to get merged.\n```\n\n\n\nI've posted a new abvar.hg patch, which is the one that should be applied.",
+    "body": "From CRAIG:\n\n```\nSo I think I'm ready for this to get merged. I've played around with\njust about all of the code, and I looked through the last 2-3 files\nthat I hadn't looked at much since Tucson. I can't say that I read\nevery line of everything, of course, but I feel pretty comfortable\nwith the code overall. There are lots of things I want to start\nworking on, of course, but none of them are defects -- they're all\nenhancements.\n\nI went ahead and reformatted one or two things, and added some long\ndoctests to the top of homspace.py. I feel like adding a 387th patch\nto the ticket is silly, since you'll probably also have one or two\nsmall touch-ups, so you'll probably just re-roll the bundle. I'm\nattaching the patch to this email.\n\nAs long as you feel like the code you didn't write seems reasonable\nenough, I feel like this is ready to get merged.\n```\n\n\nI've posted a new abvar.hg patch, which is the one that should be applied.",
     "created_at": "2008-04-04T17:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
@@ -480,7 +480,6 @@ attaching the patch to this email.
 As long as you feel like the code you didn't write seems reasonable
 enough, I feel like this is ready to get merged.
 ```
-
 
 
 I've posted a new abvar.hg patch, which is the one that should be applied.
@@ -546,7 +545,7 @@ archive/issue_events_005958.json:
 archive/issue_comments_017330.json:
 ```json
 {
-    "body": "I am seeing one doctest failure:\n\n```\nsage -t -long devel/sage/sage/modular/abvar/abvar.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/abvar.py\", line 276:\n    sage: cmp(J0(37), 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\n\nIIRC this compares just memory posititions, so it ought to be #random.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "I am seeing one doctest failure:\n\n```\nsage -t -long devel/sage/sage/modular/abvar/abvar.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/abvar.py\", line 276:\n    sage: cmp(J0(37), 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\nIIRC this compares just memory posititions, so it ought to be #random.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T17:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
@@ -568,7 +567,6 @@ Got:
     -1
 **********************************************************************
 ```
-
 
 IIRC this compares just memory posititions, so it ought to be #random.
 

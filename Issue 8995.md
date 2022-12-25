@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8995
 archive/issue_comments_083041.json:
 ```json
 {
-    "body": "#8996 is a duplicate of this (just beaten by Jason!). Robert there says:\n\n> If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique.\n\n...which I agree with.",
+    "body": "#8996 is a duplicate of this (just beaten by Jason!). Robert there says:\n\n> If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique.\n\n\n...which I agree with.",
     "created_at": "2010-05-20T02:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
@@ -51,6 +51,7 @@ archive/issue_comments_083041.json:
 #8996 is a duplicate of this (just beaten by Jason!). Robert there says:
 
 > If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique.
+
 
 ...which I agree with.
 

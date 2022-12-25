@@ -3,7 +3,7 @@
 archive/issues_009976.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @jdemeyer @JohnCremona @yyyyx4\n\nKeywords: CM\n\nIt would be great if we could do\n\n```\nsage: E = EllipticCurve([0,0,0,3,0]) # curve with CM by Q[I]\nsage: (1 + I) * P([1,2])\n```\n\nThis wouldn't be very hard for CM elliptic curves over QQ, since the necessary functionality is there in PARI's `ellpow`; see #6327. CM elliptic curves over number fields might be a bit harder. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9977\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jdemeyer @JohnCremona @yyyyx4\n\nKeywords: CM\n\nIt would be great if we could do\n\n```\nsage: E = EllipticCurve([0,0,0,3,0]) # curve with CM by Q[I]\nsage: (1 + I) * P([1,2])\n```\nThis wouldn't be very hard for CM elliptic curves over QQ, since the necessary functionality is there in PARI's `ellpow`; see #6327. CM elliptic curves over number fields might be a bit harder. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9977\n\n",
     "created_at": "2010-09-23T12:11:05Z",
     "labels": [
         "component: elliptic curves",
@@ -28,7 +28,6 @@ It would be great if we could do
 sage: E = EllipticCurve([0,0,0,3,0]) # curve with CM by Q[I]
 sage: (1 + I) * P([1,2])
 ```
-
 This wouldn't be very hard for CM elliptic curves over QQ, since the necessary functionality is there in PARI's `ellpow`; see #6327. CM elliptic curves over number fields might be a bit harder. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9977

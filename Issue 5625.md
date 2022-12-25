@@ -3,7 +3,7 @@
 archive/issues_005625.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThe following fails because I don't have the optional  gap_packages-* package installed:\n\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.cohomology(1,3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/59/code/369.py\", line 8, in <module>\n    G.cohomology(_sage_const_1 ,_sage_const_3 )\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 1132, in cohomology\n    L = eval(gap.eval(\"GroupCohomology(%s,%s,%s)\"%(GG,n,p)))\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 479, in eval\n    result = Expect.eval(self, input_line, **kwds)\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 974, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 723, in _eval_line\n    raise RuntimeError, message\nRuntimeError: Gap produced error output\nVariable: 'GroupCohomology' must have a value\n\n\n   executing GroupCohomology(Group([(3,4), (1,2,3)(4,5)]),1,3);\n```\n\n\nThe error message should say that I have to install that package.\n\nIncidentally, installing the package doesn't work right now since Sage ships gap-4.12 (though I guess we're downgrading to 4.10 soon):\n\n\n```\n$ sage -i gap_packages-4.4.10_6\n...\nboom\nmkdir: /Users/wstein/build/sage-3.4/local/lib/gap-4.4.10: No such file or directory\ncp: directory /Users/wstein/build/sage-3.4/local/lib/gap-4.4.10/pkg does not exist\nError copying SPKG.txt\n\nreal\t0m0.078s\nuser\t0m0.007s\nsys\t0m0.019s\n```\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/5625\n\n",
+    "body": "Assignee: joyner\n\nThe following fails because I don't have the optional  gap_packages-* package installed:\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.cohomology(1,3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/59/code/369.py\", line 8, in <module>\n    G.cohomology(_sage_const_1 ,_sage_const_3 )\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 1132, in cohomology\n    L = eval(gap.eval(\"GroupCohomology(%s,%s,%s)\"%(GG,n,p)))\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 479, in eval\n    result = Expect.eval(self, input_line, **kwds)\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 974, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 723, in _eval_line\n    raise RuntimeError, message\nRuntimeError: Gap produced error output\nVariable: 'GroupCohomology' must have a value\n\n\n   executing GroupCohomology(Group([(3,4), (1,2,3)(4,5)]),1,3);\n```\n\nThe error message should say that I have to install that package.\n\nIncidentally, installing the package doesn't work right now since Sage ships gap-4.12 (though I guess we're downgrading to 4.10 soon):\n\n```\n$ sage -i gap_packages-4.4.10_6\n...\nboom\nmkdir: /Users/wstein/build/sage-3.4/local/lib/gap-4.4.10: No such file or directory\ncp: directory /Users/wstein/build/sage-3.4/local/lib/gap-4.4.10/pkg does not exist\nError copying SPKG.txt\n\nreal\t0m0.078s\nuser\t0m0.007s\nsys\t0m0.019s\n``` \n\nIssue created by migration from https://trac.sagemath.org/ticket/5625\n\n",
     "created_at": "2009-03-29T00:36:43Z",
     "labels": [
         "component: group theory",
@@ -19,7 +19,6 @@ archive/issues_005625.json:
 Assignee: joyner
 
 The following fails because I don't have the optional  gap_packages-* package installed:
-
 
 ```
 sage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
@@ -45,11 +44,9 @@ Variable: 'GroupCohomology' must have a value
    executing GroupCohomology(Group([(3,4), (1,2,3)(4,5)]),1,3);
 ```
 
-
 The error message should say that I have to install that package.
 
 Incidentally, installing the package doesn't work right now since Sage ships gap-4.12 (though I guess we're downgrading to 4.10 soon):
-
 
 ```
 $ sage -i gap_packages-4.4.10_6
@@ -62,8 +59,7 @@ Error copying SPKG.txt
 real	0m0.078s
 user	0m0.007s
 sys	0m0.019s
-```
- 
+``` 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5625
 

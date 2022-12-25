@@ -3,7 +3,7 @@
 archive/issues_007610.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby alexghitza\n\nOn running Sage or the next build, readline fails with:\n\n\n```\nbash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7610\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby alexghitza\n\nOn running Sage or the next build, readline fails with:\n\n```\nbash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7610\n\n",
     "created_at": "2009-12-06T02:43:36Z",
     "labels": [
         "component: packages: standard",
@@ -22,11 +22,9 @@ CC:  drkirkby alexghitza
 
 On running Sage or the next build, readline fails with:
 
-
 ```
 bash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7610
 
@@ -167,7 +165,7 @@ archive/issue_events_018081.json:
 archive/issue_comments_064886.json:
 ```json
 {
-    "body": "Replying to [ticket:7610 timdumol]:\n> On running Sage or the next build, readline fails with:\n> \n\n```\nbash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\n\nThis is because our shared libreadline lacks a `DT_NEEDED` tag for libtermcap, libncurses, libtinfo or whichever library provides these symbols (depends on the OS / distro).\n\nI have a readline 6.2.p2 spkg which fixes this, but haven't yet opened a ticket for it...\n\n(Just in case someone searches for this error and ends up here.)",
+    "body": "Replying to [ticket:7610 timdumol]:\n> On running Sage or the next build, readline fails with:\n> \n\n{{{\nbash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC\n}}}\n\nThis is because our shared libreadline lacks a `DT_NEEDED` tag for libtermcap, libncurses, libtinfo or whichever library provides these symbols (depends on the OS / distro).\n\nI have a readline 6.2.p2 spkg which fixes this, but haven't yet opened a ticket for it...\n\n(Just in case someone searches for this error and ends up here.)",
     "created_at": "2011-10-29T22:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
@@ -180,10 +178,9 @@ Replying to [ticket:7610 timdumol]:
 > On running Sage or the next build, readline fails with:
 > 
 
-```
+{{{
 bash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC
-```
-
+}}}
 
 This is because our shared libreadline lacks a `DT_NEEDED` tag for libtermcap, libncurses, libtinfo or whichever library provides these symbols (depends on the OS / distro).
 

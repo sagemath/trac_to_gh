@@ -67,7 +67,7 @@ Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/tra
 archive/issue_comments_038268.json:
 ```json
 {
-    "body": "The patch applies cleanly, but I get a doctest error:\n\n```\nsage -t  \"devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n**********************************************************************\nFile \"/var/tmp/sage-3.3.alpha0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\", line 161:\n    sage: hash(A)\nExpected:\n    -623270016\nGot:\n    139665060168050560\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /var/tmp/sage-3.3.alpha0/tmp/.doctest_matrix_generic_dense.py\n\t [1.1 s]\nexit code: 1024\n```\n",
+    "body": "The patch applies cleanly, but I get a doctest error:\n\n```\nsage -t  \"devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n**********************************************************************\nFile \"/var/tmp/sage-3.3.alpha0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\", line 161:\n    sage: hash(A)\nExpected:\n    -623270016\nGot:\n    139665060168050560\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /var/tmp/sage-3.3.alpha0/tmp/.doctest_matrix_generic_dense.py\n\t [1.1 s]\nexit code: 1024\n```",
     "created_at": "2009-01-20T07:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
@@ -95,7 +95,6 @@ For whitespace errors, see the file /var/tmp/sage-3.3.alpha0/tmp/.doctest_matrix
 	 [1.1 s]
 exit code: 1024
 ```
-
 
 
 

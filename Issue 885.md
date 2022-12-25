@@ -3,7 +3,7 @@
 archive/issues_000885.json:
 ```json
 {
-    "body": "Assignee: failure\n\nOn sage.math:\n\n```\nFile \"morphism.pyx\", line 312:\n    sage: c == loads(dumps(c))\nExpected:\n    True\nGot:\n    False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/885\n\n",
+    "body": "Assignee: failure\n\nOn sage.math:\n\n```\nFile \"morphism.pyx\", line 312:\n    sage: c == loads(dumps(c))\nExpected:\n    True\nGot:\n    False\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/885\n\n",
     "created_at": "2007-10-13T20:23:36Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ Expected:
 Got:
     False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/885
 

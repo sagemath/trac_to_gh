@@ -56,7 +56,7 @@ Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_019378.json:
 ```json
 {
-    "body": "Patch looks good to me, but I have reject issues against my 3.0.alpha2 merge tree:\n\n```\npatching file sage/crypto/mq/sr.py\nHunk #25 FAILED at 599.\nHunk #26 FAILED at 615.\nHunk #28 succeeded at 655 with fuzz 2.\nHunk #48 FAILED at 1191.\nHunk #75 FAILED at 1776.\n4 out of 95 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej\n```\n\nOne those issues are fixed I will apply.\n\nCheers,\n\nMichael",
+    "body": "Patch looks good to me, but I have reject issues against my 3.0.alpha2 merge tree:\n\n```\npatching file sage/crypto/mq/sr.py\nHunk #25 FAILED at 599.\nHunk #26 FAILED at 615.\nHunk #28 succeeded at 655 with fuzz 2.\nHunk #48 FAILED at 1191.\nHunk #75 FAILED at 1776.\n4 out of 95 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej\n```\nOne those issues are fixed I will apply.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T15:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ Hunk #48 FAILED at 1191.
 Hunk #75 FAILED at 1776.
 4 out of 95 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej
 ```
-
 One those issues are fixed I will apply.
 
 Cheers,

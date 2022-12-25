@@ -3,7 +3,7 @@
 archive/issues_005966.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis was reported by Kiran in https://groups.google.com/group/sage-devel/browse_thread/thread/776d8e0a25735dca\n\n```\nsage -t  \"devel/sage/sage/sets/primes.py\"\n**********************************************************************\nFile \"/opt/sage/sage-3.4.2.rc0/devel/sage/sage/sets/primes.py\", line\n80:\n    sage: P>x^2+x\nExpected:\n    True\nGot:\n    False\n********************************************************************** \n```\n\nDon't test for `>`, but use `!=` since anything else is pointless. We should also compare to an MV polynomial ring ro avoid stating Maxima needlessly. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5966\n\n",
+    "body": "Assignee: mabshoff\n\nThis was reported by Kiran in https://groups.google.com/group/sage-devel/browse_thread/thread/776d8e0a25735dca\n\n```\nsage -t  \"devel/sage/sage/sets/primes.py\"\n**********************************************************************\nFile \"/opt/sage/sage-3.4.2.rc0/devel/sage/sage/sets/primes.py\", line\n80:\n    sage: P>x^2+x\nExpected:\n    True\nGot:\n    False\n********************************************************************** \n```\nDon't test for `>`, but use `!=` since anything else is pointless. We should also compare to an MV polynomial ring ro avoid stating Maxima needlessly. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5966\n\n",
     "created_at": "2009-05-03T00:44:51Z",
     "labels": [
         "component: doctest coverage",
@@ -33,7 +33,6 @@ Got:
     False
 ********************************************************************** 
 ```
-
 Don't test for `>`, but use `!=` since anything else is pointless. We should also compare to an MV polynomial ring ro avoid stating Maxima needlessly. 
 
 Cheers,

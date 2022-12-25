@@ -3,7 +3,7 @@
 archive/issues_004213.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: list(Permutations([1,2,3,4,5], 4))\n\n[ ...\n [2, 3, 1, 5],\n [2, 3, 3, 1],\n [2, 3, 3, 4],\n [2, 3, 3, 5],\n [2, 3, 4, 1],\n ...\n [3, 2, 1, 5],\n [3, 2, 2, 1],\n [3, 2, 2, 4],\n [3, 2, 2, 5],\n [3, 2, 4, 1],\n ...\n [4, 2, 1, 5],\n [4, 2, 2, 1],\n [4, 2, 2, 3],\n [4, 2, 2, 5],\n [4, 2, 3, 1],\n ...\n [5, 2, 1, 4],\n [5, 2, 2, 1],\n [5, 2, 2, 3],\n [5, 2, 2, 4],\n [5, 2, 3, 1],\n```\n\n\nOnly the buggy parts are shown.\n\nThis does not occur for lists smaller that 5 or when len(n) == k.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4213\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: list(Permutations([1,2,3,4,5], 4))\n\n[ ...\n [2, 3, 1, 5],\n [2, 3, 3, 1],\n [2, 3, 3, 4],\n [2, 3, 3, 5],\n [2, 3, 4, 1],\n ...\n [3, 2, 1, 5],\n [3, 2, 2, 1],\n [3, 2, 2, 4],\n [3, 2, 2, 5],\n [3, 2, 4, 1],\n ...\n [4, 2, 1, 5],\n [4, 2, 2, 1],\n [4, 2, 2, 3],\n [4, 2, 2, 5],\n [4, 2, 3, 1],\n ...\n [5, 2, 1, 4],\n [5, 2, 2, 1],\n [5, 2, 2, 3],\n [5, 2, 2, 4],\n [5, 2, 3, 1],\n```\n\nOnly the buggy parts are shown.\n\nThis does not occur for lists smaller that 5 or when len(n) == k.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4213\n\n",
     "created_at": "2008-09-28T21:26:17Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +19,6 @@ archive/issues_004213.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
-
 
 ```
 sage: list(Permutations([1,2,3,4,5], 4))
@@ -49,7 +48,6 @@ sage: list(Permutations([1,2,3,4,5], 4))
  [5, 2, 2, 4],
  [5, 2, 3, 1],
 ```
-
 
 Only the buggy parts are shown.
 

@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4979
 archive/issue_comments_037887.json:
 ```json
 {
-    "body": "We should use sdtwebclient for now on Solaris since it is the default way to open a url by the default system browser on Solaris:\n\n```\n-bash-3.00$ /usr/dt/bin/sdtwebclient --help\n/usr/dt/bin/sdtwebclient[117]: getopts: help bad option(s)\nUsage: sdtwebclient [-b browser] [-o browser_opts] url-string\n-bash-3.00$ man sdtwebclient\nNo manual entry for sdtwebclient. [:(]\n```\n\n\nCheers,\n\nMichael",
+    "body": "We should use sdtwebclient for now on Solaris since it is the default way to open a url by the default system browser on Solaris:\n\n```\n-bash-3.00$ /usr/dt/bin/sdtwebclient --help\n/usr/dt/bin/sdtwebclient[117]: getopts: help bad option(s)\nUsage: sdtwebclient [-b browser] [-o browser_opts] url-string\n-bash-3.00$ man sdtwebclient\nNo manual entry for sdtwebclient. [:(]\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-15T01:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ Usage: sdtwebclient [-b browser] [-o browser_opts] url-string
 -bash-3.00$ man sdtwebclient
 No manual entry for sdtwebclient. [:(]
 ```
-
 
 Cheers,
 

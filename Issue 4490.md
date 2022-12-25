@@ -50,7 +50,7 @@ I'm not a fan of the implicit multiplication mode since it adds yet another leve
 archive/issue_comments_033100.json:
 ```json
 {
-    "body": "> Shouldn't this be on a worksheet settings page rather than adding another checkbox?\n\nIt could be a checkbox on the worksheet settings page :-)\n\n> I'm not a fan of the implicit multiplication mode since it adds yet another level of \n> language incompatible with Python. \n\nWell it was voted out of being on by default for a reason, and it will stay that way.",
+    "body": "> Shouldn't this be on a worksheet settings page rather than adding another checkbox?\n\n\nIt could be a checkbox on the worksheet settings page :-)\n\n> I'm not a fan of the implicit multiplication mode since it adds yet another level of \n> language incompatible with Python. \n\n\nWell it was voted out of being on by default for a reason, and it will stay that way.",
     "created_at": "2008-11-11T20:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4490",
     "type": "issue_comment",
@@ -61,10 +61,12 @@ archive/issue_comments_033100.json:
 
 > Shouldn't this be on a worksheet settings page rather than adding another checkbox?
 
+
 It could be a checkbox on the worksheet settings page :-)
 
 > I'm not a fan of the implicit multiplication mode since it adds yet another level of 
 > language incompatible with Python. 
+
 
 Well it was voted out of being on by default for a reason, and it will stay that way.
 

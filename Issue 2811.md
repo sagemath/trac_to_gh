@@ -3,7 +3,7 @@
 archive/issues_002811.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nSAGE build/upgrade complete!\n. local/bin/sage-env && sage-maketest\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 3: [: argument expected\nmkdir: `': No such file or directory\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 11: /test.log: Permission denied\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 12: /test.log: Permission denied\ntee: /test.log: Permission denied\nTesting of examples currently not implemented.\nTesting SAGE documentation\nTesting SAGE tutorial\ntee: /test.log: Permission denied\nsage -t  devel/doc/tut/tut.tex                              Testing SAGE programming guide\ntee: /test.log: Permission denied\nsage -t  devel/doc/prog/prog.tex\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2811\n\n",
+    "body": "Assignee: mabshoff\n\n```\nSAGE build/upgrade complete!\n. local/bin/sage-env && sage-maketest\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 3: [: argument expected\nmkdir: `': No such file or directory\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 11: /test.log: Permission denied\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 12: /test.log: Permission denied\ntee: /test.log: Permission denied\nTesting of examples currently not implemented.\nTesting SAGE documentation\nTesting SAGE tutorial\ntee: /test.log: Permission denied\nsage -t  devel/doc/tut/tut.tex                              Testing SAGE programming guide\ntee: /test.log: Permission denied\nsage -t  devel/doc/prog/prog.tex\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2811\n\n",
     "created_at": "2008-04-05T18:10:14Z",
     "labels": [
         "component: build",
@@ -18,7 +18,6 @@ archive/issues_002811.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 SAGE build/upgrade complete!
@@ -36,7 +35,6 @@ sage -t  devel/doc/tut/tut.tex                              Testing SAGE program
 tee: /test.log: Permission denied
 sage -t  devel/doc/prog/prog.tex
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2811
 

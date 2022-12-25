@@ -68,7 +68,7 @@ Looks like a job for me -- but probably not until I have finished preparing for 
 archive/issue_comments_086872.json:
 ```json
 {
-    "body": "I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\nThere are also still failures in:\n\n```\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/padics.py\"\n```\n\n\nJohn, Can you give some opinion on those?",
+    "body": "I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\nThere are also still failures in:\n\n```\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/padics.py\"\n```\n\nJohn, Can you give some opinion on those?",
     "created_at": "2010-06-15T21:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ There are also still failures in:
 sage -t -long "devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py"
 sage -t -long "devel/sage-main/sage/schemes/elliptic_curves/padics.py"
 ```
-
 
 John, Can you give some opinion on those?
 
@@ -114,7 +113,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086874.json:
 ```json
 {
-    "body": "Looks good and applies to 4.4.4.alpha0.  I am currently testing all sage/schemes/elliptic_curves.\n\nOne point about the (good) new rank_bound parameter for the point_search function:  is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\nI also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\nTest failure in sha_tate: \n\n```\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/sha_tate.py\", line 637:\n    sage: e.sha().an_padic(7)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[14]>\", line 1, in <module>\n        e.sha().an_padic(Integer(7))###line 637:\n    sage: e.sha().an_padic(7)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 464, in an_padic\n        ms = self.E.modular_symbol(sign=+1, normalize='L_ratio')\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1277, in modular_symbol\n        M = ell_modular_symbols.ModularSymbolECLIB(self, sign, normalize=normalize)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 474, in __init__\n        self._modsym = ECModularSymbol(E)\n      File \"newforms.pyx\", line 75, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1794)\n    OverflowError: long int too large to convert to int\n```\n\n\nand similar in padics:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/padics.py\", line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[7]>\", line 1, in <module>\n        [ms(Integer(1)/Integer(11)), ms(Integer(1)/Integer(3)), ms(Integer(0)), ms(oo)]###line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 523, in __call__\n        return (self._atzero - self._modsym(r))*self._scaling\n      File \"newforms.pyx\", line 130, in sage.libs.cremona.newforms.ECModularSymbol.__call__ (sage/libs/cremona/newforms.cpp:2024)\n      File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n      File \"rational.pyx\", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)\n    TypeError: Unable to coerce +Infinity (<class 'sage.rings.infinity.PlusInfinity'>) to Rational\n```\n\nbut I have no idea what in the patch could have caused this!\nAnd finally:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1211:\n    sage: M=E.modular_symbol()\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\n**********************************************************************\n```\n",
+    "body": "Looks good and applies to 4.4.4.alpha0.  I am currently testing all sage/schemes/elliptic_curves.\n\nOne point about the (good) new rank_bound parameter for the point_search function:  is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\nI also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\nTest failure in sha_tate: \n\n```\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/sha_tate.py\", line 637:\n    sage: e.sha().an_padic(7)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[14]>\", line 1, in <module>\n        e.sha().an_padic(Integer(7))###line 637:\n    sage: e.sha().an_padic(7)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 464, in an_padic\n        ms = self.E.modular_symbol(sign=+1, normalize='L_ratio')\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1277, in modular_symbol\n        M = ell_modular_symbols.ModularSymbolECLIB(self, sign, normalize=normalize)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 474, in __init__\n        self._modsym = ECModularSymbol(E)\n      File \"newforms.pyx\", line 75, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1794)\n    OverflowError: long int too large to convert to int\n```\n\nand similar in padics:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/padics.py\", line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[7]>\", line 1, in <module>\n        [ms(Integer(1)/Integer(11)), ms(Integer(1)/Integer(3)), ms(Integer(0)), ms(oo)]###line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 523, in __call__\n        return (self._atzero - self._modsym(r))*self._scaling\n      File \"newforms.pyx\", line 130, in sage.libs.cremona.newforms.ECModularSymbol.__call__ (sage/libs/cremona/newforms.cpp:2024)\n      File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n      File \"rational.pyx\", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)\n    TypeError: Unable to coerce +Infinity (<class 'sage.rings.infinity.PlusInfinity'>) to Rational\n```\nbut I have no idea what in the patch could have caused this!\nAnd finally:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1211:\n    sage: M=E.modular_symbol()\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\n**********************************************************************\n```",
     "created_at": "2010-06-17T21:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -155,7 +154,6 @@ Exception raised:
     OverflowError: long int too large to convert to int
 ```
 
-
 and similar in padics:
 
 ```
@@ -180,7 +178,6 @@ Exception raised:
       File "rational.pyx", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)
     TypeError: Unable to coerce +Infinity (<class 'sage.rings.infinity.PlusInfinity'>) to Rational
 ```
-
 but I have no idea what in the patch could have caused this!
 And finally:
 
@@ -200,7 +197,6 @@ Got:
     -2
 **********************************************************************
 ```
-
 
 
 
@@ -226,7 +222,7 @@ archive/issue_events_022768.json:
 archive/issue_comments_086875.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> ... the (good) new rank_bound parameter ... is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\nSounds like a better option to me!\n\n> I also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\nI do agree!\n\n> ... but I have no idea what in the patch could have caused this!\n\nE.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It is probably what is causing all the failures... I'm not sure whether this is practical or not, but it definitely sped up E.sha().p_primary_bound(p) in the cases I was looking at.",
+    "body": "Replying to [comment:5 cremona]:\n> ... the (good) new rank_bound parameter ... is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\n\nSounds like a better option to me!\n\n> I also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\n\nI do agree!\n\n> ... but I have no idea what in the patch could have caused this!\n\n\nE.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It is probably what is causing all the failures... I'm not sure whether this is practical or not, but it definitely sped up E.sha().p_primary_bound(p) in the cases I was looking at.",
     "created_at": "2010-06-17T21:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -238,13 +234,16 @@ archive/issue_comments_086875.json:
 Replying to [comment:5 cremona]:
 > ... the (good) new rank_bound parameter ... is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.
 
+
 Sounds like a better option to me!
 
 > I also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).
 
+
 I do agree!
 
 > ... but I have no idea what in the patch could have caused this!
+
 
 E.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It is probably what is causing all the failures... I'm not sure whether this is practical or not, but it definitely sped up E.sha().p_primary_bound(p) in the cases I was looking at.
 
@@ -255,7 +254,7 @@ E.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It
 archive/issue_comments_086876.json:
 ```json
 {
-    "body": "Replying to [comment:3 rlm]:\n> I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\nMore specifically, with the patch here applied to `sage-4.4.4.alpha1` the following doctest illustrates the printing I'm talking about:\n\n```\nsage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n14.7905275701311\n```\n\n\nWhen I do this from the command line, that is exactly what I get. However, when I run long doctests in `ell_rational_field.py` the following part appears in the terminal from which I'm running the tests, and is a little misleading:\n\n\n```\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\n```\n",
+    "body": "Replying to [comment:3 rlm]:\n> I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\n\nMore specifically, with the patch here applied to `sage-4.4.4.alpha1` the following doctest illustrates the printing I'm talking about:\n\n```\nsage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n14.7905275701311\n```\n\nWhen I do this from the command line, that is exactly what I get. However, when I run long doctests in `ell_rational_field.py` the following part appears in the terminal from which I'm running the tests, and is a little misleading:\n\n```\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\n```",
     "created_at": "2010-06-24T16:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -266,6 +265,7 @@ archive/issue_comments_086876.json:
 
 Replying to [comment:3 rlm]:
 > I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.
+
 
 More specifically, with the patch here applied to `sage-4.4.4.alpha1` the following doctest illustrates the printing I'm talking about:
 
@@ -279,9 +279,7 @@ Failed to saturate MW basis at primes [ ]
 14.7905275701311
 ```
 
-
 When I do this from the command line, that is exactly what I get. However, when I run long doctests in `ell_rational_field.py` the following part appears in the terminal from which I'm running the tests, and is a little misleading:
-
 
 ```
 **********************************************************************
@@ -301,13 +299,12 @@ Failed to saturate MW basis at primes [ ]
 
 
 
-
 ---
 
 archive/issue_comments_086877.json:
 ```json
 {
-    "body": "OK, so the problem is that the warning output from the regulator call appears in the wrong place in the output -- right?\n\nI have solved this by avoiding it as follows.  The gens() function uses mwrank_lib (default) or mwrank_console to do a two-descent after constructing the mwrank_EllipticCurve C.  But it was failing to call the saturate function on C.  Some default saturation is done by the gens() call (on C), but the default saturation bound is rather low (100, set in eclib).\n\nSo I added a new parameter sat_bound to the gens() function in ell_rational_field, default 1000, and made sure that both mwrank_lib and mwrank_console option use it.\nNow we have\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens()\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\n\n```\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(algorithm='mwrank_console')\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\ncompared with\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(sat_bound=100)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\nI will post an additional patch in a minute.",
+    "body": "OK, so the problem is that the warning output from the regulator call appears in the wrong place in the output -- right?\n\nI have solved this by avoiding it as follows.  The gens() function uses mwrank_lib (default) or mwrank_console to do a two-descent after constructing the mwrank_EllipticCurve C.  But it was failing to call the saturate function on C.  Some default saturation is done by the gens() call (on C), but the default saturation bound is rather low (100, set in eclib).\n\nSo I added a new parameter sat_bound to the gens() function in ell_rational_field, default 1000, and made sure that both mwrank_lib and mwrank_console option use it.\nNow we have\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens()\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\n```\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(algorithm='mwrank_console')\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\ncompared with\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(sat_bound=100)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\nI will post an additional patch in a minute.",
     "created_at": "2010-06-25T05:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -330,13 +327,11 @@ sage: E.gens()
 [(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]
 ```
 
-
 ```
 sage: E = EllipticCurve([0, 0, 1, -79, 342])
 sage: E.gens(algorithm='mwrank_console')
 [(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]
 ```
-
 compared with
 
 ```
@@ -350,7 +345,6 @@ Failed to saturate MW basis at primes [ ]
 *** saturation possibly incomplete at primes [ ]
 [(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]
 ```
-
 I will post an additional patch in a minute.
 
 
@@ -436,7 +430,7 @@ I would suggst to remove the modification to padic_lseries.py. In the future we 
 archive/issue_comments_086882.json:
 ```json
 {
-    "body": "Replying to [comment:11 wuthrich]:\n> I would suggst to remove the modification to padic_lseries.py. In the future we should use eclib by default, but currently eclib does not provide negative modular symbols and they are needed in some cases (e.g. twisting by a negative D). \n\nYes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n\nA careful user can currently choose to use eclib, if he knows  that he will not need negative modular symbols.",
+    "body": "Replying to [comment:11 wuthrich]:\n> I would suggst to remove the modification to padic_lseries.py. In the future we should use eclib by default, but currently eclib does not provide negative modular symbols and they are needed in some cases (e.g. twisting by a negative D). \n\n\nYes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n\nA careful user can currently choose to use eclib, if he knows  that he will not need negative modular symbols.",
     "created_at": "2010-07-15T14:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -447,6 +441,7 @@ archive/issue_comments_086882.json:
 
 Replying to [comment:11 wuthrich]:
 > I would suggst to remove the modification to padic_lseries.py. In the future we should use eclib by default, but currently eclib does not provide negative modular symbols and they are needed in some cases (e.g. twisting by a negative D). 
+
 
 Yes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476
 
@@ -459,7 +454,7 @@ A careful user can currently choose to use eclib, if he knows  that he will not 
 archive/issue_comments_086883.json:
 ```json
 {
-    "body": "Replying to [comment:12 cremona]:\n\n> Yes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n>\n\nOhhh, I did not know. I hope I will have time to look at that tomorrow.",
+    "body": "Replying to [comment:12 cremona]:\n\n> Yes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n\n>\n\nOhhh, I did not know. I hope I will have time to look at that tomorrow.",
     "created_at": "2010-07-15T15:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
@@ -471,6 +466,7 @@ archive/issue_comments_086883.json:
 Replying to [comment:12 cremona]:
 
 > Yes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476
+
 >
 
 Ohhh, I did not know. I hope I will have time to look at that tomorrow.

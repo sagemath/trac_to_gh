@@ -3,7 +3,7 @@
 archive/issues_004149.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nKeywords: fraction field, fractionfield\n\nCurrently in Sage:\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\nsage: is_FractionField(QQ)\nFalse\n```\n\nThese bother me.  Since every field is its own fraction field, this patch makes `is_FractionField` return True when the argument is a field.\n\nI've tried to test this for incompatibilities with other parts of Sage -- I searched for `is_FractionField`, and this led to the change to jack.py. (This change is why mhansen is cc'ed on this, since he wrote jack.py.)  I also ran `sage -testall` after committing the change. Have I missed things?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4149\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nKeywords: fraction field, fractionfield\n\nCurrently in Sage:\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\nsage: is_FractionField(QQ)\nFalse\n```\nThese bother me.  Since every field is its own fraction field, this patch makes `is_FractionField` return True when the argument is a field.\n\nI've tried to test this for incompatibilities with other parts of Sage -- I searched for `is_FractionField`, and this led to the change to jack.py. (This change is why mhansen is cc'ed on this, since he wrote jack.py.)  I also ran `sage -testall` after committing the change. Have I missed things?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4149\n\n",
     "created_at": "2008-09-19T01:20:22Z",
     "labels": [
         "component: algebra",
@@ -31,7 +31,6 @@ False
 sage: is_FractionField(QQ)
 False
 ```
-
 These bother me.  Since every field is its own fraction field, this patch makes `is_FractionField` return True when the argument is a field.
 
 I've tried to test this for incompatibilities with other parts of Sage -- I searched for `is_FractionField`, and this led to the change to jack.py. (This change is why mhansen is cc'ed on this, since he wrote jack.py.)  I also ran `sage -testall` after committing the change. Have I missed things?
@@ -103,7 +102,7 @@ More specifically, I'd be happier with a is_fraction_field() method that returns
 archive/issue_comments_030055.json:
 ```json
 {
-    "body": "Your responses are reasonable from a computing point of view, but since Sage is mathematical software, I think it *should* make sense from a mathematical point of view. If you ask someone, \"What's a simple example of a fraction field?\", the answer will be **Q**, so I would argue that most users would expect `is_FractionField(QQ)` to return True. People who need a data-type check can do `is_instance(x, FractionField_generic)`.\n\nThere is a lot about Sage that I don't know. Are there many cases in which you have something like `FractionField` which is supposed to construct an object in a particular class (like `FractionField_generic`), but which in special cases (like ZZ) returns objects which are not instances of that class? I mean, \n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n```\n \nreally bothers me.",
+    "body": "Your responses are reasonable from a computing point of view, but since Sage is mathematical software, I think it *should* make sense from a mathematical point of view. If you ask someone, \"What's a simple example of a fraction field?\", the answer will be **Q**, so I would argue that most users would expect `is_FractionField(QQ)` to return True. People who need a data-type check can do `is_instance(x, FractionField_generic)`.\n\nThere is a lot about Sage that I don't know. Are there many cases in which you have something like `FractionField` which is supposed to construct an object in a particular class (like `FractionField_generic`), but which in special cases (like ZZ) returns objects which are not instances of that class? I mean, \n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n``` \nreally bothers me.",
     "created_at": "2008-09-19T03:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_comment",
@@ -119,8 +118,7 @@ There is a lot about Sage that I don't know. Are there many cases in which you h
 ```
 sage: is_FractionField(FractionField(ZZ))
 False
-```
- 
+``` 
 really bothers me.
 
 
@@ -152,7 +150,7 @@ Additionally, almost every other mathematical property is queried by an .is_* me
 archive/issue_comments_030057.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> I would say that none of the is_Something functions should be imported at the top level.  \n\nBut they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.\n\nFinally, if is_Something functions should strictly be checks on data-types, then this should be mentioned in the developer's guide. Is this documented anywhere?",
+    "body": "Replying to [comment:4 mhansen]:\n> I would say that none of the is_Something functions should be imported at the top level.  \n\n\nBut they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.\n\nFinally, if is_Something functions should strictly be checks on data-types, then this should be mentioned in the developer's guide. Is this documented anywhere?",
     "created_at": "2008-09-19T04:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_comment",
@@ -163,6 +161,7 @@ archive/issue_comments_030057.json:
 
 Replying to [comment:4 mhansen]:
 > I would say that none of the is_Something functions should be imported at the top level.  
+
 
 But they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.
 
@@ -175,7 +174,7 @@ Finally, if is_Something functions should strictly be checks on data-types, then
 archive/issue_comments_030058.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> But they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. \n\nRight, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.\n\n>So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.\n\n> Finally, if is_Something functions should strictly be checks on data-types, then this should be mentioned in the developer's guide. Is this documented anywhere? \n\nI forget if there's a central source.  But, every docstring that I've seen on these functions reflects this.  Even the docstring for is_FractionField states that it \"Tests whether or not x inherits from FractionField_generic.\"",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> But they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. \n\n\nRight, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.\n\n>So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.\n\n\n> Finally, if is_Something functions should strictly be checks on data-types, then this should be mentioned in the developer's guide. Is this documented anywhere? \n\n\nI forget if there's a central source.  But, every docstring that I've seen on these functions reflects this.  Even the docstring for is_FractionField states that it \"Tests whether or not x inherits from FractionField_generic.\"",
     "created_at": "2008-09-19T04:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_comment",
@@ -187,11 +186,14 @@ archive/issue_comments_030058.json:
 Replying to [comment:5 jhpalmieri]:
 > But they are! That affects the argument: if they weren't imported at the top level, I wouldn't have any objections at all, but as it stands, casual users can easily run into the sorts of issues I'm bringing up, and they will be confused. 
 
+
 Right, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.
 
 >So there is a clash here between casual users and (I think) developers.  I would suggest that developers can handle confusion better than casual users. I would also suggest that since is_FractionField (for example) is imported at the top level, it is intended for use by casual users, not just developers, and so its output should make mathematical sense.
 
+
 > Finally, if is_Something functions should strictly be checks on data-types, then this should be mentioned in the developer's guide. Is this documented anywhere? 
+
 
 I forget if there's a central source.  But, every docstring that I've seen on these functions reflects this.  Even the docstring for is_FractionField states that it "Tests whether or not x inherits from FractionField_generic."
 
@@ -202,7 +204,7 @@ I forget if there's a central source.  But, every docstring that I've seen on th
 archive/issue_comments_030059.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n\n> Right, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.\n\nBut as the original report points out, every field is a fraction field, so how would is_fraction_field be different from is_field? Do you want them to be synonymous?",
+    "body": "Replying to [comment:6 mhansen]:\n\n> Right, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.\n\n\nBut as the original report points out, every field is a fraction field, so how would is_fraction_field be different from is_field? Do you want them to be synonymous?",
     "created_at": "2008-09-19T05:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_comment",
@@ -214,6 +216,7 @@ archive/issue_comments_030059.json:
 Replying to [comment:6 mhansen]:
 
 > Right, so I think the fix should be to deprecate and then remove them from the top level, and make an is_fraction_field method on rings in Sage.  I'd be willing to do this work.
+
 
 But as the original report points out, every field is a fraction field, so how would is_fraction_field be different from is_field? Do you want them to be synonymous?
 
@@ -400,7 +403,7 @@ Michael
 archive/issue_comments_030068.json:
 ```json
 {
-    "body": "Replying to [comment:13 cremona]:\n> I agree that this could now be closed in favour of the new one.  (Maybe renaming this one would have been easier, but I'm not sure if that is allowed.)\n\nIt is allowed for admins in trac and I attempted to grant that right to every logged in user in trac, but the permission model seems to not allow this or I did not read the documentation correctly.\n\n> I bet someone is looking forward to seeing how many things fail when all the is_* functions are removed from top-level imports!\n\n:)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:13 cremona]:\n> I agree that this could now be closed in favour of the new one.  (Maybe renaming this one would have been easier, but I'm not sure if that is allowed.)\n\n\nIt is allowed for admins in trac and I attempted to grant that right to every logged in user in trac, but the permission model seems to not allow this or I did not read the documentation correctly.\n\n> I bet someone is looking forward to seeing how many things fail when all the is_* functions are removed from top-level imports!\n\n\n:)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T20:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4149",
     "type": "issue_comment",
@@ -412,9 +415,11 @@ archive/issue_comments_030068.json:
 Replying to [comment:13 cremona]:
 > I agree that this could now be closed in favour of the new one.  (Maybe renaming this one would have been easier, but I'm not sure if that is allowed.)
 
+
 It is allowed for admins in trac and I attempted to grant that right to every logged in user in trac, but the permission model seems to not allow this or I did not read the documentation correctly.
 
 > I bet someone is looking forward to seeing how many things fail when all the is_* functions are removed from top-level imports!
+
 
 :)
 

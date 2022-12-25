@@ -3,7 +3,7 @@
 archive/issues_004624.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
     "created_at": "2008-11-26T14:56:24Z",
     "labels": [
         "component: distribution",
@@ -26,7 +26,6 @@ Sigh:
 sage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat
 ! ipy_profile_sage.py
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4624
 
@@ -116,7 +115,7 @@ This doesn't work because ipython wants it explictly named that way for looking 
 archive/issue_comments_034710.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> This doesn't work because ipython wants it explictly named that way for looking up the profile.\n\nYep, I looked at the file and I came to the same conclusion. I have \"fixed\" the issue by correcting the sage_scripts repo in the 3.2.1.a1 tarball manually for now, but will take care of this once I catch some sleep.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 mhansen]:\n> This doesn't work because ipython wants it explictly named that way for looking up the profile.\n\n\nYep, I looked at the file and I came to the same conclusion. I have \"fixed\" the issue by correcting the sage_scripts repo in the 3.2.1.a1 tarball manually for now, but will take care of this once I catch some sleep.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-26T15:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4624",
     "type": "issue_comment",
@@ -127,6 +126,7 @@ archive/issue_comments_034710.json:
 
 Replying to [comment:2 mhansen]:
 > This doesn't work because ipython wants it explictly named that way for looking up the profile.
+
 
 Yep, I looked at the file and I came to the same conclusion. I have "fixed" the issue by correcting the sage_scripts repo in the 3.2.1.a1 tarball manually for now, but will take care of this once I catch some sleep.
 

@@ -3,7 +3,7 @@
 archive/issues_003284.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nKeywords: PolyBoRi, segfault\n\n**First: Do not apply this patch unless you want to fix it, it SEGFAULTs**\n\nThis patch makes sure only one `BooleanPolynomialRing` per parameter set is created by returning a reference to a prior created object if there is such a reference. However, as a consequence the following happens:\n\n\n```\n$ sage -t -verbose sage/rings/polynomial/pbori.pyx   \n...\nTrying:\n    m = M._coerce_(N(y*z)); m###line 1261:_sage_    >>> m = M._coerce_(N(y*z)); m\nExpecting:\n    y*z\nOperands come from different manager.\n```\n\n\nI don't know where to look for a solution here. So I'm putting the patch up here in the hope that Burcin, Michael, Alexander or someone else doesn't have such a hard time finding the cause of this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3284\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nKeywords: PolyBoRi, segfault\n\n**First: Do not apply this patch unless you want to fix it, it SEGFAULTs**\n\nThis patch makes sure only one `BooleanPolynomialRing` per parameter set is created by returning a reference to a prior created object if there is such a reference. However, as a consequence the following happens:\n\n```\n$ sage -t -verbose sage/rings/polynomial/pbori.pyx   \n...\nTrying:\n    m = M._coerce_(N(y*z)); m###line 1261:_sage_    >>> m = M._coerce_(N(y*z)); m\nExpecting:\n    y*z\nOperands come from different manager.\n```\n\nI don't know where to look for a solution here. So I'm putting the patch up here in the hope that Burcin, Michael, Alexander or someone else doesn't have such a hard time finding the cause of this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3284\n\n",
     "created_at": "2008-05-23T17:15:34Z",
     "labels": [
         "component: commutative algebra",
@@ -26,7 +26,6 @@ Keywords: PolyBoRi, segfault
 
 This patch makes sure only one `BooleanPolynomialRing` per parameter set is created by returning a reference to a prior created object if there is such a reference. However, as a consequence the following happens:
 
-
 ```
 $ sage -t -verbose sage/rings/polynomial/pbori.pyx   
 ...
@@ -36,7 +35,6 @@ Expecting:
     y*z
 Operands come from different manager.
 ```
-
 
 I don't know where to look for a solution here. So I'm putting the patch up here in the hope that Burcin, Michael, Alexander or someone else doesn't have such a hard time finding the cause of this bug.
 

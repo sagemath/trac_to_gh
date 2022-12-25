@@ -3,7 +3,7 @@
 archive/issues_008245.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):\n\n```\nIn the section, \"A Guided Tour\"->\"Basic Algebra and Calculus\"-\n>\"Euler\u2019s Method for Systems of Differential Equations\", I found that\n\nthe answer of the example is z(1)\u22480.75, which seems to be wrong.\n\nThe calculation is\n------------------------------------------------------------------------\nsage: t,x,y = PolynomialRing(RealField(10),3,\"txy\").gens()\nsage: f = y; g = -x - y * t\nsage: eulers_method_2x2(f,g, 0, 1, 0, 1/4, 1)\n      t                x            h*f(t,x,y)                y\nh*g(t,x,y)\n      0                1                  0.00\n0           -0.25\n    1/4              1.0                -0.062\n-0.25           -0.23\n    1/2             0.94                 -0.12\n-0.48           -0.17\n    3/4             0.82                 -0.16\n-0.66          -0.081\n      1             0.65                 -0.18\n-0.74           0.02\n------------------------------------------------------------------------\n\nSo I think the right answer should be z(1)\u22480.65 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8245\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):\n\n```\nIn the section, \"A Guided Tour\"->\"Basic Algebra and Calculus\"-\n>\"Euler\u2019s Method for Systems of Differential Equations\", I found that\n\nthe answer of the example is z(1)\u22480.75, which seems to be wrong.\n\nThe calculation is\n------------------------------------------------------------------------\nsage: t,x,y = PolynomialRing(RealField(10),3,\"txy\").gens()\nsage: f = y; g = -x - y * t\nsage: eulers_method_2x2(f,g, 0, 1, 0, 1/4, 1)\n      t                x            h*f(t,x,y)                y\nh*g(t,x,y)\n      0                1                  0.00\n0           -0.25\n    1/4              1.0                -0.062\n-0.25           -0.23\n    1/2             0.94                 -0.12\n-0.48           -0.17\n    3/4             0.82                 -0.16\n-0.66          -0.081\n      1             0.65                 -0.18\n-0.74           0.02\n------------------------------------------------------------------------\n\nSo I think the right answer should be z(1)\u22480.65 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8245\n\n",
     "created_at": "2010-02-12T03:51:50Z",
     "labels": [
         "component: documentation",
@@ -50,7 +50,6 @@ h*g(t,x,y)
 
 So I think the right answer should be z(1)≈0.65 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8245
 
@@ -175,7 +174,7 @@ Curious as to why we have both `:math:` and the backticks... but anyway, that wo
 archive/issue_comments_072805.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n\nWithin Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.",
+    "body": "Replying to [comment:6 kcrisman]:\n> Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n\n\nWithin Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.",
     "created_at": "2012-01-12T08:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
@@ -187,6 +186,7 @@ archive/issue_comments_072805.json:
 Replying to [comment:6 kcrisman]:
 > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.
 
+
 Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.
 
 
@@ -196,7 +196,7 @@ Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this
 archive/issue_comments_072806.json:
 ```json
 {
-    "body": "> > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n> \n> Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.\nAh, so it's historical in that sense.  Thanks for the clarification.",
+    "body": "> > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n\n> \n> Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.\n\nAh, so it's historical in that sense.  Thanks for the clarification.",
     "created_at": "2012-01-12T14:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
@@ -206,8 +206,10 @@ archive/issue_comments_072806.json:
 ```
 
 > > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.
+
 > 
 > Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.
+
 Ah, so it's historical in that sense.  Thanks for the clarification.
 
 

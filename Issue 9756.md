@@ -89,7 +89,7 @@ LOL, forget my last post. I should get some food and/or sleep... ;-)
 archive/issue_comments_095407.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> If we support that at all, we should also emphasize that this is hardly tested and (at least currently) fails on some (or a lot of?) machines...\n\nWell, I was hoping that this would get straightened out by #9343.  I agree that if this doesn't work, then there is no point documenting it (and also the message printed by the pari spkg-install script should say that it's buggy).",
+    "body": "Replying to [comment:2 leif]:\n> If we support that at all, we should also emphasize that this is hardly tested and (at least currently) fails on some (or a lot of?) machines...\n\n\nWell, I was hoping that this would get straightened out by #9343.  I agree that if this doesn't work, then there is no point documenting it (and also the message printed by the pari spkg-install script should say that it's buggy).",
     "created_at": "2010-08-17T18:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -100,6 +100,7 @@ archive/issue_comments_095407.json:
 
 Replying to [comment:2 leif]:
 > If we support that at all, we should also emphasize that this is hardly tested and (at least currently) fails on some (or a lot of?) machines...
+
 
 Well, I was hoping that this would get straightened out by #9343.  I agree that if this doesn't work, then there is no point documenting it (and also the message printed by the pari spkg-install script should say that it's buggy).
 
@@ -128,7 +129,7 @@ As noted on #9343, the problem with Pari tuning has been reported to the Pari de
 archive/issue_comments_095409.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n\nIt meanwhile does so.\n\nI still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n\n\nIt meanwhile does so.\n\nI still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.",
     "created_at": "2010-09-03T23:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -139,6 +140,7 @@ archive/issue_comments_095409.json:
 
 Replying to [comment:5 jhpalmieri]:
 > [...] (and also the message printed by the pari spkg-install script should say that it's buggy).
+
 
 It meanwhile does so.
 
@@ -151,7 +153,7 @@ I still prefer following the convention that [exported] environment variables sh
 archive/issue_comments_095410.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> Replying to [comment:5 jhpalmieri]:\n> > [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n> \n> It meanwhile does so.\n> \n> I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n\nI think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name. (This was in relation to the number of threads ATLAS uses). \n\nI don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package. But it's hardly a big deal either way. \n\nDave",
+    "body": "Replying to [comment:7 leif]:\n> Replying to [comment:5 jhpalmieri]:\n> > [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n\n> \n> It meanwhile does so.\n> \n> I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n\n\nI think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name. (This was in relation to the number of threads ATLAS uses). \n\nI don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package. But it's hardly a big deal either way. \n\nDave",
     "created_at": "2010-09-03T23:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -163,10 +165,12 @@ archive/issue_comments_095410.json:
 Replying to [comment:7 leif]:
 > Replying to [comment:5 jhpalmieri]:
 > > [...] (and also the message printed by the pari spkg-install script should say that it's buggy).
+
 > 
 > It meanwhile does so.
 > 
 > I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.
+
 
 I think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name. (This was in relation to the number of threads ATLAS uses). 
 
@@ -181,7 +185,7 @@ Dave
 archive/issue_comments_095411.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> Replying to [comment:7 leif]:\n> > I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n> \n> I think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name.\n\nEver heard of `tr`? ;-)\n\n> I don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package.\n\nDoesn't make sense to me (unless we accept *both* lower as well as uppercase, which IMHO isn't a good idea either).\n\n> But it's hardly a big deal either way. \n\nIt isn't, but we shouldn't produce too much confusion, neither to the developers nor to the users.\nKeeping it all uppercase is in my opinion the (conformant and) least annoying choice.\n\nOtherwise we'd also run into problems with \"PARI\" vs. \"pari\", \"NTL\" vs. \"ntl\", \"PolyBoRi\" vs. \"POLYBORI\" vs. \"polybori\" etc. I think.",
+    "body": "Replying to [comment:8 drkirkby]:\n> Replying to [comment:7 leif]:\n> > I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n\n> \n> I think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name.\n\n\nEver heard of `tr`? ;-)\n\n> I don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package.\n\n\nDoesn't make sense to me (unless we accept *both* lower as well as uppercase, which IMHO isn't a good idea either).\n\n> But it's hardly a big deal either way. \n\n\nIt isn't, but we shouldn't produce too much confusion, neither to the developers nor to the users.\nKeeping it all uppercase is in my opinion the (conformant and) least annoying choice.\n\nOtherwise we'd also run into problems with \"PARI\" vs. \"pari\", \"NTL\" vs. \"ntl\", \"PolyBoRi\" vs. \"POLYBORI\" vs. \"polybori\" etc. I think.",
     "created_at": "2010-09-04T00:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -193,16 +197,20 @@ archive/issue_comments_095411.json:
 Replying to [comment:8 drkirkby]:
 > Replying to [comment:7 leif]:
 > > I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.
+
 > 
 > I think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name.
+
 
 Ever heard of `tr`? ;-)
 
 > I don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package.
 
+
 Doesn't make sense to me (unless we accept *both* lower as well as uppercase, which IMHO isn't a good idea either).
 
 > But it's hardly a big deal either way. 
+
 
 It isn't, but we shouldn't produce too much confusion, neither to the developers nor to the users.
 Keeping it all uppercase is in my opinion the (conformant and) least annoying choice.
@@ -216,7 +224,7 @@ Otherwise we'd also run into problems with "PARI" vs. "pari", "NTL" vs. "ntl", "
 archive/issue_comments_095412.json:
 ```json
 {
-    "body": "I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n\nAnd perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n\nATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n\nWe should make sure self-tuning uses CPU time as the measure, not wall time.\n\n----\n\nSimilar extensions to `SAGE_CHECK[_*]` may be desirable.",
+    "body": "I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n\nAnd perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n\nATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n\nWe should make sure self-tuning uses CPU time as the measure, not wall time.\n\n---\n\nSimilar extensions to `SAGE_CHECK[_*]` may be desirable.",
     "created_at": "2010-09-04T02:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -233,7 +241,7 @@ ATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP
 
 We should make sure self-tuning uses CPU time as the measure, not wall time.
 
-----
+---
 
 Similar extensions to `SAGE_CHECK[_*]` may be desirable.
 
@@ -244,7 +252,7 @@ Similar extensions to `SAGE_CHECK[_*]` may be desirable.
 archive/issue_comments_095413.json:
 ```json
 {
-    "body": "Replying to [comment:10 leif]:\n> I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n> \n> And perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n> \n> ATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n> \n> We should make sure self-tuning uses CPU time as the measure, not wall time.\n> \n> ----\n> \n> Similar extensions to `SAGE_CHECK[_*]` may be desirable.\n\nThere have been a number of complaints about the growing number of environment variables. They are not popular!\n\nThat said, I personally think these sort of things are desirable. For example, when I asked people to run the Python tests, there's not been a single person who reported they could get all the Python tests to pass. So running SAGE_CHECK will always fail. \n\nI personally think having those that are for specific packages end in lower case does make them more obvious. All packages are listed in lower case in Sage, so ATLAS is atlas, PolyBoRi is polybori etc. \n\nDave",
+    "body": "Replying to [comment:10 leif]:\n> I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n> \n> And perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n> \n> ATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n> \n> We should make sure self-tuning uses CPU time as the measure, not wall time.\n> \n> \n> ---\n> \n> Similar extensions to `SAGE_CHECK[_*]` may be desirable.\n\n\nThere have been a number of complaints about the growing number of environment variables. They are not popular!\n\nThat said, I personally think these sort of things are desirable. For example, when I asked people to run the Python tests, there's not been a single person who reported they could get all the Python tests to pass. So running SAGE_CHECK will always fail. \n\nI personally think having those that are for specific packages end in lower case does make them more obvious. All packages are listed in lower case in Sage, so ATLAS is atlas, PolyBoRi is polybori etc. \n\nDave",
     "created_at": "2010-09-04T06:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
@@ -262,9 +270,11 @@ Replying to [comment:10 leif]:
 > 
 > We should make sure self-tuning uses CPU time as the measure, not wall time.
 > 
-> ----
+> 
+> ---
 > 
 > Similar extensions to `SAGE_CHECK[_*]` may be desirable.
+
 
 There have been a number of complaints about the growing number of environment variables. They are not popular!
 

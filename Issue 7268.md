@@ -287,7 +287,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_060291.json:
 ```json
 {
-    "body": "> Why do you replace == and != by is and is not ?\n\nFalse and None are unique objects thus it is sufficient to compare by checking identities. Feel free to change it back, though.\n\n>     * is enumerating range(500) faster than 0<= i< 500 or is there another reason ?\n\nCython will write 0<= i < 500 automatically, so you can just write proper Python code and Cython will optimise it for you.\n\n>  Why did you remove the leading 'r' before the docstrings ? I was under the impression they were requried for the docstring to display correctly...\n\nOnly if they contain a backslash.",
+    "body": "> Why do you replace == and != by is and is not ?\n\n\nFalse and None are unique objects thus it is sufficient to compare by checking identities. Feel free to change it back, though.\n\n>     * is enumerating range(500) faster than 0<= i< 500 or is there another reason ?\n\n\nCython will write 0<= i < 500 automatically, so you can just write proper Python code and Cython will optimise it for you.\n\n>  Why did you remove the leading 'r' before the docstrings ? I was under the impression they were requried for the docstring to display correctly...\n\n\nOnly if they contain a backslash.",
     "created_at": "2009-12-01T18:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7268",
     "type": "issue_comment",
@@ -298,13 +298,16 @@ archive/issue_comments_060291.json:
 
 > Why do you replace == and != by is and is not ?
 
+
 False and None are unique objects thus it is sufficient to compare by checking identities. Feel free to change it back, though.
 
 >     * is enumerating range(500) faster than 0<= i< 500 or is there another reason ?
 
+
 Cython will write 0<= i < 500 automatically, so you can just write proper Python code and Cython will optimise it for you.
 
 >  Why did you remove the leading 'r' before the docstrings ? I was under the impression they were requried for the docstring to display correctly...
+
 
 Only if they contain a backslash.
 

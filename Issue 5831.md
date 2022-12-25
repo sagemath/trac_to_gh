@@ -135,7 +135,7 @@ I did this. I put the new doctest in type_reducible.py.
 archive/issue_comments_045749.json:
 ```json
 {
-    "body": "> Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).\n\nOops, sorry for the confusion. I was wondering wether it was necessary to implement the simple *coroots*.\nFor the roots, definitely yes.\n\n> Nicolas requested a doctest. See:\n> http://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pli=1\n> I did this. I put the new doctest in type_reducible.py.\n\nThanks!",
+    "body": "> Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).\n\n\nOops, sorry for the confusion. I was wondering wether it was necessary to implement the simple *coroots*.\nFor the roots, definitely yes.\n\n> Nicolas requested a doctest. See:\n> http://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pli=1\n> I did this. I put the new doctest in type_reducible.py.\n\n\nThanks!",
     "created_at": "2009-04-21T05:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
@@ -146,12 +146,14 @@ archive/issue_comments_045749.json:
 
 > Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).
 
+
 Oops, sorry for the confusion. I was wondering wether it was necessary to implement the simple *coroots*.
 For the roots, definitely yes.
 
 > Nicolas requested a doctest. See:
 > http://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pli=1
 > I did this. I put the new doctest in type_reducible.py.
+
 
 Thanks!
 

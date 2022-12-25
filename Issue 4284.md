@@ -3,7 +3,7 @@
 archive/issues_004284.json:
 ```json
 {
-    "body": "Assignee: citro\n\nBug in sage-3.1.2:\n\n\n```\nsage: M = ModularSymbols(11).cuspidal_subspace(); M.hecke_operator(3)(M.0)\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/modular/hecke/hecke_operator.py in __call__(self, x)\n    127         \"\"\"\n    128         T = self.hecke_module_morphism()\n--> 129         return T(x)\n    130\n    131     def __rmul__(self, left):\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/modules/matrix_morphism.py in __call__(self, x)\n    115             x = x.element()\n    116         else:\n--> 117             x = self.domain().coordinate_vector(x)\n    118         v = x*self.matrix()\n    119         C = self.codomain()\n\nAttributeError: 'ModularSymbolsSubspace' object has no attribute 'coordinate_vector'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4284\n\n",
+    "body": "Assignee: citro\n\nBug in sage-3.1.2:\n\n```\nsage: M = ModularSymbols(11).cuspidal_subspace(); M.hecke_operator(3)(M.0)\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/modular/hecke/hecke_operator.py in __call__(self, x)\n    127         \"\"\"\n    128         T = self.hecke_module_morphism()\n--> 129         return T(x)\n    130\n    131     def __rmul__(self, left):\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/modules/matrix_morphism.py in __call__(self, x)\n    115             x = x.element()\n    116         else:\n--> 117             x = self.domain().coordinate_vector(x)\n    118         v = x*self.matrix()\n    119         C = self.codomain()\n\nAttributeError: 'ModularSymbolsSubspace' object has no attribute 'coordinate_vector'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4284\n\n",
     "created_at": "2008-10-14T14:38:35Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_004284.json:
 Assignee: citro
 
 Bug in sage-3.1.2:
-
 
 ```
 sage: M = ModularSymbols(11).cuspidal_subspace(); M.hecke_operator(3)(M.0)
@@ -45,7 +44,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'ModularSymbolsSubspace' object has no attribute 'coordinate_vector'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4284
 

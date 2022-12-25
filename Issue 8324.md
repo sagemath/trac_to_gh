@@ -127,7 +127,7 @@ I guess outside (non-Sage) projects delete some doctests?
 archive/issue_comments_073755.json:
 ```json
 {
-    "body": "I suppose this \"depends\" on #8244: it adds a bit to sagenb.misc.sageinspect.py from the patch there.  Overall, it looks fine: just the obvious changes.  Is there a good way to run doctests on all of sagenb?  The new sageinspect passes doctests with Sage installed, and I think it should without the rest of the Sage library, but I haven't checked it.\n\n> I guess outside (non-Sage) projects delete some doctests?\n\nI'm not sure what this refers to.",
+    "body": "I suppose this \"depends\" on #8244: it adds a bit to sagenb.misc.sageinspect.py from the patch there.  Overall, it looks fine: just the obvious changes.  Is there a good way to run doctests on all of sagenb?  The new sageinspect passes doctests with Sage installed, and I think it should without the rest of the Sage library, but I haven't checked it.\n\n> I guess outside (non-Sage) projects delete some doctests?\n\n\nI'm not sure what this refers to.",
     "created_at": "2010-02-24T22:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
@@ -139,6 +139,7 @@ archive/issue_comments_073755.json:
 I suppose this "depends" on #8244: it adds a bit to sagenb.misc.sageinspect.py from the patch there.  Overall, it looks fine: just the obvious changes.  Is there a good way to run doctests on all of sagenb?  The new sageinspect passes doctests with Sage installed, and I think it should without the rest of the Sage library, but I haven't checked it.
 
 > I guess outside (non-Sage) projects delete some doctests?
+
 
 I'm not sure what this refers to.
 

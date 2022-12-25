@@ -152,7 +152,7 @@ Simon: if you are happy with the changes in my reviewer patch, then feel free to
 archive/issue_comments_084664.json:
 ```json
 {
-    "body": "Replying to [comment:2 davidloeffler]:\n> ...\n> \n> Simon: if you are happy with the changes in my reviewer patch, then feel free to put the status to \"positive review\".\n\nI am happy with it! So, I changed that status to \"positive review\", and inserted your name as reviewer.\n\nBest regards,\nSimon",
+    "body": "Replying to [comment:2 davidloeffler]:\n> ...\n> \n> Simon: if you are happy with the changes in my reviewer patch, then feel free to put the status to \"positive review\".\n\n\nI am happy with it! So, I changed that status to \"positive review\", and inserted your name as reviewer.\n\nBest regards,\nSimon",
     "created_at": "2010-06-14T13:03:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
@@ -165,6 +165,7 @@ Replying to [comment:2 davidloeffler]:
 > ...
 > 
 > Simon: if you are happy with the changes in my reviewer patch, then feel free to put the status to "positive review".
+
 
 I am happy with it! So, I changed that status to "positive review", and inserted your name as reviewer.
 

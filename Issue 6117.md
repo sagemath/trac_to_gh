@@ -3,7 +3,7 @@
 archive/issues_006117.json:
 ```json
 {
-    "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\nBug pointed out by Fidel Barrera-Cruz.  Entering\n\n\n```\ng = graphs.PetersenGraph()\ng.show(talk=True)\n```\n\n\nresults in \n\n```\nTypeError: show() got an unexpected keyword argument 'talk'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6117\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\nBug pointed out by Fidel Barrera-Cruz.  Entering\n\n```\ng = graphs.PetersenGraph()\ng.show(talk=True)\n```\n\nresults in \n\n```\nTypeError: show() got an unexpected keyword argument 'talk'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6117\n\n",
     "created_at": "2009-05-21T22:13:58Z",
     "labels": [
         "component: graph theory",
@@ -22,19 +22,16 @@ CC:  @rlmill
 
 Bug pointed out by Fidel Barrera-Cruz.  Entering
 
-
 ```
 g = graphs.PetersenGraph()
 g.show(talk=True)
 ```
-
 
 results in 
 
 ```
 TypeError: show() got an unexpected keyword argument 'talk'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6117
 

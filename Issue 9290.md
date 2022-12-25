@@ -197,7 +197,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087360.json:
 ```json
 {
-    "body": "Yep, something is up with the patchbot, so I gave it a kick.\n\n```\nsage -t ../combinat/root_system/cartan_matrix.py\n    [97 tests, 15.77 s]\nsage -t matrix_gps/coxeter_group.py\n    [72 tests, 0.36 s]\nsage -t ../combinat/root_system/coxeter_group.py\n    [28 tests, 18.65 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 18.8 seconds\n    cpu time: 26.2 seconds\n    cumulative wall time: 34.8 seconds\n```\n",
+    "body": "Yep, something is up with the patchbot, so I gave it a kick.\n\n```\nsage -t ../combinat/root_system/cartan_matrix.py\n    [97 tests, 15.77 s]\nsage -t matrix_gps/coxeter_group.py\n    [72 tests, 0.36 s]\nsage -t ../combinat/root_system/coxeter_group.py\n    [28 tests, 18.65 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 18.8 seconds\n    cpu time: 26.2 seconds\n    cumulative wall time: 34.8 seconds\n```",
     "created_at": "2013-09-16T14:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -225,13 +225,12 @@ Total time for all tests: 18.8 seconds
 
 
 
-
 ---
 
 archive/issue_comments_087361.json:
 ```json
 {
-    "body": "one doctest failing\n\n\n```\nFile \"/home/chapoton/sage-5.12.beta5/devel/sage/sage/groups/matrix_gps/coxeter_group.py\", line 278, in sage.groups.matrix_gps.coxeter_group.CoxeterMatrixGroup.__init__\nFailed example:\n    TestSuite(W).run(max_runs=30) # long time\nExpected nothing\nGot:\n    Failure in _test_matrix_generators:\n    Traceback (most recent call last):\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 282, in run\n        test_method(tester = tester)\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/groups/matrix_gps/finitely_generated.py\", line 376, in _test_matrix_generators\n        tester.assertEqual(g.matrix(), h.matrix())\n      File \"cachefunc.pyx\", line 1774, in sage.misc.cachefunc.CachedMethodCallerNoArgs.__call__ (sage/misc/cachefunc.c:9546)\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/groups/matrix_gps/group_element.py\", line 447, in matrix\n        m = g.matrix(self.base_ring())\n      File \"element.pyx\", line 1076, in sage.libs.gap.element.GapElement.matrix (sage/libs/gap/element.c:8618)\n      File \"element.pyx\", line 1473, in sage.libs.gap.element.GapElement_Cyclotomic.sage (sage/libs/gap/element.c:10511)\n      File \"parent.pyx\", line 761, in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:6823)\n      File \"misc.pyx\", line 251, in sage.structure.misc.getattr_from_other_class (sage/structure/misc.c:1606)\n    AttributeError: 'UniversalCyclotomicField_with_category' object has no attribute '_n'\n    ------------------------------------------------------------\n    The following tests failed: _test_matrix_generators\n```\n",
+    "body": "one doctest failing\n\n```\nFile \"/home/chapoton/sage-5.12.beta5/devel/sage/sage/groups/matrix_gps/coxeter_group.py\", line 278, in sage.groups.matrix_gps.coxeter_group.CoxeterMatrixGroup.__init__\nFailed example:\n    TestSuite(W).run(max_runs=30) # long time\nExpected nothing\nGot:\n    Failure in _test_matrix_generators:\n    Traceback (most recent call last):\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 282, in run\n        test_method(tester = tester)\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/groups/matrix_gps/finitely_generated.py\", line 376, in _test_matrix_generators\n        tester.assertEqual(g.matrix(), h.matrix())\n      File \"cachefunc.pyx\", line 1774, in sage.misc.cachefunc.CachedMethodCallerNoArgs.__call__ (sage/misc/cachefunc.c:9546)\n      File \"/home/chapoton/sage-5.12.beta5/local/lib/python2.7/site-packages/sage/groups/matrix_gps/group_element.py\", line 447, in matrix\n        m = g.matrix(self.base_ring())\n      File \"element.pyx\", line 1076, in sage.libs.gap.element.GapElement.matrix (sage/libs/gap/element.c:8618)\n      File \"element.pyx\", line 1473, in sage.libs.gap.element.GapElement_Cyclotomic.sage (sage/libs/gap/element.c:10511)\n      File \"parent.pyx\", line 761, in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:6823)\n      File \"misc.pyx\", line 251, in sage.structure.misc.getattr_from_other_class (sage/structure/misc.c:1606)\n    AttributeError: 'UniversalCyclotomicField_with_category' object has no attribute '_n'\n    ------------------------------------------------------------\n    The following tests failed: _test_matrix_generators\n```",
     "created_at": "2013-09-17T18:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -241,7 +240,6 @@ archive/issue_comments_087361.json:
 ```
 
 one doctest failing
-
 
 ```
 File "/home/chapoton/sage-5.12.beta5/devel/sage/sage/groups/matrix_gps/coxeter_group.py", line 278, in sage.groups.matrix_gps.coxeter_group.CoxeterMatrixGroup.__init__
@@ -269,13 +267,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_087362.json:
 ```json
 {
-    "body": "The problem was the conversion from gap's cyclotomics to sage by using the UCF. This is fixed in #15204.\n\n```\nsage: W = CoxeterGroup([[1,3,2],[3,1,6],[2,6,1]])\nsage: W._test_matrix_generators()\n```\n",
+    "body": "The problem was the conversion from gap's cyclotomics to sage by using the UCF. This is fixed in #15204.\n\n```\nsage: W = CoxeterGroup([[1,3,2],[3,1,6],[2,6,1]])\nsage: W._test_matrix_generators()\n```",
     "created_at": "2013-09-17T19:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -290,7 +287,6 @@ The problem was the conversion from gap's cyclotomics to sage by using the UCF. 
 sage: W = CoxeterGroup([[1,3,2],[3,1,6],[2,6,1]])
 sage: W._test_matrix_generators()
 ```
-
 
 
 
@@ -323,7 +319,7 @@ What are the changes "sage/groups/matrix_gps/finitely_generated.py" for ?
 archive/issue_comments_087364.json:
 ```json
 {
-    "body": "Hey Frederic,\n\nReplying to [comment:11 chapoton]:\n> \"assert implementation\" : I think this use of assert to check input is not encouraged\n\nThis was a hold-over from the previous implementation, but this is definitely a good time to get rid of it. Fixed.\n\n> \"lazy_import('sage.groups.raag', 'RightAngledArtinGroup')\" : has this something to do in this ticket ?\n\nBecause I didn't split it cleanly with #15137. Fixed.\n\n> What are the changes \"sage/groups/matrix_gps/finitely_generated.py\" for ?\n\nI need to pass the `CoxeterGroups` category up during the initialization, so I had to make those changes.\n\nThanks for catching that,\n\nTravis",
+    "body": "Hey Frederic,\n\nReplying to [comment:11 chapoton]:\n> \"assert implementation\" : I think this use of assert to check input is not encouraged\n\n\nThis was a hold-over from the previous implementation, but this is definitely a good time to get rid of it. Fixed.\n\n> \"lazy_import('sage.groups.raag', 'RightAngledArtinGroup')\" : has this something to do in this ticket ?\n\n\nBecause I didn't split it cleanly with #15137. Fixed.\n\n> What are the changes \"sage/groups/matrix_gps/finitely_generated.py\" for ?\n\n\nI need to pass the `CoxeterGroups` category up during the initialization, so I had to make those changes.\n\nThanks for catching that,\n\nTravis",
     "created_at": "2013-09-21T17:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -337,13 +333,16 @@ Hey Frederic,
 Replying to [comment:11 chapoton]:
 > "assert implementation" : I think this use of assert to check input is not encouraged
 
+
 This was a hold-over from the previous implementation, but this is definitely a good time to get rid of it. Fixed.
 
 > "lazy_import('sage.groups.raag', 'RightAngledArtinGroup')" : has this something to do in this ticket ?
 
+
 Because I didn't split it cleanly with #15137. Fixed.
 
 > What are the changes "sage/groups/matrix_gps/finitely_generated.py" for ?
+
 
 I need to pass the `CoxeterGroups` category up during the initialization, so I had to make those changes.
 
@@ -450,7 +449,7 @@ Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_087370.json:
 ```json
 {
-    "body": "Hello Travis,\n\nI have made a cosmetic review patch, that you can fold into yours if you want.\n\nThis almost looks good to go, but I was a bit disappointed when I tried:\n\n```\nsage: K = NumberField(x**2+5,'t')\nsage: CoxeterGroup(['H',3],base_ring=K)\n```\n\nand it failed. If there is a way to make that work, it would be great !",
+    "body": "Hello Travis,\n\nI have made a cosmetic review patch, that you can fold into yours if you want.\n\nThis almost looks good to go, but I was a bit disappointed when I tried:\n\n```\nsage: K = NumberField(x**2+5,'t')\nsage: CoxeterGroup(['H',3],base_ring=K)\n```\nand it failed. If there is a way to make that work, it would be great !",
     "created_at": "2013-10-20T20:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
@@ -469,7 +468,6 @@ This almost looks good to go, but I was a bit disappointed when I tried:
 sage: K = NumberField(x**2+5,'t')
 sage: CoxeterGroup(['H',3],base_ring=K)
 ```
-
 and it failed. If there is a way to make that work, it would be great !
 
 

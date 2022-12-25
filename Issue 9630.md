@@ -3,7 +3,7 @@
 archive/issues_009630.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\n\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\n\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
     "created_at": "2010-07-29T01:36:07Z",
     "labels": [
         "component: symbolics",
@@ -26,21 +26,18 @@ I don't know how this might be done, but
 for n in range(1,10): 
     sum(k, k, 1, n) 
 ```
-
 doesn't work, while 
 
 ```
 for n in [1..10]:
     sum(k,k,1,n)
 ```
-
 does.  We need to fix
 
 ```
 int(3)._maxima_()
 AttributeError: 'int' object has no attribute '_maxima_'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9630
 
@@ -53,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9630
 archive/issue_comments_093159.json:
 ```json
 {
-    "body": "the particular error that arises here is raised in sage/calculus/calculus.pyc line 501:\n\n```\nsum  = \"'sum(%s, %s, %s, %s)\" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])\n```\n\nOne could fix this one by first coercing a,b into SR. As an example:\n\n```\nsage: SR(int(1))._maxima_()\n1\n```\n\nThis code looks rather convoluted to me anyway: Convert to maxima, take string representative, paste together and then simplify? Shouldn't the whole sum first be turned into a pynac sum expression, the whole thing converted to maxima, simplified, and then cast back?\n\n```\nsage: var(\"x,a,b\")                       # this is just because I don't know\nsage: SUM=sum(sin(x^2),x,a,b).operator() # where this is defined\nsage: SR(SUM(x,x,1,int(10))._maxima_().simplify_sum())\n55\n```\n",
+    "body": "the particular error that arises here is raised in sage/calculus/calculus.pyc line 501:\n\n```\nsum  = \"'sum(%s, %s, %s, %s)\" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])\n```\nOne could fix this one by first coercing a,b into SR. As an example:\n\n```\nsage: SR(int(1))._maxima_()\n1\n```\nThis code looks rather convoluted to me anyway: Convert to maxima, take string representative, paste together and then simplify? Shouldn't the whole sum first be turned into a pynac sum expression, the whole thing converted to maxima, simplified, and then cast back?\n\n```\nsage: var(\"x,a,b\")                       # this is just because I don't know\nsage: SUM=sum(sin(x^2),x,a,b).operator() # where this is defined\nsage: SR(SUM(x,x,1,int(10))._maxima_().simplify_sum())\n55\n```",
     "created_at": "2010-07-29T06:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
@@ -67,14 +64,12 @@ the particular error that arises here is raised in sage/calculus/calculus.pyc li
 ```
 sum  = "'sum(%s, %s, %s, %s)" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])
 ```
-
 One could fix this one by first coercing a,b into SR. As an example:
 
 ```
 sage: SR(int(1))._maxima_()
 1
 ```
-
 This code looks rather convoluted to me anyway: Convert to maxima, take string representative, paste together and then simplify? Shouldn't the whole sum first be turned into a pynac sum expression, the whole thing converted to maxima, simplified, and then cast back?
 
 ```
@@ -83,7 +78,6 @@ sage: SUM=sum(sin(x^2),x,a,b).operator() # where this is defined
 sage: SR(SUM(x,x,1,int(10))._maxima_().simplify_sum())
 55
 ```
-
 
 
 

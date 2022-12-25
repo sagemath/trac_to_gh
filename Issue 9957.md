@@ -113,7 +113,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_099148.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhampton]:\n> First attempt is at:\n> [http://sage.math.washington.edu/home/palmieri/SPKG/python-2.7.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/python-2.7.p0.spkg)\n> \n> John (jhpalmieri) reports that this builds but Sage does not on sage.math, and \"packages for\n> twisted, zodb, pygments, and numpy don't build correctly.\"\n> \n> Apparently the fix for [http://bugs.python.org/issue7491](http://bugs.python.org/issue7491) causes some of these problems.\n\nThis fix has been included in python-2.6.5 onwards. We are using 2.6.5 which includes this fix and everything builds (haven't tried 2.7 yet). The only problem we have is with [http://github.com/cschwan/sage-on-gentoo/issues#issue/1](http://github.com/cschwan/sage-on-gentoo/issues#issue/1) so I think it is unfair to single out this issue as the source of problems.",
+    "body": "Replying to [comment:1 mhampton]:\n> First attempt is at:\n> [http://sage.math.washington.edu/home/palmieri/SPKG/python-2.7.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/python-2.7.p0.spkg)\n> \n> John (jhpalmieri) reports that this builds but Sage does not on sage.math, and \"packages for\n> twisted, zodb, pygments, and numpy don't build correctly.\"\n> \n> Apparently the fix for [http://bugs.python.org/issue7491](http://bugs.python.org/issue7491) causes some of these problems.\n\n\nThis fix has been included in python-2.6.5 onwards. We are using 2.6.5 which includes this fix and everything builds (haven't tried 2.7 yet). The only problem we have is with [http://github.com/cschwan/sage-on-gentoo/issues#issue/1](http://github.com/cschwan/sage-on-gentoo/issues#issue/1) so I think it is unfair to single out this issue as the source of problems.",
     "created_at": "2010-10-04T00:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -130,6 +130,7 @@ Replying to [comment:1 mhampton]:
 > twisted, zodb, pygments, and numpy don't build correctly."
 > 
 > Apparently the fix for [http://bugs.python.org/issue7491](http://bugs.python.org/issue7491) causes some of these problems.
+
 
 This fix has been included in python-2.6.5 onwards. We are using 2.6.5 which includes this fix and everything builds (haven't tried 2.7 yet). The only problem we have is with [http://github.com/cschwan/sage-on-gentoo/issues#issue/1](http://github.com/cschwan/sage-on-gentoo/issues#issue/1) so I think it is unfair to single out this issue as the source of problems.
 
@@ -217,7 +218,7 @@ Changing status from new to needs_work.
 archive/issue_comments_099153.json:
 ```json
 {
-    "body": "Build sage-4.6.2 (and dependency) against python-2.7.1 on OS X. I get a lot of the following\n\n```\nExpected nothing\nGot:\n    Failure in _test_pickling:\n    Traceback (most recent call last):\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 275, in run\n        test_method(tester = tester)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 498, in _test_pickling\n        tester.assertEqual(loads(dumps(self._instance)), self._instance)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/unittest/case.py\", line 493, in assertEqual\n        assertion_func = self._getAssertEqualityFunc(first, second)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/unittest/case.py\", line 476, in _getAssertEqualityFunc\n        asserter = self._type_equality_funcs.get(type(first))\n    AttributeError: 'InstanceTester' object has no attribute '_type_equality_funcs'\n    ------------------------------------------------------------\n```\n\nI patched python with the cpickle patch. Any ideas?",
+    "body": "Build sage-4.6.2 (and dependency) against python-2.7.1 on OS X. I get a lot of the following\n\n```\nExpected nothing\nGot:\n    Failure in _test_pickling:\n    Traceback (most recent call last):\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 275, in run\n        test_method(tester = tester)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 498, in _test_pickling\n        tester.assertEqual(loads(dumps(self._instance)), self._instance)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/unittest/case.py\", line 493, in assertEqual\n        assertion_func = self._getAssertEqualityFunc(first, second)\n      File \"/Users/frb15/Desktop/Gentoo/usr/lib/python2.7/unittest/case.py\", line 476, in _getAssertEqualityFunc\n        asserter = self._type_equality_funcs.get(type(first))\n    AttributeError: 'InstanceTester' object has no attribute '_type_equality_funcs'\n    ------------------------------------------------------------\n```\nI patched python with the cpickle patch. Any ideas?",
     "created_at": "2011-03-11T03:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -244,7 +245,6 @@ Got:
     AttributeError: 'InstanceTester' object has no attribute '_type_equality_funcs'
     ------------------------------------------------------------
 ```
-
 I patched python with the cpickle patch. Any ideas?
 
 
@@ -346,7 +346,7 @@ There are 3 tests killed reason currently unknown. And a few that may need speci
 archive/issue_comments_099159.json:
 ```json
 {
-    "body": "A little bit more details, these are curious:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2297:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n```\n\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1345:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1345:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\nThis one doesn't worry me as much but should be looked at\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 24:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 5645\n**********************************************************************\n```\n\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/structure/parent.pyx\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/structure/parent.pyx\", line 634:\n    sage: CCls()._test_eq()\nExpected:\n    Traceback (most recent call last):\n    ...\n    AssertionError: <class '__main__.CCls'> == None\nGot nothing\n```\n\n\nThe following were killed:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/homset.py # Killed/crashed\nsage -t -long  -force_lib devel/sage-main/sage/schemes/generic/scheme.py # Killed/crashed\n```\n\nIn my original run \n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/morphism.pyx\"\n```\n\nalso got killed but not in a subsequent run after I adopted a small change in sage-doctest to get rid of PYTHONWARNINGS=default in sage-env.\n\nExample of killed test:\n\n```\nsage -t -long -verbose -force_lib \"devel/sage-main/sage/rings/homset.py\"\n...\n\nTrying:\n    phi = S.hom([b,a])###line 141:_sage_    >>> phi = S.hom([b,a])\nExpecting nothing\nok\nTrying:\n    phi == loads(dumps(phi))###line 142:_sage_    >>> phi == loads(dumps(phi))\nExpecting:\n    True\n/usr/lib64/libcsage.so(print_backtrace+0x24)[0x7f83de940534]\n/usr/lib64/libcsage.so(sigdie+0x1d)[0x7f83de9405cd]\n/usr/lib64/libcsage.so(sage_signal_handler+0x131)[0x7f83de940741]\n/lib64/libpthread.so.0(+0xfae0)[0x7f83e2385ae0]\n/usr/lib64/libsingular.so.3(_Z9id_DeletePP10sip_sidealP9sip_sring+0x53)[0x7f83c5c48383]\n/usr/lib64/python2.7/site-packages/sage/libs/singular/groebner_strategy.so(+0x388d)[0x7f83ad27488d]\n/usr/lib64/libpython2.7.so.1.0(PyDict_Clear+0xfc)[0x7f83e261597c]\n/usr/lib64/libpython2.7.so.1.0(+0x82a09)[0x7f83e2615a09]\n/usr/lib64/libpython2.7.so.1.0(+0x112e7e)[0x7f83e26a5e7e]\n/usr/lib64/libpython2.7.so.1.0(_PyObject_GC_Malloc+0x11c)[0x7f83e26a684c]\n/usr/lib64/libpython2.7.so.1.0(_PyObject_GC_New+0xd)[0x7f83e26a685d]\n/usr/lib64/libpython2.7.so.1.0(+0x7fe11)[0x7f83e2612e11]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/rings/polynomial/polydict.so(+0x168c3)[0x7f83c8f378c3]\n/usr/lib64/libpython2.7.so.1.0(+0xa0468)[0x7f83e2633468]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/rings/polynomial/polydict.so(+0xa451)[0x7f83c8f2b451]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x47)[0x7f83e2670ca7]\n/usr/lib64/python2.7/lib-dynload/cPickle.so(+0x5f06)[0x7f83dcb2df06]\n/usr/lib64/python2.7/lib-dynload/cPickle.so(+0xaf47)[0x7f83dcb32f47]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/structure/sage_object.so(+0x152fc)[0x7f83dc7012fc]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x56bc)[0x7f83e267692c]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x7f83e26782f2]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5a78)[0x7f83e2676ce8]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x71282)[0x7f83e2604282]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x71282)[0x7f83e2604282]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x7138b)[0x7f83e260438b]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x7f83e26782f2]\n/usr/lib64/libpython2.7.so.1.0(+0xff25c)[0x7f83e269225c]\n/usr/lib64/libpython2.7.so.1.0(PyRun_FileExFlags+0x90)[0x7f83e2693090]\n/usr/lib64/libpython2.7.so.1.0(PyRun_SimpleFileExFlags+0x1ff)[0x7f83e2693c6f]\n/usr/lib64/libpython2.7.so.1.0(Py_Main+0xb53)[0x7f83e26a4fc3]\n/lib64/libc.so.6(__libc_start_main+0xfd)[0x7f83e201cb6d]\n/usr/bin/python2.7[0x4008a9]\n\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nThe doctested process was killed by signal 11\n         [2.5 s]\n```\n",
+    "body": "A little bit more details, these are curious:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2297:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n```\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1345:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1345:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\nThis one doesn't worry me as much but should be looked at\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 24:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 5645\n**********************************************************************\n```\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/structure/parent.pyx\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/structure/parent.pyx\", line 634:\n    sage: CCls()._test_eq()\nExpected:\n    Traceback (most recent call last):\n    ...\n    AssertionError: <class '__main__.CCls'> == None\nGot nothing\n```\n\nThe following were killed:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/homset.py # Killed/crashed\nsage -t -long  -force_lib devel/sage-main/sage/schemes/generic/scheme.py # Killed/crashed\n```\nIn my original run \n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/morphism.pyx\"\n```\nalso got killed but not in a subsequent run after I adopted a small change in sage-doctest to get rid of PYTHONWARNINGS=default in sage-env.\n\nExample of killed test:\n\n```\nsage -t -long -verbose -force_lib \"devel/sage-main/sage/rings/homset.py\"\n...\n\nTrying:\n    phi = S.hom([b,a])###line 141:_sage_    >>> phi = S.hom([b,a])\nExpecting nothing\nok\nTrying:\n    phi == loads(dumps(phi))###line 142:_sage_    >>> phi == loads(dumps(phi))\nExpecting:\n    True\n/usr/lib64/libcsage.so(print_backtrace+0x24)[0x7f83de940534]\n/usr/lib64/libcsage.so(sigdie+0x1d)[0x7f83de9405cd]\n/usr/lib64/libcsage.so(sage_signal_handler+0x131)[0x7f83de940741]\n/lib64/libpthread.so.0(+0xfae0)[0x7f83e2385ae0]\n/usr/lib64/libsingular.so.3(_Z9id_DeletePP10sip_sidealP9sip_sring+0x53)[0x7f83c5c48383]\n/usr/lib64/python2.7/site-packages/sage/libs/singular/groebner_strategy.so(+0x388d)[0x7f83ad27488d]\n/usr/lib64/libpython2.7.so.1.0(PyDict_Clear+0xfc)[0x7f83e261597c]\n/usr/lib64/libpython2.7.so.1.0(+0x82a09)[0x7f83e2615a09]\n/usr/lib64/libpython2.7.so.1.0(+0x112e7e)[0x7f83e26a5e7e]\n/usr/lib64/libpython2.7.so.1.0(_PyObject_GC_Malloc+0x11c)[0x7f83e26a684c]\n/usr/lib64/libpython2.7.so.1.0(_PyObject_GC_New+0xd)[0x7f83e26a685d]\n/usr/lib64/libpython2.7.so.1.0(+0x7fe11)[0x7f83e2612e11]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/rings/polynomial/polydict.so(+0x168c3)[0x7f83c8f378c3]\n/usr/lib64/libpython2.7.so.1.0(+0xa0468)[0x7f83e2633468]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/rings/polynomial/polydict.so(+0xa451)[0x7f83c8f2b451]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x47)[0x7f83e2670ca7]\n/usr/lib64/python2.7/lib-dynload/cPickle.so(+0x5f06)[0x7f83dcb2df06]\n/usr/lib64/python2.7/lib-dynload/cPickle.so(+0xaf47)[0x7f83dcb32f47]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/python2.7/site-packages/sage/structure/sage_object.so(+0x152fc)[0x7f83dc7012fc]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x56bc)[0x7f83e267692c]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x7f83e26782f2]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5a78)[0x7f83e2676ce8]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x71282)[0x7f83e2604282]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x71282)[0x7f83e2604282]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(+0x7138b)[0x7f83e260438b]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(+0x5a24f)[0x7f83e25ed24f]\n/usr/lib64/libpython2.7.so.1.0(PyObject_Call+0x53)[0x7f83e25de453]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x491d)[0x7f83e2675b8d]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x522e)[0x7f83e267649e]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x88d)[0x7f83e26781dd]\n/usr/lib64/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x7f83e26782f2]\n/usr/lib64/libpython2.7.so.1.0(+0xff25c)[0x7f83e269225c]\n/usr/lib64/libpython2.7.so.1.0(PyRun_FileExFlags+0x90)[0x7f83e2693090]\n/usr/lib64/libpython2.7.so.1.0(PyRun_SimpleFileExFlags+0x1ff)[0x7f83e2693c6f]\n/usr/lib64/libpython2.7.so.1.0(Py_Main+0xb53)[0x7f83e26a4fc3]\n/lib64/libc.so.6(__libc_start_main+0xfd)[0x7f83e201cb6d]\n/usr/bin/python2.7[0x4008a9]\n\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nThe doctested process was killed by signal 11\n         [2.5 s]\n```",
     "created_at": "2011-04-14T23:27:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -368,8 +368,6 @@ Got:
     1977800240
 ```
 
-
-
 ```
 sage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py
 **********************************************************************
@@ -390,7 +388,6 @@ Got:
     False
 **********************************************************************
 ```
-
 This one doesn't worry me as much but should be looked at
 
 ```
@@ -412,8 +409,6 @@ Got:
 **********************************************************************
 ```
 
-
-
 ```
 sage -t -long  -force_lib devel/sage-main/sage/structure/parent.pyx
 **********************************************************************
@@ -426,20 +421,17 @@ Expected:
 Got nothing
 ```
 
-
 The following were killed:
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/rings/homset.py # Killed/crashed
 sage -t -long  -force_lib devel/sage-main/sage/schemes/generic/scheme.py # Killed/crashed
 ```
-
 In my original run 
 
 ```
 sage -t -long -force_lib "devel/sage-main/sage/rings/morphism.pyx"
 ```
-
 also got killed but not in a subsequent run after I adopted a small change in sage-doctest to get rid of PYTHONWARNINGS=default in sage-env.
 
 Example of killed test:
@@ -533,7 +525,6 @@ The doctested process was killed by signal 11
 
 
 
-
 ---
 
 archive/issue_comments_099160.json:
@@ -577,7 +568,7 @@ this form of comparison is removed in python 2.6.5 and later, refreshed using --
 archive/issue_comments_099162.json:
 ```json
 {
-    "body": "It looks like the crash problems originates somewhere in libsingular\n\n```\nsage: f = Zmod(6).cover()\nsage: f.kernel()\nPrincipal ideal (6) of Integer Ring\nsage: R.<x,y> = PolynomialRing(QQ, 2)\nsage: S.<a,b> = R.quo(x^2 + y^2)\nsage: phi = S.cover()\nsage: phi == loads(dumps(phi))\nTrue\nsage: phi == R.quo(x^2 + y^3).cover()\n\nProgram received signal SIGSEGV, Segmentation fault.\nid_Delete (h=0x50687d8, r=0x0) at ideals.cc:127\n127     ideals.cc: No such file or directory.\n        in ideals.cc\n(gdb) bt\n#0  id_Delete (h=0x50687d8, r=0x0) at ideals.cc:127\n#1  0x00007fffb9670b49 in __pyx_pf_4sage_4libs_8singular_17groebner_strategy_16GroebnerStrategy_1__dealloc__ (\n    o=<value optimized out>) at sage/libs/singular/groebner_strategy.cpp:2570\n#2  __pyx_tp_dealloc_4sage_4libs_8singular_17groebner_strategy_GroebnerStrategy (o=<value optimized out>)\n    at sage/libs/singular/groebner_strategy.cpp:3190\n#3  0x00007ffff7aa98c7 in PyDict_Clear (op=<value optimized out>) at Objects/dictobject.c:891\n#4  0x00007ffff7aa990f in dict_tp_clear (op=<value optimized out>) at Objects/dictobject.c:2088\n#5  0x00007ffff7b32f27 in delete_garbage (generation=0) at Modules/gcmodule.c:769\n#6  collect (generation=0) at Modules/gcmodule.c:930\n#7  0x00007ffff7b33616 in collect_generations (basicsize=<value optimized out>) at Modules/gcmodule.c:996\n#8  _PyObject_GC_Malloc (basicsize=<value optimized out>) at Modules/gcmodule.c:1457\n#9  0x00007ffff7ac4a96 in PyType_GenericAlloc (type=0x7ffff7d9ad40, nitems=0) at Objects/typeobject.c:744\n#10 0x00007ffff7a8d256 in BaseException_new (type=<value optimized out>, args=<value optimized out>, kwds=<value optimized out>)\n    at Objects/exceptions.c:34\n#11 0x00007ffff7ac57b5 in type_call (type=0x7ffff7d9ad40, args=0x4ae46d0, kwds=0x0) at Objects/typeobject.c:712\n#12 0x00007ffff7a77539 in PyObject_Call (func=0x7ffff7d9ad40, arg=0x4ae46d0, kw=0x0) at Objects/abstract.c:2529\n#13 0x00007ffff7b00b45 in PyEval_CallObjectWithKeywords (func=0x7ffff7d9ad40, arg=0x4ae46d0, kw=0x0) at Python/ceval.c:3881\n#14 0x00007ffff7b10443 in PyErr_NormalizeException (exc=0x7fffffffa778, val=0x7fffffffa770, tb=0x7fffffffa768)\n    at Python/errors.c:190\n#15 0x00007fffe433021c in __Pyx_GetException (type=0x7fffffffa7c0, value=0x7fffffffa7b8, tb=0x7fffffffa7c8)\n    at sage/structure/parent.c:20909\n#16 0x00007fffe433e4d1 in __pyx_pf_4sage_9structure_6parent_6Parent_2element_class (__pyx_v_self=0x4aea500, \n    unused=<value optimized out>) at sage/structure/parent.c:4251\n#17 0x00007ffff7aac1e2 in PyCFunction_Call (func=0x504ebd8, arg=0x7ffff7f81050, kw=<value optimized out>)\n    at Objects/methodobject.c:90\n#18 0x00007ffff7a77539 in PyObject_Call (func=0x504ebd8, arg=0x7ffff7f81050, kw=0x0) at Objects/abstract.c:2529\n#19 0x00007ffff7b00b45 in PyEval_CallObjectWithKeywords (func=0x504ebd8, arg=0x7ffff7f81050, kw=0x0) at Python/ceval.c:3881\n#20 0x00007ffff7a8b51f in methoddescr_call (descr=<value optimized out>, args=0x7ffff7f81050, kwds=0x0)\n    at Objects/descrobject.c:246\n#21 0x00007ffff7a77539 in PyObject_Call (func=0x138e950, arg=0x7ffff7e9c050, kw=0x0) at Objects/abstract.c:2529\n#22 0x00007ffff7b05efe in do_call (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4230\n#23 call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4035\n#24 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#25 0x00007ffff7b07b65 in PyEval_EvalCodeEx (co=0x1159e30, globals=<value optimized out>, locals=<value optimized out>, \n    args=<value optimized out>, argcount=3, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3252\n#26 0x00007ffff7a99a97 in function_call (func=0x115d5f0, arg=0xfadeb0, kw=0x0) at Objects/funcobject.c:526\n#27 0x00007ffff7a77539 in PyObject_Call (func=0x115d5f0, arg=0xfadeb0, kw=0x0) at Objects/abstract.c:2529\n#28 0x00007ffff7a77cca in PyObject_CallFunctionObjArgs (callable=0x115d5f0) at Objects/abstract.c:2760\n#29 0x00007ffff7ac8a8e in slot_tp_descr_get (self=0x13179d0, obj=0x4aea500, type=0x19e91f0) at Objects/typeobject.c:5621\n#30 0x00007ffff7aae433 in _PyObject_GenericGetAttrWithDict (obj=0x4aea500, name=0x13c5a78, dict=0x5068fb0) at Objects/object.c:1432\n#31 0x00007ffff7aae4d1 in PyObject_GenericGetAttr (obj=<value optimized out>, name=<value optimized out>) at Objects/object.c:1454\n#32 0x00007fffe434ed62 in __pyx_tp_getattro_4sage_9structure_6parent_Parent (o=0x4aea500, n=0x13c5a78)\n    at sage/structure/parent.c:18702\n#33 0x00007ffff7aad8f4 in PyObject_GetAttr (v=0x4aea500, name=<value optimized out>) at Objects/object.c:1189\n#34 0x00007ffff7afdbab in builtin_hasattr (self=<value optimized out>, args=<value optimized out>) at Python/bltinmodule.c:885\n#35 0x00007ffff7aac1a0 in PyCFunction_Call (func=0x7ffff7fae3b0, arg=0x503d680, kw=<value optimized out>)\n    at Objects/methodobject.c:81\n#36 0x00007ffff7b05ba3 in call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4012\n#37 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#38 0x00007ffff7b05cfa in fast_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4098\n#39 call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4033\n#40 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#41 0x00007ffff7b07b65 in PyEval_EvalCodeEx (co=0x1159e30, globals=<value optimized out>, locals=<value optimized out>, \n    args=<value optimized out>, argcount=3, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3252\n#42 0x00007ffff7a99a97 in function_call (func=0x115d5f0, arg=0xfadbe0, kw=0x0) at Objects/funcobject.c:526\n\n```\n",
+    "body": "It looks like the crash problems originates somewhere in libsingular\n\n```\nsage: f = Zmod(6).cover()\nsage: f.kernel()\nPrincipal ideal (6) of Integer Ring\nsage: R.<x,y> = PolynomialRing(QQ, 2)\nsage: S.<a,b> = R.quo(x^2 + y^2)\nsage: phi = S.cover()\nsage: phi == loads(dumps(phi))\nTrue\nsage: phi == R.quo(x^2 + y^3).cover()\n\nProgram received signal SIGSEGV, Segmentation fault.\nid_Delete (h=0x50687d8, r=0x0) at ideals.cc:127\n127     ideals.cc: No such file or directory.\n        in ideals.cc\n(gdb) bt\n#0  id_Delete (h=0x50687d8, r=0x0) at ideals.cc:127\n#1  0x00007fffb9670b49 in __pyx_pf_4sage_4libs_8singular_17groebner_strategy_16GroebnerStrategy_1__dealloc__ (\n    o=<value optimized out>) at sage/libs/singular/groebner_strategy.cpp:2570\n#2  __pyx_tp_dealloc_4sage_4libs_8singular_17groebner_strategy_GroebnerStrategy (o=<value optimized out>)\n    at sage/libs/singular/groebner_strategy.cpp:3190\n#3  0x00007ffff7aa98c7 in PyDict_Clear (op=<value optimized out>) at Objects/dictobject.c:891\n#4  0x00007ffff7aa990f in dict_tp_clear (op=<value optimized out>) at Objects/dictobject.c:2088\n#5  0x00007ffff7b32f27 in delete_garbage (generation=0) at Modules/gcmodule.c:769\n#6  collect (generation=0) at Modules/gcmodule.c:930\n#7  0x00007ffff7b33616 in collect_generations (basicsize=<value optimized out>) at Modules/gcmodule.c:996\n#8  _PyObject_GC_Malloc (basicsize=<value optimized out>) at Modules/gcmodule.c:1457\n#9  0x00007ffff7ac4a96 in PyType_GenericAlloc (type=0x7ffff7d9ad40, nitems=0) at Objects/typeobject.c:744\n#10 0x00007ffff7a8d256 in BaseException_new (type=<value optimized out>, args=<value optimized out>, kwds=<value optimized out>)\n    at Objects/exceptions.c:34\n#11 0x00007ffff7ac57b5 in type_call (type=0x7ffff7d9ad40, args=0x4ae46d0, kwds=0x0) at Objects/typeobject.c:712\n#12 0x00007ffff7a77539 in PyObject_Call (func=0x7ffff7d9ad40, arg=0x4ae46d0, kw=0x0) at Objects/abstract.c:2529\n#13 0x00007ffff7b00b45 in PyEval_CallObjectWithKeywords (func=0x7ffff7d9ad40, arg=0x4ae46d0, kw=0x0) at Python/ceval.c:3881\n#14 0x00007ffff7b10443 in PyErr_NormalizeException (exc=0x7fffffffa778, val=0x7fffffffa770, tb=0x7fffffffa768)\n    at Python/errors.c:190\n#15 0x00007fffe433021c in __Pyx_GetException (type=0x7fffffffa7c0, value=0x7fffffffa7b8, tb=0x7fffffffa7c8)\n    at sage/structure/parent.c:20909\n#16 0x00007fffe433e4d1 in __pyx_pf_4sage_9structure_6parent_6Parent_2element_class (__pyx_v_self=0x4aea500, \n    unused=<value optimized out>) at sage/structure/parent.c:4251\n#17 0x00007ffff7aac1e2 in PyCFunction_Call (func=0x504ebd8, arg=0x7ffff7f81050, kw=<value optimized out>)\n    at Objects/methodobject.c:90\n#18 0x00007ffff7a77539 in PyObject_Call (func=0x504ebd8, arg=0x7ffff7f81050, kw=0x0) at Objects/abstract.c:2529\n#19 0x00007ffff7b00b45 in PyEval_CallObjectWithKeywords (func=0x504ebd8, arg=0x7ffff7f81050, kw=0x0) at Python/ceval.c:3881\n#20 0x00007ffff7a8b51f in methoddescr_call (descr=<value optimized out>, args=0x7ffff7f81050, kwds=0x0)\n    at Objects/descrobject.c:246\n#21 0x00007ffff7a77539 in PyObject_Call (func=0x138e950, arg=0x7ffff7e9c050, kw=0x0) at Objects/abstract.c:2529\n#22 0x00007ffff7b05efe in do_call (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4230\n#23 call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4035\n#24 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#25 0x00007ffff7b07b65 in PyEval_EvalCodeEx (co=0x1159e30, globals=<value optimized out>, locals=<value optimized out>, \n    args=<value optimized out>, argcount=3, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3252\n#26 0x00007ffff7a99a97 in function_call (func=0x115d5f0, arg=0xfadeb0, kw=0x0) at Objects/funcobject.c:526\n#27 0x00007ffff7a77539 in PyObject_Call (func=0x115d5f0, arg=0xfadeb0, kw=0x0) at Objects/abstract.c:2529\n#28 0x00007ffff7a77cca in PyObject_CallFunctionObjArgs (callable=0x115d5f0) at Objects/abstract.c:2760\n#29 0x00007ffff7ac8a8e in slot_tp_descr_get (self=0x13179d0, obj=0x4aea500, type=0x19e91f0) at Objects/typeobject.c:5621\n#30 0x00007ffff7aae433 in _PyObject_GenericGetAttrWithDict (obj=0x4aea500, name=0x13c5a78, dict=0x5068fb0) at Objects/object.c:1432\n#31 0x00007ffff7aae4d1 in PyObject_GenericGetAttr (obj=<value optimized out>, name=<value optimized out>) at Objects/object.c:1454\n#32 0x00007fffe434ed62 in __pyx_tp_getattro_4sage_9structure_6parent_Parent (o=0x4aea500, n=0x13c5a78)\n    at sage/structure/parent.c:18702\n#33 0x00007ffff7aad8f4 in PyObject_GetAttr (v=0x4aea500, name=<value optimized out>) at Objects/object.c:1189\n#34 0x00007ffff7afdbab in builtin_hasattr (self=<value optimized out>, args=<value optimized out>) at Python/bltinmodule.c:885\n#35 0x00007ffff7aac1a0 in PyCFunction_Call (func=0x7ffff7fae3b0, arg=0x503d680, kw=<value optimized out>)\n    at Objects/methodobject.c:81\n#36 0x00007ffff7b05ba3 in call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4012\n#37 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#38 0x00007ffff7b05cfa in fast_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4098\n#39 call_function (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:4033\n#40 PyEval_EvalFrameEx (f=<value optimized out>, throwflag=<value optimized out>) at Python/ceval.c:2665\n#41 0x00007ffff7b07b65 in PyEval_EvalCodeEx (co=0x1159e30, globals=<value optimized out>, locals=<value optimized out>, \n    args=<value optimized out>, argcount=3, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3252\n#42 0x00007ffff7a99a97 in function_call (func=0x115d5f0, arg=0xfadbe0, kw=0x0) at Objects/funcobject.c:526\n\n```",
     "created_at": "2011-04-15T02:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -664,7 +655,6 @@ id_Delete (h=0x50687d8, r=0x0) at ideals.cc:127
 
 
 
-
 ---
 
 archive/issue_comments_099163.json:
@@ -688,7 +678,7 @@ Same two doctests killed after upgrade to alpha5.
 archive/issue_comments_099164.json:
 ```json
 {
-    "body": "Over-eager garbage collection in python-2.7.1! Preceding the sequence by\n\n```\nsage: import gc\nsage: gc.disable()\n```\n\nMakes everything go smoothly.",
+    "body": "Over-eager garbage collection in python-2.7.1! Preceding the sequence by\n\n```\nsage: import gc\nsage: gc.disable()\n```\nMakes everything go smoothly.",
     "created_at": "2011-04-21T00:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -703,7 +693,6 @@ Over-eager garbage collection in python-2.7.1! Preceding the sequence by
 sage: import gc
 sage: gc.disable()
 ```
-
 Makes everything go smoothly.
 
 
@@ -769,7 +758,7 @@ Split the deprecation issue in its own ticket in #11244 - this is a different pa
 archive/issue_comments_099168.json:
 ```json
 {
-    "body": "Replying to [comment:23 nthiery]:\n> trac_9958-fix_cmp.patch is perfectly reasonable, since this is the idiom used everywhere else in similar situations. I don't have enough background to judge on the warning patch.\n\nI will put the cmp patch in its own ticket would you review it?",
+    "body": "Replying to [comment:23 nthiery]:\n> trac_9958-fix_cmp.patch is perfectly reasonable, since this is the idiom used everywhere else in similar situations. I don't have enough background to judge on the warning patch.\n\n\nI will put the cmp patch in its own ticket would you review it?",
     "created_at": "2011-04-27T01:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -780,6 +769,7 @@ archive/issue_comments_099168.json:
 
 Replying to [comment:23 nthiery]:
 > trac_9958-fix_cmp.patch is perfectly reasonable, since this is the idiom used everywhere else in similar situations. I don't have enough background to judge on the warning patch.
+
 
 I will put the cmp patch in its own ticket would you review it?
 
@@ -906,7 +896,7 @@ odds and ends missed in the other patches
 archive/issue_comments_099175.json:
 ```json
 {
-    "body": "Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by @kiwifb created at 2011-04-28 03:33:17\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\n\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
+    "body": "Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by @kiwifb created at 2011-04-28 03:33:17\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
     "created_at": "2011-04-28T03:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -933,8 +923,6 @@ Got:
 **********************************************************************
 ```
 
-
-
 ```
 sage -t -long -force_lib "devel/sage-main/sage/rings/integer.pyx"
 **********************************************************************
@@ -960,7 +948,6 @@ Got:
     False
 **********************************************************************
 ```
-
 That hash(n) == hash(int(n)) is now false should be looked into carefully.
 
 ```
@@ -981,7 +968,6 @@ Got:
     word: 6456
 **********************************************************************
 ```
-
 I think that one is OK, just a change of order but a second opinion would be nice.
 
 Finally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:
@@ -1122,7 +1108,7 @@ Also, is it possible to test this by ./sage -f something, or would one have to t
 archive/issue_comments_099183.json:
 ```json
 {
-    "body": "Replying to [comment:34 kcrisman]:\n> Also, is it possible to test this by ./sage -f something, or would one have to take a fresh tarball and replace the Python spkg?\n\nHi Karl,\n\nI am mainly developing from sage-on-gentoo at the moment. I need to make a current python-2.7.1 spkg to match. I will update the description and give the patch order when there is a spkg (feel free to make one). The patch have initially been made against 4.7.1.alpha0 and the current version works against 4.7.1.alpha1. You would get failures against a 4.7 because #7377 finally landed.\n\nI think the best course of action will be to start from scratch, it may even be useful to host an alternative tarball somewhere because the change in python version will be extremely messy. I don't know if we can do it without breaking sage -upgrade or being overly complicated.\n\nIn the meantime you could have a look at #11244 (which I need to update for 4.7.1.alpha1 because of #10334). \n\nFrancois",
+    "body": "Replying to [comment:34 kcrisman]:\n> Also, is it possible to test this by ./sage -f something, or would one have to take a fresh tarball and replace the Python spkg?\n\n\nHi Karl,\n\nI am mainly developing from sage-on-gentoo at the moment. I need to make a current python-2.7.1 spkg to match. I will update the description and give the patch order when there is a spkg (feel free to make one). The patch have initially been made against 4.7.1.alpha0 and the current version works against 4.7.1.alpha1. You would get failures against a 4.7 because #7377 finally landed.\n\nI think the best course of action will be to start from scratch, it may even be useful to host an alternative tarball somewhere because the change in python version will be extremely messy. I don't know if we can do it without breaking sage -upgrade or being overly complicated.\n\nIn the meantime you could have a look at #11244 (which I need to update for 4.7.1.alpha1 because of #10334). \n\nFrancois",
     "created_at": "2011-05-18T21:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1133,6 +1119,7 @@ archive/issue_comments_099183.json:
 
 Replying to [comment:34 kcrisman]:
 > Also, is it possible to test this by ./sage -f something, or would one have to take a fresh tarball and replace the Python spkg?
+
 
 Hi Karl,
 
@@ -1189,7 +1176,7 @@ I should probably test 4.7.1.alpha1 on my box.  I'm amazed at Jeroen's stamina o
 archive/issue_comments_099186.json:
 ```json
 {
-    "body": "Replying to [comment:37 kcrisman]:\n> I see.  Well, I just want to make sure that it all works fine on older Macs, of course.  I definitely don't have time to make an spkg now, though I do have time to do ./sage -f and slap a few patches on it :)  Just let me know when you get around to it; I don't think there is a huge rush.\n> \n> I should probably test 4.7.1.alpha1 on my box.  I'm amazed at Jeroen's stamina on this, especially with several different versions simultaneously existing.\n\nThat's why I asked about #11244 it is an issue I split from this ticket because it should apply on a sage running python-2.6 without side effects. So it could be in place when we come around to the upgrade. Any ideas on #11339 which was recently split from this ticket is also welcome.",
+    "body": "Replying to [comment:37 kcrisman]:\n> I see.  Well, I just want to make sure that it all works fine on older Macs, of course.  I definitely don't have time to make an spkg now, though I do have time to do ./sage -f and slap a few patches on it :)  Just let me know when you get around to it; I don't think there is a huge rush.\n> \n> I should probably test 4.7.1.alpha1 on my box.  I'm amazed at Jeroen's stamina on this, especially with several different versions simultaneously existing.\n\n\nThat's why I asked about #11244 it is an issue I split from this ticket because it should apply on a sage running python-2.6 without side effects. So it could be in place when we come around to the upgrade. Any ideas on #11339 which was recently split from this ticket is also welcome.",
     "created_at": "2011-05-19T00:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1202,6 +1189,7 @@ Replying to [comment:37 kcrisman]:
 > I see.  Well, I just want to make sure that it all works fine on older Macs, of course.  I definitely don't have time to make an spkg now, though I do have time to do ./sage -f and slap a few patches on it :)  Just let me know when you get around to it; I don't think there is a huge rush.
 > 
 > I should probably test 4.7.1.alpha1 on my box.  I'm amazed at Jeroen's stamina on this, especially with several different versions simultaneously existing.
+
 
 That's why I asked about #11244 it is an issue I split from this ticket because it should apply on a sage running python-2.6 without side effects. So it could be in place when we come around to the upgrade. Any ideas on #11339 which was recently split from this ticket is also welcome.
 
@@ -1388,7 +1376,7 @@ I am getting the twisted install fail that jhpalmieri refers to.  So my guess is
 archive/issue_comments_099196.json:
 ```json
 {
-    "body": "Replying to [comment:46 kcrisman]:\n> I am getting the twisted install fail that jhpalmieri refers to.  So my guess is that the Gentoo system has some updated things along those lines that vanilla 4.7.1.alpha1 does not.  Is that possible?\n\nWell sage-on-gentoo uses a newer twisted. On the other I and Steve have build twisted in vanilla sage with python-2.7.1. Did you get the new setuptools spkg from #11363? It is necessary to build twisted with python-2.7.1.",
+    "body": "Replying to [comment:46 kcrisman]:\n> I am getting the twisted install fail that jhpalmieri refers to.  So my guess is that the Gentoo system has some updated things along those lines that vanilla 4.7.1.alpha1 does not.  Is that possible?\n\n\nWell sage-on-gentoo uses a newer twisted. On the other I and Steve have build twisted in vanilla sage with python-2.7.1. Did you get the new setuptools spkg from #11363? It is necessary to build twisted with python-2.7.1.",
     "created_at": "2011-05-23T13:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1399,6 +1387,7 @@ archive/issue_comments_099196.json:
 
 Replying to [comment:46 kcrisman]:
 > I am getting the twisted install fail that jhpalmieri refers to.  So my guess is that the Gentoo system has some updated things along those lines that vanilla 4.7.1.alpha1 does not.  Is that possible?
+
 
 Well sage-on-gentoo uses a newer twisted. On the other I and Steve have build twisted in vanilla sage with python-2.7.1. Did you get the new setuptools spkg from #11363? It is necessary to build twisted with python-2.7.1.
 
@@ -1427,7 +1416,7 @@ No, I didn't realize there was an spkg involved with that.  I installed that fir
 archive/issue_comments_099198.json:
 ```json
 {
-    "body": "Replying to [comment:45 fbissey]:\n> My friend Steve Trogdon made a prepatched sage-4.7.1.alpha1 spkg (4.7.1.alpha1.p0 we named it) available to make testing easier, find it with hos own test.log here\n> [http://www.d.umn.edu/~strogdon/sage/](http://www.d.umn.edu/~strogdon/sage/)\n> It has all the necessary patches from #11244 and this this ticket.\n\nIs one of these patches needed *before* doing the Sage spkg itself? I get an immediate failure\n\n```\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\nERROR: There was an error building c_lib.\n```\n\nwhich I assume is related to one of the patches involved here, though I couldn't say which one...",
+    "body": "Replying to [comment:45 fbissey]:\n> My friend Steve Trogdon made a prepatched sage-4.7.1.alpha1 spkg (4.7.1.alpha1.p0 we named it) available to make testing easier, find it with hos own test.log here\n> [http://www.d.umn.edu/~strogdon/sage/](http://www.d.umn.edu/~strogdon/sage/)\n> It has all the necessary patches from #11244 and this this ticket.\n\n\nIs one of these patches needed *before* doing the Sage spkg itself? I get an immediate failure\n\n```\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/convert.os -c -fPIC -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/python2.6 -I/Users/student/Desktop/sage-4.7.1.alpha1/local/include/NTL -Iinclude src/convert.c\nIn file included from include/memory.h:23,\n                 from /Users/student/Desktop/sage-4.7.1.alpha1/local/include/pari/pari.h:42,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\ninclude/interrupt.h:32:20: error: Python.h: No such file or directory\nscons: *** [src/convert.os] Error 1\nERROR: There was an error building c_lib.\n```\nwhich I assume is related to one of the patches involved here, though I couldn't say which one...",
     "created_at": "2011-05-23T19:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1440,6 +1429,7 @@ Replying to [comment:45 fbissey]:
 > My friend Steve Trogdon made a prepatched sage-4.7.1.alpha1 spkg (4.7.1.alpha1.p0 we named it) available to make testing easier, find it with hos own test.log here
 > [http://www.d.umn.edu/~strogdon/sage/](http://www.d.umn.edu/~strogdon/sage/)
 > It has all the necessary patches from #11244 and this this ticket.
+
 
 Is one of these patches needed *before* doing the Sage spkg itself? I get an immediate failure
 
@@ -1474,7 +1464,6 @@ include/interrupt.h:32:20: error: Python.h: No such file or directory
 scons: *** [src/convert.os] Error 1
 ERROR: There was an error building c_lib.
 ```
-
 which I assume is related to one of the patches involved here, though I couldn't say which one...
 
 
@@ -1532,7 +1521,7 @@ Yes, I saw the lists, but I thought they were only relevant for an upgrade/after
 archive/issue_comments_099201.json:
 ```json
 {
-    "body": "Replying to [comment:52 kcrisman]:\n> Well, I'm building from scratch, so that shouldn't affect it from that side.  \n> \n> Are you saying that before I build the Sage library, I have to apply these patches?  That's a little tricky in a scratch build (for me, at least). \n> \n> Yes, I saw the lists, but I thought they were only relevant for an upgrade/after actually building Sage.  My apologies.  I may not be able to finish testing this properly for a while now.\n\nThat's all right there are still things to sort out. But you could use the sage spkg prepared by Steve with all patches included rather than patch yourself:\n[http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg](http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg)\n\nAnd yes it is tricky from scratch unless you have a premade spkg.",
+    "body": "Replying to [comment:52 kcrisman]:\n> Well, I'm building from scratch, so that shouldn't affect it from that side.  \n> \n> Are you saying that before I build the Sage library, I have to apply these patches?  That's a little tricky in a scratch build (for me, at least). \n> \n> Yes, I saw the lists, but I thought they were only relevant for an upgrade/after actually building Sage.  My apologies.  I may not be able to finish testing this properly for a while now.\n\n\nThat's all right there are still things to sort out. But you could use the sage spkg prepared by Steve with all patches included rather than patch yourself:\n[http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg](http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg)\n\nAnd yes it is tricky from scratch unless you have a premade spkg.",
     "created_at": "2011-05-23T20:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1548,6 +1537,7 @@ Replying to [comment:52 kcrisman]:
 > 
 > Yes, I saw the lists, but I thought they were only relevant for an upgrade/after actually building Sage.  My apologies.  I may not be able to finish testing this properly for a while now.
 
+
 That's all right there are still things to sort out. But you could use the sage spkg prepared by Steve with all patches included rather than patch yourself:
 [http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg](http://www.d.umn.edu/~strogdon/sage/sage-4.7.1.alpha1.p0.spkg)
 
@@ -1560,7 +1550,7 @@ And yes it is tricky from scratch unless you have a premade spkg.
 archive/issue_comments_099202.json:
 ```json
 {
-    "body": "I may have made mistakes, but I tried to do this, starting with sage-4.7.rc4:\n\n- install the new python spkg\n- install the new setuptools spkg (from #11363)\n- apply the patches from #11244 to the main Sage library\n- apply the patches from this ticket with \"build\" in their name -- some of these didn't apply cleanly, so I had to work around that.\n\nI used that to build a new version of Sage (using \"sage -sdist ...\").  The tar file is here:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)\n\nOn sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run\n\n\n```\n$ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/\n```\n",
+    "body": "I may have made mistakes, but I tried to do this, starting with sage-4.7.rc4:\n\n- install the new python spkg\n- install the new setuptools spkg (from #11363)\n- apply the patches from #11244 to the main Sage library\n- apply the patches from this ticket with \"build\" in their name -- some of these didn't apply cleanly, so I had to work around that.\n\nI used that to build a new version of Sage (using \"sage -sdist ...\").  The tar file is here:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)\n\nOn sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run\n\n```\n$ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/\n```",
     "created_at": "2011-05-24T01:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1582,11 +1572,9 @@ I used that to build a new version of Sage (using "sage -sdist ...").  The tar f
 
 On sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run
 
-
 ```
 $ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/
 ```
-
 
 
 
@@ -1595,7 +1583,7 @@ $ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sag
 archive/issue_comments_099203.json:
 ```json
 {
-    "body": "Replying to [comment:54 jhpalmieri]:\n> I may have made mistakes, but I tried to do this, starting with sage-4.7.rc4:\n> \n>  - install the new python spkg\n>  - install the new setuptools spkg (from #11363)\n>  - apply the patches from #11244 to the main Sage library\n>  - apply the patches from this ticket with \"build\" in their name -- some of these didn't apply cleanly, so I had to work around that.\n> \n> I used that to build a new version of Sage (using \"sage -sdist ...\").  The tar file is here:\n> \n>  - [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)\n> \n> On sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run\n> \n> {{{\n> $ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/\n> }}}\n\nI have tried to keep abreast of everything so the patches are based on 4.7.1.alpha1 there are enough differences that a lot of patches for 4.7 would need rebasing.\n\nSo I decided to go straight for the bleeding edge. I am doing some more work on the \"build\" patches, I am trying to do something smarter with the python version number so some change could be applied independently of this ticket. The module_list,py patch definitely won't apply cleanly on 4.7.rc mainly because of #10334. What's more #11264 and #11236 which are needed here are merged in 4.7.1.alpha0.\n\nThat's all a bit of hassle to start from 4.7.1.alpha, but I would have to start again if I was starting from 4.7.rc.",
+    "body": "Replying to [comment:54 jhpalmieri]:\n> I may have made mistakes, but I tried to do this, starting with sage-4.7.rc4:\n> \n> - install the new python spkg\n> - install the new setuptools spkg (from #11363)\n> - apply the patches from #11244 to the main Sage library\n> - apply the patches from this ticket with \"build\" in their name -- some of these didn't apply cleanly, so I had to work around that.\n> \n> I used that to build a new version of Sage (using \"sage -sdist ...\").  The tar file is here:\n> \n> - [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)\n> \n> On sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run\n> \n> \n> ```\n> $ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/\n> ```\n\n\nI have tried to keep abreast of everything so the patches are based on 4.7.1.alpha1 there are enough differences that a lot of patches for 4.7 would need rebasing.\n\nSo I decided to go straight for the bleeding edge. I am doing some more work on the \"build\" patches, I am trying to do something smarter with the python version number so some change could be applied independently of this ticket. The module_list,py patch definitely won't apply cleanly on 4.7.rc mainly because of #10334. What's more #11264 and #11236 which are needed here are merged in 4.7.1.alpha0.\n\nThat's all a bit of hassle to start from 4.7.1.alpha, but I would have to start again if I was starting from 4.7.rc.",
     "created_at": "2011-05-24T02:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1607,20 +1595,22 @@ archive/issue_comments_099203.json:
 Replying to [comment:54 jhpalmieri]:
 > I may have made mistakes, but I tried to do this, starting with sage-4.7.rc4:
 > 
->  - install the new python spkg
->  - install the new setuptools spkg (from #11363)
->  - apply the patches from #11244 to the main Sage library
->  - apply the patches from this ticket with "build" in their name -- some of these didn't apply cleanly, so I had to work around that.
+> - install the new python spkg
+> - install the new setuptools spkg (from #11363)
+> - apply the patches from #11244 to the main Sage library
+> - apply the patches from this ticket with "build" in their name -- some of these didn't apply cleanly, so I had to work around that.
 > 
 > I used that to build a new version of Sage (using "sage -sdist ...").  The tar file is here:
 > 
->  - [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)
+> - [http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar](http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7.tar)
 > 
 > On sage.math, I've been able to untar this and build Sage, although tests haven't run yet.  You can also try upgrading, although I haven't tested this at all: run
 > 
-> {{{
+> 
+> ```
 > $ sage -upgrade http://sage.math.washington.edu/home/palmieri/misc/python2.7/sage-4.7.rc4-python2.7/
-> }}}
+> ```
+
 
 I have tried to keep abreast of everything so the patches are based on 4.7.1.alpha1 there are enough differences that a lot of patches for 4.7 would need rebasing.
 
@@ -1711,7 +1701,7 @@ OK I also made setup.py python version smart any volunteer to review a separate 
 archive/issue_comments_099208.json:
 ```json
 {
-    "body": "\n```\ng++ -o libcsage.dylib -single_module -flat_namespace -undefined dynamic_lookup -dynamiclib src/convert.os src/interrupt.os src/memory.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib/python/config -lntl -lpari -lgmp -lpython2.7\nTraceback (most recent call last):\n  File \"setup.py\", line 18, in <module>\n    from module_list import ext_modules\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1/devel/sage-main/module_list.py\", line 1529, in <module>\n    flint_depends],\nTypeError: cannot concatenate 'str' and 'list' objects\nsage: There was an error installing modified sage library code.\n\n\nreal    0m34.577s\nuser    0m19.519s\nsys     0m6.901s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m42.066s\nuser    0m52.903s\nsys     0m25.133s\nsage: An error occurred while installing sage-4.7.1.alpha1.p0\n```\n\nNote this is the p0 package referred to above.",
+    "body": "```\ng++ -o libcsage.dylib -single_module -flat_namespace -undefined dynamic_lookup -dynamiclib src/convert.os src/interrupt.os src/memory.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib/python/config -lntl -lpari -lgmp -lpython2.7\nTraceback (most recent call last):\n  File \"setup.py\", line 18, in <module>\n    from module_list import ext_modules\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1/devel/sage-main/module_list.py\", line 1529, in <module>\n    flint_depends],\nTypeError: cannot concatenate 'str' and 'list' objects\nsage: There was an error installing modified sage library code.\n\n\nreal    0m34.577s\nuser    0m19.519s\nsys     0m6.901s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m42.066s\nuser    0m52.903s\nsys     0m25.133s\nsage: An error occurred while installing sage-4.7.1.alpha1.p0\n```\nNote this is the p0 package referred to above.",
     "created_at": "2011-05-24T12:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1719,7 +1709,6 @@ archive/issue_comments_099208.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-
 
 ```
 g++ -o libcsage.dylib -single_module -flat_namespace -undefined dynamic_lookup -dynamiclib src/convert.os src/interrupt.os src/memory.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib -L/Users/student/Desktop/sage-4.7.1.alpha1/local/lib/python/config -lntl -lpari -lgmp -lpython2.7
@@ -1743,7 +1732,6 @@ user    0m52.903s
 sys     0m25.133s
 sage: An error occurred while installing sage-4.7.1.alpha1.p0
 ```
-
 Note this is the p0 package referred to above.
 
 
@@ -1815,7 +1803,7 @@ In #11377 I put the clean up of module_list.py this is not necessary for python-
 archive/issue_comments_099212.json:
 ```json
 {
-    "body": "Replying to [comment:59 strogdon]:\n> Well, there was a problem with this but it was corrected. I've checked the present\u00a0sage-4.7.1.alpha.p0 and this problem should not be there. The md5sum (md5sum\u00a0sage-4.7.1.alpha1.p0.spkg) should be\u00a0\n> \n> b54da7bee966eaf15942964a05a8b6b1 \u00a0sage-4.7.1.alpha1.p0.spkg\n> \n> If the spkg you have is not this could you download again and see if that fixed things.\n\nIt didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.  \n\nBy the way, now that 4.7.1.alpha1 is \"official\", one may have to upgrade the drop-in spkg.",
+    "body": "Replying to [comment:59 strogdon]:\n> Well, there was a problem with this but it was corrected. I've checked the present\u00a0sage-4.7.1.alpha.p0 and this problem should not be there. The md5sum (md5sum\u00a0sage-4.7.1.alpha1.p0.spkg) should be\u00a0\n> \n> b54da7bee966eaf15942964a05a8b6b1 \u00a0sage-4.7.1.alpha1.p0.spkg\n> \n> If the spkg you have is not this could you download again and see if that fixed things.\n\n\nIt didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.  \n\nBy the way, now that 4.7.1.alpha1 is \"official\", one may have to upgrade the drop-in spkg.",
     "created_at": "2011-06-01T16:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1831,6 +1819,7 @@ Replying to [comment:59 strogdon]:
 > 
 > If the spkg you have is not this could you download again and see if that fixed things.
 
+
 It didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.  
 
 By the way, now that 4.7.1.alpha1 is "official", one may have to upgrade the drop-in spkg.
@@ -1842,7 +1831,7 @@ By the way, now that 4.7.1.alpha1 is "official", one may have to upgrade the dro
 archive/issue_comments_099213.json:
 ```json
 {
-    "body": "Replying to [comment:61 kcrisman]:\n\n> Replying to [comment:59 strogdon]:\n> > Well, there was a problem with this but it was corrected. I've checked the present sage-4.7.1.alpha.p0 and this problem should not be there. The md5sum (md5sum sage-4.7.1.alpha1.p0.spkg) should be  b54da7bee966eaf15942964a05a8b6b1  sage-4.7.1.alpha1.p0.spkg If the spkg you have is not this could you download again and see if that fixed things.\n> It didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.   By the way, now that 4.7.1.alpha1 is \"official\", one may have to upgrade the drop-in spkg.\n\nOK, for those interested I have a new drop-in spkg based on the released\u00a04.7.1.alpha1. This spkg includes the patches from this ticket as well as the patches from tickets\u00a0#11244,\u00a0#11373,\u00a0#11376\u00a0and\u00a0#11377\u00a0. I'm presently building Sage to make sure everything is as it should be. If successful, I'll post links to the drop-in spkg later today.",
+    "body": "Replying to [comment:61 kcrisman]:\n\n> Replying to [comment:59 strogdon]:\n> > Well, there was a problem with this but it was corrected. I've checked the present sage-4.7.1.alpha.p0 and this problem should not be there. The md5sum (md5sum sage-4.7.1.alpha1.p0.spkg) should be  b54da7bee966eaf15942964a05a8b6b1  sage-4.7.1.alpha1.p0.spkg If the spkg you have is not this could you download again and see if that fixed things.\n\n> It didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.   By the way, now that 4.7.1.alpha1 is \"official\", one may have to upgrade the drop-in spkg.\n\nOK, for those interested I have a new drop-in spkg based on the released\u00a04.7.1.alpha1. This spkg includes the patches from this ticket as well as the patches from tickets\u00a0#11244,\u00a0#11373,\u00a0#11376\u00a0and\u00a0#11377\u00a0. I'm presently building Sage to make sure everything is as it should be. If successful, I'll post links to the drop-in spkg later today.",
     "created_at": "2011-06-01T17:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1855,6 +1844,7 @@ Replying to [comment:61 kcrisman]:
 
 > Replying to [comment:59 strogdon]:
 > > Well, there was a problem with this but it was corrected. I've checked the present sage-4.7.1.alpha.p0 and this problem should not be there. The md5sum (md5sum sage-4.7.1.alpha1.p0.spkg) should be  b54da7bee966eaf15942964a05a8b6b1  sage-4.7.1.alpha1.p0.spkg If the spkg you have is not this could you download again and see if that fixed things.
+
 > It didn't seem to fix things (and I did check the md5 sum).  I'm now starting a build from scratch, having replaced the python and sage spkgs.   By the way, now that 4.7.1.alpha1 is "official", one may have to upgrade the drop-in spkg.
 
 OK, for those interested I have a new drop-in spkg based on the released 4.7.1.alpha1. This spkg includes the patches from this ticket as well as the patches from tickets #11244, #11373, #11376 and #11377 . I'm presently building Sage to make sure everything is as it should be. If successful, I'll post links to the drop-in spkg later today.
@@ -1930,7 +1920,7 @@ Changed the cython.py patch in the list to accommodate new changes made in #1137
 archive/issue_comments_099217.json:
 ```json
 {
-    "body": "End of a looong traceback while building from scratch on PPC 10.4 with the spkgs dropped in (though not the absolute most recent alpha1.p0 spkg, but that hasn't even been gotten to yet, so it shouldn't matter).  Just FYI in case that helps.\n\n```\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/os.py\", line 284, in walk\n    if isdir(join(top, name)):\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/genericpath.py\", line 44, in isdir\n    return stat.S_ISDIR(st.st_mode)\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/stat.py\", line 41, in S_ISDIR\n    return S_IFMT(mode) == S_IFDIR\nRuntimeError: maximum recursion depth exceeded\nError installing Zope/Twisted interface.\n\nreal    0m16.055s\nuser    0m3.349s\nsys     0m4.671s\nsage: An error occurred while installing twisted-9.0.p2\n```\n",
+    "body": "End of a looong traceback while building from scratch on PPC 10.4 with the spkgs dropped in (though not the absolute most recent alpha1.p0 spkg, but that hasn't even been gotten to yet, so it shouldn't matter).  Just FYI in case that helps.\n\n```\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/os.py\", line 284, in walk\n    if isdir(join(top, name)):\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/genericpath.py\", line 44, in isdir\n    return stat.S_ISDIR(st.st_mode)\n  File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/stat.py\", line 41, in S_ISDIR\n    return S_IFMT(mode) == S_IFDIR\nRuntimeError: maximum recursion depth exceeded\nError installing Zope/Twisted interface.\n\nreal    0m16.055s\nuser    0m3.349s\nsys     0m4.671s\nsage: An error occurred while installing twisted-9.0.p2\n```",
     "created_at": "2011-06-06T15:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1959,13 +1949,12 @@ sage: An error occurred while installing twisted-9.0.p2
 
 
 
-
 ---
 
 archive/issue_comments_099218.json:
 ```json
 {
-    "body": "Replying to [comment:66 kcrisman]:\n> End of a looong traceback while building from scratch on PPC 10.4 with the spkgs dropped in (though not the absolute most recent alpha1.p0 spkg, but that hasn't even been gotten to yet, so it shouldn't matter).  Just FYI in case that helps.\n> {{{\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/os.py\", line 284, in walk\n>     if isdir(join(top, name)):\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/genericpath.py\", line 44, in isdir\n>     return stat.S_ISDIR(st.st_mode)\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/stat.py\", line 41, in S_ISDIR\n>     return S_IFMT(mode) == S_IFDIR\n> RuntimeError: maximum recursion depth exceeded\n> Error installing Zope/Twisted interface.\n> \n> real    0m16.055s\n> user    0m3.349s\n> sys     0m4.671s\n> sage: An error occurred while installing twisted-9.0.p2\n> }}}\n\nWere you using the new setuptools from #11363? If so it may be worth trying a newer twisted from #8741.",
+    "body": "Replying to [comment:66 kcrisman]:\n> End of a looong traceback while building from scratch on PPC 10.4 with the spkgs dropped in (though not the absolute most recent alpha1.p0 spkg, but that hasn't even been gotten to yet, so it shouldn't matter).  Just FYI in case that helps.\n> \n> ```\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/os.py\", line 284, in walk\n>     if isdir(join(top, name)):\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/genericpath.py\", line 44, in isdir\n>     return stat.S_ISDIR(st.st_mode)\n>   File \"/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/stat.py\", line 41, in S_ISDIR\n>     return S_IFMT(mode) == S_IFDIR\n> RuntimeError: maximum recursion depth exceeded\n> Error installing Zope/Twisted interface.\n> \n> real    0m16.055s\n> user    0m3.349s\n> sys     0m4.671s\n> sage: An error occurred while installing twisted-9.0.p2\n> ```\n\n\nWere you using the new setuptools from #11363? If so it may be worth trying a newer twisted from #8741.",
     "created_at": "2011-06-06T19:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -1976,7 +1965,8 @@ archive/issue_comments_099218.json:
 
 Replying to [comment:66 kcrisman]:
 > End of a looong traceback while building from scratch on PPC 10.4 with the spkgs dropped in (though not the absolute most recent alpha1.p0 spkg, but that hasn't even been gotten to yet, so it shouldn't matter).  Just FYI in case that helps.
-> {{{
+> 
+> ```
 >   File "/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/os.py", line 284, in walk
 >     if isdir(join(top, name)):
 >   File "/Users/student/Desktop/sage-4.7.1.alpha1-python/local/lib/python/genericpath.py", line 44, in isdir
@@ -1990,7 +1980,8 @@ Replying to [comment:66 kcrisman]:
 > user    0m3.349s
 > sys     0m4.671s
 > sage: An error occurred while installing twisted-9.0.p2
-> }}}
+> ```
+
 
 Were you using the new setuptools from #11363? If so it may be worth trying a newer twisted from #8741.
 
@@ -2039,7 +2030,7 @@ Updated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376
 archive/issue_comments_099221.json:
 ```json
 {
-    "body": "By the way, I don't know how feasible this is, but it would be very nice if the new python spkg passed self-tests: set SAGE_CHECK to \"yes\" and install the spkg.  Previous versions of Python have failed the self-tests, but it's perhaps the only standard spkg for which this is true.  With the spkg here, on an OS X box:\n\n```\n344 tests OK.\n4 tests failed:\n    test__locale test_ctypes test_distutils test_locale\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb3\n    test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dl test_epoll test_gdb test_gdbm test_gl test_imageop\n    test_imgfile test_largefile test_linuxaudiodev test_macos\n    test_macostools test_ossaudiodev test_scriptpackages test_smtpnet\n    test_socketserver test_startfile test_sunaudiodev test_timeout\n    test_tk test_ttk_guionly test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n5 skips unexpected on darwin:\n    test_aepack test_applesingle test_dl test_macos\n    test_scriptpackages\nmake: *** [test] Error 1\nAn error occurred while testing Python\n```\n\nOn sage.math:\n\n```\n346 tests OK.\n1 test failed:\n    test_distutils\n39 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_dl test_gdb test_gdbm test_gl test_imageop\n    test_imgfile test_kqueue test_linuxaudiodev test_macos\n    test_macostools test_ossaudiodev test_scriptpackages test_smtpnet\n    test_socketserver test_startfile test_sunaudiodev test_timeout\n    test_tk test_ttk_guionly test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n7 skips unexpected on linux2:\n    test_bsddb test_bsddb3 test_dbm test_gdb test_gdbm test_tk\n    test_ttk_guionly\nmake: *** [test] Error 1\nAn error occurred while testing Python\n```\n\n(I didn't upgrade the distutils package or anything else, just ran \"sage -f python-2.7.1.spkg\", so some of these may go away.)",
+    "body": "By the way, I don't know how feasible this is, but it would be very nice if the new python spkg passed self-tests: set SAGE_CHECK to \"yes\" and install the spkg.  Previous versions of Python have failed the self-tests, but it's perhaps the only standard spkg for which this is true.  With the spkg here, on an OS X box:\n\n```\n344 tests OK.\n4 tests failed:\n    test__locale test_ctypes test_distutils test_locale\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb3\n    test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dl test_epoll test_gdb test_gdbm test_gl test_imageop\n    test_imgfile test_largefile test_linuxaudiodev test_macos\n    test_macostools test_ossaudiodev test_scriptpackages test_smtpnet\n    test_socketserver test_startfile test_sunaudiodev test_timeout\n    test_tk test_ttk_guionly test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n5 skips unexpected on darwin:\n    test_aepack test_applesingle test_dl test_macos\n    test_scriptpackages\nmake: *** [test] Error 1\nAn error occurred while testing Python\n```\nOn sage.math:\n\n```\n346 tests OK.\n1 test failed:\n    test_distutils\n39 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_dl test_gdb test_gdbm test_gl test_imageop\n    test_imgfile test_kqueue test_linuxaudiodev test_macos\n    test_macostools test_ossaudiodev test_scriptpackages test_smtpnet\n    test_socketserver test_startfile test_sunaudiodev test_timeout\n    test_tk test_ttk_guionly test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n7 skips unexpected on linux2:\n    test_bsddb test_bsddb3 test_dbm test_gdb test_gdbm test_tk\n    test_ttk_guionly\nmake: *** [test] Error 1\nAn error occurred while testing Python\n```\n(I didn't upgrade the distutils package or anything else, just ran \"sage -f python-2.7.1.spkg\", so some of these may go away.)",
     "created_at": "2011-06-20T18:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2070,7 +2061,6 @@ By the way, I don't know how feasible this is, but it would be very nice if the 
 make: *** [test] Error 1
 An error occurred while testing Python
 ```
-
 On sage.math:
 
 ```
@@ -2093,7 +2083,6 @@ On sage.math:
 make: *** [test] Error 1
 An error occurred while testing Python
 ```
-
 (I didn't upgrade the distutils package or anything else, just ran "sage -f python-2.7.1.spkg", so some of these may go away.)
 
 
@@ -2103,7 +2092,7 @@ An error occurred while testing Python
 archive/issue_comments_099222.json:
 ```json
 {
-    "body": "python testing is difficult. Even in gentoo the procedure is complicated. I'll have a look at it but I cannot make promise. There may be modules that we shouldn't build in the first place (nothing useful to sage, don't worry).\n\nWe have this for example in the ebuild:\n\n```\n\tif use berkdb; then\n\t\tewarn \"\\\"bsddb\\\" module is out-of-date and no longer maintained inside dev-lang/python. It has\"\n\t\tewarn \"been additionally removed in Python 3. You should use external, still maintained \\\"bsddb3\\\"\"\n\t\tewarn \"module provided by dev-python/bsddb3 which supports both Python 2 and Python 3.\"\n\tfi\n```\n\n\ngdb, gdm, dbm and tk require extra things on the host system so they may very well fail without. Actually according to the ebuild distutils and gdm are known to fail.",
+    "body": "python testing is difficult. Even in gentoo the procedure is complicated. I'll have a look at it but I cannot make promise. There may be modules that we shouldn't build in the first place (nothing useful to sage, don't worry).\n\nWe have this for example in the ebuild:\n\n```\n\tif use berkdb; then\n\t\tewarn \"\\\"bsddb\\\" module is out-of-date and no longer maintained inside dev-lang/python. It has\"\n\t\tewarn \"been additionally removed in Python 3. You should use external, still maintained \\\"bsddb3\\\"\"\n\t\tewarn \"module provided by dev-python/bsddb3 which supports both Python 2 and Python 3.\"\n\tfi\n```\n\ngdb, gdm, dbm and tk require extra things on the host system so they may very well fail without. Actually according to the ebuild distutils and gdm are known to fail.",
     "created_at": "2011-06-20T20:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2123,7 +2112,6 @@ We have this for example in the ebuild:
 		ewarn "module provided by dev-python/bsddb3 which supports both Python 2 and Python 3."
 	fi
 ```
-
 
 gdb, gdm, dbm and tk require extra things on the host system so they may very well fail without. Actually according to the ebuild distutils and gdm are known to fail.
 
@@ -2227,7 +2215,7 @@ OK. There are a few more patches needed for numerical and formatting noise in 4.
 archive/issue_comments_099227.json:
 ```json
 {
-    "body": "> (Artificial version bumps aren't necessary, and simply `touch`ing `spkg/installed/<spkg-that-others-depend-on>` alone doesn't work.)\n> \n> In general:\n>  1. Copy the new spkg(s) to `$SAGE_ROOT/spkg/standard/`.\n>  1. `export SAGE_UPGRADING=yes`\nHuh, I didn't know about that, and it would be quite useful.  I can't find it in either the installation guide or the developer guide, though - is this documented yet?  Just curious.\n\nFrancois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.",
+    "body": "> (Artificial version bumps aren't necessary, and simply `touch`ing `spkg/installed/<spkg-that-others-depend-on>` alone doesn't work.)\n> \n> In general:\n> 1. Copy the new spkg(s) to `$SAGE_ROOT/spkg/standard/`.\n> 2. `export SAGE_UPGRADING=yes`\n\nHuh, I didn't know about that, and it would be quite useful.  I can't find it in either the installation guide or the developer guide, though - is this documented yet?  Just curious.\n\nFrancois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.",
     "created_at": "2011-08-23T23:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2239,8 +2227,9 @@ archive/issue_comments_099227.json:
 > (Artificial version bumps aren't necessary, and simply `touch`ing `spkg/installed/<spkg-that-others-depend-on>` alone doesn't work.)
 > 
 > In general:
->  1. Copy the new spkg(s) to `$SAGE_ROOT/spkg/standard/`.
->  1. `export SAGE_UPGRADING=yes`
+> 1. Copy the new spkg(s) to `$SAGE_ROOT/spkg/standard/`.
+> 2. `export SAGE_UPGRADING=yes`
+
 Huh, I didn't know about that, and it would be quite useful.  I can't find it in either the installation guide or the developer guide, though - is this documented yet?  Just curious.
 
 Francois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.
@@ -2252,7 +2241,7 @@ Francois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like
 archive/issue_comments_099228.json:
 ```json
 {
-    "body": "Replying to [comment:76 kcrisman]:\n> Francois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.  \n\nBe my guest, I thought that the fact things just became easier warranted an announcement.",
+    "body": "Replying to [comment:76 kcrisman]:\n> Francois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.  \n\n\nBe my guest, I thought that the fact things just became easier warranted an announcement.",
     "created_at": "2011-08-24T00:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2263,6 +2252,7 @@ archive/issue_comments_099228.json:
 
 Replying to [comment:76 kcrisman]:
 > Francois, I'll try to give this a test run on PPC OS X and/or Cygwin if you like.  
+
 
 Be my guest, I thought that the fact things just became easier warranted an announcement.
 
@@ -2309,7 +2299,7 @@ So far Mac PPC is doing fine (I just swapped out the spkgs in a source tar).  Nu
 archive/issue_comments_099231.json:
 ```json
 {
-    "body": "I tried this (new python spkg plus all of the patches, then built from scratch) and I'm seeing a bunch of doctest failures.  Are some of these due to #11339?\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/categories/finite_crystals.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/morphism.pyx # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/integer.pyx # 3 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/homset.py # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/padics/padic_capped_relative_element.pyx #  1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/combinat/e_one_star.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/combinat/words/nfactor_enumerable_word.py # 2 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/geometry/polyhedra.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/symbolic/callable.py # 5 doctests failed\n```\n\nI think I did everything right.  I put together a Sage distribution with the python spkg and the patches, based on 4.7.2.alpha1:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar](http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar)\n\nUpgrade path:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958/](http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958/)",
+    "body": "I tried this (new python spkg plus all of the patches, then built from scratch) and I'm seeing a bunch of doctest failures.  Are some of these due to #11339?\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/categories/finite_crystals.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/morphism.pyx # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/integer.pyx # 3 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/homset.py # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/padics/padic_capped_relative_element.pyx #  1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/combinat/e_one_star.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/combinat/words/nfactor_enumerable_word.py # 2 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/geometry/polyhedra.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py # 0 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/symbolic/callable.py # 5 doctests failed\n```\nI think I did everything right.  I put together a Sage distribution with the python spkg and the patches, based on 4.7.2.alpha1:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar](http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar)\n\nUpgrade path:\n\n- [http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958/](http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958/)",
     "created_at": "2011-08-25T02:00:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2334,7 +2324,6 @@ The following tests failed:
         sage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py # 0 doctests failed
         sage -t  -long -force_lib devel/sage/sage/symbolic/callable.py # 5 doctests failed
 ```
-
 I think I did everything right.  I put together a Sage distribution with the python spkg and the patches, based on 4.7.2.alpha1:
 
 - [http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar](http://sage.math.washington.edu/home/palmieri/misc/9958/sage-4.7.2.9958.tar)
@@ -2350,7 +2339,7 @@ Upgrade path:
 archive/issue_comments_099232.json:
 ```json
 {
-    "body": "Any failures from #11339 gives you a killed doctest, so\n\n```\nsage -t  -long -force_lib devel/sage/sage/rings/morphism.pyx\nsage -t  -long -force_lib devel/sage/sage/rings/homset.py\nsage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py\n```\n\ncould all be, a verbose run would help figure it out. By nature #11339 is somewhat random, not everyone see the same failures but all these are familiar.\n\nJust checking the others with my current list.\n\n* sage/categories/finite_crystals.py is a new one introduced in 4.7.2 where the error message has changed slightly when using python-2.7.\n* sage/rings/integer.pyx is definitely python-2.7 related but not patched yet because I am not sure what should be done there.\n* sage/rings/padics/padic_capped_relative_element.pyx same thing\n* sage/combinat/e_one_star.py I had a patch but it became to fuzzy haven't done a new one.\n* sage/combinat/words/nfactor_enumerable_word.py python-2.7 two successive results are inverted, I want someone else to look at that one to make sure we can just do the obvious thing.\n* sage/symbolic/callable.py new in 4.7.2 change in the error message because we are running python-2.7\n* sage/geometry/polyhedra.py never seen that one before, can you re-run it and give more info on the failure?\n\nAs you can see a few more patches are needed and apart from #11339 which is a big show stopper because of the crashes at least two other tests point to some potential problems that should be looked at.",
+    "body": "Any failures from #11339 gives you a killed doctest, so\n\n```\nsage -t  -long -force_lib devel/sage/sage/rings/morphism.pyx\nsage -t  -long -force_lib devel/sage/sage/rings/homset.py\nsage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py\n```\ncould all be, a verbose run would help figure it out. By nature #11339 is somewhat random, not everyone see the same failures but all these are familiar.\n\nJust checking the others with my current list.\n\n* sage/categories/finite_crystals.py is a new one introduced in 4.7.2 where the error message has changed slightly when using python-2.7.\n* sage/rings/integer.pyx is definitely python-2.7 related but not patched yet because I am not sure what should be done there.\n* sage/rings/padics/padic_capped_relative_element.pyx same thing\n* sage/combinat/e_one_star.py I had a patch but it became to fuzzy haven't done a new one.\n* sage/combinat/words/nfactor_enumerable_word.py python-2.7 two successive results are inverted, I want someone else to look at that one to make sure we can just do the obvious thing.\n* sage/symbolic/callable.py new in 4.7.2 change in the error message because we are running python-2.7\n* sage/geometry/polyhedra.py never seen that one before, can you re-run it and give more info on the failure?\n\nAs you can see a few more patches are needed and apart from #11339 which is a big show stopper because of the crashes at least two other tests point to some potential problems that should be looked at.",
     "created_at": "2011-08-25T03:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2366,7 +2355,6 @@ sage -t  -long -force_lib devel/sage/sage/rings/morphism.pyx
 sage -t  -long -force_lib devel/sage/sage/rings/homset.py
 sage -t  -long -force_lib devel/sage/sage/schemes/generic/scheme.py
 ```
-
 could all be, a verbose run would help figure it out. By nature #11339 is somewhat random, not everyone see the same failures but all these are familiar.
 
 Just checking the others with my current list.
@@ -2388,7 +2376,7 @@ As you can see a few more patches are needed and apart from #11339 which is a bi
 archive/issue_comments_099233.json:
 ```json
 {
-    "body": "Here are the failures I get on x86:\n\n\n```\nsage -t -long \u00a0-force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/misc/sageinspect.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/misc/randstate.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/rings/real_mpfr.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/stats/intlist.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/combinat/e_one_star.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/crypto/mq/mpolynomialsystem.py # Killed/crashed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/symbolic/callable.py # 5 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/functions/transcendental.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed\n```\n\n\nThe failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:\n\n\n```\nFile \"/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx\", line 53:\n    sage: ECModularSymbol(E)\nExpected:\n    Traceback (most recent call last):\n    ...\n    OverflowError: long int too large to convert to int\nGot:\n    Traceback (most recent call last):\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[11]>\", line 1, in <module>\n        ECModularSymbol(E)###line 53:\n    sage: ECModularSymbol(E)\n      File \"newforms.pyx\", line 69, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1820)\n        a6 = new_bigint(int(E.a6()))\n    OverflowError: Python int too large to convert to C long\n```\n\n\nThese tests do not fail on amd64 because \"long int too large to convert to int\" is returned as the OverflowError instead of \"Python int too large to convert to C long\".",
+    "body": "Here are the failures I get on x86:\n\n```\nsage -t -long \u00a0-force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/misc/sageinspect.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/misc/randstate.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/rings/real_mpfr.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/stats/intlist.pyx # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/combinat/e_one_star.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/crypto/mq/mpolynomialsystem.py # Killed/crashed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/symbolic/callable.py # 5 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/functions/transcendental.py # 1 doctests failed\nsage -t -long \u00a0-force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed\n```\n\nThe failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:\n\n```\nFile \"/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx\", line 53:\n    sage: ECModularSymbol(E)\nExpected:\n    Traceback (most recent call last):\n    ...\n    OverflowError: long int too large to convert to int\nGot:\n    Traceback (most recent call last):\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[11]>\", line 1, in <module>\n        ECModularSymbol(E)###line 53:\n    sage: ECModularSymbol(E)\n      File \"newforms.pyx\", line 69, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1820)\n        a6 = new_bigint(int(E.a6()))\n    OverflowError: Python int too large to convert to C long\n```\n\nThese tests do not fail on amd64 because \"long int too large to convert to int\" is returned as the OverflowError instead of \"Python int too large to convert to C long\".",
     "created_at": "2011-08-25T04:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2398,7 +2386,6 @@ archive/issue_comments_099233.json:
 ```
 
 Here are the failures I get on x86:
-
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed
@@ -2415,9 +2402,7 @@ sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py # 1 
 sage -t -long  -force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed
 ```
 
-
 The failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:
-
 
 ```
 File "/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx", line 53:
@@ -2441,7 +2426,6 @@ Got:
         a6 = new_bigint(int(E.a6()))
     OverflowError: Python int too large to convert to C long
 ```
-
 
 These tests do not fail on amd64 because "long int too large to convert to int" is returned as the OverflowError instead of "Python int too large to convert to C long".
 
@@ -2470,7 +2454,7 @@ I had forgotten about these. We need different test results for 32 and 64 bits f
 archive/issue_comments_099235.json:
 ```json
 {
-    "body": "Here's the failure for `sage/geometry/polyhedra.py`:\n\n```\nsage -t -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/palmieri/9958/sage-4.7.2.9958/devel/sage/sage/geometry/polyhedra.py\", line 4948:\n    sage: ppoints[0]\nExpected:\n    (-1.92296268638e-15, -1.92296268638e-15)\nGot:\n    (0.0, 0.0)\n**********************************************************************\n```\n\nIt looks like numerical noise, but is it an acceptable level of accuracy?",
+    "body": "Here's the failure for `sage/geometry/polyhedra.py`:\n\n```\nsage -t -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/palmieri/9958/sage-4.7.2.9958/devel/sage/sage/geometry/polyhedra.py\", line 4948:\n    sage: ppoints[0]\nExpected:\n    (-1.92296268638e-15, -1.92296268638e-15)\nGot:\n    (0.0, 0.0)\n**********************************************************************\n```\nIt looks like numerical noise, but is it an acceptable level of accuracy?",
     "created_at": "2011-08-25T17:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2492,7 +2476,6 @@ Got:
     (0.0, 0.0)
 **********************************************************************
 ```
-
 It looks like numerical noise, but is it an acceptable level of accuracy?
 
 
@@ -2616,7 +2599,7 @@ Added three new patches. I will rework the patches that need adjusting between 3
 archive/issue_comments_099242.json:
 ```json
 {
-    "body": "Replying to [comment:82 strogdon]:\n> Here are the failures I get on x86:\n> \n> {{{\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/misc/sageinspect.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/misc/randstate.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/rings/real_mpfr.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/stats/intlist.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/combinat/e_one_star.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/crypto/mq/mpolynomialsystem.py # Killed/crashed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/symbolic/callable.py # 5 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/functions/transcendental.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed\n> }}}\n> \n> The failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:\n> \n> {{{\n> File \"/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx\", line 53:\n>     sage: ECModularSymbol(E)\n> Expected:\n>     Traceback (most recent call last):\n>     ...\n>     OverflowError: long int too large to convert to int\n> Got:\n>     Traceback (most recent call last):\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n>         self.run_one_example(test, example, filename, compileflags)\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n>         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_1[11]>\", line 1, in <module>\n>         ECModularSymbol(E)###line 53:\n>     sage: ECModularSymbol(E)\n>       File \"newforms.pyx\", line 69, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1820)\n>         a6 = new_bigint(int(E.a6()))\n>     OverflowError: Python int too large to convert to C long\n> }}}\n> \n> These tests do not fail on amd64 because \"long int too large to convert to int\" is returned as the OverflowError instead of \"Python int too large to convert to C long\".\n\n\nSteve, what about\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n```\n",
+    "body": "Replying to [comment:82 strogdon]:\n> Here are the failures I get on x86:\n> \n> \n> ```\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/misc/sageinspect.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/misc/randstate.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/rings/real_mpfr.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/stats/intlist.pyx # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/combinat/e_one_star.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/crypto/mq/mpolynomialsystem.py # Killed/crashed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/symbolic/callable.py # 5 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/functions/transcendental.py # 1 doctests failed\n> sage -t -long \u00a0-force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed\n> ```\n> \n> The failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:\n> \n> \n> ```\n> File \"/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx\", line 53:\n>     sage: ECModularSymbol(E)\n> Expected:\n>     Traceback (most recent call last):\n>     ...\n>     OverflowError: long int too large to convert to int\n> Got:\n>     Traceback (most recent call last):\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n>         self.run_one_example(test, example, filename, compileflags)\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n>         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n>       File \"/storage/sage/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_1[11]>\", line 1, in <module>\n>         ECModularSymbol(E)###line 53:\n>     sage: ECModularSymbol(E)\n>       File \"newforms.pyx\", line 69, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1820)\n>         a6 = new_bigint(int(E.a6()))\n>     OverflowError: Python int too large to convert to C long\n> ```\n> \n> These tests do not fail on amd64 because \"long int too large to convert to int\" is returned as the OverflowError instead of \"Python int too large to convert to C long\".\n\n\n\nSteve, what about\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n```",
     "created_at": "2011-08-26T03:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2628,7 +2611,8 @@ archive/issue_comments_099242.json:
 Replying to [comment:82 strogdon]:
 > Here are the failures I get on x86:
 > 
-> {{{
+> 
+> ```
 > sage -t -long  -force_lib devel/sage-main/sage/libs/cremona/newforms.pyx # 1 doctests failed
 > sage -t -long  -force_lib devel/sage-main/sage/misc/sageinspect.py # 1 doctests failed
 > sage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx # 1 doctests failed
@@ -2641,11 +2625,12 @@ Replying to [comment:82 strogdon]:
 > sage -t -long  -force_lib devel/sage-main/sage/symbolic/callable.py # 5 doctests failed
 > sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py # 1 doctests failed
 > sage -t -long  -force_lib devel/sage-main/sage/categories/finite_crystals.py # 1 doctests failed
-> }}}
+> ```
 > 
 > The failures newforms.pyx, real_mpfr.pyx and intlist.pyx are all of the form:
 > 
-> {{{
+> 
+> ```
 > File "/storage/sage/sage-4.7.2.alpha1/devel/sage-main/sage/libs/cremona/newforms.pyx", line 53:
 >     sage: ECModularSymbol(E)
 > Expected:
@@ -2666,9 +2651,10 @@ Replying to [comment:82 strogdon]:
 >       File "newforms.pyx", line 69, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1820)
 >         a6 = new_bigint(int(E.a6()))
 >     OverflowError: Python int too large to convert to C long
-> }}}
+> ```
 > 
 > These tests do not fail on amd64 because "long int too large to convert to int" is returned as the OverflowError instead of "Python int too large to convert to C long".
+
 
 
 Steve, what about
@@ -2679,13 +2665,12 @@ sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_ratio
 
 
 
-
 ---
 
 archive/issue_comments_099243.json:
 ```json
 {
-    "body": "Replying to [comment:88 fbissey]:\n> Replying to [comment:82 strogdon]:\n> \n> Steve, what about\n> {{{\n> sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n> }}}\n\nHere on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?",
+    "body": "Replying to [comment:88 fbissey]:\n> Replying to [comment:82 strogdon]:\n> \n> Steve, what about\n> \n> ```\n> sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n> ```\n\n\nHere on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?",
     "created_at": "2011-08-26T03:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2698,9 +2683,11 @@ Replying to [comment:88 fbissey]:
 > Replying to [comment:82 strogdon]:
 > 
 > Steve, what about
-> {{{
+> 
+> ```
 > sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx
-> }}}
+> ```
+
 
 Here on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?
 
@@ -2711,7 +2698,7 @@ Here on x86 and amd64 the test passes. So, there seems to be some sort of incons
 archive/issue_comments_099244.json:
 ```json
 {
-    "body": "Replying to [comment:89 strogdon]:\n> Replying to [comment:88 fbissey]:\n> > Replying to [comment:82 strogdon]:\n> > \n> > Steve, what about\n> > {{{\n> > sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n> > }}}\n> \n> Here on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?\n\nYes! I'll fix it but it should be investigated. Gut feeling is on variation in cython definitions.",
+    "body": "Replying to [comment:89 strogdon]:\n> Replying to [comment:88 fbissey]:\n> > Replying to [comment:82 strogdon]:\n> > \n> > Steve, what about\n> > \n> > ```\n> > sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\n> > ```\n\n> \n> Here on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?\n\n\nYes! I'll fix it but it should be investigated. Gut feeling is on variation in cython definitions.",
     "created_at": "2011-08-26T03:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2725,11 +2712,14 @@ Replying to [comment:89 strogdon]:
 > > Replying to [comment:82 strogdon]:
 > > 
 > > Steve, what about
-> > {{{
+> > 
+> > ```
 > > sage -t -long  -force_lib devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx
-> > }}}
+> > ```
+
 > 
 > Here on x86 and amd64 the test passes. So, there seems to be some sort of inconsistency, doesn't it?
+
 
 Yes! I'll fix it but it should be investigated. Gut feeling is on variation in cython definitions.
 
@@ -2740,7 +2730,7 @@ Yes! I'll fix it but it should be investigated. Gut feeling is on variation in c
 archive/issue_comments_099245.json:
 ```json
 {
-    "body": "I've tried to remove the failures known above here.  Note that I didn't get the last few patches in time, but I removed those failures as well, assuming they were the same.  The timeouts/killed are *probably* unrelated - my computer is < 1 GHz, so I get a lot of timeouts and I forgot to set `SAGE_TIMEOUT_LONG` before I ran the tests - but at any rate I hope this will be useful.  After the hurricane I'll start this up again and run the remaining tests.\n\n```\n        sage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/functions/transcendental.py\"\n        sage -t -long \"devel/sage/sage/groups/generic.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/interfaces/maxima.py\" # Time out\n        sage -t -long \"devel/sage/sage/interfaces/singular.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"\n        sage -t -long \"devel/sage/sage/libs/ppl.pyx\" # Time out\n        sage -t -long \"devel/sage/sage/libs/singular/ring.pyx\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/misc/randstate.pyx\"\n        sage -t -long \"devel/sage/sage/misc/sageinspect.py\"\n        sage -t -long \"devel/sage/sage/rings/multi_power_series_ring_element.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/polynomial_singular_interface.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/real_mpfr.pyx\"\n        sage -t -long \"devel/sage/sage/rings/tests.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_local_data.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\" # Time out\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/gal_reps.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/period_lattice.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/generic/scheme.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/plane_conics/con_finite_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/plane_curves/projective_curve.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/stats/intlist.pyx\"\n        sage -t -long \"devel/sage/sage/structure/sage_object.pyx\" # Killed/crashed\n```\n",
+    "body": "I've tried to remove the failures known above here.  Note that I didn't get the last few patches in time, but I removed those failures as well, assuming they were the same.  The timeouts/killed are *probably* unrelated - my computer is < 1 GHz, so I get a lot of timeouts and I forgot to set `SAGE_TIMEOUT_LONG` before I ran the tests - but at any rate I hope this will be useful.  After the hurricane I'll start this up again and run the remaining tests.\n\n```\n        sage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/functions/transcendental.py\"\n        sage -t -long \"devel/sage/sage/groups/generic.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/interfaces/maxima.py\" # Time out\n        sage -t -long \"devel/sage/sage/interfaces/singular.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"\n        sage -t -long \"devel/sage/sage/libs/ppl.pyx\" # Time out\n        sage -t -long \"devel/sage/sage/libs/singular/ring.pyx\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/misc/randstate.pyx\"\n        sage -t -long \"devel/sage/sage/misc/sageinspect.py\"\n        sage -t -long \"devel/sage/sage/rings/multi_power_series_ring_element.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/polynomial/polynomial_singular_interface.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/rings/real_mpfr.pyx\"\n        sage -t -long \"devel/sage/sage/rings/tests.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_local_data.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\" # Time out\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/gal_reps.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/period_lattice.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/generic/scheme.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/plane_conics/con_finite_field.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/schemes/plane_curves/projective_curve.py\" # Killed/crashed\n        sage -t -long \"devel/sage/sage/stats/intlist.pyx\"\n        sage -t -long \"devel/sage/sage/structure/sage_object.pyx\" # Killed/crashed\n```",
     "created_at": "2011-08-26T19:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2789,13 +2779,12 @@ I've tried to remove the failures known above here.  Note that I didn't get the 
 
 
 
-
 ---
 
 archive/issue_comments_099246.json:
 ```json
 {
-    "body": "Here is one example.\n\n```\nsage -t -long \"devel/sage/sage/functions/transcendental.py\" \n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.7.2.alpha1/devel/sage/sage/functions/transcendental.py\", line 83:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05] \nGot:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]\n**********************************************************************\n```\n\nHere is one of the killed ones (not a timeout, I'm surprised):\n\n```\nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\nThe doctested process was killed by signal 10\n         [352.0 s]\n```\n\nCould this be an unrelated 4.7.2.alpha1 issue on my platform?",
+    "body": "Here is one example.\n\n```\nsage -t -long \"devel/sage/sage/functions/transcendental.py\" \n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.7.2.alpha1/devel/sage/sage/functions/transcendental.py\", line 83:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05] \nGot:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]\n**********************************************************************\n```\nHere is one of the killed ones (not a timeout, I'm surprised):\n\n```\nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\nThe doctested process was killed by signal 10\n         [352.0 s]\n```\nCould this be an unrelated 4.7.2.alpha1 issue on my platform?",
     "created_at": "2011-08-26T20:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2817,7 +2806,6 @@ Got:
     [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]
 **********************************************************************
 ```
-
 Here is one of the killed ones (not a timeout, I'm surprised):
 
 ```
@@ -2825,7 +2813,6 @@ sage -t -long "devel/sage/sage/crypto/mq/mpolynomialsystem.py"
 The doctested process was killed by signal 10
          [352.0 s]
 ```
-
 Could this be an unrelated 4.7.2.alpha1 issue on my platform?
 
 
@@ -2835,7 +2822,7 @@ Could this be an unrelated 4.7.2.alpha1 issue on my platform?
 archive/issue_comments_099247.json:
 ```json
 {
-    "body": "I am particularly interested in the killed/crashed tests. And also those for which there is already a patch.\n\n```\nsage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"\nsage -t -long \"devel/sage/sage/rings/real_mpfr.pyx\"\nsage -t -long \"devel/sage/sage/stats/intlist.pyx\"\n```\n\nare the 32/64 bits message difference already mentioned by Steve.\n\nThe timeouts are the regular suspect on ppc if I am not mistaken.\n\nThe transcendental.py doctest you are quoting is worrying me. It is patched in [attachment:trac_9958-fixing_numericalnoise-part1.patch] but you have a slightly different result again (one less digit on the last number). We may have to consider \na different patch.\n\nAll killed/crashed doctest are candidates for #11339 but you'll have to run sage -gdb on them to be sure.",
+    "body": "I am particularly interested in the killed/crashed tests. And also those for which there is already a patch.\n\n```\nsage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"\nsage -t -long \"devel/sage/sage/rings/real_mpfr.pyx\"\nsage -t -long \"devel/sage/sage/stats/intlist.pyx\"\n```\nare the 32/64 bits message difference already mentioned by Steve.\n\nThe timeouts are the regular suspect on ppc if I am not mistaken.\n\nThe transcendental.py doctest you are quoting is worrying me. It is patched in [attachment:trac_9958-fixing_numericalnoise-part1.patch] but you have a slightly different result again (one less digit on the last number). We may have to consider \na different patch.\n\nAll killed/crashed doctest are candidates for #11339 but you'll have to run sage -gdb on them to be sure.",
     "created_at": "2011-08-26T21:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2851,7 +2838,6 @@ sage -t -long "devel/sage/sage/libs/cremona/newforms.pyx"
 sage -t -long "devel/sage/sage/rings/real_mpfr.pyx"
 sage -t -long "devel/sage/sage/stats/intlist.pyx"
 ```
-
 are the 32/64 bits message difference already mentioned by Steve.
 
 The timeouts are the regular suspect on ppc if I am not mistaken.
@@ -2868,7 +2854,7 @@ All killed/crashed doctest are candidates for #11339 but you'll have to run sage
 archive/issue_comments_099248.json:
 ```json
 {
-    "body": "Replying to [comment:93 kcrisman]:\n> Here is one of the killed ones (not a timeout, I'm surprised):\n\n```\nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\nThe doctested process was killed by signal 10\n         [352.0 s]\n```\n\n> Could this be an unrelated 4.7.2.alpha1 issue on my platform?\n\nDoes `SIGUSR1` (!#10) have a special meaning on Darwin?",
+    "body": "Replying to [comment:93 kcrisman]:\n> Here is one of the killed ones (not a timeout, I'm surprised):\n\n{{{\nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\nThe doctested process was killed by signal 10\n         [352.0 s]\n}}}\n> Could this be an unrelated 4.7.2.alpha1 issue on my platform?\n\n\nDoes `SIGUSR1` (!#10) have a special meaning on Darwin?",
     "created_at": "2011-08-26T23:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2880,13 +2866,13 @@ archive/issue_comments_099248.json:
 Replying to [comment:93 kcrisman]:
 > Here is one of the killed ones (not a timeout, I'm surprised):
 
-```
+{{{
 sage -t -long "devel/sage/sage/crypto/mq/mpolynomialsystem.py"
 The doctested process was killed by signal 10
          [352.0 s]
-```
-
+}}}
 > Could this be an unrelated 4.7.2.alpha1 issue on my platform?
+
 
 Does `SIGUSR1` (!#10) have a special meaning on Darwin?
 
@@ -2897,7 +2883,7 @@ Does `SIGUSR1` (!#10) have a special meaning on Darwin?
 archive/issue_comments_099249.json:
 ```json
 {
-    "body": "Almost anything with \"polynomial\" in its name is likely to use singular (and crypto/mq/mpolynomialsystem.py is no exception), signal 10 is apparently a user defined signal so it could be anything. \n\nWe'll have to wait for the hurricane to move on before Karl can answer us on any of this points.\n\nLooking back at you list Karl I am also very curious about\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\nsage -t -long \"devel/sage/sage/misc/sageinspect.py\"\nsage -t -long \"devel/sage/sage/misc/randstate.pyx\"\n```\n\ntwo of these have already been patched (sage_object and randstate) in this ticket so I am quite curious about what's wrong with them.",
+    "body": "Almost anything with \"polynomial\" in its name is likely to use singular (and crypto/mq/mpolynomialsystem.py is no exception), signal 10 is apparently a user defined signal so it could be anything. \n\nWe'll have to wait for the hurricane to move on before Karl can answer us on any of this points.\n\nLooking back at you list Karl I am also very curious about\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\nsage -t -long \"devel/sage/sage/misc/sageinspect.py\"\nsage -t -long \"devel/sage/sage/misc/randstate.pyx\"\n```\ntwo of these have already been patched (sage_object and randstate) in this ticket so I am quite curious about what's wrong with them.",
     "created_at": "2011-08-26T23:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -2917,7 +2903,6 @@ sage -t -long "devel/sage/sage/structure/sage_object.pyx
 sage -t -long "devel/sage/sage/misc/sageinspect.py"
 sage -t -long "devel/sage/sage/misc/randstate.pyx"
 ```
-
 two of these have already been patched (sage_object and randstate) in this ticket so I am quite curious about what's wrong with them.
 
 
@@ -2949,7 +2934,7 @@ Anyway, I'll keep this ticket on the priority list for the machine I did these t
 archive/issue_comments_099251.json:
 ```json
 {
-    "body": "So, I did test this with Sage 4.7.2.alpha2 on my \"last\" 32-bit machine, a Pentium4 Prescott (which has SSE3) running Ubuntu 9.04; my other Pentium4 (Northwood, without SSE3 / PNI) recently died, and I won't revive it in the near future.\n\nThe good news are: The patches all still apply to 4.7.2.alpha2, though many hunks with partially large offsets, but no fuzz.\n\nThe bad news: I expected some numerical noise because of 32-bit architecture with (there rather rare) SSE3 (`-mfpmath=sse`), but also experienced at least one segfault (in `sage/rings/homset.py`). I'll have to investigate the rest, for now just:\n\n```\n...\nsage -t  -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\n**********************************************************************\nFile \"/media/H-1TB-P6-linux2/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage/sage/geometry/polyhedra.py\", line 4948:\n    sage: ppoints[0]\nExpected:\n    (-1.92296268638e-15, -1.92296268638e-15)\nGot:\n    (0.0, 0.0)\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_171\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_polyhedra.py\n\t [166.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  -long -force_lib \"devel/sage/sage/libs/cremona/newforms.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/functions/transcendental.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/misc/randstate.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/combinat/words/nfactor_enumerable_word.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/morphism.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/real_mpfr.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/homset.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/stats/intlist.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/schemes/generic/scheme.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\nTotal time for all tests: 26263.8 seconds\nmake: *** [testlong] Error 128\n\nreal\t439m23.357s\nuser\t393m40.644s\nsys\t31m7.485s\nleif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1$ \n```\n\n(The tail of the log. More to come later.)\n\nNote that I didn't test in parallel, although with some other CPU-greedy process running, but time-outs are unlikely. Vanilla 4.7.2.alpha2 passed all tests in exactly the same setting (and I did rebuild all dependent packages when installing the Python 2.7 spkg, modulo missing extension module dependencies in `module_list.py`).",
+    "body": "So, I did test this with Sage 4.7.2.alpha2 on my \"last\" 32-bit machine, a Pentium4 Prescott (which has SSE3) running Ubuntu 9.04; my other Pentium4 (Northwood, without SSE3 / PNI) recently died, and I won't revive it in the near future.\n\nThe good news are: The patches all still apply to 4.7.2.alpha2, though many hunks with partially large offsets, but no fuzz.\n\nThe bad news: I expected some numerical noise because of 32-bit architecture with (there rather rare) SSE3 (`-mfpmath=sse`), but also experienced at least one segfault (in `sage/rings/homset.py`). I'll have to investigate the rest, for now just:\n\n```\n...\nsage -t  -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\n**********************************************************************\nFile \"/media/H-1TB-P6-linux2/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage/sage/geometry/polyhedra.py\", line 4948:\n    sage: ppoints[0]\nExpected:\n    (-1.92296268638e-15, -1.92296268638e-15)\nGot:\n    (0.0, 0.0)\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_171\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_polyhedra.py\n\t [166.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  -long -force_lib \"devel/sage/sage/libs/cremona/newforms.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/functions/transcendental.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/misc/randstate.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/combinat/words/nfactor_enumerable_word.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/morphism.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/real_mpfr.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/rings/homset.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/stats/intlist.pyx\"\n\tsage -t  -long -force_lib \"devel/sage/sage/schemes/generic/scheme.py\"\n\tsage -t  -long -force_lib \"devel/sage/sage/geometry/polyhedra.py\"\nTotal time for all tests: 26263.8 seconds\nmake: *** [testlong] Error 128\n\nreal\t439m23.357s\nuser\t393m40.644s\nsys\t31m7.485s\nleif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1$ \n```\n(The tail of the log. More to come later.)\n\nNote that I didn't test in parallel, although with some other CPU-greedy process running, but time-outs are unlikely. Vanilla 4.7.2.alpha2 passed all tests in exactly the same setting (and I did rebuild all dependent packages when installing the Python 2.7 spkg, modulo missing extension module dependencies in `module_list.py`).",
     "created_at": "2011-08-29T02:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3004,7 +2989,6 @@ user	393m40.644s
 sys	31m7.485s
 leif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1$ 
 ```
-
 (The tail of the log. More to come later.)
 
 Note that I didn't test in parallel, although with some other CPU-greedy process running, but time-outs are unlikely. Vanilla 4.7.2.alpha2 passed all tests in exactly the same setting (and I did rebuild all dependent packages when installing the Python 2.7 spkg, modulo missing extension module dependencies in `module_list.py`).
@@ -3074,7 +3058,7 @@ Pentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, -mfpmath=sse, Ub
 archive/issue_comments_099255.json:
 ```json
 {
-    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by @nexttime created at 2011-08-29 04:35:45\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```\n",
+    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by @nexttime created at 2011-08-29 04:35:45\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```",
     "created_at": "2011-08-29T04:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3087,6 +3071,7 @@ Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_r
 
 Replying to [comment:99 leif]:
 > Attaching short logs of rerun tests (all reproducable)...
+
 
 Done.
 
@@ -3117,13 +3102,12 @@ sys	0m1.068s
 
 
 
-
 ---
 
 archive/issue_comments_099256.json:
 ```json
 {
-    "body": "Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\n```\nsage -t  -long -force_lib \"devel/sage/sage/combinat/words/nfactor_enumerable_word.py\"\n```\n\nis known to fail but is probably a minor adjustment.\n\n```\nsage -t  -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n```\n\nis new. The rest look like #11339 material.",
+    "body": "Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\n```\nsage -t  -long -force_lib \"devel/sage/sage/combinat/words/nfactor_enumerable_word.py\"\n```\nis known to fail but is probably a minor adjustment.\n\n```\nsage -t  -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n```\nis new. The rest look like #11339 material.",
     "created_at": "2011-08-29T05:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3137,13 +3121,11 @@ Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedr
 ```
 sage -t  -long -force_lib "devel/sage/sage/combinat/words/nfactor_enumerable_word.py"
 ```
-
 is known to fail but is probably a minor adjustment.
 
 ```
 sage -t  -long -force_lib "devel/sage/sage/combinat/words/suffix_trees.py"
 ```
-
 is new. The rest look like #11339 material.
 
 
@@ -3153,7 +3135,7 @@ is new. The rest look like #11339 material.
 archive/issue_comments_099257.json:
 ```json
 {
-    "body": "Replying to [comment:101 fbissey]:\n> Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\nThe failing doctests are all in [attachment:Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log].\n\n> [...] The rest look like #11339 material.\n\nI'm just to apply the patches from there; the machine is dead slow, doing a `./sage -ba-force` atm to exclude missing extension module dependencies, as I've not built from scratch.",
+    "body": "Replying to [comment:101 fbissey]:\n> Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\n\nThe failing doctests are all in [attachment:Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log].\n\n> [...] The rest look like #11339 material.\n\n\nI'm just to apply the patches from there; the machine is dead slow, doing a `./sage -ba-force` atm to exclude missing extension module dependencies, as I've not built from scratch.",
     "created_at": "2011-08-29T05:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3165,9 +3147,11 @@ archive/issue_comments_099257.json:
 Replying to [comment:101 fbissey]:
 > Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.
 
+
 The failing doctests are all in [attachment:Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log].
 
 > [...] The rest look like #11339 material.
+
 
 I'm just to apply the patches from there; the machine is dead slow, doing a `./sage -ba-force` atm to exclude missing extension module dependencies, as I've not built from scratch.
 
@@ -3196,7 +3180,7 @@ I was too fast. Some of the failures are already reported by Steve. I may try to
 archive/issue_comments_099259.json:
 ```json
 {
-    "body": "Just experienced some new(?) error when cloning the Sage library for #11339:\n\n```\n...\nbyte-compiling /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage/misc/copying.py to copying.pyc\nbyte-compiling /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage/version.py to version.pyc\nrunning install_egg_info\nRemoving /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage-0.0.0-py2.7.egg-info\nWriting /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage-0.0.0-py2.7.egg-info\nException in thread Thread-4 (most likely raised during interpreter shutdown):\nTraceback (most recent call last):\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 530, in __bootstrap_inner\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 483, in run\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/multiprocessing/pool.py\", line 272, in _handle_workers\n<type 'exceptions.TypeError'>: 'NoneType' object is not callable\nException in thread Thread-1 (most likely raised during interpreter shutdown):\nTraceback (most recent call last):\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 530, in __bootstrap_inner\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 483, in run\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/multiprocessing/pool.py\", line 272, in _handle_workers\n<type 'exceptions.TypeError'>: 'NoneType' object is not callable\n\nreal\t1m35.816s\nuser\t1m35.794s\nsys\t0m5.648s\n\nAfter cloning, if you change any Sage library files and want to rebuild\nthe html version of the reference manual, use the command\n    sage -docbuild reference html\n(after running 'sage -b').\n...\n```\n",
+    "body": "Just experienced some new(?) error when cloning the Sage library for #11339:\n\n```\n...\nbyte-compiling /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage/misc/copying.py to copying.pyc\nbyte-compiling /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage/version.py to version.pyc\nrunning install_egg_info\nRemoving /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage-0.0.0-py2.7.egg-info\nWriting /home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python2.7/site-packages/sage-0.0.0-py2.7.egg-info\nException in thread Thread-4 (most likely raised during interpreter shutdown):\nTraceback (most recent call last):\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 530, in __bootstrap_inner\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 483, in run\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/multiprocessing/pool.py\", line 272, in _handle_workers\n<type 'exceptions.TypeError'>: 'NoneType' object is not callable\nException in thread Thread-1 (most likely raised during interpreter shutdown):\nTraceback (most recent call last):\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 530, in __bootstrap_inner\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/threading.py\", line 483, in run\n  File \"/home/leif/Sage/sage-4.7.2.alpha2-gcc-4.5.1/local/lib/python/multiprocessing/pool.py\", line 272, in _handle_workers\n<type 'exceptions.TypeError'>: 'NoneType' object is not callable\n\nreal\t1m35.816s\nuser\t1m35.794s\nsys\t0m5.648s\n\nAfter cloning, if you change any Sage library files and want to rebuild\nthe html version of the reference manual, use the command\n    sage -docbuild reference html\n(after running 'sage -b').\n...\n```",
     "created_at": "2011-08-29T07:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3240,13 +3224,12 @@ the html version of the reference manual, use the command
 
 
 
-
 ---
 
 archive/issue_comments_099260.json:
 ```json
 {
-    "body": "Waaaaaah!\n\n```\nleif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage-9958-11339$ ../../sage -hg import -v ~/Sage/patches/trac_11339_refcount_singular_polynomials.patch \napplying /home/leif/Sage/patches/trac_11339_refcount_singular_polynomials.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pxd\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #13 FAILED at 727\nHunk #14 FAILED at 741\nHunk #15 FAILED at 763\nHunk #16 FAILED at 773\nHunk #17 FAILED at 825\nHunk #18 succeeded at 910 with fuzz 2 (offset 72 lines).\nHunk #19 FAILED at 875\nHunk #20 succeeded at 961 (offset 75 lines).\nHunk #21 succeeded at 980 (offset 75 lines).\nHunk #22 succeeded at 1006 (offset 75 lines).\n...\n```\n\n(The first patch still applies, with offsets.)\n\nI'm not going to fix that...",
+    "body": "Waaaaaah!\n\n```\nleif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage-9958-11339$ ../../sage -hg import -v ~/Sage/patches/trac_11339_refcount_singular_polynomials.patch \napplying /home/leif/Sage/patches/trac_11339_refcount_singular_polynomials.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pxd\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #13 FAILED at 727\nHunk #14 FAILED at 741\nHunk #15 FAILED at 763\nHunk #16 FAILED at 773\nHunk #17 FAILED at 825\nHunk #18 succeeded at 910 with fuzz 2 (offset 72 lines).\nHunk #19 FAILED at 875\nHunk #20 succeeded at 961 (offset 75 lines).\nHunk #21 succeeded at 980 (offset 75 lines).\nHunk #22 succeeded at 1006 (offset 75 lines).\n...\n```\n(The first patch still applies, with offsets.)\n\nI'm not going to fix that...",
     "created_at": "2011-08-29T07:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3274,7 +3257,6 @@ Hunk #21 succeeded at 980 (offset 75 lines).
 Hunk #22 succeeded at 1006 (offset 75 lines).
 ...
 ```
-
 (The first patch still applies, with offsets.)
 
 I'm not going to fix that...
@@ -3286,7 +3268,7 @@ I'm not going to fix that...
 archive/issue_comments_099261.json:
 ```json
 {
-    "body": "Replying to [comment:101 fbissey]:\n> Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\nI'm sure the polyhedra.py patch was needed at one time but it now (?) appears that \n\n```\n\n@@ -4946,7 +4946,7 @@\n         sage: proj = ProjectionFuncStereographic([1.1,1.1,1.1])\n         sage: ppoints = [proj(vector(x)) for x in cube]\n         sage: ppoints[0]\n-        (0.0, 0.0)\n+        (-1.92296268638e-15, -1.92296268638e-15)\n     \"\"\"\n     def __init__(self, projection_point):\n         \"\"\"\n```\n\n\nfrom trac_9958-fixing_numericalnoise-part1.patch is no longer needed.",
+    "body": "Replying to [comment:101 fbissey]:\n> Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\nI'm sure the polyhedra.py patch was needed at one time but it now (?) appears that \n\n```\n\n@@ -4946,7 +4946,7 @@\n         sage: proj = ProjectionFuncStereographic([1.1,1.1,1.1])\n         sage: ppoints = [proj(vector(x)) for x in cube]\n         sage: ppoints[0]\n-        (0.0, 0.0)\n+        (-1.92296268638e-15, -1.92296268638e-15)\n     \"\"\"\n     def __init__(self, projection_point):\n         \"\"\"\n```\n\nfrom trac_9958-fixing_numericalnoise-part1.patch is no longer needed.",
     "created_at": "2011-08-29T13:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3297,6 +3279,7 @@ archive/issue_comments_099261.json:
 
 Replying to [comment:101 fbissey]:
 > Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.
+
 I'm sure the polyhedra.py patch was needed at one time but it now (?) appears that 
 
 ```
@@ -3312,7 +3295,6 @@ I'm sure the polyhedra.py patch was needed at one time but it now (?) appears th
          """
 ```
 
-
 from trac_9958-fixing_numericalnoise-part1.patch is no longer needed.
 
 
@@ -3322,7 +3304,7 @@ from trac_9958-fixing_numericalnoise-part1.patch is no longer needed.
 archive/issue_comments_099262.json:
 ```json
 {
-    "body": "Replying to [comment:106 strogdon]:\n> Replying to [comment:101 fbissey]:\n> > Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n> I'm sure the polyhedra.py patch was needed at one time but it now (?) appears that \n> {{{\n> \n> `@``@` -4946,7 +4946,7 `@``@`\n>          sage: proj = ProjectionFuncStereographic([1.1,1.1,1.1])\n>          sage: ppoints = [proj(vector(x)) for x in cube]\n>          sage: ppoints[0]\n> -        (0.0, 0.0)\n> +        (-1.92296268638e-15, -1.92296268638e-15)\n>      \"\"\"\n>      def __init__(self, projection_point):\n>          \"\"\"\n> }}}\n> \n> from trac_9958-fixing_numericalnoise-part1.patch is no longer needed.\n\nYou are right I am reading the test results backwards. It now seems to go to 0 properly. One less patch in the patch and one less worry.",
+    "body": "Replying to [comment:106 strogdon]:\n> Replying to [comment:101 fbissey]:\n> > Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.\n\n> I'm sure the polyhedra.py patch was needed at one time but it now (?) appears that \n> {{{\n> \n> `@``@` -4946,7 +4946,7 `@``@`\n>          sage: proj = ProjectionFuncStereographic([1.1,1.1,1.1])\n>          sage: ppoints = [proj(vector(x)) for x in cube]\n>          sage: ppoints[0]\n> -        (0.0, 0.0)\n> +        (-1.92296268638e-15, -1.92296268638e-15)\n>      \"\"\"\n>      def __init__(self, projection_point):\n>          \"\"\"\n> }}}\n> \n> from trac_9958-fixing_numericalnoise-part1.patch is no longer needed.\n\n\nYou are right I am reading the test results backwards. It now seems to go to 0 properly. One less patch in the patch and one less worry.",
     "created_at": "2011-08-29T13:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3334,6 +3316,7 @@ archive/issue_comments_099262.json:
 Replying to [comment:106 strogdon]:
 > Replying to [comment:101 fbissey]:
 > > Thanks leif. Nothing worrying there. There is a patch for sage/geometry/polyhedra.py but obviously it doesn't apply properly anymore. transcendantal.py, randstate.pyx and intlist.pyx are all already patched but may need more tweaking, I'd be grateful for the output of these.
+
 > I'm sure the polyhedra.py patch was needed at one time but it now (?) appears that 
 > {{{
 > 
@@ -3349,6 +3332,7 @@ Replying to [comment:106 strogdon]:
 > }}}
 > 
 > from trac_9958-fixing_numericalnoise-part1.patch is no longer needed.
+
 
 You are right I am reading the test results backwards. It now seems to go to 0 properly. One less patch in the patch and one less worry.
 
@@ -3415,7 +3399,7 @@ Updated the first patch for polyhedra.py, split transcendental.py in its own pat
 archive/issue_comments_099266.json:
 ```json
 {
-    "body": "Replying to [comment:108 kcrisman]:\n> Okay, you can get a full list of current failure and what they looked like at [this link](http://sage.math.washington.edu/home/kcrisman/Failures.txt).  Some are definitely known above, but others may be unknown.  The timeouts are probably just due to this machine (and the Maxima one), but others I don't know whether they are here or #11339.\n\nYou have some nasty stuff in polyhedra.py\n\n```\nFile \"/Users/student/Desktop/sage-4.7.2.alpha1/devel/sage/sage/geometry/polyhedra.py\", line 5250:\n    sage: _.show()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_183[5]>\", line 1, in <module>\n        _.show()###line 5250:\n    sage: _.show()\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2526)\n      File \"base.pyx\", line 1124, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:10344)\n      File \"base.pyx\", line 663, in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:5867)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python2.7/zipfile.py\", line 1138, in writestr\n        self.fp.write(zinfo.FileHeader())\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python2.7/zipfile.py\", line 348, in FileHeader\n        len(filename), len(extra))\n    error: integer out of range for 'H' format code\n```\n\nYou get an extra digit in randstate compared to x86 :( [note to self it is in numerical_noise_part4].\n\nsage-inspect looks bad :( but not hopeless. The message is just overly long. I will have to postpone the rest for later.",
+    "body": "Replying to [comment:108 kcrisman]:\n> Okay, you can get a full list of current failure and what they looked like at [this link](http://sage.math.washington.edu/home/kcrisman/Failures.txt).  Some are definitely known above, but others may be unknown.  The timeouts are probably just due to this machine (and the Maxima one), but others I don't know whether they are here or #11339.\n\n\nYou have some nasty stuff in polyhedra.py\n\n```\nFile \"/Users/student/Desktop/sage-4.7.2.alpha1/devel/sage/sage/geometry/polyhedra.py\", line 5250:\n    sage: _.show()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_183[5]>\", line 1, in <module>\n        _.show()###line 5250:\n    sage: _.show()\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2526)\n      File \"base.pyx\", line 1124, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:10344)\n      File \"base.pyx\", line 663, in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:5867)\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python2.7/zipfile.py\", line 1138, in writestr\n        self.fp.write(zinfo.FileHeader())\n      File \"/Users/student/Desktop/sage-4.7.2.alpha1/local/lib/python2.7/zipfile.py\", line 348, in FileHeader\n        len(filename), len(extra))\n    error: integer out of range for 'H' format code\n```\nYou get an extra digit in randstate compared to x86 :( [note to self it is in numerical_noise_part4].\n\nsage-inspect looks bad :( but not hopeless. The message is just overly long. I will have to postpone the rest for later.",
     "created_at": "2011-08-29T20:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3426,6 +3410,7 @@ archive/issue_comments_099266.json:
 
 Replying to [comment:108 kcrisman]:
 > Okay, you can get a full list of current failure and what they looked like at [this link](http://sage.math.washington.edu/home/kcrisman/Failures.txt).  Some are definitely known above, but others may be unknown.  The timeouts are probably just due to this machine (and the Maxima one), but others I don't know whether they are here or #11339.
+
 
 You have some nasty stuff in polyhedra.py
 
@@ -3456,7 +3441,6 @@ Exception raised:
         len(filename), len(extra))
     error: integer out of range for 'H' format code
 ```
-
 You get an extra digit in randstate compared to x86 :( [note to self it is in numerical_noise_part4].
 
 sage-inspect looks bad :( but not hopeless. The message is just overly long. I will have to postpone the rest for later.
@@ -3582,7 +3566,7 @@ Updated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32
 archive/issue_comments_099273.json:
 ```json
 {
-    "body": "Replying to [comment:112 fbissey]:\n> In polyhedra.py it looks like you have a problem with jmol printing 3D images to file. It involves zip, looking at the pyx there is an instance of testing zip. Could you paste the cython code that produced sage/plot/plot3d/base.c:5867 ?\n\n```\n  /* \"sage/plot/plot3d/base.pyx\":663\n *         f.write(\"isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;\\n\")\n * \n *         render_params.output_archive.writestr('SCRIPT', f.getvalue())             # <<<<<<<<<<<<<<\n *         render_params.output_archive.close()\n * \n */\n  __pyx_t_3 = PyObject_GetAttr(__pyx_v_render_params, __pyx_n_s__output_archive); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_3);\n  __pyx_t_2 = PyObject_GetAttr(__pyx_t_3, __pyx_n_s__writestr); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_2);\n  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n  __pyx_t_3 = PyObject_GetAttr(__pyx_v_f, __pyx_n_s__getvalue); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_3);\n  __pyx_t_4 = PyObject_Call(__pyx_t_3, ((PyObject *)__pyx_empty_tuple), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_4);\n  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(((PyObject *)__pyx_t_3));\n  __Pyx_INCREF(((PyObject *)__pyx_n_s__SCRIPT));\n  PyTuple_SET_ITEM(__pyx_t_3, 0, ((PyObject *)__pyx_n_s__SCRIPT));\n  __Pyx_GIVEREF(((PyObject *)__pyx_n_s__SCRIPT));\n  PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4);\n  __Pyx_GIVEREF(__pyx_t_4);\n  __pyx_t_4 = 0;\n  __pyx_t_4 = PyObject_Call(__pyx_t_2, ((PyObject *)__pyx_t_3), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_4);\n  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;\n  __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;\n  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;\n```\n\n5867 is \n\n```\n  __pyx_t_4 = PyObject_Call(__pyx_t_2, ((PyObject *)__pyx_t_3), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n```\n\n\n----\nI was also surprised by the polyhedra.py additional weirdness.  Anything I can do to help identify it?  Warning: I'm planning on building and testing alpha2 *without* Python 2.7 now, which will tie up most resources on this machine for a couple days.",
+    "body": "Replying to [comment:112 fbissey]:\n> In polyhedra.py it looks like you have a problem with jmol printing 3D images to file. It involves zip, looking at the pyx there is an instance of testing zip. Could you paste the cython code that produced sage/plot/plot3d/base.c:5867 ?\n\n{{{\n  /* \"sage/plot/plot3d/base.pyx\":663\n*         f.write(\"isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;\\n\")\n* \n*         render_params.output_archive.writestr('SCRIPT', f.getvalue())             # <<<<<<<<<<<<<<\n*         render_params.output_archive.close()\n* \n */\n  __pyx_t_3 = PyObject_GetAttr(__pyx_v_render_params, __pyx_n_s__output_archive); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_3);\n  __pyx_t_2 = PyObject_GetAttr(__pyx_t_3, __pyx_n_s__writestr); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_2);\n  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n  __pyx_t_3 = PyObject_GetAttr(__pyx_v_f, __pyx_n_s__getvalue); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_3);\n  __pyx_t_4 = PyObject_Call(__pyx_t_3, ((PyObject *)__pyx_empty_tuple), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_4);\n  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(((PyObject *)__pyx_t_3));\n  __Pyx_INCREF(((PyObject *)__pyx_n_s__SCRIPT));\n  PyTuple_SET_ITEM(__pyx_t_3, 0, ((PyObject *)__pyx_n_s__SCRIPT));\n  __Pyx_GIVEREF(((PyObject *)__pyx_n_s__SCRIPT));\n  PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4);\n  __Pyx_GIVEREF(__pyx_t_4);\n  __pyx_t_4 = 0;\n  __pyx_t_4 = PyObject_Call(__pyx_t_2, ((PyObject *)__pyx_t_3), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n  __Pyx_GOTREF(__pyx_t_4);\n  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;\n  __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;\n  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;\n}}}\n5867 is \n\n```\n  __pyx_t_4 = PyObject_Call(__pyx_t_2, ((PyObject *)__pyx_t_3), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n```\n\n---\nI was also surprised by the polyhedra.py additional weirdness.  Anything I can do to help identify it?  Warning: I'm planning on building and testing alpha2 *without* Python 2.7 now, which will tie up most resources on this machine for a couple days.",
     "created_at": "2011-08-30T16:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3594,13 +3578,13 @@ archive/issue_comments_099273.json:
 Replying to [comment:112 fbissey]:
 > In polyhedra.py it looks like you have a problem with jmol printing 3D images to file. It involves zip, looking at the pyx there is an instance of testing zip. Could you paste the cython code that produced sage/plot/plot3d/base.c:5867 ?
 
-```
+{{{
   /* "sage/plot/plot3d/base.pyx":663
- *         f.write("isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;\n")
- * 
- *         render_params.output_archive.writestr('SCRIPT', f.getvalue())             # <<<<<<<<<<<<<<
- *         render_params.output_archive.close()
- * 
+*         f.write("isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;\n")
+* 
+*         render_params.output_archive.writestr('SCRIPT', f.getvalue())             # <<<<<<<<<<<<<<
+*         render_params.output_archive.close()
+* 
  */
   __pyx_t_3 = PyObject_GetAttr(__pyx_v_render_params, __pyx_n_s__output_archive); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
@@ -3625,16 +3609,14 @@ Replying to [comment:112 fbissey]:
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-```
-
+}}}
 5867 is 
 
 ```
   __pyx_t_4 = PyObject_Call(__pyx_t_2, ((PyObject *)__pyx_t_3), NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 663; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 ```
 
-
-----
+---
 I was also surprised by the polyhedra.py additional weirdness.  Anything I can do to help identify it?  Warning: I'm planning on building and testing alpha2 *without* Python 2.7 now, which will tie up most resources on this machine for a couple days.
 
 
@@ -3644,7 +3626,7 @@ I was also surprised by the polyhedra.py additional weirdness.  Anything I can d
 archive/issue_comments_099274.json:
 ```json
 {
-    "body": "Replying to [comment:109 fbissey]:\n> Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.\nHere the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.alpha2/devel/sage-main/sage/functions/transcendental.p\ny\", line 83:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843\n924...e-05]\nGot:\n    [0.04890051070806112, 0.0037793524098489063, 0.00036008245216265873, 3.7665622843\n924534e-05]\n**********************************************************************\n```\n\n\nThis is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.",
+    "body": "Replying to [comment:109 fbissey]:\n> Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.\n\nHere the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.alpha2/devel/sage-main/sage/functions/transcendental.p\ny\", line 83:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843\n924...e-05]\nGot:\n    [0.04890051070806112, 0.0037793524098489063, 0.00036008245216265873, 3.7665622843\n924534e-05]\n**********************************************************************\n```\n\nThis is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.",
     "created_at": "2011-08-31T02:10:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3655,8 +3637,8 @@ archive/issue_comments_099274.json:
 
 Replying to [comment:109 fbissey]:
 > Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.
-Here the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:
 
+Here the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py
@@ -3673,7 +3655,6 @@ Got:
 **********************************************************************
 ```
 
-
 This is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.
 
 
@@ -3683,7 +3664,7 @@ This is odd! I wonder what changed? Previously this test must have returned ...6
 archive/issue_comments_099275.json:
 ```json
 {
-    "body": "Replying to [comment:115 strogdon]:\n> Replying to [comment:109 fbissey]:\n> > Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.\n> Here the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:\n> \n> {{{\n> sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n> **********************************************************************\n> File \"/storage/sage/sage-4.7.2.alpha2/devel/sage-main/sage/functions/transcendental.p\n> y\", line 83:\n>     sage: w = exponential_integral_1(2,4); w\n> Expected:\n>     [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843\n> 924...e-05]\n> Got:\n>     [0.04890051070806112, 0.0037793524098489063, 0.00036008245216265873, 3.7665622843\n> 924534e-05]\n> **********************************************************************\n> }}}\n> \n> This is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.\n\n\nIt's my fault for not noticing this difference between 32 and 64 bit results. It was there before but I didn't notice it. I thought the last number was the only thing different so when I truncated the last number to the common digits I dropped the difference between 32 and 64 bit. So it is entirely my fault.",
+    "body": "Replying to [comment:115 strogdon]:\n> Replying to [comment:109 fbissey]:\n> > Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.\n\n> Here the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:\n> \n> \n> ```\n> sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n> **********************************************************************\n> File \"/storage/sage/sage-4.7.2.alpha2/devel/sage-main/sage/functions/transcendental.p\n> y\", line 83:\n>     sage: w = exponential_integral_1(2,4); w\n> Expected:\n>     [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843\n> 924...e-05]\n> Got:\n>     [0.04890051070806112, 0.0037793524098489063, 0.00036008245216265873, 3.7665622843\n> 924534e-05]\n> **********************************************************************\n> ```\n> \n> This is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.\n\n\n\nIt's my fault for not noticing this difference between 32 and 64 bit results. It was there before but I didn't notice it. I thought the last number was the only thing different so when I truncated the last number to the common digits I dropped the difference between 32 and 64 bit. So it is entirely my fault.",
     "created_at": "2011-08-31T02:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3695,9 +3676,11 @@ archive/issue_comments_099275.json:
 Replying to [comment:115 strogdon]:
 > Replying to [comment:109 fbissey]:
 > > Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.
+
 > Here the fix_transcendental patch fixed the associated test on x86 but now the test fails on amd64:
 > 
-> {{{
+> 
+> ```
 > sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py
 > **********************************************************************
 > File "/storage/sage/sage-4.7.2.alpha2/devel/sage-main/sage/functions/transcendental.p
@@ -3710,9 +3693,10 @@ Replying to [comment:115 strogdon]:
 >     [0.04890051070806112, 0.0037793524098489063, 0.00036008245216265873, 3.7665622843
 > 924534e-05]
 > **********************************************************************
-> }}}
+> ```
 > 
 > This is odd! I wonder what changed? Previously this test must have returned ...67 and not ...63 for it to pass.
+
 
 
 It's my fault for not noticing this difference between 32 and 64 bit results. It was there before but I didn't notice it. I thought the last number was the only thing different so when I truncated the last number to the common digits I dropped the difference between 32 and 64 bit. So it is entirely my fault.
@@ -3762,7 +3746,7 @@ transcendental patch updated.
 archive/issue_comments_099278.json:
 ```json
 {
-    "body": "Replying to [comment:117 fbissey]:\n> transcendental patch updated.\n\nLiterally?",
+    "body": "Replying to [comment:117 fbissey]:\n> transcendental patch updated.\n\n\nLiterally?",
     "created_at": "2011-09-02T01:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3774,6 +3758,7 @@ archive/issue_comments_099278.json:
 Replying to [comment:117 fbissey]:
 > transcendental patch updated.
 
+
 Literally?
 
 
@@ -3783,7 +3768,7 @@ Literally?
 archive/issue_comments_099279.json:
 ```json
 {
-    "body": "Replying to [comment:118 leif]:\n> Replying to [comment:117 fbissey]:\n> > transcendental patch updated.\n> \n> Literally?\nLiterally.",
+    "body": "Replying to [comment:118 leif]:\n> Replying to [comment:117 fbissey]:\n> > transcendental patch updated.\n\n> \n> Literally?\n\nLiterally.",
     "created_at": "2011-09-02T01:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3795,8 +3780,10 @@ archive/issue_comments_099279.json:
 Replying to [comment:118 leif]:
 > Replying to [comment:117 fbissey]:
 > > transcendental patch updated.
+
 > 
 > Literally?
+
 Literally.
 
 
@@ -3828,7 +3815,7 @@ Would it be helpful for me to do #11339 on this new build (without Python 2.7), 
 archive/issue_comments_099281.json:
 ```json
 {
-    "body": "Replying to [comment:120 kcrisman]:\n> Just for reference, on the PPC machine all tests pass with alpha2 except three timeouts which are long-standing (I didn't bother to set `SAGE_TIMEOUT_LONG` but I've seen these many times).\n> \n> So all the rest are due to this ticket or #11339.  \n\nThat's a very useful point of reference. Thank you for providing it.\n\n> \n> Would it be helpful for me to do #11339 on this new build (without Python 2.7), or is that in limbo right now anyway?  Alternately, is there any way to decouple this ticket from that one?\n\nTechnically you can apply #11339 without python 2.7 - the behavior we want to correct is only revealed when we use python 2.7 but I guess it would be useful to know if there are any side effects if you apply the patch on a python 2.6 install. Bear in mind that the current patch are not necessarily the best solution to the problem, what's more they are a whack a mole game. Fix something here and some new fault appears in a completely unexpected location.",
+    "body": "Replying to [comment:120 kcrisman]:\n> Just for reference, on the PPC machine all tests pass with alpha2 except three timeouts which are long-standing (I didn't bother to set `SAGE_TIMEOUT_LONG` but I've seen these many times).\n> \n> So all the rest are due to this ticket or #11339.  \n\n\nThat's a very useful point of reference. Thank you for providing it.\n\n> \n> Would it be helpful for me to do #11339 on this new build (without Python 2.7), or is that in limbo right now anyway?  Alternately, is there any way to decouple this ticket from that one?\n\n\nTechnically you can apply #11339 without python 2.7 - the behavior we want to correct is only revealed when we use python 2.7 but I guess it would be useful to know if there are any side effects if you apply the patch on a python 2.6 install. Bear in mind that the current patch are not necessarily the best solution to the problem, what's more they are a whack a mole game. Fix something here and some new fault appears in a completely unexpected location.",
     "created_at": "2011-09-02T12:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3842,10 +3829,12 @@ Replying to [comment:120 kcrisman]:
 > 
 > So all the rest are due to this ticket or #11339.  
 
+
 That's a very useful point of reference. Thank you for providing it.
 
 > 
 > Would it be helpful for me to do #11339 on this new build (without Python 2.7), or is that in limbo right now anyway?  Alternately, is there any way to decouple this ticket from that one?
+
 
 Technically you can apply #11339 without python 2.7 - the behavior we want to correct is only revealed when we use python 2.7 but I guess it would be useful to know if there are any side effects if you apply the patch on a python 2.6 install. Bear in mind that the current patch are not necessarily the best solution to the problem, what's more they are a whack a mole game. Fix something here and some new fault appears in a completely unexpected location.
 
@@ -3895,7 +3884,7 @@ Fixes #1159, according to that ticket.
 archive/issue_comments_099284.json:
 ```json
 {
-    "body": "That's really weird. Some of the hashing problems I encounter with python 2.7 are almost the same as reported in [http://trac.sagemath.org/sage_trac/ticket/4957#comment:3](http://trac.sagemath.org/sage_trac/ticket/4957#comment:3)\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3046:\n    sage: n = -920390823904823094890238490238484; n.__hash__()\nExpected:\n    6874330978542788722   \nGot:\n    -2623069716\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3061:\n    sage: hash(n)\nExpected:\n    -9223372036854767616      \nGot:\n    8192\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3064:\n    sage: hash(n) == hash(int(n))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
+    "body": "That's really weird. Some of the hashing problems I encounter with python 2.7 are almost the same as reported in [http://trac.sagemath.org/sage_trac/ticket/4957#comment:3](http://trac.sagemath.org/sage_trac/ticket/4957#comment:3)\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3046:\n    sage: n = -920390823904823094890238490238484; n.__hash__()\nExpected:\n    6874330978542788722   \nGot:\n    -2623069716\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3061:\n    sage: hash(n)\nExpected:\n    -9223372036854767616      \nGot:\n    8192\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3064:\n    sage: hash(n) == hash(int(n))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```",
     "created_at": "2011-11-01T23:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3934,13 +3923,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_099285.json:
 ```json
 {
-    "body": "With python-2.6:\n\n```\nsage: n=2^63+2^13\nsage: n\n9223372036854784000\nsage: int(n)\n9223372036854784000L\nsage: hash(n)\n-9223372036854767616\nsage: hash(int(n))\n-9223372036854767616\n```\n\nwith python-2.7\n\n```\nsage: n=2^63+2^13\nsage: n\n9223372036854784000\nsage: hash(n)\n8192\nsage: int(n)\n9223372036854784000L\nsage: hash(int(n))\n-9223372036854767616\n```\n\nFurthermore in both case:\n\n```\nsage: type(n)\n<type 'sage.rings.integer.Integer'>\nsage: type(int(n))\n<type 'long'>\n```\n\nSo I would expect different hashes naively.",
+    "body": "With python-2.6:\n\n```\nsage: n=2^63+2^13\nsage: n\n9223372036854784000\nsage: int(n)\n9223372036854784000L\nsage: hash(n)\n-9223372036854767616\nsage: hash(int(n))\n-9223372036854767616\n```\nwith python-2.7\n\n```\nsage: n=2^63+2^13\nsage: n\n9223372036854784000\nsage: hash(n)\n8192\nsage: int(n)\n9223372036854784000L\nsage: hash(int(n))\n-9223372036854767616\n```\nFurthermore in both case:\n\n```\nsage: type(n)\n<type 'sage.rings.integer.Integer'>\nsage: type(int(n))\n<type 'long'>\n```\nSo I would expect different hashes naively.",
     "created_at": "2011-11-02T01:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -3962,7 +3950,6 @@ sage: hash(n)
 sage: hash(int(n))
 -9223372036854767616
 ```
-
 with python-2.7
 
 ```
@@ -3976,7 +3963,6 @@ sage: int(n)
 sage: hash(int(n))
 -9223372036854767616
 ```
-
 Furthermore in both case:
 
 ```
@@ -3985,7 +3971,6 @@ sage: type(n)
 sage: type(int(n))
 <type 'long'>
 ```
-
 So I would expect different hashes naively.
 
 
@@ -3995,7 +3980,7 @@ So I would expect different hashes naively.
 archive/issue_comments_099286.json:
 ```json
 {
-    "body": "Regarding\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nWith python-2.7\n\n```\nsage: w = Word([4,5,6])^7\nsage: w\nword: 456456456456456456456\nsage: it = w.factor_iterator(4)\nsage: it.next()\nword: 5645\nsage: it.next()\nword: 6456\nsage: it.next()\nword: 4564\n```\n\nwith python-2.6\n\n```\nsage: w = Word([4,5,6])^7\nsage: w\nword: 456456456456456456456\nsage: it = w.factor_iterator(4)\nsage: it.next()\nword: 6456\nsage: it.next()\nword: 5645\nsage: it.next()\nword: 4564\n```\n\nSo it looks like with python 2.6 we where moving in the series of number with a stride 2 while python 2.7 works through the sequence with a stride 1.",
+    "body": "Regarding\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\nWith python-2.7\n\n```\nsage: w = Word([4,5,6])^7\nsage: w\nword: 456456456456456456456\nsage: it = w.factor_iterator(4)\nsage: it.next()\nword: 5645\nsage: it.next()\nword: 6456\nsage: it.next()\nword: 4564\n```\nwith python-2.6\n\n```\nsage: w = Word([4,5,6])^7\nsage: w\nword: 456456456456456456456\nsage: it = w.factor_iterator(4)\nsage: it.next()\nword: 6456\nsage: it.next()\nword: 5645\nsage: it.next()\nword: 4564\n```\nSo it looks like with python 2.6 we where moving in the series of number with a stride 2 while python 2.7 works through the sequence with a stride 1.",
     "created_at": "2011-11-02T02:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4024,7 +4009,6 @@ Got:
     word: 6456
 **********************************************************************
 ```
-
 With python-2.7
 
 ```
@@ -4039,7 +4023,6 @@ word: 6456
 sage: it.next()
 word: 4564
 ```
-
 with python-2.6
 
 ```
@@ -4054,7 +4037,6 @@ word: 5645
 sage: it.next()
 word: 4564
 ```
-
 So it looks like with python 2.6 we where moving in the series of number with a stride 2 while python 2.7 works through the sequence with a stride 1.
 
 
@@ -4064,7 +4046,7 @@ So it looks like with python 2.6 we where moving in the series of number with a 
 archive/issue_comments_099287.json:
 ```json
 {
-    "body": "Here\u00a0on x86 I get only two failures:\n\n\n```\n\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.rc0/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 603\n59, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 603\n59, 0.8335077654199736)\n**********************************************************************\n```\n\n\nand \n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_double_dense.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.rc0/devel/sage-main/sage/matrix/matrix_double_dense.py\nx\", line 1046:\n    sage: A.singular_values(eps='junk')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: invalid literal for float(): junk\nGot:\n    Traceback (most recent call last):\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_\none_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/sagedoctest.py\", line 38, in run_o\nne_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags\n)\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_\none_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[37]>\", line 1, in <module>\n        A.singular_values(eps='junk')###line 1046:\n    sage: A.singular_values(eps='junk')\n      File \"matrix_double_dense.pyx\", line 1075, in sage.matrix.matrix_double_dense.M\natrix_double_dense.singular_values (sage/matrix/matrix_double_dense.c:6338)\n        eps = RDF(eps)\n      File \"parent.pyx\", line 988, in sage.structure.parent.Parent.__call__ (sage/str\nucture/parent.c:7326)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMa\np_unique._call_ (sage/structure/coerce_maps.c:3268)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMa\np_unique._call_ (sage/structure/coerce_maps.c:3171)\n      File \"real_double.pyx\", line 548, in sage.rings.real_double.RealDoubleElement._\n_init__ (sage/rings/real_double.c:5567)\n    ValueError: could not convert string to float: junk\n**********************************************************************\n```\n\n\nThe latter also fails here the same way on amd64 and is documented on sage-devel\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8e1d7f665ac5be37\n\nbut with some slight differences.",
+    "body": "Here\u00a0on x86 I get only two failures:\n\n```\n\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.rc0/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 603\n59, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 603\n59, 0.8335077654199736)\n**********************************************************************\n```\n\nand \n\n```\nsage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_double_dense.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.7.2.rc0/devel/sage-main/sage/matrix/matrix_double_dense.py\nx\", line 1046:\n    sage: A.singular_values(eps='junk')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: invalid literal for float(): junk\nGot:\n    Traceback (most recent call last):\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_\none_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/sagedoctest.py\", line 38, in run_o\nne_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags\n)\n      File \"/storage/sage/sage-4.7.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_\none_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[37]>\", line 1, in <module>\n        A.singular_values(eps='junk')###line 1046:\n    sage: A.singular_values(eps='junk')\n      File \"matrix_double_dense.pyx\", line 1075, in sage.matrix.matrix_double_dense.M\natrix_double_dense.singular_values (sage/matrix/matrix_double_dense.c:6338)\n        eps = RDF(eps)\n      File \"parent.pyx\", line 988, in sage.structure.parent.Parent.__call__ (sage/str\nucture/parent.c:7326)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMa\np_unique._call_ (sage/structure/coerce_maps.c:3268)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMa\np_unique._call_ (sage/structure/coerce_maps.c:3171)\n      File \"real_double.pyx\", line 548, in sage.rings.real_double.RealDoubleElement._\n_init__ (sage/rings/real_double.c:5567)\n    ValueError: could not convert string to float: junk\n**********************************************************************\n```\n\nThe latter also fails here the same way on amd64 and is documented on sage-devel\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8e1d7f665ac5be37\n\nbut with some slight differences.",
     "created_at": "2011-11-02T05:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4074,7 +4056,6 @@ archive/issue_comments_099287.json:
 ```
 
 Here on x86 I get only two failures:
-
 
 ```
 
@@ -4091,9 +4072,7 @@ Got:
 **********************************************************************
 ```
 
-
 and 
-
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_double_dense.pyx
@@ -4134,7 +4113,6 @@ _init__ (sage/rings/real_double.c:5567)
     ValueError: could not convert string to float: junk
 **********************************************************************
 ```
-
 
 The latter also fails here the same way on amd64 and is documented on sage-devel
 
@@ -4332,7 +4310,7 @@ Permissions is the spkg should be 0644 (or 0755 for executables), currently many
 archive/issue_comments_099297.json:
 ```json
 {
-    "body": "Replying to [comment:133 jdemeyer]:\n> The spkg needs to be rebased to #11447.\nI looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.",
+    "body": "Replying to [comment:133 jdemeyer]:\n> The spkg needs to be rebased to #11447.\n\nI looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.",
     "created_at": "2011-11-04T01:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4343,6 +4321,7 @@ archive/issue_comments_099297.json:
 
 Replying to [comment:133 jdemeyer]:
 > The spkg needs to be rebased to #11447.
+
 I looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.
 
 
@@ -4352,7 +4331,7 @@ I looked at that before making my spkg. I believe the strategy used in #11447 is
 archive/issue_comments_099298.json:
 ```json
 {
-    "body": "Replying to [comment:135 fbissey]:\n> Replying to [comment:133 jdemeyer]:\n> > The spkg needs to be rebased to #11447.\n> I looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.\n\nWell, we did take the patch from Python upstream, but IIRC there are further changes to `spkg-install`, and the new spkg needs the previous one to be mentioned in `SPKG.txt` anyway (to pass the merger's sanity check).",
+    "body": "Replying to [comment:135 fbissey]:\n> Replying to [comment:133 jdemeyer]:\n> > The spkg needs to be rebased to #11447.\n\n> I looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.\n\nWell, we did take the patch from Python upstream, but IIRC there are further changes to `spkg-install`, and the new spkg needs the previous one to be mentioned in `SPKG.txt` anyway (to pass the merger's sanity check).",
     "created_at": "2011-11-04T01:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4364,6 +4343,7 @@ archive/issue_comments_099298.json:
 Replying to [comment:135 fbissey]:
 > Replying to [comment:133 jdemeyer]:
 > > The spkg needs to be rebased to #11447.
+
 > I looked at that before making my spkg. I believe the strategy used in #11447 is in python-2.7. Someone with a debian system proves me wrong but I think that works out of the box.
 
 Well, we did take the patch from Python upstream, but IIRC there are further changes to `spkg-install`, and the new spkg needs the previous one to be mentioned in `SPKG.txt` anyway (to pass the merger's sanity check).
@@ -4375,7 +4355,7 @@ Well, we did take the patch from Python upstream, but IIRC there are further cha
 archive/issue_comments_099299.json:
 ```json
 {
-    "body": "Indeed, there've been **a lot of** changes inbetween:\n\n```diff\ndiff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install\n--- python-2.7.1/spkg-install\t2011-05-20 05:41:41.000000000 +0200\n+++ python-2.6.4.p11/spkg-install\t2011-07-05 10:46:40.000000000 +0200\n@@ -5,50 +5,127 @@\n \n CUR=`pwd`\n \n-if [ \"$SAGE_LOCAL\" = \"\" ]; then\n-   echo \"SAGE_LOCAL undefined ... exiting\";\n-   echo \"Maybe run 'sage -sh'?\"\n-   exit 1\n+if [ -z \"$SAGE_LOCAL\" ]; then\n+    echo >&2 \"SAGE_LOCAL undefined ... exiting\"\n+    echo >&2 \"Maybe run 'sage -sh'?\"\n+    exit 1\n fi\n \n # PATCH\n \n-# Due to issues building Python on Ubuntu 11.04, a file is patched\n-# on these systems. \n+# When building Python 2.6 on Debian and derivatives with multiarch,\n+# system library directories are not correctly setup.  This patch\n+# fixes this, with no-op on other systems.\n+# The fix requires 'dpkg-architecture' to be installed there though\n+# (see below).\n+echo \"Patching src/setup.py for multiarch.\"\n+patch -p0 < patches/setup.py.multiarch.patch\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error patching src/setup.py\"\n+    exit 1\n+fi\n \n-if [ -f /etc/issue ] && grep \"Ubuntu 11.04\" /etc/issue ; then\n-   echo \"Patching src/Modules/Setup.dist as this is Ubuntu 11.04\"\n-   patch -p0 < patches/Modules.Setup.dist.patch\n+# Due to a python bug with Solaris \n+# see http://bugs.python.org/issue1759169\n+# it is necessary to apply a patch to configure.in\n+# then run autoconf. This not only generates a\n+# new 'configure' script, but some subdirectories too\n+# so these will be copied. \n+\n+if [ \"x`uname`\" = xSunOS ] ; then\n+   echo \"Applying a revised 'configure' script for Solaris\"\n+   echo \"See http://bugs.python.org/issue1759169\"\n+   echo \"http://trac.sagemath.org/sage_trac/ticket/7867\"\n+   cp -r patches/autom4te.cache patches/configure patches/configure.in src\n    if [ $? -ne 0 ]; then\n-      echo \"Error patching src/Modules/Setup.dist\"\n+      echo >&2 \"Failed to apply the Solaris patches needed for\"\n+      echo >&2 \"http://bugs.python.org/issue1759169\"\n+      echo >&2 \"http://trac.sagemath.org/sage_trac/ticket/7867\"\n       exit 1\n    fi\n+   echo \"Setting  HAVE_FD_TRANSFER=0 for Solaris to allow\"\n+   echo \"the python module '_multiprocessing' to build\" \n+   echo \"See: http://trac.sagemath.org/sage_trac/ticket/8440\"\n+   cp patches/setup.py src\n+   if [ $? -ne 0 ]; then\n+      echo >&2 \"Failed to apply the Solaris patch needed for\"\n+      echo >&2 \"http://trac.sagemath.org/sage_trac/ticket/8440\"\n+      exit 1\n+   fi\n+fi \n+\n+\n+cp patches/locale.py src/Lib/locale.py\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched locale.py\"\n+    exit 1\n fi\n \n-patch -p0 < patches/Lib.distutils.command.sdist.patch\n+cp patches/Makefile.pre.in src/Makefile.pre.in\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched sdist.py\"\n+    echo >&2 \"Error copying patched Makefile.pre.in\"\n     exit 1\n fi\n \n-patch -p0 < patches/Lib.socket.patch\n+cp patches/sdist.py src/Lib/distutils/command/sdist.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched socket.py\"\n+    echo >&2 \"Error copying patched sdist.py\"\n     exit 1\n fi\n \n-patch -p0 < patches/dynamic_class_copyreg_py.patch\n+cp patches/socket.py src/Lib/socket.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched pickle.py\"\n+    echo >&2 \"Error copying patched socket.py\"\n     exit 1\n fi\n \n-patch -p0 < patches/dynamic_class_copyreg_c.patch\n+cp patches/pickle.py src/Lib/pickle.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched cPickle.c\"\n+    echo >&2 \"Error copying patched pickle.py\"\n     exit 1\n fi\n \n+cp patches/cPickle.c src/Modules/cPickle.c\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched cPickle.c\"\n+    exit 1\n+fi\n+\n+# Due to a problem with _socket not building on OpenSolaris on x64\n+# see http://bugs.python.org/issue8852\n+# http://trac.sagemath.org/sage_trac/ticket/9041\n+# http://trac.sagemath.org/sage_trac/ticket/9022\n+# Modules/socketmodule.c needs patching. The patch consists of \n+# only checking if things are defined before trying to build with them\n+# so it is safe (and desirable) on any platform. \n+\n+cp patches/Modules.socketmodule.c src/Modules/socketmodule.c\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched socketmodule.c\"\n+    exit 1\n+fi\n+\n+# The following patch for fixing broken readline behavior on Itanium\n+# Linux definitely does *not* work on anything else.\n+if [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n+    echo \"Updating readline.c for Linux/Itanium\"\n+    cp patches/readline.c-Itanium-fix src/Modules/readline.c\n+else\n+    # Readline patch: http://bugs.python.org/file14599/python-2.6-readline.patch\n+    # Associated bug: http://bugs.python.org/issue5833\n+    #\n+    # Committed to Python as r75747 in the py26-maint branch, but not\n+    # in time for 2.6.4 -- so we can remove this patch the next time\n+    # we update Python in Sage.\n+    cp patches/readline.c-spacebug src/Modules/readline.c\n+fi\n+\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched readline.c\"\n+    exit 1\n+fi\n+\n+\n # We are setting LDFLAGS and CPPFLAGS so that we pick up Sage's readline\n LDFLAGS=\"-L$SAGE_LOCAL/lib $LDFLAGS\"\n export LDFLAGS\n@@ -62,6 +139,23 @@\n     EXTRAFLAGS=\"--without-pymalloc\"; export EXTRAFLAGS\n fi\n \n+# Program around weird bug in build process:\n+#      Apparently if you have this:\n+#         export DISTUTILS_DEBUG=1\n+#      in your environment variables, the build craps out.  No idea why this\n+#       is.\n+#       -- Yi Qiang\n+#\n+# This bug was fixed in Python, but not yet in Python 2.6.4. So this fix\n+# can be removed the next time we upgrade our version of Python. See\n+#\n+#   http://bugs.python.org/issue6954\n+#\n+# for the fix.\n+#\n+unset DISTUTILS_DEBUG\n+\n+\n cd src\n \n touch Include/*\n@@ -93,27 +187,30 @@\n             --enable-unicode=ucs4\n         fi\n     else\n-        ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\"  --enable-unicode=ucs4 CC=\"$CC $CFLAGS\" CXX=\"$CXX $CXXFLAGS\"\n+        ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\"  --enable-unicode=ucs4 \\\n+            CC=\"$CC $CFLAGS\" CXX=\"$CXX $CXXFLAGS\"\n     fi\n \n \n     if [ $? -ne 0 ]; then\n-        echo \"Error configuring Python.\"\n+        echo >&2 \"Error configuring Python.\"\n         exit 1\n     fi\n \n     $MAKE\n     if [ $? -ne 0 ]; then\n-        echo \"Error building Python.\"\n+        echo >&2 \"Error building Python.\"\n         exit 1\n     fi\n \n     # running 'make install' in parallel is a bad, bad idea\n+    # FIXME: The proper way to disable parallel make is to use\n+    #        $MAKE -j1 ... (We rely on GNU make anyway).\n     MAKE=make; export MAKE\n     # the \"-i\" is crucial, esp. in the case of a major upgrade\n     make -i install\n     if [ $? -ne 0 ]; then\n-        echo \"Error installing Python.\"\n+        echo >&2 \"Error installing Python.\"\n         exit 1\n     fi\n }\n@@ -122,27 +219,28 @@\n # informative error message. This is helps in determining why the\n # configuration, compilation or installation failed. So put this before the\n # build() function.\n-set +e\n+set +e # This is redundant here, but doesn't hurt to keep it... ;-)\n \n build\n \n-cd $SAGE_LOCAL/lib\n+cd \"$SAGE_LOCAL/lib\"\n \n # move the python directory if we're upgrading from a version\n-# of sage with python 2.6\n-if [ -d python2.6/site-packages ]; then\n-   mv python2.6/site-packages python2.7/site-packages-old\n+# of sage with python 2.5\n+if [ -d python2.5/site-packages ]; then\n+   mv python2.5/site-packages python2.6/site-packages-old\n fi\n \n-rm -rf python/python2.7 python/python2.6 python/python2.5 python/python python python2.4 python2.5\n-ln -s python2.7 python\n+rm -rf python/python2.6 python/python2.5 python/python python python2.4 python2.5\n+ln -s python2.6 python\n if [ $? -ne 0 ]; then\n-    echo \"Error creating symbolic link\"\n+    echo >&2 \"Error creating symbolic link\"\n     exit 1\n fi\n \n # Sleeping for three seconds so that parallel 'make install' catches up\n # with the following test.\n+# XXX We have disabled parallel 'make install' above, but never mind.\n echo \"Sleeping for three seconds before testing python\"\n sleep 3\n \n@@ -150,12 +248,28 @@\n # All these modules are important and if any one \n # fails to build, Sage will not work. \n \n+import_errors=false\n for module in math hashlib crypt ; do \n    \"$SAGE_LOCAL/bin/python\" -c \"import $module\"\n    if [ $? -eq 0 ] ; then\n       echo \"$module module imported OK\"\n    else\n-      echo \"$module module failed to import\"\n-      exit 1\n+      echo >&2 \"$module module failed to import\"\n+      import_errors=true\n+      # exit 1 # not yet\n    fi\n done\n+\n+if $import_errors; then\n+    echo >&2 \"Error: One or more modules failed to import.\"\n+    # Check if we are on Debian or one of its derivatives:\n+    if command -v dpkg && ! command -v dpkg-architecture >/dev/null; then\n+        echo >&2 \"You may have to install 'dpkg-architecture'\"\n+        echo >&2 \"which is part of the Debian package 'dpkg-dev'.\"\n+        echo >&2 \"Try installing it by typing\"\n+        echo >&2 \"    sudo apt-get install dpkg-dev\"\n+        echo >&2 \"and rerun 'make'.\"\n+    fi\n+    exit 1\n+fi\n+\n```\n",
+    "body": "Indeed, there've been **a lot of** changes inbetween:\n\n```diff\ndiff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install\n--- python-2.7.1/spkg-install\t2011-05-20 05:41:41.000000000 +0200\n+++ python-2.6.4.p11/spkg-install\t2011-07-05 10:46:40.000000000 +0200\n@@ -5,50 +5,127 @@\n \n CUR=`pwd`\n \n-if [ \"$SAGE_LOCAL\" = \"\" ]; then\n-   echo \"SAGE_LOCAL undefined ... exiting\";\n-   echo \"Maybe run 'sage -sh'?\"\n-   exit 1\n+if [ -z \"$SAGE_LOCAL\" ]; then\n+    echo >&2 \"SAGE_LOCAL undefined ... exiting\"\n+    echo >&2 \"Maybe run 'sage -sh'?\"\n+    exit 1\n fi\n \n # PATCH\n \n-# Due to issues building Python on Ubuntu 11.04, a file is patched\n-# on these systems. \n+# When building Python 2.6 on Debian and derivatives with multiarch,\n+# system library directories are not correctly setup.  This patch\n+# fixes this, with no-op on other systems.\n+# The fix requires 'dpkg-architecture' to be installed there though\n+# (see below).\n+echo \"Patching src/setup.py for multiarch.\"\n+patch -p0 < patches/setup.py.multiarch.patch\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error patching src/setup.py\"\n+    exit 1\n+fi\n \n-if [ -f /etc/issue ] && grep \"Ubuntu 11.04\" /etc/issue ; then\n-   echo \"Patching src/Modules/Setup.dist as this is Ubuntu 11.04\"\n-   patch -p0 < patches/Modules.Setup.dist.patch\n+# Due to a python bug with Solaris \n+# see http://bugs.python.org/issue1759169\n+# it is necessary to apply a patch to configure.in\n+# then run autoconf. This not only generates a\n+# new 'configure' script, but some subdirectories too\n+# so these will be copied. \n+\n+if [ \"x`uname`\" = xSunOS ] ; then\n+   echo \"Applying a revised 'configure' script for Solaris\"\n+   echo \"See http://bugs.python.org/issue1759169\"\n+   echo \"http://trac.sagemath.org/sage_trac/ticket/7867\"\n+   cp -r patches/autom4te.cache patches/configure patches/configure.in src\n    if [ $? -ne 0 ]; then\n-      echo \"Error patching src/Modules/Setup.dist\"\n+      echo >&2 \"Failed to apply the Solaris patches needed for\"\n+      echo >&2 \"http://bugs.python.org/issue1759169\"\n+      echo >&2 \"http://trac.sagemath.org/sage_trac/ticket/7867\"\n       exit 1\n    fi\n+   echo \"Setting  HAVE_FD_TRANSFER=0 for Solaris to allow\"\n+   echo \"the python module '_multiprocessing' to build\" \n+   echo \"See: http://trac.sagemath.org/sage_trac/ticket/8440\"\n+   cp patches/setup.py src\n+   if [ $? -ne 0 ]; then\n+      echo >&2 \"Failed to apply the Solaris patch needed for\"\n+      echo >&2 \"http://trac.sagemath.org/sage_trac/ticket/8440\"\n+      exit 1\n+   fi\n+fi \n+\n+\n+cp patches/locale.py src/Lib/locale.py\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched locale.py\"\n+    exit 1\n fi\n \n-patch -p0 < patches/Lib.distutils.command.sdist.patch\n+cp patches/Makefile.pre.in src/Makefile.pre.in\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched sdist.py\"\n+    echo >&2 \"Error copying patched Makefile.pre.in\"\n     exit 1\n fi\n \n-patch -p0 < patches/Lib.socket.patch\n+cp patches/sdist.py src/Lib/distutils/command/sdist.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched socket.py\"\n+    echo >&2 \"Error copying patched sdist.py\"\n     exit 1\n fi\n \n-patch -p0 < patches/dynamic_class_copyreg_py.patch\n+cp patches/socket.py src/Lib/socket.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched pickle.py\"\n+    echo >&2 \"Error copying patched socket.py\"\n     exit 1\n fi\n \n-patch -p0 < patches/dynamic_class_copyreg_c.patch\n+cp patches/pickle.py src/Lib/pickle.py\n if [ $? -ne 0 ]; then\n-    echo \"Error copying patched cPickle.c\"\n+    echo >&2 \"Error copying patched pickle.py\"\n     exit 1\n fi\n \n+cp patches/cPickle.c src/Modules/cPickle.c\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched cPickle.c\"\n+    exit 1\n+fi\n+\n+# Due to a problem with _socket not building on OpenSolaris on x64\n+# see http://bugs.python.org/issue8852\n+# http://trac.sagemath.org/sage_trac/ticket/9041\n+# http://trac.sagemath.org/sage_trac/ticket/9022\n+# Modules/socketmodule.c needs patching. The patch consists of \n+# only checking if things are defined before trying to build with them\n+# so it is safe (and desirable) on any platform. \n+\n+cp patches/Modules.socketmodule.c src/Modules/socketmodule.c\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched socketmodule.c\"\n+    exit 1\n+fi\n+\n+# The following patch for fixing broken readline behavior on Itanium\n+# Linux definitely does *not* work on anything else.\n+if [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n+    echo \"Updating readline.c for Linux/Itanium\"\n+    cp patches/readline.c-Itanium-fix src/Modules/readline.c\n+else\n+    # Readline patch: http://bugs.python.org/file14599/python-2.6-readline.patch\n+    # Associated bug: http://bugs.python.org/issue5833\n+    #\n+    # Committed to Python as r75747 in the py26-maint branch, but not\n+    # in time for 2.6.4 -- so we can remove this patch the next time\n+    # we update Python in Sage.\n+    cp patches/readline.c-spacebug src/Modules/readline.c\n+fi\n+\n+if [ $? -ne 0 ]; then\n+    echo >&2 \"Error copying patched readline.c\"\n+    exit 1\n+fi\n+\n+\n # We are setting LDFLAGS and CPPFLAGS so that we pick up Sage's readline\n LDFLAGS=\"-L$SAGE_LOCAL/lib $LDFLAGS\"\n export LDFLAGS\n@@ -62,6 +139,23 @@\n     EXTRAFLAGS=\"--without-pymalloc\"; export EXTRAFLAGS\n fi\n \n+# Program around weird bug in build process:\n+#      Apparently if you have this:\n+#         export DISTUTILS_DEBUG=1\n+#      in your environment variables, the build craps out.  No idea why this\n+#       is.\n+#       -- Yi Qiang\n+#\n+# This bug was fixed in Python, but not yet in Python 2.6.4. So this fix\n+# can be removed the next time we upgrade our version of Python. See\n+#\n+#   http://bugs.python.org/issue6954\n+#\n+# for the fix.\n+#\n+unset DISTUTILS_DEBUG\n+\n+\n cd src\n \n touch Include/*\n@@ -93,27 +187,30 @@\n             --enable-unicode=ucs4\n         fi\n     else\n-        ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\"  --enable-unicode=ucs4 CC=\"$CC $CFLAGS\" CXX=\"$CXX $CXXFLAGS\"\n+        ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\"  --enable-unicode=ucs4 \\\n+            CC=\"$CC $CFLAGS\" CXX=\"$CXX $CXXFLAGS\"\n     fi\n \n \n     if [ $? -ne 0 ]; then\n-        echo \"Error configuring Python.\"\n+        echo >&2 \"Error configuring Python.\"\n         exit 1\n     fi\n \n     $MAKE\n     if [ $? -ne 0 ]; then\n-        echo \"Error building Python.\"\n+        echo >&2 \"Error building Python.\"\n         exit 1\n     fi\n \n     # running 'make install' in parallel is a bad, bad idea\n+    # FIXME: The proper way to disable parallel make is to use\n+    #        $MAKE -j1 ... (We rely on GNU make anyway).\n     MAKE=make; export MAKE\n     # the \"-i\" is crucial, esp. in the case of a major upgrade\n     make -i install\n     if [ $? -ne 0 ]; then\n-        echo \"Error installing Python.\"\n+        echo >&2 \"Error installing Python.\"\n         exit 1\n     fi\n }\n@@ -122,27 +219,28 @@\n # informative error message. This is helps in determining why the\n # configuration, compilation or installation failed. So put this before the\n # build() function.\n-set +e\n+set +e # This is redundant here, but doesn't hurt to keep it... ;-)\n \n build\n \n-cd $SAGE_LOCAL/lib\n+cd \"$SAGE_LOCAL/lib\"\n \n # move the python directory if we're upgrading from a version\n-# of sage with python 2.6\n-if [ -d python2.6/site-packages ]; then\n-   mv python2.6/site-packages python2.7/site-packages-old\n+# of sage with python 2.5\n+if [ -d python2.5/site-packages ]; then\n+   mv python2.5/site-packages python2.6/site-packages-old\n fi\n \n-rm -rf python/python2.7 python/python2.6 python/python2.5 python/python python python2.4 python2.5\n-ln -s python2.7 python\n+rm -rf python/python2.6 python/python2.5 python/python python python2.4 python2.5\n+ln -s python2.6 python\n if [ $? -ne 0 ]; then\n-    echo \"Error creating symbolic link\"\n+    echo >&2 \"Error creating symbolic link\"\n     exit 1\n fi\n \n # Sleeping for three seconds so that parallel 'make install' catches up\n # with the following test.\n+# XXX We have disabled parallel 'make install' above, but never mind.\n echo \"Sleeping for three seconds before testing python\"\n sleep 3\n \n@@ -150,12 +248,28 @@\n # All these modules are important and if any one \n # fails to build, Sage will not work. \n \n+import_errors=false\n for module in math hashlib crypt ; do \n    \"$SAGE_LOCAL/bin/python\" -c \"import $module\"\n    if [ $? -eq 0 ] ; then\n       echo \"$module module imported OK\"\n    else\n-      echo \"$module module failed to import\"\n-      exit 1\n+      echo >&2 \"$module module failed to import\"\n+      import_errors=true\n+      # exit 1 # not yet\n    fi\n done\n+\n+if $import_errors; then\n+    echo >&2 \"Error: One or more modules failed to import.\"\n+    # Check if we are on Debian or one of its derivatives:\n+    if command -v dpkg && ! command -v dpkg-architecture >/dev/null; then\n+        echo >&2 \"You may have to install 'dpkg-architecture'\"\n+        echo >&2 \"which is part of the Debian package 'dpkg-dev'.\"\n+        echo >&2 \"Try installing it by typing\"\n+        echo >&2 \"    sudo apt-get install dpkg-dev\"\n+        echo >&2 \"and rerun 'make'.\"\n+    fi\n+    exit 1\n+fi\n+\n```",
     "created_at": "2011-11-04T02:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4667,7 +4647,6 @@ diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
 
 
 
-
 ---
 
 archive/issue_comments_099300.json:
@@ -4695,7 +4674,7 @@ The other concern is #11986 which looks like a blast from the past and I have no
 archive/issue_comments_099301.json:
 ```json
 {
-    "body": "Replying to [comment:138 fbissey]:\n> OK that's not a biggy while I had a look at #11447 I made my spkg before it was closed and possibly before it had reached its final shape. I wanted to wait for 2.7.3 but I will probably cut a 2.7.2 in which I will add this then. \n> \n> I am keen to have this landing ASAP but I would understand if the release manager only wants to do it in a alpha0. That's both a big change and a big patch set.\n\nIf you can finish it, I'd be happy to merge it.  But to be realistic, I don't think this ticket is close to being finished.  There is a huge amount of patches which needs to be reviewed, there is still #11986, there is the rebasing to #11447, maybe testing will reveal breakage on some systems...",
+    "body": "Replying to [comment:138 fbissey]:\n> OK that's not a biggy while I had a look at #11447 I made my spkg before it was closed and possibly before it had reached its final shape. I wanted to wait for 2.7.3 but I will probably cut a 2.7.2 in which I will add this then. \n> \n> I am keen to have this landing ASAP but I would understand if the release manager only wants to do it in a alpha0. That's both a big change and a big patch set.\n\n\nIf you can finish it, I'd be happy to merge it.  But to be realistic, I don't think this ticket is close to being finished.  There is a huge amount of patches which needs to be reviewed, there is still #11986, there is the rebasing to #11447, maybe testing will reveal breakage on some systems...",
     "created_at": "2011-11-04T09:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4709,6 +4688,7 @@ Replying to [comment:138 fbissey]:
 > 
 > I am keen to have this landing ASAP but I would understand if the release manager only wants to do it in a alpha0. That's both a big change and a big patch set.
 
+
 If you can finish it, I'd be happy to merge it.  But to be realistic, I don't think this ticket is close to being finished.  There is a huge amount of patches which needs to be reviewed, there is still #11986, there is the rebasing to #11447, maybe testing will reveal breakage on some systems...
 
 
@@ -4718,7 +4698,7 @@ If you can finish it, I'd be happy to merge it.  But to be realistic, I don't th
 archive/issue_comments_099302.json:
 ```json
 {
-    "body": "There is a warning when building the reference manual:\n\n```\ndocstring of sage.crypto.boolean_function:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n",
+    "body": "There is a warning when building the reference manual:\n\n```\ndocstring of sage.crypto.boolean_function:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```",
     "created_at": "2011-11-04T10:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4732,7 +4712,6 @@ There is a warning when building the reference manual:
 ```
 docstring of sage.crypto.boolean_function:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 ```
-
 
 
 
@@ -4811,7 +4790,7 @@ By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go
 archive/issue_comments_099305.json:
 ```json
 {
-    "body": "Replying to [comment:144 jdemeyer]:\n> By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.\n\nsage-5.0 is probably more realistic. Thanks for the useful comments, I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python. I really would like to go to 2.7.3 when it comes out but I'll make a stop 2.7.2. I have a heavy workload this week but I'll try to put the spkg together. I know from sage-on-gentto that there will be some more patching to be done unfortunately although in some case I think that would be just a band aid. So more dependencies may appear :(\n\nI am surprised at the \"latin-1\" encoding I am defaulting to UTF-8 and even my Changelogs now come correct everywhere.\n\nWe need someone with the know how to look at #11986.",
+    "body": "Replying to [comment:144 jdemeyer]:\n> By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.\n\n\nsage-5.0 is probably more realistic. Thanks for the useful comments, I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python. I really would like to go to 2.7.3 when it comes out but I'll make a stop 2.7.2. I have a heavy workload this week but I'll try to put the spkg together. I know from sage-on-gentto that there will be some more patching to be done unfortunately although in some case I think that would be just a band aid. So more dependencies may appear :(\n\nI am surprised at the \"latin-1\" encoding I am defaulting to UTF-8 and even my Changelogs now come correct everywhere.\n\nWe need someone with the know how to look at #11986.",
     "created_at": "2011-11-05T22:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4822,6 +4801,7 @@ archive/issue_comments_099305.json:
 
 Replying to [comment:144 jdemeyer]:
 > By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.
+
 
 sage-5.0 is probably more realistic. Thanks for the useful comments, I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python. I really would like to go to 2.7.3 when it comes out but I'll make a stop 2.7.2. I have a heavy workload this week but I'll try to put the spkg together. I know from sage-on-gentto that there will be some more patching to be done unfortunately although in some case I think that would be just a band aid. So more dependencies may appear :(
 
@@ -4836,7 +4816,7 @@ We need someone with the know how to look at #11986.
 archive/issue_comments_099306.json:
 ```json
 {
-    "body": "Replying to [comment:145 fbissey]:\n> Replying to [comment:144 jdemeyer]:\n> > By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.\n> \n> sage-5.0 is probably more realistic.\nEspecially since William essentially *defined* sage-5.0 as the release which will contain this ticket.\n\n> I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python.\nTrue, but I have no idea how Python 2.7 has changed this particular doctest.  It could also be that something changed inside Sphinx or Cython because of Python 2.7.\n\n> I am surprised at the \"latin-1\" encoding I am defaulting to UTF-8 and even my Changelogs now come correct everywhere.\nAnd now you're punished for the rest of your live as a developer because your name is not ASCII (and please don't write \"Francois\", that just looks very wrong).\n\n> We need someone with the know how to look at #11986.\nI *might* have a look, but I don't want to promise anything.  In any case, once #11986 is really the only remaining issue, it will certainly get fixed.",
+    "body": "Replying to [comment:145 fbissey]:\n> Replying to [comment:144 jdemeyer]:\n> > By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.\n\n> \n> sage-5.0 is probably more realistic.\n\nEspecially since William essentially *defined* sage-5.0 as the release which will contain this ticket.\n\n> I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python.\n\nTrue, but I have no idea how Python 2.7 has changed this particular doctest.  It could also be that something changed inside Sphinx or Cython because of Python 2.7.\n\n> I am surprised at the \"latin-1\" encoding I am defaulting to UTF-8 and even my Changelogs now come correct everywhere.\n\nAnd now you're punished for the rest of your live as a developer because your name is not ASCII (and please don't write \"Francois\", that just looks very wrong).\n\n> We need someone with the know how to look at #11986.\n\nI *might* have a look, but I don't want to promise anything.  In any case, once #11986 is really the only remaining issue, it will certainly get fixed.",
     "created_at": "2011-11-09T08:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4848,17 +4828,22 @@ archive/issue_comments_099306.json:
 Replying to [comment:145 fbissey]:
 > Replying to [comment:144 jdemeyer]:
 > > By the way: Python 2.7.2 was released on June 11th, 2011 so you might as well go for that.
+
 > 
 > sage-5.0 is probably more realistic.
+
 Especially since William essentially *defined* sage-5.0 as the release which will contain this ticket.
 
 > I hadn't seen the warnings in the documentation, this probably could be spun out of this ticket as it is probably a problem in the existing doc - just silent with the current python.
+
 True, but I have no idea how Python 2.7 has changed this particular doctest.  It could also be that something changed inside Sphinx or Cython because of Python 2.7.
 
 > I am surprised at the "latin-1" encoding I am defaulting to UTF-8 and even my Changelogs now come correct everywhere.
+
 And now you're punished for the rest of your live as a developer because your name is not ASCII (and please don't write "Francois", that just looks very wrong).
 
 > We need someone with the know how to look at #11986.
+
 I *might* have a look, but I don't want to promise anything.  In any case, once #11986 is really the only remaining issue, it will certainly get fixed.
 
 
@@ -4966,7 +4951,7 @@ Patch set updated for python-2.7.2.
 archive/issue_comments_099312.json:
 ```json
 {
-    "body": "Replying to [comment:148 fbissey]:\n> I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.\nUnfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)",
+    "body": "Replying to [comment:148 fbissey]:\n> I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.\n\nUnfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)",
     "created_at": "2011-11-25T22:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4977,6 +4962,7 @@ archive/issue_comments_099312.json:
 
 Replying to [comment:148 fbissey]:
 > I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.
+
 Unfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)
 
 
@@ -4986,7 +4972,7 @@ Unfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/
 archive/issue_comments_099313.json:
 ```json
 {
-    "body": "Replying to [comment:151 jdemeyer]:\n> Replying to [comment:148 fbissey]:\n> > I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.\n> Unfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)\n\nOK. Was it the src folder and its content? Or did I forget something else in the spkg root folder?",
+    "body": "Replying to [comment:151 jdemeyer]:\n> Replying to [comment:148 fbissey]:\n> > I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.\n\n> Unfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)\n\nOK. Was it the src folder and its content? Or did I forget something else in the spkg root folder?",
     "created_at": "2011-11-25T23:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -4998,6 +4984,7 @@ archive/issue_comments_099313.json:
 Replying to [comment:151 jdemeyer]:
 > Replying to [comment:148 fbissey]:
 > > I finished updating the spkg to 2.7.2 in a moment of freedom. I called it 2.7.2.p0 as it has some patches in it. Hope all the permissions are right this time.
+
 > Unfortunately, they are not.  I fixed this in [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p0.spkg)
 
 OK. Was it the src folder and its content? Or did I forget something else in the spkg root folder?
@@ -5009,7 +4996,7 @@ OK. Was it the src folder and its content? Or did I forget something else in the
 archive/issue_comments_099314.json:
 ```json
 {
-    "body": "Replying to [comment:153 fbissey]:\n> OK. Was it the src folder and its content?\nYes.  I solved this by doing `chmod ugo+rX -R .`\n\n> Or did I forget something else in the spkg root folder?\nAlso, yes.  spkg-check should be executable.",
+    "body": "Replying to [comment:153 fbissey]:\n> OK. Was it the src folder and its content?\n  \nYes.  I solved this by doing `chmod ugo+rX -R .`\n\n> Or did I forget something else in the spkg root folder?\n\nAlso, yes.  spkg-check should be executable.",
     "created_at": "2011-11-25T23:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5020,9 +5007,11 @@ archive/issue_comments_099314.json:
 
 Replying to [comment:153 fbissey]:
 > OK. Was it the src folder and its content?
+  
 Yes.  I solved this by doing `chmod ugo+rX -R .`
 
 > Or did I forget something else in the spkg root folder?
+
 Also, yes.  spkg-check should be executable.
 
 
@@ -5032,7 +5021,7 @@ Also, yes.  spkg-check should be executable.
 archive/issue_comments_099315.json:
 ```json
 {
-    "body": "This fails to build from scratch with sage-4.8.alpha2 on sage.math:\n\n```\ngcc  -pthread -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes -L/scratch/jdemeyer/merger/sage-5.0/local/lib   Parser/acceler.o Parser/grammar1.\no Parser/listnode.o Parser/node.o Parser/parser.o Parser/parsetok.o Parser/bitset.o Parser/metagrammar.o Parser/firstsets.o Parser/grammar\n.o Parser/pgen.o Objects/obmalloc.o Python/mysnprintf.o Python/pyctype.o Parser/tokenizer_pgen.o Parser/printgrammar.o Parser/pgenmain.o -\nlpthread -ldl  -lutil -o Parser/pgen\nParser/pgen ./Grammar/Grammar ./Include/graminit.h ./Python/graminit.c\ntouch Parser/pgen.stamp\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/ast.o Python/ast.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/compile.o Python/compile.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/graminit.o Python/graminit.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/symtable.o Python/symtable.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE \\\n              -DSVNVERSION=\"\\\"`LC_ALL=C svnversion .`\\\"\" \\\n              -DHGVERSION=\"\\\"`LC_ALL=C hg id -i .`\\\"\" \\\n              -DHGTAG=\"\\\"`LC_ALL=C hg id -t .`\\\"\" \\\n              -DHGBRANCH=\"\\\"`LC_ALL=C hg id -b .`\\\"\" \\\n              -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c\nYou must compile Sage first using 'make' in the Sage root directory.\nYou must compile Sage first using 'make' in the Sage root directory.\nYou must compile Sage first using 'make' in the Sage root directory.\n<command-line>: warning: missing terminating \" character\n<command-line>:1:7: warning: missing terminating \" character\n<command-line>:2:10: warning: missing terminating \" character\n./Modules/getbuildinfo.c: In function 'Py_GetBuildInfo':\n./Modules/getbuildinfo.c:45: error: missing terminating \" character\n./Modules/getbuildinfo.c:45: error: expected expression before ')' token\n./Modules/getbuildinfo.c:46: error: missing terminating \" character\n./Modules/getbuildinfo.c:46: error: missing terminating \" character\n./Modules/getbuildinfo.c:47: error: missing terminating \" character\n./Modules/getbuildinfo.c:47: error: missing terminating \" character\n./Modules/getbuildinfo.c:53: error: 'buildinfo' undeclared (first use in this function)\n./Modules/getbuildinfo.c:53: error: (Each undeclared identifier is reported only once\n./Modules/getbuildinfo.c:53: error: for each function it appears in.)\n./Modules/getbuildinfo.c: In function '_Py_hgversion':\n./Modules/getbuildinfo.c:72: error: missing terminating \" character\n./Modules/getbuildinfo.c:72: warning: 'return' with no value, in function returning non-void\n./Modules/getbuildinfo.c: In function '_Py_hgidentifier':\n./Modules/getbuildinfo.c:79: error: missing terminating \" character\n./Modules/getbuildinfo.c:79: error: expected expression before ';' token\n./Modules/getbuildinfo.c:83: error: missing terminating \" character\n./Modules/getbuildinfo.c:83: error: expected expression before ';' token\nmake[2]: *** [Modules/getbuildinfo.o] Error 1\nmake[2]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/spkg/build/python-2.7.2.p0/src'\nError building Python.\n```\n\n\nMhy guess would be that `spkg-install` is trying to run Mercurial or something, which obviously fails because Mercurial has not been compiled yet (and it can't since it depends on Python).",
+    "body": "This fails to build from scratch with sage-4.8.alpha2 on sage.math:\n\n```\ngcc  -pthread -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes -L/scratch/jdemeyer/merger/sage-5.0/local/lib   Parser/acceler.o Parser/grammar1.\no Parser/listnode.o Parser/node.o Parser/parser.o Parser/parsetok.o Parser/bitset.o Parser/metagrammar.o Parser/firstsets.o Parser/grammar\n.o Parser/pgen.o Objects/obmalloc.o Python/mysnprintf.o Python/pyctype.o Parser/tokenizer_pgen.o Parser/printgrammar.o Parser/pgenmain.o -\nlpthread -ldl  -lutil -o Parser/pgen\nParser/pgen ./Grammar/Grammar ./Include/graminit.h ./Python/graminit.c\ntouch Parser/pgen.stamp\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/ast.o Python/ast.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/compile.o Python/compile.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/graminit.o Python/graminit.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE -o Python/symtable.o Python/symtable.c\ngcc  -pthread -c -fno-strict-aliasing -g -O2 -DNDEBUG -g  -O3 -Wall -Wstrict-prototypes  -I. -IInclude -I./Include -I/scratch/jdemeyer/mer\nger/sage-5.0/local/include  -fPIC -DPy_BUILD_CORE \\\n              -DSVNVERSION=\"\\\"`LC_ALL=C svnversion .`\\\"\" \\\n              -DHGVERSION=\"\\\"`LC_ALL=C hg id -i .`\\\"\" \\\n              -DHGTAG=\"\\\"`LC_ALL=C hg id -t .`\\\"\" \\\n              -DHGBRANCH=\"\\\"`LC_ALL=C hg id -b .`\\\"\" \\\n              -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c\nYou must compile Sage first using 'make' in the Sage root directory.\nYou must compile Sage first using 'make' in the Sage root directory.\nYou must compile Sage first using 'make' in the Sage root directory.\n<command-line>: warning: missing terminating \" character\n<command-line>:1:7: warning: missing terminating \" character\n<command-line>:2:10: warning: missing terminating \" character\n./Modules/getbuildinfo.c: In function 'Py_GetBuildInfo':\n./Modules/getbuildinfo.c:45: error: missing terminating \" character\n./Modules/getbuildinfo.c:45: error: expected expression before ')' token\n./Modules/getbuildinfo.c:46: error: missing terminating \" character\n./Modules/getbuildinfo.c:46: error: missing terminating \" character\n./Modules/getbuildinfo.c:47: error: missing terminating \" character\n./Modules/getbuildinfo.c:47: error: missing terminating \" character\n./Modules/getbuildinfo.c:53: error: 'buildinfo' undeclared (first use in this function)\n./Modules/getbuildinfo.c:53: error: (Each undeclared identifier is reported only once\n./Modules/getbuildinfo.c:53: error: for each function it appears in.)\n./Modules/getbuildinfo.c: In function '_Py_hgversion':\n./Modules/getbuildinfo.c:72: error: missing terminating \" character\n./Modules/getbuildinfo.c:72: warning: 'return' with no value, in function returning non-void\n./Modules/getbuildinfo.c: In function '_Py_hgidentifier':\n./Modules/getbuildinfo.c:79: error: missing terminating \" character\n./Modules/getbuildinfo.c:79: error: expected expression before ';' token\n./Modules/getbuildinfo.c:83: error: missing terminating \" character\n./Modules/getbuildinfo.c:83: error: expected expression before ';' token\nmake[2]: *** [Modules/getbuildinfo.o] Error 1\nmake[2]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/spkg/build/python-2.7.2.p0/src'\nError building Python.\n```\n\nMhy guess would be that `spkg-install` is trying to run Mercurial or something, which obviously fails because Mercurial has not been compiled yet (and it can't since it depends on Python).",
     "created_at": "2011-11-25T23:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5094,7 +5083,6 @@ make[2]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/spkg/buil
 Error building Python.
 ```
 
-
 Mhy guess would be that `spkg-install` is trying to run Mercurial or something, which obviously fails because Mercurial has not been compiled yet (and it can't since it depends on Python).
 
 
@@ -5140,7 +5128,7 @@ The current spkg installs fine on OS X 10.6 and 10.7, at least when I do "sage -
 archive/issue_comments_099318.json:
 ```json
 {
-    "body": "Replying to [comment:154 jdemeyer]:\n> Replying to [comment:153 fbissey]:\n> > OK. Was it the src folder and its content?\n> Yes.  I solved this by doing `chmod ugo+rX -R .`\n> \n> > Or did I forget something else in the spkg root folder?\n> Also, yes.  spkg-check should be executable.\nNever used symbolic mode of chmod, always octal. But this looks like it is more effective to get the directory permissions right. Darn spkg-check.\n\nThanks for the tips. Sorry for being a pest at times.\n\nI haven't tested the spkg from scratch on OSX I did on linux x86_64 and 4.8.alpha2.\nI will see what happens on my 10.5 machine later. 2.7.1 worked from scratch there i am sure. That looks very strange, can you link the full python building log?",
+    "body": "Replying to [comment:154 jdemeyer]:\n> Replying to [comment:153 fbissey]:\n> > OK. Was it the src folder and its content?\n  \n> Yes.  I solved this by doing `chmod ugo+rX -R .`\n> \n> > Or did I forget something else in the spkg root folder?\n\n> Also, yes.  spkg-check should be executable.\nNever used symbolic mode of chmod, always octal. But this looks like it is more effective to get the directory permissions right. Darn spkg-check.\n\nThanks for the tips. Sorry for being a pest at times.\n\nI haven't tested the spkg from scratch on OSX I did on linux x86_64 and 4.8.alpha2.\nI will see what happens on my 10.5 machine later. 2.7.1 worked from scratch there i am sure. That looks very strange, can you link the full python building log?",
     "created_at": "2011-11-26T00:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5152,9 +5140,11 @@ archive/issue_comments_099318.json:
 Replying to [comment:154 jdemeyer]:
 > Replying to [comment:153 fbissey]:
 > > OK. Was it the src folder and its content?
+  
 > Yes.  I solved this by doing `chmod ugo+rX -R .`
 > 
 > > Or did I forget something else in the spkg root folder?
+
 > Also, yes.  spkg-check should be executable.
 Never used symbolic mode of chmod, always octal. But this looks like it is more effective to get the directory permissions right. Darn spkg-check.
 
@@ -5188,7 +5178,7 @@ A build from scratch on OS X 10.6 worked just fine, by the way.
 archive/issue_comments_099320.json:
 ```json
 {
-    "body": "There is still the docbuild warning:\n\n```\ndocstring of sage.crypto.boolean_function:3: WARNING: Block quote ends without a blank line; unexpected unindent.\n```\n\nI am investigating.",
+    "body": "There is still the docbuild warning:\n\n```\ndocstring of sage.crypto.boolean_function:3: WARNING: Block quote ends without a blank line; unexpected unindent.\n```\nI am investigating.",
     "created_at": "2011-11-26T09:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5202,7 +5192,6 @@ There is still the docbuild warning:
 ```
 docstring of sage.crypto.boolean_function:3: WARNING: Block quote ends without a blank line; unexpected unindent.
 ```
-
 I am investigating.
 
 
@@ -5230,7 +5219,7 @@ I absolutely do not understand the docbuild warning but created a ticket at #120
 archive/issue_comments_099322.json:
 ```json
 {
-    "body": "Just an idea! This is because it wants to execute some mercurial commands to find if there are tags in the source. If we were to set \n\n```\nDHGVERSION\nDHGTAG\nDHGBRANCH\n```\n\nTo something or even nothing we may not have this problem. A normal run with a system mercurial installed looks like:\n\n```\nx86_64-pc-linux-gnu-gcc -pthread -c -fno-strict-aliasing -O2 -pipe -march=native -fwrapv -DNDEBUG   -I. -IInclude -I./Include  -fPIC -DPy_BUILD_CORE \\\n      -DSVNVERSION=\"\\\"`LC_ALL=C svnversion .`\\\"\" \\\n      -DHGVERSION=\"\\\"`LC_ALL=C hg id -i .`\\\"\" \\\n      -DHGTAG=\"\\\"`LC_ALL=C hg id -t .`\\\"\" \\\n      -DHGBRANCH=\"\\\"`LC_ALL=C hg id -b .`\\\"\" \\\n      -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c\nabort: repository . not found!\nabort: repository . not found!\nabort: repository . not found!\n```\n\nI will try to see if I can fit that in the spkg.",
+    "body": "Just an idea! This is because it wants to execute some mercurial commands to find if there are tags in the source. If we were to set \n\n```\nDHGVERSION\nDHGTAG\nDHGBRANCH\n```\nTo something or even nothing we may not have this problem. A normal run with a system mercurial installed looks like:\n\n```\nx86_64-pc-linux-gnu-gcc -pthread -c -fno-strict-aliasing -O2 -pipe -march=native -fwrapv -DNDEBUG   -I. -IInclude -I./Include  -fPIC -DPy_BUILD_CORE \\\n      -DSVNVERSION=\"\\\"`LC_ALL=C svnversion .`\\\"\" \\\n      -DHGVERSION=\"\\\"`LC_ALL=C hg id -i .`\\\"\" \\\n      -DHGTAG=\"\\\"`LC_ALL=C hg id -t .`\\\"\" \\\n      -DHGBRANCH=\"\\\"`LC_ALL=C hg id -b .`\\\"\" \\\n      -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c\nabort: repository . not found!\nabort: repository . not found!\nabort: repository . not found!\n```\nI will try to see if I can fit that in the spkg.",
     "created_at": "2011-11-26T18:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5246,7 +5235,6 @@ DHGVERSION
 DHGTAG
 DHGBRANCH
 ```
-
 To something or even nothing we may not have this problem. A normal run with a system mercurial installed looks like:
 
 ```
@@ -5260,7 +5248,6 @@ abort: repository . not found!
 abort: repository . not found!
 abort: repository . not found!
 ```
-
 I will try to see if I can fit that in the spkg.
 
 
@@ -5270,7 +5257,7 @@ I will try to see if I can fit that in the spkg.
 archive/issue_comments_099323.json:
 ```json
 {
-    "body": "Replying to [comment:163 fbissey]:\n> I will try to see if I can fit that in the spkg.\n\nNo, I would leave that alone.  With #5852, it will build properly.  Since you get errors anyway with the system Mercurial, apparently it's not a problem that `hg` fails.",
+    "body": "Replying to [comment:163 fbissey]:\n> I will try to see if I can fit that in the spkg.\n\n\nNo, I would leave that alone.  With #5852, it will build properly.  Since you get errors anyway with the system Mercurial, apparently it's not a problem that `hg` fails.",
     "created_at": "2011-11-26T18:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5281,6 +5268,7 @@ archive/issue_comments_099323.json:
 
 Replying to [comment:163 fbissey]:
 > I will try to see if I can fit that in the spkg.
+
 
 No, I would leave that alone.  With #5852, it will build properly.  Since you get errors anyway with the system Mercurial, apparently it's not a problem that `hg` fails.
 
@@ -5309,7 +5297,7 @@ If you insist but it would be easy to path Makefile.pre.in to prevent this from 
 archive/issue_comments_099325.json:
 ```json
 {
-    "body": "Replying to [comment:165 fbissey]:\n> If you insist\nI will **not** insist: if you want to make the patch, go ahead.",
+    "body": "Replying to [comment:165 fbissey]:\n> If you insist\n\nI will **not** insist: if you want to make the patch, go ahead.",
     "created_at": "2011-11-26T19:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5320,6 +5308,7 @@ archive/issue_comments_099325.json:
 
 Replying to [comment:165 fbissey]:
 > If you insist
+
 I will **not** insist: if you want to make the patch, go ahead.
 
 
@@ -5329,7 +5318,7 @@ I will **not** insist: if you want to make the patch, go ahead.
 archive/issue_comments_099326.json:
 ```json
 {
-    "body": "I may try something more subtle first. Makefile.pre.in has\n\n```\nSVNVERSION=\t@SVNVERSION@\nHGVERSION=\t@HGVERSION@\nHGTAG=\t\t@HGTAG@\nHGBRANCH=\t@HGBRANCH@\n```\n\nand\n\n```\n\t$(CC) -c $(PY_CFLAGS) \\\n\t      -DSVNVERSION=\"\\\"`LC_ALL=C $(SVNVERSION)`\\\"\" \\\n\t      -DHGVERSION=\"\\\"`LC_ALL=C $(HGVERSION)`\\\"\" \\\n\t      -DHGTAG=\"\\\"`LC_ALL=C $(HGTAG)`\\\"\" \\\n\t      -DHGBRANCH=\"\\\"`LC_ALL=C $(HGBRANCH)`\\\"\" \\\n\t      -o $@ $(srcdir)/Modules/getbuildinfo.c\n```\n\nlater so exporting HG* to something like /bin/true on non-windows OS would presumably solve the problem. But just patching to pass empty strings in the later would probably be safe everywhere.",
+    "body": "I may try something more subtle first. Makefile.pre.in has\n\n```\nSVNVERSION=\t@SVNVERSION@\nHGVERSION=\t@HGVERSION@\nHGTAG=\t\t@HGTAG@\nHGBRANCH=\t@HGBRANCH@\n```\nand\n\n```\n\t$(CC) -c $(PY_CFLAGS) \\\n\t      -DSVNVERSION=\"\\\"`LC_ALL=C $(SVNVERSION)`\\\"\" \\\n\t      -DHGVERSION=\"\\\"`LC_ALL=C $(HGVERSION)`\\\"\" \\\n\t      -DHGTAG=\"\\\"`LC_ALL=C $(HGTAG)`\\\"\" \\\n\t      -DHGBRANCH=\"\\\"`LC_ALL=C $(HGBRANCH)`\\\"\" \\\n\t      -o $@ $(srcdir)/Modules/getbuildinfo.c\n```\nlater so exporting HG* to something like /bin/true on non-windows OS would presumably solve the problem. But just patching to pass empty strings in the later would probably be safe everywhere.",
     "created_at": "2011-11-26T20:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5346,7 +5335,6 @@ HGVERSION=	@HGVERSION@
 HGTAG=		@HGTAG@
 HGBRANCH=	@HGBRANCH@
 ```
-
 and
 
 ```
@@ -5357,7 +5345,6 @@ and
 	      -DHGBRANCH="\"`LC_ALL=C $(HGBRANCH)`\"" \
 	      -o $@ $(srcdir)/Modules/getbuildinfo.c
 ```
-
 later so exporting HG* to something like /bin/true on non-windows OS would presumably solve the problem. But just patching to pass empty strings in the later would probably be safe everywhere.
 
 
@@ -5403,7 +5390,7 @@ Updated the first patch. Haven't been able to test things to find any new proble
 archive/issue_comments_099329.json:
 ```json
 {
-    "body": "There are a few test failures on a Pentium 4 32-bit Linux system with sage-4.8.alpha2 + #9958 + #11986:\n\n```\nsage -t  --long -force_lib devel/sage/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1323:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nsage -t  --long -force_lib devel/sage/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.8335077654199736)\n**********************************************************************\nsage -t  --long -force_lib devel/sage/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 4564\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 5645\n**********************************************************************\n```\n",
+    "body": "There are a few test failures on a Pentium 4 32-bit Linux system with sage-4.8.alpha2 + #9958 + #11986:\n\n```\nsage -t  --long -force_lib devel/sage/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/suffix_trees.py\", line 1323:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nsage -t  --long -force_lib devel/sage/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.8335077654199736)\n**********************************************************************\nsage -t  --long -force_lib devel/sage/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 4564\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\nFile \"/home/jdemeyer/sage-5.0/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 5645\n**********************************************************************\n```",
     "created_at": "2011-12-05T11:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5457,7 +5444,6 @@ Got:
     word: 5645
 **********************************************************************
 ```
-
 
 
 
@@ -5522,7 +5508,7 @@ ha [http://trac.sagemath.org/sage_trac/ticket/9958#comment:18](http://trac.sagem
 archive/issue_comments_099333.json:
 ```json
 {
-    "body": "I need a kind soul with 32 bit linux system to explore the suffix tree issue, the doctest is as follow:\n\n```\n            sage: from sage.combinat.words.suffix_trees import ImplicitSuffixTree, SuffixTrie\n            sage: W = Words(\"ab\")\n            sage: t = ImplicitSuffixTree(W(\"aba\"))\n            sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\n            True\n```\n\nIt would be helpful to get the values of \"W\", \"t\" and \"t.trie_type_dict()\" on python-2.6 and 2.7. Then we can make a decision on whether the answer we get with python-2.7 is equivalent to the current output or not.",
+    "body": "I need a kind soul with 32 bit linux system to explore the suffix tree issue, the doctest is as follow:\n\n```\n            sage: from sage.combinat.words.suffix_trees import ImplicitSuffixTree, SuffixTrie\n            sage: W = Words(\"ab\")\n            sage: t = ImplicitSuffixTree(W(\"aba\"))\n            sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2], [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\n            True\n```\nIt would be helpful to get the values of \"W\", \"t\" and \"t.trie_type_dict()\" on python-2.6 and 2.7. Then we can make a decision on whether the answer we get with python-2.7 is equivalent to the current output or not.",
     "created_at": "2011-12-05T21:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5540,7 +5526,6 @@ I need a kind soul with 32 bit linux system to explore the suffix tree issue, th
             sage: t.trie_type_dict() == dict([[(0, W("a")), 4], [(0, W("b")), 3], [(3, W("a")), 2], [(4, W("b")), 5], [(5, W("a")), 1]])
             True
 ```
-
 It would be helpful to get the values of "W", "t" and "t.trie_type_dict()" on python-2.6 and 2.7. Then we can make a decision on whether the answer we get with python-2.7 is equivalent to the current output or not.
 
 
@@ -5550,7 +5535,7 @@ It would be helpful to get the values of "W", "t" and "t.trie_type_dict()" on py
 archive/issue_comments_099334.json:
 ```json
 {
-    "body": "Here (x86) with sage-4.8.alpha3 + #9958 + #11986 the suffix_trees test passes:\n\n\n```\n./sage -t  -long -force_lib devel/sage/sage/combinat/words/suffix_trees.py\nsage -t -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n         [5.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nThe requested values are:\n\n\n```\nsage: W\nWords over Ordered Alphabet ['a', 'b']\nsage: t\nImplicit Suffix Tree of the word: aba\nsage: t.trie_type_dict()\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n```\n\n\nFWIW, on amd64 the test fails with the same sage-4.8.alpha3 + #9958 + #11986",
+    "body": "Here (x86) with sage-4.8.alpha3 + #9958 + #11986 the suffix_trees test passes:\n\n```\n./sage -t  -long -force_lib devel/sage/sage/combinat/words/suffix_trees.py\nsage -t -long -force_lib \"devel/sage/sage/combinat/words/suffix_trees.py\"\n         [5.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nThe requested values are:\n\n```\nsage: W\nWords over Ordered Alphabet ['a', 'b']\nsage: t\nImplicit Suffix Tree of the word: aba\nsage: t.trie_type_dict()\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n```\n\nFWIW, on amd64 the test fails with the same sage-4.8.alpha3 + #9958 + #11986",
     "created_at": "2011-12-05T21:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5561,7 +5546,6 @@ archive/issue_comments_099334.json:
 
 Here (x86) with sage-4.8.alpha3 + #9958 + #11986 the suffix_trees test passes:
 
-
 ```
 ./sage -t  -long -force_lib devel/sage/sage/combinat/words/suffix_trees.py
 sage -t -long -force_lib "devel/sage/sage/combinat/words/suffix_trees.py"
@@ -5571,9 +5555,7 @@ sage -t -long -force_lib "devel/sage/sage/combinat/words/suffix_trees.py"
 All tests passed!
 ```
 
-
 The requested values are:
-
 
 ```
 sage: W
@@ -5584,7 +5566,6 @@ sage: t.trie_type_dict()
 {(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}
 ```
 
-
 FWIW, on amd64 the test fails with the same sage-4.8.alpha3 + #9958 + #11986
 
 
@@ -5594,7 +5575,7 @@ FWIW, on amd64 the test fails with the same sage-4.8.alpha3 + #9958 + #11986
 archive/issue_comments_099335.json:
 ```json
 {
-    "body": "On sage.math (x86_64 Linux), sage-4.8.alpha3 + #12106 (unrelated) + #9958 + #11986 gives errors in two files:\n\n```\nsage -t  -force_lib devel/sage/sage/matrix/matrix_mod2e_dense.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 790:\n    sage: float(A.density())\nExpected:\n    0.099738...\nGot:\n    0.099739\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 798:\n    sage: float(A.density())\nExpected:\n    0.499759...\nGot:\n    0.49976\n**********************************************************************\n```\n\n(related ticket: #9562)\nand\n\n```\nsage -t  -force_lib devel/sage/sage/gsl/integration.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 110:\n    sage: numerical_integral(x^2, 0, 1, max_points=100)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 115:\n    sage: numerical_integral(sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 120:\n    sage: numerical_integral(lambda x: sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 131:\n    sage: numerical_integral(f, 0, 1, max_points=200, eps_abs=1e-7, eps_rel=1e-7, rule=4)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 172:\n    sage: exp(-1/x).nintegral(x, 1, 2)  # via maxima\nExpected:\n    (0.50479221787318396, 5.6043194293440752e-15, 21, 0)\nGot:\n    (0.504792217873184, 5.604319429344075e-15, 21, 0)\n**********************************************************************\n```\n\n(related ticket: #12047)\n\nAlso, the spkg should be rebased to #12096.",
+    "body": "On sage.math (x86_64 Linux), sage-4.8.alpha3 + #12106 (unrelated) + #9958 + #11986 gives errors in two files:\n\n```\nsage -t  -force_lib devel/sage/sage/matrix/matrix_mod2e_dense.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 790:\n    sage: float(A.density())\nExpected:\n    0.099738...\nGot:\n    0.099739\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 798:\n    sage: float(A.density())\nExpected:\n    0.499759...\nGot:\n    0.49976\n**********************************************************************\n```\n(related ticket: #9562)\nand\n\n```\nsage -t  -force_lib devel/sage/sage/gsl/integration.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 110:\n    sage: numerical_integral(x^2, 0, 1, max_points=100)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 115:\n    sage: numerical_integral(sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 120:\n    sage: numerical_integral(lambda x: sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 131:\n    sage: numerical_integral(f, 0, 1, max_points=200, eps_abs=1e-7, eps_rel=1e-7, rule=4)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0/devel/sage-main/sage/gsl/integration.pyx\", line 172:\n    sage: exp(-1/x).nintegral(x, 1, 2)  # via maxima\nExpected:\n    (0.50479221787318396, 5.6043194293440752e-15, 21, 0)\nGot:\n    (0.504792217873184, 5.604319429344075e-15, 21, 0)\n**********************************************************************\n```\n(related ticket: #12047)\n\nAlso, the spkg should be rebased to #12096.",
     "created_at": "2011-12-05T22:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5623,7 +5604,6 @@ Got:
     0.49976
 **********************************************************************
 ```
-
 (related ticket: #9562)
 and
 
@@ -5666,7 +5646,6 @@ Got:
     (0.504792217873184, 5.604319429344075e-15, 21, 0)
 **********************************************************************
 ```
-
 (related ticket: #12047)
 
 Also, the spkg should be rebased to #12096.
@@ -5678,7 +5657,7 @@ Also, the spkg should be rebased to #12096.
 archive/issue_comments_099336.json:
 ```json
 {
-    "body": "I get on 32-bit i386 Linux with sage-4.8.alpha2 + various patches including #9958:\n\n```\nsage: from sage.combinat.words.suffix_trees import ImplicitSuffixTree, SuffixTrie\nsage: W = Words(\"ab\")\nsage: t = ImplicitSuffixTree(W(\"aba\"))\nsage: W\nWords over Ordered Alphabet ['a', 'b']\nsage: t\nImplicit Suffix Tree of the word: aba\nsage: t.trie_type_dict()\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n```\n",
+    "body": "I get on 32-bit i386 Linux with sage-4.8.alpha2 + various patches including #9958:\n\n```\nsage: from sage.combinat.words.suffix_trees import ImplicitSuffixTree, SuffixTrie\nsage: W = Words(\"ab\")\nsage: t = ImplicitSuffixTree(W(\"aba\"))\nsage: W\nWords over Ordered Alphabet ['a', 'b']\nsage: t\nImplicit Suffix Tree of the word: aba\nsage: t.trie_type_dict()\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n```",
     "created_at": "2011-12-05T22:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5700,7 +5679,6 @@ Implicit Suffix Tree of the word: aba
 sage: t.trie_type_dict()
 {(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}
 ```
-
 
 
 
@@ -5727,7 +5705,7 @@ thanks for all that feedback. I knew there would be new stuff. I unfortunately (
 archive/issue_comments_099338.json:
 ```json
 {
-    "body": "Replying to [comment:180 fbissey]:\n> I am bogged down as well with the sage-on-gentoo version of alpha3 not wanting to play nice with #4260 [https://github.com/cschwan/sage-on-gentoo/issues/108](https://github.com/cschwan/sage-on-gentoo/issues/108) and it annoys me.\n\nDoes vanilla Sage build and run on that same machine with the same compiler?  Be sure to try a different gcc version, Linbox seems to be sensitive to that.",
+    "body": "Replying to [comment:180 fbissey]:\n> I am bogged down as well with the sage-on-gentoo version of alpha3 not wanting to play nice with #4260 [https://github.com/cschwan/sage-on-gentoo/issues/108](https://github.com/cschwan/sage-on-gentoo/issues/108) and it annoys me.\n\n\nDoes vanilla Sage build and run on that same machine with the same compiler?  Be sure to try a different gcc version, Linbox seems to be sensitive to that.",
     "created_at": "2011-12-05T22:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5739,6 +5717,7 @@ archive/issue_comments_099338.json:
 Replying to [comment:180 fbissey]:
 > I am bogged down as well with the sage-on-gentoo version of alpha3 not wanting to play nice with #4260 [https://github.com/cschwan/sage-on-gentoo/issues/108](https://github.com/cschwan/sage-on-gentoo/issues/108) and it annoys me.
 
+
 Does vanilla Sage build and run on that same machine with the same compiler?  Be sure to try a different gcc version, Linbox seems to be sensitive to that.
 
 
@@ -5748,7 +5727,7 @@ Does vanilla Sage build and run on that same machine with the same compiler?  Be
 archive/issue_comments_099339.json:
 ```json
 {
-    "body": "On x86 with sage-4.8.alpha3 + #9958 + #11986 I have the following failures:\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/gsl/integration.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 110:\n    sage: numerical_integral(x^2, 0, 1, max_points=100)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 115:\n    sage: numerical_integral(sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 120:\n    sage: numerical_integral(lambda x: sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 131:\n    sage: numerical_integral(f, 0, 1, max_points=200, eps_abs=1e-7, eps_rel=1e-7, rule=4)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 172:\n    sage: exp(-1/x).nintegral(x, 1, 2)  # via maxima\nExpected:\n    (0.50479221787318396, 5.6043194293440752e-15, 21, 0)\nGot:\n    (0.504792217873184, 5.604319429344075e-15, 21, 0)\n**********************************************************************\n```\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.8335077654199736)\n**********************************************************************\n```\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 790:\n    sage: float(A.density())\nExpected:\n    0.099738...\nGot:\n    0.099739\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 798:\n    sage: float(A.density())\nExpected:\n    0.499759...\nGot:\n    0.49976\n**********************************************************************\n```\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/functions/transcendental.py\", line 80:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05]\nGot:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]\n**********************************************************************\n```\n",
+    "body": "On x86 with sage-4.8.alpha3 + #9958 + #11986 I have the following failures:\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/gsl/integration.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 110:\n    sage: numerical_integral(x^2, 0, 1, max_points=100)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 115:\n    sage: numerical_integral(sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 120:\n    sage: numerical_integral(lambda x: sin(x)^3 + sin(x),  0, pi)\nExpected:\n    (3.333333333333333, 3.7007434154171883e-14)\nGot:\n    (3.333333333333333, 3.700743415417188e-14)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 131:\n    sage: numerical_integral(f, 0, 1, max_points=200, eps_abs=1e-7, eps_rel=1e-7, rule=4)\nExpected:\n    (0.33333333333333331, 3.7007434154171879e-15)\nGot:\n    (0.3333333333333333, 3.700743415417188e-15)\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/gsl/integration.pyx\", line 172:\n    sage: exp(-1/x).nintegral(x, 1, 2)  # via maxima\nExpected:\n    (0.50479221787318396, 5.6043194293440752e-15, 21, 0)\nGot:\n    (0.504792217873184, 5.604319429344075e-15, 21, 0)\n**********************************************************************\n```\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/misc/randstate.pyx\", line 61:\n    sage: rtest()\nExpected:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.83350776541997362)\nGot:\n    (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.8335077654199736)\n**********************************************************************\n```\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 790:\n    sage: float(A.density())\nExpected:\n    0.099738...\nGot:\n    0.099739\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx\", line 798:\n    sage: float(A.density())\nExpected:\n    0.499759...\nGot:\n    0.49976\n**********************************************************************\n```\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/functions/transcendental.py\", line 80:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05]\nGot:\n    [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]\n**********************************************************************\n```",
     "created_at": "2011-12-05T23:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5758,7 +5737,6 @@ archive/issue_comments_099339.json:
 ```
 
 On x86 with sage-4.8.alpha3 + #9958 + #11986 I have the following failures:
-
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/gsl/integration.pyx
@@ -5800,7 +5778,6 @@ Got:
 **********************************************************************
 ```
 
-
 ```
 sage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx
 **********************************************************************
@@ -5812,7 +5789,6 @@ Got:
     (978, 0.184109262667515, -3*x^2 - 1/12, (4,5), [ 0, 1, 1, 0, 0 ], 1161603091, 60359, 0.8335077654199736)
 **********************************************************************
 ```
-
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/matrix/matrix_mod2e_dense.pyx
@@ -5833,7 +5809,6 @@ Got:
 **********************************************************************
 ```
 
-
 ```
 sage -t -long  -force_lib devel/sage-main/sage/functions/transcendental.py
 **********************************************************************
@@ -5845,7 +5820,6 @@ Got:
     [0.04890051070806112, 0.0037793524098489067, 0.00036008245216265873, 3.766562284392475e-05]
 **********************************************************************
 ```
-
 
 
 
@@ -5914,7 +5888,7 @@ updated the first patch and readded the transcendental patch to the list.
 archive/issue_comments_099343.json:
 ```json
 {
-    "body": "For suffix_tree it looks like your two values don't agree:\n\n```\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n```\n\nIf we add that I don't see it on OS X x86 that looks bad. I also have an x86_64 machine where the value is the same as Jeroen and the test fails. Steve get the right value on the other hand so there is something going there.",
+    "body": "For suffix_tree it looks like your two values don't agree:\n\n```\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n```\nIf we add that I don't see it on OS X x86 that looks bad. I also have an x86_64 machine where the value is the same as Jeroen and the test fails. Steve get the right value on the other hand so there is something going there.",
     "created_at": "2011-12-06T01:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -5929,7 +5903,6 @@ For suffix_tree it looks like your two values don't agree:
 {(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}
 {(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}
 ```
-
 If we add that I don't see it on OS X x86 that looks bad. I also have an x86_64 machine where the value is the same as Jeroen and the test fails. Steve get the right value on the other hand so there is something going there.
 
 
@@ -6071,7 +6044,7 @@ I forgot to add a new bit for randstate.pyx on 32 bit. I'll do that later but I 
 archive/issue_comments_099351.json:
 ```json
 {
-    "body": "Replying to [comment:189 fbissey]:\n> Should we involve someone from combinatronics to get to the bottom of suffix_tree and nfactor_enumerate_word?\nSounds good, try to send an email to sage-devel.",
+    "body": "Replying to [comment:189 fbissey]:\n> Should we involve someone from combinatronics to get to the bottom of suffix_tree and nfactor_enumerate_word?\n\nSounds good, try to send an email to sage-devel.",
     "created_at": "2011-12-06T19:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6082,6 +6055,7 @@ archive/issue_comments_099351.json:
 
 Replying to [comment:189 fbissey]:
 > Should we involve someone from combinatronics to get to the bottom of suffix_tree and nfactor_enumerate_word?
+
 Sounds good, try to send an email to sage-devel.
 
 
@@ -6091,7 +6065,7 @@ Sounds good, try to send an email to sage-devel.
 archive/issue_comments_099352.json:
 ```json
 {
-    "body": "For the sake of completeness, I now have\n\n32bit: one failure\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n```\n\nwhich was mentioned above.\n\n64bit: two failures\n\n\n```\n\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 6456\n**********************************************************************\n\n\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/suffix_trees.py\",\nline 1323:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2]\n, [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\nwhich have been mentioned previously.",
+    "body": "For the sake of completeness, I now have\n\n32bit: one failure\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx\n```\nwhich was mentioned above.\n\n64bit: two failures\n\n```\n\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 6456\n**********************************************************************\n\n\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/suffix_trees.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/suffix_trees.py\",\nline 1323:\n    sage: t.trie_type_dict() == dict([[(0, W(\"a\")), 4], [(0, W(\"b\")), 3], [(3, W(\"a\")), 2]\n, [(4, W(\"b\")), 5], [(5, W(\"a\")), 1]])\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\nwhich have been mentioned previously.",
     "created_at": "2011-12-06T20:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6104,15 +6078,12 @@ For the sake of completeness, I now have
 
 32bit: one failure
 
-
 ```
 sage -t -long  -force_lib devel/sage-main/sage/misc/randstate.pyx
 ```
-
 which was mentioned above.
 
 64bit: two failures
-
 
 ```
 
@@ -6156,7 +6127,6 @@ Got:
     False
 **********************************************************************
 ```
-
 which have been mentioned previously.
 
 
@@ -6184,7 +6154,7 @@ This ticket made me notice a bug with the L-series of Eisenstein series: #12124.
 archive/issue_comments_099354.json:
 ```json
 {
-    "body": "First of all, I'm not an expert of combinatorics on word. So I'd rather\nSebastien Labbe to jump in the discussion. I just trying to help.\n\n> 64bit: two failures\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 6456\n**********************************************************************\n```\n\n\nThis first failure is not a problem. The iterator here is extracted from a\ndict of dict so it is not unexpected to have a random order. Fixing the test\nof marking it at random should be ok. This test is an explanation for the\nuser, the real feature is tested further in the file.\n\n\n> which have been mentioned previously.\n\n```\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n```\n\n\nThis one is more tricky: As far as I understand, both result are perfectly\nlegible: the second is the same as the first after applying the following\ncyclic permutation (3,4,5). The numbering is random. So (again as far as I\nunderstand), the problem in only created by the cross-platform non-determinism\nof the set/dict data structure. I'm not sure here what is the best fix.\n\nCheers,\n\nFlorent",
+    "body": "First of all, I'm not an expert of combinatorics on word. So I'd rather\nSebastien Labbe to jump in the discussion. I just trying to help.\n\n> 64bit: two failures\n\n{{{\nsage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable\n_word.py\", line 26:\n    sage: it.next()\nExpected:\n    word: 4564\nGot:\n    word: 6456\n**********************************************************************\n}}}\n\nThis first failure is not a problem. The iterator here is extracted from a\ndict of dict so it is not unexpected to have a random order. Fixing the test\nof marking it at random should be ok. This test is an explanation for the\nuser, the real feature is tested further in the file.\n\n\n> which have been mentioned previously.\n\n{{{\n{(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}\n{(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}\n}}}\n\nThis one is more tricky: As far as I understand, both result are perfectly\nlegible: the second is the same as the first after applying the following\ncyclic permutation (3,4,5). The numbering is random. So (again as far as I\nunderstand), the problem in only created by the cross-platform non-determinism\nof the set/dict data structure. I'm not sure here what is the best fix.\n\nCheers,\n\nFlorent",
     "created_at": "2011-12-07T22:27:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6198,7 +6168,7 @@ Sebastien Labbe to jump in the discussion. I just trying to help.
 
 > 64bit: two failures
 
-```
+{{{
 sage -t -long  -force_lib devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py
 **********************************************************************
 File "/storage/sage/sage-4.8.alpha3/devel/sage-main/sage/combinat/words/nfactor_enumerable
@@ -6225,8 +6195,7 @@ Expected:
 Got:
     word: 6456
 **********************************************************************
-```
-
+}}}
 
 This first failure is not a problem. The iterator here is extracted from a
 dict of dict so it is not unexpected to have a random order. Fixing the test
@@ -6236,11 +6205,10 @@ user, the real feature is tested further in the file.
 
 > which have been mentioned previously.
 
-```
+{{{
 {(4, word: a): 1, (0, word: b): 5, (0, word: a): 3, (5, word: a): 2, (3, word: b): 4}
 {(4, word: b): 5, (0, word: a): 4, (0, word: b): 3, (5, word: a): 1, (3, word: a): 2}
-```
-
+}}}
 
 This one is more tricky: As far as I understand, both result are perfectly
 legible: the second is the same as the first after applying the following
@@ -6315,7 +6283,7 @@ I'll work on the remaining tests tomorrow, I hope. I will remove the eis_series.
 archive/issue_comments_099358.json:
 ```json
 {
-    "body": "Replying to [comment:196 fbissey]:\n> I'll work on the remaining tests tomorrow, I hope.\nThat would be great!  I would love to see this finished in time, such that the next release can really be sage-5.0.",
+    "body": "Replying to [comment:196 fbissey]:\n> I'll work on the remaining tests tomorrow, I hope.\n\nThat would be great!  I would love to see this finished in time, such that the next release can really be sage-5.0.",
     "created_at": "2011-12-10T20:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6326,6 +6294,7 @@ archive/issue_comments_099358.json:
 
 Replying to [comment:196 fbissey]:
 > I'll work on the remaining tests tomorrow, I hope.
+
 That would be great!  I would love to see this finished in time, such that the next release can really be sage-5.0.
 
 
@@ -6491,7 +6460,7 @@ Actually, you should have a look at what I did for both of these in [attachment:
 archive/issue_comments_099367.json:
 ```json
 {
-    "body": "With the current update I have the following failures:\n\n\n```\n32bit\nsage -t -long  -force_lib devel/sage-9958/sage/combinat/words/nfactor_enumerable_word\n.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456     # random\nGot:\n    word: 6456\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 25:\n    sage: it.next()\nExpected:\n    word: 5645     # random\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 27:\n    sage: it.next()\nExpected:\n    word: 4564     # random\nGot:\n    word: 4564\n**********************************************************************\n\n64bit\n\nsage -t -long  -force_lib devel/sage-9958/sage/combinat/words/nfactor_enumerable_word\n.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456     # random\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 25:\n    sage: it.next()\nExpected:\n    word: 5645     # random\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 27:\n    sage: it.next()\nExpected:\n    word: 4564     # random\nGot:\n    word: 6456\n**********************************************************************\n```\n\nand on 32bit and 64bit\n\n\n```\n\nsage -t -long  -force_lib devel/sage-9958/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/misc/randstate.pyx\", line 15\n3:\n    sage: random(), getrandbits(20), uniform(5.0, 10.0), normalvariate(0, 1)\nExpected:\n    (0.82940228518742587, 624859L, 5.77894484361117, -0.42013668263087578)\nGot:\n    (0.8294022851874259, 624859L, 5.77894484361117, -0.4201366826308758)\n**********************************************************************\n```\n\nI don't recall previously seeing this particular randstate.pyx failure. Perhaps I've missed something.",
+    "body": "With the current update I have the following failures:\n\n```\n32bit\nsage -t -long  -force_lib devel/sage-9958/sage/combinat/words/nfactor_enumerable_word\n.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456     # random\nGot:\n    word: 6456\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 25:\n    sage: it.next()\nExpected:\n    word: 5645     # random\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 27:\n    sage: it.next()\nExpected:\n    word: 4564     # random\nGot:\n    word: 4564\n**********************************************************************\n\n64bit\n\nsage -t -long  -force_lib devel/sage-9958/sage/combinat/words/nfactor_enumerable_word\n.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 23:\n    sage: it.next()\nExpected:\n    word: 6456     # random\nGot:\n    word: 4564\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 25:\n    sage: it.next()\nExpected:\n    word: 5645     # random\nGot:\n    word: 5645\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/combinat/words/nfactor_enume\nrable_word.py\", line 27:\n    sage: it.next()\nExpected:\n    word: 4564     # random\nGot:\n    word: 6456\n**********************************************************************\n```\nand on 32bit and 64bit\n\n```\n\nsage -t -long  -force_lib devel/sage-9958/sage/misc/randstate.pyx\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha3/devel/sage-9958/sage/misc/randstate.pyx\", line 15\n3:\n    sage: random(), getrandbits(20), uniform(5.0, 10.0), normalvariate(0, 1)\nExpected:\n    (0.82940228518742587, 624859L, 5.77894484361117, -0.42013668263087578)\nGot:\n    (0.8294022851874259, 624859L, 5.77894484361117, -0.4201366826308758)\n**********************************************************************\n```\nI don't recall previously seeing this particular randstate.pyx failure. Perhaps I've missed something.",
     "created_at": "2011-12-11T07:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6501,7 +6470,6 @@ archive/issue_comments_099367.json:
 ```
 
 With the current update I have the following failures:
-
 
 ```
 32bit
@@ -6563,9 +6531,7 @@ Got:
     word: 6456
 **********************************************************************
 ```
-
 and on 32bit and 64bit
-
 
 ```
 
@@ -6580,7 +6546,6 @@ Got:
     (0.8294022851874259, 624859L, 5.77894484361117, -0.4201366826308758)
 **********************************************************************
 ```
-
 I don't recall previously seeing this particular randstate.pyx failure. Perhaps I've missed something.
 
 
@@ -6816,7 +6781,7 @@ But still, somebody needs to actually *look* at the patches and verify that they
 archive/issue_comments_099380.json:
 ```json
 {
-    "body": "OK Jeroen, that's a boring task for someone most of them are of the form:\n\n```\ndiff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py\n--- a/sage/misc/sage_unittest.py\n+++ b/sage/misc/sage_unittest.py\n@@ -201,12 +201,12 @@\n             Failure in _test_b:\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             Failure in _test_d:\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             Failure in _test_pickling:\n             Traceback (most recent call last):\n@@ -220,14 +220,14 @@\n             running ._test_b() . . . fail\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             running ._test_c() . . . pass\n             running ._test_category() . . . pass\n             running ._test_d() . . . fail\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             running ._test_not_implemented_methods() . . . pass\n             running ._test_pickling() . . . fail\n@@ -249,7 +249,7 @@\n               File ..., in _test_b\n                 def _test_b(self, tester): tester.fail()\n               ...\n-            AssertionError\n+            AssertionError: None\n \n         In conjonction with ``%pdb on``, this allows for the debbuger\n         to jump directly to the first failure location.\n@@ -311,7 +311,7 @@\n         sage: tester.assert_(1 == 0)\n         Traceback (most recent call last):\n         ...\n-        AssertionError\n+        AssertionError: False is not true\n         sage: tester.assert_(1 == 0, \"this is expected to fail\")\n         Traceback (most recent call last):\n         ...\n```\n\nand other numerical noise niceties cutting one digit and sometimes the rounding makes a lot of digits disappear (and it looks better actually), for example in plot/colors.py\n\n```\n@@ -290,23 +290,23 @@\n \n         sage: from sage.plot.colors import rgbcolor\n         sage: rgbcolor(Color(0.25, 0.4, 0.9))\n-        (0.25, 0.40000000000000002, 0.90000000000000002)\n+        (0.25, 0.4, 0.9)\n         sage: rgbcolor('purple')\n```\n\nOnly the two combinat patches are a bit more subtle.",
+    "body": "OK Jeroen, that's a boring task for someone most of them are of the form:\n\n```\ndiff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py\n--- a/sage/misc/sage_unittest.py\n+++ b/sage/misc/sage_unittest.py\n@@ -201,12 +201,12 @@\n             Failure in _test_b:\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             Failure in _test_d:\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             Failure in _test_pickling:\n             Traceback (most recent call last):\n@@ -220,14 +220,14 @@\n             running ._test_b() . . . fail\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             running ._test_c() . . . pass\n             running ._test_category() . . . pass\n             running ._test_d() . . . fail\n             Traceback (most recent call last):\n               ...\n-            AssertionError\n+            AssertionError: None\n             ------------------------------------------------------------\n             running ._test_not_implemented_methods() . . . pass\n             running ._test_pickling() . . . fail\n@@ -249,7 +249,7 @@\n               File ..., in _test_b\n                 def _test_b(self, tester): tester.fail()\n               ...\n-            AssertionError\n+            AssertionError: None\n \n         In conjonction with ``%pdb on``, this allows for the debbuger\n         to jump directly to the first failure location.\n@@ -311,7 +311,7 @@\n         sage: tester.assert_(1 == 0)\n         Traceback (most recent call last):\n         ...\n-        AssertionError\n+        AssertionError: False is not true\n         sage: tester.assert_(1 == 0, \"this is expected to fail\")\n         Traceback (most recent call last):\n         ...\n```\nand other numerical noise niceties cutting one digit and sometimes the rounding makes a lot of digits disappear (and it looks better actually), for example in plot/colors.py\n\n```\n@@ -290,23 +290,23 @@\n \n         sage: from sage.plot.colors import rgbcolor\n         sage: rgbcolor(Color(0.25, 0.4, 0.9))\n-        (0.25, 0.40000000000000002, 0.90000000000000002)\n+        (0.25, 0.4, 0.9)\n         sage: rgbcolor('purple')\n```\nOnly the two combinat patches are a bit more subtle.",
     "created_at": "2011-12-11T21:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6882,7 +6847,6 @@ diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
          Traceback (most recent call last):
          ...
 ```
-
 and other numerical noise niceties cutting one digit and sometimes the rounding makes a lot of digits disappear (and it looks better actually), for example in plot/colors.py
 
 ```
@@ -6894,7 +6858,6 @@ and other numerical noise niceties cutting one digit and sometimes the rounding 
 +        (0.25, 0.4, 0.9)
          sage: rgbcolor('purple')
 ```
-
 Only the two combinat patches are a bit more subtle.
 
 
@@ -6904,7 +6867,7 @@ Only the two combinat patches are a bit more subtle.
 archive/issue_comments_099381.json:
 ```json
 {
-    "body": "Replying to [comment:209 fbissey]:\n> Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\nIs this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :) at least by the time I finish applying ALL of these patches.",
+    "body": "Replying to [comment:209 fbissey]:\n> Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n\nIs this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :) at least by the time I finish applying ALL of these patches.",
     "created_at": "2011-12-12T13:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6915,6 +6878,7 @@ archive/issue_comments_099381.json:
 
 Replying to [comment:209 fbissey]:
 > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.
+
 Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :) at least by the time I finish applying ALL of these patches.
 
 
@@ -6942,7 +6906,7 @@ It should apply to 4.8.alpha3, apply #11986 + #12124 also.
 archive/issue_comments_099383.json:
 ```json
 {
-    "body": "Replying to [comment:212 kcrisman]:\n> Replying to [comment:209 fbissey]:\n> > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\nGo ahead, I'm currently tackling other beasts...",
+    "body": "Replying to [comment:212 kcrisman]:\n> Replying to [comment:209 fbissey]:\n> > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n\n> Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\nGo ahead, I'm currently tackling other beasts...",
     "created_at": "2011-12-13T08:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6954,6 +6918,7 @@ archive/issue_comments_099383.json:
 Replying to [comment:212 kcrisman]:
 > Replying to [comment:209 fbissey]:
 > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.
+
 > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)
 Go ahead, I'm currently tackling other beasts...
 
@@ -6964,7 +6929,7 @@ Go ahead, I'm currently tackling other beasts...
 archive/issue_comments_099384.json:
 ```json
 {
-    "body": "Replying to [comment:201 fbissey]:\n> Actually, you should have a look at what I did for both of these in [attachment:trac_9958-nfactor_enumerable_word-randomness.patch] and [attachment:trac_9958-suffix_trees-variations.patch]. If you could give your opinion on the patches or if you want to submit patches of your own it would be appreciated.\n\nHi,\n\nI just look at the suffix tree code (written not by me but by Franco Saliola). The method `trie_type_dict` is not used anywhere in the file neither in `sage/combinat/words` neither in all Sage I would guess. So, it's kind of difficult to guess what the result should be (input and output blocks are absent in documentation). I think that method was used by Franco to compare the implementation of `ImplicitSuffixTree` with that of `SuffixTrie` but not seriously because the output is not practical (one can't create a `DiGraph` out of it).\n\nAnyway, there are two loops in that method that both go through `.iteritems()` of a dictionary... Integer indexes present in the result depends on the ordering of those two loops. So, it is possible that a third different result is obtained in some other machine or system today or later. I just made a patch which should be more durable in the long term.\n\nFor the nfactor enumerable file, the fix is perfect.",
+    "body": "Replying to [comment:201 fbissey]:\n> Actually, you should have a look at what I did for both of these in [attachment:trac_9958-nfactor_enumerable_word-randomness.patch] and [attachment:trac_9958-suffix_trees-variations.patch]. If you could give your opinion on the patches or if you want to submit patches of your own it would be appreciated.\n\n\nHi,\n\nI just look at the suffix tree code (written not by me but by Franco Saliola). The method `trie_type_dict` is not used anywhere in the file neither in `sage/combinat/words` neither in all Sage I would guess. So, it's kind of difficult to guess what the result should be (input and output blocks are absent in documentation). I think that method was used by Franco to compare the implementation of `ImplicitSuffixTree` with that of `SuffixTrie` but not seriously because the output is not practical (one can't create a `DiGraph` out of it).\n\nAnyway, there are two loops in that method that both go through `.iteritems()` of a dictionary... Integer indexes present in the result depends on the ordering of those two loops. So, it is possible that a third different result is obtained in some other machine or system today or later. I just made a patch which should be more durable in the long term.\n\nFor the nfactor enumerable file, the fix is perfect.",
     "created_at": "2011-12-13T17:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -6975,6 +6940,7 @@ archive/issue_comments_099384.json:
 
 Replying to [comment:201 fbissey]:
 > Actually, you should have a look at what I did for both of these in [attachment:trac_9958-nfactor_enumerable_word-randomness.patch] and [attachment:trac_9958-suffix_trees-variations.patch]. If you could give your opinion on the patches or if you want to submit patches of your own it would be appreciated.
+
 
 Hi,
 
@@ -7009,7 +6975,7 @@ Fix machine dependant doctest in suffix tree
 archive/issue_comments_099386.json:
 ```json
 {
-    "body": "Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by @kcrisman created at 2011-12-13 18:23:56\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
+    "body": "Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by @kcrisman created at 2011-12-13 18:23:56\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\n\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
     "created_at": "2011-12-13T18:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7021,8 +6987,10 @@ archive/issue_comments_099386.json:
 Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by @kcrisman created at 2011-12-13 18:23:56
 
 > > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.
+
 > > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)
 > Go ahead, I'm currently tackling other beasts...
+
 Okay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)
 
 So presumably sometime tomorrow I can report back.  So far six files having tested well...
@@ -7034,7 +7002,7 @@ So presumably sometime tomorrow I can report back.  So far six files having test
 archive/issue_comments_099387.json:
 ```json
 {
-    "body": "Replying to [comment:216 slabbe]:\n> Anyway, there are two loops in that method that both go through `.iteritems()` of a dictionary... Integer indexes present in the result depends on the ordering of those two loops. So, it is possible that a third different result is obtained in some other machine or system today or later. I just made a patch which should be more durable in the long term.\n> \n> For the nfactor enumerable file, the fix is perfect.\n\nThanks. I thought there could be a third possible results from Florent's comments (permutation (3,4,5)) but couldn't figure what it would look like. Happy to have some serious review for that bit.",
+    "body": "Replying to [comment:216 slabbe]:\n> Anyway, there are two loops in that method that both go through `.iteritems()` of a dictionary... Integer indexes present in the result depends on the ordering of those two loops. So, it is possible that a third different result is obtained in some other machine or system today or later. I just made a patch which should be more durable in the long term.\n> \n> For the nfactor enumerable file, the fix is perfect.\n\n\nThanks. I thought there could be a third possible results from Florent's comments (permutation (3,4,5)) but couldn't figure what it would look like. Happy to have some serious review for that bit.",
     "created_at": "2011-12-13T18:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7047,6 +7015,7 @@ Replying to [comment:216 slabbe]:
 > Anyway, there are two loops in that method that both go through `.iteritems()` of a dictionary... Integer indexes present in the result depends on the ordering of those two loops. So, it is possible that a third different result is obtained in some other machine or system today or later. I just made a patch which should be more durable in the long term.
 > 
 > For the nfactor enumerable file, the fix is perfect.
+
 
 Thanks. I thought there could be a third possible results from Florent's comments (permutation (3,4,5)) but couldn't figure what it would look like. Happy to have some serious review for that bit.
 
@@ -7113,7 +7082,7 @@ First patch updated. I don't think there will be any more changes because of 4.8
 archive/issue_comments_099391.json:
 ```json
 {
-    "body": "It looks like a slight modification is still needed in interfaces/r.py. On both x86 and amd64 I get\n\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/interfaces/r.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha4/devel/sage-main/sage/interfaces/r.py\", line 173:\n    sage: sum(rr._sage_())\nExpected:\n    9.97721251689810...\nGot:\n    9.97721251689811\n**********************************************************************\n```\n\nattachment:trac_9958-suffix_trees-variations-sl.patch:ticket:9958 was used in the tests.",
+    "body": "It looks like a slight modification is still needed in interfaces/r.py. On both x86 and amd64 I get\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/interfaces/r.py\n**********************************************************************\nFile \"/storage/sage/sage-4.8.alpha4/devel/sage-main/sage/interfaces/r.py\", line 173:\n    sage: sum(rr._sage_())\nExpected:\n    9.97721251689810...\nGot:\n    9.97721251689811\n**********************************************************************\n```\nattachment:trac_9958-suffix_trees-variations-sl.patch:ticket:9958 was used in the tests.",
     "created_at": "2011-12-14T02:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7123,7 +7092,6 @@ archive/issue_comments_099391.json:
 ```
 
 It looks like a slight modification is still needed in interfaces/r.py. On both x86 and amd64 I get
-
 
 ```
 sage -t -long  -force_lib devel/sage-main/sage/interfaces/r.py
@@ -7136,7 +7104,6 @@ Got:
     9.97721251689811
 **********************************************************************
 ```
-
 attachment:trac_9958-suffix_trees-variations-sl.patch:ticket:9958 was used in the tests.
 
 
@@ -7222,7 +7189,7 @@ On OSX 10.6.8, I tried downloading a fresh copy of 4.8.alpha4, putting this pyth
 archive/issue_comments_099396.json:
 ```json
 {
-    "body": "Replying to [comment:224 jason]:\n> How do we test this ticket?  Is it enough to untar a fresh tarball of the 4.8.alpha4 source, replace the existing python spkg with the one from this ticket, and do a normal make?  Then apply the patches to the sage library and run doctests?\n> \n\nYes that's how you should do it.\n\n> On OSX 10.6.8, I tried downloading a fresh copy of 4.8.alpha4, putting this python spkg in the spkg/standard directory and deleting the old python spkg.  I ended up getting a build error, seemingly right after I finished building scipy (even though scipy said it was built succesfully, but I was also building spkgs in parallel).  I typed \"make\" again to restart the process and the same thing happened after rpy built---it said rpy was built successfully, but then it stopped the build, saying \"Error building Sage\".\n> \n\nCould you post the log for the build of python somewhere? scipy and rpy are built after sage (or at least they can be since they are runtime and not buildtime dependencies) so it is possible you were building sage itself at the same time. Is there a log for the sage spkg (in spkg/log)?",
+    "body": "Replying to [comment:224 jason]:\n> How do we test this ticket?  Is it enough to untar a fresh tarball of the 4.8.alpha4 source, replace the existing python spkg with the one from this ticket, and do a normal make?  Then apply the patches to the sage library and run doctests?\n> \n\n\nYes that's how you should do it.\n\n> On OSX 10.6.8, I tried downloading a fresh copy of 4.8.alpha4, putting this python spkg in the spkg/standard directory and deleting the old python spkg.  I ended up getting a build error, seemingly right after I finished building scipy (even though scipy said it was built succesfully, but I was also building spkgs in parallel).  I typed \"make\" again to restart the process and the same thing happened after rpy built---it said rpy was built successfully, but then it stopped the build, saying \"Error building Sage\".\n> \n\n\nCould you post the log for the build of python somewhere? scipy and rpy are built after sage (or at least they can be since they are runtime and not buildtime dependencies) so it is possible you were building sage itself at the same time. Is there a log for the sage spkg (in spkg/log)?",
     "created_at": "2011-12-14T11:51:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7235,10 +7202,12 @@ Replying to [comment:224 jason]:
 > How do we test this ticket?  Is it enough to untar a fresh tarball of the 4.8.alpha4 source, replace the existing python spkg with the one from this ticket, and do a normal make?  Then apply the patches to the sage library and run doctests?
 > 
 
+
 Yes that's how you should do it.
 
 > On OSX 10.6.8, I tried downloading a fresh copy of 4.8.alpha4, putting this python spkg in the spkg/standard directory and deleting the old python spkg.  I ended up getting a build error, seemingly right after I finished building scipy (even though scipy said it was built succesfully, but I was also building spkgs in parallel).  I typed "make" again to restart the process and the same thing happened after rpy built---it said rpy was built successfully, but then it stopped the build, saying "Error building Sage".
 > 
+
 
 Could you post the log for the build of python somewhere? scipy and rpy are built after sage (or at least they can be since they are runtime and not buildtime dependencies) so it is possible you were building sage itself at the same time. Is there a log for the sage spkg (in spkg/log)?
 
@@ -7249,7 +7218,7 @@ Could you post the log for the build of python somewhere? scipy and rpy are buil
 archive/issue_comments_099397.json:
 ```json
 {
-    "body": "I posted the install.log here: http://sage.math.washington.edu/home/jason/sage-4.8.alpha4-python2.7-install.log.bz2\n\nIf you search for \"Error building Sage\", you'll see the multiple times I restarted the build (that message appeared after each time I restarted the build).\n\nHere's the list of spkg logs I have:\n\n\n```\n\nsage-4.8.alpha4newpython/spkg/logs% ls\natlas-3.8.4.log                gdmodule-0.56.p7.log           moin-1.9.1.p2.log              ratpoints-2.1.3.p1.log\nblas-20070724.log              genus2reduction-0.3.p8.log     mpfi-1.3.4-cvs20071125.p8.log  readline-6.2.p1.log\nboehm_gc-7.2.alpha6.p1.log     gfan-0.4plus.p1.log            mpfr-2.4.2.log                 rpy2-2.0.8.log\nboost-cropped-1.34.1.log       givaro-3.2.13rc2.p2.log        mpir-2.1.3.p8.log              rubiks-20070912.p17.log\nbzip2-1.0.5.log                glpk-4.44.log                  mpmath-0.17.log                sage_root-4.8.alpha4.log\ncddlib-094f.p8.log             gnutls-2.2.1.p5.log            networkx-1.2.p1.log            sage_scripts-4.8.alpha4.log\ncephes-2.8.log                 graphs-20070722.p1.log         ntl-5.5.2.log                  sagenb-0.8.25.log\ncliquer-1.2.p10.log            gsl-1.15.log                   numpy-1.5.1.log                scipy-0.9.p1.log\nconway_polynomials-0.2.log     iconv-1.13.1.p3.log            opencdk-0.6.6.p5.log           scons-1.2.0.log\ncvxopt-1.1.3.log               iml-1.0.1.p13.log              palp-1.1.p3.log                setuptools-0.6.16.log\ncython-0.15.1.log              ipython-0.10.2.p0.log          pari-2.5.0.p2.log              singular-3-1-3-3.p2.log\ndir-0.1.log                    jinja2-2.5.5.log               patch-2.5.9.p2.log             sphinx-1.1.2.p0.log\ndocutils-0.7.p0.log            lapack-20071123.p2.log         pexpect-2.0.p4.log             sqlalchemy-0.5.8.log\necl-11.1.2.cvs20111120.p0.log  lcalc-1.23.p9.log              pil-1.1.6.p4.log               sqlite-3.7.5.log\neclib-20100711.p0.log          libfplll-3.0.12.p1.log         polybori-0.7.1.p6.log          symmetrica-2.0.p7.log\necm-6.3.p2.log                 libgcrypt-1.4.4.p3.log         polytopes_db-20100210.log      sympow-1.018.1.p9.log\nelliptic_curves-0.3.log        libgpg_error-1.6.p3.log        ppl-0.11.2.log                 sympy-0.7.1.log\nextcode-4.8.alpha4.log         libm4ri-20111004.log           prereq-0.9.log                 tachyon-0.98.9.p5.log\nf2c-20070816.p2.log            libm4rie-20111004.log          pycrypto-2.1.0.log             termcap-1.3.1.p1.log\nflint-1.5.0.p10.log            libpng-1.2.35.p3.log           pygments-1.3.1.p0.log          twisted-9.0.p2.log\nflintqs-20070817.p6.log        linbox-1.1.6.p5.log            pynac-0.2.3.log                zlib-1.2.5.p0.log\nfortran-20100629.log           matplotlib-1.0.1.p0.log        python-2.7.2.p0.log            zn_poly-0.9.p5.log\nfreetype-2.3.5.p3.log          maxima-5.23.2.p2.log           python_gnutls-1.1.4.p7.log     zodb3-3.7.0.p4.log\ngd-2.0.35.p5.log               mercurial-1.8.4.log            r-2.14.0.p0.log\n```\n",
+    "body": "I posted the install.log here: http://sage.math.washington.edu/home/jason/sage-4.8.alpha4-python2.7-install.log.bz2\n\nIf you search for \"Error building Sage\", you'll see the multiple times I restarted the build (that message appeared after each time I restarted the build).\n\nHere's the list of spkg logs I have:\n\n```\n\nsage-4.8.alpha4newpython/spkg/logs% ls\natlas-3.8.4.log                gdmodule-0.56.p7.log           moin-1.9.1.p2.log              ratpoints-2.1.3.p1.log\nblas-20070724.log              genus2reduction-0.3.p8.log     mpfi-1.3.4-cvs20071125.p8.log  readline-6.2.p1.log\nboehm_gc-7.2.alpha6.p1.log     gfan-0.4plus.p1.log            mpfr-2.4.2.log                 rpy2-2.0.8.log\nboost-cropped-1.34.1.log       givaro-3.2.13rc2.p2.log        mpir-2.1.3.p8.log              rubiks-20070912.p17.log\nbzip2-1.0.5.log                glpk-4.44.log                  mpmath-0.17.log                sage_root-4.8.alpha4.log\ncddlib-094f.p8.log             gnutls-2.2.1.p5.log            networkx-1.2.p1.log            sage_scripts-4.8.alpha4.log\ncephes-2.8.log                 graphs-20070722.p1.log         ntl-5.5.2.log                  sagenb-0.8.25.log\ncliquer-1.2.p10.log            gsl-1.15.log                   numpy-1.5.1.log                scipy-0.9.p1.log\nconway_polynomials-0.2.log     iconv-1.13.1.p3.log            opencdk-0.6.6.p5.log           scons-1.2.0.log\ncvxopt-1.1.3.log               iml-1.0.1.p13.log              palp-1.1.p3.log                setuptools-0.6.16.log\ncython-0.15.1.log              ipython-0.10.2.p0.log          pari-2.5.0.p2.log              singular-3-1-3-3.p2.log\ndir-0.1.log                    jinja2-2.5.5.log               patch-2.5.9.p2.log             sphinx-1.1.2.p0.log\ndocutils-0.7.p0.log            lapack-20071123.p2.log         pexpect-2.0.p4.log             sqlalchemy-0.5.8.log\necl-11.1.2.cvs20111120.p0.log  lcalc-1.23.p9.log              pil-1.1.6.p4.log               sqlite-3.7.5.log\neclib-20100711.p0.log          libfplll-3.0.12.p1.log         polybori-0.7.1.p6.log          symmetrica-2.0.p7.log\necm-6.3.p2.log                 libgcrypt-1.4.4.p3.log         polytopes_db-20100210.log      sympow-1.018.1.p9.log\nelliptic_curves-0.3.log        libgpg_error-1.6.p3.log        ppl-0.11.2.log                 sympy-0.7.1.log\nextcode-4.8.alpha4.log         libm4ri-20111004.log           prereq-0.9.log                 tachyon-0.98.9.p5.log\nf2c-20070816.p2.log            libm4rie-20111004.log          pycrypto-2.1.0.log             termcap-1.3.1.p1.log\nflint-1.5.0.p10.log            libpng-1.2.35.p3.log           pygments-1.3.1.p0.log          twisted-9.0.p2.log\nflintqs-20070817.p6.log        linbox-1.1.6.p5.log            pynac-0.2.3.log                zlib-1.2.5.p0.log\nfortran-20100629.log           matplotlib-1.0.1.p0.log        python-2.7.2.p0.log            zn_poly-0.9.p5.log\nfreetype-2.3.5.p3.log          maxima-5.23.2.p2.log           python_gnutls-1.1.4.p7.log     zodb3-3.7.0.p4.log\ngd-2.0.35.p5.log               mercurial-1.8.4.log            r-2.14.0.p0.log\n```",
     "created_at": "2011-12-14T14:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7263,7 +7232,6 @@ I posted the install.log here: http://sage.math.washington.edu/home/jason/sage-4
 If you search for "Error building Sage", you'll see the multiple times I restarted the build (that message appeared after each time I restarted the build).
 
 Here's the list of spkg logs I have:
-
 
 ```
 
@@ -7293,7 +7261,6 @@ fortran-20100629.log           matplotlib-1.0.1.p0.log        python-2.7.2.p0.lo
 freetype-2.3.5.p3.log          maxima-5.23.2.p2.log           python_gnutls-1.1.4.p7.log     zodb3-3.7.0.p4.log
 gd-2.0.35.p5.log               mercurial-1.8.4.log            r-2.14.0.p0.log
 ```
-
 
 
 
@@ -7347,7 +7314,7 @@ I digged a little bit more before posting it looks like R fails to build so I wa
 archive/issue_comments_099400.json:
 ```json
 {
-    "body": "I'm going to try this with \n\n```\nexport MAKE=\"make -j2\"\n```\n\non the same platform and report back.",
+    "body": "I'm going to try this with \n\n```\nexport MAKE=\"make -j2\"\n```\non the same platform and report back.",
     "created_at": "2011-12-15T01:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7361,7 +7328,6 @@ I'm going to try this with
 ```
 export MAKE="make -j2"
 ```
-
 on the same platform and report back.
 
 
@@ -7371,7 +7337,7 @@ on the same platform and report back.
 archive/issue_comments_099401.json:
 ```json
 {
-    "body": "First, here are my standard build environment settings:\n\n\n```\nexport SAGE_MATPLOTLIB_GUI=yes\nexport SAGE_PARALLEL_SPKG_BUILD=yes     \nexport MAKE=\"make -j6\"    \nexport SAGE_SPKG_INSTALL_DOCS=yes\n```\n\n\nAll the requested logs are tarred up at http://sage.math.washington.edu/home/jason/newpython-spkg-logs.tar.gz",
+    "body": "First, here are my standard build environment settings:\n\n```\nexport SAGE_MATPLOTLIB_GUI=yes\nexport SAGE_PARALLEL_SPKG_BUILD=yes     \nexport MAKE=\"make -j6\"    \nexport SAGE_SPKG_INSTALL_DOCS=yes\n```\n\nAll the requested logs are tarred up at http://sage.math.washington.edu/home/jason/newpython-spkg-logs.tar.gz",
     "created_at": "2011-12-15T02:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7382,14 +7348,12 @@ archive/issue_comments_099401.json:
 
 First, here are my standard build environment settings:
 
-
 ```
 export SAGE_MATPLOTLIB_GUI=yes
 export SAGE_PARALLEL_SPKG_BUILD=yes     
 export MAKE="make -j6"    
 export SAGE_SPKG_INSTALL_DOCS=yes
 ```
-
 
 All the requested logs are tarred up at http://sage.math.washington.edu/home/jason/newpython-spkg-logs.tar.gz
 
@@ -7418,7 +7382,7 @@ Tonight, I'll try building again without setting any of those environment variab
 archive/issue_comments_099403.json:
 ```json
 {
-    "body": "Replying to [comment:229 kcrisman]:\n> I'm going to try this with \n\n```\n> export MAKE=\"make -j2\"\n```\n\n> on the same platform and report back. \n\nInterestingly, Scipy and R are definitely (right now) building before Sage.  And they usually do not, for sure not Scipy, on my ancient older Mac.  \n\nScipy has successfully installed, as has matplotlib.  R takes forever but so far is fine.  Maybe it was \"just a race condition\"?",
+    "body": "Replying to [comment:229 kcrisman]:\n> I'm going to try this with \n\n{{{\n> export MAKE=\"make -j2\"\n\n}}}\n> on the same platform and report back. \n\n\nInterestingly, Scipy and R are definitely (right now) building before Sage.  And they usually do not, for sure not Scipy, on my ancient older Mac.  \n\nScipy has successfully installed, as has matplotlib.  R takes forever but so far is fine.  Maybe it was \"just a race condition\"?",
     "created_at": "2011-12-15T02:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7430,11 +7394,12 @@ archive/issue_comments_099403.json:
 Replying to [comment:229 kcrisman]:
 > I'm going to try this with 
 
-```
+{{{
 > export MAKE="make -j2"
-```
 
+}}}
 > on the same platform and report back. 
+
 
 Interestingly, Scipy and R are definitely (right now) building before Sage.  And they usually do not, for sure not Scipy, on my ancient older Mac.  
 
@@ -7519,7 +7484,7 @@ The matplotlib error is fixed upstream: https://github.com/matplotlib/matplotlib
 archive/issue_comments_099408.json:
 ```json
 {
-    "body": "Very good, we may want to bump the spkg to 1.1.0 then. From my sage-on-gentoo experience there is just one minor doctest failure from matplotli-1.1.0\n\n```\nsage -t -long -force_lib \"devel/sage/sage/plot/colors.py\"   \n**********************************************************************\nFile \"/usr/share/sage/devel/sage/sage/plot/colors.py\", line 1241:\n    sage: len(maps.maps)\nExpected:\n    134\nGot:\n    138\n**********************************************************************\nFile \"/usr/share/sage/devel/sage/sage/plot/colors.py\", line 1285:\n    sage: len(maps)\nExpected:\n    134\nGot:\n    138\n**********************************************************************\n```\n\nFairly standard each time we bump matplotlib or almost.\n\nYou R package definitely broke the first time around. I am fairly sure this is a parallel make issue. I have seen at least one instance that I suspect is parallel make on Gentoo. Of course given that it stop because of\n\n```\nmake[6]: gcc: Resource temporarily unavailable\n```\n\nI think, we may have something else altogether. It should go into a separate ticket.",
+    "body": "Very good, we may want to bump the spkg to 1.1.0 then. From my sage-on-gentoo experience there is just one minor doctest failure from matplotli-1.1.0\n\n```\nsage -t -long -force_lib \"devel/sage/sage/plot/colors.py\"   \n**********************************************************************\nFile \"/usr/share/sage/devel/sage/sage/plot/colors.py\", line 1241:\n    sage: len(maps.maps)\nExpected:\n    134\nGot:\n    138\n**********************************************************************\nFile \"/usr/share/sage/devel/sage/sage/plot/colors.py\", line 1285:\n    sage: len(maps)\nExpected:\n    134\nGot:\n    138\n**********************************************************************\n```\nFairly standard each time we bump matplotlib or almost.\n\nYou R package definitely broke the first time around. I am fairly sure this is a parallel make issue. I have seen at least one instance that I suspect is parallel make on Gentoo. Of course given that it stop because of\n\n```\nmake[6]: gcc: Resource temporarily unavailable\n```\nI think, we may have something else altogether. It should go into a separate ticket.",
     "created_at": "2011-12-15T03:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7548,7 +7513,6 @@ Got:
     138
 **********************************************************************
 ```
-
 Fairly standard each time we bump matplotlib or almost.
 
 You R package definitely broke the first time around. I am fairly sure this is a parallel make issue. I have seen at least one instance that I suspect is parallel make on Gentoo. Of course given that it stop because of
@@ -7556,7 +7520,6 @@ You R package definitely broke the first time around. I am fairly sure this is a
 ```
 make[6]: gcc: Resource temporarily unavailable
 ```
-
 I think, we may have something else altogether. It should go into a separate ticket.
 
 
@@ -7584,7 +7547,7 @@ Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already
 archive/issue_comments_099410.json:
 ```json
 {
-    "body": "> Scipy has successfully installed, as has matplotlib.  R takes forever but so far is fine.  Maybe it was \"just a race condition\"?\n\n*Everything* built before the Sage library except Gap and SageTeX.  No problems.  I say this shouldn't keep the Python upgrade out, or?",
+    "body": "> Scipy has successfully installed, as has matplotlib.  R takes forever but so far is fine.  Maybe it was \"just a race condition\"?\n\n\n*Everything* built before the Sage library except Gap and SageTeX.  No problems.  I say this shouldn't keep the Python upgrade out, or?",
     "created_at": "2011-12-15T03:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7595,6 +7558,7 @@ archive/issue_comments_099410.json:
 
 > Scipy has successfully installed, as has matplotlib.  R takes forever but so far is fine.  Maybe it was "just a race condition"?
 
+
 *Everything* built before the Sage library except Gap and SageTeX.  No problems.  I say this shouldn't keep the Python upgrade out, or?
 
 
@@ -7604,7 +7568,7 @@ archive/issue_comments_099410.json:
 archive/issue_comments_099411.json:
 ```json
 {
-    "body": "Replying to [comment:238 jason]:\n> Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...\n\nI don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.",
+    "body": "Replying to [comment:238 jason]:\n> Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...\n\n\nI don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.",
     "created_at": "2011-12-15T03:31:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7616,6 +7580,7 @@ archive/issue_comments_099411.json:
 Replying to [comment:238 jason]:
 > Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...
 
+
 I don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.
 
 
@@ -7625,7 +7590,7 @@ I don't have one. I don't need one for sage-on-gentoo as I am using system packa
 archive/issue_comments_099412.json:
 ```json
 {
-    "body": "Replying to [comment:240 fbissey]:\n> Replying to [comment:238 jason]:\n> > Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...\n> \n> I don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.\n\nWhat about just making a patch upgrade with [the 1.5-liner](https://github.com/matplotlib/matplotlib/commit/e4a34df93f6) rather than making a whole new package which would require even MORE testing?  Plus, then you don't have to worry about getting those four extra colormaps :)  Anyway, I feel this is easier and more reasonable just to get this in 5.0.alpha0 (or whatever release is next for such a big spkg change as this ticket).",
+    "body": "Replying to [comment:240 fbissey]:\n> Replying to [comment:238 jason]:\n> > Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...\n\n> \n> I don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.\n\n\nWhat about just making a patch upgrade with [the 1.5-liner](https://github.com/matplotlib/matplotlib/commit/e4a34df93f6) rather than making a whole new package which would require even MORE testing?  Plus, then you don't have to worry about getting those four extra colormaps :)  Anyway, I feel this is easier and more reasonable just to get this in 5.0.alpha0 (or whatever release is next for such a big spkg change as this ticket).",
     "created_at": "2011-12-15T03:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7637,8 +7602,10 @@ archive/issue_comments_099412.json:
 Replying to [comment:240 fbissey]:
 > Replying to [comment:238 jason]:
 > > Do you already have a 1.1.0 spkg?  I'm working on one right now, but you already have one...
+
 > 
 > I don't have one. I don't need one for sage-on-gentoo as I am using system packages. You go ahead and create a ticket to upgrade matplotlib. I say it is a show stopper because it would happen on other platforms. Hopefully we can review it quickly.
+
 
 What about just making a patch upgrade with [the 1.5-liner](https://github.com/matplotlib/matplotlib/commit/e4a34df93f6) rather than making a whole new package which would require even MORE testing?  Plus, then you don't have to worry about getting those four extra colormaps :)  Anyway, I feel this is easier and more reasonable just to get this in 5.0.alpha0 (or whatever release is next for such a big spkg change as this ticket).
 
@@ -7721,7 +7688,7 @@ archive/issue_comments_099416.json:
 archive/issue_comments_099417.json:
 ```json
 {
-    "body": "Using the new matplotlib-1.0.1.p1.spkg above, and my standard build environment variables:\n\n\n```\nexport SAGE_MATPLOTLIB_GUI=yes\nexport SAGE_PARALLEL_SPKG_BUILD=yes     \nexport MAKE=\"make -j6\"    \nexport SAGE_SPKG_INSTALL_DOCS=yes\n```\n\n\nEverything except R builds nicely.  R still has that message about resources not being available (something about fork).  I then changed MAKE to \"make -j2\" and restarted the make and everything finished just fine.  Again, on OSX 10.6.8 (4G of memory).\n\nThat's a bummer that make -j6 doesn't work.  Regular old 4.8.alpha4 built fine, so I don't think it's just the new R spkg.  I'll try building fresh one more time, but with MAKE=make -j4 just to check things out.",
+    "body": "Using the new matplotlib-1.0.1.p1.spkg above, and my standard build environment variables:\n\n```\nexport SAGE_MATPLOTLIB_GUI=yes\nexport SAGE_PARALLEL_SPKG_BUILD=yes     \nexport MAKE=\"make -j6\"    \nexport SAGE_SPKG_INSTALL_DOCS=yes\n```\n\nEverything except R builds nicely.  R still has that message about resources not being available (something about fork).  I then changed MAKE to \"make -j2\" and restarted the make and everything finished just fine.  Again, on OSX 10.6.8 (4G of memory).\n\nThat's a bummer that make -j6 doesn't work.  Regular old 4.8.alpha4 built fine, so I don't think it's just the new R spkg.  I'll try building fresh one more time, but with MAKE=make -j4 just to check things out.",
     "created_at": "2011-12-15T13:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7732,14 +7699,12 @@ archive/issue_comments_099417.json:
 
 Using the new matplotlib-1.0.1.p1.spkg above, and my standard build environment variables:
 
-
 ```
 export SAGE_MATPLOTLIB_GUI=yes
 export SAGE_PARALLEL_SPKG_BUILD=yes     
 export MAKE="make -j6"    
 export SAGE_SPKG_INSTALL_DOCS=yes
 ```
-
 
 Everything except R builds nicely.  R still has that message about resources not being available (something about fork).  I then changed MAKE to "make -j2" and restarted the make and everything finished just fine.  Again, on OSX 10.6.8 (4G of memory).
 
@@ -7853,7 +7818,7 @@ Okay, here are versions including the patch from #11915:
 archive/issue_comments_099423.json:
 ```json
 {
-    "body": "I took jhpalmieri's original tarball, applied the patch from #11915 myself, built it with these settings:\n\n\n```\nSAGE_MATPLOTLIB_GUI=yes\nSAGE_PARALLEL_SPKG_BUILD=yes\nMAKE=make -j12\nSAGE_SPKG_INSTALL_DOCS=yes\n```\n\n\non Ubuntu 10.04.  Everything built fine, and make ptestlong passed all tests. Yeah!",
+    "body": "I took jhpalmieri's original tarball, applied the patch from #11915 myself, built it with these settings:\n\n```\nSAGE_MATPLOTLIB_GUI=yes\nSAGE_PARALLEL_SPKG_BUILD=yes\nMAKE=make -j12\nSAGE_SPKG_INSTALL_DOCS=yes\n```\n\non Ubuntu 10.04.  Everything built fine, and make ptestlong passed all tests. Yeah!",
     "created_at": "2011-12-16T16:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7864,14 +7829,12 @@ archive/issue_comments_099423.json:
 
 I took jhpalmieri's original tarball, applied the patch from #11915 myself, built it with these settings:
 
-
 ```
 SAGE_MATPLOTLIB_GUI=yes
 SAGE_PARALLEL_SPKG_BUILD=yes
 MAKE=make -j12
 SAGE_SPKG_INSTALL_DOCS=yes
 ```
-
 
 on Ubuntu 10.04.  Everything built fine, and make ptestlong passed all tests. Yeah!
 
@@ -7900,7 +7863,7 @@ What remains to be done here for positive review?
 archive/issue_comments_099425.json:
 ```json
 {
-    "body": "Replying to [comment:258 kcrisman]:\n> What remains to be done here for positive review?\n\nFirst I have to rebase the python spkg to #12131. Second there is a new matplotlib spkg currently merged in 4.8.alpha5 (unreleased) that needs review in #11915. Then someone has to look at the patches to make sure they are not completely stupid (long tiedous job).\n\nThen we can move this to a positive review. I was hoping to be able to to rebase the spkg on Sunday but it didn't happen. I am busy doing a bit of code for my paid work but once it is done. I'll go for it, that may be tomorrow in my time zone.",
+    "body": "Replying to [comment:258 kcrisman]:\n> What remains to be done here for positive review?\n\n\nFirst I have to rebase the python spkg to #12131. Second there is a new matplotlib spkg currently merged in 4.8.alpha5 (unreleased) that needs review in #11915. Then someone has to look at the patches to make sure they are not completely stupid (long tiedous job).\n\nThen we can move this to a positive review. I was hoping to be able to to rebase the spkg on Sunday but it didn't happen. I am busy doing a bit of code for my paid work but once it is done. I'll go for it, that may be tomorrow in my time zone.",
     "created_at": "2011-12-20T02:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7911,6 +7874,7 @@ archive/issue_comments_099425.json:
 
 Replying to [comment:258 kcrisman]:
 > What remains to be done here for positive review?
+
 
 First I have to rebase the python spkg to #12131. Second there is a new matplotlib spkg currently merged in 4.8.alpha5 (unreleased) that needs review in #11915. Then someone has to look at the patches to make sure they are not completely stupid (long tiedous job).
 
@@ -7959,7 +7923,7 @@ archive/issue_comments_099427.json:
 archive/issue_comments_099428.json:
 ```json
 {
-    "body": "For sage-4.8.alpha4 with tickets #9958 + #11986 + #12124 + #11976 + #11915 all tests pass on x86 and on amd64 there is one TIME OUT\n\n```\nsage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [1800.2 s]\n```\n\nThe test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.",
+    "body": "For sage-4.8.alpha4 with tickets #9958 + #11986 + #12124 + #11976 + #11915 all tests pass on x86 and on amd64 there is one TIME OUT\n\n```\nsage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [1800.2 s]\n```\nThe test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.",
     "created_at": "2011-12-21T01:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7976,7 +7940,6 @@ sage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py
 
          [1800.2 s]
 ```
-
 The test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.
 
 
@@ -7986,7 +7949,7 @@ The test did pass when run individually. I'm sure this is due to running the tes
 archive/issue_comments_099429.json:
 ```json
 {
-    "body": "Replying to [comment:262 strogdon]:\n> For sage-4.8.alpha4 with tickets #9958 + #11986 + #12124 + #11976 + #11915 all tests pass on x86 and on amd64 there is one TIME OUT\n> {{{\n> sage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py\n> *** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n> \n>          [1800.2 s]\n> }}}\n> The test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.\n\nI have seen it before too - in parallel tests as well. It seems that ecm can be a bad boy, not sure what to do about it but that would be outside of the scope of this ticket in my opinion.\n\nSteve, did you do any test of #11986 with python-2.6?",
+    "body": "Replying to [comment:262 strogdon]:\n> For sage-4.8.alpha4 with tickets #9958 + #11986 + #12124 + #11976 + #11915 all tests pass on x86 and on amd64 there is one TIME OUT\n> \n> ```\n> sage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py\n> *** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n> \n>          [1800.2 s]\n> ```\n> The test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.\n\n\nI have seen it before too - in parallel tests as well. It seems that ecm can be a bad boy, not sure what to do about it but that would be outside of the scope of this ticket in my opinion.\n\nSteve, did you do any test of #11986 with python-2.6?",
     "created_at": "2011-12-21T01:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -7997,13 +7960,15 @@ archive/issue_comments_099429.json:
 
 Replying to [comment:262 strogdon]:
 > For sage-4.8.alpha4 with tickets #9958 + #11986 + #12124 + #11976 + #11915 all tests pass on x86 and on amd64 there is one TIME OUT
-> {{{
+> 
+> ```
 > sage -t -long  -force_lib devel/sage-matplotlib-1.1.0/sage/interfaces/ecm.py
 > *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 > 
 >          [1800.2 s]
-> }}}
+> ```
 > The test did pass when run individually. I'm sure this is due to running the tests in parallel. I've seen it before, not with this ticket, but with sage-on-gentoo builds.
+
 
 I have seen it before too - in parallel tests as well. It seems that ecm can be a bad boy, not sure what to do about it but that would be outside of the scope of this ticket in my opinion.
 
@@ -8016,7 +7981,7 @@ Steve, did you do any test of #11986 with python-2.6?
 archive/issue_comments_099430.json:
 ```json
 {
-    "body": "Replying to [comment:263 fbissey]:\n> Steve, did you do any test of #11986 with python-2.6?\nNo, I haven't done that with python-2.6. I will do it, but hopefully someone beats me to it.",
+    "body": "Replying to [comment:263 fbissey]:\n> Steve, did you do any test of #11986 with python-2.6?\n\nNo, I haven't done that with python-2.6. I will do it, but hopefully someone beats me to it.",
     "created_at": "2011-12-21T01:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8027,6 +7992,7 @@ archive/issue_comments_099430.json:
 
 Replying to [comment:263 fbissey]:
 > Steve, did you do any test of #11986 with python-2.6?
+
 No, I haven't done that with python-2.6. I will do it, but hopefully someone beats me to it.
 
 
@@ -8036,7 +8002,7 @@ No, I haven't done that with python-2.6. I will do it, but hopefully someone bea
 archive/issue_comments_099431.json:
 ```json
 {
-    "body": "Upgrading from sage-4.5 fails with:\n\n```\nTesting that Sage starts...\n[2012-01-03 13:47:34]\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/bin/sage-eval\", line 4, in <module>\n    from sage.all import *\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/all.py\", line 75, in <module>\n    from sage.matrix.all     import *\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/all.py\", line 1, in <module>\n    from matrix_space import MatrixSpace, is_MatrixSpace\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/matrix_space.py\", line 37, in <module>\n    import matrix_modn_dense\n  File \"matrix_modn_dense.pyx\", line 1, in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:15026)\nAttributeError: 'module' object has no attribute 'Matrix_dense'\nSage failed to start up.\nPlease email sage-devel (http://groups.google.com/group/sage-devel)\nexplaining the problem and send the log file\n  /mnt/usb1/scratch/jdemeyer/sage-4.5-python27/start.log\nDescribe your computer, operating system, etc.\n```\n\n\nAfter `sage -ba-force`, it works again.",
+    "body": "Upgrading from sage-4.5 fails with:\n\n```\nTesting that Sage starts...\n[2012-01-03 13:47:34]\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/bin/sage-eval\", line 4, in <module>\n    from sage.all import *\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/all.py\", line 75, in <module>\n    from sage.matrix.all     import *\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/all.py\", line 1, in <module>\n    from matrix_space import MatrixSpace, is_MatrixSpace\n  File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/matrix_space.py\", line 37, in <module>\n    import matrix_modn_dense\n  File \"matrix_modn_dense.pyx\", line 1, in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:15026)\nAttributeError: 'module' object has no attribute 'Matrix_dense'\nSage failed to start up.\nPlease email sage-devel (http://groups.google.com/group/sage-devel)\nexplaining the problem and send the log file\n  /mnt/usb1/scratch/jdemeyer/sage-4.5-python27/start.log\nDescribe your computer, operating system, etc.\n```\n\nAfter `sage -ba-force`, it works again.",
     "created_at": "2012-01-03T13:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8068,7 +8034,6 @@ explaining the problem and send the log file
 Describe your computer, operating system, etc.
 ```
 
-
 After `sage -ba-force`, it works again.
 
 
@@ -8078,7 +8043,7 @@ After `sage -ba-force`, it works again.
 archive/issue_comments_099432.json:
 ```json
 {
-    "body": "Replying to [comment:265 jdemeyer]:\n> Upgrading from sage-4.5 fails with:\n> {{{\n> Testing that Sage starts...\n> [2012-01-03 13:47:34]\n> Traceback (most recent call last):\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/bin/sage-eval\", line 4, in <module>\n>     from sage.all import *\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/all.py\", line 75, in <module>\n>     from sage.matrix.all     import *\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/all.py\", line 1, in <module>\n>     from matrix_space import MatrixSpace, is_MatrixSpace\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/matrix_space.py\", line 37, in <module>\n>     import matrix_modn_dense\n>   File \"matrix_modn_dense.pyx\", line 1, in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:15026)\n> AttributeError: 'module' object has no attribute 'Matrix_dense'\n> Sage failed to start up.\n> Please email sage-devel (http://groups.google.com/group/sage-devel)\n> explaining the problem and send the log file\n>   /mnt/usb1/scratch/jdemeyer/sage-4.5-python27/start.log\n> Describe your computer, operating system, etc.\n> }}}\n> \n> After `sage -ba-force`, it works again.\n\nQuite weird. You would think those particular libraries would have been rebuilt already after the linbox upgrade at least. Shouldn't a complete rebuild of sage occur after a python upgrade? In any case that seems mild for upgrading from 4.5 which was released on June 2010 many versions away.",
+    "body": "Replying to [comment:265 jdemeyer]:\n> Upgrading from sage-4.5 fails with:\n> \n> ```\n> Testing that Sage starts...\n> [2012-01-03 13:47:34]\n> Traceback (most recent call last):\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/bin/sage-eval\", line 4, in <module>\n>     from sage.all import *\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/all.py\", line 75, in <module>\n>     from sage.matrix.all     import *\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/all.py\", line 1, in <module>\n>     from matrix_space import MatrixSpace, is_MatrixSpace\n>   File \"/mnt/usb1/scratch/jdemeyer/sage-4.5-python27/local/lib/python2.7/site-packages/sage/matrix/matrix_space.py\", line 37, in <module>\n>     import matrix_modn_dense\n>   File \"matrix_modn_dense.pyx\", line 1, in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:15026)\n> AttributeError: 'module' object has no attribute 'Matrix_dense'\n> Sage failed to start up.\n> Please email sage-devel (http://groups.google.com/group/sage-devel)\n> explaining the problem and send the log file\n>   /mnt/usb1/scratch/jdemeyer/sage-4.5-python27/start.log\n> Describe your computer, operating system, etc.\n> ```\n> \n> After `sage -ba-force`, it works again.\n\n\nQuite weird. You would think those particular libraries would have been rebuilt already after the linbox upgrade at least. Shouldn't a complete rebuild of sage occur after a python upgrade? In any case that seems mild for upgrading from 4.5 which was released on June 2010 many versions away.",
     "created_at": "2012-01-04T01:35:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8089,7 +8054,8 @@ archive/issue_comments_099432.json:
 
 Replying to [comment:265 jdemeyer]:
 > Upgrading from sage-4.5 fails with:
-> {{{
+> 
+> ```
 > Testing that Sage starts...
 > [2012-01-03 13:47:34]
 > Traceback (most recent call last):
@@ -8108,9 +8074,10 @@ Replying to [comment:265 jdemeyer]:
 > explaining the problem and send the log file
 >   /mnt/usb1/scratch/jdemeyer/sage-4.5-python27/start.log
 > Describe your computer, operating system, etc.
-> }}}
+> ```
 > 
 > After `sage -ba-force`, it works again.
+
 
 Quite weird. You would think those particular libraries would have been rebuilt already after the linbox upgrade at least. Shouldn't a complete rebuild of sage occur after a python upgrade? In any case that seems mild for upgrading from 4.5 which was released on June 2010 many versions away.
 
@@ -8121,7 +8088,7 @@ Quite weird. You would think those particular libraries would have been rebuilt 
 archive/issue_comments_099433.json:
 ```json
 {
-    "body": "Replying to [comment:266 fbissey]:\n> Shouldn't a complete rebuild of sage occur after a python upgrade?\nI guess it should.  Do you know how to make this happen?",
+    "body": "Replying to [comment:266 fbissey]:\n> Shouldn't a complete rebuild of sage occur after a python upgrade?\n\nI guess it should.  Do you know how to make this happen?",
     "created_at": "2012-01-04T07:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8132,6 +8099,7 @@ archive/issue_comments_099433.json:
 
 Replying to [comment:266 fbissey]:
 > Shouldn't a complete rebuild of sage occur after a python upgrade?
+
 I guess it should.  Do you know how to make this happen?
 
 
@@ -8179,7 +8147,7 @@ Diff for the Python spkg (without deleted files), for review only
 archive/issue_comments_099436.json:
 ```json
 {
-    "body": "Upgrading fixed by deleting\n\n```\n$SAGE_ROOT/devel/sage-*/build\n```\n\nwhen an old version of Python is detected.\n\nNew spkg: [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg)",
+    "body": "Upgrading fixed by deleting\n\n```\n$SAGE_ROOT/devel/sage-*/build\n```\nwhen an old version of Python is detected.\n\nNew spkg: [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg)",
     "created_at": "2012-01-04T19:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8193,7 +8161,6 @@ Upgrading fixed by deleting
 ```
 $SAGE_ROOT/devel/sage-*/build
 ```
-
 when an old version of Python is detected.
 
 New spkg: [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg)
@@ -8335,7 +8302,7 @@ Folded all the patches into only four patches.
 archive/issue_comments_099444.json:
 ```json
 {
-    "body": "Replying to [comment:272 fbissey]:\n> Looks good to me.\n\nMeaning \"positive review\"? :-)",
+    "body": "Replying to [comment:272 fbissey]:\n> Looks good to me.\n\n\nMeaning \"positive review\"? :-)",
     "created_at": "2012-01-05T16:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8346,6 +8313,7 @@ archive/issue_comments_099444.json:
 
 Replying to [comment:272 fbissey]:
 > Looks good to me.
+
 
 Meaning "positive review"? :-)
 
@@ -8374,7 +8342,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_099446.json:
 ```json
 {
-    "body": "Replying to [comment:274 jdemeyer]:\n> Replying to [comment:272 fbissey]:\n> > Looks good to me.\n> \n> Meaning \"positive review\"? :-)\nAbsolutely positive! Hopefully nothing will happen to make us break or add to those 4 megapatches.",
+    "body": "Replying to [comment:274 jdemeyer]:\n> Replying to [comment:272 fbissey]:\n> > Looks good to me.\n\n> \n> Meaning \"positive review\"? :-)\n\nAbsolutely positive! Hopefully nothing will happen to make us break or add to those 4 megapatches.",
     "created_at": "2012-01-05T21:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8386,8 +8354,10 @@ archive/issue_comments_099446.json:
 Replying to [comment:274 jdemeyer]:
 > Replying to [comment:272 fbissey]:
 > > Looks good to me.
+
 > 
 > Meaning "positive review"? :-)
+
 Absolutely positive! Hopefully nothing will happen to make us break or add to those 4 megapatches.
 
 
@@ -8415,7 +8385,7 @@ archive/issue_comments_099447.json:
 archive/issue_comments_099448.json:
 ```json
 {
-    "body": "Replying to [comment:276 jdemeyer]:\n> [attachment:9958_combinat.patch] is the only non-trivial change I guess, but has been discussed well in the comments on this ticket.  Potentially, the `trie_type_dict()` test might yield other results, but we can still change the test in that case.  Anyway, that method is nowhere called in the Sage library.\n\nI didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.",
+    "body": "Replying to [comment:276 jdemeyer]:\n> [attachment:9958_combinat.patch] is the only non-trivial change I guess, but has been discussed well in the comments on this ticket.  Potentially, the `trie_type_dict()` test might yield other results, but we can still change the test in that case.  Anyway, that method is nowhere called in the Sage library.\n\n\nI didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.",
     "created_at": "2012-01-05T22:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8426,6 +8396,7 @@ archive/issue_comments_099448.json:
 
 Replying to [comment:276 jdemeyer]:
 > [attachment:9958_combinat.patch] is the only non-trivial change I guess, but has been discussed well in the comments on this ticket.  Potentially, the `trie_type_dict()` test might yield other results, but we can still change the test in that case.  Anyway, that method is nowhere called in the Sage library.
+
 
 I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from Sébastien Labbé instead? It is more foolproof.
 
@@ -8454,7 +8425,7 @@ I obviously meant to use Sébastien Labbé's patch for suffix_tree, we can still
 archive/issue_comments_099450.json:
 ```json
 {
-    "body": "Replying to [comment:277 fbissey]:\n> I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\nI overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.",
+    "body": "Replying to [comment:277 fbissey]:\n> I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n\nI overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.",
     "created_at": "2012-01-05T22:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8465,6 +8436,7 @@ archive/issue_comments_099450.json:
 
 Replying to [comment:277 fbissey]:
 > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from Sébastien Labbé instead? It is more foolproof.
+
 I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.
 
 
@@ -8474,7 +8446,7 @@ I overlooked that patch, it was not in the list of patches to be applied.  I agr
 archive/issue_comments_099451.json:
 ```json
 {
-    "body": "Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by @kiwifb created at 2012-01-05 22:45:32\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
+    "body": "Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by @kiwifb created at 2012-01-05 22:45:32\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
     "created_at": "2012-01-05T22:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8488,6 +8460,7 @@ Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958
 Replying to [comment:279 jdemeyer]:
 > Replying to [comment:277 fbissey]:
 > > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from Sébastien Labbé instead? It is more foolproof.
+
 > I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.
 
 It was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.
@@ -8499,7 +8472,7 @@ It was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](
 archive/issue_comments_099452.json:
 ```json
 {
-    "body": "Replying to [comment:280 fbissey]:\n> It was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.\nLook more carefully, it wasn't :-)",
+    "body": "Replying to [comment:280 fbissey]:\n> It was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.\n\nLook more carefully, it wasn't :-)",
     "created_at": "2012-01-05T22:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8510,6 +8483,7 @@ archive/issue_comments_099452.json:
 
 Replying to [comment:280 fbissey]:
 > It was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.
+
 Look more carefully, it wasn't :-)
 
 
@@ -8611,7 +8585,7 @@ archive/issue_events_025127.json:
 archive/issue_comments_099457.json:
 ```json
 {
-    "body": "Just as FYI, though I doubt it matters since the patch still applies, I get\n\n```\npatching file Lib/distutils/command/sdist.py\nHunk #1 succeeded at 327 (offset 3 lines).\nHunk #2 succeeded at 342 (offset 3 lines).\n```\n\nbefore the other patches and configuration.",
+    "body": "Just as FYI, though I doubt it matters since the patch still applies, I get\n\n```\npatching file Lib/distutils/command/sdist.py\nHunk #1 succeeded at 327 (offset 3 lines).\nHunk #2 succeeded at 342 (offset 3 lines).\n```\nbefore the other patches and configuration.",
     "created_at": "2012-01-19T01:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8627,7 +8601,6 @@ patching file Lib/distutils/command/sdist.py
 Hunk #1 succeeded at 327 (offset 3 lines).
 Hunk #2 succeeded at 342 (offset 3 lines).
 ```
-
 before the other patches and configuration.
 
 
@@ -8655,7 +8628,7 @@ Doesn't matter anymore indeed, we have it merged in 5.0.beta0 finally. I am pers
 archive/issue_comments_099459.json:
 ```json
 {
-    "body": "Replying to [comment:286 kcrisman]:\n> Just as FYI, though I doubt it matters since the patch still applies, I get\n> {{{\n> patching file Lib/distutils/command/sdist.py\n> Hunk #1 succeeded at 327 (offset 3 lines).\n> Hunk #2 succeeded at 342 (offset 3 lines).\n> }}}\n\nNot a big deal.  The patch still applies perfectly.",
+    "body": "Replying to [comment:286 kcrisman]:\n> Just as FYI, though I doubt it matters since the patch still applies, I get\n> \n> ```\n> patching file Lib/distutils/command/sdist.py\n> Hunk #1 succeeded at 327 (offset 3 lines).\n> Hunk #2 succeeded at 342 (offset 3 lines).\n> ```\n\n\nNot a big deal.  The patch still applies perfectly.",
     "created_at": "2012-01-19T08:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
@@ -8666,10 +8639,12 @@ archive/issue_comments_099459.json:
 
 Replying to [comment:286 kcrisman]:
 > Just as FYI, though I doubt it matters since the patch still applies, I get
-> {{{
+> 
+> ```
 > patching file Lib/distutils/command/sdist.py
 > Hunk #1 succeeded at 327 (offset 3 lines).
 > Hunk #2 succeeded at 342 (offset 3 lines).
-> }}}
+> ```
+
 
 Not a big deal.  The patch still applies perfectly.

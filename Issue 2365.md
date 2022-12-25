@@ -3,7 +3,7 @@
 archive/issues_002365.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a tricky bug to explain... the description of the bug is a lot more complicated than the patch, and reproducing the bug requires wxPython.\n\nWith \"sage -wthread\", ipython creates and deals with multiple Python threads.  All the Sage code (along with all wxPython code) runs in the main, original thread; ipython creates its own new thread to deal with the command line interaction (the \"sage: \" prompt).  When you type in a command, all the command line editing, preparsing, etc., runs in this new ipython thread; then the final command is shipped over to the main thread for execution.\n\nThis interacts poorly with the current implementation of Sage's \"attach\" command.  When you attach a file, it is loaded in the main thread.  When you then modify the file (and run the preparser to trigger a reload of the file, for example by simply pressing Enter), the file is loaded in the ipython command-line-processing thread.\n\nFor most code, this makes no difference... it doesn't matter what thread is used to load the code.  However, wxPython code must run in the main thread, so if the attached file runs wxPython code in the ipython thread, bad things will happen (often, perhaps always, Sage will crash).\n\nYou can test that the combination of \"sage -wthread\" and attach does the wrong thing as follows:\n\nCreate a file attach-thread.py with the following contents:\n\n```\nimport thread\nprint \"Current thread is: %d\" % thread.get_ident()\n```\n\n\nThen run \"sage -wthread\".  You can then run a session much like the following:\n\n```\nsage: attach attach-thread.py\nCurrent thread is: -1210038080\nsage: !touch attach-thread.py\nsage: \nCurrent thread is: -1246987376\nsage: thread.get_ident()\n-1210038080\n```\n\nYour thread identifiers will be different; the important thing is that the first and third numbers are the same, and the second is different, showing the bug.  Without -wthread, the bug does not appear.\n\nMy patch ensures that when an attached file is changed, the command to reload the file gets shipped across to the main thread and executed there, rather than being executed in the ipython thread.  Here's what the above session looks like after my patch (still with -wthread):\n\n```\nsage: attach attach-thread.py\nCurrent thread is: -1210521408\nsage: !touch attach-thread.py\nsage: \nCurrent thread is: -1210521408\nsage: thread.get_ident()\n-1210521408\n```\n\nAll three numbers are the same, so the bug is gone.\n\nThis patch does not have a doctest; the above process for replicating the bug seems too difficult to automate.  Sorry!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2365\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a tricky bug to explain... the description of the bug is a lot more complicated than the patch, and reproducing the bug requires wxPython.\n\nWith \"sage -wthread\", ipython creates and deals with multiple Python threads.  All the Sage code (along with all wxPython code) runs in the main, original thread; ipython creates its own new thread to deal with the command line interaction (the \"sage: \" prompt).  When you type in a command, all the command line editing, preparsing, etc., runs in this new ipython thread; then the final command is shipped over to the main thread for execution.\n\nThis interacts poorly with the current implementation of Sage's \"attach\" command.  When you attach a file, it is loaded in the main thread.  When you then modify the file (and run the preparser to trigger a reload of the file, for example by simply pressing Enter), the file is loaded in the ipython command-line-processing thread.\n\nFor most code, this makes no difference... it doesn't matter what thread is used to load the code.  However, wxPython code must run in the main thread, so if the attached file runs wxPython code in the ipython thread, bad things will happen (often, perhaps always, Sage will crash).\n\nYou can test that the combination of \"sage -wthread\" and attach does the wrong thing as follows:\n\nCreate a file attach-thread.py with the following contents:\n\n```\nimport thread\nprint \"Current thread is: %d\" % thread.get_ident()\n```\n\nThen run \"sage -wthread\".  You can then run a session much like the following:\n\n```\nsage: attach attach-thread.py\nCurrent thread is: -1210038080\nsage: !touch attach-thread.py\nsage: \nCurrent thread is: -1246987376\nsage: thread.get_ident()\n-1210038080\n```\nYour thread identifiers will be different; the important thing is that the first and third numbers are the same, and the second is different, showing the bug.  Without -wthread, the bug does not appear.\n\nMy patch ensures that when an attached file is changed, the command to reload the file gets shipped across to the main thread and executed there, rather than being executed in the ipython thread.  Here's what the above session looks like after my patch (still with -wthread):\n\n```\nsage: attach attach-thread.py\nCurrent thread is: -1210521408\nsage: !touch attach-thread.py\nsage: \nCurrent thread is: -1210521408\nsage: thread.get_ident()\n-1210521408\n```\nAll three numbers are the same, so the bug is gone.\n\nThis patch does not have a doctest; the above process for replicating the bug seems too difficult to automate.  Sorry!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2365\n\n",
     "created_at": "2008-03-02T00:51:38Z",
     "labels": [
         "component: user interface",
@@ -35,7 +35,6 @@ import thread
 print "Current thread is: %d" % thread.get_ident()
 ```
 
-
 Then run "sage -wthread".  You can then run a session much like the following:
 
 ```
@@ -47,7 +46,6 @@ Current thread is: -1246987376
 sage: thread.get_ident()
 -1210038080
 ```
-
 Your thread identifiers will be different; the important thing is that the first and third numbers are the same, and the second is different, showing the bug.  Without -wthread, the bug does not appear.
 
 My patch ensures that when an attached file is changed, the command to reload the file gets shipped across to the main thread and executed there, rather than being executed in the ipython thread.  Here's what the above session looks like after my patch (still with -wthread):
@@ -61,7 +59,6 @@ Current thread is: -1210521408
 sage: thread.get_ident()
 -1210521408
 ```
-
 All three numbers are the same, so the bug is gone.
 
 This patch does not have a doctest; the above process for replicating the bug seems too difficult to automate.  Sorry!

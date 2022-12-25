@@ -3,7 +3,7 @@
 archive/issues_008700.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls\nlibpng-1.2.35  spkg-install  SPKG.txt  src\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls libpng-1.2.35/\nspkg-install  SPKG.txt  src\n```\n\n\nBasically there is an accidental complete copy of the extracted spkg in the spkg!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8700\n\n",
+    "body": "Assignee: tbd\n\n```\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls\nlibpng-1.2.35  spkg-install  SPKG.txt  src\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls libpng-1.2.35/\nspkg-install  SPKG.txt  src\n```\n\nBasically there is an accidental complete copy of the extracted spkg in the spkg!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8700\n\n",
     "created_at": "2010-04-17T06:35:02Z",
     "labels": [
         "component: packages: standard",
@@ -19,14 +19,12 @@ archive/issues_008700.json:
 ```
 Assignee: tbd
 
-
 ```
 wstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls
 libpng-1.2.35  spkg-install  SPKG.txt  src
 wstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls libpng-1.2.35/
 spkg-install  SPKG.txt  src
 ```
-
 
 Basically there is an accidental complete copy of the extracted spkg in the spkg!
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8700
 archive/issue_comments_079138.json:
 ```json
 {
-    "body": "Looking in the changelog, the last person to work on the spkg left this message:\n\n```\n### libpng-1.2.35.p0 (Jaap Spies, Feb 1th, 2010)\n *\n```\n\n\nWhat was done?  It doesn't say.    The log shows this though:\n\n```\nchangeset:   13:ae01944f408c\ntag:         tip\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Thu Feb 04 19:32:51 2010 +0100\nsummary:     Corrected stupid typo I thought I had corrected earlier.\n\nchangeset:   12:329a8eb6dd2e\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Wed Feb 03 19:09:41 2010 +0100\nsummary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform\n```\n\n\nAnyway, somebody was sloppy refereeing this, etc.",
+    "body": "Looking in the changelog, the last person to work on the spkg left this message:\n\n```\n### libpng-1.2.35.p0 (Jaap Spies, Feb 1th, 2010)\n *\n```\n\nWhat was done?  It doesn't say.    The log shows this though:\n\n```\nchangeset:   13:ae01944f408c\ntag:         tip\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Thu Feb 04 19:32:51 2010 +0100\nsummary:     Corrected stupid typo I thought I had corrected earlier.\n\nchangeset:   12:329a8eb6dd2e\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Wed Feb 03 19:09:41 2010 +0100\nsummary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform\n```\n\nAnyway, somebody was sloppy refereeing this, etc.",
     "created_at": "2010-04-17T06:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ Looking in the changelog, the last person to work on the spkg left this message:
  *
 ```
 
-
 What was done?  It doesn't say.    The log shows this though:
 
 ```
@@ -72,7 +69,6 @@ user:        Jaap Spies <jaapspies@gmail.com>
 date:        Wed Feb 03 19:09:41 2010 +0100
 summary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform
 ```
-
 
 Anyway, somebody was sloppy refereeing this, etc.
 
@@ -157,7 +153,7 @@ Changing priority from blocker to critical.
 archive/issue_comments_079143.json:
 ```json
 {
-    "body": "Close as fixed:\n\n\n```\n[mvngu@sage libpng-1.2.35.p2]$ pwd\n/dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/libpng-1.2.35.p2\n[mvngu@sage libpng-1.2.35.p2]$ ls\nspkg-install  SPKG.txt  src\n```\n",
+    "body": "Close as fixed:\n\n```\n[mvngu@sage libpng-1.2.35.p2]$ pwd\n/dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/libpng-1.2.35.p2\n[mvngu@sage libpng-1.2.35.p2]$ ls\nspkg-install  SPKG.txt  src\n```",
     "created_at": "2010-06-16T01:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
@@ -168,14 +164,12 @@ archive/issue_comments_079143.json:
 
 Close as fixed:
 
-
 ```
 [mvngu@sage libpng-1.2.35.p2]$ pwd
 /dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/libpng-1.2.35.p2
 [mvngu@sage libpng-1.2.35.p2]$ ls
 spkg-install  SPKG.txt  src
 ```
-
 
 
 

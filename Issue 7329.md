@@ -3,7 +3,7 @@
 archive/issues_007329.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @rbeezer @kcrisman\n\nIt would be great if this worked:\n\n\n```\n            sage: t=var('t')                      \n            sage: r=vector([t,t^2,sin(t)])\n            sage: integrate(r,t)\n            (1/2*t^2, 1/3*t^3, -cos(t))\n            sage: integrate(r,(t,0,1))\n            (1/2, 1/3, -cos(1) + 1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7329\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @rbeezer @kcrisman\n\nIt would be great if this worked:\n\n```\n            sage: t=var('t')                      \n            sage: r=vector([t,t^2,sin(t)])\n            sage: integrate(r,t)\n            (1/2*t^2, 1/3*t^3, -cos(t))\n            sage: integrate(r,(t,0,1))\n            (1/2, 1/3, -cos(1) + 1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7329\n\n",
     "created_at": "2009-10-28T02:46:06Z",
     "labels": [
         "component: calculus"
@@ -21,7 +21,6 @@ CC:  @rbeezer @kcrisman
 
 It would be great if this worked:
 
-
 ```
             sage: t=var('t')                      
             sage: r=vector([t,t^2,sin(t)])
@@ -30,7 +29,6 @@ It would be great if this worked:
             sage: integrate(r,(t,0,1))
             (1/2, 1/3, -cos(1) + 1)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7329

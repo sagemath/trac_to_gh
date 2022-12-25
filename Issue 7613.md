@@ -132,7 +132,7 @@ Kevin Stueve
 archive/issue_comments_064898.json:
 ```json
 {
-    "body": "You could make some of these functions methods of the Primes() object:\n\n```\nsage: P = Primes(); P\nSet of all prime numbers: 2, 3, 5, 7, ...\n```\n\n\nSo\n\n```\nsage: P.twin_prime_pi(1000)\n...\nsage: P.prime_pi2(1000)\n...\n```\n\n\nThis would help gather these functions together so it is easy to find, etc.",
+    "body": "You could make some of these functions methods of the Primes() object:\n\n```\nsage: P = Primes(); P\nSet of all prime numbers: 2, 3, 5, 7, ...\n```\n\nSo\n\n```\nsage: P.twin_prime_pi(1000)\n...\nsage: P.prime_pi2(1000)\n...\n```\n\nThis would help gather these functions together so it is easy to find, etc.",
     "created_at": "2009-12-07T06:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7613",
     "type": "issue_comment",
@@ -148,7 +148,6 @@ sage: P = Primes(); P
 Set of all prime numbers: 2, 3, 5, 7, ...
 ```
 
-
 So
 
 ```
@@ -157,7 +156,6 @@ sage: P.twin_prime_pi(1000)
 sage: P.prime_pi2(1000)
 ...
 ```
-
 
 This would help gather these functions together so it is easy to find, etc.
 

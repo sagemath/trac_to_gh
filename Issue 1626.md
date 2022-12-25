@@ -71,7 +71,7 @@ Michael
 archive/issue_comments_010332.json:
 ```json
 {
-    "body": "Update it to NOW:\n\n```\nDear Colleagues,\n\nI've released a new version of lcalc.\n\nThis release fixes some bugs (so please update), has improvements to some of the key\nroutines, especially for higher degree L-functions (i.e. deg >=3, and also for Maass forms),\nand better handling of output precision.\n\nThe code can be downloaded from:\nhttp://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/\n\nPlease email me any bugs you notice.\n\nThanks,\n```\n",
+    "body": "Update it to NOW:\n\n```\nDear Colleagues,\n\nI've released a new version of lcalc.\n\nThis release fixes some bugs (so please update), has improvements to some of the key\nroutines, especially for higher degree L-functions (i.e. deg >=3, and also for Maass forms),\nand better handling of output precision.\n\nThe code can be downloaded from:\nhttp://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/\n\nPlease email me any bugs you notice.\n\nThanks,\n```",
     "created_at": "2008-01-27T17:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ Please email me any bugs you notice.
 
 Thanks,
 ```
-
 
 
 
@@ -182,7 +181,7 @@ Attachment [lcalc-1.11-memleak-fixes.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_010336.json:
 ```json
 {
-    "body": "The updated lcalc.spkg has some doctest failures:\n\n```\nsage -t -long devel/sage/sage/lfunctions/lcalc.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha5/tmp/lcalc.py\", line 188:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303),\n     (0.500000000, -...e-16),\n     (1.00000000, 0.133768433),\n     (2.00000000, 0.552975867)]\nGot:\n    [(0, 0.209951303), (0.500000000, -2.96501173e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n```\n\nI consider this good news and suggest fixing the doctest.\n\nCheers,\n\nMichael",
+    "body": "The updated lcalc.spkg has some doctest failures:\n\n```\nsage -t -long devel/sage/sage/lfunctions/lcalc.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha5/tmp/lcalc.py\", line 188:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    lcalc:  1.5 0 WARNING- we don't have enough Dirichlet coefficients.\n    lcalc:  Will use the maximum possible, though the output will not necessarily be accurate.\n    lcalc:  nan nan\n    [(0, 0.209951303),\n     (0.500000000, -...e-16),\n     (1.00000000, 0.133768433),\n     (2.00000000, 0.552975867)]\nGot:\n    [(0, 0.209951303), (0.500000000, -2.96501173e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n```\nI consider this good news and suggest fixing the doctest.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-14T02:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1626",
     "type": "issue_comment",
@@ -209,7 +208,6 @@ Expected:
 Got:
     [(0, 0.209951303), (0.500000000, -2.96501173e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]
 ```
-
 I consider this good news and suggest fixing the doctest.
 
 Cheers,

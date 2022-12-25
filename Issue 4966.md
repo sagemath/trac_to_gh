@@ -137,7 +137,7 @@ Michael
 archive/issue_comments_037722.json:
 ```json
 {
-    "body": "REVIEW:\n\n(1) All doctests pass with the applied patches.\n\n(2) \nJust for fun I checked to see how bad the xgcd speed regression is:\n\n```\nBEFORE (with GMP):\nsage: n = ZZ.random_element(0,2^(2^20)); m = ZZ.random_element(0,2^(2^20))\nsage: time k = m.xgcd(n)\nCPU times: user 0.73 s, sys: 0.00 s, total: 0.73 s\nWall time: 0.74 s\n\n\nAFTER (with eMPIRe):\nsage: n = ZZ.random_element(0,2^(2^20)); m = ZZ.random_element(0,2^(2^20))\nsage: time k = m.xgcd(n)\nCPU times: user 2.39 s, sys: 0.00 s, total: 2.39 s\nWall time: 2.39 s\n```\n\n\nI did some multiplication timings (by multiplying m, n as above and bigger) and empire is always about 3-5% FASTER.\n\npreliminary *positive review*.\n\nI will look this over again a little more carefully, but so far it looks very very good.",
+    "body": "REVIEW:\n\n(1) All doctests pass with the applied patches.\n\n(2) \nJust for fun I checked to see how bad the xgcd speed regression is:\n\n```\nBEFORE (with GMP):\nsage: n = ZZ.random_element(0,2^(2^20)); m = ZZ.random_element(0,2^(2^20))\nsage: time k = m.xgcd(n)\nCPU times: user 0.73 s, sys: 0.00 s, total: 0.73 s\nWall time: 0.74 s\n\n\nAFTER (with eMPIRe):\nsage: n = ZZ.random_element(0,2^(2^20)); m = ZZ.random_element(0,2^(2^20))\nsage: time k = m.xgcd(n)\nCPU times: user 2.39 s, sys: 0.00 s, total: 2.39 s\nWall time: 2.39 s\n```\n\nI did some multiplication timings (by multiplying m, n as above and bigger) and empire is always about 3-5% FASTER.\n\npreliminary *positive review*.\n\nI will look this over again a little more carefully, but so far it looks very very good.",
     "created_at": "2009-01-18T20:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4966",
     "type": "issue_comment",
@@ -167,7 +167,6 @@ sage: time k = m.xgcd(n)
 CPU times: user 2.39 s, sys: 0.00 s, total: 2.39 s
 Wall time: 2.39 s
 ```
-
 
 I did some multiplication timings (by multiplying m, n as above and bigger) and empire is always about 3-5% FASTER.
 

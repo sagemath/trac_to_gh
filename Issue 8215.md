@@ -3,7 +3,7 @@
 archive/issues_008215.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat abmasse\n\nKeywords: empty word\n\nThe following three results should be True.\n\n\n```\nsage: Word().is_factor(Word())\nFalse\nsage: Word().is_factor(Word('abad'))\nFalse\nsage: Word().is_factor(Word([0,1,2]))\nFalse\nsage: Word('').is_factor(Word('abad'))\nFalse\nsage: Word([]).is_factor(Word([0,1,2]))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8215\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat abmasse\n\nKeywords: empty word\n\nThe following three results should be True.\n\n```\nsage: Word().is_factor(Word())\nFalse\nsage: Word().is_factor(Word('abad'))\nFalse\nsage: Word().is_factor(Word([0,1,2]))\nFalse\nsage: Word('').is_factor(Word('abad'))\nFalse\nsage: Word([]).is_factor(Word([0,1,2]))\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8215\n\n",
     "created_at": "2010-02-08T14:16:09Z",
     "labels": [
         "component: combinatorics",
@@ -24,7 +24,6 @@ Keywords: empty word
 
 The following three results should be True.
 
-
 ```
 sage: Word().is_factor(Word())
 False
@@ -37,7 +36,6 @@ False
 sage: Word([]).is_factor(Word([0,1,2]))
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8215
 

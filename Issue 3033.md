@@ -50,7 +50,7 @@ This uses a) Pbuild B) Upstream, patched, Cython.  Furthermore it is a heisenbug
 archive/issue_comments_020835.json:
 ```json
 {
-    "body": "No dice. Invalid for now since:\n\n```\n[23:37] <mabshoff> I am not sure if #3033 is valid.\n[23:37] <mabshoff> At least not in its current form.\n[23:37] <gfurnish> Yeah lets invalid that\n[23:37] <mabshoff> Wait.\n[23:37] <mabshoff> You need to add the fact that \n[23:37] <mabshoff> a) you use pbuild\n[23:37] <mabshoff> b) you use an *upstream* *patched* Cython\n[23:37] <mabshoff> So it isn't something that we can debug\n[23:38] <mabshoff> It might still be valid, so let's keep it open.\n[23:38] <mabshoff> I.e. once the updated cython is in-tree is in it might  come up again.\n[23:38] <mabshoff> But then we use --incref-local-binop per default anyway?\n[23:39] <gfurnish> yeah..\n[23:39] <mabshoff> So, in the end?\n[23:39] <mabshoff> Let's go with invalid for now. I am closing it with this conversation pasted in the comment.\n[23:39] <mabshoff> Alright?\n[23:40] <mabshoff> And you never know what happens if you do a complete rebuild of Sage.\n[23:40] <mabshoff> That tends to cause fixes for Heisenbugs.\n[23:40] <gfurnish> ok\n[23:40] <gfurnish> this is with multiple full rebuilds\n[23:40] <mabshoff> ok\n[23:41] <mabshoff> Well, if we hit it again we can reopen.\n```\n\n\nCheers,\n\nMichael",
+    "body": "No dice. Invalid for now since:\n\n```\n[23:37] <mabshoff> I am not sure if #3033 is valid.\n[23:37] <mabshoff> At least not in its current form.\n[23:37] <gfurnish> Yeah lets invalid that\n[23:37] <mabshoff> Wait.\n[23:37] <mabshoff> You need to add the fact that \n[23:37] <mabshoff> a) you use pbuild\n[23:37] <mabshoff> b) you use an *upstream* *patched* Cython\n[23:37] <mabshoff> So it isn't something that we can debug\n[23:38] <mabshoff> It might still be valid, so let's keep it open.\n[23:38] <mabshoff> I.e. once the updated cython is in-tree is in it might  come up again.\n[23:38] <mabshoff> But then we use --incref-local-binop per default anyway?\n[23:39] <gfurnish> yeah..\n[23:39] <mabshoff> So, in the end?\n[23:39] <mabshoff> Let's go with invalid for now. I am closing it with this conversation pasted in the comment.\n[23:39] <mabshoff> Alright?\n[23:40] <mabshoff> And you never know what happens if you do a complete rebuild of Sage.\n[23:40] <mabshoff> That tends to cause fixes for Heisenbugs.\n[23:40] <gfurnish> ok\n[23:40] <gfurnish> this is with multiple full rebuilds\n[23:40] <mabshoff> ok\n[23:41] <mabshoff> Well, if we hit it again we can reopen.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-26T22:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3033",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ No dice. Invalid for now since:
 [23:40] <mabshoff> ok
 [23:41] <mabshoff> Well, if we hit it again we can reopen.
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_005607.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nIn a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:\n\n\n```\nsage: g(x)=sin\nsage: g(3)\nsin(3)\nsage: g(x)=sin+x\nsage: g(3)\nsin + 3\n\nsage: g(x)=sin+cos; g(3)\nsin + cos\n```\n\n\nI think the syntax for this should be:\n\n\n```\nsage: g(x) = sin(x) + 3\nsage: g(3)\nsin(3) + 3\n\nsage: g(x) = sin(x) + cos(x)\nsage: g(3)\nsin(3) + cos(3)\n```\n\n\nSince it is not clear which variable to use if only `sin` is specified. Also consider this situation:\n\n\n```\nsage: g(x,y) = sin + y\nsage: g(3,4)\n???\n```\n\n\nWe have two options:\n\n* We could allow this syntax for convenience:\n\n\n```\nsage: g(x) = sin + x\n```\n\n\nand convert the function arguments to appropriate callable expressions if the number of arguments of `g` match the number of arguments of the given function, raise an error otherwise.\n\n* We raise an error whenever a function object is specified without variables.\n\nComments?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5607\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nIn a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:\n\n```\nsage: g(x)=sin\nsage: g(3)\nsin(3)\nsage: g(x)=sin+x\nsage: g(3)\nsin + 3\n\nsage: g(x)=sin+cos; g(3)\nsin + cos\n```\n\nI think the syntax for this should be:\n\n```\nsage: g(x) = sin(x) + 3\nsage: g(3)\nsin(3) + 3\n\nsage: g(x) = sin(x) + cos(x)\nsage: g(3)\nsin(3) + cos(3)\n```\n\nSince it is not clear which variable to use if only `sin` is specified. Also consider this situation:\n\n```\nsage: g(x,y) = sin + y\nsage: g(3,4)\n???\n```\n\nWe have two options:\n\n* We could allow this syntax for convenience:\n\n```\nsage: g(x) = sin + x\n```\n\nand convert the function arguments to appropriate callable expressions if the number of arguments of `g` match the number of arguments of the given function, raise an error otherwise.\n\n* We raise an error whenever a function object is specified without variables.\n\nComments?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5607\n\n",
     "created_at": "2009-03-25T10:57:55Z",
     "labels": [
         "component: calculus",
@@ -22,7 +22,6 @@ CC:  @jasongrout
 
 In a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:
 
-
 ```
 sage: g(x)=sin
 sage: g(3)
@@ -35,9 +34,7 @@ sage: g(x)=sin+cos; g(3)
 sin + cos
 ```
 
-
 I think the syntax for this should be:
-
 
 ```
 sage: g(x) = sin(x) + 3
@@ -49,9 +46,7 @@ sage: g(3)
 sin(3) + cos(3)
 ```
 
-
 Since it is not clear which variable to use if only `sin` is specified. Also consider this situation:
-
 
 ```
 sage: g(x,y) = sin + y
@@ -59,16 +54,13 @@ sage: g(3,4)
 ???
 ```
 
-
 We have two options:
 
 * We could allow this syntax for convenience:
 
-
 ```
 sage: g(x) = sin + x
 ```
-
 
 and convert the function arguments to appropriate callable expressions if the number of arguments of `g` match the number of arguments of the given function, raise an error otherwise.
 
@@ -138,7 +130,7 @@ Resolution: invalid
 archive/issue_comments_043682.json:
 ```json
 {
-    "body": "In 4.0, we raise an error for this type of thing.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: g(x)=sin\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mhansen/.sage/temp/sage.math.washington.edu/31677/_home_mhansen__sage_init_sage_0.py in <module>()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/calculus/all.pyc in symbolic_expression(x)\n     63         return x._symbolic_(SR)\n     64     else:\n---> 65         return SR(x)\n     66 \n     67 import desolvers\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing._element_constructor_ (sage/symbolic/ring.cpp:4416)()\n\nTypeError: \nsage: g(x) = sin(x)\n```\n",
+    "body": "In 4.0, we raise an error for this type of thing.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: g(x)=sin\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mhansen/.sage/temp/sage.math.washington.edu/31677/_home_mhansen__sage_init_sage_0.py in <module>()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/calculus/all.pyc in symbolic_expression(x)\n     63         return x._symbolic_(SR)\n     64     else:\n---> 65         return SR(x)\n     66 \n     67 import desolvers\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/scratch/mhansen/release/4.0.1/rc2/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing._element_constructor_ (sage/symbolic/ring.cpp:4416)()\n\nTypeError: \nsage: g(x) = sin(x)\n```",
     "created_at": "2009-06-05T02:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5607",
     "type": "issue_comment",
@@ -148,7 +140,6 @@ archive/issue_comments_043682.json:
 ```
 
 In 4.0, we raise an error for this type of thing.
-
 
 ```
 ----------------------------------------------------------------------
@@ -178,4 +169,3 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 
 sage: g(x) = sin(x)
 ```
-

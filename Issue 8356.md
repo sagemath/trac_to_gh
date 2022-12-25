@@ -3,7 +3,7 @@
 archive/issues_008356.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen python is configured, it is showing the following warning:\n\n\n```\nconfigure: WARNING: unrecognized options: --without-libpng\n```\n\n\nIt would be good if when people update packages, they actually check things like the options. R recently had --without-iconv, despite that was no longer an option. \n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8356\n\n",
+    "body": "Assignee: tbd\n\nWhen python is configured, it is showing the following warning:\n\n```\nconfigure: WARNING: unrecognized options: --without-libpng\n```\n\nIt would be good if when people update packages, they actually check things like the options. R recently had --without-iconv, despite that was no longer an option. \n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8356\n\n",
     "created_at": "2010-02-25T03:58:59Z",
     "labels": [
         "component: packages: standard",
@@ -20,11 +20,9 @@ Assignee: tbd
 
 When python is configured, it is showing the following warning:
 
-
 ```
 configure: WARNING: unrecognized options: --without-libpng
 ```
-
 
 It would be good if when people update packages, they actually check things like the options. R recently had --without-iconv, despite that was no longer an option. 
 

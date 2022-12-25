@@ -144,7 +144,7 @@ Rebase on a new patch set.
 archive/issue_comments_021232.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by @TimDumol created at 2010-01-17 22:04:25\n\nThe new patch set is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\n\nSorry for the immense patch queue.",
+    "body": "Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by @TimDumol created at 2010-01-17 22:04:25\n\nThe new patch set is:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\nSorry for the immense patch queue.",
     "created_at": "2010-01-17T22:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ archive/issue_comments_021232.json:
 Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by @TimDumol created at 2010-01-17 22:04:25
 
 The new patch set is:
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -180,7 +179,6 @@ trac_7937-sass_manifest.patch
 trac_4217-html-system-formatting.patch
 trac_3083-print-documentation.patch
 ```
-
 
 Sorry for the immense patch queue.
 

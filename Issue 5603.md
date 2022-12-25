@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5603
 archive/issue_comments_043653.json:
 ```json
 {
-    "body": "This is now implemented as \"blend\":\n\n\n```\nsage: sage.plot.colors.red.blend(sage.plot.colors.blue)\nRGB color (0.5, 0.0, 0.5)\n\n```\n\n\nSo this ticket should be closed.",
+    "body": "This is now implemented as \"blend\":\n\n```\nsage: sage.plot.colors.red.blend(sage.plot.colors.blue)\nRGB color (0.5, 0.0, 0.5)\n\n```\n\nSo this ticket should be closed.",
     "created_at": "2010-05-11T20:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5603",
     "type": "issue_comment",
@@ -48,13 +48,11 @@ archive/issue_comments_043653.json:
 
 This is now implemented as "blend":
 
-
 ```
 sage: sage.plot.colors.red.blend(sage.plot.colors.blue)
 RGB color (0.5, 0.0, 0.5)
 
 ```
-
 
 So this ticket should be closed.
 
@@ -65,7 +63,7 @@ So this ticket should be closed.
 archive/issue_comments_043654.json:
 ```json
 {
-    "body": "Close as fixed:\n\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: b = sage.plot.colors.blue\nsage: r = sage.plot.colors.red\nsage: g = sage.plot.colors.green\nsage: b.blend(r)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(b)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(g)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(r)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(b)\nRGB color (0.0, 0.25098039215686274, 0.5)\nsage: b.blend(g)\nRGB color (0.0, 0.25098039215686274, 0.5)\n```\n",
+    "body": "Close as fixed:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: b = sage.plot.colors.blue\nsage: r = sage.plot.colors.red\nsage: g = sage.plot.colors.green\nsage: b.blend(r)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(b)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(g)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(r)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(b)\nRGB color (0.0, 0.25098039215686274, 0.5)\nsage: b.blend(g)\nRGB color (0.0, 0.25098039215686274, 0.5)\n```",
     "created_at": "2010-05-11T20:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5603",
     "type": "issue_comment",
@@ -75,7 +73,6 @@ archive/issue_comments_043654.json:
 ```
 
 Close as fixed:
-
 
 ```
 [mvngu@sage ~]$ sage
@@ -97,7 +94,6 @@ RGB color (0.0, 0.25098039215686274, 0.5)
 sage: b.blend(g)
 RGB color (0.0, 0.25098039215686274, 0.5)
 ```
-
 
 
 

@@ -102,7 +102,7 @@ Resolution: fixed
 archive/issue_comments_000276.json:
 ```json
 {
-    "body": "This has been possible for a while now:\n\n```\nsage: preparser(False)\nsage: 2^2\n0\nsage: preparser(True)\nsage: 2^2\n4\n```\n\nHence I am closing the ticket.\n\nCheers,\n\nMichael",
+    "body": "This has been possible for a while now:\n\n```\nsage: preparser(False)\nsage: 2^2\n0\nsage: preparser(True)\nsage: 2^2\n4\n```\nHence I am closing the ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T07:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/47",
     "type": "issue_comment",
@@ -121,7 +121,6 @@ sage: preparser(True)
 sage: 2^2
 4
 ```
-
 Hence I am closing the ticket.
 
 Cheers,

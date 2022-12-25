@@ -3,7 +3,7 @@
 archive/issues_004974.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @jasongrout\n\nAlso, it would be good to optimize it if possible.\n\n\n```\n[04:21] <craigcitro> yeah, file a ticket for that and assign it to me.\n[04:21] <jason-> (couldn't get cimport to work...)\n[04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function\n[04:22] <craigcitro> so it needs to be moved anyway\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4974\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @jasongrout\n\nAlso, it would be good to optimize it if possible.\n\n```\n[04:21] <craigcitro> yeah, file a ticket for that and assign it to me.\n[04:21] <jason-> (couldn't get cimport to work...)\n[04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function\n[04:22] <craigcitro> so it needs to be moved anyway\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4974\n\n",
     "created_at": "2009-01-14T10:27:30Z",
     "labels": [
         "component: misc",
@@ -22,14 +22,12 @@ CC:  @jasongrout
 
 Also, it would be good to optimize it if possible.
 
-
 ```
 [04:21] <craigcitro> yeah, file a ticket for that and assign it to me.
 [04:21] <jason-> (couldn't get cimport to work...)
 [04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function
 [04:22] <craigcitro> so it needs to be moved anyway
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4974
@@ -97,7 +95,7 @@ Changing status from new to assigned.
 archive/issue_comments_037828.json:
 ```json
 {
-    "body": "Some questions/remarks.\nShouldn't the following always be true ? (at least this is what I understand from the docstring)\n\n```python\nnormalize_slice( s , size_list) == range(size_list)[s.start:s.stop:s.step]\n```\n\n\nIf no (which is the case actually) this looks quite incoherent to me;\nif yes, is there a reason not to rewrite this fonction as a one liner?",
+    "body": "Some questions/remarks.\nShouldn't the following always be true ? (at least this is what I understand from the docstring)\n\n```python\nnormalize_slice( s , size_list) == range(size_list)[s.start:s.stop:s.step]\n```\n\nIf no (which is the case actually) this looks quite incoherent to me;\nif yes, is there a reason not to rewrite this fonction as a one liner?",
     "created_at": "2009-01-14T13:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -112,7 +110,6 @@ Shouldn't the following always be true ? (at least this is what I understand fro
 ```python
 normalize_slice( s , size_list) == range(size_list)[s.start:s.stop:s.step]
 ```
-
 
 If no (which is the case actually) this looks quite incoherent to me;
 if yes, is there a reason not to rewrite this fonction as a one liner?
@@ -160,7 +157,7 @@ Wait, so disregarding whether or not we'd want to implement things that way -- a
 archive/issue_comments_037831.json:
 ```json
 {
-    "body": "There is an inconsistency with standard python:\n\n\n```\n[12:12] <jason-> sage.misc.misc_c.normalize_slice(slice(2,None,-1),3)\n[12:12] <jason-> gives me 2\n[12:12] <jason-> but \n[12:12] <jason-> sage: range(3)[2::-1]\n[12:12] <jason-> [2, 1, 0]\n```\n",
+    "body": "There is an inconsistency with standard python:\n\n```\n[12:12] <jason-> sage.misc.misc_c.normalize_slice(slice(2,None,-1),3)\n[12:12] <jason-> gives me 2\n[12:12] <jason-> but \n[12:12] <jason-> sage: range(3)[2::-1]\n[12:12] <jason-> [2, 1, 0]\n```",
     "created_at": "2009-01-14T18:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -170,7 +167,6 @@ archive/issue_comments_037831.json:
 ```
 
 There is an inconsistency with standard python:
-
 
 ```
 [12:12] <jason-> sage.misc.misc_c.normalize_slice(slice(2,None,-1),3)
@@ -182,13 +178,12 @@ There is an inconsistency with standard python:
 
 
 
-
 ---
 
 archive/issue_comments_037832.json:
 ```json
 {
-    "body": "Jason Grout just brought up an example in IRC where exactly that would happen. Here's a case:\n\n\n```\nsage: range(3)[2::-1]\n[2, 1, 0]\n```\n\n\n`normalize_slice` will **not** return that, since it interprets a missing `stop` to be equal to `size`. This isn't documented as part of the Python semantics, but I think we should switch it to behave the same way regardless. (Also, it'll be easy to implement.)\n\nThis is now `needs work` until I change this.",
+    "body": "Jason Grout just brought up an example in IRC where exactly that would happen. Here's a case:\n\n```\nsage: range(3)[2::-1]\n[2, 1, 0]\n```\n\n`normalize_slice` will **not** return that, since it interprets a missing `stop` to be equal to `size`. This isn't documented as part of the Python semantics, but I think we should switch it to behave the same way regardless. (Also, it'll be easy to implement.)\n\nThis is now `needs work` until I change this.",
     "created_at": "2009-01-14T18:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -199,12 +194,10 @@ archive/issue_comments_037832.json:
 
 Jason Grout just brought up an example in IRC where exactly that would happen. Here's a case:
 
-
 ```
 sage: range(3)[2::-1]
 [2, 1, 0]
 ```
-
 
 `normalize_slice` will **not** return that, since it interprets a missing `stop` to be equal to `size`. This isn't documented as part of the Python semantics, but I think we should switch it to behave the same way regardless. (Also, it'll be easy to implement.)
 
@@ -217,7 +210,7 @@ This is now `needs work` until I change this.
 archive/issue_comments_037833.json:
 ```json
 {
-    "body": "Another case brought up by Jason Grout:\n\n\n```\nsage: range(5)[-6:]\n[0, 1, 2, 3, 4]\n```\n",
+    "body": "Another case brought up by Jason Grout:\n\n```\nsage: range(5)[-6:]\n[0, 1, 2, 3, 4]\n```",
     "created_at": "2009-01-14T18:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -228,12 +221,10 @@ archive/issue_comments_037833.json:
 
 Another case brought up by Jason Grout:
 
-
 ```
 sage: range(5)[-6:]
 [0, 1, 2, 3, 4]
 ```
-
 
 
 
@@ -242,7 +233,7 @@ sage: range(5)[-6:]
 archive/issue_comments_037834.json:
 ```json
 {
-    "body": "and another one from the docstring...\n\n```\nsage: range(20)[5:8:-1]\n[]\n```\n",
+    "body": "and another one from the docstring...\n\n```\nsage: range(20)[5:8:-1]\n[]\n```",
     "created_at": "2009-01-14T19:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -257,7 +248,6 @@ and another one from the docstring...
 sage: range(20)[5:8:-1]
 []
 ```
-
 
 
 
@@ -286,7 +276,7 @@ apply normalize_size.patch on top of previous patch.  This corrects all errors p
 archive/issue_comments_037836.json:
 ```json
 {
-    "body": "A lot better, but there are still bugs.\n\nI would recommand to try something like this to test extensively:\n\n\n```python\ndef safe_norm(i,j,k,l):\n    try:\n        return sage.misc.misc_c.normalize_slice(slice(i,j,k),l)\n    except ValueError:\n        return \"error\"\n\ndef safe_range(i,j,k,l):\n    try:\n        return range(l)[i:j:k]\n    except ValueError:\n        return \"error\"\n\nd=[-5,-4,-3,-2,-1,0,-1,-2,-3,-4,-5,None]\nld=len(d)-1\nfor r in xrange(500):\n    i=d[randint(0,ld)]\n    j=d[randint(0,ld)]\n    k=d[randint(0,ld)]\n    l=randint(-8,8)\n    r1=safe_norm(i,j,k,l)\n    r2=safe_range(i,j,k,l)\n    if not r1==r2:\n        print i,j,k,l,r1,r2\n```\n",
+    "body": "A lot better, but there are still bugs.\n\nI would recommand to try something like this to test extensively:\n\n```python\ndef safe_norm(i,j,k,l):\n    try:\n        return sage.misc.misc_c.normalize_slice(slice(i,j,k),l)\n    except ValueError:\n        return \"error\"\n\ndef safe_range(i,j,k,l):\n    try:\n        return range(l)[i:j:k]\n    except ValueError:\n        return \"error\"\n\nd=[-5,-4,-3,-2,-1,0,-1,-2,-3,-4,-5,None]\nld=len(d)-1\nfor r in xrange(500):\n    i=d[randint(0,ld)]\n    j=d[randint(0,ld)]\n    k=d[randint(0,ld)]\n    l=randint(-8,8)\n    r1=safe_norm(i,j,k,l)\n    r2=safe_range(i,j,k,l)\n    if not r1==r2:\n        print i,j,k,l,r1,r2\n```",
     "created_at": "2009-01-14T23:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -298,7 +288,6 @@ archive/issue_comments_037836.json:
 A lot better, but there are still bugs.
 
 I would recommand to try something like this to test extensively:
-
 
 ```python
 def safe_norm(i,j,k,l):
@@ -325,7 +314,6 @@ for r in xrange(500):
     if not r1==r2:
         print i,j,k,l,r1,r2
 ```
-
 
 
 
@@ -392,7 +380,7 @@ In scanning through your code, it has a few places where the stuff following the
 archive/issue_comments_037840.json:
 ```json
 {
-    "body": "Okay, I think this makes all of this work redundant.  Equivalent functionality (and mostly equivalent or faster times) are found in the implementation:\n\n\n```\nrange(*s.indices(size))\n```\n\n\nwhere s is the slice, size is the size of list.",
+    "body": "Okay, I think this makes all of this work redundant.  Equivalent functionality (and mostly equivalent or faster times) are found in the implementation:\n\n```\nrange(*s.indices(size))\n```\n\nwhere s is the slice, size is the size of list.",
     "created_at": "2009-01-15T04:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
@@ -403,11 +391,9 @@ archive/issue_comments_037840.json:
 
 Okay, I think this makes all of this work redundant.  Equivalent functionality (and mostly equivalent or faster times) are found in the implementation:
 
-
 ```
 range(*s.indices(size))
 ```
-
 
 where s is the slice, size is the size of list.
 

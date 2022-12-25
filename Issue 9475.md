@@ -102,7 +102,7 @@ I've run the M4RI self test (not the Sage test suite) on the following machines:
 archive/issue_comments_090745.json:
 ```json
 {
-    "body": "1. SPKG.txt under \"Releases\" says latest \nrelease is libm4ri-20100107, do you mean\nlibm4ri-20100701?\n\n2. Since spkg-check exists, in spkg-install \nthe commented out lines:\n\n\n```\n# $MAKE check\n# if [ $? -ne 0 ]; then\n#     echo \"libm4ri testsuite failed, please report upstream!\"\n#     exit 1\n# fi\n```\n\n\ncan be removed.\n\n3. In spkg-install, if SAGE_FAT_BINARY is yes, then\nsse2 is disabled.  What about sse3 as was the reported\nproblem in [#9381](http://trac.sagemath.org/sage_trac/ticket/9381)\n\n4. This version of libm4ri does not appear under the\ndownloads on the [m4ri](http://m4ri.sagemath.org) web site,\nthus no way to tell if the source in the spkg corresponds\nto the source under the claimed version.",
+    "body": "1. SPKG.txt under \"Releases\" says latest \nrelease is libm4ri-20100107, do you mean\nlibm4ri-20100701?\n\n2. Since spkg-check exists, in spkg-install \nthe commented out lines:\n\n```\n# $MAKE check\n# if [ $? -ne 0 ]; then\n#     echo \"libm4ri testsuite failed, please report upstream!\"\n#     exit 1\n# fi\n```\n\ncan be removed.\n\n3. In spkg-install, if SAGE_FAT_BINARY is yes, then\nsse2 is disabled.  What about sse3 as was the reported\nproblem in [#9381](http://trac.sagemath.org/sage_trac/ticket/9381)\n\n4. This version of libm4ri does not appear under the\ndownloads on the [m4ri](http://m4ri.sagemath.org) web site,\nthus no way to tell if the source in the spkg corresponds\nto the source under the claimed version.",
     "created_at": "2010-07-13T15:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -118,7 +118,6 @@ libm4ri-20100701?
 2. Since spkg-check exists, in spkg-install 
 the commented out lines:
 
-
 ```
 # $MAKE check
 # if [ $? -ne 0 ]; then
@@ -126,7 +125,6 @@ the commented out lines:
 #     exit 1
 # fi
 ```
-
 
 can be removed.
 
@@ -164,7 +162,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090747.json:
 ```json
 {
-    "body": "Replying to [comment:3 mariah]:\n\n> 1. SPKG.txt under \"Releases\" says latest  release is libm4ri-20100107, do you mean libm4ri-20100701?\n\nFixed.\n\n> 2. Since spkg-check exists, in spkg-install\u00a0 the commented out lines: ` # $MAKE check # if [ $? -ne 0 ]; then #     echo \"libm4ri testsuite failed, please report upstream!\" #     exit 1 # fi ` can be removed.\n\nFixed.\n\n> 3. In spkg-install, if SAGE_FAT_BINARY is yes, then sse2 is disabled.  What about sse3 as was the reported problem in [#9381](http://trac.sagemath.org/sage_trac/ticket/9381)\n\nWe never use SSE3, but yeah all checks for SSEx instructions are suppressed in that case.\n\n> 4. This version of libm4ri does not appear under the downloads on the [m4ri](http://m4ri.sagemath.org) web site, thus no way to tell if the source in the spkg corresponds to the source under the claimed version.\n\nThis is because I am upstream and wanted to wait for portability issues before putting the release on the website. I'm putting it online now, if that makes your life easier.",
+    "body": "Replying to [comment:3 mariah]:\n\n> 1. SPKG.txt under \"Releases\" says latest  release is libm4ri-20100107, do you mean libm4ri-20100701?\n\n\nFixed.\n\n> 2. Since spkg-check exists, in spkg-install\u00a0 the commented out lines: ` # $MAKE check # if [ $? -ne 0 ]; then #     echo \"libm4ri testsuite failed, please report upstream!\" #     exit 1 # fi ` can be removed.\n\n\nFixed.\n\n> 3. In spkg-install, if SAGE_FAT_BINARY is yes, then sse2 is disabled.  What about sse3 as was the reported problem in [#9381](http://trac.sagemath.org/sage_trac/ticket/9381)\n\n\nWe never use SSE3, but yeah all checks for SSEx instructions are suppressed in that case.\n\n> 4. This version of libm4ri does not appear under the downloads on the [m4ri](http://m4ri.sagemath.org) web site, thus no way to tell if the source in the spkg corresponds to the source under the claimed version.\n\n\nThis is because I am upstream and wanted to wait for portability issues before putting the release on the website. I'm putting it online now, if that makes your life easier.",
     "created_at": "2010-07-13T18:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -177,17 +175,21 @@ Replying to [comment:3 mariah]:
 
 > 1. SPKG.txt under "Releases" says latest  release is libm4ri-20100107, do you mean libm4ri-20100701?
 
+
 Fixed.
 
 > 2. Since spkg-check exists, in spkg-install  the commented out lines: ` # $MAKE check # if [ $? -ne 0 ]; then #     echo "libm4ri testsuite failed, please report upstream!" #     exit 1 # fi ` can be removed.
+
 
 Fixed.
 
 > 3. In spkg-install, if SAGE_FAT_BINARY is yes, then sse2 is disabled.  What about sse3 as was the reported problem in [#9381](http://trac.sagemath.org/sage_trac/ticket/9381)
 
+
 We never use SSE3, but yeah all checks for SSEx instructions are suppressed in that case.
 
 > 4. This version of libm4ri does not appear under the downloads on the [m4ri](http://m4ri.sagemath.org) web site, thus no way to tell if the source in the spkg corresponds to the source under the claimed version.
+
 
 This is because I am upstream and wanted to wait for portability issues before putting the release on the website. I'm putting it online now, if that makes your life easier.
 
@@ -370,7 +372,7 @@ I've only installed the new package (dated July 13th) and applied the patch, i.e
 archive/issue_comments_090755.json:
 ```json
 {
-    "body": "Shame on me I missed that one:\n\n```sh\n./spkg-install: line 47: [x: command not found\n```\n\n\n```sh\nif [\"x$SAGE_FAT_BINARY\" = \"xyes\"]; then\n    SSE2_SUPPORT=\"--disable-sse2\"\nelse\n    SSE2_SUPPORT=\"\"\nfi\n```\n\nshould be\n\n```sh\nif [ \"x$SAGE_FAT_BINARY\" = \"xyes\" ]; then\n    ...\n```\n\nNote that `[` is actually a *command* (namely an alias for or link to `test`, depending on the shell), and `]` is its last parameter.\n\n----\n\nOn both of the above systems, the testsuite passed without errors.\n\n(I reinstalled the package(s) with `SAGE_CHECK=\"yes\"`.)",
+    "body": "Shame on me I missed that one:\n\n```sh\n./spkg-install: line 47: [x: command not found\n```\n\n```sh\nif [\"x$SAGE_FAT_BINARY\" = \"xyes\"]; then\n    SSE2_SUPPORT=\"--disable-sse2\"\nelse\n    SSE2_SUPPORT=\"\"\nfi\n```\nshould be\n\n```sh\nif [ \"x$SAGE_FAT_BINARY\" = \"xyes\" ]; then\n    ...\n```\nNote that `[` is actually a *command* (namely an alias for or link to `test`, depending on the shell), and `]` is its last parameter.\n\n---\n\nOn both of the above systems, the testsuite passed without errors.\n\n(I reinstalled the package(s) with `SAGE_CHECK=\"yes\"`.)",
     "created_at": "2010-07-14T18:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -385,7 +387,6 @@ Shame on me I missed that one:
 ./spkg-install: line 47: [x: command not found
 ```
 
-
 ```sh
 if ["x$SAGE_FAT_BINARY" = "xyes"]; then
     SSE2_SUPPORT="--disable-sse2"
@@ -393,17 +394,15 @@ else
     SSE2_SUPPORT=""
 fi
 ```
-
 should be
 
 ```sh
 if [ "x$SAGE_FAT_BINARY" = "xyes" ]; then
     ...
 ```
-
 Note that `[` is actually a *command* (namely an alias for or link to `test`, depending on the shell), and `]` is its last parameter.
 
-----
+---
 
 On both of the above systems, the testsuite passed without errors.
 
@@ -436,7 +435,7 @@ Leif
 archive/issue_comments_090757.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n\n> * Remove upstream Mercurial repository (directory `src/.hg`, file `src/.hgtags`)\n> * Remove directory `src/autom4te.cache`, file `src/m4ri.vcproj`\n> I've built a p1 spkg with the above mentioned files removed: 392KB vs. 1.2MB\n\nIt's strange that there was an autom4te.cache, since I rm it in my release script. I'm okay with these changes.",
+    "body": "Replying to [comment:9 leif]:\n\n> * Remove upstream Mercurial repository (directory `src/.hg`, file `src/.hgtags`)\n> * Remove directory `src/autom4te.cache`, file `src/m4ri.vcproj`\n> I've built a p1 spkg with the above mentioned files removed: 392KB vs. 1.2MB\n\n\nIt's strange that there was an autom4te.cache, since I rm it in my release script. I'm okay with these changes.",
     "created_at": "2010-07-14T20:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -450,6 +449,7 @@ Replying to [comment:9 leif]:
 > * Remove upstream Mercurial repository (directory `src/.hg`, file `src/.hgtags`)
 > * Remove directory `src/autom4te.cache`, file `src/m4ri.vcproj`
 > I've built a p1 spkg with the above mentioned files removed: 392KB vs. 1.2MB
+
 
 It's strange that there was an autom4te.cache, since I rm it in my release script. I'm okay with these changes.
 
@@ -480,7 +480,7 @@ I'd appreciate if you could update SPKG according to your suggestions, I'm okay 
 archive/issue_comments_090759.json:
 ```json
 {
-    "body": "Replying to [comment:14 malb]:\n> I'd appreciate if you could update SPKG according to your suggestions, I'm okay with them all. If you upload the SPKG somewhere or send it my way I can upload it to sage.math.\u00a0\n\nOk, I'll create a cumulative spkg patch and a \"stripped-down\" p1 package in a few hours and then mail you both.\n\n(I assume your .ac.uk e-mail address in SPKG.txt is still appropriate as upstream contact.)\n  \n\nCurrently running stress-test builds of 4.5.rc1... ;-)\n\nLeif",
+    "body": "Replying to [comment:14 malb]:\n> I'd appreciate if you could update SPKG according to your suggestions, I'm okay with them all. If you upload the SPKG somewhere or send it my way I can upload it to sage.math.\u00a0\n\n\nOk, I'll create a cumulative spkg patch and a \"stripped-down\" p1 package in a few hours and then mail you both.\n\n(I assume your .ac.uk e-mail address in SPKG.txt is still appropriate as upstream contact.)\n  \n\nCurrently running stress-test builds of 4.5.rc1... ;-)\n\nLeif",
     "created_at": "2010-07-14T21:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -491,6 +491,7 @@ archive/issue_comments_090759.json:
 
 Replying to [comment:14 malb]:
 > I'd appreciate if you could update SPKG according to your suggestions, I'm okay with them all. If you upload the SPKG somewhere or send it my way I can upload it to sage.math. 
+
 
 Ok, I'll create a cumulative spkg patch and a "stripped-down" p1 package in a few hours and then mail you both.
 
@@ -632,7 +633,7 @@ and I give it a positive review.
 archive/issue_comments_090766.json:
 ```json
 {
-    "body": "With a fresh build, sage doesn't start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",\nline 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\",\nline 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\",\nline 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\",\nline 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```\n",
+    "body": "With a fresh build, sage doesn't start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",\nline 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\",\nline 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\",\nline 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\",\nline 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```",
     "created_at": "2010-07-18T20:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -664,7 +665,6 @@ Sage failed to startup.
 
 
 
-
 ---
 
 archive/issue_comments_090767.json:
@@ -688,7 +688,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_090768.json:
 ```json
 {
-    "body": "Replying to [comment:20 rlm]:\n> With a fresh build, sage doesn't start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",line 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\", line 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\", line 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```\n\n\nLooks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).",
+    "body": "Replying to [comment:20 rlm]:\n> With a fresh build, sage doesn't start:\n\n{{{\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",line 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\", line 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\", line 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n}}}\n\nLooks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).",
     "created_at": "2010-07-18T20:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -700,7 +700,7 @@ archive/issue_comments_090768.json:
 Replying to [comment:20 rlm]:
 > With a fresh build, sage doesn't start:
 
-```
+{{{
 Traceback (most recent call last):
  File "/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval",line 4, in <module>
    from sage.all import *
@@ -713,8 +713,7 @@ Traceback (most recent call last):
 ImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:
 undefined symbol: mzd_lqup
 Sage failed to startup.
-```
-
+}}}
 
 Looks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).
 
@@ -725,7 +724,7 @@ Looks as if you haven't applied the Sage library patch (or didn't do `sage -b` a
 archive/issue_comments_090769.json:
 ```json
 {
-    "body": "Replying to [comment:21 leif]:\n> \n> Looks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).\n> \n\nI've been pretty bad about this lately... Sorry guys.",
+    "body": "Replying to [comment:21 leif]:\n> \n> Looks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).\n> \n\n\nI've been pretty bad about this lately... Sorry guys.",
     "created_at": "2010-07-18T20:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -738,6 +737,7 @@ Replying to [comment:21 leif]:
 > 
 > Looks as if you haven't applied the Sage library patch (or didn't do `sage -b` after that).
 > 
+
 
 I've been pretty bad about this lately... Sorry guys.
 
@@ -766,7 +766,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_090771.json:
 ```json
 {
-    "body": "\n```\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n",
+    "body": "```\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```",
     "created_at": "2010-07-18T22:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -774,7 +774,6 @@ archive/issue_comments_090771.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 sage -t -long "devel/sage-main/sage/crypto/mq/mpolynomialsystem.py"
@@ -788,7 +787,6 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 
 
@@ -815,7 +813,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_090773.json:
 ```json
 {
-    "body": "I tried to reproduce your segmentation fault, but I can't.\n\n\n```\nmalb@sage:~/scratch_sage/sage-4.4$ ./sage -t -long devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n         [16.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 16.8 seconds\nmalb@sage:~/scratch_sage/sage-4.4$ cd devel/sage\nmalb@sage:~/scratch_sage/sage-4.4/devel/sage$ hg qap\nm4ri_new_version.patch\nsingular-3-1-1-4.patch\n\n```\n",
+    "body": "I tried to reproduce your segmentation fault, but I can't.\n\n```\nmalb@sage:~/scratch_sage/sage-4.4$ ./sage -t -long devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n         [16.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 16.8 seconds\nmalb@sage:~/scratch_sage/sage-4.4$ cd devel/sage\nmalb@sage:~/scratch_sage/sage-4.4/devel/sage$ hg qap\nm4ri_new_version.patch\nsingular-3-1-1-4.patch\n\n```",
     "created_at": "2010-07-18T22:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -825,7 +823,6 @@ archive/issue_comments_090773.json:
 ```
 
 I tried to reproduce your segmentation fault, but I can't.
-
 
 ```
 malb@sage:~/scratch_sage/sage-4.4$ ./sage -t -long devel/sage-main/sage/crypto/mq/mpolynomialsystem.py
@@ -844,13 +841,12 @@ singular-3-1-1-4.patch
 
 
 
-
 ---
 
 archive/issue_comments_090774.json:
 ```json
 {
-    "body": "Replying to [comment:23 rlm]:\n\n```\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\n...\n```\n\n\nMachine, OS, platform? Parallel test? Whole library or just that single file?",
+    "body": "Replying to [comment:23 rlm]:\n\n```\nsage -t -long \"devel/sage-main/sage/crypto/mq/mpolynomialsystem.py\"\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\n...\n```\n\nMachine, OS, platform? Parallel test? Whole library or just that single file?",
     "created_at": "2010-07-18T22:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -868,7 +864,6 @@ sage -t -long "devel/sage-main/sage/crypto/mq/mpolynomialsystem.py"
 Unhandled SIGSEGV: A segmentation fault occurred in Sage.
 ...
 ```
-
 
 Machine, OS, platform? Parallel test? Whole library or just that single file?
 
@@ -897,7 +892,7 @@ On geom.math, with a parallel build, in parallel and serial testing.
 archive/issue_comments_090776.json:
 ```json
 {
-    "body": "\n```\nTrying:\n    C = mq.MPolynomialSystem(r2).connected_components(); C###line 76:_sage_    >>> C = mq.MPolynomialSystem(r2).connecte\nd_components(); C\nExpecting:\n    [Polynomial System with 16 Polynomials in 16 Variables,\n     Polynomial System with 16 Polynomials in 16 Variables]\nok\nTrying:\n    C[Integer(0)].groebner_basis()###line 80:_sage_    >>> C[0].groebner_basis()\nExpecting:\n    [x111*x110 + w113*x110 + w113*x112 + w113*x113 + w113*w111 + w113*w112 + x111 + x113 + w110 + w111 + w112,\n... (more output)\nBOOM\n```\n",
+    "body": "```\nTrying:\n    C = mq.MPolynomialSystem(r2).connected_components(); C###line 76:_sage_    >>> C = mq.MPolynomialSystem(r2).connecte\nd_components(); C\nExpecting:\n    [Polynomial System with 16 Polynomials in 16 Variables,\n     Polynomial System with 16 Polynomials in 16 Variables]\nok\nTrying:\n    C[Integer(0)].groebner_basis()###line 80:_sage_    >>> C[0].groebner_basis()\nExpecting:\n    [x111*x110 + w113*x110 + w113*x112 + w113*x113 + w113*w111 + w113*w112 + x111 + x113 + w110 + w111 + w112,\n... (more output)\nBOOM\n```",
     "created_at": "2010-07-19T08:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -905,7 +900,6 @@ archive/issue_comments_090776.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 Trying:
@@ -925,13 +919,12 @@ BOOM
 
 
 
-
 ---
 
 archive/issue_comments_090777.json:
 ```json
 {
-    "body": "I executed these steps\n\n* I got a clean 4.5\n* installed r-2.10.1.p3.spkg #9396\n* installed libm4ri-20100701.p1.spkg #9475\u00a0\n* applied m4ri_new_version.patch to devel/sage-main repo #9475\u00a0\n* merged trac_9507.patch to local/bin repo #9507\u00a0\n* replaced spkg/install with \"install.2\" from the ticket\u00a0#9528\n* ./sage -sdist 4.5.1\n* then extracted the tarball...\n* export SAGE_PARALLEL_SPKG_BUILD=yes\n* export MAKE=make -j20\n* make\n* since somehow libm4ri wasn't updated afterwards, I reinstalled\u00a0libm4ri-20100701.p1.spkg\n\n**Result:**\n\n\n```\nmalb@geom:~/scratch_sage/SIGSEGV/sage-4.5.1$ ./sage -t -long devel/sage/sage/crypto/mq/mpolynomialsystem.py \nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n         [17.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.1 seconds\n\n```\n",
+    "body": "I executed these steps\n\n* I got a clean 4.5\n* installed r-2.10.1.p3.spkg #9396\n* installed libm4ri-20100701.p1.spkg #9475\u00a0\n* applied m4ri_new_version.patch to devel/sage-main repo #9475\u00a0\n* merged trac_9507.patch to local/bin repo #9507\u00a0\n* replaced spkg/install with \"install.2\" from the ticket\u00a0#9528\n* ./sage -sdist 4.5.1\n* then extracted the tarball...\n* export SAGE_PARALLEL_SPKG_BUILD=yes\n* export MAKE=make -j20\n* make\n* since somehow libm4ri wasn't updated afterwards, I reinstalled\u00a0libm4ri-20100701.p1.spkg\n\n**Result:**\n\n```\nmalb@geom:~/scratch_sage/SIGSEGV/sage-4.5.1$ ./sage -t -long devel/sage/sage/crypto/mq/mpolynomialsystem.py \nsage -t -long \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n         [17.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.1 seconds\n\n```",
     "created_at": "2010-07-19T16:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -957,7 +950,6 @@ I executed these steps
 
 **Result:**
 
-
 ```
 malb@geom:~/scratch_sage/SIGSEGV/sage-4.5.1$ ./sage -t -long devel/sage/sage/crypto/mq/mpolynomialsystem.py 
 sage -t -long "devel/sage/sage/crypto/mq/mpolynomialsystem.py"
@@ -968,7 +960,6 @@ All tests passed!
 Total time for all tests: 17.1 seconds
 
 ```
-
 
 
 
@@ -1108,7 +1099,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_090784.json:
 ```json
 {
-    "body": "Replying to [comment:30 mpatel]:\n> Can someone put the ticket number in the commit string?\n\nDone, but now we have yet another attachment since I couldn't replace Martin's.\n\n(I would have thought his patch's comment was sufficient to conclude that the patch has to be applied to the Sage library repository... ;-) )",
+    "body": "Replying to [comment:30 mpatel]:\n> Can someone put the ticket number in the commit string?\n\n\nDone, but now we have yet another attachment since I couldn't replace Martin's.\n\n(I would have thought his patch's comment was sufficient to conclude that the patch has to be applied to the Sage library repository... ;-) )",
     "created_at": "2010-08-07T07:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1119,6 +1110,7 @@ archive/issue_comments_090784.json:
 
 Replying to [comment:30 mpatel]:
 > Can someone put the ticket number in the commit string?
+
 
 Done, but now we have yet another attachment since I couldn't replace Martin's.
 
@@ -1167,7 +1159,7 @@ archive/issue_comments_090786.json:
 archive/issue_comments_090787.json:
 ```json
 {
-    "body": "Replying to [comment:35 mpatel]:\n> *Of course*, all long tests now pass (well, there are no reproducible failures) on sage.math with 4.5.3.alpha0 + #9475, so it seems no new efforts are necessary.  I'm checking bsd, redhawk, and t2 now.\nThe long doctests also pass on bsd, redhawk, and t2.",
+    "body": "Replying to [comment:35 mpatel]:\n> *Of course*, all long tests now pass (well, there are no reproducible failures) on sage.math with 4.5.3.alpha0 + #9475, so it seems no new efforts are necessary.  I'm checking bsd, redhawk, and t2 now.\n\nThe long doctests also pass on bsd, redhawk, and t2.",
     "created_at": "2010-08-10T05:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1178,6 +1170,7 @@ archive/issue_comments_090787.json:
 
 Replying to [comment:35 mpatel]:
 > *Of course*, all long tests now pass (well, there are no reproducible failures) on sage.math with 4.5.3.alpha0 + #9475, so it seems no new efforts are necessary.  I'm checking bsd, redhawk, and t2 now.
+
 The long doctests also pass on bsd, redhawk, and t2.
 
 
@@ -1223,7 +1216,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_090790.json:
 ```json
 {
-    "body": "\n```\n        while(it!=end){\n            Exponent e=*it; \n                from_term_map_type::const_iterator from_it=eliminated2row_number.find(e);\n                assert(terms_as_exp_step1[row_start[from_it->second]]==e);\n                assert(from_it!=eliminated2row_number.end());\n ===>               int index=from_it->second;//...translate e->line number;\n                mzd_write_bit(mat_step2_factor,i,index,1);\n            it++;\n        }\n\n```\n\nThis is where pbori.pyx crashes for me. I installed a new GCC today, so maybe that's to blame?",
+    "body": "```\n        while(it!=end){\n            Exponent e=*it; \n                from_term_map_type::const_iterator from_it=eliminated2row_number.find(e);\n                assert(terms_as_exp_step1[row_start[from_it->second]]==e);\n                assert(from_it!=eliminated2row_number.end());\n ===>               int index=from_it->second;//...translate e->line number;\n                mzd_write_bit(mat_step2_factor,i,index,1);\n            it++;\n        }\n\n```\nThis is where pbori.pyx crashes for me. I installed a new GCC today, so maybe that's to blame?",
     "created_at": "2010-08-10T14:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1231,7 +1224,6 @@ archive/issue_comments_090790.json:
     "user": "https://github.com/malb"
 }
 ```
-
 
 ```
         while(it!=end){
@@ -1245,7 +1237,6 @@ archive/issue_comments_090790.json:
         }
 
 ```
-
 This is where pbori.pyx crashes for me. I installed a new GCC today, so maybe that's to blame?
 
 
@@ -1291,7 +1282,7 @@ I think I got it: The[This is the Trac macro *PolyBoRi* that was inherited from 
 archive/issue_comments_090793.json:
 ```json
 {
-    "body": "Replying to [comment:39 malb]:\n> I think I got it: The PolyBoRi SPKG in 4.5.2 ships its own M4RI (and Boost) which conflicts with this new M4RI SPKG, thus since Leif removed this redundant copy of M4RI in the PolyBoRi, it works in 4.5.3.alpha0 but not before.\n\nLOL! (Sometimes little clean-ups make more sense than expected...)",
+    "body": "Replying to [comment:39 malb]:\n> I think I got it: The PolyBoRi SPKG in 4.5.2 ships its own M4RI (and Boost) which conflicts with this new M4RI SPKG, thus since Leif removed this redundant copy of M4RI in the PolyBoRi, it works in 4.5.3.alpha0 but not before.\n\n\nLOL! (Sometimes little clean-ups make more sense than expected...)",
     "created_at": "2010-08-10T15:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1302,6 +1293,7 @@ archive/issue_comments_090793.json:
 
 Replying to [comment:39 malb]:
 > I think I got it: The PolyBoRi SPKG in 4.5.2 ships its own M4RI (and Boost) which conflicts with this new M4RI SPKG, thus since Leif removed this redundant copy of M4RI in the PolyBoRi, it works in 4.5.3.alpha0 but not before.
+
 
 LOL! (Sometimes little clean-ups make more sense than expected...)
 
@@ -1459,7 +1451,7 @@ The only change in the new version compared to the previous version of  m4ri_ne
 archive/issue_comments_090802.json:
 ```json
 {
-    "body": "Replying to [comment:48 malb]:\n> The only change in the new version compared to the previous version of \u00a0m4ri_new_version.v2.patch is that one mention of LQUP was replaced by PLS in a docstring. That's all, this is why I didn't reset the status.\n\nNot 100%:\n\n```patch\n--- m4ri_new_version.v2.patch.orig\t2010-08-07 09:00:21.000000000 +0200\n+++ m4ri_new_version.v2.patch\t2010-08-12 20:50:56.000000000 +0200\n@@ -1,14 +1,14 @@\n # HG changeset patch\n # User Martin Albrecht <malb@informatik.uni-bremen.de>\n # Date 1277764034 -3600\n-# Node ID 3365789479e6d70cb1930b2e97c7874cbd3310db\n-# Parent  ba36200d8a2f844179785580245fd95aa6401a51\n+# Node ID 3b116dd35a84e0b6bd8ea12a732b8fa1fbda796f\n+# Parent  0bb69a98789215c64a81c4602f46a50c0aeca5f0\n #9475 Adapts Sage library interface to new M4RI API (libm4ri-20100701)\n \n-diff -r ba36200d8a2f -r 3365789479e6 module_list.py\n---- a/module_list.py\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 module_list.py\n+--- a/module_list.py\tTue Aug 10 13:46:10 2010 +0100\n +++ b/module_list.py\tMon Jun 28 23:27:14 2010 +0100\n-@@ -783,7 +783,7 @@\n+@@ -807,7 +807,7 @@\n      Extension('sage.matrix.matrix_mod2_dense',\n                sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n                libraries = ['gmp','m4ri', 'gd', 'png12', 'z'],\n@@ -17,7 +17,7 @@\n  \n      Extension('sage.matrix.matrix_modn_dense',\n                sources = ['sage/matrix/matrix_modn_dense.pyx'],\n-@@ -971,7 +971,7 @@\n+@@ -995,7 +995,7 @@\n      Extension('sage.modules.vector_mod2_dense',\n                sources = ['sage/modules/vector_mod2_dense.pyx'],\n                libraries = ['gmp','m4ri', 'png12', 'gd'],\n@@ -26,8 +26,8 @@\n      \n      Extension('sage.modules.vector_rational_dense',\n                sources = ['sage/modules/vector_rational_dense.pyx'],\n-diff -r ba36200d8a2f -r 3365789479e6 sage/libs/m4ri.pxd\n---- a/sage/libs/m4ri.pxd\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 sage/libs/m4ri.pxd\n+--- a/sage/libs/m4ri.pxd\tTue Aug 10 13:46:10 2010 +0100\n +++ b/sage/libs/m4ri.pxd\tMon Jun 28 23:27:14 2010 +0100\n @@ -141,6 +141,9 @@\n      # reduced row echelon form from upper triangular form\n@@ -60,8 +60,8 @@\n  \n      # reduced row echelon form using PLUQ factorization\n      cdef long mzd_echelonize_pluq(mzd_t *A, int full)\n-diff -r ba36200d8a2f -r 3365789479e6 sage/matrix/matrix_mod2_dense.pyx\n---- a/sage/matrix/matrix_mod2_dense.pyx\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 sage/matrix/matrix_mod2_dense.pyx\n+--- a/sage/matrix/matrix_mod2_dense.pyx\tTue Aug 10 13:46:10 2010 +0100\n +++ b/sage/matrix/matrix_mod2_dense.pyx\tMon Jun 28 23:27:14 2010 +0100\n @@ -1010,15 +1010,16 @@\n      #    * Matrix windows -- only if you need strassen for that base\n@@ -116,7 +116,28 @@\n                  k = 0\n  \n              _sig_on\n-@@ -1681,7 +1691,7 @@\n+@@ -1106,6 +1116,20 @@\n+             self.cache('rank', r)\n+             self.cache('pivots', self._pivots())\n+ \n++        elif algorithm == 'top':\n++            \n++            self.check_mutability()\n++            self.clear_cache()        \n++\n++            _sig_on\n++            mzd_top_echelonize_m4ri(self._entries, 0)\n++            r = 0\n++            _sig_off\n++            \n++            self.cache('in_echelon_form',True)\n++            self.cache('rank', r)\n++            self.cache('pivots', self._pivots())\n++\n+         elif algorithm == 'linbox':\n+ \n+             #self._echelonize_linbox()\n+@@ -1681,7 +1705,7 @@\n              sage: float(d)\n              0.63184899999999999\n              sage: A.density(approx=True)\n@@ -125,7 +146,7 @@\n              sage: float(len(A.nonzero_positions())/1000^2)\n              0.63184899999999999\n          \"\"\"\n-@@ -1691,7 +1701,7 @@\n+@@ -1691,18 +1715,18 @@\n          else:\n              return matrix_dense.Matrix_dense.density(self)\n  \n@@ -134,7 +155,11 @@\n          \"\"\"\n          Return the rank of this matrix.\n  \n-@@ -1702,7 +1712,7 @@\n+-        On average 'lqup' should be faster than 'm4ri' and hence it is\n++        On average 'pls' should be faster than 'm4ri' and hence it is\n+         the default choice. However, for small - i.e. quite few\n+         thousand rows & columns - and sparse matrices 'm4ri' might be\n+         a better choice.\n  \n          INPUT:\n  \n@@ -143,7 +168,7 @@\n  \n          EXAMPLE::\n  \n-@@ -1722,10 +1732,10 @@\n+@@ -1722,10 +1746,10 @@\n          cdef mzd_t *A = mzd_copy(NULL, self._entries)\n          cdef mzp_t *P, *Q\n  \n@@ -156,7 +181,7 @@\n              mzp_free(P)\n              mzp_free(Q)\n          elif algorithm == 'm4ri':\n-@@ -2060,9 +2070,9 @@\n+@@ -2060,9 +2084,9 @@\n      mzp_free(q)\n      return B,P,Q\n  \n@@ -168,7 +193,7 @@\n  \n      INPUT:\n          A -- matrix\n-@@ -2074,14 +2084,14 @@\n+@@ -2074,14 +2098,14 @@\n  \n      EXAMPLE::\n  \n@@ -185,7 +210,7 @@\n          sage: LU\n          [1 0 0 1]\n          [1 1 0 0]\n-@@ -2095,7 +2105,7 @@\n+@@ -2095,7 +2119,7 @@\n          [0, 1, 2, 3]\n  \n          sage: A = random_matrix(GF(2),1000,1000)\n@@ -194,7 +219,7 @@\n          True\n      \"\"\"\n      cdef Matrix_mod2_dense B = A.__copy__()\n-@@ -2104,15 +2114,15 @@\n+@@ -2104,15 +2128,15 @@\n  \n      if algorithm == 'standard':\n          _sig_on\n```\n",
+    "body": "Replying to [comment:48 malb]:\n> The only change in the new version compared to the previous version of \u00a0m4ri_new_version.v2.patch is that one mention of LQUP was replaced by PLS in a docstring. That's all, this is why I didn't reset the status.\n\n\nNot 100%:\n\n```patch\n--- m4ri_new_version.v2.patch.orig\t2010-08-07 09:00:21.000000000 +0200\n+++ m4ri_new_version.v2.patch\t2010-08-12 20:50:56.000000000 +0200\n@@ -1,14 +1,14 @@\n # HG changeset patch\n # User Martin Albrecht <malb@informatik.uni-bremen.de>\n # Date 1277764034 -3600\n-# Node ID 3365789479e6d70cb1930b2e97c7874cbd3310db\n-# Parent  ba36200d8a2f844179785580245fd95aa6401a51\n+# Node ID 3b116dd35a84e0b6bd8ea12a732b8fa1fbda796f\n+# Parent  0bb69a98789215c64a81c4602f46a50c0aeca5f0\n #9475 Adapts Sage library interface to new M4RI API (libm4ri-20100701)\n \n-diff -r ba36200d8a2f -r 3365789479e6 module_list.py\n---- a/module_list.py\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 module_list.py\n+--- a/module_list.py\tTue Aug 10 13:46:10 2010 +0100\n +++ b/module_list.py\tMon Jun 28 23:27:14 2010 +0100\n-@@ -783,7 +783,7 @@\n+@@ -807,7 +807,7 @@\n      Extension('sage.matrix.matrix_mod2_dense',\n                sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n                libraries = ['gmp','m4ri', 'gd', 'png12', 'z'],\n@@ -17,7 +17,7 @@\n  \n      Extension('sage.matrix.matrix_modn_dense',\n                sources = ['sage/matrix/matrix_modn_dense.pyx'],\n-@@ -971,7 +971,7 @@\n+@@ -995,7 +995,7 @@\n      Extension('sage.modules.vector_mod2_dense',\n                sources = ['sage/modules/vector_mod2_dense.pyx'],\n                libraries = ['gmp','m4ri', 'png12', 'gd'],\n@@ -26,8 +26,8 @@\n      \n      Extension('sage.modules.vector_rational_dense',\n                sources = ['sage/modules/vector_rational_dense.pyx'],\n-diff -r ba36200d8a2f -r 3365789479e6 sage/libs/m4ri.pxd\n---- a/sage/libs/m4ri.pxd\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 sage/libs/m4ri.pxd\n+--- a/sage/libs/m4ri.pxd\tTue Aug 10 13:46:10 2010 +0100\n +++ b/sage/libs/m4ri.pxd\tMon Jun 28 23:27:14 2010 +0100\n @@ -141,6 +141,9 @@\n      # reduced row echelon form from upper triangular form\n@@ -60,8 +60,8 @@\n  \n      # reduced row echelon form using PLUQ factorization\n      cdef long mzd_echelonize_pluq(mzd_t *A, int full)\n-diff -r ba36200d8a2f -r 3365789479e6 sage/matrix/matrix_mod2_dense.pyx\n---- a/sage/matrix/matrix_mod2_dense.pyx\tFri Jun 25 10:05:59 2010 +0100\n+diff -r 0bb69a987892 -r 3b116dd35a84 sage/matrix/matrix_mod2_dense.pyx\n+--- a/sage/matrix/matrix_mod2_dense.pyx\tTue Aug 10 13:46:10 2010 +0100\n +++ b/sage/matrix/matrix_mod2_dense.pyx\tMon Jun 28 23:27:14 2010 +0100\n @@ -1010,15 +1010,16 @@\n      #    * Matrix windows -- only if you need strassen for that base\n@@ -116,7 +116,28 @@\n                  k = 0\n  \n              _sig_on\n-@@ -1681,7 +1691,7 @@\n+@@ -1106,6 +1116,20 @@\n+             self.cache('rank', r)\n+             self.cache('pivots', self._pivots())\n+ \n++        elif algorithm == 'top':\n++            \n++            self.check_mutability()\n++            self.clear_cache()        \n++\n++            _sig_on\n++            mzd_top_echelonize_m4ri(self._entries, 0)\n++            r = 0\n++            _sig_off\n++            \n++            self.cache('in_echelon_form',True)\n++            self.cache('rank', r)\n++            self.cache('pivots', self._pivots())\n++\n+         elif algorithm == 'linbox':\n+ \n+             #self._echelonize_linbox()\n+@@ -1681,7 +1705,7 @@\n              sage: float(d)\n              0.63184899999999999\n              sage: A.density(approx=True)\n@@ -125,7 +146,7 @@\n              sage: float(len(A.nonzero_positions())/1000^2)\n              0.63184899999999999\n          \"\"\"\n-@@ -1691,7 +1701,7 @@\n+@@ -1691,18 +1715,18 @@\n          else:\n              return matrix_dense.Matrix_dense.density(self)\n  \n@@ -134,7 +155,11 @@\n          \"\"\"\n          Return the rank of this matrix.\n  \n-@@ -1702,7 +1712,7 @@\n+-        On average 'lqup' should be faster than 'm4ri' and hence it is\n++        On average 'pls' should be faster than 'm4ri' and hence it is\n+         the default choice. However, for small - i.e. quite few\n+         thousand rows & columns - and sparse matrices 'm4ri' might be\n+         a better choice.\n  \n          INPUT:\n  \n@@ -143,7 +168,7 @@\n  \n          EXAMPLE::\n  \n-@@ -1722,10 +1732,10 @@\n+@@ -1722,10 +1746,10 @@\n          cdef mzd_t *A = mzd_copy(NULL, self._entries)\n          cdef mzp_t *P, *Q\n  \n@@ -156,7 +181,7 @@\n              mzp_free(P)\n              mzp_free(Q)\n          elif algorithm == 'm4ri':\n-@@ -2060,9 +2070,9 @@\n+@@ -2060,9 +2084,9 @@\n      mzp_free(q)\n      return B,P,Q\n  \n@@ -168,7 +193,7 @@\n  \n      INPUT:\n          A -- matrix\n-@@ -2074,14 +2084,14 @@\n+@@ -2074,14 +2098,14 @@\n  \n      EXAMPLE::\n  \n@@ -185,7 +210,7 @@\n          sage: LU\n          [1 0 0 1]\n          [1 1 0 0]\n-@@ -2095,7 +2105,7 @@\n+@@ -2095,7 +2119,7 @@\n          [0, 1, 2, 3]\n  \n          sage: A = random_matrix(GF(2),1000,1000)\n@@ -194,7 +219,7 @@\n          True\n      \"\"\"\n      cdef Matrix_mod2_dense B = A.__copy__()\n-@@ -2104,15 +2114,15 @@\n+@@ -2104,15 +2128,15 @@\n  \n      if algorithm == 'standard':\n          _sig_on\n```",
     "created_at": "2010-08-13T03:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1470,6 +1462,7 @@ archive/issue_comments_090802.json:
 
 Replying to [comment:48 malb]:
 > The only change in the new version compared to the previous version of  m4ri_new_version.v2.patch is that one mention of LQUP was replaced by PLS in a docstring. That's all, this is why I didn't reset the status.
+
 
 Not 100%:
 
@@ -1628,7 +1621,6 @@ Not 100%:
 
 
 
-
 ---
 
 archive/issue_comments_090803.json:
@@ -1670,7 +1662,7 @@ Sage library patch - needed to comply with new M4RI API (libm4ri-20100701). (Con
 archive/issue_comments_090805.json:
 ```json
 {
-    "body": "Attachment [m4ri_new_version.v2.patch](tarball://root/attachments/some-uuid/ticket9475/m4ri_new_version.v2.patch) by @nexttime created at 2010-08-13 09:43:20\n\nReplying to [comment:50 malb]:\n> Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed\n\nNevertheless, passed all long tests with Sage 4.5.3.alpha0 and PolyBoRi 0.6.4.p4 from #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4).\n\nThe newly uploaded patch contains only the desired changes.",
+    "body": "Attachment [m4ri_new_version.v2.patch](tarball://root/attachments/some-uuid/ticket9475/m4ri_new_version.v2.patch) by @nexttime created at 2010-08-13 09:43:20\n\nReplying to [comment:50 malb]:\n> Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed\n\n\nNevertheless, passed all long tests with Sage 4.5.3.alpha0 and PolyBoRi 0.6.4.p4 from #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4).\n\nThe newly uploaded patch contains only the desired changes.",
     "created_at": "2010-08-13T09:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9475",
     "type": "issue_comment",
@@ -1683,6 +1675,7 @@ Attachment [m4ri_new_version.v2.patch](tarball://root/attachments/some-uuid/tick
 
 Replying to [comment:50 malb]:
 > Argh, I'm an idiot! I'll update the patch, the 'top' stuff must be removed
+
 
 Nevertheless, passed all long tests with Sage 4.5.3.alpha0 and PolyBoRi 0.6.4.p4 from #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4).
 

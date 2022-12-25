@@ -3,7 +3,7 @@
 archive/issues_001066.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n1. It should say \"Moin Moin wiki with math typesetting\".\n\n\n```\nTombo:tmp was$ sage -wiki\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the SAGE Notebook server starts...\n\n```\n\n\n2. Spam filtering should be on by default and anon access off.\nI.e., the wikiconfig file *should* look like the attached one.\n\nWilliam\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1066\n\n",
+    "body": "Assignee: @williamstein\n\n1. It should say \"Moin Moin wiki with math typesetting\".\n\n```\nTombo:tmp was$ sage -wiki\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the SAGE Notebook server starts...\n\n```\n\n2. Spam filtering should be on by default and anon access off.\nI.e., the wikiconfig file *should* look like the attached one.\n\nWilliam\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1066\n\n",
     "created_at": "2007-11-02T18:21:23Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 1. It should say "Moin Moin wiki with math typesetting".
 
-
 ```
 Tombo:tmp was$ sage -wiki
 ----------------------------------------------------------------------
@@ -30,7 +29,6 @@ Tombo:tmp was$ sage -wiki
 Please wait while the SAGE Notebook server starts...
 
 ```
-
 
 2. Spam filtering should be on by default and anon access off.
 I.e., the wikiconfig file *should* look like the attached one.

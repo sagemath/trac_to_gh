@@ -3,7 +3,7 @@
 archive/issues_002400.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
+    "body": "Assignee: @williamstein\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
     "created_at": "2008-03-06T00:44:39Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_002400.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 I tried doing some integrals today and the output doesn't make much  
@@ -41,7 +40,6 @@ What's going on here?
 
 david
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2400
@@ -133,7 +131,7 @@ This patch fails doctests on
 archive/issue_comments_016169.json:
 ```json
 {
-    "body": "The code itself is fine but symbolic matrices with keepfloat appear to be broken in Maxima.  When/if symbolic matrices do not use maxima this will be a good patch.  \n\n\n```\n    TypeError: Error executing code in Maxima\n    CODE:\n    \tsage173 : matrixexp(sage172)$\n    Maxima ERROR:\n    \t\n    `rat' replaced 1.0 by 1/1 = 1.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced 2.0 by 2/1 = 2.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 5.0 by 5/1 = 5.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -60.0 by -60/1 = -60.0\n    \n    `rat' replaced 10.0 by 10/1 = 10.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 1.0 by 1/1 = 1.0\n    Unable to find the spectral representation\n     \n```\n",
+    "body": "The code itself is fine but symbolic matrices with keepfloat appear to be broken in Maxima.  When/if symbolic matrices do not use maxima this will be a good patch.  \n\n```\n    TypeError: Error executing code in Maxima\n    CODE:\n    \tsage173 : matrixexp(sage172)$\n    Maxima ERROR:\n    \t\n    `rat' replaced 1.0 by 1/1 = 1.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced 2.0 by 2/1 = 2.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 5.0 by 5/1 = 5.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -60.0 by -60/1 = -60.0\n    \n    `rat' replaced 10.0 by 10/1 = 10.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 1.0 by 1/1 = 1.0\n    Unable to find the spectral representation\n     \n```",
     "created_at": "2008-03-10T14:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ archive/issue_comments_016169.json:
 ```
 
 The code itself is fine but symbolic matrices with keepfloat appear to be broken in Maxima.  When/if symbolic matrices do not use maxima this will be a good patch.  
-
 
 ```
     TypeError: Error executing code in Maxima
@@ -182,13 +179,12 @@ The code itself is fine but symbolic matrices with keepfloat appear to be broken
 
 
 
-
 ---
 
 archive/issue_comments_016170.json:
 ```json
 {
-    "body": "The matrixexp command seems to work fine in maxima (see below).  How do you reproduce your error?  (can you give a short sage session that gives the error above?)\n\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\n```\n",
+    "body": "The matrixexp command seems to work fine in maxima (see below).  How do you reproduce your error?  (can you give a short sage session that gives the error above?)\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\n```",
     "created_at": "2008-03-10T17:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -198,7 +194,6 @@ archive/issue_comments_016170.json:
 ```
 
 The matrixexp command seems to work fine in maxima (see below).  How do you reproduce your error?  (can you give a short sage session that gives the error above?)
-
 
 ```
 sage: maxima.interact()
@@ -225,13 +220,12 @@ matrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)
 
 
 
-
 ---
 
 archive/issue_comments_016171.json:
 ```json
 {
-    "body": "Here is a way to reproduce the above error:\n\n\n```\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    406         for i in range(len(B)):\n    407             L = B[i]\n--> 408             M = do_prefilter_paste(L, continuation or (not first))\n    409             first = False\n    410             # The L[:len(L)-len(L.lstrip())]  business here preserves\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in do_prefilter_paste(line, continuation)\n    347\n    348     if len(line) > 0:\n--> 349         line = preparser_ipython.preparse_ipython(line, not continuation)\n    350     return line\n    351\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/preparser_ipython.py in preparse_ipython(line, reset)\n    104         # TODO: do sage substitutions here\n    105         #t = interface._eval_line(line)\n--> 106         t = interface.eval(line)\n    107\n    108     import sage.misc.interpreter\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, **kwds)\n    712             raise\n    713         except TypeError, s:\n--> 714             raise TypeError, 'error evaluating \"%s\":\\n%s'%(code,s)\n    715\n    716     def execute(self, *args, **kwds):\n\n<type 'exceptions.TypeError'>: error evaluating \"matrixexp(matrix([3.0,1.0],[1.0,2.0]));\":\nError executing code in Maxima\nCODE:\n        matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nMaxima ERROR:\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\nUnable to find the spectral representation\n\n\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima:\n```\n",
+    "body": "Here is a way to reproduce the above error:\n\n```\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    406         for i in range(len(B)):\n    407             L = B[i]\n--> 408             M = do_prefilter_paste(L, continuation or (not first))\n    409             first = False\n    410             # The L[:len(L)-len(L.lstrip())]  business here preserves\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in do_prefilter_paste(line, continuation)\n    347\n    348     if len(line) > 0:\n--> 349         line = preparser_ipython.preparse_ipython(line, not continuation)\n    350     return line\n    351\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/preparser_ipython.py in preparse_ipython(line, reset)\n    104         # TODO: do sage substitutions here\n    105         #t = interface._eval_line(line)\n--> 106         t = interface.eval(line)\n    107\n    108     import sage.misc.interpreter\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, **kwds)\n    712             raise\n    713         except TypeError, s:\n--> 714             raise TypeError, 'error evaluating \"%s\":\\n%s'%(code,s)\n    715\n    716     def execute(self, *args, **kwds):\n\n<type 'exceptions.TypeError'>: error evaluating \"matrixexp(matrix([3.0,1.0],[1.0,2.0]));\":\nError executing code in Maxima\nCODE:\n        matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nMaxima ERROR:\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\nUnable to find the spectral representation\n\n\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima:\n```",
     "created_at": "2008-03-10T17:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -241,7 +235,6 @@ archive/issue_comments_016171.json:
 ```
 
 Here is a way to reproduce the above error:
-
 
 ```
 maxima: keepfloat: true
@@ -321,7 +314,6 @@ maxima:
 
 
 
-
 ---
 
 archive/issue_comments_016172.json:
@@ -345,7 +337,7 @@ This post talks about the weakness of the maxima linear algebra functionality an
 archive/issue_comments_016173.json:
 ```json
 {
-    "body": "The last post at http://www.nabble.com/matrix-exponential--td6816907.html suggests using the \"diag\" package instead of the \"linearalgebra\" package for calculating the matrix exponential.  This works with keepfloat:\n\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: load(\"diag\")\n?\\/home\\/grout\\/sage\\/local\\/share\\/maxima\\/5\\.13\\.0\\/share\\/contrib\\/diag\\.mac\nmaxima: mat_function(exp,matrix([3.0,1.0],[1.0,2.0]));\nmatrix([(sqrt(5)+1)*%e^((sqrt(5)+5)/2)/(2*sqrt(5))+(sqrt(5)-1)*%e^-((sqrt(5)-5)/2)/(2*sqrt(5)),%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5)],[%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5),2*%e^((sqrt(5)+5)/2)/(sqrt(5)*(sqrt(5)+1))+2*%e^-((sqrt(5)-5)/2)/(sqrt(5)*(sqrt(5)-1))])\n```\n",
+    "body": "The last post at http://www.nabble.com/matrix-exponential--td6816907.html suggests using the \"diag\" package instead of the \"linearalgebra\" package for calculating the matrix exponential.  This works with keepfloat:\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: load(\"diag\")\n?\\/home\\/grout\\/sage\\/local\\/share\\/maxima\\/5\\.13\\.0\\/share\\/contrib\\/diag\\.mac\nmaxima: mat_function(exp,matrix([3.0,1.0],[1.0,2.0]));\nmatrix([(sqrt(5)+1)*%e^((sqrt(5)+5)/2)/(2*sqrt(5))+(sqrt(5)-1)*%e^-((sqrt(5)-5)/2)/(2*sqrt(5)),%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5)],[%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5),2*%e^((sqrt(5)+5)/2)/(sqrt(5)*(sqrt(5)+1))+2*%e^-((sqrt(5)-5)/2)/(sqrt(5)*(sqrt(5)-1))])\n```",
     "created_at": "2008-03-10T17:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
@@ -355,7 +347,6 @@ archive/issue_comments_016173.json:
 ```
 
 The last post at http://www.nabble.com/matrix-exponential--td6816907.html suggests using the "diag" package instead of the "linearalgebra" package for calculating the matrix exponential.  This works with keepfloat:
-
 
 ```
 sage: maxima.interact()
@@ -369,7 +360,6 @@ maxima: load("diag")
 maxima: mat_function(exp,matrix([3.0,1.0],[1.0,2.0]));
 matrix([(sqrt(5)+1)*%e^((sqrt(5)+5)/2)/(2*sqrt(5))+(sqrt(5)-1)*%e^-((sqrt(5)-5)/2)/(2*sqrt(5)),%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5)],[%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5),2*%e^((sqrt(5)+5)/2)/(sqrt(5)*(sqrt(5)+1))+2*%e^-((sqrt(5)-5)/2)/(sqrt(5)*(sqrt(5)-1))])
 ```
-
 
 
 

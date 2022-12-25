@@ -3,7 +3,7 @@
 archive/issues_002754.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout mvngu\n\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout mvngu\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
     "created_at": "2008-04-01T15:59:45Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,6 @@ archive/issues_002754.json:
 Assignee: @williamstein
 
 CC:  @jasongrout mvngu
-
 
 ```
 
@@ -37,7 +36,6 @@ to workaround it sort of with:
     show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)
 but still the curve goes outside the frame.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2754
 
@@ -268,7 +266,7 @@ archive/issue_events_006388.json:
 archive/issue_comments_018884.json:
 ```json
 {
-    "body": "I can confirm this is now fixed:\n\n```\n[mvngu@darkstar sage-4.1.2.alpha4]$ ./sage -br main\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTime to execute 0 commands: 2.50339508057e-05 seconds\nFinished compiling Cython code (time = 6.12911605835 seconds)\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.919514894485 seconds.\nrunning install_lib\nrunning install_egg_info\nRemoving /home/mvngu/scratch/sandbox/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /home/mvngu/scratch/sandbox/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n```\n\nThe resulting plot is attached.",
+    "body": "I can confirm this is now fixed:\n\n```\n[mvngu@darkstar sage-4.1.2.alpha4]$ ./sage -br main\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTime to execute 0 commands: 2.50339508057e-05 seconds\nFinished compiling Cython code (time = 6.12911605835 seconds)\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.919514894485 seconds.\nrunning install_lib\nrunning install_egg_info\nRemoving /home/mvngu/scratch/sandbox/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /home/mvngu/scratch/sandbox/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n```\nThe resulting plot is attached.",
     "created_at": "2009-09-29T15:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
@@ -309,7 +307,6 @@ Writing /home/mvngu/scratch/sandbox/sage-4.1.2.alpha4/local/lib/python2.6/site-p
 **********************************************************************
 sage: show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)
 ```
-
 The resulting plot is attached.
 
 

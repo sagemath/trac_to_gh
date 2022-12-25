@@ -3,7 +3,7 @@
 archive/issues_004755.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: CremonaDatabase().number_of_curves()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/mike/.sage/temp/mike_laptop/12400/_home_mike__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/cremona.pyc in number_of_curves(self, N, i)\n    680         \"\"\"\n    681         if N == 0:\n--> 682             return self['number_of_curves']\n    683         C = self.allcurves(N)\n    684         if i == 0:\n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/cremona.pyc in __getitem__(self, N)\n    345         if isinstance(N, str) and len(N) > 0:\n    346             if N[0].isalpha():\n--> 347                 return sage.databases.db.Database.__getitem__(self, N)\n    348             else:\n    349                 return self.elliptic_curve(N)\n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/db.pyc in __getitem__(self, x)\n    258         try:\n    259             if not isinstance(x, slice):\n--> 260                 return self.root[x]\n    261             return [self[k] for k in range(x.start, x.stop, x.step)]\n    262         except AttributeError:\n\nKeyError: 'number_of_curves'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4755\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: CremonaDatabase().number_of_curves()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/mike/.sage/temp/mike_laptop/12400/_home_mike__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/cremona.pyc in number_of_curves(self, N, i)\n    680         \"\"\"\n    681         if N == 0:\n--> 682             return self['number_of_curves']\n    683         C = self.allcurves(N)\n    684         if i == 0:\n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/cremona.pyc in __getitem__(self, N)\n    345         if isinstance(N, str) and len(N) > 0:\n    346             if N[0].isalpha():\n--> 347                 return sage.databases.db.Database.__getitem__(self, N)\n    348             else:\n    349                 return self.elliptic_curve(N)\n\n/opt/sage/local/lib/python2.5/site-packages/sage/databases/db.pyc in __getitem__(self, x)\n    258         try:\n    259             if not isinstance(x, slice):\n--> 260                 return self.root[x]\n    261             return [self[k] for k in range(x.start, x.stop, x.step)]\n    262         except AttributeError:\n\nKeyError: 'number_of_curves'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4755\n\n",
     "created_at": "2008-12-11T04:27:42Z",
     "labels": [
         "component: misc",
@@ -18,7 +18,6 @@ archive/issues_004755.json:
 }
 ```
 Assignee: cwitty
-
 
 ```
 sage: CremonaDatabase().number_of_curves()
@@ -55,7 +54,6 @@ KeyError                                  Traceback (most recent call last)
 
 KeyError: 'number_of_curves'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4755
 

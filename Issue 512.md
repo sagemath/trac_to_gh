@@ -138,7 +138,7 @@ Resolution changed from fixed to
 archive/issue_comments_002582.json:
 ```json
 {
-    "body": "\n```\n\nDavid,\n\nI made some fixes to gap-4.4.9.p1.spkg  to make it suitable for inclusion in SAGE.\nUnfortunately when I did a clean build of SAGE with this gap package there were\nnumerous doctest failures in all the following packages;\n\n        sage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t  devel/sage-main/sage/coding/guava.py\n        sage -t  devel/sage-main/sage/coding/linear_code.py\n        sage -t  devel/sage-main/sage/coding/code_constructions.py\n        sage -t  devel/sage-main/sage/coding/code_bounds.py\n\nI'm reverting to the previous gap package until I figure how to get these resolved.\n\nI've put my version of gap-4.4.9.p1.spkg here:\n   http://sage.math.washington.edu/tmp\n\n -- William\n```\n",
+    "body": "```\n\nDavid,\n\nI made some fixes to gap-4.4.9.p1.spkg  to make it suitable for inclusion in SAGE.\nUnfortunately when I did a clean build of SAGE with this gap package there were\nnumerous doctest failures in all the following packages;\n\n        sage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t  devel/sage-main/sage/coding/guava.py\n        sage -t  devel/sage-main/sage/coding/linear_code.py\n        sage -t  devel/sage-main/sage/coding/code_constructions.py\n        sage -t  devel/sage-main/sage/coding/code_bounds.py\n\nI'm reverting to the previous gap package until I figure how to get these resolved.\n\nI've put my version of gap-4.4.9.p1.spkg here:\n   http://sage.math.washington.edu/tmp\n\n -- William\n```",
     "created_at": "2007-08-30T06:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
@@ -146,7 +146,6 @@ archive/issue_comments_002582.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -169,7 +168,6 @@ I've put my version of gap-4.4.9.p1.spkg here:
 
  -- William
 ```
-
 
 
 
@@ -315,7 +313,7 @@ archive/issue_events_001316.json:
 archive/issue_comments_002584.json:
 ```json
 {
-    "body": "From David Joyner\n\n```\n(1) The package\n\nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.spkg\n\ninstalls okay passes these tests. However, I added a build for Leon's code,\nwhich\n(a) was only tested on one machine,\n(b) is based on my negligable knowledge of how Makefiles/spkg install\nfiles work (so I got lucky that it seemss to have worked even on one\nmachine!).\n\nI think GAP version 4.4.10 will be officially released tomorrow.\n\n(2) This might be way too old, but I wonder if you could at least try\nto apply the patch\n\nhttp://sage.math.washington.edu/home/wdj/patches/maxima-patch-latest-really.hg\n\nwhich I think fixes some old minor bugs in the interface to special\nfunctions. (The file dates from November of last year!) I created a\nclone, viewed it using hg_sage.inspect and noticed it\nseems to only affect special functions. Then I applied the patch and ran\n\n./sage -t \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-maxima/sage/functions/special.py\"\n\n(All tests passed.) I tried to view it again (to see what else it\nmight change, in case I misssed something) but couldn't.\n\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++\n\n```\n",
+    "body": "From David Joyner\n\n```\n(1) The package\n\nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.spkg\n\ninstalls okay passes these tests. However, I added a build for Leon's code,\nwhich\n(a) was only tested on one machine,\n(b) is based on my negligable knowledge of how Makefiles/spkg install\nfiles work (so I got lucky that it seemss to have worked even on one\nmachine!).\n\nI think GAP version 4.4.10 will be officially released tomorrow.\n\n(2) This might be way too old, but I wonder if you could at least try\nto apply the patch\n\nhttp://sage.math.washington.edu/home/wdj/patches/maxima-patch-latest-really.hg\n\nwhich I think fixes some old minor bugs in the interface to special\nfunctions. (The file dates from November of last year!) I created a\nclone, viewed it using hg_sage.inspect and noticed it\nseems to only affect special functions. Then I applied the patch and ran\n\n./sage -t \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-maxima/sage/functions/special.py\"\n\n(All tests passed.) I tried to view it again (to see what else it\nmight change, in case I misssed something) but couldn't.\n\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++\n\n```",
     "created_at": "2007-10-05T03:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
@@ -359,7 +357,6 @@ might change, in case I misssed something) but couldn't.
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ```
-
 
 
 

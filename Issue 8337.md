@@ -3,7 +3,7 @@
 archive/issues_008337.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:\n\n```\nsage: var('E1, E2, E4, E5, E10, E20'); \nsage: var( 'q' ); \nsage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) \nsage: factor(t)\n```\n\ndoes not answer in reasonable time (a few seconds).\n\nMaple 13 answers in less than a second (and says the polynomial\nis irreducible).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8337\n\n",
+    "body": "Assignee: @malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:\n\n```\nsage: var('E1, E2, E4, E5, E10, E20'); \nsage: var( 'q' ); \nsage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) \nsage: factor(t)\n```\ndoes not answer in reasonable time (a few seconds).\n\nMaple 13 answers in less than a second (and says the polynomial\nis irreducible).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8337\n\n",
     "created_at": "2010-02-23T18:18:55Z",
     "labels": [
         "component: commutative algebra",
@@ -26,7 +26,6 @@ sage: var( 'q' );
 sage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) 
 sage: factor(t)
 ```
-
 does not answer in reasonable time (a few seconds).
 
 Maple 13 answers in less than a second (and says the polynomial
@@ -78,7 +77,7 @@ Changing status from new to needs_info.
 archive/issue_comments_074313.json:
 ```json
 {
-    "body": "seems to be fixed in Sage 5.11:\n\n```\nsage: %time factor(t)\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.09 s\nE2^24*E20^16*E5^8*q^4 - E1^16*E20^16*E4^8*E5^8*q^4 - E1^8*E10^24*E4^16 + E1^8*E20^8*E4^16*E5^16\n```\n\nShould I add a doctest for that? If yes, how to check the computation is fast enough?\n\nPaul",
+    "body": "seems to be fixed in Sage 5.11:\n\n```\nsage: %time factor(t)\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.09 s\nE2^24*E20^16*E5^8*q^4 - E1^16*E20^16*E4^8*E5^8*q^4 - E1^8*E10^24*E4^16 + E1^8*E20^8*E4^16*E5^16\n```\nShould I add a doctest for that? If yes, how to check the computation is fast enough?\n\nPaul",
     "created_at": "2013-08-23T15:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
@@ -95,7 +94,6 @@ CPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s
 Wall time: 0.09 s
 E2^24*E20^16*E5^8*q^4 - E1^16*E20^16*E4^8*E5^8*q^4 - E1^8*E10^24*E4^16 + E1^8*E20^8*E4^16*E5^16
 ```
-
 Should I add a doctest for that? If yes, how to check the computation is fast enough?
 
 Paul
@@ -197,7 +195,7 @@ archive/issue_events_019964.json:
 archive/issue_comments_074317.json:
 ```json
 {
-    "body": "> So the most reasonable thing to do is to close this ticket. \n\nok, fine to me.\n\nPaul",
+    "body": "> So the most reasonable thing to do is to close this ticket. \n\n\nok, fine to me.\n\nPaul",
     "created_at": "2013-08-24T08:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
@@ -207,6 +205,7 @@ archive/issue_comments_074317.json:
 ```
 
 > So the most reasonable thing to do is to close this ticket. 
+
 
 ok, fine to me.
 

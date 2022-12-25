@@ -87,7 +87,7 @@ Changing status from new to assigned.
 archive/issue_comments_043889.json:
 ```json
 {
-    "body": "I don't understand why you deleted lines 415, 416 below:\n\n```\n414\t505\t    def subscheme_complement(self, X, Y): \n415\t \t        X = self.subscheme(X) \n416\t \t        Y = self.subscheme(Y) \n```\n\n\nThe way you have the code now, it subscheme_complement has nothing at all to do with self.  Why is it even a method of self as is now.  \n\nOtherwise this patch looks very good.",
+    "body": "I don't understand why you deleted lines 415, 416 below:\n\n```\n414\t505\t    def subscheme_complement(self, X, Y): \n415\t \t        X = self.subscheme(X) \n416\t \t        Y = self.subscheme(Y) \n```\n\nThe way you have the code now, it subscheme_complement has nothing at all to do with self.  Why is it even a method of self as is now.  \n\nOtherwise this patch looks very good.",
     "created_at": "2009-03-29T17:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ I don't understand why you deleted lines 415, 416 below:
 416	 	        Y = self.subscheme(Y) 
 ```
 
-
 The way you have the code now, it subscheme_complement has nothing at all to do with self.  Why is it even a method of self as is now.  
 
 Otherwise this patch looks very good.
@@ -116,7 +115,7 @@ Otherwise this patch looks very good.
 archive/issue_comments_043890.json:
 ```json
 {
-    "body": "I had two problems with lines 415 and 416: (1) the doctest that I wrote wasn't working and (2) they aren't there in the corresponding method in `projective_space.py`.  If you look at the docstring that I wrote for `subscheme_complement` (and the doctest), you will notice that X and Y are already subschemes of self (so self is involved in a slightly hidden way).\n\nI guess that one could relax the syntax so that polynomial lists can be passed to `subscheme_complement`; in the example of the doctest this would be\n\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: A.subscheme_complement([x+y-z], [x-y+z])\n```\n\n\nIs this what you have in mind?",
+    "body": "I had two problems with lines 415 and 416: (1) the doctest that I wrote wasn't working and (2) they aren't there in the corresponding method in `projective_space.py`.  If you look at the docstring that I wrote for `subscheme_complement` (and the doctest), you will notice that X and Y are already subschemes of self (so self is involved in a slightly hidden way).\n\nI guess that one could relax the syntax so that polynomial lists can be passed to `subscheme_complement`; in the example of the doctest this would be\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: A.subscheme_complement([x+y-z], [x-y+z])\n```\n\nIs this what you have in mind?",
     "created_at": "2009-03-29T21:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -129,12 +128,10 @@ I had two problems with lines 415 and 416: (1) the doctest that I wrote wasn't w
 
 I guess that one could relax the syntax so that polynomial lists can be passed to `subscheme_complement`; in the example of the doctest this would be
 
-
 ```
 sage: A.<x, y, z> = AffineSpace(3, ZZ)
 sage: A.subscheme_complement([x+y-z], [x-y+z])
 ```
-
 
 Is this what you have in mind?
 
@@ -145,7 +142,7 @@ Is this what you have in mind?
 archive/issue_comments_043891.json:
 ```json
 {
-    "body": "> If you look at the docstring that I wrote for subscheme_complement \n> (and the doctest), you will notice that X and Y are already subschemes \n> of self (so self is involved in a slightly hidden way). \n\nCouldn't I do this:\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: [[make an X and a Y over GF(7) say that haven't nothing to do with A]]\nsage: A.subscheme_complement(X, Y)\n```\n\n\nEither subscheme_complement needs to check that X and Y are really subschemes of A, or it should just be a method of X, i.e.,\n\n```\nsage: X.complement(Y)\n```\n\nsay, which requires that X and Y live in a common ambient space.\n\n -- William",
+    "body": "> If you look at the docstring that I wrote for subscheme_complement \n> (and the doctest), you will notice that X and Y are already subschemes \n> of self (so self is involved in a slightly hidden way). \n\n\nCouldn't I do this:\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: [[make an X and a Y over GF(7) say that haven't nothing to do with A]]\nsage: A.subscheme_complement(X, Y)\n```\n\nEither subscheme_complement needs to check that X and Y are really subschemes of A, or it should just be a method of X, i.e.,\n\n```\nsage: X.complement(Y)\n```\nsay, which requires that X and Y live in a common ambient space.\n\n -- William",
     "created_at": "2009-03-30T00:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -158,6 +155,7 @@ archive/issue_comments_043891.json:
 > (and the doctest), you will notice that X and Y are already subschemes 
 > of self (so self is involved in a slightly hidden way). 
 
+
 Couldn't I do this:
 
 ```
@@ -166,13 +164,11 @@ sage: [[make an X and a Y over GF(7) say that haven't nothing to do with A]]
 sage: A.subscheme_complement(X, Y)
 ```
 
-
 Either subscheme_complement needs to check that X and Y are really subschemes of A, or it should just be a method of X, i.e.,
 
 ```
 sage: X.complement(Y)
 ```
-
 say, which requires that X and Y live in a common ambient space.
 
  -- William
@@ -220,7 +216,7 @@ Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/tra
 archive/issue_comments_043894.json:
 ```json
 {
-    "body": "Can you rebase it?  Or does it depends on something?  I can't apply it:\n\n```\nteragon:build wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch\nLoading: [..]\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg import   \"/Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\"\napplying /Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\npatching file sage/schemes/generic/affine_space.py\nHunk #4 FAILED at 208\nHunk #5 succeeded at 243 with fuzz 2 (offset 0 lines).\nHunk #6 FAILED at 264\n2 out of 8 hunks FAILED -- saving rejects to file sage/schemes/generic/affine_space.py.rej\nabort: patch failed to apply\nsage: \n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "Can you rebase it?  Or does it depends on something?  I can't apply it:\n\n```\nteragon:build wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch\nLoading: [..]\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg import   \"/Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\"\napplying /Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\npatching file sage/schemes/generic/affine_space.py\nHunk #4 FAILED at 208\nHunk #5 succeeded at 243 with fuzz 2 (offset 0 lines).\nHunk #6 FAILED at 264\n2 out of 8 hunks FAILED -- saving rejects to file sage/schemes/generic/affine_space.py.rej\nabort: patch failed to apply\nsage: \n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n```",
     "created_at": "2009-04-10T05:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
@@ -253,7 +249,6 @@ sage:
 | Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 
 

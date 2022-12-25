@@ -51,7 +51,7 @@ Attachment [gamma.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.p
 archive/issue_comments_053988.json:
 ```json
 {
-    "body": "The code loooked (though I would have written p**(3*e-2)*(p*p-1) ) but after applying to 4.1:\n\n```\nsage: Gamma(19).index()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/25083/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-4.1/local/lib/python2.6/site-packages/sage/modular/arithgroup/congroup_gamma.pyc in index(self)\n    105             32893086819240\n    106         \"\"\"\n--> 107         return prod([p**(3*e) - p**(3*e-2) for (p,e) in self.level().factor()])\n    108 \n```\n\n\nLooks like someone forgot to run sage -t before submitting the patch...",
+    "body": "The code loooked (though I would have written p**(3*e-2)*(p*p-1) ) but after applying to 4.1:\n\n```\nsage: Gamma(19).index()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/25083/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-4.1/local/lib/python2.6/site-packages/sage/modular/arithgroup/congroup_gamma.pyc in index(self)\n    105             32893086819240\n    106         \"\"\"\n--> 107         return prod([p**(3*e) - p**(3*e-2) for (p,e) in self.level().factor()])\n    108 \n```\n\nLooks like someone forgot to run sage -t before submitting the patch...",
     "created_at": "2009-07-24T20:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ NameError                                 Traceback (most recent call last)
 --> 107         return prod([p**(3*e) - p**(3*e-2) for (p,e) in self.level().factor()])
     108 
 ```
-
 
 Looks like someone forgot to run sage -t before submitting the patch...
 

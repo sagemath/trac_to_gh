@@ -3,7 +3,7 @@
 archive/issues_005379.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn the live version of the tutorial, I'm seeing some problems. The static version seems to be fine.\n\n1.  In tour_assignment.rst, in the lines\n\n```\n    sage: a = 5   # a is an integer\n    sage: type(a)\n    <type 'sage.rings.integer.Integer'>\n    sage: a = 5/3  # now a is a rational number\n    sage: type(a)\n    <type 'sage.rings.rational.Rational'>\n    sage: a = 'hello'  # now a is a string\n    sage: type(a)\n    <type 'str'>\n```\n\nthe `<` and `>` signs turn into literal \"&lt;\" and \"&gt;\"\n\n2. In tour_assignment.rst, in the lines \n\n```\n    sage: n.str(8)   # string representation of n in base 8\n    '11'\n```\n\nthe quotes come out wrong.\n\n3. In introduction.rst, the whitespace in the following lines comes out wrong:\n\n```\n    sage: k = 1/(sqrt(3)*I + 3/4 + sqrt(73)*5/9); print k\n                                           1\n                              ---------------------------\n                                           5 sqrt(73)   3\n                              sqrt(3)  I + ---------- + -\n                                               9        4\n```\n\n\n4. In tour_algebra.rst, the math part of the lines\n\n```\nis modeled by the system of 2nd order differential equations\n\n.. math::\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n```\n\nis completely missing.  Same thing seems to happen for any text marked as \".. math::\"\n\n5. In tour_algebra.rst, in the lines\n\n```\nREFERENCES: Nagle, Saff, Snider, Fundamentals of Differential\nEquations, 6th ed, Addison-Wesley, 2004. (see \u00a7 5.5).\n```\n\nan extra symbol appears before the section `\u00a7` symbol.\n\n6. in tour_polynomial.rst, in the lines\n\n```\n.. [Si] G.-M. Greuel, G. Pfister, and H. Sch\u00f6nemann. \n        ``Singular`` 3.0. A Computer Algebra System for Polynomial\n        Computations. Center for Computer Algebra, University of\n        Kaiserslautern (2005). http://www.singular.uni-kl.de .\n```\n\nthe o with an umlaut `\u00f6` doesn't come out well.\n\n7. in tour_groups.rst,\n\n```\n    sage: G._gap_init_()\n    'Sp(4, 7)'\n```\n\nthe quotes are mistreated.\n\nI haven't done a careful reading; those are just the things I've spotted.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5379\n\n",
+    "body": "Assignee: tba\n\nIn the live version of the tutorial, I'm seeing some problems. The static version seems to be fine.\n\n1.  In tour_assignment.rst, in the lines\n\n```\n    sage: a = 5   # a is an integer\n    sage: type(a)\n    <type 'sage.rings.integer.Integer'>\n    sage: a = 5/3  # now a is a rational number\n    sage: type(a)\n    <type 'sage.rings.rational.Rational'>\n    sage: a = 'hello'  # now a is a string\n    sage: type(a)\n    <type 'str'>\n```\nthe `<` and `>` signs turn into literal \"&lt;\" and \"&gt;\"\n\n2. In tour_assignment.rst, in the lines \n\n```\n    sage: n.str(8)   # string representation of n in base 8\n    '11'\n```\nthe quotes come out wrong.\n\n3. In introduction.rst, the whitespace in the following lines comes out wrong:\n\n```\n    sage: k = 1/(sqrt(3)*I + 3/4 + sqrt(73)*5/9); print k\n                                           1\n                              ---------------------------\n                                           5 sqrt(73)   3\n                              sqrt(3)  I + ---------- + -\n                                               9        4\n```\n\n4. In tour_algebra.rst, the math part of the lines\n\n```\nis modeled by the system of 2nd order differential equations\n\n.. math::\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n```\nis completely missing.  Same thing seems to happen for any text marked as \".. math::\"\n\n5. In tour_algebra.rst, in the lines\n\n```\nREFERENCES: Nagle, Saff, Snider, Fundamentals of Differential\nEquations, 6th ed, Addison-Wesley, 2004. (see \u00a7 5.5).\n```\nan extra symbol appears before the section `\u00a7` symbol.\n\n6. in tour_polynomial.rst, in the lines\n\n```\n.. [Si] G.-M. Greuel, G. Pfister, and H. Sch\u00f6nemann. \n        ``Singular`` 3.0. A Computer Algebra System for Polynomial\n        Computations. Center for Computer Algebra, University of\n        Kaiserslautern (2005). http://www.singular.uni-kl.de .\n```\nthe o with an umlaut `\u00f6` doesn't come out well.\n\n7. in tour_groups.rst,\n\n```\n    sage: G._gap_init_()\n    'Sp(4, 7)'\n```\nthe quotes are mistreated.\n\nI haven't done a careful reading; those are just the things I've spotted.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5379\n\n",
     "created_at": "2009-02-26T03:09:20Z",
     "labels": [
         "component: documentation",
@@ -33,7 +33,6 @@ In the live version of the tutorial, I'm seeing some problems. The static versio
     sage: type(a)
     <type 'str'>
 ```
-
 the `<` and `>` signs turn into literal "&lt;" and "&gt;"
 
 2. In tour_assignment.rst, in the lines 
@@ -42,7 +41,6 @@ the `<` and `>` signs turn into literal "&lt;" and "&gt;"
     sage: n.str(8)   # string representation of n in base 8
     '11'
 ```
-
 the quotes come out wrong.
 
 3. In introduction.rst, the whitespace in the following lines comes out wrong:
@@ -56,7 +54,6 @@ the quotes come out wrong.
                                                9        4
 ```
 
-
 4. In tour_algebra.rst, the math part of the lines
 
 ```
@@ -66,7 +63,6 @@ is modeled by the system of 2nd order differential equations
     m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0
     m_2 x_2''+ k_2 (x_2-x_1) = 0,
 ```
-
 is completely missing.  Same thing seems to happen for any text marked as ".. math::"
 
 5. In tour_algebra.rst, in the lines
@@ -75,7 +71,6 @@ is completely missing.  Same thing seems to happen for any text marked as ".. ma
 REFERENCES: Nagle, Saff, Snider, Fundamentals of Differential
 Equations, 6th ed, Addison-Wesley, 2004. (see § 5.5).
 ```
-
 an extra symbol appears before the section `§` symbol.
 
 6. in tour_polynomial.rst, in the lines
@@ -86,7 +81,6 @@ an extra symbol appears before the section `§` symbol.
         Computations. Center for Computer Algebra, University of
         Kaiserslautern (2005). http://www.singular.uni-kl.de .
 ```
-
 the o with an umlaut `ö` doesn't come out well.
 
 7. in tour_groups.rst,
@@ -95,7 +89,6 @@ the o with an umlaut `ö` doesn't come out well.
     sage: G._gap_init_()
     'Sp(4, 7)'
 ```
-
 the quotes are mistreated.
 
 I haven't done a careful reading; those are just the things I've spotted.

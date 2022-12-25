@@ -193,7 +193,7 @@ doctests need to be added to the functions.
 archive/issue_comments_045445.json:
 ```json
 {
-    "body": "Timings:\n\n\n```\nsage: a=Bitset([3*i for i in range(100)])\nsage: b=Bitset([4*i for i in range(100)])\nsage: d=set([4*i for i in range(100)])\nsage: c=set([3*i for i in range(100)])\nsage: %timeit a|b\n1000000 loops, best of 3: 1.55 \u00b5s per loop\nsage: %timeit c|d\n100000 loops, best of 3: 17.6 \u00b5s per loop\nsage: %timeit a-b\n100000 loops, best of 3: 1.53 \u00b5s per loop\nsage: %timeit c-d\n100000 loops, best of 3: 10.4 \u00b5s per loop\n```\n\n\nSo I guess we have a pretty good data structure.  And this is even accessing it with python!",
+    "body": "Timings:\n\n```\nsage: a=Bitset([3*i for i in range(100)])\nsage: b=Bitset([4*i for i in range(100)])\nsage: d=set([4*i for i in range(100)])\nsage: c=set([3*i for i in range(100)])\nsage: %timeit a|b\n1000000 loops, best of 3: 1.55 \u00b5s per loop\nsage: %timeit c|d\n100000 loops, best of 3: 17.6 \u00b5s per loop\nsage: %timeit a-b\n100000 loops, best of 3: 1.53 \u00b5s per loop\nsage: %timeit c-d\n100000 loops, best of 3: 10.4 \u00b5s per loop\n```\n\nSo I guess we have a pretty good data structure.  And this is even accessing it with python!",
     "created_at": "2009-10-16T11:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
@@ -203,7 +203,6 @@ archive/issue_comments_045445.json:
 ```
 
 Timings:
-
 
 ```
 sage: a=Bitset([3*i for i in range(100)])
@@ -219,7 +218,6 @@ sage: %timeit a-b
 sage: %timeit c-d
 100000 loops, best of 3: 10.4 µs per loop
 ```
-
 
 So I guess we have a pretty good data structure.  And this is even accessing it with python!
 

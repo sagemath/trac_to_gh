@@ -3,7 +3,7 @@
 archive/issues_006528.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI noticed a couple of issues with polybori-0.5rc.p8 on Solaris.\n\nNote how on the first line, polybori uses the GNU C compiler gcc to \ncompile a C file, but passes an unreconised option '-KPIC'. (That option would be acceptable to the Sun compiler).\n\nThen on the very next line, it calls the Sun C++ compiler 'CC' to \ncompile a .cc file! It sure gets in a mess!\n\n\n```\n\ngcc -o Cudd/epd/so_epd.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g \n-fPIC -KPIC -DNDEBUG -DPACKED -DHAVE_M4RI -DHAVE_IEEE_754 -DBSD \n-I/rootpool2/local/kirkby/sage-4.1.rc1/spkg/build/polybori-0.5rc.p8/src/boost_1_34_1.cropped \n-I/rootpool2/local/kirkby/sage-4.1.rc1/local/include/python2.6 \n-Ipolybori/include -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr \n-ICudd/st -ICudd/epd Cudd/epd/epd.c\ngcc: unrecognized option '-KPIC'\n/opt/SUNWspro/bin/CC -o polybori/src/so_BoolePolyRing.o -c -O3 \n-Wno-long-long -Wreturn-type -g -fPIC -ftemplate-depth-100 -g -fPIC \n-KPIC -O3 -Wno-long-long -Wreturn-type -g -fPIC -KPIC -DNDEBUG -DPACKED \n-DHAVE_M4RI -DHAVE_IEEE_754 -DBSD \n-I/rootpool2/local/kirkby/sage-4.1.rc1/spkg/build/polybori-0.5rc.p8/src/boost_1_34_1.cropped \n-I/rootpool2/local/kirkby/sage-4.1.rc1/local/include/python2.6 \n-Ipolybori/include -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr \n-ICudd/st -ICudd/epd polybori/src/BoolePolyRing.cc\n\n```\n\n\nWhen I type\n\n\n\n```\n$ ./sage -sh\n$ env\n\n```\n\n\nI see:\n\n\n\n```\nSAGE_ROOT=/rootpool2/local/kirkby/sage-4.1.rc1\nPYTHONHOME=/rootpool2/local/kirkby/sage-4.1.rc1/local\nSAGE_PACKAGES=/rootpool2/local/kirkby/sage-4.1.rc1/spkg\nCP=cp\nLN=ln\nCXX=g++\n```\n\n\n\nSo given CXX is defined as g++, \n\nIt has been pointed out to me that this ticket, with the title \"Some packages don't respect the CC environment variable\" \t\n\nhttp://sagetrac.org/sage_trac/ticket/2999\n\nnoticed similar issues with a number of packages ignoring CC and CXX and had patch for polybori, but it was never integrated. Integration is very simple. \n\nAnother issue with PolyBoRi is that it assumes the GNU linker - see my fix at \n\nhttp://sagetrac.org/sage_trac/ticket/6437\n\nBut there is a ticket related to updating PolyBoRi to the latest upstream version too. \n\nhttp://sagetrac.org/sage_trac/ticket/6177\n\nso I'll wait until I know what happening before applying patches against an old version of polybori which might be a waste of my time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6528\n\n",
+    "body": "Assignee: tbd\n\nI noticed a couple of issues with polybori-0.5rc.p8 on Solaris.\n\nNote how on the first line, polybori uses the GNU C compiler gcc to \ncompile a C file, but passes an unreconised option '-KPIC'. (That option would be acceptable to the Sun compiler).\n\nThen on the very next line, it calls the Sun C++ compiler 'CC' to \ncompile a .cc file! It sure gets in a mess!\n\n```\n\ngcc -o Cudd/epd/so_epd.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g \n-fPIC -KPIC -DNDEBUG -DPACKED -DHAVE_M4RI -DHAVE_IEEE_754 -DBSD \n-I/rootpool2/local/kirkby/sage-4.1.rc1/spkg/build/polybori-0.5rc.p8/src/boost_1_34_1.cropped \n-I/rootpool2/local/kirkby/sage-4.1.rc1/local/include/python2.6 \n-Ipolybori/include -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr \n-ICudd/st -ICudd/epd Cudd/epd/epd.c\ngcc: unrecognized option '-KPIC'\n/opt/SUNWspro/bin/CC -o polybori/src/so_BoolePolyRing.o -c -O3 \n-Wno-long-long -Wreturn-type -g -fPIC -ftemplate-depth-100 -g -fPIC \n-KPIC -O3 -Wno-long-long -Wreturn-type -g -fPIC -KPIC -DNDEBUG -DPACKED \n-DHAVE_M4RI -DHAVE_IEEE_754 -DBSD \n-I/rootpool2/local/kirkby/sage-4.1.rc1/spkg/build/polybori-0.5rc.p8/src/boost_1_34_1.cropped \n-I/rootpool2/local/kirkby/sage-4.1.rc1/local/include/python2.6 \n-Ipolybori/include -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr \n-ICudd/st -ICudd/epd polybori/src/BoolePolyRing.cc\n\n```\n\nWhen I type\n\n\n```\n$ ./sage -sh\n$ env\n\n```\n\nI see:\n\n\n```\nSAGE_ROOT=/rootpool2/local/kirkby/sage-4.1.rc1\nPYTHONHOME=/rootpool2/local/kirkby/sage-4.1.rc1/local\nSAGE_PACKAGES=/rootpool2/local/kirkby/sage-4.1.rc1/spkg\nCP=cp\nLN=ln\nCXX=g++\n```\n\n\nSo given CXX is defined as g++, \n\nIt has been pointed out to me that this ticket, with the title \"Some packages don't respect the CC environment variable\" \t\n\nhttp://sagetrac.org/sage_trac/ticket/2999\n\nnoticed similar issues with a number of packages ignoring CC and CXX and had patch for polybori, but it was never integrated. Integration is very simple. \n\nAnother issue with PolyBoRi is that it assumes the GNU linker - see my fix at \n\nhttp://sagetrac.org/sage_trac/ticket/6437\n\nBut there is a ticket related to updating PolyBoRi to the latest upstream version too. \n\nhttp://sagetrac.org/sage_trac/ticket/6177\n\nso I'll wait until I know what happening before applying patches against an old version of polybori which might be a waste of my time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6528\n\n",
     "created_at": "2009-07-14T01:08:18Z",
     "labels": [
         "component: porting: solaris",
@@ -26,7 +26,6 @@ compile a C file, but passes an unreconised option '-KPIC'. (That option would b
 Then on the very next line, it calls the Sun C++ compiler 'CC' to 
 compile a .cc file! It sure gets in a mess!
 
-
 ```
 
 gcc -o Cudd/epd/so_epd.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g 
@@ -47,9 +46,7 @@ gcc: unrecognized option '-KPIC'
 
 ```
 
-
 When I type
-
 
 
 ```
@@ -58,9 +55,7 @@ $ env
 
 ```
 
-
 I see:
-
 
 
 ```
@@ -71,7 +66,6 @@ CP=cp
 LN=ln
 CXX=g++
 ```
-
 
 
 So given CXX is defined as g++, 

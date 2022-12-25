@@ -144,7 +144,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072228.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> The patch should apply cleanly to SageNB 0.7.4 (cf. #8051), which will be part of Sage 4.3.2.  But it may also work with SageNB 0.6.\n\nI've tested this on 4.3.1 with SageNB 0.7.4 (cf. #8051).  It behaves as expected with patch applied (and behavior reverts when I pop it off).  This is a big help with rendering my textbook-conversion experiments.  Thanks for the help.\n\nPositive review.\n\nRob",
+    "body": "Replying to [comment:2 mpatel]:\n> The patch should apply cleanly to SageNB 0.7.4 (cf. #8051), which will be part of Sage 4.3.2.  But it may also work with SageNB 0.6.\n\n\nI've tested this on 4.3.1 with SageNB 0.7.4 (cf. #8051).  It behaves as expected with patch applied (and behavior reverts when I pop it off).  This is a big help with rendering my textbook-conversion experiments.  Thanks for the help.\n\nPositive review.\n\nRob",
     "created_at": "2010-02-07T04:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ archive/issue_comments_072228.json:
 
 Replying to [comment:2 mpatel]:
 > The patch should apply cleanly to SageNB 0.7.4 (cf. #8051), which will be part of Sage 4.3.2.  But it may also work with SageNB 0.6.
+
 
 I've tested this on 4.3.1 with SageNB 0.7.4 (cf. #8051).  It behaves as expected with patch applied (and behavior reverts when I pop it off).  This is a big help with rendering my textbook-conversion experiments.  Thanks for the help.
 

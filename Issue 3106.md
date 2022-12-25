@@ -3,7 +3,7 @@
 archive/issues_003106.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom sage-devel:\n\n\n```\n>  >>  is it possible to export the plots created by plot3d and\n> >  >>  parametric_plot3d to (say) postcript or png or whatever?\n> >  >>\n> >  >\n> >  > The easy options I know of right now:\n> >  >\n> >  > (1) Take a screen shot.\n> >  >\n> >  > (2) Use the option viewer='tachyon' to generate a\n> >  > png instead of an interactive dynamic 3d plot.  Then just save\n> >  > the png to a file.\n> >  >\n> >  > Someday there should be a 3rd option to directly export\n> >  > what jmol produces, but I don't know how to do it.\n> >  > I personally always do (1), since taking screen shots in\n> >  > OS X is so incredibly easy.   I think it is also easy\n> >  > in Linux with say GIMP.\n> >\n> >\n> >  Here are two solutions for getting images from JMOL.  One (easy)\n> >  solution is using the JMOL application (i.e., from the sage command\n> >  line); the other is using the applet and requires a bit more work.  We\n> >  could probably make the applet version a link under the image in the\n> >  notebook.\n> >\n> >  http://wiki.jmol.org/index.php/File_formats#Images\n> >\n> >  Jason\n> >\n\nI think we certainly need to implement the second method.  It's been\nrequested a _lot_.  Could you make a trac ticket for this?\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3106\n\n",
+    "body": "Assignee: boothby\n\nFrom sage-devel:\n\n```\n>  >>  is it possible to export the plots created by plot3d and\n> >  >>  parametric_plot3d to (say) postcript or png or whatever?\n> >  >>\n> >  >\n> >  > The easy options I know of right now:\n> >  >\n> >  > (1) Take a screen shot.\n> >  >\n> >  > (2) Use the option viewer='tachyon' to generate a\n> >  > png instead of an interactive dynamic 3d plot.  Then just save\n> >  > the png to a file.\n> >  >\n> >  > Someday there should be a 3rd option to directly export\n> >  > what jmol produces, but I don't know how to do it.\n> >  > I personally always do (1), since taking screen shots in\n> >  > OS X is so incredibly easy.   I think it is also easy\n> >  > in Linux with say GIMP.\n> >\n> >\n> >  Here are two solutions for getting images from JMOL.  One (easy)\n> >  solution is using the JMOL application (i.e., from the sage command\n> >  line); the other is using the applet and requires a bit more work.  We\n> >  could probably make the applet version a link under the image in the\n> >  notebook.\n> >\n> >  http://wiki.jmol.org/index.php/File_formats#Images\n> >\n> >  Jason\n> >\n\nI think we certainly need to implement the second method.  It's been\nrequested a _lot_.  Could you make a trac ticket for this?\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3106\n\n",
     "created_at": "2008-05-05T16:56:10Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_003106.json:
 Assignee: boothby
 
 From sage-devel:
-
 
 ```
 >  >>  is it possible to export the plots created by plot3d and
@@ -57,7 +56,6 @@ requested a _lot_.  Could you make a trac ticket for this?
 
  -- William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3106
 

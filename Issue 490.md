@@ -3,7 +3,7 @@
 archive/issues_000490.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\n\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
+    "body": "Assignee: @williamstein\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
     "created_at": "2007-08-25T23:13:13Z",
     "labels": [
         "component: packages: standard",
@@ -29,7 +29,6 @@ g++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp
 In file included from gcc-test.cpp:1:
 ../../../../local/include/gmp.h:515: error: ‘std::FILE’ has not been declared
 ```
-
 Uncommenting "std::FILE" fixes the problem.
 
 ```
@@ -38,7 +37,6 @@ extern "C" {
 //using std::FILE;
 #endif
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/490
 
@@ -87,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_002439.json:
 ```json
 {
-    "body": "Another suggestion for a fix has been made by Patrick Pelissier:\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n#ifdef _GMP_H_HAVE_FILE\nusing std::FILE;\n#endif\n#endif\n```\n\nI am waiting up what the gmp gods will decide an report back",
+    "body": "Another suggestion for a fix has been made by Patrick Pelissier:\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n#ifdef _GMP_H_HAVE_FILE\nusing std::FILE;\n#endif\n#endif\n```\nI am waiting up what the gmp gods will decide an report back",
     "created_at": "2007-08-26T12:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/490",
     "type": "issue_comment",
@@ -106,7 +104,6 @@ using std::FILE;
 #endif
 #endif
 ```
-
 I am waiting up what the gmp gods will decide an report back
 
 

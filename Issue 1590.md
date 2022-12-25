@@ -3,7 +3,7 @@
 archive/issues_001590.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n> On Dec 18, 12:51pm, pgdoyle <> wrote:\n> > Changes to my Sage notebooks are not always getting saved. I'm\n> > running Sage 2.9 from Firefox 2.0.0.11 on Mac OS 10.4.11 on a PowerMac\n> > G5.\n> \n> I've tried this now on with Safari instead of Firefox, and on a Linux\n> box instead of the Mac.  And it appears to me that in every case,\n> changes to any cell that doesn't get evaluated just get discarded when\n> you `Save & close'.  Now, I would think that this could be fixed,\n> because after all the notebook knows how to `Evaluate All', which must\n> require it to inform itself about all edits that have been done to\n> cells in the worksheet.  But, if for some reason this can't be fixed,\n> then I think users ought to be warned, because I don't think it will\n> be clear (it certainly wasn't to me) that unless you are careful to\n> evaluate any cell you change or any new cell you enter, you'll lose\n> your work.\n\nThe current behavior is not a bug and is exactly the way we designed\nit to work.  That said, I *do* want to change the implementation\nso that any time a cell is changed and the cursor leaves the cell\nor \"save & close\" is clicked, the changed version is sent back to the\nserver.  I think Tom Boothby has argued against this,\nwhich is why it hasn't happened already.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1590\n\n",
+    "body": "Assignee: boothby\n\n```\n> On Dec 18, 12:51pm, pgdoyle <> wrote:\n> > Changes to my Sage notebooks are not always getting saved. I'm\n> > running Sage 2.9 from Firefox 2.0.0.11 on Mac OS 10.4.11 on a PowerMac\n> > G5.\n> \n> I've tried this now on with Safari instead of Firefox, and on a Linux\n> box instead of the Mac.  And it appears to me that in every case,\n> changes to any cell that doesn't get evaluated just get discarded when\n> you `Save & close'.  Now, I would think that this could be fixed,\n> because after all the notebook knows how to `Evaluate All', which must\n> require it to inform itself about all edits that have been done to\n> cells in the worksheet.  But, if for some reason this can't be fixed,\n> then I think users ought to be warned, because I don't think it will\n> be clear (it certainly wasn't to me) that unless you are careful to\n> evaluate any cell you change or any new cell you enter, you'll lose\n> your work.\n\nThe current behavior is not a bug and is exactly the way we designed\nit to work.  That said, I *do* want to change the implementation\nso that any time a cell is changed and the cursor leaves the cell\nor \"save & close\" is clicked, the changed version is sent back to the\nserver.  I think Tom Boothby has argued against this,\nwhich is why it hasn't happened already.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1590\n\n",
     "created_at": "2007-12-23T07:09:35Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_001590.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 > On Dec 18, 12:51pm, pgdoyle <> wrote:
@@ -44,7 +43,6 @@ or "save & close" is clicked, the changed version is sent back to the
 server.  I think Tom Boothby has argued against this,
 which is why it hasn't happened already.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1590
 
@@ -110,7 +108,7 @@ This one slipped through the cracks...
 archive/issue_comments_010097.json:
 ```json
 {
-    "body": "REVIEW:\n\n1. It works!\n\n2. This line is lame:\n\n```\n       if ctx.args.has_key('save_only'): \n```\n\ninstead you should test that the save_only key is there *and* equal to '1'. \nSince it would be very reasonable to write query code someday with save_only=0,\nand it would be mysteriously buggy. \n\n3. When 2 is fixed I recommend this for inclusion in Sage.",
+    "body": "REVIEW:\n\n1. It works!\n\n2. This line is lame:\n\n```\n       if ctx.args.has_key('save_only'): \n```\ninstead you should test that the save_only key is there *and* equal to '1'. \nSince it would be very reasonable to write query code someday with save_only=0,\nand it would be mysteriously buggy. \n\n3. When 2 is fixed I recommend this for inclusion in Sage.",
     "created_at": "2008-03-16T20:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1590",
     "type": "issue_comment",
@@ -128,7 +126,6 @@ REVIEW:
 ```
        if ctx.args.has_key('save_only'): 
 ```
-
 instead you should test that the save_only key is there *and* equal to '1'. 
 Since it would be very reasonable to write query code someday with save_only=0,
 and it would be mysteriously buggy. 

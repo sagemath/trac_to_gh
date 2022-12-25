@@ -61,7 +61,7 @@ Is that an official deprecation policy now?  (I think it's a great idea.)  Is th
 archive/issue_comments_036958.json:
 ```json
 {
-    "body": "> Is that an official deprecation policy now? (I think it's a great idea.)\n\nYes. \n\n> Is that deprecation policy documented somewhere? If not, it should be. \n\nI think it was only documented in sage-devel.  It would be good add more documentation if I'm wrong.",
+    "body": "> Is that an official deprecation policy now? (I think it's a great idea.)\n\n\nYes. \n\n> Is that deprecation policy documented somewhere? If not, it should be. \n\n\nI think it was only documented in sage-devel.  It would be good add more documentation if I'm wrong.",
     "created_at": "2008-12-30T01:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -72,9 +72,11 @@ archive/issue_comments_036958.json:
 
 > Is that an official deprecation policy now? (I think it's a great idea.)
 
+
 Yes. 
 
 > Is that deprecation policy documented somewhere? If not, it should be. 
+
 
 I think it was only documented in sage-devel.  It would be good add more documentation if I'm wrong.
 
@@ -129,7 +131,7 @@ Michael
 archive/issue_comments_036961.json:
 ```json
 {
-    "body": "> I thought this was high priority to get in? I have been waiting to see something \n> happening here, otherwise this will get bumped. \n\nThanks for the reminder.  This is high priority.",
+    "body": "> I thought this was high priority to get in? I have been waiting to see something \n> happening here, otherwise this will get bumped. \n\n\nThanks for the reminder.  This is high priority.",
     "created_at": "2008-12-30T23:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -141,6 +143,7 @@ archive/issue_comments_036961.json:
 > I thought this was high priority to get in? I have been waiting to see something 
 > happening here, otherwise this will get bumped. 
 
+
 Thanks for the reminder.  This is high priority.
 
 
@@ -150,7 +153,7 @@ Thanks for the reminder.  This is high priority.
 archive/issue_comments_036962.json:
 ```json
 {
-    "body": "I'm doctesting the old plot.py and finding what was broke by the refactoring. \n\n1. Lots of xmin/xmax, etc.  That's known.\n\n2. The API of text changed:\n\n```\n    sage: text(\"Sage is really neat!!\",(2,12,1))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/build/sage-3.2.3.alpha0/local/lib/python2.5/site-packages/sage/plot/text.py\", line 79, in text\n        def text(string, (x,y), **options):\n    ValueError: too many values to unpack\n```\n\n\nInstead of ValueError, it might be better to be\n\n```\nValueError: too many values to unpack (try using text3d)\n```\n\nat least when 3 coordinates are given.  This will help with people transition code that uses the old text command. \n\nThis example used to work fine before the refactoring, but #4535 broke it:\n\n```\nE = EllipticCurve('37a')\nP = E(0,0)\ndef get_points(n): return sum([point(i*P, pointsize=3) for i in range(-n,n) if i != 0 and (i*P)[0] < 3])\nsum([get_points(15*n).plot3d(z=n) for n in range(1,10)])\n```\n\n\nit fails with this error:\n\n\n```\n        self.loc = (float(center[0]), float(center[1]), float(center[2]))\n      File \"rational.pyx\", line 1112, in sage.rings.rational.Rational.__getitem__ (sage/rings/rational.c:8532)\n    IndexError: index n (=1) out of range; it must be 0\n```\n\n\nEverything else is harmless as far as I can tell.",
+    "body": "I'm doctesting the old plot.py and finding what was broke by the refactoring. \n\n1. Lots of xmin/xmax, etc.  That's known.\n\n2. The API of text changed:\n\n```\n    sage: text(\"Sage is really neat!!\",(2,12,1))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/build/sage-3.2.3.alpha0/local/lib/python2.5/site-packages/sage/plot/text.py\", line 79, in text\n        def text(string, (x,y), **options):\n    ValueError: too many values to unpack\n```\n\nInstead of ValueError, it might be better to be\n\n```\nValueError: too many values to unpack (try using text3d)\n```\nat least when 3 coordinates are given.  This will help with people transition code that uses the old text command. \n\nThis example used to work fine before the refactoring, but #4535 broke it:\n\n```\nE = EllipticCurve('37a')\nP = E(0,0)\ndef get_points(n): return sum([point(i*P, pointsize=3) for i in range(-n,n) if i != 0 and (i*P)[0] < 3])\nsum([get_points(15*n).plot3d(z=n) for n in range(1,10)])\n```\n\nit fails with this error:\n\n```\n        self.loc = (float(center[0]), float(center[1]), float(center[2]))\n      File \"rational.pyx\", line 1112, in sage.rings.rational.Rational.__getitem__ (sage/rings/rational.c:8532)\n    IndexError: index n (=1) out of range; it must be 0\n```\n\nEverything else is harmless as far as I can tell.",
     "created_at": "2008-12-31T00:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -174,13 +177,11 @@ Exception raised:
     ValueError: too many values to unpack
 ```
 
-
 Instead of ValueError, it might be better to be
 
 ```
 ValueError: too many values to unpack (try using text3d)
 ```
-
 at least when 3 coordinates are given.  This will help with people transition code that uses the old text command. 
 
 This example used to work fine before the refactoring, but #4535 broke it:
@@ -192,16 +193,13 @@ def get_points(n): return sum([point(i*P, pointsize=3) for i in range(-n,n) if i
 sum([get_points(15*n).plot3d(z=n) for n in range(1,10)])
 ```
 
-
 it fails with this error:
-
 
 ```
         self.loc = (float(center[0]), float(center[1]), float(center[2]))
       File "rational.pyx", line 1112, in sage.rings.rational.Rational.__getitem__ (sage/rings/rational.c:8532)
     IndexError: index n (=1) out of range; it must be 0
 ```
-
 
 Everything else is harmless as far as I can tell.
 
@@ -250,7 +248,7 @@ I posted a new patch which makes it so that get_minmax_data is *not* cached.  Ha
 archive/issue_comments_036965.json:
 ```json
 {
-    "body": "The idea is good.  I don't like that you replaced:\n\n```\n>  WARNING: The returned dictionary is mutable, but changing it does \n>  not change the xmin/xmax/ymin/ymax data.  To change that, call \n>   the methods xmin, xmax, ymin, and ymax.  \n```\n\nby \n\n```\n> Note that this is recomputed every time the function is called. \n```\n\n\nThe first is very clear and explicit, but of course not right anymore.  The second implicitly suggests what the first said.  The WARNING would be a good place to make it clear that it doesn't make sense to change the minmax data, since it's a function of the actual points in the objects.  And there one could point to the other relevant functions for setting the axes ranges.",
+    "body": "The idea is good.  I don't like that you replaced:\n\n```\n>  WARNING: The returned dictionary is mutable, but changing it does \n>  not change the xmin/xmax/ymin/ymax data.  To change that, call \n>   the methods xmin, xmax, ymin, and ymax.  \n```\nby \n\n```\n> Note that this is recomputed every time the function is called. \n```\n\nThe first is very clear and explicit, but of course not right anymore.  The second implicitly suggests what the first said.  The WARNING would be a good place to make it clear that it doesn't make sense to change the minmax data, since it's a function of the actual points in the objects.  And there one could point to the other relevant functions for setting the axes ranges.",
     "created_at": "2009-01-02T07:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
@@ -266,13 +264,11 @@ The idea is good.  I don't like that you replaced:
 >  not change the xmin/xmax/ymin/ymax data.  To change that, call 
 >   the methods xmin, xmax, ymin, and ymax.  
 ```
-
 by 
 
 ```
 > Note that this is recomputed every time the function is called. 
 ```
-
 
 The first is very clear and explicit, but of course not right anymore.  The second implicitly suggests what the first said.  The WARNING would be a good place to make it clear that it doesn't make sense to change the minmax data, since it's a function of the actual points in the objects.  And there one could point to the other relevant functions for setting the axes ranges.
 

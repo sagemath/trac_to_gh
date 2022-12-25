@@ -3,7 +3,7 @@
 archive/issues_000184.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: -RDF(1)\n///\nTraceback (most recent call last):\n  File \"\", line 1, in \n  File \"/home/server2/sage_notebook/worksheets/bugs_/code/12.py\", line 4, in \n    -RDF(Integer(1))\n  File \"/sage/local/lib/python2.5/\", line 1, in \n    \n  File \"element.pyx\", line 511, in element.ModuleElement.__neg__\n  File \"element.pyx\", line 525, in element.ModuleElement._neg_c\n  File \"element.pyx\", line 535, in element.ModuleElement._neg_c_impl\nTypeError: 'NoneType' object is not callable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/184\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: -RDF(1)\n///\nTraceback (most recent call last):\n  File \"\", line 1, in \n  File \"/home/server2/sage_notebook/worksheets/bugs_/code/12.py\", line 4, in \n    -RDF(Integer(1))\n  File \"/sage/local/lib/python2.5/\", line 1, in \n    \n  File \"element.pyx\", line 511, in element.ModuleElement.__neg__\n  File \"element.pyx\", line 525, in element.ModuleElement._neg_c\n  File \"element.pyx\", line 535, in element.ModuleElement._neg_c_impl\nTypeError: 'NoneType' object is not callable\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/184\n\n",
     "created_at": "2006-12-17T19:36:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000184.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 sage: -RDF(1)
@@ -33,7 +32,6 @@ Traceback (most recent call last):
   File "element.pyx", line 535, in element.ModuleElement._neg_c_impl
 TypeError: 'NoneType' object is not callable
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/184
 

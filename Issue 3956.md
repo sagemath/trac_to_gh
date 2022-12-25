@@ -3,7 +3,7 @@
 archive/issues_003956.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\n\nThis, i think, is very slow and ought to be improved as well.\n\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
+    "body": "Assignee: @malb\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\nThis, i think, is very slow and ought to be improved as well.\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
     "created_at": "2008-08-26T13:24:57Z",
     "labels": [
         "component: linear algebra"
@@ -26,9 +26,7 @@ sage: time N=MatrixSpace(GF(7),10000,10000).random_element()
 CPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s
 Wall time: 14.23 s
 ```
-
 This, i think, is very slow and ought to be improved as well.
-
 
 ```
 sage: N.set_immutable()
@@ -37,7 +35,6 @@ CPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s
 Wall time: 3.17 s
 21008582
 ```
-
 ... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).
 
 
@@ -72,7 +69,7 @@ The attached patch speeds up hashing a bit. However, GF(2) speed is not achievab
 archive/issue_comments_028353.json:
 ```json
 {
-    "body": "**Old**\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 6.77 s, sys: 1.08 s, total: 7.84 s\nWall time: 14.17 s\nsage: N.set_immutable()\nsage: %time hash(N)\nCPU times: user 1.85 s, sys: 0.00 s, total: 1.85 s\nWall time: 1.86 s\n737382666\n```\n\n\n**New**\n\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 6.66 s, sys: 0.96 s, total: 7.63 s\nWall time: 7.68 s\nsage: %time hash(N)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: mutable matrices are unhashable\nsage: N.set_immutable()\nsage: %time hash(N)\nCPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\nWall time: 0.19 s\n3680002027\n```\n",
+    "body": "**Old**\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 6.77 s, sys: 1.08 s, total: 7.84 s\nWall time: 14.17 s\nsage: N.set_immutable()\nsage: %time hash(N)\nCPU times: user 1.85 s, sys: 0.00 s, total: 1.85 s\nWall time: 1.86 s\n737382666\n```\n\n**New**\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 6.66 s, sys: 0.96 s, total: 7.63 s\nWall time: 7.68 s\nsage: %time hash(N)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: mutable matrices are unhashable\nsage: N.set_immutable()\nsage: %time hash(N)\nCPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\nWall time: 0.19 s\n3680002027\n```",
     "created_at": "2008-08-26T14:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -94,9 +91,7 @@ Wall time: 1.86 s
 737382666
 ```
 
-
 **New**
-
 
 ```
 sage: time N=MatrixSpace(GF(7),10000,10000).random_element()
@@ -112,7 +107,6 @@ CPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s
 Wall time: 0.19 s
 3680002027
 ```
-
 
 
 
@@ -190,7 +184,7 @@ One remark: AFAIK, often hash values are cached. This is not done here (nor for 
 archive/issue_comments_028357.json:
 ```json
 {
-    "body": ">  1. The doc string has a section EXAMPLE and TEST. Will both give rise to doc tests? Or more generally: What exactly must one put into the doc string such that it results in a doc test? E.g., i see that some people write \"TEST CASES:\", i think some write \"EXAMPLES:\", you write \"EXAMPLE:\" (without \"S\"), some write \"TEST:\" or \"DOCTEST:\" or \"TESTS:\".\n\nWhat matters is the `sage:` prompt, not the headline. Things under **TEST** are considered boring and not for enduser consumption. Still, they ought to be tested (and they are tested).\n\n>  2. Under \"EXAMPLE:\", you have an \"indirect doctest\". Why is this test working? The matrix is random, hence, the result is random, but there is no key-word \"random\".\n\nWe have a **randstate** framework which takes care of pseudo-random doctests such that the same output is guaranteed for each run. The tag `#indirect doctest` indicates that I'm confident that the doctest tests the implementation even though the function name does not appear in the input. Otherwise `sage-coverage` would complaint.\n\n>  3. Am i right that the hash value also depends on the size of `unsigned long`, hence, is machine dependent? Is this why you do not provide an example with a non-trivial hash value?\n\nYes. I think this is Python default.\n\n> One remark: AFAIK, often hash values are cached. This is not done here (nor for matrices over GF(2)). Does anybody think that implementing a cache for the hash would be a good idea? (I don't)\n\nI should be fast enough for most applications. But if there is demand, we can go ahead and cache it. I have no strong feelings about it.",
+    "body": ">  1. The doc string has a section EXAMPLE and TEST. Will both give rise to doc tests? Or more generally: What exactly must one put into the doc string such that it results in a doc test? E.g., i see that some people write \"TEST CASES:\", i think some write \"EXAMPLES:\", you write \"EXAMPLE:\" (without \"S\"), some write \"TEST:\" or \"DOCTEST:\" or \"TESTS:\".\n\n\nWhat matters is the `sage:` prompt, not the headline. Things under **TEST** are considered boring and not for enduser consumption. Still, they ought to be tested (and they are tested).\n\n>  2. Under \"EXAMPLE:\", you have an \"indirect doctest\". Why is this test working? The matrix is random, hence, the result is random, but there is no key-word \"random\".\n\n\nWe have a **randstate** framework which takes care of pseudo-random doctests such that the same output is guaranteed for each run. The tag `#indirect doctest` indicates that I'm confident that the doctest tests the implementation even though the function name does not appear in the input. Otherwise `sage-coverage` would complaint.\n\n>  3. Am i right that the hash value also depends on the size of `unsigned long`, hence, is machine dependent? Is this why you do not provide an example with a non-trivial hash value?\n\n\nYes. I think this is Python default.\n\n> One remark: AFAIK, often hash values are cached. This is not done here (nor for matrices over GF(2)). Does anybody think that implementing a cache for the hash would be a good idea? (I don't)\n\n\nI should be fast enough for most applications. But if there is demand, we can go ahead and cache it. I have no strong feelings about it.",
     "created_at": "2008-08-27T15:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -201,17 +195,21 @@ archive/issue_comments_028357.json:
 
 >  1. The doc string has a section EXAMPLE and TEST. Will both give rise to doc tests? Or more generally: What exactly must one put into the doc string such that it results in a doc test? E.g., i see that some people write "TEST CASES:", i think some write "EXAMPLES:", you write "EXAMPLE:" (without "S"), some write "TEST:" or "DOCTEST:" or "TESTS:".
 
+
 What matters is the `sage:` prompt, not the headline. Things under **TEST** are considered boring and not for enduser consumption. Still, they ought to be tested (and they are tested).
 
 >  2. Under "EXAMPLE:", you have an "indirect doctest". Why is this test working? The matrix is random, hence, the result is random, but there is no key-word "random".
+
 
 We have a **randstate** framework which takes care of pseudo-random doctests such that the same output is guaranteed for each run. The tag `#indirect doctest` indicates that I'm confident that the doctest tests the implementation even though the function name does not appear in the input. Otherwise `sage-coverage` would complaint.
 
 >  3. Am i right that the hash value also depends on the size of `unsigned long`, hence, is machine dependent? Is this why you do not provide an example with a non-trivial hash value?
 
+
 Yes. I think this is Python default.
 
 > One remark: AFAIK, often hash values are cached. This is not done here (nor for matrices over GF(2)). Does anybody think that implementing a cache for the hash would be a good idea? (I don't)
+
 
 I should be fast enough for most applications. But if there is demand, we can go ahead and cache it. I have no strong feelings about it.
 
@@ -242,7 +240,7 @@ All my questions are answered, so, there is a positive review.
 archive/issue_comments_028359.json:
 ```json
 {
-    "body": "Matrix hashes are specifically designed to be compatible with each other:\n\n\n```\nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.spa\nM.sparse_columns  M.sparse_matrix   M.sparse_rows     \nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\n\n\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.",
+    "body": "Matrix hashes are specifically designed to be compatible with each other:\n\n```\nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.spa\nM.sparse_columns  M.sparse_matrix   M.sparse_rows     \nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\n\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.",
     "created_at": "2008-08-27T16:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -252,7 +250,6 @@ archive/issue_comments_028359.json:
 ```
 
 Matrix hashes are specifically designed to be compatible with each other:
-
 
 ```
 sage: M = random_matrix(GF(2), 10, 10)
@@ -271,7 +268,6 @@ sage: hash(MS)
 561
 ```
 
-
 This patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.
 
 
@@ -281,7 +277,7 @@ This patch seems to break that. At a minimum, it seems sparse and dense should h
 archive/issue_comments_028360.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> Matrix hashes are specifically designed to be compatible with each other:\n> This patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel. \n\nI didn't know about that. The updated patch plays nice.",
+    "body": "Replying to [comment:7 robertwb]:\n> Matrix hashes are specifically designed to be compatible with each other:\n> This patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel. \n\n\nI didn't know about that. The updated patch plays nice.",
     "created_at": "2008-08-27T16:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -293,6 +289,7 @@ archive/issue_comments_028360.json:
 Replying to [comment:7 robertwb]:
 > Matrix hashes are specifically designed to be compatible with each other:
 > This patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel. 
+
 
 I didn't know about that. The updated patch plays nice.
 
@@ -343,7 +340,7 @@ Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_028363.json:
 ```json
 {
-    "body": "Replying to [comment:9 robertwb]:\n> That is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\nGood catch, I posted a new patch to address this.",
+    "body": "Replying to [comment:9 robertwb]:\n> That is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\n\nGood catch, I posted a new patch to address this.",
     "created_at": "2008-08-27T20:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
@@ -354,6 +351,7 @@ archive/issue_comments_028363.json:
 
 Replying to [comment:9 robertwb]:
 > That is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`
+
 
 Good catch, I posted a new patch to address this.
 

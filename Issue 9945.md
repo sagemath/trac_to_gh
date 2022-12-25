@@ -150,7 +150,7 @@ Funny that the new race condition showed up with just *two* `make` jobs, after s
 archive/issue_comments_098988.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> Patch again looks reasonable.\n> \n> I only wonder how often we'll again have to create a new Singular spkg for almost the \"same\" reason... ;-)\n\nYes, it's a bit worrying. \n\n> Funny that the new race condition showed up with just *two* `make` jobs, after so much excessive testing by Dave and others.\n \nI expect it depends on very much on the time a compiler takes to compile code and for the linker to link it. On any one system, if file `foo.c` takes longer to compile than file `foobar.c` then that's likely to be the same irrespective of the system load. \n\nI was wondering about the possibility of using a wrapper script for gcc, such that there was a random delay between 0 and 50 ms, before gcc actually started compiling. The `nanosleep` function should provide that possibility. Then implement something similar for the linker so there was a random delay before it started linking. Of course that would slow the build process, but would probably have a higher probability of inducing build failures. \n\nOne would need to think carefully about how to seed the random number generators then. Probably using `/dev/random` would be best. \n\nIt would be some effort to write the code for this, but once written it should make detection of race conditions much easier for any bit of Sage. \n\nAnother idea, which **may** help would be to randomly change the number of processors online for those of us with multi-processor machines. I'm less certain about whether that would be useful, though it be be very much easier to implement. Although this machine is only quad core, it's hyperthreaded, so I could have from one to eight threads active at any one time. \n\nI suspect a search of Google would find other similar (but hopefully better) methods of inducing effects that are likely to uncover race conditions. \n\nDave",
+    "body": "Replying to [comment:5 leif]:\n> Patch again looks reasonable.\n> \n> I only wonder how often we'll again have to create a new Singular spkg for almost the \"same\" reason... ;-)\n\n\nYes, it's a bit worrying. \n\n> Funny that the new race condition showed up with just *two* `make` jobs, after so much excessive testing by Dave and others.\n\n \nI expect it depends on very much on the time a compiler takes to compile code and for the linker to link it. On any one system, if file `foo.c` takes longer to compile than file `foobar.c` then that's likely to be the same irrespective of the system load. \n\nI was wondering about the possibility of using a wrapper script for gcc, such that there was a random delay between 0 and 50 ms, before gcc actually started compiling. The `nanosleep` function should provide that possibility. Then implement something similar for the linker so there was a random delay before it started linking. Of course that would slow the build process, but would probably have a higher probability of inducing build failures. \n\nOne would need to think carefully about how to seed the random number generators then. Probably using `/dev/random` would be best. \n\nIt would be some effort to write the code for this, but once written it should make detection of race conditions much easier for any bit of Sage. \n\nAnother idea, which **may** help would be to randomly change the number of processors online for those of us with multi-processor machines. I'm less certain about whether that would be useful, though it be be very much easier to implement. Although this machine is only quad core, it's hyperthreaded, so I could have from one to eight threads active at any one time. \n\nI suspect a search of Google would find other similar (but hopefully better) methods of inducing effects that are likely to uncover race conditions. \n\nDave",
     "created_at": "2010-09-19T12:30:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -164,9 +164,11 @@ Replying to [comment:5 leif]:
 > 
 > I only wonder how often we'll again have to create a new Singular spkg for almost the "same" reason... ;-)
 
+
 Yes, it's a bit worrying. 
 
 > Funny that the new race condition showed up with just *two* `make` jobs, after so much excessive testing by Dave and others.
+
  
 I expect it depends on very much on the time a compiler takes to compile code and for the linker to link it. On any one system, if file `foo.c` takes longer to compile than file `foobar.c` then that's likely to be the same irrespective of the system load. 
 
@@ -313,7 +315,7 @@ His/her system appears to be a good test platform... ;-)
 archive/issue_comments_098995.json:
 ```json
 {
-    "body": "Replying to [comment:12 leif]:\n> The changelog lacks an entry for the p3.\n> \n> Fran\u00e7ois, perhaps you could ask the original reporter to test this, too?\n> \n> (Such that we don't run into the next race condition after this ticket has been merged.)\n> \n> His/her system appears to be a good test platform... ;-)\nI posted the patch only after he reported back that it worked for him.\nYou could say that he has a good test platform. Single core system,\nhe has a 64bit base system and a 32bit system in a chroot. In this particular\ncase the problem only appeared in the 32bit chroot.\n\nHe reported quite a number of issues for the sage-on-gentoo port over the years.",
+    "body": "Replying to [comment:12 leif]:\n> The changelog lacks an entry for the p3.\n> \n> Fran\u00e7ois, perhaps you could ask the original reporter to test this, too?\n> \n> (Such that we don't run into the next race condition after this ticket has been merged.)\n> \n> His/her system appears to be a good test platform... ;-)\n\nI posted the patch only after he reported back that it worked for him.\nYou could say that he has a good test platform. Single core system,\nhe has a 64bit base system and a 32bit system in a chroot. In this particular\ncase the problem only appeared in the 32bit chroot.\n\nHe reported quite a number of issues for the sage-on-gentoo port over the years.",
     "created_at": "2010-09-21T10:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -330,6 +332,7 @@ Replying to [comment:12 leif]:
 > (Such that we don't run into the next race condition after this ticket has been merged.)
 > 
 > His/her system appears to be a good test platform... ;-)
+
 I posted the patch only after he reported back that it worked for him.
 You could say that he has a good test platform. Single core system,
 he has a 64bit base system and a 32bit system in a chroot. In this particular
@@ -344,7 +347,7 @@ He reported quite a number of issues for the sage-on-gentoo port over the years.
 archive/issue_comments_098996.json:
 ```json
 {
-    "body": "Replying to [comment:13 fbissey]:\n> I posted the patch only after he reported back that it worked for him.\n\nSorry, [comment:ticket:9733:58 you already said so], forgot that.",
+    "body": "Replying to [comment:13 fbissey]:\n> I posted the patch only after he reported back that it worked for him.\n\n\nSorry, [comment:ticket:9733:58 you already said so], forgot that.",
     "created_at": "2010-09-21T10:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -356,6 +359,7 @@ archive/issue_comments_098996.json:
 Replying to [comment:13 fbissey]:
 > I posted the patch only after he reported back that it worked for him.
 
+
 Sorry, [comment:ticket:9733:58 you already said so], forgot that.
 
 
@@ -365,7 +369,7 @@ Sorry, [comment:ticket:9733:58 you already said so], forgot that.
 archive/issue_comments_098997.json:
 ```json
 {
-    "body": "Dave, if you don't want to mess around with `/dev/urandom` (and `hd`?), you could use the pid of a subshell (`rand_raw=`sh -c 'echo $$'``) as the source for a pseudo random number (perhaps \"recursively\", i.e. the pid of the nth subshell where n is itself a pseudo-random number), and feed that to\n\n```sh\nsleep `expr $base + $rand_raw % $modulus \\* $scale`\n```\n\n\nPlain `rand_raw` is of course bad on an otherwise idle system, also depending on how long you sleep.",
+    "body": "Dave, if you don't want to mess around with `/dev/urandom` (and `hd`?), you could use the pid of a subshell (`rand_raw=`sh -c 'echo $$'``) as the source for a pseudo random number (perhaps \"recursively\", i.e. the pid of the nth subshell where n is itself a pseudo-random number), and feed that to\n\n```sh\nsleep `expr $base + $rand_raw % $modulus \\* $scale`\n```\n\nPlain `rand_raw` is of course bad on an otherwise idle system, also depending on how long you sleep.",
     "created_at": "2010-09-21T11:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -379,7 +383,6 @@ Dave, if you don't want to mess around with `/dev/urandom` (and `hd`?), you coul
 ```sh
 sleep `expr $base + $rand_raw % $modulus \* $scale`
 ```
-
 
 Plain `rand_raw` is of course bad on an otherwise idle system, also depending on how long you sleep.
 
@@ -470,7 +473,7 @@ What I'm less sure about, is what is a sensible maximum delay to use. That's a d
 archive/issue_comments_099002.json:
 ```json
 {
-    "body": "Replying to [comment:12 leif]:\n> The changelog lacks an entry for the p3.\nI fixed that (typical late-night copy&paste mistake)\n\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p3.spkg \n(same location as above)",
+    "body": "Replying to [comment:12 leif]:\n> The changelog lacks an entry for the p3.\n\nI fixed that (typical late-night copy&paste mistake)\n\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p3.spkg \n(same location as above)",
     "created_at": "2010-09-21T13:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -481,6 +484,7 @@ archive/issue_comments_099002.json:
 
 Replying to [comment:12 leif]:
 > The changelog lacks an entry for the p3.
+
 I fixed that (typical late-night copy&paste mistake)
 
 http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p3.spkg 
@@ -493,7 +497,7 @@ http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p3.spkg
 archive/issue_comments_099003.json:
 ```json
 {
-    "body": "\n```C\n    if (sizeof(int) != 4) {\n        fprintf(stderr,\"Your system is odd. On everying except a Cray X MP, an int is 4 bytes\\n\");\n        fprintf(stderr,\"Exiting...\\n\");\n        exit(3);\n    }\n```\n\nLOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)\n\nThe allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.",
+    "body": "```C\n    if (sizeof(int) != 4) {\n        fprintf(stderr,\"Your system is odd. On everying except a Cray X MP, an int is 4 bytes\\n\");\n        fprintf(stderr,\"Exiting...\\n\");\n        exit(3);\n    }\n```\nLOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)\n\nThe allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.",
     "created_at": "2010-09-21T13:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -502,7 +506,6 @@ archive/issue_comments_099003.json:
 }
 ```
 
-
 ```C
     if (sizeof(int) != 4) {
         fprintf(stderr,"Your system is odd. On everying except a Cray X MP, an int is 4 bytes\n");
@@ -510,7 +513,6 @@ archive/issue_comments_099003.json:
         exit(3);
     }
 ```
-
 LOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)
 
 The allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.
@@ -522,7 +524,7 @@ The allocation of `delay_as_string` is useless (actually a space leak :) ) unles
 archive/issue_comments_099004.json:
 ```json
 {
-    "body": "Replying to [comment:19 leif]:\n> {{{\n> #!C\n>     if (sizeof(int) != 4) {\n>         fprintf(stderr,\"Your system is odd. On everying except a Cray X MP, an int is 4 bytes\\n\");\n>         fprintf(stderr,\"Exiting...\\n\");\n>         exit(3);\n>     }\n> }}}\n> LOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)\n\nNo, but when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n\n* sizeof(long)=8\n* sizeof(int)=8\n* sizeof(short)=8\n\nThe latter was a real pain to me. \n\nSo nothing would totally surprise me. \n\nI've now set this up compiling in 5 different directories on machine \n\n* Maximum delay of 1 second (mean 500 ms)\n* Maximum delay of 100 ms (mean 50 ms)\n* Maximum delay of 10 ms (mean 5 ms)\n* Maximum delay of 1 ms (mean 500 us) \n* Maximum delay of 100 us (mean = 50 us)\n\nI suspect that the first of these is too long, so will slow builds considerably and the last is too short, so will not be too different from no delay. \n\n \n> The allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.\n> \n\nYes, you are correct. I'll change that, but it's not a big deal for now. It's a start. \n\n\nI don't know how this would fit in with Nathann's:\n\n*... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n\n\nSomehow I doubt it would fit in too well. \n\nIf I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal. \n\nI think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n\nDave",
+    "body": "Replying to [comment:19 leif]:\n> {{{\n> #!C\n>     if (sizeof(int) != 4) {\n>         fprintf(stderr,\"Your system is odd. On everying except a Cray X MP, an int is 4 bytes\\n\");\n>         fprintf(stderr,\"Exiting...\\n\");\n>         exit(3);\n>     }\n> }}}\n> LOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)\n\n\nNo, but when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n\n* sizeof(long)=8\n* sizeof(int)=8\n* sizeof(short)=8\n\nThe latter was a real pain to me. \n\nSo nothing would totally surprise me. \n\nI've now set this up compiling in 5 different directories on machine \n\n* Maximum delay of 1 second (mean 500 ms)\n* Maximum delay of 100 ms (mean 50 ms)\n* Maximum delay of 10 ms (mean 5 ms)\n* Maximum delay of 1 ms (mean 500 us) \n* Maximum delay of 100 us (mean = 50 us)\n\nI suspect that the first of these is too long, so will slow builds considerably and the last is too short, so will not be too different from no delay. \n\n \n> The allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.\n> \n\n\nYes, you are correct. I'll change that, but it's not a big deal for now. It's a start. \n\n\nI don't know how this would fit in with Nathann's:\n\n*... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n\n\nSomehow I doubt it would fit in too well. \n\nIf I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal. \n\nI think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n\nDave",
     "created_at": "2010-09-21T13:49:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -541,6 +543,7 @@ Replying to [comment:19 leif]:
 >     }
 > }}}
 > LOL, ever heard of 16-bit systems (or compilers)? And even some old compilers on 32-bit systems had 2-byte `int`s IIRC (of course that's odd). I can't await having `sizeof(int)>=16`... ;-)
+
 
 No, but when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:
 
@@ -566,6 +569,7 @@ I suspect that the first of these is too long, so will slow builds considerably 
 > The allocation of `delay_as_string` is useless (actually a space leak :) ) unless you `str[n]cpy()` the result of `getenv(...)` to it, but who cares.
 > 
 
+
 Yes, you are correct. I'll change that, but it's not a big deal for now. It's a start. 
 
 
@@ -589,7 +593,7 @@ Dave
 archive/issue_comments_099005.json:
 ```json
 {
-    "body": "Replying to [comment:20 drkirkby]:\n> [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n> \n>  * sizeof(long)=8\n>  * sizeof(int)=8\n>  * sizeof(short)=8\n> \n> The latter was a real pain to me.\n\nIIRC the C standard requires\n  `sizeof(short) <= sizeof(int) <= sizeof(long)`\nbut also\n  `sizeof(short) < sizeof(long)`\nso Cray would violate the latter.\n\n> I don't know how this would fit in with Nathann's:\n> \n> *... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n> \n> \n> Somehow I doubt it would fit in too well. \n> \n> If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.\n\nYou mean I should upload a reviewer patch? ;-)\n\n> I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n\nThe linker isn't often used directly, and `libtool` calls `gcc` for linking:\n\n```sh\nld -shared -o p_Procs_FieldIndep.so p_Procs_Lib_FieldIndep.dl_o\nld -shared -o p_Procs_FieldZp.so p_Procs_Lib_FieldZp.dl_o\nld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o\nld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o\nld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared\n```\n\n(That's all.)",
+    "body": "Replying to [comment:20 drkirkby]:\n> [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n> \n> * sizeof(long)=8\n> * sizeof(int)=8\n> * sizeof(short)=8\n> \n> The latter was a real pain to me.\n\n\nIIRC the C standard requires\n  `sizeof(short) <= sizeof(int) <= sizeof(long)`\nbut also\n  `sizeof(short) < sizeof(long)`\nso Cray would violate the latter.\n\n> I don't know how this would fit in with Nathann's:\n> \n> *... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n> \n> \n> Somehow I doubt it would fit in too well. \n> \n> If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.\n\n\nYou mean I should upload a reviewer patch? ;-)\n\n> I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n\n\nThe linker isn't often used directly, and `libtool` calls `gcc` for linking:\n\n```sh\nld -shared -o p_Procs_FieldIndep.so p_Procs_Lib_FieldIndep.dl_o\nld -shared -o p_Procs_FieldZp.so p_Procs_Lib_FieldZp.dl_o\nld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o\nld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o\nld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared\n```\n(That's all.)",
     "created_at": "2010-09-21T14:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -601,11 +605,12 @@ archive/issue_comments_099005.json:
 Replying to [comment:20 drkirkby]:
 > [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:
 > 
->  * sizeof(long)=8
->  * sizeof(int)=8
->  * sizeof(short)=8
+> * sizeof(long)=8
+> * sizeof(int)=8
+> * sizeof(short)=8
 > 
 > The latter was a real pain to me.
+
 
 IIRC the C standard requires
   `sizeof(short) <= sizeof(int) <= sizeof(long)`
@@ -622,9 +627,11 @@ so Cray would violate the latter.
 > 
 > If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.
 
+
 You mean I should upload a reviewer patch? ;-)
 
 > I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. 
+
 
 The linker isn't often used directly, and `libtool` calls `gcc` for linking:
 
@@ -635,7 +642,6 @@ ld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o
 ld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o
 ld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared
 ```
-
 (That's all.)
 
 
@@ -645,7 +651,7 @@ ld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared
 archive/issue_comments_099006.json:
 ```json
 {
-    "body": "Replying to [comment:21 leif]:\n> Replying to [comment:20 drkirkby]:\n> > [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n> > \n> >  * sizeof(long)=8\n> >  * sizeof(int)=8\n> >  * sizeof(short)=8\n> > \n> > The latter was a real pain to me.\n> \n> IIRC the C standard requires\n>   `sizeof(short) <= sizeof(int) <= sizeof(long)`\n> but also\n>   `sizeof(short) < sizeof(long)`\n> so Cray would violate the latter.\n\nI was not aware of `sizeof(short) < sizeof(long)` was part of the C standard. I don't have a copy of the standard. If anyone does, please email me one! \n\nI guess the $15,000,000 [Cray X-MP](http://en.wikipedia.org/wiki/Cray_X-MP) introduced in 1982 pre-dated the latest C99 standard by a few years. \n\nIf you want to try a Cray, go to http://www.cray-cyber.org/access/index.php and get an account. \n\nAt the time I used the X-MP, (at least I think it was an X-MP, but I see they only have a Y-MP now), it was **painfully** slow to do anything. You really needed to use the vector processors properly to get the performance, and I had no intension of doing that. But I reckon my code is quite portable, as it must be one of the only programs to have been run on a supercomputer and a Sony Playstation games console! I think Sage would need a good few patches to ever be that portable. \n\n\n> > I don't know how this would fit in with Nathann's:\n> > \n> > *... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n> > \n> > \n> > Somehow I doubt it would fit in too well. \n> > \n> > If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.\n> \n> You mean I should upload a reviewer patch? ;-)\n> \n> > I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n> \n> The linker isn't often used directly, and `libtool` calls `gcc` for linking:\n> {{{\n> #!sh\n> ld -shared -o p_Procs_FieldIndep.so p_Procs_Lib_FieldIndep.dl_o\n> ld -shared -o p_Procs_FieldZp.so p_Procs_Lib_FieldZp.dl_o\n> ld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o\n> ld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o\n> ld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared\n> }}}\n> (That's all.)\n \n\nOK. So hopefully random delays on the compiler will work. \n\nThings are looking ok so far. I've built this \n\n* 29 times with a mean delay of 500 ms (maximum 1 second)\n* 44 times with a mean delay of 50 ms  (maximum 100 ms)\n* 46 times with a mean delay of 5 ms   (maximum 10 ms)\n* 46 times with a mean delay of 500 us (maximum 1 ms)\n* 46 times with a mean delay of 50 us. (maximum 100 us)\n\nIf by around 0830 GMT tomorrow, this has not failed, I'll give it a positive review. By that time it should have built nearly 100 times with the longest delay and certainly 100 times with the shorter delays. \n\n\n\nDave",
+    "body": "Replying to [comment:21 leif]:\n> Replying to [comment:20 drkirkby]:\n> > [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:\n> > \n> > * sizeof(long)=8\n> > * sizeof(int)=8\n> > * sizeof(short)=8\n> > \n> > The latter was a real pain to me.\n\n> \n> IIRC the C standard requires\n>   `sizeof(short) <= sizeof(int) <= sizeof(long)`\n> but also\n>   `sizeof(short) < sizeof(long)`\n> so Cray would violate the latter.\n\n\nI was not aware of `sizeof(short) < sizeof(long)` was part of the C standard. I don't have a copy of the standard. If anyone does, please email me one! \n\nI guess the $15,000,000 [Cray X-MP](http://en.wikipedia.org/wiki/Cray_X-MP) introduced in 1982 pre-dated the latest C99 standard by a few years. \n\nIf you want to try a Cray, go to http://www.cray-cyber.org/access/index.php and get an account. \n\nAt the time I used the X-MP, (at least I think it was an X-MP, but I see they only have a Y-MP now), it was **painfully** slow to do anything. You really needed to use the vector processors properly to get the performance, and I had no intension of doing that. But I reckon my code is quite portable, as it must be one of the only programs to have been run on a supercomputer and a Sony Playstation games console! I think Sage would need a good few patches to ever be that portable. \n\n\n> > I don't know how this would fit in with Nathann's:\n> > \n> > *... though my way of seeing it would really be to avoid spending hours wondering \"how it could fail\" when it seems so easy to just test it and write patches when errors are reported. *\n> > \n> > \n> > Somehow I doubt it would fit in too well. \n> > \n> > If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.\n\n> \n> You mean I should upload a reviewer patch? ;-)\n> \n> > I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. \n\n> \n> The linker isn't often used directly, and `libtool` calls `gcc` for linking:\n> \n> ```\n> #!sh\n> ld -shared -o p_Procs_FieldIndep.so p_Procs_Lib_FieldIndep.dl_o\n> ld -shared -o p_Procs_FieldZp.so p_Procs_Lib_FieldZp.dl_o\n> ld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o\n> ld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o\n> ld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared\n> ```\n> (That's all.)\n\n \n\nOK. So hopefully random delays on the compiler will work. \n\nThings are looking ok so far. I've built this \n\n* 29 times with a mean delay of 500 ms (maximum 1 second)\n* 44 times with a mean delay of 50 ms  (maximum 100 ms)\n* 46 times with a mean delay of 5 ms   (maximum 10 ms)\n* 46 times with a mean delay of 500 us (maximum 1 ms)\n* 46 times with a mean delay of 50 us. (maximum 100 us)\n\nIf by around 0830 GMT tomorrow, this has not failed, I'll give it a positive review. By that time it should have built nearly 100 times with the longest delay and certainly 100 times with the shorter delays. \n\n\n\nDave",
     "created_at": "2010-09-21T18:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -658,17 +664,19 @@ Replying to [comment:21 leif]:
 > Replying to [comment:20 drkirkby]:
 > > [...] when I was testing http://atlc.sourceforge.net/ for portability, I found on a Cray X MP running Unicos that:
 > > 
-> >  * sizeof(long)=8
-> >  * sizeof(int)=8
-> >  * sizeof(short)=8
+> > * sizeof(long)=8
+> > * sizeof(int)=8
+> > * sizeof(short)=8
 > > 
 > > The latter was a real pain to me.
+
 > 
 > IIRC the C standard requires
 >   `sizeof(short) <= sizeof(int) <= sizeof(long)`
 > but also
 >   `sizeof(short) < sizeof(long)`
 > so Cray would violate the latter.
+
 
 I was not aware of `sizeof(short) < sizeof(long)` was part of the C standard. I don't have a copy of the standard. If anyone does, please email me one! 
 
@@ -687,21 +695,25 @@ At the time I used the X-MP, (at least I think it was an X-MP, but I see they on
 > > Somehow I doubt it would fit in too well. 
 > > 
 > > If I don't get any problems, and there are are problems found by others, it would make me wonder how else one could try to find such problems. This was my best stab at an answer, but perhaps it is not ideal.
+
 > 
 > You mean I should upload a reviewer patch? ;-)
 > 
 > > I think really there should be a delay on the linker too, which I have not implemented. I've only done this on the compilers gcc, g++ and gfortran. 
+
 > 
 > The linker isn't often used directly, and `libtool` calls `gcc` for linking:
-> {{{
+> 
+> ```
 > #!sh
 > ld -shared -o p_Procs_FieldIndep.so p_Procs_Lib_FieldIndep.dl_o
 > ld -shared -o p_Procs_FieldZp.so p_Procs_Lib_FieldZp.dl_o
 > ld -shared -o p_Procs_FieldQ.so p_Procs_Lib_FieldQ.dl_o
 > ld -shared -o p_Procs_FieldGeneral.so p_Procs_Lib_FieldGeneral.dl_o
 > ld -shared -o dbmsr.so ndbm.dl_o sing_dbm.dl_o -lc_nonshared
-> }}}
+> ```
 > (That's all.)
+
  
 
 OK. So hopefully random delays on the compiler will work. 
@@ -797,7 +809,7 @@ All the newly found dependencies will be added upstream. Some of them are in fac
 archive/issue_comments_099010.json:
 ```json
 {
-    "body": "Replying to [comment:24 AlexanderDreyer]:\n> `@`Dave: Thanks a lot for the extensive tests! (Also in the name of the Singular-Team).\n> \n> All the newly found dependencies will be added upstream. Some of them are in fact not only unexpected, but also they were not intended that way. (In fact these are bugs, which will be fixed.)\n\nYou are welcome. I've changed the tag about \"Report Upstream\", since these changes are not yet in a stable release of Singular. Look at all the options on that, and determine what's the most appropriate. \n\nOf course it's good I found no flaws, though I must admit it would have been nice to know whether adding random delays before calling gcc/g++ was useful or not. I guess I could try the previous version with random delays and see if I can uncover the same bug as the other person. \n\nTrying to build the whole of Sage with random delays might be useful, but it would not be possible to build it 500 times in any reasonable amount of time. \n\nBut I better stop there, as I would only confirm Leif's belief I'm addicted to testing! \n\nDave",
+    "body": "Replying to [comment:24 AlexanderDreyer]:\n> `@`Dave: Thanks a lot for the extensive tests! (Also in the name of the Singular-Team).\n> \n> All the newly found dependencies will be added upstream. Some of them are in fact not only unexpected, but also they were not intended that way. (In fact these are bugs, which will be fixed.)\n\n\nYou are welcome. I've changed the tag about \"Report Upstream\", since these changes are not yet in a stable release of Singular. Look at all the options on that, and determine what's the most appropriate. \n\nOf course it's good I found no flaws, though I must admit it would have been nice to know whether adding random delays before calling gcc/g++ was useful or not. I guess I could try the previous version with random delays and see if I can uncover the same bug as the other person. \n\nTrying to build the whole of Sage with random delays might be useful, but it would not be possible to build it 500 times in any reasonable amount of time. \n\nBut I better stop there, as I would only confirm Leif's belief I'm addicted to testing! \n\nDave",
     "created_at": "2010-09-22T08:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",
     "type": "issue_comment",
@@ -810,6 +822,7 @@ Replying to [comment:24 AlexanderDreyer]:
 > `@`Dave: Thanks a lot for the extensive tests! (Also in the name of the Singular-Team).
 > 
 > All the newly found dependencies will be added upstream. Some of them are in fact not only unexpected, but also they were not intended that way. (In fact these are bugs, which will be fixed.)
+
 
 You are welcome. I've changed the tag about "Report Upstream", since these changes are not yet in a stable release of Singular. Look at all the options on that, and determine what's the most appropriate. 
 

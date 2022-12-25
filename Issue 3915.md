@@ -57,7 +57,7 @@ oh, it also adds a `_latex_` method to `BooleanPolynomial`
 archive/issue_comments_027943.json:
 ```json
 {
-    "body": "The line:\n\n```\ng.minimalizeAndTailReduce()\n```\n\nis nearly meaningless, as it ignores the result.\nFor having a reduced system set\nthe keyword\nredsb=True\nfor the groebner_basis call.\nFurthermore, your reduce implementation doesn't necessarily yield a unique (reduced) normal form.\nFor PolyBoRi >0.4 set\nstrat.optRedTail=True\nfor PolyBoRi <0.4\napply\np=red_tail(strat,p)\nto a normal form.\nMichael",
+    "body": "The line:\n\n```\ng.minimalizeAndTailReduce()\n```\nis nearly meaningless, as it ignores the result.\nFor having a reduced system set\nthe keyword\nredsb=True\nfor the groebner_basis call.\nFurthermore, your reduce implementation doesn't necessarily yield a unique (reduced) normal form.\nFor PolyBoRi >0.4 set\nstrat.optRedTail=True\nfor PolyBoRi <0.4\napply\np=red_tail(strat,p)\nto a normal form.\nMichael",
     "created_at": "2008-08-27T14:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ The line:
 ```
 g.minimalizeAndTailReduce()
 ```
-
 is nearly meaningless, as it ignores the result.
 For having a reduced system set
 the keyword
@@ -111,7 +110,7 @@ Thanks for the review. The updated patch should address your comments.
 archive/issue_comments_027945.json:
 ```json
 {
-    "body": "Looks good,\nthere is still some minor thing, I detected.\nBut this is nothing about the patch, as it was buggy before:\n\nIt is possible to pass a deg_bound to\ngroebner_basis\n.\nSo the result is not garantied to be a GB.\nIn this case it looks strange to set\n\n```\nself.__gb = g\n```\n\n\nmaybe you can check this\nvia\n\n```\nif kwds.get(\"deg_bound\",False) is False:\n  self.__gb = g\n```\n\n\nThen I'll give it a positive review.\nMichael",
+    "body": "Looks good,\nthere is still some minor thing, I detected.\nBut this is nothing about the patch, as it was buggy before:\n\nIt is possible to pass a deg_bound to\ngroebner_basis\n.\nSo the result is not garantied to be a GB.\nIn this case it looks strange to set\n\n```\nself.__gb = g\n```\n\nmaybe you can check this\nvia\n\n```\nif kwds.get(\"deg_bound\",False) is False:\n  self.__gb = g\n```\n\nThen I'll give it a positive review.\nMichael",
     "created_at": "2008-08-28T06:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -134,7 +133,6 @@ In this case it looks strange to set
 self.__gb = g
 ```
 
-
 maybe you can check this
 via
 
@@ -142,7 +140,6 @@ via
 if kwds.get("deg_bound",False) is False:
   self.__gb = g
 ```
-
 
 Then I'll give it a positive review.
 Michael
@@ -154,7 +151,7 @@ Michael
 archive/issue_comments_027946.json:
 ```json
 {
-    "body": "ups: still, comments regarding the patch:\nThese are optional, as they only concern performance:\n\npbori.pyxline 3144\n\n```\n            s = sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s],  \n                    B.zero_element()) \n            s = s.set()\n```\n\nshould be faster with\n\n```\n            s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s]\n```\n\nHowever, you will have to handle the case of the empty set seperately(when there are no monomials) to make sure, that it is the right ring.\nI think, if we can make this easier upstream.\n\nFurthermore, if you really want to be clever: The use of prod is quite unoptimal here.\nIf you really want get these multiplications for variables fast, you should\nmultiply them in this way:\nx1*(x2*(x3*x4)))\nSo first use the indices behind. Note, that indices in PolyBoRi don't have to be identical to those in sage/Singular\nlex, degree lex: identical\ndp(dp_asc): reversed.\nBlocks of degree lexicographical: identical\nBlocks of degree reverse lex. : reversed in each block, so quite strange\n(if it is correctly implemented in sage)",
+    "body": "ups: still, comments regarding the patch:\nThese are optional, as they only concern performance:\n\npbori.pyxline 3144\n\n```\n            s = sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s],  \n                    B.zero_element()) \n            s = s.set()\n```\nshould be faster with\n\n```\n            s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s]\n```\nHowever, you will have to handle the case of the empty set seperately(when there are no monomials) to make sure, that it is the right ring.\nI think, if we can make this easier upstream.\n\nFurthermore, if you really want to be clever: The use of prod is quite unoptimal here.\nIf you really want get these multiplications for variables fast, you should\nmultiply them in this way:\nx1*(x2*(x3*x4)))\nSo first use the indices behind. Note, that indices in PolyBoRi don't have to be identical to those in sage/Singular\nlex, degree lex: identical\ndp(dp_asc): reversed.\nBlocks of degree lexicographical: identical\nBlocks of degree reverse lex. : reversed in each block, so quite strange\n(if it is correctly implemented in sage)",
     "created_at": "2008-08-28T07:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -174,14 +171,12 @@ pbori.pyxline 3144
                     B.zero_element()) 
             s = s.set()
 ```
-
 should be faster with
 
 ```
             s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]],  
 	            B.one_element()) for v in s]
 ```
-
 However, you will have to handle the case of the empty set seperately(when there are no monomials) to make sure, that it is the right ring.
 I think, if we can make this easier upstream.
 
@@ -221,7 +216,7 @@ Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_027948.json:
 ```json
 {
-    "body": "Replying to [comment:4 PolyBoRi]:\n> It is possible to pass a deg_bound to groebner_basis.\n\nI check for `deg_bound` in the updated patch. Thanks a lot for your detailed criticism, it helps (me) a lot! I give the patch a positive review now, since you wrote:\n\n> Then I'll give it a positive review. Michael",
+    "body": "Replying to [comment:4 PolyBoRi]:\n> It is possible to pass a deg_bound to groebner_basis.\n\n\nI check for `deg_bound` in the updated patch. Thanks a lot for your detailed criticism, it helps (me) a lot! I give the patch a positive review now, since you wrote:\n\n> Then I'll give it a positive review. Michael",
     "created_at": "2008-08-28T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -232,6 +227,7 @@ archive/issue_comments_027948.json:
 
 Replying to [comment:4 PolyBoRi]:
 > It is possible to pass a deg_bound to groebner_basis.
+
 
 I check for `deg_bound` in the updated patch. Thanks a lot for your detailed criticism, it helps (me) a lot! I give the patch a positive review now, since you wrote:
 
@@ -244,7 +240,7 @@ I check for `deg_bound` in the updated patch. Thanks a lot for your detailed cri
 archive/issue_comments_027949.json:
 ```json
 {
-    "body": "Replying to [comment:5 PolyBoRi]:\n> ups: still, comments regarding the patch:\n> These are optional, as they only concern performance:\n> \n> pbori.pyxline 3144\n> s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]], B.one_element()) for v in s]\n\nIt seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\n> If you really want get these multiplications for variables fast, you should\n> multiply them in this way:\n> x1*(x2*(x3*x4)))\n\nI don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.",
+    "body": "Replying to [comment:5 PolyBoRi]:\n> ups: still, comments regarding the patch:\n> These are optional, as they only concern performance:\n> \n> pbori.pyxline 3144\n> s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]], B.one_element()) for v in s]\n\n\nIt seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\n> If you really want get these multiplications for variables fast, you should\n> multiply them in this way:\n> x1*(x2*(x3*x4)))\n\n\nI don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.",
     "created_at": "2008-08-28T10:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -260,11 +256,13 @@ Replying to [comment:5 PolyBoRi]:
 > pbori.pyxline 3144
 > s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]], B.one_element()) for v in s]
 
+
 It seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.
 
 > If you really want get these multiplications for variables fast, you should
 > multiply them in this way:
 > x1*(x2*(x3*x4)))
+
 
 I don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.
 
@@ -275,7 +273,7 @@ I don't do anything fancy for now, but I reversed the order of the product. This
 archive/issue_comments_027950.json:
 ```json
 {
-    "body": "> \n> It seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\nsorry, the line was long, without the sum:\njust\n\n```\nBooleSet([prod([x[i] for ...]\n```\n\n\nA BooleSet is a set of monomials.\nIt uses a more sophisticated addition.\n\n> \n> > If you really want get these multiplications for variables fast, you should\n> > multiply them in this way:\n> > x1*(x2*(x3*x4)))\n> \n> I don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.\n\nyes, it is much faster in Lex, even from a Python interpreter with boost::python calling overhead (in large examples, high degree monomials)\n\nYou have my positive review :-).",
+    "body": "> \n> It seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\n\nsorry, the line was long, without the sum:\njust\n\n```\nBooleSet([prod([x[i] for ...]\n```\n\nA BooleSet is a set of monomials.\nIt uses a more sophisticated addition.\n\n> \n> > If you really want get these multiplications for variables fast, you should\n> > multiply them in this way:\n> > x1*(x2*(x3*x4)))\n\n> \n> I don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.\n\n\nyes, it is much faster in Lex, even from a Python interpreter with boost::python calling overhead (in large examples, high degree monomials)\n\nYou have my positive review :-).",
     "created_at": "2008-08-28T10:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -287,13 +285,13 @@ archive/issue_comments_027950.json:
 > 
 > It seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.
 
+
 sorry, the line was long, without the sum:
 just
 
 ```
 BooleSet([prod([x[i] for ...]
 ```
-
 
 A BooleSet is a set of monomials.
 It uses a more sophisticated addition.
@@ -302,8 +300,10 @@ It uses a more sophisticated addition.
 > > If you really want get these multiplications for variables fast, you should
 > > multiply them in this way:
 > > x1*(x2*(x3*x4)))
+
 > 
 > I don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.
+
 
 yes, it is much faster in Lex, even from a Python interpreter with boost::python calling overhead (in large examples, high degree monomials)
 
@@ -316,7 +316,7 @@ You have my positive review :-).
 archive/issue_comments_027951.json:
 ```json
 {
-    "body": "I am seeing slight merge issues with my current alpha2 tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3915_pbori_improvements.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 391.\nHunk #2 succeeded at 1948 (offset 47 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\n```\n\nThe failing hunk deletes `contains`, so this should be easy to rebase.\n\nCheers,\n\nMichael",
+    "body": "I am seeing slight merge issues with my current alpha2 tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3915_pbori_improvements.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 391.\nHunk #2 succeeded at 1948 (offset 47 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\n```\nThe failing hunk deletes `contains`, so this should be easy to rebase.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-28T10:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
@@ -334,7 +334,6 @@ Hunk #1 FAILED at 391.
 Hunk #2 succeeded at 1948 (offset 47 lines).
 1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej
 ```
-
 The failing hunk deletes `contains`, so this should be easy to rebase.
 
 Cheers,

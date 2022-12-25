@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1552
 archive/issue_comments_009869.json:
 ```json
 {
-    "body": "Well, there isn't much we can do to fix this since:\n\n```\n* Permission to modify the software is granted, but not the right to\n* distribute the complete modified source code.  Modifications are to\n* be distributed as patches to the released version.  Permission to\n* distribute binaries produced by compiling modified sources is granted,\n* provided you\n*   1. distribute the corresponding source modifications from the\n*    released version in the form of a patch file along with the binaries,\n*   2. add special version identification to distinguish your version\n*    in addition to the base release version number,\n*   3. provide your name and address as the primary contact for the\n*    support of your modified version, and\n*   4. retain our contact information in regard to use of the base\n*    software.\n* Permission to distribute the released version of the source code along\n* with corresponding source modifications in the form of a patch file is\n* granted with same provisions 2 through 4 for binary distributions.\n*\n* This software is provided \"as is\" without express or implied warranty\n* to the extent permitted by applicable law.\n```\n\nWe could try updating to gnuplot 4.2.2. It has been discussed around here before that the name gnuplot is very misleading since this isn't a GNU project at all.\n\nCheers,\n\nMichael",
+    "body": "Well, there isn't much we can do to fix this since:\n\n```\n* Permission to modify the software is granted, but not the right to\n* distribute the complete modified source code.  Modifications are to\n* be distributed as patches to the released version.  Permission to\n* distribute binaries produced by compiling modified sources is granted,\n* provided you\n*   1. distribute the corresponding source modifications from the\n*    released version in the form of a patch file along with the binaries,\n*   2. add special version identification to distinguish your version\n*    in addition to the base release version number,\n*   3. provide your name and address as the primary contact for the\n*    support of your modified version, and\n*   4. retain our contact information in regard to use of the base\n*    software.\n* Permission to distribute the released version of the source code along\n* with corresponding source modifications in the form of a patch file is\n* granted with same provisions 2 through 4 for binary distributions.\n*\n* This software is provided \"as is\" without express or implied warranty\n* to the extent permitted by applicable law.\n```\nWe could try updating to gnuplot 4.2.2. It has been discussed around here before that the name gnuplot is very misleading since this isn't a GNU project at all.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-17T16:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ Well, there isn't much we can do to fix this since:
 * This software is provided "as is" without express or implied warranty
 * to the extent permitted by applicable law.
 ```
-
 We could try updating to gnuplot 4.2.2. It has been discussed around here before that the name gnuplot is very misleading since this isn't a GNU project at all.
 
 Cheers,

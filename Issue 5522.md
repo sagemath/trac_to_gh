@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5522
 archive/issue_comments_042862.json:
 ```json
 {
-    "body": "Attachment [sage-libsingular-nocrash.patch](tarball://root/attachments/some-uuid/ticket5522/sage-libsingular-nocrash.patch) by GeorgSWeber created at 2009-03-25 23:36:49\n\nHi,\n\nright after\n\n```\nif handle == NULL\n```\n\none could do\n\n```\nprint \"cannot load libSINGULAR library\"\n```\n\nand only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.",
+    "body": "Attachment [sage-libsingular-nocrash.patch](tarball://root/attachments/some-uuid/ticket5522/sage-libsingular-nocrash.patch) by GeorgSWeber created at 2009-03-25 23:36:49\n\nHi,\n\nright after\n\n```\nif handle == NULL\n```\none could do\n\n```\nprint \"cannot load libSINGULAR library\"\n```\nand only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.",
     "created_at": "2009-03-25T23:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -57,13 +57,11 @@ right after
 ```
 if handle == NULL
 ```
-
 one could do
 
 ```
 print "cannot load libSINGULAR library"
 ```
-
 and only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.
 
 
@@ -228,7 +226,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042865.json:
 ```json
 {
-    "body": "Replying to [comment:6 Snark]:\n> the corresponding code in `src/sage/libs/singular/singular.pyx` looks like the target code already\n\nThis statement is completely false.\n\nNevertheless, the patch might not be needed, I'll check.",
+    "body": "Replying to [comment:6 Snark]:\n> the corresponding code in `src/sage/libs/singular/singular.pyx` looks like the target code already\n\n\nThis statement is completely false.\n\nNevertheless, the patch might not be needed, I'll check.",
     "created_at": "2015-02-07T10:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -239,6 +237,7 @@ archive/issue_comments_042865.json:
 
 Replying to [comment:6 Snark]:
 > the corresponding code in `src/sage/libs/singular/singular.pyx` looks like the target code already
+
 
 This statement is completely false.
 
@@ -271,7 +270,7 @@ I'll provide the adapted patch when I'll have checked its correctness.
 archive/issue_comments_042867.json:
 ```json
 {
-    "body": "I would prefer to move the error inside the `for` loop, like\n\n```\nhandle = ...\nif not handle:\n    dlerror(...)\n```\n\n\nI think that's the simplest solution",
+    "body": "I would prefer to move the error inside the `for` loop, like\n\n```\nhandle = ...\nif not handle:\n    dlerror(...)\n```\n\nI think that's the simplest solution",
     "created_at": "2015-02-07T10:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -287,7 +286,6 @@ handle = ...
 if not handle:
     dlerror(...)
 ```
-
 
 I think that's the simplest solution
 
@@ -334,7 +332,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_042870.json:
 ```json
 {
-    "body": "I pushed the branch because it looked nice, but then I tested what happens without the patch... and the result is in fact the same! Indeed, if libsingular.so isn't available, we already have an ImportError because of missing symbols:\n\n```\n   /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/__init__.py in <module>()\n   ---->\n   1 from sage.libs.singular.function import singular_function, lib\n        global sage.libs.singular.function = undefined\n        global singular_function = undefined\n        global lib = undefined\n      2 \n      3 from sage.libs.singular.function_factory import SingularFunctionFactory\n      4 \n      5 ff = SingularFunctionFactory()\n      6 \n\nsage/rings/polynomial/plural.pxd in init sage.libs.singular.function (build/cythonized/sage/libs/singular/function.cpp:18713)()\n\nsage/rings/polynomial/plural.pyx in init sage.rings.polynomial.plural (build/cythonized/sage/rings/polynomial/plural.cpp:24145)()\n\nsage/libs/singular/polynomial.pyx in init sage.libs.singular.polynomial (build/cythonized/sage/libs/singular/polynomial.cpp:6414)()\n\nImportError: /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/singular.so: undefined symbol: _Z6naInitlP9sip_sring\n\n```\n\n----\nNew commits:",
+    "body": "I pushed the branch because it looked nice, but then I tested what happens without the patch... and the result is in fact the same! Indeed, if libsingular.so isn't available, we already have an ImportError because of missing symbols:\n\n```\n   /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/__init__.py in <module>()\n   ---->\n   1 from sage.libs.singular.function import singular_function, lib\n        global sage.libs.singular.function = undefined\n        global singular_function = undefined\n        global lib = undefined\n      2 \n      3 from sage.libs.singular.function_factory import SingularFunctionFactory\n      4 \n      5 ff = SingularFunctionFactory()\n      6 \n\nsage/rings/polynomial/plural.pxd in init sage.libs.singular.function (build/cythonized/sage/libs/singular/function.cpp:18713)()\n\nsage/rings/polynomial/plural.pyx in init sage.rings.polynomial.plural (build/cythonized/sage/rings/polynomial/plural.cpp:24145)()\n\nsage/libs/singular/polynomial.pyx in init sage.libs.singular.polynomial (build/cythonized/sage/libs/singular/polynomial.cpp:6414)()\n\nImportError: /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/singular.so: undefined symbol: _Z6naInitlP9sip_sring\n\n```\n\n---\nNew commits:",
     "created_at": "2015-02-07T12:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -368,7 +366,7 @@ ImportError: /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/
 
 ```
 
-----
+---
 New commits:
 
 
@@ -378,7 +376,7 @@ New commits:
 archive/issue_comments_042871.json:
 ```json
 {
-    "body": "Hi, I would suggest to improve the error handling for loading libSingular even further as in \n\nhttp://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9\nsee ticket #17254 (upgrade to Singular 4.0.1)\n\n\nThis issue puzzled me for two days, since the error handling was not clean,\nand I failed to interpret the crash messages.\n\n\nAttention: do not pick \n\n```\nlib = os.environ['SAGE_LOCAL']+\"/lib/libSingular.\"+extension # libsingular renamed to libSingular\n```\n\nsince this is only for upgrade to Singular 4.0.1 (libsingular renamed to libSingular)",
+    "body": "Hi, I would suggest to improve the error handling for loading libSingular even further as in \n\nhttp://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9\nsee ticket #17254 (upgrade to Singular 4.0.1)\n\n\nThis issue puzzled me for two days, since the error handling was not clean,\nand I failed to interpret the crash messages.\n\n\nAttention: do not pick \n\n```\nlib = os.environ['SAGE_LOCAL']+\"/lib/libSingular.\"+extension # libsingular renamed to libSingular\n```\nsince this is only for upgrade to Singular 4.0.1 (libsingular renamed to libSingular)",
     "created_at": "2015-02-07T12:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -402,7 +400,6 @@ Attention: do not pick
 ```
 lib = os.environ['SAGE_LOCAL']+"/lib/libSingular."+extension # libsingular renamed to libSingular
 ```
-
 since this is only for upgrade to Singular 4.0.1 (libsingular renamed to libSingular)
 
 
@@ -412,7 +409,7 @@ since this is only for upgrade to Singular 4.0.1 (libsingular renamed to libSing
 archive/issue_comments_042872.json:
 ```json
 {
-    "body": "Replying to [comment:14 jakobkroeker]:\n> Hi, I would suggest to improve the error handling for loading libSingular even further as in \n> \n> http://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9\n> see ticket #17254 (upgrade to Singular 4.0.1)\n\n\nDid you check that this patch was of any use?\n\nIf libsingular.so can't be loaded, then that file can't either. So any error handling within that file won't ever run, because the missing library will already have triggered an ImportError.\n\nThat is my point in comment:13.",
+    "body": "Replying to [comment:14 jakobkroeker]:\n> Hi, I would suggest to improve the error handling for loading libSingular even further as in \n> \n> http://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9\n> see ticket #17254 (upgrade to Singular 4.0.1)\n\n\n\nDid you check that this patch was of any use?\n\nIf libsingular.so can't be loaded, then that file can't either. So any error handling within that file won't ever run, because the missing library will already have triggered an ImportError.\n\nThat is my point in comment:13.",
     "created_at": "2015-02-07T13:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -428,6 +425,7 @@ Replying to [comment:14 jakobkroeker]:
 > see ticket #17254 (upgrade to Singular 4.0.1)
 
 
+
 Did you check that this patch was of any use?
 
 If libsingular.so can't be loaded, then that file can't either. So any error handling within that file won't ever run, because the missing library will already have triggered an ImportError.
@@ -441,7 +439,7 @@ That is my point in comment:13.
 archive/issue_comments_042873.json:
 ```json
 {
-    "body": "> Did you check that this patch was of any use?\n\nI do not exactly understand, what you mean.\n\nMy point is that an error message should be descriptive as possible,\nso if a file cannot be found it should be \n\n```\n   raise OSError, \"did not find libsingular file!\"\n```\n\n\nand if dlopen fails ,it should be something like (I improved the message)\n\n```\n        raise ImportError, \" failed to dlopen \" + lib + \" \"\n```\n\n\nBefore your or mine patch it was even worse,\n(a SIGSEGV because dlerror() is NULL in that case) and that \npuzzled me, since because of the compiled cython stuff I could not exactly see what happened.",
+    "body": "> Did you check that this patch was of any use?\n\n\nI do not exactly understand, what you mean.\n\nMy point is that an error message should be descriptive as possible,\nso if a file cannot be found it should be \n\n```\n   raise OSError, \"did not find libsingular file!\"\n```\n\nand if dlopen fails ,it should be something like (I improved the message)\n\n```\n        raise ImportError, \" failed to dlopen \" + lib + \" \"\n```\n\nBefore your or mine patch it was even worse,\n(a SIGSEGV because dlerror() is NULL in that case) and that \npuzzled me, since because of the compiled cython stuff I could not exactly see what happened.",
     "created_at": "2015-02-07T13:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -452,6 +450,7 @@ archive/issue_comments_042873.json:
 
 > Did you check that this patch was of any use?
 
+
 I do not exactly understand, what you mean.
 
 My point is that an error message should be descriptive as possible,
@@ -461,13 +460,11 @@ so if a file cannot be found it should be
    raise OSError, "did not find libsingular file!"
 ```
 
-
 and if dlopen fails ,it should be something like (I improved the message)
 
 ```
         raise ImportError, " failed to dlopen " + lib + " "
 ```
-
 
 Before your or mine patch it was even worse,
 (a SIGSEGV because dlerror() is NULL in that case) and that 
@@ -480,7 +477,7 @@ puzzled me, since because of the compiled cython stuff I could not exactly see w
 archive/issue_comments_042874.json:
 ```json
 {
-    "body": "> That is my point in comment:13.\n\nThat is a different issue. I recall that hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing c with c++ issues.\n\nIn case libsingular.so was missing, for me it usually ended in \na SIGSEGV.",
+    "body": "> That is my point in comment:13.\n\n\nThat is a different issue. I recall that hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing c with c++ issues.\n\nIn case libsingular.so was missing, for me it usually ended in \na SIGSEGV.",
     "created_at": "2015-02-07T13:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -490,6 +487,7 @@ archive/issue_comments_042874.json:
 ```
 
 > That is my point in comment:13.
+
 
 That is a different issue. I recall that hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing c with c++ issues.
 
@@ -503,7 +501,7 @@ a SIGSEGV.
 archive/issue_comments_042875.json:
 ```json
 {
-    "body": "> That is my point in comment:13.\n\nThat is a different issue. I recall that I hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing C with C++ issues.\n\nIn case libsingular.so was missing, for me it usually ended in \na SIGSEGV or other strange crashes",
+    "body": "> That is my point in comment:13.\n\n\nThat is a different issue. I recall that I hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing C with C++ issues.\n\nIn case libsingular.so was missing, for me it usually ended in \na SIGSEGV or other strange crashes",
     "created_at": "2015-02-07T13:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -513,6 +511,7 @@ archive/issue_comments_042875.json:
 ```
 
 > That is my point in comment:13.
+
 
 That is a different issue. I recall that I hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing C with C++ issues.
 
@@ -544,7 +543,7 @@ I'm happy with this patch (would set to positive_review) but I don't quite under
 archive/issue_comments_042877.json:
 ```json
 {
-    "body": "> I'm happy with this patch\n\nI'm not happy yet with this patch",
+    "body": "> I'm happy with this patch\n\n\nI'm not happy yet with this patch",
     "created_at": "2015-02-07T14:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -554,6 +553,7 @@ archive/issue_comments_042877.json:
 ```
 
 > I'm happy with this patch
+
 
 I'm not happy yet with this patch
 
@@ -590,7 +590,7 @@ I think the correct way to use the dl* functions is with dlsym : you dlopen a li
 archive/issue_comments_042879.json:
 ```json
 {
-    "body": "> This rules out the case where `./sage -ba` would have made things better.\n\nThe issue happened to me when I tried to update Singular (from 3.1.7 to 4.0.1) in a working branch\n(and will of course not happen if you compile from scratch!; that is equivalent to\n`make distclean` and implies `./sage -ba`\n\nHere are some more hints and  I hope it is reproducible\n\n- Compile from scratch the develop branch  (in doubt use commit d27f8497dcd19d70ec08155888e6fec9c74b839a)\n- merge in changes from http://git.sagemath.org/sage.git/commit/?id=221c5d63e02d7f1d7fdc57cf6c819677553dd262 \n- rename \"/lib/libSingular.\" tp \"/lib/libsingular.\" in singular.pyx\n- build (parallelized) again with `make build -j 6` or something similar;\n\nThen I predict that you may hit something you did hit in comment:13.\nIn fact, I have no idea, how you managed to trigger an `ImportError` as in comment:13\n``\n> so playing with dl* is pointless.\n\nare you sidetracking? I issued something different, namely that an error message should be as descriptive as possible;\nespecially when a file is missing a developer would be happy to see that a file is missing and not an `ImportError` or a SIGSEGV as before",
+    "body": "> This rules out the case where `./sage -ba` would have made things better.\n\n\nThe issue happened to me when I tried to update Singular (from 3.1.7 to 4.0.1) in a working branch\n(and will of course not happen if you compile from scratch!; that is equivalent to\n`make distclean` and implies `./sage -ba`\n\nHere are some more hints and  I hope it is reproducible\n\n- Compile from scratch the develop branch  (in doubt use commit d27f8497dcd19d70ec08155888e6fec9c74b839a)\n- merge in changes from http://git.sagemath.org/sage.git/commit/?id=221c5d63e02d7f1d7fdc57cf6c819677553dd262 \n- rename \"/lib/libSingular.\" tp \"/lib/libsingular.\" in singular.pyx\n- build (parallelized) again with `make build -j 6` or something similar;\n\nThen I predict that you may hit something you did hit in comment:13.\nIn fact, I have no idea, how you managed to trigger an `ImportError` as in comment:13\n``\n> so playing with dl* is pointless.\n\n\nare you sidetracking? I issued something different, namely that an error message should be as descriptive as possible;\nespecially when a file is missing a developer would be happy to see that a file is missing and not an `ImportError` or a SIGSEGV as before",
     "created_at": "2015-02-09T12:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -600,6 +600,7 @@ archive/issue_comments_042879.json:
 ```
 
 > This rules out the case where `./sage -ba` would have made things better.
+
 
 The issue happened to me when I tried to update Singular (from 3.1.7 to 4.0.1) in a working branch
 (and will of course not happen if you compile from scratch!; that is equivalent to
@@ -616,6 +617,7 @@ Then I predict that you may hit something you did hit in comment:13.
 In fact, I have no idea, how you managed to trigger an `ImportError` as in comment:13
 ``
 > so playing with dl* is pointless.
+
 
 are you sidetracking? I issued something different, namely that an error message should be as descriptive as possible;
 especially when a file is missing a developer would be happy to see that a file is missing and not an `ImportError` or a SIGSEGV as before
@@ -687,7 +689,7 @@ Indeed, what kind of error will that code detect? It will only trigger when the 
 archive/issue_comments_042883.json:
 ```json
 {
-    "body": "> Indeed, what kind of error will that code detect?\n> It will only trigger when the library will have been loaded in memory (because it links to it)\n\nI'm not sure, but it seems you can't see the case I described, because you are too focused on the scenario you have in mind. Try to think \"what may happen\", not \"what do we want to achieve\"\n``\nCase 1: \n The name of the library is _hardcoded_ in 'singular.pyx', so we might get an issue if there is a typo or the name of the library changed. That happened in Singular 4.0.1, so I was able to compile sage, but then dlopen tried to open a file which did not exist.\n\ncase 2: \n> It will only trigger when the library will have been loaded in memory (because it links to it), but for some reason cannot be reloaded with the new RTLD_* flags!\nExactly. Who knows why dlopen() may fail, so better catch it and watch out for dlerror() == NULL",
+    "body": "> Indeed, what kind of error will that code detect?\n> It will only trigger when the library will have been loaded in memory (because it links to it)\n\n\nI'm not sure, but it seems you can't see the case I described, because you are too focused on the scenario you have in mind. Try to think \"what may happen\", not \"what do we want to achieve\"\n``\nCase 1: \n The name of the library is _hardcoded_ in 'singular.pyx', so we might get an issue if there is a typo or the name of the library changed. That happened in Singular 4.0.1, so I was able to compile sage, but then dlopen tried to open a file which did not exist.\n\ncase 2: \n> It will only trigger when the library will have been loaded in memory (because it links to it), but for some reason cannot be reloaded with the new RTLD_* flags!\nExactly. Who knows why dlopen() may fail, so better catch it and watch out for dlerror() == NULL",
     "created_at": "2015-02-18T11:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
@@ -698,6 +700,7 @@ archive/issue_comments_042883.json:
 
 > Indeed, what kind of error will that code detect?
 > It will only trigger when the library will have been loaded in memory (because it links to it)
+
 
 I'm not sure, but it seems you can't see the case I described, because you are too focused on the scenario you have in mind. Try to think "what may happen", not "what do we want to achieve"
 ``

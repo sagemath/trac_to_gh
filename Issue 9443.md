@@ -3,7 +3,7 @@
 archive/issues_009443.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: infinite polynomial ring\n\nOther implementations of is_integral_domain allow an argument 'proof' whose default value is False.  Infinite polynomial ring omits this argument in its definition of is_integral_domain:\n\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\n-------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_integral_domain() takes exactly 1 argument (2 given)\n\n\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_field() got an unexpected keyword argument 'proof'\n\nIssue created by migration from https://trac.sagemath.org/ticket/9443\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: infinite polynomial ring\n\nOther implementations of is_integral_domain allow an argument 'proof' whose default value is False.  Infinite polynomial ring omits this argument in its definition of is_integral_domain:\n\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\n\n---\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_integral_domain() takes exactly 1 argument (2 given)\n\n\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\n\n---\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_field() got an unexpected keyword argument 'proof'\n\nIssue created by migration from https://trac.sagemath.org/ticket/9443\n\n",
     "created_at": "2010-07-07T02:52:26Z",
     "labels": [
         "component: algebra",
@@ -25,14 +25,16 @@ Other implementations of is_integral_domain allow an argument 'proof' whose defa
 
 sage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')
 sage: W.is_integral_domain()
--------------------------------------------------------------
+
+---
 TypeError                                 Traceback (most recent call last)
 ...
 TypeError: is_integral_domain() takes exactly 1 argument (2 given)
 
 
 sage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')
----------------------------------------------------------------------------
+
+---
 TypeError                                 Traceback (most recent call last)
 ...
 TypeError: is_field() got an unexpected keyword argument 'proof'
@@ -152,7 +154,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090331.json:
 ```json
 {
-    "body": "`make ptestlong` is not done yet. But at least I can confirm that the original problem is fixed:\n\n```\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\nTrue\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\nsage: W\nPower Series Ring in x over Infinite polynomial ring in a over Rational Field\n```\n",
+    "body": "`make ptestlong` is not done yet. But at least I can confirm that the original problem is fixed:\n\n```\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\nTrue\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\nsage: W\nPower Series Ring in x over Infinite polynomial ring in a over Rational Field\n```",
     "created_at": "2010-07-30T17:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -171,7 +173,6 @@ sage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')
 sage: W
 Power Series Ring in x over Infinite polynomial ring in a over Rational Field
 ```
-
 
 
 
@@ -258,7 +259,7 @@ Thanks!  The combined patch should now be complete.
 archive/issue_comments_090336.json:
 ```json
 {
-    "body": "Applying [attachment:trac_9443_default_arguments_combined.patch] to the forthcoming Sage 4.5.2, which is just 4.5.2.rc1 + #9226, I see\n\n```\nHunk #1 FAILED at 1036\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/infinite_polynomial_ring.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_9443_default_arguments_combined.patch\n```\n\nThe reject file's contents:\n\n```diff\n--- infinite_polynomial_ring.py\n+++ infinite_polynomial_ring.py\n@@ -1037,10 +1037,17 @@\n         \"\"\"\n         return False\n \n-    def is_field(self,**kwds):\n+    def is_field(self, *args, **kwds):\n         \"\"\"\n-        Since Infinite Polynomial Rings must have at least one generator, they\n-        have infinitely many variables and thus never are fields.\n+        Return ``False``, since an infinite polynomial ring has at least one\n+        generator and hence infinitely many variables.\n+\n+        EXAMPLES::\n+\n+            sage: R.<x, y> = InfinitePolynomialRing(QQ)\n+            sage: R.is_field()\n+            False\n+\n \n         TESTS::\n \n```\n\n\nCan someone rebase the patch when it's convenient?  It might be sufficient to work from #9114.",
+    "body": "Applying [attachment:trac_9443_default_arguments_combined.patch] to the forthcoming Sage 4.5.2, which is just 4.5.2.rc1 + #9226, I see\n\n```\nHunk #1 FAILED at 1036\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/infinite_polynomial_ring.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_9443_default_arguments_combined.patch\n```\nThe reject file's contents:\n\n```diff\n--- infinite_polynomial_ring.py\n+++ infinite_polynomial_ring.py\n@@ -1037,10 +1037,17 @@\n         \"\"\"\n         return False\n \n-    def is_field(self,**kwds):\n+    def is_field(self, *args, **kwds):\n         \"\"\"\n-        Since Infinite Polynomial Rings must have at least one generator, they\n-        have infinitely many variables and thus never are fields.\n+        Return ``False``, since an infinite polynomial ring has at least one\n+        generator and hence infinitely many variables.\n+\n+        EXAMPLES::\n+\n+            sage: R.<x, y> = InfinitePolynomialRing(QQ)\n+            sage: R.is_field()\n+            False\n+\n \n         TESTS::\n \n```\n\nCan someone rebase the patch when it's convenient?  It might be sufficient to work from #9114.",
     "created_at": "2010-08-07T06:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",
     "type": "issue_comment",
@@ -276,7 +277,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_9443_default_arguments_combined.patch
 ```
-
 The reject file's contents:
 
 ```diff
@@ -304,7 +304,6 @@ The reject file's contents:
          TESTS::
  
 ```
-
 
 Can someone rebase the patch when it's convenient?  It might be sufficient to work from #9114.
 

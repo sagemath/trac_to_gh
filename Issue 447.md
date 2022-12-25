@@ -3,7 +3,7 @@
 archive/issues_000447.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\na = 90123.1293081203890128\na.round?\n```\n\noutputs crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/447\n\n",
+    "body": "Assignee: somebody\n\n```\na = 90123.1293081203890128\na.round?\n```\noutputs crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/447\n\n",
     "created_at": "2007-08-18T22:25:34Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,12 +19,10 @@ archive/issues_000447.json:
 ```
 Assignee: somebody
 
-
 ```
 a = 90123.1293081203890128
 a.round?
 ```
-
 outputs crap.
 
 Issue created by migration from https://trac.sagemath.org/ticket/447

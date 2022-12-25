@@ -3,7 +3,7 @@
 archive/issues_004972.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following should work:\n\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\n\nInstead, I get an error:\n\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should work:\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\nInstead, I get an error:\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
     "created_at": "2009-01-14T08:33:23Z",
     "labels": [
         "component: linear algebra",
@@ -20,15 +20,12 @@ Assignee: @williamstein
 
 The following should work:
 
-
 ```
 a=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])
 a[1,:]=a[0,:]
 ```
 
-
 Instead, I get an error:
-
 
 ```
           	
@@ -47,7 +44,6 @@ Traceback (most recent call last):
 TypeError: 'slice' object cannot be interpreted as an index
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4972
 
@@ -170,7 +166,7 @@ Refreshed patch to fix some doctests.
 archive/issue_comments_037796.json:
 ```json
 {
-    "body": "That's a lot of doctests; cool!  (Maybe some of them should be marked\nas TESTS:, in case we ever get around to having that mean something...)\n\n\n```\n            key -- any legal indexing (i.e., self[key] works)\n```\n\nfeels a little awkward... I had to read it twice to figure out what it\nmeant.  Maybe\n\n```\n            key -- any legal indexing (i.e., such that self[key] works)\n```\n\nwould be better?\n\nI think it's wrong that this works:\n\n```\nsage: M = matrix(3, 2, srange(6)); M[1] = 15; M\n```\n\nbut this raises an exception:\n\n```\nsage: M = matrix(3, 1, srange(3)); M[1] = 15; M\n```\n\n\nA lot of your variables should have type Py_ssize_t rather than int;\nyour current code will give very wrong results on matrices with more\nthan 2<sup>31</sup> rows or columns (which could happen on a 64-bit machine).\n\nOther than that, looks very nice!",
+    "body": "That's a lot of doctests; cool!  (Maybe some of them should be marked\nas TESTS:, in case we ever get around to having that mean something...)\n\n```\n            key -- any legal indexing (i.e., self[key] works)\n```\nfeels a little awkward... I had to read it twice to figure out what it\nmeant.  Maybe\n\n```\n            key -- any legal indexing (i.e., such that self[key] works)\n```\nwould be better?\n\nI think it's wrong that this works:\n\n```\nsage: M = matrix(3, 2, srange(6)); M[1] = 15; M\n```\nbut this raises an exception:\n\n```\nsage: M = matrix(3, 1, srange(3)); M[1] = 15; M\n```\n\nA lot of your variables should have type Py_ssize_t rather than int;\nyour current code will give very wrong results on matrices with more\nthan 2<sup>31</sup> rows or columns (which could happen on a 64-bit machine).\n\nOther than that, looks very nice!",
     "created_at": "2009-02-06T02:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
@@ -182,18 +178,15 @@ archive/issue_comments_037796.json:
 That's a lot of doctests; cool!  (Maybe some of them should be marked
 as TESTS:, in case we ever get around to having that mean something...)
 
-
 ```
             key -- any legal indexing (i.e., self[key] works)
 ```
-
 feels a little awkward... I had to read it twice to figure out what it
 meant.  Maybe
 
 ```
             key -- any legal indexing (i.e., such that self[key] works)
 ```
-
 would be better?
 
 I think it's wrong that this works:
@@ -201,13 +194,11 @@ I think it's wrong that this works:
 ```
 sage: M = matrix(3, 2, srange(6)); M[1] = 15; M
 ```
-
 but this raises an exception:
 
 ```
 sage: M = matrix(3, 1, srange(3)); M[1] = 15; M
 ```
-
 
 A lot of your variables should have type Py_ssize_t rather than int;
 your current code will give very wrong results on matrices with more

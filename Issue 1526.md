@@ -3,7 +3,7 @@
 archive/issues_001526.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nE.g., in linear_code.py line 780 (in extended_code()), this line dominates:\n\n\n```\n        Gxs = Gx._matrix_(F)           # this is the killer\n```\n\n\nThat is dumb.  Optimize this a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1526\n\n",
+    "body": "Assignee: @williamstein\n\nE.g., in linear_code.py line 780 (in extended_code()), this line dominates:\n\n```\n        Gxs = Gx._matrix_(F)           # this is the killer\n```\n\nThat is dumb.  Optimize this a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1526\n\n",
     "created_at": "2007-12-15T23:10:22Z",
     "labels": [
         "component: interfaces"
@@ -18,11 +18,9 @@ Assignee: @williamstein
 
 E.g., in linear_code.py line 780 (in extended_code()), this line dominates:
 
-
 ```
         Gxs = Gx._matrix_(F)           # this is the killer
 ```
-
 
 That is dumb.  Optimize this a lot.
 
@@ -190,7 +188,7 @@ archive/issue_events_003856.json:
 archive/issue_comments_009738.json:
 ```json
 {
-    "body": "The exact code in question no longer exists in that module, though this issue might still be relevant, and would probably be resolved by #26902.\n\nIndeed, this is (unsurprisingly) much faster using the libgap interface.\n\nI wasn't sure exactly how to construct a matrix over a finite field in GAP, so I made it first in Sage, and the passed it to both GAP interfaces, and then back to Sage again:\n\n\n```\nsage: F = GF(2)\nsage: M = matrix(F, [[1,0,0],[1,1,0]])\nsage: M_gap = gap(M); M_gap\n[ [ Z(2)^0, 0*Z(2), 0*Z(2) ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ]\nsage: M_libgap = libgap(M); M_libgap\n[ [ Z(2)^0, 0*Z(2), 0*Z(2) ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ]\nsage: %timeit M_gap._matrix_(F)\n10 loops, best of 3: 22.3 ms per loop\nsage: %timeit M_libgap._matrix_(F)\n1000 loops, best of 3: 902 \u00b5s per loop\n```\n\n\nI think that about speaks for itself.  Repeated experiments showed similar results.",
+    "body": "The exact code in question no longer exists in that module, though this issue might still be relevant, and would probably be resolved by #26902.\n\nIndeed, this is (unsurprisingly) much faster using the libgap interface.\n\nI wasn't sure exactly how to construct a matrix over a finite field in GAP, so I made it first in Sage, and the passed it to both GAP interfaces, and then back to Sage again:\n\n```\nsage: F = GF(2)\nsage: M = matrix(F, [[1,0,0],[1,1,0]])\nsage: M_gap = gap(M); M_gap\n[ [ Z(2)^0, 0*Z(2), 0*Z(2) ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ]\nsage: M_libgap = libgap(M); M_libgap\n[ [ Z(2)^0, 0*Z(2), 0*Z(2) ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ]\nsage: %timeit M_gap._matrix_(F)\n10 loops, best of 3: 22.3 ms per loop\nsage: %timeit M_libgap._matrix_(F)\n1000 loops, best of 3: 902 \u00b5s per loop\n```\n\nI think that about speaks for itself.  Repeated experiments showed similar results.",
     "created_at": "2019-01-15T18:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1526",
     "type": "issue_comment",
@@ -205,7 +203,6 @@ Indeed, this is (unsurprisingly) much faster using the libgap interface.
 
 I wasn't sure exactly how to construct a matrix over a finite field in GAP, so I made it first in Sage, and the passed it to both GAP interfaces, and then back to Sage again:
 
-
 ```
 sage: F = GF(2)
 sage: M = matrix(F, [[1,0,0],[1,1,0]])
@@ -218,7 +215,6 @@ sage: %timeit M_gap._matrix_(F)
 sage: %timeit M_libgap._matrix_(F)
 1000 loops, best of 3: 902 µs per loop
 ```
-
 
 I think that about speaks for itself.  Repeated experiments showed similar results.
 

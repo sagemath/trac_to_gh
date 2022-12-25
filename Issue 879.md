@@ -215,7 +215,7 @@ archive/issue_events_002453.json:
 archive/issue_comments_005431.json:
 ```json
 {
-    "body": "Agreed, it's working now. I broke a test in the tutorial and some others in the main library are failing because of an upgraded Maxima spkg. They all get shown in the summary at the end:\n\n\n```\n$ sage -testall\n\n...\n\nThe following tests failed:\n\n\n\tsage -t  -force_lib \"devel/sage/doc/en/tutorial/tour_functions.rst\"\n\tsage -t  -force_lib \"devel/sage/sage/symbolic/expression.pyx\"\n\tsage -t  -force_lib \"devel/sage/sage/symbolic/integration/integral.py\"\n\tsage -t  -force_lib \"devel/sage/sage/interfaces/maxima_abstract.py\"\n\tsage -t  -force_lib \"devel/sage/sage/tests/cmdline.py\"\nTotal time for all tests: 6717.0 seconds\nPlease see /home/mjo/.sage//tmp/test.log for the complete log from this test.\n```\n",
+    "body": "Agreed, it's working now. I broke a test in the tutorial and some others in the main library are failing because of an upgraded Maxima spkg. They all get shown in the summary at the end:\n\n```\n$ sage -testall\n\n...\n\nThe following tests failed:\n\n\n\tsage -t  -force_lib \"devel/sage/doc/en/tutorial/tour_functions.rst\"\n\tsage -t  -force_lib \"devel/sage/sage/symbolic/expression.pyx\"\n\tsage -t  -force_lib \"devel/sage/sage/symbolic/integration/integral.py\"\n\tsage -t  -force_lib \"devel/sage/sage/interfaces/maxima_abstract.py\"\n\tsage -t  -force_lib \"devel/sage/sage/tests/cmdline.py\"\nTotal time for all tests: 6717.0 seconds\nPlease see /home/mjo/.sage//tmp/test.log for the complete log from this test.\n```",
     "created_at": "2011-12-01T02:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
@@ -225,7 +225,6 @@ archive/issue_comments_005431.json:
 ```
 
 Agreed, it's working now. I broke a test in the tutorial and some others in the main library are failing because of an upgraded Maxima spkg. They all get shown in the summary at the end:
-
 
 ```
 $ sage -testall
@@ -243,7 +242,6 @@ The following tests failed:
 Total time for all tests: 6717.0 seconds
 Please see /home/mjo/.sage//tmp/test.log for the complete log from this test.
 ```
-
 
 
 

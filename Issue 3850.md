@@ -3,7 +3,7 @@
 archive/issues_003850.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n********************************************************************* \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 543: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[7]>\", line 1, in <module> \n        l.index(A)###line 543: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 545: \n    sage: l.index(B) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[8]>\", line 1, in <module> \n        l.index(B)###line 545: \n    sage: l.index(B) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 551: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[9]>\", line 1, in <module> \n        l.index(A)###line 551: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 553: \n    sage: l.index(C) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[10]>\", line 1, in <module> \n        l.index(C)###line 553: \n    sage: l.index(C) \n    SystemError: error return without exception set \n********************************************************************** \n1 items had failures: \n   4 of  35 in __main__.example_12 \n***Test Failed*** 4 failures. \nFor whitespace errors, see the file /Users/palmieri/Desktop/ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3850\n\n",
+    "body": "Assignee: mabshoff\n\n```\n********************************************************************* \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 543: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[7]>\", line 1, in <module> \n        l.index(A)###line 543: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 545: \n    sage: l.index(B) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[8]>\", line 1, in <module> \n        l.index(B)###line 545: \n    sage: l.index(B) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 551: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[9]>\", line 1, in <module> \n        l.index(A)###line 551: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 553: \n    sage: l.index(C) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[10]>\", line 1, in <module> \n        l.index(C)###line 553: \n    sage: l.index(C) \n    SystemError: error return without exception set \n********************************************************************** \n1 items had failures: \n   4 of  35 in __main__.example_12 \n***Test Failed*** 4 failures. \nFor whitespace errors, see the file /Users/palmieri/Desktop/ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3850\n\n",
     "created_at": "2008-08-14T16:19:07Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_003850.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 ********************************************************************* 
@@ -80,7 +79,6 @@ python2.5/doctest.py", line 1228, in __run
 For whitespace errors, see the file /Users/palmieri/Desktop/ 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3850
 
 
@@ -92,7 +90,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3850
 archive/issue_comments_027329.json:
 ```json
 {
-    "body": "From the OSX 10.5 man page:\n\n```\nRETURN VALUES\n     The memcmp() function returns zero if the two strings are identical, \notherwise returns the difference between the first two differing bytes \n(treated as unsigned char values, so that `\\200' is greater than `\\0', \nfor example).  Zero-length strings are always identical.\n```\n",
+    "body": "From the OSX 10.5 man page:\n\n```\nRETURN VALUES\n     The memcmp() function returns zero if the two strings are identical, \notherwise returns the difference between the first two differing bytes \n(treated as unsigned char values, so that `\\200' is greater than `\\0', \nfor example).  Zero-length strings are always identical.\n```",
     "created_at": "2008-08-15T08:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3850",
     "type": "issue_comment",
@@ -110,7 +108,6 @@ otherwise returns the difference between the first two differing bytes
 (treated as unsigned char values, so that `\200' is greater than `\0', 
 for example).  Zero-length strings are always identical.
 ```
-
 
 
 

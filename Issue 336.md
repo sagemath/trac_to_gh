@@ -48,7 +48,7 @@ archive/issue_events_000788.json:
 archive/issue_comments_001645.json:
 ```json
 {
-    "body": "The attached patch does the following:\n\n```\nFix trac #336 -- \"delete all output\" for the Sage notebook worksheets.  Also:\n   1. Changed \"Revisions\" to \"Undo\" in the notebook, since it is clearer.\n   2. Added several new functions needed to implement #336 and fully documented\n      and doctested all of them.  This meant improving the functions that\n      support writing doctests for the notebook, and doctesting those \n      functions too.  Doctesting of the notebook is thus actually *greatly*\n      improved by this patch.\n   3. Made some fixes to doctests also so that parallel doctesting works.    \n      In particular, avoid clashes in temp notebook names. \n   4. Created a cell \"evaluated\" function to keep track of whether or not\n      cells have been evaluated.  I did this in order to non-hackishly \n      implement \"delete all output\".  It will also be very useful for other\n      tickets.   I added a lot of doctesting related to this too. \n   5. Added a worksheet function user_can_edit to double check that the\n      given user can edit the worksheet; this is used by the \"delete all output\" \n      code as a double check that invalid users can't delete all output. \n```\n\n\nTo test it do the following:\n1. apply the patch and build\n2. Make a worksheet and selected \"Action -> Delete all output\"\n3. Note that all output is gone.  Click refresh to see that the server got the message\n4. Doctest the sage/server/notebook directory.  It has a bunch of new doctests.\n5. Read over the patch itself to see how it's all implemented:\n       * some javascript to delete the output from the DOM\n       * some server-side python code to do the actual deleting\n       * some general server-side code to improving doctesting of the notebook.\n       * general doc improvements.",
+    "body": "The attached patch does the following:\n\n```\nFix trac #336 -- \"delete all output\" for the Sage notebook worksheets.  Also:\n   1. Changed \"Revisions\" to \"Undo\" in the notebook, since it is clearer.\n   2. Added several new functions needed to implement #336 and fully documented\n      and doctested all of them.  This meant improving the functions that\n      support writing doctests for the notebook, and doctesting those \n      functions too.  Doctesting of the notebook is thus actually *greatly*\n      improved by this patch.\n   3. Made some fixes to doctests also so that parallel doctesting works.    \n      In particular, avoid clashes in temp notebook names. \n   4. Created a cell \"evaluated\" function to keep track of whether or not\n      cells have been evaluated.  I did this in order to non-hackishly \n      implement \"delete all output\".  It will also be very useful for other\n      tickets.   I added a lot of doctesting related to this too. \n   5. Added a worksheet function user_can_edit to double check that the\n      given user can edit the worksheet; this is used by the \"delete all output\" \n      code as a double check that invalid users can't delete all output. \n```\n\nTo test it do the following:\n1. apply the patch and build\n2. Make a worksheet and selected \"Action -> Delete all output\"\n3. Note that all output is gone.  Click refresh to see that the server got the message\n4. Doctest the sage/server/notebook directory.  It has a bunch of new doctests.\n5. Read over the patch itself to see how it's all implemented:\n       * some javascript to delete the output from the DOM\n       * some server-side python code to do the actual deleting\n       * some general server-side code to improving doctesting of the notebook.\n       * general doc improvements.",
     "created_at": "2008-05-10T19:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ Fix trac #336 -- "delete all output" for the Sage notebook worksheets.  Also:
       given user can edit the worksheet; this is used by the "delete all output" 
       code as a double check that invalid users can't delete all output. 
 ```
-
 
 To test it do the following:
 1. apply the patch and build
@@ -115,7 +114,7 @@ Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-
 archive/issue_comments_001647.json:
 ```json
 {
-    "body": "One doctest failure\n\n\n```\nFile \"/home/tclemans/sage-3.0/tmp/notebook.py\", line 133:\n    sage: os.listdir('notebook-test')\nExpected:\n    ['backups', 'nb.sobj', 'objects', 'worksheets']\nGot:\n    ['worksheets', 'objects', 'backups', 'nb.sobj']\n```\n",
+    "body": "One doctest failure\n\n```\nFile \"/home/tclemans/sage-3.0/tmp/notebook.py\", line 133:\n    sage: os.listdir('notebook-test')\nExpected:\n    ['backups', 'nb.sobj', 'objects', 'worksheets']\nGot:\n    ['worksheets', 'objects', 'backups', 'nb.sobj']\n```",
     "created_at": "2008-05-11T03:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
@@ -126,7 +125,6 @@ archive/issue_comments_001647.json:
 
 One doctest failure
 
-
 ```
 File "/home/tclemans/sage-3.0/tmp/notebook.py", line 133:
     sage: os.listdir('notebook-test')
@@ -135,7 +133,6 @@ Expected:
 Got:
     ['worksheets', 'objects', 'backups', 'nb.sobj']
 ```
-
 
 
 

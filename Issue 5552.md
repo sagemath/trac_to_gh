@@ -3,7 +3,7 @@
 archive/issues_005552.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nplot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) \n```\n\nshould only have one function, not the two functions left over from plot_vector_field\n\nIssue created by migration from https://trac.sagemath.org/ticket/5552\n\n",
+    "body": "Assignee: @williamstein\n\n```\nplot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) \n```\nshould only have one function, not the two functions left over from plot_vector_field\n\nIssue created by migration from https://trac.sagemath.org/ticket/5552\n\n",
     "created_at": "2009-03-17T20:45:26Z",
     "labels": [
         "component: graphics",
@@ -19,11 +19,9 @@ archive/issues_005552.json:
 ```
 Assignee: @williamstein
 
-
 ```
 plot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) 
 ```
-
 should only have one function, not the two functions left over from plot_vector_field
 
 Issue created by migration from https://trac.sagemath.org/ticket/5552

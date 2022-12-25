@@ -3,7 +3,7 @@
 archive/issues_005624.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nOn Sat, Mar 28, 2009 at 6:26 AM, Jason Bandlow <...> wrote:\n>> I'm guessing this is a subtle 32 versus 64-bit issue involving\n>> pickling and assumptions made somewhere in the combinat or other sage\n>> code involving 32/64-bit.  The notebook is 64-bit and I bet your\n>> computer is 32-bit.\n>>\n>> By the way, this works on the notebook in the context of your session above:\n>>\n>> for a, b in M.iteritems():\n>>     if a == key: print b\n>>\n>\n> Thanks William!  This does seem likely to be the problem.  I'll do more\n> investigation when I get a chance and see if I can find out precisely\n> where the problem is.\n\nI know of one place in sage where objects cache their hash for efficiency reasons (e.g., I think Sage matrices do). I hadn't thought about the fact that pickling, moving to an object to a platform where the hashes are different, and unpickling, would result in the subtle issue above, but that makes sense.   Here is an example:\n\nOn a 32-bit platform do this:\n\nsage: a = matrix(ZZ,2,[1,-2,4,1993938292]); a.set_immutable(); b = {a:5}; save(b,'/Users/wstein/b.sobj')\n\nThen load b on a 64-bit platform (e.g. ,sage.math):\n\nsage: a = matrix(ZZ,2,[1,-2,4,1993938292]); a.set_immutable(); b = load('b.sobj'); b[a]\nboom! KeyError ...\nsage: sage: b.keys()[0] == a\nTrue\n\nThe fix here is that right before pickling the cached hash of the matrix should be deleted.\n\nI don't know any other places in Sage that do the above.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5624\n\n",
+    "body": "Assignee: cwitty\n\n```\nOn Sat, Mar 28, 2009 at 6:26 AM, Jason Bandlow <...> wrote:\n>> I'm guessing this is a subtle 32 versus 64-bit issue involving\n>> pickling and assumptions made somewhere in the combinat or other sage\n>> code involving 32/64-bit.  The notebook is 64-bit and I bet your\n>> computer is 32-bit.\n>>\n>> By the way, this works on the notebook in the context of your session above:\n>>\n>> for a, b in M.iteritems():\n>>     if a == key: print b\n>>\n>\n> Thanks William!  This does seem likely to be the problem.  I'll do more\n> investigation when I get a chance and see if I can find out precisely\n> where the problem is.\n\nI know of one place in sage where objects cache their hash for efficiency reasons (e.g., I think Sage matrices do). I hadn't thought about the fact that pickling, moving to an object to a platform where the hashes are different, and unpickling, would result in the subtle issue above, but that makes sense.   Here is an example:\n\nOn a 32-bit platform do this:\n\nsage: a = matrix(ZZ,2,[1,-2,4,1993938292]); a.set_immutable(); b = {a:5}; save(b,'/Users/wstein/b.sobj')\n\nThen load b on a 64-bit platform (e.g. ,sage.math):\n\nsage: a = matrix(ZZ,2,[1,-2,4,1993938292]); a.set_immutable(); b = load('b.sobj'); b[a]\nboom! KeyError ...\nsage: sage: b.keys()[0] == a\nTrue\n\nThe fix here is that right before pickling the cached hash of the matrix should be deleted.\n\nI don't know any other places in Sage that do the above.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5624\n\n",
     "created_at": "2009-03-28T15:17:37Z",
     "labels": [
         "component: misc",
@@ -17,7 +17,6 @@ archive/issues_005624.json:
 }
 ```
 Assignee: cwitty
-
 
 ```
 On Sat, Mar 28, 2009 at 6:26 AM, Jason Bandlow <...> wrote:
@@ -53,7 +52,6 @@ The fix here is that right before pickling the cached hash of the matrix should 
 
 I don't know any other places in Sage that do the above.  
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5624
 

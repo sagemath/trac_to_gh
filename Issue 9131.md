@@ -3,7 +3,7 @@
 archive/issues_009131.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\n\n```\n\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n****************************************************\nBuilding a 32-bit version of Readline\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported.\nUsing CFLAGS= -O2  -g  -Wall \nUsing CXXFLAGS= -O2  -g  -Wall\nUsing FCFLAGS= -O2  -g  -Wall\nUsing F77FLAGS= -O2  -g  -Wall\nUsing CPPFLAGS=\nUsing LDFLAGS=\nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n\nDeleting old readline headers and libs\n./spkg-install: line 204: ./configure: No such file or directory\n\nreal    0m0.101s\nuser    0m0.016s\nsys     0m0.062s\nsage: An error occurred while installing readline-6.0.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9131\n\n",
+    "body": "Assignee: GeorgSWeber\n\n```\n\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n****************************************************\nBuilding a 32-bit version of Readline\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported.\nUsing CFLAGS= -O2  -g  -Wall \nUsing CXXFLAGS= -O2  -g  -Wall\nUsing FCFLAGS= -O2  -g  -Wall\nUsing F77FLAGS= -O2  -g  -Wall\nUsing CPPFLAGS=\nUsing LDFLAGS=\nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n\nDeleting old readline headers and libs\n./spkg-install: line 204: ./configure: No such file or directory\n\nreal    0m0.101s\nuser    0m0.016s\nsys     0m0.062s\nsage: An error occurred while installing readline-6.0.p1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9131\n\n",
     "created_at": "2010-06-03T15:24:27Z",
     "labels": [
         "component: build",
@@ -18,7 +18,6 @@ archive/issues_009131.json:
 }
 ```
 Assignee: GeorgSWeber
-
 
 ```
 
@@ -52,7 +51,6 @@ sys     0m0.062s
 sage: An error occurred while installing readline-6.0.p1
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9131
 
 
@@ -81,7 +79,7 @@ archive/issue_events_022435.json:
 archive/issue_comments_084979.json:
 ```json
 {
-    "body": "This is caused by:\n\n```\n\nreadline-6.0.p1/src/doc/readline.dvi\ntar: Skipping to next header\ntar: Archive contains obsolescent base-64 headers\n\nbzip2: Data integrity error when decompressing.\n        Input file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Read 3272 bytes from spkg/standard/readline-6.0.p1.spkg\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n```\n",
+    "body": "This is caused by:\n\n```\n\nreadline-6.0.p1/src/doc/readline.dvi\ntar: Skipping to next header\ntar: Archive contains obsolescent base-64 headers\n\nbzip2: Data integrity error when decompressing.\n        Input file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Read 3272 bytes from spkg/standard/readline-6.0.p1.spkg\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n```",
     "created_at": "2010-06-03T16:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
@@ -111,7 +109,6 @@ tar: Read 3272 bytes from spkg/standard/readline-6.0.p1.spkg
 tar: Child returned status 2
 tar: Error exit delayed from previous errors
 ```
-
 
 
 

@@ -104,7 +104,7 @@ Sorry for jumping in so late. I guess what the ticket is supposed to do is to sw
 archive/issue_comments_050776.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n> Sorry for jumping in so late. I guess what the ticket is supposed to do is to switch to `-O0` on Itanium **only**, right?\n\nCorrect.",
+    "body": "Replying to [comment:4 malb]:\n> Sorry for jumping in so late. I guess what the ticket is supposed to do is to switch to `-O0` on Itanium **only**, right?\n\n\nCorrect.",
     "created_at": "2009-06-19T16:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6360",
     "type": "issue_comment",
@@ -115,5 +115,6 @@ archive/issue_comments_050776.json:
 
 Replying to [comment:4 malb]:
 > Sorry for jumping in so late. I guess what the ticket is supposed to do is to switch to `-O0` on Itanium **only**, right?
+
 
 Correct.

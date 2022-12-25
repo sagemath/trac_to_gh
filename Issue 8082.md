@@ -3,7 +3,7 @@
 archive/issues_008082.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nKeywords: plot\n\nWe have a strange behavior\n\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\n\n\nThis patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing\n\n\n```\nsage: point([CC(0), CC(1)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
+    "body": "Assignee: @videlec\n\nKeywords: plot\n\nWe have a strange behavior\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\n\nThis patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing\n\n```\nsage: point([CC(0), CC(1)])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
     "created_at": "2010-01-26T18:37:49Z",
     "labels": [
         "component: graphics"
@@ -21,21 +21,17 @@ Keywords: plot
 
 We have a strange behavior
 
-
 ```
 sage: point(CC(0))  # plot a point with coordinates (0, 0)
 sage: point(CC(1))  # plot a point with coordinates (1, 0)
 sage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)
 ```
 
-
 This patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing
-
 
 ```
 sage: point([CC(0), CC(1)])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8082
 
@@ -156,7 +152,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070710.json:
 ```json
 {
-    "body": "Works as advertised\n\n\n```\n# (1) pre-patch, this plotted a point with coordinates (0, 1)\n# (2) post-patch, this plots 2 points at (0,0) and (1,0) as designed\nsage: point([CC(0),CC(1)])\n\n# plot the 8 vertices of an octagon\nsage: point([CC(cos(theta)+I*sin(theta)) for theta in srange(0, 2*pi, pi/4)],aspect_ratio=1)\n```\n",
+    "body": "Works as advertised\n\n```\n# (1) pre-patch, this plotted a point with coordinates (0, 1)\n# (2) post-patch, this plots 2 points at (0,0) and (1,0) as designed\nsage: point([CC(0),CC(1)])\n\n# plot the 8 vertices of an octagon\nsage: point([CC(cos(theta)+I*sin(theta)) for theta in srange(0, 2*pi, pi/4)],aspect_ratio=1)\n```",
     "created_at": "2010-01-31T10:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
@@ -167,7 +163,6 @@ archive/issue_comments_070710.json:
 
 Works as advertised
 
-
 ```
 # (1) pre-patch, this plotted a point with coordinates (0, 1)
 # (2) post-patch, this plots 2 points at (0,0) and (1,0) as designed
@@ -176,7 +171,6 @@ sage: point([CC(0),CC(1)])
 # plot the 8 vertices of an octagon
 sage: point([CC(cos(theta)+I*sin(theta)) for theta in srange(0, 2*pi, pi/4)],aspect_ratio=1)
 ```
-
 
 
 

@@ -103,7 +103,7 @@ Apply.
 archive/issue_comments_014539.json:
 ```json
 {
-    "body": "Please rebase:\n\n```\nsage$ patch -p1 --dry-run < trac-2028-part1.patch\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 FAILED at 365.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Please rebase:\n\n```\nsage$ patch -p1 --dry-run < trac-2028-part1.patch\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 FAILED at 365.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-19T15:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ patching file sage/matrix/matrix_symbolic_dense.pyx
 Hunk #1 FAILED at 365.
 1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej
 ```
-
 
 Cheers,
 
@@ -313,7 +312,7 @@ Resolution: fixed
 archive/issue_comments_014547.json:
 ```json
 {
-    "body": "When I tested 2.10.3.rc2 I got this:\n\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyxemacs devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 871:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n**********************************************************************\n```\n\n\nand I suggest changing line 871 from\n\n```\n            sage: list(a.fcp())\n```\n\nto\n\n```\n            sage: sorted(list(a.fcp()))\n```\n",
+    "body": "When I tested 2.10.3.rc2 I got this:\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyxemacs devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 871:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n**********************************************************************\n```\n\nand I suggest changing line 871 from\n\n```\n            sage: list(a.fcp())\n```\nto\n\n```\n            sage: sorted(list(a.fcp()))\n```",
     "created_at": "2008-03-05T22:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
     "type": "issue_comment",
@@ -323,7 +322,6 @@ archive/issue_comments_014547.json:
 ```
 
 When I tested 2.10.3.rc2 I got this:
-
 
 ```
 sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyxemacs devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx**********************************************************************
@@ -336,16 +334,13 @@ Got:
 **********************************************************************
 ```
 
-
 and I suggest changing line 871 from
 
 ```
             sage: list(a.fcp())
 ```
-
 to
 
 ```
             sage: sorted(list(a.fcp()))
 ```
-

@@ -3,7 +3,7 @@
 archive/issues_000243.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nFrom David Kohel\n\n```\nsage: G = SymmetricGroup(16)\nsage: g = G.random() # note random_element doesn't exist which seems to be the SAGE preference\nsage: parent(g) is G\nTrue\nsage: parent(g) == G\nTrue\nsage: g in G # hangs despite the above...not sure where it goes wrong\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/243\n\n",
+    "body": "Assignee: somebody\n\nFrom David Kohel\n\n```\nsage: G = SymmetricGroup(16)\nsage: g = G.random() # note random_element doesn't exist which seems to be the SAGE preference\nsage: parent(g) is G\nTrue\nsage: parent(g) == G\nTrue\nsage: g in G # hangs despite the above...not sure where it goes wrong\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/243\n\n",
     "created_at": "2007-02-04T22:51:48Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,7 +28,6 @@ sage: parent(g) == G
 True
 sage: g in G # hangs despite the above...not sure where it goes wrong
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/243
 

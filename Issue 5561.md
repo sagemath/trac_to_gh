@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5561
 archive/issue_comments_043192.json:
 ```json
 {
-    "body": "On second thougths, Carl Witty's suggestion seems to be overdoing things a bit.\n\nWe could just do this (all explained properly in docstrings, of course):   \n\n```\nR=self.base_ring()\nif R.is_field() and R.is_finite():\n# use the current code\nelse:\n   return R.ideal(self.coefficient_list())==R.ideal(1)\n```\n",
+    "body": "On second thougths, Carl Witty's suggestion seems to be overdoing things a bit.\n\nWe could just do this (all explained properly in docstrings, of course):   \n\n```\nR=self.base_ring()\nif R.is_field() and R.is_finite():\n# use the current code\nelse:\n   return R.ideal(self.coefficient_list())==R.ideal(1)\n```",
     "created_at": "2009-03-18T20:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ if R.is_field() and R.is_finite():
 else:
    return R.ideal(self.coefficient_list())==R.ideal(1)
 ```
-
 
 
 
@@ -99,7 +98,7 @@ Patch applies against 3.4.1.alpha0 or 3.4.0 on top of patch for #5535.  Note tha
 archive/issue_comments_043194.json:
 ```json
 {
-    "body": "review: needs a little work!\n    \n1. insert \"not\" before \"R.is_finite()\" !\n2. the line  return R.ideal(self.coefficient_list())==R.ideal(1)  does not work.\n\nBoth these were discovered using plain \"sage -t\" on the file.\n\nI fear that resolving the second one will reveal nasty inconsistencies in ideal creation for various rings.   First change self.coefficient_list() to self.list(), I think.  And change R.ideal(1) to R.unit_ideal().  then the only thing which fails is the pair of examples over Integers(10).  But this is a different bug:\n\n```\nsage: Integers(10).ideal([5,2])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/31627/_home_masgaj__sage_init_sage_0.py in <module>()\n\n/local/jec/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in ideal(self, *gens, **kwds)\n    487             gens = gens[0]\n    488         from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n--> 489         if not isinstance(self.__R,MPolynomialRing_libsingular) and not self.__R._has_singular:\n    490             # pass through\n    491             MPolynomialRing_generic.ideal(self,gens,**kwds)\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute '_has_singular'\n```\n\n\nwhich will have to get ticketed and fixed before this one is done (unless we just delete that example for now).",
+    "body": "review: needs a little work!\n    \n1. insert \"not\" before \"R.is_finite()\" !\n2. the line  return R.ideal(self.coefficient_list())==R.ideal(1)  does not work.\n\nBoth these were discovered using plain \"sage -t\" on the file.\n\nI fear that resolving the second one will reveal nasty inconsistencies in ideal creation for various rings.   First change self.coefficient_list() to self.list(), I think.  And change R.ideal(1) to R.unit_ideal().  then the only thing which fails is the pair of examples over Integers(10).  But this is a different bug:\n\n```\nsage: Integers(10).ideal([5,2])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/31627/_home_masgaj__sage_init_sage_0.py in <module>()\n\n/local/jec/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in ideal(self, *gens, **kwds)\n    487             gens = gens[0]\n    488         from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n--> 489         if not isinstance(self.__R,MPolynomialRing_libsingular) and not self.__R._has_singular:\n    490             # pass through\n    491             MPolynomialRing_generic.ideal(self,gens,**kwds)\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute '_has_singular'\n```\n\nwhich will have to get ticketed and fixed before this one is done (unless we just delete that example for now).",
     "created_at": "2009-04-01T16:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
@@ -133,7 +132,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute '_has_singular'
 ```
-
 
 which will have to get ticketed and fixed before this one is done (unless we just delete that example for now).
 

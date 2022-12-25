@@ -3,7 +3,7 @@
 archive/issues_004140.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: naughty libraries\n\nWhen fink is in the path, sage-check-libraries.py reveals that the following libraries get called in to vanilla sage:\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\n\nAlso, clisp didn't biuld, with \n\n```\ndyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /sw/lib/libJPEG.dylib\n```\n\n\nand if it had built, maybe more bad linkages would have shown up.  \n\nAt the moment, this ticket is quite open ended, and probably needs to be split into little specific tickets.  Would appreciate any vision on exactly what would go in those tickets.\n\nIf have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4140\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: naughty libraries\n\nWhen fink is in the path, sage-check-libraries.py reveals that the following libraries get called in to vanilla sage:\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nAlso, clisp didn't biuld, with \n\n```\ndyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /sw/lib/libJPEG.dylib\n```\n\nand if it had built, maybe more bad linkages would have shown up.  \n\nAt the moment, this ticket is quite open ended, and probably needs to be split into little specific tickets.  Would appreciate any vision on exactly what would go in those tickets.\n\nIf have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4140\n\n",
     "created_at": "2008-09-17T23:13:47Z",
     "labels": [
         "component: distribution",
@@ -29,7 +29,6 @@ sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file
 sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib
 ```
 
-
 Also, clisp didn't biuld, with 
 
 ```
@@ -37,7 +36,6 @@ dyld: Symbol not found: __cg_jpeg_resync_to_restart
   Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO
   Expected in: /sw/lib/libJPEG.dylib
 ```
-
 
 and if it had built, maybe more bad linkages would have shown up.  
 
@@ -56,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4140
 archive/issue_comments_030001.json:
 ```json
 {
-    "body": "Attachment [sage-library-whitelist-osx-](tarball://root/attachments/some-uuid/ticket4140/sage-library-whitelist-osx-) by mabshoff created at 2008-09-18 00:25:20\n\nHi David,\n\nit should be one issue per ticket, so I edited this ticket to be limited to the clisp issue. \n\nThe problem with R should be another ticket and fixed:\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nThe db extension with Python\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\n```\n\nis something we will likely not fix since it should not cause any trouble.\n\nYou alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check \"settings\" in the upper right corner. \n\nCheers,\n\nMichael",
+    "body": "Attachment [sage-library-whitelist-osx-](tarball://root/attachments/some-uuid/ticket4140/sage-library-whitelist-osx-) by mabshoff created at 2008-09-18 00:25:20\n\nHi David,\n\nit should be one issue per ticket, so I edited this ticket to be limited to the clisp issue. \n\nThe problem with R should be another ticket and fixed:\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\nThe db extension with Python\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\n```\nis something we will likely not fix since it should not cause any trouble.\n\nYou alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check \"settings\" in the upper right corner. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-18T00:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
@@ -77,13 +75,11 @@ The problem with R should be another ticket and fixed:
 sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib
 sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib
 ```
-
 The db extension with Python
 
 ```
 sage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib
 ```
-
 is something we will likely not fix since it should not cause any trouble.
 
 You alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check "settings" in the upper right corner. 
@@ -160,7 +156,7 @@ D
 archive/issue_comments_030004.json:
 ```json
 {
-    "body": "Similar problem with MacPorts:\n\n```\ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/dphilp/s312/sage-3.1.2/local/lib//libPng.dylib\n```\n\noddly enough it says nothing about /opt.  The preceding line is:\n\n```\ndvipdf clisp.dvi clisp.pdf\n```\n\nand so I assume it's Ports' dvipdf that is calling the ImageIO framework.",
+    "body": "Similar problem with MacPorts:\n\n```\ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/dphilp/s312/sage-3.1.2/local/lib//libPng.dylib\n```\noddly enough it says nothing about /opt.  The preceding line is:\n\n```\ndvipdf clisp.dvi clisp.pdf\n```\nand so I assume it's Ports' dvipdf that is calling the ImageIO framework.",
     "created_at": "2008-09-18T04:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
@@ -176,13 +172,11 @@ dyld: Symbol not found: __cg_png_create_info_struct
   Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO
   Expected in: /Users/dphilp/s312/sage-3.1.2/local/lib//libPng.dylib
 ```
-
 oddly enough it says nothing about /opt.  The preceding line is:
 
 ```
 dvipdf clisp.dvi clisp.pdf
 ```
-
 and so I assume it's Ports' dvipdf that is calling the ImageIO framework.
 
 

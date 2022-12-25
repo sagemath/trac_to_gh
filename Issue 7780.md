@@ -3,7 +3,7 @@
 archive/issues_007780.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: latex\n\nBuilding docs in 4.3, there are some latex errors:\n\n```\nWARNING: display latex u'\\\\mbox{min_bound} \\\\leq \\\\mbox{linear_function} \\\\leq \\\\mbox{max_bound}': latex exited with error:\n```\n\ncaused by the underscores in min_bound, max_bound and linear_function.  These come from numerical/mip.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7780\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: latex\n\nBuilding docs in 4.3, there are some latex errors:\n\n```\nWARNING: display latex u'\\\\mbox{min_bound} \\\\leq \\\\mbox{linear_function} \\\\leq \\\\mbox{max_bound}': latex exited with error:\n```\ncaused by the underscores in min_bound, max_bound and linear_function.  These come from numerical/mip.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7780\n\n",
     "created_at": "2009-12-28T16:38:16Z",
     "labels": [
         "component: documentation",
@@ -25,7 +25,6 @@ Building docs in 4.3, there are some latex errors:
 ```
 WARNING: display latex u'\\mbox{min_bound} \\leq \\mbox{linear_function} \\leq \\mbox{max_bound}': latex exited with error:
 ```
-
 caused by the underscores in min_bound, max_bound and linear_function.  These come from numerical/mip.pyx.
 
 
@@ -165,7 +164,7 @@ This is a duplicate of #7768. The latter has already received positive review.
 archive/issue_comments_066969.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n> This is a duplicate of #7768. The latter has already received positive review.\n\nFair enough, I wasted your (and my) time, sorry.  I did look for a ticket on this but obviously not well enough.",
+    "body": "Replying to [comment:2 mvngu]:\n> This is a duplicate of #7768. The latter has already received positive review.\n\n\nFair enough, I wasted your (and my) time, sorry.  I did look for a ticket on this but obviously not well enough.",
     "created_at": "2009-12-28T17:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
@@ -176,5 +175,6 @@ archive/issue_comments_066969.json:
 
 Replying to [comment:2 mvngu]:
 > This is a duplicate of #7768. The latter has already received positive review.
+
 
 Fair enough, I wasted your (and my) time, sorry.  I did look for a ticket on this but obviously not well enough.

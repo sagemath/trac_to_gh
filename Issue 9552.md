@@ -3,7 +3,7 @@
 archive/issues_009552.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @kiwifb\n\nI noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kiwifb\n\nI noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
     "created_at": "2010-07-19T19:59:21Z",
     "labels": [
         "component: misc",
@@ -31,7 +31,6 @@ I noticed to my surprise that misc/cython.pyx has these lines in it (which shoul
                                          use_cache=use_cache,
                                          create_local_c_file=False)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9552
 
@@ -183,7 +182,7 @@ In this case the "right" fix is to move the whole Cython stuff somewhere else, p
 archive/issue_comments_091915.json:
 ```json
 {
-    "body": "Indeed, this wouldn't be hard to do.  Worst-case we could move them but leave a deprecation that points to the new location (cython.py seems best).\n\n```\nsage: search_src('cython_import')\nmisc/cython.py:657:    sage.server.support.cython_import_all(tmpfile, d,\nmisc/cython.py:756:    from sage.server.support import cython_import\nmisc/cython.py:757:    return cython_import(file, create_local_c_file=False)\nmisc/cython_c.pyx:61:    sage.server.support.cython_import_all(tmpfile, globals(),\nserver/support.py:425:def cython_import(filename, verbose=False, compile_message=False,\nserver/support.py:452:def cython_import_all(filename, globals, verbose=False, compile_message=False,\nserver/support.py:468:    m = cython_import(filename, verbose=verbose, compile_message=compile_message,\n```\n\nThe notebook already has its own versions of these two functions so that is not a problem, as far as I can tell (though it wouldn't hurt testing it can still Cythonize after doing this).",
+    "body": "Indeed, this wouldn't be hard to do.  Worst-case we could move them but leave a deprecation that points to the new location (cython.py seems best).\n\n```\nsage: search_src('cython_import')\nmisc/cython.py:657:    sage.server.support.cython_import_all(tmpfile, d,\nmisc/cython.py:756:    from sage.server.support import cython_import\nmisc/cython.py:757:    return cython_import(file, create_local_c_file=False)\nmisc/cython_c.pyx:61:    sage.server.support.cython_import_all(tmpfile, globals(),\nserver/support.py:425:def cython_import(filename, verbose=False, compile_message=False,\nserver/support.py:452:def cython_import_all(filename, globals, verbose=False, compile_message=False,\nserver/support.py:468:    m = cython_import(filename, verbose=verbose, compile_message=compile_message,\n```\nThe notebook already has its own versions of these two functions so that is not a problem, as far as I can tell (though it wouldn't hurt testing it can still Cythonize after doing this).",
     "created_at": "2014-08-15T05:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
@@ -204,7 +203,6 @@ server/support.py:425:def cython_import(filename, verbose=False, compile_message
 server/support.py:452:def cython_import_all(filename, globals, verbose=False, compile_message=False,
 server/support.py:468:    m = cython_import(filename, verbose=verbose, compile_message=compile_message,
 ```
-
 The notebook already has its own versions of these two functions so that is not a problem, as far as I can tell (though it wouldn't hurt testing it can still Cythonize after doing this).
 
 

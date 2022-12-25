@@ -3,7 +3,7 @@
 archive/issues_005509.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following documentation looks weird because the \\t in the \\times in the string gets converted to a tab.\n\n\n```\nsage: p.triangulate?\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>\nNamespace:\tInteractive\nDocstring:\n    \n            Call self.eval() for all (u,v) in urange \times vrange\n            to construct this surface. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5509\n\n",
+    "body": "Assignee: @williamstein\n\nThe following documentation looks weird because the \\t in the \\times in the string gets converted to a tab.\n\n```\nsage: p.triangulate?\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>\nNamespace:\tInteractive\nDocstring:\n    \n            Call self.eval() for all (u,v) in urange \times vrange\n            to construct this surface. \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5509\n\n",
     "created_at": "2009-03-13T14:39:51Z",
     "labels": [
         "component: graphics",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 The following documentation looks weird because the \t in the \times in the string gets converted to a tab.
 
-
 ```
 sage: p.triangulate?
 Type:		builtin_function_or_method
@@ -34,7 +33,6 @@ Docstring:
             to construct this surface. 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5509
 

@@ -196,7 +196,7 @@ There seems to be a problem with attributes insert, contains, get, get_min, get_
 archive/issue_comments_079203.json:
 ```json
 {
-    "body": "Replying to [comment:6 chapoton]:\n> There seems to be a problem with attributes insert, contains, get, get_min, get_max and contains. Please see the report of the buildbot.\n\nYes ! There is already something in sage which is called `BinaryTree`. I\njust asked for an incompatible change on\n[sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/1856db31a5cc54f2?hl=fr) and\n[sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1856db31a5cc54f2)",
+    "body": "Replying to [comment:6 chapoton]:\n> There seems to be a problem with attributes insert, contains, get, get_min, get_max and contains. Please see the report of the buildbot.\n\n\nYes ! There is already something in sage which is called `BinaryTree`. I\njust asked for an incompatible change on\n[sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/1856db31a5cc54f2?hl=fr) and\n[sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1856db31a5cc54f2)",
     "created_at": "2011-06-13T11:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -207,6 +207,7 @@ archive/issue_comments_079203.json:
 
 Replying to [comment:6 chapoton]:
 > There seems to be a problem with attributes insert, contains, get, get_min, get_max and contains. Please see the report of the buildbot.
+
 
 Yes ! There is already something in sage which is called `BinaryTree`. I
 just asked for an incompatible change on
@@ -375,7 +376,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079212.json:
 ```json
 {
-    "body": "Hello,\n\nNathan, your review patch has 2 problems :\n\n* there lacks the ticket number in the first line of the description\n\n* there is a trailing whitespace, see the bot report for the exact location\n\nFlorent, it seems the you are using several non-existing options for DiGraph, unless these options are introduced in another ticket ?\n\n\n```\nDiGraph(loop=False, layout='tree', tree_root=0)\n```\n\n\nI guess it has to be replaced by\n\n\n```\nDiGraph(loops=False)\n```\n",
+    "body": "Hello,\n\nNathan, your review patch has 2 problems :\n\n* there lacks the ticket number in the first line of the description\n\n* there is a trailing whitespace, see the bot report for the exact location\n\nFlorent, it seems the you are using several non-existing options for DiGraph, unless these options are introduced in another ticket ?\n\n```\nDiGraph(loop=False, layout='tree', tree_root=0)\n```\n\nI guess it has to be replaced by\n\n```\nDiGraph(loops=False)\n```",
     "created_at": "2012-06-08T18:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -394,19 +395,15 @@ Nathan, your review patch has 2 problems :
 
 Florent, it seems the you are using several non-existing options for DiGraph, unless these options are introduced in another ticket ?
 
-
 ```
 DiGraph(loop=False, layout='tree', tree_root=0)
 ```
 
-
 I guess it has to be replaced by
-
 
 ```
 DiGraph(loops=False)
 ```
-
 
 
 
@@ -515,7 +512,7 @@ Viviane, do you want to take this over, should we do that later together, or sho
 archive/issue_comments_079218.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh.patch) by stumpc5 created at 2013-02-16 11:00:01\n\nThe patch looks very complete, thanks you!\n\nOne thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,\n\n```\nsage: BinaryTree(\"[., [[., [., .]], .]]\")\n```\n\nUnfortunately, this resulted in an infinite recursion. It would be great if you could fix this.\n\n(I am not yet done with my review...)\n\nCheers, Christian",
+    "body": "Attachment [trac_8703-trees-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh.patch) by stumpc5 created at 2013-02-16 11:00:01\n\nThe patch looks very complete, thanks you!\n\nOne thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,\n\n```\nsage: BinaryTree(\"[., [[., [., .]], .]]\")\n```\nUnfortunately, this resulted in an infinite recursion. It would be great if you could fix this.\n\n(I am not yet done with my review...)\n\nCheers, Christian",
     "created_at": "2013-02-16T11:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -533,7 +530,6 @@ One thing I noticed: I would like to be able to reconstruct a tree from its stri
 ```
 sage: BinaryTree("[., [[., [., .]], .]]")
 ```
-
 Unfortunately, this resulted in an infinite recursion. It would be great if you could fix this.
 
 (I am not yet done with my review...)
@@ -583,7 +579,7 @@ archive/issue_comments_079220.json:
 archive/issue_comments_079221.json:
 ```json
 {
-    "body": "Replying to [comment:23 VivianePons]:\n> (I added the feature for both ordered tree and binary trees)\n\nThanks -- I wait for Florent or Fred for approval of your change.",
+    "body": "Replying to [comment:23 VivianePons]:\n> (I added the feature for both ordered tree and binary trees)\n\n\nThanks -- I wait for Florent or Fred for approval of your change.",
     "created_at": "2013-02-16T13:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -595,6 +591,7 @@ archive/issue_comments_079221.json:
 Replying to [comment:23 VivianePons]:
 > (I added the feature for both ordered tree and binary trees)
 
+
 Thanks -- I wait for Florent or Fred for approval of your change.
 
 
@@ -604,7 +601,7 @@ Thanks -- I wait for Florent or Fred for approval of your change.
 archive/issue_comments_079222.json:
 ```json
 {
-    "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by @hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
+    "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by @hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
     "created_at": "2013-02-18T17:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -617,6 +614,7 @@ Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/so
 
 Replying to [comment:24 stumpc5]:
 > Thanks -- I wait for Florent or Fred for approval of your change.
+
 
 Thanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).
 
@@ -656,7 +654,7 @@ Cheers, Christian
 archive/issue_comments_079224.json:
 ```json
 {
-    "body": "Replying to [comment:26 stumpc5]:\n> Replying to [comment:25 hivert]:\n> \n> Two more things:\n> \n> - what about lazily importing the new trees as this should be done by default?\n\nAll the combinatorial objects are currently imported (not lazily). So I'd rather switching this once for all. Also there are some problems with lazy import (see eg #10906). \n\n> - an_example / some_examples do not exist, so how am I supposed to get some binary tree to see what I can do with it?\n\nFor combinatorial sets the convention is element rather than example which is\nfor categories. Anyway, if I had forgotten, `TestSuite` would had\ncomplained.\n\n```\nsage: BinaryTrees().an_element()\n.\nsage: list(BinaryTrees().some_elements())\n[., [., .],\n...\n[., [[[., .], [[., .], .]], .]]]\n```\n\n\n> btw: I would be okay with folding trac_8703-additional-feature-fh.patch and\n> removing Viviane's patch in order to keep the ticket organized and the\n> patchbot happy.\n\nI kept thing separated to ease the review, planning to fold everything at the\nend.\n\nFlorent",
+    "body": "Replying to [comment:26 stumpc5]:\n> Replying to [comment:25 hivert]:\n> \n> Two more things:\n> \n> - what about lazily importing the new trees as this should be done by default?\n\n\nAll the combinatorial objects are currently imported (not lazily). So I'd rather switching this once for all. Also there are some problems with lazy import (see eg #10906). \n\n> - an_example / some_examples do not exist, so how am I supposed to get some binary tree to see what I can do with it?\n\n\nFor combinatorial sets the convention is element rather than example which is\nfor categories. Anyway, if I had forgotten, `TestSuite` would had\ncomplained.\n\n```\nsage: BinaryTrees().an_element()\n.\nsage: list(BinaryTrees().some_elements())\n[., [., .],\n...\n[., [[[., .], [[., .], .]], .]]]\n```\n\n> btw: I would be okay with folding trac_8703-additional-feature-fh.patch and\n> removing Viviane's patch in order to keep the ticket organized and the\n> patchbot happy.\n\n\nI kept thing separated to ease the review, planning to fold everything at the\nend.\n\nFlorent",
     "created_at": "2013-02-18T19:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -672,9 +670,11 @@ Replying to [comment:26 stumpc5]:
 > 
 > - what about lazily importing the new trees as this should be done by default?
 
+
 All the combinatorial objects are currently imported (not lazily). So I'd rather switching this once for all. Also there are some problems with lazy import (see eg #10906). 
 
 > - an_example / some_examples do not exist, so how am I supposed to get some binary tree to see what I can do with it?
+
 
 For combinatorial sets the convention is element rather than example which is
 for categories. Anyway, if I had forgotten, `TestSuite` would had
@@ -689,10 +689,10 @@ sage: list(BinaryTrees().some_elements())
 [., [[[., .], [[., .], .]], .]]]
 ```
 
-
 > btw: I would be okay with folding trac_8703-additional-feature-fh.patch and
 > removing Viviane's patch in order to keep the ticket organized and the
 > patchbot happy.
+
 
 I kept thing separated to ease the review, planning to fold everything at the
 end.
@@ -706,7 +706,7 @@ Florent
 archive/issue_comments_079225.json:
 ```json
 {
-    "body": "This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n\nA bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n\n\n```\nsage: Q = LBT([LBT([],label=2),LBT([],label=4)],label=2) \nsage: Q.as_digraph()                                     \nDigraph on 2 vertices\nsage: Q\n2[2[., .], 4[., .]]\n```\n\n\nWhile small examples suggest that this doesn't happen with \"None\" labels, this isn't actually the case (even though they somehow magically become nonnegative integers):\n\n\n```\nsage: Z = LabelledOrderedTree([[],[[[],[]], []]])\nsage: Z   \nNone[None[], None[None[None[], None[]], None[]]]\nsage: Z.as_digraph()\nDigraph on 5 vertices\n```\n\n\nI suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\nSome docstring gripes:\n\n- I would add \"BinaryTree([])\" and \"BinaryTree(None)\" to the examples in te docstring of the BinaryTree class. Also, in the \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to me how exactly the \"children\" argument is getting parsed; I am used to constructors for trees being free (in the sense of, no two different inputs lead to the same tree), so I wouldn't say this is very intuitive. It's \"explained\" in the __init__ sourcecode, but that's uncommented and I have no idea what it does :(\n\nMight also want to point out that these binary trees are planar aka what you call ordered, i. e., the order of the children on each node matters. \n\n- In the \"show\" method of BinaryTree, can the tree_orientation be passed as a keyword? I know a lot of people who don't draw trees upside down...\n\n- I don't understand from the docstrings what \"make_node\" and \"make_leaf\" do... Just replace the tree by a node resp. leaf? If so, what's the advantage over just redefining the tree?\n\n- Docstring for \"to_dyck_word\": replace \"where `T(l)` and `T(r)` are the trees\" by \"where `T(l)` and `T(r)` are the Dyck words\".\n\n- The docstring for \"canopee\" has a grammar error (\"`1` is a left leaf\" should be \"`1` if the leaf is a left leaf\").\n\n- ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\n- Couple of typos in the docstring for OrderedTree: \"a constructed\" and \"the the order\".\n\n- This appears weird to me: \"The actual canonical labelling is currently unspecified.\" Isn't it just the left-to-right labelling, or are you saying that we shouldn't count on it staying that way?\n\nSuggestions (I can figure myself working on them as well):\n\nDo we have a checker function that looks if a given labelled binary tree is a binary search tree? A decreasing tree? The RSK-like algorithms from http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an increasing_tree method for arbitrary words, not just permutations? (The \"gen = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests, of course, even if they can be internally the same as trees with one more vertex...",
+    "body": "This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n\nA bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n\n```\nsage: Q = LBT([LBT([],label=2),LBT([],label=4)],label=2) \nsage: Q.as_digraph()                                     \nDigraph on 2 vertices\nsage: Q\n2[2[., .], 4[., .]]\n```\n\nWhile small examples suggest that this doesn't happen with \"None\" labels, this isn't actually the case (even though they somehow magically become nonnegative integers):\n\n```\nsage: Z = LabelledOrderedTree([[],[[[],[]], []]])\nsage: Z   \nNone[None[], None[None[None[], None[]], None[]]]\nsage: Z.as_digraph()\nDigraph on 5 vertices\n```\n\nI suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\nSome docstring gripes:\n\n- I would add \"BinaryTree([])\" and \"BinaryTree(None)\" to the examples in te docstring of the BinaryTree class. Also, in the \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to me how exactly the \"children\" argument is getting parsed; I am used to constructors for trees being free (in the sense of, no two different inputs lead to the same tree), so I wouldn't say this is very intuitive. It's \"explained\" in the __init__ sourcecode, but that's uncommented and I have no idea what it does :(\n\nMight also want to point out that these binary trees are planar aka what you call ordered, i. e., the order of the children on each node matters. \n\n- In the \"show\" method of BinaryTree, can the tree_orientation be passed as a keyword? I know a lot of people who don't draw trees upside down...\n\n- I don't understand from the docstrings what \"make_node\" and \"make_leaf\" do... Just replace the tree by a node resp. leaf? If so, what's the advantage over just redefining the tree?\n\n- Docstring for \"to_dyck_word\": replace \"where `T(l)` and `T(r)` are the trees\" by \"where `T(l)` and `T(r)` are the Dyck words\".\n\n- The docstring for \"canopee\" has a grammar error (\"`1` is a left leaf\" should be \"`1` if the leaf is a left leaf\").\n\n- ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\n- Couple of typos in the docstring for OrderedTree: \"a constructed\" and \"the the order\".\n\n- This appears weird to me: \"The actual canonical labelling is currently unspecified.\" Isn't it just the left-to-right labelling, or are you saying that we shouldn't count on it staying that way?\n\nSuggestions (I can figure myself working on them as well):\n\nDo we have a checker function that looks if a given labelled binary tree is a binary search tree? A decreasing tree? The RSK-like algorithms from http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an increasing_tree method for arbitrary words, not just permutations? (The \"gen = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests, of course, even if they can be internally the same as trees with one more vertex...",
     "created_at": "2013-02-19T02:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -719,7 +719,6 @@ This is mostly way over my head, but I'm adding myself to cc because I'm highly 
 
 A bug: The as_digraph method yields not what it should yield when some labels are equal. Example:
 
-
 ```
 sage: Q = LBT([LBT([],label=2),LBT([],label=4)],label=2) 
 sage: Q.as_digraph()                                     
@@ -728,9 +727,7 @@ sage: Q
 2[2[., .], 4[., .]]
 ```
 
-
 While small examples suggest that this doesn't happen with "None" labels, this isn't actually the case (even though they somehow magically become nonnegative integers):
-
 
 ```
 sage: Z = LabelledOrderedTree([[],[[[],[]], []]])
@@ -739,7 +736,6 @@ None[None[], None[None[None[], None[]], None[]]]
 sage: Z.as_digraph()
 Digraph on 5 vertices
 ```
-
 
 I suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.
 
@@ -774,7 +770,7 @@ Do we have a checker function that looks if a given labelled binary tree is a bi
 archive/issue_comments_079226.json:
 ```json
 {
-    "body": "Hi,\n\nThanks for all these comments. Before replying point by point, let me mention\nthat there is a lot of work done around the trees and that several patch are\nwaiting between this one. So we don't need to write everything in this patch\nand we hope to have it in Sage soon.\n\nReplying to [comment:28 darij]:\n> This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n> \n> A bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n> I suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\nWhen I wrote this function I plan to use it only for graph with distinct\nlabel. I'm not sure what we want when there are repeated label. This must be\ndiscussed. The particular case of None is by chance handled by the graph but\nI'm not sure we should rely on it. In the mean time, I'd like to document that\nthe function currently only work for graph with disctinct label and open a new\nticket for more general cases. What do you think ?\n\n> - I would add \"BinaryTree([])\" and \"BinaryTree(None)\"\n> to the examples in te docstring of the BinaryTree class. Also, in the\n> \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say\n> the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to\n> me how exactly the \"children\" argument is getting parsed; I am used to\n> constructors for trees being free (in the sense of, no two different inputs\n> lead to the same tree), so I wouldn't say this is very intuitive. It's\n> \"explained\" in the __init__ sourcecode, but that's uncommented and I have no\n> idea what it does :(\n\nThe idea is that to allows for short input, None can be omitted where there is\nno ambiguity. Please, feel free to suggest a patch for doc improvements.\n\n> Might also want to point out that these binary trees are planar aka what you\n> call ordered, i. e., the order of the children on each node matters.\n\nWhen you see tree from the graph point of view, all trees are of course planar\n(IE: can be embedded in the plane without crossing). So I rather call them\nordered trees. From this point of view, the proper name is plane tree (See eg\nhttp://en.wikipedia.org/wiki/Tree_%28graph_theory%29#Plane_Tree). Note that\nthey freely mix plane and ordered there. I feel (and I wasn't alone when\ndiscussed on Sage-combinat-devel) that OrderedBinaryTree is too long.\n\n> - In the \"show\" method of BinaryTree, can the tree_orientation be passed as\n> a keyword? I know a lot of people who don't draw trees upside down...\n\nUnless a quick fix is proposed, I'd rather leave it for a forthcomming patch.\n\n> - I don't understand from the docstrings what \"make_node\" and \"make_leaf\"\n> do... Just replace the tree by a node resp. leaf? If so, what's the\n> advantage over just redefining the tree?\n\nSome times it could be useful for algorithmic reason to modify a tree in place\nwithout allocating a new object.\n\n> - ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\nSee my former comment on planar being improper.\n\n> - This appears weird to me: \"The actual canonical labelling is currently\n> unspecified.\" Isn't it just the left-to-right labelling, or are you saying\n> that we shouldn't count on it staying that way?\n\nYes it is for ordered trees, but it is defined in an abtract class and soon\nafter this patch there is another one for rooted unordered tree. Then\nleft-to-right labelling doesn't mean anything. There is also another\nforthcoming patch where you can specify which order you want. I don't want to\nchoose the default now.\n\n> Suggestions (I can figure myself working on them as well):\n\n> Do we have a checker function that looks if a given labelled binary tree is\n> a binary search tree? A decreasing tree? The RSK-like algorithms from\n> http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an\n> increasing_tree method for arbitrary words, not just permutations? (The \"gen\n> = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests,\n> of course, even if they can be internally the same as trees with one more\n> vertex...\n\nThere is also several other patch done around those question. In the\nSage-combinat queue there are implementation of the Loday-Ronco algebra, the\ndendriform, prelie operads and more. As I said, this is just the beginning :-).",
+    "body": "Hi,\n\nThanks for all these comments. Before replying point by point, let me mention\nthat there is a lot of work done around the trees and that several patch are\nwaiting between this one. So we don't need to write everything in this patch\nand we hope to have it in Sage soon.\n\nReplying to [comment:28 darij]:\n> This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n> \n> A bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n> I suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\n\nWhen I wrote this function I plan to use it only for graph with distinct\nlabel. I'm not sure what we want when there are repeated label. This must be\ndiscussed. The particular case of None is by chance handled by the graph but\nI'm not sure we should rely on it. In the mean time, I'd like to document that\nthe function currently only work for graph with disctinct label and open a new\nticket for more general cases. What do you think ?\n\n> - I would add \"BinaryTree([])\" and \"BinaryTree(None)\"\n> to the examples in te docstring of the BinaryTree class. Also, in the\n> \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say\n> the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to\n> me how exactly the \"children\" argument is getting parsed; I am used to\n> constructors for trees being free (in the sense of, no two different inputs\n> lead to the same tree), so I wouldn't say this is very intuitive. It's\n> \"explained\" in the __init__ sourcecode, but that's uncommented and I have no\n> idea what it does :(\n\n\nThe idea is that to allows for short input, None can be omitted where there is\nno ambiguity. Please, feel free to suggest a patch for doc improvements.\n\n> Might also want to point out that these binary trees are planar aka what you\n> call ordered, i. e., the order of the children on each node matters.\n\n\nWhen you see tree from the graph point of view, all trees are of course planar\n(IE: can be embedded in the plane without crossing). So I rather call them\nordered trees. From this point of view, the proper name is plane tree (See eg\nhttp://en.wikipedia.org/wiki/Tree_%28graph_theory%29#Plane_Tree). Note that\nthey freely mix plane and ordered there. I feel (and I wasn't alone when\ndiscussed on Sage-combinat-devel) that OrderedBinaryTree is too long.\n\n> - In the \"show\" method of BinaryTree, can the tree_orientation be passed as\n> a keyword? I know a lot of people who don't draw trees upside down...\n\n\nUnless a quick fix is proposed, I'd rather leave it for a forthcomming patch.\n\n> - I don't understand from the docstrings what \"make_node\" and \"make_leaf\"\n> do... Just replace the tree by a node resp. leaf? If so, what's the\n> advantage over just redefining the tree?\n\n\nSome times it could be useful for algorithmic reason to modify a tree in place\nwithout allocating a new object.\n\n> - ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\n\nSee my former comment on planar being improper.\n\n> - This appears weird to me: \"The actual canonical labelling is currently\n> unspecified.\" Isn't it just the left-to-right labelling, or are you saying\n> that we shouldn't count on it staying that way?\n\n\nYes it is for ordered trees, but it is defined in an abtract class and soon\nafter this patch there is another one for rooted unordered tree. Then\nleft-to-right labelling doesn't mean anything. There is also another\nforthcoming patch where you can specify which order you want. I don't want to\nchoose the default now.\n\n> Suggestions (I can figure myself working on them as well):\n\n\n> Do we have a checker function that looks if a given labelled binary tree is\n> a binary search tree? A decreasing tree? The RSK-like algorithms from\n> http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an\n> increasing_tree method for arbitrary words, not just permutations? (The \"gen\n> = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests,\n> of course, even if they can be internally the same as trees with one more\n> vertex...\n\n\nThere is also several other patch done around those question. In the\nSage-combinat queue there are implementation of the Loday-Ronco algebra, the\ndendriform, prelie operads and more. As I said, this is just the beginning :-).",
     "created_at": "2013-02-19T20:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -796,6 +792,7 @@ Replying to [comment:28 darij]:
 > A bug: The as_digraph method yields not what it should yield when some labels are equal. Example:
 > I suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.
 
+
 When I wrote this function I plan to use it only for graph with distinct
 label. I'm not sure what we want when there are repeated label. This must be
 discussed. The particular case of None is by chance handled by the graph but
@@ -813,11 +810,13 @@ ticket for more general cases. What do you think ?
 > "explained" in the __init__ sourcecode, but that's uncommented and I have no
 > idea what it does :(
 
+
 The idea is that to allows for short input, None can be omitted where there is
 no ambiguity. Please, feel free to suggest a patch for doc improvements.
 
 > Might also want to point out that these binary trees are planar aka what you
 > call ordered, i. e., the order of the children on each node matters.
+
 
 When you see tree from the graph point of view, all trees are of course planar
 (IE: can be embedded in the plane without crossing). So I rather call them
@@ -829,22 +828,26 @@ discussed on Sage-combinat-devel) that OrderedBinaryTree is too long.
 > - In the "show" method of BinaryTree, can the tree_orientation be passed as
 > a keyword? I know a lot of people who don't draw trees upside down...
 
+
 Unless a quick fix is proposed, I'd rather leave it for a forthcomming patch.
 
 > - I don't understand from the docstrings what "make_node" and "make_leaf"
 > do... Just replace the tree by a node resp. leaf? If so, what's the
 > advantage over just redefining the tree?
 
+
 Some times it could be useful for algorithmic reason to modify a tree in place
 without allocating a new object.
 
 > - ordered_tree.py: Isn't this kind of "ordered trees" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)
+
 
 See my former comment on planar being improper.
 
 > - This appears weird to me: "The actual canonical labelling is currently
 > unspecified." Isn't it just the left-to-right labelling, or are you saying
 > that we shouldn't count on it staying that way?
+
 
 Yes it is for ordered trees, but it is defined in an abtract class and soon
 after this patch there is another one for rooted unordered tree. Then
@@ -854,6 +857,7 @@ choose the default now.
 
 > Suggestions (I can figure myself working on them as well):
 
+
 > Do we have a checker function that looks if a given labelled binary tree is
 > a binary search tree? A decreasing tree? The RSK-like algorithms from
 > http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an
@@ -861,6 +865,7 @@ choose the default now.
 > = self[::-1]" trick won't work here anymore, though.) Oh, well, and forests,
 > of course, even if they can be internally the same as trees with one more
 > vertex...
+
 
 There is also several other patch done around those question. In the
 Sage-combinat queue there are implementation of the Loday-Ronco algebra, the
@@ -873,7 +878,7 @@ dendriform, prelie operads and more. As I said, this is just the beginning :-).
 archive/issue_comments_079227.json:
 ```json
 {
-    "body": "Hi Florent! Thanks for the reply. One reason why I did not propose any concrete changes to the code is that I have no idea what patches are currently dependent on this one (I only knew of Viviane's new one with the Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a better overview of what's happening with trees these days. If you tell me there's no danger of conflicting changes, I can add the fixes I'd like to see; otherwise I'd prefer someone else to do it or to wait until the current slew of tree patches is merged. I'll try to come up with a doc for the initialization later today, though, provided I can wrap my head around it.\n\n> When I wrote this function I plan to use it only for graph with\n> distinct label. I'm not sure what we want when there are\n> repeated label. This must be discussed.\n\nCan we have a docstring warning about this, or a _ in the function name so as to avoid people getting a wrong impression?\n\n> The particular case of None is by chance handled by the graph\n> but I'm not sure we should rely on it.\n\nAs my second example shows, we should definitely *not* rely on it. Apparently None labels get translated into 0, 1, 2, 3, ..., but this translation starts anew for every subtree, so the resulting graph isn't the one you would expect.\n\n> In the mean time, I'd like to document that the function\n> currently only work for graph with disctinct label and open\n> a new ticket for more general cases. What do you think ? \n\nGood idea.\n\nI completely agree with you that planar/plane aren't good terms for this kind of trees. What I'd like is a mention in the docstring that these terms are occasionally used, whereas \"ordered\" is occasionally used for something else.\n\nI can't wait to work with a real Loday-Ronco Hopf algebra rather than my hacky implementation from a year ago...",
+    "body": "Hi Florent! Thanks for the reply. One reason why I did not propose any concrete changes to the code is that I have no idea what patches are currently dependent on this one (I only knew of Viviane's new one with the Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a better overview of what's happening with trees these days. If you tell me there's no danger of conflicting changes, I can add the fixes I'd like to see; otherwise I'd prefer someone else to do it or to wait until the current slew of tree patches is merged. I'll try to come up with a doc for the initialization later today, though, provided I can wrap my head around it.\n\n> When I wrote this function I plan to use it only for graph with\n> distinct label. I'm not sure what we want when there are\n> repeated label. This must be discussed.\n\n\nCan we have a docstring warning about this, or a _ in the function name so as to avoid people getting a wrong impression?\n\n> The particular case of None is by chance handled by the graph\n> but I'm not sure we should rely on it.\n\n\nAs my second example shows, we should definitely *not* rely on it. Apparently None labels get translated into 0, 1, 2, 3, ..., but this translation starts anew for every subtree, so the resulting graph isn't the one you would expect.\n\n> In the mean time, I'd like to document that the function\n> currently only work for graph with disctinct label and open\n> a new ticket for more general cases. What do you think ? \n\n\nGood idea.\n\nI completely agree with you that planar/plane aren't good terms for this kind of trees. What I'd like is a mention in the docstring that these terms are occasionally used, whereas \"ordered\" is occasionally used for something else.\n\nI can't wait to work with a real Loday-Ronco Hopf algebra rather than my hacky implementation from a year ago...",
     "created_at": "2013-02-19T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -888,16 +893,19 @@ Hi Florent! Thanks for the reply. One reason why I did not propose any concrete 
 > distinct label. I'm not sure what we want when there are
 > repeated label. This must be discussed.
 
+
 Can we have a docstring warning about this, or a _ in the function name so as to avoid people getting a wrong impression?
 
 > The particular case of None is by chance handled by the graph
 > but I'm not sure we should rely on it.
+
 
 As my second example shows, we should definitely *not* rely on it. Apparently None labels get translated into 0, 1, 2, 3, ..., but this translation starts anew for every subtree, so the resulting graph isn't the one you would expect.
 
 > In the mean time, I'd like to document that the function
 > currently only work for graph with disctinct label and open
 > a new ticket for more general cases. What do you think ? 
+
 
 Good idea.
 
@@ -912,7 +920,7 @@ I can't wait to work with a real Loday-Ronco Hopf algebra rather than my hacky i
 archive/issue_comments_079228.json:
 ```json
 {
-    "body": "Hi Darij,\n\nReplying to [comment:31 darij]:\n> Hi Florent! Thanks for the reply. One reason why I did not propose any\n> concrete changes to the code is that I have no idea what patches are\n> currently dependent on this one (I only knew of Viviane's new one with the\n> Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a\n> better overview of what's happening with trees these days.\n\nHere is some basic overview :-)\n\n```\npopcorn-*inat/.hg/patches $ grep -l Trees *.patch\nalgebras_over_operads-fc.patch\nfinite_semigroup-nt.patch\noperads-fh.patch\noperads_more-fc.patch\nposet-from-tree-fc.patch\npretty_console_print-EliX-jbp.patch\nq_tree_factorial-fc.patch\nsage-demos-and-tutorials-nt.patch\nshape_tree-fc.patch\nshuffle-operads-fc.patch\ntrac_11529-rooted_trees-fh.patch\ntrac_13855_planar_binary_trees_hopf_algebra-EliX-jbp.patch\ntrac_13987_mary_trees-vp.patch\ntrac_14086-parking_functions-dm.patch\ntrac_8703-trees-fh.patch\ntrees_symmetry_factor-fh.patch\n```\n\n\n\n> If you tell me there's no danger of conflicting changes, I can add the fixes\n> I'd like to see; otherwise I'd prefer someone else to do it or to wait until\n> the current slew of tree patches is merged. I'll try to come up with a doc\n> for the initialization later today, though, provided I can wrap my head\n> around it.\n\nI think if it's just docstring, there will only be trivial rebasing. Anyway,\nthey must be fixed. Unfortunately, I'm moving from my flat from a new house on\nSaturday and Sunday so I won't have a lot of time working on trees... If you\ncan take care of all the docstring problem you mentioned once for all in a\nreview patch, I will really appreciate.",
+    "body": "Hi Darij,\n\nReplying to [comment:31 darij]:\n> Hi Florent! Thanks for the reply. One reason why I did not propose any\n> concrete changes to the code is that I have no idea what patches are\n> currently dependent on this one (I only knew of Viviane's new one with the\n> Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a\n> better overview of what's happening with trees these days.\n\n\nHere is some basic overview :-)\n\n```\npopcorn-*inat/.hg/patches $ grep -l Trees *.patch\nalgebras_over_operads-fc.patch\nfinite_semigroup-nt.patch\noperads-fh.patch\noperads_more-fc.patch\nposet-from-tree-fc.patch\npretty_console_print-EliX-jbp.patch\nq_tree_factorial-fc.patch\nsage-demos-and-tutorials-nt.patch\nshape_tree-fc.patch\nshuffle-operads-fc.patch\ntrac_11529-rooted_trees-fh.patch\ntrac_13855_planar_binary_trees_hopf_algebra-EliX-jbp.patch\ntrac_13987_mary_trees-vp.patch\ntrac_14086-parking_functions-dm.patch\ntrac_8703-trees-fh.patch\ntrees_symmetry_factor-fh.patch\n```\n\n\n> If you tell me there's no danger of conflicting changes, I can add the fixes\n> I'd like to see; otherwise I'd prefer someone else to do it or to wait until\n> the current slew of tree patches is merged. I'll try to come up with a doc\n> for the initialization later today, though, provided I can wrap my head\n> around it.\n\n\nI think if it's just docstring, there will only be trivial rebasing. Anyway,\nthey must be fixed. Unfortunately, I'm moving from my flat from a new house on\nSaturday and Sunday so I won't have a lot of time working on trees... If you\ncan take care of all the docstring problem you mentioned once for all in a\nreview patch, I will really appreciate.",
     "created_at": "2013-02-19T21:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -929,6 +937,7 @@ Replying to [comment:31 darij]:
 > currently dependent on this one (I only knew of Viviane's new one with the
 > Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a
 > better overview of what's happening with trees these days.
+
 
 Here is some basic overview :-)
 
@@ -953,12 +962,12 @@ trees_symmetry_factor-fh.patch
 ```
 
 
-
 > If you tell me there's no danger of conflicting changes, I can add the fixes
 > I'd like to see; otherwise I'd prefer someone else to do it or to wait until
 > the current slew of tree patches is merged. I'll try to come up with a doc
 > for the initialization later today, though, provided I can wrap my head
 > around it.
+
 
 I think if it's just docstring, there will only be trivial rebasing. Anyway,
 they must be fixed. Unfortunately, I'm moving from my flat from a new house on
@@ -991,7 +1000,7 @@ attempting manual override
 archive/issue_comments_079230.json:
 ```json
 {
-    "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by @darijgr created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
+    "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by @darijgr created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\nOr shouldn't lists and tuples behave alike here?",
     "created_at": "2013-02-20T06:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1009,7 +1018,6 @@ darij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit
 abort: cannot commit over an applied mq patch
 ```
 
-
 Anyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.
 
 Here's something else I'm finding weird:
@@ -1022,7 +1030,6 @@ sage: b = ()
 sage: BinaryTree(b)
 .
 ```
-
 Or shouldn't lists and tuples behave alike here?
 
 
@@ -1054,7 +1061,7 @@ Also, does anyone have sage 5.8.b2 to see why it is not applying ?
 archive/issue_comments_079232.json:
 ```json
 {
-    "body": "Hmm......\n\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: no patches applied\n(y/n)y\nno patches applied\ndarij@travis-virtualbox:~/sage-5.6$ \n```\n\n\nBut maybe it's the wrong folder?\n\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ ../../sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: patch.patch\n(y/n)y\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ \n```\n\n\nThe fact that I have a newer file than you, Viviane, surprises me a bit since I remember the last trees-related activity on Sage to be from you...",
+    "body": "Hmm......\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: no patches applied\n(y/n)y\nno patches applied\ndarij@travis-virtualbox:~/sage-5.6$ \n```\n\nBut maybe it's the wrong folder?\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ ../../sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: patch.patch\n(y/n)y\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ \n```\n\nThe fact that I have a newer file than you, Viviane, surprises me a bit since I remember the last trees-related activity on Sage to be from you...",
     "created_at": "2013-03-01T17:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1064,7 +1071,6 @@ archive/issue_comments_079232.json:
 ```
 
 Hmm......
-
 
 ```
 darij@travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh
@@ -1076,9 +1082,7 @@ no patches applied
 darij@travis-virtualbox:~/sage-5.6$ 
 ```
 
-
 But maybe it's the wrong folder?
-
 
 ```
 darij@travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/
@@ -1089,7 +1093,6 @@ into the patch: patch.patch
 (y/n)y
 darij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ 
 ```
-
 
 The fact that I have a newer file than you, Viviane, surprises me a bit since I remember the last trees-related activity on Sage to be from you...
 
@@ -1177,7 +1180,7 @@ It seems I'm getting crazy or something, but now that I reinstalled sage again (
 archive/issue_comments_079237.json:
 ```json
 {
-    "body": "Replying to [comment:39 darij]:\n> Viviane: thanks -- but I was installing 5.7 anyway due to the conference in a couple of days.\n> \n> It seems I'm getting crazy or something, but now that I reinstalled sage again (and, yes, sage-combinat), there is no abstract_tree.py file in my devel/sage-combinat/sage/combinat folder. What did I do wrong? And how can I manually apply a patch that I've downloaded from trac?\n\nI think you should\n- build the main Sage branch\n\n```\n$ sage -b main\n```\n\n- and clone it\n\n```\n$ sage -clone 8703\n```\n\n- then apply the patches\n\n```\n$ cd SAGEROOT/devel/sage-8703\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-trees-fh.patch\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-additional-feature-fh.patch\n```\n\nYou should then have everything set to work on your features...\n\nCheers, Christian",
+    "body": "Replying to [comment:39 darij]:\n> Viviane: thanks -- but I was installing 5.7 anyway due to the conference in a couple of days.\n> \n> It seems I'm getting crazy or something, but now that I reinstalled sage again (and, yes, sage-combinat), there is no abstract_tree.py file in my devel/sage-combinat/sage/combinat folder. What did I do wrong? And how can I manually apply a patch that I've downloaded from trac?\n\n\nI think you should\n- build the main Sage branch\n\n```\n$ sage -b main\n```\n- and clone it\n\n```\n$ sage -clone 8703\n```\n- then apply the patches\n\n```\n$ cd SAGEROOT/devel/sage-8703\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-trees-fh.patch\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-additional-feature-fh.patch\n```\nYou should then have everything set to work on your features...\n\nCheers, Christian",
     "created_at": "2013-03-02T05:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1191,19 +1194,18 @@ Replying to [comment:39 darij]:
 > 
 > It seems I'm getting crazy or something, but now that I reinstalled sage again (and, yes, sage-combinat), there is no abstract_tree.py file in my devel/sage-combinat/sage/combinat folder. What did I do wrong? And how can I manually apply a patch that I've downloaded from trac?
 
+
 I think you should
 - build the main Sage branch
 
 ```
 $ sage -b main
 ```
-
 - and clone it
 
 ```
 $ sage -clone 8703
 ```
-
 - then apply the patches
 
 ```
@@ -1211,7 +1213,6 @@ $ cd SAGEROOT/devel/sage-8703
 $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-trees-fh.patch
 $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-additional-feature-fh.patch
 ```
-
 You should then have everything set to work on your features...
 
 Cheers, Christian
@@ -1241,7 +1242,7 @@ Thank you, at least I've got the trees patch on my machine now... too bad hg sti
 archive/issue_comments_079239.json:
 ```json
 {
-    "body": "Replying to [comment:41 darij]:\n> Thank you, at least I've got the trees patch on my machine now... too bad hg still considers the patch itself, rather than only my meager additions to it, as my changes. Well, I guess it's easier if you just show me the right workflow in Providence in about 2 days; I'm groping in the dark for now as far as hg mq is concerned.\n\nOkay. After the above steps, you have to start a new patch\n\n```\n$ hg qnew trac_8703-trees_addition-dg.patch\n```\n\nand then you do your changes. Afterwards, you can review which files you have changed\n\n```\n$ hg status\n```\n\nand what you changed\n\n```\n$ hg diff\n```\n\nIf you are happy with your changes, save them in the path using\n\n```\n$ hg qrefresh\n```\n\nand save this patch in your home folder\n\n```\n$ hg export tip > ~/trac_8703-trees_addition-dg.patch\n```\n\nFinally, upload it to trac!",
+    "body": "Replying to [comment:41 darij]:\n> Thank you, at least I've got the trees patch on my machine now... too bad hg still considers the patch itself, rather than only my meager additions to it, as my changes. Well, I guess it's easier if you just show me the right workflow in Providence in about 2 days; I'm groping in the dark for now as far as hg mq is concerned.\n\n\nOkay. After the above steps, you have to start a new patch\n\n```\n$ hg qnew trac_8703-trees_addition-dg.patch\n```\nand then you do your changes. Afterwards, you can review which files you have changed\n\n```\n$ hg status\n```\nand what you changed\n\n```\n$ hg diff\n```\nIf you are happy with your changes, save them in the path using\n\n```\n$ hg qrefresh\n```\nand save this patch in your home folder\n\n```\n$ hg export tip > ~/trac_8703-trees_addition-dg.patch\n```\nFinally, upload it to trac!",
     "created_at": "2013-03-02T07:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1253,36 +1254,32 @@ archive/issue_comments_079239.json:
 Replying to [comment:41 darij]:
 > Thank you, at least I've got the trees patch on my machine now... too bad hg still considers the patch itself, rather than only my meager additions to it, as my changes. Well, I guess it's easier if you just show me the right workflow in Providence in about 2 days; I'm groping in the dark for now as far as hg mq is concerned.
 
+
 Okay. After the above steps, you have to start a new patch
 
 ```
 $ hg qnew trac_8703-trees_addition-dg.patch
 ```
-
 and then you do your changes. Afterwards, you can review which files you have changed
 
 ```
 $ hg status
 ```
-
 and what you changed
 
 ```
 $ hg diff
 ```
-
 If you are happy with your changes, save them in the path using
 
 ```
 $ hg qrefresh
 ```
-
 and save this patch in your home folder
 
 ```
 $ hg export tip > ~/trac_8703-trees_addition-dg.patch
 ```
-
 Finally, upload it to trac!
 
 
@@ -1460,7 +1457,7 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac
 archive/issue_comments_079248.json:
 ```json
 {
-    "body": "better not import all of ast, but rather\n\n```\nfrom ast import literal_eval\n```\n",
+    "body": "better not import all of ast, but rather\n\n```\nfrom ast import literal_eval\n```",
     "created_at": "2013-03-21T13:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1474,7 +1471,6 @@ better not import all of ast, but rather
 ```
 from ast import literal_eval
 ```
-
 
 
 
@@ -1721,7 +1717,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_079259.json:
 ```json
 {
-    "body": "This shouldn't be in the commit message:\n\n```\n[mq]: trac_8703-additional-feature-vp.patch\n```\n",
+    "body": "This shouldn't be in the commit message:\n\n```\n[mq]: trac_8703-additional-feature-vp.patch\n```",
     "created_at": "2013-04-11T13:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
@@ -1735,7 +1731,6 @@ This shouldn't be in the commit message:
 ```
 [mq]: trac_8703-additional-feature-vp.patch
 ```
-
 
 
 

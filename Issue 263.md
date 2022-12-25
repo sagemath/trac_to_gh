@@ -3,7 +3,7 @@
 archive/issues_000263.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: I=CyclotomicField(4).gen()\nsage: import pickle\nsage: pickle.dumps(I)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n```\n\n\nThe traceback is through a bunch of non-SAGE code.  It was not clear to me where to begin to look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/263\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: I=CyclotomicField(4).gen()\nsage: import pickle\nsage: pickle.dumps(I)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n```\n\nThe traceback is through a bunch of non-SAGE code.  It was not clear to me where to begin to look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/263\n\n",
     "created_at": "2007-02-15T22:26:27Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000263.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: I=CyclotomicField(4).gen()
 sage: import pickle
@@ -25,7 +24,6 @@ sage: pickle.dumps(I)
 ---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 ```
-
 
 The traceback is through a bunch of non-SAGE code.  It was not clear to me where to begin to look.
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/263
 archive/issue_comments_001242.json:
 ```json
 {
-    "body": "This is not a bug.  Almost *NO* SAGE objects will pickle with the\nPure-python defeault pickle module, which simply can't support\nthe sort of sophisticated things needed for pickling SAGE objects.\nInstead use either the save method, or dumps or loads, which uses\ncPickle in mode 2. \n\n```\nsage: I=CyclotomicField(4).gen()\nsage: loads(dumps(I))\nzeta4\n```\n",
+    "body": "This is not a bug.  Almost *NO* SAGE objects will pickle with the\nPure-python defeault pickle module, which simply can't support\nthe sort of sophisticated things needed for pickling SAGE objects.\nInstead use either the save method, or dumps or loads, which uses\ncPickle in mode 2. \n\n```\nsage: I=CyclotomicField(4).gen()\nsage: loads(dumps(I))\nzeta4\n```",
     "created_at": "2007-02-16T07:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/263",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ sage: I=CyclotomicField(4).gen()
 sage: loads(dumps(I))
 zeta4
 ```
-
 
 
 

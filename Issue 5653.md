@@ -3,7 +3,7 @@
 archive/issues_005653.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\n\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\n\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\n\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
     "created_at": "2009-03-31T21:23:24Z",
     "labels": [
         "component: notebook"
@@ -24,7 +24,6 @@ The attached patch shouldn't affect docstrings from the command line (well, exce
 ```
 identity_matrix(TAB
 ```
-
 should pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \times n$ in the first line of the docstring -- and with example blocks in <pre> format.
 
 This is marked "needs work" for two reasons, one of which is a mystery to me:
@@ -34,13 +33,11 @@ This is marked "needs work" for two reasons, one of which is a mystery to me:
 ```
 identity_matrix? [SHIFT-RETURN]
 ```
-
 This will be typeset in <pre> format. Then type
 
 ```
 identity_matrix? [TAB]
 ```
-
 This is typeset nicely. I don't know what the difference is.
 
 2. Math is not handled properly.  I have a hack in place to typeset inline math ("`... `blah` ...`") in the docstring, but not displayed math (directive "`.. math::`"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.
@@ -60,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5653
 archive/issue_comments_044058.json:
 ```json
 {
-    "body": "Okay, here's a new version with [a new picture](http://sage.math.washington.edu/home/palmieri/misc/sphinx.png).  This uses Pat LeSmithe's version of set_introspect_html (see [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/dc89425699137415)), with some modifications. \n\nActually, this patch has three versions of set_introspect_html:\n* SPHINX_set_introspect_html   (modification of Pat LeSmithe's version using Sphinx)\n* PYGMENTS_set_introspect_html  (Pat LeSmithe's version using pygments -- doesn't do much for me)\n* DOCUTILS_set_introspect_html  (the version from the first patch)\nYou can edit server/notebook/cell.py, changing the line\n\n```\nset_introspect_html = SPHINX_set_introspect_html\n```\n\nto test out each one.",
+    "body": "Okay, here's a new version with [a new picture](http://sage.math.washington.edu/home/palmieri/misc/sphinx.png).  This uses Pat LeSmithe's version of set_introspect_html (see [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/dc89425699137415)), with some modifications. \n\nActually, this patch has three versions of set_introspect_html:\n* SPHINX_set_introspect_html   (modification of Pat LeSmithe's version using Sphinx)\n* PYGMENTS_set_introspect_html  (Pat LeSmithe's version using pygments -- doesn't do much for me)\n* DOCUTILS_set_introspect_html  (the version from the first patch)\nYou can edit server/notebook/cell.py, changing the line\n\n```\nset_introspect_html = SPHINX_set_introspect_html\n```\nto test out each one.",
     "created_at": "2009-04-01T23:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -80,7 +77,6 @@ You can edit server/notebook/cell.py, changing the line
 ```
 set_introspect_html = SPHINX_set_introspect_html
 ```
-
 to test out each one.
 
 
@@ -90,7 +86,7 @@ to test out each one.
 archive/issue_comments_044059.json:
 ```json
 {
-    "body": "Here's a new patch incorporating Pat LeSmithe's latest ideas, plus a few new things.  This handles everything pretty well, although it might be a bit slow since Sphinx creates various files. I think it's slower than the standard docstring display in the notebook, but on the other hand, I also think it's fast enough to be usable. If we ever figure out how to run Sphinx without reading and writing files, we can do that instead.\n\nThis latest version handles math well (via Sphinx), uses pygments to do syntax highlighting (via Sphinx), handles all of `identity_matrix( TAB`, `identity_matrix? TAB`, `identity_matrix? SHIFT-RETURN`, and `identity_matrix??`.  There is now only one version of `set_introspect_html`: the Sphinx version.\n\nOne of Pat's recent posts said:\n\n```\n* If anyone's interested, here's a way to render an input cell as\nsyntax-highlighted HTML output:\n\nfrom pygments import highlight\nfrom pygments.lexers import PythonLexer\nfrom pygments.formatters import HtmlFormatter\nfrom pygments.styles import STYLE_MAP\nfrom pygments.styles import get_style_by_name\nfrom sphinx.highlighting import SphinxStyle\n\nclass colorize:\n    def __init__(self, style=SphinxStyle):\n        self.lexer = PythonLexer(encoding='chardet')\n        self.formatter = HtmlFormatter(noclasses=True, style=style)\n    def eval(self, s, globals, locals):\n        return html(highlight(s, self.lexer, self.formatter))\n\nThen put %colorize('colorful'), say, at the beginning of a cell and\nevaluate it, e.g.,\n\n%colorize('colorful')\ndef f(x):\n  return x * x\nf(3.0)\n\nSTYLE_MAP.keys() gives a list of styles.  This is adapted from\nhttp://groups.google.com/group/sage-devel/msg/e53caae140cef7df . \n```\n\nThere is already a file and a function called \"colorize\", but I added code like this, so that you can do\n\n```\n%pygments('colorful')\ndef f(x):\n  return x * x\nf(3.0)\n```\n\n(I was thinking of a name like \"html\" or \"jsmath\": pygments is what processes the rest of the cell, so that's the name of the decorator.) With the patch, this is automatically available in the notebook.\n\nI'm sure all of this could still use work, but I'll mark it as \"needs review\".",
+    "body": "Here's a new patch incorporating Pat LeSmithe's latest ideas, plus a few new things.  This handles everything pretty well, although it might be a bit slow since Sphinx creates various files. I think it's slower than the standard docstring display in the notebook, but on the other hand, I also think it's fast enough to be usable. If we ever figure out how to run Sphinx without reading and writing files, we can do that instead.\n\nThis latest version handles math well (via Sphinx), uses pygments to do syntax highlighting (via Sphinx), handles all of `identity_matrix( TAB`, `identity_matrix? TAB`, `identity_matrix? SHIFT-RETURN`, and `identity_matrix??`.  There is now only one version of `set_introspect_html`: the Sphinx version.\n\nOne of Pat's recent posts said:\n\n```\n* If anyone's interested, here's a way to render an input cell as\nsyntax-highlighted HTML output:\n\nfrom pygments import highlight\nfrom pygments.lexers import PythonLexer\nfrom pygments.formatters import HtmlFormatter\nfrom pygments.styles import STYLE_MAP\nfrom pygments.styles import get_style_by_name\nfrom sphinx.highlighting import SphinxStyle\n\nclass colorize:\n    def __init__(self, style=SphinxStyle):\n        self.lexer = PythonLexer(encoding='chardet')\n        self.formatter = HtmlFormatter(noclasses=True, style=style)\n    def eval(self, s, globals, locals):\n        return html(highlight(s, self.lexer, self.formatter))\n\nThen put %colorize('colorful'), say, at the beginning of a cell and\nevaluate it, e.g.,\n\n%colorize('colorful')\ndef f(x):\n  return x * x\nf(3.0)\n\nSTYLE_MAP.keys() gives a list of styles.  This is adapted from\nhttp://groups.google.com/group/sage-devel/msg/e53caae140cef7df . \n```\nThere is already a file and a function called \"colorize\", but I added code like this, so that you can do\n\n```\n%pygments('colorful')\ndef f(x):\n  return x * x\nf(3.0)\n```\n(I was thinking of a name like \"html\" or \"jsmath\": pygments is what processes the rest of the cell, so that's the name of the decorator.) With the patch, this is automatically available in the notebook.\n\nI'm sure all of this could still use work, but I'll mark it as \"needs review\".",
     "created_at": "2009-04-03T22:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -134,7 +130,6 @@ f(3.0)
 STYLE_MAP.keys() gives a list of styles.  This is adapted from
 http://groups.google.com/group/sage-devel/msg/e53caae140cef7df . 
 ```
-
 There is already a file and a function called "colorize", but I added code like this, so that you can do
 
 ```
@@ -143,7 +138,6 @@ def f(x):
   return x * x
 f(3.0)
 ```
-
 (I was thinking of a name like "html" or "jsmath": pygments is what processes the rest of the cell, so that's the name of the decorator.) With the patch, this is automatically available in the notebook.
 
 I'm sure all of this could still use work, but I'll mark it as "needs review".
@@ -279,7 +273,7 @@ In an email, Evan has stated that this code falls under the BSD license.  I thin
 archive/issue_comments_044066.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n\n> In an email, Evan has stated that this code falls under the BSD license.  I think Evan should definitely get some credit.\n\nCould you post that email here for the record?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 mpatel]:\n\n> In an email, Evan has stated that this code falls under the BSD license.  I think Evan should definitely get some credit.\n\n\nCould you post that email here for the record?\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T06:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -291,6 +285,7 @@ archive/issue_comments_044066.json:
 Replying to [comment:6 mpatel]:
 
 > In an email, Evan has stated that this code falls under the BSD license.  I think Evan should definitely get some credit.
+
 
 Could you post that email here for the record?
 
@@ -367,7 +362,7 @@ Attachment to Evan Fosmark's email.
 archive/issue_comments_044070.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n> Could you post that email here for the record?\n\nI've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.",
+    "body": "Replying to [comment:7 mabshoff]:\n> Could you post that email here for the record?\n\n\nI've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.",
     "created_at": "2009-04-16T07:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -379,6 +374,7 @@ archive/issue_comments_044070.json:
 Replying to [comment:7 mabshoff]:
 > Could you post that email here for the record?
 
+
 I've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.
 
 
@@ -388,7 +384,7 @@ I've also repeated the license question in a comment on Evan Fosmark's original 
 archive/issue_comments_044071.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n \n> I've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.\n\nThanks. I do agree with you that Evan should be credited for his code, so we do need to add him to the list of people getting credit for this patch.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 mpatel]:\n \n> I've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.\n\n\nThanks. I do agree with you that Evan should be credited for his code, so we do need to add him to the list of people getting credit for this patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T07:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -400,6 +396,7 @@ archive/issue_comments_044071.json:
 Replying to [comment:9 mpatel]:
  
 > I've also repeated the license question in a comment on Evan Fosmark's original blog entry.  I mentioned this in my email reply to Evan, so he may soon name the license explicitly on that page.
+
 
 Thanks. I do agree with you that Evan should be credited for his code, so we do need to add him to the list of people getting credit for this patch.
 
@@ -492,7 +489,7 @@ Apply only this patch, as it's cumulative. Rebased against 3.4.1.rc4
 archive/issue_comments_044075.json:
 ```json
 {
-    "body": "Replying to [comment:11 rbeezer]:\n> 1. `sudoku??` yields nicely formatted source code, but `matrix??` does not.  Maybe there's something about the source, not the patch?\n\nIt seems so.  Doing a search for just a space in emacs, or turning on whitespace-mode [1], reveals several stray TABs (I think) starting around the line \n\n```\n# Ensure we have a list of lists, each inner list\n```\n\nReplacing them with spaces or running whitespace-cleanup fixes the formatting.  I apologize again for not providing a patch.\n\n[1] http://www.emacswiki.org/emacs/WhiteSpace",
+    "body": "Replying to [comment:11 rbeezer]:\n> 1. `sudoku??` yields nicely formatted source code, but `matrix??` does not.  Maybe there's something about the source, not the patch?\n\n\nIt seems so.  Doing a search for just a space in emacs, or turning on whitespace-mode [1], reveals several stray TABs (I think) starting around the line \n\n```\n# Ensure we have a list of lists, each inner list\n```\nReplacing them with spaces or running whitespace-cleanup fixes the formatting.  I apologize again for not providing a patch.\n\n[1] http://www.emacswiki.org/emacs/WhiteSpace",
     "created_at": "2009-04-21T21:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -504,12 +501,12 @@ archive/issue_comments_044075.json:
 Replying to [comment:11 rbeezer]:
 > 1. `sudoku??` yields nicely formatted source code, but `matrix??` does not.  Maybe there's something about the source, not the patch?
 
+
 It seems so.  Doing a search for just a space in emacs, or turning on whitespace-mode [1], reveals several stray TABs (I think) starting around the line 
 
 ```
 # Ensure we have a list of lists, each inner list
 ```
-
 Replacing them with spaces or running whitespace-cleanup fixes the formatting.  I apologize again for not providing a patch.
 
 [1] http://www.emacswiki.org/emacs/WhiteSpace
@@ -539,7 +536,7 @@ This is a little silly, but untabify.patch removes all of the TABs I could find 
 archive/issue_comments_044077.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> This is a little silly, but untabify.patch removes all of the TABs I could find in the code.  If it's too silly, ignore the patch; it should be independent of everything else (although according to mpatel, it should make some source code look better).\n\nYeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)\n\nAlso: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> This is a little silly, but untabify.patch removes all of the TABs I could find in the code.  If it's too silly, ignore the patch; it should be independent of everything else (although according to mpatel, it should make some source code look better).\n\n\nYeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)\n\nAlso: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-21T23:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -550,6 +547,7 @@ archive/issue_comments_044077.json:
 
 Replying to [comment:14 jhpalmieri]:
 > This is a little silly, but untabify.patch removes all of the TABs I could find in the code.  If it's too silly, ignore the patch; it should be independent of everything else (although according to mpatel, it should make some source code look better).
+
 
 Yeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)
 
@@ -566,7 +564,7 @@ Michael
 archive/issue_comments_044078.json:
 ```json
 {
-    "body": "Replying to [comment:15 mabshoff]:\n\n> Yeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)\n\nOkay, see #5848.  I'll try to rebase it as needed...\n\n> Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n\nGreat, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.\n\n  John",
+    "body": "Replying to [comment:15 mabshoff]:\n\n> Yeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)\n\n\nOkay, see #5848.  I'll try to rebase it as needed...\n\n> Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n\n\nGreat, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.\n\n  John",
     "created_at": "2009-04-21T23:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -579,9 +577,11 @@ Replying to [comment:15 mabshoff]:
 
 > Yeah, we don't want any tabs in the Sage library, so I am happy to apply it. But I would suggest to move it to its own ticket since it can be reviewed independently of this patch. It might cause some merge problems with other patches, so I am not sure when the best time to apply it would be. I still have not pushed 3.4.1.final out the door and am thinking to get it in now since then 3.4.1 would not have any tabs :)
 
+
 Okay, see #5848.  I'll try to rebase it as needed...
 
 > Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.
+
 
 Great, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.
 
@@ -594,7 +594,7 @@ Great, thanks.  Feel free to delete untabify.patch, too, since it's now in its o
 archive/issue_comments_044079.json:
 ```json
 {
-    "body": "Replying to [comment:16 jhpalmieri]:\n\n> Okay, see #5848.  I'll try to rebase it as needed...\n\nThanks, I am tempted to merge that ticket right now into 3.4.1.final since I see no point in delaying this :). \n \n> > Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n> \n> Great, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.\n\nDone.\n \n>   John\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:16 jhpalmieri]:\n\n> Okay, see #5848.  I'll try to rebase it as needed...\n\n\nThanks, I am tempted to merge that ticket right now into 3.4.1.final since I see no point in delaying this :). \n \n> > Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.\n\n> \n> Great, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.\n\n\nDone.\n \n>   John\n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-21T23:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -607,15 +607,19 @@ Replying to [comment:16 jhpalmieri]:
 
 > Okay, see #5848.  I'll try to rebase it as needed...
 
+
 Thanks, I am tempted to merge that ticket right now into 3.4.1.final since I see no point in delaying this :). 
  
 > > Also: This ticket is somewhat messy due to many attachments, so I am deleting some old version of the patch that have been replaced by the unfied patch.
+
 > 
 > Great, thanks.  Feel free to delete untabify.patch, too, since it's now in its own ticket.
+
 
 Done.
  
 >   John
+
 
 Cheers,
 
@@ -762,7 +766,7 @@ I vote for "Bar!"  ;-)  It looks like "Sage Documentation" at minimum is an easy
 archive/issue_comments_044086.json:
 ```json
 {
-    "body": "I've written a few JavaScript functions for \"tear out\" introspection, but I'm not sure where to put them.  For now, I've put them in `javascript_local/introspect.js` and added \n\n```\nhead += '<script type=\"text/javascript\" src=\"/javascript_local/introspect.js\"></script>\\n'\n```\n\nto `notebook.py`, but the \"local\" repository seems to be gone.  Alternatively, I can put them in `javascript/introspect.js` and use the \"extcode\" repository, but I think the latter will soon change significantly (see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a08b413375558b46/d643be6b6bd04968#d643be6b6bd04968)).\n\n`js.py` is another possibility, but I'd rather not put them there, since it might be useful to load `introspect.js` into a \"torn out\" window.\n\nA related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\nbut I think notebook.py generates the macro list on-the-fly.",
+    "body": "I've written a few JavaScript functions for \"tear out\" introspection, but I'm not sure where to put them.  For now, I've put them in `javascript_local/introspect.js` and added \n\n```\nhead += '<script type=\"text/javascript\" src=\"/javascript_local/introspect.js\"></script>\\n'\n```\nto `notebook.py`, but the \"local\" repository seems to be gone.  Alternatively, I can put them in `javascript/introspect.js` and use the \"extcode\" repository, but I think the latter will soon change significantly (see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a08b413375558b46/d643be6b6bd04968#d643be6b6bd04968)).\n\n`js.py` is another possibility, but I'd rather not put them there, since it might be useful to load `introspect.js` into a \"torn out\" window.\n\nA related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\nbut I think notebook.py generates the macro list on-the-fly.",
     "created_at": "2009-05-03T09:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -776,7 +780,6 @@ I've written a few JavaScript functions for "tear out" introspection, but I'm no
 ```
 head += '<script type="text/javascript" src="/javascript_local/introspect.js"></script>\n'
 ```
-
 to `notebook.py`, but the "local" repository seems to be gone.  Alternatively, I can put them in `javascript/introspect.js` and use the "extcode" repository, but I think the latter will soon change significantly (see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a08b413375558b46/d643be6b6bd04968#d643be6b6bd04968)).
 
 `js.py` is another possibility, but I'd rather not put them there, since it might be useful to load `introspect.js` into a "torn out" window.
@@ -809,7 +812,7 @@ I think the tear-out stuff should be part of a different ticket -- it enhances t
 archive/issue_comments_044088.json:
 ```json
 {
-    "body": "Replying to [comment:25 jhpalmieri]:\n> I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.\n\n(Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)",
+    "body": "Replying to [comment:25 jhpalmieri]:\n> I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.\n\n\n(Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)",
     "created_at": "2009-05-03T16:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -821,6 +824,7 @@ archive/issue_comments_044088.json:
 Replying to [comment:25 jhpalmieri]:
 > I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.
 
+
 (Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)
 
 
@@ -830,7 +834,7 @@ Replying to [comment:25 jhpalmieri]:
 archive/issue_comments_044089.json:
 ```json
 {
-    "body": "Replying to [comment:24 mpatel]:\n\n> A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\n> but I think notebook.py generates the macro list on-the-fly.\n\nDavide (author of jsmath) sent these comments about the above paragraph:\n\nMpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.",
+    "body": "Replying to [comment:24 mpatel]:\n\n> A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\n> but I think notebook.py generates the macro list on-the-fly.\n\n\nDavide (author of jsmath) sent these comments about the above paragraph:\n\nMpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.",
     "created_at": "2009-05-04T14:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -844,6 +848,7 @@ Replying to [comment:24 mpatel]:
 > A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as "torn out" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),
 > but I think notebook.py generates the macro list on-the-fly.
 
+
 Davide (author of jsmath) sent these comments about the above paragraph:
 
 Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.
@@ -855,7 +860,7 @@ Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than pu
 archive/issue_comments_044090.json:
 ```json
 {
-    "body": "Replying to [comment:26 jhpalmieri]:\n> Replying to [comment:25 jhpalmieri]:\n> > I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.\n> (Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)\n\nAgreed.  Please see #6001 for progress on the tear-out stuff.",
+    "body": "Replying to [comment:26 jhpalmieri]:\n> Replying to [comment:25 jhpalmieri]:\n> > I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.\n\n> (Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)\n\nAgreed.  Please see #6001 for progress on the tear-out stuff.",
     "created_at": "2009-05-08T08:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -867,6 +872,7 @@ archive/issue_comments_044090.json:
 Replying to [comment:26 jhpalmieri]:
 > Replying to [comment:25 jhpalmieri]:
 > > I think the tear-out stuff should be part of a different ticket -- it enhances the other things here, but is a separate issue.
+
 > (Also, its presence here might slow down the refereeing process -- I think docstring.4.patch is ready to go and should get into Sage soon, while the tear-out stuff isn't there yet.)
 
 Agreed.  Please see #6001 for progress on the tear-out stuff.
@@ -916,7 +922,7 @@ Conform to docbuild setup.  This patch should be cumulative, against 3.4.2.
 archive/issue_comments_044093.json:
 ```json
 {
-    "body": "Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by @qed777 created at 2009-05-19 10:22:08\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
+    "body": "Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by @qed777 created at 2009-05-19 10:22:08\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
     "created_at": "2009-05-19T10:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -930,6 +936,7 @@ Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-u
 Replying to [comment:29 jhpalmieri]:
 > A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?
 
+
 I think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)
 
 
@@ -939,7 +946,7 @@ I think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch
 archive/issue_comments_044094.json:
 ```json
 {
-    "body": "> (I just exported changesets 12155-7 to the same file, in succession. Let me know if this is wrong.)\n\nIt didn't work for me, but I prepared a new patch.  This incorporates all of the earlier changes, plus just a little more: boothby's patch turned off the sphinx messages, and mine turns off all of the other messages (about the location of the introspection cache, for example).  It provides a bad way to turn those messages back on, because I couldn't figure out a better way, despite trying for quite a while -- see the docstring for `set_instrospect_html`.\n\nTo produce the patch, here's what I did: \n\n1. imported the old patch \"docstring.4.patch\".  \n\n2. used \"hg rollback\" to uncommit the changes\n\n3. performed the changes in your patch file (by hand, basically)\n\n4. \"hg commit\"\n\nThis produced an all-in-one patch.",
+    "body": "> (I just exported changesets 12155-7 to the same file, in succession. Let me know if this is wrong.)\n\n\nIt didn't work for me, but I prepared a new patch.  This incorporates all of the earlier changes, plus just a little more: boothby's patch turned off the sphinx messages, and mine turns off all of the other messages (about the location of the introspection cache, for example).  It provides a bad way to turn those messages back on, because I couldn't figure out a better way, despite trying for quite a while -- see the docstring for `set_instrospect_html`.\n\nTo produce the patch, here's what I did: \n\n1. imported the old patch \"docstring.4.patch\".  \n\n2. used \"hg rollback\" to uncommit the changes\n\n3. performed the changes in your patch file (by hand, basically)\n\n4. \"hg commit\"\n\nThis produced an all-in-one patch.",
     "created_at": "2009-05-19T21:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -949,6 +956,7 @@ archive/issue_comments_044094.json:
 ```
 
 > (I just exported changesets 12155-7 to the same file, in succession. Let me know if this is wrong.)
+
 
 It didn't work for me, but I prepared a new patch.  This incorporates all of the earlier changes, plus just a little more: boothby's patch turned off the sphinx messages, and mine turns off all of the other messages (about the location of the introspection cache, for example).  It provides a bad way to turn those messages back on, because I couldn't figure out a better way, despite trying for quite a while -- see the docstring for `set_instrospect_html`.
 
@@ -1071,7 +1079,7 @@ text color to black, and also tone down the colors of the examples.
 archive/issue_comments_044100.json:
 ```json
 {
-    "body": "> I think the documentation is currently much too colorful and therefore hard to read. I've attached a few tweaks to the css, which make the background lighter, change the text color to black, and also tone down the colors of the examples. \n\nI don't have strong color preferences, so I'm mostly okay with this, but I like having the EXAMPLES blocks set off with a different background color.  So here's a slight variant on your css.patch; the only difference is that, while I'm keeping your light gray as the general background, the background for the examples is white.",
+    "body": "> I think the documentation is currently much too colorful and therefore hard to read. I've attached a few tweaks to the css, which make the background lighter, change the text color to black, and also tone down the colors of the examples. \n\n\nI don't have strong color preferences, so I'm mostly okay with this, but I like having the EXAMPLES blocks set off with a different background color.  So here's a slight variant on your css.patch; the only difference is that, while I'm keeping your light gray as the general background, the background for the examples is white.",
     "created_at": "2009-05-29T19:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1081,6 +1089,7 @@ archive/issue_comments_044100.json:
 ```
 
 > I think the documentation is currently much too colorful and therefore hard to read. I've attached a few tweaks to the css, which make the background lighter, change the text color to black, and also tone down the colors of the examples. 
+
 
 I don't have strong color preferences, so I'm mostly okay with this, but I like having the EXAMPLES blocks set off with a different background color.  So here's a slight variant on your css.patch; the only difference is that, while I'm keeping your light gray as the general background, the background for the examples is white.
 
@@ -1109,7 +1118,7 @@ apply on top of docstring.5.patch -- this replaces css.patch
 archive/issue_comments_044102.json:
 ```json
 {
-    "body": "Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by @qed777 created at 2009-05-30 00:46:23\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```\n",
+    "body": "Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by @qed777 created at 2009-05-30 00:46:23\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```",
     "created_at": "2009-05-30T00:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1130,13 +1139,12 @@ div.docstring {
 
 
 
-
 ---
 
 archive/issue_comments_044103.json:
 ```json
 {
-    "body": "This is awesome!\n\nWhen doing a double-question mark in Sage 4.0, I get:\n\n\n```\nTraceback (most recent call last):\n  File \"\", line 1, in \n  File \"/home/jason/.sage/sage_notebook/worksheets/admin/7/code/10.py\", line 6, in \n    print _support_.source_code(\"sudoku\", globals(), system=\"sage\")\n  File \"/home/jason/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 240, in source_code\n    lines, lineno = sageinspect.sage_getsourcelines(obj, is_binary=False)\n  File \"/home/jason/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 568, in sage_getsourcelines\n    return inspect.getsourcelines(obj)\n  File \"/home/jason/sage/local/lib/python/inspect.py\", line 618, in getsourcelines\n    lines, lnum = findsource(object)\n  File \"/home/jason/download/sage-4.0.rc2/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 151, in findsource\nIOError: could not get source code\n```\n\n\nHowever, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?",
+    "body": "This is awesome!\n\nWhen doing a double-question mark in Sage 4.0, I get:\n\n```\nTraceback (most recent call last):\n  File \"\", line 1, in \n  File \"/home/jason/.sage/sage_notebook/worksheets/admin/7/code/10.py\", line 6, in \n    print _support_.source_code(\"sudoku\", globals(), system=\"sage\")\n  File \"/home/jason/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 240, in source_code\n    lines, lineno = sageinspect.sage_getsourcelines(obj, is_binary=False)\n  File \"/home/jason/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 568, in sage_getsourcelines\n    return inspect.getsourcelines(obj)\n  File \"/home/jason/sage/local/lib/python/inspect.py\", line 618, in getsourcelines\n    lines, lnum = findsource(object)\n  File \"/home/jason/download/sage-4.0.rc2/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 151, in findsource\nIOError: could not get source code\n```\n\nHowever, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?",
     "created_at": "2009-05-30T07:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1148,7 +1156,6 @@ archive/issue_comments_044103.json:
 This is awesome!
 
 When doing a double-question mark in Sage 4.0, I get:
-
 
 ```
 Traceback (most recent call last):
@@ -1164,7 +1171,6 @@ Traceback (most recent call last):
   File "/home/jason/download/sage-4.0.rc2/local/lib/python2.5/site-packages/IPython/ultraTB.py", line 151, in findsource
 IOError: could not get source code
 ```
-
 
 However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?
 
@@ -1193,7 +1199,7 @@ Rebase of docstring.5.patch + css-new.patch against v4.0.2 + #6307's 6307bis.pat
 archive/issue_comments_044105.json:
 ```json
 {
-    "body": "Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by @qed777 created at 2009-06-20 16:21:11\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
+    "body": "Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by @qed777 created at 2009-06-20 16:21:11\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
     "created_at": "2009-06-20T16:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1207,6 +1213,7 @@ Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/d
 Replying to [comment:38 jason]:
 > However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?
 
+
 I've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.
 
 
@@ -1216,7 +1223,7 @@ I've experienced something similar after upgrading and moving the installation t
 archive/issue_comments_044106.json:
 ```json
 {
-    "body": "I hate to say this, but I get conflicts on my 4.1 tree.  I applied the patches at #6307, then the patch here.  \nCan you rebase this?\n\n\n```\napplying docstring.6.patch\npatching file sage/misc/sagedoc.py\nHunk #1 FAILED at 19\nHunk #2 FAILED at 111\nHunk #4 FAILED at 143\n3 out of 6 hunks FAILED -- saving rejects to file sage/misc/sagedoc.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh docstring.6.patch\n```\n\n\nIt looks like this file was touched a lot in the last few weeks:\n\n\n```\ngrout@tiny:~/sage/devel/sage/sage/misc$ hg log -d -30 sagedoc.py\nchangeset:   12667:e40ab81e2c6d\ntag:         qtip\ntag:         docstring.6.patch\ntag:         tip\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Sat Jun 20 09:07:16 2009 -0700\nsummary:     #5653, pretty docstrings\n\nchangeset:   12653:3534c8c4de50\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Tue Jul 07 07:52:02 2009 -0700\nsummary:     fix for ref manual\n\nchangeset:   12616:0df4e2e58e79\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Mon Jun 29 17:14:16 2009 -0700\nsummary:     add 1 to line numbers\n\nchangeset:   12615:50be675c81f1\nuser:        Dan Drake <drake@kaist.edu>\ndate:        Sun Jun 28 22:17:17 2009 -0700\nsummary:     [mq]: trac_6429_line_numbers.patch\n\nchangeset:   12614:6d776eac44c9\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Sun Jun 28 21:29:54 2009 -0700\nsummary:     try to make search_src etc. less OS dependent\n\nchangeset:   12603:96d0f059d528\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Thu Jun 25 17:13:23 2009 -0700\nsummary:     ref manual fixes\n```\n",
+    "body": "I hate to say this, but I get conflicts on my 4.1 tree.  I applied the patches at #6307, then the patch here.  \nCan you rebase this?\n\n```\napplying docstring.6.patch\npatching file sage/misc/sagedoc.py\nHunk #1 FAILED at 19\nHunk #2 FAILED at 111\nHunk #4 FAILED at 143\n3 out of 6 hunks FAILED -- saving rejects to file sage/misc/sagedoc.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh docstring.6.patch\n```\n\nIt looks like this file was touched a lot in the last few weeks:\n\n```\ngrout@tiny:~/sage/devel/sage/sage/misc$ hg log -d -30 sagedoc.py\nchangeset:   12667:e40ab81e2c6d\ntag:         qtip\ntag:         docstring.6.patch\ntag:         tip\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Sat Jun 20 09:07:16 2009 -0700\nsummary:     #5653, pretty docstrings\n\nchangeset:   12653:3534c8c4de50\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Tue Jul 07 07:52:02 2009 -0700\nsummary:     fix for ref manual\n\nchangeset:   12616:0df4e2e58e79\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Mon Jun 29 17:14:16 2009 -0700\nsummary:     add 1 to line numbers\n\nchangeset:   12615:50be675c81f1\nuser:        Dan Drake <drake@kaist.edu>\ndate:        Sun Jun 28 22:17:17 2009 -0700\nsummary:     [mq]: trac_6429_line_numbers.patch\n\nchangeset:   12614:6d776eac44c9\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Sun Jun 28 21:29:54 2009 -0700\nsummary:     try to make search_src etc. less OS dependent\n\nchangeset:   12603:96d0f059d528\nuser:        J. H. Palmieri <palmieri@math.washington.edu>\ndate:        Thu Jun 25 17:13:23 2009 -0700\nsummary:     ref manual fixes\n```",
     "created_at": "2009-07-18T23:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1227,7 +1234,6 @@ archive/issue_comments_044106.json:
 
 I hate to say this, but I get conflicts on my 4.1 tree.  I applied the patches at #6307, then the patch here.  
 Can you rebase this?
-
 
 ```
 applying docstring.6.patch
@@ -1241,9 +1247,7 @@ patch failed, rejects left in working dir
 Errors during apply, please fix and refresh docstring.6.patch
 ```
 
-
 It looks like this file was touched a lot in the last few weeks:
-
 
 ```
 grout@tiny:~/sage/devel/sage/sage/misc$ hg log -d -30 sagedoc.py
@@ -1280,7 +1284,6 @@ user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Thu Jun 25 17:13:23 2009 -0700
 summary:     ref manual fixes
 ```
-
 
 
 
@@ -1345,7 +1348,7 @@ Out of curiosity: Have any new TABs appeared in library .py and .pyx files?
 archive/issue_comments_044110.json:
 ```json
 {
-    "body": "Replying to [comment:42 mpatel]:\n> Out of curiosity: Have any new TABs appeared in library .py and .pyx files?\n\nQuite a few, according to \n\n```\ngrep \"`echo '\\t'`\" `find -name \\*.pyx -o -name \\*.py`\n```\n\n(from tcsh, on Linux).  Or am I mistaken?  If not, what is an efficient way to generate a patch like that at #5848?\n\nI suppose we should make a [firm] request on `sage-devel`, too.  Perhaps we can set up [Mercurial](http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html) to untabify or complain during commit or export events?",
+    "body": "Replying to [comment:42 mpatel]:\n> Out of curiosity: Have any new TABs appeared in library .py and .pyx files?\n\n\nQuite a few, according to \n\n```\ngrep \"`echo '\\t'`\" `find -name \\*.pyx -o -name \\*.py`\n```\n(from tcsh, on Linux).  Or am I mistaken?  If not, what is an efficient way to generate a patch like that at #5848?\n\nI suppose we should make a [firm] request on `sage-devel`, too.  Perhaps we can set up [Mercurial](http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html) to untabify or complain during commit or export events?",
     "created_at": "2009-07-19T06:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1357,12 +1360,12 @@ archive/issue_comments_044110.json:
 Replying to [comment:42 mpatel]:
 > Out of curiosity: Have any new TABs appeared in library .py and .pyx files?
 
+
 Quite a few, according to 
 
 ```
 grep "`echo '\t'`" `find -name \*.pyx -o -name \*.py`
 ```
-
 (from tcsh, on Linux).  Or am I mistaken?  If not, what is an efficient way to generate a patch like that at #5848?
 
 I suppose we should make a [firm] request on `sage-devel`, too.  Perhaps we can set up [Mercurial](http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html) to untabify or complain during commit or export events?
@@ -1414,7 +1417,7 @@ I'll try to look through this next week.  I've also applied it to my tree so tha
 archive/issue_comments_044113.json:
 ```json
 {
-    "body": "Replying to [comment:46 jason]:\n> This sometimes messes up docstrings that are not yet in rest.  However, this also might spur action in getting the rest of the docs into rest format.\n\n[Thanks!]  Please let us know about outliers.",
+    "body": "Replying to [comment:46 jason]:\n> This sometimes messes up docstrings that are not yet in rest.  However, this also might spur action in getting the rest of the docs into rest format.\n\n\n[Thanks!]  Please let us know about outliers.",
     "created_at": "2009-07-19T08:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1425,6 +1428,7 @@ archive/issue_comments_044113.json:
 
 Replying to [comment:46 jason]:
 > This sometimes messes up docstrings that are not yet in rest.  However, this also might spur action in getting the rest of the docs into rest format.
+
 
 [Thanks!]  Please let us know about outliers.
 
@@ -1460,7 +1464,7 @@ Why don't we have figures in the reference manual?
 archive/issue_comments_044115.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nOh my god, this so totally rocks!!!\n\n\nRegarding the actual code:\n\n* It's pretty robust.  This is huge and worked no problem:\n\n```\nsage.combinat.sloane_functions??\n```\n\n\n\nThis just rocks.",
+    "body": "REFEREE REPORT:\n\nOh my god, this so totally rocks!!!\n\n\nRegarding the actual code:\n\n* It's pretty robust.  This is huge and worked no problem:\n\n```\nsage.combinat.sloane_functions??\n```\n\n\nThis just rocks.",
     "created_at": "2009-07-21T05:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1481,7 +1485,6 @@ Regarding the actual code:
 ```
 sage.combinat.sloane_functions??
 ```
-
 
 
 This just rocks.
@@ -1536,7 +1539,7 @@ Replying to [comment:48 mpatel]:
 archive/issue_comments_044118.json:
 ```json
 {
-    "body": "With the patches at #6307, `trac_5653_pretty_docstrings_v7.patch` results in the following doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/misc/sagedoc.py\", line 156:\n    sage: detex(r'More math: `x \\mapsto y`.  {\\bf Bold face}.')\nExpected:\n    'More math: `x  |-->  y`.  { Bold face}.'\nGot:\n    'More math: `x  |-->  y`.  {bf Bold face}.'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_sagedoc.py\n\t [21.5 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/misc/sageinspect.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/misc/sageinspect.py\", line 446:\n    sage: sage_getdoc(identity_matrix)[5:43]\nExpected:\n    'Return the `n times n` identity matrix'\nGot:\n    'Return the `n x n` identity matrix ove'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_sageinspect.py\n\t [2.2 s]\n```\n",
+    "body": "With the patches at #6307, `trac_5653_pretty_docstrings_v7.patch` results in the following doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/misc/sagedoc.py\", line 156:\n    sage: detex(r'More math: `x \\mapsto y`.  {\\bf Bold face}.')\nExpected:\n    'More math: `x  |-->  y`.  { Bold face}.'\nGot:\n    'More math: `x  |-->  y`.  {bf Bold face}.'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_sagedoc.py\n\t [21.5 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/misc/sageinspect.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/misc/sageinspect.py\", line 446:\n    sage: sage_getdoc(identity_matrix)[5:43]\nExpected:\n    'Return the `n times n` identity matrix'\nGot:\n    'Return the `n x n` identity matrix ove'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_sageinspect.py\n\t [2.2 s]\n```",
     "created_at": "2009-07-23T09:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1580,7 +1583,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_sageinspect.py
 	 [2.2 s]
 ```
-
 
 
 
@@ -1774,7 +1776,7 @@ For the patch `trac_5653_pretty_docstrings_v7.patch`, I assume that `doc/en/intr
 archive/issue_comments_044128.json:
 ```json
 {
-    "body": "Replying to [comment:62 mvngu]:\n> For the patch `trac_5653_pretty_docstrings_v7.patch`, I assume that `doc/en/introspect/static/empty` is an empty file, right?\nI think it contains just a newline character.  Thanks very much for making a patch.  I should have known by now, especially given recent events.  I suppose it's manifest density.",
+    "body": "Replying to [comment:62 mvngu]:\n> For the patch `trac_5653_pretty_docstrings_v7.patch`, I assume that `doc/en/introspect/static/empty` is an empty file, right?\n\nI think it contains just a newline character.  Thanks very much for making a patch.  I should have known by now, especially given recent events.  I suppose it's manifest density.",
     "created_at": "2009-07-28T16:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
@@ -1785,6 +1787,7 @@ archive/issue_comments_044128.json:
 
 Replying to [comment:62 mvngu]:
 > For the patch `trac_5653_pretty_docstrings_v7.patch`, I assume that `doc/en/introspect/static/empty` is an empty file, right?
+
 I think it contains just a newline character.  Thanks very much for making a patch.  I should have known by now, especially given recent events.  I suppose it's manifest density.
 
 

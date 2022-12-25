@@ -372,7 +372,7 @@ To use an example: a Sage `Integer` wraps a GMP/MPIR `mpz_t`. The GMP/MPIR libra
 archive/issue_comments_084211.json:
 ```json
 {
-    "body": "Replying to [comment:10 jdemeyer]:\n> I disagree with the premise of this ticket.\n> \n> I believe that `src/sage/libs` is a place purely for the library interface and nothing more. Making classes and implementing functionality using that library belongs somewhere else.\n> \n> To use an example: a Sage `Integer` wraps a GMP/MPIR `mpz_t`. The GMP/MPIR library interface belongs in `src/sage/libs/gmp`, but the `Integer` class does not (because it does a lot more than strictly wrapping the GMP/MPIR library).\n\nI understand that. But on the other hand, don't you agree that `gsl` is too specific to be placed just under `src/sage`, where all other subfolders  correspond to rather big (mathematical) themes?\n\nAnd it seems to me that  there are already files under `src/sage/libs/xxx` that contain classes implementing functionality using the libraries. For example, look into `eclib`. No?\n\nI think that `src/libs/gsl` is not an ideal place but less bad than just under `src/sage`. Could you suggest a better palce?",
+    "body": "Replying to [comment:10 jdemeyer]:\n> I disagree with the premise of this ticket.\n> \n> I believe that `src/sage/libs` is a place purely for the library interface and nothing more. Making classes and implementing functionality using that library belongs somewhere else.\n> \n> To use an example: a Sage `Integer` wraps a GMP/MPIR `mpz_t`. The GMP/MPIR library interface belongs in `src/sage/libs/gmp`, but the `Integer` class does not (because it does a lot more than strictly wrapping the GMP/MPIR library).\n\n\nI understand that. But on the other hand, don't you agree that `gsl` is too specific to be placed just under `src/sage`, where all other subfolders  correspond to rather big (mathematical) themes?\n\nAnd it seems to me that  there are already files under `src/sage/libs/xxx` that contain classes implementing functionality using the libraries. For example, look into `eclib`. No?\n\nI think that `src/libs/gsl` is not an ideal place but less bad than just under `src/sage`. Could you suggest a better palce?",
     "created_at": "2016-11-11T02:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9084",
     "type": "issue_comment",
@@ -388,6 +388,7 @@ Replying to [comment:10 jdemeyer]:
 > 
 > To use an example: a Sage `Integer` wraps a GMP/MPIR `mpz_t`. The GMP/MPIR library interface belongs in `src/sage/libs/gmp`, but the `Integer` class does not (because it does a lot more than strictly wrapping the GMP/MPIR library).
 
+
 I understand that. But on the other hand, don't you agree that `gsl` is too specific to be placed just under `src/sage`, where all other subfolders  correspond to rather big (mathematical) themes?
 
 And it seems to me that  there are already files under `src/sage/libs/xxx` that contain classes implementing functionality using the libraries. For example, look into `eclib`. No?
@@ -401,7 +402,7 @@ I think that `src/libs/gsl` is not an ideal place but less bad than just under `
 archive/issue_comments_084212.json:
 ```json
 {
-    "body": "Replying to [comment:11 klee]:\n> Could you suggest a better palce?\n\nHow about in `src/sage/calculus`?",
+    "body": "Replying to [comment:11 klee]:\n> Could you suggest a better palce?\n\n\nHow about in `src/sage/calculus`?",
     "created_at": "2016-11-11T08:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9084",
     "type": "issue_comment",
@@ -412,6 +413,7 @@ archive/issue_comments_084212.json:
 
 Replying to [comment:11 klee]:
 > Could you suggest a better palce?
+
 
 How about in `src/sage/calculus`?
 

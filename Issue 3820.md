@@ -86,7 +86,7 @@ Changing assignee from boothby to @mwhansen.
 archive/issue_comments_027111.json:
 ```json
 {
-    "body": "This patch needs to be rebased unless there is some dependency I am not aware of:\n\n```\nsage-3.3.alpha4/devel/sage$ patch -p1 < trac_3820.patch\\?format\\=raw \npatching file sage/server/notebook/templates/worksheet_listing.html\nHunk #1 succeeded at 130 (offset 1 line).\nHunk #2 FAILED at 178.\n1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_listing.html.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch needs to be rebased unless there is some dependency I am not aware of:\n\n```\nsage-3.3.alpha4/devel/sage$ patch -p1 < trac_3820.patch\\?format\\=raw \npatching file sage/server/notebook/templates/worksheet_listing.html\nHunk #1 succeeded at 130 (offset 1 line).\nHunk #2 FAILED at 178.\n1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_listing.html.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T05:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Hunk #1 succeeded at 130 (offset 1 line).
 Hunk #2 FAILED at 178.
 1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_listing.html.rej
 ```
-
 
 Cheers,
 

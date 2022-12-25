@@ -3,7 +3,7 @@
 archive/issues_006811.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\n\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
+    "body": "Assignee: @williamstein\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
     "created_at": "2009-08-23T04:11:08Z",
     "labels": [
         "component: number theory",
@@ -26,7 +26,6 @@ sage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)
 sage: prime_pi(8)
 4
 ```
-
 You'll see a plot that has a horizontal line at height 5 on it.  
 
 This is very bad and embarrassing!
@@ -87,7 +86,7 @@ Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/tra
 archive/issue_comments_055961.json:
 ```json
 {
-    "body": "Looks fine:\n1. Importing sage.plot.all is no longer necessary in prime_pi.pyx\n2. May want to change\n\n```\nfor i in range(len(v)):\n    w.append(v[i])\n    if i+1 < len(v):\n        w.append((v[i+1][0],v[i][1]))\n```\n\nto\n\n```\nfor i in range(len(v)-1):\n    w.append(v[i])\n    w.append((v[i+1][0],v[i][1]))\nw.append(v[len(v)-1])\n```\n\nfor readability.\n1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare\n\n```\nsage: plot_step_function([(i,i^3) for i in range(6)])\nsage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])\n```\n\na. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).\n1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.",
+    "body": "Looks fine:\n1. Importing sage.plot.all is no longer necessary in prime_pi.pyx\n2. May want to change\n\n```\nfor i in range(len(v)):\n    w.append(v[i])\n    if i+1 < len(v):\n        w.append((v[i+1][0],v[i][1]))\n```\nto\n\n```\nfor i in range(len(v)-1):\n    w.append(v[i])\n    w.append((v[i+1][0],v[i][1]))\nw.append(v[len(v)-1])\n```\nfor readability.\n1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare\n\n```\nsage: plot_step_function([(i,i^3) for i in range(6)])\nsage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])\n```\na. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).\n1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.",
     "created_at": "2009-08-23T09:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
@@ -106,7 +105,6 @@ for i in range(len(v)):
     if i+1 < len(v):
         w.append((v[i+1][0],v[i][1]))
 ```
-
 to
 
 ```
@@ -115,7 +113,6 @@ for i in range(len(v)-1):
     w.append((v[i+1][0],v[i][1]))
 w.append(v[len(v)-1])
 ```
-
 for readability.
 1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare
 
@@ -123,7 +120,6 @@ for readability.
 sage: plot_step_function([(i,i^3) for i in range(6)])
 sage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])
 ```
-
 a. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).
 1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.
 

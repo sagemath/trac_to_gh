@@ -115,7 +115,7 @@ The example Sage notebook use the font AppleGothic which is perhaps only found i
 archive/issue_comments_076348.json:
 ```json
 {
-    "body": "This looks pretty good. I have some comments and it will need some minor changes, but already it seems to work!\n\nFor anyone else wanting to test this who's using Linux, you can replace the `latex.extra_preamble` with something like\n\n```\nlatex.extra_preamble(\"\\\\\"+r\"usepackage{fontspec,xunicode,xltxtra}\\setmainfont[Mapping=tex-text]{UnBatang}\\setmonofont[Mapping=tex-text,Colour=0000AA]{UnDotum}\")\n```\n\nIn Linux, you should be able to do `fc-list :lang=ko` to get a list of fonts installed that support Korean; pick one and put that in and try this out. XeTeX is a standard part of TeXLive as of TL 2008, so it's not too hard to get.\n\nI'll look over this patch and post my comments soon.",
+    "body": "This looks pretty good. I have some comments and it will need some minor changes, but already it seems to work!\n\nFor anyone else wanting to test this who's using Linux, you can replace the `latex.extra_preamble` with something like\n\n```\nlatex.extra_preamble(\"\\\\\"+r\"usepackage{fontspec,xunicode,xltxtra}\\setmainfont[Mapping=tex-text]{UnBatang}\\setmonofont[Mapping=tex-text,Colour=0000AA]{UnDotum}\")\n```\nIn Linux, you should be able to do `fc-list :lang=ko` to get a list of fonts installed that support Korean; pick one and put that in and try this out. XeTeX is a standard part of TeXLive as of TL 2008, so it's not too hard to get.\n\nI'll look over this patch and post my comments soon.",
     "created_at": "2010-03-12T07:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ For anyone else wanting to test this who's using Linux, you can replace the `lat
 ```
 latex.extra_preamble("\\"+r"usepackage{fontspec,xunicode,xltxtra}\setmainfont[Mapping=tex-text]{UnBatang}\setmonofont[Mapping=tex-text,Colour=0000AA]{UnDotum}")
 ```
-
 In Linux, you should be able to do `fc-list :lang=ko` to get a list of fonts installed that support Korean; pick one and put that in and try this out. XeTeX is a standard part of TeXLive as of TL 2008, so it's not too hard to get.
 
 I'll look over this patch and post my comments soon.
@@ -143,7 +142,7 @@ I'll look over this patch and post my comments soon.
 archive/issue_comments_076349.json:
 ```json
 {
-    "body": "Hrm, this doesn't pass doctests. The first problem is that the \"official\" way to do deprecation is like this: for the `pdflatex` function (line 1188), you should do:\n\n```\nfrom sage.misc.misc import deprecation\ndeprecation('Use engine(\"pdflatex\") instead.')\nif t is None:\n    return _Latex_prefs._option[\"engine\"] == \"pdflatex\"\nself.engine(\"pdflatex\")\n```\n\nand then in the first doctest that uses the function:\n\n```\nsage: latex.pdflatex()\ndoctest:1: DeprecationWarning: Use engine(\"pdflatex\") instead.\nFalse\n```\n\nAlso, I see that the `pdflatex` function never unsets the pdflatex engine -- I think we need\n\n```\nif t is None:\n    return _Latex_prefs._option[\"engine\"] == \"pdflatex\"\nelif t:\n    self.engine(\"pdflatex\")\nelse:\n    self.engine(\"latex\")\n```\n\nso that `pdflatex(False)` does properly reset the engine.\n\nFinally, in the `png` function (line 1749 or so), you need to change the pdflatex keyword to engine, and change the `_run_latex_` command on line 1795 or so.\n\nHmmm, it seems like the `view` command can call {{{png}} with the pdflatex keyword: see line 1721 or so (I've fiddled with latex.py, so my line numbers are a bit off):\n\n```\npng(objects, os.path.join(base_dir, png_file),\n                debug=debug, do_in_background=False, pdflatex=pdflatex)\n```\n\nI think you'll need to move up the little snippet where you use the pdflatex keyword to decide what engine to use.\n\nWith these changes, doctests should pass.",
+    "body": "Hrm, this doesn't pass doctests. The first problem is that the \"official\" way to do deprecation is like this: for the `pdflatex` function (line 1188), you should do:\n\n```\nfrom sage.misc.misc import deprecation\ndeprecation('Use engine(\"pdflatex\") instead.')\nif t is None:\n    return _Latex_prefs._option[\"engine\"] == \"pdflatex\"\nself.engine(\"pdflatex\")\n```\nand then in the first doctest that uses the function:\n\n```\nsage: latex.pdflatex()\ndoctest:1: DeprecationWarning: Use engine(\"pdflatex\") instead.\nFalse\n```\nAlso, I see that the `pdflatex` function never unsets the pdflatex engine -- I think we need\n\n```\nif t is None:\n    return _Latex_prefs._option[\"engine\"] == \"pdflatex\"\nelif t:\n    self.engine(\"pdflatex\")\nelse:\n    self.engine(\"latex\")\n```\nso that `pdflatex(False)` does properly reset the engine.\n\nFinally, in the `png` function (line 1749 or so), you need to change the pdflatex keyword to engine, and change the `_run_latex_` command on line 1795 or so.\n\nHmmm, it seems like the `view` command can call {{{png}} with the pdflatex keyword: see line 1721 or so (I've fiddled with latex.py, so my line numbers are a bit off):\n\n```\npng(objects, os.path.join(base_dir, png_file),\n                debug=debug, do_in_background=False, pdflatex=pdflatex)\n```\nI think you'll need to move up the little snippet where you use the pdflatex keyword to decide what engine to use.\n\nWith these changes, doctests should pass.",
     "created_at": "2010-03-16T02:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -161,7 +160,6 @@ if t is None:
     return _Latex_prefs._option["engine"] == "pdflatex"
 self.engine("pdflatex")
 ```
-
 and then in the first doctest that uses the function:
 
 ```
@@ -169,7 +167,6 @@ sage: latex.pdflatex()
 doctest:1: DeprecationWarning: Use engine("pdflatex") instead.
 False
 ```
-
 Also, I see that the `pdflatex` function never unsets the pdflatex engine -- I think we need
 
 ```
@@ -180,7 +177,6 @@ elif t:
 else:
     self.engine("latex")
 ```
-
 so that `pdflatex(False)` does properly reset the engine.
 
 Finally, in the `png` function (line 1749 or so), you need to change the pdflatex keyword to engine, and change the `_run_latex_` command on line 1795 or so.
@@ -191,7 +187,6 @@ Hmmm, it seems like the `view` command can call {{{png}} with the pdflatex keywo
 png(objects, os.path.join(base_dir, png_file),
                 debug=debug, do_in_background=False, pdflatex=pdflatex)
 ```
-
 I think you'll need to move up the little snippet where you use the pdflatex keyword to decide what engine to use.
 
 With these changes, doctests should pass.
@@ -351,7 +346,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076358.json:
 ```json
 {
-    "body": "Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by @jhpalmieri created at 2010-03-17 15:47:19\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\n\nwill always return True there.  Use the function `have_program` from #8474 instead.",
+    "body": "Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by @jhpalmieri created at 2010-03-17 15:47:19\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\nwill always return True there.  Use the function `have_program` from #8474 instead.",
     "created_at": "2010-03-17T15:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -367,7 +362,6 @@ Using `os.system('which xelatex >/dev/null')` won't work right on Solaris: on th
 ```
 not bool(os.system('which xelatex >/dev/null'))
 ```
-
 will always return True there.  Use the function `have_program` from #8474 instead.
 
 
@@ -395,7 +389,7 @@ Expanding on this a bit: there has been a fair amount of work getting Sage to wo
 archive/issue_comments_076360.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> Expanding on this a bit: there has been a fair amount of work getting Sage to work on Solaris, and I think it does as of version 4.3.4.alpha1.  So I think that it is not a good time to put in a patch that doesn't work on Solaris; hence I've marked this as \"needs work\".  All you have to do to fix it is apply the patch at #8474 (now merged in 4.3.4.rc0) and then make the obvious change to this one line of the program...\n\nThat sounds good. I was aware of #8474 and decided to ignore that problem and open #8552, so that Kwankyu wouldn't have to rebase his patch -- but if it's a simple one-line change, then I suppose that's more reasonable.\n\nIf I rebase his patch, will you do a quick review?",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> Expanding on this a bit: there has been a fair amount of work getting Sage to work on Solaris, and I think it does as of version 4.3.4.alpha1.  So I think that it is not a good time to put in a patch that doesn't work on Solaris; hence I've marked this as \"needs work\".  All you have to do to fix it is apply the patch at #8474 (now merged in 4.3.4.rc0) and then make the obvious change to this one line of the program...\n\n\nThat sounds good. I was aware of #8474 and decided to ignore that problem and open #8552, so that Kwankyu wouldn't have to rebase his patch -- but if it's a simple one-line change, then I suppose that's more reasonable.\n\nIf I rebase his patch, will you do a quick review?",
     "created_at": "2010-03-17T23:10:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -406,6 +400,7 @@ archive/issue_comments_076360.json:
 
 Replying to [comment:12 jhpalmieri]:
 > Expanding on this a bit: there has been a fair amount of work getting Sage to work on Solaris, and I think it does as of version 4.3.4.alpha1.  So I think that it is not a good time to put in a patch that doesn't work on Solaris; hence I've marked this as "needs work".  All you have to do to fix it is apply the patch at #8474 (now merged in 4.3.4.rc0) and then make the obvious change to this one line of the program...
+
 
 That sounds good. I was aware of #8474 and decided to ignore that problem and open #8552, so that Kwankyu wouldn't have to rebase his patch -- but if it's a simple one-line change, then I suppose that's more reasonable.
 
@@ -418,7 +413,7 @@ If I rebase his patch, will you do a quick review?
 archive/issue_comments_076361.json:
 ```json
 {
-    "body": "Replying to [comment:13 ddrake]:\n> If I rebase his patch, will you do a quick review? \n\nSure, and thanks for offering to rebase it.  (I understand your point, but I don't want to break Solaris support right away.  Let's wait a few weeks instead.  :)",
+    "body": "Replying to [comment:13 ddrake]:\n> If I rebase his patch, will you do a quick review? \n\n\nSure, and thanks for offering to rebase it.  (I understand your point, but I don't want to break Solaris support right away.  Let's wait a few weeks instead.  :)",
     "created_at": "2010-03-17T23:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
@@ -429,6 +424,7 @@ archive/issue_comments_076361.json:
 
 Replying to [comment:13 ddrake]:
 > If I rebase his patch, will you do a quick review? 
+
 
 Sure, and thanks for offering to rebase it.  (I understand your point, but I don't want to break Solaris support right away.  Let's wait a few weeks instead.  :)
 

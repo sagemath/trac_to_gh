@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5778
 archive/issue_comments_045103.json:
 ```json
 {
-    "body": "Hi David,\n\nThis patch fails to apply to my 3.4.1.rc2:\n\n\n```\napplying padic_doctests.patch\npatching file sage/rings/padics/factory.py\nHunk #1 FAILED at 291\nHunk #2 FAILED at 358\nHunk #3 FAILED at 483\nHunk #4 FAILED at 518\nHunk #5 FAILED at 529\nHunk #6 FAILED at 787\nHunk #7 FAILED at 805\nHunk #8 FAILED at 820\nHunk #9 FAILED at 829\nHunk #10 FAILED at 1141\nHunk #11 FAILED at 1207\nHunk #12 FAILED at 1679\nHunk #13 FAILED at 1705\nHunk #14 FAILED at 1714\nHunk #15 FAILED at 1723\nHunk #16 FAILED at 1732\nHunk #17 FAILED at 1744\nHunk #18 succeeded at 525 with fuzz 2 (offset -1295 lines).\nHunk #19 succeeded at 570 with fuzz 2 (offset -1300 lines).\nHunk #20 FAILED at 1879\nHunk #21 succeeded at 582 with fuzz 1 (offset -1307 lines).\n18 out of 23 hunks FAILED -- saving rejects to file sage/rings/padics/factory.py.rej\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nHunk #39 FAILED at 1625\n1 out of 45 hunks FAILED -- saving rejects to file sage/rings/padics/padic_ZZ_pX_CA_element.pyx.rej\npatching file sage/rings/padics/padic_printing.pyx\nHunk #1 FAILED at 19\nHunk #9 FAILED at 228\nHunk #10 FAILED at 303\nHunk #11 FAILED at 385\nHunk #13 FAILED at 519\nHunk #15 FAILED at 562\nHunk #16 succeeded at 556 with fuzz 2 (offset -107 lines).\nHunk #20 FAILED at 894\nHunk #21 FAILED at 923\nHunk #22 FAILED at 975\nHunk #23 succeeded at 797 with fuzz 1 (offset -197 lines).\n9 out of 24 hunks FAILED -- saving rejects to file sage/rings/padics/padic_printing.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh padic_doctests.patch\n```\n\n\nI'll try to take a look and see what's going on, but it might take a while.",
+    "body": "Hi David,\n\nThis patch fails to apply to my 3.4.1.rc2:\n\n```\napplying padic_doctests.patch\npatching file sage/rings/padics/factory.py\nHunk #1 FAILED at 291\nHunk #2 FAILED at 358\nHunk #3 FAILED at 483\nHunk #4 FAILED at 518\nHunk #5 FAILED at 529\nHunk #6 FAILED at 787\nHunk #7 FAILED at 805\nHunk #8 FAILED at 820\nHunk #9 FAILED at 829\nHunk #10 FAILED at 1141\nHunk #11 FAILED at 1207\nHunk #12 FAILED at 1679\nHunk #13 FAILED at 1705\nHunk #14 FAILED at 1714\nHunk #15 FAILED at 1723\nHunk #16 FAILED at 1732\nHunk #17 FAILED at 1744\nHunk #18 succeeded at 525 with fuzz 2 (offset -1295 lines).\nHunk #19 succeeded at 570 with fuzz 2 (offset -1300 lines).\nHunk #20 FAILED at 1879\nHunk #21 succeeded at 582 with fuzz 1 (offset -1307 lines).\n18 out of 23 hunks FAILED -- saving rejects to file sage/rings/padics/factory.py.rej\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nHunk #39 FAILED at 1625\n1 out of 45 hunks FAILED -- saving rejects to file sage/rings/padics/padic_ZZ_pX_CA_element.pyx.rej\npatching file sage/rings/padics/padic_printing.pyx\nHunk #1 FAILED at 19\nHunk #9 FAILED at 228\nHunk #10 FAILED at 303\nHunk #11 FAILED at 385\nHunk #13 FAILED at 519\nHunk #15 FAILED at 562\nHunk #16 succeeded at 556 with fuzz 2 (offset -107 lines).\nHunk #20 FAILED at 894\nHunk #21 FAILED at 923\nHunk #22 FAILED at 975\nHunk #23 succeeded at 797 with fuzz 1 (offset -197 lines).\n9 out of 24 hunks FAILED -- saving rejects to file sage/rings/padics/padic_printing.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh padic_doctests.patch\n```\n\nI'll try to take a look and see what's going on, but it might take a while.",
     "created_at": "2009-04-15T00:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_045103.json:
 Hi David,
 
 This patch fails to apply to my 3.4.1.rc2:
-
 
 ```
 applying padic_doctests.patch
@@ -93,7 +92,6 @@ patch failed, rejects left in working dir
 errors during apply, please fix and refresh padic_doctests.patch
 ```
 
-
 I'll try to take a look and see what's going on, but it might take a while.
 
 
@@ -103,7 +101,7 @@ I'll try to take a look and see what's going on, but it might take a while.
 archive/issue_comments_045104.json:
 ```json
 {
-    "body": "This patch does not import particularly well:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import padic_doctests.patch \napplying padic_doctests.patch\npatching file sage/rings/padics/factory.py\nHunk #1 FAILED at 291\nHunk #2 FAILED at 358\nHunk #3 FAILED at 483\nHunk #4 FAILED at 518\nHunk #5 FAILED at 529\nHunk #6 FAILED at 787\nHunk #7 FAILED at 805\nHunk #8 FAILED at 820\nHunk #9 FAILED at 829\nHunk #10 FAILED at 1141\nHunk #11 FAILED at 1207\nHunk #12 FAILED at 1679\nHunk #13 FAILED at 1705\nHunk #14 FAILED at 1714\nHunk #15 FAILED at 1723\nHunk #16 FAILED at 1732\nHunk #17 FAILED at 1744\nHunk #18 succeeded at 525 with fuzz 2 (offset -1295 lines).\nHunk #19 succeeded at 570 with fuzz 2 (offset -1300 lines).\nHunk #20 FAILED at 1879\nHunk #21 succeeded at 582 with fuzz 1 (offset -1307 lines).\n18 out of 23 hunks FAILED -- saving rejects to file sage/rings/padics/factory.py.rej\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nHunk #39 FAILED at 1625\n1 out of 45 hunks FAILED -- saving rejects to file sage/rings/padics/padic_ZZ_pX_CA_element.pyx.rej\npatching file sage/rings/padics/padic_printing.pyx\nHunk #1 FAILED at 19\nHunk #9 FAILED at 228\nHunk #10 FAILED at 303\nHunk #11 FAILED at 385\nHunk #13 FAILED at 519\nHunk #15 FAILED at 562\nHunk #16 succeeded at 556 with fuzz 2 (offset -107 lines).\nHunk #20 FAILED at 894\nHunk #21 FAILED at 923\nHunk #22 FAILED at 975\nHunk #23 succeeded at 797 with fuzz 1 (offset -197 lines).\n9 out of 24 hunks FAILED -- saving rejects to file sage/rings/padics/padic_printing.pyx.rej\nabort: patch failed to apply\n```\n\n\nI am not sure if there is a missing dependency. \n\nDavid: any ideas?\n\nCheers,\n\nMichael",
+    "body": "This patch does not import particularly well:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import padic_doctests.patch \napplying padic_doctests.patch\npatching file sage/rings/padics/factory.py\nHunk #1 FAILED at 291\nHunk #2 FAILED at 358\nHunk #3 FAILED at 483\nHunk #4 FAILED at 518\nHunk #5 FAILED at 529\nHunk #6 FAILED at 787\nHunk #7 FAILED at 805\nHunk #8 FAILED at 820\nHunk #9 FAILED at 829\nHunk #10 FAILED at 1141\nHunk #11 FAILED at 1207\nHunk #12 FAILED at 1679\nHunk #13 FAILED at 1705\nHunk #14 FAILED at 1714\nHunk #15 FAILED at 1723\nHunk #16 FAILED at 1732\nHunk #17 FAILED at 1744\nHunk #18 succeeded at 525 with fuzz 2 (offset -1295 lines).\nHunk #19 succeeded at 570 with fuzz 2 (offset -1300 lines).\nHunk #20 FAILED at 1879\nHunk #21 succeeded at 582 with fuzz 1 (offset -1307 lines).\n18 out of 23 hunks FAILED -- saving rejects to file sage/rings/padics/factory.py.rej\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nHunk #39 FAILED at 1625\n1 out of 45 hunks FAILED -- saving rejects to file sage/rings/padics/padic_ZZ_pX_CA_element.pyx.rej\npatching file sage/rings/padics/padic_printing.pyx\nHunk #1 FAILED at 19\nHunk #9 FAILED at 228\nHunk #10 FAILED at 303\nHunk #11 FAILED at 385\nHunk #13 FAILED at 519\nHunk #15 FAILED at 562\nHunk #16 succeeded at 556 with fuzz 2 (offset -107 lines).\nHunk #20 FAILED at 894\nHunk #21 FAILED at 923\nHunk #22 FAILED at 975\nHunk #23 succeeded at 797 with fuzz 1 (offset -197 lines).\n9 out of 24 hunks FAILED -- saving rejects to file sage/rings/padics/padic_printing.pyx.rej\nabort: patch failed to apply\n```\n\nI am not sure if there is a missing dependency. \n\nDavid: any ideas?\n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T01:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -159,7 +157,6 @@ Hunk #23 succeeded at 797 with fuzz 1 (offset -197 lines).
 abort: patch failed to apply
 ```
 
-
 I am not sure if there is a missing dependency. 
 
 David: any ideas?
@@ -197,7 +194,7 @@ Michael
 archive/issue_comments_045106.json:
 ```json
 {
-    "body": "Ok, with this patch applied:\n\n```\nsage-3.4.1.rc3/devel/sage$ patch -p1 < padic_doctests.patch \npatching file sage/rings/padics/factory.py\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\npatching file sage/rings/padics/padic_ZZ_pX_CR_element.pyx\npatching file sage/rings/padics/padic_ZZ_pX_FM_element.pyx\npatching file sage/rings/padics/padic_capped_absolute_element.pyx\npatching file sage/rings/padics/padic_capped_relative_element.pxd\npatching file sage/rings/padics/padic_capped_relative_element.pyx\npatching file sage/rings/padics/padic_ext_element.pxd\npatching file sage/rings/padics/padic_ext_element.pyx\npatching file sage/rings/padics/padic_fixed_mod_element.pyx\npatching file sage/rings/padics/padic_generic.py\npatching file sage/rings/padics/padic_generic_element.pyx\npatching file sage/rings/padics/padic_printing.pyx\npatching file sage/rings/padics/pow_computer.pyx\npatching file sage/rings/padics/pow_computer_ext.pyx\n```\n\nWe also get:\n\n```\nOverall weighted coverage score:  38.2%\nTotal number of functions:  840\nWe need  250 more function to get to 68% coverage.\nWe need  267 more function to get to 70% coverage.\nWe need  309 more function to get to 75% coverage.\n```\n\nfor the padics directory **only**.\n\nCheers,\n\nMichael",
+    "body": "Ok, with this patch applied:\n\n```\nsage-3.4.1.rc3/devel/sage$ patch -p1 < padic_doctests.patch \npatching file sage/rings/padics/factory.py\npatching file sage/rings/padics/padic_ZZ_pX_CA_element.pyx\npatching file sage/rings/padics/padic_ZZ_pX_CR_element.pyx\npatching file sage/rings/padics/padic_ZZ_pX_FM_element.pyx\npatching file sage/rings/padics/padic_capped_absolute_element.pyx\npatching file sage/rings/padics/padic_capped_relative_element.pxd\npatching file sage/rings/padics/padic_capped_relative_element.pyx\npatching file sage/rings/padics/padic_ext_element.pxd\npatching file sage/rings/padics/padic_ext_element.pyx\npatching file sage/rings/padics/padic_fixed_mod_element.pyx\npatching file sage/rings/padics/padic_generic.py\npatching file sage/rings/padics/padic_generic_element.pyx\npatching file sage/rings/padics/padic_printing.pyx\npatching file sage/rings/padics/pow_computer.pyx\npatching file sage/rings/padics/pow_computer_ext.pyx\n```\nWe also get:\n\n```\nOverall weighted coverage score:  38.2%\nTotal number of functions:  840\nWe need  250 more function to get to 68% coverage.\nWe need  267 more function to get to 70% coverage.\nWe need  309 more function to get to 75% coverage.\n```\nfor the padics directory **only**.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T02:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -226,7 +223,6 @@ patching file sage/rings/padics/padic_printing.pyx
 patching file sage/rings/padics/pow_computer.pyx
 patching file sage/rings/padics/pow_computer_ext.pyx
 ```
-
 We also get:
 
 ```
@@ -236,7 +232,6 @@ We need  250 more function to get to 68% coverage.
 We need  267 more function to get to 70% coverage.
 We need  309 more function to get to 75% coverage.
 ```
-
 for the padics directory **only**.
 
 Cheers,
@@ -250,7 +245,7 @@ Michael
 archive/issue_comments_045107.json:
 ```json
 {
-    "body": "There are some slight doctesting failures:\n\n```\nThe following tests failed:\n\nsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 3 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 2 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 4 doctests failed\nsage -t -long devel/sage/sage/rings/padics/factory.py # 2 doctests failed\nsage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed\n```\n\n\nCheers,\n\nMicheal",
+    "body": "There are some slight doctesting failures:\n\n```\nThe following tests failed:\n\nsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 3 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 2 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 4 doctests failed\nsage -t -long devel/sage/sage/rings/padics/factory.py # 2 doctests failed\nsage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed\n```\n\nCheers,\n\nMicheal",
     "created_at": "2009-04-15T02:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -271,7 +266,6 @@ sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 4 doct
 sage -t -long devel/sage/sage/rings/padics/factory.py # 2 doctests failed
 sage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed
 ```
-
 
 Cheers,
 
@@ -323,7 +317,7 @@ archive/issue_events_013562.json:
 archive/issue_comments_045109.json:
 ```json
 {
-    "body": "Looks much better. One trivial hashing issue (32 vs. 64 bit) needs to be fixed:\n\n```\nsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc4/devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\", line 2357:\n    sage: hash(R(-1))\nExpected:\n    1977822444\nGot:\n    95367431640624\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Looks much better. One trivial hashing issue (32 vs. 64 bit) needs to be fixed:\n\n```\nsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc4/devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\", line 2357:\n    sage: hash(R(-1))\nExpected:\n    1977822444\nGot:\n    95367431640624\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T03:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -345,7 +339,6 @@ Got:
     95367431640624
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -376,7 +369,7 @@ Michael,  are you actually reviewing this or just making sure that it applies an
 archive/issue_comments_045111.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n\nHi John,\n\n> Michael,  are you actually reviewing this or just making sure that it applies and passes tests before it can be reviewed?  John\n\nI am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 cremona]:\n\nHi John,\n\n> Michael,  are you actually reviewing this or just making sure that it applies and passes tests before it can be reviewed?  John\n\n\nI am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T16:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -391,6 +384,7 @@ Hi John,
 
 > Michael,  are you actually reviewing this or just making sure that it applies and passes tests before it can be reviewed?  John
 
+
 I am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.
 
 Cheers,
@@ -404,7 +398,7 @@ Michael
 archive/issue_comments_045112.json:
 ```json
 {
-    "body": "Replying to [comment:11 mabshoff]:\n\n> I am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.\n\nThat's what I thought.  I'll take a look.  John",
+    "body": "Replying to [comment:11 mabshoff]:\n\n> I am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.\n\n\nThat's what I thought.  I'll take a look.  John",
     "created_at": "2009-04-18T16:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -416,6 +410,7 @@ archive/issue_comments_045112.json:
 Replying to [comment:11 mabshoff]:
 
 > I am not reviewing this since I don't feel qualified, I just made sure that the patch applied and passes doctests.
+
 
 That's what I thought.  I'll take a look.  John
 
@@ -528,7 +523,7 @@ I'm adding a bunch more doctests and breaking this up into more managable chunks
 archive/issue_comments_045116.json:
 ```json
 {
-    "body": "Replying to [comment:15 roed]:\n> I'm adding a bunch more doctests and breaking this up into more managable chunks (viewable at least).  If anyone wants to review this, let me know, but you probably don't want to get started quite yet.\n\nOk, could you please made a series of tickets (in case you have clear dependencies and the patches can be layered) then so that one reviewer does not end up with say 1MB total of patches to review on one ticket?\n\nFor this ticket it would be nice if you could split the ReST formatting changes from the other fixes because I am happy to review the ReST changes. Then the other new doctests and fixes should go to a followup ticket. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:15 roed]:\n> I'm adding a bunch more doctests and breaking this up into more managable chunks (viewable at least).  If anyone wants to review this, let me know, but you probably don't want to get started quite yet.\n\n\nOk, could you please made a series of tickets (in case you have clear dependencies and the patches can be layered) then so that one reviewer does not end up with say 1MB total of patches to review on one ticket?\n\nFor this ticket it would be nice if you could split the ReST formatting changes from the other fixes because I am happy to review the ReST changes. Then the other new doctests and fixes should go to a followup ticket. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T18:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -539,6 +534,7 @@ archive/issue_comments_045116.json:
 
 Replying to [comment:15 roed]:
 > I'm adding a bunch more doctests and breaking this up into more managable chunks (viewable at least).  If anyone wants to review this, let me know, but you probably don't want to get started quite yet.
+
 
 Ok, could you please made a series of tickets (in case you have clear dependencies and the patches can be layered) then so that one reviewer does not end up with say 1MB total of patches to review on one ticket?
 
@@ -619,7 +615,7 @@ These are split up so that they edit different files; one should therefore be ab
 archive/issue_comments_045120.json:
 ```json
 {
-    "body": "The last patch fail against 3.4.1: \n\n```\npatching file sage/rings/padics/padic_generic_element.pyx\nHunk #13 FAILED at 737.\nHunk #14 succeeded at 869 (offset -3 lines).\nHunk #15 succeeded at 898 (offset -3 lines).\nHunk #16 succeeded at 930 (offset -3 lines).\nHunk #17 succeeded at 956 (offset -3 lines).\nHunk #18 FAILED at 1006.\n2 out of 18 hunks FAILED -- saving rejects to file sage/rings/padics/padic_generic_element.pyx.rej\n```\n\nThere are some more issues with 3.4.2.alpha0, but I can revert the changes from there and just patch them back in after merging padics instead of rebasing the patch :)\n\nOne more thing: You credit Genya Zaytman for writing doctests, but AFAIK the person has never been credited for contributing to Sage. \n\nCheers,\n\nMichael",
+    "body": "The last patch fail against 3.4.1: \n\n```\npatching file sage/rings/padics/padic_generic_element.pyx\nHunk #13 FAILED at 737.\nHunk #14 succeeded at 869 (offset -3 lines).\nHunk #15 succeeded at 898 (offset -3 lines).\nHunk #16 succeeded at 930 (offset -3 lines).\nHunk #17 succeeded at 956 (offset -3 lines).\nHunk #18 FAILED at 1006.\n2 out of 18 hunks FAILED -- saving rejects to file sage/rings/padics/padic_generic_element.pyx.rej\n```\nThere are some more issues with 3.4.2.alpha0, but I can revert the changes from there and just patch them back in after merging padics instead of rebasing the patch :)\n\nOne more thing: You credit Genya Zaytman for writing doctests, but AFAIK the person has never been credited for contributing to Sage. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-24T23:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -640,7 +636,6 @@ Hunk #17 succeeded at 956 (offset -3 lines).
 Hunk #18 FAILED at 1006.
 2 out of 18 hunks FAILED -- saving rejects to file sage/rings/padics/padic_generic_element.pyx.rej
 ```
-
 There are some more issues with 3.4.2.alpha0, but I can revert the changes from there and just patch them back in after merging padics instead of rebasing the patch :)
 
 One more thing: You credit Genya Zaytman for writing doctests, but AFAIK the person has never been credited for contributing to Sage. 
@@ -680,7 +675,7 @@ Michael
 archive/issue_comments_045122.json:
 ```json
 {
-    "body": "I am seeing three doctest failure in 3.4.1.final on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/rings/integer_ring.pyx\"      \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/integer_ring.pyx\", line 848:\n    sage: ZZ.completion(5, 15, print_mode='bars')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[3]>\", line 1, in <module>\n        ZZ.completion(Integer(5), Integer(15), print_mode='bars')###line 848:\n    sage: ZZ.completion(5, 15, print_mode='bars')\n      File \"integer_ring.pyx\", line 840, in sage.rings.integer_ring.IntegerRing_class.completion (sage/rings/integer_ring.c:9144)\n    TypeError: completion() got an unexpected keyword argument 'print_mode'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_25\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_integer_ring.py\n\t [2.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/integer_ring.pyx\"\nTotal time for all tests: 2.5 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed\nsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\", line 2283:\n    sage: hash(R(17)) #indirect doctest\nExpected:\n    17\n    1977822444\nGot:\n    17\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_57\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_padic_capped_relative_element.py\n\t [1.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\nTotal time for all tests: 1.3 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx # 2 doctests failed\nsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 667:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 699:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)]) #indirect doctest\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_14\n   1 of   8 in __main__.example_15\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_padic_ZZ_pX_element.py\n\t [1.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\nTotal time for all tests: 1.4 seconds\n```\n\n\nCheers,\n\nMichael",
+    "body": "I am seeing three doctest failure in 3.4.1.final on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/rings/integer_ring.pyx\"      \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/integer_ring.pyx\", line 848:\n    sage: ZZ.completion(5, 15, print_mode='bars')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4.1.final/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[3]>\", line 1, in <module>\n        ZZ.completion(Integer(5), Integer(15), print_mode='bars')###line 848:\n    sage: ZZ.completion(5, 15, print_mode='bars')\n      File \"integer_ring.pyx\", line 840, in sage.rings.integer_ring.IntegerRing_class.completion (sage/rings/integer_ring.c:9144)\n    TypeError: completion() got an unexpected keyword argument 'print_mode'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_25\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_integer_ring.py\n\t [2.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/integer_ring.pyx\"\nTotal time for all tests: 2.5 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed\nsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\", line 2283:\n    sage: hash(R(17)) #indirect doctest\nExpected:\n    17\n    1977822444\nGot:\n    17\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_57\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_padic_capped_relative_element.py\n\t [1.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/padics/padic_capped_relative_element.pyx\"\nTotal time for all tests: 1.3 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx # 2 doctests failed\nsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 667:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 699:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)]) #indirect doctest\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_14\n   1 of   8 in __main__.example_15\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.final/tmp/.doctest_padic_ZZ_pX_element.py\n\t [1.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\nTotal time for all tests: 1.4 seconds\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-25T05:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -779,7 +774,6 @@ The following tests failed:
 	sage -t -long "devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx"
 Total time for all tests: 1.4 seconds
 ```
-
 
 Cheers,
 
@@ -944,7 +938,7 @@ Michael
 archive/issue_comments_045131.json:
 ```json
 {
-    "body": "Replying to [comment:31 mabshoff]:\n> FYI: #5864 touches code the above patch touches.\n\nSorry, I meant #5846 and it does **not** - sorry for the noise :)\n\n> Cheers,\n> \n> Michael\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:31 mabshoff]:\n> FYI: #5864 touches code the above patch touches.\n\n\nSorry, I meant #5846 and it does **not** - sorry for the noise :)\n\n> Cheers,\n> \n> Michael\n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T00:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -956,11 +950,13 @@ archive/issue_comments_045131.json:
 Replying to [comment:31 mabshoff]:
 > FYI: #5864 touches code the above patch touches.
 
+
 Sorry, I meant #5846 and it does **not** - sorry for the noise :)
 
 > Cheers,
 > 
 > Michael
+
 
 Cheers,
 
@@ -1103,7 +1099,7 @@ Also, something I just noticed (not part of this patch). The functions `_set_to_
 archive/issue_comments_045137.json:
 ```json
 {
-    "body": "sage/rings/padics/padic_capped_absolute_element.pyx:382\n\n\n```\n-            sage: R(7^5)._is_inexact_zero() \n+            sage: R(0,4)._is_inexact_zero() \n```\n\n\nThe former is a better example, IMHO.",
+    "body": "sage/rings/padics/padic_capped_absolute_element.pyx:382\n\n```\n-            sage: R(7^5)._is_inexact_zero() \n+            sage: R(0,4)._is_inexact_zero() \n```\n\nThe former is a better example, IMHO.",
     "created_at": "2009-05-03T08:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1114,12 +1110,10 @@ archive/issue_comments_045137.json:
 
 sage/rings/padics/padic_capped_absolute_element.pyx:382
 
-
 ```
 -            sage: R(7^5)._is_inexact_zero() 
 +            sage: R(0,4)._is_inexact_zero() 
 ```
-
 
 The former is a better example, IMHO.
 
@@ -1263,7 +1257,7 @@ I'll try to diversify the doctests for those functions in a bit.  Right now I'm 
 archive/issue_comments_045144.json:
 ```json
 {
-    "body": "\n```\nrobert$ ls sage/rings/padics/*.py* | wc\n      30      30    1192\n```\n\n\nSo nearly half of the files still need ReST conversion? Let's put this off to a later ticket, so we can get this one here into 4.0.",
+    "body": "```\nrobert$ ls sage/rings/padics/*.py* | wc\n      30      30    1192\n```\n\nSo nearly half of the files still need ReST conversion? Let's put this off to a later ticket, so we can get this one here into 4.0.",
     "created_at": "2009-05-07T07:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1272,12 +1266,10 @@ archive/issue_comments_045144.json:
 }
 ```
 
-
 ```
 robert$ ls sage/rings/padics/*.py* | wc
       30      30    1192
 ```
-
 
 So nearly half of the files still need ReST conversion? Let's put this off to a later ticket, so we can get this one here into 4.0.
 
@@ -1306,7 +1298,7 @@ Yep, I agree.  There are no build errors for any of them, but there are lots of 
 archive/issue_comments_045146.json:
 ```json
 {
-    "body": "With #5105 applied all patches apply and I am seeing one issue on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 654:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\n1 items had failures:\n```\n\nBut padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.\n\nCheers,\n\nMichael",
+    "body": "With #5105 applied all patches apply and I am seeing one issue on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 654:\n    sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\nExpected:\n    (1, 340282366920938463463374607431768211457, 2)\nGot:\n    (4, 340282366920938463463374607431768211457, 2)\n**********************************************************************\n1 items had failures:\n```\nBut padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-10T13:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1329,7 +1321,6 @@ Got:
 **********************************************************************
 1 items had failures:
 ```
-
 But padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.
 
 Cheers,
@@ -1343,7 +1334,7 @@ Michael
 archive/issue_comments_045147.json:
 ```json
 {
-    "body": "Hah.  On sage.math:\n\n\n```\nsage: from sage.libs.ntl.all import ZZ as ntl_ZZ\nsage: ntl_ZZ(4) < 1\nTrue\nsage: ntl_ZZ(1) < 4\nTrue\n```\n\n\nOn my machine:\n\n```\nsage: from sage.libs.ntl.all import ZZ as ntl_ZZ\nsage: ntl_ZZ(4) < 1\nFalse\nsage: ntl_ZZ(1) < 4\nFalse\n```\n\n\nntl_ZZ is just comparing types.  I'll change the code to convert to Integers earlier.\n\nReplying to [comment:47 mabshoff]:\n> With #5105 applied all patches apply and I am seeing one issue on sage.math:\n> {{{\n> sage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n> **********************************************************************\n> File \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 654:\n>     sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\n> Expected:\n>     (1, 340282366920938463463374607431768211457, 2)\n> Got:\n>     (4, 340282366920938463463374607431768211457, 2)\n> **********************************************************************\n> 1 items had failures:\n> }}}\n> But padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.\n> \n> Cheers,\n> \n> Michael",
+    "body": "Hah.  On sage.math:\n\n```\nsage: from sage.libs.ntl.all import ZZ as ntl_ZZ\nsage: ntl_ZZ(4) < 1\nTrue\nsage: ntl_ZZ(1) < 4\nTrue\n```\n\nOn my machine:\n\n```\nsage: from sage.libs.ntl.all import ZZ as ntl_ZZ\nsage: ntl_ZZ(4) < 1\nFalse\nsage: ntl_ZZ(1) < 4\nFalse\n```\n\nntl_ZZ is just comparing types.  I'll change the code to convert to Integers earlier.\n\nReplying to [comment:47 mabshoff]:\n> With #5105 applied all patches apply and I am seeing one issue on sage.math:\n> \n> ```\n> sage -t -long \"devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\"\n> **********************************************************************\n> File \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx\", line 654:\n>     sage: _find_val_aprec_test(Zq(25,names='a'), [15, int(75), ntl_ZZ(625)])\n> Expected:\n>     (1, 340282366920938463463374607431768211457, 2)\n> Got:\n>     (4, 340282366920938463463374607431768211457, 2)\n> **********************************************************************\n> 1 items had failures:\n> ```\n> But padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2009-05-11T06:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1354,7 +1345,6 @@ archive/issue_comments_045147.json:
 
 Hah.  On sage.math:
 
-
 ```
 sage: from sage.libs.ntl.all import ZZ as ntl_ZZ
 sage: ntl_ZZ(4) < 1
@@ -1362,7 +1352,6 @@ True
 sage: ntl_ZZ(1) < 4
 True
 ```
-
 
 On my machine:
 
@@ -1374,12 +1363,12 @@ sage: ntl_ZZ(1) < 4
 False
 ```
 
-
 ntl_ZZ is just comparing types.  I'll change the code to convert to Integers earlier.
 
 Replying to [comment:47 mabshoff]:
 > With #5105 applied all patches apply and I am seeing one issue on sage.math:
-> {{{
+> 
+> ```
 > sage -t -long "devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx"
 > **********************************************************************
 > File "/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx", line 654:
@@ -1390,7 +1379,7 @@ Replying to [comment:47 mabshoff]:
 >     (4, 340282366920938463463374607431768211457, 2)
 > **********************************************************************
 > 1 items had failures:
-> }}}
+> ```
 > But padic_referee_fixes_2.patch  introduces some problem since the latex() methods use mathbf() instead of ZZ or QQ for example.
 > 
 > Cheers,
@@ -1494,7 +1483,7 @@ Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_045153.json:
 ```json
 {
-    "body": "Attachment [padic_doctests_outside.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_outside.patch) by mabshoff created at 2009-05-11 10:38:11\n\nI am giving this ticket a positive review in RobertWB's name. It now passes all doctests on sage.math, it applies and builds, so any more concerns should be addressed via followup tickets. Post merge we are definitely in better shape than before and given the size of this patch it seems like a good idea to get this in. With all 8 patches applied:\n\n```\nOverall weighted coverage score:  74.4%\nTotal number of functions:  21967\nWe need  133 more function to get to 75% coverage.\n```\n",
+    "body": "Attachment [padic_doctests_outside.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_outside.patch) by mabshoff created at 2009-05-11 10:38:11\n\nI am giving this ticket a positive review in RobertWB's name. It now passes all doctests on sage.math, it applies and builds, so any more concerns should be addressed via followup tickets. Post merge we are definitely in better shape than before and given the size of this patch it seems like a good idea to get this in. With all 8 patches applied:\n\n```\nOverall weighted coverage score:  74.4%\nTotal number of functions:  21967\nWe need  133 more function to get to 75% coverage.\n```",
     "created_at": "2009-05-11T10:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -1512,7 +1501,6 @@ Overall weighted coverage score:  74.4%
 Total number of functions:  21967
 We need  133 more function to get to 75% coverage.
 ```
-
 
 
 

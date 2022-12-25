@@ -3,7 +3,7 @@
 archive/issues_000511.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: ntl wrapper memory leak\n\nSee ticket #501 for more details:\n\nThe problem:\n\n```\n==22784== 791,674 bytes in 65,421 blocks are definitely lost in loss record 2,472 of 2,481\n==22784==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)\n==22784==    by 0x9280247: ZZ_pX_repr (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libcsage.so.0.0.0)\n==22784==    by 0x176D6D57: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6216)\n==22784==    by 0x443C61: _PyObject_Str (object.c:406)\n==22784==    by 0x443D0A: PyObject_Str (object.c:426)\n==22784==    by 0x44EA8F: string_new (stringobject.c:3892)\n==22784==    by 0x45A272: type_call (typeobject.c:422)\n==22784==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==22784==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==22784==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==22784==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==22784==    by 0x4CFF37: function_call (funcobject.c:517)\n```\n\n\nThe fix was suggested by was but never implemented:\n\n```\n17:53 < wstein> I changed that __repr__ code to this:\n17:53 < wstein> ntl.set_modulus(ntl.ZZ(20))\n17:53 < wstein> f = ntl.ZZ_pX(range(10000))\n17:54 < wstein>     def __repr__(self):\n17:54 < wstein>         cdef char* s = ZZ_pX_repr(self.x)\n17:54 < wstein>         t = str(s)\n17:54 < wstein>         free(s)\n17:54 < wstein>         return t\n17:54 < wstein> And the memory leak completely vanishes.\n17:54 < mabshoff> :)\n17:54 < wstein> Of course, this is wrong since I'm mixing malloc's free with C++'s new.\n17:54 < wstein> It's just a demo.\n17:54 < mabshoff> mmmh\n```\n\nSo the credit should go to him, but I also fixed a second analog problem further down the code.\n\nWithout the patch:\n\n```\n==22784== LEAK SUMMARY:\n==22784==    definitely lost: 794,838 bytes in 65,475 blocks.\n==22784==      possibly lost: 350,158 bytes in 953 blocks.\n==22784==    still reachable: 137,588,639 bytes in 19,728 blocks.\n==22784==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nWith the patch:\n\n```\n==22993== LEAK SUMMARY:\n==22993==    definitely lost: 3,103 bytes in 49 blocks.\n==22993==      possibly lost: 349,334 bytes in 931 blocks.\n==22993==    still reachable: 137,589,847 bytes in 19,621 blocks.\n==22993==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nThe test computation finished, but I have no clue if it is correct.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/511\n\n",
+    "body": "Assignee: somebody\n\nKeywords: ntl wrapper memory leak\n\nSee ticket #501 for more details:\n\nThe problem:\n\n```\n==22784== 791,674 bytes in 65,421 blocks are definitely lost in loss record 2,472 of 2,481\n==22784==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)\n==22784==    by 0x9280247: ZZ_pX_repr (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libcsage.so.0.0.0)\n==22784==    by 0x176D6D57: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6216)\n==22784==    by 0x443C61: _PyObject_Str (object.c:406)\n==22784==    by 0x443D0A: PyObject_Str (object.c:426)\n==22784==    by 0x44EA8F: string_new (stringobject.c:3892)\n==22784==    by 0x45A272: type_call (typeobject.c:422)\n==22784==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==22784==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==22784==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==22784==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==22784==    by 0x4CFF37: function_call (funcobject.c:517)\n```\n\nThe fix was suggested by was but never implemented:\n\n```\n17:53 < wstein> I changed that __repr__ code to this:\n17:53 < wstein> ntl.set_modulus(ntl.ZZ(20))\n17:53 < wstein> f = ntl.ZZ_pX(range(10000))\n17:54 < wstein>     def __repr__(self):\n17:54 < wstein>         cdef char* s = ZZ_pX_repr(self.x)\n17:54 < wstein>         t = str(s)\n17:54 < wstein>         free(s)\n17:54 < wstein>         return t\n17:54 < wstein> And the memory leak completely vanishes.\n17:54 < mabshoff> :)\n17:54 < wstein> Of course, this is wrong since I'm mixing malloc's free with C++'s new.\n17:54 < wstein> It's just a demo.\n17:54 < mabshoff> mmmh\n```\nSo the credit should go to him, but I also fixed a second analog problem further down the code.\n\nWithout the patch:\n\n```\n==22784== LEAK SUMMARY:\n==22784==    definitely lost: 794,838 bytes in 65,475 blocks.\n==22784==      possibly lost: 350,158 bytes in 953 blocks.\n==22784==    still reachable: 137,588,639 bytes in 19,728 blocks.\n==22784==         suppressed: 0 bytes in 0 blocks.\n```\n\nWith the patch:\n\n```\n==22993== LEAK SUMMARY:\n==22993==    definitely lost: 3,103 bytes in 49 blocks.\n==22993==      possibly lost: 349,334 bytes in 931 blocks.\n==22993==    still reachable: 137,589,847 bytes in 19,621 blocks.\n==22993==         suppressed: 0 bytes in 0 blocks.\n```\n\nThe test computation finished, but I have no clue if it is correct.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/511\n\n",
     "created_at": "2007-08-29T12:06:18Z",
     "labels": [
         "component: basic arithmetic",
@@ -41,7 +41,6 @@ The problem:
 ==22784==    by 0x4CFF37: function_call (funcobject.c:517)
 ```
 
-
 The fix was suggested by was but never implemented:
 
 ```
@@ -59,7 +58,6 @@ The fix was suggested by was but never implemented:
 17:54 < wstein> It's just a demo.
 17:54 < mabshoff> mmmh
 ```
-
 So the credit should go to him, but I also fixed a second analog problem further down the code.
 
 Without the patch:
@@ -72,7 +70,6 @@ Without the patch:
 ==22784==         suppressed: 0 bytes in 0 blocks.
 ```
 
-
 With the patch:
 
 ```
@@ -82,7 +79,6 @@ With the patch:
 ==22993==    still reachable: 137,589,847 bytes in 19,621 blocks.
 ==22993==         suppressed: 0 bytes in 0 blocks.
 ```
-
 
 The test computation finished, but I have no clue if it is correct.
 

@@ -73,7 +73,7 @@ Changing keywords from "" to "package audit".
 archive/issue_comments_002661.json:
 ```json
 {
-    "body": "The issue has been solved and needs to be properly documented. If you do\n\n```\nexport MAKE=\"make -j4\"\nmake\n```\n\nSage will be build with up to 4 jobs in parallel. Spkgs like Singular which do not build properly with parallel make make sure that MAKE is reset while building themselves.\n\nSo somebody send us a patch for the manual. We also need to audit all packages and change make to $MAKE.\n\nCheers,\n\nMichaek",
+    "body": "The issue has been solved and needs to be properly documented. If you do\n\n```\nexport MAKE=\"make -j4\"\nmake\n```\nSage will be build with up to 4 jobs in parallel. Spkgs like Singular which do not build properly with parallel make make sure that MAKE is reset while building themselves.\n\nSo somebody send us a patch for the manual. We also need to audit all packages and change make to $MAKE.\n\nCheers,\n\nMichaek",
     "created_at": "2007-11-20T14:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ The issue has been solved and needs to be properly documented. If you do
 export MAKE="make -j4"
 make
 ```
-
 Sage will be build with up to 4 jobs in parallel. Spkgs like Singular which do not build properly with parallel make make sure that MAKE is reset while building themselves.
 
 So somebody send us a patch for the manual. We also need to audit all packages and change make to $MAKE.

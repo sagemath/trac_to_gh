@@ -3,7 +3,7 @@
 archive/issues_008756.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @jasongrout boothby mvngu @nathanncohen @nexttime\n\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\"\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: a == b # long time\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\" | ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.4.rc0, Release Date: 2010-04-23                     |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8756\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @jasongrout boothby mvngu @nathanncohen @nexttime\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\"\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: a == b # long time\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\" | ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.4.rc0, Release Date: 2010-04-23                     |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8756\n\n",
     "created_at": "2010-04-24T21:59:18Z",
     "labels": [
         "component: graph theory",
@@ -20,7 +20,6 @@ archive/issues_008756.json:
 Assignee: jason, ncohen, rlm
 
 CC:  @jasongrout boothby mvngu @nathanncohen @nexttime
-
 
 ```
 wstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep "long" "devel/sage/sage/graphs/planarity.pyx"
@@ -49,7 +48,6 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8756
 
@@ -98,7 +96,7 @@ This could be related to #4509.
 archive/issue_comments_079968.json:
 ```json
 {
-    "body": "This may be relevant data:  I am doing a long test of everything in a fresh build of 4.4.rc0 (the non-long passed ok) on 32-bit ubuntu.  After more than 10 hours this has not yet finished, and currently running are\n\n```\njohn@ubuntu%ps ux | grep sage\njohn      4886  0.0  0.1   5136  3452 pts/1    S+   17:37   0:00 python /home/john/sage-current/local/bin/sage-cleaner\njohn      5352  0.0  0.0   4296  1504 pts/1    S+   10:49   0:00 bash /home/john/bin/sage -t -long sage-4.4.rc0/devel/\njohn      5355  0.0  0.0   4400  1632 pts/1    S+   10:49   0:00 bash /home/john/sage-current/local/bin/sage-sage -t -long sage-4.4.rc0/devel/\njohn      5367  0.0  0.1   5652  3912 pts/1    S+   10:49   0:09 python /home/john/sage-current/local/bin/sage-test -long sage-4.4.rc0/devel/\njohn      5770  0.0  0.0   1772   484 pts/1    S+   21:38   0:00 sh -c /home/john/sage-current/local/bin/sage-doctest -long \"sage-4.4.rc0/devel/sage-main/build/sage/graphs/digraph.py\"\njohn      5773  5.0  0.1   6684  5000 pts/1    S+   21:38   0:00 python /home/john/sage-current/local/bin/sage-doctest -long sage-4.4.rc0/devel/sage-main/build/sage/graphs/digraph.py\njohn      5778  0.0  0.0   1772   484 pts/1    S+   21:38   0:00 /bin/sh -c python /home/john/.sage//tmp/.doctest_digraph.py\njohn      5779 77.0  2.7 157512 86152 pts/1    R+   21:38   0:01 python /home/john/.sage//tmp/.doctest_digraph.py\njohn      5785  0.0  0.0   3008   756 pts/3    R+   21:38   0:00 grep sage\njohn     15235 96.7  2.9 163720 91196 pts/1    R+   18:36 175:47 python /home/john/.sage//tmp/.doctest_planarity.py\n```\n\nNow 10:49 is when the test started, and now it's 21:39.  But note that the planarity thing has been running for almost 3 hours.  No segfault, but surely doctests should not run for 3 hours even with the \"-l\" option?",
+    "body": "This may be relevant data:  I am doing a long test of everything in a fresh build of 4.4.rc0 (the non-long passed ok) on 32-bit ubuntu.  After more than 10 hours this has not yet finished, and currently running are\n\n```\njohn@ubuntu%ps ux | grep sage\njohn      4886  0.0  0.1   5136  3452 pts/1    S+   17:37   0:00 python /home/john/sage-current/local/bin/sage-cleaner\njohn      5352  0.0  0.0   4296  1504 pts/1    S+   10:49   0:00 bash /home/john/bin/sage -t -long sage-4.4.rc0/devel/\njohn      5355  0.0  0.0   4400  1632 pts/1    S+   10:49   0:00 bash /home/john/sage-current/local/bin/sage-sage -t -long sage-4.4.rc0/devel/\njohn      5367  0.0  0.1   5652  3912 pts/1    S+   10:49   0:09 python /home/john/sage-current/local/bin/sage-test -long sage-4.4.rc0/devel/\njohn      5770  0.0  0.0   1772   484 pts/1    S+   21:38   0:00 sh -c /home/john/sage-current/local/bin/sage-doctest -long \"sage-4.4.rc0/devel/sage-main/build/sage/graphs/digraph.py\"\njohn      5773  5.0  0.1   6684  5000 pts/1    S+   21:38   0:00 python /home/john/sage-current/local/bin/sage-doctest -long sage-4.4.rc0/devel/sage-main/build/sage/graphs/digraph.py\njohn      5778  0.0  0.0   1772   484 pts/1    S+   21:38   0:00 /bin/sh -c python /home/john/.sage//tmp/.doctest_digraph.py\njohn      5779 77.0  2.7 157512 86152 pts/1    R+   21:38   0:01 python /home/john/.sage//tmp/.doctest_digraph.py\njohn      5785  0.0  0.0   3008   756 pts/3    R+   21:38   0:00 grep sage\njohn     15235 96.7  2.9 163720 91196 pts/1    R+   18:36 175:47 python /home/john/.sage//tmp/.doctest_planarity.py\n```\nNow 10:49 is when the test started, and now it's 21:39.  But note that the planarity thing has been running for almost 3 hours.  No segfault, but surely doctests should not run for 3 hours even with the \"-l\" option?",
     "created_at": "2010-04-25T20:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -122,7 +120,6 @@ john      5779 77.0  2.7 157512 86152 pts/1    R+   21:38   0:01 python /home/jo
 john      5785  0.0  0.0   3008   756 pts/3    R+   21:38   0:00 grep sage
 john     15235 96.7  2.9 163720 91196 pts/1    R+   18:36 175:47 python /home/john/.sage//tmp/.doctest_planarity.py
 ```
-
 Now 10:49 is when the test started, and now it's 21:39.  But note that the planarity thing has been running for almost 3 hours.  No segfault, but surely doctests should not run for 3 hours even with the "-l" option?
 
 
@@ -301,7 +298,7 @@ So the above patch should be rebased on the current SVN sources of the planarity
 archive/issue_comments_079976.json:
 ```json
 {
-    "body": "Previously, **every** long test run on planarity.pyx failed on my Ubuntu 9.04 x86/Prescott (gcc 4.3.3) (see http://groups.google.com/group/sage-release/msg/560824983a71627f).\n\nAfter applying the three patches on top of 4.4.2.rc0 (no rejects), all seems fine: \nRunning 100 times\n\n```\n./sage -t -long devel/sage/sage/graphs/planarity.pyx\n```\n\nno errors occurred. (Also `devel/sage/sage/graphs` passed.)\n\nJust for the record, the (second) patch contains two Eclipse project files (and some text files for comparing the output of tests I guess).\n\n-Leif",
+    "body": "Previously, **every** long test run on planarity.pyx failed on my Ubuntu 9.04 x86/Prescott (gcc 4.3.3) (see http://groups.google.com/group/sage-release/msg/560824983a71627f).\n\nAfter applying the three patches on top of 4.4.2.rc0 (no rejects), all seems fine: \nRunning 100 times\n\n```\n./sage -t -long devel/sage/sage/graphs/planarity.pyx\n```\nno errors occurred. (Also `devel/sage/sage/graphs` passed.)\n\nJust for the record, the (second) patch contains two Eclipse project files (and some text files for comparing the output of tests I guess).\n\n-Leif",
     "created_at": "2010-05-15T23:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -318,7 +315,6 @@ Running 100 times
 ```
 ./sage -t -long devel/sage/sage/graphs/planarity.pyx
 ```
-
 no errors occurred. (Also `devel/sage/sage/graphs` passed.)
 
 Just for the record, the (second) patch contains two Eclipse project files (and some text files for comparing the output of tests I guess).
@@ -419,7 +415,7 @@ There is a problem compiling these patches on OSX (the C code has #include <mall
 archive/issue_comments_079981.json:
 ```json
 {
-    "body": "Replying to [comment:14 jason]:\n> I've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\nI tried ~5 times to get the new ones (I saw the changes in trac) but the browser always \"downloaded\" the old ones... 8/\n\nThe new ones still work with Ubuntu 9.04 x86/Prescott. :)\n\n> There is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).\n\nI don't have apples here (besides a IIe), so somebody else has to test/fix that.\n\n(Enhancements should perhaps be made on another ticket.)\n\n-Leif",
+    "body": "Replying to [comment:14 jason]:\n> I've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\n\nI tried ~5 times to get the new ones (I saw the changes in trac) but the browser always \"downloaded\" the old ones... 8/\n\nThe new ones still work with Ubuntu 9.04 x86/Prescott. :)\n\n> There is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).\n\n\nI don't have apples here (besides a IIe), so somebody else has to test/fix that.\n\n(Enhancements should perhaps be made on another ticket.)\n\n-Leif",
     "created_at": "2010-05-16T04:17:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -431,11 +427,13 @@ archive/issue_comments_079981.json:
 Replying to [comment:14 jason]:
 > I've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.
 
+
 I tried ~5 times to get the new ones (I saw the changes in trac) but the browser always "downloaded" the old ones... 8/
 
 The new ones still work with Ubuntu 9.04 x86/Prescott. :)
 
 > There is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).
+
 
 I don't have apples here (besides a IIe), so somebody else has to test/fix that.
 
@@ -624,7 +622,7 @@ I'll apply this patch to 4.4.3.alpha0 later...
 archive/issue_comments_079991.json:
 ```json
 {
-    "body": "Replying to [comment:21 leif]:\n> I'll apply this patch to 4.4.3.alpha0 later...\n\nptestlong: No doctest failures related to this patch (Ubuntu 9.04 x86/32-bit).",
+    "body": "Replying to [comment:21 leif]:\n> I'll apply this patch to 4.4.3.alpha0 later...\n\n\nptestlong: No doctest failures related to this patch (Ubuntu 9.04 x86/32-bit).",
     "created_at": "2010-05-31T19:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
@@ -635,6 +633,7 @@ archive/issue_comments_079991.json:
 
 Replying to [comment:21 leif]:
 > I'll apply this patch to 4.4.3.alpha0 later...
+
 
 ptestlong: No doctest failures related to this patch (Ubuntu 9.04 x86/32-bit).
 

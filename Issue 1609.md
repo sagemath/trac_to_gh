@@ -48,7 +48,7 @@ Changing status from new to assigned.
 archive/issue_comments_010203.json:
 ```json
 {
-    "body": "OK, I made a first attempt which I've posted here:\n\nhttp://sage.math.washington.edu/home/was/build/octave-3.0.0.spkg\n\nIt builds for 70 minutes then dies with a mysterious C++ error:\n\n\n```\nm-sbm.o pic/op-b-sbm.o pic/op-cm-scm.o pic/op-cm-sm.o pic/op-cs-scm.o pic/op-cs-sm.o pic/op-m-scm.o pic/op-m-sm.o pic/op-s\nbm-b.o pic/op-sbm-bm.o pic/op-sbm-sbm.o pic/op-scm-cm.o pic/op-scm-cs.o pic/op-scm-m.o pic/op-scm-s.o pic/op-scm-scm.o pic\n/op-scm-sm.o pic/op-sm-cm.o pic/op-sm-cs.o pic/op-sm-m.o pic/op-sm-s.o pic/op-sm-scm.o pic/op-sm-sm.o pic/op-s-scm.o pic/o\np-s-sm.o pic/Array-os.o pic/Array-sym.o pic/Array-tc.o pic/oct-errno.o pic/builtins.o pic/ops.o ../libcruft/blas-xtra/pic/\nxerbla.o -L../liboctave -loctave -L../libcruft -lcruft -lreadline  -lncurses -ldl -lz -lm  -L/home2/sage/build/sage-2.9/lo\ncal/lib/ -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/ -L/home2/sage/build/sage-2.\n9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3 -L/home2/sage/build/sage-2.9/local/lib/../lib64 -L/home2/sage/bu\nild/sage-2.9/local/lib// -L/home2/sage/build/sage-2.9/local/lib -L/usr/lib/gcc// -L/lib/../lib64 -L/lib// -L/home2/sage/bu\nild/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/// -L/usr/lib64/ -L/usr/lib64 -lz -lf95 -lm\nrm -f liboctinterp.so.3.0.0\nln -s liboctinterp.so liboctinterp.so.3.0.0\ngcc -c -I /home2/sage/build/sage-2.9/local/include/  -I. -I.. -I../liboctave -I../src -I../libcruft/misc  -DHAVE_CONFIG_H \n -Wall -W -Wshadow -g -O2 main.c -o main.o\ng++ -I /home2/sage/build/sage-2.9/local/include/  -I. -I.. -I../liboctave -I../src -I../libcruft/misc  -DHAVE_CONFIG_H  -W\nall -W -Wshadow -Wold-style-cast -g -O2 -rdynamic \\\n        -L..  -fPIC -L /home2/sage/build/sage-2.9/local/lib/  -o octave \\\n        main.o  \\   \n        -L../liboctave -L../libcruft -L../src -Wl,-rpath -Wl,/home2/sage/build/sage-2.9/local/lib/octave-3.0.0 \\\n        -loctinterp -loctave  -lcruft   \\\n             \\\n           -llapack -lcblas -lf77blas -latlas \\\n         -lreadline  -lncurses -ldl -lz -lm  -L/home2/sage/build/sage-2.9/local/lib/ -L/home2/sage/build/sage-2.9/local/bi\nn/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/ -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linu\nx-gnu/4.0.3 -L/home2/sage/build/sage-2.9/local/lib/../lib64 -L/home2/sage/build/sage-2.9/local/lib// -L/home2/sage/build/s\nage-2.9/local/lib -L/usr/lib/gcc// -L/lib/../lib64 -L/lib// -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-u\nnknown-linux-gnu/4.0.3/// -L/usr/lib64/ -L/usr/lib64 -lz -lf95 -lm\n/usr/lib/gcc/x86_64-linux-gnu/4.1.2/libstdc++.so: undefined reference to `_Unwind_GetIPInfo@GCC_4.2.0'\ncollect2: ld returned 1 exit status\nmake[2]: *** [octave] Error 1\nmake[2]: Leaving directory `/home2/sage/build/sage-2.9/spkg/build/octave-3.0.0/src/src'\nmake[1]: *** [src] Error 2\nmake[1]: Leaving directory `/home2/sage/build/sage-2.9/spkg/build/octave-3.0.0/src'\nmake: *** [all] Error 2\nError building octave.\n\nreal    70m21.139s  \nuser    40m31.256s  \nsys     3m42.858s   \nsage: An error occurred while installing octave-3.0.0\n\n```\n",
+    "body": "OK, I made a first attempt which I've posted here:\n\nhttp://sage.math.washington.edu/home/was/build/octave-3.0.0.spkg\n\nIt builds for 70 minutes then dies with a mysterious C++ error:\n\n```\nm-sbm.o pic/op-b-sbm.o pic/op-cm-scm.o pic/op-cm-sm.o pic/op-cs-scm.o pic/op-cs-sm.o pic/op-m-scm.o pic/op-m-sm.o pic/op-s\nbm-b.o pic/op-sbm-bm.o pic/op-sbm-sbm.o pic/op-scm-cm.o pic/op-scm-cs.o pic/op-scm-m.o pic/op-scm-s.o pic/op-scm-scm.o pic\n/op-scm-sm.o pic/op-sm-cm.o pic/op-sm-cs.o pic/op-sm-m.o pic/op-sm-s.o pic/op-sm-scm.o pic/op-sm-sm.o pic/op-s-scm.o pic/o\np-s-sm.o pic/Array-os.o pic/Array-sym.o pic/Array-tc.o pic/oct-errno.o pic/builtins.o pic/ops.o ../libcruft/blas-xtra/pic/\nxerbla.o -L../liboctave -loctave -L../libcruft -lcruft -lreadline  -lncurses -ldl -lz -lm  -L/home2/sage/build/sage-2.9/lo\ncal/lib/ -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/ -L/home2/sage/build/sage-2.\n9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3 -L/home2/sage/build/sage-2.9/local/lib/../lib64 -L/home2/sage/bu\nild/sage-2.9/local/lib// -L/home2/sage/build/sage-2.9/local/lib -L/usr/lib/gcc// -L/lib/../lib64 -L/lib// -L/home2/sage/bu\nild/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/// -L/usr/lib64/ -L/usr/lib64 -lz -lf95 -lm\nrm -f liboctinterp.so.3.0.0\nln -s liboctinterp.so liboctinterp.so.3.0.0\ngcc -c -I /home2/sage/build/sage-2.9/local/include/  -I. -I.. -I../liboctave -I../src -I../libcruft/misc  -DHAVE_CONFIG_H \n -Wall -W -Wshadow -g -O2 main.c -o main.o\ng++ -I /home2/sage/build/sage-2.9/local/include/  -I. -I.. -I../liboctave -I../src -I../libcruft/misc  -DHAVE_CONFIG_H  -W\nall -W -Wshadow -Wold-style-cast -g -O2 -rdynamic \\\n        -L..  -fPIC -L /home2/sage/build/sage-2.9/local/lib/  -o octave \\\n        main.o  \\   \n        -L../liboctave -L../libcruft -L../src -Wl,-rpath -Wl,/home2/sage/build/sage-2.9/local/lib/octave-3.0.0 \\\n        -loctinterp -loctave  -lcruft   \\\n             \\\n           -llapack -lcblas -lf77blas -latlas \\\n         -lreadline  -lncurses -ldl -lz -lm  -L/home2/sage/build/sage-2.9/local/lib/ -L/home2/sage/build/sage-2.9/local/bi\nn/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/ -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-unknown-linu\nx-gnu/4.0.3 -L/home2/sage/build/sage-2.9/local/lib/../lib64 -L/home2/sage/build/sage-2.9/local/lib// -L/home2/sage/build/s\nage-2.9/local/lib -L/usr/lib/gcc// -L/lib/../lib64 -L/lib// -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-u\nnknown-linux-gnu/4.0.3/// -L/usr/lib64/ -L/usr/lib64 -lz -lf95 -lm\n/usr/lib/gcc/x86_64-linux-gnu/4.1.2/libstdc++.so: undefined reference to `_Unwind_GetIPInfo@GCC_4.2.0'\ncollect2: ld returned 1 exit status\nmake[2]: *** [octave] Error 1\nmake[2]: Leaving directory `/home2/sage/build/sage-2.9/spkg/build/octave-3.0.0/src/src'\nmake[1]: *** [src] Error 2\nmake[1]: Leaving directory `/home2/sage/build/sage-2.9/spkg/build/octave-3.0.0/src'\nmake: *** [all] Error 2\nError building octave.\n\nreal    70m21.139s  \nuser    40m31.256s  \nsys     3m42.858s   \nsage: An error occurred while installing octave-3.0.0\n\n```",
     "created_at": "2007-12-27T06:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ OK, I made a first attempt which I've posted here:
 http://sage.math.washington.edu/home/was/build/octave-3.0.0.spkg
 
 It builds for 70 minutes then dies with a mysterious C++ error:
-
 
 ```
 m-sbm.o pic/op-b-sbm.o pic/op-cm-scm.o pic/op-cm-sm.o pic/op-cs-scm.o pic/op-cs-sm.o pic/op-m-scm.o pic/op-m-sm.o pic/op-s
@@ -106,7 +105,6 @@ sys     3m42.858s
 sage: An error occurred while installing octave-3.0.0
 
 ```
-
 
 
 
@@ -168,7 +166,7 @@ Changing status from assigned to new.
 archive/issue_comments_010206.json:
 ```json
 {
-    "body": "\n```\n> \n> Looking at the linker failure it indicates that you have a gcc 4.2\n> somewhere (maybe installed into $SAGE_LOCAL via my gcc-4.2.1 spkg :))\n> and the linker gets confused because it also links against a gcc 4.0.3\n> runtime. If that is the case I can have a closer look. It seems that\n> the build failed right at the end.\n\nYou're right; it's some sort of conflict like that though I don't think it's\ngcc-4.2 versus gcc-4.0.3, but gcc-4.2.1 versus gcc 4.0.3 stuff that's\ncoming from the g95 binaries that we ship with Sage.   So probably\nthe way to build the Octave package would be to build Sage\nusing gfortran/gcc from your gcc-4.2.1.spkg, then build Octave. \nI don't know if there is a way around having to do that, which basically\nmeans no optional Octave package.  \n\nI don't think having an optional Octave package is critical since\nit takes > 1 hour to build, and the Octave developers are extremely\ngood at making it easy to get Octave binaries for a wide range\nof platforms. \n\n -- William\n```\n",
+    "body": "```\n> \n> Looking at the linker failure it indicates that you have a gcc 4.2\n> somewhere (maybe installed into $SAGE_LOCAL via my gcc-4.2.1 spkg :))\n> and the linker gets confused because it also links against a gcc 4.0.3\n> runtime. If that is the case I can have a closer look. It seems that\n> the build failed right at the end.\n\nYou're right; it's some sort of conflict like that though I don't think it's\ngcc-4.2 versus gcc-4.0.3, but gcc-4.2.1 versus gcc 4.0.3 stuff that's\ncoming from the g95 binaries that we ship with Sage.   So probably\nthe way to build the Octave package would be to build Sage\nusing gfortran/gcc from your gcc-4.2.1.spkg, then build Octave. \nI don't know if there is a way around having to do that, which basically\nmeans no optional Octave package.  \n\nI don't think having an optional Octave package is critical since\nit takes > 1 hour to build, and the Octave developers are extremely\ngood at making it easy to get Octave binaries for a wide range\nof platforms. \n\n -- William\n```",
     "created_at": "2007-12-27T07:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
@@ -176,7 +174,6 @@ archive/issue_comments_010206.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > 
@@ -201,7 +198,6 @@ of platforms.
 
  -- William
 ```
-
 
 
 
@@ -271,7 +267,7 @@ Dave
 archive/issue_comments_010210.json:
 ```json
 {
-    "body": "I thought I'd have a quick go at trying to make an Octave package, but I hit a problem pretty early on:\n\n\n```\nchecking for sin in -lm... yes\nchecking whether we are using the GNU Fortran 77 compiler... yes\nchecking whether /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran accepts -g... yes\nchecking how to get verbose linking output from /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran... -v\nchecking for Fortran 77 libraries of /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran...  -L/usr/ccs/lib -L/usr/lib -L/export/home/drkirkby/sage-4.7.rc0/local/lib -L/usr/local/gcc-4.6.0/lib/gcc/i386-pc-solaris2.11/4.6.0 -L/usr/local/gcc-4.6.0/lib/gcc/i386-pc-solaris2.11/4.6.0/../../.. -lgfortran -lm -lquadmath\nchecking for dummy main to link with Fortran 77 libraries... unknown\nconfigure: error: in `/export/home/drkirkby/sage-4.7.rc0/spkg/build/octave-3.4.0/src':\nconfigure: error: linking to Fortran libraries from C fails\nSee `config.log' for more details\nError configuring GNU Octave\n\nreal\t0m23.634s\nuser\t0m9.304s\nsys\t0m8.385s\nsage: An error occurred while installing octave-3.4.0\n```\n\n\nI don't know what BLAS library I'm supposed to configure this with. I have tried:\n\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-glpk-includedir=\"$SAGE_LOCAL/include\" --with-glpk-libdir=\"$SAGE_LOCAL/lib\" --with-blas=\"SAGE_LOCAL/lib/libcblas.so\" F77=\"$SAGE_FORTRAN\"\n```\n\n\nbut are unsure if the 'libcblas.so' is the right library. I tried another one (libblas.a), but had no luck with that either. If I omit the `--with-blas=` option, then it fails with:\n\n\n\n```\nconfigure: error: A BLAS library was detected but found incompatible with your Fortran 77 compiler settings.\n```\n\n\nI don't know how to get around this BLAS issue. \n\nI think it will need a bit of work to create this package. To get the best from Octave, you need a lot of libraries Sage does not include. It might be worth putting those libraries in an Octave package and building the libraries first. \n\nDave",
+    "body": "I thought I'd have a quick go at trying to make an Octave package, but I hit a problem pretty early on:\n\n```\nchecking for sin in -lm... yes\nchecking whether we are using the GNU Fortran 77 compiler... yes\nchecking whether /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran accepts -g... yes\nchecking how to get verbose linking output from /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran... -v\nchecking for Fortran 77 libraries of /export/home/drkirkby/sage-4.7.rc0/local/bin/sage_fortran...  -L/usr/ccs/lib -L/usr/lib -L/export/home/drkirkby/sage-4.7.rc0/local/lib -L/usr/local/gcc-4.6.0/lib/gcc/i386-pc-solaris2.11/4.6.0 -L/usr/local/gcc-4.6.0/lib/gcc/i386-pc-solaris2.11/4.6.0/../../.. -lgfortran -lm -lquadmath\nchecking for dummy main to link with Fortran 77 libraries... unknown\nconfigure: error: in `/export/home/drkirkby/sage-4.7.rc0/spkg/build/octave-3.4.0/src':\nconfigure: error: linking to Fortran libraries from C fails\nSee `config.log' for more details\nError configuring GNU Octave\n\nreal\t0m23.634s\nuser\t0m9.304s\nsys\t0m8.385s\nsage: An error occurred while installing octave-3.4.0\n```\n\nI don't know what BLAS library I'm supposed to configure this with. I have tried:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-glpk-includedir=\"$SAGE_LOCAL/include\" --with-glpk-libdir=\"$SAGE_LOCAL/lib\" --with-blas=\"SAGE_LOCAL/lib/libcblas.so\" F77=\"$SAGE_FORTRAN\"\n```\n\nbut are unsure if the 'libcblas.so' is the right library. I tried another one (libblas.a), but had no luck with that either. If I omit the `--with-blas=` option, then it fails with:\n\n\n```\nconfigure: error: A BLAS library was detected but found incompatible with your Fortran 77 compiler settings.\n```\n\nI don't know how to get around this BLAS issue. \n\nI think it will need a bit of work to create this package. To get the best from Octave, you need a lot of libraries Sage does not include. It might be worth putting those libraries in an Octave package and building the libraries first. \n\nDave",
     "created_at": "2011-05-09T23:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
@@ -281,7 +277,6 @@ archive/issue_comments_010210.json:
 ```
 
 I thought I'd have a quick go at trying to make an Octave package, but I hit a problem pretty early on:
-
 
 ```
 checking for sin in -lm... yes
@@ -301,23 +296,18 @@ sys	0m8.385s
 sage: An error occurred while installing octave-3.4.0
 ```
 
-
 I don't know what BLAS library I'm supposed to configure this with. I have tried:
-
 
 ```
 ./configure --prefix="$SAGE_LOCAL" --with-glpk-includedir="$SAGE_LOCAL/include" --with-glpk-libdir="$SAGE_LOCAL/lib" --with-blas="SAGE_LOCAL/lib/libcblas.so" F77="$SAGE_FORTRAN"
 ```
 
-
 but are unsure if the 'libcblas.so' is the right library. I tried another one (libblas.a), but had no luck with that either. If I omit the `--with-blas=` option, then it fails with:
-
 
 
 ```
 configure: error: A BLAS library was detected but found incompatible with your Fortran 77 compiler settings.
 ```
-
 
 I don't know how to get around this BLAS issue. 
 

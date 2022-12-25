@@ -3,7 +3,7 @@
 archive/issues_000392.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: round, real, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: round, real, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
     "created_at": "2007-06-28T06:03:57Z",
     "labels": [
         "component: algebraic geometry",
@@ -23,7 +23,6 @@ Keywords: round, real, arithmetic
 
 The function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.
 
-
 ```
 sage: a = 5.499999999999999 
 sage: a.prec()
@@ -37,7 +36,6 @@ sage: b.prec()
 sage: round(b)  ## This isn't ok 
 6.0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/392
 

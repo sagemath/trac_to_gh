@@ -3,7 +3,7 @@
 archive/issues_000461.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nInvoking the new_subspace on a certain ModularForms object raises an exception (but then things seems to work fine after that). --- Ifti\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8, Release Date: 2007-08-12                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: M = ModularForms(17,4)\n\nsage: N = M.new_subspace()\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/burhanud/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/space.py in new_subspace(self, p)\n    893         Synonym for new_submodule.\n    894         \"\"\"\n--> 895         return self.new_submodule(p)\n    896 \n    897     def eisenstein_subspace(self):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/ambient.py in new_submodule(self, p)\n    267 \n    268         if p is None:\n--> 269             M = self._full_new_submodule()\n    270             self.__new_submodule[None] = M\n    271             return M\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/ambient.py in _full_new_submodule(self)\n    283         B = range(s) + range(d, d+e)\n    284         V = self.module()\n--> 285         W = V.submodule([V.gen(i) for i in B])\n    286         return submodule.ModularFormsSubmodule(self, W)\n    287 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/modules/free_module.py in gen(self, i)\n    872     def gen(self, i=0):\n    873         if i < 0 or i >= self.rank():\n--> 874             raise ValueError, \"Generator %s not defined.\"%i\n    875         return self.basis()[int(i)]\n    876 \n\n<type 'exceptions.ValueError'>: Generator 6 not defined.\n\nsage: N = M.new_subspace()\n\nsage: N.basis()\n \n[\nq + 2*q^5 + O(q^6),\nq^2 - 3/2*q^5 + O(q^6),\nq^3 + O(q^6),\nq^4 - 1/2*q^5 + O(q^6)\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/461\n\n",
+    "body": "Assignee: @williamstein\n\nInvoking the new_subspace on a certain ModularForms object raises an exception (but then things seems to work fine after that). --- Ifti\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8, Release Date: 2007-08-12                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: M = ModularForms(17,4)\n\nsage: N = M.new_subspace()\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/burhanud/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/space.py in new_subspace(self, p)\n    893         Synonym for new_submodule.\n    894         \"\"\"\n--> 895         return self.new_submodule(p)\n    896 \n    897     def eisenstein_subspace(self):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/ambient.py in new_submodule(self, p)\n    267 \n    268         if p is None:\n--> 269             M = self._full_new_submodule()\n    270             self.__new_submodule[None] = M\n    271             return M\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/modform/ambient.py in _full_new_submodule(self)\n    283         B = range(s) + range(d, d+e)\n    284         V = self.module()\n--> 285         W = V.submodule([V.gen(i) for i in B])\n    286         return submodule.ModularFormsSubmodule(self, W)\n    287 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/modules/free_module.py in gen(self, i)\n    872     def gen(self, i=0):\n    873         if i < 0 or i >= self.rank():\n--> 874             raise ValueError, \"Generator %s not defined.\"%i\n    875         return self.basis()[int(i)]\n    876 \n\n<type 'exceptions.ValueError'>: Generator 6 not defined.\n\nsage: N = M.new_subspace()\n\nsage: N.basis()\n \n[\nq + 2*q^5 + O(q^6),\nq^2 - 3/2*q^5 + O(q^6),\nq^3 + O(q^6),\nq^4 - 1/2*q^5 + O(q^6)\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/461\n\n",
     "created_at": "2007-08-19T18:38:29Z",
     "labels": [
         "component: modular forms",
@@ -18,7 +18,6 @@ archive/issues_000461.json:
 Assignee: @williamstein
 
 Invoking the new_subspace on a certain ModularForms object raises an exception (but then things seems to work fine after that). --- Ifti
-
 
 ```
 ----------------------------------------------------------------------
@@ -75,7 +74,6 @@ q^3 + O(q^6),
 q^4 - 1/2*q^5 + O(q^6)
 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/461
 

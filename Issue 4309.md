@@ -235,7 +235,7 @@ Changing assignee from @williamstein to kkilger.
 archive/issue_comments_031489.json:
 ```json
 {
-    "body": "Hi,\n\nI like the design of this patch and how the kerberos stuff is optional.  \n\nUnfortunately, this is hard to referee if you don't explain to me how to install pykerberos.  Also, the patch itself should contain code that says \"hey, you need kerberos, and here's how to install it\" when the user turns on kerberos via an option to notebook, but \n\n```\nimport kerberos\n```\n\nfails.  That could be either a paragraph of text, an optional spkg to install, or a link to a wiki page that describes what to do.  \n\nOK?\n\nThanks!",
+    "body": "Hi,\n\nI like the design of this patch and how the kerberos stuff is optional.  \n\nUnfortunately, this is hard to referee if you don't explain to me how to install pykerberos.  Also, the patch itself should contain code that says \"hey, you need kerberos, and here's how to install it\" when the user turns on kerberos via an option to notebook, but \n\n```\nimport kerberos\n```\nfails.  That could be either a paragraph of text, an optional spkg to install, or a link to a wiki page that describes what to do.  \n\nOK?\n\nThanks!",
     "created_at": "2008-11-29T03:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -253,7 +253,6 @@ Unfortunately, this is hard to referee if you don't explain to me how to install
 ```
 import kerberos
 ```
-
 fails.  That could be either a paragraph of text, an optional spkg to install, or a link to a wiki page that describes what to do.  
 
 OK?

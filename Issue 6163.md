@@ -3,7 +3,7 @@
 archive/issues_006163.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  cwitty @mwhansen @robertwb\n\nThis segfaults Sage-4.0:\n\n```\nsage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)\n```\n\n\n\n```\nwstein@sage:~/build/sage-4.0.rc1$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/wstein/build/sage-4.0.rc1/local/bin/sage-ipython\nGNU gdb 6.8-debian\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...\n[Thread debugging using libthread_db enabled]\nPython 2.5.4 (r254:67916, May 29 2009, 07:08:12) \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[New Thread 0x7fe5414a06e0 (LWP 25611)]\nsage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)\n| Sage Version 4.0.rc1, Release Date: 2009-05-28                     |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fe5414a06e0 (LWP 25611)]\nimport_submodule (mod=0xbbcde0, subname=0x7fff48cb9fbb \"sage\", fullname=0x7fff48cb9fb0 \"sage.rings.sage\") at Python/import.c:2360\n2360\tPython/import.c: No such file or directory.\n\tin Python/import.c\n(gdb) bt\n#0  import_submodule (mod=0xbbcde0, subname=0x7fff48cb9fbb \"sage\", fullname=0x7fff48cb9fb0 \"sage.rings.sage\") at Python/import.c:2360\n#1  0x00000000004a1a1b in load_next (mod=0xbbcde0, altmod=0x72bdc0, p_name=<value optimized out>, buf=0x7fff48cb9fb0 \"sage.rings.sage\", \n    p_buflen=0x7fff48cb9fa8) at Python/import.c:2220\n#2  0x00000000004a1c5a in import_module_level (name=0xb0b679 \"rings.qqbar\", globals=0x75a010, locals=<value optimized out>, \n    fromlist=0x4577998, level=<value optimized out>) at Python/import.c:2001\n#3  0x00000000004a2105 in PyImport_ImportModuleLevel (name=0xb0b674 \"sage.rings.qqbar\", globals=0x1287f80, locals=0x898400, \n    fromlist=0x4577998, level=-1) at Python/import.c:2072\n#4  0x0000000000481849 in builtin___import__ (self=<value optimized out>, args=<value optimized out>, kwds=<value optimized out>)\n    at Python/bltinmodule.c:47\n#5  0x000000000041abbd in PyObject_CallFunctionObjArgs (callable=0x7fe54146d5f0) at Objects/abstract.c:1861\n#6  0x00007fe52d05bac8 in __Pyx_Import (name=0xb0b650, from_list=0x4577998) at sage/rings/real_mpfi.c:20944\n#7  0x00007fe52d07dfcf in __pyx_pf_4sage_5rings_9real_mpfi_24RealIntervalFieldElement___init__ (__pyx_v_self=0x26320d8, \n    __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/rings/real_mpfi.c:6654\n#8  0x000000000045cf81 in type_call (type=0x7fe52d29ed60, args=0x7fe5413aaf00, kwds=0x0) at Objects/typeobject.c:436\n#9  0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#10 0x00007fe52d06e47e in __pyx_pf_4sage_5rings_9real_mpfi_23RealIntervalField_class___call__ (__pyx_v_self=0x120f450, \n    __pyx_args=<value optimized out>, __pyx_kwds=0x7fe5413aaf00) at sage/rings/real_mpfi.c:4323\n#11 0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#12 0x00007fe52b7c44ec in __pyx_pf_4sage_5rings_16complex_interval_27ComplexIntervalFieldElement___init__ (__pyx_v_self=<value optimized out>, \n    __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/rings/complex_interval.c:3059\n#13 0x000000000045cf81 in type_call (type=0x7fe52b9d3ac0, args=0x7fe5413aaf50, kwds=0x0) at Objects/typeobject.c:436\n#14 0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#15 0x0000000000486592 in PyEval_EvalFrameEx (f=0x18683a0, throwflag=<value optimized out>) at Python/ceval.c:3823\n#16 0x0000000000489fd4 in PyEval_EvalCodeEx (co=0x1366c60, globals=<value optimized out>, locals=<value optimized out>, args=0x4577728, \n    argcount=2, kws=0x0, kwcount=0, defs=0x1368b68, defcount=1, closure=0x0) at Python/ceval.c:2875\n#17 0x00000000004d4c0a in function_call (func=0x1369b90, arg=0x4577710, kw=0x0) at Objects/funcobject.c:517\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6163\n\n",
+    "body": "Assignee: @burcin\n\nCC:  cwitty @mwhansen @robertwb\n\nThis segfaults Sage-4.0:\n\n```\nsage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)\n```\n\n```\nwstein@sage:~/build/sage-4.0.rc1$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/wstein/build/sage-4.0.rc1/local/bin/sage-ipython\nGNU gdb 6.8-debian\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...\n[Thread debugging using libthread_db enabled]\nPython 2.5.4 (r254:67916, May 29 2009, 07:08:12) \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[New Thread 0x7fe5414a06e0 (LWP 25611)]\nsage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)\n| Sage Version 4.0.rc1, Release Date: 2009-05-28                     |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fe5414a06e0 (LWP 25611)]\nimport_submodule (mod=0xbbcde0, subname=0x7fff48cb9fbb \"sage\", fullname=0x7fff48cb9fb0 \"sage.rings.sage\") at Python/import.c:2360\n2360\tPython/import.c: No such file or directory.\n\tin Python/import.c\n(gdb) bt\n#0  import_submodule (mod=0xbbcde0, subname=0x7fff48cb9fbb \"sage\", fullname=0x7fff48cb9fb0 \"sage.rings.sage\") at Python/import.c:2360\n#1  0x00000000004a1a1b in load_next (mod=0xbbcde0, altmod=0x72bdc0, p_name=<value optimized out>, buf=0x7fff48cb9fb0 \"sage.rings.sage\", \n    p_buflen=0x7fff48cb9fa8) at Python/import.c:2220\n#2  0x00000000004a1c5a in import_module_level (name=0xb0b679 \"rings.qqbar\", globals=0x75a010, locals=<value optimized out>, \n    fromlist=0x4577998, level=<value optimized out>) at Python/import.c:2001\n#3  0x00000000004a2105 in PyImport_ImportModuleLevel (name=0xb0b674 \"sage.rings.qqbar\", globals=0x1287f80, locals=0x898400, \n    fromlist=0x4577998, level=-1) at Python/import.c:2072\n#4  0x0000000000481849 in builtin___import__ (self=<value optimized out>, args=<value optimized out>, kwds=<value optimized out>)\n    at Python/bltinmodule.c:47\n#5  0x000000000041abbd in PyObject_CallFunctionObjArgs (callable=0x7fe54146d5f0) at Objects/abstract.c:1861\n#6  0x00007fe52d05bac8 in __Pyx_Import (name=0xb0b650, from_list=0x4577998) at sage/rings/real_mpfi.c:20944\n#7  0x00007fe52d07dfcf in __pyx_pf_4sage_5rings_9real_mpfi_24RealIntervalFieldElement___init__ (__pyx_v_self=0x26320d8, \n    __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/rings/real_mpfi.c:6654\n#8  0x000000000045cf81 in type_call (type=0x7fe52d29ed60, args=0x7fe5413aaf00, kwds=0x0) at Objects/typeobject.c:436\n#9  0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#10 0x00007fe52d06e47e in __pyx_pf_4sage_5rings_9real_mpfi_23RealIntervalField_class___call__ (__pyx_v_self=0x120f450, \n    __pyx_args=<value optimized out>, __pyx_kwds=0x7fe5413aaf00) at sage/rings/real_mpfi.c:4323\n#11 0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#12 0x00007fe52b7c44ec in __pyx_pf_4sage_5rings_16complex_interval_27ComplexIntervalFieldElement___init__ (__pyx_v_self=<value optimized out>, \n    __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/rings/complex_interval.c:3059\n#13 0x000000000045cf81 in type_call (type=0x7fe52b9d3ac0, args=0x7fe5413aaf50, kwds=0x0) at Objects/typeobject.c:436\n#14 0x0000000000417eb3 in PyObject_Call (func=0xbbcde0, arg=0x7fff48cb9fbb, kw=0x7fff48cb9fb0) at Objects/abstract.c:1861\n#15 0x0000000000486592 in PyEval_EvalFrameEx (f=0x18683a0, throwflag=<value optimized out>) at Python/ceval.c:3823\n#16 0x0000000000489fd4 in PyEval_EvalCodeEx (co=0x1366c60, globals=<value optimized out>, locals=<value optimized out>, args=0x4577728, \n    argcount=2, kws=0x0, kwcount=0, defs=0x1368b68, defcount=1, closure=0x0) at Python/ceval.c:2875\n#17 0x00000000004d4c0a in function_call (func=0x1369b90, arg=0x4577710, kw=0x0) at Objects/funcobject.c:517\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6163\n\n",
     "created_at": "2009-05-31T02:01:25Z",
     "labels": [
         "component: calculus",
@@ -25,8 +25,6 @@ This segfaults Sage-4.0:
 ```
 sage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)
 ```
-
-
 
 ```
 wstein@sage:~/build/sage-4.0.rc1$ ./sage -gdb
@@ -82,7 +80,6 @@ import_submodule (mod=0xbbcde0, subname=0x7fff48cb9fbb "sage", fullname=0x7fff48
 #17 0x00000000004d4c0a in function_call (func=0x1369b90, arg=0x4577710, kw=0x0) at Objects/funcobject.c:517
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6163
 
 
@@ -112,7 +109,7 @@ Changing status from new to assigned.
 archive/issue_comments_049067.json:
 ```json
 {
-    "body": "Shorter snippet:\n\n\n```\nsage: var('theta1,theta2')\nvar('theta1,theta2')\nsage: (theta1 == theta2).test_relation()\n/home/burcin/sage/sage-4.0.rc1/local/bin/sage-sage: line 198:  8823 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\nThis doesn't have a problem:\n\n\n```\nsage: var('t1,t2')\n(t1, t2)\nsage: (t1 == t2).test_relation()\nFalse\n```\n\n\nThis is caused by the fact that theta1 and theta2 have the same hash (as all symbolic variables which have the same 4 characters in their name), and trying to put them as keys in a dictionary calls `__nonzero__`() and test_relation() in turn, causing an infinite loop.\n\n\n```\nsage: hash(theta1) == hash(theta2)\nTrue\nsage: hash(t1) == hash(t2)\nFalse\n```\n",
+    "body": "Shorter snippet:\n\n```\nsage: var('theta1,theta2')\nvar('theta1,theta2')\nsage: (theta1 == theta2).test_relation()\n/home/burcin/sage/sage-4.0.rc1/local/bin/sage-sage: line 198:  8823 Segmentation fault      sage-ipython \"$@\" -i\n```\n\nThis doesn't have a problem:\n\n```\nsage: var('t1,t2')\n(t1, t2)\nsage: (t1 == t2).test_relation()\nFalse\n```\n\nThis is caused by the fact that theta1 and theta2 have the same hash (as all symbolic variables which have the same 4 characters in their name), and trying to put them as keys in a dictionary calls `__nonzero__`() and test_relation() in turn, causing an infinite loop.\n\n```\nsage: hash(theta1) == hash(theta2)\nTrue\nsage: hash(t1) == hash(t2)\nFalse\n```",
     "created_at": "2009-05-31T13:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6163",
     "type": "issue_comment",
@@ -123,7 +120,6 @@ archive/issue_comments_049067.json:
 
 Shorter snippet:
 
-
 ```
 sage: var('theta1,theta2')
 var('theta1,theta2')
@@ -131,9 +127,7 @@ sage: (theta1 == theta2).test_relation()
 /home/burcin/sage/sage-4.0.rc1/local/bin/sage-sage: line 198:  8823 Segmentation fault      sage-ipython "$@" -i
 ```
 
-
 This doesn't have a problem:
-
 
 ```
 sage: var('t1,t2')
@@ -142,9 +136,7 @@ sage: (t1 == t2).test_relation()
 False
 ```
 
-
 This is caused by the fact that theta1 and theta2 have the same hash (as all symbolic variables which have the same 4 characters in their name), and trying to put them as keys in a dictionary calls `__nonzero__`() and test_relation() in turn, causing an infinite loop.
-
 
 ```
 sage: hash(theta1) == hash(theta2)
@@ -152,7 +144,6 @@ True
 sage: hash(t1) == hash(t2)
 False
 ```
-
 
 
 

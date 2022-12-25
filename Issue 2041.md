@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2041
 archive/issue_comments_013186.json:
 ```json
 {
-    "body": "Hi Alex, \n\nyou seem to have used some kind of hard wrapping to correct the issue. And the result some times cases line breaks inside words like\n\n```\n2480 Eisenstein subspace of dimension 1 of Modular Forms space of dimension 2 f \n2481 or Congruence Subgroup Gamma0(11) of weight 2 over Rational Field \n```\n\n\nCheers,\n\nMichael",
+    "body": "Hi Alex, \n\nyou seem to have used some kind of hard wrapping to correct the issue. And the result some times cases line breaks inside words like\n\n```\n2480 Eisenstein subspace of dimension 1 of Modular Forms space of dimension 2 f \n2481 or Congruence Subgroup Gamma0(11) of weight 2 over Rational Field \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-04T05:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ you seem to have used some kind of hard wrapping to correct the issue. And the r
 2480 Eisenstein subspace of dimension 1 of Modular Forms space of dimension 2 f 
 2481 or Congruence Subgroup Gamma0(11) of weight 2 over Rational Field 
 ```
-
 
 Cheers,
 
@@ -108,7 +107,7 @@ I have fixed the problem Michael pointed out, and did some more beautification w
 archive/issue_comments_013189.json:
 ```json
 {
-    "body": "Except for the hunk\n\n```\n995\t998\t\\SAGE makes some use of Singular \\cite{Si}, e.g.,  \n996\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n997\t1000\tof ideals. \n```\n\nthe patch looks good. We use `Gr\\\"obner basis` all over the place in the document and it seems to be the standard name even in English. I am giving the patch a positive review and will remove the hunk above before applying.\n\nCheers,\n\nMichael",
+    "body": "Except for the hunk\n\n```\n995\t998\t\\SAGE makes some use of Singular \\cite{Si}, e.g.,  \n996\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n997\t1000\tof ideals. \n```\nthe patch looks good. We use `Gr\\\"obner basis` all over the place in the document and it seems to be the standard name even in English. I am giving the patch a positive review and will remove the hunk above before applying.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T00:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
@@ -125,7 +124,6 @@ Except for the hunk
  	999	for computation of gcd's and Gr\"obner bases 
 997	1000	of ideals. 
 ```
-
 the patch looks good. We use `Gr\"obner basis` all over the place in the document and it seems to be the standard name even in English. I am giving the patch a positive review and will remove the hunk above before applying.
 
 Cheers,
@@ -385,7 +383,7 @@ I have uploaded a patch that is based on 2.10.2.alpha1 and passes all the tests 
 archive/issue_comments_013201.json:
 ```json
 {
-    "body": "Attachment [tut_verbatim.patch](tarball://root/attachments/some-uuid/ticket2041/tut_verbatim.patch) by mabshoff created at 2008-02-20 13:55:29\n\nThe new patch `tut_verbatim.patch` looks good to me except\n\n```\n999\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n```\n\n\nApplying with that hunk removed. Great work Alex.\n\nCheers,\n\nMichael",
+    "body": "Attachment [tut_verbatim.patch](tarball://root/attachments/some-uuid/ticket2041/tut_verbatim.patch) by mabshoff created at 2008-02-20 13:55:29\n\nThe new patch `tut_verbatim.patch` looks good to me except\n\n```\n999\t \tfor computation of gcd's and Gr\\\"obner basis \n \t999\tfor computation of gcd's and Gr\\\"obner bases \n```\n\nApplying with that hunk removed. Great work Alex.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T13:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
@@ -402,7 +400,6 @@ The new patch `tut_verbatim.patch` looks good to me except
 999	 	for computation of gcd's and Gr\"obner basis 
  	999	for computation of gcd's and Gr\"obner bases 
 ```
-
 
 Applying with that hunk removed. Great work Alex.
 

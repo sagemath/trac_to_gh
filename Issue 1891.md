@@ -56,7 +56,7 @@ archive/issue_events_004550.json:
 archive/issue_comments_011947.json:
 ```json
 {
-    "body": "Is this already fixed?  According to\n\n```sh\n$ grep rnfeltabstorel `find -name \\*.py\\*`\n./libs/pari/gen.pyx:    def rnfeltabstorel(self, x):\n./rings/number_field/number_field_rel.py:        poly_xy = self.pari_rnf().rnfeltabstorel( self(element)._pari_() )\n./rings/number_field/maps.py:        g = self.__rnf.rnfeltabstorel(pari(f))\n```\n\nBut I don't see nearby code similar to that in the description.  However, I'm definitely not an expert.",
+    "body": "Is this already fixed?  According to\n\n```sh\n$ grep rnfeltabstorel `find -name \\*.py\\*`\n./libs/pari/gen.pyx:    def rnfeltabstorel(self, x):\n./rings/number_field/number_field_rel.py:        poly_xy = self.pari_rnf().rnfeltabstorel( self(element)._pari_() )\n./rings/number_field/maps.py:        g = self.__rnf.rnfeltabstorel(pari(f))\n```\nBut I don't see nearby code similar to that in the description.  However, I'm definitely not an expert.",
     "created_at": "2010-02-02T05:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
@@ -73,7 +73,6 @@ $ grep rnfeltabstorel `find -name \*.py\*`
 ./rings/number_field/number_field_rel.py:        poly_xy = self.pari_rnf().rnfeltabstorel( self(element)._pari_() )
 ./rings/number_field/maps.py:        g = self.__rnf.rnfeltabstorel(pari(f))
 ```
-
 But I don't see nearby code similar to that in the description.  However, I'm definitely not an expert.
 
 
@@ -119,7 +118,7 @@ Oops!  I apologize.  Time for me to read a book...
 archive/issue_comments_011950.json:
 ```json
 {
-    "body": "Is this still valid?\n\n\n```\nsage: gp.version()\n((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')\n```\n",
+    "body": "Is this still valid?\n\n```\nsage: gp.version()\n((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')\n```",
     "created_at": "2010-06-24T15:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
@@ -130,12 +129,10 @@ archive/issue_comments_011950.json:
 
 Is this still valid?
 
-
 ```
 sage: gp.version()
 ((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')
 ```
-
 
 
 

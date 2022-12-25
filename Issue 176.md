@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/176
 archive/issue_comments_000812.json:
 ```json
 {
-    "body": "Hello,\n\nI have the impression this works unless I misunderstood the definition of the floordiv operator. From Sage 2.8.2\n\n```\nsage: 12//6\n2\nsage: 13//6\n2\nsage: 18//6\n3\n```\n\n\nCan anyone confirm this?\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\nI have the impression this works unless I misunderstood the definition of the floordiv operator. From Sage 2.8.2\n\n```\nsage: 12//6\n2\nsage: 13//6\n2\nsage: 18//6\n3\n```\n\nCan anyone confirm this?\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/176",
     "type": "issue_comment",
@@ -51,7 +51,6 @@ sage: 13//6
 sage: 18//6
 3
 ```
-
 
 Can anyone confirm this?
 

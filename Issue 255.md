@@ -3,7 +3,7 @@
 archive/issues_000255.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: pAdicField(5)(10000, 2)\n 0.04*5^4 + O(5^2)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/255\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: pAdicField(5)(10000, 2)\n 0.04*5^4 + O(5^2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/255\n\n",
     "created_at": "2007-02-09T21:38:10Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,12 +17,10 @@ archive/issues_000255.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: pAdicField(5)(10000, 2)
  0.04*5^4 + O(5^2)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/255

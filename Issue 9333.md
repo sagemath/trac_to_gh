@@ -88,7 +88,7 @@ I've posted a link to a new spkg, along with the patch used to create it.  I hav
 archive/issue_comments_087924.json:
 ```json
 {
-    "body": "It even works on PPC!\n\nI did find an error in kash.py\n\n```\nsage: a = kash('(9 - 7) * (5 + 6)'); a              # optional -- kash\n\n22\n```\n\nso I get \"expected nothing\" for that one test when I do `./sage -t -optional devel/sage/sage/interfaces/kash.py`.\n\nOtherwise seems like this is reasonable.  Fix that and positive review, modulo my weak understanding of shell script - but the options are the right ones on Mac.  What the heck are those Linux options?\n\nBy the way, the development of KASH seems to have abruptly stopped.  Any chance it will resume?",
+    "body": "It even works on PPC!\n\nI did find an error in kash.py\n\n```\nsage: a = kash('(9 - 7) * (5 + 6)'); a              # optional -- kash\n\n22\n```\nso I get \"expected nothing\" for that one test when I do `./sage -t -optional devel/sage/sage/interfaces/kash.py`.\n\nOtherwise seems like this is reasonable.  Fix that and positive review, modulo my weak understanding of shell script - but the options are the right ones on Mac.  What the heck are those Linux options?\n\nBy the way, the development of KASH seems to have abruptly stopped.  Any chance it will resume?",
     "created_at": "2011-06-08T20:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ sage: a = kash('(9 - 7) * (5 + 6)'); a              # optional -- kash
 
 22
 ```
-
 so I get "expected nothing" for that one test when I do `./sage -t -optional devel/sage/sage/interfaces/kash.py`.
 
 Otherwise seems like this is reasonable.  Fix that and positive review, modulo my weak understanding of shell script - but the options are the right ones on Mac.  What the heck are those Linux options?
@@ -248,7 +247,7 @@ Sage patch merged in sage-4.7.1.alpha4 but the "optional packages" page needs to
 archive/issue_comments_087932.json:
 ```json
 {
-    "body": "Replying to [comment:6 jdemeyer]:\n> Sage patch merged in sage-4.7.1.alpha4 but the \"optional packages\" page needs to be updated manually.  John, can you take care of this?\n\nOkay, done.",
+    "body": "Replying to [comment:6 jdemeyer]:\n> Sage patch merged in sage-4.7.1.alpha4 but the \"optional packages\" page needs to be updated manually.  John, can you take care of this?\n\n\nOkay, done.",
     "created_at": "2011-07-01T18:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
@@ -259,6 +258,7 @@ archive/issue_comments_087932.json:
 
 Replying to [comment:6 jdemeyer]:
 > Sage patch merged in sage-4.7.1.alpha4 but the "optional packages" page needs to be updated manually.  John, can you take care of this?
+
 
 Okay, done.
 

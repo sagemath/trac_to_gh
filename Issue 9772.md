@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9773
 archive/issue_comments_095606.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by @rbeezer created at 2010-08-20 23:14:32\n\nAAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are \"generic\" but not in this example.)\n\n\n```\nsage: A=AAG([3,4,0])\nsage: A.gens()\n((2, 3, 0), (0, 0, 1))\nsage: A.0.order()\n12\nsage: A.1.order()\n+Infinity\nsage: B=A.subgroup([A.1])\nsage: B\nInfinite additive abelian group isomorphic to Z with generator(s): (0, 0, 1)\nsage: C=A/B\nsage: C\nFinite additive abelian group isomorphic to Z_12 with generator(s): (2, 3, 0)\n```\n\n\nGUN is a constructor of Groups of Units Mod n.  It employs MAG, the class of multiplicative abelian groups.  This is an intersection of two subgroups, and then a Cayley table is free (in the category of multiplicative groups).\n\n\n```\nsage: G=GUN(72)\nsage: G.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23, 37, 29, 13, 53, 61, 5, 19, 11, 67, 35, 43, 59]\nsage: G.subgroup([71,7])\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 65\nsage: K=G.subgroup([71,7])\nsage: K.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23]\nsage: L=G.subgroup([13,7])\nsage: L\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 61\nsage: L.list()\n[1, 61, 49, 37, 25, 13, 55, 43, 31, 19, 7, 67]\nsage: M=K.intersection(L)\nsage: M.list()\n[1, 7, 49, 55, 25, 31]\nsage: M\nFinite multiplicative abelian group isomorphic to Z_6 with generator(s): 7\nsage: M.cayley_table()\n*  a b c d e f\n +------------\na| a b c d e f\nb| b c d e f a\nc| c d e f a b\nd| d e f a b c\ne| e f a b c d\nf| f a b c d e\n```\n\n\nThis is an example from the current additive abelian wrapper class.  It shows the generators keyword allowing arbitrary elements to form the group, so long as they know how to add.  GUN above is similar, but with multiplication.\n\n\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M=AAG([3,2,2], generators=pts)\nsage: M.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1), (7/4 : -11/8 : 1), (1 : -4 : 1), (-2 : -7 : 1), (-5 : 2 : 1), (-2 : 8 : 1), (1 : 2 : 1)]\nsage: M.gens()\n((7/4 : -11/8 : 1), (13 : -52 : 1))\nsage: N=M.subgroup([M.1])\nsage: N\nFinite additive abelian group isomorphic to Z_6 with generator(s): (13 : -52 : 1)\nsage: N.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1)]\n```\n\n\nThere is lots to do here still: different filenames, different class names, error-checking, doctests, comparisons, and so on.  But the code seems to be working.  I'm not 100% confident on the `__call__` method of the main abstract class and I don't know if I need some things to support coercion better.  Any advice or comments at this stage would be appreciated before I begin to clean this all up.",
+    "body": "Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by @rbeezer created at 2010-08-20 23:14:32\n\nAAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are \"generic\" but not in this example.)\n\n```\nsage: A=AAG([3,4,0])\nsage: A.gens()\n((2, 3, 0), (0, 0, 1))\nsage: A.0.order()\n12\nsage: A.1.order()\n+Infinity\nsage: B=A.subgroup([A.1])\nsage: B\nInfinite additive abelian group isomorphic to Z with generator(s): (0, 0, 1)\nsage: C=A/B\nsage: C\nFinite additive abelian group isomorphic to Z_12 with generator(s): (2, 3, 0)\n```\n\nGUN is a constructor of Groups of Units Mod n.  It employs MAG, the class of multiplicative abelian groups.  This is an intersection of two subgroups, and then a Cayley table is free (in the category of multiplicative groups).\n\n```\nsage: G=GUN(72)\nsage: G.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23, 37, 29, 13, 53, 61, 5, 19, 11, 67, 35, 43, 59]\nsage: G.subgroup([71,7])\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 65\nsage: K=G.subgroup([71,7])\nsage: K.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23]\nsage: L=G.subgroup([13,7])\nsage: L\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 61\nsage: L.list()\n[1, 61, 49, 37, 25, 13, 55, 43, 31, 19, 7, 67]\nsage: M=K.intersection(L)\nsage: M.list()\n[1, 7, 49, 55, 25, 31]\nsage: M\nFinite multiplicative abelian group isomorphic to Z_6 with generator(s): 7\nsage: M.cayley_table()\n*  a b c d e f\n +------------\na| a b c d e f\nb| b c d e f a\nc| c d e f a b\nd| d e f a b c\ne| e f a b c d\nf| f a b c d e\n```\n\nThis is an example from the current additive abelian wrapper class.  It shows the generators keyword allowing arbitrary elements to form the group, so long as they know how to add.  GUN above is similar, but with multiplication.\n\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M=AAG([3,2,2], generators=pts)\nsage: M.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1), (7/4 : -11/8 : 1), (1 : -4 : 1), (-2 : -7 : 1), (-5 : 2 : 1), (-2 : 8 : 1), (1 : 2 : 1)]\nsage: M.gens()\n((7/4 : -11/8 : 1), (13 : -52 : 1))\nsage: N=M.subgroup([M.1])\nsage: N\nFinite additive abelian group isomorphic to Z_6 with generator(s): (13 : -52 : 1)\nsage: N.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1)]\n```\n\nThere is lots to do here still: different filenames, different class names, error-checking, doctests, comparisons, and so on.  But the code seems to be working.  I'm not 100% confident on the `__call__` method of the main abstract class and I don't know if I need some things to support coercion better.  Any advice or comments at this stage would be appreciated before I begin to clean this all up.",
     "created_at": "2010-08-20T23:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_095606.json:
 Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by @rbeezer created at 2010-08-20 23:14:32
 
 AAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are "generic" but not in this example.)
-
 
 ```
 sage: A=AAG([3,4,0])
@@ -63,9 +62,7 @@ sage: C
 Finite additive abelian group isomorphic to Z_12 with generator(s): (2, 3, 0)
 ```
 
-
 GUN is a constructor of Groups of Units Mod n.  It employs MAG, the class of multiplicative abelian groups.  This is an intersection of two subgroups, and then a Cayley table is free (in the category of multiplicative groups).
-
 
 ```
 sage: G=GUN(72)
@@ -97,9 +94,7 @@ e| e f a b c d
 f| f a b c d e
 ```
 
-
 This is an example from the current additive abelian wrapper class.  It shows the generators keyword allowing arbitrary elements to form the group, so long as they know how to add.  GUN above is similar, but with multiplication.
-
 
 
 ```
@@ -116,7 +111,6 @@ Finite additive abelian group isomorphic to Z_6 with generator(s): (13 : -52 : 1
 sage: N.list()
 [(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1)]
 ```
-
 
 There is lots to do here still: different filenames, different class names, error-checking, doctests, comparisons, and so on.  But the code seems to be working.  I'm not 100% confident on the `__call__` method of the main abstract class and I don't know if I need some things to support coercion better.  Any advice or comments at this stage would be appreciated before I begin to clean this all up.
 
@@ -210,7 +204,7 @@ Rob
 archive/issue_comments_095611.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> Will this interact at all with the class `CombinatorialFreeModule`?  I don't know what the long term plans are, or even if there are any, for connecting this with `FreeModule`, but the combinatorial version has some nice features.\n\nI looked at these two classes.  Generally they seem to require the same ring in each \"component\", whereas the FGP_Module class allows for diffferent rings in each component, such as in creating something like Z_3 x Z_4.  So I don't see an abvious way to leverage these, but maybe I'm missing something.\n\nRob",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Will this interact at all with the class `CombinatorialFreeModule`?  I don't know what the long term plans are, or even if there are any, for connecting this with `FreeModule`, but the combinatorial version has some nice features.\n\n\nI looked at these two classes.  Generally they seem to require the same ring in each \"component\", whereas the FGP_Module class allows for diffferent rings in each component, such as in creating something like Z_3 x Z_4.  So I don't see an abvious way to leverage these, but maybe I'm missing something.\n\nRob",
     "created_at": "2010-08-23T07:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -221,6 +215,7 @@ archive/issue_comments_095611.json:
 
 Replying to [comment:2 jhpalmieri]:
 > Will this interact at all with the class `CombinatorialFreeModule`?  I don't know what the long term plans are, or even if there are any, for connecting this with `FreeModule`, but the combinatorial version has some nice features.
+
 
 I looked at these two classes.  Generally they seem to require the same ring in each "component", whereas the FGP_Module class allows for diffferent rings in each component, such as in creating something like Z_3 x Z_4.  So I don't see an abvious way to leverage these, but maybe I'm missing something.
 
@@ -311,7 +306,7 @@ Paul Zimmermann
 archive/issue_comments_095616.json:
 ```json
 {
-    "body": "Replying to [comment:8 zimmerma]:\n> Question: does this patch solve #10181?\n\nWhile we're at it, how about #9940?",
+    "body": "Replying to [comment:8 zimmerma]:\n> Question: does this patch solve #10181?\n\n\nWhile we're at it, how about #9940?",
     "created_at": "2010-10-28T19:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -323,6 +318,7 @@ archive/issue_comments_095616.json:
 Replying to [comment:8 zimmerma]:
 > Question: does this patch solve #10181?
 
+
 While we're at it, how about #9940?
 
 
@@ -332,7 +328,7 @@ While we're at it, how about #9940?
 archive/issue_comments_095617.json:
 ```json
 {
-    "body": "Replying to [comment:8 zimmerma]:\n> Question: does this patch solve #10181?\n\nShort answer:  this could speed up `subgroups()` by a factor of 8, if my experiments are right.  We won't beat Magma, but we won't be embarassed on really small examples.  This patch does not have a `subgroups()` method yet, but could be easy to add.\n\nFull details at #10181.  Thanks for asking.\n\nRob",
+    "body": "Replying to [comment:8 zimmerma]:\n> Question: does this patch solve #10181?\n\n\nShort answer:  this could speed up `subgroups()` by a factor of 8, if my experiments are right.  We won't beat Magma, but we won't be embarassed on really small examples.  This patch does not have a `subgroups()` method yet, but could be easy to add.\n\nFull details at #10181.  Thanks for asking.\n\nRob",
     "created_at": "2010-10-31T17:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -343,6 +339,7 @@ archive/issue_comments_095617.json:
 
 Replying to [comment:8 zimmerma]:
 > Question: does this patch solve #10181?
+
 
 Short answer:  this could speed up `subgroups()` by a factor of 8, if my experiments are right.  We won't beat Magma, but we won't be embarassed on really small examples.  This patch does not have a `subgroups()` method yet, but could be easy to add.
 
@@ -357,7 +354,7 @@ Rob
 archive/issue_comments_095618.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> While we're at it, how about #9940?\n\nThis patch has code that is in pretty good shape (IMHO).  It still needs doctests, plus things like an equality method.  So it could fix #9440 if the equality method is done right?",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> While we're at it, how about #9940?\n\n\nThis patch has code that is in pretty good shape (IMHO).  It still needs doctests, plus things like an equality method.  So it could fix #9440 if the equality method is done right?",
     "created_at": "2010-10-31T17:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -368,6 +365,7 @@ archive/issue_comments_095618.json:
 
 Replying to [comment:9 jhpalmieri]:
 > While we're at it, how about #9940?
+
 
 This patch has code that is in pretty good shape (IMHO).  It still needs doctests, plus things like an equality method.  So it could fix #9440 if the equality method is done right?
 
@@ -567,7 +565,7 @@ Just a quick note to say that I've played with draft-6 a bit (mainly with the `U
 archive/issue_comments_095628.json:
 ```json
 {
-    "body": "Replying to [comment:18 AlexGhitza]:\n> Just a quick note to say that I've played with draft-6 a bit (mainly with the `UnitsModmGroup`), and I very much like it.  Thanks for all the work you've put into this (and the patience!).\n\nThanks very much, Alex, for the encouragement.  Still lots of docstrings to work on, but making (slow) progress, since classes started recently.  Soon.  ;-)",
+    "body": "Replying to [comment:18 AlexGhitza]:\n> Just a quick note to say that I've played with draft-6 a bit (mainly with the `UnitsModmGroup`), and I very much like it.  Thanks for all the work you've put into this (and the patience!).\n\n\nThanks very much, Alex, for the encouragement.  Still lots of docstrings to work on, but making (slow) progress, since classes started recently.  Soon.  ;-)",
     "created_at": "2012-08-30T21:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -578,6 +576,7 @@ archive/issue_comments_095628.json:
 
 Replying to [comment:18 AlexGhitza]:
 > Just a quick note to say that I've played with draft-6 a bit (mainly with the `UnitsModmGroup`), and I very much like it.  Thanks for all the work you've put into this (and the patience!).
+
 
 Thanks very much, Alex, for the encouragement.  Still lots of docstrings to work on, but making (slow) progress, since classes started recently.  Soon.  ;-)
 
@@ -767,7 +766,7 @@ Hey Rob, what's the status here?  If one (say, me) were to have a student who kn
 archive/issue_comments_095632.json:
 ```json
 {
-    "body": "Replying to [comment:26 kcrisman]:\n> Hey Rob, what's the status here?  If one (say, me) were to have a student who knows some algebra and is a solid programmer, could they finish up what is remaining?  Could be really useful stuff.\n\nI am also interested in this. I am a student as well with algebra coursework under my belt. If there is still a need for this and you would like to work together, I am down.",
+    "body": "Replying to [comment:26 kcrisman]:\n> Hey Rob, what's the status here?  If one (say, me) were to have a student who knows some algebra and is a solid programmer, could they finish up what is remaining?  Could be really useful stuff.\n\n\nI am also interested in this. I am a student as well with algebra coursework under my belt. If there is still a need for this and you would like to work together, I am down.",
     "created_at": "2015-02-19T03:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
@@ -778,5 +777,6 @@ archive/issue_comments_095632.json:
 
 Replying to [comment:26 kcrisman]:
 > Hey Rob, what's the status here?  If one (say, me) were to have a student who knows some algebra and is a solid programmer, could they finish up what is remaining?  Could be really useful stuff.
+
 
 I am also interested in this. I am a student as well with algebra coursework under my belt. If there is still a need for this and you would like to work together, I am down.

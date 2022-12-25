@@ -433,7 +433,7 @@ Hi there, I made my comments into a patch which ought to be applied after John's
 archive/issue_comments_027877.json:
 ```json
 {
-    "body": "As I said earlier, I don't have time to work on this right now, so thanks for doing this.  After a quick glance, malb's patch looks good to me (although I just looked at the diff, I didn't apply it and build the new documentation).  I was sort of thinking that the authors could be \"The Sage Hive Mind\" :), but the \"The Sage Group\" is okay, too.  I wonder if the lines\n\n```\nThis document was authored by William Stein, David Joyner, John Palmieri \nand others with the editorial help of Iftikhar Burhanuddin and Martin Albrecht. \n```\n\nshould be deleted altogether? Or replaced with (a footnote?)\n\n```\nThe first version of this document was authored by William Stein and David \nJoyner with the editorial help of ...; various members of the Sage group have \ncontributed to later editions, following the procedures outlined in \nChapters ?? and ??\n```\n\nI don't care that much about attribution, since I feel like I just reorganized and edited: I'm not sure that I added enough content to distinguish me from the rest of the Sage Group.  But I won't fight it if you want to keep my name there.  (The important thing from my point of view is that we're getting a more-or-less up-to-date version of this documentation, and that seems to be happening.)\n\nIn any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.",
+    "body": "As I said earlier, I don't have time to work on this right now, so thanks for doing this.  After a quick glance, malb's patch looks good to me (although I just looked at the diff, I didn't apply it and build the new documentation).  I was sort of thinking that the authors could be \"The Sage Hive Mind\" :), but the \"The Sage Group\" is okay, too.  I wonder if the lines\n\n```\nThis document was authored by William Stein, David Joyner, John Palmieri \nand others with the editorial help of Iftikhar Burhanuddin and Martin Albrecht. \n```\nshould be deleted altogether? Or replaced with (a footnote?)\n\n```\nThe first version of this document was authored by William Stein and David \nJoyner with the editorial help of ...; various members of the Sage group have \ncontributed to later editions, following the procedures outlined in \nChapters ?? and ??\n```\nI don't care that much about attribution, since I feel like I just reorganized and edited: I'm not sure that I added enough content to distinguish me from the rest of the Sage Group.  But I won't fight it if you want to keep my name there.  (The important thing from my point of view is that we're getting a more-or-less up-to-date version of this documentation, and that seems to be happening.)\n\nIn any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.",
     "created_at": "2008-08-24T16:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -448,7 +448,6 @@ As I said earlier, I don't have time to work on this right now, so thanks for do
 This document was authored by William Stein, David Joyner, John Palmieri 
 and others with the editorial help of Iftikhar Burhanuddin and Martin Albrecht. 
 ```
-
 should be deleted altogether? Or replaced with (a footnote?)
 
 ```
@@ -457,7 +456,6 @@ Joyner with the editorial help of ...; various members of the Sage group have
 contributed to later editions, following the procedures outlined in 
 Chapters ?? and ??
 ```
-
 I don't care that much about attribution, since I feel like I just reorganized and edited: I'm not sure that I added enough content to distinguish me from the rest of the Sage Group.  But I won't fight it if you want to keep my name there.  (The important thing from my point of view is that we're getting a more-or-less up-to-date version of this documentation, and that seems to be happening.)
 
 In any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.
@@ -469,7 +467,7 @@ In any case, I'm happy other people are working on this, too, and I'm looking fo
 archive/issue_comments_027878.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> In any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.\n\nLets sort out the attribution thing after the Sphinx-isation? But I also don't mind getting rid of that sentence.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> In any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.\n\n\nLets sort out the attribution thing after the Sphinx-isation? But I also don't mind getting rid of that sentence.",
     "created_at": "2008-08-24T23:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -480,6 +478,7 @@ archive/issue_comments_027878.json:
 
 Replying to [comment:7 jhpalmieri]:
 > In any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.
+
 
 Lets sort out the attribution thing after the Sphinx-isation? But I also don't mind getting rid of that sentence.
 
@@ -532,7 +531,7 @@ Michael
 archive/issue_comments_027881.json:
 ```json
 {
-    "body": "`mabshoff` is looking at the first patch, I've looked over the second patch, and the only complaint I have is that approx. line 312 isn't grammatical:\n\n\n```\nIt is {\\em very important} that you include your name in\nthe AUTHOR log, since everybody who submits code to \\sage\nto receive proper credit...\n```\n\n\nThey *should* receive proper credit...",
+    "body": "`mabshoff` is looking at the first patch, I've looked over the second patch, and the only complaint I have is that approx. line 312 isn't grammatical:\n\n```\nIt is {\\em very important} that you include your name in\nthe AUTHOR log, since everybody who submits code to \\sage\nto receive proper credit...\n```\n\nThey *should* receive proper credit...",
     "created_at": "2008-08-31T00:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -543,13 +542,11 @@ archive/issue_comments_027881.json:
 
 `mabshoff` is looking at the first patch, I've looked over the second patch, and the only complaint I have is that approx. line 312 isn't grammatical:
 
-
 ```
 It is {\em very important} that you include your name in
 the AUTHOR log, since everybody who submits code to \sage
 to receive proper credit...
 ```
-
 
 They *should* receive proper credit...
 
@@ -560,7 +557,7 @@ They *should* receive proper credit...
 archive/issue_comments_027882.json:
 ```json
 {
-    "body": "Replying to [comment:11 rlm]:\n> They *should* receive proper credit...\n\nThat section is being deleted, so no harm done :)\n\nrlm and I read over the patches and it is better to get them in (even if they are slighly imperfect) than to let them bitrot. The remaining issues can be addressed via follow up tickets. This work by John and Martin is certainly long needed and a great improvement to the documentation.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 rlm]:\n> They *should* receive proper credit...\n\n\nThat section is being deleted, so no harm done :)\n\nrlm and I read over the patches and it is better to get them in (even if they are slighly imperfect) than to let them bitrot. The remaining issues can be addressed via follow up tickets. This work by John and Martin is certainly long needed and a great improvement to the documentation.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T06:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -571,6 +568,7 @@ archive/issue_comments_027882.json:
 
 Replying to [comment:11 rlm]:
 > They *should* receive proper credit...
+
 
 That section is being deleted, so no harm done :)
 
@@ -587,7 +585,7 @@ Michael
 archive/issue_comments_027883.json:
 ```json
 {
-    "body": "Unfortunately Martin's patch breaks the doctests. Some of them can be fixed by adding \n\n```\nsage: K.<x> = QQ[]\nsage: G = PermutationGroup([[(1,2,3),(4,5)], [(1,2)]])\nsage: rgp = Gp()\nsage: def gap_randstring(n):\n...       current_randstate().set_seed_gap()\n...       return gap(n).SCRRandomString()\nsage: def rtest():\n...       current_randstate().set_seed_gp(rgp)\n...       return (ZZ.random_element(1000), RR.random_element(),\n...               K.random_element(), G.random_element(),\n...               gap_randstring(5),\n...               rgp.random(), ntl.ZZ_random(99999),\n...               random())\n```\n\nto a bunch of the randgen examples, but I consider that too ugly a solution to do it. \n\n\nWe could take out the randgen chapter for now and deal with it at a later ticket. Thoughts?\n\nCheers,\n\nMichael",
+    "body": "Unfortunately Martin's patch breaks the doctests. Some of them can be fixed by adding \n\n```\nsage: K.<x> = QQ[]\nsage: G = PermutationGroup([[(1,2,3),(4,5)], [(1,2)]])\nsage: rgp = Gp()\nsage: def gap_randstring(n):\n...       current_randstate().set_seed_gap()\n...       return gap(n).SCRRandomString()\nsage: def rtest():\n...       current_randstate().set_seed_gp(rgp)\n...       return (ZZ.random_element(1000), RR.random_element(),\n...               K.random_element(), G.random_element(),\n...               gap_randstring(5),\n...               rgp.random(), ntl.ZZ_random(99999),\n...               random())\n```\nto a bunch of the randgen examples, but I consider that too ugly a solution to do it. \n\n\nWe could take out the randgen chapter for now and deal with it at a later ticket. Thoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T07:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -613,7 +611,6 @@ sage: def rtest():
 ...               rgp.random(), ntl.ZZ_random(99999),
 ...               random())
 ```
-
 to a bunch of the randgen examples, but I consider that too ugly a solution to do it. 
 
 
@@ -648,7 +645,7 @@ The PRNG stuff is very well documented in the relevant modules. Perhaps a pointe
 archive/issue_comments_027885.json:
 ```json
 {
-    "body": "Replying to [comment:14 rlm]:\n> The PRNG stuff is very well documented in the relevant modules. Perhaps a pointer in that direction is enough?\n\nI definitely agree, so I am merging malb's patch without the PRNG section. We will deal with that problem down the road. Time to get alpha3 out.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:14 rlm]:\n> The PRNG stuff is very well documented in the relevant modules. Perhaps a pointer in that direction is enough?\n\n\nI definitely agree, so I am merging malb's patch without the PRNG section. We will deal with that problem down the road. Time to get alpha3 out.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T07:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
@@ -659,6 +656,7 @@ archive/issue_comments_027885.json:
 
 Replying to [comment:14 rlm]:
 > The PRNG stuff is very well documented in the relevant modules. Perhaps a pointer in that direction is enough?
+
 
 I definitely agree, so I am merging malb's patch without the PRNG section. We will deal with that problem down the road. Time to get alpha3 out.
 

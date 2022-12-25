@@ -3,7 +3,7 @@
 archive/issues_007538.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
     "created_at": "2009-11-26T21:34:36Z",
     "labels": [
         "component: combinatorics",
@@ -33,7 +33,6 @@ sage: p2.cover_relations()
 sage: p1 == p2
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7538
 
@@ -82,7 +81,7 @@ Changing status from new to needs_info.
 archive/issue_comments_063820.json:
 ```json
 {
-    "body": "The fix posted here solve the problem of equality but raise a much more subtle one\n\n```\nsage: p1, p2 = Posets(2).list()\nsage: p2 < p1\nTrue\nsage: [[p1.__cmp__(p2) for p1 in Posets(2)] for p2 in Posets(2)]\n[[0, 1], [1, 0]]\nsage: [[p2.__cmp__(p1) for p1 in Posets(2)] for p2 in Posets(2)]\n[[0, 1], [-1, 0]]\nsage: p2 < p1\nFalse\n```\n\n\nI forward the discussion to sage-combinat-devel.",
+    "body": "The fix posted here solve the problem of equality but raise a much more subtle one\n\n```\nsage: p1, p2 = Posets(2).list()\nsage: p2 < p1\nTrue\nsage: [[p1.__cmp__(p2) for p1 in Posets(2)] for p2 in Posets(2)]\n[[0, 1], [1, 0]]\nsage: [[p2.__cmp__(p1) for p1 in Posets(2)] for p2 in Posets(2)]\n[[0, 1], [-1, 0]]\nsage: p2 < p1\nFalse\n```\n\nI forward the discussion to sage-combinat-devel.",
     "created_at": "2009-11-26T21:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
@@ -104,7 +103,6 @@ sage: [[p2.__cmp__(p1) for p1 in Posets(2)] for p2 in Posets(2)]
 sage: p2 < p1
 False
 ```
-
 
 I forward the discussion to sage-combinat-devel.
 

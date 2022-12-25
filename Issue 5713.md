@@ -3,7 +3,7 @@
 archive/issues_005713.json:
 ```json
 {
-    "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\n\n```\nI just tried to plot a multigraph with setting positions of vertices,\n\nG=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\n['c','d','d','d'],'d':['e']})\n\nG.show(pos={'a':[0,1],'b':[1,1],'c':[2,0],'d':[1,0],'e':[0,0]})\n\nand got an error\n\n File \"/home/alec/sage/local/lib/python2.5/site-packages/sage/graphs/\ngraph_plot.py\", line 459, in set_edges\n   odd_y = M[1] + d\nNameError: global name 'd' is not defined\n\nWithout pos both show and plot work OK.\n\nAlec Mihailovs\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5713\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\n```\nI just tried to plot a multigraph with setting positions of vertices,\n\nG=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\n['c','d','d','d'],'d':['e']})\n\nG.show(pos={'a':[0,1],'b':[1,1],'c':[2,0],'d':[1,0],'e':[0,0]})\n\nand got an error\n\n File \"/home/alec/sage/local/lib/python2.5/site-packages/sage/graphs/\ngraph_plot.py\", line 459, in set_edges\n   odd_y = M[1] + d\nNameError: global name 'd' is not defined\n\nWithout pos both show and plot work OK.\n\nAlec Mihailovs\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5713\n\n",
     "created_at": "2009-04-08T16:07:40Z",
     "labels": [
         "component: graph theory",
@@ -19,7 +19,6 @@ archive/issues_005713.json:
 Assignee: ekirkman
 
 CC:  @rlmill
-
 
 ```
 I just tried to plot a multigraph with setting positions of vertices,
@@ -40,7 +39,6 @@ Without pos both show and plot work OK.
 
 Alec Mihailovs
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5713
 

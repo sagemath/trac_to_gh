@@ -3,7 +3,7 @@
 archive/issues_005371.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: autosave interval, snapshot\n\nUntil the autosave becomes smarter, the default settings should be changed.  Otherwise the number of snapshots eats up too much space.  In the exchange below, Jan Groenewald likes an autosave interval of 2 hours, which might be a bit long since the fix that deletes redundant snapshots is in.  So I would suggest a max history length of 50, as Jan asked for, and an autosave interval of at least 5 minutes.\n\nOn Mon, Feb 23, 2009 at 12:00 AM, Jan Groenewald <j...`@`aims.ac.za> wrote: \n> PS. I will now be permanently patching user_conf.py to set autosave_interval higher\n> from 3*60 to 120*60 and and max_history_length lower from 500 to 50. It would be\n> great if the defaults here were reconsidered.\n\n+1  -- I would be very happy if that change were made officially.\nPlease submit a patch / ticket.\n\nWilliam\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5371\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: autosave interval, snapshot\n\nUntil the autosave becomes smarter, the default settings should be changed.  Otherwise the number of snapshots eats up too much space.  In the exchange below, Jan Groenewald likes an autosave interval of 2 hours, which might be a bit long since the fix that deletes redundant snapshots is in.  So I would suggest a max history length of 50, as Jan asked for, and an autosave interval of at least 5 minutes.\n\nOn Mon, Feb 23, 2009 at 12:00 AM, Jan Groenewald <j...`@`aims.ac.za> wrote: \n> PS. I will now be permanently patching user_conf.py to set autosave_interval higher\n> from 3*60 to 120*60 and and max_history_length lower from 500 to 50. It would be\n> great if the defaults here were reconsidered.\n\n\n+1  -- I would be very happy if that change were made officially.\nPlease submit a patch / ticket.\n\nWilliam\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5371\n\n",
     "created_at": "2009-02-25T13:01:07Z",
     "labels": [
         "component: notebook",
@@ -27,6 +27,7 @@ On Mon, Feb 23, 2009 at 12:00 AM, Jan Groenewald <j...`@`aims.ac.za> wrote:
 > PS. I will now be permanently patching user_conf.py to set autosave_interval higher
 > from 3*60 to 120*60 and and max_history_length lower from 500 to 50. It would be
 > great if the defaults here were reconsidered.
+
 
 +1  -- I would be very happy if that change were made officially.
 Please submit a patch / ticket.
@@ -88,7 +89,7 @@ See related #5291 and #5300
 archive/issue_comments_041284.json:
 ```json
 {
-    "body": "4 doctests fail after applying this patch and running \"sage -t\" on the server directory.\n\n\n```\n^[[Awstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -tp 30 devel/sage/sage/server\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 24 files doing 30 jobs in parallel\nsage -t  devel/sage/sage/server/notebook/compress/BaseConvert.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/notebook/compress/SourceMap.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/notebook/compress/JavaScriptCompressor.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/misc.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/introspect.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/trac/trac.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/notebook/sage_email.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/sagetex.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/user.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/user.py\", line 86:\n    sage: config['max_history_length']\nExpected:\n    500\nGot:\n    100\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/user.py\", line 90:\n    sage: config['autosave_interval']\nExpected:\n    180\nGot:\n    3600\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_1\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_user.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/user_conf.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/keyboards.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/gnutls_socket_ssl.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/docHTMLProcessor.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/wiki/moin.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/template.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/avatars.py\n         [2.2 s]\nsage -t  devel/sage/sage/server/notebook/jquery.py\n         [2.2 s]\nsage -t  devel/sage/sage/server/notebook/applet.py\n         [2.3 s]\nsage -t  devel/sage/sage/server/notebook/notebook.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/notebook.py\", line 561:\n    sage: config['max_history_length']\nExpected:\n    500\nGot:\n    100\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/notebook.py\", line 565:\n    sage: config['autosave_interval']\nExpected:\n    180\nGot:\n    3600\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_19\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_notebook.py\n         [2.4 s]\nsage -t  devel/sage/sage/server/support.py\n         [2.6 s]\nsage -t  devel/sage/sage/server/notebook/interact.py\n         [3.1 s]\nsage -t  devel/sage/sage/server/notebook/twist.py\n         [3.5 s]\nsage -t  devel/sage/sage/server/notebook/worksheet.py\n         [5.3 s]\nsage -t  devel/sage/sage/server/notebook/cell.py\n         [8.1 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/server/notebook/user.py # 2 doctests failed\n        sage -t  devel/sage/sage/server/notebook/notebook.py # 2 doctests failed\n```\n",
+    "body": "4 doctests fail after applying this patch and running \"sage -t\" on the server directory.\n\n```\n^[[Awstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -tp 30 devel/sage/sage/server\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 24 files doing 30 jobs in parallel\nsage -t  devel/sage/sage/server/notebook/compress/BaseConvert.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/notebook/compress/SourceMap.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/notebook/compress/JavaScriptCompressor.py\n         [0.1 s]\nsage -t  devel/sage/sage/server/misc.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/introspect.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/trac/trac.py\n         [2.0 s]\nsage -t  devel/sage/sage/server/notebook/sage_email.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/sagetex.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/user.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/user.py\", line 86:\n    sage: config['max_history_length']\nExpected:\n    500\nGot:\n    100\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/user.py\", line 90:\n    sage: config['autosave_interval']\nExpected:\n    180\nGot:\n    3600\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_1\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_user.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/user_conf.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/keyboards.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/gnutls_socket_ssl.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/docHTMLProcessor.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/wiki/moin.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/template.py\n         [2.1 s]\nsage -t  devel/sage/sage/server/notebook/avatars.py\n         [2.2 s]\nsage -t  devel/sage/sage/server/notebook/jquery.py\n         [2.2 s]\nsage -t  devel/sage/sage/server/notebook/applet.py\n         [2.3 s]\nsage -t  devel/sage/sage/server/notebook/notebook.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/notebook.py\", line 561:\n    sage: config['max_history_length']\nExpected:\n    500\nGot:\n    100\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/server/notebook/notebook.py\", line 565:\n    sage: config['autosave_interval']\nExpected:\n    180\nGot:\n    3600\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_19\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_notebook.py\n         [2.4 s]\nsage -t  devel/sage/sage/server/support.py\n         [2.6 s]\nsage -t  devel/sage/sage/server/notebook/interact.py\n         [3.1 s]\nsage -t  devel/sage/sage/server/notebook/twist.py\n         [3.5 s]\nsage -t  devel/sage/sage/server/notebook/worksheet.py\n         [5.3 s]\nsage -t  devel/sage/sage/server/notebook/cell.py\n         [8.1 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/server/notebook/user.py # 2 doctests failed\n        sage -t  devel/sage/sage/server/notebook/notebook.py # 2 doctests failed\n```",
     "created_at": "2009-04-12T08:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -98,7 +99,6 @@ archive/issue_comments_041284.json:
 ```
 
 4 doctests fail after applying this patch and running "sage -t" on the server directory.
-
 
 ```
 ^[[Awstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -tp 30 devel/sage/sage/server
@@ -200,7 +200,6 @@ The following tests failed:
         sage -t  devel/sage/sage/server/notebook/user.py # 2 doctests failed
         sage -t  devel/sage/sage/server/notebook/notebook.py # 2 doctests failed
 ```
-
 
 
 
@@ -360,7 +359,7 @@ That second reviewer patch fails for me since I don't have a directory "/home/ma
 archive/issue_comments_041290.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> That second reviewer patch fails for me since I don't have a directory \"/home/mabshoff/\".  I think that's why the original patch didn't have sage: lines there.  What do you think, mabshoff?\n\nWell, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. \n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 jason]:\n> That second reviewer patch fails for me since I don't have a directory \"/home/mabshoff/\".  I think that's why the original patch didn't have sage: lines there.  What do you think, mabshoff?\n\n\nWell, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. \n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T16:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -371,6 +370,7 @@ archive/issue_comments_041290.json:
 
 Replying to [comment:7 jason]:
 > That second reviewer patch fails for me since I don't have a directory "/home/mabshoff/".  I think that's why the original patch didn't have sage: lines there.  What do you think, mabshoff?
+
 
 Well, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. 
 
@@ -387,7 +387,7 @@ Michael
 archive/issue_comments_041291.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> Well, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. \n\nIt appears to me that employing these commands with $DOT_SAGE will\n\n(a) mess with users' changes\n\n(b) fail for those who have changed the defaults.\n\nI'm reasonably confident this would be the case on my own setup, since I don't have my DOT_SAGE directory isolated from where I do testing.  Of course, the doctests could save state, run a test, then restore the state.\n\nHowever, I never really meant the documentation to be doctests.  The patch was meant to be stop-gap, and not a complete solution to the problem of excessive saves.  I was included a sample command-line session as a way to show users how to change the defaults without editing the source.  So if somebody had tracked the problem this far (like kcrisman today), then they might get some help for a quick fix.\n\nI'd prefer this whole ticket to not even be necessary.  But I think converting the sample command-line session to doctests is more trouble than it is worth.  So I'd suggest not including the second reviewer patch.  Sorry I didn't look at this sooner - I misunderstood what was happening with the doctest failures and the added doctest.\n\nI'm going to post some more general comments about all this on sage-support.",
+    "body": "Replying to [comment:8 mabshoff]:\n> Well, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. \n\n\nIt appears to me that employing these commands with $DOT_SAGE will\n\n(a) mess with users' changes\n\n(b) fail for those who have changed the defaults.\n\nI'm reasonably confident this would be the case on my own setup, since I don't have my DOT_SAGE directory isolated from where I do testing.  Of course, the doctests could save state, run a test, then restore the state.\n\nHowever, I never really meant the documentation to be doctests.  The patch was meant to be stop-gap, and not a complete solution to the problem of excessive saves.  I was included a sample command-line session as a way to show users how to change the defaults without editing the source.  So if somebody had tracked the problem this far (like kcrisman today), then they might get some help for a quick fix.\n\nI'd prefer this whole ticket to not even be necessary.  But I think converting the sample command-line session to doctests is more trouble than it is worth.  So I'd suggest not including the second reviewer patch.  Sorry I didn't look at this sooner - I misunderstood what was happening with the doctest failures and the added doctest.\n\nI'm going to post some more general comments about all this on sage-support.",
     "created_at": "2009-04-22T20:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -398,6 +398,7 @@ archive/issue_comments_041291.json:
 
 Replying to [comment:8 mabshoff]:
 > Well, the fix would be to use $DOT_SAGE instead even though I am afraid that people who changed the custom settings already would see failed doctests. And the doctest might even change the default settings, etc. 
+
 
 It appears to me that employing these commands with $DOT_SAGE will
 
@@ -500,7 +501,7 @@ Presumably this will all get sorted out with a notebook overhaul.  If not, the c
 archive/issue_comments_041296.json:
 ```json
 {
-    "body": "I applied\n\n```\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_worksheet_save_time_version2.patch\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_reviewer.patch\n```\n\n\nand fixed the following doctests:\n\n\n```\nsage -t  sage/server/notebook/notebook.py\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/sage/server/notebook/notebook.py\", line 561:\n    sage: config['max_history_length']\nExpected:\n    100\nGot:\n    1000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_19\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/ncalexan/sage-4.0.2.alpha1/tmp/.doctest_notebook.py\n         [2.0 s]\nsage -t  sage/server/notebook/template.py\n         [1.3 s]\nsage -t  sage/server/notebook/sagetex.py\n         [1.4 s]\nsage -t  sage/server/notebook/user.py\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/sage/server/notebook/user.py\", line 86:\n    sage: config['max_history_length']\nExpected:\n    100\nGot:\n    1000\n```\n",
+    "body": "I applied\n\n```\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_worksheet_save_time_version2.patch\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_reviewer.patch\n```\n\nand fixed the following doctests:\n\n```\nsage -t  sage/server/notebook/notebook.py\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/sage/server/notebook/notebook.py\", line 561:\n    sage: config['max_history_length']\nExpected:\n    100\nGot:\n    1000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_19\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/ncalexan/sage-4.0.2.alpha1/tmp/.doctest_notebook.py\n         [2.0 s]\nsage -t  sage/server/notebook/template.py\n         [1.3 s]\nsage -t  sage/server/notebook/sagetex.py\n         [1.4 s]\nsage -t  sage/server/notebook/user.py\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/sage/server/notebook/user.py\", line 86:\n    sage: config['max_history_length']\nExpected:\n    100\nGot:\n    1000\n```",
     "created_at": "2009-06-13T23:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",
     "type": "issue_comment",
@@ -516,9 +517,7 @@ http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_workshee
 http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5371/trac_5371_reviewer.patch
 ```
 
-
 and fixed the following doctests:
-
 
 ```
 sage -t  sage/server/notebook/notebook.py
@@ -548,7 +547,6 @@ Expected:
 Got:
     1000
 ```
-
 
 
 

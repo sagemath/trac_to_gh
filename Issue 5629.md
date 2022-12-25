@@ -108,7 +108,7 @@ Changing status from new to assigned.
 archive/issue_comments_043876.json:
 ```json
 {
-    "body": "REFEREE REPORT.\n\nLooks great.  I rebased this patch against 3.4.1.alpha0 and added a doctest for the following new function.  I also doctested this patch against the schemes directory.\n\n```\n \t137\t    def is_noetherian(self): \n \t138\t        \"\"\" \n \t139\t        Return True if this scheme is Noetherian. \n \t140\t        \"\"\" \n \t141\t        return self.__R.is_noetherian() \n```\n",
+    "body": "REFEREE REPORT.\n\nLooks great.  I rebased this patch against 3.4.1.alpha0 and added a doctest for the following new function.  I also doctested this patch against the schemes directory.\n\n```\n \t137\t    def is_noetherian(self): \n \t138\t        \"\"\" \n \t139\t        Return True if this scheme is Noetherian. \n \t140\t        \"\"\" \n \t141\t        return self.__R.is_noetherian() \n```",
     "created_at": "2009-03-29T17:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
@@ -128,7 +128,6 @@ Looks great.  I rebased this patch against 3.4.1.alpha0 and added a doctest for 
  	140	        """ 
  	141	        return self.__R.is_noetherian() 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009208.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @jasongrout\n\n## Hardware & associated software\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n## Sage version and relevant software in Sage\nThis issue was discovered with Sage 4.4.3, which includes\n* Freetype 2.5.5, which is also known as version 9.16.3 (see #9202 for more information about this rather strange version numbering used). \n* matplotlib 0.99.1\n\n\n## The problem\nAs discussed here, \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1d23bf8990fe06d?hl=en\n\n'matplotlib' will find the system version of 'freetype2', rather than the one in Sage, as it relies on the 'pkg-config' command, to determine the version of freetype2, and what compiler options need to be used to link the required freetype2 library. \n\nTherefore, matplolib reports it is configured with version 9.7.3, which is an old version of freetype2 installed under /usr/sfw in Solaris 10 03/05. \n\n\n```\nREQUIRED DEPENDENCIES\n                  numpy: 1.3.0\n              freetype2: 9.7.3\n```\n\n(freetype 9.7.3 is also known as version 2.1.9)\n\n## The solution\nThe solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is \n\n\n``` \n$SAGE_LOCAL/lib/pkgconfig\n```\n\n\nrather than the default system directory. \n\nThere we find 11 packages have configuration information\n\nThis is easy to resolve, by adding the following 4 lines to sage-env, which ensure pkg-config uses the Sage directory \n\n\n```\nif [ -z \"$PKG_CONFIG_PATH\" ]; then\n    PKG_CONFIG_PATH=\"$SAGE_LOCAL/lib/pkgconfig\"\n    export PKG_CONFIG_PATH \nfi\n```\n\n\nThe variable PKG_CONFIG_PATH is used by the pkg-config command.\n\n## The results\nOnce this is done, matplotlib reports the correction version of 'freetype' \n\n\n```\nNot building any matplotlib graphical backends.\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 0.99.1\n                python: 2.6.4 (r264:75706, Jun  6 2010, 00:37:24)  [GCC\n                        4.4.3]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.16.3\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: 1.2.35\n                  Gtk+: no\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9208\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @jasongrout\n\n## Hardware & associated software\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n## Sage version and relevant software in Sage\nThis issue was discovered with Sage 4.4.3, which includes\n* Freetype 2.5.5, which is also known as version 9.16.3 (see #9202 for more information about this rather strange version numbering used). \n* matplotlib 0.99.1\n\n\n## The problem\nAs discussed here, \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1d23bf8990fe06d?hl=en\n\n'matplotlib' will find the system version of 'freetype2', rather than the one in Sage, as it relies on the 'pkg-config' command, to determine the version of freetype2, and what compiler options need to be used to link the required freetype2 library. \n\nTherefore, matplolib reports it is configured with version 9.7.3, which is an old version of freetype2 installed under /usr/sfw in Solaris 10 03/05. \n\n```\nREQUIRED DEPENDENCIES\n                  numpy: 1.3.0\n              freetype2: 9.7.3\n```\n(freetype 9.7.3 is also known as version 2.1.9)\n\n## The solution\nThe solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is \n\n``` \n$SAGE_LOCAL/lib/pkgconfig\n```\n\nrather than the default system directory. \n\nThere we find 11 packages have configuration information\n\nThis is easy to resolve, by adding the following 4 lines to sage-env, which ensure pkg-config uses the Sage directory \n\n```\nif [ -z \"$PKG_CONFIG_PATH\" ]; then\n    PKG_CONFIG_PATH=\"$SAGE_LOCAL/lib/pkgconfig\"\n    export PKG_CONFIG_PATH \nfi\n```\n\nThe variable PKG_CONFIG_PATH is used by the pkg-config command.\n\n## The results\nOnce this is done, matplotlib reports the correction version of 'freetype' \n\n```\nNot building any matplotlib graphical backends.\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 0.99.1\n                python: 2.6.4 (r264:75706, Jun  6 2010, 00:37:24)  [GCC\n                        4.4.3]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.16.3\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: 1.2.35\n                  Gtk+: no\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9208\n\n",
     "created_at": "2010-06-10T23:14:17Z",
     "labels": [
         "component: build",
@@ -42,30 +42,25 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/1d23bf8990fe06d?h
 
 Therefore, matplolib reports it is configured with version 9.7.3, which is an old version of freetype2 installed under /usr/sfw in Solaris 10 03/05. 
 
-
 ```
 REQUIRED DEPENDENCIES
                   numpy: 1.3.0
               freetype2: 9.7.3
 ```
-
 (freetype 9.7.3 is also known as version 2.1.9)
 
 ## The solution
 The solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is 
 
-
 ``` 
 $SAGE_LOCAL/lib/pkgconfig
 ```
-
 
 rather than the default system directory. 
 
 There we find 11 packages have configuration information
 
 This is easy to resolve, by adding the following 4 lines to sage-env, which ensure pkg-config uses the Sage directory 
-
 
 ```
 if [ -z "$PKG_CONFIG_PATH" ]; then
@@ -74,12 +69,10 @@ if [ -z "$PKG_CONFIG_PATH" ]; then
 fi
 ```
 
-
 The variable PKG_CONFIG_PATH is used by the pkg-config command.
 
 ## The results
 Once this is done, matplotlib reports the correction version of 'freetype' 
-
 
 ```
 Not building any matplotlib graphical backends.
@@ -99,7 +92,6 @@ OPTIONAL BACKEND DEPENDENCIES
                   Gtk+: no
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9208
 
@@ -269,7 +261,7 @@ Changing assignee from GeorgSWeber to drkirkby.
 archive/issue_comments_086046.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> I meant to overwrite the patch when I corrected the spelling, but forgot, so there is now 9208.2.patch. \n> \n> Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? \n\nNot sage-env.  See #9210 for the patch I talked about.\n\n> If so, then this still needs reviewing. \n> \n\nYes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.\n\nI didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation will we not want to overwrite that variable?",
+    "body": "Replying to [comment:7 drkirkby]:\n> I meant to overwrite the patch when I corrected the spelling, but forgot, so there is now 9208.2.patch. \n> \n> Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? \n\n\nNot sage-env.  See #9210 for the patch I talked about.\n\n> If so, then this still needs reviewing. \n> \n\n\nYes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.\n\nI didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation will we not want to overwrite that variable?",
     "created_at": "2010-06-11T04:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -283,10 +275,12 @@ Replying to [comment:7 drkirkby]:
 > 
 > Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? 
 
+
 Not sage-env.  See #9210 for the patch I talked about.
 
 > If so, then this still needs reviewing. 
 > 
+
 
 Yes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.
 
@@ -299,7 +293,7 @@ I didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation 
 archive/issue_comments_086047.json:
 ```json
 {
-    "body": "Replying to [comment:8 jason]:\n> Replying to [comment:7 drkirkby]:\n> > I meant to overwrite the patch when I corrected the spelling, but forgot, so there is now 9208.2.patch. \n> > \n> > Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? \n> \n> Not sage-env.  See #9210 for the patch I talked about.\n> \n> > If so, then this still needs reviewing. \n> > \n> \n> Yes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.\n> \n> I didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation will we not want to overwrite that variable?\n> \n> \nI must admit, I did consider whether it was appropriate to simply overwrite PKG_CONFIG_PATH and ignore whatever the user puts. But I could see some benefits in allowing the user to set this. \n\n* If I wanted to use a later version of a library that Sage has, I would be able to do so by putting my libraries in a location of my choosing, and let Sage find them first. \n\n* in some cases one might have libraries that Sage lacks, but one wants to use with programs like matplotlib. (GTK could be an exmaple of that). \n\nAnother possibility, is to prepend Sage's path to PKG_CONFIG_PATH, so things in Sage are found first, but others that exist on the system will be found too, since according to the man page of pkg-config on Solaris:\n\n\n```\nUser Commands                                       pkg-config(1)\n\nNAME\n     pkg-config  -  return  meta  information   about   installed\n     libraries\n<SNIP>\n     PKG_CONFIG_PATH         A   colon-separated   (on   Windows,\n                             semicolon-separated)  list of direc-\n                             tories to search for .pc files.  The\n                             default directory is always searched\n                             after searching the  path  specified\n                             by   PKG_CONFIG_PATH.   The  default\n                             value    of    PKG_CONFIG_PATH    is\n                             libdir/pkgconfig,  where  libdir  is\n                             the lib directory  where  pkg-config\n                             is  installed.  On  Solaris systems,\n                             libdir is /usr/lib.\n\n```\n\n\nPKG_CONFIG_PATH is a colon separated list of paths. Simply overwriting PKG_CONFIG_PATH would make it impossible for someone to get matplotlib to use their version of GTK for example in /usr/local, if they wanted that. \n\nDoing something about the issue with PKG_CONFIG_PATH is clearly better than doing noting at all, but what is best is a bit subjective. I don't have a strong opinion as to what is best. \n\nThe solution here is the most flexible, as it gives the user complete control, but that flexibility does come at some risk. I suspect the risk is quite small, as I doubt many people set PKG_CONFIG_PATH themselves. If they do, they probably know what they are doing :) \n\n\nDave",
+    "body": "Replying to [comment:8 jason]:\n> Replying to [comment:7 drkirkby]:\n> > I meant to overwrite the patch when I corrected the spelling, but forgot, so there is now 9208.2.patch. \n> > \n> > Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? \n\n> \n> Not sage-env.  See #9210 for the patch I talked about.\n> \n> > If so, then this still needs reviewing. \n> > \n\n> \n> Yes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.\n> \n> I didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation will we not want to overwrite that variable?\n> \n> \n\nI must admit, I did consider whether it was appropriate to simply overwrite PKG_CONFIG_PATH and ignore whatever the user puts. But I could see some benefits in allowing the user to set this. \n\n* If I wanted to use a later version of a library that Sage has, I would be able to do so by putting my libraries in a location of my choosing, and let Sage find them first. \n\n* in some cases one might have libraries that Sage lacks, but one wants to use with programs like matplotlib. (GTK could be an exmaple of that). \n\nAnother possibility, is to prepend Sage's path to PKG_CONFIG_PATH, so things in Sage are found first, but others that exist on the system will be found too, since according to the man page of pkg-config on Solaris:\n\n```\nUser Commands                                       pkg-config(1)\n\nNAME\n     pkg-config  -  return  meta  information   about   installed\n     libraries\n<SNIP>\n     PKG_CONFIG_PATH         A   colon-separated   (on   Windows,\n                             semicolon-separated)  list of direc-\n                             tories to search for .pc files.  The\n                             default directory is always searched\n                             after searching the  path  specified\n                             by   PKG_CONFIG_PATH.   The  default\n                             value    of    PKG_CONFIG_PATH    is\n                             libdir/pkgconfig,  where  libdir  is\n                             the lib directory  where  pkg-config\n                             is  installed.  On  Solaris systems,\n                             libdir is /usr/lib.\n\n```\n\nPKG_CONFIG_PATH is a colon separated list of paths. Simply overwriting PKG_CONFIG_PATH would make it impossible for someone to get matplotlib to use their version of GTK for example in /usr/local, if they wanted that. \n\nDoing something about the issue with PKG_CONFIG_PATH is clearly better than doing noting at all, but what is best is a bit subjective. I don't have a strong opinion as to what is best. \n\nThe solution here is the most flexible, as it gives the user complete control, but that flexibility does come at some risk. I suspect the risk is quite small, as I doubt many people set PKG_CONFIG_PATH themselves. If they do, they probably know what they are doing :) \n\n\nDave",
     "created_at": "2010-06-11T10:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -313,17 +307,20 @@ Replying to [comment:8 jason]:
 > > I meant to overwrite the patch when I corrected the spelling, but forgot, so there is now 9208.2.patch. 
 > > 
 > > Are you suggesting this gets reviewed and incorporated into Sage and you write another patch which rewrites sage-env if Sage is moved? 
+
 > 
 > Not sage-env.  See #9210 for the patch I talked about.
 > 
 > > If so, then this still needs reviewing. 
 > > 
+
 > 
 > Yes.  Since I practically had the same patch, but you beat me to posting it, I think the review will be easy.
 > 
 > I didn't check for the existence of PKG_CONFIG_PATH, though.  In what situation will we not want to overwrite that variable?
 > 
 > 
+
 I must admit, I did consider whether it was appropriate to simply overwrite PKG_CONFIG_PATH and ignore whatever the user puts. But I could see some benefits in allowing the user to set this. 
 
 * If I wanted to use a later version of a library that Sage has, I would be able to do so by putting my libraries in a location of my choosing, and let Sage find them first. 
@@ -331,7 +328,6 @@ I must admit, I did consider whether it was appropriate to simply overwrite PKG_
 * in some cases one might have libraries that Sage lacks, but one wants to use with programs like matplotlib. (GTK could be an exmaple of that). 
 
 Another possibility, is to prepend Sage's path to PKG_CONFIG_PATH, so things in Sage are found first, but others that exist on the system will be found too, since according to the man page of pkg-config on Solaris:
-
 
 ```
 User Commands                                       pkg-config(1)
@@ -354,7 +350,6 @@ NAME
 
 ```
 
-
 PKG_CONFIG_PATH is a colon separated list of paths. Simply overwriting PKG_CONFIG_PATH would make it impossible for someone to get matplotlib to use their version of GTK for example in /usr/local, if they wanted that. 
 
 Doing something about the issue with PKG_CONFIG_PATH is clearly better than doing noting at all, but what is best is a bit subjective. I don't have a strong opinion as to what is best. 
@@ -371,7 +366,7 @@ Dave
 archive/issue_comments_086048.json:
 ```json
 {
-    "body": "> Snow leopard has pkg-config (at least, mine does, but it might just come from macports...)\n> \n\nAs far as I can tell, vanilla Snow Leopard doesn't have it unless you get it via Fink or something like that, correct.  (That's the only one I can find.)",
+    "body": "> Snow leopard has pkg-config (at least, mine does, but it might just come from macports...)\n> \n\n\nAs far as I can tell, vanilla Snow Leopard doesn't have it unless you get it via Fink or something like that, correct.  (That's the only one I can find.)",
     "created_at": "2010-06-11T17:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -383,6 +378,7 @@ archive/issue_comments_086048.json:
 > Snow leopard has pkg-config (at least, mine does, but it might just come from macports...)
 > 
 
+
 As far as I can tell, vanilla Snow Leopard doesn't have it unless you get it via Fink or something like that, correct.  (That's the only one I can find.)
 
 
@@ -392,7 +388,7 @@ As far as I can tell, vanilla Snow Leopard doesn't have it unless you get it via
 archive/issue_comments_086049.json:
 ```json
 {
-    "body": "I don't know if this is helpful, but when installing a new mpl spkg (which jason knows about):\n\n```\nBUILDING MATPLOTLIB\n            matplotlib: 1.0.svn\n                python: 2.6.4 (r264:75706, May 19 2010, 16:32:34)  [GCC\n                        4.2.1 (Apple Inc. build 5659)]\n              platform: darwin\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: found, but unknown version (no pkg-config)\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: found, but unknown version (no pkg-config)\n                  Gtk+: no\n                        * Building for Gtk+ requires pygtk; you must be able\n                        * to \"import gtk\" in your build/install environment\n                    Qt: no\n                   Qt4: no\n                 Cairo: no\n\nOPTIONAL DATE/TIMEZONE DEPENDENCIES\n              datetime: present, version unknown\n              dateutil: matplotlib will provide\n                  pytz: 2010h\n\nOPTIONAL USETEX DEPENDENCIES\n                dvipng: no\n           ghostscript: 8.63\n                 latex: no\n\n```\n\nand then, while doing the last extension (matplotlib._png)\n\n```\nld: library not found for -lpng\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nError building matplotlib package.\n```\n\nThis is after installing this patch and #9210 patch.  After moving Sage and trying again, the same thing happened.  After rolling back #9210 and reverting it, same thing.  After then moving Sage back to its original location (which one of the last error message suggested might be causing a problem, it was looking in a nonexistent local/lib at that point) the same thing happened.  After then reverting this patch as well... the same thing happened.  Just FYI.\n\nAnd sage -f the standard mpl package went just fine, even though the same info about pkg-config appeared.  Not sure if this is relevant to this ticket, but I hope it is!",
+    "body": "I don't know if this is helpful, but when installing a new mpl spkg (which jason knows about):\n\n```\nBUILDING MATPLOTLIB\n            matplotlib: 1.0.svn\n                python: 2.6.4 (r264:75706, May 19 2010, 16:32:34)  [GCC\n                        4.2.1 (Apple Inc. build 5659)]\n              platform: darwin\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: found, but unknown version (no pkg-config)\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: found, but unknown version (no pkg-config)\n                  Gtk+: no\n                        * Building for Gtk+ requires pygtk; you must be able\n                        * to \"import gtk\" in your build/install environment\n                    Qt: no\n                   Qt4: no\n                 Cairo: no\n\nOPTIONAL DATE/TIMEZONE DEPENDENCIES\n              datetime: present, version unknown\n              dateutil: matplotlib will provide\n                  pytz: 2010h\n\nOPTIONAL USETEX DEPENDENCIES\n                dvipng: no\n           ghostscript: 8.63\n                 latex: no\n\n```\nand then, while doing the last extension (matplotlib._png)\n\n```\nld: library not found for -lpng\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nError building matplotlib package.\n```\nThis is after installing this patch and #9210 patch.  After moving Sage and trying again, the same thing happened.  After rolling back #9210 and reverting it, same thing.  After then moving Sage back to its original location (which one of the last error message suggested might be causing a problem, it was looking in a nonexistent local/lib at that point) the same thing happened.  After then reverting this patch as well... the same thing happened.  Just FYI.\n\nAnd sage -f the standard mpl package went just fine, even though the same info about pkg-config appeared.  Not sure if this is relevant to this ticket, but I hope it is!",
     "created_at": "2010-06-11T17:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -434,7 +430,6 @@ OPTIONAL USETEX DEPENDENCIES
                  latex: no
 
 ```
-
 and then, while doing the last extension (matplotlib._png)
 
 ```
@@ -443,7 +438,6 @@ collect2: ld returned 1 exit status
 error: command 'g++' failed with exit status 1
 Error building matplotlib package.
 ```
-
 This is after installing this patch and #9210 patch.  After moving Sage and trying again, the same thing happened.  After rolling back #9210 and reverting it, same thing.  After then moving Sage back to its original location (which one of the last error message suggested might be causing a problem, it was looking in a nonexistent local/lib at that point) the same thing happened.  After then reverting this patch as well... the same thing happened.  Just FYI.
 
 And sage -f the standard mpl package went just fine, even though the same info about pkg-config appeared.  Not sure if this is relevant to this ticket, but I hope it is!
@@ -545,7 +539,7 @@ David, can you review #9210, which goes hand-in-hand with this ticket?
 archive/issue_comments_086055.json:
 ```json
 {
-    "body": "Replying to [comment:13 jason]:\n> Looks good to me.  Positive Review.  I'm going to set this as critical (and maybe it should be a blocker), as it is very bad that we link to the system versions of these libraries.\n\nI agree it is bad, but I don't think it quite warrants a blocker, as it does not stop Sage building. (I've marked tickets as blockers before, which actually break a build, but they have had to wait). \n\nBut in general, given the arguments given for including a huge amount in the tarball so we can control exactly what library versions get linked, it is a bit dumb if we don't control it! \n\nI'll look at #9210 now. Unfortunately, it takes a long time to make the binary distribution on my old SPARC, so don't expect a review in the next few hours. \n\nDave",
+    "body": "Replying to [comment:13 jason]:\n> Looks good to me.  Positive Review.  I'm going to set this as critical (and maybe it should be a blocker), as it is very bad that we link to the system versions of these libraries.\n\n\nI agree it is bad, but I don't think it quite warrants a blocker, as it does not stop Sage building. (I've marked tickets as blockers before, which actually break a build, but they have had to wait). \n\nBut in general, given the arguments given for including a huge amount in the tarball so we can control exactly what library versions get linked, it is a bit dumb if we don't control it! \n\nI'll look at #9210 now. Unfortunately, it takes a long time to make the binary distribution on my old SPARC, so don't expect a review in the next few hours. \n\nDave",
     "created_at": "2010-06-11T21:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
@@ -556,6 +550,7 @@ archive/issue_comments_086055.json:
 
 Replying to [comment:13 jason]:
 > Looks good to me.  Positive Review.  I'm going to set this as critical (and maybe it should be a blocker), as it is very bad that we link to the system versions of these libraries.
+
 
 I agree it is bad, but I don't think it quite warrants a blocker, as it does not stop Sage building. (I've marked tickets as blockers before, which actually break a build, but they have had to wait). 
 

@@ -84,7 +84,7 @@ Attachment [calculus_doctest_improvements-part3.patch](tarball://root/attachment
 archive/issue_comments_013380.json:
 ```json
 {
-    "body": "Attachment [trac-2073-calculus_coverage_part4.patch](tarball://root/attachments/some-uuid/ticket2073/trac-2073-calculus_coverage_part4.patch) by @williamstein created at 2008-02-06 11:33:37\n\nAs of patch four, these are the only remaining public (not underscored) functions without proper documentation in the entire calculus directory:\n\n\n```\n\nMissing documentation:\n         * subs(self, *args, **kwds)\n         * substitute_over_ring(self, in_dict=None, ring=None, **kwds)\n         * str(self, bits=None)\n         * maxima_init(x)\n         * sys_init(x, system)\n         * var_cmp(x,y)\n         * CallableSymbolicExpressionRing(args, check=True)\n         * foo(n)\n         * args(self)\n         * plot(self, *args, **kwds)\n         * tex_needs_braces(self)\n         * simplify(self)\n\n\nMissing doctests:\n         * obj(self)\n         * variables(self, vars=tuple([]))\n         * integral(self, x=None, a=None, b=None)\n         * expression(self)\n```\n",
+    "body": "Attachment [trac-2073-calculus_coverage_part4.patch](tarball://root/attachments/some-uuid/ticket2073/trac-2073-calculus_coverage_part4.patch) by @williamstein created at 2008-02-06 11:33:37\n\nAs of patch four, these are the only remaining public (not underscored) functions without proper documentation in the entire calculus directory:\n\n```\n\nMissing documentation:\n         * subs(self, *args, **kwds)\n         * substitute_over_ring(self, in_dict=None, ring=None, **kwds)\n         * str(self, bits=None)\n         * maxima_init(x)\n         * sys_init(x, system)\n         * var_cmp(x,y)\n         * CallableSymbolicExpressionRing(args, check=True)\n         * foo(n)\n         * args(self)\n         * plot(self, *args, **kwds)\n         * tex_needs_braces(self)\n         * simplify(self)\n\n\nMissing doctests:\n         * obj(self)\n         * variables(self, vars=tuple([]))\n         * integral(self, x=None, a=None, b=None)\n         * expression(self)\n```",
     "created_at": "2008-02-06T11:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2073",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_013380.json:
 Attachment [trac-2073-calculus_coverage_part4.patch](tarball://root/attachments/some-uuid/ticket2073/trac-2073-calculus_coverage_part4.patch) by @williamstein created at 2008-02-06 11:33:37
 
 As of patch four, these are the only remaining public (not underscored) functions without proper documentation in the entire calculus directory:
-
 
 ```
 
@@ -121,7 +120,6 @@ Missing doctests:
          * integral(self, x=None, a=None, b=None)
          * expression(self)
 ```
-
 
 
 

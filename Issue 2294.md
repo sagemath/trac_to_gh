@@ -3,7 +3,7 @@
 archive/issues_002294.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
+    "body": "Assignee: @williamstein\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
     "created_at": "2008-02-24T19:18:35Z",
     "labels": [
         "component: interfaces",
@@ -20,14 +20,12 @@ Assignee: @williamstein
 
 We see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.
 
-
 ```
 sage: RR(RDF(sin(1)))
 0.841470984807897
 sage: RR(RDF(sin(1))._interface_init_())
 0.841470984808000
 ```
-
 
 I should have a patch for this very soon.
 
@@ -79,7 +77,7 @@ Attachment [fp-interface-init.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_015186.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\nWow, this is a really important patch to apply ASAP.  \n\nThere is an English typo in a parenthetical remark:\n\n\n```\n \t105\t        computer algebra system.  (This the default function used for\n```\n",
+    "body": "REFEREE REPORT\n\n\nWow, this is a really important patch to apply ASAP.  \n\nThere is an English typo in a parenthetical remark:\n\n```\n \t105\t        computer algebra system.  (This the default function used for\n```",
     "created_at": "2008-02-24T21:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2294",
     "type": "issue_comment",
@@ -95,11 +93,9 @@ Wow, this is a really important patch to apply ASAP.
 
 There is an English typo in a parenthetical remark:
 
-
 ```
  	105	        computer algebra system.  (This the default function used for
 ```
-
 
 
 

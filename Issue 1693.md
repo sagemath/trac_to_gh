@@ -3,7 +3,7 @@
 archive/issues_001693.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @malb\n\napplet is invoked by\n\n```\njmol_applet(500, \"/home/harri/5/cells/204/sage0-size500.jmol\")\n```\n\nbut does not get the new jmol file. possibly just needs a ?\"number\" as with plots/images\n\nIssue created by migration from https://trac.sagemath.org/ticket/1693\n\n",
+    "body": "Assignee: boothby\n\nCC:  @malb\n\napplet is invoked by\n\n```\njmol_applet(500, \"/home/harri/5/cells/204/sage0-size500.jmol\")\n```\nbut does not get the new jmol file. possibly just needs a ?\"number\" as with plots/images\n\nIssue created by migration from https://trac.sagemath.org/ticket/1693\n\n",
     "created_at": "2008-01-05T20:20:07Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ applet is invoked by
 ```
 jmol_applet(500, "/home/harri/5/cells/204/sage0-size500.jmol")
 ```
-
 but does not get the new jmol file. possibly just needs a ?"number" as with plots/images
 
 Issue created by migration from https://trac.sagemath.org/ticket/1693

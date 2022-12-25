@@ -3,7 +3,7 @@
 archive/issues_004290.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
     "created_at": "2008-10-14T22:39:08Z",
     "labels": [
         "component: algebraic geometry",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 This is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:
 
-
 ```
 sage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional
 sage: C=Curve(x^4+x^2*y^2-z^4) 
@@ -30,7 +29,6 @@ sage: E=EllipticCurve_from_plane_curve(C,P)
 sage: E 
 Elliptic Curve defined by y^2  = x^3 + 4*x over Rational Field
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4290
@@ -186,7 +184,7 @@ I added the new function to all.py so that it is in the global namespace.  I am 
 archive/issue_comments_031344.json:
 ```json
 {
-    "body": "The doctests should be marked:\n\n```\n   # optional - magma\n```\n\nso when one does\n\n```\n  sage -t -only_optional=magma\n```\n\nthey get run.",
+    "body": "The doctests should be marked:\n\n```\n   # optional - magma\n```\nso when one does\n\n```\n  sage -t -only_optional=magma\n```\nthey get run.",
     "created_at": "2009-04-12T02:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
@@ -200,13 +198,11 @@ The doctests should be marked:
 ```
    # optional - magma
 ```
-
 so when one does
 
 ```
   sage -t -only_optional=magma
 ```
-
 they get run.
 
 

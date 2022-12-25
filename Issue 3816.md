@@ -3,7 +3,7 @@
 archive/issues_003816.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nthis was in there forever, but for some reason it causes a warning...\n\nFrom Cremona:\n\n```\n\nI have a successful build of 3.1.alpha1.  When I make a clone, the\n*first* time I run sage (by typing ./sage in SAGE_ROOT right after the\nsage -clone) I get this message after the banner and before the first\nprompt:\n\n/home/john/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py:1762:\nSyntaxWarning: name 'notebook' is used prior to global declaration\n global notebook\n\nBut if I then quit and restart, the message does not recur.\n\nWhat gives?\n\nJohn\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3816\n\n",
+    "body": "Assignee: boothby\n\nthis was in there forever, but for some reason it causes a warning...\n\nFrom Cremona:\n\n```\n\nI have a successful build of 3.1.alpha1.  When I make a clone, the\n*first* time I run sage (by typing ./sage in SAGE_ROOT right after the\nsage -clone) I get this message after the banner and before the first\nprompt:\n\n/home/john/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py:1762:\nSyntaxWarning: name 'notebook' is used prior to global declaration\n global notebook\n\nBut if I then quit and restart, the message does not recur.\n\nWhat gives?\n\nJohn\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3816\n\n",
     "created_at": "2008-08-12T13:16:44Z",
     "labels": [
         "component: notebook",
@@ -41,7 +41,6 @@ What gives?
 John
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3816
 

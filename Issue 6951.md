@@ -53,7 +53,7 @@ install log for Sage 4.1.2.alpha1 on t2.math with GCC 4.4.1
 archive/issue_comments_057377.json:
 ```json
 {
-    "body": "Here is the relevant portion:\n\n\n```\nfor file in *.h; do \\\n../.././install-sh -c $file /scratch/mvngu/sage-4.1.2.alpha1-6945-readline-cliquer-ecl/local/include/singular; \\\ndone\n/bin/sh: ../.././install-sh: not found\n```\n\n\nIIRC Dave fixed this before but I must have missed to include his fix (the update was a bit chaotic because quite a few fixed from different people went in). David, would you mind reminding me how to fix this?",
+    "body": "Here is the relevant portion:\n\n```\nfor file in *.h; do \\\n../.././install-sh -c $file /scratch/mvngu/sage-4.1.2.alpha1-6945-readline-cliquer-ecl/local/include/singular; \\\ndone\n/bin/sh: ../.././install-sh: not found\n```\n\nIIRC Dave fixed this before but I must have missed to include his fix (the update was a bit chaotic because quite a few fixed from different people went in). David, would you mind reminding me how to fix this?",
     "created_at": "2009-09-17T21:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6951",
     "type": "issue_comment",
@@ -64,14 +64,12 @@ archive/issue_comments_057377.json:
 
 Here is the relevant portion:
 
-
 ```
 for file in *.h; do \
 ../.././install-sh -c $file /scratch/mvngu/sage-4.1.2.alpha1-6945-readline-cliquer-ecl/local/include/singular; \
 done
 /bin/sh: ../.././install-sh: not found
 ```
-
 
 IIRC Dave fixed this before but I must have missed to include his fix (the update was a bit chaotic because quite a few fixed from different people went in). David, would you mind reminding me how to fix this?
 

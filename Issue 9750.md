@@ -112,7 +112,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095326.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> Is there a good reference, say in the PARI reference manual, for the GRH assumptions?\n\nGood point, I added a reference to the PARI/GP User's Guide in the bnfcertify() documentation.  The new patch replaces the previous two patches.  John, can you re-review?",
+    "body": "Replying to [comment:4 cremona]:\n> Is there a good reference, say in the PARI reference manual, for the GRH assumptions?\n\n\nGood point, I added a reference to the PARI/GP User's Guide in the bnfcertify() documentation.  The new patch replaces the previous two patches.  John, can you re-review?",
     "created_at": "2010-08-15T19:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
@@ -123,6 +123,7 @@ archive/issue_comments_095326.json:
 
 Replying to [comment:4 cremona]:
 > Is there a good reference, say in the PARI reference manual, for the GRH assumptions?
+
 
 Good point, I added a reference to the PARI/GP User's Guide in the bnfcertify() documentation.  The new patch replaces the previous two patches.  John, can you re-review?
 

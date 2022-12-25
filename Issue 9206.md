@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9206
 archive/issue_comments_086028.json:
 ```json
 {
-    "body": "This example illustrates the effect of this patch:\n\n```\nsage: time GF(next_prime(10^40)^5,'a')\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.52 s\nWall time: 0.52 s\nFinite Field in a of size 10000000000000000000000000000000000000121^5\nsage: proof.arithmetic(False)\nsage: time GF(next_prime(10^40)^5,'a')\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\nFinite Field in a of size 10000000000000000000000000000000000000121^5\n```\n\n\nUnfortunately, it does *not* address this problem that David Harvey mentioned.  However, it has a similar \"flavor\":\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(16219299585*2^16612 - 1))\n```\n\nDavid Harvey: \"Maybe not literally forever, but I got sick of waiting. Should be instantaneous.\"",
+    "body": "This example illustrates the effect of this patch:\n\n```\nsage: time GF(next_prime(10^40)^5,'a')\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.52 s\nWall time: 0.52 s\nFinite Field in a of size 10000000000000000000000000000000000000121^5\nsage: proof.arithmetic(False)\nsage: time GF(next_prime(10^40)^5,'a')\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\nFinite Field in a of size 10000000000000000000000000000000000000121^5\n```\n\nUnfortunately, it does *not* address this problem that David Harvey mentioned.  However, it has a similar \"flavor\":\n\n```\nsage: R.<x> = PolynomialRing(Integers(16219299585*2^16612 - 1))\n```\nDavid Harvey: \"Maybe not literally forever, but I got sick of waiting. Should be instantaneous.\"",
     "created_at": "2010-07-07T20:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
@@ -53,14 +53,11 @@ Wall time: 0.07 s
 Finite Field in a of size 10000000000000000000000000000000000000121^5
 ```
 
-
 Unfortunately, it does *not* address this problem that David Harvey mentioned.  However, it has a similar "flavor":
-
 
 ```
 sage: R.<x> = PolynomialRing(Integers(16219299585*2^16612 - 1))
 ```
-
 David Harvey: "Maybe not literally forever, but I got sick of waiting. Should be instantaneous."
 
 

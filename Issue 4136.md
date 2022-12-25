@@ -3,7 +3,7 @@
 archive/issues_004136.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis was reported on **[sage-support]**:\n\n```\nhi there,\n\nthis is going to be even worse than my recent bug report in terms of\nreproducing the error. I guess i'll start with describing what\nhappens, and then if someone tells me that it's a bug and not a\nfeature, then i'll try to get a minimal example.\n\nSo I've got a polynomial ring with a few dozens variables, over a\ncyclotomic field, and i've got an ideal J with hundreds of generators.\nJ contains at least y9 + y12. Then i got something like:\n\nsage: J.reduce(y9 - y12)\n2*y9   #which is fine\n\nsage: J.reduce(y13*y15)\ny13*y15 #why not\n\nsage: J.reduce(y13*y15 + y9 - y12)\ny13*y15 + y9 - y12\n\nNow what's up with that ? shouldn't it be y13*y15 + 2*y9 ? that's what\ni expect from the term 'reduction' anyway. Is this normal or is it a\nbug ? if it's a bug, could it influence the equivalence x in J iff\nJ.reduce(x) == 0 ?\n\nSo if this is a bug i'll give you more details.\n\nthanks!\nPierre\n```\n\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5\n\n```\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4136\n\n",
+    "body": "Assignee: @malb\n\nThis was reported on **[sage-support]**:\n\n```\nhi there,\n\nthis is going to be even worse than my recent bug report in terms of\nreproducing the error. I guess i'll start with describing what\nhappens, and then if someone tells me that it's a bug and not a\nfeature, then i'll try to get a minimal example.\n\nSo I've got a polynomial ring with a few dozens variables, over a\ncyclotomic field, and i've got an ideal J with hundreds of generators.\nJ contains at least y9 + y12. Then i got something like:\n\nsage: J.reduce(y9 - y12)\n2*y9   #which is fine\n\nsage: J.reduce(y13*y15)\ny13*y15 #why not\n\nsage: J.reduce(y13*y15 + y9 - y12)\ny13*y15 + y9 - y12\n\nNow what's up with that ? shouldn't it be y13*y15 + 2*y9 ? that's what\ni expect from the term 'reduction' anyway. Is this normal or is it a\nbug ? if it's a bug, could it influence the equivalence x in J iff\nJ.reduce(x) == 0 ?\n\nSo if this is a bug i'll give you more details.\n\nthanks!\nPierre\n```\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5\n\n```\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4136\n\n",
     "created_at": "2008-09-16T17:53:33Z",
     "labels": [
         "component: commutative algebra",
@@ -52,13 +52,11 @@ thanks!
 Pierre
 ```
 
-
 http://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5
 
 ```
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4136
@@ -108,7 +106,7 @@ it's ok.
 archive/issue_comments_029970.json:
 ```json
 {
-    "body": "Mhhh, what are the patch dependencies here?\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0/devel/sage$ patch -p1  < trac_4136_tail_reduce.patch \npatching file sage/rings/polynomial/multi_polynomial_element.py\nHunk #1 FAILED at 1485.\nHunk #2 FAILED at 1511.\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_element.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Mhhh, what are the patch dependencies here?\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0/devel/sage$ patch -p1  < trac_4136_tail_reduce.patch \npatching file sage/rings/polynomial/multi_polynomial_element.py\nHunk #1 FAILED at 1485.\nHunk #2 FAILED at 1511.\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_element.py.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-20T11:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4136",
     "type": "issue_comment",
@@ -126,7 +124,6 @@ Hunk #1 FAILED at 1485.
 Hunk #2 FAILED at 1511.
 2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_element.py.rej
 ```
-
 
 Cheers,
 

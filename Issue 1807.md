@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1807
 archive/issue_comments_011403.json:
 ```json
 {
-    "body": "Attachment [1807-doc.patch](tarball://root/attachments/some-uuid/ticket1807/1807-doc.patch) by @mwhansen created at 2008-01-17 20:20:06\n\nAlso, the following commands need to be run under ref/\n\n\n\n```\ntouch sage.combinat.sf.sfa.tex\ntouch sage.combinat.sf.kfpoly.tex\ntouch sage.combinat.sf.hall-littlewood.tex\n```\n",
+    "body": "Attachment [1807-doc.patch](tarball://root/attachments/some-uuid/ticket1807/1807-doc.patch) by @mwhansen created at 2008-01-17 20:20:06\n\nAlso, the following commands need to be run under ref/\n\n\n```\ntouch sage.combinat.sf.sfa.tex\ntouch sage.combinat.sf.kfpoly.tex\ntouch sage.combinat.sf.hall-littlewood.tex\n```",
     "created_at": "2008-01-17T20:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1807",
     "type": "issue_comment",
@@ -46,13 +46,11 @@ Attachment [1807-doc.patch](tarball://root/attachments/some-uuid/ticket1807/1807
 Also, the following commands need to be run under ref/
 
 
-
 ```
 touch sage.combinat.sf.sfa.tex
 touch sage.combinat.sf.kfpoly.tex
 touch sage.combinat.sf.hall-littlewood.tex
 ```
-
 
 
 

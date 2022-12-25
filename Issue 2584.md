@@ -3,7 +3,7 @@
 archive/issues_002584.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nThis causes a bug when printing:\n\n\n```\nshow([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n```\n\n\nNotice the extra \",\". A list of one element doesn't have the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2584\n\n",
+    "body": "Assignee: @jasongrout\n\nThis causes a bug when printing:\n\n```\nshow([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n```\n\nNotice the extra \",\". A list of one element doesn't have the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2584\n\n",
     "created_at": "2008-03-18T11:51:35Z",
     "labels": [
         "component: graphics",
@@ -21,11 +21,9 @@ Assignee: @jasongrout
 
 This causes a bug when printing:
 
-
 ```
 show([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])
 ```
-
 
 Notice the extra ",". A list of one element doesn't have the same problem.
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2584
 archive/issue_comments_017645.json:
 ```json
 {
-    "body": "The bug is in the latex function:\n\n\n```\nsage: latex([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n\\begin{array}{l}[\\left(\\begin{array}{rrr}\n0 & 1 & 2 \\\\\n3 & 4 & 5 \\\\\n6 & 7 & 8\n\\end{array}\\right),\\\\\n\\left(\\begin{array}{rrr}\n0 & 1 & 2 \\\\\n3 & 4 & 5 \\\\\n6 & 7 & 8\n\\end{array}\\right)],\\\\\n\\end{array}\n```\n",
+    "body": "The bug is in the latex function:\n\n```\nsage: latex([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n\\begin{array}{l}[\\left(\\begin{array}{rrr}\n0 & 1 & 2 \\\\\n3 & 4 & 5 \\\\\n6 & 7 & 8\n\\end{array}\\right),\\\\\n\\left(\\begin{array}{rrr}\n0 & 1 & 2 \\\\\n3 & 4 & 5 \\\\\n6 & 7 & 8\n\\end{array}\\right)],\\\\\n\\end{array}\n```",
     "created_at": "2008-03-18T17:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
@@ -50,7 +48,6 @@ archive/issue_comments_017645.json:
 ```
 
 The bug is in the latex function:
-
 
 ```
 sage: latex([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])
@@ -66,7 +63,6 @@ sage: latex([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])
 \end{array}\right)],\\
 \end{array}
 ```
-
 
 
 
@@ -147,7 +143,7 @@ The patch fixes the problem.
 archive/issue_comments_017650.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> The patch fixes the problem.\n\nWhile the patch looks like the fix to this problem shouldn't we also add a doctest that verifies that the bug has been fixed? Not to be pedantic ... well, I am :=)\n\nGreat job Jason.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jason]:\n> The patch fixes the problem.\n\n\nWhile the patch looks like the fix to this problem shouldn't we also add a doctest that verifies that the bug has been fixed? Not to be pedantic ... well, I am :=)\n\nGreat job Jason.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-18T20:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
@@ -158,6 +154,7 @@ archive/issue_comments_017650.json:
 
 Replying to [comment:4 jason]:
 > The patch fixes the problem.
+
 
 While the patch looks like the fix to this problem shouldn't we also add a doctest that verifies that the bug has been fixed? Not to be pedantic ... well, I am :=)
 

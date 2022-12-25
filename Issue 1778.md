@@ -98,7 +98,7 @@ I implemented this in the attached. It makes both the old and new style of plot(
 archive/issue_comments_011230.json:
 ```json
 {
-    "body": "That this doesn't work anymore is definitely a bug:\n\n```\nsage: plot(sin(2), (x,0,10*pi))\nBOOM!\n```\n\n\nLikewise for \n\n```\nsage: plot(sin(2), 0,10*pi)\nBOOM\n```\n\n\nI'll try to fix this....",
+    "body": "That this doesn't work anymore is definitely a bug:\n\n```\nsage: plot(sin(2), (x,0,10*pi))\nBOOM!\n```\n\nLikewise for \n\n```\nsage: plot(sin(2), 0,10*pi)\nBOOM\n```\n\nI'll try to fix this....",
     "created_at": "2008-01-15T05:52:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
@@ -114,14 +114,12 @@ sage: plot(sin(2), (x,0,10*pi))
 BOOM!
 ```
 
-
 Likewise for 
 
 ```
 sage: plot(sin(2), 0,10*pi)
 BOOM
 ```
-
 
 I'll try to fix this....
 

@@ -103,7 +103,7 @@ This is a positive review, subject to fixing doctests, either with approval of t
 archive/issue_comments_046378.json:
 ```json
 {
-    "body": "Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by @williamstein created at 2009-04-27 12:45:59\n\n> This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, \n> or by further changes to problematic docstrings. \n\nWell, I applied your patch, which I like, and ran \"make ptestlong\" and it passes.  So positive review. \n\nRegarding credit, if anybody notices this, rbeezer should also get credit for this patch.",
+    "body": "Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by @williamstein created at 2009-04-27 12:45:59\n\n> This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, \n> or by further changes to problematic docstrings. \n\n\nWell, I applied your patch, which I like, and ran \"make ptestlong\" and it passes.  So positive review. \n\nRegarding credit, if anybody notices this, rbeezer should also get credit for this patch.",
     "created_at": "2009-04-27T12:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticke
 
 > This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, 
 > or by further changes to problematic docstrings. 
+
 
 Well, I applied your patch, which I like, and ran "make ptestlong" and it passes.  So positive review. 
 

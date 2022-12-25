@@ -3,7 +3,7 @@
 archive/issues_000056.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWe're not sure what to make of this yet:\n\n\n```\nMAGMA:\nwas@sage:~$ magma\nMagma V2.12-20    Wed Sep 13 2006 16:02:30 on sage     [Seed = 4122492641]\nType ? for help.  Type <Ctrl>-D to quit.\n> two := 2;\n> A := [0..10^5-1];\n> time B := [i + two : i in A];\nTime: 0.030 \n\nSAGE int's:\n\nsage: two=int(2)\nsage: A = range(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n\nSAGE GMP ints:\n\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s\nWall time: 0.37\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/56\n\n",
+    "body": "Assignee: somebody\n\nWe're not sure what to make of this yet:\n\n```\nMAGMA:\nwas@sage:~$ magma\nMagma V2.12-20    Wed Sep 13 2006 16:02:30 on sage     [Seed = 4122492641]\nType ? for help.  Type <Ctrl>-D to quit.\n> two := 2;\n> A := [0..10^5-1];\n> time B := [i + two : i in A];\nTime: 0.030 \n\nSAGE int's:\n\nsage: two=int(2)\nsage: A = range(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n\nSAGE GMP ints:\n\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s\nWall time: 0.37\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/56\n\n",
     "created_at": "2006-09-13T23:40:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_000056.json:
 Assignee: somebody
 
 We're not sure what to make of this yet:
-
 
 ```
 MAGMA:
@@ -47,7 +46,6 @@ sage: time B = [i+two for i in A]
 CPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s
 Wall time: 0.37
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/56
 
@@ -99,7 +97,7 @@ Michael
 archive/issue_comments_000296.json:
 ```json
 {
-    "body": "Some numbers with the latest SAGE and latest magma:\n\n```\nsage: sage: A = srange(10^6)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.22 s, sys: 0.69 s, total: 0.91 s\nWall time: 0.92\n\n> A := [0..10^6-1];\n> time B := [i + two : i in A];\nTime: 0.220\n```\n",
+    "body": "Some numbers with the latest SAGE and latest magma:\n\n```\nsage: sage: A = srange(10^6)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.22 s, sys: 0.69 s, total: 0.91 s\nWall time: 0.92\n\n> A := [0..10^6-1];\n> time B := [i + two : i in A];\nTime: 0.220\n```",
     "created_at": "2007-08-23T06:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
@@ -123,13 +121,12 @@ Time: 0.220
 
 
 
-
 ---
 
 archive/issue_comments_000297.json:
 ```json
 {
-    "body": "Python\n\n```\nsage: A = range(10^6)\nsage: two = int(2)\nsage: time B = [i+two for i in A]\nCPU times: user 0.47 s, sys: 0.03 s, total: 0.50 s\n```\n",
+    "body": "Python\n\n```\nsage: A = range(10^6)\nsage: two = int(2)\nsage: time B = [i+two for i in A]\nCPU times: user 0.47 s, sys: 0.03 s, total: 0.50 s\n```",
     "created_at": "2007-08-23T06:34:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
@@ -146,7 +143,6 @@ sage: two = int(2)
 sage: time B = [i+two for i in A]
 CPU times: user 0.47 s, sys: 0.03 s, total: 0.50 s
 ```
-
 
 
 
@@ -172,7 +168,7 @@ archive/issue_events_000109.json:
 archive/issue_comments_000298.json:
 ```json
 {
-    "body": "on 2.10.2 on my system, comparing the original ticket:\n\n\n```\nsage: sage: two=int(2)\nsage: sage: A = range(10^5)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\nsage: sage: two=2\nsage: sage: A = srange(10^5)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.06 s, sys: 0.01 s, total: 0.07 s\nWall time: 0.07\n```\n\n\n\nand comparing the comments (with 10^6, not 10^5)\n\n\n```\nsage: sage: A = range(10^6)\nsage: sage: two = int(2)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.32 s, sys: 0.01 s, total: 0.33 s\nWall time: 0.33\nsage: two=2\nsage: sage: sage: A = srange(10^6)\nsage: sage: sage: time B = [i+two for i in A]\nCPU times: user 0.54 s, sys: 0.05 s, total: 0.60 s\nWall time: 0.60\n```\n\n\nSo the issue seems to be not to show up like the original post, but I'm still seeing speed decreases as pointed out in the comments.",
+    "body": "on 2.10.2 on my system, comparing the original ticket:\n\n```\nsage: sage: two=int(2)\nsage: sage: A = range(10^5)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\nsage: sage: two=2\nsage: sage: A = srange(10^5)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.06 s, sys: 0.01 s, total: 0.07 s\nWall time: 0.07\n```\n\n\nand comparing the comments (with 10^6, not 10^5)\n\n```\nsage: sage: A = range(10^6)\nsage: sage: two = int(2)\nsage: sage: time B = [i+two for i in A]\nCPU times: user 0.32 s, sys: 0.01 s, total: 0.33 s\nWall time: 0.33\nsage: two=2\nsage: sage: sage: A = srange(10^6)\nsage: sage: sage: time B = [i+two for i in A]\nCPU times: user 0.54 s, sys: 0.05 s, total: 0.60 s\nWall time: 0.60\n```\n\nSo the issue seems to be not to show up like the original post, but I'm still seeing speed decreases as pointed out in the comments.",
     "created_at": "2008-03-03T23:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
@@ -182,7 +178,6 @@ archive/issue_comments_000298.json:
 ```
 
 on 2.10.2 on my system, comparing the original ticket:
-
 
 ```
 sage: sage: two=int(2)
@@ -198,9 +193,7 @@ Wall time: 0.07
 ```
 
 
-
 and comparing the comments (with 10^6, not 10^5)
-
 
 ```
 sage: sage: A = range(10^6)
@@ -215,7 +208,6 @@ CPU times: user 0.54 s, sys: 0.05 s, total: 0.60 s
 Wall time: 0.60
 ```
 
-
 So the issue seems to be not to show up like the original post, but I'm still seeing speed decreases as pointed out in the comments.
 
 
@@ -225,7 +217,7 @@ So the issue seems to be not to show up like the original post, but I'm still se
 archive/issue_comments_000299.json:
 ```json
 {
-    "body": "TODAY we have with Magma2.14 and Sage on OS X 10 32-bit core2duo.\n\n\n```\ntwo := 2;                      \nA := [0..10^5-1];             \ntime B := [i + two : i in A]; \n```\n\n\n\n```\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\n```\n\n\n\n\nThe *right* benchmark:\n\n```\ntwo := 2;                      \nA := [0..10^5-1];  \ntime for i in A do b := i + two; end for;\nTime: 0.020\n```\n\n\nIn Sage:\n\n\n```\n%cython\nfrom sage.all import srange, Integer\nfrom sage.rings.integer cimport Integer\n\ncdef object two=Integer(2)\ncdef list A = srange(Integer(100000))\n\ndef foo4():\n   for i in A:\n      (<Integer>two)._add_c(<Integer>i)\n```\n\n\nThis takes 0.17s, beating magma.\n\nAnd in pure python\n\n```\ntwo=2\nA = srange(100000)\ndef bar():\n    for i in A:\n        c = i + two\n\ntimeit('bar()')\n///\n25 loops, best of 3: 24.6 ms per loop\n```\n",
+    "body": "TODAY we have with Magma2.14 and Sage on OS X 10 32-bit core2duo.\n\n```\ntwo := 2;                      \nA := [0..10^5-1];             \ntime B := [i + two : i in A]; \n```\n\n```\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\n```\n\n\n\nThe *right* benchmark:\n\n```\ntwo := 2;                      \nA := [0..10^5-1];  \ntime for i in A do b := i + two; end for;\nTime: 0.020\n```\n\nIn Sage:\n\n```\n%cython\nfrom sage.all import srange, Integer\nfrom sage.rings.integer cimport Integer\n\ncdef object two=Integer(2)\ncdef list A = srange(Integer(100000))\n\ndef foo4():\n   for i in A:\n      (<Integer>two)._add_c(<Integer>i)\n```\n\nThis takes 0.17s, beating magma.\n\nAnd in pure python\n\n```\ntwo=2\nA = srange(100000)\ndef bar():\n    for i in A:\n        c = i + two\n\ntimeit('bar()')\n///\n25 loops, best of 3: 24.6 ms per loop\n```",
     "created_at": "2008-06-16T00:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
@@ -236,14 +228,11 @@ archive/issue_comments_000299.json:
 
 TODAY we have with Magma2.14 and Sage on OS X 10 32-bit core2duo.
 
-
 ```
 two := 2;                      
 A := [0..10^5-1];             
 time B := [i + two : i in A]; 
 ```
-
-
 
 ```
 sage: two=2
@@ -251,7 +240,6 @@ sage: A = srange(10^5)
 sage: time B = [i+two for i in A]
 CPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s
 ```
-
 
 
 
@@ -264,9 +252,7 @@ time for i in A do b := i + two; end for;
 Time: 0.020
 ```
 
-
 In Sage:
-
 
 ```
 %cython
@@ -280,7 +266,6 @@ def foo4():
    for i in A:
       (<Integer>two)._add_c(<Integer>i)
 ```
-
 
 This takes 0.17s, beating magma.
 
@@ -297,7 +282,6 @@ timeit('bar()')
 ///
 25 loops, best of 3: 24.6 ms per loop
 ```
-
 
 
 

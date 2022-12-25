@@ -3,7 +3,7 @@
 archive/issues_008410.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein\n\nRun the following:\n\n\n```\n\n@parallel(4)\ndef sleeper(x):\n    sleep(x)\n\nfor _ in sleeper([10]*100):\n    pass\n\n```\n\n\nand interrupt it with ctrl-c (or esc in the notebook).   We get\n\n\n```\nKilling any remaining workers...\n[Errno 3] No such process\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/boothby/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/use_fork.pyc in __call__(self, f, inputs)\n     98                         signal.alarm(int(walltime() - oldest)+1)\n     99                     try:\n--> 100                         pid = os.wait()[0]\n    101                         signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    102                     except RuntimeError:\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7 \n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10 \n     11 def my_sigfpe(x, n):\n\nKeyboardInterrupt: \n```\n \n\nand then, let's restart the computation:\n\n\n```\nsage: for _ in sleeper([10]*100):\n    print \"hello\"\n    pass\n....: \n15775\n[Errno 39] Directory not empty: '/home/boothby/.sage/temp/sage.math.washington.edu/15401/dir_0'\nKilling any remaining workers...\n```\n\n\nAll I can do here is restart Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8410\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein\n\nRun the following:\n\n```\n\n@parallel(4)\ndef sleeper(x):\n    sleep(x)\n\nfor _ in sleeper([10]*100):\n    pass\n\n```\n\nand interrupt it with ctrl-c (or esc in the notebook).   We get\n\n```\nKilling any remaining workers...\n[Errno 3] No such process\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/boothby/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/use_fork.pyc in __call__(self, f, inputs)\n     98                         signal.alarm(int(walltime() - oldest)+1)\n     99                     try:\n--> 100                         pid = os.wait()[0]\n    101                         signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    102                     except RuntimeError:\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7 \n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10 \n     11 def my_sigfpe(x, n):\n\nKeyboardInterrupt: \n``` \n\nand then, let's restart the computation:\n\n```\nsage: for _ in sleeper([10]*100):\n    print \"hello\"\n    pass\n....: \n15775\n[Errno 39] Directory not empty: '/home/boothby/.sage/temp/sage.math.washington.edu/15401/dir_0'\nKilling any remaining workers...\n```\n\nAll I can do here is restart Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8410\n\n",
     "created_at": "2010-03-01T17:30:52Z",
     "labels": [
         "component: performance",
@@ -22,7 +22,6 @@ CC:  wstein
 
 Run the following:
 
-
 ```
 
 @parallel(4)
@@ -34,9 +33,7 @@ for _ in sleeper([10]*100):
 
 ```
 
-
 and interrupt it with ctrl-c (or esc in the notebook).   We get
-
 
 ```
 Killing any remaining workers...
@@ -61,11 +58,9 @@ KeyboardInterrupt                         Traceback (most recent call last)
      11 def my_sigfpe(x, n):
 
 KeyboardInterrupt: 
-```
- 
+``` 
 
 and then, let's restart the computation:
-
 
 ```
 sage: for _ in sleeper([10]*100):
@@ -76,7 +71,6 @@ sage: for _ in sleeper([10]*100):
 [Errno 39] Directory not empty: '/home/boothby/.sage/temp/sage.math.washington.edu/15401/dir_0'
 Killing any remaining workers...
 ```
-
 
 All I can do here is restart Sage.
 
@@ -92,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8410
 archive/issue_comments_075224.json:
 ```json
 {
-    "body": "First remark: This fails *exactly* the same on the command line.  Also the error is now:\n\n```\nsage: for _ in sleeper([10]*100):\n....:         pass\n....: \n91260\nKilling any remaining workers...\n```\n",
+    "body": "First remark: This fails *exactly* the same on the command line.  Also the error is now:\n\n```\nsage: for _ in sleeper([10]*100):\n....:         pass\n....: \n91260\nKilling any remaining workers...\n```",
     "created_at": "2010-06-24T05:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
@@ -110,7 +104,6 @@ sage: for _ in sleeper([10]*100):
 91260
 Killing any remaining workers...
 ```
-
 
 
 

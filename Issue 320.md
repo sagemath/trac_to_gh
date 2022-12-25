@@ -3,7 +3,7 @@
 archive/issues_000320.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: RealField.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/gauss-manin-de/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: descriptor 'is_field' of 'sage.rings.ring.Field' object needs an argument\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/320\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: RealField.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/gauss-manin-de/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: descriptor 'is_field' of 'sage.rings.ring.Field' object needs an argument\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/320\n\n",
     "created_at": "2007-03-14T04:58:31Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_000320.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: RealField.is_field()
 ---------------------------------------------------------------------------
@@ -29,7 +28,6 @@ sage: RealField.is_field()
 <type 'exceptions.TypeError'>: descriptor 'is_field' of 'sage.rings.ring.Field' object needs an argument
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/320

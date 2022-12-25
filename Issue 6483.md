@@ -74,7 +74,7 @@ Test worksheet.
 archive/issue_comments_052315.json:
 ```json
 {
-    "body": "I've attached a preliminary workaround.  Suggested directions:\n\n* Save `cmmi10.js` as `$SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js`\n* Around line 1750 of `$SAGE_ROOT/devel/sage/sage/server/notebook/notebook.py`, replace\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n```\n\nwith\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n            head += '<script type=\"text/javascript\">jsMath.Setup.UserEvent[\"pre-font\"] = function () { jsMath.Setup.Script(\"cmmi10.js\"); };</script>\\n'\n```\n\n* `sage -br`\n* Optional tests: Load and execute `cmmi10.txt` as a worksheet in the notebook.\n\nThis seems to work for me, but I haven't accounted for every character.  Feel free to improve the code or tests!",
+    "body": "I've attached a preliminary workaround.  Suggested directions:\n\n* Save `cmmi10.js` as `$SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js`\n* Around line 1750 of `$SAGE_ROOT/devel/sage/sage/server/notebook/notebook.py`, replace\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n```\nwith\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n            head += '<script type=\"text/javascript\">jsMath.Setup.UserEvent[\"pre-font\"] = function () { jsMath.Setup.Script(\"cmmi10.js\"); };</script>\\n'\n```\n* `sage -br`\n* Optional tests: Load and execute `cmmi10.txt` as a worksheet in the notebook.\n\nThis seems to work for me, but I haven't accounted for every character.  Feel free to improve the code or tests!",
     "created_at": "2009-07-08T13:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
@@ -91,14 +91,12 @@ I've attached a preliminary workaround.  Suggested directions:
 ```
             head += '<script type="text/javascript" src="/javascript_local/jsmath/jsMath.js"></script>\n'
 ```
-
 with
 
 ```
             head += '<script type="text/javascript" src="/javascript_local/jsmath/jsMath.js"></script>\n'
             head += '<script type="text/javascript">jsMath.Setup.UserEvent["pre-font"] = function () { jsMath.Setup.Script("cmmi10.js"); };</script>\n'
 ```
-
 * `sage -br`
 * Optional tests: Load and execute `cmmi10.txt` as a worksheet in the notebook.
 

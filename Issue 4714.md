@@ -3,7 +3,7 @@
 archive/issues_004714.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jhpalmieri @TimDumol @williamstein\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri @TimDumol @williamstein\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
     "created_at": "2008-12-05T10:10:42Z",
     "labels": [
         "component: notebook",
@@ -21,7 +21,6 @@ Assignee: boothby
 CC:  @jhpalmieri @TimDumol @williamstein
 
 From http://groups.google.com/group/sage-support/t/178d0bd277044918
-
 
 ```
 Yes, that looks correct.  I'm not sure why people are getting the 
@@ -58,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4714
 archive/issue_comments_035467.json:
 ```json
 {
-    "body": "Copied from [comment:ticket:5653:27 jason]:\n> Replying to [comment:ticket:5653:24 mpatel]:\n> \n> > A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\n> > but I think notebook.py generates the macro list on-the-fly.\n> \n> Davide (author of jsmath) sent these comments about the above paragraph:\n> \n> Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.",
+    "body": "Copied from [comment:ticket:5653:27 jason]:\n> Replying to [comment:ticket:5653:24 mpatel]:\n> \n> > A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\n> > but I think notebook.py generates the macro list on-the-fly.\n\n> \n> Davide (author of jsmath) sent these comments about the above paragraph:\n> \n> Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.",
     "created_at": "2009-05-07T00:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -72,6 +71,7 @@ Copied from [comment:ticket:5653:27 jason]:
 > 
 > > A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as "torn out" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),
 > > but I think notebook.py generates the macro list on-the-fly.
+
 > 
 > Davide (author of jsmath) sent these comments about the above paragraph:
 > 
@@ -181,7 +181,7 @@ After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static`
 archive/issue_comments_035473.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?\nSee #6614 for a potential resolution.",
+    "body": "Replying to [comment:5 mpatel]:\n> After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?\n\nSee #6614 for a potential resolution.",
     "created_at": "2009-08-02T21:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -192,6 +192,7 @@ archive/issue_comments_035473.json:
 
 Replying to [comment:5 mpatel]:
 > After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?
+
 See #6614 for a potential resolution.
 
 
@@ -460,7 +461,7 @@ I've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my f
 archive/issue_comments_035487.json:
 ```json
 {
-    "body": "Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,\n\n```js\n    macros: {\n       {{ jsmath_macros|join(',\\n') }}\n    },\n```\n\nin `jsmath.js` (cf. #6673).",
+    "body": "Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,\n\n```js\n    macros: {\n       {{ jsmath_macros|join(',\\n') }}\n    },\n```\nin `jsmath.js` (cf. #6673).",
     "created_at": "2009-10-24T19:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -476,7 +477,6 @@ Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,
        {{ jsmath_macros|join(',\n') }}
     },
 ```
-
 in `jsmath.js` (cf. #6673).
 
 
@@ -627,7 +627,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_035493.json:
 ```json
 {
-    "body": "Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by @qed777 created at 2009-11-26 06:33:37\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by @qed777 created at 2009-11-26 06:33:37\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```",
     "created_at": "2009-11-26T06:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
@@ -655,7 +655,6 @@ sagenb-7495.patch
 sagenb_3849.patch
 trac_4714-sagenb_jsmath_init_v2.patch
 ```
-
 
 
 

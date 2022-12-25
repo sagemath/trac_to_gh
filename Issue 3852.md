@@ -131,7 +131,7 @@ http://sourceforge.net/mailarchive/forum.php?thread_name=200808051930.57498.dsda
 archive/issue_comments_027341.json:
 ```json
 {
-    "body": "Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by @williamstein created at 2009-10-04 18:54:58\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```\n",
+    "body": "Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by @williamstein created at 2009-10-04 18:54:58\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```",
     "created_at": "2009-10-04T18:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/tra
 FIRST REFEREE REPORT on trac_3852.patch:
 
 1. The doctest coverage is still very bad (38%):
-
 
 ```
 wstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py 
@@ -177,14 +176,12 @@ Possibly wrong (function name doesn't occur in doctests):
 
 
 
-
 2. The new code fails numerous doctests:
 
 ```
         sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed
         sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed
 ```
-
 
 The actual failures:
 
@@ -259,7 +256,6 @@ Got:
 
 ...
 ```
-
 
 
 
@@ -459,7 +455,7 @@ attachment:trac_3852_fix_whitespace.patch is big but makes no functional changes
 archive/issue_comments_027351.json:
 ```json
 {
-    "body": "Some questions and comments:\n\nIn `unit_derivations_expr` (in units.py), why the check to see that Z is a string? We get Z by looking up something in a dictionary whose values are all strings, so either Z is a string, or we threw a ValueError and aren't executing the rest of the function anyway. It looks like the \"if isinstance\" bit can be deleted. Am I misunderstanding something?\n\nA minor point: the string representation of collections of units uses strange/incorrect grammar. \"Collection area of units\" sounds like units do collecting in a certain area. I think \"Collection of units of area\" is better. How about something like\n\n```\nname = ' of ' + self.__name if self.__name else ''\nreturn \"Collection of units%s: %s\"%(name, ' '.join(sorted([str(x) for x in self.__data])))\n```\n\nin the `__repr___` method for Units?\n\nIn the descriptions of the mass units, the solar mass refers to the size of the earth -- but you mean the mass of the earth. Size is length, area, or volume; different units!\n\nPerhaps we should include \"metre\" and \"litre\" as synonyms; it seems that the official spelling, according to the SI Brochure, is \"metre\", and that's a common spelling anyway. The liter/litre isn't an official SI unit, but it is frequently spelled as litre, so might as well put in both. This would also allow non-Americans putting units into their LaTeX documents to get correctly-spelled units.\n\nThis module should get added to the reference manual (perhaps we can do that in another ticket), and a bunch of little bits in the docstrings need to be fixed up. One suggestion: change the title at the very top of units.py to \"Units of measurement\" to avoid confusion with multiplicatively invertible elements of a ring.\n\nLine 600 or so: I would find it much less confusing if ton_force was described with \"Defined to be 2000 pounds of force\".\n\nIn line 685: the documentation for candela has some goofy stuff near the end. According to the official brochure, you need \"1/683 watt per steradian\".\n\nOverall, I think this is a great addition to Sage. The code is pretty simple, works well, and is thoroughly doctested. Once the above issues are addressed, this can get a positive review. I can whip up a patch making the above changes, or can review someone else's patch.",
+    "body": "Some questions and comments:\n\nIn `unit_derivations_expr` (in units.py), why the check to see that Z is a string? We get Z by looking up something in a dictionary whose values are all strings, so either Z is a string, or we threw a ValueError and aren't executing the rest of the function anyway. It looks like the \"if isinstance\" bit can be deleted. Am I misunderstanding something?\n\nA minor point: the string representation of collections of units uses strange/incorrect grammar. \"Collection area of units\" sounds like units do collecting in a certain area. I think \"Collection of units of area\" is better. How about something like\n\n```\nname = ' of ' + self.__name if self.__name else ''\nreturn \"Collection of units%s: %s\"%(name, ' '.join(sorted([str(x) for x in self.__data])))\n```\nin the `__repr___` method for Units?\n\nIn the descriptions of the mass units, the solar mass refers to the size of the earth -- but you mean the mass of the earth. Size is length, area, or volume; different units!\n\nPerhaps we should include \"metre\" and \"litre\" as synonyms; it seems that the official spelling, according to the SI Brochure, is \"metre\", and that's a common spelling anyway. The liter/litre isn't an official SI unit, but it is frequently spelled as litre, so might as well put in both. This would also allow non-Americans putting units into their LaTeX documents to get correctly-spelled units.\n\nThis module should get added to the reference manual (perhaps we can do that in another ticket), and a bunch of little bits in the docstrings need to be fixed up. One suggestion: change the title at the very top of units.py to \"Units of measurement\" to avoid confusion with multiplicatively invertible elements of a ring.\n\nLine 600 or so: I would find it much less confusing if ton_force was described with \"Defined to be 2000 pounds of force\".\n\nIn line 685: the documentation for candela has some goofy stuff near the end. According to the official brochure, you need \"1/683 watt per steradian\".\n\nOverall, I think this is a great addition to Sage. The code is pretty simple, works well, and is thoroughly doctested. Once the above issues are addressed, this can get a positive review. I can whip up a patch making the above changes, or can review someone else's patch.",
     "created_at": "2010-04-09T03:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -478,7 +474,6 @@ A minor point: the string representation of collections of units uses strange/in
 name = ' of ' + self.__name if self.__name else ''
 return "Collection of units%s: %s"%(name, ' '.join(sorted([str(x) for x in self.__data])))
 ```
-
 in the `__repr___` method for Units?
 
 In the descriptions of the mass units, the solar mass refers to the size of the earth -- but you mean the mass of the earth. Size is length, area, or volume; different units!
@@ -518,7 +513,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_027353.json:
 ```json
 {
-    "body": "One more comment: `convert()` in `expression.pyx` should perhaps mention that it just returns the variable if the variable is not a unit -- since we now have a convert() method on every single symbolic variable, it will be helpful to users to explain that, unless you have a unit, convert won't do anything:\n\n```\nsage: x = var('x')\nsage: x - x.convert() \n0\n```\n",
+    "body": "One more comment: `convert()` in `expression.pyx` should perhaps mention that it just returns the variable if the variable is not a unit -- since we now have a convert() method on every single symbolic variable, it will be helpful to users to explain that, unless you have a unit, convert won't do anything:\n\n```\nsage: x = var('x')\nsage: x - x.convert() \n0\n```",
     "created_at": "2010-04-09T03:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -534,7 +529,6 @@ sage: x = var('x')
 sage: x - x.convert() 
 0
 ```
-
 
 
 
@@ -581,7 +575,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027356.json:
 ```json
 {
-    "body": "Thanks for pushing this ticket closer to the finish Dan.\n\nThough I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file. Pushing the patch on my queue, I get\n\n\n```\napplying trac_3852_fix_whitespace.patch\npatching file sage/symbolic/expression.pyx\nHunk #7 succeeded at 317 with fuzz 1 (offset -2 lines).\nHunk #208 FAILED at 6448\nHunk #215 FAILED at 6699\nHunk #216 FAILED at 6713\n3 out of 236 hunks FAILED -- saving rejects to file sage/symbolic/expression.pyx.rej\n```\n\n\nI don't think rebasing the patch on the other changes is worth it. We should either have an understanding that this ticket is merged after all the other actual bug fixes, and the failures in applying this patch are ignored, or change this patch to fix only the relevant sections of the file. (Actually, I wouldn't mind if this was a general policy on whitespace fixes.)\n\n\nOtherwise, I'm willing to give Dan's changes and this ticket a positive review.",
+    "body": "Thanks for pushing this ticket closer to the finish Dan.\n\nThough I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file. Pushing the patch on my queue, I get\n\n```\napplying trac_3852_fix_whitespace.patch\npatching file sage/symbolic/expression.pyx\nHunk #7 succeeded at 317 with fuzz 1 (offset -2 lines).\nHunk #208 FAILED at 6448\nHunk #215 FAILED at 6699\nHunk #216 FAILED at 6713\n3 out of 236 hunks FAILED -- saving rejects to file sage/symbolic/expression.pyx.rej\n```\n\nI don't think rebasing the patch on the other changes is worth it. We should either have an understanding that this ticket is merged after all the other actual bug fixes, and the failures in applying this patch are ignored, or change this patch to fix only the relevant sections of the file. (Actually, I wouldn't mind if this was a general policy on whitespace fixes.)\n\n\nOtherwise, I'm willing to give Dan's changes and this ticket a positive review.",
     "created_at": "2010-04-12T23:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -594,7 +588,6 @@ Thanks for pushing this ticket closer to the finish Dan.
 
 Though I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file. Pushing the patch on my queue, I get
 
-
 ```
 applying trac_3852_fix_whitespace.patch
 patching file sage/symbolic/expression.pyx
@@ -604,7 +597,6 @@ Hunk #215 FAILED at 6699
 Hunk #216 FAILED at 6713
 3 out of 236 hunks FAILED -- saving rejects to file sage/symbolic/expression.pyx.rej
 ```
-
 
 I don't think rebasing the patch on the other changes is worth it. We should either have an understanding that this ticket is merged after all the other actual bug fixes, and the failures in applying this patch are ignored, or change this patch to fix only the relevant sections of the file. (Actually, I wouldn't mind if this was a general policy on whitespace fixes.)
 
@@ -618,7 +610,7 @@ Otherwise, I'm willing to give Dan's changes and this ticket a positive review.
 archive/issue_comments_027357.json:
 ```json
 {
-    "body": "Replying to [comment:19 burcin]:\n> Though I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file.\n\nI see. If the big whitespace patch messes up a bunch of other patches, then we should postpone it. I'll take out the hunks that affect expression.pyx, and confine all the changes to units.py, since I don't think there are any other tickets that depend on this one.\n\nI would like to see some tab/whitespace cleanup -- there are (again) tons of tabs in the Sage library. I understand that coordinating this sort of thing is difficult, though.",
+    "body": "Replying to [comment:19 burcin]:\n> Though I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file.\n\n\nI see. If the big whitespace patch messes up a bunch of other patches, then we should postpone it. I'll take out the hunks that affect expression.pyx, and confine all the changes to units.py, since I don't think there are any other tickets that depend on this one.\n\nI would like to see some tab/whitespace cleanup -- there are (again) tons of tabs in the Sage library. I understand that coordinating this sort of thing is difficult, though.",
     "created_at": "2010-04-13T02:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -629,6 +621,7 @@ archive/issue_comments_027357.json:
 
 Replying to [comment:19 burcin]:
 > Though I don't think fixing the whitespace problems of `sage/symbolic/expression.pyx` in attachment:trac_3852_fix_whitespace.patch is a good idea. There are many positively reviewed symbolics tickets waiting to be merged on trac and many of them touch the same file.
+
 
 I see. If the big whitespace patch messes up a bunch of other patches, then we should postpone it. I'll take out the hunks that affect expression.pyx, and confine all the changes to units.py, since I don't think there are any other tickets that depend on this one.
 
@@ -697,7 +690,7 @@ The new fix_whitespace patch only affects units.py, and the referee patch only t
 archive/issue_comments_027361.json:
 ```json
 {
-    "body": "Replying to [comment:18 ddrake]:\n> attachment:trac_3852_referee.patch adds the units module to the reference manual and makes some minor changes to docstrings. It doesn't change any code.\n> \n> I'm marking this as \"needs review\"; if someone could look over my referee patch, we can give this entire ticket a positive review.\n\nI definitely give that referee patch a positive review.  Very nice!  It's going to be great getting this code into Sage.",
+    "body": "Replying to [comment:18 ddrake]:\n> attachment:trac_3852_referee.patch adds the units module to the reference manual and makes some minor changes to docstrings. It doesn't change any code.\n> \n> I'm marking this as \"needs review\"; if someone could look over my referee patch, we can give this entire ticket a positive review.\n\n\nI definitely give that referee patch a positive review.  Very nice!  It's going to be great getting this code into Sage.",
     "created_at": "2010-04-13T03:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
@@ -710,6 +703,7 @@ Replying to [comment:18 ddrake]:
 > attachment:trac_3852_referee.patch adds the units module to the reference manual and makes some minor changes to docstrings. It doesn't change any code.
 > 
 > I'm marking this as "needs review"; if someone could look over my referee patch, we can give this entire ticket a positive review.
+
 
 I definitely give that referee patch a positive review.  Very nice!  It's going to be great getting this code into Sage.
 

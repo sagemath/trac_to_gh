@@ -114,7 +114,7 @@ sage: Graphics(a)
 archive/issue_comments_033728.json:
 ```json
 {
-    "body": "I really like this patch reading it.  But it doesn't apply:\n\n\n```\npatching file sage/calculus/desolvers.py\nHunk #1 succeeded at 39 with fuzz 2 (offset 2 lines).\npatching file sage/geometry/polyhedra.py\nHunk #1 FAILED at 30\n1 out of 1 hunk FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej\npatching file sage/plot/animate.py\nHunk #1 FAILED at 60\nHunk #2 FAILED at 120\nHunk #6 succeeded at 253 with fuzz 2 (offset 14 lines).\n2 out of 6 hunks FAILED -- saving rejects to file sage/plot/animate.py.rej\npatching file sage/plot/plot.py\nHunk #17 FAILED at 1261\nHunk #18 FAILED at 2349\n2 out of 24 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\n\nAssuming it works, it gets copyright headers, and passes all doctests (in the whole tree), I will give this a positive review.",
+    "body": "I really like this patch reading it.  But it doesn't apply:\n\n```\npatching file sage/calculus/desolvers.py\nHunk #1 succeeded at 39 with fuzz 2 (offset 2 lines).\npatching file sage/geometry/polyhedra.py\nHunk #1 FAILED at 30\n1 out of 1 hunk FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej\npatching file sage/plot/animate.py\nHunk #1 FAILED at 60\nHunk #2 FAILED at 120\nHunk #6 succeeded at 253 with fuzz 2 (offset 14 lines).\n2 out of 6 hunks FAILED -- saving rejects to file sage/plot/animate.py.rej\npatching file sage/plot/plot.py\nHunk #17 FAILED at 1261\nHunk #18 FAILED at 2349\n2 out of 24 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\nAssuming it works, it gets copyright headers, and passes all doctests (in the whole tree), I will give this a positive review.",
     "created_at": "2008-11-27T17:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ archive/issue_comments_033728.json:
 ```
 
 I really like this patch reading it.  But it doesn't apply:
-
 
 ```
 patching file sage/calculus/desolvers.py
@@ -143,7 +142,6 @@ Hunk #18 FAILED at 2349
 2 out of 24 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 abort: patch failed to apply
 ```
-
 
 Assuming it works, it gets copyright headers, and passes all doctests (in the whole tree), I will give this a positive review.
 
@@ -212,7 +210,7 @@ Michael
 archive/issue_comments_033732.json:
 ```json
 {
-    "body": "This definitely needs some work - most likely those are overwhelmingly import issues:\n\n```\n        sage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/tests/book_stein_ent.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 7 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/groebner_fan.py # 156 doctests failed\n        sage -t -long devel/sage/sage/rings/padics/padic_base_generic.py # 3 doctests failed\n        sage -t -long devel/sage/sage/plot/matrix_plot.py # 5 doctests failed\n        sage -t -long devel/sage/sage/plot/contour_plot.py # 12 doctests failed\n        sage -t -long devel/sage/sage/numerical/optimize.py # 1 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 4 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n        sage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/functions/transcendental.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/piecewise.py # 15 doctests failed\n        sage -t -long devel/sage/sage/finance/time_series.pyx # 7 doctests failed\n        sage -t -long devel/doc/tut/tut.tex # 4 doctests failed\n        sage -t -long devel/doc/const/const.tex # 1 doctests failed\n```\n\nNote that I nuked my build directory and did a -ba.\n\nCheers,\n\nMichael",
+    "body": "This definitely needs some work - most likely those are overwhelmingly import issues:\n\n```\n        sage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/tests/book_stein_ent.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 7 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/groebner_fan.py # 156 doctests failed\n        sage -t -long devel/sage/sage/rings/padics/padic_base_generic.py # 3 doctests failed\n        sage -t -long devel/sage/sage/plot/matrix_plot.py # 5 doctests failed\n        sage -t -long devel/sage/sage/plot/contour_plot.py # 12 doctests failed\n        sage -t -long devel/sage/sage/numerical/optimize.py # 1 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 4 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n        sage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/functions/transcendental.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/piecewise.py # 15 doctests failed\n        sage -t -long devel/sage/sage/finance/time_series.pyx # 7 doctests failed\n        sage -t -long devel/doc/tut/tut.tex # 4 doctests failed\n        sage -t -long devel/doc/const/const.tex # 1 doctests failed\n```\nNote that I nuked my build directory and did a -ba.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T23:42:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -242,7 +240,6 @@ This definitely needs some work - most likely those are overwhelmingly import is
         sage -t -long devel/doc/tut/tut.tex # 4 doctests failed
         sage -t -long devel/doc/const/const.tex # 1 doctests failed
 ```
-
 Note that I nuked my build directory and did a -ba.
 
 Cheers,
@@ -256,7 +253,7 @@ Michael
 archive/issue_comments_033733.json:
 ```json
 {
-    "body": "And while I am complaining:\n\n```\nanimate.py: 91% (11 of 12)\narrow.py: 87% (7 of 8)\naxes.py: 26% (5 of 19)\nbar_chart.py: 83% (5 of 6)\ncircle.py: 42% (3 of 7)\ncontour_plot.py: 42% (3 of 7)\ndisk.py: 33% (2 of 6)\njava3d.py: 0% (0 of 1)\nline.py: 90% (10 of 11)\nmatrix_plot.py: 33% (2 of 6)\nmisc.py: 72% (13 of 18)\nnetworkx_graph.py: 25% (1 of 4)\nplot3d/base.pyx: 5% (4 of 76)\nplot3d/index_face_set.pyx: 21% (7 of 32)\nplot3d/list_plot3d.py: 16% (1 of 6)\nplot3d/parametric_plot3d.py: 20% (1 of 5)\nplot3d/parametric_surface.pyx: 14% (2 of 14)\nplot3d/platonic.py: 71% (5 of 7)\nplot3d/plot3d.py: 33% (2 of 6)\nplot3d/shapes.pyx: 16% (5 of 31)\nplot3d/shapes2.py: 21% (5 of 23)\nplot3d/texture.py: 12% (1 of 8)\nplot3d/transform.pyx: 7% (1 of 14)\nplot_field.py: 42% (3 of 7)\nplot.py: 70% (41 of 58)\npoint.py: 44% (4 of 9)\npolygon.py: 20% (2 of 10)\nprimitive.py: 71% (5 of 7)\ntachyon.py: 8% (5 of 58)\ntext.py: 12% (1 of 8)\ntexture.py: 0% (0 of 6)\ntri_plot.py: 0% (0 of 20)\n\nOverall weighted coverage score:  30.3%\nTotal number of functions:  510\n```\n\nThis is more or less unchanged from pre-refactoring, so no need to make this an issue with this patch:\n\n```\nanimate.py: 90% (10 of 11)\naxes.py: 26% (5 of 19)\njava3d.py: 0% (0 of 1)\nmisc.py: 70% (12 of 17)\nplot3d/base.pyx: 5% (4 of 76)\nplot3d/index_face_set.pyx: 21% (7 of 32)\nplot3d/list_plot3d.py: 16% (1 of 6)\nplot3d/parametric_plot3d.py: 20% (1 of 5)\nplot3d/parametric_surface.pyx: 14% (2 of 14)\nplot3d/platonic.py: 71% (5 of 7)\nplot3d/plot3d.py: 33% (2 of 6)\nplot3d/shapes.pyx: 16% (5 of 31)\nplot3d/shapes2.py: 21% (5 of 23)\nplot3d/texture.py: 12% (1 of 8)\nplot3d/transform.pyx: 7% (1 of 14)\nplot.py: 57% (93 of 161)\ntachyon.py: 8% (5 of 58)\ntexture.py: 0% (0 of 6)\ntri_plot.py: 0% (0 of 20)\n\nOverall weighted coverage score:  30.3%\nTotal number of functions:  515\n```\n\n\nCheers,\n\nMichael",
+    "body": "And while I am complaining:\n\n```\nanimate.py: 91% (11 of 12)\narrow.py: 87% (7 of 8)\naxes.py: 26% (5 of 19)\nbar_chart.py: 83% (5 of 6)\ncircle.py: 42% (3 of 7)\ncontour_plot.py: 42% (3 of 7)\ndisk.py: 33% (2 of 6)\njava3d.py: 0% (0 of 1)\nline.py: 90% (10 of 11)\nmatrix_plot.py: 33% (2 of 6)\nmisc.py: 72% (13 of 18)\nnetworkx_graph.py: 25% (1 of 4)\nplot3d/base.pyx: 5% (4 of 76)\nplot3d/index_face_set.pyx: 21% (7 of 32)\nplot3d/list_plot3d.py: 16% (1 of 6)\nplot3d/parametric_plot3d.py: 20% (1 of 5)\nplot3d/parametric_surface.pyx: 14% (2 of 14)\nplot3d/platonic.py: 71% (5 of 7)\nplot3d/plot3d.py: 33% (2 of 6)\nplot3d/shapes.pyx: 16% (5 of 31)\nplot3d/shapes2.py: 21% (5 of 23)\nplot3d/texture.py: 12% (1 of 8)\nplot3d/transform.pyx: 7% (1 of 14)\nplot_field.py: 42% (3 of 7)\nplot.py: 70% (41 of 58)\npoint.py: 44% (4 of 9)\npolygon.py: 20% (2 of 10)\nprimitive.py: 71% (5 of 7)\ntachyon.py: 8% (5 of 58)\ntext.py: 12% (1 of 8)\ntexture.py: 0% (0 of 6)\ntri_plot.py: 0% (0 of 20)\n\nOverall weighted coverage score:  30.3%\nTotal number of functions:  510\n```\nThis is more or less unchanged from pre-refactoring, so no need to make this an issue with this patch:\n\n```\nanimate.py: 90% (10 of 11)\naxes.py: 26% (5 of 19)\njava3d.py: 0% (0 of 1)\nmisc.py: 70% (12 of 17)\nplot3d/base.pyx: 5% (4 of 76)\nplot3d/index_face_set.pyx: 21% (7 of 32)\nplot3d/list_plot3d.py: 16% (1 of 6)\nplot3d/parametric_plot3d.py: 20% (1 of 5)\nplot3d/parametric_surface.pyx: 14% (2 of 14)\nplot3d/platonic.py: 71% (5 of 7)\nplot3d/plot3d.py: 33% (2 of 6)\nplot3d/shapes.pyx: 16% (5 of 31)\nplot3d/shapes2.py: 21% (5 of 23)\nplot3d/texture.py: 12% (1 of 8)\nplot3d/transform.pyx: 7% (1 of 14)\nplot.py: 57% (93 of 161)\ntachyon.py: 8% (5 of 58)\ntexture.py: 0% (0 of 6)\ntri_plot.py: 0% (0 of 20)\n\nOverall weighted coverage score:  30.3%\nTotal number of functions:  515\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T00:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
@@ -304,7 +301,6 @@ tri_plot.py: 0% (0 of 20)
 Overall weighted coverage score:  30.3%
 Total number of functions:  510
 ```
-
 This is more or less unchanged from pre-refactoring, so no need to make this an issue with this patch:
 
 ```
@@ -331,7 +327,6 @@ tri_plot.py: 0% (0 of 20)
 Overall weighted coverage score:  30.3%
 Total number of functions:  515
 ```
-
 
 Cheers,
 

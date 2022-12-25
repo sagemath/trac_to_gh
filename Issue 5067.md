@@ -3,7 +3,7 @@
 archive/issues_005067.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
+    "body": "Assignee: @rlmill\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
     "created_at": "2009-01-23T09:26:08Z",
     "labels": [
         "component: coding theory",
@@ -22,7 +22,6 @@ Assignee: @rlmill
 When doing #4588 to fix some "doctests never got run" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. 
 
 They are in linear_code.py:
-
 
 ```
 sage -t  devel/sage/sage/coding/linear_code.py
@@ -62,7 +61,6 @@ Got:
    4 of  17 in __main__.example_44
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5067
 
 
@@ -74,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5067
 archive/issue_comments_038524.json:
 ```json
 {
-    "body": "Applies cleanly to 3.3.alpha1.\n\nHowever, it seems to still fail doctests:\n\n\n```\n\n./sage -t -optional /home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py                                                                                          \nsage -t -optional \"devel/sage-spectrum/sage/coding/linear_code.py\"                                                 \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1975:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:                                                                                                          \n    True                                                                                                           \n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]                                   \nGot:                                                                                                               \n    True                                                                                                           \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1980:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot:\n    True\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1985:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot:\n    True\n**********************************************************************\n```\n",
+    "body": "Applies cleanly to 3.3.alpha1.\n\nHowever, it seems to still fail doctests:\n\n```\n\n./sage -t -optional /home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py                                                                                          \nsage -t -optional \"devel/sage-spectrum/sage/coding/linear_code.py\"                                                 \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1975:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:                                                                                                          \n    True                                                                                                           \n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]                                   \nGot:                                                                                                               \n    True                                                                                                           \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1980:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot:\n    True\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1985:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot:\n    True\n**********************************************************************\n```",
     "created_at": "2009-01-24T02:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
@@ -86,7 +84,6 @@ archive/issue_comments_038524.json:
 Applies cleanly to 3.3.alpha1.
 
 However, it seems to still fail doctests:
-
 
 ```
 
@@ -118,7 +115,6 @@ Got:
     True
 **********************************************************************
 ```
-
 
 
 

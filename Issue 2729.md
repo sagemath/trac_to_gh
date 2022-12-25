@@ -3,7 +3,7 @@
 archive/issues_002729.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFor example, try \n\n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFor example, try \n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
     "created_at": "2008-03-30T00:01:21Z",
     "labels": [
         "component: graphics",
@@ -22,11 +22,9 @@ CC:  @jasongrout
 
 For example, try 
 
-
 ```
 sum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])
 ```
-
 
 See http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)
 

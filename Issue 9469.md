@@ -3,7 +3,7 @@
 archive/issues_009469.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
     "created_at": "2010-07-10T02:52:00Z",
     "labels": [
         "component: categories"
@@ -27,14 +27,12 @@ Currently one can do:
     True
 ```
 
-
 This patch implements:
 
 ```
     sage: F in VectorSpaces
     True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9469
 
@@ -245,7 +243,7 @@ The new patch is Ok with me.
 archive/issue_comments_090683.json:
 ```json
 {
-    "body": "I just stumbled upon the following hunk later in the queue, and thought we might as well\nfold it into this patch:\n\n```\ndiff --git a/sage/categories/category.py b/sage/categories/category.py\n--- a/sage/categories/category.py\n+++ b/sage/categories/category.py\n@@ -627,8 +627,19 @@ class Category(UniqueRepresentation, Sag\n \n             sage: F in Algebras\n             False\n+\n+        TESTS:\n+\n+        Non category object shall be handled properly::\n+\n+            sage: [1,2] in Algebras\n+            False\n         \"\"\"\n-        return any(isinstance(cat, cls) for cat in x.categories())\n+        try:\n+            c = x.categories()\n+        except AttributeError:\n+            return False\n+        return any(isinstance(cat, cls) for cat in c)\n \n     def is_abelian(self):\n         \"\"\"\n```\n\n\nI am running the tests now. Florent: shall I reinstate the positive review if the test pass?",
+    "body": "I just stumbled upon the following hunk later in the queue, and thought we might as well\nfold it into this patch:\n\n```\ndiff --git a/sage/categories/category.py b/sage/categories/category.py\n--- a/sage/categories/category.py\n+++ b/sage/categories/category.py\n@@ -627,8 +627,19 @@ class Category(UniqueRepresentation, Sag\n \n             sage: F in Algebras\n             False\n+\n+        TESTS:\n+\n+        Non category object shall be handled properly::\n+\n+            sage: [1,2] in Algebras\n+            False\n         \"\"\"\n-        return any(isinstance(cat, cls) for cat in x.categories())\n+        try:\n+            c = x.categories()\n+        except AttributeError:\n+            return False\n+        return any(isinstance(cat, cls) for cat in c)\n \n     def is_abelian(self):\n         \"\"\"\n```\n\nI am running the tests now. Florent: shall I reinstate the positive review if the test pass?",
     "created_at": "2012-02-18T14:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
@@ -283,7 +281,6 @@ diff --git a/sage/categories/category.py b/sage/categories/category.py
      def is_abelian(self):
          """
 ```
-
 
 I am running the tests now. Florent: shall I reinstate the positive review if the test pass?
 

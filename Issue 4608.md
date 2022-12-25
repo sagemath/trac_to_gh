@@ -3,7 +3,7 @@
 archive/issues_004608.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\n\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
     "created_at": "2008-11-25T00:33:55Z",
     "labels": [
         "component: combinatorics",
@@ -30,7 +30,6 @@ sage: R.ambient_lattice().roots()
 [(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]
 sage: 
 ```
-
 But this method does not work for any of the other associated lattices.
 
 ```
@@ -59,7 +58,6 @@ AttributeError: 'WeightSpace' object has no attribute 'positive_roots'
 
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4608
 
 
@@ -71,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4608
 archive/issue_comments_034522.json:
 ```json
 {
-    "body": "This ticket should be closed. The issues is now fixed:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```\n\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nFlorent",
+    "body": "This ticket should be closed. The issues is now fixed:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nFlorent",
     "created_at": "2010-04-16T10:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ sage: R.root_lattice().roots()
 sage: R.weight_lattice().roots()
 [-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]
 ```
-
 | Sage Version 4.3.4, Release Date: 2010-03-19                       |
 | Type notebook() for the GUI, and license() for information.        |
 Florent
@@ -126,7 +123,7 @@ Changing assignee from @mwhansen to @hivert.
 archive/issue_comments_034524.json:
 ```json
 {
-    "body": "It works now:\n\n```sh\n[mvngu@sage graphs]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: \nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```\n",
+    "body": "It works now:\n\n```sh\n[mvngu@sage graphs]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: \nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```",
     "created_at": "2010-04-30T16:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ sage:
 sage: R.weight_lattice().roots()
 [-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]
 ```
-
 
 
 
@@ -200,7 +196,7 @@ archive/issue_events_010476.json:
 archive/issue_comments_034526.json:
 ```json
 {
-    "body": "Close as fixed by #4326:\n\n```\n09:22 < hivert> mvngu: this was fixed by #4326: Root systems: refactoring and \n                improvements\n09:23 < hivert> And some similar doctests are performed. So I don't think more \n                work is need on this one. \n09:24 < hivert> I should have guessed ! #4326 is a huge patch with no less than \n                6 authors :-)\n09:24 < hivert> Please close the ticket.\n```\n",
+    "body": "Close as fixed by #4326:\n\n```\n09:22 < hivert> mvngu: this was fixed by #4326: Root systems: refactoring and \n                improvements\n09:23 < hivert> And some similar doctests are performed. So I don't think more \n                work is need on this one. \n09:24 < hivert> I should have guessed ! #4326 is a huge patch with no less than \n                6 authors :-)\n09:24 < hivert> Please close the ticket.\n```",
     "created_at": "2010-04-30T16:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
@@ -220,4 +216,3 @@ Close as fixed by #4326:
                 6 authors :-)
 09:24 < hivert> Please close the ticket.
 ```
-

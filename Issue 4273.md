@@ -3,7 +3,7 @@
 archive/issues_004273.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\n\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\n\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
     "created_at": "2008-10-13T11:59:45Z",
     "labels": [
         "component: linear algebra",
@@ -29,13 +29,11 @@ Getting the change of basis matrix for Jordan forms fails if there are multiple 
 m = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])
 m.jordan_form(base_ring=QQ, transformation=True) 
 ```
-
 gives 
 
 ```
 ValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0
 ```
-
 This was reported on sage-support by Rob Beezer, subject line is: "Transformation to Jordan form for tame 6x6 integer matrix".
 
 Issue created by migration from https://trac.sagemath.org/ticket/4273

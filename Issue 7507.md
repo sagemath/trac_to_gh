@@ -3,7 +3,7 @@
 archive/issues_007507.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @robert-marik\n\nKeywords: maxima, assume\n\nReported by Mike Witt on sage-support:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n=var('n')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n-sin(pi*n)\nsage: assume(n, 'odd')\nsage: assumptions()\n[n is odd]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\nsage: forget(n, 'odd')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\n```\n\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nRobert Dodier's comments:\n\n\n```\nI'm guessing that Sage punts to Maxima for this stuff.\nFor better or worse (mostly worse) there are different ways\nto declare & undeclare stuff in Maxima.\nFor the \"odd\" declaration, it's declare(n, odd) and remove(n, odd).\nI guess assume(n, 'odd') was translated to declare(n, odd) but\nforget(n, 'odd') was not translated to remove(n, odd).\nI don't know much about Sage so I could be way off here.\n```\n\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/9db67c2df781966b\n\nIssue created by migration from https://trac.sagemath.org/ticket/7507\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @robert-marik\n\nKeywords: maxima, assume\n\nReported by Mike Witt on sage-support:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n=var('n')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n-sin(pi*n)\nsage: assume(n, 'odd')\nsage: assumptions()\n[n is odd]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\nsage: forget(n, 'odd')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\n```\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nRobert Dodier's comments:\n\n```\nI'm guessing that Sage punts to Maxima for this stuff.\nFor better or worse (mostly worse) there are different ways\nto declare & undeclare stuff in Maxima.\nFor the \"odd\" declaration, it's declare(n, odd) and remove(n, odd).\nI guess assume(n, 'odd') was translated to declare(n, odd) but\nforget(n, 'odd') was not translated to remove(n, odd).\nI don't know much about Sage so I could be way off here.\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/9db67c2df781966b\n\nIssue created by migration from https://trac.sagemath.org/ticket/7507\n\n",
     "created_at": "2009-11-21T12:21:56Z",
     "labels": [
         "component: symbolics",
@@ -23,7 +23,6 @@ CC:  @kcrisman @robert-marik
 Keywords: maxima, assume
 
 Reported by Mike Witt on sage-support:
-
 
 ```
 ----------------------------------------------------------------------
@@ -47,11 +46,9 @@ sage: foo=sin((-1)*n*pi)
 sage: foo.simplify()
 0
 ```
-
 | Sage Version 4.2, Release Date: 2009-10-24                         |
 | Type notebook() for the GUI, and license() for information.        |
 Robert Dodier's comments:
-
 
 ```
 I'm guessing that Sage punts to Maxima for this stuff.
@@ -62,7 +59,6 @@ I guess assume(n, 'odd') was translated to declare(n, odd) but
 forget(n, 'odd') was not translated to remove(n, odd).
 I don't know much about Sage so I could be way off here.
 ```
-
 
 Here is the thread:
 
@@ -97,7 +93,7 @@ Okay, this is closed related to #1163 and #7315.  Should not be hard to fix, and
 archive/issue_comments_063400.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> Okay, this is closed related to #1163 and #7315.  Should not be hard to fix, and might help in making GenericDeclarations better in any case.\n\nSorry, I meant *closely* related.",
+    "body": "Replying to [comment:1 kcrisman]:\n> Okay, this is closed related to #1163 and #7315.  Should not be hard to fix, and might help in making GenericDeclarations better in any case.\n\n\nSorry, I meant *closely* related.",
     "created_at": "2010-01-08T16:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7507",
     "type": "issue_comment",
@@ -108,6 +104,7 @@ archive/issue_comments_063400.json:
 
 Replying to [comment:1 kcrisman]:
 > Okay, this is closed related to #1163 and #7315.  Should not be hard to fix, and might help in making GenericDeclarations better in any case.
+
 
 Sorry, I meant *closely* related.
 
@@ -173,7 +170,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063403.json:
 ```json
 {
-    "body": "Yes, this was fixed as part of #1163, as it turns out.\n\n```\n\n    for x in preprocess_assumptions(args):\n        if isinstance(x, (tuple, list)):\n            forget(*x)\n```\n\nused to have\n\n```\n\n    for x in preprocess_assumptions(args):\n        if isinstance(x, (tuple, list)):\n            assume(*x)\n```\n\nbefore that patch.",
+    "body": "Yes, this was fixed as part of #1163, as it turns out.\n\n```\n\n    for x in preprocess_assumptions(args):\n        if isinstance(x, (tuple, list)):\n            forget(*x)\n```\nused to have\n\n```\n\n    for x in preprocess_assumptions(args):\n        if isinstance(x, (tuple, list)):\n            assume(*x)\n```\nbefore that patch.",
     "created_at": "2011-05-11T18:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7507",
     "type": "issue_comment",
@@ -190,7 +187,6 @@ Yes, this was fixed as part of #1163, as it turns out.
         if isinstance(x, (tuple, list)):
             forget(*x)
 ```
-
 used to have
 
 ```
@@ -199,7 +195,6 @@ used to have
         if isinstance(x, (tuple, list)):
             assume(*x)
 ```
-
 before that patch.
 
 

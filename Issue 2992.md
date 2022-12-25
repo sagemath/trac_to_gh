@@ -55,7 +55,7 @@ Attachment [sage-2992.patch](tarball://root/attachments/some-uuid/ticket2992/sag
 archive/issue_comments_020543.json:
 ```json
 {
-    "body": "The attached patch does this:\n\n```\n\n  1. Wrote new version of help command for the notebook.\n  2. Slightly modified how truncation is done to account for 1.\t While I was at\tit, I fixed another\n     but where reloading a page would put multiple \"output truncated\" messages at the top of the page.\n\n```\n",
+    "body": "The attached patch does this:\n\n```\n\n  1. Wrote new version of help command for the notebook.\n  2. Slightly modified how truncation is done to account for 1.\t While I was at\tit, I fixed another\n     but where reloading a page would put multiple \"output truncated\" messages at the top of the page.\n\n```",
     "created_at": "2008-05-11T05:44:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2992",
     "type": "issue_comment",
@@ -76,13 +76,12 @@ The attached patch does this:
 
 
 
-
 ---
 
 archive/issue_comments_020544.json:
 ```json
 {
-    "body": "This is ugly -- scroll down:\n\n```\nhelp(interact)\n```\n\n\nI don't know if this is worth a fully negative review, but I think this looks like crap.  Perhaps a pre tag would make it all better?",
+    "body": "This is ugly -- scroll down:\n\n```\nhelp(interact)\n```\n\nI don't know if this is worth a fully negative review, but I think this looks like crap.  Perhaps a pre tag would make it all better?",
     "created_at": "2008-05-12T05:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2992",
     "type": "issue_comment",
@@ -97,7 +96,6 @@ This is ugly -- scroll down:
 help(interact)
 ```
 
-
 I don't know if this is worth a fully negative review, but I think this looks like crap.  Perhaps a pre tag would make it all better?
 
 
@@ -107,7 +105,7 @@ I don't know if this is worth a fully negative review, but I think this looks li
 archive/issue_comments_020545.json:
 ```json
 {
-    "body": "Attachment [sage-2992-part2.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992-part2.patch) by @williamstein created at 2008-05-15 02:04:36\n\nI completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., \n\n\n```\nimport numpy\nhelp(numpy)\n```\n\n\nwith the new version, and your browser will *not* get killed.  I had my browser\ncrash in class when teaching with the old version.\n\nOf course the issues with help(interact) are also fixed. \n\nApply both patches, in order.",
+    "body": "Attachment [sage-2992-part2.patch](tarball://root/attachments/some-uuid/ticket2992/sage-2992-part2.patch) by @williamstein created at 2008-05-15 02:04:36\n\nI completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., \n\n```\nimport numpy\nhelp(numpy)\n```\n\nwith the new version, and your browser will *not* get killed.  I had my browser\ncrash in class when teaching with the old version.\n\nOf course the issues with help(interact) are also fixed. \n\nApply both patches, in order.",
     "created_at": "2008-05-15T02:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2992",
     "type": "issue_comment",
@@ -120,12 +118,10 @@ Attachment [sage-2992-part2.patch](tarball://root/attachments/some-uuid/ticket29
 
 I completely rewrote help(...) to address the referee remark and to make help(...) vastly more robust when the output is MASSIVE (which it often is).  Try, e.g., 
 
-
 ```
 import numpy
 help(numpy)
 ```
-
 
 with the new version, and your browser will *not* get killed.  I had my browser
 crash in class when teaching with the old version.

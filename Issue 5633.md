@@ -211,7 +211,7 @@ Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch
 archive/issue_comments_043919.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> Okay.  Note that this means that if someone decides to add pictures to the tutorial, for example (people requested this a long time ago for the plotting section), then they'll have to add those individually, too. It might get to be a little tedious after a while...\n\nWell, you can recursively include png images below a certain directory for example, but I will catch any issue with pics being added to the documentation, but not in MANIFEST.in. I will review this patch shortly.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> Okay.  Note that this means that if someone decides to add pictures to the tutorial, for example (people requested this a long time ago for the plotting section), then they'll have to add those individually, too. It might get to be a little tedious after a while...\n\n\nWell, you can recursively include png images below a certain directory for example, but I will catch any issue with pics being added to the documentation, but not in MANIFEST.in. I will review this patch shortly.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T05:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
@@ -222,6 +222,7 @@ archive/issue_comments_043919.json:
 
 Replying to [comment:8 jhpalmieri]:
 > Okay.  Note that this means that if someone decides to add pictures to the tutorial, for example (people requested this a long time ago for the plotting section), then they'll have to add those individually, too. It might get to be a little tedious after a while...
+
 
 Well, you can recursively include png images below a certain directory for example, but I will catch any issue with pics being added to the documentation, but not in MANIFEST.in. I will review this patch shortly.
 

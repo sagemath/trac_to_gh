@@ -3,7 +3,7 @@
 archive/issues_009393.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  whuss @orlitzky\n\nReported by Tobias Katz on sage-support:\n\n\n```\nsage: sum(x, x, 1r, 5r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n.../<ipython console> in <module>()\n.../local/lib/python2.6/site-packages/sage/misc/functional.pyc in symbolic_sum(expression, *args, **kwds)\n    657     \"\"\"\n    658     if hasattr(expression, 'sum'):\n--> 659         return expression.sum(*args, **kwds)\n    660     elif len(args) <= 1:\n    661         return sum(expression, *args)\n\n.../local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.sum (sage/symbolic/expression.cpp:28895)()\n\n.../local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_sum(expression, v, a, b, algorithm)\n    482 \n    483     if algorithm == 'maxima':\n--> 484         sum  = \"'sum(%s, %s, %s, %s)\" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])\n    485         try:\n    486             result = maxima.simplify_sum(sum)\n\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9393\n\n",
+    "body": "Assignee: @burcin\n\nCC:  whuss @orlitzky\n\nReported by Tobias Katz on sage-support:\n\n```\nsage: sum(x, x, 1r, 5r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n.../<ipython console> in <module>()\n.../local/lib/python2.6/site-packages/sage/misc/functional.pyc in symbolic_sum(expression, *args, **kwds)\n    657     \"\"\"\n    658     if hasattr(expression, 'sum'):\n--> 659         return expression.sum(*args, **kwds)\n    660     elif len(args) <= 1:\n    661         return sum(expression, *args)\n\n.../local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.sum (sage/symbolic/expression.cpp:28895)()\n\n.../local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_sum(expression, v, a, b, algorithm)\n    482 \n    483     if algorithm == 'maxima':\n--> 484         sum  = \"'sum(%s, %s, %s, %s)\" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])\n    485         try:\n    486             result = maxima.simplify_sum(sum)\n\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9393\n\n",
     "created_at": "2010-06-30T11:52:27Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Assignee: @burcin
 CC:  whuss @orlitzky
 
 Reported by Tobias Katz on sage-support:
-
 
 ```
 sage: sum(x, x, 1r, 5r)
@@ -46,7 +45,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'int' object has no attribute '_maxima_'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9393
 

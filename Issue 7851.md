@@ -3,7 +3,7 @@
 archive/issues_007851.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of libz zlib-1.2.3.p5 has this:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\nexport CFLAGS\n```\n\n\nso is almost doomed to a 64-bit build unless one sets CFLAGS externally. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7851\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of libz zlib-1.2.3.p5 has this:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\nexport CFLAGS\n```\n\nso is almost doomed to a 64-bit build unless one sets CFLAGS externally. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7851\n\n",
     "created_at": "2010-01-05T19:04:56Z",
     "labels": [
         "component: porting",
@@ -22,7 +22,6 @@ CC:  @jaapspies
 
 The spkg-install of libz zlib-1.2.3.p5 has this:
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
    CFLAGS=" -m64 $CFLAGS -fPIC -g -I\"$SAGE_LOCAL/include\""
@@ -32,7 +31,6 @@ else
 fi
 export CFLAGS
 ```
-
 
 so is almost doomed to a 64-bit build unless one sets CFLAGS externally. 
 
@@ -141,7 +139,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067891.json:
 ```json
 {
-    "body": "This problem is not as simple as I first thought. Using the zlib source code, without any CFLAGS, but with the --shared option, we get the message the shared library is built. \n\n\n```\ndrkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $  ./configure --shared\nChecking for shared library support...\nBuilding shared library libz.so.1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.\nChecking for unistd.h... Yes.\nChecking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf()\nChecking for vsnprintf() in stdio.h... Yes.\nChecking for return value of vsnprintf()... Yes.\nChecking for errno.h... Yes.\nChecking for mmap support... Yes.\n```\n\n\nTrying to build in 64-bit mode, the shared library is not built. \n\n\n```\ndrkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $ CFLAGS=-m64  ./configure --shared\nChecking for shared library support...\nNo shared library support; try without defining CC and CFLAGS\nBuilding static library libz.a version 1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.\nChecking for unistd.h... Yes.\nChecking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf()\nChecking for vsnprintf() in stdio.h... Yes.\nChecking for return value of vsnprintf()... Yes.\nChecking for errno.h... Yes.\nChecking for mmap support... Yes.\n```\n\n\nI've reported this issue to the email address zlib at gzip.org and are awaiting feedback.  I don't think it will be easy to progress on this until that point. \n\nDave",
+    "body": "This problem is not as simple as I first thought. Using the zlib source code, without any CFLAGS, but with the --shared option, we get the message the shared library is built. \n\n```\ndrkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $  ./configure --shared\nChecking for shared library support...\nBuilding shared library libz.so.1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.\nChecking for unistd.h... Yes.\nChecking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf()\nChecking for vsnprintf() in stdio.h... Yes.\nChecking for return value of vsnprintf()... Yes.\nChecking for errno.h... Yes.\nChecking for mmap support... Yes.\n```\n\nTrying to build in 64-bit mode, the shared library is not built. \n\n```\ndrkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $ CFLAGS=-m64  ./configure --shared\nChecking for shared library support...\nNo shared library support; try without defining CC and CFLAGS\nBuilding static library libz.a version 1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.\nChecking for unistd.h... Yes.\nChecking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf()\nChecking for vsnprintf() in stdio.h... Yes.\nChecking for return value of vsnprintf()... Yes.\nChecking for errno.h... Yes.\nChecking for mmap support... Yes.\n```\n\nI've reported this issue to the email address zlib at gzip.org and are awaiting feedback.  I don't think it will be easy to progress on this until that point. \n\nDave",
     "created_at": "2010-01-28T12:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
@@ -151,7 +149,6 @@ archive/issue_comments_067891.json:
 ```
 
 This problem is not as simple as I first thought. Using the zlib source code, without any CFLAGS, but with the --shared option, we get the message the shared library is built. 
-
 
 ```
 drkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $  ./configure --shared
@@ -165,9 +162,7 @@ Checking for errno.h... Yes.
 Checking for mmap support... Yes.
 ```
 
-
 Trying to build in 64-bit mode, the shared library is not built. 
-
 
 ```
 drkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $ CFLAGS=-m64  ./configure --shared
@@ -181,7 +176,6 @@ Checking for return value of vsnprintf()... Yes.
 Checking for errno.h... Yes.
 Checking for mmap support... Yes.
 ```
-
 
 I've reported this issue to the email address zlib at gzip.org and are awaiting feedback.  I don't think it will be easy to progress on this until that point. 
 

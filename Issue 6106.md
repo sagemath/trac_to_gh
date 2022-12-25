@@ -73,7 +73,7 @@ Am changing this from "need review" to "needs review" so it shows up in the stan
 archive/issue_comments_048684.json:
 ```json
 {
-    "body": "Review\n\nThe patch applied fine to 4.0.1, and it provides some functions which look useful.\n\nI think that not all new new functions have doctests.  Why are the new functions not implemented as member functions of the BinaryQF class?  That would be much better;  as it is anyone using them has to import them explicitly.  So I suggest that they are converted to be member functions (which is trivial to do).\n\nSecondly, the use of the python math functions sqrt and floor is not a good idea, since the coefficients of the form will be Sage integers.  For example:\n\n```\nsage: from sage.quadratic_forms.binary_qf import normalized_indefinite_form\nsage: f = BinaryQF([10^100,10^500,10^200])\nsage: f.discriminant()>0\nTrue\nsage: normalized_indefinite_form(f)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/9768/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-4.0.1/local/lib/python2.5/site-packages/sage/quadratic_forms/binary_qf.pyc in normalized_indefinite_form(f)\n    486         raise ValueError, \"This only works for indefinite forms\"\n    487     \n--> 488     if sqrt(delta) <= abs(a):\n    489         s=(a/abs(a))*floor(-1*b/(2*abs(a)))\n    490     else:\n\nOverflowError: math range error\n```\n\nFor example, the line if sqrt(delta) <= abs(a): could be replaced by if delta <= a**2: .\n\nThe docstring for this function should also say what the definition of \"normalised\" is.\n\nI also slightly amended the ticket's title to give a better description.",
+    "body": "Review\n\nThe patch applied fine to 4.0.1, and it provides some functions which look useful.\n\nI think that not all new new functions have doctests.  Why are the new functions not implemented as member functions of the BinaryQF class?  That would be much better;  as it is anyone using them has to import them explicitly.  So I suggest that they are converted to be member functions (which is trivial to do).\n\nSecondly, the use of the python math functions sqrt and floor is not a good idea, since the coefficients of the form will be Sage integers.  For example:\n\n```\nsage: from sage.quadratic_forms.binary_qf import normalized_indefinite_form\nsage: f = BinaryQF([10^100,10^500,10^200])\nsage: f.discriminant()>0\nTrue\nsage: normalized_indefinite_form(f)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/9768/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-4.0.1/local/lib/python2.5/site-packages/sage/quadratic_forms/binary_qf.pyc in normalized_indefinite_form(f)\n    486         raise ValueError, \"This only works for indefinite forms\"\n    487     \n--> 488     if sqrt(delta) <= abs(a):\n    489         s=(a/abs(a))*floor(-1*b/(2*abs(a)))\n    490     else:\n\nOverflowError: math range error\n```\nFor example, the line if sqrt(delta) <= abs(a): could be replaced by if delta <= a**2: .\n\nThe docstring for this function should also say what the definition of \"normalised\" is.\n\nI also slightly amended the ticket's title to give a better description.",
     "created_at": "2009-06-11T16:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
@@ -110,7 +110,6 @@ OverflowError                             Traceback (most recent call last)
 
 OverflowError: math range error
 ```
-
 For example, the line if sqrt(delta) <= abs(a): could be replaced by if delta <= a**2: .
 
 The docstring for this function should also say what the definition of "normalised" is.
@@ -299,7 +298,7 @@ archive/issue_events_014370.json:
 archive/issue_comments_048688.json:
 ```json
 {
-    "body": "Replying to [comment:6 pbruin]:\n> This ticket seems to implement the same functionality as (part of) #4120, which has been inactive for a very long time, like this ticket.\nNow that #4120 has been merged, it would be good to check if this ticket still adds new functionality.  If not, we could also just add the examples from this ticket.",
+    "body": "Replying to [comment:6 pbruin]:\n> This ticket seems to implement the same functionality as (part of) #4120, which has been inactive for a very long time, like this ticket.\n\nNow that #4120 has been merged, it would be good to check if this ticket still adds new functionality.  If not, we could also just add the examples from this ticket.",
     "created_at": "2018-06-19T11:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
@@ -310,6 +309,7 @@ archive/issue_comments_048688.json:
 
 Replying to [comment:6 pbruin]:
 > This ticket seems to implement the same functionality as (part of) #4120, which has been inactive for a very long time, like this ticket.
+
 Now that #4120 has been merged, it would be good to check if this ticket still adds new functionality.  If not, we could also just add the examples from this ticket.
 
 
@@ -585,7 +585,7 @@ archive/issue_events_014378.json:
 archive/issue_comments_048696.json:
 ```json
 {
-    "body": "Replying to [comment:14 sbrandhorst]:\n> doc builds.\nFrom your other changes, it doesn't look like you really intended to delete the branch and change the milestone to *sage-duplicate/invalid/wontfix*...",
+    "body": "Replying to [comment:14 sbrandhorst]:\n> doc builds.\n\nFrom your other changes, it doesn't look like you really intended to delete the branch and change the milestone to *sage-duplicate/invalid/wontfix*...",
     "created_at": "2018-08-22T12:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
@@ -596,6 +596,7 @@ archive/issue_comments_048696.json:
 
 Replying to [comment:14 sbrandhorst]:
 > doc builds.
+
 From your other changes, it doesn't look like you really intended to delete the branch and change the milestone to *sage-duplicate/invalid/wontfix*...
 
 

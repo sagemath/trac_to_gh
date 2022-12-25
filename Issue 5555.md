@@ -3,7 +3,7 @@
 archive/issues_005555.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nWith the attached patch, you should be able to use \\ZZ, \\CC, \\RR, and \\QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)\n\nThe point here is to be able to write docstrings which are readable from interactive help in Sage and which also get typeset correctly in the reference manual; this was discussed on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/74e6bcf5ef716d1c), and people seemed to agree that a docstring like \n\n```\nThis computes the integral homology `H_d(X, \\ZZ)` of `X` in dimension `d`. \n```\n\nwas better than\n\n```\nThis computes the integral homology `H_d(X, \\mathbb{Z})` of `X` in dimension `d`. \n```\n\nespecially since the \\ZZ gets turned into ZZ when pre-parsed for interactive help.  \n\nThis point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)\n\nHaving said all of that, I would be happy to add some more macros now.  What else should be added?  Once we seem to have made some sort of decision about that, I'll update the patch and mark this ticket as \"needs review\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5555\n\n",
+    "body": "Assignee: @jhpalmieri\n\nWith the attached patch, you should be able to use \\ZZ, \\CC, \\RR, and \\QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)\n\nThe point here is to be able to write docstrings which are readable from interactive help in Sage and which also get typeset correctly in the reference manual; this was discussed on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/74e6bcf5ef716d1c), and people seemed to agree that a docstring like \n\n```\nThis computes the integral homology `H_d(X, \\ZZ)` of `X` in dimension `d`. \n```\nwas better than\n\n```\nThis computes the integral homology `H_d(X, \\mathbb{Z})` of `X` in dimension `d`. \n```\nespecially since the \\ZZ gets turned into ZZ when pre-parsed for interactive help.  \n\nThis point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)\n\nHaving said all of that, I would be happy to add some more macros now.  What else should be added?  Once we seem to have made some sort of decision about that, I'll update the patch and mark this ticket as \"needs review\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5555\n\n",
     "created_at": "2009-03-17T23:38:59Z",
     "labels": [
         "component: documentation",
@@ -25,13 +25,11 @@ The point here is to be able to write docstrings which are readable from interac
 ```
 This computes the integral homology `H_d(X, \ZZ)` of `X` in dimension `d`. 
 ```
-
 was better than
 
 ```
 This computes the integral homology `H_d(X, \mathbb{Z})` of `X` in dimension `d`. 
 ```
-
 especially since the \ZZ gets turned into ZZ when pre-parsed for interactive help.  
 
 This point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5555
 archive/issue_comments_043120.json:
 ```json
 {
-    "body": "Now I need help.  'new-macros.patch' doesn't work, and I don't know why.  When I run it, I get the error message\n\n```\n% sage -docbuild reference html\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/reference   .  /Applications/sage/devel/sage/doc/output/html/en/reference\nException occurred:\n  File \"<string>\", line 1, in <module>\nNameError: name 'sage' is not defined\nThe full traceback has been saved in /var/folders/JV/JVYCpshdHd4FFoThuUgD8k+++TI/-Tmp-/sphinx-err-l-jOy1.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\n```\n\nThis is coming from the line\n\n```\ndefn += eval('str(latex(' + module + \".\" + name + args + '))') + '}'\n```\n\nwhich, for example, doesn't seem to like doing this:\n\n```\neval('str(latex(sage.rings.all.ZZ))')\n```\n\n(A few lines earlier, `from sage.misc.latex import latex` seems to be perfectly acceptable.)\n\nWhen I run sage and \"attach conf.py\", then the function `produce_latex_macro` works just fine.  I'm probably making some stupid Python mistake.  Can anyone help?",
+    "body": "Now I need help.  'new-macros.patch' doesn't work, and I don't know why.  When I run it, I get the error message\n\n```\n% sage -docbuild reference html\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/reference   .  /Applications/sage/devel/sage/doc/output/html/en/reference\nException occurred:\n  File \"<string>\", line 1, in <module>\nNameError: name 'sage' is not defined\nThe full traceback has been saved in /var/folders/JV/JVYCpshdHd4FFoThuUgD8k+++TI/-Tmp-/sphinx-err-l-jOy1.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\n```\nThis is coming from the line\n\n```\ndefn += eval('str(latex(' + module + \".\" + name + args + '))') + '}'\n```\nwhich, for example, doesn't seem to like doing this:\n\n```\neval('str(latex(sage.rings.all.ZZ))')\n```\n(A few lines earlier, `from sage.misc.latex import latex` seems to be perfectly acceptable.)\n\nWhen I run sage and \"attach conf.py\", then the function `produce_latex_macro` works just fine.  I'm probably making some stupid Python mistake.  Can anyone help?",
     "created_at": "2009-03-19T19:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -69,19 +67,16 @@ NameError: name 'sage' is not defined
 The full traceback has been saved in /var/folders/JV/JVYCpshdHd4FFoThuUgD8k+++TI/-Tmp-/sphinx-err-l-jOy1.log, if you want to report the issue to the author.
 Please also report this if it was a user error, so that a better error message can be provided next time.
 ```
-
 This is coming from the line
 
 ```
 defn += eval('str(latex(' + module + "." + name + args + '))') + '}'
 ```
-
 which, for example, doesn't seem to like doing this:
 
 ```
 eval('str(latex(sage.rings.all.ZZ))')
 ```
-
 (A few lines earlier, `from sage.misc.latex import latex` seems to be perfectly acceptable.)
 
 When I run sage and "attach conf.py", then the function `produce_latex_macro` works just fine.  I'm probably making some stupid Python mistake.  Can anyone help?
@@ -93,7 +88,7 @@ When I run sage and "attach conf.py", then the function `produce_latex_macro` wo
 archive/issue_comments_043121.json:
 ```json
 {
-    "body": "Ignore my previous remark.  This is now ready for review.\n\nTo add new macros, edit these lines in conf.py:\n\n```\nsage_macros = [(\"ZZ\", \"sage.rings.all\"),\n               (\"RR\", \"sage.rings.all\"),\n               (\"CC\", \"sage.rings.all\"),\n               (\"QQ\", \"sage.rings.all\"),\n               (\"QQbar\", \"sage.rings.all\"),\n               (\"GF\", \"sage.rings.all\", 17),\n               ]\n```\n\nThe file has comments explaining what to do...",
+    "body": "Ignore my previous remark.  This is now ready for review.\n\nTo add new macros, edit these lines in conf.py:\n\n```\nsage_macros = [(\"ZZ\", \"sage.rings.all\"),\n               (\"RR\", \"sage.rings.all\"),\n               (\"CC\", \"sage.rings.all\"),\n               (\"QQ\", \"sage.rings.all\"),\n               (\"QQbar\", \"sage.rings.all\"),\n               (\"GF\", \"sage.rings.all\", 17),\n               ]\n```\nThe file has comments explaining what to do...",
     "created_at": "2009-03-19T19:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -115,7 +110,6 @@ sage_macros = [("ZZ", "sage.rings.all"),
                ("GF", "sage.rings.all", 17),
                ]
 ```
-
 The file has comments explaining what to do...
 
 
@@ -143,7 +137,7 @@ We really should/need to make it so all of this plays well with jsMath: http://w
 archive/issue_comments_043123.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> We really should/need to make it so all of this plays well with jsMath: \n> http://www.math.union.edu/~dpvc/jsMath/authors/macros.html\n\nOkay, how about this patch?",
+    "body": "Replying to [comment:3 mhansen]:\n> We really should/need to make it so all of this plays well with jsMath: \n> http://www.math.union.edu/~dpvc/jsMath/authors/macros.html\n\n\nOkay, how about this patch?",
     "created_at": "2009-03-20T01:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -156,6 +150,7 @@ Replying to [comment:3 mhansen]:
 > We really should/need to make it so all of this plays well with jsMath: 
 > http://www.math.union.edu/~dpvc/jsMath/authors/macros.html
 
+
 Okay, how about this patch?
 
 
@@ -165,7 +160,7 @@ Okay, how about this patch?
 archive/issue_comments_043124.json:
 ```json
 {
-    "body": "(I clicked 'submit' too early.  Here's a longer reply.)\n\nReplying to [comment:3 mhansen]:\n> We really should/need to make it so all of this plays well with jsMath: \n> http://www.math.union.edu/~dpvc/jsMath/authors/macros.html\n\nOkay, how about this patch?  This seems to allow use of the imported macros in the notebook (e.g. by shift-clicking between cells and adding \"test: $\\ZZ$\") and in the live versions of the reference manual and the tutorial. Does that definitely mean that it's working well with jsMath?  I'm not sure how to test this...",
+    "body": "(I clicked 'submit' too early.  Here's a longer reply.)\n\nReplying to [comment:3 mhansen]:\n> We really should/need to make it so all of this plays well with jsMath: \n> http://www.math.union.edu/~dpvc/jsMath/authors/macros.html\n\n\nOkay, how about this patch?  This seems to allow use of the imported macros in the notebook (e.g. by shift-clicking between cells and adding \"test: $\\ZZ$\") and in the live versions of the reference manual and the tutorial. Does that definitely mean that it's working well with jsMath?  I'm not sure how to test this...",
     "created_at": "2009-03-20T02:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -179,6 +174,7 @@ archive/issue_comments_043124.json:
 Replying to [comment:3 mhansen]:
 > We really should/need to make it so all of this plays well with jsMath: 
 > http://www.math.union.edu/~dpvc/jsMath/authors/macros.html
+
 
 Okay, how about this patch?  This seems to allow use of the imported macros in the notebook (e.g. by shift-clicking between cells and adding "test: $\ZZ$") and in the live versions of the reference manual and the tutorial. Does that definitely mean that it's working well with jsMath?  I'm not sure how to test this...
 
@@ -225,7 +221,7 @@ Am I right that $\GF(2^n)$ won't work, from the patch it looks like it?
 archive/issue_comments_043127.json:
 ```json
 {
-    "body": "Replying to [comment:7 malb]:\n> Am I right that `$\\GF(2^n)$` won't work, from the patch it looks like it?\n\nIf you put ``\\GF{2^n}`` in a docstring (note the curly braces, not parentheses), then this will appear as `\"GF{2^n}\"` in a docstring, and it will be typeset as `\"\\mathbf{F}_{2^n}\"` in the reference manual.  In general, given ``\\GF{blah}``, then `blah` is not modified: it appears as is in both the docstring and the LaTeX which produces reference manual. It can be a complicated LaTeX expression, for example, and it should work fine.\n\nYou can test this by applying the patch and then putting `\\GF{2<sup>{3</sup>n}}` somewhere in the tutorial, for example, and then type \"sage -docbuild tutorial html\" (or \"pdf\" instead of \"html\") to check the output, or \"sage -docbuild tutorial latex\" to check the LaTeX source code.  \n\nIs that good enough, or were you hoping for something else?",
+    "body": "Replying to [comment:7 malb]:\n> Am I right that `$\\GF(2^n)$` won't work, from the patch it looks like it?\n\n\nIf you put ``\\GF{2^n}`` in a docstring (note the curly braces, not parentheses), then this will appear as `\"GF{2^n}\"` in a docstring, and it will be typeset as `\"\\mathbf{F}_{2^n}\"` in the reference manual.  In general, given ``\\GF{blah}``, then `blah` is not modified: it appears as is in both the docstring and the LaTeX which produces reference manual. It can be a complicated LaTeX expression, for example, and it should work fine.\n\nYou can test this by applying the patch and then putting `\\GF{2<sup>{3</sup>n}}` somewhere in the tutorial, for example, and then type \"sage -docbuild tutorial html\" (or \"pdf\" instead of \"html\") to check the output, or \"sage -docbuild tutorial latex\" to check the LaTeX source code.  \n\nIs that good enough, or were you hoping for something else?",
     "created_at": "2009-03-24T05:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -236,6 +232,7 @@ archive/issue_comments_043127.json:
 
 Replying to [comment:7 malb]:
 > Am I right that `$\GF(2^n)$` won't work, from the patch it looks like it?
+
 
 If you put ``\GF{2^n}`` in a docstring (note the curly braces, not parentheses), then this will appear as `"GF{2^n}"` in a docstring, and it will be typeset as `"\mathbf{F}_{2^n}"` in the reference manual.  In general, given ``\GF{blah}``, then `blah` is not modified: it appears as is in both the docstring and the LaTeX which produces reference manual. It can be a complicated LaTeX expression, for example, and it should work fine.
 
@@ -250,7 +247,7 @@ Is that good enough, or were you hoping for something else?
 archive/issue_comments_043128.json:
 ```json
 {
-    "body": "> If you put ``\\GF{2^n}`` in a docstring \n\nOf course, you need to be careful about single vs. double backslashes.  This should probably be ``\\\\GF{2^n}`` ...",
+    "body": "> If you put ``\\GF{2^n}`` in a docstring \n\n\nOf course, you need to be careful about single vs. double backslashes.  This should probably be ``\\\\GF{2^n}`` ...",
     "created_at": "2009-03-24T05:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -261,6 +258,7 @@ archive/issue_comments_043128.json:
 
 > If you put ``\GF{2^n}`` in a docstring 
 
+
 Of course, you need to be careful about single vs. double backslashes.  This should probably be ``\\GF{2^n}`` ...
 
 
@@ -270,7 +268,7 @@ Of course, you need to be careful about single vs. double backslashes.  This sho
 archive/issue_comments_043129.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> Is that good enough, or were you hoping for something else?\n\nAll good, sorry I didn't understand the patch properly. Thanks for explaining!",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> Is that good enough, or were you hoping for something else?\n\n\nAll good, sorry I didn't understand the patch properly. Thanks for explaining!",
     "created_at": "2009-03-24T10:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -282,6 +280,7 @@ archive/issue_comments_043129.json:
 Replying to [comment:8 jhpalmieri]:
 > Is that good enough, or were you hoping for something else?
 
+
 All good, sorry I didn't understand the patch properly. Thanks for explaining!
 
 
@@ -291,7 +290,7 @@ All good, sorry I didn't understand the patch properly. Thanks for explaining!
 archive/issue_comments_043130.json:
 ```json
 {
-    "body": "Here's an additional patch; apply on top of the other one.  This allows use of these macros interactively; for example, in the notebook you could do\n\n```\n%latex\n$\\ZZ$\n```\n\nand it will be typeset correctly.",
+    "body": "Here's an additional patch; apply on top of the other one.  This allows use of these macros interactively; for example, in the notebook you could do\n\n```\n%latex\n$\\ZZ$\n```\nand it will be typeset correctly.",
     "created_at": "2009-03-24T20:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -306,7 +305,6 @@ Here's an additional patch; apply on top of the other one.  This allows use of t
 %latex
 $\ZZ$
 ```
-
 and it will be typeset correctly.
 
 
@@ -518,7 +516,7 @@ I'm looking over this, and the code seems good, but I can't find any examples of
 archive/issue_comments_043140.json:
 ```json
 {
-    "body": "This patch doesn't actually add any examples in the documentation.  However, there are examples, recently added in Sage, which use these macros:\n\n* in sage/algebras/quatalg/quaternion_algebra.py, the functions `ideal`, `left_ideal` and `right_ideal` all use \\ZZ, \n\n* in sage/rings/polynomial/polynomial_element.pyx, `is_primitive` uses \\GF{-},\n\n* in sage/schemes/elliptic_curves/ell_rational_field.py, `modular_symbol` uses \\QQ.\n\nSo right now, those docstrings don't appear correctly in the html version of the reference manual, and they actually produce errors in the pdf version.  If you apply the patches here, those issues should be fixed.\n\nAlso as I said earlier:\n\n> You can test this by applying the patch and then putting `\"\\GF{q}\"` somewhere in the tutorial, for example, and then type  \"sage -docbuild tutorial html\" (or \"pdf\" instead of \"html\") to check the output, or \"sage -docbuild tutorial latex\" to check the LaTeX source code.\n\nDoes this answer your question?",
+    "body": "This patch doesn't actually add any examples in the documentation.  However, there are examples, recently added in Sage, which use these macros:\n\n* in sage/algebras/quatalg/quaternion_algebra.py, the functions `ideal`, `left_ideal` and `right_ideal` all use \\ZZ, \n\n* in sage/rings/polynomial/polynomial_element.pyx, `is_primitive` uses \\GF{-},\n\n* in sage/schemes/elliptic_curves/ell_rational_field.py, `modular_symbol` uses \\QQ.\n\nSo right now, those docstrings don't appear correctly in the html version of the reference manual, and they actually produce errors in the pdf version.  If you apply the patches here, those issues should be fixed.\n\nAlso as I said earlier:\n\n> You can test this by applying the patch and then putting `\"\\GF{q}\"` somewhere in the tutorial, for example, and then type  \"sage -docbuild tutorial html\" (or \"pdf\" instead of \"html\") to check the output, or \"sage -docbuild tutorial latex\" to check the LaTeX source code.\n\n\nDoes this answer your question?",
     "created_at": "2009-04-10T04:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -541,6 +539,7 @@ Also as I said earlier:
 
 > You can test this by applying the patch and then putting `"\GF{q}"` somewhere in the tutorial, for example, and then type  "sage -docbuild tutorial html" (or "pdf" instead of "html") to check the output, or "sage -docbuild tutorial latex" to check the LaTeX source code.
 
+
 Does this answer your question?
 
 
@@ -550,7 +549,7 @@ Does this answer your question?
 archive/issue_comments_043141.json:
 ```json
 {
-    "body": "Replying to [comment:17 jhpalmieri]:\n> Does this answer your question?\n\nYes, pretty much. I think most of my problems involve my own lack of knowledge about building the documentation, and the problems we still have with building it. But I got the tutorial to correctly show the macros in html, pdf, and text form.\n\nI've reviewed the patches \"new-macros-with-jsmath.patch\" and \"5555-second.patch\" and they are very nice. Works as advertised, good code, all doctests pass: positive review.",
+    "body": "Replying to [comment:17 jhpalmieri]:\n> Does this answer your question?\n\n\nYes, pretty much. I think most of my problems involve my own lack of knowledge about building the documentation, and the problems we still have with building it. But I got the tutorial to correctly show the macros in html, pdf, and text form.\n\nI've reviewed the patches \"new-macros-with-jsmath.patch\" and \"5555-second.patch\" and they are very nice. Works as advertised, good code, all doctests pass: positive review.",
     "created_at": "2009-04-10T09:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -561,6 +560,7 @@ archive/issue_comments_043141.json:
 
 Replying to [comment:17 jhpalmieri]:
 > Does this answer your question?
+
 
 Yes, pretty much. I think most of my problems involve my own lack of knowledge about building the documentation, and the problems we still have with building it. But I got the tutorial to correctly show the macros in html, pdf, and text form.
 
@@ -573,7 +573,7 @@ I've reviewed the patches "new-macros-with-jsmath.patch" and "5555-second.patch"
 archive/issue_comments_043142.json:
 ```json
 {
-    "body": "Did someone not run doctests? :)\n\n\n```\nsage -t -long \"devel/sage/sage/misc/latex.py\"               \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/misc/latex.py\", line 371:\n    sage: _latex_file_(3, title=\"The number three\")\nExpected:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf The number three}\\\\end{center}\\n\\\\vspace{40mm}\\\\[3\\\\]\\n\\\\end{document}'\nGot:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\n\\\\newcommand{\\\\ZZ}{\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\RR}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CC}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\QQ}\n{\\\\mathbf{Q}}\\n\\\\newcommand{\\\\QQbar}{\\\\overline{\\\\mathbf{Q}}}\\n\\\\newcommand{\\\\GF}\n[1]{\\\\mathbf{F}_{#1}}\\n\\\\newcommand{\\\\Zp}[1]{\\\\mathbf{Z}_{#1}}\\n\\\\newcommand{\\\\Qp}\n[1]{\\\\mathbf{Q}_{#1}}\\n\\\\newcommand{\\\\Zmod}[1]{\\\\mathbf{Z}/#1\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\CDF}{\\\\text{Complex Double Field}}\\n\\\\newcommand{\\\\CIF}{\\\\mathbf{C}}\n\\n\\\\newcommand{\\\\CLF}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\RDF}{\\\\mathbf{R}}\n\\n\\\\newcommand{\\\\RIF}{\\\\I \\\\R}\\n\\\\newcommand{\\\\RLF}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\RQDF}\n{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CFF}{\\\\mathbf{CFF}}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf The number three}\\\\end{center}\\n\\\\vspace{40mm}\\\\[3\\\\]\\n\\\\end{document}'\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/misc/latex.py\", line 373:\n    sage: _latex_file_([7, 8, 9], title=\"Why was six afraid of seven?\", sep='\\\\vfill\\\\hrule\\\\vfill')\nExpected:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf Why was six afraid of seven?}\\\\end{center}\\n\\\\vspace{40mm}\\\\[7\\\\]\n\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[8\\\\]\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[9\n\\\\]\\n\\\\end{document}'\nGot:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\n\\\\newcommand{\\\\ZZ}{\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\RR}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CC}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\QQ}\n{\\\\mathbf{Q}}\\n\\\\newcommand{\\\\QQbar}{\\\\overline{\\\\mathbf{Q}}}\\n\\\\newcommand{\\\\GF}\n[1]{\\\\mathbf{F}_{#1}}\\n\\\\newcommand{\\\\Zp}[1]{\\\\mathbf{Z}_{#1}}\\n\\\\newcommand{\\\\Qp}\n[1]{\\\\mathbf{Q}_{#1}}\\n\\\\newcommand{\\\\Zmod}[1]{\\\\mathbf{Z}/#1\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\CDF}{\\\\text{Complex Double Field}}\\n\\\\newcommand{\\\\CIF}{\\\\mathbf{C}}\n\\n\\\\newcommand{\\\\CLF}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\RDF}{\\\\mathbf{R}}\n\\n\\\\newcommand{\\\\RIF}{\\\\I \\\\R}\\n\\\\newcommand{\\\\RLF}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\RQDF}\n{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CFF}{\\\\mathbf{CFF}}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf Why was six afraid of seven?}\\\\end{center}\\n\\\\vspace{40mm}\\\\[7\\\\]\n\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[8\\\\]\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[9\n\\\\]\\n\\\\end{document}'\n**********************************************************************\n```\n\nOnce this obvious failure is fixed feel free to reinstate the positive review.\n\nCheers,\n\nMichael",
+    "body": "Did someone not run doctests? :)\n\n```\nsage -t -long \"devel/sage/sage/misc/latex.py\"               \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/misc/latex.py\", line 371:\n    sage: _latex_file_(3, title=\"The number three\")\nExpected:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf The number three}\\\\end{center}\\n\\\\vspace{40mm}\\\\[3\\\\]\\n\\\\end{document}'\nGot:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\n\\\\newcommand{\\\\ZZ}{\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\RR}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CC}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\QQ}\n{\\\\mathbf{Q}}\\n\\\\newcommand{\\\\QQbar}{\\\\overline{\\\\mathbf{Q}}}\\n\\\\newcommand{\\\\GF}\n[1]{\\\\mathbf{F}_{#1}}\\n\\\\newcommand{\\\\Zp}[1]{\\\\mathbf{Z}_{#1}}\\n\\\\newcommand{\\\\Qp}\n[1]{\\\\mathbf{Q}_{#1}}\\n\\\\newcommand{\\\\Zmod}[1]{\\\\mathbf{Z}/#1\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\CDF}{\\\\text{Complex Double Field}}\\n\\\\newcommand{\\\\CIF}{\\\\mathbf{C}}\n\\n\\\\newcommand{\\\\CLF}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\RDF}{\\\\mathbf{R}}\n\\n\\\\newcommand{\\\\RIF}{\\\\I \\\\R}\\n\\\\newcommand{\\\\RLF}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\RQDF}\n{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CFF}{\\\\mathbf{CFF}}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf The number three}\\\\end{center}\\n\\\\vspace{40mm}\\\\[3\\\\]\\n\\\\end{document}'\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/misc/latex.py\", line 373:\n    sage: _latex_file_([7, 8, 9], title=\"Why was six afraid of seven?\", sep='\\\\vfill\\\\hrule\\\\vfill')\nExpected:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf Why was six afraid of seven?}\\\\end{center}\\n\\\\vspace{40mm}\\\\[7\\\\]\n\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[8\\\\]\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[9\n\\\\]\\n\\\\end{document}'\nGot:\n    '\\\\documentclass{article}\\\\usepackage{fullpage}\\\\usepackage{amsmath}\n\\n\\\\usepackage{amssymb}\\n\\\\usepackage{amsfonts}\\\\usepackage{graphicx}\n\\\\usepackage{pstricks}\\\\pagestyle{empty}\\n\\n\\n\\\\newcommand{\\\\ZZ}{\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\RR}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CC}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\QQ}\n{\\\\mathbf{Q}}\\n\\\\newcommand{\\\\QQbar}{\\\\overline{\\\\mathbf{Q}}}\\n\\\\newcommand{\\\\GF}\n[1]{\\\\mathbf{F}_{#1}}\\n\\\\newcommand{\\\\Zp}[1]{\\\\mathbf{Z}_{#1}}\\n\\\\newcommand{\\\\Qp}\n[1]{\\\\mathbf{Q}_{#1}}\\n\\\\newcommand{\\\\Zmod}[1]{\\\\mathbf{Z}/#1\\\\mathbf{Z}}\n\\n\\\\newcommand{\\\\CDF}{\\\\text{Complex Double Field}}\\n\\\\newcommand{\\\\CIF}{\\\\mathbf{C}}\n\\n\\\\newcommand{\\\\CLF}{\\\\mathbf{C}}\\n\\\\newcommand{\\\\RDF}{\\\\mathbf{R}}\n\\n\\\\newcommand{\\\\RIF}{\\\\I \\\\R}\\n\\\\newcommand{\\\\RLF}{\\\\mathbf{R}}\\n\\\\newcommand{\\\\RQDF}\n{\\\\mathbf{R}}\\n\\\\newcommand{\\\\CFF}{\\\\mathbf{CFF}}\\n\\n\\\\begin{document}\\n\\\\begin{center}\n{\\\\Large\\\\bf Why was six afraid of seven?}\\\\end{center}\\n\\\\vspace{40mm}\\\\[7\\\\]\n\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[8\\\\]\\n\\n\\\\vfill\\\\hrule\\\\vfill\\n\\n\\\\[9\n\\\\]\\n\\\\end{document}'\n**********************************************************************\n```\nOnce this obvious failure is fixed feel free to reinstate the positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-10T21:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -583,7 +583,6 @@ archive/issue_comments_043142.json:
 ```
 
 Did someone not run doctests? :)
-
 
 ```
 sage -t -long "devel/sage/sage/misc/latex.py"               
@@ -635,7 +634,6 @@ Got:
 \\]\n\\end{document}'
 **********************************************************************
 ```
-
 Once this obvious failure is fixed feel free to reinstate the positive review.
 
 Cheers,
@@ -743,7 +741,7 @@ archive/issue_events_013072.json:
 archive/issue_comments_043147.json:
 ```json
 {
-    "body": "Replying to [comment:19 mabshoff]:\n> Did someone not run doctests? :)\n\nThat's weird...I doctested the whole tree and everything worked. I'm glad to see it was fixed and merged, though.",
+    "body": "Replying to [comment:19 mabshoff]:\n> Did someone not run doctests? :)\n\n\nThat's weird...I doctested the whole tree and everything worked. I'm glad to see it was fixed and merged, though.",
     "created_at": "2009-04-11T02:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
@@ -754,5 +752,6 @@ archive/issue_comments_043147.json:
 
 Replying to [comment:19 mabshoff]:
 > Did someone not run doctests? :)
+
 
 That's weird...I doctested the whole tree and everything worked. I'm glad to see it was fixed and merged, though.

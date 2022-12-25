@@ -3,7 +3,7 @@
 archive/issues_006948.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrancois Maltey wrote on sage-support:\n\n\n```\nvar(\"a,b,c\")\nexp(a)^2 # returns exp(2a) is right\nexp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1\nexp(a)^b # returns exp(a*b) is wrong\n```\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/330a015bf640a4f3/0ddfdd5a4e021579\n\nIssue created by migration from https://trac.sagemath.org/ticket/6948\n\n",
+    "body": "Assignee: @burcin\n\nFrancois Maltey wrote on sage-support:\n\n```\nvar(\"a,b,c\")\nexp(a)^2 # returns exp(2a) is right\nexp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1\nexp(a)^b # returns exp(a*b) is wrong\n```\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/330a015bf640a4f3/0ddfdd5a4e021579\n\nIssue created by migration from https://trac.sagemath.org/ticket/6948\n\n",
     "created_at": "2009-09-17T13:48:17Z",
     "labels": [
         "component: symbolics",
@@ -21,14 +21,12 @@ Assignee: @burcin
 
 Francois Maltey wrote on sage-support:
 
-
 ```
 var("a,b,c")
 exp(a)^2 # returns exp(2a) is right
 exp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1
 exp(a)^b # returns exp(a*b) is wrong
 ```
-
 
 The thread is here:
 
@@ -117,7 +115,7 @@ New pynac package available at #6993.
 archive/issue_comments_057341.json:
 ```json
 {
-    "body": "Nice, but does it actually fix the examples provided?  \n\n```\nsage: exp(a)^(1/2)\nsqrt(e^a)\n```\n\nI guess that's okay.  But\n\n```\nsage: exp(a)^(1/3)\ne^a^(1/3)\nsage: exp(a^(1/3))\ne^(a^(1/3))\n```\n\nI think there are missing parentheses in the first example, particularly because it's not typeset.   Even if that is a convention, which I'm not so sure of, the dictum is that it's better to be explicit.  \n\nI also get a doctest failure (not mentioned in the Pynac upgrade ticket) in product and quotient rule differentiation in calculus/tests.py, but it looks like that's the one in #6524, so it's properly speaking another issue, I guess.",
+    "body": "Nice, but does it actually fix the examples provided?  \n\n```\nsage: exp(a)^(1/2)\nsqrt(e^a)\n```\nI guess that's okay.  But\n\n```\nsage: exp(a)^(1/3)\ne^a^(1/3)\nsage: exp(a^(1/3))\ne^(a^(1/3))\n```\nI think there are missing parentheses in the first example, particularly because it's not typeset.   Even if that is a convention, which I'm not so sure of, the dictum is that it's better to be explicit.  \n\nI also get a doctest failure (not mentioned in the Pynac upgrade ticket) in product and quotient rule differentiation in calculus/tests.py, but it looks like that's the one in #6524, so it's properly speaking another issue, I guess.",
     "created_at": "2009-09-23T01:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
@@ -132,7 +130,6 @@ Nice, but does it actually fix the examples provided?
 sage: exp(a)^(1/2)
 sqrt(e^a)
 ```
-
 I guess that's okay.  But
 
 ```
@@ -141,7 +138,6 @@ e^a^(1/3)
 sage: exp(a^(1/3))
 e^(a^(1/3))
 ```
-
 I think there are missing parentheses in the first example, particularly because it's not typeset.   Even if that is a convention, which I'm not so sure of, the dictum is that it's better to be explicit.  
 
 I also get a doctest failure (not mentioned in the Pynac upgrade ticket) in product and quotient rule differentiation in calculus/tests.py, but it looks like that's the one in #6524, so it's properly speaking another issue, I guess.

@@ -68,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088947.json:
 ```json
 {
-    "body": "Excellent ! You can set this one to \"positive review\" immediately after #9375 :-)\n\nOne unimportant detail, though... You used subgraph_search in your doctests, the follwing way :\n\n\n```\nsage: s_K = g.subgraph_search(K_n1, induced=True) \nsage: s_P = g.subgraph_search(P_n2, induced=True) \nsage: K_n1.is_isomorphic(s_K) \n```\n\n\nWell, subgraph_search should of course *always* return subgraphs isomorphic to S_k. Actually, the order of the vertices should even be the same, but when it finds nothing, it returns a None, which is_isomorphic may not like... It's not really a problem in this case, as this would report a doctest failure anyway :-)\n\nNathann",
+    "body": "Excellent ! You can set this one to \"positive review\" immediately after #9375 :-)\n\nOne unimportant detail, though... You used subgraph_search in your doctests, the follwing way :\n\n```\nsage: s_K = g.subgraph_search(K_n1, induced=True) \nsage: s_P = g.subgraph_search(P_n2, induced=True) \nsage: K_n1.is_isomorphic(s_K) \n```\n\nWell, subgraph_search should of course *always* return subgraphs isomorphic to S_k. Actually, the order of the vertices should even be the same, but when it finds nothing, it returns a None, which is_isomorphic may not like... It's not really a problem in this case, as this would report a doctest failure anyway :-)\n\nNathann",
     "created_at": "2010-07-16T03:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9375",
     "type": "issue_comment",
@@ -81,13 +81,11 @@ Excellent ! You can set this one to "positive review" immediately after #9375 :-
 
 One unimportant detail, though... You used subgraph_search in your doctests, the follwing way :
 
-
 ```
 sage: s_K = g.subgraph_search(K_n1, induced=True) 
 sage: s_P = g.subgraph_search(P_n2, induced=True) 
 sage: K_n1.is_isomorphic(s_K) 
 ```
-
 
 Well, subgraph_search should of course *always* return subgraphs isomorphic to S_k. Actually, the order of the vertices should even be the same, but when it finds nothing, it returns a None, which is_isomorphic may not like... It's not really a problem in this case, as this would report a doctest failure anyway :-)
 
@@ -100,7 +98,7 @@ Nathann
 archive/issue_comments_088948.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> You can set this one to \"positive review\" immediately after #9375 :-)\n\nI don't understand what you mean. Care to elaborate on this point?",
+    "body": "Replying to [comment:2 ncohen]:\n> You can set this one to \"positive review\" immediately after #9375 :-)\n\n\nI don't understand what you mean. Care to elaborate on this point?",
     "created_at": "2010-07-16T05:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9375",
     "type": "issue_comment",
@@ -111,6 +109,7 @@ archive/issue_comments_088948.json:
 
 Replying to [comment:2 ncohen]:
 > You can set this one to "positive review" immediately after #9375 :-)
+
 
 I don't understand what you mean. Care to elaborate on this point?
 

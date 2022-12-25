@@ -260,7 +260,7 @@ Works and seems sensible.  Makes the test take half the time on one of my test m
 archive/issue_comments_032898.json:
 ```json
 {
-    "body": "There is one doctest failure issue here:\n\n```\nsage -t -long devel/sage/sage/modules/free_module.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/modules/free_module.py\", line 1164:\n    sage: K = S.integral_structure(); K\nExpected:\n    Free module of degree 19 and rank 8 over Integer Ring\n    Echelon basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    ...\nGot:\n    Free module of degree 19 and rank 8 over Integer Ring\n    User basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  1  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  0 -1  1]\n    [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  1 -1]\n**********************************************************************\n```\n\nChanging this is simple, but I would like to know if the experts think this change is justified.\n\nCheers,\n\nMichael",
+    "body": "There is one doctest failure issue here:\n\n```\nsage -t -long devel/sage/sage/modules/free_module.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/modules/free_module.py\", line 1164:\n    sage: K = S.integral_structure(); K\nExpected:\n    Free module of degree 19 and rank 8 over Integer Ring\n    Echelon basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    ...\nGot:\n    Free module of degree 19 and rank 8 over Integer Ring\n    User basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  1  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  0 -1  1]\n    [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  1 -1]\n**********************************************************************\n```\nChanging this is simple, but I would like to know if the experts think this change is justified.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T23:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
@@ -294,7 +294,6 @@ Got:
     [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  1 -1]
 **********************************************************************
 ```
-
 Changing this is simple, but I would like to know if the experts think this change is justified.
 
 Cheers,

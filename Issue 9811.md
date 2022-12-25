@@ -3,7 +3,7 @@
 archive/issues_009811.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\n\n```\nsage: C = Cone([(1,0,0), (0,1,0), (1,0,1), (0,1,1)])\nsage: F = Fan([C]).make_simplicial()\nsage: [cone.ambient_ray_indices() for cone in F]\n[(1, 3, 0), (1, 2, 0)]\n```\n\nWhile the output is mathematically correct, ambient ray indices are supposed to be sorted and violating this condition can lead to errors later. The attached patch adds extra sorting in the proper place. This means that polytopes constructed during subdivision can no longer be cached because of the potentially wrong vertex order, which is OK.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9812\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\n```\nsage: C = Cone([(1,0,0), (0,1,0), (1,0,1), (0,1,1)])\nsage: F = Fan([C]).make_simplicial()\nsage: [cone.ambient_ray_indices() for cone in F]\n[(1, 3, 0), (1, 2, 0)]\n```\nWhile the output is mathematically correct, ambient ray indices are supposed to be sorted and violating this condition can lead to errors later. The attached patch adds extra sorting in the proper place. This means that polytopes constructed during subdivision can no longer be cached because of the potentially wrong vertex order, which is OK.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9812\n\n",
     "created_at": "2010-08-26T22:23:58Z",
     "labels": [
         "component: geometry",
@@ -20,14 +20,12 @@ Assignee: mhampton
 
 CC:  @vbraun
 
-
 ```
 sage: C = Cone([(1,0,0), (0,1,0), (1,0,1), (0,1,1)])
 sage: F = Fan([C]).make_simplicial()
 sage: [cone.ambient_ray_indices() for cone in F]
 [(1, 3, 0), (1, 2, 0)]
 ```
-
 While the output is mathematically correct, ambient ray indices are supposed to be sorted and violating this condition can lead to errors later. The attached patch adds extra sorting in the proper place. This means that polytopes constructed during subdivision can no longer be cached because of the potentially wrong vertex order, which is OK.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9812

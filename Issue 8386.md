@@ -3,7 +3,7 @@
 archive/issues_008386.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: iet combinatoric\n\nThere was a bug for iet.Permutation comparisons. We have the following\n\n```\nsage: p = iet.Permutation('a b','b a')\nsage: q = iet.Permutation('b a','a b')\nsage: p == q\nTrue\n```\n\n\nThe patch correct this feature (we get wrong) and rebased the datatype used for iet.Permutations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8386\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: iet combinatoric\n\nThere was a bug for iet.Permutation comparisons. We have the following\n\n```\nsage: p = iet.Permutation('a b','b a')\nsage: q = iet.Permutation('b a','a b')\nsage: p == q\nTrue\n```\n\nThe patch correct this feature (we get wrong) and rebased the datatype used for iet.Permutations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8386\n\n",
     "created_at": "2010-02-27T13:06:33Z",
     "labels": [
         "component: algebra",
@@ -30,7 +30,6 @@ sage: q = iet.Permutation('b a','a b')
 sage: p == q
 True
 ```
-
 
 The patch correct this feature (we get wrong) and rebased the datatype used for iet.Permutations.
 
@@ -243,7 +242,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074895.json:
 ```json
 {
-    "body": "This seems to work with 4.8 but two doctests consistently fail with recent 5.0 betas:\n\n```\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta12-patchbot/devel/sage-8386/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1348:\n    sage: c1 != c2_hyp\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_38[13]>\", line 1, in <module>\n        c1 != c2_hyp###line 1348:\n    sage: c1 != c2_hyp\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/lib/python/site-packages/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1364, in __cmp__\n        return type.__cmp__(type(self),type(other))\n    AttributeError: type object 'type' has no attribute '__cmp__'\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta12-patchbot/devel/sage-8386/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1350:\n    sage: c2_hyp != c2_odd\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_38[14]>\", line 1, in <module>\n        c2_hyp != c2_odd###line 1350:\n    sage: c2_hyp != c2_odd\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/lib/python/site-packages/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1364, in __cmp__\n        return type.__cmp__(type(self),type(other))\n    AttributeError: type object 'type' has no attribute '__cmp__'\n**********************************************************************\n```\n",
+    "body": "This seems to work with 4.8 but two doctests consistently fail with recent 5.0 betas:\n\n```\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta12-patchbot/devel/sage-8386/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1348:\n    sage: c1 != c2_hyp\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_38[13]>\", line 1, in <module>\n        c1 != c2_hyp###line 1348:\n    sage: c1 != c2_hyp\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/lib/python/site-packages/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1364, in __cmp__\n        return type.__cmp__(type(self),type(other))\n    AttributeError: type object 'type' has no attribute '__cmp__'\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta12-patchbot/devel/sage-8386/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1350:\n    sage: c2_hyp != c2_odd\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_38[14]>\", line 1, in <module>\n        c2_hyp != c2_odd###line 1350:\n    sage: c2_hyp != c2_odd\n      File \"/storage/masiao/sage-5.0.beta12-patchbot/local/lib/python/site-packages/sage/dynamics/flat_surfaces/abelian_strata.py\", line 1364, in __cmp__\n        return type.__cmp__(type(self),type(other))\n    AttributeError: type object 'type' has no attribute '__cmp__'\n**********************************************************************\n```",
     "created_at": "2012-04-06T10:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -291,7 +290,6 @@ Exception raised:
     AttributeError: type object 'type' has no attribute '__cmp__'
 **********************************************************************
 ```
-
 
 
 
@@ -665,7 +663,7 @@ So, given that all tests pass **now**, it would be great if my work is not lost 
 archive/issue_comments_074914.json:
 ```json
 {
-    "body": "Replying to [comment:25 chapoton]:\n> Well, I did not now about hg mv.\n> \n> I have done a lot of work to make the re-location function, including some work on the toc-trees that was rather painful.\n> \n> And I has also taken the opportunity to \n> - put all the raise syntax into python3 form\n> - correct orthographic errors\n> - make the code much closer to pep8 level\n> - removed unused import statements\n> - make the desired separation into interval_exchanges and flat_surfaces\n> \n> I spent a few **hours** today on that, and I have already spent a lot of time on this ticket some **months** ago, but nobody did react at that time.\n> \n> So, given that all tests pass **now**, it would be great if my work is not lost again.\n\nI will have a closer look **right now** at your patch. Nevertheless patchbot complains (blue color instead of green) because the doctest framework now wants \"....:\" instead of \"...\" in multiline doctests.",
+    "body": "Replying to [comment:25 chapoton]:\n> Well, I did not now about hg mv.\n> \n> I have done a lot of work to make the re-location function, including some work on the toc-trees that was rather painful.\n> \n> And I has also taken the opportunity to \n> - put all the raise syntax into python3 form\n> - correct orthographic errors\n> - make the code much closer to pep8 level\n> - removed unused import statements\n> - make the desired separation into interval_exchanges and flat_surfaces\n> \n> I spent a few **hours** today on that, and I have already spent a lot of time on this ticket some **months** ago, but nobody did react at that time.\n> \n> So, given that all tests pass **now**, it would be great if my work is not lost again.\n\n\nI will have a closer look **right now** at your patch. Nevertheless patchbot complains (blue color instead of green) because the doctest framework now wants \"....:\" instead of \"...\" in multiline doctests.",
     "created_at": "2013-05-19T17:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -689,6 +687,7 @@ Replying to [comment:25 chapoton]:
 > I spent a few **hours** today on that, and I have already spent a lot of time on this ticket some **months** ago, but nobody did react at that time.
 > 
 > So, given that all tests pass **now**, it would be great if my work is not lost again.
+
 
 I will have a closer look **right now** at your patch. Nevertheless patchbot complains (blue color instead of green) because the doctest framework now wants "....:" instead of "..." in multiline doctests.
 
@@ -723,7 +722,7 @@ let us see what the patchbot says
 archive/issue_comments_074916.json:
 ```json
 {
-    "body": "Replying to [comment:25 chapoton]:\n> Well, I did not now about hg mv.\n> ...\n> So, given that all tests pass **now**, it would be great if my work is not lost again.\n\nYou can quickly recreate your patch using `hg mv` as follow:\n\n- With your patch applied, backup the files that have been moved/modified\n- Unapply the patch\n- Replay the moving the files using `hg mv`\n- Reinstate the backed-up files on top of it.\n- hg qnew a new patch with those, and discard the other one.\n\nYou might want to actually do two patches, one with just the moving,\nand the other with the changes.\n\nBtw: thanks Fr\u00e9d\u00e9ric for all the hard work you are doing lately\n(cleaning, reviewing and more ...)!\n\nCheers,\n                                 Nicolas",
+    "body": "Replying to [comment:25 chapoton]:\n> Well, I did not now about hg mv.\n> ...\n> So, given that all tests pass **now**, it would be great if my work is not lost again.\n\n\nYou can quickly recreate your patch using `hg mv` as follow:\n\n- With your patch applied, backup the files that have been moved/modified\n- Unapply the patch\n- Replay the moving the files using `hg mv`\n- Reinstate the backed-up files on top of it.\n- hg qnew a new patch with those, and discard the other one.\n\nYou might want to actually do two patches, one with just the moving,\nand the other with the changes.\n\nBtw: thanks Fr\u00e9d\u00e9ric for all the hard work you are doing lately\n(cleaning, reviewing and more ...)!\n\nCheers,\n                                 Nicolas",
     "created_at": "2013-05-19T18:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -736,6 +735,7 @@ Replying to [comment:25 chapoton]:
 > Well, I did not now about hg mv.
 > ...
 > So, given that all tests pass **now**, it would be great if my work is not lost again.
+
 
 You can quickly recreate your patch using `hg mv` as follow:
 
@@ -779,7 +779,7 @@ Thanks Nicolas for this good advice. I am doing that, and I will upload 2 patche
 archive/issue_comments_074918.json:
 ```json
 {
-    "body": "There is even an option\n\n```\nhg mv --after\n```\n\nwhich allows one to mark the move after it has happened. But it doesn't work well with queues, as a patch which has been `qrefresh`ed is considered committed. So you need a non-committed version of the patch: apply the patch \"by hand\" using `patch -p1 <x.patch`, then `hg mv --after`, then `hg commit` should work (but I haven't really tried).",
+    "body": "There is even an option\n\n```\nhg mv --after\n```\nwhich allows one to mark the move after it has happened. But it doesn't work well with queues, as a patch which has been `qrefresh`ed is considered committed. So you need a non-committed version of the patch: apply the patch \"by hand\" using `patch -p1 <x.patch`, then `hg mv --after`, then `hg commit` should work (but I haven't really tried).",
     "created_at": "2013-05-19T19:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -793,7 +793,6 @@ There is even an option
 ```
 hg mv --after
 ```
-
 which allows one to mark the move after it has happened. But it doesn't work well with queues, as a patch which has been `qrefresh`ed is considered committed. So you need a non-committed version of the patch: apply the patch "by hand" using `patch -p1 <x.patch`, then `hg mv --after`, then `hg commit` should work (but I haven't really tried).
 
 
@@ -827,7 +826,7 @@ apply trac_8386_really_just_moving-fc.patch trac_8386_big_clean_fc.patch
 archive/issue_comments_074920.json:
 ```json
 {
-    "body": "Replying to [comment:31 chapoton]:\n> ok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.\n\nIt also happens for me. After removing the directory doc/output it works fine again (but you need to rebuild everything with \"sage -docbuild all html\"). If there is a less extremal solution then I would be happy to know.\n\napply trac_8386_really_just_moving-fc.patch trac_8386_big_clean_fc.patch",
+    "body": "Replying to [comment:31 chapoton]:\n> ok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.\n\n\nIt also happens for me. After removing the directory doc/output it works fine again (but you need to rebuild everything with \"sage -docbuild all html\"). If there is a less extremal solution then I would be happy to know.\n\napply trac_8386_really_just_moving-fc.patch trac_8386_big_clean_fc.patch",
     "created_at": "2013-05-19T20:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -838,6 +837,7 @@ archive/issue_comments_074920.json:
 
 Replying to [comment:31 chapoton]:
 > ok, here it is. It seems that my doc framework is now completely broken (I have by mistake removed the output directory and now docbuild complains a lot about intersphinx and missing files), so I do not know if the doc is ok.
+
 
 It also happens for me. After removing the directory doc/output it works fine again (but you need to rebuild everything with "sage -docbuild all html"). If there is a less extremal solution then I would be happy to know.
 
@@ -1067,7 +1067,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_074932.json:
 ```json
 {
-    "body": "Never use `assert` to check user input, use `raise TypeError()` or other exceptions for that.\nAn `AssertionError` appearing in a public function is by definition a bug.\n\nExample:\n\n```\nsage: QuadraticStratum(\"foo\")\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n<ipython-input-2-ba2d4d1c0bfc> in <module>()\n----> 1 QuadraticStratum(\"foo\")\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__call__ (sage/misc/lazy_import.c:2475)()\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__call__ (sage/misc/lazy_import.c:2475)()\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/dynamics/flat_surfaces/quadratic_strata.pyc in __init__(self, *l)\n     30         else:\n     31             for i in l:\n---> 32                 assert(isinstance(i, (int, Integer)))\n     33             self._zeroes = sorted(list(l), reverse=True)\n     34 \n\nAssertionError: \n```\n",
+    "body": "Never use `assert` to check user input, use `raise TypeError()` or other exceptions for that.\nAn `AssertionError` appearing in a public function is by definition a bug.\n\nExample:\n\n```\nsage: QuadraticStratum(\"foo\")\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n<ipython-input-2-ba2d4d1c0bfc> in <module>()\n----> 1 QuadraticStratum(\"foo\")\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__call__ (sage/misc/lazy_import.c:2475)()\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__call__ (sage/misc/lazy_import.c:2475)()\n\n/mazur/release/merger/sage-5.10/local/lib/python2.7/site-packages/sage/dynamics/flat_surfaces/quadratic_strata.pyc in __init__(self, *l)\n     30         else:\n     31             for i in l:\n---> 32                 assert(isinstance(i, (int, Integer)))\n     33             self._zeroes = sorted(list(l), reverse=True)\n     34 \n\nAssertionError: \n```",
     "created_at": "2013-06-18T17:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8386",
     "type": "issue_comment",
@@ -1101,7 +1101,6 @@ AssertionError                            Traceback (most recent call last)
 
 AssertionError: 
 ```
-
 
 
 

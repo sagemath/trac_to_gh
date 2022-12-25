@@ -131,7 +131,7 @@ What are your thoughts about
 archive/issue_comments_062773.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> What are your thoughts about\n> \n>  * [On packaging](http://www.b-list.org/weblog/2008/dec/14/packaging/)\n>  * [A Few Corrections To \u201cOn Packaging\u201d](http://blog.ianbicking.org/2008/12/14/a-few-corrections-to-on-packaging/)\n> \n> ?  I found these links at [Tools of the Modern Python Hacker: Virtualenv, Fabric and Pip](http://clemesha.org/blog/2009/jul/05/modern-python-hacker-tools-virtualenv-fabric-pip/).\n\nThese tools are orthogonal to usage of `setuptools`, to note.\n\nI personally make use of Virtualenv and Pip all the time for deployment. They're very useful for keeping one's site-packages clean.",
+    "body": "Replying to [comment:2 mpatel]:\n> What are your thoughts about\n> \n> * [On packaging](http://www.b-list.org/weblog/2008/dec/14/packaging/)\n> * [A Few Corrections To \u201cOn Packaging\u201d](http://blog.ianbicking.org/2008/12/14/a-few-corrections-to-on-packaging/)\n> \n> ?  I found these links at [Tools of the Modern Python Hacker: Virtualenv, Fabric and Pip](http://clemesha.org/blog/2009/jul/05/modern-python-hacker-tools-virtualenv-fabric-pip/).\n\n\nThese tools are orthogonal to usage of `setuptools`, to note.\n\nI personally make use of Virtualenv and Pip all the time for deployment. They're very useful for keeping one's site-packages clean.",
     "created_at": "2009-11-15T06:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -143,10 +143,11 @@ archive/issue_comments_062773.json:
 Replying to [comment:2 mpatel]:
 > What are your thoughts about
 > 
->  * [On packaging](http://www.b-list.org/weblog/2008/dec/14/packaging/)
->  * [A Few Corrections To “On Packaging”](http://blog.ianbicking.org/2008/12/14/a-few-corrections-to-on-packaging/)
+> * [On packaging](http://www.b-list.org/weblog/2008/dec/14/packaging/)
+> * [A Few Corrections To “On Packaging”](http://blog.ianbicking.org/2008/12/14/a-few-corrections-to-on-packaging/)
 > 
 > ?  I found these links at [Tools of the Modern Python Hacker: Virtualenv, Fabric and Pip](http://clemesha.org/blog/2009/jul/05/modern-python-hacker-tools-virtualenv-fabric-pip/).
+
 
 These tools are orthogonal to usage of `setuptools`, to note.
 
@@ -181,7 +182,7 @@ On #7447: Can we query the installed version of a package with `setuptools` and/
 archive/issue_comments_062775.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> [...]\n> On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?\n\nI believe something like this should do the trick:\n\n\n```\nfrom pkg_resources import Requirement, working_set\nversion = working_set.find9Requirement.parse('sagenb')).version\n```\n",
+    "body": "Replying to [comment:4 mpatel]:\n> [...]\n> On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?\n\n\nI believe something like this should do the trick:\n\n```\nfrom pkg_resources import Requirement, working_set\nversion = working_set.find9Requirement.parse('sagenb')).version\n```",
     "created_at": "2009-11-15T08:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -194,8 +195,8 @@ Replying to [comment:4 mpatel]:
 > [...]
 > On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?
 
-I believe something like this should do the trick:
 
+I believe something like this should do the trick:
 
 ```
 from pkg_resources import Requirement, working_set
@@ -204,13 +205,12 @@ version = working_set.find9Requirement.parse('sagenb')).version
 
 
 
-
 ---
 
 archive/issue_comments_062776.json:
 ```json
 {
-    "body": "Replying to [comment:5 timdumol]:\n> Replying to [comment:4 mpatel]:\n> > [...]\n> > On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?\n> \n> I believe something like this should do the trick:\n> \n> {{{\n> from pkg_resources import Requirement, working_set\n> version = working_set.find9Requirement.parse('sagenb')).version\n> }}}\n\nSorry, I meant `working_set.find(Requirement.parse('sagenb')).version`",
+    "body": "Replying to [comment:5 timdumol]:\n> Replying to [comment:4 mpatel]:\n> > [...]\n> > On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?\n\n> \n> I believe something like this should do the trick:\n> \n> \n> ```\n> from pkg_resources import Requirement, working_set\n> version = working_set.find9Requirement.parse('sagenb')).version\n> ```\n\n\nSorry, I meant `working_set.find(Requirement.parse('sagenb')).version`",
     "created_at": "2009-11-15T08:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -223,13 +223,16 @@ Replying to [comment:5 timdumol]:
 > Replying to [comment:4 mpatel]:
 > > [...]
 > > On #7447: Can we query the installed version of a package with `setuptools` and/or `pip`?
+
 > 
 > I believe something like this should do the trick:
 > 
-> {{{
+> 
+> ```
 > from pkg_resources import Requirement, working_set
 > version = working_set.find9Requirement.parse('sagenb')).version
-> }}}
+> ```
+
 
 Sorry, I meant `working_set.find(Requirement.parse('sagenb')).version`
 
@@ -240,7 +243,7 @@ Sorry, I meant `working_set.find(Requirement.parse('sagenb')).version`
 archive/issue_comments_062777.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Thanks for the clarification.  What if we use [pip](http://pip.openplans.org/) (i.e., `pip.py`) as SageNB's installer?  The uninstall facility might allow us to select among different development versions (and their [requirements](http://pip.openplans.org/requirement-format.html)) in a *clean* way.  Currently, extraneous files can \"accumulate\" in `site-packages/sagenb` until I do `rm -rf` and reinstall.\n> [..]\n\nWow, that feature's new. I don't see why not, although it would mean adding another package to Sage.",
+    "body": "Replying to [comment:4 mpatel]:\n> Thanks for the clarification.  What if we use [pip](http://pip.openplans.org/) (i.e., `pip.py`) as SageNB's installer?  The uninstall facility might allow us to select among different development versions (and their [requirements](http://pip.openplans.org/requirement-format.html)) in a *clean* way.  Currently, extraneous files can \"accumulate\" in `site-packages/sagenb` until I do `rm -rf` and reinstall.\n> [..]\n\n\nWow, that feature's new. I don't see why not, although it would mean adding another package to Sage.",
     "created_at": "2009-11-15T08:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -253,6 +256,7 @@ Replying to [comment:4 mpatel]:
 > Thanks for the clarification.  What if we use [pip](http://pip.openplans.org/) (i.e., `pip.py`) as SageNB's installer?  The uninstall facility might allow us to select among different development versions (and their [requirements](http://pip.openplans.org/requirement-format.html)) in a *clean* way.  Currently, extraneous files can "accumulate" in `site-packages/sagenb` until I do `rm -rf` and reinstall.
 > [..]
 
+
 Wow, that feature's new. I don't see why not, although it would mean adding another package to Sage.
 
 
@@ -262,7 +266,7 @@ Wow, that feature's new. I don't see why not, although it would mean adding anot
 archive/issue_comments_062778.json:
 ```json
 {
-    "body": "I get\n\n```python\nsage: from pkg_resources import Requirement, working_set\nsage: working_set.find(Requirement.parse('sagenb')).version\nAttributeError: 'NoneType' object has no attribute 'version'\n```\n\n\nOn using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).",
+    "body": "I get\n\n```python\nsage: from pkg_resources import Requirement, working_set\nsage: working_set.find(Requirement.parse('sagenb')).version\nAttributeError: 'NoneType' object has no attribute 'version'\n```\n\nOn using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).",
     "created_at": "2009-11-15T08:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -279,7 +283,6 @@ sage: working_set.find(Requirement.parse('sagenb')).version
 AttributeError: 'NoneType' object has no attribute 'version'
 ```
 
-
 On using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).
 
 
@@ -289,7 +292,7 @@ On using pip: We could just add `pip.py`, according to [this](http://pip.openpla
 archive/issue_comments_062779.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> I get\n> {{{\n> #!python\n> sage: from pkg_resources import Requirement, working_set\n> sage: working_set.find(Requirement.parse('sagenb')).version\n> AttributeError: 'NoneType' object has no attribute 'version'\n> }}}\n> \n> On using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).\n\nI believe detection of version using `pkg_resources` requires it be installed by `setuptools`, i.e., this patch.",
+    "body": "Replying to [comment:8 mpatel]:\n> I get\n> \n> ```\n> #!python\n> sage: from pkg_resources import Requirement, working_set\n> sage: working_set.find(Requirement.parse('sagenb')).version\n> AttributeError: 'NoneType' object has no attribute 'version'\n> ```\n> \n> On using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).\n\n\nI believe detection of version using `pkg_resources` requires it be installed by `setuptools`, i.e., this patch.",
     "created_at": "2009-11-15T08:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
@@ -300,14 +303,16 @@ archive/issue_comments_062779.json:
 
 Replying to [comment:8 mpatel]:
 > I get
-> {{{
+> 
+> ```
 > #!python
 > sage: from pkg_resources import Requirement, working_set
 > sage: working_set.find(Requirement.parse('sagenb')).version
 > AttributeError: 'NoneType' object has no attribute 'version'
-> }}}
+> ```
 > 
 > On using pip: We could just add `pip.py`, according to [this](http://pip.openplans.org/#using-pip-with-virtualenv).
+
 
 I believe detection of version using `pkg_resources` requires it be installed by `setuptools`, i.e., this patch.
 

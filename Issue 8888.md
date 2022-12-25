@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081579.json:
 ```json
 {
-    "body": "Hi Florent,\n\nI've tried to apply this patch to a clean sage-4.4.1, and I'm getting strange behavior.  After applying your patch, the entire code for the `quotient` method in `partition.py` (after the docstring) looks like this:\n\n```\n        p = self\n        #Normalize the length\n        remainder = len(p) % length\n        part = p[:] + [0]*(length-remainder)\n```\n\n\nThe rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?",
+    "body": "Hi Florent,\n\nI've tried to apply this patch to a clean sage-4.4.1, and I'm getting strange behavior.  After applying your patch, the entire code for the `quotient` method in `partition.py` (after the docstring) looks like this:\n\n```\n        p = self\n        #Normalize the length\n        remainder = len(p) % length\n        part = p[:] + [0]*(length-remainder)\n```\n\nThe rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?",
     "created_at": "2010-05-12T02:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ I've tried to apply this patch to a clean sage-4.4.1, and I'm getting strange be
         remainder = len(p) % length
         part = p[:] + [0]*(length-remainder)
 ```
-
 
 The rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?
 
@@ -120,7 +119,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081581.json:
 ```json
 {
-    "body": "Hi Jason,\n\nThanks for taking care of this review\n\n> The rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?\n\nOups ! I didn't realize that this patch depend on #6655 (allready merged in 4.4.2.rc0). Sorry for the trouble.",
+    "body": "Hi Jason,\n\nThanks for taking care of this review\n\n> The rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?\n\n\nOups ! I didn't realize that this patch depend on #6655 (allready merged in 4.4.2.rc0). Sorry for the trouble.",
     "created_at": "2010-05-12T17:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
@@ -134,6 +133,7 @@ Hi Jason,
 Thanks for taking care of this review
 
 > The rest is just gone, and obviously this causes doctest failures.  Looking at the patch file, I don't understand why this should happen.  It looks fine!  But I can't approve with this behavior.  Can you rebase?  Or explain what might be going on?
+
 
 Oups ! I didn't realize that this patch depend on #6655 (allready merged in 4.4.2.rc0). Sorry for the trouble.
 
@@ -237,7 +237,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081587.json:
 ```json
 {
-    "body": "Replying to [comment:6 hivert]:\n> Replying to [comment:5 jbandlow]:\n> Jason's reviewer patch looks perfectly good to me. Positive review\n> \n> Jason: Can you push your review patch to combinat server ? \n\nDone.",
+    "body": "Replying to [comment:6 hivert]:\n> Replying to [comment:5 jbandlow]:\n> Jason's reviewer patch looks perfectly good to me. Positive review\n> \n> Jason: Can you push your review patch to combinat server ? \n\n\nDone.",
     "created_at": "2010-05-13T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
@@ -251,6 +251,7 @@ Replying to [comment:6 hivert]:
 > Jason's reviewer patch looks perfectly good to me. Positive review
 > 
 > Jason: Can you push your review patch to combinat server ? 
+
 
 Done.
 

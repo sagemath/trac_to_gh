@@ -3,7 +3,7 @@
 archive/issues_005484.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\nRoi Docampo and I noticed the following at Sage Days 14.\n\nThis works:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: R.quo(R.ideal(2))\nQuotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)\n```\n\n\nBut this doesn't:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.quo(R.ideal(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/12118/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quo (sage/rings/ring.c:5717)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quotient (sage/rings/ring.c:5624)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in QuotientRing(R, I, names)\n    120     try:\n    121         if I.is_principal():\n--> 122             return R.quotient_by_principal_ideal(I.gen(), names)\n    123     except (AttributeError, NotImplementedError):\n    124         pass\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self, f, names)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007     \n   1008 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring, polynomial, names)\n    133     c = polynomial.leading_coefficient()\n    134     if not c.is_unit():\n--> 135         raise TypeError, \"polynomial must have unit leading coefficient\"\n    136     R = ring.base_ring()\n    137     if isinstance(R, sage.rings.integral_domain.IntegralDomain):\n\nTypeError: polynomial must have unit leading coefficient\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5484\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\nRoi Docampo and I noticed the following at Sage Days 14.\n\nThis works:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: R.quo(R.ideal(2))\nQuotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)\n```\n\nBut this doesn't:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.quo(R.ideal(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/12118/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quo (sage/rings/ring.c:5717)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quotient (sage/rings/ring.c:5624)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in QuotientRing(R, I, names)\n    120     try:\n    121         if I.is_principal():\n--> 122             return R.quotient_by_principal_ideal(I.gen(), names)\n    123     except (AttributeError, NotImplementedError):\n    124         pass\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self, f, names)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007     \n   1008 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring, polynomial, names)\n    133     c = polynomial.leading_coefficient()\n    134     if not c.is_unit():\n--> 135         raise TypeError, \"polynomial must have unit leading coefficient\"\n    136     R = ring.base_ring()\n    137     if isinstance(R, sage.rings.integral_domain.IntegralDomain):\n\nTypeError: polynomial must have unit leading coefficient\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5484\n\n",
     "created_at": "2009-03-11T08:16:23Z",
     "labels": [
         "component: algebraic geometry"
@@ -28,7 +28,6 @@ sage: R.<x,y> = ZZ[]
 sage: R.quo(R.ideal(2))
 Quotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)
 ```
-
 
 But this doesn't:
 
@@ -67,7 +66,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: polynomial must have unit leading coefficient
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5484
@@ -254,7 +252,7 @@ Changing status from new to needs_review.
 archive/issue_comments_042476.json:
 ```json
 {
-    "body": "I made the following proposition:\n\nSuppose that `R = PolynomialRing(S,'x')` for some ring `S`, and `f` is a polynomial over `S`. \n* Keep the same thing if `f` has degree `> 0` or `f` is a unit, that is return `PolynomialQuotientRing(S, f, 'x')`;\n* Return `PolynomialRing(S.quo(f), 'x')` when `f` is a non-unit constant.\n\nIn particular:\n\n```\nsage: R = ZZ['x']\nsage: R.quo(2)\nUnivariate Polynomial Ring in x over Ring of integers modulo 2 (using NTL)\n```\n\n\nDoes this make sense?\n----\nNew commits:",
+    "body": "I made the following proposition:\n\nSuppose that `R = PolynomialRing(S,'x')` for some ring `S`, and `f` is a polynomial over `S`. \n* Keep the same thing if `f` has degree `> 0` or `f` is a unit, that is return `PolynomialQuotientRing(S, f, 'x')`;\n* Return `PolynomialRing(S.quo(f), 'x')` when `f` is a non-unit constant.\n\nIn particular:\n\n```\nsage: R = ZZ['x']\nsage: R.quo(2)\nUnivariate Polynomial Ring in x over Ring of integers modulo 2 (using NTL)\n```\n\nDoes this make sense?\n\n---\nNew commits:",
     "created_at": "2015-04-22T15:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
@@ -277,9 +275,9 @@ sage: R.quo(2)
 Univariate Polynomial Ring in x over Ring of integers modulo 2 (using NTL)
 ```
 
-
 Does this make sense?
-----
+
+---
 New commits:
 
 
@@ -397,7 +395,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042481.json:
 ```json
 {
-    "body": "Replying to [comment:9 chapoton]:\n> doc does not build, see patchbot report\n> \n> you wrongly replaced a TEST: by TEST::\n\nShould work now. Sorry for the same mistake on two distinct tickets ;-)",
+    "body": "Replying to [comment:9 chapoton]:\n> doc does not build, see patchbot report\n> \n> you wrongly replaced a TEST: by TEST::\n\n\nShould work now. Sorry for the same mistake on two distinct tickets ;-)",
     "created_at": "2015-06-01T08:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
@@ -411,6 +409,7 @@ Replying to [comment:9 chapoton]:
 > 
 > you wrongly replaced a TEST: by TEST::
 
+
 Should work now. Sorry for the same mistake on two distinct tickets ;-)
 
 
@@ -420,7 +419,7 @@ Should work now. Sorry for the same mistake on two distinct tickets ;-)
 archive/issue_comments_042482.json:
 ```json
 {
-    "body": "Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\n\n```\nsage: R = ZZ['x']\nsage: x = R.gen()\nsage: J = R.ideal(2)\nsage: T = R.quotient_by_principal_ideal(J)\nsage: T(x)\nx\nsage: T.lift(_)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n<ipython-input-30-260465055124> in <module>()\n----> 1 T.lift(_)\n\n/home/skraeling/sage/src/sage/structure/parent.pyx in sage.structure.parent.Parent.__getattr__ (build/cythonized/sage/structure/parent.c:7885)()\n    839             return self.__cached_methods[name]\n    840         except KeyError:\n--> 841             attr = getattr_from_other_class(self, self._category.parent_class, name)\n    842             self.__cached_methods[name] = attr\n    843             return attr\n\n/home/skraeling/sage/src/sage/structure/misc.pyx in sage.structure.misc.getattr_from_other_class (build/cythonized/sage/structure/misc.c:1582)()\n    251         dummy_error_message.cls = type(self)\n    252         dummy_error_message.name = name\n--> 253         raise dummy_attribute_error\n    254     try:\n    255         attribute = getattr(cls, name)\n\nAttributeError: 'PolynomialRing_dense_mod_p_with_category' object has no attribute 'lift'\n```\n",
+    "body": "Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\n```\nsage: R = ZZ['x']\nsage: x = R.gen()\nsage: J = R.ideal(2)\nsage: T = R.quotient_by_principal_ideal(J)\nsage: T(x)\nx\nsage: T.lift(_)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n<ipython-input-30-260465055124> in <module>()\n----> 1 T.lift(_)\n\n/home/skraeling/sage/src/sage/structure/parent.pyx in sage.structure.parent.Parent.__getattr__ (build/cythonized/sage/structure/parent.c:7885)()\n    839             return self.__cached_methods[name]\n    840         except KeyError:\n--> 841             attr = getattr_from_other_class(self, self._category.parent_class, name)\n    842             self.__cached_methods[name] = attr\n    843             return attr\n\n/home/skraeling/sage/src/sage/structure/misc.pyx in sage.structure.misc.getattr_from_other_class (build/cythonized/sage/structure/misc.c:1582)()\n    251         dummy_error_message.cls = type(self)\n    252         dummy_error_message.name = name\n--> 253         raise dummy_attribute_error\n    254     try:\n    255         attribute = getattr(cls, name)\n\nAttributeError: 'PolynomialRing_dense_mod_p_with_category' object has no attribute 'lift'\n```",
     "created_at": "2015-06-06T22:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
@@ -430,7 +429,6 @@ archive/issue_comments_042482.json:
 ```
 
 Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):
-
 
 ```
 sage: R = ZZ['x']
@@ -464,13 +462,12 @@ AttributeError: 'PolynomialRing_dense_mod_p_with_category' object has no attribu
 
 
 
-
 ---
 
 archive/issue_comments_042483.json:
 ```json
 {
-    "body": "Replying to [comment:12 darij]:\n> Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\nWhat do you suggest? I can imagine three solutions:\n* Make `R.quotient_by_principal_ideal(R.ideal(2))` return a `Polynomial_quotient_ring`: I doubt this is in principle impossible, but at least it requires quite a lot of changes. \n* Keep `R.quotient_by_principal_ideal(R.ideal(2))` return a `TypeError`\n* Implement a `lift` method for `PolynomialRing_dense_mod_p`.\n\nNone of the three solutions is really fine to my mind, so feel free to suggest another one!",
+    "body": "Replying to [comment:12 darij]:\n> Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\n\nWhat do you suggest? I can imagine three solutions:\n* Make `R.quotient_by_principal_ideal(R.ideal(2))` return a `Polynomial_quotient_ring`: I doubt this is in principle impossible, but at least it requires quite a lot of changes. \n* Keep `R.quotient_by_principal_ideal(R.ideal(2))` return a `TypeError`\n* Implement a `lift` method for `PolynomialRing_dense_mod_p`.\n\nNone of the three solutions is really fine to my mind, so feel free to suggest another one!",
     "created_at": "2015-06-08T09:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
@@ -481,6 +478,7 @@ archive/issue_comments_042483.json:
 
 Replying to [comment:12 darij]:
 > Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):
+
 
 What do you suggest? I can imagine three solutions:
 * Make `R.quotient_by_principal_ideal(R.ideal(2))` return a `Polynomial_quotient_ring`: I doubt this is in principle impossible, but at least it requires quite a lot of changes. 

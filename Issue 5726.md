@@ -3,7 +3,7 @@
 archive/issues_005726.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nsage: RDF.random_element?\n...\nDefinition: RDF.random_element(min='-1', max='1')\n```\n\nNotice the stupid quotes around -1 and 1, which are very confusing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5726\n\n",
+    "body": "Assignee: tba\n\n```\nsage: RDF.random_element?\n...\nDefinition: RDF.random_element(min='-1', max='1')\n```\nNotice the stupid quotes around -1 and 1, which are very confusing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5726\n\n",
     "created_at": "2009-04-09T16:58:20Z",
     "labels": [
         "component: documentation",
@@ -18,13 +18,11 @@ archive/issues_005726.json:
 ```
 Assignee: tba
 
-
 ```
 sage: RDF.random_element?
 ...
 Definition: RDF.random_element(min='-1', max='1')
 ```
-
 Notice the stupid quotes around -1 and 1, which are very confusing!
 
 Issue created by migration from https://trac.sagemath.org/ticket/5726
@@ -38,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5726
 archive/issue_comments_044659.json:
 ```json
 {
-    "body": "In the notebook definition is wrong in at least two ways:\n\n```\nsage: factor?\nDefinition:  factor(n, proof, int_, algorithm, verbose, **kwds)\n```\n\nbut it should be\n\n```\nDefinition:     factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds)\n```\n\nwhich it *is* in the command line. \n\nOn the command line, cython code *never* gets a function \"Definition\".",
+    "body": "In the notebook definition is wrong in at least two ways:\n\n```\nsage: factor?\nDefinition:  factor(n, proof, int_, algorithm, verbose, **kwds)\n```\nbut it should be\n\n```\nDefinition:     factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds)\n```\nwhich it *is* in the command line. \n\nOn the command line, cython code *never* gets a function \"Definition\".",
     "created_at": "2009-04-09T19:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
@@ -53,13 +51,11 @@ In the notebook definition is wrong in at least two ways:
 sage: factor?
 Definition:  factor(n, proof, int_, algorithm, verbose, **kwds)
 ```
-
 but it should be
 
 ```
 Definition:     factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds)
 ```
-
 which it *is* in the command line. 
 
 On the command line, cython code *never* gets a function "Definition".
@@ -131,7 +127,7 @@ As for the Cython issue, perhaps using `repr(eval(argument))` will work. Output 
 archive/issue_comments_044663.json:
 ```json
 {
-    "body": "Replying to [comment:4 timdumol]:\n> As for the Cython issue, perhaps using `repr(eval(argument))` will work. Output as string if the output starts and ends with quotes, and output without quotes for any other result.\n\nGood idea.  See #6848.",
+    "body": "Replying to [comment:4 timdumol]:\n> As for the Cython issue, perhaps using `repr(eval(argument))` will work. Output as string if the output starts and ends with quotes, and output without quotes for any other result.\n\n\nGood idea.  See #6848.",
     "created_at": "2009-08-30T21:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
@@ -142,6 +138,7 @@ archive/issue_comments_044663.json:
 
 Replying to [comment:4 timdumol]:
 > As for the Cython issue, perhaps using `repr(eval(argument))` will work. Output as string if the output starts and ends with quotes, and output without quotes for any other result.
+
 
 Good idea.  See #6848.
 

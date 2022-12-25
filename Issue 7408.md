@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062227.json:
 ```json
 {
-    "body": "I like this commentary of yours:\n\n```\n                #Swtich x and y\n```\n\nYou should have called you variables `t` and `i` :-)\n\n\nFlorent",
+    "body": "I like this commentary of yours:\n\n```\n                #Swtich x and y\n```\nYou should have called you variables `t` and `i` :-)\n\n\nFlorent",
     "created_at": "2009-11-07T20:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ I like this commentary of yours:
 ```
                 #Swtich x and y
 ```
-
 You should have called you variables `t` and `i` :-)
 
 
@@ -78,7 +77,7 @@ Florent
 archive/issue_comments_062228.json:
 ```json
 {
-    "body": "A last slight improvement would be to avoid the burden of keeping maxes and lenths.\n\nA row version would then be:\n\n\n```\n    def robinson_schensted(self):\n        from bisect import bisect\n        p = []       #the \"left\" tableau\n        q = []       #the \"recording\" tableau\n\n        #For each x in self, insert x into the tableau p.\n        for i,x in enumerate(self):\n            row_counter = 0\n            for r in p:\n                if r[-1] > x:\n                    y_pos = bisect(r, x)\n                    x, r[y_pos] = r[y_pos], x\n                    row_counter += 1\n                else:\n                    break\n            if row_counter == len(p):\n                p.append([x])\n                q.append([i+1])\n            else:\n                r.append(x)\n                q[row_counter].append(i+1)\n\n        return [tableau.Tableau(p),tableau.Tableau(q)]\n```\n\n\nThis gives me something like a 15% speedup.",
+    "body": "A last slight improvement would be to avoid the burden of keeping maxes and lenths.\n\nA row version would then be:\n\n```\n    def robinson_schensted(self):\n        from bisect import bisect\n        p = []       #the \"left\" tableau\n        q = []       #the \"recording\" tableau\n\n        #For each x in self, insert x into the tableau p.\n        for i,x in enumerate(self):\n            row_counter = 0\n            for r in p:\n                if r[-1] > x:\n                    y_pos = bisect(r, x)\n                    x, r[y_pos] = r[y_pos], x\n                    row_counter += 1\n                else:\n                    break\n            if row_counter == len(p):\n                p.append([x])\n                q.append([i+1])\n            else:\n                r.append(x)\n                q[row_counter].append(i+1)\n\n        return [tableau.Tableau(p),tableau.Tableau(q)]\n```\n\nThis gives me something like a 15% speedup.",
     "created_at": "2009-11-07T23:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
@@ -90,7 +89,6 @@ archive/issue_comments_062228.json:
 A last slight improvement would be to avoid the burden of keeping maxes and lenths.
 
 A row version would then be:
-
 
 ```
     def robinson_schensted(self):
@@ -117,7 +115,6 @@ A row version would then be:
 
         return [tableau.Tableau(p),tableau.Tableau(q)]
 ```
-
 
 This gives me something like a 15% speedup.
 
@@ -182,7 +179,7 @@ Changing keywords from "" to "Robinson-Schensted".
 archive/issue_comments_062232.json:
 ```json
 {
-    "body": "This patch greatly improve the speed of RSK even for small permutations:\n\n```\nsage: p4 = Permutations(4).list()\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.22 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n25 loops, best of 3: 19.5 ms per loop\n```\n\nwhereas we had:\n\n```\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.34 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n5 loops, best of 3: 265 ms per loop\n```\n\nHowever, I was not sure that bisect cut the thing correctly in case of repeated letters so I had to write another test. I'd rather see it integrated into sage.\nPlease review this minor change. \n\nOtherwise you can put a postive review. \n\nCheers,\n\nFlorent",
+    "body": "This patch greatly improve the speed of RSK even for small permutations:\n\n```\nsage: p4 = Permutations(4).list()\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.22 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n25 loops, best of 3: 19.5 ms per loop\n```\nwhereas we had:\n\n```\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.34 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n5 loops, best of 3: 265 ms per loop\n```\nHowever, I was not sure that bisect cut the thing correctly in case of repeated letters so I had to write another test. I'd rather see it integrated into sage.\nPlease review this minor change. \n\nOtherwise you can put a postive review. \n\nCheers,\n\nFlorent",
     "created_at": "2009-11-08T11:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
@@ -201,7 +198,6 @@ sage: p = Permutations(1000).random_element()
 sage: timeit("p.robinson_schensted()")
 25 loops, best of 3: 19.5 ms per loop
 ```
-
 whereas we had:
 
 ```
@@ -211,7 +207,6 @@ sage: p = Permutations(1000).random_element()
 sage: timeit("p.robinson_schensted()")
 5 loops, best of 3: 265 ms per loop
 ```
-
 However, I was not sure that bisect cut the thing correctly in case of repeated letters so I had to write another test. I'd rather see it integrated into sage.
 Please review this minor change. 
 

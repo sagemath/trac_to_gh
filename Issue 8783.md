@@ -3,7 +3,7 @@
 archive/issues_008783.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC)\n****************************************************\nmkdir -p bin/release/\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function \u2018int main(int, const char**)\u2019:\nsrc/main.cpp:30:16: error: \u2018srand\u2019 was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m0.614s\nuser    0m0.283s\nsys     0m0.052s\nsage: An error occurred while installing frobby-0.7.6\nPlease email sage-devel http://groups.google.com/group/sag\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8783\n\n",
+    "body": "Assignee: tbd\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC)\n****************************************************\nmkdir -p bin/release/\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function \u2018int main(int, const char**)\u2019:\nsrc/main.cpp:30:16: error: \u2018srand\u2019 was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m0.614s\nuser    0m0.283s\nsys     0m0.052s\nsage: An error occurred while installing frobby-0.7.6\nPlease email sage-devel http://groups.google.com/group/sag\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8783\n\n",
     "created_at": "2010-04-27T20:14:41Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_008783.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 frobby-0.7.6/src/test/transform/t3.gen.m2
@@ -53,7 +52,6 @@ sage: An error occurred while installing frobby-0.7.6
 Please email sage-devel http://groups.google.com/group/sag
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8783
 
 
@@ -83,7 +81,7 @@ Note that this still builds on sage.math with GCC-4.2.4...  But it doesn't build
 archive/issue_comments_080264.json:
 ```json
 {
-    "body": "\n```\nHi William,\n\nYes, it is just a question of a few extra includes. I haven't fixed it\nsince I was making a new release of Frobby anyway. That new release\nhas become rather large since that has been convenient for my\nresearch, and so it is taking longer than expected. I'll submit a fix\nonce I get back from this conference next week.\n\nCheers\nBjarke\n```\n",
+    "body": "```\nHi William,\n\nYes, it is just a question of a few extra includes. I haven't fixed it\nsince I was making a new release of Frobby anyway. That new release\nhas become rather large since that has been convenient for my\nresearch, and so it is taking longer than expected. I'll submit a fix\nonce I get back from this conference next week.\n\nCheers\nBjarke\n```",
     "created_at": "2010-04-27T21:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -91,7 +89,6 @@ archive/issue_comments_080264.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Hi William,
@@ -108,13 +105,12 @@ Bjarke
 
 
 
-
 ---
 
 archive/issue_comments_080265.json:
 ```json
 {
-    "body": "\n```\nThe error in the ticket mentions srand. What I do is google srand and I get e.g.\n\n http://www.cplusplus.com/reference/clibrary/cstdlib/srand/\n\nit says it is in cstdlib, so add\n\n #include <cstdlib>\n\nto the cpp file that is having a problem. Then likely another file\nwill have the same problem due to the same or another missing header,\nand after a few iterations of this the problem should be solved. Most\nlikely all the missing includes are in cpp files, though it is\npossible that a header might miss something too. The problem is caused\nby older versions of GCC having header A also pull in header B without\nthe standard saying that it should do so (which is allowed but\nunfortunate). The newer version of header A in a newer GCC then stops\npulling in header B, and suddenly it becomes apparent that header B\nshould have been included where A was also included, but before it was\ninvisible that this should have happened.\n\nCheers\nBjarke\n```\n",
+    "body": "```\nThe error in the ticket mentions srand. What I do is google srand and I get e.g.\n\n http://www.cplusplus.com/reference/clibrary/cstdlib/srand/\n\nit says it is in cstdlib, so add\n\n #include <cstdlib>\n\nto the cpp file that is having a problem. Then likely another file\nwill have the same problem due to the same or another missing header,\nand after a few iterations of this the problem should be solved. Most\nlikely all the missing includes are in cpp files, though it is\npossible that a header might miss something too. The problem is caused\nby older versions of GCC having header A also pull in header B without\nthe standard saying that it should do so (which is allowed but\nunfortunate). The newer version of header A in a newer GCC then stops\npulling in header B, and suddenly it becomes apparent that header B\nshould have been included where A was also included, but before it was\ninvisible that this should have happened.\n\nCheers\nBjarke\n```",
     "created_at": "2010-04-27T22:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -122,7 +118,6 @@ archive/issue_comments_080265.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 The error in the ticket mentions srand. What I do is google srand and I get e.g.
@@ -151,13 +146,12 @@ Bjarke
 
 
 
-
 ---
 
 archive/issue_comments_080266.json:
 ```json
 {
-    "body": "Note, gcc 4.5 is **not** the latest gcc, but gcc 4.4.4 is: See\n\n http://gcc.gnu.org/\n\n```\nNews\n\nApril 29, 2010\n    GCC 4.4.4 has been released.\nApril 14, 2010\n    GCC 4.5.0 has been released.\n```\n\n\nDave",
+    "body": "Note, gcc 4.5 is **not** the latest gcc, but gcc 4.4.4 is: See\n\n http://gcc.gnu.org/\n\n```\nNews\n\nApril 29, 2010\n    GCC 4.4.4 has been released.\nApril 14, 2010\n    GCC 4.5.0 has been released.\n```\n\nDave",
     "created_at": "2010-05-06T23:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -178,7 +172,6 @@ April 29, 2010
 April 14, 2010
     GCC 4.5.0 has been released.
 ```
-
 
 Dave
 
@@ -211,7 +204,7 @@ If somebody doesn't post a new frobby spkg on this ticket for review this week, 
 archive/issue_comments_080268.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Even with gcc-4.4.3, Frobby doesn't build.\n> \n> If somebody doesn't post a new frobby spkg on this ticket for review this week, I'm moving the frobby spkg to \"experimental\". \n> \n>  -- William\n\nI wish you would clarify in the developers handbook, or even just on sage-devel, what is the difference between \"optional\" and \"experimental\". \n\nDave",
+    "body": "Replying to [comment:6 was]:\n> Even with gcc-4.4.3, Frobby doesn't build.\n> \n> If somebody doesn't post a new frobby spkg on this ticket for review this week, I'm moving the frobby spkg to \"experimental\". \n> \n>  -- William\n\n\nI wish you would clarify in the developers handbook, or even just on sage-devel, what is the difference between \"optional\" and \"experimental\". \n\nDave",
     "created_at": "2010-06-22T05:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -226,6 +219,7 @@ Replying to [comment:6 was]:
 > If somebody doesn't post a new frobby spkg on this ticket for review this week, I'm moving the frobby spkg to "experimental". 
 > 
 >  -- William
+
 
 I wish you would clarify in the developers handbook, or even just on sage-devel, what is the difference between "optional" and "experimental". 
 
@@ -316,7 +310,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080273.json:
 ```json
 {
-    "body": "I looked at this for 1 minute:\n\n(1)\nThere are some tmp ~ files laying around\n\n```\nwstein@sage:~/tmp/frobby-0.7.6.p1$ ls\npatches  spkg-check  spkg-install  spkg-install~  SPKG.txt  SPKG.txt~  src\nwstein@sage:~/tmp/frobby-0.7.6.p1$ rm *~\n```\n\n\n(2) The hg repo has lots of files that have been added but not checked in:\n\n```\nwstein@sage:~/tmp/frobby-0.7.6.p1$ ls\npatches  spkg-check  spkg-install  SPKG.txt  src\nwstein@sage:~/tmp/frobby-0.7.6.p1$ hg status\nM SPKG.txt\nM spkg-install\nA patches/Makefile\nA patches/Makefile.patch\nA patches/src/Action.cpp\nA patches/src/Action.cpp.patch\nA patches/src/BoolParameter.cpp\nA patches/src/BoolParameter.cpp.patch\nA patches/src/Ideal.h\nA patches/src/Ideal.h.patch\nA patches/src/IntegerParameter.cpp\nA patches/src/IntegerParameter.cpp.patch\nA patches/src/Minimizer.cpp\nA patches/src/Minimizer.cpp.patch\nA patches/src/Parameter.cpp\nA patches/src/Parameter.cpp.patch\nA patches/src/ParameterGroup.cpp\nA patches/src/ParameterGroup.cpp.patch\nA patches/src/Scanner.cpp\nA patches/src/Scanner.cpp.patch\nA patches/src/VarNames.cpp\nA patches/src/VarNames.cpp.patch\nA patches/src/dynamicFrobeniusAlgorithm.cpp\nA patches/src/dynamicFrobeniusAlgorithm.cpp.patch\nA patches/src/frobbyTest.cpp\nA patches/src/frobbyTest.cpp.patch\nA patches/src/main.cpp\nA patches/src/main.cpp.patch\nA patches/src/randomDataGenerators.cpp\nA patches/src/randomDataGenerators.cpp.patch\nwstein@sage:~/tmp/frobby-0.7.6.p1$ \n```\n\n\n(3) I don't understand why *upstream* -- i.e., the *author* of frobby-- is adding a ton of patches to his own code.  Why not just fix the src/ directly?",
+    "body": "I looked at this for 1 minute:\n\n(1)\nThere are some tmp ~ files laying around\n\n```\nwstein@sage:~/tmp/frobby-0.7.6.p1$ ls\npatches  spkg-check  spkg-install  spkg-install~  SPKG.txt  SPKG.txt~  src\nwstein@sage:~/tmp/frobby-0.7.6.p1$ rm *~\n```\n\n(2) The hg repo has lots of files that have been added but not checked in:\n\n```\nwstein@sage:~/tmp/frobby-0.7.6.p1$ ls\npatches  spkg-check  spkg-install  SPKG.txt  src\nwstein@sage:~/tmp/frobby-0.7.6.p1$ hg status\nM SPKG.txt\nM spkg-install\nA patches/Makefile\nA patches/Makefile.patch\nA patches/src/Action.cpp\nA patches/src/Action.cpp.patch\nA patches/src/BoolParameter.cpp\nA patches/src/BoolParameter.cpp.patch\nA patches/src/Ideal.h\nA patches/src/Ideal.h.patch\nA patches/src/IntegerParameter.cpp\nA patches/src/IntegerParameter.cpp.patch\nA patches/src/Minimizer.cpp\nA patches/src/Minimizer.cpp.patch\nA patches/src/Parameter.cpp\nA patches/src/Parameter.cpp.patch\nA patches/src/ParameterGroup.cpp\nA patches/src/ParameterGroup.cpp.patch\nA patches/src/Scanner.cpp\nA patches/src/Scanner.cpp.patch\nA patches/src/VarNames.cpp\nA patches/src/VarNames.cpp.patch\nA patches/src/dynamicFrobeniusAlgorithm.cpp\nA patches/src/dynamicFrobeniusAlgorithm.cpp.patch\nA patches/src/frobbyTest.cpp\nA patches/src/frobbyTest.cpp.patch\nA patches/src/main.cpp\nA patches/src/main.cpp.patch\nA patches/src/randomDataGenerators.cpp\nA patches/src/randomDataGenerators.cpp.patch\nwstein@sage:~/tmp/frobby-0.7.6.p1$ \n```\n\n(3) I don't understand why *upstream* -- i.e., the *author* of frobby-- is adding a ton of patches to his own code.  Why not just fix the src/ directly?",
     "created_at": "2010-07-06T08:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -335,7 +329,6 @@ wstein@sage:~/tmp/frobby-0.7.6.p1$ ls
 patches  spkg-check  spkg-install  spkg-install~  SPKG.txt  SPKG.txt~  src
 wstein@sage:~/tmp/frobby-0.7.6.p1$ rm *~
 ```
-
 
 (2) The hg repo has lots of files that have been added but not checked in:
 
@@ -376,7 +369,6 @@ A patches/src/randomDataGenerators.cpp.patch
 wstein@sage:~/tmp/frobby-0.7.6.p1$ 
 ```
 
-
 (3) I don't understand why *upstream* -- i.e., the *author* of frobby-- is adding a ton of patches to his own code.  Why not just fix the src/ directly?
 
 
@@ -386,7 +378,7 @@ wstein@sage:~/tmp/frobby-0.7.6.p1$
 archive/issue_comments_080274.json:
 ```json
 {
-    "body": "That said, Frobby *does* build with GCC-4.5.0, which is great news!!\n\n```\n\nif [ -f bin/release/frobby.exe ]; then \\\n          mv -f bin/release/frobby.exe bin/release/frobby; \\\n        fi\nstrip bin/release/frobby\ncd bin; rm -f frobby; link ../bin/release/frobby frobby; cd ..\n\nreal    0m47.042s\nuser    0m40.332s\nsys     0m4.577s\nSuccessfully installed frobby-0.7.6.p1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing frobby-0.7.6.p1.spkg\n[wstein@eno sage-4.4.4]$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC) \n[wstein@eno sage-4.4.4]$ \n\n```\n",
+    "body": "That said, Frobby *does* build with GCC-4.5.0, which is great news!!\n\n```\n\nif [ -f bin/release/frobby.exe ]; then \\\n          mv -f bin/release/frobby.exe bin/release/frobby; \\\n        fi\nstrip bin/release/frobby\ncd bin; rm -f frobby; link ../bin/release/frobby frobby; cd ..\n\nreal    0m47.042s\nuser    0m40.332s\nsys     0m4.577s\nSuccessfully installed frobby-0.7.6.p1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing frobby-0.7.6.p1.spkg\n[wstein@eno sage-4.4.4]$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC) \n[wstein@eno sage-4.4.4]$ \n\n```",
     "created_at": "2010-07-06T08:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -424,7 +416,6 @@ gcc version 4.5.0 (GCC)
 [wstein@eno sage-4.4.4]$ 
 
 ```
-
 
 
 
@@ -567,7 +558,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_080282.json:
 ```json
 {
-    "body": "Did anybody try to build this with `SAGE_CHECK=yes`?\n\nI get hundreds of errors on Ubuntu 10.04.3 (GCC 4.4.3). The build itself succeeds, but the test suite ends with:\n\n```\nsrc/randomDataGenerators.cpp:44: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:47: error: \u2018stderr\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:47: error: \u2018fputs\u2019 was not declared in this scope\nsrc/IOHandler.cpp: At global scope:\nsrc/IOHandler.cpp:215: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/IOHandler.cpp:215: error: template argument 1 is invalid\nsrc/IOHandler.cpp:215: error: template argument 2 is invalid\nsrc/IOHandler.cpp: In function \u2018void readFrobeniusInstance(Scanner&, int&)\u2019:\nsrc/IOHandler.cpp:216: error: request for member \u2018clear\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:219: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/IOHandler.cpp:219: error: expected \u2018;\u2019 before \u2018n\u2019\nsrc/IOHandler.cpp:221: error: \u2018n\u2019 was not declared in this scope\nsrc/IOHandler.cpp:225: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:228: error: \u2018gmp_fprintf\u2019 was not declared in this scope\nsrc/IOHandler.cpp:232: error: request for member \u2018push_back\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:235: error: request for member \u2018empty\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:237: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:237: error: \u2018fputs\u2019 was not declared in this scope\nsrc/IOHandler.cpp:241: error: expected \u2018;\u2019 before \u2018gcd\u2019\nsrc/IOHandler.cpp:242: error: request for member \u2018size\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:243: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:243: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:243: error: invalid types \u2018int[size_t]\u2019 for array subscript\nsrc/IOHandler.cpp:243: error: \u2018mpz_gcd\u2019 was not declared in this scope\nsrc/IOHandler.cpp:245: error: ISO C++ forbids comparison between pointer and integer\nsrc/IOHandler.cpp:246: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:249: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:249: error: \u2018gmp_fprintf\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp: At global scope:\nsrc/randomDataGenerators.cpp:157: error: \u2018Degree\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:157: error: template argument 1 is invalid\nsrc/randomDataGenerators.cpp:157: error: template argument 2 is invalid\nsrc/randomDataGenerators.cpp: In function \u2018void generateRandomFrobeniusInstance(int&)\u2019:\nsrc/randomDataGenerators.cpp:161: error: request for member \u2018resize\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nsrc/randomDataGenerators.cpp:163: error: \u2018Degree\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:163: error: expected \u2018;\u2019 before \u2018totalGcd\u2019\nsrc/randomDataGenerators.cpp:165: error: expected \u2018;\u2019 before \u2018number\u2019\nsrc/randomDataGenerators.cpp:166: error: \u2018totalGcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:167: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:171: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:171: error: \u2018mpz_gcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:173: error: invalid types \u2018int[int]\u2019 for array subscript\nsrc/randomDataGenerators.cpp:173: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:177: error: invalid types \u2018int[int]\u2019 for array subscript\nsrc/randomDataGenerators.cpp:178: error: \u2018totalGcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:180: error: request for member \u2018begin\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nsrc/randomDataGenerators.cpp:180: error: request for member \u2018end\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nmake: *** [bin/debug/IOHandler.o] Error 1\nmake: *** [bin/debug/BigIdeal.o] Error 1\nmake: *** [bin/debug/randomDataGenerators.o] Error 1\nmkdir -p bin/release/ \ncd bin; rm -f frobby; link ../bin/release/frobby frobby; cd ..\nexport frobby=bin/frobby; ./test/runtests\ndecom      ..........................\nfrob       ..............................\nintersect  ..........\nassoprimes ............\nminimize   ..........\ntransform  .....\nlatformat  .....\nalexdual   ...............\nradical    .........\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing frobby-0.7.6.p1.spkg\n```\n\nThe main problem seems a wrong or missing include path, which of course causes further errors.",
+    "body": "Did anybody try to build this with `SAGE_CHECK=yes`?\n\nI get hundreds of errors on Ubuntu 10.04.3 (GCC 4.4.3). The build itself succeeds, but the test suite ends with:\n\n```\nsrc/randomDataGenerators.cpp:44: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:47: error: \u2018stderr\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:47: error: \u2018fputs\u2019 was not declared in this scope\nsrc/IOHandler.cpp: At global scope:\nsrc/IOHandler.cpp:215: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/IOHandler.cpp:215: error: template argument 1 is invalid\nsrc/IOHandler.cpp:215: error: template argument 2 is invalid\nsrc/IOHandler.cpp: In function \u2018void readFrobeniusInstance(Scanner&, int&)\u2019:\nsrc/IOHandler.cpp:216: error: request for member \u2018clear\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:219: error: \u2018mpz_class\u2019 was not declared in this scope\nsrc/IOHandler.cpp:219: error: expected \u2018;\u2019 before \u2018n\u2019\nsrc/IOHandler.cpp:221: error: \u2018n\u2019 was not declared in this scope\nsrc/IOHandler.cpp:225: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:228: error: \u2018gmp_fprintf\u2019 was not declared in this scope\nsrc/IOHandler.cpp:232: error: request for member \u2018push_back\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:235: error: request for member \u2018empty\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:237: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:237: error: \u2018fputs\u2019 was not declared in this scope\nsrc/IOHandler.cpp:241: error: expected \u2018;\u2019 before \u2018gcd\u2019\nsrc/IOHandler.cpp:242: error: request for member \u2018size\u2019 in \u2018numbers\u2019, which is of non-class type \u2018int\u2019\nsrc/IOHandler.cpp:243: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:243: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:243: error: invalid types \u2018int[size_t]\u2019 for array subscript\nsrc/IOHandler.cpp:243: error: \u2018mpz_gcd\u2019 was not declared in this scope\nsrc/IOHandler.cpp:245: error: ISO C++ forbids comparison between pointer and integer\nsrc/IOHandler.cpp:246: error: \u2018stderr\u2019 was not declared in this scope\nsrc/IOHandler.cpp:249: error: request for member \u2018get_mpz_t\u2019 in \u2018gcd\u2019, which is of non-class type \u2018void(Exponent*, const Exponent*, const Exponent*, size_t)\u2019\nsrc/IOHandler.cpp:249: error: \u2018gmp_fprintf\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp: At global scope:\nsrc/randomDataGenerators.cpp:157: error: \u2018Degree\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:157: error: template argument 1 is invalid\nsrc/randomDataGenerators.cpp:157: error: template argument 2 is invalid\nsrc/randomDataGenerators.cpp: In function \u2018void generateRandomFrobeniusInstance(int&)\u2019:\nsrc/randomDataGenerators.cpp:161: error: request for member \u2018resize\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nsrc/randomDataGenerators.cpp:163: error: \u2018Degree\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:163: error: expected \u2018;\u2019 before \u2018totalGcd\u2019\nsrc/randomDataGenerators.cpp:165: error: expected \u2018;\u2019 before \u2018number\u2019\nsrc/randomDataGenerators.cpp:166: error: \u2018totalGcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:167: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:171: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:171: error: \u2018mpz_gcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:173: error: invalid types \u2018int[int]\u2019 for array subscript\nsrc/randomDataGenerators.cpp:173: error: \u2018number\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:177: error: invalid types \u2018int[int]\u2019 for array subscript\nsrc/randomDataGenerators.cpp:178: error: \u2018totalGcd\u2019 was not declared in this scope\nsrc/randomDataGenerators.cpp:180: error: request for member \u2018begin\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nsrc/randomDataGenerators.cpp:180: error: request for member \u2018end\u2019 in \u2018degrees\u2019, which is of non-class type \u2018int\u2019\nmake: *** [bin/debug/IOHandler.o] Error 1\nmake: *** [bin/debug/BigIdeal.o] Error 1\nmake: *** [bin/debug/randomDataGenerators.o] Error 1\nmkdir -p bin/release/ \ncd bin; rm -f frobby; link ../bin/release/frobby frobby; cd ..\nexport frobby=bin/frobby; ./test/runtests\ndecom      ..........................\nfrob       ..............................\nintersect  ..........\nassoprimes ............\nminimize   ..........\ntransform  .....\nlatformat  .....\nalexdual   ...............\nradical    .........\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing frobby-0.7.6.p1.spkg\n```\nThe main problem seems a wrong or missing include path, which of course causes further errors.",
     "created_at": "2011-09-12T19:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
@@ -648,7 +639,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing frobby-0.7.6.p1.spkg
 ```
-
 The main problem seems a wrong or missing include path, which of course causes further errors.
 
 

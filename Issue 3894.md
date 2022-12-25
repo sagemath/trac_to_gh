@@ -3,7 +3,7 @@
 archive/issues_003894.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: tutorial\n\nIn examples like this in the tutorial:\n\n```\nsage: def is_even(n):\n...       return n%2 == 0\n```\n\nthe three dots are not actually visible in the 'live' version of the documentation.  So change the documentation to try to reflect this.  (It would be better to have text printed conditionally, depending on whether it was for the live version, the static version, or the dvi/pdf version, but I don't know how to do that.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3894\n\n",
+    "body": "Assignee: tba\n\nKeywords: tutorial\n\nIn examples like this in the tutorial:\n\n```\nsage: def is_even(n):\n...       return n%2 == 0\n```\nthe three dots are not actually visible in the 'live' version of the documentation.  So change the documentation to try to reflect this.  (It would be better to have text printed conditionally, depending on whether it was for the live version, the static version, or the dvi/pdf version, but I don't know how to do that.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3894\n\n",
     "created_at": "2008-08-19T03:25:20Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ In examples like this in the tutorial:
 sage: def is_even(n):
 ...       return n%2 == 0
 ```
-
 the three dots are not actually visible in the 'live' version of the documentation.  So change the documentation to try to reflect this.  (It would be better to have text printed conditionally, depending on whether it was for the live version, the static version, or the dvi/pdf version, but I don't know how to do that.)
 
 

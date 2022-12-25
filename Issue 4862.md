@@ -3,7 +3,7 @@
 archive/issues_004862.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\n1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg\n\n2. If you do `export MAKE=\"make -j4\"` then the build fails as follows:\n\n```\nchecking for gmake... make -j20\nchecking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found\nconfigure: make -j20: GNU make is required\n```\n\n\nThis could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\n1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg\n\n2. If you do `export MAKE=\"make -j4\"` then the build fails as follows:\n\n```\nchecking for gmake... make -j20\nchecking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found\nconfigure: make -j20: GNU make is required\n```\n\nThis could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
     "created_at": "2008-12-24T02:16:14Z",
     "labels": [
         "component: packages: standard",
@@ -30,7 +30,6 @@ checking for gmake... make -j20
 checking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found
 configure: make -j20: GNU make is required
 ```
-
 
 This could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.
 
@@ -120,7 +119,7 @@ archive/issue_events_011180.json:
 archive/issue_comments_036782.json:
 ```json
 {
-    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/macaulay2-1.1-r7221.p0.spkg\n\nfixes the issue:\n\n```\nmabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ export MAKE=\"make -j8\"\nmabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ ./sage -i macaulay2-1.1-r7221.p0\n<SNIP - things do not blow up>\n```\n\n\nCheers,\n\nMichael",
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/macaulay2-1.1-r7221.p0.spkg\n\nfixes the issue:\n\n```\nmabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ export MAKE=\"make -j8\"\nmabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ ./sage -i macaulay2-1.1-r7221.p0\n<SNIP - things do not blow up>\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T14:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4862",
     "type": "issue_comment",
@@ -140,7 +139,6 @@ mabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ export MAKE="make -j8"
 mabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ ./sage -i macaulay2-1.1-r7221.p0
 <SNIP - things do not blow up>
 ```
-
 
 Cheers,
 

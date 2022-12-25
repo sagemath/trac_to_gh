@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6922
 archive/issue_comments_057029.json:
 ```json
 {
-    "body": "The patch introduces matrix term ordering, but it does not work yet unfortunately.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: local2\nsage: R.<x,y>=PolynomialRing(QQ,order=\"matrix(1,3,1,0)\")\nsage: r=singular(R)\nsage: r\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering M\n//                  : names    x y \n//                  : weights  1 3 \n//                  : weights  1 0 \n//        block   2 : ordering C\nsage: f=x^2+y\nsage: f.lt()\nx^2\nsage: f=x^3+y\nsage: f.lt()\nx^3\nsage: t=R.term_order()\nsage: t\nmatrix(1,3,1,0) term order\n```\n\n\nPlease someone who knows better check the patch, and make it work!\n\nSimon says:\n\nBetter wait for a proper implementation in libsingular \n(which is beyond my capabilities, I am afraid).\n\nCheers,\nSimon",
+    "body": "The patch introduces matrix term ordering, but it does not work yet unfortunately.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: local2\nsage: R.<x,y>=PolynomialRing(QQ,order=\"matrix(1,3,1,0)\")\nsage: r=singular(R)\nsage: r\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering M\n//                  : names    x y \n//                  : weights  1 3 \n//                  : weights  1 0 \n//        block   2 : ordering C\nsage: f=x^2+y\nsage: f.lt()\nx^2\nsage: f=x^3+y\nsage: f.lt()\nx^3\nsage: t=R.term_order()\nsage: t\nmatrix(1,3,1,0) term order\n```\n\nPlease someone who knows better check the patch, and make it work!\n\nSimon says:\n\nBetter wait for a proper implementation in libsingular \n(which is beyond my capabilities, I am afraid).\n\nCheers,\nSimon",
     "created_at": "2009-09-11T05:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -56,7 +56,6 @@ archive/issue_comments_057029.json:
 ```
 
 The patch introduces matrix term ordering, but it does not work yet unfortunately.
-
 
 ```
 ----------------------------------------------------------------------
@@ -84,7 +83,6 @@ sage: t=R.term_order()
 sage: t
 matrix(1,3,1,0) term order
 ```
-
 
 Please someone who knows better check the patch, and make it work!
 
@@ -121,7 +119,7 @@ I don't think we should support the 'matrix()' syntax. The Singular syntax is 'M
 archive/issue_comments_057031.json:
 ```json
 {
-    "body": "I agree partially. Should we follow the Singular syntax exactly? For short syntax, how about just \"m(1,3,1,0)\"? I personally think the Singular syntax for term ordering is somewhat cryptic.\n\nI think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,\n\n\n```\norder='m(1,3,1,0)'+'deglex(2)'\n```\n\n\n\n```\norder='m(1,3,1,0),deglex(3)'\n```\n\n\nfor a square matrix m,\n\n```\norder=TermOrder(m)+TermOrder('deglex',3)\n```\n\n\nare all supported.\n\nMarshall Hampton says:\n\nI agree with John that Simon's example:\n\n\n```\n  sage: M = Matrix(2,2, [1,3,1,0])\n  sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)\n+TermOrder('deglex',3))\n```\n\n\nlooks good and reasonably intuitive to me.",
+    "body": "I agree partially. Should we follow the Singular syntax exactly? For short syntax, how about just \"m(1,3,1,0)\"? I personally think the Singular syntax for term ordering is somewhat cryptic.\n\nI think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,\n\n```\norder='m(1,3,1,0)'+'deglex(2)'\n```\n\n```\norder='m(1,3,1,0),deglex(3)'\n```\n\nfor a square matrix m,\n\n```\norder=TermOrder(m)+TermOrder('deglex',3)\n```\n\nare all supported.\n\nMarshall Hampton says:\n\nI agree with John that Simon's example:\n\n```\n  sage: M = Matrix(2,2, [1,3,1,0])\n  sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)\n+TermOrder('deglex',3))\n```\n\nlooks good and reasonably intuitive to me.",
     "created_at": "2009-09-12T01:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -134,17 +132,13 @@ I agree partially. Should we follow the Singular syntax exactly? For short synta
 
 I think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,
 
-
 ```
 order='m(1,3,1,0)'+'deglex(2)'
 ```
 
-
-
 ```
 order='m(1,3,1,0),deglex(3)'
 ```
-
 
 for a square matrix m,
 
@@ -152,20 +146,17 @@ for a square matrix m,
 order=TermOrder(m)+TermOrder('deglex',3)
 ```
 
-
 are all supported.
 
 Marshall Hampton says:
 
 I agree with John that Simon's example:
 
-
 ```
   sage: M = Matrix(2,2, [1,3,1,0])
   sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)
 +TermOrder('deglex',3))
 ```
-
 
 looks good and reasonably intuitive to me.
 
@@ -176,7 +167,7 @@ looks good and reasonably intuitive to me.
 archive/issue_comments_057032.json:
 ```json
 {
-    "body": "Replying to [comment:3 klee]:\n> I agree partially. Should we follow the Singular syntax exactly? For short syntax, how about just \"m(1,3,1,0)\"? I personally think the Singular syntax for term ordering is somewhat cryptic.\n\nSure, but it would be accepted anyway and passed through to Singular (in an ideal implementation) :)\n\n> I think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,\n> \n> {{{\n> order='m(1,3,1,0)'+'deglex(2)'\n> }}}\n> \n> {{{\n> order='m(1,3,1,0),deglex(3)'\n> }}}\n\nThis description is a mix of Singular syntax and Sage string syntax. I would like to avoid Sage string syntax as much as possible.\n\n> for a square matrix m,\n> {{{\n> order=TermOrder(m)+TermOrder('deglex',3)\n> }}}\n> are all supported.\n\nI like this best.\n \n> Marshall Hampton says:\n> \n> I agree with John that Simon's example:\n> \n> {{{\n>   sage: M = Matrix(2,2, [1,3,1,0])\n>   sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)\n> +TermOrder('deglex',3))\n> }}}\n> \n> looks good and reasonably intuitive to me.\n\nYep, that's what I would be aiming for.",
+    "body": "Replying to [comment:3 klee]:\n> I agree partially. Should we follow the Singular syntax exactly? For short syntax, how about just \"m(1,3,1,0)\"? I personally think the Singular syntax for term ordering is somewhat cryptic.\n\n\nSure, but it would be accepted anyway and passed through to Singular (in an ideal implementation) :)\n\n> I think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,\n> \n> \n> ```\n> order='m(1,3,1,0)'+'deglex(2)'\n> ```\n> \n> \n> ```\n> order='m(1,3,1,0),deglex(3)'\n> ```\n\n\nThis description is a mix of Singular syntax and Sage string syntax. I would like to avoid Sage string syntax as much as possible.\n\n> for a square matrix m,\n> \n> ```\n> order=TermOrder(m)+TermOrder('deglex',3)\n> ```\n> are all supported.\n\n\nI like this best.\n \n> Marshall Hampton says:\n> \n> I agree with John that Simon's example:\n> \n> \n> ```\n>   sage: M = Matrix(2,2, [1,3,1,0])\n>   sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)\n> +TermOrder('deglex',3))\n> ```\n> \n> looks good and reasonably intuitive to me.\n\n\nYep, that's what I would be aiming for.",
     "created_at": "2009-09-12T09:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -188,25 +179,31 @@ archive/issue_comments_057032.json:
 Replying to [comment:3 klee]:
 > I agree partially. Should we follow the Singular syntax exactly? For short syntax, how about just "m(1,3,1,0)"? I personally think the Singular syntax for term ordering is somewhat cryptic.
 
+
 Sure, but it would be accepted anyway and passed through to Singular (in an ideal implementation) :)
 
 > I think it is better for Sage to support both the string description and `TermOrder` description. Thus for examples,
 > 
-> {{{
-> order='m(1,3,1,0)'+'deglex(2)'
-> }}}
 > 
-> {{{
+> ```
+> order='m(1,3,1,0)'+'deglex(2)'
+> ```
+> 
+> 
+> ```
 > order='m(1,3,1,0),deglex(3)'
-> }}}
+> ```
+
 
 This description is a mix of Singular syntax and Sage string syntax. I would like to avoid Sage string syntax as much as possible.
 
 > for a square matrix m,
-> {{{
+> 
+> ```
 > order=TermOrder(m)+TermOrder('deglex',3)
-> }}}
+> ```
 > are all supported.
+
 
 I like this best.
  
@@ -214,13 +211,15 @@ I like this best.
 > 
 > I agree with John that Simon's example:
 > 
-> {{{
+> 
+> ```
 >   sage: M = Matrix(2,2, [1,3,1,0])
 >   sage: R.<a,b,c,d,e,f> = PolynomialRing(QQ, order=TermOrder(M)
 > +TermOrder('deglex',3))
-> }}}
+> ```
 > 
 > looks good and reasonably intuitive to me.
+
 
 Yep, that's what I would be aiming for.
 
@@ -320,7 +319,7 @@ archive/issue_events_016255.json:
 archive/issue_comments_057037.json:
 ```json
 {
-    "body": "Replying to [comment:6 klee]:\n> The replaced patch now works, though only with PolyDict engine.\n\nSorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something.",
+    "body": "Replying to [comment:6 klee]:\n> The replaced patch now works, though only with PolyDict engine.\n\n\nSorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something.",
     "created_at": "2010-06-02T18:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -331,6 +330,7 @@ archive/issue_comments_057037.json:
 
 Replying to [comment:6 klee]:
 > The replaced patch now works, though only with PolyDict engine.
+
 
 Sorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something.
 
@@ -359,7 +359,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057039.json:
 ```json
 {
-    "body": "Replying to [comment:9 malb]:\n\n> Sorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something. \u00a0\u00a0\n\nI am sorry that I cannot understand what you mean. Do you mean that matrix term order should work with Singular version before this patch is merged? Now, if a matrix term ordering is selected, then {{PolyDict}} version is used automatically because Singular version does not support matrix term ordering. If someone implements matrix term ordering with Singular version, then I would be happy. I have been waiting for this to be done. As it is not the case, I thought it's not bad to add matrix term ordering support only with {{PolyDict}} version--Singular version may be added later.",
+    "body": "Replying to [comment:9 malb]:\n\n> Sorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something. \u00a0\u00a0\n\n\nI am sorry that I cannot understand what you mean. Do you mean that matrix term order should work with Singular version before this patch is merged? Now, if a matrix term ordering is selected, then {{PolyDict}} version is used automatically because Singular version does not support matrix term ordering. If someone implements matrix term ordering with Singular version, then I would be happy. I have been waiting for this to be done. As it is not the case, I thought it's not bad to add matrix term ordering support only with {{PolyDict}} version--Singular version may be added later.",
     "created_at": "2010-06-03T00:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -372,6 +372,7 @@ Replying to [comment:9 malb]:
 
 > Sorry for being a bit obnoxious about it, but shouldn't this be needs work until it works across the board? At least we should fall back to the `PolyDict` version automatically if a matrix term ordering is selected or something.   
 
+
 I am sorry that I cannot understand what you mean. Do you mean that matrix term order should work with Singular version before this patch is merged? Now, if a matrix term ordering is selected, then {{PolyDict}} version is used automatically because Singular version does not support matrix term ordering. If someone implements matrix term ordering with Singular version, then I would be happy. I have been waiting for this to be done. As it is not the case, I thought it's not bad to add matrix term ordering support only with {{PolyDict}} version--Singular version may be added later.
 
 
@@ -381,7 +382,7 @@ I am sorry that I cannot understand what you mean. Do you mean that matrix term 
 archive/issue_comments_057040.json:
 ```json
 {
-    "body": "> I am sorry that I cannot understand what you mean. Do you mean that matrix term \n> order should work with Singular version before this patch is merged? Now, if a \n> matrix term ordering is selected, then `PolyDict` version is used \n> automatically because Singular version does not support matrix term ordering. \n\nRight, I forgot that I implemented to fall back this way :) Okay, my bad then. \n\n> If someone implements matrix term ordering with Singular version, then I would be \n> happy. \n\nWe all would be happy. All one needs to do btw. is to fix the constructor.\n\n> I have been waiting for this to be done. \n\nWhy not give it a try yourself? I'd love to help but other commitments prevent me from doing so.\n\n> As it is not the case, I thought it's not bad to add matrix term ordering support \n> only with `PolyDict` version--Singular version may be added later.\u00a0\n\nYou are right, I stand corrected.",
+    "body": "> I am sorry that I cannot understand what you mean. Do you mean that matrix term \n> order should work with Singular version before this patch is merged? Now, if a \n> matrix term ordering is selected, then `PolyDict` version is used \n> automatically because Singular version does not support matrix term ordering. \n\n\nRight, I forgot that I implemented to fall back this way :) Okay, my bad then. \n\n> If someone implements matrix term ordering with Singular version, then I would be \n> happy. \n\n\nWe all would be happy. All one needs to do btw. is to fix the constructor.\n\n> I have been waiting for this to be done. \n\n\nWhy not give it a try yourself? I'd love to help but other commitments prevent me from doing so.\n\n> As it is not the case, I thought it's not bad to add matrix term ordering support \n> only with `PolyDict` version--Singular version may be added later.\u00a0\n\n\nYou are right, I stand corrected.",
     "created_at": "2010-06-03T21:29:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -395,19 +396,23 @@ archive/issue_comments_057040.json:
 > matrix term ordering is selected, then `PolyDict` version is used 
 > automatically because Singular version does not support matrix term ordering. 
 
+
 Right, I forgot that I implemented to fall back this way :) Okay, my bad then. 
 
 > If someone implements matrix term ordering with Singular version, then I would be 
 > happy. 
 
+
 We all would be happy. All one needs to do btw. is to fix the constructor.
 
 > I have been waiting for this to be done. 
+
 
 Why not give it a try yourself? I'd love to help but other commitments prevent me from doing so.
 
 > As it is not the case, I thought it's not bad to add matrix term ordering support 
 > only with `PolyDict` version--Singular version may be added later. 
+
 
 You are right, I stand corrected.
 
@@ -474,7 +479,7 @@ archive/issue_comments_057043.json:
 archive/issue_comments_057044.json:
 ```json
 {
-    "body": "Oh, one more thing, isn't\n\n\n```python\nTermOrder([0,1,2,3])\n```\n\n\nambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders.",
+    "body": "Oh, one more thing, isn't\n\n```python\nTermOrder([0,1,2,3])\n```\n\nambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders.",
     "created_at": "2010-06-03T21:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -485,11 +490,9 @@ archive/issue_comments_057044.json:
 
 Oh, one more thing, isn't
 
-
 ```python
 TermOrder([0,1,2,3])
 ```
-
 
 ambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders.
 
@@ -500,7 +503,7 @@ ambiguous since it could be interpreted as a list of weights? I'd vote to not to
 archive/issue_comments_057045.json:
 ```json
 {
-    "body": "Replying to [comment:13 malb]:\n\n> * `NotImplementedError, \"Singular engine in Sage cannot handle matrix ordering yet.\"` should be replaced by `NotImplementedError(\"Matrix term orderings are not supported by the libSingular interface yet.\"` or something along those lines. I propose this change to make it clearer that Singular can indeed deal with Matrix term orderings and that it is us who cannot. \n\nI agree.\n\n> * `TypeError: Cannot use a matrix term order as a block.` shouldn't that be a `NotImplementedError`? \n\nI know Singular allow matrix term orderings in block order. But this feature is not one of the aims of the current patch. That could be included in a future patch that use Singular version.\n\n> * I thought the agreement was not to allow 'matrix(0,1,2,3)' but to use Singular's convention instead? It seems you are allowing at and using it internally.\n\nI did not agree then. :-) Anyway, I will change it to 'm(...)'",
+    "body": "Replying to [comment:13 malb]:\n\n> * `NotImplementedError, \"Singular engine in Sage cannot handle matrix ordering yet.\"` should be replaced by `NotImplementedError(\"Matrix term orderings are not supported by the libSingular interface yet.\"` or something along those lines. I propose this change to make it clearer that Singular can indeed deal with Matrix term orderings and that it is us who cannot. \n\n\nI agree.\n\n> * `TypeError: Cannot use a matrix term order as a block.` shouldn't that be a `NotImplementedError`? \n\n\nI know Singular allow matrix term orderings in block order. But this feature is not one of the aims of the current patch. That could be included in a future patch that use Singular version.\n\n> * I thought the agreement was not to allow 'matrix(0,1,2,3)' but to use Singular's convention instead? It seems you are allowing at and using it internally.\n\n\nI did not agree then. :-) Anyway, I will change it to 'm(...)'",
     "created_at": "2010-06-04T01:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -513,13 +516,16 @@ Replying to [comment:13 malb]:
 
 > * `NotImplementedError, "Singular engine in Sage cannot handle matrix ordering yet."` should be replaced by `NotImplementedError("Matrix term orderings are not supported by the libSingular interface yet."` or something along those lines. I propose this change to make it clearer that Singular can indeed deal with Matrix term orderings and that it is us who cannot. 
 
+
 I agree.
 
 > * `TypeError: Cannot use a matrix term order as a block.` shouldn't that be a `NotImplementedError`? 
 
+
 I know Singular allow matrix term orderings in block order. But this feature is not one of the aims of the current patch. That could be included in a future patch that use Singular version.
 
 > * I thought the agreement was not to allow 'matrix(0,1,2,3)' but to use Singular's convention instead? It seems you are allowing at and using it internally.
+
 
 I did not agree then. :-) Anyway, I will change it to 'm(...)'
 
@@ -530,7 +536,7 @@ I did not agree then. :-) Anyway, I will change it to 'm(...)'
 archive/issue_comments_057046.json:
 ```json
 {
-    "body": "Replying to [comment:14 malb]:\n\n> Oh, one more thing, isn't ` #!python TermOrder([0,1,2,3]) ` ambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders. \n\nOk.",
+    "body": "Replying to [comment:14 malb]:\n\n> Oh, one more thing, isn't ` #!python TermOrder([0,1,2,3]) ` ambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders. \n\n\nOk.",
     "created_at": "2010-06-04T01:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -542,6 +548,7 @@ archive/issue_comments_057046.json:
 Replying to [comment:14 malb]:
 
 > Oh, one more thing, isn't ` #!python TermOrder([0,1,2,3]) ` ambiguous since it could be interpreted as a list of weights? I'd vote to not to allow it for matrix term orders. 
+
 
 Ok.
 
@@ -572,7 +579,7 @@ replaced
 archive/issue_comments_057048.json:
 ```json
 {
-    "body": "The patch applies cleanly and doctests pass.\n\nI'm still not happy with the interface:\n\n\n```python\nsage: P.<a,b> = PolynomialRing(GF(32003),order=TermOrder(Matrix([1,2,0,3])))\nsage: P.term_order()\nm(1,2,0,3) term order\n```\n\n\nThis uses the non-standard \"m(...)\" representation which I would avoid. I'd be happy with either \"M()\" (Singular notation) or \"Matrix term ordering with matrix ...\" or so.\n\nAlso, the \"m()\" notation is allowed but shouldn't.\n\n\n```python\nsage: P.<a,b> = PolynomialRing(GF(32003),order='m(1,2,0,3)')\n```\n\n\nI understand that this is a typical paint-the-bike-shed scenario and in particular a question of choice. Still, I think we shouldn't invent more ad-hoc string notation when (a) there is an established notation and (b) we have a much nicer object oriented way of constructing term orderings.\n\nHowever, since this isn't really that big of a deal, I am okay with being overruled by some other referee who disagrees.\n\nPS: Apologies for taking so long to revisit this ticket.",
+    "body": "The patch applies cleanly and doctests pass.\n\nI'm still not happy with the interface:\n\n```python\nsage: P.<a,b> = PolynomialRing(GF(32003),order=TermOrder(Matrix([1,2,0,3])))\nsage: P.term_order()\nm(1,2,0,3) term order\n```\n\nThis uses the non-standard \"m(...)\" representation which I would avoid. I'd be happy with either \"M()\" (Singular notation) or \"Matrix term ordering with matrix ...\" or so.\n\nAlso, the \"m()\" notation is allowed but shouldn't.\n\n```python\nsage: P.<a,b> = PolynomialRing(GF(32003),order='m(1,2,0,3)')\n```\n\nI understand that this is a typical paint-the-bike-shed scenario and in particular a question of choice. Still, I think we shouldn't invent more ad-hoc string notation when (a) there is an established notation and (b) we have a much nicer object oriented way of constructing term orderings.\n\nHowever, since this isn't really that big of a deal, I am okay with being overruled by some other referee who disagrees.\n\nPS: Apologies for taking so long to revisit this ticket.",
     "created_at": "2010-06-24T12:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -585,23 +592,19 @@ The patch applies cleanly and doctests pass.
 
 I'm still not happy with the interface:
 
-
 ```python
 sage: P.<a,b> = PolynomialRing(GF(32003),order=TermOrder(Matrix([1,2,0,3])))
 sage: P.term_order()
 m(1,2,0,3) term order
 ```
 
-
 This uses the non-standard "m(...)" representation which I would avoid. I'd be happy with either "M()" (Singular notation) or "Matrix term ordering with matrix ..." or so.
 
 Also, the "m()" notation is allowed but shouldn't.
 
-
 ```python
 sage: P.<a,b> = PolynomialRing(GF(32003),order='m(1,2,0,3)')
 ```
-
 
 I understand that this is a typical paint-the-bike-shed scenario and in particular a question of choice. Still, I think we shouldn't invent more ad-hoc string notation when (a) there is an established notation and (b) we have a much nicer object oriented way of constructing term orderings.
 
@@ -716,7 +719,7 @@ The new patch supports also the Singular version.  Now "M(...)" is the official 
 archive/issue_comments_057054.json:
 ```json
 {
-    "body": "Replying to [comment:18 klee]:\n> The situation is the same with other orderings like \"Lex\", which is converted to \n> lower case internally.\n\nGood point, I'm convinced.\n\n> I am working to make matrix ordering work with Singular version. I am not really \n> confident whether the code is sound as it is based on a knowledge obtained by a \n> reverse engineering of libSingular Sage interface. \n\nGreat, I'll take a look.",
+    "body": "Replying to [comment:18 klee]:\n> The situation is the same with other orderings like \"Lex\", which is converted to \n> lower case internally.\n\n\nGood point, I'm convinced.\n\n> I am working to make matrix ordering work with Singular version. I am not really \n> confident whether the code is sound as it is based on a knowledge obtained by a \n> reverse engineering of libSingular Sage interface. \n\n\nGreat, I'll take a look.",
     "created_at": "2010-06-25T07:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -729,11 +732,13 @@ Replying to [comment:18 klee]:
 > The situation is the same with other orderings like "Lex", which is converted to 
 > lower case internally.
 
+
 Good point, I'm convinced.
 
 > I am working to make matrix ordering work with Singular version. I am not really 
 > confident whether the code is sound as it is based on a knowledge obtained by a 
 > reverse engineering of libSingular Sage interface. 
+
 
 Great, I'll take a look.
 
@@ -744,7 +749,7 @@ Great, I'll take a look.
 archive/issue_comments_057055.json:
 ```json
 {
-    "body": "Patch looks good (small issue see below), applies cleanly, doctests pass.\n\nSo, this stuff now works, very cool:\n\n\n```python\nsage: P = PolynomialRing(GF(127),2,'x',order=Matrix([1,2,0,3]))\nsage: P.term_order()\nMatrix term order with matrix\n[1 2]\n[0 3]\nsage: magma(P)\nPolynomial ring of rank 2 over GF(127)\nOrder: Weight [full]\nVariables: x0, x1\nsage: singular(P)\n//   characteristic : 127\n//   number of vars : 2\n//        block   1 : ordering M\n//                  : names    x0 x1\n//                  : weights   1  2\n//                  : weights   0  3\n//        block   2 : ordering C\n```\n\n\nI've attached a small referee patch which Kwankyu or someone else has to sign of. Kwankyu's patch gets a positive review modulo the issue in the referee patch.",
+    "body": "Patch looks good (small issue see below), applies cleanly, doctests pass.\n\nSo, this stuff now works, very cool:\n\n```python\nsage: P = PolynomialRing(GF(127),2,'x',order=Matrix([1,2,0,3]))\nsage: P.term_order()\nMatrix term order with matrix\n[1 2]\n[0 3]\nsage: magma(P)\nPolynomial ring of rank 2 over GF(127)\nOrder: Weight [full]\nVariables: x0, x1\nsage: singular(P)\n//   characteristic : 127\n//   number of vars : 2\n//        block   1 : ordering M\n//                  : names    x0 x1\n//                  : weights   1  2\n//                  : weights   0  3\n//        block   2 : ordering C\n```\n\nI've attached a small referee patch which Kwankyu or someone else has to sign of. Kwankyu's patch gets a positive review modulo the issue in the referee patch.",
     "created_at": "2010-06-25T09:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6922",
     "type": "issue_comment",
@@ -756,7 +761,6 @@ archive/issue_comments_057055.json:
 Patch looks good (small issue see below), applies cleanly, doctests pass.
 
 So, this stuff now works, very cool:
-
 
 ```python
 sage: P = PolynomialRing(GF(127),2,'x',order=Matrix([1,2,0,3]))
@@ -777,7 +781,6 @@ sage: singular(P)
 //                  : weights   0  3
 //        block   2 : ordering C
 ```
-
 
 I've attached a small referee patch which Kwankyu or someone else has to sign of. Kwankyu's patch gets a positive review modulo the issue in the referee patch.
 

@@ -3,7 +3,7 @@
 archive/issues_003146.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\na=matrix(QQ,3,3,range(9))\nv=matrix(QQ,3,1,range(3))\n(latex(a\\v), a)\n```\n\n\ngives an error.\n\nI think it has to do with the parsing of latex(a\\v); it seems to try doing \"(latex(a._backslash_(v), a)\" (note the missing parenthesis in the call to latex.\n\nYou see this parsing in the error from:\n\n\n```\n@interact\ndef _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):\n    html('$$%s %s = %s$$'%(latex(a), latex(a\\v), latex(v)))\n```\n\n\nwith the patch from #3121\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3146\n\n",
+    "body": "Assignee: @williamstein\n\n```\na=matrix(QQ,3,3,range(9))\nv=matrix(QQ,3,1,range(3))\n(latex(a\\v), a)\n```\n\ngives an error.\n\nI think it has to do with the parsing of latex(a\\v); it seems to try doing \"(latex(a._backslash_(v), a)\" (note the missing parenthesis in the call to latex.\n\nYou see this parsing in the error from:\n\n```\n@interact\ndef _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):\n    html('$$%s %s = %s$$'%(latex(a), latex(a\\v), latex(v)))\n```\n\nwith the patch from #3121\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3146\n\n",
     "created_at": "2008-05-09T20:13:03Z",
     "labels": [
         "component: linear algebra",
@@ -18,13 +18,11 @@ archive/issues_003146.json:
 ```
 Assignee: @williamstein
 
-
 ```
 a=matrix(QQ,3,3,range(9))
 v=matrix(QQ,3,1,range(3))
 (latex(a\v), a)
 ```
-
 
 gives an error.
 
@@ -32,13 +30,11 @@ I think it has to do with the parsing of latex(a\v); it seems to try doing "(lat
 
 You see this parsing in the error from:
 
-
 ```
 @interact
 def _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):
     html('$$%s %s = %s$$'%(latex(a), latex(a\v), latex(v)))
 ```
-
 
 with the patch from #3121
 
@@ -72,7 +68,7 @@ archive/issue_events_007108.json:
 archive/issue_comments_021785.json:
 ```json
 {
-    "body": "This now works (most likely with the change to how the backslash operator is implemented)\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=matrix(QQ,3,3,range(9))\nsage: v=matrix(QQ,3,1,range(3))\nsage: (latex(a\\v), a)\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n(\\left(\\begin{array}{r}\n\\frac{1}{3} \\\\\n0 \\\\\n0\n\\end{array}\\right),\n [0 1 2]\n[3 4 5]\n[6 7 8])\n```\n",
+    "body": "This now works (most likely with the change to how the backslash operator is implemented)\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=matrix(QQ,3,3,range(9))\nsage: v=matrix(QQ,3,1,range(3))\nsage: (latex(a\\v), a)\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n(\\left(\\begin{array}{r}\n\\frac{1}{3} \\\\\n0 \\\\\n0\n\\end{array}\\right),\n [0 1 2]\n[3 4 5]\n[6 7 8])\n```",
     "created_at": "2009-06-04T22:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3146",
     "type": "issue_comment",
@@ -82,7 +78,6 @@ archive/issue_comments_021785.json:
 ```
 
 This now works (most likely with the change to how the backslash operator is implemented)
-
 
 ```
 ----------------------------------------------------------------------
@@ -101,7 +96,6 @@ sage: (latex(a\v), a)
 [3 4 5]
 [6 7 8])
 ```
-
 
 
 

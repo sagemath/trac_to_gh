@@ -3,7 +3,7 @@
 archive/issues_005779.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nI thought we had fixed this via fast_callable, but it is still there:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\nnan\nsage: \n```\n\nThis is exposed via a plotting failure on Solaris where NaNs pop up. Fixing that in the plotting code is a different ticket William will open shortly.\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5779\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nI thought we had fixed this via fast_callable, but it is still there:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\nnan\nsage: \n```\nThis is exposed via a plotting failure on Solaris where NaNs pop up. Fixing that in the plotting code is a different ticket William will open shortly.\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5779\n\n",
     "created_at": "2009-04-13T20:04:51Z",
     "labels": [
         "component: porting: solaris",
@@ -32,7 +32,6 @@ sage: f._fast_float_(x)(-1.2)
 nan
 sage: 
 ```
-
 This is exposed via a plotting failure on Solaris where NaNs pop up. Fixing that in the plotting code is a different ticket William will open shortly.
 | Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |
 | Type notebook() for the GUI, and license() for information.        |
@@ -69,7 +68,7 @@ Changing assignee from mabshoff to @robertwb.
 archive/issue_comments_045158.json:
 ```json
 {
-    "body": "Hmm, the c library is involved here as shown by this on Solaris:\n\n```\n-bash-3.00$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: main-sol\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\n-NaN\n```\n\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\nI am not so sure what is going on or if this is the real issue. I will talk to RobertWB in person about this on the next occasion.\n\nCheers,\n\nMichael",
+    "body": "Hmm, the c library is involved here as shown by this on Solaris:\n\n```\n-bash-3.00$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: main-sol\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\n-NaN\n```\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\nI am not so sure what is going on or if this is the real issue. I will talk to RobertWB in person about this on the next occasion.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T20:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
@@ -89,7 +88,6 @@ sage: f=x^(1/3)
 sage: f._fast_float_(x)(-1.2)
 -NaN
 ```
-
 | Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |
 | Type notebook() for the GUI, and license() for information.        |
 I am not so sure what is going on or if this is the real issue. I will talk to RobertWB in person about this on the next occasion.
@@ -145,7 +143,7 @@ I fixed the new fast float (fast callable) not the old one. However, the old one
 archive/issue_comments_045161.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> I fixed the new fast float (fast callable) not the old one. However, the old one is a simple fix too--I'll post a patch shortly. \n\nCool, note that #5780 does fix an issue when the axes code in plotting encounters a NaN or Infinity, so you might want to apply that one before doctesting.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> I fixed the new fast float (fast callable) not the old one. However, the old one is a simple fix too--I'll post a patch shortly. \n\n\nCool, note that #5780 does fix an issue when the axes code in plotting encounters a NaN or Infinity, so you might want to apply that one before doctesting.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T22:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
@@ -156,6 +154,7 @@ archive/issue_comments_045161.json:
 
 Replying to [comment:4 robertwb]:
 > I fixed the new fast float (fast callable) not the old one. However, the old one is a simple fix too--I'll post a patch shortly. 
+
 
 Cool, note that #5780 does fix an issue when the axes code in plotting encounters a NaN or Infinity, so you might want to apply that one before doctesting.
 

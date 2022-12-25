@@ -71,7 +71,7 @@ For the record: we went through your patches with Franco and Jason, and discusse
 archive/issue_comments_087262.json:
 ```json
 {
-    "body": "Replying to [comment:2 nthiery]:\n> Hi John,\n> \n> For the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.\n\nIs it \"shortly\" yet?  :)",
+    "body": "Replying to [comment:2 nthiery]:\n> Hi John,\n> \n> For the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.\n\n\nIs it \"shortly\" yet?  :)",
     "created_at": "2010-10-01T22:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -85,6 +85,7 @@ Replying to [comment:2 nthiery]:
 > 
 > For the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.
 
+
 Is it "shortly" yet?  :)
 
 
@@ -94,7 +95,7 @@ Is it "shortly" yet?  :)
 archive/issue_comments_087263.json:
 ```json
 {
-    "body": "In the sage-combinat patch, there are a few typos and some other issues:\n\n- in sage/categories/graded_algebras_with_basis.py, the docstring for \"degree\" says \"The degree of this element in the graded polynomial algebra.\"  Delete \"polynomial\".\n\n- in sage/categories/examples/graded_algebras_with_basis.py, the docstring for \"one_basis\" contains `'(0,...,0`)`, and I think this should be changed to ```(0,...,0)```.\n\n- in sage/categories/examples/graded_algebras_with_basis.py, the docstring for the main class is now outdated: it still refers to \"basis_function\" and \"_basis_fcn\", which don't exist any more, and also to \"homogeneous_component\", which is now part of the default implementation, not something specific to this example.\n\nI'm attaching a referee patch which fixes these. \n\nThere are also some doctests for \"basis\" in sage/categories/graded_algebras_with_basis.py which are marked as \"todo: not implemented\".  Do we need to wait for these to be fixed, or should we consider this ready for review?  It may not be ideal, but we could also change\n\n```\nsage: A.basis(6) # todo: not implemented (output)\nFamily (y^{2}, x^{3}\n```\n\nto\n\n```\nsage: A.basis(6) # todo: not implemented (output)\nFamily (y^{2}, x^{3}\nsage: list(A.basis(6))\n[y^{2}, x^{3}]\n```\n\nBy the way, all tests pass with this patch and with the one from #10193.  So perhaps we could also delete the commented-out part at the beginning of the example, where it says\n\n```\n# TODO: double check that we can now discard this function\n```\n",
+    "body": "In the sage-combinat patch, there are a few typos and some other issues:\n\n- in sage/categories/graded_algebras_with_basis.py, the docstring for \"degree\" says \"The degree of this element in the graded polynomial algebra.\"  Delete \"polynomial\".\n\n- in sage/categories/examples/graded_algebras_with_basis.py, the docstring for \"one_basis\" contains `'(0,...,0`)`, and I think this should be changed to ```(0,...,0)```.\n\n- in sage/categories/examples/graded_algebras_with_basis.py, the docstring for the main class is now outdated: it still refers to \"basis_function\" and \"_basis_fcn\", which don't exist any more, and also to \"homogeneous_component\", which is now part of the default implementation, not something specific to this example.\n\nI'm attaching a referee patch which fixes these. \n\nThere are also some doctests for \"basis\" in sage/categories/graded_algebras_with_basis.py which are marked as \"todo: not implemented\".  Do we need to wait for these to be fixed, or should we consider this ready for review?  It may not be ideal, but we could also change\n\n```\nsage: A.basis(6) # todo: not implemented (output)\nFamily (y^{2}, x^{3}\n```\nto\n\n```\nsage: A.basis(6) # todo: not implemented (output)\nFamily (y^{2}, x^{3}\nsage: list(A.basis(6))\n[y^{2}, x^{3}]\n```\nBy the way, all tests pass with this patch and with the one from #10193.  So perhaps we could also delete the commented-out part at the beginning of the example, where it says\n\n```\n# TODO: double check that we can now discard this function\n```",
     "created_at": "2010-11-08T23:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
@@ -119,7 +120,6 @@ There are also some doctests for "basis" in sage/categories/graded_algebras_with
 sage: A.basis(6) # todo: not implemented (output)
 Family (y^{2}, x^{3}
 ```
-
 to
 
 ```
@@ -128,13 +128,11 @@ Family (y^{2}, x^{3}
 sage: list(A.basis(6))
 [y^{2}, x^{3}]
 ```
-
 By the way, all tests pass with this patch and with the one from #10193.  So perhaps we could also delete the commented-out part at the beginning of the example, where it says
 
 ```
 # TODO: double check that we can now discard this function
 ```
-
 
 
 

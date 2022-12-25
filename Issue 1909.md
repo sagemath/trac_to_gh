@@ -3,7 +3,7 @@
 archive/issues_001909.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\n\n```\nThanks.  I would actually strongly encourage you or somebody to\nsit down and actually write a function that has the _same_ functionality\nas http://reference.wolfram.com/mathematica/ref/Partition.html\nsince that looks like a very useful function, and I think having it\ntrivially available in Sage will be very useful to people used to\nMathematica or people porting Mathematica code to Sage.\nI hope people will implement something with the same interface and\nsubmit a patch.\n\n -- William\n```\n\n\nand \n\n\n```\nLet me be the first of many  ;-)  to say that's maybe more efficient to\nuse a temporary variable for the padding:\n\ndef partition(v,n,pad=0):\n    t=(v+[pad]*(n-len(v)%n))\n    return [t[i:i+n] for i in range(0,len(v),n)]\n\n\n-vgermrk-\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/64de09db029abe43\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1909\n\n",
+    "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\n```\nThanks.  I would actually strongly encourage you or somebody to\nsit down and actually write a function that has the _same_ functionality\nas http://reference.wolfram.com/mathematica/ref/Partition.html\nsince that looks like a very useful function, and I think having it\ntrivially available in Sage will be very useful to people used to\nMathematica or people porting Mathematica code to Sage.\nI hope people will implement something with the same interface and\nsubmit a patch.\n\n -- William\n```\n\nand \n\n```\nLet me be the first of many  ;-)  to say that's maybe more efficient to\nuse a temporary variable for the padding:\n\ndef partition(v,n,pad=0):\n    t=(v+[pad]*(n-len(v)%n))\n    return [t[i:i+n] for i in range(0,len(v),n)]\n\n\n-vgermrk-\n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/64de09db029abe43\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1909\n\n",
     "created_at": "2008-01-24T13:33:36Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ Assignee: cwitty
 
 CC:  sage-combinat
 
-
 ```
 Thanks.  I would actually strongly encourage you or somebody to
 sit down and actually write a function that has the _same_ functionality
@@ -34,9 +33,7 @@ submit a patch.
  -- William
 ```
 
-
 and 
-
 
 ```
 Let me be the first of many  ;-)  to say that's maybe more efficient to
@@ -49,7 +46,6 @@ def partition(v,n,pad=0):
 
 -vgermrk-
 ```
-
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/64de09db029abe43
 

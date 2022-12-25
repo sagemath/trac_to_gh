@@ -3,7 +3,7 @@
 archive/issues_000133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
     "created_at": "2006-10-15T16:47:17Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ Keywords: Galois group, algebric number theory
 
 It would be great if something like the following worked:
 
-
 ```
 sage: F = CyclotomicField(7)
 
@@ -34,7 +33,6 @@ sage: phi = G.random()
 
 sage: z.galois_action(phi)
 ```
-
 
 Also needed, I think, are embedding into CC.
 AFAIK, neither of these has been entered onto the SAGE
@@ -51,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/133
 archive/issue_comments_000624.json:
 ```json
 {
-    "body": "Complex embeddings were written long ago.  In your example above, try:\n\n```\n    F.complex_embeddings()\n```\n",
+    "body": "Complex embeddings were written long ago.  In your example above, try:\n\n```\n    F.complex_embeddings()\n```",
     "created_at": "2006-10-15T17:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
@@ -68,13 +66,12 @@ Complex embeddings were written long ago.  In your example above, try:
 
 
 
-
 ---
 
 archive/issue_comments_000625.json:
 ```json
 {
-    "body": "This is quite usable:\n\n```\nsage: F = CyclotomicField(7)\nsage: z = F.gen()           \nsage: G = F.embeddings(F)   \nsage: G                     \n\n[\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^2,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^3,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^4,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^5,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1\n]\nsage: [g(z) for g in G]     \n\n[zeta7,\n zeta7^2,\n zeta7^3,\n zeta7^4,\n zeta7^5,\n -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1]\n```\n\n\nOne could easily implement F.autumorphisms() to return F.embeddings(F), but in fact there is already End(F) -- whose existence I discovered by doing F.galois_group?\n\nSo what should be done is to change the structure returned by F.galois_group() which is <class 'sage.rings.number_field.galois_group.GaloisGroup'> to be derived from that of End(F) which is <class 'sage.rings.number_field.morphism.NumberFieldHomset'>,  which does not look very difficult to me...",
+    "body": "This is quite usable:\n\n```\nsage: F = CyclotomicField(7)\nsage: z = F.gen()           \nsage: G = F.embeddings(F)   \nsage: G                     \n\n[\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^2,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^3,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^4,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^5,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1\n]\nsage: [g(z) for g in G]     \n\n[zeta7,\n zeta7^2,\n zeta7^3,\n zeta7^4,\n zeta7^5,\n -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1]\n```\n\nOne could easily implement F.autumorphisms() to return F.embeddings(F), but in fact there is already End(F) -- whose existence I discovered by doing F.galois_group?\n\nSo what should be done is to change the structure returned by F.galois_group() which is <class 'sage.rings.number_field.galois_group.GaloisGroup'> to be derived from that of End(F) which is <class 'sage.rings.number_field.morphism.NumberFieldHomset'>,  which does not look very difficult to me...",
     "created_at": "2008-09-04T16:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
@@ -115,7 +112,6 @@ sage: [g(z) for g in G]
  -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1]
 ```
 
-
 One could easily implement F.autumorphisms() to return F.embeddings(F), but in fact there is already End(F) -- whose existence I discovered by doing F.galois_group?
 
 So what should be done is to change the structure returned by F.galois_group() which is <class 'sage.rings.number_field.galois_group.GaloisGroup'> to be derived from that of End(F) which is <class 'sage.rings.number_field.morphism.NumberFieldHomset'>,  which does not look very difficult to me...
@@ -127,7 +123,7 @@ So what should be done is to change the structure returned by F.galois_group() w
 archive/issue_comments_000626.json:
 ```json
 {
-    "body": "This one was almost fixed by #5159; but unfortunately the above snippet didn't quite work, because my new GaloisGroup class derived from PermutationGroup_generic, and the random_element method of that class always returned a PermutationGroupElement (rather than a GaloisGroupElement, which has more functionality).\n\nThe above patch makes the necessary tiny changes to the permutation groups code so this now works, although the interface is slightly different from the above:\n\n```\nsage: F.<z> = CyclotomicField(7)\nsage: G = F.galois_group()\nsage: phi = G.random_element()\nsage: phi(z)\nz^4\n```\n",
+    "body": "This one was almost fixed by #5159; but unfortunately the above snippet didn't quite work, because my new GaloisGroup class derived from PermutationGroup_generic, and the random_element method of that class always returned a PermutationGroupElement (rather than a GaloisGroupElement, which has more functionality).\n\nThe above patch makes the necessary tiny changes to the permutation groups code so this now works, although the interface is slightly different from the above:\n\n```\nsage: F.<z> = CyclotomicField(7)\nsage: G = F.galois_group()\nsage: phi = G.random_element()\nsage: phi(z)\nz^4\n```",
     "created_at": "2009-05-25T13:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
@@ -147,7 +143,6 @@ sage: phi = G.random_element()
 sage: phi(z)
 z^4
 ```
-
 
 
 

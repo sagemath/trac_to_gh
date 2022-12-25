@@ -3,7 +3,7 @@
 archive/issues_006282.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAdd the following to the SAGE_ROOT/README.txt, since right now the SAGE_CHECK flag is totally undocumented:\n\n\n```\nIf you want to run the test suite for each individual spkg as it is installed, do\n\n   export SAGE_CHECK=\"yes\"\n\nbefore starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6282\n\n",
+    "body": "Assignee: tbd\n\nAdd the following to the SAGE_ROOT/README.txt, since right now the SAGE_CHECK flag is totally undocumented:\n\n```\nIf you want to run the test suite for each individual spkg as it is installed, do\n\n   export SAGE_CHECK=\"yes\"\n\nbefore starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6282\n\n",
     "created_at": "2009-06-14T09:34:44Z",
     "labels": [
         "component: build"
@@ -19,7 +19,6 @@ Assignee: tbd
 
 Add the following to the SAGE_ROOT/README.txt, since right now the SAGE_CHECK flag is totally undocumented:
 
-
 ```
 If you want to run the test suite for each individual spkg as it is installed, do
 
@@ -27,7 +26,6 @@ If you want to run the test suite for each individual spkg as it is installed, d
 
 before starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6282
 
@@ -58,7 +56,7 @@ The "patch" is just the text in the description, which must be manually added to
 archive/issue_comments_050063.json:
 ```json
 {
-    "body": "By the way, in this part:\n\n```\nIf you have a machine with n processors, say, type  \n             export MAKE=\"make -j4\"\n```\n\nshould \"n\" be changed to \"4\"?",
+    "body": "By the way, in this part:\n\n```\nIf you have a machine with n processors, say, type  \n             export MAKE=\"make -j4\"\n```\nshould \"n\" be changed to \"4\"?",
     "created_at": "2009-06-14T15:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6282",
     "type": "issue_comment",
@@ -73,7 +71,6 @@ By the way, in this part:
 If you have a machine with n processors, say, type  
              export MAKE="make -j4"
 ```
-
 should "n" be changed to "4"?
 
 

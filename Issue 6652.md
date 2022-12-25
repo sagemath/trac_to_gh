@@ -3,7 +3,7 @@
 archive/issues_006652.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\ncombinat/species/stream.py has its origin in\n\n```\nsvn cat svn://svn.risc.uni-linz.ac.at/hemmecke/combinat/trunk/combinat/src/stream.as.nw\n```\n\nI designed the original Aldor domain `DataStream` as a container being an equivalent of an infinite array. Since the Stream can contain any objects, it makes no sense for the stream to provide a `__mul__` and `__add__` method. Any algebraic operations should be defined in a derived class.\n\nSuggestion: Remove `__add__`, `__mul__`, `_times_naive`, `stretch` and `_stretch_gen` from stream.py and put them into a more appropriate place in the class hierarchy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6652\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\ncombinat/species/stream.py has its origin in\n\n```\nsvn cat svn://svn.risc.uni-linz.ac.at/hemmecke/combinat/trunk/combinat/src/stream.as.nw\n```\nI designed the original Aldor domain `DataStream` as a container being an equivalent of an infinite array. Since the Stream can contain any objects, it makes no sense for the stream to provide a `__mul__` and `__add__` method. Any algebraic operations should be defined in a derived class.\n\nSuggestion: Remove `__add__`, `__mul__`, `_times_naive`, `stretch` and `_stretch_gen` from stream.py and put them into a more appropriate place in the class hierarchy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6652\n\n",
     "created_at": "2009-07-28T22:35:30Z",
     "labels": [
         "component: combinatorics",
@@ -25,7 +25,6 @@ combinat/species/stream.py has its origin in
 ```
 svn cat svn://svn.risc.uni-linz.ac.at/hemmecke/combinat/trunk/combinat/src/stream.as.nw
 ```
-
 I designed the original Aldor domain `DataStream` as a container being an equivalent of an infinite array. Since the Stream can contain any objects, it makes no sense for the stream to provide a `__mul__` and `__add__` method. Any algebraic operations should be defined in a derived class.
 
 Suggestion: Remove `__add__`, `__mul__`, `_times_naive`, `stretch` and `_stretch_gen` from stream.py and put them into a more appropriate place in the class hierarchy.

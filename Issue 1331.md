@@ -3,7 +3,7 @@
 archive/issues_001331.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/rings/complex_double.pyx      **********************************************************************\nFile \"complex_double.pyx\", line 1496:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1331\n\n",
+    "body": "Assignee: mabshoff\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/rings/complex_double.pyx      **********************************************************************\nFile \"complex_double.pyx\", line 1496:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n```\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1331\n\n",
     "created_at": "2007-11-28T23:20:10Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ Expected:
 Got:
     2.22044604925e-16 + 2.22044604925e-16*I
 ```
-
 The attached patch fixes that.
 
 Cheers,

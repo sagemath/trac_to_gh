@@ -3,7 +3,7 @@
 archive/issues_008251.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @williamstein\n\nIt's possible to get a traceback for some dumb reason in some cases when computing the torsion subgroup of an elliptic curve:\n\n```\n...\nTraceback (most recent call last):           for K in J.unramified_outside([i],3):\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpSAW9n5/___code___.py\", line 6, in <module>\n    T=E.torsion_subgroup()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3515, in torsion_subgroup\n    self.__torsion_subgroup = ell_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_torsion.py\", line 159, in __init__\n    if self.__K is RationalField() and algorithm in pari_torsion_algorithms:\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/rational_field.py\", line 208, in __init__\n    self._assign_names(('x',),normalize=False) # ???\n  File \"parent_gens.pyx\", line 327, in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2854)\n  File \"category_object.pyx\", line 336, in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3286)\nValueError: variable names cannot be changed after object creation.\n```\n\n\nThe above is caused by running this script:\n\n```\nJ=JonesDatabase()\nP=Primes()\nfor E in cremona_optimal_curves([0..50]):\n    T=E.torsion_subgroup()\n    i=E.conductor()\n    if i.is_prime():\n       for K in J.unramified_outside([i],3):\n                F=E.base_extend(K)\n                T_1=F.torsion_subgroup() \n\n                if T != T_1:\n                    E.label();\n                    K.is_galois();\n                    T;\n                    T_1;\n    else:\n        j=2 \n        while j < i :\n            if j.is_prime():\n                n=i/j\n                if n.is_integral():\n                    for K in J.unramified_outside([j],3):\n                        F=E.base_extend(K)\n\n                        T_1=F.torsion_subgroup() \n                        if T != T_1:\n                            E.label();\n\n                            K.is_galois();\n                            T;\n                            T_1;\n            j=P.next(j)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8251\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @williamstein\n\nIt's possible to get a traceback for some dumb reason in some cases when computing the torsion subgroup of an elliptic curve:\n\n```\n...\nTraceback (most recent call last):           for K in J.unramified_outside([i],3):\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpSAW9n5/___code___.py\", line 6, in <module>\n    T=E.torsion_subgroup()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3515, in torsion_subgroup\n    self.__torsion_subgroup = ell_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_torsion.py\", line 159, in __init__\n    if self.__K is RationalField() and algorithm in pari_torsion_algorithms:\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/rational_field.py\", line 208, in __init__\n    self._assign_names(('x',),normalize=False) # ???\n  File \"parent_gens.pyx\", line 327, in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2854)\n  File \"category_object.pyx\", line 336, in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3286)\nValueError: variable names cannot be changed after object creation.\n```\n\nThe above is caused by running this script:\n\n```\nJ=JonesDatabase()\nP=Primes()\nfor E in cremona_optimal_curves([0..50]):\n    T=E.torsion_subgroup()\n    i=E.conductor()\n    if i.is_prime():\n       for K in J.unramified_outside([i],3):\n                F=E.base_extend(K)\n                T_1=F.torsion_subgroup() \n\n                if T != T_1:\n                    E.label();\n                    K.is_galois();\n                    T;\n                    T_1;\n    else:\n        j=2 \n        while j < i :\n            if j.is_prime():\n                n=i/j\n                if n.is_integral():\n                    for K in J.unramified_outside([j],3):\n                        F=E.base_extend(K)\n\n                        T_1=F.torsion_subgroup() \n                        if T != T_1:\n                            E.label();\n\n                            K.is_galois();\n                            T;\n                            T_1;\n            j=P.next(j)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8251\n\n",
     "created_at": "2010-02-12T15:29:39Z",
     "labels": [
         "component: elliptic curves",
@@ -40,7 +40,6 @@ Traceback (most recent call last):           for K in J.unramified_outside([i],3
   File "category_object.pyx", line 336, in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3286)
 ValueError: variable names cannot be changed after object creation.
 ```
-
 
 The above is caused by running this script:
 
@@ -79,7 +78,6 @@ for E in cremona_optimal_curves([0..50]):
             j=P.next(j)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8251
 
 
@@ -111,7 +109,7 @@ It would be a great help if we could simplify the script which causes this.  The
 archive/issue_comments_072866.json:
 ```json
 {
-    "body": "This error has (a) nothing to do with elliptic curve code and (b) nothing to do with number fields at all!\n\nIt is arising because in several places in Sage source code the field of rational numbers is referred to as `RationalField()` instead of as QQ.  This should not matter, since the `RationalField()` call is supposed to return the unique object of its class, which is pre-assigned to QQ, but apparently sometimes it does go through the process of running the code in `RationalField.__init__()`.  That code contains the mysterious line\n\n```\n        self._assign_names(('x',),normalize=False) # ???\n```\n\n-- note that some one (not me) has added those ??? -- I cannot see any reason for assigning any \"names\" to QQ.  It is this call to the _assign_names() function which sometimes raises the error.  I do not know why it only happens sometimes.\n\nIt might therefore be a good idea to change the title of this ticket.  I will ask other people for their opinion.  Robert?  (You added the ???)  William?  (You added the assign_names line!)\n\nI would like to try commenting out that line and testing the entire Sage library.",
+    "body": "This error has (a) nothing to do with elliptic curve code and (b) nothing to do with number fields at all!\n\nIt is arising because in several places in Sage source code the field of rational numbers is referred to as `RationalField()` instead of as QQ.  This should not matter, since the `RationalField()` call is supposed to return the unique object of its class, which is pre-assigned to QQ, but apparently sometimes it does go through the process of running the code in `RationalField.__init__()`.  That code contains the mysterious line\n\n```\n        self._assign_names(('x',),normalize=False) # ???\n```\n-- note that some one (not me) has added those ??? -- I cannot see any reason for assigning any \"names\" to QQ.  It is this call to the _assign_names() function which sometimes raises the error.  I do not know why it only happens sometimes.\n\nIt might therefore be a good idea to change the title of this ticket.  I will ask other people for their opinion.  Robert?  (You added the ???)  William?  (You added the assign_names line!)\n\nI would like to try commenting out that line and testing the entire Sage library.",
     "created_at": "2010-06-25T07:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -127,7 +125,6 @@ It is arising because in several places in Sage source code the field of rationa
 ```
         self._assign_names(('x',),normalize=False) # ???
 ```
-
 -- note that some one (not me) has added those ??? -- I cannot see any reason for assigning any "names" to QQ.  It is this call to the _assign_names() function which sometimes raises the error.  I do not know why it only happens sometimes.
 
 It might therefore be a good idea to change the title of this ticket.  I will ask other people for their opinion.  Robert?  (You added the ???)  William?  (You added the assign_names line!)
@@ -141,7 +138,7 @@ I would like to try commenting out that line and testing the entire Sage library
 archive/issue_comments_072867.json:
 ```json
 {
-    "body": "Easier to reproduce.\n\n\n```\nsage: RationalField()\nRational Field\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1, Number Field in a with defining polynomial x^3 - 3]\nsage: RationalField()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (436, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/sekhon/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/rational_field.pyc in __init__(self)\n    212         print id(self)\n    213         ParentWithGens.__init__(self, self, category = Fields())\n--> 214         self._assign_names(('x',),normalize=False) # ???\n    215         self._populate_coercion_lists_(element_constructor=rational.Rational, init_no_parent=True)\n    216 \n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2869)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3287)()\n\nValueError: variable names cannot be changed after object creation.\n\n```\n",
+    "body": "Easier to reproduce.\n\n```\nsage: RationalField()\nRational Field\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1, Number Field in a with defining polynomial x^3 - 3]\nsage: RationalField()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (436, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/sekhon/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/rational_field.pyc in __init__(self)\n    212         print id(self)\n    213         ParentWithGens.__init__(self, self, category = Fields())\n--> 214         self._assign_names(('x',),normalize=False) # ???\n    215         self._populate_coercion_lists_(element_constructor=rational.Rational, init_no_parent=True)\n    216 \n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2869)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3287)()\n\nValueError: variable names cannot be changed after object creation.\n\n```",
     "created_at": "2010-06-25T20:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -151,7 +148,6 @@ archive/issue_comments_072867.json:
 ```
 
 Easier to reproduce.
-
 
 ```
 sage: RationalField()
@@ -182,7 +178,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: variable names cannot be changed after object creation.
 
 ```
-
 
 
 
@@ -227,7 +222,7 @@ Changing component from elliptic curves to categories.
 archive/issue_comments_072870.json:
 ```json
 {
-    "body": "Even easier to reproduce:\n\n\n```\nRationalField()\nx = load(SAGE_ROOT + \"/data/jones/jones.sobj\")\nRationalField()\n```\n",
+    "body": "Even easier to reproduce:\n\n```\nRationalField()\nx = load(SAGE_ROOT + \"/data/jones/jones.sobj\")\nRationalField()\n```",
     "created_at": "2011-01-08T21:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -238,13 +233,11 @@ archive/issue_comments_072870.json:
 
 Even easier to reproduce:
 
-
 ```
 RationalField()
 x = load(SAGE_ROOT + "/data/jones/jones.sobj")
 RationalField()
 ```
-
 
 
 
@@ -468,7 +461,7 @@ See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA  Is this stil
 archive/issue_comments_072876.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA  Is this still even relevant?  I assume the database exists somewhere still.\n\nhttps://hobbes.la.asu.edu/NFDB/",
+    "body": "Replying to [comment:13 kcrisman]:\n> See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA  Is this still even relevant?  I assume the database exists somewhere still.\n\n\nhttps://hobbes.la.asu.edu/NFDB/",
     "created_at": "2020-10-08T12:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -480,6 +473,7 @@ archive/issue_comments_072876.json:
 Replying to [comment:13 kcrisman]:
 > See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA  Is this still even relevant?  I assume the database exists somewhere still.
 
+
 https://hobbes.la.asu.edu/NFDB/
 
 
@@ -489,7 +483,7 @@ https://hobbes.la.asu.edu/NFDB/
 archive/issue_comments_072877.json:
 ```json
 {
-    "body": "John, does that mean the bug in question still is a problem?  I only updated this since *you* mentioned it in the sage-devel thread :-) hope the downgrade is okay.\n\nI just risked destroying my Sage build (computer OS upgrade) to try this out, but I think it might not be a problem any longer.\n\n\n```\nsage: RationalField()\nRational Field\nsage: from sage.env import SAGE_SHARE\nsage: x = load(os.path.join(SAGE_SHARE, 'jones', 'jones.sobj'))\nsage: RationalField()\nRational Field\n```\n\n\nDo you think that is the 'modern' equivalent of comment:5?  For what it's worth, apparently I `sage -i' and loaded the database correctly:\n\n```\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1,\n Number Field in a with defining polynomial x^3 - 3]\n```\n",
+    "body": "John, does that mean the bug in question still is a problem?  I only updated this since *you* mentioned it in the sage-devel thread :-) hope the downgrade is okay.\n\nI just risked destroying my Sage build (computer OS upgrade) to try this out, but I think it might not be a problem any longer.\n\n```\nsage: RationalField()\nRational Field\nsage: from sage.env import SAGE_SHARE\nsage: x = load(os.path.join(SAGE_SHARE, 'jones', 'jones.sobj'))\nsage: RationalField()\nRational Field\n```\n\nDo you think that is the 'modern' equivalent of comment:5?  For what it's worth, apparently I `sage -i' and loaded the database correctly:\n\n```\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1,\n Number Field in a with defining polynomial x^3 - 3]\n```",
     "created_at": "2020-10-08T15:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -502,7 +496,6 @@ John, does that mean the bug in question still is a problem?  I only updated thi
 
 I just risked destroying my Sage build (computer OS upgrade) to try this out, but I think it might not be a problem any longer.
 
-
 ```
 sage: RationalField()
 Rational Field
@@ -512,7 +505,6 @@ sage: RationalField()
 Rational Field
 ```
 
-
 Do you think that is the 'modern' equivalent of comment:5?  For what it's worth, apparently I `sage -i' and loaded the database correctly:
 
 ```
@@ -520,7 +512,6 @@ sage: list(JonesDatabase().unramified_outside([3], 3))
 [Number Field in a with defining polynomial x^3 - 3*x + 1,
  Number Field in a with defining polynomial x^3 - 3]
 ```
-
 
 
 
@@ -569,7 +560,7 @@ Did you try the `RationalField()` before and after using it like in comment:15? 
 archive/issue_comments_072880.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n> Did you try the `RationalField()` before and after using it like in comment:15?  \nyes\n> I agree that we can close it if that succeeds.  I only assumed you knew something about it since you were already on this ticket.\nI was on the ticket since (I think) William first caused the failure while doing somthing with elliptic curves, so he fingered me.  I then pointed out that the failure had nothing to do with elliptic curves!\n\n```\nsage: RationalField()\nRational Field\nsage: from sage.env import SAGE_SHARE\nsage: x = load(os.path.join(SAGE_SHARE, 'jones', 'jones.sobj'))\nsage: RationalField()\nRational Field\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1,\n Number Field in a with defining polynomial x^3 - 3]\nsage: RationalField()\nRational Field\n```\n",
+    "body": "Replying to [comment:17 kcrisman]:\n> Did you try the `RationalField()` before and after using it like in comment:15?  \n\nyes\n> I agree that we can close it if that succeeds.  I only assumed you knew something about it since you were already on this ticket.\n\nI was on the ticket since (I think) William first caused the failure while doing somthing with elliptic curves, so he fingered me.  I then pointed out that the failure had nothing to do with elliptic curves!\n\n```\nsage: RationalField()\nRational Field\nsage: from sage.env import SAGE_SHARE\nsage: x = load(os.path.join(SAGE_SHARE, 'jones', 'jones.sobj'))\nsage: RationalField()\nRational Field\nsage: list(JonesDatabase().unramified_outside([3], 3))\n[Number Field in a with defining polynomial x^3 - 3*x + 1,\n Number Field in a with defining polynomial x^3 - 3]\nsage: RationalField()\nRational Field\n```",
     "created_at": "2020-10-08T17:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
@@ -580,8 +571,10 @@ archive/issue_comments_072880.json:
 
 Replying to [comment:17 kcrisman]:
 > Did you try the `RationalField()` before and after using it like in comment:15?  
+
 yes
 > I agree that we can close it if that succeeds.  I only assumed you knew something about it since you were already on this ticket.
+
 I was on the ticket since (I think) William first caused the failure while doing somthing with elliptic curves, so he fingered me.  I then pointed out that the failure had nothing to do with elliptic curves!
 
 ```
@@ -597,7 +590,6 @@ sage: list(JonesDatabase().unramified_outside([3], 3))
 sage: RationalField()
 Rational Field
 ```
-
 
 
 

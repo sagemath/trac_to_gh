@@ -187,7 +187,7 @@ tried to create patch based on sage-3.0.alphaa0 from code D Kohel sent
 archive/issue_comments_014104.json:
 ```json
 {
-    "body": "Maybe others could apply the bundle but I could not. I asked David Kohel for his code, which he emailed me. I tried to create a patch from that. It seems to pass sage -t (I cannot get sage -testall to work without locking up on this machine).  Since I get\n\n\n```\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G\nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n<sage.groups.abelian_gps.abelian_group_morphism.AbelianGroupMorphism instance at 0x364cef0>\nsage: phi.parent()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha0/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: AbelianGroupMorphism instance has no attribute 'parent'\n```\n\nI apparently made a mistake somewhere....",
+    "body": "Maybe others could apply the bundle but I could not. I asked David Kohel for his code, which he emailed me. I tried to create a patch from that. It seems to pass sage -t (I cannot get sage -testall to work without locking up on this machine).  Since I get\n\n```\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G\nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n<sage.groups.abelian_gps.abelian_group_morphism.AbelianGroupMorphism instance at 0x364cef0>\nsage: phi.parent()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha0/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: AbelianGroupMorphism instance has no attribute 'parent'\n```\nI apparently made a mistake somewhere....",
     "created_at": "2008-04-06T01:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
@@ -197,7 +197,6 @@ archive/issue_comments_014104.json:
 ```
 
 Maybe others could apply the bundle but I could not. I asked David Kohel for his code, which he emailed me. I tried to create a patch from that. It seems to pass sage -t (I cannot get sage -testall to work without locking up on this machine).  Since I get
-
 
 ```
 sage: G.<x,y> = AbelianGroup(2,[2,3]); G
@@ -215,7 +214,6 @@ sage: phi.parent()
 
 <type 'exceptions.AttributeError'>: AbelianGroupMorphism instance has no attribute 'parent'
 ```
-
 I apparently made a mistake somewhere....
 
 
@@ -415,7 +413,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_014108.json:
 ```json
 {
-    "body": "I have added the example as a doctest. \n\nI also took the opportunity to make small improvements in the same file.\n----\nNew commits:",
+    "body": "I have added the example as a doctest. \n\nI also took the opportunity to make small improvements in the same file.\n\n---\nNew commits:",
     "created_at": "2018-01-17T13:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
@@ -427,7 +425,8 @@ archive/issue_comments_014108.json:
 I have added the example as a doctest. 
 
 I also took the opportunity to make small improvements in the same file.
-----
+
+---
 New commits:
 
 

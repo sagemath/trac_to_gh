@@ -3,7 +3,7 @@
 archive/issues_004280.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn Sage (up through 3.1.3rc0), paste this into a notebook cell:\n\n\n```\n#\ngraphs?\n```\n\n\nand you get a syntax error when evaluating.  Removing the comment makes it work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4280\n\n",
+    "body": "Assignee: boothby\n\nIn Sage (up through 3.1.3rc0), paste this into a notebook cell:\n\n```\n#\ngraphs?\n```\n\nand you get a syntax error when evaluating.  Removing the comment makes it work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4280\n\n",
     "created_at": "2008-10-14T10:02:49Z",
     "labels": [
         "component: notebook",
@@ -20,12 +20,10 @@ Assignee: boothby
 
 In Sage (up through 3.1.3rc0), paste this into a notebook cell:
 
-
 ```
 #
 graphs?
 ```
-
 
 and you get a syntax error when evaluating.  Removing the comment makes it work fine.
 

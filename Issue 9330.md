@@ -3,7 +3,7 @@
 archive/issues_009330.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\n\nor the computer structure of the class\n\n```\n``Sha``\n```\n\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 198, \n\n```\n You can increase the `descent_second_limit` (in the above example\n```\n\nshould have double ticks.\n\nWe also get the following warning:\n\n```\nsage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\nthis probably refers to \n\n```\n       THEOREM (Kato): Suppose `L(E,1) \\neq 0` and `p \\neq 2, 3` is a prime such that\n            - `E` does not have additive reduction at `p`,\n            - the mod-`p` representation is surjective.\n       Then `{ord}_p(\\#Sha(E))` divides `{ord}_p(L(E,1)\\cdot\\#E(\\QQ)_{tor}^2/(\\Omega_E \\cdot \\prod c_q))`.\n```\n\nbut I'm not sure.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\nor the computer structure of the class\n\n```\n``Sha``\n```\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 198, \n\n```\n You can increase the `descent_second_limit` (in the above example\n```\nshould have double ticks.\n\nWe also get the following warning:\n\n```\nsage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\nthis probably refers to \n\n```\n       THEOREM (Kato): Suppose `L(E,1) \\neq 0` and `p \\neq 2, 3` is a prime such that\n            - `E` does not have additive reduction at `p`,\n            - the mod-`p` representation is surjective.\n       Then `{ord}_p(\\#Sha(E))` divides `{ord}_p(L(E,1)\\cdot\\#E(\\QQ)_{tor}^2/(\\Omega_E \\cdot \\prod c_q))`.\n```\nbut I'm not sure.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
     "created_at": "2010-06-24T15:55:55Z",
     "labels": [
         "component: elliptic curves",
@@ -28,13 +28,11 @@ Most importantly, several instances of Sha should have ticks, probably.  But are
 ```
 `Sha`
 ```
-
 or the computer structure of the class
 
 ```
 ``Sha``
 ```
-
 ?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.
 
 In line 198, 
@@ -42,7 +40,6 @@ In line 198,
 ```
  You can increase the `descent_second_limit` (in the above example
 ```
-
 should have double ticks.
 
 We also get the following warning:
@@ -50,7 +47,6 @@ We also get the following warning:
 ```
 sage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
 ```
-
 this probably refers to 
 
 ```
@@ -59,7 +55,6 @@ this probably refers to
             - the mod-`p` representation is surjective.
        Then `{ord}_p(\#Sha(E))` divides `{ord}_p(L(E,1)\cdot\#E(\QQ)_{tor}^2/(\Omega_E \cdot \prod c_q))`.
 ```
-
 but I'm not sure.
 
 In line 756 we have 
@@ -67,7 +62,6 @@ In line 756 we have
 ```
 We get no information the curve has rank 2.::
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9330
 
@@ -294,7 +288,7 @@ It should always be ``Sha`` never ```Sha```
 archive/issue_comments_087876.json:
 ```json
 {
-    "body": "Replying to [comment:6 wuthrich]:\n> I don't understand this. My file sha_tate.py looks well different from the documentation link that you give. For instance I have changed the ``descent... thingy in trac 9287 merged as 14603 in 4.5.2.alpha1.\n\nYes, sorry I didn't see that - I've changed the description.  What is up with the \"We get no information the \" bit?  Maybe this is grammatically correct in the context of Tate-Shaf groups?  \n\nIncidentally, though you changed the references to T-S, the file is S-T :)  Oh well; maybe that's as it should be if there isn't agreement.\n\n> It should always be `Sha` never ``Sha``.\n> \n> I believe this ticket solves the remaining problems. Though I have not checked it is needs to be rebased.\n\nUnfortunately I can't check this right now either, but if someone else doesn't, I'll do so soon.",
+    "body": "Replying to [comment:6 wuthrich]:\n> I don't understand this. My file sha_tate.py looks well different from the documentation link that you give. For instance I have changed the ``descent... thingy in trac 9287 merged as 14603 in 4.5.2.alpha1.\n\n\nYes, sorry I didn't see that - I've changed the description.  What is up with the \"We get no information the \" bit?  Maybe this is grammatically correct in the context of Tate-Shaf groups?  \n\nIncidentally, though you changed the references to T-S, the file is S-T :)  Oh well; maybe that's as it should be if there isn't agreement.\n\n> It should always be `Sha` never ``Sha``.\n> \n> I believe this ticket solves the remaining problems. Though I have not checked it is needs to be rebased.\n\n\nUnfortunately I can't check this right now either, but if someone else doesn't, I'll do so soon.",
     "created_at": "2010-07-28T17:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
@@ -306,6 +300,7 @@ archive/issue_comments_087876.json:
 Replying to [comment:6 wuthrich]:
 > I don't understand this. My file sha_tate.py looks well different from the documentation link that you give. For instance I have changed the ``descent... thingy in trac 9287 merged as 14603 in 4.5.2.alpha1.
 
+
 Yes, sorry I didn't see that - I've changed the description.  What is up with the "We get no information the " bit?  Maybe this is grammatically correct in the context of Tate-Shaf groups?  
 
 Incidentally, though you changed the references to T-S, the file is S-T :)  Oh well; maybe that's as it should be if there isn't agreement.
@@ -313,6 +308,7 @@ Incidentally, though you changed the references to T-S, the file is S-T :)  Oh w
 > It should always be `Sha` never ``Sha``.
 > 
 > I believe this ticket solves the remaining problems. Though I have not checked it is needs to be rebased.
+
 
 Unfortunately I can't check this right now either, but if someone else doesn't, I'll do so soon.
 
@@ -473,7 +469,7 @@ I don't know if there's a separate ticket for this.
 archive/issue_comments_087884.json:
 ```json
 {
-    "body": "Replying to [comment:14 leif]:\n> These changes also require modifying doctests in `sage/schemes/elliptic_curves/BSD.py` (*Shafarevich-Tate* -> *Tate-Shafarevich*).\n> \n> I don't know if there's a separate ticket for this.\n\nI've opened #9916 for that. Patch needs review.",
+    "body": "Replying to [comment:14 leif]:\n> These changes also require modifying doctests in `sage/schemes/elliptic_curves/BSD.py` (*Shafarevich-Tate* -> *Tate-Shafarevich*).\n> \n> I don't know if there's a separate ticket for this.\n\n\nI've opened #9916 for that. Patch needs review.",
     "created_at": "2010-09-16T09:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
@@ -486,5 +482,6 @@ Replying to [comment:14 leif]:
 > These changes also require modifying doctests in `sage/schemes/elliptic_curves/BSD.py` (*Shafarevich-Tate* -> *Tate-Shafarevich*).
 > 
 > I don't know if there's a separate ticket for this.
+
 
 I've opened #9916 for that. Patch needs review.

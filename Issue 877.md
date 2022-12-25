@@ -3,7 +3,7 @@
 archive/issues_000877.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCurrently, if you have something like:\n\n```\ndef foo():\n    def bar():\n        pass\n    pass\n```\n\nthen \"sage -coverage\" will complain that bar() has no docstring or doctests.  However, such functions cannot be (directly) doctested, so that warning is invalid.  In my opinion, bar() should not be required to have a docstring either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/877\n\n",
+    "body": "Assignee: tba\n\nCurrently, if you have something like:\n\n```\ndef foo():\n    def bar():\n        pass\n    pass\n```\nthen \"sage -coverage\" will complain that bar() has no docstring or doctests.  However, such functions cannot be (directly) doctested, so that warning is invalid.  In my opinion, bar() should not be required to have a docstring either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/877\n\n",
     "created_at": "2007-10-13T13:47:23Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ def foo():
         pass
     pass
 ```
-
 then "sage -coverage" will complain that bar() has no docstring or doctests.  However, such functions cannot be (directly) doctested, so that warning is invalid.  In my opinion, bar() should not be required to have a docstring either.
 
 Issue created by migration from https://trac.sagemath.org/ticket/877
@@ -171,7 +170,7 @@ archive/issue_comments_005415.json:
 archive/issue_comments_005416.json:
 ```json
 {
-    "body": "Looks good to me:\n\nBEFORE:\n\n```\n< Overall weighted coverage score:  77.8%\n< Total number of functions:  22395\n```\n\nAFTER\n\n```\n> Overall weighted coverage score:  78.3%\n> Total number of functions:  22207\n```\n\n\nThe code looks fine and it works fine, so far as I can tell.",
+    "body": "Looks good to me:\n\nBEFORE:\n\n```\n< Overall weighted coverage score:  77.8%\n< Total number of functions:  22395\n```\nAFTER\n\n```\n> Overall weighted coverage score:  78.3%\n> Total number of functions:  22207\n```\n\nThe code looks fine and it works fine, so far as I can tell.",
     "created_at": "2009-07-25T00:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
@@ -188,14 +187,12 @@ BEFORE:
 < Overall weighted coverage score:  77.8%
 < Total number of functions:  22395
 ```
-
 AFTER
 
 ```
 > Overall weighted coverage score:  78.3%
 > Total number of functions:  22207
 ```
-
 
 The code looks fine and it works fine, so far as I can tell.
 
@@ -262,7 +259,7 @@ trac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  
 archive/issue_comments_005420.json:
 ```json
 {
-    "body": "This is what I observe regarding John's patch. In Sage 4.1 without the patch `trac_877-scripts-coverage2.patch`, we have \n\n```\nOverall weighted coverage score:  77.8%\nTotal number of functions:  22398\n```\n\nApplying that patch to Sage 4.1:\n\n```\nOverall weighted coverage score:  78.3%\nTotal number of functions:  22210\n```\n\nIf I understand John's patch correctly, it doesn't count functions which are local to other functions/methods. This accounts for the reduced number of total functions after applying the patch. Moving on to Sage 4.1.1.alpha0 without the patch:\n\n```\nOverall weighted coverage score:  78.0%\nTotal number of functions:  22497\n```\n\nAnd with the patch:\n\n```\nOverall weighted coverage score:  78.5%\nTotal number of functions:  22308\n```\n\nHere is the coverage after applying the patch to my merge tree:\n\n```\nOverall weighted coverage score:  78.6%\nTotal number of functions:  22317\n```\n\n\n\nMerged `trac_877-scripts-coverage2.patch` in the scripts repository.",
+    "body": "This is what I observe regarding John's patch. In Sage 4.1 without the patch `trac_877-scripts-coverage2.patch`, we have \n\n```\nOverall weighted coverage score:  77.8%\nTotal number of functions:  22398\n```\nApplying that patch to Sage 4.1:\n\n```\nOverall weighted coverage score:  78.3%\nTotal number of functions:  22210\n```\nIf I understand John's patch correctly, it doesn't count functions which are local to other functions/methods. This accounts for the reduced number of total functions after applying the patch. Moving on to Sage 4.1.1.alpha0 without the patch:\n\n```\nOverall weighted coverage score:  78.0%\nTotal number of functions:  22497\n```\nAnd with the patch:\n\n```\nOverall weighted coverage score:  78.5%\nTotal number of functions:  22308\n```\nHere is the coverage after applying the patch to my merge tree:\n\n```\nOverall weighted coverage score:  78.6%\nTotal number of functions:  22317\n```\n\n\nMerged `trac_877-scripts-coverage2.patch` in the scripts repository.",
     "created_at": "2009-07-25T19:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
@@ -277,35 +274,30 @@ This is what I observe regarding John's patch. In Sage 4.1 without the patch `tr
 Overall weighted coverage score:  77.8%
 Total number of functions:  22398
 ```
-
 Applying that patch to Sage 4.1:
 
 ```
 Overall weighted coverage score:  78.3%
 Total number of functions:  22210
 ```
-
 If I understand John's patch correctly, it doesn't count functions which are local to other functions/methods. This accounts for the reduced number of total functions after applying the patch. Moving on to Sage 4.1.1.alpha0 without the patch:
 
 ```
 Overall weighted coverage score:  78.0%
 Total number of functions:  22497
 ```
-
 And with the patch:
 
 ```
 Overall weighted coverage score:  78.5%
 Total number of functions:  22308
 ```
-
 Here is the coverage after applying the patch to my merge tree:
 
 ```
 Overall weighted coverage score:  78.6%
 Total number of functions:  22317
 ```
-
 
 
 Merged `trac_877-scripts-coverage2.patch` in the scripts repository.

@@ -3,7 +3,7 @@
 archive/issues_004633.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: axiom\n\nIn order to run the the comparison of integration results between FriCAS and Maxima, it is also necessary to make some simple additions to the 'axiom.py' interface:\n\n\n```\nwspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff\ndiff -r ed3f78f99d2a sage/interfaces/axiom.py\n--- a/sage/interfaces/axiom.py  Tue Nov 25 23:45:43 2008 -0500\n+++ b/sage/interfaces/axiom.py  Wed Nov 26 19:43:59 2008 -0500\n@@ -729,7 +729,10 @@\n        s = P.eval('unparse(%s::InputForm)'%self._name)\n        if 'translation error' in s or 'Cannot convert' in s:\n            raise NotImplementedError\n-        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+                              'DLOG(':'log(',\n+                              'DEXP(':'exp(',\n+                              '::(':'', ',Symbol)':'',\n                              'DSIN(':'sin(',\n                              'DCOS(':'cos(',\n                              'DTAN(':'tan(',\n\n```\n\n\n----\n\nIntegration produce some additional \"Fortran-style\" names and a\ncoercion that have to be translated before the input form can be\nprocessed by Sage.\n\nWith this change we can do:\n\n\n```\n  test_int = integrand.integrate(x)\n  fricas_int = axiom.integrate(integrand,x).sage()\n  fricas_cmp = (test_int.simplify_full()-fricas_int.simplify_full()).simplify_full()\n  if (fricas_cmp == 0):\n      print \"FriCAS agrees with Maxima.\"\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4633\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: axiom\n\nIn order to run the the comparison of integration results between FriCAS and Maxima, it is also necessary to make some simple additions to the 'axiom.py' interface:\n\n```\nwspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff\ndiff -r ed3f78f99d2a sage/interfaces/axiom.py\n--- a/sage/interfaces/axiom.py  Tue Nov 25 23:45:43 2008 -0500\n+++ b/sage/interfaces/axiom.py  Wed Nov 26 19:43:59 2008 -0500\n@@ -729,7 +729,10 @@\n        s = P.eval('unparse(%s::InputForm)'%self._name)\n        if 'translation error' in s or 'Cannot convert' in s:\n            raise NotImplementedError\n-        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+                              'DLOG(':'log(',\n+                              'DEXP(':'exp(',\n+                              '::(':'', ',Symbol)':'',\n                              'DSIN(':'sin(',\n                              'DCOS(':'cos(',\n                              'DTAN(':'tan(',\n\n```\n\n---\n\nIntegration produce some additional \"Fortran-style\" names and a\ncoercion that have to be translated before the input form can be\nprocessed by Sage.\n\nWith this change we can do:\n\n```\n  test_int = integrand.integrate(x)\n  fricas_int = axiom.integrate(integrand,x).sage()\n  fricas_cmp = (test_int.simplify_full()-fricas_int.simplify_full()).simplify_full()\n  if (fricas_cmp == 0):\n      print \"FriCAS agrees with Maxima.\"\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4633\n\n",
     "created_at": "2008-11-27T01:42:53Z",
     "labels": [
         "component: interfaces",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 Keywords: axiom
 
 In order to run the the comparison of integration results between FriCAS and Maxima, it is also necessary to make some simple additions to the 'axiom.py' interface:
-
 
 ```
 wspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff
@@ -43,15 +42,13 @@ diff -r ed3f78f99d2a sage/interfaces/axiom.py
 
 ```
 
-
-----
+---
 
 Integration produce some additional "Fortran-style" names and a
 coercion that have to be translated before the input form can be
 processed by Sage.
 
 With this change we can do:
-
 
 ```
   test_int = integrand.integrate(x)
@@ -61,7 +58,6 @@ With this change we can do:
       print "FriCAS agrees with Maxima."
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4633
@@ -137,7 +133,7 @@ Sorry. What is a "hg patch"?
 archive/issue_comments_034761.json:
 ```json
 {
-    "body": "Replying to [comment:2 bpage]:\n> Sorry. What is a \"hg patch\"?\n\nA mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 bpage]:\n> Sorry. What is a \"hg patch\"?\n\n\nA mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T01:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -148,6 +144,7 @@ archive/issue_comments_034761.json:
 
 Replying to [comment:2 bpage]:
 > Sorry. What is a "hg patch"?
+
 
 A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. 
 
@@ -180,7 +177,7 @@ Further note: The new release of FriCAS-1.0.4 which is not yet available as a Sa
 archive/issue_comments_034763.json:
 ```json
 {
-    "body": "> A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\n:~) I meant, how do I create a \"hg patch\" if not by \"hg diff\"?",
+    "body": "> A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\n\n:~) I meant, how do I create a \"hg patch\" if not by \"hg diff\"?",
     "created_at": "2008-11-27T01:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -190,6 +187,7 @@ archive/issue_comments_034763.json:
 ```
 
 > A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. 
+
 
 :~) I meant, how do I create a "hg patch" if not by "hg diff"?
 
@@ -266,7 +264,7 @@ Is there a specific procedure for installing (and testing) these kinds of patche
 archive/issue_comments_034767.json:
 ```json
 {
-    "body": "Replying to [comment:7 tjlahey]:\n> Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?\n\nThis is what I do:\n\n0. Pretest, e.g. try: axiom(1/log(x)).sage()\n\n```\n    NotImplementedError\n```\n\n1. Click on the link to that patch: \"trac_4633.patch\"\n2. Click on the link to \"original format\"\n3. Save the patch file somewhere, e.g. ~/trac_4633.patch\n4. cd sage*/devel/sage-main\n5. apply the patch: patch -p1 < ~/trac_4633.patch\n6. re-build sage: sage -br\n7. test, e.g. try: axiom(1/log(x)).sage()\n\n```\n    1/log(x)\n```\n\n\nI guess that in a more complete patch I should have added some tests like this to the doc tests. This just seemed too simple.",
+    "body": "Replying to [comment:7 tjlahey]:\n> Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?\n\n\nThis is what I do:\n\n0. Pretest, e.g. try: axiom(1/log(x)).sage()\n\n```\n    NotImplementedError\n```\n1. Click on the link to that patch: \"trac_4633.patch\"\n2. Click on the link to \"original format\"\n3. Save the patch file somewhere, e.g. ~/trac_4633.patch\n4. cd sage*/devel/sage-main\n5. apply the patch: patch -p1 < ~/trac_4633.patch\n6. re-build sage: sage -br\n7. test, e.g. try: axiom(1/log(x)).sage()\n\n```\n    1/log(x)\n```\n\nI guess that in a more complete patch I should have added some tests like this to the doc tests. This just seemed too simple.",
     "created_at": "2008-12-01T03:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -278,6 +276,7 @@ archive/issue_comments_034767.json:
 Replying to [comment:7 tjlahey]:
 > Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?
 
+
 This is what I do:
 
 0. Pretest, e.g. try: axiom(1/log(x)).sage()
@@ -285,7 +284,6 @@ This is what I do:
 ```
     NotImplementedError
 ```
-
 1. Click on the link to that patch: "trac_4633.patch"
 2. Click on the link to "original format"
 3. Save the patch file somewhere, e.g. ~/trac_4633.patch
@@ -298,7 +296,6 @@ This is what I do:
     1/log(x)
 ```
 
-
 I guess that in a more complete patch I should have added some tests like this to the doc tests. This just seemed too simple.
 
 
@@ -308,7 +305,7 @@ I guess that in a more complete patch I should have added some tests like this t
 archive/issue_comments_034768.json:
 ```json
 {
-    "body": "Replying to [comment:8 bpage]:\n\nIt doesn't want to apply. In my version of sage/interfaces/axiom.py, I don't have:\n\n```\n         s = P.eval('unparse(%s::InputForm)'%self._name) \n         if 'translation error' in s or 'Cannot convert' in s: \n             raise NotImplementedError\n```\n\nso I get a rejection when I attempt to apply the patch. I'm using Sage 3.2.",
+    "body": "Replying to [comment:8 bpage]:\n\nIt doesn't want to apply. In my version of sage/interfaces/axiom.py, I don't have:\n\n```\n         s = P.eval('unparse(%s::InputForm)'%self._name) \n         if 'translation error' in s or 'Cannot convert' in s: \n             raise NotImplementedError\n```\nso I get a rejection when I attempt to apply the patch. I'm using Sage 3.2.",
     "created_at": "2008-12-02T23:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -326,7 +323,6 @@ It doesn't want to apply. In my version of sage/interfaces/axiom.py, I don't hav
          if 'translation error' in s or 'Cannot convert' in s: 
              raise NotImplementedError
 ```
-
 so I get a rejection when I attempt to apply the patch. I'm using Sage 3.2.
 
 
@@ -358,7 +354,7 @@ Michael
 archive/issue_comments_034770.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n> This is probably on top of #4036, which itself needs to be slightly rebased.\n\nCorrect. What is the proper procedure to follow in this case?",
+    "body": "Replying to [comment:10 mabshoff]:\n> This is probably on top of #4036, which itself needs to be slightly rebased.\n\n\nCorrect. What is the proper procedure to follow in this case?",
     "created_at": "2008-12-03T00:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4633",
     "type": "issue_comment",
@@ -369,6 +365,7 @@ archive/issue_comments_034770.json:
 
 Replying to [comment:10 mabshoff]:
 > This is probably on top of #4036, which itself needs to be slightly rebased.
+
 
 Correct. What is the proper procedure to follow in this case?
 

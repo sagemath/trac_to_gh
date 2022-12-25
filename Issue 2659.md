@@ -3,7 +3,7 @@
 archive/issues_002659.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSome of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]\n\nAs a consequence the code for computing orders of points can fail to make use of the cached group order which sloes it down a lot (it has to use bsgs).\n\nExample:  before patching (2.11.alpha1)\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: P=E.random_point()\nsage: E.cardinality()\n1152921512387208375\nsage: P.order() #long time\n...\nsage: E.abelian_group() # long time\n...\n```\n\n\nAfter patching:\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: E.cardinality()\n1152921512387208375\nsage: P=E.random_point()\nsage: P.order()\n1152921512387208375\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C1152921512387208375,\n ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))\n```\n\n -- all very fast.\n\nAttached patch should apply to 2.11.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2659\n\n",
+    "body": "Assignee: @williamstein\n\nSome of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]\n\nAs a consequence the code for computing orders of points can fail to make use of the cached group order which sloes it down a lot (it has to use bsgs).\n\nExample:  before patching (2.11.alpha1)\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: P=E.random_point()\nsage: E.cardinality()\n1152921512387208375\nsage: P.order() #long time\n...\nsage: E.abelian_group() # long time\n...\n```\n\nAfter patching:\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: E.cardinality()\n1152921512387208375\nsage: P=E.random_point()\nsage: P.order()\n1152921512387208375\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C1152921512387208375,\n ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))\n```\n -- all very fast.\n\nAttached patch should apply to 2.11.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2659\n\n",
     "created_at": "2008-03-24T12:01:44Z",
     "labels": [
         "component: algebraic geometry",
@@ -35,7 +35,6 @@ sage: E.abelian_group() # long time
 ...
 ```
 
-
 After patching:
 
 ```
@@ -50,7 +49,6 @@ sage: E.abelian_group()
 (Multiplicative Abelian Group isomorphic to C1152921512387208375,
  ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))
 ```
-
  -- all very fast.
 
 Attached patch should apply to 2.11.alpha1.
@@ -222,7 +220,7 @@ Only apply 9123.patch.  The changes in 9122.patch are in #210.
 archive/issue_comments_018272.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> Only apply 9123.patch.  The changes in 9122.patch are in #210.\n\nThat's right, sorry about that.  Thanks for reviewing #21- so quickly (and positively)!  John",
+    "body": "Replying to [comment:6 mhansen]:\n> Only apply 9123.patch.  The changes in 9122.patch are in #210.\n\n\nThat's right, sorry about that.  Thanks for reviewing #21- so quickly (and positively)!  John",
     "created_at": "2008-04-04T21:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
@@ -233,6 +231,7 @@ archive/issue_comments_018272.json:
 
 Replying to [comment:6 mhansen]:
 > Only apply 9123.patch.  The changes in 9122.patch are in #210.
+
 
 That's right, sorry about that.  Thanks for reviewing #21- so quickly (and positively)!  John
 

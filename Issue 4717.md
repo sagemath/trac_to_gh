@@ -87,7 +87,7 @@ Apply only trac_4717.patch.
 archive/issue_comments_035513.json:
 ```json
 {
-    "body": "With the transpose removed, the following doctest fails,\n\n\n```\nsage -t  \"devel/sage-matrix_plot/sage/plot/matrix_plot.py\"  \n**********************************************************************\nFile \"/local/data/huss/software/sage-3.2.1/devel/sage-matrix_plot/sage/plot/matrix_plot.py\",\nline 40:\n    sage: list(sorted(m.get_minmax_data().items()))\nExpected:\n    [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\nGot:\n    [('xmax', 3), ('xmin', 0), ('ymax', 4), ('ymin', 0)]\n**********************************************************************\n```\n\n\nand the rows of matrices are plottet as columns.\n\nGreetings,\n\nWilfried",
+    "body": "With the transpose removed, the following doctest fails,\n\n```\nsage -t  \"devel/sage-matrix_plot/sage/plot/matrix_plot.py\"  \n**********************************************************************\nFile \"/local/data/huss/software/sage-3.2.1/devel/sage-matrix_plot/sage/plot/matrix_plot.py\",\nline 40:\n    sage: list(sorted(m.get_minmax_data().items()))\nExpected:\n    [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\nGot:\n    [('xmax', 3), ('xmin', 0), ('ymax', 4), ('ymin', 0)]\n**********************************************************************\n```\n\nand the rows of matrices are plottet as columns.\n\nGreetings,\n\nWilfried",
     "created_at": "2008-12-08T12:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ archive/issue_comments_035513.json:
 ```
 
 With the transpose removed, the following doctest fails,
-
 
 ```
 sage -t  "devel/sage-matrix_plot/sage/plot/matrix_plot.py"  
@@ -112,7 +111,6 @@ Got:
 **********************************************************************
 ```
 
-
 and the rows of matrices are plottet as columns.
 
 Greetings,
@@ -126,7 +124,7 @@ Wilfried
 archive/issue_comments_035514.json:
 ```json
 {
-    "body": "Weird, with the transpose I get that the rows are plotted as columns.  For example, with your original patch, \n\n\n```\nsage: matrix_plot([[1,1,10],[1,1,1],[1,1,1]])\n```\n\n\nproduces http://sage.math.washington.edu/home/mhansen/4717.png .",
+    "body": "Weird, with the transpose I get that the rows are plotted as columns.  For example, with your original patch, \n\n```\nsage: matrix_plot([[1,1,10],[1,1,1],[1,1,1]])\n```\n\nproduces http://sage.math.washington.edu/home/mhansen/4717.png .",
     "created_at": "2008-12-08T13:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
@@ -137,11 +135,9 @@ archive/issue_comments_035514.json:
 
 Weird, with the transpose I get that the rows are plotted as columns.  For example, with your original patch, 
 
-
 ```
 sage: matrix_plot([[1,1,10],[1,1,1],[1,1,1]])
 ```
-
 
 produces http://sage.math.washington.edu/home/mhansen/4717.png .
 

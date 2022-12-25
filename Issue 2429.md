@@ -3,7 +3,7 @@
 archive/issues_002429.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThe block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices\n\n\n```\nsage: # Throw an error if the dimensions of the blocks don't match up correctly.\nsage: # explicitly specify the positions of the blocks\nsage: block_matrix([[x1,x2],[x3,x4]])\nsage: block_matrix([[x1,x2,x3],[x4,x5,x6]])\nsage: # dimensions are the numbers of block rows and columns\nsage: block_matrix(2,3, [x1,x2,x3,x4,x5,x6])\nsage: # coerce the matrix to a specific ring\nsage: block_matrix(QQ,2,3,[x1,x2,x3,x4,x5,x6])\nsage: # 1 and 0 should still be interpreted as the identity and zero matrices\nsage: block_matrix([[x1,1],[1,x2]])\nsage: # if only one dimension is given, assume the matrix is square\nsage: block_matrix(QQ,2,[x1,x2,x3,x4])\nsage: block_matrix(2,[x1,x2,x3,x4])\nsage: # the following works now\nsage: block_matrix([x1,x2,x3,x4])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2429\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThe block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices\n\n```\nsage: # Throw an error if the dimensions of the blocks don't match up correctly.\nsage: # explicitly specify the positions of the blocks\nsage: block_matrix([[x1,x2],[x3,x4]])\nsage: block_matrix([[x1,x2,x3],[x4,x5,x6]])\nsage: # dimensions are the numbers of block rows and columns\nsage: block_matrix(2,3, [x1,x2,x3,x4,x5,x6])\nsage: # coerce the matrix to a specific ring\nsage: block_matrix(QQ,2,3,[x1,x2,x3,x4,x5,x6])\nsage: # 1 and 0 should still be interpreted as the identity and zero matrices\nsage: block_matrix([[x1,1],[1,x2]])\nsage: # if only one dimension is given, assume the matrix is square\nsage: block_matrix(QQ,2,[x1,x2,x3,x4])\nsage: block_matrix(2,[x1,x2,x3,x4])\nsage: # the following works now\nsage: block_matrix([x1,x2,x3,x4])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2429\n\n",
     "created_at": "2008-03-08T20:23:19Z",
     "labels": [
         "component: linear algebra"
@@ -20,7 +20,6 @@ Assignee: @williamstein
 CC:  @jdemeyer
 
 The block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices
-
 
 ```
 sage: # Throw an error if the dimensions of the blocks don't match up correctly.
@@ -41,7 +40,6 @@ sage: block_matrix([x1,x2,x3,x4])
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2429
 
 
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2429
 archive/issue_comments_016401.json:
 ```json
 {
-    "body": "As commented in the original patch, the command \n\n```\nsage:  block_matrix([x1,x2,x3,x4])\n```\n\n\"works\" where \"works\" means that it makes a 2x2 matrix of submatrices.  While that was what I expected when I used the command, it is quite ambiguous and I felt like I was on shaky ground while writing my own code on top of it.  I do not like the ambiguity of that.\n\nNote that it is also inconsistent with the matrix command:\n\n```\nsage: matrix([1,2,3,4])\n[1 2 3 4]\n```\n\nwhich makes a 1x4 matrix.\n\nI'd say they should both make an 1xn matrix (or matrix of submatrices).  Indeed, I'd almost rather that the syntax with a simple list and no explicit dimensions be banned outright when we don't know the dimensions from some parent object due to ambiguity.  Seems to go along with \"Explicit is better than implicit.\"",
+    "body": "As commented in the original patch, the command \n\n```\nsage:  block_matrix([x1,x2,x3,x4])\n```\n\"works\" where \"works\" means that it makes a 2x2 matrix of submatrices.  While that was what I expected when I used the command, it is quite ambiguous and I felt like I was on shaky ground while writing my own code on top of it.  I do not like the ambiguity of that.\n\nNote that it is also inconsistent with the matrix command:\n\n```\nsage: matrix([1,2,3,4])\n[1 2 3 4]\n```\nwhich makes a 1x4 matrix.\n\nI'd say they should both make an 1xn matrix (or matrix of submatrices).  Indeed, I'd almost rather that the syntax with a simple list and no explicit dimensions be banned outright when we don't know the dimensions from some parent object due to ambiguity.  Seems to go along with \"Explicit is better than implicit.\"",
     "created_at": "2008-11-11T15:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ As commented in the original patch, the command
 ```
 sage:  block_matrix([x1,x2,x3,x4])
 ```
-
 "works" where "works" means that it makes a 2x2 matrix of submatrices.  While that was what I expected when I used the command, it is quite ambiguous and I felt like I was on shaky ground while writing my own code on top of it.  I do not like the ambiguity of that.
 
 Note that it is also inconsistent with the matrix command:
@@ -76,7 +73,6 @@ Note that it is also inconsistent with the matrix command:
 sage: matrix([1,2,3,4])
 [1 2 3 4]
 ```
-
 which makes a 1x4 matrix.
 
 I'd say they should both make an 1xn matrix (or matrix of submatrices).  Indeed, I'd almost rather that the syntax with a simple list and no explicit dimensions be banned outright when we don't know the dimensions from some parent object due to ambiguity.  Seems to go along with "Explicit is better than implicit."

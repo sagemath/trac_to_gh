@@ -3,7 +3,7 @@
 archive/issues_009944.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\n> sage: R.<x> = GF(3)[]\n> sage: q = (x+1)/(x^3+x+1)\n> sage: q.partial_fraction_decomposition()\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#\n\nIssue created by migration from https://trac.sagemath.org/ticket/9945\n\n",
+    "body": "Assignee: @aghitza\n\n```\n> sage: R.<x> = GF(3)[]\n> sage: q = (x+1)/(x^3+x+1)\n> sage: q.partial_fraction_decomposition()\n```\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#\n\nIssue created by migration from https://trac.sagemath.org/ticket/9945\n\n",
     "created_at": "2010-09-18T23:41:19Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,13 +18,11 @@ archive/issues_009944.json:
 ```
 Assignee: @aghitza
 
-
 ```
 > sage: R.<x> = GF(3)[]
 > sage: q = (x+1)/(x^3+x+1)
 > sage: q.partial_fraction_decomposition()
 ```
-
 
 See http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#
 
@@ -114,7 +112,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098972.json:
 ```json
 {
-    "body": "in addition, 2 doctests fail (with 4.5.3):\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-9945/sage/rings/ring.pyx # 2 doctests failed\n----------------------------------------------------------------------\nTimings have been updated.\nTotal time for all tests: 5056.9 seconds\n```\n\nPaul",
+    "body": "in addition, 2 doctests fail (with 4.5.3):\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-9945/sage/rings/ring.pyx # 2 doctests failed\n----------------------------------------------------------------------\nTimings have been updated.\nTotal time for all tests: 5056.9 seconds\n```\nPaul",
     "created_at": "2010-09-19T21:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -133,7 +131,6 @@ The following tests failed:
 Timings have been updated.
 Total time for all tests: 5056.9 seconds
 ```
-
 Paul
 
 
@@ -181,7 +178,7 @@ I was just moving code, but it doesn't hurt to clean it up as I do so (and I was
 archive/issue_comments_098975.json:
 ```json
 {
-    "body": "Robert, sorry the original patch fails to apply to 4.6.alpha1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: 9945\nsage: hg_sage.import_patch(\"/tmp/9945-part-frac-FpT.patch\")\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg status\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg status\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg import   \"/tmp/9945-part-frac-FpT.patch\"\napplying /tmp/9945-part-frac-FpT.patch\npatching file sage/rings/fraction_field_element.pyx\nHunk #3 FAILED at 282\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/fraction_field_element.pyx.rej\nabort: patch failed to apply\n```\n\nPlease could you rebase it?\n| Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "body": "Robert, sorry the original patch fails to apply to 4.6.alpha1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: 9945\nsage: hg_sage.import_patch(\"/tmp/9945-part-frac-FpT.patch\")\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg status\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg status\ncd \"/tmp/sage-4.6.alpha1/devel/sage\" && hg import   \"/tmp/9945-part-frac-FpT.patch\"\napplying /tmp/9945-part-frac-FpT.patch\npatching file sage/rings/fraction_field_element.pyx\nHunk #3 FAILED at 282\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/fraction_field_element.pyx.rej\nabort: patch failed to apply\n```\nPlease could you rebase it?\n| Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
     "created_at": "2010-09-21T07:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
@@ -211,7 +208,6 @@ Hunk #3 FAILED at 282
 1 out of 4 hunks FAILED -- saving rejects to file sage/rings/fraction_field_element.pyx.rej
 abort: patch failed to apply
 ```
-
 Please could you rebase it?
 | Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |
 | Type notebook() for the GUI, and license() for information.        |

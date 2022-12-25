@@ -89,7 +89,7 @@ The patch also includes some [pep8](http://pypi.python.org/pypi/pep8/) tweaks.
 archive/issue_comments_070968.json:
 ```json
 {
-    "body": "Specifically,\n\n```sh\n/usr/bin/pep8 --repeat --show-source --ignore=E251,E301,E302,E501 sphinxify.py\n```\n\n\nAnd to test the startup imports / time:  `sage -startuptime`",
+    "body": "Specifically,\n\n```sh\n/usr/bin/pep8 --repeat --show-source --ignore=E251,E301,E302,E501 sphinxify.py\n```\n\nAnd to test the startup imports / time:  `sage -startuptime`",
     "created_at": "2010-02-03T05:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Specifically,
 /usr/bin/pep8 --repeat --show-source --ignore=E251,E301,E302,E501 sphinxify.py
 ```
 
-
 And to test the startup imports / time:  `sage -startuptime`
 
 
@@ -114,7 +113,7 @@ And to test the startup imports / time:  `sage -startuptime`
 archive/issue_comments_070969.json:
 ```json
 {
-    "body": "In line 89\n\n```\nconfdir = os.path.join(SAGE_DOC, 'en', 'introspect') \n```\n\nwon't there be problems if SAGE_DOC is None?  I guess earlier in the file, you could change the last line in the following:\n\n```\ntry:\n    from sage.misc.misc import SAGE_DOC\nexcept ImportError:\n    SAGE_DOC = \"\"  # used to be None\n```\n\nOtherwise it looks good.",
+    "body": "In line 89\n\n```\nconfdir = os.path.join(SAGE_DOC, 'en', 'introspect') \n```\nwon't there be problems if SAGE_DOC is None?  I guess earlier in the file, you could change the last line in the following:\n\n```\ntry:\n    from sage.misc.misc import SAGE_DOC\nexcept ImportError:\n    SAGE_DOC = \"\"  # used to be None\n```\nOtherwise it looks good.",
     "created_at": "2010-02-03T05:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
@@ -128,7 +127,6 @@ In line 89
 ```
 confdir = os.path.join(SAGE_DOC, 'en', 'introspect') 
 ```
-
 won't there be problems if SAGE_DOC is None?  I guess earlier in the file, you could change the last line in the following:
 
 ```
@@ -137,7 +135,6 @@ try:
 except ImportError:
     SAGE_DOC = ""  # used to be None
 ```
-
 Otherwise it looks good.
 
 

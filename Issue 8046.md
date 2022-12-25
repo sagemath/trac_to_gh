@@ -3,7 +3,7 @@
 archive/issues_008046.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThe source file `matrix/matrix_double_dense.py` is not included in the documentation.  It appears that it should be, since it has functions that are of interest to users.  Patch simply adds it to the right place in the documentation tree.\n\nThe file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.\n\n\n```\nleft_eigenvectors()\nright_eigenvectors()\neigenspaces_left()\neigenspaces_right()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8046\n\n",
+    "body": "Assignee: mvngu\n\nThe source file `matrix/matrix_double_dense.py` is not included in the documentation.  It appears that it should be, since it has functions that are of interest to users.  Patch simply adds it to the right place in the documentation tree.\n\nThe file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.\n\n```\nleft_eigenvectors()\nright_eigenvectors()\neigenspaces_left()\neigenspaces_right()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8046\n\n",
     "created_at": "2010-01-23T23:03:56Z",
     "labels": [
         "component: documentation",
@@ -22,14 +22,12 @@ The source file `matrix/matrix_double_dense.py` is not included in the documenta
 
 The file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.
 
-
 ```
 left_eigenvectors()
 right_eigenvectors()
 eigenspaces_left()
 eigenspaces_right()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8046
 
@@ -60,7 +58,7 @@ Changing status from new to needs_work.
 archive/issue_comments_070205.json:
 ```json
 {
-    "body": "Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by @jasongrout created at 2011-02-24 05:47:58\n\nI get some errors on 4.6.1 when building the docs:\n\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by @jasongrout created at 2011-02-24 05:47:58\n\nI get some errors on 4.6.1 when building the docs:\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2011-02-24T05:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
@@ -73,7 +71,6 @@ Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/so
 
 I get some errors on 4.6.1 when building the docs:
 
-
 ```
 docstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 docstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.
@@ -82,7 +79,6 @@ docstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentatio
 docstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.
 <autodoc>:0: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 

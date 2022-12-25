@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2606
 archive/issue_comments_017777.json:
 ```json
 {
-    "body": "Can you suggest a very specific design?  E.g.,\n\n```\nsage: notebook.killall()\n... kills all running notebook servers\nsage: notebook.pids()\n... shows pids' of all running notebook servers\nsage: notebook.urls()\n... shows urls...\n```\n\n\nWhat do you think?",
+    "body": "Can you suggest a very specific design?  E.g.,\n\n```\nsage: notebook.killall()\n... kills all running notebook servers\nsage: notebook.pids()\n... shows pids' of all running notebook servers\nsage: notebook.urls()\n... shows urls...\n```\n\nWhat do you think?",
     "created_at": "2008-03-19T22:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2606",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ sage: notebook.pids()
 sage: notebook.urls()
 ... shows urls...
 ```
-
 
 What do you think?
 

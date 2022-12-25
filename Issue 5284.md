@@ -187,7 +187,7 @@ archive/issue_events_012281.json:
 archive/issue_comments_040531.json:
 ```json
 {
-    "body": "We need to check\n\n```\nSAGE_SIMD_MODE\n```\n\nThe only supported value at the moment is `SSE2`. So remove pni, ssse3 from the flags array.\n\nCheers,\n\nMichael",
+    "body": "We need to check\n\n```\nSAGE_SIMD_MODE\n```\nThe only supported value at the moment is `SSE2`. So remove pni, ssse3 from the flags array.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T07:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5284",
     "type": "issue_comment",
@@ -201,7 +201,6 @@ We need to check
 ```
 SAGE_SIMD_MODE
 ```
-
 The only supported value at the moment is `SSE2`. So remove pni, ssse3 from the flags array.
 
 Cheers,
@@ -273,7 +272,7 @@ tornaria -- good catch regarding lahf.  We need to make a ticket about that!!
 archive/issue_comments_040535.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n> I also tried this and it works fine.\n> \n> tornaria -- good catch regarding lahf.  We need to make a ticket about that!!\n\nThat is part of #5849.\n\nA P4 that does not have lahf is exceedingly rare and AFAIK we have never seen a problem with it, but I am sure we will hit it in the future. Note that x86 vs. core2 code in 64 bit MPIR is quote noticeable performance wise for some benchmarks.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 was]:\n> I also tried this and it works fine.\n> \n> tornaria -- good catch regarding lahf.  We need to make a ticket about that!!\n\n\nThat is part of #5849.\n\nA P4 that does not have lahf is exceedingly rare and AFAIK we have never seen a problem with it, but I am sure we will hit it in the future. Note that x86 vs. core2 code in 64 bit MPIR is quote noticeable performance wise for some benchmarks.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T04:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5284",
     "type": "issue_comment",
@@ -286,6 +285,7 @@ Replying to [comment:9 was]:
 > I also tried this and it works fine.
 > 
 > tornaria -- good catch regarding lahf.  We need to make a ticket about that!!
+
 
 That is part of #5849.
 

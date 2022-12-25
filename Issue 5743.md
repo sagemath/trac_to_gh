@@ -74,7 +74,7 @@ Attachment [trac_5743.patch](tarball://root/attachments/some-uuid/ticket5743/tra
 archive/issue_comments_044819.json:
 ```json
 {
-    "body": "This patch fixes the following two doctest failures on Solaris 10/Sparc:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module_element.pyx\"  \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/modules/free_module_element.pyx\", line 505:\n    sage: vector(RDF, {1:pi, 1000:e})._sage_input_(SageInputBuilder(), False)\nExpected:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590451}}})}\nGot:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590455}}})}\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_8\n```\n\nand\n\n```\nsage -t  \"devel/sage/sage/rings/real_double.pyx\"            \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/rings/real_double.pyx\", line 727:\n    sage: sage_input(RDF(-e), verify=True, preparse=False)\nExpected:\n    # Verified\n    -RDF(2.7182818284590451)\nGot:\n    # Verified\n    -RDF(2.7182818284590455)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch fixes the following two doctest failures on Solaris 10/Sparc:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module_element.pyx\"  \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/modules/free_module_element.pyx\", line 505:\n    sage: vector(RDF, {1:pi, 1000:e})._sage_input_(SageInputBuilder(), False)\nExpected:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590451}}})}\nGot:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590455}}})}\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_8\n```\nand\n\n```\nsage -t  \"devel/sage/sage/rings/real_double.pyx\"            \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/rings/real_double.pyx\", line 727:\n    sage: sage_input(RDF(-e), verify=True, preparse=False)\nExpected:\n    # Verified\n    -RDF(2.7182818284590451)\nGot:\n    # Verified\n    -RDF(2.7182818284590455)\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T10:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ Got:
 1 items had failures:
    1 of  10 in __main__.example_8
 ```
-
 and
 
 ```
@@ -114,7 +113,6 @@ Got:
     -RDF(2.7182818284590455)
 **********************************************************************
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_003370.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nWith 3.0.2:\n\n\n```\nsage: P.<x,y> = ZZ[]\nsage: P('x+y')\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/work/sage/sage-3.0.2/<ipython console> in <module>()\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring.py in __call__(self, x, check)\n    386 \n    387         elif isinstance(x , str) and self._has_singular:\n--> 388             self._singular_().set_ring()\n    389             try:\n    390                 return self._singular_().parent(x).sage_poly(self)\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_(self, singular, force)\n    172             return R\n    173         except (AttributeError, ValueError):\n--> 174             return self._singular_init_(singular, force)\n    175 \n    176     def _singular_init_(self, singular=singular_default, force=False):\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_init_(self, singular, force)\n    243 \n    244         else:\n--> 245             raise TypeError, \"no conversion to a Singular ring defined\"\n    246 \n    247         return self.__singular\n\nTypeError: no conversion to a Singular ring defined\n\n```\n\n\nAttached patch fixes this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3370\n\n",
+    "body": "Assignee: @malb\n\nWith 3.0.2:\n\n```\nsage: P.<x,y> = ZZ[]\nsage: P('x+y')\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/work/sage/sage-3.0.2/<ipython console> in <module>()\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring.py in __call__(self, x, check)\n    386 \n    387         elif isinstance(x , str) and self._has_singular:\n--> 388             self._singular_().set_ring()\n    389             try:\n    390                 return self._singular_().parent(x).sage_poly(self)\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_(self, singular, force)\n    172             return R\n    173         except (AttributeError, ValueError):\n--> 174             return self._singular_init_(singular, force)\n    175 \n    176     def _singular_init_(self, singular=singular_default, force=False):\n\n/home/burcin/work/sage/sage-3.0.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_init_(self, singular, force)\n    243 \n    244         else:\n--> 245             raise TypeError, \"no conversion to a Singular ring defined\"\n    246 \n    247         return self.__singular\n\nTypeError: no conversion to a Singular ring defined\n\n```\n\nAttached patch fixes this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3370\n\n",
     "created_at": "2008-06-05T01:57:38Z",
     "labels": [
         "component: commutative algebra",
@@ -19,7 +19,6 @@ archive/issues_003370.json:
 Assignee: @malb
 
 With 3.0.2:
-
 
 ```
 sage: P.<x,y> = ZZ[]
@@ -52,7 +51,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: no conversion to a Singular ring defined
 
 ```
-
 
 Attached patch fixes this problem.
 

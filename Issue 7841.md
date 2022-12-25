@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7841
 archive/issue_comments_067794.json:
 ```json
 {
-    "body": "The attached patch defines a new class Polynomial_ZZ_pEX via templating (uses polynomial_template.pxi).\n\nThis class should be used for polynomials over GF(p^k) with p>NTL_SP_BOUND.\nFor smaller values of p, we should wrap NTL's lzz_pEX which is not done yet at all.\n\nFor the record, some comparisons:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: NTL\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: S.<X>=PolynomialRing(K)\nsage: P=R.random_element(degree=100)\nsage: Q=S(list(P))\nsage: P2=R.random_element(degree=100)\nsage: Q2=S(list(P2))\nsage: %timeit P+P2\n10000 loops, best of 3: 68.7 \u00b5s per loop\nsage: %timeit Q+Q2\n1000 loops, best of 3: 1.53 ms per loop\nsage: %timeit P*P2\n100 loops, best of 3: 2.17 ms per loop\nsage: %timeit Q*Q2\n10 loops, best of 3: 298 ms per loop\nsage: %timeit P**30\n10 loops, best of 3: 79.8 ms per loop\nsage: time ll=Q**10\nCPU times: user 12.71 s, sys: 0.20 s, total: 12.91 s\nWall time: 13.15 s\nsage: %timeit P//(P2>>50)\n100 loops, best of 3: 4.85 ms per loop\nsage: %timeit Q//(Q2>>50)\n10 loops, best of 3: 203 ms per loop\nsage: time P.is_irreducible()\nCPU times: user 1.44 s, sys: 0.00 s, total: 1.44 s\nWall time: 1.44 s\nFalse\nsage: time Q.is_irreducible()\nCPU times: user 11.66 s, sys: 0.01 s, total: 11.67 s\nWall time: 11.79 s\nFalse\n```\n",
+    "body": "The attached patch defines a new class Polynomial_ZZ_pEX via templating (uses polynomial_template.pxi).\n\nThis class should be used for polynomials over GF(p^k) with p>NTL_SP_BOUND.\nFor smaller values of p, we should wrap NTL's lzz_pEX which is not done yet at all.\n\nFor the record, some comparisons:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: NTL\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: S.<X>=PolynomialRing(K)\nsage: P=R.random_element(degree=100)\nsage: Q=S(list(P))\nsage: P2=R.random_element(degree=100)\nsage: Q2=S(list(P2))\nsage: %timeit P+P2\n10000 loops, best of 3: 68.7 \u00b5s per loop\nsage: %timeit Q+Q2\n1000 loops, best of 3: 1.53 ms per loop\nsage: %timeit P*P2\n100 loops, best of 3: 2.17 ms per loop\nsage: %timeit Q*Q2\n10 loops, best of 3: 298 ms per loop\nsage: %timeit P**30\n10 loops, best of 3: 79.8 ms per loop\nsage: time ll=Q**10\nCPU times: user 12.71 s, sys: 0.20 s, total: 12.91 s\nWall time: 13.15 s\nsage: %timeit P//(P2>>50)\n100 loops, best of 3: 4.85 ms per loop\nsage: %timeit Q//(Q2>>50)\n10 loops, best of 3: 203 ms per loop\nsage: time P.is_irreducible()\nCPU times: user 1.44 s, sys: 0.00 s, total: 1.44 s\nWall time: 1.44 s\nFalse\nsage: time Q.is_irreducible()\nCPU times: user 11.66 s, sys: 0.01 s, total: 11.67 s\nWall time: 11.79 s\nFalse\n```",
     "created_at": "2010-01-04T13:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ CPU times: user 11.66 s, sys: 0.01 s, total: 11.67 s
 Wall time: 11.79 s
 False
 ```
-
 
 
 
@@ -152,7 +151,7 @@ Changing keywords from "" to "NTL polynomials".
 archive/issue_comments_067798.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n\nThanks for looking at this!\n\n> Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.\n\nI just lazily adapted the files for GF2X. But I admit it's not perfect.\n\nYann",
+    "body": "Replying to [comment:3 cremona]:\n\nThanks for looking at this!\n\n> Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.\n\n\nI just lazily adapted the files for GF2X. But I admit it's not perfect.\n\nYann",
     "created_at": "2010-01-06T21:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -167,6 +166,7 @@ Thanks for looking at this!
 
 > Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.
 
+
 I just lazily adapted the files for GF2X. But I admit it's not perfect.
 
 Yann
@@ -178,7 +178,7 @@ Yann
 archive/issue_comments_067799.json:
 ```json
 {
-    "body": "Replying to [comment:4 ylchapuy]:\n> Replying to [comment:3 cremona]:\n> \n> Thanks for looking at this!\n> \n> > Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.\n> \n> I just lazily adapted the files for GF2X. But I admit it's not perfect.\n\nThat makes my comments rather frustrating, I'm sure -- sorry about that.  I see that sage/libs/ntl has a good covereage score:\n\n```\njohn@ubuntu%sage -coverage ~/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl | grep SCORE\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_ZZ.pyx: 86% (31 of 36)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pEX.pyx: 97% (44 of 45)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2.pyx: 92% (13 of 14)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pContext.pyx: 66% (6 of 9)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_p.pyx: 94% (16 of 17)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_pX.pyx: 97% (36 of 37)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ.pyx: 91% (21 of 23)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2E.pyx: 95% (19 of 20)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_pContext.pyx: 83% (5 of 6)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2EContext.pyx: 85% (6 of 7)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZX.pyx: 98% (52 of 53)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2X.pyx: 94% (36 of 38)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pX.pyx: 84% (50 of 59)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pE.pyx: 42% (6 of 14)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2EX.pyx: 81% (9 of 11)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pEContext.pyx: 80% (8 of 10)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_p.pyx: 95% (19 of 20)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2E.pyx: 96% (25 of 26)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2.pyx: 96% (24 of 25)\n```\n\nbut that only measures which functoins have any kind of docstring, not what the docstrings contain.",
+    "body": "Replying to [comment:4 ylchapuy]:\n> Replying to [comment:3 cremona]:\n> \n> Thanks for looking at this!\n> \n> > Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.\n\n> \n> I just lazily adapted the files for GF2X. But I admit it's not perfect.\n\n\nThat makes my comments rather frustrating, I'm sure -- sorry about that.  I see that sage/libs/ntl has a good covereage score:\n\n```\njohn@ubuntu%sage -coverage ~/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl | grep SCORE\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_ZZ.pyx: 86% (31 of 36)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pEX.pyx: 97% (44 of 45)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2.pyx: 92% (13 of 14)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pContext.pyx: 66% (6 of 9)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_p.pyx: 94% (16 of 17)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_pX.pyx: 97% (36 of 37)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ.pyx: 91% (21 of 23)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2E.pyx: 95% (19 of 20)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_lzz_pContext.pyx: 83% (5 of 6)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2EContext.pyx: 85% (6 of 7)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZX.pyx: 98% (52 of 53)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2X.pyx: 94% (36 of 38)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pX.pyx: 84% (50 of 59)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pE.pyx: 42% (6 of 14)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2EX.pyx: 81% (9 of 11)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pEContext.pyx: 80% (8 of 10)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_p.pyx: 95% (19 of 20)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2E.pyx: 96% (25 of 26)\nSCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2.pyx: 96% (24 of 25)\n```\nbut that only measures which functoins have any kind of docstring, not what the docstrings contain.",
     "created_at": "2010-01-06T22:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -193,8 +193,10 @@ Replying to [comment:4 ylchapuy]:
 > Thanks for looking at this!
 > 
 > > Meanwhile, I see that most functions do not have INPUT or OUTPUT blocks (though they do mostly have EXAMPLES), and these should be added.
+
 > 
 > I just lazily adapted the files for GF2X. But I admit it's not perfect.
+
 
 That makes my comments rather frustrating, I'm sure -- sorry about that.  I see that sage/libs/ntl has a good covereage score:
 
@@ -220,7 +222,6 @@ SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_p.pyx: 9
 SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2E.pyx: 96% (25 of 26)
 SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_GF2.pyx: 96% (24 of 25)
 ```
-
 but that only measures which functoins have any kind of docstring, not what the docstrings contain.
 
 
@@ -400,7 +401,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067808.json:
 ```json
 {
-    "body": "Replying to [comment:9 roed]:\n> Looks good.  Here are some comments.  After a few changes, I'll be happy to give this a positive review.\n>\n\nThanks a lot for looking at this. I've done almost all the requested changes, except:\n\n>   * `Polynomial_template.__init__` calls `Polynomial.__init__`: you shouldn't duplicate this earlier in your `__init__` function.\n\nIt's not duplicated. When I call it, the method returns before calling `Polynomial_template.__init__`\n\n>   * `_cmp_c_impl` (...) It's also probably better to do this by defining celement_cmp in the linkage file.\n\nI know it's quite ugly, but I need to compare the elements of the finite field with the Sage implementation. I don't know how to handle this inside celement_cmp. If you have an idea, please do it and I would be happy to review your patch.\n\nYann",
+    "body": "Replying to [comment:9 roed]:\n> Looks good.  Here are some comments.  After a few changes, I'll be happy to give this a positive review.\n\n>\n\nThanks a lot for looking at this. I've done almost all the requested changes, except:\n\n>   * `Polynomial_template.__init__` calls `Polynomial.__init__`: you shouldn't duplicate this earlier in your `__init__` function.\n\n\nIt's not duplicated. When I call it, the method returns before calling `Polynomial_template.__init__`\n\n>   * `_cmp_c_impl` (...) It's also probably better to do this by defining celement_cmp in the linkage file.\n\n\nI know it's quite ugly, but I need to compare the elements of the finite field with the Sage implementation. I don't know how to handle this inside celement_cmp. If you have an idea, please do it and I would be happy to review your patch.\n\nYann",
     "created_at": "2010-02-09T17:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7841",
     "type": "issue_comment",
@@ -411,15 +412,18 @@ archive/issue_comments_067808.json:
 
 Replying to [comment:9 roed]:
 > Looks good.  Here are some comments.  After a few changes, I'll be happy to give this a positive review.
+
 >
 
 Thanks a lot for looking at this. I've done almost all the requested changes, except:
 
 >   * `Polynomial_template.__init__` calls `Polynomial.__init__`: you shouldn't duplicate this earlier in your `__init__` function.
 
+
 It's not duplicated. When I call it, the method returns before calling `Polynomial_template.__init__`
 
 >   * `_cmp_c_impl` (...) It's also probably better to do this by defining celement_cmp in the linkage file.
+
 
 I know it's quite ugly, but I need to compare the elements of the finite field with the Sage implementation. I don't know how to handle this inside celement_cmp. If you have an idea, please do it and I would be happy to review your patch.
 

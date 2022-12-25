@@ -112,7 +112,7 @@ Michael
 archive/issue_comments_021357.json:
 ```json
 {
-    "body": "FYI:\n\n```\nme: ok. I just commented on the ticket that it likely would.\nSo you might want to clue us in that it is not that issue, but a similar problem\n William: Good.\n me: I also think that the \"huge\" problem he posted might just be that he ran out of RAM.\n William: Line 803 in singular.py would be fixed in a similar way to the fix in my other patch.\nWe'll find out in a while.\n me: After all: we are running Singular in 32 bit mode on OSX for now.\nNow if that mabshoff guy got moving on that issue .... [wink]\n William: Yes, what's holding up the 64-bit port?\n me: Nothing. Just spending my \"free\" time with lisp, Itanium and other fun stuff.\n```\n\n\nThe 64 bit OSX port is a high priority item for us and most problems have been already solved. William and I will likely spend some good time this Sunday and try to get everything merged back into 3.0.2.\n\nCheers,\n\nMichael",
+    "body": "FYI:\n\n```\nme: ok. I just commented on the ticket that it likely would.\nSo you might want to clue us in that it is not that issue, but a similar problem\n William: Good.\n me: I also think that the \"huge\" problem he posted might just be that he ran out of RAM.\n William: Line 803 in singular.py would be fixed in a similar way to the fix in my other patch.\nWe'll find out in a while.\n me: After all: we are running Singular in 32 bit mode on OSX for now.\nNow if that mabshoff guy got moving on that issue .... [wink]\n William: Yes, what's holding up the 64-bit port?\n me: Nothing. Just spending my \"free\" time with lisp, Itanium and other fun stuff.\n```\n\nThe 64 bit OSX port is a high priority item for us and most problems have been already solved. William and I will likely spend some good time this Sunday and try to get everything merged back into 3.0.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-04T04:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
@@ -136,7 +136,6 @@ Now if that mabshoff guy got moving on that issue .... [wink]
  me: Nothing. Just spending my "free" time with lisp, Itanium and other fun stuff.
 ```
 
-
 The 64 bit OSX port is a high priority item for us and most problems have been already solved. William and I will likely spend some good time this Sunday and try to get everything merged back into 3.0.2.
 
 Cheers,
@@ -150,7 +149,7 @@ Michael
 archive/issue_comments_021358.json:
 ```json
 {
-    "body": "I had some off list communication with Michael Brickenstein and he recommended using \n\n```\nHi Michael!\n\nI also use\n-with-valloc=system\nadditionally to\n--with-malloc=system\n\non Mac OS X  (32bit). I had issues with Singular not being able to\nallocate much memory (under certain circumstances) a few years ago\nand this configuration has proven to be useful.\n\nBest regards,\nMichael \n```\n\nI am not sure how Singular normally reacts when running out of memory, but it should obviously never crash.\n\nI am CCing PolyBoRi since Michael B. might enlighten us about this specific problem.\n\nCheers,\n\nMichael",
+    "body": "I had some off list communication with Michael Brickenstein and he recommended using \n\n```\nHi Michael!\n\nI also use\n-with-valloc=system\nadditionally to\n--with-malloc=system\n\non Mac OS X  (32bit). I had issues with Singular not being able to\nallocate much memory (under certain circumstances) a few years ago\nand this configuration has proven to be useful.\n\nBest regards,\nMichael \n```\nI am not sure how Singular normally reacts when running out of memory, but it should obviously never crash.\n\nI am CCing PolyBoRi since Michael B. might enlighten us about this specific problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-29T01:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
@@ -176,7 +175,6 @@ and this configuration has proven to be useful.
 Best regards,
 Michael 
 ```
-
 I am not sure how Singular normally reacts when running out of memory, but it should obviously never crash.
 
 I am CCing PolyBoRi since Michael B. might enlighten us about this specific problem.
@@ -403,7 +401,7 @@ archive/issue_events_007001.json:
 archive/issue_comments_021363.json:
 ```json
 {
-    "body": "On a new Mac,\n\n```\ndegree = 13\nTime: CPU 171.29 s, Wall: 171.90 s\n5107 [3, 4, 5, 7, 17, 22, 71, 104, 162, 189]\nTime: CPU 216.02 s, Wall: 218.62 s\n54323 [1, 3, 3, 7, 8, 11, 90, 109, 352]\n----------------------------------------------\n```\n\nbut this is presumably 64-bit.   It would be useful to know if this is still an issue with much larger input on a generic machine. Or is it so old it's wontfix?",
+    "body": "On a new Mac,\n\n```\ndegree = 13\nTime: CPU 171.29 s, Wall: 171.90 s\n5107 [3, 4, 5, 7, 17, 22, 71, 104, 162, 189]\nTime: CPU 216.02 s, Wall: 218.62 s\n54323 [1, 3, 3, 7, 8, 11, 90, 109, 352]\n----------------------------------------------\n```\nbut this is presumably 64-bit.   It would be useful to know if this is still an issue with much larger input on a generic machine. Or is it so old it's wontfix?",
     "created_at": "2016-08-08T19:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
@@ -422,7 +420,6 @@ Time: CPU 216.02 s, Wall: 218.62 s
 54323 [1, 3, 3, 7, 8, 11, 90, 109, 352]
 ----------------------------------------------
 ```
-
 but this is presumably 64-bit.   It would be useful to know if this is still an issue with much larger input on a generic machine. Or is it so old it's wontfix?
 
 

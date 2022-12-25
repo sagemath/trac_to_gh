@@ -60,7 +60,7 @@ Attachment [weylgroup3.patch](tarball://root/attachments/some-uuid/ticket2864/we
 archive/issue_comments_019603.json:
 ```json
 {
-    "body": "I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\nI just checked that the above linked-to email does what it claims this patch does:\n\n\n```\nsage: G = WeylGroup(['F',4])\nsage: L = G.lattice()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: L = RootSystem(['F',4]).ambient_lattice()\nsage: G = L.weyl_group()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: G.order()\n1152\nsage: G.simple_reflections()\n\n[[1 0 0 0]\n[0 0 1 0]\n[0 1 0 0]\n[0 0 0 1],\n [1 0 0 0]\n[0 1 0 0]\n[0 0 0 1]\n[0 0 1 0],\n [ 1  0  0  0]\n[ 0  1  0  0]\n[ 0  0  1  0]\n[ 0  0  0 -1],\n [ 1/2  1/2  1/2  1/2]\n[ 1/2  1/2 -1/2 -1/2]\n[ 1/2 -1/2  1/2 -1/2]\n[ 1/2 -1/2 -1/2  1/2]]\nsage: g = G.simple_reflections()[0]*G.simple_reflections()[2]\nsage: g.order()\n2\nsage: g.length()\n2\nsage: L2 = G.lattice()\nsage: L == L2\nTrue\nsage: fw = L.fundamental_weights(); fw\n[(1, 1, 0, 0), (2, 1, 1, 0), (3/2, 1/2, 1/2, 1/2), (1, 0, 0, 0)]\nsage: rho = sum(fw); rho\n(11/2, 5/2, 3/2, 1/2)\nsage: g.action(rho)\n(11/2, 3/2, 5/2, -1/2)\n```\n\n\nVery nice so far! I'm posting the rebased patch to\nhttp://sage.math.washington.edu/home/wdj/patches/9467.patch\nin case it helps. (I hesitate to attach it to this ticket since I don't know if there are\nother plans in mind and don't want to confuse the issue.)",
+    "body": "I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\nI just checked that the above linked-to email does what it claims this patch does:\n\n```\nsage: G = WeylGroup(['F',4])\nsage: L = G.lattice()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: L = RootSystem(['F',4]).ambient_lattice()\nsage: G = L.weyl_group()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: G.order()\n1152\nsage: G.simple_reflections()\n\n[[1 0 0 0]\n[0 0 1 0]\n[0 1 0 0]\n[0 0 0 1],\n [1 0 0 0]\n[0 1 0 0]\n[0 0 0 1]\n[0 0 1 0],\n [ 1  0  0  0]\n[ 0  1  0  0]\n[ 0  0  1  0]\n[ 0  0  0 -1],\n [ 1/2  1/2  1/2  1/2]\n[ 1/2  1/2 -1/2 -1/2]\n[ 1/2 -1/2  1/2 -1/2]\n[ 1/2 -1/2 -1/2  1/2]]\nsage: g = G.simple_reflections()[0]*G.simple_reflections()[2]\nsage: g.order()\n2\nsage: g.length()\n2\nsage: L2 = G.lattice()\nsage: L == L2\nTrue\nsage: fw = L.fundamental_weights(); fw\n[(1, 1, 0, 0), (2, 1, 1, 0), (3/2, 1/2, 1/2, 1/2), (1, 0, 0, 0)]\nsage: rho = sum(fw); rho\n(11/2, 5/2, 3/2, 1/2)\nsage: g.action(rho)\n(11/2, 3/2, 5/2, -1/2)\n```\n\nVery nice so far! I'm posting the rebased patch to\nhttp://sage.math.washington.edu/home/wdj/patches/9467.patch\nin case it helps. (I hesitate to attach it to this ticket since I don't know if there are\nother plans in mind and don't want to confuse the issue.)",
     "created_at": "2008-04-09T18:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ archive/issue_comments_019603.json:
 I realize this is "not ready for review" but I tested it out anyway. It down not apply to sage-3.0.alpga3 but can be applied "manually" (namely, read the man page for "patch" ...).
 
 I just checked that the above linked-to email does what it claims this patch does:
-
 
 ```
 sage: G = WeylGroup(['F',4])
@@ -121,7 +120,6 @@ sage: g.action(rho)
 (11/2, 3/2, 5/2, -1/2)
 ```
 
-
 Very nice so far! I'm posting the rebased patch to
 http://sage.math.washington.edu/home/wdj/patches/9467.patch
 in case it helps. (I hesitate to attach it to this ticket since I don't know if there are
@@ -134,7 +132,7 @@ other plans in mind and don't want to confuse the issue.)
 archive/issue_comments_019604.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n\n>I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to >sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\nIt does apply directly to 3.0.alpha3 since it's a patch against 3.0.alpha3. \n\nFrom the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\n\nI'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.",
+    "body": "Replying to [comment:2 wdj]:\n\n>I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to >sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\n\nIt does apply directly to 3.0.alpha3 since it's a patch against 3.0.alpha3. \n\nFrom the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\n\nI'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.",
     "created_at": "2008-04-09T19:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -146,6 +144,7 @@ archive/issue_comments_019604.json:
 Replying to [comment:2 wdj]:
 
 >I realize this is "not ready for review" but I tested it out anyway. It down not apply to >sage-3.0.alpga3 but can be applied "manually" (namely, read the man page for "patch" ...).
+
 
 It does apply directly to 3.0.alpha3 since it's a patch against 3.0.alpha3. 
 
@@ -160,7 +159,7 @@ I'm unsure why Michael Abshoff described it as not ready for review. One possibl
 archive/issue_comments_019605.json:
 ```json
 {
-    "body": "\"From the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\"\n\nI would say that is the definition of \"applies manually\", so i agree with you!\nWhen I say it \"does not apply to sage-3.0.alpha3\" I mean that \nthe following does *not* occur:\n\n\n```\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/weylgroup3.patch\")\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/weylgroup3.patch\"\napplying /home/wdj/wdj/sagefiles/weylgroup3.patch\ntransaction abort!\nrollback completed\nsage:\n```\n\nDid you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_sage.export, as described (well, more-or-less described :-) on http://www.sagemath.org/doc/html/prog/node72.html ? If yes, then maybe my download was corrupted or something.",
+    "body": "\"From the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\"\n\nI would say that is the definition of \"applies manually\", so i agree with you!\nWhen I say it \"does not apply to sage-3.0.alpha3\" I mean that \nthe following does *not* occur:\n\n```\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/weylgroup3.patch\")\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/weylgroup3.patch\"\napplying /home/wdj/wdj/sagefiles/weylgroup3.patch\ntransaction abort!\nrollback completed\nsage:\n```\nDid you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_sage.export, as described (well, more-or-less described :-) on http://www.sagemath.org/doc/html/prog/node72.html ? If yes, then maybe my download was corrupted or something.",
     "created_at": "2008-04-09T19:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -175,7 +174,6 @@ I would say that is the definition of "applies manually", so i agree with you!
 When I say it "does not apply to sage-3.0.alpha3" I mean that 
 the following does *not* occur:
 
-
 ```
 sage: hg_sage.apply("/home/wdj/wdj/sagefiles/weylgroup3.patch")
 cd "/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage" && hg status
@@ -186,7 +184,6 @@ transaction abort!
 rollback completed
 sage:
 ```
-
 Did you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_sage.export, as described (well, more-or-less described :-) on http://www.sagemath.org/doc/html/prog/node72.html ? If yes, then maybe my download was corrupted or something.
 
 
@@ -196,7 +193,7 @@ Did you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_
 archive/issue_comments_019606.json:
 ```json
 {
-    "body": "Replying to [comment:3 bump]:\n> \n> I'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.\n\nHi Dan,\n\nthis was the precise reason I marked it this way and I assume Mike will take care of this later.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 bump]:\n> \n> I'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.\n\n\nHi Dan,\n\nthis was the precise reason I marked it this way and I assume Mike will take care of this later.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-09T19:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
@@ -208,6 +205,7 @@ archive/issue_comments_019606.json:
 Replying to [comment:3 bump]:
 > 
 > I'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.
+
 
 Hi Dan,
 

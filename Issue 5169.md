@@ -3,7 +3,7 @@
 archive/issues_005169.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis was requested by nihilalienumcredo in sage-support.  He wants to be able to do\n\n\n```\nsage: set_attach_path('/foo/bar/')\nsage: attach file.sage\n```\n\nand have it work from any location so long as /foo/bar/file.sage exists. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5169\n\n",
+    "body": "Assignee: cwitty\n\nThis was requested by nihilalienumcredo in sage-support.  He wants to be able to do\n\n```\nsage: set_attach_path('/foo/bar/')\nsage: attach file.sage\n```\nand have it work from any location so long as /foo/bar/file.sage exists. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5169\n\n",
     "created_at": "2009-02-03T23:34:10Z",
     "labels": [
         "component: misc",
@@ -20,12 +20,10 @@ Assignee: cwitty
 
 This was requested by nihilalienumcredo in sage-support.  He wants to be able to do
 
-
 ```
 sage: set_attach_path('/foo/bar/')
 sage: attach file.sage
 ```
-
 and have it work from any location so long as /foo/bar/file.sage exists. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5169

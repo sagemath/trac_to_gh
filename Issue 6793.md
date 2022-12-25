@@ -3,7 +3,7 @@
 archive/issues_006793.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n<SNIP>\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [361.6 s]\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/6793\n\n",
+    "body": "Assignee: @loefflerd\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n<SNIP>\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6793\n\n",
     "created_at": "2009-08-20T23:03:45Z",
     "labels": [
         "component: elliptic curves",
@@ -27,9 +27,9 @@ Thu Aug 20 20:02:37 BST 2009
 dsage-trial tmp directory doesn't exist - creating ...
 This script will run the unit tests for DSage
 ```
-
 <SNIP>
-
+| Sage Version 4.1.1, Release Date: 2009-08-14                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_point.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
@@ -38,8 +38,6 @@ sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_point.py"
          [361.6 s]
 ```
 
-| Sage Version 4.1.1, Release Date: 2009-08-14                       |
-| Type notebook() for the GUI, and license() for information.        |
 
 Issue created by migration from https://trac.sagemath.org/ticket/6793
 

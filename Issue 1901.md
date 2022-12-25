@@ -3,7 +3,7 @@
 archive/issues_001901.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?\n[...]\nDocstring:\n\n           Return chosen generator of the finite field.  This generator\n           is a root of the defining polynomial of the finite field, and\n           is guaranteed to be a generator for the multiplicative group.\n\n(This is wrong because in this case the generator is not guaranteed to\nbe a generator for the multiplicative group.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1901\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?\n[...]\nDocstring:\n\n           Return chosen generator of the finite field.  This generator\n           is a root of the defining polynomial of the finite field, and\n           is guaranteed to be a generator for the multiplicative group.\n\n(This is wrong because in this case the generator is not guaranteed to\nbe a generator for the multiplicative group.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1901\n\n",
     "created_at": "2008-01-24T00:36:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_001901.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?
 [...]
@@ -31,7 +30,6 @@ Docstring:
 (This is wrong because in this case the generator is not guaranteed to
 be a generator for the multiplicative group.)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1901
 
@@ -100,7 +98,7 @@ Changing status from new to assigned.
 archive/issue_comments_012004.json:
 ```json
 {
-    "body": "It looks like there's some randomness in `FiniteField_ext_pari(23^20, \"b\")`, such that the proposed doctests will often fail.  Here's one failure mode, with two failing doctests:\n\n```\nsage -t  devel/sage-review/sage/rings/finite_field_ext_pari.py**********************************************************************\nFile \"finite_field_ext_pari.py\", line 300:\n    sage: F.gen().multiplicative_order() == F.order()-1\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"finite_field_ext_pari.py\", line 302:\n    sage: F.multiplicative_generator()\nExpected:\n    b + 1\nGot:\n    b\n**********************************************************************\n```\n\n\nAnd here's the other failure mode, with only one failing doctest:\n\n```\nsage -t  devel/sage-review/sage/rings/finite_field_ext_pari.py**********************************************************************\nFile \"finite_field_ext_pari.py\", line 302:\n    sage: F.multiplicative_generator()\nExpected:\n    b + 1\nGot:\n    b + 14\n**********************************************************************\n```\n\n\nAnd sometimes both tests pass.",
+    "body": "It looks like there's some randomness in `FiniteField_ext_pari(23^20, \"b\")`, such that the proposed doctests will often fail.  Here's one failure mode, with two failing doctests:\n\n```\nsage -t  devel/sage-review/sage/rings/finite_field_ext_pari.py**********************************************************************\nFile \"finite_field_ext_pari.py\", line 300:\n    sage: F.gen().multiplicative_order() == F.order()-1\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"finite_field_ext_pari.py\", line 302:\n    sage: F.multiplicative_generator()\nExpected:\n    b + 1\nGot:\n    b\n**********************************************************************\n```\n\nAnd here's the other failure mode, with only one failing doctest:\n\n```\nsage -t  devel/sage-review/sage/rings/finite_field_ext_pari.py**********************************************************************\nFile \"finite_field_ext_pari.py\", line 302:\n    sage: F.multiplicative_generator()\nExpected:\n    b + 1\nGot:\n    b + 14\n**********************************************************************\n```\n\nAnd sometimes both tests pass.",
     "created_at": "2008-03-01T18:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1901",
     "type": "issue_comment",
@@ -129,7 +127,6 @@ Got:
 **********************************************************************
 ```
 
-
 And here's the other failure mode, with only one failing doctest:
 
 ```
@@ -142,7 +139,6 @@ Got:
     b + 14
 **********************************************************************
 ```
-
 
 And sometimes both tests pass.
 

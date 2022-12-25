@@ -113,7 +113,7 @@ archive/issue_comments_093197.json:
 archive/issue_comments_093198.json:
 ```json
 {
-    "body": "When this is closed (which would hopefully happen with #9880 integrated), let's be sure to write doctests for both this ticket and #10282, which would just be to say that \n\n```\nsage: psi(1,1/3)*log(3)\nlog(3)*psi(1, 1/3)\n```\n\nis the same on all systems, in addition to the `zeta(x)+cos(x)` example here.",
+    "body": "When this is closed (which would hopefully happen with #9880 integrated), let's be sure to write doctests for both this ticket and #10282, which would just be to say that \n\n```\nsage: psi(1,1/3)*log(3)\nlog(3)*psi(1, 1/3)\n```\nis the same on all systems, in addition to the `zeta(x)+cos(x)` example here.",
     "created_at": "2011-01-13T03:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
@@ -128,7 +128,6 @@ When this is closed (which would hopefully happen with #9880 integrated), let's 
 sage: psi(1,1/3)*log(3)
 log(3)*psi(1, 1/3)
 ```
-
 is the same on all systems, in addition to the `zeta(x)+cos(x)` example here.
 
 

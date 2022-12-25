@@ -3,7 +3,7 @@
 archive/issues_005920.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: latex view\n\nThis patch allows for:\n\n```\nsage: view(object, format = \"pdf\")\n```\n\n\nTypical use cases:\n- you prefer your pdf browser\n- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)\n\nShould this use 'output=' rather than 'format='\n\nPotential extensions: `view(object, format='png')`, `view(object, format='html')`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: latex view\n\nThis patch allows for:\n\n```\nsage: view(object, format = \"pdf\")\n```\n\nTypical use cases:\n- you prefer your pdf browser\n- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)\n\nShould this use 'output=' rather than 'format='\n\nPotential extensions: `view(object, format='png')`, `view(object, format='html')`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
     "created_at": "2009-04-28T19:35:58Z",
     "labels": [
         "component: interfaces"
@@ -26,7 +26,6 @@ This patch allows for:
 ```
 sage: view(object, format = "pdf")
 ```
-
 
 Typical use cases:
 - you prefer your pdf browser
@@ -65,7 +64,7 @@ Changing keywords from "latex view" to "view, latex, dvi, pdf".
 archive/issue_comments_046700.json:
 ```json
 {
-    "body": "It should be \n\n```\nsage: view(object, viewer='pdf')\n```\n\nfor consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.",
+    "body": "It should be \n\n```\nsage: view(object, viewer='pdf')\n```\nfor consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.",
     "created_at": "2009-04-28T22:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -79,7 +78,6 @@ It should be
 ```
 sage: view(object, viewer='pdf')
 ```
-
 for consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.
 
 
@@ -89,7 +87,7 @@ for consistency with all the 3d plotting code, which has viewer='tachyon' and vi
 archive/issue_comments_046701.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> It should be \n> {{{\n> sage: view(object, viewer='pdf')\n> }}}\n> for consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.\n\nHmm, how can you give this a positive review in light of this comment? I would much rather have the trivial rename in the original patch before merging it.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 was]:\n> It should be \n> \n> ```\n> sage: view(object, viewer='pdf')\n> ```\n> for consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.\n\n\nHmm, how can you give this a positive review in light of this comment? I would much rather have the trivial rename in the original patch before merging it.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-28T23:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -100,10 +98,12 @@ archive/issue_comments_046701.json:
 
 Replying to [comment:4 was]:
 > It should be 
-> {{{
+> 
+> ```
 > sage: view(object, viewer='pdf')
-> }}}
+> ```
 > for consistency with all the 3d plotting code, which has viewer='tachyon' and viewer='jmol' options.
+
 
 Hmm, how can you give this a positive review in light of this comment? I would much rather have the trivial rename in the original patch before merging it.
 
@@ -173,7 +173,7 @@ Which work does it still need?
 archive/issue_comments_046705.json:
 ```json
 {
-    "body": "Replying to [comment:11 nthiery]:\n> Replying to [comment:10 was]:\n> Which work does it still need?\n\nThis had a positive review by Alex since you addressed William's concern. Why did you change that?\n\nReinstating positive review.\n\nCheers,\n\nMichaell",
+    "body": "Replying to [comment:11 nthiery]:\n> Replying to [comment:10 was]:\n> Which work does it still need?\n\n\nThis had a positive review by Alex since you addressed William's concern. Why did you change that?\n\nReinstating positive review.\n\nCheers,\n\nMichaell",
     "created_at": "2009-04-29T11:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -185,6 +185,7 @@ archive/issue_comments_046705.json:
 Replying to [comment:11 nthiery]:
 > Replying to [comment:10 was]:
 > Which work does it still need?
+
 
 This had a positive review by Alex since you addressed William's concern. Why did you change that?
 
@@ -201,7 +202,7 @@ Michaell
 archive/issue_comments_046706.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> This had a positive review by Alex since you addressed William's concern. Why did you change that?\n\nWilliam changed that, and that's precisely what I was puzzled about.\n\n> Reinstating positive review.\n\nThanks.",
+    "body": "Replying to [comment:12 mabshoff]:\n> This had a positive review by Alex since you addressed William's concern. Why did you change that?\n\n\nWilliam changed that, and that's precisely what I was puzzled about.\n\n> Reinstating positive review.\n\n\nThanks.",
     "created_at": "2009-04-29T21:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -213,9 +214,11 @@ archive/issue_comments_046706.json:
 Replying to [comment:12 mabshoff]:
 > This had a positive review by Alex since you addressed William's concern. Why did you change that?
 
+
 William changed that, and that's precisely what I was puzzled about.
 
 > Reinstating positive review.
+
 
 Thanks.
 
@@ -243,7 +246,7 @@ archive/issue_events_013881.json:
 archive/issue_comments_046707.json:
 ```json
 {
-    "body": "This one needs a rebase post 3.4.2:\n\n```\nsage-3.4.2.rc0/devel/sage$ hg import trac_5920_view_as_pdf-5920-nt.patch \napplying trac_5920_view_as_pdf-5920-nt.patch\npatching file sage/misc/latex.py\nHunk #1 succeeded at 894 with fuzz 2 (offset 369 lines).\nHunk #4 FAILED at 575\n1 out of 6 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\nabort: patch failed to apply\n```\n\nOnce the rebase has been done the positive review can be reinstated [assuming doctests pass obviously ;)].\n\nCheers,\n\nMichael",
+    "body": "This one needs a rebase post 3.4.2:\n\n```\nsage-3.4.2.rc0/devel/sage$ hg import trac_5920_view_as_pdf-5920-nt.patch \napplying trac_5920_view_as_pdf-5920-nt.patch\npatching file sage/misc/latex.py\nHunk #1 succeeded at 894 with fuzz 2 (offset 369 lines).\nHunk #4 FAILED at 575\n1 out of 6 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\nabort: patch failed to apply\n```\nOnce the rebase has been done the positive review can be reinstated [assuming doctests pass obviously ;)].\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T07:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -263,7 +266,6 @@ Hunk #4 FAILED at 575
 1 out of 6 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej
 abort: patch failed to apply
 ```
-
 Once the rebase has been done the positive review can be reinstated [assuming doctests pass obviously ;)].
 
 Cheers,
@@ -277,7 +279,7 @@ Michael
 archive/issue_comments_046708.json:
 ```json
 {
-    "body": "Replying to [comment:14 mabshoff]:\n> This one needs a rebase post 3.4.2:\n\nDone\n\nPfiew. The workflow overhead has been large on this patch ...",
+    "body": "Replying to [comment:14 mabshoff]:\n> This one needs a rebase post 3.4.2:\n\n\nDone\n\nPfiew. The workflow overhead has been large on this patch ...",
     "created_at": "2009-04-30T17:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -288,6 +290,7 @@ archive/issue_comments_046708.json:
 
 Replying to [comment:14 mabshoff]:
 > This one needs a rebase post 3.4.2:
+
 
 Done
 
@@ -336,7 +339,7 @@ Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_046711.json:
 ```json
 {
-    "body": "Replying to [comment:16 nthiery]:\n> Oops, please ignore the updated patch for a second\n\nFinally good to go!",
+    "body": "Replying to [comment:16 nthiery]:\n> Oops, please ignore the updated patch for a second\n\n\nFinally good to go!",
     "created_at": "2009-04-30T17:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -347,6 +350,7 @@ archive/issue_comments_046711.json:
 
 Replying to [comment:16 nthiery]:
 > Oops, please ignore the updated patch for a second
+
 
 Finally good to go!
 
@@ -397,7 +401,7 @@ It applies cleanly to 3.4.2.rc0, passes doctests, and does what it should when I
 archive/issue_comments_046714.json:
 ```json
 {
-    "body": "Replying to [comment:15 nthiery]:\n\n> Pfiew. The workflow overhead has been large on this patch ...\n\nYeah, given the amount of code this didn't go as smoothly as it should have :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:15 nthiery]:\n\n> Pfiew. The workflow overhead has been large on this patch ...\n\n\nYeah, given the amount of code this didn't go as smoothly as it should have :)\n\nCheers,\n\nMichael",
     "created_at": "2009-05-01T04:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
@@ -409,6 +413,7 @@ archive/issue_comments_046714.json:
 Replying to [comment:15 nthiery]:
 
 > Pfiew. The workflow overhead has been large on this patch ...
+
 
 Yeah, given the amount of code this didn't go as smoothly as it should have :)
 

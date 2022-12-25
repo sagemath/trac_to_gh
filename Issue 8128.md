@@ -3,7 +3,7 @@
 archive/issues_008128.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @robert-marik mvngu\n\nWith the SageNB spkg at #8051, evaluating a cell\n\n```\n%latex\n\u010d\n```\n\nraises\n\n```python\n[...]\n  File \"/opt/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/latex.py\", line 786, in eval\n    O.write(x.encode('utf-8'))\nUnicodeDecodeError: 'ascii' codec can't decode byte 0xc4 in position 0: ordinal not in range(128) \n```\n\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/44c237cc11e9b422).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8128\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @robert-marik mvngu\n\nWith the SageNB spkg at #8051, evaluating a cell\n\n```\n%latex\n\u010d\n```\nraises\n\n```python\n[...]\n  File \"/opt/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/latex.py\", line 786, in eval\n    O.write(x.encode('utf-8'))\nUnicodeDecodeError: 'ascii' codec can't decode byte 0xc4 in position 0: ordinal not in range(128) \n```\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/44c237cc11e9b422).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8128\n\n",
     "created_at": "2010-01-30T02:47:31Z",
     "labels": [
         "component: notebook",
@@ -27,7 +27,6 @@ With the SageNB spkg at #8051, evaluating a cell
 %latex
 č
 ```
-
 raises
 
 ```python
@@ -36,7 +35,6 @@ raises
     O.write(x.encode('utf-8'))
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xc4 in position 0: ordinal not in range(128) 
 ```
-
 
 See [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/44c237cc11e9b422).
 
@@ -109,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071347.json:
 ```json
 {
-    "body": "From `sagenb.misc.misc`:\n\n```python\ndef encoded_str(obj, encoding='utf-8'):\n    if isinstance(obj, unicode):\n        return obj.encode(encoding, 'ignore')\n    return str(obj)\n\ndef unicode_str(obj, encoding='utf-8'):\n    if isinstance(obj, str):\n        return obj.decode(encoding, 'ignore')\n    elif isinstance(obj, unicode):\n        return obj\n    return unicode(obj)\n```\n",
+    "body": "From `sagenb.misc.misc`:\n\n```python\ndef encoded_str(obj, encoding='utf-8'):\n    if isinstance(obj, unicode):\n        return obj.encode(encoding, 'ignore')\n    return str(obj)\n\ndef unicode_str(obj, encoding='utf-8'):\n    if isinstance(obj, str):\n        return obj.decode(encoding, 'ignore')\n    elif isinstance(obj, unicode):\n        return obj\n    return unicode(obj)\n```",
     "created_at": "2010-01-30T03:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8128",
     "type": "issue_comment",
@@ -133,7 +131,6 @@ def unicode_str(obj, encoding='utf-8'):
         return obj
     return unicode(obj)
 ```
-
 
 
 

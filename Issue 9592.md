@@ -124,7 +124,7 @@ The patch level for the new spkg should be 2, since we used p1 for #9665.  This 
 archive/issue_comments_092628.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> The patch level for the new spkg should be 2, since we used p1 for #9665.  This should fix the \"already installed\" problem reported by John Cremona in [comment:ticket:9343:180 comment 180] at #9343.\n\nJust noticed that, too. :)\n\nThere are also post-merge comments at #9665, I don't know if they should be included here or if there's even a new ticket for these.",
+    "body": "Replying to [comment:5 mpatel]:\n> The patch level for the new spkg should be 2, since we used p1 for #9665.  This should fix the \"already installed\" problem reported by John Cremona in [comment:ticket:9343:180 comment 180] at #9343.\n\n\nJust noticed that, too. :)\n\nThere are also post-merge comments at #9665, I don't know if they should be included here or if there's even a new ticket for these.",
     "created_at": "2010-08-13T11:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -135,6 +135,7 @@ archive/issue_comments_092628.json:
 
 Replying to [comment:5 mpatel]:
 > The patch level for the new spkg should be 2, since we used p1 for #9665.  This should fix the "already installed" problem reported by John Cremona in [comment:ticket:9343:180 comment 180] at #9343.
+
 
 Just noticed that, too. :)
 
@@ -229,7 +230,7 @@ I made this before seeing the recent comments here.  Feel free to add the Depend
 archive/issue_comments_092633.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> There are also post-merge comments at #9665, I don't know if they should be included here or if there's even a new ticket for these.\n\nI've added a note at #9665 about this ticket.",
+    "body": "Replying to [comment:6 leif]:\n> There are also post-merge comments at #9665, I don't know if they should be included here or if there's even a new ticket for these.\n\n\nI've added a note at #9665 about this ticket.",
     "created_at": "2010-08-13T21:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -240,6 +241,7 @@ archive/issue_comments_092633.json:
 
 Replying to [comment:6 leif]:
 > There are also post-merge comments at #9665, I don't know if they should be included here or if there's even a new ticket for these.
+
 
 I've added a note at #9665 about this ticket.
 
@@ -272,7 +274,7 @@ Dave
 archive/issue_comments_092635.json:
 ```json
 {
-    "body": "Replying to [comment:12 drkirkby]:\n> I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n\nYou should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-)",
+    "body": "Replying to [comment:12 drkirkby]:\n> I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n\n\nYou should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-)",
     "created_at": "2010-08-13T23:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -284,6 +286,7 @@ archive/issue_comments_092635.json:
 Replying to [comment:12 drkirkby]:
 > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. 
 
+
 You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-)
 
 
@@ -293,7 +296,7 @@ You should perhaps have updated the spkg link to point to John Cremona's new p2 
 archive/issue_comments_092636.json:
 ```json
 {
-    "body": "Replying to [comment:14 leif]:\n> Replying to [comment:12 drkirkby]:\n> > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n> \n> You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) \nI don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg. \n\nI hope the \n\n`gcc -Wa,-W` \n\n(to suppress warnings from the assembler), has not got back in, as -W is not recognised by the Sun assembler and it creates an error. \n\nDave",
+    "body": "Replying to [comment:14 leif]:\n> Replying to [comment:12 drkirkby]:\n> > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n\n> \n> You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) \n\nI don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg. \n\nI hope the \n\n`gcc -Wa,-W` \n\n(to suppress warnings from the assembler), has not got back in, as -W is not recognised by the Sun assembler and it creates an error. \n\nDave",
     "created_at": "2010-08-14T00:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -305,8 +308,10 @@ archive/issue_comments_092636.json:
 Replying to [comment:14 leif]:
 > Replying to [comment:12 drkirkby]:
 > > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. 
+
 > 
 > You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) 
+
 I don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg. 
 
 I hope the 
@@ -324,7 +329,7 @@ Dave
 archive/issue_comments_092637.json:
 ```json
 {
-    "body": "Replying to [comment:15 drkirkby]:\n> Replying to [comment:14 leif]:\n> > Replying to [comment:12 drkirkby]:\n> > > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n> > \n> > You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) \n> I don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg.\n\nBrowser cache issue?\n\nSee http://trac.sagemath.org/sage_trac/ticket/9592#comment:10 (where)\n\nand http://trac.sagemath.org/sage_trac/ticket/9592#comment:5 (why).\n\n(lcalc-20100428-1.23.p1.spkg from #9665 was merged into Sage 4.5.2.rc1)",
+    "body": "Replying to [comment:15 drkirkby]:\n> Replying to [comment:14 leif]:\n> > Replying to [comment:12 drkirkby]:\n> > > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. \n\n> > \n> > You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) \n\n> I don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg.\n\nBrowser cache issue?\n\nSee http://trac.sagemath.org/sage_trac/ticket/9592#comment:10 (where)\n\nand http://trac.sagemath.org/sage_trac/ticket/9592#comment:5 (why).\n\n(lcalc-20100428-1.23.p1.spkg from #9665 was merged into Sage 4.5.2.rc1)",
     "created_at": "2010-08-14T00:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -337,8 +342,10 @@ Replying to [comment:15 drkirkby]:
 > Replying to [comment:14 leif]:
 > > Replying to [comment:12 drkirkby]:
 > > > I've changed the title and description a bit, to reflect the fact that #9343 is **not** Pari 2.4.3. 
+
 > > 
 > > You should perhaps have updated the spkg link to point to John Cremona's new p2 spkg, too. ;-) 
+
 > I don't know where it is. In any case, it should not be a .p2, since the current one in Sage is lcalc-20100428-1.23.p0.spkg, to a revision should be called lcalc-20100428-1.23.p1.spkg.
 
 Browser cache issue?
@@ -430,7 +437,7 @@ http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg
 archive/issue_comments_092642.json:
 ```json
 {
-    "body": "Replying to [comment:19 rishi]:\n> I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n\nPerhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n\nThere are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n\nI wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n\nI'm not sure if Cygwin support is required yet... ;-)",
+    "body": "Replying to [comment:19 rishi]:\n> I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n\n\nPerhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n\nThere are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n\nI wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n\nI'm not sure if Cygwin support is required yet... ;-)",
     "created_at": "2010-08-14T12:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -441,6 +448,7 @@ archive/issue_comments_092642.json:
 
 Replying to [comment:19 rishi]:
 > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.
+
 
 Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?
 
@@ -457,7 +465,7 @@ I'm not sure if Cygwin support is required yet... ;-)
 archive/issue_comments_092643.json:
 ```json
 {
-    "body": "Replying to [comment:20 rishi]:\n> Following suggestion of Mitesh, I have small some small cleaning up of unnecessary files in patches and few lines in spkg-install over the changes of jdemeyer.\n> \n> http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg\n\nCould you upload an spkg patch for your changes (except file deletions) here?\n\nIt's a bit more convenient for reviewing and adding further changes...",
+    "body": "Replying to [comment:20 rishi]:\n> Following suggestion of Mitesh, I have small some small cleaning up of unnecessary files in patches and few lines in spkg-install over the changes of jdemeyer.\n> \n> http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg\n\n\nCould you upload an spkg patch for your changes (except file deletions) here?\n\nIt's a bit more convenient for reviewing and adding further changes...",
     "created_at": "2010-08-14T12:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -471,6 +479,7 @@ Replying to [comment:20 rishi]:
 > 
 > http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg
 
+
 Could you upload an spkg patch for your changes (except file deletions) here?
 
 It's a bit more convenient for reviewing and adding further changes...
@@ -482,7 +491,7 @@ It's a bit more convenient for reviewing and adding further changes...
 archive/issue_comments_092644.json:
 ```json
 {
-    "body": "Replying to [comment:20 rishi]:\n> Following suggestion of Mitesh, I have small some small cleaning up of unnecessary files in patches and few lines in spkg-install over the changes of jdemeyer.\n> \n> http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg\n\nI copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg) (like this, I don't have to update the descriptions of #9343 and #9592).",
+    "body": "Replying to [comment:20 rishi]:\n> Following suggestion of Mitesh, I have small some small cleaning up of unnecessary files in patches and few lines in spkg-install over the changes of jdemeyer.\n> \n> http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg\n\n\nI copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg) (like this, I don't have to update the descriptions of #9343 and #9592).",
     "created_at": "2010-08-14T12:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -496,6 +505,7 @@ Replying to [comment:20 rishi]:
 > 
 > http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-20100428-1.23.p2.spkg
 
+
 I copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p2.spkg) (like this, I don't have to update the descriptions of #9343 and #9592).
 
 
@@ -505,7 +515,7 @@ I copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p
 archive/issue_comments_092645.json:
 ```json
 {
-    "body": "Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by @rishikesha created at 2010-08-14 13:15:56\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
+    "body": "Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by @rishikesha created at 2010-08-14 13:15:56\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
     "created_at": "2010-08-14T13:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -521,6 +531,7 @@ I am not sure what you want to be done. Can you make the changes and attach it h
 Replying to [comment:21 leif]:
 > Replying to [comment:19 rishi]:
 > > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.
+
 > 
 > Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?
 > 
@@ -593,7 +604,7 @@ I've made an spkg that builds on Cygwin at #9775 based on the one here.  It migh
 archive/issue_comments_092649.json:
 ```json
 {
-    "body": "Replying to [comment:27 mhansen]:\n> I've made an spkg that builds on Cygwin at #9775 based on the one here.  It might make more sense to make any additional changes to the SPKG there.\n\nSee #9845, too.",
+    "body": "Replying to [comment:27 mhansen]:\n> I've made an spkg that builds on Cygwin at #9775 based on the one here.  It might make more sense to make any additional changes to the SPKG there.\n\n\nSee #9845, too.",
     "created_at": "2010-09-02T10:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -604,6 +615,7 @@ archive/issue_comments_092649.json:
 
 Replying to [comment:27 mhansen]:
 > I've made an spkg that builds on Cygwin at #9775 based on the one here.  It might make more sense to make any additional changes to the SPKG there.
+
 
 See #9845, too.
 
@@ -650,7 +662,7 @@ Also, the `dist/` (Debian) directory should be removed, cf. #5903.
 archive/issue_comments_092652.json:
 ```json
 {
-    "body": "Replying to [comment:31 leif]:\n> Also, the `dist/` (Debian) directory should be removed, cf. #5903.\n\nI suggest that we do this at #9845, unless we otherwise need to update the package here.",
+    "body": "Replying to [comment:31 leif]:\n> Also, the `dist/` (Debian) directory should be removed, cf. #5903.\n\n\nI suggest that we do this at #9845, unless we otherwise need to update the package here.",
     "created_at": "2010-09-04T07:32:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -662,6 +674,7 @@ archive/issue_comments_092652.json:
 Replying to [comment:31 leif]:
 > Also, the `dist/` (Debian) directory should be removed, cf. #5903.
 
+
 I suggest that we do this at #9845, unless we otherwise need to update the package here.
 
 
@@ -671,7 +684,7 @@ I suggest that we do this at #9845, unless we otherwise need to update the packa
 archive/issue_comments_092653.json:
 ```json
 {
-    "body": "Replying to [comment:32 mpatel]:\n> Replying to [comment:31 leif]:\n> > Also, the `dist/` (Debian) directory should be removed, cf. #5903.\n> \n> I suggest that we do this at #9845, unless we otherwise need to update the package here.\n\nYes; hopefully #9845 gets reviewed soon s.t. this ticket won't get merged at all (positively reviewed though), since the former contains all changes from here.",
+    "body": "Replying to [comment:32 mpatel]:\n> Replying to [comment:31 leif]:\n> > Also, the `dist/` (Debian) directory should be removed, cf. #5903.\n\n> \n> I suggest that we do this at #9845, unless we otherwise need to update the package here.\n\n\nYes; hopefully #9845 gets reviewed soon s.t. this ticket won't get merged at all (positively reviewed though), since the former contains all changes from here.",
     "created_at": "2010-09-04T09:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -683,8 +696,10 @@ archive/issue_comments_092653.json:
 Replying to [comment:32 mpatel]:
 > Replying to [comment:31 leif]:
 > > Also, the `dist/` (Debian) directory should be removed, cf. #5903.
+
 > 
 > I suggest that we do this at #9845, unless we otherwise need to update the package here.
+
 
 Yes; hopefully #9845 gets reviewed soon s.t. this ticket won't get merged at all (positively reviewed though), since the former contains all changes from here.
 
@@ -713,7 +728,7 @@ Do we have a positive review here?
 archive/issue_comments_092655.json:
 ```json
 {
-    "body": "Doesn't bother **me**, but should we keep\n\n```sh\n# disable Cygwin build for now\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n#    cp ../../patches/Lcommandline_elliptic.cc .\n    echo \"Sorry, the lcalc build is currently broken\"\n    echo 1\nfi\n```\n\n**?** (In case I by luck have looked at the current `.p2` / its current patches/diffs.)\n\nFortunately there's a follow-up ticket to address the rest...",
+    "body": "Doesn't bother **me**, but should we keep\n\n```sh\n# disable Cygwin build for now\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n#    cp ../../patches/Lcommandline_elliptic.cc .\n    echo \"Sorry, the lcalc build is currently broken\"\n    echo 1\nfi\n```\n**?** (In case I by luck have looked at the current `.p2` / its current patches/diffs.)\n\nFortunately there's a follow-up ticket to address the rest...",
     "created_at": "2010-09-09T12:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
@@ -732,7 +747,6 @@ if [ "$UNAME" = "CYGWIN" ]; then
     echo 1
 fi
 ```
-
 **?** (In case I by luck have looked at the current `.p2` / its current patches/diffs.)
 
 Fortunately there's a follow-up ticket to address the rest...

@@ -348,7 +348,7 @@ apply only this latest file
 archive/issue_comments_015484.json:
 ```json
 {
-    "body": "Ready for review, volunteer needed!\n\nThe only doctest that failed fails without the patch as well:\n\n```\nK.<a> = QuadraticField(-5)\nK.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\n[2, a + 1, a]\n```\n\nThe documentation says it should be `[2, a+1, -a]`",
+    "body": "Ready for review, volunteer needed!\n\nThe only doctest that failed fails without the patch as well:\n\n```\nK.<a> = QuadraticField(-5)\nK.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\n[2, a + 1, a]\n```\nThe documentation says it should be `[2, a+1, -a]`",
     "created_at": "2010-08-18T14:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -366,7 +366,6 @@ K.<a> = QuadraticField(-5)
 K.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)
 [2, a + 1, a]
 ```
-
 The documentation says it should be `[2, a+1, -a]`
 
 
@@ -394,7 +393,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_015486.json:
 ```json
 {
-    "body": "Patch applies fine under 4.6.alpha1 but fails to compile:\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        return self.new_gen(thueinit(self.g, flag, prec))\n\n\n    def rnfisnorminit(self, polrel, flag=2):\n        _sig_on\n        return self.new_gen(rnfisnorminit(self.g, (<gen>polrel).g, flag))\n                                        ^\n------------------------------------------------------------\n\n/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/libs/pari/gen.pyx:7160:41: undeclared name not builtin: rnfisnorminit\n```\n\nAdding \n\n```\n    GEN     rnfisnorminit(GEN T, GEN relpol, int galois)\n```\n\nto `sage/libs/pari/decl.pxi` fixes that issue, but this reveals another failure:\n\n```\nsage/libs/pari/gen.c: In function \u2018__pyx_pf_4sage_4libs_4pari_3gen_3gen_bnfisnorm\u2019:\nsage/libs/pari/gen.c:24097: error: too many arguments to function \u2018bnfisnorm\u2019\n```\n\nThis seems to be because the \"prec\" argument to \"bnfisnorm\" has been removed, but taking out the extra argument, it *still* doesn't work:\n\n```\nsage -t  number_field_element.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[5]>\", line 1, in <module>\n        (beta/Integer(2)).is_norm(L)###line 971:\n    sage: (beta/2).is_norm(L)\n      File \"number_field_element.pyx\", line 999, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:8726)\n        return self.is_norm(L, element = True, proof = proof)[0]\n      File \"number_field_element.pyx\", line 1017, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:9083)\n        a, b = self.rnfisnorm(L, certify = proof)\n      File \"number_field_element.pyx\", line 1108, in sage.rings.number_field.number_field_element.NumberFieldElement.rnfisnorm (sage/rings/number_field/number_field_element.cpp:9820)\n        x, q = self._pari_('y').rnfisnorm(rnf_data)\n      File \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353)\n    PariError:  (5)\n**********************************************************************\n```\n\nAt that point I gave up. Sorry. That's \"needs work\".\n\nDavid",
+    "body": "Patch applies fine under 4.6.alpha1 but fails to compile:\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        return self.new_gen(thueinit(self.g, flag, prec))\n\n\n    def rnfisnorminit(self, polrel, flag=2):\n        _sig_on\n        return self.new_gen(rnfisnorminit(self.g, (<gen>polrel).g, flag))\n                                        ^\n------------------------------------------------------------\n\n/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/libs/pari/gen.pyx:7160:41: undeclared name not builtin: rnfisnorminit\n```\nAdding \n\n```\n    GEN     rnfisnorminit(GEN T, GEN relpol, int galois)\n```\nto `sage/libs/pari/decl.pxi` fixes that issue, but this reveals another failure:\n\n```\nsage/libs/pari/gen.c: In function \u2018__pyx_pf_4sage_4libs_4pari_3gen_3gen_bnfisnorm\u2019:\nsage/libs/pari/gen.c:24097: error: too many arguments to function \u2018bnfisnorm\u2019\n```\nThis seems to be because the \"prec\" argument to \"bnfisnorm\" has been removed, but taking out the extra argument, it *still* doesn't work:\n\n```\nsage -t  number_field_element.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[5]>\", line 1, in <module>\n        (beta/Integer(2)).is_norm(L)###line 971:\n    sage: (beta/2).is_norm(L)\n      File \"number_field_element.pyx\", line 999, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:8726)\n        return self.is_norm(L, element = True, proof = proof)[0]\n      File \"number_field_element.pyx\", line 1017, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:9083)\n        a, b = self.rnfisnorm(L, certify = proof)\n      File \"number_field_element.pyx\", line 1108, in sage.rings.number_field.number_field_element.NumberFieldElement.rnfisnorm (sage/rings/number_field/number_field_element.cpp:9820)\n        x, q = self._pari_('y').rnfisnorm(rnf_data)\n      File \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353)\n    PariError:  (5)\n**********************************************************************\n```\nAt that point I gave up. Sorry. That's \"needs work\".\n\nDavid",
     "created_at": "2010-09-23T09:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -420,20 +419,17 @@ Error converting Pyrex file to C:
 
 /storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/libs/pari/gen.pyx:7160:41: undeclared name not builtin: rnfisnorminit
 ```
-
 Adding 
 
 ```
     GEN     rnfisnorminit(GEN T, GEN relpol, int galois)
 ```
-
 to `sage/libs/pari/decl.pxi` fixes that issue, but this reveals another failure:
 
 ```
 sage/libs/pari/gen.c: In function ‘__pyx_pf_4sage_4libs_4pari_3gen_3gen_bnfisnorm’:
 sage/libs/pari/gen.c:24097: error: too many arguments to function ‘bnfisnorm’
 ```
-
 This seems to be because the "prec" argument to "bnfisnorm" has been removed, but taking out the extra argument, it *still* doesn't work:
 
 ```
@@ -462,7 +458,6 @@ Exception raised:
     PariError:  (5)
 **********************************************************************
 ```
-
 At that point I gave up. Sorry. That's "needs work".
 
 David
@@ -510,7 +505,7 @@ If anyone wants to fix this, go ahead. It worked just fine on my 4.5.something, 
 archive/issue_comments_015489.json:
 ```json
 {
-    "body": "Replying to [comment:15 davidloeffler]:\n\n> ..., it *still* doesn't work:\n\n```\nsage -t  number_field_element.pyx \n********************************************************************** \nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n... \nFile \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353) \nPariError:  (5) \n********************************************************************** \n```\n\n> At that point I gave up. Sorry. That's \"needs work\".\n\nLooks like a Pari bug.  This is what the doctest asks Pari to do (with the equivalent of\u00a0beta.is_norm(L)\u00a0first):\n\n\n```\ntrousseau-bash% sage-4.6/sage -gp\n                   GP/PARI CALCULATOR Version 2.4.3 (development svn-12577:12605)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500509\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n  ***   at top-level: rnfisnorm(T,Mod(y/2,\n  ***                 ^--------------------\n  *** rnfisnorm: zero argument in factorint.\n  ***   Break loop: type 'break' to go back to GP\nbreak> break\n```\n\nBut previously, it worked alright:\n\n\n```\ntrousseau-bash% sage-4.5.3/sage -gp\n                            GP/PARI CALCULATOR Version 2.3.5 (released)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500000\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(-x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n%5 = [Mod(Mod(-1/2, y^3 + 5)*x, x^2 + x + Mod(y, y^3 + 5)), 2]\n? \n```\n\nNote also that the two versions give a different result at %4.",
+    "body": "Replying to [comment:15 davidloeffler]:\n\n> ..., it *still* doesn't work:\n\n{{{\nsage -t  number_field_element.pyx \n********************************************************************** \nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n... \nFile \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353) \nPariError:  (5) \n********************************************************************** \n}}}\n> At that point I gave up. Sorry. That's \"needs work\".\n\n\nLooks like a Pari bug.  This is what the doctest asks Pari to do (with the equivalent of\u00a0beta.is_norm(L)\u00a0first):\n\n```\ntrousseau-bash% sage-4.6/sage -gp\n                   GP/PARI CALCULATOR Version 2.4.3 (development svn-12577:12605)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500509\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n  ***   at top-level: rnfisnorm(T,Mod(y/2,\n  ***                 ^--------------------\n  *** rnfisnorm: zero argument in factorint.\n  ***   Break loop: type 'break' to go back to GP\nbreak> break\n```\nBut previously, it worked alright:\n\n```\ntrousseau-bash% sage-4.5.3/sage -gp\n                            GP/PARI CALCULATOR Version 2.3.5 (released)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500000\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(-x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n%5 = [Mod(Mod(-1/2, y^3 + 5)*x, x^2 + x + Mod(y, y^3 + 5)), 2]\n? \n```\nNote also that the two versions give a different result at %4.",
     "created_at": "2010-11-04T08:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -523,7 +518,7 @@ Replying to [comment:15 davidloeffler]:
 
 > ..., it *still* doesn't work:
 
-```
+{{{
 sage -t  number_field_element.pyx 
 ********************************************************************** 
 File "/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx", line 971:
@@ -534,12 +529,11 @@ Exception raised:
 File "gen.pyx", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353) 
 PariError:  (5) 
 ********************************************************************** 
-```
-
+}}}
 > At that point I gave up. Sorry. That's "needs work".
 
-Looks like a Pari bug.  This is what the doctest asks Pari to do (with the equivalent of beta.is_norm(L) first):
 
+Looks like a Pari bug.  This is what the doctest asks Pari to do (with the equivalent of beta.is_norm(L) first):
 
 ```
 trousseau-bash% sage-4.6/sage -gp
@@ -559,9 +553,7 @@ parisize = 8000000, primelimit = 500509
   ***   Break loop: type 'break' to go back to GP
 break> break
 ```
-
 But previously, it worked alright:
-
 
 ```
 trousseau-bash% sage-4.5.3/sage -gp
@@ -578,7 +570,6 @@ parisize = 8000000, primelimit = 500000
 %5 = [Mod(Mod(-1/2, y^3 + 5)*x, x^2 + x + Mod(y, y^3 + 5)), 2]
 ? 
 ```
-
 Note also that the two versions give a different result at %4.
 
 
@@ -608,7 +599,7 @@ Marco
 archive/issue_comments_015491.json:
 ```json
 {
-    "body": "Replying to [comment:18 mstreng]:\n\n> Did you report this bug to pari? Marco\n\nNo, I didn't. \u00a0But I have done now.",
+    "body": "Replying to [comment:18 mstreng]:\n\n> Did you report this bug to pari? Marco\n\n\nNo, I didn't. \u00a0But I have done now.",
     "created_at": "2010-12-02T13:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -621,6 +612,7 @@ Replying to [comment:18 mstreng]:
 
 > Did you report this bug to pari? Marco
 
+
 No, I didn't.  But I have done now.
 
 
@@ -630,7 +622,7 @@ No, I didn't.  But I have done now.
 archive/issue_comments_015492.json:
 ```json
 {
-    "body": "The bug with non-integral elements in rnfisnorm was reported to pari by fwclarke, and I wrote a simple workaround for the time it takes a pari-fix to reach sage.\n\nTurns out there is another problem:\n\n```\nsage: K.<a> = NumberField(x^2 + x + 1) \nsage: Q.<X> = K[] \nsage: L.<b> = NumberField(X^3 + a) \nsage: K.pari_rnfnorm_data(L)\nPariError: incorrect type (11)\n```\n\n\nAgain caused by something that works fine in pari 2.3.4 and is broken in pari 2.4.3 (alpha)\n\n```\ngp > bnf = bnfinit(y^2+y+1);\ngp > polrel = Mod(1, y^2 + y + 1)*x^3 + Mod(y, y^2 + y + 1);\ngp > rnfisnorminit(bnf, polrel)\n  ***   at top-level: rnfisnorminit(bnf,po\n  ***                 ^--------------------\n  *** rnfisnorminit: incorrect type in RgX_RgXQ_eval.\n  ***   Break loop: type 'break' to go back to GP\n```\n\n\nIdeas anyone?",
+    "body": "The bug with non-integral elements in rnfisnorm was reported to pari by fwclarke, and I wrote a simple workaround for the time it takes a pari-fix to reach sage.\n\nTurns out there is another problem:\n\n```\nsage: K.<a> = NumberField(x^2 + x + 1) \nsage: Q.<X> = K[] \nsage: L.<b> = NumberField(X^3 + a) \nsage: K.pari_rnfnorm_data(L)\nPariError: incorrect type (11)\n```\n\nAgain caused by something that works fine in pari 2.3.4 and is broken in pari 2.4.3 (alpha)\n\n```\ngp > bnf = bnfinit(y^2+y+1);\ngp > polrel = Mod(1, y^2 + y + 1)*x^3 + Mod(y, y^2 + y + 1);\ngp > rnfisnorminit(bnf, polrel)\n  ***   at top-level: rnfisnorminit(bnf,po\n  ***                 ^--------------------\n  *** rnfisnorminit: incorrect type in RgX_RgXQ_eval.\n  ***   Break loop: type 'break' to go back to GP\n```\n\nIdeas anyone?",
     "created_at": "2010-12-02T15:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -651,7 +643,6 @@ sage: K.pari_rnfnorm_data(L)
 PariError: incorrect type (11)
 ```
 
-
 Again caused by something that works fine in pari 2.3.4 and is broken in pari 2.4.3 (alpha)
 
 ```
@@ -663,7 +654,6 @@ gp > rnfisnorminit(bnf, polrel)
   *** rnfisnorminit: incorrect type in RgX_RgXQ_eval.
   ***   Break loop: type 'break' to go back to GP
 ```
-
 
 Ideas anyone?
 
@@ -808,7 +798,7 @@ No I can't, I didn't write that part.
 archive/issue_comments_015500.json:
 ```json
 {
-    "body": "There remain several problems for relative extensions.  In particular, the function `sage.rings.number_field.number_field_rel.NumberField_relative.is_galois_relative` cannot be relied on at present (4.6.1.alpha3):\n\n\n```\nsage: K.<w> = NumberField(x^2 + x + 1)\nsage: L.<a> = K.extension(x^3 - 2)\nsage: L.is_galois_relative()\nFalse\n```\n\nBut\n\n\n```\nsage: L.is_galois_absolute()\nTrue\n```\n\nand indeed\n\n\n```\nsage: len([g for g in End(L) if g(w) == w]) == L.relative_degree()\nTrue\n```\n\nI will post a patch for this in the next couple of days, and suggest other changes to improve the behaviour of `is_norm` with relative extensions.",
+    "body": "There remain several problems for relative extensions.  In particular, the function `sage.rings.number_field.number_field_rel.NumberField_relative.is_galois_relative` cannot be relied on at present (4.6.1.alpha3):\n\n```\nsage: K.<w> = NumberField(x^2 + x + 1)\nsage: L.<a> = K.extension(x^3 - 2)\nsage: L.is_galois_relative()\nFalse\n```\nBut\n\n```\nsage: L.is_galois_absolute()\nTrue\n```\nand indeed\n\n```\nsage: len([g for g in End(L) if g(w) == w]) == L.relative_degree()\nTrue\n```\nI will post a patch for this in the next couple of days, and suggest other changes to improve the behaviour of `is_norm` with relative extensions.",
     "created_at": "2010-12-07T08:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -819,30 +809,24 @@ archive/issue_comments_015500.json:
 
 There remain several problems for relative extensions.  In particular, the function `sage.rings.number_field.number_field_rel.NumberField_relative.is_galois_relative` cannot be relied on at present (4.6.1.alpha3):
 
-
 ```
 sage: K.<w> = NumberField(x^2 + x + 1)
 sage: L.<a> = K.extension(x^3 - 2)
 sage: L.is_galois_relative()
 False
 ```
-
 But
-
 
 ```
 sage: L.is_galois_absolute()
 True
 ```
-
 and indeed
-
 
 ```
 sage: len([g for g in End(L) if g(w) == w]) == L.relative_degree()
 True
 ```
-
 I will post a patch for this in the next couple of days, and suggest other changes to improve the behaviour of `is_norm` with relative extensions.
 
 
@@ -1003,7 +987,7 @@ Could you please check whether this fixes the issues you had?  If this works, yo
 archive/issue_comments_015507.json:
 ```json
 {
-    "body": "Replying to [comment:29 mstreng]:\n\n> ... I don't think #9390, which Francis mentions, should stop anyone from reviewing the patch here at #2329. There must be more functionality of sage that assumes is_galois_relative to be correct, this is just one more of them, and Francis says #9390 will be fixed soon anyway.\n\nActually `is_galois_relative` doesn't seem to be used anywhere else.\n\nBut anyway I have now added a (very short) patch to #9390.",
+    "body": "Replying to [comment:29 mstreng]:\n\n> ... I don't think #9390, which Francis mentions, should stop anyone from reviewing the patch here at #2329. There must be more functionality of sage that assumes is_galois_relative to be correct, this is just one more of them, and Francis says #9390 will be fixed soon anyway.\n\n\nActually `is_galois_relative` doesn't seem to be used anywhere else.\n\nBut anyway I have now added a (very short) patch to #9390.",
     "created_at": "2010-12-10T15:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1015,6 +999,7 @@ archive/issue_comments_015507.json:
 Replying to [comment:29 mstreng]:
 
 > ... I don't think #9390, which Francis mentions, should stop anyone from reviewing the patch here at #2329. There must be more functionality of sage that assumes is_galois_relative to be correct, this is just one more of them, and Francis says #9390 will be fixed soon anyway.
+
 
 Actually `is_galois_relative` doesn't seem to be used anywhere else.
 
@@ -1111,7 +1096,7 @@ apply only this latest file (works on sage 4.6.1.alpha3)
 archive/issue_comments_015512.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm4.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm4.patch) by fwclarke created at 2010-12-28 13:03:41\n\nReplying to [comment:37 fwclarke]:\n\n> ... This all seems to work with 4.6.1.alpha3.\n\nAnd with 4.6.1.rc0.",
+    "body": "Attachment [trac_2329_rnfisnorm4.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm4.patch) by fwclarke created at 2010-12-28 13:03:41\n\nReplying to [comment:37 fwclarke]:\n\n> ... This all seems to work with 4.6.1.alpha3.\n\n\nAnd with 4.6.1.rc0.",
     "created_at": "2010-12-28T13:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1125,6 +1110,7 @@ Attachment [trac_2329_rnfisnorm4.patch](tarball://root/attachments/some-uuid/tic
 Replying to [comment:37 fwclarke]:
 
 > ... This all seems to work with 4.6.1.alpha3.
+
 
 And with 4.6.1.rc0.
 
@@ -1317,7 +1303,7 @@ For me, this ticket gets positive review.  However, somebody needs to review my 
 archive/issue_comments_015521.json:
 ```json
 {
-    "body": "This line worries me slightly:\n\n```\n2613\t        Kbnf = self.pari_bnf(certify=certify).nf_subst(\"'y\") \n```\n\n\nIs that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?",
+    "body": "This line worries me slightly:\n\n```\n2613\t        Kbnf = self.pari_bnf(certify=certify).nf_subst(\"'y\") \n```\n\nIs that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?",
     "created_at": "2011-02-10T16:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1331,7 +1317,6 @@ This line worries me slightly:
 ```
 2613	        Kbnf = self.pari_bnf(certify=certify).nf_subst("'y") 
 ```
-
 
 Is that supposed to be `("y")` or `("'y'")` perhaps?
 
@@ -1360,7 +1345,7 @@ Apply on top of previous patch
 archive/issue_comments_015523.json:
 ```json
 {
-    "body": "Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by @jdemeyer created at 2011-02-11 08:29:25\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
+    "body": "Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by @jdemeyer created at 2011-02-11 08:29:25\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```",
     "created_at": "2011-02-11T08:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1374,10 +1359,10 @@ Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329
 Replying to [comment:45 davidloeffler]:
 > Is that supposed to be `("y")` or `("'y'")` perhaps?
 
+
 No, `'y` is correct.  I have added some comments to that code in the patch.
 
 Basically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:
-
 
 ```
 gp> y = 42
@@ -1391,7 +1376,6 @@ gp> subst(x^3, x, y)
 gp> subst(x^3, x, 'y)
 %5 = y^3
 ```
-
 
 
 
@@ -1526,7 +1510,7 @@ Changing priority from major to blocker.
 archive/issue_comments_015531.json:
 ```json
 {
-    "body": "Probably related, I got this on x86 with 4.7.alpha2\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/rational.pyx\n**********************************************************************\nFile  \n\"/storage/strogdon/gentoo/usr/share/sage/devel/sage-main/sage/rings/rational.pyx\",  \nline 1222:\n     sage: (1/5).is_norm(QuadraticField(5/4, 'a'), element=True)\nExpected:\n     (True, -1/5*a + 1/2)\nGot:\n     (True, 1/5*a - 1/2)\n```\n\nThe log is from a friend of mine who has it as well on x86 but it doesn't show up on his amd64 hardware. I cannot test on amd64 or OSX at the present time.",
+    "body": "Probably related, I got this on x86 with 4.7.alpha2\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/rational.pyx\n**********************************************************************\nFile  \n\"/storage/strogdon/gentoo/usr/share/sage/devel/sage-main/sage/rings/rational.pyx\",  \nline 1222:\n     sage: (1/5).is_norm(QuadraticField(5/4, 'a'), element=True)\nExpected:\n     (True, -1/5*a + 1/2)\nGot:\n     (True, 1/5*a - 1/2)\n```\nThe log is from a friend of mine who has it as well on x86 but it doesn't show up on his amd64 hardware. I cannot test on amd64 or OSX at the present time.",
     "created_at": "2011-03-05T05:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1549,7 +1533,6 @@ Expected:
 Got:
      (True, 1/5*a - 1/2)
 ```
-
 The log is from a friend of mine who has it as well on x86 but it doesn't show up on his amd64 hardware. I cannot test on amd64 or OSX at the present time.
 
 
@@ -1577,7 +1560,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_015533.json:
 ```json
 {
-    "body": "Replying to [comment:52 fbissey]:\n> Probably related, I got this on x86 with 4.7.alpha2\n\nGood to know this.  But keep in mind that sage-4.7.alpha2 has not been released (not even sage-4.7.alpha0).  In the future it would be better to test released versions with patches applied instead of unreleased versions.\n\nI will test this patch on a 32-bit system and see what needs to be fixed.",
+    "body": "Replying to [comment:52 fbissey]:\n> Probably related, I got this on x86 with 4.7.alpha2\n\n\nGood to know this.  But keep in mind that sage-4.7.alpha2 has not been released (not even sage-4.7.alpha0).  In the future it would be better to test released versions with patches applied instead of unreleased versions.\n\nI will test this patch on a 32-bit system and see what needs to be fixed.",
     "created_at": "2011-03-07T19:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1588,6 +1571,7 @@ archive/issue_comments_015533.json:
 
 Replying to [comment:52 fbissey]:
 > Probably related, I got this on x86 with 4.7.alpha2
+
 
 Good to know this.  But keep in mind that sage-4.7.alpha2 has not been released (not even sage-4.7.alpha0).  In the future it would be better to test released versions with patches applied instead of unreleased versions.
 
@@ -1638,7 +1622,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_015536.json:
 ```json
 {
-    "body": "I can confirm that the doctest now passes on a 32-bit build of sage-4.7.alpha1 on OpenSolaris 06/2009 (Intel Xeon chip)\n\n\n```\nsage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field.py\"\n\t [48.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 48.8 seconds\n```\n\n\nPrior to adding the 3 patches to sage-4.7.alpha1, I got. \n\n\n```\nFile \"/export/home/drkirkby/sage-4.7.alpha1/devel/sage-main/sage/rings/number_field/number_field.py\", line 3035:\n    sage: K.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\nExpected:\n    [2, a + 1, a]\nGot:\n    [2, a + 1, -a] \n```\n\n\n\nI don't know enough about the maths to understand what the patch does, so whilst it appears to fix the problems I see in sage-4.7.alpha1, I don't feel I should give this a positive review - it needs a mathematician to check it too. \n\nDave",
+    "body": "I can confirm that the doctest now passes on a 32-bit build of sage-4.7.alpha1 on OpenSolaris 06/2009 (Intel Xeon chip)\n\n```\nsage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field.py\"\n\t [48.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 48.8 seconds\n```\n\nPrior to adding the 3 patches to sage-4.7.alpha1, I got. \n\n```\nFile \"/export/home/drkirkby/sage-4.7.alpha1/devel/sage-main/sage/rings/number_field/number_field.py\", line 3035:\n    sage: K.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\nExpected:\n    [2, a + 1, a]\nGot:\n    [2, a + 1, -a] \n```\n\n\nI don't know enough about the maths to understand what the patch does, so whilst it appears to fix the problems I see in sage-4.7.alpha1, I don't feel I should give this a positive review - it needs a mathematician to check it too. \n\nDave",
     "created_at": "2011-03-11T22:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1649,7 +1633,6 @@ archive/issue_comments_015536.json:
 
 I can confirm that the doctest now passes on a 32-bit build of sage-4.7.alpha1 on OpenSolaris 06/2009 (Intel Xeon chip)
 
-
 ```
 sage -t -long -force_lib "devel/sage/sage/rings/number_field/number_field.py"
 	 [48.8 s]
@@ -1659,9 +1642,7 @@ All tests passed!
 Total time for all tests: 48.8 seconds
 ```
 
-
 Prior to adding the 3 patches to sage-4.7.alpha1, I got. 
-
 
 ```
 File "/export/home/drkirkby/sage-4.7.alpha1/devel/sage-main/sage/rings/number_field/number_field.py", line 3035:
@@ -1671,7 +1652,6 @@ Expected:
 Got:
     [2, a + 1, -a] 
 ```
-
 
 
 I don't know enough about the maths to understand what the patch does, so whilst it appears to fix the problems I see in sage-4.7.alpha1, I don't feel I should give this a positive review - it needs a mathematician to check it too. 
@@ -1703,7 +1683,7 @@ David, could you please test both *with* and *without* `-long`.
 archive/issue_comments_015538.json:
 ```json
 {
-    "body": "Replying to [comment:57 jdemeyer]:\n> David, could you please test both *with* and *without* `-long`.\nWith the patch applied, it is taking about 22 seconds *without* -long, and 46 seconds *with* -long. \n\nIf the patch is not applied, it fails *with* or *without* -long.",
+    "body": "Replying to [comment:57 jdemeyer]:\n> David, could you please test both *with* and *without* `-long`.\n\nWith the patch applied, it is taking about 22 seconds *without* -long, and 46 seconds *with* -long. \n\nIf the patch is not applied, it fails *with* or *without* -long.",
     "created_at": "2011-03-14T06:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1714,6 +1694,7 @@ archive/issue_comments_015538.json:
 
 Replying to [comment:57 jdemeyer]:
 > David, could you please test both *with* and *without* `-long`.
+
 With the patch applied, it is taking about 22 seconds *without* -long, and 46 seconds *with* -long. 
 
 If the patch is not applied, it fails *with* or *without* -long.
@@ -1725,7 +1706,7 @@ If the patch is not applied, it fails *with* or *without* -long.
 archive/issue_comments_015539.json:
 ```json
 {
-    "body": "> it needs a mathematician to check it too. \n\nLooks OK to me.",
+    "body": "> it needs a mathematician to check it too. \n\n\nLooks OK to me.",
     "created_at": "2011-03-14T14:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
@@ -1735,6 +1716,7 @@ archive/issue_comments_015539.json:
 ```
 
 > it needs a mathematician to check it too. 
+
 
 Looks OK to me.
 

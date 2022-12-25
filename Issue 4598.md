@@ -54,7 +54,7 @@ Changing status from new to assigned.
 archive/issue_comments_034409.json:
 ```json
 {
-    "body": "Without the patch:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha0$ hg status\n! sage/libs/gmp/__init__.py\n```\n\nWith the patch applied:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ hg stat\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ \n```\n",
+    "body": "Without the patch:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha0$ hg status\n! sage/libs/gmp/__init__.py\n```\nWith the patch applied:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ hg stat\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ \n```",
     "created_at": "2008-11-25T11:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4598",
     "type": "issue_comment",
@@ -69,14 +69,12 @@ Without the patch:
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha0$ hg status
 ! sage/libs/gmp/__init__.py
 ```
-
 With the patch applied:
 
 ```
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ hg stat
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/spkg/standard/sage-3.2.1.alpha00$ 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007318.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nIn Sage, `sagenb.misc.sphinxify.sphinxify` does\n\n```python\n    shutil.rmtree(confdir, ignore_errors=True)\n```\n\nafter running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,\n\n```sh\nprompt$> cd $SAGE_ROOT/devel/sage/\nprompt$> hg stat\n! doc/en/introspect/__init__.py\n! doc/en/introspect/conf.py\n! doc/en/introspect/static/empty\n! doc/en/introspect/templates/layout.html\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7318\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nIn Sage, `sagenb.misc.sphinxify.sphinxify` does\n\n```python\n    shutil.rmtree(confdir, ignore_errors=True)\n```\nafter running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,\n\n```sh\nprompt$> cd $SAGE_ROOT/devel/sage/\nprompt$> hg stat\n! doc/en/introspect/__init__.py\n! doc/en/introspect/conf.py\n! doc/en/introspect/static/empty\n! doc/en/introspect/templates/layout.html\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7318\n\n",
     "created_at": "2009-10-27T03:17:20Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ In Sage, `sagenb.misc.sphinxify.sphinxify` does
 ```python
     shutil.rmtree(confdir, ignore_errors=True)
 ```
-
 after running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,
 
 ```sh
@@ -37,7 +36,6 @@ prompt$> hg stat
 ! doc/en/introspect/static/empty
 ! doc/en/introspect/templates/layout.html
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7318

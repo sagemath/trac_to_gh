@@ -111,7 +111,7 @@ Separating the javascript into its own file sounds like a great idea to me. Thes
 archive/issue_comments_043223.json:
 ```json
 {
-    "body": "I've tried the patches in #4547 and #5211, and they seem to fix all the UTF-8 issues I had.\nI tried #2896, #1477, and #4956, with those applied but with*out* applying patches in this ticket. The result is:\n- #2896 and #1477 seem to be fixed AFAICT\n- #4956 is partially fixed, but not completely; applying the patches in current ticket doesn't seem to make any difference.\n\nTo reproduce the half of #4956 which is not fixed:\n\n1. enter \n\n```\nprint 'Teor&iacute;a de n&uacute;meros'\n```\n\n in a cell, and evaluate. You get back\n\n```\nTeor&iacute;a de n&uacute;meros\n```\n\n as expected.\n2. save and quit\n3. open the worksheet again\n4. now the cell reads\n\n```\nprint 'Teor\u00eda de n\u00fameros'\n```\n\n which is incorrect (the output is still the same, but it will change if inserting a cell before the cell in question using \"CTRL-ENTER\")\n\nI will be applying #4547 + #5211 in a live sage notebook (3.4), and will report back if I find more \"incorrect\" behaviour (I'm teaching sage in spanish! some accents are needed...). If there are specific issues which the patches in this ticket are supposed to fix which are not fixed by , I can test again.",
+    "body": "I've tried the patches in #4547 and #5211, and they seem to fix all the UTF-8 issues I had.\nI tried #2896, #1477, and #4956, with those applied but with*out* applying patches in this ticket. The result is:\n- #2896 and #1477 seem to be fixed AFAICT\n- #4956 is partially fixed, but not completely; applying the patches in current ticket doesn't seem to make any difference.\n\nTo reproduce the half of #4956 which is not fixed:\n\n1. enter \n\n```\nprint 'Teor&iacute;a de n&uacute;meros'\n```\n in a cell, and evaluate. You get back\n\n```\nTeor&iacute;a de n&uacute;meros\n```\n as expected.\n2. save and quit\n3. open the worksheet again\n4. now the cell reads\n\n```\nprint 'Teor\u00eda de n\u00fameros'\n```\n which is incorrect (the output is still the same, but it will change if inserting a cell before the cell in question using \"CTRL-ENTER\")\n\nI will be applying #4547 + #5211 in a live sage notebook (3.4), and will report back if I find more \"incorrect\" behaviour (I'm teaching sage in spanish! some accents are needed...). If there are specific issues which the patches in this ticket are supposed to fix which are not fixed by , I can test again.",
     "created_at": "2009-03-22T22:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
@@ -132,13 +132,11 @@ To reproduce the half of #4956 which is not fixed:
 ```
 print 'Teor&iacute;a de n&uacute;meros'
 ```
-
  in a cell, and evaluate. You get back
 
 ```
 Teor&iacute;a de n&uacute;meros
 ```
-
  as expected.
 2. save and quit
 3. open the worksheet again
@@ -147,7 +145,6 @@ Teor&iacute;a de n&uacute;meros
 ```
 print 'Teoría de números'
 ```
-
  which is incorrect (the output is still the same, but it will change if inserting a cell before the cell in question using "CTRL-ENTER")
 
 I will be applying #4547 + #5211 in a live sage notebook (3.4), and will report back if I find more "incorrect" behaviour (I'm teaching sage in spanish! some accents are needed...). If there are specific issues which the patches in this ticket are supposed to fix which are not fixed by , I can test again.

@@ -409,7 +409,7 @@ Updated patch (20090707)
 archive/issue_comments_051610.json:
 ```json
 {
-    "body": "Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by @rbeezer created at 2009-08-05 06:47:55\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
+    "body": "Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by @rbeezer created at 2009-08-05 06:47:55\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
     "created_at": "2009-08-05T06:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -426,12 +426,10 @@ Hi Sebastian,
 
 2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?
 
-
 ```
 for k in xrange(p): 
     F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))
 ```
-
 
 A few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?
 
@@ -470,7 +468,7 @@ Changing the summary in light of Rob's latest review.  It would be great to be a
 archive/issue_comments_051612.json:
 ```json
 {
-    "body": "Hi Sebastian,\nmy last remark might have been unclear, but look at this:\n\n```\ndef charpoly_divfree(M):\n\tn = M.ncols()\n\tR  = M.base_ring() \n\tS  = PolynomialRing(R, 'x') \n\n\tF = [ R(0) for i in xrange(n) ]\n\ta = [[R(0) for i in xrange(n)] for p in xrange(n-1)] \n\tA = [ R(0) for i in xrange(n) ]\n\n\tF[0] = - M[0, 0]\n\n\tfor t in xrange(1,n):\n\t\tfor i in xrange(t+1):\n\t\t\ta[0][i] = M[i, t]\n\t\tA[0] = M[t, t]\n\t\tfor p in xrange(1, t): \n\t\t\tapm=a[p-1]\n\t\t\tfor i in xrange(t+1): \n\t\t\t\ts = R(0) \n\t\t\t\tfor j in xrange(t+1): \n\t\t\t\t\ts += M[i, j] * apm[j] \n\t\t\t\ta[p][i] = s\n\t\t\tA[p] = a[p][t]\n\t\tatm=a[t-1]\n\t\tfor j in xrange(t+1):\n\t\t\tA[t] += M[t, j] * atm[j]\n\t\tfor p in xrange(t+1):\n\t\t\tfor k in xrange(p): \n\t\t\t\tF[p] -= A[k] * F[p-k-1]\n\t\t\tF[p] -= A[p]\n\n\tF.reverse()\n\tF.append(R(1))\n\treturn S(F)\n```\n\nthis works, with smaller F,A,a using n**2 memory instead of n**3...\n\nYann",
+    "body": "Hi Sebastian,\nmy last remark might have been unclear, but look at this:\n\n```\ndef charpoly_divfree(M):\n\tn = M.ncols()\n\tR  = M.base_ring() \n\tS  = PolynomialRing(R, 'x') \n\n\tF = [ R(0) for i in xrange(n) ]\n\ta = [[R(0) for i in xrange(n)] for p in xrange(n-1)] \n\tA = [ R(0) for i in xrange(n) ]\n\n\tF[0] = - M[0, 0]\n\n\tfor t in xrange(1,n):\n\t\tfor i in xrange(t+1):\n\t\t\ta[0][i] = M[i, t]\n\t\tA[0] = M[t, t]\n\t\tfor p in xrange(1, t): \n\t\t\tapm=a[p-1]\n\t\t\tfor i in xrange(t+1): \n\t\t\t\ts = R(0) \n\t\t\t\tfor j in xrange(t+1): \n\t\t\t\t\ts += M[i, j] * apm[j] \n\t\t\t\ta[p][i] = s\n\t\t\tA[p] = a[p][t]\n\t\tatm=a[t-1]\n\t\tfor j in xrange(t+1):\n\t\t\tA[t] += M[t, j] * atm[j]\n\t\tfor p in xrange(t+1):\n\t\t\tfor k in xrange(p): \n\t\t\t\tF[p] -= A[k] * F[p-k-1]\n\t\t\tF[p] -= A[p]\n\n\tF.reverse()\n\tF.append(R(1))\n\treturn S(F)\n```\nthis works, with smaller F,A,a using n**2 memory instead of n**3...\n\nYann",
     "created_at": "2009-08-16T10:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -518,7 +516,6 @@ def charpoly_divfree(M):
 	F.append(R(1))
 	return S(F)
 ```
-
 this works, with smaller F,A,a using n**2 memory instead of n**3...
 
 Yann
@@ -578,7 +575,7 @@ Sebastian
 archive/issue_comments_051615.json:
 ```json
 {
-    "body": "Replying to [comment:14 spancratz]:\n> This is only a brief note to let you know that I have read your comments, and that I should be able to work on this in the next few days.\n\nThanks, Sebastian.  Despite my slothfulness on this one, the more I look at it, the more I'm motivated to get into Sage sooner rather than later.\n\nSaw some good applications for this in Chris Godsil's graph theory talk today at the Univ of Washington - the slides just got posted on sage-devel and the wiki.\n\nRob",
+    "body": "Replying to [comment:14 spancratz]:\n> This is only a brief note to let you know that I have read your comments, and that I should be able to work on this in the next few days.\n\n\nThanks, Sebastian.  Despite my slothfulness on this one, the more I look at it, the more I'm motivated to get into Sage sooner rather than later.\n\nSaw some good applications for this in Chris Godsil's graph theory talk today at the Univ of Washington - the slides just got posted on sage-devel and the wiki.\n\nRob",
     "created_at": "2009-08-20T01:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -589,6 +586,7 @@ archive/issue_comments_051615.json:
 
 Replying to [comment:14 spancratz]:
 > This is only a brief note to let you know that I have read your comments, and that I should be able to work on this in the next few days.
+
 
 Thanks, Sebastian.  Despite my slothfulness on this one, the more I look at it, the more I'm motivated to get into Sage sooner rather than later.
 
@@ -723,7 +721,7 @@ Sebastian
 archive/issue_comments_051620.json:
 ```json
 {
-    "body": "Replying to [comment:18 spancratz]:\n> 2) I am still running SAGE 4.0.2.  I wouldn't know how to sensibly rebase the patch to 4.1.1.  I am sure this is far from elegant, but what I'd do is download the SAGE 4.1.1 source, build from that, and then go through applying all the changes by hand again, much like it did yesterday to separate the different kinds of changes.  Could you perhaps explain a more sensible way to do this?\n\nThis is (potentially) a little better than what you wrote above: build 4.1.1 (or get a binary for your particular architecture from sagemath.org), and try to apply your patch to it.  If your patch touches several files in the Sage library, some of them might get patched properly, while others might get rejected.  Mercurial will let you know about these, and save the pieces that it couldn't figure out as e.g. `matrix1.pyx.rej`.  It is then a matter of dealing with them manually, as you described above.\n\nIf the patch is not too bit-rotten, this is normally manageable.  Good luck, I'll be happy to see your code included.\n\nPS: I do think this qualifies as \"major\" so I changed the priority.",
+    "body": "Replying to [comment:18 spancratz]:\n> 2) I am still running SAGE 4.0.2.  I wouldn't know how to sensibly rebase the patch to 4.1.1.  I am sure this is far from elegant, but what I'd do is download the SAGE 4.1.1 source, build from that, and then go through applying all the changes by hand again, much like it did yesterday to separate the different kinds of changes.  Could you perhaps explain a more sensible way to do this?\n\n\nThis is (potentially) a little better than what you wrote above: build 4.1.1 (or get a binary for your particular architecture from sagemath.org), and try to apply your patch to it.  If your patch touches several files in the Sage library, some of them might get patched properly, while others might get rejected.  Mercurial will let you know about these, and save the pieces that it couldn't figure out as e.g. `matrix1.pyx.rej`.  It is then a matter of dealing with them manually, as you described above.\n\nIf the patch is not too bit-rotten, this is normally manageable.  Good luck, I'll be happy to see your code included.\n\nPS: I do think this qualifies as \"major\" so I changed the priority.",
     "created_at": "2009-08-22T10:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -734,6 +732,7 @@ archive/issue_comments_051620.json:
 
 Replying to [comment:18 spancratz]:
 > 2) I am still running SAGE 4.0.2.  I wouldn't know how to sensibly rebase the patch to 4.1.1.  I am sure this is far from elegant, but what I'd do is download the SAGE 4.1.1 source, build from that, and then go through applying all the changes by hand again, much like it did yesterday to separate the different kinds of changes.  Could you perhaps explain a more sensible way to do this?
+
 
 This is (potentially) a little better than what you wrote above: build 4.1.1 (or get a binary for your particular architecture from sagemath.org), and try to apply your patch to it.  If your patch touches several files in the Sage library, some of them might get patched properly, while others might get rejected.  Mercurial will let you know about these, and save the pieces that it couldn't figure out as e.g. `matrix1.pyx.rej`.  It is then a matter of dealing with them manually, as you described above.
 
@@ -942,7 +941,7 @@ Sebastian
 archive/issue_comments_051629.json:
 ```json
 {
-    "body": "Replying to [comment:25 spancratz]:\n> I don't know how that happened, I am sorry for that mistake.  I am working on it right now, but each time I am going through the process of setting up a clone of 4.1.1, making the changes, and then running make test and creating a patch, it takes a couple of hours on my laptop.  I should be able to attach new files later tonight.\n\nNo problem at all.  Just confused me temporarily.  ;-)\n\nI'll maybe check back tonight, which will be in the wee hours of the morning for you.  Otherwise, over the weekend.",
+    "body": "Replying to [comment:25 spancratz]:\n> I don't know how that happened, I am sorry for that mistake.  I am working on it right now, but each time I am going through the process of setting up a clone of 4.1.1, making the changes, and then running make test and creating a patch, it takes a couple of hours on my laptop.  I should be able to attach new files later tonight.\n\n\nNo problem at all.  Just confused me temporarily.  ;-)\n\nI'll maybe check back tonight, which will be in the wee hours of the morning for you.  Otherwise, over the weekend.",
     "created_at": "2009-08-27T19:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -953,6 +952,7 @@ archive/issue_comments_051629.json:
 
 Replying to [comment:25 spancratz]:
 > I don't know how that happened, I am sorry for that mistake.  I am working on it right now, but each time I am going through the process of setting up a clone of 4.1.1, making the changes, and then running make test and creating a patch, it takes a couple of hours on my laptop.  I should be able to attach new files later tonight.
+
 
 No problem at all.  Just confused me temporarily.  ;-)
 
@@ -1219,7 +1219,7 @@ Sebastian
 archive/issue_comments_051640.json:
 ```json
 {
-    "body": "I'm getting two hunk rejections when applying `trac_6441_a_rings.3.patch`:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6441/trac_6441_a_rings.3.patch && hg qpush\nadding trac_6441_a_rings.3.patch to series file\napplying trac_6441_a_rings.3.patch\npatching file sage/rings/ring.pyx\nHunk #1 FAILED at 402\nHunk #3 FAILED at 515\n2 out of 9 hunks FAILED -- saving rejects to file sage/rings/ring.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6441_a_rings.3.patch\n```\n\nThis ticket would have to wait until after Sage 4.1.2.alpha0 is released (easy option) or the three patches would need to be rebased now (hard option).",
+    "body": "I'm getting two hunk rejections when applying `trac_6441_a_rings.3.patch`:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6441/trac_6441_a_rings.3.patch && hg qpush\nadding trac_6441_a_rings.3.patch to series file\napplying trac_6441_a_rings.3.patch\npatching file sage/rings/ring.pyx\nHunk #1 FAILED at 402\nHunk #3 FAILED at 515\n2 out of 9 hunks FAILED -- saving rejects to file sage/rings/ring.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6441_a_rings.3.patch\n```\nThis ticket would have to wait until after Sage 4.1.2.alpha0 is released (easy option) or the three patches would need to be rebased now (hard option).",
     "created_at": "2009-09-02T05:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1242,7 +1242,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_6441_a_rings.3.patch
 ```
-
 This ticket would have to wait until after Sage 4.1.2.alpha0 is released (easy option) or the three patches would need to be rebased now (hard option).
 
 
@@ -1274,7 +1273,7 @@ Sebastian
 archive/issue_comments_051642.json:
 ```json
 {
-    "body": "Replying to [comment:33 spancratz]:\n> Which version would it have to be rebased for?  The above patches worked fine on my installation (SAGE 4.1.1, release date 2009-08-14, build from source).\nI can confirm that the patches apply without problems on Sage 4.1.1.\n\n\n\n> If you think the version of sage/rings.ring.pyx that the patch needs to be rebased for is \"stable\" in some suitable sense, I'd be happy to rebase it now as it only concerns two hunks.  Otherwise, I don't mind.\nI got the hunk failures because I first applied the patches at #6531 and #6850 prior to applying the patches on this ticket. The patches at #6531 and #6850 substantially modify the module `sage/rings/ring.pyx` and the patch `trac_6441_a_rings.3.patch` also adds more stuff to that module. An easy way to resolve dependencies is to wait for Sage 4.1.2.alpha0 to come out and then rebase your patches against that version. Or you can try to first apply the patches at #6531 and #6850, then rebase your patches on top of those.",
+    "body": "Replying to [comment:33 spancratz]:\n> Which version would it have to be rebased for?  The above patches worked fine on my installation (SAGE 4.1.1, release date 2009-08-14, build from source).\n\nI can confirm that the patches apply without problems on Sage 4.1.1.\n\n\n\n> If you think the version of sage/rings.ring.pyx that the patch needs to be rebased for is \"stable\" in some suitable sense, I'd be happy to rebase it now as it only concerns two hunks.  Otherwise, I don't mind.\n\nI got the hunk failures because I first applied the patches at #6531 and #6850 prior to applying the patches on this ticket. The patches at #6531 and #6850 substantially modify the module `sage/rings/ring.pyx` and the patch `trac_6441_a_rings.3.patch` also adds more stuff to that module. An easy way to resolve dependencies is to wait for Sage 4.1.2.alpha0 to come out and then rebase your patches against that version. Or you can try to first apply the patches at #6531 and #6850, then rebase your patches on top of those.",
     "created_at": "2009-09-02T14:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1285,11 +1284,13 @@ archive/issue_comments_051642.json:
 
 Replying to [comment:33 spancratz]:
 > Which version would it have to be rebased for?  The above patches worked fine on my installation (SAGE 4.1.1, release date 2009-08-14, build from source).
+
 I can confirm that the patches apply without problems on Sage 4.1.1.
 
 
 
 > If you think the version of sage/rings.ring.pyx that the patch needs to be rebased for is "stable" in some suitable sense, I'd be happy to rebase it now as it only concerns two hunks.  Otherwise, I don't mind.
+
 I got the hunk failures because I first applied the patches at #6531 and #6850 prior to applying the patches on this ticket. The patches at #6531 and #6850 substantially modify the module `sage/rings/ring.pyx` and the patch `trac_6441_a_rings.3.patch` also adds more stuff to that module. An easy way to resolve dependencies is to wait for Sage 4.1.2.alpha0 to come out and then rebase your patches against that version. Or you can try to first apply the patches at #6531 and #6850, then rebase your patches on top of those.
 
 
@@ -1357,7 +1358,7 @@ archive/issue_comments_051645.json:
 archive/issue_comments_051646.json:
 ```json
 {
-    "body": "Attachment [trac_6441_b_df_charpoly_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_rebase.patch) by mvngu created at 2009-09-03 22:27:50\n\nApplying the patches `trac_6441_a_rings_rebase.patch` and `trac_6441_b_df_charpoly_rebase.patch` results in some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 122:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).sha().an_numerical(prec=10, proof=False) # long time -- about 30 seconds.\nExpected:\n    1.0\nGot:\n    0.95\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sha_tate.py\n\t [189.8 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2008:\n    sage: EllipticCurve([1, -1, 0, -79, 289]).regulator()  # long time (seconds)\nExpected:\n    1.50434488827528\nGot:\n    1.50434488827530\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2010:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.790527570131...\nGot:\n    14.7905275701307\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_36\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_ell_rational_field.py\n\t [200.7 s]\n```\n\nThis is a known failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_twist.py\n\t [30.6 s]\n```\n",
+    "body": "Attachment [trac_6441_b_df_charpoly_rebase.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly_rebase.patch) by mvngu created at 2009-09-03 22:27:50\n\nApplying the patches `trac_6441_a_rings_rebase.patch` and `trac_6441_b_df_charpoly_rebase.patch` results in some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 122:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).sha().an_numerical(prec=10, proof=False) # long time -- about 30 seconds.\nExpected:\n    1.0\nGot:\n    0.95\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sha_tate.py\n\t [189.8 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2008:\n    sage: EllipticCurve([1, -1, 0, -79, 289]).regulator()  # long time (seconds)\nExpected:\n    1.50434488827528\nGot:\n    1.50434488827530\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2010:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.790527570131...\nGot:\n    14.7905275701307\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_36\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_ell_rational_field.py\n\t [200.7 s]\n```\nThis is a known failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_twist.py\n\t [30.6 s]\n```",
     "created_at": "2009-09-03T22:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1410,7 +1411,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_ell_rational_field.py
 	 [200.7 s]
 ```
-
 This is a known failure:
 
 ```
@@ -1472,7 +1472,6 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.docte
 
 
 
-
 ---
 
 archive/issue_comments_051647.json:
@@ -1526,7 +1525,7 @@ Sebastian
 archive/issue_comments_051649.json:
 ```json
 {
-    "body": "Replying to [comment:38 spancratz]:\n> I hadn't even heard about the \"-long\" tests.\n\nSorry, my fault.  First time it got me as well.\n\n> I take it I only need to look at the first few problems and not the known failures, right?\n\nYes, you can expect those other failures, but they are not yours to deal with.\n\n> I've already checked that they definitely are \"just\" numerical noise, running the methods in question with the parameter \"prec\" in {10,20,30} gave answers 0.95, 1.0001, 0.99999994, respectively.  However, I think the right way to fix this is not to change the doctests, but to pass the parameter algorithm=\"hessenberg\" at the appropriate place to ensure that the behaviour isn't changed.  I'll look into this probably tomorrow.\n\nSounds good.\n\nRob",
+    "body": "Replying to [comment:38 spancratz]:\n> I hadn't even heard about the \"-long\" tests.\n\n\nSorry, my fault.  First time it got me as well.\n\n> I take it I only need to look at the first few problems and not the known failures, right?\n\n\nYes, you can expect those other failures, but they are not yours to deal with.\n\n> I've already checked that they definitely are \"just\" numerical noise, running the methods in question with the parameter \"prec\" in {10,20,30} gave answers 0.95, 1.0001, 0.99999994, respectively.  However, I think the right way to fix this is not to change the doctests, but to pass the parameter algorithm=\"hessenberg\" at the appropriate place to ensure that the behaviour isn't changed.  I'll look into this probably tomorrow.\n\n\nSounds good.\n\nRob",
     "created_at": "2009-09-04T14:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
@@ -1538,13 +1537,16 @@ archive/issue_comments_051649.json:
 Replying to [comment:38 spancratz]:
 > I hadn't even heard about the "-long" tests.
 
+
 Sorry, my fault.  First time it got me as well.
 
 > I take it I only need to look at the first few problems and not the known failures, right?
 
+
 Yes, you can expect those other failures, but they are not yours to deal with.
 
 > I've already checked that they definitely are "just" numerical noise, running the methods in question with the parameter "prec" in {10,20,30} gave answers 0.95, 1.0001, 0.99999994, respectively.  However, I think the right way to fix this is not to change the doctests, but to pass the parameter algorithm="hessenberg" at the appropriate place to ensure that the behaviour isn't changed.  I'll look into this probably tomorrow.
+
 
 Sounds good.
 

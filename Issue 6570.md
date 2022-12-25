@@ -3,7 +3,7 @@
 archive/issues_006570.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=random_matrix(ZZ,4)\nsage: a[1,1.5]  \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4772)()\n    837             else:\n    838                 if not PyIndex_Check(col_index):\n--> 839                     raise TypeError, \"index must be an integer\"\n    840                 col = col_index\n    841                 if col < 0:\n\nTypeError: index must be an integer\nsage: a[1.5,1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4487)()\n    811             else:\n    812                 if not PyIndex_Check(row_index):\n--> 813                     raise TypeError, \"index must be an integer\"\n    814                 row = row_index\n    815                 if row < 0:\n\nTypeError: index must be an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6570\n\n",
+    "body": "Assignee: @williamstein\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=random_matrix(ZZ,4)\nsage: a[1,1.5]  \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4772)()\n    837             else:\n    838                 if not PyIndex_Check(col_index):\n--> 839                     raise TypeError, \"index must be an integer\"\n    840                 col = col_index\n    841                 if col < 0:\n\nTypeError: index must be an integer\nsage: a[1.5,1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4487)()\n    811             else:\n    812                 if not PyIndex_Check(row_index):\n--> 813                     raise TypeError, \"index must be an integer\"\n    814                 row = row_index\n    815                 if row < 0:\n\nTypeError: index must be an integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6570\n\n",
     "created_at": "2009-07-20T14:05:39Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_006570.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 ----------------------------------------------------------------------
@@ -53,7 +52,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: index must be an integer
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6570
 

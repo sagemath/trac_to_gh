@@ -3,7 +3,7 @@
 archive/issues_000582.json:
 ```json
 {
-    "body": "Assignee: wdj or Robert Bradshaw\n\nAgain, a confusing error message. If group elements are allowed \nas arguments, what syntax should be used? Square bracketed list\nof tuples? This element [(1,2)] is not in the Rubik's cube group, so \nshouldn't the error be something other than\n`'list' object has no attribute 'strip'` ?\n\n\n\n```\nsage: C = RubiksCube().move([(1,2)])\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, g)\n  1090     def move(self, g):\n  1091         if not g in self._group:\n-> 1092             g = self._group.move(g)[0]\n  1093         return RubiksCube(self._state * g, self._history +\n[g], self.colors)\n  1094\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, mv)\n   730\n   731         \"\"\"\n--> 732         mv = mv.strip().replace(\" \",\"*\").replace(\"**\",\n\"*\").replace(\"'\", \"^(-1)\")\n   733         m = mv.split(\"*\")\n   734         M = [x.split(\"^\") for x in m]\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'strip'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/582\n\n",
+    "body": "Assignee: wdj or Robert Bradshaw\n\nAgain, a confusing error message. If group elements are allowed \nas arguments, what syntax should be used? Square bracketed list\nof tuples? This element [(1,2)] is not in the Rubik's cube group, so \nshouldn't the error be something other than\n`'list' object has no attribute 'strip'` ?\n\n\n```\nsage: C = RubiksCube().move([(1,2)])\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, g)\n  1090     def move(self, g):\n  1091         if not g in self._group:\n-> 1092             g = self._group.move(g)[0]\n  1093         return RubiksCube(self._state * g, self._history +\n[g], self.colors)\n  1094\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, mv)\n   730\n   731         \"\"\"\n--> 732         mv = mv.strip().replace(\" \",\"*\").replace(\"**\",\n\"*\").replace(\"'\", \"^(-1)\")\n   733         m = mv.split(\"*\")\n   734         M = [x.split(\"^\") for x in m]\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'strip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/582\n\n",
     "created_at": "2007-09-03T16:43:37Z",
     "labels": [
         "component: combinatorics",
@@ -23,7 +23,6 @@ as arguments, what syntax should be used? Square bracketed list
 of tuples? This element [(1,2)] is not in the Rubik's cube group, so 
 shouldn't the error be something other than
 `'list' object has no attribute 'strip'` ?
-
 
 
 ```
@@ -53,7 +52,6 @@ in move(self, mv)
 
 <type 'exceptions.AttributeError'>: 'list' object has no attribute 'strip'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/582

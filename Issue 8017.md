@@ -3,7 +3,7 @@
 archive/issues_008017.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n```\n\n\nFollowup to and depends on #5107, which documents the function better. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8017\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n```\n\nFollowup to and depends on #5107, which documents the function better. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8017\n\n",
     "created_at": "2010-01-21T00:12:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,12 +20,10 @@ Assignee: @aghitza
 
 CC:  @williamstein
 
-
 ```
 continued_fraction(sqrt(2))
 [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]
 ```
-
 
 Followup to and depends on #5107, which documents the function better. 
 
@@ -94,7 +92,7 @@ This does change the definition from "continued fraction expansion of a real app
 archive/issue_comments_069928.json:
 ```json
 {
-    "body": "Robert, this seems to be great work! However a small question: for *exact* symbolic input,\nthe truncated continued fraction should not depend on the initial floating-point\napproximation, and should be a truncation of the (finite or infinite) continued fraction:\n\n```\nsage: continued_fraction(22/7,bits=4)\n[3, 4]\nsage: continued_fraction(22/7,bits=5)\n[3, 8]\n```\n\nI guess the above should give instead:\n\n```\nsage: continued_fraction(RealIntervalField(4)(22/7))\n[3]\nsage: continued_fraction(RealIntervalField(5)(22/7))\n[3]\n```\n\nCan the same problem happen with say sqrt(2), or is it only for rationals?",
+    "body": "Robert, this seems to be great work! However a small question: for *exact* symbolic input,\nthe truncated continued fraction should not depend on the initial floating-point\napproximation, and should be a truncation of the (finite or infinite) continued fraction:\n\n```\nsage: continued_fraction(22/7,bits=4)\n[3, 4]\nsage: continued_fraction(22/7,bits=5)\n[3, 8]\n```\nI guess the above should give instead:\n\n```\nsage: continued_fraction(RealIntervalField(4)(22/7))\n[3]\nsage: continued_fraction(RealIntervalField(5)(22/7))\n[3]\n```\nCan the same problem happen with say sqrt(2), or is it only for rationals?",
     "created_at": "2010-03-14T20:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -113,7 +111,6 @@ sage: continued_fraction(22/7,bits=4)
 sage: continued_fraction(22/7,bits=5)
 [3, 8]
 ```
-
 I guess the above should give instead:
 
 ```
@@ -122,7 +119,6 @@ sage: continued_fraction(RealIntervalField(4)(22/7))
 sage: continued_fraction(RealIntervalField(5)(22/7))
 [3]
 ```
-
 Can the same problem happen with say sqrt(2), or is it only for rationals?
 
 
@@ -204,7 +200,7 @@ Thank you for looking at this. As you can probably tell, the current behavior re
 archive/issue_comments_069933.json:
 ```json
 {
-    "body": "while I'm running the doctests, a few comments: (1) maybe the documentation should say that the\nterms of the truncated continued fraction are (now) guaranteed exact (using interval arithmetic);\n(2) `If nterms is given, the precision is increased until the specified number of terms can be computed`: if possible, for example 22/7 will give only two terms.\n\nI also suggest giving an additional example showing that we can give as input a floating-point\ninterval, and the difference with a floating-point number (where initial rounding error can\ngive an incorrect result):\n\n```\nsage: continued_fraction(RealField(39)(e))\n[2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10, 2]\nsage: continued_fraction(RealIntervalField(39)(e))\n[2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10]\n```\n\n\nIn the meantime the doctests finished, and I get two failures:\n\n```\nsage -t  core2/devel/sage-8017/sage/combinat/words/word_generators.py # 1 doctests failed\nsage -t  core2/devel/sage-8017/sage/tests/book_stein_ent.py # 13 doctests failed\n```\n",
+    "body": "while I'm running the doctests, a few comments: (1) maybe the documentation should say that the\nterms of the truncated continued fraction are (now) guaranteed exact (using interval arithmetic);\n(2) `If nterms is given, the precision is increased until the specified number of terms can be computed`: if possible, for example 22/7 will give only two terms.\n\nI also suggest giving an additional example showing that we can give as input a floating-point\ninterval, and the difference with a floating-point number (where initial rounding error can\ngive an incorrect result):\n\n```\nsage: continued_fraction(RealField(39)(e))\n[2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10, 2]\nsage: continued_fraction(RealIntervalField(39)(e))\n[2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10]\n```\n\nIn the meantime the doctests finished, and I get two failures:\n\n```\nsage -t  core2/devel/sage-8017/sage/combinat/words/word_generators.py # 1 doctests failed\nsage -t  core2/devel/sage-8017/sage/tests/book_stein_ent.py # 13 doctests failed\n```",
     "created_at": "2010-03-16T07:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
@@ -228,14 +224,12 @@ sage: continued_fraction(RealIntervalField(39)(e))
 [2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10]
 ```
 
-
 In the meantime the doctests finished, and I get two failures:
 
 ```
 sage -t  core2/devel/sage-8017/sage/combinat/words/word_generators.py # 1 doctests failed
 sage -t  core2/devel/sage-8017/sage/tests/book_stein_ent.py # 13 doctests failed
 ```
-
 
 
 

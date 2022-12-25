@@ -104,7 +104,7 @@ Changing status from new to assigned.
 archive/issue_comments_015679.json:
 ```json
 {
-    "body": "A few comments:\n\n1) Other than an unknown parent message, this applies cleanly against 2.10.3.alpha0\n\n2) I can't get the server/simple/twisted.py tests to pass.  The following error causes all the problems:\n\n\n```\n IOError: [Errno url error] unknown url type: 'https'\n```\n\n\nOther than that, this patch looks excellent!",
+    "body": "A few comments:\n\n1) Other than an unknown parent message, this applies cleanly against 2.10.3.alpha0\n\n2) I can't get the server/simple/twisted.py tests to pass.  The following error causes all the problems:\n\n```\n IOError: [Errno url error] unknown url type: 'https'\n```\n\nOther than that, this patch looks excellent!",
     "created_at": "2008-02-28T09:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
@@ -119,11 +119,9 @@ A few comments:
 
 2) I can't get the server/simple/twisted.py tests to pass.  The following error causes all the problems:
 
-
 ```
  IOError: [Errno url error] unknown url type: 'https'
 ```
-
 
 Other than that, this patch looks excellent!
 

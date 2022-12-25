@@ -3,7 +3,7 @@
 archive/issues_007982.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nThe fortran-20071120.p9.spkg does not build well on Open Solaris 64 bit. It defaults to 32 bit.\n\nWhat is the way to go?\n\n1) try to build g95 from src\n\nor \n\n2) export SAGE_FORTRAN='path to gfortran'\n   export SAGE_FORTAN_LIB='path to lib/amd64/libfortran.so\n\nI all cases there must be a way to inserting the compiler option -m64\nin sage_fortran.\n\nFor now I went for 2) and edited the file by hand.\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@\n\n```\n\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7982\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nThe fortran-20071120.p9.spkg does not build well on Open Solaris 64 bit. It defaults to 32 bit.\n\nWhat is the way to go?\n\n1) try to build g95 from src\n\nor \n\n2) export SAGE_FORTRAN='path to gfortran'\n   export SAGE_FORTAN_LIB='path to lib/amd64/libfortran.so\n\nI all cases there must be a way to inserting the compiler option -m64\nin sage_fortran.\n\nFor now I went for 2) and edited the file by hand.\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7982\n\n",
     "created_at": "2010-01-18T19:14:43Z",
     "labels": [
         "component: porting",
@@ -36,7 +36,6 @@ in sage_fortran.
 
 For now I went for 2) and edited the file by hand.
 
-
 ```
 jaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran 
 #!/bin/sh 
@@ -44,7 +43,6 @@ jaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran
 /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@
 
 ```
-
 
 
 Jaap
@@ -170,7 +168,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069567.json:
 ```json
 {
-    "body": "This is not working correctly. It is copying a 32-bit version of the Fortran libary to SAGE_ROOT/local/lib \n\nFirst, I delete any library, and set SAGE_FORTRAN_LIB correctly:\n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ rm local/lib/libgfortran.so\nrm: local/lib/libgfortran.so: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libgfortran.so\n```\n\n\nNow install the package\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ ./sage -f fortran-20100118.p0\nForce installing fortran-20100118.p0\nCalling sage-spkg on fortran-20100118.p0\n<SNIP>\nSuccessfully installed fortran-20100118.p0\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.3.1/spkg/build/fortran-20100118.p0\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing fortran-20100118.p0.spkg\n```\n\n\nIt claims to have built, yet there is still a 32-bit library copied. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgfortran.so\nlocal/lib/libgfortran.so:\tELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped\n```\n\nThere is no 64-bit version in any of the subdirectories either, though it needs to be put in local/lib. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/64/libgfortran.so\nlocal/lib/64/libgfortran.so:\tcannot open: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/amd64/libgfortran.so\nlocal/lib/amd64/libgfortran.so:\tcannot open: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ \n```\n\n\nI forget what the command is, but I send it to you the other day, which will allow the correct directory to be determined. It will return one of sparcv9 or amd64, though I would suggest not hard-coding them, as that might change in future. In particular on SPARC. \n\nPS, when you fix this, update SPKG.txt to have the correct trac number (#7982) against the entry. \nDave",
+    "body": "This is not working correctly. It is copying a 32-bit version of the Fortran libary to SAGE_ROOT/local/lib \n\nFirst, I delete any library, and set SAGE_FORTRAN_LIB correctly:\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ rm local/lib/libgfortran.so\nrm: local/lib/libgfortran.so: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libgfortran.so\n```\n\nNow install the package\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ ./sage -f fortran-20100118.p0\nForce installing fortran-20100118.p0\nCalling sage-spkg on fortran-20100118.p0\n<SNIP>\nSuccessfully installed fortran-20100118.p0\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.3.1/spkg/build/fortran-20100118.p0\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing fortran-20100118.p0.spkg\n```\n\nIt claims to have built, yet there is still a 32-bit library copied. \n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgfortran.so\nlocal/lib/libgfortran.so:\tELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped\n```\nThere is no 64-bit version in any of the subdirectories either, though it needs to be put in local/lib. \n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/64/libgfortran.so\nlocal/lib/64/libgfortran.so:\tcannot open: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/amd64/libgfortran.so\nlocal/lib/amd64/libgfortran.so:\tcannot open: No such file or directory\ndrkirkby@hawk:~/sage-4.3.1$ \n```\n\nI forget what the command is, but I send it to you the other day, which will allow the correct directory to be determined. It will return one of sparcv9 or amd64, though I would suggest not hard-coding them, as that might change in future. In particular on SPARC. \n\nPS, when you fix this, update SPKG.txt to have the correct trac number (#7982) against the entry. \nDave",
     "created_at": "2010-01-27T16:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -183,13 +181,11 @@ This is not working correctly. It is copying a 32-bit version of the Fortran lib
 
 First, I delete any library, and set SAGE_FORTRAN_LIB correctly:
 
-
 ```
 drkirkby@hawk:~/sage-4.3.1$ rm local/lib/libgfortran.so
 rm: local/lib/libgfortran.so: No such file or directory
 drkirkby@hawk:~/sage-4.3.1$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libgfortran.so
 ```
-
 
 Now install the package
 
@@ -207,17 +203,13 @@ Making script relocatable
 Finished installing fortran-20100118.p0.spkg
 ```
 
-
 It claims to have built, yet there is still a 32-bit library copied. 
-
 
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgfortran.so
 local/lib/libgfortran.so:	ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped
 ```
-
 There is no 64-bit version in any of the subdirectories either, though it needs to be put in local/lib. 
-
 
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/64/libgfortran.so
@@ -226,7 +218,6 @@ drkirkby@hawk:~/sage-4.3.1$ file local/lib/amd64/libgfortran.so
 local/lib/amd64/libgfortran.so:	cannot open: No such file or directory
 drkirkby@hawk:~/sage-4.3.1$ 
 ```
-
 
 I forget what the command is, but I send it to you the other day, which will allow the correct directory to be determined. It will return one of sparcv9 or amd64, though I would suggest not hard-coding them, as that might change in future. In particular on SPARC. 
 
@@ -276,7 +267,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069570.json:
 ```json
 {
-    "body": "Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by @jaapspies created at 2010-02-22 23:23:30\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nAnd on hawk:\n\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\n\nJaap",
+    "body": "Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by @jaapspies created at 2010-02-22 23:23:30\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\nAnd on hawk:\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\nJaap",
     "created_at": "2010-02-22T23:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -292,7 +283,6 @@ Made a new spkg:
 [http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)
 
 
-
 ```
 jaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran 
 #!/bin/sh 
@@ -301,9 +291,7 @@ jaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran
 
 ```
 
-
 And on hawk:
-
 
 ```
 -bash-3.2$ file local/lib/*fortran*
@@ -311,7 +299,6 @@ local/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dyna
 -bash-3.2$ 
 
 ```
-
 
 Jaap
 
@@ -365,7 +352,7 @@ http://boxen.math.washington.edu/home/kirkby/patches/fortran-20100523.spkg
 archive/issue_comments_069573.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> Your package works fine, so I would give it positive review. However, since you produced this, sage_fortran has been updated, so I created a new .spkg and put it here\n> \n> \n> http://boxen.math.washington.edu/home/kirkby/patches/fortran-20100523.spkg\n> \n\nOk, as we are both mentioned as author, we need to find a reviewer :)\n\nJaap",
+    "body": "Replying to [comment:8 drkirkby]:\n> Your package works fine, so I would give it positive review. However, since you produced this, sage_fortran has been updated, so I created a new .spkg and put it here\n> \n> \n> http://boxen.math.washington.edu/home/kirkby/patches/fortran-20100523.spkg\n> \n\n\nOk, as we are both mentioned as author, we need to find a reviewer :)\n\nJaap",
     "created_at": "2010-06-07T16:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -380,6 +367,7 @@ Replying to [comment:8 drkirkby]:
 > 
 > http://boxen.math.washington.edu/home/kirkby/patches/fortran-20100523.spkg
 > 
+
 
 Ok, as we are both mentioned as author, we need to find a reviewer :)
 
@@ -496,7 +484,7 @@ Resolution: fixed
 archive/issue_comments_069578.json:
 ```json
 {
-    "body": "I noticed a problem with the updated `spkg-install` on t2.  If `SAGE64` is not set to `\"yes\"`, I get\n\n```sh\n$ cat local/bin/sage_fortran\n#!/bin/sh \n\n\n```\n",
+    "body": "I noticed a problem with the updated `spkg-install` on t2.  If `SAGE64` is not set to `\"yes\"`, I get\n\n```sh\n$ cat local/bin/sage_fortran\n#!/bin/sh \n\n\n```",
     "created_at": "2010-06-26T07:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -516,13 +504,12 @@ $ cat local/bin/sage_fortran
 
 
 
-
 ---
 
 archive/issue_comments_069579.json:
 ```json
 {
-    "body": "The following seems to work\n\n```python\n    if OS == \"sunos\" and os.environ.get(\"SAGE64\") == \"yes\":\n            f.write(\"%s -m64 -fPIC $@\"%name)\n    else:\n        f.write(\"%s -fPIC $@\"%name)\n\n```\n\nbut I have not tested it with `SAGE64=\"yes\"`.",
+    "body": "The following seems to work\n\n```python\n    if OS == \"sunos\" and os.environ.get(\"SAGE64\") == \"yes\":\n            f.write(\"%s -m64 -fPIC $@\"%name)\n    else:\n        f.write(\"%s -fPIC $@\"%name)\n\n```\nbut I have not tested it with `SAGE64=\"yes\"`.",
     "created_at": "2010-06-26T07:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -540,7 +527,6 @@ The following seems to work
         f.write("%s -fPIC $@"%name)
 
 ```
-
 but I have not tested it with `SAGE64="yes"`.
 
 
@@ -550,7 +536,7 @@ but I have not tested it with `SAGE64="yes"`.
 archive/issue_comments_069580.json:
 ```json
 {
-    "body": "That does work with SAGE64=yes. \n\ndrkirkby`@`hawk:~/2/sage-4.5.alpha0$ cat local/bin/sage_fortran\n\n\n```/bin/sh \n\n/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@\n```\n\n\nAfter that, if I try to build lapack, the object files it creates are 64-bit\n\n./spkg/build/lapack-20071123.p1/src/SRC/shseqr.o:\tELF 64-bit LSB relocatable AMD64 Version 1",
+    "body": "That does work with SAGE64=yes. \n\ndrkirkby`@`hawk:~/2/sage-4.5.alpha0$ cat local/bin/sage_fortran\n\n```/bin/sh \n\n/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@\n```\n\nAfter that, if I try to build lapack, the object files it creates are 64-bit\n\n./spkg/build/lapack-20071123.p1/src/SRC/shseqr.o:\tELF 64-bit LSB relocatable AMD64 Version 1",
     "created_at": "2010-06-26T09:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -563,12 +549,10 @@ That does work with SAGE64=yes.
 
 drkirkby`@`hawk:~/2/sage-4.5.alpha0$ cat local/bin/sage_fortran
 
-
 ```/bin/sh 
 
 /usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@
 ```
-
 
 After that, if I try to build lapack, the object files it creates are 64-bit
 
@@ -581,7 +565,7 @@ After that, if I try to build lapack, the object files it creates are 64-bit
 archive/issue_comments_069581.json:
 ```json
 {
-    "body": "Replying to [comment:14 mpatel]:\n> I noticed a problem with the updated `spkg-install` on t2.  If `SAGE64` is not set to `\"yes\"`, I get\n> {{{\n> #!sh\n> $ cat local/bin/sage_fortran\n> #!/bin/sh \n> \n> \n> }}}\n\nI've created #9346 to address this issue, which is quite serious as it totally breaks Sage on Solaris. \n\nDo you want to create the patch and I review it? If you don't have time, I can create it and get someone else to review it. \n\nDave",
+    "body": "Replying to [comment:14 mpatel]:\n> I noticed a problem with the updated `spkg-install` on t2.  If `SAGE64` is not set to `\"yes\"`, I get\n> \n> ```\n> #!sh\n> $ cat local/bin/sage_fortran\n> #!/bin/sh \n> \n> \n> ```\n\n\nI've created #9346 to address this issue, which is quite serious as it totally breaks Sage on Solaris. \n\nDo you want to create the patch and I review it? If you don't have time, I can create it and get someone else to review it. \n\nDave",
     "created_at": "2010-06-26T18:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
@@ -592,13 +576,15 @@ archive/issue_comments_069581.json:
 
 Replying to [comment:14 mpatel]:
 > I noticed a problem with the updated `spkg-install` on t2.  If `SAGE64` is not set to `"yes"`, I get
-> {{{
+> 
+> ```
 > #!sh
 > $ cat local/bin/sage_fortran
 > #!/bin/sh 
 > 
 > 
-> }}}
+> ```
+
 
 I've created #9346 to address this issue, which is quite serious as it totally breaks Sage on Solaris. 
 

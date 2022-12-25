@@ -122,7 +122,7 @@ http://sage.math.washington.edu/home/boothby/SPKG/2.10.4/eclib-20080310.spkg
 archive/issue_comments_016454.json:
 ```json
 {
-    "body": "I tried installing this with 'sage -i' and got the following error:\n\n\n```\neclib-20080127.p1/src/g0n/nfd.cc\neclib-20080127.p1/src/g0n/nflist.cc\neclib-20080127.p1/src/g0n/nftest.out\neclib-20080127.p1/src/g0n/nftest.in\neclib-20080127.p1/src/g0n/documentation.txt\neclib-20080127.p1/src/Makefile.dynamic\neclib-20080127.p1/src/lib/\nFinished extraction\nsage: After decompressing the directory eclib-20080310 does not exist\nThis means that the corresponding .spkg needs to be downloaded\nagain.\nhttp://www.sagemath.org//packages/optional/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/standard/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/experimental/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/archive/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nUnable to download eclib-20080310\nPlease see http://www.sagemath.org//packages for a list of valid packages\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/spkg/build\nbunzip2: Can't open input file eclib-20080310.spkg: No such file or directory.\ntar: eclib-20080310.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\n```\n",
+    "body": "I tried installing this with 'sage -i' and got the following error:\n\n```\neclib-20080127.p1/src/g0n/nfd.cc\neclib-20080127.p1/src/g0n/nflist.cc\neclib-20080127.p1/src/g0n/nftest.out\neclib-20080127.p1/src/g0n/nftest.in\neclib-20080127.p1/src/g0n/documentation.txt\neclib-20080127.p1/src/Makefile.dynamic\neclib-20080127.p1/src/lib/\nFinished extraction\nsage: After decompressing the directory eclib-20080310 does not exist\nThis means that the corresponding .spkg needs to be downloaded\nagain.\nhttp://www.sagemath.org//packages/optional/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/standard/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/experimental/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nhttp://www.sagemath.org//packages/archive/eclib-20080310.spkg --> eclib-20080310.spkg\n[.]\nUnable to download eclib-20080310\nPlease see http://www.sagemath.org//packages for a list of valid packages\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/spkg/build\nbunzip2: Can't open input file eclib-20080310.spkg: No such file or directory.\ntar: eclib-20080310.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\n```",
     "created_at": "2008-03-15T21:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2437",
     "type": "issue_comment",
@@ -132,7 +132,6 @@ archive/issue_comments_016454.json:
 ```
 
 I tried installing this with 'sage -i' and got the following error:
-
 
 ```
 eclib-20080127.p1/src/g0n/nfd.cc
@@ -162,7 +161,6 @@ tar: eclib-20080310.spkg: Cannot open: No such file or directory
 tar: Error is not recoverable: exiting now
 Second download resulted in a corrupted package.
 ```
-
 
 
 

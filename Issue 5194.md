@@ -352,7 +352,7 @@ archive/issue_events_012024.json:
 archive/issue_comments_039746.json:
 ```json
 {
-    "body": "Ok, according to the doctesting this is the problem:\n\n```\n    '<input type=\\'text\\' value=\"1\" size=80 \n    '<input type=\\'text\\' value=\\'1\\' size=80 \n```\n\ni.e. a change in escaping. This looks fine to me, but I will apply the patches and see if the doctest issue is still even there.\n\nCheers,\n\nMichael",
+    "body": "Ok, according to the doctesting this is the problem:\n\n```\n    '<input type=\\'text\\' value=\"1\" size=80 \n    '<input type=\\'text\\' value=\\'1\\' size=80 \n```\ni.e. a change in escaping. This looks fine to me, but I will apply the patches and see if the doctest issue is still even there.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T11:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
@@ -367,7 +367,6 @@ Ok, according to the doctesting this is the problem:
     '<input type=\'text\' value="1" size=80 
     '<input type=\'text\' value=\'1\' size=80 
 ```
-
 i.e. a change in escaping. This looks fine to me, but I will apply the patches and see if the doctest issue is still even there.
 
 Cheers,
@@ -415,7 +414,7 @@ archive/issue_events_012026.json:
 archive/issue_comments_039747.json:
 ```json
 {
-    "body": "With my merge tree and mhansen's patch only:\n\n```\nAll tests passed!\nTimings have been updated.\nTotal time for all tests: 266.2 seconds\n```\n\nSo back to positive review.\n\nCheers,\n\nMichael",
+    "body": "With my merge tree and mhansen's patch only:\n\n```\nAll tests passed!\nTimings have been updated.\nTotal time for all tests: 266.2 seconds\n```\nSo back to positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T11:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
@@ -431,7 +430,6 @@ All tests passed!
 Timings have been updated.
 Total time for all tests: 266.2 seconds
 ```
-
 So back to positive review.
 
 Cheers,

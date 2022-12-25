@@ -3,7 +3,7 @@
 archive/issues_003052.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRobert Bradshaw has mostly solved this:\n\n```\nI've looked into this some more and it looks like we can completely\nreconstruct a repository from the export of all its keywords. The\ntrick is to use the --exact keyword when importing. This forces it to\napply the given patch to the correct parent (sometimes creating a new\nhead) and will also correctly import merge patches (removing heads).\nSome scripts to do this are up at\n\nhttp://sage.math.washington.edu/home/robertwb/hg/\n\nI've successfully exported and re-created simple repositories (with\nbranching) with these scripts, and it works great and preserves all\nthe history. The only issue is that I can't seem to get it to work\nwith any repositories older than a certain date. I think the issue is\nthat mercurial changed the way nodeid's are calculated (and I keep\ngetting an error \"abort: patch is damaged or loses information\" which\nis thrown when the newly computed nodeid does not match the one in\nthe patch (command.py:1632 in 0.9.5)). Matt Mackall, any suggestions\non how to cleanly get around this/get the old node-id numbers instead?\n\n- Robert Bradshaw\n```\n\n\nBut there are issues.  See the complete thread here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/79da4852b8e20851/c4b8e87260f08f96?#c4b8e87260f08f96\n\nIssue created by migration from https://trac.sagemath.org/ticket/3052\n\n",
+    "body": "Assignee: mabshoff\n\nRobert Bradshaw has mostly solved this:\n\n```\nI've looked into this some more and it looks like we can completely\nreconstruct a repository from the export of all its keywords. The\ntrick is to use the --exact keyword when importing. This forces it to\napply the given patch to the correct parent (sometimes creating a new\nhead) and will also correctly import merge patches (removing heads).\nSome scripts to do this are up at\n\nhttp://sage.math.washington.edu/home/robertwb/hg/\n\nI've successfully exported and re-created simple repositories (with\nbranching) with these scripts, and it works great and preserves all\nthe history. The only issue is that I can't seem to get it to work\nwith any repositories older than a certain date. I think the issue is\nthat mercurial changed the way nodeid's are calculated (and I keep\ngetting an error \"abort: patch is damaged or loses information\" which\nis thrown when the newly computed nodeid does not match the one in\nthe patch (command.py:1632 in 0.9.5)). Matt Mackall, any suggestions\non how to cleanly get around this/get the old node-id numbers instead?\n\n- Robert Bradshaw\n```\n\nBut there are issues.  See the complete thread here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/79da4852b8e20851/c4b8e87260f08f96?#c4b8e87260f08f96\n\nIssue created by migration from https://trac.sagemath.org/ticket/3052\n\n",
     "created_at": "2008-04-29T05:18:58Z",
     "labels": [
         "component: distribution",
@@ -42,7 +42,6 @@ on how to cleanly get around this/get the old node-id numbers instead?
 
 - Robert Bradshaw
 ```
-
 
 But there are issues.  See the complete thread here:
 
@@ -333,7 +332,7 @@ I rebased all patches with fuzz 2, but didn't bother about this one because it w
 archive/issue_comments_021034.json:
 ```json
 {
-    "body": "BTW this code imports stuff from Mercurial internals so it may need to be updated when we next upgrade Mercurial. Any ideas on how to make a doctest that will break when Mercurial is upgraded so that this will be noticed when the time comes? I guess there's always the trivial\n\n\n```rst\n>>> import mercurial.__version__.version\n>>> mercurial.__version__.version\n'1.8.4'\n```\n\n\nBut even if we use this silly doctest, where should it go? `$SAGE_ROOT/spkg/base` is not doctested by `make ptestlong`.",
+    "body": "BTW this code imports stuff from Mercurial internals so it may need to be updated when we next upgrade Mercurial. Any ideas on how to make a doctest that will break when Mercurial is upgraded so that this will be noticed when the time comes? I guess there's always the trivial\n\n```rst\n>>> import mercurial.__version__.version\n>>> mercurial.__version__.version\n'1.8.4'\n```\n\nBut even if we use this silly doctest, where should it go? `$SAGE_ROOT/spkg/base` is not doctested by `make ptestlong`.",
     "created_at": "2011-10-31T08:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
@@ -344,13 +343,11 @@ archive/issue_comments_021034.json:
 
 BTW this code imports stuff from Mercurial internals so it may need to be updated when we next upgrade Mercurial. Any ideas on how to make a doctest that will break when Mercurial is upgraded so that this will be noticed when the time comes? I guess there's always the trivial
 
-
 ```rst
 >>> import mercurial.__version__.version
 >>> mercurial.__version__.version
 '1.8.4'
 ```
-
 
 But even if we use this silly doctest, where should it go? `$SAGE_ROOT/spkg/base` is not doctested by `make ptestlong`.
 

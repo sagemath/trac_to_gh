@@ -3,7 +3,7 @@
 archive/issues_008652.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
     "created_at": "2010-04-06T05:25:31Z",
     "labels": [
         "component: user interface",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  @nexttime
 
 I got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  
-
 
 ```
 sage: import grader
@@ -42,7 +41,6 @@ AttributeError: 'module' object has no attribute 'strip'
 sage: 
 ```
 
-
 The above bug is the fault of the rewrite *I* did of load and attach, so is my fault. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8652
@@ -56,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8652
 archive/issue_comments_078373.json:
 ```json
 {
-    "body": "Did I miss something?\n\nIf I create both files `foo.py` and `foo.sage`, then\n\n\n```\nsage: import foo\nI am foo.py\nsage: load foo.sage\nI am foo.sage\n```\n\n\ndoesn't give an error (in 4.3.5).",
+    "body": "Did I miss something?\n\nIf I create both files `foo.py` and `foo.sage`, then\n\n```\nsage: import foo\nI am foo.py\nsage: load foo.sage\nI am foo.sage\n```\n\ndoesn't give an error (in 4.3.5).",
     "created_at": "2010-04-07T17:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
@@ -69,14 +67,12 @@ Did I miss something?
 
 If I create both files `foo.py` and `foo.sage`, then
 
-
 ```
 sage: import foo
 I am foo.py
 sage: load foo.sage
 I am foo.sage
 ```
-
 
 doesn't give an error (in 4.3.5).
 

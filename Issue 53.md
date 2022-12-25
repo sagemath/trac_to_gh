@@ -3,7 +3,7 @@
 archive/issues_000053.json:
 ```json
 {
-    "body": "Assignee: dmharvey\n\n\n```\nsage: x = 1 + 5 + O(5^6)\nsage: y = 1 + 5 + O(5^5)\nsage: x.log()\n 5 + 2*5^2 + 4*5^3 + 2*5^4 + O(5^6)\nsage: y.log()\n 5 + 2*5^2 + 4*5^3 + 5^4 + O(5^5)\n```\n\n\nThe answers should agree mod 5!^5. I bet someone forgot to take into account the p-adic valuation of the denominators in the series.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/53\n\n",
+    "body": "Assignee: dmharvey\n\n```\nsage: x = 1 + 5 + O(5^6)\nsage: y = 1 + 5 + O(5^5)\nsage: x.log()\n 5 + 2*5^2 + 4*5^3 + 2*5^4 + O(5^6)\nsage: y.log()\n 5 + 2*5^2 + 4*5^3 + 5^4 + O(5^5)\n```\n\nThe answers should agree mod 5!^5. I bet someone forgot to take into account the p-adic valuation of the denominators in the series.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/53\n\n",
     "created_at": "2006-09-13T19:43:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000053.json:
 ```
 Assignee: dmharvey
 
-
 ```
 sage: x = 1 + 5 + O(5^6)
 sage: y = 1 + 5 + O(5^5)
@@ -26,7 +25,6 @@ sage: x.log()
 sage: y.log()
  5 + 2*5^2 + 4*5^3 + 5^4 + O(5^5)
 ```
-
 
 The answers should agree mod 5!^5. I bet someone forgot to take into account the p-adic valuation of the denominators in the series.
 

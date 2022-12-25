@@ -3,7 +3,7 @@
 archive/issues_005635.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.\n\n\n```\nsage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()\nsage: type(p)\n<class 'sage.plot.tachyon.Tachyon'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5635\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.\n\n```\nsage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()\nsage: type(p)\n<class 'sage.plot.tachyon.Tachyon'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5635\n\n",
     "created_at": "2009-03-29T20:25:02Z",
     "labels": [
         "component: combinatorics",
@@ -22,13 +22,11 @@ CC:  sage-combinat
 
 The plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.
 
-
 ```
 sage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()
 sage: type(p)
 <class 'sage.plot.tachyon.Tachyon'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5635
 

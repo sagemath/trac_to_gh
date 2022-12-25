@@ -3,7 +3,7 @@
 archive/issues_004853.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is cicero on SkyNet with gcc 4.3.2:\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_morphisms.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 44:\n    sage: sigma_a = K.polynomial().change_ring(CC).roots()[1][0]; sigma_a\nExpected:\n    -0.629960524947436 + 1.09112363597172*I\nGot:\n    -0.629960524947437 + 1.09112363597172*I\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 47:\n    sage: g(a+1)\nExpected:\n    0.370039475052564 + 1.09112363597172*I\nGot:\n    0.370039475052563 + 1.09112363597172*I\n**********************************************************************\n```\n\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4853\n\n",
+    "body": "Assignee: mabshoff\n\nThis is cicero on SkyNet with gcc 4.3.2:\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_morphisms.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 44:\n    sage: sigma_a = K.polynomial().change_ring(CC).roots()[1][0]; sigma_a\nExpected:\n    -0.629960524947436 + 1.09112363597172*I\nGot:\n    -0.629960524947437 + 1.09112363597172*I\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 47:\n    sage: g(a+1)\nExpected:\n    0.370039475052564 + 1.09112363597172*I\nGot:\n    0.370039475052563 + 1.09112363597172*I\n**********************************************************************\n```\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4853\n\n",
     "created_at": "2008-12-22T18:50:02Z",
     "labels": [
         "component: doctest coverage",
@@ -42,7 +42,6 @@ Got:
 **********************************************************************
 ```
 
-
 Patch coming up.
 
 Cheers,
@@ -78,7 +77,7 @@ Changing status from new to assigned.
 archive/issue_comments_036725.json:
 ```json
 {
-    "body": "Note the difference:\n\n```\n    -0.629960524947436 + 1.09112363597172*I\n    -0.629960524947437 + 1.09112363597172*I\n```\n\nand\n\n```\n    0.370039475052564 + 1.09112363597172*I\n    0.370039475052563 + 1.09112363597172*I\n```\n\n\nCheers,\n\nMichael",
+    "body": "Note the difference:\n\n```\n    -0.629960524947436 + 1.09112363597172*I\n    -0.629960524947437 + 1.09112363597172*I\n```\nand\n\n```\n    0.370039475052564 + 1.09112363597172*I\n    0.370039475052563 + 1.09112363597172*I\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-22T22:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4853",
     "type": "issue_comment",
@@ -93,14 +92,12 @@ Note the difference:
     -0.629960524947436 + 1.09112363597172*I
     -0.629960524947437 + 1.09112363597172*I
 ```
-
 and
 
 ```
     0.370039475052564 + 1.09112363597172*I
     0.370039475052563 + 1.09112363597172*I
 ```
-
 
 Cheers,
 

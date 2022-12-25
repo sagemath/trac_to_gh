@@ -72,7 +72,7 @@ Changing assignee from @aghitza to tbd.
 archive/issue_comments_088622.json:
 ```json
 {
-    "body": "I understand how this is a problem - I'm a bit puzzled at the solution though:) \n\nIs there any reason not to make sage a prerequisite for sagetex directly, rather than via gap? I realise in practice it achieve the same thing, but it is far more confusing for someone to understand if they read deps. \n\nWould this not work, but be more informative and less confusing? \n\n```\n# Sagetex does not require Sage in order that it may be built, but it does require \n# Sage in order that it may be tested using SAGE_CHECK=yes.\n$(INST)/$(SAGETEX): $(INST)/$(PYTHON) $(INST)/$(SAGE)\n241\t        $(INSTALL) \"$(SAGE_SPKG) $(SAGETEX) 2>&1\" \"tee -a $(SAGE_LOGS)/$(SAGETEX).log\"\n```\n\n\nWe might in fact find other dependencies that we don't know about. Building packages in parallel will force deps to be more accurate. There may be other packages which can only be tested after something else is built. So as we had spkg-check files, there might be other similar issues arise. \n\nDave",
+    "body": "I understand how this is a problem - I'm a bit puzzled at the solution though:) \n\nIs there any reason not to make sage a prerequisite for sagetex directly, rather than via gap? I realise in practice it achieve the same thing, but it is far more confusing for someone to understand if they read deps. \n\nWould this not work, but be more informative and less confusing? \n\n```\n# Sagetex does not require Sage in order that it may be built, but it does require \n# Sage in order that it may be tested using SAGE_CHECK=yes.\n$(INST)/$(SAGETEX): $(INST)/$(PYTHON) $(INST)/$(SAGE)\n241\t        $(INSTALL) \"$(SAGE_SPKG) $(SAGETEX) 2>&1\" \"tee -a $(SAGE_LOGS)/$(SAGETEX).log\"\n```\n\nWe might in fact find other dependencies that we don't know about. Building packages in parallel will force deps to be more accurate. There may be other packages which can only be tested after something else is built. So as we had spkg-check files, there might be other similar issues arise. \n\nDave",
     "created_at": "2010-06-27T17:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -93,7 +93,6 @@ Would this not work, but be more informative and less confusing?
 $(INST)/$(SAGETEX): $(INST)/$(PYTHON) $(INST)/$(SAGE)
 241	        $(INSTALL) "$(SAGE_SPKG) $(SAGETEX) 2>&1" "tee -a $(SAGE_LOGS)/$(SAGETEX).log"
 ```
-
 
 We might in fact find other dependencies that we don't know about. Building packages in parallel will force deps to be more accurate. There may be other packages which can only be tested after something else is built. So as we had spkg-check files, there might be other similar issues arise. 
 
@@ -142,7 +141,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088625.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Well, I don't know if spkg-check in sagetex uses anything from gap: various calls in Sage end up calling gap in the background.  We could add sage as a dependency, but unless ddrake says otherwise, I'd like to keep gap there as well.\n\nI've got no doubt this will work what you are proposing. But given you say the problem is sagetex calls Sage for testing, I can't understand the logic of listing gap as a dependency. Why gap? \n\nThere is no reference to gap anywhere in the Sagetex source files\n\n\n```\ndrkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ ggrep -Ri gap *\ndrkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ \n```\n\n\nWithout an explanation in the 'deps' file, one could easily envisage someone coming along one day and saying \"Sagetex is a typesetting program, and does not need gap, so lets remove gap as a dependency\". That would break, as the real dependency is Sage, but that fact is obscured. I would have thought it much safer to explicitly list Sage as a dependency, and adding a comment like I put above would ensure nobody updating deps would be under any illusion why Sage is a dependency. \n\nBTW, in SPKG.txt, it says:\n\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install. The\n`spkg-check` script will exit without actually testing anything if\nit cannot find \"latex\" in your path, or if it cannot find tkz-berge.sty,\na TikZ add-on required for typesetting some graphs.\n```\n\n\n\nagain, no mention of gap. So I can't see the logic of explicitly listing gap - it just appears to add confusion, though I would agree that technically it does achieve the requirement, but via an obscure way. \n\nDave",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Well, I don't know if spkg-check in sagetex uses anything from gap: various calls in Sage end up calling gap in the background.  We could add sage as a dependency, but unless ddrake says otherwise, I'd like to keep gap there as well.\n\n\nI've got no doubt this will work what you are proposing. But given you say the problem is sagetex calls Sage for testing, I can't understand the logic of listing gap as a dependency. Why gap? \n\nThere is no reference to gap anywhere in the Sagetex source files\n\n```\ndrkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ ggrep -Ri gap *\ndrkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ \n```\n\nWithout an explanation in the 'deps' file, one could easily envisage someone coming along one day and saying \"Sagetex is a typesetting program, and does not need gap, so lets remove gap as a dependency\". That would break, as the real dependency is Sage, but that fact is obscured. I would have thought it much safer to explicitly list Sage as a dependency, and adding a comment like I put above would ensure nobody updating deps would be under any illusion why Sage is a dependency. \n\nBTW, in SPKG.txt, it says:\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install. The\n`spkg-check` script will exit without actually testing anything if\nit cannot find \"latex\" in your path, or if it cannot find tkz-berge.sty,\na TikZ add-on required for typesetting some graphs.\n```\n\n\nagain, no mention of gap. So I can't see the logic of explicitly listing gap - it just appears to add confusion, though I would agree that technically it does achieve the requirement, but via an obscure way. \n\nDave",
     "created_at": "2010-07-03T16:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -154,21 +153,19 @@ archive/issue_comments_088625.json:
 Replying to [comment:3 jhpalmieri]:
 > Well, I don't know if spkg-check in sagetex uses anything from gap: various calls in Sage end up calling gap in the background.  We could add sage as a dependency, but unless ddrake says otherwise, I'd like to keep gap there as well.
 
+
 I've got no doubt this will work what you are proposing. But given you say the problem is sagetex calls Sage for testing, I can't understand the logic of listing gap as a dependency. Why gap? 
 
 There is no reference to gap anywhere in the Sagetex source files
-
 
 ```
 drkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ ggrep -Ri gap *
 drkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ 
 ```
 
-
 Without an explanation in the 'deps' file, one could easily envisage someone coming along one day and saying "Sagetex is a typesetting program, and does not need gap, so lets remove gap as a dependency". That would break, as the real dependency is Sage, but that fact is obscured. I would have thought it much safer to explicitly list Sage as a dependency, and adding a comment like I put above would ensure nobody updating deps would be under any illusion why Sage is a dependency. 
 
 BTW, in SPKG.txt, it says:
-
 
 ```
 ## Dependencies
@@ -178,7 +175,6 @@ To install, nothing more than a standard Sage install. The
 it cannot find "latex" in your path, or if it cannot find tkz-berge.sty,
 a TikZ add-on required for typesetting some graphs.
 ```
-
 
 
 again, no mention of gap. So I can't see the logic of explicitly listing gap - it just appears to add confusion, though I would agree that technically it does achieve the requirement, but via an obscure way. 
@@ -230,7 +226,7 @@ diff between original deps and new one
 archive/issue_comments_088628.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by @jhpalmieri created at 2010-07-03 17:40:46\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\n\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by @jhpalmieri created at 2010-07-03 17:40:46\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
     "created_at": "2010-07-03T17:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -248,7 +244,6 @@ I'll say again:  various calls in Sage end up calling gap in the background -- n
 
 To install, nothing more than a standard Sage install.
 ```
-
 And a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.
 
 We could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a "standard Sage install", but I don't know how to do that.
@@ -414,7 +409,7 @@ I was thinking that while working on this release. It makes me wonder whether th
 archive/issue_comments_088636.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> You know, we really should have spkg/standard/deps and spkg/install under version control...\n\nYes, it would make a lot more sense.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> You know, we really should have spkg/standard/deps and spkg/install under version control...\n\n\nYes, it would make a lot more sense.",
     "created_at": "2010-07-05T23:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -426,6 +421,7 @@ archive/issue_comments_088636.json:
 Replying to [comment:9 jhpalmieri]:
 > You know, we really should have spkg/standard/deps and spkg/install under version control...
 
+
 Yes, it would make a lot more sense.
 
 
@@ -435,7 +431,7 @@ Yes, it would make a lot more sense.
 archive/issue_comments_088637.json:
 ```json
 {
-    "body": "Replying to [comment:10 rlm]:\n> I was thinking that while working on this release. It makes me wonder whether they should actually go in `$SAGE_LOCAL/bin`. Even though they don't really quite belong there, that would eliminate the need for another repo. Is it possible to have just these two files under revision control from somewhere else?\n\nIMHO it would be good if $SAGE_ROOT under revision control, so things like the 'makefile', README.txt were too. Then $SAGE_ROOT/spkg/install and $SAGE_ROOT/spkg/standard/deps could be part of that repository.\n\nI don't see $SAGE_ROOT/spkg/install would be too out of place in $SAGE_ROOT/local/bin, as it is an executable shell script. $SAGE_ROOT/spkg/standard/deps would seem more out of place I would admit, which is why perhaps another repository would not be a bad idea. I think there are more than just these two files that would be better put under revision control. \n\nDave \n\nDave",
+    "body": "Replying to [comment:10 rlm]:\n> I was thinking that while working on this release. It makes me wonder whether they should actually go in `$SAGE_LOCAL/bin`. Even though they don't really quite belong there, that would eliminate the need for another repo. Is it possible to have just these two files under revision control from somewhere else?\n\n\nIMHO it would be good if $SAGE_ROOT under revision control, so things like the 'makefile', README.txt were too. Then $SAGE_ROOT/spkg/install and $SAGE_ROOT/spkg/standard/deps could be part of that repository.\n\nI don't see $SAGE_ROOT/spkg/install would be too out of place in $SAGE_ROOT/local/bin, as it is an executable shell script. $SAGE_ROOT/spkg/standard/deps would seem more out of place I would admit, which is why perhaps another repository would not be a bad idea. I think there are more than just these two files that would be better put under revision control. \n\nDave \n\nDave",
     "created_at": "2010-07-05T23:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -446,6 +442,7 @@ archive/issue_comments_088637.json:
 
 Replying to [comment:10 rlm]:
 > I was thinking that while working on this release. It makes me wonder whether they should actually go in `$SAGE_LOCAL/bin`. Even though they don't really quite belong there, that would eliminate the need for another repo. Is it possible to have just these two files under revision control from somewhere else?
+
 
 IMHO it would be good if $SAGE_ROOT under revision control, so things like the 'makefile', README.txt were too. Then $SAGE_ROOT/spkg/install and $SAGE_ROOT/spkg/standard/deps could be part of that repository.
 

@@ -167,7 +167,7 @@ On the side of pedantry, the patch introduces a trivial inconsistency in how "tw
 archive/issue_comments_047710.json:
 ```json
 {
-    "body": "> Only my patch needs to be reviewed.\n\nLooks good.",
+    "body": "> Only my patch needs to be reviewed.\n\n\nLooks good.",
     "created_at": "2009-05-09T20:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
@@ -177,6 +177,7 @@ archive/issue_comments_047710.json:
 ```
 
 > Only my patch needs to be reviewed.
+
 
 Looks good.
 

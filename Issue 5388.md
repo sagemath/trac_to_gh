@@ -93,7 +93,7 @@ archive/issue_events_012559.json:
 archive/issue_comments_041425.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> I'm pretty sure I already removed this in the patches in alpha0.\n\nYes, I should have checked first that it is gone instead of opening a ticket :(\n\n```\nsage: hg_ [TAB]\nhg_extcode  hg_sage     hg_scripts  \nsage:\n```\n\n\nI just someone (I believe it was John) mention an issue with hg_doc not working, but that might have been for a pre-3.4 sage build or one that did not have all patches applied. \n\nSo: invalid.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 mhansen]:\n> I'm pretty sure I already removed this in the patches in alpha0.\n\n\nYes, I should have checked first that it is gone instead of opening a ticket :(\n\n```\nsage: hg_ [TAB]\nhg_extcode  hg_sage     hg_scripts  \nsage:\n```\n\nI just someone (I believe it was John) mention an issue with hg_doc not working, but that might have been for a pre-3.4 sage build or one that did not have all patches applied. \n\nSo: invalid.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-26T23:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5388",
     "type": "issue_comment",
@@ -105,6 +105,7 @@ archive/issue_comments_041425.json:
 Replying to [comment:1 mhansen]:
 > I'm pretty sure I already removed this in the patches in alpha0.
 
+
 Yes, I should have checked first that it is gone instead of opening a ticket :(
 
 ```
@@ -112,7 +113,6 @@ sage: hg_ [TAB]
 hg_extcode  hg_sage     hg_scripts  
 sage:
 ```
-
 
 I just someone (I believe it was John) mention an issue with hg_doc not working, but that might have been for a pre-3.4 sage build or one that did not have all patches applied. 
 

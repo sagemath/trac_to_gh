@@ -126,7 +126,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098488.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> ... still looking for optional NZMATH doctests... ;-)\n\nCouldn't find any; also, NZMATH doesn't have an `spkg-check` file.",
+    "body": "Replying to [comment:3 leif]:\n> ... still looking for optional NZMATH doctests... ;-)\n\n\nCouldn't find any; also, NZMATH doesn't have an `spkg-check` file.",
     "created_at": "2010-09-16T13:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
@@ -138,6 +138,7 @@ archive/issue_comments_098488.json:
 Replying to [comment:3 leif]:
 > ... still looking for optional NZMATH doctests... ;-)
 
+
 Couldn't find any; also, NZMATH doesn't have an `spkg-check` file.
 
 
@@ -147,7 +148,7 @@ Couldn't find any; also, NZMATH doesn't have an `spkg-check` file.
 archive/issue_comments_098489.json:
 ```json
 {
-    "body": "Is\n\n```\nsage: from nzmath import *\n```\n\nsupposed to work? (Gives deprecation warnings and an attribute error.)\n\nBut the following works:\n\n```\nsage: import nzmath.rational\nsage: r = nzmath.rational.Rational(113r, 355r)\nsage: print r\n113/355\nsage: \n```\n\nThat's of course not much of a test. ;-)",
+    "body": "Is\n\n```\nsage: from nzmath import *\n```\nsupposed to work? (Gives deprecation warnings and an attribute error.)\n\nBut the following works:\n\n```\nsage: import nzmath.rational\nsage: r = nzmath.rational.Rational(113r, 355r)\nsage: print r\n113/355\nsage: \n```\nThat's of course not much of a test. ;-)",
     "created_at": "2010-09-16T14:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
@@ -161,7 +162,6 @@ Is
 ```
 sage: from nzmath import *
 ```
-
 supposed to work? (Gives deprecation warnings and an attribute error.)
 
 But the following works:
@@ -173,7 +173,6 @@ sage: print r
 113/355
 sage: 
 ```
-
 That's of course not much of a test. ;-)
 
 

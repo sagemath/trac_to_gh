@@ -3,7 +3,7 @@
 archive/issues_008342.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nKeywords: sequence, generator\n\n\n```\ndef construct_sequence(base,f):\n    \"\"\"\n    Returns a function that gives sequence terms, building off past calls.\n    \n    Input:\n       - `base` -- the base case(s) of the sequence.\n       - `f`    -- the recursive description of the sequence; it takes a sequence referencing function and returns a function that will, given n, return the nth term.\n\n    Output:\n       A function that, given n, returns the nth term in the sequence.\n    \n    Examples:\n       sage: fib = construct_sequence([1,1], lambda t: lambda n : t(n-1) + t(n-2)) #The Fibonacci sequence\n\n       sage: hof = construct_sequence([1,1], lambda t: lambda n : t(n-t(n-1)) + t(n-t(n-2))) #The Hofstadter Q sequence\n       sage: [hof(n) for n in range(100)] # List of 100 terms\n    \"\"\"\n    b = {}\n    for i in range(len(base)):\n        b[i] = base[i]\n    def get_term(n):\n        if n in b.keys(): return b[n]\n        else:\n            b[n] = f(get_term)(n)\n            return b[n]\n    return get_term\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8342\n\n",
+    "body": "Assignee: jkantor\n\nKeywords: sequence, generator\n\n```\ndef construct_sequence(base,f):\n    \"\"\"\n    Returns a function that gives sequence terms, building off past calls.\n    \n    Input:\n       - `base` -- the base case(s) of the sequence.\n       - `f`    -- the recursive description of the sequence; it takes a sequence referencing function and returns a function that will, given n, return the nth term.\n\n    Output:\n       A function that, given n, returns the nth term in the sequence.\n    \n    Examples:\n       sage: fib = construct_sequence([1,1], lambda t: lambda n : t(n-1) + t(n-2)) #The Fibonacci sequence\n\n       sage: hof = construct_sequence([1,1], lambda t: lambda n : t(n-t(n-1)) + t(n-t(n-2))) #The Hofstadter Q sequence\n       sage: [hof(n) for n in range(100)] # List of 100 terms\n    \"\"\"\n    b = {}\n    for i in range(len(base)):\n        b[i] = base[i]\n    def get_term(n):\n        if n in b.keys(): return b[n]\n        else:\n            b[n] = f(get_term)(n)\n            return b[n]\n    return get_term\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8342\n\n",
     "created_at": "2010-02-24T01:41:50Z",
     "labels": [
         "component: numerical"
@@ -18,7 +18,6 @@ archive/issues_008342.json:
 Assignee: jkantor
 
 Keywords: sequence, generator
-
 
 ```
 def construct_sequence(base,f):
@@ -48,7 +47,6 @@ def construct_sequence(base,f):
             return b[n]
     return get_term
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8342
@@ -196,7 +194,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074341.json:
 ```json
 {
-    "body": "> Why does this function use a dictionary instead of a list? Is it done for functions that can get values for \"large\" n without computing all of the previous?\n\nSparseness. Some sequences jump around... a lot. I have no clue how you could write an implementation using a list: you'd need to calculate the terms in order which is often not possible!\n\n> Since it does use a dictionary, why does it assume base to be like [a_0, a_1, a_2]? It seems to me that it would be more reasonable then to take a dictionary as base in case I want to give [a_1, a_2, a_3] or [a_{-2}, a_0] or even [entry_{\"a\"}, entry_{\"b\"}]. That would allow even for multidimensional sequences indexed by tuples!\n\nThis is perhaps a poor design choice. I'll make it so you can give _either_ a list of dictionary. My thought was that writing {0:1,1:1} was more tedious than [1,1]. Convenience is its own quality.\n\n> The documentation is not quite clear to me. I don't understand what exactly does the description of f mean and I think that while lambda-form is probably the way to use this function (so the included examples must stay), it would be nice if examples were also written in an \"expanded\" way with each internal function having a meaningful name and some explanation what exactly should it take as an argument and what should it return. I didn't understand how to use this function until I looked at the source code.\n\nOK. I'll try to make this more clear.\n\n> Finally, the examples test only that the function does not crush. There should be comparison with expected output. E.g. show that it is possible to compute Fibonacci numbers that were not given as input and that actually even required computing some intermediate ones!\n\nYou mean like:\n\nsage: fib = construct_sequence([1,1],lambda t: lambda n: t(n-1)+t(n-2) )\nsage: [fib(n) for n in range(50)]\n[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765,10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, 2971215073, 4807526976, 7778742049, 12586269025]\n\n\n> As a possible improvement to consider (but I don't know if it should be done): what about admissible indices?\n\nDepends on the sequence, ideally.\n\n> What is the (-10)-th Fibonacci number? Infinite recursion? Maybe there should an optional parameter for a function that will check that there exists the corresponding element.\n\nIt isn't possible to tell from the function. Testing whether a function will necessarily exit from its definition is NP. We could have an option to give the sequences domain. One nice thing about the dictionary is the flexibility it gives: the index could be reals, or just about anything else.\n\n> And maybe there can be some way to see which values are already computed to determine if they will be enough to evaluate the new one or in case when it is possible to use several ways.\n\nSee above.",
+    "body": "> Why does this function use a dictionary instead of a list? Is it done for functions that can get values for \"large\" n without computing all of the previous?\n\n\nSparseness. Some sequences jump around... a lot. I have no clue how you could write an implementation using a list: you'd need to calculate the terms in order which is often not possible!\n\n> Since it does use a dictionary, why does it assume base to be like [a_0, a_1, a_2]? It seems to me that it would be more reasonable then to take a dictionary as base in case I want to give [a_1, a_2, a_3] or [a_{-2}, a_0] or even [entry_{\"a\"}, entry_{\"b\"}]. That would allow even for multidimensional sequences indexed by tuples!\n\n\nThis is perhaps a poor design choice. I'll make it so you can give _either_ a list of dictionary. My thought was that writing {0:1,1:1} was more tedious than [1,1]. Convenience is its own quality.\n\n> The documentation is not quite clear to me. I don't understand what exactly does the description of f mean and I think that while lambda-form is probably the way to use this function (so the included examples must stay), it would be nice if examples were also written in an \"expanded\" way with each internal function having a meaningful name and some explanation what exactly should it take as an argument and what should it return. I didn't understand how to use this function until I looked at the source code.\n\n\nOK. I'll try to make this more clear.\n\n> Finally, the examples test only that the function does not crush. There should be comparison with expected output. E.g. show that it is possible to compute Fibonacci numbers that were not given as input and that actually even required computing some intermediate ones!\n\n\nYou mean like:\n\nsage: fib = construct_sequence([1,1],lambda t: lambda n: t(n-1)+t(n-2) )\nsage: [fib(n) for n in range(50)]\n[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765,10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, 2971215073, 4807526976, 7778742049, 12586269025]\n\n\n> As a possible improvement to consider (but I don't know if it should be done): what about admissible indices?\n\n\nDepends on the sequence, ideally.\n\n> What is the (-10)-th Fibonacci number? Infinite recursion? Maybe there should an optional parameter for a function that will check that there exists the corresponding element.\n\n\nIt isn't possible to tell from the function. Testing whether a function will necessarily exit from its definition is NP. We could have an option to give the sequences domain. One nice thing about the dictionary is the flexibility it gives: the index could be reals, or just about anything else.\n\n> And maybe there can be some way to see which values are already computed to determine if they will be enough to evaluate the new one or in case when it is possible to use several ways.\n\n\nSee above.",
     "created_at": "2010-03-17T00:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
@@ -207,17 +205,21 @@ archive/issue_comments_074341.json:
 
 > Why does this function use a dictionary instead of a list? Is it done for functions that can get values for "large" n without computing all of the previous?
 
+
 Sparseness. Some sequences jump around... a lot. I have no clue how you could write an implementation using a list: you'd need to calculate the terms in order which is often not possible!
 
 > Since it does use a dictionary, why does it assume base to be like [a_0, a_1, a_2]? It seems to me that it would be more reasonable then to take a dictionary as base in case I want to give [a_1, a_2, a_3] or [a_{-2}, a_0] or even [entry_{"a"}, entry_{"b"}]. That would allow even for multidimensional sequences indexed by tuples!
+
 
 This is perhaps a poor design choice. I'll make it so you can give _either_ a list of dictionary. My thought was that writing {0:1,1:1} was more tedious than [1,1]. Convenience is its own quality.
 
 > The documentation is not quite clear to me. I don't understand what exactly does the description of f mean and I think that while lambda-form is probably the way to use this function (so the included examples must stay), it would be nice if examples were also written in an "expanded" way with each internal function having a meaningful name and some explanation what exactly should it take as an argument and what should it return. I didn't understand how to use this function until I looked at the source code.
 
+
 OK. I'll try to make this more clear.
 
 > Finally, the examples test only that the function does not crush. There should be comparison with expected output. E.g. show that it is possible to compute Fibonacci numbers that were not given as input and that actually even required computing some intermediate ones!
+
 
 You mean like:
 
@@ -228,13 +230,16 @@ sage: [fib(n) for n in range(50)]
 
 > As a possible improvement to consider (but I don't know if it should be done): what about admissible indices?
 
+
 Depends on the sequence, ideally.
 
 > What is the (-10)-th Fibonacci number? Infinite recursion? Maybe there should an optional parameter for a function that will check that there exists the corresponding element.
 
+
 It isn't possible to tell from the function. Testing whether a function will necessarily exit from its definition is NP. We could have an option to give the sequences domain. One nice thing about the dictionary is the flexibility it gives: the index could be reals, or just about anything else.
 
 > And maybe there can be some way to see which values are already computed to determine if they will be enough to evaluate the new one or in case when it is possible to use several ways.
+
 
 See above.
 

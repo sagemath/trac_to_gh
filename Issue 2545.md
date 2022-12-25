@@ -3,7 +3,7 @@
 archive/issues_002545.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
+    "body": "Assignee: @burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
     "created_at": "2008-03-16T12:35:22Z",
     "labels": [
         "component: basic arithmetic"
@@ -21,7 +21,6 @@ Attached patch adds a `derivative` method to `FractionFieldElement`s, and fixes 
 
 So these now work:
 
-
 ```
 sage: R = ZZ['x']
 sage: S = R.fraction_field(); x = S.gen()
@@ -33,7 +32,6 @@ sage: x,y = F.gens()
 sage: (1/(x+y)).derivative(x,y)
 2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)
 ```
-
 
 
 

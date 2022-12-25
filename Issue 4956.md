@@ -3,7 +3,7 @@
 archive/issues_004956.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/60a863def66c05a1\n\n```\nThis works \nhtml(r'Donde $\\Sigma$ es la sumatoria de los n&uacute;meros... etc.' ) \nbut only works the first time. If you save & quit your work, after \ntrying again it fails. This is because when saving it converts \n\"n&uacute;meros\" to \"n\u00fameros\". \n```\n\n\nNote that this issue might be closely related to some other notebook tickets.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4956\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/60a863def66c05a1\n\n```\nThis works \nhtml(r'Donde $\\Sigma$ es la sumatoria de los n&uacute;meros... etc.' ) \nbut only works the first time. If you save & quit your work, after \ntrying again it fails. This is because when saving it converts \n\"n&uacute;meros\" to \"n\u00fameros\". \n```\n\nNote that this issue might be closely related to some other notebook tickets.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4956\n\n",
     "created_at": "2009-01-08T20:32:42Z",
     "labels": [
         "component: notebook",
@@ -30,7 +30,6 @@ but only works the first time. If you save & quit your work, after
 trying again it fails. This is because when saving it converts 
 "n&uacute;meros" to "números". 
 ```
-
 
 Note that this issue might be closely related to some other notebook tickets.
 

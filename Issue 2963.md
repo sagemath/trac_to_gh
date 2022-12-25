@@ -3,7 +3,7 @@
 archive/issues_002963.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nOne should be able to do \n\n\n```\nr.png(file=\"myplot3.png\")\n```\n\n\ninstead of \n\n\n```\nsage: r.png(file='\"myplot3.png\"')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2963\n\n",
+    "body": "Assignee: @mwhansen\n\nOne should be able to do \n\n```\nr.png(file=\"myplot3.png\")\n```\n\ninstead of \n\n```\nsage: r.png(file='\"myplot3.png\"')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2963\n\n",
     "created_at": "2008-04-20T01:46:25Z",
     "labels": [
         "component: interfaces"
@@ -19,19 +19,15 @@ Assignee: @mwhansen
 
 One should be able to do 
 
-
 ```
 r.png(file="myplot3.png")
 ```
 
-
 instead of 
-
 
 ```
 sage: r.png(file='"myplot3.png"')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2963
 
@@ -44,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2963
 archive/issue_comments_020390.json:
 ```json
 {
-    "body": "Hi Mike!\n\nJust a quick idea:\nCouldn't one simply do\n\n```\n    def png(self, *args, **kwds):\n        ...\n        f = lambda x: x if not isinstance(x,basestring) else ('%s'%x if x[0]==x[-1]=='\"' else '\"%s\"'%x)\n        return RFunction(self, 'png')(*[f(x) for x in args], **dict([(x,f(y)) for x,y in kwds.items()]))\n```\n\n\nThis would transform any string into a '\"string\"', unless string starts and ends with '\"' already, and any other input is untouched. In particular, my suggestion would not break existing code, since `r.png(file='\"myplot3.png\"')` would still be valid.\n\nI don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.\n\nRegards,\n   Simon",
+    "body": "Hi Mike!\n\nJust a quick idea:\nCouldn't one simply do\n\n```\n    def png(self, *args, **kwds):\n        ...\n        f = lambda x: x if not isinstance(x,basestring) else ('%s'%x if x[0]==x[-1]=='\"' else '\"%s\"'%x)\n        return RFunction(self, 'png')(*[f(x) for x in args], **dict([(x,f(y)) for x,y in kwds.items()]))\n```\n\nThis would transform any string into a '\"string\"', unless string starts and ends with '\"' already, and any other input is untouched. In particular, my suggestion would not break existing code, since `r.png(file='\"myplot3.png\"')` would still be valid.\n\nI don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.\n\nRegards,\n   Simon",
     "created_at": "2009-09-21T20:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2963",
     "type": "issue_comment",
@@ -65,7 +61,6 @@ Couldn't one simply do
         return RFunction(self, 'png')(*[f(x) for x in args], **dict([(x,f(y)) for x,y in kwds.items()]))
 ```
 
-
 This would transform any string into a '"string"', unless string starts and ends with '"' already, and any other input is untouched. In particular, my suggestion would not break existing code, since `r.png(file='"myplot3.png"')` would still be valid.
 
 I don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.
@@ -80,7 +75,7 @@ Regards,
 archive/issue_comments_020391.json:
 ```json
 {
-    "body": "Replying to [comment:1 SimonKing]:\n> I don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.\n\nSorry, perhaps I misunderstood the role of png: It is just one example, isn't it? But actually you want that in *all* expect interfaces the transition from 'bla' to '\"bla\"' is done, right? Then still my suggestion would solve the problem, but I guess the above lambda function should be defined in expect.py on module level, so that there is no need to create  the function over and over again.\n\nThen, one would go through *all* methods of all expect interfaces, and do changes to the arguments, if they might be strings. Wow, that would be much to do! And then I don't know how much performance regression would occur and if that price would be worth to pay for making the input more comfortable.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:1 SimonKing]:\n> I don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.\n\n\nSorry, perhaps I misunderstood the role of png: It is just one example, isn't it? But actually you want that in *all* expect interfaces the transition from 'bla' to '\"bla\"' is done, right? Then still my suggestion would solve the problem, but I guess the above lambda function should be defined in expect.py on module level, so that there is no need to create  the function over and over again.\n\nThen, one would go through *all* methods of all expect interfaces, and do changes to the arguments, if they might be strings. Wow, that would be much to do! And then I don't know how much performance regression would occur and if that price would be worth to pay for making the input more comfortable.\n\nCheers,\nSimon",
     "created_at": "2009-09-21T20:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2963",
     "type": "issue_comment",
@@ -91,6 +86,7 @@ archive/issue_comments_020391.json:
 
 Replying to [comment:1 SimonKing]:
 > I don't know in what way png is usually called: Frequently and with many arguments? Then my suggestion might involve a performance problem. Also I don't know if the application of `f` to `args` is needed as well, or if the application to `kwds` would be enough.
+
 
 Sorry, perhaps I misunderstood the role of png: It is just one example, isn't it? But actually you want that in *all* expect interfaces the transition from 'bla' to '"bla"' is done, right? Then still my suggestion would solve the problem, but I guess the above lambda function should be defined in expect.py on module level, so that there is no need to create  the function over and over again.
 

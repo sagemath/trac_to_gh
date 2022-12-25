@@ -3,7 +3,7 @@
 archive/issues_002665.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @ncalexan\n\nKeywords: symbolic SR complex interval field CIF\n\n\n```\nsage: SR(0) * CIF(I)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent._register_pair()\n\n<type 'exceptions.NotImplementedError'>: Infinite loop in multiplication of [1.0000000000000000 .. 1.0000000000000000]*I (parent Complex Interval Field with 53 bits of precision) and \n                                       0 (parent Symbolic Ring)!}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2665\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @ncalexan\n\nKeywords: symbolic SR complex interval field CIF\n\n```\nsage: SR(0) * CIF(I)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent._register_pair()\n\n<type 'exceptions.NotImplementedError'>: Infinite loop in multiplication of [1.0000000000000000 .. 1.0000000000000000]*I (parent Complex Interval Field with 53 bits of precision) and \n                                       0 (parent Symbolic Ring)!}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2665\n\n",
     "created_at": "2008-03-25T20:26:38Z",
     "labels": [
         "component: coercion",
@@ -22,7 +22,6 @@ Assignee: @robertwb
 CC:  @ncalexan
 
 Keywords: symbolic SR complex interval field CIF
-
 
 ```
 sage: SR(0) * CIF(I)
@@ -61,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2665
 archive/issue_comments_018297.json:
 ```json
 {
-    "body": "I now get this:\n\n\n```\nsage: SR(0) * CIF(I)\n0\nsage: _.parent()\nComplex Interval Field with 53 bits of precision\n```\n\n\nIs that the result you wanted?",
+    "body": "I now get this:\n\n```\nsage: SR(0) * CIF(I)\n0\nsage: _.parent()\nComplex Interval Field with 53 bits of precision\n```\n\nIs that the result you wanted?",
     "created_at": "2008-09-19T06:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
@@ -72,14 +71,12 @@ archive/issue_comments_018297.json:
 
 I now get this:
 
-
 ```
 sage: SR(0) * CIF(I)
 0
 sage: _.parent()
 Complex Interval Field with 53 bits of precision
 ```
-
 
 Is that the result you wanted?
 
@@ -90,7 +87,7 @@ Is that the result you wanted?
 archive/issue_comments_018298.json:
 ```json
 {
-    "body": "I would say that this is still wrong.  In particular, the result\n\n```\nsage: CIF.has_coerce_map_from(SR)\nTrue\n```\n\nis incorrect.  But fixing that needs to wait on more general coercion rewrites.\n\nReplying to [comment:1 mhansen]:\n> I now get this:\n> \n> {{{\n> sage: SR(0) * CIF(I)\n> 0\n> sage: _.parent()\n> Complex Interval Field with 53 bits of precision\n> }}}\n> \n> Is that the result you wanted?",
+    "body": "I would say that this is still wrong.  In particular, the result\n\n```\nsage: CIF.has_coerce_map_from(SR)\nTrue\n```\nis incorrect.  But fixing that needs to wait on more general coercion rewrites.\n\nReplying to [comment:1 mhansen]:\n> I now get this:\n> \n> \n> ```\n> sage: SR(0) * CIF(I)\n> 0\n> sage: _.parent()\n> Complex Interval Field with 53 bits of precision\n> ```\n> \n> Is that the result you wanted?",
     "created_at": "2009-01-22T10:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
@@ -105,18 +102,18 @@ I would say that this is still wrong.  In particular, the result
 sage: CIF.has_coerce_map_from(SR)
 True
 ```
-
 is incorrect.  But fixing that needs to wait on more general coercion rewrites.
 
 Replying to [comment:1 mhansen]:
 > I now get this:
 > 
-> {{{
+> 
+> ```
 > sage: SR(0) * CIF(I)
 > 0
 > sage: _.parent()
 > Complex Interval Field with 53 bits of precision
-> }}}
+> ```
 > 
 > Is that the result you wanted?
 
@@ -145,7 +142,7 @@ If there is a coercion, surly this is the only direction it goes, right?
 archive/issue_comments_018300.json:
 ```json
 {
-    "body": "This now works correctly with the update to pynac:\n\n\n```\nsage: SR(0) * CIF(I)\n0\nsage: a = _\nsage: a.parent()\nSymbolic Ring\nsage: a.pyobject().parent()\nComplex Interval Field with 53 bits of precision\n```\n",
+    "body": "This now works correctly with the update to pynac:\n\n```\nsage: SR(0) * CIF(I)\n0\nsage: a = _\nsage: a.parent()\nSymbolic Ring\nsage: a.pyobject().parent()\nComplex Interval Field with 53 bits of precision\n```",
     "created_at": "2009-06-05T01:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
@@ -156,7 +153,6 @@ archive/issue_comments_018300.json:
 
 This now works correctly with the update to pynac:
 
-
 ```
 sage: SR(0) * CIF(I)
 0
@@ -166,7 +162,6 @@ Symbolic Ring
 sage: a.pyobject().parent()
 Complex Interval Field with 53 bits of precision
 ```
-
 
 
 

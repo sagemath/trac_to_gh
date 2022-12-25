@@ -3,7 +3,7 @@
 archive/issues_007128.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nAn inspection of spkg-install for zlib shows that the -m64 flag is only added on OS X, and not on Solaris. \n\n\n```\n# The -fPIC is needed otherwise builing libpng fails later\n# (at least on a Debian 64-bit opteron).\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n\n\nThere are several things wrong with this\n* -fPIC is not a universally used flag. The correct flag to use on Solaris is -KPIC, though -fPIC will be accepted. On other compilers, such as those on AIX or HP-UX, there is no guarantee that -fPIC is the correct flag. \n* The -m64 flag to build 64-bit code is only used on OS X. It is not used on Solaris, despite the fact we are supposed to be supporting Solaris. On some compilers, **the correct flag to produce 64-bit code is not -m64**. IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7128\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nAn inspection of spkg-install for zlib shows that the -m64 flag is only added on OS X, and not on Solaris. \n\n```\n# The -fPIC is needed otherwise builing libpng fails later\n# (at least on a Debian 64-bit opteron).\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n\nThere are several things wrong with this\n* -fPIC is not a universally used flag. The correct flag to use on Solaris is -KPIC, though -fPIC will be accepted. On other compilers, such as those on AIX or HP-UX, there is no guarantee that -fPIC is the correct flag. \n* The -m64 flag to build 64-bit code is only used on OS X. It is not used on Solaris, despite the fact we are supposed to be supporting Solaris. On some compilers, **the correct flag to produce 64-bit code is not -m64**. IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7128\n\n",
     "created_at": "2009-10-05T22:49:47Z",
     "labels": [
         "component: porting",
@@ -22,7 +22,6 @@ CC:  @jaapspies
 
 An inspection of spkg-install for zlib shows that the -m64 flag is only added on OS X, and not on Solaris. 
 
-
 ```
 # The -fPIC is needed otherwise builing libpng fails later
 # (at least on a Debian 64-bit opteron).
@@ -34,7 +33,6 @@ else
    CFLAGS="$CFLAGS -fPIC -g -I\"$SAGE_LOCAL/include\""
 fi
 ```
-
 
 There are several things wrong with this
 * -fPIC is not a universally used flag. The correct flag to use on Solaris is -KPIC, though -fPIC will be accepted. On other compilers, such as those on AIX or HP-UX, there is no guarantee that -fPIC is the correct flag. 
@@ -69,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059011.json:
 ```json
 {
-    "body": "I've sorted this out for Solaris. Currently the option added is always -m64, which is not ideal, as it will break with compilers other than GNU or Sun, but when #7818 get added, sorting this lot out will be a lot easier. \n\nOn OS X, not only is -m64 added to the flags, but an altered version of a configure script is copied too. There is no need to change the configure script on Solaris, so OS X is still handled differently. \n\n**Previous code:**\n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n\n```\n\n\nRevised code: \n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelif [ \"x`uname`\" != \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\"-m64 $CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n",
+    "body": "I've sorted this out for Solaris. Currently the option added is always -m64, which is not ideal, as it will break with compilers other than GNU or Sun, but when #7818 get added, sorting this lot out will be a lot easier. \n\nOn OS X, not only is -m64 added to the flags, but an altered version of a configure script is copied too. There is no need to change the configure script on Solaris, so OS X is still handled differently. \n\n**Previous code:**\n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n\n```\n\nRevised code: \n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelif [ \"x`uname`\" != \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\"-m64 $CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```",
     "created_at": "2010-01-05T21:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
@@ -94,7 +92,6 @@ fi
 
 ```
 
-
 Revised code: 
 
 ```
@@ -107,7 +104,6 @@ else
    CFLAGS="$CFLAGS $FPIC_FLAG -g -I\"$SAGE_LOCAL/include\""
 fi
 ```
-
 
 
 
@@ -138,7 +134,7 @@ There's an spkg there. Best tested on Solaris, using a 64-bit build.
 archive/issue_comments_059013.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n> Sorry, I forgot to add the location of the code. \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n> \n> There's an spkg there. Best tested on Solaris, using a 64-bit build. \n\nI was about to ask :)\n\nJaap",
+    "body": "Replying to [comment:3 drkirkby]:\n> Sorry, I forgot to add the location of the code. \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n> \n> There's an spkg there. Best tested on Solaris, using a 64-bit build. \n\n\nI was about to ask :)\n\nJaap",
     "created_at": "2010-01-05T21:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
@@ -153,6 +149,7 @@ Replying to [comment:3 drkirkby]:
 > http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/
 > 
 > There's an spkg there. Best tested on Solaris, using a 64-bit build. 
+
 
 I was about to ask :)
 

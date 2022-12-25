@@ -3,7 +3,7 @@
 archive/issues_001643.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWe shouldn't copy the binary named in `SAGE_FORTRAN` to `sage_fortran.bin` since it seems to break gfortran. Some times it seems to assume the position of libgfortran.so to be relative to the invoking executable and then breaks things will break. Just make the script `sage_fortran` call\n\n```/bin/bash\nvalue of SAGE_FORTRAN $*\n```\n\nThat way a bdist is also less likely to break if the version of the fortran compiler is slightly different. It will also result in a slightly smaller Sage install, which is also a good thing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1643\n\n",
+    "body": "Assignee: mabshoff\n\nWe shouldn't copy the binary named in `SAGE_FORTRAN` to `sage_fortran.bin` since it seems to break gfortran. Some times it seems to assume the position of libgfortran.so to be relative to the invoking executable and then breaks things will break. Just make the script `sage_fortran` call\n\n```/bin/bash\nvalue of SAGE_FORTRAN $*\n```\nThat way a bdist is also less likely to break if the version of the fortran compiler is slightly different. It will also result in a slightly smaller Sage install, which is also a good thing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1643\n\n",
     "created_at": "2007-12-30T18:56:17Z",
     "labels": [
         "component: packages: standard",
@@ -24,7 +24,6 @@ We shouldn't copy the binary named in `SAGE_FORTRAN` to `sage_fortran.bin` since
 ```/bin/bash
 value of SAGE_FORTRAN $*
 ```
-
 That way a bdist is also less likely to break if the version of the fortran compiler is slightly different. It will also result in a slightly smaller Sage install, which is also a good thing.
 
 Cheers,

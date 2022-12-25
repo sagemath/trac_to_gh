@@ -3,7 +3,7 @@
 archive/issues_004757.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
+    "body": "Assignee: @williamstein\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
     "created_at": "2008-12-11T05:17:47Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 I don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)
 
-
 ```
 sage: a = random_matrix(CDF,2)
 sage: a.eigenspaces_right()
@@ -35,7 +34,6 @@ User basis matrix:
 ]
 ```
 
-
 We easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:
 
 ```
@@ -45,7 +43,6 @@ sage: a.eigenvectors_right()
  [                    0.800587795941                     0.758354735061]
 [  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])
 ```
-
 
 Same comments for eigenspaces_left.
 
@@ -62,7 +59,6 @@ User basis matrix:
 [])
 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4757
 
@@ -229,7 +225,7 @@ Erring on the side of caution, my review patch probably ought to also be reviewe
 archive/issue_comments_035978.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> There already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\nI am not sure that doctest should be random - if the result truly is #random, i.e. more than the last couple digits, there is something seriously wrong here.\n\n> Erring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.\n\nYep\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jason]:\n> There already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\n\nI am not sure that doctest should be random - if the result truly is #random, i.e. more than the last couple digits, there is something seriously wrong here.\n\n> Erring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.\n\n\nYep\n\nCheers,\n\nMichael",
     "created_at": "2008-12-13T01:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
@@ -241,9 +237,11 @@ archive/issue_comments_035978.json:
 Replying to [comment:4 jason]:
 > There already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.
 
+
 I am not sure that doctest should be random - if the result truly is #random, i.e. more than the last couple digits, there is something seriously wrong here.
 
 > Erring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.
+
 
 Yep
 

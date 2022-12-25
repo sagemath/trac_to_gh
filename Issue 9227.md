@@ -89,7 +89,7 @@ Changing component from algebra to misc.
 archive/issue_comments_086449.json:
 ```json
 {
-    "body": "You mentioned\n\n```\nEqual to 1000 meters.\n```\n\ntwice. You should replace one by a comparison to yards, feet or something else.",
+    "body": "You mentioned\n\n```\nEqual to 1000 meters.\n```\ntwice. You should replace one by a comparison to yards, feet or something else.",
     "created_at": "2011-01-07T09:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ You mentioned
 ```
 Equal to 1000 meters.
 ```
-
 twice. You should replace one by a comparison to yards, feet or something else.
 
 

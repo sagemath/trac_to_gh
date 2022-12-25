@@ -3,7 +3,7 @@
 archive/issues_001908.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
     "created_at": "2008-01-24T03:56:49Z",
     "labels": [
         "component: graphics"
@@ -22,7 +22,6 @@ CC:  ekirkman
 This patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?
 
 
-
 ```
         sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)
         sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)
@@ -31,7 +30,6 @@ This patch extends the functionality introduced in #1869 .  It lets you show lis
         sage: show([sin(i*x) for i in range(2)])
         sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1908

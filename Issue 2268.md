@@ -83,7 +83,7 @@ Changing status from new to assigned.
 archive/issue_comments_014997.json:
 ```json
 {
-    "body": "Thanks for your contribution. Actually, the entire coercion model is being re-worked, I think you might find http://wiki.sagemath.org/days7/coercion/ interesting. In particular, this function has been rewritten. \n\nAs far as your code goes, I think you are making things too hard on yourself trying to use the Python C API. Cython will do most of that for you to make your life easier: \n\n\n```\nif PyObject_RichCompareBool(self, S, Py_EQ)==True: \n```\n\n\nis faster (and easier to read) as \n\n```\nif self == S:\n```\n\nand \n\n```\nPyObject_TypeCheck(self._has_coerce_map_from,NoneType)==1)\n```\n\nwould be faster if written\n\n```\nself._has_coerce_map_from is None\n```\n\n\nAlso\n\n```\ntry:\n    return self._has_coerce_map_from[S]\nexcept AttributeError:\n    pass\n```\n\nIs faster than testing the key first, and then retrieving the object (as that requires two lookups rather than one on success). \n\nThe point that the trivial case should be handled first is a very good one and the new coercion code will do that.",
+    "body": "Thanks for your contribution. Actually, the entire coercion model is being re-worked, I think you might find http://wiki.sagemath.org/days7/coercion/ interesting. In particular, this function has been rewritten. \n\nAs far as your code goes, I think you are making things too hard on yourself trying to use the Python C API. Cython will do most of that for you to make your life easier: \n\n```\nif PyObject_RichCompareBool(self, S, Py_EQ)==True: \n```\n\nis faster (and easier to read) as \n\n```\nif self == S:\n```\nand \n\n```\nPyObject_TypeCheck(self._has_coerce_map_from,NoneType)==1)\n```\nwould be faster if written\n\n```\nself._has_coerce_map_from is None\n```\n\nAlso\n\n```\ntry:\n    return self._has_coerce_map_from[S]\nexcept AttributeError:\n    pass\n```\nIs faster than testing the key first, and then retrieving the object (as that requires two lookups rather than one on success). \n\nThe point that the trivial case should be handled first is a very good one and the new coercion code will do that.",
     "created_at": "2008-02-23T01:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
@@ -96,30 +96,25 @@ Thanks for your contribution. Actually, the entire coercion model is being re-wo
 
 As far as your code goes, I think you are making things too hard on yourself trying to use the Python C API. Cython will do most of that for you to make your life easier: 
 
-
 ```
 if PyObject_RichCompareBool(self, S, Py_EQ)==True: 
 ```
-
 
 is faster (and easier to read) as 
 
 ```
 if self == S:
 ```
-
 and 
 
 ```
 PyObject_TypeCheck(self._has_coerce_map_from,NoneType)==1)
 ```
-
 would be faster if written
 
 ```
 self._has_coerce_map_from is None
 ```
-
 
 Also
 
@@ -129,7 +124,6 @@ try:
 except AttributeError:
     pass
 ```
-
 Is faster than testing the key first, and then retrieving the object (as that requires two lookups rather than one on success). 
 
 The point that the trivial case should be handled first is a very good one and the new coercion code will do that.

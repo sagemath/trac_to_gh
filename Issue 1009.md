@@ -3,7 +3,7 @@
 archive/issues_001009.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\n\nsage: N = 5^100000\nsage: R = Integers(N)\nsage: S.<x> = PolynomialRing(R)\nsage: v = R(7^100000)\nsage: time f = S([v])\n\nI then tracked down the problem which is in the ntl_ZZ_pContext\nfunction in ntl_ZZ_pContext.pyx, where the context is cached.\nUnfortunately, the frickin' context is cached as a decimal *string*, so\nevery single cached access to the context is extremely expensive -- for\nmore expensive than not even bothing to cache the context would be.\nThe patch at \n\nfixes things so that the cache uses the hash of the context, which \nI implemented (along with hash's of ntl_ZZ's).  \n\nExactly the same mistake is made in ntl_GF2EContext.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1009\n\n",
+    "body": "Assignee: somebody\n\n```\n\nsage: N = 5^100000\nsage: R = Integers(N)\nsage: S.<x> = PolynomialRing(R)\nsage: v = R(7^100000)\nsage: time f = S([v])\n\nI then tracked down the problem which is in the ntl_ZZ_pContext\nfunction in ntl_ZZ_pContext.pyx, where the context is cached.\nUnfortunately, the frickin' context is cached as a decimal *string*, so\nevery single cached access to the context is extremely expensive -- for\nmore expensive than not even bothing to cache the context would be.\nThe patch at \n\nfixes things so that the cache uses the hash of the context, which \nI implemented (along with hash's of ntl_ZZ's).  \n\nExactly the same mistake is made in ntl_GF2EContext.pyx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1009\n\n",
     "created_at": "2007-10-27T03:46:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_001009.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 
@@ -39,7 +38,6 @@ I implemented (along with hash's of ntl_ZZ's).
 
 Exactly the same mistake is made in ntl_GF2EContext.pyx
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1009
 

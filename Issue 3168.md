@@ -3,7 +3,7 @@
 archive/issues_003168.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nIf you take a simple Cython extension module and install it in into SAGE via\n\n```\nsage -python setup.py install\n```\n\nsource introspection will not work.   \n\nThis appears to caused by two things\n\n1) cython is invoked without the \"-p\" option\n\n2) the relevant *pyx files are not put somewhere that the Sage interpreter can find them.\n\nAttached is a minimal Cython module illustrating the problem.   Source introspection can be made to work via\n\n\n```\nsage -cython -p introtest.pyx\nsage -python setup.py install\ncp introtest.pyx $SAGEROOT/devel/sage/\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3168\n\n",
+    "body": "Assignee: cwitty\n\nIf you take a simple Cython extension module and install it in into SAGE via\n\n```\nsage -python setup.py install\n```\nsource introspection will not work.   \n\nThis appears to caused by two things\n\n1) cython is invoked without the \"-p\" option\n\n2) the relevant *pyx files are not put somewhere that the Sage interpreter can find them.\n\nAttached is a minimal Cython module illustrating the problem.   Source introspection can be made to work via\n\n```\nsage -cython -p introtest.pyx\nsage -python setup.py install\ncp introtest.pyx $SAGEROOT/devel/sage/\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3168\n\n",
     "created_at": "2008-05-12T19:34:17Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ If you take a simple Cython extension module and install it in into SAGE via
 ```
 sage -python setup.py install
 ```
-
 source introspection will not work.   
 
 This appears to caused by two things
@@ -34,7 +33,6 @@ This appears to caused by two things
 2) the relevant *pyx files are not put somewhere that the Sage interpreter can find them.
 
 Attached is a minimal Cython module illustrating the problem.   Source introspection can be made to work via
-
 
 ```
 sage -cython -p introtest.pyx

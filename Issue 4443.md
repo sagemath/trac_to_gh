@@ -123,7 +123,7 @@ I'm looking at it now, assuming that I can get those .hg files to apply.  john
 archive/issue_comments_032614.json:
 ```json
 {
-    "body": "Replying to [comment:1 cremona]:\n> I'm looking at it now, assuming that I can get those .hg files to apply.  john\n\nWhat am I supposed to do with those .hg files?  For the first one I get an error message when I click on it; for the second it just displays a whole lot of changelogs.  Right-clicking and asking to save just ends up with some html in a file.  Perhaps the .patch patch file contains everything?\n\nAwaiting instructions....",
+    "body": "Replying to [comment:1 cremona]:\n> I'm looking at it now, assuming that I can get those .hg files to apply.  john\n\n\nWhat am I supposed to do with those .hg files?  For the first one I get an error message when I click on it; for the second it just displays a whole lot of changelogs.  Right-clicking and asking to save just ends up with some html in a file.  Perhaps the .patch patch file contains everything?\n\nAwaiting instructions....",
     "created_at": "2008-11-05T11:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -134,6 +134,7 @@ archive/issue_comments_032614.json:
 
 Replying to [comment:1 cremona]:
 > I'm looking at it now, assuming that I can get those .hg files to apply.  john
+
 
 What am I supposed to do with those .hg files?  For the first one I get an error message when I click on it; for the second it just displays a whole lot of changelogs.  Right-clicking and asking to save just ends up with some html in a file.  Perhaps the .patch patch file contains everything?
 
@@ -234,7 +235,7 @@ Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg rem
 archive/issue_comments_032619.json:
 ```json
 {
-    "body": "Replying to [comment:5 craigcitro]:\n> Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg remove` -- my understanding is that a patch doesn't keep track of that. Or am I just wrong? If so, feel free to delete the two bundles.\n\nAll files removed or added to the repo before committing are in the diff - have a look yourself :). If you look at the bundle there is also only one commit, so where else should those changes be? :p\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 craigcitro]:\n> Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg remove` -- my understanding is that a patch doesn't keep track of that. Or am I just wrong? If so, feel free to delete the two bundles.\n\n\nAll files removed or added to the repo before committing are in the diff - have a look yourself :). If you look at the bundle there is also only one commit, so where else should those changes be? :p\n\nCheers,\n\nMichael",
     "created_at": "2008-11-05T17:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -245,6 +246,7 @@ archive/issue_comments_032619.json:
 
 Replying to [comment:5 craigcitro]:
 > Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg remove` -- my understanding is that a patch doesn't keep track of that. Or am I just wrong? If so, feel free to delete the two bundles.
+
 
 All files removed or added to the repo before committing are in the diff - have a look yourself :). If you look at the bundle there is also only one commit, so where else should those changes be? :p
 
@@ -277,7 +279,7 @@ If I understand correctly, this means that I can apply the *patch as normal and 
 archive/issue_comments_032621.json:
 ```json
 {
-    "body": "First things first:  patch applies cleanly to 3.2.alpha2, but -testall gives this:\n\n```\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/calculus/calculus.py\n\tsage -t  devel/sage/sage/tests/book_stein_modform.py\n\tsage -t  devel/sage/sage/tests/book_stein_ent.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\tsage -t  devel/sage/sage/modular/abvar/abvar.py\n\tsage -t  devel/sage/sage/modular/modform/eis_series.py\n\tsage -t  devel/sage/sage/modular/modform/ambient.py\n\tsage -t  devel/sage/sage/modular/modform/hecke_operator_on_qexp.py\n\tsage -t  devel/sage/sage/modular/modform/vm_basis.py\n\tsage -t  devel/sage/sage/modular/modform/j_invariant.py\n\tsage -t  devel/sage/sage/modular/modform/space.py\n\tsage -t  devel/sage/sage/modular/modform/cuspidal_submodule.py\n\tsage -t  devel/sage/sage/modular/modform/element.py\n```\n\nwhich are probably all trivial but need to be fixed.\n\nI find a patch like this quite hard to review, since it combines a lot of moving of chunks of code around (certainly a good idea here) with all the trivial changes which that leads to;  and some real bug-fixes.  When scanning the patch one sees lots of large blue and red hunks (which may or may not hide significant code changes), and a lot of trivial changes, and buried in there is the \"real meat\".\n\nOne thing I could not work out easily was exactly how my earlier changes to lcm and gcd caused the slow-down!\n\nAnyway this is a basically positive review, and I'll be happy to look at it again.",
+    "body": "First things first:  patch applies cleanly to 3.2.alpha2, but -testall gives this:\n\n```\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/calculus/calculus.py\n\tsage -t  devel/sage/sage/tests/book_stein_modform.py\n\tsage -t  devel/sage/sage/tests/book_stein_ent.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\tsage -t  devel/sage/sage/modular/abvar/abvar.py\n\tsage -t  devel/sage/sage/modular/modform/eis_series.py\n\tsage -t  devel/sage/sage/modular/modform/ambient.py\n\tsage -t  devel/sage/sage/modular/modform/hecke_operator_on_qexp.py\n\tsage -t  devel/sage/sage/modular/modform/vm_basis.py\n\tsage -t  devel/sage/sage/modular/modform/j_invariant.py\n\tsage -t  devel/sage/sage/modular/modform/space.py\n\tsage -t  devel/sage/sage/modular/modform/cuspidal_submodule.py\n\tsage -t  devel/sage/sage/modular/modform/element.py\n```\nwhich are probably all trivial but need to be fixed.\n\nI find a patch like this quite hard to review, since it combines a lot of moving of chunks of code around (certainly a good idea here) with all the trivial changes which that leads to;  and some real bug-fixes.  When scanning the patch one sees lots of large blue and red hunks (which may or may not hide significant code changes), and a lot of trivial changes, and buried in there is the \"real meat\".\n\nOne thing I could not work out easily was exactly how my earlier changes to lcm and gcd caused the slow-down!\n\nAnyway this is a basically positive review, and I'll be happy to look at it again.",
     "created_at": "2008-11-05T21:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -308,7 +310,6 @@ The following tests failed:
 	sage -t  devel/sage/sage/modular/modform/cuspidal_submodule.py
 	sage -t  devel/sage/sage/modular/modform/element.py
 ```
-
 which are probably all trivial but need to be fixed.
 
 I find a patch like this quite hard to review, since it combines a lot of moving of chunks of code around (certainly a good idea here) with all the trivial changes which that leads to;  and some real bug-fixes.  When scanning the patch one sees lots of large blue and red hunks (which may or may not hide significant code changes), and a lot of trivial changes, and buried in there is the "real meat".
@@ -342,7 +343,7 @@ Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443
 archive/issue_comments_032623.json:
 ```json
 {
-    "body": "So the `calculus.py` failure above is a numerical noise issue, which (I hope!) is independent -- it seems to be #4436. \n\nEverything else comes from one single error: \n\n```\nsage: pari(0).primepi()\nBOOM!\n```\n\n\nI've fixed this, and all the above doctests pass.",
+    "body": "So the `calculus.py` failure above is a numerical noise issue, which (I hope!) is independent -- it seems to be #4436. \n\nEverything else comes from one single error: \n\n```\nsage: pari(0).primepi()\nBOOM!\n```\n\nI've fixed this, and all the above doctests pass.",
     "created_at": "2008-11-06T09:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -359,7 +360,6 @@ Everything else comes from one single error:
 sage: pari(0).primepi()
 BOOM!
 ```
-
 
 I've fixed this, and all the above doctests pass.
 
@@ -390,7 +390,7 @@ With the second patch applied on top of the first all the doctests which failed 
 archive/issue_comments_032625.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n\n> [Craig, I would still like to know what it was I did which caused the slowdown!]\n\nWas it just replacing the test g==1 with g==one (with one defined outside the loop)?  Maybe more classes (for which gcds are defined) should have an is_one() method as well as an is_zero() method?",
+    "body": "Replying to [comment:10 cremona]:\n\n> [Craig, I would still like to know what it was I did which caused the slowdown!]\n\n\nWas it just replacing the test g==1 with g==one (with one defined outside the loop)?  Maybe more classes (for which gcds are defined) should have an is_one() method as well as an is_zero() method?",
     "created_at": "2008-11-06T16:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -402,6 +402,7 @@ archive/issue_comments_032625.json:
 Replying to [comment:10 cremona]:
 
 > [Craig, I would still like to know what it was I did which caused the slowdown!]
+
 
 Was it just replacing the test g==1 with g==one (with one defined outside the loop)?  Maybe more classes (for which gcds are defined) should have an is_one() method as well as an is_zero() method?
 
@@ -469,7 +470,7 @@ Perhaps something we ought to add to a standard review is to check the times of 
 archive/issue_comments_032628.json:
 ```json
 {
-    "body": "Unfortunately this patch has now a conflict:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage/rings/arith.py.rej\n***************\n*** 795,802 ****\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n-     n = integer_ring.ZZ(n)\n-     return n.next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n--- 726,732 ----\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n+     return ZZ(n).next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n```\n\nI am pretty sure this is caused by #4452 which I just merged on top of 3.2.alpha3.\n\nCheers,\n\nMichael",
+    "body": "Unfortunately this patch has now a conflict:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage/rings/arith.py.rej\n***************\n*** 795,802 ****\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n-     n = integer_ring.ZZ(n)\n-     return n.next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n--- 726,732 ----\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n+     return ZZ(n).next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n```\nI am pretty sure this is caused by #4452 which I just merged on top of 3.2.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-07T18:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -501,7 +502,6 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage
   def previous_prime(n):
       """
 ```
-
 I am pretty sure this is caused by #4452 which I just merged on top of 3.2.alpha3.
 
 Cheers,
@@ -533,7 +533,7 @@ Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4
 archive/issue_comments_032630.json:
 ```json
 {
-    "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by @craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
+    "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by @craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\nin that order.",
     "created_at": "2008-11-07T20:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
@@ -546,13 +546,11 @@ Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443
 
 This should work. Apply
 
-
 ```
 trac-4443-rebase.patch
 trac-4443-pt2.patch
 trac-4443-pt3.patch
 ```
-
 
 in that order.
 

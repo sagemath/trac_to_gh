@@ -51,7 +51,7 @@ Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-
 archive/issue_comments_038091.json:
 ```json
 {
-    "body": "Hey, I ran into some doctest failures w/ your new change.\n\nSpecifically, around line 839 (in the docstring for weighted_ajacency_matrix(...)):\n\n\n\n```\n        EXAMPLES:\n            sage: G = Graph(sparse=True)\n            sage: G.add_edges([(0,1,1),(1,2,2),(0,2,3),(0,3,4)])\n            sage: M = G.weighted_adjacency_matrix(); M\n            [0 1 3 4]\n            [1 0 2 0]\n            [3 2 0 0]\n            [4 0 0 0]\n            sage: H = Graph(data=M, format='weighted_adjacency_matrix', sparse=True)\n            sage: H == G\n            True\n```\n\n\nThis fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\nAnd Also, the example starting at line 1180 (in the docstring for weighted(...):\n\n\n```\n        EXAMPLE:\n        Here we have two graphs with different labels, but weighted is False\n        for both, so we just check for the presence of edges:\n            sage: G = Graph({0:{1:'a'}}, implementation='networkx')\n            sage: H = Graph({0:{1:'b'}}, implementation='networkx')\n            sage: G == H\n            True\n\n        Now one is weighted and the other is not, so the comparison is done as\n        if neither is weighted:\n            sage: G.weighted(True)\n            sage: H.weighted()\n            False\n            sage: G == H\n            True\n\n```\n\n\nFails.  Because of the change.\n\nThe first of these issues, is a bug and should be fixed IMHO.  The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.",
+    "body": "Hey, I ran into some doctest failures w/ your new change.\n\nSpecifically, around line 839 (in the docstring for weighted_ajacency_matrix(...)):\n\n\n```\n        EXAMPLES:\n            sage: G = Graph(sparse=True)\n            sage: G.add_edges([(0,1,1),(1,2,2),(0,2,3),(0,3,4)])\n            sage: M = G.weighted_adjacency_matrix(); M\n            [0 1 3 4]\n            [1 0 2 0]\n            [3 2 0 0]\n            [4 0 0 0]\n            sage: H = Graph(data=M, format='weighted_adjacency_matrix', sparse=True)\n            sage: H == G\n            True\n```\n\nThis fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\nAnd Also, the example starting at line 1180 (in the docstring for weighted(...):\n\n```\n        EXAMPLE:\n        Here we have two graphs with different labels, but weighted is False\n        for both, so we just check for the presence of edges:\n            sage: G = Graph({0:{1:'a'}}, implementation='networkx')\n            sage: H = Graph({0:{1:'b'}}, implementation='networkx')\n            sage: G == H\n            True\n\n        Now one is weighted and the other is not, so the comparison is done as\n        if neither is weighted:\n            sage: G.weighted(True)\n            sage: H.weighted()\n            False\n            sage: G == H\n            True\n\n```\n\nFails.  Because of the change.\n\nThe first of these issues, is a bug and should be fixed IMHO.  The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.",
     "created_at": "2009-01-24T11:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ archive/issue_comments_038091.json:
 Hey, I ran into some doctest failures w/ your new change.
 
 Specifically, around line 839 (in the docstring for weighted_ajacency_matrix(...)):
-
 
 
 ```
@@ -80,11 +79,9 @@ Specifically, around line 839 (in the docstring for weighted_ajacency_matrix(...
             True
 ```
 
-
 This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)
 
 And Also, the example starting at line 1180 (in the docstring for weighted(...):
-
 
 ```
         EXAMPLE:
@@ -105,7 +102,6 @@ And Also, the example starting at line 1180 (in the docstring for weighted(...):
 
 ```
 
-
 Fails.  Because of the change.
 
 The first of these issues, is a bug and should be fixed IMHO.  The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.
@@ -117,7 +113,7 @@ The first of these issues, is a bug and should be fixed IMHO.  The second issue 
 archive/issue_comments_038092.json:
 ```json
 {
-    "body": "Replying to [comment:1 shumow]:\n> This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\nNot so much a bug, as a typo in the doctest. If you don't say G is weighted, then just adding edges with weights shouldn't change that. In fact, that's the point of the other doctest.\n\n> And Also, the example starting at line 1180 (in the docstring for weighted(...):\n> \n...\n> \n> Fails.  Because of the change.\n> \n> The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.\n\nWell, it's more like we're updating things to actually do it correctly. Before, weighted wasn't a property of graphs, and that test was kind of a warning about that. I don't know of any code that would be affected by this, but I think this is the right way to do things.",
+    "body": "Replying to [comment:1 shumow]:\n> This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\n\nNot so much a bug, as a typo in the doctest. If you don't say G is weighted, then just adding edges with weights shouldn't change that. In fact, that's the point of the other doctest.\n\n> And Also, the example starting at line 1180 (in the docstring for weighted(...):\n> \n\n...\n> \n> Fails.  Because of the change.\n> \n> The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.\n\n\nWell, it's more like we're updating things to actually do it correctly. Before, weighted wasn't a property of graphs, and that test was kind of a warning about that. I don't know of any code that would be affected by this, but I think this is the right way to do things.",
     "created_at": "2009-01-24T12:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
@@ -129,15 +125,18 @@ archive/issue_comments_038092.json:
 Replying to [comment:1 shumow]:
 > This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)
 
+
 Not so much a bug, as a typo in the doctest. If you don't say G is weighted, then just adding edges with weights shouldn't change that. In fact, that's the point of the other doctest.
 
 > And Also, the example starting at line 1180 (in the docstring for weighted(...):
 > 
+
 ...
 > 
 > Fails.  Because of the change.
 > 
 > The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.
+
 
 Well, it's more like we're updating things to actually do it correctly. Before, weighted wasn't a property of graphs, and that test was kind of a warning about that. I don't know of any code that would be affected by this, but I think this is the right way to do things.
 

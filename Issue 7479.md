@@ -3,7 +3,7 @@
 archive/issues_007479.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n32-bit Intel core duo, debian lenny, sage-4.2.1:\n\n\ngeorg`@`HILBERT:~$ sage\n----------------------------------------------------------------------\n| Sage Version 4.2.1, Release Date: 009-11-14                      |\n----------------------------------------------------------------------\nsage: f(x)=x\n| Type notebook() for the GUI, and license() for information.        |\nsage: integrate(f,x,0,1)\n\nsage0\n\nsage: integrate(f,x,0,1)\n\nsage7\n\nsage: integrate(f,x,0,1)\n\nsage12\n\nsage: integrate(f,x,0,1)\n\nsage17\n\nsage: integrate(f,x,0,1).n()\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/georg/<ipython console> in <module>()\n\n/mnt/data/georg/.system/bin/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15863)()\n\n/mnt/data/georg/.system/bin/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2701)()\n\nTypeError: self must be a numeric expression\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7479\n\n",
+    "body": "Assignee: @burcin\n\n32-bit Intel core duo, debian lenny, sage-4.2.1:\n\n\ngeorg`@`HILBERT:~$ sage\n\n---\n| Sage Version 4.2.1, Release Date: 009-11-14                      |\n| Type notebook() for the GUI, and license() for information.        |\n---\nsage: f(x)=x\n\nsage: integrate(f,x,0,1)\n\nsage0\n\nsage: integrate(f,x,0,1)\n\nsage7\n\nsage: integrate(f,x,0,1)\n\nsage12\n\nsage: integrate(f,x,0,1)\n\nsage17\n\nsage: integrate(f,x,0,1).n()\n\n---\nTypeError                                 Traceback (most recent call last)\n\n/home/georg/<ipython console> in <module>()\n\n/mnt/data/georg/.system/bin/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15863)()\n\n/mnt/data/georg/.system/bin/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2701)()\n\nTypeError: self must be a numeric expression\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7479\n\n",
     "created_at": "2009-11-17T11:40:01Z",
     "labels": [
         "component: symbolics",
@@ -22,11 +22,13 @@ Assignee: @burcin
 
 
 georg`@`HILBERT:~$ sage
-----------------------------------------------------------------------
+
+---
 | Sage Version 4.2.1, Release Date: 009-11-14                      |
-----------------------------------------------------------------------
-sage: f(x)=x
 | Type notebook() for the GUI, and license() for information.        |
+---
+sage: f(x)=x
+
 sage: integrate(f,x,0,1)
 
 sage0
@@ -45,7 +47,7 @@ sage17
 
 sage: integrate(f,x,0,1).n()
 
----------------------------------------------------------------------------
+---
 TypeError                                 Traceback (most recent call last)
 
 /home/georg/<ipython console> in <module>()
@@ -104,7 +106,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063023.json:
 ```json
 {
-    "body": "Positive review except there is no doctest to indicate that one can now integrate f(x)=x!  It works:\n\n```\nsage: integrate(f,x,0,1)\n1/2\n```\n\nSo maybe this should be put in somewhere in sage/calculus/calculus.py in tests, or wherever you think is most appropriate.",
+    "body": "Positive review except there is no doctest to indicate that one can now integrate f(x)=x!  It works:\n\n```\nsage: integrate(f,x,0,1)\n1/2\n```\nSo maybe this should be put in somewhere in sage/calculus/calculus.py in tests, or wherever you think is most appropriate.",
     "created_at": "2009-11-17T20:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7479",
     "type": "issue_comment",
@@ -119,7 +121,6 @@ Positive review except there is no doctest to indicate that one can now integrat
 sage: integrate(f,x,0,1)
 1/2
 ```
-
 So maybe this should be put in somewhere in sage/calculus/calculus.py in tests, or wherever you think is most appropriate.
 
 

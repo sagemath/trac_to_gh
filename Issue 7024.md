@@ -3,7 +3,7 @@
 archive/issues_007024.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\nFlitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. \n\n\n\n```\n\nflint-1.3.0.p2/src/profiler.h\nflint-1.3.0.p2/src/mpn_extras-test.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nFound gcc 4 or later\nTurning off loop unrolling on Solaris/Sparc\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'\ngcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c\n```\n\n\nThis needs fixing to add support for the Sun Studio compilers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7024\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\nFlitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. \n\n\n```\n\nflint-1.3.0.p2/src/profiler.h\nflint-1.3.0.p2/src/mpn_extras-test.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nFound gcc 4 or later\nTurning off loop unrolling on Solaris/Sparc\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'\ngcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c\n```\n\nThis needs fixing to add support for the Sun Studio compilers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7024\n\n",
     "created_at": "2009-09-27T10:57:28Z",
     "labels": [
         "component: build",
@@ -21,7 +21,6 @@ Assignee: tbd
 CC:  jpflori
 
 Flitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. 
-
 
 
 ```
@@ -44,7 +43,6 @@ Turning off loop unrolling on Solaris/Sparc
 make[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'
 gcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c
 ```
-
 
 This needs fixing to add support for the Sun Studio compilers.
 

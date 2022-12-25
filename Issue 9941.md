@@ -3,7 +3,7 @@
 archive/issues_009941.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @qed777\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9942\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @qed777\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9942\n\n",
     "created_at": "2010-09-18T18:04:01Z",
     "labels": [
         "component: algebraic topology",
@@ -35,7 +35,6 @@ Got:
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9942
 
 
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9942
 archive/issue_comments_098826.json:
 ```json
 {
-    "body": "On OS X 10.6, cell_complex passes all tests (with the same options as above), but I do get:\n\n\n\n```\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 10:\n    sage: test_random_chain_complex(trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 20 according to CHomP: Z^16\n    Homology in dimension 20 according to Sage: Z^16\n    Chain complex: {20: 34 x 50 sparse matrix over Integer Ring, 21: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 34394830719288133598462639118695428033\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 11:\n    sage: test_random_chain_complex(level=2, trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -32 according to CHomP: Z^24\n    Homology in dimension -32 according to Sage: Z^24\n    Chain complex: {-32: [-26  -3 724   0   0  -9  -2   1  -1  -5   1   1   0  -2   0   8  15   1  -1   0   2  -1   2  -1 132   1   0]\n    [ -6   2  -1   0 -10  -2   1   1   4   1   0  -1  -3   0 266   5   0  -1  10  -1  -2  -1   1   1  -2   1  -1]\n    [  1   5  -2  -1   2   1   1   1  -7  -1 -12   0  -2  -1   0  -2   1   1  32  -4   0   2   8  -1  -6   1   0], -33: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 27072195692990853427961476841312173568\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 12:\n    sage: test_random_chain_complex(level=4, trials=20)  # long time # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -32 according to CHomP: 0\n    Homology in dimension -32 according to Sage: 0\n    Chain complex: {-32: 0 x 59 dense matrix over Integer Ring, -33: 59 x 108 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 87149713787488187057113721275525857721\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 72:\n    sage: test_random_chain_complex(trials=2)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 17 according to CHomP: Z^6\n    Homology in dimension 17 according to Sage: Z^6\n    Chain complex: {17: [ -1 -10 -38   6   0   0  -2   3  -1]\n    [ -2   0   2  -1  -1   1  -1   0   1]\n    [ -4  -1   1   8   0  -2  -6   1   2], 18: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 133823518449144789725728141987438003198\n    ValueError()\n**********************************************************************\n```\n",
+    "body": "On OS X 10.6, cell_complex passes all tests (with the same options as above), but I do get:\n\n\n```\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 10:\n    sage: test_random_chain_complex(trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 20 according to CHomP: Z^16\n    Homology in dimension 20 according to Sage: Z^16\n    Chain complex: {20: 34 x 50 sparse matrix over Integer Ring, 21: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 34394830719288133598462639118695428033\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 11:\n    sage: test_random_chain_complex(level=2, trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -32 according to CHomP: Z^24\n    Homology in dimension -32 according to Sage: Z^24\n    Chain complex: {-32: [-26  -3 724   0   0  -9  -2   1  -1  -5   1   1   0  -2   0   8  15   1  -1   0   2  -1   2  -1 132   1   0]\n    [ -6   2  -1   0 -10  -2   1   1   4   1   0  -1  -3   0 266   5   0  -1  10  -1  -2  -1   1   1  -2   1  -1]\n    [  1   5  -2  -1   2   1   1   1  -7  -1 -12   0  -2  -1   0  -2   1   1  32  -4   0   2   8  -1  -6   1   0], -33: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 27072195692990853427961476841312173568\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 12:\n    sage: test_random_chain_complex(level=4, trials=20)  # long time # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -32 according to CHomP: 0\n    Homology in dimension -32 according to Sage: 0\n    Chain complex: {-32: 0 x 59 dense matrix over Integer Ring, -33: 59 x 108 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 87149713787488187057113721275525857721\n    ValueError()\n**********************************************************************\nFile \"/Volumes/E/sage-4.6.rc0/devel/sage/sage/homology/tests.py\", line 72:\n    sage: test_random_chain_complex(trials=2)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 17 according to CHomP: Z^6\n    Homology in dimension 17 according to Sage: Z^6\n    Chain complex: {17: [ -1 -10 -38   6   0   0  -2   3  -1]\n    [ -2   0   2  -1  -1   1  -1   0   1]\n    [ -4  -1   1   8   0  -2  -6   1   2], 18: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 133823518449144789725728141987438003198\n    ValueError()\n**********************************************************************\n```",
     "created_at": "2010-10-27T16:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
@@ -57,7 +56,6 @@ archive/issue_comments_098826.json:
 ```
 
 On OS X 10.6, cell_complex passes all tests (with the same options as above), but I do get:
-
 
 
 ```
@@ -127,7 +125,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_098827.json:
@@ -189,7 +186,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098830.json:
 ```json
 {
-    "body": "> The tests seem to pass on OS X and Solaris (fulvia) and OpenSolaris \n\n(By \"seem to pass\", I mean that they pass on all of the machines on which I've tested them, but I can't guarantee that they would pass on all Solaris and/or OpenSolaris boxes.)",
+    "body": "> The tests seem to pass on OS X and Solaris (fulvia) and OpenSolaris \n\n\n(By \"seem to pass\", I mean that they pass on all of the machines on which I've tested them, but I can't guarantee that they would pass on all Solaris and/or OpenSolaris boxes.)",
     "created_at": "2010-11-20T06:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
@@ -199,6 +196,7 @@ archive/issue_comments_098830.json:
 ```
 
 > The tests seem to pass on OS X and Solaris (fulvia) and OpenSolaris 
+
 
 (By "seem to pass", I mean that they pass on all of the machines on which I've tested them, but I can't guarantee that they would pass on all Solaris and/or OpenSolaris boxes.)
 

@@ -125,7 +125,7 @@ I have sage 4.3.5 and have been manually applying the doc patches. This one does
 archive/issue_comments_081552.json:
 ```json
 {
-    "body": "Replying to [comment:3 mjordan7]:\n> I have sage 4.3.5 and have been manually applying the doc patches. This one does not apply even though I have the prereqs.\n\nI didn't mention that you need to apply patches on top of Sage 4.4.1. The patches on this ticket and the prequisite ticket were produced on top of Sage 4.4.1. Sorry for the inconvenience.",
+    "body": "Replying to [comment:3 mjordan7]:\n> I have sage 4.3.5 and have been manually applying the doc patches. This one does not apply even though I have the prereqs.\n\n\nI didn't mention that you need to apply patches on top of Sage 4.4.1. The patches on this ticket and the prequisite ticket were produced on top of Sage 4.4.1. Sorry for the inconvenience.",
     "created_at": "2010-05-05T20:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ archive/issue_comments_081552.json:
 
 Replying to [comment:3 mjordan7]:
 > I have sage 4.3.5 and have been manually applying the doc patches. This one does not apply even though I have the prereqs.
+
 
 I didn't mention that you need to apply patches on top of Sage 4.4.1. The patches on this ticket and the prequisite ticket were produced on top of Sage 4.4.1. Sorry for the inconvenience.
 
@@ -256,7 +257,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081559.json:
 ```json
 {
-    "body": "Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by @hivert created at 2011-07-28 08:24:19\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by @hivert created at 2011-07-28 08:24:19\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
     "created_at": "2011-07-28T08:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -272,6 +273,7 @@ Replying to [comment:9 jhpalmieri]:
 > `\QQ` from being rendered properly.  This is fixed in #11632, so I've made
 > that a dependency for this ticket.  (Please review it!)
 
+
 I'll do it. 
 
 
@@ -279,6 +281,7 @@ I'll do it.
 > differences between my patch and the previous one.  I'm happy with what
 > you've done, so if you're happy with my changes, give the ticket a positive
 > review.
+
 
 Thanks for correcting my bad English. I'm mostly happy with your change. The
 only remark I have is the removal of the link
@@ -375,7 +378,7 @@ Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/atta
 archive/issue_comments_081563.json:
 ```json
 {
-    "body": "New new patch is updated it should be reviewed. The diff from the preceding patch is:\n\n\n```\n1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 \n1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 \n1.3 @@ -890,7 +890,7 @@ \n1.4 +This tutorial is an introduction to object-oriented programming in Python and \n1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the \n1.6 +most common programming style) -- that is, conditional instructions, loops, \n1.7 -+functions (see the \"Programming\" section of the Sage tutorial) -- but now further knowledge \n1.8 ++functions (see the \"Programming\" section of the Sage tutorial) -- but no further knowledge \n1.9 +about objects and classes is assumed. It is designed as an alternating \n1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at \n1.11 +the end. \n```\n",
+    "body": "New new patch is updated it should be reviewed. The diff from the preceding patch is:\n\n```\n1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 \n1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 \n1.3 @@ -890,7 +890,7 @@ \n1.4 +This tutorial is an introduction to object-oriented programming in Python and \n1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the \n1.6 +most common programming style) -- that is, conditional instructions, loops, \n1.7 -+functions (see the \"Programming\" section of the Sage tutorial) -- but now further knowledge \n1.8 ++functions (see the \"Programming\" section of the Sage tutorial) -- but no further knowledge \n1.9 +about objects and classes is assumed. It is designed as an alternating \n1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at \n1.11 +the end. \n```",
     "created_at": "2011-08-31T09:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -385,7 +388,6 @@ archive/issue_comments_081563.json:
 ```
 
 New new patch is updated it should be reviewed. The diff from the preceding patch is:
-
 
 ```
 1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 
@@ -400,7 +402,6 @@ New new patch is updated it should be reviewed. The diff from the preceding patc
 1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at 
 1.11 +the end. 
 ```
-
 
 
 
@@ -445,7 +446,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081566.json:
 ```json
 {
-    "body": "Replying to [comment:14 hivert]:\n> New new patch is updated it should be reviewed. The diff from the preceding patch is:\n> \n> {{{\n> 1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 \n> 1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 \n> 1.3 `@``@` -890,7 +890,7 `@``@` \n> 1.4 +This tutorial is an introduction to object-oriented programming in Python and \n> 1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the \n> 1.6 +most common programming style) -- that is, conditional instructions, loops, \n> 1.7 -+functions (see the \"Programming\" section of the Sage tutorial) -- but now further knowledge \n> 1.8 ++functions (see the \"Programming\" section of the Sage tutorial) -- but no further knowledge \n> 1.9 +about objects and classes is assumed. It is designed as an alternating \n> 1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at \n> 1.11 +the end. \n> }}}\n\nI suggested that tiny change, so positive review on it :-)",
+    "body": "Replying to [comment:14 hivert]:\n> New new patch is updated it should be reviewed. The diff from the preceding patch is:\n> \n> \n> ```\n> 1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 \n> 1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 \n> 1.3 @@ -890,7 +890,7 @@ \n> 1.4 +This tutorial is an introduction to object-oriented programming in Python and \n> 1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the \n> 1.6 +most common programming style) -- that is, conditional instructions, loops, \n> 1.7 -+functions (see the \"Programming\" section of the Sage tutorial) -- but now further knowledge \n> 1.8 ++functions (see the \"Programming\" section of the Sage tutorial) -- but no further knowledge \n> 1.9 +about objects and classes is assumed. It is designed as an alternating \n> 1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at \n> 1.11 +the end. \n> ```\n\n\nI suggested that tiny change, so positive review on it :-)",
     "created_at": "2011-08-31T11:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
@@ -457,10 +458,11 @@ archive/issue_comments_081566.json:
 Replying to [comment:14 hivert]:
 > New new patch is updated it should be reviewed. The diff from the preceding patch is:
 > 
-> {{{
+> 
+> ```
 > 1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 
 > 1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 
-> 1.3 `@``@` -890,7 +890,7 `@``@` 
+> 1.3 @@ -890,7 +890,7 @@ 
 > 1.4 +This tutorial is an introduction to object-oriented programming in Python and 
 > 1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the 
 > 1.6 +most common programming style) -- that is, conditional instructions, loops, 
@@ -469,7 +471,8 @@ Replying to [comment:14 hivert]:
 > 1.9 +about objects and classes is assumed. It is designed as an alternating 
 > 1.10 +sequence of formal introduction and exercises. :ref:`solutions` are given at 
 > 1.11 +the end. 
-> }}}
+> ```
+
 
 I suggested that tiny change, so positive review on it :-)
 

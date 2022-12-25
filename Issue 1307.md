@@ -3,7 +3,7 @@
 archive/issues_001307.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  mvngu @dimpase\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist:\n\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  mvngu @dimpase\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist:\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
     "created_at": "2007-11-28T19:54:36Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ Keywords: graphs
 
 From Chris Godsil's wishlist:
 
-
 ```
 > 
 >>> A database of small graphs. Put Ted Spence's strongly regular graphs
@@ -32,7 +31,6 @@ From Chris Godsil's wishlist:
 >>> themselves,
 >>> we would not necessarily need much data.)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1307
 

@@ -3,7 +3,7 @@
 archive/issues_003001.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn sage-spkg \"gcc -v\" is used, instead of \"${CC-gcc} -v\". Easy fix:\n\n```\n\n---------------------------------------------------------------\n--- a/sage-spkg Mon Apr 21 01:43:53 2008 -0700\n+++ b/sage-spkg Tue Apr 22 12:37:48 2008 -0300\n@@ -241,8 +241,8 @@\n\n echo \"****************************************************\"\n echo \"GCC Version\"\n-echo \"gcc -v\"\n-gcc -v\n+echo \"${CC-gcc} -v\"\n+${CC-gcc} -v\n if [ $? -ne 0 ]; then\n   echo \"Unable to determine gcc version.\"\n fi\n---------------------------------------------------------------\n```\n\n\n\nIn sage-env, tests if CC is gcc, which means \"CC=gcc-4.3\" might not\nwork exactly the same as if gcc is a symlink to gcc-4.3, for instance:\n\n```\nif [ \"$SAGE64\" = \"yes\" -a CC = \"gcc\" ]; then\n  CFLAGS=\"$CFLAGS -m64\"\nfi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3001\n\n",
+    "body": "Assignee: mabshoff\n\nIn sage-spkg \"gcc -v\" is used, instead of \"${CC-gcc} -v\". Easy fix:\n\n```\n\n---------------------------------------------------------------\n--- a/sage-spkg Mon Apr 21 01:43:53 2008 -0700\n+++ b/sage-spkg Tue Apr 22 12:37:48 2008 -0300\n@@ -241,8 +241,8 @@\n\n echo \"****************************************************\"\n echo \"GCC Version\"\n-echo \"gcc -v\"\n-gcc -v\n+echo \"${CC-gcc} -v\"\n+${CC-gcc} -v\n if [ $? -ne 0 ]; then\n   echo \"Unable to determine gcc version.\"\n fi\n---------------------------------------------------------------\n```\n\n\nIn sage-env, tests if CC is gcc, which means \"CC=gcc-4.3\" might not\nwork exactly the same as if gcc is a symlink to gcc-4.3, for instance:\n\n```\nif [ \"$SAGE64\" = \"yes\" -a CC = \"gcc\" ]; then\n  CFLAGS=\"$CFLAGS -m64\"\nfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3001\n\n",
     "created_at": "2008-04-22T16:48:10Z",
     "labels": [
         "component: build",
@@ -41,7 +41,6 @@ In sage-spkg "gcc -v" is used, instead of "${CC-gcc} -v". Easy fix:
 ```
 
 
-
 In sage-env, tests if CC is gcc, which means "CC=gcc-4.3" might not
 work exactly the same as if gcc is a symlink to gcc-4.3, for instance:
 
@@ -50,7 +49,6 @@ if [ "$SAGE64" = "yes" -a CC = "gcc" ]; then
   CFLAGS="$CFLAGS -m64"
 fi
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3001
 

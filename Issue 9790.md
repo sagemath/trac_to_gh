@@ -3,7 +3,7 @@
 archive/issues_009790.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n```\nimport weave\nfrom weave import converters\n```\n\n\nshould be\n\n\n```\nfrom scipy.weave import converters\n```\n\n\nSee http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213\n\nIssue created by migration from https://trac.sagemath.org/ticket/9791\n\n",
+    "body": "Assignee: mvngu\n\n```\nimport weave\nfrom weave import converters\n```\n\nshould be\n\n```\nfrom scipy.weave import converters\n```\n\nSee http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213\n\nIssue created by migration from https://trac.sagemath.org/ticket/9791\n\n",
     "created_at": "2010-08-24T01:38:43Z",
     "labels": [
         "component: documentation",
@@ -18,20 +18,16 @@ archive/issues_009790.json:
 ```
 Assignee: mvngu
 
-
 ```
 import weave
 from weave import converters
 ```
 
-
 should be
-
 
 ```
 from scipy.weave import converters
 ```
-
 
 See http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213
 
@@ -117,7 +113,7 @@ I have a new patch, keeping indentation and adding a `sage:` prompt so at least 
 archive/issue_comments_095965.json:
 ```json
 {
-    "body": "Could you also correct\n\n```\n\t\"\"\"\n\n       code=\"\"\"\n```\n\nIt should probably be something like\n\n```\n       code=\"\"\" \"\"\"\n```\n\n\nThe link to the weave tutorial (at the end) doesn't work. Maybe you can fix this, too.",
+    "body": "Could you also correct\n\n```\n\t\"\"\"\n\n       code=\"\"\"\n```\nIt should probably be something like\n\n```\n       code=\"\"\" \"\"\"\n```\n\nThe link to the weave tutorial (at the end) doesn't work. Maybe you can fix this, too.",
     "created_at": "2011-01-25T17:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -133,13 +129,11 @@ Could you also correct
 
        code="""
 ```
-
 It should probably be something like
 
 ```
        code=""" """
 ```
-
 
 The link to the weave tutorial (at the end) doesn't work. Maybe you can fix this, too.
 
@@ -260,7 +254,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_095972.json:
 ```json
 {
-    "body": "Replying to [comment:6 jdemeyer]:\n> This file is a mess, there is more clean-up to do.\n\nReplying to [comment:5 jdemeyer]:\n> Apologies, there is an indentation problem, it's just that you fixed it the wrong way. \n\nI wanted just to post that ^^\n\nThe thing with the \n\n\n\n```\n\"\"\"\n\ncode=\"\"\"\n```\n\n\nis correct since it belongs to the support_code\n\nI add a new patch with that thing corrected + a new updated link.\nI added some blank lines into the 3rd code snippet for a little optical clan up.\n\n\nAt least all examples should work now.",
+    "body": "Replying to [comment:6 jdemeyer]:\n> This file is a mess, there is more clean-up to do.\n\n\nReplying to [comment:5 jdemeyer]:\n> Apologies, there is an indentation problem, it's just that you fixed it the wrong way. \n\n\nI wanted just to post that ^^\n\nThe thing with the \n\n\n```\n\"\"\"\n\ncode=\"\"\"\n```\n\nis correct since it belongs to the support_code\n\nI add a new patch with that thing corrected + a new updated link.\nI added some blank lines into the 3rd code snippet for a little optical clan up.\n\n\nAt least all examples should work now.",
     "created_at": "2011-01-25T17:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -272,13 +266,14 @@ archive/issue_comments_095972.json:
 Replying to [comment:6 jdemeyer]:
 > This file is a mess, there is more clean-up to do.
 
+
 Replying to [comment:5 jdemeyer]:
 > Apologies, there is an indentation problem, it's just that you fixed it the wrong way. 
+
 
 I wanted just to post that ^^
 
 The thing with the 
-
 
 
 ```
@@ -286,7 +281,6 @@ The thing with the
 
 code="""
 ```
-
 
 is correct since it belongs to the support_code
 
@@ -435,7 +429,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095980.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to \"combine\" both our patches?\n\nOk I double checked, and have to admit that I oversaw the optical clean up you did. I think a merge will be the best then =)",
+    "body": "Replying to [comment:11 jdemeyer]:\n> Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to \"combine\" both our patches?\n\n\nOk I double checked, and have to admit that I oversaw the optical clean up you did. I think a merge will be the best then =)",
     "created_at": "2011-01-27T00:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -446,6 +440,7 @@ archive/issue_comments_095980.json:
 
 Replying to [comment:11 jdemeyer]:
 > Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to "combine" both our patches?
+
 
 Ok I double checked, and have to admit that I oversaw the optical clean up you did. I think a merge will be the best then =)
 
@@ -474,7 +469,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095982.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to \"combine\" both our patches?\n\nOk found some time to do the merge myself. I simply applied your patch and added my changes + a small change =)",
+    "body": "Replying to [comment:11 jdemeyer]:\n> Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to \"combine\" both our patches?\n\n\nOk found some time to do the merge myself. I simply applied your patch and added my changes + a small change =)",
     "created_at": "2011-01-27T11:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
@@ -485,6 +480,7 @@ archive/issue_comments_095982.json:
 
 Replying to [comment:11 jdemeyer]:
 > Stefan, I think I have made some useful changes which are not in your patch.  Is there a specific reason for that, or should I try to "combine" both our patches?
+
 
 Ok found some time to do the merge myself. I simply applied your patch and added my changes + a small change =)
 

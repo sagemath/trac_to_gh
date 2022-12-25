@@ -3,7 +3,7 @@
 archive/issues_001599.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: 3.xgcd(0)\n(3, 1, 0)\nsage: 3._xgcd(0)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.')_xgcd(Integer(0))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1599\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: 3.xgcd(0)\n(3, 1, 0)\nsage: 3._xgcd(0)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.')_xgcd(Integer(0))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1599\n\n",
     "created_at": "2007-12-26T15:21:56Z",
     "labels": [
         "component: misc",
@@ -19,7 +19,6 @@ archive/issues_001599.json:
 ```
 Assignee: cwitty
 
-
 ```
 sage: 3.xgcd(0)
 (3, 1, 0)
@@ -30,7 +29,6 @@ sage: 3._xgcd(0)
                          ^
 <type 'exceptions.SyntaxError'>: invalid syntax
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1599

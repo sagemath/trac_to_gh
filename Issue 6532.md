@@ -3,7 +3,7 @@
 archive/issues_006532.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu @haraldschilly\n\nThis was reported by Aleksey G:\n\n\n```\nI tried to install package \"cluster\" for R and got this:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r.install_package(\"cluster\")\nError: object \"sage1\" not found\n```\n\nMinh N replied that the (positively reviewed) patch #6379 \nshould be applied but \"after applying that\npatch, installing cluster, restart Sage, and import the library\ncluster, Sage still doesn't recognize the cluster package. For\nexample, here is what I did under Sage 4.1:\"\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n```\nsage: hg_sage.apply(\"http://www.sagetrac.org/sage_trac/raw-attachment/ticket/6379/trac_6379-Rdoctest.patch\")\n<applying the above patch>\nsage: exit\nExiting SAGE (CPU time 0m0.09s, Wall time 0m18.86s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now install cluster>\nsage: r.install_packages(\"cluster\")\n<now restart Sage>\nsage: exit\nExiting SAGE (CPU time 0m0.50s, Wall time 0m22.15s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now import the package cluster>\nsage: r.library(\"cluster\")\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/16587/_home_mvngu__sage_init_sage_0.py\nin <module>()\n\n/scratch/mvngu/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/r.pyc\nin library(self, library_name)\n   557             # not all warnings (e.g. \"closing unused\nconnection 3\") are fatal\n\n   558             if 'library(' in ret:       # locale-independent key-word\n--> 559                 raise ImportError, \"%s\"%ret\n   560         else:\n   561             try:\n\nImportError: Loading required package: cluster\nWarning message:\nIn library(package, lib.loc = lib.loc, character.only = TRUE,\nlogical.return = TRUE,  :\n there is no package called 'cluster'\n```\n\nfrom\nMinh suspects that cluster has not been installed in a\ndirectory where R (the one bundled with Sage) recognizes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6532\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu @haraldschilly\n\nThis was reported by Aleksey G:\n\n```\nI tried to install package \"cluster\" for R and got this:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r.install_package(\"cluster\")\nError: object \"sage1\" not found\n```\nMinh N replied that the (positively reviewed) patch #6379 \nshould be applied but \"after applying that\npatch, installing cluster, restart Sage, and import the library\ncluster, Sage still doesn't recognize the cluster package. For\nexample, here is what I did under Sage 4.1:\"\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage: hg_sage.apply(\"http://www.sagetrac.org/sage_trac/raw-attachment/ticket/6379/trac_6379-Rdoctest.patch\")\n<applying the above patch>\nsage: exit\nExiting SAGE (CPU time 0m0.09s, Wall time 0m18.86s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now install cluster>\nsage: r.install_packages(\"cluster\")\n<now restart Sage>\nsage: exit\nExiting SAGE (CPU time 0m0.50s, Wall time 0m22.15s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now import the package cluster>\nsage: r.library(\"cluster\")\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/16587/_home_mvngu__sage_init_sage_0.py\nin <module>()\n\n/scratch/mvngu/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/r.pyc\nin library(self, library_name)\n   557             # not all warnings (e.g. \"closing unused\nconnection 3\") are fatal\n\n   558             if 'library(' in ret:       # locale-independent key-word\n--> 559                 raise ImportError, \"%s\"%ret\n   560         else:\n   561             try:\n\nImportError: Loading required package: cluster\nWarning message:\nIn library(package, lib.loc = lib.loc, character.only = TRUE,\nlogical.return = TRUE,  :\n there is no package called 'cluster'\n```\nfrom\nMinh suspects that cluster has not been installed in a\ndirectory where R (the one bundled with Sage) recognizes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6532\n\n",
     "created_at": "2009-07-14T11:15:08Z",
     "labels": [
         "component: packages: standard",
@@ -22,7 +22,6 @@ CC:  @jasongrout mvngu @haraldschilly
 
 This was reported by Aleksey G:
 
-
 ```
 I tried to install package "cluster" for R and got this:
 
@@ -31,7 +30,6 @@ I tried to install package "cluster" for R and got this:
 sage: r.install_package("cluster")
 Error: object "sage1" not found
 ```
-
 Minh N replied that the (positively reviewed) patch #6379 
 should be applied but "after applying that
 patch, installing cluster, restart Sage, and import the library
@@ -39,7 +37,6 @@ cluster, Sage still doesn't recognize the cluster package. For
 example, here is what I did under Sage 4.1:"
 | Sage Version 4.0.2, Release Date: 2009-06-18                       |
 | Type notebook() for the GUI, and license() for information.        |
-
 ```
 sage: hg_sage.apply("http://www.sagetrac.org/sage_trac/raw-attachment/ticket/6379/trac_6379-Rdoctest.patch")
 <applying the above patch>
@@ -76,7 +73,6 @@ In library(package, lib.loc = lib.loc, character.only = TRUE,
 logical.return = TRUE,  :
  there is no package called 'cluster'
 ```
-
 from
 Minh suspects that cluster has not been installed in a
 directory where R (the one bundled with Sage) recognizes.
@@ -129,7 +125,7 @@ Changing assignee from mabshoff to @jasongrout.
 archive/issue_comments_053146.json:
 ```json
 {
-    "body": "Okay, after trying the Sage Ed Day 1 talk I know what happens here.  There are certain packages which are recommended, not required, and those are basically not available on any mirrors, because it is assumed they are in your binary.  Cluster is one, as is MASS.  \n\nSo I am going to change the title to \"Make R build with recommended packages.\"\n\nHere is the fix, due to Jason Grout, from [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/1237cbecacfa6190/97e3a5876d8f6d0a#97e3a5876d8f6d0a):\n\n```\nI just modified the R spkg-install thusly: \ndiff -r b73bca59a75a spkg-install \n--- a/spkg-install      Sun Sep 20 18:25:26 2009 -0700 \n+++ b/spkg-install      Mon Nov 23 20:35:29 2009 -0600 \n@@ -77,19 +77,17 @@ \n  CFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ \"$CFLAGS; export CFLAGS \n  LDFLAGS=\"-L$SAGE_LOCAL/lib/ \"$LDFLAGS; export LDFLAGS \n-# do not build recommended packages for now, for speed. \n- \n  if [ `uname` = \"Darwin\" ]; then \n       echo \"Configuring R for OSX\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" $OSXFW \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib \n--with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" $OSXFW \n  else \n       echo \"Configuring R with ATLAS\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" \n--with-blas=\"-L$SAGE_LOCAL/lib -lf77blas -latlas\" \n--with-lapack=\"-L$SAGE_LOCAL/lib -llapack -lcblas\" $SUN_FLAGS \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib \n--with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" \n--with-blas=\"-L$SAGE_LOCAL/lib -lf77blas -latlas\" \n--with-lapack=\"-L$SAGE_LOCAL/lib -llapack -lcblas\" $SUN_FLAGS \n  fi \n  if [ $? -ne 0 ]; then \n       echo \"Configuring R with fallback options\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=no --with-readline=\"$SAGE_LOCAL\" $OSXFW $SUN_FLAGS \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib --with-x=no \n--with-readline=\"$SAGE_LOCAL\" $OSXFW $SUN_FLAGS \n  fi \n  if [ $? -ne 0 ]; then \n(I just removed the --with-recommended-packages=no switch from all \ncommand lines) \n```\n",
+    "body": "Okay, after trying the Sage Ed Day 1 talk I know what happens here.  There are certain packages which are recommended, not required, and those are basically not available on any mirrors, because it is assumed they are in your binary.  Cluster is one, as is MASS.  \n\nSo I am going to change the title to \"Make R build with recommended packages.\"\n\nHere is the fix, due to Jason Grout, from [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/1237cbecacfa6190/97e3a5876d8f6d0a#97e3a5876d8f6d0a):\n\n```\nI just modified the R spkg-install thusly: \ndiff -r b73bca59a75a spkg-install \n--- a/spkg-install      Sun Sep 20 18:25:26 2009 -0700 \n+++ b/spkg-install      Mon Nov 23 20:35:29 2009 -0600 \n@@ -77,19 +77,17 @@ \n  CFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ \"$CFLAGS; export CFLAGS \n  LDFLAGS=\"-L$SAGE_LOCAL/lib/ \"$LDFLAGS; export LDFLAGS \n-# do not build recommended packages for now, for speed. \n- \n  if [ `uname` = \"Darwin\" ]; then \n       echo \"Configuring R for OSX\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" $OSXFW \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib \n--with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" $OSXFW \n  else \n       echo \"Configuring R with ATLAS\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" \n--with-blas=\"-L$SAGE_LOCAL/lib -lf77blas -latlas\" \n--with-lapack=\"-L$SAGE_LOCAL/lib -llapack -lcblas\" $SUN_FLAGS \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib \n--with-x=$XSUPPORT --with-readline=\"$SAGE_LOCAL\" \n--with-blas=\"-L$SAGE_LOCAL/lib -lf77blas -latlas\" \n--with-lapack=\"-L$SAGE_LOCAL/lib -llapack -lcblas\" $SUN_FLAGS \n  fi \n  if [ $? -ne 0 ]; then \n       echo \"Configuring R with fallback options\" \n-    ./configure --prefix=\"$SAGE_LOCAL\" --with-recommended-packages=no \n--enable-R-shlib --with-x=no --with-readline=\"$SAGE_LOCAL\" $OSXFW $SUN_FLAGS \n+    ./configure --prefix=\"$SAGE_LOCAL\" --enable-R-shlib --with-x=no \n--with-readline=\"$SAGE_LOCAL\" $OSXFW $SUN_FLAGS \n  fi \n  if [ $? -ne 0 ]; then \n(I just removed the --with-recommended-packages=no switch from all \ncommand lines) \n```",
     "created_at": "2009-12-08T15:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -182,7 +178,6 @@ diff -r b73bca59a75a spkg-install
 (I just removed the --with-recommended-packages=no switch from all 
 command lines) 
 ```
-
 
 
 
@@ -301,7 +296,7 @@ Changing status from new to needs_review.
 archive/issue_comments_053153.json:
 ```json
 {
-    "body": "At least on FreeBSD, r-2.10.1 is more broken than r-2.9.2.  Neither version correctly detects libiconv.  The older version at least reports that it's missing a required library during configuration and aborts.  The new version just continues on and compilation fails when it can't #include iconv.h.\n\nIn addition, spkg-install still contains the following quoting errors:\n\n```\nCFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ \"$CFLAGS; export CFLAGS\nLDFLAGS=\"-L$SAGE_LOCAL/lib/ \"$LDFLAGS; export LDFLAGS   \n```\n\nwhich should be written as:\n\n```\nCFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ $CFLAGS\"; export CFLAGS\nLDFLAGS=\"-L$SAGE_LOCAL/lib/ $LDFLAGS\"; export LDFLAGS\n```\n\n\n\nI'm not giving this a negative review as overall, it is no worse than it was before.",
+    "body": "At least on FreeBSD, r-2.10.1 is more broken than r-2.9.2.  Neither version correctly detects libiconv.  The older version at least reports that it's missing a required library during configuration and aborts.  The new version just continues on and compilation fails when it can't #include iconv.h.\n\nIn addition, spkg-install still contains the following quoting errors:\n\n```\nCFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ \"$CFLAGS; export CFLAGS\nLDFLAGS=\"-L$SAGE_LOCAL/lib/ \"$LDFLAGS; export LDFLAGS   \n```\nwhich should be written as:\n\n```\nCFLAGS=\"-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ $CFLAGS\"; export CFLAGS\nLDFLAGS=\"-L$SAGE_LOCAL/lib/ $LDFLAGS\"; export LDFLAGS\n```\n\n\nI'm not giving this a negative review as overall, it is no worse than it was before.",
     "created_at": "2010-01-05T21:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -318,14 +313,12 @@ In addition, spkg-install still contains the following quoting errors:
 CFLAGS="-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ "$CFLAGS; export CFLAGS
 LDFLAGS="-L$SAGE_LOCAL/lib/ "$LDFLAGS; export LDFLAGS   
 ```
-
 which should be written as:
 
 ```
 CFLAGS="-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ $CFLAGS"; export CFLAGS
 LDFLAGS="-L$SAGE_LOCAL/lib/ $LDFLAGS"; export LDFLAGS
 ```
-
 
 
 I'm not giving this a negative review as overall, it is no worse than it was before.
@@ -373,7 +366,7 @@ spkg_check doesn't succeed for me when running this. In the current `r-2.9.2.spk
 archive/issue_comments_053156.json:
 ```json
 {
-    "body": "Hmm, I don't get this.  I also can't find the files involved - probably they were in the temp directory, maybe I had to set a different flag?  Here is my test log from the R installation, on Macintel 10.5.  Can you post your examples?  I have noticed that some other errors seem to be system-dependent.\n\n```\nSuccessfully installed r-2.10.1\nRunning the test suite.\n\nCollecting examples for package \u2018base\u2019\n  Extracting from parsed Rd's .......................................\nRunning examples in package \u2018base\u2019\n\nCollecting examples for package \u2018tools\u2019\n  Extracting from parsed Rd's ....\nRunning examples in package \u2018tools\u2019\n\nCollecting examples for package \u2018utils\u2019\n  Extracting from parsed Rd's ...........\nRunning examples in package \u2018utils\u2019\n\nCollecting examples for package \u2018grDevices\u2019\n  Extracting from parsed Rd's .....\nRunning examples in package \u2018grDevices\u2019\n\nCollecting examples for package \u2018graphics\u2019\n  Extracting from parsed Rd's ......\nRunning examples in package \u2018graphics\u2019\n\nCollecting examples for package \u2018stats\u2019\n  Extracting from parsed Rd's ..............................\nRunning examples in package \u2018stats\u2019\n\nCollecting examples for package \u2018datasets\u2019\n  Extracting from parsed Rd's ........\nRunning examples in package \u2018datasets\u2019\n\nCollecting examples for package \u2018methods\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018methods\u2019\n\nCollecting examples for package \u2018grid\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018grid\u2019\n\nCollecting examples for package \u2018splines\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018splines\u2019\n\nCollecting examples for package \u2018stats4\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018stats4\u2019\n\nCollecting examples for package \u2018tcltk\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018tcltk\u2019\nrunning strict specific tests\nrunning code in 'eval-etc.R' ... OK\ncomparing 'eval-etc.Rout' to './eval-etc.Rout.save' ... OK\nrunning code in 'simple-true.R' ... OK\ncomparing 'simple-true.Rout' to './simple-true.Rout.save' ... OK\nrunning code in 'arith-true.R' ... OK\ncomparing 'arith-true.Rout' to './arith-true.Rout.save' ... OK\nrunning code in 'arith.R' ... OK\ncomparing 'arith.Rout' to './arith.Rout.save' ... OK\nrunning code in 'lm-tests.R' ... OK\ncomparing 'lm-tests.Rout' to './lm-tests.Rout.save' ... OK\nrunning code in 'ok-errors.R' ... OK\ncomparing 'ok-errors.Rout' to './ok-errors.Rout.save' ... OK\nrunning code in 'method-dispatch.R' ... OK\ncomparing 'method-dispatch.Rout' to './method-dispatch.Rout.save' ... OK\nrunning code in 'd-p-q-r-tests.R' ... OK\ncomparing 'd-p-q-r-tests.Rout' to './d-p-q-r-tests.Rout.save' ... OK\nrunning sloppy specific tests\nrunning code in 'complex.R' ... OK\ncomparing 'complex.Rout' to './complex.Rout.save' ... OK\nrunning code in 'print-tests.R' ... OK\ncomparing 'print-tests.Rout' to './print-tests.Rout.save' ... OK\nrunning code in 'lapack.R' ... OK\ncomparing 'lapack.Rout' to './lapack.Rout.save' ... OK\nrunning code in 'datasets.R' ... OK\ncomparing 'datasets.Rout' to './datasets.Rout.save' ... OK\nrunning regression tests ...\nrunning code in 'reg-tests-1.R' ... OK\nrunning code in 'reg-tests-2.R' ... OK\ncomparing 'reg-tests-2.Rout' to './reg-tests-2.Rout.save' ... OK\nrunning code in 'reg-IO.R' ... OK\ncomparing 'reg-IO.Rout' to './reg-IO.Rout.save' ... OK\nrunning code in 'reg-IO2.R' ... OK\ncomparing 'reg-IO2.Rout' to './reg-IO2.Rout.save' ... OK\nrunning code in 'reg-plot.R' ... OK\ncomparing 'reg-plot.ps' to './reg-plot.ps.save' ... OK\nrunning code in 'reg-S4.R' ... OK\ncomparing 'reg-S4.Rout' to './reg-S4.Rout.save' ... OK\nrunning code in 'reg-tests-3.R' ... OK\ncomparing 'reg-tests-3.Rout' to './reg-tests-3.Rout.save' ... OK\nrunning tests of plotting Latin-1\n  expect failure or some differences if not in a Latin or UTF-8 locale\nrunning code in 'reg-plot-latin1.R' ... OK\ncomparing 'reg-plot-latin1.ps' to './reg-plot-latin1.ps.save' ... OK\nrunning tests of Internet and socket functions\n  expect some differences\nrunning code in 'internet.R' ... OK\ncomparing 'internet.Rout' to './internet.Rout.save' ...17c17\n< [1] 2141\n---\n> [1] 2088\n OK\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.spkg\n```\n",
+    "body": "Hmm, I don't get this.  I also can't find the files involved - probably they were in the temp directory, maybe I had to set a different flag?  Here is my test log from the R installation, on Macintel 10.5.  Can you post your examples?  I have noticed that some other errors seem to be system-dependent.\n\n```\nSuccessfully installed r-2.10.1\nRunning the test suite.\n\nCollecting examples for package \u2018base\u2019\n  Extracting from parsed Rd's .......................................\nRunning examples in package \u2018base\u2019\n\nCollecting examples for package \u2018tools\u2019\n  Extracting from parsed Rd's ....\nRunning examples in package \u2018tools\u2019\n\nCollecting examples for package \u2018utils\u2019\n  Extracting from parsed Rd's ...........\nRunning examples in package \u2018utils\u2019\n\nCollecting examples for package \u2018grDevices\u2019\n  Extracting from parsed Rd's .....\nRunning examples in package \u2018grDevices\u2019\n\nCollecting examples for package \u2018graphics\u2019\n  Extracting from parsed Rd's ......\nRunning examples in package \u2018graphics\u2019\n\nCollecting examples for package \u2018stats\u2019\n  Extracting from parsed Rd's ..............................\nRunning examples in package \u2018stats\u2019\n\nCollecting examples for package \u2018datasets\u2019\n  Extracting from parsed Rd's ........\nRunning examples in package \u2018datasets\u2019\n\nCollecting examples for package \u2018methods\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018methods\u2019\n\nCollecting examples for package \u2018grid\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018grid\u2019\n\nCollecting examples for package \u2018splines\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018splines\u2019\n\nCollecting examples for package \u2018stats4\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018stats4\u2019\n\nCollecting examples for package \u2018tcltk\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018tcltk\u2019\nrunning strict specific tests\nrunning code in 'eval-etc.R' ... OK\ncomparing 'eval-etc.Rout' to './eval-etc.Rout.save' ... OK\nrunning code in 'simple-true.R' ... OK\ncomparing 'simple-true.Rout' to './simple-true.Rout.save' ... OK\nrunning code in 'arith-true.R' ... OK\ncomparing 'arith-true.Rout' to './arith-true.Rout.save' ... OK\nrunning code in 'arith.R' ... OK\ncomparing 'arith.Rout' to './arith.Rout.save' ... OK\nrunning code in 'lm-tests.R' ... OK\ncomparing 'lm-tests.Rout' to './lm-tests.Rout.save' ... OK\nrunning code in 'ok-errors.R' ... OK\ncomparing 'ok-errors.Rout' to './ok-errors.Rout.save' ... OK\nrunning code in 'method-dispatch.R' ... OK\ncomparing 'method-dispatch.Rout' to './method-dispatch.Rout.save' ... OK\nrunning code in 'd-p-q-r-tests.R' ... OK\ncomparing 'd-p-q-r-tests.Rout' to './d-p-q-r-tests.Rout.save' ... OK\nrunning sloppy specific tests\nrunning code in 'complex.R' ... OK\ncomparing 'complex.Rout' to './complex.Rout.save' ... OK\nrunning code in 'print-tests.R' ... OK\ncomparing 'print-tests.Rout' to './print-tests.Rout.save' ... OK\nrunning code in 'lapack.R' ... OK\ncomparing 'lapack.Rout' to './lapack.Rout.save' ... OK\nrunning code in 'datasets.R' ... OK\ncomparing 'datasets.Rout' to './datasets.Rout.save' ... OK\nrunning regression tests ...\nrunning code in 'reg-tests-1.R' ... OK\nrunning code in 'reg-tests-2.R' ... OK\ncomparing 'reg-tests-2.Rout' to './reg-tests-2.Rout.save' ... OK\nrunning code in 'reg-IO.R' ... OK\ncomparing 'reg-IO.Rout' to './reg-IO.Rout.save' ... OK\nrunning code in 'reg-IO2.R' ... OK\ncomparing 'reg-IO2.Rout' to './reg-IO2.Rout.save' ... OK\nrunning code in 'reg-plot.R' ... OK\ncomparing 'reg-plot.ps' to './reg-plot.ps.save' ... OK\nrunning code in 'reg-S4.R' ... OK\ncomparing 'reg-S4.Rout' to './reg-S4.Rout.save' ... OK\nrunning code in 'reg-tests-3.R' ... OK\ncomparing 'reg-tests-3.Rout' to './reg-tests-3.Rout.save' ... OK\nrunning tests of plotting Latin-1\n  expect failure or some differences if not in a Latin or UTF-8 locale\nrunning code in 'reg-plot-latin1.R' ... OK\ncomparing 'reg-plot-latin1.ps' to './reg-plot-latin1.ps.save' ... OK\nrunning tests of Internet and socket functions\n  expect some differences\nrunning code in 'internet.R' ... OK\ncomparing 'internet.Rout' to './internet.Rout.save' ...17c17\n< [1] 2141\n---\n> [1] 2088\n OK\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.spkg\n```",
     "created_at": "2010-01-19T16:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -495,13 +488,12 @@ Finished installing r-2.10.1.spkg
 
 
 
-
 ---
 
 archive/issue_comments_053157.json:
 ```json
 {
-    "body": "Perhaps this is somehow (weirdly) platform-dependent, or maybe there are add-ons R assumes one has... here is the report from boxen.math:\n\n```\nCollecting examples for package \u2018base\u2019\n  Extracting from parsed Rd's .......................................\nRunning examples in package \u2018base\u2019\nError: testing 'base' failed\nExecution halted\nmake[3]: *** [test-Examples-Base] Error 1\nmake[3]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests/Examples'\nmake[2]: *** [test-Examples] Error 2\nmake[2]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests'\nmake[1]: *** [test-all-basics] Error 1\nmake[1]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests'\nmake: *** [check] Error 2\nError while running the R testsuite ... exiting\n*************************************\nError testing package ** r-2.10.1 **\n*************************************\nsage: An error occurred while testing r-2.10.1\n```\n",
+    "body": "Perhaps this is somehow (weirdly) platform-dependent, or maybe there are add-ons R assumes one has... here is the report from boxen.math:\n\n```\nCollecting examples for package \u2018base\u2019\n  Extracting from parsed Rd's .......................................\nRunning examples in package \u2018base\u2019\nError: testing 'base' failed\nExecution halted\nmake[3]: *** [test-Examples-Base] Error 1\nmake[3]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests/Examples'\nmake[2]: *** [test-Examples] Error 2\nmake[2]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests'\nmake[1]: *** [test-all-basics] Error 1\nmake[1]: Leaving directory `/home/.../sage-4.3-linux-sage.math.washington.edu-x86_64-Linux/spkg/build/r-2.10.1/src/tests'\nmake: *** [check] Error 2\nError while running the R testsuite ... exiting\n*************************************\nError testing package ** r-2.10.1 **\n*************************************\nsage: An error occurred while testing r-2.10.1\n```",
     "created_at": "2010-01-19T19:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -534,13 +526,12 @@ sage: An error occurred while testing r-2.10.1
 
 
 
-
 ---
 
 archive/issue_comments_053158.json:
 ```json
 {
-    "body": "It looks like the failing tests on my system were due to the `Matrix` package failing to build correctly because I hadn't set `SAGE_FORTRAN` properly before building sage. After doing that right, `spkg-check` ran without any trouble.\n\n\nThis is the snippet from the build log that shows the problem:\n\n\n```\n** building package indices ...\nLoading required package: Matrix\nError in dyn.load(file, DLLpath = DLLpath, ...) : \n  unable to load shared library '/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/library/Matrix/libs/Matrix.so':\n  /data/sage/sage-4.3.1.rc0/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nError : require(Matrix, save = FALSE) is not TRUE\nERROR: installing package indices failed\n* removing \u2018/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/library/Matrix\u2019\nmake[2]: *** [Matrix.ts] Error 1\nmake[2]: Leaving directory `/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/src/library/Recommended'\n```\n",
+    "body": "It looks like the failing tests on my system were due to the `Matrix` package failing to build correctly because I hadn't set `SAGE_FORTRAN` properly before building sage. After doing that right, `spkg-check` ran without any trouble.\n\n\nThis is the snippet from the build log that shows the problem:\n\n```\n** building package indices ...\nLoading required package: Matrix\nError in dyn.load(file, DLLpath = DLLpath, ...) : \n  unable to load shared library '/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/library/Matrix/libs/Matrix.so':\n  /data/sage/sage-4.3.1.rc0/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nError : require(Matrix, save = FALSE) is not TRUE\nERROR: installing package indices failed\n* removing \u2018/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/library/Matrix\u2019\nmake[2]: *** [Matrix.ts] Error 1\nmake[2]: Leaving directory `/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src/src/library/Recommended'\n```",
     "created_at": "2010-01-19T20:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -553,7 +544,6 @@ It looks like the failing tests on my system were due to the `Matrix` package fa
 
 
 This is the snippet from the build log that shows the problem:
-
 
 ```
 ** building package indices ...
@@ -570,13 +560,12 @@ make[2]: Leaving directory `/data/sage/sage-4.3.1.rc0/spkg/standard/r-2.10.1/src
 
 
 
-
 ---
 
 archive/issue_comments_053159.json:
 ```json
 {
-    "body": "This makes sense - the various R packages have heavy intertwined dependencies as well as dependencies on outside programs, and some of them won't build right on various machines (the Sage cluster, for instance, doesn't have OpenGL so it can't build a mostly computational package, depth, which requires rgl for displaying its computations). \n\nDo you know how I might go about checking what SAGE_FORTRAN is on a Linux machine?  I mean other than \n\n```\necho $SAGE_FORTRAN\n```\n\nwhich of course gives me nothing.  Maybe the spkg-install needs to be even better about finding the \"right\" Fortran?  Currently it is \n\n```\nFC=sage_fortran; export FC\nF77=sage_fortran; export F77\n```\n\nAlso, make check just exits when something dies.  It would be nice if spkg-check actually returned a useful error message, but I have no idea how to do that, as I am not a shell script guru.",
+    "body": "This makes sense - the various R packages have heavy intertwined dependencies as well as dependencies on outside programs, and some of them won't build right on various machines (the Sage cluster, for instance, doesn't have OpenGL so it can't build a mostly computational package, depth, which requires rgl for displaying its computations). \n\nDo you know how I might go about checking what SAGE_FORTRAN is on a Linux machine?  I mean other than \n\n```\necho $SAGE_FORTRAN\n```\nwhich of course gives me nothing.  Maybe the spkg-install needs to be even better about finding the \"right\" Fortran?  Currently it is \n\n```\nFC=sage_fortran; export FC\nF77=sage_fortran; export F77\n```\nAlso, make check just exits when something dies.  It would be nice if spkg-check actually returned a useful error message, but I have no idea how to do that, as I am not a shell script guru.",
     "created_at": "2010-01-19T20:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -592,14 +581,12 @@ Do you know how I might go about checking what SAGE_FORTRAN is on a Linux machin
 ```
 echo $SAGE_FORTRAN
 ```
-
 which of course gives me nothing.  Maybe the spkg-install needs to be even better about finding the "right" Fortran?  Currently it is 
 
 ```
 FC=sage_fortran; export FC
 F77=sage_fortran; export F77
 ```
-
 Also, make check just exits when something dies.  It would be nice if spkg-check actually returned a useful error message, but I have no idea how to do that, as I am not a shell script guru.
 
 
@@ -666,7 +653,7 @@ by looking at the `src/tests/Examples/base-Ex.Rout.fail` file it should have cre
 archive/issue_comments_053163.json:
 ```json
 {
-    "body": "Replying to [comment:17 wjp]:\n> You'll have to manually remove the `local/lib/gcc-lib/` directory to get rid of the old one, by the way. It would be good if this caused your test failures as well.\n> \n\nHmm, I didn't even have to do that.  As far as I can tell, this fixed the problem!\n\n> For the `\"Error: testing 'base' failed\"` error you mentioned, you can get more info \n> by looking at the `src/tests/Examples/base-Ex.Rout.fail` file it should have created.\n\nYes, I already did that and asked for help on the R list, though hopefully this will do it.  We'll see.",
+    "body": "Replying to [comment:17 wjp]:\n> You'll have to manually remove the `local/lib/gcc-lib/` directory to get rid of the old one, by the way. It would be good if this caused your test failures as well.\n> \n\n\nHmm, I didn't even have to do that.  As far as I can tell, this fixed the problem!\n\n> For the `\"Error: testing 'base' failed\"` error you mentioned, you can get more info \n> by looking at the `src/tests/Examples/base-Ex.Rout.fail` file it should have created.\n\n\nYes, I already did that and asked for help on the R list, though hopefully this will do it.  We'll see.",
     "created_at": "2010-01-19T20:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -679,10 +666,12 @@ Replying to [comment:17 wjp]:
 > You'll have to manually remove the `local/lib/gcc-lib/` directory to get rid of the old one, by the way. It would be good if this caused your test failures as well.
 > 
 
+
 Hmm, I didn't even have to do that.  As far as I can tell, this fixed the problem!
 
 > For the `"Error: testing 'base' failed"` error you mentioned, you can get more info 
 > by looking at the `src/tests/Examples/base-Ex.Rout.fail` file it should have created.
+
 
 Yes, I already did that and asked for help on the R list, though hopefully this will do it.  We'll see.
 
@@ -711,7 +700,7 @@ Reviewing this should close #6279, #2198, and I believe also #5246 and #4959.  I
 archive/issue_comments_053165.json:
 ```json
 {
-    "body": "Prior to installation, I exported the check variable:\n\n```\nexport SAGE_CHECK=yes\n```\n\nThe updated R package was checked after successful compilation. After successfully installing [r-2.10.1.spkg](http://boxen.math.washington.edu/home/kcrisman/r-2.10.1.spkg), I installed the cluster package with `r.install_packages(\"cluster\")`. It works:\n\n```\nsage: r_console()\n\nR version 2.10.1 (2009-12-14)\nCopyright (C) 2009 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\n  Natural language support but running in an English locale\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n> library(\"cluster\")\n> data(votes.repub)\n> agn1 <- agnes(votes.repub, metric=\"manhattan\", stand=TRUE)\n> agn1\nCall:\t agnes(x = votes.repub, metric = \"manhattan\", stand = TRUE) \nAgglomerative coefficient:  0.7977555 \nOrder of objects:\n [1] Alabama        Georgia        Arkansas       Louisiana      Mississippi   \n [6] South Carolina Alaska         Vermont        Arizona        Montana       \n[11] Nevada         Colorado       Idaho          Wyoming        Utah          \n[16] California     Oregon         Washington     Minnesota      Connecticut   \n[21] New York       New Jersey     Illinois       Ohio           Indiana       \n[26] Michigan       Pennsylvania   New Hampshire  Wisconsin      Delaware      \n[31] Kentucky       Maryland       Missouri       New Mexico     West Virginia \n[36] Iowa           South Dakota   North Dakota   Kansas         Nebraska      \n[41] Maine          Massachusetts  Rhode Island   Florida        North Carolina\n[46] Tennessee      Virginia       Oklahoma       Hawaii         Texas         \nHeight (summary):\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  8.382  12.800  18.530  23.120  28.410  87.460 \n\nAvailable components:\n[1] \"order\"     \"height\"    \"ac\"        \"merge\"     \"diss\"      \"call\"     \n[7] \"method\"    \"order.lab\" \"data\"\n```\n\nThe installation (of at least the \"cluster\" package) works both from within the R console (i.e. r_console()), and using the command r.install_packages(). Positive review from me.",
+    "body": "Prior to installation, I exported the check variable:\n\n```\nexport SAGE_CHECK=yes\n```\nThe updated R package was checked after successful compilation. After successfully installing [r-2.10.1.spkg](http://boxen.math.washington.edu/home/kcrisman/r-2.10.1.spkg), I installed the cluster package with `r.install_packages(\"cluster\")`. It works:\n\n```\nsage: r_console()\n\nR version 2.10.1 (2009-12-14)\nCopyright (C) 2009 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\n  Natural language support but running in an English locale\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n> library(\"cluster\")\n> data(votes.repub)\n> agn1 <- agnes(votes.repub, metric=\"manhattan\", stand=TRUE)\n> agn1\nCall:\t agnes(x = votes.repub, metric = \"manhattan\", stand = TRUE) \nAgglomerative coefficient:  0.7977555 \nOrder of objects:\n [1] Alabama        Georgia        Arkansas       Louisiana      Mississippi   \n [6] South Carolina Alaska         Vermont        Arizona        Montana       \n[11] Nevada         Colorado       Idaho          Wyoming        Utah          \n[16] California     Oregon         Washington     Minnesota      Connecticut   \n[21] New York       New Jersey     Illinois       Ohio           Indiana       \n[26] Michigan       Pennsylvania   New Hampshire  Wisconsin      Delaware      \n[31] Kentucky       Maryland       Missouri       New Mexico     West Virginia \n[36] Iowa           South Dakota   North Dakota   Kansas         Nebraska      \n[41] Maine          Massachusetts  Rhode Island   Florida        North Carolina\n[46] Tennessee      Virginia       Oklahoma       Hawaii         Texas         \nHeight (summary):\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  8.382  12.800  18.530  23.120  28.410  87.460 \n\nAvailable components:\n[1] \"order\"     \"height\"    \"ac\"        \"merge\"     \"diss\"      \"call\"     \n[7] \"method\"    \"order.lab\" \"data\"\n```\nThe installation (of at least the \"cluster\" package) works both from within the R console (i.e. r_console()), and using the command r.install_packages(). Positive review from me.",
     "created_at": "2010-01-25T23:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
@@ -725,7 +714,6 @@ Prior to installation, I exported the check variable:
 ```
 export SAGE_CHECK=yes
 ```
-
 The updated R package was checked after successful compilation. After successfully installing [r-2.10.1.spkg](http://boxen.math.washington.edu/home/kcrisman/r-2.10.1.spkg), I installed the cluster package with `r.install_packages("cluster")`. It works:
 
 ```
@@ -774,7 +762,6 @@ Available components:
 [1] "order"     "height"    "ac"        "merge"     "diss"      "call"     
 [7] "method"    "order.lab" "data"
 ```
-
 The installation (of at least the "cluster" package) works both from within the R console (i.e. r_console()), and using the command r.install_packages(). Positive review from me.
 
 

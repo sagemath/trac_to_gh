@@ -139,7 +139,7 @@ Resolution changed from fixed to
 archive/issue_comments_030775.json:
 ```json
 {
-    "body": "With the patch applied I get\n\n```\nsage -t  devel/sage/sage/combinat/partition.py              \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/tmp/partition.py\", line 604:\n    sage: Partition([]).dominates([1])\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\n\nI assumed that at least the patched file would be doctested :(\n\nCheers,\n\nMichael",
+    "body": "With the patch applied I get\n\n```\nsage -t  devel/sage/sage/combinat/partition.py              \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/tmp/partition.py\", line 604:\n    sage: Partition([]).dominates([1])\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\nI assumed that at least the patched file would be doctested :(\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T17:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4242",
     "type": "issue_comment",
@@ -161,7 +161,6 @@ Got:
     True
 **********************************************************************
 ```
-
 
 I assumed that at least the patched file would be doctested :(
 

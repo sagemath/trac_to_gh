@@ -92,7 +92,7 @@ archive/issue_comments_032962.json:
 archive/issue_comments_032963.json:
 ```json
 {
-    "body": "Just found the following in notebook.Notebook.html\n\n\n```\n# Uncomment this to force rename when the worksheet is opened (annoying!)\n#if W and W.name() == \"Untitled\":\n#    head += '<script  type=\"text/javascript\">setTimeout(\"rename_worksheet()\",1)</script>'\n```\n",
+    "body": "Just found the following in notebook.Notebook.html\n\n```\n# Uncomment this to force rename when the worksheet is opened (annoying!)\n#if W and W.name() == \"Untitled\":\n#    head += '<script  type=\"text/javascript\">setTimeout(\"rename_worksheet()\",1)</script>'\n```",
     "created_at": "2008-12-06T05:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
@@ -103,13 +103,11 @@ archive/issue_comments_032963.json:
 
 Just found the following in notebook.Notebook.html
 
-
 ```
 # Uncomment this to force rename when the worksheet is opened (annoying!)
 #if W and W.name() == "Untitled":
 #    head += '<script  type="text/javascript">setTimeout("rename_worksheet()",1)</script>'
 ```
-
 
 
 

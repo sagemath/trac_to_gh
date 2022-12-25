@@ -99,7 +99,7 @@ Sorry if I don't get this right, but doesn't functools.partial already fulfill t
 archive/issue_comments_041686.json:
 ```json
 {
-    "body": "Do you mean something like this?\n\n\n```\nfrom functools import partial\n\ndef partial_dec(*args, **kwds):\n    def p(f):\n        return partial(f,*args,**kwds)\n    return p\n    \n@partial_dec(b=2)\ndef f(a,b):\n    return 10*a+b\n\nf(4)\n```\n",
+    "body": "Do you mean something like this?\n\n```\nfrom functools import partial\n\ndef partial_dec(*args, **kwds):\n    def p(f):\n        return partial(f,*args,**kwds)\n    return p\n    \n@partial_dec(b=2)\ndef f(a,b):\n    return 10*a+b\n\nf(4)\n```",
     "created_at": "2009-10-23T17:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ archive/issue_comments_041686.json:
 ```
 
 Do you mean something like this?
-
 
 ```
 from functools import partial
@@ -128,13 +127,12 @@ f(4)
 
 
 
-
 ---
 
 archive/issue_comments_041687.json:
 ```json
 {
-    "body": "Actually I meant something like this:\n\n\n```\nfrom functools import partial\n\n@partial(partial, b=4)\ndef f(a,b):\n    return 10*a + b\n\nf(4)\n```\n",
+    "body": "Actually I meant something like this:\n\n```\nfrom functools import partial\n\n@partial(partial, b=4)\ndef f(a,b):\n    return 10*a + b\n\nf(4)\n```",
     "created_at": "2009-10-23T21:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -145,7 +143,6 @@ archive/issue_comments_041687.json:
 
 Actually I meant something like this:
 
-
 ```
 from functools import partial
 
@@ -155,7 +152,6 @@ def f(a,b):
 
 f(4)
 ```
-
 
 
 
@@ -182,7 +178,7 @@ Cute.  Very nice!
 archive/issue_comments_041689.json:
 ```json
 {
-    "body": "So now can you use `@`wraps or something so that g? works correctly below?\n\n\n```\nfrom functools import partial, wraps\n\n@partial(partial, b=4)\ndef g(a,b):\n    \"\"\"Docs\"\"\"\n    return 10*a + b\n\ng?\n```\n",
+    "body": "So now can you use `@`wraps or something so that g? works correctly below?\n\n```\nfrom functools import partial, wraps\n\n@partial(partial, b=4)\ndef g(a,b):\n    \"\"\"Docs\"\"\"\n    return 10*a + b\n\ng?\n```",
     "created_at": "2009-10-23T21:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -192,7 +188,6 @@ archive/issue_comments_041689.json:
 ```
 
 So now can you use `@`wraps or something so that g? works correctly below?
-
 
 ```
 from functools import partial, wraps
@@ -207,13 +202,12 @@ g?
 
 
 
-
 ---
 
 archive/issue_comments_041690.json:
 ```json
 {
-    "body": "This works, but it certainly isn't obvious:\n\n\n```\n\nfrom functools import partial, wraps\n\n@partial(lambda x: wraps(x)(partial(partial, b = 4))(x))\ndef g(a,b):\n    \"\"\"Docs\"\"\"\n    return 10*a + b\n\nprint(g(5))\n\ng?\n```\n",
+    "body": "This works, but it certainly isn't obvious:\n\n```\n\nfrom functools import partial, wraps\n\n@partial(lambda x: wraps(x)(partial(partial, b = 4))(x))\ndef g(a,b):\n    \"\"\"Docs\"\"\"\n    return 10*a + b\n\nprint(g(5))\n\ng?\n```",
     "created_at": "2009-10-23T21:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -223,7 +217,6 @@ archive/issue_comments_041690.json:
 ```
 
 This works, but it certainly isn't obvious:
-
 
 ```
 
@@ -241,13 +234,12 @@ g?
 
 
 
-
 ---
 
 archive/issue_comments_041691.json:
 ```json
 {
-    "body": "and at that point, I'd say \n\n\n```\n@default_keywords...\ndef g...\n\n```\n\n\nis nicer.  However, one might use partial in the above decorator.  I think our discussion is evidence for the usefulness of the idea on this ticket.",
+    "body": "and at that point, I'd say \n\n```\n@default_keywords...\ndef g...\n\n```\n\nis nicer.  However, one might use partial in the above decorator.  I think our discussion is evidence for the usefulness of the idea on this ticket.",
     "created_at": "2009-10-23T21:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -258,13 +250,11 @@ archive/issue_comments_041691.json:
 
 and at that point, I'd say 
 
-
 ```
 @default_keywords...
 def g...
 
 ```
-
 
 is nicer.  However, one might use partial in the above decorator.  I think our discussion is evidence for the usefulness of the idea on this ticket.
 
@@ -293,7 +283,7 @@ Yep. It's certainly much clearer. Using `partial` should deal with the positiona
 archive/issue_comments_041693.json:
 ```json
 {
-    "body": "So we've agreed that we should create a `partial` decorator that allows something like:\n\n\n```\nfrom sage.misc.decorators (or wherever) import partial\n\n@partial(*args, **kwds) # Same as calling partial(g, *args, **kwds) and wrapping with @wraps\ndef g(a,b):\n   ...\n\n```\n\n\njust works as expected.",
+    "body": "So we've agreed that we should create a `partial` decorator that allows something like:\n\n```\nfrom sage.misc.decorators (or wherever) import partial\n\n@partial(*args, **kwds) # Same as calling partial(g, *args, **kwds) and wrapping with @wraps\ndef g(a,b):\n   ...\n\n```\n\njust works as expected.",
     "created_at": "2009-10-23T22:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -304,7 +294,6 @@ archive/issue_comments_041693.json:
 
 So we've agreed that we should create a `partial` decorator that allows something like:
 
-
 ```
 from sage.misc.decorators (or wherever) import partial
 
@@ -313,7 +302,6 @@ def g(a,b):
    ...
 
 ```
-
 
 just works as expected.
 
@@ -344,7 +332,7 @@ Perhaps a name of `curry` [1] would be better, since it prevents name collision 
 archive/issue_comments_041695.json:
 ```json
 {
-    "body": "Thanks much for pointing out functools.partial and functool.wrapper; I have several other use cases for them!\n\nReplying to [comment:14 timdumol]:\n> Perhaps a name of `curry` [1] would be better, since it prevents name collision with functools.partial? Then again, it supersedes functools.partial anyways.\n> \n> [1] http://en.wikipedia.org/wiki/Currying\n\nI prefer partial, since curry does not really encompass the specialization of named arguments.\nIt's really functools.partial, but made into a decorator.",
+    "body": "Thanks much for pointing out functools.partial and functool.wrapper; I have several other use cases for them!\n\nReplying to [comment:14 timdumol]:\n> Perhaps a name of `curry` [1] would be better, since it prevents name collision with functools.partial? Then again, it supersedes functools.partial anyways.\n> \n> [1] http://en.wikipedia.org/wiki/Currying\n\n\nI prefer partial, since curry does not really encompass the specialization of named arguments.\nIt's really functools.partial, but made into a decorator.",
     "created_at": "2009-10-23T22:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -360,6 +348,7 @@ Replying to [comment:14 timdumol]:
 > 
 > [1] http://en.wikipedia.org/wiki/Currying
 
+
 I prefer partial, since curry does not really encompass the specialization of named arguments.
 It's really functools.partial, but made into a decorator.
 
@@ -370,7 +359,7 @@ It's really functools.partial, but made into a decorator.
 archive/issue_comments_041696.json:
 ```json
 {
-    "body": "> I prefer partial, since curry does not really encompass the specialization of named arguments.\n> It's really functools.partial, but made into a decorator.\n\nFair enough -- but just to clarify, `functools.partial` *is* a decorator, just that it doesn't update the documentation string.",
+    "body": "> I prefer partial, since curry does not really encompass the specialization of named arguments.\n> It's really functools.partial, but made into a decorator.\n\n\nFair enough -- but just to clarify, `functools.partial` *is* a decorator, just that it doesn't update the documentation string.",
     "created_at": "2009-10-24T01:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
@@ -381,6 +370,7 @@ archive/issue_comments_041696.json:
 
 > I prefer partial, since curry does not really encompass the specialization of named arguments.
 > It's really functools.partial, but made into a decorator.
+
 
 Fair enough -- but just to clarify, `functools.partial` *is* a decorator, just that it doesn't update the documentation string.
 

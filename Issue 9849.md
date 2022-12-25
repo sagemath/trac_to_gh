@@ -81,7 +81,7 @@ The second attachment shows a screenshot of what this patch does.
 archive/issue_comments_097046.json:
 ```json
 {
-    "body": "Niles, could you later rework the patch to move the changes to\n\n`SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n\ninstead?  You can set [pygments_style](http://sphinx.pocoo.org/config.html#confval-pygments_style) to use alternate syntax highlights.  Here's a list of Pygments' builtin styles:\n\n```python\nsage: from pygments.styles import STYLE_MAP\nsage: STYLE_MAP.keys()\n['manni', 'colorful', 'murphy', 'autumn', 'bw', 'pastie', 'native', 'perldoc', 'borland', 'trac', 'default', 'fruity', 'vs', 'emacs', 'friendly']\n```\n",
+    "body": "Niles, could you later rework the patch to move the changes to\n\n`SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n\ninstead?  You can set [pygments_style](http://sphinx.pocoo.org/config.html#confval-pygments_style) to use alternate syntax highlights.  Here's a list of Pygments' builtin styles:\n\n```python\nsage: from pygments.styles import STYLE_MAP\nsage: STYLE_MAP.keys()\n['manni', 'colorful', 'murphy', 'autumn', 'bw', 'pastie', 'native', 'perldoc', 'borland', 'trac', 'default', 'fruity', 'vs', 'emacs', 'friendly']\n```",
     "created_at": "2010-09-02T21:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -104,13 +104,12 @@ sage: STYLE_MAP.keys()
 
 
 
-
 ---
 
 archive/issue_comments_097047.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> Niles, could you later rework the patch to move the changes to\n> \n> `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n\nI did try this, but I'm afraid it didn't seem to work.  I tried both uncommenting the lines that were already there, such as \n\n\n```\nfooterbgcolor    =  #B8B9F6\n```\n\n\nand also adding the dict `html_theme_options` from `conf.py`, but neither of these were recognized . . . in fact, when I change `theme.conf` and try to rebuild the documentation, I get \"all targets are up to date\", so maybe I need to issue a different rebuild command (rather than, e.g. `sage -docbuild constructions html`).\n\n\n\n> \n> You can set [pygments_style](http://sphinx.pocoo.org/config.html#confval-pygments_style) to use alternate syntax highlights.  \n\nthis also doesn't seem to work from `theme.conf`, but does from `conf.py`.\n\n\n\n> Here's a list of Pygments' builtin styles: \n> \n\n```\n #!python\n sage: from pygments.styles import STYLE_MAP\n sage: STYLE_MAP.keys()\n ['manni', 'colorful', 'murphy', 'autumn', 'bw', 'pastie', 'native', 'perldoc', 'borland', 'trac', 'default', 'fruity', 'vs', 'emacs', 'friendly']\n }}}\n\n>\n\nI tried these out, but most of them are worse than the default (which is not the same as when I set `pygments_style = 'default'`).  `manni` comes the closest to being usable (and better), but the color of sage output is too-light gray.",
+    "body": "Replying to [comment:2 mpatel]:\n> Niles, could you later rework the patch to move the changes to\n> \n> `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n\n\nI did try this, but I'm afraid it didn't seem to work.  I tried both uncommenting the lines that were already there, such as \n\n```\nfooterbgcolor    =  #B8B9F6\n```\n\nand also adding the dict `html_theme_options` from `conf.py`, but neither of these were recognized . . . in fact, when I change `theme.conf` and try to rebuild the documentation, I get \"all targets are up to date\", so maybe I need to issue a different rebuild command (rather than, e.g. `sage -docbuild constructions html`).\n\n\n\n> \n> You can set [pygments_style](http://sphinx.pocoo.org/config.html#confval-pygments_style) to use alternate syntax highlights.  \n\n\nthis also doesn't seem to work from `theme.conf`, but does from `conf.py`.\n\n\n\n> Here's a list of Pygments' builtin styles: \n> \n\n{{{\n #!python\n sage: from pygments.styles import STYLE_MAP\n sage: STYLE_MAP.keys()\n ['manni', 'colorful', 'murphy', 'autumn', 'bw', 'pastie', 'native', 'perldoc', 'borland', 'trac', 'default', 'fruity', 'vs', 'emacs', 'friendly']\n }}}\n\n>\n\n\nI tried these out, but most of them are worse than the default (which is not the same as when I set `pygments_style = 'default'`).  `manni` comes the closest to being usable (and better), but the color of sage output is too-light gray.",
     "created_at": "2010-09-03T20:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -124,13 +123,12 @@ Replying to [comment:2 mpatel]:
 > 
 > `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`
 
-I did try this, but I'm afraid it didn't seem to work.  I tried both uncommenting the lines that were already there, such as 
 
+I did try this, but I'm afraid it didn't seem to work.  I tried both uncommenting the lines that were already there, such as 
 
 ```
 footerbgcolor    =  #B8B9F6
 ```
-
 
 and also adding the dict `html_theme_options` from `conf.py`, but neither of these were recognized . . . in fact, when I change `theme.conf` and try to rebuild the documentation, I get "all targets are up to date", so maybe I need to issue a different rebuild command (rather than, e.g. `sage -docbuild constructions html`).
 
@@ -139,6 +137,7 @@ and also adding the dict `html_theme_options` from `conf.py`, but neither of the
 > 
 > You can set [pygments_style](http://sphinx.pocoo.org/config.html#confval-pygments_style) to use alternate syntax highlights.  
 
+
 this also doesn't seem to work from `theme.conf`, but does from `conf.py`.
 
 
@@ -146,7 +145,7 @@ this also doesn't seem to work from `theme.conf`, but does from `conf.py`.
 > Here's a list of Pygments' builtin styles: 
 > 
 
-```
+{{{
  #!python
  sage: from pygments.styles import STYLE_MAP
  sage: STYLE_MAP.keys()
@@ -154,6 +153,7 @@ this also doesn't seem to work from `theme.conf`, but does from `conf.py`.
  }}}
 
 >
+
 
 I tried these out, but most of them are worse than the default (which is not the same as when I set `pygments_style = 'default'`).  `manni` comes the closest to being usable (and better), but the color of sage output is too-light gray.
 
@@ -164,7 +164,7 @@ I tried these out, but most of them are worse than the default (which is not the
 archive/issue_comments_097048.json:
 ```json
 {
-    "body": "> I get \"all targets are up to date\"\n\nThe thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`; the flag \"-S\" says to pass the rest of the options to Sphinx, and \"-a\" tells Sphinx to build all files, not just changed ones.  So this command should force the whole thing to be rebuilt.\n\n(It would probably suffice for your purposes to use `sage -docbuild tutorial html -j -S -a` to just build one document instead of all of them, of course.)",
+    "body": "> I get \"all targets are up to date\"\n\n\nThe thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`; the flag \"-S\" says to pass the rest of the options to Sphinx, and \"-a\" tells Sphinx to build all files, not just changed ones.  So this command should force the whole thing to be rebuilt.\n\n(It would probably suffice for your purposes to use `sage -docbuild tutorial html -j -S -a` to just build one document instead of all of them, of course.)",
     "created_at": "2010-09-03T20:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -174,6 +174,7 @@ archive/issue_comments_097048.json:
 ```
 
 > I get "all targets are up to date"
+
 
 The thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`; the flag "-S" says to pass the rest of the options to Sphinx, and "-a" tells Sphinx to build all files, not just changed ones.  So this command should force the whole thing to be rebuilt.
 
@@ -186,7 +187,7 @@ The thread on sage-devel cited in the description suggested using `sage -docbuil
 archive/issue_comments_097049.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> > I get \"all targets are up to date\"\n> \n> The thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`;\n\nah, thanks for that reminder :)  \n\nA little more testing and I still can't get it to work, but I'm getting closer to the issue.  Setting the `html_style_options` dict does nothing -- style reverts to usual settings.  Uncommenting the lines as I indicated above will obviously not work: `#` is the comment character!  Wrapping the css colors in quotes, as in \n\n\n```\nfooterbgcolor    =  \"#B8B9F6\"\n```\n\n\ndoes *something*, but not the expected thing.  I.e., the color changes, but not to what I indicated . . . confusing.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> > I get \"all targets are up to date\"\n\n> \n> The thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`;\n\n\nah, thanks for that reminder :)  \n\nA little more testing and I still can't get it to work, but I'm getting closer to the issue.  Setting the `html_style_options` dict does nothing -- style reverts to usual settings.  Uncommenting the lines as I indicated above will obviously not work: `#` is the comment character!  Wrapping the css colors in quotes, as in \n\n```\nfooterbgcolor    =  \"#B8B9F6\"\n```\n\ndoes *something*, but not the expected thing.  I.e., the color changes, but not to what I indicated . . . confusing.",
     "created_at": "2010-09-03T21:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -197,18 +198,18 @@ archive/issue_comments_097049.json:
 
 Replying to [comment:4 jhpalmieri]:
 > > I get "all targets are up to date"
+
 > 
 > The thread on sage-devel cited in the description suggested using `sage -docbuild all html -j -S -a`;
+
 
 ah, thanks for that reminder :)  
 
 A little more testing and I still can't get it to work, but I'm getting closer to the issue.  Setting the `html_style_options` dict does nothing -- style reverts to usual settings.  Uncommenting the lines as I indicated above will obviously not work: `#` is the comment character!  Wrapping the css colors in quotes, as in 
 
-
 ```
 footerbgcolor    =  "#B8B9F6"
 ```
-
 
 does *something*, but not the expected thing.  I.e., the color changes, but not to what I indicated . . . confusing.
 
@@ -237,7 +238,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097051.json:
 ```json
 {
-    "body": "When (re)building documentation, I would first delete the whole output directory and then proceed with the (re)building: \n\n\n```sh\n$ cd SAGE_ROOT\n$ rm -rf devel/sage-main/doc/output/\n$ ./sage -docbuild --no-pdf-links all html 2>&1 | tee -a dochtml.log\n```\n\n\nThis guarantees that the documentation I'm interested in (re)building would build, regardless of whether I have made any changes. In niles' case where changes were observed to not take place, I find the approach above worked for me. With that in mind, I have attached a reviewer patch with the following changes:\n\n* Use a very pale yellow for the code background colour.\n* Annotate most of the hex colour code with descriptive English names. All names were taken from [this site](http://www.perbang.dk).\n\nSee the attachment [attachment:reviewer-style.png] for a preview of the new colour for the code background. I'm OK with niles' patch. What we need now is for someone other than me to look over my changes.",
+    "body": "When (re)building documentation, I would first delete the whole output directory and then proceed with the (re)building: \n\n```sh\n$ cd SAGE_ROOT\n$ rm -rf devel/sage-main/doc/output/\n$ ./sage -docbuild --no-pdf-links all html 2>&1 | tee -a dochtml.log\n```\n\nThis guarantees that the documentation I'm interested in (re)building would build, regardless of whether I have made any changes. In niles' case where changes were observed to not take place, I find the approach above worked for me. With that in mind, I have attached a reviewer patch with the following changes:\n\n* Use a very pale yellow for the code background colour.\n* Annotate most of the hex colour code with descriptive English names. All names were taken from [this site](http://www.perbang.dk).\n\nSee the attachment [attachment:reviewer-style.png] for a preview of the new colour for the code background. I'm OK with niles' patch. What we need now is for someone other than me to look over my changes.",
     "created_at": "2010-09-11T12:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -248,13 +249,11 @@ archive/issue_comments_097051.json:
 
 When (re)building documentation, I would first delete the whole output directory and then proceed with the (re)building: 
 
-
 ```sh
 $ cd SAGE_ROOT
 $ rm -rf devel/sage-main/doc/output/
 $ ./sage -docbuild --no-pdf-links all html 2>&1 | tee -a dochtml.log
 ```
-
 
 This guarantees that the documentation I'm interested in (re)building would build, regardless of whether I have made any changes. In niles' case where changes were observed to not take place, I find the approach above worked for me. With that in mind, I have attached a reviewer patch with the following changes:
 
@@ -287,7 +286,7 @@ archive/issue_events_024794.json:
 archive/issue_comments_097052.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> Niles, could you later rework the patch to move the changes to\n> \n> `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n> \n> instead?  \n\nI agree with this comment.  I'm attaching a patch (intended to replace the others) which does this.",
+    "body": "Replying to [comment:2 mpatel]:\n> Niles, could you later rework the patch to move the changes to\n> \n> `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`\n> \n> instead?  \n\n\nI agree with this comment.  I'm attaching a patch (intended to replace the others) which does this.",
     "created_at": "2010-09-11T17:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -302,6 +301,7 @@ Replying to [comment:2 mpatel]:
 > `SAGE_ROOT/devel/sage/doc/common/themes/sage/theme.conf`
 > 
 > instead?  
+
 
 I agree with this comment.  I'm attaching a patch (intended to replace the others) which does this.
 
@@ -435,7 +435,7 @@ Looks fine on my Mac with both Safari and Firefox.  When accessed remotely (I pu
 archive/issue_comments_097059.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> I put a copy of the tutorial [on sage.math](http://sage.math.washington.edu/home/palmieri/misc/tutorial/)\n\nThanks!  It also renders as expected with Opera on Mac.  The site [netrenderer](http://ipinfo.info/netrenderer/) provides a service rendering pages with various versions of internet explorer and returning an image; in case no one has a windows machine to test this on.  According to those images, we have the following:\n\n* IE 8: renders the page just like other browsers do\n* IE 7: same, except the sage logo (which looks fine) shows up on the right side of the page, between the \"next\" and \"index\" buttons; this happens with the  [current documentation](http://www.sagemath.org/doc/tutorial/index.html) too though.\n* IE 6: same logo placement as IE 7, and transparent background shows as gray\n\nprobably none of these are show-stoppers, but worth mentioning I think.",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> I put a copy of the tutorial [on sage.math](http://sage.math.washington.edu/home/palmieri/misc/tutorial/)\n\n\nThanks!  It also renders as expected with Opera on Mac.  The site [netrenderer](http://ipinfo.info/netrenderer/) provides a service rendering pages with various versions of internet explorer and returning an image; in case no one has a windows machine to test this on.  According to those images, we have the following:\n\n* IE 8: renders the page just like other browsers do\n* IE 7: same, except the sage logo (which looks fine) shows up on the right side of the page, between the \"next\" and \"index\" buttons; this happens with the  [current documentation](http://www.sagemath.org/doc/tutorial/index.html) too though.\n* IE 6: same logo placement as IE 7, and transparent background shows as gray\n\nprobably none of these are show-stoppers, but worth mentioning I think.",
     "created_at": "2010-09-12T18:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -446,6 +446,7 @@ archive/issue_comments_097059.json:
 
 Replying to [comment:14 jhpalmieri]:
 > I put a copy of the tutorial [on sage.math](http://sage.math.washington.edu/home/palmieri/misc/tutorial/)
+
 
 Thanks!  It also renders as expected with Opera on Mac.  The site [netrenderer](http://ipinfo.info/netrenderer/) provides a service rendering pages with various versions of internet explorer and returning an image; in case no one has a windows machine to test this on.  According to those images, we have the following:
 
@@ -554,7 +555,7 @@ What needs to be done to give this a positive review?  I think it looks good.  M
 archive/issue_comments_097065.json:
 ```json
 {
-    "body": "Replying to [comment:18 jhpalmieri]:\n> What needs to be done to give this a positive review?  I think it looks good.  My contribution as an author was pretty minor, so can we give it a positive review, especially given the other positive comments on the ticket so far?\n\nI think this is ready for a positive review. Of course, I can't officially set the ticket to positive, but I'm OK with the two patches that are not mine. See the ticket description for the rebuilt documentation using the new style.",
+    "body": "Replying to [comment:18 jhpalmieri]:\n> What needs to be done to give this a positive review?  I think it looks good.  My contribution as an author was pretty minor, so can we give it a positive review, especially given the other positive comments on the ticket so far?\n\n\nI think this is ready for a positive review. Of course, I can't officially set the ticket to positive, but I'm OK with the two patches that are not mine. See the ticket description for the rebuilt documentation using the new style.",
     "created_at": "2010-11-03T06:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
@@ -565,6 +566,7 @@ archive/issue_comments_097065.json:
 
 Replying to [comment:18 jhpalmieri]:
 > What needs to be done to give this a positive review?  I think it looks good.  My contribution as an author was pretty minor, so can we give it a positive review, especially given the other positive comments on the ticket so far?
+
 
 I think this is ready for a positive review. Of course, I can't officially set the ticket to positive, but I'm OK with the two patches that are not mine. See the ticket description for the rebuilt documentation using the new style.
 

@@ -3,7 +3,7 @@
 archive/issues_009733.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  polybori drkirkby @malb @burcin @nexttime\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  polybori drkirkby @malb @burcin @nexttime\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
     "created_at": "2010-08-12T12:18:45Z",
     "labels": [
         "component: algebra",
@@ -28,7 +28,6 @@ http://www.singular.uni-kl.de:8002/trac/ticket/250, see
 ```
 svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9733
 
@@ -192,7 +191,7 @@ But that's actually not a problem for the spkg, because the `spkg-install` does 
 archive/issue_comments_094967.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexanderDreyer]:\n> But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.\n\nThen I missed something because I just checked spkg-install from the latest available spkg in #8059 and it does build libsingular by calling the top makefile:\n\n```\nbuild_libsingular()\n{\n    cd $SRC\n    if [ $? -ne 0 ]; then\n        echo \"Unable to change to directory $SRC\"\n        exit 1\n    fi\n\n    make libsingular\n```\n",
+    "body": "Replying to [comment:6 AlexanderDreyer]:\n> But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.\n\n\nThen I missed something because I just checked spkg-install from the latest available spkg in #8059 and it does build libsingular by calling the top makefile:\n\n```\nbuild_libsingular()\n{\n    cd $SRC\n    if [ $? -ne 0 ]; then\n        echo \"Unable to change to directory $SRC\"\n        exit 1\n    fi\n\n    make libsingular\n```",
     "created_at": "2010-08-13T11:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -203,6 +202,7 @@ archive/issue_comments_094967.json:
 
 Replying to [comment:6 AlexanderDreyer]:
 > But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.
+
 
 Then I missed something because I just checked spkg-install from the latest available spkg in #8059 and it does build libsingular by calling the top makefile:
 
@@ -217,7 +217,6 @@ build_libsingular()
 
     make libsingular
 ```
-
 
 
 
@@ -390,7 +389,7 @@ http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg
 archive/issue_comments_094977.json:
 ```json
 {
-    "body": "Replying to [comment:16 AlexanderDreyer]:\n> Please try out this one:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n\n\n```sh\n$ hg status\n? spkg-install~\n```\n\n\nInstalls ok with `MAKE=\"make -j16\"` on an already loaded system (Sage 4.5.3, Ubuntu 10.04, Core2). I haven't had any problems previously with parallel builds though, and I don't have slow harddisks... ;-)\n\nUnrelated:\n* Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n* `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)",
+    "body": "Replying to [comment:16 AlexanderDreyer]:\n> Please try out this one:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n\n\n```sh\n$ hg status\n? spkg-install~\n```\n\nInstalls ok with `MAKE=\"make -j16\"` on an already loaded system (Sage 4.5.3, Ubuntu 10.04, Core2). I haven't had any problems previously with parallel builds though, and I don't have slow harddisks... ;-)\n\nUnrelated:\n* Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n* `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)",
     "created_at": "2010-09-09T16:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -408,7 +407,6 @@ Replying to [comment:16 AlexanderDreyer]:
 $ hg status
 ? spkg-install~
 ```
-
 
 Installs ok with `MAKE="make -j16"` on an already loaded system (Sage 4.5.3, Ubuntu 10.04, Core2). I haven't had any problems previously with parallel builds though, and I don't have slow harddisks... ;-)
 
@@ -506,7 +504,7 @@ I did all of the runs above under `/scratch`.
 archive/issue_comments_094982.json:
 ```json
 {
-    "body": "> Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n\nI see this in logs from older versions of singular, too, for what that's worth.",
+    "body": "> Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n\n\nI see this in logs from older versions of singular, too, for what that's worth.",
     "created_at": "2010-09-10T03:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -517,6 +515,7 @@ archive/issue_comments_094982.json:
 
 > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.
 
+
 I see this in logs from older versions of singular, too, for what that's worth.
 
 
@@ -526,7 +525,7 @@ I see this in logs from older versions of singular, too, for what that's worth.
 archive/issue_comments_094983.json:
 ```json
 {
-    "body": "Replying to [comment:22 jhpalmieri]:\n> > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n> \n> I see this in logs from older versions of singular, too, for what that's worth.\n> \nAnd it is not used by sage itself or macaulay2 as far as I know. I think that's old cruft in the Makefile.",
+    "body": "Replying to [comment:22 jhpalmieri]:\n> > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n\n> \n> I see this in logs from older versions of singular, too, for what that's worth.\n> \n\nAnd it is not used by sage itself or macaulay2 as far as I know. I think that's old cruft in the Makefile.",
     "created_at": "2010-09-10T04:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -537,9 +536,11 @@ archive/issue_comments_094983.json:
 
 Replying to [comment:22 jhpalmieri]:
 > > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.
+
 > 
 > I see this in logs from older versions of singular, too, for what that's worth.
 > 
+
 And it is not used by sage itself or macaulay2 as far as I know. I think that's old cruft in the Makefile.
 
 
@@ -567,7 +568,7 @@ THis patch adresses ranlib issue of comment 21
 archive/issue_comments_094985.json:
 ```json
 {
-    "body": "Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by @alexanderdreyer created at 2010-09-10 08:18:06\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
+    "body": "Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by @alexanderdreyer created at 2010-09-10 08:18:06\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \n \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\n \nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n \n> \n> I did all of the runs above under `/scratch`.\n\nAs fbissey said, this should not cause problems here.",
     "created_at": "2010-09-10T08:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -579,14 +580,18 @@ archive/issue_comments_094985.json:
 Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by @alexanderdreyer created at 2010-09-10 08:18:06
 
 >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
+ 
 I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
 
 >  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?
+ 
 From the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.
 
 >  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.
+ 
 > 
 > I did all of the runs above under `/scratch`.
+
 As fbissey said, this should not cause problems here.
 
 
@@ -596,7 +601,7 @@ As fbissey said, this should not cause problems here.
 archive/issue_comments_094986.json:
 ```json
 {
-    "body": "Replying to [comment:24 AlexanderDreyer]:\n> >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \n> I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\nI repeated the three 50-run tests above.  The new package fixes the ranlib problem for me.\n\nCould you fix this:\n\n```sh\n$ hg stat\n? patches/kernel-Makefile.in.orig\n? spkg-install~\n```\n\n?",
+    "body": "Replying to [comment:24 AlexanderDreyer]:\n> >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \n \n> I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\nI repeated the three 50-run tests above.  The new package fixes the ranlib problem for me.\n\nCould you fix this:\n\n```sh\n$ hg stat\n? patches/kernel-Makefile.in.orig\n? spkg-install~\n```\n?",
     "created_at": "2010-09-11T06:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -607,6 +612,7 @@ archive/issue_comments_094986.json:
 
 Replying to [comment:24 AlexanderDreyer]:
 > >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
+ 
 > I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
 
 I repeated the three 50-run tests above.  The new package fixes the ranlib problem for me.
@@ -618,7 +624,6 @@ $ hg stat
 ? patches/kernel-Makefile.in.orig
 ? spkg-install~
 ```
-
 ?
 
 
@@ -646,7 +651,7 @@ Ok, I fixed this also. Is this a positive review then?
 archive/issue_comments_094988.json:
 ```json
 {
-    "body": "Could you change the permissions so the package is accessible?\n\n```sh\n$ ls -l ~dreyer/spkg/singular-3-1-1-4.p1.spkg\n7.9M -rw-r----- 1 dreyer dreyer 7.8M 2010-09-12 14:14 /home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n```\n",
+    "body": "Could you change the permissions so the package is accessible?\n\n```sh\n$ ls -l ~dreyer/spkg/singular-3-1-1-4.p1.spkg\n7.9M -rw-r----- 1 dreyer dreyer 7.8M 2010-09-12 14:14 /home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n```",
     "created_at": "2010-09-12T21:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -661,7 +666,6 @@ Could you change the permissions so the package is accessible?
 $ ls -l ~dreyer/spkg/singular-3-1-1-4.p1.spkg
 7.9M -rw-r----- 1 dreyer dreyer 7.8M 2010-09-12 14:14 /home/dreyer/spkg/singular-3-1-1-4.p1.spkg
 ```
-
 
 
 
@@ -765,7 +769,7 @@ archive/issue_events_024360.json:
 archive/issue_comments_094993.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> Unrelated:\n>  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n>  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n\nShould we try to push these upstream?",
+    "body": "Replying to [comment:17 leif]:\n> Unrelated:\n> * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n> * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n\n\nShould we try to push these upstream?",
     "created_at": "2010-09-13T07:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -776,8 +780,9 @@ archive/issue_comments_094993.json:
 
 Replying to [comment:17 leif]:
 > Unrelated:
->  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
->  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+> * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
+> * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+
 
 Should we try to push these upstream?
 
@@ -810,7 +815,7 @@ BTW Singular compiles a lot of C-like code using the C++ compiler. This may resu
 archive/issue_comments_094995.json:
 ```json
 {
-    "body": "Replying to [comment:30 mpatel]:\n> Replying to [comment:17 leif]:\n> > Unrelated:\n> >  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n> > \n> >  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n> \n> Should we try to push these upstream?\n\nThat's why I mentioned it here, considering Alexander upstream (or at least an upstream proxy)... ;-)",
+    "body": "Replying to [comment:30 mpatel]:\n> Replying to [comment:17 leif]:\n> > Unrelated:\n> > * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n> > \n> > * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n\n> \n> Should we try to push these upstream?\n\n\nThat's why I mentioned it here, considering Alexander upstream (or at least an upstream proxy)... ;-)",
     "created_at": "2010-09-13T09:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -822,11 +827,13 @@ archive/issue_comments_094995.json:
 Replying to [comment:30 mpatel]:
 > Replying to [comment:17 leif]:
 > > Unrelated:
-> >  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
+> > * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
 > > 
-> >  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+> > * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+
 > 
 > Should we try to push these upstream?
+
 
 That's why I mentioned it here, considering Alexander upstream (or at least an upstream proxy)... ;-)
 
@@ -837,7 +844,7 @@ That's why I mentioned it here, considering Alexander upstream (or at least an u
 archive/issue_comments_094996.json:
 ```json
 {
-    "body": "Replying to [comment:31 AlexanderDreyer]:\n> Sure, I can report this to Singular's trac.\n\nThanks, that would be nice.\n\n> [...] For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software.\n\nThe names shouldn't, they're standard. *How* a package uses them might differ, i.e. *some* flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.\n \n> So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway.\n\nI agree an spkg maintainer should know the upstream's build process... ;-)\n\n> But `CFLAGS` and `CXXFLAGS` would be more standard-conforming, right?\n\n? If this refers to (the use of) `CPPFLAGS`, these are the flags for the C preprocessor, `cpp`. The preprocessor is rarely used directly, but in the other case one should either pass them directly to the compiler driver as well, or e.g. prepend them to `CFLAGS` and `CXXFLAGS`.\n\n> BTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.\n\nI haven't noticed that (but haven't inspected that either).\n\nIn that case, `CXXFLAGS` should have been used (when compiling C code with e.g. `g++`), but that's not the case. I can give more details on which files were compiled only using `CPPFLAGS` later. (To see which flags are actually used, simply `export CFLAGS=-DHONORS_CFLAGS` etc.)",
+    "body": "Replying to [comment:31 AlexanderDreyer]:\n> Sure, I can report this to Singular's trac.\n\n\nThanks, that would be nice.\n\n> [...] For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software.\n\n\nThe names shouldn't, they're standard. *How* a package uses them might differ, i.e. *some* flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.\n \n> So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway.\n\n\nI agree an spkg maintainer should know the upstream's build process... ;-)\n\n> But `CFLAGS` and `CXXFLAGS` would be more standard-conforming, right?\n\n\n? If this refers to (the use of) `CPPFLAGS`, these are the flags for the C preprocessor, `cpp`. The preprocessor is rarely used directly, but in the other case one should either pass them directly to the compiler driver as well, or e.g. prepend them to `CFLAGS` and `CXXFLAGS`.\n\n> BTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.\n\n\nI haven't noticed that (but haven't inspected that either).\n\nIn that case, `CXXFLAGS` should have been used (when compiling C code with e.g. `g++`), but that's not the case. I can give more details on which files were compiled only using `CPPFLAGS` later. (To see which flags are actually used, simply `export CFLAGS=-DHONORS_CFLAGS` etc.)",
     "created_at": "2010-09-13T10:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -849,21 +856,26 @@ archive/issue_comments_094996.json:
 Replying to [comment:31 AlexanderDreyer]:
 > Sure, I can report this to Singular's trac.
 
+
 Thanks, that would be nice.
 
 > [...] For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software.
+
 
 The names shouldn't, they're standard. *How* a package uses them might differ, i.e. *some* flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.
  
 > So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway.
 
+
 I agree an spkg maintainer should know the upstream's build process... ;-)
 
 > But `CFLAGS` and `CXXFLAGS` would be more standard-conforming, right?
 
+
 ? If this refers to (the use of) `CPPFLAGS`, these are the flags for the C preprocessor, `cpp`. The preprocessor is rarely used directly, but in the other case one should either pass them directly to the compiler driver as well, or e.g. prepend them to `CFLAGS` and `CXXFLAGS`.
 
 > BTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.
+
 
 I haven't noticed that (but haven't inspected that either).
 
@@ -921,7 +933,7 @@ I haven't yet looked at the sources (`configure`, `Makefile.in` etc.) though.
 archive/issue_comments_094999.json:
 ```json
 {
-    "body": "> If nothing else than adding debug symbols differentiates the normal targets from their \".og\" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create \"non-.og\" versions by stripping the made copies, then installing both (if requested).\nUnfortunately it's not that easy. Singular's debug version is build via completely different targets. This might change somewhen in the (hopefully) not to far future. (This would obsolete our `CPPFLAGS` issue here also.)",
+    "body": "> If nothing else than adding debug symbols differentiates the normal targets from their \".og\" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create \"non-.og\" versions by stripping the made copies, then installing both (if requested).\n\nUnfortunately it's not that easy. Singular's debug version is build via completely different targets. This might change somewhen in the (hopefully) not to far future. (This would obsolete our `CPPFLAGS` issue here also.)",
     "created_at": "2010-09-13T13:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -931,6 +943,7 @@ archive/issue_comments_094999.json:
 ```
 
 > If nothing else than adding debug symbols differentiates the normal targets from their ".og" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create "non-.og" versions by stripping the made copies, then installing both (if requested).
+
 Unfortunately it's not that easy. Singular's debug version is build via completely different targets. This might change somewhen in the (hopefully) not to far future. (This would obsolete our `CPPFLAGS` issue here also.)
 
 
@@ -1163,7 +1176,7 @@ Dave, can you test François' latest patch? It cannot confirm it solves "your" p
 archive/issue_comments_095010.json:
 ```json
 {
-    "body": "Replying to [comment:44 leif]:\n> Dave, can you test Fran\u00e7ois' latest patch? It cannot confirm it solves \"your\" problem (though it should).\n\nI was in the process of answering. It has to be applied after SingularSvn13111-13112.patch because it touches a neighboring area of code.",
+    "body": "Replying to [comment:44 leif]:\n> Dave, can you test Fran\u00e7ois' latest patch? It cannot confirm it solves \"your\" problem (though it should).\n\n\nI was in the process of answering. It has to be applied after SingularSvn13111-13112.patch because it touches a neighboring area of code.",
     "created_at": "2010-09-17T12:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1174,6 +1187,7 @@ archive/issue_comments_095010.json:
 
 Replying to [comment:44 leif]:
 > Dave, can you test François' latest patch? It cannot confirm it solves "your" problem (though it should).
+
 
 I was in the process of answering. It has to be applied after SingularSvn13111-13112.patch because it touches a neighboring area of code.
 
@@ -1202,7 +1216,7 @@ Works for me with `make -j` (unlimited). I've in addition changed the rule for `
 archive/issue_comments_095012.json:
 ```json
 {
-    "body": "(We do not build `libsingcf_p.a`.)\n\nThere are however race conditions (?) in deleting files and directories:\n\n```\ncd ftest && make -j distclean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrm -f commonden degree deriv divides divrem extgcd factorize fbinops feval gcd gcd.ntl insert norm resultant revert sqrfree size totaldegree commonden.cc degree.cc deriv.cc divides.cc divrem.cc extgcd.cc factorize.cc fbinops.cc feval.cc gcd.cc gcd.ntl.cc insert.cc norm.cc resultant.cc revert.cc sqrfree.cc size.cc totaldegree.cc *.o\nrm -f GNUmakefile\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrmdir ftest\nrmdir: failed to remove `ftest': Directory not empty\nmake: [ftestdistclean] Error 1 (ignored)\ncd ftest && make -j clean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake[1]: *** No rule to make target `clean'.  Stop.\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake: [ftestclean] Error 2 (ignored)\n```\n\nOr perhaps just the list of files isn't complete.\n\nThough ignored, should probably be fixed upstream, too.",
+    "body": "(We do not build `libsingcf_p.a`.)\n\nThere are however race conditions (?) in deleting files and directories:\n\n```\ncd ftest && make -j distclean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrm -f commonden degree deriv divides divrem extgcd factorize fbinops feval gcd gcd.ntl insert norm resultant revert sqrfree size totaldegree commonden.cc degree.cc deriv.cc divides.cc divrem.cc extgcd.cc factorize.cc fbinops.cc feval.cc gcd.cc gcd.ntl.cc insert.cc norm.cc resultant.cc revert.cc sqrfree.cc size.cc totaldegree.cc *.o\nrm -f GNUmakefile\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrmdir ftest\nrmdir: failed to remove `ftest': Directory not empty\nmake: [ftestdistclean] Error 1 (ignored)\ncd ftest && make -j clean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake[1]: *** No rule to make target `clean'.  Stop.\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake: [ftestclean] Error 2 (ignored)\n```\nOr perhaps just the list of files isn't complete.\n\nThough ignored, should probably be fixed upstream, too.",
     "created_at": "2010-09-17T13:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1230,7 +1244,6 @@ make[1]: *** No rule to make target `clean'.  Stop.
 make[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'
 make: [ftestclean] Error 2 (ignored)
 ```
-
 Or perhaps just the list of files isn't complete.
 
 Though ignored, should probably be fixed upstream, too.
@@ -1282,7 +1295,7 @@ http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg
 archive/issue_comments_095015.json:
 ```json
 {
-    "body": "Replying to [comment:48 AlexanderDreyer]:\n> I attached another patch, which should fix this issue.\n> The spkg is here:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg\n\nWorks for me as well (`make -j`).",
+    "body": "Replying to [comment:48 AlexanderDreyer]:\n> I attached another patch, which should fix this issue.\n> The spkg is here:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg\n\n\nWorks for me as well (`make -j`).",
     "created_at": "2010-09-17T13:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1295,6 +1308,7 @@ Replying to [comment:48 AlexanderDreyer]:
 > I attached another patch, which should fix this issue.
 > The spkg is here:
 > http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg
+
 
 Works for me as well (`make -j`).
 
@@ -1496,7 +1510,7 @@ Many thanks to everyone for reporting, patching, reviewing, and testing.  I apol
 archive/issue_comments_095024.json:
 ```json
 {
-    "body": "Would you believe it. I committed the latest patch to the sage-on-gentoo tree 3 hours ago and 1 hour ago about one of our users reported a new parallel make failure at -j2 on x86.... in libfac this time.\n\n```\nar cr libsingcf_g.a canonicalform.og cf_algorithm.og cf_binom.og cf_char.og cf_chinese.og cf_cyclo.og cf_eval.og cf_factor.og cf_factory.og cf_gcd.og cf_gcd_charp.og cf_gcd_smallp.og cf_generator.og cf_globals.og cf_inline.og cf_irred.og cf_iter.og cf_iter_inline.og cf_linsys.og cf_map.og cf_map_ext.og cf_ops.og cf_primes.og cf_random.og cf_resultant.og cf_reval.og cf_switches.og cf_util.og debug.og DegreePattern.og ExtensionInfo.og fac_berlekamp.og fac_cantzass.og fac_distrib.og fac_ezgcd.og fac_iterfor.og fac_multihensel.og fac_multivar.og fac_sqrfree.og fac_univar.og fac_util.og facFqBivar.og facFqBivarUtil.og facFqFactorize.og facFqFactorizeUtil.og facFqSquarefree.og facHensel.og fieldGCD.og ffops.og ffreval.og gf_tabutil.og gfops.og imm.og initgmp.og int_cf.og int_int.og int_intdiv.og int_poly.og int_pp.og int_rat.og sm_sparsemod.og sm_util.og variable.og NTLconvert.og abs_fac.og bifac.og lgs.og singext.og\nranlib libsingcf_g.a\nar cr libsingcf.a canonicalform.o cf_algorithm.o cf_binom.o cf_char.o cf_chinese.o cf_cyclo.o cf_eval.o cf_factor.o cf_factory.o cf_gcd.o cf_gcd_charp.o cf_gcd_smallp.o cf_generator.o cf_globals.o cf_inline.o cf_irred.o cf_iter.o cf_iter_inline.o cf_linsys.o cf_map.o cf_map_ext.o cf_ops.o cf_primes.o cf_random.o cf_resultant.o cf_reval.o cf_switches.o cf_util.o debug.o DegreePattern.o ExtensionInfo.o fac_berlekamp.o fac_cantzass.o fac_distrib.o fac_ezgcd.o fac_iterfor.o fac_multihensel.o fac_multivar.o fac_sqrfree.o fac_univar.o fac_util.o facFqBivar.o facFqBivarUtil.o facFqFactorize.o facFqFactorizeUtil.o facFqSquarefree.o facHensel.o fieldGCD.o ffops.o ffreval.o gf_tabutil.o gfops.o imm.o initgmp.o int_cf.o int_int.o int_intdiv.o int_poly.o int_pp.o int_rat.o sm_sparsemod.o sm_util.o variable.o NTLconvert.o abs_fac.o bifac.o lgs.o singext.o\nranlib libsingcf.a\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\nmkdir /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\n./bin/install-sh -c -m 644 libsingcf.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\n./bin/install-sh -c -m 644 libsingcf_g.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_g.a\n./bin/install-sh -c -m 644 libsingcf_p.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_p.a\ninstall:  libsingcf_p.a does not exist\nmake[2]: [installcf] Error 1 (ignored)\n./bin/install-sh -c -m 644 factory.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factory.h\n./bin/install-sh -c -m 644 cf_gmp.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/cf_gmp.h\n./bin/install-sh -c -m 644 factoryconf.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factoryconf.h\n./bin/install-sh -c -m 644 ./ftmpl_inst.cc /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/ftmpl_inst.cc\nfor file in ftmpl_array.cc ftmpl_factor.cc ftmpl_functions.h ftmpl_list.cc ftmpl_matrix.cc ftmpl_array.h ftmpl_factor.h ftmpl_list.h ftmpl_matrix.h; do \\\n\t\t  ./bin/install-sh -c -m 644 ./templates/$file /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/$file; \\\n\t\tdone\nranlib /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/factory'\nmake install in libfac\nmake[2]: Entering directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\n./mkinstalldirs OPTOBJ\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/SqrFree.cc -o OPTOBJ/SqrFree.o\nmkdir OPTOBJ\nAssembler messages:\nFatal error: can't create OPTOBJ/SqrFree.o: No such file or directory\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/Factor.cc -o OPTOBJ/Factor.o\nmake[2]: *** [OPTOBJ/SqrFree.o] Error 2\nmake[2]: *** Waiting for unfinished jobs....\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\nmake[1]: *** [install] Error 1\n```\n\n\nI have a fix for him to try, I'll report back when I know the fix works for him.",
+    "body": "Would you believe it. I committed the latest patch to the sage-on-gentoo tree 3 hours ago and 1 hour ago about one of our users reported a new parallel make failure at -j2 on x86.... in libfac this time.\n\n```\nar cr libsingcf_g.a canonicalform.og cf_algorithm.og cf_binom.og cf_char.og cf_chinese.og cf_cyclo.og cf_eval.og cf_factor.og cf_factory.og cf_gcd.og cf_gcd_charp.og cf_gcd_smallp.og cf_generator.og cf_globals.og cf_inline.og cf_irred.og cf_iter.og cf_iter_inline.og cf_linsys.og cf_map.og cf_map_ext.og cf_ops.og cf_primes.og cf_random.og cf_resultant.og cf_reval.og cf_switches.og cf_util.og debug.og DegreePattern.og ExtensionInfo.og fac_berlekamp.og fac_cantzass.og fac_distrib.og fac_ezgcd.og fac_iterfor.og fac_multihensel.og fac_multivar.og fac_sqrfree.og fac_univar.og fac_util.og facFqBivar.og facFqBivarUtil.og facFqFactorize.og facFqFactorizeUtil.og facFqSquarefree.og facHensel.og fieldGCD.og ffops.og ffreval.og gf_tabutil.og gfops.og imm.og initgmp.og int_cf.og int_int.og int_intdiv.og int_poly.og int_pp.og int_rat.og sm_sparsemod.og sm_util.og variable.og NTLconvert.og abs_fac.og bifac.og lgs.og singext.og\nranlib libsingcf_g.a\nar cr libsingcf.a canonicalform.o cf_algorithm.o cf_binom.o cf_char.o cf_chinese.o cf_cyclo.o cf_eval.o cf_factor.o cf_factory.o cf_gcd.o cf_gcd_charp.o cf_gcd_smallp.o cf_generator.o cf_globals.o cf_inline.o cf_irred.o cf_iter.o cf_iter_inline.o cf_linsys.o cf_map.o cf_map_ext.o cf_ops.o cf_primes.o cf_random.o cf_resultant.o cf_reval.o cf_switches.o cf_util.o debug.o DegreePattern.o ExtensionInfo.o fac_berlekamp.o fac_cantzass.o fac_distrib.o fac_ezgcd.o fac_iterfor.o fac_multihensel.o fac_multivar.o fac_sqrfree.o fac_univar.o fac_util.o facFqBivar.o facFqBivarUtil.o facFqFactorize.o facFqFactorizeUtil.o facFqSquarefree.o facHensel.o fieldGCD.o ffops.o ffreval.o gf_tabutil.o gfops.o imm.o initgmp.o int_cf.o int_int.o int_intdiv.o int_poly.o int_pp.o int_rat.o sm_sparsemod.o sm_util.o variable.o NTLconvert.o abs_fac.o bifac.o lgs.o singext.o\nranlib libsingcf.a\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\nmkdir /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\n./bin/install-sh -c -m 644 libsingcf.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\n./bin/install-sh -c -m 644 libsingcf_g.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_g.a\n./bin/install-sh -c -m 644 libsingcf_p.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_p.a\ninstall:  libsingcf_p.a does not exist\nmake[2]: [installcf] Error 1 (ignored)\n./bin/install-sh -c -m 644 factory.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factory.h\n./bin/install-sh -c -m 644 cf_gmp.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/cf_gmp.h\n./bin/install-sh -c -m 644 factoryconf.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factoryconf.h\n./bin/install-sh -c -m 644 ./ftmpl_inst.cc /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/ftmpl_inst.cc\nfor file in ftmpl_array.cc ftmpl_factor.cc ftmpl_functions.h ftmpl_list.cc ftmpl_matrix.cc ftmpl_array.h ftmpl_factor.h ftmpl_list.h ftmpl_matrix.h; do \\\n\t\t  ./bin/install-sh -c -m 644 ./templates/$file /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/$file; \\\n\t\tdone\nranlib /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/factory'\nmake install in libfac\nmake[2]: Entering directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\n./mkinstalldirs OPTOBJ\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/SqrFree.cc -o OPTOBJ/SqrFree.o\nmkdir OPTOBJ\nAssembler messages:\nFatal error: can't create OPTOBJ/SqrFree.o: No such file or directory\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/Factor.cc -o OPTOBJ/Factor.o\nmake[2]: *** [OPTOBJ/SqrFree.o] Error 2\nmake[2]: *** Waiting for unfinished jobs....\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\nmake[1]: *** [install] Error 1\n```\n\nI have a fix for him to try, I'll report back when I know the fix works for him.",
     "created_at": "2010-09-19T02:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1543,7 +1557,6 @@ make[2]: *** Waiting for unfinished jobs....
 make[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'
 make[1]: *** [install] Error 1
 ```
-
 
 I have a fix for him to try, I'll report back when I know the fix works for him.
 
@@ -1592,7 +1605,7 @@ So he reported back and the patch worked for him.
 archive/issue_comments_095027.json:
 ```json
 {
-    "body": "Replying to [comment:58 fbissey]:\n> So he reported back and the patch worked for him.\n\nFran\u00e7ois, could you add your patch to #9946?\n\nI'm going to release 4.6.alpha1 with #9946 as a known problem, since alpha1 *is* an alpha and we need more real-world tests.",
+    "body": "Replying to [comment:58 fbissey]:\n> So he reported back and the patch worked for him.\n\n\nFran\u00e7ois, could you add your patch to #9946?\n\nI'm going to release 4.6.alpha1 with #9946 as a known problem, since alpha1 *is* an alpha and we need more real-world tests.",
     "created_at": "2010-09-19T05:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
@@ -1603,6 +1616,7 @@ archive/issue_comments_095027.json:
 
 Replying to [comment:58 fbissey]:
 > So he reported back and the patch worked for him.
+
 
 François, could you add your patch to #9946?
 

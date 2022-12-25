@@ -129,7 +129,7 @@ The truth is that this patch was created as a suggestion done in #sage-devel; it
 archive/issue_comments_095425.json:
 ```json
 {
-    "body": "I agree with Burcin that this is a bit hackish.  \n> The truth is that this patch was created as a suggestion done in #sage-devel; it was done pretty fast and probably not elegantly. I later submitted another patch with a better implementation (see ticket #9778), which also added the basics for `LaTeX` representation of the units.\nSo should this be closed in favor of #9778?\n\nAlso, \n\n```\ndef _add_si_property_(prefix): \n \t    setattr(UnitExpression, prefix, property(lambda self: self._si_prefix_(prefix))) \n \nfor prefix in unitdict['si_prefixes']: \n     _add_si_property_(prefix) \n```\n\nseems to be missing a doctest in the underscore function.",
+    "body": "I agree with Burcin that this is a bit hackish.  \n> The truth is that this patch was created as a suggestion done in #sage-devel; it was done pretty fast and probably not elegantly. I later submitted another patch with a better implementation (see ticket #9778), which also added the basics for `LaTeX` representation of the units.\n\nSo should this be closed in favor of #9778?\n\nAlso, \n\n```\ndef _add_si_property_(prefix): \n \t    setattr(UnitExpression, prefix, property(lambda self: self._si_prefix_(prefix))) \n \nfor prefix in unitdict['si_prefixes']: \n     _add_si_property_(prefix) \n```\nseems to be missing a doctest in the underscore function.",
     "created_at": "2012-05-26T07:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
@@ -140,6 +140,7 @@ archive/issue_comments_095425.json:
 
 I agree with Burcin that this is a bit hackish.  
 > The truth is that this patch was created as a suggestion done in #sage-devel; it was done pretty fast and probably not elegantly. I later submitted another patch with a better implementation (see ticket #9778), which also added the basics for `LaTeX` representation of the units.
+
 So should this be closed in favor of #9778?
 
 Also, 
@@ -151,7 +152,6 @@ def _add_si_property_(prefix):
 for prefix in unitdict['si_prefixes']: 
      _add_si_property_(prefix) 
 ```
-
 seems to be missing a doctest in the underscore function.
 
 
@@ -197,7 +197,7 @@ Changing keywords from "" to "sd40.5".
 archive/issue_comments_095428.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> So should this be closed in favor of #9778?\nI think it'd be a good idea.",
+    "body": "Replying to [comment:6 kcrisman]:\n> So should this be closed in favor of #9778?\n\nI think it'd be a good idea.",
     "created_at": "2012-05-28T14:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
@@ -208,6 +208,7 @@ archive/issue_comments_095428.json:
 
 Replying to [comment:6 kcrisman]:
 > So should this be closed in favor of #9778?
+
 I think it'd be a good idea.
 
 
@@ -217,7 +218,7 @@ I think it'd be a good idea.
 archive/issue_comments_095429.json:
 ```json
 {
-    "body": "> > So should this be closed in favor of #9778?\n> I think it'd be a good idea.\nOkay, I'll make a comment there to that effect.",
+    "body": "> > So should this be closed in favor of #9778?\n\n> I think it'd be a good idea.\nOkay, I'll make a comment there to that effect.",
     "created_at": "2012-05-28T15:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
@@ -227,6 +228,7 @@ archive/issue_comments_095429.json:
 ```
 
 > > So should this be closed in favor of #9778?
+
 > I think it'd be a good idea.
 Okay, I'll make a comment there to that effect.
 

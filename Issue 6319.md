@@ -3,7 +3,7 @@
 archive/issues_006319.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nThis was clearly *never* tested, since eval always returns a string (it can't return nothing). \n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/plotting.rst\", line 211:\n    sage: maxima.eval('plotdf(x+y,[trajectory_at,2,-0.1]); ') #optional\nExpected nothing\nGot:\n    '1'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6319\n\n",
+    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nThis was clearly *never* tested, since eval always returns a string (it can't return nothing). \n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/plotting.rst\", line 211:\n    sage: maxima.eval('plotdf(x+y,[trajectory_at,2,-0.1]); ') #optional\nExpected nothing\nGot:\n    '1'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6319\n\n",
     "created_at": "2009-06-16T14:47:30Z",
     "labels": [
         "component: packages: optional",
@@ -22,7 +22,6 @@ CC:  @maxthemouse
 
 This was clearly *never* tested, since eval always returns a string (it can't return nothing). 
 
-
 ```
 sage -t -long --optional devel/sage/doc/en/constructions/plotting.rst
 **********************************************************************
@@ -35,7 +34,6 @@ Got:
 1 items had failures:
    1 of   4 in __main__.example_11
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000731.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
     "created_at": "2007-09-21T18:54:22Z",
     "labels": [
         "component: combinatorics",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 Keywords: graphs
 
-
 ```
 sage: g=Graph({0:[1,2],1:[2]})
 sage: g.set_boundary(1)
@@ -35,7 +34,6 @@ sage: g._boundary()
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/731
 
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/731
 archive/issue_comments_004276.json:
 ```json
 {
-    "body": "The above behavior is consistent.  However, because _boundary is now an integer, we get other errors:\n\n\n```\nsage: enum(g)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in enum(graph, quick)\n   6014                 enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n   6015         return enumeration\n-> 6016     M = graph.am()\n   6017     for i, j in M.nonzero_positions():\n   6018         enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in am(self)\n   1832\n   1833         \"\"\"\n-> 1834         return self.adjacency_matrix()\n   1835\n   1836     def complement(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in adjacency_matrix(self, sparse)\n   3415         \"\"\"\n   3416         n = len(self._nxg.adj)\n-> 3417         verts = self.vertices()\n   3418         D = {}\n   3419         for e in self.edge_iterator():\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in vertices(self)\n    738         int_verts = []\n    739         for v in self.vertex_iterator():\n--> 740             if v in self._boundary:\n    741                 bdy_verts.append(v)\n    742             else:\n\n<type 'exceptions.TypeError'>: argument of type 'sage.rings.integer.Integer' is not iterable\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n",
+    "body": "The above behavior is consistent.  However, because _boundary is now an integer, we get other errors:\n\n```\nsage: enum(g)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in enum(graph, quick)\n   6014                 enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n   6015         return enumeration\n-> 6016     M = graph.am()\n   6017     for i, j in M.nonzero_positions():\n   6018         enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in am(self)\n   1832\n   1833         \"\"\"\n-> 1834         return self.adjacency_matrix()\n   1835\n   1836     def complement(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in adjacency_matrix(self, sparse)\n   3415         \"\"\"\n   3416         n = len(self._nxg.adj)\n-> 3417         verts = self.vertices()\n   3418         D = {}\n   3419         for e in self.edge_iterator():\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in vertices(self)\n    738         int_verts = []\n    739         for v in self.vertex_iterator():\n--> 740             if v in self._boundary:\n    741                 bdy_verts.append(v)\n    742             else:\n\n<type 'exceptions.TypeError'>: argument of type 'sage.rings.integer.Integer' is not iterable\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```",
     "created_at": "2007-09-21T18:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ archive/issue_comments_004276.json:
 ```
 
 The above behavior is consistent.  However, because _boundary is now an integer, we get other errors:
-
 
 ```
 sage: enum(g)
@@ -103,7 +100,6 @@ sage: g._boundary()
 
 <type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable
 ```
-
 
 
 

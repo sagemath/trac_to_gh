@@ -86,7 +86,7 @@ Changing assignee from tbd to tba.
 archive/issue_comments_057002.json:
 ```json
 {
-    "body": "I give it a positive review, too, but if you want to change the lines\n\n```\n    - ``seq`` -- Two different possible types: \n      - A sequence of pairs (weight, value). \n      - A sequence of reals (a value of 1 is assumed). \n```\n\nby adding a blank line after the first one, it looks a little better (to me) when typeset.  I'll give that a positive review in advance, so if you want to make the change, no need for more review.",
+    "body": "I give it a positive review, too, but if you want to change the lines\n\n```\n    - ``seq`` -- Two different possible types: \n      - A sequence of pairs (weight, value). \n      - A sequence of reals (a value of 1 is assumed). \n```\nby adding a blank line after the first one, it looks a little better (to me) when typeset.  I'll give that a positive review in advance, so if you want to make the change, no need for more review.",
     "created_at": "2009-09-29T21:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6916",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ I give it a positive review, too, but if you want to change the lines
       - A sequence of pairs (weight, value). 
       - A sequence of reals (a value of 1 is assumed). 
 ```
-
 by adding a blank line after the first one, it looks a little better (to me) when typeset.  I'll give that a positive review in advance, so if you want to make the change, no need for more review.
 
 
@@ -132,7 +131,7 @@ based on Sage 4.1.2.alpha4
 archive/issue_comments_057004.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> I give it a positive review, too, but if you want to change the lines\n\n```\n    - ``seq`` -- Two different possible types: \n      - A sequence of pairs (weight, value). \n      - A sequence of reals (a value of 1 is assumed). \n```\n\n> by adding a blank line after the first one, it looks a little better (to me) when typeset.\nDone.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> I give it a positive review, too, but if you want to change the lines\n\n{{{\n- ``seq`` -- Two different possible types: \n  - A sequence of pairs (weight, value). \n  - A sequence of reals (a value of 1 is assumed). \n}}}\n> by adding a blank line after the first one, it looks a little better (to me) when typeset.\n\nDone.",
     "created_at": "2009-09-30T02:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6916",
     "type": "issue_comment",
@@ -144,13 +143,13 @@ archive/issue_comments_057004.json:
 Replying to [comment:3 jhpalmieri]:
 > I give it a positive review, too, but if you want to change the lines
 
-```
-    - ``seq`` -- Two different possible types: 
-      - A sequence of pairs (weight, value). 
-      - A sequence of reals (a value of 1 is assumed). 
-```
-
+{{{
+- ``seq`` -- Two different possible types: 
+  - A sequence of pairs (weight, value). 
+  - A sequence of reals (a value of 1 is assumed). 
+}}}
 > by adding a blank line after the first one, it looks a little better (to me) when typeset.
+
 Done.
 
 

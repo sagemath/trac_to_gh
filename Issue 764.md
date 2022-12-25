@@ -64,7 +64,7 @@ From William Stein:
 archive/issue_comments_004506.json:
 ```json
 {
-    "body": "> sage: PolynomialRing(ZZ, 'x')\n> Univariate Polynomial Ring in x over Integer Ring\n> sage: PolynomialRing(ZZ, 1, 'x')\n> Polynomial Ring in x over Integer Ring\n>\n> The second one is a bit ambiguous.  How do people feel about changing\n> the reprs of multivariate polynomial rings so that the second one\n> would be 'Multivariate Polynomial Ring in x over Integer Ring'?",
+    "body": "> sage: PolynomialRing(ZZ, 'x')\n> Univariate Polynomial Ring in x over Integer Ring\n> sage: PolynomialRing(ZZ, 1, 'x')\n> Polynomial Ring in x over Integer Ring\n\n>\n> The second one is a bit ambiguous.  How do people feel about changing\n> the reprs of multivariate polynomial rings so that the second one\n> would be 'Multivariate Polynomial Ring in x over Integer Ring'?",
     "created_at": "2007-09-30T18:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
@@ -77,6 +77,7 @@ archive/issue_comments_004506.json:
 > Univariate Polynomial Ring in x over Integer Ring
 > sage: PolynomialRing(ZZ, 1, 'x')
 > Polynomial Ring in x over Integer Ring
+
 >
 > The second one is a bit ambiguous.  How do people feel about changing
 > the reprs of multivariate polynomial rings so that the second one

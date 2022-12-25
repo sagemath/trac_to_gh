@@ -3,7 +3,7 @@
 archive/issues_006592.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @mforets\n\ne.g.:\n\n```\nsage: var('x y')\nsage: f = (100 - x) + (1000 - y)\nsage: c = x + y - 479 # > 0\nsage: minimize_constrained(f,[c],[100,300])\nTraceback (most recent call last):\n...\nUnboundLocalError: local variable 'min' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6592\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @mforets\n\ne.g.:\n\n```\nsage: var('x y')\nsage: f = (100 - x) + (1000 - y)\nsage: c = x + y - 479 # > 0\nsage: minimize_constrained(f,[c],[100,300])\nTraceback (most recent call last):\n...\nUnboundLocalError: local variable 'min' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6592\n\n",
     "created_at": "2009-07-22T15:31:31Z",
     "labels": [
         "component: numerical",
@@ -32,7 +32,6 @@ Traceback (most recent call last):
 UnboundLocalError: local variable 'min' referenced before assignment
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6592
 
 
@@ -44,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6592
 archive/issue_comments_053847.json:
 ```json
 {
-    "body": "More clearly, here's the \"bug\" part of this.  The documentation says that the function takes a symbolic function, but clearly does not:\n\n\n```\nsage: f(x,y) = (100 - x) + (1000 - y)\nsage: c = x + y - 479 \nsage: minimize_constrained(f,[c],[100,300])\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/numerical/optimize.pyc in minimize_constrained(func, cons, x0, gradient, algorithm, **args)\n    408     elif isinstance(cons, function_type):\n    409         min= optimize.fmin_cobyla(f,x0,cons,iprint=0,**args)\n--> 410     return vector(RDF,min)\n    411 \n    412     \n\nUnboundLocalError: local variable 'min' referenced before assignment\n\n\n```\n",
+    "body": "More clearly, here's the \"bug\" part of this.  The documentation says that the function takes a symbolic function, but clearly does not:\n\n```\nsage: f(x,y) = (100 - x) + (1000 - y)\nsage: c = x + y - 479 \nsage: minimize_constrained(f,[c],[100,300])\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/numerical/optimize.pyc in minimize_constrained(func, cons, x0, gradient, algorithm, **args)\n    408     elif isinstance(cons, function_type):\n    409         min= optimize.fmin_cobyla(f,x0,cons,iprint=0,**args)\n--> 410     return vector(RDF,min)\n    411 \n    412     \n\nUnboundLocalError: local variable 'min' referenced before assignment\n\n\n```",
     "created_at": "2010-03-17T05:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
@@ -54,7 +53,6 @@ archive/issue_comments_053847.json:
 ```
 
 More clearly, here's the "bug" part of this.  The documentation says that the function takes a symbolic function, but clearly does not:
-
 
 ```
 sage: f(x,y) = (100 - x) + (1000 - y)
@@ -76,7 +74,6 @@ UnboundLocalError: local variable 'min' referenced before assignment
 
 
 ```
-
 
 
 
@@ -328,7 +325,7 @@ The code make sense and fixes the error.
 archive/issue_comments_053853.json:
 ```json
 {
-    "body": "Replying to [comment:10 tscrim]:\n> The code make sense and fixes the error.\n\nthanks for reviewing :)",
+    "body": "Replying to [comment:10 tscrim]:\n> The code make sense and fixes the error.\n\n\nthanks for reviewing :)",
     "created_at": "2017-07-11T06:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
@@ -339,6 +336,7 @@ archive/issue_comments_053853.json:
 
 Replying to [comment:10 tscrim]:
 > The code make sense and fixes the error.
+
 
 thanks for reviewing :)
 

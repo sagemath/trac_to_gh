@@ -3,7 +3,7 @@
 archive/issues_005660.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
     "created_at": "2009-04-01T17:27:14Z",
     "labels": [
         "component: number theory"
@@ -21,7 +21,6 @@ CC:  jcooley
 
 There is one special case of count_points that could be massively faster.  This should definitely be optimized!
 
-
 ```
 sage: E = EllipticCurve(GF(97),[1,2])
 sage: time E.count_points(1)
@@ -31,7 +30,6 @@ sage: time E.cardinality()
 104
 Time: CPU 0.00 s, Wall: 0.18 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5660
 
@@ -192,7 +190,7 @@ Looks good and passes tests.
 archive/issue_comments_044169.json:
 ```json
 {
-    "body": "I'm getting the following doctest failure with the above two patches applied to Sage 4.1.1:\n\n```\nsage -t -long devel/sage-main/sage/schemes/generic/algebraic_scheme.py\n**********************************************************************\nFile \"/scratch/mvngu/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/devel/sage-main/sage/schemes/generic/algebraic_scheme.py\", line 794:\n    sage: Etilde.rational_points()\nExpected:\n    [(0 : 0 : 1), (1 : 0 : 1), (2 : 0 : 1), (0 : 2 : 1), (1 : 2 : 1), (2 : 2 : 1), (0 : 1 : 0)]\nGot:\n    [(0 : 0 : 1), (0 : 1 : 0), (0 : 2 : 1), (1 : 0 : 1), (1 : 2 : 1), (2 : 0 : 1), (2 : 2 : 1)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_28\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/tmp/.doctest_algebraic_scheme.py\n\t [4.4 s]\n```\n",
+    "body": "I'm getting the following doctest failure with the above two patches applied to Sage 4.1.1:\n\n```\nsage -t -long devel/sage-main/sage/schemes/generic/algebraic_scheme.py\n**********************************************************************\nFile \"/scratch/mvngu/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/devel/sage-main/sage/schemes/generic/algebraic_scheme.py\", line 794:\n    sage: Etilde.rational_points()\nExpected:\n    [(0 : 0 : 1), (1 : 0 : 1), (2 : 0 : 1), (0 : 2 : 1), (1 : 2 : 1), (2 : 2 : 1), (0 : 1 : 0)]\nGot:\n    [(0 : 0 : 1), (0 : 1 : 0), (0 : 2 : 1), (1 : 0 : 1), (1 : 2 : 1), (2 : 0 : 1), (2 : 2 : 1)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_28\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/tmp/.doctest_algebraic_scheme.py\n\t [4.4 s]\n```",
     "created_at": "2009-08-23T00:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
@@ -219,7 +217,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/tmp/.doctest_algebraic_scheme.py
 	 [4.4 s]
 ```
-
 
 
 
@@ -318,7 +315,7 @@ Attachment [trac_5660_fix.patch](tarball://root/attachments/some-uuid/ticket5660
 archive/issue_comments_044174.json:
 ```json
 {
-    "body": "Replying to [comment:7 AlexGhitza]:\n> This is because the generic code for schemes is behaving badly and doesn't sort the list of points before returning it.\n> \n> I will fix this in #6810, but for now the above doctest should just be changed to `[(0 : 0 : 1), (0 : 1 : 0), (0 : 2 : 1), (1 : 0 : 1), (1 : 2 : 1), (2 : 0 : 1), (2 : 2 : 1)]`, which is the correct behaviour.  I've added a trivial patch that does this.\n> \n\nThanks, Alex, you are quite right -- and it is my fault for not testing more before posting the patch.",
+    "body": "Replying to [comment:7 AlexGhitza]:\n> This is because the generic code for schemes is behaving badly and doesn't sort the list of points before returning it.\n> \n> I will fix this in #6810, but for now the above doctest should just be changed to `[(0 : 0 : 1), (0 : 1 : 0), (0 : 2 : 1), (1 : 0 : 1), (1 : 2 : 1), (2 : 0 : 1), (2 : 2 : 1)]`, which is the correct behaviour.  I've added a trivial patch that does this.\n> \n\n\nThanks, Alex, you are quite right -- and it is my fault for not testing more before posting the patch.",
     "created_at": "2009-08-23T11:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
@@ -332,5 +329,6 @@ Replying to [comment:7 AlexGhitza]:
 > 
 > I will fix this in #6810, but for now the above doctest should just be changed to `[(0 : 0 : 1), (0 : 1 : 0), (0 : 2 : 1), (1 : 0 : 1), (1 : 2 : 1), (2 : 0 : 1), (2 : 2 : 1)]`, which is the correct behaviour.  I've added a trivial patch that does this.
 > 
+
 
 Thanks, Alex, you are quite right -- and it is my fault for not testing more before posting the patch.

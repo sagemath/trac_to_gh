@@ -3,7 +3,7 @@
 archive/issues_008233.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThis concerns word represented by str, tuple and list :\n\n\n```\nsage: u = Word(range(10))\nsage: type(u)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: type(u*u)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n\n```\nsage: v = Word('asdgadsf')\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n\n```\nsage: v = Word((2,3,5,21,34,6))\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_tuple'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8233\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThis concerns word represented by str, tuple and list :\n\n```\nsage: u = Word(range(10))\nsage: type(u)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: type(u*u)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word('asdgadsf')\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word((2,3,5,21,34,6))\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_tuple'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8233\n\n",
     "created_at": "2010-02-10T16:16:17Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +21,6 @@ CC:  abmasse
 
 This concerns word represented by str, tuple and list :
 
-
 ```
 sage: u = Word(range(10))
 sage: type(u)
@@ -29,7 +28,6 @@ sage: type(u)
 sage: type(u*u)
 <class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>
 ```
-
 
 ```
 sage: v = Word('asdgadsf')
@@ -39,7 +37,6 @@ sage: type(v*v)
 <class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>
 ```
 
-
 ```
 sage: v = Word((2,3,5,21,34,6))
 sage: type(v)
@@ -47,7 +44,6 @@ sage: type(v)
 sage: type(v*v)
 <class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8233
 

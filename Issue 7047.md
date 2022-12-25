@@ -3,7 +3,7 @@
 archive/issues_007047.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nUsing\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see:\n\n\n```\nlapack-20071123.p0/spkg-install~\nlapack-20071123.p0/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\n( cd INSTALL; make; ./testlsame; ./testslamch; \\\n  ./testdlamch; ./testsecond; ./testdsecnd; ./testversion )\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\nsage_fortran -fPIC  -c lsame.f -o lsame.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran -fPIC  -c lsametst.f -o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -o testlsame lsame.o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[3]: *** [testlsame] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\n/bin/sh: ./testlsame: not found\n/bin/sh: ./testslamch: not found\n/bin/sh: ./testdlamch: not found\n/bin/sh: ./testsecond: not found\n/bin/sh: ./testdsecnd: not found\n/bin/sh: ./testversion: not found\nmake[2]: *** [lapack_install] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\nError compiling lapack.\n\nreal    0m0.415s\nuser    0m0.150s\nsys     0m0.215s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7047\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nUsing\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see:\n\n```\nlapack-20071123.p0/spkg-install~\nlapack-20071123.p0/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\n( cd INSTALL; make; ./testlsame; ./testslamch; \\\n  ./testdlamch; ./testsecond; ./testdsecnd; ./testversion )\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\nsage_fortran -fPIC  -c lsame.f -o lsame.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran -fPIC  -c lsametst.f -o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -o testlsame lsame.o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[3]: *** [testlsame] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\n/bin/sh: ./testlsame: not found\n/bin/sh: ./testslamch: not found\n/bin/sh: ./testdlamch: not found\n/bin/sh: ./testsecond: not found\n/bin/sh: ./testdsecnd: not found\n/bin/sh: ./testversion: not found\nmake[2]: *** [lapack_install] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\nError compiling lapack.\n\nreal    0m0.415s\nuser    0m0.150s\nsys     0m0.215s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7047\n\n",
     "created_at": "2009-09-28T09:13:11Z",
     "labels": [
         "component: algebra",
@@ -27,7 +27,6 @@ Using
 * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
 
 I tried to build Sage with Sun Studio and see:
-
 
 ```
 lapack-20071123.p0/spkg-install~
@@ -73,7 +72,6 @@ real    0m0.415s
 user    0m0.150s
 sys     0m0.215s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7047
 
@@ -124,7 +122,7 @@ Dave
 archive/issue_comments_058234.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n> Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. \n> \n> Dave \n\nI simply modified the descriptions so that tickets would be referenced as \"#NNNN\" rather than by URL (see: http://groups.google.com/group/sage-devel/browse_thread/thread/a97f1a4473848617). I could not figure out why Trac kept thinking that I set the upstream field, even though I never touched it. My apologies if I ruined something!",
+    "body": "Replying to [comment:3 drkirkby]:\n> Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. \n> \n> Dave \n\n\nI simply modified the descriptions so that tickets would be referenced as \"#NNNN\" rather than by URL (see: http://groups.google.com/group/sage-devel/browse_thread/thread/a97f1a4473848617). I could not figure out why Trac kept thinking that I set the upstream field, even though I never touched it. My apologies if I ruined something!",
     "created_at": "2011-05-25T17:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
@@ -137,6 +135,7 @@ Replying to [comment:3 drkirkby]:
 > Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. 
 > 
 > Dave 
+
 
 I simply modified the descriptions so that tickets would be referenced as "#NNNN" rather than by URL (see: http://groups.google.com/group/sage-devel/browse_thread/thread/a97f1a4473848617). I could not figure out why Trac kept thinking that I set the upstream field, even though I never touched it. My apologies if I ruined something!
 

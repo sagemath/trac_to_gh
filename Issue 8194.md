@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072145.json:
 ```json
 {
-    "body": "Testing on Sage 4.3.2 I get error\n\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.2/local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\", line 75:\n    sage: sage_getdoc(Foo)\nExpected:\n    'docstring\\n'\nGot:\n    'docstring'\n**********************************************************************\nFile \"/opt/sage-4.3.2/local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\", line 459:\n    sage: sage_getdoc(identity_matrix)[5:39]\nExpected:\n    'turn the n x n identity matrix ove'\nGot:\n    'Return the `n x n` identity matrix'\n**********************************************************************\n2 items had failures:\n   1 of  29 in __main__.example_0\n   1 of   4 in __main__.example_8\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/marik/.sage//tmp/.doctest_sageinspect.py\n\n```\n\nOr should be tested on Sage 4.3.3 alpha 0?",
+    "body": "Testing on Sage 4.3.2 I get error\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.2/local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\", line 75:\n    sage: sage_getdoc(Foo)\nExpected:\n    'docstring\\n'\nGot:\n    'docstring'\n**********************************************************************\nFile \"/opt/sage-4.3.2/local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py\", line 459:\n    sage: sage_getdoc(identity_matrix)[5:39]\nExpected:\n    'turn the n x n identity matrix ove'\nGot:\n    'Return the `n x n` identity matrix'\n**********************************************************************\n2 items had failures:\n   1 of  29 in __main__.example_0\n   1 of   4 in __main__.example_8\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/marik/.sage//tmp/.doctest_sageinspect.py\n\n```\nOr should be tested on Sage 4.3.3 alpha 0?",
     "created_at": "2010-02-12T18:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8194",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ archive/issue_comments_072145.json:
 ```
 
 Testing on Sage 4.3.2 I get error
-
 
 ```
 sage -t  "local/lib/python2.6/site-packages/sagenb-0.7.5-py2.6.egg/sagenb/misc/sageinspect.py"
@@ -108,7 +107,6 @@ Got:
 For whitespace errors, see the file /home/marik/.sage//tmp/.doctest_sageinspect.py
 
 ```
-
 Or should be tested on Sage 4.3.3 alpha 0?
 
 

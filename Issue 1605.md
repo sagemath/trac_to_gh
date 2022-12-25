@@ -3,7 +3,7 @@
 archive/issues_001605.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: v = vector([1,2,3])\nsage: magma(v)\nboom ...\n\nIN:_sage_[2] := (1, 2, 3);\nOUT:\n>> _sage_[2] := (1, 2, 3);\n                ^\nRuntime error in elt< ... >: No permutation group context in which to create cycle\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1605\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: v = vector([1,2,3])\nsage: magma(v)\nboom ...\n\nIN:_sage_[2] := (1, 2, 3);\nOUT:\n>> _sage_[2] := (1, 2, 3);\n                ^\nRuntime error in elt< ... >: No permutation group context in which to create cycle\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1605\n\n",
     "created_at": "2007-12-27T02:45:23Z",
     "labels": [
         "component: interfaces"
@@ -17,7 +17,6 @@ archive/issues_001605.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: v = vector([1,2,3])
 sage: magma(v)
@@ -30,7 +29,6 @@ OUT:
 Runtime error in elt< ... >: No permutation group context in which to create cycle
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1605
 

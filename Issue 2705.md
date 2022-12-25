@@ -3,7 +3,7 @@
 archive/issues_002705.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreating a 2000x200 full matrix is much faster than creating a 500x500 sparse matrix:\n\n\n```\nsage: %time A = random_matrix(ZZ,2000)\nCPU times: user 0.97 s, sys: 0.28 s, total: 1.25 s\nWall time: 1.25\n\nsage: %time B = random_matrix(ZZ,500,sparse=True)\nCPU times: user 7.20 s, sys: 0.00 s, total: 7.20 s\nWall time: 7.20\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2705\n\n",
+    "body": "Assignee: @williamstein\n\nCreating a 2000x200 full matrix is much faster than creating a 500x500 sparse matrix:\n\n```\nsage: %time A = random_matrix(ZZ,2000)\nCPU times: user 0.97 s, sys: 0.28 s, total: 1.25 s\nWall time: 1.25\n\nsage: %time B = random_matrix(ZZ,500,sparse=True)\nCPU times: user 7.20 s, sys: 0.00 s, total: 7.20 s\nWall time: 7.20\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2705\n\n",
     "created_at": "2008-03-28T18:41:29Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 Creating a 2000x200 full matrix is much faster than creating a 500x500 sparse matrix:
 
-
 ```
 sage: %time A = random_matrix(ZZ,2000)
 CPU times: user 0.97 s, sys: 0.28 s, total: 1.25 s
@@ -30,7 +29,6 @@ sage: %time B = random_matrix(ZZ,500,sparse=True)
 CPU times: user 7.20 s, sys: 0.00 s, total: 7.20 s
 Wall time: 7.20
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2705
 
@@ -97,7 +95,7 @@ could it have anything to do with the fact that a random matrix is not sparse in
 archive/issue_comments_018621.json:
 ```json
 {
-    "body": "I noted that even when we specify the density of nonzero entries, a sparse matrix still takes a significant amount of time.\n\n\n```\nsage: time B = random_matrix(ZZ, 2000, density=.05, sparse=True)\nTime: CPU 7.02 s, Wall: 8.77 s\nsage: time A = random_matrix(ZZ 2000, density=.05, sparse=False)\nTime: CPU 1.20 s, Wall: 1.70 s\n```\n",
+    "body": "I noted that even when we specify the density of nonzero entries, a sparse matrix still takes a significant amount of time.\n\n```\nsage: time B = random_matrix(ZZ, 2000, density=.05, sparse=True)\nTime: CPU 7.02 s, Wall: 8.77 s\nsage: time A = random_matrix(ZZ 2000, density=.05, sparse=False)\nTime: CPU 1.20 s, Wall: 1.70 s\n```",
     "created_at": "2011-06-15T06:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2705",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ archive/issue_comments_018621.json:
 
 I noted that even when we specify the density of nonzero entries, a sparse matrix still takes a significant amount of time.
 
-
 ```
 sage: time B = random_matrix(ZZ, 2000, density=.05, sparse=True)
 Time: CPU 7.02 s, Wall: 8.77 s
@@ -118,13 +115,12 @@ Time: CPU 1.20 s, Wall: 1.70 s
 
 
 
-
 ---
 
 archive/issue_comments_018622.json:
 ```json
 {
-    "body": "Well...apparently density=.05 is too dense for a 2000x2000 matrix\n\n\n```\nsage: time A = random_matrix(QQ, 2000, density=.01, sparse=True)\nTime: CPU 2.17 s, Wall: 2.82 s\nsage: time A = random_matrix(QQ, 2000, density=.01, sparse=False)\nTime: CPU 3.25 s, Wall: 3.57 s\n```\n\n\nHowever, sparse matrices in sage are in need of some tender loving care (according to some other sage devs)",
+    "body": "Well...apparently density=.05 is too dense for a 2000x2000 matrix\n\n```\nsage: time A = random_matrix(QQ, 2000, density=.01, sparse=True)\nTime: CPU 2.17 s, Wall: 2.82 s\nsage: time A = random_matrix(QQ, 2000, density=.01, sparse=False)\nTime: CPU 3.25 s, Wall: 3.57 s\n```\n\nHowever, sparse matrices in sage are in need of some tender loving care (according to some other sage devs)",
     "created_at": "2011-06-15T07:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2705",
     "type": "issue_comment",
@@ -135,14 +131,12 @@ archive/issue_comments_018622.json:
 
 Well...apparently density=.05 is too dense for a 2000x2000 matrix
 
-
 ```
 sage: time A = random_matrix(QQ, 2000, density=.01, sparse=True)
 Time: CPU 2.17 s, Wall: 2.82 s
 sage: time A = random_matrix(QQ, 2000, density=.01, sparse=False)
 Time: CPU 3.25 s, Wall: 3.57 s
 ```
-
 
 However, sparse matrices in sage are in need of some tender loving care (according to some other sage devs)
 

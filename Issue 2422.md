@@ -83,7 +83,7 @@ Michael
 archive/issue_comments_016356.json:
 ```json
 {
-    "body": "Replying to [ticket:2422 jason]:\n> The programming guide should be updated:\n> \n> 1. Instructions about working with trac (posting a patch, the \"[with patch, needs review]\", the review process, etc.)\n\nThis is #1648.\n\n> 2. Expectations for patches (doctests and documentation, clean code, can be slow as an initial version, but if it's a naive way to do things when it could be faster, it should probably be mentioned, references for algorithms if it is an algorithm from a paper, etc.)\n\nAlso partly covered by #1648.\n\n> 3. Instructions on creating patches instead of bundles, maybe a short introduction to queues.\n\nThe way to create patches is already in the manual. What is needed is to tell people to use bundles only in special situations and to change the default example in that section away from bundles.\n\n> 4. Say that you really should go ask people to review your patch and then follow up and make sure the patch doesn't fall through the cracks.\n\nThis is also covered by #1648.\n\n> 5. Instructions for running the doctests to check for failures.\n\nI am not sure, but it seems obvious to do. I also mention it in the material I have written for #1648.\n\n> 6. Expectations and instructions for creating spkgs\n\n#1647 - so there isn't much meat left for this ticket :)\n\nI will be working on #1647 and #1648 once 2.10.3 is out and most likely during Doc Day 2.\n\nCheers,\n\nMichael",
+    "body": "Replying to [ticket:2422 jason]:\n> The programming guide should be updated:\n> \n> 1. Instructions about working with trac (posting a patch, the \"[with patch, needs review]\", the review process, etc.)\n\n\nThis is #1648.\n\n> 2. Expectations for patches (doctests and documentation, clean code, can be slow as an initial version, but if it's a naive way to do things when it could be faster, it should probably be mentioned, references for algorithms if it is an algorithm from a paper, etc.)\n\n\nAlso partly covered by #1648.\n\n> 3. Instructions on creating patches instead of bundles, maybe a short introduction to queues.\n\n\nThe way to create patches is already in the manual. What is needed is to tell people to use bundles only in special situations and to change the default example in that section away from bundles.\n\n> 4. Say that you really should go ask people to review your patch and then follow up and make sure the patch doesn't fall through the cracks.\n\n\nThis is also covered by #1648.\n\n> 5. Instructions for running the doctests to check for failures.\n\n\nI am not sure, but it seems obvious to do. I also mention it in the material I have written for #1648.\n\n> 6. Expectations and instructions for creating spkgs\n\n\n#1647 - so there isn't much meat left for this ticket :)\n\nI will be working on #1647 and #1648 once 2.10.3 is out and most likely during Doc Day 2.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-07T20:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2422",
     "type": "issue_comment",
@@ -97,25 +97,31 @@ Replying to [ticket:2422 jason]:
 > 
 > 1. Instructions about working with trac (posting a patch, the "[with patch, needs review]", the review process, etc.)
 
+
 This is #1648.
 
 > 2. Expectations for patches (doctests and documentation, clean code, can be slow as an initial version, but if it's a naive way to do things when it could be faster, it should probably be mentioned, references for algorithms if it is an algorithm from a paper, etc.)
+
 
 Also partly covered by #1648.
 
 > 3. Instructions on creating patches instead of bundles, maybe a short introduction to queues.
 
+
 The way to create patches is already in the manual. What is needed is to tell people to use bundles only in special situations and to change the default example in that section away from bundles.
 
 > 4. Say that you really should go ask people to review your patch and then follow up and make sure the patch doesn't fall through the cracks.
+
 
 This is also covered by #1648.
 
 > 5. Instructions for running the doctests to check for failures.
 
+
 I am not sure, but it seems obvious to do. I also mention it in the material I have written for #1648.
 
 > 6. Expectations and instructions for creating spkgs
+
 
 #1647 - so there isn't much meat left for this ticket :)
 

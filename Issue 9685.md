@@ -105,7 +105,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093994.json:
 ```json
 {
-    "body": "When applying this to sage-4.6.1.alpha0, I get\n\n```\npatching file sage/matrix/constructor.py\nHunk #1 succeeded at 1348 with fuzz 2 (offset 363 lines).\n```\n\nSo the patch succeeds, but it's probably better if it gets rebased properly.",
+    "body": "When applying this to sage-4.6.1.alpha0, I get\n\n```\npatching file sage/matrix/constructor.py\nHunk #1 succeeded at 1348 with fuzz 2 (offset 363 lines).\n```\nSo the patch succeeds, but it's probably better if it gets rebased properly.",
     "created_at": "2010-11-03T10:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ When applying this to sage-4.6.1.alpha0, I get
 patching file sage/matrix/constructor.py
 Hunk #1 succeeded at 1348 with fuzz 2 (offset 363 lines).
 ```
-
 So the patch succeeds, but it's probably better if it gets rebased properly.
 
 
@@ -166,7 +165,7 @@ If I rebased it, would someone else then have to review it?
 archive/issue_comments_093997.json:
 ```json
 {
-    "body": "Replying to [comment:4 flawrence]:\n> If I rebased it, would someone else then have to review it?\n\nI could easily review your rebasing.",
+    "body": "Replying to [comment:4 flawrence]:\n> If I rebased it, would someone else then have to review it?\n\n\nI could easily review your rebasing.",
     "created_at": "2010-11-04T08:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
@@ -177,6 +176,7 @@ archive/issue_comments_093997.json:
 
 Replying to [comment:4 flawrence]:
 > If I rebased it, would someone else then have to review it?
+
 
 I could easily review your rebasing.
 

@@ -3,7 +3,7 @@
 archive/issues_002047.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nTrying to use fast float evaluation with multivariate polynomials gives error messages like:\n\n```\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute '_fast_float_'\n```\n\n\nThe attached patch fixes this, so that fast float evaluation works with multivariate polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2047\n\n",
+    "body": "Assignee: jkantor\n\nTrying to use fast float evaluation with multivariate polynomials gives error messages like:\n\n```\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute '_fast_float_'\n```\n\nThe attached patch fixes this, so that fast float evaluation works with multivariate polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2047\n\n",
     "created_at": "2008-02-05T02:42:26Z",
     "labels": [
         "component: numerical"
@@ -23,7 +23,6 @@ Trying to use fast float evaluation with multivariate polynomials gives error me
     AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute '_fast_float_'
 ```
 
-
 The attached patch fixes this, so that fast float evaluation works with multivariate polynomials.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2047
@@ -37,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2047
 archive/issue_comments_013223.json:
 ```json
 {
-    "body": "Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by @williamstein created at 2008-02-05 05:14:27\n\nWorks, massively speeds things up (easily a factor of 100), and looks good.\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^20\nsage: h = f._fast_float_()\nsage: time for _ in xrange(100): k = f(1,2,3)\nCPU times: user 3.81 s, sys: 0.02 s, total: 3.84 s\nWall time: 3.87\nsage: time for _ in xrange(100): k = h(1,2,3)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\nsage: 3.84 / 0.04\n96.0000000000000\n```\n",
+    "body": "Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by @williamstein created at 2008-02-05 05:14:27\n\nWorks, massively speeds things up (easily a factor of 100), and looks good.\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^20\nsage: h = f._fast_float_()\nsage: time for _ in xrange(100): k = f(1,2,3)\nCPU times: user 3.81 s, sys: 0.02 s, total: 3.84 s\nWall time: 3.87\nsage: time for _ in xrange(100): k = h(1,2,3)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\nsage: 3.84 / 0.04\n96.0000000000000\n```",
     "created_at": "2008-02-05T05:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
@@ -63,7 +62,6 @@ Wall time: 0.05
 sage: 3.84 / 0.04
 96.0000000000000
 ```
-
 
 
 

@@ -148,7 +148,7 @@ Output is not yet collated.  Timeouts are not yet implemented.
 archive/issue_comments_013554.json:
 ```json
 {
-    "body": "Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by @ncalexan created at 2008-02-15 01:36:35\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```\n",
+    "body": "Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by @ncalexan created at 2008-02-15 01:36:35\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```",
     "created_at": "2008-02-15T01:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
@@ -167,7 +167,6 @@ This is a work in progress bundle that adds
 * output via -o OUTFILE
 * improves handling of sage-doctest crashing
 
-
 ```
 [5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.
 [5:25pm] mabshoff: ncalexan: cool
@@ -176,7 +175,6 @@ This is a work in progress bundle that adds
 [5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.
 [5:26pm] ncalexan: (All to sage-test or sage -t)
 ```
-
 
 
 

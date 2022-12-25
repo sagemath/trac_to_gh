@@ -3,7 +3,7 @@
 archive/issues_005130.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe goal of this ticket is to make something eventually competitive with Mathematica's PrimePi.  The first version won't do that, but it is a step in the right direction. \n\nNote that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do PrimePi[10^14] in \"about a minute\", but the algorithm there doesn't allow larger input.\n\n\n```\nIn[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]\nOut[11]= {12., 346102281239}\n\nIn[13]:= Timing[PrimePi[10^14]]\nOut[13]= {59.53, 3204941750802}\n```\n\n\nThe attached code did `10^14` in just under an hour.   The issue is that Mathematica implements a different sublinear algorithm.\n\nIn Sage, with extra storage usage:\n\n```\nsage: k = 10^13\nsage: time print prime_pi(k,40)\n346065536839\nTime: CPU 219.44 s, Wall: 219.44 s\n```\n\n\nSo for that one mathematica is 18 times faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5130\n\n",
+    "body": "Assignee: @williamstein\n\nThe goal of this ticket is to make something eventually competitive with Mathematica's PrimePi.  The first version won't do that, but it is a step in the right direction. \n\nNote that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do PrimePi[10^14] in \"about a minute\", but the algorithm there doesn't allow larger input.\n\n```\nIn[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]\nOut[11]= {12., 346102281239}\n\nIn[13]:= Timing[PrimePi[10^14]]\nOut[13]= {59.53, 3204941750802}\n```\n\nThe attached code did `10^14` in just under an hour.   The issue is that Mathematica implements a different sublinear algorithm.\n\nIn Sage, with extra storage usage:\n\n```\nsage: k = 10^13\nsage: time print prime_pi(k,40)\n346065536839\nTime: CPU 219.44 s, Wall: 219.44 s\n```\n\nSo for that one mathematica is 18 times faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5130\n\n",
     "created_at": "2009-01-29T21:41:56Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ The goal of this ticket is to make something eventually competitive with Mathema
 
 Note that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do PrimePi[10^14] in "about a minute", but the algorithm there doesn't allow larger input.
 
-
 ```
 In[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]
 Out[11]= {12., 346102281239}
@@ -30,7 +29,6 @@ Out[11]= {12., 346102281239}
 In[13]:= Timing[PrimePi[10^14]]
 Out[13]= {59.53, 3204941750802}
 ```
-
 
 The attached code did `10^14` in just under an hour.   The issue is that Mathematica implements a different sublinear algorithm.
 
@@ -42,7 +40,6 @@ sage: time print prime_pi(k,40)
 346065536839
 Time: CPU 219.44 s, Wall: 219.44 s
 ```
-
 
 So for that one mathematica is 18 times faster.
 
@@ -166,7 +163,7 @@ Michael
 archive/issue_comments_039140.json:
 ```json
 {
-    "body": "The following lines from your update are highly disturbing.\n\n\n```\n\t104\t        cdef long long m_max = <long long> sqrtl(x) + 1 \n \t105\t        while (m_max-1)*(m_max-1) > x or m_max*m_max <= x: \n \t106\t            m_max = <long long> sqrtl(x) + 1\n```\n\n\nFactoring out some noise, this simplifies to:\n\n\n```\na = b\nwhile x:\n   a = b\n```\n\n\nwhere a,b, and x will *NEVER* change *AT ALL* during the execution of the code.  So if you ever enter the while loop, boom.",
+    "body": "The following lines from your update are highly disturbing.\n\n```\n\t104\t        cdef long long m_max = <long long> sqrtl(x) + 1 \n \t105\t        while (m_max-1)*(m_max-1) > x or m_max*m_max <= x: \n \t106\t            m_max = <long long> sqrtl(x) + 1\n```\n\nFactoring out some noise, this simplifies to:\n\n```\na = b\nwhile x:\n   a = b\n```\n\nwhere a,b, and x will *NEVER* change *AT ALL* during the execution of the code.  So if you ever enter the while loop, boom.",
     "created_at": "2009-02-06T19:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -177,23 +174,19 @@ archive/issue_comments_039140.json:
 
 The following lines from your update are highly disturbing.
 
-
 ```
 	104	        cdef long long m_max = <long long> sqrtl(x) + 1 
  	105	        while (m_max-1)*(m_max-1) > x or m_max*m_max <= x: 
  	106	            m_max = <long long> sqrtl(x) + 1
 ```
 
-
 Factoring out some noise, this simplifies to:
-
 
 ```
 a = b
 while x:
    a = b
 ```
-
 
 where a,b, and x will *NEVER* change *AT ALL* during the execution of the code.  So if you ever enter the while loop, boom.
 
@@ -204,7 +197,7 @@ where a,b, and x will *NEVER* change *AT ALL* during the execution of the code. 
 archive/issue_comments_039141.json:
 ```json
 {
-    "body": "> The following lines from your update are highly disturbing.\n\nI only looked at this for a second, but I suspect you're reasoning as if the numbers satisfied laws such as commutative, associativity etc.; probably the whole point is they might not since they are just floating point approximations.",
+    "body": "> The following lines from your update are highly disturbing.\n\n\nI only looked at this for a second, but I suspect you're reasoning as if the numbers satisfied laws such as commutative, associativity etc.; probably the whole point is they might not since they are just floating point approximations.",
     "created_at": "2009-02-06T19:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -214,6 +207,7 @@ archive/issue_comments_039141.json:
 ```
 
 > The following lines from your update are highly disturbing.
+
 
 I only looked at this for a second, but I suspect you're reasoning as if the numbers satisfied laws such as commutative, associativity etc.; probably the whole point is they might not since they are just floating point approximations.
 
@@ -278,7 +272,7 @@ Attachment [trac_5130-final.patch](tarball://root/attachments/some-uuid/ticket51
 archive/issue_comments_039145.json:
 ```json
 {
-    "body": "It would be good to include a reference to the algorithm, and perhaps a bit more documentation in the code itself. For example, what is mem_mult or m_max? \n\nMaybe a the docstring should have an example of computing len(prime_range(...)) to show more explicitly what it's computing. \n\nThe second line of `prime_phi_large`, no need to write `long(N)`, just write N. \n\nI'm not sure what's going on here, but it's not deterministic. \n\n\n```\nsage: for n in range(90000, 100000, 3):\n....:     if prime_pi(n) != len(prime_range(n+1)):\n....:         print n, prime_pi(n), len(prime_range(n+1));\n....:         \n91587 8855 8855\n91848 8878 8875\n92112 8899 8896\n92373 8924 8921\n92376 8921 8921\n92637 8947 8945\n92901 8979 8976\n92904 8976 8976\n93171 8999 8999\n...\n```\n\n\n(This is on an OS X 10.4 intel.)",
+    "body": "It would be good to include a reference to the algorithm, and perhaps a bit more documentation in the code itself. For example, what is mem_mult or m_max? \n\nMaybe a the docstring should have an example of computing len(prime_range(...)) to show more explicitly what it's computing. \n\nThe second line of `prime_phi_large`, no need to write `long(N)`, just write N. \n\nI'm not sure what's going on here, but it's not deterministic. \n\n```\nsage: for n in range(90000, 100000, 3):\n....:     if prime_pi(n) != len(prime_range(n+1)):\n....:         print n, prime_pi(n), len(prime_range(n+1));\n....:         \n91587 8855 8855\n91848 8878 8875\n92112 8899 8896\n92373 8924 8921\n92376 8921 8921\n92637 8947 8945\n92901 8979 8976\n92904 8976 8976\n93171 8999 8999\n...\n```\n\n(This is on an OS X 10.4 intel.)",
     "created_at": "2009-03-18T04:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -294,7 +288,6 @@ Maybe a the docstring should have an example of computing len(prime_range(...)) 
 The second line of `prime_phi_large`, no need to write `long(N)`, just write N. 
 
 I'm not sure what's going on here, but it's not deterministic. 
-
 
 ```
 sage: for n in range(90000, 100000, 3):
@@ -312,7 +305,6 @@ sage: for n in range(90000, 100000, 3):
 93171 8999 8999
 ...
 ```
-
 
 (This is on an OS X 10.4 intel.)
 
@@ -379,7 +371,7 @@ Attachment [trac_5130-rebased.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_039149.json:
 ```json
 {
-    "body": "Major issue: it needs to raise an exception on an invalid mem_mult, instead of giving the wrong answer:\n\n```\nsage: prime_pi(10^6)\n78498\nsage: prime_pi(10^6, 0)\n228574\n```\n\n\nMinor issues:\n`allows for use of addition memory` should be `allows for the use of additional memory`\n\nIt looks like the function bisect() is doing some variant on binary search; but it's not the standard algorithm, which makes it harder to understand and review.  Maybe it should be replaced with a real binary search (for example, following the flowchart from http://en.wikipedia.org/wiki/Binary_search).\n\nNote that I've read the code and performed lots of tests (against len(prime_range(n)) for small n, and against Mathematica for n around 2<sup>39</sup>), but I don't understand the algorithm.  With this caveat, I'd be willing to give it a positive review if the major wrong-answer issue were fixed (although fixing the minor issues too would be better, of course).",
+    "body": "Major issue: it needs to raise an exception on an invalid mem_mult, instead of giving the wrong answer:\n\n```\nsage: prime_pi(10^6)\n78498\nsage: prime_pi(10^6, 0)\n228574\n```\n\nMinor issues:\n`allows for use of addition memory` should be `allows for the use of additional memory`\n\nIt looks like the function bisect() is doing some variant on binary search; but it's not the standard algorithm, which makes it harder to understand and review.  Maybe it should be replaced with a real binary search (for example, following the flowchart from http://en.wikipedia.org/wiki/Binary_search).\n\nNote that I've read the code and performed lots of tests (against len(prime_range(n)) for small n, and against Mathematica for n around 2<sup>39</sup>), but I don't understand the algorithm.  With this caveat, I'd be willing to give it a positive review if the major wrong-answer issue were fixed (although fixing the minor issues too would be better, of course).",
     "created_at": "2009-04-15T04:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -396,7 +388,6 @@ sage: prime_pi(10^6)
 sage: prime_pi(10^6, 0)
 228574
 ```
-
 
 Minor issues:
 `allows for use of addition memory` should be `allows for the use of additional memory`
@@ -508,7 +499,7 @@ I wouldn't worry about the correctness/portability of sqrt_longlong.  It uses sq
 archive/issue_comments_039155.json:
 ```json
 {
-    "body": "Replying to [comment:19 cwitty]:\n> I wouldn't worry about the correctness/portability of sqrt_longlong.  It uses sqrt() (not sqrtl()),\n\nYes, I know. I complained initially about sqrtl() in one of the early patches which was the reason long long sqrt() was defined. \n\n>  which is exactly specified by IEEE floating point (no room for implementation differences in the spec), so it should be portable; and it has a built-in self-test, so if something goes wrong we'll get exceptions.\n\nI think my points still stand, i.e.\n \n* There is no reason for the long long sqrt() to be in this file since it will come in useful in some other places, i.e. the number_of_partitions() code since that code currently fails doctests on Sparc/Solaris (it might be completely unrelated to sqrtl(), but as it the code does not compile on FreeBSD 8 due to the use of sqrtl() there)\n* There should be some extensive testing done for that function. I am sure someone using the function and getting back some error message will not be happy that an error was detected, but complain and not see the advantage of detecting the issue in the first place :)\n* If some doctest here fails on Sparc/Solaris for example I will not merge this patch since I don't need any more bugs introduced that in the end someone else (i.e. William or me has to fix). Some of the fixes took a long, long time to hunt down (and we are still not done **now**), so the attitude that someone else will clean up such a mess is not something I am willing to accept, not that any person involved in this ticket has this attitude ;). \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:19 cwitty]:\n> I wouldn't worry about the correctness/portability of sqrt_longlong.  It uses sqrt() (not sqrtl()),\n\n\nYes, I know. I complained initially about sqrtl() in one of the early patches which was the reason long long sqrt() was defined. \n\n>  which is exactly specified by IEEE floating point (no room for implementation differences in the spec), so it should be portable; and it has a built-in self-test, so if something goes wrong we'll get exceptions.\n\n\nI think my points still stand, i.e.\n \n* There is no reason for the long long sqrt() to be in this file since it will come in useful in some other places, i.e. the number_of_partitions() code since that code currently fails doctests on Sparc/Solaris (it might be completely unrelated to sqrtl(), but as it the code does not compile on FreeBSD 8 due to the use of sqrtl() there)\n* There should be some extensive testing done for that function. I am sure someone using the function and getting back some error message will not be happy that an error was detected, but complain and not see the advantage of detecting the issue in the first place :)\n* If some doctest here fails on Sparc/Solaris for example I will not merge this patch since I don't need any more bugs introduced that in the end someone else (i.e. William or me has to fix). Some of the fixes took a long, long time to hunt down (and we are still not done **now**), so the attitude that someone else will clean up such a mess is not something I am willing to accept, not that any person involved in this ticket has this attitude ;). \n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T00:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5130",
     "type": "issue_comment",
@@ -520,9 +511,11 @@ archive/issue_comments_039155.json:
 Replying to [comment:19 cwitty]:
 > I wouldn't worry about the correctness/portability of sqrt_longlong.  It uses sqrt() (not sqrtl()),
 
+
 Yes, I know. I complained initially about sqrtl() in one of the early patches which was the reason long long sqrt() was defined. 
 
 >  which is exactly specified by IEEE floating point (no room for implementation differences in the spec), so it should be portable; and it has a built-in self-test, so if something goes wrong we'll get exceptions.
+
 
 I think my points still stand, i.e.
  

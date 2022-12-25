@@ -169,7 +169,7 @@ Cython gets the flags it needs from distutils (which, if I understand correctly,
 archive/issue_comments_071174.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n> Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n\nSo if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n\nWhy not unset CFLAGS in the Cython spkg-install?\n\nWithout CFLAGS set building cython failes on Open Solaris x64!\n\n*.pyx files? I don't get sage-4.3.1.alpha build :)!\n\nSo let's get Python build correctly on Open Solaris x64!\n\nJaap",
+    "body": "Replying to [comment:6 robertwb]:\n> Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n\n\nSo if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n\nWhy not unset CFLAGS in the Cython spkg-install?\n\nWithout CFLAGS set building cython failes on Open Solaris x64!\n\n*.pyx files? I don't get sage-4.3.1.alpha build :)!\n\nSo let's get Python build correctly on Open Solaris x64!\n\nJaap",
     "created_at": "2010-01-29T20:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
@@ -180,6 +180,7 @@ archive/issue_comments_071174.json:
 
 Replying to [comment:6 robertwb]:
 > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? 
+
 
 So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.
 
@@ -200,7 +201,7 @@ Jaap
 archive/issue_comments_071175.json:
 ```json
 {
-    "body": "Replying to [comment:7 jsp]:\n> Replying to [comment:6 robertwb]:\n> > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n> \n> So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n\nYes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. \n\n> Why not unset CFLAGS in the Cython spkg-install?\n\nFor fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. \n\n> Without CFLAGS set building cython failes on Open Solaris x64!\n\nDo you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)\n\n> *.pyx files? I don't get sage-4.3.1.alpha build :)!\n\nYet :)\n\nI'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. \n\n> So let's get Python build correctly on Open Solaris x64!\n\nSounds like the best course of action.",
+    "body": "Replying to [comment:7 jsp]:\n> Replying to [comment:6 robertwb]:\n> > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n\n> \n> So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n\n\nYes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. \n\n> Why not unset CFLAGS in the Cython spkg-install?\n\n\nFor fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. \n\n> Without CFLAGS set building cython failes on Open Solaris x64!\n\n\nDo you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)\n\n> *.pyx files? I don't get sage-4.3.1.alpha build :)!\n\n\nYet :)\n\nI'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. \n\n> So let's get Python build correctly on Open Solaris x64!\n\n\nSounds like the best course of action.",
     "created_at": "2010-01-29T21:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
@@ -212,26 +213,32 @@ archive/issue_comments_071175.json:
 Replying to [comment:7 jsp]:
 > Replying to [comment:6 robertwb]:
 > > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? 
+
 > 
 > So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.
+
 
 Yes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. 
 
 > Why not unset CFLAGS in the Cython spkg-install?
 
+
 For fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. 
 
 > Without CFLAGS set building cython failes on Open Solaris x64!
 
+
 Do you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)
 
 > *.pyx files? I don't get sage-4.3.1.alpha build :)!
+
 
 Yet :)
 
 I'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. 
 
 > So let's get Python build correctly on Open Solaris x64!
+
 
 Sounds like the best course of action.
 
@@ -242,7 +249,7 @@ Sounds like the best course of action.
 archive/issue_comments_071176.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> Replying to [comment:7 jsp]:\n> > Replying to [comment:6 robertwb]:\n> > > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n> > \n> > So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n> \n> Yes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. \n>\n\nI do have a working Python! But I don't know it is setup properly :(\n\n\n```\nPython 2.6.4 (r264:75706, Jan 27 2010, 22:37:41) \n[GCC 4.4.2] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> \n\n```\n\n\n \n> > Why not unset CFLAGS in the Cython spkg-install?\n> \n> For fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. \n> \n\nIf you don't accept CFLAGS set globally, why not?\n\n> > Without CFLAGS set building cython failes on Open Solaris x64!\n> \n> Do you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)\n> \n\nI don't know. It just says it installed successfully :)\n\n\n\n> I'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. \n> \n> > So let's get Python build correctly on Open Solaris x64!\n> \n> Sounds like the best course of action. \n\n\nLet's go for it!\n\nJaap",
+    "body": "Replying to [comment:8 robertwb]:\n> Replying to [comment:7 jsp]:\n> > Replying to [comment:6 robertwb]:\n> > > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? \n\n> > \n> > So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.\n\n> \n> Yes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. \n  \n>\n\nI do have a working Python! But I don't know it is setup properly :(\n\n```\nPython 2.6.4 (r264:75706, Jan 27 2010, 22:37:41) \n[GCC 4.4.2] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> \n\n```\n\n \n> > Why not unset CFLAGS in the Cython spkg-install?\n\n> \n> For fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. \n> \n\n\nIf you don't accept CFLAGS set globally, why not?\n\n> > Without CFLAGS set building cython failes on Open Solaris x64!\n\n> \n> Do you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)\n> \n\n\nI don't know. It just says it installed successfully :)\n\n\n\n> I'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. \n> \n> > So let's get Python build correctly on Open Solaris x64!\n\n> \n> Sounds like the best course of action. \n\n\n\nLet's go for it!\n\nJaap",
     "created_at": "2010-01-29T22:09:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
@@ -255,14 +262,16 @@ Replying to [comment:8 robertwb]:
 > Replying to [comment:7 jsp]:
 > > Replying to [comment:6 robertwb]:
 > > > Cython gets the flags it needs from distutils (which, if I understand correctly, tries to use the flags that Python itself was built with). Just setting CFLAGS directly can mess this up. Can you post the log of running cython -f with this option? Also, Cython won't compile, do you have any luck with all the .pyx files in the Sage library? 
+
 > > 
 > > So if I understand you correctly we need a properly installed Python. I have to hack a bit to get a working Python in Open Solaris.
+
 > 
 > Yes. Worrying about Cython working before Python is set up correctly is probably going to be an exercise in futility. 
+  
 >
 
 I do have a working Python! But I don't know it is setup properly :(
-
 
 ```
 Python 2.6.4 (r264:75706, Jan 27 2010, 22:37:41) 
@@ -272,19 +281,22 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 
-
  
 > > Why not unset CFLAGS in the Cython spkg-install?
+
 > 
 > For fear of breaking things. I am not an expert on distutils or building stuff, so for me the safest path is to not change stuff. 
 > 
 
+
 If you don't accept CFLAGS set globally, why not?
 
 > > Without CFLAGS set building cython failes on Open Solaris x64!
+
 > 
 > Do you get a working Cython with CFLAGS set? (If so, it might just be lucky...) What errors do you get otherwise? (I think Cython's supposed to fall back to a pure Python setup if the compile fails, but I could be remembering wrong.)
 > 
+
 
 I don't know. It just says it installed successfully :)
 
@@ -293,8 +305,10 @@ I don't know. It just says it installed successfully :)
 > I'm just pointing out that whatever issues we're running into here, we'll be running into later with the sage library. 
 > 
 > > So let's get Python build correctly on Open Solaris x64!
+
 > 
 > Sounds like the best course of action. 
+
 
 
 Let's go for it!
@@ -308,7 +322,7 @@ Jaap
 archive/issue_comments_071177.json:
 ```json
 {
-    "body": "Replying to [comment:9 jsp]:\n> If you don't accept CFLAGS set globally, why not?\n\nThis is a distutils question, nothing specific to Cython. Hopefully we can get to the root of the issue, as many packages are \"python setup.py install\"",
+    "body": "Replying to [comment:9 jsp]:\n> If you don't accept CFLAGS set globally, why not?\n\n\nThis is a distutils question, nothing specific to Cython. Hopefully we can get to the root of the issue, as many packages are \"python setup.py install\"",
     "created_at": "2010-01-29T22:20:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
@@ -319,6 +333,7 @@ archive/issue_comments_071177.json:
 
 Replying to [comment:9 jsp]:
 > If you don't accept CFLAGS set globally, why not?
+
 
 This is a distutils question, nothing specific to Cython. Hopefully we can get to the root of the issue, as many packages are "python setup.py install"
 

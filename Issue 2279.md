@@ -3,7 +3,7 @@
 archive/issues_002279.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA fresh 64-bit install of 2.10.2 gives this (and only this) error with\n\"make check\":\n\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/totallyreal.py**********************************************************************\nFile \"totallyreal.py\", line 410:\n   sage: sage.rings.number_field.totallyreal.__selberg_zograf_bound(8,7)\nExpected:\n   15.851871776151311\nGot:\n   15.851871776151313\n**********************************************************************\n1 items had failures:\n  1 of   1 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_totallyreal.py\n        [1.7 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py\n```\n\n\nOS info:\n\n```\njec@host-57-71%uname -a\nLinux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux\n```\n\n\n```\ngcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2279\n\n",
+    "body": "Assignee: @williamstein\n\nA fresh 64-bit install of 2.10.2 gives this (and only this) error with\n\"make check\":\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/totallyreal.py**********************************************************************\nFile \"totallyreal.py\", line 410:\n   sage: sage.rings.number_field.totallyreal.__selberg_zograf_bound(8,7)\nExpected:\n   15.851871776151311\nGot:\n   15.851871776151313\n**********************************************************************\n1 items had failures:\n  1 of   1 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_totallyreal.py\n        [1.7 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py\n```\n\nOS info:\n\n```\njec@host-57-71%uname -a\nLinux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux\n```\n\n```\ngcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2279\n\n",
     "created_at": "2008-02-23T20:25:21Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 A fresh 64-bit install of 2.10.2 gives this (and only this) error with
 "make check":
-
 
 ```
 sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py**********************************************************************
@@ -45,7 +44,6 @@ The following tests failed:
        sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py
 ```
 
-
 OS info:
 
 ```
@@ -53,11 +51,9 @@ jec@host-57-71%uname -a
 Linux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-
 ```
 gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2279

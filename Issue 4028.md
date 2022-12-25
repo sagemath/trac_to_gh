@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_028990.json:
 ```json
 {
-    "body": "Looks like somehow the following ends up getting called:\n\n```\nsage -axiom -nox -noclef\n```\n\nIf I run that from the command line it also starts a fork bomb.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Looks like somehow the following ends up getting called:\n\n```\nsage -axiom -nox -noclef\n```\nIf I run that from the command line it also starts a fork bomb.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T03:53:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4028",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ Looks like somehow the following ends up getting called:
 ```
 sage -axiom -nox -noclef
 ```
-
 If I run that from the command line it also starts a fork bomb.
 
 Thoughts?
@@ -107,7 +106,7 @@ Michael
 archive/issue_comments_028991.json:
 ```json
 {
-    "body": "It is all William's fault:\n\n```\nmabshoff@sage:/usr/local/bin$ pwd\n/usr/local/bin\nmabshoff@sage:/usr/local/bin$ cat axiom \n#!/bin/sh\nsage -axiom $*\n```\n\n\nCheers,\n\nMichael",
+    "body": "It is all William's fault:\n\n```\nmabshoff@sage:/usr/local/bin$ pwd\n/usr/local/bin\nmabshoff@sage:/usr/local/bin$ cat axiom \n#!/bin/sh\nsage -axiom $*\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T03:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4028",
     "type": "issue_comment",
@@ -125,7 +124,6 @@ mabshoff@sage:/usr/local/bin$ cat axiom
 #!/bin/sh
 sage -axiom $*
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_002638.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nFor example, \n\n```\nsage: s = SFASchur(QQ)\nsage: a=s([3,2]).expand(8)(flatten([[QQbar.zeta(3)^d for d in range(3)], [QQbar.zeta(5)^d for d in range(5)]]))\nsage: a.exactify() \n```\n\n(as reported in http://groups.google.com/group/sage-devel/browse_thread/thread/8cf79f359cceef3d/e931afceebf3fe35#e931afceebf3fe35)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2638\n\n",
+    "body": "Assignee: somebody\n\nFor example, \n\n```\nsage: s = SFASchur(QQ)\nsage: a=s([3,2]).expand(8)(flatten([[QQbar.zeta(3)^d for d in range(3)], [QQbar.zeta(5)^d for d in range(5)]]))\nsage: a.exactify() \n```\n(as reported in http://groups.google.com/group/sage-devel/browse_thread/thread/8cf79f359cceef3d/e931afceebf3fe35#e931afceebf3fe35)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2638\n\n",
     "created_at": "2008-03-21T22:01:45Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ sage: s = SFASchur(QQ)
 sage: a=s([3,2]).expand(8)(flatten([[QQbar.zeta(3)^d for d in range(3)], [QQbar.zeta(5)^d for d in range(5)]]))
 sage: a.exactify() 
 ```
-
 (as reported in http://groups.google.com/group/sage-devel/browse_thread/thread/8cf79f359cceef3d/e931afceebf3fe35#e931afceebf3fe35)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2638

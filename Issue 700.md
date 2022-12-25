@@ -3,7 +3,7 @@
 archive/issues_000700.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nI have a cvxopt package in my spkgs directory that does not raise an error\nwhen doing\n\nsage: from cvxopt.base import *\n\nThe problem is that on linux libf95.a must be linked in, but its located\nin the local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\nand I had to add that directory to the path to link it in (of course the\npath is different on 64 bit).\n\nOn OSX everything works fine for some reason.\n\n```\n\n\n\nNote -- in addition to using the package above, there must be a doctest\nadded to the core SAGE library that does\n   sage: from cvxopt.base import *\njust to make sure the fix works on our architectures.\n\nLikewise, \n    from scipy.optimize import *\nshould be a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/700\n\n",
+    "body": "Assignee: @williamstein\n\n```\nI have a cvxopt package in my spkgs directory that does not raise an error\nwhen doing\n\nsage: from cvxopt.base import *\n\nThe problem is that on linux libf95.a must be linked in, but its located\nin the local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\nand I had to add that directory to the path to link it in (of course the\npath is different on 64 bit).\n\nOn OSX everything works fine for some reason.\n\n```\n\n\nNote -- in addition to using the package above, there must be a doctest\nadded to the core SAGE library that does\n   sage: from cvxopt.base import *\njust to make sure the fix works on our architectures.\n\nLikewise, \n    from scipy.optimize import *\nshould be a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/700\n\n",
     "created_at": "2007-09-20T02:07:48Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_000700.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 I have a cvxopt package in my spkgs directory that does not raise an error
@@ -33,7 +32,6 @@ path is different on 64 bit).
 On OSX everything works fine for some reason.
 
 ```
-
 
 
 Note -- in addition to using the package above, there must be a doctest
@@ -142,7 +140,7 @@ archive/issue_events_001866.json:
 archive/issue_comments_003657.json:
 ```json
 {
-    "body": "The way spkg-install is designed, this doesn't work on systems that weren't built using g95.  What if somebody builds using gfortran system-wide?\nThen the spkg-install will die.\n\nAlso, even with g95 on my Ubuntu 64-bit test system umfpack still fails to get the right symbol after\ninstalling this package:\n\n\n```\nsage: import cvxopt.umfpack\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home/was/s/devel/sage-ranges/sage/numerical/<ipython console> in <module>()\n\n<type 'exceptions.ImportError'>: /home/was/s/local/lib/python2.5/site-packages/cvxopt/umfpack.so: undefined symbol: _g95_filename\n\n```\n",
+    "body": "The way spkg-install is designed, this doesn't work on systems that weren't built using g95.  What if somebody builds using gfortran system-wide?\nThen the spkg-install will die.\n\nAlso, even with g95 on my Ubuntu 64-bit test system umfpack still fails to get the right symbol after\ninstalling this package:\n\n```\nsage: import cvxopt.umfpack\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home/was/s/devel/sage-ranges/sage/numerical/<ipython console> in <module>()\n\n<type 'exceptions.ImportError'>: /home/was/s/local/lib/python2.5/site-packages/cvxopt/umfpack.so: undefined symbol: _g95_filename\n\n```",
     "created_at": "2007-09-21T02:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
@@ -157,7 +155,6 @@ Then the spkg-install will die.
 Also, even with g95 on my Ubuntu 64-bit test system umfpack still fails to get the right symbol after
 installing this package:
 
-
 ```
 sage: import cvxopt.umfpack
 ---------------------------------------------------------------------------
@@ -168,7 +165,6 @@ sage: import cvxopt.umfpack
 <type 'exceptions.ImportError'>: /home/was/s/local/lib/python2.5/site-packages/cvxopt/umfpack.so: undefined symbol: _g95_filename
 
 ```
-
 
 
 
@@ -194,7 +190,7 @@ archive/issue_events_001867.json:
 archive/issue_comments_003658.json:
 ```json
 {
-    "body": "\n```\nfrom josh:\nHmm. I don't understand why this doesn't work on your 64 bit system, as it\nworks fine on sage.math. Was this using the binary g95 that sage installs?\n\nAs for the gfortran issue. In that case we need to link in libgfortran,\nhowever then we have to detect which one was used. Are there instructions\non how to build with gfortran so there is something we can check to be\nsure which was used.\n\n                                                       Josh\n```\n",
+    "body": "```\nfrom josh:\nHmm. I don't understand why this doesn't work on your 64 bit system, as it\nworks fine on sage.math. Was this using the binary g95 that sage installs?\n\nAs for the gfortran issue. In that case we need to link in libgfortran,\nhowever then we have to detect which one was used. Are there instructions\non how to build with gfortran so there is something we can check to be\nsure which was used.\n\n                                                       Josh\n```",
     "created_at": "2007-09-21T22:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
@@ -202,7 +198,6 @@ archive/issue_comments_003658.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 from josh:
@@ -216,7 +211,6 @@ sure which was used.
 
                                                        Josh
 ```
-
 
 
 

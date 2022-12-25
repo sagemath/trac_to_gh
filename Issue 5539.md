@@ -3,7 +3,7 @@
 archive/issues_005539.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n$ sage -docbuild\nYou must specify the document name and the output format\n```\n\n\nIt would be nice if it at least gave a list of available documents to build. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5539\n\n",
+    "body": "Assignee: tba\n\n```\n$ sage -docbuild\nYou must specify the document name and the output format\n```\n\nIt would be nice if it at least gave a list of available documents to build. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5539\n\n",
     "created_at": "2009-03-17T00:21:15Z",
     "labels": [
         "component: documentation",
@@ -19,12 +19,10 @@ archive/issues_005539.json:
 ```
 Assignee: tba
 
-
 ```
 $ sage -docbuild
 You must specify the document name and the output format
 ```
-
 
 It would be nice if it at least gave a list of available documents to build. 
 
@@ -93,7 +91,7 @@ Attachment [trac_5539.patch](tarball://root/attachments/some-uuid/ticket5539/tra
 archive/issue_comments_043010.json:
 ```json
 {
-    "body": "Yes, I agree that the command\n\n```\nsage -docbuild -help\n```\n\nprovides more help on building the documentation. The error message of \n\n```\nsage -docbuild\n```\n \nnow informs the user about that command. Positive review.",
+    "body": "Yes, I agree that the command\n\n```\nsage -docbuild -help\n```\nprovides more help on building the documentation. The error message of \n\n```\nsage -docbuild\n``` \nnow informs the user about that command. Positive review.",
     "created_at": "2009-06-13T11:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_comment",
@@ -107,13 +105,11 @@ Yes, I agree that the command
 ```
 sage -docbuild -help
 ```
-
 provides more help on building the documentation. The error message of 
 
 ```
 sage -docbuild
-```
- 
+``` 
 now informs the user about that command. Positive review.
 
 

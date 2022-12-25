@@ -3,7 +3,7 @@
 archive/issues_008406.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\n\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\n\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
+    "body": "Assignee: @rlmill\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
     "created_at": "2010-03-01T08:28:27Z",
     "labels": [
         "component: graph theory",
@@ -27,7 +27,6 @@ sage: G.add_vertex(a^2)
 sage: G.vertices()
 [9]
 ```
-
 This should be `[a]`, but `int(a)=9`
 
 ```
@@ -35,7 +34,6 @@ sage: R.<x>=GF(3^3,'a')[]
 sage: G.add_vertex(x)
 ValueError
 ```
-
 This should work as `x` is hashable.
 
 `int(x)` return a `ValueError`, but the code only tests for `TypeError`.
@@ -51,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8406
 archive/issue_comments_075186.json:
 ```json
 {
-    "body": "line 638 of c_graph.pyx, we find:\n\n\n```\ntry:\n    u_int = u\nexcept TypeError:\n    return -1\n```\n\n\nI think we should instead do an explicit test:\n\n```\nif isinstance(u,(int,long,Integer))\n```\n\nto avoid coercions.\n\nThoughts?",
+    "body": "line 638 of c_graph.pyx, we find:\n\n```\ntry:\n    u_int = u\nexcept TypeError:\n    return -1\n```\n\nI think we should instead do an explicit test:\n\n```\nif isinstance(u,(int,long,Integer))\n```\nto avoid coercions.\n\nThoughts?",
     "created_at": "2010-03-01T08:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
@@ -62,7 +60,6 @@ archive/issue_comments_075186.json:
 
 line 638 of c_graph.pyx, we find:
 
-
 ```
 try:
     u_int = u
@@ -70,13 +67,11 @@ except TypeError:
     return -1
 ```
 
-
 I think we should instead do an explicit test:
 
 ```
 if isinstance(u,(int,long,Integer))
 ```
-
 to avoid coercions.
 
 Thoughts?
@@ -88,7 +83,7 @@ Thoughts?
 archive/issue_comments_075187.json:
 ```json
 {
-    "body": "The only thing I could think of was that maybe this would effect the speed. To benchmark, I tried `g = graphs.CubeGraph(n)` for various `n`, since that calls the relevant function `2^n` times. There was no noticable change at all, so I say we definitely switch. Not to steal author credit, but here's what I tested:\n\n\n```\n-    try:\n+    \n+    if isinstance(u,(int,long,Integer)):\n         u_int = u\n-    except TypeError:\n+    else:\n         return -1\n-    if u_int < 0 or u_int >= G.active_vertices.size:\n-        return -1\n-    if u_int in vertex_labels:\n+    if u_int < 0 or u_int >= G.active_vertices.size or u_int in vertex_labels:\n```\n",
+    "body": "The only thing I could think of was that maybe this would effect the speed. To benchmark, I tried `g = graphs.CubeGraph(n)` for various `n`, since that calls the relevant function `2^n` times. There was no noticable change at all, so I say we definitely switch. Not to steal author credit, but here's what I tested:\n\n```\n-    try:\n+    \n+    if isinstance(u,(int,long,Integer)):\n         u_int = u\n-    except TypeError:\n+    else:\n         return -1\n-    if u_int < 0 or u_int >= G.active_vertices.size:\n-        return -1\n-    if u_int in vertex_labels:\n+    if u_int < 0 or u_int >= G.active_vertices.size or u_int in vertex_labels:\n```",
     "created_at": "2010-03-02T07:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
@@ -98,7 +93,6 @@ archive/issue_comments_075187.json:
 ```
 
 The only thing I could think of was that maybe this would effect the speed. To benchmark, I tried `g = graphs.CubeGraph(n)` for various `n`, since that calls the relevant function `2^n` times. There was no noticable change at all, so I say we definitely switch. Not to steal author credit, but here's what I tested:
-
 
 ```
 -    try:
@@ -113,7 +107,6 @@ The only thing I could think of was that maybe this would effect the speed. To b
 -    if u_int in vertex_labels:
 +    if u_int < 0 or u_int >= G.active_vertices.size or u_int in vertex_labels:
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007740.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @rlmill\n\nFrom Robert Miller :\n\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: vertex_coloring(g)\n```\n\n\nIt takes longer to set up the constraint than to solve the problem, on my laptop. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7740\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @rlmill\n\nFrom Robert Miller :\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: vertex_coloring(g)\n```\n\nIt takes longer to set up the constraint than to solve the problem, on my laptop. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7740\n\n",
     "created_at": "2009-12-19T08:43:58Z",
     "labels": [
         "component: numerical",
@@ -22,13 +22,11 @@ CC:  @rlmill
 
 From Robert Miller :
 
-
 ```
 sage: from sage.graphs.graph_coloring import vertex_coloring
 sage: g = graphs.CirculantGraph(120, [2,3,5,7])
 sage: vertex_coloring(g)
 ```
-
 
 It takes longer to set up the constraint than to solve the problem, on my laptop. 
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7740
 archive/issue_comments_066396.json:
 ```json
 {
-    "body": "Well, this time is spent as expected on the add_constraint function, which may spend time over considerations coming from symbolic computations, though I did not achieve to know where... When I am profiling your example I see :\n\n```\n\n25448/21366    0.529    0.000    0.695    0.000 complex_interval_field.py:257(__call__)\n     8642    0.427    0.000    1.136    0.000 complex_interval_field.py:330(random_element)\n     8642    0.106    0.000    0.117    0.000 complex_interval_field.py:325(gen)\n```\n\n\nThese functions are the ones responsible for the time spent defining the LP, but I could not find which line of add_constraint is calling them... If you have any idea, please tell me and I'll give it a look :-)",
+    "body": "Well, this time is spent as expected on the add_constraint function, which may spend time over considerations coming from symbolic computations, though I did not achieve to know where... When I am profiling your example I see :\n\n```\n\n25448/21366    0.529    0.000    0.695    0.000 complex_interval_field.py:257(__call__)\n     8642    0.427    0.000    1.136    0.000 complex_interval_field.py:330(random_element)\n     8642    0.106    0.000    0.117    0.000 complex_interval_field.py:325(gen)\n```\n\nThese functions are the ones responsible for the time spent defining the LP, but I could not find which line of add_constraint is calling them... If you have any idea, please tell me and I'll give it a look :-)",
     "created_at": "2009-12-20T17:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7740",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ Well, this time is spent as expected on the add_constraint function, which may s
      8642    0.427    0.000    1.136    0.000 complex_interval_field.py:330(random_element)
      8642    0.106    0.000    0.117    0.000 complex_interval_field.py:325(gen)
 ```
-
 
 These functions are the ones responsible for the time spent defining the LP, but I could not find which line of add_constraint is calling them... If you have any idea, please tell me and I'll give it a look :-)
 
@@ -107,7 +104,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_066399.json:
 ```json
 {
-    "body": "This patch adds to the file numerical.mip a class LinearFunction which avoid using the much more general symbolic expressions from Sage ( as we only need to define linear functions ). \n\nBefore :\n\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: timeit(\"vertex_coloring(g)\")\n5 loops, best of 3: 3.94 s per loop\n```\n\n\nAfter :\n\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: timeit(\"vertex_coloring(g)\")\n5 loops, best of 3: 2.18 s per loop\n```\n\n\nThe next way to speed up this class would be, methinks, to cythonize it. I tried it this time but got stuck by the fact that the solving functions ( solveCoin, solveGlpk ) are not directly included in Sage and installed by the packages... The best way would really be to move these sources into Sage. It would also solve solve the problem of having to update both packages and numerical.mip t the same time .. :-/\n\nNathann",
+    "body": "This patch adds to the file numerical.mip a class LinearFunction which avoid using the much more general symbolic expressions from Sage ( as we only need to define linear functions ). \n\nBefore :\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: timeit(\"vertex_coloring(g)\")\n5 loops, best of 3: 3.94 s per loop\n```\n\nAfter :\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: timeit(\"vertex_coloring(g)\")\n5 loops, best of 3: 2.18 s per loop\n```\n\nThe next way to speed up this class would be, methinks, to cythonize it. I tried it this time but got stuck by the fact that the solving functions ( solveCoin, solveGlpk ) are not directly included in Sage and installed by the packages... The best way would really be to move these sources into Sage. It would also solve solve the problem of having to update both packages and numerical.mip t the same time .. :-/\n\nNathann",
     "created_at": "2009-12-26T12:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7740",
     "type": "issue_comment",
@@ -120,7 +117,6 @@ This patch adds to the file numerical.mip a class LinearFunction which avoid usi
 
 Before :
 
-
 ```
 sage: from sage.graphs.graph_coloring import vertex_coloring
 sage: g = graphs.CirculantGraph(120, [2,3,5,7])
@@ -128,9 +124,7 @@ sage: timeit("vertex_coloring(g)")
 5 loops, best of 3: 3.94 s per loop
 ```
 
-
 After :
-
 
 ```
 sage: from sage.graphs.graph_coloring import vertex_coloring
@@ -138,7 +132,6 @@ sage: g = graphs.CirculantGraph(120, [2,3,5,7])
 sage: timeit("vertex_coloring(g)")
 5 loops, best of 3: 2.18 s per loop
 ```
-
 
 The next way to speed up this class would be, methinks, to cythonize it. I tried it this time but got stuck by the fact that the solving functions ( solveCoin, solveGlpk ) are not directly included in Sage and installed by the packages... The best way would really be to move these sources into Sage. It would also solve solve the problem of having to update both packages and numerical.mip t the same time .. :-/
 
@@ -169,7 +162,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066401.json:
 ```json
 {
-    "body": "Before :\n\n```\nsage: g = graphs.WorldMap()\nsage: %timeit g.edge_connectivity()\n10 loops, best of 3: 1.29 s per loop\n```\n\n\nAfter :\n\n```\nsage: g = graphs.WorldMap()\nsage: %timeit g.edge_connectivity()\n10 loops, best of 3: 231 ms per loop\n```\n\n\nBut as mentionned earlier, we will have to find other ways to improve this class ! :-)\n\nNathann",
+    "body": "Before :\n\n```\nsage: g = graphs.WorldMap()\nsage: %timeit g.edge_connectivity()\n10 loops, best of 3: 1.29 s per loop\n```\n\nAfter :\n\n```\nsage: g = graphs.WorldMap()\nsage: %timeit g.edge_connectivity()\n10 loops, best of 3: 231 ms per loop\n```\n\nBut as mentionned earlier, we will have to find other ways to improve this class ! :-)\n\nNathann",
     "created_at": "2009-12-28T11:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7740",
     "type": "issue_comment",
@@ -186,7 +179,6 @@ sage: %timeit g.edge_connectivity()
 10 loops, best of 3: 1.29 s per loop
 ```
 
-
 After :
 
 ```
@@ -194,7 +186,6 @@ sage: g = graphs.WorldMap()
 sage: %timeit g.edge_connectivity()
 10 loops, best of 3: 231 ms per loop
 ```
-
 
 But as mentionned earlier, we will have to find other ways to improve this class ! :-)
 

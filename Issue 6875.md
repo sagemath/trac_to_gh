@@ -3,7 +3,7 @@
 archive/issues_006875.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: polar_plot, fill\n\nThe fill option for polar_plot does not work correctly anymore.\n\nThe following two doctests don't produce the supposed output:\n\n* Fill the area between two functions:\n\n```\nsage: polar_plot(cos(4*x) + 1.5, 0, 2*pi, fill=0.5 * cos(4*x) + 2.5, fillcolor='orange').show(aspect_ratio=1)\n```\n\n\n* Fill the area between several spirals:\n\n```\nsage: polar_plot([(1.2+k*0.2)*log(x) for k in range(6)], 1, 3 * pi, fill = {0: [1], 2: [3], 4: [5]})\n```\n\n\nThis regression has been introduced with the changeset 12287 (Ticket: #5930).\n\nSage really needs a test framework for plots. Otherwise more and more regressions will creep in, without anybody noticing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6875\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: polar_plot, fill\n\nThe fill option for polar_plot does not work correctly anymore.\n\nThe following two doctests don't produce the supposed output:\n\n* Fill the area between two functions:\n\n```\nsage: polar_plot(cos(4*x) + 1.5, 0, 2*pi, fill=0.5 * cos(4*x) + 2.5, fillcolor='orange').show(aspect_ratio=1)\n```\n\n* Fill the area between several spirals:\n\n```\nsage: polar_plot([(1.2+k*0.2)*log(x) for k in range(6)], 1, 3 * pi, fill = {0: [1], 2: [3], 4: [5]})\n```\n\nThis regression has been introduced with the changeset 12287 (Ticket: #5930).\n\nSage really needs a test framework for plots. Otherwise more and more regressions will creep in, without anybody noticing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6875\n\n",
     "created_at": "2009-09-03T11:03:40Z",
     "labels": [
         "component: graphics",
@@ -30,13 +30,11 @@ The following two doctests don't produce the supposed output:
 sage: polar_plot(cos(4*x) + 1.5, 0, 2*pi, fill=0.5 * cos(4*x) + 2.5, fillcolor='orange').show(aspect_ratio=1)
 ```
 
-
 * Fill the area between several spirals:
 
 ```
 sage: polar_plot([(1.2+k*0.2)*log(x) for k in range(6)], 1, 3 * pi, fill = {0: [1], 2: [3], 4: [5]})
 ```
-
 
 This regression has been introduced with the changeset 12287 (Ticket: #5930).
 
@@ -130,7 +128,7 @@ The correct output of the second example
 archive/issue_comments_056653.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> It still doesn't seem like the first example above works for me---I get a single solid figure.  Is it supposed to have a band around it's edge?\n\nI've attached two images with the correct output of the two examples.\nIs this what you get with the patch?",
+    "body": "Replying to [comment:1 jason]:\n> It still doesn't seem like the first example above works for me---I get a single solid figure.  Is it supposed to have a band around it's edge?\n\n\nI've attached two images with the correct output of the two examples.\nIs this what you get with the patch?",
     "created_at": "2009-09-15T09:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
@@ -141,6 +139,7 @@ archive/issue_comments_056653.json:
 
 Replying to [comment:1 jason]:
 > It still doesn't seem like the first example above works for me---I get a single solid figure.  Is it supposed to have a band around it's edge?
+
 
 I've attached two images with the correct output of the two examples.
 Is this what you get with the patch?

@@ -3,7 +3,7 @@
 archive/issues_007081.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis is not good:\n\n\n```\nflat:sagenb wstein$ pwd\n/Users/wstein/sage/nb/sagenb\nflat:sagenb wstein$ sage -c \"print os.path.abspath('.')\"\n/Users/wstein/sage/build/64bit/sage/local/bin\n```\n\n\nIt should be when one runs \"sage -c\" that it runs in the *current* directory.  The actual behavior is very confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7081\n\n",
+    "body": "Assignee: cwitty\n\nThis is not good:\n\n```\nflat:sagenb wstein$ pwd\n/Users/wstein/sage/nb/sagenb\nflat:sagenb wstein$ sage -c \"print os.path.abspath('.')\"\n/Users/wstein/sage/build/64bit/sage/local/bin\n```\n\nIt should be when one runs \"sage -c\" that it runs in the *current* directory.  The actual behavior is very confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7081\n\n",
     "created_at": "2009-09-30T09:10:31Z",
     "labels": [
         "component: misc",
@@ -20,14 +20,12 @@ Assignee: cwitty
 
 This is not good:
 
-
 ```
 flat:sagenb wstein$ pwd
 /Users/wstein/sage/nb/sagenb
 flat:sagenb wstein$ sage -c "print os.path.abspath('.')"
 /Users/wstein/sage/build/64bit/sage/local/bin
 ```
-
 
 It should be when one runs "sage -c" that it runs in the *current* directory.  The actual behavior is very confusing.
 

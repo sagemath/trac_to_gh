@@ -49,7 +49,7 @@ Attachment [trac_5045_scripts-rep.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_038353.json:
 ```json
 {
-    "body": "To test this, edit SAGE_ROOT/local/lib/sage-flags.txt and add some madeup flags like x.  Then test by doing, e.g., \n\n```\nmake check\n```\n\nand seeing that the build process properly stops.",
+    "body": "To test this, edit SAGE_ROOT/local/lib/sage-flags.txt and add some madeup flags like x.  Then test by doing, e.g., \n\n```\nmake check\n```\nand seeing that the build process properly stops.",
     "created_at": "2009-01-22T10:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5045",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ To test this, edit SAGE_ROOT/local/lib/sage-flags.txt and add some madeup flags 
 ```
 make check
 ```
-
 and seeing that the build process properly stops.
 
 

@@ -3,7 +3,7 @@
 archive/issues_003276.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nFor example: \n\n\n```\nsage: var('n,m')\n(n, m)\nsage: assume(n, m, 'integer')\nsage: sin(n*m*pi)\n0\nsage: forget()\nsage: sin(n*m*pi)\nsin(pi*m*n)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3276\n\n",
+    "body": "Assignee: @garyfurnish\n\nFor example: \n\n```\nsage: var('n,m')\n(n, m)\nsage: assume(n, m, 'integer')\nsage: sin(n*m*pi)\n0\nsage: forget()\nsage: sin(n*m*pi)\nsin(pi*m*n)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3276\n\n",
     "created_at": "2008-05-23T08:13:34Z",
     "labels": [
         "component: calculus"
@@ -19,7 +19,6 @@ Assignee: @garyfurnish
 
 For example: 
 
-
 ```
 sage: var('n,m')
 (n, m)
@@ -30,7 +29,6 @@ sage: forget()
 sage: sin(n*m*pi)
 sin(pi*m*n)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3276
 

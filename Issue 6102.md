@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6102
 archive/issue_comments_048627.json:
 ```json
 {
-    "body": "The following code was posted by Felix Breuer on [sage-support](https://groups.google.com/d/topic/sage-support/mdEKXfBTHOY/discussion)\n\n```\ndef cup_product(X,c1,dim1,c2,dim2):\n    d = dim1 + dim2 \n    faces1 = list(X.n_faces(dim1))\n    faces2 = list(X.n_faces(dim2))\n    faces = list(X.n_faces(d))\n    res = []\n    for sigma in faces:\n        sigma1 = Simplex(sigma[0:dim1+1])\n        sigma2 = Simplex(sigma[dim1:d+1])\n        index1 = faces1.index(sigma1)\n        index2 = faces2.index(sigma2)\n        coeff1 = c1[index1]\n        coeff2 = c2[index2]\n        coeff = coeff1 * coeff2\n        res.append(coeff)\n    return vector(tuple(res))\n```\n\nTo use it on the Torus, for example, you can do this:\n\n```\nX = simplicial_complexes.Torus()\nC = X.chain_complex(cochain=True)\nH = C.homology(generators=True)\ngen1 = H[1][1][0]\ngen2 = H[1][1][1]\nd1 = C.differential()[1]\nq = cup_product(X,gen1,1,gen1,1)\nprint q\nprint d1.solve_right(q)\np = cup_product(X,gen1,1,gen2,1)\nprint p\nprint d1.solve_right(p) #error\n```\n",
+    "body": "The following code was posted by Felix Breuer on [sage-support](https://groups.google.com/d/topic/sage-support/mdEKXfBTHOY/discussion)\n\n```\ndef cup_product(X,c1,dim1,c2,dim2):\n    d = dim1 + dim2 \n    faces1 = list(X.n_faces(dim1))\n    faces2 = list(X.n_faces(dim2))\n    faces = list(X.n_faces(d))\n    res = []\n    for sigma in faces:\n        sigma1 = Simplex(sigma[0:dim1+1])\n        sigma2 = Simplex(sigma[dim1:d+1])\n        index1 = faces1.index(sigma1)\n        index2 = faces2.index(sigma2)\n        coeff1 = c1[index1]\n        coeff2 = c2[index2]\n        coeff = coeff1 * coeff2\n        res.append(coeff)\n    return vector(tuple(res))\n```\nTo use it on the Torus, for example, you can do this:\n\n```\nX = simplicial_complexes.Torus()\nC = X.chain_complex(cochain=True)\nH = C.homology(generators=True)\ngen1 = H[1][1][0]\ngen2 = H[1][1][1]\nd1 = C.differential()[1]\nq = cup_product(X,gen1,1,gen1,1)\nprint q\nprint d1.solve_right(q)\np = cup_product(X,gen1,1,gen2,1)\nprint p\nprint d1.solve_right(p) #error\n```",
     "created_at": "2012-01-04T23:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ def cup_product(X,c1,dim1,c2,dim2):
         res.append(coeff)
     return vector(tuple(res))
 ```
-
 To use it on the Torus, for example, you can do this:
 
 ```
@@ -83,7 +82,6 @@ p = cup_product(X,gen1,1,gen2,1)
 print p
 print d1.solve_right(p) #error
 ```
-
 
 
 
@@ -229,7 +227,7 @@ Changing status from new to needs_review.
 archive/issue_comments_048629.json:
 ```json
 {
-    "body": "Here is an initial attempt. \n----\nNew commits:",
+    "body": "Here is an initial attempt. \n\n---\nNew commits:",
     "created_at": "2015-09-10T02:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -239,7 +237,8 @@ archive/issue_comments_048629.json:
 ```
 
 Here is an initial attempt. 
-----
+
+---
 New commits:
 
 
@@ -339,7 +338,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_048635.json:
 ```json
 {
-    "body": "An update: I have a new version of `algebraic_topological_model.py`, which is the key to everything here. I'm calling it `AT_model.py`, and I'll attach it to the ticket. The good news:\n\n- it works for Delta complexes\n- it's faster with mod 2 coefficients:\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: from sage.homology.AT_model import AT_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %time phi, H = algebraic_topological_model(RP3, GF(2)) # old version\nCPU times: user 813 ms, sys: 150 ms, total: 963 ms\nWall time: 852 ms\nsage: %time phi, H = AT_model(RP3, GF(2))     # new version\nCPU times: user 345 ms, sys: 32.3 ms, total: 377 ms\nWall time: 354 ms\n```\n\nThe bad news: it's *much* slower with rational coefficients, and I have no idea why:\n\n```\nsage: %time phi, H = algebraic_topological_model(RP3, QQ)   # old version\nCPU times: user 1.27 s, sys: 138 ms, total: 1.41 s\nWall time: 1.35 s\nsage: %time phi, H = AT_model(RP3, QQ)      # new version\nCPU times: user 23.9 s, sys: 69.6 ms, total: 24 s\nWall time: 24 s\n```\n\nProfiling the code with `%prun` was not illuminating to me, and I couldn't run `%crun` because I couldn't get [the Google performance analysis tools](https://github.com/gperftools/gperftools) to install on my machine. Optimizing code is not my strong suit, in any case.\n\nBecause of this, I haven't tried to implement cup products for Delta complexes. I think I know how to do that, but it hasn't felt worth it yet.",
+    "body": "An update: I have a new version of `algebraic_topological_model.py`, which is the key to everything here. I'm calling it `AT_model.py`, and I'll attach it to the ticket. The good news:\n\n- it works for Delta complexes\n- it's faster with mod 2 coefficients:\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: from sage.homology.AT_model import AT_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %time phi, H = algebraic_topological_model(RP3, GF(2)) # old version\nCPU times: user 813 ms, sys: 150 ms, total: 963 ms\nWall time: 852 ms\nsage: %time phi, H = AT_model(RP3, GF(2))     # new version\nCPU times: user 345 ms, sys: 32.3 ms, total: 377 ms\nWall time: 354 ms\n```\nThe bad news: it's *much* slower with rational coefficients, and I have no idea why:\n\n```\nsage: %time phi, H = algebraic_topological_model(RP3, QQ)   # old version\nCPU times: user 1.27 s, sys: 138 ms, total: 1.41 s\nWall time: 1.35 s\nsage: %time phi, H = AT_model(RP3, QQ)      # new version\nCPU times: user 23.9 s, sys: 69.6 ms, total: 24 s\nWall time: 24 s\n```\nProfiling the code with `%prun` was not illuminating to me, and I couldn't run `%crun` because I couldn't get [the Google performance analysis tools](https://github.com/gperftools/gperftools) to install on my machine. Optimizing code is not my strong suit, in any case.\n\nBecause of this, I haven't tried to implement cup products for Delta complexes. I think I know how to do that, but it hasn't felt worth it yet.",
     "created_at": "2015-09-23T18:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -364,7 +363,6 @@ sage: %time phi, H = AT_model(RP3, GF(2))     # new version
 CPU times: user 345 ms, sys: 32.3 ms, total: 377 ms
 Wall time: 354 ms
 ```
-
 The bad news: it's *much* slower with rational coefficients, and I have no idea why:
 
 ```
@@ -375,7 +373,6 @@ sage: %time phi, H = AT_model(RP3, QQ)      # new version
 CPU times: user 23.9 s, sys: 69.6 ms, total: 24 s
 Wall time: 24 s
 ```
-
 Profiling the code with `%prun` was not illuminating to me, and I couldn't run `%crun` because I couldn't get [the Google performance analysis tools](https://github.com/gperftools/gperftools) to install on my machine. Optimizing code is not my strong suit, in any case.
 
 Because of this, I haven't tried to implement cup products for Delta complexes. I think I know how to do that, but it hasn't felt worth it yet.
@@ -407,7 +404,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_048637.json:
 ```json
 {
-    "body": "I think the issue comes from the fact that a category pushout is being done. This doesn't seem to happen in the finite fields of prime order cases, but it does show up for prime powers. However, for `GF(4, 'a')`, it took a non-trivial amount of time (over 2 seconds on my machine).\n\nFrom doing a line by line profiling, here's the lines that take the longest over `QQ`:\n\n```\nLine #      Hits         Time  Per Hit   % Time  Line Contents\n==============================================================\n   210       182       745504   4096.2      5.8              c_bar = c - phi_old * diff * c\n   211       182       452404   2485.7      3.5              pi_bdry_c_bar = pi_old * diff * c_bar \n   236      5321     10852810   2039.6     84.1                      eta_ij = (pi_old * c_j)[u_idx]\n   244        90       323096   3590.0      2.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   290         1        27459  27459.0      0.2      phi = ChainContraction(phi_data, pi, iota)\n```\n\nwhere the time is given in microseconds. Over `GF(2)`, these operations are significantly faster per call.",
+    "body": "I think the issue comes from the fact that a category pushout is being done. This doesn't seem to happen in the finite fields of prime order cases, but it does show up for prime powers. However, for `GF(4, 'a')`, it took a non-trivial amount of time (over 2 seconds on my machine).\n\nFrom doing a line by line profiling, here's the lines that take the longest over `QQ`:\n\n```\nLine #      Hits         Time  Per Hit   % Time  Line Contents\n==============================================================\n   210       182       745504   4096.2      5.8              c_bar = c - phi_old * diff * c\n   211       182       452404   2485.7      3.5              pi_bdry_c_bar = pi_old * diff * c_bar \n   236      5321     10852810   2039.6     84.1                      eta_ij = (pi_old * c_j)[u_idx]\n   244        90       323096   3590.0      2.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   290         1        27459  27459.0      0.2      phi = ChainContraction(phi_data, pi, iota)\n```\nwhere the time is given in microseconds. Over `GF(2)`, these operations are significantly faster per call.",
     "created_at": "2015-10-08T18:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -429,7 +426,6 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
    244        90       323096   3590.0      2.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()
    290         1        27459  27459.0      0.2      phi = ChainContraction(phi_data, pi, iota)
 ```
-
 where the time is given in microseconds. Over `GF(2)`, these operations are significantly faster per call.
 
 
@@ -439,7 +435,7 @@ where the time is given in microseconds. Over `GF(2)`, these operations are sign
 archive/issue_comments_048638.json:
 ```json
 {
-    "body": "That's helpful. The change\n\n```diff\n--- Dropbox/prog/sage/Math/Simplicial/homotopies/AT_model.py\t2015-09-23 10:44:42.000000000 -0700\n+++ Desktop/AT_model.py\t2015-10-08 14:14:33.000000000 -0700\n@@ -233,7 +233,7 @@\n                 pi_cols.append(zero_vector)\n                 for c_j_idx, c_j in enumerate(old_cells):\n                     # eta_ij = <u, pi(c_j)>:\n-                    eta_ij = (pi_old * c_j)[u_idx]\n+                    eta_ij = pi_old.row(u_idx).dot_product(c_j)\n \n                     if eta_ij:\n                         # Adjust phi(c_j).\n```\n\ncuts the time for `AT_model(RP3, QQ)` from about 20 seconds to about 3 seconds. Still too long, but better. (At the moment, I'm getting about 7/10 of a second for the old version, just under 3 seconds with this modified new version.)\n\nFor rational matrices with lots of zero entries, it seems to be faster to multiply sparse matrices than dense ones, so I am trying to replace some of the matrices by sparse versions. I found [this bug](http://trac.sagemath.org/ticket/19377) by doing this. Good times.",
+    "body": "That's helpful. The change\n\n```diff\n--- Dropbox/prog/sage/Math/Simplicial/homotopies/AT_model.py\t2015-09-23 10:44:42.000000000 -0700\n+++ Desktop/AT_model.py\t2015-10-08 14:14:33.000000000 -0700\n@@ -233,7 +233,7 @@\n                 pi_cols.append(zero_vector)\n                 for c_j_idx, c_j in enumerate(old_cells):\n                     # eta_ij = <u, pi(c_j)>:\n-                    eta_ij = (pi_old * c_j)[u_idx]\n+                    eta_ij = pi_old.row(u_idx).dot_product(c_j)\n \n                     if eta_ij:\n                         # Adjust phi(c_j).\n```\ncuts the time for `AT_model(RP3, QQ)` from about 20 seconds to about 3 seconds. Still too long, but better. (At the moment, I'm getting about 7/10 of a second for the old version, just under 3 seconds with this modified new version.)\n\nFor rational matrices with lots of zero entries, it seems to be faster to multiply sparse matrices than dense ones, so I am trying to replace some of the matrices by sparse versions. I found [this bug](http://trac.sagemath.org/ticket/19377) by doing this. Good times.",
     "created_at": "2015-10-08T22:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -463,7 +459,6 @@ That's helpful. The change
                      if eta_ij:
                          # Adjust phi(c_j).
 ```
-
 cuts the time for `AT_model(RP3, QQ)` from about 20 seconds to about 3 seconds. Still too long, but better. (At the moment, I'm getting about 7/10 of a second for the old version, just under 3 seconds with this modified new version.)
 
 For rational matrices with lots of zero entries, it seems to be faster to multiply sparse matrices than dense ones, so I am trying to replace some of the matrices by sparse versions. I found [this bug](http://trac.sagemath.org/ticket/19377) by doing this. Good times.
@@ -493,7 +488,7 @@ Another new bug: #19378.
 archive/issue_comments_048640.json:
 ```json
 {
-    "body": "(I like this line-profiler, it's very useful.) A lot of time seems to be lost with (dense?) matrix operations over `QQ`:\n\n```\n   210       182       741358   4073.4     33.0              c_bar = c - phi_old * diff * c\n   211       182       458238   2517.8     20.4              pi_bdry_c_bar = pi_old * diff * c_bar\n\n\n   244        90       280498   3116.6     12.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   245      3402         4290      1.3      0.2                  indices = [i for i in range(pi_nrows) if i not in to_be_deleted]\n   246        90        16370    181.9      0.7                  keep = vector(base_ring, pi_nrows, {i:1 for i in indices})\n   247      5411       204965     37.9      9.1                  cols = [v.pairwise_product(keep) for v in pi_cols_old]\n   248        90       258909   2876.8     11.5                  pi_old = MS_pi_t.matrix(cols).transpose()\n```\n\nI know we have many specialized algorithms for doing matrix manipulations over finite fields, so perhaps we are also seeing some of that here too. I'm wondering if the difference is just the number of matrix operations is just higher...(perhaps sparse matrices will work better...).\n\nFYI - in the old implementation, this was the line taking the majority of the time\n\n```\n   246      5321       727375    136.7     65.8                      c_j_vec = vector(base_ring, old_rank, {c_j_idx: 1})\n```\n",
+    "body": "(I like this line-profiler, it's very useful.) A lot of time seems to be lost with (dense?) matrix operations over `QQ`:\n\n```\n   210       182       741358   4073.4     33.0              c_bar = c - phi_old * diff * c\n   211       182       458238   2517.8     20.4              pi_bdry_c_bar = pi_old * diff * c_bar\n\n\n   244        90       280498   3116.6     12.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   245      3402         4290      1.3      0.2                  indices = [i for i in range(pi_nrows) if i not in to_be_deleted]\n   246        90        16370    181.9      0.7                  keep = vector(base_ring, pi_nrows, {i:1 for i in indices})\n   247      5411       204965     37.9      9.1                  cols = [v.pairwise_product(keep) for v in pi_cols_old]\n   248        90       258909   2876.8     11.5                  pi_old = MS_pi_t.matrix(cols).transpose()\n```\nI know we have many specialized algorithms for doing matrix manipulations over finite fields, so perhaps we are also seeing some of that here too. I'm wondering if the difference is just the number of matrix operations is just higher...(perhaps sparse matrices will work better...).\n\nFYI - in the old implementation, this was the line taking the majority of the time\n\n```\n   246      5321       727375    136.7     65.8                      c_j_vec = vector(base_ring, old_rank, {c_j_idx: 1})\n```",
     "created_at": "2015-10-09T03:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -515,7 +510,6 @@ archive/issue_comments_048640.json:
    247      5411       204965     37.9      9.1                  cols = [v.pairwise_product(keep) for v in pi_cols_old]
    248        90       258909   2876.8     11.5                  pi_old = MS_pi_t.matrix(cols).transpose()
 ```
-
 I know we have many specialized algorithms for doing matrix manipulations over finite fields, so perhaps we are also seeing some of that here too. I'm wondering if the difference is just the number of matrix operations is just higher...(perhaps sparse matrices will work better...).
 
 FYI - in the old implementation, this was the line taking the majority of the time
@@ -523,7 +517,6 @@ FYI - in the old implementation, this was the line taking the majority of the ti
 ```
    246      5321       727375    136.7     65.8                      c_j_vec = vector(base_ring, old_rank, {c_j_idx: 1})
 ```
-
 
 
 
@@ -662,7 +655,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_048648.json:
 ```json
 {
-    "body": "Those are some very good improvements.\n\nI really don't like this:\n\n```python\n# diff is sparse and low density. Dense matrices are faster\n# over finite fields, but for low density matrices, sparse\n# matrices are faster over the rationals.\nif base_ring != QQ:\n    diff = diff.dense_matrix()\n```\n\nIt's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\nI did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n\nWas there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\nIs there anything else you'd like to do to this before I set it to positive review?",
+    "body": "Those are some very good improvements.\n\nI really don't like this:\n\n```python\n# diff is sparse and low density. Dense matrices are faster\n# over finite fields, but for low density matrices, sparse\n# matrices are faster over the rationals.\nif base_ring != QQ:\n    diff = diff.dense_matrix()\n```\nIt's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\nI did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n\nWas there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\nIs there anything else you'd like to do to this before I set it to positive review?",
     "created_at": "2015-10-10T19:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -682,7 +675,6 @@ I really don't like this:
 if base_ring != QQ:
     diff = diff.dense_matrix()
 ```
-
 It's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...
 
 I did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.
@@ -732,7 +724,7 @@ archive/issue_events_014354.json:
 archive/issue_comments_048649.json:
 ```json
 {
-    "body": "Replying to [comment:30 tscrim]:\n> Those are some very good improvements.\n> \n> I really don't like this:\n> {{{#!python\n> # diff is sparse and low density. Dense matrices are faster\n> # over finite fields, but for low density matrices, sparse\n> # matrices are faster over the rationals.\n> if base_ring != QQ:\n>     diff = diff.dense_matrix()\n> }}}\n> It's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\nOn my computer, if I do\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %timeit algebraic_topological_model(RP3, GF(2))\n```\n\nthen without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\n> I did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n> \n> Was there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\nThe fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n\nI don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n\n```\n%timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n```\n\nand similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\n> Is there anything else you'd like to do to this before I set it to positive review?\n\nI think that cup products for Delta complexes can come on a separate ticket, if anyone ever figures it out. I'll see what I can do, but I don't want it to hold up this ticket.",
+    "body": "Replying to [comment:30 tscrim]:\n> Those are some very good improvements.\n> \n> I really don't like this:\n> \n> ```python\n> # diff is sparse and low density. Dense matrices are faster\n> # over finite fields, but for low density matrices, sparse\n> # matrices are faster over the rationals.\n> if base_ring != QQ:\n>     diff = diff.dense_matrix()\n> ```\n> It's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\n\nOn my computer, if I do\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %timeit algebraic_topological_model(RP3, GF(2))\n```\nthen without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\n> I did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n> \n> Was there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\n\nThe fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n\nI don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n\n```\n%timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n```\nand similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\n> Is there anything else you'd like to do to this before I set it to positive review?\n\n\nI think that cup products for Delta complexes can come on a separate ticket, if anyone ever figures it out. I'll see what I can do, but I don't want it to hold up this ticket.",
     "created_at": "2015-10-10T20:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -745,14 +737,16 @@ Replying to [comment:30 tscrim]:
 > Those are some very good improvements.
 > 
 > I really don't like this:
-> {{{#!python
+> 
+> ```python
 > # diff is sparse and low density. Dense matrices are faster
 > # over finite fields, but for low density matrices, sparse
 > # matrices are faster over the rationals.
 > if base_ring != QQ:
 >     diff = diff.dense_matrix()
-> }}}
+> ```
 > It's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...
+
 
 On my computer, if I do
 
@@ -761,12 +755,12 @@ sage: from sage.homology.algebraic_topological_model import algebraic_topologica
 sage: RP3 = simplicial_complexes.RealProjectiveSpace(3)
 sage: %timeit algebraic_topological_model(RP3, GF(2))
 ```
-
 then without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.
 
 > I did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.
 > 
 > Was there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?
+
 
 The fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.
 
@@ -775,10 +769,10 @@ I don't know where to look in the linear algebra code to improve the timings. I 
 ```
 %timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)
 ```
-
 and similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.
 
 > Is there anything else you'd like to do to this before I set it to positive review?
+
 
 I think that cup products for Delta complexes can come on a separate ticket, if anyone ever figures it out. I'll see what I can do, but I don't want it to hold up this ticket.
 
@@ -789,7 +783,7 @@ I think that cup products for Delta complexes can come on a separate ticket, if 
 archive/issue_comments_048650.json:
 ```json
 {
-    "body": "I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\nFfrom taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\nAlso I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\nIf you would prefer one/both of these things to be pushed to later tickets, we can do that, but I'd rather get the latter done now.\n----\nNew commits:",
+    "body": "I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\nFfrom taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\nAlso I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\nIf you would prefer one/both of these things to be pushed to later tickets, we can do that, but I'd rather get the latter done now.\n\n---\nNew commits:",
     "created_at": "2015-10-10T22:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -805,7 +799,8 @@ Ffrom taking a closer look at things, I bet we could get further speedups by not
 Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)
 
 If you would prefer one/both of these things to be pushed to later tickets, we can do that, but I'd rather get the latter done now.
-----
+
+---
 New commits:
 
 
@@ -815,7 +810,7 @@ New commits:
 archive/issue_comments_048651.json:
 ```json
 {
-    "body": "Replying to [comment:31 jhpalmieri]:\n> On my computer, if I do\n> {{{\n> sage: from sage.homology.algebraic_topological_model import algebraic_topological_model\n> sage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\n> sage: %timeit algebraic_topological_model(RP3, GF(2))\n> }}}\n> then without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\nI didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\n> The fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n> I don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n> {{{\n> %timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n> }}}\n> and similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\nIt sounds like #2705 will help for the sparse case, but I can dig around in the sparse matrix code and try to find out ways I can squeeze speed out of the matrix operations (and use hints from the tickets I cited) if you think it's worth it for this ticket. See also my previous replay",
+    "body": "Replying to [comment:31 jhpalmieri]:\n> On my computer, if I do\n> \n> ```\n> sage: from sage.homology.algebraic_topological_model import algebraic_topological_model\n> sage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\n> sage: %timeit algebraic_topological_model(RP3, GF(2))\n> ```\n> then without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\n\nI didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\n> The fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n> I don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n> \n> ```\n> %timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n> ```\n> and similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\n\nIt sounds like #2705 will help for the sparse case, but I can dig around in the sparse matrix code and try to find out ways I can squeeze speed out of the matrix operations (and use hints from the tickets I cited) if you think it's worth it for this ticket. See also my previous replay",
     "created_at": "2015-10-10T22:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -826,21 +821,25 @@ archive/issue_comments_048651.json:
 
 Replying to [comment:31 jhpalmieri]:
 > On my computer, if I do
-> {{{
+> 
+> ```
 > sage: from sage.homology.algebraic_topological_model import algebraic_topological_model
 > sage: RP3 = simplicial_complexes.RealProjectiveSpace(3)
 > sage: %timeit algebraic_topological_model(RP3, GF(2))
-> }}}
+> ```
 > then without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.
+
 
 I didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!
 
 > The fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.
 > I don't know where to look in the linear algebra code to improve the timings. I ran tests of the form
-> {{{
+> 
+> ```
 > %timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)
-> }}}
+> ```
 > and similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.
+
 
 It sounds like #2705 will help for the sparse case, but I can dig around in the sparse matrix code and try to find out ways I can squeeze speed out of the matrix operations (and use hints from the tickets I cited) if you think it's worth it for this ticket. See also my previous replay
 
@@ -851,7 +850,7 @@ It sounds like #2705 will help for the sparse case, but I can dig around in the 
 archive/issue_comments_048652.json:
 ```json
 {
-    "body": "Replying to [comment:32 tscrim]:\n> I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\nGreat.\n \n> From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\nGood idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\n> Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\nI think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me. If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n\n```\nsage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n```\n\nMaybe\n\n```\nsage: H.<x> = X.cohomology_with_basis(1, QQ)\n```\n\nwill define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\n> I didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\nNo need to apologize, you had a reasonable question. And it is surprising how much difference that single change makes.",
+    "body": "Replying to [comment:32 tscrim]:\n> I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\n\nGreat.\n \n> From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\n\nGood idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\n> Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\n\nI think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me. If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n\n```\nsage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n```\nMaybe\n\n```\nsage: H.<x> = X.cohomology_with_basis(1, QQ)\n```\nwill define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\n> I didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\n\nNo need to apologize, you had a reasonable question. And it is surprising how much difference that single change makes.",
     "created_at": "2015-10-11T02:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -863,29 +862,31 @@ archive/issue_comments_048652.json:
 Replying to [comment:32 tscrim]:
 > I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the "new" version.
 
+
 Great.
  
 > From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the "new" version). Have you tried to do this?
 
+
 Good idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.
 
 > Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)
+
 
 I think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me. If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with
 
 ```
 sage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()
 ```
-
 Maybe
 
 ```
 sage: H.<x> = X.cohomology_with_basis(1, QQ)
 ```
-
 will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)
 
 > I didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!
+
 
 No need to apologize, you had a reasonable question. And it is surprising how much difference that single change makes.
 
@@ -896,7 +897,7 @@ No need to apologize, you had a reasonable question. And it is surprising how mu
 archive/issue_comments_048653.json:
 ```json
 {
-    "body": "Replying to [comment:34 jhpalmieri]:\n> Replying to [comment:32 tscrim]:\n> > From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n> \n> Good idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\nYea, I confirm that there is not much time being spent on the transpose by just pulling that part out to a separate line (which I should have done beforehand, sorry). So the way to optimize this further is to speed up the matrix construction, which might depend upon the input data, and then also the dot product is the 3rd slowest line. I think we've gotten to a good point that we should just let it be for now (at least I'm not going to try and optimize it further because I will be doing the refactoring below).\n\n> > Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n> \n> I think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me.\n\nThere is a way to access the part in a single degree with the `basis` function by passing in an integer:\n\n```\nsage: s = SymmetricFunctions(QQ).s()\nsage: list(s.basis(3))\n[s[3], s[2, 1], s[1, 1, 1]]\n```\n\nThis unfortunately doesn't work for most of the infinite dimensional CFM's, but there should be a generic method that works for all objects in `FiniteDimensionalModulesWithBasis`. At which point, we can use the `submodule` to construct the degree part (which also should have a dedicated method):\n\n```\nsage: s.submodule(list(s.basis(3)), already_echelonized=True)\nFree module generated by {0, 1, 2} over Rational Field\n```\n\n\n> If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n> {{{\n> sage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n> }}}\n> Maybe\n> {{{\n> sage: H.<x> = X.cohomology_with_basis(1, QQ)\n> }}}\n> will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\nWhat we could do is specify variable names and then could use the `inject_variables` method. I will think more about this tomorrow when I work on the above refactoring.",
+    "body": "Replying to [comment:34 jhpalmieri]:\n> Replying to [comment:32 tscrim]:\n> > From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\n> \n> Good idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\n\nYea, I confirm that there is not much time being spent on the transpose by just pulling that part out to a separate line (which I should have done beforehand, sorry). So the way to optimize this further is to speed up the matrix construction, which might depend upon the input data, and then also the dot product is the 3rd slowest line. I think we've gotten to a good point that we should just let it be for now (at least I'm not going to try and optimize it further because I will be doing the refactoring below).\n\n> > Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\n> \n> I think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me.\n\n\nThere is a way to access the part in a single degree with the `basis` function by passing in an integer:\n\n```\nsage: s = SymmetricFunctions(QQ).s()\nsage: list(s.basis(3))\n[s[3], s[2, 1], s[1, 1, 1]]\n```\nThis unfortunately doesn't work for most of the infinite dimensional CFM's, but there should be a generic method that works for all objects in `FiniteDimensionalModulesWithBasis`. At which point, we can use the `submodule` to construct the degree part (which also should have a dedicated method):\n\n```\nsage: s.submodule(list(s.basis(3)), already_echelonized=True)\nFree module generated by {0, 1, 2} over Rational Field\n```\n\n> If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n> \n> ```\n> sage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n> ```\n> Maybe\n> \n> ```\n> sage: H.<x> = X.cohomology_with_basis(1, QQ)\n> ```\n> will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\n\nWhat we could do is specify variable names and then could use the `inject_variables` method. I will think more about this tomorrow when I work on the above refactoring.",
     "created_at": "2015-10-11T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -908,14 +909,18 @@ archive/issue_comments_048653.json:
 Replying to [comment:34 jhpalmieri]:
 > Replying to [comment:32 tscrim]:
 > > From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the "new" version). Have you tried to do this?
+
 > 
 > Good idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.
+
 
 Yea, I confirm that there is not much time being spent on the transpose by just pulling that part out to a separate line (which I should have done beforehand, sorry). So the way to optimize this further is to speed up the matrix construction, which might depend upon the input data, and then also the dot product is the 3rd slowest line. I think we've gotten to a good point that we should just let it be for now (at least I'm not going to try and optimize it further because I will be doing the refactoring below).
 
 > > Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)
+
 > 
 > I think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me.
+
 
 There is a way to access the part in a single degree with the `basis` function by passing in an integer:
 
@@ -924,7 +929,6 @@ sage: s = SymmetricFunctions(QQ).s()
 sage: list(s.basis(3))
 [s[3], s[2, 1], s[1, 1, 1]]
 ```
-
 This unfortunately doesn't work for most of the infinite dimensional CFM's, but there should be a generic method that works for all objects in `FiniteDimensionalModulesWithBasis`. At which point, we can use the `submodule` to construct the degree part (which also should have a dedicated method):
 
 ```
@@ -932,16 +936,18 @@ sage: s.submodule(list(s.basis(3)), already_echelonized=True)
 Free module generated by {0, 1, 2} over Rational Field
 ```
 
-
 > If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with
-> {{{
+> 
+> ```
 > sage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()
-> }}}
+> ```
 > Maybe
-> {{{
+> 
+> ```
 > sage: H.<x> = X.cohomology_with_basis(1, QQ)
-> }}}
+> ```
 > will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)
+
 
 What we could do is specify variable names and then could use the `inject_variables` method. I will think more about this tomorrow when I work on the above refactoring.
 
@@ -952,7 +958,7 @@ What we could do is specify variable names and then could use the `inject_variab
 archive/issue_comments_048654.json:
 ```json
 {
-    "body": "Turns out that cup products for Delta complexes weren't too hard to implement, so I did that.\n----\nNew commits:",
+    "body": "Turns out that cup products for Delta complexes weren't too hard to implement, so I did that.\n\n---\nNew commits:",
     "created_at": "2015-10-12T19:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -962,7 +968,8 @@ archive/issue_comments_048654.json:
 ```
 
 Turns out that cup products for Delta complexes weren't too hard to implement, so I did that.
-----
+
+---
 New commits:
 
 
@@ -1008,7 +1015,7 @@ I'm still working on my refactoring, but I did #19397 for getting the degree `d`
 archive/issue_comments_048657.json:
 ```json
 {
-    "body": "Done. I spent so much time trying to get the `cup_product` to iterate over cohomology, but I realized that it was support to be over homology... Anyways, it works now. With the category framework, I was able to remove `__pow__` (at a small cost of a not correct error for negative powers, at least for now I didn't want to muck with the `AlgebrasWithBasis` code). So if you're happy with my changes, then you can set a positive review.\n----\nNew commits:",
+    "body": "Done. I spent so much time trying to get the `cup_product` to iterate over cohomology, but I realized that it was support to be over homology... Anyways, it works now. With the category framework, I was able to remove `__pow__` (at a small cost of a not correct error for negative powers, at least for now I didn't want to muck with the `AlgebrasWithBasis` code). So if you're happy with my changes, then you can set a positive review.\n  \n---\nNew commits:",
     "created_at": "2015-10-13T20:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6102",
     "type": "issue_comment",
@@ -1018,7 +1025,8 @@ archive/issue_comments_048657.json:
 ```
 
 Done. I spent so much time trying to get the `cup_product` to iterate over cohomology, but I realized that it was support to be over homology... Anyways, it works now. With the category framework, I was able to remove `__pow__` (at a small cost of a not correct error for negative powers, at least for now I didn't want to muck with the `AlgebrasWithBasis` code). So if you're happy with my changes, then you can set a positive review.
-----
+  
+---
 New commits:
 
 

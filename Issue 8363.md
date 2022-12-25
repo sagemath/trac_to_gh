@@ -3,7 +3,7 @@
 archive/issues_008363.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nspkg/install/deps shows that cddlib depends on mpir\n\n\n```\n$(INST)/$(CDDLIB): $(BASE) $(INST)/$(MPIR)\n        $(SAGE_SPKG) $(CDDLIB) 2>&1\n```\n\n\nbut for some reason someone has added a check in cddlib's spkg-install. This seems a bit pointless, but is causing a breakage on Solaris\n\n\n```\n# We depend on mpir, make sure it is installed (GMP fork)\nMPIR_VERSION=`cd $SAGE_ROOT/spkg/standard/; ./newest_version mpir`\nif [ $? -ne 0 ]; then\n    echo \"Failed to find mpir.  Please install the mpir spkg\"\n    exit 1\nfi\n```\n\n\nThey do not even export MPIR_VERSION, so it is a useless bit of code that is breaking on Solaris. \n\nAlso, currently cddlib will not build on 64-bit Solaris, due to the normal check that the platform is OS X: \n\n\n```\nif [ `uname` = \"Darwin\" ] && [ \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS\nfi\n```\n\n\nBoth these issues are easily resolved. A patch and updated .spkg will follow shortly. \n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8363\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nspkg/install/deps shows that cddlib depends on mpir\n\n```\n$(INST)/$(CDDLIB): $(BASE) $(INST)/$(MPIR)\n        $(SAGE_SPKG) $(CDDLIB) 2>&1\n```\n\nbut for some reason someone has added a check in cddlib's spkg-install. This seems a bit pointless, but is causing a breakage on Solaris\n\n```\n# We depend on mpir, make sure it is installed (GMP fork)\nMPIR_VERSION=`cd $SAGE_ROOT/spkg/standard/; ./newest_version mpir`\nif [ $? -ne 0 ]; then\n    echo \"Failed to find mpir.  Please install the mpir spkg\"\n    exit 1\nfi\n```\n\nThey do not even export MPIR_VERSION, so it is a useless bit of code that is breaking on Solaris. \n\nAlso, currently cddlib will not build on 64-bit Solaris, due to the normal check that the platform is OS X: \n\n```\nif [ `uname` = \"Darwin\" ] && [ \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS\nfi\n```\n\nBoth these issues are easily resolved. A patch and updated .spkg will follow shortly. \n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8363\n\n",
     "created_at": "2010-02-25T15:31:56Z",
     "labels": [
         "component: porting: solaris",
@@ -22,15 +22,12 @@ CC:  @jaapspies
 
 spkg/install/deps shows that cddlib depends on mpir
 
-
 ```
 $(INST)/$(CDDLIB): $(BASE) $(INST)/$(MPIR)
         $(SAGE_SPKG) $(CDDLIB) 2>&1
 ```
 
-
 but for some reason someone has added a check in cddlib's spkg-install. This seems a bit pointless, but is causing a breakage on Solaris
-
 
 ```
 # We depend on mpir, make sure it is installed (GMP fork)
@@ -41,11 +38,9 @@ if [ $? -ne 0 ]; then
 fi
 ```
 
-
 They do not even export MPIR_VERSION, so it is a useless bit of code that is breaking on Solaris. 
 
 Also, currently cddlib will not build on 64-bit Solaris, due to the normal check that the platform is OS X: 
-
 
 ```
 if [ `uname` = "Darwin" ] && [ "$SAGE64" = "yes" ]; then
@@ -53,7 +48,6 @@ if [ `uname` = "Darwin" ] && [ "$SAGE64" = "yes" ]; then
    CFLAGS="$CFLAGS -m64 "; export CFLAGS
 fi
 ```
-
 
 Both these issues are easily resolved. A patch and updated .spkg will follow shortly. 
 
@@ -166,7 +160,7 @@ Jaap
 archive/issue_comments_074606.json:
 ```json
 {
-    "body": "On hawk:\n\n\n```\nld: fatal: file /usr/local/lib/libgmp.so: wrong ELF class: ELFCLASS32\nld: fatal: file processing errors. No output written to .libs/scdd_gmp\ncollect2: ld returned 1 exit status\nmake[1]: *** [scdd_gmp] Error 1\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/cddlib-094f.p5/src/src-gmp'\nmake: *** [all-recursive] Error 1\nError building cddlib\n\n\n```\n\nIn my VirtualBox:\n\n```\nlibtool: link: gcc -m64 -o .libs/scdd_gmp simplecdd.o  -L/usr/local/lib -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib ../lib-src-gmp/.libs/libcddgmp.so /export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/libgmp.so /usr/local/lib/libgmp.so -R/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib -R/usr/local/lib\nld: fatal: recording name conflict: file `/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/libgmp.so' and file `/usr/local/lib/libgmp.so' provide identical dependency names: libgmp.so.3  (possible multiple inclusion of the same file)\nld: fatal: file processing errors. No output written to .libs/scdd_gmp\ncollect2: ld returned 1 exit status\nmake[1]: *** [scdd_gmp] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.3.alpha1/spkg/build/cddlib-094f.p5/src/src-gmp'\nmake: *** [all-recursive] Error 1\nError building cddlib\n\n\n```\n\n\nSo I think this ticket needs work.\n\nJaap",
+    "body": "On hawk:\n\n```\nld: fatal: file /usr/local/lib/libgmp.so: wrong ELF class: ELFCLASS32\nld: fatal: file processing errors. No output written to .libs/scdd_gmp\ncollect2: ld returned 1 exit status\nmake[1]: *** [scdd_gmp] Error 1\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/cddlib-094f.p5/src/src-gmp'\nmake: *** [all-recursive] Error 1\nError building cddlib\n\n\n```\nIn my VirtualBox:\n\n```\nlibtool: link: gcc -m64 -o .libs/scdd_gmp simplecdd.o  -L/usr/local/lib -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib ../lib-src-gmp/.libs/libcddgmp.so /export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/libgmp.so /usr/local/lib/libgmp.so -R/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib -R/usr/local/lib\nld: fatal: recording name conflict: file `/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/libgmp.so' and file `/usr/local/lib/libgmp.so' provide identical dependency names: libgmp.so.3  (possible multiple inclusion of the same file)\nld: fatal: file processing errors. No output written to .libs/scdd_gmp\ncollect2: ld returned 1 exit status\nmake[1]: *** [scdd_gmp] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.3.alpha1/spkg/build/cddlib-094f.p5/src/src-gmp'\nmake: *** [all-recursive] Error 1\nError building cddlib\n\n\n```\n\nSo I think this ticket needs work.\n\nJaap",
     "created_at": "2010-02-25T17:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8363",
     "type": "issue_comment",
@@ -176,7 +170,6 @@ archive/issue_comments_074606.json:
 ```
 
 On hawk:
-
 
 ```
 ld: fatal: file /usr/local/lib/libgmp.so: wrong ELF class: ELFCLASS32
@@ -189,7 +182,6 @@ Error building cddlib
 
 
 ```
-
 In my VirtualBox:
 
 ```
@@ -204,7 +196,6 @@ Error building cddlib
 
 
 ```
-
 
 So I think this ticket needs work.
 

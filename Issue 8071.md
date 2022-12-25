@@ -3,7 +3,7 @@
 archive/issues_008071.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nMatrices with zero rows or zero columns, over rings that are not fields, try to construct vector spaces as return values.  The return value should be built as a `FreeModule` which seems to promote the result to a vector space when the ring is a field.\n\n\n```\nsage: A=matrix(Integers(6),[])\nsage: A.right_kernel()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/21471/_home_rob__sage_init_sage_0.py in <module>()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.right_kernel (sage/matrix/matrix2.c:12440)()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/modules/free_module.pyc in VectorSpace(K, dimension, sparse, inner_product_matrix)\n    400     \"\"\"\n    401     if not K.is_field():\n--> 402         raise TypeError, \"Argument K (= %s) must be a field.\" % K\n    403     if not sparse in (True,False):\n    404         raise TypeError, \"Argument sparse (= %s) must be a boolean.\"%sparse\n\nTypeError: Argument K (= Ring of integers modulo 6) must be a field.\n```\n\n\nPatch is in-progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8071\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nMatrices with zero rows or zero columns, over rings that are not fields, try to construct vector spaces as return values.  The return value should be built as a `FreeModule` which seems to promote the result to a vector space when the ring is a field.\n\n```\nsage: A=matrix(Integers(6),[])\nsage: A.right_kernel()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/21471/_home_rob__sage_init_sage_0.py in <module>()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.right_kernel (sage/matrix/matrix2.c:12440)()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/modules/free_module.pyc in VectorSpace(K, dimension, sparse, inner_product_matrix)\n    400     \"\"\"\n    401     if not K.is_field():\n--> 402         raise TypeError, \"Argument K (= %s) must be a field.\" % K\n    403     if not sparse in (True,False):\n    404         raise TypeError, \"Argument sparse (= %s) must be a boolean.\"%sparse\n\nTypeError: Argument K (= Ring of integers modulo 6) must be a field.\n```\n\nPatch is in-progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8071\n\n",
     "created_at": "2010-01-26T04:48:34Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ Assignee: @williamstein
 CC:  @jasongrout
 
 Matrices with zero rows or zero columns, over rings that are not fields, try to construct vector spaces as return values.  The return value should be built as a `FreeModule` which seems to promote the result to a vector space when the ring is a field.
-
 
 ```
 sage: A=matrix(Integers(6),[])
@@ -43,7 +42,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: Argument K (= Ring of integers modulo 6) must be a field.
 ```
-
 
 Patch is in-progress.
 
@@ -136,7 +134,7 @@ Fixes class/meth in docstring
 archive/issue_comments_070613.json:
 ```json
 {
-    "body": "Attachment [trac_8071-matrix-kernels-trivially-2.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially-2.patch) by @rbeezer created at 2010-04-06 03:13:50\n\nReplying to [comment:3 malb]:\n> Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n> \n> If that's fixed then this patch gets a positive review.\n\nHi Martin,\n\nThanks for the review on this one.  New patch contains everything, plus two changes in the docstring for `_right_kernel_trivial()` in `sage/matrix/matrix2.py` - both substitute \"class\" for \"meth\".  I am forever making that mistake - thanks for catching these.\n\nRelease manager - apply only the \"dash-2\" patch.\n\nRob",
+    "body": "Attachment [trac_8071-matrix-kernels-trivially-2.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially-2.patch) by @rbeezer created at 2010-04-06 03:13:50\n\nReplying to [comment:3 malb]:\n> Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n> \n> If that's fixed then this patch gets a positive review.\n\n\nHi Martin,\n\nThanks for the review on this one.  New patch contains everything, plus two changes in the docstring for `_right_kernel_trivial()` in `sage/matrix/matrix2.py` - both substitute \"class\" for \"meth\".  I am forever making that mistake - thanks for catching these.\n\nRelease manager - apply only the \"dash-2\" patch.\n\nRob",
     "created_at": "2010-04-06T03:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
@@ -151,6 +149,7 @@ Replying to [comment:3 malb]:
 > Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?
 > 
 > If that's fixed then this patch gets a positive review.
+
 
 Hi Martin,
 

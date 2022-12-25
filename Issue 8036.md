@@ -3,7 +3,7 @@
 archive/issues_008036.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: non-ASCII characters\n\nEven after applying #8021, the PDF version of the reference manual for Sage 4.3.1 failed to build. This is due to non-ASCII characters in the docstring of the method `prove_BSD()` of the class `EllipticCurve_rational_field` in\n\n```\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\n\nHere's a snippet of the error message:\n\n```\n! Package inputenc Error: Unicode char \\u8:\u01ce not set up for use with LaTeX.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.364560 C. Tarni\u0163\u01ce\n                     . Computational verification of the Birch and\n?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8036\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: non-ASCII characters\n\nEven after applying #8021, the PDF version of the reference manual for Sage 4.3.1 failed to build. This is due to non-ASCII characters in the docstring of the method `prove_BSD()` of the class `EllipticCurve_rational_field` in\n\n```\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\nHere's a snippet of the error message:\n\n```\n! Package inputenc Error: Unicode char \\u8:\u01ce not set up for use with LaTeX.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.364560 C. Tarni\u0163\u01ce\n                     . Computational verification of the Birch and\n?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8036\n\n",
     "created_at": "2010-01-22T02:31:21Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,6 @@ Even after applying #8021, the PDF version of the reference manual for Sage 4.3.
 ```
 sage/schemes/elliptic_curves/ell_rational_field.py
 ```
-
 Here's a snippet of the error message:
 
 ```
@@ -40,7 +39,6 @@ l.364560 C. Tarniţǎ
                      . Computational verification of the Birch and
 ?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8036
 
@@ -125,7 +123,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070068.json:
 ```json
 {
-    "body": "`LaTeX` is perfectly fine with utf8 if one uses the inputenc package:\n\n```\n\\usepackage[utf8x]{inputenc}\n```\n\nIOW, it's the latex preamble which needs fixing.",
+    "body": "`LaTeX` is perfectly fine with utf8 if one uses the inputenc package:\n\n```\n\\usepackage[utf8x]{inputenc}\n```\nIOW, it's the latex preamble which needs fixing.",
     "created_at": "2010-01-22T03:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -139,7 +137,6 @@ archive/issue_comments_070068.json:
 ```
 \usepackage[utf8x]{inputenc}
 ```
-
 IOW, it's the latex preamble which needs fixing.
 
 
@@ -169,7 +166,7 @@ Latex file which shows usage of utf8
 archive/issue_comments_070070.json:
 ```json
 {
-    "body": "Sphinx uses `\\usepackage[utf8]{inputenc`}, so if we want to change this to [utf8x], we need to patch Sphinx.  I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.  Another option is to add characters one by one, as needed, using\n\n```\n\\DeclareUnicodeCharacter{blah}{blah}\n```\n\n(See the documentation for inputenc.)  If we knew the details, we could add lines like this to `SAGE_ROOT/devel/sage/doc/common/conf.py` -- add to the `latex_preamble`.  I don't know the details.\n\nA third option is to get rid of all accents, as mvngu's patch does.\n\nA fourth option is to use the attached patch `trac_8036-tex-replacements.patch`, which does some preprocessing, changing the offending character to something latex can handle.\n\nI'll mark this as \"needs review\", in case option 4 is appealing.",
+    "body": "Sphinx uses `\\usepackage[utf8]{inputenc`}, so if we want to change this to [utf8x], we need to patch Sphinx.  I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.  Another option is to add characters one by one, as needed, using\n\n```\n\\DeclareUnicodeCharacter{blah}{blah}\n```\n(See the documentation for inputenc.)  If we knew the details, we could add lines like this to `SAGE_ROOT/devel/sage/doc/common/conf.py` -- add to the `latex_preamble`.  I don't know the details.\n\nA third option is to get rid of all accents, as mvngu's patch does.\n\nA fourth option is to use the attached patch `trac_8036-tex-replacements.patch`, which does some preprocessing, changing the offending character to something latex can handle.\n\nI'll mark this as \"needs review\", in case option 4 is appealing.",
     "created_at": "2010-01-22T05:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -183,7 +180,6 @@ Sphinx uses `\usepackage[utf8]{inputenc`}, so if we want to change this to [utf8
 ```
 \DeclareUnicodeCharacter{blah}{blah}
 ```
-
 (See the documentation for inputenc.)  If we knew the details, we could add lines like this to `SAGE_ROOT/devel/sage/doc/common/conf.py` -- add to the `latex_preamble`.  I don't know the details.
 
 A third option is to get rid of all accents, as mvngu's patch does.
@@ -255,7 +251,7 @@ Note: When I preview my attachment, the "offending character" looks like a capit
 archive/issue_comments_070074.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n\nIn case you're interested in this, the documentation says\n\n   For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n\nI don't know what the \"problems with this extended approach\" are.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n\n\nIn case you're interested in this, the documentation says\n\n   For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n\nI don't know what the \"problems with this extended approach\" are.",
     "created_at": "2010-01-22T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -266,6 +262,7 @@ archive/issue_comments_070074.json:
 
 Replying to [comment:3 jhpalmieri]:
 > I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.
+
 
 In case you're interested in this, the documentation says
 
@@ -280,7 +277,7 @@ I don't know what the "problems with this extended approach" are.
 archive/issue_comments_070075.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Replying to [comment:3 jhpalmieri]:\n> > I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n> \n> In case you're interested in this, the documentation says\n> \n>    For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n> \n> I don't know what the \"problems with this extended approach\" are.\n\nI use [utf8x] on a daily basis, without issues. As you quoted above, it is well known that [utf8] supports a reduced set of characters. Not that utf8x supports arbitrary unicode characters, but I think a proper superset of those supported by utf8.\n\nThe option [utf8x] is part of latex package \"ucs\".\n\nYour proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Replying to [comment:3 jhpalmieri]:\n> > I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n\n> \n> In case you're interested in this, the documentation says\n> \n>    For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n> \n> I don't know what the \"problems with this extended approach\" are.\n\n\nI use [utf8x] on a daily basis, without issues. As you quoted above, it is well known that [utf8] supports a reduced set of characters. Not that utf8x supports arbitrary unicode characters, but I think a proper superset of those supported by utf8.\n\nThe option [utf8x] is part of latex package \"ucs\".\n\nYour proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.",
     "created_at": "2010-01-22T06:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -292,12 +289,14 @@ archive/issue_comments_070075.json:
 Replying to [comment:5 jhpalmieri]:
 > Replying to [comment:3 jhpalmieri]:
 > > I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.
+
 > 
 > In case you're interested in this, the documentation says
 > 
 >    For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh’s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX’s font selection.
 > 
 > I don't know what the "problems with this extended approach" are.
+
 
 I use [utf8x] on a daily basis, without issues. As you quoted above, it is well known that [utf8] supports a reduced set of characters. Not that utf8x supports arbitrary unicode characters, but I think a proper superset of those supported by utf8.
 
@@ -312,7 +311,7 @@ Your proposal (according to the posted patch) would be to special-case any chara
 archive/issue_comments_070076.json:
 ```json
 {
-    "body": "Replying to [comment:6 tornaria]:\n\n> Your proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.\n\nIt's either that or patch Sphinx -- not hard, but I'm reluctant to patch external packages if there are other alternatives.  I don't know how often we are likely to come across characters not supported by [utf8], so I don't know which option is better.",
+    "body": "Replying to [comment:6 tornaria]:\n\n> Your proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.\n\n\nIt's either that or patch Sphinx -- not hard, but I'm reluctant to patch external packages if there are other alternatives.  I don't know how often we are likely to come across characters not supported by [utf8], so I don't know which option is better.",
     "created_at": "2010-01-22T15:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -324,6 +323,7 @@ archive/issue_comments_070076.json:
 Replying to [comment:6 tornaria]:
 
 > Your proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.
+
 
 It's either that or patch Sphinx -- not hard, but I'm reluctant to patch external packages if there are other alternatives.  I don't know how often we are likely to come across characters not supported by [utf8], so I don't know which option is better.
 
@@ -374,7 +374,7 @@ Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uui
 archive/issue_comments_070079.json:
 ```json
 {
-    "body": "For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\n\n```python\nlatex_elements['inputenc'] = '\\\\usepackage[utf8x]{inputenc}'\n```\n\n\nin `doc/common/conf.py`?",
+    "body": "For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\n```python\nlatex_elements['inputenc'] = '\\\\usepackage[utf8x]{inputenc}'\n```\n\nin `doc/common/conf.py`?",
     "created_at": "2010-01-31T08:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -385,11 +385,9 @@ archive/issue_comments_070079.json:
 
 For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):
 
-
 ```python
 latex_elements['inputenc'] = '\\usepackage[utf8x]{inputenc}'
 ```
-
 
 in `doc/common/conf.py`?
 
@@ -420,7 +418,7 @@ Set utf8x in Sphinx option.  Solo patch.
 archive/issue_comments_070081.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\nI've attached a [attachment:trac_8036-docbuild_utf8x.patch patch] that does this.  It appears to solve the problem in this ticket's description.\n\nBut it fails to handle the unicode tests we've added to SageNB at #7249.",
+    "body": "Replying to [comment:10 mpatel]:\n> For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\n\nI've attached a [attachment:trac_8036-docbuild_utf8x.patch patch] that does this.  It appears to solve the problem in this ticket's description.\n\nBut it fails to handle the unicode tests we've added to SageNB at #7249.",
     "created_at": "2010-01-31T09:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
@@ -431,6 +429,7 @@ archive/issue_comments_070081.json:
 
 Replying to [comment:10 mpatel]:
 > For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):
+
 
 I've attached a [attachment:trac_8036-docbuild_utf8x.patch patch] that does this.  It appears to solve the problem in this ticket's description.
 

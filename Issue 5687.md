@@ -49,7 +49,7 @@ Attachment [trac_5687.patch](tarball://root/attachments/some-uuid/ticket5687/tra
 archive/issue_comments_044394.json:
 ```json
 {
-    "body": "I can't create a new worksheet\n\nError:\n\n```\n\t    if open('%s/worksheet.txt'%self.__dir).read() == E:\n\texceptions.IOError: [Errno 2] No such file or directory: 'sage_notebook/worksheets/admin/44/worksheet.txt'\n```\n",
+    "body": "I can't create a new worksheet\n\nError:\n\n```\n\t    if open('%s/worksheet.txt'%self.__dir).read() == E:\n\texceptions.IOError: [Errno 2] No such file or directory: 'sage_notebook/worksheets/admin/44/worksheet.txt'\n```",
     "created_at": "2009-04-05T06:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5687",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ Error:
 	    if open('%s/worksheet.txt'%self.__dir).read() == E:
 	exceptions.IOError: [Errno 2] No such file or directory: 'sage_notebook/worksheets/admin/44/worksheet.txt'
 ```
-
 
 
 

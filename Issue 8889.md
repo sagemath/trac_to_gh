@@ -3,7 +3,7 @@
 archive/issues_008889.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  sage-combinat\n\nI would like a function that takes\nInput: range (a list)\n       dim (a positive integer)\nOutput: a list of vectors or tuples of length dim including all combinations of range, but with replacement\n\nExample: generate the vertices of the centered unit cube [-1/2,1/2]^dim, where dim is variable\n\nThe functions in sage.misc.mrange almost do this, except it seems that they require having dim specified ahead of time, whereas I want a function that I can call in another function where dim will vary.\n\nThe function Arrangements in sage.combinat.permutation almost does what I want, but the list that the digits of the tuple are chosen from must be larger than dim, and Arrangements selects without replacement.  I can solve my example problem using Arrangements as follows:\n\n```\nprelist=[]\nfor i in range(2**d):\n    if i-2**(d-1) >= 0: prelist.append(1)\n        else: prelist.append(-1)\nlist = (1/2)*matrix(Arrangements(prelist,d).list())\n```\n\nbut it seems like there should be one specific function for this.\n\n(Combinations and Permutations are also related, but don't quite do what I want.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8889\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  sage-combinat\n\nI would like a function that takes\nInput: range (a list)\n       dim (a positive integer)\nOutput: a list of vectors or tuples of length dim including all combinations of range, but with replacement\n\nExample: generate the vertices of the centered unit cube [-1/2,1/2]^dim, where dim is variable\n\nThe functions in sage.misc.mrange almost do this, except it seems that they require having dim specified ahead of time, whereas I want a function that I can call in another function where dim will vary.\n\nThe function Arrangements in sage.combinat.permutation almost does what I want, but the list that the digits of the tuple are chosen from must be larger than dim, and Arrangements selects without replacement.  I can solve my example problem using Arrangements as follows:\n\n```\nprelist=[]\nfor i in range(2**d):\n    if i-2**(d-1) >= 0: prelist.append(1)\n        else: prelist.append(-1)\nlist = (1/2)*matrix(Arrangements(prelist,d).list())\n```\nbut it seems like there should be one specific function for this.\n\n(Combinations and Permutations are also related, but don't quite do what I want.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8889\n\n",
     "created_at": "2010-05-05T15:55:21Z",
     "labels": [
         "component: misc",
@@ -38,7 +38,6 @@ for i in range(2**d):
         else: prelist.append(-1)
 list = (1/2)*matrix(Arrangements(prelist,d).list())
 ```
-
 but it seems like there should be one specific function for this.
 
 (Combinations and Permutations are also related, but don't quite do what I want.)
@@ -54,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8889
 archive/issue_comments_081589.json:
 ```json
 {
-    "body": "Does this do what you want?\n\n\n```\nsage: l = [1/2, -1/2]\nsage: CartesianProduct(*([l]*3)).list()\n[[1/2, 1/2, 1/2], [1/2, 1/2, -1/2], [1/2, -1/2, 1/2], [1/2, -1/2, -1/2], [-1/2, 1/2, 1/2], [-1/2, 1/2, -1/2], [-1/2, -1/2, 1/2], [-1/2, -1/2, -1/2]]\nsage: CartesianProduct(*([l]*2)).list()\n[[1/2, 1/2], [1/2, -1/2], [-1/2, 1/2], [-1/2, -1/2]]\n```\n",
+    "body": "Does this do what you want?\n\n```\nsage: l = [1/2, -1/2]\nsage: CartesianProduct(*([l]*3)).list()\n[[1/2, 1/2, 1/2], [1/2, 1/2, -1/2], [1/2, -1/2, 1/2], [1/2, -1/2, -1/2], [-1/2, 1/2, 1/2], [-1/2, 1/2, -1/2], [-1/2, -1/2, 1/2], [-1/2, -1/2, -1/2]]\nsage: CartesianProduct(*([l]*2)).list()\n[[1/2, 1/2], [1/2, -1/2], [-1/2, 1/2], [-1/2, -1/2]]\n```",
     "created_at": "2010-05-05T17:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_comment",
@@ -64,7 +63,6 @@ archive/issue_comments_081589.json:
 ```
 
 Does this do what you want?
-
 
 ```
 sage: l = [1/2, -1/2]
@@ -76,13 +74,12 @@ sage: CartesianProduct(*([l]*2)).list()
 
 
 
-
 ---
 
 archive/issue_comments_081590.json:
 ```json
 {
-    "body": "It would be really nice if CartesianProduct supported a repeat keyword, like the python itertools product function does:\n\n\n```\n\nsage: import itertools                      \nsage: list(itertools.product([1/2,-1/2],repeat=3))\n[(1/2, 1/2, 1/2), (1/2, 1/2, -1/2), (1/2, -1/2, 1/2), (1/2, -1/2, -1/2), (-1/2, 1/2, 1/2), (-1/2, 1/2, -1/2), (-1/2, -1/2, 1/2), (-1/2, -1/2, -1/2)]\n```\n\n\nThat would make a common case (cartesian product of a set with itself) much easier to read.",
+    "body": "It would be really nice if CartesianProduct supported a repeat keyword, like the python itertools product function does:\n\n```\n\nsage: import itertools                      \nsage: list(itertools.product([1/2,-1/2],repeat=3))\n[(1/2, 1/2, 1/2), (1/2, 1/2, -1/2), (1/2, -1/2, 1/2), (1/2, -1/2, -1/2), (-1/2, 1/2, 1/2), (-1/2, 1/2, -1/2), (-1/2, -1/2, 1/2), (-1/2, -1/2, -1/2)]\n```\n\nThat would make a common case (cartesian product of a set with itself) much easier to read.",
     "created_at": "2010-05-05T17:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_comment",
@@ -93,14 +90,12 @@ archive/issue_comments_081590.json:
 
 It would be really nice if CartesianProduct supported a repeat keyword, like the python itertools product function does:
 
-
 ```
 
 sage: import itertools                      
 sage: list(itertools.product([1/2,-1/2],repeat=3))
 [(1/2, 1/2, 1/2), (1/2, 1/2, -1/2), (1/2, -1/2, 1/2), (1/2, -1/2, -1/2), (-1/2, 1/2, 1/2), (-1/2, 1/2, -1/2), (-1/2, -1/2, 1/2), (-1/2, -1/2, -1/2)]
 ```
-
 
 That would make a common case (cartesian product of a set with itself) much easier to read.
 
@@ -111,7 +106,7 @@ That would make a common case (cartesian product of a set with itself) much easi
 archive/issue_comments_081591.json:
 ```json
 {
-    "body": "That does!  Sorry for opening the unnecessary ticket then.\n-Eva\n\nReplying to [comment:1 mhansen]:\n> Does this do what you want?\n> \n> {{{\n> sage: l = [1/2, -1/2]\n> sage: CartesianProduct(*([l]*3)).list()\n> [[1/2, 1/2, 1/2], [1/2, 1/2, -1/2], [1/2, -1/2, 1/2], [1/2, -1/2, -1/2], [-1/2, 1/2, 1/2], [-1/2, 1/2, -1/2], [-1/2, -1/2, 1/2], [-1/2, -1/2, -1/2]]\n> sage: CartesianProduct(*([l]*2)).list()\n> [[1/2, 1/2], [1/2, -1/2], [-1/2, 1/2], [-1/2, -1/2]]\n> }}}",
+    "body": "That does!  Sorry for opening the unnecessary ticket then.\n-Eva\n\nReplying to [comment:1 mhansen]:\n> Does this do what you want?\n> \n> \n> ```\n> sage: l = [1/2, -1/2]\n> sage: CartesianProduct(*([l]*3)).list()\n> [[1/2, 1/2, 1/2], [1/2, 1/2, -1/2], [1/2, -1/2, 1/2], [1/2, -1/2, -1/2], [-1/2, 1/2, 1/2], [-1/2, 1/2, -1/2], [-1/2, -1/2, 1/2], [-1/2, -1/2, -1/2]]\n> sage: CartesianProduct(*([l]*2)).list()\n> [[1/2, 1/2], [1/2, -1/2], [-1/2, 1/2], [-1/2, -1/2]]\n> ```",
     "created_at": "2010-05-05T17:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_comment",
@@ -126,13 +121,14 @@ That does!  Sorry for opening the unnecessary ticket then.
 Replying to [comment:1 mhansen]:
 > Does this do what you want?
 > 
-> {{{
+> 
+> ```
 > sage: l = [1/2, -1/2]
 > sage: CartesianProduct(*([l]*3)).list()
 > [[1/2, 1/2, 1/2], [1/2, 1/2, -1/2], [1/2, -1/2, 1/2], [1/2, -1/2, -1/2], [-1/2, 1/2, 1/2], [-1/2, 1/2, -1/2], [-1/2, -1/2, 1/2], [-1/2, -1/2, -1/2]]
 > sage: CartesianProduct(*([l]*2)).list()
 > [[1/2, 1/2], [1/2, -1/2], [-1/2, 1/2], [-1/2, -1/2]]
-> }}}
+> ```
 
 
 
@@ -233,7 +229,7 @@ http://sagemath.org/doc/reference/sage/combinat/tuple.html
 archive/issue_comments_081596.json:
 ```json
 {
-    "body": "Replying to [comment:6 ecurry]:\n> There is also Tuples in sage.combinat.tuple:\n> http://sagemath.org/doc/reference/sage/combinat/tuple.html\n\nHeh, I should have known about that since it was likely I who wrote it :-)",
+    "body": "Replying to [comment:6 ecurry]:\n> There is also Tuples in sage.combinat.tuple:\n> http://sagemath.org/doc/reference/sage/combinat/tuple.html\n\n\nHeh, I should have known about that since it was likely I who wrote it :-)",
     "created_at": "2010-05-06T01:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",
     "type": "issue_comment",
@@ -245,6 +241,7 @@ archive/issue_comments_081596.json:
 Replying to [comment:6 ecurry]:
 > There is also Tuples in sage.combinat.tuple:
 > http://sagemath.org/doc/reference/sage/combinat/tuple.html
+
 
 Heh, I should have known about that since it was likely I who wrote it :-)
 

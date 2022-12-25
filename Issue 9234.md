@@ -88,7 +88,7 @@ Apply after initial patch
 archive/issue_comments_086540.json:
 ```json
 {
-    "body": "Looks nice!  This corrects a few minor typos, adds some examples at the top of the module, adds the document to the reference manual, and one or two other things.  The reviewer patch is all that needs to be checked now; try the command (from within the Sage directory)\n\n```\n./sage -docbuild reference html\n```\n\nto create the changed manual, after building the reviewer patch.",
+    "body": "Looks nice!  This corrects a few minor typos, adds some examples at the top of the module, adds the document to the reference manual, and one or two other things.  The reviewer patch is all that needs to be checked now; try the command (from within the Sage directory)\n\n```\n./sage -docbuild reference html\n```\nto create the changed manual, after building the reviewer patch.",
     "created_at": "2010-06-18T19:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ Looks nice!  This corrects a few minor typos, adds some examples at the top of t
 ```
 ./sage -docbuild reference html
 ```
-
 to create the changed manual, after building the reviewer patch.
 
 

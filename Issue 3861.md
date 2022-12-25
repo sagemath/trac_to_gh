@@ -69,7 +69,7 @@ I agree it could be better documented, but I think smoothing is very useful when
 archive/issue_comments_027456.json:
 ```json
 {
-    "body": "I also agree with Robert.  Notice also that:\n\n\n```\n\nsage: my_points=[[0,0,0],[1,0,0],[0,1,0]]\nsage: my_points_tuples=map(tuple,my_points)\nsage: sage.plot.plot3d.shapes2.Line(my_points,corner_cutoff=0)\nTraceback (most recent call last):\n...\nTypeError: unhashable type: 'list'\n\nsage.plot.plot3d.shapes2.Line(my_points_tuples,corner_cutoff=0) #works\nsage: sage.plot.plot3d.shapes2.Line(my_points_tuples, corner_cutoff=1)\nTraceback (most recent call last):\n...\nTypeError: 'NoneType' object is unsubscriptable\nsage: sage.plot.plot3d.shapes2.Line(my_points_tuples, corner_cutoff=.999) # works\n\n```\n",
+    "body": "I also agree with Robert.  Notice also that:\n\n```\n\nsage: my_points=[[0,0,0],[1,0,0],[0,1,0]]\nsage: my_points_tuples=map(tuple,my_points)\nsage: sage.plot.plot3d.shapes2.Line(my_points,corner_cutoff=0)\nTraceback (most recent call last):\n...\nTypeError: unhashable type: 'list'\n\nsage.plot.plot3d.shapes2.Line(my_points_tuples,corner_cutoff=0) #works\nsage: sage.plot.plot3d.shapes2.Line(my_points_tuples, corner_cutoff=1)\nTraceback (most recent call last):\n...\nTypeError: 'NoneType' object is unsubscriptable\nsage: sage.plot.plot3d.shapes2.Line(my_points_tuples, corner_cutoff=.999) # works\n\n```",
     "created_at": "2010-04-27T15:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3861",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_027456.json:
 ```
 
 I also agree with Robert.  Notice also that:
-
 
 ```
 
@@ -98,7 +97,6 @@ TypeError: 'NoneType' object is unsubscriptable
 sage: sage.plot.plot3d.shapes2.Line(my_points_tuples, corner_cutoff=.999) # works
 
 ```
-
 
 
 

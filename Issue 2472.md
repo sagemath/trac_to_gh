@@ -3,7 +3,7 @@
 archive/issues_002472.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
     "created_at": "2008-03-11T20:58:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ Keywords: floor truncate ceil ceiling parent integer
 
 I think `floor` and `ceil` and `truncate` should return integers.
 
-
 ```
 sage: floor(2).parent()
 Integer Ring
@@ -34,7 +33,6 @@ Integer Ring
 sage: floor(RIF(2.0)).parent()
 Real Interval Field with 53 bits of precision
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2472
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2472
 archive/issue_comments_016702.json:
 ```json
 {
-    "body": "> I think floor and ceil and truncate should return integers.\n\nI agree, though this goes against what Python does:\n\n\n```\nsage: math.floor(float(2.3))\n2.0    \n```\n\n\nI don't like Python's math.floor behavior, but I bet it agrees with the C library.\nYep:\n\n```\n     double\n     floor(double x);\n\n     long double\n     floorl(long double x);\n```\n\n\nI still vote for making floor always return Integer.",
+    "body": "> I think floor and ceil and truncate should return integers.\n\n\nI agree, though this goes against what Python does:\n\n```\nsage: math.floor(float(2.3))\n2.0    \n```\n\nI don't like Python's math.floor behavior, but I bet it agrees with the C library.\nYep:\n\n```\n     double\n     floor(double x);\n\n     long double\n     floorl(long double x);\n```\n\nI still vote for making floor always return Integer.",
     "created_at": "2008-03-11T21:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
@@ -58,14 +56,13 @@ archive/issue_comments_016702.json:
 
 > I think floor and ceil and truncate should return integers.
 
-I agree, though this goes against what Python does:
 
+I agree, though this goes against what Python does:
 
 ```
 sage: math.floor(float(2.3))
 2.0    
 ```
-
 
 I don't like Python's math.floor behavior, but I bet it agrees with the C library.
 Yep:
@@ -77,7 +74,6 @@ Yep:
      long double
      floorl(long double x);
 ```
-
 
 I still vote for making floor always return Integer.
 

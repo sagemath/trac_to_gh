@@ -3,7 +3,7 @@
 archive/issues_002123.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis is wrong:\n\n\n```\nsage: A = ModularSymbols(1,80,0,base_ring=GF(37))\n\nsage: A.plus_submodule().cuspidal_submodule().sign()\n 0\n\n```\n\n\nI'll fix it at some point soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2123\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is wrong:\n\n```\nsage: A = ModularSymbols(1,80,0,base_ring=GF(37))\n\nsage: A.plus_submodule().cuspidal_submodule().sign()\n 0\n\n```\n\nI'll fix it at some point soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2123\n\n",
     "created_at": "2008-02-09T03:59:11Z",
     "labels": [
         "component: modular forms",
@@ -21,7 +21,6 @@ Assignee: @craigcitro
 
 This is wrong:
 
-
 ```
 sage: A = ModularSymbols(1,80,0,base_ring=GF(37))
 
@@ -29,7 +28,6 @@ sage: A.plus_submodule().cuspidal_submodule().sign()
  0
 
 ```
-
 
 I'll fix it at some point soon.
 

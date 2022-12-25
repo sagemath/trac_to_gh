@@ -3,7 +3,7 @@
 archive/issues_007817.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nLike many packages, opencdk has code which adds -m64 on OS X if SAGE64 is set to yes. It is being ignored on other platforms, with the result the build fails - see below. \n\n\n```\n/home/drkirkby/sage-4.3/local/lib/libgcrypt.so /export/home/drkirkby/sage-4.3/local/lib/libgpg-error.so -lz -lc \nld: fatal: file /export/home/drkirkby/sage-4.3/local/lib/libgcrypt.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to .libs/libopencdk.so.10.0.6\ncollect2: ld returned 1 exit status\nmake[4]: *** [libopencdk.la] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src'\nFailed to build OpenCDK\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7817\n\n",
+    "body": "Assignee: drkirkby\n\nLike many packages, opencdk has code which adds -m64 on OS X if SAGE64 is set to yes. It is being ignored on other platforms, with the result the build fails - see below. \n\n```\n/home/drkirkby/sage-4.3/local/lib/libgcrypt.so /export/home/drkirkby/sage-4.3/local/lib/libgpg-error.so -lz -lc \nld: fatal: file /export/home/drkirkby/sage-4.3/local/lib/libgcrypt.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to .libs/libopencdk.so.10.0.6\ncollect2: ld returned 1 exit status\nmake[4]: *** [libopencdk.la] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src'\nFailed to build OpenCDK\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7817\n\n",
     "created_at": "2010-01-02T08:49:26Z",
     "labels": [
         "component: porting",
@@ -20,7 +20,6 @@ Assignee: drkirkby
 
 Like many packages, opencdk has code which adds -m64 on OS X if SAGE64 is set to yes. It is being ignored on other platforms, with the result the build fails - see below. 
 
-
 ```
 /home/drkirkby/sage-4.3/local/lib/libgcrypt.so /export/home/drkirkby/sage-4.3/local/lib/libgpg-error.so -lz -lc 
 ld: fatal: file /export/home/drkirkby/sage-4.3/local/lib/libgcrypt.so: wrong ELF class: ELFCLASS64
@@ -34,7 +33,6 @@ make[2]: *** [all] Error 2
 make[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/opencdk-0.6.6.p2/src'
 Failed to build OpenCDK
 ```
-
 
 
 

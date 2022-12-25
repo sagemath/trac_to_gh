@@ -3,7 +3,7 @@
 archive/issues_005187.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  \n\nThe file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt lists all the doctest failures.  It was got by running this script:\n\n```\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/interfaces/magma.py\"\n\n```\n\non eno, which has Magma-2.15.\n\nI think all the changes are purely cosmetic, so this should be very straightforward (but tedious).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5187\n\n",
+    "body": "Assignee: @williamstein\n\nThe latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  \n\nThe file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt lists all the doctest failures.  It was got by running this script:\n\n```\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/interfaces/magma.py\"\n\n```\non eno, which has Magma-2.15.\n\nI think all the changes are purely cosmetic, so this should be very straightforward (but tedious).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5187\n\n",
     "created_at": "2009-02-05T21:30:50Z",
     "labels": [
         "component: interfaces",
@@ -31,7 +31,6 @@ The file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt list
         sage -t -only_optional=magma "devel/sage/sage/interfaces/magma.py"
 
 ```
-
 on eno, which has Magma-2.15.
 
 I think all the changes are purely cosmetic, so this should be very straightforward (but tedious).
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5187
 archive/issue_comments_039705.json:
 ```json
 {
-    "body": "It all seems to be \n\n```\nGraded Reverse Lexicographical Order\n```\n\nvs\n\n```\nOrder: Graded Reverse Lexicographical\n```\n\nand \n\n```\nLexicographical Order\n```\n\nvs\n\n```\nOrder: Lexicographical\n```\n\n\nThe question is: Do we make 2.15 the only officially blessed release or do we add a sufficient amount of dots to make the tests also pass with 2.13 to 2.14?\n\nCheers,\n\nMichael",
+    "body": "It all seems to be \n\n```\nGraded Reverse Lexicographical Order\n```\nvs\n\n```\nOrder: Graded Reverse Lexicographical\n```\nand \n\n```\nLexicographical Order\n```\nvs\n\n```\nOrder: Lexicographical\n```\n\nThe question is: Do we make 2.15 the only officially blessed release or do we add a sufficient amount of dots to make the tests also pass with 2.13 to 2.14?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T21:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5187",
     "type": "issue_comment",
@@ -61,25 +60,21 @@ It all seems to be
 ```
 Graded Reverse Lexicographical Order
 ```
-
 vs
 
 ```
 Order: Graded Reverse Lexicographical
 ```
-
 and 
 
 ```
 Lexicographical Order
 ```
-
 vs
 
 ```
 Order: Lexicographical
 ```
-
 
 The question is: Do we make 2.15 the only officially blessed release or do we add a sufficient amount of dots to make the tests also pass with 2.13 to 2.14?
 

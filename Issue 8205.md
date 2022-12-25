@@ -226,7 +226,7 @@ archive/issue_events_019637.json:
 archive/issue_comments_072246.json:
 ```json
 {
-    "body": "This now works properly on sagenb.org, anyway\n> Worksheet is publicly viewable at http://sagenb.org/home/pub/5051\n\nI tested it on another server as well, not sure where this was fixed.",
+    "body": "This now works properly on sagenb.org, anyway\n> Worksheet is publicly viewable at http://sagenb.org/home/pub/5051\n\n\nI tested it on another server as well, not sure where this was fixed.",
     "created_at": "2014-12-10T21:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
@@ -237,6 +237,7 @@ archive/issue_comments_072246.json:
 
 This now works properly on sagenb.org, anyway
 > Worksheet is publicly viewable at http://sagenb.org/home/pub/5051
+
 
 I tested it on another server as well, not sure where this was fixed.
 

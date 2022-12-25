@@ -53,7 +53,7 @@ applies to 4.1.alpha1
 archive/issue_comments_051799.json:
 ```json
 {
-    "body": "Attachment [trac_6452-codes-over-rings.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-codes-over-rings.patch) by @wdjoyner created at 2009-07-01 01:09:02\n\nThis applies to 4.1.alpha1. This passed sage -testall except for\n\n\n```\nThe following tests failed:                                                                             \n\n\n        sage -t  \"devel/sage/doc/fr/tutorial/programming.rst\"\n        sage -t  \"devel/sage/sage/misc/darwin_utilities.pyx\" \nTotal time for all tests: 6017.1 seconds                     \n```\n\nNeither of these failures seem related to this ticket.",
+    "body": "Attachment [trac_6452-codes-over-rings.patch](tarball://root/attachments/some-uuid/ticket6452/trac_6452-codes-over-rings.patch) by @wdjoyner created at 2009-07-01 01:09:02\n\nThis applies to 4.1.alpha1. This passed sage -testall except for\n\n```\nThe following tests failed:                                                                             \n\n\n        sage -t  \"devel/sage/doc/fr/tutorial/programming.rst\"\n        sage -t  \"devel/sage/sage/misc/darwin_utilities.pyx\" \nTotal time for all tests: 6017.1 seconds                     \n```\nNeither of these failures seem related to this ticket.",
     "created_at": "2009-07-01T01:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ Attachment [trac_6452-codes-over-rings.patch](tarball://root/attachments/some-uu
 
 This applies to 4.1.alpha1. This passed sage -testall except for
 
-
 ```
 The following tests failed:                                                                             
 
@@ -75,7 +74,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/misc/darwin_utilities.pyx" 
 Total time for all tests: 6017.1 seconds                     
 ```
-
 Neither of these failures seem related to this ticket.
 
 
@@ -254,7 +252,7 @@ Does this mean that the code will not be accepted?
 archive/issue_comments_051809.json:
 ```json
 {
-    "body": "Replying to [comment:7 mhansen]:\n> Is there any way we can get documentation for the cdef methods as well as \n> possibly some more code comments?  I'm just worried that there's no one who is \n> able to maintain this code.\n> \n> Also, it's not clear to me that there are not memory leak issues with this \n> code as there are lots of malloc's and only one free.\n\nAs I said, I could try to add comments to the code, but I really don't know cython\nnearly well enough to deal with malloc issues.\n\nI've emailed Cesar and not gotten any response about the memory leak issues.\n\nGiven that, should the status change to \"resolve as won't fix\"? That would be too bad since Sage could really use \"linear codes\" over rings.",
+    "body": "Replying to [comment:7 mhansen]:\n> Is there any way we can get documentation for the cdef methods as well as \n> possibly some more code comments?  I'm just worried that there's no one who is \n> able to maintain this code.\n> \n> Also, it's not clear to me that there are not memory leak issues with this \n> code as there are lots of malloc's and only one free.\n\n\nAs I said, I could try to add comments to the code, but I really don't know cython\nnearly well enough to deal with malloc issues.\n\nI've emailed Cesar and not gotten any response about the memory leak issues.\n\nGiven that, should the status change to \"resolve as won't fix\"? That would be too bad since Sage could really use \"linear codes\" over rings.",
     "created_at": "2009-12-22T12:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -270,6 +268,7 @@ Replying to [comment:7 mhansen]:
 > 
 > Also, it's not clear to me that there are not memory leak issues with this 
 > code as there are lots of malloc's and only one free.
+
 
 As I said, I could try to add comments to the code, but I really don't know cython
 nearly well enough to deal with malloc issues.
@@ -404,7 +403,7 @@ archive/issue_events_015213.json:
 archive/issue_comments_051810.json:
 ```json
 {
-    "body": "Hello,\n\nI updated a git branch with the patch provided + some corrections. It is not yet in final stage but not far from it!\n\nVincent\n----\nNew commits:",
+    "body": "Hello,\n\nI updated a git branch with the patch provided + some corrections. It is not yet in final stage but not far from it!\n\nVincent\n\n---\nNew commits:",
     "created_at": "2015-09-13T22:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -418,7 +417,8 @@ Hello,
 I updated a git branch with the patch provided + some corrections. It is not yet in final stage but not far from it!
 
 Vincent
-----
+
+---
 New commits:
 
 
@@ -503,7 +503,7 @@ Note that I did not run or test the code -- I just looked at it.
 archive/issue_comments_051812.json:
 ```json
 {
-    "body": "Thanks for having a look. (disclaimer: I actually only ended up here because of [this question on ask](http://ask.sagemath.org/question/29424/liner-code-over-integerring/)).\n\nReplying to [comment:17 jsrn]:\n> I'm not particularly fond of this patch, I must admit. It doesn't seem very well thought out. I prefer not putting in code which is weak and not thought through, rather than superficially being able to claim that \"Sage can do codes over rings\". For instance, what can the code actually do right now, besides computing the list of codewords?\n\nNothing I guess. But it is already something and it seems to be done efficiently.\n\n> Some concrete complaints:\n> \n> * The mathematical object of such a code is a free `ZZ/mZZ` module. Shouldn't\n>   this be reflected by some parent/category magic in `__init__`?\n\nNope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.\n\n> On a broader design level: I dislike that tons of computation is done at `__init__`, in particular tabulating all codewords. In coding theory stuff that I have been involved in, we have tried very hard to postpone computation until it becomes necessary. In particular, construction should be cheap.\n\nI guess it would be reasonable to turn it into a function or method.\n\n> For instance, I think that e.g. the cardinality of such a code can be relatively easily computed without tabulating the entire code.\n\nTrue. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n\n> The design of ring codes should also think the new (well, almost-accepted) `Encoder` and `Decoder` structure into it: #18376, #18813.\n\n+1\n \n> Note that I did not run or test the code -- I just looked at it.\n\nThe tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.\n\nVincent",
+    "body": "Thanks for having a look. (disclaimer: I actually only ended up here because of [this question on ask](http://ask.sagemath.org/question/29424/liner-code-over-integerring/)).\n\nReplying to [comment:17 jsrn]:\n> I'm not particularly fond of this patch, I must admit. It doesn't seem very well thought out. I prefer not putting in code which is weak and not thought through, rather than superficially being able to claim that \"Sage can do codes over rings\". For instance, what can the code actually do right now, besides computing the list of codewords?\n\n\nNothing I guess. But it is already something and it seems to be done efficiently.\n\n> Some concrete complaints:\n> \n> * The mathematical object of such a code is a free `ZZ/mZZ` module. Shouldn't\n>   this be reflected by some parent/category magic in `__init__`?\n\n\nNope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.\n\n> On a broader design level: I dislike that tons of computation is done at `__init__`, in particular tabulating all codewords. In coding theory stuff that I have been involved in, we have tried very hard to postpone computation until it becomes necessary. In particular, construction should be cheap.\n\n\nI guess it would be reasonable to turn it into a function or method.\n\n> For instance, I think that e.g. the cardinality of such a code can be relatively easily computed without tabulating the entire code.\n\n\nTrue. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n\n> The design of ring codes should also think the new (well, almost-accepted) `Encoder` and `Decoder` structure into it: #18376, #18813.\n\n\n+1\n \n> Note that I did not run or test the code -- I just looked at it.\n\n\nThe tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.\n\nVincent",
     "created_at": "2015-09-14T15:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -517,6 +517,7 @@ Thanks for having a look. (disclaimer: I actually only ended up here because of 
 Replying to [comment:17 jsrn]:
 > I'm not particularly fond of this patch, I must admit. It doesn't seem very well thought out. I prefer not putting in code which is weak and not thought through, rather than superficially being able to claim that "Sage can do codes over rings". For instance, what can the code actually do right now, besides computing the list of codewords?
 
+
 Nothing I guess. But it is already something and it seems to be done efficiently.
 
 > Some concrete complaints:
@@ -524,21 +525,26 @@ Nothing I guess. But it is already something and it seems to be done efficiently
 > * The mathematical object of such a code is a free `ZZ/mZZ` module. Shouldn't
 >   this be reflected by some parent/category magic in `__init__`?
 
+
 Nope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.
 
 > On a broader design level: I dislike that tons of computation is done at `__init__`, in particular tabulating all codewords. In coding theory stuff that I have been involved in, we have tried very hard to postpone computation until it becomes necessary. In particular, construction should be cheap.
+
 
 I guess it would be reasonable to turn it into a function or method.
 
 > For instance, I think that e.g. the cardinality of such a code can be relatively easily computed without tabulating the entire code.
 
+
 True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a "pseudo-basis" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.
 
 > The design of ring codes should also think the new (well, almost-accepted) `Encoder` and `Decoder` structure into it: #18376, #18813.
 
+
 +1
  
 > Note that I did not run or test the code -- I just looked at it.
+
 
 The tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.
 
@@ -551,7 +557,7 @@ Vincent
 archive/issue_comments_051813.json:
 ```json
 {
-    "body": "> Nothing I guess. But it is already something and it seems to be done efficiently.\n\nWell, it's perhaps efficient if what you want is to tabulate the entire code and immediately ask it for various stuff (like minimum distance). It's inefficient if you are only interested in some of the properties.\n\nOn the other hand, the implementation forces Cython on pretty base functionality. I'm not sure what kind of speed-up Cython brings here as opposed to pure Python -- after all, the actual work is done in finite field arithmetic. It would be interesting to compare and see whether Cython is worth it.\n\n> Nope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.\n\nNo of course you're right that it's not -- the word \"free\" slipped in there by mistake. But it *is* a module.\n\n> I guess it would be reasonable to turn it into a function or method.\n\nMinimum distance and minimum codeword computation should also be extracted from the code tabulation. I might want the list of codewords but not care about the minimum distance, and so computing the hamming weight of all the vectors is a huge waste.\n\n> True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n\nIt's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?\n\n> The tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.\n\nYou are right, it would be nice to support codes over `ZZ/mZZ`. I just want to avoid adding stuff that will have to be reformed through a heavy reviewing process just a bit further down the road ;-)",
+    "body": "> Nothing I guess. But it is already something and it seems to be done efficiently.\n\n\nWell, it's perhaps efficient if what you want is to tabulate the entire code and immediately ask it for various stuff (like minimum distance). It's inefficient if you are only interested in some of the properties.\n\nOn the other hand, the implementation forces Cython on pretty base functionality. I'm not sure what kind of speed-up Cython brings here as opposed to pure Python -- after all, the actual work is done in finite field arithmetic. It would be interesting to compare and see whether Cython is worth it.\n\n> Nope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.\n\n\nNo of course you're right that it's not -- the word \"free\" slipped in there by mistake. But it *is* a module.\n\n> I guess it would be reasonable to turn it into a function or method.\n\n\nMinimum distance and minimum codeword computation should also be extracted from the code tabulation. I might want the list of codewords but not care about the minimum distance, and so computing the hamming weight of all the vectors is a huge waste.\n\n> True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n\n\nIt's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?\n\n> The tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.\n\n\nYou are right, it would be nice to support codes over `ZZ/mZZ`. I just want to avoid adding stuff that will have to be reformed through a heavy reviewing process just a bit further down the road ;-)",
     "created_at": "2015-09-15T07:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -562,23 +568,28 @@ archive/issue_comments_051813.json:
 
 > Nothing I guess. But it is already something and it seems to be done efficiently.
 
+
 Well, it's perhaps efficient if what you want is to tabulate the entire code and immediately ask it for various stuff (like minimum distance). It's inefficient if you are only interested in some of the properties.
 
 On the other hand, the implementation forces Cython on pretty base functionality. I'm not sure what kind of speed-up Cython brings here as opposed to pure Python -- after all, the actual work is done in finite field arithmetic. It would be interesting to compare and see whether Cython is worth it.
 
 > Nope. It is not necessarily free. The submodule of `(ZZ/4ZZ)` generated by `2` is **not** free.
 
+
 No of course you're right that it's not -- the word "free" slipped in there by mistake. But it *is* a module.
 
 > I guess it would be reasonable to turn it into a function or method.
+
 
 Minimum distance and minimum codeword computation should also be extracted from the code tabulation. I might want the list of codewords but not care about the minimum distance, and so computing the hamming weight of all the vectors is a huge waste.
 
 > True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a "pseudo-basis" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.
 
+
 It's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?
 
 > The tests do not pass, but at least some examples run just nicely. Moreover, there was at least one person interested. This is why I thought it would be worse to make it a branch.
+
 
 You are right, it would be nice to support codes over `ZZ/mZZ`. I just want to avoid adding stuff that will have to be reformed through a heavy reviewing process just a bit further down the road ;-)
 
@@ -589,7 +600,7 @@ You are right, it would be nice to support codes over `ZZ/mZZ`. I just want to a
 archive/issue_comments_051814.json:
 ```json
 {
-    "body": "Replying to [comment:19 jsrn]:\n> > True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n> \n> It's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?\n\nI don't think that it is enough to determine the structure. An example of a problem is if `R=ZZ/4ZZ` and a matrix of the form\n\n```\n2 * *\n0 2 *\n0 0 2\n```\n\nIf you have a vector which is a sum of its row with coefficients `0` or `2` then the leading coefficient vanish... and you lose the nice Hermite form!\n\nBut I guess that the Smith normal form would be of more help. If I intrepret correctly what I read, it tells you that any submodule of `R^r` where `R = ZZ/nZZ` is actually of the form `R / (I1) + R / (I2) + ... + R / (Ik)` for some ideals `I1`, ..., `Ik`. These ideals are basically the product `SAT` (which is diagonal) and the decomposition is explicitly given by `T` (my source and notations from [wikipedia](https://en.wikipedia.org/wiki/Smith_normal_form)).",
+    "body": "Replying to [comment:19 jsrn]:\n> > True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a \"pseudo-basis\" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.\n  \n> \n> It's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?\n\n\nI don't think that it is enough to determine the structure. An example of a problem is if `R=ZZ/4ZZ` and a matrix of the form\n\n```\n2 * *\n0 2 *\n0 0 2\n```\nIf you have a vector which is a sum of its row with coefficients `0` or `2` then the leading coefficient vanish... and you lose the nice Hermite form!\n\nBut I guess that the Smith normal form would be of more help. If I intrepret correctly what I read, it tells you that any submodule of `R^r` where `R = ZZ/nZZ` is actually of the form `R / (I1) + R / (I2) + ... + R / (Ik)` for some ideals `I1`, ..., `Ik`. These ideals are basically the product `SAT` (which is diagonal) and the decomposition is explicitly given by `T` (my source and notations from [wikipedia](https://en.wikipedia.org/wiki/Smith_normal_form)).",
     "created_at": "2015-10-02T02:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -600,8 +611,10 @@ archive/issue_comments_051814.json:
 
 Replying to [comment:19 jsrn]:
 > > True. It would basically be equivalent to implement a generalized echelon form for matrices over `ZZ/nZZ` that give you a "pseudo-basis" of submodules of `(ZZ/nZZ)^r`. I have no idea where to find such algorithm.
+  
 > 
 > It's interesting: I'll think more on this. For instance, would the Hermite Normal form be sufficient?
+
 
 I don't think that it is enough to determine the structure. An example of a problem is if `R=ZZ/4ZZ` and a matrix of the form
 
@@ -610,7 +623,6 @@ I don't think that it is enough to determine the structure. An example of a prob
 0 2 *
 0 0 2
 ```
-
 If you have a vector which is a sum of its row with coefficients `0` or `2` then the leading coefficient vanish... and you lose the nice Hermite form!
 
 But I guess that the Smith normal form would be of more help. If I intrepret correctly what I read, it tells you that any submodule of `R^r` where `R = ZZ/nZZ` is actually of the form `R / (I1) + R / (I2) + ... + R / (Ik)` for some ideals `I1`, ..., `Ik`. These ideals are basically the product `SAT` (which is diagonal) and the decomposition is explicitly given by `T` (my source and notations from [wikipedia](https://en.wikipedia.org/wiki/Smith_normal_form)).
@@ -665,7 +677,7 @@ If you think it is not too far from the original purpose of this ticket, I will 
 archive/issue_comments_051817.json:
 ```json
 {
-    "body": "Replying to [comment:22 vdelecroix]:\n> All right, I will try to do something. I had a more careful look at the code (and the corresponding master thesis) but I was not able to understand anything. With the Smith form it will also be straightforward to implement a (possibly very efficient) iterator over the elements of the module.\n\nNice, I didn't consider that.\n\n> One non trivial point is to decide equality of sub-modules. The only canonical part of the Smith form is the diagonal matrix (which only gives you a hint about isomorphisms between submodules). But I guess that we can somehow echelonize the part corresponding to a given ideal. I would be much more happy with a clean reference...\n> \n> Since this is more about submodules of `(ZZ/nZZ)^r` I am not sure it should go at all inside `sage.codings`. I would rather put it in `sage.modules`. And (as I already told you), it would be better to factorize more between `sage.modules` and `sage.codings` when the code is **only** given by a generator matrix. So, for the sake of this ticket, my concrete proposal is:\n>  - implement submodules of `(ZZ/nZZ)^r` with a canonical form\n>  - have an efficient iterator\n> If you think it is not too far from the original purpose of this ticket, I will modify the ticket description accordingly.\n\nSuch a ticket would definitely make sense. And it seem to cover most of the functionality here (I mean, the minimum distance is right now just exhaustive checking distances...)\n\nThe distinction between vector subspaces and linear codes (given only by their generator matrix) is right now that the latter exposes a list of specialised coding theory functions. Such functions might be interesting for non-coding theorists, but probably won't be. That's an argument for having a special class which basically just wraps vector subspaces. Exactly the same argument could be made for submodules of `(ZZ/nZZ)^r`. But no need to get ahead of ourselves here, though...\n\nA different matter: the current patch is Cython. Do we want that? I remember Jeroen's advice to always try Cython only after you have determined that you really need the performance, and that Cython will give this to you.",
+    "body": "Replying to [comment:22 vdelecroix]:\n> All right, I will try to do something. I had a more careful look at the code (and the corresponding master thesis) but I was not able to understand anything. With the Smith form it will also be straightforward to implement a (possibly very efficient) iterator over the elements of the module.\n\n\nNice, I didn't consider that.\n\n> One non trivial point is to decide equality of sub-modules. The only canonical part of the Smith form is the diagonal matrix (which only gives you a hint about isomorphisms between submodules). But I guess that we can somehow echelonize the part corresponding to a given ideal. I would be much more happy with a clean reference...\n> \n> Since this is more about submodules of `(ZZ/nZZ)^r` I am not sure it should go at all inside `sage.codings`. I would rather put it in `sage.modules`. And (as I already told you), it would be better to factorize more between `sage.modules` and `sage.codings` when the code is **only** given by a generator matrix. So, for the sake of this ticket, my concrete proposal is:\n> - implement submodules of `(ZZ/nZZ)^r` with a canonical form\n> - have an efficient iterator\n> If you think it is not too far from the original purpose of this ticket, I will modify the ticket description accordingly.\n\n\nSuch a ticket would definitely make sense. And it seem to cover most of the functionality here (I mean, the minimum distance is right now just exhaustive checking distances...)\n\nThe distinction between vector subspaces and linear codes (given only by their generator matrix) is right now that the latter exposes a list of specialised coding theory functions. Such functions might be interesting for non-coding theorists, but probably won't be. That's an argument for having a special class which basically just wraps vector subspaces. Exactly the same argument could be made for submodules of `(ZZ/nZZ)^r`. But no need to get ahead of ourselves here, though...\n\nA different matter: the current patch is Cython. Do we want that? I remember Jeroen's advice to always try Cython only after you have determined that you really need the performance, and that Cython will give this to you.",
     "created_at": "2015-10-02T23:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -677,14 +689,16 @@ archive/issue_comments_051817.json:
 Replying to [comment:22 vdelecroix]:
 > All right, I will try to do something. I had a more careful look at the code (and the corresponding master thesis) but I was not able to understand anything. With the Smith form it will also be straightforward to implement a (possibly very efficient) iterator over the elements of the module.
 
+
 Nice, I didn't consider that.
 
 > One non trivial point is to decide equality of sub-modules. The only canonical part of the Smith form is the diagonal matrix (which only gives you a hint about isomorphisms between submodules). But I guess that we can somehow echelonize the part corresponding to a given ideal. I would be much more happy with a clean reference...
 > 
 > Since this is more about submodules of `(ZZ/nZZ)^r` I am not sure it should go at all inside `sage.codings`. I would rather put it in `sage.modules`. And (as I already told you), it would be better to factorize more between `sage.modules` and `sage.codings` when the code is **only** given by a generator matrix. So, for the sake of this ticket, my concrete proposal is:
->  - implement submodules of `(ZZ/nZZ)^r` with a canonical form
->  - have an efficient iterator
+> - implement submodules of `(ZZ/nZZ)^r` with a canonical form
+> - have an efficient iterator
 > If you think it is not too far from the original purpose of this ticket, I will modify the ticket description accordingly.
+
 
 Such a ticket would definitely make sense. And it seem to cover most of the functionality here (I mean, the minimum distance is right now just exhaustive checking distances...)
 
@@ -699,7 +713,7 @@ A different matter: the current patch is Cython. Do we want that? I remember Jer
 archive/issue_comments_051818.json:
 ```json
 {
-    "body": "Replying to [comment:23 jsrn]:\n> Replying to [comment:22 vdelecroix]: \n> A different matter: the current patch is Cython. Do we want that? I remember Jeroen's advice to always try Cython only after you have determined that you really need the performance, and that Cython will give this to you.\n\nMost of it will be in Python. Only the iterator can possibly be in Cython and it should not be more than 20 lines of code. But it makes sense to do it in a second time.",
+    "body": "Replying to [comment:23 jsrn]:\n> Replying to [comment:22 vdelecroix]: \n> A different matter: the current patch is Cython. Do we want that? I remember Jeroen's advice to always try Cython only after you have determined that you really need the performance, and that Cython will give this to you.\n\n\nMost of it will be in Python. Only the iterator can possibly be in Cython and it should not be more than 20 lines of code. But it makes sense to do it in a second time.",
     "created_at": "2015-10-03T00:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -711,6 +725,7 @@ archive/issue_comments_051818.json:
 Replying to [comment:23 jsrn]:
 > Replying to [comment:22 vdelecroix]: 
 > A different matter: the current patch is Cython. Do we want that? I remember Jeroen's advice to always try Cython only after you have determined that you really need the performance, and that Cython will give this to you.
+
 
 Most of it will be in Python. Only the iterator can possibly be in Cython and it should not be more than 20 lines of code. But it makes sense to do it in a second time.
 
@@ -895,7 +910,7 @@ Generally, it looks pretty good though.
 archive/issue_comments_051826.json:
 ```json
 {
-    "body": "Hi,\n\nReplying to [comment:29 jsrn]:\n> Great work Vincent!\n\nThanks ;-)\n \n> Just to be sure: is this \"In review\"? You made many changes but didn't change the state of \"needs review\".\n\nIt is in needs review. After the first commit, it appears that one doctest failed. And then, I found many typos and some better conventions. This is why there are so much commits afterwards. Shortly: it is ready and in needs review.\n\n> I will look at it in detail later, and when I'm sure it's ready. But in any case, some preliminary remarks:\n> \n> - Could you explain to me (reviewer) the reason for the patch in the category\n>   files? Something with you using the `Facade` in a previously unthought case.\n>   Is this related to the `Free`-thing below?\n\nNope. There is no `TestSuite(U).run()` anywhere for submodules. And this is the reason why.\n\nA facade is a concept from the Sage category. A parent is a facade if its elements do not belong to itself, as for submodules\n\n```\nsage: F = FreeModule(ZZ,2)\nsage: U = F.span([F((3,0))])\nsage: U.an_element().parent() is U\nFalse\nsage: U.an_element().parent() is F\nTrue\n```\n\nSo `U` is a **facade** for `F`. But this is currently not properly done\n\n```\nsage: U in Sets().Facade()\nFalse\n```\n\nI did it for the submodules over `ZZ/nZZ`. I will fix it later on for the other base rings as well and add some `TestSuite`.\n\nThere are many generic tests in category (that are automatically run with the `TestSuite` thing) but some of them do not care about facades. In particulal the `_test_zero` and `_test_one` that I modified.\n\n> - `FreeModule_ambient_IntegerModRing.span` never uses its `check` argument.\n\nTrue. I did it for compatibility with the other `span` functions. Maybe I could remove it.\n\n> - Since you compute the smith form at construction, then construction is expensive even when nothing is asked of the object afterwards. Is the argument for this that nothing interesting can be said about the module without computing the smith form anyway? Generally, I like construction to be cheap and postponing computation till the user asks it.\n\nWithout this nothing can be computed (number of generators, cardinality). Note that I postponed the `_lift` argument computation.",
+    "body": "Hi,\n\nReplying to [comment:29 jsrn]:\n> Great work Vincent!\n\n\nThanks ;-)\n \n> Just to be sure: is this \"In review\"? You made many changes but didn't change the state of \"needs review\".\n\n\nIt is in needs review. After the first commit, it appears that one doctest failed. And then, I found many typos and some better conventions. This is why there are so much commits afterwards. Shortly: it is ready and in needs review.\n\n> I will look at it in detail later, and when I'm sure it's ready. But in any case, some preliminary remarks:\n> \n> - Could you explain to me (reviewer) the reason for the patch in the category\n>   files? Something with you using the `Facade` in a previously unthought case.\n>   Is this related to the `Free`-thing below?\n\n\nNope. There is no `TestSuite(U).run()` anywhere for submodules. And this is the reason why.\n\nA facade is a concept from the Sage category. A parent is a facade if its elements do not belong to itself, as for submodules\n\n```\nsage: F = FreeModule(ZZ,2)\nsage: U = F.span([F((3,0))])\nsage: U.an_element().parent() is U\nFalse\nsage: U.an_element().parent() is F\nTrue\n```\nSo `U` is a **facade** for `F`. But this is currently not properly done\n\n```\nsage: U in Sets().Facade()\nFalse\n```\nI did it for the submodules over `ZZ/nZZ`. I will fix it later on for the other base rings as well and add some `TestSuite`.\n\nThere are many generic tests in category (that are automatically run with the `TestSuite` thing) but some of them do not care about facades. In particulal the `_test_zero` and `_test_one` that I modified.\n\n> - `FreeModule_ambient_IntegerModRing.span` never uses its `check` argument.\n\n\nTrue. I did it for compatibility with the other `span` functions. Maybe I could remove it.\n\n> - Since you compute the smith form at construction, then construction is expensive even when nothing is asked of the object afterwards. Is the argument for this that nothing interesting can be said about the module without computing the smith form anyway? Generally, I like construction to be cheap and postponing computation till the user asks it.\n\n\nWithout this nothing can be computed (number of generators, cardinality). Note that I postponed the `_lift` argument computation.",
     "created_at": "2015-10-05T01:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6452",
     "type": "issue_comment",
@@ -909,9 +924,11 @@ Hi,
 Replying to [comment:29 jsrn]:
 > Great work Vincent!
 
+
 Thanks ;-)
  
 > Just to be sure: is this "In review"? You made many changes but didn't change the state of "needs review".
+
 
 It is in needs review. After the first commit, it appears that one doctest failed. And then, I found many typos and some better conventions. This is why there are so much commits afterwards. Shortly: it is ready and in needs review.
 
@@ -920,6 +937,7 @@ It is in needs review. After the first commit, it appears that one doctest faile
 > - Could you explain to me (reviewer) the reason for the patch in the category
 >   files? Something with you using the `Facade` in a previously unthought case.
 >   Is this related to the `Free`-thing below?
+
 
 Nope. There is no `TestSuite(U).run()` anywhere for submodules. And this is the reason why.
 
@@ -933,23 +951,23 @@ False
 sage: U.an_element().parent() is F
 True
 ```
-
 So `U` is a **facade** for `F`. But this is currently not properly done
 
 ```
 sage: U in Sets().Facade()
 False
 ```
-
 I did it for the submodules over `ZZ/nZZ`. I will fix it later on for the other base rings as well and add some `TestSuite`.
 
 There are many generic tests in category (that are automatically run with the `TestSuite` thing) but some of them do not care about facades. In particulal the `_test_zero` and `_test_one` that I modified.
 
 > - `FreeModule_ambient_IntegerModRing.span` never uses its `check` argument.
 
+
 True. I did it for compatibility with the other `span` functions. Maybe I could remove it.
 
 > - Since you compute the smith form at construction, then construction is expensive even when nothing is asked of the object afterwards. Is the argument for this that nothing interesting can be said about the module without computing the smith form anyway? Generally, I like construction to be cheap and postponing computation till the user asks it.
+
 
 Without this nothing can be computed (number of generators, cardinality). Note that I postponed the `_lift` argument computation.
 

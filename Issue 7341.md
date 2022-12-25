@@ -3,7 +3,7 @@
 archive/issues_007341.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this in the notebook:\n\n```\nK.<a> = QuadraticField(-7)\nb = K.pari_bnf()\nb.<tab>\n```\n\n\nThen compare to the command line.  For some reason the last thing, \"b.bnfunit\" is missing in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7341\n\n",
+    "body": "Assignee: boothby\n\nTry this in the notebook:\n\n```\nK.<a> = QuadraticField(-7)\nb = K.pari_bnf()\nb.<tab>\n```\n\nThen compare to the command line.  For some reason the last thing, \"b.bnfunit\" is missing in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7341\n\n",
     "created_at": "2009-10-28T22:17:40Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ K.<a> = QuadraticField(-7)
 b = K.pari_bnf()
 b.<tab>
 ```
-
 
 Then compare to the command line.  For some reason the last thing, "b.bnfunit" is missing in the notebook.
 

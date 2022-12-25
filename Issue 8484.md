@@ -111,7 +111,7 @@ But for that I would give this a positive review!
 archive/issue_comments_076335.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> But I am puzzled about the need for your small_rank_curves function\n\nThat was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.",
+    "body": "Replying to [comment:3 cremona]:\n> But I am puzzled about the need for your small_rank_curves function\n\n\nThat was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.",
     "created_at": "2010-03-13T19:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
@@ -122,6 +122,7 @@ archive/issue_comments_076335.json:
 
 Replying to [comment:3 cremona]:
 > But I am puzzled about the need for your small_rank_curves function
+
 
 That was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.
 
@@ -152,7 +153,7 @@ Same as other patch, minus small_rank_curves function
 archive/issue_comments_076337.json:
 ```json
 {
-    "body": "Replying to [comment:4 rlm]:\n> Replying to [comment:3 cremona]:\n> > But I am puzzled about the need for your small_rank_curves function\n> \n> That was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.\n\nI guessed that.  If you agree that it would be good to have options to the existing database iterators, we could open up a new ticket for that.\n\nNow I should really test the new patch, just in case...",
+    "body": "Replying to [comment:4 rlm]:\n> Replying to [comment:3 cremona]:\n> > But I am puzzled about the need for your small_rank_curves function\n\n> \n> That was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.\n\n\nI guessed that.  If you agree that it would be good to have options to the existing database iterators, we could open up a new ticket for that.\n\nNow I should really test the new patch, just in case...",
     "created_at": "2010-03-13T20:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
@@ -164,8 +165,10 @@ archive/issue_comments_076337.json:
 Replying to [comment:4 rlm]:
 > Replying to [comment:3 cremona]:
 > > But I am puzzled about the need for your small_rank_curves function
+
 > 
 > That was entirely for my own convenience in doing my research. I didn't want to have to keep typing so much, so I made a short name for it... I can pull that out of the patch and just keep it on my local queue if you'd prefer.
+
 
 I guessed that.  If you agree that it would be good to have options to the existing database iterators, we could open up a new ticket for that.
 

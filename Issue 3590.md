@@ -3,7 +3,7 @@
 archive/issues_003590.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\n\n```\nsage -t  devel/sage/sage/dsage/interface/dsage_interface.py *** ***\nError: TIMED OUT! *** ***\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n*** *** Error: TIMED OUT! *** ***\n        [2697.3 s]\n```\n\n\nThis is at\n\n```\nport = find_open_port().next()\n```\n\n\nThis happens on *some machines*, e.g., fermat.math.harvard.edu, but not others.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3590\n\n",
+    "body": "Assignee: @yqiang\n\n```\nsage -t  devel/sage/sage/dsage/interface/dsage_interface.py *** ***\nError: TIMED OUT! *** ***\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n*** *** Error: TIMED OUT! *** ***\n        [2697.3 s]\n```\n\nThis is at\n\n```\nport = find_open_port().next()\n```\n\nThis happens on *some machines*, e.g., fermat.math.harvard.edu, but not others.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3590\n\n",
     "created_at": "2008-07-07T20:42:55Z",
     "labels": [
         "component: dsage",
@@ -19,7 +19,6 @@ archive/issues_003590.json:
 ```
 Assignee: @yqiang
 
-
 ```
 sage -t  devel/sage/sage/dsage/interface/dsage_interface.py *** ***
 Error: TIMED OUT! *** ***
@@ -31,13 +30,11 @@ Error: TIMED OUT! *** ***
         [2697.3 s]
 ```
 
-
 This is at
 
 ```
 port = find_open_port().next()
 ```
-
 
 This happens on *some machines*, e.g., fermat.math.harvard.edu, but not others.
 

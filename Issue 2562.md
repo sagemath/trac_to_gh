@@ -3,7 +3,7 @@
 archive/issues_002562.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI continue my review of calculus.py (I find it a good way to learn SAGE). There are a few easy\nissues I could fix (mostly typos), the other ones are mentioned here, separated by ###...### lines for different issues. The line numbers correspond to 2.10.3.\n\n###############################################################\n\nA definition is missing for is_SymbolicExpression:\n-> is_SymbolicExpression? gives no definition.\n\n###############################################################\n\nLine 376:\n\n```\n            sage: cmp(SR, SymbolicExpressionRing()) #random\n            0\n```\n\n-> is that really random?\n\n###############################################################\n\nLine 582:\n\n```\n        Here is an inexact element.\n            sage: SR(1.9393)\n            1.93930000000000\n```\n\n-> this is a bad example, since after conversion to binary, the number is an\nexact rational:\n\n```\nsage: x=1.9393\nsage: x.exact_rational()\n8733830757359603/4503599627370496\n```\n\n\n###############################################################\n\nLine 656: \"The default hashing strategy is to simply hash\n        the string representation of an object.\"\nHowever on a Pentium M I get different hash values:\n\n```\nsage: hash(x^2 + 1)\n1356423479\nsage: hash(repr(x^2+1))\n-1487868884\n```\n\nIs that normal?\n\n###############################################################\n\n    def __nonzero__(self):\n        Return True if this element is definitely not zero.\n\n        EXAMPLES:\n\n```\n            sage: k = var('k')\n            sage: pol = 1/(k-1) - 1/k - 1/k/(k-1)\n            sage: pol.is_zero()\n            True\n            sage: f = sin(x)^2 + cos(x)^2 - 1\n            sage: f.is_zero()\n            True\n```\n\nthe examples are misleading since they demonstrate is_zero and not __nonzero__.\n\nAlso \"is definitely not zero\" should be clearly defined, as the following\nexample demonstrates:\n\n\n```\nsage: e = sqrt(1002301750441) - 10007*sqrt(10009)\nsage: e.is_zero()\nFalse\nsage: RealField(200)(e)\n0.00000000000000000000000000000000000000000000000000000000000\n```\n\n(Remember that deciding zero is undecidable in general.)\n\n###############################################################\n\n\n```\nsage: f = integral(sin(x^2)); f\nsage: print f\n\n                                             (sqrt(2)  I + sqrt(2)) x\n       sqrt( pi) ((sqrt(2)  I + sqrt(2)) erf(------------------------)\n                                                        2\n                                                   (sqrt(2)  I - sqrt(2)) x\n                      + (sqrt(2)  I - sqrt(2)) erf(------------------------))/8\n                                                              2\n```\n\n-> it would be nicer to have a blank line between the two output lines,\n   since the '2' in the denominator might be confused with some exponent\n   of the second line.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2562\n\n",
+    "body": "Assignee: @williamstein\n\nI continue my review of calculus.py (I find it a good way to learn SAGE). There are a few easy\nissues I could fix (mostly typos), the other ones are mentioned here, separated by ###...### lines for different issues. The line numbers correspond to 2.10.3.\n\n###############################################################\n\nA definition is missing for is_SymbolicExpression:\n-> is_SymbolicExpression? gives no definition.\n\n###############################################################\n\nLine 376:\n\n```\n            sage: cmp(SR, SymbolicExpressionRing()) #random\n            0\n```\n-> is that really random?\n\n###############################################################\n\nLine 582:\n\n```\n        Here is an inexact element.\n            sage: SR(1.9393)\n            1.93930000000000\n```\n-> this is a bad example, since after conversion to binary, the number is an\nexact rational:\n\n```\nsage: x=1.9393\nsage: x.exact_rational()\n8733830757359603/4503599627370496\n```\n\n###############################################################\n\nLine 656: \"The default hashing strategy is to simply hash\n        the string representation of an object.\"\nHowever on a Pentium M I get different hash values:\n\n```\nsage: hash(x^2 + 1)\n1356423479\nsage: hash(repr(x^2+1))\n-1487868884\n```\nIs that normal?\n\n###############################################################\n\n    def __nonzero__(self):\n        Return True if this element is definitely not zero.\n\n        EXAMPLES:\n\n```\n            sage: k = var('k')\n            sage: pol = 1/(k-1) - 1/k - 1/k/(k-1)\n            sage: pol.is_zero()\n            True\n            sage: f = sin(x)^2 + cos(x)^2 - 1\n            sage: f.is_zero()\n            True\n```\nthe examples are misleading since they demonstrate is_zero and not __nonzero__.\n\nAlso \"is definitely not zero\" should be clearly defined, as the following\nexample demonstrates:\n\n```\nsage: e = sqrt(1002301750441) - 10007*sqrt(10009)\nsage: e.is_zero()\nFalse\nsage: RealField(200)(e)\n0.00000000000000000000000000000000000000000000000000000000000\n```\n(Remember that deciding zero is undecidable in general.)\n\n###############################################################\n\n```\nsage: f = integral(sin(x^2)); f\nsage: print f\n\n                                             (sqrt(2)  I + sqrt(2)) x\n       sqrt( pi) ((sqrt(2)  I + sqrt(2)) erf(------------------------)\n                                                        2\n                                                   (sqrt(2)  I - sqrt(2)) x\n                      + (sqrt(2)  I - sqrt(2)) erf(------------------------))/8\n                                                              2\n```\n-> it would be nicer to have a blank line between the two output lines,\n   since the '2' in the denominator might be confused with some exponent\n   of the second line.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2562\n\n",
     "created_at": "2008-03-16T22:37:16Z",
     "labels": [
         "component: calculus",
@@ -34,7 +34,6 @@ Line 376:
             sage: cmp(SR, SymbolicExpressionRing()) #random
             0
 ```
-
 -> is that really random?
 
 ###############################################################
@@ -46,7 +45,6 @@ Line 582:
             sage: SR(1.9393)
             1.93930000000000
 ```
-
 -> this is a bad example, since after conversion to binary, the number is an
 exact rational:
 
@@ -55,7 +53,6 @@ sage: x=1.9393
 sage: x.exact_rational()
 8733830757359603/4503599627370496
 ```
-
 
 ###############################################################
 
@@ -69,7 +66,6 @@ sage: hash(x^2 + 1)
 sage: hash(repr(x^2+1))
 -1487868884
 ```
-
 Is that normal?
 
 ###############################################################
@@ -88,12 +84,10 @@ Is that normal?
             sage: f.is_zero()
             True
 ```
-
 the examples are misleading since they demonstrate is_zero and not __nonzero__.
 
 Also "is definitely not zero" should be clearly defined, as the following
 example demonstrates:
-
 
 ```
 sage: e = sqrt(1002301750441) - 10007*sqrt(10009)
@@ -102,11 +96,9 @@ False
 sage: RealField(200)(e)
 0.00000000000000000000000000000000000000000000000000000000000
 ```
-
 (Remember that deciding zero is undecidable in general.)
 
 ###############################################################
-
 
 ```
 sage: f = integral(sin(x^2)); f
@@ -119,7 +111,6 @@ sage: print f
                       + (sqrt(2)  I - sqrt(2)) erf(------------------------))/8
                                                               2
 ```
-
 -> it would be nicer to have a blank line between the two output lines,
    since the '2' in the denominator might be confused with some exponent
    of the second line.
@@ -155,7 +146,7 @@ Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2562/8866.pat
 archive/issue_comments_017424.json:
 ```json
 {
-    "body": "Most of the issues above (as well as the typos in the patch) are no longer in Sage.  Of those that are, the issue about inexactness is fine, because 1.9393 is not in fact in SR, but SR(1.9393) is inexact in that sense.  \n\nIt is true that help for is_SymbolicVariable and is_SymbolicExpressionRing is nonexistent, for Python reasons, apparently:\n\n```\nsage: is_SymbolicExpressionRing??\nError getting source: could not find class definition\nType: partial\n...\npartial(func, *args, **keywords) - new function with partial application of the given arguments and keywords.\n```\n\nBut this can go on a new ticket.\n\nThe new patch fixes the rest.",
+    "body": "Most of the issues above (as well as the typos in the patch) are no longer in Sage.  Of those that are, the issue about inexactness is fine, because 1.9393 is not in fact in SR, but SR(1.9393) is inexact in that sense.  \n\nIt is true that help for is_SymbolicVariable and is_SymbolicExpressionRing is nonexistent, for Python reasons, apparently:\n\n```\nsage: is_SymbolicExpressionRing??\nError getting source: could not find class definition\nType: partial\n...\npartial(func, *args, **keywords) - new function with partial application of the given arguments and keywords.\n```\nBut this can go on a new ticket.\n\nThe new patch fixes the rest.",
     "created_at": "2009-09-04T18:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -175,7 +166,6 @@ Type: partial
 ...
 partial(func, *args, **keywords) - new function with partial application of the given arguments and keywords.
 ```
-
 But this can go on a new ticket.
 
 The new patch fixes the rest.
@@ -187,7 +177,7 @@ The new patch fixes the rest.
 archive/issue_comments_017425.json:
 ```json
 {
-    "body": "The use of the word `inexact` in Sage is misleading in general, and there are further problems when talking about elements of the `Symbolic Ring`. AFAIK, Sage regards any element of RR, CC, etc. as inexact. Since `1.9393` is by default in RR, we say that it's inexact. E.g.,\n\n\n```\nsage: t = 1.9393\nsage: t.parent()\nReal Field with 53 bits of precision\nsage: RR\nReal Field with 53 bits of precision\nsage: t.parent() is RR\nTrue\n```\n\n\nBeing `inexact` is a property of a ring, which you test with the `.is_exact()` function. The new `Symbolic Ring` can have arbitrary python objects as elements, so it could in theory have exact members too. However, to cover all cases, it reports that it is inexact:\n\n\n```\nsage: SR.is_exact()\nFalse\n```\n\n\nMaybe in the future we'll move this exactness check to the element level, at least for polynomials, matrices etc. over `SR`, since in many cases it prevents using more efficient algorithms.\n\nThe problem reported on line 582 of the old `calculus.py` has moved to line 403 of `sage/symbolic/ring.pyx`. Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue?\n\n----\n\nMost of the problems pointed out by this ticket don't exist in the new symbolics code, so I would be ok with addressing the two issues in attachment:trac_2562-minor-symb-docs.patch) and closing this ticket. \n\nThough, I am still not comfortable with the wording here:\n\n\n```\n       Return True if this symbolic expression does not evaluate to  \n       (symbolic) zero.\n```\n\n\nI suggest something like\n\n\n```\n        Return True unless this symbolic expression can be shown to be zero.\n\n        Note that deciding if an expression is zero is undecidable in general.\n```\n\n\nIt would be better to write more on how the function tests for zero, and explain that there could be cases where it returns `True` for an expression equal to zero (though I couldn't think of an example right now), but I'm willing to give this a positive review with the minor improvement I suggest above.",
+    "body": "The use of the word `inexact` in Sage is misleading in general, and there are further problems when talking about elements of the `Symbolic Ring`. AFAIK, Sage regards any element of RR, CC, etc. as inexact. Since `1.9393` is by default in RR, we say that it's inexact. E.g.,\n\n```\nsage: t = 1.9393\nsage: t.parent()\nReal Field with 53 bits of precision\nsage: RR\nReal Field with 53 bits of precision\nsage: t.parent() is RR\nTrue\n```\n\nBeing `inexact` is a property of a ring, which you test with the `.is_exact()` function. The new `Symbolic Ring` can have arbitrary python objects as elements, so it could in theory have exact members too. However, to cover all cases, it reports that it is inexact:\n\n```\nsage: SR.is_exact()\nFalse\n```\n\nMaybe in the future we'll move this exactness check to the element level, at least for polynomials, matrices etc. over `SR`, since in many cases it prevents using more efficient algorithms.\n\nThe problem reported on line 582 of the old `calculus.py` has moved to line 403 of `sage/symbolic/ring.pyx`. Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue?\n\n---\n\nMost of the problems pointed out by this ticket don't exist in the new symbolics code, so I would be ok with addressing the two issues in attachment:trac_2562-minor-symb-docs.patch) and closing this ticket. \n\nThough, I am still not comfortable with the wording here:\n\n```\n       Return True if this symbolic expression does not evaluate to  \n       (symbolic) zero.\n```\n\nI suggest something like\n\n```\n        Return True unless this symbolic expression can be shown to be zero.\n\n        Note that deciding if an expression is zero is undecidable in general.\n```\n\nIt would be better to write more on how the function tests for zero, and explain that there could be cases where it returns `True` for an expression equal to zero (though I couldn't think of an example right now), but I'm willing to give this a positive review with the minor improvement I suggest above.",
     "created_at": "2009-09-10T13:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -197,7 +187,6 @@ archive/issue_comments_017425.json:
 ```
 
 The use of the word `inexact` in Sage is misleading in general, and there are further problems when talking about elements of the `Symbolic Ring`. AFAIK, Sage regards any element of RR, CC, etc. as inexact. Since `1.9393` is by default in RR, we say that it's inexact. E.g.,
-
 
 ```
 sage: t = 1.9393
@@ -209,42 +198,35 @@ sage: t.parent() is RR
 True
 ```
 
-
 Being `inexact` is a property of a ring, which you test with the `.is_exact()` function. The new `Symbolic Ring` can have arbitrary python objects as elements, so it could in theory have exact members too. However, to cover all cases, it reports that it is inexact:
-
 
 ```
 sage: SR.is_exact()
 False
 ```
 
-
 Maybe in the future we'll move this exactness check to the element level, at least for polynomials, matrices etc. over `SR`, since in many cases it prevents using more efficient algorithms.
 
 The problem reported on line 582 of the old `calculus.py` has moved to line 403 of `sage/symbolic/ring.pyx`. Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue?
 
-----
+---
 
 Most of the problems pointed out by this ticket don't exist in the new symbolics code, so I would be ok with addressing the two issues in attachment:trac_2562-minor-symb-docs.patch) and closing this ticket. 
 
 Though, I am still not comfortable with the wording here:
-
 
 ```
        Return True if this symbolic expression does not evaluate to  
        (symbolic) zero.
 ```
 
-
 I suggest something like
-
 
 ```
         Return True unless this symbolic expression can be shown to be zero.
 
         Note that deciding if an expression is zero is undecidable in general.
 ```
-
 
 It would be better to write more on how the function tests for zero, and explain that there could be cases where it returns `True` for an expression equal to zero (though I couldn't think of an example right now), but I'm willing to give this a positive review with the minor improvement I suggest above.
 
@@ -255,7 +237,7 @@ It would be better to write more on how the function tests for zero, and explain
 archive/issue_comments_017426.json:
 ```json
 {
-    "body": "> Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue? \n\nI believe one could simply avoid the wording \"exact\" or \"inexact\" in that context.\n\nPaul",
+    "body": "> Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue? \n\n\nI believe one could simply avoid the wording \"exact\" or \"inexact\" in that context.\n\nPaul",
     "created_at": "2009-09-10T14:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -265,6 +247,7 @@ archive/issue_comments_017426.json:
 ```
 
 > Paul, do you have any suggestions on how to improve the documentation (especially around the place you mentioned) with regards to this issue? 
+
 
 I believe one could simply avoid the wording "exact" or "inexact" in that context.
 
@@ -277,7 +260,7 @@ Paul
 archive/issue_comments_017427.json:
 ```json
 {
-    "body": "Note that most of the places this definition shows up don't even have this much detail.  More typical is:\n\n```\nx.__nonzero__() <==> x != 0\n```\n\nAnyway, I agree this should be as clear as possible, so hopefully the latest version is okay.  If you come up with an example please add it.\n\nPerhaps tickets could be opened for general improvement of exact/inexactness and for the missing interactive documentation, if Paul or Burcin feel they are worthy of them (I don't feel competent to judge on either of them).",
+    "body": "Note that most of the places this definition shows up don't even have this much detail.  More typical is:\n\n```\nx.__nonzero__() <==> x != 0\n```\nAnyway, I agree this should be as clear as possible, so hopefully the latest version is okay.  If you come up with an example please add it.\n\nPerhaps tickets could be opened for general improvement of exact/inexactness and for the missing interactive documentation, if Paul or Burcin feel they are worthy of them (I don't feel competent to judge on either of them).",
     "created_at": "2009-09-10T14:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -291,7 +274,6 @@ Note that most of the places this definition shows up don't even have this much 
 ```
 x.__nonzero__() <==> x != 0
 ```
-
 Anyway, I agree this should be as clear as possible, so hopefully the latest version is okay.  If you come up with an example please add it.
 
 Perhaps tickets could be opened for general improvement of exact/inexactness and for the missing interactive documentation, if Paul or Burcin feel they are worthy of them (I don't feel competent to judge on either of them).
@@ -303,7 +285,7 @@ Perhaps tickets could be opened for general improvement of exact/inexactness and
 archive/issue_comments_017428.json:
 ```json
 {
-    "body": "Attachment [trac_2562-minor-symb-docs.patch](tarball://root/attachments/some-uuid/ticket2562/trac_2562-minor-symb-docs.patch) by @burcin created at 2009-09-12 18:18:50\n\nI am confused with this exactness issue. Please excuse my ignorance of floating point representation issues. \n\nI don't understand what it means for an element of `RR` to be an *exact rational*. As far as I understand, the `.exact_rational()` function returns the value stored in floating point representation as a rational number (i.e., `mantissa*2^exp` ).\n\n\n```\nsage: RR(1/3).exact_rational()\n6004799503160661/18014398509481984\nsage: (1.9393).exact_rational()\n8733830757359603/4503599627370496\n```\n\n\nHowever, these rationals don't represent the given value exactly.\n\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\nsage: 19393/10000 - RR(1.9393).exact_rational()\n-67/2814749767106560000\n```\n\n\nAs opposed to:\n\n\n```\nsage: 37/16 - RR(37/16).exact_rational()\n0\n```\n\n\nSo in this case, can `1.9393` be called inexact?\n\nI'd appreciate any reference where these issues are explained as well.",
+    "body": "Attachment [trac_2562-minor-symb-docs.patch](tarball://root/attachments/some-uuid/ticket2562/trac_2562-minor-symb-docs.patch) by @burcin created at 2009-09-12 18:18:50\n\nI am confused with this exactness issue. Please excuse my ignorance of floating point representation issues. \n\nI don't understand what it means for an element of `RR` to be an *exact rational*. As far as I understand, the `.exact_rational()` function returns the value stored in floating point representation as a rational number (i.e., `mantissa*2^exp` ).\n\n```\nsage: RR(1/3).exact_rational()\n6004799503160661/18014398509481984\nsage: (1.9393).exact_rational()\n8733830757359603/4503599627370496\n```\n\nHowever, these rationals don't represent the given value exactly.\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\nsage: 19393/10000 - RR(1.9393).exact_rational()\n-67/2814749767106560000\n```\n\nAs opposed to:\n\n```\nsage: 37/16 - RR(37/16).exact_rational()\n0\n```\n\nSo in this case, can `1.9393` be called inexact?\n\nI'd appreciate any reference where these issues are explained as well.",
     "created_at": "2009-09-12T18:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -318,7 +300,6 @@ I am confused with this exactness issue. Please excuse my ignorance of floating 
 
 I don't understand what it means for an element of `RR` to be an *exact rational*. As far as I understand, the `.exact_rational()` function returns the value stored in floating point representation as a rational number (i.e., `mantissa*2^exp` ).
 
-
 ```
 sage: RR(1/3).exact_rational()
 6004799503160661/18014398509481984
@@ -326,9 +307,7 @@ sage: (1.9393).exact_rational()
 8733830757359603/4503599627370496
 ```
 
-
 However, these rationals don't represent the given value exactly.
-
 
 ```
 sage: 1/3 - RR(1/3).exact_rational()
@@ -337,15 +316,12 @@ sage: 19393/10000 - RR(1.9393).exact_rational()
 -67/2814749767106560000
 ```
 
-
 As opposed to:
-
 
 ```
 sage: 37/16 - RR(37/16).exact_rational()
 0
 ```
-
 
 So in this case, can `1.9393` be called inexact?
 
@@ -376,7 +352,7 @@ I think a new ticket should be opened and/or a question asked on sage-devel on t
 archive/issue_comments_017430.json:
 ```json
 {
-    "body": "Burcin, with respect to your example:\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\n```\n\nthe problem is that when you type RR(1/3), say a is this object, then Sage does not know it comes from 1/3!\nIf you consider that you only have a=RR(1/3), but you don't know how it was obtained, then every such a is\nan exact rational, because the form mantissa*2**exp is always an exact rational.",
+    "body": "Burcin, with respect to your example:\n\n```\nsage: 1/3 - RR(1/3).exact_rational()\n1/54043195528445952\n```\nthe problem is that when you type RR(1/3), say a is this object, then Sage does not know it comes from 1/3!\nIf you consider that you only have a=RR(1/3), but you don't know how it was obtained, then every such a is\nan exact rational, because the form mantissa*2**exp is always an exact rational.",
     "created_at": "2009-09-14T07:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2562",
     "type": "issue_comment",
@@ -391,7 +367,6 @@ Burcin, with respect to your example:
 sage: 1/3 - RR(1/3).exact_rational()
 1/54043195528445952
 ```
-
 the problem is that when you type RR(1/3), say a is this object, then Sage does not know it comes from 1/3!
 If you consider that you only have a=RR(1/3), but you don't know how it was obtained, then every such a is
 an exact rational, because the form mantissa*2**exp is always an exact rational.

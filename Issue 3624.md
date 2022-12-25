@@ -131,7 +131,7 @@ fixes typos in sage-coding-cookbook.tex
 archive/issue_comments_025585.json:
 ```json
 {
-    "body": "Attachment [3624-doc.patch](tarball://root/attachments/some-uuid/ticket3624/3624-doc.patch) by mvngu created at 2008-10-29 11:28:07\n\nReplying to [comment:3 wdj]:\n> I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. \n\n\nI've attached a patch to your file [sage-coding-cookbook.tex](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex). It mainly fixes typos. I'm still waiting for sage-3.1.4 to finish building on my machine, so at the moment I can't review the sample code in your file.",
+    "body": "Attachment [3624-doc.patch](tarball://root/attachments/some-uuid/ticket3624/3624-doc.patch) by mvngu created at 2008-10-29 11:28:07\n\nReplying to [comment:3 wdj]:\n> I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. \n\n\n\nI've attached a patch to your file [sage-coding-cookbook.tex](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex). It mainly fixes typos. I'm still waiting for sage-3.1.4 to finish building on my machine, so at the moment I can't review the sample code in your file.",
     "created_at": "2008-10-29T11:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ Attachment [3624-doc.patch](tarball://root/attachments/some-uuid/ticket3624/3624
 
 Replying to [comment:3 wdj]:
 > I put a standalone latex file there (http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex) for just that chapter (not in manual style) but also the full latex setup for a new subdirectory of SAGE_ROOT/devel/doc. 
+
 
 
 I've attached a patch to your file [sage-coding-cookbook.tex](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.tex). It mainly fixes typos. I'm still waiting for sage-3.1.4 to finish building on my machine, so at the moment I can't review the sample code in your file.
@@ -241,7 +242,7 @@ archive/issue_events_008319.json:
 archive/issue_comments_025587.json:
 ```json
 {
-    "body": "I took the latest corrected version of the paper, converted it to ReST using pandoc, and fixed that document, including a few typos. I converted the EPS figures to PNG using inkscape. The file is included in the toctree and the general index under number theory because I didn't want a toplevel entry. Maybe replace number theory with discrete math?\n----\nNew commits:",
+    "body": "I took the latest corrected version of the paper, converted it to ReST using pandoc, and fixed that document, including a few typos. I converted the EPS figures to PNG using inkscape. The file is included in the toctree and the general index under number theory because I didn't want a toplevel entry. Maybe replace number theory with discrete math?\n\n---\nNew commits:",
     "created_at": "2014-03-20T16:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_comment",
@@ -251,7 +252,8 @@ archive/issue_comments_025587.json:
 ```
 
 I took the latest corrected version of the paper, converted it to ReST using pandoc, and fixed that document, including a few typos. I converted the EPS figures to PNG using inkscape. The file is included in the toctree and the general index under number theory because I didn't want a toplevel entry. Maybe replace number theory with discrete math?
-----
+
+---
 New commits:
 
 
@@ -313,7 +315,7 @@ archive/issue_events_008321.json:
 archive/issue_comments_025589.json:
 ```json
 {
-    "body": "\n```\nsage -t --long src/doc/en/thematic_tutorials/coding_theory.rst\n    Error: TAB character found at lines 860,864,865,.,.,.,1064\n```\n\n\n\n```\n+Included in Sage is the group theory package GAP [GAP]_ and GUAVA [GUAVA]_, GA\nP\u2019s coding\n+theory package. All of GUAVA\u2019s functions can be accessed within Sage.\n+   (calling Steve Linton\u2019s C programs in GAP),\n+#. Boolean-valueTraceback (most recent call last):\n  File \"/home/ralf/sage/local/bin/patchbot/patchbot.py\", line 468, in test_a_ticket\n    res = plugin(ticket, is_git=True, baseline=baseline, **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 149, in non_ascii\n    exclude_new(ticket, regex=r'[^\\x00-\\x7F]', msg=\"Non-ascii characters\", **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 143, in exclude_new\n    raise ValueError(full_msg)\nValueError: Non-ascii characters inserted on 35 non-empty lines\n```\n",
+    "body": "```\nsage -t --long src/doc/en/thematic_tutorials/coding_theory.rst\n    Error: TAB character found at lines 860,864,865,.,.,.,1064\n```\n\n```\n+Included in Sage is the group theory package GAP [GAP]_ and GUAVA [GUAVA]_, GA\nP\u2019s coding\n+theory package. All of GUAVA\u2019s functions can be accessed within Sage.\n+   (calling Steve Linton\u2019s C programs in GAP),\n+#. Boolean-valueTraceback (most recent call last):\n  File \"/home/ralf/sage/local/bin/patchbot/patchbot.py\", line 468, in test_a_ticket\n    res = plugin(ticket, is_git=True, baseline=baseline, **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 149, in non_ascii\n    exclude_new(ticket, regex=r'[^\\x00-\\x7F]', msg=\"Non-ascii characters\", **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 143, in exclude_new\n    raise ValueError(full_msg)\nValueError: Non-ascii characters inserted on 35 non-empty lines\n```",
     "created_at": "2014-05-08T07:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_comment",
@@ -322,13 +324,10 @@ archive/issue_comments_025589.json:
 }
 ```
 
-
 ```
 sage -t --long src/doc/en/thematic_tutorials/coding_theory.rst
     Error: TAB character found at lines 860,864,865,.,.,.,1064
 ```
-
-
 
 ```
 +Included in Sage is the group theory package GAP [GAP]_ and GUAVA [GUAVA]_, GA
@@ -344,7 +343,6 @@ P’s coding
     raise ValueError(full_msg)
 ValueError: Non-ascii characters inserted on 35 non-empty lines
 ```
-
 
 
 
@@ -551,7 +549,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_025599.json:
 ```json
 {
-    "body": "PDF docs don't build\n\n```\nl.14519 \\end{gather}\n                    \n? \n! Emergency stop.\n\\math@cr@@@ ...@ \\@ne \\add@amps \\maxfields@ \\omit \n                                                  \\kern -\\alignsep@ \\iftag@ ...\nl.14519 \\end{gather}\n                    \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on thematic_tutorials.log.\n [23make[1]: *** [thematic_tutorials.pdf] Error 1\nmake[1]: Leaving directory `/home/release/Sage/src/doc/output/latex/en/thematic_tutorials'\n]\n```\n",
+    "body": "PDF docs don't build\n\n```\nl.14519 \\end{gather}\n                    \n? \n! Emergency stop.\n\\math@cr@@@ ...@ \\@ne \\add@amps \\maxfields@ \\omit \n                                                  \\kern -\\alignsep@ \\iftag@ ...\nl.14519 \\end{gather}\n                    \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on thematic_tutorials.log.\n [23make[1]: *** [thematic_tutorials.pdf] Error 1\nmake[1]: Leaving directory `/home/release/Sage/src/doc/output/latex/en/thematic_tutorials'\n]\n```",
     "created_at": "2014-08-15T07:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",
     "type": "issue_comment",
@@ -577,7 +575,6 @@ Transcript written on thematic_tutorials.log.
 make[1]: Leaving directory `/home/release/Sage/src/doc/output/latex/en/thematic_tutorials'
 ]
 ```
-
 
 
 

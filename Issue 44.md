@@ -3,7 +3,7 @@
 archive/issues_000044.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n> I made the suggested changes and everything works fine.\n>\n> Thank you for replying so quickly.\n>\n> I think that modifying the preparser to meet different needs\n> sounds like a good idea as long as the underlying code didn't\n> have to change.\n\nWAIT ! -- good point.  In fact, there is code in the SAGE library\nthat assumes that the preparser replaces ^'s by **'s.  If you\ndo exactly what I suggested, you could get subtle bugs in certain\nplaces involved in moving expressions between GAP/Singular and SAGE\nthat use the SAGE preparser.\nSo at least don't make those changes to preparse.py.\n\nIt's fine to make the changes to integer.pyx that defines __xor__,\nand certainly you'll find that useful.  \n\nFor now, the best thing for you to do might be to start SAGE with\n\n    sage -ipython \n\nto get SAGE with no preparsing at all. \n\nThe solution to all this is probably to make the interactive preparser \ncustomizable and make those customizations only apply to the\ninteractive preparser.  (I.e., the preparser will have a context as input,\none for the interactive session, and the other used internally by\nthe library).  One could also have a context set at the top of a .sage\nfile.  \n\nSorry for the confusion.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/44\n\n",
+    "body": "Assignee: somebody\n\n> I made the suggested changes and everything works fine.\n\n>\n> Thank you for replying so quickly.\n\n>\n> I think that modifying the preparser to meet different needs\n> sounds like a good idea as long as the underlying code didn't\n> have to change.\n\n\nWAIT ! -- good point.  In fact, there is code in the SAGE library\nthat assumes that the preparser replaces ^'s by **'s.  If you\ndo exactly what I suggested, you could get subtle bugs in certain\nplaces involved in moving expressions between GAP/Singular and SAGE\nthat use the SAGE preparser.\nSo at least don't make those changes to preparse.py.\n\nIt's fine to make the changes to integer.pyx that defines __xor__,\nand certainly you'll find that useful.  \n\nFor now, the best thing for you to do might be to start SAGE with\n\n    sage -ipython \n\nto get SAGE with no preparsing at all. \n\nThe solution to all this is probably to make the interactive preparser \ncustomizable and make those customizations only apply to the\ninteractive preparser.  (I.e., the preparser will have a context as input,\none for the interactive session, and the other used internally by\nthe library).  One could also have a context set at the top of a .sage\nfile.  \n\nSorry for the confusion.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/44\n\n",
     "created_at": "2006-09-12T23:55:32Z",
     "labels": [
         "component: basic arithmetic"
@@ -18,12 +18,15 @@ archive/issues_000044.json:
 Assignee: somebody
 
 > I made the suggested changes and everything works fine.
+
 >
 > Thank you for replying so quickly.
+
 >
 > I think that modifying the preparser to meet different needs
 > sounds like a good idea as long as the underlying code didn't
 > have to change.
+
 
 WAIT ! -- good point.  In fact, there is code in the SAGE library
 that assumes that the preparser replaces ^'s by **'s.  If you

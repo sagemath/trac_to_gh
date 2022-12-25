@@ -157,7 +157,7 @@ archive/issue_events_014419.json:
 archive/issue_comments_048836.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncalexan]:\n> ...The doctests look good but not great: can we get some more examples that verify the Cython implementations, and some explanations of the existing examples?\n\nCan you be a *lot* more specific?",
+    "body": "Replying to [comment:3 ncalexan]:\n> ...The doctests look good but not great: can we get some more examples that verify the Cython implementations, and some explanations of the existing examples?\n\n\nCan you be a *lot* more specific?",
     "created_at": "2009-06-16T08:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
@@ -168,5 +168,6 @@ archive/issue_comments_048836.json:
 
 Replying to [comment:3 ncalexan]:
 > ...The doctests look good but not great: can we get some more examples that verify the Cython implementations, and some explanations of the existing examples?
+
 
 Can you be a *lot* more specific?

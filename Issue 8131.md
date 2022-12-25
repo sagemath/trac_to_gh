@@ -88,7 +88,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071370.json:
 ```json
 {
-    "body": "Thanks for spotting and fixing this!\n\nPlease add an:\n\n```\nOUTPUT: integer\n```\n\nline in the documentation, as per http://www.sagemath.org/doc/developer/conventions.html#documentation-strings, as well an\nexample in the doctests showing/testing that property, and I'll set a positive review!\n\nNote: you may want to use the method divide_knowing_divisible_by on ZZ elements.",
+    "body": "Thanks for spotting and fixing this!\n\nPlease add an:\n\n```\nOUTPUT: integer\n```\nline in the documentation, as per http://www.sagemath.org/doc/developer/conventions.html#documentation-strings, as well an\nexample in the doctests showing/testing that property, and I'll set a positive review!\n\nNote: you may want to use the method divide_knowing_divisible_by on ZZ elements.",
     "created_at": "2010-01-30T21:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Please add an:
 ```
 OUTPUT: integer
 ```
-
 line in the documentation, as per http://www.sagemath.org/doc/developer/conventions.html#documentation-strings, as well an
 example in the doctests showing/testing that property, and I'll set a positive review!
 
@@ -287,7 +286,7 @@ Changing keywords from "Catalan numbers" to "catalan".
 archive/issue_comments_071379.json:
 ```json
 {
-    "body": "Replying to [comment:6 pelegm]:\n\nThe trouble with using the keyword 'catalan' is that it makes it look as though it concerns the Catalan constant rather than the Catalan numbers:\n\n```\nsage: catalan.n()\n0.915965594177219\nsage: catalan_number(7)\n429\n```\n",
+    "body": "Replying to [comment:6 pelegm]:\n\nThe trouble with using the keyword 'catalan' is that it makes it look as though it concerns the Catalan constant rather than the Catalan numbers:\n\n```\nsage: catalan.n()\n0.915965594177219\nsage: catalan_number(7)\n429\n```",
     "created_at": "2016-12-07T14:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
@@ -306,4 +305,3 @@ sage: catalan.n()
 sage: catalan_number(7)
 429
 ```
-

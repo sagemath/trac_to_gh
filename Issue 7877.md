@@ -161,7 +161,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068324.json:
 ```json
 {
-    "body": "Here's a typo in the patch:\n\n```\n96\tGet the second column of M:: \n97\t         \n98\t    sage: M[1:,0] \n99\t    [ 1] \n100\t    [ 1] \n101\t    [-1]\n```\n\nThe code should be:\n\n```\nsage: M[:,1]\n[-2]\n[ 8]\n[ 1]\n[ 2]\n```\n\nI have attached patch for this, which needs some review. Otherwise the whole ticket looks good.",
+    "body": "Here's a typo in the patch:\n\n```\n96\tGet the second column of M:: \n97\t         \n98\t    sage: M[1:,0] \n99\t    [ 1] \n100\t    [ 1] \n101\t    [-1]\n```\nThe code should be:\n\n```\nsage: M[:,1]\n[-2]\n[ 8]\n[ 1]\n[ 2]\n```\nI have attached patch for this, which needs some review. Otherwise the whole ticket looks good.",
     "created_at": "2010-01-20T09:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ Here's a typo in the patch:
 100	    [ 1] 
 101	    [-1]
 ```
-
 The code should be:
 
 ```
@@ -190,7 +189,6 @@ sage: M[:,1]
 [ 1]
 [ 2]
 ```
-
 I have attached patch for this, which needs some review. Otherwise the whole ticket looks good.
 
 

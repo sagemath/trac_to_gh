@@ -3,7 +3,7 @@
 archive/issues_001403.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nJustin Walker reported:\n\n```\n'mwrank' doesn't like it if you just exit (by typing \"^D\" or, more or  \nless equivalently, by \"ending a file\").\n\nThus, if you run 'mwrank' and give it a file containing, for example,  \n\"[0,0,1,-1,0]\" and nothing else, it will barf at the end.  If your  \nfile contains \"[0,0,0,0,0]\", the program sweetly closes up shop (when  \nit reads this) and quits.\n\nThe error I get is\n   bad ZZ input\n   Abort trap\n\nAnyone know why this doesn't show up in the test logs?  Is it worth  \ntracking down?\n\nThe issue is that the terminating condition for input processing in  \n'getcurve()' is a \"null curve\" (\"\"[0,0,0,0,0]\"\"), rather than EOF.  \nAn EOF is an error condition, hence the abort(). \n```\n\n\nSee also #1402.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1403\n\n",
+    "body": "Assignee: @williamstein\n\nJustin Walker reported:\n\n```\n'mwrank' doesn't like it if you just exit (by typing \"^D\" or, more or  \nless equivalently, by \"ending a file\").\n\nThus, if you run 'mwrank' and give it a file containing, for example,  \n\"[0,0,1,-1,0]\" and nothing else, it will barf at the end.  If your  \nfile contains \"[0,0,0,0,0]\", the program sweetly closes up shop (when  \nit reads this) and quits.\n\nThe error I get is\n   bad ZZ input\n   Abort trap\n\nAnyone know why this doesn't show up in the test logs?  Is it worth  \ntracking down?\n\nThe issue is that the terminating condition for input processing in  \n'getcurve()' is a \"null curve\" (\"\"[0,0,0,0,0]\"\"), rather than EOF.  \nAn EOF is an error condition, hence the abort(). \n```\n\nSee also #1402.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1403\n\n",
     "created_at": "2007-12-05T11:42:07Z",
     "labels": [
         "component: algebraic geometry",
@@ -41,7 +41,6 @@ The issue is that the terminating condition for input processing in
 An EOF is an error condition, hence the abort(). 
 ```
 
-
 See also #1402.
 
 Cheers,
@@ -59,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1403
 archive/issue_comments_009025.json:
 ```json
 {
-    "body": "John Cremona wrote:\n\n```\ni.e. mwrank crashed rather than stopping cleanly when reachinf EOF on\ninput.  Should be an easy fix to qrank/getcurve.cc, so I'll do it.\n```\n\n\nCheers,\n\nMichael",
+    "body": "John Cremona wrote:\n\n```\ni.e. mwrank crashed rather than stopping cleanly when reachinf EOF on\ninput.  Should be an easy fix to qrank/getcurve.cc, so I'll do it.\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-05T19:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
@@ -74,7 +73,6 @@ John Cremona wrote:
 i.e. mwrank crashed rather than stopping cleanly when reachinf EOF on
 input.  Should be an easy fix to qrank/getcurve.cc, so I'll do it.
 ```
-
 
 Cheers,
 

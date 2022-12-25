@@ -3,7 +3,7 @@
 archive/issues_003376.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\n\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
     "created_at": "2008-06-06T06:54:44Z",
     "labels": [
         "component: linear algebra",
@@ -46,7 +46,6 @@ sage: time C=A*B
 CPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s
 Wall time: 4.31 s
 ```
-
 And in Magma:
 
 ```
@@ -74,7 +73,6 @@ Time: 0.200
 Time: 1.370
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3376
 
 
@@ -86,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3376
 archive/issue_comments_023562.json:
 ```json
 {
-    "body": "Hi Paul,\n\ncheck out #3204 which has been merged into 3.0.3.a1. The discussion about speeding up m4ri lasted 85 messages - see \n\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/aa4edc241ca4d6bb/7b928e8c28dfd4a2\n\nThe final number according to malb were:\n\n```\n64-bit Debian/GNU Linux, 2.33Ghz Core2Duo (Macbook Pro, 2nd Gen.)\nMatrix Dimension        Magma           GAP             M4RI\n10,000 x 10,000         2.920           6.691           1.760\n16,384 x 16,384         11.140          36.063          6.760\n20,000 x 20,000         20.370          -               12.200\n32,000 x 32,000         74.260          -               51.510 \n```\n\nThere is likely more work planned on this at Dev1 next week. Maybe malb can comment on this a little more.\n\nCheers,\n\nMichael",
+    "body": "Hi Paul,\n\ncheck out #3204 which has been merged into 3.0.3.a1. The discussion about speeding up m4ri lasted 85 messages - see \n\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/aa4edc241ca4d6bb/7b928e8c28dfd4a2\n\nThe final number according to malb were:\n\n```\n64-bit Debian/GNU Linux, 2.33Ghz Core2Duo (Macbook Pro, 2nd Gen.)\nMatrix Dimension        Magma           GAP             M4RI\n10,000 x 10,000         2.920           6.691           1.760\n16,384 x 16,384         11.140          36.063          6.760\n20,000 x 20,000         20.370          -               12.200\n32,000 x 32,000         74.260          -               51.510 \n```\nThere is likely more work planned on this at Dev1 next week. Maybe malb can comment on this a little more.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-06T07:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
@@ -112,7 +110,6 @@ Matrix Dimension        Magma           GAP             M4RI
 20,000 x 20,000         20.370          -               12.200
 32,000 x 32,000         74.260          -               51.510 
 ```
-
 There is likely more work planned on this at Dev1 next week. Maybe malb can comment on this a little more.
 
 Cheers,
@@ -126,7 +123,7 @@ Michael
 archive/issue_comments_023563.json:
 ```json
 {
-    "body": "Actually, some clarifications:\n* Sage as is, uses a O(n<sup>3</sup>/log_2(n)) algorithm (\"Method of the Four Russians\", sometimes also called greasing)\n* At these sizes (up to 8192) the difference between n<sup>3</sup>/log_2(n) and n<sup>2.807</sup> isn't that important yet (at least on the Core2Duo):\n\n```\nsage: A = random_matrix(GF(2),8192)\nsage: B = random_matrix(GF(2),8192); B\n8192 x 8192 dense matrix over Finite Field of size 2\nsage: time C = A*B\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\n\n\n```\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:= A*B;\nTime: 1.570\n```\n\n* The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:\n\n```\n64-bit Suse Linux, 2.4Ghz Opteron \nMatrix Dimension Magma 2.13-5 M4RI-20080521\n10,000 x 10,000  2.940        2.250\n16,384 x 16,384  9.250        8.800\n20,000 x 20,000  16.570       15.480\n32,000 x 32,000  59.100       57.800\n```\n\n* In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do\n\n```\nsage: time A._multiply_strassen(B,cutoff=4096)\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\n\nas you can see: It isn't really much faster than M4RM yet, since the tricky part is cache friendliness in that region and our M4RM as seen some love there (see the thread mentioned by Michael).",
+    "body": "Actually, some clarifications:\n* Sage as is, uses a O(n<sup>3</sup>/log_2(n)) algorithm (\"Method of the Four Russians\", sometimes also called greasing)\n* At these sizes (up to 8192) the difference between n<sup>3</sup>/log_2(n) and n<sup>2.807</sup> isn't that important yet (at least on the Core2Duo):\n\n```\nsage: A = random_matrix(GF(2),8192)\nsage: B = random_matrix(GF(2),8192); B\n8192 x 8192 dense matrix over Finite Field of size 2\nsage: time C = A*B\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\n\n```\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:= A*B;\nTime: 1.570\n```\n* The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:\n\n```\n64-bit Suse Linux, 2.4Ghz Opteron \nMatrix Dimension Magma 2.13-5 M4RI-20080521\n10,000 x 10,000  2.940        2.250\n16,384 x 16,384  9.250        8.800\n20,000 x 20,000  16.570       15.480\n32,000 x 32,000  59.100       57.800\n```\n* In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do\n\n```\nsage: time A._multiply_strassen(B,cutoff=4096)\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\nas you can see: It isn't really much faster than M4RM yet, since the tricky part is cache friendliness in that region and our M4RM as seen some love there (see the thread mentioned by Michael).",
     "created_at": "2008-06-06T09:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
@@ -148,7 +145,6 @@ CPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s
 Wall time: 0.97
 ```
 
-
 ```
 > n:=8192;
 > A:=RandomMatrix(GF(2),n,n);
@@ -156,7 +152,6 @@ Wall time: 0.97
 > time C:= A*B;
 Time: 1.570
 ```
-
 * The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:
 
 ```
@@ -167,7 +162,6 @@ Matrix Dimension Magma 2.13-5 M4RI-20080521
 20,000 x 20,000  16.570       15.480
 32,000 x 32,000  59.100       57.800
 ```
-
 * In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do
 
 ```
@@ -175,7 +169,6 @@ sage: time A._multiply_strassen(B,cutoff=4096)
 CPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s
 Wall time: 0.97
 ```
-
 as you can see: It isn't really much faster than M4RM yet, since the tricky part is cache friendliness in that region and our M4RM as seen some love there (see the thread mentioned by Michael).
 
 
@@ -353,7 +346,7 @@ archive/issue_comments_023570.json:
 archive/issue_comments_023571.json:
 ```json
 {
-    "body": "Positive review for the spkg. Note that there is some debug output to be killed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx\nsage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       k: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 5\nk: 3\nk: 2\nk: 1\nk: 1\nk: 2\nk: 3\nk: 3\nk: 3\nk: 3\nk: 3\nk: 1\nk: 1\n\n         [2.9 s]\n```\n\n\nCheers,\n\nMichael",
+    "body": "Positive review for the spkg. Note that there is some debug output to be killed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx\nsage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       k: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 5\nk: 3\nk: 2\nk: 1\nk: 1\nk: 2\nk: 3\nk: 3\nk: 3\nk: 3\nk: 3\nk: 1\nk: 1\n\n         [2.9 s]\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T00:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
@@ -393,7 +386,6 @@ k: 1
 
          [2.9 s]
 ```
-
 
 Cheers,
 

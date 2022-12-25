@@ -3,7 +3,7 @@
 archive/issues_001508.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
+    "body": "Assignee: @williamstein\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
     "created_at": "2007-12-14T18:04:33Z",
     "labels": [
         "component: graphics",
@@ -18,7 +18,6 @@ archive/issues_001508.json:
 ```
 Assignee: @williamstein
 
-
 ```
 Notice, if you tab-complete plot( or list_plot( the docs do not
 mention the option for axes_label.  However, the option is available.
@@ -31,7 +30,6 @@ Simple example:
 p = plot(sin, 0, 10)
 p.show(axes_label=['x-axis','y-axis'])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1508
 

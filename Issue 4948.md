@@ -3,7 +3,7 @@
 archive/issues_004948.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nMake the following work:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: slist = [1,2,3]\nsage: mathematica(slist) \n{1, 2, 3}\nsage: list(mathematica(slist))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mabshoff/.sage/temp/sage/11670/_home_mabshoff__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __len__(self)\n   1345 \n   1346     def __len__(self):\n-> 1347         raise NotImplementedError\n   1348 \n   1349     def __reduce__(self):\n\nNotImplementedError: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4948\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nMake the following work:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: slist = [1,2,3]\nsage: mathematica(slist) \n{1, 2, 3}\nsage: list(mathematica(slist))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mabshoff/.sage/temp/sage/11670/_home_mabshoff__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __len__(self)\n   1345 \n   1346     def __len__(self):\n-> 1347         raise NotImplementedError\n   1348 \n   1349     def __reduce__(self):\n\nNotImplementedError: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4948\n\n",
     "created_at": "2009-01-07T03:55:28Z",
     "labels": [
         "component: misc"
@@ -49,7 +49,6 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError: 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4948
 
 
@@ -61,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4948
 archive/issue_comments_037486.json:
 ```json
 {
-    "body": "Jason comments:\n\n```\nThese are not the right way to do this, but they seem to give results \nfor right now, at least until someone fixes this:\n\nsage: a=mathematica([1,2,3])\nsage: [a[i] for i in range(1,a.Length()+1)]\n[1, 2, 3]\n\nOr\n\nsage: a=mathematica(slist)\nsage: a._Expect__sage_list\n[1, 2, 3]\n```\n\n\nCheers,\n\nMichael",
+    "body": "Jason comments:\n\n```\nThese are not the right way to do this, but they seem to give results \nfor right now, at least until someone fixes this:\n\nsage: a=mathematica([1,2,3])\nsage: [a[i] for i in range(1,a.Length()+1)]\n[1, 2, 3]\n\nOr\n\nsage: a=mathematica(slist)\nsage: a._Expect__sage_list\n[1, 2, 3]\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-07T05:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4948",
     "type": "issue_comment",
@@ -86,7 +85,6 @@ sage: a=mathematica(slist)
 sage: a._Expect__sage_list
 [1, 2, 3]
 ```
-
 
 Cheers,
 
@@ -170,7 +168,7 @@ Great work!   I hope you'll do more to improve the Sage /Mathematica interface. 
 archive/issue_comments_037490.json:
 ```json
 {
-    "body": "What about doctest for this function in `sage/interfaces/expect.py`?\n\n```\n1142\t    def _exponent_symbol(self): \n1143\t        \"\"\" \n1144\t        Return the symbol used to denote *10^ in floats, e.g 'e' in 1.5e6 \n1145\t        \"\"\" \n1146\t        return 'e' \n```\n",
+    "body": "What about doctest for this function in `sage/interfaces/expect.py`?\n\n```\n1142\t    def _exponent_symbol(self): \n1143\t        \"\"\" \n1144\t        Return the symbol used to denote *10^ in floats, e.g 'e' in 1.5e6 \n1145\t        \"\"\" \n1146\t        return 'e' \n```",
     "created_at": "2009-09-15T19:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4948",
     "type": "issue_comment",
@@ -188,7 +186,6 @@ What about doctest for this function in `sage/interfaces/expect.py`?
 1145	        """ 
 1146	        return 'e' 
 ```
-
 
 
 

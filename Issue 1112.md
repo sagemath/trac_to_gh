@@ -3,7 +3,7 @@
 archive/issues_001112.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nthe attached patch makes this work:\n\n\n```\nsage: pow(10,20,17)\n4\nsage: pow?\n    pow(x, y[, z]) -> number\n\n    With two arguments, equivalent to x**y.  With three arguments,\n    equivalent to (x**y) % z, but may be more efficient (e.g. for longs).\n```\n\n\nthis is required such that e.g. the Crypto.RSA module works with SAGE integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1112\n\n",
+    "body": "Assignee: somebody\n\nthe attached patch makes this work:\n\n```\nsage: pow(10,20,17)\n4\nsage: pow?\n    pow(x, y[, z]) -> number\n\n    With two arguments, equivalent to x**y.  With three arguments,\n    equivalent to (x**y) % z, but may be more efficient (e.g. for longs).\n```\n\nthis is required such that e.g. the Crypto.RSA module works with SAGE integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1112\n\n",
     "created_at": "2007-11-06T16:22:17Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 the attached patch makes this work:
 
-
 ```
 sage: pow(10,20,17)
 4
@@ -30,7 +29,6 @@ sage: pow?
     With two arguments, equivalent to x**y.  With three arguments,
     equivalent to (x**y) % z, but may be more efficient (e.g. for longs).
 ```
-
 
 this is required such that e.g. the Crypto.RSA module works with SAGE integers.
 

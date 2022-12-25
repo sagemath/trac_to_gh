@@ -3,7 +3,7 @@
 archive/issues_001463.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: polymake, cddlib, gmp\n\nIn the spkg-install script for polymake, the versions need to be updated: the correct script variables are:\n\n```\nSAGE_GMP_VERSION=\"4.2.1.p12\"\nCDDLIB_VERSION=\"094b.p0\"\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1463\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: polymake, cddlib, gmp\n\nIn the spkg-install script for polymake, the versions need to be updated: the correct script variables are:\n\n```\nSAGE_GMP_VERSION=\"4.2.1.p12\"\nCDDLIB_VERSION=\"094b.p0\"\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1463\n\n",
     "created_at": "2007-12-11T22:33:50Z",
     "labels": [
         "component: packages: standard",
@@ -27,7 +27,6 @@ In the spkg-install script for polymake, the versions need to be updated: the co
 SAGE_GMP_VERSION="4.2.1.p12"
 CDDLIB_VERSION="094b.p0"
 ```
-
 
 
 

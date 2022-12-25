@@ -3,7 +3,7 @@
 archive/issues_006779.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nSince gcd(3/2, 9/5) used to be 3/10, it was used in lattice_polytope functions for rescaling to primitive integral vectors in the given rational direction. This is no longer true and leads to bugs:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\nTraceback (most recent call last):\n...\nTypeError: matrix has denominators so can't change to ZZ.\n```\n\nThe patch adds a function integral_length and uses it instead of gcd:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\n[2 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6779\n\n",
+    "body": "Assignee: mhampton\n\nSince gcd(3/2, 9/5) used to be 3/10, it was used in lattice_polytope functions for rescaling to primitive integral vectors in the given rational direction. This is no longer true and leads to bugs:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\nTraceback (most recent call last):\n...\nTypeError: matrix has denominators so can't change to ZZ.\n```\nThe patch adds a function integral_length and uses it instead of gcd:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\n[2 1 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6779\n\n",
     "created_at": "2009-08-20T00:04:40Z",
     "labels": [
         "component: geometry",
@@ -27,7 +27,6 @@ Traceback (most recent call last):
 ...
 TypeError: matrix has denominators so can't change to ZZ.
 ```
-
 The patch adds a function integral_length and uses it instead of gcd:
 
 ```
@@ -35,7 +34,6 @@ sage: p = ReflexivePolytope(2, 1)
 sage: lattice_polytope.positive_integer_relations(p.vertices())
 [2 1 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6779
 

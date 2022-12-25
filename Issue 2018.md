@@ -3,7 +3,7 @@
 archive/issues_002018.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/UTIL/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/SRC/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/LAPACK/.svn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2018\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/UTIL/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/SRC/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/LAPACK/.svn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2018\n\n",
     "created_at": "2008-01-31T23:29:23Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_002018.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/.svn
 sage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/tests/.svn
@@ -28,7 +27,6 @@ sage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/UTIL/.svn
 sage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/SRC/.svn
 sage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/LAPACK/.svn
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2018
 

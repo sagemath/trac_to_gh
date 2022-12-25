@@ -186,7 +186,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_019307.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> Do you consider #13827 as a ticket which aims at making all options of `Graph.plot` able to take [edge/vertex]-specific instructions? If so, could you update its description before setting this one to `positive_review`? Right now all the description of #13827 says is that it should be possible to provide an alternative text to the vertices' name.\n\nDone that.\n\n(For now that ticket is kind of waiting for someone to decide if my suggestions are good or not. \u200bPunarbasu Purkayastha suggested other kind of interface.)",
+    "body": "Replying to [comment:4 ncohen]:\n> Do you consider #13827 as a ticket which aims at making all options of `Graph.plot` able to take [edge/vertex]-specific instructions? If so, could you update its description before setting this one to `positive_review`? Right now all the description of #13827 says is that it should be possible to provide an alternative text to the vertices' name.\n\n\nDone that.\n\n(For now that ticket is kind of waiting for someone to decide if my suggestions are good or not. \u200bPunarbasu Purkayastha suggested other kind of interface.)",
     "created_at": "2016-01-05T05:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2817",
     "type": "issue_comment",
@@ -197,6 +197,7 @@ archive/issue_comments_019307.json:
 
 Replying to [comment:4 ncohen]:
 > Do you consider #13827 as a ticket which aims at making all options of `Graph.plot` able to take [edge/vertex]-specific instructions? If so, could you update its description before setting this one to `positive_review`? Right now all the description of #13827 says is that it should be possible to provide an alternative text to the vertices' name.
+
 
 Done that.
 

@@ -3,7 +3,7 @@
 archive/issues_006745.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nA big gap in functionality for quaternion algebras right now is that one can't compute the left and right orders associated to ideals (the functions raise NotImplementedError).    I just designed a little algorithm and wrote code to do this for my research and will post a patch here soon. \n\nJust in case I misplace it, some demo code that works is the following:\n\n```\ndef left_order(I):\n    Q = O.quaternion_algebra()\n    M = [matrix([(a*b).coefficient_tuple() for a in Q.basis()]) for b in I.basis()]\n    B = I.basis_matrix()\n    invs = [(B*m^(-1)).row_module(ZZ) for m in M]\n    IS = invs[0].intersection(invs[1]).intersection(invs[2]).intersection(invs[3])\n    ISB = [Q(v) for v in IS.basis()]\n    return Q.quaternion_order(ISB)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6745\n\n",
+    "body": "Assignee: tbd\n\nA big gap in functionality for quaternion algebras right now is that one can't compute the left and right orders associated to ideals (the functions raise NotImplementedError).    I just designed a little algorithm and wrote code to do this for my research and will post a patch here soon. \n\nJust in case I misplace it, some demo code that works is the following:\n\n```\ndef left_order(I):\n    Q = O.quaternion_algebra()\n    M = [matrix([(a*b).coefficient_tuple() for a in Q.basis()]) for b in I.basis()]\n    B = I.basis_matrix()\n    invs = [(B*m^(-1)).row_module(ZZ) for m in M]\n    IS = invs[0].intersection(invs[1]).intersection(invs[2]).intersection(invs[3])\n    ISB = [Q(v) for v in IS.basis()]\n    return Q.quaternion_order(ISB)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6745\n\n",
     "created_at": "2009-08-14T16:23:57Z",
     "labels": [
         "component: algebra"
@@ -32,7 +32,6 @@ def left_order(I):
     return Q.quaternion_order(ISB)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6745
 
 
@@ -44,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6745
 archive/issue_comments_055391.json:
 ```json
 {
-    "body": "Attachment [trac_6745.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745.patch) by @robertwb created at 2009-08-16 09:18:21\n\nsage/algebras/quatalg/quaternion_algebra.py:1272\n\n\n```\nALGORITHM: Let `b_1, b_2, b_3, b_3` be a basis for this \n```\n\n\n(Typo, you want b_4). \n\nTabularUnified  sage/matrix/matrix_integer_dense.pyx:2310\n\n\n```\nif max(self._nrows, self._ncols) <= 50: \n```\n\n\nI think you intended to have an `elif` here. \n\nOther than that, looks good to me. Also, while I was playing around with it trying it out, I found #6762 useful.",
+    "body": "Attachment [trac_6745.patch](tarball://root/attachments/some-uuid/ticket6745/trac_6745.patch) by @robertwb created at 2009-08-16 09:18:21\n\nsage/algebras/quatalg/quaternion_algebra.py:1272\n\n```\nALGORITHM: Let `b_1, b_2, b_3, b_3` be a basis for this \n```\n\n(Typo, you want b_4). \n\nTabularUnified  sage/matrix/matrix_integer_dense.pyx:2310\n\n```\nif max(self._nrows, self._ncols) <= 50: \n```\n\nI think you intended to have an `elif` here. \n\nOther than that, looks good to me. Also, while I was playing around with it trying it out, I found #6762 useful.",
     "created_at": "2009-08-16T09:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6745",
     "type": "issue_comment",
@@ -57,21 +56,17 @@ Attachment [trac_6745.patch](tarball://root/attachments/some-uuid/ticket6745/tra
 
 sage/algebras/quatalg/quaternion_algebra.py:1272
 
-
 ```
 ALGORITHM: Let `b_1, b_2, b_3, b_3` be a basis for this 
 ```
-
 
 (Typo, you want b_4). 
 
 TabularUnified  sage/matrix/matrix_integer_dense.pyx:2310
 
-
 ```
 if max(self._nrows, self._ncols) <= 50: 
 ```
-
 
 I think you intended to have an `elif` here. 
 

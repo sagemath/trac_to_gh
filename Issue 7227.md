@@ -58,7 +58,7 @@ Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachment
 archive/issue_comments_059829.json:
 ```json
 {
-    "body": "Here are some examples of the improvements made by the patch :\n\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 4.19 s, sys: 0.00 s, total: 4.19 s\nWall time: 4.19 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 10.28 s, sys: 0.00 s, total: 10.28 s\nWall time: 10.28 s\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.30 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: time _ = [w.number_of_factors(i) for i in range(100)]\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time _ = [w.number_of_factors(i) for i in range(1000)]\nCPU times: user 4.90 s, sys: 0.00 s, total: 4.90 s\nWall time: 4.90 s\nsage: time _ = [w.number_of_factors(i) for i in range(1001)]\nCPU times: user 4.85 s, sys: 0.00 s, total: 4.85 s\nWall time: 4.85 s\nsage: time _ = [w.number_of_factors(i) for i in range(2000)]\nCPU times: user 27.64 s, sys: 0.00 s, total: 27.64 s\nWall time: 27.64 s\n```\n\n\n\nI should also add some Rauzy graphs examples and some timing improvements on palindrome complexity as well.",
+    "body": "Here are some examples of the improvements made by the patch :\n\n\nBEFORE:\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 4.19 s, sys: 0.00 s, total: 4.19 s\nWall time: 4.19 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 10.28 s, sys: 0.00 s, total: 10.28 s\nWall time: 10.28 s\n```\n\nAFTER:\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.30 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: time _ = [w.number_of_factors(i) for i in range(100)]\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time _ = [w.number_of_factors(i) for i in range(1000)]\nCPU times: user 4.90 s, sys: 0.00 s, total: 4.90 s\nWall time: 4.90 s\nsage: time _ = [w.number_of_factors(i) for i in range(1001)]\nCPU times: user 4.85 s, sys: 0.00 s, total: 4.85 s\nWall time: 4.85 s\nsage: time _ = [w.number_of_factors(i) for i in range(2000)]\nCPU times: user 27.64 s, sys: 0.00 s, total: 27.64 s\nWall time: 27.64 s\n```\n\n\nI should also add some Rauzy graphs examples and some timing improvements on palindrome complexity as well.",
     "created_at": "2009-10-15T14:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ Here are some examples of the improvements made by the patch :
 
 BEFORE:
 
-
 ```
 sage: t = words.ThueMorseWord()
 sage: w = t[:10000]
@@ -84,9 +83,7 @@ CPU times: user 10.28 s, sys: 0.00 s, total: 10.28 s
 Wall time: 10.28 s
 ```
 
-
 AFTER:
-
 
 ```
 sage: t = words.ThueMorseWord()
@@ -110,7 +107,6 @@ sage: time _ = [w.number_of_factors(i) for i in range(2000)]
 CPU times: user 27.64 s, sys: 0.00 s, total: 27.64 s
 Wall time: 27.64 s
 ```
-
 
 
 I should also add some Rauzy graphs examples and some timing improvements on palindrome complexity as well.
@@ -198,7 +194,7 @@ The rest is OK.
 archive/issue_comments_059834.json:
 ```json
 {
-    "body": "Replying to [comment:3 vdelecroix]:\n> rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n\nYou mean the add_edge method? I don't know. Is it faster?",
+    "body": "Replying to [comment:3 vdelecroix]:\n> rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n\n\nYou mean the add_edge method? I don't know. Is it faster?",
     "created_at": "2009-10-29T01:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -210,6 +206,7 @@ archive/issue_comments_059834.json:
 Replying to [comment:3 vdelecroix]:
 > rauzy_graph : why don't you use DiGraph method for the creation of edges ?
 
+
 You mean the add_edge method? I don't know. Is it faster?
 
 
@@ -219,7 +216,7 @@ You mean the add_edge method? I don't know. Is it faster?
 archive/issue_comments_059835.json:
 ```json
 {
-    "body": "Replying to [comment:5 slabbe]:\n> Replying to [comment:3 vdelecroix]:\n> > rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n> \n> You mean the add_edge method? I don't know. Is it faster?\n\nAt least it is not slower and I find it clearer:\n\n```\nsage: timeit('G = DiGraph(loops=True)\\nfor i in range(200):\\n  for j in range(200):\\n    d.add_edge(i,j)')\n5 loops, best of 3: 248 ms per loop\nsage: timeit('d = {}\\nfor i in range(200):\\n  d[i]=[]\\n  for j in range(200):\\n    d[i].append(j)\\nG=DiGraph(d,loops=True)')\n5 loops, best of 3: 266 ms per loop\n```\n",
+    "body": "Replying to [comment:5 slabbe]:\n> Replying to [comment:3 vdelecroix]:\n> > rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n\n> \n> You mean the add_edge method? I don't know. Is it faster?\n\n\nAt least it is not slower and I find it clearer:\n\n```\nsage: timeit('G = DiGraph(loops=True)\\nfor i in range(200):\\n  for j in range(200):\\n    d.add_edge(i,j)')\n5 loops, best of 3: 248 ms per loop\nsage: timeit('d = {}\\nfor i in range(200):\\n  d[i]=[]\\n  for j in range(200):\\n    d[i].append(j)\\nG=DiGraph(d,loops=True)')\n5 loops, best of 3: 266 ms per loop\n```",
     "created_at": "2009-10-29T12:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -231,8 +228,10 @@ archive/issue_comments_059835.json:
 Replying to [comment:5 slabbe]:
 > Replying to [comment:3 vdelecroix]:
 > > rauzy_graph : why don't you use DiGraph method for the creation of edges ?
+
 > 
 > You mean the add_edge method? I don't know. Is it faster?
+
 
 At least it is not slower and I find it clearer:
 
@@ -242,7 +241,6 @@ sage: timeit('G = DiGraph(loops=True)\nfor i in range(200):\n  for j in range(20
 sage: timeit('d = {}\nfor i in range(200):\n  d[i]=[]\n  for j in range(200):\n    d[i].append(j)\nG=DiGraph(d,loops=True)')
 5 loops, best of 3: 266 ms per loop
 ```
-
 
 
 
@@ -329,7 +327,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059840.json:
 ```json
 {
-    "body": "> Remark for future: the graph rendering is quite bad because word renders \"word: xxxx\"\n\nOne way to avoid the `word: ` identifier is to set it empty using \n\n\n```\nsage: WordOptions(identifier='')\nsage: Word(range(10))\n0123456789\n```\n\n\nbut it affects not only the vertices of the Rauzy graph but every single print of a word which might not be exactly what you want...",
+    "body": "> Remark for future: the graph rendering is quite bad because word renders \"word: xxxx\"\n\n\nOne way to avoid the `word: ` identifier is to set it empty using \n\n```\nsage: WordOptions(identifier='')\nsage: Word(range(10))\n0123456789\n```\n\nbut it affects not only the vertices of the Rauzy graph but every single print of a word which might not be exactly what you want...",
     "created_at": "2009-10-30T18:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
@@ -340,15 +338,14 @@ archive/issue_comments_059840.json:
 
 > Remark for future: the graph rendering is quite bad because word renders "word: xxxx"
 
-One way to avoid the `word: ` identifier is to set it empty using 
 
+One way to avoid the `word: ` identifier is to set it empty using 
 
 ```
 sage: WordOptions(identifier='')
 sage: Word(range(10))
 0123456789
 ```
-
 
 but it affects not only the vertices of the Rauzy graph but every single print of a word which might not be exactly what you want...
 

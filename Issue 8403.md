@@ -168,7 +168,7 @@ Nathann
 archive/issue_comments_075140.json:
 ```json
 {
-    "body": "Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by @rlmill created at 2010-06-18 15:04:22\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
+    "body": "Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by @rlmill created at 2010-06-18 15:04:22\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
     "created_at": "2010-06-18T15:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
@@ -181,6 +181,7 @@ Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/tra
 
 Replying to [comment:5 ncohen]:
 > And you are right. I was thinking about spanning trees, as I usually do not care about weights...
+
 
 I don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.
 
@@ -211,7 +212,7 @@ Nathann
 archive/issue_comments_075142.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> That's what I call linear -- not according to the the number of vertices, but according to the size of the input : n+m :-)\n\nAha, thanks for clarifying. If you approve of my part2, set the ticket to positive-- all looks good to me!",
+    "body": "Replying to [comment:8 ncohen]:\n> That's what I call linear -- not according to the the number of vertices, but according to the size of the input : n+m :-)\n\n\nAha, thanks for clarifying. If you approve of my part2, set the ticket to positive-- all looks good to me!",
     "created_at": "2010-06-19T00:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
@@ -222,6 +223,7 @@ archive/issue_comments_075142.json:
 
 Replying to [comment:8 ncohen]:
 > That's what I call linear -- not according to the the number of vertices, but according to the size of the input : n+m :-)
+
 
 Aha, thanks for clarifying. If you approve of my part2, set the ticket to positive-- all looks good to me!
 

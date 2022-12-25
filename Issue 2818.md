@@ -51,7 +51,7 @@ Attachment [trac-2818-part1.patch](tarball://root/attachments/some-uuid/ticket28
 archive/issue_comments_019310.json:
 ```json
 {
-    "body": "No dice:\n\n```\nhg import trac_2818-part1.patch\napplying trac_2818-part1.patch\npatching file sage/server/notebook/js.py\nHunk #7 FAILED at 651\nHunk #8 succeeded at 615 with fuzz 1 (offset -54 lines).\n1 out of 12 hunks FAILED -- saving rejects to file sage/server/notebook/js.py.rej\nabort: patch failed to apply\n```\n\nThe rejected hunk:\n\n```\n--- js.py\n+++ js.py\n@@ -520,10 +652,16 @@ function get_cursor_position(cell) {\n }\n\n function set_cursor_position(cell, n) {\n-    /* Move the cursor position in the cell to position n.\n+    /*\n+    Move the cursor position in the cell to position n.\n+\n+    WARNING: Does nothing when n is 0 on Opera at present.\n+\n     INPUT:\n         cell -- an actual cell in the DOM, returned by get_cell\n         n -- a non-negative integer\n+    OUTPUT:\n+        changes the position of the cursor.\n     */\n     if (browser_op && !n) {\n         // program around a \"bug\" in opera where using this\n```\n\n\nSo: am I missing a patch or does this need a rebase?\n\nCheers,\n\nMichael",
+    "body": "No dice:\n\n```\nhg import trac_2818-part1.patch\napplying trac_2818-part1.patch\npatching file sage/server/notebook/js.py\nHunk #7 FAILED at 651\nHunk #8 succeeded at 615 with fuzz 1 (offset -54 lines).\n1 out of 12 hunks FAILED -- saving rejects to file sage/server/notebook/js.py.rej\nabort: patch failed to apply\n```\nThe rejected hunk:\n\n```\n--- js.py\n+++ js.py\n@@ -520,10 +652,16 @@ function get_cursor_position(cell) {\n }\n\n function set_cursor_position(cell, n) {\n-    /* Move the cursor position in the cell to position n.\n+    /*\n+    Move the cursor position in the cell to position n.\n+\n+    WARNING: Does nothing when n is 0 on Opera at present.\n+\n     INPUT:\n         cell -- an actual cell in the DOM, returned by get_cell\n         n -- a non-negative integer\n+    OUTPUT:\n+        changes the position of the cursor.\n     */\n     if (browser_op && !n) {\n         // program around a \"bug\" in opera where using this\n```\n\nSo: am I missing a patch or does this need a rebase?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T05:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2818",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ Hunk #8 succeeded at 615 with fuzz 1 (offset -54 lines).
 1 out of 12 hunks FAILED -- saving rejects to file sage/server/notebook/js.py.rej
 abort: patch failed to apply
 ```
-
 The rejected hunk:
 
 ```
@@ -96,7 +95,6 @@ The rejected hunk:
      if (browser_op && !n) {
          // program around a "bug" in opera where using this
 ```
-
 
 So: am I missing a patch or does this need a rebase?
 

@@ -3,7 +3,7 @@
 archive/issues_002148.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polybori\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polybori\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
     "created_at": "2008-02-13T13:06:07Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ CC:  @malb
 
 Keywords: polybori
 
-
 ```
 sage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')
 sage: x > y
@@ -32,7 +31,6 @@ sage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')
 sage: x > y
 False
 ```
-
 
 This should be changed because it leads to funny performance figures.
 
@@ -121,7 +119,7 @@ attachment:2148-polybori_monomial_order_keywords.patch corrects the monomial ord
 archive/issue_comments_014064.json:
 ```json
 {
-    "body": "I am not convinced the patch fixes the issue:\n\n'dp' and 'Dp' refer to degrevlex and deglex respectively and in neither of those x < y.\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),order='degrevlex')\nsage: x > y\nTrue\nsage: P.<x,y> = PolynomialRing(GF(2),order='deglex')\nsage: x > y\nTrue\n```\n\n\nHowever, there is a deglex with variables inverted ordering ib PolyBoRi which has no Singular/Sage equivalent AFAIK:\n\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2,order='deglex')\nsage: x > y\nTrue\nsage: B.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n",
+    "body": "I am not convinced the patch fixes the issue:\n\n'dp' and 'Dp' refer to degrevlex and deglex respectively and in neither of those x < y.\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),order='degrevlex')\nsage: x > y\nTrue\nsage: P.<x,y> = PolynomialRing(GF(2),order='deglex')\nsage: x > y\nTrue\n```\n\nHowever, there is a deglex with variables inverted ordering ib PolyBoRi which has no Singular/Sage equivalent AFAIK:\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2,order='deglex')\nsage: x > y\nTrue\nsage: B.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```",
     "created_at": "2008-02-17T17:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ I am not convinced the patch fixes the issue:
 
 'dp' and 'Dp' refer to degrevlex and deglex respectively and in neither of those x < y.
 
-
 ```
 sage: P.<x,y> = PolynomialRing(GF(2),order='degrevlex')
 sage: x > y
@@ -144,9 +141,7 @@ sage: x > y
 True
 ```
 
-
 However, there is a deglex with variables inverted ordering ib PolyBoRi which has no Singular/Sage equivalent AFAIK:
-
 
 ```
 sage: B.<x,y> = BooleanPolynomialRing(2,order='deglex')
@@ -156,7 +151,6 @@ sage: B.<x,y> = BooleanPolynomialRing(2,order='degrevlex')
 sage: x > y
 False
 ```
-
 
 
 
@@ -183,7 +177,7 @@ You're right, it's not so simple. I'll look at it a bit more.
 archive/issue_comments_014066.json:
 ```json
 {
-    "body": "\n```\nOn Wed, 20 Feb 2008 10:40:09 +0100\nAlexander Dreyer <alexander.dreyer@itwm.fraunhofer.de> wrote:\n\n> PolyBoRi does not implement degrevlex (dp), but a variant, which we\n> called dp_asc. It is adp (not a dlex, as Martin states), but with\n> variables reversed. The reason for this was, that this can be\n> implemented more efficiently on our ZDD-based data structure. So, for\n> correcting the command\n> \n> B.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\n> \n> you have to reverse the variable vector before it is returned to <x, y>.\n> (If there's something like BooleanVariable(idx), it has to be mapped to\n> BooleVariable(n-idx).)\n```\n",
+    "body": "```\nOn Wed, 20 Feb 2008 10:40:09 +0100\nAlexander Dreyer <alexander.dreyer@itwm.fraunhofer.de> wrote:\n\n> PolyBoRi does not implement degrevlex (dp), but a variant, which we\n> called dp_asc. It is adp (not a dlex, as Martin states), but with\n> variables reversed. The reason for this was, that this can be\n> implemented more efficiently on our ZDD-based data structure. So, for\n> correcting the command\n> \n> B.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\n> \n> you have to reverse the variable vector before it is returned to <x, y>.\n> (If there's something like BooleanVariable(idx), it has to be mapped to\n> BooleVariable(n-idx).)\n```",
     "created_at": "2008-02-27T09:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
@@ -191,7 +185,6 @@ archive/issue_comments_014066.json:
     "user": "https://github.com/burcin"
 }
 ```
-
 
 ```
 On Wed, 20 Feb 2008 10:40:09 +0100
@@ -209,7 +202,6 @@ Alexander Dreyer <alexander.dreyer@itwm.fraunhofer.de> wrote:
 > (If there's something like BooleanVariable(idx), it has to be mapped to
 > BooleVariable(n-idx).)
 ```
-
 
 
 
@@ -236,7 +228,7 @@ reverse variables for degrevlex to dp_asc conversion
 archive/issue_comments_014068.json:
 ```json
 {
-    "body": "Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by @burcin created at 2008-03-08 13:31:46\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```\n",
+    "body": "Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by @burcin created at 2008-03-08 13:31:46\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```",
     "created_at": "2008-03-08T13:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
@@ -251,7 +243,6 @@ attachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in th
 
 Note that with this patch, printing is reversed when using dp_asc orders:
 
-
 ```
 sage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')
 sage: x*y*z
@@ -260,7 +251,6 @@ sage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')
 sage: x*y*z
 x*y*z
 ```
-
 
 
 

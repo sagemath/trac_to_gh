@@ -3,7 +3,7 @@
 archive/issues_008914.json:
 ```json
 {
-    "body": "Assignee: wjlaffin\n\nself appears by latex instead of code. \n\nAs cached method blocks ?? from working, o\n\n\n```\na = Sets.ParentMethods.an_element\na?\n```\n\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8914\n\n",
+    "body": "Assignee: wjlaffin\n\nself appears by latex instead of code. \n\nAs cached method blocks ?? from working, o\n\n```\na = Sets.ParentMethods.an_element\na?\n```\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8914\n\n",
     "created_at": "2010-05-07T16:02:47Z",
     "labels": [
         "component: documentation",
@@ -23,12 +23,10 @@ self appears by latex instead of code.
 
 As cached method blocks ?? from working, o
 
-
 ```
 a = Sets.ParentMethods.an_element
 a?
 ```
-
 
 A patch is coming.
 

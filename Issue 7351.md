@@ -3,7 +3,7 @@
 archive/issues_007351.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n```\nI'm using sage -startuptime.\n\nThe singular interface also looks like a *major* culprit:\n\n              sage.interfaces.singular: 0.329 (sage.rings.ideal)\n               sage.structure.sequence: 0.000 (sage.interfaces.singular)\n\nLooking, I see that a *horrendously* time consuming function called \n\"generate_docstring_dictionary()\" is called whenever the file sage/interfaces/singular.py is imported.  This is completely pointless, and shouldn't happen until somebody actually tries to use the singular interface.  A few lines of code would immediately reduce the startup time of Sage by nearly a half second there. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7351\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n```\nI'm using sage -startuptime.\n\nThe singular interface also looks like a *major* culprit:\n\n              sage.interfaces.singular: 0.329 (sage.rings.ideal)\n               sage.structure.sequence: 0.000 (sage.interfaces.singular)\n\nLooking, I see that a *horrendously* time consuming function called \n\"generate_docstring_dictionary()\" is called whenever the file sage/interfaces/singular.py is imported.  This is completely pointless, and shouldn't happen until somebody actually tries to use the singular interface.  A few lines of code would immediately reduce the startup time of Sage by nearly a half second there. \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7351\n\n",
     "created_at": "2009-10-29T22:56:33Z",
     "labels": [
         "component: interfaces"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 CC:  @robertwb
 
-
 ```
 I'm using sage -startuptime.
 
@@ -32,7 +31,6 @@ Looking, I see that a *horrendously* time consuming function called
 "generate_docstring_dictionary()" is called whenever the file sage/interfaces/singular.py is imported.  This is completely pointless, and shouldn't happen until somebody actually tries to use the singular interface.  A few lines of code would immediately reduce the startup time of Sage by nearly a half second there. 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7351
 

@@ -3,7 +3,7 @@
 archive/issues_005362.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: transpose\n\nA copy is missing:\n\n```\nsage: m=matrix(RDF,2,2,range(4))\nsage: m2=m.transpose()\nsage: m2\n\n[0.0 2.0]\n[1.0 3.0]\nsage: m[0,0]=1\nsage: m2\n\n[1.0 2.0]\n[1.0 3.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5362\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: transpose\n\nA copy is missing:\n\n```\nsage: m=matrix(RDF,2,2,range(4))\nsage: m2=m.transpose()\nsage: m2\n\n[0.0 2.0]\n[1.0 3.0]\nsage: m[0,0]=1\nsage: m2\n\n[1.0 2.0]\n[1.0 3.0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5362\n\n",
     "created_at": "2009-02-24T22:27:41Z",
     "labels": [
         "component: linear algebra",
@@ -36,7 +36,6 @@ sage: m2
 [1.0 2.0]
 [1.0 3.0]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5362
 

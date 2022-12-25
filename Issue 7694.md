@@ -3,7 +3,7 @@
 archive/issues_007694.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nChange the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:\n\n\n```\nsage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nx...\nFailed to unpickle 0 objects.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7694\n\n",
+    "body": "Assignee: tbd\n\nChange the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:\n\n```\nsage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nx...\nFailed to unpickle 0 objects.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7694\n\n",
     "created_at": "2009-12-15T23:47:06Z",
     "labels": [
         "component: doctest coverage",
@@ -21,13 +21,11 @@ Assignee: tbd
 
 Change the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:
 
-
 ```
 sage: print "x"; sage.structure.sage_object.unpickle_all(std)
 x...
 Failed to unpickle 0 objects.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7694
 
@@ -179,7 +177,7 @@ Resolution: fixed
 archive/issue_comments_065899.json:
 ```json
 {
-    "body": "Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:\n\n```\n\n\n    ::\n\n        sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\n        sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\n        x...\n        Successfully unpickled ... objects.\n        Failed to unpickle 0 objects.\n```\n\nCool.",
+    "body": "Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:\n\n```\n\n\n    ::\n\n        sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\n        sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\n        x...\n        Successfully unpickled ... objects.\n        Failed to unpickle 0 objects.\n```\nCool.",
     "created_at": "2010-06-03T04:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_comment",
@@ -201,7 +199,6 @@ Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:
         Successfully unpickled ... objects.
         Failed to unpickle 0 objects.
 ```
-
 Cool.
 
 

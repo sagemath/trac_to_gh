@@ -3,7 +3,7 @@
 archive/issues_009130.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @benjaminfjones\n\nKeywords: special function, pynac\n\nAlthough Maxima has the beta function, Sage doesn't:\n\n```\nsage: a, b, c = var('a b c') \nsage: assume(a > 0) \nsage: assume(b > 0) \nsage: x = var('x') \nsage: beta_dist = x**(a-1) * (1 - x)**(b-1) \nsage: c = integral(beta_dist, x, 0, 1) \nsage: c\nbeta(a, b)\nsage: c(a=.5,b=.5)\nbeta(0.500000000000000, 0.500000000000000)\nsage: c(a=.5,b=.5).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/karl-dietercrisman/<ipython console> in <module>()\n\n/Users/karl-dietercrisman/Desktop/sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17042)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n\nThis *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9130\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @benjaminfjones\n\nKeywords: special function, pynac\n\nAlthough Maxima has the beta function, Sage doesn't:\n\n```\nsage: a, b, c = var('a b c') \nsage: assume(a > 0) \nsage: assume(b > 0) \nsage: x = var('x') \nsage: beta_dist = x**(a-1) * (1 - x)**(b-1) \nsage: c = integral(beta_dist, x, 0, 1) \nsage: c\nbeta(a, b)\nsage: c(a=.5,b=.5)\nbeta(0.500000000000000, 0.500000000000000)\nsage: c(a=.5,b=.5).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/karl-dietercrisman/<ipython console> in <module>()\n\n/Users/karl-dietercrisman/Desktop/sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17042)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\nThis *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9130\n\n",
     "created_at": "2010-06-03T15:06:34Z",
     "labels": [
         "component: symbolics"
@@ -44,7 +44,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: cannot evaluate symbolic expression numerically
 ```
-
 This *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9130
@@ -80,7 +79,7 @@ Unless someone else wants to work on this, I might have a stab at it within a co
 archive/issue_comments_084915.json:
 ```json
 {
-    "body": "I wasn't suggesting which of the several packages in Sage should be used for numerical evaluation, though mpmath did come to mind :-)\n\nI don't think that beta(0.5,0.5) would work, given that\n\n```\nsage: gamma(0.5)\n1.77245385090552\nsage: gamma(1/2)\nsqrt(pi)\n```\n\nbut beta(1/2,1/2) becoming pi should work fine once we have a symbolic wrapper (with or without Ginac):\n\n```\nsage: maxima_console()\nMaxima 5.21.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) beta(1/2,1/2);\n(%o1)                                 %pi\n```\n\nPlease do try to add this!  We definitely often get email asking for various special functions both symbolically and numerically.  Also, the more examples we have, the easier it is to finish off the rest of them by cut and paste.",
+    "body": "I wasn't suggesting which of the several packages in Sage should be used for numerical evaluation, though mpmath did come to mind :-)\n\nI don't think that beta(0.5,0.5) would work, given that\n\n```\nsage: gamma(0.5)\n1.77245385090552\nsage: gamma(1/2)\nsqrt(pi)\n```\nbut beta(1/2,1/2) becoming pi should work fine once we have a symbolic wrapper (with or without Ginac):\n\n```\nsage: maxima_console()\nMaxima 5.21.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) beta(1/2,1/2);\n(%o1)                                 %pi\n```\nPlease do try to add this!  We definitely often get email asking for various special functions both symbolically and numerically.  Also, the more examples we have, the easier it is to finish off the rest of them by cut and paste.",
     "created_at": "2010-06-03T20:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -99,7 +98,6 @@ sage: gamma(0.5)
 sage: gamma(1/2)
 sqrt(pi)
 ```
-
 but beta(1/2,1/2) becoming pi should work fine once we have a symbolic wrapper (with or without Ginac):
 
 ```
@@ -112,7 +110,6 @@ The function bug_report() provides bug reporting information.
 (%i1) beta(1/2,1/2);
 (%o1)                                 %pi
 ```
-
 Please do try to add this!  We definitely often get email asking for various special functions both symbolically and numerically.  Also, the more examples we have, the easier it is to finish off the rest of them by cut and paste.
 
 
@@ -144,7 +141,7 @@ Fredrik, it would be great if you can do this. I'd be happy to answer questions 
 archive/issue_comments_084917.json:
 ```json
 {
-    "body": "Replying to [comment:3 burcin]:\n> GiNaC has a beta function, so this can probably be solved simply by wrapping that. See #8864 for an example.\n> \n> Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.\n> \n\nI think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?",
+    "body": "Replying to [comment:3 burcin]:\n> GiNaC has a beta function, so this can probably be solved simply by wrapping that. See #8864 for an example.\n> \n> Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.\n> \n\n\nI think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?",
     "created_at": "2010-06-03T20:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -159,6 +156,7 @@ Replying to [comment:3 burcin]:
 > Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.
 > 
 
+
 I think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?
 
 
@@ -168,7 +166,7 @@ I think the same reason the psi and psi2 ones are commented - when those were im
 archive/issue_comments_084918.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> Replying to [comment:3 burcin]:\n> > GiNaC has a beta function, so this can probably be solved simply by wrapping that. See #8864 for an example.\n> > \n> > Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.\n> > \n> \n> I think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?\n\n`psi()` and `psi2()` were commented because at the time there was no method defined to numerically evaluate those. This is not the case for `beta()` however. Here is the `evalf` method (from line 227 of `ginac/inifcns_gamma.cpp`):\n\n\n```\n\tif (is_exactly_a<numeric>(x) && is_exactly_a<numeric>(y)) {\n\t\ttry {\n\t\t\treturn exp(lgamma(ex_to<numeric>(x))+lgamma(ex_to<numeric>(y))-lgamma(ex_to<numeric>(x+y)));\n\t\t} catch (const dunno &e) { }\n\t}\n```\n\n\nWe'll find out when someone tries this out I suppose.",
+    "body": "Replying to [comment:4 kcrisman]:\n> Replying to [comment:3 burcin]:\n> > GiNaC has a beta function, so this can probably be solved simply by wrapping that. See #8864 for an example.\n> > \n> > Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.\n> > \n\n> \n> I think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?\n\n\n`psi()` and `psi2()` were commented because at the time there was no method defined to numerically evaluate those. This is not the case for `beta()` however. Here is the `evalf` method (from line 227 of `ginac/inifcns_gamma.cpp`):\n\n```\n\tif (is_exactly_a<numeric>(x) && is_exactly_a<numeric>(y)) {\n\t\ttry {\n\t\t\treturn exp(lgamma(ex_to<numeric>(x))+lgamma(ex_to<numeric>(y))-lgamma(ex_to<numeric>(x+y)));\n\t\t} catch (const dunno &e) { }\n\t}\n```\n\nWe'll find out when someone tries this out I suppose.",
     "created_at": "2010-06-03T20:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -183,11 +181,12 @@ Replying to [comment:4 kcrisman]:
 > > 
 > > Though I don't know why the `beta()` function in `sage/symbolic/expression.pyx` is commented. Maybe there is something I'm missing.
 > > 
+
 > 
 > I think the same reason the psi and psi2 ones are commented - when those were implemented, they didn't notice that they had been commented earlier.  This was probably pretty early in the conversion, maybe when William was dealing with CLN (whatever that is)?
 
-`psi()` and `psi2()` were commented because at the time there was no method defined to numerically evaluate those. This is not the case for `beta()` however. Here is the `evalf` method (from line 227 of `ginac/inifcns_gamma.cpp`):
 
+`psi()` and `psi2()` were commented because at the time there was no method defined to numerically evaluate those. This is not the case for `beta()` however. Here is the `evalf` method (from line 227 of `ginac/inifcns_gamma.cpp`):
 
 ```
 	if (is_exactly_a<numeric>(x) && is_exactly_a<numeric>(y)) {
@@ -196,7 +195,6 @@ Replying to [comment:4 kcrisman]:
 		} catch (const dunno &e) { }
 	}
 ```
-
 
 We'll find out when someone tries this out I suppose.
 
@@ -243,7 +241,7 @@ Attachment [trac_9130_beta_function.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_084921.json:
 ```json
 {
-    "body": "Added ginac wrapper for beta function.\nThere is a problem when one argument is a float.\n\n--Karen\n\n\n\n```\nsage: beta(3,2.0)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n",
+    "body": "Added ginac wrapper for beta function.\nThere is a problem when one argument is a float.\n\n--Karen\n\n\n```\nsage: beta(3,2.0)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```",
     "created_at": "2010-12-10T06:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -256,7 +254,6 @@ Added ginac wrapper for beta function.
 There is a problem when one argument is a float.
 
 --Karen
-
 
 
 ```
@@ -273,7 +270,6 @@ Sage will now terminate (sorry).
 ------------------------------------------------------------
 
 ```
-
 
 
 
@@ -355,7 +351,7 @@ Changing keywords from "special function, pynac, beginner" to "special function,
 archive/issue_comments_084925.json:
 ```json
 {
-    "body": "Hi Karen,\n\nsorry for taking so long to look at this. It seems that I forgot to check for a NULL pointer in `py_float()`. attachment:trac_9130-py_float_segfault.patch fixes the segfault.\n\n\n```\nsage: from sage.functions.other import beta\nsage: beta(3,2.0)\n0.0833333333333333\n```\n\n\nWill you have time to finish the patch?\n\nYou need to add an import statement to `sage/functions/all.py` so `beta` is available at the command line.  The documentation also needs some care. IIRC there should be an empty line after `INPUT`, `OUTPUT` and `EXAMPLES`. The statement\n\n\n```\n        It is computed by various libraries within Sage, depending on\n        the input type.\n```\n\n\nis too vague. We should either remove it or explain how GiNaC evaluates this (see `beta_eval()` and `beta_evalf()` in [inifcns_gamma.cpp](https://bitbucket.org/burcin/pynac/src/51619d2eb90f/ginac/inifcns_gamma.cpp#cl-249)).",
+    "body": "Hi Karen,\n\nsorry for taking so long to look at this. It seems that I forgot to check for a NULL pointer in `py_float()`. attachment:trac_9130-py_float_segfault.patch fixes the segfault.\n\n```\nsage: from sage.functions.other import beta\nsage: beta(3,2.0)\n0.0833333333333333\n```\n\nWill you have time to finish the patch?\n\nYou need to add an import statement to `sage/functions/all.py` so `beta` is available at the command line.  The documentation also needs some care. IIRC there should be an empty line after `INPUT`, `OUTPUT` and `EXAMPLES`. The statement\n\n```\n        It is computed by various libraries within Sage, depending on\n        the input type.\n```\n\nis too vague. We should either remove it or explain how GiNaC evaluates this (see `beta_eval()` and `beta_evalf()` in [inifcns_gamma.cpp](https://bitbucket.org/burcin/pynac/src/51619d2eb90f/ginac/inifcns_gamma.cpp#cl-249)).",
     "created_at": "2011-05-25T18:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -368,24 +364,20 @@ Hi Karen,
 
 sorry for taking so long to look at this. It seems that I forgot to check for a NULL pointer in `py_float()`. attachment:trac_9130-py_float_segfault.patch fixes the segfault.
 
-
 ```
 sage: from sage.functions.other import beta
 sage: beta(3,2.0)
 0.0833333333333333
 ```
 
-
 Will you have time to finish the patch?
 
 You need to add an import statement to `sage/functions/all.py` so `beta` is available at the command line.  The documentation also needs some care. IIRC there should be an empty line after `INPUT`, `OUTPUT` and `EXAMPLES`. The statement
-
 
 ```
         It is computed by various libraries within Sage, depending on
         the input type.
 ```
-
 
 is too vague. We should either remove it or explain how GiNaC evaluates this (see `beta_eval()` and `beta_evalf()` in [inifcns_gamma.cpp](https://bitbucket.org/burcin/pynac/src/51619d2eb90f/ginac/inifcns_gamma.cpp#cl-249)).
 
@@ -796,7 +788,7 @@ I added #12303 as a separate ticket to leave beta symbolic for exact complex inp
 archive/issue_comments_084945.json:
 ```json
 {
-    "body": "The patch looks great, I have a couple of minor comments. We can switch this to positive review when these are fixed:\n\n* This paragraph in the docstring is not needed any more:\n\n\n```\nGiNaC is used to compute `B(p,q)`.  However, complex inputs \nare not yet handled in general.  When GiNaC raises an error on \nsuch inputs, we raise a NotImplementedError. \n```\n\n Perhaps the first sentence can be merged with the paragraph following that.\n* The commit message for the combined patch is not very helpful. I'd like my patch to stay separate if possible.",
+    "body": "The patch looks great, I have a couple of minor comments. We can switch this to positive review when these are fixed:\n\n* This paragraph in the docstring is not needed any more:\n\n```\nGiNaC is used to compute `B(p,q)`.  However, complex inputs \nare not yet handled in general.  When GiNaC raises an error on \nsuch inputs, we raise a NotImplementedError. \n```\n Perhaps the first sentence can be merged with the paragraph following that.\n* The commit message for the combined patch is not very helpful. I'd like my patch to stay separate if possible.",
     "created_at": "2012-01-12T22:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -809,13 +801,11 @@ The patch looks great, I have a couple of minor comments. We can switch this to 
 
 * This paragraph in the docstring is not needed any more:
 
-
 ```
 GiNaC is used to compute `B(p,q)`.  However, complex inputs 
 are not yet handled in general.  When GiNaC raises an error on 
 such inputs, we raise a NotImplementedError. 
 ```
-
  Perhaps the first sentence can be merged with the paragraph following that.
 * The commit message for the combined patch is not very helpful. I'd like my patch to stay separate if possible.
 
@@ -974,7 +964,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_084954.json:
 ```json
 {
-    "body": "There are problems building the documentation:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta4/local/lib/python2.7/site-packages/sage/functions/other.py:docstring of sage.functions.other.psi:6: WARNING: Inline literal start-string without end-string.\n```\n",
+    "body": "There are problems building the documentation:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta4/local/lib/python2.7/site-packages/sage/functions/other.py:docstring of sage.functions.other.psi:6: WARNING: Inline literal start-string without end-string.\n```",
     "created_at": "2012-02-09T12:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -991,13 +981,12 @@ There are problems building the documentation:
 
 
 
-
 ---
 
 archive/issue_comments_084955.json:
 ```json
 {
-    "body": "This is because of the addition to the reference manual of stuff that wasn't up to snuff, though almost.  There was an extra colon as well, and a few other similar things.\n\nI've fixed these things, and actually tried adding loads(dumpg()) tests as well, but it doesn't matter, because it's not testing right.  It's not the computer, since other files are passing fine.  It seems to be the symbolic version of beta.\n\nGetting rid of all stuff with `x` and keeping\n\n```\n            sage: beta(1,2.0+I)\n            0.400000000000000 - 0.200000000000000*I\n```\n\ncauses\n\n```\n\n$ ../../sage -t sage/functions/other.py \nsage -t  \"devel/sage-main/sage/functions/other.py\"          \nThe doctested process was killed by signal 11\n\t [6.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/functions/other.py\" # Killed/crashed\nTotal time for all tests: 6.9 seconds\n```\n\nbut removing that as well yields passing tests.\n\nThis seems unexpected to me.",
+    "body": "This is because of the addition to the reference manual of stuff that wasn't up to snuff, though almost.  There was an extra colon as well, and a few other similar things.\n\nI've fixed these things, and actually tried adding loads(dumpg()) tests as well, but it doesn't matter, because it's not testing right.  It's not the computer, since other files are passing fine.  It seems to be the symbolic version of beta.\n\nGetting rid of all stuff with `x` and keeping\n\n```\n            sage: beta(1,2.0+I)\n            0.400000000000000 - 0.200000000000000*I\n```\ncauses\n\n```\n\n$ ../../sage -t sage/functions/other.py \nsage -t  \"devel/sage-main/sage/functions/other.py\"          \nThe doctested process was killed by signal 11\n\t [6.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/functions/other.py\" # Killed/crashed\nTotal time for all tests: 6.9 seconds\n```\nbut removing that as well yields passing tests.\n\nThis seems unexpected to me.",
     "created_at": "2012-02-10T03:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1016,7 +1005,6 @@ Getting rid of all stuff with `x` and keeping
             sage: beta(1,2.0+I)
             0.400000000000000 - 0.200000000000000*I
 ```
-
 causes
 
 ```
@@ -1033,7 +1021,6 @@ The following tests failed:
 	sage -t  "devel/sage-main/sage/functions/other.py" # Killed/crashed
 Total time for all tests: 6.9 seconds
 ```
-
 but removing that as well yields passing tests.
 
 This seems unexpected to me.
@@ -1063,7 +1050,7 @@ Sorry, ignore all that.  I didn't see Burcin's other patch because I read the co
 archive/issue_comments_084957.json:
 ```json
 {
-    "body": "This requires **only** that someone do \n\n```\n./sage -docbuild reference html\n```\n\nand look at \n\n```\ndevel/sage-main/doc/output/html/en/reference/other.html\n```\n\nas well as run tests.",
+    "body": "This requires **only** that someone do \n\n```\n./sage -docbuild reference html\n```\nand look at \n\n```\ndevel/sage-main/doc/output/html/en/reference/other.html\n```\nas well as run tests.",
     "created_at": "2012-02-10T03:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1077,13 +1064,11 @@ This requires **only** that someone do
 ```
 ./sage -docbuild reference html
 ```
-
 and look at 
 
 ```
 devel/sage-main/doc/output/html/en/reference/other.html
 ```
-
 as well as run tests.
 
 
@@ -1323,7 +1308,7 @@ Would it make sense to open a new ticket for changes needed to `random_tests.py`
 archive/issue_comments_084970.json:
 ```json
 {
-    "body": "Replying to [comment:37 benjaminfjones]:\n> Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. \n\nI think that would be making it more complicated for yourself and for reviewers.  It also means that, if just one of those tickets has a problem, none of them can be merged.  But I'm not against your suggestion.",
+    "body": "Replying to [comment:37 benjaminfjones]:\n> Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. \n\n\nI think that would be making it more complicated for yourself and for reviewers.  It also means that, if just one of those tickets has a problem, none of them can be merged.  But I'm not against your suggestion.",
     "created_at": "2012-02-13T08:34:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1335,6 +1320,7 @@ archive/issue_comments_084970.json:
 Replying to [comment:37 benjaminfjones]:
 > Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. 
 
+
 I think that would be making it more complicated for yourself and for reviewers.  It also means that, if just one of those tickets has a problem, none of them can be merged.  But I'm not against your suggestion.
 
 
@@ -1344,7 +1330,7 @@ I think that would be making it more complicated for yourself and for reviewers.
 archive/issue_comments_084971.json:
 ```json
 {
-    "body": "Replying to [comment:37 benjaminfjones]:\n> I rebased the patches against #4498. This meant moving the changes to `sage/symbolic/random_tests.py` out of [attachment:trac_9130_beta_function.patch] and into a new patch [attachment:trac_9130-random-tests.patch] that reflects the differences in the random tests after #4498 was applied and `beta` was added.\n\nThank you for taking care of this.\n\n> The tests in `random_test.py` are getting annoying. Now #9130 must depend on #4498 and in turn my #11888 must depend on #9130, etc. To finish #11143, I need to rebase the changes to `random_tests.py` to all 3 of these other symbolics patches.\n> \n> Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. \n\nAt this stage I'd be happy to mark that test in `random_tests.py` with a `#random` tag so the doctesting framework ignores the output. If you open a new ticket for this and provide a patch, I promise a quick positive review. :)",
+    "body": "Replying to [comment:37 benjaminfjones]:\n> I rebased the patches against #4498. This meant moving the changes to `sage/symbolic/random_tests.py` out of [attachment:trac_9130_beta_function.patch] and into a new patch [attachment:trac_9130-random-tests.patch] that reflects the differences in the random tests after #4498 was applied and `beta` was added.\n\n\nThank you for taking care of this.\n\n> The tests in `random_test.py` are getting annoying. Now #9130 must depend on #4498 and in turn my #11888 must depend on #9130, etc. To finish #11143, I need to rebase the changes to `random_tests.py` to all 3 of these other symbolics patches.\n> \n> Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. \n\n\nAt this stage I'd be happy to mark that test in `random_tests.py` with a `#random` tag so the doctesting framework ignores the output. If you open a new ticket for this and provide a patch, I promise a quick positive review. :)",
     "created_at": "2012-02-13T09:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9130",
     "type": "issue_comment",
@@ -1356,11 +1342,13 @@ archive/issue_comments_084971.json:
 Replying to [comment:37 benjaminfjones]:
 > I rebased the patches against #4498. This meant moving the changes to `sage/symbolic/random_tests.py` out of [attachment:trac_9130_beta_function.patch] and into a new patch [attachment:trac_9130-random-tests.patch] that reflects the differences in the random tests after #4498 was applied and `beta` was added.
 
+
 Thank you for taking care of this.
 
 > The tests in `random_test.py` are getting annoying. Now #9130 must depend on #4498 and in turn my #11888 must depend on #9130, etc. To finish #11143, I need to rebase the changes to `random_tests.py` to all 3 of these other symbolics patches.
 > 
 > Would it make sense to open a new ticket for changes needed to `random_tests.py` after all the new symbolic functions are added that will go into sage-5.0? This new ticket would depend on all the other tickets adding new functions. This way we wouldn't have to fix the random tests like this in every ticket that adds a new function, just *once* per release. 
+
 
 At this stage I'd be happy to mark that test in `random_tests.py` with a `#random` tag so the doctesting framework ignores the output. If you open a new ticket for this and provide a patch, I promise a quick positive review. :)
 

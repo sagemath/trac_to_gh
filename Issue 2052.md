@@ -3,7 +3,7 @@
 archive/issues_002052.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: polybori\n\nTry these:\n\n```\nsage: P.<x0, x1, x2, x3> = BooleanPolynomialRing(4)\nsage: I = P.ideal(x0*x1*x2*x3 + x0*x1*x3 + x0*x1 + x0*x2 + x0)\nsage: I\nIdeal (x0*x1*x2*x3 + x0*x1*x3 + x0*x1 + x0*x2 + x0) of Boolean PolynomialRing in x0, x1, x2, x3\n\nsage: I.groebner_basis(draw_matrices=True)\n*BOOM*\nsage: I.groebner_basis(invert=True)\n*BOOM*\nsage: I.groebner_basis(noro=True)\n*BOOM*\nsage: I.groebner_basis(preprocess_only=True)\n*BOOM*\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2052\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: polybori\n\nTry these:\n\n```\nsage: P.<x0, x1, x2, x3> = BooleanPolynomialRing(4)\nsage: I = P.ideal(x0*x1*x2*x3 + x0*x1*x3 + x0*x1 + x0*x2 + x0)\nsage: I\nIdeal (x0*x1*x2*x3 + x0*x1*x3 + x0*x1 + x0*x2 + x0) of Boolean PolynomialRing in x0, x1, x2, x3\n\nsage: I.groebner_basis(draw_matrices=True)\n*BOOM*\nsage: I.groebner_basis(invert=True)\n*BOOM*\nsage: I.groebner_basis(noro=True)\n*BOOM*\nsage: I.groebner_basis(preprocess_only=True)\n*BOOM*\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2052\n\n",
     "created_at": "2008-02-05T11:56:20Z",
     "labels": [
         "component: commutative algebra",
@@ -37,7 +37,6 @@ sage: I.groebner_basis(noro=True)
 sage: I.groebner_basis(preprocess_only=True)
 *BOOM*
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2052
 

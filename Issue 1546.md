@@ -3,7 +3,7 @@
 archive/issues_001546.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTo quote Bill:\n\n```\nI also found some critical bugs in FLINT 1.0.2. In a few minutes I'll \nupdate the website with the patched version (1.0.3).\n\nBill.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1546\n\n",
+    "body": "Assignee: mabshoff\n\nTo quote Bill:\n\n```\nI also found some critical bugs in FLINT 1.0.2. In a few minutes I'll \nupdate the website with the patched version (1.0.3).\n\nBill.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1546\n\n",
     "created_at": "2007-12-17T04:06:47Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ update the website with the patched version (1.0.3).
 
 Bill.
 ```
-
 
 Cheers,
 

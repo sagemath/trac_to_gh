@@ -3,7 +3,7 @@
 archive/issues_002612.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nSince python does well with a leading sign (+ or -)\n\n```\nsage: int('+1')\n1\nsage: int('-1')\n-1\n```\n\nthe sage Integers should do the same.\n\n```\nsage: Integer('-1')\n-1\nsage: Integer('+1')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mrk/<ipython console> in <module>()\n\n/home/mrk/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=+1) to an integer\n```\n\nSo the case of a leading \"+\" must be fixed\n\nIssue created by migration from https://trac.sagemath.org/ticket/2612\n\n",
+    "body": "Assignee: somebody\n\nSince python does well with a leading sign (+ or -)\n\n```\nsage: int('+1')\n1\nsage: int('-1')\n-1\n```\nthe sage Integers should do the same.\n\n```\nsage: Integer('-1')\n-1\nsage: Integer('+1')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mrk/<ipython console> in <module>()\n\n/home/mrk/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=+1) to an integer\n```\nSo the case of a leading \"+\" must be fixed\n\nIssue created by migration from https://trac.sagemath.org/ticket/2612\n\n",
     "created_at": "2008-03-20T12:40:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,7 +26,6 @@ sage: int('+1')
 sage: int('-1')
 -1
 ```
-
 the sage Integers should do the same.
 
 ```
@@ -42,7 +41,6 @@ sage: Integer('+1')
 
 <type 'exceptions.TypeError'>: unable to convert x (=+1) to an integer
 ```
-
 So the case of a leading "+" must be fixed
 
 Issue created by migration from https://trac.sagemath.org/ticket/2612

@@ -3,7 +3,7 @@
 archive/issues_009266.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThe following illustrates the bug. It should be easy to fix.\n\n\n```\nsage: K.<s> = NumberField(x^2-5)\nsage: w = (1+s)/2\nsage: E = EllipticCurve(K,[2,w])\nsage: E.global_integral_model()\n...sage/schemes/elliptic_curves/ell_number_field.pyc in global_integral_model(self)\n    377                    ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n    378         for z in ai:\n--> 379             assert z.denominator() == 1, \"bug in global_integral_model: %s\" % ai\n    380         return EllipticCurve(list(ai))\n    381\n\nTypeError: not all arguments converted during string formatting\n```\n\n\nSo there are two problems. One that the string is not correctly formatted, the other that it is raised. The latter, I believe, is just because the wrong thing is tested:\n\n\n```\nsage: w.denominator()\n2\nsage: w.is_integral()\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9266\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe following illustrates the bug. It should be easy to fix.\n\n```\nsage: K.<s> = NumberField(x^2-5)\nsage: w = (1+s)/2\nsage: E = EllipticCurve(K,[2,w])\nsage: E.global_integral_model()\n...sage/schemes/elliptic_curves/ell_number_field.pyc in global_integral_model(self)\n    377                    ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n    378         for z in ai:\n--> 379             assert z.denominator() == 1, \"bug in global_integral_model: %s\" % ai\n    380         return EllipticCurve(list(ai))\n    381\n\nTypeError: not all arguments converted during string formatting\n```\n\nSo there are two problems. One that the string is not correctly formatted, the other that it is raised. The latter, I believe, is just because the wrong thing is tested:\n\n```\nsage: w.denominator()\n2\nsage: w.is_integral()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9266\n\n",
     "created_at": "2010-06-18T13:08:05Z",
     "labels": [
         "component: elliptic curves",
@@ -21,7 +21,6 @@ Assignee: @JohnCremona
 
 The following illustrates the bug. It should be easy to fix.
 
-
 ```
 sage: K.<s> = NumberField(x^2-5)
 sage: w = (1+s)/2
@@ -37,9 +36,7 @@ sage: E.global_integral_model()
 TypeError: not all arguments converted during string formatting
 ```
 
-
 So there are two problems. One that the string is not correctly formatted, the other that it is raised. The latter, I believe, is just because the wrong thing is tested:
-
 
 ```
 sage: w.denominator()
@@ -47,7 +44,6 @@ sage: w.denominator()
 sage: w.is_integral()
 True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9266
@@ -61,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9266
 archive/issue_comments_087135.json:
 ```json
 {
-    "body": "The test would be better written as\n\n```\nif not all([z.denominator()==1 for z in ai]):\n    raise error\n```\n\n\nThe problem with the string is that it worked when ai was a list, but now it's a tuple.\n\nI don't understand the last part -- what is w here?",
+    "body": "The test would be better written as\n\n```\nif not all([z.denominator()==1 for z in ai]):\n    raise error\n```\n\nThe problem with the string is that it worked when ai was a list, but now it's a tuple.\n\nI don't understand the last part -- what is w here?",
     "created_at": "2010-06-18T15:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
@@ -76,7 +72,6 @@ The test would be better written as
 if not all([z.denominator()==1 for z in ai]):
     raise error
 ```
-
 
 The problem with the string is that it worked when ai was a list, but now it's a tuple.
 
@@ -107,7 +102,7 @@ archive/issue_comments_087136.json:
 archive/issue_comments_087137.json:
 ```json
 {
-    "body": "Replying to [comment:2 wuthrich]:\n> *w* is the algebraic integer (1+sqrt(5))/2 and it is the coefficient of this integral Weierstrass equation. So this is a global_integral_model. We should not check if the denominator in some basis is 1, but rather if the coefficients are integers.\n\nOK then so we should do \n\n```\nif not all([z.is_integral() for z in ai]):\n```\n\n\nI'm too busy writing lectures for SD22 to make the patch myself!",
+    "body": "Replying to [comment:2 wuthrich]:\n> *w* is the algebraic integer (1+sqrt(5))/2 and it is the coefficient of this integral Weierstrass equation. So this is a global_integral_model. We should not check if the denominator in some basis is 1, but rather if the coefficients are integers.\n\n\nOK then so we should do \n\n```\nif not all([z.is_integral() for z in ai]):\n```\n\nI'm too busy writing lectures for SD22 to make the patch myself!",
     "created_at": "2010-06-18T16:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
@@ -119,12 +114,12 @@ archive/issue_comments_087137.json:
 Replying to [comment:2 wuthrich]:
 > *w* is the algebraic integer (1+sqrt(5))/2 and it is the coefficient of this integral Weierstrass equation. So this is a global_integral_model. We should not check if the denominator in some basis is 1, but rather if the coefficients are integers.
 
+
 OK then so we should do 
 
 ```
 if not all([z.is_integral() for z in ai]):
 ```
-
 
 I'm too busy writing lectures for SD22 to make the patch myself!
 

@@ -85,7 +85,7 @@ Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_076681.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n\nHi robert, \n\nThe problem is not only for homset ! See #8119\n\n```\nsage: h = Hom(ZZ, QQ)\nsage: hash(h)\n-8106914618552251573\nsage: h.rename(\"toto\")\nsage: hash(h)\n2314052222105390764\n```\n\nI don't know exactly what would be a generic solution of this problem. There is one if the parent inherits from `UniqueRepresentation` (see ##8120) instead of using one of the at least three other mechanisms I've seen troughout sage library. Not that as I said in that ticket, I'm not sure how robust my solution is I've a proposal for a better option. If you have any comment, please do not hesitate.\n\nCheers,\n\nFlorent",
+    "body": "Replying to [comment:2 robertwb]:\n\nHi robert, \n\nThe problem is not only for homset ! See #8119\n\n```\nsage: h = Hom(ZZ, QQ)\nsage: hash(h)\n-8106914618552251573\nsage: h.rename(\"toto\")\nsage: hash(h)\n2314052222105390764\n```\nI don't know exactly what would be a generic solution of this problem. There is one if the parent inherits from `UniqueRepresentation` (see ##8120) instead of using one of the at least three other mechanisms I've seen troughout sage library. Not that as I said in that ticket, I'm not sure how robust my solution is I've a proposal for a better option. If you have any comment, please do not hesitate.\n\nCheers,\n\nFlorent",
     "created_at": "2010-03-12T08:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ sage: h.rename("toto")
 sage: hash(h)
 2314052222105390764
 ```
-
 I don't know exactly what would be a generic solution of this problem. There is one if the parent inherits from `UniqueRepresentation` (see ##8120) instead of using one of the at least three other mechanisms I've seen troughout sage library. Not that as I said in that ticket, I'm not sure how robust my solution is I've a proposal for a better option. If you have any comment, please do not hesitate.
 
 Cheers,
@@ -140,7 +139,7 @@ My original concern was that hashing the parents I was using was way to expensiv
 archive/issue_comments_076683.json:
 ```json
 {
-    "body": "I am not competent to comment on the hashing issues.  But I applied the patch to 4.3.4.alpha1 and had the following test failures (I only tested sage/schemes/elliptic_curves, and without -long):\n\n```\nsage -t  sage/schemes/elliptic_curves/heegner.py\n**********************************************************************\nFile \"/storage/jec/sage-4.3.4.alpha1/devel/sage-8505/sage/schemes/elliptic_curves/heegner.py\", line 2588:\n    sage: hash(y)\nExpected:\n    -5236815264926108755       \nGot:\n    -756867903203770682\n**********************************************************************\nFile \"/storage/jec/sage-4.3.4.alpha1/devel/sage-8505/sage/schemes/elliptic_curves/heegner.py\", line 2893:\n    sage: hash(EllipticCurve('389a').heegner_point(-7,5))\nExpected:\n    -5236815264926108755             \nGot:\n    -756867903203770682\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_107\n   1 of   3 in __main__.example_121\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jec/.sage//tmp/.doctest_heegner.py\n\t [83.6 s]\n```\n",
+    "body": "I am not competent to comment on the hashing issues.  But I applied the patch to 4.3.4.alpha1 and had the following test failures (I only tested sage/schemes/elliptic_curves, and without -long):\n\n```\nsage -t  sage/schemes/elliptic_curves/heegner.py\n**********************************************************************\nFile \"/storage/jec/sage-4.3.4.alpha1/devel/sage-8505/sage/schemes/elliptic_curves/heegner.py\", line 2588:\n    sage: hash(y)\nExpected:\n    -5236815264926108755       \nGot:\n    -756867903203770682\n**********************************************************************\nFile \"/storage/jec/sage-4.3.4.alpha1/devel/sage-8505/sage/schemes/elliptic_curves/heegner.py\", line 2893:\n    sage: hash(EllipticCurve('389a').heegner_point(-7,5))\nExpected:\n    -5236815264926108755             \nGot:\n    -756867903203770682\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_107\n   1 of   3 in __main__.example_121\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jec/.sage//tmp/.doctest_heegner.py\n\t [83.6 s]\n```",
     "created_at": "2010-03-13T15:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
@@ -175,7 +174,6 @@ Got:
 For whitespace errors, see the file /home/jec/.sage//tmp/.doctest_heegner.py
 	 [83.6 s]
 ```
-
 
 
 
@@ -292,7 +290,7 @@ New patch applies to 4.3.5 OK.  Now testing on both 32- and 64-bit...
 archive/issue_comments_076690.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> New patch applies to 4.3.5 OK.  Now testing on both 32- and 64-bit...\n\nAll tests pass on both -- positive review!",
+    "body": "Replying to [comment:8 cremona]:\n> New patch applies to 4.3.5 OK.  Now testing on both 32- and 64-bit...\n\n\nAll tests pass on both -- positive review!",
     "created_at": "2010-04-02T19:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
@@ -303,6 +301,7 @@ archive/issue_comments_076690.json:
 
 Replying to [comment:8 cremona]:
 > New patch applies to 4.3.5 OK.  Now testing on both 32- and 64-bit...
+
 
 All tests pass on both -- positive review!
 

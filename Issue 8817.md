@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8817
 archive/issue_comments_080793.json:
 ```json
 {
-    "body": "eah, this is my fault:\n\n```\n+        This example saves a plot to the standard R output, usually \n+        a filename like ``Rplot001.png`` - from the command line, in \n+        the current directory, and in the cell directory in the notebook::\n+\n+            sage: r.plot(\"1:10\")\n+            null device \n+                      1 \n+\n```\n\nI actually put this one in to show users how to actually get a file in a directory that they have access to, as opposed to a temp directory, but forgot we can't do that.  Is it legitimate to put #not tested with this doctest as a fix, since it is important to have the example there?",
+    "body": "eah, this is my fault:\n\n```\n+        This example saves a plot to the standard R output, usually \n+        a filename like ``Rplot001.png`` - from the command line, in \n+        the current directory, and in the cell directory in the notebook::\n+\n+            sage: r.plot(\"1:10\")\n+            null device \n+                      1 \n+\n```\nI actually put this one in to show users how to actually get a file in a directory that they have access to, as opposed to a temp directory, but forgot we can't do that.  Is it legitimate to put #not tested with this doctest as a fix, since it is important to have the example there?",
     "created_at": "2010-04-29T16:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ eah, this is my fault:
 +                      1 
 +
 ```
-
 I actually put this one in to show users how to actually get a file in a directory that they have access to, as opposed to a temp directory, but forgot we can't do that.  Is it legitimate to put #not tested with this doctest as a fix, since it is important to have the example there?
 
 
@@ -99,7 +98,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080796.json:
 ```json
 {
-    "body": "> but forgot we can't do that.  Is it legitimate to put #not tested with\n> this doctest as a fix, since it is important to have the example\n> there?\nFrom was:\n\n```\nAnother option:\n\n1. make sufpre the png file you are about to write doesn't exist in the current directory, then write it.\n2. then delete it!\n\n\n# not tested should be avoided at all costs.\n```\n",
+    "body": "> but forgot we can't do that.  Is it legitimate to put #not tested with\n> this doctest as a fix, since it is important to have the example\n> there?\n\nFrom was:\n\n```\nAnother option:\n\n1. make sufpre the png file you are about to write doesn't exist in the current directory, then write it.\n2. then delete it!\n\n\n# not tested should be avoided at all costs.\n```",
     "created_at": "2010-04-30T14:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
@@ -111,6 +110,7 @@ archive/issue_comments_080796.json:
 > but forgot we can't do that.  Is it legitimate to put #not tested with
 > this doctest as a fix, since it is important to have the example
 > there?
+
 From was:
 
 ```
@@ -122,7 +122,6 @@ Another option:
 
 # not tested should be avoided at all costs.
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003649.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom https://groups.google.com/group/sage-support/browse_thread/thread/1fc876f97a69eb5e\n\n```\nWhen you sign up for a Sage Notebook account, Sage sends an e-mail to\nthe address you provide giving you a link to complete the\nregistration.\n\nFirst of all, the \"Sign up for a Sage Notebook account\" says that the\ne-mail is needed if you forget your password, but makes no mention of\nthe fact that the e-mail will be needed immediately to complete the\nregistration process. If Sage asks for a user's e-mail address, it\nshould correctly indicate what that e-mail address is for. Otherwise,\ne-mail from the Sage notebook is technically spam.\n\nSecondly, I am running the Sage notebook on a machine which my\ncollege's support staff will not allow to run a mail server (all of\nthe mail on campus needs to be handled by their own antiquated\nservers, which has less storage space than my iPod to store e-mail for\n2000 users). Is there any way to turn off the sending of e-mail from\nthe Sage Notebook?\n\n-- Greg\n\n-- \nGregory D. Landweber\nAssistant Professor of Mathematics\nBard College \n```\n\nRobert Bradshaw replied:\n\n```\nThanks for the clarification. This can easily be resolved by  \ncommenting out line ~1716 of sage/server/notebook/twist.py. This  \nshould probably be made optional and configurable somewhere.\n\n- Robert \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3649\n\n",
+    "body": "Assignee: boothby\n\nFrom https://groups.google.com/group/sage-support/browse_thread/thread/1fc876f97a69eb5e\n\n```\nWhen you sign up for a Sage Notebook account, Sage sends an e-mail to\nthe address you provide giving you a link to complete the\nregistration.\n\nFirst of all, the \"Sign up for a Sage Notebook account\" says that the\ne-mail is needed if you forget your password, but makes no mention of\nthe fact that the e-mail will be needed immediately to complete the\nregistration process. If Sage asks for a user's e-mail address, it\nshould correctly indicate what that e-mail address is for. Otherwise,\ne-mail from the Sage notebook is technically spam.\n\nSecondly, I am running the Sage notebook on a machine which my\ncollege's support staff will not allow to run a mail server (all of\nthe mail on campus needs to be handled by their own antiquated\nservers, which has less storage space than my iPod to store e-mail for\n2000 users). Is there any way to turn off the sending of e-mail from\nthe Sage Notebook?\n\n-- Greg\n\n-- \nGregory D. Landweber\nAssistant Professor of Mathematics\nBard College \n```\nRobert Bradshaw replied:\n\n```\nThanks for the clarification. This can easily be resolved by  \ncommenting out line ~1716 of sage/server/notebook/twist.py. This  \nshould probably be made optional and configurable somewhere.\n\n- Robert \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3649\n\n",
     "created_at": "2008-07-12T18:28:44Z",
     "labels": [
         "component: notebook",
@@ -46,7 +46,6 @@ Gregory D. Landweber
 Assistant Professor of Mathematics
 Bard College 
 ```
-
 Robert Bradshaw replied:
 
 ```
@@ -56,7 +55,6 @@ should probably be made optional and configurable somewhere.
 
 - Robert 
 ```
-
 
 Cheers,
 
@@ -109,7 +107,7 @@ Changing status from new to assigned.
 archive/issue_comments_025754.json:
 ```json
 {
-    "body": "Lines to copy out are   \n\n\n```\n1984            # Send a confirmation message to the user.\n1985            try:\n1986                send_mail(self, fromaddr, destaddr, \"Sage Notebook Registration\",body)\n1987                waiting[key] = filled_in['username']\n1988            except ValueError:\n1989                pass\n```\n\n\nIf 3.0.6 comes out few days after August 1st then instead of copying this out I'll make the email inputbox optional by the admin with the default set to False.\n\n'email_system' = False",
+    "body": "Lines to copy out are   \n\n```\n1984            # Send a confirmation message to the user.\n1985            try:\n1986                send_mail(self, fromaddr, destaddr, \"Sage Notebook Registration\",body)\n1987                waiting[key] = filled_in['username']\n1988            except ValueError:\n1989                pass\n```\n\nIf 3.0.6 comes out few days after August 1st then instead of copying this out I'll make the email inputbox optional by the admin with the default set to False.\n\n'email_system' = False",
     "created_at": "2008-07-14T00:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3649",
     "type": "issue_comment",
@@ -120,7 +118,6 @@ archive/issue_comments_025754.json:
 
 Lines to copy out are   
 
-
 ```
 1984            # Send a confirmation message to the user.
 1985            try:
@@ -129,7 +126,6 @@ Lines to copy out are
 1988            except ValueError:
 1989                pass
 ```
-
 
 If 3.0.6 comes out few days after August 1st then instead of copying this out I'll make the email inputbox optional by the admin with the default set to False.
 

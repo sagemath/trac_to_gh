@@ -118,7 +118,7 @@ archive/issue_events_007677.json:
 archive/issue_comments_023829.json:
 ```json
 {
-    "body": "We have one broken doctest:\n\n```\nsage -t  devel/sage/sage/misc/sageinspect.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/sageinspect.py\", line 77:\n    sage: sage_getdoc(sage.rings.rational.make_rational).lstrip()\nExpected:\n    ''\nGot:\n    \"Make a rational number from s (a string in base 32)\\n\\n    INPUT:\\n        s -- string in base 32\\n    OUTPUT:\\n        Rational\\n        \\n    EXAMPLES:\\n        sage: (-7/15).str(32)\\n        '-7/f'\\n        sage: sage.rings.rational.make_rational('-7/f')\\n        -7/15    \\n    \"\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/.doctest_sageinspect.py\n\t [2.6 s]\nexit code: 1024\n```\n",
+    "body": "We have one broken doctest:\n\n```\nsage -t  devel/sage/sage/misc/sageinspect.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/sageinspect.py\", line 77:\n    sage: sage_getdoc(sage.rings.rational.make_rational).lstrip()\nExpected:\n    ''\nGot:\n    \"Make a rational number from s (a string in base 32)\\n\\n    INPUT:\\n        s -- string in base 32\\n    OUTPUT:\\n        Rational\\n        \\n    EXAMPLES:\\n        sage: (-7/15).str(32)\\n        '-7/f'\\n        sage: sage.rings.rational.make_rational('-7/f')\\n        -7/15    \\n    \"\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/.doctest_sageinspect.py\n\t [2.6 s]\nexit code: 1024\n```",
     "created_at": "2008-06-26T04:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3403",
     "type": "issue_comment",
@@ -146,7 +146,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.a
 	 [2.6 s]
 exit code: 1024
 ```
-
 
 
 

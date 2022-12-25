@@ -3,7 +3,7 @@
 archive/issues_005483.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:\n\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
     "created_at": "2009-03-11T07:12:13Z",
     "labels": [
         "component: misc"
@@ -21,7 +21,6 @@ CC:  @williamstein
 
 explain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:
 
-
 ```
 sage: explain_pickle(dumps(3))
 
@@ -32,7 +31,6 @@ sage: explain_pickle(dumps(3), in_current_sage=True)
 from sage.rings.integer import make_integer
 make_integer('3')
 ```
-
 
 I think the code works, but I'm not done writing documentation and doctests.
 
@@ -220,7 +218,7 @@ Carl, is it trivial?
 archive/issue_comments_042470.json:
 ```json
 {
-    "body": "This appears to be a difference in Python's repr(), possibly between Python 2.5.2 (from Sage 3.4.2 on my laptop, where I developed the patch) and Python 2.5.4 (from Sage 4.0 on sage.math).\n\nPython 2.5.2:\n\n```\n>>> v = ([],)\n>>> v[0].append(v)\n>>> repr(v)\n'([([...],)],)'\n```\n\n\nPython 2.5.4:\n\n```\n>>> v = ([],)\n>>> v[0].append(v)\n>>> repr(v)\n'([(...)],)'\n```\n\n\nI don't have time to experiment further right now, but I would suggest changing the expected output to the new version, and if it's consistent across all the test platforms then chalk it up to a change in Python and call it good.",
+    "body": "This appears to be a difference in Python's repr(), possibly between Python 2.5.2 (from Sage 3.4.2 on my laptop, where I developed the patch) and Python 2.5.4 (from Sage 4.0 on sage.math).\n\nPython 2.5.2:\n\n```\n>>> v = ([],)\n>>> v[0].append(v)\n>>> repr(v)\n'([([...],)],)'\n```\n\nPython 2.5.4:\n\n```\n>>> v = ([],)\n>>> v[0].append(v)\n>>> repr(v)\n'([(...)],)'\n```\n\nI don't have time to experiment further right now, but I would suggest changing the expected output to the new version, and if it's consistent across all the test platforms then chalk it up to a change in Python and call it good.",
     "created_at": "2009-06-02T20:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
@@ -240,7 +238,6 @@ Python 2.5.2:
 '([([...],)],)'
 ```
 
-
 Python 2.5.4:
 
 ```
@@ -249,7 +246,6 @@ Python 2.5.4:
 >>> repr(v)
 '([(...)],)'
 ```
-
 
 I don't have time to experiment further right now, but I would suggest changing the expected output to the new version, and if it's consistent across all the test platforms then chalk it up to a change in Python and call it good.
 

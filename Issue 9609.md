@@ -3,7 +3,7 @@
 archive/issues_009609.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake\n\n[Dan Drake wrote on sage-release](https://groups.google.com/group/sage-release/browse_thread/thread/b6fd67d4d4543129/9e68e7105e23ab29#9e68e7105e23ab29):\n\n```\nIn SAGE_ROOT/spkg/standard, with 4.5.alpha0, I see:\n\n$ ls | grep -v spkg\ntotal 303320\n-rw-r--r-- 1 drake drake       43 Jun 28 09:36 README.txt\n-rw-r--r-- 1 drake drake    18614 Jul 25 20:52 deps\n-rw-r--r-- 1 drake drake      163 Jun 28 09:36 libdist_filelist\n-rwxr-xr-x 1 drake drake     1571 Jun 28 09:36 newest_version*\n-rw-r--r-- 1 drake drake      977 Jun 28 09:36 notes.txt\n-rw-r--r-- 1 drake drake      383 Jun 28 09:36 numeric-24.2.txt\n\nThe files libdist_filelist, notes.txt, and numeric-24.2.txt seem like leftover notes that. Can I delete them? \n```\n\n\nThe files `libdist_filelist`, `notes.txt`, and `numeric-24.2.txt` [have been removed from Sage 4.5.2.alpha1](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692):\n\n```\nThe second unreviewed change is the deletion of several extra files in spkg/standard, as I mentioned in https://groups.google.com/group/sage-release/t/b6fd67d4d4543129. In the unlikely case that those files were important or necessary, we can just copy them from the alpha0 tarball. \n```\n\n\nThis ticket is for reviewing the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9609\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake\n\n[Dan Drake wrote on sage-release](https://groups.google.com/group/sage-release/browse_thread/thread/b6fd67d4d4543129/9e68e7105e23ab29#9e68e7105e23ab29):\n\n```\nIn SAGE_ROOT/spkg/standard, with 4.5.alpha0, I see:\n\n$ ls | grep -v spkg\ntotal 303320\n-rw-r--r-- 1 drake drake       43 Jun 28 09:36 README.txt\n-rw-r--r-- 1 drake drake    18614 Jul 25 20:52 deps\n-rw-r--r-- 1 drake drake      163 Jun 28 09:36 libdist_filelist\n-rwxr-xr-x 1 drake drake     1571 Jun 28 09:36 newest_version*\n-rw-r--r-- 1 drake drake      977 Jun 28 09:36 notes.txt\n-rw-r--r-- 1 drake drake      383 Jun 28 09:36 numeric-24.2.txt\n\nThe files libdist_filelist, notes.txt, and numeric-24.2.txt seem like leftover notes that. Can I delete them? \n```\n\nThe files `libdist_filelist`, `notes.txt`, and `numeric-24.2.txt` [have been removed from Sage 4.5.2.alpha1](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692):\n\n```\nThe second unreviewed change is the deletion of several extra files in spkg/standard, as I mentioned in https://groups.google.com/group/sage-release/t/b6fd67d4d4543129. In the unlikely case that those files were important or necessary, we can just copy them from the alpha0 tarball. \n```\n\nThis ticket is for reviewing the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9609\n\n",
     "created_at": "2010-07-27T07:28:42Z",
     "labels": [
         "component: build",
@@ -38,13 +38,11 @@ total 303320
 The files libdist_filelist, notes.txt, and numeric-24.2.txt seem like leftover notes that. Can I delete them? 
 ```
 
-
 The files `libdist_filelist`, `notes.txt`, and `numeric-24.2.txt` [have been removed from Sage 4.5.2.alpha1](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692):
 
 ```
 The second unreviewed change is the deletion of several extra files in spkg/standard, as I mentioned in https://groups.google.com/group/sage-release/t/b6fd67d4d4543129. In the unlikely case that those files were important or necessary, we can just copy them from the alpha0 tarball. 
 ```
-
 
 This ticket is for reviewing the change.
 
@@ -59,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9609
 archive/issue_comments_092926.json:
 ```json
 {
-    "body": "Possibly related:\n\n```sh\n$ cd SAGE_LOCAL/bin\n$ grep libdist *\nsage-libdist:libdist_filelist = open('%s/spkg/standard/libdist_filelist'%r\nsage-libdist:    if len(ext) > 1 and not name_without_version in libdist_filelist:\nsage-libdist:This is the readme for sage-libdist, which is the\nsage-libdist:libdist = 'sage-libdist%s'%r[i:]\nsage-libdist:if os.path.exists(libdist):\nsage-libdist:    os.system('rm -rf %s'%libdist)\nsage-libdist:os.system('mv %s %s'%(r,libdist))\nsage-libdist:os.system('tar -cvf %s.tar %s'%(libdist,libdist))\nsage-libdist:os.system('rm -rf %s'%libdist)\nsage-sage:   \"$SAGE_ROOT\"/local/bin/sage-libdist sage-$2.tar\nsage-sdist:cp -p $PKGDIR/$STD/libdist_filelist $TMP/$PKGDIR/$STD/\n```\n\nBut I can't investigate further right now.",
+    "body": "Possibly related:\n\n```sh\n$ cd SAGE_LOCAL/bin\n$ grep libdist *\nsage-libdist:libdist_filelist = open('%s/spkg/standard/libdist_filelist'%r\nsage-libdist:    if len(ext) > 1 and not name_without_version in libdist_filelist:\nsage-libdist:This is the readme for sage-libdist, which is the\nsage-libdist:libdist = 'sage-libdist%s'%r[i:]\nsage-libdist:if os.path.exists(libdist):\nsage-libdist:    os.system('rm -rf %s'%libdist)\nsage-libdist:os.system('mv %s %s'%(r,libdist))\nsage-libdist:os.system('tar -cvf %s.tar %s'%(libdist,libdist))\nsage-libdist:os.system('rm -rf %s'%libdist)\nsage-sage:   \"$SAGE_ROOT\"/local/bin/sage-libdist sage-$2.tar\nsage-sdist:cp -p $PKGDIR/$STD/libdist_filelist $TMP/$PKGDIR/$STD/\n```\nBut I can't investigate further right now.",
     "created_at": "2010-07-27T08:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
@@ -85,7 +83,6 @@ sage-libdist:os.system('rm -rf %s'%libdist)
 sage-sage:   "$SAGE_ROOT"/local/bin/sage-libdist sage-$2.tar
 sage-sdist:cp -p $PKGDIR/$STD/libdist_filelist $TMP/$PKGDIR/$STD/
 ```
-
 But I can't investigate further right now.
 
 
@@ -95,7 +92,7 @@ But I can't investigate further right now.
 archive/issue_comments_092927.json:
 ```json
 {
-    "body": "As part of the file \"sage-sage\":\n\n```\n   echo \"sage -ldist currently disabled\"\n   echo \"To work on it, remove the exit after this message in SAGE_ROOT/local/bin/sage-sage\"\n```\n\nSo sage-libdist is not currently active.  I think that we should keep the file libdist_filelist just in case.  In my opinion, the other two files can be removed, but I don't know their history.  You might ping William about this.",
+    "body": "As part of the file \"sage-sage\":\n\n```\n   echo \"sage -ldist currently disabled\"\n   echo \"To work on it, remove the exit after this message in SAGE_ROOT/local/bin/sage-sage\"\n```\nSo sage-libdist is not currently active.  I think that we should keep the file libdist_filelist just in case.  In my opinion, the other two files can be removed, but I don't know their history.  You might ping William about this.",
     "created_at": "2010-07-27T15:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
@@ -110,7 +107,6 @@ As part of the file "sage-sage":
    echo "sage -ldist currently disabled"
    echo "To work on it, remove the exit after this message in SAGE_ROOT/local/bin/sage-sage"
 ```
-
 So sage-libdist is not currently active.  I think that we should keep the file libdist_filelist just in case.  In my opinion, the other two files can be removed, but I don't know their history.  You might ping William about this.
 
 

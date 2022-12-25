@@ -48,7 +48,7 @@ archive/issue_events_001188.json:
 archive/issue_comments_002349.json:
 ```json
 {
-    "body": "Replying to [ticket:472 jmbr]:\n> To build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\nMake will invoke flex and bison if the *.[ly] files are newer than the C++ files they generate.  Thus, we have to make sure the C++ files are fresher.",
+    "body": "Replying to [ticket:472 jmbr]:\n> To build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\n\nMake will invoke flex and bison if the *.[ly] files are newer than the C++ files they generate.  Thus, we have to make sure the C++ files are fresher.",
     "created_at": "2007-08-23T00:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
@@ -59,6 +59,7 @@ archive/issue_comments_002349.json:
 
 Replying to [ticket:472 jmbr]:
 > To build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.
+
 
 Make will invoke flex and bison if the *.[ly] files are newer than the C++ files they generate.  Thus, we have to make sure the C++ files are fresher.
 

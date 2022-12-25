@@ -80,7 +80,7 @@ That should be sufficient, it doesn't seem to be documented in the programming g
 archive/issue_comments_007442.json:
 ```json
 {
-    "body": "Ok, since was doubted that the following case could happen:\n\n```\nExpected:\n    1.0000000000000000\nGot:\n    0.9999999999999999\n```\n\nhere a real world example from 2.8.14 on Solaris:\n\n```\nFile \"complex_double.pyx\", line 1496:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n```\n\nCheers,\n\nMichael",
+    "body": "Ok, since was doubted that the following case could happen:\n\n```\nExpected:\n    1.0000000000000000\nGot:\n    0.9999999999999999\n```\nhere a real world example from 2.8.14 on Solaris:\n\n```\nFile \"complex_double.pyx\", line 1496:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n```\nCheers,\n\nMichael",
     "created_at": "2007-11-28T22:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1206",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ Expected:
 Got:
     0.9999999999999999
 ```
-
 here a real world example from 2.8.14 on Solaris:
 
 ```
@@ -108,7 +107,6 @@ Expected:
 Got:
     2.22044604925e-16 + 2.22044604925e-16*I
 ```
-
 Cheers,
 
 Michael
@@ -120,7 +118,7 @@ Michael
 archive/issue_comments_007443.json:
 ```json
 {
-    "body": "Actually, the case\n\n```\nExpected:\n    1.0000000000000000\nGot:\n    0.9999999999999999\n```\n\nDid happen a couple times in the 2.8.15 release cycle. The usual approach was to change the doctest to avoid results where such small rounding issues would cause `\"...\"` the doctest to be useless.\n\nCheers,\n\nMichael",
+    "body": "Actually, the case\n\n```\nExpected:\n    1.0000000000000000\nGot:\n    0.9999999999999999\n```\nDid happen a couple times in the 2.8.15 release cycle. The usual approach was to change the doctest to avoid results where such small rounding issues would cause `\"...\"` the doctest to be useless.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-04T14:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1206",
     "type": "issue_comment",
@@ -137,7 +135,6 @@ Expected:
 Got:
     0.9999999999999999
 ```
-
 Did happen a couple times in the 2.8.15 release cycle. The usual approach was to change the doctest to avoid results where such small rounding issues would cause `"..."` the doctest to be useless.
 
 Cheers,

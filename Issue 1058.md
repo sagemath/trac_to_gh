@@ -132,7 +132,7 @@ Changing assignee from @bobmoretti to @JohnCremona.
 archive/issue_comments_006413.json:
 ```json
 {
-    "body": "There are two separate things here.\n\nFirst:  it would be entirely reasonable to expect mwrank to allow rational input and not just integer.  At the moment (2007-11-21) that is not supported, but it could be, and I hope to add that functionality when sorting out the more serious #1233.\n\nSecond:  The wrapper which sends elliptic curves to mwrank attempts to coerce the coefficients to ints.  (This is what causes the above examples to fail).  But it also seems to have some silly (though documented) side-effects, such as \n\n```\nmwrank_EllipticCurve([1.2,3.4])\ny^2 = x^3 + x + 3\n```\n\nwhere the floating point inputs have been rounded down.  This behaviour has no conceivable use, so I would suggest changing the wrapper to require the inputs to be rational.",
+    "body": "There are two separate things here.\n\nFirst:  it would be entirely reasonable to expect mwrank to allow rational input and not just integer.  At the moment (2007-11-21) that is not supported, but it could be, and I hope to add that functionality when sorting out the more serious #1233.\n\nSecond:  The wrapper which sends elliptic curves to mwrank attempts to coerce the coefficients to ints.  (This is what causes the above examples to fail).  But it also seems to have some silly (though documented) side-effects, such as \n\n```\nmwrank_EllipticCurve([1.2,3.4])\ny^2 = x^3 + x + 3\n```\nwhere the floating point inputs have been rounded down.  This behaviour has no conceivable use, so I would suggest changing the wrapper to require the inputs to be rational.",
     "created_at": "2007-11-21T10:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
@@ -151,7 +151,6 @@ Second:  The wrapper which sends elliptic curves to mwrank attempts to coerce th
 mwrank_EllipticCurve([1.2,3.4])
 y^2 = x^3 + x + 3
 ```
-
 where the floating point inputs have been rounded down.  This behaviour has no conceivable use, so I would suggest changing the wrapper to require the inputs to be rational.
 
 

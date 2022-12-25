@@ -3,7 +3,7 @@
 archive/issues_007460.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 137:\n    sage: print sol['x']\nExpected:\n       1.0000e+00\n       1.0000e+00\nGot:   \n       1.0000e-00\n       1.0000e+00\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_cvxopt.py\n         [3.8 s]\nexit code: 1024\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7460\n\n",
+    "body": "Assignee: @williamstein\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 137:\n    sage: print sol['x']\nExpected:\n       1.0000e+00\n       1.0000e+00\nGot:   \n       1.0000e-00\n       1.0000e+00\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_cvxopt.py\n         [3.8 s]\nexit code: 1024\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7460\n\n",
     "created_at": "2009-11-14T18:08:08Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_007460.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 wstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
@@ -43,7 +42,6 @@ exit code: 1024
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7460
 
 
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7460
 archive/issue_comments_062720.json:
 ```json
 {
-    "body": "With the attached patch:\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\" \n         [3.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.7 seconds\n```\n",
+    "body": "With the attached patch:\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\" \n         [3.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.7 seconds\n```",
     "created_at": "2009-11-14T18:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
@@ -75,7 +73,6 @@ sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
 All tests passed!
 Total time for all tests: 3.7 seconds
 ```
-
 
 
 

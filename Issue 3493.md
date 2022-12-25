@@ -3,7 +3,7 @@
 archive/issues_003493.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn part 37.8 of the Reference Manual (the Elliptic curves over finite fields section) there are some formatting issues. For instance, in the section on the frobenius_polynomial, we have the sentence:\n\n\n```\nThe Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. \nIn most cases this is irreducible and defines an imaginary quadratic order; \nfor some supersingular curves, Frobenius is an integer a and the polynomial is 1703#326 .}}}\n\nI assume that the 1703#326 is some sort of broken formatting code.\n\nThere are similar examples throughout this page.\n\nOn a slightly different tack, in the documentation for cardinality and order, it would be helpful to say that \"sea\" (as in the algorithm) means Schoof-Elkies-Atkin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3493\n\n",
+    "body": "Assignee: tba\n\nIn part 37.8 of the Reference Manual (the Elliptic curves over finite fields section) there are some formatting issues. For instance, in the section on the frobenius_polynomial, we have the sentence:\n\n```\nThe Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. \nIn most cases this is irreducible and defines an imaginary quadratic order; \nfor some supersingular curves, Frobenius is an integer a and the polynomial is 1703#326 .}}}\n\nI assume that the 1703#326 is some sort of broken formatting code.\n\nThere are similar examples throughout this page.\n\nOn a slightly different tack, in the documentation for cardinality and order, it would be helpful to say that \"sea\" (as in the algorithm) means Schoof-Elkies-Atkin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3493\n\n",
     "created_at": "2008-06-23T09:07:08Z",
     "labels": [
         "component: documentation",
@@ -20,7 +20,6 @@ archive/issues_003493.json:
 Assignee: tba
 
 In part 37.8 of the Reference Manual (the Elliptic curves over finite fields section) there are some formatting issues. For instance, in the section on the frobenius_polynomial, we have the sentence:
-
 
 ```
 The Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. 

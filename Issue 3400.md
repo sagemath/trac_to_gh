@@ -3,7 +3,7 @@
 archive/issues_003400.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  alexghitza\n\nFor example:\n\n\n```\nsage: M = Matrix(GF(2), [[1,1,1,1]])\nsage: G = GL(4,2)\nsage: N = G.0\nsage: M\n[1 1 1 1]\nsage: N\n\n[1 1 0 0]\n[0 1 0 0]\n[0 0 1 0]\n[0 0 0 1]\nsage: M*N\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.2/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.2/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11352)()\n\n/Users/rlmill/sage-3.0.2/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5301)()\n\nTypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 4 dense matrices over Finite Field of size 2' and 'General Linear Group of degree 4 over Finite Field of size 2'\nsage: M*N.matrix()\n[1 0 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3400\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  alexghitza\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), [[1,1,1,1]])\nsage: G = GL(4,2)\nsage: N = G.0\nsage: M\n[1 1 1 1]\nsage: N\n\n[1 1 0 0]\n[0 1 0 0]\n[0 0 1 0]\n[0 0 0 1]\nsage: M*N\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.2/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.2/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11352)()\n\n/Users/rlmill/sage-3.0.2/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5301)()\n\nTypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 4 dense matrices over Finite Field of size 2' and 'General Linear Group of degree 4 over Finite Field of size 2'\nsage: M*N.matrix()\n[1 0 1 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3400\n\n",
     "created_at": "2008-06-11T16:23:08Z",
     "labels": [
         "component: coercion",
@@ -21,7 +21,6 @@ Assignee: @robertwb
 CC:  alexghitza
 
 For example:
-
 
 ```
 sage: M = Matrix(GF(2), [[1,1,1,1]])
@@ -49,7 +48,6 @@ TypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 4 de
 sage: M*N.matrix()
 [1 0 1 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3400
 

@@ -128,7 +128,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032824.json:
 ```json
 {
-    "body": "Attachment [trac_4458_name_error_explanation.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_explanation.patch) by afleckenstein created at 2013-02-01 14:01:20\n\nReplying to [comment:5 knsam]:\n> Hello! \n> \n> I have two comments about the patch: there is a grammatical error: \"an NameError\" and I think \"NameError\" should be codified -- by enclosing it with two backticks. \n> \n> So, needs_work. :) \n\nThanks for the input!",
+    "body": "Attachment [trac_4458_name_error_explanation.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_explanation.patch) by afleckenstein created at 2013-02-01 14:01:20\n\nReplying to [comment:5 knsam]:\n> Hello! \n> \n> I have two comments about the patch: there is a grammatical error: \"an NameError\" and I think \"NameError\" should be codified -- by enclosing it with two backticks. \n> \n> So, needs_work. :) \n\n\nThanks for the input!",
     "created_at": "2013-02-01T14:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -145,6 +145,7 @@ Replying to [comment:5 knsam]:
 > I have two comments about the patch: there is a grammatical error: "an NameError" and I think "NameError" should be codified -- by enclosing it with two backticks. 
 > 
 > So, needs_work. :) 
+
 
 Thanks for the input!
 
@@ -235,7 +236,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_032829.json:
 ```json
 {
-    "body": "Attachment [trac_4458_name_error_calculus.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_calculus.patch) by afleckenstein created at 2013-02-07 14:15:52\n\nReplying to [comment:9 knsam]:\n> The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)\"'. \n> \n> I think this could be done, by adding a note. Can you please do this, so that there is an explicit place where this is explained? I am also thinking if it might be possible to implement the first suggestion in the description. Hope you'd find an appropriate place to do so. \n\nDone! I added it to a separate patch, so you can pick either one, or both :-)",
+    "body": "Attachment [trac_4458_name_error_calculus.patch](tarball://root/attachments/some-uuid/ticket4458/trac_4458_name_error_calculus.patch) by afleckenstein created at 2013-02-07 14:15:52\n\nReplying to [comment:9 knsam]:\n> The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)\"'. \n> \n> I think this could be done, by adding a note. Can you please do this, so that there is an explicit place where this is explained? I am also thinking if it might be possible to implement the first suggestion in the description. Hope you'd find an appropriate place to do so. \n\n\nDone! I added it to a separate patch, so you can pick either one, or both :-)",
     "created_at": "2013-02-07T14:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -250,6 +251,7 @@ Replying to [comment:9 knsam]:
 > The description in the patch says: 'at the very least there should be something in the calculus section(s) to the effect of "If you get a NameError?, check to see if you either misspelled something or forgot to define a variable with var(...)"'. 
 > 
 > I think this could be done, by adding a note. Can you please do this, so that there is an explicit place where this is explained? I am also thinking if it might be possible to implement the first suggestion in the description. Hope you'd find an appropriate place to do so. 
+
 
 Done! I added it to a separate patch, so you can pick either one, or both :-)
 
@@ -296,7 +298,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032832.json:
 ```json
 {
-    "body": "I feel like these are ... a little dangerous.\n\nFirst, \n\n```\nare defined to be ``var(...)``\n```\n\nIs there a noun missing here?  Or \"via\", or \"exist using\"?\n\n\n```\nsage: diff(sin(var('u')), var('u'))\n```\n\nI'm a little leery of suggesting people do this.  `var('u')` injects things into the global namespace as well, so this is redundant.  Better is\n\n```\nsage: var('u')\ndiff(...)\n```\n\n\nAlso, I suspect you'll need an extra line before the new section\n\n```\n.. _section-systems: \n```\n\nto avoid some documentation build error.",
+    "body": "I feel like these are ... a little dangerous.\n\nFirst, \n\n```\nare defined to be ``var(...)``\n```\nIs there a noun missing here?  Or \"via\", or \"exist using\"?\n\n```\nsage: diff(sin(var('u')), var('u'))\n```\nI'm a little leery of suggesting people do this.  `var('u')` injects things into the global namespace as well, so this is redundant.  Better is\n\n```\nsage: var('u')\ndiff(...)\n```\n\nAlso, I suspect you'll need an extra line before the new section\n\n```\n.. _section-systems: \n```\nto avoid some documentation build error.",
     "created_at": "2013-02-12T16:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -312,14 +314,11 @@ First,
 ```
 are defined to be ``var(...)``
 ```
-
 Is there a noun missing here?  Or "via", or "exist using"?
-
 
 ```
 sage: diff(sin(var('u')), var('u'))
 ```
-
 I'm a little leery of suggesting people do this.  `var('u')` injects things into the global namespace as well, so this is redundant.  Better is
 
 ```
@@ -327,13 +326,11 @@ sage: var('u')
 diff(...)
 ```
 
-
 Also, I suspect you'll need an extra line before the new section
 
 ```
 .. _section-systems: 
 ```
-
 to avoid some documentation build error.
 
 
@@ -343,7 +340,7 @@ to avoid some documentation build error.
 archive/issue_comments_032833.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n\n>`var('u')` injects things into the global namespace as well, so this is redundant.\n\nI didn't know this happened! That's pretty neat. Why do we have\n\n```\nu = var('u')\n```\n\nin the tutorial then? Is \n\n```\nvar('u')\n```\n\nshorthand for u = var('u'), or does it do something a little different?\n\nAndrew",
+    "body": "Replying to [comment:12 kcrisman]:\n\n>`var('u')` injects things into the global namespace as well, so this is redundant.\n\n\nI didn't know this happened! That's pretty neat. Why do we have\n\n```\nu = var('u')\n```\nin the tutorial then? Is \n\n```\nvar('u')\n```\nshorthand for u = var('u'), or does it do something a little different?\n\nAndrew",
     "created_at": "2013-02-13T14:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -356,18 +353,17 @@ Replying to [comment:12 kcrisman]:
 
 >`var('u')` injects things into the global namespace as well, so this is redundant.
 
+
 I didn't know this happened! That's pretty neat. Why do we have
 
 ```
 u = var('u')
 ```
-
 in the tutorial then? Is 
 
 ```
 var('u')
 ```
-
 shorthand for u = var('u'), or does it do something a little different?
 
 Andrew
@@ -379,7 +375,7 @@ Andrew
 archive/issue_comments_032834.json:
 ```json
 {
-    "body": "Compare\n\n```\nsage: u = var('u')\nsage:\n```\n\nwith \n\n```\nsage: var('u')\nu\nsage:\n```\n\nThat's my reason, anyway.  There may be some very subtle other difference as well.",
+    "body": "Compare\n\n```\nsage: u = var('u')\nsage:\n```\nwith \n\n```\nsage: var('u')\nu\nsage:\n```\nThat's my reason, anyway.  There may be some very subtle other difference as well.",
     "created_at": "2013-02-13T15:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -394,7 +390,6 @@ Compare
 sage: u = var('u')
 sage:
 ```
-
 with 
 
 ```
@@ -402,7 +397,6 @@ sage: var('u')
 u
 sage:
 ```
-
 That's my reason, anyway.  There may be some very subtle other difference as well.
 
 
@@ -412,7 +406,7 @@ That's my reason, anyway.  There may be some very subtle other difference as wel
 archive/issue_comments_032835.json:
 ```json
 {
-    "body": "You can just get this behavior:\n\n```\nsage: v = var('u')\nsage: u\nu\nsage: v\nu\n```\n",
+    "body": "You can just get this behavior:\n\n```\nsage: v = var('u')\nsage: u\nu\nsage: v\nu\n```",
     "created_at": "2013-03-29T22:53:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -430,7 +424,6 @@ u
 sage: v
 u
 ```
-
 
 
 
@@ -558,7 +551,7 @@ archive/issue_events_010069.json:
 archive/issue_comments_032836.json:
 ```json
 {
-    "body": "I'm happy, having done the branch, but I'd appreciate a separate reviewer.\n----\nNew commits:",
+    "body": "I'm happy, having done the branch, but I'd appreciate a separate reviewer.\n\n---\nNew commits:",
     "created_at": "2014-11-20T18:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4458",
     "type": "issue_comment",
@@ -568,7 +561,8 @@ archive/issue_comments_032836.json:
 ```
 
 I'm happy, having done the branch, but I'd appreciate a separate reviewer.
-----
+
+---
 New commits:
 
 

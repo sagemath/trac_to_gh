@@ -308,7 +308,7 @@ Resolution: wontfix
 archive/issue_comments_094923.json:
 ```json
 {
-    "body": "Ed has request that this ticket be closed. He sent an email that said:\n\n\n```\nDear Sage Manager:\n\nA few weeks ago I posted Trac ticket #9727 entitled \"RepresentationGraph method\nthat generalizes IntervalGraph\". Since that time, working with Nathann Cohen, I\nposted an alternative, more focused solution to minor glitches in the\nIntervalGraph method. Further, the RepresentationGraph method functionality is\npartially already present in the Graph() constructor and I am considering a\ndirect enhancement of Graph() at some future time to add a bit more\nfunctionality.\n\nSo, to make a long story short, I would like to cancel my posting of 9727, but I\ndon't see how to do that in Trac. Can you please do this for me?\n\nThanks,\n\nEd Scheinerman\n```\n\n\nI'm setting this as \"wontfix\" since it seems like they, well, won't use this enhancement and work on things later.",
+    "body": "Ed has request that this ticket be closed. He sent an email that said:\n\n```\nDear Sage Manager:\n\nA few weeks ago I posted Trac ticket #9727 entitled \"RepresentationGraph method\nthat generalizes IntervalGraph\". Since that time, working with Nathann Cohen, I\nposted an alternative, more focused solution to minor glitches in the\nIntervalGraph method. Further, the RepresentationGraph method functionality is\npartially already present in the Graph() constructor and I am considering a\ndirect enhancement of Graph() at some future time to add a bit more\nfunctionality.\n\nSo, to make a long story short, I would like to cancel my posting of 9727, but I\ndon't see how to do that in Trac. Can you please do this for me?\n\nThanks,\n\nEd Scheinerman\n```\n\nI'm setting this as \"wontfix\" since it seems like they, well, won't use this enhancement and work on things later.",
     "created_at": "2010-09-08T02:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
@@ -318,7 +318,6 @@ archive/issue_comments_094923.json:
 ```
 
 Ed has request that this ticket be closed. He sent an email that said:
-
 
 ```
 Dear Sage Manager:
@@ -338,7 +337,6 @@ Thanks,
 
 Ed Scheinerman
 ```
-
 
 I'm setting this as "wontfix" since it seems like they, well, won't use this enhancement and work on things later.
 

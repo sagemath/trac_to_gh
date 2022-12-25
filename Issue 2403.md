@@ -3,7 +3,7 @@
 archive/issues_002403.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nI get an error when I am trying to copy a sequence:\n\n\n\n```\nsage: copy([1,2])\n[1, 2]\nsage: copy(Sequence([1,2]))\nTraceback (most recent call last):\n...\nTypeError: sage.structure.sage_object.SageObject.__new__(Sequence) is not safe, use list.__new__()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2403\n\n",
+    "body": "Assignee: cwitty\n\nI get an error when I am trying to copy a sequence:\n\n\n```\nsage: copy([1,2])\n[1, 2]\nsage: copy(Sequence([1,2]))\nTraceback (most recent call last):\n...\nTypeError: sage.structure.sage_object.SageObject.__new__(Sequence) is not safe, use list.__new__()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2403\n\n",
     "created_at": "2008-03-06T06:18:45Z",
     "labels": [
         "component: misc",
@@ -22,7 +22,6 @@ Assignee: cwitty
 I get an error when I am trying to copy a sequence:
 
 
-
 ```
 sage: copy([1,2])
 [1, 2]
@@ -31,7 +30,6 @@ Traceback (most recent call last):
 ...
 TypeError: sage.structure.sage_object.SageObject.__new__(Sequence) is not safe, use list.__new__()
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2403

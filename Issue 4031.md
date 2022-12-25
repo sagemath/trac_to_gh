@@ -3,7 +3,7 @@
 archive/issues_004031.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFor consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.\n\n\n```\nsage: x, y = var('x,y')\nsage: f = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: f(3,2)\n13\nsage: f(x=3,y=2)\n13\n\nThe desired behavior is\n\nsage: f(x,y) = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: f(3,2)\n13\nsage: f(x=3, y=2)\n13\n\nBut the current behavior is\n\nsage: f(x=3, y=2)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4031\n\n",
+    "body": "Assignee: tbd\n\nFor consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.\n\n```\nsage: x, y = var('x,y')\nsage: f = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: f(3,2)\n13\nsage: f(x=3,y=2)\n13\n\nThe desired behavior is\n\nsage: f(x,y) = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: f(3,2)\n13\nsage: f(x=3, y=2)\n13\n\nBut the current behavior is\n\nsage: f(x=3, y=2)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4031\n\n",
     "created_at": "2008-09-01T06:25:55Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_004031.json:
 Assignee: tbd
 
 For consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.
-
 
 ```
 sage: x, y = var('x,y')
@@ -48,7 +47,6 @@ Traceback (most recent call last):
 ...
 TypeError: __call__() got an unexpected keyword argument 'y'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4031
@@ -297,7 +295,7 @@ mhansen, I think your implementation is better.  Only trac_4031.patch should be 
 archive/issue_comments_029034.json:
 ```json
 {
-    "body": "\n```\nmhansen: Nope, if you think my patch is good and it works, give the ticket a positive review.\n```\n\n\nwith mhansen's patch, all tests pass.",
+    "body": "```\nmhansen: Nope, if you think my patch is good and it works, give the ticket a positive review.\n```\n\nwith mhansen's patch, all tests pass.",
     "created_at": "2008-09-01T23:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
@@ -306,11 +304,9 @@ archive/issue_comments_029034.json:
 }
 ```
 
-
 ```
 mhansen: Nope, if you think my patch is good and it works, give the ticket a positive review.
 ```
-
 
 with mhansen's patch, all tests pass.
 

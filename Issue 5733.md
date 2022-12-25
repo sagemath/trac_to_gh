@@ -3,7 +3,7 @@
 archive/issues_005733.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
     "created_at": "2009-04-10T14:19:31Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_005733.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':
 sage: ['c','d','d','d'],'d':['e']})
@@ -27,7 +26,6 @@ Traceback (most recent call last):
 ...
 ZeroDivisionError: float division
 ```
-
 
 Reported by alec`@`mihailovs
 

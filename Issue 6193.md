@@ -105,7 +105,7 @@ I am still building a 4.0 so I haven't actually applied/tested it, but will when
 archive/issue_comments_049368.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> The code looks good after my first reading. \n> \n>  * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? \n\nThat is right.  Some people call this (the compact component in `R^2`) the \"egg\".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.\n\n> \n>  * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) \n> \n\nI thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.\n\n>  * What assurance is there that `extended_agm_iteration` will terminate in the presence of numerical noise? (I suppose if delta is around machine epsilon, then (1+delta).sqrt() should be identically 1. Is that enough? \n> \n\nThat does worry me.  I am hopeless at numerical analysis;  I put this simple test in while testing and it seemed to work fine;  otherwise we should be testing that delta is small enough that 1+delta is exactly 1 within the current precision.  (Note that the way this is coded it is already using relative rather than absolute precision, which is good).\n\n>  * It would be good to have an example demonstrating that the elliptic log is actually the inverse of the standard Weierstrass isomorphism (at least using Pari's version so far)\n\nOf course;  and that is listed in the things I have not done yet.\n\n> \n> I am still building a 4.0 so I haven't actually applied/tested it, but will when that's done building. \n>",
+    "body": "Replying to [comment:2 robertwb]:\n> The code looks good after my first reading. \n> \n> * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? \n\n\nThat is right.  Some people call this (the compact component in `R^2`) the \"egg\".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.\n\n> \n> * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) \n> \n\n\nI thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.\n\n>  * What assurance is there that `extended_agm_iteration` will terminate in the presence of numerical noise? (I suppose if delta is around machine epsilon, then (1+delta).sqrt() should be identically 1. Is that enough? \n \n> \n\nThat does worry me.  I am hopeless at numerical analysis;  I put this simple test in while testing and it seemed to work fine;  otherwise we should be testing that delta is small enough that 1+delta is exactly 1 within the current precision.  (Note that the way this is coded it is already using relative rather than absolute precision, which is good).\n\n>  * It would be good to have an example demonstrating that the elliptic log is actually the inverse of the standard Weierstrass isomorphism (at least using Pari's version so far)\n\n\nOf course;  and that is listed in the things I have not done yet.\n\n> \n> I am still building a 4.0 so I haven't actually applied/tested it, but will when that's done building. \n\n>",
     "created_at": "2009-06-03T08:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
@@ -117,27 +117,32 @@ archive/issue_comments_049368.json:
 Replying to [comment:2 robertwb]:
 > The code looks good after my first reading. 
 > 
->  * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? 
+> * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? 
+
 
 That is right.  Some people call this (the compact component in `R^2`) the "egg".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.
 
 > 
->  * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) 
+> * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) 
 > 
+
 
 I thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.
 
 >  * What assurance is there that `extended_agm_iteration` will terminate in the presence of numerical noise? (I suppose if delta is around machine epsilon, then (1+delta).sqrt() should be identically 1. Is that enough? 
+ 
 > 
 
 That does worry me.  I am hopeless at numerical analysis;  I put this simple test in while testing and it seemed to work fine;  otherwise we should be testing that delta is small enough that 1+delta is exactly 1 within the current precision.  (Note that the way this is coded it is already using relative rather than absolute precision, which is good).
 
 >  * It would be good to have an example demonstrating that the elliptic log is actually the inverse of the standard Weierstrass isomorphism (at least using Pari's version so far)
 
+
 Of course;  and that is listed in the things I have not done yet.
 
 > 
 > I am still building a 4.0 so I haven't actually applied/tested it, but will when that's done building. 
+
 >
 
 
@@ -147,7 +152,7 @@ Of course;  and that is listed in the things I have not done yet.
 archive/issue_comments_049369.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> Replying to [comment:2 robertwb]:\n> > The code looks good after my first reading. \n> > \n> >  * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? \n> \n> That is right.  Some people call this (the compact component in `R^2`) the \"egg\".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.\n\nI think it's fine, the terminology is very evocative of what it is :)\n\n> >  * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) \n> \n> I thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.\n\nOh, of course. I wasn't thinking of the i as an index, now ei makes total sense with the e1, e2, and e3 conventions.",
+    "body": "Replying to [comment:3 cremona]:\n> Replying to [comment:2 robertwb]:\n> > The code looks good after my first reading. \n> > \n> > * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? \n\n> \n> That is right.  Some people call this (the compact component in `R^2`) the \"egg\".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.\n\n\nI think it's fine, the terminology is very evocative of what it is :)\n\n> >  * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) \n \n> \n> I thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.\n\n\nOh, of course. I wasn't thinking of the i as an index, now ei makes total sense with the e1, e2, and e3 conventions.",
     "created_at": "2009-06-03T08:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
@@ -160,15 +165,19 @@ Replying to [comment:3 cremona]:
 > Replying to [comment:2 robertwb]:
 > > The code looks good after my first reading. 
 > > 
-> >  * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? 
+> > * I assume by `on_egg` you're implying the non-identity component of an elliptic curve over R? 
+
 > 
 > That is right.  Some people call this (the compact component in `R^2`) the "egg".  Perhaps a comment should be included to explain this, but the name has the advantage of being short.
+
 
 I think it's fine, the terminology is very evocative of what it is :)
 
 > >  * Where does the terminology `ei` come from for the x-coordinates of the 2-torsion? (I may just not be familiar with the notation, if so, just let me know.) 
+ 
 > 
 > I thought it was standard to call the real roots e1, e2, e3 (i.e. these are the x-coords of the points of order 2).  Less standard is the ordering (for curves over R):  when they are all real then either e1<e2<e3 or the other way round;  and when only one is real, it is e1 for some people and e3 for others.  Hence I do make this explicit.
+
 
 Oh, of course. I wasn't thinking of the i as an index, now ei makes total sense with the e1, e2, and e3 conventions.
 

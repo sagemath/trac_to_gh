@@ -180,7 +180,7 @@ archive/issue_events_009016.json:
 archive/issue_comments_028073.json:
 ```json
 {
-    "body": "Replying to [comment:3 rlm]:\n> Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).\nFrom my reading of the [source code](http://wiki.wstein.org/2008/480a/theprojects?action=AttachFile&do=get&target=max_flow_min_cut.py), it looks like the code is using the Ford-Fulkerson algorithm, which is pretty bad for some corner cases. And its complexity is in general not polynomial. Of course, one obvious way to get polynomial complexity is to use the modified algorithm by Edmonds and Karp. Chapter 6 from the following text is very relevant to this ticket.\n* D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.",
+    "body": "Replying to [comment:3 rlm]:\n> Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).\n\nFrom my reading of the [source code](http://wiki.wstein.org/2008/480a/theprojects?action=AttachFile&do=get&target=max_flow_min_cut.py), it looks like the code is using the Ford-Fulkerson algorithm, which is pretty bad for some corner cases. And its complexity is in general not polynomial. Of course, one obvious way to get polynomial complexity is to use the modified algorithm by Edmonds and Karp. Chapter 6 from the following text is very relevant to this ticket.\n* D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.",
     "created_at": "2009-05-21T11:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
@@ -191,5 +191,6 @@ archive/issue_comments_028073.json:
 
 Replying to [comment:3 rlm]:
 > Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).
+
 From my reading of the [source code](http://wiki.wstein.org/2008/480a/theprojects?action=AttachFile&do=get&target=max_flow_min_cut.py), it looks like the code is using the Ford-Fulkerson algorithm, which is pretty bad for some corner cases. And its complexity is in general not polynomial. Of course, one obvious way to get polynomial complexity is to use the modified algorithm by Edmonds and Karp. Chapter 6 from the following text is very relevant to this ticket.
 * D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.

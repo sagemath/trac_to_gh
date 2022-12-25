@@ -168,7 +168,7 @@ It returns none when it should descend to the subfield F.
 archive/issue_comments_089091.json:
 ```json
 {
-    "body": "It looks to me as though the curve returned is (sometimes) a twist of the original, rather than isomorphic -- but I have been flying all night so am not reliable!\n\nYou can check if there is an embedding of K in self.base_ring() like this:\n\n```\nsage: X = polygen(QQ)\nsage: K.<a> = NumberField(X^4 - X^3 + 2*X^2 + X + 1)\nsage: QQ.embeddings(K)\n[Ring Coercion morphism:\n  From: Rational Field\n  To:   Number Field in a with defining polynomial x^4 - x^3 + 2*x^2 + x + 1]\n```\n",
+    "body": "It looks to me as though the curve returned is (sometimes) a twist of the original, rather than isomorphic -- but I have been flying all night so am not reliable!\n\nYou can check if there is an embedding of K in self.base_ring() like this:\n\n```\nsage: X = polygen(QQ)\nsage: K.<a> = NumberField(X^4 - X^3 + 2*X^2 + X + 1)\nsage: QQ.embeddings(K)\n[Ring Coercion morphism:\n  From: Rational Field\n  To:   Number Field in a with defining polynomial x^4 - x^3 + 2*x^2 + x + 1]\n```",
     "created_at": "2010-06-30T11:33:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
@@ -189,7 +189,6 @@ sage: QQ.embeddings(K)
   From: Rational Field
   To:   Number Field in a with defining polynomial x^4 - x^3 + 2*x^2 + x + 1]
 ```
-
 
 
 

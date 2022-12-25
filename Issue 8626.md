@@ -3,7 +3,7 @@
 archive/issues_008626.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
     "created_at": "2010-03-29T19:24:06Z",
     "labels": [
         "component: algebra",
@@ -23,12 +23,10 @@ CC:  cwitty
 
 It would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., 
 
-
 ```
 sage: QQbar(sqrt(2))
 sqrt(2)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8626
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8626
 archive/issue_comments_078077.json:
 ```json
 {
-    "body": "This patch almost certainly needs work, but does give some nice results:\n\n\n```\nsage: QQbar(sqrt(5))  \nsqrt(20)/2\nsage: QQbar(sqrt(2))  \nsqrt(8)/2\n```\n\n\nThings are not simplified because I don't want to do any extra work in the printing.",
+    "body": "This patch almost certainly needs work, but does give some nice results:\n\n```\nsage: QQbar(sqrt(5))  \nsqrt(20)/2\nsage: QQbar(sqrt(2))  \nsqrt(8)/2\n```\n\nThings are not simplified because I don't want to do any extra work in the printing.",
     "created_at": "2010-03-29T19:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -52,14 +50,12 @@ archive/issue_comments_078077.json:
 
 This patch almost certainly needs work, but does give some nice results:
 
-
 ```
 sage: QQbar(sqrt(5))  
 sqrt(20)/2
 sage: QQbar(sqrt(2))  
 sqrt(8)/2
 ```
-
 
 Things are not simplified because I don't want to do any extra work in the printing.
 
@@ -70,7 +66,7 @@ Things are not simplified because I don't want to do any extra work in the print
 archive/issue_comments_078078.json:
 ```json
 {
-    "body": "Another example with this patch:\n\n\n```\nsage: m=matrix(2,2,[0,1,1,1]);m\n[0 1]\n[1 1]\nsage: m.eigenvalues()          \n[(--1-sqrt(5))/2, (--1+sqrt(5))/2]\n\n```\n",
+    "body": "Another example with this patch:\n\n```\nsage: m=matrix(2,2,[0,1,1,1]);m\n[0 1]\n[1 1]\nsage: m.eigenvalues()          \n[(--1-sqrt(5))/2, (--1+sqrt(5))/2]\n\n```",
     "created_at": "2010-03-29T19:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -80,7 +76,6 @@ archive/issue_comments_078078.json:
 ```
 
 Another example with this patch:
-
 
 ```
 sage: m=matrix(2,2,[0,1,1,1]);m
@@ -93,13 +88,12 @@ sage: m.eigenvalues()
 
 
 
-
 ---
 
 archive/issue_comments_078079.json:
 ```json
 {
-    "body": "That last patch corrects the double negative, so I get:\n\n\n```\nsage: m=matrix(2,2,[0,1,1,1]);m\n[0 1]\n[1 1]\nsage: m.eigenvalues()  \n[(1-sqrt(5))/2, (1+sqrt(5))/2]\n\n```\n",
+    "body": "That last patch corrects the double negative, so I get:\n\n```\nsage: m=matrix(2,2,[0,1,1,1]);m\n[0 1]\n[1 1]\nsage: m.eigenvalues()  \n[(1-sqrt(5))/2, (1+sqrt(5))/2]\n\n```",
     "created_at": "2010-03-29T19:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -110,7 +104,6 @@ archive/issue_comments_078079.json:
 
 That last patch corrects the double negative, so I get:
 
-
 ```
 sage: m=matrix(2,2,[0,1,1,1]);m
 [0 1]
@@ -119,7 +112,6 @@ sage: m.eigenvalues()
 [(1-sqrt(5))/2, (1+sqrt(5))/2]
 
 ```
-
 
 
 
@@ -202,7 +194,7 @@ Changing status from new to needs_work.
 archive/issue_comments_078084.json:
 ```json
 {
-    "body": "Here is another problem that could probably be solved if qqbar elements could be converted to symbolics.  The application for this example was trying to plot a line from the eigenvector of a matrix:\n\n\n```\nsage: A=matrix(QQ,2,2,[2,5,1,2])\nsage: EV=A.right_eigenvectors()\nsage: EV\n[(-0.2360679774997897?, [(1, -0.4472135954999580?)], 1), (4.236067977499789?, [(1, 0.4472135954999580?)], 1)]\nsage: evec=EV[0][1][0]\nsage: var('t')\nt\nsage: evec.n()*t # works fine\n(t, -0.447213595499958*t)\nsage: t*evec\nTraceback (most recent call last):\n...\nNotImplementedError: symbol\n\n```\n",
+    "body": "Here is another problem that could probably be solved if qqbar elements could be converted to symbolics.  The application for this example was trying to plot a line from the eigenvector of a matrix:\n\n```\nsage: A=matrix(QQ,2,2,[2,5,1,2])\nsage: EV=A.right_eigenvectors()\nsage: EV\n[(-0.2360679774997897?, [(1, -0.4472135954999580?)], 1), (4.236067977499789?, [(1, 0.4472135954999580?)], 1)]\nsage: evec=EV[0][1][0]\nsage: var('t')\nt\nsage: evec.n()*t # works fine\n(t, -0.447213595499958*t)\nsage: t*evec\nTraceback (most recent call last):\n...\nNotImplementedError: symbol\n\n```",
     "created_at": "2010-09-22T03:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
@@ -212,7 +204,6 @@ archive/issue_comments_078084.json:
 ```
 
 Here is another problem that could probably be solved if qqbar elements could be converted to symbolics.  The application for this example was trying to plot a line from the eigenvector of a matrix:
-
 
 ```
 sage: A=matrix(QQ,2,2,[2,5,1,2])
@@ -230,7 +221,6 @@ Traceback (most recent call last):
 NotImplementedError: symbol
 
 ```
-
 
 
 

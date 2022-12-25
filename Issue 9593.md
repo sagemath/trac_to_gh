@@ -3,7 +3,7 @@
 archive/issues_009593.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill @fchapoton\n\nTry the following in 4.5.2.alpha0 (or after applying #9532):\n\n```\nsage: G = graphs.PetersenGraph()\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10000)\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10001)\n```\n\nI get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)\n\nMaybe some constants need tweaking?\n\nI think this may be causing the problem reported in the first comment on #9584.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9593\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill @fchapoton\n\nTry the following in 4.5.2.alpha0 (or after applying #9532):\n\n```\nsage: G = graphs.PetersenGraph()\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10000)\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10001)\n```\nI get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)\n\nMaybe some constants need tweaking?\n\nI think this may be causing the problem reported in the first comment on #9584.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9593\n\n",
     "created_at": "2010-07-24T18:32:43Z",
     "labels": [
         "component: graph theory",
@@ -27,7 +27,6 @@ sage: G = graphs.PetersenGraph()
 sage: set_random_seed(0); G.plot(layout='spring', iterations=10000)
 sage: set_random_seed(0); G.plot(layout='spring', iterations=10001)
 ```
-
 I get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)
 
 Maybe some constants need tweaking?
@@ -45,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9593
 archive/issue_comments_092659.json:
 ```json
 {
-    "body": "Replying to [ticket:9593 cwitty]:\n> I think this may be causing the problem reported in the first comment on #9584.\n\nCarl, should we fix that one here (numeric noise causing doctest failure)?",
+    "body": "Replying to [ticket:9593 cwitty]:\n> I think this may be causing the problem reported in the first comment on #9584.\n\n\nCarl, should we fix that one here (numeric noise causing doctest failure)?",
     "created_at": "2010-07-24T20:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
@@ -56,6 +55,7 @@ archive/issue_comments_092659.json:
 
 Replying to [ticket:9593 cwitty]:
 > I think this may be causing the problem reported in the first comment on #9584.
+
 
 Carl, should we fix that one here (numeric noise causing doctest failure)?
 
@@ -104,7 +104,7 @@ Ok, I'll open a new ticket that simply adds a `# random` to that doctest.
 archive/issue_comments_092662.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> Ok, I'll open a new ticket that simply adds a `# random` to that doctest.\n\nOh, I completely forgot to add this here: The related *doctest error* in Sage 4.5.2.alpha0 is now #9594, which already has positive review. (The comment in the patch links back to *this* ticket, which I found more appropriate, since the `# random` tag can hopefully be removed again once we have *reproducible* spring layout.)",
+    "body": "Replying to [comment:3 leif]:\n> Ok, I'll open a new ticket that simply adds a `# random` to that doctest.\n\n\nOh, I completely forgot to add this here: The related *doctest error* in Sage 4.5.2.alpha0 is now #9594, which already has positive review. (The comment in the patch links back to *this* ticket, which I found more appropriate, since the `# random` tag can hopefully be removed again once we have *reproducible* spring layout.)",
     "created_at": "2010-07-25T19:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
@@ -115,6 +115,7 @@ archive/issue_comments_092662.json:
 
 Replying to [comment:3 leif]:
 > Ok, I'll open a new ticket that simply adds a `# random` to that doctest.
+
 
 Oh, I completely forgot to add this here: The related *doctest error* in Sage 4.5.2.alpha0 is now #9594, which already has positive review. (The comment in the patch links back to *this* ticket, which I found more appropriate, since the `# random` tag can hopefully be removed again once we have *reproducible* spring layout.)
 

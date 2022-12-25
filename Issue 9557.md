@@ -3,7 +3,7 @@
 archive/issues_009557.json:
 ```json
 {
-    "body": "Assignee: Vincent Delecroix\n\nKeywords: hyperbolic geometry, fundamental domains, Fuchsian groups\n\nGiven a discrete subgroup of PSL(2,R) there exists a fundamental domain of the action of this group on the hyperbolic plane. Knowing one fundamental domain for a group, gives you the fundamental domain for any subgroups. This module implement the passage from the fundamental domain of PSL(2,ZZ) to any subgroup of finite index\n\nThe way is work concerns only the second part as I have to improve the transition (subgroup of PSL(2,Z)) <-> (coset graph). The first line just build the coset graph associated to the congruence subgroup Gamma(3).\n\n```\nsage: g = sage.geometry.fundamental_domains.gamma_triangle_graph(3)\nsage: g\nTriangle graph (2,3,infinty) with 12 vertices\nsage: FundamentalDomain(g)\nFundamental domain of a subgroup of index 12\nsage: FundamentalDomain(g).show()\n```\n\n\nDependancy:\n #9439 on hyperbolic geometry\n\nIssue created by migration from https://trac.sagemath.org/ticket/9557\n\n",
+    "body": "Assignee: Vincent Delecroix\n\nKeywords: hyperbolic geometry, fundamental domains, Fuchsian groups\n\nGiven a discrete subgroup of PSL(2,R) there exists a fundamental domain of the action of this group on the hyperbolic plane. Knowing one fundamental domain for a group, gives you the fundamental domain for any subgroups. This module implement the passage from the fundamental domain of PSL(2,ZZ) to any subgroup of finite index\n\nThe way is work concerns only the second part as I have to improve the transition (subgroup of PSL(2,Z)) <-> (coset graph). The first line just build the coset graph associated to the congruence subgroup Gamma(3).\n\n```\nsage: g = sage.geometry.fundamental_domains.gamma_triangle_graph(3)\nsage: g\nTriangle graph (2,3,infinty) with 12 vertices\nsage: FundamentalDomain(g)\nFundamental domain of a subgroup of index 12\nsage: FundamentalDomain(g).show()\n```\n\nDependancy:\n #9439 on hyperbolic geometry\n\nIssue created by migration from https://trac.sagemath.org/ticket/9557\n\n",
     "created_at": "2010-07-20T17:53:35Z",
     "labels": [
         "component: geometry"
@@ -31,7 +31,6 @@ sage: FundamentalDomain(g)
 Fundamental domain of a subgroup of index 12
 sage: FundamentalDomain(g).show()
 ```
-
 
 Dependancy:
  #9439 on hyperbolic geometry
@@ -218,7 +217,7 @@ archive/issue_events_023793.json:
 archive/issue_comments_091982.json:
 ```json
 {
-    "body": "I just made a git branch and cleaned the code. May not be working anymore ?\n----\nNew commits:",
+    "body": "I just made a git branch and cleaned the code. May not be working anymore ?\n\n---\nNew commits:",
     "created_at": "2015-06-28T10:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
@@ -228,7 +227,8 @@ archive/issue_comments_091982.json:
 ```
 
 I just made a git branch and cleaned the code. May not be working anymore ?
-----
+
+---
 New commits:
 
 
@@ -256,7 +256,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_091984.json:
 ```json
 {
-    "body": "This is a bit outdated. One now can do\n\n```\nsage: G = Gamma(2)\nsage: F = FareySymbol(G)\nsage: F.fundamental_domain()\n```\n",
+    "body": "This is a bit outdated. One now can do\n\n```\nsage: G = Gamma(2)\nsage: F = FareySymbol(G)\nsage: F.fundamental_domain()\n```",
     "created_at": "2015-06-28T19:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
@@ -272,7 +272,6 @@ sage: G = Gamma(2)
 sage: F = FareySymbol(G)
 sage: F.fundamental_domain()
 ```
-
 
 
 

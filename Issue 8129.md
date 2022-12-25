@@ -76,7 +76,7 @@ Could the problem be limited to sagenb.org only?
 archive/issue_comments_071355.json:
 ```json
 {
-    "body": "Replying to [comment:3 robert.marik]:\n> I have no problem with jsmath image fonts (with latest Sage and #8051).\n> Could the problem be limited to sagenb.org only?\n\nForgot to write: I tested it on fresh Sage install - this means there are no old directories used by previous versions. Perhaps, the install script from the latest jsmath fonts was confused by previous installs and old jsmath directories on sageng.org? Just guessing, I do not have access there.",
+    "body": "Replying to [comment:3 robert.marik]:\n> I have no problem with jsmath image fonts (with latest Sage and #8051).\n> Could the problem be limited to sagenb.org only?\n\n\nForgot to write: I tested it on fresh Sage install - this means there are no old directories used by previous versions. Perhaps, the install script from the latest jsmath fonts was confused by previous installs and old jsmath directories on sageng.org? Just guessing, I do not have access there.",
     "created_at": "2010-01-30T11:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
@@ -88,6 +88,7 @@ archive/issue_comments_071355.json:
 Replying to [comment:3 robert.marik]:
 > I have no problem with jsmath image fonts (with latest Sage and #8051).
 > Could the problem be limited to sagenb.org only?
+
 
 Forgot to write: I tested it on fresh Sage install - this means there are no old directories used by previous versions. Perhaps, the install script from the latest jsmath fonts was confused by previous installs and old jsmath directories on sageng.org? Just guessing, I do not have access there.
 
@@ -116,7 +117,7 @@ Look for jsMath fonts in `SAGE_LOCAL/...`.  Depends on #8051.  sagenb repo.
 archive/issue_comments_071357.json:
 ```json
 {
-    "body": "Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by @qed777 created at 2010-02-05 11:18:50\n\nWith the patch, the server does a simple check for jsMath fonts under `SAGE_LOCAL`:\n\n```python\njsmath_fonts_path = os.path.join(os.environ['SAGE_LOCAL'],\n                                 'lib', 'jsmath', 'fonts')\nif not os.path.exists(jsmath_fonts_path):\n    jsmath_fonts_path = os.path.join(javascript_path, 'jsmath', 'fonts')\n```\n\n\nWe'll need to add the msbm10 fonts to the fonts spkg.  Instead of putting even more version-checking logic in `jsmath-image-fonts-*.spkg` `spkg-install`, should we give the new spkg a different name, e.g., `jsmath-image-fonts-new-*.spkg`?  Its `spkg-install` would just install the fonts in `SAGE_LOCAL/lib/jsmath/fonts`.\n\nAlso, should we try adding **all** of the [extra jsMath fonts](http://www.math.union.edu/~dpvc/jsmath/download/extra-fonts/welcome.html) to the new spkg?\n\n```\nbbold10\ncmbsy10\ncmbx10\ncmex10\ncm-fonts\ncmmi10\ncmmib10\ncmr10\ncmss10\ncmsy10\ncmti10\neufb10\neufm10\neurb10\neurm10\neusb10\neusm10\nlasy10\nlasyb10\nmsam10\nmsbm10\nrsfs10\nstmary10\nwasy10\nwasyb10\n```\n\n?",
+    "body": "Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by @qed777 created at 2010-02-05 11:18:50\n\nWith the patch, the server does a simple check for jsMath fonts under `SAGE_LOCAL`:\n\n```python\njsmath_fonts_path = os.path.join(os.environ['SAGE_LOCAL'],\n                                 'lib', 'jsmath', 'fonts')\nif not os.path.exists(jsmath_fonts_path):\n    jsmath_fonts_path = os.path.join(javascript_path, 'jsmath', 'fonts')\n```\n\nWe'll need to add the msbm10 fonts to the fonts spkg.  Instead of putting even more version-checking logic in `jsmath-image-fonts-*.spkg` `spkg-install`, should we give the new spkg a different name, e.g., `jsmath-image-fonts-new-*.spkg`?  Its `spkg-install` would just install the fonts in `SAGE_LOCAL/lib/jsmath/fonts`.\n\nAlso, should we try adding **all** of the [extra jsMath fonts](http://www.math.union.edu/~dpvc/jsmath/download/extra-fonts/welcome.html) to the new spkg?\n\n```\nbbold10\ncmbsy10\ncmbx10\ncmex10\ncm-fonts\ncmmi10\ncmmib10\ncmr10\ncmss10\ncmsy10\ncmti10\neufb10\neufm10\neurb10\neurm10\neusb10\neusm10\nlasy10\nlasyb10\nmsam10\nmsbm10\nrsfs10\nstmary10\nwasy10\nwasyb10\n```\n?",
     "created_at": "2010-02-05T11:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
@@ -135,7 +136,6 @@ jsmath_fonts_path = os.path.join(os.environ['SAGE_LOCAL'],
 if not os.path.exists(jsmath_fonts_path):
     jsmath_fonts_path = os.path.join(javascript_path, 'jsmath', 'fonts')
 ```
-
 
 We'll need to add the msbm10 fonts to the fonts spkg.  Instead of putting even more version-checking logic in `jsmath-image-fonts-*.spkg` `spkg-install`, should we give the new spkg a different name, e.g., `jsmath-image-fonts-new-*.spkg`?  Its `spkg-install` would just install the fonts in `SAGE_LOCAL/lib/jsmath/fonts`.
 
@@ -168,7 +168,6 @@ stmary10
 wasy10
 wasyb10
 ```
-
 ?
 
 

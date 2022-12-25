@@ -3,7 +3,7 @@
 archive/issues_003712.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nABORT          :R364    Abort debug loop\nABORT          :R365    Abort debug loop\nABORT          :R366    Abort debug loop\nABORT          :R367    Abort debug loop\nABORT          :R368    Abort debug loop\nABORT          :R369    Abort debug loop\nABORT          :R370    Abort debug loop\nABORT          :R371    Abort debug loop\nABORT        tee: write e\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3712\n\n",
+    "body": "Assignee: mabshoff\n\n```\nABORT          :R364    Abort debug loop\nABORT          :R365    Abort debug loop\nABORT          :R366    Abort debug loop\nABORT          :R367    Abort debug loop\nABORT          :R368    Abort debug loop\nABORT          :R369    Abort debug loop\nABORT          :R370    Abort debug loop\nABORT          :R371    Abort debug loop\nABORT        tee: write e\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3712\n\n",
     "created_at": "2008-07-23T13:17:01Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_003712.json:
 ```
 Assignee: mabshoff
 
-
 ```
 ABORT          :R364    Abort debug loop
 ABORT          :R365    Abort debug loop
@@ -31,7 +30,6 @@ ABORT          :R370    Abort debug loop
 ABORT          :R371    Abort debug loop
 ABORT        tee: write e
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3712
 

@@ -526,7 +526,7 @@ archive/issue_events_024338.json:
 archive/issue_comments_094868.json:
 ```json
 {
-    "body": "I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n\n```\nsage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n**********************************************************************\nFile \"/Users/frb15/Desktop/sage-4.7.1.alpha1/devel/sage-main/doc/de/tutorial/programming.rst\", line 425:\n    sage: type(v)\nExpected:\n    <class 'sage.structure.sequence.Sequence'>\nGot:\n    <class 'sage.structure.sequence.Sequence_generic'>\n**********************************************************************\nFile \"/Users/frb15/Desktop/sage-4.7.1.alpha1/devel/sage-main/doc/de/tutorial/programming.rst\", line 463:\n    sage: type(B)\nExpected:\n    <class 'sage.structure.sequence.Sequence'>\nGot:\n    <class 'sage.structure.sequence.Sequence_generic'>\n**********************************************************************\n2 items had failures:\n```\n",
+    "body": "I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n\n```\nsage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n**********************************************************************\nFile \"/Users/frb15/Desktop/sage-4.7.1.alpha1/devel/sage-main/doc/de/tutorial/programming.rst\", line 425:\n    sage: type(v)\nExpected:\n    <class 'sage.structure.sequence.Sequence'>\nGot:\n    <class 'sage.structure.sequence.Sequence_generic'>\n**********************************************************************\nFile \"/Users/frb15/Desktop/sage-4.7.1.alpha1/devel/sage-main/doc/de/tutorial/programming.rst\", line 463:\n    sage: type(B)\nExpected:\n    <class 'sage.structure.sequence.Sequence'>\nGot:\n    <class 'sage.structure.sequence.Sequence_generic'>\n**********************************************************************\n2 items had failures:\n```",
     "created_at": "2011-05-24T04:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -559,13 +559,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_094869.json:
 ```json
 {
-    "body": "Replying to [comment:15 fbissey]:\n> I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n> {{{\n> sage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n> }}}\n\nWhich command did you type to run this test?  When I ran \"make ptest\" or \"make ptestlong\", this test simply was not run, so that's where the bug is.",
+    "body": "Replying to [comment:15 fbissey]:\n> I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n> \n> ```\n> sage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n> ```\n\n\nWhich command did you type to run this test?  When I ran \"make ptest\" or \"make ptestlong\", this test simply was not run, so that's where the bug is.",
     "created_at": "2011-05-24T08:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -576,9 +575,11 @@ archive/issue_comments_094869.json:
 
 Replying to [comment:15 fbissey]:
 > I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got
-> {{{
+> 
+> ```
 > sage -t -long -force_lib "devel/sage-main/doc/de/tutorial/programming.rst"
-> }}}
+> ```
+
 
 Which command did you type to run this test?  When I ran "make ptest" or "make ptestlong", this test simply was not run, so that's where the bug is.
 
@@ -641,7 +642,7 @@ archive/issue_events_024339.json:
 archive/issue_comments_094872.json:
 ```json
 {
-    "body": "Note also that the patchbot reports\n\n```\nsage -t  -force_lib sage/misc/sagedoc.py\n**********************************************************************\nFile \"/levi/scratch/robertwb/buildbot/sage-4.7.rc1/devel/sage-9725/sage/misc/sagedoc.py\", line 489:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /levi/scratch/robertwb/buildbot/sage-4.7.rc1/devel/sage/doc/output/html/de/tutorial\n    <BLANKLINE>\n    You can build this with 'sage -docbuild de/tutorial html'.\n    True\n**********************************************************************\n```\n\nand that the \"doc/de\" directory is not tested.",
+    "body": "Note also that the patchbot reports\n\n```\nsage -t  -force_lib sage/misc/sagedoc.py\n**********************************************************************\nFile \"/levi/scratch/robertwb/buildbot/sage-4.7.rc1/devel/sage-9725/sage/misc/sagedoc.py\", line 489:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /levi/scratch/robertwb/buildbot/sage-4.7.rc1/devel/sage/doc/output/html/de/tutorial\n    <BLANKLINE>\n    You can build this with 'sage -docbuild de/tutorial html'.\n    True\n**********************************************************************\n```\nand that the \"doc/de\" directory is not tested.",
     "created_at": "2011-05-24T08:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -669,7 +670,6 @@ Got:
     True
 **********************************************************************
 ```
-
 and that the "doc/de" directory is not tested.
 
 
@@ -774,7 +774,7 @@ Attachment [9725_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9725
 archive/issue_comments_094878.json:
 ```json
 {
-    "body": "Replying to [comment:16 jdemeyer]:\n> Replying to [comment:15 fbissey]:\n> > I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n> > {{{\n> > sage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n> > }}}\n> \n> Which command did you type to run this test?  When I ran \"make ptest\" or \"make ptestlong\", this test simply was not run, so that's where the bug is.\n\nI just did a build of sage with make and then ran \"./sage -tp 3 -long -sagenb devel/\" I was checking that gsl-1.15 (#11357) was OK with 4.7.1.alpha1.",
+    "body": "Replying to [comment:16 jdemeyer]:\n> Replying to [comment:15 fbissey]:\n> > I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got\n> > \n> > ```\n> > sage -t -long -force_lib \"devel/sage-main/doc/de/tutorial/programming.rst\"\n> > ```\n\n> \n> Which command did you type to run this test?  When I ran \"make ptest\" or \"make ptestlong\", this test simply was not run, so that's where the bug is.\n\n\nI just did a build of sage with make and then ran \"./sage -tp 3 -long -sagenb devel/\" I was checking that gsl-1.15 (#11357) was OK with 4.7.1.alpha1.",
     "created_at": "2011-05-24T19:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -786,11 +786,14 @@ archive/issue_comments_094878.json:
 Replying to [comment:16 jdemeyer]:
 > Replying to [comment:15 fbissey]:
 > > I don't know if it is an interaction with another ticket but I just did a test run of 4.7.1.alpha1 and got
-> > {{{
+> > 
+> > ```
 > > sage -t -long -force_lib "devel/sage-main/doc/de/tutorial/programming.rst"
-> > }}}
+> > ```
+
 > 
 > Which command did you type to run this test?  When I ran "make ptest" or "make ptestlong", this test simply was not run, so that's where the bug is.
+
 
 I just did a build of sage with make and then ran "./sage -tp 3 -long -sagenb devel/" I was checking that gsl-1.15 (#11357) was OK with 4.7.1.alpha1.
 
@@ -801,7 +804,7 @@ I just did a build of sage with make and then ran "./sage -tp 3 -long -sagenb de
 archive/issue_comments_094879.json:
 ```json
 {
-    "body": "I don't know why I didn't mention it in my original post but I also have a time out in\n\n```\nsage -t -long  -force_lib devel/sage-main/doc/de/tutorial/interfaces.rst\n```\n\nUsing -verbose it appears to get stuck at\n\n```\nTrying:\n    maxima.plot3d (\"2^(-u^2 + v^2)\", \"[u, -3, 3]\", \"[v, -2, 2]\",   '[plot_format, openmath]') # nicht getestet###line 323:_sage_    >>> maxima.plot3d (\"2^(-u^2 + v^2)\", \"[u, -3, 3]\", \"[v, -2, 2]\",   '[plot_format, openmath]') # nicht getestet\nExpecting nothing\n```\n\nI am guessing #7377 is to blame for that one.",
+    "body": "I don't know why I didn't mention it in my original post but I also have a time out in\n\n```\nsage -t -long  -force_lib devel/sage-main/doc/de/tutorial/interfaces.rst\n```\nUsing -verbose it appears to get stuck at\n\n```\nTrying:\n    maxima.plot3d (\"2^(-u^2 + v^2)\", \"[u, -3, 3]\", \"[v, -2, 2]\",   '[plot_format, openmath]') # nicht getestet###line 323:_sage_    >>> maxima.plot3d (\"2^(-u^2 + v^2)\", \"[u, -3, 3]\", \"[v, -2, 2]\",   '[plot_format, openmath]') # nicht getestet\nExpecting nothing\n```\nI am guessing #7377 is to blame for that one.",
     "created_at": "2011-05-25T00:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -815,7 +818,6 @@ I don't know why I didn't mention it in my original post but I also have a time 
 ```
 sage -t -long  -force_lib devel/sage-main/doc/de/tutorial/interfaces.rst
 ```
-
 Using -verbose it appears to get stuck at
 
 ```
@@ -823,7 +825,6 @@ Trying:
     maxima.plot3d ("2^(-u^2 + v^2)", "[u, -3, 3]", "[v, -2, 2]",   '[plot_format, openmath]') # nicht getestet###line 323:_sage_    >>> maxima.plot3d ("2^(-u^2 + v^2)", "[u, -3, 3]", "[v, -2, 2]",   '[plot_format, openmath]') # nicht getestet
 Expecting nothing
 ```
-
 I am guessing #7377 is to blame for that one.
 
 
@@ -851,7 +852,7 @@ The magic `# not tested` comment at the end of the doctest means Sage isn't supp
 archive/issue_comments_094881.json:
 ```json
 {
-    "body": "I created a patch to fix the doctest problems.\n\nHowever, when I try to apply the 9725_TESTDIRS.patch\nI get the following error\n\n\n```\nsage: hg_sage.apply(\"../../9725_TESTDIRS.patch\")\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg status\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg status\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg import   \"/home/phil/Applications/sage-4.7.rc4/9725_TESTDIRS.patch\"\napplying /home/phil/Applications/sage-4.7.rc4/9725_TESTDIRS.patch\nunable to find 'Makefile' for patching\n1 out of 1 hunks FAILED -- saving rejects to file Makefile.rej\nabort: patch failed to apply\n```\n",
+    "body": "I created a patch to fix the doctest problems.\n\nHowever, when I try to apply the 9725_TESTDIRS.patch\nI get the following error\n\n```\nsage: hg_sage.apply(\"../../9725_TESTDIRS.patch\")\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg status\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg status\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg import   \"/home/phil/Applications/sage-4.7.rc4/9725_TESTDIRS.patch\"\napplying /home/phil/Applications/sage-4.7.rc4/9725_TESTDIRS.patch\nunable to find 'Makefile' for patching\n1 out of 1 hunks FAILED -- saving rejects to file Makefile.rej\nabort: patch failed to apply\n```",
     "created_at": "2011-05-26T21:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -865,7 +866,6 @@ I created a patch to fix the doctest problems.
 However, when I try to apply the 9725_TESTDIRS.patch
 I get the following error
 
-
 ```
 sage: hg_sage.apply("../../9725_TESTDIRS.patch")
 cd "/home/phil/Applications/sage-4.7.rc4/devel/sage" && hg status
@@ -876,7 +876,6 @@ unable to find 'Makefile' for patching
 1 out of 1 hunks FAILED -- saving rejects to file Makefile.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -957,7 +956,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094886.json:
 ```json
 {
-    "body": "How is it possible to patch the Makefile?\n\nI edited the Makefile to add the directory of the german tutorial to the TESTDIR.\nWhen I tried to commit the change I got:\n\n\n```\nsage: hg_sage.commit()\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg diff  | less\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg commit  \nnothing changed\n```\n",
+    "body": "How is it possible to patch the Makefile?\n\nI edited the Makefile to add the directory of the german tutorial to the TESTDIR.\nWhen I tried to commit the change I got:\n\n```\nsage: hg_sage.commit()\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg diff  | less\ncd \"/home/phil/Applications/sage-4.7.rc4/devel/sage\" && hg commit  \nnothing changed\n```",
     "created_at": "2011-05-26T23:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -971,14 +970,12 @@ How is it possible to patch the Makefile?
 I edited the Makefile to add the directory of the german tutorial to the TESTDIR.
 When I tried to commit the change I got:
 
-
 ```
 sage: hg_sage.commit()
 cd "/home/phil/Applications/sage-4.7.rc4/devel/sage" && hg diff  | less
 cd "/home/phil/Applications/sage-4.7.rc4/devel/sage" && hg commit  
 nothing changed
 ```
-
 
 
 
@@ -1005,7 +1002,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094888.json:
 ```json
 {
-    "body": "Replying to [comment:28 phil]:\n> How is it possible to patch the Makefile?\nYou need to use `hg_root` instead of `hg_sage`:\n\n```\nsage: hg_root.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9725/9725_TESTDIRS.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9725/9725_TESTDIRS.patch\nLoading: [.]\ncd \"/usr/local/src/sage-4.7\" && hg status\ncd \"/usr/local/src/sage-4.7\" && hg status\ncd \"/usr/local/src/sage-4.7\" && hg import   \"/home/jdemeyer/.sage/temp/arcanis/5225/tmp_0.patch\"\napplying /home/jdemeyer/.sage/temp/arcanis/5225/tmp_0.patch\n```\n",
+    "body": "Replying to [comment:28 phil]:\n> How is it possible to patch the Makefile?\n\nYou need to use `hg_root` instead of `hg_sage`:\n\n```\nsage: hg_root.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9725/9725_TESTDIRS.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9725/9725_TESTDIRS.patch\nLoading: [.]\ncd \"/usr/local/src/sage-4.7\" && hg status\ncd \"/usr/local/src/sage-4.7\" && hg status\ncd \"/usr/local/src/sage-4.7\" && hg import   \"/home/jdemeyer/.sage/temp/arcanis/5225/tmp_0.patch\"\napplying /home/jdemeyer/.sage/temp/arcanis/5225/tmp_0.patch\n```",
     "created_at": "2011-05-27T07:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -1016,6 +1013,7 @@ archive/issue_comments_094888.json:
 
 Replying to [comment:28 phil]:
 > How is it possible to patch the Makefile?
+
 You need to use `hg_root` instead of `hg_sage`:
 
 ```
@@ -1030,13 +1028,12 @@ applying /home/jdemeyer/.sage/temp/arcanis/5225/tmp_0.patch
 
 
 
-
 ---
 
 archive/issue_comments_094889.json:
 ```json
 {
-    "body": "Ok thanks, \n\nI also ran make ptestlong after adding the directory of the german tutorial the TESTDIRS variable and got\n\n\n```\nphil@phil-lt:~/Applications/sage-4.7.rc4$ make ptestlong\n...\nAll tests passed!\nTotal time for all tests: 3914.3 seconds\n```\n",
+    "body": "Ok thanks, \n\nI also ran make ptestlong after adding the directory of the german tutorial the TESTDIRS variable and got\n\n```\nphil@phil-lt:~/Applications/sage-4.7.rc4$ make ptestlong\n...\nAll tests passed!\nTotal time for all tests: 3914.3 seconds\n```",
     "created_at": "2011-05-27T09:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -1049,14 +1046,12 @@ Ok thanks,
 
 I also ran make ptestlong after adding the directory of the german tutorial the TESTDIRS variable and got
 
-
 ```
 phil@phil-lt:~/Applications/sage-4.7.rc4$ make ptestlong
 ...
 All tests passed!
 Total time for all tests: 3914.3 seconds
 ```
-
 
 
 
@@ -1083,7 +1078,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094891.json:
 ```json
 {
-    "body": "\n```\nsage -t  -force_lib devel/sage/doc/de/tutorial/interfaces.rst\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/devel/sage-main/doc/de/tutorial/interfaces.rst\", line 163:\n    sage: G.IdGroup()\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        G.IdGroup()###line 163:\n    sage: G.IdGroup()\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/interface.py\", line 588, in\n __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 646, in funct\nion_call\n        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])))\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 375, in eval\n        result = Expect.eval(self, input_line, **kwds)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1026, in e\nval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 519, in _eval\n_line\n        raise RuntimeError, message\n    RuntimeError: Gap produced error output\n    Error, the Small Groups identification is required but not installed\n\n       executing IdGroup($sage1);\n**********************************************************************\n```\n",
+    "body": "```\nsage -t  -force_lib devel/sage/doc/de/tutorial/interfaces.rst\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/devel/sage-main/doc/de/tutorial/interfaces.rst\", line 163:\n    sage: G.IdGroup()\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        G.IdGroup()###line 163:\n    sage: G.IdGroup()\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/interface.py\", line 588, in\n __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 646, in funct\nion_call\n        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])))\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 375, in eval\n        result = Expect.eval(self, input_line, **kwds)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1026, in e\nval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha2/local/lib/python/site-packages/sage/interfaces/gap.py\", line 519, in _eval\n_line\n        raise RuntimeError, message\n    RuntimeError: Gap produced error output\n    Error, the Small Groups identification is required but not installed\n\n       executing IdGroup($sage1);\n**********************************************************************\n```",
     "created_at": "2011-05-31T08:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9725",
     "type": "issue_comment",
@@ -1091,7 +1086,6 @@ archive/issue_comments_094891.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-
 
 ```
 sage -t  -force_lib devel/sage/doc/de/tutorial/interfaces.rst
@@ -1129,7 +1123,6 @@ _line
        executing IdGroup($sage1);
 **********************************************************************
 ```
-
 
 
 

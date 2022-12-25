@@ -3,7 +3,7 @@
 archive/issues_006242.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [44.5 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"  \n         [39.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.5 seconds\nwstein@bsd:~/build/sage-4.0.1$ \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6242\n\n",
+    "body": "Assignee: @williamstein\n\n```\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [44.5 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"  \n         [39.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.5 seconds\nwstein@bsd:~/build/sage-4.0.1$ \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6242\n\n",
     "created_at": "2009-06-07T13:36:47Z",
     "labels": [
         "component: number theory",
@@ -18,7 +18,6 @@ archive/issues_006242.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 wstein@bsd:~/build/sage-4.0.1$ ./sage -t -long "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
@@ -43,7 +42,6 @@ Total time for all tests: 39.5 seconds
 wstein@bsd:~/build/sage-4.0.1$ 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6242
 

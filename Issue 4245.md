@@ -3,7 +3,7 @@
 archive/issues_004245.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\nOn Sun, Oct 5, 2008 at 3:56 AM, Jo\u00ebl Duet <joel.duet@gmail.com> wrote:\n> Hi,\n> Here is my problem :\n> I want to write \"a<b\" in the HTML part of my worksheet (notebook() style).\n>\n> 1) I click \"Edit\"\n> 2) After a }}} and before a {{{, I type (without quotes) : \" <p> Let\n> <i>a&lt;b</i>.</p>\"\n> 3) I click \"Save Changes\"\n>\n> And it's done but if I click again at \"Edit\", I get (without quotes) : \"<p>\n> Let <i>a<b</i>.</p>\" and it's bad.\n>\n> What can I do if I want to Edit several times ?\n>\n\nThis is definitely a bug, which could be fixed.  In the meantime, as a workround \nyou might just do\n\n\"<p>Let  $a < b$.</p>\"\n\nsince that will look better anyways. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4245\n\n",
+    "body": "Assignee: boothby\n\n```\n\nOn Sun, Oct 5, 2008 at 3:56 AM, Jo\u00ebl Duet <joel.duet@gmail.com> wrote:\n> Hi,\n> Here is my problem :\n> I want to write \"a<b\" in the HTML part of my worksheet (notebook() style).\n>\n> 1) I click \"Edit\"\n> 2) After a }}} and before a {{{, I type (without quotes) : \" <p> Let\n> <i>a&lt;b</i>.</p>\"\n> 3) I click \"Save Changes\"\n>\n> And it's done but if I click again at \"Edit\", I get (without quotes) : \"<p>\n> Let <i>a<b</i>.</p>\" and it's bad.\n>\n> What can I do if I want to Edit several times ?\n>\n\nThis is definitely a bug, which could be fixed.  In the meantime, as a workround \nyou might just do\n\n\"<p>Let  $a < b$.</p>\"\n\nsince that will look better anyways. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4245\n\n",
     "created_at": "2008-10-05T18:46:04Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_004245.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -45,7 +44,6 @@ you might just do
 
 since that will look better anyways. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4245
 
@@ -130,7 +128,7 @@ Changing assignee from boothby to @mwhansen.
 archive/issue_comments_030795.json:
 ```json
 {
-    "body": "When testing the problem in #4316:\n\n```\n%html \nsome math: $x<y$.\n```\n\nI get the message \n\n```\nNameError: global name 'cgi' is not defined\n```\n\nMore importantly, when testing the problem reported here, I don't see a change in behavior: after editing the worksheet and typing \n\n```\n<p> Let <i>a&lt;b</i>.</p>\n```\n\nin between cells and saving, it looks fine, but when I click \"Edit\" again, the `&lt;` has turned into `<`, and it is printed wrong.",
+    "body": "When testing the problem in #4316:\n\n```\n%html \nsome math: $x<y$.\n```\nI get the message \n\n```\nNameError: global name 'cgi' is not defined\n```\nMore importantly, when testing the problem reported here, I don't see a change in behavior: after editing the worksheet and typing \n\n```\n<p> Let <i>a&lt;b</i>.</p>\n```\nin between cells and saving, it looks fine, but when I click \"Edit\" again, the `&lt;` has turned into `<`, and it is printed wrong.",
     "created_at": "2009-01-24T16:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
@@ -145,19 +143,16 @@ When testing the problem in #4316:
 %html 
 some math: $x<y$.
 ```
-
 I get the message 
 
 ```
 NameError: global name 'cgi' is not defined
 ```
-
 More importantly, when testing the problem reported here, I don't see a change in behavior: after editing the worksheet and typing 
 
 ```
 <p> Let <i>a&lt;b</i>.</p>
 ```
-
 in between cells and saving, it looks fine, but when I click "Edit" again, the `&lt;` has turned into `<`, and it is printed wrong.
 
 

@@ -3,7 +3,7 @@
 archive/issues_001188.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
     "created_at": "2007-11-16T21:48:40Z",
     "labels": [
         "component: linear algebra",
@@ -37,7 +37,6 @@ sage: add([Q[i]*M[i] for i in range(n)])
 864972271
 ```
 
-
 which isn't quite right, we expect:
 
 ```
@@ -56,7 +55,6 @@ sage: M = L[n-1].list()[1:]
 sage: add([Q[i]*M[i] for i in range(n)])
 -1
 ```
-
 
 Is this my lack of understanding of LLL reduction or is this a bug?
 
@@ -180,7 +178,7 @@ I upgraded this bug to a blocker as it is a bug which leads to wrong results wit
 archive/issue_comments_007321.json:
 ```json
 {
-    "body": "One quick point is at least the result is still a basis for the correct lattice:\n\n\n```\nA = X.row_module()\nB = L.row_module()\nA == B\n///\nTrue\n```\n\n\nso it's returning something that is a basis for the correct lattice.  But maybe it's not LLL reduced. \n\nWe should write a function to determine whether or not a matrix is LLL reduced, i.e., use the LLL criterion, as described in Section 2.6 of Cohen's book. \n\nIf the output isn't LLL reduced, then there is definitely a bug.  \n\nAnyway, I am going to attempt to implement this criterion right now, and see what\nhappens.",
+    "body": "One quick point is at least the result is still a basis for the correct lattice:\n\n```\nA = X.row_module()\nB = L.row_module()\nA == B\n///\nTrue\n```\n\nso it's returning something that is a basis for the correct lattice.  But maybe it's not LLL reduced. \n\nWe should write a function to determine whether or not a matrix is LLL reduced, i.e., use the LLL criterion, as described in Section 2.6 of Cohen's book. \n\nIf the output isn't LLL reduced, then there is definitely a bug.  \n\nAnyway, I am going to attempt to implement this criterion right now, and see what\nhappens.",
     "created_at": "2007-11-18T20:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
@@ -191,7 +189,6 @@ archive/issue_comments_007321.json:
 
 One quick point is at least the result is still a basis for the correct lattice:
 
-
 ```
 A = X.row_module()
 B = L.row_module()
@@ -199,7 +196,6 @@ A == B
 ///
 True
 ```
-
 
 so it's returning something that is a basis for the correct lattice.  But maybe it's not LLL reduced. 
 
@@ -380,7 +376,7 @@ updated fplll.patch
 archive/issue_comments_007330.json:
 ```json
 {
-    "body": "On IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\n",
+    "body": "On IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```",
     "created_at": "2007-11-19T11:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
@@ -405,7 +401,6 @@ On IRC:
 [11:48] <wjp> hm, so it might not be usable as an error code
 [11:49] <malb> yes, but I am not sure, we could ask Damien?
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004262.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis sucks:\n\n```\nsage: E = EllipticCurve([1,0,0,0,1])\nsage: E.a_invariants()[0] = 100000000\nsage: E\nElliptic Curve defined by y^2 + 100000000*x*y  = x^3 +1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4262\n\n",
+    "body": "Assignee: @williamstein\n\nThis sucks:\n\n```\nsage: E = EllipticCurve([1,0,0,0,1])\nsage: E.a_invariants()[0] = 100000000\nsage: E\nElliptic Curve defined by y^2 + 100000000*x*y  = x^3 +1 over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4262\n\n",
     "created_at": "2008-10-11T08:25:23Z",
     "labels": [
         "component: number theory",
@@ -26,7 +26,6 @@ sage: E.a_invariants()[0] = 100000000
 sage: E
 Elliptic Curve defined by y^2 + 100000000*x*y  = x^3 +1 over Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4262
 

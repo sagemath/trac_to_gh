@@ -126,7 +126,7 @@ I just checked that all four patches apply fine to sage-4.3.5 still with no reba
 archive/issue_comments_047223.json:
 ```json
 {
-    "body": "The \"part2\" patch changes some things in `matrix/matrix_integer_dense.pyx`, and that causes two doctest failures:\n\n\n```\n\nsage -t -long \"devel/sage/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/modules/fg_pid/fgp_module.py\", line 1131:\n    sage: phi = Q.hom([0,V.0,V.1]); phi\nExpected:\n    Morphism from module over Integer Ring with invariants (2, 0, 0) to module with invariants (0, 0, 0) that sends the generators to [(0, 0, 0), (0, 0, 1), (0, 1, 0)]\nGot:\n    Morphism from module over Integer Ring with invariants (2, 0, 0) to module with invariants (0, 0, 0) that sends the generators to [(0, 0, 0), (1, 0, 0), (0, 1, 0)]\n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/modules/fg_pid/fgp_module.py\", line 1139:\n    sage: phi(Q.1)\nExpected:\n    (0, 0, 1)\nGot:\n    (1, 0, 0)\n**********************************************************************\n```\n\n\nIt was not obvious to me whether this was harmless or an actual problem.\n\nThe rest looks good, there are a couple of docstring fixes but I have a reviewer patch that can take care of them.",
+    "body": "The \"part2\" patch changes some things in `matrix/matrix_integer_dense.pyx`, and that causes two doctest failures:\n\n```\n\nsage -t -long \"devel/sage/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/modules/fg_pid/fgp_module.py\", line 1131:\n    sage: phi = Q.hom([0,V.0,V.1]); phi\nExpected:\n    Morphism from module over Integer Ring with invariants (2, 0, 0) to module with invariants (0, 0, 0) that sends the generators to [(0, 0, 0), (0, 0, 1), (0, 1, 0)]\nGot:\n    Morphism from module over Integer Ring with invariants (2, 0, 0) to module with invariants (0, 0, 0) that sends the generators to [(0, 0, 0), (1, 0, 0), (0, 1, 0)]\n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/modules/fg_pid/fgp_module.py\", line 1139:\n    sage: phi(Q.1)\nExpected:\n    (0, 0, 1)\nGot:\n    (1, 0, 0)\n**********************************************************************\n```\n\nIt was not obvious to me whether this was harmless or an actual problem.\n\nThe rest looks good, there are a couple of docstring fixes but I have a reviewer patch that can take care of them.",
     "created_at": "2010-04-03T05:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
@@ -136,7 +136,6 @@ archive/issue_comments_047223.json:
 ```
 
 The "part2" patch changes some things in `matrix/matrix_integer_dense.pyx`, and that causes two doctest failures:
-
 
 ```
 
@@ -157,7 +156,6 @@ Got:
     (1, 0, 0)
 **********************************************************************
 ```
-
 
 It was not obvious to me whether this was harmless or an actual problem.
 

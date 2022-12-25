@@ -3,7 +3,7 @@
 archive/issues_003004.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nbug from Kari Christianson:\n\n\n```\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\n```\n\n\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 15'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3004\n\n",
+    "body": "Assignee: somebody\n\nbug from Kari Christianson:\n\n```\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\n```\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 15'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3004\n\n",
     "created_at": "2008-04-22T21:56:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,13 +20,10 @@ Assignee: somebody
 
 bug from Kari Christianson:
 
-
 ```
 sage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)
 x
 ```
-
-
 
 
 ```
@@ -35,7 +32,6 @@ Traceback (most recent call last):
 ...
 TypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 15'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3004
 
@@ -48,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3004
 archive/issue_comments_020622.json:
 ```json
 {
-    "body": "This has been fixed by the new coercion system:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nx\nsage: \n```\n\n\nCheers,\n\nMichael",
+    "body": "This has been fixed by the new coercion system:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nx\nsage: \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T16:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3004",
     "type": "issue_comment",
@@ -71,7 +67,6 @@ sage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)
 x
 sage: 
 ```
-
 
 Cheers,
 

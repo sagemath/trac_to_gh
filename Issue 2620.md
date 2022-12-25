@@ -3,7 +3,7 @@
 archive/issues_002620.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nPython has a generator type which is cool and now this works:\n\n\n```\nP.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nI1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nQ = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nI2 = ideal( Q(f) for f in I1.gens() ) # note we don't construct a list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2620\n\n",
+    "body": "Assignee: @malb\n\nPython has a generator type which is cool and now this works:\n\n```\nP.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nI1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nQ = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nI2 = ideal( Q(f) for f in I1.gens() ) # note we don't construct a list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2620\n\n",
     "created_at": "2008-03-20T22:15:35Z",
     "labels": [
         "component: commutative algebra",
@@ -20,14 +20,12 @@ Assignee: @malb
 
 Python has a generator type which is cool and now this works:
 
-
 ```
 P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')
 I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])
 Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )
 I2 = ideal( Q(f) for f in I1.gens() ) # note we don't construct a list
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2620
 

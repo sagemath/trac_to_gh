@@ -85,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_036006.json:
 ```json
 {
-    "body": "The following comment in the file should definitely be deleted:\n\n```\n3\t3\tDoctesting of this file is disabled because it fails in so many ways it is even funny. \n4\t4\tSee http://trac.sagemath.org/sage_trac/ticket/3593 for two of the four ways I've\n<SNIP> \n```\n\nI will do so via a referee patch.\n\nCheers,\n\nMichael",
+    "body": "The following comment in the file should definitely be deleted:\n\n```\n3\t3\tDoctesting of this file is disabled because it fails in so many ways it is even funny. \n4\t4\tSee http://trac.sagemath.org/sage_trac/ticket/3593 for two of the four ways I've\n<SNIP> \n```\nI will do so via a referee patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-11T15:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4760",
     "type": "issue_comment",
@@ -101,7 +101,6 @@ The following comment in the file should definitely be deleted:
 4	4	See http://trac.sagemath.org/sage_trac/ticket/3593 for two of the four ways I've
 <SNIP> 
 ```
-
 I will do so via a referee patch.
 
 Cheers,

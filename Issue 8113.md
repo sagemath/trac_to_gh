@@ -75,7 +75,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071111.json:
 ```json
 {
-    "body": "I would say the usual act in spkg-install. See the patch.\n\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so\nlib/libgd.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
+    "body": "I would say the usual act in spkg-install. See the patch.\n\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg)\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so\nlib/libgd.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\nJaap",
     "created_at": "2010-01-28T17:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
@@ -91,13 +91,11 @@ The spkg is here:
 [http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg)
 
 
-
 ```
 jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so
 lib/libgd.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 
 ```
-
 
 Jaap
 
@@ -144,7 +142,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071114.json:
 ```json
 {
-    "body": "The files are indeed 64-bit now \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/bin/annotate\nlocal/bin/annotate:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0\nlocal/lib/libgd.so.2.0.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
+    "body": "The files are indeed 64-bit now \n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/bin/annotate\nlocal/bin/annotate:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0\nlocal/lib/libgd.so.2.0.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```",
     "created_at": "2010-01-29T18:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
@@ -155,14 +153,12 @@ archive/issue_comments_071114.json:
 
 The files are indeed 64-bit now 
 
-
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/bin/annotate
 local/bin/annotate:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0
 local/lib/libgd.so.2.0.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
-
 
 
 

@@ -148,7 +148,7 @@ Wow, here is a lure of closing a 3-digit ticket....
 archive/issue_comments_000496.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> The \"browse offline\" is different than a zip of .sws files.  I think this is \"published as html files\", then \"zip all those together\".  We don't even have an easy way to publish to html yet.\nThough this could be automated, perhaps using the cell server...\n> Wow, here is a lure of closing a 3-digit ticket....\nIn fact, the fourth-lowest remaining, I think.",
+    "body": "Replying to [comment:6 jason]:\n> The \"browse offline\" is different than a zip of .sws files.  I think this is \"published as html files\", then \"zip all those together\".  We don't even have an easy way to publish to html yet.\n\nThough this could be automated, perhaps using the cell server...\n> Wow, here is a lure of closing a 3-digit ticket....\n\nIn fact, the fourth-lowest remaining, I think.",
     "created_at": "2013-01-29T20:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
@@ -159,8 +159,10 @@ archive/issue_comments_000496.json:
 
 Replying to [comment:6 jason]:
 > The "browse offline" is different than a zip of .sws files.  I think this is "published as html files", then "zip all those together".  We don't even have an easy way to publish to html yet.
+
 Though this could be automated, perhaps using the cell server...
 > Wow, here is a lure of closing a 3-digit ticket....
+
 In fact, the fourth-lowest remaining, I think.
 
 

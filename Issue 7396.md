@@ -3,7 +3,7 @@
 archive/issues_007396.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
     "created_at": "2009-11-05T15:46:33Z",
     "labels": [
         "component: combinatorics",
@@ -29,7 +29,6 @@ sage: DisjointUnionEnumeratedSets(
 ...       Family(NonNegativeIntegers(), Permutations))
 Disjoint union of Lazy family (Permutations(i))_{i in Non negative integers}
 ```
-
 
 Florent
 

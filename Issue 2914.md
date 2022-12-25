@@ -3,7 +3,7 @@
 archive/issues_002914.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is *terrible*\n\n\n```\nsage: n = 10\nsage: n.set_str('15')\nsage: n\n15\n```\n\n\nThe set_str function must be made __ or removed.\n\nLook at what evil can occur:\n\n```\nsage: a = matrix(ZZ,2,[1,2,3,4]); d = a.det(); d\n-2\nsage: d.set_str('10')\nsage: a.det()\n10\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2914\n\n",
+    "body": "Assignee: mabshoff\n\nThis is *terrible*\n\n```\nsage: n = 10\nsage: n.set_str('15')\nsage: n\n15\n```\n\nThe set_str function must be made __ or removed.\n\nLook at what evil can occur:\n\n```\nsage: a = matrix(ZZ,2,[1,2,3,4]); d = a.det(); d\n-2\nsage: d.set_str('10')\nsage: a.det()\n10\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2914\n\n",
     "created_at": "2008-04-14T04:01:26Z",
     "labels": [
         "component: cygwin",
@@ -21,14 +21,12 @@ Assignee: mabshoff
 
 This is *terrible*
 
-
 ```
 sage: n = 10
 sage: n.set_str('15')
 sage: n
 15
 ```
-
 
 The set_str function must be made __ or removed.
 
@@ -41,7 +39,6 @@ sage: d.set_str('10')
 sage: a.det()
 10
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2914
 

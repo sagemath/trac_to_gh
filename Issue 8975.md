@@ -3,7 +3,7 @@
 archive/issues_008975.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
+    "body": "Assignee: @aghitza\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
     "created_at": "2010-05-15T21:25:22Z",
     "labels": [
         "component: algebra",
@@ -21,13 +21,11 @@ Assignee: @aghitza
 The class sage.combinat.root_system.type_reducible.CartanType
 is missing an is_crystalographic and is_simply_laced
 
-
 ```
  sage: R = CartanType("D4xA5")
  sage: R.is_crystalographic()
  sage: R.is_simply_laced()
 ```
-
 
 These both give False which is incorrect.
 
@@ -78,7 +76,7 @@ Changing keywords from "" to "days38".
 archive/issue_comments_082672.json:
 ```json
 {
-    "body": "This has been taken care of (probably in #6588).\n\n\n```\nsage: R = CartanType(\"D5xA4\")\nsage: R.is_crystalographic()\nTrue\nsage: R.is_simply_laced()\nTrue\n```\n\n\nI'm requesting that this ticket be closed.",
+    "body": "This has been taken care of (probably in #6588).\n\n```\nsage: R = CartanType(\"D5xA4\")\nsage: R.is_crystalographic()\nTrue\nsage: R.is_simply_laced()\nTrue\n```\n\nI'm requesting that this ticket be closed.",
     "created_at": "2012-05-12T13:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ archive/issue_comments_082672.json:
 
 This has been taken care of (probably in #6588).
 
-
 ```
 sage: R = CartanType("D5xA4")
 sage: R.is_crystalographic()
@@ -97,7 +94,6 @@ True
 sage: R.is_simply_laced()
 True
 ```
-
 
 I'm requesting that this ticket be closed.
 

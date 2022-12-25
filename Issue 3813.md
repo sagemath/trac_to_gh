@@ -89,7 +89,7 @@ reviewers changes
 archive/issue_comments_027050.json:
 ```json
 {
-    "body": "Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by @saliola created at 2008-08-13 01:54:10\n\nslabbe and I have some suggestions that we are submitting as trac_3813-review.patch. Most are documentation edits. Two noteworthy changes:\n\n1. Below data is a list of floats since that is the output of var_and_list_of_values:\n\n```\n3632\t\t        x, data = var_and_list_of_values(xrange, plot_points) \n3633\t- \t        data = list(data) \n```\n\n\n2. Lines 3683--3699: We moved the adaptive refinement algorithm into a standalone function and added documentation and doctests for it. It's an interesting enough function that a user might want to play with it.\n\n(sage-adaptive-plot.patch needs to be applied first.)",
+    "body": "Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by @saliola created at 2008-08-13 01:54:10\n\nslabbe and I have some suggestions that we are submitting as trac_3813-review.patch. Most are documentation edits. Two noteworthy changes:\n\n1. Below data is a list of floats since that is the output of var_and_list_of_values:\n\n```\n3632\t\t        x, data = var_and_list_of_values(xrange, plot_points) \n3633\t- \t        data = list(data) \n```\n\n2. Lines 3683--3699: We moved the adaptive refinement algorithm into a standalone function and added documentation and doctests for it. It's an interesting enough function that a user might want to play with it.\n\n(sage-adaptive-plot.patch needs to be applied first.)",
     "created_at": "2008-08-13T01:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ slabbe and I have some suggestions that we are submitting as trac_3813-review.pa
 3633	- 	        data = list(data) 
 ```
 
-
 2. Lines 3683--3699: We moved the adaptive refinement algorithm into a standalone function and added documentation and doctests for it. It's an interesting enough function that a user might want to play with it.
 
 (sage-adaptive-plot.patch needs to be applied first.)
@@ -121,7 +120,7 @@ slabbe and I have some suggestions that we are submitting as trac_3813-review.pa
 archive/issue_comments_027051.json:
 ```json
 {
-    "body": "REVIEW:\n\n* watch out -- sage-adaptive-plot.patch is not a mercurial patch, so no log message.  maybe copy in the message from the ticket. \n\n* The very first plot I tried (after applying both patches) is wrong: `plot(sin(1/x), (x,0,3), plot_points=5)`.  For me, it's missing the left-hand side of the plot.   I.e., for some reason inputting a small number of sample points results in only a small part of the plot being plotted.  This is not good.\n\n* It seems like it is no longer possible to make a plot that *doesn't* use adaptive refinement, since this now fails even though it used to work:\n\n```\ntime plot(sin(1/x), (x,-1,3),plot_points=10000, plot_division=0)\n```\n\nThus you've broken all code that uses plot_division.  You need to either support plot_division (why not??), or at the worst put in a deprecation warning.  If you do deprecation, see `rings/polynomial/polynomial_ring_constructor.py` for an example of how to do this using the warnings.warn function in the warnings module. \n\n* The default option for adaptive_tolerance is not giving in the docstring, but is 0.01.  It should be given here (which appears in two places in the file now):\n\n```\n        adaptive_tolerance -- how large a difference should be before the\n                              adaptive refinement code considers it significant.\n                              This depends on the interval you use by default.\n\n```\n\n\n* This line in adaptive_refinement has a bug:\n\n```\n    x = (p1[0] + p2[0])/2\n```\n\nIn particular, if you make p1[0] and p2[0] both Python int's then you can easily get a completely wrong answer.  You must coerce the entries of the pi's to floats first or replace 2 by 2.0.  For example:\n\n```\nfrom sage.plot.plot import adaptive_refinement\na = adaptive_refinement(sin, (int(0),1), (int(1),1), 0.01)\nb = adaptive_refinement(sin, (0,1), (1,1), 0.01)\na == b\n///\nFalse\n```\n\nSame comments about\n\n```\n    if abs((p1[1] + p2[1])/2 - y) > adaptive_tolerance:\n```\n",
+    "body": "REVIEW:\n\n* watch out -- sage-adaptive-plot.patch is not a mercurial patch, so no log message.  maybe copy in the message from the ticket. \n\n* The very first plot I tried (after applying both patches) is wrong: `plot(sin(1/x), (x,0,3), plot_points=5)`.  For me, it's missing the left-hand side of the plot.   I.e., for some reason inputting a small number of sample points results in only a small part of the plot being plotted.  This is not good.\n\n* It seems like it is no longer possible to make a plot that *doesn't* use adaptive refinement, since this now fails even though it used to work:\n\n```\ntime plot(sin(1/x), (x,-1,3),plot_points=10000, plot_division=0)\n```\nThus you've broken all code that uses plot_division.  You need to either support plot_division (why not??), or at the worst put in a deprecation warning.  If you do deprecation, see `rings/polynomial/polynomial_ring_constructor.py` for an example of how to do this using the warnings.warn function in the warnings module. \n\n* The default option for adaptive_tolerance is not giving in the docstring, but is 0.01.  It should be given here (which appears in two places in the file now):\n\n```\n        adaptive_tolerance -- how large a difference should be before the\n                              adaptive refinement code considers it significant.\n                              This depends on the interval you use by default.\n\n```\n\n* This line in adaptive_refinement has a bug:\n\n```\n    x = (p1[0] + p2[0])/2\n```\nIn particular, if you make p1[0] and p2[0] both Python int's then you can easily get a completely wrong answer.  You must coerce the entries of the pi's to floats first or replace 2 by 2.0.  For example:\n\n```\nfrom sage.plot.plot import adaptive_refinement\na = adaptive_refinement(sin, (int(0),1), (int(1),1), 0.01)\nb = adaptive_refinement(sin, (0,1), (1,1), 0.01)\na == b\n///\nFalse\n```\nSame comments about\n\n```\n    if abs((p1[1] + p2[1])/2 - y) > adaptive_tolerance:\n```",
     "created_at": "2008-08-13T03:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
@@ -141,7 +140,6 @@ REVIEW:
 ```
 time plot(sin(1/x), (x,-1,3),plot_points=10000, plot_division=0)
 ```
-
 Thus you've broken all code that uses plot_division.  You need to either support plot_division (why not??), or at the worst put in a deprecation warning.  If you do deprecation, see `rings/polynomial/polynomial_ring_constructor.py` for an example of how to do this using the warnings.warn function in the warnings module. 
 
 * The default option for adaptive_tolerance is not giving in the docstring, but is 0.01.  It should be given here (which appears in two places in the file now):
@@ -153,13 +151,11 @@ Thus you've broken all code that uses plot_division.  You need to either support
 
 ```
 
-
 * This line in adaptive_refinement has a bug:
 
 ```
     x = (p1[0] + p2[0])/2
 ```
-
 In particular, if you make p1[0] and p2[0] both Python int's then you can easily get a completely wrong answer.  You must coerce the entries of the pi's to floats first or replace 2 by 2.0.  For example:
 
 ```
@@ -170,13 +166,11 @@ a == b
 ///
 False
 ```
-
 Same comments about
 
 ```
     if abs((p1[1] + p2[1])/2 - y) > adaptive_tolerance:
 ```
-
 
 
 
@@ -339,7 +333,7 @@ This sounds like a positive review.  Thanks for this fantastic improvement to th
 archive/issue_comments_027060.json:
 ```json
 {
-    "body": "This patch has some slight reject issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.rc0/devel/sage$ patch -p1 < trac_3813-anakha-adaptive-plot-v3.patch \npatching file sage/plot/plot.py\nHunk #1 succeeded at 3449 (offset 35 lines).\nHunk #2 succeeded at 3504 (offset 35 lines).\nHunk #3 succeeded at 3531 (offset 35 lines).\nHunk #4 succeeded at 3599 (offset 35 lines).\nHunk #5 succeeded at 3679 (offset 46 lines).\nHunk #6 FAILED at 3704.\nHunk #7 FAILED at 4536.\n2 out of 7 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\n```\n\nPlease rebase it against 3.1.rc0 once it is out.\n\nCheers,\n\nMichael",
+    "body": "This patch has some slight reject issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.rc0/devel/sage$ patch -p1 < trac_3813-anakha-adaptive-plot-v3.patch \npatching file sage/plot/plot.py\nHunk #1 succeeded at 3449 (offset 35 lines).\nHunk #2 succeeded at 3504 (offset 35 lines).\nHunk #3 succeeded at 3531 (offset 35 lines).\nHunk #4 succeeded at 3599 (offset 35 lines).\nHunk #5 succeeded at 3679 (offset 46 lines).\nHunk #6 FAILED at 3704.\nHunk #7 FAILED at 4536.\n2 out of 7 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\n```\nPlease rebase it against 3.1.rc0 once it is out.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T06:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
@@ -362,7 +356,6 @@ Hunk #6 FAILED at 3704.
 Hunk #7 FAILED at 4536.
 2 out of 7 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 ```
-
 Please rebase it against 3.1.rc0 once it is out.
 
 Cheers,
@@ -484,7 +477,7 @@ Attachment [trac_3813_doctestfixes.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_027066.json:
 ```json
 {
-    "body": "trac_3813_doctestfixes.patch fixes the following two doctest failures:\n\n```\nsage -t  devel/sage/sage/plot/plot.py                       \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/tmp/plot.py\", line 4762:\n    sage: n1 = len(adaptive_refinement(f, (0,0), (pi,0), adaptive_tolerance=0.01)); n1\nExpected:\n    79\nGot:\n    15\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/tmp/plot.py\", line 4766:\n    sage: n3 = len(adaptive_refinement(f, (0,0), (pi,0), adaptive_tolerance=0.005)); n3\nExpected:\n    88\nGot:\n    16\n**********************************************************************\n```\n\nIt also makes two doctests long.\n\nCheers,\n\nMichael",
+    "body": "trac_3813_doctestfixes.patch fixes the following two doctest failures:\n\n```\nsage -t  devel/sage/sage/plot/plot.py                       \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/tmp/plot.py\", line 4762:\n    sage: n1 = len(adaptive_refinement(f, (0,0), (pi,0), adaptive_tolerance=0.01)); n1\nExpected:\n    79\nGot:\n    15\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/tmp/plot.py\", line 4766:\n    sage: n3 = len(adaptive_refinement(f, (0,0), (pi,0), adaptive_tolerance=0.005)); n3\nExpected:\n    88\nGot:\n    16\n**********************************************************************\n```\nIt also makes two doctests long.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-21T23:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
@@ -513,7 +506,6 @@ Got:
     16
 **********************************************************************
 ```
-
 It also makes two doctests long.
 
 Cheers,

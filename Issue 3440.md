@@ -3,7 +3,7 @@
 archive/issues_003440.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: polybori\n\nBurcin says this broke when the iterators changed:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n/usr/local/sage-3.0/local/lib/python2.5/site-packages/polybori/PyPolyBoRi.py in <lambda>(x)\n     21 OrderCode.__dict__ = order_dict\n     22\n---> 23 Variable = lambda x: get_cring().gen(x)\n     24\n     25 def Ring(n, order='lp'):\n\n/home/malb/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.gen (sage/rings/polynomial/pbori.cpp:3333)()\n\n<type 'exceptions.TypeError'>: an integer is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3440\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: polybori\n\nBurcin says this broke when the iterators changed:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n/usr/local/sage-3.0/local/lib/python2.5/site-packages/polybori/PyPolyBoRi.py in <lambda>(x)\n     21 OrderCode.__dict__ = order_dict\n     22\n---> 23 Variable = lambda x: get_cring().gen(x)\n     24\n     25 def Ring(n, order='lp'):\n\n/home/malb/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.gen (sage/rings/polynomial/pbori.cpp:3333)()\n\n<type 'exceptions.TypeError'>: an integer is required\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3440\n\n",
     "created_at": "2008-06-16T20:03:55Z",
     "labels": [
         "component: commutative algebra",
@@ -47,7 +47,6 @@ sage: I.groebner_basis(aes=True)
 
 <type 'exceptions.TypeError'>: an integer is required
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3440
 
@@ -100,7 +99,7 @@ this fixes the first issue
 archive/issue_comments_024224.json:
 ```json
 {
-    "body": "Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by @malb created at 2008-08-18 12:13:00\n\nThe attache patch fixes the issue above, however now:\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\n\nIdeas, thoughts, work-arounds?",
+    "body": "Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by @malb created at 2008-08-18 12:13:00\n\nThe attache patch fixes the issue above, however now:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\nIdeas, thoughts, work-arounds?",
     "created_at": "2008-08-18T12:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
@@ -112,7 +111,6 @@ archive/issue_comments_024224.json:
 Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by @malb created at 2008-08-18 12:13:00
 
 The attache patch fixes the issue above, however now:
-
 
 ```
 sage: sr = mq.SR(2,1,1,4,gf2=True)
@@ -135,7 +133,6 @@ ImportError                               Traceback (most recent call last)
 ImportError: No module named cache
 ```
 
-
 Ideas, thoughts, work-arounds?
 
 
@@ -145,7 +142,7 @@ Ideas, thoughts, work-arounds?
 archive/issue_comments_024225.json:
 ```json
 {
-    "body": "personally, at the moment, I don't feel, that it is good to expose this option to\nusers. I did that for aes systems initially. But it is not about: Use that option and everything will work well...\n\nNevertheless: workaround\nreplace 57/58 by\n\n```\ncache={}\n```\n\nwhich will make it slower.\nI think, we don't distribute cache.py (which contains some GB of the 8BIT SBOX).",
+    "body": "personally, at the moment, I don't feel, that it is good to expose this option to\nusers. I did that for aes systems initially. But it is not about: Use that option and everything will work well...\n\nNevertheless: workaround\nreplace 57/58 by\n\n```\ncache={}\n```\nwhich will make it slower.\nI think, we don't distribute cache.py (which contains some GB of the 8BIT SBOX).",
     "created_at": "2008-08-18T12:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
@@ -163,7 +160,6 @@ replace 57/58 by
 ```
 cache={}
 ```
-
 which will make it slower.
 I think, we don't distribute cache.py (which contains some GB of the 8BIT SBOX).
 

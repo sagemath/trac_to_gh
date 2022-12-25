@@ -322,7 +322,7 @@ Nathann
 archive/issue_comments_073107.json:
 ```json
 {
-    "body": "Hello, Nathann !\nI corrected my patch according to your remarks. I agree with all of them except the following one\n\n  I do not know much about iterators, but...\n  Well, the values of vertex_iterators are iterators,\n  so\n\n\n```\nfor vi in vertex_iterators.values():\n    cycles.extend(list(vi))\n```\n\n\nFor two reasons: (1) I want to iterate cycles with increasing length and what you propose breaks this property. (2) There is no guarantee that ``list(vi)`` will ever terminate, since the number of cycles (when ``simple`` is set to False) may be infinite !\n\nI also added three functions which iterate over paths. Note that the code is almost the same, but for sake of efficienty, it seems better to me not to intersect it. The main reason is that when you want to enumerate unrooted cycles, there is a very fast way to verify that (just check that the starting vertex of the current path is the smallest in the path). Therefore, I prefered to separate the two functions.\n\nThank you for the useful comments !\n\nAlso, if you prefer me to break the patch into two smaller ones, just tell me, I'll do it. I'll upload the patch in a short while.",
+    "body": "Hello, Nathann !\nI corrected my patch according to your remarks. I agree with all of them except the following one\n\n  I do not know much about iterators, but...\n  Well, the values of vertex_iterators are iterators,\n  so\n\n```\nfor vi in vertex_iterators.values():\n    cycles.extend(list(vi))\n```\n\nFor two reasons: (1) I want to iterate cycles with increasing length and what you propose breaks this property. (2) There is no guarantee that ``list(vi)`` will ever terminate, since the number of cycles (when ``simple`` is set to False) may be infinite !\n\nI also added three functions which iterate over paths. Note that the code is almost the same, but for sake of efficienty, it seems better to me not to intersect it. The main reason is that when you want to enumerate unrooted cycles, there is a very fast way to verify that (just check that the starting vertex of the current path is the smallest in the path). Therefore, I prefered to separate the two functions.\n\nThank you for the useful comments !\n\nAlso, if you prefer me to break the patch into two smaller ones, just tell me, I'll do it. I'll upload the patch in a short while.",
     "created_at": "2010-02-23T13:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8273",
     "type": "issue_comment",
@@ -338,12 +338,10 @@ I corrected my patch according to your remarks. I agree with all of them except 
   Well, the values of vertex_iterators are iterators,
   so
 
-
 ```
 for vi in vertex_iterators.values():
     cycles.extend(list(vi))
 ```
-
 
 For two reasons: (1) I want to iterate cycles with increasing length and what you propose breaks this property. (2) There is no guarantee that ``list(vi)`` will ever terminate, since the number of cycles (when ``simple`` is set to False) may be infinite !
 

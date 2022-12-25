@@ -3,7 +3,7 @@
 archive/issues_005260.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis is motivated by http://groups.google.com/group/sage-devel/browse_thread/thread/ef0eecd9f3473215\n\n```\nHi everyone, \nbeing a new Sage user under Mac OS X, I spent a whole day trying to \nget the examples for using compiled code from \nhttp://www.math.washington.edu/~jkantor/Numerical_Sage/node10.html to \nwork. Trying to make sense of the error messages and googling for \nfixes, I did not realise the most simple explanation - until I ran \n\"which gcc\" in the terminal and got no result. I simply didn't have \ngcc installed! Unless I'm blind, there is no hint to check if gcc is \ninstalled in an obvious place on website or in the documentation. Of \ncourse, the problem was fixed easily by installing XcodeTools. \nI think it would be very helpful for new users to have a remark in the \nreadme or on the download page, that sage does not include gcc, but \nrequires it for certain features. Maybe this is so obvious, that \nnobody thought of it before. \nOtherwise, Sage seems to be a great piece of Software, keep on the \ngreat Work \nFelix \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5260\n\n",
+    "body": "Assignee: cwitty\n\nThis is motivated by http://groups.google.com/group/sage-devel/browse_thread/thread/ef0eecd9f3473215\n\n```\nHi everyone, \nbeing a new Sage user under Mac OS X, I spent a whole day trying to \nget the examples for using compiled code from \nhttp://www.math.washington.edu/~jkantor/Numerical_Sage/node10.html to \nwork. Trying to make sense of the error messages and googling for \nfixes, I did not realise the most simple explanation - until I ran \n\"which gcc\" in the terminal and got no result. I simply didn't have \ngcc installed! Unless I'm blind, there is no hint to check if gcc is \ninstalled in an obvious place on website or in the documentation. Of \ncourse, the problem was fixed easily by installing XcodeTools. \nI think it would be very helpful for new users to have a remark in the \nreadme or on the download page, that sage does not include gcc, but \nrequires it for certain features. Maybe this is so obvious, that \nnobody thought of it before. \nOtherwise, Sage seems to be a great piece of Software, keep on the \ngreat Work \nFelix \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5260\n\n",
     "created_at": "2009-02-13T22:14:35Z",
     "labels": [
         "component: misc",
@@ -39,7 +39,6 @@ Otherwise, Sage seems to be a great piece of Software, keep on the
 great Work 
 Felix 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5260
 

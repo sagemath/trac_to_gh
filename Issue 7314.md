@@ -61,7 +61,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061007.json:
 ```json
 {
-    "body": "In the docstrings, you should not put comments on the sage: line like in \n\n\n```\nEXAMPLE:: \n\n    sage: # From [2], cited in [1] \n    sage: g=graphs.PathGraph(10) \n    sage: w=lambda x: (x*(x*x -1)/6) \n    sage: g.wiener_index()==w(10) \n    True \n```\n\n\nInstead, it should be\n\n\n```\nEXAMPLE:\n\nFrom [2], cited in [1]::\n\n    sage: g=graphs.PathGraph(10) \n    sage: w=lambda x: (x*(x*x -1)/6) \n    sage: g.wiener_index()==w(10) \n    True \n```\n\n\nAlso, you should see the way that references are handled elsewhere in the Sage library.",
+    "body": "In the docstrings, you should not put comments on the sage: line like in \n\n```\nEXAMPLE:: \n\n    sage: # From [2], cited in [1] \n    sage: g=graphs.PathGraph(10) \n    sage: w=lambda x: (x*(x*x -1)/6) \n    sage: g.wiener_index()==w(10) \n    True \n```\n\nInstead, it should be\n\n```\nEXAMPLE:\n\nFrom [2], cited in [1]::\n\n    sage: g=graphs.PathGraph(10) \n    sage: w=lambda x: (x*(x*x -1)/6) \n    sage: g.wiener_index()==w(10) \n    True \n```\n\nAlso, you should see the way that references are handled elsewhere in the Sage library.",
     "created_at": "2009-10-26T16:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ archive/issue_comments_061007.json:
 ```
 
 In the docstrings, you should not put comments on the sage: line like in 
-
 
 ```
 EXAMPLE:: 
@@ -83,9 +82,7 @@ EXAMPLE::
     True 
 ```
 
-
 Instead, it should be
-
 
 ```
 EXAMPLE:
@@ -97,7 +94,6 @@ From [2], cited in [1]::
     sage: g.wiener_index()==w(10) 
     True 
 ```
-
 
 Also, you should see the way that references are handled elsewhere in the Sage library.
 

@@ -163,7 +163,7 @@ Note to the reviewer: it would be best to start by scrolling down in the main pa
 archive/issue_comments_029491.json:
 ```json
 {
-    "body": "Hmm, I don't like the following change:\n\n```\n178\t \t        s = str(self) \n179\t428\t        import sage.libs.pari.gen_py \n180\t \t        return sage.libs.pari.gen_py.pari, (s,) \n \t429\t        return sage.libs.pari.gen_py.pari, (str(self),) \n```\n\nI am not 100% certain, but if s were a C type object the above would cause a leak. I have fixed similar issues over and over again in code all over Sage and I suspect that the reference count for \"return str(foo)\" might be broken somehow. I have zero prove of this, obviously, but I intent to dig deep one day.\n\nCheers,\n\nMichael",
+    "body": "Hmm, I don't like the following change:\n\n```\n178\t \t        s = str(self) \n179\t428\t        import sage.libs.pari.gen_py \n180\t \t        return sage.libs.pari.gen_py.pari, (s,) \n \t429\t        return sage.libs.pari.gen_py.pari, (str(self),) \n```\nI am not 100% certain, but if s were a C type object the above would cause a leak. I have fixed similar issues over and over again in code all over Sage and I suspect that the reference count for \"return str(foo)\" might be broken somehow. I have zero prove of this, obviously, but I intent to dig deep one day.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T00:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ Hmm, I don't like the following change:
 180	 	        return sage.libs.pari.gen_py.pari, (s,) 
  	429	        return sage.libs.pari.gen_py.pari, (str(self),) 
 ```
-
 I am not 100% certain, but if s were a C type object the above would cause a leak. I have fixed similar issues over and over again in code all over Sage and I suspect that the reference count for "return str(foo)" might be broken somehow. I have zero prove of this, obviously, but I intent to dig deep one day.
 
 Cheers,
@@ -216,7 +215,7 @@ Alex
 archive/issue_comments_029493.json:
 ```json
 {
-    "body": "Replying to [comment:7 AlexGhitza]:\n> Michael,\n> \n> I will rebase the patch against 3.1.3.alpha1 very soon and fix the issue that you're pointing out.\n> \n> Alex\n\nIt was fine with alpha0.  Thanks, Alex.",
+    "body": "Replying to [comment:7 AlexGhitza]:\n> Michael,\n> \n> I will rebase the patch against 3.1.3.alpha1 very soon and fix the issue that you're pointing out.\n> \n> Alex\n\n\nIt was fine with alpha0.  Thanks, Alex.",
     "created_at": "2008-09-25T11:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -231,6 +230,7 @@ Replying to [comment:7 AlexGhitza]:
 > I will rebase the patch against 3.1.3.alpha1 very soon and fix the issue that you're pointing out.
 > 
 > Alex
+
 
 It was fine with alpha0.  Thanks, Alex.
 
@@ -279,7 +279,7 @@ there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch wit
 archive/issue_comments_029496.json:
 ```json
 {
-    "body": "Replying to [comment:9 AlexGhitza]:\n> there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch with a rebased one\n\nNB the doc/const patch still needs to be applied separately.",
+    "body": "Replying to [comment:9 AlexGhitza]:\n> there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch with a rebased one\n\n\nNB the doc/const patch still needs to be applied separately.",
     "created_at": "2008-09-25T15:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
@@ -290,6 +290,7 @@ archive/issue_comments_029496.json:
 
 Replying to [comment:9 AlexGhitza]:
 > there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch with a rebased one
+
 
 NB the doc/const patch still needs to be applied separately.
 

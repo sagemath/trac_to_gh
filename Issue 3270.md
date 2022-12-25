@@ -3,7 +3,7 @@
 archive/issues_003270.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nWas:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 2.39 s, sys: 0.58 s, total: 2.97 s\nWall time: 24.32\n```\n\nNow:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 0.19 s, sys: 0.04 s, total: 0.23 s\nWall time: 0.24\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3270\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nWas:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 2.39 s, sys: 0.58 s, total: 2.97 s\nWall time: 24.32\n```\nNow:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 0.19 s, sys: 0.04 s, total: 0.23 s\nWall time: 0.24\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3270\n\n",
     "created_at": "2008-05-22T00:26:04Z",
     "labels": [
         "component: coding theory",
@@ -29,7 +29,6 @@ sage: time G = C.permutation_automorphism_group()
 CPU times: user 2.39 s, sys: 0.58 s, total: 2.97 s
 Wall time: 24.32
 ```
-
 Now:
 
 ```
@@ -38,7 +37,6 @@ sage: time G = C.permutation_automorphism_group()
 CPU times: user 0.19 s, sys: 0.04 s, total: 0.23 s
 Wall time: 0.24
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3270
 

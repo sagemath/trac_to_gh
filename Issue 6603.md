@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6603
 archive/issue_comments_053946.json:
 ```json
 {
-    "body": "ON an amd64 ubuntu 9.04 machine, I got an error in installationof cbc. Here is the tail:\n\n\n```\n\nmake[2]: Leaving directory `/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3/src'\nmake[1]: Leaving directory `/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3/src'\npython: can't open file 'setup.py': [Errno 2] No such file or directory\n\nreal    12m35.674s\nuser    10m40.044s\nsys     1m53.819s\nsage: An error occurred while installing cbc-2.3\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wdj/sagefiles/sage-4.1.1.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3 and type 'make'.\nInstead type \"/home/wdj/sagefiles/sage-4.1.1.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\n\nAny idea what the problem is?",
+    "body": "ON an amd64 ubuntu 9.04 machine, I got an error in installationof cbc. Here is the tail:\n\n```\n\nmake[2]: Leaving directory `/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3/src'\nmake[1]: Leaving directory `/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3/src'\npython: can't open file 'setup.py': [Errno 2] No such file or directory\n\nreal    12m35.674s\nuser    10m40.044s\nsys     1m53.819s\nsage: An error occurred while installing cbc-2.3\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wdj/sagefiles/sage-4.1.1.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3 and type 'make'.\nInstead type \"/home/wdj/sagefiles/sage-4.1.1.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wdj/sagefiles/sage-4.1.1.alpha0/spkg/build/cbc-2.3\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\nAny idea what the problem is?",
     "created_at": "2009-07-25T14:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6603",
     "type": "issue_comment",
@@ -50,7 +50,6 @@ archive/issue_comments_053946.json:
 ```
 
 ON an amd64 ubuntu 9.04 machine, I got an error in installationof cbc. Here is the tail:
-
 
 ```
 
@@ -73,7 +72,6 @@ in order to set all environment variables correctly, then cd to
 (When you are done debugging, you can type "exit" to leave the
 subshell.)
 ```
-
 
 Any idea what the problem is?
 

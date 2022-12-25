@@ -132,7 +132,7 @@ archive/issue_events_001666.json:
 archive/issue_comments_003198.json:
 ```json
 {
-    "body": "Without inplace operators:\n\n```\nsage: A = [Integer(n) for n in range(10^6)]\nsage: %time\nsage: time sum(A)\n499999500000\nCPU time: 0.26 s,  Wall time: 0.26 s\n\nsage: E = EllipticCurve('37a').change_ring(GF(5^6, 'a'))\nsage: P = E(0,0)\nsage: %time\nsage: for i in range(1000):\n...       Q = i*P\nCPU time: 1.46 s,  Wall time: 1.46 s\n\nsage: %cython\nsage: def get_address(o):\n...       return <Py_ssize_t>o\nsage: a = 20\nsage: get_address(a)\n278949184\nsage: a += 10\nsage: get_address(a)\n190804384\nsage: b = a\nsage: a += 10\nsage: get_address(a)\n278947360\nsage: del b\nsage: a += 10\nsage: get_address(a)\n278949184\n```\n",
+    "body": "Without inplace operators:\n\n```\nsage: A = [Integer(n) for n in range(10^6)]\nsage: %time\nsage: time sum(A)\n499999500000\nCPU time: 0.26 s,  Wall time: 0.26 s\n\nsage: E = EllipticCurve('37a').change_ring(GF(5^6, 'a'))\nsage: P = E(0,0)\nsage: %time\nsage: for i in range(1000):\n...       Q = i*P\nCPU time: 1.46 s,  Wall time: 1.46 s\n\nsage: %cython\nsage: def get_address(o):\n...       return <Py_ssize_t>o\nsage: a = 20\nsage: get_address(a)\n278949184\nsage: a += 10\nsage: get_address(a)\n190804384\nsage: b = a\nsage: a += 10\nsage: get_address(a)\n278947360\nsage: del b\nsage: a += 10\nsage: get_address(a)\n278949184\n```",
     "created_at": "2007-09-13T18:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
@@ -178,13 +178,12 @@ sage: get_address(a)
 
 
 
-
 ---
 
 archive/issue_comments_003199.json:
 ```json
 {
-    "body": "With inplace operators: \n\n\n```\nsage: A = [Integer(n) for n in range(10^6)]\nsage: %time\nsage: sum(A)    # Note: I did not edit the sum function at all, just __add__\n499999500000\nCPU time: 0.11 s,  Wall time: 0.12 s\n\nsage: E = EllipticCurve('37a').change_ring(GF(5^6, 'a'))\nsage: P = E(0,0)\nsage: %time\nsage: for i in range(1000):\n...       Q = i*P\nCPU time: 0.28 s,  Wall time: 0.29 s\n\nsage: %cython\nsage: def get_address(o):\n...       return <Py_ssize_t>o\nsage: a = 20\nsage: get_address(a)\n343719648\nsage: a += 10\nsage: get_address(a)  # same as above => mutated\n343719648\nsage: b = a\nsage: a += 10\nsage: get_address(a)  # not mutated because we can still access the integer via b\n343719584\nsage: b = a\nsage: del b\nsage: a += 10\nsage: get_address(a)  # after b is gone, it is safe to mutate\n343719584\n```\n",
+    "body": "With inplace operators: \n\n```\nsage: A = [Integer(n) for n in range(10^6)]\nsage: %time\nsage: sum(A)    # Note: I did not edit the sum function at all, just __add__\n499999500000\nCPU time: 0.11 s,  Wall time: 0.12 s\n\nsage: E = EllipticCurve('37a').change_ring(GF(5^6, 'a'))\nsage: P = E(0,0)\nsage: %time\nsage: for i in range(1000):\n...       Q = i*P\nCPU time: 0.28 s,  Wall time: 0.29 s\n\nsage: %cython\nsage: def get_address(o):\n...       return <Py_ssize_t>o\nsage: a = 20\nsage: get_address(a)\n343719648\nsage: a += 10\nsage: get_address(a)  # same as above => mutated\n343719648\nsage: b = a\nsage: a += 10\nsage: get_address(a)  # not mutated because we can still access the integer via b\n343719584\nsage: b = a\nsage: del b\nsage: a += 10\nsage: get_address(a)  # after b is gone, it is safe to mutate\n343719584\n```",
     "created_at": "2007-09-13T19:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
@@ -194,7 +193,6 @@ archive/issue_comments_003199.json:
 ```
 
 With inplace operators: 
-
 
 ```
 sage: A = [Integer(n) for n in range(10^6)]
@@ -232,13 +230,12 @@ sage: get_address(a)  # after b is gone, it is safe to mutate
 
 
 
-
 ---
 
 archive/issue_comments_003200.json:
 ```json
 {
-    "body": "Another example without\n\n\n```\nsage: R.<t> = ZZ[]\nsage: S.<x> = LaurentSeriesRing(R)\nsage: type(x)\n<type 'sage.rings.laurent_series_ring_element.LaurentSeries'>\nsage: %time\nsage: for _ in range(1000):\n...       f = x^3 - t*x^2 + x\nCPU time: 1.42 s,  Wall time: 1.43 s\n```\n\n\nand with\n\n\n```\nsage: R.<t> = ZZ[]\nsage: S.<x> = LaurentSeriesRing(R)\nsage: type(x)\n<type 'sage.rings.laurent_series_ring_element.LaurentSeries'>\nsage: %time\nsage: for _ in range(1000):\n...       f = x^3 - t*x^2 + x\nCPU time: 0.88 s,  Wall time: 0.88 s\n```\n",
+    "body": "Another example without\n\n```\nsage: R.<t> = ZZ[]\nsage: S.<x> = LaurentSeriesRing(R)\nsage: type(x)\n<type 'sage.rings.laurent_series_ring_element.LaurentSeries'>\nsage: %time\nsage: for _ in range(1000):\n...       f = x^3 - t*x^2 + x\nCPU time: 1.42 s,  Wall time: 1.43 s\n```\n\nand with\n\n```\nsage: R.<t> = ZZ[]\nsage: S.<x> = LaurentSeriesRing(R)\nsage: type(x)\n<type 'sage.rings.laurent_series_ring_element.LaurentSeries'>\nsage: %time\nsage: for _ in range(1000):\n...       f = x^3 - t*x^2 + x\nCPU time: 0.88 s,  Wall time: 0.88 s\n```",
     "created_at": "2007-09-13T19:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
@@ -248,7 +245,6 @@ archive/issue_comments_003200.json:
 ```
 
 Another example without
-
 
 ```
 sage: R.<t> = ZZ[]
@@ -261,9 +257,7 @@ sage: for _ in range(1000):
 CPU time: 1.42 s,  Wall time: 1.43 s
 ```
 
-
 and with
-
 
 ```
 sage: R.<t> = ZZ[]
@@ -275,7 +269,6 @@ sage: for _ in range(1000):
 ...       f = x^3 - t*x^2 + x
 CPU time: 0.88 s,  Wall time: 0.88 s
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004215.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nI suspect there is a bug in the implementation of the vector function.\nIt seems that when trying to construct a sparse vector by a dictionary\nsage simply ignores the keys. for example:\n\nsage: v = vector({3:1.1 , 5:3.14}); v\n(1.10000000000000, 3.14000000000000)\n\nwhere one would expect the behavior to be similar to matrix:\n\nsage: m = matrix({(0,3):1.1 , (0,5):3.14}); m\n[0.000000000000000 0.000000000000000 0.000000000000000\n1.10000000000000 0.000000000000000  3.14000000000000]\n\nit seems to me that the problem is in prepare_dict (in\nfree_module_element)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4215\n\n",
+    "body": "Assignee: tbd\n\n```\nI suspect there is a bug in the implementation of the vector function.\nIt seems that when trying to construct a sparse vector by a dictionary\nsage simply ignores the keys. for example:\n\nsage: v = vector({3:1.1 , 5:3.14}); v\n(1.10000000000000, 3.14000000000000)\n\nwhere one would expect the behavior to be similar to matrix:\n\nsage: m = matrix({(0,3):1.1 , (0,5):3.14}); m\n[0.000000000000000 0.000000000000000 0.000000000000000\n1.10000000000000 0.000000000000000  3.14000000000000]\n\nit seems to me that the problem is in prepare_dict (in\nfree_module_element)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4215\n\n",
     "created_at": "2008-09-29T02:35:44Z",
     "labels": [
         "component: algebra",
@@ -17,7 +17,6 @@ archive/issues_004215.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 I suspect there is a bug in the implementation of the vector function.
@@ -36,7 +35,6 @@ sage: m = matrix({(0,3):1.1 , (0,5):3.14}); m
 it seems to me that the problem is in prepare_dict (in
 free_module_element)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4215
 

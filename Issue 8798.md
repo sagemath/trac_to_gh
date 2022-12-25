@@ -3,7 +3,7 @@
 archive/issues_008798.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nHere is the problem :\n\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8798\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nHere is the problem :\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8798\n\n",
     "created_at": "2010-04-28T08:08:21Z",
     "labels": [
         "component: graph theory",
@@ -22,7 +22,6 @@ CC:  mvngu
 
 Here is the problem :
 
-
 ```
 ~/sage/sage-doc/sage/graphs$ grep -e "def.*eedback" *
 digraph.py:    def feedback_edge_set(self,value_only=False):
@@ -31,7 +30,6 @@ generic_graph.py:    def feedback_edge_set(self,value_only=False):
 generic_graph.py:    def feedback_vertex_set(self,value_only=False):
 ~/sage/sage-doc/sage/graphs$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8798
 

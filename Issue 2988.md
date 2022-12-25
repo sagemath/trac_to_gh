@@ -54,7 +54,7 @@ Excellent!
 archive/issue_comments_020528.json:
 ```json
 {
-    "body": "It doesn't apply cleanly against rc1:\n\n```\nsage@modular:~/build/sage-3.0.rc1/devel/sage$ hg import /home2/mabshoff/trac_2988.patch\napplying /home2/mabshoff/trac_2988.patch\npatching file sage/server/notebook/cell.py\nHunk #1 FAILED at 645\n1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/cell.py.rej\nabort: patch failed to apply\n```\n\n\nCheers,\n\nMichael",
+    "body": "It doesn't apply cleanly against rc1:\n\n```\nsage@modular:~/build/sage-3.0.rc1/devel/sage$ hg import /home2/mabshoff/trac_2988.patch\napplying /home2/mabshoff/trac_2988.patch\npatching file sage/server/notebook/cell.py\nHunk #1 FAILED at 645\n1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/cell.py.rej\nabort: patch failed to apply\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-22T03:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2988",
     "type": "issue_comment",
@@ -73,7 +73,6 @@ Hunk #1 FAILED at 645
 1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/cell.py.rej
 abort: patch failed to apply
 ```
-
 
 Cheers,
 

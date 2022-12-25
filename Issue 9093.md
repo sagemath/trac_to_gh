@@ -3,7 +3,7 @@
 archive/issues_009093.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: R.<x> = QQ[]\nsage: R(1).is_square()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9093\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: R.<x> = QQ[]\nsage: R(1).is_square()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9093\n\n",
     "created_at": "2010-05-30T08:37:36Z",
     "labels": [
         "component: algebra",
@@ -18,13 +18,11 @@ archive/issues_009093.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: R.<x> = QQ[]
 sage: R(1).is_square()
 False
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9093
@@ -110,7 +108,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084322.json:
 ```json
 {
-    "body": "Patch applied fine to 4.4.3.alpha0.  Code looks fine, and all tests in sage/rings/polynomial pass.\n\nNote (needs another ticket?)   I do not think that this is correct:\n\n```\nsage: R.<x> = ZZ[]\nsage: R(100).squarefree_decomposition()\n100\n```\n\nBut it works better now than it did before by a long way, so I will give this a positive review and suggest that another ticket is opened.",
+    "body": "Patch applied fine to 4.4.3.alpha0.  Code looks fine, and all tests in sage/rings/polynomial pass.\n\nNote (needs another ticket?)   I do not think that this is correct:\n\n```\nsage: R.<x> = ZZ[]\nsage: R(100).squarefree_decomposition()\n100\n```\nBut it works better now than it did before by a long way, so I will give this a positive review and suggest that another ticket is opened.",
     "created_at": "2010-06-02T14:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
@@ -128,7 +126,6 @@ sage: R.<x> = ZZ[]
 sage: R(100).squarefree_decomposition()
 100
 ```
-
 But it works better now than it did before by a long way, so I will give this a positive review and suggest that another ticket is opened.
 
 

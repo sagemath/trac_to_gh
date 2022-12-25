@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/465
 archive/issue_comments_002299.json:
 ```json
 {
-    "body": "At http://sage.math.washington.edu/home/mabshoff/linbox-20070814.p1.spkg is an updated LinBox spkg. Changes:\n\n```\nmabshoff@neron standard$ less linbox-20070814.p1/SPKG.txt\n*20070821:\n\n- reenable tuning test\n- added spkg-check\n```\n\n\nCheers,\n\nMichael",
+    "body": "At http://sage.math.washington.edu/home/mabshoff/linbox-20070814.p1.spkg is an updated LinBox spkg. Changes:\n\n```\nmabshoff@neron standard$ less linbox-20070814.p1/SPKG.txt\n*20070821:\n\n- reenable tuning test\n- added spkg-check\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T16:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/465",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ mabshoff@neron standard$ less linbox-20070814.p1/SPKG.txt
 - reenable tuning test
 - added spkg-check
 ```
-
 
 Cheers,
 
@@ -161,7 +160,7 @@ Resolution: fixed
 archive/issue_comments_002302.json:
 ```json
 {
-    "body": "This was fixed a while ago. On\n\n```\n-bash-3.00$ uname -a\nSunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc\n```\n\nwe now have:\n\n```\nchecking best threshold for Strassen-Winograd matrix multiplication... \nfgemm 300x300: 0.01129 s, 4782.99 Mffops\n1Wino 300x300: 0.012612 s, 4281.64 Mffops\n\nfgemm 812x812: 0.175283 s, 6108.83 Mffops\n1Wino 812x812: 0.180449 s, 5933.95 Mffops\n\nfgemm 1324x1324: 0.707952 s, 6556.77 Mffops\n1Wino 1324x1324: 0.700415 s, 6627.33 Mffops\n\nfgemm 1324x1324: 0.703776 s, 6595.68 Mffops\n1Wino 1324x1324: 0.700589 s, 6625.68 Mffops\n\nfgemm 1068x1068: 0.37835 s, 6439.47 Mffops\n1Wino 1068x1068: 0.381192 s, 6391.46 Mffops\n\nfgemm 1196x1196: 0.525748 s, 6507.98 Mffops\n1Wino 1196x1196: 0.52432 s, 6525.7 Mffops\n\nfgemm 1196x1196: 0.525852 s, 6506.69 Mffops\n1Wino 1196x1196: 0.524372 s, 6525.05 Mffops\ndone\nchecking whether to build documentation... no\n```\n\n\nCheers,\n\nMichael",
+    "body": "This was fixed a while ago. On\n\n```\n-bash-3.00$ uname -a\nSunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc\n```\nwe now have:\n\n```\nchecking best threshold for Strassen-Winograd matrix multiplication... \nfgemm 300x300: 0.01129 s, 4782.99 Mffops\n1Wino 300x300: 0.012612 s, 4281.64 Mffops\n\nfgemm 812x812: 0.175283 s, 6108.83 Mffops\n1Wino 812x812: 0.180449 s, 5933.95 Mffops\n\nfgemm 1324x1324: 0.707952 s, 6556.77 Mffops\n1Wino 1324x1324: 0.700415 s, 6627.33 Mffops\n\nfgemm 1324x1324: 0.703776 s, 6595.68 Mffops\n1Wino 1324x1324: 0.700589 s, 6625.68 Mffops\n\nfgemm 1068x1068: 0.37835 s, 6439.47 Mffops\n1Wino 1068x1068: 0.381192 s, 6391.46 Mffops\n\nfgemm 1196x1196: 0.525748 s, 6507.98 Mffops\n1Wino 1196x1196: 0.52432 s, 6525.7 Mffops\n\nfgemm 1196x1196: 0.525852 s, 6506.69 Mffops\n1Wino 1196x1196: 0.524372 s, 6525.05 Mffops\ndone\nchecking whether to build documentation... no\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T01:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/465",
     "type": "issue_comment",
@@ -176,7 +175,6 @@ This was fixed a while ago. On
 -bash-3.00$ uname -a
 SunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc
 ```
-
 we now have:
 
 ```
@@ -204,7 +202,6 @@ fgemm 1196x1196: 0.525852 s, 6506.69 Mffops
 done
 checking whether to build documentation... no
 ```
-
 
 Cheers,
 

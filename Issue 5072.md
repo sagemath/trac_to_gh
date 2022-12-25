@@ -3,7 +3,7 @@
 archive/issues_005072.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nIf you take the gcd of a polynomial over GF(9) with one over GF(3), Sage SEGFAULTS.\n\n\n```\nteragon:sage-3.3.alpha0 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: k.<a> = GF(9)\nsage: sage: R.<x,y> = PolynomialRing(k)\nsage: k.<a> = GF(9); R.<x,y> = PolynomialRing(k)\nsage: f = R.change_ring(GF(3)).gen()\nsage: g = x+y\nsage: g.gcd(f)\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nteragon:sage-3.3.alpha0 wstein$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5072\n\n",
+    "body": "Assignee: @malb\n\nIf you take the gcd of a polynomial over GF(9) with one over GF(3), Sage SEGFAULTS.\n\n```\nteragon:sage-3.3.alpha0 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: k.<a> = GF(9)\nsage: sage: R.<x,y> = PolynomialRing(k)\nsage: k.<a> = GF(9); R.<x,y> = PolynomialRing(k)\nsage: f = R.change_ring(GF(3)).gen()\nsage: g = x+y\nsage: g.gcd(f)\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nteragon:sage-3.3.alpha0 wstein$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5072\n\n",
     "created_at": "2009-01-23T13:08:23Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ archive/issues_005072.json:
 Assignee: @malb
 
 If you take the gcd of a polynomial over GF(9) with one over GF(3), Sage SEGFAULTS.
-
 
 ```
 teragon:sage-3.3.alpha0 wstein$ sage
@@ -46,7 +45,6 @@ SAGE will now terminate (sorry).
 
 teragon:sage-3.3.alpha0 wstein$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5072
 

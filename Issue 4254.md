@@ -107,7 +107,7 @@ I added doctests and the patch this patch depends on which I forgot to submit la
 archive/issue_comments_030883.json:
 ```json
 {
-    "body": "REFEREE REPORT:\nI tried to figure out how to apply the above patches in their confusing order, but I guess I failed or something. See below (last patch fails to apply).  Please clarify, and I'll referee this:\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhgsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_convenience.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_convenience.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_0.patch\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_1.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_1.patch\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.2.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.2.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_2.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_2.patch\npatching file sage/crypto/mq/sr.py\nHunk #2 FAILED at 288\n1 out of 2 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej\nabort: patch failed to apply\n```\n\n| Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nand \n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/crypto/mq/sr.py.rej\n--- sr.py\n+++ sr.py\n@@ -284,8 +289,20 @@\n             polybori = self._polybori\n         except AttributeError:\n             polybori = False\n+        kwds.setdefault(\"polybori\", polybori)\n \n-        kwds.setdefault(\"polybori\", polybori)\n+        try:\n+            correct_only = self._correct_only\n+        except AttributeError:\n+            correct_only = False\n+        kwds.setdefault(\"correct_only\", correct_only)\n+\n+        try:\n+            biaffine_only = self._biaffine_only\n+        except AttributeError:\n+            biaffine_only = False\n+        kwds.setdefault(\"biaffine_only\", biaffine_only)\n+\n         return SR(**kwds)\n \n     def __getattr__(self, attr):\n```\n",
+    "body": "REFEREE REPORT:\nI tried to figure out how to apply the above patches in their confusing order, but I guess I failed or something. See below (last patch fails to apply).  Please clarify, and I'll referee this:\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhgsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_convenience.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_convenience.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_0.patch\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_1.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_1.patch\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.2.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_parameters.2.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15295/tmp_2.patch\"\napplying /home/was/.sage/temp/sage/15295/tmp_2.patch\npatching file sage/crypto/mq/sr.py\nHunk #2 FAILED at 288\n1 out of 2 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej\nabort: patch failed to apply\n```\n| Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nand \n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/crypto/mq/sr.py.rej\n--- sr.py\n+++ sr.py\n@@ -284,8 +289,20 @@\n             polybori = self._polybori\n         except AttributeError:\n             polybori = False\n+        kwds.setdefault(\"polybori\", polybori)\n \n-        kwds.setdefault(\"polybori\", polybori)\n+        try:\n+            correct_only = self._correct_only\n+        except AttributeError:\n+            correct_only = False\n+        kwds.setdefault(\"correct_only\", correct_only)\n+\n+        try:\n+            biaffine_only = self._biaffine_only\n+        except AttributeError:\n+            biaffine_only = False\n+        kwds.setdefault(\"biaffine_only\", biaffine_only)\n+\n         return SR(**kwds)\n \n     def __getattr__(self, attr):\n```",
     "created_at": "2008-11-28T22:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
@@ -149,7 +149,6 @@ Hunk #2 FAILED at 288
 1 out of 2 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej
 abort: patch failed to apply
 ```
-
 | Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |
 | Type notebook() for the GUI, and license() for information.        |
 and 
@@ -184,13 +183,12 @@ was@sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/crypto/mq/sr.py.rej
 
 
 
-
 ---
 
 archive/issue_comments_030884.json:
 ```json
 {
-    "body": "Here is how to apply the patches:\n\n\n```\n$ hg qimport sr_convenience.patch\nadding sr_convenience.patch to series file\n$ hg qpush\napplying sr_convenience.patch\nNow at: sr_convenience.patch\n$ hg qimport sr_parameters.patch\nadding sr_parameters.patch to series file\n$ hg qpush\napplying sr_parameters.patch\nNow at: sr_parameters.patch\n$ sage -b\n```\n\n\nNote that `sr_parameters.2.patch` is `sr_parameters.patch`",
+    "body": "Here is how to apply the patches:\n\n```\n$ hg qimport sr_convenience.patch\nadding sr_convenience.patch to series file\n$ hg qpush\napplying sr_convenience.patch\nNow at: sr_convenience.patch\n$ hg qimport sr_parameters.patch\nadding sr_parameters.patch to series file\n$ hg qpush\napplying sr_parameters.patch\nNow at: sr_parameters.patch\n$ sage -b\n```\n\nNote that `sr_parameters.2.patch` is `sr_parameters.patch`",
     "created_at": "2008-11-30T20:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
@@ -200,7 +198,6 @@ archive/issue_comments_030884.json:
 ```
 
 Here is how to apply the patches:
-
 
 ```
 $ hg qimport sr_convenience.patch
@@ -215,7 +212,6 @@ applying sr_parameters.patch
 Now at: sr_parameters.patch
 $ sage -b
 ```
-
 
 Note that `sr_parameters.2.patch` is `sr_parameters.patch`
 

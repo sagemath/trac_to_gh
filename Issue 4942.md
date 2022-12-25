@@ -3,7 +3,7 @@
 archive/issues_004942.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\n\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
     "created_at": "2009-01-05T20:32:08Z",
     "labels": [
         "component: numerical",
@@ -23,7 +23,6 @@ CC:  @kcrisman
 
 Reported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a
 
-
 ```
 Hi, I'm trying out SAGE for the first time, so I entered what you 
 suggested (see above). 
@@ -35,7 +34,6 @@ what am I missing here?
 TIA, 
 AJG 
 ```
-
 But note the following:
 
 ```
@@ -44,7 +42,6 @@ sage: find_root(1/(x-1)+1,0, 2)
 sage: find_root(1/(x-1)+1,0.00001, 2) 
 1.0000000000011564 
 ```
-
 
 Cheers,
 
@@ -172,7 +169,7 @@ archive/issue_events_011396.json:
 archive/issue_comments_037435.json:
 ```json
 {
-    "body": "It seems this is a problem with Scipy:\n\n\n```\nIn [16]: def f(x):         \n   ....:     return 1.0/(x-1.0)+1.0\n   ....: \n\nIn [17]: import scipy.optimize\n\nIn [18]: scipy.optimize.brentq(f, 0, 2)\nOut[18]: 0.0\n\nIn [19]: f(0.001)\nOut[19]: -0.0010010010010010895\n\nIn [20]: f(2)\nOut[20]: 2.0\n\nIn [21]: scipy.optimize.brentq(f, 0.001, 2)                                                   \nOut[21]: 1.0000000000007283\n\nIn [22]: f(1.0000000000007283)\nOut[22]: 1373048666882.2488\n```\n",
+    "body": "It seems this is a problem with Scipy:\n\n```\nIn [16]: def f(x):         \n   ....:     return 1.0/(x-1.0)+1.0\n   ....: \n\nIn [17]: import scipy.optimize\n\nIn [18]: scipy.optimize.brentq(f, 0, 2)\nOut[18]: 0.0\n\nIn [19]: f(0.001)\nOut[19]: -0.0010010010010010895\n\nIn [20]: f(2)\nOut[20]: 2.0\n\nIn [21]: scipy.optimize.brentq(f, 0.001, 2)                                                   \nOut[21]: 1.0000000000007283\n\nIn [22]: f(1.0000000000007283)\nOut[22]: 1373048666882.2488\n```",
     "created_at": "2009-02-08T23:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
@@ -182,7 +179,6 @@ archive/issue_comments_037435.json:
 ```
 
 It seems this is a problem with Scipy:
-
 
 ```
 In [16]: def f(x):         
@@ -206,7 +202,6 @@ Out[21]: 1.0000000000007283
 In [22]: f(1.0000000000007283)
 Out[22]: 1373048666882.2488
 ```
-
 
 
 
@@ -481,7 +476,7 @@ Changing status from new to needs_review.
 archive/issue_comments_037441.json:
 ```json
 {
-    "body": "Hi, added two small validity checks:\n1. If one of the endpoints is evaluated to NaN we seek a nearby point in the interval which can be evaluated.\n2. If the value of the function at the root found is \"large\", raise an error that we could not find it.\n----\nNew commits:",
+    "body": "Hi, added two small validity checks:\n1. If one of the endpoints is evaluated to NaN we seek a nearby point in the interval which can be evaluated.\n2. If the value of the function at the root found is \"large\", raise an error that we could not find it.\n  \n---\nNew commits:",
     "created_at": "2018-09-04T11:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
@@ -493,7 +488,8 @@ archive/issue_comments_037441.json:
 Hi, added two small validity checks:
 1. If one of the endpoints is evaluated to NaN we seek a nearby point in the interval which can be evaluated.
 2. If the value of the function at the root found is "large", raise an error that we could not find it.
-----
+  
+---
 New commits:
 
 
@@ -521,7 +517,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_037443.json:
 ```json
 {
-    "body": "I am not sure 1 is necessarily the best solution to this because what if you get a function that always evaluates to NaN as you increase/decrease the endpoints? For instance\n\n```\nsage: f(x) = 0.0 / max(0, x)\n```\n\nwill be NaN for infinitely many values. So your current test means this runs forever:\n\n```\nsage: find_root(f, -1, 0)\n```\n\n(before it simply gave a wrong value).\n\nAlso, I think for 2 you should raise a `NotImplementedError` as I think that more accurately reflects the situation.",
+    "body": "I am not sure 1 is necessarily the best solution to this because what if you get a function that always evaluates to NaN as you increase/decrease the endpoints? For instance\n\n```\nsage: f(x) = 0.0 / max(0, x)\n```\nwill be NaN for infinitely many values. So your current test means this runs forever:\n\n```\nsage: find_root(f, -1, 0)\n```\n(before it simply gave a wrong value).\n\nAlso, I think for 2 you should raise a `NotImplementedError` as I think that more accurately reflects the situation.",
     "created_at": "2018-09-06T22:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
@@ -535,13 +531,11 @@ I am not sure 1 is necessarily the best solution to this because what if you get
 ```
 sage: f(x) = 0.0 / max(0, x)
 ```
-
 will be NaN for infinitely many values. So your current test means this runs forever:
 
 ```
 sage: find_root(f, -1, 0)
 ```
-
 (before it simply gave a wrong value).
 
 Also, I think for 2 you should raise a `NotImplementedError` as I think that more accurately reflects the situation.

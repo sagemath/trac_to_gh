@@ -3,7 +3,7 @@
 archive/issues_003727.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nI created a google spreadsheet form to collect bugs far more easier than registering at a mailing list and so on. In order to make this happen:\n\n1. [proofread my form](http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA)\n2. include a (red?) \"Bug Report\" link in the top right corner of the notebook pointing to this website:\n\n```\n<a href=\"http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA\" target=\"_blank\"><span stype=\"font-color: red;\">Bug Report</span></a>\n```\n\n\nI'll check the data, report bugs on sage-devel or just directly in trac if there is no discussion necessary.\n\nIf somebody wants to help me, request a shared access at harald.schilly`@`gmail.com and delete a row after you have processed it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3727\n\n",
+    "body": "Assignee: boothby\n\nI created a google spreadsheet form to collect bugs far more easier than registering at a mailing list and so on. In order to make this happen:\n\n1. [proofread my form](http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA)\n2. include a (red?) \"Bug Report\" link in the top right corner of the notebook pointing to this website:\n\n```\n<a href=\"http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA\" target=\"_blank\"><span stype=\"font-color: red;\">Bug Report</span></a>\n```\n\nI'll check the data, report bugs on sage-devel or just directly in trac if there is no discussion necessary.\n\nIf somebody wants to help me, request a shared access at harald.schilly`@`gmail.com and delete a row after you have processed it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3727\n\n",
     "created_at": "2008-07-25T22:14:57Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ I created a google spreadsheet form to collect bugs far more easier than registe
 ```
 <a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA" target="_blank"><span stype="font-color: red;">Bug Report</span></a>
 ```
-
 
 I'll check the data, report bugs on sage-devel or just directly in trac if there is no discussion necessary.
 

@@ -3,7 +3,7 @@
 archive/issues_001671.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nDue to Robert's work (#1666) I get a bunch of doctest failures like the following:\n\n```\nsage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py  \n**********************************************************************\nFile \"cubegroup.py\", line 901:\n    sage: C.show3d()\nExpected nothing\nGot:\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n**********************************************************************\n```\n\nI tracked this down to a print statement in `shapes.pyx`. I uncommented that line which fixes this issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1671\n\n",
+    "body": "Assignee: mabshoff\n\nDue to Robert's work (#1666) I get a bunch of doctest failures like the following:\n\n```\nsage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py  \n**********************************************************************\nFile \"cubegroup.py\", line 901:\n    sage: C.show3d()\nExpected nothing\nGot:\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n**********************************************************************\n```\nI tracked this down to a print statement in `shapes.pyx`. I uncommented that line which fixes this issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1671\n\n",
     "created_at": "2008-01-03T17:26:58Z",
     "labels": [
         "component: doctest coverage",
@@ -41,7 +41,6 @@ Got:
     0.00166666666667
 **********************************************************************
 ```
-
 I tracked this down to a print statement in `shapes.pyx`. I uncommented that line which fixes this issue.
 
 Cheers,

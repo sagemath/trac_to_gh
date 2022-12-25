@@ -3,7 +3,7 @@
 archive/issues_008260.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @roed314 @robertwb\n\nThis is ok:\n\n\n```\nsage: K = Qp(5)\nsage: x = K(0)\nsage: x.valuation()\n+Infinity\n```\n\n\nThis is bad:\n\n\n```\nsage: K.<a> = Qq(25)\nsage: x = K(0)\nsage: x.valuation()\n1073741823\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8260\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314 @robertwb\n\nThis is ok:\n\n```\nsage: K = Qp(5)\nsage: x = K(0)\nsage: x.valuation()\n+Infinity\n```\n\nThis is bad:\n\n```\nsage: K.<a> = Qq(25)\nsage: x = K(0)\nsage: x.valuation()\n1073741823\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8260\n\n",
     "created_at": "2010-02-14T02:25:43Z",
     "labels": [
         "component: padics",
@@ -22,7 +22,6 @@ CC:  @roed314 @robertwb
 
 This is ok:
 
-
 ```
 sage: K = Qp(5)
 sage: x = K(0)
@@ -30,9 +29,7 @@ sage: x.valuation()
 +Infinity
 ```
 
-
 This is bad:
-
 
 ```
 sage: K.<a> = Qq(25)
@@ -40,7 +37,6 @@ sage: x = K(0)
 sage: x.valuation()
 1073741823
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8260

@@ -3,7 +3,7 @@
 archive/issues_004820.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nPoints on elliptic curves over Q which are not [0:1:0] have their last coordinate =1 but sometimes this is an int (not even an Integer) which breaks some code:\n\n\n```\nsage: E=EllipticCurve('37a1')\nsage: [type(c) for c in E(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in 2*E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'int'>]\n```\n\nI am tracking this down and will post a patch soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4820\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nPoints on elliptic curves over Q which are not [0:1:0] have their last coordinate =1 but sometimes this is an int (not even an Integer) which breaks some code:\n\n```\nsage: E=EllipticCurve('37a1')\nsage: [type(c) for c in E(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in 2*E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'int'>]\n```\nI am tracking this down and will post a patch soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4820\n\n",
     "created_at": "2008-12-17T11:55:08Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ Keywords: elliptic curves
 
 Points on elliptic curves over Q which are not [0:1:0] have their last coordinate =1 but sometimes this is an int (not even an Integer) which breaks some code:
 
-
 ```
 sage: E=EllipticCurve('37a1')
 sage: [type(c) for c in E(0)]
@@ -42,7 +41,6 @@ sage: [type(c) for c in 2*E.gen(0)]
  <type 'sage.rings.rational.Rational'>,
  <type 'int'>]
 ```
-
 I am tracking this down and will post a patch soon.
 
 

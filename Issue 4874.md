@@ -3,7 +3,7 @@
 archive/issues_004874.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nreplacing multiplications by shift in quo_rem found\npolynomial_element_generic.py gives great improvement on this tiny\nexample:\n\nsage: R.<x>=PolynomialRing(GF(4,'a'))\nsage: P=R.random_element(20)\nsage: Q=R.random_element(256)\nsage: time Q % P\n\nbefore:\nCPU time: 0.08 s,  Wall time: 0.08 s\n\nafter:\nCPU time: 0.74 s,  Wall time: 0.74 s\n\nshould be very easy to fix\nthe diff is:\n\n545,549c545,547\n<             aaa = (R.leading_coefficient()/B.leading_coefficient())\n<             bbb = X**(R.degree()-B.degree())\n<             S = aaa * bbb\n<             Q += S\n<             R -= S*B\n---\n>             aaa = P(R.leading_coefficient()/B.leading_coefficient())\n>             Q += aaa.shift(R.degree()-B.degree())\n>             R -= (aaa * B).shift(R.degree()-B.degree())\n\n```\n\n\nCredit should go to \"yannlaiglechapuy\".\n\nThis came up in sage-devel. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4874\n\n",
+    "body": "Assignee: somebody\n\n```\nreplacing multiplications by shift in quo_rem found\npolynomial_element_generic.py gives great improvement on this tiny\nexample:\n\nsage: R.<x>=PolynomialRing(GF(4,'a'))\nsage: P=R.random_element(20)\nsage: Q=R.random_element(256)\nsage: time Q % P\n\nbefore:\nCPU time: 0.08 s,  Wall time: 0.08 s\n\nafter:\nCPU time: 0.74 s,  Wall time: 0.74 s\n\nshould be very easy to fix\nthe diff is:\n\n545,549c545,547\n<             aaa = (R.leading_coefficient()/B.leading_coefficient())\n<             bbb = X**(R.degree()-B.degree())\n<             S = aaa * bbb\n<             Q += S\n<             R -= S*B\n---\n>             aaa = P(R.leading_coefficient()/B.leading_coefficient())\n>             Q += aaa.shift(R.degree()-B.degree())\n>             R -= (aaa * B).shift(R.degree()-B.degree())\n\n```\n\nCredit should go to \"yannlaiglechapuy\".\n\nThis came up in sage-devel. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4874\n\n",
     "created_at": "2008-12-24T18:51:32Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_004874.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 replacing multiplications by shift in quo_rem found
@@ -50,7 +49,6 @@ the diff is:
 >             R -= (aaa * B).shift(R.degree()-B.degree())
 
 ```
-
 
 Credit should go to "yannlaiglechapuy".
 

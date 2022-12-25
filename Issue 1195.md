@@ -149,7 +149,7 @@ Resolution: wontfix
 archive/issue_comments_007397.json:
 ```json
 {
-    "body": "> Perhaps this should be at the level of SageObject: .length() calls .__len__()? \n> This is irritating but not idiomatic python, so I vote to keep it as is.\n\nI think this would be annoying.  It also adds to the clutter when one does X.[tab]\non a sage object X.  And everybody learns about len(...) in Python pretty soon.",
+    "body": "> Perhaps this should be at the level of SageObject: .length() calls .__len__()? \n> This is irritating but not idiomatic python, so I vote to keep it as is.\n\n\nI think this would be annoying.  It also adds to the clutter when one does X.[tab]\non a sage object X.  And everybody learns about len(...) in Python pretty soon.",
     "created_at": "2008-02-27T12:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1195",
     "type": "issue_comment",
@@ -160,6 +160,7 @@ archive/issue_comments_007397.json:
 
 > Perhaps this should be at the level of SageObject: .length() calls .__len__()? 
 > This is irritating but not idiomatic python, so I vote to keep it as is.
+
 
 I think this would be annoying.  It also adds to the clutter when one does X.[tab]
 on a sage object X.  And everybody learns about len(...) in Python pretty soon.

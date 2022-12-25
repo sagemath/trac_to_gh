@@ -3,7 +3,7 @@
 archive/issues_001570.json:
 ```json
 {
-    "body": "Assignee: tba\n\nReported by Francis Clarke\n\n```\n--- a/sage/rings/number_field/number_field.py   Sun Dec 16 06:37:16\n2007 -0800\n+++ b/sage/rings/number_field/number_field.py   Wed Dec 19 18:54:54\n2007 +0000\n@@ -751,7 +751,7 @@ class NumberField_generic(number_field_b\n\n         You can also view a number field as having a different\n         generator by just chosing the input to generate the\n-        whole filed; for that it is better to use\n+        whole field; for that it is better to use\n         \\code{self.change_generator}, which gives isomorphisms\n         in both directions.\n         \"\"\" \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1570\n\n",
+    "body": "Assignee: tba\n\nReported by Francis Clarke\n\n```\n--- a/sage/rings/number_field/number_field.py   Sun Dec 16 06:37:16\n2007 -0800\n+++ b/sage/rings/number_field/number_field.py   Wed Dec 19 18:54:54\n2007 +0000\n@@ -751,7 +751,7 @@ class NumberField_generic(number_field_b\n\n         You can also view a number field as having a different\n         generator by just chosing the input to generate the\n-        whole filed; for that it is better to use\n+        whole field; for that it is better to use\n         \\code{self.change_generator}, which gives isomorphisms\n         in both directions.\n         \"\"\" \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1570\n\n",
     "created_at": "2007-12-20T01:30:55Z",
     "labels": [
         "component: documentation",
@@ -36,7 +36,6 @@ Reported by Francis Clarke
          in both directions.
          """ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1570
 

@@ -88,7 +88,7 @@ What exactly is the failure? The code shouldn't return any roots larger than X a
 archive/issue_comments_018117.json:
 ```json
 {
-    "body": "This does not answer the outstanding question, but while looking at this code (and I did not get past the docstring, this is really not something I am familiar with) I found the following:\n\n```\nsage: N=10001\nsage: p,q = map(lambda (r,m): r, N.factor())\n```\n\nwhich is so opaque that I could not ignore it.  Pleasr replace that last line with\n\n```\nsage: p,q = N.prime_divisors()\n```\n\n!!!",
+    "body": "This does not answer the outstanding question, but while looking at this code (and I did not get past the docstring, this is really not something I am familiar with) I found the following:\n\n```\nsage: N=10001\nsage: p,q = map(lambda (r,m): r, N.factor())\n```\nwhich is so opaque that I could not ignore it.  Pleasr replace that last line with\n\n```\nsage: p,q = N.prime_divisors()\n```\n!!!",
     "created_at": "2008-03-23T17:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
@@ -103,13 +103,11 @@ This does not answer the outstanding question, but while looking at this code (a
 sage: N=10001
 sage: p,q = map(lambda (r,m): r, N.factor())
 ```
-
 which is so opaque that I could not ignore it.  Pleasr replace that last line with
 
 ```
 sage: p,q = N.prime_divisors()
 ```
-
 !!!
 
 

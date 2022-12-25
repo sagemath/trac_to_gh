@@ -3,7 +3,7 @@
 archive/issues_000095.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
+    "body": "Assignee: @wdjoyner\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n\n---\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
     "created_at": "2006-09-28T23:57:56Z",
     "labels": [
         "component: combinatorics",
@@ -38,7 +38,8 @@ G=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0
 then whenever I call any methods on G, it dies:
 
 sage: G.order()
----------------------------------------------------------------------------
+
+---
 exceptions.TypeError                                 Traceback (most recent call last)
 
 Issue created by migration from https://trac.sagemath.org/ticket/95
@@ -226,7 +227,7 @@ archive/issue_events_000193.json:
 archive/issue_comments_000457.json:
 ```json
 {
-    "body": "This was already fixed.  But another bug appeared (and got fixed)\nwhen I tested the example:\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1168641553 28800\n# Node ID e7e66d37ff7a6bc0c31efa693c0dcd5be1c6d048\n# Parent  85b96a510e10e13d5e71aa12afb2a3f1a3564fb8\nFix bug in matrix hessenberg form.\n\ndiff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx\n--- a/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:26:44 2007 -0800\n+++ b/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:39:13 2007 -0800\n@@ -48,6 +48,19 @@ EXAMPLES:\n     sage: b.echelonize(); b\n     [ 1  0 36]\n     [ 0  1  2]\n+\n+We create a matrix group and coerce it to GAP:\n+    sage: M = MatrixSpace(GF(3),3,3)\n+    sage: G = MatrixGroup([M([[0,1,0],[0,0,1],[1,0,0]]), M([[0,1,0],[1,0,0],[0,0,1]])])\n+    sage: G\n+    Matrix group over Finite Field of size 3 with 2 generators: \n+     [[[0, 1, 0], [0, 0, 1], [1, 0, 0]], [[0, 1, 0], [1, 0, 0], [0, 0, 1]]]\n+    sage: gap(G)\n+    Group(\n+    [ [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ 0*Z(3), 0*Z(3), Z(3)^0 ], [ Z(3)^0, 0*Z(3),\n+               0*Z(3) ] ], \n+      [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ Z(3)^0, 0*Z(3), 0*Z(3) ], \n+          [ 0*Z(3), 0*Z(3), Z(3)^0 ] ] ])\n \"\"\"\n \n include \"../ext/interrupt.pxi\"\n@@ -419,8 +432,8 @@ cdef class Matrix_modn_dense(matrix_dens\n                  t = h[i][m-1]\n                  t_inv = ai.c_inverse_mod_int(t,p)\n                  if i > m:\n-                     self._swap_rows_c(i,m)\n-                     self._swap_columns_c(i,m)\n+                     self.swap_rows_c(i,m)\n+                     self.swap_columns_c(i,m)\n \n                  # Now the nonzero entry in position (m,m-1) is t.\n                  # Use t to clear the entries in column m-1 below m.\n```\n",
+    "body": "This was already fixed.  But another bug appeared (and got fixed)\nwhen I tested the example:\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1168641553 28800\n# Node ID e7e66d37ff7a6bc0c31efa693c0dcd5be1c6d048\n# Parent  85b96a510e10e13d5e71aa12afb2a3f1a3564fb8\nFix bug in matrix hessenberg form.\n\ndiff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx\n--- a/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:26:44 2007 -0800\n+++ b/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:39:13 2007 -0800\n@@ -48,6 +48,19 @@ EXAMPLES:\n     sage: b.echelonize(); b\n     [ 1  0 36]\n     [ 0  1  2]\n+\n+We create a matrix group and coerce it to GAP:\n+    sage: M = MatrixSpace(GF(3),3,3)\n+    sage: G = MatrixGroup([M([[0,1,0],[0,0,1],[1,0,0]]), M([[0,1,0],[1,0,0],[0,0,1]])])\n+    sage: G\n+    Matrix group over Finite Field of size 3 with 2 generators: \n+     [[[0, 1, 0], [0, 0, 1], [1, 0, 0]], [[0, 1, 0], [1, 0, 0], [0, 0, 1]]]\n+    sage: gap(G)\n+    Group(\n+    [ [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ 0*Z(3), 0*Z(3), Z(3)^0 ], [ Z(3)^0, 0*Z(3),\n+               0*Z(3) ] ], \n+      [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ Z(3)^0, 0*Z(3), 0*Z(3) ], \n+          [ 0*Z(3), 0*Z(3), Z(3)^0 ] ] ])\n \"\"\"\n \n include \"../ext/interrupt.pxi\"\n@@ -419,8 +432,8 @@ cdef class Matrix_modn_dense(matrix_dens\n                  t = h[i][m-1]\n                  t_inv = ai.c_inverse_mod_int(t,p)\n                  if i > m:\n-                     self._swap_rows_c(i,m)\n-                     self._swap_columns_c(i,m)\n+                     self.swap_rows_c(i,m)\n+                     self.swap_columns_c(i,m)\n \n                  # Now the nonzero entry in position (m,m-1) is t.\n                  # Use t to clear the entries in column m-1 below m.\n```",
     "created_at": "2007-01-12T22:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
@@ -282,4 +283,3 @@ diff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx
                   # Now the nonzero entry in position (m,m-1) is t.
                   # Use t to clear the entries in column m-1 below m.
 ```
-

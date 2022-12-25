@@ -93,7 +93,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080707.json:
 ```json
 {
-    "body": "NOTE:\n\nMaxima-5.20.1.p0 doesn't just build with this ECL\n\n```\nSummary:\nECL enabled. Executable name: \"ecl\"\ndefault lisp: ecl\nwish executable name: \"wish\"\nMaking all in src\nmake[1]: Entering directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\ntest -d binary-ecl || mkdir binary-ecl\necl -norc -eval '(progn (load \"../lisp-utils/defsystem.lisp\") (funcall (intern (symbol-name :operate-on-system) :mk) \"maxima\" :compile :verbose t) (build-maxima-lib))' -eval '(ext:quit)'\n;;; Loading \"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src/../lisp-utils/defsystem.lisp\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/sysfun.lsp\"\nAn error occurred during initialization:\nAttempt to redefine function REQUIRE in locked package..\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\nmake: *** [all-recursive] Error 1\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal    0m3.803s\nuser    0m1.190s\nsys     0m1.200s\nsage: An error occurred while installing maxima-5.20.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0' && '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n```\n",
+    "body": "NOTE:\n\nMaxima-5.20.1.p0 doesn't just build with this ECL\n\n```\nSummary:\nECL enabled. Executable name: \"ecl\"\ndefault lisp: ecl\nwish executable name: \"wish\"\nMaking all in src\nmake[1]: Entering directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\ntest -d binary-ecl || mkdir binary-ecl\necl -norc -eval '(progn (load \"../lisp-utils/defsystem.lisp\") (funcall (intern (symbol-name :operate-on-system) :mk) \"maxima\" :compile :verbose t) (build-maxima-lib))' -eval '(ext:quit)'\n;;; Loading \"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src/../lisp-utils/defsystem.lisp\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/sysfun.lsp\"\nAn error occurred during initialization:\nAttempt to redefine function REQUIRE in locked package..\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\nmake: *** [all-recursive] Error 1\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal    0m3.803s\nuser    0m1.190s\nsys     0m1.200s\nsage: An error occurred while installing maxima-5.20.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0' && '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n```",
     "created_at": "2010-04-28T18:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8808",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ subshell.
 
 
 
-
 ---
 
 archive/issue_comments_080708.json:
@@ -187,7 +186,7 @@ Question: Does this ECL incorporate the patch nbruin mentions in #8645?
 archive/issue_comments_080710.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> Question: Does this ECL incorporate the patch nbruin mentions in #8645?\n\nThat patch just adds a Changelog entry.  This spkg has a different changelog entry (i.e., William updated this spkg, not Nils).  So this is a nonissue.",
+    "body": "Replying to [comment:5 kcrisman]:\n> Question: Does this ECL incorporate the patch nbruin mentions in #8645?\n\n\nThat patch just adds a Changelog entry.  This spkg has a different changelog entry (i.e., William updated this spkg, not Nils).  So this is a nonissue.",
     "created_at": "2010-05-13T04:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8808",
     "type": "issue_comment",
@@ -198,6 +197,7 @@ archive/issue_comments_080710.json:
 
 Replying to [comment:5 kcrisman]:
 > Question: Does this ECL incorporate the patch nbruin mentions in #8645?
+
 
 That patch just adds a Changelog entry.  This spkg has a different changelog entry (i.e., William updated this spkg, not Nils).  So this is a nonissue.
 

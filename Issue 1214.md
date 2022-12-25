@@ -3,7 +3,7 @@
 archive/issues_001214.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
     "created_at": "2007-11-20T05:33:53Z",
     "labels": [
         "component: commutative algebra",
@@ -17,7 +17,6 @@ archive/issues_001214.json:
 }
 ```
 Assignee: @malb
-
 
 ```
 sage: x^2 in I
@@ -36,7 +35,6 @@ sage: x^2 in I
 <type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1214
 
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1214
 archive/issue_comments_007515.json:
 ```json
 {
-    "body": "\n```\nsage: P.<x> = PolynomialRing(QQ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\nsage: P.<x> = PolynomialRing(ZZ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_integer_dense_ntl' object has no attribute 'divides'\n```\n",
+    "body": "```\nsage: P.<x> = PolynomialRing(QQ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\nsage: P.<x> = PolynomialRing(ZZ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_integer_dense_ntl' object has no attribute 'divides'\n```",
     "created_at": "2007-11-20T05:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
@@ -56,7 +54,6 @@ archive/issue_comments_007515.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-
 
 ```
 sage: P.<x> = PolynomialRing(QQ)
@@ -92,7 +89,6 @@ sage: x^2 in I
 
 <type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_integer_dense_ntl' object has no attribute 'divides'
 ```
-
 
 
 
@@ -172,7 +168,7 @@ Changing status from new to assigned.
 archive/issue_comments_007519.json:
 ```json
 {
-    "body": "This patch should be applied -- doctests are excellent and I think the divides() function is good.\n\nThere is a typo:\n\n```\n \t1624\t    def divides(self, x): \n \t1625\t        \"\"\" \n \t1626\t        Return True if self divides n. \n```\n\n\n$n$ should be $x$.",
+    "body": "This patch should be applied -- doctests are excellent and I think the divides() function is good.\n\nThere is a typo:\n\n```\n \t1624\t    def divides(self, x): \n \t1625\t        \"\"\" \n \t1626\t        Return True if self divides n. \n```\n\n$n$ should be $x$.",
     "created_at": "2007-11-23T20:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
@@ -190,7 +186,6 @@ There is a typo:
  	1625	        """ 
  	1626	        Return True if self divides n. 
 ```
-
 
 $n$ should be $x$.
 

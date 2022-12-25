@@ -49,7 +49,7 @@ Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/tra
 archive/issue_comments_037140.json:
 ```json
 {
-    "body": "Will the table in sd_codes.py which the patch indicats is \n\n\n```\n \t166\t    n 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 B_n 1 1 1 2 2 3 4 7 9 \n \t167\t    16 25 55 103 261 731 \n```\n\nactually print in the docstring as\n\n\n```\n \tn  2 4 6 8 10 12 14 16 18 20 22 24  26  28  30 \n       B_n 1 1 1 2  2  3  4  7  9 16 25 55 103 261 731 \n```\n\n?",
+    "body": "Will the table in sd_codes.py which the patch indicats is \n\n```\n \t166\t    n 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 B_n 1 1 1 2 2 3 4 7 9 \n \t167\t    16 25 55 103 261 731 \n```\nactually print in the docstring as\n\n```\n \tn  2 4 6 8 10 12 14 16 18 20 22 24  26  28  30 \n       B_n 1 1 1 2  2  3  4  7  9 16 25 55 103 261 731 \n```\n?",
     "created_at": "2009-01-02T03:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -60,20 +60,16 @@ archive/issue_comments_037140.json:
 
 Will the table in sd_codes.py which the patch indicats is 
 
-
 ```
  	166	    n 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 B_n 1 1 1 2 2 3 4 7 9 
  	167	    16 25 55 103 261 731 
 ```
-
 actually print in the docstring as
-
 
 ```
  	n  2 4 6 8 10 12 14 16 18 20 22 24  26  28  30 
        B_n 1 1 1 2  2  3  4  7  9 16 25 55 103 261 731 
 ```
-
 ?
 
 
@@ -137,7 +133,7 @@ You can read the html output at http://sage.math.washington.edu/home/mhansen/sag
 archive/issue_comments_037144.json:
 ```json
 {
-    "body": "That helps a lot.\n\nHere are some more typos:\n\n* In the section on assmus_mattson_designs:\n\n\n```\ns = |{ i | A_i^* \\not= 0, 0<i\\leq n-t}|\n```\n\ndoes not output the math correctly. Maybe \n\n\n```\n$s = |\\{ i\\ |\\ A_i^* \\not= 0,\\ 0<i\\leq n-t\\}|$\n```\n\nwould be better?\n\nAlso,\n\n\n```\n \t771\t        (1) If `Ai\\not= 0` and \n \t772\t        `d\\leq i\\leq n then Ci = { c in C | wt(c) = i}` holds a \n \t773\t        simple t-design. \n\t774\t         \n \t775\t        (2) If `Ai*\\not= 0` and \n \t776\t        `d*\\leq i\\leq n-t then Ci* = { c in C* | wt(c) = i}` \n \t777\t        holds a simple t-design. \n```\n\nshould maybe be (maybe add a \"math::\" somewhere?)\n\n\n```\n \t771\t        (1) If `Ai\\not= 0` and \n \t772\t        `d\\leq i\\leq n` then `C_i = \\{ c \\in C\\ |\\ wt(c) = i\\}` holds a \n \t773\t        simple t-design. \n\t774\t         \n \t775\t        (2) If `Ai*\\not= 0` and \n \t776\t        `d*\\leq i\\leq n-t` then `C_i^* = \\{ c \\in C*\\ |\\ wt(c) = i\\}` \n \t777\t        holds a simple t-design. \n```\n\nand\n\n\n```\n \t793\t        `B = \\{supp(c) | c in C_i\\}` is the set of supports of the \n```\n\nshould be\n\n\n```\n \t793\t        `B = \\{supp(c)\\ |\\ c \\in C_i\\}` is the set of supports of the \n```\n\n\n* In automorphism_group_binary_code,\n\n\n```\n \t701\t                     \\{ g in S_n\\ |\\ g(c) \\in C, \\forall c\\in C\\},  \n```\n\nshould be\n\n```\n \t701\t                     \\{ g \\in S_n\\ |\\ g(c) \\in C, \\forall c\\in C\\},  \n```\n\n\nWhat else needs to be done to review this?",
+    "body": "That helps a lot.\n\nHere are some more typos:\n\n* In the section on assmus_mattson_designs:\n\n```\ns = |{ i | A_i^* \\not= 0, 0<i\\leq n-t}|\n```\ndoes not output the math correctly. Maybe \n\n```\n$s = |\\{ i\\ |\\ A_i^* \\not= 0,\\ 0<i\\leq n-t\\}|$\n```\nwould be better?\n\nAlso,\n\n```\n \t771\t        (1) If `Ai\\not= 0` and \n \t772\t        `d\\leq i\\leq n then Ci = { c in C | wt(c) = i}` holds a \n \t773\t        simple t-design. \n\t774\t         \n \t775\t        (2) If `Ai*\\not= 0` and \n \t776\t        `d*\\leq i\\leq n-t then Ci* = { c in C* | wt(c) = i}` \n \t777\t        holds a simple t-design. \n```\nshould maybe be (maybe add a \"math::\" somewhere?)\n\n```\n \t771\t        (1) If `Ai\\not= 0` and \n \t772\t        `d\\leq i\\leq n` then `C_i = \\{ c \\in C\\ |\\ wt(c) = i\\}` holds a \n \t773\t        simple t-design. \n\t774\t         \n \t775\t        (2) If `Ai*\\not= 0` and \n \t776\t        `d*\\leq i\\leq n-t` then `C_i^* = \\{ c \\in C*\\ |\\ wt(c) = i\\}` \n \t777\t        holds a simple t-design. \n```\nand\n\n```\n \t793\t        `B = \\{supp(c) | c in C_i\\}` is the set of supports of the \n```\nshould be\n\n```\n \t793\t        `B = \\{supp(c)\\ |\\ c \\in C_i\\}` is the set of supports of the \n```\n\n* In automorphism_group_binary_code,\n\n```\n \t701\t                     \\{ g in S_n\\ |\\ g(c) \\in C, \\forall c\\in C\\},  \n```\nshould be\n\n```\n \t701\t                     \\{ g \\in S_n\\ |\\ g(c) \\in C, \\forall c\\in C\\},  \n```\n\nWhat else needs to be done to review this?",
     "created_at": "2009-01-02T11:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -152,22 +148,17 @@ Here are some more typos:
 
 * In the section on assmus_mattson_designs:
 
-
 ```
 s = |{ i | A_i^* \not= 0, 0<i\leq n-t}|
 ```
-
 does not output the math correctly. Maybe 
-
 
 ```
 $s = |\{ i\ |\ A_i^* \not= 0,\ 0<i\leq n-t\}|$
 ```
-
 would be better?
 
 Also,
-
 
 ```
  	771	        (1) If `Ai\not= 0` and 
@@ -178,9 +169,7 @@ Also,
  	776	        `d*\leq i\leq n-t then Ci* = { c in C* | wt(c) = i}` 
  	777	        holds a simple t-design. 
 ```
-
 should maybe be (maybe add a "math::" somewhere?)
-
 
 ```
  	771	        (1) If `Ai\not= 0` and 
@@ -191,35 +180,27 @@ should maybe be (maybe add a "math::" somewhere?)
  	776	        `d*\leq i\leq n-t` then `C_i^* = \{ c \in C*\ |\ wt(c) = i\}` 
  	777	        holds a simple t-design. 
 ```
-
 and
-
 
 ```
  	793	        `B = \{supp(c) | c in C_i\}` is the set of supports of the 
 ```
-
 should be
-
 
 ```
  	793	        `B = \{supp(c)\ |\ c \in C_i\}` is the set of supports of the 
 ```
 
-
 * In automorphism_group_binary_code,
-
 
 ```
  	701	                     \{ g in S_n\ |\ g(c) \in C, \forall c\in C\},  
 ```
-
 should be
 
 ```
  	701	                     \{ g \in S_n\ |\ g(c) \in C, \forall c\in C\},  
 ```
-
 
 What else needs to be done to review this?
 
@@ -250,7 +231,7 @@ I've updated the second patch to take care of these.
 archive/issue_comments_037146.json:
 ```json
 {
-    "body": "This happens a few times in the diff:\n\n```\nBEFORE:\n356\t \t    provided 0 < delta < 1-1/q. \nAFTER: \t \n \t416\t    provided 0 delta 1-1/q. \n```\n\n\nNotice that the < \"less than\" signs are just deleted.",
+    "body": "This happens a few times in the diff:\n\n```\nBEFORE:\n356\t \t    provided 0 < delta < 1-1/q. \nAFTER: \t \n \t416\t    provided 0 delta 1-1/q. \n```\n\nNotice that the < \"less than\" signs are just deleted.",
     "created_at": "2009-01-03T04:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -268,7 +249,6 @@ AFTER:
  	416	    provided 0 delta 1-1/q. 
 ```
 
-
 Notice that the < "less than" signs are just deleted.
 
 
@@ -278,7 +258,7 @@ Notice that the < "less than" signs are just deleted.
 archive/issue_comments_037147.json:
 ```json
 {
-    "body": "This is worrisome:\n\n```\nBEFORE:\n4\t4\tAUTHOR: \n5\t \t    -- David Joyner (2007-05): initial version \n6\t \t    --    \"         (2008-02): added cyclic codes, Hamming codes \n7\t \t    --    \"         (2008-03): added BCH code, LinearCodeFromCheckmatrix,   \n```\n\n\n\n```\nAFTER:\n \t6\t- David Joyner (2007-05): initial version \n \t7\t \n \t8\t- \" (2008-02): added cyclic codes, Hamming codes \n \t9\t \n \t10\t- \" (2008-03): added BCH code, LinearCodeFromCheckmatrix, ReedSolomonCode, WalshCode, \n \t11\t  DuadicCodeEvenPair, DuadicCodeOddPair, QR codes (even and odd) \n \t12\t \n```\n\n\nIt seems like AUTHOR: doesn't get changed to AUTHOR::.  Also, I'm worried about the -'s making a correct list, but maybe I shouldn't be.",
+    "body": "This is worrisome:\n\n```\nBEFORE:\n4\t4\tAUTHOR: \n5\t \t    -- David Joyner (2007-05): initial version \n6\t \t    --    \"         (2008-02): added cyclic codes, Hamming codes \n7\t \t    --    \"         (2008-03): added BCH code, LinearCodeFromCheckmatrix,   \n```\n\n```\nAFTER:\n \t6\t- David Joyner (2007-05): initial version \n \t7\t \n \t8\t- \" (2008-02): added cyclic codes, Hamming codes \n \t9\t \n \t10\t- \" (2008-03): added BCH code, LinearCodeFromCheckmatrix, ReedSolomonCode, WalshCode, \n \t11\t  DuadicCodeEvenPair, DuadicCodeOddPair, QR codes (even and odd) \n \t12\t \n```\n\nIt seems like AUTHOR: doesn't get changed to AUTHOR::.  Also, I'm worried about the -'s making a correct list, but maybe I shouldn't be.",
     "created_at": "2009-01-03T04:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
@@ -297,8 +277,6 @@ BEFORE:
 7	 	    --    "         (2008-03): added BCH code, LinearCodeFromCheckmatrix,   
 ```
 
-
-
 ```
 AFTER:
  	6	- David Joyner (2007-05): initial version 
@@ -309,7 +287,6 @@ AFTER:
  	11	  DuadicCodeEvenPair, DuadicCodeOddPair, QR codes (even and odd) 
  	12	 
 ```
-
 
 It seems like AUTHOR: doesn't get changed to AUTHOR::.  Also, I'm worried about the -'s making a correct list, but maybe I shouldn't be.
 

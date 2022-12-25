@@ -3,7 +3,7 @@
 archive/issues_001709.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nFor example, you can do\n\n```\nsage: G = graphs.DodecahedralGraph()\nsage: G.plot3d_new()\n```\n\n\nThis still needs to be cleaned up, but at least now it works instead of giving confusing errors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1709\n\n",
+    "body": "Assignee: @rlmill\n\nFor example, you can do\n\n```\nsage: G = graphs.DodecahedralGraph()\nsage: G.plot3d_new()\n```\n\nThis still needs to be cleaned up, but at least now it works instead of giving confusing errors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1709\n\n",
     "created_at": "2008-01-07T09:09:18Z",
     "labels": [
         "component: graph theory",
@@ -25,7 +25,6 @@ For example, you can do
 sage: G = graphs.DodecahedralGraph()
 sage: G.plot3d_new()
 ```
-
 
 This still needs to be cleaned up, but at least now it works instead of giving confusing errors.
 

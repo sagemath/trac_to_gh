@@ -48,7 +48,7 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4918.patch
 archive/issue_comments_037246.json:
 ```json
 {
-    "body": "Attachment [sage.matrix-final.patch](tarball://root/attachments/some-uuid/ticket4918/sage.matrix-final.patch) by @hivert created at 2009-02-24 17:18:46\n\n## Files `matrix1.pyx`, `matrix_integer_dense.pyx` and `matrix_mod2_dense.pyx`\n\n* the doc of the stack method must keep the two line presentation, otherwise it's not understandable:\n\n```\n-        Return the augmented matrix self on top of other:\n-           [ self  ]\n-           [ other ]\n-\n```\n\nShould not be replaced by\n\n```\n+        Return the augmented matrix self on top of other: [ self ] [ other\n+        ]\n```\n\nPlease use some kind of verbatim environment.\n\n## File: matrix1.pyx\n* in the augment method, the \"|\" should be kept\n\n```\n-        Return the augmented matrix of the form [self | other].\n+        Return the augmented matrix of the form [self other].\n```\n\n \n* in block_sum it's crucial to keep the presentation:\n\n```\n-        [self |    0  ]\n-        [  0  | other ]\n```\n\nis now\n\n```\n+        [self 0 ] [ 0 other ]\n```\n\n\n* function _det_by_minors: missing > \n\n```\n-        Does not handle degenerate cases, level MUST be >= 2\n+        of self. Does not handle degenerate cases, level MUST be = 2\n```\n\n\n\n\n## File: matrix_modn_sparse.pyx\n\n* Creation of a matrix: missing < :\n\n```\n-            parent -- a matrix space\n-            entries -- * a Python list of triples (i,j,x), where 0 <= i < nrows,\n-                         0 <= j < ncols, and x is coercible to an int.  The i,j\n+           - a Python list of triples (i,j,x), where 0 = i nrows, 0 =\n+             j ncols, and x is coercible to an int. The i,j entry of\n```\n\n\n## File: matrix_rational_dense.pyx\n\n* function invert: missing <\n\n```\n-         * The n x n cases for n <= 2 are handcoded for speed. \n+           - The n x n cases for n = 2 are handcoded for speed.\n```\n\n\n* function _lift_crt_rr_with_lcm : missing <\n\n```\n-            Optimizations: When doing the rational_recon lift of a (mod m) \n-            first see if |a| < sqrt(m/2) in which case it lifts to \n-            an integer (often a=0 or 1). \n+        Optimizations: When doing the rational_recon lift of a (mod m)\n+        first see if a sqrt(m/2) in which case it lifts to an integer\n+        (often a=0 or 1).\n```\n\nand\n\n```\n-            If that fails, keep track of the lcm d of denominators found so far, \n-            and check to see if z = a*d lifts to an integer with |z| <= sqrt(m/2).\n-            If so, no need to do rational recon.  This should be the case\n-            for most a after a while, and should saves substantial time!\n+        If that fails, keep track of the lcm d of denominators found so\n+        far, and check to see if z = a\\*d lifts to an integer with z =\n+        sqrt(m/2). If so, no need to do rational recon. This should be the\n+        case for most a after a while, and should saves substantial time!\n```\n\n\n## File: matrix_real_double_dense.pyx\n\n* main doc : presentation must be kept\n\n```\n-    To solve a linear system Ax = b\n-    where A = [[1,2]  and b = [5,6]\n-             [3,4]] \n+    To solve a linear system Ax = b where A = [[1,2] and b = [5,6]\n+    [3,4]]\n```\n",
+    "body": "Attachment [sage.matrix-final.patch](tarball://root/attachments/some-uuid/ticket4918/sage.matrix-final.patch) by @hivert created at 2009-02-24 17:18:46\n\n## Files `matrix1.pyx`, `matrix_integer_dense.pyx` and `matrix_mod2_dense.pyx`\n\n* the doc of the stack method must keep the two line presentation, otherwise it's not understandable:\n\n```\n-        Return the augmented matrix self on top of other:\n-           [ self  ]\n-           [ other ]\n-\n```\nShould not be replaced by\n\n```\n+        Return the augmented matrix self on top of other: [ self ] [ other\n+        ]\n```\nPlease use some kind of verbatim environment.\n\n## File: matrix1.pyx\n* in the augment method, the \"|\" should be kept\n\n```\n-        Return the augmented matrix of the form [self | other].\n+        Return the augmented matrix of the form [self other].\n```\n \n* in block_sum it's crucial to keep the presentation:\n\n```\n-        [self |    0  ]\n-        [  0  | other ]\n```\nis now\n\n```\n+        [self 0 ] [ 0 other ]\n```\n\n* function _det_by_minors: missing > \n\n```\n-        Does not handle degenerate cases, level MUST be >= 2\n+        of self. Does not handle degenerate cases, level MUST be = 2\n```\n\n\n\n## File: matrix_modn_sparse.pyx\n\n* Creation of a matrix: missing < :\n\n```\n-            parent -- a matrix space\n-            entries -- * a Python list of triples (i,j,x), where 0 <= i < nrows,\n-                         0 <= j < ncols, and x is coercible to an int.  The i,j\n+           - a Python list of triples (i,j,x), where 0 = i nrows, 0 =\n+             j ncols, and x is coercible to an int. The i,j entry of\n```\n\n## File: matrix_rational_dense.pyx\n\n* function invert: missing <\n\n```\n-         * The n x n cases for n <= 2 are handcoded for speed. \n+           - The n x n cases for n = 2 are handcoded for speed.\n```\n\n* function _lift_crt_rr_with_lcm : missing <\n\n```\n-            Optimizations: When doing the rational_recon lift of a (mod m) \n-            first see if |a| < sqrt(m/2) in which case it lifts to \n-            an integer (often a=0 or 1). \n+        Optimizations: When doing the rational_recon lift of a (mod m)\n+        first see if a sqrt(m/2) in which case it lifts to an integer\n+        (often a=0 or 1).\n```\nand\n\n```\n-            If that fails, keep track of the lcm d of denominators found so far, \n-            and check to see if z = a*d lifts to an integer with |z| <= sqrt(m/2).\n-            If so, no need to do rational recon.  This should be the case\n-            for most a after a while, and should saves substantial time!\n+        If that fails, keep track of the lcm d of denominators found so\n+        far, and check to see if z = a\\*d lifts to an integer with z =\n+        sqrt(m/2). If so, no need to do rational recon. This should be the\n+        case for most a after a while, and should saves substantial time!\n```\n\n## File: matrix_real_double_dense.pyx\n\n* main doc : presentation must be kept\n\n```\n-    To solve a linear system Ax = b\n-    where A = [[1,2]  and b = [5,6]\n-             [3,4]] \n+    To solve a linear system Ax = b where A = [[1,2] and b = [5,6]\n+    [3,4]]\n```",
     "created_at": "2009-02-24T17:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
@@ -69,14 +69,12 @@ Attachment [sage.matrix-final.patch](tarball://root/attachments/some-uuid/ticket
 -           [ other ]
 -
 ```
-
 Should not be replaced by
 
 ```
 +        Return the augmented matrix self on top of other: [ self ] [ other
 +        ]
 ```
-
 Please use some kind of verbatim environment.
 
 ## File: matrix1.pyx
@@ -86,7 +84,6 @@ Please use some kind of verbatim environment.
 -        Return the augmented matrix of the form [self | other].
 +        Return the augmented matrix of the form [self other].
 ```
-
  
 * in block_sum it's crucial to keep the presentation:
 
@@ -94,13 +91,11 @@ Please use some kind of verbatim environment.
 -        [self |    0  ]
 -        [  0  | other ]
 ```
-
 is now
 
 ```
 +        [self 0 ] [ 0 other ]
 ```
-
 
 * function _det_by_minors: missing > 
 
@@ -108,7 +103,6 @@ is now
 -        Does not handle degenerate cases, level MUST be >= 2
 +        of self. Does not handle degenerate cases, level MUST be = 2
 ```
-
 
 
 
@@ -124,7 +118,6 @@ is now
 +             j ncols, and x is coercible to an int. The i,j entry of
 ```
 
-
 ## File: matrix_rational_dense.pyx
 
 * function invert: missing <
@@ -133,7 +126,6 @@ is now
 -         * The n x n cases for n <= 2 are handcoded for speed. 
 +           - The n x n cases for n = 2 are handcoded for speed.
 ```
-
 
 * function _lift_crt_rr_with_lcm : missing <
 
@@ -145,7 +137,6 @@ is now
 +        first see if a sqrt(m/2) in which case it lifts to an integer
 +        (often a=0 or 1).
 ```
-
 and
 
 ```
@@ -159,7 +150,6 @@ and
 +        case for most a after a while, and should saves substantial time!
 ```
 
-
 ## File: matrix_real_double_dense.pyx
 
 * main doc : presentation must be kept
@@ -171,7 +161,6 @@ and
 +    To solve a linear system Ax = b where A = [[1,2] and b = [5,6]
 +    [3,4]]
 ```
-
 
 
 

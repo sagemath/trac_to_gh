@@ -174,7 +174,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066286.json:
 ```json
 {
-    "body": "Bravo, this is an awesome patch!  Positive review.\n\n\nComment for future work by somebody.  I don't like this:\n\n```\n987\t            U, S, V -- immutable matrices such that $A = U*S*V.conj().transpose()$ \n988\t                       where U and V are orthogonal and S is zero off of the diagonal. \n```\n\n\nIt's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.",
+    "body": "Bravo, this is an awesome patch!  Positive review.\n\n\nComment for future work by somebody.  I don't like this:\n\n```\n987\t            U, S, V -- immutable matrices such that $A = U*S*V.conj().transpose()$ \n988\t                       where U and V are orthogonal and S is zero off of the diagonal. \n```\n\nIt's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.",
     "created_at": "2009-12-21T19:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",
     "type": "issue_comment",
@@ -193,7 +193,6 @@ Comment for future work by somebody.  I don't like this:
 988	                       where U and V are orthogonal and S is zero off of the diagonal. 
 ```
 
-
 It's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.
 
 
@@ -203,7 +202,7 @@ It's not your fault -- it was like that before.  But it is wrong in so many ways
 archive/issue_comments_066287.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> It's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.\n\nJust a small comment: I believe that we can now use dollar signs for math input in Sphinx, so that shouldn't be a problem.",
+    "body": "Replying to [comment:4 was]:\n> It's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.\n\n\nJust a small comment: I believe that we can now use dollar signs for math input in Sphinx, so that shouldn't be a problem.",
     "created_at": "2009-12-21T21:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",
     "type": "issue_comment",
@@ -214,6 +213,7 @@ archive/issue_comments_066287.json:
 
 Replying to [comment:4 was]:
 > It's not your fault -- it was like that before.  But it is wrong in so many ways wrt to Sphinx (e.g., dollar signs?  V.conj().transpose() in math mode?  variables should be listed separately, etc.
+
 
 Just a small comment: I believe that we can now use dollar signs for math input in Sphinx, so that shouldn't be a problem.
 

@@ -3,7 +3,7 @@
 archive/issues_004133.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 791: \n    sage: 'gcd' in t \nExpected: \n    True \nGot: \n    False \n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 1849: \n    sage: 'gcd' in m.trait_names() \nExpected: \n    True \nGot: \n    False \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4133\n\n",
+    "body": "Assignee: mabshoff\n\n```\n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 791: \n    sage: 'gcd' in t \nExpected: \n    True \nGot: \n    False \n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 1849: \n    sage: 'gcd' in m.trait_names() \nExpected: \n    True \nGot: \n    False \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4133\n\n",
     "created_at": "2008-09-16T05:26:28Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_004133.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 ********************************************************************** 
@@ -36,7 +35,6 @@ Got:
     False 
 ********************************************************************** 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4133
 

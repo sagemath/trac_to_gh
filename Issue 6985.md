@@ -3,7 +3,7 @@
 archive/issues_006985.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTiming differences:\n\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTiming differences:\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
     "created_at": "2009-09-22T14:32:34Z",
     "labels": [
         "component: graphics",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  @kcrisman
 
 Timing differences:
-
 
 ```
 {{{
@@ -143,7 +142,7 @@ Changing status from new to assigned.
 archive/issue_comments_057662.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> It fixes those issues, but not directly.\n> \n> In setup_for_eval_on_grid, we should check for not just types.FunctionType, but instead for (types.FunctionType, types.LambdaType, types.BuiltinFunctionType, types.BuiltinMethodType).  Also, everything should be converted from fast_float to fast_callable.  This would be a separate ticket.\n\nCan you make another ticket for this?",
+    "body": "Replying to [comment:3 mhansen]:\n> It fixes those issues, but not directly.\n> \n> In setup_for_eval_on_grid, we should check for not just types.FunctionType, but instead for (types.FunctionType, types.LambdaType, types.BuiltinFunctionType, types.BuiltinMethodType).  Also, everything should be converted from fast_float to fast_callable.  This would be a separate ticket.\n\n\nCan you make another ticket for this?",
     "created_at": "2009-09-24T06:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -157,6 +156,7 @@ Replying to [comment:3 mhansen]:
 > 
 > In setup_for_eval_on_grid, we should check for not just types.FunctionType, but instead for (types.FunctionType, types.LambdaType, types.BuiltinFunctionType, types.BuiltinMethodType).  Also, everything should be converted from fast_float to fast_callable.  This would be a separate ticket.
 
+
 Can you make another ticket for this?
 
 
@@ -166,7 +166,7 @@ Can you make another ticket for this?
 archive/issue_comments_057663.json:
 ```json
 {
-    "body": "There seems to be a regression: `%time complex_plot(exp(x)-sin(x), (-10, 10), (-10, 10))` takes 21 seconds before the patch, but 28 seconds after the patch for me.\n\nNote:\n\n\n```\nsage: f(x)=exp(x)-sin(x)\nsage: fcomplex=fast_callable(f, domain=complex, expect_one_var=True)sage: fCDF=fast_callable(f, domain=CDF, expect_one_var=True)\nsage: %timeit f(4j)\n100 loops, best of 3: 2.21 ms per loop\nsage: %timeit fcomplex(4j)\n100 loops, best of 3: 2.7 ms per loop\nsage: %timeit fCDF(4j)\n100000 loops, best of 3: 7.94 \u00b5s per loop\n```\n\n\nSo maybe the fast_callable in the patch should use domain CDF!\n\n(this seems really odd to me, but I can't argue with the timings above!)",
+    "body": "There seems to be a regression: `%time complex_plot(exp(x)-sin(x), (-10, 10), (-10, 10))` takes 21 seconds before the patch, but 28 seconds after the patch for me.\n\nNote:\n\n```\nsage: f(x)=exp(x)-sin(x)\nsage: fcomplex=fast_callable(f, domain=complex, expect_one_var=True)sage: fCDF=fast_callable(f, domain=CDF, expect_one_var=True)\nsage: %timeit f(4j)\n100 loops, best of 3: 2.21 ms per loop\nsage: %timeit fcomplex(4j)\n100 loops, best of 3: 2.7 ms per loop\nsage: %timeit fCDF(4j)\n100000 loops, best of 3: 7.94 \u00b5s per loop\n```\n\nSo maybe the fast_callable in the patch should use domain CDF!\n\n(this seems really odd to me, but I can't argue with the timings above!)",
     "created_at": "2009-09-24T07:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -179,7 +179,6 @@ There seems to be a regression: `%time complex_plot(exp(x)-sin(x), (-10, 10), (-
 
 Note:
 
-
 ```
 sage: f(x)=exp(x)-sin(x)
 sage: fcomplex=fast_callable(f, domain=complex, expect_one_var=True)sage: fCDF=fast_callable(f, domain=CDF, expect_one_var=True)
@@ -190,7 +189,6 @@ sage: %timeit fcomplex(4j)
 sage: %timeit fCDF(4j)
 100000 loops, best of 3: 7.94 µs per loop
 ```
-
 
 So maybe the fast_callable in the patch should use domain CDF!
 
@@ -203,7 +201,7 @@ So maybe the fast_callable in the patch should use domain CDF!
 archive/issue_comments_057664.json:
 ```json
 {
-    "body": "In fact, we see the same sort of speedup just with exp(x):\n\n\n```\nsage: f(x)=exp(x)\nsage: fcomplex=fast_callable(f, domain=complex, expect_one_var=True)\nsage: fCDF=fast_callable(f, domain=CDF, expect_one_var=True)\nsage: %timeit f(4j)\n100 loops, best of 3: 2.12 ms per loop\nsage: %timeit fcomplex(4j)\n100 loops, best of 3: 2.39 ms per loop\nsage: %timeit fCDF(4j)\n100000 loops, best of 3: 7.32 \u00b5s per loop\n```\n",
+    "body": "In fact, we see the same sort of speedup just with exp(x):\n\n```\nsage: f(x)=exp(x)\nsage: fcomplex=fast_callable(f, domain=complex, expect_one_var=True)\nsage: fCDF=fast_callable(f, domain=CDF, expect_one_var=True)\nsage: %timeit f(4j)\n100 loops, best of 3: 2.12 ms per loop\nsage: %timeit fcomplex(4j)\n100 loops, best of 3: 2.39 ms per loop\nsage: %timeit fCDF(4j)\n100000 loops, best of 3: 7.32 \u00b5s per loop\n```",
     "created_at": "2009-09-24T07:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -213,7 +211,6 @@ archive/issue_comments_057664.json:
 ```
 
 In fact, we see the same sort of speedup just with exp(x):
-
 
 ```
 sage: f(x)=exp(x)
@@ -226,7 +223,6 @@ sage: %timeit fcomplex(4j)
 sage: %timeit fCDF(4j)
 100000 loops, best of 3: 7.32 µs per loop
 ```
-
 
 
 
@@ -271,7 +267,7 @@ My simple patch to make the domain CDF should also maybe be reviewed.  All of th
 archive/issue_comments_057667.json:
 ```json
 {
-    "body": "For the tour:\n\nBEFORE PATCH:\n\n\n```\nsage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))\n/home/jason/.sage/temp/littleone/4745/_home_jason__sage_init_sage_0.py:1: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n  # -*- coding: utf-8 -*-\nCPU times: user 20.51 s, sys: 0.40 s, total: 20.91 s\nWall time: 21.09 s\n```\n\n\n\nAFTER PATCH:\n\n\n```\nsage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.05 s\n```\n",
+    "body": "For the tour:\n\nBEFORE PATCH:\n\n```\nsage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))\n/home/jason/.sage/temp/littleone/4745/_home_jason__sage_init_sage_0.py:1: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n  # -*- coding: utf-8 -*-\nCPU times: user 20.51 s, sys: 0.40 s, total: 20.91 s\nWall time: 21.09 s\n```\n\n\nAFTER PATCH:\n\n```\nsage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.05 s\n```",
     "created_at": "2009-09-24T07:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -284,7 +280,6 @@ For the tour:
 
 BEFORE PATCH:
 
-
 ```
 sage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))
 /home/jason/.sage/temp/littleone/4745/_home_jason__sage_init_sage_0.py:1: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)
@@ -294,16 +289,13 @@ Wall time: 21.09 s
 ```
 
 
-
 AFTER PATCH:
-
 
 ```
 sage: %time complex_plot(exp(x)-sin(x), (-20, 20), (-20, 20))
 CPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s
 Wall time: 0.05 s
 ```
-
 
 
 
@@ -330,7 +322,7 @@ archive/issue_comments_057668.json:
 archive/issue_comments_057669.json:
 ```json
 {
-    "body": "These don't apply for me properly - I don't have the stuff after the Riemann Zeta function and options, but before the actual code, e.g.\n\n```\nsage: P = complex_plot(f, (-10, 10), (-10, 10)) \nsage: Q = complex_plot(g, (-10, 10), (-10, 10)) \nsage: R = complex_plot(h, (-10, 10), (-10, 10)) \n```\n\nIs that in some other patch, or was it removed before 4.1.2.alpha2?",
+    "body": "These don't apply for me properly - I don't have the stuff after the Riemann Zeta function and options, but before the actual code, e.g.\n\n```\nsage: P = complex_plot(f, (-10, 10), (-10, 10)) \nsage: Q = complex_plot(g, (-10, 10), (-10, 10)) \nsage: R = complex_plot(h, (-10, 10), (-10, 10)) \n```\nIs that in some other patch, or was it removed before 4.1.2.alpha2?",
     "created_at": "2009-09-24T13:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -346,7 +338,6 @@ sage: P = complex_plot(f, (-10, 10), (-10, 10))
 sage: Q = complex_plot(g, (-10, 10), (-10, 10)) 
 sage: R = complex_plot(h, (-10, 10), (-10, 10)) 
 ```
-
 Is that in some other patch, or was it removed before 4.1.2.alpha2?
 
 
@@ -356,7 +347,7 @@ Is that in some other patch, or was it removed before 4.1.2.alpha2?
 archive/issue_comments_057670.json:
 ```json
 {
-    "body": "Oh, and I think there should still be at least one example of the type\n\n```\nsage: complex_plot(sqrt, (-5, 5), (-5, 5))\n```\n\nto show that it is still possible.",
+    "body": "Oh, and I think there should still be at least one example of the type\n\n```\nsage: complex_plot(sqrt, (-5, 5), (-5, 5))\n```\nto show that it is still possible.",
     "created_at": "2009-09-24T13:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
@@ -370,7 +361,6 @@ Oh, and I think there should still be at least one example of the type
 ```
 sage: complex_plot(sqrt, (-5, 5), (-5, 5))
 ```
-
 to show that it is still possible.
 
 

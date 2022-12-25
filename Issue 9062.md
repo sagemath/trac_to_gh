@@ -218,7 +218,7 @@ Thank you! (I think authors and reviewers should be listed with their full names
 archive/issue_comments_083944.json:
 ```json
 {
-    "body": "While testing I found a heisenbug caused by this patch. If you run \"make ptestlong\", there is a failure in toric_lattice_element.pyx; but it works fine if you doctest just that file.\n\nThe problem is this comparison function:\n\n```\n    def __cmp__(self, right):\n        r\"\"\"\n[...]\n            sage: cmp(n, 1)\n            -1\n        \"\"\"\n        c = cmp(type(self), type(right))\n        if c:\n            return c\n```\n\n\nThe doctest is sensitively dependent on the exact memory locations of different classes, because `cmp(type(self), type(right))` compares on memory addresses. I suggest changing the doctest to \n\n```\nsage: n == 1\nFalse\n```\n\nwhich is much more robust.\n\nDavid",
+    "body": "While testing I found a heisenbug caused by this patch. If you run \"make ptestlong\", there is a failure in toric_lattice_element.pyx; but it works fine if you doctest just that file.\n\nThe problem is this comparison function:\n\n```\n    def __cmp__(self, right):\n        r\"\"\"\n[...]\n            sage: cmp(n, 1)\n            -1\n        \"\"\"\n        c = cmp(type(self), type(right))\n        if c:\n            return c\n```\n\nThe doctest is sensitively dependent on the exact memory locations of different classes, because `cmp(type(self), type(right))` compares on memory addresses. I suggest changing the doctest to \n\n```\nsage: n == 1\nFalse\n```\nwhich is much more robust.\n\nDavid",
     "created_at": "2010-07-01T09:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
@@ -243,14 +243,12 @@ The problem is this comparison function:
             return c
 ```
 
-
 The doctest is sensitively dependent on the exact memory locations of different classes, because `cmp(type(self), type(right))` compares on memory addresses. I suggest changing the doctest to 
 
 ```
 sage: n == 1
 False
 ```
-
 which is much more robust.
 
 David

@@ -3,7 +3,7 @@
 archive/issues_007852.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
     "created_at": "2010-01-05T21:40:18Z",
     "labels": [
         "component: linear algebra",
@@ -38,7 +38,6 @@ Solve the equation A*x = b, where
             sage: A*x
             (1.0, 2.0, 3.0)
 ```
-
 
 But that is solve_right. 
 

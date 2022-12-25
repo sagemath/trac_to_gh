@@ -3,7 +3,7 @@
 archive/issues_009162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  snark\n\nThis is a followup to #8847, which was supposed to fix this, but simply didn't. \n\n\n```\n\nsage -t  \"devel/sage/sage/functions/other.py\"               \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/functions/other.py\", line 475:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n1 items had failures:\n   1 of  29 in __main__.example_12\n```\n\n\nSee #8847 for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9162\n\n",
+    "body": "Assignee: tbd\n\nCC:  snark\n\nThis is a followup to #8847, which was supposed to fix this, but simply didn't. \n\n```\n\nsage -t  \"devel/sage/sage/functions/other.py\"               \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/functions/other.py\", line 475:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n1 items had failures:\n   1 of  29 in __main__.example_12\n```\n\nSee #8847 for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9162\n\n",
     "created_at": "2010-06-07T03:57:50Z",
     "labels": [
         "component: porting: cygwin",
@@ -23,7 +23,6 @@ CC:  snark
 
 This is a followup to #8847, which was supposed to fix this, but simply didn't. 
 
-
 ```
 
 sage -t  "devel/sage/sage/functions/other.py"               
@@ -38,7 +37,6 @@ Got:
 1 items had failures:
    1 of  29 in __main__.example_12
 ```
-
 
 See #8847 for more details.
 

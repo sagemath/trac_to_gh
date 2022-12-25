@@ -50,7 +50,7 @@ Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/tra
 archive/issue_comments_057445.json:
 ```json
 {
-    "body": "Given the nature of this function, i.e., it should never raise an exception with the default inputs, I think it should run successfully for all curves of conductor up to 100 (say) before getting into Sage.  It fails already on 11a2.\n\n\n```\nfor E in cremona_curves([1..100]+[389]):\n    print E.cremona_label(), E.prove_BSD(verbosity=2)\n```\n\n\n\n```\n11a1 p = 2: true by 2-descent\nTrue for p not in {2, 5} by Kolyvagin.\nTrue for p=5 by Mazur\n[]\n11a2 p = 2: true by 2-descent\nTrue for p not in {2, 5} by Kolyvagin.\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/1342/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in prove_BSD(self, verbosity, simon, proof)\n   5270         # Kato's bound\n   5271         if rank == 0 and not E.has_cm():\n-> 5272             assert E.optimal_curve() == E\n   5273             L_over_Omega = E.lseries().L_ratio()\n   5274             kato_primes = Sha.bound_kato()\n\nAssertionError: \n```\n\n\nAlso, I think the fix for the above is to just switch to the optimal curve.  \n\nOK, done by changing the code that raises the error to:\n\n```\n            # We can replace E by the corresponding optimal curve without changing truth\n            # of BSD at p.\n            E = E.optimal_curve()\n```\n\n\nA quicker test once we always first switch to the optimal curve is to do:\n\n```\nfor E in cremona_optimal_curves([1..100]):\n    print E.cremona_label()\n    try:\n        E.prove_BSD(verbosity=2)\n    except Exception, msg:\n        print \"** problem !!\", msg\n```\n\n\nThis test passes right now up to 91, then this hangs forever (=15 minutes):\n\n```\n90c1\np = 2: true by 2-descent\nTrue for p not in {2, 3} by Kolyvagin.\n...\n```\n\n\nWith set_verbose(2) we see that:\n\n```\nTrue for p not in {2, 3} by Kolyvagin.\nverbose 1 (6244: heegner.py, heegner_index) computing heegner point height...\nverbose 1 (6244: heegner.py, heegner_index) Height of heegner point = 41.383? (time = 0.195229)\nverbose 1 (6244: heegner.py, heegner_index) Heegner height bound = 41.384\nverbose 1 (6244: heegner.py, heegner_index) CPS bound = 8.48553581472\nverbose 1 (6244: heegner.py, heegner_index) Search would have to be up to height = 18.832\nverbose 1 (6244: heegner.py, heegner_index) doing point search\n...\n```\n\nso doing the index bound as a future patch is the way to go.",
+    "body": "Given the nature of this function, i.e., it should never raise an exception with the default inputs, I think it should run successfully for all curves of conductor up to 100 (say) before getting into Sage.  It fails already on 11a2.\n\n```\nfor E in cremona_curves([1..100]+[389]):\n    print E.cremona_label(), E.prove_BSD(verbosity=2)\n```\n\n```\n11a1 p = 2: true by 2-descent\nTrue for p not in {2, 5} by Kolyvagin.\nTrue for p=5 by Mazur\n[]\n11a2 p = 2: true by 2-descent\nTrue for p not in {2, 5} by Kolyvagin.\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/1342/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in prove_BSD(self, verbosity, simon, proof)\n   5270         # Kato's bound\n   5271         if rank == 0 and not E.has_cm():\n-> 5272             assert E.optimal_curve() == E\n   5273             L_over_Omega = E.lseries().L_ratio()\n   5274             kato_primes = Sha.bound_kato()\n\nAssertionError: \n```\n\nAlso, I think the fix for the above is to just switch to the optimal curve.  \n\nOK, done by changing the code that raises the error to:\n\n```\n            # We can replace E by the corresponding optimal curve without changing truth\n            # of BSD at p.\n            E = E.optimal_curve()\n```\n\nA quicker test once we always first switch to the optimal curve is to do:\n\n```\nfor E in cremona_optimal_curves([1..100]):\n    print E.cremona_label()\n    try:\n        E.prove_BSD(verbosity=2)\n    except Exception, msg:\n        print \"** problem !!\", msg\n```\n\nThis test passes right now up to 91, then this hangs forever (=15 minutes):\n\n```\n90c1\np = 2: true by 2-descent\nTrue for p not in {2, 3} by Kolyvagin.\n...\n```\n\nWith set_verbose(2) we see that:\n\n```\nTrue for p not in {2, 3} by Kolyvagin.\nverbose 1 (6244: heegner.py, heegner_index) computing heegner point height...\nverbose 1 (6244: heegner.py, heegner_index) Height of heegner point = 41.383? (time = 0.195229)\nverbose 1 (6244: heegner.py, heegner_index) Heegner height bound = 41.384\nverbose 1 (6244: heegner.py, heegner_index) CPS bound = 8.48553581472\nverbose 1 (6244: heegner.py, heegner_index) Search would have to be up to height = 18.832\nverbose 1 (6244: heegner.py, heegner_index) doing point search\n...\n```\nso doing the index bound as a future patch is the way to go.",
     "created_at": "2009-09-19T22:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
@@ -61,13 +61,10 @@ archive/issue_comments_057445.json:
 
 Given the nature of this function, i.e., it should never raise an exception with the default inputs, I think it should run successfully for all curves of conductor up to 100 (say) before getting into Sage.  It fails already on 11a2.
 
-
 ```
 for E in cremona_curves([1..100]+[389]):
     print E.cremona_label(), E.prove_BSD(verbosity=2)
 ```
-
-
 
 ```
 11a1 p = 2: true by 2-descent
@@ -91,7 +88,6 @@ AssertionError                            Traceback (most recent call last)
 AssertionError: 
 ```
 
-
 Also, I think the fix for the above is to just switch to the optimal curve.  
 
 OK, done by changing the code that raises the error to:
@@ -101,7 +97,6 @@ OK, done by changing the code that raises the error to:
             # of BSD at p.
             E = E.optimal_curve()
 ```
-
 
 A quicker test once we always first switch to the optimal curve is to do:
 
@@ -114,7 +109,6 @@ for E in cremona_optimal_curves([1..100]):
         print "** problem !!", msg
 ```
 
-
 This test passes right now up to 91, then this hangs forever (=15 minutes):
 
 ```
@@ -123,7 +117,6 @@ p = 2: true by 2-descent
 True for p not in {2, 3} by Kolyvagin.
 ...
 ```
-
 
 With set_verbose(2) we see that:
 
@@ -137,7 +130,6 @@ verbose 1 (6244: heegner.py, heegner_index) Search would have to be up to height
 verbose 1 (6244: heegner.py, heegner_index) doing point search
 ...
 ```
-
 so doing the index bound as a future patch is the way to go.
 
 
@@ -185,7 +177,7 @@ OK, William agrees to my fixes and I to his. Positive review!
 archive/issue_comments_057448.json:
 ```json
 {
-    "body": "The patch `trac_6958-typos_followup.patch` results in a hunk failure:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6958/trac_6958-typos_followup.patch && hg qpush\nadding trac_6958-typos_followup.patch to series file\napplying trac_6958-typos_followup.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 5688\n1 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6958-typos_followup.patch\n```\n",
+    "body": "The patch `trac_6958-typos_followup.patch` results in a hunk failure:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6958/trac_6958-typos_followup.patch && hg qpush\nadding trac_6958-typos_followup.patch to series file\napplying trac_6958-typos_followup.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 5688\n1 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6958-typos_followup.patch\n```",
     "created_at": "2009-09-24T15:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
@@ -207,7 +199,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_6958-typos_followup.patch
 ```
-
 
 
 

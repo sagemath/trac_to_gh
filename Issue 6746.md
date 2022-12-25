@@ -3,7 +3,7 @@
 archive/issues_006746.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @nathanncohen\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:\n\n```\nOn 64-bit Fedora 10, I get a build failure in cliquer. The relevant\nsnippet from the install log is below.\n\nThis looks like a case of 32/64 confusion, which I am no stranger to.\nThis machine runs on a primarily 32-bit network, and in the past we've\ndiscovered various build problems due to this. For instance, the local\ngcc in /usr/bin is 64-bit, but the NFS one in /usr/local/bin is 32-\nbit, so I have to configure my path appropriately. In this case, it's\nsomehow trying to find stubs-32.h instead of stubs-64.h, but I don't\nknow why.\n```\n\nJohn Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6746\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @nathanncohen\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:\n\n```\nOn 64-bit Fedora 10, I get a build failure in cliquer. The relevant\nsnippet from the install log is below.\n\nThis looks like a case of 32/64 confusion, which I am no stranger to.\nThis machine runs on a primarily 32-bit network, and in the past we've\ndiscovered various build problems due to this. For instance, the local\ngcc in /usr/bin is 64-bit, but the NFS one in /usr/local/bin is 32-\nbit, so I have to configure my path appropriately. In this case, it's\nsomehow trying to find stubs-32.h instead of stubs-64.h, but I don't\nknow why.\n```\nJohn Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6746\n\n",
     "created_at": "2009-08-14T17:22:13Z",
     "labels": [
         "component: packages: standard",
@@ -34,7 +34,6 @@ bit, so I have to configure my path appropriately. In this case, it's
 somehow trying to find stubs-32.h instead of stubs-64.h, but I don't
 know why.
 ```
-
 John Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6746
@@ -66,7 +65,7 @@ See ticket #6681 for an updated cliquer spkg. If that package also builds on 64-
 archive/issue_comments_055399.json:
 ```json
 {
-    "body": "Replying to [comment:1 mvngu]:\n> See ticket #6681 for an updated cliquer spkg. If that package also builds on 64-bit Fedora 10, then this ticket should be closed as a duplicate of #6681.\n\nIt does indeed build on 64-bit Fedora 10, as part of a full build of 4.1.2.alpha2.",
+    "body": "Replying to [comment:1 mvngu]:\n> See ticket #6681 for an updated cliquer spkg. If that package also builds on 64-bit Fedora 10, then this ticket should be closed as a duplicate of #6681.\n\n\nIt does indeed build on 64-bit Fedora 10, as part of a full build of 4.1.2.alpha2.",
     "created_at": "2009-09-22T19:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6746",
     "type": "issue_comment",
@@ -77,6 +76,7 @@ archive/issue_comments_055399.json:
 
 Replying to [comment:1 mvngu]:
 > See ticket #6681 for an updated cliquer spkg. If that package also builds on 64-bit Fedora 10, then this ticket should be closed as a duplicate of #6681.
+
 
 It does indeed build on 64-bit Fedora 10, as part of a full build of 4.1.2.alpha2.
 

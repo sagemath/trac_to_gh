@@ -3,7 +3,7 @@
 archive/issues_001336.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn Linux PPC the following doctest fails due to numerical noise:\n\n```\nFile \"polynomial_element.pyx\", line 2371:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [-1.6772670339941..., 0.199954796285..., 0.200045306115..., 1.5763035161844...]\nGot:\n    [-1.67726703399418, 0.199954796284890, 0.200045306115409, 1.57630351618444]\n```\n\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1336\n\n",
+    "body": "Assignee: mabshoff\n\nOn Linux PPC the following doctest fails due to numerical noise:\n\n```\nFile \"polynomial_element.pyx\", line 2371:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [-1.6772670339941..., 0.199954796285..., 0.200045306115..., 1.5763035161844...]\nGot:\n    [-1.67726703399418, 0.199954796284890, 0.200045306115409, 1.57630351618444]\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1336\n\n",
     "created_at": "2007-11-29T09:42:06Z",
     "labels": [
         "component: doctest coverage",
@@ -28,7 +28,6 @@ Expected:
 Got:
     [-1.67726703399418, 0.199954796284890, 0.200045306115409, 1.57630351618444]
 ```
-
 
 The attached patch fixes that.
 

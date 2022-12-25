@@ -112,7 +112,7 @@ Not a problem, I was just doing some cleaning.  The simplest solution might be t
 archive/issue_comments_085897.json:
 ```json
 {
-    "body": "Replying to [comment:3 AlexGhitza]:\n> Not a problem, I was just doing some cleaning.  The simplest solution might be to add a new component called \"aaa-misc\" that would catch the tickets where the component has not been set.  Then once in a while we can sift through that and classify tickets, without \"algebra\" getting polluted.\n\nI imagine you must get this quite a lot, which is a bit of a waste of your time. To be honest, I might have left this at \"algebra\" deliberately, as ATLAS is an acronym for \"Automatically Tuned Linear Algebra System\". But I know I do occasionally leave things at \"algebra\" by mistake. \n\nAs a non-mathematician, I often have difficulty in knowing what best to classify something under. \n\nIt's arguable if this should go under \"linear algebra\" rather than \"packages\". I really don't know half the time. To me, \"packages\" seems a bit too wide. \n\nI think it would be useful if there were tick boxes, and one could tick a few. The other one to get ATLAS working on HP-UX (#9815) could reasonably be in \"linear algebra\", \"packages\" and \"porting\". \n\nDave",
+    "body": "Replying to [comment:3 AlexGhitza]:\n> Not a problem, I was just doing some cleaning.  The simplest solution might be to add a new component called \"aaa-misc\" that would catch the tickets where the component has not been set.  Then once in a while we can sift through that and classify tickets, without \"algebra\" getting polluted.\n\n\nI imagine you must get this quite a lot, which is a bit of a waste of your time. To be honest, I might have left this at \"algebra\" deliberately, as ATLAS is an acronym for \"Automatically Tuned Linear Algebra System\". But I know I do occasionally leave things at \"algebra\" by mistake. \n\nAs a non-mathematician, I often have difficulty in knowing what best to classify something under. \n\nIt's arguable if this should go under \"linear algebra\" rather than \"packages\". I really don't know half the time. To me, \"packages\" seems a bit too wide. \n\nI think it would be useful if there were tick boxes, and one could tick a few. The other one to get ATLAS working on HP-UX (#9815) could reasonably be in \"linear algebra\", \"packages\" and \"porting\". \n\nDave",
     "created_at": "2010-09-02T11:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
@@ -123,6 +123,7 @@ archive/issue_comments_085897.json:
 
 Replying to [comment:3 AlexGhitza]:
 > Not a problem, I was just doing some cleaning.  The simplest solution might be to add a new component called "aaa-misc" that would catch the tickets where the component has not been set.  Then once in a while we can sift through that and classify tickets, without "algebra" getting polluted.
+
 
 I imagine you must get this quite a lot, which is a bit of a waste of your time. To be honest, I might have left this at "algebra" deliberately, as ATLAS is an acronym for "Automatically Tuned Linear Algebra System". But I know I do occasionally leave things at "algebra" by mistake. 
 

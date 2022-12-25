@@ -471,7 +471,7 @@ archive/issue_comments_018445.json:
 archive/issue_comments_018446.json:
 ```json
 {
-    "body": "Hellooooooo !\n\n> * with some more work, one can maybe avoid creating duplicate vertices. I will not have time to do that soon.\n\nWell.. It's a bit slow but it isn't really the kind of function that is called very often in a code `:-P`\n\n> * for the name, one could maybe use SixHundredCell and OneHundredTwentyCell (like they do in some other very expensive stuff named `M*********a`)\n\nTastes... Honestly I think that `Cell<n>` is still easier to find. Plus you cannot build `Cell600` without learning that `Cell120` is implemented too.\n\n> * I have never heard of the 200-cell before. One should look for references.\n\nWell even the 600 was news to me `:-P`\n\n> * One still has to make sure that nothing else useful is still hidden there\n\nIn the code ? I just looked at the functions and it looks like we already have all that is contained there.\n\nNathann",
+    "body": "Hellooooooo !\n\n> * with some more work, one can maybe avoid creating duplicate vertices. I will not have time to do that soon.\n\n\nWell.. It's a bit slow but it isn't really the kind of function that is called very often in a code `:-P`\n\n> * for the name, one could maybe use SixHundredCell and OneHundredTwentyCell (like they do in some other very expensive stuff named `M*********a`)\n\n\nTastes... Honestly I think that `Cell<n>` is still easier to find. Plus you cannot build `Cell600` without learning that `Cell120` is implemented too.\n\n> * I have never heard of the 200-cell before. One should look for references.\n\n\nWell even the 600 was news to me `:-P`\n\n> * One still has to make sure that nothing else useful is still hidden there\n\n\nIn the code ? I just looked at the functions and it looks like we already have all that is contained there.\n\nNathann",
     "created_at": "2014-01-20T09:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",
     "type": "issue_comment",
@@ -484,17 +484,21 @@ Hellooooooo !
 
 > * with some more work, one can maybe avoid creating duplicate vertices. I will not have time to do that soon.
 
+
 Well.. It's a bit slow but it isn't really the kind of function that is called very often in a code `:-P`
 
 > * for the name, one could maybe use SixHundredCell and OneHundredTwentyCell (like they do in some other very expensive stuff named `M*********a`)
+
 
 Tastes... Honestly I think that `Cell<n>` is still easier to find. Plus you cannot build `Cell600` without learning that `Cell120` is implemented too.
 
 > * I have never heard of the 200-cell before. One should look for references.
 
+
 Well even the 600 was news to me `:-P`
 
 > * One still has to make sure that nothing else useful is still hidden there
+
 
 In the code ? I just looked at the functions and it looks like we already have all that is contained there.
 
@@ -541,7 +545,7 @@ archive/issue_events_006263.json:
 archive/issue_comments_018447.json:
 ```json
 {
-    "body": "Hello,\n\nI have replaced public/2686 by my branch because git was complaining (non-fast-forward updates were rejected)\n\nI have made a more complicated algo for the 120-cell which is a bit less slow, but still rather slow.. I am not sure that was worth the time spent.\n----\nNew commits:",
+    "body": "Hello,\n\nI have replaced public/2686 by my branch because git was complaining (non-fast-forward updates were rejected)\n\nI have made a more complicated algo for the 120-cell which is a bit less slow, but still rather slow.. I am not sure that was worth the time spent.\n\n---\nNew commits:",
     "created_at": "2014-04-16T19:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",
     "type": "issue_comment",
@@ -555,7 +559,8 @@ Hello,
 I have replaced public/2686 by my branch because git was complaining (non-fast-forward updates were rejected)
 
 I have made a more complicated algo for the 120-cell which is a bit less slow, but still rather slow.. I am not sure that was worth the time spent.
-----
+
+---
 New commits:
 
 
@@ -711,7 +716,7 @@ Nathann
 archive/issue_comments_018455.json:
 ```json
 {
-    "body": "Just did it.\n\nNathann\n----\nNew commits:",
+    "body": "Just did it.\n\nNathann\n\n---\nNew commits:",
     "created_at": "2014-04-22T11:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",
     "type": "issue_comment",
@@ -723,7 +728,8 @@ archive/issue_comments_018455.json:
 Just did it.
 
 Nathann
-----
+
+---
 New commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_005061.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis is wrong:\n\n\n```\nsage: S2 = SteenrodAlgebra(2)\nsage: z = S2(0)\nsage: z.additive_order()\n2\n```\n\n\nlooking at the code, it's easy to see why this happens...\n\n\n```\n    def additive_order(self):\n        \"\"\"\n        The additive order of any element of the mod p Steenrod algebra is p.\n\n        OUTPUT:\n            order -- positive prime number\n\n        EXAMPLES:\n            sage: z = Sq(4) + Sq(6) + Sq(0)\n            sage: z.additive_order()\n            2\n        \"\"\"\n        return self._prime\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5061\n\n",
+    "body": "Assignee: tbd\n\nThis is wrong:\n\n```\nsage: S2 = SteenrodAlgebra(2)\nsage: z = S2(0)\nsage: z.additive_order()\n2\n```\n\nlooking at the code, it's easy to see why this happens...\n\n```\n    def additive_order(self):\n        \"\"\"\n        The additive order of any element of the mod p Steenrod algebra is p.\n\n        OUTPUT:\n            order -- positive prime number\n\n        EXAMPLES:\n            sage: z = Sq(4) + Sq(6) + Sq(0)\n            sage: z.additive_order()\n            2\n        \"\"\"\n        return self._prime\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5061\n\n",
     "created_at": "2009-01-23T00:28:53Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 This is wrong:
 
-
 ```
 sage: S2 = SteenrodAlgebra(2)
 sage: z = S2(0)
@@ -28,9 +27,7 @@ sage: z.additive_order()
 2
 ```
 
-
 looking at the code, it's easy to see why this happens...
-
 
 ```
     def additive_order(self):
@@ -47,7 +44,6 @@ looking at the code, it's easy to see why this happens...
         """
         return self._prime
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5061

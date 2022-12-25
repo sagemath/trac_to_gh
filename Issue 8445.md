@@ -3,7 +3,7 @@
 archive/issues_008445.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies @jhpalmieri @qed777 sage-combinat\n\n## Background\nAfter downloading the 4.3.4.alpha0.tar I applied some patches necessary to get this to build on Solaris 10 (SPARC). Namely: \n\n === Patches installed to allow Sage to build properly === \n* #7867 A patch for Python which allows Python modules to be built properly. \n* #8440 A patch for Python to allow the _multiprocessing module to build. \n\n === Patches installed to allow most all doctests to pass in 4.3.3 (a few fail in 4.3.4.alpha0 ===\n\n* #8374 Numerical noise in sage/symbolic/constants_c.pyx\n* #8375 Numerical noise in sage/symbolic/pynac.pyx\n* #8391 Change 'top' to 'prstat' on Solaris, othewise lots of doctests time out.\n* #8408 Update sqlite to the latest version (otherwise #8397, #8398, #8399, #8400 and #8401 all fail). \n\n == The problems == \n\nRunning the long doctests I see:\n\n\n```\nsage -t  -long \"devel/sage/sage/categories/finite_semigroups.py\"\nsh: kpsewhich: not found\nsh: kpsewhich: not found\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/devel/sage/sage/categories/finite_semigroups.py\", line 232:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n```\n\n\nSo there are two problems. \n* kpsewhich: not found \n* doctest failure\n\nBut #8180 was supposed to fix this kpsewhich issue, so I believe the fix is not working fully.  \n\nI'll create a ticket for the test failure if needed. But I believe I see this mentioned on sage-devel, so it looks like I'm not the only one with this issue. So a ticket for it probably exists already.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8445\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies @jhpalmieri @qed777 sage-combinat\n\n## Background\nAfter downloading the 4.3.4.alpha0.tar I applied some patches necessary to get this to build on Solaris 10 (SPARC). Namely: \n\n === Patches installed to allow Sage to build properly === \n* #7867 A patch for Python which allows Python modules to be built properly. \n* #8440 A patch for Python to allow the _multiprocessing module to build. \n\n === Patches installed to allow most all doctests to pass in 4.3.3 (a few fail in 4.3.4.alpha0 ===\n\n* #8374 Numerical noise in sage/symbolic/constants_c.pyx\n* #8375 Numerical noise in sage/symbolic/pynac.pyx\n* #8391 Change 'top' to 'prstat' on Solaris, othewise lots of doctests time out.\n* #8408 Update sqlite to the latest version (otherwise #8397, #8398, #8399, #8400 and #8401 all fail). \n\n == The problems == \n\nRunning the long doctests I see:\n\n```\nsage -t  -long \"devel/sage/sage/categories/finite_semigroups.py\"\nsh: kpsewhich: not found\nsh: kpsewhich: not found\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/devel/sage/sage/categories/finite_semigroups.py\", line 232:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n```\n\nSo there are two problems. \n* kpsewhich: not found \n* doctest failure\n\nBut #8180 was supposed to fix this kpsewhich issue, so I believe the fix is not working fully.  \n\nI'll create a ticket for the test failure if needed. But I believe I see this mentioned on sage-devel, so it looks like I'm not the only one with this issue. So a ticket for it probably exists already.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8445\n\n",
     "created_at": "2010-03-05T13:42:44Z",
     "labels": [
         "component: porting: solaris",
@@ -38,7 +38,6 @@ After downloading the 4.3.4.alpha0.tar I applied some patches necessary to get t
 
 Running the long doctests I see:
 
-
 ```
 sage -t  -long "devel/sage/sage/categories/finite_semigroups.py"
 sh: kpsewhich: not found
@@ -51,7 +50,6 @@ Expected:
 Got:
     ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']
 ```
-
 
 So there are two problems. 
 * kpsewhich: not found 

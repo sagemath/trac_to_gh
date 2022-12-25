@@ -3,7 +3,7 @@
 archive/issues_003605.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n\n==12084== Use of uninitialised value of size 8\n==12084==    at 0x66EFEDB: NTL::coeff(NTL::GF2X const&, long) (GF2.h:30)\n==12084==    by 0x13738433: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si_GFqNTLGF2E (singular.cpp:3249)\n==12084==    by 0x13736F2F: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si (singular.cpp:3951)\n==12084==    by 0x1304DF98: __pyx_f_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular__rmul_c_impl(__pyx_obj_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomial_libs\ningular*, __pyx_obj_4sage_9structure_7element_RingElement*) (multi_polynomial_libsingular.cpp:12176)\n==12084==    by 0xA9A555D: __pyx_f_4sage_9structure_6coerce__rmul_c (coerce.c:2676)\n==12084==    by 0xA9A520E: __pyx_f_4sage_9structure_6coerce_16LeftModuleAction__call_c_impl (coerce.c:13538)\n==12084==    by 0xAAC442E: __pyx_f_4sage_10categories_6action_6Action__call_c (action.c:1771)\n==12084==    by 0xA98592C: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_bin_op_c (coerce.c:5305)\n==12084==    by 0xA70C9C8: __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (element.c:8812)\n==12084==    by 0x4179E7: binary_op1 (abstract.c:398)\n==12084==    by 0x418600: PyNumber_Multiply (abstract.c:669)\n==12084==    by 0x48C2D0: PyEval_EvalFrameEx (ceval.c:1073)\n\n==12084== Conditional jump or move depends on uninitialised value(s)\n==12084==    at 0x13327103: naInit(int) (longalg.cc:908)\n==12084==    by 0x13738443: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si_GFqNTLGF2E (singular.cpp:3249)\n==12084==    by 0x13736F2F: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si (singular.cpp:3951)\n==12084==    by 0x1304DF98: __pyx_f_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular__rmul_c_impl(__pyx_obj_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomial_libs\ningular*, __pyx_obj_4sage_9structure_7element_RingElement*) (multi_polynomial_libsingular.cpp:12176)\n==12084==    by 0xA9A555D: __pyx_f_4sage_9structure_6coerce__rmul_c (coerce.c:2676)\n==12084==    by 0xA9A520E: __pyx_f_4sage_9structure_6coerce_16LeftModuleAction__call_c_impl (coerce.c:13538)\n==12084==    by 0xAAC442E: __pyx_f_4sage_10categories_6action_6Action__call_c (action.c:1771)\n==12084==    by 0xA98592C: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_bin_op_c (coerce.c:5305)\n==12084==    by 0xA70C9C8: __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (element.c:8812)\n==12084==    by 0x4179E7: binary_op1 (abstract.c:398)\n==12084==    by 0x418600: PyNumber_Multiply (abstract.c:669)\n==12084==    by 0x48C2D0: PyEval_EvalFrameEx (ceval.c:1073)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3605\n\n",
+    "body": "Assignee: mabshoff\n\n```\n\n==12084== Use of uninitialised value of size 8\n==12084==    at 0x66EFEDB: NTL::coeff(NTL::GF2X const&, long) (GF2.h:30)\n==12084==    by 0x13738433: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si_GFqNTLGF2E (singular.cpp:3249)\n==12084==    by 0x13736F2F: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si (singular.cpp:3951)\n==12084==    by 0x1304DF98: __pyx_f_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular__rmul_c_impl(__pyx_obj_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomial_libs\ningular*, __pyx_obj_4sage_9structure_7element_RingElement*) (multi_polynomial_libsingular.cpp:12176)\n==12084==    by 0xA9A555D: __pyx_f_4sage_9structure_6coerce__rmul_c (coerce.c:2676)\n==12084==    by 0xA9A520E: __pyx_f_4sage_9structure_6coerce_16LeftModuleAction__call_c_impl (coerce.c:13538)\n==12084==    by 0xAAC442E: __pyx_f_4sage_10categories_6action_6Action__call_c (action.c:1771)\n==12084==    by 0xA98592C: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_bin_op_c (coerce.c:5305)\n==12084==    by 0xA70C9C8: __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (element.c:8812)\n==12084==    by 0x4179E7: binary_op1 (abstract.c:398)\n==12084==    by 0x418600: PyNumber_Multiply (abstract.c:669)\n==12084==    by 0x48C2D0: PyEval_EvalFrameEx (ceval.c:1073)\n\n==12084== Conditional jump or move depends on uninitialised value(s)\n==12084==    at 0x13327103: naInit(int) (longalg.cc:908)\n==12084==    by 0x13738443: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si_GFqNTLGF2E (singular.cpp:3249)\n==12084==    by 0x13736F2F: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_sa2si (singular.cpp:3951)\n==12084==    by 0x1304DF98: __pyx_f_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular__rmul_c_impl(__pyx_obj_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomial_libs\ningular*, __pyx_obj_4sage_9structure_7element_RingElement*) (multi_polynomial_libsingular.cpp:12176)\n==12084==    by 0xA9A555D: __pyx_f_4sage_9structure_6coerce__rmul_c (coerce.c:2676)\n==12084==    by 0xA9A520E: __pyx_f_4sage_9structure_6coerce_16LeftModuleAction__call_c_impl (coerce.c:13538)\n==12084==    by 0xAAC442E: __pyx_f_4sage_10categories_6action_6Action__call_c (action.c:1771)\n==12084==    by 0xA98592C: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_bin_op_c (coerce.c:5305)\n==12084==    by 0xA70C9C8: __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (element.c:8812)\n==12084==    by 0x4179E7: binary_op1 (abstract.c:398)\n==12084==    by 0x418600: PyNumber_Multiply (abstract.c:669)\n==12084==    by 0x48C2D0: PyEval_EvalFrameEx (ceval.c:1073)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3605\n\n",
     "created_at": "2008-07-08T11:46:34Z",
     "labels": [
         "component: memleak",
@@ -18,7 +18,6 @@ archive/issues_003605.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 
@@ -53,7 +52,6 @@ ingular*, __pyx_obj_4sage_9structure_7element_RingElement*) (multi_polynomial_li
 ==12084==    by 0x48C2D0: PyEval_EvalFrameEx (ceval.c:1073)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3605
 
 
@@ -83,7 +81,7 @@ Is there any clue which function in ell_finite_field.py is causing this?  John
 archive/issue_comments_025421.json:
 ```json
 {
-    "body": "Replying to [comment:1 cremona]:\n> Is there any clue which function in ell_finite_field.py is causing this?  John\n\nNope, I can only detect this in a doctest, but I will attempt to track this down this week.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 cremona]:\n> Is there any clue which function in ell_finite_field.py is causing this?  John\n\n\nNope, I can only detect this in a doctest, but I will attempt to track this down this week.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-22T08:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3605",
     "type": "issue_comment",
@@ -94,6 +92,7 @@ archive/issue_comments_025421.json:
 
 Replying to [comment:1 cremona]:
 > Is there any clue which function in ell_finite_field.py is causing this?  John
+
 
 Nope, I can only detect this in a doctest, but I will attempt to track this down this week.
 
@@ -159,7 +158,7 @@ archive/issue_events_008261.json:
 archive/issue_comments_025423.json:
 ```json
 {
-    "body": "The problem is gone in Sage 3.1.4:\n\n```\n==30839==    /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_ell_finite_field.py\n==30839== \n--30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n--30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n==30839== \n==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)\n```\n\n\nCheers,\n\nMichael",
+    "body": "The problem is gone in Sage 3.1.4:\n\n```\n==30839==    /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_ell_finite_field.py\n==30839== \n--30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n--30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n==30839== \n==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T16:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3605",
     "type": "issue_comment",
@@ -179,7 +178,6 @@ The problem is gone in Sage 3.1.4:
 ==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)
 ```
 
-
 Cheers,
 
 Michael
@@ -191,7 +189,7 @@ Michael
 archive/issue_comments_025424.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> The problem is gone in Sage 3.1.4:\n> {{{\n> ==30839==    /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_ell_finite_field.py\n> ==30839== \n> --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n> --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n> ==30839== \n> ==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)\n> }}}\n> \n> Cheers,\n> \n> Michael\n\nYippee!",
+    "body": "Replying to [comment:3 mabshoff]:\n> The problem is gone in Sage 3.1.4:\n> \n> ```\n> ==30839==    /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_ell_finite_field.py\n> ==30839== \n> --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n> --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n> ==30839== \n> ==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)\n> ```\n> \n> Cheers,\n> \n> Michael\n\n\nYippee!",
     "created_at": "2008-10-26T17:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3605",
     "type": "issue_comment",
@@ -202,17 +200,19 @@ archive/issue_comments_025424.json:
 
 Replying to [comment:3 mabshoff]:
 > The problem is gone in Sage 3.1.4:
-> {{{
+> 
+> ```
 > ==30839==    /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_ell_finite_field.py
 > ==30839== 
 > --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10
 > --30839-- DWARF2 CFI reader: unhandled CFI instruction 0:10
 > ==30839== 
 > ==30839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 598 from 2)
-> }}}
+> ```
 > 
 > Cheers,
 > 
 > Michael
+
 
 Yippee!

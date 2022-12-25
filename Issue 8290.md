@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8290
 archive/issue_comments_073308.json:
 ```json
 {
-    "body": "Here is a quick spkg that works if you have libhdf5 devel packages installed on your computer:\n\nhttp://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n\nInstall it with\n\n```\nsage -i http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n```\n",
+    "body": "Here is a quick spkg that works if you have libhdf5 devel packages installed on your computer:\n\nhttp://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n\nInstall it with\n\n```\nsage -i http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n```",
     "created_at": "2010-02-17T01:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8290",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ Install it with
 ```
 sage -i http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg
 ```
-
 
 
 
@@ -123,7 +122,7 @@ since compiling this, then h5py does not work.
 archive/issue_comments_073312.json:
 ```json
 {
-    "body": "Hi,\n\nSo if you build\n\n    http://sage.math.washington.edu/home/wstein/patches/hdf5-1.6.9.spkg\n\nand \n\n    http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n\nthen it should work.  Example, do:\n\n\n```\n   sage -f  http://sage.math.washington.edu/home/wstein/patches/hdf5-1.6.9.spkg  http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n```\n\n\nI'm posting this for inclusion in the *experimental* repo.",
+    "body": "Hi,\n\nSo if you build\n\n    http://sage.math.washington.edu/home/wstein/patches/hdf5-1.6.9.spkg\n\nand \n\n    http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n\nthen it should work.  Example, do:\n\n```\n   sage -f  http://sage.math.washington.edu/home/wstein/patches/hdf5-1.6.9.spkg  http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg\n```\n\nI'm posting this for inclusion in the *experimental* repo.",
     "created_at": "2010-02-17T01:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8290",
     "type": "issue_comment",
@@ -144,11 +143,9 @@ and
 
 then it should work.  Example, do:
 
-
 ```
    sage -f  http://sage.math.washington.edu/home/wstein/patches/hdf5-1.6.9.spkg  http://sage.math.washington.edu/home/wstein/patches/h5py-1.2.1.spkg
 ```
-
 
 I'm posting this for inclusion in the *experimental* repo.
 
@@ -177,7 +174,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073314.json:
 ```json
 {
-    "body": "Example:\n\n```\nHere's a trivial example showing how to create a new HDF5 file and store a 100 x 20 array of floats:\n\n>>> f = h5py.File(\"myfile.hdf5\", 'w')\n>>> f[\"MyDataset\"] = numpy.ones((100,20))\n\nAnd to get your data back:\n\n>>> dset = f[\"MyDataset\"]\n>>> subset = dset[20:80,:]\n```\n\nSee http://code.google.com/p/h5py/",
+    "body": "Example:\n\n```\nHere's a trivial example showing how to create a new HDF5 file and store a 100 x 20 array of floats:\n\n>>> f = h5py.File(\"myfile.hdf5\", 'w')\n>>> f[\"MyDataset\"] = numpy.ones((100,20))\n\nAnd to get your data back:\n\n>>> dset = f[\"MyDataset\"]\n>>> subset = dset[20:80,:]\n```\nSee http://code.google.com/p/h5py/",
     "created_at": "2010-02-17T01:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8290",
     "type": "issue_comment",
@@ -199,7 +196,6 @@ And to get your data back:
 >>> dset = f["MyDataset"]
 >>> subset = dset[20:80,:]
 ```
-
 See http://code.google.com/p/h5py/
 
 

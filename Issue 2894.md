@@ -3,7 +3,7 @@
 archive/issues_002894.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe following code takes .004ms/call, which is about 5 times faster than the existing get_cell():\n\n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n    var v = cell_element[id];\n    if(v == undefined)\n        v = cell_element[id] = get_cell(id)\n    return v;\n}\n```\n\n\nIt follows that we should update get_cell to the 5-times faster version, since get_cell is called  quite frequently in the notebook code.\n\nas tested with\n\n\n```\nvar t0;\nvar e;\nvar n = cell_id_list[cell_id_list.length-1];\nvar N = 100000.;\nt0 = time_now();\nfor(i=0;i<N;i++)\n   e = get_cell(n);\nt1 = time_now();\nalert((t1-t0)/N);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2894\n\n",
+    "body": "Assignee: mabshoff\n\nThe following code takes .004ms/call, which is about 5 times faster than the existing get_cell():\n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n    var v = cell_element[id];\n    if(v == undefined)\n        v = cell_element[id] = get_cell(id)\n    return v;\n}\n```\n\nIt follows that we should update get_cell to the 5-times faster version, since get_cell is called  quite frequently in the notebook code.\n\nas tested with\n\n```\nvar t0;\nvar e;\nvar n = cell_id_list[cell_id_list.length-1];\nvar N = 100000.;\nt0 = time_now();\nfor(i=0;i<N;i++)\n   e = get_cell(n);\nt1 = time_now();\nalert((t1-t0)/N);\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2894\n\n",
     "created_at": "2008-04-12T07:51:42Z",
     "labels": [
         "component: cygwin",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 The following code takes .004ms/call, which is about 5 times faster than the existing get_cell():
 
-
 ```
 var cell_element_cache = [];
 function get_cell2(id) {
@@ -31,11 +30,9 @@ function get_cell2(id) {
 }
 ```
 
-
 It follows that we should update get_cell to the 5-times faster version, since get_cell is called  quite frequently in the notebook code.
 
 as tested with
-
 
 ```
 var t0;
@@ -48,7 +45,6 @@ for(i=0;i<N;i++)
 t1 = time_now();
 alert((t1-t0)/N);
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2894
 

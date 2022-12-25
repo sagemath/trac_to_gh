@@ -3,7 +3,7 @@
 archive/issues_002298.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jasongrout @ncalexan\n\nThe attached patch implements a way to compute a number field containing given algebraic numbers:\n\n```\nsage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])\n\n(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,\n [-a^3 + 3*a, -a^2 + 2],\n Ring morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1\n  To:   Algebraic Real Field\n  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2298\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jasongrout @ncalexan\n\nThe attached patch implements a way to compute a number field containing given algebraic numbers:\n\n```\nsage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])\n\n(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,\n [-a^3 + 3*a, -a^2 + 2],\n Ring morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1\n  To:   Algebraic Real Field\n  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2298\n\n",
     "created_at": "2008-02-25T03:07:21Z",
     "labels": [
         "component: misc"
@@ -31,7 +31,6 @@ sage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])
   To:   Algebraic Real Field
   Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2298
 
@@ -62,7 +61,7 @@ Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_015205.json:
 ```json
 {
-    "body": "I get the following doctest failure:\n\n```\nExpected:\n    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:\n      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4\n      To:   Algebraic Field\n      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] + [1.2247448713915889 .. 1.2247448713915892]*I)\nGot:\n    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:\n      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4\n      To:   Algebraic Field\n      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] - [1.2247448713915889 .. 1.2247448713915892]*I)\n```\n",
+    "body": "I get the following doctest failure:\n\n```\nExpected:\n    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:\n      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4\n      To:   Algebraic Field\n      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] + [1.2247448713915889 .. 1.2247448713915892]*I)\nGot:\n    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:\n      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4\n      To:   Algebraic Field\n      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] - [1.2247448713915889 .. 1.2247448713915892]*I)\n```",
     "created_at": "2008-02-27T19:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
@@ -85,7 +84,6 @@ Got:
       To:   Algebraic Field
       Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] - [1.2247448713915889 .. 1.2247448713915892]*I)
 ```
-
 
 
 
@@ -168,7 +166,7 @@ The only issue I raise is the name -- I'd really like number_field to appear, no
 archive/issue_comments_015210.json:
 ```json
 {
-    "body": "It would be nice if\n\n```\nnf_elements_from_algebraics([sqrt(2), sqrt(3 + sqrt(2))*I, sqrt(3 - sqrt(2))*I])\n```\n\njust worked, too -- coerced to QQbar for you.",
+    "body": "It would be nice if\n\n```\nnf_elements_from_algebraics([sqrt(2), sqrt(3 + sqrt(2))*I, sqrt(3 - sqrt(2))*I])\n```\njust worked, too -- coerced to QQbar for you.",
     "created_at": "2008-03-02T00:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
@@ -182,7 +180,6 @@ It would be nice if
 ```
 nf_elements_from_algebraics([sqrt(2), sqrt(3 + sqrt(2))*I, sqrt(3 - sqrt(2))*I])
 ```
-
 just worked, too -- coerced to QQbar for you.
 
 

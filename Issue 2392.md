@@ -57,7 +57,7 @@ Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-
 archive/issue_comments_016100.json:
 ```json
 {
-    "body": "Replying to [comment:1 malb]:\n> **Review**:\n>  * patch looks good, I say apply\n>  * shall we open a ticket for the mentioned Sage<->PARI issue?\n\nHi malb,\n\nI assume you mean\n\n```\n+        Unfortunately SAGE does not handle PARI's variable ordering requirements\n+        gracefully, so the following fails:\n```\n\nin which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 malb]:\n> **Review**:\n> * patch looks good, I say apply\n> * shall we open a ticket for the mentioned Sage<->PARI issue?\n\n\nHi malb,\n\nI assume you mean\n\n```\n+        Unfortunately SAGE does not handle PARI's variable ordering requirements\n+        gracefully, so the following fails:\n```\nin which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-05T13:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2392",
     "type": "issue_comment",
@@ -68,8 +68,9 @@ archive/issue_comments_016100.json:
 
 Replying to [comment:1 malb]:
 > **Review**:
->  * patch looks good, I say apply
->  * shall we open a ticket for the mentioned Sage<->PARI issue?
+> * patch looks good, I say apply
+> * shall we open a ticket for the mentioned Sage<->PARI issue?
+
 
 Hi malb,
 
@@ -79,7 +80,6 @@ I assume you mean
 +        Unfortunately SAGE does not handle PARI's variable ordering requirements
 +        gracefully, so the following fails:
 ```
-
 in which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.
 
 Cheers,
@@ -145,7 +145,7 @@ archive/issue_events_005644.json:
 archive/issue_comments_016103.json:
 ```json
 {
-    "body": "> Hi malb,\n> \n> I assume you mean\n> {{{\n> +        Unfortunately SAGE does not handle PARI's variable ordering requirements\n> +        gracefully, so the following fails:\n> }}}\n> in which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.\n\nJup.",
+    "body": "> Hi malb,\n> \n> I assume you mean\n> \n> ```\n> +        Unfortunately SAGE does not handle PARI's variable ordering requirements\n> +        gracefully, so the following fails:\n> ```\n> in which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.\n\n\nJup.",
     "created_at": "2008-03-05T15:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2392",
     "type": "issue_comment",
@@ -157,10 +157,12 @@ archive/issue_comments_016103.json:
 > Hi malb,
 > 
 > I assume you mean
-> {{{
+> 
+> ```
 > +        Unfortunately SAGE does not handle PARI's variable ordering requirements
 > +        gracefully, so the following fails:
-> }}}
+> ```
 > in which case I would suggest that we open a ticket. Is that something that has been discussed before? I do not recall any currently open ticket that mentions pari and variable orderings.
+
 
 Jup.

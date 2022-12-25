@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8076
 archive/issue_comments_070638.json:
 ```json
 {
-    "body": "It builds fine, and Gap seems to work.   The major workspaces issue seems gone.    Bravo!  Thanks to Steve Linton and dimpase!\n\nThe repo needs to have its changed checked in:\n\n```\nwstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2> ../sage -hg status\nM .hgignore\nM SPKG.txt\n? patches/saveload.patch\nwstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2>\n```\n\n\nThis needs an `hg ci`.\n\nThe changes to the spkg look fine.  I'm guess I'm OK with the comment \"(not using the usual patches/* procedure, as this is an upstream patch.)\", though I would personally never do things that way -- to me src/ should be pristine.    \n\nI give this a positive review, subject to the other doctests in the core Sage library being fixed to reflect the new package update, e.g., things like\n\n```\nwstein@iras:~/screen/iras/sage-4.3.1> ./sage -t devel/sage/sage/interfaces/gap.py \nsage -t  \"devel/sage/sage/interfaces/gap.py\"                                      \n**********************************************************************\nFile \"/home/wstein/screen/iras/sage-4.3.1/devel/sage/sage/interfaces/gap.py\", line 821:\n    sage: gap.version()\nExpected:\n    '4.4.10'\nGot:\n    '4.4.12'\n```\n\n\n\n\n -- William",
+    "body": "It builds fine, and Gap seems to work.   The major workspaces issue seems gone.    Bravo!  Thanks to Steve Linton and dimpase!\n\nThe repo needs to have its changed checked in:\n\n```\nwstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2> ../sage -hg status\nM .hgignore\nM SPKG.txt\n? patches/saveload.patch\nwstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2>\n```\n\nThis needs an `hg ci`.\n\nThe changes to the spkg look fine.  I'm guess I'm OK with the comment \"(not using the usual patches/* procedure, as this is an upstream patch.)\", though I would personally never do things that way -- to me src/ should be pristine.    \n\nI give this a positive review, subject to the other doctests in the core Sage library being fixed to reflect the new package update, e.g., things like\n\n```\nwstein@iras:~/screen/iras/sage-4.3.1> ./sage -t devel/sage/sage/interfaces/gap.py \nsage -t  \"devel/sage/sage/interfaces/gap.py\"                                      \n**********************************************************************\nFile \"/home/wstein/screen/iras/sage-4.3.1/devel/sage/sage/interfaces/gap.py\", line 821:\n    sage: gap.version()\nExpected:\n    '4.4.10'\nGot:\n    '4.4.12'\n```\n\n\n\n -- William",
     "created_at": "2010-01-26T16:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ M SPKG.txt
 wstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2>
 ```
 
-
 This needs an `hg ci`.
 
 The changes to the spkg look fine.  I'm guess I'm OK with the comment "(not using the usual patches/* procedure, as this is an upstream patch.)", though I would personally never do things that way -- to me src/ should be pristine.    
@@ -80,7 +79,6 @@ Expected:
 Got:
     '4.4.12'
 ```
-
 
 
 
@@ -208,7 +206,7 @@ Ticket #6348 is a duplicate of this.
 archive/issue_comments_070645.json:
 ```json
 {
-    "body": "Replying to [comment:6 mvngu]:\n> Ticket #6348 is a duplicate of this.\nit could be, but this is a new version of the spkg's in question, that\nin particular incorporated a new patch by Steve Linton and fixed the stopper problem (crashes on Linux ia64 that occured with\nprevious spkg vesrions)\n\nI am about to open up a new trac ticket with a grand patch fixing the doctrings\naffected.",
+    "body": "Replying to [comment:6 mvngu]:\n> Ticket #6348 is a duplicate of this.\n\nit could be, but this is a new version of the spkg's in question, that\nin particular incorporated a new patch by Steve Linton and fixed the stopper problem (crashes on Linux ia64 that occured with\nprevious spkg vesrions)\n\nI am about to open up a new trac ticket with a grand patch fixing the doctrings\naffected.",
     "created_at": "2010-02-02T09:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -219,6 +217,7 @@ archive/issue_comments_070645.json:
 
 Replying to [comment:6 mvngu]:
 > Ticket #6348 is a duplicate of this.
+
 it could be, but this is a new version of the spkg's in question, that
 in particular incorporated a new patch by Steve Linton and fixed the stopper problem (crashes on Linux ia64 that occured with
 previous spkg vesrions)
@@ -233,7 +232,7 @@ affected.
 archive/issue_comments_070646.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?\n\nplease see trac ticket\n\n#8150\n\nfor this patch (at least it fixes all the -t -long sage/groups/ docstring problems)",
+    "body": "Replying to [comment:4 wdj]:\n> Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?\n\n\nplease see trac ticket\n\n#8150\n\nfor this patch (at least it fixes all the -t -long sage/groups/ docstring problems)",
     "created_at": "2010-02-02T09:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -244,6 +243,7 @@ archive/issue_comments_070646.json:
 
 Replying to [comment:4 wdj]:
 > Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?
+
 
 please see trac ticket
 
@@ -258,7 +258,7 @@ for this patch (at least it fixes all the -t -long sage/groups/ docstring proble
 archive/issue_comments_070647.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?\n\nas #8150 is done, could you please review this ticket, too, too, to have it all set, formally speaking? Thanks!",
+    "body": "Replying to [comment:4 wdj]:\n> Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?\n\n\nas #8150 is done, could you please review this ticket, too, too, to have it all set, formally speaking? Thanks!",
     "created_at": "2010-02-05T16:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -269,6 +269,7 @@ archive/issue_comments_070647.json:
 
 Replying to [comment:4 wdj]:
 > Is there a patch that also fixes all the ordering issues that were discussed (the conjugacy classes, etc)?
+
 
 as #8150 is done, could you please review this ticket, too, too, to have it all set, formally speaking? Thanks!
 
@@ -317,7 +318,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070650.json:
 ```json
 {
-    "body": "Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ hg st\nM .hgignore\nM SPKG.txt\n```\n\nSecond, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ cat .hgignore \nsrc/\npatches/\n```\n\nThird, I can't check anything in:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ hg ci\n<enter-commit-message>\nabort: data/.hgignore.i@bc8f0f49e4a4: no node!\n```\n\nAm I using the correct version of the spkg to be updated?",
+    "body": "Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ hg st\nM .hgignore\nM SPKG.txt\n```\nSecond, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ cat .hgignore \nsrc/\npatches/\n```\nThird, I can't check anything in:\n\n```\n[mvngu@sage gap-4.4.12.p2]$ hg ci\n<enter-commit-message>\nabort: data/.hgignore.i@bc8f0f49e4a4: no node!\n```\nAm I using the correct version of the spkg to be updated?",
     "created_at": "2010-02-13T06:30:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -333,7 +334,6 @@ Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.ed
 M .hgignore
 M SPKG.txt
 ```
-
 Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:
 
 ```
@@ -341,7 +341,6 @@ Second, the directory `patches/` must be under revision control, so the file `.h
 src/
 patches/
 ```
-
 Third, I can't check anything in:
 
 ```
@@ -349,7 +348,6 @@ Third, I can't check anything in:
 <enter-commit-message>
 abort: data/.hgignore.i@bc8f0f49e4a4: no node!
 ```
-
 Am I using the correct version of the spkg to be updated?
 
 
@@ -359,7 +357,7 @@ Am I using the correct version of the spkg to be updated?
 archive/issue_comments_070651.json:
 ```json
 {
-    "body": "Replying to [comment:12 mvngu]:\n\nThe question is which version is \"right\". Gap 4.4.12 was never a part of Sage,\nso perhaps the proper package name is\ngap-4.4.12.spkg ?\n\nIf yes, can I just wipe out .hg directory there and re-initialise hg ?\n\nIt's better to use the files located at\nhttp://boxen.math.washington.edu/home/dima/packages/\nrather than at http://www1.spms.ntu.edu.sg/~dima/tmp/\n(the connection is not always stable, etc. http://boxen.math.washington.edu/home/dima/packages/\ncontains copies of spkg's on http://www1.spms.ntu.edu.sg/~dima/tmp/)\n\n\n> Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ hg st\n> M .hgignore\n> M SPKG.txt\n> }}}\n> Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ cat .hgignore \n> src/\n> patches/\n> }}}\n> Third, I can't check anything in:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ hg ci\n> <enter-commit-message>\n> abort: data/.hgignore.i`@`bc8f0f49e4a4: no node!\n> }}}\n> Am I using the correct version of the spkg to be updated?",
+    "body": "Replying to [comment:12 mvngu]:\n\nThe question is which version is \"right\". Gap 4.4.12 was never a part of Sage,\nso perhaps the proper package name is\ngap-4.4.12.spkg ?\n\nIf yes, can I just wipe out .hg directory there and re-initialise hg ?\n\nIt's better to use the files located at\nhttp://boxen.math.washington.edu/home/dima/packages/\nrather than at http://www1.spms.ntu.edu.sg/~dima/tmp/\n(the connection is not always stable, etc. http://boxen.math.washington.edu/home/dima/packages/\ncontains copies of spkg's on http://www1.spms.ntu.edu.sg/~dima/tmp/)\n\n\n> Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ hg st\n> M .hgignore\n> M SPKG.txt\n> ```\n> Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ cat .hgignore \n> src/\n> patches/\n> ```\n> Third, I can't check anything in:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ hg ci\n> <enter-commit-message>\n> abort: data/.hgignore.i@bc8f0f49e4a4: no node!\n> ```\n> Am I using the correct version of the spkg to be updated?",
     "created_at": "2010-02-13T14:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -384,23 +382,26 @@ contains copies of spkg's on http://www1.spms.ntu.edu.sg/~dima/tmp/)
 
 
 > Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ hg st
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ hg st
 > M .hgignore
 > M SPKG.txt
-> }}}
+> ```
 > Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ cat .hgignore 
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ cat .hgignore 
 > src/
 > patches/
-> }}}
+> ```
 > Third, I can't check anything in:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ hg ci
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ hg ci
 > <enter-commit-message>
-> abort: data/.hgignore.i`@`bc8f0f49e4a4: no node!
-> }}}
+> abort: data/.hgignore.i@bc8f0f49e4a4: no node!
+> ```
 > Am I using the correct version of the spkg to be updated?
 
 
@@ -410,7 +411,7 @@ contains copies of spkg's on http://www1.spms.ntu.edu.sg/~dima/tmp/)
 archive/issue_comments_070652.json:
 ```json
 {
-    "body": "Replying to [comment:12 mvngu]:\n\nI have fixed the hg issues and uploaded the revised version to\n[http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg)\n\napparently, editing .hgignore at the wrong time wreaks havoc in .hg...\n\n> Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ hg st\n> M .hgignore\n> M SPKG.txt\n> }}}\n> Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ cat .hgignore \n> src/\n> patches/\n> }}}\n> Third, I can't check anything in:\n> {{{\n> [mvngu`@`sage gap-4.4.12.p2]$ hg ci\n> <enter-commit-message>\n> abort: data/.hgignore.i`@`bc8f0f49e4a4: no node!\n> }}}\n> Am I using the correct version of the spkg to be updated?",
+    "body": "Replying to [comment:12 mvngu]:\n\nI have fixed the hg issues and uploaded the revised version to\n[http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg)\n\napparently, editing .hgignore at the wrong time wreaks havoc in .hg...\n\n> Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ hg st\n> M .hgignore\n> M SPKG.txt\n> ```\n> Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ cat .hgignore \n> src/\n> patches/\n> ```\n> Third, I can't check anything in:\n> \n> ```\n> [mvngu@sage gap-4.4.12.p2]$ hg ci\n> <enter-commit-message>\n> abort: data/.hgignore.i@bc8f0f49e4a4: no node!\n> ```\n> Am I using the correct version of the spkg to be updated?",
     "created_at": "2010-02-14T07:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -427,23 +428,26 @@ I have fixed the hg issues and uploaded the revised version to
 apparently, editing .hgignore at the wrong time wreaks havoc in .hg...
 
 > Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ hg st
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ hg st
 > M .hgignore
 > M SPKG.txt
-> }}}
+> ```
 > Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ cat .hgignore 
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ cat .hgignore 
 > src/
 > patches/
-> }}}
+> ```
 > Third, I can't check anything in:
-> {{{
-> [mvngu`@`sage gap-4.4.12.p2]$ hg ci
+> 
+> ```
+> [mvngu@sage gap-4.4.12.p2]$ hg ci
 > <enter-commit-message>
-> abort: data/.hgignore.i`@`bc8f0f49e4a4: no node!
-> }}}
+> abort: data/.hgignore.i@bc8f0f49e4a4: no node!
+> ```
 > Am I using the correct version of the spkg to be updated?
 
 
@@ -471,7 +475,7 @@ If all you did was change the hg-related files then I don't think this needs ret
 archive/issue_comments_070654.json:
 ```json
 {
-    "body": "Replying to [comment:16 wdj]:\n> If all you did was change the hg-related files then I don't think this needs retesting. If this is wrong, please correct me.\n\nThat's correct, I just changed the hg-related files, and updated the trac ticket descriptions. \n\nI changed URLs there, so now they point to the files on boxen in my\naccount there, rather than to anything else. But this is just administration, the code did not change. I imagine there would be more testing done when they go into a Sage pre-release, and you have already tested the updated gap_packages spkg.\n(and certainly I did some testing of the updated gap spkg-file)",
+    "body": "Replying to [comment:16 wdj]:\n> If all you did was change the hg-related files then I don't think this needs retesting. If this is wrong, please correct me.\n\n\nThat's correct, I just changed the hg-related files, and updated the trac ticket descriptions. \n\nI changed URLs there, so now they point to the files on boxen in my\naccount there, rather than to anything else. But this is just administration, the code did not change. I imagine there would be more testing done when they go into a Sage pre-release, and you have already tested the updated gap_packages spkg.\n(and certainly I did some testing of the updated gap spkg-file)",
     "created_at": "2010-02-14T13:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -482,6 +486,7 @@ archive/issue_comments_070654.json:
 
 Replying to [comment:16 wdj]:
 > If all you did was change the hg-related files then I don't think this needs retesting. If this is wrong, please correct me.
+
 
 That's correct, I just changed the hg-related files, and updated the trac ticket descriptions. 
 
@@ -553,7 +558,7 @@ What happened to `gap-4.4.12.spkg`, `gap-4.4.12.p0.spkg`, and `gap-4.4.12.p1.spk
 archive/issue_comments_070658.json:
 ```json
 {
-    "body": "Replying to [comment:19 mvngu]:\n> What happened to `gap-4.4.12.spkg`, `gap-4.4.12.p0.spkg`, and `gap-4.4.12.p1.spkg`?\n\nI picked up the package made by wdj and did a bit of fixing.\nNone of p0, p1 ever made it to Sage.\nThat's why I ask whether we should really be calling it p2, and not just \ngap-4.4.12.spkg",
+    "body": "Replying to [comment:19 mvngu]:\n> What happened to `gap-4.4.12.spkg`, `gap-4.4.12.p0.spkg`, and `gap-4.4.12.p1.spkg`?\n\n\nI picked up the package made by wdj and did a bit of fixing.\nNone of p0, p1 ever made it to Sage.\nThat's why I ask whether we should really be calling it p2, and not just \ngap-4.4.12.spkg",
     "created_at": "2010-02-15T04:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -564,6 +569,7 @@ archive/issue_comments_070658.json:
 
 Replying to [comment:19 mvngu]:
 > What happened to `gap-4.4.12.spkg`, `gap-4.4.12.p0.spkg`, and `gap-4.4.12.p1.spkg`?
+
 
 I picked up the package made by wdj and did a bit of fixing.
 None of p0, p1 ever made it to Sage.
@@ -595,7 +601,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070660.json:
 ```json
 {
-    "body": "Replying to [comment:18 mvngu]:\n> Here are some issues with the latest updated spkg:\n> \n>  * It wiped out the entire commit history of all versions of the GAP spkg prior to 4.4.12.\n\nWell, the .hg/ broke down, as you have noticed.\nSo I wiped it out. \nNow I copied .hg/ from gap-4.4.10.p13.spkg\nand merged the changes there. Please check the updated spkg file.\n\n>  * The changelog `SPKG.txt` does not conform to the requirements as documented in the [Developer's Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt).\n\nFixed. Please check the updated spkg file.",
+    "body": "Replying to [comment:18 mvngu]:\n> Here are some issues with the latest updated spkg:\n> \n> * It wiped out the entire commit history of all versions of the GAP spkg prior to 4.4.12.\n\n\nWell, the .hg/ broke down, as you have noticed.\nSo I wiped it out. \nNow I copied .hg/ from gap-4.4.10.p13.spkg\nand merged the changes there. Please check the updated spkg file.\n\n>  * The changelog `SPKG.txt` does not conform to the requirements as documented in the [Developer's Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt).\n\n\nFixed. Please check the updated spkg file.",
     "created_at": "2010-02-15T05:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -607,7 +613,8 @@ archive/issue_comments_070660.json:
 Replying to [comment:18 mvngu]:
 > Here are some issues with the latest updated spkg:
 > 
->  * It wiped out the entire commit history of all versions of the GAP spkg prior to 4.4.12.
+> * It wiped out the entire commit history of all versions of the GAP spkg prior to 4.4.12.
+
 
 Well, the .hg/ broke down, as you have noticed.
 So I wiped it out. 
@@ -615,6 +622,7 @@ Now I copied .hg/ from gap-4.4.10.p13.spkg
 and merged the changes there. Please check the updated spkg file.
 
 >  * The changelog `SPKG.txt` does not conform to the requirements as documented in the [Developer's Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt).
+
 
 Fixed. Please check the updated spkg file.
 
@@ -643,7 +651,7 @@ If you have not changed the code and only the hg stuff, then I think I can leave
 archive/issue_comments_070662.json:
 ```json
 {
-    "body": "Replying to [comment:22 wdj]:\n> If you have not changed the code and only the hg stuff, then I think I can leave the review to Minh, who knows mercurial much better than I do. If you changed the code so that the package needs testing, please let me know.\n\nI changed $CP to cp, $RM to rm, etc., in spkg-install.\nThat was all, as far as code goes. The rest was hg stuff and documentation.",
+    "body": "Replying to [comment:22 wdj]:\n> If you have not changed the code and only the hg stuff, then I think I can leave the review to Minh, who knows mercurial much better than I do. If you changed the code so that the package needs testing, please let me know.\n\n\nI changed $CP to cp, $RM to rm, etc., in spkg-install.\nThat was all, as far as code goes. The rest was hg stuff and documentation.",
     "created_at": "2010-02-15T12:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -654,6 +662,7 @@ archive/issue_comments_070662.json:
 
 Replying to [comment:22 wdj]:
 > If you have not changed the code and only the hg stuff, then I think I can leave the review to Minh, who knows mercurial much better than I do. If you changed the code so that the package needs testing, please let me know.
+
 
 I changed $CP to cp, $RM to rm, etc., in spkg-install.
 That was all, as far as code goes. The rest was hg stuff and documentation.
@@ -701,7 +710,7 @@ I assume that I don't need to apply [13702.patch](http://trac.sagemath.org/sage_
 archive/issue_comments_070665.json:
 ```json
 {
-    "body": "Replying to [comment:25 mvngu]:\n> I assume that I don't need to apply [13702.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8076/13702.patch) since it's already covered by #8150.\n\nthat's correct.",
+    "body": "Replying to [comment:25 mvngu]:\n> I assume that I don't need to apply [13702.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8076/13702.patch) since it's already covered by #8150.\n\n\nthat's correct.",
     "created_at": "2010-02-17T06:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -713,6 +722,7 @@ archive/issue_comments_070665.json:
 Replying to [comment:25 mvngu]:
 > I assume that I don't need to apply [13702.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8076/13702.patch) since it's already covered by #8150.
 
+
 that's correct.
 
 
@@ -722,7 +732,7 @@ that's correct.
 archive/issue_comments_070666.json:
 ```json
 {
-    "body": "Someone reading the changelog of the GAP spkg would come across this snippet:\n\n```\n### gap-4.4.12.p2 (Dima Pasechnik, 2010-1-25)\n\n * Added .hgignore.\n *  Applied Steve Linton's Itanium patch to GAP_ROOT/src/saveload.c\n   (not using the usual patches/* procedure, as this is\n   an upstream patch.)\n *  Removed a stray binary file \"patch\" at the top level.\n *  Replaced $LN, $MKDIR, etc as done in gap-4.4.10.p13 (see below)\n\n### gap-4.4.12.p0 (David Joyner, 2009-6-17)\n\nUpgraded to gap-4.4.12. Removed guava compilation. From the source\nGAP tarball, removed tomlib, small, prim, trans.\n```\n\nand wonder what happened to `gap-4.4.12.p1`. The updated spkg is OK by me, but I have changed its name to `gap-4.4.12.p1` and its changelog now reads:\n\n```\n### gap-4.4.12.p1 (Dima Pasechnik, 2010-1-25)\n * See ticket #8076 for full details.\n * Added .hgignore.\n * Applied Steve Linton's Itanium patch to GAP_ROOT/src/saveload.c\n   (not using the usual patches/* procedure, as this is\n   an upstream patch.)\n *  Removed a stray binary file \"patch\" at the top level.\n *  Replaced $LN, $MKDIR, etc as done in gap-4.4.10.p13 (see below)\n\n### gap-4.4.12.p0 (David Joyner, 2009-6-17)\n * Upgraded to gap-4.4.12. Removed guava compilation. From the source\n   GAP tarball, removed tomlib, small, prim, trans.\n```\n\nRemember to reference the ticket number, both in the commit message and in the changelog. The updated spkg with the above name and changelog changes is up at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/gap/gap-4.4.12.p1.spkg",
+    "body": "Someone reading the changelog of the GAP spkg would come across this snippet:\n\n```\n### gap-4.4.12.p2 (Dima Pasechnik, 2010-1-25)\n\n * Added .hgignore.\n *  Applied Steve Linton's Itanium patch to GAP_ROOT/src/saveload.c\n   (not using the usual patches/* procedure, as this is\n   an upstream patch.)\n *  Removed a stray binary file \"patch\" at the top level.\n *  Replaced $LN, $MKDIR, etc as done in gap-4.4.10.p13 (see below)\n\n### gap-4.4.12.p0 (David Joyner, 2009-6-17)\n\nUpgraded to gap-4.4.12. Removed guava compilation. From the source\nGAP tarball, removed tomlib, small, prim, trans.\n```\nand wonder what happened to `gap-4.4.12.p1`. The updated spkg is OK by me, but I have changed its name to `gap-4.4.12.p1` and its changelog now reads:\n\n```\n### gap-4.4.12.p1 (Dima Pasechnik, 2010-1-25)\n * See ticket #8076 for full details.\n * Added .hgignore.\n * Applied Steve Linton's Itanium patch to GAP_ROOT/src/saveload.c\n   (not using the usual patches/* procedure, as this is\n   an upstream patch.)\n *  Removed a stray binary file \"patch\" at the top level.\n *  Replaced $LN, $MKDIR, etc as done in gap-4.4.10.p13 (see below)\n\n### gap-4.4.12.p0 (David Joyner, 2009-6-17)\n * Upgraded to gap-4.4.12. Removed guava compilation. From the source\n   GAP tarball, removed tomlib, small, prim, trans.\n```\nRemember to reference the ticket number, both in the commit message and in the changelog. The updated spkg with the above name and changelog changes is up at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/gap/gap-4.4.12.p1.spkg",
     "created_at": "2010-02-17T15:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8076",
     "type": "issue_comment",
@@ -748,7 +758,6 @@ Someone reading the changelog of the GAP spkg would come across this snippet:
 Upgraded to gap-4.4.12. Removed guava compilation. From the source
 GAP tarball, removed tomlib, small, prim, trans.
 ```
-
 and wonder what happened to `gap-4.4.12.p1`. The updated spkg is OK by me, but I have changed its name to `gap-4.4.12.p1` and its changelog now reads:
 
 ```
@@ -765,7 +774,6 @@ and wonder what happened to `gap-4.4.12.p1`. The updated spkg is OK by me, but I
  * Upgraded to gap-4.4.12. Removed guava compilation. From the source
    GAP tarball, removed tomlib, small, prim, trans.
 ```
-
 Remember to reference the ticket number, both in the commit message and in the changelog. The updated spkg with the above name and changelog changes is up at
 
 http://sage.math.washington.edu/home/mvngu/spkg/standard/gap/gap-4.4.12.p1.spkg

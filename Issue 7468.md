@@ -109,7 +109,7 @@ Programmatic possibilities: login/out; create, archive, delete, rename, share, u
 archive/issue_comments_062789.json:
 ```json
 {
-    "body": "This patch is *totally unacceptable* as is.  The problem is this:\n\n(1) Turn off your internet connection, then\n\n(2) Try doing \"sage -python setup.py install\", and you get\n\n```\n...\nReading http://pypi.python.org/simple/zope.testbrowser/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nReading http://pypi.python.org/simple/zope.testbrowser/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nCouldn't find index page for 'zope.testbrowser' (maybe misspelled?)\nScanning index of all packages (this may take a while)\nReading http://pypi.python.org/simple/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nNo local packages or download links found for zope.testbrowser>=3.7.0a1\nerror: Could not find suitable distribution for Requirement.parse('zope.testbrowser>=3.7.0a1')\n```\n\n\nNow imagine that you're building Sage from source on an airplane, or while camping, or working at a job which for security reasons doesn't allow outside network connections.\n\nOptions:\n\n(1) Get zope.testbrowser included as a standard sage package. \n\n(2) Make the dependency on zope.testbrowser optional.  \n\n -- william",
+    "body": "This patch is *totally unacceptable* as is.  The problem is this:\n\n(1) Turn off your internet connection, then\n\n(2) Try doing \"sage -python setup.py install\", and you get\n\n```\n...\nReading http://pypi.python.org/simple/zope.testbrowser/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nReading http://pypi.python.org/simple/zope.testbrowser/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nCouldn't find index page for 'zope.testbrowser' (maybe misspelled?)\nScanning index of all packages (this may take a while)\nReading http://pypi.python.org/simple/\nDownload error: [Errno 8] nodename nor servname provided, or not known -- Some packages may not be found!\nNo local packages or download links found for zope.testbrowser>=3.7.0a1\nerror: Could not find suitable distribution for Requirement.parse('zope.testbrowser>=3.7.0a1')\n```\n\nNow imagine that you're building Sage from source on an airplane, or while camping, or working at a job which for security reasons doesn't allow outside network connections.\n\nOptions:\n\n(1) Get zope.testbrowser included as a standard sage package. \n\n(2) Make the dependency on zope.testbrowser optional.  \n\n -- william",
     "created_at": "2009-12-08T21:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
@@ -137,7 +137,6 @@ Download error: [Errno 8] nodename nor servname provided, or not known -- Some p
 No local packages or download links found for zope.testbrowser>=3.7.0a1
 error: Could not find suitable distribution for Requirement.parse('zope.testbrowser>=3.7.0a1')
 ```
-
 
 Now imagine that you're building Sage from source on an airplane, or while camping, or working at a job which for security reasons doesn't allow outside network connections.
 
@@ -212,7 +211,7 @@ Please correct me if I am mistaken, though.
 archive/issue_comments_062793.json:
 ```json
 {
-    "body": "> Please correct me if I am mistaken, though. \n\nNo, that should be fine, and is probably a good idea.     Can you post your edited spkg-dist file?",
+    "body": "> Please correct me if I am mistaken, though. \n\n\nNo, that should be fine, and is probably a good idea.     Can you post your edited spkg-dist file?",
     "created_at": "2009-12-09T14:17:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
@@ -222,6 +221,7 @@ archive/issue_comments_062793.json:
 ```
 
 > Please correct me if I am mistaken, though. 
+
 
 No, that should be fine, and is probably a good idea.     Can you post your edited spkg-dist file?
 

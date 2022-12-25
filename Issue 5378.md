@@ -3,7 +3,7 @@
 archive/issues_005378.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/complex_roots.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.3-x86-Linux-fc-test/devel/sage/sage/rings/polynom\nial/complex_roots.py\", line 271:\n   sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n   [(-14.61803398874990?..., 1), (-12.3819660112501...? + 0.?e-27*I, 1)]\nGot:\n   [(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5378\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/complex_roots.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.3-x86-Linux-fc-test/devel/sage/sage/rings/polynom\nial/complex_roots.py\", line 271:\n   sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n   [(-14.61803398874990?..., 1), (-12.3819660112501...? + 0.?e-27*I, 1)]\nGot:\n   [(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5378\n\n",
     "created_at": "2009-02-26T02:40:47Z",
     "labels": [
         "component: doctest coverage",
@@ -21,7 +21,6 @@ Assignee: mabshoff
 
 CC:  cwitty
 
-
 ```
 sage -t  "devel/sage/sage/rings/polynomial/complex_roots.py"
 **********************************************************************
@@ -33,7 +32,6 @@ Expected:
 Got:
    [(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5378
 
@@ -161,7 +159,7 @@ archive/issue_events_012535.json:
 archive/issue_comments_041331.json:
 ```json
 {
-    "body": "The following illustrates the problem and a potential solution:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: review\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage: x = polygen(ZZ) \nsage: complex_roots(x^2 + 27*x + 181)\n[(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]\nsage: v=complex_roots(x^2 + 27*x + 181)\nsage: sorted((v[0][0].real(),v[1][0].real()))\n[-14.61803398874990?, -12.3819660112501?]\n```\n\nOn another machine we get:\n\n```\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage:  x = polygen(ZZ)  \nsage: complex_roots(x^2 + 27*x + 181)\n[(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125010? + 0.?e-27*I, 1)]\nsage: v=complex_roots(x^2 + 27*x + 181)\nsage: sorted((v[0][0].real(),v[1][0].real()))\n[-14.61803398874990?, -12.38196601125010?]\n```\n\nPatch coming up.\n| Sage Version 3.4.1.rc3, Release Date: 2009-04-16                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "The following illustrates the problem and a potential solution:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: review\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage: x = polygen(ZZ) \nsage: complex_roots(x^2 + 27*x + 181)\n[(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]\nsage: v=complex_roots(x^2 + 27*x + 181)\nsage: sorted((v[0][0].real(),v[1][0].real()))\n[-14.61803398874990?, -12.3819660112501?]\n```\nOn another machine we get:\n| Sage Version 3.4.1.rc3, Release Date: 2009-04-16                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage:  x = polygen(ZZ)  \nsage: complex_roots(x^2 + 27*x + 181)\n[(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125010? + 0.?e-27*I, 1)]\nsage: v=complex_roots(x^2 + 27*x + 181)\nsage: sorted((v[0][0].real(),v[1][0].real()))\n[-14.61803398874990?, -12.38196601125010?]\n```\nPatch coming up.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-19T01:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5378",
     "type": "issue_comment",
@@ -184,9 +182,9 @@ sage: v=complex_roots(x^2 + 27*x + 181)
 sage: sorted((v[0][0].real(),v[1][0].real()))
 [-14.61803398874990?, -12.3819660112501?]
 ```
-
 On another machine we get:
-
+| Sage Version 3.4.1.rc3, Release Date: 2009-04-16                   |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage: from sage.rings.polynomial.complex_roots import complex_roots
 sage:  x = polygen(ZZ)  
@@ -196,10 +194,8 @@ sage: v=complex_roots(x^2 + 27*x + 181)
 sage: sorted((v[0][0].real(),v[1][0].real()))
 [-14.61803398874990?, -12.38196601125010?]
 ```
-
 Patch coming up.
-| Sage Version 3.4.1.rc3, Release Date: 2009-04-16                   |
-| Type notebook() for the GUI, and license() for information.        |
+
 Cheers,
 
 Michael

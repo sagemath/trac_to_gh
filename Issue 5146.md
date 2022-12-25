@@ -3,7 +3,7 @@
 archive/issues_005146.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5146\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5146\n\n",
     "created_at": "2009-01-31T18:06:25Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 CC:  @johnperry-math
 
-
 ```
 R.<x,y> = PolynomialRing(GF(2147483659),order='lex')
 I=ideal([x^3-2*y^2,3*x+y^4])
@@ -30,7 +29,6 @@ sage: I.variety()
    ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`
    ? expected ring-expression. type 'help ring;'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5146
 
@@ -104,7 +102,7 @@ I added doctests for all the new functions in `toy_buchberger.py`, and a new doc
 archive/issue_comments_039293.json:
 ```json
 {
-    "body": "Replying to [comment:3 john_perry]:\n\nHi John,\n\n> Implementing Lazard's algorithm to solve this required a few subalgorithms as well. Rather than clutter `multi_polynomial_ideal.py`, I appended the functions to `toy_buchberger.py`. That seemed a natural location, since this is a toy implementation, and computing the variety of a zero-dimensional ideal is not an unnatural follow-up to Buchberger's algorithm. That said, if someone prefers that this be placed in `multi_polynomial_ideal.py`, or even in a new file, I can work with that.\n\nI would suggest to place it in its own file, but maybe Martin should pipe in there, too.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 john_perry]:\n\nHi John,\n\n> Implementing Lazard's algorithm to solve this required a few subalgorithms as well. Rather than clutter `multi_polynomial_ideal.py`, I appended the functions to `toy_buchberger.py`. That seemed a natural location, since this is a toy implementation, and computing the variety of a zero-dimensional ideal is not an unnatural follow-up to Buchberger's algorithm. That said, if someone prefers that this be placed in `multi_polynomial_ideal.py`, or even in a new file, I can work with that.\n\n\nI would suggest to place it in its own file, but maybe Martin should pipe in there, too.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-21T08:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
@@ -118,6 +116,7 @@ Replying to [comment:3 john_perry]:
 Hi John,
 
 > Implementing Lazard's algorithm to solve this required a few subalgorithms as well. Rather than clutter `multi_polynomial_ideal.py`, I appended the functions to `toy_buchberger.py`. That seemed a natural location, since this is a toy implementation, and computing the variety of a zero-dimensional ideal is not an unnatural follow-up to Buchberger's algorithm. That said, if someone prefers that this be placed in `multi_polynomial_ideal.py`, or even in a new file, I can work with that.
+
 
 I would suggest to place it in its own file, but maybe Martin should pipe in there, too.
 

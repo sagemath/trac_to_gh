@@ -3,7 +3,7 @@
 archive/issues_009037.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of 'pynac' has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of 'pynac' has:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
     "created_at": "2010-05-24T17:04:56Z",
     "labels": [
         "component: porting: solaris",
@@ -22,7 +22,6 @@ CC:  @jaapspies
 
 The spkg-install of 'pynac' has:
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
     echo "64 bit MacIntel"
@@ -31,16 +30,13 @@ if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
 fi
 ```
 
-
 so obviously does not attempt to build 64-bit when SAGE64="yes", unless the operating systems is OS X. 
 
 The build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. 
 
-
 ```
 sage: An error occurred while installing pynac-0.1.12
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9037
 
@@ -107,7 +103,7 @@ There is a new spkg at #8903 which fixes this issue.
 archive/issue_comments_083527.json:
 ```json
 {
-    "body": "#8903 does **not** fix the issue, as it still has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nI'll have to create a new package based on that at #8031. \n\nDave",
+    "body": "#8903 does **not** fix the issue, as it still has:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nI'll have to create a new package based on that at #8031. \n\nDave",
     "created_at": "2010-05-30T12:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
@@ -118,7 +114,6 @@ archive/issue_comments_083527.json:
 
 #8903 does **not** fix the issue, as it still has:
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
     echo "64 bit MacIntel"
@@ -126,7 +121,6 @@ if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
     LDFLAGS="-m64"; export LDFLAGS
 fi
 ```
-
 
 I'll have to create a new package based on that at #8031. 
 

@@ -145,7 +145,7 @@ rebased against Sage 4.0.2
 archive/issue_comments_030398.json:
 ```json
 {
-    "body": "Attachment [trac_4196.2.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.2.patch) by mvngu created at 2009-06-19 23:10:20\n\nWhen applying the patch `trac_4196.patch` against Sage 4.0.2, I received one hunk failure:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\nLoading: [..]\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg import   \"/home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\"\napplying /home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\npatching file doc/en/reference/coercion.rst\nHunk #3 FAILED at 244\n1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/coercion.rst.rej\nabort: patch failed to apply\n```\n\nThe patch `trac_4196.2.patch` is a rebase against Sage 4.0.2. It turns out that the cause of the failure was line 248 in the first patch. So the only difference between `trac_4196.patch` and `trac_4196.2.patch` is that in `trac_4196.2.patch` I left out line 248 in the original patch. Apart from the rebase, positive review.",
+    "body": "Attachment [trac_4196.2.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.2.patch) by mvngu created at 2009-06-19 23:10:20\n\nWhen applying the patch `trac_4196.patch` against Sage 4.0.2, I received one hunk failure:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\nLoading: [..]\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg import   \"/home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\"\napplying /home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\npatching file doc/en/reference/coercion.rst\nHunk #3 FAILED at 244\n1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/coercion.rst.rej\nabort: patch failed to apply\n```\nThe patch `trac_4196.2.patch` is a rebase against Sage 4.0.2. It turns out that the cause of the failure was line 248 in the first patch. So the only difference between `trac_4196.patch` and `trac_4196.2.patch` is that in `trac_4196.2.patch` I left out line 248 in the original patch. Apart from the rebase, positive review.",
     "created_at": "2009-06-19T23:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
@@ -171,7 +171,6 @@ Hunk #3 FAILED at 244
 1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/coercion.rst.rej
 abort: patch failed to apply
 ```
-
 The patch `trac_4196.2.patch` is a rebase against Sage 4.0.2. It turns out that the cause of the failure was line 248 in the first patch. So the only difference between `trac_4196.patch` and `trac_4196.2.patch` is that in `trac_4196.2.patch` I left out line 248 in the original patch. Apart from the rebase, positive review.
 
 

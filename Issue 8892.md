@@ -318,7 +318,7 @@ archive/issue_comments_081626.json:
 archive/issue_comments_081627.json:
 ```json
 {
-    "body": "Replying to [comment:9 jason]:\n> Are you asking someone else to also sign off on the original patch?\n\nNot really. I'm OK with ncohen's patch.",
+    "body": "Replying to [comment:9 jason]:\n> Are you asking someone else to also sign off on the original patch?\n\n\nNot really. I'm OK with ncohen's patch.",
     "created_at": "2010-05-11T08:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
@@ -329,6 +329,7 @@ archive/issue_comments_081627.json:
 
 Replying to [comment:9 jason]:
 > Are you asking someone else to also sign off on the original patch?
+
 
 Not really. I'm OK with ncohen's patch.
 

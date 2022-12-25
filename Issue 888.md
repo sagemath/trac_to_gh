@@ -3,7 +3,7 @@
 archive/issues_000888.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
+    "body": "Assignee: @williamstein\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
     "created_at": "2007-10-13T20:36:32Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_000888.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 File "testdoc.py", line 12:
@@ -38,7 +37,6 @@ Exception raised:
         lines = open(filename).readlines()
     IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'
 ```
-
 
 (The last line is the most interesting.)
 
@@ -296,7 +294,7 @@ archive/issue_events_002467.json:
 archive/issue_comments_005469.json:
 ```json
 {
-    "body": "According to yi the issue has been fixed:\n\n```\n[00:09] <mabshoff> yi: what is the status of #888 - is that fixed by any chance?\n[00:09] <yi> mabshoff: yes, please close it\n```\n\n\nCheers,\n\nMichael",
+    "body": "According to yi the issue has been fixed:\n\n```\n[00:09] <mabshoff> yi: what is the status of #888 - is that fixed by any chance?\n[00:09] <yi> mabshoff: yes, please close it\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T23:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
@@ -311,7 +309,6 @@ According to yi the issue has been fixed:
 [00:09] <mabshoff> yi: what is the status of #888 - is that fixed by any chance?
 [00:09] <yi> mabshoff: yes, please close it
 ```
-
 
 Cheers,
 

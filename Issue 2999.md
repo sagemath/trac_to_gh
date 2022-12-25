@@ -3,7 +3,7 @@
 archive/issues_002999.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nPackages which seem to not honor CC environment variable (they use \"gcc\"):\n\n\n```\nflint-1.06.p2\natlas-3.8.1.p1\nf2c-20070816.p0\nsymmetrica-2.0.p2\npolybori-0.3.1.p1\nrubiks-20070912.p5\nzn_poly-0.8.p0\nsage-3.0.rc1\ngap-4.4.10.p7 // guava3.4\ntachyon-0.98beta.p5\npalp-1.1.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2999\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nPackages which seem to not honor CC environment variable (they use \"gcc\"):\n\n```\nflint-1.06.p2\natlas-3.8.1.p1\nf2c-20070816.p0\nsymmetrica-2.0.p2\npolybori-0.3.1.p1\nrubiks-20070912.p5\nzn_poly-0.8.p0\nsage-3.0.rc1\ngap-4.4.10.p7 // guava3.4\ntachyon-0.98beta.p5\npalp-1.1.p1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2999\n\n",
     "created_at": "2008-04-22T16:42:08Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ CC:  @orlitzky
 
 Packages which seem to not honor CC environment variable (they use "gcc"):
 
-
 ```
 flint-1.06.p2
 atlas-3.8.1.p1
@@ -37,7 +36,6 @@ gap-4.4.10.p7 // guava3.4
 tachyon-0.98beta.p5
 palp-1.1.p1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2999
 
@@ -143,7 +141,7 @@ Ticket #6437 has an updated spkg so that polybori can be built under Solaris.
 archive/issue_comments_020577.json:
 ```json
 {
-    "body": "There are other spkgs which also fail to respect CC: from [http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread](http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread), I see the following spkgs which are not listed above:\n\n> * cliquer-1.2\n>\n> * symmetrica-2.0.p4\n>\n> * ratpoints-2.1.2.p2",
+    "body": "There are other spkgs which also fail to respect CC: from [http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread](http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread), I see the following spkgs which are not listed above:\n\n> * cliquer-1.2\n \n>\n> * symmetrica-2.0.p4\n \n>\n> * ratpoints-2.1.2.p2",
     "created_at": "2009-09-16T23:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -155,8 +153,10 @@ archive/issue_comments_020577.json:
 There are other spkgs which also fail to respect CC: from [http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread](http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread), I see the following spkgs which are not listed above:
 
 > * cliquer-1.2
+ 
 >
 > * symmetrica-2.0.p4
+ 
 >
 > * ratpoints-2.1.2.p2
 
@@ -454,7 +454,7 @@ Thanks, I did the same thing with the `$CXX` ticket at #3000.
 archive/issue_comments_020593.json:
 ```json
 {
-    "body": "Replying to [comment:9 mjo]:\n> Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.\nThat was #6437 as mentioned above.",
+    "body": "Replying to [comment:9 mjo]:\n> Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.\n\nThat was #6437 as mentioned above.",
     "created_at": "2012-02-28T09:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -465,6 +465,7 @@ archive/issue_comments_020593.json:
 
 Replying to [comment:9 mjo]:
 > Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.
+
 That was #6437 as mentioned above.
 
 
@@ -508,7 +509,7 @@ Resolution: duplicate
 archive/issue_comments_020595.json:
 ```json
 {
-    "body": "Replying to [comment:16 ohanar]:\n> Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n\nAFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left this ticket open as a meta-ticket until all issues (or spkgs) have really been fixed.",
+    "body": "Replying to [comment:16 ohanar]:\n> Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n\n\nAFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left this ticket open as a meta-ticket until all issues (or spkgs) have really been fixed.",
     "created_at": "2012-03-17T02:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -520,6 +521,7 @@ archive/issue_comments_020595.json:
 Replying to [comment:16 ohanar]:
 > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.
 
+
 AFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left this ticket open as a meta-ticket until all issues (or spkgs) have really been fixed.
 
 
@@ -529,7 +531,7 @@ AFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left th
 archive/issue_comments_020596.json:
 ```json
 {
-    "body": "Replying to [comment:11 mjo]:\n> And gap was fixed at #2575 and #4161...\n\nAha.  I knew `CC` was \"intentionally\" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but **now** I still get:\n\n```\ngcc version 4.6.3 (GCC) \n****************************************************\n*WARNING*: Unsetting CC since that tends to break GAP building\n*WARNING*: Unsetting CXX since that tends to break GAP building\nchecking build system type... x86_64-unknown-linux-gnu\nchecking host system type... x86_64-unknown-linux-gnu\nchecking target system type... x86_64-unknown-linux-gnu\nchecking for gcc... gcc\nchecking for C compiler default output file name... \nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nConfiguration of GAP failed.\n\nreal\t0m0.793s\nuser\t0m0.160s\nsys\t0m0.050s\n************************************************************************\nError installing package gap-4.4.12.p6\n************************************************************************\n```\n\n\nSo if there's been an issue with `CC` and `CXX` set, it might have been **fixed upstream** (I believe so), but it **isn't fixed in Sage**.\n\n[The problem here simply is that the \"default\" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course *does* understand them.]",
+    "body": "Replying to [comment:11 mjo]:\n> And gap was fixed at #2575 and #4161...\n\n\nAha.  I knew `CC` was \"intentionally\" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but **now** I still get:\n\n```\ngcc version 4.6.3 (GCC) \n****************************************************\n*WARNING*: Unsetting CC since that tends to break GAP building\n*WARNING*: Unsetting CXX since that tends to break GAP building\nchecking build system type... x86_64-unknown-linux-gnu\nchecking host system type... x86_64-unknown-linux-gnu\nchecking target system type... x86_64-unknown-linux-gnu\nchecking for gcc... gcc\nchecking for C compiler default output file name... \nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nConfiguration of GAP failed.\n\nreal\t0m0.793s\nuser\t0m0.160s\nsys\t0m0.050s\n************************************************************************\nError installing package gap-4.4.12.p6\n************************************************************************\n```\n\nSo if there's been an issue with `CC` and `CXX` set, it might have been **fixed upstream** (I believe so), but it **isn't fixed in Sage**.\n\n[The problem here simply is that the \"default\" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course *does* understand them.]",
     "created_at": "2012-03-17T10:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -540,6 +542,7 @@ archive/issue_comments_020596.json:
 
 Replying to [comment:11 mjo]:
 > And gap was fixed at #2575 and #4161...
+
 
 Aha.  I knew `CC` was "intentionally" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but **now** I still get:
 
@@ -565,7 +568,6 @@ Error installing package gap-4.4.12.p6
 ************************************************************************
 ```
 
-
 So if there's been an issue with `CC` and `CXX` set, it might have been **fixed upstream** (I believe so), but it **isn't fixed in Sage**.
 
 [The problem here simply is that the "default" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course *does* understand them.]
@@ -577,7 +579,7 @@ So if there's been an issue with `CC` and `CXX` set, it might have been **fixed 
 archive/issue_comments_020597.json:
 ```json
 {
-    "body": "Replying to [comment:20 leif]:\n> Replying to [comment:16 ohanar]:\n> > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n> \n> AFAIK at least ratpoints doesn't [yet] have its own ticket [...]\n\nThis (ratpoints) is now #12682 (**needing review**).",
+    "body": "Replying to [comment:20 leif]:\n> Replying to [comment:16 ohanar]:\n> > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n\n> \n> AFAIK at least ratpoints doesn't [yet] have its own ticket [...]\n\n\nThis (ratpoints) is now #12682 (**needing review**).",
     "created_at": "2012-03-17T15:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",
     "type": "issue_comment",
@@ -589,7 +591,9 @@ archive/issue_comments_020597.json:
 Replying to [comment:20 leif]:
 > Replying to [comment:16 ohanar]:
 > > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.
+
 > 
 > AFAIK at least ratpoints doesn't [yet] have its own ticket [...]
+
 
 This (ratpoints) is now #12682 (**needing review**).

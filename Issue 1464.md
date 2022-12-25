@@ -52,7 +52,7 @@ Changing status from new to assigned.
 archive/issue_comments_009398.json:
 ```json
 {
-    "body": "The bundle worked for me on Fedora 7.\n\n\n```\nsage -t  devel/sage-main/sage/coding/binary_code.pyx        \n         [2.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\n```\n\n\n\n\n```\n[jaap@paix sage-2.9.alpha5]$ ./sage -t devel/sage/sage/graphs*\nsage -t  devel/sage-main/sage/graphs/print_graphs.py        \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_database.py      \n         [12.9 s]\nsage -t  devel/sage-main/sage/graphs/graph_fast.pyx         \n         [1.8 s]\nsage -t  devel/sage-main/sage/graphs/graph_list.py          \n         [8.9 s]\nsage -t  devel/sage-main/sage/graphs/graph_genus1.py        \n         [12.8 s]\nsage -t  devel/sage-main/sage/graphs/graph.py               \n         [36.8 s]\nsage -t  devel/sage-main/sage/graphs/linearextensions.py    \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_isom.pyx         \n         [28.6 s]\nsage -t  devel/sage-main/sage/graphs/all.py                 \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n         [61.9 s]\nsage -t  devel/sage-main/sage/graphs/bruhat_sn.pyx          \n         [1.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 169.8 seconds\n\n```\n",
+    "body": "The bundle worked for me on Fedora 7.\n\n```\nsage -t  devel/sage-main/sage/coding/binary_code.pyx        \n         [2.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\n```\n\n\n```\n[jaap@paix sage-2.9.alpha5]$ ./sage -t devel/sage/sage/graphs*\nsage -t  devel/sage-main/sage/graphs/print_graphs.py        \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_database.py      \n         [12.9 s]\nsage -t  devel/sage-main/sage/graphs/graph_fast.pyx         \n         [1.8 s]\nsage -t  devel/sage-main/sage/graphs/graph_list.py          \n         [8.9 s]\nsage -t  devel/sage-main/sage/graphs/graph_genus1.py        \n         [12.8 s]\nsage -t  devel/sage-main/sage/graphs/graph.py               \n         [36.8 s]\nsage -t  devel/sage-main/sage/graphs/linearextensions.py    \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_isom.pyx         \n         [28.6 s]\nsage -t  devel/sage-main/sage/graphs/all.py                 \n         [1.5 s]\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n         [61.9 s]\nsage -t  devel/sage-main/sage/graphs/bruhat_sn.pyx          \n         [1.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 169.8 seconds\n\n```",
     "created_at": "2007-12-12T00:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ archive/issue_comments_009398.json:
 
 The bundle worked for me on Fedora 7.
 
-
 ```
 sage -t  devel/sage-main/sage/coding/binary_code.pyx        
          [2.8 s]
@@ -72,8 +71,6 @@ sage -t  devel/sage-main/sage/coding/binary_code.pyx
 All tests passed!
 
 ```
-
-
 
 
 ```
@@ -106,7 +103,6 @@ All tests passed!
 Total time for all tests: 169.8 seconds
 
 ```
-
 
 
 
@@ -206,7 +202,7 @@ archive/issue_events_003730.json:
 archive/issue_comments_009401.json:
 ```json
 {
-    "body": "Do this after applying the bundle:\n\n```\nwas@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg rm binary_code_backup.pyx \nwas@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg ci\n```\n",
+    "body": "Do this after applying the bundle:\n\n```\nwas@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg rm binary_code_backup.pyx \nwas@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg ci\n```",
     "created_at": "2007-12-15T23:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
@@ -221,7 +217,6 @@ Do this after applying the bundle:
 was@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg rm binary_code_backup.pyx 
 was@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg ci
 ```
-
 
 
 

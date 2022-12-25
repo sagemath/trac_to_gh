@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6607
 archive/issue_comments_053994.json:
 ```json
 {
-    "body": "Please follow coding conventions, especially those documented in the [Developers' Guide](http://www.sagemath.org/doc/developer/conventions.html#python-coding-conventions) and [PEP-0008](http://www.python.org/dev/peps/pep-0008/). Don't be afraid to use white spaces in your code. The patch contains codes that are squeezed together; this is difficult to read. For example, this is bad:\n\n```\ndef gftwosqrt(r): \n    \"\"\" \n    Quickly finds the squareroot of an element in GF(2^m) \n    \"\"\"\n    F=r.parent() \n    c=F.cardinality() \n    return r**(c/2)\n```\n\nand you should do this instead:\n\n```\ndef gftwosqrt(r): \n    \"\"\" \n    Quickly finds the squareroot of an element in GF(2^m)\n    \n    INPUT:\n    \n    <explain any input to this function>\n    \n    OUTPUT:\n    \n    <what's the expected output of this function?>\n    \n    EXAMPLES::\n    \n        <add-more-doctests-here>\n    \"\"\"\n    F = r.parent() \n    c = F.cardinality() \n    return r**(c/2)\n```\n\nFor more information about writing docstrings, see [this section](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). Apart from these, there are other reasons to reject the patch, as documented [here](http://www.sagemath.org/doc/developer/trac.html).",
+    "body": "Please follow coding conventions, especially those documented in the [Developers' Guide](http://www.sagemath.org/doc/developer/conventions.html#python-coding-conventions) and [PEP-0008](http://www.python.org/dev/peps/pep-0008/). Don't be afraid to use white spaces in your code. The patch contains codes that are squeezed together; this is difficult to read. For example, this is bad:\n\n```\ndef gftwosqrt(r): \n    \"\"\" \n    Quickly finds the squareroot of an element in GF(2^m) \n    \"\"\"\n    F=r.parent() \n    c=F.cardinality() \n    return r**(c/2)\n```\nand you should do this instead:\n\n```\ndef gftwosqrt(r): \n    \"\"\" \n    Quickly finds the squareroot of an element in GF(2^m)\n    \n    INPUT:\n    \n    <explain any input to this function>\n    \n    OUTPUT:\n    \n    <what's the expected output of this function?>\n    \n    EXAMPLES::\n    \n        <add-more-doctests-here>\n    \"\"\"\n    F = r.parent() \n    c = F.cardinality() \n    return r**(c/2)\n```\nFor more information about writing docstrings, see [this section](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). Apart from these, there are other reasons to reject the patch, as documented [here](http://www.sagemath.org/doc/developer/trac.html).",
     "created_at": "2009-08-04T07:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6607",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ def gftwosqrt(r):
     c=F.cardinality() 
     return r**(c/2)
 ```
-
 and you should do this instead:
 
 ```
@@ -76,7 +75,6 @@ def gftwosqrt(r):
     c = F.cardinality() 
     return r**(c/2)
 ```
-
 For more information about writing docstrings, see [this section](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). Apart from these, there are other reasons to reject the patch, as documented [here](http://www.sagemath.org/doc/developer/trac.html).
 
 

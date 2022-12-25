@@ -3,7 +3,7 @@
 archive/issues_006481.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nreported by Kwankyu on [sage-support]:\n\n\n```\nI mean the substitution y:x*y is applied first in the following\n\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\nwhere I think applying x:x+1 first seems intuitive if order ever\nshould be significant.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6481\n\n",
+    "body": "Assignee: @malb\n\nreported by Kwankyu on [sage-support]:\n\n```\nI mean the substitution y:x*y is applied first in the following\n\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\nwhere I think applying x:x+1 first seems intuitive if order ever\nshould be significant.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6481\n\n",
     "created_at": "2009-07-08T12:58:14Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 reported by Kwankyu on [sage-support]:
 
-
 ```
 I mean the substitution y:x*y is applied first in the following
 
@@ -32,7 +31,6 @@ x*y + x + y + 1
 where I think applying x:x+1 first seems intuitive if order ever
 should be significant.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6481

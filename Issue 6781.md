@@ -61,7 +61,7 @@ Patch to allow library access to ecl
 archive/issue_comments_055741.json:
 ```json
 {
-    "body": "the new patch (which should apply cleanly against 4.1.1) provides enough interface to communicate with ecl via strings.\nas proof of concept, there is also a routine to parse CONSes into python lists. Assuming there is an appropriate Maxima image, this interface can already be used to communicate with Maxima. Example session:\n\n\n```\nsage: from sage.libs.ecl import *\nsage: init_ecl()\nsage: \nsage: ecl_eval(\"(require 'asdf)\");\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/asdf.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/sysfun.lsp\"\nsage: ecl_eval('(load \"%s\")'%(SAGE_ROOT+\"/local/lib/maxima/maxima.fasb\"))\n;;; Loading \"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\"\n<ECL: #P\"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\" >\nsage: ecl_eval('(in-package :maxima)')\n<ECL: #<\"MAXIMA\" package> >\nsage: \nsage: #There is a maxima macro to ease expression parsing\nsage: string_to_object(\"#$x^2$\")\n<ECL: (MEVAL* '((MEXPT) $X 2)) >\nsage: \nsage: #we can also execute maxima routines\nsage: L=ecl_eval('($integrate #$x^2$ #$x$)')\nsage: L\n<ECL: ((MTIMES SIMP) ((RAT SIMP) 1 3) ((MEXPT SIMP) $X 3)) >\nsage: #rudimentary parsing of ECL constructs into python\nsage: L.python()\n\n[[<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >]],\n [[[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >]],\n   [<ECL: 1 >, [<ECL: 3 >, <ECL: NIL >]]],\n  [[[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >]],\n    [<ECL: $X >, [<ECL: 3 >, <ECL: NIL >]]],\n   <ECL: NIL >]]]\n```\n",
+    "body": "the new patch (which should apply cleanly against 4.1.1) provides enough interface to communicate with ecl via strings.\nas proof of concept, there is also a routine to parse CONSes into python lists. Assuming there is an appropriate Maxima image, this interface can already be used to communicate with Maxima. Example session:\n\n```\nsage: from sage.libs.ecl import *\nsage: init_ecl()\nsage: \nsage: ecl_eval(\"(require 'asdf)\");\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/asdf.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/sysfun.lsp\"\nsage: ecl_eval('(load \"%s\")'%(SAGE_ROOT+\"/local/lib/maxima/maxima.fasb\"))\n;;; Loading \"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\"\n<ECL: #P\"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\" >\nsage: ecl_eval('(in-package :maxima)')\n<ECL: #<\"MAXIMA\" package> >\nsage: \nsage: #There is a maxima macro to ease expression parsing\nsage: string_to_object(\"#$x^2$\")\n<ECL: (MEVAL* '((MEXPT) $X 2)) >\nsage: \nsage: #we can also execute maxima routines\nsage: L=ecl_eval('($integrate #$x^2$ #$x$)')\nsage: L\n<ECL: ((MTIMES SIMP) ((RAT SIMP) 1 3) ((MEXPT SIMP) $X 3)) >\nsage: #rudimentary parsing of ECL constructs into python\nsage: L.python()\n\n[[<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >]],\n [[[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >]],\n   [<ECL: 1 >, [<ECL: 3 >, <ECL: NIL >]]],\n  [[[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >]],\n    [<ECL: $X >, [<ECL: 3 >, <ECL: NIL >]]],\n   <ECL: NIL >]]]\n```",
     "created_at": "2009-08-22T00:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ archive/issue_comments_055741.json:
 
 the new patch (which should apply cleanly against 4.1.1) provides enough interface to communicate with ecl via strings.
 as proof of concept, there is also a routine to parse CONSes into python lists. Assuming there is an appropriate Maxima image, this interface can already be used to communicate with Maxima. Example session:
-
 
 ```
 sage: from sage.libs.ecl import *
@@ -109,13 +108,12 @@ sage: L.python()
 
 
 
-
 ---
 
 archive/issue_comments_055742.json:
 ```json
 {
-    "body": "With the new maxima package, the building of maxima.fasb is even easier. The following lines can be appended to spkg-install in \"maxima-5.19.1.p0.spkg\" (for now available from http://sage.math.washington.edu/home/ghitza/maxima-5.19.1.p0.spkg):\n\n```\ncd src/src\necl -eval \"(require 'asdf)\" -eval '(load \"maxima-build.lisp\")' -eval  '(asdf:make-build :maxima :type :fasl)' -eval \"(quit)\"\ncp maxima.fasb $SAGE_LOCAL/lib/maxima\ncd ../..\n```\n\nWe should probably try to catch errors a little better, although the hard part of the building has already happened at this point. It might also be nice to build maxima as a \".fas\", which seems to be the more usual format for ecl. We could even just place it in ecl's library then and avoid pathnames altogether.\n\nFurthermore, ecl's cvs version seems to build cleanly in sage too (modulo instabilities inherent to cvs versions). In principle all obstacles have been solved:\n- we can simply remove ECL's signal handlers after boot. As long as sage's signal handlers return when they are supposed to, we should be fine with that.\n- the new rewrites of ecl's bignums allow for an option to prevent ecl from assigning memory management functions to gmp (with very little effect. It only means that some bignum registers will live outside of ecl's normal heap) The memory manager turned out to be the source of the segfault on closing and would have led to segfaults in many extensive computations.",
+    "body": "With the new maxima package, the building of maxima.fasb is even easier. The following lines can be appended to spkg-install in \"maxima-5.19.1.p0.spkg\" (for now available from http://sage.math.washington.edu/home/ghitza/maxima-5.19.1.p0.spkg):\n\n```\ncd src/src\necl -eval \"(require 'asdf)\" -eval '(load \"maxima-build.lisp\")' -eval  '(asdf:make-build :maxima :type :fasl)' -eval \"(quit)\"\ncp maxima.fasb $SAGE_LOCAL/lib/maxima\ncd ../..\n```\nWe should probably try to catch errors a little better, although the hard part of the building has already happened at this point. It might also be nice to build maxima as a \".fas\", which seems to be the more usual format for ecl. We could even just place it in ecl's library then and avoid pathnames altogether.\n\nFurthermore, ecl's cvs version seems to build cleanly in sage too (modulo instabilities inherent to cvs versions). In principle all obstacles have been solved:\n- we can simply remove ECL's signal handlers after boot. As long as sage's signal handlers return when they are supposed to, we should be fine with that.\n- the new rewrites of ecl's bignums allow for an option to prevent ecl from assigning memory management functions to gmp (with very little effect. It only means that some bignum registers will live outside of ecl's normal heap) The memory manager turned out to be the source of the segfault on closing and would have led to segfaults in many extensive computations.",
     "created_at": "2009-09-01T00:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -132,7 +130,6 @@ ecl -eval "(require 'asdf)" -eval '(load "maxima-build.lisp")' -eval  '(asdf:mak
 cp maxima.fasb $SAGE_LOCAL/lib/maxima
 cd ../..
 ```
-
 We should probably try to catch errors a little better, although the hard part of the building has already happened at this point. It might also be nice to build maxima as a ".fas", which seems to be the more usual format for ecl. We could even just place it in ecl's library then and avoid pathnames altogether.
 
 Furthermore, ecl's cvs version seems to build cleanly in sage too (modulo instabilities inherent to cvs versions). In principle all obstacles have been solved:
@@ -146,7 +143,7 @@ Furthermore, ecl's cvs version seems to build cleanly in sage too (modulo instab
 archive/issue_comments_055743.json:
 ```json
 {
-    "body": "As Juanjo suggested on:\n\nhttp://sourceforge.net/mailarchive/message.php?msg_name=c159f9ab0809140803h1cfc3473p17a7b7afb82a4e71%40mail.gmail.com\n\nwe can do a good error-catch by using CL's equivalent of try...except:\n\n```\n(defun my-safe-eval (form)\n    (handler-case\n        (values (eval form))\n        (serious-condition (c) (return-from my-safe-eval (values nil (princ-to-string c))))))\n```\n\nwe lose any multiple return values, but detecting if an error occurred is cheap via NVALUES. VALUES(1) will be a nice string\ndescribing the error (princ seems to turn the condition object into the most informative string)\n\nFurthermore, it seems that renaming a \".fasb\" to \".fas\" is all that is needed to make the file respond to the usual\n\"require\". If we furthermore symbolically link <ECL-LIBRARY>/maxima.fas to maxima.fasb then loading maxima is really as easy as\n(require 'maxima).\n\nTo find out the pathname of the current ecl library, do \n\n```\necl -eval \"(princ (SI:GET-LIBRARY-PATHNAME))\" -eval \"(quit)\"\n```\n",
+    "body": "As Juanjo suggested on:\n\nhttp://sourceforge.net/mailarchive/message.php?msg_name=c159f9ab0809140803h1cfc3473p17a7b7afb82a4e71%40mail.gmail.com\n\nwe can do a good error-catch by using CL's equivalent of try...except:\n\n```\n(defun my-safe-eval (form)\n    (handler-case\n        (values (eval form))\n        (serious-condition (c) (return-from my-safe-eval (values nil (princ-to-string c))))))\n```\nwe lose any multiple return values, but detecting if an error occurred is cheap via NVALUES. VALUES(1) will be a nice string\ndescribing the error (princ seems to turn the condition object into the most informative string)\n\nFurthermore, it seems that renaming a \".fasb\" to \".fas\" is all that is needed to make the file respond to the usual\n\"require\". If we furthermore symbolically link <ECL-LIBRARY>/maxima.fas to maxima.fasb then loading maxima is really as easy as\n(require 'maxima).\n\nTo find out the pathname of the current ecl library, do \n\n```\necl -eval \"(princ (SI:GET-LIBRARY-PATHNAME))\" -eval \"(quit)\"\n```",
     "created_at": "2009-09-15T01:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -167,7 +164,6 @@ we can do a good error-catch by using CL's equivalent of try...except:
         (values (eval form))
         (serious-condition (c) (return-from my-safe-eval (values nil (princ-to-string c))))))
 ```
-
 we lose any multiple return values, but detecting if an error occurred is cheap via NVALUES. VALUES(1) will be a nice string
 describing the error (princ seems to turn the condition object into the most informative string)
 
@@ -180,7 +176,6 @@ To find out the pathname of the current ecl library, do
 ```
 ecl -eval "(princ (SI:GET-LIBRARY-PATHNAME))" -eval "(quit)"
 ```
-
 
 
 
@@ -278,7 +273,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055748.json:
 ```json
 {
-    "body": "So far, this looks good.  For some reason I am having trouble with #7287 working properly, and it's possible this is to blame, but this patch on its own seems ok.  I can't give it a positive review, because I do not know enough about Lisp to competently judge it, but various tests I got from random Lisp websites for things not in the doctests also gave correct answers, which is good!\n\nA couple of very minor things:  I notice a few functions in the 800s which aren't separated by a blank line, which makes it harder to read.  There is also a typo in init_ecl - it should be \"Do not\", not \"No not\".  I also occasionally get output like this:\n\n```\nsage: ecl_eval(\"(command object)\");\noutputsage:\n```\n\nas opposed to \n\n```\nsage: ecl_eval(\"(command object)\");\noutput\nsage:\n```\n\nI can't determine very well when this happens, though it seems to occur fairly reliably after various print commands, like \n\n```\nsage: ecl_eval(\"(print 3)\") ;\n\n3 sage: \n```\n\nNote that if I don't use the ;, since it returns the ECL object, I don't have the problem then:\n\n```\nsage: ecl_eval(\"(print 3)\")\n\n3 <ECL: 3>\nsage: \n```\n\n\nSo I'm putting this to \"needs work\" because of these very minor issues, but really it seems good and we just need someone who knows something about Lisp to review it!  Looks nice.",
+    "body": "So far, this looks good.  For some reason I am having trouble with #7287 working properly, and it's possible this is to blame, but this patch on its own seems ok.  I can't give it a positive review, because I do not know enough about Lisp to competently judge it, but various tests I got from random Lisp websites for things not in the doctests also gave correct answers, which is good!\n\nA couple of very minor things:  I notice a few functions in the 800s which aren't separated by a blank line, which makes it harder to read.  There is also a typo in init_ecl - it should be \"Do not\", not \"No not\".  I also occasionally get output like this:\n\n```\nsage: ecl_eval(\"(command object)\");\noutputsage:\n```\nas opposed to \n\n```\nsage: ecl_eval(\"(command object)\");\noutput\nsage:\n```\nI can't determine very well when this happens, though it seems to occur fairly reliably after various print commands, like \n\n```\nsage: ecl_eval(\"(print 3)\") ;\n\n3 sage: \n```\nNote that if I don't use the ;, since it returns the ECL object, I don't have the problem then:\n\n```\nsage: ecl_eval(\"(print 3)\")\n\n3 <ECL: 3>\nsage: \n```\n\nSo I'm putting this to \"needs work\" because of these very minor issues, but really it seems good and we just need someone who knows something about Lisp to review it!  Looks nice.",
     "created_at": "2009-11-02T15:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -295,7 +290,6 @@ A couple of very minor things:  I notice a few functions in the 800s which aren'
 sage: ecl_eval("(command object)");
 outputsage:
 ```
-
 as opposed to 
 
 ```
@@ -303,7 +297,6 @@ sage: ecl_eval("(command object)");
 output
 sage:
 ```
-
 I can't determine very well when this happens, though it seems to occur fairly reliably after various print commands, like 
 
 ```
@@ -311,7 +304,6 @@ sage: ecl_eval("(print 3)") ;
 
 3 sage: 
 ```
-
 Note that if I don't use the ;, since it returns the ECL object, I don't have the problem then:
 
 ```
@@ -320,7 +312,6 @@ sage: ecl_eval("(print 3)")
 3 <ECL: 3>
 sage: 
 ```
-
 
 So I'm putting this to "needs work" because of these very minor issues, but really it seems good and we just need someone who knows something about Lisp to review it!  Looks nice.
 
@@ -331,7 +322,7 @@ So I'm putting this to "needs work" because of these very minor issues, but real
 archive/issue_comments_055749.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n> {{{\n> sage: ecl_eval(\"(command object)\");\n> outputsage:\n> }}}\n> as opposed to \n> {{{\n> sage: ecl_eval(\"(command object)\");\n> output\nThat is not the fault of the interface. Compare:\n\n```\nsage: os.system(\"echo hi\");\nhi\nsage: os.system(\"echo -n hi\");\nhisage: \n```\n\nI think most common lisp print routines do NOT include a trailing newline, so I think the above behaviour is expected. ecl_eval and friends should not send anything to STDOUT by themselves.\n\nThanks for spotting the typos.\n\nI'm changing back to needs_review to invite a more lisp-savvy reviewer.",
+    "body": "Replying to [comment:8 kcrisman]:\n> {{{\n> sage: ecl_eval(\"(command object)\");\n> outputsage:\n> }}}\n> as opposed to \n> \n> ```\n> sage: ecl_eval(\"(command object)\");\n> output\n\nThat is not the fault of the interface. Compare:\n{{{\nsage: os.system(\"echo hi\");\nhi\nsage: os.system(\"echo -n hi\");\nhisage: \n}}}\nI think most common lisp print routines do NOT include a trailing newline, so I think the above behaviour is expected. ecl_eval and friends should not send anything to STDOUT by themselves.\n\nThanks for spotting the typos.\n\nI'm changing back to needs_review to invite a more lisp-savvy reviewer.",
     "created_at": "2009-11-02T18:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -346,18 +337,18 @@ Replying to [comment:8 kcrisman]:
 > outputsage:
 > }}}
 > as opposed to 
-> {{{
+> 
+> ```
 > sage: ecl_eval("(command object)");
 > output
-That is not the fault of the interface. Compare:
 
-```
+That is not the fault of the interface. Compare:
+{{{
 sage: os.system("echo hi");
 hi
 sage: os.system("echo -n hi");
 hisage: 
-```
-
+}}}
 I think most common lisp print routines do NOT include a trailing newline, so I think the above behaviour is expected. ecl_eval and friends should not send anything to STDOUT by themselves.
 
 Thanks for spotting the typos.
@@ -371,7 +362,7 @@ I'm changing back to needs_review to invite a more lisp-savvy reviewer.
 archive/issue_comments_055750.json:
 ```json
 {
-    "body": "Is it possible to do this?\n\nERROR: Please define a s == loads(dumps(s)) doctest.\n\nNow, I get \n\n```\nsage: dumps(x)\n---------------------------------------------------------------------------\nPicklingError                             Traceback (most recent call last)\n<snip>\nPicklingError: Can't pickle <type 'ecl.EclObject'>: import of module ecl failed\n```\n\nso maybe it isn't possible to do this, but I thought I'd point it out anyway in case it's trivial to fix this and I just don't realize it.",
+    "body": "Is it possible to do this?\n\nERROR: Please define a s == loads(dumps(s)) doctest.\n\nNow, I get \n\n```\nsage: dumps(x)\n---------------------------------------------------------------------------\nPicklingError                             Traceback (most recent call last)\n<snip>\nPicklingError: Can't pickle <type 'ecl.EclObject'>: import of module ecl failed\n```\nso maybe it isn't possible to do this, but I thought I'd point it out anyway in case it's trivial to fix this and I just don't realize it.",
     "created_at": "2009-11-04T15:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -393,7 +384,6 @@ PicklingError                             Traceback (most recent call last)
 <snip>
 PicklingError: Can't pickle <type 'ecl.EclObject'>: import of module ecl failed
 ```
-
 so maybe it isn't possible to do this, but I thought I'd point it out anyway in case it's trivial to fix this and I just don't realize it.
 
 
@@ -421,7 +411,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_055752.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> Is it possible to do this?\n> \n> ERROR: Please define a s == loads(dumps(s)) doctest.\n\nI noticed that sage doctesting routines prefer to have a test like that. My first reaction is \"can't be done\". Common Lisp's general approach to saving state is just that: Dump a memory image, so CL is not going to be much help for implementing a workable solution.\n\nI am sure that for many particular ECL structures, one can come up with a reasonable pickling procedure. How do other interfaces solve that (pari, magma, maxima/pexpect, maple)?\n\nFor our intended use of the ECL interface, we do not need pickling. A symbolic expression would get translated to Maxima, processed and translated back into SR. So LISP expressions would not persist beyond short timespans.",
+    "body": "Replying to [comment:10 kcrisman]:\n> Is it possible to do this?\n> \n> ERROR: Please define a s == loads(dumps(s)) doctest.\n\n\nI noticed that sage doctesting routines prefer to have a test like that. My first reaction is \"can't be done\". Common Lisp's general approach to saving state is just that: Dump a memory image, so CL is not going to be much help for implementing a workable solution.\n\nI am sure that for many particular ECL structures, one can come up with a reasonable pickling procedure. How do other interfaces solve that (pari, magma, maxima/pexpect, maple)?\n\nFor our intended use of the ECL interface, we do not need pickling. A symbolic expression would get translated to Maxima, processed and translated back into SR. So LISP expressions would not persist beyond short timespans.",
     "created_at": "2009-11-05T16:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -434,6 +424,7 @@ Replying to [comment:10 kcrisman]:
 > Is it possible to do this?
 > 
 > ERROR: Please define a s == loads(dumps(s)) doctest.
+
 
 I noticed that sage doctesting routines prefer to have a test like that. My first reaction is "can't be done". Common Lisp's general approach to saving state is just that: Dump a memory image, so CL is not going to be much help for implementing a workable solution.
 
@@ -448,7 +439,7 @@ For our intended use of the ECL interface, we do not need pickling. A symbolic e
 archive/issue_comments_055753.json:
 ```json
 {
-    "body": "> I noticed that sage doctesting routines prefer to have a test like that.\n>  My first reaction is \"can't be done\". \n\nYes it can.    If s == loads(dumps(s)) will be false for any element, or raise an error, put a discussion of that fact in a docstring and put in a doctest like this:\n\n```\nsage: s == loads(dumps(s))\nboom or False\n```\n\nThere's no reason to hide that this doesn't work from users.\n\n> How do other interfaces solve that (pari, magma, maxima/pexpect, maple)\n\nmagma can't.  pari has the amazing property that for any pretty much any x in pari we have eval(str(x)) == x (with pari notation).    I think the same is true in maxima for symbolic expressions.\n\nThis code is new, so is going to be held to a higher standard before being included than code from 2005.",
+    "body": "> I noticed that sage doctesting routines prefer to have a test like that.\n>  My first reaction is \"can't be done\". \n\n\nYes it can.    If s == loads(dumps(s)) will be false for any element, or raise an error, put a discussion of that fact in a docstring and put in a doctest like this:\n\n```\nsage: s == loads(dumps(s))\nboom or False\n```\nThere's no reason to hide that this doesn't work from users.\n\n> How do other interfaces solve that (pari, magma, maxima/pexpect, maple)\n\n\nmagma can't.  pari has the amazing property that for any pretty much any x in pari we have eval(str(x)) == x (with pari notation).    I think the same is true in maxima for symbolic expressions.\n\nThis code is new, so is going to be held to a higher standard before being included than code from 2005.",
     "created_at": "2009-11-06T05:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -460,16 +451,17 @@ archive/issue_comments_055753.json:
 > I noticed that sage doctesting routines prefer to have a test like that.
 >  My first reaction is "can't be done". 
 
+
 Yes it can.    If s == loads(dumps(s)) will be false for any element, or raise an error, put a discussion of that fact in a docstring and put in a doctest like this:
 
 ```
 sage: s == loads(dumps(s))
 boom or False
 ```
-
 There's no reason to hide that this doesn't work from users.
 
 > How do other interfaces solve that (pari, magma, maxima/pexpect, maple)
+
 
 magma can't.  pari has the amazing property that for any pretty much any x in pari we have eval(str(x)) == x (with pari notation).    I think the same is true in maxima for symbolic expressions.
 
@@ -587,7 +579,7 @@ Updated the patch to apply against 4.3. Cython started to complain about not bei
 archive/issue_comments_055759.json:
 ```json
 {
-    "body": "Hi Nils,\n\nSorry for not looking at this before. I just read the patch and it looks really good. I'd like to try to get this in the next release if possible, to prepare for #7377 proper.\n\nA few quick comments after reading the patch (didn't apply or build yet, maybe over the weekend):\n* The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n* We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n* In `ecl.pyx`, I'm not sure if you need both of these lines\n\n```\ncimport sage.rings.integer \nfrom sage.rings.integer cimport Integer\n```\n\n* line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n* Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n* In `ecl.pyx`, line 653 - 664 are redundant.\n* The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n* It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n* You can replace line 996-997 of `ecl.pyx` with the following:\n\n```\ncdef EclObject obj = <EclObject>PY_NEW(EclObject)\n```\n\n This will avoid the python class initialization overhead and make things slightly faster.\n\n\nThanks a lot for your work.",
+    "body": "Hi Nils,\n\nSorry for not looking at this before. I just read the patch and it looks really good. I'd like to try to get this in the next release if possible, to prepare for #7377 proper.\n\nA few quick comments after reading the patch (didn't apply or build yet, maybe over the weekend):\n* The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n* We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n* In `ecl.pyx`, I'm not sure if you need both of these lines\n\n```\ncimport sage.rings.integer \nfrom sage.rings.integer cimport Integer\n```\n* line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n* Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n* In `ecl.pyx`, line 653 - 664 are redundant.\n* The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n* It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n* You can replace line 996-997 of `ecl.pyx` with the following:\n\n```\ncdef EclObject obj = <EclObject>PY_NEW(EclObject)\n```\n This will avoid the python class initialization overhead and make things slightly faster.\n\n\nThanks a lot for your work.",
     "created_at": "2010-02-04T11:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -609,7 +601,6 @@ A few quick comments after reading the patch (didn't apply or build yet, maybe o
 cimport sage.rings.integer 
 from sage.rings.integer cimport Integer
 ```
-
 * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.
 * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights "TODO" so you can also just put that as a part of the comment in the `python_to_ecl()` function.
 * In `ecl.pyx`, line 653 - 664 are redundant.
@@ -620,7 +611,6 @@ from sage.rings.integer cimport Integer
 ```
 cdef EclObject obj = <EclObject>PY_NEW(EclObject)
 ```
-
  This will avoid the python class initialization overhead and make things slightly faster.
 
 
@@ -633,7 +623,7 @@ Thanks a lot for your work.
 archive/issue_comments_055760.json:
 ```json
 {
-    "body": "Thanks for your feedback! It'll be nice to get this in.\n\n>  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n\nAre you sure? the current thing seems to work too and I like not typing the extra ecl.\n\n>  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n\nSure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\n>  * In `ecl.pyx`, I'm not sure if you need both of these lines\n> {{{\n> cimport sage.rings.integer \n> from sage.rings.integer cimport Integer\n> }}}\n\nI guess we can try without, but I think I put it in because it didn't work without.\n\n>  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n\nGood one!\n>  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n\nYou have a good editor. Mine doesn't do that.\n\n>  * In `ecl.pyx`, line 653 - 664 are redundant.\n\nBut they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\n>  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n\nDo you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\n>  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n\nbut characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\n>  * You can replace line 996-997 of `ecl.pyx` with the following:\n> {{{\n> cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> }}}\n\nGreat!\n\nI'll see if I can update the patch once you've had some run time with it and commented on its functionality.",
+    "body": "Thanks for your feedback! It'll be nice to get this in.\n\n>  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n\n\nAre you sure? the current thing seems to work too and I like not typing the extra ecl.\n\n>  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n\n\nSure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\n>  * In `ecl.pyx`, I'm not sure if you need both of these lines\n \n> {{{\n> cimport sage.rings.integer \n> from sage.rings.integer cimport Integer\n> }}}\n\n\nI guess we can try without, but I think I put it in because it didn't work without.\n\n>  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n\n\nGood one!\n>  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n\n\nYou have a good editor. Mine doesn't do that.\n\n>  * In `ecl.pyx`, line 653 - 664 are redundant.\n\n\nBut they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\n>  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n\n\nDo you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\n>  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n\n\nbut characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\n>  * You can replace line 996-997 of `ecl.pyx` with the following:\n \n> {{{\n> cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> }}}\n\n\nGreat!\n\nI'll see if I can update the patch once you've had some run time with it and commented on its functionality.",
     "created_at": "2010-02-08T07:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -646,43 +636,54 @@ Thanks for your feedback! It'll be nice to get this in.
 
 >  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.
 
+
 Are you sure? the current thing seems to work too and I like not typing the extra ecl.
 
 >  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.
 
+
 Sure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?
 
 >  * In `ecl.pyx`, I'm not sure if you need both of these lines
+ 
 > {{{
 > cimport sage.rings.integer 
 > from sage.rings.integer cimport Integer
 > }}}
 
+
 I guess we can try without, but I think I put it in because it didn't work without.
 
 >  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.
 
+
 Good one!
 >  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights "TODO" so you can also just put that as a part of the comment in the `python_to_ecl()` function.
+
 
 You have a good editor. Mine doesn't do that.
 
 >  * In `ecl.pyx`, line 653 - 664 are redundant.
 
+
 But they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp
 
 >  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.
+
 
 Do you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.
 
 >  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...
 
+
 but characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.
 
 >  * You can replace line 996-997 of `ecl.pyx` with the following:
+ 
 > {{{
 > cdef EclObject obj = <EclObject>PY_NEW(EclObject)
 > }}}
+
 
 Great!
 
@@ -741,7 +742,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_055763.json:
 ```json
 {
-    "body": "Replying to [comment:20 nbruin]:\n> Thanks for your feedback! It'll be nice to get this in.\n\nI'm sorry I took so long to respond. At least I managed to test your patch(es, with #7377) in the meanwhile. \n\nI'm generally happy with how they look / work and I'd like to get them merged as soon as possible (I know I'm the main cause of delays). Feel free to change this ticket to positive review once the minor issues below are resolved.\n\n> >  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n> \n> Are you sure? the current thing seems to work too and I like not typing the extra ecl.\n\nThe convention is to make the module name correspond to the file name. If you think a single file will be enough, then you can just remove the directory `ecl` and put the `ecl.p*` files under `sage/libs/` directly. I'm afraid I have to insist on one of these options.\n\n> >  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n> \n> Sure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\nIt's common to change the types or the function names a little. This is a minor issue though, I just think the code will be easier to maintain that way. \n\n> >  * In `ecl.pyx`, I'm not sure if you need both of these lines\n> > {{{\n> > cimport sage.rings.integer \n> > from sage.rings.integer cimport Integer\n> > }}}\n> \n> I guess we can try without, but I think I put it in because it didn't work without.\n\nOK.\n\n> >  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n> \n> Good one!\n> >  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n> \n> You have a good editor. Mine doesn't do that.\n\nI just use `vim`. :)\n> \n> >  * In `ecl.pyx`, line 653 - 664 are redundant.\n> \n> But they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\nWhy don't you just put them in comments? Looking at the code, especially if you're scrolling up, it's not immediately clear that those lines are never used. If they are only for information, they should be comments.\n\n> >  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n> \n> Do you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\nOK.\n\n> >  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n> \n> but characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\nOK.\n \n> >  * You can replace line 996-997 of `ecl.pyx` with the following:\n> > {{{\n> > cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> > }}}\n> \n> Great!\n\nI see that you used `EclObject.__new__()` in your last patch attached to #7377. How does that compare with using `PY_NEW()` in terms of performance?\n\nAFAICT, some of the changes I suggest above are available in the last patch attached to #7377. Can you submit a patch with only that changes above to this ticket? Then we can get this ticket merged without waiting to solve the problems with the other one. If you don't have time, I can also make a patch with these changes (hopefully in reasonable time).\n\nMany thanks for this interface again!\n\nBTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)",
+    "body": "Replying to [comment:20 nbruin]:\n> Thanks for your feedback! It'll be nice to get this in.\n\n\nI'm sorry I took so long to respond. At least I managed to test your patch(es, with #7377) in the meanwhile. \n\nI'm generally happy with how they look / work and I'd like to get them merged as soon as possible (I know I'm the main cause of delays). Feel free to change this ticket to positive review once the minor issues below are resolved.\n\n> >  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n \n> \n> Are you sure? the current thing seems to work too and I like not typing the extra ecl.\n\n\nThe convention is to make the module name correspond to the file name. If you think a single file will be enough, then you can just remove the directory `ecl` and put the `ecl.p*` files under `sage/libs/` directly. I'm afraid I have to insist on one of these options.\n\n> >  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n \n> \n> Sure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\n\nIt's common to change the types or the function names a little. This is a minor issue though, I just think the code will be easier to maintain that way. \n\n> >  * In `ecl.pyx`, I'm not sure if you need both of these lines\n \n> > {{{\n> > cimport sage.rings.integer \n> > from sage.rings.integer cimport Integer\n> > }}}\n\n> \n> I guess we can try without, but I think I put it in because it didn't work without.\n\n\nOK.\n\n> >  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n \n> \n> Good one!\n> >  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n \n> \n> You have a good editor. Mine doesn't do that.\n\n\nI just use `vim`. :)\n> \n> >  * In `ecl.pyx`, line 653 - 664 are redundant.\n \n> \n> But they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\n\nWhy don't you just put them in comments? Looking at the code, especially if you're scrolling up, it's not immediately clear that those lines are never used. If they are only for information, they should be comments.\n\n> >  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n \n> \n> Do you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\n\nOK.\n\n> >  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n \n> \n> but characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\n\nOK.\n \n> >  * You can replace line 996-997 of `ecl.pyx` with the following:\n \n> > {{{\n> > cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> > }}}\n\n> \n> Great!\n\n\nI see that you used `EclObject.__new__()` in your last patch attached to #7377. How does that compare with using `PY_NEW()` in terms of performance?\n\nAFAICT, some of the changes I suggest above are available in the last patch attached to #7377. Can you submit a patch with only that changes above to this ticket? Then we can get this ticket merged without waiting to solve the problems with the other one. If you don't have time, I can also make a patch with these changes (hopefully in reasonable time).\n\nMany thanks for this interface again!\n\nBTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)",
     "created_at": "2010-02-25T13:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -753,65 +754,85 @@ archive/issue_comments_055763.json:
 Replying to [comment:20 nbruin]:
 > Thanks for your feedback! It'll be nice to get this in.
 
+
 I'm sorry I took so long to respond. At least I managed to test your patch(es, with #7377) in the meanwhile. 
 
 I'm generally happy with how they look / work and I'd like to get them merged as soon as possible (I know I'm the main cause of delays). Feel free to change this ticket to positive review once the minor issues below are resolved.
 
 > >  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.
+ 
 > 
 > Are you sure? the current thing seems to work too and I like not typing the extra ecl.
+
 
 The convention is to make the module name correspond to the file name. If you think a single file will be enough, then you can just remove the directory `ecl` and put the `ecl.p*` files under `sage/libs/` directly. I'm afraid I have to insist on one of these options.
 
 > >  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.
+ 
 > 
 > Sure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?
+
 
 It's common to change the types or the function names a little. This is a minor issue though, I just think the code will be easier to maintain that way. 
 
 > >  * In `ecl.pyx`, I'm not sure if you need both of these lines
+ 
 > > {{{
 > > cimport sage.rings.integer 
 > > from sage.rings.integer cimport Integer
 > > }}}
+
 > 
 > I guess we can try without, but I think I put it in because it didn't work without.
+
 
 OK.
 
 > >  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.
+ 
 > 
 > Good one!
 > >  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights "TODO" so you can also just put that as a part of the comment in the `python_to_ecl()` function.
+ 
 > 
 > You have a good editor. Mine doesn't do that.
+
 
 I just use `vim`. :)
 > 
 > >  * In `ecl.pyx`, line 653 - 664 are redundant.
+ 
 > 
 > But they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp
+
 
 Why don't you just put them in comments? Looking at the code, especially if you're scrolling up, it's not immediately clear that those lines are never used. If they are only for information, they should be comments.
 
 > >  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.
+ 
 > 
 > Do you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.
+
 
 OK.
 
 > >  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...
+ 
 > 
 > but characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.
+
 
 OK.
  
 > >  * You can replace line 996-997 of `ecl.pyx` with the following:
+ 
 > > {{{
 > > cdef EclObject obj = <EclObject>PY_NEW(EclObject)
 > > }}}
+
 > 
 > Great!
+
 
 I see that you used `EclObject.__new__()` in your last patch attached to #7377. How does that compare with using `PY_NEW()` in terms of performance?
 
@@ -846,7 +867,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_055765.json:
 ```json
 {
-    "body": "Replying to [comment:22 burcin]:\nMany thanks for this interface again!\n> \n> BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n\nThat might be your opinion, but I suggest you take that up with William. \n\nQuoting from the Sage developer's guide. \n\nhttp://www.sagemath.org/doc/developer/inclusion.html\n\n*Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n\nFrom the Sage installation guide \n\nhttp://www.sagemath.org/doc/installation/source.html\n\n*We do plan to fully support Solaris - it\u2019s a very important platform. Work is ongoing.*\n\nWilliam has taken hardware (specifically 't2') from Sun for Sage development, as well as an OpenSolaris machine from elsewhere. He also sent me an email on the 16th December 2009, underlying the importance of getting Sage working on Solaris\n\n\n```\nDavid,\n\n(1) I couldn't get anywhere building Sage on x86 Solaris on skynet (fulvia).  Can you?  This was pretty annoying to the people that bought us fulvia.\n\n(2) Sun wants to know if we have a Sage available yet for t2.  See below.\n\nI really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...\n```\n\n\nAs such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\nDave",
+    "body": "Replying to [comment:22 burcin]:\nMany thanks for this interface again!\n> \n> BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n\n\nThat might be your opinion, but I suggest you take that up with William. \n\nQuoting from the Sage developer's guide. \n\nhttp://www.sagemath.org/doc/developer/inclusion.html\n\n*Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n\nFrom the Sage installation guide \n\nhttp://www.sagemath.org/doc/installation/source.html\n\n*We do plan to fully support Solaris - it\u2019s a very important platform. Work is ongoing.*\n\nWilliam has taken hardware (specifically 't2') from Sun for Sage development, as well as an OpenSolaris machine from elsewhere. He also sent me an email on the 16th December 2009, underlying the importance of getting Sage working on Solaris\n\n```\nDavid,\n\n(1) I couldn't get anywhere building Sage on x86 Solaris on skynet (fulvia).  Can you?  This was pretty annoying to the people that bought us fulvia.\n\n(2) Sun wants to know if we have a Sage available yet for t2.  See below.\n\nI really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...\n```\n\nAs such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\nDave",
     "created_at": "2010-02-25T13:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -859,6 +880,7 @@ Replying to [comment:22 burcin]:
 Many thanks for this interface again!
 > 
 > BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)
+
 
 That might be your opinion, but I suggest you take that up with William. 
 
@@ -876,7 +898,6 @@ http://www.sagemath.org/doc/installation/source.html
 
 William has taken hardware (specifically 't2') from Sun for Sage development, as well as an OpenSolaris machine from elsewhere. He also sent me an email on the 16th December 2009, underlying the importance of getting Sage working on Solaris
 
-
 ```
 David,
 
@@ -886,7 +907,6 @@ David,
 
 I really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...
 ```
-
 
 As such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. 
 
@@ -917,7 +937,7 @@ I realise the library access is not currently in Sage (I was confusing it with a
 archive/issue_comments_055767.json:
 ```json
 {
-    "body": "Replying to [comment:23 drkirkby]:\n> Replying to [comment:22 burcin]:\n> > \n> > BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n> \n> That might be your opinion, but I suggest you take that up with William. \n> \n> Quoting from the Sage developer's guide. \n> \n> http://www.sagemath.org/doc/developer/inclusion.html\n> \n> *Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n<snip>\n\nThis ticket is not talking about including a new package in Sage.\n\n\n> As such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\nAgain, there is no new package associated to this ticket. It just contains a single patch to be applied to the Sage library. The package was merged with #7287.\n\nI maintain my position that requiring every single patch submitted to Sage be tested on Solaris is unreasonable (unless this process is automated somehow).",
+    "body": "Replying to [comment:23 drkirkby]:\n> Replying to [comment:22 burcin]:\n> > \n> > BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n\n> \n> That might be your opinion, but I suggest you take that up with William. \n> \n> Quoting from the Sage developer's guide. \n> \n> http://www.sagemath.org/doc/developer/inclusion.html\n> \n> *Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n\n<snip>\n\nThis ticket is not talking about including a new package in Sage.\n\n\n> As such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\n\nAgain, there is no new package associated to this ticket. It just contains a single patch to be applied to the Sage library. The package was merged with #7287.\n\nI maintain my position that requiring every single patch submitted to Sage be tested on Solaris is unreasonable (unless this process is automated somehow).",
     "created_at": "2010-02-25T13:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -930,6 +950,7 @@ Replying to [comment:23 drkirkby]:
 > Replying to [comment:22 burcin]:
 > > 
 > > BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)
+
 > 
 > That might be your opinion, but I suggest you take that up with William. 
 > 
@@ -938,12 +959,14 @@ Replying to [comment:23 drkirkby]:
 > http://www.sagemath.org/doc/developer/inclusion.html
 > 
 > *Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*
+
 <snip>
 
 This ticket is not talking about including a new package in Sage.
 
 
 > As such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. 
+
 
 Again, there is no new package associated to this ticket. It just contains a single patch to be applied to the Sage library. The package was merged with #7287.
 
@@ -1092,7 +1115,7 @@ The patches to be applied are:
 archive/issue_comments_055774.json:
 ```json
 {
-    "body": "That all looks great. However, I think the PY_NEW call should really be\n\n```\ncdef EclObject obj = EclObject.__new__(EclObject)\n```\n\nAccording to\nhttp://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\nit seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nA lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nI am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nThanks for trying to unstall the inclusion of this patch!",
+    "body": "That all looks great. However, I think the PY_NEW call should really be\n\n```\ncdef EclObject obj = EclObject.__new__(EclObject)\n```\nAccording to\nhttp://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\nit seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nA lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nI am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nThanks for trying to unstall the inclusion of this patch!",
     "created_at": "2010-04-12T00:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -1106,7 +1129,6 @@ That all looks great. However, I think the PY_NEW call should really be
 ```
 cdef EclObject obj = EclObject.__new__(EclObject)
 ```
-
 According to
 http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F
 it seems that PY_NEW was a hack that was only required prior to Cython 0.12
@@ -1124,7 +1146,7 @@ Thanks for trying to unstall the inclusion of this patch!
 archive/issue_comments_055775.json:
 ```json
 {
-    "body": "Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by @burcin created at 2010-04-12 08:55:12\n\nReplying to [comment:28 nbruin]:\n> That all looks great. However, I think the PY_NEW call should really be\n {{{\n cdef EclObject obj = EclObject.__new__(EclObject)\n }}}\n> According to\n> http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\n> it seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nThanks for pointing this out. I didn't know the new convention.\n\n> A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nThe includes weren't necessary at all after getting rid of the `PY_NEW` call. \n\nI uploaded a new patch attachment:trac_6781-review.take2.patch addressing these comments. The new patch replaces attachment:trac_6781-review.patch.\n\n> I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nYou can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. \n\n> Thanks for trying to unstall the inclusion of this patch!\n\nI want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.\n\n\nBased on Nils' comments above, I am changing this to a positive review.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.take2.patch",
+    "body": "Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by @burcin created at 2010-04-12 08:55:12\n\nReplying to [comment:28 nbruin]:\n> That all looks great. However, I think the PY_NEW call should really be\n\n {{{\n cdef EclObject obj = EclObject.__new__(EclObject)\n }}}\n> According to\n> http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\n> it seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\n\nThanks for pointing this out. I didn't know the new convention.\n\n> A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\n\nThe includes weren't necessary at all after getting rid of the `PY_NEW` call. \n\nI uploaded a new patch attachment:trac_6781-review.take2.patch addressing these comments. The new patch replaces attachment:trac_6781-review.patch.\n\n> I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\n\nYou can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. \n\n> Thanks for trying to unstall the inclusion of this patch!\n\n\nI want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.\n\n\nBased on Nils' comments above, I am changing this to a positive review.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.take2.patch",
     "created_at": "2010-04-12T08:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
@@ -1137,6 +1159,7 @@ Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:28 nbruin]:
 > That all looks great. However, I think the PY_NEW call should really be
+
  {{{
  cdef EclObject obj = EclObject.__new__(EclObject)
  }}}
@@ -1144,9 +1167,11 @@ Replying to [comment:28 nbruin]:
 > http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F
 > it seems that PY_NEW was a hack that was only required prior to Cython 0.12
 
+
 Thanks for pointing this out. I didn't know the new convention.
 
 > A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?
+
 
 The includes weren't necessary at all after getting rid of the `PY_NEW` call. 
 
@@ -1154,9 +1179,11 @@ I uploaded a new patch attachment:trac_6781-review.take2.patch addressing these 
 
 > I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).
 
+
 You can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. 
 
 > Thanks for trying to unstall the inclusion of this patch!
+
 
 I want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.
 

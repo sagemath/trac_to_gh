@@ -3,7 +3,7 @@
 archive/issues_008779.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: polynomial rings, categories\n\n\n```\nsage: QQ[x].categories()\n[Category of commutative rings, Category of rings, ...]\n```\n\n\nThis list should at least contain `EuclideanDomains()` and `GradedAlgebrasWithBasis(QQ)`. Maybe even `GradedHopfAlgebrasWithBasis(QQ)`.\n\nAt that occasion, the various accessors (term, ...) here and in ModulesWithBasis should be made consistent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8779\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: polynomial rings, categories\n\n```\nsage: QQ[x].categories()\n[Category of commutative rings, Category of rings, ...]\n```\n\nThis list should at least contain `EuclideanDomains()` and `GradedAlgebrasWithBasis(QQ)`. Maybe even `GradedHopfAlgebrasWithBasis(QQ)`.\n\nAt that occasion, the various accessors (term, ...) here and in ModulesWithBasis should be made consistent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8779\n\n",
     "created_at": "2010-04-27T06:19:21Z",
     "labels": [
         "component: categories"
@@ -20,12 +20,10 @@ CC:  sage-combinat
 
 Keywords: polynomial rings, categories
 
-
 ```
 sage: QQ[x].categories()
 [Category of commutative rings, Category of rings, ...]
 ```
-
 
 This list should at least contain `EuclideanDomains()` and `GradedAlgebrasWithBasis(QQ)`. Maybe even `GradedHopfAlgebrasWithBasis(QQ)`.
 

@@ -238,7 +238,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_056537.json:
 ```json
 {
-    "body": "Replying to [comment:6 craigcitro]:\n> Yeah, that's a good point. I'd rather have this code merged and waiting on a cleanup than have it sitting and waiting for the same cleanup. I've made #8015 as a reminder to merge these two.\n> \n> (John, I'm listing you as a reviewer because I know you reviewed much of the content of this code as it was being developed.)\nThat's fair.  My involvement should be recorded somewhere, but it was Maite who did all the code writing.\n\nThanks for the review!",
+    "body": "Replying to [comment:6 craigcitro]:\n> Yeah, that's a good point. I'd rather have this code merged and waiting on a cleanup than have it sitting and waiting for the same cleanup. I've made #8015 as a reminder to merge these two.\n> \n> (John, I'm listing you as a reviewer because I know you reviewed much of the content of this code as it was being developed.)\n\nThat's fair.  My involvement should be recorded somewhere, but it was Maite who did all the code writing.\n\nThanks for the review!",
     "created_at": "2010-01-20T20:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
@@ -251,6 +251,7 @@ Replying to [comment:6 craigcitro]:
 > Yeah, that's a good point. I'd rather have this code merged and waiting on a cleanup than have it sitting and waiting for the same cleanup. I've made #8015 as a reminder to merge these two.
 > 
 > (John, I'm listing you as a reviewer because I know you reviewed much of the content of this code as it was being developed.)
+
 That's fair.  My involvement should be recorded somewhere, but it was Maite who did all the code writing.
 
 Thanks for the review!

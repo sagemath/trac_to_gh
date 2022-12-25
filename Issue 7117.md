@@ -3,7 +3,7 @@
 archive/issues_007117.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFrom IRC:\n\n```\nBy the way, if I evaluate \"jsmath(RIF)\" in the notebook, jsMath complains: \"Unknown control sequence '\\I'\". \nIs there a missing macro definition?\n```\n\nIt looks to me as though the `_latex_` method for RIF has been defined in terms of '\\\\I' for a long time, and it has not worked since at least Sage 3.4.  The attached patch changes it from \"\\\\I \\\\R\" to \"\\\\Bold{I} \\\\Bold{R}\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7117\n\n",
+    "body": "Assignee: cwitty\n\nFrom IRC:\n\n```\nBy the way, if I evaluate \"jsmath(RIF)\" in the notebook, jsMath complains: \"Unknown control sequence '\\I'\". \nIs there a missing macro definition?\n```\nIt looks to me as though the `_latex_` method for RIF has been defined in terms of '\\\\I' for a long time, and it has not worked since at least Sage 3.4.  The attached patch changes it from \"\\\\I \\\\R\" to \"\\\\Bold{I} \\\\Bold{R}\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7117\n\n",
     "created_at": "2009-10-04T20:53:10Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ From IRC:
 By the way, if I evaluate "jsmath(RIF)" in the notebook, jsMath complains: "Unknown control sequence '\I'". 
 Is there a missing macro definition?
 ```
-
 It looks to me as though the `_latex_` method for RIF has been defined in terms of '\\I' for a long time, and it has not worked since at least Sage 3.4.  The attached patch changes it from "\\I \\R" to "\\Bold{I} \\Bold{R}".
 
 Issue created by migration from https://trac.sagemath.org/ticket/7117

@@ -3,7 +3,7 @@
 archive/issues_007366.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis should work:\n\n\n```python\nsage: K.<a>=GF(4)\nsage: [x for x in K]\n[0, a, a + 1, 1]\nsage: hasattr(K, '__iter__')\nTrue\nsage: K.list()\n...\nTypeError:\n'sage.rings.finite_field_givaro.FiniteField_givaro_iterator' object is not iterable\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7366\n\n",
+    "body": "Assignee: @aghitza\n\nThis should work:\n\n```python\nsage: K.<a>=GF(4)\nsage: [x for x in K]\n[0, a, a + 1, 1]\nsage: hasattr(K, '__iter__')\nTrue\nsage: K.list()\n...\nTypeError:\n'sage.rings.finite_field_givaro.FiniteField_givaro_iterator' object is not iterable\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7366\n\n",
     "created_at": "2009-11-01T00:11:13Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 This should work:
 
-
 ```python
 sage: K.<a>=GF(4)
 sage: [x for x in K]
@@ -33,7 +32,6 @@ TypeError:
 'sage.rings.finite_field_givaro.FiniteField_givaro_iterator' object is not iterable
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7366
 

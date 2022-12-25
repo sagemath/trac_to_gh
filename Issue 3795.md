@@ -49,7 +49,7 @@ Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/tra
 archive/issue_comments_026931.json:
 ```json
 {
-    "body": "Before:\n\n```\nSCORE cell.py: 8% (7 of 82)\n```\n\n\nAfter:\n\n```\nSCORE cell.py: 79% (67 of 84)\n```\n",
+    "body": "Before:\n\n```\nSCORE cell.py: 8% (7 of 82)\n```\n\nAfter:\n\n```\nSCORE cell.py: 79% (67 of 84)\n```",
     "created_at": "2008-08-09T15:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
@@ -64,13 +64,11 @@ Before:
 SCORE cell.py: 8% (7 of 82)
 ```
 
-
 After:
 
 ```
 SCORE cell.py: 79% (67 of 84)
 ```
-
 
 
 

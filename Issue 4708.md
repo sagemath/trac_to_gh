@@ -3,7 +3,7 @@
 archive/issues_004708.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: ptest parallel test absolute filename\n\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/\" -*-\nsage-test started at Thu Dec  4 20:43:38\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 2 /Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py\n\nreal\t0m1.413s\nuser\t0m0.875s\nsys\t0m0.426s\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n\nsage-test finished (all test passed) at Thu Dec  4 20:43:40\n```\n\n\nAlso:\n\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/\" -*-\nsage-test started at Thu Dec  4 20:44:39\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -t /Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2\n\nreal\t0m1.311s\nuser\t0m0.872s\nsys\t0m0.416s\nERROR: File .//Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2 is missing\nexit code: 1\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\t.//Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2\nTotal time for all tests: 0.0 seconds\n\nsage-test finished (all test passed) at Thu Dec  4 20:44:40\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4708\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: ptest parallel test absolute filename\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/\" -*-\nsage-test started at Thu Dec  4 20:43:38\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 2 /Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py\n\nreal\t0m1.413s\nuser\t0m0.875s\nsys\t0m0.426s\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n\nsage-test finished (all test passed) at Thu Dec  4 20:43:40\n```\n\nAlso:\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/\" -*-\nsage-test started at Thu Dec  4 20:44:39\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -t /Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2\n\nreal\t0m1.311s\nuser\t0m0.872s\nsys\t0m0.416s\nERROR: File .//Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2 is missing\nexit code: 1\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\t.//Users/ncalexan/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/free_module.py2\nTotal time for all tests: 0.0 seconds\n\nsage-test finished (all test passed) at Thu Dec  4 20:44:40\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4708\n\n",
     "created_at": "2008-12-05T04:47:56Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_004708.json:
 Assignee: mabshoff
 
 Keywords: ptest parallel test absolute filename
-
 
 ```
 -*- mode: sage-test; default-directory: "~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/" -*-
@@ -41,9 +40,7 @@ Total time for all tests: 0.0 seconds
 sage-test finished (all test passed) at Thu Dec  4 20:43:40
 ```
 
-
 Also:
-
 
 ```
 -*- mode: sage-test; default-directory: "~/sage-3.2.1.alpha1/devel/sage-nca/sage/modules/" -*-
@@ -66,7 +63,6 @@ Total time for all tests: 0.0 seconds
 
 sage-test finished (all test passed) at Thu Dec  4 20:44:40
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4708
 

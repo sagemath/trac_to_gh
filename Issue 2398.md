@@ -3,7 +3,7 @@
 archive/issues_002398.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nm = lattice_polytope.read_palp_matrix(r\"\"\"4 9\n...    0  0  0  0  0  0  0  0  0\n...    0  3  0 -2  1 -2 -2  1 -2\n...    0  0  3  2  2  5  0  0  3\n...    0  0  0  0  0  0  0  0  0\"\"\")\n\nsage: Ns = (ZZ^4).submodule(m.columns())\nsage: Ns\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 0 0]\n```\n\n\nWhat's with the 0 row above?!!?  That's insanely wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2398\n\n",
+    "body": "Assignee: @williamstein\n\n```\nm = lattice_polytope.read_palp_matrix(r\"\"\"4 9\n...    0  0  0  0  0  0  0  0  0\n...    0  3  0 -2  1 -2 -2  1 -2\n...    0  0  3  2  2  5  0  0  3\n...    0  0  0  0  0  0  0  0  0\"\"\")\n\nsage: Ns = (ZZ^4).submodule(m.columns())\nsage: Ns\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 0 0]\n```\n\nWhat's with the 0 row above?!!?  That's insanely wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2398\n\n",
     "created_at": "2008-03-05T20:23:03Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_002398.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 m = lattice_polytope.read_palp_matrix(r"""4 9
@@ -35,7 +34,6 @@ Echelon basis matrix:
 [0 0 0 0]
 [0 1 0 0]
 ```
-
 
 What's with the 0 row above?!!?  That's insanely wrong.
 
@@ -68,7 +66,7 @@ This was reported by Andrej Novoseltsov.
 archive/issue_comments_016147.json:
 ```json
 {
-    "body": "More interesting data points:\n\n\n```\nsage: (ZZ^4).submodule([(0, 0, 0, 0), (0, 0, 3, 0), (0, -2, 2, 0), (0, 1, 2, 0)])                         \n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 2 1 0]\n[0 3 0 0]\nsage: (ZZ^4).submodule([(0, 0, 3, 0), (0, -2, 2, 0), (0, 1, 2, 0), (0, -2, 5, 0)])\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 2 0]\n```\n",
+    "body": "More interesting data points:\n\n```\nsage: (ZZ^4).submodule([(0, 0, 0, 0), (0, 0, 3, 0), (0, -2, 2, 0), (0, 1, 2, 0)])                         \n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 2 1 0]\n[0 3 0 0]\nsage: (ZZ^4).submodule([(0, 0, 3, 0), (0, -2, 2, 0), (0, 1, 2, 0), (0, -2, 5, 0)])\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 2 0]\n```",
     "created_at": "2008-03-05T23:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ archive/issue_comments_016147.json:
 ```
 
 More interesting data points:
-
 
 ```
 sage: (ZZ^4).submodule([(0, 0, 0, 0), (0, 0, 3, 0), (0, -2, 2, 0), (0, 1, 2, 0)])                         
@@ -97,13 +94,12 @@ Echelon basis matrix:
 
 
 
-
 ---
 
 archive/issue_comments_016148.json:
 ```json
 {
-    "body": "And more:\n\n\n```\nDoes someone want to review the patch positively?  sage: (ZZ^3).span([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])\n\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0]\n[0 1 2]\nsage: matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)]).echelon_form()\n\n[0 0 0]\n[0 1 2]\n[0 0 3]\n[0 0 0]\n```\n\n\nI think the problem is the first row of the matrix is the zero row, which is clearly wrong.",
+    "body": "And more:\n\n```\nDoes someone want to review the patch positively?  sage: (ZZ^3).span([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])\n\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0]\n[0 1 2]\nsage: matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)]).echelon_form()\n\n[0 0 0]\n[0 1 2]\n[0 0 3]\n[0 0 0]\n```\n\nI think the problem is the first row of the matrix is the zero row, which is clearly wrong.",
     "created_at": "2008-03-05T23:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
@@ -113,7 +109,6 @@ archive/issue_comments_016148.json:
 ```
 
 And more:
-
 
 ```
 Does someone want to review the patch positively?  sage: (ZZ^3).span([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])
@@ -130,7 +125,6 @@ sage: matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)]).echelon_form()
 [0 0 0]
 ```
 
-
 I think the problem is the first row of the matrix is the zero row, which is clearly wrong.
 
 
@@ -140,7 +134,7 @@ I think the problem is the first row of the matrix is the zero row, which is cle
 archive/issue_comments_016149.json:
 ```json
 {
-    "body": "Okay, I've traced it back to William's code.  He can take it from there:\n\n\n```\nsage: a=matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])\nsage: import sage.matrix.matrix_integer_dense_hnf             \nsage: sage.matrix.matrix_integer_dense_hnf.hnf(a)             \n\n([0 0 0]\n[0 1 2]\n[0 0 3]\n[0 0 0], [0, 1, 2])\n```\n",
+    "body": "Okay, I've traced it back to William's code.  He can take it from there:\n\n```\nsage: a=matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])\nsage: import sage.matrix.matrix_integer_dense_hnf             \nsage: sage.matrix.matrix_integer_dense_hnf.hnf(a)             \n\n([0 0 0]\n[0 1 2]\n[0 0 3]\n[0 0 0], [0, 1, 2])\n```",
     "created_at": "2008-03-05T23:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
@@ -150,7 +144,6 @@ archive/issue_comments_016149.json:
 ```
 
 Okay, I've traced it back to William's code.  He can take it from there:
-
 
 ```
 sage: a=matrix([(0, 0, 3), (0, -2, 2), (0, 1, 2), (0, -2, 5)])
@@ -162,7 +155,6 @@ sage: sage.matrix.matrix_integer_dense_hnf.hnf(a)
 [0 0 3]
 [0 0 0], [0, 1, 2])
 ```
-
 
 
 

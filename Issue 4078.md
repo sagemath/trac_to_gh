@@ -3,7 +3,7 @@
 archive/issues_004078.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n10:13 < mabshoff> And I have been slipping in FreeBSD fixes when no one was looking ;)\n10:16 < jason|log> okay, \"flaky\" == in one cell, I have a=[] and i=1, the next I have a.append(i).  \n                   Evaluate all sometimes gives me an error in the second cell and says that 'a' is not \n                   defined.\n10:16 < jason|log> I can't reproduce it on sage.math in the few minutes I tried.\n10:18 < jason|log> wstein: could the problem be the asynchronous requests to evaluate the cells?  One \n                   request gets ahead of another sometimes?\n10:19 < jason|log> (not in the sending, but in the server receiving the requests?)\n10:19 < wstein> Yes, that is possible.\n10:20 < wstein> The right fix would be to make a single \"evaluateall\" command that gets sent\n10:20 < wstein> to the notebook server.\n10:20 < wstein> Right now a stupid evaluate_all javascript function calls evaluate_cell on each cell.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4078\n\n",
+    "body": "Assignee: boothby\n\n```\n10:13 < mabshoff> And I have been slipping in FreeBSD fixes when no one was looking ;)\n10:16 < jason|log> okay, \"flaky\" == in one cell, I have a=[] and i=1, the next I have a.append(i).  \n                   Evaluate all sometimes gives me an error in the second cell and says that 'a' is not \n                   defined.\n10:16 < jason|log> I can't reproduce it on sage.math in the few minutes I tried.\n10:18 < jason|log> wstein: could the problem be the asynchronous requests to evaluate the cells?  One \n                   request gets ahead of another sometimes?\n10:19 < jason|log> (not in the sending, but in the server receiving the requests?)\n10:19 < wstein> Yes, that is possible.\n10:20 < wstein> The right fix would be to make a single \"evaluateall\" command that gets sent\n10:20 < wstein> to the notebook server.\n10:20 < wstein> Right now a stupid evaluate_all javascript function calls evaluate_cell on each cell.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4078\n\n",
     "created_at": "2008-09-08T13:52:56Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_004078.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 10:13 < mabshoff> And I have been slipping in FreeBSD fixes when no one was looking ;)
@@ -33,7 +32,6 @@ Assignee: boothby
 10:20 < wstein> to the notebook server.
 10:20 < wstein> Right now a stupid evaluate_all javascript function calls evaluate_cell on each cell.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4078
 

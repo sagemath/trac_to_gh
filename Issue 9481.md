@@ -3,7 +3,7 @@
 archive/issues_009481.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @rishikesha\n\nKeywords: power series, random element\n\nThe random_element method of univariate power series does not pass arguments to the underlying polynomial ring accurately, and the description of its second argument is inaccurate.\n\nc.f. this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2e4af4234e6bb33f) from sage-devel\n\n\n\n```\nsage: SQ = PowerSeriesRing(QQ,'v')\nsage: SR = PowerSeriesRing(RR,'v')\n\nsage: SQ.random_element(5,100)  # docstring promises coefficients are uniformly distributed between -100 and 100\n-7/3 + 5/8*v + 37/60*v^2 + 33/8*v^3 + 77/89*v^4 + O(v^5)\n\nsage: SR.random_element(5)  # broken\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for -: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9481\n\n",
+    "body": "Assignee: @malb\n\nCC:  @rishikesha\n\nKeywords: power series, random element\n\nThe random_element method of univariate power series does not pass arguments to the underlying polynomial ring accurately, and the description of its second argument is inaccurate.\n\nc.f. this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2e4af4234e6bb33f) from sage-devel\n\n\n```\nsage: SQ = PowerSeriesRing(QQ,'v')\nsage: SR = PowerSeriesRing(RR,'v')\n\nsage: SQ.random_element(5,100)  # docstring promises coefficients are uniformly distributed between -100 and 100\n-7/3 + 5/8*v + 37/60*v^2 + 33/8*v^3 + 77/89*v^4 + O(v^5)\n\nsage: SR.random_element(5)  # broken\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for -: 'int' and 'NoneType'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9481\n\n",
     "created_at": "2010-07-12T13:37:14Z",
     "labels": [
         "component: commutative algebra",
@@ -28,7 +28,6 @@ The random_element method of univariate power series does not pass arguments to 
 c.f. this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2e4af4234e6bb33f) from sage-devel
 
 
-
 ```
 sage: SQ = PowerSeriesRing(QQ,'v')
 sage: SR = PowerSeriesRing(RR,'v')
@@ -41,7 +40,6 @@ Traceback (most recent call last):
 ...
 TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9481
 

@@ -3,7 +3,7 @@
 archive/issues_001402.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe program needs to be terminated with a \"null curve\", \"[0,0,0,0,0]\", and does not handle an EOF gracefully (whether at the end of a \"real file\" or a \"CTRL-D\" from the terminal).\n\nIn 'getcurve()' (in \"getcurve.cc\"), input of a curve is handled by\n\n```\n   cin >> C0\n```\n\nand \"c.input()\" (in \"curve.cc\") doesn't deal with EOF.  Instead, it aborts, causing problems upstream.\n\nThe fix is to turn EOF into \"[0.0.0.0.0]\" or its moral equivalent.  I don't know  the code well enough to know whether this is feasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1402\n\n",
+    "body": "Assignee: @williamstein\n\nThe program needs to be terminated with a \"null curve\", \"[0,0,0,0,0]\", and does not handle an EOF gracefully (whether at the end of a \"real file\" or a \"CTRL-D\" from the terminal).\n\nIn 'getcurve()' (in \"getcurve.cc\"), input of a curve is handled by\n\n```\n   cin >> C0\n```\nand \"c.input()\" (in \"curve.cc\") doesn't deal with EOF.  Instead, it aborts, causing problems upstream.\n\nThe fix is to turn EOF into \"[0.0.0.0.0]\" or its moral equivalent.  I don't know  the code well enough to know whether this is feasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1402\n\n",
     "created_at": "2007-12-05T05:35:01Z",
     "labels": [
         "component: algebraic geometry",
@@ -25,7 +25,6 @@ In 'getcurve()' (in "getcurve.cc"), input of a curve is handled by
 ```
    cin >> C0
 ```
-
 and "c.input()" (in "curve.cc") doesn't deal with EOF.  Instead, it aborts, causing problems upstream.
 
 The fix is to turn EOF into "[0.0.0.0.0]" or its moral equivalent.  I don't know  the code well enough to know whether this is feasible.
@@ -215,7 +214,7 @@ The rank and full Mordell-Weil basis have been determined unconditionally.
 archive/issue_comments_009022.json:
 ```json
 {
-    "body": "And with correct formatting\n\n\n```\n[~/la/eclib-20071231.p1/src/qrank]> ./mwrank\nProgram mwrank: uses 2-descent (via 2-isogeny if possible) to\ndetermine the rank of an elliptic curve E over Q, and list a\nset of points which generate E(Q) modulo 2E(Q).\nand finally saturate to obtain generating points on the curve.\nFor more details see the file mwrank.doc.\nFor details of algorithms see the author's book.\n\nPlease acknowledge use of this program in published work,\nand send problems to john.cremona@gmail.com.\n\nVersion compiled on Jan  4 2008 at 23:55:58 by GCC 4.3.0 20080104 [trunk revision 131325]\nusing base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)\nUsing NTL multiprecision floating point with 15 decimal places.\nEnter curve: [0,0,1,-1,0]\nCurve [0,0,1,-1,0] :    Basic pair: I=48, J=-432\ndisc=255744\n2-adic index bound = 2\nBy Lemma 5.1(a), 2-adic index = 1\n2-adic index = 1\nOne (I,J) pair\nLooking for quartics with I = 48, J = -432\nLooking for Type 2 quartics:\nTrying positive a from 1 up to 1 (square a first...)\n(1,0,-6,4,1)    --trivial\nTrying positive a from 1 up to 1 (...then non-square a)\nFinished looking for Type 2 quartics.\nLooking for Type 1 quartics:\nTrying positive a from 1 up to 2 (square a first...)\n(1,0,0,4,4)     --nontrivial...(x:y:z) = (1 : 1 : 0)\nPoint = [0:0:1]\n        height = 0.0511114082399688\nRank of B=im(eps) increases to 1 (The previous point is on the egg)\nExiting search for Type 1 quartics after finding one which is globally soluble.\nMordell rank contribution from B=im(eps) = 1\nSelmer  rank contribution from B=im(eps) = 1\nSha     rank contribution from B=im(eps) = 0\nMordell rank contribution from A=ker(eps) = 0\nSelmer  rank contribution from A=ker(eps) = 0\nSha     rank contribution from A=ker(eps) = 0\nRank = 1\nSearching for points (bound = 8)...done:\n  found points of rank 1\n  and regulator 0.0511114082399688\nProcessing points found during 2-descent...done:\n  now regulator = 0.0511114082399688\nSaturating (bound = 100)...done:\n  points were already saturated.\nTransferring points from minimal curve [0,0,1,-1,0] back to original curve [0,0,1,-1,0]\n\nGenerator 1 is [0:-1:1]; height 0.0511114082399688\n\nRegulator = 0.0511114082399688\n\nThe rank and full Mordell-Weil basis have been determined unconditionally.\n (0.64004 seconds)\n```\n",
+    "body": "And with correct formatting\n\n```\n[~/la/eclib-20071231.p1/src/qrank]> ./mwrank\nProgram mwrank: uses 2-descent (via 2-isogeny if possible) to\ndetermine the rank of an elliptic curve E over Q, and list a\nset of points which generate E(Q) modulo 2E(Q).\nand finally saturate to obtain generating points on the curve.\nFor more details see the file mwrank.doc.\nFor details of algorithms see the author's book.\n\nPlease acknowledge use of this program in published work,\nand send problems to john.cremona@gmail.com.\n\nVersion compiled on Jan  4 2008 at 23:55:58 by GCC 4.3.0 20080104 [trunk revision 131325]\nusing base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)\nUsing NTL multiprecision floating point with 15 decimal places.\nEnter curve: [0,0,1,-1,0]\nCurve [0,0,1,-1,0] :    Basic pair: I=48, J=-432\ndisc=255744\n2-adic index bound = 2\nBy Lemma 5.1(a), 2-adic index = 1\n2-adic index = 1\nOne (I,J) pair\nLooking for quartics with I = 48, J = -432\nLooking for Type 2 quartics:\nTrying positive a from 1 up to 1 (square a first...)\n(1,0,-6,4,1)    --trivial\nTrying positive a from 1 up to 1 (...then non-square a)\nFinished looking for Type 2 quartics.\nLooking for Type 1 quartics:\nTrying positive a from 1 up to 2 (square a first...)\n(1,0,0,4,4)     --nontrivial...(x:y:z) = (1 : 1 : 0)\nPoint = [0:0:1]\n        height = 0.0511114082399688\nRank of B=im(eps) increases to 1 (The previous point is on the egg)\nExiting search for Type 1 quartics after finding one which is globally soluble.\nMordell rank contribution from B=im(eps) = 1\nSelmer  rank contribution from B=im(eps) = 1\nSha     rank contribution from B=im(eps) = 0\nMordell rank contribution from A=ker(eps) = 0\nSelmer  rank contribution from A=ker(eps) = 0\nSha     rank contribution from A=ker(eps) = 0\nRank = 1\nSearching for points (bound = 8)...done:\n  found points of rank 1\n  and regulator 0.0511114082399688\nProcessing points found during 2-descent...done:\n  now regulator = 0.0511114082399688\nSaturating (bound = 100)...done:\n  points were already saturated.\nTransferring points from minimal curve [0,0,1,-1,0] back to original curve [0,0,1,-1,0]\n\nGenerator 1 is [0:-1:1]; height 0.0511114082399688\n\nRegulator = 0.0511114082399688\n\nThe rank and full Mordell-Weil basis have been determined unconditionally.\n (0.64004 seconds)\n```",
     "created_at": "2008-01-04T22:01:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1402",
     "type": "issue_comment",
@@ -225,7 +224,6 @@ archive/issue_comments_009022.json:
 ```
 
 And with correct formatting
-
 
 ```
 [~/la/eclib-20071231.p1/src/qrank]> ./mwrank
@@ -285,7 +283,6 @@ Regulator = 0.0511114082399688
 The rank and full Mordell-Weil basis have been determined unconditionally.
  (0.64004 seconds)
 ```
-
 
 
 

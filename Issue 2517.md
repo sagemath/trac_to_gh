@@ -3,7 +3,7 @@
 archive/issues_002517.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> >  Hi,\n> >\n> >  With sage-2.10.3 the following plot fails:\n> >\n> >  plot(-x*log(x),0,1, plot_points=1000)\n> >\n> >  This worked fine in sage-2.10.2. Note that the left hand limit is\n> >  well-defined and can be approximated:\n> >\n> >  plot(-x*log(x),0.00000000000000001,1, plot_points=1000)\n> >\n> >  Is this a feature or a bug?\n\nIt fails because it used to be that there was a bug where when\nplotting the left and right endpoints were omitted, because the sample\npoints were *all* randomized!  This really\nannoyed a lot of people, especially people making animations,\nbut allowed the above example to work.\n\nI think the solution is to fix our plotting code so that it just automatically\ncompletely ignores a few bad values (like it used to), possibly printing\na warning.\n\n -- William\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2517\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> >  Hi,\n> >\n> >  With sage-2.10.3 the following plot fails:\n> >\n> >  plot(-x*log(x),0,1, plot_points=1000)\n> >\n> >  This worked fine in sage-2.10.2. Note that the left hand limit is\n> >  well-defined and can be approximated:\n> >\n> >  plot(-x*log(x),0.00000000000000001,1, plot_points=1000)\n> >\n> >  Is this a feature or a bug?\n\nIt fails because it used to be that there was a bug where when\nplotting the left and right endpoints were omitted, because the sample\npoints were *all* randomized!  This really\nannoyed a lot of people, especially people making animations,\nbut allowed the above example to work.\n\nI think the solution is to fix our plotting code so that it just automatically\ncompletely ignores a few bad values (like it used to), possibly printing\na warning.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2517\n\n",
     "created_at": "2008-03-14T16:58:53Z",
     "labels": [
         "component: graphics",
@@ -17,7 +17,6 @@ archive/issues_002517.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 > >  Hi,
@@ -45,7 +44,6 @@ a warning.
 
  -- William
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2517
@@ -97,7 +95,7 @@ The patch above takes care of two things:
 archive/issue_comments_017130.json:
 ```json
 {
-    "body": "I think this line in the patch\n\n```\nprint i, data[i], i+1, data[i+1] \n```\n\nwas for debugging purposes and should be deleted.",
+    "body": "I think this line in the patch\n\n```\nprint i, data[i], i+1, data[i+1] \n```\nwas for debugging purposes and should be deleted.",
     "created_at": "2008-03-14T21:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
@@ -111,7 +109,6 @@ I think this line in the patch
 ```
 print i, data[i], i+1, data[i+1] 
 ```
-
 was for debugging purposes and should be deleted.
 
 
@@ -157,7 +154,7 @@ Sorry, I thought I uploaded a new patch before anyone saw :).  The current patch
 archive/issue_comments_017133.json:
 ```json
 {
-    "body": "I applied your patch and it doesn't work.  The example above failes with `<type 'exceptions.TypeError'>: 'tuple' object is not callable`:\n\n\n```\n\nsage:  plot(-x*log(x),0,1, plot_points=1000)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/papers/current/modabvar/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3380             del kwds['show']\n   3381         if hasattr(funcs, 'plot'):\n-> 3382             G = funcs.plot(*args, **kwds)\n   3383         # if we are using the generic plotting method\n   3384         else:\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in plot(self, *args, **kwds)\n    913         else:\n    914             f = self.function(param)\n--> 915         return plot(f, *args, **kwds)\n    916 \n    917     def __lt__(self, right):\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3380             del kwds['show']\n   3381         if hasattr(funcs, 'plot'):\n-> 3382             G = funcs.plot(*args, **kwds)\n   3383         # if we are using the generic plotting method\n   3384         else:\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in plot(self, *args, **kwds)\n    913         else:\n    914             f = self.function(param)\n--> 915         return plot(f, *args, **kwds)\n    916 \n    917     def __lt__(self, right):\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3395                 xmax = args[1]\n   3396                 args = args[2:]\n-> 3397                 G = self._call(funcs, (xmin, xmax), *args, **kwds)\n   3398             else:\n   3399                 print \"there were %s extra arguments (besides %s)\" % (n, funcs)\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in _call(self, funcs, xrange, parametric, polar, label, **kwds)\n   3463                 exceptions += 1\n   3464                 exception_indices.append(i)\n-> 3465         data = [data[i] for i in xrange(len(data)) if i not in exception_indices]\n   3466             \n   3467         # adaptive refinement\n\n<type 'exceptions.TypeError'>: 'tuple' object is not callable\n\n```\n",
+    "body": "I applied your patch and it doesn't work.  The example above failes with `<type 'exceptions.TypeError'>: 'tuple' object is not callable`:\n\n```\n\nsage:  plot(-x*log(x),0,1, plot_points=1000)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/papers/current/modabvar/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3380             del kwds['show']\n   3381         if hasattr(funcs, 'plot'):\n-> 3382             G = funcs.plot(*args, **kwds)\n   3383         # if we are using the generic plotting method\n   3384         else:\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in plot(self, *args, **kwds)\n    913         else:\n    914             f = self.function(param)\n--> 915         return plot(f, *args, **kwds)\n    916 \n    917     def __lt__(self, right):\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3380             del kwds['show']\n   3381         if hasattr(funcs, 'plot'):\n-> 3382             G = funcs.plot(*args, **kwds)\n   3383         # if we are using the generic plotting method\n   3384         else:\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in plot(self, *args, **kwds)\n    913         else:\n    914             f = self.function(param)\n--> 915         return plot(f, *args, **kwds)\n    916 \n    917     def __lt__(self, right):\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3395                 xmax = args[1]\n   3396                 args = args[2:]\n-> 3397                 G = self._call(funcs, (xmin, xmax), *args, **kwds)\n   3398             else:\n   3399                 print \"there were %s extra arguments (besides %s)\" % (n, funcs)\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py in _call(self, funcs, xrange, parametric, polar, label, **kwds)\n   3463                 exceptions += 1\n   3464                 exception_indices.append(i)\n-> 3465         data = [data[i] for i in xrange(len(data)) if i not in exception_indices]\n   3466             \n   3467         # adaptive refinement\n\n<type 'exceptions.TypeError'>: 'tuple' object is not callable\n\n```",
     "created_at": "2008-03-15T09:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
@@ -167,7 +164,6 @@ archive/issue_comments_017133.json:
 ```
 
 I applied your patch and it doesn't work.  The example above failes with `<type 'exceptions.TypeError'>: 'tuple' object is not callable`:
-
 
 ```
 
@@ -222,7 +218,6 @@ sage:  plot(-x*log(x),0,1, plot_points=1000)
 <type 'exceptions.TypeError'>: 'tuple' object is not callable
 
 ```
-
 
 
 

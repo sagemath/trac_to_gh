@@ -3,7 +3,7 @@
 archive/issues_009456.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby\n\nFrom the libpng INSTALL file:\n\n```\nBefore installing libpng, you must first install zlib\n```\n\nSo fix the file \"deps\" accordingly.  (This issue arose when building spkg's in parallel: the build failed when it reached libpng because zlib wasn't installed yet.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9456\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby\n\nFrom the libpng INSTALL file:\n\n```\nBefore installing libpng, you must first install zlib\n```\nSo fix the file \"deps\" accordingly.  (This issue arose when building spkg's in parallel: the build failed when it reached libpng because zlib wasn't installed yet.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9456\n\n",
     "created_at": "2010-07-08T15:21:45Z",
     "labels": [
         "component: distribution",
@@ -25,7 +25,6 @@ From the libpng INSTALL file:
 ```
 Before installing libpng, you must first install zlib
 ```
-
 So fix the file "deps" accordingly.  (This issue arose when building spkg's in parallel: the build failed when it reached libpng because zlib wasn't installed yet.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9456
@@ -203,7 +202,7 @@ I will attempt to put the files back as they should be.
 archive/issue_comments_090480.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n\n> Since this has not been merged, it's probably not a fatal screw up. Sorry. \n\nI mean it has been merged, so it should not be a big deal. But I will attempt to put the files back as they should be.",
+    "body": "Replying to [comment:5 drkirkby]:\n\n> Since this has not been merged, it's probably not a fatal screw up. Sorry. \n\n\nI mean it has been merged, so it should not be a big deal. But I will attempt to put the files back as they should be.",
     "created_at": "2010-07-26T09:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
@@ -215,6 +214,7 @@ archive/issue_comments_090480.json:
 Replying to [comment:5 drkirkby]:
 
 > Since this has not been merged, it's probably not a fatal screw up. Sorry. 
+
 
 I mean it has been merged, so it should not be a big deal. But I will attempt to put the files back as they should be.
 

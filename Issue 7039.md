@@ -3,7 +3,7 @@
 archive/issues_007039.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nKeywords: GNUism\n\nSome time ago I sorted out the fact that znpoly failed to build if the linker used was the Sun linker, as znpoly used GNU specific flags. \n\nWell it seems there was another defect too, as the setting of CC is ignored too. \n\n\n```\nzn_poly-0.9.p1/src/src/ks_support.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/zn_poly-0.9.p1/src'\ngcc -fPIC -O3 -L. -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -I./include -DNDEBUG -o src/array.o -c src/array.c\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7039\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nKeywords: GNUism\n\nSome time ago I sorted out the fact that znpoly failed to build if the linker used was the Sun linker, as znpoly used GNU specific flags. \n\nWell it seems there was another defect too, as the setting of CC is ignored too. \n\n```\nzn_poly-0.9.p1/src/src/ks_support.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/zn_poly-0.9.p1/src'\ngcc -fPIC -O3 -L. -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -I./include -DNDEBUG -o src/array.o -c src/array.c\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7039\n\n",
     "created_at": "2009-09-27T16:01:04Z",
     "labels": [
         "component: build",
@@ -26,7 +26,6 @@ Some time ago I sorted out the fact that znpoly failed to build if the linker us
 
 Well it seems there was another defect too, as the setting of CC is ignored too. 
 
-
 ```
 zn_poly-0.9.p1/src/src/ks_support.c
 Finished extraction
@@ -44,7 +43,6 @@ make[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/
 gcc -fPIC -O3 -L. -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -I./include -DNDEBUG -o src/array.o -c src/array.c
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7039
 

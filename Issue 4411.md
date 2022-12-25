@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_032365.json:
 ```json
 {
-    "body": "Attachment [trac_4411_fix_phc_1_variable.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_fix_phc_1_variable.patch) by mhampton created at 2011-01-11 23:09:22\n\nHere's an example for testing:\n\n```\nR1.<t> = PolynomialRing(QQ)\nstart_sys1 = [t^15-t-1]             \nsol = phc.blackbox(start_sys1, R1, verbose=False)        \nlen(sol.solutions())\n```\n\nshould give 15.",
+    "body": "Attachment [trac_4411_fix_phc_1_variable.patch](tarball://root/attachments/some-uuid/ticket4411/trac_4411_fix_phc_1_variable.patch) by mhampton created at 2011-01-11 23:09:22\n\nHere's an example for testing:\n\n```\nR1.<t> = PolynomialRing(QQ)\nstart_sys1 = [t^15-t-1]             \nsol = phc.blackbox(start_sys1, R1, verbose=False)        \nlen(sol.solutions())\n```\nshould give 15.",
     "created_at": "2011-01-11T23:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ start_sys1 = [t^15-t-1]
 sol = phc.blackbox(start_sys1, R1, verbose=False)        
 len(sol.solutions())
 ```
-
 should give 15.
 
 
@@ -116,7 +115,7 @@ should give 15.
 archive/issue_comments_032366.json:
 ```json
 {
-    "body": "Oops, for the above snippet you need to first import phc:\n\n```\nfrom sage.interfaces.phc import phc\n```\n\n\nand have the phc optional spkg installed.",
+    "body": "Oops, for the above snippet you need to first import phc:\n\n```\nfrom sage.interfaces.phc import phc\n```\n\nand have the phc optional spkg installed.",
     "created_at": "2011-01-12T00:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -130,7 +129,6 @@ Oops, for the above snippet you need to first import phc:
 ```
 from sage.interfaces.phc import phc
 ```
-
 
 and have the phc optional spkg installed.
 
@@ -195,7 +193,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032370.json:
 ```json
 {
-    "body": "Replying to [comment:6 dimpase]:\n> current spkg does not work on MacOSX 10.6. Will need an update...\n\nThe new spkg (Marshall, could you post a link to it?) breaks parts of the current code, as some outputs(?) did change.",
+    "body": "Replying to [comment:6 dimpase]:\n> current spkg does not work on MacOSX 10.6. Will need an update...\n\n\nThe new spkg (Marshall, could you post a link to it?) breaks parts of the current code, as some outputs(?) did change.",
     "created_at": "2011-01-13T19:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -206,6 +204,7 @@ archive/issue_comments_032370.json:
 
 Replying to [comment:6 dimpase]:
 > current spkg does not work on MacOSX 10.6. Will need an update...
+
 
 The new spkg (Marshall, could you post a link to it?) breaks parts of the current code, as some outputs(?) did change.
 
@@ -388,7 +387,7 @@ rebased cumulative patch for #4411 and #10607, for sage-5.0
 archive/issue_comments_032380.json:
 ```json
 {
-    "body": "Replying to [comment:16 vbraun]:\n> patch doesn't apply to sage-5.0, I get a rejected hunk.\n\nOkay, I fixed that and updated the description to point to a more recent phcpack spkg.  Please try again!  It would be depressing for this to rot again.",
+    "body": "Replying to [comment:16 vbraun]:\n> patch doesn't apply to sage-5.0, I get a rejected hunk.\n\n\nOkay, I fixed that and updated the description to point to a more recent phcpack spkg.  Please try again!  It would be depressing for this to rot again.",
     "created_at": "2012-05-28T20:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -399,6 +398,7 @@ archive/issue_comments_032380.json:
 
 Replying to [comment:16 vbraun]:
 > patch doesn't apply to sage-5.0, I get a rejected hunk.
+
 
 Okay, I fixed that and updated the description to point to a more recent phcpack spkg.  Please try again!  It would be depressing for this to rot again.
 
@@ -480,7 +480,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_032384.json:
 ```json
 {
-    "body": "I get the following doctest error on Sage-5.4.rc1, perhaps it has something to do with #13579?\n\n```\n[vbraun@volker-desktop hg]$ sage -t -only-optional=phc --verbose devel/sage-main/sage/interfaces/phc.py\nsage -t -only-optional=phc --verbose \"devel/sage-main/sage/interfaces/phc.py\"\nTrying:\n    set_random_seed(0L)\nExpecting nothing\nok\nTrying:\n    change_warning_output(sys.stdout)\nExpecting nothing\nok\nTrying:\n    from sage.interfaces.phc import *         #optional: phc###line 56:_sage_    >>> from sage.interfaces.phc import *         #optional: phc\nExpecting nothing\nok\nTrying:\n    R2 = PolynomialRing(QQ,Integer(2), names=('x1', 'x2',)); (x1, x2,) = R2._first_ngens(2)#optional: phc###line 57:_sage_    >>> R2.<x1,x2> = PolynomialRing(QQ,2)         #optional: phc\nExpecting nothing\nok\nTrying:\n    test_sys = [(x1-Integer(1))**Integer(5)-x2, (x2-Integer(1))**Integer(5)-Integer(1)] #optional: phc###line 58:_sage_    >>> test_sys = [(x1-1)^5-x2, (x2-1)^5-1] #optional: phc\nExpecting nothing\nok\nTrying:\n    sol = phc.blackbox(test_sys, R2)          #optional: phc###line 59:_sage_    >>> sol = phc.blackbox(test_sys, R2)          #optional: phc\nExpecting nothing\n\nThere exists already a file named /home/vbraun/.sage/temp/volker_desktop.stp.dias.ie/21208/tmp_filename-SmhVtI\nDo you want to destroy this file ? (y/n) y\n```\n",
+    "body": "I get the following doctest error on Sage-5.4.rc1, perhaps it has something to do with #13579?\n\n```\n[vbraun@volker-desktop hg]$ sage -t -only-optional=phc --verbose devel/sage-main/sage/interfaces/phc.py\nsage -t -only-optional=phc --verbose \"devel/sage-main/sage/interfaces/phc.py\"\nTrying:\n    set_random_seed(0L)\nExpecting nothing\nok\nTrying:\n    change_warning_output(sys.stdout)\nExpecting nothing\nok\nTrying:\n    from sage.interfaces.phc import *         #optional: phc###line 56:_sage_    >>> from sage.interfaces.phc import *         #optional: phc\nExpecting nothing\nok\nTrying:\n    R2 = PolynomialRing(QQ,Integer(2), names=('x1', 'x2',)); (x1, x2,) = R2._first_ngens(2)#optional: phc###line 57:_sage_    >>> R2.<x1,x2> = PolynomialRing(QQ,2)         #optional: phc\nExpecting nothing\nok\nTrying:\n    test_sys = [(x1-Integer(1))**Integer(5)-x2, (x2-Integer(1))**Integer(5)-Integer(1)] #optional: phc###line 58:_sage_    >>> test_sys = [(x1-1)^5-x2, (x2-1)^5-1] #optional: phc\nExpecting nothing\nok\nTrying:\n    sol = phc.blackbox(test_sys, R2)          #optional: phc###line 59:_sage_    >>> sol = phc.blackbox(test_sys, R2)          #optional: phc\nExpecting nothing\n\nThere exists already a file named /home/vbraun/.sage/temp/volker_desktop.stp.dias.ie/21208/tmp_filename-SmhVtI\nDo you want to destroy this file ? (y/n) y\n```",
     "created_at": "2012-10-23T19:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4411",
     "type": "issue_comment",
@@ -521,7 +521,6 @@ Expecting nothing
 There exists already a file named /home/vbraun/.sage/temp/volker_desktop.stp.dias.ie/21208/tmp_filename-SmhVtI
 Do you want to destroy this file ? (y/n) y
 ```
-
 
 
 

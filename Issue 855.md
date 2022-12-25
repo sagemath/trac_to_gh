@@ -156,7 +156,7 @@ valgrind: an instrumentation framework for building dynamic analysis tools
 archive/issue_comments_005283.json:
 ```json
 {
-    "body": "> database_symbolic_data: ??\n\nThis is the database from http://www.symbolicdata.org/:\n\n\"The SymbolicData project is set out to develop concepts and tools for testing Computer Algebra Software (CAS) and to collect relevant data from different areas of Computer Algebra. Tools and data are designed to be used both on a local site for special testing purposes and to manage a central repository at www.symbolicdata.org.\"",
+    "body": "> database_symbolic_data: ??\n\n\nThis is the database from http://www.symbolicdata.org/:\n\n\"The SymbolicData project is set out to develop concepts and tools for testing Computer Algebra Software (CAS) and to collect relevant data from different areas of Computer Algebra. Tools and data are designed to be used both on a local site for special testing purposes and to manage a central repository at www.symbolicdata.org.\"",
     "created_at": "2008-12-05T02:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
@@ -166,6 +166,7 @@ archive/issue_comments_005283.json:
 ```
 
 > database_symbolic_data: ??
+
 
 This is the database from http://www.symbolicdata.org/:
 
@@ -178,7 +179,7 @@ This is the database from http://www.symbolicdata.org/:
 archive/issue_comments_005284.json:
 ```json
 {
-    "body": "This should be done by automatically extracting the first line from the Description section of the SPKG.txt, if it is there. Use a line like this:\n\n```\nsage@sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt\n```\n\nor better yet, write a Python script using the tarfile module. \n\nI'm currently working on this, and hope to close this ticket soon :-)",
+    "body": "This should be done by automatically extracting the first line from the Description section of the SPKG.txt, if it is there. Use a line like this:\n\n```\nsage@sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt\n```\nor better yet, write a Python script using the tarfile module. \n\nI'm currently working on this, and hope to close this ticket soon :-)",
     "created_at": "2009-12-18T04:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
@@ -192,7 +193,6 @@ This should be done by automatically extracting the first line from the Descript
 ```
 sage@sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt
 ```
-
 or better yet, write a Python script using the tarfile module. 
 
 I'm currently working on this, and hope to close this ticket soon :-)

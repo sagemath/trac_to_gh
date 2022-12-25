@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5534
 archive/issue_comments_042939.json:
 ```json
 {
-    "body": "Fixed (see the attached patch):\n\nNow:\n\n```\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n['b', 'd']\n```\n\n\nNote the patch only applies on top of #5200\n\nAuthor : Florent Hivert",
+    "body": "Fixed (see the attached patch):\n\nNow:\n\n```\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n['b', 'd']\n```\n\nNote the patch only applies on top of #5200\n\nAuthor : Florent Hivert",
     "created_at": "2009-03-17T09:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ sage: w
 sage: ww
 ['b', 'd']
 ```
-
 
 Note the patch only applies on top of #5200
 
@@ -126,7 +125,7 @@ Changing status from new to assigned.
 archive/issue_comments_042942.json:
 ```json
 {
-    "body": "This patch causes doctest failures in \n\n```\n\tsage -t -long devel/sage/sage/combinat/subword.py # 23 doctests failed\n\tsage -t -long devel/sage/sage/combinat/subset.py # 10 doctests failed\n```\n\nFor example\"\n\n```\nsage -t -long \"devel/sage/sage/combinat/subset.py\"          \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/combinat/subset.py\", line 566:\n    sage: [] in S\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[3]>\", line 1, in <module>\n        [] in S###line 566:\n    sage: [] in S\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subset.py\", line 579, in __contains__\n        return sorted(s) in subword.Subwords(self._s)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 130, in __contains__\n        if smallest_positions(self.w, w) != False:\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 315, in smallest_positions\n        res = [None] * subword.length()\n    AttributeError: 'list' object has no attribute 'length'\n**********************************************************************\n```\n\n\nThis is with #5200 merged, so is there another dependency?\n\nCheers,\n\nMichael",
+    "body": "This patch causes doctest failures in \n\n```\n\tsage -t -long devel/sage/sage/combinat/subword.py # 23 doctests failed\n\tsage -t -long devel/sage/sage/combinat/subset.py # 10 doctests failed\n```\nFor example\"\n\n```\nsage -t -long \"devel/sage/sage/combinat/subset.py\"          \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/combinat/subset.py\", line 566:\n    sage: [] in S\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[3]>\", line 1, in <module>\n        [] in S###line 566:\n    sage: [] in S\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subset.py\", line 579, in __contains__\n        return sorted(s) in subword.Subwords(self._s)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 130, in __contains__\n        if smallest_positions(self.w, w) != False:\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 315, in smallest_positions\n        res = [None] * subword.length()\n    AttributeError: 'list' object has no attribute 'length'\n**********************************************************************\n```\n\nThis is with #5200 merged, so is there another dependency?\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
@@ -141,7 +140,6 @@ This patch causes doctest failures in
 	sage -t -long devel/sage/sage/combinat/subword.py # 23 doctests failed
 	sage -t -long devel/sage/sage/combinat/subset.py # 10 doctests failed
 ```
-
 For example"
 
 ```
@@ -169,7 +167,6 @@ Exception raised:
     AttributeError: 'list' object has no attribute 'length'
 **********************************************************************
 ```
-
 
 This is with #5200 merged, so is there another dependency?
 

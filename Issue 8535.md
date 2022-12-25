@@ -120,7 +120,7 @@ I don't think either RNDU or RNDD would be the right thing to use here--who's to
 archive/issue_comments_077016.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> I don't think either RNDU or RNDD would be the right thing to use here--who's to say that the upper or lower interval should always get the extra half ulp? Maybe RNDN would have been a better choice, I'll post a new patch. \n\nI agree, after thinking about it.  I also agree that RNDN would be a better choice.",
+    "body": "Replying to [comment:4 robertwb]:\n> I don't think either RNDU or RNDD would be the right thing to use here--who's to say that the upper or lower interval should always get the extra half ulp? Maybe RNDN would have been a better choice, I'll post a new patch. \n\n\nI agree, after thinking about it.  I also agree that RNDN would be a better choice.",
     "created_at": "2010-05-15T21:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
@@ -131,6 +131,7 @@ archive/issue_comments_077016.json:
 
 Replying to [comment:4 robertwb]:
 > I don't think either RNDU or RNDD would be the right thing to use here--who's to say that the upper or lower interval should always get the extra half ulp? Maybe RNDN would have been a better choice, I'll post a new patch. 
+
 
 I agree, after thinking about it.  I also agree that RNDN would be a better choice.
 
@@ -197,7 +198,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077020.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> Doctests pass on rings/*.py[x].  So positive review if RNDZ is the correct thing to do when bisecting intervals.\n\nOK, I'm setting this to positive review then.",
+    "body": "Replying to [comment:3 jason]:\n> Doctests pass on rings/*.py[x].  So positive review if RNDZ is the correct thing to do when bisecting intervals.\n\n\nOK, I'm setting this to positive review then.",
     "created_at": "2010-06-07T19:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
@@ -208,6 +209,7 @@ archive/issue_comments_077020.json:
 
 Replying to [comment:3 jason]:
 > Doctests pass on rings/*.py[x].  So positive review if RNDZ is the correct thing to do when bisecting intervals.
+
 
 OK, I'm setting this to positive review then.
 

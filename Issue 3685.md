@@ -3,7 +3,7 @@
 archive/issues_003685.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nMake sure that doing this does not import ipython:\n\n\n```\nteragon-2:~ was$ sage -python\nPython 2.5.2 (r252:60911, Jul 10 2008, 00:31:06) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3685\n\n",
+    "body": "Assignee: cwitty\n\nMake sure that doing this does not import ipython:\n\n```\nteragon-2:~ was$ sage -python\nPython 2.5.2 (r252:60911, Jul 10 2008, 00:31:06) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3685\n\n",
     "created_at": "2008-07-20T14:49:23Z",
     "labels": [
         "component: misc",
@@ -21,7 +21,6 @@ Assignee: cwitty
 
 Make sure that doing this does not import ipython:
 
-
 ```
 teragon-2:~ was$ sage -python
 Python 2.5.2 (r252:60911, Jul 10 2008, 00:31:06) 
@@ -29,7 +28,6 @@ Python 2.5.2 (r252:60911, Jul 10 2008, 00:31:06)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import sage.all
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3685
 
@@ -42,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3685
 archive/issue_comments_026054.json:
 ```json
 {
-    "body": "Here is how Ondrej Certik verifies that sage.all was importing ipython in sage-3.0.5:\n\n```\nI don't want to have anything in common with ipython, but sage invokes\nit on import sage.all, as can be checked easily:\n\nondra@fuji:~/ext/sage$ . local/bin/sage-env\nondra@fuji:~/ext/sage$ python\nPython 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)\n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n>>>\n\nThen apply this patch:\n\n--- /tmp/genutils.py    2008-07-20 16:33:15.000000000 +0200\n+++ local/lib/python2.5/site-packages/IPython/genutils.py       2008-07-20\n16:33:26.553433732 +0200\n@@ -54,6 +54,7 @@\n        if not hasattr(stream,'write') or not hasattr(stream,'flush'):\n            stream = fallback\n        self.stream = stream\n+        stop\n        self._swrite = stream.write\n        self.flush = stream.flush\n\n\n\nand:\n\nondra@fuji:~/ext/sage$ python\nPython 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)\n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/all.py\",\nline 58, in <module>\n   from sage.misc.all       import *         # takes a while\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/all.py\",\nline 15, in <module>\n   from sage_timeit_class import timeit\n File \"sage_timeit_class.pyx\", line 3, in sage.misc.sage_timeit_class\n(sage/misc/sage_timeit_class.c:485)\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/sage_timeit.py\",\nline 12, in <module>\n   import timeit as timeit_, time, math, preparser, interpreter\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py\",\nline 108, in <module>\n   from IPython.iplib import InteractiveShell\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/__init__.py\",\nline 57, in <module>\n   __import__(name,glob,loc,[])\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/ipstruct.py\",\nline 22, in <module>\n   from IPython.genutils import list2dict2\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 95, in <module>\n   Term = IOTerm()\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 90, in __init__\n   self.cin  = IOStream(cin,sys.stdin)\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 57, in __init__\n   stop\nNameError: global name 'stop' is not defined\n```\n",
+    "body": "Here is how Ondrej Certik verifies that sage.all was importing ipython in sage-3.0.5:\n\n```\nI don't want to have anything in common with ipython, but sage invokes\nit on import sage.all, as can be checked easily:\n\nondra@fuji:~/ext/sage$ . local/bin/sage-env\nondra@fuji:~/ext/sage$ python\nPython 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)\n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n>>>\n\nThen apply this patch:\n\n--- /tmp/genutils.py    2008-07-20 16:33:15.000000000 +0200\n+++ local/lib/python2.5/site-packages/IPython/genutils.py       2008-07-20\n16:33:26.553433732 +0200\n@@ -54,6 +54,7 @@\n        if not hasattr(stream,'write') or not hasattr(stream,'flush'):\n            stream = fallback\n        self.stream = stream\n+        stop\n        self._swrite = stream.write\n        self.flush = stream.flush\n\n\n\nand:\n\nondra@fuji:~/ext/sage$ python\nPython 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)\n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/all.py\",\nline 58, in <module>\n   from sage.misc.all       import *         # takes a while\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/all.py\",\nline 15, in <module>\n   from sage_timeit_class import timeit\n File \"sage_timeit_class.pyx\", line 3, in sage.misc.sage_timeit_class\n(sage/misc/sage_timeit_class.c:485)\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/sage_timeit.py\",\nline 12, in <module>\n   import timeit as timeit_, time, math, preparser, interpreter\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py\",\nline 108, in <module>\n   from IPython.iplib import InteractiveShell\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/__init__.py\",\nline 57, in <module>\n   __import__(name,glob,loc,[])\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/ipstruct.py\",\nline 22, in <module>\n   from IPython.genutils import list2dict2\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 95, in <module>\n   Term = IOTerm()\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 90, in __init__\n   self.cin  = IOStream(cin,sys.stdin)\n File \"/home/ondra/ext/sage/local/lib/python2.5/site-packages/IPython/genutils.py\",\nline 57, in __init__\n   stop\nNameError: global name 'stop' is not defined\n```",
     "created_at": "2008-07-20T14:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -123,7 +121,6 @@ NameError: global name 'stop' is not defined
 
 
 
-
 ---
 
 archive/issue_comments_026055.json:
@@ -165,7 +162,7 @@ archive/issue_events_008445.json:
 archive/issue_comments_026056.json:
 ```json
 {
-    "body": "Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by @mwhansen created at 2008-08-04 09:01:54\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```\n",
+    "body": "Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by @mwhansen created at 2008-08-04 09:01:54\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```",
     "created_at": "2008-08-04T09:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -203,13 +200,12 @@ sage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most rec
 
 
 
-
 ---
 
 archive/issue_comments_026057.json:
 ```json
 {
-    "body": "Mike said:\n> 1) Sage segfaults at exit.\n> 2) When doing sage -t, I get the following problem for every file: \n\nMike, (1) what is your system?  (2) Can you do \"sage -ba\" and try again?\n\n -- William",
+    "body": "Mike said:\n> 1) Sage segfaults at exit.\n> 2) When doing sage -t, I get the following problem for every file: \n\n\nMike, (1) what is your system?  (2) Can you do \"sage -ba\" and try again?\n\n -- William",
     "created_at": "2008-08-13T07:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -221,6 +217,7 @@ archive/issue_comments_026057.json:
 Mike said:
 > 1) Sage segfaults at exit.
 > 2) When doing sage -t, I get the following problem for every file: 
+
 
 Mike, (1) what is your system?  (2) Can you do "sage -ba" and try again?
 
@@ -493,7 +490,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_026070.json:
 ```json
 {
-    "body": "I am not able to sort things out.\n\nIt seems that the import of IPython occurs because of the line\n\n```\nfrom IPython.core.formatters import PlainTextFormatter\n```\n\nin \"sage.misc.displayhook\"\n\nIs there a way to avoid this IPython import ?",
+    "body": "I am not able to sort things out.\n\nIt seems that the import of IPython occurs because of the line\n\n```\nfrom IPython.core.formatters import PlainTextFormatter\n```\nin \"sage.misc.displayhook\"\n\nIs there a way to avoid this IPython import ?",
     "created_at": "2013-08-25T19:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
@@ -509,7 +506,6 @@ It seems that the import of IPython occurs because of the line
 ```
 from IPython.core.formatters import PlainTextFormatter
 ```
-
 in "sage.misc.displayhook"
 
 Is there a way to avoid this IPython import ?

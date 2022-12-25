@@ -3,7 +3,7 @@
 archive/issues_004203.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  anakha\n\n\n```\n[17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.\n[17:07] <mhansen> @suboption('arrow', color='red', line='+')\n[17:07] <jason-> okay, yeah, even better.\n[17:07] <mhansen> And that would pick up things like arrow_color='blue'.\n[17:07] <jason-> then I don't have to type the dictionary explicitly\n[17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.\n```\n\n\nThe idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4203\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  anakha\n\n```\n[17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.\n[17:07] <mhansen> @suboption('arrow', color='red', line='+')\n[17:07] <jason-> okay, yeah, even better.\n[17:07] <mhansen> And that would pick up things like arrow_color='blue'.\n[17:07] <jason-> then I don't have to type the dictionary explicitly\n[17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.\n```\n\nThe idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4203\n\n",
     "created_at": "2008-09-26T22:45:34Z",
     "labels": [
         "component: graphics"
@@ -19,7 +19,6 @@ Assignee: @mwhansen
 
 CC:  anakha
 
-
 ```
 [17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.
 [17:07] <mhansen> @suboption('arrow', color='red', line='+')
@@ -28,7 +27,6 @@ CC:  anakha
 [17:07] <jason-> then I don't have to type the dictionary explicitly
 [17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.
 ```
-
 
 The idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.
 
@@ -44,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4203
 archive/issue_comments_030440.json:
 ```json
 {
-    "body": "Use case:\n\n\n```\n@suboption('arrow', color='red', line_style='+')\n@options(vertices=True, edge_labels=True)\ndef plot_graph():\n    draw vertices\n    for each edge:\n        draw_arrow(**arrow_options)\n    draw edge labels\n```\n\nso the plot_graph function has options arrow_color and arrow_line_style, but inside the function, it just sees an arrow_options dictionary populated from these.",
+    "body": "Use case:\n\n```\n@suboption('arrow', color='red', line_style='+')\n@options(vertices=True, edge_labels=True)\ndef plot_graph():\n    draw vertices\n    for each edge:\n        draw_arrow(**arrow_options)\n    draw edge labels\n```\nso the plot_graph function has options arrow_color and arrow_line_style, but inside the function, it just sees an arrow_options dictionary populated from these.",
     "created_at": "2008-09-26T22:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
@@ -55,7 +53,6 @@ archive/issue_comments_030440.json:
 
 Use case:
 
-
 ```
 @suboption('arrow', color='red', line_style='+')
 @options(vertices=True, edge_labels=True)
@@ -65,7 +62,6 @@ def plot_graph():
         draw_arrow(**arrow_options)
     draw edge labels
 ```
-
 so the plot_graph function has options arrow_color and arrow_line_style, but inside the function, it just sees an arrow_options dictionary populated from these.
 
 
@@ -133,7 +129,7 @@ All doctests in plot/*.py pass with this patch.
 archive/issue_comments_030444.json:
 ```json
 {
-    "body": "I got this with a quick test.\n\n\n```\nsage: @suboptions('test')\ndef f(**kwds):\n....:     print kwds\n....:     \nsage: f(test_size=2)\n{'test_options': {'ize': 2}}\n```\n\n\nstr.lstrip removes all characters given from the front of the string:\n\n\n```\nsage: 'baba_baca'.lstrip('ab_')\n'ca'\n```\n",
+    "body": "I got this with a quick test.\n\n```\nsage: @suboptions('test')\ndef f(**kwds):\n....:     print kwds\n....:     \nsage: f(test_size=2)\n{'test_options': {'ize': 2}}\n```\n\nstr.lstrip removes all characters given from the front of the string:\n\n```\nsage: 'baba_baca'.lstrip('ab_')\n'ca'\n```",
     "created_at": "2008-10-23T19:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
@@ -144,7 +140,6 @@ archive/issue_comments_030444.json:
 
 I got this with a quick test.
 
-
 ```
 sage: @suboptions('test')
 def f(**kwds):
@@ -154,15 +149,12 @@ sage: f(test_size=2)
 {'test_options': {'ize': 2}}
 ```
 
-
 str.lstrip removes all characters given from the front of the string:
-
 
 ```
 sage: 'baba_baca'.lstrip('ab_')
 'ca'
 ```
-
 
 
 

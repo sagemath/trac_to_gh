@@ -85,7 +85,7 @@ Changing status from assigned to new.
 archive/issue_comments_008952.json:
 ```json
 {
-    "body": "Replying to [ticket:1396 malb]:\n> e.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\nI have a version of this going now, with the behavior similar to what the ticket requests. However, would it be more desirable to allow the user's options to persist through several operations, using an interface such as (say)\n\n* `I.set_singular_option(\"lazy\"); I.groebner_basis()`\n\nrather than add arguments only to the Groebner basis command, such as\n\n* `I.groebner_basis(lazy=True)`",
+    "body": "Replying to [ticket:1396 malb]:\n> e.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\n\nI have a version of this going now, with the behavior similar to what the ticket requests. However, would it be more desirable to allow the user's options to persist through several operations, using an interface such as (say)\n\n* `I.set_singular_option(\"lazy\"); I.groebner_basis()`\n\nrather than add arguments only to the Groebner basis command, such as\n\n* `I.groebner_basis(lazy=True)`",
     "created_at": "2009-01-23T09:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -96,6 +96,7 @@ archive/issue_comments_008952.json:
 
 Replying to [ticket:1396 malb]:
 > e.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).
+
 
 I have a version of this going now, with the behavior similar to what the ticket requests. However, would it be more desirable to allow the user's options to persist through several operations, using an interface such as (say)
 
@@ -112,7 +113,7 @@ rather than add arguments only to the Groebner basis command, such as
 archive/issue_comments_008953.json:
 ```json
 {
-    "body": "Replying to [comment:3 john_perry]:\n> I.set_singular_option(\"lazy\"); I.groebner_basis()\n\nThat stuff somewhat works already:\n\n\n```\nsage: singular.option('lazy')\nsage: singular.option()\n//options: lazy redefine loadLib usage prompt\n```\n\n\nThe point of this ticket is that the user can be ignorant of the fact that (s)he is running Singular in the background and can specify options for a particular GB computation.",
+    "body": "Replying to [comment:3 john_perry]:\n> I.set_singular_option(\"lazy\"); I.groebner_basis()\n\n\nThat stuff somewhat works already:\n\n```\nsage: singular.option('lazy')\nsage: singular.option()\n//options: lazy redefine loadLib usage prompt\n```\n\nThe point of this ticket is that the user can be ignorant of the fact that (s)he is running Singular in the background and can specify options for a particular GB computation.",
     "created_at": "2009-01-23T09:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -124,15 +125,14 @@ archive/issue_comments_008953.json:
 Replying to [comment:3 john_perry]:
 > I.set_singular_option("lazy"); I.groebner_basis()
 
-That stuff somewhat works already:
 
+That stuff somewhat works already:
 
 ```
 sage: singular.option('lazy')
 sage: singular.option()
 //options: lazy redefine loadLib usage prompt
 ```
-
 
 The point of this ticket is that the user can be ignorant of the fact that (s)he is running Singular in the background and can specify options for a particular GB computation.
 
@@ -269,7 +269,7 @@ Changing keywords from "" to "libSingular options".
 archive/issue_comments_008961.json:
 ```json
 {
-    "body": "This patch extends Martin's work on libSingular options. Now, the options `degBound` and `multBound` can be used. A decorator, applied to all relevant methods, ensures that standard options are used unless explicitly requested by setting named arguments -- even if outside the methods other options are set.\n\nThe options can be named in Python style (deg_bound) or in Singular style (`degBound`), at the user's choice.\n\nExamples:\n\n1. Degree bound\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: I = R*[x^3+y^2,x^2*y+1]\nsage: from sage.libs.singular.option import opt\n# Use prot and deg_bound\nsage: I.groebner_basis(prot=True, deg_bound=2)\nstd in (0),(x,y),(dp(2),C)\n[4294967295:2]3ss\n(S:1)-\nproduct criterion:0 chain criterion:0\n[x^3 + y^2, x^2*y + 1]\n\n# Set prot and degBound outside the method\nsage: opt['prot'] = True\n# Singular style name\nsage: opt['degBound'] = 2\n# ... but inside the method, standard options are used:\nsage: I.groebner_basis()\n[x^3 + y^2, x^2*y + 1, y^3 - x]\nsage: opt['prot']\nTrue\n# Python style name\nsage: opt['deg_bound']\n2\n\n# similarly in Singular, rather than libSingular\nsage: I.groebner_basis(algorithm='singular',deg_bound=2)\n[x^3 + y^2, x^2*y + 1]\nsage: singular.eval('degBound=2')\n'degBound=2;'\nsage: I.groebner_basis(algorithm='singular')\n[x^3 + y^2, x^2*y + 1, y^3 - x]\nsage: singular.eval('degBound')\n'2'\n```\n\n\n2. Multiplicity bound\n\n\n```\nsage: Rlocal.<x,y,z> = PolynomialRing(QQ, order='ds')\nsage: J = [x^7+y^7+z^6,x^6+y^8+z^7,x^7+y^5+z^8, x^2*y^3+y^2*z^3+x^3*z^2,x^3*y^2+y^3*z^2+x^2*z^3]*Rlocal\n# prot:\nsage: J.groebner_basis(prot=True)\nstd in basering\n[1048575:2]5(4)s(3)s6s7s8s(4)s(5)sH(13)9(3)sH(12)8(4)s(5).s.s9....sH(11)8.10\n(S:10)-----------\nproduct criterion:9 chain criterion:30\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\n# bounding the multiplicity\nsage: J.groebner_basis(prot=True,mult_bound=100)\nstd in basering\n[1048575:2]5(4)s(3)s6s7s8s(4)s(5)sH(13)\n(S:5)------\nproduct criterion:7 chain criterion:7\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\n\n# Set the multBound in Singular\nsage: singular.eval('multBound=100')\n'multBound=100;'\n# ... nevertheless, the default multBound=0 is used:\nsage: J.groebner_basis(algorithm='singular')\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\nsage: singular.eval('multBound')\n'100'\n# ... unless requested otherwise\nsage: J.groebner_basis(algorithm='singular',mult_bound=100)\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\n```\n\n\nI just verified that `sage -testall` passes. So, ready for review!\n\nOne remark: It turned out to be impossible to doctest `libSingular's` protocol output. I inserted examples with protocol in the documentation, for illustration, but don't test these. Of course, deg_bound and mult_bound is doctested.",
+    "body": "This patch extends Martin's work on libSingular options. Now, the options `degBound` and `multBound` can be used. A decorator, applied to all relevant methods, ensures that standard options are used unless explicitly requested by setting named arguments -- even if outside the methods other options are set.\n\nThe options can be named in Python style (deg_bound) or in Singular style (`degBound`), at the user's choice.\n\nExamples:\n\n1. Degree bound\n\n```\nsage: R.<x,y> = QQ[]\nsage: I = R*[x^3+y^2,x^2*y+1]\nsage: from sage.libs.singular.option import opt\n# Use prot and deg_bound\nsage: I.groebner_basis(prot=True, deg_bound=2)\nstd in (0),(x,y),(dp(2),C)\n[4294967295:2]3ss\n(S:1)-\nproduct criterion:0 chain criterion:0\n[x^3 + y^2, x^2*y + 1]\n\n# Set prot and degBound outside the method\nsage: opt['prot'] = True\n# Singular style name\nsage: opt['degBound'] = 2\n# ... but inside the method, standard options are used:\nsage: I.groebner_basis()\n[x^3 + y^2, x^2*y + 1, y^3 - x]\nsage: opt['prot']\nTrue\n# Python style name\nsage: opt['deg_bound']\n2\n\n# similarly in Singular, rather than libSingular\nsage: I.groebner_basis(algorithm='singular',deg_bound=2)\n[x^3 + y^2, x^2*y + 1]\nsage: singular.eval('degBound=2')\n'degBound=2;'\nsage: I.groebner_basis(algorithm='singular')\n[x^3 + y^2, x^2*y + 1, y^3 - x]\nsage: singular.eval('degBound')\n'2'\n```\n\n2. Multiplicity bound\n\n```\nsage: Rlocal.<x,y,z> = PolynomialRing(QQ, order='ds')\nsage: J = [x^7+y^7+z^6,x^6+y^8+z^7,x^7+y^5+z^8, x^2*y^3+y^2*z^3+x^3*z^2,x^3*y^2+y^3*z^2+x^2*z^3]*Rlocal\n# prot:\nsage: J.groebner_basis(prot=True)\nstd in basering\n[1048575:2]5(4)s(3)s6s7s8s(4)s(5)sH(13)9(3)sH(12)8(4)s(5).s.s9....sH(11)8.10\n(S:10)-----------\nproduct criterion:9 chain criterion:30\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\n# bounding the multiplicity\nsage: J.groebner_basis(prot=True,mult_bound=100)\nstd in basering\n[1048575:2]5(4)s(3)s6s7s8s(4)s(5)sH(13)\n(S:5)------\nproduct criterion:7 chain criterion:7\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\n\n# Set the multBound in Singular\nsage: singular.eval('multBound=100')\n'multBound=100;'\n# ... nevertheless, the default multBound=0 is used:\nsage: J.groebner_basis(algorithm='singular')\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\nsage: singular.eval('multBound')\n'100'\n# ... unless requested otherwise\nsage: J.groebner_basis(algorithm='singular',mult_bound=100)\n[x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\n```\n\nI just verified that `sage -testall` passes. So, ready for review!\n\nOne remark: It turned out to be impossible to doctest `libSingular's` protocol output. I inserted examples with protocol in the documentation, for illustration, but don't test these. Of course, deg_bound and mult_bound is doctested.",
     "created_at": "2010-07-15T20:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -285,7 +285,6 @@ The options can be named in Python style (deg_bound) or in Singular style (`degB
 Examples:
 
 1. Degree bound
-
 
 ```
 sage: R.<x,y> = QQ[]
@@ -323,9 +322,7 @@ sage: singular.eval('degBound')
 '2'
 ```
 
-
 2. Multiplicity bound
-
 
 ```
 sage: Rlocal.<x,y,z> = PolynomialRing(QQ, order='ds')
@@ -357,7 +354,6 @@ sage: singular.eval('multBound')
 sage: J.groebner_basis(algorithm='singular',mult_bound=100)
 [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]
 ```
-
 
 I just verified that `sage -testall` passes. So, ready for review!
 
@@ -426,7 +422,7 @@ The patch looks good, is well documented, applies cleanly, doctests pass. My ref
 archive/issue_comments_008965.json:
 ```json
 {
-    "body": "Applying [attachment:trac1396-singular_options.patch] to a long queue of other patches I've put together for 4.5.2.alpha0, I get\n\n```\n$ hg qpush\napplying trac1396-singular_options.patch\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #2 FAILED at 993\n1 out of 3 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac1396-singular_options.patch\n```\n\nEarlier tickets in the queue include #6922 and #9499.  Since `sage/libs/singular/singular-cdefs.pxi.rej` contains just\n\n```diff\n--- singular-cdefs.pxi\n+++ singular-cdefs.pxi\n@@ -995,8 +994,6 @@\n     poly *prCopyR_NoSort(poly *p, ring *r, ring *dest_r)\n     poly *prCopyR(poly *p, ring *r, ring *dest_r)\n \n-\n-\n     cdef int LANG_TOP\n \n cdef extern from \"stairc.h\":\n```\n\nI'll ignore the rejects, refresh the patch, and attach the refreshed patch here.  Please let me know if this is a problem.",
+    "body": "Applying [attachment:trac1396-singular_options.patch] to a long queue of other patches I've put together for 4.5.2.alpha0, I get\n\n```\n$ hg qpush\napplying trac1396-singular_options.patch\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #2 FAILED at 993\n1 out of 3 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac1396-singular_options.patch\n```\nEarlier tickets in the queue include #6922 and #9499.  Since `sage/libs/singular/singular-cdefs.pxi.rej` contains just\n\n```diff\n--- singular-cdefs.pxi\n+++ singular-cdefs.pxi\n@@ -995,8 +994,6 @@\n     poly *prCopyR_NoSort(poly *p, ring *r, ring *dest_r)\n     poly *prCopyR(poly *p, ring *r, ring *dest_r)\n \n-\n-\n     cdef int LANG_TOP\n \n cdef extern from \"stairc.h\":\n```\nI'll ignore the rejects, refresh the patch, and attach the refreshed patch here.  Please let me know if this is a problem.",
     "created_at": "2010-07-21T01:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -447,7 +443,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac1396-singular_options.patch
 ```
-
 Earlier tickets in the queue include #6922 and #9499.  Since `sage/libs/singular/singular-cdefs.pxi.rej` contains just
 
 ```diff
@@ -463,7 +458,6 @@ Earlier tickets in the queue include #6922 and #9499.  Since `sage/libs/singular
  
  cdef extern from "stairc.h":
 ```
-
 I'll ignore the rejects, refresh the patch, and attach the refreshed patch here.  Please let me know if this is a problem.
 
 
@@ -563,7 +557,7 @@ Perhaps I didn't rebase the patch properly?
 archive/issue_comments_008970.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> This ticket *might* be the source of an \"Unhandled SIGSEGV\" on t2.  Please see #9583, a blocker for Sage 4.5.2.\n\nBacking out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.\n\nWe don't have an \"unmerged in:\" field, but this patch is getting \"unmerged\" in 4.5.2.alpha1.",
+    "body": "Replying to [comment:11 mpatel]:\n> This ticket *might* be the source of an \"Unhandled SIGSEGV\" on t2.  Please see #9583, a blocker for Sage 4.5.2.\n\n\nBacking out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.\n\nWe don't have an \"unmerged in:\" field, but this patch is getting \"unmerged\" in 4.5.2.alpha1.",
     "created_at": "2010-07-26T07:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -574,6 +568,7 @@ archive/issue_comments_008970.json:
 
 Replying to [comment:11 mpatel]:
 > This ticket *might* be the source of an "Unhandled SIGSEGV" on t2.  Please see #9583, a blocker for Sage 4.5.2.
+
 
 Backing out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.
 
@@ -604,7 +599,7 @@ The new ticket is #9599.
 archive/issue_comments_008972.json:
 ```json
 {
-    "body": "Replying to [comment:13 ddrake]:\n> Replying to [comment:11 mpatel]:\n> > This ticket *might* be the source of an \"Unhandled SIGSEGV\" on t2.  Please see #9583, a blocker for Sage 4.5.2.\n> \n> Backing out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.\n> \n> We don't have an \"unmerged in:\" field, but this patch is getting \"unmerged\" in 4.5.2.alpha1.\n\nShould it not be set back to \"needs work\" then? That seems the most accurate description of the status - more accurate so than \"fixed\". \n\nDave",
+    "body": "Replying to [comment:13 ddrake]:\n> Replying to [comment:11 mpatel]:\n> > This ticket *might* be the source of an \"Unhandled SIGSEGV\" on t2.  Please see #9583, a blocker for Sage 4.5.2.\n\n> \n> Backing out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.\n> \n> We don't have an \"unmerged in:\" field, but this patch is getting \"unmerged\" in 4.5.2.alpha1.\n\n\nShould it not be set back to \"needs work\" then? That seems the most accurate description of the status - more accurate so than \"fixed\". \n\nDave",
     "created_at": "2010-08-02T16:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -616,10 +611,12 @@ archive/issue_comments_008972.json:
 Replying to [comment:13 ddrake]:
 > Replying to [comment:11 mpatel]:
 > > This ticket *might* be the source of an "Unhandled SIGSEGV" on t2.  Please see #9583, a blocker for Sage 4.5.2.
+
 > 
 > Backing out the patch does allow Sage to start on t2.math, so for 4.5.2, I'm going to yank this patch, and open another ticket; this patch can go back in, along with the necessary spkg, in the next release. Sorry.
 > 
 > We don't have an "unmerged in:" field, but this patch is getting "unmerged" in 4.5.2.alpha1.
+
 
 Should it not be set back to "needs work" then? That seems the most accurate description of the status - more accurate so than "fixed". 
 
@@ -632,7 +629,7 @@ Dave
 archive/issue_comments_008973.json:
 ```json
 {
-    "body": "> Should it not be set back to \"needs work\" then? That seems the most accurate description of the status - more accurate so than \"fixed\".\n\nI think we should just change focus to #9599, the new ticket for re-merging this patch.",
+    "body": "> Should it not be set back to \"needs work\" then? That seems the most accurate description of the status - more accurate so than \"fixed\".\n\n\nI think we should just change focus to #9599, the new ticket for re-merging this patch.",
     "created_at": "2010-08-03T23:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
@@ -642,6 +639,7 @@ archive/issue_comments_008973.json:
 ```
 
 > Should it not be set back to "needs work" then? That seems the most accurate description of the status - more accurate so than "fixed".
+
 
 I think we should just change focus to #9599, the new ticket for re-merging this patch.
 

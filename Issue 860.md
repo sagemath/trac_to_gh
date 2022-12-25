@@ -3,7 +3,7 @@
 archive/issues_000860.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
+    "body": "Assignee: @williamstein\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
     "created_at": "2007-10-12T06:05:46Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_000860.json:
 ```
 Assignee: @williamstein
 
-
 ```
 the rough edges that William mentioned.
 
@@ -30,7 +29,6 @@ http://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html
 
 Let me know if you need any help doing this. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/860
 

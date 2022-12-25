@@ -3,7 +3,7 @@
 archive/issues_009302.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\n\n```\nsage: E = EllipticCurve('5077a')\nsage: E.heegner_discriminants(100)\n[-3, -4, -7, -19, -40, -47, -55, -59, -71, -79, -84, -88]\nsage: P = E.heegner_point(-7)\nsage: P.numerical_approx(prec=100)\n(0 : 1.0000000000000000000000000000 : 0)\nsage: P.point_exact(prec=100)\n(0 : 2 : 1)\n```\n\n\nBut point_exact should be the point at infinity. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9302\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\nsage: E = EllipticCurve('5077a')\nsage: E.heegner_discriminants(100)\n[-3, -4, -7, -19, -40, -47, -55, -59, -71, -79, -84, -88]\nsage: P = E.heegner_point(-7)\nsage: P.numerical_approx(prec=100)\n(0 : 1.0000000000000000000000000000 : 0)\nsage: P.point_exact(prec=100)\n(0 : 2 : 1)\n```\n\nBut point_exact should be the point at infinity. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9302\n\n",
     "created_at": "2010-06-22T00:28:56Z",
     "labels": [
         "component: elliptic curves",
@@ -18,7 +18,6 @@ archive/issues_009302.json:
 ```
 Assignee: @JohnCremona
 
-
 ```
 sage: E = EllipticCurve('5077a')
 sage: E.heegner_discriminants(100)
@@ -29,7 +28,6 @@ sage: P.numerical_approx(prec=100)
 sage: P.point_exact(prec=100)
 (0 : 2 : 1)
 ```
-
 
 But point_exact should be the point at infinity. 
 

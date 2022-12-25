@@ -118,7 +118,7 @@ renderer uses the surface normals, and only in smooth=True mode.)
 archive/issue_comments_040151.json:
 ```json
 {
-    "body": "Also, here is another thing that could be changed/enhanced:\n\n> Carl Witty wrote:\n>> >>        hole - If hole is given, it must be a python callable.\n>> >>            Segments of the surface where hole(x,y,z) returns a number >0\n>> >>            will be omitted.  (Note that returning a Python boolean\n>> >>            is acceptable, since as a number, True == 1 and False == 0.)\n>> >>\n> >\n> > I'm curious why you chose to implement a \"hole\" parameter instead of MMA's\n> > (opposite) RegionFunction parameter (see the ContourPlot3D docs).\n\n1) I hadn't even looked at the ContourPlot3D docs until I was mostly\ndone with the implementation.\n\n2) I was probably influenced by the JVXL-format mention of NaN's\nmaking holes in the surfaces; so I was thinking about how to replicate\nthis effect, and punch holes.\n\nIf whoever works on the code next wants to invert the \"hole\" into\n\"regionfunction\", that would be fine with me.\n\nNote the somewhat unusual specification of \"hole\", checking for >0\ninstead of for True.  I did this to perhaps make it easier to use a\nfast_float function for the hole.  (I didn't do much thinking about\nit, though.)",
+    "body": "Also, here is another thing that could be changed/enhanced:\n\n> Carl Witty wrote:\n\n>> >>        hole - If hole is given, it must be a python callable.\n>> >>            Segments of the surface where hole(x,y,z) returns a number >0\n>> >>            will be omitted.  (Note that returning a Python boolean\n>> >>            is acceptable, since as a number, True == 1 and False == 0.)\n\n>> >>\n> >\n> > I'm curious why you chose to implement a \"hole\" parameter instead of MMA's\n> > (opposite) RegionFunction parameter (see the ContourPlot3D docs).\n\n\n1) I hadn't even looked at the ContourPlot3D docs until I was mostly\ndone with the implementation.\n\n2) I was probably influenced by the JVXL-format mention of NaN's\nmaking holes in the surfaces; so I was thinking about how to replicate\nthis effect, and punch holes.\n\nIf whoever works on the code next wants to invert the \"hole\" into\n\"regionfunction\", that would be fine with me.\n\nNote the somewhat unusual specification of \"hole\", checking for >0\ninstead of for True.  I did this to perhaps make it easier to use a\nfast_float function for the hole.  (I didn't do much thinking about\nit, though.)",
     "created_at": "2009-02-12T20:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -130,14 +130,17 @@ archive/issue_comments_040151.json:
 Also, here is another thing that could be changed/enhanced:
 
 > Carl Witty wrote:
+
 >> >>        hole - If hole is given, it must be a python callable.
 >> >>            Segments of the surface where hole(x,y,z) returns a number >0
 >> >>            will be omitted.  (Note that returning a Python boolean
 >> >>            is acceptable, since as a number, True == 1 and False == 0.)
+
 >> >>
 > >
 > > I'm curious why you chose to implement a "hole" parameter instead of MMA's
 > > (opposite) RegionFunction parameter (see the ContourPlot3D docs).
+
 
 1) I hadn't even looked at the ContourPlot3D docs until I was mostly
 done with the implementation.
@@ -179,7 +182,7 @@ I hope to be able to finish this soon (i.e., in the next couple of weeks at the 
 archive/issue_comments_040153.json:
 ```json
 {
-    "body": "> Carl, would it be fair to say the code is inspired by Jmol's code for \n> generating and displaying isosurfaces? \n\nDefinitely.  Plus, some of the non-code chunks (some nice ASCII art, and the triangle-generation table) are directly copied from the Jmol source.  (All such instances are nicely commented, and the file copyright explains the situation.)\n\nLet me get one more item into the permanent record here:\n\nThere is support that is mostly implemented, but doesn't quite work, for producing colored plots (where the color at each point comes from a separate function, producing either scalar or RGB values).  This is documented as working, but it doesn't.\n\nAs I mentioned above, one possibility would be to just remove the bits about color from the documentation.  But another would be to actually fix the color support.\n\nFor Jmol, I think this just involves feeding colors into the\nJVXLRunLenthEncoder in self.colors (using the same\nself.fraction_as_character() call as for the edge data), then changing\nsome text in the JVXL header and appending the text from self.colors\nafter the edge data.  (The JVXLRunLengthEncoder has never been tested;\nalternatively, you can just replace it with a StringIO, and that\nshould work -- the run length encoding is optional.)\n\nFor tachyon, at first I thought that it wouldn't be possible to get\nnice colors -- the documentation doesn't mention any triangle\nprimitive that lets you do smooth-shaded colors.  But I found the\nundocumented VCSTRI in the tachyon source, that looks like exactly\nwhat you would want.",
+    "body": "> Carl, would it be fair to say the code is inspired by Jmol's code for \n> generating and displaying isosurfaces? \n\n\nDefinitely.  Plus, some of the non-code chunks (some nice ASCII art, and the triangle-generation table) are directly copied from the Jmol source.  (All such instances are nicely commented, and the file copyright explains the situation.)\n\nLet me get one more item into the permanent record here:\n\nThere is support that is mostly implemented, but doesn't quite work, for producing colored plots (where the color at each point comes from a separate function, producing either scalar or RGB values).  This is documented as working, but it doesn't.\n\nAs I mentioned above, one possibility would be to just remove the bits about color from the documentation.  But another would be to actually fix the color support.\n\nFor Jmol, I think this just involves feeding colors into the\nJVXLRunLenthEncoder in self.colors (using the same\nself.fraction_as_character() call as for the edge data), then changing\nsome text in the JVXL header and appending the text from self.colors\nafter the edge data.  (The JVXLRunLengthEncoder has never been tested;\nalternatively, you can just replace it with a StringIO, and that\nshould work -- the run length encoding is optional.)\n\nFor tachyon, at first I thought that it wouldn't be possible to get\nnice colors -- the documentation doesn't mention any triangle\nprimitive that lets you do smooth-shaded colors.  But I found the\nundocumented VCSTRI in the tachyon source, that looks like exactly\nwhat you would want.",
     "created_at": "2009-02-12T22:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -190,6 +193,7 @@ archive/issue_comments_040153.json:
 
 > Carl, would it be fair to say the code is inspired by Jmol's code for 
 > generating and displaying isosurfaces? 
+
 
 Definitely.  Plus, some of the non-code chunks (some nice ASCII art, and the triangle-generation table) are directly copied from the Jmol source.  (All such instances are nicely commented, and the file copyright explains the situation.)
 
@@ -290,7 +294,7 @@ As for exactly what to do, we should probably support some sort of saving so tha
 archive/issue_comments_040157.json:
 ```json
 {
-    "body": "> supposed to return a Python pickled object, which usually has extension .obj. \n\nActually the extension is \".sobj\"",
+    "body": "> supposed to return a Python pickled object, which usually has extension .obj. \n\n\nActually the extension is \".sobj\"",
     "created_at": "2009-02-28T16:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -301,6 +305,7 @@ archive/issue_comments_040157.json:
 
 > supposed to return a Python pickled object, which usually has extension .obj. 
 
+
 Actually the extension is ".sobj"
 
 
@@ -310,7 +315,7 @@ Actually the extension is ".sobj"
 archive/issue_comments_040158.json:
 ```json
 {
-    "body": "I'm sure its the Wavefront OBJ format; look at this output, from ParametricSurface.obj():\n\n```\ng obj_1\nusemtl texture16\nv 1 1 0\nv 1 0.996757 0.0804666\nv 1 0.98705 0.160411\nv 1 0.970942 0.239316\nv 1 0.948536 0.316668\n...\n```\n",
+    "body": "I'm sure its the Wavefront OBJ format; look at this output, from ParametricSurface.obj():\n\n```\ng obj_1\nusemtl texture16\nv 1 1 0\nv 1 0.996757 0.0804666\nv 1 0.98705 0.160411\nv 1 0.970942 0.239316\nv 1 0.948536 0.316668\n...\n```",
     "created_at": "2009-02-28T20:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -331,7 +336,6 @@ v 1 0.970942 0.239316
 v 1 0.948536 0.316668
 ...
 ```
-
 
 
 
@@ -388,7 +392,7 @@ what is the status of work on this ticket? I might have some time next week to w
 archive/issue_comments_040161.json:
 ```json
 {
-    "body": "Attachment [many-more-examples.tar](tarball://root/attachments/some-uuid/ticket5249/many-more-examples.tar) by wcauchois created at 2009-03-13 23:11:53\n\nI updated trac5249.patch. Apply it on top of implicit-surfaces.patch.\n\nI added 28 examples to the docstring for implicit_plot3d. I also attached many-more-examples.tar, which contains a simple script I used to format the examples. It can output the examples in a Sage notebook format, so if you want to see the examples, you should check it out.\n\nJason: Here's the status. I've done much of the work that Carl described in his original email. Currently, the major thing left to do is fixing bugs.\n\nAside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:\n\n\n```\nvar('x,y,z')\nimplicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')\n```\n\n\nGood luck, I hope you can make some headway!",
+    "body": "Attachment [many-more-examples.tar](tarball://root/attachments/some-uuid/ticket5249/many-more-examples.tar) by wcauchois created at 2009-03-13 23:11:53\n\nI updated trac5249.patch. Apply it on top of implicit-surfaces.patch.\n\nI added 28 examples to the docstring for implicit_plot3d. I also attached many-more-examples.tar, which contains a simple script I used to format the examples. It can output the examples in a Sage notebook format, so if you want to see the examples, you should check it out.\n\nJason: Here's the status. I've done much of the work that Carl described in his original email. Currently, the major thing left to do is fixing bugs.\n\nAside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:\n\n```\nvar('x,y,z')\nimplicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')\n```\n\nGood luck, I hope you can make some headway!",
     "created_at": "2009-03-13T23:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -407,12 +411,10 @@ Jason: Here's the status. I've done much of the work that Carl described in his 
 
 Aside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:
 
-
 ```
 var('x,y,z')
 implicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')
 ```
-
 
 Good luck, I hope you can make some headway!
 
@@ -423,7 +425,7 @@ Good luck, I hope you can make some headway!
 archive/issue_comments_040162.json:
 ```json
 {
-    "body": "I applied the above patches against Sage 3.4 in the following order:\n1. implicit-surface.patch\n2. trac5249-minorfixes.patch\n3. trac5249.patch\nBut 2 hunks failed:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/implicit-surface.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/implicit-surface.patch\"\napplying /home/mvngu/patch/5249/implicit-surface.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac\")\n/home/mvngu/patch/5249/trac5249-minorfixes.patch\n/home/mvngu/patch/5249/trac5249.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249-minorfixes.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249-minorfixes.patch\"\napplying /home/mvngu/patch/5249/trac5249-minorfixes.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249.patch\"\napplying /home/mvngu/patch/5249/trac5249.patch\npatching file module_list.py\nHunk #1 FAILED at 772\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #1 succeeded at 1150 with fuzz 2 (offset 5 lines).\nHunk #2 FAILED at 1227\nHunk #3 FAILED at 1248\n2 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/implicit_surface.pyx.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #14 succeeded at 1323 with fuzz 1 (offset 0 lines).\nabort: patch failed to apply\n```\n",
+    "body": "I applied the above patches against Sage 3.4 in the following order:\n1. implicit-surface.patch\n2. trac5249-minorfixes.patch\n3. trac5249.patch\nBut 2 hunks failed:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/implicit-surface.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/implicit-surface.patch\"\napplying /home/mvngu/patch/5249/implicit-surface.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac\")\n/home/mvngu/patch/5249/trac5249-minorfixes.patch\n/home/mvngu/patch/5249/trac5249.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249-minorfixes.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249-minorfixes.patch\"\napplying /home/mvngu/patch/5249/trac5249-minorfixes.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249.patch\"\napplying /home/mvngu/patch/5249/trac5249.patch\npatching file module_list.py\nHunk #1 FAILED at 772\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #1 succeeded at 1150 with fuzz 2 (offset 5 lines).\nHunk #2 FAILED at 1227\nHunk #3 FAILED at 1248\n2 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/implicit_surface.pyx.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #14 succeeded at 1323 with fuzz 1 (offset 0 lines).\nabort: patch failed to apply\n```",
     "created_at": "2009-03-23T07:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -472,13 +474,12 @@ abort: patch failed to apply
 
 
 
-
 ---
 
 archive/issue_comments_040163.json:
 ```json
 {
-    "body": "Replying to [comment:14 mvngu]:\n> I applied the above patches against Sage 3.4 in the following order:\n>  1. implicit-surface.patch\n>  1. trac5249-minorfixes.patch\n>  1. trac5249.patch\n\nI incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, so the two were never meant to be applied together. William has deleted trac5249-minorfixes.patch from the ticket, so it should now be clear that in order to import implicit plot functionality, you should apply the patches in this order:\n1. implicit-surface.patch\n2. trac5249.patch",
+    "body": "Replying to [comment:14 mvngu]:\n> I applied the above patches against Sage 3.4 in the following order:\n> 1. implicit-surface.patch\n> 2. trac5249-minorfixes.patch\n> 3. trac5249.patch\n\n\nI incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, so the two were never meant to be applied together. William has deleted trac5249-minorfixes.patch from the ticket, so it should now be clear that in order to import implicit plot functionality, you should apply the patches in this order:\n1. implicit-surface.patch\n2. trac5249.patch",
     "created_at": "2009-04-02T23:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -489,9 +490,10 @@ archive/issue_comments_040163.json:
 
 Replying to [comment:14 mvngu]:
 > I applied the above patches against Sage 3.4 in the following order:
->  1. implicit-surface.patch
->  1. trac5249-minorfixes.patch
->  1. trac5249.patch
+> 1. implicit-surface.patch
+> 2. trac5249-minorfixes.patch
+> 3. trac5249.patch
+
 
 I incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, so the two were never meant to be applied together. William has deleted trac5249-minorfixes.patch from the ticket, so it should now be clear that in order to import implicit plot functionality, you should apply the patches in this order:
 1. implicit-surface.patch
@@ -504,7 +506,7 @@ I incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, s
 archive/issue_comments_040164.json:
 ```json
 {
-    "body": "Has anyone else noticed that some of the plots, when rendered using the Jmol backend, look very bumpy? The Tachyon renderings of the same plots, however, are fine. William thought the surface normals might be incorrect, but actually, if you zoom in on the model, you can perceive jagged edges in some cases. Is this a bug or a feature? Does anyone know what the problem might be?\n\nTo see what I mean, try this code:\n\n```\nvar('x,y,z')\nP = implicit_plot3d((x^2 + y^2 - 1) * ( x^2 + z^2 - 1) - 1, (x, -3, 3), (y, -3, 3), (z, -3, 3))\nP.show(viewer='jmol')\n# P.show(viewer='tachyon') # uncomment this\n```\n",
+    "body": "Has anyone else noticed that some of the plots, when rendered using the Jmol backend, look very bumpy? The Tachyon renderings of the same plots, however, are fine. William thought the surface normals might be incorrect, but actually, if you zoom in on the model, you can perceive jagged edges in some cases. Is this a bug or a feature? Does anyone know what the problem might be?\n\nTo see what I mean, try this code:\n\n```\nvar('x,y,z')\nP = implicit_plot3d((x^2 + y^2 - 1) * ( x^2 + z^2 - 1) - 1, (x, -3, 3), (y, -3, 3), (z, -3, 3))\nP.show(viewer='jmol')\n# P.show(viewer='tachyon') # uncomment this\n```",
     "created_at": "2009-04-02T23:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -523,7 +525,6 @@ P = implicit_plot3d((x^2 + y^2 - 1) * ( x^2 + z^2 - 1) - 1, (x, -3, 3), (y, -3, 
 P.show(viewer='jmol')
 # P.show(viewer='tachyon') # uncomment this
 ```
-
 
 
 
@@ -552,7 +553,7 @@ Yes.  I saw this problem when drawing spheres, and made a random change to "fix"
 archive/issue_comments_040166.json:
 ```json
 {
-    "body": "Replying to [comment:17 cwitty]:\n> Yes.  I saw this problem when drawing spheres, and made a random change to \"fix\" it.  Search for \"Make mysterious correction for Z edges\" in the code.  This may be a different problem with a similar symptom; or it may be the same problem, and my previous change was horribly wrong.  (But it did appear to fix the problem in the spheres I was drawing.)\n\nInteresting. I took a look at some plots sans your correction, and it looks like it might be the same species of bug -- the plots have a kind of ripple distortion, radiating outward from a pole. Your change was not wrong, however, or at least its removal did not affect any other bugs.\n\nIs there anyone more knowledgeable about marching cubes and JVXL who is willing to work on this bug? I will do what I can. I'd like to see implicit_plot3d in Sage in the near future!",
+    "body": "Replying to [comment:17 cwitty]:\n> Yes.  I saw this problem when drawing spheres, and made a random change to \"fix\" it.  Search for \"Make mysterious correction for Z edges\" in the code.  This may be a different problem with a similar symptom; or it may be the same problem, and my previous change was horribly wrong.  (But it did appear to fix the problem in the spheres I was drawing.)\n\n\nInteresting. I took a look at some plots sans your correction, and it looks like it might be the same species of bug -- the plots have a kind of ripple distortion, radiating outward from a pole. Your change was not wrong, however, or at least its removal did not affect any other bugs.\n\nIs there anyone more knowledgeable about marching cubes and JVXL who is willing to work on this bug? I will do what I can. I'd like to see implicit_plot3d in Sage in the near future!",
     "created_at": "2009-04-07T04:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -563,6 +564,7 @@ archive/issue_comments_040166.json:
 
 Replying to [comment:17 cwitty]:
 > Yes.  I saw this problem when drawing spheres, and made a random change to "fix" it.  Search for "Make mysterious correction for Z edges" in the code.  This may be a different problem with a similar symptom; or it may be the same problem, and my previous change was horribly wrong.  (But it did appear to fix the problem in the spheres I was drawing.)
+
 
 Interesting. I took a look at some plots sans your correction, and it looks like it might be the same species of bug -- the plots have a kind of ripple distortion, radiating outward from a pole. Your change was not wrong, however, or at least its removal did not affect any other bugs.
 
@@ -655,7 +657,7 @@ cwitty: I'll be sorry if I have to abandon MarchingCubesJVXL, but I think there 
 archive/issue_comments_040171.json:
 ```json
 {
-    "body": "Here's a status update:\n\nI posted to the jmol-users mailing list and Robert Hanson, who wrote most of the isosurface code in Jmol, helped me find the problem with our JVXL files. Apparently the JVXL specification is wrong. Where the spec says\n\n```\nfor (int x = voxelCountX; --x >= 0;) {\n for (int y = voxelCountY; --y >= 0;) {\n   for (int z = voxelCountZ; --z >= 0;) {\n```\n\nto demonstrate the order for visiting voxels (on page 7), it should be\n\n```\nfor (int x = 0; x < voxelCountX; x++) {\n for (int y = 0; y < voxelCountY; y++) {\n   for (int z = 0; z < voxelCountZ; z++) {\n```\n\n-- that is to say, the order is reversed. A quick fix for this is to reverse the order of the edge data stored in self.bitmap in MarchingCubesJVXL. I tried it and it worked.\n\nAnyhow, I also wrote a backend based on IndexFaceSet, and that works fine, and I've attached the patch. I think the IndexFaceSet backend should be the default for both Jmol and Tachyon, since it offers a number of features -- including mesh=True, transparency, and methods to manipulate the mesh programmatically. As long as MarchingCubesJVXL is working, shall we keep support for JVXL as a feature?\n\nThere is one outstanding issue with the IndexFaceSet backend, which is that the scale for the Jmol plots is incorrect. If you try to graph something, you can see that the figure will be larger than its bounding box by a factor of about 3. I believe the bounding box is correct, so the problem must be with the transformation matrix we are given through render_params or the way we apply that transformation. On line 317 of plot3d/base.pyx, in _prepare_for_jmol, I noticed that it applies some scaling factor \"s\" (=3). Do we have to account for that somehow? Does anyone have any insight into this issue?\n\nSo basically the major things left to do are to fix that bug, and add doctests for everything. I will continue to work on this.",
+    "body": "Here's a status update:\n\nI posted to the jmol-users mailing list and Robert Hanson, who wrote most of the isosurface code in Jmol, helped me find the problem with our JVXL files. Apparently the JVXL specification is wrong. Where the spec says\n\n```\nfor (int x = voxelCountX; --x >= 0;) {\n for (int y = voxelCountY; --y >= 0;) {\n   for (int z = voxelCountZ; --z >= 0;) {\n```\nto demonstrate the order for visiting voxels (on page 7), it should be\n\n```\nfor (int x = 0; x < voxelCountX; x++) {\n for (int y = 0; y < voxelCountY; y++) {\n   for (int z = 0; z < voxelCountZ; z++) {\n```\n-- that is to say, the order is reversed. A quick fix for this is to reverse the order of the edge data stored in self.bitmap in MarchingCubesJVXL. I tried it and it worked.\n\nAnyhow, I also wrote a backend based on IndexFaceSet, and that works fine, and I've attached the patch. I think the IndexFaceSet backend should be the default for both Jmol and Tachyon, since it offers a number of features -- including mesh=True, transparency, and methods to manipulate the mesh programmatically. As long as MarchingCubesJVXL is working, shall we keep support for JVXL as a feature?\n\nThere is one outstanding issue with the IndexFaceSet backend, which is that the scale for the Jmol plots is incorrect. If you try to graph something, you can see that the figure will be larger than its bounding box by a factor of about 3. I believe the bounding box is correct, so the problem must be with the transformation matrix we are given through render_params or the way we apply that transformation. On line 317 of plot3d/base.pyx, in _prepare_for_jmol, I noticed that it applies some scaling factor \"s\" (=3). Do we have to account for that somehow? Does anyone have any insight into this issue?\n\nSo basically the major things left to do are to fix that bug, and add doctests for everything. I will continue to work on this.",
     "created_at": "2009-04-24T03:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -673,7 +675,6 @@ for (int x = voxelCountX; --x >= 0;) {
  for (int y = voxelCountY; --y >= 0;) {
    for (int z = voxelCountZ; --z >= 0;) {
 ```
-
 to demonstrate the order for visiting voxels (on page 7), it should be
 
 ```
@@ -681,7 +682,6 @@ for (int x = 0; x < voxelCountX; x++) {
  for (int y = 0; y < voxelCountY; y++) {
    for (int z = 0; z < voxelCountZ; z++) {
 ```
-
 -- that is to say, the order is reversed. A quick fix for this is to reverse the order of the edge data stored in self.bitmap in MarchingCubesJVXL. I tried it and it worked.
 
 Anyhow, I also wrote a backend based on IndexFaceSet, and that works fine, and I've attached the patch. I think the IndexFaceSet backend should be the default for both Jmol and Tachyon, since it offers a number of features -- including mesh=True, transparency, and methods to manipulate the mesh programmatically. As long as MarchingCubesJVXL is working, shall we keep support for JVXL as a feature?
@@ -1046,7 +1046,7 @@ I don't think I wrote any actual code on this patch (unless someone remembers so
 archive/issue_comments_040188.json:
 ```json
 {
-    "body": "Replying to [comment:38 jason]:\n> I don't think I wrote any actual code on this patch (unless someone remembers something that I didn't).  Carl Witty single-handedly wrote the initial patch (which I posted), and then Bill took it from there.  I think it would be fair to put me in as a reviewer, though.  Good job, guys!\n\nOk, credits fixed accordingly.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:38 jason]:\n> I don't think I wrote any actual code on this patch (unless someone remembers something that I didn't).  Carl Witty single-handedly wrote the initial patch (which I posted), and then Bill took it from there.  I think it would be fair to put me in as a reviewer, though.  Good job, guys!\n\n\nOk, credits fixed accordingly.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-14T05:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
@@ -1057,6 +1057,7 @@ archive/issue_comments_040188.json:
 
 Replying to [comment:38 jason]:
 > I don't think I wrote any actual code on this patch (unless someone remembers something that I didn't).  Carl Witty single-handedly wrote the initial patch (which I posted), and then Bill took it from there.  I think it would be fair to put me in as a reviewer, though.  Good job, guys!
+
 
 Ok, credits fixed accordingly.
 

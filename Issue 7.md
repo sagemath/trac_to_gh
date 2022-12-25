@@ -3,7 +3,7 @@
 archive/issues_000007.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<u> = LaurentSeriesRing(pAdicField(5, 10))\nsage: S.<t> = LaurentSeriesRing(RationalField())\nsage: R(t + t^2 + O(t^3))\n u^1 + t + O(t^2) + u^2 + t + O(t^2) + O(u^3 + t + O(t^2))\n```\n\n\n???!!!!???\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<u> = LaurentSeriesRing(pAdicField(5, 10))\nsage: S.<t> = LaurentSeriesRing(RationalField())\nsage: R(t + t^2 + O(t^3))\n u^1 + t + O(t^2) + u^2 + t + O(t^2) + O(u^3 + t + O(t^2))\n```\n\n???!!!!???\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7\n\n",
     "created_at": "2006-09-12T02:35:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,14 +17,12 @@ archive/issues_000007.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<u> = LaurentSeriesRing(pAdicField(5, 10))
 sage: S.<t> = LaurentSeriesRing(RationalField())
 sage: R(t + t^2 + O(t^3))
  u^1 + t + O(t^2) + u^2 + t + O(t^2) + O(u^3 + t + O(t^2))
 ```
-
 
 ???!!!!???
 

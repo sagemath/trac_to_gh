@@ -3,7 +3,7 @@
 archive/issues_006409.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro\n\n\n```\nsage: srange(1,0,include_endpoint=True)\n[]\nsage: srange(1,QQ(0),include_endpoint=True)\n[0]\n```\n\n\nThese two should agree on something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6409\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro\n\n```\nsage: srange(1,0,include_endpoint=True)\n[]\nsage: srange(1,QQ(0),include_endpoint=True)\n[0]\n```\n\nThese two should agree on something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6409\n\n",
     "created_at": "2009-06-25T16:12:42Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,14 +20,12 @@ Assignee: somebody
 
 CC:  @robertwb @craigcitro
 
-
 ```
 sage: srange(1,0,include_endpoint=True)
 []
 sage: srange(1,QQ(0),include_endpoint=True)
 [0]
 ```
-
 
 These two should agree on something.
 

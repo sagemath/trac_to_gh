@@ -3,7 +3,7 @@
 archive/issues_008223.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @novoselt\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
+    "body": "Assignee: tbd\n\nCC:  @novoselt\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
     "created_at": "2010-02-09T20:34:02Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ archive/issues_008223.json:
 Assignee: tbd
 
 CC:  @novoselt
-
 
 ```
 
@@ -73,7 +72,7 @@ The attached patch should fix the issue. That being said, I would love to see a 
 archive/issue_comments_072493.json:
 ```json
 {
-    "body": "on #sage-devel\n\n```\n00:39 < logix> fwiw, for me the patch in #8223 makes k.[TAB] work again (where e.g. k.<a>=GF(8) )\n```\n",
+    "body": "on #sage-devel\n\n```\n00:39 < logix> fwiw, for me the patch in #8223 makes k.[TAB] work again (where e.g. k.<a>=GF(8) )\n```",
     "created_at": "2010-02-10T08:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
@@ -87,7 +86,6 @@ on #sage-devel
 ```
 00:39 < logix> fwiw, for me the patch in #8223 makes k.[TAB] work again (where e.g. k.<a>=GF(8) )
 ```
-
 
 
 

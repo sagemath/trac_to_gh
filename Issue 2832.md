@@ -3,7 +3,7 @@
 archive/issues_002832.json:
 ```json
 {
-    "body": "Assignee: tba\n\nI just got this email from Geert Heldager Nielsen\n\n```\nIn Sage Tutorial Chapter 5.2 ( Creating compiled code ) the result of\nfactorial(50) is off with a factor 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2832\n\n",
+    "body": "Assignee: tba\n\nI just got this email from Geert Heldager Nielsen\n\n```\nIn Sage Tutorial Chapter 5.2 ( Creating compiled code ) the result of\nfactorial(50) is off with a factor 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2832\n\n",
     "created_at": "2008-04-06T22:08:43Z",
     "labels": [
         "component: documentation",
@@ -24,7 +24,6 @@ I just got this email from Geert Heldager Nielsen
 In Sage Tutorial Chapter 5.2 ( Creating compiled code ) the result of
 factorial(50) is off with a factor 2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2832
 

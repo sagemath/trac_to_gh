@@ -3,7 +3,7 @@
 archive/issues_000395.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: lists, flatten\n\nThe attached file has a candidate function for a flatten command. The default types to flatten are lists and tuples, but more can be added.\n\n\n```\ndef flatten(in_list, ltypes=(list, tuple)):\n    \"\"\"\n    Flattens a nested list.\n\n    INPUT:\n        in_list -- a list or tuple\n        ltypes -- optional list of particular types to flatten\n\n    OUTPUT:\n        a flat list of the entries of in_list\n\n    EXAMPLES:\n        sage: flatten([[1,1],[1],2])\n        [1, 1, 1, 2]\n        sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)))\n        ['Hi', 2, (1, 2, 3), 4, 5, 6]\n        sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)),ltypes=(list, tuple, sage.modules.vector_rational_dense.Vector_rational_dense))\n        ['Hi', 2, 1, 2, 3, 4, 5, 6]\n    \"\"\"\n    index = 0\n    new_list = [x for x in in_list]\n    while index < len(new_list):\n        if not new_list[index]:\n            new_list.pop(index)\n            continue\n        while isinstance(new_list[index], ltypes):\n            new_list[index : index + 1] = list(new_list[index])\n        index += 1\n    return new_list\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/395\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: lists, flatten\n\nThe attached file has a candidate function for a flatten command. The default types to flatten are lists and tuples, but more can be added.\n\n```\ndef flatten(in_list, ltypes=(list, tuple)):\n    \"\"\"\n    Flattens a nested list.\n\n    INPUT:\n        in_list -- a list or tuple\n        ltypes -- optional list of particular types to flatten\n\n    OUTPUT:\n        a flat list of the entries of in_list\n\n    EXAMPLES:\n        sage: flatten([[1,1],[1],2])\n        [1, 1, 1, 2]\n        sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)))\n        ['Hi', 2, (1, 2, 3), 4, 5, 6]\n        sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)),ltypes=(list, tuple, sage.modules.vector_rational_dense.Vector_rational_dense))\n        ['Hi', 2, 1, 2, 3, 4, 5, 6]\n    \"\"\"\n    index = 0\n    new_list = [x for x in in_list]\n    while index < len(new_list):\n        if not new_list[index]:\n            new_list.pop(index)\n            continue\n        while isinstance(new_list[index], ltypes):\n            new_list[index : index + 1] = list(new_list[index])\n        index += 1\n    return new_list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/395\n\n",
     "created_at": "2007-06-28T16:06:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: mhampton
 Keywords: lists, flatten
 
 The attached file has a candidate function for a flatten command. The default types to flatten are lists and tuples, but more can be added.
-
 
 ```
 def flatten(in_list, ltypes=(list, tuple)):
@@ -54,7 +53,6 @@ def flatten(in_list, ltypes=(list, tuple)):
         index += 1
     return new_list
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/395
@@ -154,7 +152,7 @@ sage.rings.finite_field.FiniteField_prime_modn))
 archive/issue_comments_001926.json:
 ```json
 {
-    "body": "Sage 2.8.2 has a flatten command. It also seems to work on nested lists:\n\n```\nsage: L\n[[1, 2], [1, 2]]\nsage: flatten(L)\n[1, 2, 1, 2]\nsage: L=[L,[L,[L,[L]]]]\nsage: L\n[[[1, 2], [1, 2]], [[[1, 2], [1, 2]], [[[1, 2], [1, 2]], [[[1, 2], [1, 2]]]]]]\nsage: flatten(L)\n[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]\n```\n\nSo am I correct to assume that this ticket can be closed? \n\nCheers,\n\nMichael",
+    "body": "Sage 2.8.2 has a flatten command. It also seems to work on nested lists:\n\n```\nsage: L\n[[1, 2], [1, 2]]\nsage: flatten(L)\n[1, 2, 1, 2]\nsage: L=[L,[L,[L,[L]]]]\nsage: L\n[[[1, 2], [1, 2]], [[[1, 2], [1, 2]], [[[1, 2], [1, 2]], [[[1, 2], [1, 2]]]]]]\nsage: flatten(L)\n[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]\n```\nSo am I correct to assume that this ticket can be closed? \n\nCheers,\n\nMichael",
     "created_at": "2007-08-23T12:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
     "type": "issue_comment",
@@ -176,7 +174,6 @@ sage: L
 sage: flatten(L)
 [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
 ```
-
 So am I correct to assume that this ticket can be closed? 
 
 Cheers,
@@ -446,7 +443,7 @@ Changing status from new to assigned.
 archive/issue_comments_001936.json:
 ```json
 {
-    "body": "Here is a new version that I believe fixes the problem.\n\n\n```\ndef flatten(in_list, ltypes=(list, tuple)):\n   \"\"\"\n   Flattens a nested list.\n\n   INPUT:\n       in_list -- a list or tuple\n       ltypes -- optional list of particular types to flatten\n\n   OUTPUT:\n       a flat list of the entries of in_list\n\n   EXAMPLES:\n       sage: flatten([[1,1],[1],2])\n       [1, 1, 1, 2]\n       sage: flatten([[1,2,3], (4,5), [[[1],[2]]]])\n       [1, 2, 3, 4, 5, 1, 2]\n\n   In the following example, the vector isn't flattened because\n   it is not given in the ltypes input. \n       sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)))\n       ['Hi', 2, (1, 2, 3), 4, 5, 6]\n\n   We give the vector type and then even the vector gets flattened:\n       sage: flatten((['Hi',2,vector(QQ,[1,2,3])], (4,5,6)), ltypes=(list, tuple,sage.modules.vector_rational_dense.Vector_rational_dense))\n       ['Hi', 2, 1, 2, 3, 4, 5, 6]\n\n   We flatten a finite field. \n       sage: flatten(GF(5))\n       [0, 1, 2, 3, 4]\n       sage: flatten([GF(5)])\n       [Finite Field of size 5]\n       sage: flatten([GF(5)], ltypes = (list, tuple, sage.rings.finite_field.FiniteField_prime_modn))\n       [0, 1, 2, 3, 4]\n\n   Degenerate cases:\n      sage: flatten([[],[]])\n      []\n      sage: flatten([[[]]])\n      []\n   \"\"\"\n   index = 0\n   new_list = [x for x in in_list]\n   while index < len(new_list):\n      while isinstance(new_list[index], ltypes):\n         v = list(new_list[index])\n         if len(v) != 0:\n            new_list[index : index + 1] = v\n         else:\n            new_list.pop(index)\n            index += -1\n            break\n      index += 1\n   return new_list\n\n```\n",
+    "body": "Here is a new version that I believe fixes the problem.\n\n```\ndef flatten(in_list, ltypes=(list, tuple)):\n   \"\"\"\n   Flattens a nested list.\n\n   INPUT:\n       in_list -- a list or tuple\n       ltypes -- optional list of particular types to flatten\n\n   OUTPUT:\n       a flat list of the entries of in_list\n\n   EXAMPLES:\n       sage: flatten([[1,1],[1],2])\n       [1, 1, 1, 2]\n       sage: flatten([[1,2,3], (4,5), [[[1],[2]]]])\n       [1, 2, 3, 4, 5, 1, 2]\n\n   In the following example, the vector isn't flattened because\n   it is not given in the ltypes input. \n       sage: flatten((['Hi',2,vector(QQ,[1,2,3])],(4,5,6)))\n       ['Hi', 2, (1, 2, 3), 4, 5, 6]\n\n   We give the vector type and then even the vector gets flattened:\n       sage: flatten((['Hi',2,vector(QQ,[1,2,3])], (4,5,6)), ltypes=(list, tuple,sage.modules.vector_rational_dense.Vector_rational_dense))\n       ['Hi', 2, 1, 2, 3, 4, 5, 6]\n\n   We flatten a finite field. \n       sage: flatten(GF(5))\n       [0, 1, 2, 3, 4]\n       sage: flatten([GF(5)])\n       [Finite Field of size 5]\n       sage: flatten([GF(5)], ltypes = (list, tuple, sage.rings.finite_field.FiniteField_prime_modn))\n       [0, 1, 2, 3, 4]\n\n   Degenerate cases:\n      sage: flatten([[],[]])\n      []\n      sage: flatten([[[]]])\n      []\n   \"\"\"\n   index = 0\n   new_list = [x for x in in_list]\n   while index < len(new_list):\n      while isinstance(new_list[index], ltypes):\n         v = list(new_list[index])\n         if len(v) != 0:\n            new_list[index : index + 1] = v\n         else:\n            new_list.pop(index)\n            index += -1\n            break\n      index += 1\n   return new_list\n\n```",
     "created_at": "2007-09-11T20:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
     "type": "issue_comment",
@@ -456,7 +453,6 @@ archive/issue_comments_001936.json:
 ```
 
 Here is a new version that I believe fixes the problem.
-
 
 ```
 def flatten(in_list, ltypes=(list, tuple)):
@@ -514,7 +510,6 @@ def flatten(in_list, ltypes=(list, tuple)):
    return new_list
 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005501.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  cwitty\n\nThe following explodes in sage 3.4:\n\n\n```\nsage: R = RealIntervalField(4000)\nsage: s = 1/R(3)\nsage: t = loads(dumps(s))Traceback (most recent call last):\n  File \"pikltest.py\", line 6, in <module>\n    t = loads(dumps(s))\n  File \"sage_object.pyx\", line 623, in \nsage.structure.sage_object.loads (sage/structure/sage_object.c:6159)\nRuntimeError: ('Unable to convert number to real interval.',\n <built-in function __create__RealIntervalFieldElement_version0>, \n(Real Interval Field with 4000 bits of precision, \n'[a.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalal0@-1 .. \na.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalg@-1]', 32))\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nFurthermore, it dumps the contents of dumps(s) to the console, which I'm told is a no-no because when one uses ~20kbits of precision with 24 processes via `@`parallel, the error messages are ridiculously huge.\n\nOn a personal note, I'd prefer if my CAS didn't stick its fingers in its ears and chant \"lalalala...\" whenever it doesn't like what I'm doing.  This is *not* how a mature system should behave.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5501\n\n",
+    "body": "Assignee: jkantor\n\nCC:  cwitty\n\nThe following explodes in sage 3.4:\n\n```\nsage: R = RealIntervalField(4000)\nsage: s = 1/R(3)\nsage: t = loads(dumps(s))Traceback (most recent call last):\n  File \"pikltest.py\", line 6, in <module>\n    t = loads(dumps(s))\n  File \"sage_object.pyx\", line 623, in \nsage.structure.sage_object.loads (sage/structure/sage_object.c:6159)\nRuntimeError: ('Unable to convert number to real interval.',\n <built-in function __create__RealIntervalFieldElement_version0>, \n(Real Interval Field with 4000 bits of precision, \n'[a.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalal0@-1 .. \na.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalg@-1]', 32))\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\nFurthermore, it dumps the contents of dumps(s) to the console, which I'm told is a no-no because when one uses ~20kbits of precision with 24 processes via `@`parallel, the error messages are ridiculously huge.\n\nOn a personal note, I'd prefer if my CAS didn't stick its fingers in its ears and chant \"lalalala...\" whenever it doesn't like what I'm doing.  This is *not* how a mature system should behave.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5501\n\n",
     "created_at": "2009-03-12T15:35:45Z",
     "labels": [
         "component: numerical",
@@ -22,7 +22,6 @@ Assignee: jkantor
 CC:  cwitty
 
 The following explodes in sage 3.4:
-
 
 ```
 sage: R = RealIntervalField(4000)
@@ -64,7 +63,6 @@ invalid load key, 'x'.
 Unable to load pickled data.
 ```
 
-
 Furthermore, it dumps the contents of dumps(s) to the console, which I'm told is a no-no because when one uses ~20kbits of precision with 24 processes via `@`parallel, the error messages are ridiculously huge.
 
 On a personal note, I'd prefer if my CAS didn't stick its fingers in its ears and chant "lalalala..." whenever it doesn't like what I'm doing.  This is *not* how a mature system should behave.
@@ -80,7 +78,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5501
 archive/issue_comments_042646.json:
 ```json
 {
-    "body": "This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MPFI library):\n\n```\n  char tmp[1000];\n\n  /* bzero(tmp,1000); */\n  memset(tmp,0,1000);\n\n  slen= (int)strlen(s);\n  if(slen >=1000) return -1;\n```\n\n\nAs a workaround, instead of passing the `RealIntervalFieldElement` x, you could pass (x.parent(), x.lower(), x.upper()); then on the other side, given (parent, lower, upper), reconstruct the original element with parent(lower,upper).",
+    "body": "This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MPFI library):\n\n```\n  char tmp[1000];\n\n  /* bzero(tmp,1000); */\n  memset(tmp,0,1000);\n\n  slen= (int)strlen(s);\n  if(slen >=1000) return -1;\n```\n\nAs a workaround, instead of passing the `RealIntervalFieldElement` x, you could pass (x.parent(), x.lower(), x.upper()); then on the other side, given (parent, lower, upper), reconstruct the original element with parent(lower,upper).",
     "created_at": "2009-03-13T01:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MP
   slen= (int)strlen(s);
   if(slen >=1000) return -1;
 ```
-
 
 As a workaround, instead of passing the `RealIntervalFieldElement` x, you could pass (x.parent(), x.lower(), x.upper()); then on the other side, given (parent, lower, upper), reconstruct the original element with parent(lower,upper).
 

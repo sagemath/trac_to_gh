@@ -3,7 +3,7 @@
 archive/issues_002888.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
     "created_at": "2008-04-12T00:47:43Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ Keywords: slice
 
 The following should return [] but it throws an exception instead:
 
-
 ```
 sage: M = matrix(3, 4, range(12))
 sage: M[0:3, 2:2]
@@ -35,7 +34,6 @@ sage: M[0:3, 2:2]
 
 <type 'exceptions.ValueError'>: max() arg is an empty sequence
 ```
-
 
 Same problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.
 
@@ -125,7 +123,7 @@ Looks good.
 archive/issue_comments_019820.json:
 ```json
 {
-    "body": "Hi,\n\nthe patch doesn't apply cleanly against my merge tree:\n\n```\nsage-3.0.alpha4/devel/sage$ patch -p1 --dry-run < trac_2888.patch\npatching file sage/matrix/matrix0.pyx\nHunk #1 FAILED at 613.\nHunk #2 succeeded at 694 (offset 21 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix0.pyx.rej\n```\n\nThe first hunk are the added doctests, so it is easy enough to do. I won't mind if somebody beasts me to it.\n\nCheers,\n\nMichael",
+    "body": "Hi,\n\nthe patch doesn't apply cleanly against my merge tree:\n\n```\nsage-3.0.alpha4/devel/sage$ patch -p1 --dry-run < trac_2888.patch\npatching file sage/matrix/matrix0.pyx\nHunk #1 FAILED at 613.\nHunk #2 succeeded at 694 (offset 21 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix0.pyx.rej\n```\nThe first hunk are the added doctests, so it is easy enough to do. I won't mind if somebody beasts me to it.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T04:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
@@ -145,7 +143,6 @@ Hunk #1 FAILED at 613.
 Hunk #2 succeeded at 694 (offset 21 lines).
 1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix0.pyx.rej
 ```
-
 The first hunk are the added doctests, so it is easy enough to do. I won't mind if somebody beasts me to it.
 
 Cheers,

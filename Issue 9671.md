@@ -104,7 +104,7 @@ See http://matplotlib.sourceforge.net/examples/pylab_examples/histogram_demo_ext
 archive/issue_comments_093793.json:
 ```json
 {
-    "body": "Note that we have `np.histogram` if you want as well.\n\nAnd `TimeSeries.histogram?`\n\nAlso here is something random in some code of Willliam's: \n\n```\ndef dist(v, b, left=float(0), right=float(pi)):\n    \"\"\"\n    We divide the interval between left (default: 0) and \n    right (default: pi) up into b bins.\n   \n    For each number in v (which must left and right), \n    we find which bin it lies in and add this to a counter.\n    This function then returns the bins and the number of\n    elements of v that lie in each one. \n\n    ALGORITHM: To find the index of the bin that a given \n    number x lies in, we multiply x by b/length and take the \n    floor. \n    \"\"\"\n    length = right - left\n    normalize = float(b/length)\n    vals = {}\n    d = dict([(i,0) for i in range(b)])\n    for x in v:\n        n = int(normalize*(float(x)-left))\n        d[n] += 1\n    return d, len(v)\n    \ndef graph(d, b, num=5000, left=float(0), right=float(pi)):\n    s = Graphics()\n    left = float(left); right = float(right)\n    length = right - left\n    w = length/b\n    k = 0\n    for i, n in d.iteritems():\n        k += n\n        # ith bin has n objects in it. \n        s += polygon([(w*i+left,0), (w*(i+1)+left,0), \\\n                     (w*(i+1)+left, n/(num*w)), (w*i+left, n/(num*w))],\\\n                     rgbcolor=(0,0,0.5))\n    return s    \n```\n\n\nThe point being that this should be unified.",
+    "body": "Note that we have `np.histogram` if you want as well.\n\nAnd `TimeSeries.histogram?`\n\nAlso here is something random in some code of Willliam's: \n\n```\ndef dist(v, b, left=float(0), right=float(pi)):\n    \"\"\"\n    We divide the interval between left (default: 0) and \n    right (default: pi) up into b bins.\n   \n    For each number in v (which must left and right), \n    we find which bin it lies in and add this to a counter.\n    This function then returns the bins and the number of\n    elements of v that lie in each one. \n\n    ALGORITHM: To find the index of the bin that a given \n    number x lies in, we multiply x by b/length and take the \n    floor. \n    \"\"\"\n    length = right - left\n    normalize = float(b/length)\n    vals = {}\n    d = dict([(i,0) for i in range(b)])\n    for x in v:\n        n = int(normalize*(float(x)-left))\n        d[n] += 1\n    return d, len(v)\n    \ndef graph(d, b, num=5000, left=float(0), right=float(pi)):\n    s = Graphics()\n    left = float(left); right = float(right)\n    length = right - left\n    w = length/b\n    k = 0\n    for i, n in d.iteritems():\n        k += n\n        # ith bin has n objects in it. \n        s += polygon([(w*i+left,0), (w*(i+1)+left,0), \\\n                     (w*(i+1)+left, n/(num*w)), (w*i+left, n/(num*w))],\\\n                     rgbcolor=(0,0,0.5))\n    return s    \n```\n\nThe point being that this should be unified.",
     "created_at": "2011-06-13T19:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -157,7 +157,6 @@ def graph(d, b, num=5000, left=float(0), right=float(pi)):
                      rgbcolor=(0,0,0.5))
     return s    
 ```
-
 
 The point being that this should be unified.
 
@@ -332,7 +331,7 @@ What needs to be done for this histogram patch? And are all the four patches nec
 archive/issue_comments_093803.json:
 ```json
 {
-    "body": "> And are all the four patches necessary for the histogram to work?\nLooks like all four patches need to be used, at least for the ticket if not for the pure functionality.\n\n> What needs to be done for this histogram patch?\nGood question.  I'd say, for one, that it would be very good to have more documentation - nobody actually plots histograms with four data points.  We would also want some examples of the multiple data sets option.  Someone to go over the code again... \n\nOn a different ticket, we might want to change the `TimeSeries` histogram and the `RealDistribution` histograms as well to use this, I'm not quite sure what they are up to.  It's not very unified.  But that would be a second step.",
+    "body": "> And are all the four patches necessary for the histogram to work?\n\nLooks like all four patches need to be used, at least for the ticket if not for the pure functionality.\n\n> What needs to be done for this histogram patch?\n\nGood question.  I'd say, for one, that it would be very good to have more documentation - nobody actually plots histograms with four data points.  We would also want some examples of the multiple data sets option.  Someone to go over the code again... \n\nOn a different ticket, we might want to change the `TimeSeries` histogram and the `RealDistribution` histograms as well to use this, I'm not quite sure what they are up to.  It's not very unified.  But that would be a second step.",
     "created_at": "2012-06-29T15:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -342,9 +341,11 @@ archive/issue_comments_093803.json:
 ```
 
 > And are all the four patches necessary for the histogram to work?
+
 Looks like all four patches need to be used, at least for the ticket if not for the pure functionality.
 
 > What needs to be done for this histogram patch?
+
 Good question.  I'd say, for one, that it would be very good to have more documentation - nobody actually plots histograms with four data points.  We would also want some examples of the multiple data sets option.  Someone to go over the code again... 
 
 On a different ticket, we might want to change the `TimeSeries` histogram and the `RealDistribution` histograms as well to use this, I'm not quite sure what they are up to.  It's not very unified.  But that would be a second step.
@@ -475,7 +476,7 @@ archive/issue_events_024130.json:
 archive/issue_comments_093804.json:
 ```json
 {
-    "body": "Thanks very much for putting this into a branch, Volker!  My previous comments obviously still apply but this should be the incentive I (or someone) need to get this finished up.\n----\nNew commits:",
+    "body": "Thanks very much for putting this into a branch, Volker!  My previous comments obviously still apply but this should be the incentive I (or someone) need to get this finished up.\n\n---\nNew commits:",
     "created_at": "2014-09-08T13:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -485,7 +486,8 @@ archive/issue_comments_093804.json:
 ```
 
 Thanks very much for putting this into a branch, Volker!  My previous comments obviously still apply but this should be the incentive I (or someone) need to get this finished up.
-----
+
+---
 New commits:
 
 
@@ -539,7 +541,7 @@ Thanks for looking at this, Basu.  I do think that a *real* example or more woul
 archive/issue_comments_093807.json:
 ```json
 {
-    "body": "You are right. This needs a bit more work. I was testing some distributions yesterday with it and it was working fine. Things like:\n\n```\nhistogram([normalvariate(0, 1) for _ in xrange(500)], bins=20)\nhistogram([random() for _ in xrange(500)])\n```\n\nBut testing this more rigorously today, I find that it doesn't even pass the doctests. I will have a closer look at fixing that when I get some time.",
+    "body": "You are right. This needs a bit more work. I was testing some distributions yesterday with it and it was working fine. Things like:\n\n```\nhistogram([normalvariate(0, 1) for _ in xrange(500)], bins=20)\nhistogram([random() for _ in xrange(500)])\n```\nBut testing this more rigorously today, I find that it doesn't even pass the doctests. I will have a closer look at fixing that when I get some time.",
     "created_at": "2014-10-19T00:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -554,7 +556,6 @@ You are right. This needs a bit more work. I was testing some distributions yest
 histogram([normalvariate(0, 1) for _ in xrange(500)], bins=20)
 histogram([random() for _ in xrange(500)])
 ```
-
 But testing this more rigorously today, I find that it doesn't even pass the doctests. I will have a closer look at fixing that when I get some time.
 
 
@@ -582,7 +583,7 @@ Hopefully the jsmol thing will be finished off soon so I can get back to this to
 archive/issue_comments_093809.json:
 ```json
 {
-    "body": "For completeness, here are the (relevant) failing tests.\n\n```\n    g = Histogram(range(4), [1,3,2,0], {}); g\n    Histogram(range(3), [10,3,5], {'width':0.7})\n    g = Histogram(range(4), [1,3,2,0], {})\n    g = Histogram(range(4), [1,3,2,0], {})\n(all give)\n    TypeError: __init__() takes exactly 3 arguments (4 given)\n(this is probably because they're taken from bar_chart but a histogram only takes one list)\n\n    histogram([1,2,10])\n    histogram([1,2,3,4])\n    histogram([-3,4,-6,11])\n(all give)\n    Graphics object consisting of 1 graphics primitive\n(maybe this is from the change in display hook in Ipython)\n\nFailed example:\n    histogram([-3,5,-6,11], rgbcolor=(1,0,0))\nExpected nothing\nGot:\n    doctest:239: FormatterWarning: Exception in text/plain formatter: Unknown property rgbcolor\n    None\n```\n\nAlso, `get_minmax_data` doesn't even have any doctests, and one of the ones that fails now because of `g` not being defined in `_allowed_options` will need to be updated since there are a lot more options in the histograms (and this should be easy).  And `_repr_` makes no sense - what is an `n` datalist?  Oh, *and* we want to document the multiple dataset option.  Wow, more to do than I realized.  http://matplotlib.org/_sources/examples/pylab_examples/histogram_demo_extended.txt is a useful resource.\n\nBut I do agree that the underlying matplotlib functionality is very likely to be awesome.  And in fact there are even more options now",
+    "body": "For completeness, here are the (relevant) failing tests.\n\n```\n    g = Histogram(range(4), [1,3,2,0], {}); g\n    Histogram(range(3), [10,3,5], {'width':0.7})\n    g = Histogram(range(4), [1,3,2,0], {})\n    g = Histogram(range(4), [1,3,2,0], {})\n(all give)\n    TypeError: __init__() takes exactly 3 arguments (4 given)\n(this is probably because they're taken from bar_chart but a histogram only takes one list)\n\n    histogram([1,2,10])\n    histogram([1,2,3,4])\n    histogram([-3,4,-6,11])\n(all give)\n    Graphics object consisting of 1 graphics primitive\n(maybe this is from the change in display hook in Ipython)\n\nFailed example:\n    histogram([-3,5,-6,11], rgbcolor=(1,0,0))\nExpected nothing\nGot:\n    doctest:239: FormatterWarning: Exception in text/plain formatter: Unknown property rgbcolor\n    None\n```\nAlso, `get_minmax_data` doesn't even have any doctests, and one of the ones that fails now because of `g` not being defined in `_allowed_options` will need to be updated since there are a lot more options in the histograms (and this should be easy).  And `_repr_` makes no sense - what is an `n` datalist?  Oh, *and* we want to document the multiple dataset option.  Wow, more to do than I realized.  http://matplotlib.org/_sources/examples/pylab_examples/histogram_demo_extended.txt is a useful resource.\n\nBut I do agree that the underlying matplotlib functionality is very likely to be awesome.  And in fact there are even more options now",
     "created_at": "2014-10-22T03:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -616,7 +617,6 @@ Got:
     doctest:239: FormatterWarning: Exception in text/plain formatter: Unknown property rgbcolor
     None
 ```
-
 Also, `get_minmax_data` doesn't even have any doctests, and one of the ones that fails now because of `g` not being defined in `_allowed_options` will need to be updated since there are a lot more options in the histograms (and this should be easy).  And `_repr_` makes no sense - what is an `n` datalist?  Oh, *and* we want to document the multiple dataset option.  Wow, more to do than I realized.  http://matplotlib.org/_sources/examples/pylab_examples/histogram_demo_extended.txt is a useful resource.
 
 But I do agree that the underlying matplotlib functionality is very likely to be awesome.  And in fact there are even more options now
@@ -650,7 +650,7 @@ Okay, I'm going to push something fairly better in a moment.  Key things to stil
 archive/issue_comments_093811.json:
 ```json
 {
-    "body": "Such as \n\n```\nsage: histogram(range(100), color=(1,0,0), label='mydata', hatch='/')\n```\n\nwhich looks great but needs extra options to be provided... I made that example basic (no options) for now but it needs to be elaborated with lots of stuff.",
+    "body": "Such as \n\n```\nsage: histogram(range(100), color=(1,0,0), label='mydata', hatch='/')\n```\nwhich looks great but needs extra options to be provided... I made that example basic (no options) for now but it needs to be elaborated with lots of stuff.",
     "created_at": "2014-10-23T02:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -664,7 +664,6 @@ Such as
 ```
 sage: histogram(range(100), color=(1,0,0), label='mydata', hatch='/')
 ```
-
 which looks great but needs extra options to be provided... I made that example basic (no options) for now but it needs to be elaborated with lots of stuff.
 
 
@@ -674,7 +673,7 @@ which looks great but needs extra options to be provided... I made that example 
 archive/issue_comments_093812.json:
 ```json
 {
-    "body": "Basu (or others), feel free to add some examples and get the (a more) correct set of options in.\n----\nNew commits:",
+    "body": "Basu (or others), feel free to add some examples and get the (a more) correct set of options in.\n\n---\nNew commits:",
     "created_at": "2014-10-23T02:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9671",
     "type": "issue_comment",
@@ -684,7 +683,8 @@ archive/issue_comments_093812.json:
 ```
 
 Basu (or others), feel free to add some examples and get the (a more) correct set of options in.
-----
+
+---
 New commits:
 
 

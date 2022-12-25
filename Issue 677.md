@@ -3,7 +3,7 @@
 archive/issues_000677.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: doctest, numerical noise\n\n\n```\n[02:48] <mhansen_> Regarding testing with small numerical differences, that would still be something that'd need to be handled in within the doctest code since nose provides a \"wrapper\" around doctest.\n[02:48] <mabshoff> ok\n[02:48] <williamstein> The point would only be about what options there might be for doing it.\n[02:49] <williamstein> It might still have to go via preparsing.\n[02:49] <williamstein> E.g., a special comment\n[02:49] <williamstein> sage: foo(2.1)      # random low order bits\n[02:49] <williamstein> could mean that the output should be checked except the last 3 bits discarded\n[02:49] <williamstein> Another possibility would be to rewrite the doctests like this:\n[02:49] <williamstein> sage: foo(2.1)\n[02:50] <williamstein> 1.239930820384...\n[02:50] <williamstein> Then the doctest framework just ignored everythign starting at the ...'s.\n[02:50] <williamstein> But everything before will be checked to make sure it is the same.\n[02:50] <mabshoff> That sounds like a good solution with the \"...\"\n[02:50] <williamstein> That actually might be a good approach, since it will work in more complicated cases:\n[02:50] <williamstein> [foo(2.1), foo(2.2)]\n[02:50] <williamstein> [1.20919..., 2.233....]\n[02:50] <williamstein> You could try it with that doctest just now.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/677\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: doctest, numerical noise\n\n```\n[02:48] <mhansen_> Regarding testing with small numerical differences, that would still be something that'd need to be handled in within the doctest code since nose provides a \"wrapper\" around doctest.\n[02:48] <mabshoff> ok\n[02:48] <williamstein> The point would only be about what options there might be for doing it.\n[02:49] <williamstein> It might still have to go via preparsing.\n[02:49] <williamstein> E.g., a special comment\n[02:49] <williamstein> sage: foo(2.1)      # random low order bits\n[02:49] <williamstein> could mean that the output should be checked except the last 3 bits discarded\n[02:49] <williamstein> Another possibility would be to rewrite the doctests like this:\n[02:49] <williamstein> sage: foo(2.1)\n[02:50] <williamstein> 1.239930820384...\n[02:50] <williamstein> Then the doctest framework just ignored everythign starting at the ...'s.\n[02:50] <williamstein> But everything before will be checked to make sure it is the same.\n[02:50] <mabshoff> That sounds like a good solution with the \"...\"\n[02:50] <williamstein> That actually might be a good approach, since it will work in more complicated cases:\n[02:50] <williamstein> [foo(2.1), foo(2.2)]\n[02:50] <williamstein> [1.20919..., 2.233....]\n[02:50] <williamstein> You could try it with that doctest just now.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/677\n\n",
     "created_at": "2007-09-17T01:12:00Z",
     "labels": [
         "component: packages",
@@ -19,7 +19,6 @@ archive/issues_000677.json:
 Assignee: @mwhansen
 
 Keywords: doctest, numerical noise
-
 
 ```
 [02:48] <mhansen_> Regarding testing with small numerical differences, that would still be something that'd need to be handled in within the doctest code since nose provides a "wrapper" around doctest.
@@ -40,7 +39,6 @@ Keywords: doctest, numerical noise
 [02:50] <williamstein> [1.20919..., 2.233....]
 [02:50] <williamstein> You could try it with that doctest just now.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/677
 

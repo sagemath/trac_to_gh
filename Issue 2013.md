@@ -3,7 +3,7 @@
 archive/issues_002013.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/f2c-20070816/src/f2c/xsum\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2013\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/f2c-20070816/src/f2c/xsum\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2013\n\n",
     "created_at": "2008-01-31T23:25:40Z",
     "labels": [
         "component: packages: standard",
@@ -18,11 +18,9 @@ archive/issues_002013.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/f2c-20070816/src/f2c/xsum
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2013
 

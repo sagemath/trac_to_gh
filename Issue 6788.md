@@ -3,7 +3,7 @@
 archive/issues_006788.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.3 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6788\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.3 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6788\n\n",
     "created_at": "2009-08-20T22:14:12Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_006788.json:
 ```
 Assignee: tbd
 
-
 ```
 sage -t  "devel/sage/sage/symbolic/assumptions.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
@@ -26,7 +25,6 @@ sage -t  "devel/sage/sage/symbolic/assumptions.py"
 *** *** Error: TIMED OUT! *** ***
          [360.3 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6788
 
@@ -191,7 +189,7 @@ To drkirkby - can you try this with the spkg for 5.20.1 in #7745?
 archive/issue_comments_055847.json:
 ```json
 {
-    "body": "Hi, \nsorry for not replying earlier, but I did not see the request. The .spkg for Maxima 5.20.1 does fix this:\n\n\n```\nThis does fix the problem. \n\n\nkirkby@t2:[~/sage-4.3] $ ./sage -t  \"devel/sage/sage/symbolic/assumptions.py\"\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"          \n         [60.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 60.8 seconds\n```\n",
+    "body": "Hi, \nsorry for not replying earlier, but I did not see the request. The .spkg for Maxima 5.20.1 does fix this:\n\n```\nThis does fix the problem. \n\n\nkirkby@t2:[~/sage-4.3] $ ./sage -t  \"devel/sage/sage/symbolic/assumptions.py\"\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"          \n         [60.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 60.8 seconds\n```",
     "created_at": "2009-12-28T21:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
@@ -202,7 +200,6 @@ archive/issue_comments_055847.json:
 
 Hi, 
 sorry for not replying earlier, but I did not see the request. The .spkg for Maxima 5.20.1 does fix this:
-
 
 ```
 This does fix the problem. 
@@ -216,7 +213,6 @@ sage -t  "devel/sage/sage/symbolic/assumptions.py"
 All tests passed!
 Total time for all tests: 60.8 seconds
 ```
-
 
 
 

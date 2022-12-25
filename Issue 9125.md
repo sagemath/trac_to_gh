@@ -112,7 +112,7 @@ Robert
 archive/issue_comments_084746.json:
 ```json
 {
-    "body": "Replying to [comment:2 robert_goss]:\n> I have been working on a function to generate simplicial complexes for the lens spaces. Although the implimentation is naive would it be something which would be useful to put in this patch?\n\nI think having lens spaces would be very nice, although maybe it could go on another ticket so that the current patch can get merged.  If you post something, I'll almost certainly review it.   A naive approach would be fine, but you might also look at some of the papers referenced in the current patch.  In particular, \n\n- Basudeb Datta, \"Minimal triangulations of manifolds\", J. Indian Inst. Sci. 87 (2007), no. 4, 429-449. \n\n- Frank H. Lutz, \"Triangulated Manifolds with Few Vertices: Combinatorial Manifolds\", preprint (2005), 484\tarXiv:math/0506372. \n\nare both expository papers which might include some discussion of lens spaces, or might give references.  (I think I've seen discussions of triangulations of lens spaces somewhere, but I don't remember where.  You might also try searching the web.)",
+    "body": "Replying to [comment:2 robert_goss]:\n> I have been working on a function to generate simplicial complexes for the lens spaces. Although the implimentation is naive would it be something which would be useful to put in this patch?\n\n\nI think having lens spaces would be very nice, although maybe it could go on another ticket so that the current patch can get merged.  If you post something, I'll almost certainly review it.   A naive approach would be fine, but you might also look at some of the papers referenced in the current patch.  In particular, \n\n- Basudeb Datta, \"Minimal triangulations of manifolds\", J. Indian Inst. Sci. 87 (2007), no. 4, 429-449. \n\n- Frank H. Lutz, \"Triangulated Manifolds with Few Vertices: Combinatorial Manifolds\", preprint (2005), 484\tarXiv:math/0506372. \n\nare both expository papers which might include some discussion of lens spaces, or might give references.  (I think I've seen discussions of triangulations of lens spaces somewhere, but I don't remember where.  You might also try searching the web.)",
     "created_at": "2010-11-10T23:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -123,6 +123,7 @@ archive/issue_comments_084746.json:
 
 Replying to [comment:2 robert_goss]:
 > I have been working on a function to generate simplicial complexes for the lens spaces. Although the implimentation is naive would it be something which would be useful to put in this patch?
+
 
 I think having lens spaces would be very nice, although maybe it could go on another ticket so that the current patch can get merged.  If you post something, I'll almost certainly review it.   A naive approach would be fine, but you might also look at some of the papers referenced in the current patch.  In particular, 
 
@@ -157,7 +158,7 @@ robert_goss: please add your real name to [Account Names mapped to Real Names](h
 archive/issue_comments_084748.json:
 ```json
 {
-    "body": "Replying to [comment:4 jdemeyer]:\n> robert_goss: please add your real name to [Account Names mapped to Real Names](http://trac.sagemath.org/sage_trac/#AccountNamesmappedtoRealNames) and also add it on this ticket as Reviewer.\n\n\nHi thank you jdemeyer this is my first time contributing directly to sage and I am not sure of all the procedures.\n\nIs there anything else I should do?",
+    "body": "Replying to [comment:4 jdemeyer]:\n> robert_goss: please add your real name to [Account Names mapped to Real Names](http://trac.sagemath.org/sage_trac/#AccountNamesmappedtoRealNames) and also add it on this ticket as Reviewer.\n\n\n\nHi thank you jdemeyer this is my first time contributing directly to sage and I am not sure of all the procedures.\n\nIs there anything else I should do?",
     "created_at": "2010-11-14T17:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -168,6 +169,7 @@ archive/issue_comments_084748.json:
 
 Replying to [comment:4 jdemeyer]:
 > robert_goss: please add your real name to [Account Names mapped to Real Names](http://trac.sagemath.org/sage_trac/#AccountNamesmappedtoRealNames) and also add it on this ticket as Reviewer.
+
 
 
 Hi thank you jdemeyer this is my first time contributing directly to sage and I am not sure of all the procedures.
@@ -257,7 +259,7 @@ Resolution changed from fixed to
 archive/issue_comments_084752.json:
 ```json
 {
-    "body": "The tests take way too long time.  This is on a 32-bit Linux Pentium 4 system:\n\n```\nsage: P5 = simplicial_complexes.RealProjectiveSpace(Integer(5))\nsage: time P5.homology()\nCPU times: user 4083.68 s, sys: 0.63 s, total: 4084.31 s\nWall time: 4084.50 s\n{0: 0, 1: C2, 2: 0, 3: C2, 4: 0, 5: Z}\n```\n",
+    "body": "The tests take way too long time.  This is on a 32-bit Linux Pentium 4 system:\n\n```\nsage: P5 = simplicial_complexes.RealProjectiveSpace(Integer(5))\nsage: time P5.homology()\nCPU times: user 4083.68 s, sys: 0.63 s, total: 4084.31 s\nWall time: 4084.50 s\n{0: 0, 1: C2, 2: 0, 3: C2, 4: 0, 5: Z}\n```",
     "created_at": "2010-11-18T08:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -275,7 +277,6 @@ CPU times: user 4083.68 s, sys: 0.63 s, total: 4084.31 s
 Wall time: 4084.50 s
 {0: 0, 1: C2, 2: 0, 3: C2, 4: 0, 5: Z}
 ```
-
 
 
 
@@ -372,7 +373,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084757.json:
 ```json
 {
-    "body": "On the same Pentium 4 system, the following test\n\n```\nsage:P4 = simplicial_complexes.RealProjectiveSpace(4)\n```\n\ntakes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).",
+    "body": "On the same Pentium 4 system, the following test\n\n```\nsage:P4 = simplicial_complexes.RealProjectiveSpace(4)\n```\ntakes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).",
     "created_at": "2010-11-18T19:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -386,7 +387,6 @@ On the same Pentium 4 system, the following test
 ```
 sage:P4 = simplicial_complexes.RealProjectiveSpace(4)
 ```
-
 takes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).
 
 
@@ -396,7 +396,7 @@ takes almost 4 seconds, so that should also be # long time (and hence also the f
 archive/issue_comments_084758.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> On the same Pentium 4 system, the following test takes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).\n\nI'll do that, but are you using specific guidelines about what constitutes \"long\"?  On a 2-year-old iMac, it takes about 10 seconds to doctest the whole file (\"sage -t examples.py\", not \"sage -t -long\").  That doesn't seem excessively long to me, especially since the machine isn't new, and it wasn't a top-of-the line machine even when it was new.",
+    "body": "Replying to [comment:11 jdemeyer]:\n> On the same Pentium 4 system, the following test takes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).\n\n\nI'll do that, but are you using specific guidelines about what constitutes \"long\"?  On a 2-year-old iMac, it takes about 10 seconds to doctest the whole file (\"sage -t examples.py\", not \"sage -t -long\").  That doesn't seem excessively long to me, especially since the machine isn't new, and it wasn't a top-of-the line machine even when it was new.",
     "created_at": "2010-11-18T22:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -408,6 +408,7 @@ archive/issue_comments_084758.json:
 Replying to [comment:11 jdemeyer]:
 > On the same Pentium 4 system, the following test takes almost 4 seconds, so that should also be # long time (and hence also the following tests involving P4).
 
+
 I'll do that, but are you using specific guidelines about what constitutes "long"?  On a 2-year-old iMac, it takes about 10 seconds to doctest the whole file ("sage -t examples.py", not "sage -t -long").  That doesn't seem excessively long to me, especially since the machine isn't new, and it wasn't a top-of-the line machine even when it was new.
 
 
@@ -417,7 +418,7 @@ I'll do that, but are you using specific guidelines about what constitutes "long
 archive/issue_comments_084759.json:
 ```json
 {
-    "body": "The guideline is that 1 second is the bound for # long time.  In the Sage developer manual, there is the following example:\n\n```\nsage: E = EllipticCurve([0, 0, 1, -1, 0])\nsage: E.regulator()              # long time (1 second)\n0.0511114082399688\n```\n",
+    "body": "The guideline is that 1 second is the bound for # long time.  In the Sage developer manual, there is the following example:\n\n```\nsage: E = EllipticCurve([0, 0, 1, -1, 0])\nsage: E.regulator()              # long time (1 second)\n0.0511114082399688\n```",
     "created_at": "2010-11-19T07:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -433,7 +434,6 @@ sage: E = EllipticCurve([0, 0, 1, -1, 0])
 sage: E.regulator()              # long time (1 second)
 0.0511114082399688
 ```
-
 
 
 
@@ -480,7 +480,7 @@ Can this get reviewed soon?  The original patch was reviewed positively already,
 archive/issue_comments_084762.json:
 ```json
 {
-    "body": "Looks like you missed one \"long time\" addition, so there is a doctest failure.  \n\n\n\n```\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4.7.alpha2/devel/sage-t1/sage/homology/examples.py\", line 518:\n    sage: P4.dimension()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[7]>\", line 1, in <module>\n        P4.dimension()###line 518:\n    sage: P4.dimension()\n    NameError: name 'P4' is not defined\n**********************************************************************\n\n```\n\n\nI am attaching a cumulative patch that fixes that.",
+    "body": "Looks like you missed one \"long time\" addition, so there is a doctest failure.  \n\n\n```\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4.7.alpha2/devel/sage-t1/sage/homology/examples.py\", line 518:\n    sage: P4.dimension()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4.7.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[7]>\", line 1, in <module>\n        P4.dimension()###line 518:\n    sage: P4.dimension()\n    NameError: name 'P4' is not defined\n**********************************************************************\n\n```\n\nI am attaching a cumulative patch that fixes that.",
     "created_at": "2011-03-28T11:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
@@ -490,7 +490,6 @@ archive/issue_comments_084762.json:
 ```
 
 Looks like you missed one "long time" addition, so there is a doctest failure.  
-
 
 
 ```
@@ -512,7 +511,6 @@ Exception raised:
 **********************************************************************
 
 ```
-
 
 I am attaching a cumulative patch that fixes that.
 

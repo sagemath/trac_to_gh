@@ -49,7 +49,7 @@ Apply to scripts repo.
 archive/issue_comments_028863.json:
 ```json
 {
-    "body": "Attachment [trac_4005_sage-coverage.patch](tarball://root/attachments/some-uuid/ticket4005/trac_4005_sage-coverage.patch) by mabshoff created at 2008-08-30 23:55:37\n\nThis patch is motivated by\n\n```\n    def min_spanning_tree(self, weight_function=lambda e: 1,\n                          algorithm='Kruskal',\n                          starting_vertex=None ):\n```\n\nfrom sage/graphs/graph.py.\n\nPositive review.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4005_sage-coverage.patch](tarball://root/attachments/some-uuid/ticket4005/trac_4005_sage-coverage.patch) by mabshoff created at 2008-08-30 23:55:37\n\nThis patch is motivated by\n\n```\n    def min_spanning_tree(self, weight_function=lambda e: 1,\n                          algorithm='Kruskal',\n                          starting_vertex=None ):\n```\nfrom sage/graphs/graph.py.\n\nPositive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-30T23:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4005",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ This patch is motivated by
                           algorithm='Kruskal',
                           starting_vertex=None ):
 ```
-
 from sage/graphs/graph.py.
 
 Positive review.

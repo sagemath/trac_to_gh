@@ -3,7 +3,7 @@
 archive/issues_000553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
     "created_at": "2007-09-01T17:22:55Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_000553.json:
 ```
 Assignee: @williamstein
 
-
 ```
 
 The input should be
@@ -32,7 +31,6 @@ constant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that
 constant function at x-1.  Yep, that this is allowed is ridiculous, and should
 be changed (I've filed a bug report). 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/553
 
@@ -232,7 +230,7 @@ archive/issue_events_001469.json:
 archive/issue_comments_002846.json:
 ```json
 {
-    "body": "I think the best way to go about doing this is to add a number_of_arguments() to SymbolicExpressions:\n\n\n```\nsage: sin.number_of_arguments()\n1\nsage: (sin+1).number_of_arguments()\n1\nsage: (sin+x).number_of_arguments()\n1\nsage: (sin+x+y).number_of_arguments()\n2\nsage: (2^(8/9)-2^(1/9)).number_of_arguments()\n0\n```\n",
+    "body": "I think the best way to go about doing this is to add a number_of_arguments() to SymbolicExpressions:\n\n```\nsage: sin.number_of_arguments()\n1\nsage: (sin+1).number_of_arguments()\n1\nsage: (sin+x).number_of_arguments()\n1\nsage: (sin+x+y).number_of_arguments()\n2\nsage: (2^(8/9)-2^(1/9)).number_of_arguments()\n0\n```",
     "created_at": "2007-12-05T21:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
@@ -242,7 +240,6 @@ archive/issue_comments_002846.json:
 ```
 
 I think the best way to go about doing this is to add a number_of_arguments() to SymbolicExpressions:
-
 
 ```
 sage: sin.number_of_arguments()
@@ -256,7 +253,6 @@ sage: (sin+x+y).number_of_arguments()
 sage: (2^(8/9)-2^(1/9)).number_of_arguments()
 0
 ```
-
 
 
 

@@ -70,7 +70,7 @@ Attachment [1156.patch](tarball://root/attachments/some-uuid/ticket1156/1156.pat
 archive/issue_comments_007036.json:
 ```json
 {
-    "body": "\n```\n[21:57] <mabshoff> Is there any more to #1156 or is that patch all that is missing?\n[21:59] <mhansen> I went through a diff with the old version and those three things \nwere the only ones I found missing.\n```\n",
+    "body": "```\n[21:57] <mabshoff> Is there any more to #1156 or is that patch all that is missing?\n[21:59] <mhansen> I went through a diff with the old version and those three things \nwere the only ones I found missing.\n```",
     "created_at": "2007-11-19T21:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1156",
     "type": "issue_comment",
@@ -79,13 +79,11 @@ archive/issue_comments_007036.json:
 }
 ```
 
-
 ```
 [21:57] <mabshoff> Is there any more to #1156 or is that patch all that is missing?
 [21:59] <mhansen> I went through a diff with the old version and those three things 
 were the only ones I found missing.
 ```
-
 
 
 

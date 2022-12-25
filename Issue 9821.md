@@ -143,7 +143,7 @@ Let me say again that it would be *really* nice if the sagenb repository was loc
 archive/issue_comments_096685.json:
 ```json
 {
-    "body": "Thanks for testing!  I hope to start using it a little on the side next week.\n> Let me say again that it would be *really* nice if the sagenb repository was located somewhere in the sage repository, so that it was easy to apply patches and make fixes (without having to hunt down the spkg, read the instructions again, untar it, etc).  Maybe the sage spkg could by default do the equivalent of extracting in sage/devel/sagenb/ and doing the developer install (so the source and repository would be in sage/devel/sagenb/\n\nI have asked about this a lot too, though of course I also haven't stepped up and tried to figure out how to use python setup or whatever to create `hg_sagenb` or something.  Same with Pynac - it's just dumb that these things which (currently) are only used in Sage can't be easily modified.",
+    "body": "Thanks for testing!  I hope to start using it a little on the side next week.\n> Let me say again that it would be *really* nice if the sagenb repository was located somewhere in the sage repository, so that it was easy to apply patches and make fixes (without having to hunt down the spkg, read the instructions again, untar it, etc).  Maybe the sage spkg could by default do the equivalent of extracting in sage/devel/sagenb/ and doing the developer install (so the source and repository would be in sage/devel/sagenb/\n\n\nI have asked about this a lot too, though of course I also haven't stepped up and tried to figure out how to use python setup or whatever to create `hg_sagenb` or something.  Same with Pynac - it's just dumb that these things which (currently) are only used in Sage can't be easily modified.",
     "created_at": "2010-08-28T00:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -154,6 +154,7 @@ archive/issue_comments_096685.json:
 
 Thanks for testing!  I hope to start using it a little on the side next week.
 > Let me say again that it would be *really* nice if the sagenb repository was located somewhere in the sage repository, so that it was easy to apply patches and make fixes (without having to hunt down the spkg, read the instructions again, untar it, etc).  Maybe the sage spkg could by default do the equivalent of extracting in sage/devel/sagenb/ and doing the developer install (so the source and repository would be in sage/devel/sagenb/
+
 
 I have asked about this a lot too, though of course I also haven't stepped up and tried to figure out how to use python setup or whatever to create `hg_sagenb` or something.  Same with Pynac - it's just dumb that these things which (currently) are only used in Sage can't be easily modified.
 
@@ -254,7 +255,7 @@ Gets the port number from the HTTP header instead (this fixes the issue given by
 archive/issue_comments_096691.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by @TimDumol created at 2010-09-10 04:41:55\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\nGood point. I've added a new patch that fixes that issue.",
+    "body": "Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by @TimDumol created at 2010-09-10 04:41:55\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\n\nGood point. I've added a new patch that fixes that issue.",
     "created_at": "2010-09-10T04:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -268,6 +269,7 @@ Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/t
 Replying to [comment:8 jason]:
 > Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?
 
+
 Good point. I've added a new patch that fixes that issue.
 
 
@@ -277,7 +279,7 @@ Good point. I've added a new patch that fixes that issue.
 archive/issue_comments_096692.json:
 ```json
 {
-    "body": "What if the connection is over https?  Can you assume that if you don't see a port number, then the port number is 80?  Why can't we just not set the port number (like before)?  (Disclaimer: I don't know much about this, so if someone that does thinks everything is all right, well, okay).\n\nAlso, I notice you use hasHeader.  Should my part of the patch be changed to have:\n\n\n```\nif request.headers.hasHeader('cookie'):\n```\n",
+    "body": "What if the connection is over https?  Can you assume that if you don't see a port number, then the port number is 80?  Why can't we just not set the port number (like before)?  (Disclaimer: I don't know much about this, so if someone that does thinks everything is all right, well, okay).\n\nAlso, I notice you use hasHeader.  Should my part of the patch be changed to have:\n\n```\nif request.headers.hasHeader('cookie'):\n```",
     "created_at": "2010-09-10T06:29:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -290,11 +292,9 @@ What if the connection is over https?  Can you assume that if you don't see a po
 
 Also, I notice you use hasHeader.  Should my part of the patch be changed to have:
 
-
 ```
 if request.headers.hasHeader('cookie'):
 ```
-
 
 
 
@@ -477,7 +477,7 @@ With just my part of the patch, I see a cookie_test_8000 and a nb_session_8000 c
 archive/issue_comments_096702.json:
 ```json
 {
-    "body": "> Can we split this ticket into two tickets?  A very high priority one that fixes the bug I found (my fix has been working for the past couple of months for me), and another ticket which takes care of the other issues?  That way the checking-only-last-cookie error can be taken care of right away.\n\nYes, please!  I've been avoiding using Sage this semester (other than for me personally) some because the cookie issue just seems to have gotten worse...",
+    "body": "> Can we split this ticket into two tickets?  A very high priority one that fixes the bug I found (my fix has been working for the past couple of months for me), and another ticket which takes care of the other issues?  That way the checking-only-last-cookie error can be taken care of right away.\n\n\nYes, please!  I've been avoiding using Sage this semester (other than for me personally) some because the cookie issue just seems to have gotten worse...",
     "created_at": "2010-09-29T00:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -487,6 +487,7 @@ archive/issue_comments_096702.json:
 ```
 
 > Can we split this ticket into two tickets?  A very high priority one that fixes the bug I found (my fix has been working for the past couple of months for me), and another ticket which takes care of the other issues?  That way the checking-only-last-cookie error can be taken care of right away.
+
 
 Yes, please!  I've been avoiding using Sage this semester (other than for me personally) some because the cookie issue just seems to have gotten worse...
 
@@ -591,7 +592,7 @@ But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to
 archive/issue_comments_096708.json:
 ```json
 {
-    "body": "> But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.\n\nNot to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)",
+    "body": "> But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.\n\n\nNot to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)",
     "created_at": "2010-09-29T12:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -602,6 +603,7 @@ archive/issue_comments_096708.json:
 
 > But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.
 
+
 Not to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)
 
 
@@ -611,7 +613,7 @@ Not to reopen the whole numbering issue, but it seems weird that major upgrades 
 archive/issue_comments_096709.json:
 ```json
 {
-    "body": "Replying to [comment:21 mpatel]:\n> I think we should get this and the currently positively reviewed SageNB tickets at {32} into a new SageNB 0.8.3.\n\nI've opened #10036 for this.",
+    "body": "Replying to [comment:21 mpatel]:\n> I think we should get this and the currently positively reviewed SageNB tickets at {32} into a new SageNB 0.8.3.\n\n\nI've opened #10036 for this.",
     "created_at": "2010-09-29T21:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -623,6 +625,7 @@ archive/issue_comments_096709.json:
 Replying to [comment:21 mpatel]:
 > I think we should get this and the currently positively reviewed SageNB tickets at {32} into a new SageNB 0.8.3.
 
+
 I've opened #10036 for this.
 
 
@@ -632,7 +635,7 @@ I've opened #10036 for this.
 archive/issue_comments_096710.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> > But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.\n> \n> Not to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)\n\nThanks!  I may well take a break after 4.6 is out.\n\nI'll try to reply soon on sage-devel about the possibility of waiting longer for 4.6.alpha2 or adding an alpha3.\n\nRight now, I need to investigate a potential problem with current trial alpha2.  The current merge script is [here](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
+    "body": "Replying to [comment:22 kcrisman]:\n> > But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.\n\n> \n> Not to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)\n\n\nThanks!  I may well take a break after 4.6 is out.\n\nI'll try to reply soon on sage-devel about the possibility of waiting longer for 4.6.alpha2 or adding an alpha3.\n\nRight now, I need to investigate a potential problem with current trial alpha2.  The current merge script is [here](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
     "created_at": "2010-09-29T21:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -643,8 +646,10 @@ archive/issue_comments_096710.json:
 
 Replying to [comment:22 kcrisman]:
 > > But I can't work on this now, as I'm a bit busy with getting 4.6.alpha2 ready to release and working on #3524.  That will put the 4.6 cycle in feature freeze, so it's likely that the new Cython, NumPy, Pynac, SageNB, and SciPy packages will have to wait for 4.6.1.
+
 > 
 > Not to reopen the whole numbering issue, but it seems weird that major upgrades to big pieces of Sage would be 4.6.1 - and possibly wait weeks.  Is it possible to keep the 4.6 cycle going, or would it make more sense to wait on all these?  I realize you're doing the work - just a query.  (Partly this is the fear that 4.6.1 might not happen for a while, since I expect you to take a break after this release! You certainly deserve it.)
+
 
 Thanks!  I may well take a break after 4.6 is out.
 
@@ -659,7 +664,7 @@ Right now, I need to investigate a potential problem with current trial alpha2. 
 archive/issue_comments_096711.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> Apply only 9822-multiple-cookies.patch.  The rest of the work on this ticket has been moved to #10029.\n\nTim, does this patch look good to you?",
+    "body": "Replying to [comment:18 jason]:\n> Apply only 9822-multiple-cookies.patch.  The rest of the work on this ticket has been moved to #10029.\n\n\nTim, does this patch look good to you?",
     "created_at": "2010-10-03T09:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
@@ -670,6 +675,7 @@ archive/issue_comments_096711.json:
 
 Replying to [comment:18 jason]:
 > Apply only 9822-multiple-cookies.patch.  The rest of the work on this ticket has been moved to #10029.
+
 
 Tim, does this patch look good to you?
 

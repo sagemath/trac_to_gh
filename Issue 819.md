@@ -227,7 +227,7 @@ archive/issue_events_002312.json:
 archive/issue_comments_005068.json:
 ```json
 {
-    "body": "Replying to [comment:5 mmezzarobba]:\n> I doubt we want to change the convention at this point.\n\nwhy?",
+    "body": "Replying to [comment:5 mmezzarobba]:\n> I doubt we want to change the convention at this point.\n\n\nwhy?",
     "created_at": "2015-04-14T09:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
@@ -239,6 +239,7 @@ archive/issue_comments_005068.json:
 Replying to [comment:5 mmezzarobba]:
 > I doubt we want to change the convention at this point.
 
+
 why?
 
 
@@ -248,7 +249,7 @@ why?
 archive/issue_comments_005069.json:
 ```json
 {
-    "body": "Replying to [comment:6 vdelecroix]:\n> Replying to [comment:5 mmezzarobba]:\n> > I doubt we want to change the convention at this point.\n> \n> why?\n\nI misread the description and thought the idea was to make `sageinspect` return 0-based line numbers. Sorry for the noise.",
+    "body": "Replying to [comment:6 vdelecroix]:\n> Replying to [comment:5 mmezzarobba]:\n> > I doubt we want to change the convention at this point.\n\n> \n> why?\n\n\nI misread the description and thought the idea was to make `sageinspect` return 0-based line numbers. Sorry for the noise.",
     "created_at": "2015-04-14T09:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
@@ -260,8 +261,10 @@ archive/issue_comments_005069.json:
 Replying to [comment:6 vdelecroix]:
 > Replying to [comment:5 mmezzarobba]:
 > > I doubt we want to change the convention at this point.
+
 > 
 > why?
+
 
 I misread the description and thought the idea was to make `sageinspect` return 0-based line numbers. Sorry for the noise.
 

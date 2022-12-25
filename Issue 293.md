@@ -77,7 +77,7 @@ Now that we have fast list indexing, there should be very few instances where we
 archive/issue_comments_001381.json:
 ```json
 {
-    "body": "Confirmed.  This is a *major* memory leak\n\n```\n[18:35] <william> indeed!\n[18:35] <william> david harvey is totally right about that memory leak!\n[18:35] <william> Try the following two distinct blocks of code, where m = get_memory_usage\n[18:35] <william> print m()\n[18:35] <william> n = random_matrix(RR, 200) \n[18:35] <william> n.set_immutable()\n[18:35] <william> hash(n)\n[18:35] <william> del n\n[18:35] <william> m()\n[18:35] <william>   -- and --\n[18:35] <william> print m()\n[18:35] <william> n = random_matrix(RR, 200) \n[18:35] <william> n.set_immutable()\n[18:35] <william> del n\n[18:35] <william> m()\n[18:36] <william> The first leaks about 3MB every time.  The second doesn't leak at all.\n[18:36] <robertwb> ouch\n[18:36] <robertwb> yes, it's a new reference (though it may or may not be a new object)\n\n\nprint m()\nn = random_matrix(RR, 200) \nn.set_immutable()\nhash(n)\ndel n\nm()\n```\n",
+    "body": "Confirmed.  This is a *major* memory leak\n\n```\n[18:35] <william> indeed!\n[18:35] <william> david harvey is totally right about that memory leak!\n[18:35] <william> Try the following two distinct blocks of code, where m = get_memory_usage\n[18:35] <william> print m()\n[18:35] <william> n = random_matrix(RR, 200) \n[18:35] <william> n.set_immutable()\n[18:35] <william> hash(n)\n[18:35] <william> del n\n[18:35] <william> m()\n[18:35] <william>   -- and --\n[18:35] <william> print m()\n[18:35] <william> n = random_matrix(RR, 200) \n[18:35] <william> n.set_immutable()\n[18:35] <william> del n\n[18:35] <william> m()\n[18:36] <william> The first leaks about 3MB every time.  The second doesn't leak at all.\n[18:36] <robertwb> ouch\n[18:36] <robertwb> yes, it's a new reference (though it may or may not be a new object)\n\n\nprint m()\nn = random_matrix(RR, 200) \nn.set_immutable()\nhash(n)\ndel n\nm()\n```",
     "created_at": "2007-08-19T01:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
@@ -116,7 +116,6 @@ hash(n)
 del n
 m()
 ```
-
 
 
 

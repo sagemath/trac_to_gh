@@ -144,7 +144,7 @@ This is is a very old ticket. Anyway, can I find the patch that fixes `_test_cat
 archive/issue_comments_078859.json:
 ```json
 {
-    "body": "Replying to [comment:3 saraedum]:\n> This is is a very old ticket. Anyway, can I find the patch that fixes `_test_category` somewhere? This also fails for #15154. Or should I just disable these tests?\n\nSince there is no reply here, I created a partial fix at #15232.",
+    "body": "Replying to [comment:3 saraedum]:\n> This is is a very old ticket. Anyway, can I find the patch that fixes `_test_category` somewhere? This also fails for #15154. Or should I just disable these tests?\n\n\nSince there is no reply here, I created a partial fix at #15232.",
     "created_at": "2013-09-26T23:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ archive/issue_comments_078859.json:
 
 Replying to [comment:3 saraedum]:
 > This is is a very old ticket. Anyway, can I find the patch that fixes `_test_category` somewhere? This also fails for #15154. Or should I just disable these tests?
+
 
 Since there is no reply here, I created a partial fix at #15232.
 
@@ -591,7 +592,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_078878.json:
 ```json
 {
-    "body": "Humph, so two points:\n\n1- The last push correct a bug in TriangularModuleMorphism with on_basis.\n\n2- I did not know that my push would have change the branch (but I should as it is a 'private' one) and do not know how to replace back the right branch, which is *u/nthiery/categories/module-morphisms-8678*. Sorry for the noise :s\n\nAt least, if my correction is wrong it should be very easy to reset :)\n----\nNew commits:",
+    "body": "Humph, so two points:\n\n1- The last push correct a bug in TriangularModuleMorphism with on_basis.\n\n2- I did not know that my push would have change the branch (but I should as it is a 'private' one) and do not know how to replace back the right branch, which is *u/nthiery/categories/module-morphisms-8678*. Sorry for the noise :s\n\nAt least, if my correction is wrong it should be very easy to reset :)\n\n---\nNew commits:",
     "created_at": "2014-09-01T17:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -607,7 +608,8 @@ Humph, so two points:
 2- I did not know that my push would have change the branch (but I should as it is a 'private' one) and do not know how to replace back the right branch, which is *u/nthiery/categories/module-morphisms-8678*. Sorry for the noise :s
 
 At least, if my correction is wrong it should be very easy to reset :)
-----
+
+---
 New commits:
 
 
@@ -1151,7 +1153,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_078908.json:
 ```json
 {
-    "body": "Here is my review. I pushed some typo fixes, improved some of the documentation and added a few doctests. Here are a few issues and questions:\n\n- I don't understand the comment in ``src/sage/categories/finitely_generated_semigroups.py``:\n\n```\n# TODO: update transitive ideal\n```\n\n\n- a couple of doctests include the following line:\n\n```\nsage: import __main__; __main__.f = f  \n```\n\ncan you explain why this is necessary?\n\n- line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?\n\n```\nc = c / s[j]  # the base ring is a field\n```\n\n\n- the doctests don't pass, but this seems to be related to #17160\n----\nNew commits:",
+    "body": "Here is my review. I pushed some typo fixes, improved some of the documentation and added a few doctests. Here are a few issues and questions:\n\n- I don't understand the comment in ``src/sage/categories/finitely_generated_semigroups.py``:\n\n```\n# TODO: update transitive ideal\n```\n\n- a couple of doctests include the following line:\n\n```\nsage: import __main__; __main__.f = f  \n```\ncan you explain why this is necessary?\n\n- line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?\n\n```\nc = c / s[j]  # the base ring is a field\n```\n\n- the doctests don't pass, but this seems to be related to #17160\n \n---\nNew commits:",
     "created_at": "2015-03-18T22:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -1168,13 +1170,11 @@ Here is my review. I pushed some typo fixes, improved some of the documentation 
 # TODO: update transitive ideal
 ```
 
-
 - a couple of doctests include the following line:
 
 ```
 sage: import __main__; __main__.f = f  
 ```
-
 can you explain why this is necessary?
 
 - line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?
@@ -1183,9 +1183,9 @@ can you explain why this is necessary?
 c = c / s[j]  # the base ring is a field
 ```
 
-
 - the doctests don't pass, but this seems to be related to #17160
-----
+ 
+---
 New commits:
 
 
@@ -1231,7 +1231,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_078911.json:
 ```json
 {
-    "body": "Hi Franco!\n\nReplying to [comment:60 saliola]:\n\n> Here is my review.  I pushed some typo fixes, improved some of the\n> documentation and added a few doctests.\n\nThanks! I double checked your changes and am happy with them. This\nprompted a second pass of little things here and there to make the doc\nmore uniform. I also implemented the two we had discussed.\n\n> Here are a few issues and questions:\n> \n> - I don't understand the comment in ``src/sage/categories/finitely_generated_semigroups.py``:\n> {{{\n> # TODO: update transitive ideal\n> }}}\n\nThe code uses TransitiveIdeal which is being deprecated in favor of\nRecursivelyEnumeratedSet. I have added this as comment on #17160.\n\n> - a couple of doctests include the following line:\n> {{{\n> sage: import __main__; __main__.f = f  \n> }}}\n> can you explain why this is necessary?\n\nA function defined interactively is not picklable, which prevents us\nfrom using it to test the pickling of objects built upon them. This\nclassical trick fakes f being defined in a Python module.\n\n> - line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?\n> {{{\n> c = c / s[j]  # the base ring is a field\n> }}}\n\nThe documentation mentions:\n\n```\n        - ``self`` -- a triangular morphism over a field, or a\n          unitriangular morphism over a ring\n```\n\nwhich is tested a couple lines above:\n\n```\n        if G.base_ring() not in Fields and not self._unitriangular:\n            raise NotImplementedError, \"coreduce for a triangular but not unitriangular morphism over a ring\"\n```\n\n\n> - the doctests don't pass, but this seems to be related to #17160\n\nYup. Next step is to cleanup #17160. And then we will know better if\nthere are a couple trivial doctests that need to be updated here.\n\nCheers,\n                                Nicolas",
+    "body": "Hi Franco!\n\nReplying to [comment:60 saliola]:\n\n> Here is my review.  I pushed some typo fixes, improved some of the\n> documentation and added a few doctests.\n\n\nThanks! I double checked your changes and am happy with them. This\nprompted a second pass of little things here and there to make the doc\nmore uniform. I also implemented the two we had discussed.\n\n> Here are a few issues and questions:\n> \n> - I don't understand the comment in ``src/sage/categories/finitely_generated_semigroups.py``:\n> \n> ```\n> # TODO: update transitive ideal\n> ```\n\n\nThe code uses TransitiveIdeal which is being deprecated in favor of\nRecursivelyEnumeratedSet. I have added this as comment on #17160.\n\n> - a couple of doctests include the following line:\n> \n> ```\n> sage: import __main__; __main__.f = f  \n> ```\n> can you explain why this is necessary?\n\n\nA function defined interactively is not picklable, which prevents us\nfrom using it to test the pickling of objects built upon them. This\nclassical trick fakes f being defined in a Python module.\n\n> - line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?\n> \n> ```\n> c = c / s[j]  # the base ring is a field\n> ```\n\n\nThe documentation mentions:\n\n```\n        - ``self`` -- a triangular morphism over a field, or a\n          unitriangular morphism over a ring\n```\nwhich is tested a couple lines above:\n\n```\n        if G.base_ring() not in Fields and not self._unitriangular:\n            raise NotImplementedError, \"coreduce for a triangular but not unitriangular morphism over a ring\"\n```\n\n> - the doctests don't pass, but this seems to be related to #17160\n\n\nYup. Next step is to cleanup #17160. And then we will know better if\nthere are a couple trivial doctests that need to be updated here.\n\nCheers,\n                                Nicolas",
     "created_at": "2015-03-19T08:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -1247,6 +1247,7 @@ Replying to [comment:60 saliola]:
 > Here is my review.  I pushed some typo fixes, improved some of the
 > documentation and added a few doctests.
 
+
 Thanks! I double checked your changes and am happy with them. This
 prompted a second pass of little things here and there to make the doc
 more uniform. I also implemented the two we had discussed.
@@ -1254,27 +1255,33 @@ more uniform. I also implemented the two we had discussed.
 > Here are a few issues and questions:
 > 
 > - I don't understand the comment in ``src/sage/categories/finitely_generated_semigroups.py``:
-> {{{
+> 
+> ```
 > # TODO: update transitive ideal
-> }}}
+> ```
+
 
 The code uses TransitiveIdeal which is being deprecated in favor of
 RecursivelyEnumeratedSet. I have added this as comment on #17160.
 
 > - a couple of doctests include the following line:
-> {{{
+> 
+> ```
 > sage: import __main__; __main__.f = f  
-> }}}
+> ```
 > can you explain why this is necessary?
+
 
 A function defined interactively is not picklable, which prevents us
 from using it to test the pickling of objects built upon them. This
 classical trick fakes f being defined in a Python module.
 
 > - line 1015 of ``src/sage/modules/module_with_basis_morphism.py``: the doc says this should work over an ring, so perhaps the following is not a valid assumption?
-> {{{
+> 
+> ```
 > c = c / s[j]  # the base ring is a field
-> }}}
+> ```
+
 
 The documentation mentions:
 
@@ -1282,7 +1289,6 @@ The documentation mentions:
         - ``self`` -- a triangular morphism over a field, or a
           unitriangular morphism over a ring
 ```
-
 which is tested a couple lines above:
 
 ```
@@ -1290,8 +1296,8 @@ which is tested a couple lines above:
             raise NotImplementedError, "coreduce for a triangular but not unitriangular morphism over a ring"
 ```
 
-
 > - the doctests don't pass, but this seems to be related to #17160
+
 
 Yup. Next step is to cleanup #17160. And then we will know better if
 there are a couple trivial doctests that need to be updated here.
@@ -1306,7 +1312,7 @@ Cheers,
 archive/issue_comments_078912.json:
 ```json
 {
-    "body": "The latest branch causes some problems:\n\n```\n> git trac pull\n> sage -br\n**********************************************************************\n\nOops, Sage crashed. We do our best to make it stable, but...\n```\n\n\nThe error message in the crash report is:\n\n```\nImportError: No module named modules_with_basis.morphism\n```\n",
+    "body": "The latest branch causes some problems:\n\n```\n> git trac pull\n> sage -br\n**********************************************************************\n\nOops, Sage crashed. We do our best to make it stable, but...\n```\n\nThe error message in the crash report is:\n\n```\nImportError: No module named modules_with_basis.morphism\n```",
     "created_at": "2015-03-19T15:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -1325,7 +1331,6 @@ The latest branch causes some problems:
 Oops, Sage crashed. We do our best to make it stable, but...
 ```
 
-
 The error message in the crash report is:
 
 ```
@@ -1334,13 +1339,12 @@ ImportError: No module named modules_with_basis.morphism
 
 
 
-
 ---
 
 archive/issue_comments_078913.json:
 ```json
 {
-    "body": "I wanted to make the following change:\n\n```\n+            sage: ult = lambda i: sum(  y[j] for j in range(i,4)  ) # uni-upper\n+            sage: phi = X.module_morphism(ult, triangular=\"lower\", codomain=Y)\n```\n\nThe comment `# uni-upper` should be uni-lower.",
+    "body": "I wanted to make the following change:\n\n```\n+            sage: ult = lambda i: sum(  y[j] for j in range(i,4)  ) # uni-upper\n+            sage: phi = X.module_morphism(ult, triangular=\"lower\", codomain=Y)\n```\nThe comment `# uni-upper` should be uni-lower.",
     "created_at": "2015-03-19T15:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -1355,7 +1359,6 @@ I wanted to make the following change:
 +            sage: ult = lambda i: sum(  y[j] for j in range(i,4)  ) # uni-upper
 +            sage: phi = X.module_morphism(ult, triangular="lower", codomain=Y)
 ```
-
 The comment `# uni-upper` should be uni-lower.
 
 
@@ -1545,7 +1548,7 @@ Changing status from needs_info to positive_review.
 archive/issue_comments_078924.json:
 ```json
 {
-    "body": "On {{{Linux sagange 3.2.0-4-amd64 #1 SMP Debian 3.2.63-2+deb7u1 x86_64\nGNU/Linux}}}, and after merging in 6.6.rc0, I am getting only those\nerrors with `make ptestlong`:\n\n```\nsage -t --long src/sage/doctest/control.py  # 1 doctest failed\nsage -t --long src/sage/calculus/calculus.py  # 1 doctest failed\nsage -t --long src/sage/misc/trace.py  # 2 doctests failed\nsage -t --long src/sage/modular/arithgroup/arithgroup_perm.py  # Timed out\nsage -t --long src/sage/homology/simplicial_complex.py  # 1 doctest failed\n```\n\n\nSounds like they are all maxima related, and I doubt there is any\nrelation to this ticket; rc0 fails similarly. Hence I am setting\nthis to positive review on behalf of Franco.",
+    "body": "On {{{Linux sagange 3.2.0-4-amd64 #1 SMP Debian 3.2.63-2+deb7u1 x86_64\nGNU/Linux}}}, and after merging in 6.6.rc0, I am getting only those\nerrors with `make ptestlong`:\n\n```\nsage -t --long src/sage/doctest/control.py  # 1 doctest failed\nsage -t --long src/sage/calculus/calculus.py  # 1 doctest failed\nsage -t --long src/sage/misc/trace.py  # 2 doctests failed\nsage -t --long src/sage/modular/arithgroup/arithgroup_perm.py  # Timed out\nsage -t --long src/sage/homology/simplicial_complex.py  # 1 doctest failed\n```\n\nSounds like they are all maxima related, and I doubt there is any\nrelation to this ticket; rc0 fails similarly. Hence I am setting\nthis to positive review on behalf of Franco.",
     "created_at": "2015-03-23T21:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8678",
     "type": "issue_comment",
@@ -1565,7 +1568,6 @@ sage -t --long src/sage/misc/trace.py  # 2 doctests failed
 sage -t --long src/sage/modular/arithgroup/arithgroup_perm.py  # Timed out
 sage -t --long src/sage/homology/simplicial_complex.py  # 1 doctest failed
 ```
-
 
 Sounds like they are all maxima related, and I doubt there is any
 relation to this ticket; rc0 fails similarly. Hence I am setting

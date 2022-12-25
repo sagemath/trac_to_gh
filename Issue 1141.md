@@ -3,7 +3,7 @@
 archive/issues_001141.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis patch just makes a few minor adjustments which gain a bit of speed with number field elements.  It's barely worth talking about for absolute fields, but its quite nice for relative number fields.\n\nThe main work of the patch is to place a pointer to the defining polynomial into the number field element.  This possibly introduces more maintenance, but the alternative is to move the number field parent class to cython.\n\noriginal:\n\n```\nsage: L.<a> = CyclotomicField(3).extension(x^3 - 2)\nsage: timeit a^6\n100 loops, best of 3: 2.89 ms per loop\nsage: K.<a> = NumberField(x^3-2*x^2+12)\nsage: timeit a^4\n10000 loops, best of 3: 44.3 \u00c2\u00b5s per loop\nsage: O.<a,b> = EquationOrder([x^2+1, x^2+2])\nsage: timeit a*b\n1000 loops, best of 3: 770 \u00c2\u00b5s per loop\n```\n\n\npatched:\n\n```\nsage: L.<a> = CyclotomicField(3).extension(x^3 - 2)\nsage: timeit a^6\n10000 loops, best of 3: 92.7 \u00c2\u00b5s per loop\nsage: K.<a> = NumberField(x^3-2*x^2+12)\nsage: timeit a^4\n10000 loops, best of 3: 30.6 \u00c2\u00b5s per loop\nsage: O.<a,b> = EquationOrder([x^2+1, x^2+2])\nsage: timeit a*b\n100000 loops, best of 3: 19 \u00c2\u00b5s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1141\n\n",
+    "body": "Assignee: somebody\n\nThis patch just makes a few minor adjustments which gain a bit of speed with number field elements.  It's barely worth talking about for absolute fields, but its quite nice for relative number fields.\n\nThe main work of the patch is to place a pointer to the defining polynomial into the number field element.  This possibly introduces more maintenance, but the alternative is to move the number field parent class to cython.\n\noriginal:\n\n```\nsage: L.<a> = CyclotomicField(3).extension(x^3 - 2)\nsage: timeit a^6\n100 loops, best of 3: 2.89 ms per loop\nsage: K.<a> = NumberField(x^3-2*x^2+12)\nsage: timeit a^4\n10000 loops, best of 3: 44.3 \u00c2\u00b5s per loop\nsage: O.<a,b> = EquationOrder([x^2+1, x^2+2])\nsage: timeit a*b\n1000 loops, best of 3: 770 \u00c2\u00b5s per loop\n```\n\npatched:\n\n```\nsage: L.<a> = CyclotomicField(3).extension(x^3 - 2)\nsage: timeit a^6\n10000 loops, best of 3: 92.7 \u00c2\u00b5s per loop\nsage: K.<a> = NumberField(x^3-2*x^2+12)\nsage: timeit a^4\n10000 loops, best of 3: 30.6 \u00c2\u00b5s per loop\nsage: O.<a,b> = EquationOrder([x^2+1, x^2+2])\nsage: timeit a*b\n100000 loops, best of 3: 19 \u00c2\u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1141\n\n",
     "created_at": "2007-11-10T20:55:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -36,7 +36,6 @@ sage: timeit a*b
 1000 loops, best of 3: 770 Âµs per loop
 ```
 
-
 patched:
 
 ```
@@ -50,7 +49,6 @@ sage: O.<a,b> = EquationOrder([x^2+1, x^2+2])
 sage: timeit a*b
 100000 loops, best of 3: 19 Âµs per loop
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1141

@@ -3,7 +3,7 @@
 archive/issues_006677.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nIt seems that Sequence objects forgot how to typeset themselves somewhere between 3.4.2 and 4.1.\n\nIn 3.4.2:\n\n\n```\nsage: res = solve(x^2-2,x)\nsage: latex(res)\n\n\\left[x  =  -\\sqrt{ 2 }, \n x  =  \\sqrt{ 2 }\\right]\n```\n\n\nIn 4.1:\n\n\n```\nsage: latex(res)\n\n\\text{[\nx == -sqrt(2),\nx == sqrt(2)\n]}\nsage: latex(res[0])\nx = -\\sqrt{2}\n```\n\n\nAttached patch adds a `_latex_` method to `sage.structure.sequence.Sequence`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6677\n\n",
+    "body": "Assignee: @burcin\n\nIt seems that Sequence objects forgot how to typeset themselves somewhere between 3.4.2 and 4.1.\n\nIn 3.4.2:\n\n```\nsage: res = solve(x^2-2,x)\nsage: latex(res)\n\n\\left[x  =  -\\sqrt{ 2 }, \n x  =  \\sqrt{ 2 }\\right]\n```\n\nIn 4.1:\n\n```\nsage: latex(res)\n\n\\text{[\nx == -sqrt(2),\nx == sqrt(2)\n]}\nsage: latex(res[0])\nx = -\\sqrt{2}\n```\n\nAttached patch adds a `_latex_` method to `sage.structure.sequence.Sequence`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6677\n\n",
     "created_at": "2009-08-06T11:49:04Z",
     "labels": [
         "component: misc",
@@ -22,7 +22,6 @@ It seems that Sequence objects forgot how to typeset themselves somewhere betwee
 
 In 3.4.2:
 
-
 ```
 sage: res = solve(x^2-2,x)
 sage: latex(res)
@@ -31,9 +30,7 @@ sage: latex(res)
  x  =  \sqrt{ 2 }\right]
 ```
 
-
 In 4.1:
-
 
 ```
 sage: latex(res)
@@ -45,7 +42,6 @@ x == sqrt(2)
 sage: latex(res[0])
 x = -\sqrt{2}
 ```
-
 
 Attached patch adds a `_latex_` method to `sage.structure.sequence.Sequence`.
 

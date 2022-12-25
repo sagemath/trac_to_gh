@@ -3,7 +3,7 @@
 archive/issues_000694.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  =\n\n\n```\n\nI think those timings are way out of date, since Singular 3 seems\nto be *very* fast at mod p multivariate GCD computation, even\nthough it sucks over QQ.   Check out this paper:\n\n          http://www.cecm.sfu.ca/CAG/papers/brown.ps\n\nIt on exactly the problem of GCD over QQ (or equiv ZZ),\nand section 2 has a complete description of a gcd algorithm \nthat reduces gcd over ZZ to doing gcd's mod p.\n\nWho wants to be a hero -- like Jon Bober and number of partitions -- \nand implement this for Sage, so that multivariate GCD's aren't \nembarrassingly slow in Sage anymore?   This slowness *has* \nbeen something reported to me on several occasions during \nthe last 2 years. \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/694\n\n",
+    "body": "Assignee: somebody\n\nCC:  =\n\n```\n\nI think those timings are way out of date, since Singular 3 seems\nto be *very* fast at mod p multivariate GCD computation, even\nthough it sucks over QQ.   Check out this paper:\n\n          http://www.cecm.sfu.ca/CAG/papers/brown.ps\n\nIt on exactly the problem of GCD over QQ (or equiv ZZ),\nand section 2 has a complete description of a gcd algorithm \nthat reduces gcd over ZZ to doing gcd's mod p.\n\nWho wants to be a hero -- like Jon Bober and number of partitions -- \nand implement this for Sage, so that multivariate GCD's aren't \nembarrassingly slow in Sage anymore?   This slowness *has* \nbeen something reported to me on several occasions during \nthe last 2 years. \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/694\n\n",
     "created_at": "2007-09-19T20:23:41Z",
     "labels": [
         "component: basic arithmetic"
@@ -18,7 +18,6 @@ archive/issues_000694.json:
 Assignee: somebody
 
 CC:  =
-
 
 ```
 
@@ -40,7 +39,6 @@ the last 2 years.
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/694
 
@@ -73,7 +71,7 @@ this file has the singular input of a multivariate polynomial gcd that takes *mi
 archive/issue_comments_003620.json:
 ```json
 {
-    "body": "This paper describes the algorithm used in Singular:\n   http://portal.acm.org/citation.cfm?doid=800192.805698\n\nJack Schmidt claims the paper I mention above is a dead end for this problem:\n\n```\nCareful to check the papers.  The Moses, et al. paper for singular\nshows that Brown's method is ineffective for your problem, and it is\nreasonably likely that this modified Brown method of Kaltofen et al.\nis also ineffective.  The Kaltofen, et al. paper avoids the question\nof exponential runtime by restricting to bivariate dense polynomials.\nThe Wang paper describes one major improvement in a reasonable common\ncorner case for singular's algorithm.  One presumes singular can be\nasked to describe what it is doing during its EZ-GCD calculation, and\nyou can check if you are in this corner case.   Wang's EEZ-GCD may be\nthe better solution, and one should be able to implement a prototype\nof this quickly in the singular language.  At any rate, it may be\nbetter to look for improvements to EZ-GCD than for the modular gcd.\n```\n\n\nEZ-GCD is also a modular/p-adic algorithm, so it should benefit from various\nfast mod-p gcd.",
+    "body": "This paper describes the algorithm used in Singular:\n   http://portal.acm.org/citation.cfm?doid=800192.805698\n\nJack Schmidt claims the paper I mention above is a dead end for this problem:\n\n```\nCareful to check the papers.  The Moses, et al. paper for singular\nshows that Brown's method is ineffective for your problem, and it is\nreasonably likely that this modified Brown method of Kaltofen et al.\nis also ineffective.  The Kaltofen, et al. paper avoids the question\nof exponential runtime by restricting to bivariate dense polynomials.\nThe Wang paper describes one major improvement in a reasonable common\ncorner case for singular's algorithm.  One presumes singular can be\nasked to describe what it is doing during its EZ-GCD calculation, and\nyou can check if you are in this corner case.   Wang's EEZ-GCD may be\nthe better solution, and one should be able to implement a prototype\nof this quickly in the singular language.  At any rate, it may be\nbetter to look for improvements to EZ-GCD than for the modular gcd.\n```\n\nEZ-GCD is also a modular/p-adic algorithm, so it should benefit from various\nfast mod-p gcd.",
     "created_at": "2007-09-19T22:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
@@ -101,7 +99,6 @@ the better solution, and one should be able to implement a prototype
 of this quickly in the singular language.  At any rate, it may be
 better to look for improvements to EZ-GCD than for the modular gcd.
 ```
-
 
 EZ-GCD is also a modular/p-adic algorithm, so it should benefit from various
 fast mod-p gcd.
@@ -131,7 +128,7 @@ Changing assignee from somebody to jbmohler.
 archive/issue_comments_003622.json:
 ```json
 {
-    "body": "This is basically fixed (as soon as we upgrade to the newer singular).  \nFrom the Singular team:\n\n\n```\n\"hannes@mathematik.uni-kl.de\" \t\nto me, joel, sage-devel, singular-team\n\t\nshow details\n\t 8:40 am (49 minutes ago) \nDear sage-devel readers,\n\nfollowing the discussion on sage-devel last week we implemented a\nmodular approach to compute the multivariate gcd over QQ in\nSingular.\nWe still need to develop the heuristic when to prefer\nEZGCD or the modular method: currently,\nthe modular method is prefered - this is not too bad:\nthe posted examples goes from several minutes to 1 sec running time.\n\nThese changes are inlcuded in\nftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-0-3/Singular-3-0-3-1.tar.gz\n\nHans\n\nPS: the timings at\nhttp://magma.maths.usyd.edu.au/users/allan/gcdcomp.html\n(originally from http://home.bway.net/lewis/fermat/gcdcomp)\nare questionable as they refer also to computations in characteristic 43051\nin Singular 2.0.4, which it did not support.\n\n```\n",
+    "body": "This is basically fixed (as soon as we upgrade to the newer singular).  \nFrom the Singular team:\n\n```\n\"hannes@mathematik.uni-kl.de\" \t\nto me, joel, sage-devel, singular-team\n\t\nshow details\n\t 8:40 am (49 minutes ago) \nDear sage-devel readers,\n\nfollowing the discussion on sage-devel last week we implemented a\nmodular approach to compute the multivariate gcd over QQ in\nSingular.\nWe still need to develop the heuristic when to prefer\nEZGCD or the modular method: currently,\nthe modular method is prefered - this is not too bad:\nthe posted examples goes from several minutes to 1 sec running time.\n\nThese changes are inlcuded in\nftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-0-3/Singular-3-0-3-1.tar.gz\n\nHans\n\nPS: the timings at\nhttp://magma.maths.usyd.edu.au/users/allan/gcdcomp.html\n(originally from http://home.bway.net/lewis/fermat/gcdcomp)\nare questionable as they refer also to computations in characteristic 43051\nin Singular 2.0.4, which it did not support.\n\n```",
     "created_at": "2007-09-26T16:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
@@ -142,7 +139,6 @@ archive/issue_comments_003622.json:
 
 This is basically fixed (as soon as we upgrade to the newer singular).  
 From the Singular team:
-
 
 ```
 "hannes@mathematik.uni-kl.de" 	
@@ -172,7 +168,6 @@ are questionable as they refer also to computations in characteristic 43051
 in Singular 2.0.4, which it did not support.
 
 ```
-
 
 
 

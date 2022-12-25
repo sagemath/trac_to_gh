@@ -3,7 +3,7 @@
 archive/issues_003632.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve([37,0])\nsage: E.padic_regulator(5)\n```\n\n\ngives a Assertion Error.\n\nThe included patch corrects this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3632\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve([37,0])\nsage: E.padic_regulator(5)\n```\n\ngives a Assertion Error.\n\nThe included patch corrects this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3632\n\n",
     "created_at": "2008-07-10T13:11:05Z",
     "labels": [
         "component: number theory",
@@ -19,12 +19,10 @@ archive/issues_003632.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: E = EllipticCurve([37,0])
 sage: E.padic_regulator(5)
 ```
-
 
 gives a Assertion Error.
 

@@ -3,7 +3,7 @@
 archive/issues_000510.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nImporting the module sage.rings.real_mpfr in IPython causes a segfault with the backtrace included below. SAGE itself doesn't report any errors in this case.\n\n```\nIn [2]: import sage.rings.real_mpfr\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210221920 (LWP 28996)]\n0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (__pyx_v_self=0xb0dc625c, \n    __pyx_args=0xb0ce242c, __pyx_kwds=0x0) at sage/rings/real_mpfr.c:1128\n1128      Py_INCREF(__pyx_v_rnd);\n(gdb) bt\n#0  0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (\n    __pyx_v_self=0xb0dc625c, __pyx_args=0xb0ce242c, __pyx_kwds=0x0)\n    at sage/rings/real_mpfr.c:1128\n#1  0x0809c2f3 in type_call (type=0xb0d88d40, args=0xb0ce242c, kwds=0x0)\n    at Objects/typeobject.c:436\n#2  0x0805a0a7 in PyObject_Call (func=0x0, arg=0xb0ce242c, kw=0x0)\n    at Objects/abstract.c:1860\n#3  0x080c0c50 in PyEval_EvalFrameEx (f=0x83964ec, throwflag=0)\n    at Python/ceval.c:3775\n#4  0x080c564a in PyEval_EvalFrameEx (f=0x8392a9c, throwflag=0)\n    at Python/ceval.c:3650\n#5  0x080c639b in PyEval_EvalCodeEx (co=0xb0dd0ad0, globals=0xb0d9fc64, \n    locals=0x0, args=0xb0d963f8, argcount=2, kws=0x0, kwcount=0, \n    defs=0xb0ce2478, defcount=1, closure=0x0) at Python/ceval.c:2831\n```\n\n\nYou can use the patch included in #509 to run IPython under gdb.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/510\n\n",
+    "body": "Assignee: @williamstein\n\nImporting the module sage.rings.real_mpfr in IPython causes a segfault with the backtrace included below. SAGE itself doesn't report any errors in this case.\n\n```\nIn [2]: import sage.rings.real_mpfr\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210221920 (LWP 28996)]\n0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (__pyx_v_self=0xb0dc625c, \n    __pyx_args=0xb0ce242c, __pyx_kwds=0x0) at sage/rings/real_mpfr.c:1128\n1128      Py_INCREF(__pyx_v_rnd);\n(gdb) bt\n#0  0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (\n    __pyx_v_self=0xb0dc625c, __pyx_args=0xb0ce242c, __pyx_kwds=0x0)\n    at sage/rings/real_mpfr.c:1128\n#1  0x0809c2f3 in type_call (type=0xb0d88d40, args=0xb0ce242c, kwds=0x0)\n    at Objects/typeobject.c:436\n#2  0x0805a0a7 in PyObject_Call (func=0x0, arg=0xb0ce242c, kw=0x0)\n    at Objects/abstract.c:1860\n#3  0x080c0c50 in PyEval_EvalFrameEx (f=0x83964ec, throwflag=0)\n    at Python/ceval.c:3775\n#4  0x080c564a in PyEval_EvalFrameEx (f=0x8392a9c, throwflag=0)\n    at Python/ceval.c:3650\n#5  0x080c639b in PyEval_EvalCodeEx (co=0xb0dd0ad0, globals=0xb0d9fc64, \n    locals=0x0, args=0xb0d963f8, argcount=2, kws=0x0, kwcount=0, \n    defs=0xb0ce2478, defcount=1, closure=0x0) at Python/ceval.c:2831\n```\n\nYou can use the patch included in #509 to run IPython under gdb.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/510\n\n",
     "created_at": "2007-08-29T10:57:35Z",
     "labels": [
         "component: algebraic geometry",
@@ -45,7 +45,6 @@ Program received signal SIGSEGV, Segmentation fault.
     defs=0xb0ce2478, defcount=1, closure=0x0) at Python/ceval.c:2831
 ```
 
-
 You can use the patch included in #509 to run IPython under gdb.
 
 
@@ -60,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/510
 archive/issue_comments_002551.json:
 ```json
 {
-    "body": "This is not so much a bug as something that hasn't been implemented -- or even thought about yet.  It doesn't make sense to just load any random module into SAGE, since certain modules assume certain other modules have been imported first.  E.g., import sage.math first and the rest works fine:\n\n\n```\n\nIn [1]: import sage.all\n\nIn [2]: import sage.rings.real_mpfr\n\n```\n\n\nIn short, importing particular random modules without having import sage.all\nfirst is *not* supported at present.  It would be a good enhancement to implement\nsomething to force sage.all to be imported or something...",
+    "body": "This is not so much a bug as something that hasn't been implemented -- or even thought about yet.  It doesn't make sense to just load any random module into SAGE, since certain modules assume certain other modules have been imported first.  E.g., import sage.math first and the rest works fine:\n\n```\n\nIn [1]: import sage.all\n\nIn [2]: import sage.rings.real_mpfr\n\n```\n\nIn short, importing particular random modules without having import sage.all\nfirst is *not* supported at present.  It would be a good enhancement to implement\nsomething to force sage.all to be imported or something...",
     "created_at": "2007-08-31T20:09:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -71,7 +70,6 @@ archive/issue_comments_002551.json:
 
 This is not so much a bug as something that hasn't been implemented -- or even thought about yet.  It doesn't make sense to just load any random module into SAGE, since certain modules assume certain other modules have been imported first.  E.g., import sage.math first and the rest works fine:
 
-
 ```
 
 In [1]: import sage.all
@@ -79,7 +77,6 @@ In [1]: import sage.all
 In [2]: import sage.rings.real_mpfr
 
 ```
-
 
 In short, importing particular random modules without having import sage.all
 first is *not* supported at present.  It would be a good enhancement to implement
@@ -150,7 +147,7 @@ Michael
 archive/issue_comments_002555.json:
 ```json
 {
-    "body": "\n```\n[21:42] <wstein> mabshoff -- close 510 as invalid.\n[21:42] <mabshoff> ok\n```\n",
+    "body": "```\n[21:42] <wstein> mabshoff -- close 510 as invalid.\n[21:42] <mabshoff> ok\n```",
     "created_at": "2008-02-17T21:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -159,12 +156,10 @@ archive/issue_comments_002555.json:
 }
 ```
 
-
 ```
 [21:42] <wstein> mabshoff -- close 510 as invalid.
 [21:42] <mabshoff> ok
 ```
-
 
 
 
@@ -340,7 +335,7 @@ fix some circular imports in sage.rings.real_mpfr
 archive/issue_comments_002562.json:
 ```json
 {
-    "body": "Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by @burcin created at 2008-05-10 19:25:19\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\n\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
+    "body": "Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by @burcin created at 2008-05-10 19:25:19\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
     "created_at": "2008-05-10T19:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -356,7 +351,6 @@ attachment:510_real_mpfr_imports.patch fixes the problem reported in the origina
 ```
 import sage.rings.complex_field
 ```
-
 still fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.
 
 
@@ -424,7 +418,7 @@ archive/issue_events_001303.json:
 archive/issue_comments_002564.json:
 ```json
 {
-    "body": "Amazingly this patch still applies with some fuzz to my current 3.1.3.alpha2 merge tree:\n\n```\nage-3.1.3.alpha2/devel/sage$ patch -p1 --dry-run < 510_real_mpfr_imports.patch\\?format\\=raw \npatching file sage/rings/real_double.pxd\npatching file sage/rings/real_double.pyx\nHunk #2 succeeded at 1088 (offset 9 lines).\npatching file sage/rings/real_mpfr.pyx\nHunk #1 succeeded at 132 (offset 6 lines).\nHunk #2 succeeded at 158 (offset 6 lines).\nHunk #3 succeeded at 237 with fuzz 2 (offset 18 lines).\nHunk #4 succeeded at 468 (offset 63 lines).\nHunk #5 succeeded at 1879 (offset 191 lines).\npatching file sage/rings/real_rqdf.pxd\npatching file sage/rings/real_rqdf.pyx\nHunk #3 succeeded at 1263 (offset 4 lines).\n```\n\nI did not try to compile, but I consider this encouraging.",
+    "body": "Amazingly this patch still applies with some fuzz to my current 3.1.3.alpha2 merge tree:\n\n```\nage-3.1.3.alpha2/devel/sage$ patch -p1 --dry-run < 510_real_mpfr_imports.patch\\?format\\=raw \npatching file sage/rings/real_double.pxd\npatching file sage/rings/real_double.pyx\nHunk #2 succeeded at 1088 (offset 9 lines).\npatching file sage/rings/real_mpfr.pyx\nHunk #1 succeeded at 132 (offset 6 lines).\nHunk #2 succeeded at 158 (offset 6 lines).\nHunk #3 succeeded at 237 with fuzz 2 (offset 18 lines).\nHunk #4 succeeded at 468 (offset 63 lines).\nHunk #5 succeeded at 1879 (offset 191 lines).\npatching file sage/rings/real_rqdf.pxd\npatching file sage/rings/real_rqdf.pyx\nHunk #3 succeeded at 1263 (offset 4 lines).\n```\nI did not try to compile, but I consider this encouraging.",
     "created_at": "2008-09-30T12:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
@@ -450,7 +444,6 @@ patching file sage/rings/real_rqdf.pxd
 patching file sage/rings/real_rqdf.pyx
 Hunk #3 succeeded at 1263 (offset 4 lines).
 ```
-
 I did not try to compile, but I consider this encouraging.
 
 

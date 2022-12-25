@@ -3,7 +3,7 @@
 archive/issues_009401.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @orlitzky wstein @robertwb\n\nKeywords: prime number\n\nThe Pari `isprime` function is able to return a primality\ncertificate:\n\n```\ngp: isprime(2^31-1,1)\n\n[2 3 1]\n\n[3 5 1]\n\n[7 3 1]\n\n[11 3 1]\n\n[31 2 1]\n\n[151 3 1]\n\n[331 3 1]\n```\n\nHowever when calling this function from Sage, the certificate is\nlost:\n\n```\nsage: pari(2^31-1).isprime(1)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9401\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @orlitzky wstein @robertwb\n\nKeywords: prime number\n\nThe Pari `isprime` function is able to return a primality\ncertificate:\n\n```\ngp: isprime(2^31-1,1)\n\n[2 3 1]\n\n[3 5 1]\n\n[7 3 1]\n\n[11 3 1]\n\n[31 2 1]\n\n[151 3 1]\n\n[331 3 1]\n```\nHowever when calling this function from Sage, the certificate is\nlost:\n\n```\nsage: pari(2^31-1).isprime(1)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9401\n\n",
     "created_at": "2010-07-01T08:12:38Z",
     "labels": [
         "component: basic arithmetic",
@@ -43,7 +43,6 @@ gp: isprime(2^31-1,1)
 
 [331 3 1]
 ```
-
 However when calling this function from Sage, the certificate is
 lost:
 
@@ -51,7 +50,6 @@ lost:
 sage: pari(2^31-1).isprime(1)
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9401
 
@@ -64,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9401
 archive/issue_comments_089428.json:
 ```json
 {
-    "body": "\n```\nsage: pari(3).isprime()\nTrue\nsage: pari(3).isprime(1)\nFalse\nsage: pari(3).isprime(2)\nTrue\n```\n\n\n...what?",
+    "body": "```\nsage: pari(3).isprime()\nTrue\nsage: pari(3).isprime(1)\nFalse\nsage: pari(3).isprime(2)\nTrue\n```\n\n...what?",
     "created_at": "2012-01-16T04:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
@@ -72,7 +70,6 @@ archive/issue_comments_089428.json:
     "user": "https://github.com/orlitzky"
 }
 ```
-
 
 ```
 sage: pari(3).isprime()
@@ -83,7 +80,6 @@ sage: pari(3).isprime(2)
 True
 ```
 
-
 ...what?
 
 
@@ -93,7 +89,7 @@ True
 archive/issue_comments_089429.json:
 ```json
 {
-    "body": "apparently something changed (in worse) since I reported this, since indeed we now get:\n\n```\nsage: pari(2^31-1).isprime(1)\nFalse\n```\n\nI change the priority to \"major\".\n\nPaul",
+    "body": "apparently something changed (in worse) since I reported this, since indeed we now get:\n\n```\nsage: pari(2^31-1).isprime(1)\nFalse\n```\nI change the priority to \"major\".\n\nPaul",
     "created_at": "2012-01-16T07:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
@@ -108,7 +104,6 @@ apparently something changed (in worse) since I reported this, since indeed we n
 sage: pari(2^31-1).isprime(1)
 False
 ```
-
 I change the priority to "major".
 
 Paul
@@ -243,7 +238,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089435.json:
 ```json
 {
-    "body": "In principle OK, but needs to be rebased on #15124.\n\nAlso, it would be much cleaner to call `new_gen()` instead of initialising the `gen` and resetting the stack by hand:\n\n```python\ncdef GEN x\npari_catch_sig_on()\nx = gisprime(self.g, flag)\nif typ(x) != t_INT:\n    # case flag=1 with prime input: x is the certificate\n    return True, P.new_gen(x)\nelse:\n    pari_catch_sig_off()\n    return bool(signe(x))\n```\n",
+    "body": "In principle OK, but needs to be rebased on #15124.\n\nAlso, it would be much cleaner to call `new_gen()` instead of initialising the `gen` and resetting the stack by hand:\n\n```python\ncdef GEN x\npari_catch_sig_on()\nx = gisprime(self.g, flag)\nif typ(x) != t_INT:\n    # case flag=1 with prime input: x is the certificate\n    return True, P.new_gen(x)\nelse:\n    pari_catch_sig_off()\n    return bool(signe(x))\n```",
     "created_at": "2013-10-02T20:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
@@ -267,7 +262,6 @@ else:
     pari_catch_sig_off()
     return bool(signe(x))
 ```
-
 
 
 
@@ -328,7 +322,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089437.json:
 ```json
 {
-    "body": "Rebased on 6.2.base2, applied comment:7 by pbruin\n----\nNew commits:",
+    "body": "Rebased on 6.2.base2, applied comment:7 by pbruin\n\n---\nNew commits:",
     "created_at": "2014-03-01T16:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
@@ -338,7 +332,8 @@ archive/issue_comments_089437.json:
 ```
 
 Rebased on 6.2.base2, applied comment:7 by pbruin
-----
+
+---
 New commits:
 
 

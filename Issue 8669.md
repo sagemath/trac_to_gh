@@ -95,7 +95,7 @@ In `local/bin/sage-sage`, the output of `sage-spkg` is piped to `tee`, which is 
 archive/issue_comments_078750.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> The reason for the \"non-printing\" is simple:\n> \n> In `local/bin/sage-sage`, the output of `sage-spkg` is piped to `tee`, which is run from the same subshell and so gets the same signal.\n\nAny ideas how to fix this?  I tried using \"pipestatus\" from #8306, but it doesn't seem to help: when I hit ctrl-C, it prints \n\n```\n[..^Cclose failed in file object destructor:\nError in sys.excepthook:\n\nOriginal exception was:\n```\n",
+    "body": "Replying to [comment:2 leif]:\n> The reason for the \"non-printing\" is simple:\n> \n> In `local/bin/sage-sage`, the output of `sage-spkg` is piped to `tee`, which is run from the same subshell and so gets the same signal.\n\n\nAny ideas how to fix this?  I tried using \"pipestatus\" from #8306, but it doesn't seem to help: when I hit ctrl-C, it prints \n\n```\n[..^Cclose failed in file object destructor:\nError in sys.excepthook:\n\nOriginal exception was:\n```",
     "created_at": "2010-04-10T22:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
@@ -109,6 +109,7 @@ Replying to [comment:2 leif]:
 > 
 > In `local/bin/sage-sage`, the output of `sage-spkg` is piped to `tee`, which is run from the same subshell and so gets the same signal.
 
+
 Any ideas how to fix this?  I tried using "pipestatus" from #8306, but it doesn't seem to help: when I hit ctrl-C, it prints 
 
 ```
@@ -117,7 +118,6 @@ Error in sys.excepthook:
 
 Original exception was:
 ```
-
 
 
 

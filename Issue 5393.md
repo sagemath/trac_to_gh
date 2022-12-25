@@ -3,7 +3,7 @@
 archive/issues_005393.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nPyCrypto ARC2 Module Buffer Overflow Vulnerability\n\nPyCrypto (Python Cryptography Toolkit) is prone to a buffer-overflow vulnerability because it fails to adequately verify user-supplied input.\n\nSuccessful exploits may allow attackers to execute arbitrary code in the context of applications using the vulnerable module. Failed attempts may lead to a denial-of-service condition.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5393\n\n",
+    "body": "Assignee: mabshoff\n\n```\nPyCrypto ARC2 Module Buffer Overflow Vulnerability\n\nPyCrypto (Python Cryptography Toolkit) is prone to a buffer-overflow vulnerability because it fails to adequately verify user-supplied input.\n\nSuccessful exploits may allow attackers to execute arbitrary code in the context of applications using the vulnerable module. Failed attempts may lead to a denial-of-service condition.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5393\n\n",
     "created_at": "2009-02-27T16:38:36Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_005393.json:
 ```
 Assignee: mabshoff
 
-
 ```
 PyCrypto ARC2 Module Buffer Overflow Vulnerability
 
@@ -27,7 +26,6 @@ PyCrypto (Python Cryptography Toolkit) is prone to a buffer-overflow vulnerabili
 
 Successful exploits may allow attackers to execute arbitrary code in the context of applications using the vulnerable module. Failed attempts may lead to a denial-of-service condition.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5393
 

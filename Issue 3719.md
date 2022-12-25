@@ -3,7 +3,7 @@
 archive/issues_003719.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  alexghitza\n\nAs reported by Ursula Whitcher\n\n\n```\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\n```\n\nyields an error. The problem is a bug in the current version of the GAP package HAP, version 1.8.5. The latest version 1.8.7 but there the bug still exists\n\n\n```\ngap> G := SymmetricGroup(4);\nSym( [ 1 .. 4 ] )\ngap> GroupCohomology(G,1); ## an improvement over 1.8.5\n[  ]\ngap> GroupCohomology(G,1,2);\nList Element: <position> must be a positive integer (not a integer) at\nif IsInt( C!.fpIntHom[n] )  then\n...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3719\n\n",
+    "body": "Assignee: tbd\n\nCC:  alexghitza\n\nAs reported by Ursula Whitcher\n\n```\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\n```\nyields an error. The problem is a bug in the current version of the GAP package HAP, version 1.8.5. The latest version 1.8.7 but there the bug still exists\n\n```\ngap> G := SymmetricGroup(4);\nSym( [ 1 .. 4 ] )\ngap> GroupCohomology(G,1); ## an improvement over 1.8.5\n[  ]\ngap> GroupCohomology(G,1,2);\nList Element: <position> must be a positive integer (not a integer) at\nif IsInt( C!.fpIntHom[n] )  then\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3719\n\n",
     "created_at": "2008-07-24T11:16:49Z",
     "labels": [
         "component: algebra",
@@ -22,14 +22,11 @@ CC:  alexghitza
 
 As reported by Ursula Whitcher
 
-
 ```
 sage: G = SymmetricGroup(4)
 sage: G.cohomology(1,2)
 ```
-
 yields an error. The problem is a bug in the current version of the GAP package HAP, version 1.8.5. The latest version 1.8.7 but there the bug still exists
-
 
 ```
 gap> G := SymmetricGroup(4);
@@ -41,7 +38,6 @@ List Element: <position> must be a positive integer (not a integer) at
 if IsInt( C!.fpIntHom[n] )  then
 ...
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3719
@@ -91,7 +87,7 @@ http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.10_6.spkg
 archive/issue_comments_026330.json:
 ```json
 {
-    "body": "Sorry, meant to add that this passes sage -testall on amd64 hardy heron and includes hap1.8.8 which fixes the problem reported above.\n\n\n```\nsage: gap.eval('LoadPackage(\"hap\")')\n'true'\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\nMultiplicative Abelian Group isomorphic to C2\n```\n",
+    "body": "Sorry, meant to add that this passes sage -testall on amd64 hardy heron and includes hap1.8.8 which fixes the problem reported above.\n\n```\nsage: gap.eval('LoadPackage(\"hap\")')\n'true'\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\nMultiplicative Abelian Group isomorphic to C2\n```",
     "created_at": "2008-08-03T02:38:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3719",
     "type": "issue_comment",
@@ -102,7 +98,6 @@ archive/issue_comments_026330.json:
 
 Sorry, meant to add that this passes sage -testall on amd64 hardy heron and includes hap1.8.8 which fixes the problem reported above.
 
-
 ```
 sage: gap.eval('LoadPackage("hap")')
 'true'
@@ -110,7 +105,6 @@ sage: G = SymmetricGroup(4)
 sage: G.cohomology(1,2)
 Multiplicative Abelian Group isomorphic to C2
 ```
-
 
 
 
@@ -162,7 +156,7 @@ You mean, supply a patch to permgroup.py with this addition to the docstring to 
 archive/issue_comments_026333.json:
 ```json
 {
-    "body": "Replying to [comment:5 wdj]:\n> Michael:\n> You mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?\n\nYes, it should be an optional doctest. I am somewhat concerned that the author of the GAP package just rereleased the package with the bug fix instead of incrementing the release number. Since various packaging efforts are under way I could imagine something like this not getting fixed upstream in other distributions, so the doctest when run with optional flags would show that the problem remains unfixed. \n\nIt is still my plan to used optional testing in the future at least for the build on sage.math per default.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 wdj]:\n> Michael:\n> You mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?\n\n\nYes, it should be an optional doctest. I am somewhat concerned that the author of the GAP package just rereleased the package with the bug fix instead of incrementing the release number. Since various packaging efforts are under way I could imagine something like this not getting fixed upstream in other distributions, so the doctest when run with optional flags would show that the problem remains unfixed. \n\nIt is still my plan to used optional testing in the future at least for the build on sage.math per default.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-03T13:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3719",
     "type": "issue_comment",
@@ -174,6 +168,7 @@ archive/issue_comments_026333.json:
 Replying to [comment:5 wdj]:
 > Michael:
 > You mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?
+
 
 Yes, it should be an optional doctest. I am somewhat concerned that the author of the GAP package just rereleased the package with the bug fix instead of incrementing the release number. Since various packaging efforts are under way I could imagine something like this not getting fixed upstream in other distributions, so the doctest when run with optional flags would show that the problem remains unfixed. 
 
@@ -230,7 +225,7 @@ BTW, I am one of the webmasters for GAP (hence involved wityh package updates) a
 archive/issue_comments_026336.json:
 ```json
 {
-    "body": "> Okay, I just attached the patch you requested to this ticket. (I wasn't sure\n>  if it needed a new ticket or not.) It passes sage -t but it dawned on \n> me afterwards that sage -t would not test for optional docstring additions. \n\nUse\n\n```\n\n  sage -t --optional \n\n```\n",
+    "body": "> Okay, I just attached the patch you requested to this ticket. (I wasn't sure\n>  if it needed a new ticket or not.) It passes sage -t but it dawned on \n> me afterwards that sage -t would not test for optional docstring additions. \n\n\nUse\n\n```\n\n  sage -t --optional \n\n```",
     "created_at": "2008-08-03T17:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3719",
     "type": "issue_comment",
@@ -243,6 +238,7 @@ archive/issue_comments_026336.json:
 >  if it needed a new ticket or not.) It passes sage -t but it dawned on 
 > me afterwards that sage -t would not test for optional docstring additions. 
 
+
 Use
 
 ```
@@ -250,7 +246,6 @@ Use
   sage -t --optional 
 
 ```
-
 
 
 

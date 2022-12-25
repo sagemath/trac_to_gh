@@ -50,7 +50,7 @@ archive/issue_events_004663.json:
 archive/issue_comments_012285.json:
 ```json
 {
-    "body": "\n```\n 1. add to __cmp__ to distinguish Bipartite from other graphs\n 2. loops - this should always be false for bipartite, right? (other functions with \"loops\" in the name)\n 3. density - should this reflect \"bipartite density\"?\n 4. add_vertex - to which side?\n 5. add_vertices - what to do with this?\n 6. clear - left & right too?\n 7. add left_vertices and right_vertices?\n 8. complement?\n 9. copy\n10. add_edge(s)\n11. adjacency_matrix - should this order the vertices a certain way?\n12. add_cycle\n13. add_path\n14. add a function \"bipartite_subgraph\" to preserve class?\n15. bipartite_color, bipartite_sets, is_bipartite\n```\n",
+    "body": "```\n 1. add to __cmp__ to distinguish Bipartite from other graphs\n 2. loops - this should always be false for bipartite, right? (other functions with \"loops\" in the name)\n 3. density - should this reflect \"bipartite density\"?\n 4. add_vertex - to which side?\n 5. add_vertices - what to do with this?\n 6. clear - left & right too?\n 7. add left_vertices and right_vertices?\n 8. complement?\n 9. copy\n10. add_edge(s)\n11. adjacency_matrix - should this order the vertices a certain way?\n12. add_cycle\n13. add_path\n14. add a function \"bipartite_subgraph\" to preserve class?\n15. bipartite_color, bipartite_sets, is_bipartite\n```",
     "created_at": "2008-01-27T18:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
@@ -58,7 +58,6 @@ archive/issue_comments_012285.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
  1. add to __cmp__ to distinguish Bipartite from other graphs
@@ -77,7 +76,6 @@ archive/issue_comments_012285.json:
 14. add a function "bipartite_subgraph" to preserve class?
 15. bipartite_color, bipartite_sets, is_bipartite
 ```
-
 
 
 
@@ -400,7 +398,7 @@ archive/issue_events_004673.json:
 archive/issue_comments_012294.json:
 ```json
 {
-    "body": "Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)\n> Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).\n\nI tried (for complete, random and random regular bipartite graphs) and it's not an easy task:\n- the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests\n- algorithms modifying a graph with the addition of vertices fail since the side is not given. We must either implement specific versions for `BipartiteGraph` or modify these algorithms to work properly with `BipartiteGraph`.\nSo it's not so easy to do",
+    "body": "Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)\n> Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).\n\n\nI tried (for complete, random and random regular bipartite graphs) and it's not an easy task:\n- the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests\n- algorithms modifying a graph with the addition of vertices fail since the side is not given. We must either implement specific versions for `BipartiteGraph` or modify these algorithms to work properly with `BipartiteGraph`.\nSo it's not so easy to do",
     "created_at": "2022-02-02T17:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
@@ -411,6 +409,7 @@ archive/issue_comments_012294.json:
 
 Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)
 > Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).
+
 
 I tried (for complete, random and random regular bipartite graphs) and it's not an easy task:
 - the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests
@@ -424,7 +423,7 @@ So it's not so easy to do
 archive/issue_comments_012295.json:
 ```json
 {
-    "body": "Replying to [comment:19 dcoudert]:\n> Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)\n> > Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).\n> \n> I tried (for complete, random and random regular bipartite graphs) and it's not an easy task:\n\nThank you for attempting it.\n\n> - the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests\n\nThis is minor IMO (although it might be good for the two to be consistent); just annoying to do.\n\n> - algorithms modifying a graph with the addition of vertices fail since the side is not given. We must either implement specific versions for `BipartiteGraph` or modify these algorithms to work properly with `BipartiteGraph`.\n\nThis suggests that there is a compatibility issue between the two classes, which is a bug IMO since `BipartiteGraph` is a subclass of `Graph`. We probably need to modify `add_vertex` and `add_edge` to be compatible, such as returning a generic graph. Mainly, I am not sure I agree with the behavior of raising an error when the edge does not give a bipartite graph like in #8744 (although without such a complicated thing of recoloring the bipartite graph).\n\nEssentially, IMO subclasses should behave like the base class but with extra features that utilize the special aspects (sometimes known as the [\"is-a\" test](https://en.wikipedia.org/wiki/Is-a)).",
+    "body": "Replying to [comment:19 dcoudert]:\n> Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)\n> > Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).\n\n> \n> I tried (for complete, random and random regular bipartite graphs) and it's not an easy task:\n\n\nThank you for attempting it.\n\n> - the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests\n\n\nThis is minor IMO (although it might be good for the two to be consistent); just annoying to do.\n\n> - algorithms modifying a graph with the addition of vertices fail since the side is not given. We must either implement specific versions for `BipartiteGraph` or modify these algorithms to work properly with `BipartiteGraph`.\n\n\nThis suggests that there is a compatibility issue between the two classes, which is a bug IMO since `BipartiteGraph` is a subclass of `Graph`. We probably need to modify `add_vertex` and `add_edge` to be compatible, such as returning a generic graph. Mainly, I am not sure I agree with the behavior of raising an error when the edge does not give a bipartite graph like in #8744 (although without such a complicated thing of recoloring the bipartite graph).\n\nEssentially, IMO subclasses should behave like the base class but with extra features that utilize the special aspects (sometimes known as the [\"is-a\" test](https://en.wikipedia.org/wiki/Is-a)).",
     "created_at": "2022-02-03T01:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
@@ -436,16 +435,20 @@ archive/issue_comments_012295.json:
 Replying to [comment:19 dcoudert]:
 > Proposal from [#33261#comment:3](https://trac.sagemath.org/ticket/33261#comment:3)
 > > Side note: The complete bipartite graph constructor should return a `BipartiteGraph` object IMO (instead of just a usual `Graph`).
+
 > 
 > I tried (for complete, random and random regular bipartite graphs) and it's not an easy task:
+
 
 Thank you for attempting it.
 
 > - the `__repr__` method of `BipartiteGraph` modifies the name string and so we have to correct several doctests
 
+
 This is minor IMO (although it might be good for the two to be consistent); just annoying to do.
 
 > - algorithms modifying a graph with the addition of vertices fail since the side is not given. We must either implement specific versions for `BipartiteGraph` or modify these algorithms to work properly with `BipartiteGraph`.
+
 
 This suggests that there is a compatibility issue between the two classes, which is a bug IMO since `BipartiteGraph` is a subclass of `Graph`. We probably need to modify `add_vertex` and `add_edge` to be compatible, such as returning a generic graph. Mainly, I am not sure I agree with the behavior of raising an error when the edge does not give a bipartite graph like in #8744 (although without such a complicated thing of recoloring the bipartite graph).
 

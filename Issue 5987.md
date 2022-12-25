@@ -53,7 +53,7 @@ Attachment [trac_5987.patch](tarball://root/attachments/some-uuid/ticket5987/tra
 archive/issue_comments_047489.json:
 ```json
 {
-    "body": "This patch is wrong. Instead of deleting the tests they should either be rewritten as \n\n```\nsage: f !=g\nTrue\n```\n\nor\n\n```\nsage: f<g in [-1,1]\nTrue\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch is wrong. Instead of deleting the tests they should either be rewritten as \n\n```\nsage: f !=g\nTrue\n```\nor\n\n```\nsage: f<g in [-1,1]\nTrue\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-05-05T07:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
@@ -68,14 +68,12 @@ This patch is wrong. Instead of deleting the tests they should either be rewritt
 sage: f !=g
 True
 ```
-
 or
 
 ```
 sage: f<g in [-1,1]
 True
 ```
-
 
 Cheers,
 

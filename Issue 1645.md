@@ -3,7 +3,7 @@
 archive/issues_001645.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThis should either raise an error or give a result:\n\n\n\n```\na = RealInterval('2.3')\nerf(a)\n```\n\n\n\nCPU is at about 0%, so it is doing nothing.\n----\nmaybe there are other unsupported functions, should be checked out!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1645\n\n",
+    "body": "Assignee: jkantor\n\nThis should either raise an error or give a result:\n\n\n```\na = RealInterval('2.3')\nerf(a)\n```\n\n\nCPU is at about 0%, so it is doing nothing.\n\n---\nmaybe there are other unsupported functions, should be checked out!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1645\n\n",
     "created_at": "2007-12-31T12:05:23Z",
     "labels": [
         "component: numerical",
@@ -21,16 +21,15 @@ Assignee: jkantor
 This should either raise an error or give a result:
 
 
-
 ```
 a = RealInterval('2.3')
 erf(a)
 ```
 
 
-
 CPU is at about 0%, so it is doing nothing.
-----
+
+---
 maybe there are other unsupported functions, should be checked out!
 
 Issue created by migration from https://trac.sagemath.org/ticket/1645

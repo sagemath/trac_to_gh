@@ -3,7 +3,7 @@
 archive/issues_009988.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  jpflori\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jpflori\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
     "created_at": "2010-09-23T22:07:51Z",
     "labels": [
         "component: symbolics"
@@ -21,7 +21,6 @@ CC:  jpflori
 
 Attached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:
 
-
 ```
 sage: x,y,z = var('x,y,z')
 sage: e = x + x*y + z^y + 3*y*z; e
@@ -35,7 +34,6 @@ x
 sage: e.op[1:]
 [3*y*z, z^y, x]
 ```
-
 
 Using `__getitem__()` directly was not an option since it breaks conversion to numpy.
 
@@ -108,7 +106,7 @@ Does this depend at all on any of the Pynac 0.2.1 tickets' patches?
 archive/issue_comments_100189.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> What is the `property` thing in Python/Cython?  I haven't heard of that before (as opposed to `def` or `cdef` or `class`).\n\nI also found out about it while looking through the Sage library code for a way to make `numpy` work when I define `__getitem__()`:\n\nhttp://docs.cython.org/src/userguide/extension_types.html#properties\n\nThe function defined by `__get__()` is run when you access that property. This makes the syntax look much cleaner. You don't need to put `()` at the end any more, compared to the syntax needed for `.operands()`.\n \n> Does this depend at all on any of the Pynac 0.2.1 tickets' patches?\n\nNo, it should be independent. Though I admit that there are a bunch of symbolics patches before this on my queue.",
+    "body": "Replying to [comment:2 kcrisman]:\n> What is the `property` thing in Python/Cython?  I haven't heard of that before (as opposed to `def` or `cdef` or `class`).\n\n\nI also found out about it while looking through the Sage library code for a way to make `numpy` work when I define `__getitem__()`:\n\nhttp://docs.cython.org/src/userguide/extension_types.html#properties\n\nThe function defined by `__get__()` is run when you access that property. This makes the syntax look much cleaner. You don't need to put `()` at the end any more, compared to the syntax needed for `.operands()`.\n \n> Does this depend at all on any of the Pynac 0.2.1 tickets' patches?\n\n\nNo, it should be independent. Though I admit that there are a bunch of symbolics patches before this on my queue.",
     "created_at": "2010-09-24T15:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -120,6 +118,7 @@ archive/issue_comments_100189.json:
 Replying to [comment:2 kcrisman]:
 > What is the `property` thing in Python/Cython?  I haven't heard of that before (as opposed to `def` or `cdef` or `class`).
 
+
 I also found out about it while looking through the Sage library code for a way to make `numpy` work when I define `__getitem__()`:
 
 http://docs.cython.org/src/userguide/extension_types.html#properties
@@ -127,6 +126,7 @@ http://docs.cython.org/src/userguide/extension_types.html#properties
 The function defined by `__get__()` is run when you access that property. This makes the syntax look much cleaner. You don't need to put `()` at the end any more, compared to the syntax needed for `.operands()`.
  
 > Does this depend at all on any of the Pynac 0.2.1 tickets' patches?
+
 
 No, it should be independent. Though I admit that there are a bunch of symbolics patches before this on my queue.
 
@@ -193,7 +193,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_100193.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n> The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n\nDone. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n\n> Any reason why expr.op isn't just a plain list?\n\nI wanted to avoid traversing the vector storing the operands and creating a python object for each. A list wouldn't allow nested indexing either:\n\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\n```\n\n\nThis syntax was proposed in a discussion at Sage days 24 last summer.\n\n\nApply trac_9989-operands.take2.patch",
+    "body": "Replying to [comment:5 robertwb]:\n> The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n\n\nDone. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n\n> Any reason why expr.op isn't just a plain list?\n\n\nI wanted to avoid traversing the vector storing the operands and creating a python object for each. A list wouldn't allow nested indexing either:\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\n```\n\nThis syntax was proposed in a discussion at Sage days 24 last summer.\n\n\nApply trac_9989-operands.take2.patch",
     "created_at": "2011-03-23T11:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -205,12 +205,13 @@ archive/issue_comments_100193.json:
 Replying to [comment:5 robertwb]:
 > The error "TypeError: cannot index numeric, constant or symbol" is rather obscure, better to make it something like "... has no operands."
 
+
 Done. The new message is: "expressions containing only a numeric coefficient, constant or symbol have no operands"
 
 > Any reason why expr.op isn't just a plain list?
 
-I wanted to avoid traversing the vector storing the operands and creating a python object for each. A list wouldn't allow nested indexing either:
 
+I wanted to avoid traversing the vector storing the operands and creating a python object for each. A list wouldn't allow nested indexing either:
 
 ```
 sage: x,y,z = var('x,y,z')
@@ -221,7 +222,6 @@ sage: e.op[1]
 sage: e.op[1,1]
 z
 ```
-
 
 This syntax was proposed in a discussion at Sage days 24 last summer.
 
@@ -253,7 +253,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_100195.json:
 ```json
 {
-    "body": "Replying to [comment:6 burcin]:\n> Replying to [comment:5 robertwb]:\n> > The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n> \n> Done. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n> \nI think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.",
+    "body": "Replying to [comment:6 burcin]:\n> Replying to [comment:5 robertwb]:\n> > The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n\n> \n> Done. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n> \n  \nI think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.",
     "created_at": "2011-03-23T11:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -265,9 +265,11 @@ archive/issue_comments_100195.json:
 Replying to [comment:6 burcin]:
 > Replying to [comment:5 robertwb]:
 > > The error "TypeError: cannot index numeric, constant or symbol" is rather obscure, better to make it something like "... has no operands."
+
 > 
 > Done. The new message is: "expressions containing only a numeric coefficient, constant or symbol have no operands"
 > 
+  
 I think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.
 
 
@@ -313,7 +315,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_100198.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> Replying to [comment:6 burcin]:\n> > Replying to [comment:5 robertwb]:\n> > > The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n> > \n> > Done. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n> > \n> I think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.\n\nGood catch! I forgot to change that message. Updated patch attached, with same name.",
+    "body": "Replying to [comment:7 kcrisman]:\n> Replying to [comment:6 burcin]:\n> > Replying to [comment:5 robertwb]:\n> > > The error \"TypeError: cannot index numeric, constant or symbol\" is rather obscure, better to make it something like \"... has no operands.\"\n\n> > \n> > Done. The new message is: \"expressions containing only a numeric coefficient, constant or symbol have no operands\"\n> > \n  \n> I think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.\n\nGood catch! I forgot to change that message. Updated patch attached, with same name.",
     "created_at": "2011-03-23T12:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -326,9 +328,11 @@ Replying to [comment:7 kcrisman]:
 > Replying to [comment:6 burcin]:
 > > Replying to [comment:5 robertwb]:
 > > > The error "TypeError: cannot index numeric, constant or symbol" is rather obscure, better to make it something like "... has no operands."
+
 > > 
 > > Done. The new message is: "expressions containing only a numeric coefficient, constant or symbol have no operands"
 > > 
+  
 > I think that the part in expression.pyx still has this syntax, and I agree that it is confusing.  Putting 'needs info' just in case that is intentional.
 
 Good catch! I forgot to change that message. Updated patch attached, with same name.
@@ -360,7 +364,7 @@ Slowly working my way through it... Cython not being my forte... but looks good 
 archive/issue_comments_100200.json:
 ```json
 {
-    "body": "There is no doctest for\n\n```\nind_err_msg = \"index should either be a slice object, an integer or a list of integers\"\n```\n\nAnd you might as well just use `ind_err_msg` in line 139 instead of typing it again.",
+    "body": "There is no doctest for\n\n```\nind_err_msg = \"index should either be a slice object, an integer or a list of integers\"\n```\nAnd you might as well just use `ind_err_msg` in line 139 instead of typing it again.",
     "created_at": "2011-03-23T12:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -374,7 +378,6 @@ There is no doctest for
 ```
 ind_err_msg = "index should either be a slice object, an integer or a list of integers"
 ```
-
 And you might as well just use `ind_err_msg` in line 139 instead of typing it again.
 
 
@@ -384,7 +387,7 @@ And you might as well just use `ind_err_msg` in line 139 instead of typing it ag
 archive/issue_comments_100201.json:
 ```json
 {
-    "body": "So far looks good - thanks to [a little help](http://stackoverflow.com/questions/2936863/python-implementing-slicing-in-getitem) and [the Ginac refs](http://www.ginac.de/tutorial/Information-about-expressions.html).  \n\nQuestions, though.\n* Regarding the error message:\n\n```\nsage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\nsage: f.op[3]\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\nIndexError: operand index out of range, got 3, expect between -3 and 3\n```\n\n   Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  \n\n* Next, I wonder whether the following can be supported:\n\n```\nsage: f.op[2:3,3]\nTypeError: an integer is required\n```\n\n   since matrices can do this\n\n```\nsage: M = matrix(4,range(16))\nsage: M[2:3]\n[ 8  9 10 11]\nsage: M[2:3,3]\n[11]\n```\n\n   The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do \n\n```\nsage: f.op[2].op[0:1]\n[sin(log(x))]\n```\n\n   But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.\n* Here is something needed for sure:\n\n```\nsage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\nsage: f[1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nTypeError: 'sage.symbolic.expression.Expression' object does not support indexing\nsage: search_src('does not support indexing')\n<no response>\n```\n\n   We should have at least one doctest *somewhere* that tests this.\n\nBut overall the code is correct for the promised functionality and passes its tests, documented pretty well *if* you know enough about !GEx etc.  So I would say good work, needs work for the last item above and probably the first, and needs info for the second item (matrix-style slices).",
+    "body": "So far looks good - thanks to [a little help](http://stackoverflow.com/questions/2936863/python-implementing-slicing-in-getitem) and [the Ginac refs](http://www.ginac.de/tutorial/Information-about-expressions.html).  \n\nQuestions, though.\n* Regarding the error message:\n\n```\nsage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\nsage: f.op[3]\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\nIndexError: operand index out of range, got 3, expect between -3 and 3\n```\n   Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  \n\n* Next, I wonder whether the following can be supported:\n\n```\nsage: f.op[2:3,3]\nTypeError: an integer is required\n```\n   since matrices can do this\n\n```\nsage: M = matrix(4,range(16))\nsage: M[2:3]\n[ 8  9 10 11]\nsage: M[2:3,3]\n[11]\n```\n   The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do \n\n```\nsage: f.op[2].op[0:1]\n[sin(log(x))]\n```\n   But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.\n* Here is something needed for sure:\n\n```\nsage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\nsage: f[1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nTypeError: 'sage.symbolic.expression.Expression' object does not support indexing\nsage: search_src('does not support indexing')\n<no response>\n```\n   We should have at least one doctest *somewhere* that tests this.\n\nBut overall the code is correct for the promised functionality and passes its tests, documented pretty well *if* you know enough about !GEx etc.  So I would say good work, needs work for the last item above and probably the first, and needs info for the second item (matrix-style slices).",
     "created_at": "2011-03-23T15:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -405,7 +408,6 @@ sage: f.op[3]
 IndexError                                Traceback (most recent call last)
 IndexError: operand index out of range, got 3, expect between -3 and 3
 ```
-
    Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  
 
 * Next, I wonder whether the following can be supported:
@@ -414,7 +416,6 @@ IndexError: operand index out of range, got 3, expect between -3 and 3
 sage: f.op[2:3,3]
 TypeError: an integer is required
 ```
-
    since matrices can do this
 
 ```
@@ -424,14 +425,12 @@ sage: M[2:3]
 sage: M[2:3,3]
 [11]
 ```
-
    The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do 
 
 ```
 sage: f.op[2].op[0:1]
 [sin(log(x))]
 ```
-
    But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.
 * Here is something needed for sure:
 
@@ -444,7 +443,6 @@ TypeError: 'sage.symbolic.expression.Expression' object does not support indexin
 sage: search_src('does not support indexing')
 <no response>
 ```
-
    We should have at least one doctest *somewhere* that tests this.
 
 But overall the code is correct for the promised functionality and passes its tests, documented pretty well *if* you know enough about !GEx etc.  So I would say good work, needs work for the last item above and probably the first, and needs info for the second item (matrix-style slices).
@@ -474,7 +472,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_100203.json:
 ```json
 {
-    "body": "Thank you for the thorough reviews. I appreciate the feedback and it's certainly good for someone to look over my changes, since there are often rough edges I fail to see after staring at the code for a while.\n\nReplying to [comment:11 kcrisman]:\n\n> Questions, though.\n>  * Regarding the error message:\n> {{{\n> sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\n> sage: f.op[3]\n> ---------------------------------------------------------------------------\n> IndexError                                Traceback (most recent call last)\n> IndexError: operand index out of range, got 3, expect between -3 and 3\n> }}}\n>    Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  \n\nFixed.\n\n>  * Next, I wonder whether the following can be supported:\n> {{{\n> sage: f.op[2:3,3]\n> TypeError: an integer is required\n> }}}\n>    since matrices can do this\n> {{{\n> sage: M = matrix(4,range(16))\n> sage: M[2:3]\n> [ 8  9 10 11]\n> sage: M[2:3,3]\n> [11]\n> }}}\n>    The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do \n> {{{\n> sage: f.op[2].op[0:1]\n> [sin(log(x))]\n> }}}\n>    But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.\n\nThe output is a list if the index is a slice. We could pass further indices to the list's `__getitem__()` of course, though I'm not convinced this convenience is really a good feature.\n\n>  * Here is something needed for sure:\n> {{{\n> sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\n> sage: f[1]\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n> TypeError: 'sage.symbolic.expression.Expression' object does not support indexing\n> sage: search_src('does not support indexing')\n> <no response>\n> }}}\n>    We should have at least one doctest *somewhere* that tests this.\n\nI added a test in the docstring for `__get__` in `expression.pyx`.\n\n\nFor patchbot:\n\nApply trac_9989-operands.take3.patch",
+    "body": "Thank you for the thorough reviews. I appreciate the feedback and it's certainly good for someone to look over my changes, since there are often rough edges I fail to see after staring at the code for a while.\n\nReplying to [comment:11 kcrisman]:\n\n> Questions, though.\n> * Regarding the error message:\n> \n> ```\n> sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\n> sage: f.op[3]\n> ---------------------------------------------------------------------------\n> IndexError                                Traceback (most recent call last)\n> IndexError: operand index out of range, got 3, expect between -3 and 3\n> ```\n>    Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  \n\n\nFixed.\n\n>  * Next, I wonder whether the following can be supported:\n \n> {{{\n> sage: f.op[2:3,3]\n> TypeError: an integer is required\n> }}}\n>    since matrices can do this\n> \n> ```\n> sage: M = matrix(4,range(16))\n> sage: M[2:3]\n> [ 8  9 10 11]\n> sage: M[2:3,3]\n> [11]\n> ```\n>    The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do \n> \n> ```\n> sage: f.op[2].op[0:1]\n> [sin(log(x))]\n> ```\n>    But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.\n\n\nThe output is a list if the index is a slice. We could pass further indices to the list's `__getitem__()` of course, though I'm not convinced this convenience is really a good feature.\n\n>  * Here is something needed for sure:\n \n> {{{\n> sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))\n> sage: f[1]\n> \n> ---\n> TypeError                                 Traceback (most recent call last)\n> TypeError: 'sage.symbolic.expression.Expression' object does not support indexing\n> sage: search_src('does not support indexing')\n> <no response>\n> }}}\n>    We should have at least one doctest *somewhere* that tests this.\n\n\nI added a test in the docstring for `__get__` in `expression.pyx`.\n\n\nFor patchbot:\n\nApply trac_9989-operands.take3.patch",
     "created_at": "2011-05-31T13:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -488,51 +486,60 @@ Thank you for the thorough reviews. I appreciate the feedback and it's certainly
 Replying to [comment:11 kcrisman]:
 
 > Questions, though.
->  * Regarding the error message:
-> {{{
+> * Regarding the error message:
+> 
+> ```
 > sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))
 > sage: f.op[3]
 > ---------------------------------------------------------------------------
 > IndexError                                Traceback (most recent call last)
 > IndexError: operand index out of range, got 3, expect between -3 and 3
-> }}}
+> ```
 >    Is this really the error message we want?  Here it's the 'exclusive' between, but that could be confusing.  Maybe it should say between -3 and 2 (length ops -1)?  
+
 
 Fixed.
 
 >  * Next, I wonder whether the following can be supported:
+ 
 > {{{
 > sage: f.op[2:3,3]
 > TypeError: an integer is required
 > }}}
 >    since matrices can do this
-> {{{
+> 
+> ```
 > sage: M = matrix(4,range(16))
 > sage: M[2:3]
 > [ 8  9 10 11]
 > sage: M[2:3,3]
 > [11]
-> }}}
+> ```
 >    The current code ends everything if it's a slice; you just get the operands at that level.  But it would be interesting to get the 2nd element of each operand, though perhaps not very useful since you might not know what it is ahead of time.  But perhaps for very regular expressions (Christoffel symbol-type surfeit of indices?) it could be useful.  We might also want something like `sage: M[2:3,3:4]` to be supported, such as `sage: f.op[2,0:1]` instead of having to do 
-> {{{
+> 
+> ```
 > sage: f.op[2].op[0:1]
 > [sin(log(x))]
-> }}}
+> ```
 >    But maybe going back and forth between Ginac and Sage in the way you'd have to for that is tricky.
+
 
 The output is a list if the index is a slice. We could pass further indices to the list's `__getitem__()` of course, though I'm not convinced this convenience is really a good feature.
 
 >  * Here is something needed for sure:
+ 
 > {{{
 > sage: f = 3*x^2+2*sin(x)-32*sin(ln(x))
 > sage: f[1]
-> ---------------------------------------------------------------------------
+> 
+> ---
 > TypeError                                 Traceback (most recent call last)
 > TypeError: 'sage.symbolic.expression.Expression' object does not support indexing
 > sage: search_src('does not support indexing')
 > <no response>
 > }}}
 >    We should have at least one doctest *somewhere* that tests this.
+
 
 I added a test in the docstring for `__get__` in `expression.pyx`.
 
@@ -584,7 +591,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_100206.json:
 ```json
 {
-    "body": "Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by @kcrisman created at 2011-06-08 20:28:19\n\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
+    "body": "Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by @kcrisman created at 2011-06-08 20:28:19\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
     "created_at": "2011-06-08T20:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -595,11 +602,9 @@ archive/issue_comments_100206.json:
 
 Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by @kcrisman created at 2011-06-08 20:28:19
 
-
 ```
 Hunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).
 ```
-
 
 I certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.
 
@@ -610,7 +615,7 @@ I certainly don't have time to reread this whole patch again, so *assuming* that
 archive/issue_comments_100207.json:
 ```json
 {
-    "body": "*cringe* I am ready to write some documentation if that gets people to use SAGE_LOCAL and SAGE_INC and all the other variables defined in module_list.py\n\n```\nnumpy_depends = [SAGE_LOCAL + '/lib/python/site-packages/numpy/core/include/numpy/_numpyconfig.h']\n\nflint_depends = [SAGE_LOCAL + '/include/FLINT/flint.h']\nsingular_depends = [SAGE_LOCAL + '/include/libsingular.h']\nginac_depends = [SAGE_LOCAL + '/include/pynac/ginac.h']\n```\n\n rather than \n\n```\nSAGE_ROOT + \"/local/include/pynac/ginac.h\"\n```\n\nand other combinations of SAGE_ROOT + \"/local...\"",
+    "body": "*cringe* I am ready to write some documentation if that gets people to use SAGE_LOCAL and SAGE_INC and all the other variables defined in module_list.py\n\n```\nnumpy_depends = [SAGE_LOCAL + '/lib/python/site-packages/numpy/core/include/numpy/_numpyconfig.h']\n\nflint_depends = [SAGE_LOCAL + '/include/FLINT/flint.h']\nsingular_depends = [SAGE_LOCAL + '/include/libsingular.h']\nginac_depends = [SAGE_LOCAL + '/include/pynac/ginac.h']\n```\n rather than \n\n```\nSAGE_ROOT + \"/local/include/pynac/ginac.h\"\n```\nand other combinations of SAGE_ROOT + \"/local...\"",
     "created_at": "2011-06-12T23:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
@@ -628,13 +633,11 @@ flint_depends = [SAGE_LOCAL + '/include/FLINT/flint.h']
 singular_depends = [SAGE_LOCAL + '/include/libsingular.h']
 ginac_depends = [SAGE_LOCAL + '/include/pynac/ginac.h']
 ```
-
  rather than 
 
 ```
 SAGE_ROOT + "/local/include/pynac/ginac.h"
 ```
-
 and other combinations of SAGE_ROOT + "/local..."
 
 

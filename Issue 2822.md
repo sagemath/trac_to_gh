@@ -3,7 +3,7 @@
 archive/issues_002822.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\n\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
     "created_at": "2008-04-06T06:26:30Z",
     "labels": [
         "component: commutative algebra",
@@ -29,7 +29,6 @@ Valgrind says:
 ==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)
 ==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd
 ```
-
 This seems to be cause by either the new PolyBoRi.spkg or its interface.
 
 The component for this bug is debatable.
@@ -169,7 +168,7 @@ static base_generator_type generator(static_cast<unsigned int>(std::time(0)));
 archive/issue_comments_019335.json:
 ```json
 {
-    "body": "Replying to [comment:4 PolyBoRi]:\n> Mabshoff wrote in sage-devel, that this happens in every sage session.\n> Does this mean, it even happens, if PolyBoRi isn't used at all.\n> So it must be some global code.\n> In libgroebner itself there exist almost no global things, except\n> some call\n> static base_generator_type generator(static_cast<unsigned int>(std::time(0)));\n> (which indeed hasn't been implemented in 0.1).\n\nYes, afaik it happens even when no PolyBoRi functionality is used so it ought to be global code. Also, in the cleaned up valgrind log, we have:\n\n\n```\n==8421== 16 bytes in 1 blocks are indirectly lost in loss record 63 of 2,800\n==8421==    at 0x4A07809: operator new(unsigned long) (vg_replace_malloc.c:230)\n==8421==    by 0x1E409188: polybori::get_ordering(int) (pbori_order.h:84)\n==8421==    by 0x1E4070E6: polybori::BoolePolyRing::BoolePolyRing(unsigned, int, bool) (BoolePolyRing.cc:187)\n==8421==    by 0x1E9FA733: __static_initialization_and_destruction_0(int, int) (BooleEnv.cc:85)\n==8421==    by 0x1EA9C8E1: (within /usr/local/sage-3.0.alpha2/local/lib/libgroebner.so)\n==8421==    by 0x1E9769C2: (within /usr/local/sage-3.0.alpha2/local/lib/libgroebner.so)\n==8421==    by 0x1E0C0C6D: (within /usr/local/sage-3.0.alpha2/devel/sage-main/build/sage/rings/polynomial/pbori.so)\n```\n\n\nseveral times and the number of lost bytes increases. So we seem to initialise PolyBoRi several times, maybe?",
+    "body": "Replying to [comment:4 PolyBoRi]:\n> Mabshoff wrote in sage-devel, that this happens in every sage session.\n> Does this mean, it even happens, if PolyBoRi isn't used at all.\n> So it must be some global code.\n> In libgroebner itself there exist almost no global things, except\n> some call\n> static base_generator_type generator(static_cast<unsigned int>(std::time(0)));\n> (which indeed hasn't been implemented in 0.1).\n\n\nYes, afaik it happens even when no PolyBoRi functionality is used so it ought to be global code. Also, in the cleaned up valgrind log, we have:\n\n```\n==8421== 16 bytes in 1 blocks are indirectly lost in loss record 63 of 2,800\n==8421==    at 0x4A07809: operator new(unsigned long) (vg_replace_malloc.c:230)\n==8421==    by 0x1E409188: polybori::get_ordering(int) (pbori_order.h:84)\n==8421==    by 0x1E4070E6: polybori::BoolePolyRing::BoolePolyRing(unsigned, int, bool) (BoolePolyRing.cc:187)\n==8421==    by 0x1E9FA733: __static_initialization_and_destruction_0(int, int) (BooleEnv.cc:85)\n==8421==    by 0x1EA9C8E1: (within /usr/local/sage-3.0.alpha2/local/lib/libgroebner.so)\n==8421==    by 0x1E9769C2: (within /usr/local/sage-3.0.alpha2/local/lib/libgroebner.so)\n==8421==    by 0x1E0C0C6D: (within /usr/local/sage-3.0.alpha2/devel/sage-main/build/sage/rings/polynomial/pbori.so)\n```\n\nseveral times and the number of lost bytes increases. So we seem to initialise PolyBoRi several times, maybe?",
     "created_at": "2008-04-08T10:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -187,8 +186,8 @@ Replying to [comment:4 PolyBoRi]:
 > static base_generator_type generator(static_cast<unsigned int>(std::time(0)));
 > (which indeed hasn't been implemented in 0.1).
 
-Yes, afaik it happens even when no PolyBoRi functionality is used so it ought to be global code. Also, in the cleaned up valgrind log, we have:
 
+Yes, afaik it happens even when no PolyBoRi functionality is used so it ought to be global code. Also, in the cleaned up valgrind log, we have:
 
 ```
 ==8421== 16 bytes in 1 blocks are indirectly lost in loss record 63 of 2,800
@@ -201,7 +200,6 @@ Yes, afaik it happens even when no PolyBoRi functionality is used so it ought to
 ==8421==    by 0x1E0C0C6D: (within /usr/local/sage-3.0.alpha2/devel/sage-main/build/sage/rings/polynomial/pbori.so)
 ```
 
-
 several times and the number of lost bytes increases. So we seem to initialise PolyBoRi several times, maybe?
 
 
@@ -211,7 +209,7 @@ several times and the number of lost bytes increases. So we seem to initialise P
 archive/issue_comments_019336.json:
 ```json
 {
-    "body": "When I tried valgrind on this, I got a slightly different record.  I don't know if the new information is meaningful or just random.\n\n```\n==27941== Invalid read of size 4\n==27941==    at 0xA1BFE98: (within /home/cwitty/sage-3.0.alpha2/local/lib/libgroebner.so)\n==27941==    by 0x40B6F13: exit (in /lib/i686/cmov/libc-2.7.so)\n==27941==    by 0x80E7DB1: handle_system_exit (pythonrun.c:1618)\n==27941==    by 0x80E7FA4: PyErr_PrintEx (pythonrun.c:1062)\n==27941==    by 0x80E8848: PyRun_SimpleFileExFlags (pythonrun.c:976)\n==27941==    by 0x80592B4: Py_Main (main.c:523)\n==27941==    by 0x8058771: main (python.c:23)\n==27941==  Address 0x448b7e4 is 4 bytes inside a block of size 16 free'd\n==27941==    at 0x40242EC: operator delete(void*) (vg_replace_malloc.c:342)\n==27941==    by 0x9FFA877: boost::detail::sp_counted_impl_p<polybori::CDynamicOrder<polybori::LexOrder> >::~sp_counted_impl_p() (in /home/cwitty/sage-3.0.alpha2/local/lib/libpolybori.so)\n==27941==    by 0x9F15D04: boost::detail::sp_counted_base::destroy() (sp_counted_base_gcc_x86.hpp:126)\n==27941==    by 0x9FFE16F: (within /home/cwitty/sage-3.0.alpha2/local/lib/libpolybori.so)\n==27941==    by 0x40B6F13: exit (in /lib/i686/cmov/libc-2.7.so)\n==27941==    by 0x80E7DB1: handle_system_exit (pythonrun.c:1618)\n==27941==    by 0x80E7FA4: PyErr_PrintEx (pythonrun.c:1062)\n==27941==    by 0x80E8848: PyRun_SimpleFileExFlags (pythonrun.c:976)\n==27941==    by 0x80592B4: Py_Main (main.c:523)\n==27941==    by 0x8058771: main (python.c:23)\n```\n",
+    "body": "When I tried valgrind on this, I got a slightly different record.  I don't know if the new information is meaningful or just random.\n\n```\n==27941== Invalid read of size 4\n==27941==    at 0xA1BFE98: (within /home/cwitty/sage-3.0.alpha2/local/lib/libgroebner.so)\n==27941==    by 0x40B6F13: exit (in /lib/i686/cmov/libc-2.7.so)\n==27941==    by 0x80E7DB1: handle_system_exit (pythonrun.c:1618)\n==27941==    by 0x80E7FA4: PyErr_PrintEx (pythonrun.c:1062)\n==27941==    by 0x80E8848: PyRun_SimpleFileExFlags (pythonrun.c:976)\n==27941==    by 0x80592B4: Py_Main (main.c:523)\n==27941==    by 0x8058771: main (python.c:23)\n==27941==  Address 0x448b7e4 is 4 bytes inside a block of size 16 free'd\n==27941==    at 0x40242EC: operator delete(void*) (vg_replace_malloc.c:342)\n==27941==    by 0x9FFA877: boost::detail::sp_counted_impl_p<polybori::CDynamicOrder<polybori::LexOrder> >::~sp_counted_impl_p() (in /home/cwitty/sage-3.0.alpha2/local/lib/libpolybori.so)\n==27941==    by 0x9F15D04: boost::detail::sp_counted_base::destroy() (sp_counted_base_gcc_x86.hpp:126)\n==27941==    by 0x9FFE16F: (within /home/cwitty/sage-3.0.alpha2/local/lib/libpolybori.so)\n==27941==    by 0x40B6F13: exit (in /lib/i686/cmov/libc-2.7.so)\n==27941==    by 0x80E7DB1: handle_system_exit (pythonrun.c:1618)\n==27941==    by 0x80E7FA4: PyErr_PrintEx (pythonrun.c:1062)\n==27941==    by 0x80E8848: PyRun_SimpleFileExFlags (pythonrun.c:976)\n==27941==    by 0x80592B4: Py_Main (main.c:523)\n==27941==    by 0x8058771: main (python.c:23)\n```",
     "created_at": "2008-04-09T17:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -243,7 +241,6 @@ When I tried valgrind on this, I got a slightly different record.  I don't know 
 ==27941==    by 0x80592B4: Py_Main (main.c:523)
 ==27941==    by 0x8058771: main (python.c:23)
 ```
-
 
 
 
@@ -326,7 +323,7 @@ I hope, that will fix the invalid reads (at least it should fix the leaks).
 archive/issue_comments_019340.json:
 ```json
 {
-    "body": "Ok, I have finally tracked this down to us linking all three libraries dynamically. Switching to static linking fixes the issue after making sure that we use -fPIC:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/mabshoff\n/release-cycle/sage-3.0.alpha2/local/include/cudd -I/scratch/mabshoff/release-cycle/sage-\n3.0.alpha2/local/include/polybori -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/include\n/polybori/groebner -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local//include -I/scratch\n/mabshoff/release-cycle/sage-3.0.alpha2/local//include/csage -I/scratch/mabshoff/release-\ncycle/sage-3.0.alpha2/devel//sage/sage/ext -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2\n/local/include/python2.5 -c sage/rings/polynomial/pbori.cpp -o build/temp.linux-x86_64-2.5\n/sage/rings/polynomial/pbori.o -w -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for \nC++ \ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/rings/polynomial/pbori.o -L/scratch\n/mabshoff/release-cycle/sage-3.0.alpha2/local//lib -lcsage -lpolybori -lpboriCudd -lgroebner \n-lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/rings/polynomial/pbori.so\n/usr/bin/ld: /scratch/mabshoff/release-cycle/sage-3.0.alpha2/local\n//lib/libpolybori.a(BoolePolyRing.o): relocation R_X86_64_32 against `a local symbol' can not be \nused when making a shared object; recompile with -fPIC\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local//lib/libpolybori.a: could not read \nsymbols: Bad value\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\nI also replaced CCuddCore.h with the new version provided by Alexander and it does fix some of the memory leaks. There are more of them, but that will be a new ticket.\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha4/polybori-0.3.1.p1.spkg\n\nTo test it build it, then \n\ntouch devel/sage/sage/rings/polynomial/pbori.pyx\n\nAnd to a `sage -b`\n\nCheers,\n\nMichael",
+    "body": "Ok, I have finally tracked this down to us linking all three libraries dynamically. Switching to static linking fixes the issue after making sure that we use -fPIC:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/mabshoff\n/release-cycle/sage-3.0.alpha2/local/include/cudd -I/scratch/mabshoff/release-cycle/sage-\n3.0.alpha2/local/include/polybori -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/include\n/polybori/groebner -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local//include -I/scratch\n/mabshoff/release-cycle/sage-3.0.alpha2/local//include/csage -I/scratch/mabshoff/release-\ncycle/sage-3.0.alpha2/devel//sage/sage/ext -I/scratch/mabshoff/release-cycle/sage-3.0.alpha2\n/local/include/python2.5 -c sage/rings/polynomial/pbori.cpp -o build/temp.linux-x86_64-2.5\n/sage/rings/polynomial/pbori.o -w -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for \nC++ \ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/rings/polynomial/pbori.o -L/scratch\n/mabshoff/release-cycle/sage-3.0.alpha2/local//lib -lcsage -lpolybori -lpboriCudd -lgroebner \n-lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/rings/polynomial/pbori.so\n/usr/bin/ld: /scratch/mabshoff/release-cycle/sage-3.0.alpha2/local\n//lib/libpolybori.a(BoolePolyRing.o): relocation R_X86_64_32 against `a local symbol' can not be \nused when making a shared object; recompile with -fPIC\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local//lib/libpolybori.a: could not read \nsymbols: Bad value\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\nI also replaced CCuddCore.h with the new version provided by Alexander and it does fix some of the memory leaks. There are more of them, but that will be a new ticket.\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha4/polybori-0.3.1.p1.spkg\n\nTo test it build it, then \n\ntouch devel/sage/sage/rings/polynomial/pbori.pyx\n\nAnd to a `sage -b`\n\nCheers,\n\nMichael",
     "created_at": "2008-04-11T20:09:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -360,7 +357,6 @@ collect2: ld returned 1 exit status
 error: command 'g++' failed with exit status 1
 sage: There was an error installing modified sage library code.
 ```
-
 I also replaced CCuddCore.h with the new version provided by Alexander and it does fix some of the memory leaks. There are more of them, but that will be a new ticket.
 
 The new spkg is at

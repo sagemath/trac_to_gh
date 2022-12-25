@@ -88,7 +88,7 @@ I've now moved one doctest from here to #9244, with the result that this patch i
 archive/issue_comments_088717.json:
 ```json
 {
-    "body": "Do you thing that\n\n\n```\n                # TODO -- relative extensions need to be completely rewritten, so one\n                # can get easy access to representation of elements in their relative\n                # form.  Functions like matrix below can't be done until relative\n                # extensions are re-written this way.  Also there needs to be class\n                # hierarchy for number field elements, integers, etc.  This is a\n                # nontrivial project, and it needs somebody to attack it.  I'm amazed\n                # how long this has gone unattacked.\n\n                # Relative elements need to be a derived class or something.  This is\n                # terrible as it is now. \n```\n\n\nis no longer valid?",
+    "body": "Do you thing that\n\n```\n                # TODO -- relative extensions need to be completely rewritten, so one\n                # can get easy access to representation of elements in their relative\n                # form.  Functions like matrix below can't be done until relative\n                # extensions are re-written this way.  Also there needs to be class\n                # hierarchy for number field elements, integers, etc.  This is a\n                # nontrivial project, and it needs somebody to attack it.  I'm amazed\n                # how long this has gone unattacked.\n\n                # Relative elements need to be a derived class or something.  This is\n                # terrible as it is now. \n```\n\nis no longer valid?",
     "created_at": "2010-07-02T19:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ archive/issue_comments_088717.json:
 ```
 
 Do you thing that
-
 
 ```
                 # TODO -- relative extensions need to be completely rewritten, so one
@@ -112,7 +111,6 @@ Do you thing that
                 # Relative elements need to be a derived class or something.  This is
                 # terrible as it is now. 
 ```
-
 
 is no longer valid?
 
@@ -217,7 +215,7 @@ I fully agree that relative extensions are not optimally implemented. By all mea
 archive/issue_comments_088723.json:
 ```json
 {
-    "body": "I personally prefer to leave\n\n```\nsage: I.ideal_below() \nFractional ideal (b)   # 32-bit \nFractional ideal (-b)  # 64-bit \n```\n\nas it is, instead of\n\n```\nsage: I.ideal_below() == F.ideal(b) \nTrue\n```\n\n\nAs an example, the first is more clear. But as I said, this is just a personal preference.",
+    "body": "I personally prefer to leave\n\n```\nsage: I.ideal_below() \nFractional ideal (b)   # 32-bit \nFractional ideal (-b)  # 64-bit \n```\nas it is, instead of\n\n```\nsage: I.ideal_below() == F.ideal(b) \nTrue\n```\n\nAs an example, the first is more clear. But as I said, this is just a personal preference.",
     "created_at": "2010-09-23T09:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -233,14 +231,12 @@ sage: I.ideal_below()
 Fractional ideal (b)   # 32-bit 
 Fractional ideal (-b)  # 64-bit 
 ```
-
 as it is, instead of
 
 ```
 sage: I.ideal_below() == F.ideal(b) 
 True
 ```
-
 
 As an example, the first is more clear. But as I said, this is just a personal preference.
 
@@ -251,7 +247,7 @@ As an example, the first is more clear. But as I said, this is just a personal p
 archive/issue_comments_088724.json:
 ```json
 {
-    "body": "Also, the hunk\n\n```\n-            sage: I.ideal_below()\n-            Fractional ideal (-b)  # 32-bit\n-            Fractional ideal (b)   # 64-bit\n+            sage: I.ideal_below() == F.ideal(b)\n+            True\n```\n\nconflicts with #9764. So would you mind removing it?\n\nApart from that, the patch applies fine and doctests fine, even with #9753 and #9764 applied.",
+    "body": "Also, the hunk\n\n```\n-            sage: I.ideal_below()\n-            Fractional ideal (-b)  # 32-bit\n-            Fractional ideal (b)   # 64-bit\n+            sage: I.ideal_below() == F.ideal(b)\n+            True\n```\nconflicts with #9764. So would you mind removing it?\n\nApart from that, the patch applies fine and doctests fine, even with #9753 and #9764 applied.",
     "created_at": "2010-09-23T10:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -269,7 +265,6 @@ Also, the hunk
 +            sage: I.ideal_below() == F.ideal(b)
 +            True
 ```
-
 conflicts with #9764. So would you mind removing it?
 
 Apart from that, the patch applies fine and doctests fine, even with #9753 and #9764 applied.
@@ -319,7 +314,7 @@ OK, I'm fine with that. I've just uploaded a patch with that hunk removed.
 archive/issue_comments_088727.json:
 ```json
 {
-    "body": "I think you should put\n\n```\nR.<x> = PolynomialRing(QQ)\n```\n\nor\n\n```\nx = polygen(QQ)\n```\n\neverywhere before\n\n```\nK.<foo> = NumberField(some_polynomial_in_x)\n```\n\n\nI imagine users copy-pasting the examples and finding they don't work because `x` is something else.",
+    "body": "I think you should put\n\n```\nR.<x> = PolynomialRing(QQ)\n```\nor\n\n```\nx = polygen(QQ)\n```\neverywhere before\n\n```\nK.<foo> = NumberField(some_polynomial_in_x)\n```\n\nI imagine users copy-pasting the examples and finding they don't work because `x` is something else.",
     "created_at": "2010-09-23T10:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -333,19 +328,16 @@ I think you should put
 ```
 R.<x> = PolynomialRing(QQ)
 ```
-
 or
 
 ```
 x = polygen(QQ)
 ```
-
 everywhere before
 
 ```
 K.<foo> = NumberField(some_polynomial_in_x)
 ```
-
 
 I imagine users copy-pasting the examples and finding they don't work because `x` is something else.
 
@@ -650,7 +642,7 @@ Done. I also qfolded into one patch.
 archive/issue_comments_088744.json:
 ```json
 {
-    "body": "Thanks, David.  I get some docbuild warnings\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:71: WARNING: duplicate citation C, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/small_primes_of_degree_one.rst\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:75: WARNING: duplicate citation M, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/crypto/lfsr.rst\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:82: WARNING: duplicate citation V, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/matrix/matrix2.rst\n```\n\nwith the current [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2) \"applied\" to 4.6.alpha1.\n\nCould you or Jeroen add a docfix patch?",
+    "body": "Thanks, David.  I get some docbuild warnings\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:71: WARNING: duplicate citation C, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/small_primes_of_degree_one.rst\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:75: WARNING: duplicate citation M, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/crypto/lfsr.rst\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:82: WARNING: duplicate citation V, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/matrix/matrix2.rst\n```\nwith the current [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2) \"applied\" to 4.6.alpha1.\n\nCould you or Jeroen add a docfix patch?",
     "created_at": "2010-09-28T10:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -666,7 +658,6 @@ Thanks, David.  I get some docbuild warnings
 /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:75: WARNING: duplicate citation M, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/crypto/lfsr.rst
 /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/rings/number_field/totallyreal.rst:82: WARNING: duplicate citation V, other instance in /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/doc/en/reference/sage/matrix/matrix2.rst
 ```
-
 with the current [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2) "applied" to 4.6.alpha1.
 
 Could you or Jeroen add a docfix patch?
@@ -786,7 +777,7 @@ Resolution: fixed
 archive/issue_comments_088750.json:
 ```json
 {
-    "body": "Replying to [comment:26 davidloeffler]:\n> Docfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.\n\n[This sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/dba6129183b3b6eb/b41ce82a5ee589fe?#b41ce82a5ee589fe) seems related.",
+    "body": "Replying to [comment:26 davidloeffler]:\n> Docfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.\n\n\n[This sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/dba6129183b3b6eb/b41ce82a5ee589fe?#b41ce82a5ee589fe) seems related.",
     "created_at": "2010-09-29T03:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
@@ -797,5 +788,6 @@ archive/issue_comments_088750.json:
 
 Replying to [comment:26 davidloeffler]:
 > Docfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.
+
 
 [This sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/dba6129183b3b6eb/b41ce82a5ee589fe?#b41ce82a5ee589fe) seems related.

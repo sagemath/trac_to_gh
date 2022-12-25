@@ -3,7 +3,7 @@
 archive/issues_001936.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn bsd the following happens:\n\n```\n     missing link(s):  methods methods\n  zScript                           text    html    latex   example\n  zpackages                         text    html    latex   example\n  zutils                            text    html    latex\n  Signals                           text    html    latex\nmake[5]: *** [test-Examples-Base] Error 2\nmake[4]: *** [test-Examples] Error 2\nmake[3]: *** [test-all-basics] Error 1\nmake[2]: *** [check] Error 2\n*************************************\nError testing package ** r-2.6.1.p11 **\n*************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1936\n\n",
+    "body": "Assignee: mabshoff\n\nOn bsd the following happens:\n\n```\n     missing link(s):  methods methods\n  zScript                           text    html    latex   example\n  zpackages                         text    html    latex   example\n  zutils                            text    html    latex\n  Signals                           text    html    latex\nmake[5]: *** [test-Examples-Base] Error 2\nmake[4]: *** [test-Examples] Error 2\nmake[3]: *** [test-all-basics] Error 1\nmake[2]: *** [check] Error 2\n*************************************\nError testing package ** r-2.6.1.p11 **\n*************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1936\n\n",
     "created_at": "2008-01-26T10:41:50Z",
     "labels": [
         "component: packages",
@@ -34,7 +34,6 @@ make[2]: *** [check] Error 2
 Error testing package ** r-2.6.1.p11 **
 *************************************
 ```
-
 
 Cheers,
 

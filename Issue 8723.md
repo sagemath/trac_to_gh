@@ -174,7 +174,7 @@ http://sagemath.github.io/git-developer-guide/walk_through.html#section-walkthro
 archive/issue_comments_079531.json:
 ```json
 {
-    "body": "Replying to [comment:5 chapoton]:\n> well, sooner or later...  =)\n> \n> there are some explanations here  :\n> \n> http://sagemath.github.io/git-developer-guide/walk_through.html#section-walkthrough-review\n> \n\nI have a clone of the git repository and pulled in all the commits on trac (using git pull trac master followed by make), and have a working version (./sage runs ok and shows 5.12.beta2 in the banner).  But ./sage -dev fails (unknown option).  Does that mean that I should do the \"manual git\" as in Git the Hard Way, using git fetch trac ...?  I can do that, of course, but thought that the scripts made it unnecessary.\n\nMeanwhile I looked at the diff for your commit and looks reasonable, though I would of course want to check it.",
+    "body": "Replying to [comment:5 chapoton]:\n> well, sooner or later...  =)\n> \n> there are some explanations here  :\n> \n> http://sagemath.github.io/git-developer-guide/walk_through.html#section-walkthrough-review\n> \n\n\nI have a clone of the git repository and pulled in all the commits on trac (using git pull trac master followed by make), and have a working version (./sage runs ok and shows 5.12.beta2 in the banner).  But ./sage -dev fails (unknown option).  Does that mean that I should do the \"manual git\" as in Git the Hard Way, using git fetch trac ...?  I can do that, of course, but thought that the scripts made it unnecessary.\n\nMeanwhile I looked at the diff for your commit and looks reasonable, though I would of course want to check it.",
     "created_at": "2013-08-21T19:43:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -190,6 +190,7 @@ Replying to [comment:5 chapoton]:
 > 
 > http://sagemath.github.io/git-developer-guide/walk_through.html#section-walkthrough-review
 > 
+
 
 I have a clone of the git repository and pulled in all the commits on trac (using git pull trac master followed by make), and have a working version (./sage runs ok and shows 5.12.beta2 in the banner).  But ./sage -dev fails (unknown option).  Does that mean that I should do the "manual git" as in Git the Hard Way, using git fetch trac ...?  I can do that, of course, but thought that the scripts made it unnecessary.
 
@@ -338,7 +339,7 @@ Frederic
 archive/issue_comments_079539.json:
 ```json
 {
-    "body": "Replying to [comment:14 chapoton]:\n> Well, I am rather busy right now, and I am really not enough git-confident and knowledgeable to do that. Please do it yourself if you can.\n> \n> Frederic\n\nIt turns out that I am not allowed to (see further discussion on sage-git).  I cannot rebase, since that is rewriting history and not allowed (by convention) on commits that have been made public (as on this ticket) since there might be people who have taken those commits as a base for something else.  (Clearly not likeliy in this case.)  And whle I can merge the current master, as a way of seeing what changes you have made (by comparing the merged current-master + your changes to the current-master by itself), which helps me see the cumulative effect of what you did, I am not supposed to upload that merged commit back to this ticket.\n\nThis makes it rather complicated for me to something which used to be so simple, i.e. to make some small \"reviewer patch\" additional changes.  I have to first unmerge the current master, then make my edits and a new commit whose parent is the one downloaded from this ticket and push that back up to the ticket.\n\nOf course, that will not be necessary if I find your changes perfect ;)",
+    "body": "Replying to [comment:14 chapoton]:\n> Well, I am rather busy right now, and I am really not enough git-confident and knowledgeable to do that. Please do it yourself if you can.\n> \n> Frederic\n\n\nIt turns out that I am not allowed to (see further discussion on sage-git).  I cannot rebase, since that is rewriting history and not allowed (by convention) on commits that have been made public (as on this ticket) since there might be people who have taken those commits as a base for something else.  (Clearly not likeliy in this case.)  And whle I can merge the current master, as a way of seeing what changes you have made (by comparing the merged current-master + your changes to the current-master by itself), which helps me see the cumulative effect of what you did, I am not supposed to upload that merged commit back to this ticket.\n\nThis makes it rather complicated for me to something which used to be so simple, i.e. to make some small \"reviewer patch\" additional changes.  I have to first unmerge the current master, then make my edits and a new commit whose parent is the one downloaded from this ticket and push that back up to the ticket.\n\nOf course, that will not be necessary if I find your changes perfect ;)",
     "created_at": "2013-12-17T16:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -351,6 +352,7 @@ Replying to [comment:14 chapoton]:
 > Well, I am rather busy right now, and I am really not enough git-confident and knowledgeable to do that. Please do it yourself if you can.
 > 
 > Frederic
+
 
 It turns out that I am not allowed to (see further discussion on sage-git).  I cannot rebase, since that is rewriting history and not allowed (by convention) on commits that have been made public (as on this ticket) since there might be people who have taken those commits as a base for something else.  (Clearly not likeliy in this case.)  And whle I can merge the current master, as a way of seeing what changes you have made (by comparing the merged current-master + your changes to the current-master by itself), which helps me see the cumulative effect of what you did, I am not supposed to upload that merged commit back to this ticket.
 
@@ -365,7 +367,7 @@ Of course, that will not be necessary if I find your changes perfect ;)
 archive/issue_comments_079540.json:
 ```json
 {
-    "body": "Very sorry, but checking that this works revealed a problem.  The function `multiplication_by_m` calls  `_multiple_x_numerator(m,x)` and the latter caches its results with a cache whose key is just m and not the tuple (m,x), which means that the x in the returned value of `E.multiplication_by_m` is not necessarily the x you defined in the function.  For example:\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent(), y2.parent()\n(Fraction Field of Multivariate Polynomial Ring in x, y over Rational Field,\n Fraction Field of Multivariate Polynomial Ring in x, y over Rational Field)\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\n```\n\nwhere the last parent is wrong, and in the other direction\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent(), y2.parent()\n(Fraction Field of Univariate Polynomial Ring in x over Rational Field,\n Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field)\n```\n\nwhich is worse!\n\nI will fix this by changing the caching behaviour of the subsidiary function, and see if I can push the new commit onto this ticket.",
+    "body": "Very sorry, but checking that this works revealed a problem.  The function `multiplication_by_m` calls  `_multiple_x_numerator(m,x)` and the latter caches its results with a cache whose key is just m and not the tuple (m,x), which means that the x in the returned value of `E.multiplication_by_m` is not necessarily the x you defined in the function.  For example:\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent(), y2.parent()\n(Fraction Field of Multivariate Polynomial Ring in x, y over Rational Field,\n Fraction Field of Multivariate Polynomial Ring in x, y over Rational Field)\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\n```\nwhere the last parent is wrong, and in the other direction\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent(), y2.parent()\n(Fraction Field of Univariate Polynomial Ring in x over Rational Field,\n Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field)\n```\nwhich is worse!\n\nI will fix this by changing the caching behaviour of the subsidiary function, and see if I can push the new commit onto this ticket.",
     "created_at": "2013-12-17T17:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -386,7 +388,6 @@ sage: X2 = E.multiplication_by_m(2, x_only=True)
 sage: X2.parent()
 Fraction Field of Multivariate Polynomial Ring in x, y over Rational Field
 ```
-
 where the last parent is wrong, and in the other direction
 
 ```
@@ -399,7 +400,6 @@ sage: x2.parent(), y2.parent()
 (Fraction Field of Univariate Polynomial Ring in x over Rational Field,
  Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field)
 ```
-
 which is worse!
 
 I will fix this by changing the caching behaviour of the subsidiary function, and see if I can push the new commit onto this ticket.
@@ -411,7 +411,7 @@ I will fix this by changing the caching behaviour of the subsidiary function, an
 archive/issue_comments_079541.json:
 ```json
 {
-    "body": "Replying to [comment:16 cremona]:\n\n> \n> I will fix this by changing the caching behaviour of the subsidiary function, \n\nDone.  Now the output of that example is\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: y2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: y2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\n\n> and see if I can push the new commit onto this ticket.\n\nThis failed with\n\n```\nCounting objects: 136, done.\nDelta compression using up to 64 threads.\nCompressing objects: 100% (26/26), done.\nWriting objects: 100% (30/30), 4.47 KiB, done.\nTotal 30 (delta 20), reused 4 (delta 4)\nremote: FATAL: W refs/heads/master sage cremona DENIED by fallthru\nremote: error: hook declined to update refs/heads/master\nTo ssh://git@trac.sagemath.org:2222/sage.git\n ! [remote rejected] master -> master (hook declined)\nerror: failed to push some refs to 'ssh://git@trac.sagemath.org:2222/sage.git'\n```\n\n\nfor which I am seeking help on sage-git.",
+    "body": "Replying to [comment:16 cremona]:\n\n> \n> I will fix this by changing the caching behaviour of the subsidiary function, \n\n\nDone.  Now the output of that example is\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: y2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: x2,y2 = E.multiplication_by_m(2)\nsage: x2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: y2.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Rational Field\nsage: X2 = E.multiplication_by_m(2, x_only=True)\nsage: X2.parent()\nFraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\n> and see if I can push the new commit onto this ticket.\n\n\nThis failed with\n\n```\nCounting objects: 136, done.\nDelta compression using up to 64 threads.\nCompressing objects: 100% (26/26), done.\nWriting objects: 100% (30/30), 4.47 KiB, done.\nTotal 30 (delta 20), reused 4 (delta 4)\nremote: FATAL: W refs/heads/master sage cremona DENIED by fallthru\nremote: error: hook declined to update refs/heads/master\nTo ssh://git@trac.sagemath.org:2222/sage.git\n ! [remote rejected] master -> master (hook declined)\nerror: failed to push some refs to 'ssh://git@trac.sagemath.org:2222/sage.git'\n```\n\nfor which I am seeking help on sage-git.",
     "created_at": "2013-12-17T17:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -424,6 +424,7 @@ Replying to [comment:16 cremona]:
 
 > 
 > I will fix this by changing the caching behaviour of the subsidiary function, 
+
 
 Done.  Now the output of that example is
 
@@ -448,8 +449,8 @@ sage: X2.parent()
 Fraction Field of Univariate Polynomial Ring in x over Rational Field
 ```
 
-
 > and see if I can push the new commit onto this ticket.
+
 
 This failed with
 
@@ -466,7 +467,6 @@ To ssh://git@trac.sagemath.org:2222/sage.git
 error: failed to push some refs to 'ssh://git@trac.sagemath.org:2222/sage.git'
 ```
 
-
 for which I am seeking help on sage-git.
 
 
@@ -476,7 +476,7 @@ for which I am seeking help on sage-git.
 archive/issue_comments_079542.json:
 ```json
 {
-    "body": "I have pushed my new commit now:\n\n```\n * [new branch]      HEAD -> u/cremona/8723\n```\n\nthough I cannot see any sign of it here on trac.",
+    "body": "I have pushed my new commit now:\n\n```\n * [new branch]      HEAD -> u/cremona/8723\n```\nthough I cannot see any sign of it here on trac.",
     "created_at": "2013-12-17T17:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -490,7 +490,6 @@ I have pushed my new commit now:
 ```
  * [new branch]      HEAD -> u/cremona/8723
 ```
-
 though I cannot see any sign of it here on trac.
 
 
@@ -552,7 +551,7 @@ New commits:
 archive/issue_comments_079544.json:
 ```json
 {
-    "body": "For info:  I added some edits to Frederic's and pushed the resulting commit to a branch owned by me called u/cremona/8723, using the command\n\n```\ngit push trac HEAD:u/cremona/8723 \n```\n\nThen I manually changed the Branch field on this ticket;  saving that updated the commit hash as well.\n\nTo see just my additional changes, pull the branch and do `git diff HEAD^ HEAD`.  It should be possible to see the changes since the parent's of Frederic's first commit, but I have not yet managed to do so.",
+    "body": "For info:  I added some edits to Frederic's and pushed the resulting commit to a branch owned by me called u/cremona/8723, using the command\n\n```\ngit push trac HEAD:u/cremona/8723 \n```\nThen I manually changed the Branch field on this ticket;  saving that updated the commit hash as well.\n\nTo see just my additional changes, pull the branch and do `git diff HEAD^ HEAD`.  It should be possible to see the changes since the parent's of Frederic's first commit, but I have not yet managed to do so.",
     "created_at": "2013-12-17T19:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -566,7 +565,6 @@ For info:  I added some edits to Frederic's and pushed the resulting commit to a
 ```
 git push trac HEAD:u/cremona/8723 
 ```
-
 Then I manually changed the Branch field on this ticket;  saving that updated the commit hash as well.
 
 To see just my additional changes, pull the branch and do `git diff HEAD^ HEAD`.  It should be possible to see the changes since the parent's of Frederic's first commit, but I have not yet managed to do so.
@@ -654,7 +652,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079549.json:
 ```json
 {
-    "body": "Replying to [comment:23 chapoton]:\n> There is a [x,0] to be replaced by [x] in sage/schemes/elliptic_curves/isogeny_small_degree.py\n> \n> Because now the parent has only one variable\n> \n> Otherwise, the tests do not pass.\n\nYou are quite right, and by chance you were editing your comment at the same time as I was.  I have fixed that and will push a new commit in a few minutes.  Apologies.  I wrote the original patch on this ticket before that code existed, I think.",
+    "body": "Replying to [comment:23 chapoton]:\n> There is a [x,0] to be replaced by [x] in sage/schemes/elliptic_curves/isogeny_small_degree.py\n> \n> Because now the parent has only one variable\n> \n> Otherwise, the tests do not pass.\n\n\nYou are quite right, and by chance you were editing your comment at the same time as I was.  I have fixed that and will push a new commit in a few minutes.  Apologies.  I wrote the original patch on this ticket before that code existed, I think.",
     "created_at": "2014-01-02T17:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -670,6 +668,7 @@ Replying to [comment:23 chapoton]:
 > 
 > Otherwise, the tests do not pass.
 
+
 You are quite right, and by chance you were editing your comment at the same time as I was.  I have fixed that and will push a new commit in a few minutes.  Apologies.  I wrote the original patch on this ticket before that code existed, I think.
 
 
@@ -679,7 +678,7 @@ You are quite right, and by chance you were editing your comment at the same tim
 archive/issue_comments_079550.json:
 ```json
 {
-    "body": "Note that the branch name has changed (it was non-standard, my fault).\n\nI have checked that from this branch, \"git merge develop\" works ok -- since this branched off the tree at around 5.13.beta4 I thought that would be helpful to know, since it means (I think) that merging this branch into develop will also work!  And for good measure I will also rebuild and test everything.\n----\nNew commits:",
+    "body": "Note that the branch name has changed (it was non-standard, my fault).\n\nI have checked that from this branch, \"git merge develop\" works ok -- since this branched off the tree at around 5.13.beta4 I thought that would be helpful to know, since it means (I think) that merging this branch into develop will also work!  And for good measure I will also rebuild and test everything.\n\n---\nNew commits:",
     "created_at": "2014-01-02T17:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -691,7 +690,8 @@ archive/issue_comments_079550.json:
 Note that the branch name has changed (it was non-standard, my fault).
 
 I have checked that from this branch, "git merge develop" works ok -- since this branched off the tree at around 5.13.beta4 I thought that would be helpful to know, since it means (I think) that merging this branch into develop will also work!  And for good measure I will also rebuild and test everything.
-----
+
+---
 New commits:
 
 
@@ -809,7 +809,7 @@ Resolution: fixed
 archive/issue_comments_079556.json:
 ```json
 {
-    "body": "I just stumbled upon this while working on #16129.\n\nReplying to [comment:20 cremona]:\n> New commits:\n> ||[1fec983](http://git.sagemath.org/sage.git/commit/?id=1fec983)||reviewer's patch, makes sure that the parents are correct even with caching||\n\nIf I understand correctly, this is to make sure that the returned elements live in the correct rings. Does this really work the way it is meant to? The `x` in a univariate/bivariate ring can not be distinguished in the cache:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<x> = QQ[]\nsage: R(x) == S(x)\nTrue\nsage: hash(R(x))==hash(S(x))\nTrue\n```\n\n\nSo what actually makes the patch work is this explicit conversion back to the right ring:\n\n```\n- mx = self._multiple_x_numerator(m.abs(), x) / self._multiple_x_denominator(m.abs(), x)\n+ mx = (x.parent()(self._multiple_x_numerator(m.abs(), x))\n+ / x.parent()(self._multiple_x_denominator(m.abs(), x)))\n```\n\n\nIn other words, `_multiple_x_numerator/denominator` still return elements in the wrong ring. This is probably acceptable since they are marked as internal methods anyway:\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: R.<x,y> = QQ[]\nsage: E._multiple_x_numerator(2, x).parent()\nUnivariate Polynomial Ring in x, y over Rational Field\nsage: E._multiple_x_numerator(2).parent()\nUnivariate Polynomial Ring in x, y over Rational Field\n```\n\n\nShould I fix this in #16129?\n\nWhat causes actual trouble for me is that `x` has been added to the cache key in `division_polynomial_0`. Why is it necessary there? Is `division_polynomial_0` ever called with a different `x` but the same `cache`?",
+    "body": "I just stumbled upon this while working on #16129.\n\nReplying to [comment:20 cremona]:\n> New commits:\n> |                                                                                                         |                                                                           |\n> |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|\n> |[1fec983](http://git.sagemath.org/sage.git/commit/?id=1fec983)|reviewer's patch, makes sure that the parents are correct even with caching|\n\n\nIf I understand correctly, this is to make sure that the returned elements live in the correct rings. Does this really work the way it is meant to? The `x` in a univariate/bivariate ring can not be distinguished in the cache:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<x> = QQ[]\nsage: R(x) == S(x)\nTrue\nsage: hash(R(x))==hash(S(x))\nTrue\n```\n\nSo what actually makes the patch work is this explicit conversion back to the right ring:\n\n```\n- mx = self._multiple_x_numerator(m.abs(), x) / self._multiple_x_denominator(m.abs(), x)\n+ mx = (x.parent()(self._multiple_x_numerator(m.abs(), x))\n+ / x.parent()(self._multiple_x_denominator(m.abs(), x)))\n```\n\nIn other words, `_multiple_x_numerator/denominator` still return elements in the wrong ring. This is probably acceptable since they are marked as internal methods anyway:\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: R.<x,y> = QQ[]\nsage: E._multiple_x_numerator(2, x).parent()\nUnivariate Polynomial Ring in x, y over Rational Field\nsage: E._multiple_x_numerator(2).parent()\nUnivariate Polynomial Ring in x, y over Rational Field\n```\n\nShould I fix this in #16129?\n\nWhat causes actual trouble for me is that `x` has been added to the cache key in `division_polynomial_0`. Why is it necessary there? Is `division_polynomial_0` ever called with a different `x` but the same `cache`?",
     "created_at": "2014-04-11T12:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -822,7 +822,10 @@ I just stumbled upon this while working on #16129.
 
 Replying to [comment:20 cremona]:
 > New commits:
-> ||[1fec983](http://git.sagemath.org/sage.git/commit/?id=1fec983)||reviewer's patch, makes sure that the parents are correct even with caching||
+> |                                                                                                         |                                                                           |
+> |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+> |[1fec983](http://git.sagemath.org/sage.git/commit/?id=1fec983)|reviewer's patch, makes sure that the parents are correct even with caching|
+
 
 If I understand correctly, this is to make sure that the returned elements live in the correct rings. Does this really work the way it is meant to? The `x` in a univariate/bivariate ring can not be distinguished in the cache:
 
@@ -835,7 +838,6 @@ sage: hash(R(x))==hash(S(x))
 True
 ```
 
-
 So what actually makes the patch work is this explicit conversion back to the right ring:
 
 ```
@@ -843,7 +845,6 @@ So what actually makes the patch work is this explicit conversion back to the ri
 + mx = (x.parent()(self._multiple_x_numerator(m.abs(), x))
 + / x.parent()(self._multiple_x_denominator(m.abs(), x)))
 ```
-
 
 In other words, `_multiple_x_numerator/denominator` still return elements in the wrong ring. This is probably acceptable since they are marked as internal methods anyway:
 
@@ -855,7 +856,6 @@ Univariate Polynomial Ring in x, y over Rational Field
 sage: E._multiple_x_numerator(2).parent()
 Univariate Polynomial Ring in x, y over Rational Field
 ```
-
 
 Should I fix this in #16129?
 
@@ -888,7 +888,7 @@ If your fix at #16129 does a better job while respecting this -- good!
 archive/issue_comments_079558.json:
 ```json
 {
-    "body": "Replying to [comment:34 cremona]:\n> I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\nBut this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: R.<x,y> = QQ[]\nsage: cache = {}\nsage: E.division_polynomial_0(1, cache=cache).parent()\nUnivariate Polynomial Ring in x over Rational Field\nsage: E.division_polynomial_0(1, x, cache=cache).parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\n\n\n> there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\nI see. But would you really want to store these in the same `cache` dictionary?\n\nIf I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?",
+    "body": "Replying to [comment:34 cremona]:\n> I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\n\nBut this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n\n```\nsage: E = EllipticCurve([0,0,0,0,1])\nsage: R.<x,y> = QQ[]\nsage: cache = {}\nsage: E.division_polynomial_0(1, cache=cache).parent()\nUnivariate Polynomial Ring in x over Rational Field\nsage: E.division_polynomial_0(1, x, cache=cache).parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\n\n> there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\n\nI see. But would you really want to store these in the same `cache` dictionary?\n\nIf I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?",
     "created_at": "2014-04-11T20:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -899,6 +899,7 @@ archive/issue_comments_079558.json:
 
 Replying to [comment:34 cremona]:
 > I think the quick answer to the last question is "yes".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,
+
 But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.
 
 ```
@@ -911,8 +912,8 @@ sage: E.division_polynomial_0(1, x, cache=cache).parent()
 Univariate Polynomial Ring in x over Rational Field
 ```
 
-
 > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.
+
 I see. But would you really want to store these in the same `cache` dictionary?
 
 If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?
@@ -924,7 +925,7 @@ If I understand correctly, the `cache` parameter is needed because you want to c
 archive/issue_comments_079559.json:
 ```json
 {
-    "body": "Replying to [comment:35 saraedum]:\n> Replying to [comment:34 cremona]:\n> > I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\n> But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n> {{{\n> sage: E = EllipticCurve([0,0,0,0,1])\n> sage: R.<x,y> = QQ[]\n> sage: cache = {}\n> sage: E.division_polynomial_0(1, cache=cache).parent()\n> Univariate Polynomial Ring in x over Rational Field\n> sage: E.division_polynomial_0(1, x, cache=cache).parent()\n> Univariate Polynomial Ring in x over Rational Field\n> }}}\n> \n> > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\n> I see. But would you really want to store these in the same `cache` dictionary?\n> \n> If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?\n\nNo, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.",
+    "body": "Replying to [comment:35 saraedum]:\n> Replying to [comment:34 cremona]:\n> > I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\n\n> But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n> {{{\n> sage: E = EllipticCurve([0,0,0,0,1])\n> sage: R.<x,y> = QQ[]\n> sage: cache = {}\n> sage: E.division_polynomial_0(1, cache=cache).parent()\n> Univariate Polynomial Ring in x over Rational Field\n> sage: E.division_polynomial_0(1, x, cache=cache).parent()\n> Univariate Polynomial Ring in x over Rational Field\n> }}}\n> \n> > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\n\n> I see. But would you really want to store these in the same `cache` dictionary?\n> \n> If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?\n\n\nNo, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.",
     "created_at": "2014-04-11T20:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -936,6 +937,7 @@ archive/issue_comments_079559.json:
 Replying to [comment:35 saraedum]:
 > Replying to [comment:34 cremona]:
 > > I think the quick answer to the last question is "yes".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,
+
 > But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.
 > {{{
 > sage: E = EllipticCurve([0,0,0,0,1])
@@ -948,9 +950,11 @@ Replying to [comment:35 saraedum]:
 > }}}
 > 
 > > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.
+
 > I see. But would you really want to store these in the same `cache` dictionary?
 > 
 > If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?
+
 
 No, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.
 
@@ -961,7 +965,7 @@ No, absolutely not.  The cache variable is not intended for use by users at all.
 archive/issue_comments_079560.json:
 ```json
 {
-    "body": "Replying to [comment:36 cremona]:\n> Replying to [comment:35 saraedum]:\n> > Replying to [comment:34 cremona]:\n> > > I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\n> > But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n> > {{{\n> > sage: E = EllipticCurve([0,0,0,0,1])\n> > sage: R.<x,y> = QQ[]\n> > sage: cache = {}\n> > sage: E.division_polynomial_0(1, cache=cache).parent()\n> > Univariate Polynomial Ring in x over Rational Field\n> > sage: E.division_polynomial_0(1, x, cache=cache).parent()\n> > Univariate Polynomial Ring in x over Rational Field\n> > }}}\n> > \n> > > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\n> > I see. But would you really want to store these in the same `cache` dictionary?\n> > \n> > If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?\n> \n> No, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.\n\nGreat. Thanks for your answers. I will try to implement this in a different way at #16129 then.",
+    "body": "Replying to [comment:36 cremona]:\n> Replying to [comment:35 saraedum]:\n> > Replying to [comment:34 cremona]:\n> > > I think the quick answer to the last question is \"yes\".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,\n\n> > But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.\n> > {{{\n> > sage: E = EllipticCurve([0,0,0,0,1])\n> > sage: R.<x,y> = QQ[]\n> > sage: cache = {}\n> > sage: E.division_polynomial_0(1, cache=cache).parent()\n> > Univariate Polynomial Ring in x over Rational Field\n> > sage: E.division_polynomial_0(1, x, cache=cache).parent()\n> > Univariate Polynomial Ring in x over Rational Field\n> > }}}\n> > \n> > > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.\n\n> > I see. But would you really want to store these in the same `cache` dictionary?\n> > \n> > If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?\n\n> \n> No, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.\n\n\nGreat. Thanks for your answers. I will try to implement this in a different way at #16129 then.",
     "created_at": "2014-04-11T20:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
@@ -974,6 +978,7 @@ Replying to [comment:36 cremona]:
 > Replying to [comment:35 saraedum]:
 > > Replying to [comment:34 cremona]:
 > > > I think the quick answer to the last question is "yes".  Apart from wanting to call the division poly functions with x's from different polynomial rings, which is frequently needed,
+
 > > But this does not seem to work if you pass in the same `cache` dictionary. An `x` from different polynomial rings has the same hash value, i.e., you get a result in the wrong ring.
 > > {{{
 > > sage: E = EllipticCurve([0,0,0,0,1])
@@ -986,10 +991,13 @@ Replying to [comment:36 cremona]:
 > > }}}
 > > 
 > > > there are places where instead of getting the polynomial and then substituting a value for x, one can compute the polynomials already evaluated, using the same recursion.
+
 > > I see. But would you really want to store these in the same `cache` dictionary?
 > > 
 > > If I understand correctly, the `cache` parameter is needed because you want to compute things for multiple values of `n`. Would it be acceptable if the method accepted a list for `n`? Or is the `cache` keyword used heavily by code outside the sage library?
+
 > 
 > No, absolutely not.  The cache variable is not intended for use by users at all.  (I did not design this!).  It is for internal use so that the function for one value of n can re-use its values for smaller n and the same x.  I'm sure there are are other (and possibly better) ways to do it.
+
 
 Great. Thanks for your answers. I will try to implement this in a different way at #16129 then.

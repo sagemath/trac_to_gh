@@ -3,7 +3,7 @@
 archive/issues_003961.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  alexghitza\n\nKeywords: elliptic curve fineite field\n\nThis works in 3.1.1:\n\n```\nsage: p=10^4+7; p       \n10007\nsage: F.<i>=GF(p^2)\nsage: E = EllipticCurve([0,0,0,i,i+3]); E\nElliptic Curve defined by y^2  = x^3 + i*x + (i+3) over Finite Field in i of size 10007^2\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C100130006,\n ((8287*i + 5423 : 9131*i + 6741 : 1),))\n```\n\n\nbut this does not:\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: P=K.factor(p)[0][0]; P\nFractional ideal (10007)\nsage: E = EllipticCurve([0,0,0,i,i+3]); E\nElliptic Curve defined by y^2  = x^3 + i*x + (i+3) over Number Field in i with defining polynomial x^2 + 1            \nsage: Emod = E.change_ring(K.ring_of_integers().residue_field(P)); Emod\nElliptic Curve defined by y^2  = x^3 + ibar*x + (ibar+3) over Residue field in ibar of Fractional ideal (10007)\nsage: Emod.abelian_group()\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/john/sage-3.1.final/<ipython console> in <module>()\n\n/home/john/sage-3.1.final/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py in abelian_group(self, debug)\n   1121                 if debug: print \"n1a=\",n1a\n   1122                 a = None\n-> 1123                 for m in (N//n1).divisors():\n   1124                     try:\n   1125                         a = generic.bsgs(m*P1a,m*Q,(0,(n1b//m)-1),operation='+')\n\nUnboundLocalError: local variable 'N' referenced before assignment\n```\n\n\nThat's a bug in code I wrote, and I will fix it.  But it's a mystery why it only arises when the same (abstract) finite field is defined as a quotient field of ZZ[i].\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3961\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  alexghitza\n\nKeywords: elliptic curve fineite field\n\nThis works in 3.1.1:\n\n```\nsage: p=10^4+7; p       \n10007\nsage: F.<i>=GF(p^2)\nsage: E = EllipticCurve([0,0,0,i,i+3]); E\nElliptic Curve defined by y^2  = x^3 + i*x + (i+3) over Finite Field in i of size 10007^2\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C100130006,\n ((8287*i + 5423 : 9131*i + 6741 : 1),))\n```\n\nbut this does not:\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: P=K.factor(p)[0][0]; P\nFractional ideal (10007)\nsage: E = EllipticCurve([0,0,0,i,i+3]); E\nElliptic Curve defined by y^2  = x^3 + i*x + (i+3) over Number Field in i with defining polynomial x^2 + 1            \nsage: Emod = E.change_ring(K.ring_of_integers().residue_field(P)); Emod\nElliptic Curve defined by y^2  = x^3 + ibar*x + (ibar+3) over Residue field in ibar of Fractional ideal (10007)\nsage: Emod.abelian_group()\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/john/sage-3.1.final/<ipython console> in <module>()\n\n/home/john/sage-3.1.final/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py in abelian_group(self, debug)\n   1121                 if debug: print \"n1a=\",n1a\n   1122                 a = None\n-> 1123                 for m in (N//n1).divisors():\n   1124                     try:\n   1125                         a = generic.bsgs(m*P1a,m*Q,(0,(n1b//m)-1),operation='+')\n\nUnboundLocalError: local variable 'N' referenced before assignment\n```\n\nThat's a bug in code I wrote, and I will fix it.  But it's a mystery why it only arises when the same (abstract) finite field is defined as a quotient field of ZZ[i].\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3961\n\n",
     "created_at": "2008-08-26T19:48:12Z",
     "labels": [
         "component: algebra",
@@ -37,7 +37,6 @@ sage: E.abelian_group()
  ((8287*i + 5423 : 9131*i + 6741 : 1),))
 ```
 
-
 but this does not:
 
 ```
@@ -63,7 +62,6 @@ UnboundLocalError                         Traceback (most recent call last)
 
 UnboundLocalError: local variable 'N' referenced before assignment
 ```
-
 
 That's a bug in code I wrote, and I will fix it.  But it's a mystery why it only arises when the same (abstract) finite field is defined as a quotient field of ZZ[i].
 

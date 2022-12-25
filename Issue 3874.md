@@ -69,7 +69,7 @@ Changing assignee from @williamstein to @kcrisman.
 archive/issue_comments_027572.json:
 ```json
 {
-    "body": "\n```\n\nCan you throw in a call to\n\n  p.xmin(xmin)\n\nbefore returning p?  The plot of  plot(moebius, 500,550) would look\nmuch nicer as a result. \n```\n",
+    "body": "```\n\nCan you throw in a call to\n\n  p.xmin(xmin)\n\nbefore returning p?  The plot of  plot(moebius, 500,550) would look\nmuch nicer as a result. \n```",
     "created_at": "2008-08-15T16:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ archive/issue_comments_027572.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -91,13 +90,12 @@ much nicer as a result.
 
 
 
-
 ---
 
 archive/issue_comments_027573.json:
 ```json
 {
-    "body": "\n```\n> William,\n>\n> If you are referring to the viewing window starting around x=-1, my\n> understanding was that this is taken care of by the patches to\n> http://trac.sagemath.org/sage_trac/ticket/3806, which will be in 3.1.\n> I attach the output of\n> sage: plot(moebius,500,550)\n> on my system, with those patches included.\n>\n> If that's not what you mean, let me know what the problem with the\n> plot is and I will be happy to have the code reset the xmin. Thanks\n> for the feedback!\n>\n> - kcrisman\n\nWith the excellent work at #3806, I immediately change my opinion to\npositive review for your patch as is. \n\n```\n",
+    "body": "```\n> William,\n>\n> If you are referring to the viewing window starting around x=-1, my\n> understanding was that this is taken care of by the patches to\n> http://trac.sagemath.org/sage_trac/ticket/3806, which will be in 3.1.\n> I attach the output of\n> sage: plot(moebius,500,550)\n> on my system, with those patches included.\n>\n> If that's not what you mean, let me know what the problem with the\n> plot is and I will be happy to have the code reset the xmin. Thanks\n> for the feedback!\n>\n> - kcrisman\n\nWith the excellent work at #3806, I immediately change my opinion to\npositive review for your patch as is. \n\n```",
     "created_at": "2008-08-15T17:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ archive/issue_comments_027573.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > William,
@@ -127,7 +124,6 @@ With the excellent work at #3806, I immediately change my opinion to
 positive review for your patch as is. 
 
 ```
-
 
 
 

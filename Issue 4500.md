@@ -90,7 +90,7 @@ archive/issue_events_010191.json:
 archive/issue_comments_033248.json:
 ```json
 {
-    "body": "Unbelievable! But true (I checked older Sage versions, too). I read the ticket while building Sage 3.2.rc0 and had a look. While in the shell where I issued the build it was printing:\n\n```\ng++ -o libcsage.dylib -single_module -flat_namespace -undefined dynamic_lookup -dynamiclib src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/Users/georgweber/Public/sage/sage-3.2.rc0/local/lib -lntl -lgmp -lpari\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nsage/structure/sage_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/sage_object.pyx\nsage/structure/category_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/category_object.pyx\n```\n\none should assume that then in the following the .pyx files were copied over.\n\nBut this was not the case!\n\nIn fact, the directory /Users/georgweber/Public/sage/sage-3.2.rc0/devel/sage/build/sage/ was empty (!!!) at that time, and thus the (linked) directory /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages/sage/ was empty too, i.e. had no subdirectory structure. I wasn't fast enough to create by hand some of the missung directories and see whether then, the .pyx files would be copied over there as the log output shows resp. wants to make us believe, but that might be worth another try.\n\nI do now think the .pyx were not deleted, but were never successfully copied over.",
+    "body": "Unbelievable! But true (I checked older Sage versions, too). I read the ticket while building Sage 3.2.rc0 and had a look. While in the shell where I issued the build it was printing:\n\n```\ng++ -o libcsage.dylib -single_module -flat_namespace -undefined dynamic_lookup -dynamiclib src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/Users/georgweber/Public/sage/sage-3.2.rc0/local/lib -lntl -lgmp -lpari\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nsage/structure/sage_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/sage_object.pyx\nsage/structure/category_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/category_object.pyx\n```\none should assume that then in the following the .pyx files were copied over.\n\nBut this was not the case!\n\nIn fact, the directory /Users/georgweber/Public/sage/sage-3.2.rc0/devel/sage/build/sage/ was empty (!!!) at that time, and thus the (linked) directory /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages/sage/ was empty too, i.e. had no subdirectory structure. I wasn't fast enough to create by hand some of the missung directories and see whether then, the .pyx files would be copied over there as the log output shows resp. wants to make us believe, but that might be worth another try.\n\nI do now think the .pyx were not deleted, but were never successfully copied over.",
     "created_at": "2008-11-12T20:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -116,7 +116,6 @@ Updating Cython code....
 sage/structure/sage_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/sage_object.pyx
 sage/structure/category_object.pyx --> /Users/georgweber/Public/sage/sage-3.2.rc0/local//lib/python/site-packages//sage/structure/category_object.pyx
 ```
-
 one should assume that then in the following the .pyx files were copied over.
 
 But this was not the case!
@@ -244,7 +243,7 @@ Zut alors, it seems I have to recheck this one ... still working
 archive/issue_comments_033255.json:
 ```json
 {
-    "body": "Before the current patch:\n\n```\nTime to execute 216 commands: 2665.62391996 seconds\nFinished compiling Cython code (time = 2668.81615806 seconds)\n```\n\nafter the current patch:\n\n```\nTime to execute 95 commands: 967.580175877 seconds\nFinished compiling Cython code (time = 969.730924129 seconds)\n```\n\nAnd then things go awry because more than half of the needed Cython compiled files are missing ...",
+    "body": "Before the current patch:\n\n```\nTime to execute 216 commands: 2665.62391996 seconds\nFinished compiling Cython code (time = 2668.81615806 seconds)\n```\nafter the current patch:\n\n```\nTime to execute 95 commands: 967.580175877 seconds\nFinished compiling Cython code (time = 969.730924129 seconds)\n```\nAnd then things go awry because more than half of the needed Cython compiled files are missing ...",
     "created_at": "2008-11-12T23:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -259,14 +258,12 @@ Before the current patch:
 Time to execute 216 commands: 2665.62391996 seconds
 Finished compiling Cython code (time = 2668.81615806 seconds)
 ```
-
 after the current patch:
 
 ```
 Time to execute 95 commands: 967.580175877 seconds
 Finished compiling Cython code (time = 969.730924129 seconds)
 ```
-
 And then things go awry because more than half of the needed Cython compiled files are missing ...
 
 
@@ -438,7 +435,7 @@ Cheers, gsw
 archive/issue_comments_033264.json:
 ```json
 {
-    "body": "Replying to [comment:10 GeorgSWeber]:\n> This will lead to a positive review in the end, I'm sure.\n> \n> But from past experience, I would like to see with my own eyes the patch passing the necessary tests before I give the \"go!\". It will take at least several hours, maybe a day, before I can do the testing, because right now I don't have access to a Sage installation.\n\nYeah, any patch to the build system gets additional scrutiny since screw ups here affect a lot of people. \n\n> Maybe someone else is quicker.\n\nI will do a full cycle, i.e. force a complete rebuild after devel/sage-main with the patch applied to the spkg to see what happens, i.e. if a \"sage -b\" forces a rebuild on all files.\n\nEither way: thanks to both of you of putting this issue down.\n\n> Cheers, gsw\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 GeorgSWeber]:\n> This will lead to a positive review in the end, I'm sure.\n> \n> But from past experience, I would like to see with my own eyes the patch passing the necessary tests before I give the \"go!\". It will take at least several hours, maybe a day, before I can do the testing, because right now I don't have access to a Sage installation.\n\n\nYeah, any patch to the build system gets additional scrutiny since screw ups here affect a lot of people. \n\n> Maybe someone else is quicker.\n\n\nI will do a full cycle, i.e. force a complete rebuild after devel/sage-main with the patch applied to the spkg to see what happens, i.e. if a \"sage -b\" forces a rebuild on all files.\n\nEither way: thanks to both of you of putting this issue down.\n\n> Cheers, gsw\n\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T16:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -452,15 +449,18 @@ Replying to [comment:10 GeorgSWeber]:
 > 
 > But from past experience, I would like to see with my own eyes the patch passing the necessary tests before I give the "go!". It will take at least several hours, maybe a day, before I can do the testing, because right now I don't have access to a Sage installation.
 
+
 Yeah, any patch to the build system gets additional scrutiny since screw ups here affect a lot of people. 
 
 > Maybe someone else is quicker.
+
 
 I will do a full cycle, i.e. force a complete rebuild after devel/sage-main with the patch applied to the spkg to see what happens, i.e. if a "sage -b" forces a rebuild on all files.
 
 Either way: thanks to both of you of putting this issue down.
 
 > Cheers, gsw
+
 
 Cheers,
 
@@ -473,7 +473,7 @@ Michael
 archive/issue_comments_033265.json:
 ```json
 {
-    "body": "Hmm, this blows up (also with the patch from #4480 applied) when doing a virgin build:\n\n```\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 435, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 400, in compile_command_list\n    dest_time = deps.timestamp(dest_file)\n  File \"setup.py\", line 244, in timestamp\n    self._timestamps[filename] = os.path.getmtime(filename)\n  File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/scratch/mabshoff/release-cycle/sage-3.1.3.final/local//lib/python/site-packages//sage/structure/sage_object.pyx'\nsage: There was an error installing modified sage library code.\n```\n\nDon't let the path names fool you - this is a 3.2.rc0 build.\n\nCheers,\n\nMichael",
+    "body": "Hmm, this blows up (also with the patch from #4480 applied) when doing a virgin build:\n\n```\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 435, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 400, in compile_command_list\n    dest_time = deps.timestamp(dest_file)\n  File \"setup.py\", line 244, in timestamp\n    self._timestamps[filename] = os.path.getmtime(filename)\n  File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/scratch/mabshoff/release-cycle/sage-3.1.3.final/local//lib/python/site-packages//sage/structure/sage_object.pyx'\nsage: There was an error installing modified sage library code.\n```\nDon't let the path names fool you - this is a 3.2.rc0 build.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T16:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -500,7 +500,6 @@ Traceback (most recent call last):
 OSError: [Errno 2] No such file or directory: '/scratch/mabshoff/release-cycle/sage-3.1.3.final/local//lib/python/site-packages//sage/structure/sage_object.pyx'
 sage: There was an error installing modified sage library code.
 ```
-
 Don't let the path names fool you - this is a 3.2.rc0 build.
 
 Cheers,
@@ -514,7 +513,7 @@ Michael
 archive/issue_comments_033266.json:
 ```json
 {
-    "body": "This patch fixes the issue for me:\n\n```\ndiff -r c543000d6447 setup.py\n--- a/setup.py\tThu Nov 13 05:32:07 2008 -0800\n+++ b/setup.py\tThu Nov 13 09:43:33 2008 -0800\n@@ -241,7 +241,10 @@\n         Look up the last modified time of a file, with caching. \n         \"\"\"\n         if filename not in self._timestamps:\n-            self._timestamps[filename] = os.path.getmtime(filename)\n+            try:\n+                 self._timestamps[filename] = os.path.getmtime(filename)\n+            except:\n+                 self._timestamps[filename] = 0\n         return self._timestamps[filename]\n \n     def parse_deps(self, filename, verify=True):\n```\n\nI would guess this is more a #4480 issue, but since I started on this ticket and I want to merge both of them I will mention it here.\n\nCheers,\n\nMichael",
+    "body": "This patch fixes the issue for me:\n\n```\ndiff -r c543000d6447 setup.py\n--- a/setup.py\tThu Nov 13 05:32:07 2008 -0800\n+++ b/setup.py\tThu Nov 13 09:43:33 2008 -0800\n@@ -241,7 +241,10 @@\n         Look up the last modified time of a file, with caching. \n         \"\"\"\n         if filename not in self._timestamps:\n-            self._timestamps[filename] = os.path.getmtime(filename)\n+            try:\n+                 self._timestamps[filename] = os.path.getmtime(filename)\n+            except:\n+                 self._timestamps[filename] = 0\n         return self._timestamps[filename]\n \n     def parse_deps(self, filename, verify=True):\n```\nI would guess this is more a #4480 issue, but since I started on this ticket and I want to merge both of them I will mention it here.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T17:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -542,7 +541,6 @@ diff -r c543000d6447 setup.py
  
      def parse_deps(self, filename, verify=True):
 ```
-
 I would guess this is more a #4480 issue, but since I started on this ticket and I want to merge both of them I will mention it here.
 
 Cheers,

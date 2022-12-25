@@ -3,7 +3,7 @@
 archive/issues_005962.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap comparison\n\nOn sage.math with sage-3.4.1, one has\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage1 < $sage2;\n```\n\n\nThe problem seems to be that Gap is unable to compare:\n\n```\nsage: gap('DihedralGroup(8)=DihedralGroup(8)')\nfalse\n```\n\n\nPerhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? \n\nAt least it should be made sure that the `__cmp__` method of the Gap interface does not raise an error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5962\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap comparison\n\nOn sage.math with sage-3.4.1, one has\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage1 < $sage2;\n```\n\nThe problem seems to be that Gap is unable to compare:\n\n```\nsage: gap('DihedralGroup(8)=DihedralGroup(8)')\nfalse\n```\n\nPerhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? \n\nAt least it should be made sure that the `__cmp__` method of the Gap interface does not raise an error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5962\n\n",
     "created_at": "2009-05-02T17:31:46Z",
     "labels": [
         "component: interfaces",
@@ -35,14 +35,12 @@ Error, no 1st choice method found for `LT' on 2 arguments
    executing $sage1 < $sage2;
 ```
 
-
 The problem seems to be that Gap is unable to compare:
 
 ```
 sage: gap('DihedralGroup(8)=DihedralGroup(8)')
 false
 ```
-
 
 Perhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? 
 
@@ -78,7 +76,7 @@ Changing status from new to needs_review.
 archive/issue_comments_047125.json:
 ```json
 {
-    "body": "I see no way for a really satisfying solution, as long as GAP can not even compare two objects whose definitions are identical.\n\nHowever, the errors being raised by GAP when comparing elements are now caught in a try-except clause. We have, as doc tests:\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\nFalse    # sorry, this is what GAP claims.\nsage: gap('SymmetricGroup(8)')<gap('AlternatingGroup(8)')\nTrue\nsage: gap('SymmetricGroup(8)')>gap('AlternatingGroup(8)')\nFalse\nsage: gap('SymmetricGroup(8)')==gap('SymmetricGroup(8)')\nTrue\n```\n\n\nAll but the first of these examples worked before. But the first resulted in an error, which is now fixed.",
+    "body": "I see no way for a really satisfying solution, as long as GAP can not even compare two objects whose definitions are identical.\n\nHowever, the errors being raised by GAP when comparing elements are now caught in a try-except clause. We have, as doc tests:\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\nFalse    # sorry, this is what GAP claims.\nsage: gap('SymmetricGroup(8)')<gap('AlternatingGroup(8)')\nTrue\nsage: gap('SymmetricGroup(8)')>gap('AlternatingGroup(8)')\nFalse\nsage: gap('SymmetricGroup(8)')==gap('SymmetricGroup(8)')\nTrue\n```\n\nAll but the first of these examples worked before. But the first resulted in an error, which is now fixed.",
     "created_at": "2010-07-05T12:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
@@ -101,7 +99,6 @@ False
 sage: gap('SymmetricGroup(8)')==gap('SymmetricGroup(8)')
 True
 ```
-
 
 All but the first of these examples worked before. But the first resulted in an error, which is now fixed.
 
@@ -130,7 +127,7 @@ I just found that this ticket needs review since 8 months. Fortunately the patch
 archive/issue_comments_047127.json:
 ```json
 {
-    "body": "Replying to [comment:2 SimonKing]:\n> I just found that this ticket needs review since 8 months. \n> Fortunately the patch still works fine. So, any volunteer?\n\nI have spring break coming up and can try to review it then if no one beats me to it.",
+    "body": "Replying to [comment:2 SimonKing]:\n> I just found that this ticket needs review since 8 months. \n> Fortunately the patch still works fine. So, any volunteer?\n\n\nI have spring break coming up and can try to review it then if no one beats me to it.",
     "created_at": "2011-03-08T13:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
@@ -142,6 +139,7 @@ archive/issue_comments_047127.json:
 Replying to [comment:2 SimonKing]:
 > I just found that this ticket needs review since 8 months. 
 > Fortunately the patch still works fine. So, any volunteer?
+
 
 I have spring break coming up and can try to review it then if no one beats me to it.
 
@@ -264,7 +262,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_047134.json:
 ```json
 {
-    "body": "Replying to [comment:5 jdemeyer]:\n> Please change the commit message (using hg qrefresh -e) such that the ticket number appears on the first line. \n\nDone.",
+    "body": "Replying to [comment:5 jdemeyer]:\n> Please change the commit message (using hg qrefresh -e) such that the ticket number appears on the first line. \n\n\nDone.",
     "created_at": "2011-03-27T14:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
@@ -276,6 +274,7 @@ archive/issue_comments_047134.json:
 Replying to [comment:5 jdemeyer]:
 > Please change the commit message (using hg qrefresh -e) such that the ticket number appears on the first line. 
 
+
 Done.
 
 
@@ -285,7 +284,7 @@ Done.
 archive/issue_comments_047135.json:
 ```json
 {
-    "body": "Replying to [comment:6 SimonKing]:\n> Done.\n\nThanks!",
+    "body": "Replying to [comment:6 SimonKing]:\n> Done.\n\n\nThanks!",
     "created_at": "2011-03-27T14:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
@@ -296,6 +295,7 @@ archive/issue_comments_047135.json:
 
 Replying to [comment:6 SimonKing]:
 > Done.
+
 
 Thanks!
 

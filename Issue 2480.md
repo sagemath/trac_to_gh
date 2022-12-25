@@ -3,7 +3,7 @@
 archive/issues_002480.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @robertwb @mwhansen\n\nKeywords: number field order arguments\n\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @robertwb @mwhansen\n\nKeywords: number field order arguments\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
     "created_at": "2008-03-12T03:19:59Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ CC:  @ncalexan @robertwb @mwhansen
 
 Keywords: number field order arguments
 
-
 ```
 sage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K
 Number Field in a with defining polynomial y^4 + 4*y^2 + 2
@@ -35,7 +34,6 @@ Order in Number Field in a with defining polynomial y^4 + 4*y^2 + 2
 sage: K.order(gens=B)
 +Infinity
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2480
 
@@ -140,7 +138,7 @@ Mike and Robert, I'm adding you on the cc so that you can tell me if I'm being s
 archive/issue_comments_016775.json:
 ```json
 {
-    "body": "Hey Craig,\n\n\n```\ngens = kwds.pop('gens')\n```\n\n\nis probably better.",
+    "body": "Hey Craig,\n\n```\ngens = kwds.pop('gens')\n```\n\nis probably better.",
     "created_at": "2010-01-20T07:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
@@ -151,11 +149,9 @@ archive/issue_comments_016775.json:
 
 Hey Craig,
 
-
 ```
 gens = kwds.pop('gens')
 ```
-
 
 is probably better.
 
@@ -166,7 +162,7 @@ is probably better.
 archive/issue_comments_016776.json:
 ```json
 {
-    "body": "Err,\n\n\n```\ngens = kwds.pop('gens', args)\n```\n",
+    "body": "Err,\n\n```\ngens = kwds.pop('gens', args)\n```",
     "created_at": "2010-01-20T07:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
@@ -177,11 +173,9 @@ archive/issue_comments_016776.json:
 
 Err,
 
-
 ```
 gens = kwds.pop('gens', args)
 ```
-
 
 
 

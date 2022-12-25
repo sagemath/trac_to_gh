@@ -3,7 +3,7 @@
 archive/issues_005597.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber @craigcitro\n\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber @craigcitro\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
     "created_at": "2009-03-24T05:09:01Z",
     "labels": [
         "component: coercion",
@@ -20,7 +20,6 @@ Assignee: @robertwb
 
 CC:  @nthiery georgsweber @craigcitro
 
-
 ```
 Currently, if A has an action on B (where B is not an A-module) one  
 implements either a._l_action_ or b._r_action_. This is because  
@@ -34,7 +33,6 @@ The proposal is to make the methods a._act_on_(b, self_on_left) and
 b._acted_upon_(a, self_on_left). In other words, a*b would try  
 "a._act_on_(b, True)" and "b._acted_upon_(a, False)". 
 ```
-
 
 See discussion at 
 
@@ -252,7 +250,7 @@ Yes, it should be trying all 4 of these options.
 archive/issue_comments_043528.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> Yes, it should be trying all 4 of these options. \n\nOk. Then I would prefer:\n\na.act_on_left(b)\nb.act_on_right(a)\na.acted_upon_right(b)\nb.acted_upon_left(a)\n\nwhich makes it easier to implement independently the left and right actions on a module, and possibly override just one or the other in a subclass.\n\nThat being said, we can leave things as is. Those modules for which left and right action do not coincide can later implement a.acted_upon(...) by delegating the work to\nacted_upon_left and acted_upon_right.",
+    "body": "Replying to [comment:7 robertwb]:\n> Yes, it should be trying all 4 of these options. \n\n\nOk. Then I would prefer:\n\na.act_on_left(b)\nb.act_on_right(a)\na.acted_upon_right(b)\nb.acted_upon_left(a)\n\nwhich makes it easier to implement independently the left and right actions on a module, and possibly override just one or the other in a subclass.\n\nThat being said, we can leave things as is. Those modules for which left and right action do not coincide can later implement a.acted_upon(...) by delegating the work to\nacted_upon_left and acted_upon_right.",
     "created_at": "2009-10-14T10:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -263,6 +261,7 @@ archive/issue_comments_043528.json:
 
 Replying to [comment:7 robertwb]:
 > Yes, it should be trying all 4 of these options. 
+
 
 Ok. Then I would prefer:
 
@@ -339,7 +338,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_043532.json:
 ```json
 {
-    "body": "Replying to [comment:9 robertwb]:\n> But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). \n\nIt sounds rather clear to me.\n\n> In any case, this behavior is easy to implement in a superclass. \n\nYes.\n\n> So, is this a positive review (pending all doctests passing, which they did last I checked)?\n\nYes, I just wanted to discuss the matter first. Also, part of this may become obsolete once I will have a prototype implementation of overloaded operators/functions as in MuPAD, with a declarative interface (the Sage-combinat people need them anyway for other purposes). I'll post here a link to the appropriate ticket when times come.",
+    "body": "Replying to [comment:9 robertwb]:\n> But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). \n\n\nIt sounds rather clear to me.\n\n> In any case, this behavior is easy to implement in a superclass. \n\n\nYes.\n\n> So, is this a positive review (pending all doctests passing, which they did last I checked)?\n\n\nYes, I just wanted to discuss the matter first. Also, part of this may become obsolete once I will have a prototype implementation of overloaded operators/functions as in MuPAD, with a declarative interface (the Sage-combinat people need them anyway for other purposes). I'll post here a link to the appropriate ticket when times come.",
     "created_at": "2009-10-15T12:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
@@ -351,13 +350,16 @@ archive/issue_comments_043532.json:
 Replying to [comment:9 robertwb]:
 > But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). 
 
+
 It sounds rather clear to me.
 
 > In any case, this behavior is easy to implement in a superclass. 
 
+
 Yes.
 
 > So, is this a positive review (pending all doctests passing, which they did last I checked)?
+
 
 Yes, I just wanted to discuss the matter first. Also, part of this may become obsolete once I will have a prototype implementation of overloaded operators/functions as in MuPAD, with a declarative interface (the Sage-combinat people need them anyway for other purposes). I'll post here a link to the appropriate ticket when times come.
 

@@ -127,7 +127,7 @@ Michael
 archive/issue_comments_018079.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> Ok, the bundle showed up, i.e. it was a race condition. We do prefer patches over bundles, especially for single commit changesets.\n\nI followed the advise in \nhttp://www.sagemath.org/doc/html/prog/node72.html\n* \"For the occasional contributor:\"\n \n> I am not sure this is a good feature since UTF-8 is ubiquitous out there these days. We build Python with ucs4 anyway, so I see no point to this patch. This  will only cause trouble if people start exchanging Sage files with different encodings. The code isn't doctested either, so if it were accepted that needs to be added, too.\n\nI was thinking exactly the same after I saw the Martin's patch: \n*\"That will only cause trouble if someone wants to use something different than UTF-8. With sage being compatible with Python, sage should also support encoding selection.\"* \nSo I think it is the other way around: you get in trouble if people start using sage e.g. in Asia, using their their local encoding and there is no way to tell sage that the file is something different than UTF-8.\n\nPerhaps I am a bit too sensitive, because I have a long and frustrating history with computersystems making assumptions about encodings. \n\nIf there is interest, I can add doctests. What hg_sage. .... function would I use to get a file, I can attach? export() with the last but one entry from the log, and then replacing the attachment above?\n\nWith best regards,\nLars Fischer",
+    "body": "Replying to [comment:2 mabshoff]:\n> Ok, the bundle showed up, i.e. it was a race condition. We do prefer patches over bundles, especially for single commit changesets.\n\n\nI followed the advise in \nhttp://www.sagemath.org/doc/html/prog/node72.html\n* \"For the occasional contributor:\"\n \n> I am not sure this is a good feature since UTF-8 is ubiquitous out there these days. We build Python with ucs4 anyway, so I see no point to this patch. This  will only cause trouble if people start exchanging Sage files with different encodings. The code isn't doctested either, so if it were accepted that needs to be added, too.\n\n\nI was thinking exactly the same after I saw the Martin's patch: \n*\"That will only cause trouble if someone wants to use something different than UTF-8. With sage being compatible with Python, sage should also support encoding selection.\"* \nSo I think it is the other way around: you get in trouble if people start using sage e.g. in Asia, using their their local encoding and there is no way to tell sage that the file is something different than UTF-8.\n\nPerhaps I am a bit too sensitive, because I have a long and frustrating history with computersystems making assumptions about encodings. \n\nIf there is interest, I can add doctests. What hg_sage. .... function would I use to get a file, I can attach? export() with the last but one entry from the log, and then replacing the attachment above?\n\nWith best regards,\nLars Fischer",
     "created_at": "2008-03-22T12:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -139,11 +139,13 @@ archive/issue_comments_018079.json:
 Replying to [comment:2 mabshoff]:
 > Ok, the bundle showed up, i.e. it was a race condition. We do prefer patches over bundles, especially for single commit changesets.
 
+
 I followed the advise in 
 http://www.sagemath.org/doc/html/prog/node72.html
 * "For the occasional contributor:"
  
 > I am not sure this is a good feature since UTF-8 is ubiquitous out there these days. We build Python with ucs4 anyway, so I see no point to this patch. This  will only cause trouble if people start exchanging Sage files with different encodings. The code isn't doctested either, so if it were accepted that needs to be added, too.
+
 
 I was thinking exactly the same after I saw the Martin's patch: 
 *"That will only cause trouble if someone wants to use something different than UTF-8. With sage being compatible with Python, sage should also support encoding selection."* 
@@ -232,7 +234,7 @@ Michael
 archive/issue_comments_018083.json:
 ```json
 {
-    "body": "But there are a bunch of issues with the doctests:\n\n* devel/sage/sage/misc/interpreter.py has doctests disabled in general\n* you need to add \"from sage.misc.interpreter import handle_encoding_declaration\" to make the doctests work\n* Even then I get the following failure:\n\n```\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha5/tmp/interpreter.py\", line 355:\n    sage: c4='import os, sys\\n...'\nExpected:\n    handle_encoding_declaration(c1, sys.stdout)\n    # -*- coding: latin-1 -*-\n    'import os, sys\\n..'\nGot nothing\n```\n\nThere are other, unrelated doctest failure issues in that file, I fixed most of them and will hopefully post a patch shortly.\n\nCheers,\n\nMichael",
+    "body": "But there are a bunch of issues with the doctests:\n\n* devel/sage/sage/misc/interpreter.py has doctests disabled in general\n* you need to add \"from sage.misc.interpreter import handle_encoding_declaration\" to make the doctests work\n* Even then I get the following failure:\n\n```\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha5/tmp/interpreter.py\", line 355:\n    sage: c4='import os, sys\\n...'\nExpected:\n    handle_encoding_declaration(c1, sys.stdout)\n    # -*- coding: latin-1 -*-\n    'import os, sys\\n..'\nGot nothing\n```\nThere are other, unrelated doctest failure issues in that file, I fixed most of them and will hopefully post a patch shortly.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T18:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -256,7 +258,6 @@ Expected:
     'import os, sys\n..'
 Got nothing
 ```
-
 There are other, unrelated doctest failure issues in that file, I fixed most of them and will hopefully post a patch shortly.
 
 Cheers,
@@ -324,7 +325,7 @@ Apply `encoding.hg.patch` first then `trac2637_fixes.patch` which still needs a 
 archive/issue_comments_018087.json:
 ```json
 {
-    "body": "Replying to [comment:8 malb]:\n\nHello,\n\nI am very busy at the moment. Because of that I was so quiet. Additionally the last upgrade  to sage 3.0 (sage -b main; sage -upgrade;) left my testing branch with the modified version of handle_encoding_declaration unusable:\n\n\n```\nsage -br test\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n.....\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nSetting permissions of DOT_SAGE directory so only you can read and write it.\nLoading SAGE library. Current Mercurial branch is: test\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n....\n/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/all.py in <module>()\n     35\n     36 # Boolean Polynomial Rings\n---> 37 from sage.rings.polynomial.pbori import BooleanPolynomialRing\n     38\n     39 from sage.rings.polynomial.multi_polynomial_ideal import is_MPolynomialIdeal\n| SAGE Version 3.0, Release Date: 2008-04-23                         |\n| Type notebook() for the GUI, and license() for information.        |\n<type 'exceptions.ImportError'>: libpolybori.so: cannot open shared object file: No such file or directory\nsage:                    \n```\n\n\nI did not know how to deal with it, today I just rm-rf my sage-test branch, cloned a new one from the 3.0 version, sage -br test, hg_sage.applied encoding.hg.patch and trac2637_fixes.patch.\n\nAfter that sage -b  and then sage -t interpreter.py was successful.\n\n> Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.\n\nWhat concern do you mean, after testing works?\n\n\nWith best regards,\n\nLars Fischer",
+    "body": "Replying to [comment:8 malb]:\n\nHello,\n\nI am very busy at the moment. Because of that I was so quiet. Additionally the last upgrade  to sage 3.0 (sage -b main; sage -upgrade;) left my testing branch with the modified version of handle_encoding_declaration unusable:\n\n```\nsage -br test\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n.....\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nSetting permissions of DOT_SAGE directory so only you can read and write it.\nLoading SAGE library. Current Mercurial branch is: test\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n....\n/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/all.py in <module>()\n     35\n     36 # Boolean Polynomial Rings\n---> 37 from sage.rings.polynomial.pbori import BooleanPolynomialRing\n     38\n     39 from sage.rings.polynomial.multi_polynomial_ideal import is_MPolynomialIdeal\n| SAGE Version 3.0, Release Date: 2008-04-23                         |\n| Type notebook() for the GUI, and license() for information.        |\n<type 'exceptions.ImportError'>: libpolybori.so: cannot open shared object file: No such file or directory\nsage:                    \n```\n\nI did not know how to deal with it, today I just rm-rf my sage-test branch, cloned a new one from the 3.0 version, sage -br test, hg_sage.applied encoding.hg.patch and trac2637_fixes.patch.\n\nAfter that sage -b  and then sage -t interpreter.py was successful.\n\n> Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.\n\n\nWhat concern do you mean, after testing works?\n\n\nWith best regards,\n\nLars Fischer",
     "created_at": "2008-06-24T12:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -338,7 +339,6 @@ Replying to [comment:8 malb]:
 Hello,
 
 I am very busy at the moment. Because of that I was so quiet. Additionally the last upgrade  to sage 3.0 (sage -b main; sage -upgrade;) left my testing branch with the modified version of handle_encoding_declaration unusable:
-
 
 ```
 sage -br test
@@ -365,12 +365,12 @@ Loading SAGE library. Current Mercurial branch is: test
 sage:                    
 ```
 
-
 I did not know how to deal with it, today I just rm-rf my sage-test branch, cloned a new one from the 3.0 version, sage -br test, hg_sage.applied encoding.hg.patch and trac2637_fixes.patch.
 
 After that sage -b  and then sage -t interpreter.py was successful.
 
 > Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.
+
 
 What concern do you mean, after testing works?
 
@@ -386,7 +386,7 @@ Lars Fischer
 archive/issue_comments_018088.json:
 ```json
 {
-    "body": "Replying to [comment:10 lars.fischer]:\n> After that sage -b  and then sage -t interpreter.py was successful.\n> \n> > Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.\n> \n> What concern do you mean, after testing works?\n\nI addressed the Michael's review in my patch so all that is needed from my perspective is a review of my patch. This can be either done by you or by Michael or by somebody else. Cheers, Martin",
+    "body": "Replying to [comment:10 lars.fischer]:\n> After that sage -b  and then sage -t interpreter.py was successful.\n> \n> > Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.\n\n> \n> What concern do you mean, after testing works?\n\n\nI addressed the Michael's review in my patch so all that is needed from my perspective is a review of my patch. This can be either done by you or by Michael or by somebody else. Cheers, Martin",
     "created_at": "2008-06-24T12:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -399,8 +399,10 @@ Replying to [comment:10 lars.fischer]:
 > After that sage -b  and then sage -t interpreter.py was successful.
 > 
 > > Lars are you planing to address Michael's concern? I took over making sure that the patch gets in (I'm the editor for it now) and thus I wonder.
+
 > 
 > What concern do you mean, after testing works?
+
 
 I addressed the Michael's review in my patch so all that is needed from my perspective is a review of my patch. This can be either done by you or by Michael or by somebody else. Cheers, Martin
 
@@ -411,7 +413,7 @@ I addressed the Michael's review in my patch so all that is needed from my persp
 archive/issue_comments_018089.json:
 ```json
 {
-    "body": "Two suggestions for Martin's patch: I would remove the doctest:\n\n```\n78\t \t    sage: V = VectorSp \n \t78\t \n \t79\t    sage: V = VectorSp # not tested \n79\t80\t    VectorSpace                      VectorSpace_subspace \n80\t81\t    VectorSpace_ambient              VectorSpace_subspace_with_basis \n81\t82\t    VectorSpace_generic\n```\n\nsince it does not work any more as is and open a ticket for\n\n```\n513\t \t        sage: preparser(False) \n514\t \t        sage: 2/3 \n \t519\t \n \t520\t        sage: preparser(False)  \n \t521\t        sage: 2/3 # not tested since the doctest framework preparses anyway \n515\t522\t        0 \n \t523\t \n```\n\nunless the preparser is unfixable. When I attempted to fix all the doctests in the file I ran into the same problem and gave up after I ran into the same problem.\n\nCheers,\n\nMichael",
+    "body": "Two suggestions for Martin's patch: I would remove the doctest:\n\n```\n78\t \t    sage: V = VectorSp \n \t78\t \n \t79\t    sage: V = VectorSp # not tested \n79\t80\t    VectorSpace                      VectorSpace_subspace \n80\t81\t    VectorSpace_ambient              VectorSpace_subspace_with_basis \n81\t82\t    VectorSpace_generic\n```\nsince it does not work any more as is and open a ticket for\n\n```\n513\t \t        sage: preparser(False) \n514\t \t        sage: 2/3 \n \t519\t \n \t520\t        sage: preparser(False)  \n \t521\t        sage: 2/3 # not tested since the doctest framework preparses anyway \n515\t522\t        0 \n \t523\t \n```\nunless the preparser is unfixable. When I attempted to fix all the doctests in the file I ran into the same problem and gave up after I ran into the same problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-24T13:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
@@ -430,7 +432,6 @@ Two suggestions for Martin's patch: I would remove the doctest:
 80	81	    VectorSpace_ambient              VectorSpace_subspace_with_basis 
 81	82	    VectorSpace_generic
 ```
-
 since it does not work any more as is and open a ticket for
 
 ```
@@ -442,7 +443,6 @@ since it does not work any more as is and open a ticket for
 515	522	        0 
  	523	 
 ```
-
 unless the preparser is unfixable. When I attempted to fix all the doctests in the file I ran into the same problem and gave up after I ran into the same problem.
 
 Cheers,

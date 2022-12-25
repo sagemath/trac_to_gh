@@ -3,7 +3,7 @@
 archive/issues_001330.json:
 ```json
 {
-    "body": "Assignee: failure\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/calculus/test_sympy.py        **********************************************************************\nFile \"test_sympy.py\", line 23:\n    : float(pi + exp(1))\nExpected:\n    5.8598744820488378\nGot:\n    5.8598744820488387\n```\n\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1330\n\n",
+    "body": "Assignee: failure\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/calculus/test_sympy.py        **********************************************************************\nFile \"test_sympy.py\", line 23:\n    : float(pi + exp(1))\nExpected:\n    5.8598744820488378\nGot:\n    5.8598744820488387\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1330\n\n",
     "created_at": "2007-11-28T23:17:59Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ Expected:
 Got:
     5.8598744820488387
 ```
-
 
 The attached patch fixes that.
 

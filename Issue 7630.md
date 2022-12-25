@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065077.json:
 ```json
 {
-    "body": "Replying to [comment:1 ddrake]:\n> Patch up, please review. Sorry for the whitespace noise in the patch, I have nuke-trailing-whitespace on in emacs.\n> \n\n...\n\n>   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc. \n\n\nI totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out. \nInstall a mail server too? (a) This is not allowed where I work, except on certain machines. (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not. If the only option to setting up accounts once this patch is applied is to require email confirmation then I think this patch \"needs work\".\n\nHopefully I am just completely misunderstanding the entire purpose of this ticket.",
+    "body": "Replying to [comment:1 ddrake]:\n> Patch up, please review. Sorry for the whitespace noise in the patch, I have nuke-trailing-whitespace on in emacs.\n> \n\n\n...\n\n>   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc. \n\n\n\nI totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out. \nInstall a mail server too? (a) This is not allowed where I work, except on certain machines. (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not. If the only option to setting up accounts once this patch is applied is to require email confirmation then I think this patch \"needs work\".\n\nHopefully I am just completely misunderstanding the entire purpose of this ticket.",
     "created_at": "2010-02-08T12:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -93,9 +93,11 @@ Replying to [comment:1 ddrake]:
 > Patch up, please review. Sorry for the whitespace noise in the patch, I have nuke-trailing-whitespace on in emacs.
 > 
 
+
 ...
 
 >   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc. 
+
 
 
 I totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out. 
@@ -110,7 +112,7 @@ Hopefully I am just completely misunderstanding the entire purpose of this ticke
 archive/issue_comments_065078.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n\n> >   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc.  \n> \n> I totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out.\n\nTwisted includes an SMTP server.\n\n (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not.\n\nAs the admin user, go to Settings -> Notebook Settings -> Require email for account registration. You can tick the box to require it, or leave it unticked.\n\n> Hopefully I am just completely misunderstanding the entire purpose of this ticket.\n\nRight now, the notebook server has the option to require email confirmation before logging in -- but you can log in anyway, even before the email has been confirmed. That's the purpose of this ticket. No one will be forced to do anything with email registration / confirmation.",
+    "body": "Replying to [comment:2 wdj]:\n\n> >   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc.  \n \n> \n> I totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out.\n\n\nTwisted includes an SMTP server.\n\n (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not.\n\nAs the admin user, go to Settings -> Notebook Settings -> Require email for account registration. You can tick the box to require it, or leave it unticked.\n\n> Hopefully I am just completely misunderstanding the entire purpose of this ticket.\n\n\nRight now, the notebook server has the option to require email confirmation before logging in -- but you can log in anyway, even before the email has been confirmed. That's the purpose of this ticket. No one will be forced to do anything with email registration / confirmation.",
     "created_at": "2010-02-08T13:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -122,8 +124,10 @@ archive/issue_comments_065078.json:
 Replying to [comment:2 wdj]:
 
 > >   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc.  
+ 
 > 
 > I totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out.
+
 
 Twisted includes an SMTP server.
 
@@ -132,6 +136,7 @@ Twisted includes an SMTP server.
 As the admin user, go to Settings -> Notebook Settings -> Require email for account registration. You can tick the box to require it, or leave it unticked.
 
 > Hopefully I am just completely misunderstanding the entire purpose of this ticket.
+
 
 Right now, the notebook server has the option to require email confirmation before logging in -- but you can log in anyway, even before the email has been confirmed. That's the purpose of this ticket. No one will be forced to do anything with email registration / confirmation.
 
@@ -258,7 +263,7 @@ Is this really "needs review"?  The last few comments seem to indicate that it i
 archive/issue_comments_065085.json:
 ```json
 {
-    "body": "Replying to [comment:8 jason]:\n> Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n\nWell, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n\nAfter the patch gets a good review, I can add a small remove-all-the-prints patch.\n\n(Although I would like to see the notebook print more information; some kind of verbose logging option would be really useful.)",
+    "body": "Replying to [comment:8 jason]:\n> Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n\n\nWell, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n\nAfter the patch gets a good review, I can add a small remove-all-the-prints patch.\n\n(Although I would like to see the notebook print more information; some kind of verbose logging option would be really useful.)",
     "created_at": "2010-04-15T11:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -269,6 +274,7 @@ archive/issue_comments_065085.json:
 
 Replying to [comment:8 jason]:
 > Is this really "needs review"?  The last few comments seem to indicate that it is still "needs work".
+
 
 Well, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of "prints" -- it seems like a reviewer would also appreciate the help in seeing what's happening.
 
@@ -283,7 +289,7 @@ After the patch gets a good review, I can add a small remove-all-the-prints patc
 archive/issue_comments_065086.json:
 ```json
 {
-    "body": "Replying to [comment:9 ddrake]:\n> Replying to [comment:8 jason]:\n> > Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n> \n> Well, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n> \n> After the patch gets a good review, I can add a small remove-all-the-prints patch.\n\nPlease make all the print statements conditional, e.g., write a function\n\n```\n   def log_devel(s):\n        if VERBOSE: print s\n```\n\nand call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\nExplain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\nused elsewhere too. \n\n -- William",
+    "body": "Replying to [comment:9 ddrake]:\n> Replying to [comment:8 jason]:\n> > Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n\n> \n> Well, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n> \n> After the patch gets a good review, I can add a small remove-all-the-prints patch.\n\n\nPlease make all the print statements conditional, e.g., write a function\n\n```\n   def log_devel(s):\n        if VERBOSE: print s\n```\nand call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\nExplain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\nused elsewhere too. \n\n -- William",
     "created_at": "2010-04-24T23:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -295,10 +301,12 @@ archive/issue_comments_065086.json:
 Replying to [comment:9 ddrake]:
 > Replying to [comment:8 jason]:
 > > Is this really "needs review"?  The last few comments seem to indicate that it is still "needs work".
+
 > 
 > Well, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of "prints" -- it seems like a reviewer would also appreciate the help in seeing what's happening.
 > 
 > After the patch gets a good review, I can add a small remove-all-the-prints patch.
+
 
 Please make all the print statements conditional, e.g., write a function
 
@@ -306,7 +314,6 @@ Please make all the print statements conditional, e.g., write a function
    def log_devel(s):
         if VERBOSE: print s
 ```
-
 and call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.
 Explain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get
 used elsewhere too. 
@@ -376,7 +383,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065090.json:
 ```json
 {
-    "body": "Replying to [comment:10 was]:\n> Please make all the print statements conditional, e.g., write a function\n> {{{\n>    def log_devel(s):\n>         if VERBOSE: print s\n> }}}\n> and call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\n> Explain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\n> used elsewhere too. \n\nOkay, done. I've rebased the patch so it applies to sagenb 0.8.1 (see #8727).",
+    "body": "Replying to [comment:10 was]:\n> Please make all the print statements conditional, e.g., write a function\n> \n> ```\n>    def log_devel(s):\n>         if VERBOSE: print s\n> ```\n> and call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\n> Explain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\n> used elsewhere too. \n\n\nOkay, done. I've rebased the patch so it applies to sagenb 0.8.1 (see #8727).",
     "created_at": "2010-04-26T07:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
@@ -387,13 +394,15 @@ archive/issue_comments_065090.json:
 
 Replying to [comment:10 was]:
 > Please make all the print statements conditional, e.g., write a function
-> {{{
+> 
+> ```
 >    def log_devel(s):
 >         if VERBOSE: print s
-> }}}
+> ```
 > and call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.
 > Explain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get
 > used elsewhere too. 
+
 
 Okay, done. I've rebased the patch so it applies to sagenb 0.8.1 (see #8727).
 

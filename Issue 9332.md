@@ -166,7 +166,7 @@ For me the 3rd patch does not apply on top of the first two.  It also looks stra
 archive/issue_comments_087897.json:
 ```json
 {
-    "body": "The newest patch is something that I've been working on for the last several days, but I'm making no progress. There's a phantom attribute error which comes up under the following code:\n\n\n```\nsage: K.<a> = QuadraticField(-14)                             \nsage: K.testSclassgroup(tuple([K.ideal(2,a)]))                \nClass group of order 2 with structure C2 of Number Field in a with defining polynomial x^2 + 14\nsage: K.testSclassgroup(tuple([K.ideal(2,a)]))(K.ideal(3,a+1))\nERROR: An unexpected error occurred ...\n```\n\n\nPerhaps there's something stupid I'm missing and someone else can point it out. Otherwise, I'm going to work on something else for a while and come back to this with a fresh head.",
+    "body": "The newest patch is something that I've been working on for the last several days, but I'm making no progress. There's a phantom attribute error which comes up under the following code:\n\n```\nsage: K.<a> = QuadraticField(-14)                             \nsage: K.testSclassgroup(tuple([K.ideal(2,a)]))                \nClass group of order 2 with structure C2 of Number Field in a with defining polynomial x^2 + 14\nsage: K.testSclassgroup(tuple([K.ideal(2,a)]))(K.ideal(3,a+1))\nERROR: An unexpected error occurred ...\n```\n\nPerhaps there's something stupid I'm missing and someone else can point it out. Otherwise, I'm going to work on something else for a while and come back to this with a fresh head.",
     "created_at": "2010-06-30T04:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -177,7 +177,6 @@ archive/issue_comments_087897.json:
 
 The newest patch is something that I've been working on for the last several days, but I'm making no progress. There's a phantom attribute error which comes up under the following code:
 
-
 ```
 sage: K.<a> = QuadraticField(-14)                             
 sage: K.testSclassgroup(tuple([K.ideal(2,a)]))                
@@ -185,7 +184,6 @@ Class group of order 2 with structure C2 of Number Field in a with defining poly
 sage: K.testSclassgroup(tuple([K.ideal(2,a)]))(K.ideal(3,a+1))
 ERROR: An unexpected error occurred ...
 ```
-
 
 Perhaps there's something stupid I'm missing and someone else can point it out. Otherwise, I'm going to work on something else for a while and come back to this with a fresh head.
 
@@ -218,7 +216,7 @@ This is the sort of stuff that #6449 was intended to solve: quotients of abelian
 archive/issue_comments_087899.json:
 ```json
 {
-    "body": "Replying to [comment:9 davidloeffler]:\n> The AttributeError comes up because attributes whose names start with an underscore are private, and ones with two underscores are \"very private\" -- so private that they aren't even accessible to subclasses. So when code in `FractionalIdealClass` sets `__ideal`, code in the subclass `SFractionalIdealClass`. In fact it is still accessible but under a mangled name: see [http://docs.python.org/tutorial/classes.html#private-variables](http://docs.python.org/tutorial/classes.html#private-variables).\n> \n> But there is another, deeper, bug which will be uncovered when you fix this. After my changes at #9244, a `FractionalIdealClass` stores both a representing ideal of that class, accessed via `self.ideal()`, and an expression for self in terms of the generators of its parent class group, accessed via `self.list()`. The way you've set this up, elements of an S-class group use the same data structure, but the data which `list()` uses is set completely wrongly: it's set to the exponents of the given ideal in terms of the generators of the class group, but it should be in terms of the generators of the **S-class group**. What you need to do is to store somewhere the expressions for the generators of the S-class group in terms of the generators of the class group (i.e. the matrix of the quotient map) and then multiply the output of `_ideal_class_log` by this.\n> \n> This is the sort of stuff that #6449 was intended to solve: quotients of abelian groups should be automatically handled by general code, rather than having to do it by hand in every specific example.\n\nDavid, you should have been at Sage Days!",
+    "body": "Replying to [comment:9 davidloeffler]:\n> The AttributeError comes up because attributes whose names start with an underscore are private, and ones with two underscores are \"very private\" -- so private that they aren't even accessible to subclasses. So when code in `FractionalIdealClass` sets `__ideal`, code in the subclass `SFractionalIdealClass`. In fact it is still accessible but under a mangled name: see [http://docs.python.org/tutorial/classes.html#private-variables](http://docs.python.org/tutorial/classes.html#private-variables).\n> \n> But there is another, deeper, bug which will be uncovered when you fix this. After my changes at #9244, a `FractionalIdealClass` stores both a representing ideal of that class, accessed via `self.ideal()`, and an expression for self in terms of the generators of its parent class group, accessed via `self.list()`. The way you've set this up, elements of an S-class group use the same data structure, but the data which `list()` uses is set completely wrongly: it's set to the exponents of the given ideal in terms of the generators of the class group, but it should be in terms of the generators of the **S-class group**. What you need to do is to store somewhere the expressions for the generators of the S-class group in terms of the generators of the class group (i.e. the matrix of the quotient map) and then multiply the output of `_ideal_class_log` by this.\n> \n> This is the sort of stuff that #6449 was intended to solve: quotients of abelian groups should be automatically handled by general code, rather than having to do it by hand in every specific example.\n\n\nDavid, you should have been at Sage Days!",
     "created_at": "2010-06-30T11:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -233,6 +231,7 @@ Replying to [comment:9 davidloeffler]:
 > But there is another, deeper, bug which will be uncovered when you fix this. After my changes at #9244, a `FractionalIdealClass` stores both a representing ideal of that class, accessed via `self.ideal()`, and an expression for self in terms of the generators of its parent class group, accessed via `self.list()`. The way you've set this up, elements of an S-class group use the same data structure, but the data which `list()` uses is set completely wrongly: it's set to the exponents of the given ideal in terms of the generators of the class group, but it should be in terms of the generators of the **S-class group**. What you need to do is to store somewhere the expressions for the generators of the S-class group in terms of the generators of the class group (i.e. the matrix of the quotient map) and then multiply the output of `_ideal_class_log` by this.
 > 
 > This is the sort of stuff that #6449 was intended to solve: quotients of abelian groups should be automatically handled by general code, rather than having to do it by hand in every specific example.
+
 
 David, you should have been at Sage Days!
 
@@ -405,7 +404,7 @@ Can we get this ticket moving again?  The one and only patch still here does not
 archive/issue_comments_087909.json:
 ```json
 {
-    "body": "I'm uploading a rebased (on sage-4.6) patch which modifies printing in class fields to not print the structure when size is 1, fixes some caching bugs, updates several doctests, etc...\n\nHowever, this happens, and I'm not sure whether this is okay or not:\n\n\n```\nsage -t sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/rings/number_field/number_field\n_ideal.py\", line 1017:\n    sage: I._S_ideal_class_log([])\nExpected:\n    [3]\nGot:\n    [1]\n**********************************************************************\n```\n",
+    "body": "I'm uploading a rebased (on sage-4.6) patch which modifies printing in class fields to not print the structure when size is 1, fixes some caching bugs, updates several doctests, etc...\n\nHowever, this happens, and I'm not sure whether this is okay or not:\n\n```\nsage -t sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/rings/number_field/number_field\n_ideal.py\", line 1017:\n    sage: I._S_ideal_class_log([])\nExpected:\n    [3]\nGot:\n    [1]\n**********************************************************************\n```",
     "created_at": "2010-11-25T00:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -417,7 +416,6 @@ archive/issue_comments_087909.json:
 I'm uploading a rebased (on sage-4.6) patch which modifies printing in class fields to not print the structure when size is 1, fixes some caching bugs, updates several doctests, etc...
 
 However, this happens, and I'm not sure whether this is okay or not:
-
 
 ```
 sage -t sage/rings/number_field/number_field_ideal.py
@@ -434,13 +432,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_087910.json:
 ```json
 {
-    "body": "I applied the patch (no problems) to 4.6.1.alpha2.  The thing you observed does not happen:\n\n```\nsage: K.<a> = QuadraticField(-14) \nsage: S = K.primes_above(2) \nsage: S\n[Fractional ideal (2, a)]\nsage: I = K.ideal(3, a-1)\nsage: I._S_ideal_class_log(S) \n[1]\nsage: I._S_ideal_class_log([]) \n[1]\n```\n\n\nI am now testing...",
+    "body": "I applied the patch (no problems) to 4.6.1.alpha2.  The thing you observed does not happen:\n\n```\nsage: K.<a> = QuadraticField(-14) \nsage: S = K.primes_above(2) \nsage: S\n[Fractional ideal (2, a)]\nsage: I = K.ideal(3, a-1)\nsage: I._S_ideal_class_log(S) \n[1]\nsage: I._S_ideal_class_log([]) \n[1]\n```\n\nI am now testing...",
     "created_at": "2010-11-25T09:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -462,7 +459,6 @@ sage: I._S_ideal_class_log(S)
 sage: I._S_ideal_class_log([]) 
 [1]
 ```
-
 
 I am now testing...
 
@@ -491,7 +487,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087912.json:
 ```json
 {
-    "body": "Two trivial doctest failures \n\n```\nsage -t -long sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha2/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 737:\n    sage: K.class_group()\nExpected:\n    Class group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 3\nGot:\n    Class group of order 1 of Number Field in a with defining polynomial x^2 + 3\n```\n\nand\n\n```\nsage -t -long sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha2/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1051:\n    sage: I._S_ideal_class_log([])\nExpected:\n    [3]\nGot:\n    [1]\n```\n\nwhere in both cases the \"Expected \" does not look right anyway!\n\nI am leaving this as needs review since I have not looked closely again at the code, but I can assert that apart from the above two things all (long) tests pass with 4.6.1.alpha2.",
+    "body": "Two trivial doctest failures \n\n```\nsage -t -long sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha2/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 737:\n    sage: K.class_group()\nExpected:\n    Class group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 3\nGot:\n    Class group of order 1 of Number Field in a with defining polynomial x^2 + 3\n```\nand\n\n```\nsage -t -long sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha2/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1051:\n    sage: I._S_ideal_class_log([])\nExpected:\n    [3]\nGot:\n    [1]\n```\nwhere in both cases the \"Expected \" does not look right anyway!\n\nI am leaving this as needs review since I have not looked closely again at the code, but I can assert that apart from the above two things all (long) tests pass with 4.6.1.alpha2.",
     "created_at": "2010-11-25T10:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -512,7 +508,6 @@ Expected:
 Got:
     Class group of order 1 of Number Field in a with defining polynomial x^2 + 3
 ```
-
 and
 
 ```
@@ -525,7 +520,6 @@ Expected:
 Got:
     [1]
 ```
-
 where in both cases the "Expected " does not look right anyway!
 
 I am leaving this as needs review since I have not looked closely again at the code, but I can assert that apart from the above two things all (long) tests pass with 4.6.1.alpha2.
@@ -537,7 +531,7 @@ I am leaving this as needs review since I have not looked closely again at the c
 archive/issue_comments_087913.json:
 ```json
 {
-    "body": "I also believe the actual output is correct. Evidence:\n\n```\nsage: K.<a> = QuadraticField(-14)\nsage: S = K.primes_above(2)\nsage: I = K.ideal(3,a+2)\nsage: I\nFractional ideal (3, a + 2)\nsage: I._ideal_class_log()\n[1]\nsage: I._S_ideal_class_log([])\n[1]\n```\n\n\nI am uploading a fresh patch, which will fix all the above issues.",
+    "body": "I also believe the actual output is correct. Evidence:\n\n```\nsage: K.<a> = QuadraticField(-14)\nsage: S = K.primes_above(2)\nsage: I = K.ideal(3,a+2)\nsage: I\nFractional ideal (3, a + 2)\nsage: I._ideal_class_log()\n[1]\nsage: I._S_ideal_class_log([])\n[1]\n```\n\nI am uploading a fresh patch, which will fix all the above issues.",
     "created_at": "2010-11-26T15:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9332",
     "type": "issue_comment",
@@ -559,7 +553,6 @@ sage: I._ideal_class_log()
 sage: I._S_ideal_class_log([])
 [1]
 ```
-
 
 I am uploading a fresh patch, which will fix all the above issues.
 

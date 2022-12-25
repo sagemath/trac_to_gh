@@ -89,7 +89,7 @@ Strictly speaking, `libs/polybori/decl.pxi` should be touched instead of `rings/
 archive/issue_comments_029315.json:
 ```json
 {
-    "body": "\n```\n[18:20] <mabshoff> #4070, patch will be in a second.\n[18:20] <mabshoff> There are odd issues in matrix2.pyx on OSX only where there are issues with Matrix inversion.\n[18:22] <mabshoff> patch is also up now.\n[18:22] <mabshoff> You need that one to fix an issue once the spkg is updated.\n[18:39] <mhansen> #4070 fixes the issues for me.\n```\n",
+    "body": "```\n[18:20] <mabshoff> #4070, patch will be in a second.\n[18:20] <mabshoff> There are odd issues in matrix2.pyx on OSX only where there are issues with Matrix inversion.\n[18:22] <mabshoff> patch is also up now.\n[18:22] <mabshoff> You need that one to fix an issue once the spkg is updated.\n[18:39] <mhansen> #4070 fixes the issues for me.\n```",
     "created_at": "2008-09-07T18:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ archive/issue_comments_029315.json:
 }
 ```
 
-
 ```
 [18:20] <mabshoff> #4070, patch will be in a second.
 [18:20] <mabshoff> There are odd issues in matrix2.pyx on OSX only where there are issues with Matrix inversion.
@@ -106,7 +105,6 @@ archive/issue_comments_029315.json:
 [18:22] <mabshoff> You need that one to fix an issue once the spkg is updated.
 [18:39] <mhansen> #4070 fixes the issues for me.
 ```
-
 
 
 
@@ -133,7 +131,7 @@ The SPKG also passed manual inspection (everything checked in properly, stuff is
 archive/issue_comments_029317.json:
 ```json
 {
-    "body": "## Doctests\n### x86_64, Core2Duo, Debian GNU/Linux testing (my notebook)\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/interfaces/sage0.py # 8 doctests failed\n```\n\n### x86_64, Opteron, Ubuntu (my desktop)\n\na lot of segmentation faults, `sage -ba`ing now, might be local problem.\n\n### x86_64, Opteron, Debian GNU/Linux testing (my server at RHUL)\n\npass\n\n### x86_64, Opteron, Debian GNU/Linux stable (sage.math)\n\npass\n\n### x86_64, 2xCore2Duo, Fedora 8 (eno)\n\npass",
+    "body": "## Doctests\n### x86_64, Core2Duo, Debian GNU/Linux testing (my notebook)\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/interfaces/sage0.py # 8 doctests failed\n```\n### x86_64, Opteron, Ubuntu (my desktop)\n\na lot of segmentation faults, `sage -ba`ing now, might be local problem.\n\n### x86_64, Opteron, Debian GNU/Linux testing (my server at RHUL)\n\npass\n\n### x86_64, Opteron, Debian GNU/Linux stable (sage.math)\n\npass\n\n### x86_64, 2xCore2Duo, Fedora 8 (eno)\n\npass",
     "created_at": "2008-09-07T18:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
@@ -150,7 +148,6 @@ The following tests failed:
 
         sage -t  devel/sage/sage/interfaces/sage0.py # 8 doctests failed
 ```
-
 ### x86_64, Opteron, Ubuntu (my desktop)
 
 a lot of segmentation faults, `sage -ba`ing now, might be local problem.

@@ -3,7 +3,7 @@
 archive/issues_004263.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is dumb (first thing I tried broke):\n\n```\nsage: E = EllipticCurve('5077a1')\nsage: F = E.change_ring(QuadraticField(-3,'a'))\nsage: P = F([-2,3,1])\nsage: s = P.height(); s\nsage: type(s)\n<type 'NoneType'>\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4263\n\n",
+    "body": "Assignee: @williamstein\n\nThis is dumb (first thing I tried broke):\n\n```\nsage: E = EllipticCurve('5077a1')\nsage: F = E.change_ring(QuadraticField(-3,'a'))\nsage: P = F([-2,3,1])\nsage: s = P.height(); s\nsage: type(s)\n<type 'NoneType'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4263\n\n",
     "created_at": "2008-10-11T08:46:08Z",
     "labels": [
         "component: number theory",
@@ -28,7 +28,6 @@ sage: s = P.height(); s
 sage: type(s)
 <type 'NoneType'>
 ```
-
 
 
 

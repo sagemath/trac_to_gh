@@ -3,7 +3,7 @@
 archive/issues_007811.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robert-marik @TimDumol @williamstein\n\nWe need to account for this difference\n\n```\n$ grep compile twist.py template.py\ntwist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|@]*')\ntemplate.py:css_illegal_re = re.compile(r'[^-A-Za-z_0-9]')\n```\n\nwhen processing the checkboxes in a worksheet listing.  Otherwise, the Archive, Stop, and Delete buttons will not work for users whose login names contain dots (`.`) or [at signs](http://en.wikipedia.org/wiki/At_sign) (``@``).\n\nThis is a follow-up to #7332.  See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b) for the bug report.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7811\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robert-marik @TimDumol @williamstein\n\nWe need to account for this difference\n\n```\n$ grep compile twist.py template.py\ntwist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|@]*')\ntemplate.py:css_illegal_re = re.compile(r'[^-A-Za-z_0-9]')\n```\nwhen processing the checkboxes in a worksheet listing.  Otherwise, the Archive, Stop, and Delete buttons will not work for users whose login names contain dots (`.`) or [at signs](http://en.wikipedia.org/wiki/At_sign) (``@``).\n\nThis is a follow-up to #7332.  See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b) for the bug report.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7811\n\n",
     "created_at": "2010-01-01T22:47:15Z",
     "labels": [
         "component: notebook",
@@ -27,7 +27,6 @@ $ grep compile twist.py template.py
 twist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|@]*')
 template.py:css_illegal_re = re.compile(r'[^-A-Za-z_0-9]')
 ```
-
 when processing the checkboxes in a worksheet listing.  Otherwise, the Archive, Stop, and Delete buttons will not work for users whose login names contain dots (`.`) or [at signs](http://en.wikipedia.org/wiki/At_sign) (``@``).
 
 This is a follow-up to #7332.  See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b) for the bug report.
@@ -209,7 +208,7 @@ Ideally this should be tested with `sage -t -sagenb` when #7650 comes in, or wit
 archive/issue_comments_067476.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.\n\nNo, I meant actually sage -t. I wondered, if I can give positive review without doctesting.",
+    "body": "Replying to [comment:5 mpatel]:\n> If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.\n\n\nNo, I meant actually sage -t. I wondered, if I can give positive review without doctesting.",
     "created_at": "2010-01-02T11:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7811",
     "type": "issue_comment",
@@ -220,6 +219,7 @@ archive/issue_comments_067476.json:
 
 Replying to [comment:5 mpatel]:
 > If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.
+
 
 No, I meant actually sage -t. I wondered, if I can give positive review without doctesting.
 

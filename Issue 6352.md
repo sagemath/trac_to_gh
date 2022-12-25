@@ -74,7 +74,7 @@ Changing component from algebra to optional packages.
 archive/issue_comments_050687.json:
 ```json
 {
-    "body": "I had troubles with: \n\n\n```\nsage -t -long --optional \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n\n... skip 450 lines of traceback\n\n**********************************************************************\n9 items had failures:\n   1 of   4 in __main__.example_31\n   1 of   4 in __main__.example_32\n   4 of   9 in __main__.example_37\n   2 of   6 in __main__.example_38\n   4 of   7 in __main__.example_39\n   2 of  18 in __main__.example_4\n   1 of   4 in __main__.example_40\n   1 of   9 in __main__.example_5\n   2 of   6 in __main__.example_73\n***Test Failed*** 18 failures.\n\n```\n\n\nThey were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.",
+    "body": "I had troubles with: \n\n```\nsage -t -long --optional \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n\n... skip 450 lines of traceback\n\n**********************************************************************\n9 items had failures:\n   1 of   4 in __main__.example_31\n   1 of   4 in __main__.example_32\n   4 of   9 in __main__.example_37\n   2 of   6 in __main__.example_38\n   4 of   7 in __main__.example_39\n   2 of  18 in __main__.example_4\n   1 of   4 in __main__.example_40\n   1 of   9 in __main__.example_5\n   2 of   6 in __main__.example_73\n***Test Failed*** 18 failures.\n\n```\n\nThey were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.",
     "created_at": "2009-07-17T12:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6352",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ archive/issue_comments_050687.json:
 ```
 
 I had troubles with: 
-
 
 ```
 sage -t -long --optional "devel/sage/sage/groups/perm_gps/permgroup.py"
@@ -106,7 +105,6 @@ sage -t -long --optional "devel/sage/sage/groups/perm_gps/permgroup.py"
 
 ```
 
-
 They were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.
 
 
@@ -116,7 +114,7 @@ They were from both database_gap and gap_packages. I have database_gap-4.4.10 in
 archive/issue_comments_050688.json:
 ```json
 {
-    "body": "Attachment [permgroup.log](tarball://root/attachments/some-uuid/ticket6352/permgroup.log) by @wdjoyner created at 2009-07-17 12:35:15\n\nReplying to [comment:4 awebb]:\n> I had troubles with: \n> \n> {{{\n> sage -t -long --optional \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n> \n> ... skip 450 lines of traceback\n> \n> **********************************************************************\n> 9 items had failures:\n>    1 of   4 in __main__.example_31\n>    1 of   4 in __main__.example_32\n>    4 of   9 in __main__.example_37\n>    2 of   6 in __main__.example_38\n>    4 of   7 in __main__.example_39\n>    2 of  18 in __main__.example_4\n>    1 of   4 in __main__.example_40\n>    1 of   9 in __main__.example_5\n>    2 of   6 in __main__.example_73\n> ***Test Failed*** 18 failures.\n> \n> }}}\n> \n> They were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs \n> here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. \n> It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.\n\nAll I can say is that they worked fine for me when I posted them. I agree that it is a waste of time\nto work on this until #6348 is cleared up.",
+    "body": "Attachment [permgroup.log](tarball://root/attachments/some-uuid/ticket6352/permgroup.log) by @wdjoyner created at 2009-07-17 12:35:15\n\nReplying to [comment:4 awebb]:\n> I had troubles with: \n> \n> \n> ```\n> sage -t -long --optional \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n> \n> ... skip 450 lines of traceback\n> \n> **********************************************************************\n> 9 items had failures:\n>    1 of   4 in __main__.example_31\n>    1 of   4 in __main__.example_32\n>    4 of   9 in __main__.example_37\n>    2 of   6 in __main__.example_38\n>    4 of   7 in __main__.example_39\n>    2 of  18 in __main__.example_4\n>    1 of   4 in __main__.example_40\n>    1 of   9 in __main__.example_5\n>    2 of   6 in __main__.example_73\n> ***Test Failed*** 18 failures.\n> \n> ```\n> \n> They were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs \n> here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. \n> It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.\n\n\nAll I can say is that they worked fine for me when I posted them. I agree that it is a waste of time\nto work on this until #6348 is cleared up.",
     "created_at": "2009-07-17T12:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6352",
     "type": "issue_comment",
@@ -130,7 +128,8 @@ Attachment [permgroup.log](tarball://root/attachments/some-uuid/ticket6352/permg
 Replying to [comment:4 awebb]:
 > I had troubles with: 
 > 
-> {{{
+> 
+> ```
 > sage -t -long --optional "devel/sage/sage/groups/perm_gps/permgroup.py"
 > 
 > ... skip 450 lines of traceback
@@ -148,11 +147,12 @@ Replying to [comment:4 awebb]:
 >    2 of   6 in __main__.example_73
 > ***Test Failed*** 18 failures.
 > 
-> }}}
+> ```
 > 
 > They were from both database_gap and gap_packages. I have database_gap-4.4.10 installed and the spkgs 
 > here and from #6348 on Sage 4.1. These might be related although I don't get errors from gap-4.4.12. 
 > It probably doesn't make sense to worry about this until #6348 is cleared up. The full log is attached.
+
 
 All I can say is that they worked fine for me when I posted them. I agree that it is a waste of time
 to work on this until #6348 is cleared up.

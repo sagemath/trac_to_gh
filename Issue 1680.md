@@ -57,7 +57,7 @@ archive/issue_events_004128.json:
 archive/issue_comments_010627.json:
 ```json
 {
-    "body": "This behavior of the symbolic I is imposed by Maxima.  I do not know if there is any way to change it to behave like you want.   You might want to use the I of the number field QQ(sqrt(-1))...  \n\n\n```\nsage: I = NumberField(x^2 + 1, 'I').gen()\nsage: (1+I)^2 - 2*I\n0\n```\n\n\nSome day (who knows when) probably the Sage \"I\" will be the number field I, but where the number field is equipped with a canonical embedding in the symbolic ring, and then your example above will work as you want.  I don't know when this will happen.  It might not be too hard to implement. \n\nWilliam",
+    "body": "This behavior of the symbolic I is imposed by Maxima.  I do not know if there is any way to change it to behave like you want.   You might want to use the I of the number field QQ(sqrt(-1))...  \n\n```\nsage: I = NumberField(x^2 + 1, 'I').gen()\nsage: (1+I)^2 - 2*I\n0\n```\n\nSome day (who knows when) probably the Sage \"I\" will be the number field I, but where the number field is equipped with a canonical embedding in the symbolic ring, and then your example above will work as you want.  I don't know when this will happen.  It might not be too hard to implement. \n\nWilliam",
     "created_at": "2008-01-14T05:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
@@ -68,13 +68,11 @@ archive/issue_comments_010627.json:
 
 This behavior of the symbolic I is imposed by Maxima.  I do not know if there is any way to change it to behave like you want.   You might want to use the I of the number field QQ(sqrt(-1))...  
 
-
 ```
 sage: I = NumberField(x^2 + 1, 'I').gen()
 sage: (1+I)^2 - 2*I
 0
 ```
-
 
 Some day (who knows when) probably the Sage "I" will be the number field I, but where the number field is equipped with a canonical embedding in the symbolic ring, and then your example above will work as you want.  I don't know when this will happen.  It might not be too hard to implement. 
 
@@ -87,7 +85,7 @@ William
 archive/issue_comments_010628.json:
 ```json
 {
-    "body": "This is certainly on the TODO list... currently for a number field \n\n\n```\nsage: I = NumberField(x^2 + 1, 'I').gen()\n```\n\n\nit doesn't know whether to send I to -I or I in `CC`, and a mechanism for this needs to be implemented.",
+    "body": "This is certainly on the TODO list... currently for a number field \n\n```\nsage: I = NumberField(x^2 + 1, 'I').gen()\n```\n\nit doesn't know whether to send I to -I or I in `CC`, and a mechanism for this needs to be implemented.",
     "created_at": "2008-01-15T06:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
@@ -98,11 +96,9 @@ archive/issue_comments_010628.json:
 
 This is certainly on the TODO list... currently for a number field 
 
-
 ```
 sage: I = NumberField(x^2 + 1, 'I').gen()
 ```
-
 
 it doesn't know whether to send I to -I or I in `CC`, and a mechanism for this needs to be implemented.
 

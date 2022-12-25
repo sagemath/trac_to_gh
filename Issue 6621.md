@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6621
 archive/issue_comments_054153.json:
 ```json
 {
-    "body": "Uh oh, this doesn't pass doctests: I get\n\n```\nFile \"/var/tmp/sage-4.1/devel/sage/sage/combinat/symmetric_group_algebra.py\", line 141:\n    sage: QS3.cpi([1,1,1])\nException raised:\n    Traceback (most recent call last):\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        QS3.cpi([Integer(1),Integer(1),Integer(1)])###line 141:\n    sage: QS3.cpi([1,1,1])\n      File \"/var/tmp/sage-4.1/local/lib/python/site-packages/sage/combinat/symmetric_group_algebra.py\", line 158, in cpi\n        cpi += big_coeff * character_table[p_index][np.index(g.inverse().cycle_type())] * self(g)\n    AttributeError: 'list' object has no attribute 'cycle_type'\n```\n\n\nInstead of `return w`, you need `return Permutation(w)`",
+    "body": "Uh oh, this doesn't pass doctests: I get\n\n```\nFile \"/var/tmp/sage-4.1/devel/sage/sage/combinat/symmetric_group_algebra.py\", line 141:\n    sage: QS3.cpi([1,1,1])\nException raised:\n    Traceback (most recent call last):\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        QS3.cpi([Integer(1),Integer(1),Integer(1)])###line 141:\n    sage: QS3.cpi([1,1,1])\n      File \"/var/tmp/sage-4.1/local/lib/python/site-packages/sage/combinat/symmetric_group_algebra.py\", line 158, in cpi\n        cpi += big_coeff * character_table[p_index][np.index(g.inverse().cycle_type())] * self(g)\n    AttributeError: 'list' object has no attribute 'cycle_type'\n```\n\nInstead of `return w`, you need `return Permutation(w)`",
     "created_at": "2009-07-25T17:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6621",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ Exception raised:
         cpi += big_coeff * character_table[p_index][np.index(g.inverse().cycle_type())] * self(g)
     AttributeError: 'list' object has no attribute 'cycle_type'
 ```
-
 
 Instead of `return w`, you need `return Permutation(w)`
 

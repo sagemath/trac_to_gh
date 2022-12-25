@@ -106,7 +106,7 @@ As for (3), there is no reason to put _sig_on/_sig_of around mpz_cmp_ui. These s
 archive/issue_comments_031312.json:
 ```json
 {
-    "body": "Thanks for cleaning up this old code.\n\nThe following very minor issues do certainly not prevent me from giving this patch \"as is\" a positive review, but I thought I should write them down nevertheless:\n\n4. By the patch file, only \"def LCM_list\" becomes \"cpdef LCM_list\". One might also change \"def GCD_list\" into \"cpdef GCD_list\", at least for 3.1.3.rc0 (which is the youngest version I currently have and where this is otherwise not the case), if only for consistency. (I do not know enough about the difference between \"def\" and \"cpdef\" yet, but I do trust you there.)\n\n\n5. Again for consistency (or beauty?) only, one could make the two lines 2129/2130\n\n```\ncdef Integer z\nz = PY_NEW(Integer)\n```\n\ninto the one line\n\n```\ncdef Integer z = <Integer>PY_NEW(Integer)\n```\n\n(And again I do not enough about using \"<Integer>\" or not as a type qualifier, but yet again I trust you there.)",
+    "body": "Thanks for cleaning up this old code.\n\nThe following very minor issues do certainly not prevent me from giving this patch \"as is\" a positive review, but I thought I should write them down nevertheless:\n\n4. By the patch file, only \"def LCM_list\" becomes \"cpdef LCM_list\". One might also change \"def GCD_list\" into \"cpdef GCD_list\", at least for 3.1.3.rc0 (which is the youngest version I currently have and where this is otherwise not the case), if only for consistency. (I do not know enough about the difference between \"def\" and \"cpdef\" yet, but I do trust you there.)\n\n\n5. Again for consistency (or beauty?) only, one could make the two lines 2129/2130\n\n```\ncdef Integer z\nz = PY_NEW(Integer)\n```\ninto the one line\n\n```\ncdef Integer z = <Integer>PY_NEW(Integer)\n```\n(And again I do not enough about using \"<Integer>\" or not as a type qualifier, but yet again I trust you there.)",
     "created_at": "2008-10-16T20:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4286",
     "type": "issue_comment",
@@ -128,13 +128,11 @@ The following very minor issues do certainly not prevent me from giving this pat
 cdef Integer z
 z = PY_NEW(Integer)
 ```
-
 into the one line
 
 ```
 cdef Integer z = <Integer>PY_NEW(Integer)
 ```
-
 (And again I do not enough about using "<Integer>" or not as a type qualifier, but yet again I trust you there.)
 
 
@@ -196,7 +194,7 @@ Merged in Sage 3.2.alpha0
 archive/issue_comments_031315.json:
 ```json
 {
-    "body": "Remark: This patch introduced a bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\n\n\nThe problem is in line 3654 of integer.pyx where there is a\nmissing ==0 so the break occurs immediately where it shouldn't.\n\nThis will be fixed in a patch at #3118, so there is no need to reopen this ticket.",
+    "body": "Remark: This patch introduced a bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\n\nThe problem is in line 3654 of integer.pyx where there is a\nmissing ==0 so the break occurs immediately where it shouldn't.\n\nThis will be fixed in a patch at #3118, so there is no need to reopen this ticket.",
     "created_at": "2008-10-22T12:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4286",
     "type": "issue_comment",
@@ -215,7 +213,6 @@ Remark: This patch introduced a bug:
 sage: sage.rings.integer.GCD_list([2,2,3])
 2
 ```
-
 
 The problem is in line 3654 of integer.pyx where there is a
 missing ==0 so the break occurs immediately where it shouldn't.

@@ -76,7 +76,7 @@ Michael
 archive/issue_comments_046147.json:
 ```json
 {
-    "body": "Another thing: Why is the dependency on the header commented out?:\n\n```\n \t386\t    Extension('sage.libs.ratpoints', \n \t387\t              sources = [\"sage/libs/ratpoints.pyx\"], \n \t388\t              #depends = [SAGE_ROOT + 'local/include/ratpoints.h'], \n \t389\t              libraries = [\"ratpoints\", \"gmp\"]),\n```\n\nAnd another question: What is the long term plan here with eclib? Will it use ratpoints in the future?\n\nCheers,\n\nMichael",
+    "body": "Another thing: Why is the dependency on the header commented out?:\n\n```\n \t386\t    Extension('sage.libs.ratpoints', \n \t387\t              sources = [\"sage/libs/ratpoints.pyx\"], \n \t388\t              #depends = [SAGE_ROOT + 'local/include/ratpoints.h'], \n \t389\t              libraries = [\"ratpoints\", \"gmp\"]),\n```\nAnd another question: What is the long term plan here with eclib? Will it use ratpoints in the future?\n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T18:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -93,7 +93,6 @@ Another thing: Why is the dependency on the header commented out?:
  	388	              #depends = [SAGE_ROOT + 'local/include/ratpoints.h'], 
  	389	              libraries = ["ratpoints", "gmp"]),
 ```
-
 And another question: What is the long term plan here with eclib? Will it use ratpoints in the future?
 
 Cheers,
@@ -153,7 +152,7 @@ archive/issue_comments_046149.json:
 archive/issue_comments_046150.json:
 ```json
 {
-    "body": "Replying to [comment:4 rlm]:\n>  * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.\n\nYes, that needs to be fixed, too.\n\n>  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.\n\nGood. Can you post an SPKG that has a clean .hg and .hgignore, i.e. just get rid of the old .hg and check the relevant bits back in again.\n\n>  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...\n\nHmmm, does rebuilding the spkg lead to \"sage -b\" rebuilding the extension? That does surprise me and I would be curious what this triggers.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 rlm]:\n>  * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.\n\n\nYes, that needs to be fixed, too.\n\n>  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.\n\n\nGood. Can you post an SPKG that has a clean .hg and .hgignore, i.e. just get rid of the old .hg and check the relevant bits back in again.\n\n>  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...\n\n\nHmmm, does rebuilding the spkg lead to \"sage -b\" rebuilding the extension? That does surprise me and I would be curious what this triggers.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T21:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -165,13 +164,16 @@ archive/issue_comments_046150.json:
 Replying to [comment:4 rlm]:
 >  * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.
 
+
 Yes, that needs to be fixed, too.
 
 >  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.
 
+
 Good. Can you post an SPKG that has a clean .hg and .hgignore, i.e. just get rid of the old .hg and check the relevant bits back in again.
 
 >  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...
+
 
 Hmmm, does rebuilding the spkg lead to "sage -b" rebuilding the extension? That does surprise me and I would be curious what this triggers.
 
@@ -208,7 +210,7 @@ Michael
 archive/issue_comments_046152.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.\n> \n> Cheers,\n> \n> Michael\n\nThanks.  It is not quite as easy as that, and one part of eclib will need to be rewritten to use this library, but it has all the ingredients which I needs so that is possible and would only take a day or too.  That would also mean that *either* I put in a compiler switch to eclib Makefiles to tell it to use ratpoints instead of its own code, *or* I rely on ratpoints for ever, which gives people who download mwrank by itself will have something else they need to install first (as well as NTL and pari).",
+    "body": "Replying to [comment:6 mabshoff]:\n> Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.\n> \n> Cheers,\n> \n> Michael\n\n\nThanks.  It is not quite as easy as that, and one part of eclib will need to be rewritten to use this library, but it has all the ingredients which I needs so that is possible and would only take a day or too.  That would also mean that *either* I put in a compiler switch to eclib Makefiles to tell it to use ratpoints instead of its own code, *or* I rely on ratpoints for ever, which gives people who download mwrank by itself will have something else they need to install first (as well as NTL and pari).",
     "created_at": "2009-04-23T08:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -223,6 +225,7 @@ Replying to [comment:6 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Thanks.  It is not quite as easy as that, and one part of eclib will need to be rewritten to use this library, but it has all the ingredients which I needs so that is possible and would only take a day or too.  That would also mean that *either* I put in a compiler switch to eclib Makefiles to tell it to use ratpoints instead of its own code, *or* I rely on ratpoints for ever, which gives people who download mwrank by itself will have something else they need to install first (as well as NTL and pari).
 
@@ -251,7 +254,7 @@ What is the correct procedure for testing this.  Is it: (1) install the spkg usi
 archive/issue_comments_046154.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n\nMostly:\n\n> (and try the functions in there at will) ?\n\nSomeone should run a valgrind session to check my code and Michael Stoll's code both for leaks. I'll try to get to this today or tomorrow.",
+    "body": "Replying to [comment:8 cremona]:\n\nMostly:\n\n> (and try the functions in there at will) ?\n\n\nSomeone should run a valgrind session to check my code and Michael Stoll's code both for leaks. I'll try to get to this today or tomorrow.",
     "created_at": "2009-04-29T14:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -266,6 +269,7 @@ Mostly:
 
 > (and try the functions in there at will) ?
 
+
 Someone should run a valgrind session to check my code and Michael Stoll's code both for leaks. I'll try to get to this today or tomorrow.
 
 
@@ -275,7 +279,7 @@ Someone should run a valgrind session to check my code and Michael Stoll's code 
 archive/issue_comments_046155.json:
 ```json
 {
-    "body": "Partial review:  I ran valgrind on ratpoints's own test function and it does reasonably well:\n\n```\nmasgaj@host-56-150%valgrind ./rptest > rptest.out\n==4873== Memcheck, a memory error detector.\n==4873== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== Using LibVEX rev 1804, a library for dynamic binary translation.\n==4873== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==4873== Using valgrind-3.3.0, a dynamic binary instrumentation framework.\n==4873== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== For more details, rerun with: -v\n==4873==\n==4873==\n==4873== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 5 from 1)\n==4873== malloc/free: in use at exit: 11,204 bytes in 44 blocks.\n==4873== malloc/free: 91,051 allocs, 91,007 frees, 2,895,144 bytes allocated.\n==4873== For counts of detected errors, rerun with: -v\n==4873== searching for pointers to 44 not-freed blocks.\n==4873== checked 128,328 bytes.\n==4873==\n==4873== LEAK SUMMARY:\n==4873==    definitely lost: 11,176 bytes in 37 blocks.\n==4873==      possibly lost: 0 bytes in 0 blocks.\n==4873==    still reachable: 28 bytes in 7 blocks.\n==4873==         suppressed: 0 bytes in 0 blocks.\n==4873== Rerun with --leak-check=full to see details of leaked memory.\n```\n\n\nPerhaps Michael (A) can say whether the leak is significant?  If so we could ask Michael (S) to fix it.",
+    "body": "Partial review:  I ran valgrind on ratpoints's own test function and it does reasonably well:\n\n```\nmasgaj@host-56-150%valgrind ./rptest > rptest.out\n==4873== Memcheck, a memory error detector.\n==4873== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== Using LibVEX rev 1804, a library for dynamic binary translation.\n==4873== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==4873== Using valgrind-3.3.0, a dynamic binary instrumentation framework.\n==4873== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== For more details, rerun with: -v\n==4873==\n==4873==\n==4873== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 5 from 1)\n==4873== malloc/free: in use at exit: 11,204 bytes in 44 blocks.\n==4873== malloc/free: 91,051 allocs, 91,007 frees, 2,895,144 bytes allocated.\n==4873== For counts of detected errors, rerun with: -v\n==4873== searching for pointers to 44 not-freed blocks.\n==4873== checked 128,328 bytes.\n==4873==\n==4873== LEAK SUMMARY:\n==4873==    definitely lost: 11,176 bytes in 37 blocks.\n==4873==      possibly lost: 0 bytes in 0 blocks.\n==4873==    still reachable: 28 bytes in 7 blocks.\n==4873==         suppressed: 0 bytes in 0 blocks.\n==4873== Rerun with --leak-check=full to see details of leaked memory.\n```\n\nPerhaps Michael (A) can say whether the leak is significant?  If so we could ask Michael (S) to fix it.",
     "created_at": "2009-04-29T15:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -311,7 +315,6 @@ masgaj@host-56-150%valgrind ./rptest > rptest.out
 ==4873==         suppressed: 0 bytes in 0 blocks.
 ==4873== Rerun with --leak-check=full to see details of leaked memory.
 ```
-
 
 Perhaps Michael (A) can say whether the leak is significant?  If so we could ask Michael (S) to fix it.
 
@@ -362,7 +365,7 @@ Can you attach/link to the full valgrind logs?
 archive/issue_comments_046158.json:
 ```json
 {
-    "body": "Replying to [comment:12 rlm]:\n> PS - Any leaks in \"definitely lost\" is never good...\n> \n> Can you attach/link to the full valgrind logs?\n\nI will if you tell me what flags to put on the valgrind command line....",
+    "body": "Replying to [comment:12 rlm]:\n> PS - Any leaks in \"definitely lost\" is never good...\n> \n> Can you attach/link to the full valgrind logs?\n\n\nI will if you tell me what flags to put on the valgrind command line....",
     "created_at": "2009-04-29T16:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5854",
     "type": "issue_comment",
@@ -375,6 +378,7 @@ Replying to [comment:12 rlm]:
 > PS - Any leaks in "definitely lost" is never good...
 > 
 > Can you attach/link to the full valgrind logs?
+
 
 I will if you tell me what flags to put on the valgrind command line....
 

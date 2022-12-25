@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3765
 archive/issue_comments_026716.json:
 ```json
 {
-    "body": "I also experimented with ideas for making the gcc part of the build fast.  Here's some code.  This is *not* in this patch and should not be part of this ticket:\n\n\n```\nimport distutils.spawn\ndistutils_spawn = distutils.spawn.spawn\ncommand_list = []\ndef my_spawn(cmd,search_path=1,verbose=0,dry_run=0):\n    command_list.append(' '.join(cmd))\ndistutils.spawn.spawn = my_spawn\ncode = setup(dry_run=True,\n             ext_modules = ext_modules, include_dirs = include_dirs,\n             packages=packages, scripts=scripts, data_files=data_files)\nexecute_list_of_commands(command_list)\n\ndistutils.spawn.spawn = distutils.spawn\n\nsetup(name        = 'sage', \n      version     =  SAGE_VERSION,\n      description = 'Sage: Open Source Mathematics Software',\n      license     = 'GNU Public License (GPL)',\n      author      = 'William Stein et al.',\n      author_email= 'http://groups.google.com/group/sage-support',\n      url         = 'http://www.sagemath.org',\n      ext_modules = ext_modules, include_dirs = include_dirs,\n      packages=packages, scripts=scripts, data_files=data_files)\n```\n\n\nHere I separated out the packages, scripts, and data_files list.\n\nThe above doesn't work because distutils copies all the .o files over to the build/lib-* directory so none of the gcc link commands above work.   Also, doing the dry run seems to make the non dry run\nwork differently -- probably the Extension objects are modified.",
+    "body": "I also experimented with ideas for making the gcc part of the build fast.  Here's some code.  This is *not* in this patch and should not be part of this ticket:\n\n```\nimport distutils.spawn\ndistutils_spawn = distutils.spawn.spawn\ncommand_list = []\ndef my_spawn(cmd,search_path=1,verbose=0,dry_run=0):\n    command_list.append(' '.join(cmd))\ndistutils.spawn.spawn = my_spawn\ncode = setup(dry_run=True,\n             ext_modules = ext_modules, include_dirs = include_dirs,\n             packages=packages, scripts=scripts, data_files=data_files)\nexecute_list_of_commands(command_list)\n\ndistutils.spawn.spawn = distutils.spawn\n\nsetup(name        = 'sage', \n      version     =  SAGE_VERSION,\n      description = 'Sage: Open Source Mathematics Software',\n      license     = 'GNU Public License (GPL)',\n      author      = 'William Stein et al.',\n      author_email= 'http://groups.google.com/group/sage-support',\n      url         = 'http://www.sagemath.org',\n      ext_modules = ext_modules, include_dirs = include_dirs,\n      packages=packages, scripts=scripts, data_files=data_files)\n```\n\nHere I separated out the packages, scripts, and data_files list.\n\nThe above doesn't work because distutils copies all the .o files over to the build/lib-* directory so none of the gcc link commands above work.   Also, doing the dry run seems to make the non dry run\nwork differently -- probably the Extension objects are modified.",
     "created_at": "2008-08-03T21:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -40,7 +40,6 @@ archive/issue_comments_026716.json:
 ```
 
 I also experimented with ideas for making the gcc part of the build fast.  Here's some code.  This is *not* in this patch and should not be part of this ticket:
-
 
 ```
 import distutils.spawn
@@ -66,7 +65,6 @@ setup(name        = 'sage',
       ext_modules = ext_modules, include_dirs = include_dirs,
       packages=packages, scripts=scripts, data_files=data_files)
 ```
-
 
 Here I separated out the packages, scripts, and data_files list.
 
@@ -120,7 +118,7 @@ I tried this out, and it worked perfectly.  A few comments:
 archive/issue_comments_026719.json:
 ```json
 {
-    "body": "> I tried this out, and it worked perfectly. A few comments:\n\n> 1) Don't we already have a function for CPU detection that execute_list_of_commands should use?\n\nI copied those 4 lines of code into setup.py, since this is a chicken and egg problem.  You can't call sage library code from setup.py, since setup.py is run to install the sage library.   It's only about four lines of code anyways.\n\n> 2) There are no doctests for any of the new functions.\n\nUnfortunately it is impossible to doctest setup.py since the act of importing setup.py would cause the distutils stuff to get run.    Also setup.py isn't part of the sage library, so it's functions aren't available elsewhere.\n\nThat said, it might make sense to separate as much code as possible out of setup.py into a separate module that is not part of the sage library.  I think such refactoring should be in another ticket though.",
+    "body": "> I tried this out, and it worked perfectly. A few comments:\n\n\n> 1) Don't we already have a function for CPU detection that execute_list_of_commands should use?\n\n\nI copied those 4 lines of code into setup.py, since this is a chicken and egg problem.  You can't call sage library code from setup.py, since setup.py is run to install the sage library.   It's only about four lines of code anyways.\n\n> 2) There are no doctests for any of the new functions.\n\n\nUnfortunately it is impossible to doctest setup.py since the act of importing setup.py would cause the distutils stuff to get run.    Also setup.py isn't part of the sage library, so it's functions aren't available elsewhere.\n\nThat said, it might make sense to separate as much code as possible out of setup.py into a separate module that is not part of the sage library.  I think such refactoring should be in another ticket though.",
     "created_at": "2008-08-05T05:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -131,11 +129,14 @@ archive/issue_comments_026719.json:
 
 > I tried this out, and it worked perfectly. A few comments:
 
+
 > 1) Don't we already have a function for CPU detection that execute_list_of_commands should use?
+
 
 I copied those 4 lines of code into setup.py, since this is a chicken and egg problem.  You can't call sage library code from setup.py, since setup.py is run to install the sage library.   It's only about four lines of code anyways.
 
 > 2) There are no doctests for any of the new functions.
+
 
 Unfortunately it is impossible to doctest setup.py since the act of importing setup.py would cause the distutils stuff to get run.    Also setup.py isn't part of the sage library, so it's functions aren't available elsewhere.
 
@@ -246,7 +247,7 @@ What's the status of it? It has a positive review but the comments read like "ne
 archive/issue_comments_026725.json:
 ```json
 {
-    "body": "Replying to [comment:10 malb]:\n> What's the status of it? It has a positive review but the comments read like \"needs work\"\n\nYes, it does. That is the reason it has not been merged yet :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 malb]:\n> What's the status of it? It has a positive review but the comments read like \"needs work\"\n\n\nYes, it does. That is the reason it has not been merged yet :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-07T14:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -257,6 +258,7 @@ archive/issue_comments_026725.json:
 
 Replying to [comment:10 malb]:
 > What's the status of it? It has a positive review but the comments read like "needs work"
+
 
 Yes, it does. That is the reason it has not been merged yet :)
 
@@ -271,7 +273,7 @@ Michael
 archive/issue_comments_026726.json:
 ```json
 {
-    "body": "\n```\nFrom mabshoff:\n\nYeah, the above was the one thing about the patch that really bothered\nme since on sage.math the old version would just grab 16 cores\nregardless of the load for example. Using -br #n works for me.\n\nI am not sure if if I mentioned this on the ticket, but in that case\nwe should make the Sage library depend on pyprocessing and also use\nsome env variable to pass the number of threads to the build process\nwhen building the Sage library for the first time.\n```\n\n\nResponses: good.  Yes, we would definitely have to change spkg/standard/deps to\ndepend on PYPROCESSING, and that will be part of this ticket.  I've attached\na new deps file that does this (note -- deps isn't under any repo, and the \nattached file is from 3.1.2). \n\nAnother option can be to parse the environment variable MAKE and if it has\na -j option, then use that.  This will make it so our current standard \n\n```\nexport MAKE=\"make -j4\"\nmake\n```\n\nworks and does at least the cythoning in parallel.\n\nWilliam",
+    "body": "```\nFrom mabshoff:\n\nYeah, the above was the one thing about the patch that really bothered\nme since on sage.math the old version would just grab 16 cores\nregardless of the load for example. Using -br #n works for me.\n\nI am not sure if if I mentioned this on the ticket, but in that case\nwe should make the Sage library depend on pyprocessing and also use\nsome env variable to pass the number of threads to the build process\nwhen building the Sage library for the first time.\n```\n\nResponses: good.  Yes, we would definitely have to change spkg/standard/deps to\ndepend on PYPROCESSING, and that will be part of this ticket.  I've attached\na new deps file that does this (note -- deps isn't under any repo, and the \nattached file is from 3.1.2). \n\nAnother option can be to parse the environment variable MAKE and if it has\na -j option, then use that.  This will make it so our current standard \n\n```\nexport MAKE=\"make -j4\"\nmake\n```\nworks and does at least the cythoning in parallel.\n\nWilliam",
     "created_at": "2008-09-22T04:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -279,7 +281,6 @@ archive/issue_comments_026726.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 From mabshoff:
@@ -294,7 +295,6 @@ some env variable to pass the number of threads to the build process
 when building the Sage library for the first time.
 ```
 
-
 Responses: good.  Yes, we would definitely have to change spkg/standard/deps to
 depend on PYPROCESSING, and that will be part of this ticket.  I've attached
 a new deps file that does this (note -- deps isn't under any repo, and the 
@@ -307,7 +307,6 @@ a -j option, then use that.  This will make it so our current standard
 export MAKE="make -j4"
 make
 ```
-
 works and does at least the cythoning in parallel.
 
 William
@@ -337,7 +336,7 @@ Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by @will
 archive/issue_comments_026728.json:
 ```json
 {
-    "body": "I have modified this code so that now it does nothing unless the environment variable MAKE is set and include \"-j[number]\" in it.  If it is set, then it does the cython'ing on the pyx files using number cores. \n\nAs an example test, if you touch *.pyx in devel/sage/matrix, then do this on sage.math\n\n```\nexport MAKE=\"make -j20\"; sage -br\n```\n\n\nYou get \n\n```\n...\nTime to execute 28 commands: 43.5897231102 seconds\n```\n\n\nThis would take far longer than 43 seconds in serial.\n\nNote that the gcc'ing part is still done in serial. \n\nThis is an incredibly simple patch that will save a lot of time, and is quite non-intrusive and natural, I think.\n\nWilliam",
+    "body": "I have modified this code so that now it does nothing unless the environment variable MAKE is set and include \"-j[number]\" in it.  If it is set, then it does the cython'ing on the pyx files using number cores. \n\nAs an example test, if you touch *.pyx in devel/sage/matrix, then do this on sage.math\n\n```\nexport MAKE=\"make -j20\"; sage -br\n```\n\nYou get \n\n```\n...\nTime to execute 28 commands: 43.5897231102 seconds\n```\n\nThis would take far longer than 43 seconds in serial.\n\nNote that the gcc'ing part is still done in serial. \n\nThis is an incredibly simple patch that will save a lot of time, and is quite non-intrusive and natural, I think.\n\nWilliam",
     "created_at": "2008-10-23T20:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
@@ -354,14 +353,12 @@ As an example test, if you touch *.pyx in devel/sage/matrix, then do this on sag
 export MAKE="make -j20"; sage -br
 ```
 
-
 You get 
 
 ```
 ...
 Time to execute 28 commands: 43.5897231102 seconds
 ```
-
 
 This would take far longer than 43 seconds in serial.
 

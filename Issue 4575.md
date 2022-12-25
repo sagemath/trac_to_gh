@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4575
 archive/issue_comments_034209.json:
 ```json
 {
-    "body": "Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by @williamstein created at 2008-11-28 06:13:06\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n\n2. The patch isn't a mercurial patch, so... :-(",
+    "body": "Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by @williamstein created at 2008-11-28 06:13:06\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n2. The patch isn't a mercurial patch, so... :-(",
     "created_at": "2008-11-28T06:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ Positive review.  Code looks solid and the result is really pretty to look at.
 ```
 935	    Print a nestet list as a html table. 
 ```
-
 
 2. The patch isn't a mercurial patch, so... :-(
 
@@ -158,7 +157,7 @@ Instead this should be some function in a module for creating HTML output of obj
 archive/issue_comments_034214.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.  Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.\n> \n> Instead this should be some function in a module for creating HTML output of objects.\n\nOk, let's take this discussion to sage-devel. I might reverse this patch since Jaap oberved a doctest failure that seems impossible to happen. Another reason to reverse this is that we do not want to ship a show with this option if we are going to break it anyway.\n\nYour idea certainly sounds cleaner.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 mhansen]:\n> I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.  Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.\n> \n> Instead this should be some function in a module for creating HTML output of objects.\n\n\nOk, let's take this discussion to sage-devel. I might reverse this patch since Jaap oberved a doctest failure that seems impossible to happen. Another reason to reverse this is that we do not want to ship a show with this option if we are going to break it anyway.\n\nYour idea certainly sounds cleaner.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T18:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -171,6 +170,7 @@ Replying to [comment:4 mhansen]:
 > I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.  Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.
 > 
 > Instead this should be some function in a module for creating HTML output of objects.
+
 
 Ok, let's take this discussion to sage-devel. I might reverse this patch since Jaap oberved a doctest failure that seems impossible to happen. Another reason to reverse this is that we do not want to ship a show with this option if we are going to break it anyway.
 
@@ -358,7 +358,7 @@ archive/issue_events_010414.json:
 archive/issue_comments_034222.json:
 ```json
 {
-    "body": "\n```\nsage -t  \"devel/sage/sage/misc/functional.py\"               \n********************************************************************** \nFile \"/home/jaap/work/downloads/sage-3.2.1.alpha2/devel/sage/sage/misc/functiona l.py\", line 891: \n     sage: show([(i, j, i == j) for i in [0..1] for j in [0..1]], table_form = True) \nExpected: \n     <html> \n     <div class=\"notruncate\"> \n     <table class=\"table_form\"> \n     <tbody> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">\\mbox{\\rm True}</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">\\mbox{\\rm False}</span></td> \n     </tr> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">\\mbox{\\rm False}</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">\\mbox{\\rm True}</span></td> \n     </tr> \n     </tbody> \n     </table> \n     </div> \n     </html> \nGot: \n     <html> \n     <div class=\"notruncate\"> \n     <table class=\"table_form\"> \n     <tbody> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">True</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">False</span></td> \n     </tr> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">False</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">True</span></td> \n     </tr> \n     </tbody> \n     </table> \n     </div> \n     </html> \n********************************************************************** \n1 items had failures: \n    1 of   5 in __main__.example_53 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha2/tmp/.doctest_functional.py \n         [11.5 s] \nexit code: 1024 \n```\n",
+    "body": "```\nsage -t  \"devel/sage/sage/misc/functional.py\"               \n********************************************************************** \nFile \"/home/jaap/work/downloads/sage-3.2.1.alpha2/devel/sage/sage/misc/functiona l.py\", line 891: \n     sage: show([(i, j, i == j) for i in [0..1] for j in [0..1]], table_form = True) \nExpected: \n     <html> \n     <div class=\"notruncate\"> \n     <table class=\"table_form\"> \n     <tbody> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">\\mbox{\\rm True}</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">\\mbox{\\rm False}</span></td> \n     </tr> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">\\mbox{\\rm False}</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">\\mbox{\\rm True}</span></td> \n     </tr> \n     </tbody> \n     </table> \n     </div> \n     </html> \nGot: \n     <html> \n     <div class=\"notruncate\"> \n     <table class=\"table_form\"> \n     <tbody> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">True</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">False</span></td> \n     </tr> \n     <tr class =\"row-a\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">0</span></td> \n     <td><span class=\"math\">False</span></td> \n     </tr> \n     <tr class =\"row-b\"> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">1</span></td> \n     <td><span class=\"math\">True</span></td> \n     </tr> \n     </tbody> \n     </table> \n     </div> \n     </html> \n********************************************************************** \n1 items had failures: \n    1 of   5 in __main__.example_53 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha2/tmp/.doctest_functional.py \n         [11.5 s] \nexit code: 1024 \n```",
     "created_at": "2008-11-30T05:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -366,7 +366,6 @@ archive/issue_comments_034222.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 sage -t  "devel/sage/sage/misc/functional.py"               
@@ -442,13 +441,12 @@ exit code: 1024
 
 
 
-
 ---
 
 archive/issue_comments_034223.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.\n\nI agree, It should also do something useful on the command-line.\n\n> Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.\n\n> Instead this should be some function in a module for creating HTML output of objects.\n\nThis is probably cleaner implementation wise, but I don't think html.nested_list()\nis a good userinterface. Why should the user of the notebook need to know the\nimplementation detail that the output is produced using HTML? And the output of the\nfunction is not really html anyway, but html + latex.\n\nIt is also inconsistent, since\n\nsage: html(sin(x)/x)\n\nproduces acii art, and not html + jsmath.\n\nThere are already at least five functions that produce jsmath output in the notebook,\nwhich all behave differently:\n\n**show():**\n    Produces latex in display mode.\n    And works with graphic objects of course.\n\n**view():**\n    Produces latex in inline mode (which is hard to read in the notebook).\n    This has many options that only work on the commandline and with xdvi.\n    For graphic objects it returns a string representation.\n\n**typeset():**\n    Same behaviour as view() but has no options.\n\n**pretty_print():**\n    produces latex in inline mode.\n\n    If used on the graphics objects, it shows it like show().\n    But it doesn't accept any options, as show() does.\n\n**jsmath():**\n    produces latex in display mode.\n    For graphic objects it returns a string representation,\n    but inside latex math-mode.\n\n    The docstring says that there is a option mode\n    which changes between display and inline mode.\n\n    Unfortunately this only works in doctest mode.\n    In the notebook I get:\n\n```\n    sage: jsmath(x^2, 'inline')\n    Traceback (click to the left for traceback)\n    ...\n    TypeError: __call__() takes exactly 2 arguments (3 given)\n```\n\nIs there a deeper reason why Sage has all these functions? Or have\nthey just accumulated over the years? A few of these should probably\nbe deprecated.\n\nIn my opinion show() is the best of these, because also x.show() works,\nso it is consistent. It's short and easy to remember.\nIt just needs better documentation.\n\nWould a mode flag for show() like the one for jsmath() be okay? Then\nit could be extended in the future without adding additional keywords.\n\nGrettings,\nWilfried",
+    "body": "Replying to [comment:4 mhansen]:\n> I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.\n\n\nI agree, It should also do something useful on the command-line.\n\n> Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.\n\n\n> Instead this should be some function in a module for creating HTML output of objects.\n\n\nThis is probably cleaner implementation wise, but I don't think html.nested_list()\nis a good userinterface. Why should the user of the notebook need to know the\nimplementation detail that the output is produced using HTML? And the output of the\nfunction is not really html anyway, but html + latex.\n\nIt is also inconsistent, since\n\nsage: html(sin(x)/x)\n\nproduces acii art, and not html + jsmath.\n\nThere are already at least five functions that produce jsmath output in the notebook,\nwhich all behave differently:\n\n**show():**\n    Produces latex in display mode.\n    And works with graphic objects of course.\n\n**view():**\n    Produces latex in inline mode (which is hard to read in the notebook).\n    This has many options that only work on the commandline and with xdvi.\n    For graphic objects it returns a string representation.\n\n**typeset():**\n    Same behaviour as view() but has no options.\n\n**pretty_print():**\n    produces latex in inline mode.\n\n    If used on the graphics objects, it shows it like show().\n    But it doesn't accept any options, as show() does.\n\n**jsmath():**\n    produces latex in display mode.\n    For graphic objects it returns a string representation,\n    but inside latex math-mode.\n\n    The docstring says that there is a option mode\n    which changes between display and inline mode.\n\n    Unfortunately this only works in doctest mode.\n    In the notebook I get:\n\n```\n    sage: jsmath(x^2, 'inline')\n    Traceback (click to the left for traceback)\n    ...\n    TypeError: __call__() takes exactly 2 arguments (3 given)\n```\nIs there a deeper reason why Sage has all these functions? Or have\nthey just accumulated over the years? A few of these should probably\nbe deprecated.\n\nIn my opinion show() is the best of these, because also x.show() works,\nso it is consistent. It's short and easy to remember.\nIt just needs better documentation.\n\nWould a mode flag for show() like the one for jsmath() be okay? Then\nit could be extended in the future without adding additional keywords.\n\nGrettings,\nWilfried",
     "created_at": "2008-12-03T20:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -460,11 +458,14 @@ archive/issue_comments_034223.json:
 Replying to [comment:4 mhansen]:
 > I don't agree with William's positive review on this for some design reasons.  First off, it is only useful from the notebook as it just spits out HTML while all other cases of show work fine from the command-line.
 
+
 I agree, It should also do something useful on the command-line.
 
 > Tacking random things and keywords onto show is not a maintainable solution especially since the new functionality is completely orthogonal to what's already there.
 
+
 > Instead this should be some function in a module for creating HTML output of objects.
+
 
 This is probably cleaner implementation wise, but I don't think html.nested_list()
 is a good userinterface. Why should the user of the notebook need to know the
@@ -515,7 +516,6 @@ which all behave differently:
     ...
     TypeError: __call__() takes exactly 2 arguments (3 given)
 ```
-
 Is there a deeper reason why Sage has all these functions? Or have
 they just accumulated over the years? A few of these should probably
 be deprecated.
@@ -561,7 +561,7 @@ Michael
 archive/issue_comments_034225.json:
 ```json
 {
-    "body": "What is the status of this?  I'm needing it pretty often, and end up writing my own every time:\n\n\n```\ndef html_table(data):\n    html(\"<table border=1>\")\n    for row in gg:\n        html(\"<tr>\")\n        for cell in row:\n            html(\"<td>\")\n            show(cell)\n            html(\"</td>\")\n        html(\"</tr>\")\n    html(\"</table>\")\n```\n\n\n(it looks nicer if you have #5836 applied)",
+    "body": "What is the status of this?  I'm needing it pretty often, and end up writing my own every time:\n\n```\ndef html_table(data):\n    html(\"<table border=1>\")\n    for row in gg:\n        html(\"<tr>\")\n        for cell in row:\n            html(\"<td>\")\n            show(cell)\n            html(\"</td>\")\n        html(\"</tr>\")\n    html(\"</table>\")\n```\n\n(it looks nicer if you have #5836 applied)",
     "created_at": "2009-04-20T18:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -571,7 +571,6 @@ archive/issue_comments_034225.json:
 ```
 
 What is the status of this?  I'm needing it pretty often, and end up writing my own every time:
-
 
 ```
 def html_table(data):
@@ -585,7 +584,6 @@ def html_table(data):
         html("</tr>")
     html("</table>")
 ```
-
 
 (it looks nicer if you have #5836 applied)
 
@@ -655,7 +653,7 @@ contains all previous patches
 archive/issue_comments_034229.json:
 ```json
 {
-    "body": "Attachment [table.patch](tarball://root/attachments/some-uuid/ticket4575/table.patch) by whuss created at 2009-04-21 14:31:39\n\nReplying to [comment:15 jason]:\n> More comments:\n> \n>  * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)\n>  * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.\n> \n> and again, the call to latex should be replaced with a call to show() after #5836 is applied.\n\nI attached a new patch, which needs on #5836 to be applied. The command is now called html.table(). itertools.cycle is used, there is a option to use the first row as a heading,\nstrings are put into the table cells unmodified and also graphic objects are placed into\nthe table correctly.\n\nIt was not possible to just use show() unmodified because this results in nested notebook\ncells which render the notebook unusable.",
+    "body": "Attachment [table.patch](tarball://root/attachments/some-uuid/ticket4575/table.patch) by whuss created at 2009-04-21 14:31:39\n\nReplying to [comment:15 jason]:\n> More comments:\n> \n> * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)\n> * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.\n> \n> and again, the call to latex should be replaced with a call to show() after #5836 is applied.\n\n\nI attached a new patch, which needs on #5836 to be applied. The command is now called html.table(). itertools.cycle is used, there is a option to use the first row as a heading,\nstrings are put into the table cells unmodified and also graphic objects are placed into\nthe table correctly.\n\nIt was not possible to just use show() unmodified because this results in nested notebook\ncells which render the notebook unusable.",
     "created_at": "2009-04-21T14:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -669,10 +667,11 @@ Attachment [table.patch](tarball://root/attachments/some-uuid/ticket4575/table.p
 Replying to [comment:15 jason]:
 > More comments:
 > 
->  * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)
->  * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.
+> * It would be simpler to have the row classes use itertools.cycle, instead of the modular arithmetic (smaller code size, anyway, and standard python tools)
+> * It would be fantastic to be able to easily specify styles, like borders, background colors, heading rows, etc.
 > 
 > and again, the call to latex should be replaced with a call to show() after #5836 is applied.
+
 
 I attached a new patch, which needs on #5836 to be applied. The command is now called html.table(). itertools.cycle is used, there is a option to use the first row as a heading,
 strings are put into the table cells unmodified and also graphic objects are placed into
@@ -838,7 +837,7 @@ Resolution: fixed
 archive/issue_comments_034237.json:
 ```json
 {
-    "body": "Replying to [ticket:4575 whuss]:\n> The attached patch adds the option table_form to the show() command.\n> \n> If table_form = True, nested lists are shown in the notebook as nicely\n> formatted html tables.\nCan someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.",
+    "body": "Replying to [ticket:4575 whuss]:\n> The attached patch adds the option table_form to the show() command.\n> \n> If table_form = True, nested lists are shown in the notebook as nicely\n> formatted html tables.\n\nCan someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.",
     "created_at": "2009-06-04T14:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -852,6 +851,7 @@ Replying to [ticket:4575 whuss]:
 > 
 > If table_form = True, nested lists are shown in the notebook as nicely
 > formatted html tables.
+
 Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.
 
 
@@ -879,7 +879,7 @@ Attachment [html_table.png](tarball://root/attachments/some-uuid/ticket4575/html
 archive/issue_comments_034239.json:
 ```json
 {
-    "body": "Attachment [html_table1.png](tarball://root/attachments/some-uuid/ticket4575/html_table1.png) by whuss created at 2009-06-04 14:58:35\n\nReplying to [comment:22 mvngu]:\n> Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.\n\nThe first picture is produced by:\n\n\n```\nsage: functions = [sin(x), cos(x), tan(x), acos(x)]\nsage: t = [[f, taylor(f, x, 0, 10)] for f in functions]\nsage: html.table([[\"Function\", \"Series\"]] + t, header = True)\n```\n\n\nIt is also possible to put graphic objects into the table:\n\n\n```\nsage: f = 1/x*sin(x)\nsage: t = [[\"Function\", \"Plot\"],[f, plot(f, x, -4*pi, 4*pi)]]\nsage: html.table(t, header = True)\n```\n\n\nI hope this helps.",
+    "body": "Attachment [html_table1.png](tarball://root/attachments/some-uuid/ticket4575/html_table1.png) by whuss created at 2009-06-04 14:58:35\n\nReplying to [comment:22 mvngu]:\n> Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.\n\n\nThe first picture is produced by:\n\n```\nsage: functions = [sin(x), cos(x), tan(x), acos(x)]\nsage: t = [[f, taylor(f, x, 0, 10)] for f in functions]\nsage: html.table([[\"Function\", \"Series\"]] + t, header = True)\n```\n\nIt is also possible to put graphic objects into the table:\n\n```\nsage: f = 1/x*sin(x)\nsage: t = [[\"Function\", \"Plot\"],[f, plot(f, x, -4*pi, 4*pi)]]\nsage: html.table(t, header = True)\n```\n\nI hope this helps.",
     "created_at": "2009-06-04T14:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -893,8 +893,8 @@ Attachment [html_table1.png](tarball://root/attachments/some-uuid/ticket4575/htm
 Replying to [comment:22 mvngu]:
 > Can someone upload a screenshot that shows an example of a nicely formatted HTML table. Code sample would be good as well, if relevant. I plan to showcase this ticket in the release tour, and having a visual is worth a thousand words.
 
-The first picture is produced by:
 
+The first picture is produced by:
 
 ```
 sage: functions = [sin(x), cos(x), tan(x), acos(x)]
@@ -902,16 +902,13 @@ sage: t = [[f, taylor(f, x, 0, 10)] for f in functions]
 sage: html.table([["Function", "Series"]] + t, header = True)
 ```
 
-
 It is also possible to put graphic objects into the table:
-
 
 ```
 sage: f = 1/x*sin(x)
 sage: t = [["Function", "Plot"],[f, plot(f, x, -4*pi, 4*pi)]]
 sage: html.table(t, header = True)
 ```
-
 
 I hope this helps.
 
@@ -922,7 +919,7 @@ I hope this helps.
 archive/issue_comments_034240.json:
 ```json
 {
-    "body": "Replying to [comment:23 whuss]:\n> The first picture is produced by:\n<SNIP>\n> It is also possible to put graphic objects into the table:\n<SNIP>\n> I hope this helps.\nHoly bitbucket! Those images look drop-dead gorgeous! Thanks, Wilfried.",
+    "body": "Replying to [comment:23 whuss]:\n> The first picture is produced by:\n\n<SNIP>\n> It is also possible to put graphic objects into the table:\n\n<SNIP>\n> I hope this helps.\n\nHoly bitbucket! Those images look drop-dead gorgeous! Thanks, Wilfried.",
     "created_at": "2009-06-04T15:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -933,10 +930,13 @@ archive/issue_comments_034240.json:
 
 Replying to [comment:23 whuss]:
 > The first picture is produced by:
+
 <SNIP>
 > It is also possible to put graphic objects into the table:
+
 <SNIP>
 > I hope this helps.
+
 Holy bitbucket! Those images look drop-dead gorgeous! Thanks, Wilfried.
 
 
@@ -946,7 +946,7 @@ Holy bitbucket! Those images look drop-dead gorgeous! Thanks, Wilfried.
 archive/issue_comments_034241.json:
 ```json
 {
-    "body": "Also, you can try \n\n\n```\nhtml.table([[\"Graph\", \"Vertices\", \"Edges\"]] + [(g.plot(), g.order(), g.size()) for g in graphs(3)], header=True)\n```\n\n\n(sorry, I don't have the patch applied right now, so I can't post a screenshot.  It'd be nice if alpha.sagenb.org was updated...)",
+    "body": "Also, you can try \n\n```\nhtml.table([[\"Graph\", \"Vertices\", \"Edges\"]] + [(g.plot(), g.order(), g.size()) for g in graphs(3)], header=True)\n```\n\n(sorry, I don't have the patch applied right now, so I can't post a screenshot.  It'd be nice if alpha.sagenb.org was updated...)",
     "created_at": "2009-06-04T19:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
@@ -957,11 +957,9 @@ archive/issue_comments_034241.json:
 
 Also, you can try 
 
-
 ```
 html.table([["Graph", "Vertices", "Edges"]] + [(g.plot(), g.order(), g.size()) for g in graphs(3)], header=True)
 ```
-
 
 (sorry, I don't have the patch applied right now, so I can't post a screenshot.  It'd be nice if alpha.sagenb.org was updated...)
 

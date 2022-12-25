@@ -50,7 +50,7 @@ This seems to break the future import in padic_generic_element.pyx
 archive/issue_comments_023857.json:
 ```json
 {
-    "body": "\n```\nfrom __future__ import with_statement\n                                    ^\n------------------------------------------------------------\n\n/home/gfurnish/sage-3.0.2-symbolics/devel/sage-symbolics/sage/rings/padics/padic_generic_element.pyx:19:37: future feature with_statement is not defined\n```\n\nThere also seem to be issues with having to move the future statement to before any includes.",
+    "body": "```\nfrom __future__ import with_statement\n                                    ^\n------------------------------------------------------------\n\n/home/gfurnish/sage-3.0.2-symbolics/devel/sage-symbolics/sage/rings/padics/padic_generic_element.pyx:19:37: future feature with_statement is not defined\n```\nThere also seem to be issues with having to move the future statement to before any includes.",
     "created_at": "2008-06-13T02:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
@@ -59,7 +59,6 @@ archive/issue_comments_023857.json:
 }
 ```
 
-
 ```
 from __future__ import with_statement
                                     ^
@@ -67,7 +66,6 @@ from __future__ import with_statement
 
 /home/gfurnish/sage-3.0.2-symbolics/devel/sage-symbolics/sage/rings/padics/padic_generic_element.pyx:19:37: future feature with_statement is not defined
 ```
-
 There also seem to be issues with having to move the future statement to before any includes.
 
 
@@ -121,7 +119,7 @@ Michael
 archive/issue_comments_023860.json:
 ```json
 {
-    "body": "I am getting slight rejects here:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 --dry-run < trac_3408-cython-0.9.8.patch \npatching file sage/ext/interactive_constructors_c.pyx\nHunk #1 FAILED at 24.\n1 out of 2 hunks FAILED -- saving rejects to file sage/ext/interactive_constructors_c.pyx.rej\npatching file sage/misc/cython.py\npatching file sage/rings/padics/padic_generic_element.pyx\npatching file sage/rings/padics/pow_computer_ext.pyx\n```\n\n\nCheers,\n\nMichael",
+    "body": "I am getting slight rejects here:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 --dry-run < trac_3408-cython-0.9.8.patch \npatching file sage/ext/interactive_constructors_c.pyx\nHunk #1 FAILED at 24.\n1 out of 2 hunks FAILED -- saving rejects to file sage/ext/interactive_constructors_c.pyx.rej\npatching file sage/misc/cython.py\npatching file sage/rings/padics/padic_generic_element.pyx\npatching file sage/rings/padics/pow_computer_ext.pyx\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-06-13T03:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
@@ -141,7 +139,6 @@ patching file sage/misc/cython.py
 patching file sage/rings/padics/padic_generic_element.pyx
 patching file sage/rings/padics/pow_computer_ext.pyx
 ```
-
 
 Cheers,
 

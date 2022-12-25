@@ -3,7 +3,7 @@
 archive/issues_006035.json:
 ```json
 {
-    "body": "Assignee: whuss\n\nThe attached patch adds an option \"detect_poles\" to the plot command,\nwhich if True detects vertical asymptotes of the plotted function.\n\n\n```\nsage: plot(gamma(x), (x, -3, 4), detect_poles = True).show(ymin = -5, ymax = 5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6035\n\n",
+    "body": "Assignee: whuss\n\nThe attached patch adds an option \"detect_poles\" to the plot command,\nwhich if True detects vertical asymptotes of the plotted function.\n\n```\nsage: plot(gamma(x), (x, -3, 4), detect_poles = True).show(ymin = -5, ymax = 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6035\n\n",
     "created_at": "2009-05-13T16:43:42Z",
     "labels": [
         "component: graphics"
@@ -20,11 +20,9 @@ Assignee: whuss
 The attached patch adds an option "detect_poles" to the plot command,
 which if True detects vertical asymptotes of the plotted function.
 
-
 ```
 sage: plot(gamma(x), (x, -3, 4), detect_poles = True).show(ymin = -5, ymax = 5)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6035

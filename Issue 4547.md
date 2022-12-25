@@ -51,7 +51,7 @@ I attached a patch (which may or may not apply to the current version) which onl
 archive/issue_comments_033993.json:
 ```json
 {
-    "body": "This *has* been an issue.   I have been working around by putting this in my httpd.conf:\n\n```\n\n<VirtualHost *>\n        ServerName sagenb.org\n        ProxyPass    / http://sagenb.org:8000/\n        ProxyPassReverse / http://sagenb.org:8000/\n\n        <Location />\n           DefaultType text/html\n        </Location>\n</VirtualHost>\n\n\n```\n",
+    "body": "This *has* been an issue.   I have been working around by putting this in my httpd.conf:\n\n```\n\n<VirtualHost *>\n        ServerName sagenb.org\n        ProxyPass    / http://sagenb.org:8000/\n        ProxyPassReverse / http://sagenb.org:8000/\n\n        <Location />\n           DefaultType text/html\n        </Location>\n</VirtualHost>\n\n\n```",
     "created_at": "2008-11-20T05:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ This *has* been an issue.   I have been working around by putting this in my htt
 
 
 ```
-
 
 
 
@@ -298,7 +297,7 @@ Changing assignee from boothby to @mwhansen.
 archive/issue_comments_034004.json:
 ```json
 {
-    "body": "This patch requires two trivial fixes unless these are provided via some other patch as a dependency:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/server/notebook/twist.py \nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 139:\n    sage: response.headers\nExpected:\n    <Headers: Raw: {'content-type': ['text/html']} Parsed: {'content-type': <RecalcNeeded>}>\nGot:\n    <Headers: Raw: {'content-type': ['text/html; charset=utf-8']} Parsed: {'content-type': <RecalcNeeded>}>\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 1511:\n    sage: E.render(None)\nExpected:\n    <twisted.web2.HTMLResponse code=200, streamlen=...>\nGot:\n    <twisted.web2.http.Response code=200, streamlen=240>\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch requires two trivial fixes unless these are provided via some other patch as a dependency:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/server/notebook/twist.py \nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 139:\n    sage: response.headers\nExpected:\n    <Headers: Raw: {'content-type': ['text/html']} Parsed: {'content-type': <RecalcNeeded>}>\nGot:\n    <Headers: Raw: {'content-type': ['text/html; charset=utf-8']} Parsed: {'content-type': <RecalcNeeded>}>\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 1511:\n    sage: E.render(None)\nExpected:\n    <twisted.web2.HTMLResponse code=200, streamlen=...>\nGot:\n    <twisted.web2.http.Response code=200, streamlen=240>\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T18:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
@@ -328,7 +327,6 @@ Got:
     <twisted.web2.http.Response code=200, streamlen=240>
 **********************************************************************
 ```
-
 
 Cheers,
 

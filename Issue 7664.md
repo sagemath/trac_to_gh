@@ -3,7 +3,7 @@
 archive/issues_007664.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout @gvol\n\nKeywords: latex, R, jsmath\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @gvol\n\nKeywords: latex, R, jsmath\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
     "created_at": "2009-12-11T20:11:23Z",
     "labels": [
         "component: packages: standard",
@@ -45,7 +45,6 @@ sage0\tabularnewline
 \end{table}
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7664
 
 
@@ -79,7 +78,7 @@ Also, when evaluating in the R system, we ought to enclose things in a div that 
 archive/issue_comments_065515.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Can R latex its own expressions?\n\nApparently using the Hmisc package.  From our own doctests in r.py:\n\n```\n    def _latex_(self):\n        r\"\"\"\n        Return LaTeX representation of this R object.\n\n        This calls the \\code{latex} command in R.\n\n        OUTPUT:\n           a latex expression (basically a string)\n        \n        EXAMPLES:\n            sage: latex(r(2))  #optional requires the Hmisc R package\n            2\n        \"\"\"\n        self._check_valid()\n        P = self.parent()\n        # latex is in Hmisc, this is currently not part of Sage's R!!!\n        try:\n            P.library('Hmisc')\n        except ImportError:\n            raise RuntimeError, \"The R package 'Hmisc' is required for R to LaTeX conversion, but it is not available.\"\n        return LatexExpr(P.eval('latex(%s, file=\"\");'%self.name()))\n\n```\n\n\nNote that this requires the package 'survival', which is also recommended but not currently in Sage.\n\nAnyway, I checked some more and apparently the problem is that jsmath doesn't understand the latex output created by Hmisc - namely, it doesn't know what a table is, nor center, nor tabular.\n\nSo maybe if EMBEDDED_MODE=True, we should have a thing that strips out all that other stuff and just puts in the stuff in the middle.  Incidentally, the output in the optional doctest above is incorrect, we get\n\n```\n% latex.default(sage0, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{r}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\n$2$\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n\n```\n\nso maybe this was with a previous version of Hmisc.\n\nOr we could even strip out those things and replace them with equivalent HTML stuff when EMBEDDED_MODE is true.",
+    "body": "Replying to [comment:2 jason]:\n> Can R latex its own expressions?\n\n\nApparently using the Hmisc package.  From our own doctests in r.py:\n\n```\n    def _latex_(self):\n        r\"\"\"\n        Return LaTeX representation of this R object.\n\n        This calls the \\code{latex} command in R.\n\n        OUTPUT:\n           a latex expression (basically a string)\n        \n        EXAMPLES:\n            sage: latex(r(2))  #optional requires the Hmisc R package\n            2\n        \"\"\"\n        self._check_valid()\n        P = self.parent()\n        # latex is in Hmisc, this is currently not part of Sage's R!!!\n        try:\n            P.library('Hmisc')\n        except ImportError:\n            raise RuntimeError, \"The R package 'Hmisc' is required for R to LaTeX conversion, but it is not available.\"\n        return LatexExpr(P.eval('latex(%s, file=\"\");'%self.name()))\n\n```\n\nNote that this requires the package 'survival', which is also recommended but not currently in Sage.\n\nAnyway, I checked some more and apparently the problem is that jsmath doesn't understand the latex output created by Hmisc - namely, it doesn't know what a table is, nor center, nor tabular.\n\nSo maybe if EMBEDDED_MODE=True, we should have a thing that strips out all that other stuff and just puts in the stuff in the middle.  Incidentally, the output in the optional doctest above is incorrect, we get\n\n```\n% latex.default(sage0, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{r}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\n$2$\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n\n```\nso maybe this was with a previous version of Hmisc.\n\nOr we could even strip out those things and replace them with equivalent HTML stuff when EMBEDDED_MODE is true.",
     "created_at": "2009-12-14T15:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7664",
     "type": "issue_comment",
@@ -90,6 +89,7 @@ archive/issue_comments_065515.json:
 
 Replying to [comment:2 jason]:
 > Can R latex its own expressions?
+
 
 Apparently using the Hmisc package.  From our own doctests in r.py:
 
@@ -118,7 +118,6 @@ Apparently using the Hmisc package.  From our own doctests in r.py:
 
 ```
 
-
 Note that this requires the package 'survival', which is also recommended but not currently in Sage.
 
 Anyway, I checked some more and apparently the problem is that jsmath doesn't understand the latex output created by Hmisc - namely, it doesn't know what a table is, nor center, nor tabular.
@@ -142,7 +141,6 @@ $2$\tabularnewline
 \end{table}
 
 ```
-
 so maybe this was with a previous version of Hmisc.
 
 Or we could even strip out those things and replace them with equivalent HTML stuff when EMBEDDED_MODE is true.

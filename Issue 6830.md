@@ -145,7 +145,7 @@ Just discovered this moribund ticket. I might actually find this useful! Does an
 archive/issue_comments_056233.json:
 ```json
 {
-    "body": "To quote an email from wakep:\n\"I wrote that code as part of an undergraduate summer research program. I was not particularly savvy with Sage development then (and even less-so now). As far as I understand, the reason that it became moribund is that it took some time to get an initial review, and by the time it got one, Sage was on to a new version. I was asked to \"rebase\" it to the new version, but I didn't know how to do that. (I had started graduate school by then and had no time to play with Sage.)\n\nThe upshot is that I have no particular intention to revisit the code, but I think that it wouldn't take much to get it working. I'd be happy to work on it, but I wouldn't know what to do.\"\n\nSo I (kedlaya) took the liberty of manually rebasing the patch. I haven't even tried to build this yet; probably that will reveal some other issues.\n\n----\nNew commits:",
+    "body": "To quote an email from wakep:\n\"I wrote that code as part of an undergraduate summer research program. I was not particularly savvy with Sage development then (and even less-so now). As far as I understand, the reason that it became moribund is that it took some time to get an initial review, and by the time it got one, Sage was on to a new version. I was asked to \"rebase\" it to the new version, but I didn't know how to do that. (I had started graduate school by then and had no time to play with Sage.)\n\nThe upshot is that I have no particular intention to revisit the code, but I think that it wouldn't take much to get it working. I'd be happy to work on it, but I wouldn't know what to do.\"\n\nSo I (kedlaya) took the liberty of manually rebasing the patch. I haven't even tried to build this yet; probably that will reveal some other issues.\n\n---\nNew commits:",
     "created_at": "2016-08-19T23:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
@@ -161,7 +161,7 @@ The upshot is that I have no particular intention to revisit the code, but I thi
 
 So I (kedlaya) took the liberty of manually rebasing the patch. I haven't even tried to build this yet; probably that will reveal some other issues.
 
-----
+---
 New commits:
 
 

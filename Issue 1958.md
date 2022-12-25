@@ -130,7 +130,7 @@ Note: you only want the second patch; it's a *replacement* for the first, not in
 archive/issue_comments_012614.json:
 ```json
 {
-    "body": "Worked for me on Fedoa 7:\n\n\n\n```\nsage -t  devel/sage-main/sage/interfaces/sage0.py           ^[[?1034h\n         [7.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 7.1 seconds\n\n```\n\n\nHow about the extra escape code on each test line?",
+    "body": "Worked for me on Fedoa 7:\n\n\n```\nsage -t  devel/sage-main/sage/interfaces/sage0.py           ^[[?1034h\n         [7.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 7.1 seconds\n\n```\n\nHow about the extra escape code on each test line?",
     "created_at": "2008-01-28T11:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ archive/issue_comments_012614.json:
 Worked for me on Fedoa 7:
 
 
-
 ```
 sage -t  devel/sage-main/sage/interfaces/sage0.py           ^[[?1034h
          [7.1 s]
@@ -152,7 +151,6 @@ All tests passed!
 Total time for all tests: 7.1 seconds
 
 ```
-
 
 How about the extra escape code on each test line?
 

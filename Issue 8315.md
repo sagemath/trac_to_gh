@@ -249,7 +249,7 @@ Oh, by the way: would it be hard to add a pointer to the corresponding live docu
 archive/issue_comments_073627.json:
 ```json
 {
-    "body": "Replying to [comment:7 nthiery]:\n> Oh, by the way: would it be hard to add a pointer to the corresponding live documentation, when available?\nGood idea!  This should be straightforward.  It may be better to include the link in just the \"fast static\" documentation.  In this case, we have the server address and port number, so we can insert an analogous \"Go live!\" link on the fly.\n\nOf course, this only works if the server is still running and works best when the user is logged into the server.  I'm not aware of an easy way for a page to check whether a link is valid before deciding whether to display it or hide it.\n\nFor the \"offline\" docs (e.g., those accessed via `file:///`), perhaps we could prompt for a working server address (and save it in a cookie) or direct the user to `sagenb.org`?",
+    "body": "Replying to [comment:7 nthiery]:\n> Oh, by the way: would it be hard to add a pointer to the corresponding live documentation, when available?\n\nGood idea!  This should be straightforward.  It may be better to include the link in just the \"fast static\" documentation.  In this case, we have the server address and port number, so we can insert an analogous \"Go live!\" link on the fly.\n\nOf course, this only works if the server is still running and works best when the user is logged into the server.  I'm not aware of an easy way for a page to check whether a link is valid before deciding whether to display it or hide it.\n\nFor the \"offline\" docs (e.g., those accessed via `file:///`), perhaps we could prompt for a working server address (and save it in a cookie) or direct the user to `sagenb.org`?",
     "created_at": "2010-07-15T05:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
@@ -260,6 +260,7 @@ archive/issue_comments_073627.json:
 
 Replying to [comment:7 nthiery]:
 > Oh, by the way: would it be hard to add a pointer to the corresponding live documentation, when available?
+
 Good idea!  This should be straightforward.  It may be better to include the link in just the "fast static" documentation.  In this case, we have the server address and port number, so we can insert an analogous "Go live!" link on the fly.
 
 Of course, this only works if the server is still running and works best when the user is logged into the server.  I'm not aware of an easy way for a page to check whether a link is valid before deciding whether to display it or hide it.

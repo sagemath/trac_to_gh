@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_007610.json:
 ```json
 {
-    "body": "\n```\n[01:01] <mabshoff> I just fixed the annoying \"transposing...\" print out in cremona.spkg\n[01:03] <was__> cremona sent me a bundle or something that has a fix for that and more.\n```\n\nSo, I will wait for the update from John.\n\nCheers,\n\nMichael",
+    "body": "```\n[01:01] <mabshoff> I just fixed the annoying \"transposing...\" print out in cremona.spkg\n[01:03] <was__> cremona sent me a bundle or something that has a fix for that and more.\n```\nSo, I will wait for the update from John.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-21T00:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1226",
     "type": "issue_comment",
@@ -62,12 +62,10 @@ archive/issue_comments_007610.json:
 }
 ```
 
-
 ```
 [01:01] <mabshoff> I just fixed the annoying "transposing..." print out in cremona.spkg
 [01:03] <was__> cremona sent me a bundle or something that has a fix for that and more.
 ```
-
 So, I will wait for the update from John.
 
 Cheers,

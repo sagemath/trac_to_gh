@@ -132,7 +132,7 @@ Also, it seems like there's no contour_plot3d I'll also work on that.
 archive/issue_comments_078073.json:
 ```json
 {
-    "body": "Replying to [comment:4 olazo]:\n> Yes! I had not seen that command. I used implicit_plot. Now that I've checked contour_plot it is exactly what I wanted.\n\nGreat!\n\n> The only thing I don't like is the automatic choosing of contour levels. They usually get too high values that concentrate around the poles of the function so that there are almost no curves in parts of the picture away from the poles. I'll make a patch to improve that.\n\nWhat I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\n```\nsage: contour_plot?\n```\n\n\n\n> Also, it seems like there's no contour_plot3d I'll also work on that.\n\nHave you tried `implicit_plot3d`? Presumably one would use this to start.",
+    "body": "Replying to [comment:4 olazo]:\n> Yes! I had not seen that command. I used implicit_plot. Now that I've checked contour_plot it is exactly what I wanted.\n\n\nGreat!\n\n> The only thing I don't like is the automatic choosing of contour levels. They usually get too high values that concentrate around the poles of the function so that there are almost no curves in parts of the picture away from the poles. I'll make a patch to improve that.\n\n\nWhat I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\n```\nsage: contour_plot?\n```\n\n\n> Also, it seems like there's no contour_plot3d I'll also work on that.\n\n\nHave you tried `implicit_plot3d`? Presumably one would use this to start.",
     "created_at": "2010-08-02T16:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
@@ -144,9 +144,11 @@ archive/issue_comments_078073.json:
 Replying to [comment:4 olazo]:
 > Yes! I had not seen that command. I used implicit_plot. Now that I've checked contour_plot it is exactly what I wanted.
 
+
 Great!
 
 > The only thing I don't like is the automatic choosing of contour levels. They usually get too high values that concentrate around the poles of the function so that there are almost no curves in parts of the picture away from the poles. I'll make a patch to improve that.
+
 
 What I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see
 
@@ -155,8 +157,8 @@ sage: contour_plot?
 ```
 
 
-
 > Also, it seems like there's no contour_plot3d I'll also work on that.
+
 
 Have you tried `implicit_plot3d`? Presumably one would use this to start.
 
@@ -185,7 +187,7 @@ Changing priority from major to minor.
 archive/issue_comments_078075.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> What I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\nYes, that's what I was thinking of, add something like an `,avoid_poles=False` option. Yes, I have seen the option to choose the contours.\n\n> Have you tried `implicit_plot3d`? Presumably one would use this to start.\n\nYes, that is what I used to produce the 3d picture. I have just made #9669",
+    "body": "Replying to [comment:5 kcrisman]:\n> What I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\n\nYes, that's what I was thinking of, add something like an `,avoid_poles=False` option. Yes, I have seen the option to choose the contours.\n\n> Have you tried `implicit_plot3d`? Presumably one would use this to start.\n\n\nYes, that is what I used to produce the 3d picture. I have just made #9669",
     "created_at": "2010-08-02T16:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
@@ -197,9 +199,11 @@ archive/issue_comments_078075.json:
 Replying to [comment:5 kcrisman]:
 > What I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see
 
+
 Yes, that's what I was thinking of, add something like an `,avoid_poles=False` option. Yes, I have seen the option to choose the contours.
 
 > Have you tried `implicit_plot3d`? Presumably one would use this to start.
+
 
 Yes, that is what I used to produce the 3d picture. I have just made #9669
 

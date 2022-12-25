@@ -3,7 +3,7 @@
 archive/issues_006300.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n> >> File\n> >> \"/Users/was/build/sage-4.0.2.rc0/devel/sage/sage/libs/singular/singular.\n> >>pyx \", line 501:\n> >>     sage: P(2^32-1)\n> >> Expected:\n> >>     -1\n> >> Got:\n> >>     4294967295\n> >\n> > Is that with my the fix at\n> >\n> >  http://trac.sagemath.org/sage_trac/attachment/ticket/6051/singular_exp_o\n> >verflow.patch\n> >\n> > or without? It seems (since you are using a 32-bit system) all that needs\n> > to be done is to fix the doctest.\n>\n> No, I had not applied your patch.  However, I just did, and the above\n> issue remains.\n\nYes, the issue remains. One should change the doctest, i.e. the behaviour we\nexpect now is the wrong behaviour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6300\n\n",
+    "body": "Assignee: tbd\n\n> >> File\n> >> \"/Users/was/build/sage-4.0.2.rc0/devel/sage/sage/libs/singular/singular.\n\n> >>pyx \", line 501:\n> >>     sage: P(2^32-1)\n\n> >> Expected:\n> >>     -1\n\n> >> Got:\n> >>     4294967295\n\n> >\n> > Is that with my the fix at\n\n> >\n> >  http://trac.sagemath.org/sage_trac/attachment/ticket/6051/singular_exp_o\n\n> >verflow.patch\n> >\n> > or without? It seems (since you are using a 32-bit system) all that needs\n> > to be done is to fix the doctest.\n\n>\n> No, I had not applied your patch.  However, I just did, and the above\n> issue remains.\n\n\nYes, the issue remains. One should change the doctest, i.e. the behaviour we\nexpect now is the wrong behaviour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6300\n\n",
     "created_at": "2009-06-15T15:45:30Z",
     "labels": [
         "component: doctest coverage",
@@ -21,23 +21,31 @@ Assignee: tbd
 
 > >> File
 > >> "/Users/was/build/sage-4.0.2.rc0/devel/sage/sage/libs/singular/singular.
+
 > >>pyx ", line 501:
 > >>     sage: P(2^32-1)
+
 > >> Expected:
 > >>     -1
+
 > >> Got:
 > >>     4294967295
+
 > >
 > > Is that with my the fix at
+
 > >
 > >  http://trac.sagemath.org/sage_trac/attachment/ticket/6051/singular_exp_o
+
 > >verflow.patch
 > >
 > > or without? It seems (since you are using a 32-bit system) all that needs
 > > to be done is to fix the doctest.
+
 >
 > No, I had not applied your patch.  However, I just did, and the above
 > issue remains.
+
 
 Yes, the issue remains. One should change the doctest, i.e. the behaviour we
 expect now is the wrong behaviour.

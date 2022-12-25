@@ -81,7 +81,7 @@ What do you think of putting in the name also the dependency "Intel vs. PPC" res
 archive/issue_comments_040301.json:
 ```json
 {
-    "body": "Replying to [comment:3 GeorgSWeber]:\n> One more point from #5254, not to be forgotten (no discussion on sage-devel yet):\n> \n> What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"?\n\nIt might happen, but it is something bigger, i.e. we should add a check in the startup script that this is the right arch to begin with, i.e. it should be another ticket altogether.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 GeorgSWeber]:\n> One more point from #5254, not to be forgotten (no discussion on sage-devel yet):\n> \n> What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"?\n\n\nIt might happen, but it is something bigger, i.e. we should add a check in the startup script that this is the right arch to begin with, i.e. it should be another ticket altogether.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T22:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
@@ -94,6 +94,7 @@ Replying to [comment:3 GeorgSWeber]:
 > One more point from #5254, not to be forgotten (no discussion on sage-devel yet):
 > 
 > What do you think of putting in the name also the dependency "Intel vs. PPC" resp. "32Bit vs. 64Bit"?
+
 
 It might happen, but it is something bigger, i.e. we should add a check in the startup script that this is the right arch to begin with, i.e. it should be another ticket altogether.
 
@@ -357,7 +358,7 @@ Resolution: fixed
 archive/issue_comments_040313.json:
 ```json
 {
-    "body": "Just to check, I did end up trying an Intel build on a PPC finally. It runs sage-location and then gives messages like\n\n```\n/tmp/sage-map-app/local/bin/python: /tmp/sage-map-app/local/bin/python: cannot execute binary file\n```\n\nSo presumably this is what we want?  Or should there be a better error message?",
+    "body": "Just to check, I did end up trying an Intel build on a PPC finally. It runs sage-location and then gives messages like\n\n```\n/tmp/sage-map-app/local/bin/python: /tmp/sage-map-app/local/bin/python: cannot execute binary file\n```\nSo presumably this is what we want?  Or should there be a better error message?",
     "created_at": "2009-12-17T17:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
@@ -371,5 +372,4 @@ Just to check, I did end up trying an Intel build on a PPC finally. It runs sage
 ```
 /tmp/sage-map-app/local/bin/python: /tmp/sage-map-app/local/bin/python: cannot execute binary file
 ```
-
 So presumably this is what we want?  Or should there be a better error message?

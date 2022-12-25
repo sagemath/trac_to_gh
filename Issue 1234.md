@@ -3,7 +3,7 @@
 archive/issues_001234.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMaybe the following is not feasible, but analytic_rank could crash smoothly.\n\n\n```\nsage: d=100032426715415089/251987961355200625\nsage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])\nsage: F = E.minimal_model()\nsage: F.analytic_rank(algorithm='cremona')\n<type 'exceptions.RuntimeError'>: Error: '  *** elltors: precision too low in torsell.\n\nsage: F.analytic_rank(algorithm='rubinstein')\n<type 'exceptions.TypeError'>: unable to convert x (= 6.90579e+20 and is too large) to an integer\n\nsage: F.analytic_rank(algorithm='sympow')\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n**ERROR** c4 invariant is too large\n```\n\n\nFrom John Cremona: the \"cremona\" version just wraps a gp script, which\nneeds to have sufficient precision even for ellinit() to work ok here.\nUnfortunately this call will run in its own gp session, and it is not\npossible for the user to set the precision.  (I found the same while\nrunning a lot of examples through Denis Simon's gp scripts).  The\nsolution is to change the wrapper to have a precision parameter, with\nsome reasonable default for backwards compatibility, which gets passes\nthrough to gp.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1234\n\n",
+    "body": "Assignee: @williamstein\n\nMaybe the following is not feasible, but analytic_rank could crash smoothly.\n\n```\nsage: d=100032426715415089/251987961355200625\nsage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])\nsage: F = E.minimal_model()\nsage: F.analytic_rank(algorithm='cremona')\n<type 'exceptions.RuntimeError'>: Error: '  *** elltors: precision too low in torsell.\n\nsage: F.analytic_rank(algorithm='rubinstein')\n<type 'exceptions.TypeError'>: unable to convert x (= 6.90579e+20 and is too large) to an integer\n\nsage: F.analytic_rank(algorithm='sympow')\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n**ERROR** c4 invariant is too large\n```\n\nFrom John Cremona: the \"cremona\" version just wraps a gp script, which\nneeds to have sufficient precision even for ellinit() to work ok here.\nUnfortunately this call will run in its own gp session, and it is not\npossible for the user to set the precision.  (I found the same while\nrunning a lot of examples through Denis Simon's gp scripts).  The\nsolution is to change the wrapper to have a precision parameter, with\nsome reasonable default for backwards compatibility, which gets passes\nthrough to gp.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1234\n\n",
     "created_at": "2007-11-21T14:04:25Z",
     "labels": [
         "component: algebraic geometry",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 Maybe the following is not feasible, but analytic_rank could crash smoothly.
 
-
 ```
 sage: d=100032426715415089/251987961355200625
 sage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])
@@ -36,7 +35,6 @@ sage: F.analytic_rank(algorithm='sympow')
 sympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details
 **ERROR** c4 invariant is too large
 ```
-
 
 From John Cremona: the "cremona" version just wraps a gp script, which
 needs to have sufficient precision even for ellinit() to work ok here.
@@ -166,7 +164,7 @@ Michael
 archive/issue_comments_007674.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> What shall we do about this ticket?\n> \n> Thoughts?\n> \n> Cheers,\n> \n> Michael\n\nGiven the fundamental problem that computing the analytic rank increases rapidly with the conductor N (I think it is sqrt(N)), one solution would be to impose a (carefully-chosen but necessarily somewhat arbitrary) cutoff N_max, so that asking for the analytic rank of a curve of conductor>N_max would result in an error.\n\nOne way to implement this would be to have N_max a parameter to the analytic rank function, with a default value of (say) `10^6` or `10^7`.  (I would have to do some experiments to decide on a sensible value).  The docstring could explain that the user is allowed to increase this but warn that it may take (effectively) for ever.",
+    "body": "Replying to [comment:5 mabshoff]:\n> What shall we do about this ticket?\n> \n> Thoughts?\n> \n> Cheers,\n> \n> Michael\n\n\nGiven the fundamental problem that computing the analytic rank increases rapidly with the conductor N (I think it is sqrt(N)), one solution would be to impose a (carefully-chosen but necessarily somewhat arbitrary) cutoff N_max, so that asking for the analytic rank of a curve of conductor>N_max would result in an error.\n\nOne way to implement this would be to have N_max a parameter to the analytic rank function, with a default value of (say) `10^6` or `10^7`.  (I would have to do some experiments to decide on a sensible value).  The docstring could explain that the user is allowed to increase this but warn that it may take (effectively) for ever.",
     "created_at": "2008-06-26T08:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
@@ -183,6 +181,7 @@ Replying to [comment:5 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Given the fundamental problem that computing the analytic rank increases rapidly with the conductor N (I think it is sqrt(N)), one solution would be to impose a (carefully-chosen but necessarily somewhat arbitrary) cutoff N_max, so that asking for the analytic rank of a curve of conductor>N_max would result in an error.
 
@@ -231,7 +230,7 @@ Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/tra
 archive/issue_comments_007677.json:
 ```json
 {
-    "body": "The attached patch cleans up the exceptions raised, as requested.  Also, in the (default) case where Cremona's gp script is used, the precision is automatically doubled until it doesn't fail.  I also start the precision at 16 rather than the default, since it will get automatically double if necessary, and it's about 3 times faster usually by using this smaller precision to start:\n\n\n```\nBEFORE:\nsage: E = EllipticCurve('5077a')\nsage: time E.analytic_rank()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.21 s\n\n\nAFTER:\nsage: E = EllipticCurve('5077a')\nsage: time E.analytic_rank()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.06 s\n\n\nand another\n\nBEFORE:\nsage: time elliptic_curves.rank(4)[0].analytic_rank()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.50 s\n4\n\nAFTER:\nsage: time elliptic_curves.rank(4)[0].analytic_rank()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.33 s\n4\n```\n",
+    "body": "The attached patch cleans up the exceptions raised, as requested.  Also, in the (default) case where Cremona's gp script is used, the precision is automatically doubled until it doesn't fail.  I also start the precision at 16 rather than the default, since it will get automatically double if necessary, and it's about 3 times faster usually by using this smaller precision to start:\n\n```\nBEFORE:\nsage: E = EllipticCurve('5077a')\nsage: time E.analytic_rank()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.21 s\n\n\nAFTER:\nsage: E = EllipticCurve('5077a')\nsage: time E.analytic_rank()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.06 s\n\n\nand another\n\nBEFORE:\nsage: time elliptic_curves.rank(4)[0].analytic_rank()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.50 s\n4\n\nAFTER:\nsage: time elliptic_curves.rank(4)[0].analytic_rank()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.33 s\n4\n```",
     "created_at": "2009-01-22T08:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
@@ -241,7 +240,6 @@ archive/issue_comments_007677.json:
 ```
 
 The attached patch cleans up the exceptions raised, as requested.  Also, in the (default) case where Cremona's gp script is used, the precision is automatically doubled until it doesn't fail.  I also start the precision at 16 rather than the default, since it will get automatically double if necessary, and it's about 3 times faster usually by using this smaller precision to start:
-
 
 ```
 BEFORE:
@@ -272,7 +270,6 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 Wall time: 0.33 s
 4
 ```
-
 
 
 
@@ -323,7 +320,7 @@ people names (rubinstein -> Rubinstein, weierstrass -> Weierstrass), at least in
 archive/issue_comments_007680.json:
 ```json
 {
-    "body": "Replying to [comment:10 zimmerma]:\n> I also was testing the patch, but John was faster than me. Just a comment: it would be better to capitalize\n> people names (rubinstein -> Rubinstein, weierstrass -> Weierstrass), at least in the documentation\n> (for the options, it might involve too much work).\n\nI agree with capitalization in documentation;  for parameters it would probably be best to allow either.",
+    "body": "Replying to [comment:10 zimmerma]:\n> I also was testing the patch, but John was faster than me. Just a comment: it would be better to capitalize\n> people names (rubinstein -> Rubinstein, weierstrass -> Weierstrass), at least in the documentation\n> (for the options, it might involve too much work).\n\n\nI agree with capitalization in documentation;  for parameters it would probably be best to allow either.",
     "created_at": "2009-01-22T10:09:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
@@ -336,6 +333,7 @@ Replying to [comment:10 zimmerma]:
 > I also was testing the patch, but John was faster than me. Just a comment: it would be better to capitalize
 > people names (rubinstein -> Rubinstein, weierstrass -> Weierstrass), at least in the documentation
 > (for the options, it might involve too much work).
+
 
 I agree with capitalization in documentation;  for parameters it would probably be best to allow either.
 

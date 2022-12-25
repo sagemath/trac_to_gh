@@ -3,7 +3,7 @@
 archive/issues_002217.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @abrochard\n\n\n```\nI agree that this would be a useful funtion to have.  I would call it\nsplitting_field() with a description similar to that of root_field() \n\n...\n\nIn the meantim you should be able to work with what is available as follows:\n\nsage: QQx.<x>=QQ[]\nsage: f=(x^2-2)*(x^2-3)\nsage: F=NumberField([p for p,n in f.factor()],'a')\nsage: F2=F.absolute_field('b')\nsage: F2.structure()\n\n(Isomorphism from Number Field in b with defining polynomial x^4 -\n10*x^2 + 1 to Number Field in a0 with defining polynomial x^2 - 3 over\nits base field,\n Isomorphism from Number Field in a0 with defining polynomial x^2 - 3\nover its base field to Number Field in b with defining polynomial x^4\n- 10*x^2 + 1)\n\nHere F is first defined as a relative extension, with generators a0,a1\nsatisfying the equations:\n\nsage: a0,a1=F.gens()\nsage: a0^2, a1^2\n(3, 2)\n\nthen F2 is the associated absolute field, with F2.structure() giving\nmaps from each of these into the other.\n\nsage: F2toF, FtoF2=F2.structure()\nsage: FtoF2(a0)\n-1/2*b^3 + 11/2*b\nsage: FtoF2(a0).minpoly()\nx^2 - 3\nsage: FtoF2(a1)\n-1/2*b^3 + 9/2*b\nsage: FtoF2(a1).minpoly()\nx^2 - 2\n\n\n```\n\n\nSee the thread at http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2217\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @abrochard\n\n```\nI agree that this would be a useful funtion to have.  I would call it\nsplitting_field() with a description similar to that of root_field() \n\n...\n\nIn the meantim you should be able to work with what is available as follows:\n\nsage: QQx.<x>=QQ[]\nsage: f=(x^2-2)*(x^2-3)\nsage: F=NumberField([p for p,n in f.factor()],'a')\nsage: F2=F.absolute_field('b')\nsage: F2.structure()\n\n(Isomorphism from Number Field in b with defining polynomial x^4 -\n10*x^2 + 1 to Number Field in a0 with defining polynomial x^2 - 3 over\nits base field,\n Isomorphism from Number Field in a0 with defining polynomial x^2 - 3\nover its base field to Number Field in b with defining polynomial x^4\n- 10*x^2 + 1)\n\nHere F is first defined as a relative extension, with generators a0,a1\nsatisfying the equations:\n\nsage: a0,a1=F.gens()\nsage: a0^2, a1^2\n(3, 2)\n\nthen F2 is the associated absolute field, with F2.structure() giving\nmaps from each of these into the other.\n\nsage: F2toF, FtoF2=F2.structure()\nsage: FtoF2(a0)\n-1/2*b^3 + 11/2*b\nsage: FtoF2(a0).minpoly()\nx^2 - 3\nsage: FtoF2(a1)\n-1/2*b^3 + 9/2*b\nsage: FtoF2(a1).minpoly()\nx^2 - 2\n\n\n```\n\nSee the thread at http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2217\n\n",
     "created_at": "2008-02-20T03:50:21Z",
     "labels": [
         "component: number theory"
@@ -18,7 +18,6 @@ archive/issues_002217.json:
 Assignee: @williamstein
 
 CC:  @abrochard
-
 
 ```
 I agree that this would be a useful funtion to have.  I would call it
@@ -63,7 +62,6 @@ x^2 - 2
 
 
 ```
-
 
 See the thread at http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9
 
@@ -260,7 +258,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_014638.json:
 ```json
 {
-    "body": "I ran all standard tests, and everything passed.\n\nI was trying to test functionality, but I'm confused by the differences file.  All of the old examples seem to work, and none of the new ones work.\n\nIn the first example, I get:\n\n\n\n```\nsage: G = NumberField(x^3 - x - 1,'a').galois_closure('b').galois_group(); G\n\nGalois group of Number Field in b with defining polynomial x^6 - 14*x^4\n+ 20*x^3 + 49*x^2 - 140*x + 307\n```\n\n\n\nThe expected output seems to have been changed *from* this result to \n\n\n\n```\nNumber Field in b with defining polynomial x^6 - 6*x^4 + 9*x^2 + 23 \n```\n\n\n\nThese fields are isomorphic, but I've tried the example on three machines, and all of them give the first thing as the output.\n\nSimilarly, the second example doesn't work:\n\n\n\n```\nsage: G.subgroup([ G(1), G([(1,2,3),(4,5,6)]), G([(1,3,2),(4,6,5)]) ]) \n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: permutation [(1, 2, 3), (4, 5, 6)] not in Galois group of\nNumber Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 +\n49*x^2 - 140*x + 307\n\n```\n\n\nBut the original example (now deleted) does work:\n\n\n\n```\nsage: G.subgroup([ G(1), G([(1,5,2),(3,4,6)]), G([(1,2,5),(3,6,4)])])\n\nSubgroup [(), (1,5,2)(3,4,6), (1,2,5)(3,6,4)] of Galois group of Number\nField in b with defining polynomial x^6 - 14*x^4 + 20*x^3 + 49*x^2 -\n140*x + 307\n\n```\n",
+    "body": "I ran all standard tests, and everything passed.\n\nI was trying to test functionality, but I'm confused by the differences file.  All of the old examples seem to work, and none of the new ones work.\n\nIn the first example, I get:\n\n\n```\nsage: G = NumberField(x^3 - x - 1,'a').galois_closure('b').galois_group(); G\n\nGalois group of Number Field in b with defining polynomial x^6 - 14*x^4\n+ 20*x^3 + 49*x^2 - 140*x + 307\n```\n\n\nThe expected output seems to have been changed *from* this result to \n\n\n```\nNumber Field in b with defining polynomial x^6 - 6*x^4 + 9*x^2 + 23 \n```\n\n\nThese fields are isomorphic, but I've tried the example on three machines, and all of them give the first thing as the output.\n\nSimilarly, the second example doesn't work:\n\n\n```\nsage: G.subgroup([ G(1), G([(1,2,3),(4,5,6)]), G([(1,3,2),(4,6,5)]) ]) \n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: permutation [(1, 2, 3), (4, 5, 6)] not in Galois group of\nNumber Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 +\n49*x^2 - 140*x + 307\n\n```\n\nBut the original example (now deleted) does work:\n\n\n```\nsage: G.subgroup([ G(1), G([(1,5,2),(3,4,6)]), G([(1,2,5),(3,6,4)])])\n\nSubgroup [(), (1,5,2)(3,4,6), (1,2,5)(3,6,4)] of Galois group of Number\nField in b with defining polynomial x^6 - 14*x^4 + 20*x^3 + 49*x^2 -\n140*x + 307\n\n```",
     "created_at": "2013-03-01T04:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -276,7 +274,6 @@ I was trying to test functionality, but I'm confused by the differences file.  A
 In the first example, I get:
 
 
-
 ```
 sage: G = NumberField(x^3 - x - 1,'a').galois_closure('b').galois_group(); G
 
@@ -285,9 +282,7 @@ Galois group of Number Field in b with defining polynomial x^6 - 14*x^4
 ```
 
 
-
 The expected output seems to have been changed *from* this result to 
-
 
 
 ```
@@ -295,11 +290,9 @@ Number Field in b with defining polynomial x^6 - 6*x^4 + 9*x^2 + 23
 ```
 
 
-
 These fields are isomorphic, but I've tried the example on three machines, and all of them give the first thing as the output.
 
 Similarly, the second example doesn't work:
-
 
 
 ```
@@ -313,9 +306,7 @@ Number Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 +
 
 ```
 
-
 But the original example (now deleted) does work:
-
 
 
 ```
@@ -326,7 +317,6 @@ Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 + 49*x^2 -
 140*x + 307
 
 ```
-
 
 
 
@@ -449,7 +439,7 @@ Hang on John, I was planning to do that and make some simplifications also.
 archive/issue_comments_014644.json:
 ```json
 {
-    "body": "Replying to [comment:14 jdemeyer]:\n> Hang on John, I was planning to do that and make some simplifications also.\n\nI did not see this comment until after I had finished, so I may have been wasting my time.  I had to apply the changes manually since I could not get the patches to apply.  Shall I still upload my new branch?  I have a commit which includes both the patches and passes all tests -- but have not yet started the real review process, i.e. reading the code.",
+    "body": "Replying to [comment:14 jdemeyer]:\n> Hang on John, I was planning to do that and make some simplifications also.\n\n\nI did not see this comment until after I had finished, so I may have been wasting my time.  I had to apply the changes manually since I could not get the patches to apply.  Shall I still upload my new branch?  I have a commit which includes both the patches and passes all tests -- but have not yet started the real review process, i.e. reading the code.",
     "created_at": "2013-12-31T10:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -461,6 +451,7 @@ archive/issue_comments_014644.json:
 Replying to [comment:14 jdemeyer]:
 > Hang on John, I was planning to do that and make some simplifications also.
 
+
 I did not see this comment until after I had finished, so I may have been wasting my time.  I had to apply the changes manually since I could not get the patches to apply.  Shall I still upload my new branch?  I have a commit which includes both the patches and passes all tests -- but have not yet started the real review process, i.e. reading the code.
 
 
@@ -470,7 +461,7 @@ I did not see this comment until after I had finished, so I may have been wastin
 archive/issue_comments_014645.json:
 ```json
 {
-    "body": "Replying to [comment:15 cremona]:\n> Shal I still upload by new branch?\nOf course you should. My point was mainly that I wanted to make some changes to my patch, so you should wait to review it.",
+    "body": "Replying to [comment:15 cremona]:\n> Shal I still upload by new branch?\n\nOf course you should. My point was mainly that I wanted to make some changes to my patch, so you should wait to review it.",
     "created_at": "2013-12-31T10:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -481,6 +472,7 @@ archive/issue_comments_014645.json:
 
 Replying to [comment:15 cremona]:
 > Shal I still upload by new branch?
+
 Of course you should. My point was mainly that I wanted to make some changes to my patch, so you should wait to review it.
 
 
@@ -652,7 +644,7 @@ I am looking at your new commits.  At first I assumed that your commits were bas
 archive/issue_comments_014655.json:
 ```json
 {
-    "body": "Replying to [comment:26 cremona]:\n> during the time when my commit was attached to this ticket, it is possible that other people pulled it and based further work, new tickets etc, all on my unreviewed commit.\nI absolutely understand your point, but I think I indicated that this was work in progress so I felt it was safe to \"rewrite history\". Now that it's `needs_review`, I will no longer rewrite history.\n\nConcerning authorship: I did indeed reset the author name back to myself (`git commit --amend --author Demeyer`), and that's already rewriting history.",
+    "body": "Replying to [comment:26 cremona]:\n> during the time when my commit was attached to this ticket, it is possible that other people pulled it and based further work, new tickets etc, all on my unreviewed commit.\n\nI absolutely understand your point, but I think I indicated that this was work in progress so I felt it was safe to \"rewrite history\". Now that it's `needs_review`, I will no longer rewrite history.\n\nConcerning authorship: I did indeed reset the author name back to myself (`git commit --amend --author Demeyer`), and that's already rewriting history.",
     "created_at": "2014-01-03T09:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -663,6 +655,7 @@ archive/issue_comments_014655.json:
 
 Replying to [comment:26 cremona]:
 > during the time when my commit was attached to this ticket, it is possible that other people pulled it and based further work, new tickets etc, all on my unreviewed commit.
+
 I absolutely understand your point, but I think I indicated that this was work in progress so I felt it was safe to "rewrite history". Now that it's `needs_review`, I will no longer rewrite history.
 
 Concerning authorship: I did indeed reset the author name back to myself (`git commit --amend --author Demeyer`), and that's already rewriting history.
@@ -802,7 +795,7 @@ Am I allowed to add more examples/doctests?
 archive/issue_comments_014663.json:
 ```json
 {
-    "body": "Replying to [comment:33 jdemeyer]:\n> Thanks, I didn't expect such a quick review.\n> \n> Am I allowed to add more examples/doctests?\n\nOf course!  I think there are already a lot of examples, which I liked.  If you are going to make some more changes I would be happy to look at them, so I'll now mark the ticket as needs work, and when you are ready put it back to needs review.  While you are at it, the description of the class containing a pair (polynomial, degree multiple) is slightly confusing since it refers to other polynomials in the class, whereas you actually deal with lists of instances of these.\n\n\nI am currently working on another branch so the next review will not be so quick!",
+    "body": "Replying to [comment:33 jdemeyer]:\n> Thanks, I didn't expect such a quick review.\n> \n> Am I allowed to add more examples/doctests?\n\n\nOf course!  I think there are already a lot of examples, which I liked.  If you are going to make some more changes I would be happy to look at them, so I'll now mark the ticket as needs work, and when you are ready put it back to needs review.  While you are at it, the description of the class containing a pair (polynomial, degree multiple) is slightly confusing since it refers to other polynomials in the class, whereas you actually deal with lists of instances of these.\n\n\nI am currently working on another branch so the next review will not be so quick!",
     "created_at": "2014-01-03T11:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -815,6 +808,7 @@ Replying to [comment:33 jdemeyer]:
 > Thanks, I didn't expect such a quick review.
 > 
 > Am I allowed to add more examples/doctests?
+
 
 Of course!  I think there are already a lot of examples, which I liked.  If you are going to make some more changes I would be happy to look at them, so I'll now mark the ticket as needs work, and when you are ready put it back to needs review.  While you are at it, the description of the class containing a pair (polynomial, degree multiple) is slightly confusing since it refers to other polynomials in the class, whereas you actually deal with lists of instances of these.
 
@@ -846,7 +840,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_014665.json:
 ```json
 {
-    "body": "Replying to [comment:34 cremona]:\n> I am currently working on another branch so the next review will not be so quick!\nIn that case, perhaps I prefer to leave this ticket and continue on a new ticket. Sorry for the mess.",
+    "body": "Replying to [comment:34 cremona]:\n> I am currently working on another branch so the next review will not be so quick!\n\nIn that case, perhaps I prefer to leave this ticket and continue on a new ticket. Sorry for the mess.",
     "created_at": "2014-01-03T12:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
@@ -857,6 +851,7 @@ archive/issue_comments_014665.json:
 
 Replying to [comment:34 cremona]:
 > I am currently working on another branch so the next review will not be so quick!
+
 In that case, perhaps I prefer to leave this ticket and continue on a new ticket. Sorry for the mess.
 
 

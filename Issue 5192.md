@@ -3,7 +3,7 @@
 archive/issues_005192.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIntegers which result from symbolic expressions live in the symbolic ring, so they are not factored by factor().  E.g.\n\n```\nsage: f(n)=n^2+n+41\nsage: a=f(40)\nsage: factor(a),is_prime(a),a\n(1681, False, 1681)\nsage: factor(1681)\n41^2\n```\n\nBut this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().\n\nIssue created by migration from https://trac.sagemath.org/ticket/5192\n\n",
+    "body": "Assignee: tbd\n\nIntegers which result from symbolic expressions live in the symbolic ring, so they are not factored by factor().  E.g.\n\n```\nsage: f(n)=n^2+n+41\nsage: a=f(40)\nsage: factor(a),is_prime(a),a\n(1681, False, 1681)\nsage: factor(1681)\n41^2\n```\nBut this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().\n\nIssue created by migration from https://trac.sagemath.org/ticket/5192\n\n",
     "created_at": "2009-02-06T01:17:59Z",
     "labels": [
         "component: algebra",
@@ -28,7 +28,6 @@ sage: factor(a),is_prime(a),a
 sage: factor(1681)
 41^2
 ```
-
 But this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().
 
 Issue created by migration from https://trac.sagemath.org/ticket/5192

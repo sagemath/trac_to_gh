@@ -3,7 +3,7 @@
 archive/issues_000911.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is bad:\n\n```\nsage: foo = Graph()\nsage: hash(foo)\n1033452963\nsage: foo.add_vertex(1)\nsage: hash(foo)\n1537218837\n```\n\n\n__hash__ on Graph objects should be overridden to raise a TypeError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/911\n\n",
+    "body": "Assignee: somebody\n\nThis is bad:\n\n```\nsage: foo = Graph()\nsage: hash(foo)\n1033452963\nsage: foo.add_vertex(1)\nsage: hash(foo)\n1537218837\n```\n\n__hash__ on Graph objects should be overridden to raise a TypeError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/911\n\n",
     "created_at": "2007-10-17T06:20:15Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ sage: hash(foo)
 1537218837
 ```
 
-
 __hash__ on Graph objects should be overridden to raise a TypeError.
 
 Issue created by migration from https://trac.sagemath.org/ticket/911
@@ -43,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/911
 archive/issue_comments_005577.json:
 ```json
 {
-    "body": "From the python docs for __hash__ at http://docs.python.org/ref/customization.html :\n\n\"If a class defines mutable objects and implements a __cmp__() or __eq__() method, it should not implement __hash__(), since the dictionary implementation requires that a key's hash value is immutable (if the object's hash value changes, it will be in the wrong hash bucket).\"\n\nCurrently, a Graph object defines a __cmp__ method, but not a __hash__ method.  This seems to be in accordance with the python docs.  However, I guess we are inheriting the __hash__ method from SageObject, so we should redefine the __hash__ method?\n\nHere's a patch:\n\n\n```\ndiff -r 36489d2c9a2e sage/graphs/graph.py\n--- a/sage/graphs/graph.py      Tue Oct 16 09:50:59 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 17 10:19:53 2007 -0500\n@@ -359,6 +359,20 @@ class GenericGraph(SageObject):\n             return self._nxg.name\n         else:\n             return repr(self)\n+\n+    def __hash__(self):\n+        \"\"\"\n+       Since graphs are mutable, they should not be hashable, so we return a type error.\n+\n+       EXAMPLE:\n+           sage: hash(Graph())\n+            Traceback (most recent call last):\n+            ...\n+            TypeError: graphs are mutable, and so therefore are unhashable\n+    \n+       \"\"\"\n+       raise TypeError, \"graphs are mutable, and so therefore are unhashable\"\n+\n \n     def _latex_(self):\n         \"\"\"\n```\n",
+    "body": "From the python docs for __hash__ at http://docs.python.org/ref/customization.html :\n\n\"If a class defines mutable objects and implements a __cmp__() or __eq__() method, it should not implement __hash__(), since the dictionary implementation requires that a key's hash value is immutable (if the object's hash value changes, it will be in the wrong hash bucket).\"\n\nCurrently, a Graph object defines a __cmp__ method, but not a __hash__ method.  This seems to be in accordance with the python docs.  However, I guess we are inheriting the __hash__ method from SageObject, so we should redefine the __hash__ method?\n\nHere's a patch:\n\n```\ndiff -r 36489d2c9a2e sage/graphs/graph.py\n--- a/sage/graphs/graph.py      Tue Oct 16 09:50:59 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 17 10:19:53 2007 -0500\n@@ -359,6 +359,20 @@ class GenericGraph(SageObject):\n             return self._nxg.name\n         else:\n             return repr(self)\n+\n+    def __hash__(self):\n+        \"\"\"\n+       Since graphs are mutable, they should not be hashable, so we return a type error.\n+\n+       EXAMPLE:\n+           sage: hash(Graph())\n+            Traceback (most recent call last):\n+            ...\n+            TypeError: graphs are mutable, and so therefore are unhashable\n+    \n+       \"\"\"\n+       raise TypeError, \"graphs are mutable, and so therefore are unhashable\"\n+\n \n     def _latex_(self):\n         \"\"\"\n```",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
@@ -59,7 +58,6 @@ From the python docs for __hash__ at http://docs.python.org/ref/customization.ht
 Currently, a Graph object defines a __cmp__ method, but not a __hash__ method.  This seems to be in accordance with the python docs.  However, I guess we are inheriting the __hash__ method from SageObject, so we should redefine the __hash__ method?
 
 Here's a patch:
-
 
 ```
 diff -r 36489d2c9a2e sage/graphs/graph.py
@@ -87,7 +85,6 @@ diff -r 36489d2c9a2e sage/graphs/graph.py
      def _latex_(self):
          """
 ```
-
 
 
 
@@ -203,7 +200,7 @@ Defect resolved by attached patch.  Ready to include in 2.8.8!
 archive/issue_comments_005583.json:
 ```json
 {
-    "body": "Please see http://groups.google.com/group/sage-devel/t/72ca87d027fb3e63 regarding the\n\n```\n[tested by ...]\n```\n\nbyline.\n\nCheers,\n\nMichael",
+    "body": "Please see http://groups.google.com/group/sage-devel/t/72ca87d027fb3e63 regarding the\n\n```\n[tested by ...]\n```\nbyline.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-18T10:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
@@ -217,7 +214,6 @@ Please see http://groups.google.com/group/sage-devel/t/72ca87d027fb3e63 regardin
 ```
 [tested by ...]
 ```
-
 byline.
 
 Cheers,

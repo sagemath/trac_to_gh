@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6195
 archive/issue_comments_049377.json:
 ```json
 {
-    "body": "Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by @ncalexan created at 2009-06-15 21:20:46\n\nI don't understand this.\n\nWhy does the first match but the second not?  \n\n```\nsage: ((x+y)).match(w0+w1)\n{$1: x, $0: y}\nsage: ((x+x)).match(w0+w1)\n```\n\n\n\nCan you explain the difference in these behaviours?\n\n```\nsage: ((x+y)^a).match((x+y)^a)\n{}\nsage: print ((x+y)^a).match((x+y)^b)\nNone\n```\n",
+    "body": "Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by @ncalexan created at 2009-06-15 21:20:46\n\nI don't understand this.\n\nWhy does the first match but the second not?  \n\n```\nsage: ((x+y)).match(w0+w1)\n{$1: x, $0: y}\nsage: ((x+x)).match(w0+w1)\n```\n\n\nCan you explain the difference in these behaviours?\n\n```\nsage: ((x+y)^a).match((x+y)^a)\n{}\nsage: print ((x+y)^a).match((x+y)^b)\nNone\n```",
     "created_at": "2009-06-15T21:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ sage: ((x+x)).match(w0+w1)
 ```
 
 
-
 Can you explain the difference in these behaviours?
 
 ```
@@ -74,13 +73,12 @@ None
 
 
 
-
 ---
 
 archive/issue_comments_049378.json:
 ```json
 {
-    "body": "Replying to [comment:1 ncalexan]:\n> Why does the first match but the second not?  \n {{{\n sage: ((x+y)).match(w0+w1)\n {$1: x, $0: y}\n sage: ((x+x)).match(w0+w1)\n }}}\n\n\n```\nsage: t = (x+x); t\n2*x\nsage: t.operator()\n<built-in function mul>\n```\n\n\nYou're looking for an add object, matching doesn't work algebraically in this case. We could start a \"pitfalls of pattern matching in symbolics\" wiki page to document these.\n\n> Can you explain the difference in these behaviours?\n {{{\n sage: ((x+y)<sup>a).match((x+y)</sup>a)\n {}\n sage: print ((x+y)<sup>a).match((x+y)</sup>b)\n None\n }}}\n\nThe first example doesn't have any wildcards. It is a match, so it returns a dictionary, but without any keys. There is no match in the second example, so we return None. As I say in the description, I'm open to suggestions to improve the interface.",
+    "body": "Replying to [comment:1 ncalexan]:\n> Why does the first match but the second not?  \n\n {{{\n sage: ((x+y)).match(w0+w1)\n {$1: x, $0: y}\n sage: ((x+x)).match(w0+w1)\n }}}\n\n```\nsage: t = (x+x); t\n2*x\nsage: t.operator()\n<built-in function mul>\n```\n\nYou're looking for an add object, matching doesn't work algebraically in this case. We could start a \"pitfalls of pattern matching in symbolics\" wiki page to document these.\n\n> Can you explain the difference in these behaviours?\n\n {{{\n sage: ((x+y)<sup>a).match((x+y)</sup>a)\n {}\n sage: print ((x+y)<sup>a).match((x+y)</sup>b)\n None\n }}}\n\nThe first example doesn't have any wildcards. It is a match, so it returns a dictionary, but without any keys. There is no match in the second example, so we return None. As I say in the description, I'm open to suggestions to improve the interface.",
     "created_at": "2009-06-23T21:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
@@ -91,12 +89,12 @@ archive/issue_comments_049378.json:
 
 Replying to [comment:1 ncalexan]:
 > Why does the first match but the second not?  
+
  {{{
  sage: ((x+y)).match(w0+w1)
  {$1: x, $0: y}
  sage: ((x+x)).match(w0+w1)
  }}}
-
 
 ```
 sage: t = (x+x); t
@@ -105,10 +103,10 @@ sage: t.operator()
 <built-in function mul>
 ```
 
-
 You're looking for an add object, matching doesn't work algebraically in this case. We could start a "pitfalls of pattern matching in symbolics" wiki page to document these.
 
 > Can you explain the difference in these behaviours?
+
  {{{
  sage: ((x+y)<sup>a).match((x+y)</sup>a)
  {}

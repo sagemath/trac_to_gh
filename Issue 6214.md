@@ -113,7 +113,7 @@ This will be fixed once #7109 is completed.
 archive/issue_comments_049549.json:
 ```json
 {
-    "body": "Unfortunately this is still incorrect even after #7109.\n\n\n```\nsage: pdata=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0,0],[0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1],[0,0, 1, -1, -1, 1, 0], [0, 0, -1, 1, -1, 1, 0], [-31, -1, -1, -1, -1, -1, -1],[31, 1, 1, 1, 1, 1, 1]] \nsage: p = Polyhedron(ieqs = DATA)\nsage: p.dim()\n6\n```\n\n\nBut its really dimension 5.  If a second polyhedron is compute from the vertices of the one above, it will have the correct dimension.",
+    "body": "Unfortunately this is still incorrect even after #7109.\n\n```\nsage: pdata=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0,0],[0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1],[0,0, 1, -1, -1, 1, 0], [0, 0, -1, 1, -1, 1, 0], [-31, -1, -1, -1, -1, -1, -1],[31, 1, 1, 1, 1, 1, 1]] \nsage: p = Polyhedron(ieqs = DATA)\nsage: p.dim()\n6\n```\n\nBut its really dimension 5.  If a second polyhedron is compute from the vertices of the one above, it will have the correct dimension.",
     "created_at": "2010-02-27T19:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
@@ -124,14 +124,12 @@ archive/issue_comments_049549.json:
 
 Unfortunately this is still incorrect even after #7109.
 
-
 ```
 sage: pdata=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0,0],[0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1],[0,0, 1, -1, -1, 1, 0], [0, 0, -1, 1, -1, 1, 0], [-31, -1, -1, -1, -1, -1, -1],[31, 1, 1, 1, 1, 1, 1]] 
 sage: p = Polyhedron(ieqs = DATA)
 sage: p.dim()
 6
 ```
-
 
 But its really dimension 5.  If a second polyhedron is compute from the vertices of the one above, it will have the correct dimension.
 
@@ -178,7 +176,7 @@ Changing status from new to needs_review.
 archive/issue_comments_049552.json:
 ```json
 {
-    "body": "mhampton: Something is wrong with your example, the two inequalities [-31, -1, -1, -1, -1, -1, -1], [31, 1, 1, 1, 1, 1, 1] mean sum(x_i)+31=0. The other inequalities imply positive x_i, so there is no solution.\n\n\n```\nsage: Polyhedron(ieqs=pdata).dim()\n-1\n```\n\n\nThe original example also works as it should:\n\n\n```\nsage: positive_coords = Polyhedron(ieqs=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1]])\nsage: P = Polyhedron(ieqs=positive_coords.inequalities() + [[0,0,1,-1,-1,1,0], [0,0,-1,1,-1,1,0]], eqns=[[-31,1,1,1,1,1,1]])\nsage: P\nA 5-dimensional polyhedron in QQ^6 defined as the convex hull of 7 vertices.\nsage: P.dim()\n5\nsage: P.Vrepresentation()\n[A vertex at (0, 31/2, 31/2, 0, 0, 0), A vertex at (0, 31/2, 0, 0, 31/2, 0), A vertex at (0, 0, 0, 0, 31, 0), A vertex at (0, 0, 31/2, 0, 31/2, 0), A vertex at (0, 0, 0, 31/2, 31/2, 0), A vertex at (31, 0, 0, 0, 0, 0), A vertex at (0, 0, 0, 0, 0, 31)]\n```\n\n\nI think it is a good example to add to the Polyhdedron documentation, patch is included.\n\nThe patch also adds a Polyhedron.contains(point) and Polyhedron.interior_contains(point) method, as that is probably a common use. Finally, I removed some spurious assignments to docstrings that overwrote previously-defined docstrings. \n\nI'm sorry for bunching patches together, but I think that the other changes are uncontroversial. If anybody feels strongly about that I can disentangle them.",
+    "body": "mhampton: Something is wrong with your example, the two inequalities [-31, -1, -1, -1, -1, -1, -1], [31, 1, 1, 1, 1, 1, 1] mean sum(x_i)+31=0. The other inequalities imply positive x_i, so there is no solution.\n\n```\nsage: Polyhedron(ieqs=pdata).dim()\n-1\n```\n\nThe original example also works as it should:\n\n```\nsage: positive_coords = Polyhedron(ieqs=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1]])\nsage: P = Polyhedron(ieqs=positive_coords.inequalities() + [[0,0,1,-1,-1,1,0], [0,0,-1,1,-1,1,0]], eqns=[[-31,1,1,1,1,1,1]])\nsage: P\nA 5-dimensional polyhedron in QQ^6 defined as the convex hull of 7 vertices.\nsage: P.dim()\n5\nsage: P.Vrepresentation()\n[A vertex at (0, 31/2, 31/2, 0, 0, 0), A vertex at (0, 31/2, 0, 0, 31/2, 0), A vertex at (0, 0, 0, 0, 31, 0), A vertex at (0, 0, 31/2, 0, 31/2, 0), A vertex at (0, 0, 0, 31/2, 31/2, 0), A vertex at (31, 0, 0, 0, 0, 0), A vertex at (0, 0, 0, 0, 0, 31)]\n```\n\nI think it is a good example to add to the Polyhdedron documentation, patch is included.\n\nThe patch also adds a Polyhedron.contains(point) and Polyhedron.interior_contains(point) method, as that is probably a common use. Finally, I removed some spurious assignments to docstrings that overwrote previously-defined docstrings. \n\nI'm sorry for bunching patches together, but I think that the other changes are uncontroversial. If anybody feels strongly about that I can disentangle them.",
     "created_at": "2010-03-11T14:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
@@ -189,15 +187,12 @@ archive/issue_comments_049552.json:
 
 mhampton: Something is wrong with your example, the two inequalities [-31, -1, -1, -1, -1, -1, -1], [31, 1, 1, 1, 1, 1, 1] mean sum(x_i)+31=0. The other inequalities imply positive x_i, so there is no solution.
 
-
 ```
 sage: Polyhedron(ieqs=pdata).dim()
 -1
 ```
 
-
 The original example also works as it should:
-
 
 ```
 sage: positive_coords = Polyhedron(ieqs=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1]])
@@ -209,7 +204,6 @@ sage: P.dim()
 sage: P.Vrepresentation()
 [A vertex at (0, 31/2, 31/2, 0, 0, 0), A vertex at (0, 31/2, 0, 0, 31/2, 0), A vertex at (0, 0, 0, 0, 31, 0), A vertex at (0, 0, 31/2, 0, 31/2, 0), A vertex at (0, 0, 0, 31/2, 31/2, 0), A vertex at (31, 0, 0, 0, 0, 0), A vertex at (0, 0, 0, 0, 0, 31)]
 ```
-
 
 I think it is a good example to add to the Polyhdedron documentation, patch is included.
 

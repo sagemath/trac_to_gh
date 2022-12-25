@@ -3,7 +3,7 @@
 archive/issues_009233.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\n\nsage: var('n')\nn\nsage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)\n...\n\nTypeError: unable to make sense of Maxima expression '-(22*log(2)-2*psi[0](7/8)-4*psi[0](5/8)+16*psi[0](1/8)-pi+10*euler_gamma)/32' in Sage\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9233\n\n",
+    "body": "Assignee: @burcin\n\n```\n\nsage: var('n')\nn\nsage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)\n...\n\nTypeError: unable to make sense of Maxima expression '-(22*log(2)-2*psi[0](7/8)-4*psi[0](5/8)+16*psi[0](1/8)-pi+10*euler_gamma)/32' in Sage\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9233\n\n",
     "created_at": "2010-06-13T23:36:31Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_009233.json:
 ```
 Assignee: @burcin
 
-
 ```
 
 sage: var('n')
@@ -28,7 +27,6 @@ sage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)
 
 TypeError: unable to make sense of Maxima expression '-(22*log(2)-2*psi[0](7/8)-4*psi[0](5/8)+16*psi[0](1/8)-pi+10*euler_gamma)/32' in Sage
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9233
 
@@ -59,7 +57,7 @@ This is probably a duplicate of #9217.
 archive/issue_comments_086535.json:
 ```json
 {
-    "body": "Indeed it is.\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: var('n')\nn\nsage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)\n1/32*pi - 5/16*euler_gamma - 1/2*psi(1/8) + 1/8*psi(5/8) + 1/16*psi(7/8) - 11/16*log(2)\n```\n",
+    "body": "Indeed it is.\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: var('n')\nn\nsage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)\n1/32*pi - 5/16*euler_gamma - 1/2*psi(1/8) + 1/8*psi(5/8) + 1/16*psi(7/8) - 11/16*log(2)\n```",
     "created_at": "2010-06-14T00:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9233",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ archive/issue_comments_086535.json:
 ```
 
 Indeed it is.
-
 
 ```
 
@@ -85,7 +82,6 @@ n
 sage: sum((4/(8*n+1)-2/(8*n+4)-1/(8*n+5)-1/(16*n+12)-1/(16*n+14)), n, 0,oo)
 1/32*pi - 5/16*euler_gamma - 1/2*psi(1/8) + 1/8*psi(5/8) + 1/16*psi(7/8) - 11/16*log(2)
 ```
-
 
 
 

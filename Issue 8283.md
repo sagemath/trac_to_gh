@@ -179,7 +179,7 @@ archive/issue_events_019822.json:
 archive/issue_comments_073215.json:
 ```json
 {
-    "body": "Attachment [trac_8283-reviewer.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-reviewer.patch) by mvngu created at 2010-03-03 13:38:24\n\nReplying to [comment:2 wdj]:\n> Okay with me. Minh, what do you think?\n\nI agree with Yann's rewrite. It's much more compact than the previous version. However, I have attached the reviewer patch [trac_8283-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8283/trac_8283-reviewer.patch), whose changes include:\n\n* Remove the import statements\n {{{\nfrom sage.rings.arith import factor\nfrom sage.structure.element import generic_power\n }}}\n These import statements are no longer required due to Yann's rewrite of the Carmichael lambda function.\n* Move the import statement\n {{{\nimport sage.rings.integer\n }}}\n to the module preamble, so that it now reads\n {{{\nfrom sage.rings.integer import Integer\n }}}\n This has the effect of importing only what is required, i.e. the class `Integer`, instead of importing the whole module `sage.rings.integer`.\n* Some typo fixes.\n* Clean up \u00e0 la [PEP8](http://www.python.org/dev/peps/pep-0008/).\n* Removing a redundant `lambda` construct by replacing\n {{{\nlambda x: int(x)\n }}}\n with the more compact\n {{{\nint\n }}}\n\nOnly my patch needs review by anyone but me. If it's OK, then the whole ticket gets a positive review.",
+    "body": "Attachment [trac_8283-reviewer.patch](tarball://root/attachments/some-uuid/ticket8283/trac_8283-reviewer.patch) by mvngu created at 2010-03-03 13:38:24\n\nReplying to [comment:2 wdj]:\n> Okay with me. Minh, what do you think?\n\n\nI agree with Yann's rewrite. It's much more compact than the previous version. However, I have attached the reviewer patch [trac_8283-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8283/trac_8283-reviewer.patch), whose changes include:\n\n* Remove the import statements\n {{{\nfrom sage.rings.arith import factor\nfrom sage.structure.element import generic_power\n }}}\n These import statements are no longer required due to Yann's rewrite of the Carmichael lambda function.\n* Move the import statement\n {{{\nimport sage.rings.integer\n }}}\n to the module preamble, so that it now reads\n {{{\nfrom sage.rings.integer import Integer\n }}}\n This has the effect of importing only what is required, i.e. the class `Integer`, instead of importing the whole module `sage.rings.integer`.\n* Some typo fixes.\n* Clean up \u00e0 la [PEP8](http://www.python.org/dev/peps/pep-0008/).\n* Removing a redundant `lambda` construct by replacing\n {{{\nlambda x: int(x)\n }}}\n with the more compact\n {{{\nint\n }}}\n\nOnly my patch needs review by anyone but me. If it's OK, then the whole ticket gets a positive review.",
     "created_at": "2010-03-03T13:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
@@ -192,6 +192,7 @@ Attachment [trac_8283-reviewer.patch](tarball://root/attachments/some-uuid/ticke
 
 Replying to [comment:2 wdj]:
 > Okay with me. Minh, what do you think?
+
 
 I agree with Yann's rewrite. It's much more compact than the previous version. However, I have attached the reviewer patch [trac_8283-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8283/trac_8283-reviewer.patch), whose changes include:
 
@@ -266,7 +267,7 @@ I read this over - looks good. I also installed it on top of the previous patch 
 archive/issue_comments_073218.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> I read this over - looks good. I also installed it on top of the previous patch - passed sage -t devel/sage/sage/crypto/util.py. Is that enough, or it sage -testall necessary?\n\nRunning all doctests in the cryptography module subdirectory would be nice. Something like:\n\n```\n./sage -t -long devel/sage-main/sage/crypto/\n```\n\nThe module `sage/crypto/util.py` is at least used by the Blum-Goldwasser class under `sage/crypto/public_key/`. So naturally one would like to know how the above two patches would affect any other modules under the cryptography subdirectory.",
+    "body": "Replying to [comment:4 wdj]:\n> I read this over - looks good. I also installed it on top of the previous patch - passed sage -t devel/sage/sage/crypto/util.py. Is that enough, or it sage -testall necessary?\n\n\nRunning all doctests in the cryptography module subdirectory would be nice. Something like:\n\n```\n./sage -t -long devel/sage-main/sage/crypto/\n```\nThe module `sage/crypto/util.py` is at least used by the Blum-Goldwasser class under `sage/crypto/public_key/`. So naturally one would like to know how the above two patches would affect any other modules under the cryptography subdirectory.",
     "created_at": "2010-03-04T01:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
@@ -278,12 +279,12 @@ archive/issue_comments_073218.json:
 Replying to [comment:4 wdj]:
 > I read this over - looks good. I also installed it on top of the previous patch - passed sage -t devel/sage/sage/crypto/util.py. Is that enough, or it sage -testall necessary?
 
+
 Running all doctests in the cryptography module subdirectory would be nice. Something like:
 
 ```
 ./sage -t -long devel/sage-main/sage/crypto/
 ```
-
 The module `sage/crypto/util.py` is at least used by the Blum-Goldwasser class under `sage/crypto/public_key/`. So naturally one would like to know how the above two patches would affect any other modules under the cryptography subdirectory.
 
 

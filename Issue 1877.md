@@ -3,7 +3,7 @@
 archive/issues_001877.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nboom!\n```\n\n\nThe problem is that both ranges use the variable x.  The fix is to make\nsure that the two variables are different and if not raise an exception (do this also in parametric_plot3d). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1877\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nboom!\n```\n\nThe problem is that both ranges use the variable x.  The fix is to make\nsure that the two variables are different and if not raise an exception (do this also in parametric_plot3d). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1877\n\n",
     "created_at": "2008-01-21T06:40:06Z",
     "labels": [
         "component: graphics",
@@ -18,13 +18,11 @@ archive/issues_001877.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: var('x,y')
 sage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))
 boom!
 ```
-
 
 The problem is that both ranges use the variable x.  The fix is to make
 sure that the two variables are different and if not raise an exception (do this also in parametric_plot3d). 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1877
 archive/issue_comments_011846.json:
 ```json
 {
-    "body": "Attachment [1877fix.hg](tarball://root/attachments/some-uuid/ticket1877/1877fix.hg) by thomag created at 2008-08-26 15:52:31\n\nplot3d and parametric_plot3d should fail a tiny bit more gracefully if they're given two ranges using the same variable:\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nValueError: If the ranges in the argument of plot3d are 3-tuples, then the first components of those 3-tuples must be different.\nsage: var('u,v')\nsage: parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, 2*pi), (u, -pi, pi))\nValueError: If the ranges in the argument of parametric_plot3d are both 3-tuples, then the first components of those 3-tuples must be different.\n```\n",
+    "body": "Attachment [1877fix.hg](tarball://root/attachments/some-uuid/ticket1877/1877fix.hg) by thomag created at 2008-08-26 15:52:31\n\nplot3d and parametric_plot3d should fail a tiny bit more gracefully if they're given two ranges using the same variable:\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nValueError: If the ranges in the argument of plot3d are 3-tuples, then the first components of those 3-tuples must be different.\nsage: var('u,v')\nsage: parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, 2*pi), (u, -pi, pi))\nValueError: If the ranges in the argument of parametric_plot3d are both 3-tuples, then the first components of those 3-tuples must be different.\n```",
     "created_at": "2008-08-26T15:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -62,7 +60,6 @@ sage: var('u,v')
 sage: parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, 2*pi), (u, -pi, pi))
 ValueError: If the ranges in the argument of parametric_plot3d are both 3-tuples, then the first components of those 3-tuples must be different.
 ```
-
 
 
 

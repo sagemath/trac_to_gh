@@ -71,7 +71,7 @@ archive/issue_events_012448.json:
 archive/issue_comments_041056.json:
 ```json
 {
-    "body": "This is also relevant (from David Kirkby):\n\n```\nLooking at the top level README.txt in sage-3.4.2.alpha0, there are a\ncouple of things about Solaris of note. The first is minor - the second\nless so.\n\n1) At one point its called Solaris, and another SOLARIS. After finding\n'Solaris' at the top, I did a search (using vi as the editor) and found\nlittle reference to it. Later I see the operating system referred to as\nSOLARIS. It might be worth using the same case, or at least referring to\nit as 'Solaris' in the 'SOLARIS' section, in case someone does a\ncase-sensitive search.\n\n2) More importantly, one reads:\n-----------\n    SOLARIS:\n      It is reportedly possible, but not recommended yet (see below).\n      A fully supported port is planned.\n-----------\n\nBut there is NOTHING below that point in the README.txt about Solaris -\ndespite the \"see below\" in there.\n\nIt would be worth either putting what information was planned about\nSolaris in the README.txt, or making a 'Solaris.txt' with what\ninformation is needed. Obviously a link to the tool chain would be worth\nputting. \n```\n",
+    "body": "This is also relevant (from David Kirkby):\n\n```\nLooking at the top level README.txt in sage-3.4.2.alpha0, there are a\ncouple of things about Solaris of note. The first is minor - the second\nless so.\n\n1) At one point its called Solaris, and another SOLARIS. After finding\n'Solaris' at the top, I did a search (using vi as the editor) and found\nlittle reference to it. Later I see the operating system referred to as\nSOLARIS. It might be worth using the same case, or at least referring to\nit as 'Solaris' in the 'SOLARIS' section, in case someone does a\ncase-sensitive search.\n\n2) More importantly, one reads:\n-----------\n    SOLARIS:\n      It is reportedly possible, but not recommended yet (see below).\n      A fully supported port is planned.\n-----------\n\nBut there is NOTHING below that point in the README.txt about Solaris -\ndespite the \"see below\" in there.\n\nIt would be worth either putting what information was planned about\nSolaris in the README.txt, or making a 'Solaris.txt' with what\ninformation is needed. Obviously a link to the tool chain would be worth\nputting. \n```",
     "created_at": "2009-04-29T03:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5339",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ putting.
 
 
 
-
 ---
 
 archive/issue_comments_041057.json:
@@ -136,7 +135,7 @@ Should I close this as a "duplicate" of #9487?
 archive/issue_comments_041058.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Should I close this as a \"duplicate\" of #9487?\n\nYes, that seems reasonable. Technically #9487 is a duplicate of this, but there's more useful information on #9487. This has also at least partially been fixed by another ticket, so I would close it. \n\nDave",
+    "body": "Replying to [comment:3 mpatel]:\n> Should I close this as a \"duplicate\" of #9487?\n\n\nYes, that seems reasonable. Technically #9487 is a duplicate of this, but there's more useful information on #9487. This has also at least partially been fixed by another ticket, so I would close it. \n\nDave",
     "created_at": "2010-08-07T10:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5339",
     "type": "issue_comment",
@@ -147,6 +146,7 @@ archive/issue_comments_041058.json:
 
 Replying to [comment:3 mpatel]:
 > Should I close this as a "duplicate" of #9487?
+
 
 Yes, that seems reasonable. Technically #9487 is a duplicate of this, but there's more useful information on #9487. This has also at least partially been fixed by another ticket, so I would close it. 
 

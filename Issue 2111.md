@@ -3,7 +3,7 @@
 archive/issues_002111.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @zimmermann6\n\nThis now works (but is very very slow):\n\n\n```\nsage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nsage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()\n[x + 1431655773*y^4, y^12 + 54*y^2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2111\n\n",
+    "body": "Assignee: @malb\n\nCC:  @zimmermann6\n\nThis now works (but is very very slow):\n\n```\nsage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nsage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()\n[x + 1431655773*y^4, y^12 + 54*y^2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2111\n\n",
     "created_at": "2008-02-08T12:17:23Z",
     "labels": [
         "component: commutative algebra",
@@ -22,13 +22,11 @@ CC:  @zimmermann6
 
 This now works (but is very very slow):
 
-
 ```
 sage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')
 sage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()
 [x + 1431655773*y^4, y^12 + 54*y^2]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2111
 

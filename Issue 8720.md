@@ -3,7 +3,7 @@
 archive/issues_008720.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @mwhansen\n\nLook at the inconsistency:\n\n\n```\nsage: RR(0)\n0.000000000000000\nsage: RDF(0)\n0.0\n```\n\n\nversus\n\n\n```\nsage: CDF(0)\n0\nsage: CC(0)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8720\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @mwhansen\n\nLook at the inconsistency:\n\n```\nsage: RR(0)\n0.000000000000000\nsage: RDF(0)\n0.0\n```\n\nversus\n\n```\nsage: CDF(0)\n0\nsage: CC(0)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8720\n\n",
     "created_at": "2010-04-20T02:42:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ CC:  @zimmermann6 @mwhansen
 
 Look at the inconsistency:
 
-
 ```
 sage: RR(0)
 0.000000000000000
@@ -30,9 +29,7 @@ sage: RDF(0)
 0.0
 ```
 
-
 versus
-
 
 ```
 sage: CDF(0)
@@ -40,7 +37,6 @@ sage: CDF(0)
 sage: CC(0)
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8720
 
@@ -73,7 +69,7 @@ CCing zimmerma since he may be interested in reviewing this.
 archive/issue_comments_079473.json:
 ```json
 {
-    "body": "since I was asked to review this ticket, I first notice that some doctests do not pass any more,\nfor example:\n\n```\nsage -t  gsl/dft.py\n**********************************************************************\nFile \"/usr/local/sage-4.3.5-core2/devel/sage-8720/sage/gsl/dft.py\", line 528:\n    sage: t = s.fft(); t\nExpected:\n    Indexed sequence: [5.00000000000000, 0, 0, 0, 0]\n     indexed by [0, 1, 2, 3, 4]\nGot:\n    Indexed sequence: [5.00000000000000, 0.000000000000000, 0.000000000000000, \\\n0.000000000000000, 0.000000000000000]\n        indexed by [0, 1, 2, 3, 4]\n```\n\nthus some more work is needed. Please check all doctests still pass.",
+    "body": "since I was asked to review this ticket, I first notice that some doctests do not pass any more,\nfor example:\n\n```\nsage -t  gsl/dft.py\n**********************************************************************\nFile \"/usr/local/sage-4.3.5-core2/devel/sage-8720/sage/gsl/dft.py\", line 528:\n    sage: t = s.fft(); t\nExpected:\n    Indexed sequence: [5.00000000000000, 0, 0, 0, 0]\n     indexed by [0, 1, 2, 3, 4]\nGot:\n    Indexed sequence: [5.00000000000000, 0.000000000000000, 0.000000000000000, \\\n0.000000000000000, 0.000000000000000]\n        indexed by [0, 1, 2, 3, 4]\n```\nthus some more work is needed. Please check all doctests still pass.",
     "created_at": "2010-04-20T10:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -98,7 +94,6 @@ Got:
 0.000000000000000, 0.000000000000000]
         indexed by [0, 1, 2, 3, 4]
 ```
-
 thus some more work is needed. Please check all doctests still pass.
 
 
@@ -200,7 +195,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079479.json:
 ```json
 {
-    "body": "note that a consequence of that ticket is that coefficients 0 that were not displayed in Taylor\nseries are now displayed, for example:\n\n```\nsage: E = EllipticCurve('37a')\nsage: L = E.lseries().dokchitser()\nsage: L.taylor_series(1,4)\n0.0000000000000 + 0.305999773834052*z + 0.186547797268162*z^2 - 0.136791463097188*z^3 + O(z^4)\n```\n\n(Before this ticket, the leading `0.000000000000000` was not printed.)\n\nI find it good, since those 0.0 values can come from numerical cancellation.\n\nPaul",
+    "body": "note that a consequence of that ticket is that coefficients 0 that were not displayed in Taylor\nseries are now displayed, for example:\n\n```\nsage: E = EllipticCurve('37a')\nsage: L = E.lseries().dokchitser()\nsage: L.taylor_series(1,4)\n0.0000000000000 + 0.305999773834052*z + 0.186547797268162*z^2 - 0.136791463097188*z^3 + O(z^4)\n```\n(Before this ticket, the leading `0.000000000000000` was not printed.)\n\nI find it good, since those 0.0 values can come from numerical cancellation.\n\nPaul",
     "created_at": "2011-12-19T11:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -218,7 +213,6 @@ sage: L = E.lseries().dokchitser()
 sage: L.taylor_series(1,4)
 0.0000000000000 + 0.305999773834052*z + 0.186547797268162*z^2 - 0.136791463097188*z^3 + O(z^4)
 ```
-
 (Before this ticket, the leading `0.000000000000000` was not printed.)
 
 I find it good, since those 0.0 values can come from numerical cancellation.
@@ -270,7 +264,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079482.json:
 ```json
 {
-    "body": "> all tests work on top of Sage 4.7.2, I give a positive review.\nJust doing the radio button for this.  Nice teamwork on this!",
+    "body": "> all tests work on top of Sage 4.7.2, I give a positive review.\n\nJust doing the radio button for this.  Nice teamwork on this!",
     "created_at": "2011-12-19T17:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -280,6 +274,7 @@ archive/issue_comments_079482.json:
 ```
 
 > all tests work on top of Sage 4.7.2, I give a positive review.
+
 Just doing the radio button for this.  Nice teamwork on this!
 
 
@@ -307,7 +302,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_079484.json:
 ```json
 {
-    "body": "A few more doctests need to be fixed:\n\n```\nsage -t  -force_lib devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7987:\n    sage: M.round(6).zero_at(10^-6)\nExpected:\n    [             -1.528503                      0                      0]\n    [  0.459974 - 0.40061*I              -1.741233                      0]\n    [-0.934304 + 0.148868*I   0.54833 + 0.073202*I              -0.550725]\nGot:\n    [             -1.528503                    0.0                    0.0]\n    [  0.459974 - 0.40061*I              -1.741233                    0.0]\n    [-0.934304 + 0.148868*I   0.54833 + 0.073202*I              -0.550725]\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7991:\n    sage: (A - M*G).zero_at(10^-12)\nExpected:\n    [0 0 0]\n    [0 0 0]\n    [0 0 0]\nGot:\n    [0.0 0.0 0.0]\n    [0.0 0.0 0.0]\n    [0.0 0.0 0.0]\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7995:\n    sage: (G*G.conjugate().transpose()).zero_at(10^-12)\nExpected:\n    [1.0   0   0]\n    [  0 1.0   0]\n    [  0   0 1.0]\nGot:\n    [1.0 0.0 0.0]\n    [0.0 1.0 0.0]\n    [0.0 0.0 1.0]\n**********************************************************************\n\n```\n",
+    "body": "A few more doctests need to be fixed:\n\n```\nsage -t  -force_lib devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7987:\n    sage: M.round(6).zero_at(10^-6)\nExpected:\n    [             -1.528503                      0                      0]\n    [  0.459974 - 0.40061*I              -1.741233                      0]\n    [-0.934304 + 0.148868*I   0.54833 + 0.073202*I              -0.550725]\nGot:\n    [             -1.528503                    0.0                    0.0]\n    [  0.459974 - 0.40061*I              -1.741233                    0.0]\n    [-0.934304 + 0.148868*I   0.54833 + 0.073202*I              -0.550725]\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7991:\n    sage: (A - M*G).zero_at(10^-12)\nExpected:\n    [0 0 0]\n    [0 0 0]\n    [0 0 0]\nGot:\n    [0.0 0.0 0.0]\n    [0.0 0.0 0.0]\n    [0.0 0.0 0.0]\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha6/devel/sage-main/sage/matrix/matrix2.pyx\", line 7995:\n    sage: (G*G.conjugate().transpose()).zero_at(10^-12)\nExpected:\n    [1.0   0   0]\n    [  0 1.0   0]\n    [  0   0 1.0]\nGot:\n    [1.0 0.0 0.0]\n    [0.0 1.0 0.0]\n    [0.0 0.0 1.0]\n**********************************************************************\n\n```",
     "created_at": "2011-12-23T16:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -359,7 +354,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_079485.json:
@@ -386,7 +380,7 @@ Paul
 archive/issue_comments_079486.json:
 ```json
 {
-    "body": "Replying to [comment:11 zimmerma]:\n> sorry, but there is no such doctest in 4.7.2. There must be some interaction with some\n> other patch which you included. My positive review was valid for 4.7.2 only.\n\nProbably Jeroen is referring to doctests in the latest alpha, on which (for better or for worse) patches need to be based on.",
+    "body": "Replying to [comment:11 zimmerma]:\n> sorry, but there is no such doctest in 4.7.2. There must be some interaction with some\n> other patch which you included. My positive review was valid for 4.7.2 only.\n\n\nProbably Jeroen is referring to doctests in the latest alpha, on which (for better or for worse) patches need to be based on.",
     "created_at": "2011-12-23T16:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -398,6 +392,7 @@ archive/issue_comments_079486.json:
 Replying to [comment:11 zimmerma]:
 > sorry, but there is no such doctest in 4.7.2. There must be some interaction with some
 > other patch which you included. My positive review was valid for 4.7.2 only.
+
 
 Probably Jeroen is referring to doctests in the latest alpha, on which (for better or for worse) patches need to be based on.
 
@@ -462,7 +457,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079490.json:
 ```json
 {
-    "body": "Note that the second patch applies with a little fuzz.\n\n```\n$ hg qpush\napplying trac_8720-doctests.patch\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #1 succeeded at 189 with fuzz 2 (offset 9 lines).\nnow at: trac_8720-doctests.patch\n```\n\nI'll run tests and check.  I should have set `sage -b` to do parallel building",
+    "body": "Note that the second patch applies with a little fuzz.\n\n```\n$ hg qpush\napplying trac_8720-doctests.patch\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #1 succeeded at 189 with fuzz 2 (offset 9 lines).\nnow at: trac_8720-doctests.patch\n```\nI'll run tests and check.  I should have set `sage -b` to do parallel building",
     "created_at": "2012-02-08T01:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -480,7 +475,6 @@ patching file sage/matrix/matrix_double_dense.pyx
 Hunk #1 succeeded at 189 with fuzz 2 (offset 9 lines).
 now at: trac_8720-doctests.patch
 ```
-
 I'll run tests and check.  I should have set `sage -b` to do parallel building
 
 
@@ -534,7 +528,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079493.json:
 ```json
 {
-    "body": "\n```\n\n$ ../../sage -tp 4 -long sage/lfunctions/lcalc.py \nGlobal iterations: 1\nFile iterations: 1\nUsing long cached timings to run longest doctests first.\nDoctesting 1 file using 1 thread\nsage -t -long devel/sage-main/sage/lfunctions/lcalc.py\n  ***   Warning: new stack size = 1028976 (0.981 Mbytes).\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n  ***   Warning: new stack size = 1001472 (0.955 Mbytes).\n**********************************************************************\nFile \"/Users/.../sage-5.0.beta2/devel/sage-main/sage/lfunctions/lcalc.py\", line 229:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    [(0.000000000, 0.209951303), (0.500000000, -2.92081722e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\nGot:\n    [(0.000000000, 0.209951303), (0.500000000, -2.92081723e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/.../.sage/tmp/new_host_2.home-37994/lcalc_37997.py\n\t [3.0 s]\n```\n\nThe difference was in the e-16 one. I think there is a reason that one used to be `-...e-16` in the old doctest.  I'm going to ignore the stack size warnings, since they don't seem to have affected the outcome, though I'm sure they're not ideal.\n\nAll else is fine!",
+    "body": "```\n\n$ ../../sage -tp 4 -long sage/lfunctions/lcalc.py \nGlobal iterations: 1\nFile iterations: 1\nUsing long cached timings to run longest doctests first.\nDoctesting 1 file using 1 thread\nsage -t -long devel/sage-main/sage/lfunctions/lcalc.py\n  ***   Warning: new stack size = 1028976 (0.981 Mbytes).\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n  ***   Warning: new stack size = 1001472 (0.955 Mbytes).\n**********************************************************************\nFile \"/Users/.../sage-5.0.beta2/devel/sage-main/sage/lfunctions/lcalc.py\", line 229:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    [(0.000000000, 0.209951303), (0.500000000, -2.92081722e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\nGot:\n    [(0.000000000, 0.209951303), (0.500000000, -2.92081723e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/.../.sage/tmp/new_host_2.home-37994/lcalc_37997.py\n\t [3.0 s]\n```\nThe difference was in the e-16 one. I think there is a reason that one used to be `-...e-16` in the old doctest.  I'm going to ignore the stack size warnings, since they don't seem to have affected the outcome, though I'm sure they're not ideal.\n\nAll else is fine!",
     "created_at": "2012-02-08T03:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -542,7 +536,6 @@ archive/issue_comments_079493.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-
 
 ```
 
@@ -569,7 +562,6 @@ Got:
 For whitespace errors, see the file /Users/.../.sage/tmp/new_host_2.home-37994/lcalc_37997.py
 	 [3.0 s]
 ```
-
 The difference was in the e-16 one. I think there is a reason that one used to be `-...e-16` in the old doctest.  I'm going to ignore the stack size warnings, since they don't seem to have affected the outcome, though I'm sure they're not ideal.
 
 All else is fine!
@@ -599,7 +591,7 @@ Can you double-check to make sure that test was passing before the patches?  It 
 archive/issue_comments_079495.json:
 ```json
 {
-    "body": "> Can you double-check to make sure that test was passing before the patches?  It seems odd to me that error would have been triggered by this patch.\nNotice that the test now fails because we used to ignore all digits before the exponent, not because of the stack thing - the doc even points out that warnings might happen, it's no big deal for now.\n\n```\n        Sometimes warnings are printed (by lcalc) when this command is\n        run::\n        \n            sage: E = EllipticCurve('389a')\n            sage: E.lseries().values_along_line(0.5, 3, 5)\n            [(0, 0.209951303),\n             (0.500000000, -...e-16),\n             (1.00000000, 0.133768433),\n             (1.50000000, 0.360092864),\n             (2.00000000, 0.552975867)]\n```\n\nHere is 5.0.beta1:\n\n```\n$ ./sage -t -long devel/sage/sage/lfunctions/lcalc.py \nsage -t -long \"devel/sage/sage/lfunctions/lcalc.py\"         \n\t [20.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.5 seconds\n<snip>\nsage:             sage: E = EllipticCurve('389a')\nsage:             sage: E.lseries().values_along_line(0.5, 3, 5)\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n[(0, 0.209951303), (0.500000000, -2.92081723e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n```\n\nso we can see that all that has to be done is go back to the previous doctest for that one number (not even the whole list).",
+    "body": "> Can you double-check to make sure that test was passing before the patches?  It seems odd to me that error would have been triggered by this patch.\n\nNotice that the test now fails because we used to ignore all digits before the exponent, not because of the stack thing - the doc even points out that warnings might happen, it's no big deal for now.\n\n```\n        Sometimes warnings are printed (by lcalc) when this command is\n        run::\n        \n            sage: E = EllipticCurve('389a')\n            sage: E.lseries().values_along_line(0.5, 3, 5)\n            [(0, 0.209951303),\n             (0.500000000, -...e-16),\n             (1.00000000, 0.133768433),\n             (1.50000000, 0.360092864),\n             (2.00000000, 0.552975867)]\n```\nHere is 5.0.beta1:\n\n```\n$ ./sage -t -long devel/sage/sage/lfunctions/lcalc.py \nsage -t -long \"devel/sage/sage/lfunctions/lcalc.py\"         \n\t [20.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.5 seconds\n<snip>\nsage:             sage: E = EllipticCurve('389a')\nsage:             sage: E.lseries().values_along_line(0.5, 3, 5)\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n[(0, 0.209951303), (0.500000000, -2.92081723e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]\n```\nso we can see that all that has to be done is go back to the previous doctest for that one number (not even the whole list).",
     "created_at": "2012-02-08T03:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -609,6 +601,7 @@ archive/issue_comments_079495.json:
 ```
 
 > Can you double-check to make sure that test was passing before the patches?  It seems odd to me that error would have been triggered by this patch.
+
 Notice that the test now fails because we used to ignore all digits before the exponent, not because of the stack thing - the doc even points out that warnings might happen, it's no big deal for now.
 
 ```
@@ -623,7 +616,6 @@ Notice that the test now fails because we used to ignore all digits before the e
              (1.50000000, 0.360092864),
              (2.00000000, 0.552975867)]
 ```
-
 Here is 5.0.beta1:
 
 ```
@@ -640,7 +632,6 @@ sage:             sage: E.lseries().values_along_line(0.5, 3, 5)
   ***   Warning: new stack size = 1003360 (0.957 Mbytes).
 [(0, 0.209951303), (0.500000000, -2.92081723e-16), (1.00000000, 0.133768433), (1.50000000, 0.360092864), (2.00000000, 0.552975867)]
 ```
-
 so we can see that all that has to be done is go back to the previous doctest for that one number (not even the whole list).
 
 
@@ -830,7 +821,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079506.json:
 ```json
 {
-    "body": "The beta11 patchbot brings up some doctest failures:\n\n```\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sage-8720/sage/plot/hyperbolic_triangle.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/plot/hyperbolic_arc.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/matrix/matrix_space.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/matrix/constructor.py # 1 doctests failed\n```\n",
+    "body": "The beta11 patchbot brings up some doctest failures:\n\n```\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sage-8720/sage/plot/hyperbolic_triangle.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/plot/hyperbolic_arc.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/matrix/matrix_space.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage-8720/sage/matrix/constructor.py # 1 doctests failed\n```",
     "created_at": "2012-03-30T07:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8720",
     "type": "issue_comment",
@@ -849,7 +840,6 @@ The following tests failed:
 	sage -t  -force_lib devel/sage-8720/sage/matrix/matrix_space.py # 1 doctests failed
 	sage -t  -force_lib devel/sage-8720/sage/matrix/constructor.py # 1 doctests failed
 ```
-
 
 
 

@@ -49,7 +49,7 @@ Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_048793.json:
 ```json
 {
-    "body": "Before\n\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 3.61 \u00b5s per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 3.99 \u00b5s per loop\n```\n\n\nAfter\n\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 230 ns per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 256 ns per loop\n```\n",
+    "body": "Before\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 3.61 \u00b5s per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 3.99 \u00b5s per loop\n```\n\nAfter\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 230 ns per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 256 ns per loop\n```",
     "created_at": "2009-05-22T00:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_048793.json:
 
 Before
 
-
 ```
 sage: a = 123; b = 11; timeit("a << b")
 625 loops, best of 3: 3.61 µs per loop
@@ -68,9 +67,7 @@ sage: a = 123; b = int(11); timeit("a << b")
 625 loops, best of 3: 3.99 µs per loop
 ```
 
-
 After
-
 
 ```
 sage: a = 123; b = 11; timeit("a << b")
@@ -78,7 +75,6 @@ sage: a = 123; b = 11; timeit("a << b")
 sage: a = 123; b = int(11); timeit("a << b")
 625 loops, best of 3: 256 ns per loop
 ```
-
 
 
 
@@ -107,7 +103,7 @@ This patch is important for mpmath performance (#6196). Time for sage.libs.mpmat
 archive/issue_comments_048795.json:
 ```json
 {
-    "body": "I'm definitely happy with this patch. As Robert points out in the patch, there are a few inconsistencies in some of the `integer.pyx` code -- for instance, there are the incongruously named `_lshift` and `_rshift_`, which are basically the same and are barely used. I've removed them, cleaned up the bits of code that used them, and made one or two (morally) small changes to Robert's `_shift_helper` code, such as some comments and more error checking.\n\nInterestingly, I'm having some funny results using `timeit` vs. `%timeit`, namely that `timeit` tends to be inconsistent on timings this tiny:\n\n```\nsage: a = 123 ; b = 11\nsage: timeit(\"a << b\")\n625 loops, best of 3: 200 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 323 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 371 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 370 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 368 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 418 ns per loop\n```\n\n\nAs you can see, it's generally around `368 ns`, but the timings have several outliers. But IPython `%timeit` thinks the fast outlier is the **correct** value!\n\n\n```\nsage: %timeit a << b\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a << b\n10000000 loops, best of 3: 187 ns per loop\n```\n\n\nI tend to trust it, because it's running a ton of loops -- maybe the fact that my computer is doing several things at once is disturbing `timeit`?\n\nAnyway, new patch attached. Robert, if you could look over the changes, I'd say this is a positive review. It seems to give me a nominally faster (around `5%`) timing than the previous version, but that's probably just my computer being weird.",
+    "body": "I'm definitely happy with this patch. As Robert points out in the patch, there are a few inconsistencies in some of the `integer.pyx` code -- for instance, there are the incongruously named `_lshift` and `_rshift_`, which are basically the same and are barely used. I've removed them, cleaned up the bits of code that used them, and made one or two (morally) small changes to Robert's `_shift_helper` code, such as some comments and more error checking.\n\nInterestingly, I'm having some funny results using `timeit` vs. `%timeit`, namely that `timeit` tends to be inconsistent on timings this tiny:\n\n```\nsage: a = 123 ; b = 11\nsage: timeit(\"a << b\")\n625 loops, best of 3: 200 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 323 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 371 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 370 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 368 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 418 ns per loop\n```\n\nAs you can see, it's generally around `368 ns`, but the timings have several outliers. But IPython `%timeit` thinks the fast outlier is the **correct** value!\n\n```\nsage: %timeit a << b\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a << b\n10000000 loops, best of 3: 187 ns per loop\n```\n\nI tend to trust it, because it's running a ton of loops -- maybe the fact that my computer is doing several things at once is disturbing `timeit`?\n\nAnyway, new patch attached. Robert, if you could look over the changes, I'd say this is a positive review. It seems to give me a nominally faster (around `5%`) timing than the previous version, but that's probably just my computer being weird.",
     "created_at": "2009-06-04T09:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -140,9 +136,7 @@ sage: timeit("a << b")
 625 loops, best of 3: 418 ns per loop
 ```
 
-
 As you can see, it's generally around `368 ns`, but the timings have several outliers. But IPython `%timeit` thinks the fast outlier is the **correct** value!
-
 
 ```
 sage: %timeit a << b
@@ -150,7 +144,6 @@ sage: %timeit a << b
 sage: %timeit a << b
 10000000 loops, best of 3: 187 ns per loop
 ```
-
 
 I tend to trust it, because it's running a ton of loops -- maybe the fact that my computer is doing several things at once is disturbing `timeit`?
 
@@ -163,7 +156,7 @@ Anyway, new patch attached. Robert, if you could look over the changes, I'd say 
 archive/issue_comments_048796.json:
 ```json
 {
-    "body": "I just realized this touched integer.pxd, so some comments first. We care about shifting by ints a lot because library code (especially mpmath) does a lot of stuff like \"x << 1\". I think the patch may make that path slower. Also, the error checking and cpdefing may make it slower too (I'll test, might be negligible). \n\nAlso, why do \n\n\n```\nif n < 0: \n    n *= -1 \n    sign *= -1 \n```\n\n\nrather than \n\n\n```\nn *= sign\n```\n",
+    "body": "I just realized this touched integer.pxd, so some comments first. We care about shifting by ints a lot because library code (especially mpmath) does a lot of stuff like \"x << 1\". I think the patch may make that path slower. Also, the error checking and cpdefing may make it slower too (I'll test, might be negligible). \n\nAlso, why do \n\n```\nif n < 0: \n    n *= -1 \n    sign *= -1 \n```\n\nrather than \n\n```\nn *= sign\n```",
     "created_at": "2009-06-05T11:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -176,21 +169,17 @@ I just realized this touched integer.pxd, so some comments first. We care about 
 
 Also, why do 
 
-
 ```
 if n < 0: 
     n *= -1 
     sign *= -1 
 ```
 
-
 rather than 
-
 
 ```
 n *= sign
 ```
-
 
 
 
@@ -199,7 +188,7 @@ n *= sign
 archive/issue_comments_048797.json:
 ```json
 {
-    "body": "Here's after just the first patch: \n\n\n```\nsage: a = 5; b = 6; c = 6r\nsage: %timeit a << b\n10000000 loops, best of 3: 195 ns per loop\nsage: %timeit a >> b\n1000000 loops, best of 3: 218 ns per loop\nsage: %timeit a << c\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\n\nsage: b = -6; c = -6r\nsage: %timeit a << b\n1000000 loops, best of 3: 204 ns per loop\nsage: %timeit a >> b\n10000000 loops, best of 3: 196 ns per loop\nsage: %timeit a >> c\n10000000 loops, best of 3: 190 ns per loop\nsage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\n\nand after the second patch \n\n\n```\nsage: sage: a = 5; b = 6; c = 6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 192 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 204 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\nsage: \nsage: sage: b = -6; c = -6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 206 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 197 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\n\nWith repeated timings, the variance seems to be about 5 or so ns. The only significant differences are that Integer >> Integer is a bit faster with the second patch, and Integer << int and Integer >> int are faster with the first. \n\nI'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don't think `shift_helper` needs to do error checking, and it seems odd to introduce a new auxiliary variable `normalize_Integer`.",
+    "body": "Here's after just the first patch: \n\n```\nsage: a = 5; b = 6; c = 6r\nsage: %timeit a << b\n10000000 loops, best of 3: 195 ns per loop\nsage: %timeit a >> b\n1000000 loops, best of 3: 218 ns per loop\nsage: %timeit a << c\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\n\nsage: b = -6; c = -6r\nsage: %timeit a << b\n1000000 loops, best of 3: 204 ns per loop\nsage: %timeit a >> b\n10000000 loops, best of 3: 196 ns per loop\nsage: %timeit a >> c\n10000000 loops, best of 3: 190 ns per loop\nsage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\nand after the second patch \n\n```\nsage: sage: a = 5; b = 6; c = 6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 192 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 204 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\nsage: \nsage: sage: b = -6; c = -6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 206 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 197 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\nWith repeated timings, the variance seems to be about 5 or so ns. The only significant differences are that Integer >> Integer is a bit faster with the second patch, and Integer << int and Integer >> int are faster with the first. \n\nI'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don't think `shift_helper` needs to do error checking, and it seems odd to introduce a new auxiliary variable `normalize_Integer`.",
     "created_at": "2009-06-06T03:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -209,7 +198,6 @@ archive/issue_comments_048797.json:
 ```
 
 Here's after just the first patch: 
-
 
 ```
 sage: a = 5; b = 6; c = 6r
@@ -233,9 +221,7 @@ sage: %timeit a << c
 1000000 loops, best of 3: 222 ns per loop
 ```
 
-
 and after the second patch 
-
 
 ```
 sage: sage: a = 5; b = 6; c = 6r
@@ -258,7 +244,6 @@ sage: sage: %timeit a >> c
 sage: sage: %timeit a << c
 1000000 loops, best of 3: 222 ns per loop
 ```
-
 
 With repeated timings, the variance seems to be about 5 or so ns. The only significant differences are that Integer >> Integer is a bit faster with the second patch, and Integer << int and Integer >> int are faster with the first. 
 
@@ -313,7 +298,7 @@ I think that Craig's patch looks good, and his question shouldn't really hold th
 archive/issue_comments_048800.json:
 ```json
 {
-    "body": "I got some hunk failures when applying `trac-6118-pt2.patch`:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6118/trac-6118-pt2.patch && hg qpush\nadding trac-6118-pt2.patch to series file\napplying trac-6118-pt2.patch\npatching file sage/rings/integer.pxd\nHunk #1 FAILED at 15\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pxd.rej\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 4363\nHunk #2 FAILED at 4405\nHunk #3 FAILED at 4417\nHunk #4 FAILED at 4434\nHunk #5 FAILED at 4443\n5 out of 5 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6118-pt2.patch\n```\n\nThis needs a rebase against Sage 4.1.2.alpha1 or a later version.",
+    "body": "I got some hunk failures when applying `trac-6118-pt2.patch`:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6118/trac-6118-pt2.patch && hg qpush\nadding trac-6118-pt2.patch to series file\napplying trac-6118-pt2.patch\npatching file sage/rings/integer.pxd\nHunk #1 FAILED at 15\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pxd.rej\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 4363\nHunk #2 FAILED at 4405\nHunk #3 FAILED at 4417\nHunk #4 FAILED at 4434\nHunk #5 FAILED at 4443\n5 out of 5 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6118-pt2.patch\n```\nThis needs a rebase against Sage 4.1.2.alpha1 or a later version.",
     "created_at": "2009-09-08T10:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
@@ -342,7 +327,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac-6118-pt2.patch
 ```
-
 This needs a rebase against Sage 4.1.2.alpha1 or a later version.
 
 

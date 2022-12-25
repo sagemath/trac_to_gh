@@ -3,7 +3,7 @@
 archive/issues_002474.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: RIF CIF RealIntervalField ComplexIntervalField round\n\n\n```\nsage: round(RIF(10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py in round(x, ndigits)\n    864     else:\n    865         try: return x.round()\n--> 866         except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n    867 \n    868 def quotient(x, y, *args, **kwds):\n\n<type 'exceptions.TypeError'>: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2474\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: RIF CIF RealIntervalField ComplexIntervalField round\n\n```\nsage: round(RIF(10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py in round(x, ndigits)\n    864     else:\n    865         try: return x.round()\n--> 866         except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n    867 \n    868 def quotient(x, y, *args, **kwds):\n\n<type 'exceptions.TypeError'>: a float is required\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2474\n\n",
     "created_at": "2008-03-11T22:09:18Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ CC:  @ncalexan
 
 Keywords: RIF CIF RealIntervalField ComplexIntervalField round
 
-
 ```
 sage: round(RIF(10))
 ---------------------------------------------------------------------------
@@ -40,7 +39,6 @@ sage: round(RIF(10))
 
 <type 'exceptions.TypeError'>: a float is required
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2474
 
@@ -332,7 +330,7 @@ archive/issue_events_005846.json:
 archive/issue_comments_016723.json:
 ```json
 {
-    "body": "I wonder why \"wontfix\" since this now seems to work:\n\n```\nsage: sage.rings.real_mpfi.printing_style = 'brackets'\nsage: round(RIF(1.5, 12345.678)) \n[2.0000000000000000 .. 12346.000000000000]\n```\n",
+    "body": "I wonder why \"wontfix\" since this now seems to work:\n\n```\nsage: sage.rings.real_mpfi.printing_style = 'brackets'\nsage: round(RIF(1.5, 12345.678)) \n[2.0000000000000000 .. 12346.000000000000]\n```",
     "created_at": "2017-12-12T09:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
@@ -348,7 +346,6 @@ sage: sage.rings.real_mpfi.printing_style = 'brackets'
 sage: round(RIF(1.5, 12345.678)) 
 [2.0000000000000000 .. 12346.000000000000]
 ```
-
 
 
 

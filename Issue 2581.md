@@ -229,7 +229,7 @@ Resolution changed from fixed to
 archive/issue_comments_017625.json:
 ```json
 {
-    "body": "> An unexpected problem: solve_right is defined in \n> matrix_integer_dense and the versions don't provide \n> the same functionality. This could happen more places.\n\nGood point -- I had meant to address that but fell asleep and forgot. \nA patch will be forthcoming. \n\n> Is there any hope for a solution_space_right that handles under-determined systems?\n\nNot in this patch.  Make a trac ticket and somebody will get to it.",
+    "body": "> An unexpected problem: solve_right is defined in \n> matrix_integer_dense and the versions don't provide \n> the same functionality. This could happen more places.\n\n\nGood point -- I had meant to address that but fell asleep and forgot. \nA patch will be forthcoming. \n\n> Is there any hope for a solution_space_right that handles under-determined systems?\n\n\nNot in this patch.  Make a trac ticket and somebody will get to it.",
     "created_at": "2008-03-18T23:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
@@ -242,10 +242,12 @@ archive/issue_comments_017625.json:
 > matrix_integer_dense and the versions don't provide 
 > the same functionality. This could happen more places.
 
+
 Good point -- I had meant to address that but fell asleep and forgot. 
 A patch will be forthcoming. 
 
 > Is there any hope for a solution_space_right that handles under-determined systems?
+
 
 Not in this patch.  Make a trac ticket and somebody will get to it.
 

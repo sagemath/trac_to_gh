@@ -3,7 +3,7 @@
 archive/issues_000899.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nThe installation manual says\n\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.0-base\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install gcc\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\n\nI think this should be corrected (changes on 2 lines) to say\n\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.2-base      # or the latest version available\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\n\nIn fact, in 7.10 \"sudo apt-get install gcc-4.0-base\" yields\n\"E: Package gcc-4.0-base has no installation candidate\"\nand \"sudo apt-get install gcc\" is redundant.\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/inst.tex.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/899\n\n",
+    "body": "Assignee: @wdjoyner\n\nThe installation manual says\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.0-base\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install gcc\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\nI think this should be corrected (changes on 2 lines) to say\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.2-base      # or the latest version available\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\nIn fact, in 7.10 \"sudo apt-get install gcc-4.0-base\" yields\n\"E: Package gcc-4.0-base has no installation candidate\"\nand \"sudo apt-get install gcc\" is redundant.\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/inst.tex.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/899\n\n",
     "created_at": "2007-10-14T21:02:10Z",
     "labels": [
         "component: documentation",
@@ -20,7 +20,6 @@ archive/issues_000899.json:
 Assignee: @wdjoyner
 
 The installation manual says
-
 
 ```
 On a newly installed Ubuntu system, you can install the above
@@ -39,9 +38,7 @@ commands as follows:
  sudo apt-get install g++
 ```
 
-
 I think this should be corrected (changes on 2 lines) to say
-
 
 ```
 On a newly installed Ubuntu system, you can install the above
@@ -58,7 +55,6 @@ commands as follows:
  sudo apt-get install libstdc++6-dev
  sudo apt-get install g++
 ```
-
 
 In fact, in 7.10 "sudo apt-get install gcc-4.0-base" yields
 "E: Package gcc-4.0-base has no installation candidate"

@@ -3,7 +3,7 @@
 archive/issues_007846.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nCopying a worksheet in Sage 4.3.1.alpha0 sometimes gives\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 795, in render\n            W = notebook.copy_worksheet(self.worksheet, self.username)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 719, in copy_worksheet\n            self._initialize_worksheet(ws, W)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 631, in _initialize_worksheet\n            shutil.copytree(cells, target)\n          File \"/home/apps/sage/local/lib/python/shutil.py\", line 177, in copytree\n            raise Error, errors\n        shutil.Error: [('/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py', '/home/.sage/sage_notebook.sagenb/home/aaaa/28/cells/2/___code___.py', \"[Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py'\")]\n\n```\n\n\nThis is a follow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7846\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nCopying a worksheet in Sage 4.3.1.alpha0 sometimes gives\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 795, in render\n            W = notebook.copy_worksheet(self.worksheet, self.username)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 719, in copy_worksheet\n            self._initialize_worksheet(ws, W)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 631, in _initialize_worksheet\n            shutil.copytree(cells, target)\n          File \"/home/apps/sage/local/lib/python/shutil.py\", line 177, in copytree\n            raise Error, errors\n        shutil.Error: [('/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py', '/home/.sage/sage_notebook.sagenb/home/aaaa/28/cells/2/___code___.py', \"[Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py'\")]\n\n```\n\nThis is a follow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7846\n\n",
     "created_at": "2010-01-05T03:27:06Z",
     "labels": [
         "component: notebook",
@@ -34,7 +34,6 @@ Copying a worksheet in Sage 4.3.1.alpha0 sometimes gives
         shutil.Error: [('/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py', '/home/.sage/sage_notebook.sagenb/home/aaaa/28/cells/2/___code___.py', "[Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py'")]
 
 ```
-
 
 This is a follow-up to #7514.
 
@@ -138,7 +137,7 @@ Suppress `CODE_PY` symlinks.  sagenb repo.
 archive/issue_comments_067845.json:
 ```json
 {
-    "body": "Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by @qed777 created at 2010-01-05 06:35:09\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\n\ntoo...",
+    "body": "Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by @qed777 created at 2010-01-05 06:35:09\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\ntoo...",
     "created_at": "2010-01-05T06:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
@@ -161,7 +160,6 @@ import time; time.sleep(3)
 os.unlink(fname)
 print os.listdir('.')
 ```
-
 too...
 
 
@@ -171,7 +169,7 @@ too...
 archive/issue_comments_067846.json:
 ```json
 {
-    "body": "Which is better\n\n```python\nimport os, shutil\n\ndef ignore_nonexistent_files(curdir, dirlist):\n    ignore = []\n    for x in dirlist:\n        if not os.path.exists(os.path.join(curdir, x)):\n            ignore.append(x)\n    return ignore\n\n# This:\nshutil.copytree('foo', 'bar', ignore=ignore_nonexistent_files)\n# Or this:\nshutil.copytree('foo', 'bar', symlinks=True)\n```\n\n?  We use [shutil.copytree](http://docs.python.org/library/shutil.html#shutil.copytree) in 5 places under `sagenb`.  If it's necessary, I can add `sagenb.misc.misc.ignore_nonexistent_files`.",
+    "body": "Which is better\n\n```python\nimport os, shutil\n\ndef ignore_nonexistent_files(curdir, dirlist):\n    ignore = []\n    for x in dirlist:\n        if not os.path.exists(os.path.join(curdir, x)):\n            ignore.append(x)\n    return ignore\n\n# This:\nshutil.copytree('foo', 'bar', ignore=ignore_nonexistent_files)\n# Or this:\nshutil.copytree('foo', 'bar', symlinks=True)\n```\n?  We use [shutil.copytree](http://docs.python.org/library/shutil.html#shutil.copytree) in 5 places under `sagenb`.  If it's necessary, I can add `sagenb.misc.misc.ignore_nonexistent_files`.",
     "created_at": "2010-01-05T07:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
@@ -197,7 +195,6 @@ shutil.copytree('foo', 'bar', ignore=ignore_nonexistent_files)
 # Or this:
 shutil.copytree('foo', 'bar', symlinks=True)
 ```
-
 ?  We use [shutil.copytree](http://docs.python.org/library/shutil.html#shutil.copytree) in 5 places under `sagenb`.  If it's necessary, I can add `sagenb.misc.misc.ignore_nonexistent_files`.
 
 

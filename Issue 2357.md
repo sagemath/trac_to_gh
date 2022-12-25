@@ -275,7 +275,7 @@ Ok great.
 archive/issue_comments_015852.json:
 ```json
 {
-    "body": "Builds fine, all tests pass.  Coverage report:\n\n\n```\nMissing doctests:\n         * div(self, other)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * Integer content(self)\n         * _repr(self, name=None, bint latex=False)\n         * _latex_(self, name=None)\n         * bint is_zero(self)\n         * _pari_(self, variable=None)\n\n```\n",
+    "body": "Builds fine, all tests pass.  Coverage report:\n\n```\nMissing doctests:\n         * div(self, other)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * Integer content(self)\n         * _repr(self, name=None, bint latex=False)\n         * _latex_(self, name=None)\n         * bint is_zero(self)\n         * _pari_(self, variable=None)\n\n```",
     "created_at": "2008-06-24T08:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -285,7 +285,6 @@ archive/issue_comments_015852.json:
 ```
 
 Builds fine, all tests pass.  Coverage report:
-
 
 ```
 Missing doctests:
@@ -300,7 +299,6 @@ Possibly wrong (function name doesn't occur in doctests):
          * _pari_(self, variable=None)
 
 ```
-
 
 
 
@@ -345,7 +343,7 @@ Attachment [trac2357-poly-ring-implementation.patch](tarball://root/attachments/
 archive/issue_comments_015855.json:
 ```json
 {
-    "body": "I've attached two patches.  The first, trac2357_make_flint_default_for_ZZx-edited.patch, is a hand-edited version of Burcin's patch that does not delete the NTL wrapper.  The second patch, trac2357-poly-ring-implementation.patch, adds an \"implementation=\" parameter to PolynomialRing, so that you get:\n\n```\nsage: PolynomialRing(ZZ, 'x')\nUnivariate Polynomial Ring in x over Integer Ring\nsage: PolynomialRing(ZZ, 'x', implementation='NTL')\nUnivariate Polynomial Ring in x over Integer Ring (using NTL)\n```\n\n(the first version uses FLINT, which is the default).",
+    "body": "I've attached two patches.  The first, trac2357_make_flint_default_for_ZZx-edited.patch, is a hand-edited version of Burcin's patch that does not delete the NTL wrapper.  The second patch, trac2357-poly-ring-implementation.patch, adds an \"implementation=\" parameter to PolynomialRing, so that you get:\n\n```\nsage: PolynomialRing(ZZ, 'x')\nUnivariate Polynomial Ring in x over Integer Ring\nsage: PolynomialRing(ZZ, 'x', implementation='NTL')\nUnivariate Polynomial Ring in x over Integer Ring (using NTL)\n```\n(the first version uses FLINT, which is the default).",
     "created_at": "2008-06-28T16:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
@@ -362,7 +360,6 @@ Univariate Polynomial Ring in x over Integer Ring
 sage: PolynomialRing(ZZ, 'x', implementation='NTL')
 Univariate Polynomial Ring in x over Integer Ring (using NTL)
 ```
-
 (the first version uses FLINT, which is the default).
 
 

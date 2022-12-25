@@ -3,7 +3,7 @@
 archive/issues_002975.json:
 ```json
 {
-    "body": "Assignee: boothby\n\non bsd.math and fermat this happens but shouldn't.  I'm sure it is my fault.\n\n\n```\nsage: inotebook()\nThe notebook files are stored in: /Users/was/.sage//sage_notebook\nWARNING: Running the notebook insecurely may be dangerous.\nMake sure you know what you are doing.\nPort 8000 is already in use.\nTrying next port...\nPort 8001 is already in use.\nTrying next port...\nPort 8002 is already in use.\nTrying next port...\nPort 8003 is already in use.\nTrying next port...\nPort 8004 is already in use.\nTrying next port...\nPort 8005 is already in use.\nTrying next port...\nPort 8006 is already in use.\nTrying next port...\nPort 8007 is already in use.\nTrying next port...\nPort 8008 is already in use.\nTrying next port...\nPort 8009 is already in use.\nTrying next port...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2975\n\n",
+    "body": "Assignee: boothby\n\non bsd.math and fermat this happens but shouldn't.  I'm sure it is my fault.\n\n```\nsage: inotebook()\nThe notebook files are stored in: /Users/was/.sage//sage_notebook\nWARNING: Running the notebook insecurely may be dangerous.\nMake sure you know what you are doing.\nPort 8000 is already in use.\nTrying next port...\nPort 8001 is already in use.\nTrying next port...\nPort 8002 is already in use.\nTrying next port...\nPort 8003 is already in use.\nTrying next port...\nPort 8004 is already in use.\nTrying next port...\nPort 8005 is already in use.\nTrying next port...\nPort 8006 is already in use.\nTrying next port...\nPort 8007 is already in use.\nTrying next port...\nPort 8008 is already in use.\nTrying next port...\nPort 8009 is already in use.\nTrying next port...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2975\n\n",
     "created_at": "2008-04-20T21:09:11Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ archive/issues_002975.json:
 Assignee: boothby
 
 on bsd.math and fermat this happens but shouldn't.  I'm sure it is my fault.
-
 
 ```
 sage: inotebook()
@@ -48,7 +47,6 @@ Trying next port...
 Port 8009 is already in use.
 Trying next port...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2975
 

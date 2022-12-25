@@ -3,7 +3,7 @@
 archive/issues_008020.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\ngcc version 4.4.2 (GCC)\n****************************************************\nUpdating readline.c for Linux/Itanium\ncp: cannot create regular file `Modules/readline.c': No such file or directory\nError copying patched readline.c\n\nreal    0m0.029s\nuser    0m0.009s\nsys     0m0.011s\nsage: An error occurred while installing python-2.6.4.p4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c\n```\n\n\nI missed this doing the release, because our Itaniums weren't accessible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8020\n\n",
+    "body": "Assignee: tbd\n\n```\ngcc version 4.4.2 (GCC)\n****************************************************\nUpdating readline.c for Linux/Itanium\ncp: cannot create regular file `Modules/readline.c': No such file or directory\nError copying patched readline.c\n\nreal    0m0.029s\nuser    0m0.009s\nsys     0m0.011s\nsage: An error occurred while installing python-2.6.4.p4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c\n```\n\nI missed this doing the release, because our Itaniums weren't accessible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8020\n\n",
     "created_at": "2010-01-21T02:18:07Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_008020.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 gcc version 4.4.2 (GCC)
@@ -36,7 +35,6 @@ explaining the problem and send the relevant part of
 of /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c
 ```
 
-
 I missed this doing the release, because our Itaniums weren't accessible.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8020
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8020
 archive/issue_comments_069958.json:
 ```json
 {
-    "body": "This appears to be trivial to fix.  In spkg-install change:\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix Modules/readline.c\n```\n   \n\nto\n\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix src/Modules/readline.c\n```\n",
+    "body": "This appears to be trivial to fix.  In spkg-install change:\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix Modules/readline.c\n```   \n\nto\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix src/Modules/readline.c\n```",
     "created_at": "2010-01-21T02:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
@@ -67,11 +65,9 @@ This appears to be trivial to fix.  In spkg-install change:
 if [ "`uname -m`" = "ia64" -a "`uname`" = "Linux" ]; then
     echo "Updating readline.c for Linux/Itanium"
     cp patches/readline.c-Itanium-fix Modules/readline.c
-```
-   
+```   
 
 to
-
 
 ```
 # The following patch for fixing broken readline behavior on Itanium
@@ -80,7 +76,6 @@ if [ "`uname -m`" = "ia64" -a "`uname`" = "Linux" ]; then
     echo "Updating readline.c for Linux/Itanium"
     cp patches/readline.c-Itanium-fix src/Modules/readline.c
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008520.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional gap_packages-4.4.12_2 ==\n\n\n```\ngap_packages-4.4.12_2/SPKG.txt\ngap_packages-4.4.12_2/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.010s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing gap_packages-4.4.12_2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8520\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional gap_packages-4.4.12_2 ==\n\n```\ngap_packages-4.4.12_2/SPKG.txt\ngap_packages-4.4.12_2/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.010s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing gap_packages-4.4.12_2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8520\n\n",
     "created_at": "2010-03-13T14:19:37Z",
     "labels": [
         "component: packages: optional",
@@ -34,7 +34,6 @@ CC:  @dimpase
 
  == The problem with the optional gap_packages-4.4.12_2 ==
 
-
 ```
 gap_packages-4.4.12_2/SPKG.txt
 gap_packages-4.4.12_2/.hgignore
@@ -62,7 +61,6 @@ sage: An error occurred while installing gap_packages-4.4.12_2
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8520
 
 
@@ -74,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8520
 archive/issue_comments_076838.json:
 ```json
 {
-    "body": "The following line in spkg-install is the problem\n\n```\n${gapver:=$SAGE_ROOT/spkg/standard/newest_version gap}\n```\n\nNot quite nclear how to fix, at the moment...",
+    "body": "The following line in spkg-install is the problem\n\n```\n${gapver:=$SAGE_ROOT/spkg/standard/newest_version gap}\n```\nNot quite nclear how to fix, at the moment...",
     "created_at": "2010-03-15T08:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8520",
     "type": "issue_comment",
@@ -88,7 +86,6 @@ The following line in spkg-install is the problem
 ```
 ${gapver:=$SAGE_ROOT/spkg/standard/newest_version gap}
 ```
-
 Not quite nclear how to fix, at the moment...
 
 
@@ -197,7 +194,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076844.json:
 ```json
 {
-    "body": "I get gobbledygook. \n\nBTW, if there is no Mercurial repository (I've not checked, but know some optional packages don't have one), it would seem sensible to create one. But for now at least, I can't do anything with this. \n\n\n```\ngap_packages-4.4.12_2/.hg/patches/status\ngap_packages-4.4.12_2/.hg/patches/gap_packages.patch\ngap_packages-4.4.12_2/.hg/patches/~/\ngap_packages-4.4.12_2/.hg/patches/~/gap_packages.patch\ngap_packages-4.4.12_2/.hg/patches/series\ngap_packages-4.4.12_2/.hg/undo.branch\ngap_packages-4.4.12_2/spkg-install\ngap_packages-4.4.12_2/patches/\ngap_packages-4.4.12_2/patches/guava/\ngap_packages-4.4.12_2/patches/guava/Makefile.in\ntar: This does not look like a tar archive\ntar: Skipping to next header\ntar: Archive contains obsolescent base-64 headers\ntar: Archive contains `\ufffd;\ufffd\ufffd\\221g=\\b\ufffdku\ufffd' where numeric off_t value expected\ntar: Archive contains `\ufffd\ufffdRsC\\000\\020v' where numeric mode_t value expected\ntar: Archive contains `\\030\ufffd\\214S;\ufffd\\223\ufffdN\ufffd\ufffd\\203' where numeric time_t value expected\ntar: Archive contains `\ufffdB\ufffd\\034\ufffd\ufffd\ufffdG' where numeric major_t value expected\ntar: Archive contains `\ufffd\\235z\\037oN&I' where numeric minor_t value expected\ntar: Archive contains `\"`\ufffd\ufffd3V\\231v' where numeric uid_t value expected\ntar: Archive contains `\ufffd\\233\\025\ufffd\ufffd\ufffd1\ufffd' where numeric gid_t value expected\n~\ufffdIE\\210\u04e5\ufffd\\202\\020\\021\\0223\ufffd\\220\\225\ufffd\ufffd\\fz5\ufffd\\031\\206\ufffd\\t\\032r\ufffd\\002\\177\\027z\ufffd\ufffd\ufffdk\ufffd\ufffd):lJ\ufffd\ufffd\ufffd\ufffd\\227\ufffd\ufffdc\\033W\ufffd4M\ufffd\\rD\ufffd\\224\\023\ufffd\\fU\ufffd\ufffd\\227\\214\ufffdw\\230\ufffdh\\017\ufffd\ufffd\\020\ufffdo\ufffd\ufffd\\226\ufffd\ufffdI`.\\004\ufffdG\\211\\033\\224e\ufffd]]\\023]\ntar: ~\ufffdIE\\210\u04e5\ufffd\\202\\020\\021\\0223\ufffd\\220\\225\ufffd\ufffd\\fz5\ufffd\\031\\206\ufffd\\t\\032r\ufffd\\002\\177\\027z\ufffd\ufffd\ufffdk\ufffd\ufffd)\\:lJ\ufffd\ufffd\ufffd\ufffd\\227\ufffd\ufffdc\\033W\ufffd4M\ufffd\\rD\ufffd\\224\\023\ufffd\\fU\ufffd\ufffd\\227\\214\ufffdw\\230\ufffdh\\017\ufffd\ufffd\\020\ufffdo\ufffd\ufffd\\226\ufffd\ufffdI`.\\004\ufffdG\\211\\033\\224e\ufffd]]\\023]: Unknown file type 'X', extracted as normal file\ntar: ~\ufffdIE\ufffd\u04e5\u03c2\ufffd\ufffd\ufffd3\u0150\ufffd\ufffd\ufffd\nD\ufffd\ufffd\ufffd\ufffd               z5\ufffd\ufffd\ufffd\ufffd   \ufffdr\ufffd\ufffd\ufffd\ufffdz\ufffd\ufffd\ufffdk\ufffd\ufffd):lJ\ufffd\ufffd\ufffd\u0597\ufffd\ufffdc\n     U\ufffd\u95cc\ufffdw\ufffd\ufffdh\ufffd\ufffd\ufffd\ufffdo\u5ad6\ufffd\ufffdI`.\ufffd\ufffdG\ufffd\ufffd\ufffde\ufffd]]\ufffd]: implausibly old time stamp 1970-01-01 00:59:59\ntar: Skipping to next header\ntar: Read 7566 bytes from /export/home/drkirkby/sage-4.3.4.alpha1/spkg/optional/gap_packages-4.4.12_3.spkg\ntar: Error exit delayed from previous errors\nFinished extraction\nsage: After decompressing the directory gap_packages-4.4.12_3 does not exist\nThis means that the corresponding .spkg needs to be downloaded\nagain.\nhttp://www.sagemath.org//packages/optional/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\n**********************************************************************\n* Unable to download gap_packages-4.4.12_3\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/export/home/drkirkby/sage-4.3.4.alpha1/spkg/build\nbunzip2: Can't open input file gap_packages-4.4.12_3.spkg: No such file or directory.\ntar: gap_packages-4.4.12_3.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\n```\n",
+    "body": "I get gobbledygook. \n\nBTW, if there is no Mercurial repository (I've not checked, but know some optional packages don't have one), it would seem sensible to create one. But for now at least, I can't do anything with this. \n\n```\ngap_packages-4.4.12_2/.hg/patches/status\ngap_packages-4.4.12_2/.hg/patches/gap_packages.patch\ngap_packages-4.4.12_2/.hg/patches/~/\ngap_packages-4.4.12_2/.hg/patches/~/gap_packages.patch\ngap_packages-4.4.12_2/.hg/patches/series\ngap_packages-4.4.12_2/.hg/undo.branch\ngap_packages-4.4.12_2/spkg-install\ngap_packages-4.4.12_2/patches/\ngap_packages-4.4.12_2/patches/guava/\ngap_packages-4.4.12_2/patches/guava/Makefile.in\ntar: This does not look like a tar archive\ntar: Skipping to next header\ntar: Archive contains obsolescent base-64 headers\ntar: Archive contains `\ufffd;\ufffd\ufffd\\221g=\\b\ufffdku\ufffd' where numeric off_t value expected\ntar: Archive contains `\ufffd\ufffdRsC\\000\\020v' where numeric mode_t value expected\ntar: Archive contains `\\030\ufffd\\214S;\ufffd\\223\ufffdN\ufffd\ufffd\\203' where numeric time_t value expected\ntar: Archive contains `\ufffdB\ufffd\\034\ufffd\ufffd\ufffdG' where numeric major_t value expected\ntar: Archive contains `\ufffd\\235z\\037oN&I' where numeric minor_t value expected\ntar: Archive contains `\"`\ufffd\ufffd3V\\231v' where numeric uid_t value expected\ntar: Archive contains `\ufffd\\233\\025\ufffd\ufffd\ufffd1\ufffd' where numeric gid_t value expected\n~\ufffdIE\\210\u04e5\ufffd\\202\\020\\021\\0223\ufffd\\220\\225\ufffd\ufffd\\fz5\ufffd\\031\\206\ufffd\\t\\032r\ufffd\\002\\177\\027z\ufffd\ufffd\ufffdk\ufffd\ufffd):lJ\ufffd\ufffd\ufffd\ufffd\\227\ufffd\ufffdc\\033W\ufffd4M\ufffd\\rD\ufffd\\224\\023\ufffd\\fU\ufffd\ufffd\\227\\214\ufffdw\\230\ufffdh\\017\ufffd\ufffd\\020\ufffdo\ufffd\ufffd\\226\ufffd\ufffdI`.\\004\ufffdG\\211\\033\\224e\ufffd]]\\023]\ntar: ~\ufffdIE\\210\u04e5\ufffd\\202\\020\\021\\0223\ufffd\\220\\225\ufffd\ufffd\\fz5\ufffd\\031\\206\ufffd\\t\\032r\ufffd\\002\\177\\027z\ufffd\ufffd\ufffdk\ufffd\ufffd)\\:lJ\ufffd\ufffd\ufffd\ufffd\\227\ufffd\ufffdc\\033W\ufffd4M\ufffd\\rD\ufffd\\224\\023\ufffd\\fU\ufffd\ufffd\\227\\214\ufffdw\\230\ufffdh\\017\ufffd\ufffd\\020\ufffdo\ufffd\ufffd\\226\ufffd\ufffdI`.\\004\ufffdG\\211\\033\\224e\ufffd]]\\023]: Unknown file type 'X', extracted as normal file\ntar: ~\ufffdIE\ufffd\u04e5\u03c2\ufffd\ufffd\ufffd3\u0150\ufffd\ufffd\ufffd\nD\ufffd\ufffd\ufffd\ufffd               z5\ufffd\ufffd\ufffd\ufffd   \ufffdr\ufffd\ufffd\ufffd\ufffdz\ufffd\ufffd\ufffdk\ufffd\ufffd):lJ\ufffd\ufffd\ufffd\u0597\ufffd\ufffdc\n     U\ufffd\u95cc\ufffdw\ufffd\ufffdh\ufffd\ufffd\ufffd\ufffdo\u5ad6\ufffd\ufffdI`.\ufffd\ufffdG\ufffd\ufffd\ufffde\ufffd]]\ufffd]: implausibly old time stamp 1970-01-01 00:59:59\ntar: Skipping to next header\ntar: Read 7566 bytes from /export/home/drkirkby/sage-4.3.4.alpha1/spkg/optional/gap_packages-4.4.12_3.spkg\ntar: Error exit delayed from previous errors\nFinished extraction\nsage: After decompressing the directory gap_packages-4.4.12_3 does not exist\nThis means that the corresponding .spkg needs to be downloaded\nagain.\nhttp://www.sagemath.org//packages/optional/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/gap_packages-4.4.12_3.spkg --> gap_packages-4.4.12_3.spkg\n[ ]\n**********************************************************************\n* Unable to download gap_packages-4.4.12_3\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/export/home/drkirkby/sage-4.3.4.alpha1/spkg/build\nbunzip2: Can't open input file gap_packages-4.4.12_3.spkg: No such file or directory.\ntar: gap_packages-4.4.12_3.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\n```",
     "created_at": "2010-03-15T15:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8520",
     "type": "issue_comment",
@@ -209,7 +206,6 @@ archive/issue_comments_076844.json:
 I get gobbledygook. 
 
 BTW, if there is no Mercurial repository (I've not checked, but know some optional packages don't have one), it would seem sensible to create one. But for now at least, I can't do anything with this. 
-
 
 ```
 gap_packages-4.4.12_2/.hg/patches/status
@@ -263,7 +259,6 @@ tar: gap_packages-4.4.12_3.spkg: Cannot open: No such file or directory
 tar: Error is not recoverable: exiting now
 Second download resulted in a corrupted package.
 ```
-
 
 
 
@@ -391,7 +386,7 @@ Changing assignee from tbd to drkirkby.
 archive/issue_comments_076850.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> It installs (whether or not it works I don't know), but there is no entry in SPKG.txt and the version number is the same as before, so effectively any record of the changes is going to be lost. \n> \n> I would have thought it needed to be called gap_packages-4.4.12_2.p0 and an entry added to SPKG.txt to indicate what changes have been made. \n\nOK, so here is the version with with consistent numbering. That _2, etc, was originally due to David Joyner, and not consistent with anything. So I removed that _2 from the name, and added p0.\n\nhttp://sage.math.washington.edu/home/dima/packages/gap_packages-4.4.12.p0.spkg\n\nRegarding SPKG.txt, I followed the predecessors, who didn't bother with it. :-)\n\nWell, it's an optional package, and I will to update it soon with more GAP\npackages (and make SPKG.txt good and proper...).",
+    "body": "Replying to [comment:7 drkirkby]:\n> It installs (whether or not it works I don't know), but there is no entry in SPKG.txt and the version number is the same as before, so effectively any record of the changes is going to be lost. \n> \n> I would have thought it needed to be called gap_packages-4.4.12_2.p0 and an entry added to SPKG.txt to indicate what changes have been made. \n\n\nOK, so here is the version with with consistent numbering. That _2, etc, was originally due to David Joyner, and not consistent with anything. So I removed that _2 from the name, and added p0.\n\nhttp://sage.math.washington.edu/home/dima/packages/gap_packages-4.4.12.p0.spkg\n\nRegarding SPKG.txt, I followed the predecessors, who didn't bother with it. :-)\n\nWell, it's an optional package, and I will to update it soon with more GAP\npackages (and make SPKG.txt good and proper...).",
     "created_at": "2010-03-16T12:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8520",
     "type": "issue_comment",
@@ -404,6 +399,7 @@ Replying to [comment:7 drkirkby]:
 > It installs (whether or not it works I don't know), but there is no entry in SPKG.txt and the version number is the same as before, so effectively any record of the changes is going to be lost. 
 > 
 > I would have thought it needed to be called gap_packages-4.4.12_2.p0 and an entry added to SPKG.txt to indicate what changes have been made. 
+
 
 OK, so here is the version with with consistent numbering. That _2, etc, was originally due to David Joyner, and not consistent with anything. So I removed that _2 from the name, and added p0.
 
@@ -445,7 +441,7 @@ Dave
 archive/issue_comments_076852.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n\n[...]\n> I think it would be worth adding SPKG.txt and a repository now. \n\ndone (as of 17.03.2010) 12:30 UK time\n\n> \n> I don't understand much about GAP (I'm not a mathematician), but I get the feeling from the web site there are tons of packages. \n\nmost of them a very specialised, and people would be better off usign them in \nGAP directly. Some of them, moreover, as just interfaces to other CA systems, \nor contain such interfaces, and thus are largely useless within Sage.\n\nAt least one GAP package, ace, is packaged as a separate spkg\n(and needs to be installed after gap_packages)\n \nace was broken since 4.3.3, and noone complained, so that's about how wide\nthe user base of a typical GAP package is in Sage.\n(I fixed ace, by the way, there is a recent ticket opened by my, with a ready fix)\n \n\n> I wonder the logic of including a subset of them, when people would probably be > better to get what they need. It will be almost impossible to keep all the > packages upto date. Some, like FactInt might have quite wide appeal, but others I get the feeling are not so usefully included. Anyway, I guess that is another issue. \n> \n\nI basically only have enough time to maintain and improve what I need in Sage for my research and teaching. I am on a tenure-track...",
+    "body": "Replying to [comment:9 drkirkby]:\n\n[...]\n> I think it would be worth adding SPKG.txt and a repository now. \n\n\ndone (as of 17.03.2010) 12:30 UK time\n\n> \n> I don't understand much about GAP (I'm not a mathematician), but I get the feeling from the web site there are tons of packages. \n\n\nmost of them a very specialised, and people would be better off usign them in \nGAP directly. Some of them, moreover, as just interfaces to other CA systems, \nor contain such interfaces, and thus are largely useless within Sage.\n\nAt least one GAP package, ace, is packaged as a separate spkg\n(and needs to be installed after gap_packages)\n \nace was broken since 4.3.3, and noone complained, so that's about how wide\nthe user base of a typical GAP package is in Sage.\n(I fixed ace, by the way, there is a recent ticket opened by my, with a ready fix)\n \n\n> I wonder the logic of including a subset of them, when people would probably be > better to get what they need. It will be almost impossible to keep all the > packages upto date. Some, like FactInt might have quite wide appeal, but others I get the feeling are not so usefully included. Anyway, I guess that is another issue. \n> \n\n\nI basically only have enough time to maintain and improve what I need in Sage for my research and teaching. I am on a tenure-track...",
     "created_at": "2010-03-17T12:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8520",
     "type": "issue_comment",
@@ -459,10 +455,12 @@ Replying to [comment:9 drkirkby]:
 [...]
 > I think it would be worth adding SPKG.txt and a repository now. 
 
+
 done (as of 17.03.2010) 12:30 UK time
 
 > 
 > I don't understand much about GAP (I'm not a mathematician), but I get the feeling from the web site there are tons of packages. 
+
 
 most of them a very specialised, and people would be better off usign them in 
 GAP directly. Some of them, moreover, as just interfaces to other CA systems, 
@@ -478,6 +476,7 @@ the user base of a typical GAP package is in Sage.
 
 > I wonder the logic of including a subset of them, when people would probably be > better to get what they need. It will be almost impossible to keep all the > packages upto date. Some, like FactInt might have quite wide appeal, but others I get the feeling are not so usefully included. Anyway, I guess that is another issue. 
 > 
+
 
 I basically only have enough time to maintain and improve what I need in Sage for my research and teaching. I am on a tenure-track...
 

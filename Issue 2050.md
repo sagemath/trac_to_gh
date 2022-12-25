@@ -3,7 +3,7 @@
 archive/issues_002050.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
     "created_at": "2008-02-05T05:00:28Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ CC:  ncalexander@gmail.com
 
 Instead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). 
 
-
 ```
 sage: R=RealField(30)
 sage: M=matrix(R,2,[2,1,1,1])
@@ -37,7 +36,6 @@ sage: M.eigenspaces()
 ])
 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2050
 
@@ -86,7 +84,7 @@ Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-u
 archive/issue_comments_013246.json:
 ```json
 {
-    "body": "I get the following against 2.10.3.alpha0:\n\n\n```\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg import   \"/home/mhansen/.sage/temp/sage/15288/tmp_0.patch\"\napplying /home/mhansen/.sage/temp/sage/15288/tmp_0.patch\npatching file sage/matrix/matrix2.pyx\nHunk #4 succeeded at 2130 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 2146\nHunk #6 FAILED at 2163\n2 out of 7 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "I get the following against 2.10.3.alpha0:\n\n```\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg import   \"/home/mhansen/.sage/temp/sage/15288/tmp_0.patch\"\napplying /home/mhansen/.sage/temp/sage/15288/tmp_0.patch\npatching file sage/matrix/matrix2.pyx\nHunk #4 succeeded at 2130 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 2146\nHunk #6 FAILED at 2163\n2 out of 7 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-02-27T18:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ archive/issue_comments_013246.json:
 ```
 
 I get the following against 2.10.3.alpha0:
-
 
 ```
 cd "/home/mhansen/sage-2.10.3.alpha0/devel/sage" && hg status
@@ -110,7 +107,6 @@ Hunk #6 FAILED at 2163
 2 out of 7 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 

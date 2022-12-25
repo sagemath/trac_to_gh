@@ -89,7 +89,7 @@ Changing priority from major to critical.
 archive/issue_comments_075818.json:
 ```json
 {
-    "body": "Well, at least the Sage banner shows the release date... ;-)\n\nPerhaps something for our NagBot writer?\n\nFrom the ticket's title I first guessed you meant detecting \"dead\" Sage 3.x (Debian/Ubuntu) packages installed on the user's system, like this one:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\nA few times there have been \"bug reports\" and questions (not explicitly) referring to *that* version... :)\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nAnother issue is the \"frozen\" `#sage-devel` banner nobody has the power to update:\n\n```\nLogs of this channel are posted online | Sage - free open-source mathematics software |\nAsk questions here and wait, or post to sage-support list | www.sagemath.org |\nstable: 4.3.1 | dev: 4.3.2.alpha1\n```\n\n\nI'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.",
+    "body": "Well, at least the Sage banner shows the release date... ;-)\n\nPerhaps something for our NagBot writer?\n\nFrom the ticket's title I first guessed you meant detecting \"dead\" Sage 3.x (Debian/Ubuntu) packages installed on the user's system, like this one:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\nA few times there have been \"bug reports\" and questions (not explicitly) referring to *that* version... :)\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nAnother issue is the \"frozen\" `#sage-devel` banner nobody has the power to update:\n\n```\nLogs of this channel are posted online | Sage - free open-source mathematics software |\nAsk questions here and wait, or post to sage-support list | www.sagemath.org |\nstable: 4.3.1 | dev: 4.3.2.alpha1\n```\n\nI'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.",
     "created_at": "2010-08-07T08:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ From the ticket's title I first guessed you meant detecting "dead" Sage 3.x (Deb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ```
-
 A few times there have been "bug reports" and questions (not explicitly) referring to *that* version... :)
 | SAGE Version 3.0.5, Release Date: 2008-07-11                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -120,7 +119,6 @@ Ask questions here and wait, or post to sage-support list | www.sagemath.org |
 stable: 4.3.1 | dev: 4.3.2.alpha1
 ```
 
-
 I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.
 
 
@@ -130,7 +128,7 @@ I'm not sure if it is desirable to continually check for recent Sage versions (e
 archive/issue_comments_075819.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> Well, at least the Sage banner shows the release date... ;-)\n\nTrue, but many users will probably assume its the latest version available when they go to the Debian site. If there was a warning like \n\n\n```\n---------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n|                                                                    |\n| WARNING You are using a VERY old version of Sage. We suggest you   |\n| to http://www.sagemath.org/ and download the latest version.       |\n| The latest version has a lot more features                         |\n\n> I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.\n\nI was thinking just on date. That should be very easy to do - just a bit of Python, that issues one warning when Sage is say 3 months old, and a stronger one when its a year old. Assuming the date in Sage is right, and the persons computer has the right date, that should work. \n\nChecking online for version updates is a more tricky issue - some people have privacy concerns over that. If that was implemented, I think the default should be off. It's also a lot more work to do. \n\nMy python skills are next to useless, otherwise I'd tackle this myself. (Not that having poor python skills seems to put some others off writing code for Sage!) \n\nDave",
+    "body": "Replying to [comment:2 leif]:\n> Well, at least the Sage banner shows the release date... ;-)\n\n\nTrue, but many users will probably assume its the latest version available when they go to the Debian site. If there was a warning like \n\n```\n---------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n|                                                                    |\n| WARNING You are using a VERY old version of Sage. We suggest you   |\n| to http://www.sagemath.org/ and download the latest version.       |\n| The latest version has a lot more features                         |\n\n> I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.\n\n\nI was thinking just on date. That should be very easy to do - just a bit of Python, that issues one warning when Sage is say 3 months old, and a stronger one when its a year old. Assuming the date in Sage is right, and the persons computer has the right date, that should work. \n\nChecking online for version updates is a more tricky issue - some people have privacy concerns over that. If that was implemented, I think the default should be off. It's also a lot more work to do. \n\nMy python skills are next to useless, otherwise I'd tackle this myself. (Not that having poor python skills seems to put some others off writing code for Sage!) \n\nDave",
     "created_at": "2010-08-07T09:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
@@ -142,14 +140,13 @@ archive/issue_comments_075819.json:
 Replying to [comment:2 leif]:
 > Well, at least the Sage banner shows the release date... ;-)
 
-True, but many users will probably assume its the latest version available when they go to the Debian site. If there was a warning like 
 
+True, but many users will probably assume its the latest version available when they go to the Debian site. If there was a warning like 
 
 ```
 ---------------------------------------------------------------------
 ----------------------------------------------------------------------
 ```
-
 | SAGE Version 3.0.5, Release Date: 2008-07-11                       |
 | Type notebook() for the GUI, and license() for information.        |
 |                                                                    |
@@ -158,6 +155,7 @@ True, but many users will probably assume its the latest version available when 
 | The latest version has a lot more features                         |
 
 > I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.
+
 
 I was thinking just on date. That should be very easy to do - just a bit of Python, that issues one warning when Sage is say 3 months old, and a stronger one when its a year old. Assuming the date in Sage is right, and the persons computer has the right date, that should work. 
 

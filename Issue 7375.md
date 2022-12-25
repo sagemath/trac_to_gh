@@ -174,7 +174,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061673.json:
 ```json
 {
-    "body": "Hi, \nI have had a few beers tonight, which are a nice benefit of attending the London Open Solaris User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG was very interesting from the point of view of Sage). \n\nAnyway, back to the trac ticket...There are still some problems with this, which means the configure script believes the Sun compiler is broken. I've also made some other points. Some are *nit-picking*, but while you resolve one issue, you might as well resolve the others. \n\nThe main problem is that spkg-install sets CFLAGS to include -fPIC and -Wall, both of which are GNU specific flags. So when called with the Sun compiler, the compiler fails to build an executable, as its given erroneous flags. That can be seen in the config.log attached. It's essential that flags like those are only added on compilers that accept them. \n\nI've attached a small script called *testcc* that I was intending at some point including in a more general place in Sage, but you can use it if you wish. It tests the C compiler and will report one of:\n\n* GNU  (for any GCC compatible compiler)\n* Sun_on_Solaris (for the Sun compiler on Solaris)\n* Intel_improved_GCC \n* Sun_improved_GCC\n* HP_on_Alpha_Linux\n* HP_on_HPUX\n* IBM_on_AIX\n* HP_on_Tru64\n* Unknown\n\nThe script works by checking what the C pre-processor defines, which is more reliable than looking for words like GNU or Sun in the output. You could use that script to decide what flag to add to the compiler - whether it is -fPIC for GNU compilers, or -Kpic for the Sun compiler. I would not worry about the others at the minute. \n\nHere is what the script gives as output on both Sun and GNU compilers on a Sun workstation. It's also been tested on AIX, tru64 and HP-UX too. \n\n\n```\ndrkirkby@swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc\ndrkirkby@swan:[~] $ ./testcc\nSun_on_Solaris\ndrkirkby@swan:[~] $ export CC=gcc\ndrkirkby@swan:[~] $ ./testcc\nGNU\n```\n\n\nOut of completeness, I'll attach another for the C++ compiler (*testcxx*), but I do not think you will want the one for C++. \n\nUsing that script, you could then add in spkg-install something like the following, which I have not tested. \n\n\n```\nif [ x`testcc`  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall \"\nelif [ x`testcc` = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ x`testcc` = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi \n\n```\n\n\nThe Sun compilers are a lot more fussy than the GNU ones, so enabling extra warnings will probably show too many. \n\nWhilst Sage does not aim to support HP-UX, it would be worth adding that +z flag, as compiling with other compilers tends to show problems in code. The library might build on HP-UX with those changes.) \n\n\nOthers issues I see are: \n\n* -m64 is added only on OS X. I suggest a better alternative would be to have:\n\n\n```\n if [ \"x$SAGE64\" = \"xyes\" ] ; then \n    CFLAGS=\"$CFLAGS -m64 \"\n fi\n```\n\n\nThat's far from perfect, but will work with the Sun and GNU compilers, as both accept -m64. \n\nI do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-processor. But it would be worth double-checking that. \n\n* The standard name for the file that creates the configure script was changed from configure.in to configure.ac. So the autoconf manual says to use that. See http://www.gnu.org/software/autocon/manual/autoconf.html#Writing-Autoconf-Input where it says *\"Previous versions of Autoconf promoted the name configure.in, which is somewhat ambiguous (the tool needed to process this file is not described by its extension), and introduces a slight confusion with config.h.in and so on (for which \u2018.in\u2019 means \u201cto be processed by configure\u201d). Using configure.ac is now preferred.\"*\n\n* The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does not. This might possibly be the reason the configure script thinks the compiler is broken, though I doubt it. \n\n* Adding something like *AC_PREREQ([2.64])* or whatever version of autoconf you use to create the configure script will ensure nobody else can recreate it with an older version. It is recommended practice to do that. See http://www.gnu.org/software/autoconf/manual/autoconf.html#Versioning \n \n* I do not think it is a good idea to test for the Sun compiler in configure.in (or configure.ac), to find what flags the compiler needs for C99 support, for several reasons\n  * First, not all Sun compilers need any flag at all. \n  * Other compilers from HP, IBM, Intel etc might need their own flags. \n\n A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99  http://www.gnu.org/software/autoconf/manual/autoconf.html#C-Compiler That macro was designed for exactly this purpose. As such, you can delete all the code that checks for the Sun compiler in configure.in and just use the built-in macro. It would also be wise to exit with an error if the compiler is not C99 compliant, if that is needed. Test if $ac_cv_prog_cc_c99 = no, and if so exit with an error that the code needs to be able to find a C99 compliant compiler. \n\n\nIf you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build.",
+    "body": "Hi, \nI have had a few beers tonight, which are a nice benefit of attending the London Open Solaris User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG was very interesting from the point of view of Sage). \n\nAnyway, back to the trac ticket...There are still some problems with this, which means the configure script believes the Sun compiler is broken. I've also made some other points. Some are *nit-picking*, but while you resolve one issue, you might as well resolve the others. \n\nThe main problem is that spkg-install sets CFLAGS to include -fPIC and -Wall, both of which are GNU specific flags. So when called with the Sun compiler, the compiler fails to build an executable, as its given erroneous flags. That can be seen in the config.log attached. It's essential that flags like those are only added on compilers that accept them. \n\nI've attached a small script called *testcc* that I was intending at some point including in a more general place in Sage, but you can use it if you wish. It tests the C compiler and will report one of:\n\n* GNU  (for any GCC compatible compiler)\n* Sun_on_Solaris (for the Sun compiler on Solaris)\n* Intel_improved_GCC \n* Sun_improved_GCC\n* HP_on_Alpha_Linux\n* HP_on_HPUX\n* IBM_on_AIX\n* HP_on_Tru64\n* Unknown\n\nThe script works by checking what the C pre-processor defines, which is more reliable than looking for words like GNU or Sun in the output. You could use that script to decide what flag to add to the compiler - whether it is -fPIC for GNU compilers, or -Kpic for the Sun compiler. I would not worry about the others at the minute. \n\nHere is what the script gives as output on both Sun and GNU compilers on a Sun workstation. It's also been tested on AIX, tru64 and HP-UX too. \n\n```\ndrkirkby@swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc\ndrkirkby@swan:[~] $ ./testcc\nSun_on_Solaris\ndrkirkby@swan:[~] $ export CC=gcc\ndrkirkby@swan:[~] $ ./testcc\nGNU\n```\n\nOut of completeness, I'll attach another for the C++ compiler (*testcxx*), but I do not think you will want the one for C++. \n\nUsing that script, you could then add in spkg-install something like the following, which I have not tested. \n\n```\nif [ x`testcc`  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall \"\nelif [ x`testcc` = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ x`testcc` = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi \n\n```\n\nThe Sun compilers are a lot more fussy than the GNU ones, so enabling extra warnings will probably show too many. \n\nWhilst Sage does not aim to support HP-UX, it would be worth adding that +z flag, as compiling with other compilers tends to show problems in code. The library might build on HP-UX with those changes.) \n\n\nOthers issues I see are: \n\n* -m64 is added only on OS X. I suggest a better alternative would be to have:\n\n```\n if [ \"x$SAGE64\" = \"xyes\" ] ; then \n    CFLAGS=\"$CFLAGS -m64 \"\n fi\n```\n\nThat's far from perfect, but will work with the Sun and GNU compilers, as both accept -m64. \n\nI do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-processor. But it would be worth double-checking that. \n\n* The standard name for the file that creates the configure script was changed from configure.in to configure.ac. So the autoconf manual says to use that. See http://www.gnu.org/software/autocon/manual/autoconf.html#Writing-Autoconf-Input where it says *\"Previous versions of Autoconf promoted the name configure.in, which is somewhat ambiguous (the tool needed to process this file is not described by its extension), and introduces a slight confusion with config.h.in and so on (for which \u2018.in\u2019 means \u201cto be processed by configure\u201d). Using configure.ac is now preferred.\"*\n\n* The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does not. This might possibly be the reason the configure script thinks the compiler is broken, though I doubt it. \n\n* Adding something like *AC_PREREQ([2.64])* or whatever version of autoconf you use to create the configure script will ensure nobody else can recreate it with an older version. It is recommended practice to do that. See http://www.gnu.org/software/autoconf/manual/autoconf.html#Versioning \n \n* I do not think it is a good idea to test for the Sun compiler in configure.in (or configure.ac), to find what flags the compiler needs for C99 support, for several reasons\n  * First, not all Sun compilers need any flag at all. \n  * Other compilers from HP, IBM, Intel etc might need their own flags. \n\n A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99  http://www.gnu.org/software/autoconf/manual/autoconf.html#C-Compiler That macro was designed for exactly this purpose. As such, you can delete all the code that checks for the Sun compiler in configure.in and just use the built-in macro. It would also be wise to exit with an error if the compiler is not C99 compliant, if that is needed. Test if $ac_cv_prog_cc_c99 = no, and if so exit with an error that the code needs to be able to find a C99 compliant compiler. \n\n\nIf you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build.",
     "created_at": "2009-11-19T01:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -206,7 +206,6 @@ The script works by checking what the C pre-processor defines, which is more rel
 
 Here is what the script gives as output on both Sun and GNU compilers on a Sun workstation. It's also been tested on AIX, tru64 and HP-UX too. 
 
-
 ```
 drkirkby@swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc
 drkirkby@swan:[~] $ ./testcc
@@ -216,11 +215,9 @@ drkirkby@swan:[~] $ ./testcc
 GNU
 ```
 
-
 Out of completeness, I'll attach another for the C++ compiler (*testcxx*), but I do not think you will want the one for C++. 
 
 Using that script, you could then add in spkg-install something like the following, which I have not tested. 
-
 
 ```
 if [ x`testcc`  = "xGNU" ] ; then 
@@ -233,7 +230,6 @@ fi
 
 ```
 
-
 The Sun compilers are a lot more fussy than the GNU ones, so enabling extra warnings will probably show too many. 
 
 Whilst Sage does not aim to support HP-UX, it would be worth adding that +z flag, as compiling with other compilers tends to show problems in code. The library might build on HP-UX with those changes.) 
@@ -243,13 +239,11 @@ Others issues I see are:
 
 * -m64 is added only on OS X. I suggest a better alternative would be to have:
 
-
 ```
  if [ "x$SAGE64" = "xyes" ] ; then 
     CFLAGS="$CFLAGS -m64 "
  fi
 ```
-
 
 That's far from perfect, but will work with the Sun and GNU compilers, as both accept -m64. 
 
@@ -335,7 +329,7 @@ config.log showing the -Wall and -fPIC flags are causing problems.
 archive/issue_comments_061677.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> I have had a few beers tonight, which are a nice benefit of attending the London Open Solaris \n> User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG \n> was very interesting from the point of view of Sage). \n\nI had a few beers in London yesterday too but only in the pub down the road :)\n\n \n> I've attached a small script called *testcc* that I was intending at some point including in \n> a more general place in Sage, but you can use it if you wish. It tests the C compiler and will > report one of:\n\nI am using it in spkg-install now\n \n\n> -m64 is added only on OS X. I suggest a better alternative would be to have:\n\nChanged.\n\n> I do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-\n> processor. But it would be worth double-checking that. \n\nChanged.\n \n> The standard name for the file that creates the configure script was changed from configure.in \n> to configure.ac.\n\nChanged.\n\n>  * The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does > not.\n\nIt's now at the top.\n\n>  * Adding something like *AC_PREREQ([2.64])*\n\nAdded.\n  \n>  A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99\n\nGreat, using that now.\n \n> If you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build. \n\nThanks a lot, this is really really helpful!",
+    "body": "Replying to [comment:6 drkirkby]:\n> I have had a few beers tonight, which are a nice benefit of attending the London Open Solaris \n> User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG \n> was very interesting from the point of view of Sage). \n\n\nI had a few beers in London yesterday too but only in the pub down the road :)\n\n \n> I've attached a small script called *testcc* that I was intending at some point including in \n> a more general place in Sage, but you can use it if you wish. It tests the C compiler and will > report one of:\n\n\nI am using it in spkg-install now\n \n\n> -m64 is added only on OS X. I suggest a better alternative would be to have:\n\n\nChanged.\n\n> I do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-\n> processor. But it would be worth double-checking that. \n\n\nChanged.\n \n> The standard name for the file that creates the configure script was changed from configure.in \n> to configure.ac.\n\n\nChanged.\n\n>  * The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does > not.\n\n\nIt's now at the top.\n\n>  * Adding something like *AC_PREREQ([2.64])*\n\n\nAdded.\n  \n>  A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99\n\n\nGreat, using that now.\n \n> If you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build. \n\n\nThanks a lot, this is really really helpful!",
     "created_at": "2009-11-19T10:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -349,42 +343,51 @@ Replying to [comment:6 drkirkby]:
 > User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG 
 > was very interesting from the point of view of Sage). 
 
+
 I had a few beers in London yesterday too but only in the pub down the road :)
 
  
 > I've attached a small script called *testcc* that I was intending at some point including in 
 > a more general place in Sage, but you can use it if you wish. It tests the C compiler and will > report one of:
 
+
 I am using it in spkg-install now
  
 
 > -m64 is added only on OS X. I suggest a better alternative would be to have:
+
 
 Changed.
 
 > I do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-
 > processor. But it would be worth double-checking that. 
 
+
 Changed.
  
 > The standard name for the file that creates the configure script was changed from configure.in 
 > to configure.ac.
 
+
 Changed.
 
 >  * The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does > not.
+
 
 It's now at the top.
 
 >  * Adding something like *AC_PREREQ([2.64])*
 
+
 Added.
   
 >  A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99
 
+
 Great, using that now.
  
 > If you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build. 
+
 
 Thanks a lot, this is really really helpful!
 
@@ -415,7 +418,7 @@ The updated SPKG is at
 archive/issue_comments_061679.json:
 ```json
 {
-    "body": "Hi, \nI checked libm4ri-20091119.spkg on two UNIX workstations. \n\n* Sun Blade 2000, Solaris 10 update 7, 2 x 1200 MHz UltraSPARC IV+ processors, 8 GB RAM, Sun Studio 12.1 compiler. \n* HP C3600, HP-UX 11.11, 1 x 552 MHz PA-RISC processor, 8 GB RAM, gcc 4.4.0. \n\nI hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\n\n == General points ==\n\n* In spkg-install, if the tests fail, there is a message generated to say to report this upstream. It would be useful if that message could say where to - i.e. a web site, email address etc. Things are more likely to be reported upstream if someone can easily find where to report it to. I actually like the idea of suggesting to report this upstream. Other packages should follow your example. \n\n* Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\n\n```\nif [ \"$SAGE_DEBUG\" = \"1\" ]; \n```\n\nto \n\n```\nif [ \"x$SAGE_DEBUG\" = \"xyes\" ]; \n```\n\n\nHowever, there was a consensus some time back that the default should be to build with debug information present (-g flag) and only if SAGE_DEBUG was set to \"no\" should -g not be there. \n\nHowever, adding your --enable-debug flag to the configure script might have a serious impact on performance, in which case  you should not enable that by default. You can best judge how to handle that. \n\n* One bit of code has this:\n\n\n```\nCFLAGS=\"$CFLAGS $INCLUDES -L$SAGE_LOCAL/lib -pedantic -g\"\n```\n\n\nSo -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific flag. Secondly, there is the issue of whether the -g flag should be there or not. The '-g' flag does appear to be a portable flag, so should not be a problem on any compiler I know of. \n\nNow to the results. \n\n == Results on HP-UX 11.11 with gcc 4.4.0 ==\n\nM4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\nThe package went on to compile ok on HP-UX, and passed all tests. That is certainly better than many packages. \n\nThere was however a few things that perhaps can be addressed. One is HP-UX specific, so I would not bother trying to fix that, but the other two I believe will happen on other platforms too.  \n\n* There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\n```\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:359:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:22:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:367:1: warning: \"CPU_L1_CACHE\" redefined\n```\n\n\nthis happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a **lot** better than many others in this respect. \n\n* libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\n\n```\n./m4ri/config.h:5:1: warning: this is the location of the previous definition\n\tmv -f .deps/test_kernel.Tpo .deps/test_kernel.Po\n\t/bin/sh ./libtool --tag=CC    --mode=link gcc -std=gnu99    -I/home/drkirkby/sage-4.2/local/include/ -L/home/drkirkby/sage-4.2/local/lib -pedantic -g -fPIC -Wall  -O2  -lm4ri -lm  -o test_kernel test_kernel.o  \nlibtool: link: warning: this platform does not like uninstalled shared libraries\nlibtool: link: warning: `test_kernel' will be relinked during installation\n```\n\n\n* I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. \n\nSo overall, on HP-UX, this is pretty good, though perhaps you can sort out at least the first of these. \n\n == Results on Solaris 10 update 7 (SPARC) with Sun Studio 12.1 compiler ==\n\nHere things were not as successful as on HP-UX with gcc. \n\n4MRI will not build with Sun Studio. \n\n\n```\nlibm4ri-20091119/testcc.sh\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake: *** No rule to make target `clean'.  Stop.\nchecking build system type... sparc-sun-solaris2.10\nchecking host system type... sparc-sun-solaris2.10\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking whether build environment is sane... yes\nchecking for a thread-safe mkdir -p... ./install-sh -c -d\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... nawk\nchecking whether make sets $(MAKE)... yes\nchecking for style of include used by make... GNU\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name... \nconfigure: error: in `/export/home/drkirkby/sage-4.2/spkg/build/libm4ri-20091119/src':\nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nError configuring libm4ri\n\nreal    0m2.911s\nuser    0m0.712s\nsys     0m1.285s\nsage: An error occurred while installing libm4ri-20091119\n```\n\n\nWhilst the -Wall and -fPIC flags are no longer being sent to the compiler, the -pedantic flag is getting to the compiler from spkg-install. I think that is what is preventing the Sun compiler from building an executable. I'm attaching another config.log generated on Solaris with the Sun compiler. I think the reason for the failure is pretty simple to sort out. \n\nI'm not sure if you need both -Wall and -pedantic (I don't know exactly what they are each supposed to do), but removing the -pedantic flag near the top of spkg-install, and adding in like this:\n\n\n```\nif [ \"x$COMPILER\"  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall -pedantic\"\nelif [ \"x$COMPILER\" = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ \"x$COMPILER\" = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi\n\n```\n\n\nwill probably do the trick. Then it will only get added on GNU compilers, so should not prevent it building on Solaris 10. \n\nDave \n\n\nDave",
+    "body": "Hi, \nI checked libm4ri-20091119.spkg on two UNIX workstations. \n\n* Sun Blade 2000, Solaris 10 update 7, 2 x 1200 MHz UltraSPARC IV+ processors, 8 GB RAM, Sun Studio 12.1 compiler. \n* HP C3600, HP-UX 11.11, 1 x 552 MHz PA-RISC processor, 8 GB RAM, gcc 4.4.0. \n\nI hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\n\n == General points ==\n\n* In spkg-install, if the tests fail, there is a message generated to say to report this upstream. It would be useful if that message could say where to - i.e. a web site, email address etc. Things are more likely to be reported upstream if someone can easily find where to report it to. I actually like the idea of suggesting to report this upstream. Other packages should follow your example. \n\n* Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\n```\nif [ \"$SAGE_DEBUG\" = \"1\" ]; \n```\nto \n\n```\nif [ \"x$SAGE_DEBUG\" = \"xyes\" ]; \n```\n\nHowever, there was a consensus some time back that the default should be to build with debug information present (-g flag) and only if SAGE_DEBUG was set to \"no\" should -g not be there. \n\nHowever, adding your --enable-debug flag to the configure script might have a serious impact on performance, in which case  you should not enable that by default. You can best judge how to handle that. \n\n* One bit of code has this:\n\n```\nCFLAGS=\"$CFLAGS $INCLUDES -L$SAGE_LOCAL/lib -pedantic -g\"\n```\n\nSo -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific flag. Secondly, there is the issue of whether the -g flag should be there or not. The '-g' flag does appear to be a portable flag, so should not be a problem on any compiler I know of. \n\nNow to the results. \n\n == Results on HP-UX 11.11 with gcc 4.4.0 ==\n\nM4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\nThe package went on to compile ok on HP-UX, and passed all tests. That is certainly better than many packages. \n\nThere was however a few things that perhaps can be addressed. One is HP-UX specific, so I would not bother trying to fix that, but the other two I believe will happen on other platforms too.  \n\n* There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\n```\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:359:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:22:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:367:1: warning: \"CPU_L1_CACHE\" redefined\n```\n\nthis happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a **lot** better than many others in this respect. \n\n* libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\n```\n./m4ri/config.h:5:1: warning: this is the location of the previous definition\n\tmv -f .deps/test_kernel.Tpo .deps/test_kernel.Po\n\t/bin/sh ./libtool --tag=CC    --mode=link gcc -std=gnu99    -I/home/drkirkby/sage-4.2/local/include/ -L/home/drkirkby/sage-4.2/local/lib -pedantic -g -fPIC -Wall  -O2  -lm4ri -lm  -o test_kernel test_kernel.o  \nlibtool: link: warning: this platform does not like uninstalled shared libraries\nlibtool: link: warning: `test_kernel' will be relinked during installation\n```\n\n* I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. \n\nSo overall, on HP-UX, this is pretty good, though perhaps you can sort out at least the first of these. \n\n == Results on Solaris 10 update 7 (SPARC) with Sun Studio 12.1 compiler ==\n\nHere things were not as successful as on HP-UX with gcc. \n\n4MRI will not build with Sun Studio. \n\n```\nlibm4ri-20091119/testcc.sh\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake: *** No rule to make target `clean'.  Stop.\nchecking build system type... sparc-sun-solaris2.10\nchecking host system type... sparc-sun-solaris2.10\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking whether build environment is sane... yes\nchecking for a thread-safe mkdir -p... ./install-sh -c -d\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... nawk\nchecking whether make sets $(MAKE)... yes\nchecking for style of include used by make... GNU\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name... \nconfigure: error: in `/export/home/drkirkby/sage-4.2/spkg/build/libm4ri-20091119/src':\nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nError configuring libm4ri\n\nreal    0m2.911s\nuser    0m0.712s\nsys     0m1.285s\nsage: An error occurred while installing libm4ri-20091119\n```\n\nWhilst the -Wall and -fPIC flags are no longer being sent to the compiler, the -pedantic flag is getting to the compiler from spkg-install. I think that is what is preventing the Sun compiler from building an executable. I'm attaching another config.log generated on Solaris with the Sun compiler. I think the reason for the failure is pretty simple to sort out. \n\nI'm not sure if you need both -Wall and -pedantic (I don't know exactly what they are each supposed to do), but removing the -pedantic flag near the top of spkg-install, and adding in like this:\n\n```\nif [ \"x$COMPILER\"  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall -pedantic\"\nelif [ \"x$COMPILER\" = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ \"x$COMPILER\" = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi\n\n```\n\nwill probably do the trick. Then it will only get added on GNU compilers, so should not prevent it building on Solaris 10. \n\nDave \n\n\nDave",
     "created_at": "2009-11-19T17:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -439,17 +442,14 @@ I hope the results of the tests are useful. Sorry if some of these existed in yo
 
 * Since the current environment script enforces SAGE_64 to be "yes" or "no", then I think for consistency we should do the same for "SAGE_DEBUG". So I would change the 
 
-
 ```
 if [ "$SAGE_DEBUG" = "1" ]; 
 ```
-
 to 
 
 ```
 if [ "x$SAGE_DEBUG" = "xyes" ]; 
 ```
-
 
 However, there was a consensus some time back that the default should be to build with debug information present (-g flag) and only if SAGE_DEBUG was set to "no" should -g not be there. 
 
@@ -457,11 +457,9 @@ However, adding your --enable-debug flag to the configure script might have a se
 
 * One bit of code has this:
 
-
 ```
 CFLAGS="$CFLAGS $INCLUDES -L$SAGE_LOCAL/lib -pedantic -g"
 ```
-
 
 So -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific flag. Secondly, there is the issue of whether the -g flag should be there or not. The '-g' flag does appear to be a portable flag, so should not be a problem on any compiler I know of. 
 
@@ -487,11 +485,9 @@ In file included from src/brilliantrussian.c:22:
 src/misc.h:367:1: warning: "CPU_L1_CACHE" redefined
 ```
 
-
 this happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a **lot** better than many others in this respect. 
 
 * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:
-
 
 ```
 ./m4ri/config.h:5:1: warning: this is the location of the previous definition
@@ -500,7 +496,6 @@ this happened on numerous files. Since the cache size will not be determined on 
 libtool: link: warning: this platform does not like uninstalled shared libraries
 libtool: link: warning: `test_kernel' will be relinked during installation
 ```
-
 
 * I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. 
 
@@ -511,7 +506,6 @@ So overall, on HP-UX, this is pretty good, though perhaps you can sort out at le
 Here things were not as successful as on HP-UX with gcc. 
 
 4MRI will not build with Sun Studio. 
-
 
 ```
 libm4ri-20091119/testcc.sh
@@ -550,11 +544,9 @@ sys     0m1.285s
 sage: An error occurred while installing libm4ri-20091119
 ```
 
-
 Whilst the -Wall and -fPIC flags are no longer being sent to the compiler, the -pedantic flag is getting to the compiler from spkg-install. I think that is what is preventing the Sun compiler from building an executable. I'm attaching another config.log generated on Solaris with the Sun compiler. I think the reason for the failure is pretty simple to sort out. 
 
 I'm not sure if you need both -Wall and -pedantic (I don't know exactly what they are each supposed to do), but removing the -pedantic flag near the top of spkg-install, and adding in like this:
-
 
 ```
 if [ "x$COMPILER"  = "xGNU" ] ; then 
@@ -566,7 +558,6 @@ elif [ "x$COMPILER" = "xHP_on_HPUX" ] ; then
 fi
 
 ```
-
 
 will probably do the trick. Then it will only get added on GNU compilers, so should not prevent it building on Solaris 10. 
 
@@ -582,7 +573,7 @@ Dave
 archive/issue_comments_061680.json:
 ```json
 {
-    "body": "Replying to [comment:10 drkirkby]:\n> I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\nVery helpful indeed! \n\n> In spkg-install, if the tests fail, there is a message generated to say to report this \n> upstream. It would be useful if that message could say where to\n\nDone.\n\n> Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for \n> consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\nOkay, why not.\n \n> So -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific \n> flag. \n\nMoved to the GNU specific part.\n\n\n> M4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\nIf you like you can run `./configure --enable-cachetune` which should get rid of these warnings/issues. It will be default if the static tests failed soon and eventually default as such.\n \n>  There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\nSee above.\n\n>  * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\nDoesn't ring a bell, so I won't address this for now.\n\n>  I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null\n\nI don't do anything with /dev/null, so I gues it must be in the toolchain.\n\n> 4MRI will not build with Sun Studio. \n\nThis should be fixed now.\n\nhttp://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.spkg",
+    "body": "Replying to [comment:10 drkirkby]:\n> I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\n\nVery helpful indeed! \n\n> In spkg-install, if the tests fail, there is a message generated to say to report this \n> upstream. It would be useful if that message could say where to\n\n\nDone.\n\n> Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for \n> consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\n\nOkay, why not.\n \n> So -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific \n> flag. \n\n\nMoved to the GNU specific part.\n\n\n> M4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\n\nIf you like you can run `./configure --enable-cachetune` which should get rid of these warnings/issues. It will be default if the static tests failed soon and eventually default as such.\n \n>  There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\n\nSee above.\n\n>  * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\n\nDoesn't ring a bell, so I won't address this for now.\n\n>  I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null\n\n\nI don't do anything with /dev/null, so I gues it must be in the toolchain.\n\n> 4MRI will not build with Sun Studio. \n\n\nThis should be fixed now.\n\nhttp://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.spkg",
     "created_at": "2009-11-20T10:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -594,41 +585,50 @@ archive/issue_comments_061680.json:
 Replying to [comment:10 drkirkby]:
 > I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!
 
+
 Very helpful indeed! 
 
 > In spkg-install, if the tests fail, there is a message generated to say to report this 
 > upstream. It would be useful if that message could say where to
+
 
 Done.
 
 > Since the current environment script enforces SAGE_64 to be "yes" or "no", then I think for 
 > consistency we should do the same for "SAGE_DEBUG". So I would change the 
 
+
 Okay, why not.
  
 > So -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific 
 > flag. 
+
 
 Moved to the GNU specific part.
 
 
 > M4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. 
 
+
 If you like you can run `./configure --enable-cachetune` which should get rid of these warnings/issues. It will be default if the static tests failed soon and eventually default as such.
  
 >  There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. 
+
 
 See above.
 
 >  * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:
 
+
 Doesn't ring a bell, so I won't address this for now.
 
 >  I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null
 
+
 I don't do anything with /dev/null, so I gues it must be in the toolchain.
 
 > 4MRI will not build with Sun Studio. 
+
 
 This should be fixed now.
 
@@ -641,7 +641,7 @@ http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.spkg
 archive/issue_comments_061681.json:
 ```json
 {
-    "body": "Hi,\nit now builds fine, and passes all tests on Solaris with the Sun compiler. \n\nI did not recheck on HP-UX as I have powered the machine off, and it is the garage, but I suspect it will still be fine there. \n\nBut I notice at the top of spkg-install you have \n\n\n```\nSAGE_DEBUG=0\n```\n\n\nwhich means you override the value of the environment variable, so it makes any tests pointless. That should be very easy to fix.  \n\n == Suspect source code found with Sun's lint ==\n\nAs you can probably see, I can be a bit picky, but I am keen the quality of software in Sage is improved as much as possible. Some, such as *lcalc* leaves a lot to be desired in my opinion. The code in there is pretty awful, which means I'd be suspicious myself of trusting any results that make use of *lcalc*. \n\nAnyway, with that in mind, I decided to have a **quick** look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:\n\n\n```\n$ lint *.c\n```\n\n\nin the 'src' directory. Here are a few examples of things I found. I've attached a log of the lint results, so perhaps you can have a look though them, to see if there are things that you should fix. \n\nIn  grayflex.c\n\n```\nint m4ri_opt_k(int a,int b,int c) {\n  int n = MIN(a,b);\n  int res = MIN( MAXKAY, MAX(1, (int)(0.75*log2_floor(n))) );\n  return res;\n}\n```\n\n\ndoes not use the argument 'c' at all. \n\nIn permutation.c, the following function\n\n\n```\nvoid mzp_set_ui(mzp_t *P, unsigned int value) {\n  size_t i;\n  for (i=0; i<P->length; i++) {\n    P->values[i] = i;\n  }\n}\n```\n\ndoes not use the integer 'value' at any point. \n\nLine 1180 of strassen.c \n\n```\n mzd_t* _mzd_addmul_weird_weird (mzd_t* C, mzd_t* A, mzd_t *B, int cutoff){\n```\n\n\ntakes a argument 'cutoff' but you never actually use 'cutoff' in that function. \n\nsqrt() is used in brilliantrussian.c, but the header file math.h is not included.",
+    "body": "Hi,\nit now builds fine, and passes all tests on Solaris with the Sun compiler. \n\nI did not recheck on HP-UX as I have powered the machine off, and it is the garage, but I suspect it will still be fine there. \n\nBut I notice at the top of spkg-install you have \n\n```\nSAGE_DEBUG=0\n```\n\nwhich means you override the value of the environment variable, so it makes any tests pointless. That should be very easy to fix.  \n\n == Suspect source code found with Sun's lint ==\n\nAs you can probably see, I can be a bit picky, but I am keen the quality of software in Sage is improved as much as possible. Some, such as *lcalc* leaves a lot to be desired in my opinion. The code in there is pretty awful, which means I'd be suspicious myself of trusting any results that make use of *lcalc*. \n\nAnyway, with that in mind, I decided to have a **quick** look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:\n\n```\n$ lint *.c\n```\n\nin the 'src' directory. Here are a few examples of things I found. I've attached a log of the lint results, so perhaps you can have a look though them, to see if there are things that you should fix. \n\nIn  grayflex.c\n\n```\nint m4ri_opt_k(int a,int b,int c) {\n  int n = MIN(a,b);\n  int res = MIN( MAXKAY, MAX(1, (int)(0.75*log2_floor(n))) );\n  return res;\n}\n```\n\ndoes not use the argument 'c' at all. \n\nIn permutation.c, the following function\n\n```\nvoid mzp_set_ui(mzp_t *P, unsigned int value) {\n  size_t i;\n  for (i=0; i<P->length; i++) {\n    P->values[i] = i;\n  }\n}\n```\ndoes not use the integer 'value' at any point. \n\nLine 1180 of strassen.c \n\n```\n mzd_t* _mzd_addmul_weird_weird (mzd_t* C, mzd_t* A, mzd_t *B, int cutoff){\n```\n\ntakes a argument 'cutoff' but you never actually use 'cutoff' in that function. \n\nsqrt() is used in brilliantrussian.c, but the header file math.h is not included.",
     "created_at": "2009-11-20T11:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -657,11 +657,9 @@ I did not recheck on HP-UX as I have powered the machine off, and it is the gara
 
 But I notice at the top of spkg-install you have 
 
-
 ```
 SAGE_DEBUG=0
 ```
-
 
 which means you override the value of the environment variable, so it makes any tests pointless. That should be very easy to fix.  
 
@@ -671,11 +669,9 @@ As you can probably see, I can be a bit picky, but I am keen the quality of soft
 
 Anyway, with that in mind, I decided to have a **quick** look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:
 
-
 ```
 $ lint *.c
 ```
-
 
 in the 'src' directory. Here are a few examples of things I found. I've attached a log of the lint results, so perhaps you can have a look though them, to see if there are things that you should fix. 
 
@@ -689,11 +685,9 @@ int m4ri_opt_k(int a,int b,int c) {
 }
 ```
 
-
 does not use the argument 'c' at all. 
 
 In permutation.c, the following function
-
 
 ```
 void mzp_set_ui(mzp_t *P, unsigned int value) {
@@ -703,7 +697,6 @@ void mzp_set_ui(mzp_t *P, unsigned int value) {
   }
 }
 ```
-
 does not use the integer 'value' at any point. 
 
 Line 1180 of strassen.c 
@@ -711,7 +704,6 @@ Line 1180 of strassen.c
 ```
  mzd_t* _mzd_addmul_weird_weird (mzd_t* C, mzd_t* A, mzd_t *B, int cutoff){
 ```
-
 
 takes a argument 'cutoff' but you never actually use 'cutoff' in that function. 
 
@@ -806,7 +798,7 @@ What's holding off the positive review?
 archive/issue_comments_061686.json:
 ```json
 {
-    "body": "Looks good to me, based on the above and my own snooping around. \nWell I don't like that \n\n\n```\n$ hg status\n? testcc.sh\n```\n\n\nPositive review subject to checking in testcc.sh somewhere.",
+    "body": "Looks good to me, based on the above and my own snooping around. \nWell I don't like that \n\n```\n$ hg status\n? testcc.sh\n```\n\nPositive review subject to checking in testcc.sh somewhere.",
     "created_at": "2009-11-20T12:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
@@ -818,12 +810,10 @@ archive/issue_comments_061686.json:
 Looks good to me, based on the above and my own snooping around. 
 Well I don't like that 
 
-
 ```
 $ hg status
 ? testcc.sh
 ```
-
 
 Positive review subject to checking in testcc.sh somewhere.
 

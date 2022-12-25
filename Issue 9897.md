@@ -71,7 +71,7 @@ s/This files/This file/
 archive/issue_comments_098235.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> s/seperate/separate/\n> \n> s/This files/This file/\n\nDone.",
+    "body": "Replying to [comment:3 leif]:\n> s/seperate/separate/\n> \n> s/This files/This file/\n\n\nDone.",
     "created_at": "2010-09-16T17:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
@@ -84,6 +84,7 @@ Replying to [comment:3 leif]:
 > s/seperate/separate/
 > 
 > s/This files/This file/
+
 
 Done.
 
@@ -232,7 +233,7 @@ Adds authors to files in sage/libs/pari, apply on top of 9898_pari_decl.patch
 archive/issue_comments_098243.json:
 ```json
 {
-    "body": "Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by @jdemeyer created at 2010-09-26 17:08:05\n\nReplying to [comment:10 leif]:\n> Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.\nDone.\n\n> Add svn snapshot number?\nI don't think that is so relevant (those files would not look that much different for other SVN snapshot numbers). Besides, people can still look at the ticket #9343 for more information.",
+    "body": "Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by @jdemeyer created at 2010-09-26 17:08:05\n\nReplying to [comment:10 leif]:\n> Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.\n\nDone.\n\n> Add svn snapshot number?\n\nI don't think that is so relevant (those files would not look that much different for other SVN snapshot numbers). Besides, people can still look at the ticket #9343 for more information.",
     "created_at": "2010-09-26T17:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
@@ -245,9 +246,11 @@ Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/
 
 Replying to [comment:10 leif]:
 > Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.
+
 Done.
 
 > Add svn snapshot number?
+
 I don't think that is so relevant (those files would not look that much different for other SVN snapshot numbers). Besides, people can still look at the ticket #9343 for more information.
 
 
@@ -257,7 +260,7 @@ I don't think that is so relevant (those files would not look that much differen
 archive/issue_comments_098244.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> [...] people can still look at the ticket #9343 for more information.\n\n:-)\n\nBtw, is [08-15](http://en.wikipedia.org/wiki/08/15) a [*symbolic*](http://de.wikipedia.org/wiki/08/15_%28Redewendung%29) date?\n\nPositive review for the second patch, too.",
+    "body": "Replying to [comment:11 jdemeyer]:\n> [...] people can still look at the ticket #9343 for more information.\n\n\n:-)\n\nBtw, is [08-15](http://en.wikipedia.org/wiki/08/15) a [*symbolic*](http://de.wikipedia.org/wiki/08/15_%28Redewendung%29) date?\n\nPositive review for the second patch, too.",
     "created_at": "2010-09-26T17:54:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
@@ -268,6 +271,7 @@ archive/issue_comments_098244.json:
 
 Replying to [comment:11 jdemeyer]:
 > [...] people can still look at the ticket #9343 for more information.
+
 
 :-)
 

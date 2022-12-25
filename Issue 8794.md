@@ -137,7 +137,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080429.json:
 ```json
 {
-    "body": "As I recall when doing #15768, there were some sphinx errors with this file. So IMO we should close this as a duplicate and just review #15768.\n----\nNew commits:",
+    "body": "As I recall when doing #15768, there were some sphinx errors with this file. So IMO we should close this as a duplicate and just review #15768.\n\n---\nNew commits:",
     "created_at": "2014-02-11T19:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8794",
     "type": "issue_comment",
@@ -147,7 +147,8 @@ archive/issue_comments_080429.json:
 ```
 
 As I recall when doing #15768, there were some sphinx errors with this file. So IMO we should close this as a duplicate and just review #15768.
-----
+
+---
 New commits:
 
 

@@ -84,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_002507.json:
 ```json
 {
-    "body": "*mostly* fixed by the patch:\n\n[http://sage.math.washington.edu/home/boothby/my_patches/arith_2.8.3.hg](http://sage.math.washington.edu/home/boothby/my_patches/arith_2.8.3.hg)\n\nthe following files might still contain problems:\n\n```\nrings/integer.pyx\nrings/rational.pyx\n\ngroups/abelian_gps/abelian_group_element.py\ngroups/abelian_gps/dual_abelian_group_element.py\n\nrings/power_series_mpoly.pyx\nrings/power_series_poly.pyx\n\nschemes/generic/morphism.py\n\ncategories/morphism.pyx\ncategories/morphism.pyx\n\nrings/padics/padic_extension_generic_element.py\nrings/padics/padic_lazy_element.py\nrings/padics/valuation.py\nrings/padics/local_generic_element.pyx\nrings/padics/padic_capped_absolute_element.pyx\nrings/padics/padic_capped_relative_element.pyx\nrings/padics/padic_fixed_mod_element.pyx\n```\n",
+    "body": "*mostly* fixed by the patch:\n\n[http://sage.math.washington.edu/home/boothby/my_patches/arith_2.8.3.hg](http://sage.math.washington.edu/home/boothby/my_patches/arith_2.8.3.hg)\n\nthe following files might still contain problems:\n\n```\nrings/integer.pyx\nrings/rational.pyx\n\ngroups/abelian_gps/abelian_group_element.py\ngroups/abelian_gps/dual_abelian_group_element.py\n\nrings/power_series_mpoly.pyx\nrings/power_series_poly.pyx\n\nschemes/generic/morphism.py\n\ncategories/morphism.pyx\ncategories/morphism.pyx\n\nrings/padics/padic_extension_generic_element.py\nrings/padics/padic_lazy_element.py\nrings/padics/valuation.py\nrings/padics/local_generic_element.pyx\nrings/padics/padic_capped_absolute_element.pyx\nrings/padics/padic_capped_relative_element.pyx\nrings/padics/padic_fixed_mod_element.pyx\n```",
     "created_at": "2007-08-29T23:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ rings/padics/padic_fixed_mod_element.pyx
 
 
 
-
 ---
 
 archive/issue_comments_002508.json:
@@ -149,7 +148,7 @@ Changing status from assigned to new.
 archive/issue_comments_002509.json:
 ```json
 {
-    "body": "final patch (from me):\n\n[http://sage.math.washington.edu/home/boothby/my_patches/arith503.hg](http://sage.math.washington.edu/home/boothby/my_patches/arith503.hg)\n\nnote:  the following files have no doctests, and are difficult to use -- hence have not been updated.  Once #610 is resolved, the pow methods there should be updated and this can be resolved.\n\n\n```\nrings/padics/padic_extension_generic_element.py\nrings/padics/padic_lazy_element.py\nrings/padics/valuation.py\nrings/padics/local_generic_element.pyx\nrings/padics/padic_capped_absolute_element.pyx\nrings/padics/padic_capped_relative_element.pyx\nrings/padics/padic_fixed_mod_element.pyx\n```\n",
+    "body": "final patch (from me):\n\n[http://sage.math.washington.edu/home/boothby/my_patches/arith503.hg](http://sage.math.washington.edu/home/boothby/my_patches/arith503.hg)\n\nnote:  the following files have no doctests, and are difficult to use -- hence have not been updated.  Once #610 is resolved, the pow methods there should be updated and this can be resolved.\n\n```\nrings/padics/padic_extension_generic_element.py\nrings/padics/padic_lazy_element.py\nrings/padics/valuation.py\nrings/padics/local_generic_element.pyx\nrings/padics/padic_capped_absolute_element.pyx\nrings/padics/padic_capped_relative_element.pyx\nrings/padics/padic_fixed_mod_element.pyx\n```",
     "created_at": "2007-09-07T01:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
@@ -164,7 +163,6 @@ final patch (from me):
 
 note:  the following files have no doctests, and are difficult to use -- hence have not been updated.  Once #610 is resolved, the pow methods there should be updated and this can be resolved.
 
-
 ```
 rings/padics/padic_extension_generic_element.py
 rings/padics/padic_lazy_element.py
@@ -174,7 +172,6 @@ rings/padics/padic_capped_absolute_element.pyx
 rings/padics/padic_capped_relative_element.pyx
 rings/padics/padic_fixed_mod_element.pyx
 ```
-
 
 
 

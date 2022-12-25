@@ -3,7 +3,7 @@
 archive/issues_007170.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne @dimpase\n\nKeywords: HP-UX install\n\nI think we should either \n\n* check for the program 'install' in a modifed 'prereq' script\n* Make use of 'cp' installed. \n* include an 'install'  \n\n\n\n```\n       gcc -O2 -g twist.c  -o twist\n        mkdir -p /home/drkirkby/sage-4.1.2.rc0/local/bin\n        no install in /home/drkirkby/sage-4.1.2.rc0 /home/drkirkby/sage-4.1.2.rc0/local/bin /home/drkirkby/sage-4.1.2.rc0 /home/drkirkby/sage-4.1.2.rc0/local/bin /usr/local/bin /usr/bin /opt/ansic/bin /usr/ccs/bin /usr/contrib/bin /opt/mpi/bin /opt/hparray/bin /opt/nettladm/bin /opt/upgrade/bin /opt/fcms/bin /usr/bin/X11 /usr/contrib/bin/X11 /opt/graphics/common/bin /opt/pd/bin /opt/resmon/bin /opt/mozilla /opt/netscape /usr/local/bin /opt/gnome/bin /opt/graphics/phigs/bin /opt/OpenSource/bin /usr/sbin/diag/contrib /opt/wbem/bin /opt/wbem/sbin /opt/hp-gcc/bin /opt/aCC/bin /opt/cadvise/bin /opt/sentinel/bin /opt/langtools/bin . /opt/kirkby/bin reid/optimal /home/drkirkby/sage-4.1.2.rc0/local/bin\nMake: Cannot load no.  Stop.\n*** Error exit code 1\n\nStop.\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7170\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne @dimpase\n\nKeywords: HP-UX install\n\nI think we should either \n\n* check for the program 'install' in a modifed 'prereq' script\n* Make use of 'cp' installed. \n* include an 'install'  \n\n\n```\n       gcc -O2 -g twist.c  -o twist\n        mkdir -p /home/drkirkby/sage-4.1.2.rc0/local/bin\n        no install in /home/drkirkby/sage-4.1.2.rc0 /home/drkirkby/sage-4.1.2.rc0/local/bin /home/drkirkby/sage-4.1.2.rc0 /home/drkirkby/sage-4.1.2.rc0/local/bin /usr/local/bin /usr/bin /opt/ansic/bin /usr/ccs/bin /usr/contrib/bin /opt/mpi/bin /opt/hparray/bin /opt/nettladm/bin /opt/upgrade/bin /opt/fcms/bin /usr/bin/X11 /usr/contrib/bin/X11 /opt/graphics/common/bin /opt/pd/bin /opt/resmon/bin /opt/mozilla /opt/netscape /usr/local/bin /opt/gnome/bin /opt/graphics/phigs/bin /opt/OpenSource/bin /usr/sbin/diag/contrib /opt/wbem/bin /opt/wbem/sbin /opt/hp-gcc/bin /opt/aCC/bin /opt/cadvise/bin /opt/sentinel/bin /opt/langtools/bin . /opt/kirkby/bin reid/optimal /home/drkirkby/sage-4.1.2.rc0/local/bin\nMake: Cannot load no.  Stop.\n*** Error exit code 1\n\nStop.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7170\n\n",
     "created_at": "2009-10-10T07:43:05Z",
     "labels": [
         "component: porting",
@@ -30,7 +30,6 @@ I think we should either
 * include an 'install'  
 
 
-
 ```
        gcc -O2 -g twist.c  -o twist
         mkdir -p /home/drkirkby/sage-4.1.2.rc0/local/bin
@@ -41,7 +40,6 @@ Make: Cannot load no.  Stop.
 Stop.
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7170

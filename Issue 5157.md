@@ -3,7 +3,7 @@
 archive/issues_005157.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis has been driving me nuts for a while.  If you do \n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n[[press control-c]]\nsage: EllipticCurve([1,3]).gens(use_database=False)\nTraceback (most recent call last):\n...\nRuntimeError: [Errno 9] Bad file descriptor\nError evaluating [0, 0, 0, 1, 3] in Mwrank\n```\n\n\nThis is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). \n\nI think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:\n\n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n...\nKeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous session are now invalid)\nsage: EllipticCurve([1,3]).gens(use_database=False)\n[(-1 : 1 : 1)]\n```\n\n\nBUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).\n\nThe fix is to make it so the mwrank interface recovers automatically if it gets left in this state. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5157\n\n",
+    "body": "Assignee: @williamstein\n\nThis has been driving me nuts for a while.  If you do \n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n[[press control-c]]\nsage: EllipticCurve([1,3]).gens(use_database=False)\nTraceback (most recent call last):\n...\nRuntimeError: [Errno 9] Bad file descriptor\nError evaluating [0, 0, 0, 1, 3] in Mwrank\n```\n\nThis is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). \n\nI think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:\n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n...\nKeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous session are now invalid)\nsage: EllipticCurve([1,3]).gens(use_database=False)\n[(-1 : 1 : 1)]\n```\n\nBUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).\n\nThe fix is to make it so the mwrank interface recovers automatically if it gets left in this state. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5157\n\n",
     "created_at": "2009-02-02T06:09:32Z",
     "labels": [
         "component: algebra",
@@ -31,11 +31,9 @@ RuntimeError: [Errno 9] Bad file descriptor
 Error evaluating [0, 0, 0, 1, 3] in Mwrank
 ```
 
-
 This is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). 
 
 I think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:
-
 
 ```
 sage: EllipticCurve(997).gens(use_database=False)
@@ -44,7 +42,6 @@ KeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous
 sage: EllipticCurve([1,3]).gens(use_database=False)
 [(-1 : 1 : 1)]
 ```
-
 
 BUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).
 
@@ -116,7 +113,7 @@ This should be refereed by someone who knows pexpect!
 archive/issue_comments_039434.json:
 ```json
 {
-    "body": "> It seems to be okay, but do we really want the \"print '*'*1000\" in there? \n\nThat's debugging code -- I updated the patch to not have it. \n\n> This should be refereed by someone who knows pexpect! \n\nMhansen does, and he said \"it seems to be okay\".",
+    "body": "> It seems to be okay, but do we really want the \"print '*'*1000\" in there? \n\n\nThat's debugging code -- I updated the patch to not have it. \n\n> This should be refereed by someone who knows pexpect! \n\n\nMhansen does, and he said \"it seems to be okay\".",
     "created_at": "2009-02-02T10:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
@@ -127,9 +124,11 @@ archive/issue_comments_039434.json:
 
 > It seems to be okay, but do we really want the "print '*'*1000" in there? 
 
+
 That's debugging code -- I updated the patch to not have it. 
 
 > This should be refereed by someone who knows pexpect! 
+
 
 Mhansen does, and he said "it seems to be okay".
 

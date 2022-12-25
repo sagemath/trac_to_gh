@@ -3,7 +3,7 @@
 archive/issues_002972.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nRunning of what will be 3.0.rc0 shortly on sage.math leads to:\n\n```\nmabshoff@sage:sage-3.0.rc0$ ./sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\nsage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\n********************************************************************************\nType r at the (gdb) prompt to run the doctests.\nType bt if there is a crash to see a traceback.\n********************************************************************************\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n\n(gdb) r\nStarting program: /scratch/mabshoff/release-cycle/sage-3.0.rc0/local/bin/python /scratch/mabshoff/release-cycle/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py\n[Thread debugging using libthread_db enabled]\n[New Thread 47563467300704 (LWP 11542)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47563467300704 (LWP 11542)]\nnSetChar (r=0x2b424b843880) at numbers.cc:131\n131     numbers.cc: No such file or directory.\n        in numbers.cc\nCurrent language:  auto; currently c++\n(gdb) bt\n#0  nSetChar (r=0x2b424b843880) at numbers.cc:131\n#1  0x00002b424b5a4293 in rChangeCurrRing (r=0x3) at ring.cc:108\n#2  0x00002b424b2c007d in __pyx_tp_dealloc_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomialRing_libsingular (o=0x1fd4e90) at sage/rings/polynomial/multi_polynomial_libsingular.cpp:3333\n#3  0x00000000004b14e3 in collect (generation=<value optimized out>) at Modules/gcmodule.c:714\n#4  0x00000000004b1834 in PyGC_Collect () at Modules/gcmodule.c:1265\n#5  0x00000000004a758d in Py_Finalize () at Python/pythonrun.c:389\n#6  0x00000000004a70db in handle_system_exit () at Python/pythonrun.c:1618\n#7  0x00000000004a72d9 in PyErr_PrintEx (set_sys_last_vars=1) at Python/pythonrun.c:1064\n#8  0x00000000004a7ae7 in PyRun_SimpleFileExFlags (fp=0x0, filename=<value optimized out>, closeit=1, flags=0x7fff6f971740)\n    at Python/pythonrun.c:978\n#9  0x0000000000412160 in Py_Main (argc=<value optimized out>, argv=0x7fff6f971858) at Modules/main.c:523\n#10 0x00002b423b7094ca in __libc_start_main () from /lib/libc.so.6\n#11 0x000000000041169a in _start () at ../sysdeps/x86_64/elf/start.S:113\n(gdb) The program is running.  Exit anyway? (y or n) y\n```\n\nThis is reproducible. Since I am a mean guy I assign this to malb ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2972\n\n",
+    "body": "Assignee: @malb\n\nRunning of what will be 3.0.rc0 shortly on sage.math leads to:\n\n```\nmabshoff@sage:sage-3.0.rc0$ ./sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\nsage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\n********************************************************************************\nType r at the (gdb) prompt to run the doctests.\nType bt if there is a crash to see a traceback.\n********************************************************************************\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n\n(gdb) r\nStarting program: /scratch/mabshoff/release-cycle/sage-3.0.rc0/local/bin/python /scratch/mabshoff/release-cycle/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py\n[Thread debugging using libthread_db enabled]\n[New Thread 47563467300704 (LWP 11542)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47563467300704 (LWP 11542)]\nnSetChar (r=0x2b424b843880) at numbers.cc:131\n131     numbers.cc: No such file or directory.\n        in numbers.cc\nCurrent language:  auto; currently c++\n(gdb) bt\n#0  nSetChar (r=0x2b424b843880) at numbers.cc:131\n#1  0x00002b424b5a4293 in rChangeCurrRing (r=0x3) at ring.cc:108\n#2  0x00002b424b2c007d in __pyx_tp_dealloc_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomialRing_libsingular (o=0x1fd4e90) at sage/rings/polynomial/multi_polynomial_libsingular.cpp:3333\n#3  0x00000000004b14e3 in collect (generation=<value optimized out>) at Modules/gcmodule.c:714\n#4  0x00000000004b1834 in PyGC_Collect () at Modules/gcmodule.c:1265\n#5  0x00000000004a758d in Py_Finalize () at Python/pythonrun.c:389\n#6  0x00000000004a70db in handle_system_exit () at Python/pythonrun.c:1618\n#7  0x00000000004a72d9 in PyErr_PrintEx (set_sys_last_vars=1) at Python/pythonrun.c:1064\n#8  0x00000000004a7ae7 in PyRun_SimpleFileExFlags (fp=0x0, filename=<value optimized out>, closeit=1, flags=0x7fff6f971740)\n    at Python/pythonrun.c:978\n#9  0x0000000000412160 in Py_Main (argc=<value optimized out>, argv=0x7fff6f971858) at Modules/main.c:523\n#10 0x00002b423b7094ca in __libc_start_main () from /lib/libc.so.6\n#11 0x000000000041169a in _start () at ../sysdeps/x86_64/elf/start.S:113\n(gdb) The program is running.  Exit anyway? (y or n) y\n```\nThis is reproducible. Since I am a mean guy I assign this to malb ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2972\n\n",
     "created_at": "2008-04-20T07:28:17Z",
     "labels": [
         "component: commutative algebra",
@@ -63,7 +63,6 @@ Current language:  auto; currently c++
 #11 0x000000000041169a in _start () at ../sysdeps/x86_64/elf/start.S:113
 (gdb) The program is running.  Exit anyway? (y or n) y
 ```
-
 This is reproducible. Since I am a mean guy I assign this to malb ;)
 
 Cheers,
@@ -81,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2972
 archive/issue_comments_020434.json:
 ```json
 {
-    "body": "In addition valgrind says:\n\n```\n==5321== Conditional jump or move depends on uninitialised value(s)\n==5321==    at 0x6969F9D: longest_match (deflate.c:1121)\n==5321==    by 0x696B368: deflate_slow (deflate.c:1595)\n==5321==    by 0x6969462: deflate (deflate.c:790)\n==5321==    by 0x8E81577: PyZlib_compress (zlibmodule.c:166)\n==5321==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5321==    by 0x8D73CB0: __pyx_pf_4sage_9structure_11sage_object_10SageObject_dumps (sage_object.c:1406)\n==5321==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5321==    by 0x8D76F89: __pyx_pf_4sage_9structure_11sage_object_dumps (sage_object.c:4895)\n==5321==    by 0x4833C1: PyEval_EvalFrameEx (ceval.c:3564)\n==5321==    by 0x4852CA: PyEval_EvalCodeEx (ceval.c:2831)\n==5321==    by 0x484054: PyEval_EvalFrameEx (ceval.c:494)\n==5321==    by 0x4852CA: PyEval_EvalCodeEx (ceval.c:2831)\n```\n\nI am not sure if this is related, but it could potentially have something to do with the crash.\n\nCheers,\n\nMichael",
+    "body": "In addition valgrind says:\n\n```\n==5321== Conditional jump or move depends on uninitialised value(s)\n==5321==    at 0x6969F9D: longest_match (deflate.c:1121)\n==5321==    by 0x696B368: deflate_slow (deflate.c:1595)\n==5321==    by 0x6969462: deflate (deflate.c:790)\n==5321==    by 0x8E81577: PyZlib_compress (zlibmodule.c:166)\n==5321==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5321==    by 0x8D73CB0: __pyx_pf_4sage_9structure_11sage_object_10SageObject_dumps (sage_object.c:1406)\n==5321==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5321==    by 0x8D76F89: __pyx_pf_4sage_9structure_11sage_object_dumps (sage_object.c:4895)\n==5321==    by 0x4833C1: PyEval_EvalFrameEx (ceval.c:3564)\n==5321==    by 0x4852CA: PyEval_EvalCodeEx (ceval.c:2831)\n==5321==    by 0x484054: PyEval_EvalFrameEx (ceval.c:494)\n==5321==    by 0x4852CA: PyEval_EvalCodeEx (ceval.c:2831)\n```\nI am not sure if this is related, but it could potentially have something to do with the crash.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T07:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2972",
     "type": "issue_comment",
@@ -107,7 +106,6 @@ In addition valgrind says:
 ==5321==    by 0x484054: PyEval_EvalFrameEx (ceval.c:494)
 ==5321==    by 0x4852CA: PyEval_EvalCodeEx (ceval.c:2831)
 ```
-
 I am not sure if this is related, but it could potentially have something to do with the crash.
 
 Cheers,
@@ -121,7 +119,7 @@ Michael
 archive/issue_comments_020435.json:
 ```json
 {
-    "body": "Here's a doctest failure probably related on 3.0.rc0\n\n\n```\nsage -t  devel/sage/sage/rings/polynomial/laurent_polynomial_ring.pySegmentation fault\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [1.5 s]\n```\n",
+    "body": "Here's a doctest failure probably related on 3.0.rc0\n\n```\nsage -t  devel/sage/sage/rings/polynomial/laurent_polynomial_ring.pySegmentation fault\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [1.5 s]\n```",
     "created_at": "2008-04-20T21:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2972",
     "type": "issue_comment",
@@ -132,7 +130,6 @@ archive/issue_comments_020435.json:
 
 Here's a doctest failure probably related on 3.0.rc0
 
-
 ```
 sage -t  devel/sage/sage/rings/polynomial/laurent_polynomial_ring.pySegmentation fault
 
@@ -142,13 +139,12 @@ A mysterious error (perphaps a memory error?) occurred, which may have crashed d
 
 
 
-
 ---
 
 archive/issue_comments_020436.json:
 ```json
 {
-    "body": "Interestingly, this seems to *only* crash if you redirect standout out to a file:\n\n```\nwas@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py > a\nSegmentation fault\n```\n\n\nbut\n\n```\nwas@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py\n[no seg fault]\n```\n",
+    "body": "Interestingly, this seems to *only* crash if you redirect standout out to a file:\n\n```\nwas@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py > a\nSegmentation fault\n```\n\nbut\n\n```\nwas@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py\n[no seg fault]\n```",
     "created_at": "2008-04-21T02:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2972",
     "type": "issue_comment",
@@ -164,14 +160,12 @@ was@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/
 Segmentation fault
 ```
 
-
 but
 
 ```
 was@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py
 [no seg fault]
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007236.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\n\nit was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.\n\nI also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\nit was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.\n\nI also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
     "created_at": "2009-10-17T20:38:04Z",
     "labels": [
         "component: combinatorics",
@@ -27,7 +27,6 @@ After a vote on `sage-combinat-devel`, see
 ```
 http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91
 ```
-
 it was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.
 
 I also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.
@@ -270,7 +269,7 @@ archive/issue_events_017135.json:
 archive/issue_comments_059922.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> I think it can be another ticket.\n\nOk. Thanks for merging it!\n\n> I'm going to write a \"decorator\" to make deprecated aliases easier.  So, we'd just do \"boxes = deprecated_method_alias(cells)\".\n\n+1!!!",
+    "body": "Replying to [comment:6 mhansen]:\n> I think it can be another ticket.\n\n\nOk. Thanks for merging it!\n\n> I'm going to write a \"decorator\" to make deprecated aliases easier.  So, we'd just do \"boxes = deprecated_method_alias(cells)\".\n\n\n+1!!!",
     "created_at": "2009-10-19T09:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
@@ -282,8 +281,10 @@ archive/issue_comments_059922.json:
 Replying to [comment:6 mhansen]:
 > I think it can be another ticket.
 
+
 Ok. Thanks for merging it!
 
 > I'm going to write a "decorator" to make deprecated aliases easier.  So, we'd just do "boxes = deprecated_method_alias(cells)".
+
 
 +1!!!

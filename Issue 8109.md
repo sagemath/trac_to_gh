@@ -68,7 +68,7 @@ Changing keywords from "" to "ntl".
 archive/issue_comments_071056.json:
 ```json
 {
-    "body": "Preliminary version.\n\nnote: this is mostly a copy of existing files for wrapping ZZ_pE and ZZ_pEX with\n'sed s/ZZ/zz/g' applied.\n\nwarning: there is no test (yet) for checking that the modulus is < NTL_SP_BOUND\n\nstill, doctests pass and here are some results:\n\n```\nsage: c=ntl.zz_pEContext(ntl.zz_pX([1,1,1,1,1], 19800713)) \nsage: a = ntl.zz_pE([3,2], c); b = ntl.zz_pE([1,2], c)\nsage: f = ntl.zz_pEX([a, b, b])\nsage: p = f**123\nsage: q = p+f**77+f\nsage: \nsage: C=ntl.ZZ_pEContext(ntl.ZZ_pX([1,1,1,1,1], 19800713)) \nsage: A = ntl.ZZ_pE([3,2], C); B = ntl.ZZ_pE([1,2], C)\nsage: F = ntl.ZZ_pEX([A, B, B])\nsage: P = F**123\nsage: Q = P+F**77+F\nsage: \nsage: %timeit p+q\n625 loops, best of 3: 59.6 \u00b5s per loop\nsage: %timeit P+Q\n625 loops, best of 3: 180 \u00b5s per loop\nsage: \nsage: %timeit p*q\n125 loops, best of 3: 2.62 ms per loop\nsage: %timeit P*Q\n125 loops, best of 3: 5.65 ms per loop\nsage: \nsage: %timeit p.gcd(q)\n125 loops, best of 3: 7.28 ms per loop\nsage: %timeit P.gcd(Q)\n5 loops, best of 3: 62.5 ms per loop\nsage: \nsage: %timeit p**17\n5 loops, best of 3: 58 ms per loop\nsage: %timeit P**17\n5 loops, best of 3: 129 ms per loop\n```\n",
+    "body": "Preliminary version.\n\nnote: this is mostly a copy of existing files for wrapping ZZ_pE and ZZ_pEX with\n'sed s/ZZ/zz/g' applied.\n\nwarning: there is no test (yet) for checking that the modulus is < NTL_SP_BOUND\n\nstill, doctests pass and here are some results:\n\n```\nsage: c=ntl.zz_pEContext(ntl.zz_pX([1,1,1,1,1], 19800713)) \nsage: a = ntl.zz_pE([3,2], c); b = ntl.zz_pE([1,2], c)\nsage: f = ntl.zz_pEX([a, b, b])\nsage: p = f**123\nsage: q = p+f**77+f\nsage: \nsage: C=ntl.ZZ_pEContext(ntl.ZZ_pX([1,1,1,1,1], 19800713)) \nsage: A = ntl.ZZ_pE([3,2], C); B = ntl.ZZ_pE([1,2], C)\nsage: F = ntl.ZZ_pEX([A, B, B])\nsage: P = F**123\nsage: Q = P+F**77+F\nsage: \nsage: %timeit p+q\n625 loops, best of 3: 59.6 \u00b5s per loop\nsage: %timeit P+Q\n625 loops, best of 3: 180 \u00b5s per loop\nsage: \nsage: %timeit p*q\n125 loops, best of 3: 2.62 ms per loop\nsage: %timeit P*Q\n125 loops, best of 3: 5.65 ms per loop\nsage: \nsage: %timeit p.gcd(q)\n125 loops, best of 3: 7.28 ms per loop\nsage: %timeit P.gcd(Q)\n5 loops, best of 3: 62.5 ms per loop\nsage: \nsage: %timeit p**17\n5 loops, best of 3: 58 ms per loop\nsage: %timeit P**17\n5 loops, best of 3: 129 ms per loop\n```",
     "created_at": "2010-01-29T23:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -122,7 +122,6 @@ sage: %timeit P**17
 
 
 
-
 ---
 
 archive/issue_events_019402.json:
@@ -163,7 +162,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071058.json:
 ```json
 {
-    "body": "Replying to [comment:1 ylchapuy]:\n\n> warning: there is no test (yet) for checking that the modulus is < NTL_SP_BOUND\n\nI must be tired... there is a check, it's done in the lzz_p class.\n\nI guess this one is ready for review then. I will open another ticket to do the same as #7841 latter.",
+    "body": "Replying to [comment:1 ylchapuy]:\n\n> warning: there is no test (yet) for checking that the modulus is < NTL_SP_BOUND\n\n\nI must be tired... there is a check, it's done in the lzz_p class.\n\nI guess this one is ready for review then. I will open another ticket to do the same as #7841 latter.",
     "created_at": "2010-01-29T23:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -175,6 +174,7 @@ archive/issue_comments_071058.json:
 Replying to [comment:1 ylchapuy]:
 
 > warning: there is no test (yet) for checking that the modulus is < NTL_SP_BOUND
+
 
 I must be tired... there is a check, it's done in the lzz_p class.
 
@@ -316,7 +316,7 @@ replacing all previous ones
 archive/issue_comments_071066.json:
 ```json
 {
-    "body": "Attachment [trac_8109-lzz_pEX-all_in_one.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-all_in_one.patch) by ylchapuy created at 2010-02-10 18:41:53\n\nReplying to [comment:6 roed]:\n> I see that you changed it to \"needs work.\"  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?\n\nIt's even worse than that, this file just shouldn't exist :)\nThe last patch replaces all previous ones and should be almost ready for review. I will just check and address the comments made on #7841 before.",
+    "body": "Attachment [trac_8109-lzz_pEX-all_in_one.patch](tarball://root/attachments/some-uuid/ticket8109/trac_8109-lzz_pEX-all_in_one.patch) by ylchapuy created at 2010-02-10 18:41:53\n\nReplying to [comment:6 roed]:\n> I see that you changed it to \"needs work.\"  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?\n\n\nIt's even worse than that, this file just shouldn't exist :)\nThe last patch replaces all previous ones and should be almost ready for review. I will just check and address the comments made on #7841 before.",
     "created_at": "2010-02-10T18:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -329,6 +329,7 @@ Attachment [trac_8109-lzz_pEX-all_in_one.patch](tarball://root/attachments/some-
 
 Replying to [comment:6 roed]:
 > I see that you changed it to "needs work."  One thing I noticed looking at the patch was that sage/libs/ntl/ntl_lzz_decl.pxd seems generally broken: shouldn't those be zz_p and lzz_p, not zz and lzz?
+
 
 It's even worse than that, this file just shouldn't exist :)
 The last patch replaces all previous ones and should be almost ready for review. I will just check and address the comments made on #7841 before.
@@ -399,7 +400,7 @@ in this order.
 archive/issue_comments_071070.json:
 ```json
 {
-    "body": "I get doctest failures on sage.math:\n\n\n```\nsage -t  devel/sage/sage/graphs/graph_list.py # 0 doctests failed\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py # Killed/crashed\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pX.pyx # 5 doctests failed\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi # 3 doctests failed\n```\n\n\nLooks like a 64-bit thing?\n\n\n```\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 178:\n    sage: (1+a+a^2)*x - (1+x+x^2)\nExpected:\n    1152921504606847008*x^2 + (a^2 + a)*x + 1152921504606847008\nGot:\n    1030*x^2 + (a^2 + a)*x + 1030\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 189:\n    sage: -x\nExpected:\n    1152921504606847008*x\nGot:\n    1030*x\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 308:\n    sage: (a+1+x).xgcd(a+x)\nExpected:\n    (1, 1, 1152921504606847008)\nGot:\n    (1, 1, 1030)\n**********************************************************************\n```\n",
+    "body": "I get doctest failures on sage.math:\n\n```\nsage -t  devel/sage/sage/graphs/graph_list.py # 0 doctests failed\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py # Killed/crashed\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pX.pyx # 5 doctests failed\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi # 3 doctests failed\n```\n\nLooks like a 64-bit thing?\n\n```\nsage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 178:\n    sage: (1+a+a^2)*x - (1+x+x^2)\nExpected:\n    1152921504606847008*x^2 + (a^2 + a)*x + 1152921504606847008\nGot:\n    1030*x^2 + (a^2 + a)*x + 1030\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 189:\n    sage: -x\nExpected:\n    1152921504606847008*x\nGot:\n    1030*x\n**********************************************************************\nFile \"/mnt/usb1/scratch/malb/sage-4.3.3/devel/sage-main/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi\", line 308:\n    sage: (a+1+x).xgcd(a+x)\nExpected:\n    (1, 1, 1152921504606847008)\nGot:\n    (1, 1, 1030)\n**********************************************************************\n```",
     "created_at": "2010-04-14T10:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
@@ -410,7 +411,6 @@ archive/issue_comments_071070.json:
 
 I get doctest failures on sage.math:
 
-
 ```
 sage -t  devel/sage/sage/graphs/graph_list.py # 0 doctests failed
 sage -t  devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py # Killed/crashed
@@ -418,9 +418,7 @@ sage -t  devel/sage/sage/libs/ntl/ntl_lzz_pX.pyx # 5 doctests failed
 sage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi # 3 doctests failed
 ```
 
-
 Looks like a 64-bit thing?
-
 
 ```
 sage -t  devel/sage/sage/libs/ntl/ntl_lzz_pEX_linkage.pxi
@@ -447,7 +445,6 @@ Got:
     (1, 1, 1030)
 **********************************************************************
 ```
-
 
 
 

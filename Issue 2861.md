@@ -3,7 +3,7 @@
 archive/issues_002861.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I call `sys.exit()` from a Sage script, the script exits but not with the correct exit code. For example, the script\n\n```\nimport sys\n\nprint 'exiting!'\nsys.exit(1)\n```\n\nexits with exit code 0 when run from Sage:\n\n```\n$ sage exitcode.sage \nexiting!\n1\n$ echo $?\n0\n```\n\n(the 1 gets printed because the preparser turns it into a Sage integer, and Python prints out anything except Python integers.) But the same script works properly when run from Python:\n\n```\n$ python exitcode.sage\nexiting!\n$ echo $?\n1\n```\n\nI don't know if this is Sage or IPython behavior, but having this work would be really useful.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2861\n\n",
+    "body": "Assignee: @williamstein\n\nIf I call `sys.exit()` from a Sage script, the script exits but not with the correct exit code. For example, the script\n\n```\nimport sys\n\nprint 'exiting!'\nsys.exit(1)\n```\nexits with exit code 0 when run from Sage:\n\n```\n$ sage exitcode.sage \nexiting!\n1\n$ echo $?\n0\n```\n(the 1 gets printed because the preparser turns it into a Sage integer, and Python prints out anything except Python integers.) But the same script works properly when run from Python:\n\n```\n$ python exitcode.sage\nexiting!\n$ echo $?\n1\n```\nI don't know if this is Sage or IPython behavior, but having this work would be really useful.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2861\n\n",
     "created_at": "2008-04-09T06:42:30Z",
     "labels": [
         "component: user interface",
@@ -26,7 +26,6 @@ import sys
 print 'exiting!'
 sys.exit(1)
 ```
-
 exits with exit code 0 when run from Sage:
 
 ```
@@ -36,7 +35,6 @@ exiting!
 $ echo $?
 0
 ```
-
 (the 1 gets printed because the preparser turns it into a Sage integer, and Python prints out anything except Python integers.) But the same script works properly when run from Python:
 
 ```
@@ -45,7 +43,6 @@ exiting!
 $ echo $?
 1
 ```
-
 I don't know if this is Sage or IPython behavior, but having this work would be really useful.
 
 

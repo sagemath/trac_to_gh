@@ -275,7 +275,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_032127.json:
 ```json
 {
-    "body": "Test failures on sage-4.6.2.alpha1:\n\n```\nsage -t  \"devel/sage/sage/rings/power_series_poly.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 766:\n    sage: g = f.reversion(); g\nExpected:\n    1/(2*b)*t - 1/(8*b^2)*t^2 + ((-3*b + 1)/(16*b^3))*t^3 + O(t^4)\nGot:\n    O(t^4)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 770:\n    sage: f(g)\nExpected:\n    t + O(t^4)\nGot:\n    O(t^4)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 772:\n    sage: g(f)\nExpected:\n    t + O(t^4)\nGot:\n    0\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 779:                                      sage: b = a.reversion(); b                                                                                                            Exception raised:                                                                                                                             Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_32[31]>\", line 1, in <module>\n        b = a.reversion(); b###line 779:\n    sage: b = a.reversion(); b\n      File \"power_series_poly.pyx\", line 847, in sage.rings.power_series_poly.PowerSeries_poly.reversion (sage/rings/power_series_poly.c:6881)\n      File \"gen.pyx\", line 9851, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:46023)\n    PariError:  (20)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 781:\n    sage: a(b)\nExpected:\n    t + O(t^6)\nGot:\n    b^5 + 6*b^4 + b^2 + b\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 783:\n    sage: b(a)\nExpected:\n    t + O(t^6)\nGot:\n    t + t^2 + 6*t^4 + t^5 + O(t^6)\n**********************************************************************\n```\n",
+    "body": "Test failures on sage-4.6.2.alpha1:\n\n```\nsage -t  \"devel/sage/sage/rings/power_series_poly.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 766:\n    sage: g = f.reversion(); g\nExpected:\n    1/(2*b)*t - 1/(8*b^2)*t^2 + ((-3*b + 1)/(16*b^3))*t^3 + O(t^4)\nGot:\n    O(t^4)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 770:\n    sage: f(g)\nExpected:\n    t + O(t^4)\nGot:\n    O(t^4)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 772:\n    sage: g(f)\nExpected:\n    t + O(t^4)\nGot:\n    0\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 779:                                      sage: b = a.reversion(); b                                                                                                            Exception raised:                                                                                                                             Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_32[31]>\", line 1, in <module>\n        b = a.reversion(); b###line 779:\n    sage: b = a.reversion(); b\n      File \"power_series_poly.pyx\", line 847, in sage.rings.power_series_poly.PowerSeries_poly.reversion (sage/rings/power_series_poly.c:6881)\n      File \"gen.pyx\", line 9851, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:46023)\n    PariError:  (20)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 781:\n    sage: a(b)\nExpected:\n    t + O(t^6)\nGot:\n    b^5 + 6*b^4 + b^2 + b\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/sage-4.7.alpha0/devel/sage/sage/rings/power_series_poly.pyx\", line 783:\n    sage: b(a)\nExpected:\n    t + O(t^6)\nGot:\n    t + t^2 + 6*t^4 + t^5 + O(t^6)\n**********************************************************************\n```",
     "created_at": "2011-01-27T14:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -342,7 +342,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_032128.json:
@@ -386,7 +385,7 @@ The attached patch removes the conversion PARI -> string -> PARI.  It does not a
 archive/issue_comments_032130.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n\n> Test failures on sage-4.6.2.alpha1: \n> ...\n\nWhat's happened is that #7644 means that many more series can be converted to Pari and reversion performed using `sereverse`.  But when the degree-one coefficient is not a unit, converting the result back to Sage has exposed the following problem:\n\n```\nsage: P.<x> = Q[]\nsage: Q = P.fraction_field()\nsage: Q(1/x)\n1/x\nsage: Q(pari(1/x))\n0\n```\n\nThis is caused by \n\n```\nsage: P(pari(1/x))\n0\n```\n\nwhereas `P(1/x)` raises `TypeError: denominator must be a unit`.\n\nThe other group of failures is caused when conversion to a Pari series is successful but reversion raises a Pari error.\n\nI will shortly post a patch which sorts these difficulties out. I've added a doctest for `reversion` in order to provide another example where Pari fails and the Lagrange inversion code needs to be used.",
+    "body": "Replying to [comment:9 jdemeyer]:\n\n> Test failures on sage-4.6.2.alpha1: \n> ...\n\n\nWhat's happened is that #7644 means that many more series can be converted to Pari and reversion performed using `sereverse`.  But when the degree-one coefficient is not a unit, converting the result back to Sage has exposed the following problem:\n\n```\nsage: P.<x> = Q[]\nsage: Q = P.fraction_field()\nsage: Q(1/x)\n1/x\nsage: Q(pari(1/x))\n0\n```\nThis is caused by \n\n```\nsage: P(pari(1/x))\n0\n```\nwhereas `P(1/x)` raises `TypeError: denominator must be a unit`.\n\nThe other group of failures is caused when conversion to a Pari series is successful but reversion raises a Pari error.\n\nI will shortly post a patch which sorts these difficulties out. I've added a doctest for `reversion` in order to provide another example where Pari fails and the Lagrange inversion code needs to be used.",
     "created_at": "2011-01-31T18:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -400,6 +399,7 @@ Replying to [comment:9 jdemeyer]:
 > Test failures on sage-4.6.2.alpha1: 
 > ...
 
+
 What's happened is that #7644 means that many more series can be converted to Pari and reversion performed using `sereverse`.  But when the degree-one coefficient is not a unit, converting the result back to Sage has exposed the following problem:
 
 ```
@@ -410,14 +410,12 @@ sage: Q(1/x)
 sage: Q(pari(1/x))
 0
 ```
-
 This is caused by 
 
 ```
 sage: P(pari(1/x))
 0
 ```
-
 whereas `P(1/x)` raises `TypeError: denominator must be a unit`.
 
 The other group of failures is caused when conversion to a Pari series is successful but reversion raises a Pari error.
@@ -485,7 +483,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032134.json:
 ```json
 {
-    "body": "On lines 316 and 317 of sage/rings/polynomial/polynomial_ring.py, you write\n\n```\nexcept (NotImplementedError, ValueError): \n    raise TypeError, \"denominator must be a unit\" \n```\n\nI don't think a `NotImplementedError` should lead to a `TypeError`: that would give a lot of confusion.\n\nOtherwise, this all looks very good.\n\n(this ticket now depends on #7644)",
+    "body": "On lines 316 and 317 of sage/rings/polynomial/polynomial_ring.py, you write\n\n```\nexcept (NotImplementedError, ValueError): \n    raise TypeError, \"denominator must be a unit\" \n```\nI don't think a `NotImplementedError` should lead to a `TypeError`: that would give a lot of confusion.\n\nOtherwise, this all looks very good.\n\n(this ticket now depends on #7644)",
     "created_at": "2011-01-31T20:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -500,7 +498,6 @@ On lines 316 and 317 of sage/rings/polynomial/polynomial_ring.py, you write
 except (NotImplementedError, ValueError): 
     raise TypeError, "denominator must be a unit" 
 ```
-
 I don't think a `NotImplementedError` should lead to a `TypeError`: that would give a lot of confusion.
 
 Otherwise, this all looks very good.
@@ -514,7 +511,7 @@ Otherwise, this all looks very good.
 archive/issue_comments_032135.json:
 ```json
 {
-    "body": "I'm wondering if we shouldn't simply do\n\n```\nif x.type() == 't_RFRAC':\n    raise TypeError, \"denominator must be a unit\"\n```\n\n\nI doubt that a PARI RFRAC can ever have a denominator which *is* a unit.",
+    "body": "I'm wondering if we shouldn't simply do\n\n```\nif x.type() == 't_RFRAC':\n    raise TypeError, \"denominator must be a unit\"\n```\n\nI doubt that a PARI RFRAC can ever have a denominator which *is* a unit.",
     "created_at": "2011-02-01T14:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -529,7 +526,6 @@ I'm wondering if we shouldn't simply do
 if x.type() == 't_RFRAC':
     raise TypeError, "denominator must be a unit"
 ```
-
 
 I doubt that a PARI RFRAC can ever have a denominator which *is* a unit.
 
@@ -560,7 +556,7 @@ Apply after previous two patches
 archive/issue_comments_032137.json:
 ```json
 {
-    "body": "Replying to [comment:14 jdemeyer]:\n> ...\n> I doubt that a PARI RFRAC can ever have a denominator which *is* a unit.\n\nI agree. So I've replaced the patch with one which implements your suggestion.",
+    "body": "Replying to [comment:14 jdemeyer]:\n> ...\n> I doubt that a PARI RFRAC can ever have a denominator which *is* a unit.\n\n\nI agree. So I've replaced the patch with one which implements your suggestion.",
     "created_at": "2011-02-02T09:17:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
@@ -572,6 +568,7 @@ archive/issue_comments_032137.json:
 Replying to [comment:14 jdemeyer]:
 > ...
 > I doubt that a PARI RFRAC can ever have a denominator which *is* a unit.
+
 
 I agree. So I've replaced the patch with one which implements your suggestion.
 

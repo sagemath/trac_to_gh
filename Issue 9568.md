@@ -75,7 +75,7 @@ I'll take a closer look within the next days.
 archive/issue_comments_092245.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> This is going to be a fun one, since the upstream source tree is not vanilla. Some files have been patched \"in-place\", others have been added, and (/but?) there's even a Mercurial repository in it (added by Sage)... :)\n> \n> I'll take a closer look within the next days.\n> \n> (I can't change the milestone to 4.6!)\n\nWe should also consider whether this package can be built in parallel, so replacing `make` with `$MAKE`. I just built the **current** version 1.0.1) ten times in parallel, using `$MAKE` rather than `make`. It reduced the build time from 13 s to 8 s on my Sun Ultra 27, so hardly a huge benefit.",
+    "body": "Replying to [comment:1 leif]:\n> This is going to be a fun one, since the upstream source tree is not vanilla. Some files have been patched \"in-place\", others have been added, and (/but?) there's even a Mercurial repository in it (added by Sage)... :)\n> \n> I'll take a closer look within the next days.\n> \n> (I can't change the milestone to 4.6!)\n\n\nWe should also consider whether this package can be built in parallel, so replacing `make` with `$MAKE`. I just built the **current** version 1.0.1) ten times in parallel, using `$MAKE` rather than `make`. It reduced the build time from 13 s to 8 s on my Sun Ultra 27, so hardly a huge benefit.",
     "created_at": "2010-07-21T22:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -91,6 +91,7 @@ Replying to [comment:1 leif]:
 > 
 > (I can't change the milestone to 4.6!)
 
+
 We should also consider whether this package can be built in parallel, so replacing `make` with `$MAKE`. I just built the **current** version 1.0.1) ten times in parallel, using `$MAKE` rather than `make`. It reduced the build time from 13 s to 8 s on my Sun Ultra 27, so hardly a huge benefit.
 
 
@@ -100,7 +101,7 @@ We should also consider whether this package can be built in parallel, so replac
 archive/issue_comments_092246.json:
 ```json
 {
-    "body": "\n```\nFiles iml-1.0.1-vanilla/Makefile.in and iml-1.0.1.p13/src/Makefile.in differ\nOnly in iml-1.0.1.p13/src/: cblas.h\nFiles iml-1.0.1-vanilla/configure and iml-1.0.1.p13/src/configure differ\nOnly in iml-1.0.1.p13/src/examples: build.linux\nOnly in iml-1.0.1.p13/src/examples: build.osx\nFiles iml-1.0.1-vanilla/examples/exam-nullspace.c and iml-1.0.1.p13/src/examples/exam-nullspace.c differ\nOnly in iml-1.0.1.p13/src/examples: exam-nullspace2.c\nOnly in iml-1.0.1.p13/src/: gsl_cblas.h\nOnly in iml-1.0.1.p13/src/repl: .libs\nOnly in iml-1.0.1.p13/src/repl: Makefile\nOnly in iml-1.0.1.p13/src/repl: librepl.la\nOnly in iml-1.0.1.p13/src/src: .hg\nFiles iml-1.0.1-vanilla/src/Makefile.am and iml-1.0.1.p13/src/src/Makefile.am differ\nFiles iml-1.0.1-vanilla/src/Makefile.in and iml-1.0.1.p13/src/src/Makefile.in differ\nFiles iml-1.0.1-vanilla/src/RNSop.c and iml-1.0.1.p13/src/src/RNSop.c differ\nFiles iml-1.0.1-vanilla/src/memalloc.c and iml-1.0.1.p13/src/src/memalloc.c differ\nFiles iml-1.0.1-vanilla/src/nonsysolve.c and iml-1.0.1.p13/src/src/nonsysolve.c differ\nFiles iml-1.0.1-vanilla/src/nullspace.c and iml-1.0.1.p13/src/src/nullspace.c differ\nFiles iml-1.0.1-vanilla/src/padiclift.c and iml-1.0.1.p13/src/src/padiclift.c differ\nFiles iml-1.0.1-vanilla/src/padiclift.h and iml-1.0.1.p13/src/src/padiclift.h differ\nOnly in iml-1.0.1.p13/src/src: tinyatlas.h\n```\n\nPerhaps not that hard, but do we want to keep the repository?\n\nAlso, the \"new\" 1.0.3 version (from 2008) brings new functionality, so additions/changes to the Sage library are likely.",
+    "body": "```\nFiles iml-1.0.1-vanilla/Makefile.in and iml-1.0.1.p13/src/Makefile.in differ\nOnly in iml-1.0.1.p13/src/: cblas.h\nFiles iml-1.0.1-vanilla/configure and iml-1.0.1.p13/src/configure differ\nOnly in iml-1.0.1.p13/src/examples: build.linux\nOnly in iml-1.0.1.p13/src/examples: build.osx\nFiles iml-1.0.1-vanilla/examples/exam-nullspace.c and iml-1.0.1.p13/src/examples/exam-nullspace.c differ\nOnly in iml-1.0.1.p13/src/examples: exam-nullspace2.c\nOnly in iml-1.0.1.p13/src/: gsl_cblas.h\nOnly in iml-1.0.1.p13/src/repl: .libs\nOnly in iml-1.0.1.p13/src/repl: Makefile\nOnly in iml-1.0.1.p13/src/repl: librepl.la\nOnly in iml-1.0.1.p13/src/src: .hg\nFiles iml-1.0.1-vanilla/src/Makefile.am and iml-1.0.1.p13/src/src/Makefile.am differ\nFiles iml-1.0.1-vanilla/src/Makefile.in and iml-1.0.1.p13/src/src/Makefile.in differ\nFiles iml-1.0.1-vanilla/src/RNSop.c and iml-1.0.1.p13/src/src/RNSop.c differ\nFiles iml-1.0.1-vanilla/src/memalloc.c and iml-1.0.1.p13/src/src/memalloc.c differ\nFiles iml-1.0.1-vanilla/src/nonsysolve.c and iml-1.0.1.p13/src/src/nonsysolve.c differ\nFiles iml-1.0.1-vanilla/src/nullspace.c and iml-1.0.1.p13/src/src/nullspace.c differ\nFiles iml-1.0.1-vanilla/src/padiclift.c and iml-1.0.1.p13/src/src/padiclift.c differ\nFiles iml-1.0.1-vanilla/src/padiclift.h and iml-1.0.1.p13/src/src/padiclift.h differ\nOnly in iml-1.0.1.p13/src/src: tinyatlas.h\n```\nPerhaps not that hard, but do we want to keep the repository?\n\nAlso, the \"new\" 1.0.3 version (from 2008) brings new functionality, so additions/changes to the Sage library are likely.",
     "created_at": "2010-07-21T23:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -108,7 +109,6 @@ archive/issue_comments_092246.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```
 Files iml-1.0.1-vanilla/Makefile.in and iml-1.0.1.p13/src/Makefile.in differ
@@ -133,7 +133,6 @@ Files iml-1.0.1-vanilla/src/padiclift.c and iml-1.0.1.p13/src/src/padiclift.c di
 Files iml-1.0.1-vanilla/src/padiclift.h and iml-1.0.1.p13/src/src/padiclift.h differ
 Only in iml-1.0.1.p13/src/src: tinyatlas.h
 ```
-
 Perhaps not that hard, but do we want to keep the repository?
 
 Also, the "new" 1.0.3 version (from 2008) brings new functionality, so additions/changes to the Sage library are likely.
@@ -145,7 +144,7 @@ Also, the "new" 1.0.3 version (from 2008) brings new functionality, so additions
 archive/issue_comments_092247.json:
 ```json
 {
-    "body": "\n```sh\nsage-4.5$ grep -i -B5 -A1 iml devel/sage/module_list.py\n\n    # TODO -- change to use BLAS at some point.\n    Extension('sage.matrix.matrix_integer_dense',\n              sources = ['sage/matrix/matrix_integer_dense.pyx'],\n              # order matters for cygwin!!\n              libraries = ['iml', 'gmp', 'm', 'pari', BLAS, BLAS2]),\n\n\n```\n\nFrom `spkg/standard/deps`:\n\n```\nall: $(BASE) \\\n     ...\n     $(INST)/$(IML) \\\n     ...\n\n$(INST)/$(IML): $(BASE) $(INST)/$(MPIR) $(INST)/$(GSL)\n\t$(INSTALL) \"$(SAGE_SPKG) $(IML) 2>&1\" \"tee -a $(SAGE_LOGS)/$(IML).log\"\n\n...\n\n# All components that are linked against extensions need to be listed here\n$(INST)/$(SAGE): $(BASE) \\\n                 ...\n                 $(INST)/$(IML) \\\n                 ...\n```\n\n(These are all occurrences of IML, i.e. only the Sage library depends on it.)",
+    "body": "```sh\nsage-4.5$ grep -i -B5 -A1 iml devel/sage/module_list.py\n\n    # TODO -- change to use BLAS at some point.\n    Extension('sage.matrix.matrix_integer_dense',\n              sources = ['sage/matrix/matrix_integer_dense.pyx'],\n              # order matters for cygwin!!\n              libraries = ['iml', 'gmp', 'm', 'pari', BLAS, BLAS2]),\n\n\n```\nFrom `spkg/standard/deps`:\n\n```\nall: $(BASE) \\\n     ...\n     $(INST)/$(IML) \\\n     ...\n\n$(INST)/$(IML): $(BASE) $(INST)/$(MPIR) $(INST)/$(GSL)\n\t$(INSTALL) \"$(SAGE_SPKG) $(IML) 2>&1\" \"tee -a $(SAGE_LOGS)/$(IML).log\"\n\n...\n\n# All components that are linked against extensions need to be listed here\n$(INST)/$(SAGE): $(BASE) \\\n                 ...\n                 $(INST)/$(IML) \\\n                 ...\n```\n(These are all occurrences of IML, i.e. only the Sage library depends on it.)",
     "created_at": "2010-07-21T23:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -153,7 +152,6 @@ archive/issue_comments_092247.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```sh
 sage-4.5$ grep -i -B5 -A1 iml devel/sage/module_list.py
@@ -166,7 +164,6 @@ sage-4.5$ grep -i -B5 -A1 iml devel/sage/module_list.py
 
 
 ```
-
 From `spkg/standard/deps`:
 
 ```
@@ -186,7 +183,6 @@ $(INST)/$(SAGE): $(BASE) \
                  $(INST)/$(IML) \
                  ...
 ```
-
 (These are all occurrences of IML, i.e. only the Sage library depends on it.)
 
 
@@ -196,7 +192,7 @@ $(INST)/$(SAGE): $(BASE) \
 archive/issue_comments_092248.json:
 ```json
 {
-    "body": "FYI/status:\n\n```sh\n...\nSuccessfully installed iml-1.0.3.p0\nRunning the test suite.\nRunning the IML test suite...\n...\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\n...\nThe IML test suite passed without errors.\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.3.p0.spkg\n\nreal\t4m30.801s\nuser\t0m8.209s\nsys\t0m3.896s\nleif@portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx\nsage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"  \n\t [5.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.5 seconds\nleif@portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx\nsage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n\t [18.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 18.6 seconds\n```\n\n\nI started with a vanilla 1.0.3, \"cleaned up\" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...\n(I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)\n\nFor a Sage build from scratch, we need to change `deps` s.t. IML again(?) depends on ATLAS rather than GSL. Or is ATLAS still(?) considered optional on some systems?\n\nThen I only added a patch for `src/src/nullspace.c`, which uses `mpz_init_ui()` instead of `mpz_init_set_ui()`.\n\n:-)\n\n(Still alpha, though. Looking for what else to carry over.)\n\n-Leif",
+    "body": "FYI/status:\n\n```sh\n...\nSuccessfully installed iml-1.0.3.p0\nRunning the test suite.\nRunning the IML test suite...\n...\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\n...\nThe IML test suite passed without errors.\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.3.p0.spkg\n\nreal\t4m30.801s\nuser\t0m8.209s\nsys\t0m3.896s\nleif@portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx\nsage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"  \n\t [5.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.5 seconds\nleif@portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx\nsage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n\t [18.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 18.6 seconds\n```\n\nI started with a vanilla 1.0.3, \"cleaned up\" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...\n(I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)\n\nFor a Sage build from scratch, we need to change `deps` s.t. IML again(?) depends on ATLAS rather than GSL. Or is ATLAS still(?) considered optional on some systems?\n\nThen I only added a patch for `src/src/nullspace.c`, which uses `mpz_init_ui()` instead of `mpz_init_set_ui()`.\n\n:-)\n\n(Still alpha, though. Looking for what else to carry over.)\n\n-Leif",
     "created_at": "2010-07-22T19:56:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -243,7 +239,6 @@ sage -t -long "devel/sage/sage/matrix/matrix_integer_dense.pyx"
 All tests passed!
 Total time for all tests: 18.6 seconds
 ```
-
 
 I started with a vanilla 1.0.3, "cleaned up" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...
 (I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)
@@ -339,7 +334,7 @@ Dave
 archive/issue_comments_092252.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> FYI/status:\n> {{{\n> #!sh\n> ...\n> Successfully installed iml-1.0.3.p0\n> Running the test suite.\n> Running the IML test suite...\n> ...\n> PASS: test-smallentry\n> PASS: test-largeentry\n> ==================\n> All 2 tests passed\n> ==================\n> ...\n> The IML test suite passed without errors.\n> Now cleaning up tmp files.\n> Making Sage/Python scripts relocatable...\n> Making script relocatable\n> Finished installing iml-1.0.3.p0.spkg\n> \n> real\t4m30.801s\n> user\t0m8.209s\n> sys\t0m3.896s\n> leif`@`portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx\n> sage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"  \n> \t [5.5 s]\n>  \n> ----------------------------------------------------------------------\n> All tests passed!\n> Total time for all tests: 5.5 seconds\n> leif`@`portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx\n> sage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n> \t [18.6 s]\n>  \n> ----------------------------------------------------------------------\n> All tests passed!\n> Total time for all tests: 18.6 seconds\n> }}}\n> \n> I started with a vanilla 1.0.3, \"cleaned up\" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...\n> (I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)\n> \n> For a Sage build from scratch, we need to change `deps` s.t. IML again(?) depends on ATLAS rather than GSL. Or is ATLAS still(?) considered optional on some systems?\n> \n> Then I only added a patch for `src/src/nullspace.c`, which uses `mpz_init_ui()` instead of `mpz_init_set_ui()`.\n> \n> :-)\n> \n> (Still alpha, though. Looking for what else to carry over.)\n> \nActually on sage-on-gentoo we have been using iml-1.0.3 for a while.\nBut on some setups we have been hit by a doc test failure which seem\nto point to iml: \n\n```\nsage -t -force_lib \"devel/sage/sage/modular/modsym/space.py\"\n**********************************************************************\nFile \"/opt/sage/devel/sage/sage/modular/modsym/space.py\", line 1573:\n    sage: af.intersection_number(ell)\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[8]>\", line 1, in <module>\n        af.intersection_number(ell)###line 1573:\n    sage: af.intersection_number(ell)\n      File \"/usr/lib/python2.6/site-packages/sage/modular/modsym/space.py\", line 1581, in intersection_number\n        B = M.integral_structure()\n      File \"/usr/lib/python2.6/site-packages/sage/modular/modsym/space.py\", line 1549, in integral_structure\n        J = self.free_module().intersection(I)\n      File \"/usr/lib/python2.6/site-packages/sage/modules/free_module.py\", line 3025, in intersection\n        W = B.kernel()\n      File \"matrix2.pyx\", line 2288, in sage.matrix.matrix2.Matrix.kernel (sage/matrix/matrix2.c:12775)\n      File \"matrix2.pyx\", line 2586, in sage.matrix.matrix2.Matrix.left_kernel (sage/matrix/matrix2.c:14030)\n      File \"matrix_rational_dense.pyx\", line 1255, in sage.matrix.matrix_rational_dense.Matrix_rational_dense.right_kernel (sage/matrix/matrix_rational_dense.c:12832)\n    RuntimeError\n```\n\nAnd the line called in matrix_rational_dense.pyx is:\n\n```\n            K = A._rational_kernel_iml().change_ring(QQ)\n```\n\nThe tests for matrix_rational_dense.pyx pass.\nThere is a backtrace as well here: [http://github.com/cschwan/sage-on-gentoo/issues#issue/3](http://github.com/cschwan/sage-on-gentoo/issues#issue/3)\n\nFrancois",
+    "body": "Replying to [comment:5 leif]:\n> FYI/status:\n> \n> ```\n> #!sh\n> ...\n> Successfully installed iml-1.0.3.p0\n> Running the test suite.\n> Running the IML test suite...\n> ...\n> PASS: test-smallentry\n> PASS: test-largeentry\n> ==================\n> All 2 tests passed\n> ==================\n> ...\n> The IML test suite passed without errors.\n> Now cleaning up tmp files.\n> Making Sage/Python scripts relocatable...\n> Making script relocatable\n> Finished installing iml-1.0.3.p0.spkg\n> \n> real\t4m30.801s\n> user\t0m8.209s\n> sys\t0m3.896s\n> leif@portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx\n> sage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"  \n> \t [5.5 s]\n>  \n> ----------------------------------------------------------------------\n> All tests passed!\n> Total time for all tests: 5.5 seconds\n> leif@portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx\n> sage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n> \t [18.6 s]\n>  \n> ----------------------------------------------------------------------\n> All tests passed!\n> Total time for all tests: 18.6 seconds\n> ```\n> \n> I started with a vanilla 1.0.3, \"cleaned up\" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...\n> (I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)\n> \n> For a Sage build from scratch, we need to change `deps` s.t. IML again(?) depends on ATLAS rather than GSL. Or is ATLAS still(?) considered optional on some systems?\n> \n> Then I only added a patch for `src/src/nullspace.c`, which uses `mpz_init_ui()` instead of `mpz_init_set_ui()`.\n> \n> :-)\n> \n> (Still alpha, though. Looking for what else to carry over.)\n> \n\nActually on sage-on-gentoo we have been using iml-1.0.3 for a while.\nBut on some setups we have been hit by a doc test failure which seem\nto point to iml: \n\n```\nsage -t -force_lib \"devel/sage/sage/modular/modsym/space.py\"\n**********************************************************************\nFile \"/opt/sage/devel/sage/sage/modular/modsym/space.py\", line 1573:\n    sage: af.intersection_number(ell)\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[8]>\", line 1, in <module>\n        af.intersection_number(ell)###line 1573:\n    sage: af.intersection_number(ell)\n      File \"/usr/lib/python2.6/site-packages/sage/modular/modsym/space.py\", line 1581, in intersection_number\n        B = M.integral_structure()\n      File \"/usr/lib/python2.6/site-packages/sage/modular/modsym/space.py\", line 1549, in integral_structure\n        J = self.free_module().intersection(I)\n      File \"/usr/lib/python2.6/site-packages/sage/modules/free_module.py\", line 3025, in intersection\n        W = B.kernel()\n      File \"matrix2.pyx\", line 2288, in sage.matrix.matrix2.Matrix.kernel (sage/matrix/matrix2.c:12775)\n      File \"matrix2.pyx\", line 2586, in sage.matrix.matrix2.Matrix.left_kernel (sage/matrix/matrix2.c:14030)\n      File \"matrix_rational_dense.pyx\", line 1255, in sage.matrix.matrix_rational_dense.Matrix_rational_dense.right_kernel (sage/matrix/matrix_rational_dense.c:12832)\n    RuntimeError\n```\nAnd the line called in matrix_rational_dense.pyx is:\n\n```\n            K = A._rational_kernel_iml().change_ring(QQ)\n```\nThe tests for matrix_rational_dense.pyx pass.\nThere is a backtrace as well here: [http://github.com/cschwan/sage-on-gentoo/issues#issue/3](http://github.com/cschwan/sage-on-gentoo/issues#issue/3)\n\nFrancois",
     "created_at": "2010-08-01T10:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9568",
     "type": "issue_comment",
@@ -350,7 +345,8 @@ archive/issue_comments_092252.json:
 
 Replying to [comment:5 leif]:
 > FYI/status:
-> {{{
+> 
+> ```
 > #!sh
 > ...
 > Successfully installed iml-1.0.3.p0
@@ -372,21 +368,21 @@ Replying to [comment:5 leif]:
 > real	4m30.801s
 > user	0m8.209s
 > sys	0m3.896s
-> leif`@`portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx
+> leif@portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx
 > sage -t  "devel/sage/sage/matrix/matrix_integer_dense.pyx"  
 > 	 [5.5 s]
 >  
 > ----------------------------------------------------------------------
 > All tests passed!
 > Total time for all tests: 5.5 seconds
-> leif`@`portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx
+> leif@portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx
 > sage -t -long "devel/sage/sage/matrix/matrix_integer_dense.pyx"
 > 	 [18.6 s]
 >  
 > ----------------------------------------------------------------------
 > All tests passed!
 > Total time for all tests: 18.6 seconds
-> }}}
+> ```
 > 
 > I started with a vanilla 1.0.3, "cleaned up" `spkg-install` (dropping all patches and the Debian stuff) and just looked what happens...
 > (I configured with `--prefix=$SAGE_LOCAL --enable-shared` and added the appropriate (Sage) dirs to the preprocessor and linker search paths.)
@@ -399,6 +395,7 @@ Replying to [comment:5 leif]:
 > 
 > (Still alpha, though. Looking for what else to carry over.)
 > 
+
 Actually on sage-on-gentoo we have been using iml-1.0.3 for a while.
 But on some setups we have been hit by a doc test failure which seem
 to point to iml: 
@@ -430,13 +427,11 @@ Exception raised:
       File "matrix_rational_dense.pyx", line 1255, in sage.matrix.matrix_rational_dense.Matrix_rational_dense.right_kernel (sage/matrix/matrix_rational_dense.c:12832)
     RuntimeError
 ```
-
 And the line called in matrix_rational_dense.pyx is:
 
 ```
             K = A._rational_kernel_iml().change_ring(QQ)
 ```
-
 The tests for matrix_rational_dense.pyx pass.
 There is a backtrace as well here: [http://github.com/cschwan/sage-on-gentoo/issues#issue/3](http://github.com/cschwan/sage-on-gentoo/issues#issue/3)
 

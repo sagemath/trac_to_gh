@@ -317,7 +317,7 @@ See also #9300.  How's your French?
 archive/issue_comments_083402.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> See also #9300.  How's your French?\n\nPossibly passable enough to review, but not good enough to create.  ;-)\n\nThanks for the fixes and changes.  I'll look them over soon - busy with out-of-town guests right at the moment.\n\n<joke>\n\nYou know the seasons in the Pacific Northwest, don't you?\n\n10 months of rain and two months of visitors.  ;-)\n\n</joke>",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> See also #9300.  How's your French?\n\n\nPossibly passable enough to review, but not good enough to create.  ;-)\n\nThanks for the fixes and changes.  I'll look them over soon - busy with out-of-town guests right at the moment.\n\n<joke>\n\nYou know the seasons in the Pacific Northwest, don't you?\n\n10 months of rain and two months of visitors.  ;-)\n\n</joke>",
     "created_at": "2010-06-21T23:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -328,6 +328,7 @@ archive/issue_comments_083402.json:
 
 Replying to [comment:8 jhpalmieri]:
 > See also #9300.  How's your French?
+
 
 Possibly passable enough to review, but not good enough to create.  ;-)
 
@@ -454,7 +455,7 @@ Stand-alone v4 patch, apply before reviewer patch
 archive/issue_comments_083408.json:
 ```json
 {
-    "body": "Attachment [trac_9027_tutorial_latex_v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v4.patch) by @rbeezer created at 2010-07-22 23:35:02\n\nReplying to [comment:11 jhpalmieri]:\n> Hi Rob,\n> \n> It looks like trac_9074-tkz-graph-latex-v4.patch belongs on #9074 instead of here. Can you move it there?  Is there a new version of the patch for this ticket?\n\nOoh, that's bad.  The #9074 patch is already there where it belongs.  These two v4 patches were next to each other in my local storage, thus......\n\nThe real 9027 v4 patch is here now, sorry for the confusion.  I've never been able to delete files.  Do I need some extra privileges, or can you trash 9074-v4 for me?  Thanks.\n\nRob",
+    "body": "Attachment [trac_9027_tutorial_latex_v4.patch](tarball://root/attachments/some-uuid/ticket9027/trac_9027_tutorial_latex_v4.patch) by @rbeezer created at 2010-07-22 23:35:02\n\nReplying to [comment:11 jhpalmieri]:\n> Hi Rob,\n> \n> It looks like trac_9074-tkz-graph-latex-v4.patch belongs on #9074 instead of here. Can you move it there?  Is there a new version of the patch for this ticket?\n\n\nOoh, that's bad.  The #9074 patch is already there where it belongs.  These two v4 patches were next to each other in my local storage, thus......\n\nThe real 9027 v4 patch is here now, sorry for the confusion.  I've never been able to delete files.  Do I need some extra privileges, or can you trash 9074-v4 for me?  Thanks.\n\nRob",
     "created_at": "2010-07-22T23:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -469,6 +470,7 @@ Replying to [comment:11 jhpalmieri]:
 > Hi Rob,
 > 
 > It looks like trac_9074-tkz-graph-latex-v4.patch belongs on #9074 instead of here. Can you move it there?  Is there a new version of the patch for this ticket?
+
 
 Ooh, that's bad.  The #9074 patch is already there where it belongs.  These two v4 patches were next to each other in my local storage, thus......
 
@@ -542,7 +544,7 @@ Resolution: fixed
 archive/issue_comments_083412.json:
 ```json
 {
-    "body": "Replying to [comment:13 jhpalmieri]:\n> Looks good to me.\n> \n> To the release manager, merge\n> \n>  - trac_9027_tutorial_latex_v4.patch\n>  - trac_9027-reviewer.patch\n\nMerged in 4.5.2.alpha1.",
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Looks good to me.\n> \n> To the release manager, merge\n> \n> - trac_9027_tutorial_latex_v4.patch\n> - trac_9027-reviewer.patch\n\n\nMerged in 4.5.2.alpha1.",
     "created_at": "2010-07-26T02:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",
     "type": "issue_comment",
@@ -556,8 +558,9 @@ Replying to [comment:13 jhpalmieri]:
 > 
 > To the release manager, merge
 > 
->  - trac_9027_tutorial_latex_v4.patch
->  - trac_9027-reviewer.patch
+> - trac_9027_tutorial_latex_v4.patch
+> - trac_9027-reviewer.patch
+
 
 Merged in 4.5.2.alpha1.
 

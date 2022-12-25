@@ -3,7 +3,7 @@
 archive/issues_004561.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nSee #4557.\n\n\n```\n>\n> Why are we using math.sin/math.cos at all? Really, it should use the\n> native C sin and cos.\n>\n> - Robert\n\nYou're right Robert, and that definition of _fast_float_ for sin and cos\nis totally the wrong approach.  E.g., observe that your _fast_float_ sin\nis twice as fast as math.sin:\n\nsage: a = sin._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 469 ns per loop\nsage: a = sin(x)._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 254 ns per loop\n\nNote that the code in calculus.py is *not* just returning math.sin,\nactually, but constructing a fast_float object, which is actually\nway *WORSE* than math.sin, even:\n\nsage: a = sin._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 809 ns per loop\nsage: type(a)\n<type 'sage.ext.fast_eval.FastDoubleFunc'>\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4561\n\n",
+    "body": "Assignee: @burcin\n\nSee #4557.\n\n```\n>\n> Why are we using math.sin/math.cos at all? Really, it should use the\n> native C sin and cos.\n>\n> - Robert\n\nYou're right Robert, and that definition of _fast_float_ for sin and cos\nis totally the wrong approach.  E.g., observe that your _fast_float_ sin\nis twice as fast as math.sin:\n\nsage: a = sin._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 469 ns per loop\nsage: a = sin(x)._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 254 ns per loop\n\nNote that the code in calculus.py is *not* just returning math.sin,\nactually, but constructing a fast_float object, which is actually\nway *WORSE* than math.sin, even:\n\nsage: a = sin._fast_float_()\nsage: timeit('a(3.4r)')\n625 loops, best of 3: 809 ns per loop\nsage: type(a)\n<type 'sage.ext.fast_eval.FastDoubleFunc'>\n\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4561\n\n",
     "created_at": "2008-11-20T01:55:11Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_004561.json:
 Assignee: @burcin
 
 See #4557.
-
 
 ```
 >
@@ -52,7 +51,6 @@ sage: type(a)
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4561
 

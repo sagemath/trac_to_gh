@@ -3,7 +3,7 @@
 archive/issues_000354.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: introspection\n\nOffending code:\n\n\n```\nF = ZZ.quo(2*ZZ)\nR.<x> = F['x']\np = x^2-1\np.root_field?\n```\n\n\nTraceback:\n\n\n```\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/home/boothby/sage_notebook/worksheets/hw4/code/4.py\", line 4, in &lt;module&gt;\n    print _support_.docstring(\"p.root_field\", globals())\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 131, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 264, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 246, in sage_getargspec\n    return _sage_getargspec_sagex(source)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 200, in _sage_getargspec_sagex\n    raise ValueError, \"Could not parse sagex argspec\"\nValueError: Could not parse sagex argspec\n```\n\n\nThis is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/354\n\n",
+    "body": "Assignee: boothby\n\nKeywords: introspection\n\nOffending code:\n\n```\nF = ZZ.quo(2*ZZ)\nR.<x> = F['x']\np = x^2-1\np.root_field?\n```\n\nTraceback:\n\n```\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/home/boothby/sage_notebook/worksheets/hw4/code/4.py\", line 4, in &lt;module&gt;\n    print _support_.docstring(\"p.root_field\", globals())\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 131, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 264, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 246, in sage_getargspec\n    return _sage_getargspec_sagex(source)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 200, in _sage_getargspec_sagex\n    raise ValueError, \"Could not parse sagex argspec\"\nValueError: Could not parse sagex argspec\n```\n\nThis is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/354\n\n",
     "created_at": "2007-04-22T18:23:52Z",
     "labels": [
         "component: notebook",
@@ -22,7 +22,6 @@ Keywords: introspection
 
 Offending code:
 
-
 ```
 F = ZZ.quo(2*ZZ)
 R.<x> = F['x']
@@ -30,9 +29,7 @@ p = x^2-1
 p.root_field?
 ```
 
-
 Traceback:
-
 
 ```
 Traceback (most recent call last):
@@ -49,7 +46,6 @@ Traceback (most recent call last):
     raise ValueError, "Could not parse sagex argspec"
 ValueError: Could not parse sagex argspec
 ```
-
 
 This is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.
 
@@ -118,7 +114,7 @@ Given the flux of the new notebook, and the fact that this works well for me, I'
 archive/issue_comments_001710.json:
 ```json
 {
-    "body": "Works for me:\n\n```\n[mabshoff@m940 sage-2.8.3.alpha2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F = ZZ.quo(2*ZZ)\nsage: R.<x> = F['x']\nsage: p = x^2-1\nsage: p.root_field?\nsage:\nsage:   \n```\n\n\nRetagged for 2.9.\n\nCheers,\n\nMichael",
+    "body": "Works for me:\n\n```\n[mabshoff@m940 sage-2.8.3.alpha2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F = ZZ.quo(2*ZZ)\nsage: R.<x> = F['x']\nsage: p = x^2-1\nsage: p.root_field?\nsage:\nsage:   \n```\n\nRetagged for 2.9.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-29T15:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/354",
     "type": "issue_comment",
@@ -142,7 +138,6 @@ sage: p.root_field?
 sage:
 sage:   
 ```
-
 
 Retagged for 2.9.
 

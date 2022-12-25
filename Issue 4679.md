@@ -133,7 +133,7 @@ Thanks. I wasn't sure what milestone to assign.
 archive/issue_comments_035184.json:
 ```json
 {
-    "body": "Replying to [comment:4 tjlahey]:\n> Thanks. I wasn't sure what milestone to assign.\n\nNo problem. The new trac release 0.11.2 we will be upgrading to in about a week let's the admin assign default milestones from a panel, so in the future this will become a non-issue.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 tjlahey]:\n> Thanks. I wasn't sure what milestone to assign.\n\n\nNo problem. The new trac release 0.11.2 we will be upgrading to in about a week let's the admin assign default milestones from a panel, so in the future this will become a non-issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T00:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4679",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ archive/issue_comments_035184.json:
 
 Replying to [comment:4 tjlahey]:
 > Thanks. I wasn't sure what milestone to assign.
+
 
 No problem. The new trac release 0.11.2 we will be upgrading to in about a week let's the admin assign default milestones from a panel, so in the future this will become a non-issue.
 

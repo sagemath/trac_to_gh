@@ -198,7 +198,7 @@ I know very little about multivariate power series, thus I'm clueless about whet
 archive/issue_comments_012425.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n\nThanks!\n\n\n>  * You don't need #random for random output, the seed of the pseudo random number generator is reset for each doctest plot\n\nfixed now.\n\n\n>  * It would be nice if you could add line breaks around 80 for the doc strings\n\nsorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)\n\n\n>  * the arithmetic functions doctests do not test correctness of the output\n\nI've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?\n\n\n \n> I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?\n\nI don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example:\n\nhttp://algo.inria.fr/seminars/sem00-01/lecerf.html\n\nI'll take a look for more complete references too.",
+    "body": "Replying to [comment:5 malb]:\n\nThanks!\n\n\n>  * You don't need #random for random output, the seed of the pseudo random number generator is reset for each doctest plot\n\n\nfixed now.\n\n\n>  * It would be nice if you could add line breaks around 80 for the doc strings\n\n\nsorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)\n\n\n>  * the arithmetic functions doctests do not test correctness of the output\n\n\nI've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?\n\n\n \n> I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?\n\n\nI don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example:\n\nhttp://algo.inria.fr/seminars/sem00-01/lecerf.html\n\nI'll take a look for more complete references too.",
     "created_at": "2010-07-14T14:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -214,21 +214,25 @@ Thanks!
 
 >  * You don't need #random for random output, the seed of the pseudo random number generator is reset for each doctest plot
 
+
 fixed now.
 
 
 >  * It would be nice if you could add line breaks around 80 for the doc strings
+
 
 sorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)
 
 
 >  * the arithmetic functions doctests do not test correctness of the output
 
+
 I've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?
 
 
  
 > I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?
+
 
 I don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example:
 
@@ -243,7 +247,7 @@ I'll take a look for more complete references too.
 archive/issue_comments_012426.json:
 ```json
 {
-    "body": "Replying to [comment:6 niles]:\n\n> > * It would be nice if you could add line breaks around 80 for the doc strings\n> sorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)\n\nSorry, I meant around 80 characters, which is the standard UNIX terminal width.\n\n> > * the arithmetic functions doctests do not test correctness of the output\n> I've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?\n\nI'd prefer that to be honest.\n\n> > I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?\n> I don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example: http://algo.inria.fr/seminars/sem00-01/lecerf.html I'll take a look for more complete references too.\n\nHave you compared the speed with, say, Magma?",
+    "body": "Replying to [comment:6 niles]:\n\n> > * It would be nice if you could add line breaks around 80 for the doc strings\n \n> sorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)\n\nSorry, I meant around 80 characters, which is the standard UNIX terminal width.\n\n> > * the arithmetic functions doctests do not test correctness of the output\n \n> I've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?\n\nI'd prefer that to be honest.\n\n> > I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?\n\n> I don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example: http://algo.inria.fr/seminars/sem00-01/lecerf.html I'll take a look for more complete references too.\n\nHave you compared the speed with, say, Magma?",
     "created_at": "2010-07-14T20:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -255,16 +259,19 @@ archive/issue_comments_012426.json:
 Replying to [comment:6 niles]:
 
 > > * It would be nice if you could add line breaks around 80 for the doc strings
+ 
 > sorry, not sure what you mean by 80 here; I'm happy to add linebreaks though :)
 
 Sorry, I meant around 80 characters, which is the standard UNIX terminal width.
 
 > > * the arithmetic functions doctests do not test correctness of the output
+ 
 > I've added comparisons with polynomial arithmetic; do you think I need to also have the output printed?
 
 I'd prefer that to be honest.
 
 > > I know very little about multivariate power series, thus I'm clueless about whether your implementation strategy is (a) standard and/or (b) clever. Is it something that is usually done?
+
 > I don't know much about this either, but it seems like a natural enough idea.  After a quick look around google, here's one example: http://algo.inria.fr/seminars/sem00-01/lecerf.html I'll take a look for more complete references too.
 
 Have you compared the speed with, say, Magma?
@@ -276,7 +283,7 @@ Have you compared the speed with, say, Magma?
 archive/issue_comments_012427.json:
 ```json
 {
-    "body": "Replying to [comment:7 malb]:\n> Replying to [comment:6 niles]:\n> \n> > > * It would be nice if you could add line breaks around 80 for the doc strings\nfixed now\n\n\n> > > * the arithmetic functions doctests do not test correctness of the output\narithmetic tests now printed, and confirmed with polynomial tests\n\n\n> Have you compared the speed with, say, Magma?\n\nHere are five simple comparisons, three with 2 variables and two with 4 variables, all over QQ.  This sage patch performs substantially better in 3/4 cases, with magma performing substantially better in the other case.  Using polynomial multiplication easily beats magma's restriction on the number of coefficients it will compute for a lazy power series (test 3).\n\nProcessor: `6-core:  model name:  Intel(R) Xeon(R) CPU  X7460  `@` 2.66GHz`\n\nsage: \n\n```\nsage: L.<a,b,c,d> = MPowerSeriesRing(QQ,4)\nsage: %timeit s = (1 + 2*a + 3*b + 4*d + L(0).O(16))^-5\n5 loops, best of 3: 3.18 s per loop\n\nsage: time (1 + a^3 + b^3 + c^4 + d^4 + L(0).O(15))^-20\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n<SNIP>\n\nsage: f = -1/6*b^6*d^14 - 1/9*a^4*b^10*c^4*d^12 + b^10*c^11*d^21 - a*b^14*c^24*d^4 - 1/66*a^16*b^11*c^17 + L(0).O(50)\nsage: time f^20\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.16 s\n1/3656158440062976*b^120*d^280 \n+ 5/1371059415023616*a^4*b^124*c^4*d^278 \n+ 95/4113178245070848*a^8*b^128*c^8*d^276 \n- 5/152339935002624*b^124*c^11*d^287 \n+ 5/152339935002624*a*b^128*c^24*d^270 \n+ 5/10054435710173184*a^16*b^125*c^17*d^266 \n+ O(a, b, c, d)^430\n```\n\n\nmagma:\n\n```\n> L<a, b, c, d> := LazyPowerSeriesRing(Rationals(), 4);\n> s := (1 + 2*a + 3*b + 4*d)^-5;\n> time Coefficients(s, 15);\n<SNIP>\nTime: 29.020\n\n> s := (1 + a^3 + b^3 + c^4 + d^4)^-20;\n> time Coefficients(s, 14);\n<SNIP>\nTime: 48.850\n\n> s := (-1/6*b^6*d^14 - 1/9*a^4*b^10*c^4*d^12 + b^10*c^11*d^21 - a*b^14*c^24*d^4 - 1/66*a^16*b^11*c^17)^20;\n> time Coefficients(s, 14); \n<SNIP> \nTime: 16.340\n> time Coefficients(s, 429);                                                                               \n\n>> time Coefficients(s, 429);\n                    ^\nRuntime error in 'Coefficients': The number of coefficients to be returned must be small\n```\n\n\n\nsage: \n\n```\nsage: Z.<a,b> = MPowerSeriesRing(QQ,2)\nsage: time (1 + 1/2*a + 3*b + 4*a*b + 1/5*a^2 + 5/6*b^2 + Z(0).O(30))^-20\nCPU times: user 12.67 s, sys: 0.01 s, total: 12.68 s\nWall time: 12.68 s\n<SNIP>\n\nsage: f = 1 + a^14*b^9 + 8/3*a^22*b^11 - 1/13*a^23*b^19 + a^15*b^28 + Z(0).O(51)\nsage: time f^-20\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.05 s\n1 - 20*a^14*b^9 - 160/3*a^22*b^11 + 20/13*a^23*b^19 \n- 20*a^15*b^28 + 210*a^28*b^18 + O(a, b)^51\n```\n\n\n\nmagma:\n\n```\n> Z<a, b> := LazyPowerSeriesRing(Rationals(), 2);\n> t := (1 + 1/2*a + 3*b + 4*a*b + 1/5*a^2 + 5/6*b^2)^-20;\n> time Coefficients(t, 29);  \n<SNIP>                            \nTime: 1.580\n\n> s := (1 + a^14*b^9 + 8/3*a^22*b^11 - 1/13*a^23*b^19 + a^15*b^28)^-20;\n> time Coefficients(s, 50);\n<SNIP>\nTime: 90.840\n```\n\n\n\nIn the case where this package performs badly, it seems to be caused by the rational coefficients:\n\n\n```\nsage: Z.<a,b> = MPowerSeriesRing(QQ,2)\n\nsage: time (1 + a + b + a*b + a^2 + b^2 + Z(0).O(30))^-20;\nCPU times: user 1.90 s, sys: 0.00 s, total: 1.90 s\nWall time: 1.90 s\n\nsage: time (1 + a + 2*b - a*b + 3*a^2 - b^2 + Z(0).O(30))^-20;\nCPU times: user 2.78 s, sys: 0.00 s, total: 2.78 s\nWall time: 2.78 s\n\nsage: time (1 + a + 12*b - 10*a*b + 13*a^2 - 7*b^2 + Z(0).O(30))^-20;\nCPU times: user 3.14 s, sys: 0.00 s, total: 3.14 s\nWall time: 3.14 s\n```\n",
+    "body": "Replying to [comment:7 malb]:\n> Replying to [comment:6 niles]:\n> \n> > > * It would be nice if you could add line breaks around 80 for the doc strings\n \nfixed now\n\n\n> > > * the arithmetic functions doctests do not test correctness of the output\n \narithmetic tests now printed, and confirmed with polynomial tests\n\n\n> Have you compared the speed with, say, Magma?\n\n\nHere are five simple comparisons, three with 2 variables and two with 4 variables, all over QQ.  This sage patch performs substantially better in 3/4 cases, with magma performing substantially better in the other case.  Using polynomial multiplication easily beats magma's restriction on the number of coefficients it will compute for a lazy power series (test 3).\n\nProcessor: `6-core:  model name:  Intel(R) Xeon(R) CPU  X7460  `@` 2.66GHz`\n\nsage: \n\n```\nsage: L.<a,b,c,d> = MPowerSeriesRing(QQ,4)\nsage: %timeit s = (1 + 2*a + 3*b + 4*d + L(0).O(16))^-5\n5 loops, best of 3: 3.18 s per loop\n\nsage: time (1 + a^3 + b^3 + c^4 + d^4 + L(0).O(15))^-20\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n<SNIP>\n\nsage: f = -1/6*b^6*d^14 - 1/9*a^4*b^10*c^4*d^12 + b^10*c^11*d^21 - a*b^14*c^24*d^4 - 1/66*a^16*b^11*c^17 + L(0).O(50)\nsage: time f^20\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.16 s\n1/3656158440062976*b^120*d^280 \n+ 5/1371059415023616*a^4*b^124*c^4*d^278 \n+ 95/4113178245070848*a^8*b^128*c^8*d^276 \n- 5/152339935002624*b^124*c^11*d^287 \n+ 5/152339935002624*a*b^128*c^24*d^270 \n+ 5/10054435710173184*a^16*b^125*c^17*d^266 \n+ O(a, b, c, d)^430\n```\n\nmagma:\n\n```\n> L<a, b, c, d> := LazyPowerSeriesRing(Rationals(), 4);\n> s := (1 + 2*a + 3*b + 4*d)^-5;\n> time Coefficients(s, 15);\n<SNIP>\nTime: 29.020\n\n> s := (1 + a^3 + b^3 + c^4 + d^4)^-20;\n> time Coefficients(s, 14);\n<SNIP>\nTime: 48.850\n\n> s := (-1/6*b^6*d^14 - 1/9*a^4*b^10*c^4*d^12 + b^10*c^11*d^21 - a*b^14*c^24*d^4 - 1/66*a^16*b^11*c^17)^20;\n> time Coefficients(s, 14); \n<SNIP> \nTime: 16.340\n> time Coefficients(s, 429);                                                                               \n\n>> time Coefficients(s, 429);\n                    ^\nRuntime error in 'Coefficients': The number of coefficients to be returned must be small\n```\n\n\nsage: \n\n```\nsage: Z.<a,b> = MPowerSeriesRing(QQ,2)\nsage: time (1 + 1/2*a + 3*b + 4*a*b + 1/5*a^2 + 5/6*b^2 + Z(0).O(30))^-20\nCPU times: user 12.67 s, sys: 0.01 s, total: 12.68 s\nWall time: 12.68 s\n<SNIP>\n\nsage: f = 1 + a^14*b^9 + 8/3*a^22*b^11 - 1/13*a^23*b^19 + a^15*b^28 + Z(0).O(51)\nsage: time f^-20\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.05 s\n1 - 20*a^14*b^9 - 160/3*a^22*b^11 + 20/13*a^23*b^19 \n- 20*a^15*b^28 + 210*a^28*b^18 + O(a, b)^51\n```\n\n\nmagma:\n\n```\n> Z<a, b> := LazyPowerSeriesRing(Rationals(), 2);\n> t := (1 + 1/2*a + 3*b + 4*a*b + 1/5*a^2 + 5/6*b^2)^-20;\n> time Coefficients(t, 29);  \n<SNIP>                            \nTime: 1.580\n\n> s := (1 + a^14*b^9 + 8/3*a^22*b^11 - 1/13*a^23*b^19 + a^15*b^28)^-20;\n> time Coefficients(s, 50);\n<SNIP>\nTime: 90.840\n```\n\n\nIn the case where this package performs badly, it seems to be caused by the rational coefficients:\n\n```\nsage: Z.<a,b> = MPowerSeriesRing(QQ,2)\n\nsage: time (1 + a + b + a*b + a^2 + b^2 + Z(0).O(30))^-20;\nCPU times: user 1.90 s, sys: 0.00 s, total: 1.90 s\nWall time: 1.90 s\n\nsage: time (1 + a + 2*b - a*b + 3*a^2 - b^2 + Z(0).O(30))^-20;\nCPU times: user 2.78 s, sys: 0.00 s, total: 2.78 s\nWall time: 2.78 s\n\nsage: time (1 + a + 12*b - 10*a*b + 13*a^2 - 7*b^2 + Z(0).O(30))^-20;\nCPU times: user 3.14 s, sys: 0.00 s, total: 3.14 s\nWall time: 3.14 s\n```",
     "created_at": "2010-07-17T10:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -289,14 +296,17 @@ Replying to [comment:7 malb]:
 > Replying to [comment:6 niles]:
 > 
 > > > * It would be nice if you could add line breaks around 80 for the doc strings
+ 
 fixed now
 
 
 > > > * the arithmetic functions doctests do not test correctness of the output
+ 
 arithmetic tests now printed, and confirmed with polynomial tests
 
 
 > Have you compared the speed with, say, Magma?
+
 
 Here are five simple comparisons, three with 2 variables and two with 4 variables, all over QQ.  This sage patch performs substantially better in 3/4 cases, with magma performing substantially better in the other case.  Using polynomial multiplication easily beats magma's restriction on the number of coefficients it will compute for a lazy power series (test 3).
 
@@ -327,7 +337,6 @@ Wall time: 0.16 s
 + O(a, b, c, d)^430
 ```
 
-
 magma:
 
 ```
@@ -354,7 +363,6 @@ Runtime error in 'Coefficients': The number of coefficients to be returned must 
 ```
 
 
-
 sage: 
 
 ```
@@ -373,7 +381,6 @@ Wall time: 0.05 s
 ```
 
 
-
 magma:
 
 ```
@@ -390,9 +397,7 @@ Time: 90.840
 ```
 
 
-
 In the case where this package performs badly, it seems to be caused by the rational coefficients:
-
 
 ```
 sage: Z.<a,b> = MPowerSeriesRing(QQ,2)
@@ -412,13 +417,12 @@ Wall time: 3.14 s
 
 
 
-
 ---
 
 archive/issue_comments_012428.json:
 ```json
 {
-    "body": "Replying to [comment:8 niles]:\n> This sage patch performs substantially better in 3/4 cases...\n\noops; should be \"This patch performs substantially better in 4/5 cases...\"",
+    "body": "Replying to [comment:8 niles]:\n> This sage patch performs substantially better in 3/4 cases...\n\n\noops; should be \"This patch performs substantially better in 4/5 cases...\"",
     "created_at": "2010-07-17T10:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -429,6 +433,7 @@ archive/issue_comments_012428.json:
 
 Replying to [comment:8 niles]:
 > This sage patch performs substantially better in 3/4 cases...
+
 
 oops; should be "This patch performs substantially better in 4/5 cases..."
 
@@ -491,7 +496,7 @@ archive/issue_events_004737.json:
 archive/issue_comments_012430.json:
 ```json
 {
-    "body": "First of all: It would certainly be good to have multivariate power series in Sage. Also the performance seems to be pretty good. Thank you!\n\nI have some criticism, though.\n\n1. `__contains__` and coercion\n\nI was reading part of the patch, and I see that your multivariate power series rings have a custom `__contains__` method. I think it should be possible to simply inherit it.\n\nMoreover, the custom method seems to provide a non-standard behaviour: Usual in Sage is to have `a in R` if and only if `a==R(a)` is True (of course, if `R(a)` raises an error then a is not in R).\n\nAnother formulation of the rule is: If a.parent() is P and R has a coercion map from P then a is in R: Since there is a coercion map, R(a) is supposed to work, and `a==R(a)` is equivalent to `R(a)==R(a)`, because this is how comparison with the coercion model works.\n\nBut you have in your doctests\n\n```\nsage: a in R\nFalse\nsage: R(a) in R\nTrue\n```\n\nin a situation were apparently a coercion from `a.parent()` to `R` exists.\n\n2. Use of double-underscore methods\n\nIn your `__cmp__` method, you do \n`self._bg_value.__cmp__(other._bg_value)`\nGenerally, one should avoid to call double-underscore methods directly. So, better do \n`cmp(self._bg_value, other._bg_value)`\n\nThe same applies to doctests. So, instead of\n\n```\nsage: R.<x,y> = MPowerSeriesRing(GF(17)) \nsage: R   \nMultivariate Power Series Ring in x, y over Finite Field of size 17 \nsage: R.__repr__() \n'Multivariate Power Series Ring in x, y over Finite Field of size 17'\n```\n\nyou should do\n\n```\nsage: R     # indirect doctest\nMultivariate Power Series Ring in x, y over Finite Field of size 17\n```\n\nand instead of \n\n```\nsage: M = MPowerSeriesRing(ZZ,5,'t');\nsage: N = M.remove_var(M.gens()[2])\nsage: M.__contains__(N.random_element(10))\nFalse\nsage: M.__contains__(M.random_element(10))\nTrue\n```\n\nyou should have\n\n```\nsage: M.random_element(10) in M\nTrue\n```\n\n\n\nI think it should even be\n\n```\nsage: N.random_element(10) in M\nTrue   # not False!\n```\n\nbecause, if I understand correctly,  there is a coercion from N to M -- see point 1.\n\nI am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.",
+    "body": "First of all: It would certainly be good to have multivariate power series in Sage. Also the performance seems to be pretty good. Thank you!\n\nI have some criticism, though.\n\n1. `__contains__` and coercion\n\nI was reading part of the patch, and I see that your multivariate power series rings have a custom `__contains__` method. I think it should be possible to simply inherit it.\n\nMoreover, the custom method seems to provide a non-standard behaviour: Usual in Sage is to have `a in R` if and only if `a==R(a)` is True (of course, if `R(a)` raises an error then a is not in R).\n\nAnother formulation of the rule is: If a.parent() is P and R has a coercion map from P then a is in R: Since there is a coercion map, R(a) is supposed to work, and `a==R(a)` is equivalent to `R(a)==R(a)`, because this is how comparison with the coercion model works.\n\nBut you have in your doctests\n\n```\nsage: a in R\nFalse\nsage: R(a) in R\nTrue\n```\nin a situation were apparently a coercion from `a.parent()` to `R` exists.\n\n2. Use of double-underscore methods\n\nIn your `__cmp__` method, you do \n`self._bg_value.__cmp__(other._bg_value)`\nGenerally, one should avoid to call double-underscore methods directly. So, better do \n`cmp(self._bg_value, other._bg_value)`\n\nThe same applies to doctests. So, instead of\n\n```\nsage: R.<x,y> = MPowerSeriesRing(GF(17)) \nsage: R   \nMultivariate Power Series Ring in x, y over Finite Field of size 17 \nsage: R.__repr__() \n'Multivariate Power Series Ring in x, y over Finite Field of size 17'\n```\nyou should do\n\n```\nsage: R     # indirect doctest\nMultivariate Power Series Ring in x, y over Finite Field of size 17\n```\nand instead of \n\n```\nsage: M = MPowerSeriesRing(ZZ,5,'t');\nsage: N = M.remove_var(M.gens()[2])\nsage: M.__contains__(N.random_element(10))\nFalse\nsage: M.__contains__(M.random_element(10))\nTrue\n```\nyou should have\n\n```\nsage: M.random_element(10) in M\nTrue\n```\n\n\nI think it should even be\n\n```\nsage: N.random_element(10) in M\nTrue   # not False!\n```\nbecause, if I understand correctly,  there is a coercion from N to M -- see point 1.\n\nI am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.",
     "created_at": "2010-07-21T16:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -520,7 +525,6 @@ False
 sage: R(a) in R
 True
 ```
-
 in a situation were apparently a coercion from `a.parent()` to `R` exists.
 
 2. Use of double-underscore methods
@@ -539,14 +543,12 @@ Multivariate Power Series Ring in x, y over Finite Field of size 17
 sage: R.__repr__() 
 'Multivariate Power Series Ring in x, y over Finite Field of size 17'
 ```
-
 you should do
 
 ```
 sage: R     # indirect doctest
 Multivariate Power Series Ring in x, y over Finite Field of size 17
 ```
-
 and instead of 
 
 ```
@@ -557,7 +559,6 @@ False
 sage: M.__contains__(M.random_element(10))
 True
 ```
-
 you should have
 
 ```
@@ -566,14 +567,12 @@ True
 ```
 
 
-
 I think it should even be
 
 ```
 sage: N.random_element(10) in M
 True   # not False!
 ```
-
 because, if I understand correctly,  there is a coercion from N to M -- see point 1.
 
 I am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.
@@ -585,7 +584,7 @@ I am now running `make ptestlong`, and will then have a closer look at the code 
 archive/issue_comments_012431.json:
 ```json
 {
-    "body": "With `make ptestlong`, I obtained:\n\n```\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/rings/multi_power_series_ring.py # 15 doctests failed\n        sage -t  -long devel/sage/sage/rings/multi_power_series_ring_element.py # 28 doctests failed\n```\n\n\nThese are quite many failures. So, this needs work.",
+    "body": "With `make ptestlong`, I obtained:\n\n```\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/rings/multi_power_series_ring.py # 15 doctests failed\n        sage -t  -long devel/sage/sage/rings/multi_power_series_ring_element.py # 28 doctests failed\n```\n\nThese are quite many failures. So, this needs work.",
     "created_at": "2010-07-21T22:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -602,7 +601,6 @@ The following tests failed:
         sage -t  -long devel/sage/sage/rings/multi_power_series_ring.py # 15 doctests failed
         sage -t  -long devel/sage/sage/rings/multi_power_series_ring_element.py # 28 doctests failed
 ```
-
 
 These are quite many failures. So, this needs work.
 
@@ -631,7 +629,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012433.json:
 ```json
 {
-    "body": "PS:\n\nIt would be nice if the double square bracket notation would work in the multivariate case:\n\n```\nsage: QQ[['x']]\nPower Series Ring in x over Rational Field\nsage: QQ[['x','y']]\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/king/SAGE/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2612)()\n\nNotImplementedError: Power series rings only implemented in 1 variable\n```\n",
+    "body": "PS:\n\nIt would be nice if the double square bracket notation would work in the multivariate case:\n\n```\nsage: QQ[['x']]\nPower Series Ring in x over Rational Field\nsage: QQ[['x','y']]\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/king/SAGE/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2612)()\n\nNotImplementedError: Power series rings only implemented in 1 variable\n```",
     "created_at": "2010-07-22T07:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -660,13 +658,12 @@ NotImplementedError: Power series rings only implemented in 1 variable
 
 
 
-
 ---
 
 archive/issue_comments_012434.json:
 ```json
 {
-    "body": "Thanks for taking a look at this; I'll address the other work issues soon, but for now I wanted to check the doctests.  There aren't any tests flagged as `#long`, so I didn't think `sage -t -long` should be different from `sage -t`.  And in any case, I get\n\n\n```\nsage -t -long \"devel/sage/sage/rings/multi_power_series_ring.py\"\n\t [2.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.7 seconds\n\nsage -t -long \"devel/sage/sage/rings/multi_power_series_ring_element.py\"\n\t [3.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.3 seconds\n```\n\n\nDo you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)?  If you still have doctest failures, could you send me a little more about what's failing?",
+    "body": "Thanks for taking a look at this; I'll address the other work issues soon, but for now I wanted to check the doctests.  There aren't any tests flagged as `#long`, so I didn't think `sage -t -long` should be different from `sage -t`.  And in any case, I get\n\n```\nsage -t -long \"devel/sage/sage/rings/multi_power_series_ring.py\"\n\t [2.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.7 seconds\n\nsage -t -long \"devel/sage/sage/rings/multi_power_series_ring_element.py\"\n\t [3.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.3 seconds\n```\n\nDo you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)?  If you still have doctest failures, could you send me a little more about what's failing?",
     "created_at": "2010-07-24T08:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -676,7 +673,6 @@ archive/issue_comments_012434.json:
 ```
 
 Thanks for taking a look at this; I'll address the other work issues soon, but for now I wanted to check the doctests.  There aren't any tests flagged as `#long`, so I didn't think `sage -t -long` should be different from `sage -t`.  And in any case, I get
-
 
 ```
 sage -t -long "devel/sage/sage/rings/multi_power_series_ring.py"
@@ -694,7 +690,6 @@ All tests passed!
 Total time for all tests: 3.3 seconds
 ```
 
-
 Do you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)?  If you still have doctest failures, could you send me a little more about what's failing?
 
 
@@ -704,7 +699,7 @@ Do you get all tests passed without `-long`?  If not, maybe you forgot to add th
 archive/issue_comments_012435.json:
 ```json
 {
-    "body": "Replying to [comment:14 niles]:\n> Do you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)? \n\nOutch! Sorry, I missed that. I think I'll not be able to resume work before Monday, but then I'll try again with #9457 and #9433.\n\nCheers, Simon",
+    "body": "Replying to [comment:14 niles]:\n> Do you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)? \n\n\nOutch! Sorry, I missed that. I think I'll not be able to resume work before Monday, but then I'll try again with #9457 and #9433.\n\nCheers, Simon",
     "created_at": "2010-07-24T10:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -715,6 +710,7 @@ archive/issue_comments_012435.json:
 
 Replying to [comment:14 niles]:
 > Do you get all tests passed without `-long`?  If not, maybe you forgot to add the patches at #9457 and #9443 (mentioned in my first trac comment)? 
+
 
 Outch! Sorry, I missed that. I think I'll not be able to resume work before Monday, but then I'll try again with #9457 and #9433.
 
@@ -727,7 +723,7 @@ Cheers, Simon
 archive/issue_comments_012436.json:
 ```json
 {
-    "body": "Thanks for the tips!\n\nReplying to [comment:11 SimonKing]:\n> 1. `__contains__` and coercion\n\n`__contains__` is now inherited, and non-standard behaviour fixed (I wasn't aware of the standard).\n\n> \n> 2. Use of double-underscore methods\n\nI have fixed as many of these as I could find (probably all of them, but let me know if there are more issues).\n\n> \n> \n> I am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.\n\nIndeed; I have found that my installation of sage fails some long doctests even before the patches are applied, so I will have to do a fresh installation before I can test this myself properly.\n\nAlso, I had some time to kill so I've added support for the double bracket method, and this is included in the documentation.\n\n```\nsage: ZZ[['s,t,u']]\nMultivariate Power Series Ring in s, t, u over Integer Ring\n```\n\n\nFinally, with a little more free time I added support for `exponents` and a basic version of the verschiebung, `V`.  These were among the pile of not-yet-implemented methods inherited from univariate power series.",
+    "body": "Thanks for the tips!\n\nReplying to [comment:11 SimonKing]:\n> 1. `__contains__` and coercion\n\n\n`__contains__` is now inherited, and non-standard behaviour fixed (I wasn't aware of the standard).\n\n> \n> 2. Use of double-underscore methods\n\n\nI have fixed as many of these as I could find (probably all of them, but let me know if there are more issues).\n\n> \n> \n> I am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.\n\n\nIndeed; I have found that my installation of sage fails some long doctests even before the patches are applied, so I will have to do a fresh installation before I can test this myself properly.\n\nAlso, I had some time to kill so I've added support for the double bracket method, and this is included in the documentation.\n\n```\nsage: ZZ[['s,t,u']]\nMultivariate Power Series Ring in s, t, u over Integer Ring\n```\n\nFinally, with a little more free time I added support for `exponents` and a basic version of the verschiebung, `V`.  These were among the pile of not-yet-implemented methods inherited from univariate power series.",
     "created_at": "2010-08-01T15:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -741,16 +737,19 @@ Thanks for the tips!
 Replying to [comment:11 SimonKing]:
 > 1. `__contains__` and coercion
 
+
 `__contains__` is now inherited, and non-standard behaviour fixed (I wasn't aware of the standard).
 
 > 
 > 2. Use of double-underscore methods
+
 
 I have fixed as many of these as I could find (probably all of them, but let me know if there are more issues).
 
 > 
 > 
 > I am now running `make ptestlong`, and will then have a closer look at the code - so, no review yet. But I think you should address the points above.
+
 
 Indeed; I have found that my installation of sage fails some long doctests even before the patches are applied, so I will have to do a fresh installation before I can test this myself properly.
 
@@ -760,7 +759,6 @@ Also, I had some time to kill so I've added support for the double bracket metho
 sage: ZZ[['s,t,u']]
 Multivariate Power Series Ring in s, t, u over Integer Ring
 ```
-
 
 Finally, with a little more free time I added support for `exponents` and a basic version of the verschiebung, `V`.  These were among the pile of not-yet-implemented methods inherited from univariate power series.
 
@@ -879,7 +877,7 @@ I ran doctests on sage.math and those fail because (I assume) the random seed so
 archive/issue_comments_012441.json:
 ```json
 {
-    "body": "Replying to [comment:19 malb]:\n> I ran doctests on sage.math and those fail because (I assume) the random seed somehow differs. Niles, does it work for you on sage.math with 4.5.3?\n\nAh; I don't have an account on sage.math.  Most of the uses of random_element could be avoided, so I'll submit a new patch without them.",
+    "body": "Replying to [comment:19 malb]:\n> I ran doctests on sage.math and those fail because (I assume) the random seed somehow differs. Niles, does it work for you on sage.math with 4.5.3?\n\n\nAh; I don't have an account on sage.math.  Most of the uses of random_element could be avoided, so I'll submit a new patch without them.",
     "created_at": "2010-09-14T17:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -890,6 +888,7 @@ archive/issue_comments_012441.json:
 
 Replying to [comment:19 malb]:
 > I ran doctests on sage.math and those fail because (I assume) the random seed somehow differs. Niles, does it work for you on sage.math with 4.5.3?
+
 
 Ah; I don't have an account on sage.math.  Most of the uses of random_element could be avoided, so I'll submit a new patch without them.
 
@@ -940,7 +939,7 @@ I now have (agian) the patch passing its own tests and documentation building wi
 archive/issue_comments_012444.json:
 ```json
 {
-    "body": "I get two long doctest failures\n\n\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.5.3/devel/sage/sage/rings/multi_power_series_ring.py\", line 496:\n    sage: W = MPowerSeriesRing(InfinitePolynomialRing(ZZ,'a'),2,'x,y')\nException raised:\n    Traceback (most recent call last):\n    ...\n    TypeError: is_integral_domain() takes exactly 1 argument (2 given)\n```\n\n\n\n```\n    sage: W.is_noetherian()\nException raised:\n    Traceback (most recent call last):\n    ...\n    NameError: name 'W' is not defined\n```\n\n\nI'll start reading the code now.",
+    "body": "I get two long doctest failures\n\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.5.3/devel/sage/sage/rings/multi_power_series_ring.py\", line 496:\n    sage: W = MPowerSeriesRing(InfinitePolynomialRing(ZZ,'a'),2,'x,y')\nException raised:\n    Traceback (most recent call last):\n    ...\n    TypeError: is_integral_domain() takes exactly 1 argument (2 given)\n```\n\n```\n    sage: W.is_noetherian()\nException raised:\n    Traceback (most recent call last):\n    ...\n    NameError: name 'W' is not defined\n```\n\nI'll start reading the code now.",
     "created_at": "2010-09-16T12:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -951,7 +950,6 @@ archive/issue_comments_012444.json:
 
 I get two long doctest failures
 
-
 ```
 File "/mnt/usb1/scratch/malb/sage-4.5.3/devel/sage/sage/rings/multi_power_series_ring.py", line 496:
     sage: W = MPowerSeriesRing(InfinitePolynomialRing(ZZ,'a'),2,'x,y')
@@ -961,8 +959,6 @@ Exception raised:
     TypeError: is_integral_domain() takes exactly 1 argument (2 given)
 ```
 
-
-
 ```
     sage: W.is_noetherian()
 Exception raised:
@@ -970,7 +966,6 @@ Exception raised:
     ...
     NameError: name 'W' is not defined
 ```
-
 
 I'll start reading the code now.
 
@@ -999,7 +994,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012446.json:
 ```json
 {
-    "body": "Replying to [comment:22 malb]:\n> I get two long doctest failures\n> \n>     TypeError: is_integral_domain() takes exactly 1 argument (2 given)\n> \n\nIt is originally stated on this ticket that \"one also needs the patches at #9457 and #9443\". Did you take this into account?\n\nThe purpose of #9443 is to make `is_integral_domain` accept optional arguments, and this should solve the problem. Therefore, I switch back to \"needs review\".",
+    "body": "Replying to [comment:22 malb]:\n> I get two long doctest failures\n> \n>     TypeError: is_integral_domain() takes exactly 1 argument (2 given)\n> \n\n\nIt is originally stated on this ticket that \"one also needs the patches at #9457 and #9443\". Did you take this into account?\n\nThe purpose of #9443 is to make `is_integral_domain` accept optional arguments, and this should solve the problem. Therefore, I switch back to \"needs review\".",
     "created_at": "2010-09-16T12:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1013,6 +1008,7 @@ Replying to [comment:22 malb]:
 > 
 >     TypeError: is_integral_domain() takes exactly 1 argument (2 given)
 > 
+
 
 It is originally stated on this ticket that "one also needs the patches at #9457 and #9443". Did you take this into account?
 
@@ -1304,7 +1300,7 @@ I think there are still some problems with this.  For example:
 archive/issue_comments_012461.json:
 ```json
 {
-    "body": "Replying to [comment:31 mhansen]:\n> I think there are still some problems with this.  For example:\n> \n> 1. Pickling does not work for these objects -- one needs to define a proper !__reduce!__ method.\u00a0\n\ndone now; patch forthcoming.\n\n> \n> 2. I don't think we should continue the use of !__ attributes as they just cause problems.  For example, the code in here has to set attributes like _PowerSeriesRing_generic!__power_series_class in subclasses.\n\nThe use of `__` attributes here is modeled after their use (for better or worse) in `PowerSeriesRing_generic` (see 4. below); it is also in keeping with the python philosophy, that `__` attributes or methods may be removed or changed in future versions.  It is entirely possible that someone will eventually want to significantly rework multi/univariate power series.  Having said that, they can be removed without too much trouble if sage development policy is strongly against them (in this case, perhaps the developer guide should mention it clearly somewhere).\n\n> \n> 3. There are formating issues in some of the docstrings like '_latex_'\n\n`_latex_` is fixed now, and I looked for other problems but didn't see any; my best known method for checking docstring formatting is using `sage -docbuild`, which only shows warnings/errors for non-underscore methods . . . can you recommend a better way?\n\n> \n> 4. We shouldn't have a 'MPowerSeriesRing' -- that functionality should just be in\u00a0PowerSeriesRing. \u00a0MPolynomialRing was deprecated for the same reason a long time ago.\n\nI agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*.\n\nIt would probably be good if the other people involved in this ticket could comment on this last point.",
+    "body": "Replying to [comment:31 mhansen]:\n> I think there are still some problems with this.  For example:\n> \n> 1. Pickling does not work for these objects -- one needs to define a proper !__reduce!__ method.\u00a0\n\n\ndone now; patch forthcoming.\n\n> \n> 2. I don't think we should continue the use of !__ attributes as they just cause problems.  For example, the code in here has to set attributes like _PowerSeriesRing_generic!__power_series_class in subclasses.\n\n\nThe use of `__` attributes here is modeled after their use (for better or worse) in `PowerSeriesRing_generic` (see 4. below); it is also in keeping with the python philosophy, that `__` attributes or methods may be removed or changed in future versions.  It is entirely possible that someone will eventually want to significantly rework multi/univariate power series.  Having said that, they can be removed without too much trouble if sage development policy is strongly against them (in this case, perhaps the developer guide should mention it clearly somewhere).\n\n> \n> 3. There are formating issues in some of the docstrings like '_latex_'\n\n\n`_latex_` is fixed now, and I looked for other problems but didn't see any; my best known method for checking docstring formatting is using `sage -docbuild`, which only shows warnings/errors for non-underscore methods . . . can you recommend a better way?\n\n> \n> 4. We shouldn't have a 'MPowerSeriesRing' -- that functionality should just be in\u00a0PowerSeriesRing. \u00a0MPolynomialRing was deprecated for the same reason a long time ago.\n\n\nI agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*.\n\nIt would probably be good if the other people involved in this ticket could comment on this last point.",
     "created_at": "2010-09-20T17:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1318,20 +1314,24 @@ Replying to [comment:31 mhansen]:
 > 
 > 1. Pickling does not work for these objects -- one needs to define a proper !__reduce!__ method. 
 
+
 done now; patch forthcoming.
 
 > 
 > 2. I don't think we should continue the use of !__ attributes as they just cause problems.  For example, the code in here has to set attributes like _PowerSeriesRing_generic!__power_series_class in subclasses.
+
 
 The use of `__` attributes here is modeled after their use (for better or worse) in `PowerSeriesRing_generic` (see 4. below); it is also in keeping with the python philosophy, that `__` attributes or methods may be removed or changed in future versions.  It is entirely possible that someone will eventually want to significantly rework multi/univariate power series.  Having said that, they can be removed without too much trouble if sage development policy is strongly against them (in this case, perhaps the developer guide should mention it clearly somewhere).
 
 > 
 > 3. There are formating issues in some of the docstrings like '_latex_'
 
+
 `_latex_` is fixed now, and I looked for other problems but didn't see any; my best known method for checking docstring formatting is using `sage -docbuild`, which only shows warnings/errors for non-underscore methods . . . can you recommend a better way?
 
 > 
 > 4. We shouldn't have a 'MPowerSeriesRing' -- that functionality should just be in PowerSeriesRing.  MPolynomialRing was deprecated for the same reason a long time ago.
+
 
 I agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*.
 
@@ -1362,7 +1362,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012463.json:
 ```json
 {
-    "body": "Replying to [comment:32 niles]:\n\n> I agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*. It would probably be good if the other people involved in this ticket could comment on this last point\n\nI think you may have misunderstood what I meant. In the patch, you've made a function \"MPowerSeriesRing\" which is basically a copy of the function \"PowerSeriesRing\" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).",
+    "body": "Replying to [comment:32 niles]:\n\n> I agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*. It would probably be good if the other people involved in this ticket could comment on this last point\n\n\nI think you may have misunderstood what I meant. In the patch, you've made a function \"MPowerSeriesRing\" which is basically a copy of the function \"PowerSeriesRing\" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).",
     "created_at": "2010-09-20T18:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1375,6 +1375,7 @@ Replying to [comment:32 niles]:
 
 > I agree, but I think that issue is beyond the scope of this ticket.  Implementing multivariate power series arithmetic is already long and complex enough, without having to also worry about integrating them with the univariate power series code (which is heavily specialized for the single-variable case).  I have spent time thinking about how to do this, and I think it will be a subtle problem to solve; there is a sizable body of code that depends on `PowerSeriesRing` as it stands, and one will have to be careful about extending its functionality without breaking any of the current uses.  So I suggest that we merge this ticket and then open a new ticket for *Unify construction of uni- and multi-variate power series rings, as has been done for polynomial rings*. It would probably be good if the other people involved in this ticket could comment on this last point
 
+
 I think you may have misunderstood what I meant. In the patch, you've made a function "MPowerSeriesRing" which is basically a copy of the function "PowerSeriesRing" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).
 
 
@@ -1384,7 +1385,7 @@ I think you may have misunderstood what I meant. In the patch, you've made a fun
 archive/issue_comments_012464.json:
 ```json
 {
-    "body": "Replying to [comment:34 mhansen]:\n> \n> I think you may have misunderstood what I meant. In the patch, you've made a function \"MPowerSeriesRing\" which is basically a copy of the function \"PowerSeriesRing\" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).\n\nWell, I'm slightly embarrassed to say it, but I think did understand what you meant.  I have tried a few times now, but each time I look at the code for `PowerSeriesRing`, I find it confusing and a bit overwhelming.  I thought perhaps looking at the code for `PolynomialRing` would offer some guidance, but that only made things worse.  It seems that each of these go to great lengths to allow (positional) arguments to be given in a variety of orders, and somehow I find this intimidating.  (I have a hard time telling how various input cases are handled, for example.)\n\nI'll spend a couple more days on it, but I won't be heartbroken if someone reassigns it to a new patch, or decides that it's so easy they can do it themselves in under an hour ;)",
+    "body": "Replying to [comment:34 mhansen]:\n> \n> I think you may have misunderstood what I meant. In the patch, you've made a function \"MPowerSeriesRing\" which is basically a copy of the function \"PowerSeriesRing\" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).\n\n\nWell, I'm slightly embarrassed to say it, but I think did understand what you meant.  I have tried a few times now, but each time I look at the code for `PowerSeriesRing`, I find it confusing and a bit overwhelming.  I thought perhaps looking at the code for `PolynomialRing` would offer some guidance, but that only made things worse.  It seems that each of these go to great lengths to allow (positional) arguments to be given in a variety of orders, and somehow I find this intimidating.  (I have a hard time telling how various input cases are handled, for example.)\n\nI'll spend a couple more days on it, but I won't be heartbroken if someone reassigns it to a new patch, or decides that it's so easy they can do it themselves in under an hour ;)",
     "created_at": "2010-09-20T18:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1396,6 +1397,7 @@ archive/issue_comments_012464.json:
 Replying to [comment:34 mhansen]:
 > 
 > I think you may have misunderstood what I meant. In the patch, you've made a function "MPowerSeriesRing" which is basically a copy of the function "PowerSeriesRing" defined in power_series_ring.py.  It is just responsible for caching and returning the correct type.  There is an assert statement in PowerSeriesRing that makes sure that you're only trying to make a univariate power series ring.  This function should just be changed to return the appropriate thing in the multivariate case.  This is maybe like 10 lines of code or so (and changing doctests).
+
 
 Well, I'm slightly embarrassed to say it, but I think did understand what you meant.  I have tried a few times now, but each time I look at the code for `PowerSeriesRing`, I find it confusing and a bit overwhelming.  I thought perhaps looking at the code for `PolynomialRing` would offer some guidance, but that only made things worse.  It seems that each of these go to great lengths to allow (positional) arguments to be given in a variety of orders, and somehow I find this intimidating.  (I have a hard time telling how various input cases are handled, for example.)
 
@@ -1426,7 +1428,7 @@ I'll update the patch to take care of this.
 archive/issue_comments_012466.json:
 ```json
 {
-    "body": "Replying to [comment:36 mhansen]:\n> I'll update the patch to take care of this.\n\nthat would be great!  thanks :)",
+    "body": "Replying to [comment:36 mhansen]:\n> I'll update the patch to take care of this.\n\n\nthat would be great!  thanks :)",
     "created_at": "2010-09-20T20:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1437,6 +1439,7 @@ archive/issue_comments_012466.json:
 
 Replying to [comment:36 mhansen]:
 > I'll update the patch to take care of this.
+
 
 that would be great!  thanks :)
 
@@ -1465,7 +1468,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012468.json:
 ```json
 {
-    "body": "For what it's worth, here is the specific issue I'm stuck on: `PowerSeries` allows the argument `default_prec` to be specified using either the first or second position:\n\n\n```\nsage: T = PowerSeriesRing(QQ,'t',3)\nsage: T.default_prec()\n3\n\nsage: T = PowerSeriesRing(QQ,3,names='t')\nsage: T.default_prec()\n3\nsage: T.variable_name()\n't'\n```\n\n\nSo what's the best way to preserve this functionality, but also allow creation of multivariate power series using the same (or similar) syntax as `PolynomialRing` uses? e.g.\n\n\n```\nsage: R = PolynomialRing(QQ,3,'r'); R\nMultivariate Polynomial Ring in r0, r1, r2 over Rational Field\nsage: R = PolynomialRing(QQ,'r',3); R\nMultivariate Polynomial Ring in r0, r1, r2 over Rational Field\n```\n\n\nNote, on the other hand, that the following give errors:\n\n```\nsage: T = PowerSeriesRing(QQ,3,'t')\nTraceback (most recent call last):\n...\nValueError: first letter of variable name must be a letter\n\nsage: T = PowerSeriesRing(QQ,3,name='t')\nTraceback (most recent call last):\n...\nTypeError: PowerSeriesRing() got multiple values for keyword argument 'name'\n```\n\n\nTo me, it seems that the current behavior (assuming integer arguments are meant to be `default_prec`) should be deprecated, and the allowed syntax of `PowerSeriesRing` should mirror that of `PolynomialRing`.\n\n\nOh, I just realized what I should try:  Make `PowerSeriesRing(QQ,3,'t')` and `PowerSeriesRing(QQ,'t,u,v')` create multivariate power series rings, and raise deprecation warnings in the other cases (as long as the rest of sage doesn't depend too heavily on this behavior); then `MPowerSeriesRing` never has to exist, `PowerSeriesRing` will sort of work as expected, and eventually it can be brought properly in line with `PolynomialRing`.  How does that sound to other people here?",
+    "body": "For what it's worth, here is the specific issue I'm stuck on: `PowerSeries` allows the argument `default_prec` to be specified using either the first or second position:\n\n```\nsage: T = PowerSeriesRing(QQ,'t',3)\nsage: T.default_prec()\n3\n\nsage: T = PowerSeriesRing(QQ,3,names='t')\nsage: T.default_prec()\n3\nsage: T.variable_name()\n't'\n```\n\nSo what's the best way to preserve this functionality, but also allow creation of multivariate power series using the same (or similar) syntax as `PolynomialRing` uses? e.g.\n\n```\nsage: R = PolynomialRing(QQ,3,'r'); R\nMultivariate Polynomial Ring in r0, r1, r2 over Rational Field\nsage: R = PolynomialRing(QQ,'r',3); R\nMultivariate Polynomial Ring in r0, r1, r2 over Rational Field\n```\n\nNote, on the other hand, that the following give errors:\n\n```\nsage: T = PowerSeriesRing(QQ,3,'t')\nTraceback (most recent call last):\n...\nValueError: first letter of variable name must be a letter\n\nsage: T = PowerSeriesRing(QQ,3,name='t')\nTraceback (most recent call last):\n...\nTypeError: PowerSeriesRing() got multiple values for keyword argument 'name'\n```\n\nTo me, it seems that the current behavior (assuming integer arguments are meant to be `default_prec`) should be deprecated, and the allowed syntax of `PowerSeriesRing` should mirror that of `PolynomialRing`.\n\n\nOh, I just realized what I should try:  Make `PowerSeriesRing(QQ,3,'t')` and `PowerSeriesRing(QQ,'t,u,v')` create multivariate power series rings, and raise deprecation warnings in the other cases (as long as the rest of sage doesn't depend too heavily on this behavior); then `MPowerSeriesRing` never has to exist, `PowerSeriesRing` will sort of work as expected, and eventually it can be brought properly in line with `PolynomialRing`.  How does that sound to other people here?",
     "created_at": "2010-09-21T13:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1475,7 +1478,6 @@ archive/issue_comments_012468.json:
 ```
 
 For what it's worth, here is the specific issue I'm stuck on: `PowerSeries` allows the argument `default_prec` to be specified using either the first or second position:
-
 
 ```
 sage: T = PowerSeriesRing(QQ,'t',3)
@@ -1489,9 +1491,7 @@ sage: T.variable_name()
 't'
 ```
 
-
 So what's the best way to preserve this functionality, but also allow creation of multivariate power series using the same (or similar) syntax as `PolynomialRing` uses? e.g.
-
 
 ```
 sage: R = PolynomialRing(QQ,3,'r'); R
@@ -1499,7 +1499,6 @@ Multivariate Polynomial Ring in r0, r1, r2 over Rational Field
 sage: R = PolynomialRing(QQ,'r',3); R
 Multivariate Polynomial Ring in r0, r1, r2 over Rational Field
 ```
-
 
 Note, on the other hand, that the following give errors:
 
@@ -1514,7 +1513,6 @@ Traceback (most recent call last):
 ...
 TypeError: PowerSeriesRing() got multiple values for keyword argument 'name'
 ```
-
 
 To me, it seems that the current behavior (assuming integer arguments are meant to be `default_prec`) should be deprecated, and the allowed syntax of `PowerSeriesRing` should mirror that of `PolynomialRing`.
 
@@ -1546,7 +1544,7 @@ implements multivariate power series rings through `PowerSeriesRing`
 archive/issue_comments_012470.json:
 ```json
 {
-    "body": "Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by @nilesjohnson created at 2010-09-23 17:35:14\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\n\nor\n\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
+    "body": "Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by @nilesjohnson created at 2010-09-23 17:35:14\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\nor\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
     "created_at": "2010-09-23T17:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1559,19 +1557,15 @@ Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/t
 
 Ok, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax
 
-
 ```
 T = PowerSeriesRing(QQ,'t',3)
 ```
 
-
 or
-
 
 ```
 T.<t> = PowerSeriesRing(QQ,3)
 ```
-
 
 to construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.
 
@@ -1702,7 +1696,7 @@ Hi, I tried to apply the patch against 4.6.alpha3 and it failed (bitrot). I can 
 archive/issue_comments_012477.json:
 ```json
 {
-    "body": "Replying to [comment:44 malb]:\n> Hi, I tried to apply the patch against 4.6.alpha3 and it failed (bitrot). I can take a look once that's fixed but I think it would be best if Mike would take a look as well.\n\nI finally got 4.6.alpha3 built, but I didn't have any errors applying the patches . . . can you double check that you first applied [attachment:trac_1956_multi_power_series_new_4.patch] and then [attachment:trac_1956_uni_multi_ps_2.patch]? (I did get errors when applying only the second of these)  If there are still errors, could you send me a snippet of the failure message?\n\nThanks for staying with this!",
+    "body": "Replying to [comment:44 malb]:\n> Hi, I tried to apply the patch against 4.6.alpha3 and it failed (bitrot). I can take a look once that's fixed but I think it would be best if Mike would take a look as well.\n\n\nI finally got 4.6.alpha3 built, but I didn't have any errors applying the patches . . . can you double check that you first applied [attachment:trac_1956_multi_power_series_new_4.patch] and then [attachment:trac_1956_uni_multi_ps_2.patch]? (I did get errors when applying only the second of these)  If there are still errors, could you send me a snippet of the failure message?\n\nThanks for staying with this!",
     "created_at": "2010-10-19T12:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1713,6 +1707,7 @@ archive/issue_comments_012477.json:
 
 Replying to [comment:44 malb]:
 > Hi, I tried to apply the patch against 4.6.alpha3 and it failed (bitrot). I can take a look once that's fixed but I think it would be best if Mike would take a look as well.
+
 
 I finally got 4.6.alpha3 built, but I didn't have any errors applying the patches . . . can you double check that you first applied [attachment:trac_1956_multi_power_series_new_4.patch] and then [attachment:trac_1956_uni_multi_ps_2.patch]? (I did get errors when applying only the second of these)  If there are still errors, could you send me a snippet of the failure message?
 
@@ -1725,7 +1720,7 @@ Thanks for staying with this!
 archive/issue_comments_012478.json:
 ```json
 {
-    "body": "You are right, I cannot reproduce my problem. As instructed above, I can indeed apply the patch cleanly.\n\nSome more comments (I'm really not the best person to review this code):\n\nHere are some performance figures:\n\n\n```python\nsage: R.<t,u,v> = PowerSeriesRing(QQ); R\nMultivariate Power Series Ring in t, u, v over Rational Field\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\nsage: %timeit f^2 # power series\n125 loops, best of 3: 2.89 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 82.4 \u00b5s per loop\n\nsage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\n\nsage: %timeit f^2 # power series\n625 loops, best of 3: 1.06 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 15.3 \u00b5s per loop\n```\n\n\nI also noticed that this is rather slow:\n\n\n```python\nsage: sage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: p = f.polynomial()\nsage: fp = f.polynomial()\nsage: %timeit R(fp)\n25 loops, best of 3: 11.1 ms per loop\n```\n\n\nConversion to Magma didn't seem to work at all, or am I doing it wrong?\n\n\n```python\nsage: magma(f)\nIn file \"/home/malb/.sage//temp/road/7093//interface//tmp7130\", line 1, column 16:\n>> _sage_[4]:=-63*u^4 + 11*t*v^8 - 17*t^3*u^4*v^3 - 61*t^4*u^5*v^2 + 16*t^5*u^\n                  ^\nUser error: Identifier 'u' has not been declared or assigned\n```\n",
+    "body": "You are right, I cannot reproduce my problem. As instructed above, I can indeed apply the patch cleanly.\n\nSome more comments (I'm really not the best person to review this code):\n\nHere are some performance figures:\n\n```python\nsage: R.<t,u,v> = PowerSeriesRing(QQ); R\nMultivariate Power Series Ring in t, u, v over Rational Field\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\nsage: %timeit f^2 # power series\n125 loops, best of 3: 2.89 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 82.4 \u00b5s per loop\n\nsage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\n\nsage: %timeit f^2 # power series\n625 loops, best of 3: 1.06 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 15.3 \u00b5s per loop\n```\n\nI also noticed that this is rather slow:\n\n```python\nsage: sage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: p = f.polynomial()\nsage: fp = f.polynomial()\nsage: %timeit R(fp)\n25 loops, best of 3: 11.1 ms per loop\n```\n\nConversion to Magma didn't seem to work at all, or am I doing it wrong?\n\n```python\nsage: magma(f)\nIn file \"/home/malb/.sage//temp/road/7093//interface//tmp7130\", line 1, column 16:\n>> _sage_[4]:=-63*u^4 + 11*t*v^8 - 17*t^3*u^4*v^3 - 61*t^4*u^5*v^2 + 16*t^5*u^\n                  ^\nUser error: Identifier 'u' has not been declared or assigned\n```",
     "created_at": "2010-10-19T17:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1739,7 +1734,6 @@ You are right, I cannot reproduce my problem. As instructed above, I can indeed 
 Some more comments (I'm really not the best person to review this code):
 
 Here are some performance figures:
-
 
 ```python
 sage: R.<t,u,v> = PowerSeriesRing(QQ); R
@@ -1764,9 +1758,7 @@ sage: %timeit fp^2 # polynomials
 625 loops, best of 3: 15.3 µs per loop
 ```
 
-
 I also noticed that this is rather slow:
-
 
 ```python
 sage: sage: R.<t,u,v> = PowerSeriesRing(GF(127)); R
@@ -1778,9 +1770,7 @@ sage: %timeit R(fp)
 25 loops, best of 3: 11.1 ms per loop
 ```
 
-
 Conversion to Magma didn't seem to work at all, or am I doing it wrong?
-
 
 ```python
 sage: magma(f)
@@ -1792,13 +1782,12 @@ User error: Identifier 'u' has not been declared or assigned
 
 
 
-
 ---
 
 archive/issue_comments_012479.json:
 ```json
 {
-    "body": "Replying to [comment:46 malb]:\n\n> \n> Here are some performance figures:\n> <SNIP>\n\nThanks; I think these are outside the scope of this ticket (although important!)  Here are the numbers I get:\n\n\n```\nsage: R.<t,u,v> = PowerSeriesRing(QQ); R\nMultivariate Power Series Ring in t, u, v over Rational Field\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\nsage: %timeit f^2 # power series\n125 loops, best of 3: 2.67 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 52.3 \u00b5s per loop\n```\n\n\nThe arithmetic is done in a univariate power series ring over a multivariate power series ring (called the \"background ring\" in the code):\n\n```\nsage: R._bg_ps_ring()\nPower Series Ring in T over Multivariate Polynomial Ring in t, u, v over Rational Field\nsage: fb = f._bg_value\nsage: %timeit fb^2\n125 loops, best of 3: 2.61 ms per loop\n```\n\n\nSo the speed is a limitation of univariate power series rings over multivariate polynomial rings . . .\n\n\n```\nsage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\n\nsage: %timeit f^2 # power series\n625 loops, best of 3: 1.48 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 20.8 \u00b5s per loop\n\nsage: fb = f._bg_value # univariate power series over multivariate polynomials\nsage: %timeit fb^2\n625 loops, best of 3: 1.42 ms per loop\n```\n\n\n> \n> Conversion to Magma didn't seem to work at all, or am I doing it wrong?\n> \nI don't know anything about converting to magma, but the following are also broken:\n\n\n```\nsage: magma(fp)\nTypeError: Error evaluating Magma code.\nIN:_sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\"u\",\"v\"]);\nOUT:\n>> _sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\n                                                              ^\n\nUser error: Identifier 'negdeglex' has not been declared or assigned\n\nsage:magma(fb)\n>> _sage_[6]:=32*t^4*T^4 + 30*t^2*u*v^5*T^8 - 21*t^3*u^3*v^3*T^9 + 56*t*u^7*v^\n                 ^\nUser error: Identifier 't' has not been declared or assigned\n\n```\n",
+    "body": "Replying to [comment:46 malb]:\n\n> \n> Here are some performance figures:\n> <SNIP>\n\n\nThanks; I think these are outside the scope of this ticket (although important!)  Here are the numbers I get:\n\n```\nsage: R.<t,u,v> = PowerSeriesRing(QQ); R\nMultivariate Power Series Ring in t, u, v over Rational Field\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\nsage: %timeit f^2 # power series\n125 loops, best of 3: 2.67 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 52.3 \u00b5s per loop\n```\n\nThe arithmetic is done in a univariate power series ring over a multivariate power series ring (called the \"background ring\" in the code):\n\n```\nsage: R._bg_ps_ring()\nPower Series Ring in T over Multivariate Polynomial Ring in t, u, v over Rational Field\nsage: fb = f._bg_value\nsage: %timeit fb^2\n125 loops, best of 3: 2.61 ms per loop\n```\n\nSo the speed is a limitation of univariate power series rings over multivariate polynomial rings . . .\n\n```\nsage: R.<t,u,v> = PowerSeriesRing(GF(127)); R\nMultivariate Power Series Ring in t, u, v over Finite Field of size 127\nsage: f = R.random_element(prec=20,bound=20)\nsage: fp = f.polynomial()\n\nsage: %timeit f^2 # power series\n625 loops, best of 3: 1.48 ms per loop\n\nsage: %timeit fp^2 # polynomials\n625 loops, best of 3: 20.8 \u00b5s per loop\n\nsage: fb = f._bg_value # univariate power series over multivariate polynomials\nsage: %timeit fb^2\n625 loops, best of 3: 1.42 ms per loop\n```\n\n> \n> Conversion to Magma didn't seem to work at all, or am I doing it wrong?\n> \n\nI don't know anything about converting to magma, but the following are also broken:\n\n```\nsage: magma(fp)\nTypeError: Error evaluating Magma code.\nIN:_sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\"u\",\"v\"]);\nOUT:\n>> _sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\n                                                              ^\n\nUser error: Identifier 'negdeglex' has not been declared or assigned\n\nsage:magma(fb)\n>> _sage_[6]:=32*t^4*T^4 + 30*t^2*u*v^5*T^8 - 21*t^3*u^3*v^3*T^9 + 56*t*u^7*v^\n                 ^\nUser error: Identifier 't' has not been declared or assigned\n\n```",
     "created_at": "2010-10-19T17:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1813,8 +1802,8 @@ Replying to [comment:46 malb]:
 > Here are some performance figures:
 > <SNIP>
 
-Thanks; I think these are outside the scope of this ticket (although important!)  Here are the numbers I get:
 
+Thanks; I think these are outside the scope of this ticket (although important!)  Here are the numbers I get:
 
 ```
 sage: R.<t,u,v> = PowerSeriesRing(QQ); R
@@ -1828,7 +1817,6 @@ sage: %timeit fp^2 # polynomials
 625 loops, best of 3: 52.3 µs per loop
 ```
 
-
 The arithmetic is done in a univariate power series ring over a multivariate power series ring (called the "background ring" in the code):
 
 ```
@@ -1839,9 +1827,7 @@ sage: %timeit fb^2
 125 loops, best of 3: 2.61 ms per loop
 ```
 
-
 So the speed is a limitation of univariate power series rings over multivariate polynomial rings . . .
-
 
 ```
 sage: R.<t,u,v> = PowerSeriesRing(GF(127)); R
@@ -1860,12 +1846,11 @@ sage: %timeit fb^2
 625 loops, best of 3: 1.42 ms per loop
 ```
 
-
 > 
 > Conversion to Magma didn't seem to work at all, or am I doing it wrong?
 > 
-I don't know anything about converting to magma, but the following are also broken:
 
+I don't know anything about converting to magma, but the following are also broken:
 
 ```
 sage: magma(fp)
@@ -1886,13 +1871,12 @@ User error: Identifier 't' has not been declared or assigned
 
 
 
-
 ---
 
 archive/issue_comments_012480.json:
 ```json
 {
-    "body": "Replying to [comment:47 niles]:\n> I don't know anything about converting to magma, but the following are also broken:\n> \n> {{{\n> sage: magma(fp)\n> TypeError: Error evaluating Magma code.\n> IN:_sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\"u\",\"v\"]);\n> OUT:\n> >> _sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\n>                                                               ^\n> \n> User error: Identifier 'negdeglex' has not been declared or assigned\n\nMagma doesn't support local orderings for multivariate polynomial rings.",
+    "body": "Replying to [comment:47 niles]:\n> I don't know anything about converting to magma, but the following are also broken:\n> \n> \n> ```\n> sage: magma(fp)\n> TypeError: Error evaluating Magma code.\n> IN:_sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\"u\",\"v\"]);\n> OUT:\n> >> _sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),[\"t\",\n>                                                               ^\n> \n> User error: Identifier 'negdeglex' has not been declared or assigned\n\n\nMagma doesn't support local orderings for multivariate polynomial rings.",
     "created_at": "2010-10-19T18:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1904,7 +1888,8 @@ archive/issue_comments_012480.json:
 Replying to [comment:47 niles]:
 > I don't know anything about converting to magma, but the following are also broken:
 > 
-> {{{
+> 
+> ```
 > sage: magma(fp)
 > TypeError: Error evaluating Magma code.
 > IN:_sage_[5]:=SageCreateWithNames(PolynomialRing(_sage_ref2,3,negdeglex),["t","u","v"]);
@@ -1913,6 +1898,7 @@ Replying to [comment:47 niles]:
 >                                                               ^
 > 
 > User error: Identifier 'negdeglex' has not been declared or assigned
+
 
 Magma doesn't support local orderings for multivariate polynomial rings.
 
@@ -1923,7 +1909,7 @@ Magma doesn't support local orderings for multivariate polynomial rings.
 archive/issue_comments_012481.json:
 ```json
 {
-    "body": "Replying to [comment:47 niles]:\n\nMike, would you be able to take a look at this some time?  \n\nHere are some further comparisons with polynomial arithmetic, computing ``f**k`` for various values of ``k``.  Obviously the power series computation has a greater and greater advantage over the polynomial computation as ``k`` grows, since the polynomial arithmetic computes many more (irrelevant) terms.  So the time tests below aren't exactly fair -- one could compute the necessary terms by computing small polynomial powers, truncating, and repeating -- but part of the point of the power series code is to automate this for the user.  One side effect is that arithmetic for small powers is slower, but for large powers the power series arithmetic is fairly good: below, I have a comparison in a simple special case: ``k = 2**n`` and non-zero constant coefficient.\n\nIn any case, the point of this ticket is to implement the basic arithmetic.  The code should be fast enough for basic use, and speed improvement can be part of a separate ticket.\n\n## Timings for ``f**k`` v.s. ``fp**k``\n\n\n```\nsage: BaseRingList = [ZZ,QQ,GF(11),GF(65537)]\n\nsage: for B in BaseRingList:\n    R = PowerSeriesRing(B,4,'t'); R\n    f = R.random_element(prec=10,bound=20)\n    fp = f.polynomial()\n    for k in [2,5,8,11]:   \n        print 'f**'+str(k)+': (power series)'\n        timeit('f**k',number=5)\n        print 'fp**'+str(k)+': (polynomial)'\n        timeit('fp**k',number=5)\n        print '--'\n....:         \nMultivariate Power Series Ring in t0, t1, t2, t3 over Integer Ring\nf**2: (power series)\n5 loops, best of 3: 879 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 33.2 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 4.12 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 2.52 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 6.47 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 51.5 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 10.8 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 652 ms per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Rational Field\nf**2: (power series)\n5 loops, best of 3: 1 ms per loop\nfp**2: (polynomial)\n5 loops, best of 3: 44.8 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 8.68 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 4.12 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 26.4 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 119 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 58.4 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 2.28 s per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Finite Field of size 11\nf**2: (power series)\n5 loops, best of 3: 480 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 10.4 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 2.49 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 547 \u00b5s per loop\n--\nf**8: (power series)\n5 loops, best of 3: 4.23 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 11 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 8.6 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 190 ms per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Finite Field of size 65537\nf**2: (power series)\n5 loops, best of 3: 614 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 18.8 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 4.37 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 3.13 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 16.5 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 231 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 29.7 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 4.85 s per loop\n--\n```\n\n\n\n## Timings for ``f**(2**n)`` v.s. iterated square-and-truncate for ``fp**(2**n)``\n\nHere is a simple special case:  for a power series `f` with non-zero constant coefficient, the total-degree precision of `f**k` is equal to the total-degree precision of `f` for all `k`.  Below is a function which uses polynomial arithmetic to compute coefficients of `fp**k` up to given total degree for `k = 2^n`, where `fp = f.polynomial()`.\n\n\n```\nsage: def tot_deg_truncate(g,d):\n    return sum(g.monomial_coefficient(m)*m for m in [x for x in g.monomials() if x.degree() < d])\n....: \n\nsage: def pow_recursive(g,k,d):\n    if k == 2:\n        return tot_deg_truncate(g**2,d)\n    else:\n        return pow_recursive(tot_deg_truncate(g**2,d),k/2,d)\n....:     \n\nsage: R = PowerSeriesRing(ZZ,4,'t')\nsage: f = 1 + R.random_element(prec=10,bound=20)\nsage: f.constant_coefficient()\n1\nsage: fp = f.polynomial()\n```\n\n\nCheck that ``pow_recursive`` gets the right answer:\n\n```\nsage: f**16 - pow_recursive(fp,16,10)\n0 + O(t0, t1, t2, t3)^10\nsage: f**64 - pow_recursive(fp,64,10)\n0 + O(t0, t1, t2, t3)^10\n```\n\n\nCompare timings; although the polynomial arithmetic is faster, they are on roughly the same order of magnitude.\n\n```\nsage: %timeit f**16\n125 loops, best of 3: 4.8 ms per loop\nsage: %timeit pow_recursive(fp,16,10)\n625 loops, best of 3: 1.18 ms per loop\n\nsage: %timeit f**64\n125 loops, best of 3: 7.21 ms per loop\nsage: %timeit pow_recursive(fp,64,10)\n125 loops, best of 3: 1.76 ms per loop\n```\n\n\nIncreasing the precision exaggerates the difference:\n\n\n```\nsage: f = 1 + R.random_element(prec=30,bound=20)\nsage: f.constant_coefficient()\n1\nsage: fp = f.polynomial()\nsage: f**16 - pow_recursive(fp,16,30)\n0 + O(t0, t1, t2, t3)^30\nsage: f**64 - pow_recursive(fp,64,30)\n0 + O(t0, t1, t2, t3)^30\n\nsage: %timeit f**16\n25 loops, best of 3: 15.9 ms per loop\nsage: %timeit pow_recursive(fp,16,30)\n125 loops, best of 3: 1.81 ms per loop\n\nsage: %timeit f**64\n25 loops, best of 3: 23.9 ms per loop\nsage: %timeit pow_recursive(fp,64,30)\n125 loops, best of 3: 2.65 ms per loop\n```\n",
+    "body": "Replying to [comment:47 niles]:\n\nMike, would you be able to take a look at this some time?  \n\nHere are some further comparisons with polynomial arithmetic, computing ``f**k`` for various values of ``k``.  Obviously the power series computation has a greater and greater advantage over the polynomial computation as ``k`` grows, since the polynomial arithmetic computes many more (irrelevant) terms.  So the time tests below aren't exactly fair -- one could compute the necessary terms by computing small polynomial powers, truncating, and repeating -- but part of the point of the power series code is to automate this for the user.  One side effect is that arithmetic for small powers is slower, but for large powers the power series arithmetic is fairly good: below, I have a comparison in a simple special case: ``k = 2**n`` and non-zero constant coefficient.\n\nIn any case, the point of this ticket is to implement the basic arithmetic.  The code should be fast enough for basic use, and speed improvement can be part of a separate ticket.\n\n## Timings for ``f**k`` v.s. ``fp**k``\n\n```\nsage: BaseRingList = [ZZ,QQ,GF(11),GF(65537)]\n\nsage: for B in BaseRingList:\n    R = PowerSeriesRing(B,4,'t'); R\n    f = R.random_element(prec=10,bound=20)\n    fp = f.polynomial()\n    for k in [2,5,8,11]:   \n        print 'f**'+str(k)+': (power series)'\n        timeit('f**k',number=5)\n        print 'fp**'+str(k)+': (polynomial)'\n        timeit('fp**k',number=5)\n        print '--'\n....:         \nMultivariate Power Series Ring in t0, t1, t2, t3 over Integer Ring\nf**2: (power series)\n5 loops, best of 3: 879 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 33.2 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 4.12 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 2.52 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 6.47 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 51.5 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 10.8 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 652 ms per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Rational Field\nf**2: (power series)\n5 loops, best of 3: 1 ms per loop\nfp**2: (polynomial)\n5 loops, best of 3: 44.8 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 8.68 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 4.12 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 26.4 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 119 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 58.4 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 2.28 s per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Finite Field of size 11\nf**2: (power series)\n5 loops, best of 3: 480 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 10.4 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 2.49 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 547 \u00b5s per loop\n--\nf**8: (power series)\n5 loops, best of 3: 4.23 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 11 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 8.6 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 190 ms per loop\n--\n\nMultivariate Power Series Ring in t0, t1, t2, t3 over Finite Field of size 65537\nf**2: (power series)\n5 loops, best of 3: 614 \u00b5s per loop\nfp**2: (polynomial)\n5 loops, best of 3: 18.8 \u00b5s per loop\n--\nf**5: (power series)\n5 loops, best of 3: 4.37 ms per loop\nfp**5: (polynomial)\n5 loops, best of 3: 3.13 ms per loop\n--\nf**8: (power series)\n5 loops, best of 3: 16.5 ms per loop\nfp**8: (polynomial)\n5 loops, best of 3: 231 ms per loop\n--\nf**11: (power series)\n5 loops, best of 3: 29.7 ms per loop\nfp**11: (polynomial)\n5 loops, best of 3: 4.85 s per loop\n--\n```\n\n\n## Timings for ``f**(2**n)`` v.s. iterated square-and-truncate for ``fp**(2**n)``\n\nHere is a simple special case:  for a power series `f` with non-zero constant coefficient, the total-degree precision of `f**k` is equal to the total-degree precision of `f` for all `k`.  Below is a function which uses polynomial arithmetic to compute coefficients of `fp**k` up to given total degree for `k = 2^n`, where `fp = f.polynomial()`.\n\n```\nsage: def tot_deg_truncate(g,d):\n    return sum(g.monomial_coefficient(m)*m for m in [x for x in g.monomials() if x.degree() < d])\n....: \n\nsage: def pow_recursive(g,k,d):\n    if k == 2:\n        return tot_deg_truncate(g**2,d)\n    else:\n        return pow_recursive(tot_deg_truncate(g**2,d),k/2,d)\n....:     \n\nsage: R = PowerSeriesRing(ZZ,4,'t')\nsage: f = 1 + R.random_element(prec=10,bound=20)\nsage: f.constant_coefficient()\n1\nsage: fp = f.polynomial()\n```\n\nCheck that ``pow_recursive`` gets the right answer:\n\n```\nsage: f**16 - pow_recursive(fp,16,10)\n0 + O(t0, t1, t2, t3)^10\nsage: f**64 - pow_recursive(fp,64,10)\n0 + O(t0, t1, t2, t3)^10\n```\n\nCompare timings; although the polynomial arithmetic is faster, they are on roughly the same order of magnitude.\n\n```\nsage: %timeit f**16\n125 loops, best of 3: 4.8 ms per loop\nsage: %timeit pow_recursive(fp,16,10)\n625 loops, best of 3: 1.18 ms per loop\n\nsage: %timeit f**64\n125 loops, best of 3: 7.21 ms per loop\nsage: %timeit pow_recursive(fp,64,10)\n125 loops, best of 3: 1.76 ms per loop\n```\n\nIncreasing the precision exaggerates the difference:\n\n```\nsage: f = 1 + R.random_element(prec=30,bound=20)\nsage: f.constant_coefficient()\n1\nsage: fp = f.polynomial()\nsage: f**16 - pow_recursive(fp,16,30)\n0 + O(t0, t1, t2, t3)^30\nsage: f**64 - pow_recursive(fp,64,30)\n0 + O(t0, t1, t2, t3)^30\n\nsage: %timeit f**16\n25 loops, best of 3: 15.9 ms per loop\nsage: %timeit pow_recursive(fp,16,30)\n125 loops, best of 3: 1.81 ms per loop\n\nsage: %timeit f**64\n25 loops, best of 3: 23.9 ms per loop\nsage: %timeit pow_recursive(fp,64,30)\n125 loops, best of 3: 2.65 ms per loop\n```",
     "created_at": "2010-10-26T17:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -1941,7 +1927,6 @@ Here are some further comparisons with polynomial arithmetic, computing ``f**k``
 In any case, the point of this ticket is to implement the basic arithmetic.  The code should be fast enough for basic use, and speed improvement can be part of a separate ticket.
 
 ## Timings for ``f**k`` v.s. ``fp**k``
-
 
 ```
 sage: BaseRingList = [ZZ,QQ,GF(11),GF(65537)]
@@ -2047,11 +2032,9 @@ fp**11: (polynomial)
 ```
 
 
-
 ## Timings for ``f**(2**n)`` v.s. iterated square-and-truncate for ``fp**(2**n)``
 
 Here is a simple special case:  for a power series `f` with non-zero constant coefficient, the total-degree precision of `f**k` is equal to the total-degree precision of `f` for all `k`.  Below is a function which uses polynomial arithmetic to compute coefficients of `fp**k` up to given total degree for `k = 2^n`, where `fp = f.polynomial()`.
-
 
 ```
 sage: def tot_deg_truncate(g,d):
@@ -2072,7 +2055,6 @@ sage: f.constant_coefficient()
 sage: fp = f.polynomial()
 ```
 
-
 Check that ``pow_recursive`` gets the right answer:
 
 ```
@@ -2081,7 +2063,6 @@ sage: f**16 - pow_recursive(fp,16,10)
 sage: f**64 - pow_recursive(fp,64,10)
 0 + O(t0, t1, t2, t3)^10
 ```
-
 
 Compare timings; although the polynomial arithmetic is faster, they are on roughly the same order of magnitude.
 
@@ -2097,9 +2078,7 @@ sage: %timeit pow_recursive(fp,64,10)
 125 loops, best of 3: 1.76 ms per loop
 ```
 
-
 Increasing the precision exaggerates the difference:
-
 
 ```
 sage: f = 1 + R.random_element(prec=30,bound=20)
@@ -2121,7 +2100,6 @@ sage: %timeit f**64
 sage: %timeit pow_recursive(fp,64,30)
 125 loops, best of 3: 2.65 ms per loop
 ```
-
 
 
 
@@ -2148,7 +2126,7 @@ I just ran long doctests on 4.6.1.alpha2 and they still pass. I'll ask people fo
 archive/issue_comments_012483.json:
 ```json
 {
-    "body": "Looking with my eyes... I found one bug not mentioned or fixed elsewhere:\n\n```\n733\t        except TypeError,AttributeError:\n```\n\nThis should be\n\n```\n733\t        except (TypeError,AttributeError):\n```\n\notherwise, AttributeError gets *set* to the string that the TypeError raises.  Do check for other cases of this issue in the code. \n\nThis scares me a little:\n\n```\nraise TypeError(\"action of \"+c.parent()+\" on \"+f.parent()+\" not defined.\")\n```\n\nthe reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:\n\n```\nraise TypeError\n```\n\nor\n\n```\nraise TypeError, \"action not defined\"\n```\n\ninstead.  Since otherwise, constructing that string might dominate arithmetic... (the coercion model will try to do the arithmetic, get the error, then try something else).   Also, it is easy enough using \"%debug\" to see what all the relevant variables are when one gets an exception.\n\nI see this also\n\n```\n \t1062\t            except: \n```\n\nI am against using naked excepts unless their is a very good reason to do so.\n\nI also think that whenever possible all the inputs to a function should be documented.  For example look at this one:\n\n```\n109\t109\t    def completion(self, p, prec=20, extras=None): \n \t110\t        \"\"\" \n \t111\t        Return the completion of self with respect to the ideal generated \n \t112\t        by the variable(s) ``p``. \n \t113\t \n \t114\t        INPUT: \n \t115\t \n \t116\t        - ``p`` -- variable or tuple of variables \n \t117\t \n \t118\t        EXAMPLES:: \n```\n\n\nI think prec and extras should be documented.  Especially important is \"extras\", since that is not self-explanatory at all.  There is also a function `def solve_linear_de(self, prec = infinity, b=None, f0=None): ` with no docs on its input.  Since it just does `raise NotImplementedError` I think that's fine. \n\nI don't like all this \"type(obj)==type\" stuff.  I think isinstance(obj,type) is much better:\n\n```\n        140\t        if p in self or type(p) == str and set(p).issubset(set([str(g) for g in self.gens()])): \n \t141\t            p = tuple([p]) \n \t142\t        elif type(p) == list or type(p) == tuple: \n```\n",
+    "body": "Looking with my eyes... I found one bug not mentioned or fixed elsewhere:\n\n```\n733\t        except TypeError,AttributeError:\n```\nThis should be\n\n```\n733\t        except (TypeError,AttributeError):\n```\notherwise, AttributeError gets *set* to the string that the TypeError raises.  Do check for other cases of this issue in the code. \n\nThis scares me a little:\n\n```\nraise TypeError(\"action of \"+c.parent()+\" on \"+f.parent()+\" not defined.\")\n```\nthe reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:\n\n```\nraise TypeError\n```\nor\n\n```\nraise TypeError, \"action not defined\"\n```\ninstead.  Since otherwise, constructing that string might dominate arithmetic... (the coercion model will try to do the arithmetic, get the error, then try something else).   Also, it is easy enough using \"%debug\" to see what all the relevant variables are when one gets an exception.\n\nI see this also\n\n```\n \t1062\t            except: \n```\nI am against using naked excepts unless their is a very good reason to do so.\n\nI also think that whenever possible all the inputs to a function should be documented.  For example look at this one:\n\n```\n109\t109\t    def completion(self, p, prec=20, extras=None): \n \t110\t        \"\"\" \n \t111\t        Return the completion of self with respect to the ideal generated \n \t112\t        by the variable(s) ``p``. \n \t113\t \n \t114\t        INPUT: \n \t115\t \n \t116\t        - ``p`` -- variable or tuple of variables \n \t117\t \n \t118\t        EXAMPLES:: \n```\n\nI think prec and extras should be documented.  Especially important is \"extras\", since that is not self-explanatory at all.  There is also a function `def solve_linear_de(self, prec = infinity, b=None, f0=None): ` with no docs on its input.  Since it just does `raise NotImplementedError` I think that's fine. \n\nI don't like all this \"type(obj)==type\" stuff.  I think isinstance(obj,type) is much better:\n\n```\n        140\t        if p in self or type(p) == str and set(p).issubset(set([str(g) for g in self.gens()])): \n \t141\t            p = tuple([p]) \n \t142\t        elif type(p) == list or type(p) == tuple: \n```",
     "created_at": "2010-11-23T20:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2162,13 +2140,11 @@ Looking with my eyes... I found one bug not mentioned or fixed elsewhere:
 ```
 733	        except TypeError,AttributeError:
 ```
-
 This should be
 
 ```
 733	        except (TypeError,AttributeError):
 ```
-
 otherwise, AttributeError gets *set* to the string that the TypeError raises.  Do check for other cases of this issue in the code. 
 
 This scares me a little:
@@ -2176,19 +2152,16 @@ This scares me a little:
 ```
 raise TypeError("action of "+c.parent()+" on "+f.parent()+" not defined.")
 ```
-
 the reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:
 
 ```
 raise TypeError
 ```
-
 or
 
 ```
 raise TypeError, "action not defined"
 ```
-
 instead.  Since otherwise, constructing that string might dominate arithmetic... (the coercion model will try to do the arithmetic, get the error, then try something else).   Also, it is easy enough using "%debug" to see what all the relevant variables are when one gets an exception.
 
 I see this also
@@ -2196,7 +2169,6 @@ I see this also
 ```
  	1062	            except: 
 ```
-
 I am against using naked excepts unless their is a very good reason to do so.
 
 I also think that whenever possible all the inputs to a function should be documented.  For example look at this one:
@@ -2214,7 +2186,6 @@ I also think that whenever possible all the inputs to a function should be docum
  	118	        EXAMPLES:: 
 ```
 
-
 I think prec and extras should be documented.  Especially important is "extras", since that is not self-explanatory at all.  There is also a function `def solve_linear_de(self, prec = infinity, b=None, f0=None): ` with no docs on its input.  Since it just does `raise NotImplementedError` I think that's fine. 
 
 I don't like all this "type(obj)==type" stuff.  I think isinstance(obj,type) is much better:
@@ -2224,7 +2195,6 @@ I don't like all this "type(obj)==type" stuff.  I think isinstance(obj,type) is 
  	141	            p = tuple([p]) 
  	142	        elif type(p) == list or type(p) == tuple: 
 ```
-
 
 
 
@@ -2269,7 +2239,7 @@ I should have added -- having read/skimmed through all the code, I think this is
 archive/issue_comments_012486.json:
 ```json
 {
-    "body": "Replying to [comment:52 was]:\n> I should have added -- having read/skimmed through all the code, I think this is a *wonderful* contribution to Sage, and it's really excellent code.  Thanks for finally pulling this off!!\n\nI strongly agree -- and I'm sorry that I have not had time to contribute, not even by reviewing.  I certainly expect to use this code.\n\nReading through the posts on this ticket, I think it is a really good example of good-natured cooperation and constructive criticism producing something excellent.",
+    "body": "Replying to [comment:52 was]:\n> I should have added -- having read/skimmed through all the code, I think this is a *wonderful* contribution to Sage, and it's really excellent code.  Thanks for finally pulling this off!!\n\n\nI strongly agree -- and I'm sorry that I have not had time to contribute, not even by reviewing.  I certainly expect to use this code.\n\nReading through the posts on this ticket, I think it is a really good example of good-natured cooperation and constructive criticism producing something excellent.",
     "created_at": "2010-11-23T20:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2280,6 +2250,7 @@ archive/issue_comments_012486.json:
 
 Replying to [comment:52 was]:
 > I should have added -- having read/skimmed through all the code, I think this is a *wonderful* contribution to Sage, and it's really excellent code.  Thanks for finally pulling this off!!
+
 
 I strongly agree -- and I'm sorry that I have not had time to contribute, not even by reviewing.  I certainly expect to use this code.
 
@@ -2292,7 +2263,7 @@ Reading through the posts on this ticket, I think it is a really good example of
 archive/issue_comments_012487.json:
 ```json
 {
-    "body": "Replying to [comment:53 cremona]:\n> Replying to [comment:52 was]:\n\nThanks for the feedback, and the encouragement; I'll try to get back to this next week, since I would really like to have this patch finished up (it will turn 4 in January :)",
+    "body": "Replying to [comment:53 cremona]:\n> Replying to [comment:52 was]:\n\n\nThanks for the feedback, and the encouragement; I'll try to get back to this next week, since I would really like to have this patch finished up (it will turn 4 in January :)",
     "created_at": "2010-11-24T01:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2303,6 +2274,7 @@ archive/issue_comments_012487.json:
 
 Replying to [comment:53 cremona]:
 > Replying to [comment:52 was]:
+
 
 Thanks for the feedback, and the encouragement; I'll try to get back to this next week, since I would really like to have this patch finished up (it will turn 4 in January :)
 
@@ -2351,7 +2323,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012490.json:
 ```json
 {
-    "body": "Thanks for the comments; these have been addressed now.\n\nReplying to [comment:51 was]:\n> \n {{{\n 733\t        except TypeError,AttributeError:\n }}}\n> This should be\n> \n {{{\n 733\t        except (TypeError,AttributeError):\n }}}\n\n\nfixed.\n\n \n\n> This scares me a little:\n> \n {{{\n raise TypeError(\"action of \"+c.parent()+\" on \"+f.parent()+\" not defined.\")\n }}}\n> the reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:\n>\n {{{\n raise TypeError\n }}}\n> or\n>\n {{{\n raise TypeError, \"action not defined\"\n }}}\n> instead.  \n\nThis has been fixed, and I've checked every occurrence of \"raise ...\" for similar problems (there are quite a few, since I've never heard of %debug, or pdb, until now -- perhaps this would be a useful addition to the developer's guide) \n\n> I see this also\n>\n {{{\n  \t1062\t            except: \n }}}\n\n\nThere were two naked excepts; in both cases the code has been rewritten to avoid them.\n\n\n> I also think that whenever possible all the inputs to a function should be documented.  For example look at this one ...\n\n\nI've double-checked all functions now; the example you gave was one of the toughest because I was modifying an existing function (from the multivariate polynomial code).  In any case, it's fixed now.\n\n\n> I don't like all this \"type(obj)==type\" stuff.  I think isinstance(obj,type) is much better:\n\nfixed.",
+    "body": "Thanks for the comments; these have been addressed now.\n\nReplying to [comment:51 was]:\n> \n\n {{{\n 733\t        except TypeError,AttributeError:\n }}}\n> This should be\n> \n\n {{{\n 733\t        except (TypeError,AttributeError):\n }}}\n\n\nfixed.\n\n \n\n> This scares me a little:\n> \n\n {{{\n raise TypeError(\"action of \"+c.parent()+\" on \"+f.parent()+\" not defined.\")\n }}}\n> the reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:\n\n>\n {{{\n raise TypeError\n }}}\n> or\n\n>\n {{{\n raise TypeError, \"action not defined\"\n }}}\n> instead.  \n\n\nThis has been fixed, and I've checked every occurrence of \"raise ...\" for similar problems (there are quite a few, since I've never heard of %debug, or pdb, until now -- perhaps this would be a useful addition to the developer's guide) \n\n> I see this also\n\n>\n {{{\n  \t1062\t            except: \n }}}\n\n\nThere were two naked excepts; in both cases the code has been rewritten to avoid them.\n\n\n> I also think that whenever possible all the inputs to a function should be documented.  For example look at this one ...\n\n\n\nI've double-checked all functions now; the example you gave was one of the toughest because I was modifying an existing function (from the multivariate polynomial code).  In any case, it's fixed now.\n\n\n> I don't like all this \"type(obj)==type\" stuff.  I think isinstance(obj,type) is much better:\n\n\nfixed.",
     "created_at": "2010-11-29T20:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2364,11 +2336,13 @@ Thanks for the comments; these have been addressed now.
 
 Replying to [comment:51 was]:
 > 
+
  {{{
  733	        except TypeError,AttributeError:
  }}}
 > This should be
 > 
+
  {{{
  733	        except (TypeError,AttributeError):
  }}}
@@ -2380,24 +2354,29 @@ fixed.
 
 > This scares me a little:
 > 
+
  {{{
  raise TypeError("action of "+c.parent()+" on "+f.parent()+" not defined.")
  }}}
 > the reason is that any exception such that constructing a string as part of it could take time, can potentially *MASSIVELY* slow down Sage.   Just do:
+
 >
  {{{
  raise TypeError
  }}}
 > or
+
 >
  {{{
  raise TypeError, "action not defined"
  }}}
 > instead.  
 
+
 This has been fixed, and I've checked every occurrence of "raise ..." for similar problems (there are quite a few, since I've never heard of %debug, or pdb, until now -- perhaps this would be a useful addition to the developer's guide) 
 
 > I see this also
+
 >
  {{{
   	1062	            except: 
@@ -2410,10 +2389,12 @@ There were two naked excepts; in both cases the code has been rewritten to avoid
 > I also think that whenever possible all the inputs to a function should be documented.  For example look at this one ...
 
 
+
 I've double-checked all functions now; the example you gave was one of the toughest because I was modifying an existing function (from the multivariate polynomial code).  In any case, it's fixed now.
 
 
 > I don't like all this "type(obj)==type" stuff.  I think isinstance(obj,type) is much better:
+
 
 fixed.
 
@@ -2556,7 +2537,7 @@ Changing assignee from @malb to pernici.
 archive/issue_comments_012498.json:
 ```json
 {
-    "body": "After applying trac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_2.patch,\ntrac_1956_multi_ps_cleanup.patch\n(main version), apply\ntrac_10480_fast_PowerSeries_poly_multiplication2.patch from ticket #10480 and\ntrac_1956_faster_MPowerSeries_mul.patch\n(version (1) in benchmarks below)\n\nIn the attached patch MPowerSeries._mul_ uses the do_mul_trunc_generic\nalgorithm in polynomial_element.pyx.\n\nThe first benchmark has the 8 inversions posted here by Niles to compare\nwith Magma, but with precisions multiplied by N; times are in seconds;\nprocessor:4-core: Intel Core i7 CPU 860 `@` 2.80GHz\non x86_64 GNU/Linux\n\n\n```\ntest no. 1     2     3     4     5     6     7     8\nN=1\nmain     2.72  0.02  0.18  10.5  0.05  1.55  2.33  2.61\n(1)      0.05  0.01  0.05  0.24  0.03  0.04  0.07  0.09\nN=2\nmain     290   1.7   0.75  1024  0.16  49.0  64.3  73.8\n(1)      2.37  0.02  0.07  5.53  0.05  0.68  1.24  1.41\nN=3\nmain     7743  67    4.4   24272 0.84  432   566   651\n(1)      32    0.12  0.11  56    0.08  5.2   7.8   9.1\n```\n\nThe next benchmark takes a random series and performs p = p*(p+1) N times;\nthe same series is used in testing with the two versions; see attached mu.sage\n\n\n```\n        N=1   2     3     4\nn=2\nprec=20 bound=20\nmain   0.002  0.005 0.005 0.005\n(1)    6e-4   6e-4  6e-4  5e-4\n\nprec=100 bound=100\nmain    0.084 0.81  2.6   3.3\n(1)     0.003 0.005 0.006 0.006\n\nprec=200 bound=200\nmain    0.52  153   3932  7337\n(1)     0.03  0.31  1.1   1.2\n\n\nn=4\nprec=20 bound=20\nmain    0.003 0.003 0.003 0.003\n(1)     6e-4  5e-4  5e-4  5e-4\n\nprec=100 bound=100\nmain    0.087 0.19  0.19  0.19\n(1)     0.002 0.002 0.002 0.002\n\nprec=200 bound=200\nmain    0.59  1.97  1.91  1.66\n(1)     0.008 0.008 0.008 0.008\n```\n\n\nApplying only trac_10480_fast_PowerSeries_poly_multiplication2.patch, not\ntrac_1956_faster_MPowerSeries_mul.patch, MPowerSeries._mul_ uses\nunivariate series multiplication, which uses the do_mul_trunc algorithm\ninstead of the do_mul_trunc_generic algorithm; the latter is slower\nthan the unpatched version in some test in un.sage in #10480,\nwhile the former is always faster.\nThe latter algorithm is always faster than main in the tests above,\nand most of the times a few times faster than the former algorithm, so\nit seems a better choice for multivariate series.\n\n\nWith this patch _send_to_bg and _send_to_fg are faster; using\nthe attached benchmark file bg.sage,\nn=number of variables, h=precision, N=100 random polynomials,\nbg=_send_to_bg, fg=_send_to_fg\n\n\n```\n     n=2 h=20     n=2 h=100   n=4 h=20     n=4 h=100\n     bg    fg     bg    fg    bg    fg     bg   fg\nmain 0.89  0.02   42    0.06  1.18  0.02   58   0.06\n(1)  0.019 0.002  0.09  0.02  0.018 0.002  0.09 0.01\n```\n",
+    "body": "After applying trac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_2.patch,\ntrac_1956_multi_ps_cleanup.patch\n(main version), apply\ntrac_10480_fast_PowerSeries_poly_multiplication2.patch from ticket #10480 and\ntrac_1956_faster_MPowerSeries_mul.patch\n(version (1) in benchmarks below)\n\nIn the attached patch MPowerSeries._mul_ uses the do_mul_trunc_generic\nalgorithm in polynomial_element.pyx.\n\nThe first benchmark has the 8 inversions posted here by Niles to compare\nwith Magma, but with precisions multiplied by N; times are in seconds;\nprocessor:4-core: Intel Core i7 CPU 860 `@` 2.80GHz\non x86_64 GNU/Linux\n\n```\ntest no. 1     2     3     4     5     6     7     8\nN=1\nmain     2.72  0.02  0.18  10.5  0.05  1.55  2.33  2.61\n(1)      0.05  0.01  0.05  0.24  0.03  0.04  0.07  0.09\nN=2\nmain     290   1.7   0.75  1024  0.16  49.0  64.3  73.8\n(1)      2.37  0.02  0.07  5.53  0.05  0.68  1.24  1.41\nN=3\nmain     7743  67    4.4   24272 0.84  432   566   651\n(1)      32    0.12  0.11  56    0.08  5.2   7.8   9.1\n```\nThe next benchmark takes a random series and performs p = p*(p+1) N times;\nthe same series is used in testing with the two versions; see attached mu.sage\n\n```\n        N=1   2     3     4\nn=2\nprec=20 bound=20\nmain   0.002  0.005 0.005 0.005\n(1)    6e-4   6e-4  6e-4  5e-4\n\nprec=100 bound=100\nmain    0.084 0.81  2.6   3.3\n(1)     0.003 0.005 0.006 0.006\n\nprec=200 bound=200\nmain    0.52  153   3932  7337\n(1)     0.03  0.31  1.1   1.2\n\n\nn=4\nprec=20 bound=20\nmain    0.003 0.003 0.003 0.003\n(1)     6e-4  5e-4  5e-4  5e-4\n\nprec=100 bound=100\nmain    0.087 0.19  0.19  0.19\n(1)     0.002 0.002 0.002 0.002\n\nprec=200 bound=200\nmain    0.59  1.97  1.91  1.66\n(1)     0.008 0.008 0.008 0.008\n```\n\nApplying only trac_10480_fast_PowerSeries_poly_multiplication2.patch, not\ntrac_1956_faster_MPowerSeries_mul.patch, MPowerSeries._mul_ uses\nunivariate series multiplication, which uses the do_mul_trunc algorithm\ninstead of the do_mul_trunc_generic algorithm; the latter is slower\nthan the unpatched version in some test in un.sage in #10480,\nwhile the former is always faster.\nThe latter algorithm is always faster than main in the tests above,\nand most of the times a few times faster than the former algorithm, so\nit seems a better choice for multivariate series.\n\n\nWith this patch _send_to_bg and _send_to_fg are faster; using\nthe attached benchmark file bg.sage,\nn=number of variables, h=precision, N=100 random polynomials,\nbg=_send_to_bg, fg=_send_to_fg\n\n```\n     n=2 h=20     n=2 h=100   n=4 h=20     n=4 h=100\n     bg    fg     bg    fg    bg    fg     bg   fg\nmain 0.89  0.02   42    0.06  1.18  0.02   58   0.06\n(1)  0.019 0.002  0.09  0.02  0.018 0.002  0.09 0.01\n```",
     "created_at": "2010-12-28T06:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2581,7 +2562,6 @@ with Magma, but with precisions multiplied by N; times are in seconds;
 processor:4-core: Intel Core i7 CPU 860 `@` 2.80GHz
 on x86_64 GNU/Linux
 
-
 ```
 test no. 1     2     3     4     5     6     7     8
 N=1
@@ -2594,10 +2574,8 @@ N=3
 main     7743  67    4.4   24272 0.84  432   566   651
 (1)      32    0.12  0.11  56    0.08  5.2   7.8   9.1
 ```
-
 The next benchmark takes a random series and performs p = p*(p+1) N times;
 the same series is used in testing with the two versions; see attached mu.sage
-
 
 ```
         N=1   2     3     4
@@ -2629,7 +2607,6 @@ main    0.59  1.97  1.91  1.66
 (1)     0.008 0.008 0.008 0.008
 ```
 
-
 Applying only trac_10480_fast_PowerSeries_poly_multiplication2.patch, not
 trac_1956_faster_MPowerSeries_mul.patch, MPowerSeries._mul_ uses
 univariate series multiplication, which uses the do_mul_trunc algorithm
@@ -2646,14 +2623,12 @@ the attached benchmark file bg.sage,
 n=number of variables, h=precision, N=100 random polynomials,
 bg=_send_to_bg, fg=_send_to_fg
 
-
 ```
      n=2 h=20     n=2 h=100   n=4 h=20     n=4 h=100
      bg    fg     bg    fg    bg    fg     bg   fg
 main 0.89  0.02   42    0.06  1.18  0.02   58   0.06
 (1)  0.019 0.002  0.09  0.02  0.018 0.002  0.09 0.01
 ```
-
 
 
 
@@ -2704,7 +2679,7 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_2.patch, 
 archive/issue_comments_012501.json:
 ```json
 {
-    "body": "Niles wrote:\n> After reading the discussion at #10480, it looks like speeding up the multiplication is a somewhat subtle problem, so I propose opening a separate ticket for this issue. Then we can look into the relative advantages of do_mul_trunc_generic and the Karatsuba algorithm, and patch MPowerSeries._mul_ to take advantage of the optimal one. I'll do this unless you think #10480 already includes this issue. \n\nNice idea to have a separate ticket for MPowerSeries._mul_ .",
+    "body": "Niles wrote:\n> After reading the discussion at #10480, it looks like speeding up the multiplication is a somewhat subtle problem, so I propose opening a separate ticket for this issue. Then we can look into the relative advantages of do_mul_trunc_generic and the Karatsuba algorithm, and patch MPowerSeries._mul_ to take advantage of the optimal one. I'll do this unless you think #10480 already includes this issue. \n\n\nNice idea to have a separate ticket for MPowerSeries._mul_ .",
     "created_at": "2010-12-28T17:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2716,6 +2691,7 @@ archive/issue_comments_012501.json:
 Niles wrote:
 > After reading the discussion at #10480, it looks like speeding up the multiplication is a somewhat subtle problem, so I propose opening a separate ticket for this issue. Then we can look into the relative advantages of do_mul_trunc_generic and the Karatsuba algorithm, and patch MPowerSeries._mul_ to take advantage of the optimal one. I'll do this unless you think #10480 already includes this issue. 
 
+
 Nice idea to have a separate ticket for MPowerSeries._mul_ .
 
 
@@ -2725,7 +2701,7 @@ Nice idea to have a separate ticket for MPowerSeries._mul_ .
 archive/issue_comments_012502.json:
 ```json
 {
-    "body": "Replying to [comment:62 pernici]:\n> Nice idea to have a separate ticket for MPowerSeries._mul_ .\n\nThis is now #10532; I've added your patch there already :)",
+    "body": "Replying to [comment:62 pernici]:\n> Nice idea to have a separate ticket for MPowerSeries._mul_ .\n\n\nThis is now #10532; I've added your patch there already :)",
     "created_at": "2010-12-29T15:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2737,6 +2713,7 @@ archive/issue_comments_012502.json:
 Replying to [comment:62 pernici]:
 > Nice idea to have a separate ticket for MPowerSeries._mul_ .
 
+
 This is now #10532; I've added your patch there already :)
 
 
@@ -2746,7 +2723,7 @@ This is now #10532; I've added your patch there already :)
 archive/issue_comments_012503.json:
 ```json
 {
-    "body": "Multivariate series in one variable differ from univariate series;\nis it the intended behaviour?\n\n\n```\nsage: R = PowerSeriesRing(GF(127),'t');R\nPower Series Ring in t over Finite Field of size 127\nsage: %timeit R.random_element(100)\n625 loops, best of 3: 856 \u00b5s per loop\nsage: K = PowerSeriesRing(GF(127),1,'a'); K\nMultivariate Power Series Ring in a over Finite Field of size 127\nsage: %timeit K.random_element(100)\n5 loops, best of 3: 146 ms per loop\n```\n\n\nI noticed this since\nthe patch trac_1956_faster_MPowerSeries_mul.patch does not work in this\ncase, because _send_to_bg calls the degrees method\n\n\n```\nsage: %timeit K.random_element(100)\nAttributeError: 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint' object has no attribute 'degrees'\n```\n\n\nIf multivariate series in one variable are meant to differ from \nunivariate series I will modify _send_to_bg to deal with this case.",
+    "body": "Multivariate series in one variable differ from univariate series;\nis it the intended behaviour?\n\n```\nsage: R = PowerSeriesRing(GF(127),'t');R\nPower Series Ring in t over Finite Field of size 127\nsage: %timeit R.random_element(100)\n625 loops, best of 3: 856 \u00b5s per loop\nsage: K = PowerSeriesRing(GF(127),1,'a'); K\nMultivariate Power Series Ring in a over Finite Field of size 127\nsage: %timeit K.random_element(100)\n5 loops, best of 3: 146 ms per loop\n```\n\nI noticed this since\nthe patch trac_1956_faster_MPowerSeries_mul.patch does not work in this\ncase, because _send_to_bg calls the degrees method\n\n```\nsage: %timeit K.random_element(100)\nAttributeError: 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint' object has no attribute 'degrees'\n```\n\nIf multivariate series in one variable are meant to differ from \nunivariate series I will modify _send_to_bg to deal with this case.",
     "created_at": "2011-01-03T10:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2757,7 +2734,6 @@ archive/issue_comments_012503.json:
 
 Multivariate series in one variable differ from univariate series;
 is it the intended behaviour?
-
 
 ```
 sage: R = PowerSeriesRing(GF(127),'t');R
@@ -2770,17 +2746,14 @@ sage: %timeit K.random_element(100)
 5 loops, best of 3: 146 ms per loop
 ```
 
-
 I noticed this since
 the patch trac_1956_faster_MPowerSeries_mul.patch does not work in this
 case, because _send_to_bg calls the degrees method
-
 
 ```
 sage: %timeit K.random_element(100)
 AttributeError: 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint' object has no attribute 'degrees'
 ```
-
 
 If multivariate series in one variable are meant to differ from 
 univariate series I will modify _send_to_bg to deal with this case.
@@ -2792,7 +2765,7 @@ univariate series I will modify _send_to_bg to deal with this case.
 archive/issue_comments_012504.json:
 ```json
 {
-    "body": "Replying to [comment:64 pernici]:\n> \n> Multivariate series in one variable differ from univariate series;\n> is it the intended behaviour?\n> \n\nNo, they should be the same -- I'll fix this pretty soon.",
+    "body": "Replying to [comment:64 pernici]:\n> \n> Multivariate series in one variable differ from univariate series;\n> is it the intended behaviour?\n> \n\n\nNo, they should be the same -- I'll fix this pretty soon.",
     "created_at": "2011-01-03T12:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2806,6 +2779,7 @@ Replying to [comment:64 pernici]:
 > Multivariate series in one variable differ from univariate series;
 > is it the intended behaviour?
 > 
+
 
 No, they should be the same -- I'll fix this pretty soon.
 
@@ -2834,7 +2808,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012506.json:
 ```json
 {
-    "body": "Replying to [comment:64 pernici]:\n> Multivariate series in one variable differ from univariate series;\n> is it the intended behaviour?\n\nI don't know whether it is intended, but I'd like to mention that there already is a difference between univariate polynomials and multivariate polynomials in one variable:\n\n```\nsage: R_uni = PolynomialRing(QQ,'x')\nsage: R_uni\nUnivariate Polynomial Ring in x over Rational Field\nsage: R_multi = PolynomialRing(QQ,'x',1)\nsage: R_multi\nMultivariate Polynomial Ring in x over Rational Field\nsage: timeit('a = R_uni.random_element()')\n625 loops, best of 3: 48.4 \u00c2\u00b5s per loop\nsage: timeit('a = R_multi.random_element()')\n625 loops, best of 3: 192 \u00c2\u00b5s per loop\nsage: a = R_uni.random_element()\nsage: b = R_multi(a)\nsage: a.leading_coefficient()\n-27\nsage: hasattr(b,'leading_coefficient')\nFalse\nsage: b.lc()\n-27\nsage: hasattr(a,'lc')\nFalse\n```\n\n\nWhile it is clear that there is a difference in the timings for `random_element`, I don't like that the names are different for methods that do essentially the same.\n\nThings are different in the case of `degrees` (which exists only for multivariate polynomials). Since the word is plural (it denotes the tuple of maximal exponents of each variable, not necessarily occuring in a single monomial), it doesn't really make sense in the univariate case. However, I do think that in that case (and similar cases) there should be a method of univariate polynomials emulating the corresponding method for multivariate polynomials with one variable.\n\nSo, I don't mind about the different timings; but I think methods should be more or less equivalent.",
+    "body": "Replying to [comment:64 pernici]:\n> Multivariate series in one variable differ from univariate series;\n> is it the intended behaviour?\n\n\nI don't know whether it is intended, but I'd like to mention that there already is a difference between univariate polynomials and multivariate polynomials in one variable:\n\n```\nsage: R_uni = PolynomialRing(QQ,'x')\nsage: R_uni\nUnivariate Polynomial Ring in x over Rational Field\nsage: R_multi = PolynomialRing(QQ,'x',1)\nsage: R_multi\nMultivariate Polynomial Ring in x over Rational Field\nsage: timeit('a = R_uni.random_element()')\n625 loops, best of 3: 48.4 \u00c2\u00b5s per loop\nsage: timeit('a = R_multi.random_element()')\n625 loops, best of 3: 192 \u00c2\u00b5s per loop\nsage: a = R_uni.random_element()\nsage: b = R_multi(a)\nsage: a.leading_coefficient()\n-27\nsage: hasattr(b,'leading_coefficient')\nFalse\nsage: b.lc()\n-27\nsage: hasattr(a,'lc')\nFalse\n```\n\nWhile it is clear that there is a difference in the timings for `random_element`, I don't like that the names are different for methods that do essentially the same.\n\nThings are different in the case of `degrees` (which exists only for multivariate polynomials). Since the word is plural (it denotes the tuple of maximal exponents of each variable, not necessarily occuring in a single monomial), it doesn't really make sense in the univariate case. However, I do think that in that case (and similar cases) there should be a method of univariate polynomials emulating the corresponding method for multivariate polynomials with one variable.\n\nSo, I don't mind about the different timings; but I think methods should be more or less equivalent.",
     "created_at": "2011-01-03T12:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2846,6 +2820,7 @@ archive/issue_comments_012506.json:
 Replying to [comment:64 pernici]:
 > Multivariate series in one variable differ from univariate series;
 > is it the intended behaviour?
+
 
 I don't know whether it is intended, but I'd like to mention that there already is a difference between univariate polynomials and multivariate polynomials in one variable:
 
@@ -2871,7 +2846,6 @@ sage: b.lc()
 sage: hasattr(a,'lc')
 False
 ```
-
 
 While it is clear that there is a difference in the timings for `random_element`, I don't like that the names are different for methods that do essentially the same.
 
@@ -2924,7 +2898,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012509.json:
 ```json
 {
-    "body": "I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` should return univariate rings instead of multivariate rings in one variable.  It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.  Someone who does need this functionality can still import the multivariate constructor directly.\n\nWith [attachment:trac_1956_one_variable_fix.patch] we have:\n\n\n```\nsage: PowerSeriesRing(QQ,1,'a')\nPower Series Ring in a over Rational Field\n\nsage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')\nTrue\n```\n\n\n\n```\nsage: from sage.rings.multi_power_series_ring import MPowerSeriesRing_generic\nsage: MPowerSeriesRing_generic(QQ,1,'a')\nMultivariate Power Series Ring in a over Rational Field\n```\n\n\nUnless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:\n\n\n```\nsage: PolynomialRing(ZZ,'a',0)\nMultivariate Polynomial Ring in no variables over Integer Ring\nsage: PolynomialRing(ZZ,'a',0) is ZZ\nFalse\n```\n\n\nFor consistency, I've implemented the same behavior for power series rings:\n\n\n```\nsage: PowerSeriesRing(QQ,0,'a')\nMultivariate Power Series Ring in no variables over Rational Field\n```\n\n\nPerhaps these should both simply return the base ring -- I'm not so sure, but in any case I hope it can be handled for both polynomials and power series in a separate ticket.",
+    "body": "I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` should return univariate rings instead of multivariate rings in one variable.  It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.  Someone who does need this functionality can still import the multivariate constructor directly.\n\nWith [attachment:trac_1956_one_variable_fix.patch] we have:\n\n```\nsage: PowerSeriesRing(QQ,1,'a')\nPower Series Ring in a over Rational Field\n\nsage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')\nTrue\n```\n\n```\nsage: from sage.rings.multi_power_series_ring import MPowerSeriesRing_generic\nsage: MPowerSeriesRing_generic(QQ,1,'a')\nMultivariate Power Series Ring in a over Rational Field\n```\n\nUnless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:\n\n```\nsage: PolynomialRing(ZZ,'a',0)\nMultivariate Polynomial Ring in no variables over Integer Ring\nsage: PolynomialRing(ZZ,'a',0) is ZZ\nFalse\n```\n\nFor consistency, I've implemented the same behavior for power series rings:\n\n```\nsage: PowerSeriesRing(QQ,0,'a')\nMultivariate Power Series Ring in no variables over Rational Field\n```\n\nPerhaps these should both simply return the base ring -- I'm not so sure, but in any case I hope it can be handled for both polynomials and power series in a separate ticket.",
     "created_at": "2011-01-04T13:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2937,7 +2911,6 @@ I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` s
 
 With [attachment:trac_1956_one_variable_fix.patch] we have:
 
-
 ```
 sage: PowerSeriesRing(QQ,1,'a')
 Power Series Ring in a over Rational Field
@@ -2946,17 +2919,13 @@ sage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')
 True
 ```
 
-
-
 ```
 sage: from sage.rings.multi_power_series_ring import MPowerSeriesRing_generic
 sage: MPowerSeriesRing_generic(QQ,1,'a')
 Multivariate Power Series Ring in a over Rational Field
 ```
 
-
 Unless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:
-
 
 ```
 sage: PolynomialRing(ZZ,'a',0)
@@ -2965,15 +2934,12 @@ sage: PolynomialRing(ZZ,'a',0) is ZZ
 False
 ```
 
-
 For consistency, I've implemented the same behavior for power series rings:
-
 
 ```
 sage: PowerSeriesRing(QQ,0,'a')
 Multivariate Power Series Ring in no variables over Rational Field
 ```
-
 
 Perhaps these should both simply return the base ring -- I'm not so sure, but in any case I hope it can be handled for both polynomials and power series in a separate ticket.
 
@@ -3002,7 +2968,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012511.json:
 ```json
 {
-    "body": "Replying to [comment:67 niles]:\n> I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` should return univariate rings instead of multivariate rings in one variable. \n\nIt already does:\n\n```\nsage: R.<x> = QQ[]\nsage: R\nUnivariate Polynomial Ring in x over Rational Field\nsage: R2.<x> = PolynomialRing(QQ)\nsage: R2\nUnivariate Polynomial Ring in x over Rational Field\n```\n\n\nOnly when you explicitly request it, you'll get a multivariate ring with one variable:\n\n```\nsage: R3.<x> = PolynomialRing(QQ,1)\nsage: R3\nMultivariate Polynomial Ring in x over Rational Field\n```\n\n\n> It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions\n\nI find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.\n\n> (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.\n\nAgreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).\n\n>  Someone who does need this functionality can still import the multivariate constructor directly.\n\nNo, one shouldn't, it is deprecated:\n\n```\nsage: MPolynomialRing(QQ,1,'a')\n/mnt/local/king/SAGE/sage-4.6/local/bin/sage-ipython:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  #!/usr/bin/env python\nMultivariate Polynomial Ring in a over Rational Field\n```\n\n\nInstead, one should choose the arguments of the polynomial ring contructor appropriately (as I did above).\n \n> With [attachment:trac_1956_one_variable_fix.patch] we have:\n> \n> {{{\n> sage: PowerSeriesRing(QQ,1,'a')\n> Power Series Ring in a over Rational Field\n> \n> sage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')\n> True\n> }}}\n\nI am strongly -1 to that suggestion, because the user must have the possibility to choose the implementation by providing appropriate arguments (with the argument `1` versus without it).\n \n> {{{\n> sage: from sage.rings.multi_power_series_ring import MPowerSeriesRing_generic\n> sage: MPowerSeriesRing_generic(QQ,1,'a')\n> Multivariate Power Series Ring in a over Rational Field\n> }}}\n\nUsing a non-generic constructor should be deprecated, IMO.\n\n> Unless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.\n\nI don't know if you find my argument compelling, but I am strongly against that suggestion.\n\n>  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:\n> \n> {{{\n> sage: PolynomialRing(ZZ,'a',0)\n> Multivariate Polynomial Ring in no variables over Integer Ring\n> sage: PolynomialRing(ZZ,'a',0) is ZZ\n> False\n> }}}\n> \n> For consistency, I've implemented the same behavior for power series rings:\n> \n> {{{\n> sage: PowerSeriesRing(QQ,0,'a')\n> Multivariate Power Series Ring in no variables over Rational Field\n> }}}\n\nThat's fine.\n\n> Perhaps these should both simply return the base ring -- \n\nNo! The user has *explicitly* requested a polynomial ring. So, s/he *must not* get the base ring in return, since s/he may rely on particular methods that may only be implemented for polynomial rings, but not for general rings.",
+    "body": "Replying to [comment:67 niles]:\n> I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` should return univariate rings instead of multivariate rings in one variable. \n\n\nIt already does:\n\n```\nsage: R.<x> = QQ[]\nsage: R\nUnivariate Polynomial Ring in x over Rational Field\nsage: R2.<x> = PolynomialRing(QQ)\nsage: R2\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nOnly when you explicitly request it, you'll get a multivariate ring with one variable:\n\n```\nsage: R3.<x> = PolynomialRing(QQ,1)\nsage: R3\nMultivariate Polynomial Ring in x over Rational Field\n```\n\n> It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions\n\n\nI find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.\n\n> (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.\n\n\nAgreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).\n\n>  Someone who does need this functionality can still import the multivariate constructor directly.\n\n\nNo, one shouldn't, it is deprecated:\n\n```\nsage: MPolynomialRing(QQ,1,'a')\n/mnt/local/king/SAGE/sage-4.6/local/bin/sage-ipython:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  #!/usr/bin/env python\nMultivariate Polynomial Ring in a over Rational Field\n```\n\nInstead, one should choose the arguments of the polynomial ring contructor appropriately (as I did above).\n \n> With [attachment:trac_1956_one_variable_fix.patch] we have:\n> \n> \n> ```\n> sage: PowerSeriesRing(QQ,1,'a')\n> Power Series Ring in a over Rational Field\n> \n> sage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')\n> True\n> ```\n\n\nI am strongly -1 to that suggestion, because the user must have the possibility to choose the implementation by providing appropriate arguments (with the argument `1` versus without it).\n \n> {{{\n> sage: from sage.rings.multi_power_series_ring import MPowerSeriesRing_generic\n> sage: MPowerSeriesRing_generic(QQ,1,'a')\n> Multivariate Power Series Ring in a over Rational Field\n> }}}\n\n\nUsing a non-generic constructor should be deprecated, IMO.\n\n> Unless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.\n\n\nI don't know if you find my argument compelling, but I am strongly against that suggestion.\n\n>  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:\n\n> \n> {{{\n> sage: PolynomialRing(ZZ,'a',0)\n> Multivariate Polynomial Ring in no variables over Integer Ring\n> sage: PolynomialRing(ZZ,'a',0) is ZZ\n> False\n> }}}\n> \n> For consistency, I've implemented the same behavior for power series rings:\n> \n> \n> ```\n> sage: PowerSeriesRing(QQ,0,'a')\n> Multivariate Power Series Ring in no variables over Rational Field\n> ```\n\n\nThat's fine.\n\n> Perhaps these should both simply return the base ring -- \n\n\nNo! The user has *explicitly* requested a polynomial ring. So, s/he *must not* get the base ring in return, since s/he may rely on particular methods that may only be implemented for polynomial rings, but not for general rings.",
     "created_at": "2011-01-04T16:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3013,6 +2979,7 @@ archive/issue_comments_012511.json:
 
 Replying to [comment:67 niles]:
 > I think that the top-level constructors `PolynomialRing` and `PowerSeriesRing` should return univariate rings instead of multivariate rings in one variable. 
+
 
 It already does:
 
@@ -3025,7 +2992,6 @@ sage: R2
 Univariate Polynomial Ring in x over Rational Field
 ```
 
-
 Only when you explicitly request it, you'll get a multivariate ring with one variable:
 
 ```
@@ -3034,16 +3000,18 @@ sage: R3
 Multivariate Polynomial Ring in x over Rational Field
 ```
 
-
 > It is difficult to imagine a situation where someone would want access to the "multivariate in one variable" versions
+
 
 I find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.
 
 > (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.
 
+
 Agreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).
 
 >  Someone who does need this functionality can still import the multivariate constructor directly.
+
 
 No, one shouldn't, it is deprecated:
 
@@ -3054,18 +3022,19 @@ sage: MPolynomialRing(QQ,1,'a')
 Multivariate Polynomial Ring in a over Rational Field
 ```
 
-
 Instead, one should choose the arguments of the polynomial ring contructor appropriately (as I did above).
  
 > With [attachment:trac_1956_one_variable_fix.patch] we have:
 > 
-> {{{
+> 
+> ```
 > sage: PowerSeriesRing(QQ,1,'a')
 > Power Series Ring in a over Rational Field
 > 
 > sage: PowerSeriesRing(QQ,1,'a') is PowerSeriesRing(QQ,'a')
 > True
-> }}}
+> ```
+
 
 I am strongly -1 to that suggestion, because the user must have the possibility to choose the implementation by providing appropriate arguments (with the argument `1` versus without it).
  
@@ -3075,13 +3044,16 @@ I am strongly -1 to that suggestion, because the user must have the possibility 
 > Multivariate Power Series Ring in a over Rational Field
 > }}}
 
+
 Using a non-generic constructor should be deprecated, IMO.
 
 > Unless someone here can think of a compelling reason to reverse this change, I think we should also open a new ticket for the polynomial case.
 
+
 I don't know if you find my argument compelling, but I am strongly against that suggestion.
 
 >  In a related vein, we also have polynomial rings in no variables, and these are different from the base ring:
+
 > 
 > {{{
 > sage: PolynomialRing(ZZ,'a',0)
@@ -3092,14 +3064,17 @@ I don't know if you find my argument compelling, but I am strongly against that 
 > 
 > For consistency, I've implemented the same behavior for power series rings:
 > 
-> {{{
+> 
+> ```
 > sage: PowerSeriesRing(QQ,0,'a')
 > Multivariate Power Series Ring in no variables over Rational Field
-> }}}
+> ```
+
 
 That's fine.
 
 > Perhaps these should both simply return the base ring -- 
+
 
 No! The user has *explicitly* requested a polynomial ring. So, s/he *must not* get the base ring in return, since s/he may rely on particular methods that may only be implemented for polynomial rings, but not for general rings.
 
@@ -3128,7 +3103,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_012513.json:
 ```json
 {
-    "body": "Hi Simon!\n\nReplying to [comment:68 SimonKing]:\n> Replying to [comment:67 niles]:\n\n> > It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions\n> \n> I find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.\n> \n> > (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.\n> \n> Agreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).\n> \n\nThanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the \"multivariate in one variable\" algorithms.  But I neglected, as you have pointed out, that one might want to write code which, for simplicity, treats univariate and multivariate rings the same and thus depends on the methods written for multivariate rings.  This would be especially likely if the code one were writing didn't depend on the optimal univariate algorithms.\n\nOf course this is precisely not the case for pernici and others who are working on faster multiplication algorithms.  Pernici, does this seem reasonable to you?  How difficult will it be for you to treat the \"multivariate in one variable\" case?",
+    "body": "Hi Simon!\n\nReplying to [comment:68 SimonKing]:\n> Replying to [comment:67 niles]:\n\n\n> > It is difficult to imagine a situation where someone would want access to the \"multivariate in one variable\" versions\n\n> \n> I find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.\n> \n> > (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.\n  \n> \n> Agreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).\n> \n\n\nThanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the \"multivariate in one variable\" algorithms.  But I neglected, as you have pointed out, that one might want to write code which, for simplicity, treats univariate and multivariate rings the same and thus depends on the methods written for multivariate rings.  This would be especially likely if the code one were writing didn't depend on the optimal univariate algorithms.\n\nOf course this is precisely not the case for pernici and others who are working on faster multiplication algorithms.  Pernici, does this seem reasonable to you?  How difficult will it be for you to treat the \"multivariate in one variable\" case?",
     "created_at": "2011-01-04T19:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3142,14 +3117,18 @@ Hi Simon!
 Replying to [comment:68 SimonKing]:
 > Replying to [comment:67 niles]:
 
+
 > > It is difficult to imagine a situation where someone would want access to the "multivariate in one variable" versions
+
 > 
 > I find it very easy to imagine. I sometimes want it so, because multi- and univariate polynomials have different methods, and thus I want to make sure that my programs will always get a *multi*variate polynomial.
 > 
 > > (e.g. they want to use some algorithm implemented for the multivariate case that is not available in the univariate case), and even more difficult to imagine that this is the preferred option of most users.
+  
 > 
 > Agreed, and this is why the polynomial ring constructor returns a univariate ring, unless requested otherwise (in contrast to your claim).
 > 
+
 
 Thanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the "multivariate in one variable" algorithms.  But I neglected, as you have pointed out, that one might want to write code which, for simplicity, treats univariate and multivariate rings the same and thus depends on the methods written for multivariate rings.  This would be especially likely if the code one were writing didn't depend on the optimal univariate algorithms.
 
@@ -3162,7 +3141,7 @@ Of course this is precisely not the case for pernici and others who are working 
 archive/issue_comments_012514.json:
 ```json
 {
-    "body": "Replying to [comment:69 niles]:\n> Hi Simon!\n> \n> Replying to [comment:68 SimonKing]:\n> Thanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the \"multivariate in one variable\" algorithms. \n\nSure univariate rings are usually preferable! I do think that most users could care less about the different methods of univariate and singly multivariate polynomials - they want speed!\n\n> Of course this is precisely not the case for pernici and others who are working on faster multiplication algorithms.  Pernici, does this seem reasonable to you?  How difficult will it be for you to treat the \"multivariate in one variable\" case?\n\nI did not suggest that *by default* the polynomial ring (or power series ring) constructor should return a multivariate ring in one variable. I do think that\n\n```\nsage: R.<x> = QQ[[]]\n```\n\nshould turn `R` into a univariate ring.\n\nWhat I was trying to explain was: The user must be able to override the default implementation by passing appropriate arguments to the ring constructor. Hence: `PowerSeriesRing(QQ,'x')` should return the default (a univariate ring), but `PowerSeriesRing(QQ,1,'x')` should return a multivariate ring.\n\nIn other words: I suggest that you just mimmick the current behaviour of th polynomial ring constructor.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:69 niles]:\n> Hi Simon!\n> \n> Replying to [comment:68 SimonKing]:\n> Thanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the \"multivariate in one variable\" algorithms. \n\n\nSure univariate rings are usually preferable! I do think that most users could care less about the different methods of univariate and singly multivariate polynomials - they want speed!\n\n> Of course this is precisely not the case for pernici and others who are working on faster multiplication algorithms.  Pernici, does this seem reasonable to you?  How difficult will it be for you to treat the \"multivariate in one variable\" case?\n\n\nI did not suggest that *by default* the polynomial ring (or power series ring) constructor should return a multivariate ring in one variable. I do think that\n\n```\nsage: R.<x> = QQ[[]]\n```\nshould turn `R` into a univariate ring.\n\nWhat I was trying to explain was: The user must be able to override the default implementation by passing appropriate arguments to the ring constructor. Hence: `PowerSeriesRing(QQ,'x')` should return the default (a univariate ring), but `PowerSeriesRing(QQ,1,'x')` should return a multivariate ring.\n\nIn other words: I suggest that you just mimmick the current behaviour of th polynomial ring constructor.\n\nCheers,\nSimon",
     "created_at": "2011-01-04T20:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3177,16 +3156,17 @@ Replying to [comment:69 niles]:
 > Replying to [comment:68 SimonKing]:
 > Thanks for this -- actually I find your arguments here quite compelling.  I was thinking before that arithmetic for univariate power series and polynomials are probably optimized for that case, and so would be preferable to the "multivariate in one variable" algorithms. 
 
+
 Sure univariate rings are usually preferable! I do think that most users could care less about the different methods of univariate and singly multivariate polynomials - they want speed!
 
 > Of course this is precisely not the case for pernici and others who are working on faster multiplication algorithms.  Pernici, does this seem reasonable to you?  How difficult will it be for you to treat the "multivariate in one variable" case?
+
 
 I did not suggest that *by default* the polynomial ring (or power series ring) constructor should return a multivariate ring in one variable. I do think that
 
 ```
 sage: R.<x> = QQ[[]]
 ```
-
 should turn `R` into a univariate ring.
 
 What I was trying to explain was: The user must be able to override the default implementation by passing appropriate arguments to the ring constructor. Hence: `PowerSeriesRing(QQ,'x')` should return the default (a univariate ring), but `PowerSeriesRing(QQ,1,'x')` should return a multivariate ring.
@@ -3203,7 +3183,7 @@ Simon
 archive/issue_comments_012515.json:
 ```json
 {
-    "body": "Replying to [comment:70 SimonKing]:\n\n> In other words: I suggest that you just mimmick the current behaviour of th polynomial ring constructor.\n> \n\nGood--that's the behavior without the \"one variable fix\" patch :)\n\nThis morning I had an idea for helping this code get reviewed (note that the ticket turns 4 at the end of this month):  Could we break the review process into several manageable pieces, and have different people take responsibility for different parts?  For example, I'd propose something like the following:\n\n1. The underlying concept of the implementation (foreground ring & background ring, etc.)\n2. Documentation and tests\n3. `multi_power_series_ring.py`: the code accurately does what it claims to do\n4. `multi_power_series_ring_element.py`: the code accurately does what it claims to do\n5. Integration with the rest of sage: construction and use of `PowerSeriesRings` works correctly, and parallels behavior of polynomial rings\n6. Completeness of the review:  do these pieces give an essentially complete breakdown of the review?",
+    "body": "Replying to [comment:70 SimonKing]:\n\n> In other words: I suggest that you just mimmick the current behaviour of th polynomial ring constructor.\n> \n\n\nGood--that's the behavior without the \"one variable fix\" patch :)\n\nThis morning I had an idea for helping this code get reviewed (note that the ticket turns 4 at the end of this month):  Could we break the review process into several manageable pieces, and have different people take responsibility for different parts?  For example, I'd propose something like the following:\n\n1. The underlying concept of the implementation (foreground ring & background ring, etc.)\n2. Documentation and tests\n3. `multi_power_series_ring.py`: the code accurately does what it claims to do\n4. `multi_power_series_ring_element.py`: the code accurately does what it claims to do\n5. Integration with the rest of sage: construction and use of `PowerSeriesRings` works correctly, and parallels behavior of polynomial rings\n6. Completeness of the review:  do these pieces give an essentially complete breakdown of the review?",
     "created_at": "2011-01-07T14:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3216,6 +3196,7 @@ Replying to [comment:70 SimonKing]:
 
 > In other words: I suggest that you just mimmick the current behaviour of th polynomial ring constructor.
 > 
+
 
 Good--that's the behavior without the "one variable fix" patch :)
 
@@ -3253,7 +3234,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_012517.json:
 ```json
 {
-    "body": "I think that random_element does not give good random multivariate series;\nthe lowest total degree is usually not zero\n\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: def mval(p,N):\n....:     print '%.2f' % (sum([sum(R.random_element(p,p).exponents()[0]) for _ in range(N)])/float(N))\n....:\nsage: mval(20,100)\n3.94\nsage: mval(100,100)\n8.34\n```\n\n\nwhile in the univariate case it is usually zero\n\n```\nsage: R.<x> = QQ[[]]\nsage: def mval(p,N):                                                             \n....:     print '%.2f' % (sum([R.random_element(p,p).exponents()[0] for _ in range(N)])/float(N))\n....:\nsage: mval(20,100)\n0.02\nsage: mval(100,100)\n0.01\n```\n\n\nAs a quick fix to get pseudo random series I changed the benchmark file mu.sage \nshifting by 1 the variables in the random polynomials\n\n```\nsage: R.<x,y> = QQ[[]]        \nsage: for prec in range(10,50,10):\n....:     p = R.random_element(prec,prec)\n....:     p1 = p.polynomial()(x+1,y+1) + R.O(prec)\n....:     print 'prec=',prec\n....:     %timeit p^10\n....:     %timeit p1^10\n....:     \nprec= 10\n625 loops, best of 3: 752 \u00b5s per loop\n125 loops, best of 3: 3.77 ms per loop\nprec= 20\n125 loops, best of 3: 3.4 ms per loop\n25 loops, best of 3: 25.2 ms per loop\nprec= 30\n125 loops, best of 3: 5.14 ms per loop\n5 loops, best of 3: 151 ms per loop\nprec= 40\n25 loops, best of 3: 13.3 ms per loop\n5 loops, best of 3: 484 ms per loop\n```\n",
+    "body": "I think that random_element does not give good random multivariate series;\nthe lowest total degree is usually not zero\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: def mval(p,N):\n....:     print '%.2f' % (sum([sum(R.random_element(p,p).exponents()[0]) for _ in range(N)])/float(N))\n....:\nsage: mval(20,100)\n3.94\nsage: mval(100,100)\n8.34\n```\n\nwhile in the univariate case it is usually zero\n\n```\nsage: R.<x> = QQ[[]]\nsage: def mval(p,N):                                                             \n....:     print '%.2f' % (sum([R.random_element(p,p).exponents()[0] for _ in range(N)])/float(N))\n....:\nsage: mval(20,100)\n0.02\nsage: mval(100,100)\n0.01\n```\n\nAs a quick fix to get pseudo random series I changed the benchmark file mu.sage \nshifting by 1 the variables in the random polynomials\n\n```\nsage: R.<x,y> = QQ[[]]        \nsage: for prec in range(10,50,10):\n....:     p = R.random_element(prec,prec)\n....:     p1 = p.polynomial()(x+1,y+1) + R.O(prec)\n....:     print 'prec=',prec\n....:     %timeit p^10\n....:     %timeit p1^10\n....:     \nprec= 10\n625 loops, best of 3: 752 \u00b5s per loop\n125 loops, best of 3: 3.77 ms per loop\nprec= 20\n125 loops, best of 3: 3.4 ms per loop\n25 loops, best of 3: 25.2 ms per loop\nprec= 30\n125 loops, best of 3: 5.14 ms per loop\n5 loops, best of 3: 151 ms per loop\nprec= 40\n25 loops, best of 3: 13.3 ms per loop\n5 loops, best of 3: 484 ms per loop\n```",
     "created_at": "2011-01-08T16:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3265,7 +3246,6 @@ archive/issue_comments_012517.json:
 I think that random_element does not give good random multivariate series;
 the lowest total degree is usually not zero
 
-
 ```
 sage: R.<x,y> = QQ[[]]
 sage: def mval(p,N):
@@ -3276,7 +3256,6 @@ sage: mval(20,100)
 sage: mval(100,100)
 8.34
 ```
-
 
 while in the univariate case it is usually zero
 
@@ -3290,7 +3269,6 @@ sage: mval(20,100)
 sage: mval(100,100)
 0.01
 ```
-
 
 As a quick fix to get pseudo random series I changed the benchmark file mu.sage 
 shifting by 1 the variables in the random polynomials
@@ -3320,13 +3298,12 @@ prec= 40
 
 
 
-
 ---
 
 archive/issue_comments_012518.json:
 ```json
 {
-    "body": "This is a follow-up of my previous mail on random_element\nin multivariate series.\n\n`R.random_element` calls `R.__poly_ring.random_element`.\nFrom the documentation of `MPolynomialRing_generic.random_element`:\n\n`First monomials are chosen uniformly random from the set of all\npossible monomials of degree up to `d` (inclusive). This means\nthat it is more likely that a monomial of degree `d` appears than\na monomial of degree `d-1` because the former class is bigger.`\n\nThis argument is relevant also for multivariate series\n\n```\nsage: R.<a,b,c,d> = PowerSeriesRing(QQ,4)\nsage: p = (1 + a + 2*b + 3*c + 4*d + R(0).O(16))^-5\n\nsage: [len(x.exponents()) for x in p._bg_value]\n[1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286, 364, 455, 560, 680, 816]\n```\n\nThere are many more terms with high degrees for the reason\ngiven in the quote.\n\nTake a random series of comparable length\n\n```\nsage: p1 = R.random_element(16,4000)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 4, 3, 13, 22, 44, 54, 75, 114, 150, 190, 236, 307, 371, 440, 554]\n```\n\nThe distribution is fairly similar.\n\nHowever taking `bound` small in R.random_element(prec,bound)\nthe lowest total degree is high\n\n```\nsage: p1 = R.random_element(16)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]\nsage: p1 = R.random_element(16,16)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 0, 1, 3, 0, 2]\n```\n\n\nWith a high number of variables the situation gets worse;\nto get series starting with small lowest total degree\n`bound` should be extremely high\n\n\n```\nsage: R = PowerSeriesRing(QQ,100,'t')\nsage: p = R.random_element(10,100); sum(p.exponents()[0])\n9\nsage: p = R.random_element(10,1000); sum(p.exponents()[0])\n7\nsage: p = R.random_element(10,10000); sum(p.exponents()[0])\n7\n```\n\nIn power series with finite precision `prec`\nlower degrees are more important than higher degrees;\nif this were not so it would not make sense to throw away terms\nwith degree higher than prec-1. So I think that lower degrees\nshould weight more than high degrees in the choice of random\nelements.",
+    "body": "This is a follow-up of my previous mail on random_element\nin multivariate series.\n\n`R.random_element` calls `R.__poly_ring.random_element`.\nFrom the documentation of `MPolynomialRing_generic.random_element`:\n\n`First monomials are chosen uniformly random from the set of all\npossible monomials of degree up to `d` (inclusive). This means\nthat it is more likely that a monomial of degree `d` appears than\na monomial of degree `d-1` because the former class is bigger.`\n\nThis argument is relevant also for multivariate series\n\n```\nsage: R.<a,b,c,d> = PowerSeriesRing(QQ,4)\nsage: p = (1 + a + 2*b + 3*c + 4*d + R(0).O(16))^-5\n\nsage: [len(x.exponents()) for x in p._bg_value]\n[1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286, 364, 455, 560, 680, 816]\n```\nThere are many more terms with high degrees for the reason\ngiven in the quote.\n\nTake a random series of comparable length\n\n```\nsage: p1 = R.random_element(16,4000)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 4, 3, 13, 22, 44, 54, 75, 114, 150, 190, 236, 307, 371, 440, 554]\n```\nThe distribution is fairly similar.\n\nHowever taking `bound` small in R.random_element(prec,bound)\nthe lowest total degree is high\n\n```\nsage: p1 = R.random_element(16)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]\nsage: p1 = R.random_element(16,16)\nsage: [len(x.exponents()) for x in p1._bg_value]\n[0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 0, 1, 3, 0, 2]\n```\n\nWith a high number of variables the situation gets worse;\nto get series starting with small lowest total degree\n`bound` should be extremely high\n\n```\nsage: R = PowerSeriesRing(QQ,100,'t')\nsage: p = R.random_element(10,100); sum(p.exponents()[0])\n9\nsage: p = R.random_element(10,1000); sum(p.exponents()[0])\n7\nsage: p = R.random_element(10,10000); sum(p.exponents()[0])\n7\n```\nIn power series with finite precision `prec`\nlower degrees are more important than higher degrees;\nif this were not so it would not make sense to throw away terms\nwith degree higher than prec-1. So I think that lower degrees\nshould weight more than high degrees in the choice of random\nelements.",
     "created_at": "2011-01-12T12:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3355,7 +3332,6 @@ sage: p = (1 + a + 2*b + 3*c + 4*d + R(0).O(16))^-5
 sage: [len(x.exponents()) for x in p._bg_value]
 [1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286, 364, 455, 560, 680, 816]
 ```
-
 There are many more terms with high degrees for the reason
 given in the quote.
 
@@ -3366,7 +3342,6 @@ sage: p1 = R.random_element(16,4000)
 sage: [len(x.exponents()) for x in p1._bg_value]
 [0, 4, 3, 13, 22, 44, 54, 75, 114, 150, 190, 236, 307, 371, 440, 554]
 ```
-
 The distribution is fairly similar.
 
 However taking `bound` small in R.random_element(prec,bound)
@@ -3381,11 +3356,9 @@ sage: [len(x.exponents()) for x in p1._bg_value]
 [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 0, 1, 3, 0, 2]
 ```
 
-
 With a high number of variables the situation gets worse;
 to get series starting with small lowest total degree
 `bound` should be extremely high
-
 
 ```
 sage: R = PowerSeriesRing(QQ,100,'t')
@@ -3396,7 +3369,6 @@ sage: p = R.random_element(10,1000); sum(p.exponents()[0])
 sage: p = R.random_element(10,10000); sum(p.exponents()[0])
 7
 ```
-
 In power series with finite precision `prec`
 lower degrees are more important than higher degrees;
 if this were not so it would not make sense to throw away terms
@@ -3411,7 +3383,7 @@ elements.
 archive/issue_comments_012519.json:
 ```json
 {
-    "body": "Replying to [comment:73 pernici]:\n> This is a follow-up of my previous mail on random_element\n> in multivariate series.\n\nHi pernici,\n\nThanks for clarifying this, but I'm not sure how to proceed.  I think I understand what you mean about lower degree terms being \"more important\" (in the same way that earlier decimal digits are \"more important\" in a real number).  But I also think it makes a lot of sense for `random_element` to be very similar between multivariate polynomials and multivariate power series -- this is the principle behind a number of implementation choices for multivariate power series.  Nowhere is it promised that `random_element`s are chosen with uniform distribution and, as you point out, the docstring for multivariate polynomials says explicitly that it is using a non-uniform distribution.\n\nSo now I wonder what the motivation is for changing the power series `random_element` method:  am I right to guess that you want to use the random elements to test your multiplication code?  If so, let me suggest that it would be better to do this with a [test suite](http://www.sagemath.org/doc/reference/sage/misc/sage_unittest.html), where you can write different custom algorithms for different random distributions and not have to worry about which of these should used for the `random_element` method of polynomials or power series.  (Having said that, I admit that I've found it difficult to get started with sage's test suite classes.  I think there are some implementations for general rings and for integrals, so these might be good examples to follow if you want. )\n\nOr maybe you have a different reason to think about `random_element`?\n\nbest,\nNiles",
+    "body": "Replying to [comment:73 pernici]:\n> This is a follow-up of my previous mail on random_element\n> in multivariate series.\n\n\nHi pernici,\n\nThanks for clarifying this, but I'm not sure how to proceed.  I think I understand what you mean about lower degree terms being \"more important\" (in the same way that earlier decimal digits are \"more important\" in a real number).  But I also think it makes a lot of sense for `random_element` to be very similar between multivariate polynomials and multivariate power series -- this is the principle behind a number of implementation choices for multivariate power series.  Nowhere is it promised that `random_element`s are chosen with uniform distribution and, as you point out, the docstring for multivariate polynomials says explicitly that it is using a non-uniform distribution.\n\nSo now I wonder what the motivation is for changing the power series `random_element` method:  am I right to guess that you want to use the random elements to test your multiplication code?  If so, let me suggest that it would be better to do this with a [test suite](http://www.sagemath.org/doc/reference/sage/misc/sage_unittest.html), where you can write different custom algorithms for different random distributions and not have to worry about which of these should used for the `random_element` method of polynomials or power series.  (Having said that, I admit that I've found it difficult to get started with sage's test suite classes.  I think there are some implementations for general rings and for integrals, so these might be good examples to follow if you want. )\n\nOr maybe you have a different reason to think about `random_element`?\n\nbest,\nNiles",
     "created_at": "2011-01-12T16:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3423,6 +3395,7 @@ archive/issue_comments_012519.json:
 Replying to [comment:73 pernici]:
 > This is a follow-up of my previous mail on random_element
 > in multivariate series.
+
 
 Hi pernici,
 
@@ -3442,7 +3415,7 @@ Niles
 archive/issue_comments_012520.json:
 ```json
 {
-    "body": "Hi Niles,\nI agree that it has some advantages to keep the same random_element as for polynomials;\nat least it is well defined mathematically in terms of sets of monomials.\n\n>am I right to guess that you want to use the random elements to test your multiplication code? \n\nYes, my motivation for using random polynomials was for benchmarking multiplication;\nwhen I found out that random_element generates typically series without low order terms\nI replaced it with a generator which gave them.\n\n>Or maybe you have a different reason to think about random_element? \nNo.\n\nMario",
+    "body": "Hi Niles,\nI agree that it has some advantages to keep the same random_element as for polynomials;\nat least it is well defined mathematically in terms of sets of monomials.\n\n>am I right to guess that you want to use the random elements to test your multiplication code? \n\n\nYes, my motivation for using random polynomials was for benchmarking multiplication;\nwhen I found out that random_element generates typically series without low order terms\nI replaced it with a generator which gave them.\n\n>Or maybe you have a different reason to think about random_element? \n\nNo.\n\nMario",
     "created_at": "2011-01-12T21:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3457,11 +3430,13 @@ at least it is well defined mathematically in terms of sets of monomials.
 
 >am I right to guess that you want to use the random elements to test your multiplication code? 
 
+
 Yes, my motivation for using random polynomials was for benchmarking multiplication;
 when I found out that random_element generates typically series without low order terms
 I replaced it with a generator which gave them.
 
 >Or maybe you have a different reason to think about random_element? 
+
 No.
 
 Mario
@@ -3473,7 +3448,7 @@ Mario
 archive/issue_comments_012521.json:
 ```json
 {
-    "body": "In this ticket series with total degree truncation are considered. \n\nHow does the case of partial degree truncation work, \nsay with `p` a polynomial\n\n```\nf = p + O(x^prec_x,y^prec_y)\n```\n\nCan one define the partial degree truncation as the total degree truncation with\n`prec = prec1+prec2-1`, and if `f._bg_value` has valuation `0` truncate \n`x^prec_x and y^prec_y` ?\n\nWith such a definition multiplication would work as in the total degree case, with a truncation of the result, if needed.",
+    "body": "In this ticket series with total degree truncation are considered. \n\nHow does the case of partial degree truncation work, \nsay with `p` a polynomial\n\n```\nf = p + O(x^prec_x,y^prec_y)\n```\nCan one define the partial degree truncation as the total degree truncation with\n`prec = prec1+prec2-1`, and if `f._bg_value` has valuation `0` truncate \n`x^prec_x and y^prec_y` ?\n\nWith such a definition multiplication would work as in the total degree case, with a truncation of the result, if needed.",
     "created_at": "2011-01-13T21:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3490,7 +3465,6 @@ say with `p` a polynomial
 ```
 f = p + O(x^prec_x,y^prec_y)
 ```
-
 Can one define the partial degree truncation as the total degree truncation with
 `prec = prec1+prec2-1`, and if `f._bg_value` has valuation `0` truncate 
 `x^prec_x and y^prec_y` ?
@@ -3504,7 +3478,7 @@ With such a definition multiplication would work as in the total degree case, wi
 archive/issue_comments_012522.json:
 ```json
 {
-    "body": "Please disregard my previous message :(\n\nIn this ticket series with total degree truncation are considered.\n\nI would like to ask how the case of series with partial degree truncation works.\n\nConsider for example the product of two series in variables `x,y`\nwith precisions `prec_x,prec_y`; if they start with a constant term one can\njust truncate with `O(x^prec_x) , O(y^prec_y)`.\n\nI do not see how it works if there are no constant terms; consider for example\ntwo series with precision 3 in both variables; add a variable `b` to track\nthe monomials which should be eliminated\n\n```\nsage: R.<x,y,b> = QQ[]\nsage: p1 = x + y + x^2 + x*y + y^2 + b*(x^3 + y^3)\nsage: p2 = x^2 + x*y + y^2 + b*(x^3 + y^3)\nsage: p3 = p1*p2\nsage: p3.coefficient({b:0})\nx^4 + 2*x^3*y + 3*x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 2*x^2*y + 2*x*y^2 + y^3\nsage: p3.coefficient({b:1})\n2*x^5 + 2*x^4*y + 2*x^3*y^2 + 2*x^2*y^3 + 2*x*y^4 + 2*y^5 + x^4 + x^3*y + x*y^3 + y^4\n```\n\n\n`x^4, x^3*y, x*y^3, y^4` appear in `p3.coefficient({b:1})`\nso they should be disregarded; the product of the series should be\n\n```\n3*x^2*y^2 + x^3 + 2*x^2*y + 2*x*y^2 + y^3\n```\n\nbut I do not see how to get this simply with truncations;\nneglecting `3*x<sup>2*y</sup>2` one would get the total degree truncation\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p1 = x + y + x^2 + x*y + y^2 + R.O(3)\nsage: p2 = x^2 + x*y + y^2 + R.O(3)\nsage: p1*p2\nx^3 + 2*x^2*y + 2*x*y^2 + y^3 + O(x, y)^4\n```\n",
+    "body": "Please disregard my previous message :(\n\nIn this ticket series with total degree truncation are considered.\n\nI would like to ask how the case of series with partial degree truncation works.\n\nConsider for example the product of two series in variables `x,y`\nwith precisions `prec_x,prec_y`; if they start with a constant term one can\njust truncate with `O(x^prec_x) , O(y^prec_y)`.\n\nI do not see how it works if there are no constant terms; consider for example\ntwo series with precision 3 in both variables; add a variable `b` to track\nthe monomials which should be eliminated\n\n```\nsage: R.<x,y,b> = QQ[]\nsage: p1 = x + y + x^2 + x*y + y^2 + b*(x^3 + y^3)\nsage: p2 = x^2 + x*y + y^2 + b*(x^3 + y^3)\nsage: p3 = p1*p2\nsage: p3.coefficient({b:0})\nx^4 + 2*x^3*y + 3*x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 2*x^2*y + 2*x*y^2 + y^3\nsage: p3.coefficient({b:1})\n2*x^5 + 2*x^4*y + 2*x^3*y^2 + 2*x^2*y^3 + 2*x*y^4 + 2*y^5 + x^4 + x^3*y + x*y^3 + y^4\n```\n\n`x^4, x^3*y, x*y^3, y^4` appear in `p3.coefficient({b:1})`\nso they should be disregarded; the product of the series should be\n\n```\n3*x^2*y^2 + x^3 + 2*x^2*y + 2*x*y^2 + y^3\n```\nbut I do not see how to get this simply with truncations;\nneglecting `3*x<sup>2*y</sup>2` one would get the total degree truncation\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p1 = x + y + x^2 + x*y + y^2 + R.O(3)\nsage: p2 = x^2 + x*y + y^2 + R.O(3)\nsage: p1*p2\nx^3 + 2*x^2*y + 2*x*y^2 + y^3 + O(x, y)^4\n```",
     "created_at": "2011-01-14T09:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3538,14 +3512,12 @@ sage: p3.coefficient({b:1})
 2*x^5 + 2*x^4*y + 2*x^3*y^2 + 2*x^2*y^3 + 2*x*y^4 + 2*y^5 + x^4 + x^3*y + x*y^3 + y^4
 ```
 
-
 `x^4, x^3*y, x*y^3, y^4` appear in `p3.coefficient({b:1})`
 so they should be disregarded; the product of the series should be
 
 ```
 3*x^2*y^2 + x^3 + 2*x^2*y + 2*x*y^2 + y^3
 ```
-
 but I do not see how to get this simply with truncations;
 neglecting `3*x<sup>2*y</sup>2` one would get the total degree truncation
 
@@ -3559,13 +3531,12 @@ x^3 + 2*x^2*y + 2*x*y^2 + y^3 + O(x, y)^4
 
 
 
-
 ---
 
 archive/issue_comments_012523.json:
 ```json
 {
-    "body": "Replying to [comment:77 pernici]:\n> ...\n> but I do not see how to get this simply with truncations;\n> ...\n\nI haven't been able to see how to do it either.  There have been a number of unsuccessful tries to get multivariate series in sage, and I think the problem of separate variable precision has been one of the major barriers...",
+    "body": "Replying to [comment:77 pernici]:\n> ...\n> but I do not see how to get this simply with truncations;\n> ...\n\n\nI haven't been able to see how to do it either.  There have been a number of unsuccessful tries to get multivariate series in sage, and I think the problem of separate variable precision has been one of the major barriers...",
     "created_at": "2011-01-14T12:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3578,6 +3549,7 @@ Replying to [comment:77 pernici]:
 > ...
 > but I do not see how to get this simply with truncations;
 > ...
+
 
 I haven't been able to see how to do it either.  There have been a number of unsuccessful tries to get multivariate series in sage, and I think the problem of separate variable precision has been one of the major barriers...
 
@@ -3606,7 +3578,7 @@ Attachment [mo1.patch](tarball://root/attachments/some-uuid/ticket1956/mo1.patch
 archive/issue_comments_012525.json:
 ```json
 {
-    "body": "attached patch to be applied after\napplying trac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_2.patch,\ntrac_1956_multi_ps_cleanup.patch\n\nThe univariate series has the property that its representation\ncan be used to define it\n\n```\nsage: S.<t> = QQ[[]]\nsage: 1 + t + t^3 + O(t^5)\n1 + t + t^3 + O(t^5)\n```\n\nIn the case of multivariate series this property does not currently hold\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p = 1 + x + y^2 + R.O(5); p\n1 + x + y^2 + O(x, y)^5\nsage: 1 + x + y^2 + O(x, y)^5\nTypeError\n```\n\nThe attached patch is a hack to satisfy this property\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: 1 + x + y^2 + O(x, y)^5\n1 + x + y^2 + O(x, y)^5\n```\n",
+    "body": "attached patch to be applied after\napplying trac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_2.patch,\ntrac_1956_multi_ps_cleanup.patch\n\nThe univariate series has the property that its representation\ncan be used to define it\n\n```\nsage: S.<t> = QQ[[]]\nsage: 1 + t + t^3 + O(t^5)\n1 + t + t^3 + O(t^5)\n```\nIn the case of multivariate series this property does not currently hold\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p = 1 + x + y^2 + R.O(5); p\n1 + x + y^2 + O(x, y)^5\nsage: 1 + x + y^2 + O(x, y)^5\nTypeError\n```\nThe attached patch is a hack to satisfy this property\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: 1 + x + y^2 + O(x, y)^5\n1 + x + y^2 + O(x, y)^5\n```",
     "created_at": "2011-01-16T17:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3628,7 +3600,6 @@ sage: S.<t> = QQ[[]]
 sage: 1 + t + t^3 + O(t^5)
 1 + t + t^3 + O(t^5)
 ```
-
 In the case of multivariate series this property does not currently hold
 
 ```
@@ -3638,7 +3609,6 @@ sage: p = 1 + x + y^2 + R.O(5); p
 sage: 1 + x + y^2 + O(x, y)^5
 TypeError
 ```
-
 The attached patch is a hack to satisfy this property
 
 ```
@@ -3649,13 +3619,12 @@ sage: 1 + x + y^2 + O(x, y)^5
 
 
 
-
 ---
 
 archive/issue_comments_012526.json:
 ```json
 {
-    "body": "Replying to [comment:79 pernici]:\n> The attached patch is a hack to satisfy this property\n> {{{\n> sage: R.<x,y> = QQ[[]]\n> sage: 1 + x + y^2 + O(x, y)^5\n> 1 + x + y^2 + O(x, y)^5\n> }}}\n\nVery nice syntax!\n\nBtw: I allowed myself to edit the description and title of this ticket, since it took me a bit of time to figure out from the discussion which kind series it was about. That's a cool feature; thanks to all of you for working on it!",
+    "body": "Replying to [comment:79 pernici]:\n> The attached patch is a hack to satisfy this property\n> \n> ```\n> sage: R.<x,y> = QQ[[]]\n> sage: 1 + x + y^2 + O(x, y)^5\n> 1 + x + y^2 + O(x, y)^5\n> ```\n\n\nVery nice syntax!\n\nBtw: I allowed myself to edit the description and title of this ticket, since it took me a bit of time to figure out from the discussion which kind series it was about. That's a cool feature; thanks to all of you for working on it!",
     "created_at": "2011-01-21T08:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3666,11 +3635,13 @@ archive/issue_comments_012526.json:
 
 Replying to [comment:79 pernici]:
 > The attached patch is a hack to satisfy this property
-> {{{
+> 
+> ```
 > sage: R.<x,y> = QQ[[]]
 > sage: 1 + x + y^2 + O(x, y)^5
 > 1 + x + y^2 + O(x, y)^5
-> }}}
+> ```
+
 
 Very nice syntax!
 
@@ -3683,7 +3654,7 @@ Btw: I allowed myself to edit the description and title of this ticket, since it
 archive/issue_comments_012527.json:
 ```json
 {
-    "body": "I get some strange behaviour; I want to use the reduce method for a\npolynomial extracted from a multivariate series\n\n\n```\nsage: S.<x,y> = QQ[[]]\nsage: p = (1+x+y)^3\nsage: pp = p.polynomial()\nsage: R = S._poly_ring()\nsage: xv = R.gens()\nsage: pp.reduce([xv[0]^2,xv[1]^2])\n1\n```\n\n\nwhile the expected behavior is as working directly with polynomials\n\n```\nsage: R.<x,y> = QQ[]\nsage: p = (1+x+y)^3\nsage: p.reduce([x^2,y^2])\n6*x*y + 3*x + 3*y + 1\n```\n\n\nAfter some trials I got the expected result by creating a new ring \nand casting the polynomial with it.\n\n```\nsage: S.<x,y> = QQ[[]]\nsage: p = (1+x+y)^3\nsage: pp = p.polynomial()\nsage: R = PolynomialRing(QQ,S.variable_names())\nsage: xv = R.gens()\nsage: pp = R(pp)\nsage: pp.reduce([xv[0]^2,xv[1]^2])\n6*x*y + 3*x + 3*y + 1\n```\n\n\nThis is unsatisfactory because it should not be necessary to introduce\na new MPolynomial_libsingular ring, and cast the polynomial.\n\nAm I doing something wrong or is there a bug?",
+    "body": "I get some strange behaviour; I want to use the reduce method for a\npolynomial extracted from a multivariate series\n\n```\nsage: S.<x,y> = QQ[[]]\nsage: p = (1+x+y)^3\nsage: pp = p.polynomial()\nsage: R = S._poly_ring()\nsage: xv = R.gens()\nsage: pp.reduce([xv[0]^2,xv[1]^2])\n1\n```\n\nwhile the expected behavior is as working directly with polynomials\n\n```\nsage: R.<x,y> = QQ[]\nsage: p = (1+x+y)^3\nsage: p.reduce([x^2,y^2])\n6*x*y + 3*x + 3*y + 1\n```\n\nAfter some trials I got the expected result by creating a new ring \nand casting the polynomial with it.\n\n```\nsage: S.<x,y> = QQ[[]]\nsage: p = (1+x+y)^3\nsage: pp = p.polynomial()\nsage: R = PolynomialRing(QQ,S.variable_names())\nsage: xv = R.gens()\nsage: pp = R(pp)\nsage: pp.reduce([xv[0]^2,xv[1]^2])\n6*x*y + 3*x + 3*y + 1\n```\n\nThis is unsatisfactory because it should not be necessary to introduce\na new MPolynomial_libsingular ring, and cast the polynomial.\n\nAm I doing something wrong or is there a bug?",
     "created_at": "2011-01-26T18:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3695,7 +3666,6 @@ archive/issue_comments_012527.json:
 I get some strange behaviour; I want to use the reduce method for a
 polynomial extracted from a multivariate series
 
-
 ```
 sage: S.<x,y> = QQ[[]]
 sage: p = (1+x+y)^3
@@ -3706,7 +3676,6 @@ sage: pp.reduce([xv[0]^2,xv[1]^2])
 1
 ```
 
-
 while the expected behavior is as working directly with polynomials
 
 ```
@@ -3715,7 +3684,6 @@ sage: p = (1+x+y)^3
 sage: p.reduce([x^2,y^2])
 6*x*y + 3*x + 3*y + 1
 ```
-
 
 After some trials I got the expected result by creating a new ring 
 and casting the polynomial with it.
@@ -3731,7 +3699,6 @@ sage: pp.reduce([xv[0]^2,xv[1]^2])
 6*x*y + 3*x + 3*y + 1
 ```
 
-
 This is unsatisfactory because it should not be necessary to introduce
 a new MPolynomial_libsingular ring, and cast the polynomial.
 
@@ -3744,7 +3711,7 @@ Am I doing something wrong or is there a bug?
 archive/issue_comments_012528.json:
 ```json
 {
-    "body": "pernici wrote:\n> while the expected behavior is as working directly with polynomials \n\nSorry, there is no problem; the default ordering for multivariate series in `negdeglex`,\nwhile the default ordering of `PolynomialRing` is `degrevlex`, so that \n`reduce` acts differently in the two cases.",
+    "body": "pernici wrote:\n> while the expected behavior is as working directly with polynomials \n\n\nSorry, there is no problem; the default ordering for multivariate series in `negdeglex`,\nwhile the default ordering of `PolynomialRing` is `degrevlex`, so that \n`reduce` acts differently in the two cases.",
     "created_at": "2011-01-27T12:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3755,6 +3722,7 @@ archive/issue_comments_012528.json:
 
 pernici wrote:
 > while the expected behavior is as working directly with polynomials 
+
 
 Sorry, there is no problem; the default ordering for multivariate series in `negdeglex`,
 while the default ordering of `PolynomialRing` is `degrevlex`, so that 
@@ -3767,7 +3735,7 @@ while the default ordering of `PolynomialRing` is `degrevlex`, so that
 archive/issue_comments_012529.json:
 ```json
 {
-    "body": "The method sqrt of MPowerSeries does not work because sqrt does not\ncurrently work for series on polynomial rings.\n\nIn ticket #10720 nth_root is added;\napplying trac_10720_power_series_nth_root_2.patch\n\nthe definition of nth_root for MPowerSeries is\n\n```\nsage: def nth_root(self, n):\n....:     return self.parent(self._bg_value.nth_root(n))\n....:\n```\n\n\nExamples:\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p = 1 + 2*x + 3*y + R.O(20)\nsage: nth_root(p^10,2) - p^5\n0 + O(x, y)^20\nsage: nth_root(p^10,5) - p^2\n0 + O(x, y)^20\nsage: nth_root(p^-10,2) - p^-5\n0 + O(x, y)^20\nsage: nth_root(p^-10,5) - p^-2\n0 + O(x, y)^20\n```\n",
+    "body": "The method sqrt of MPowerSeries does not work because sqrt does not\ncurrently work for series on polynomial rings.\n\nIn ticket #10720 nth_root is added;\napplying trac_10720_power_series_nth_root_2.patch\n\nthe definition of nth_root for MPowerSeries is\n\n```\nsage: def nth_root(self, n):\n....:     return self.parent(self._bg_value.nth_root(n))\n....:\n```\n\nExamples:\n\n```\nsage: R.<x,y> = QQ[[]]\nsage: p = 1 + 2*x + 3*y + R.O(20)\nsage: nth_root(p^10,2) - p^5\n0 + O(x, y)^20\nsage: nth_root(p^10,5) - p^2\n0 + O(x, y)^20\nsage: nth_root(p^-10,2) - p^-5\n0 + O(x, y)^20\nsage: nth_root(p^-10,5) - p^-2\n0 + O(x, y)^20\n```",
     "created_at": "2011-02-02T12:01:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3790,7 +3758,6 @@ sage: def nth_root(self, n):
 ....:
 ```
 
-
 Examples:
 
 ```
@@ -3805,7 +3772,6 @@ sage: nth_root(p^-10,2) - p^-5
 sage: nth_root(p^-10,5) - p^-2
 0 + O(x, y)^20
 ```
-
 
 
 
@@ -3851,7 +3817,7 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_2.patch, 
 archive/issue_comments_012531.json:
 ```json
 {
-    "body": "Niles,\ngoing back to the benchmarks you posted in ticket #1956 (see also bench1.sage\nposted here), here is a comparison with PARI\n\n\n```\n(2)  latest patch in this ticket\n(3)  PARI/GP\ntimes in ms\ntest no.  1     2     3     4     5     6     7      8\n(2)       28.2  2.3   24.8  166   8.16  21    45.2   56.7\n(3)       27.8  20    19.7  94.4  16    43.2  47.2   48\n```\n\nPARI ranges from 8.7x slower to 1.8x faster; it is slowest in the\nsecond example; the timings for (3) fluctuate a lot, unlike those of (2);\nabove I gave the first timings I got.\n\nI took a few times the timings for (3) in the second example\n\n```\nsage: %timeit gp('(1 + T^3*(a^3 + b^3) + T^4*(c^4 + d^4) + O(T^(15)))^-20')\n25 loops, best of 3: 17.3 ms per loop\n```\n\nI got timings from 14 ms to 23 ms, while I get regularly 2.3 ms for (2)\n\n```\nsage: L.<a,b,c,d> = PowerSeriesRing(QQ,4)\nsage: %timeit (1 + a^3 + b^3 + c^4 + d^4 + L.O(15))^-20\n125 loops, best of 3: 2.3 ms per loop\n```\n\neven taking the best time for PARI in this example, it is still 6x slower.\n\nI decided to make comparison with PARI/GP prompted by your post in ticket\n#1956 about distributing the review of that ticket.\n\nI thought that another item there could be:\n\ncomparison with other CAS\n\nand so I tried the comparison with PARI.\n\nIMHO this ticket could be closed: I consider settled that generic truncated\nmultiplication is faster than Karatsuba for multivariate series.\nThe comparison with PARI is fairly favorable; the latest patch is\nfrom 6x faster to 2.5x slower than PARI/GP in the given benchmarks with\nthe QQ field, and it is generic code, working with any ring.\n\nThese benchmarks should help reviewers in settling the item:\n\nPerformance: the multivariate power series arithmetic is fast enough to be included in Sage",
+    "body": "Niles,\ngoing back to the benchmarks you posted in ticket #1956 (see also bench1.sage\nposted here), here is a comparison with PARI\n\n```\n(2)  latest patch in this ticket\n(3)  PARI/GP\ntimes in ms\ntest no.  1     2     3     4     5     6     7      8\n(2)       28.2  2.3   24.8  166   8.16  21    45.2   56.7\n(3)       27.8  20    19.7  94.4  16    43.2  47.2   48\n```\nPARI ranges from 8.7x slower to 1.8x faster; it is slowest in the\nsecond example; the timings for (3) fluctuate a lot, unlike those of (2);\nabove I gave the first timings I got.\n\nI took a few times the timings for (3) in the second example\n\n```\nsage: %timeit gp('(1 + T^3*(a^3 + b^3) + T^4*(c^4 + d^4) + O(T^(15)))^-20')\n25 loops, best of 3: 17.3 ms per loop\n```\nI got timings from 14 ms to 23 ms, while I get regularly 2.3 ms for (2)\n\n```\nsage: L.<a,b,c,d> = PowerSeriesRing(QQ,4)\nsage: %timeit (1 + a^3 + b^3 + c^4 + d^4 + L.O(15))^-20\n125 loops, best of 3: 2.3 ms per loop\n```\neven taking the best time for PARI in this example, it is still 6x slower.\n\nI decided to make comparison with PARI/GP prompted by your post in ticket\n#1956 about distributing the review of that ticket.\n\nI thought that another item there could be:\n\ncomparison with other CAS\n\nand so I tried the comparison with PARI.\n\nIMHO this ticket could be closed: I consider settled that generic truncated\nmultiplication is faster than Karatsuba for multivariate series.\nThe comparison with PARI is fairly favorable; the latest patch is\nfrom 6x faster to 2.5x slower than PARI/GP in the given benchmarks with\nthe QQ field, and it is generic code, working with any ring.\n\nThese benchmarks should help reviewers in settling the item:\n\nPerformance: the multivariate power series arithmetic is fast enough to be included in Sage",
     "created_at": "2011-02-10T12:26:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3864,7 +3830,6 @@ Niles,
 going back to the benchmarks you posted in ticket #1956 (see also bench1.sage
 posted here), here is a comparison with PARI
 
-
 ```
 (2)  latest patch in this ticket
 (3)  PARI/GP
@@ -3873,7 +3838,6 @@ test no.  1     2     3     4     5     6     7      8
 (2)       28.2  2.3   24.8  166   8.16  21    45.2   56.7
 (3)       27.8  20    19.7  94.4  16    43.2  47.2   48
 ```
-
 PARI ranges from 8.7x slower to 1.8x faster; it is slowest in the
 second example; the timings for (3) fluctuate a lot, unlike those of (2);
 above I gave the first timings I got.
@@ -3884,7 +3848,6 @@ I took a few times the timings for (3) in the second example
 sage: %timeit gp('(1 + T^3*(a^3 + b^3) + T^4*(c^4 + d^4) + O(T^(15)))^-20')
 25 loops, best of 3: 17.3 ms per loop
 ```
-
 I got timings from 14 ms to 23 ms, while I get regularly 2.3 ms for (2)
 
 ```
@@ -3892,7 +3855,6 @@ sage: L.<a,b,c,d> = PowerSeriesRing(QQ,4)
 sage: %timeit (1 + a^3 + b^3 + c^4 + d^4 + L.O(15))^-20
 125 loops, best of 3: 2.3 ms per loop
 ```
-
 even taking the best time for PARI in this example, it is still 6x slower.
 
 I decided to make comparison with PARI/GP prompted by your post in ticket
@@ -3921,7 +3883,7 @@ Performance: the multivariate power series arithmetic is fast enough to be inclu
 archive/issue_comments_012532.json:
 ```json
 {
-    "body": "Replying to [comment:86 pernici]:\n\n> I thought that another item there could be:\n> \n> comparison with other CAS\n> \n> and so I tried the comparison with PARI.\n\nThanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).\n\n> \n> IMHO this ticket could be closed: I consider settled that generic truncated\n> multiplication is faster than Karatsuba for multivariate series.\n> The comparison with PARI is fairly favorable; the latest patch is\n> from 6x faster to 2.5x slower than PARI/GP in the given benchmarks with\n> the QQ field, and it is generic code, working with any ring.\n\nThanks!  Really we're just waiting for someone (other than me) to click \"positive review\" -- this will initiate the process of merging it in the next version of Sage.\n\n> \n> These benchmarks should help reviewers in settling the item:\n> \n> Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\nIt sounds like you're willing to give that item a positive review.  Are you also willing to say that \"The underlying concept is sound\"?  If there are any other items you can say should have positive review, please do :)",
+    "body": "Replying to [comment:86 pernici]:\n\n> I thought that another item there could be:\n> \n> comparison with other CAS\n> \n> and so I tried the comparison with PARI.\n\n\nThanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).\n\n> \n> IMHO this ticket could be closed: I consider settled that generic truncated\n> multiplication is faster than Karatsuba for multivariate series.\n> The comparison with PARI is fairly favorable; the latest patch is\n> from 6x faster to 2.5x slower than PARI/GP in the given benchmarks with\n> the QQ field, and it is generic code, working with any ring.\n\n\nThanks!  Really we're just waiting for someone (other than me) to click \"positive review\" -- this will initiate the process of merging it in the next version of Sage.\n\n> \n> These benchmarks should help reviewers in settling the item:\n> \n> Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n\nIt sounds like you're willing to give that item a positive review.  Are you also willing to say that \"The underlying concept is sound\"?  If there are any other items you can say should have positive review, please do :)",
     "created_at": "2011-02-10T14:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3938,6 +3900,7 @@ Replying to [comment:86 pernici]:
 > 
 > and so I tried the comparison with PARI.
 
+
 Thanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).
 
 > 
@@ -3947,12 +3910,14 @@ Thanks for doing this.  A comparison with Magma also appears in [comment 8 above
 > from 6x faster to 2.5x slower than PARI/GP in the given benchmarks with
 > the QQ field, and it is generic code, working with any ring.
 
+
 Thanks!  Really we're just waiting for someone (other than me) to click "positive review" -- this will initiate the process of merging it in the next version of Sage.
 
 > 
 > These benchmarks should help reviewers in settling the item:
 > 
 > Performance: the multivariate power series arithmetic is fast enough to be included in Sage
+
 
 It sounds like you're willing to give that item a positive review.  Are you also willing to say that "The underlying concept is sound"?  If there are any other items you can say should have positive review, please do :)
 
@@ -3963,7 +3928,7 @@ It sounds like you're willing to give that item a positive review.  Are you also
 archive/issue_comments_012533.json:
 ```json
 {
-    "body": "niles wrote:\n> It sounds like you're willing to give that item a positive review. Are you also willing to say that \"The underlying concept is sound\"?\n\nI think it is sound to use a background univariate series\nto implement total degree precision.\n\nConcerning the 6th item (integration with the rest of sage)\nwe should discuss what other approaches are available in Sage to deal with\nmultivariate series.\n\nAnother approach to multivariate series is using series of series;\nthis can be done with Sage's univariate power series or `gp`.\n\nIt is a bit cumbersome to convert a polynomial into a series of series with\nSage's univariate power series\n\n\n```\nsage: R.<x1> = QQ[[]]\nsage: S.<x0> = R[[]]\nsage: p = (1 + x0 + x1)^3\nsage: a = p.list()\nsage: q = sum((a[i] + O(x1^3))*x0^i for i in range(len(a))) + O(x0^3)\nsage: q^-5\n1 - 15*x1 + 120*x1^2 + O(x1^3) + (-15 + 240*x1 - 2040*x1^2 + O(x1^3))*x0 + (120 - 2040*x1 + 18360*x1^2 + O(x1^3))*x0^2 + O(x0^3)\nsage: (q-1)^2\n9*x1^2 + 18*x1^3 + O(x1^4) + (18*x1 + 54*x1^2 + O(x1^3))*x0 + (9 + 54*x1 + 90*x1^2 + O(x1^3))*x0^2 + O(x0^3)\n```\n\n\nUsing `gp` the notation is simpler\n\n```\nsage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')\n```\n\ngiving the same output for `q^-5` and `(q-1)^2` .\n\nFor long computations `gp` is much faster, especially with more than two variables.\n\nShould one integrate the multi-series multivariate series approach\nwith `PowerSeriesRing` ? It could be something like\n\n```\nsage: R = PowerSeriesRing(QQ, 2, 'x', \"ms\")\nsage: q = (1 + x0 + x1)^3 + O(x0^3,x1^3)\nsage: q\n1 + 3*x1 + 3*x1^2 + O(x1^3) + (3 + 6*x1 + 3*x1^2 + O(x1^3))*x0 + (3 + 3*x1 + O(x1^3))*x0^2 + O(x0^3)\n```\n\n\nOne could implement series of series with Sage's univariate power series,\nor better using PARI.\n\nClearly implementing this does not belong to this ticket.\nThe only thing to be decided in this ticket is if it is OK to keep the\ntotal degree precision as the default option in `PowerSeriesRing`.",
+    "body": "niles wrote:\n> It sounds like you're willing to give that item a positive review. Are you also willing to say that \"The underlying concept is sound\"?\n\n\nI think it is sound to use a background univariate series\nto implement total degree precision.\n\nConcerning the 6th item (integration with the rest of sage)\nwe should discuss what other approaches are available in Sage to deal with\nmultivariate series.\n\nAnother approach to multivariate series is using series of series;\nthis can be done with Sage's univariate power series or `gp`.\n\nIt is a bit cumbersome to convert a polynomial into a series of series with\nSage's univariate power series\n\n```\nsage: R.<x1> = QQ[[]]\nsage: S.<x0> = R[[]]\nsage: p = (1 + x0 + x1)^3\nsage: a = p.list()\nsage: q = sum((a[i] + O(x1^3))*x0^i for i in range(len(a))) + O(x0^3)\nsage: q^-5\n1 - 15*x1 + 120*x1^2 + O(x1^3) + (-15 + 240*x1 - 2040*x1^2 + O(x1^3))*x0 + (120 - 2040*x1 + 18360*x1^2 + O(x1^3))*x0^2 + O(x0^3)\nsage: (q-1)^2\n9*x1^2 + 18*x1^3 + O(x1^4) + (18*x1 + 54*x1^2 + O(x1^3))*x0 + (9 + 54*x1 + 90*x1^2 + O(x1^3))*x0^2 + O(x0^3)\n```\n\nUsing `gp` the notation is simpler\n\n```\nsage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')\n```\ngiving the same output for `q^-5` and `(q-1)^2` .\n\nFor long computations `gp` is much faster, especially with more than two variables.\n\nShould one integrate the multi-series multivariate series approach\nwith `PowerSeriesRing` ? It could be something like\n\n```\nsage: R = PowerSeriesRing(QQ, 2, 'x', \"ms\")\nsage: q = (1 + x0 + x1)^3 + O(x0^3,x1^3)\nsage: q\n1 + 3*x1 + 3*x1^2 + O(x1^3) + (3 + 6*x1 + 3*x1^2 + O(x1^3))*x0 + (3 + 3*x1 + O(x1^3))*x0^2 + O(x0^3)\n```\n\nOne could implement series of series with Sage's univariate power series,\nor better using PARI.\n\nClearly implementing this does not belong to this ticket.\nThe only thing to be decided in this ticket is if it is OK to keep the\ntotal degree precision as the default option in `PowerSeriesRing`.",
     "created_at": "2011-02-14T15:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -3974,6 +3939,7 @@ archive/issue_comments_012533.json:
 
 niles wrote:
 > It sounds like you're willing to give that item a positive review. Are you also willing to say that "The underlying concept is sound"?
+
 
 I think it is sound to use a background univariate series
 to implement total degree precision.
@@ -3988,7 +3954,6 @@ this can be done with Sage's univariate power series or `gp`.
 It is a bit cumbersome to convert a polynomial into a series of series with
 Sage's univariate power series
 
-
 ```
 sage: R.<x1> = QQ[[]]
 sage: S.<x0> = R[[]]
@@ -4001,13 +3966,11 @@ sage: (q-1)^2
 9*x1^2 + 18*x1^3 + O(x1^4) + (18*x1 + 54*x1^2 + O(x1^3))*x0 + (9 + 54*x1 + 90*x1^2 + O(x1^3))*x0^2 + O(x0^3)
 ```
 
-
 Using `gp` the notation is simpler
 
 ```
 sage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')
 ```
-
 giving the same output for `q^-5` and `(q-1)^2` .
 
 For long computations `gp` is much faster, especially with more than two variables.
@@ -4021,7 +3984,6 @@ sage: q = (1 + x0 + x1)^3 + O(x0^3,x1^3)
 sage: q
 1 + 3*x1 + 3*x1^2 + O(x1^3) + (3 + 6*x1 + 3*x1^2 + O(x1^3))*x0 + (3 + 3*x1 + O(x1^3))*x0^2 + O(x0^3)
 ```
-
 
 One could implement series of series with Sage's univariate power series,
 or better using PARI.
@@ -4056,7 +4018,7 @@ in the case of multivariate series with one variable, see comments 64-70 in this
 archive/issue_comments_012535.json:
 ```json
 {
-    "body": "Replying to [comment:88 pernici]:\n> niles wrote:\n> > It sounds like you're willing to give that item a positive review. Are you also willing to say that \"The underlying concept is sound\"?\n> \n> I think it is sound to use a background univariate series\n> to implement total degree precision.\n\nThanks :)\n\n> \n> Concerning the 6th item (integration with the rest of sage)\n> we should discuss what other approaches are available in Sage to deal with\n> multivariate series.\n> \n> Another approach to multivariate series is using series of series;\n> this can be done with Sage's univariate power series or `gp`.\n> ...\n> The only thing to be decided in this ticket is if it is OK to keep the\n> total degree precision as the default option in `PowerSeriesRing`.\n> \n\nWith regard to \"series of series\", I believe there are some theoretical subtleties which make this tricky.  The [Pari User's Manual](http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.3.3/users.pdf) contains the following warning (1.2.4, page 22):\n\n>> In the present version 2.3.3 of PARI, there are bugs in the handling of power series of power series, i.e. power series in several variables. ... This bug is difficult to correct because the mathematical problem itself contains some amount of imprecision, and it is not easy to design an intuitive generic interface for such beasts.\n\nSo I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call `gp` -- see the next point).\n\n> For long computations gp is much faster, especially with more than two variables. \n\nYes, a more complete interface with `gp` is probably the right way to go.  However I think `PowerSeriesRing`, and its elements, should be native Sage objects -- this is not the case with `gp` series, which makes them unsuitable for the default power series.  For example:\n\n\n```\nsage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')\nsage: type(q)\n<class 'sage.interfaces.gp.GpElement'>\nsage: q.parent()\nPARI/GP interpreter\nsage: q.base_ring()\nPARI/GP interpreter\n```\n",
+    "body": "Replying to [comment:88 pernici]:\n> niles wrote:\n> > It sounds like you're willing to give that item a positive review. Are you also willing to say that \"The underlying concept is sound\"?\n\n> \n> I think it is sound to use a background univariate series\n> to implement total degree precision.\n\n\nThanks :)\n\n> \n> Concerning the 6th item (integration with the rest of sage)\n> we should discuss what other approaches are available in Sage to deal with\n> multivariate series.\n> \n> Another approach to multivariate series is using series of series;\n> this can be done with Sage's univariate power series or `gp`.\n> ...\n> The only thing to be decided in this ticket is if it is OK to keep the\n> total degree precision as the default option in `PowerSeriesRing`.\n> \n\n\nWith regard to \"series of series\", I believe there are some theoretical subtleties which make this tricky.  The [Pari User's Manual](http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.3.3/users.pdf) contains the following warning (1.2.4, page 22):\n\n>> In the present version 2.3.3 of PARI, there are bugs in the handling of power series of power series, i.e. power series in several variables. ... This bug is difficult to correct because the mathematical problem itself contains some amount of imprecision, and it is not easy to design an intuitive generic interface for such beasts.\n\n\nSo I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call `gp` -- see the next point).\n\n> For long computations gp is much faster, especially with more than two variables. \n\n\nYes, a more complete interface with `gp` is probably the right way to go.  However I think `PowerSeriesRing`, and its elements, should be native Sage objects -- this is not the case with `gp` series, which makes them unsuitable for the default power series.  For example:\n\n```\nsage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')\nsage: type(q)\n<class 'sage.interfaces.gp.GpElement'>\nsage: q.parent()\nPARI/GP interpreter\nsage: q.base_ring()\nPARI/GP interpreter\n```",
     "created_at": "2011-02-15T18:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4068,9 +4030,11 @@ archive/issue_comments_012535.json:
 Replying to [comment:88 pernici]:
 > niles wrote:
 > > It sounds like you're willing to give that item a positive review. Are you also willing to say that "The underlying concept is sound"?
+
 > 
 > I think it is sound to use a background univariate series
 > to implement total degree precision.
+
 
 Thanks :)
 
@@ -4086,16 +4050,18 @@ Thanks :)
 > total degree precision as the default option in `PowerSeriesRing`.
 > 
 
+
 With regard to "series of series", I believe there are some theoretical subtleties which make this tricky.  The [Pari User's Manual](http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.3.3/users.pdf) contains the following warning (1.2.4, page 22):
 
 >> In the present version 2.3.3 of PARI, there are bugs in the handling of power series of power series, i.e. power series in several variables. ... This bug is difficult to correct because the mathematical problem itself contains some amount of imprecision, and it is not easy to design an intuitive generic interface for such beasts.
+
 
 So I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call `gp` -- see the next point).
 
 > For long computations gp is much faster, especially with more than two variables. 
 
-Yes, a more complete interface with `gp` is probably the right way to go.  However I think `PowerSeriesRing`, and its elements, should be native Sage objects -- this is not the case with `gp` series, which makes them unsuitable for the default power series.  For example:
 
+Yes, a more complete interface with `gp` is probably the right way to go.  However I think `PowerSeriesRing`, and its elements, should be native Sage objects -- this is not the case with `gp` series, which makes them unsuitable for the default power series.  For example:
 
 ```
 sage: q = gp('(1+x0+x1)^3 + O(x0^3) + O(x1^3)')
@@ -4109,13 +4075,12 @@ PARI/GP interpreter
 
 
 
-
 ---
 
 archive/issue_comments_012536.json:
 ```json
 {
-    "body": "niles wrote:\n> So I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call gp -- see the next point).\n\nMaybe total-degree precision is a better default anyway, even if there were available an excellent multi-series (I mean series of series ... N times, I do not know the standard name for these _really_ multivariate series) implementation; I have the impression that few times multi-series are used, and that univariate series (which total-degree precision multivariate series really is) or at most bivariate series are used frequently in practice.\n\n> Yes, a more complete interface with gp is probably the right way to go. However I think PowerSeriesRing?, and its elements, should be native Sage objects -- this is not the case with gp series, which makes them unsuitable for the default power series.\n\nRight.",
+    "body": "niles wrote:\n> So I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call gp -- see the next point).\n\n\nMaybe total-degree precision is a better default anyway, even if there were available an excellent multi-series (I mean series of series ... N times, I do not know the standard name for these _really_ multivariate series) implementation; I have the impression that few times multi-series are used, and that univariate series (which total-degree precision multivariate series really is) or at most bivariate series are used frequently in practice.\n\n> Yes, a more complete interface with gp is probably the right way to go. However I think PowerSeriesRing?, and its elements, should be native Sage objects -- this is not the case with gp series, which makes them unsuitable for the default power series.\n\n\nRight.",
     "created_at": "2011-02-15T23:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4127,9 +4092,11 @@ archive/issue_comments_012536.json:
 niles wrote:
 > So I think total-degree precision should be the the default, until someone writes code to carefully handle the other possibilities (or to call gp -- see the next point).
 
+
 Maybe total-degree precision is a better default anyway, even if there were available an excellent multi-series (I mean series of series ... N times, I do not know the standard name for these _really_ multivariate series) implementation; I have the impression that few times multi-series are used, and that univariate series (which total-degree precision multivariate series really is) or at most bivariate series are used frequently in practice.
 
 > Yes, a more complete interface with gp is probably the right way to go. However I think PowerSeriesRing?, and its elements, should be native Sage objects -- this is not the case with gp series, which makes them unsuitable for the default power series.
+
 
 Right.
 
@@ -4140,7 +4107,7 @@ Right.
 archive/issue_comments_012537.json:
 ```json
 {
-    "body": "Replying to [comment:87 niles]:\n> Replying to [comment:86 pernici]:\n> \n> > I thought that another item there could be:\n> > \n> > comparison with other CAS\n> > \n> > and so I tried the comparison with PARI.\n> \n> Thanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).\n\nI do not have Magma; according to the timings in comment 8 it seems that in the first\nbenchmark Magma is 3 orders of magnitude slower.\n\nI found this [http://wiki.sagemath.org/sagebeatsmagma](http://wiki.sagemath.org/sagebeatsmagma) ; such a benchmark could be added there.",
+    "body": "Replying to [comment:87 niles]:\n> Replying to [comment:86 pernici]:\n> \n> > I thought that another item there could be:\n> > \n> > comparison with other CAS\n> > \n> > and so I tried the comparison with PARI.\n\n> \n> Thanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).\n\n\nI do not have Magma; according to the timings in comment 8 it seems that in the first\nbenchmark Magma is 3 orders of magnitude slower.\n\nI found this [http://wiki.sagemath.org/sagebeatsmagma](http://wiki.sagemath.org/sagebeatsmagma) ; such a benchmark could be added there.",
     "created_at": "2011-02-24T15:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4157,8 +4124,10 @@ Replying to [comment:87 niles]:
 > > comparison with other CAS
 > > 
 > > and so I tried the comparison with PARI.
+
 > 
 > Thanks for doing this.  A comparison with Magma also appears in [comment 8 above](http://trac.sagemath.org/sage_trac/ticket/1956?replyto=86#comment:8).
+
 
 I do not have Magma; according to the timings in comment 8 it seems that in the first
 benchmark Magma is 3 orders of magnitude slower.
@@ -4280,7 +4249,7 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, 
 archive/issue_comments_012543.json:
 ```json
 {
-    "body": "First, thanks for all your work Niles, what you've done has already saved me hours of pain!\n\nThere seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs.  For example:\n\n\n```\nsage: A.<a, b, c> = PowerSeriesRing(QQ)\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: s(a, b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/hlaw/Dropbox/org/<ipython console> in <module>()\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/multi_power_series_ring_element.pyc in __call__(self, *x, **kwds)\n    419         for i in range(len(x)):\n    420             try:\n--> 421                  xi = self.parent(x[i])\n    422             except AttributeError:\n    423                 raise AttributeError(str(x[i])+\" does not coerce to parent ring.\")\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.parent (sage/structure/element.c:4069)()\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    604             v = sage_eval(f.Eltseq())\n    605             return self(v) * (self.gen(0)**f.Valuation())\n--> 606         return self.__power_series_class(self, f, prec, check=check)\n    607         \n    608     def construction(self):\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/multi_power_series_ring_element.pyc in __init__(self, parent, x, prec, is_gen, check)\n    352                     self._bg_value = parent._bg_ps_ring(x._bg_value)\n    353                 except TypeError:\n--> 354                     raise TypeError(\"Unable to coerce into background ring.\")\n    355                 \n    356             elif xparent == parent._bg_ps_ring():\n\nTypeError: Unable to coerce into background ring.\n```\n\nI would expect this to print `a`.  Similar permutations with `s^2`, `s + t`, etc. produce the same result.\n\nAnother problem, possibly related, is the following:\n\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: s(z, z)  # expect z\n1\nsage: s(z, z^2)  # expect z\n1\nsage: s(0, z^2)  # expect 0\n0\nsage: s(z^2, 0)  # expect z^2\n1\nsage: (2*s^2)(z, z)  # expect 2*z^2\n2\nsage: (2*s^2 + 3*t)(z, z)  # expect 3*z + 2*z^2\n5\nsage: t(0, z)  # expect z\n1\nsage: t(z, z)  # expect z\n1\nsage: z(s + t) # expect s + t\ns + t\nsage: z(s)  # expect s\ns\nsage: z(t)  # expect t\nt\n```\n\nClearly `z` is being sent to 1 (one) somehow when going from `QQ[This is the Trac macro *s,t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#s,t-macro)` to `QQ[This is the Trac macro *z* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#z-macro)`, but the maps in the other direction work fine.\n\nBoth of these problems (assuming they're distinct) disappear when one does the analogous calculations directly with multivariate *polynomial* rings.\n\nCheers, Hamish.\n\n(Using Sage 4.6.2 +power series patches, on Ubuntu 10.10 64bit, Macbook 5.1.)",
+    "body": "First, thanks for all your work Niles, what you've done has already saved me hours of pain!\n\nThere seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs.  For example:\n\n```\nsage: A.<a, b, c> = PowerSeriesRing(QQ)\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: s(a, b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/hlaw/Dropbox/org/<ipython console> in <module>()\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/multi_power_series_ring_element.pyc in __call__(self, *x, **kwds)\n    419         for i in range(len(x)):\n    420             try:\n--> 421                  xi = self.parent(x[i])\n    422             except AttributeError:\n    423                 raise AttributeError(str(x[i])+\" does not coerce to parent ring.\")\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.parent (sage/structure/element.c:4069)()\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    604             v = sage_eval(f.Eltseq())\n    605             return self(v) * (self.gen(0)**f.Valuation())\n--> 606         return self.__power_series_class(self, f, prec, check=check)\n    607         \n    608     def construction(self):\n\n/home/hlaw/src/sage-src/local/lib/python2.6/site-packages/sage/rings/multi_power_series_ring_element.pyc in __init__(self, parent, x, prec, is_gen, check)\n    352                     self._bg_value = parent._bg_ps_ring(x._bg_value)\n    353                 except TypeError:\n--> 354                     raise TypeError(\"Unable to coerce into background ring.\")\n    355                 \n    356             elif xparent == parent._bg_ps_ring():\n\nTypeError: Unable to coerce into background ring.\n```\nI would expect this to print `a`.  Similar permutations with `s^2`, `s + t`, etc. produce the same result.\n\nAnother problem, possibly related, is the following:\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: s(z, z)  # expect z\n1\nsage: s(z, z^2)  # expect z\n1\nsage: s(0, z^2)  # expect 0\n0\nsage: s(z^2, 0)  # expect z^2\n1\nsage: (2*s^2)(z, z)  # expect 2*z^2\n2\nsage: (2*s^2 + 3*t)(z, z)  # expect 3*z + 2*z^2\n5\nsage: t(0, z)  # expect z\n1\nsage: t(z, z)  # expect z\n1\nsage: z(s + t) # expect s + t\ns + t\nsage: z(s)  # expect s\ns\nsage: z(t)  # expect t\nt\n```\nClearly `z` is being sent to 1 (one) somehow when going from `QQ[This is the Trac macro *s,t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#s,t-macro)` to `QQ[This is the Trac macro *z* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#z-macro)`, but the maps in the other direction work fine.\n\nBoth of these problems (assuming they're distinct) disappear when one does the analogous calculations directly with multivariate *polynomial* rings.\n\nCheers, Hamish.\n\n(Using Sage 4.6.2 +power series patches, on Ubuntu 10.10 64bit, Macbook 5.1.)",
     "created_at": "2011-03-22T18:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4292,7 +4261,6 @@ archive/issue_comments_012543.json:
 First, thanks for all your work Niles, what you've done has already saved me hours of pain!
 
 There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs.  For example:
-
 
 ```
 sage: A.<a, b, c> = PowerSeriesRing(QQ)
@@ -4328,11 +4296,9 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: Unable to coerce into background ring.
 ```
-
 I would expect this to print `a`.  Similar permutations with `s^2`, `s + t`, etc. produce the same result.
 
 Another problem, possibly related, is the following:
-
 
 ```
 sage: B.<s, t> = PowerSeriesRing(QQ)
@@ -4360,7 +4326,6 @@ s
 sage: z(t)  # expect t
 t
 ```
-
 Clearly `z` is being sent to 1 (one) somehow when going from `QQ[This is the Trac macro *s,t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#s,t-macro)` to `QQ[This is the Trac macro *z* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#z-macro)`, but the maps in the other direction work fine.
 
 Both of these problems (assuming they're distinct) disappear when one does the analogous calculations directly with multivariate *polynomial* rings.
@@ -4376,7 +4341,7 @@ Cheers, Hamish.
 archive/issue_comments_012544.json:
 ```json
 {
-    "body": "Replying to [comment:96 hlaw]:\n> First, thanks for all your work Niles, what you've done has already saved me hours of pain!\n> \n\nThanks -- glad to hear it!  It has cost me many hours, so I hope the review will be finished soon (after I fix this problem :)\n\n> There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. \n\nActually it never occurred to me that people would want to substitute into a power series from one ring elements from a different ring, or that such behavior should be supported, but I can see now why it might be useful.  The problem is occurring in the `__call__` method of `MPowerSeries`, which assumes that the inputs should coerce to the parent of the power series they're being substituted into.  A separate part of the problem is that elements from one power series ring are incorrectly coercing to 1 in the other power series ring:\n\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: B(z)\n1\nsage: C(s)\n---------------------------------------------------------------------------\n...\nTypeError: Unable to coerce s (<class 'sage.rings.multi_power_series_ring_element.MPowerSeries'>) to Rational\n```\n\n\nSo I will have to figure out what is going wrong here.  In the meantime, if you need to actually use this, you can use `._value()` to recover the underlying multivariate polynomial, do the substitution there, and then `.add_bigoh()` to get a power series again.  The important idea is that the precision of the power series after substitution should be `n*v`, where `n` is the precision of the original power series, and `v` is the minimum of the valuations of the input power series.\n\nSomething smarter might be done by mimicking the `__call__` method of `MPolynomial_element`, but I haven't thought through that yet -- let me know if you do :)",
+    "body": "Replying to [comment:96 hlaw]:\n> First, thanks for all your work Niles, what you've done has already saved me hours of pain!\n> \n\n\nThanks -- glad to hear it!  It has cost me many hours, so I hope the review will be finished soon (after I fix this problem :)\n\n> There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. \n\n\nActually it never occurred to me that people would want to substitute into a power series from one ring elements from a different ring, or that such behavior should be supported, but I can see now why it might be useful.  The problem is occurring in the `__call__` method of `MPowerSeries`, which assumes that the inputs should coerce to the parent of the power series they're being substituted into.  A separate part of the problem is that elements from one power series ring are incorrectly coercing to 1 in the other power series ring:\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: B(z)\n1\nsage: C(s)\n---------------------------------------------------------------------------\n...\nTypeError: Unable to coerce s (<class 'sage.rings.multi_power_series_ring_element.MPowerSeries'>) to Rational\n```\n\nSo I will have to figure out what is going wrong here.  In the meantime, if you need to actually use this, you can use `._value()` to recover the underlying multivariate polynomial, do the substitution there, and then `.add_bigoh()` to get a power series again.  The important idea is that the precision of the power series after substitution should be `n*v`, where `n` is the precision of the original power series, and `v` is the minimum of the valuations of the input power series.\n\nSomething smarter might be done by mimicking the `__call__` method of `MPolynomial_element`, but I haven't thought through that yet -- let me know if you do :)",
     "created_at": "2011-03-22T20:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4389,12 +4354,13 @@ Replying to [comment:96 hlaw]:
 > First, thanks for all your work Niles, what you've done has already saved me hours of pain!
 > 
 
+
 Thanks -- glad to hear it!  It has cost me many hours, so I hope the review will be finished soon (after I fix this problem :)
 
 > There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. 
 
-Actually it never occurred to me that people would want to substitute into a power series from one ring elements from a different ring, or that such behavior should be supported, but I can see now why it might be useful.  The problem is occurring in the `__call__` method of `MPowerSeries`, which assumes that the inputs should coerce to the parent of the power series they're being substituted into.  A separate part of the problem is that elements from one power series ring are incorrectly coercing to 1 in the other power series ring:
 
+Actually it never occurred to me that people would want to substitute into a power series from one ring elements from a different ring, or that such behavior should be supported, but I can see now why it might be useful.  The problem is occurring in the `__call__` method of `MPowerSeries`, which assumes that the inputs should coerce to the parent of the power series they're being substituted into.  A separate part of the problem is that elements from one power series ring are incorrectly coercing to 1 in the other power series ring:
 
 ```
 sage: B.<s, t> = PowerSeriesRing(QQ)
@@ -4406,7 +4372,6 @@ sage: C(s)
 ...
 TypeError: Unable to coerce s (<class 'sage.rings.multi_power_series_ring_element.MPowerSeries'>) to Rational
 ```
-
 
 So I will have to figure out what is going wrong here.  In the meantime, if you need to actually use this, you can use `._value()` to recover the underlying multivariate polynomial, do the substitution there, and then `.add_bigoh()` to get a power series again.  The important idea is that the precision of the power series after substitution should be `n*v`, where `n` is the precision of the original power series, and `v` is the minimum of the valuations of the input power series.
 
@@ -4437,7 +4402,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012546.json:
 ```json
 {
-    "body": "Replying to [comment:97 niles]:\n> Replying to [comment:96 hlaw]:\n\n> > There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. \n\nI tracked down this bug -- it was unique to the case where one of the power series rings is univariate, and comes from the fact that (univariate) power series rings automatically convert any univariate power series from a given variable to another:\n\n\n```\nsage: R.<a> = PowerSeriesRing(ZZ)sage: S.<b> = PowerSeriesRing(ZZ)\nsage: b in R\nFalse\nsage: R.has_coerce_map_from(S)\nFalse\nsage: R(b)\na\n```\n\n\nI was thinking this should be filed as a separate bug, but polynomials have the same behavior, so perhaps it is intentional.  In any case, I've fixed multivariate power series to take this into account, so an error is raised when the variables don't match:\n\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: B(z)\n...\nTypeError: Cannot coerce input to polynomial ring.\n```\n\n\n> > Another problem, possibly related, is the following...\n\nI also implemented a `._subs_formal` method, which is called automatically by `.__call__`.  This method substitutes *anything* into the power series, requiring only that multiplication and exponentiation be defined for the inputs.  This gives all of the \"expected\" results from above.  Some further examples (from the new doctests):\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: s(z,z)\nz\n\nsage: f = -2/33*s*t^2 - 1/5*t^5 - s^5*t + s^2*t^4\nsage: f(z,z)\n-2/33*z^3 - 1/5*z^5\nsage: f(z,1)\n-1/5 - 2/33*z + z^2 - z^5\nsage: RF = RealField(10)\nsage: f(z,RF(1))\n-0.20 - 0.061*z + 1.0*z^2 - 0.00*z^3 - 0.00*z^4 - 1.0*z^5\n\nsage: m = matrix(QQ,[[1,0,1],[0,2,1],[-1,0,0]])\nsage: m\n[ 1  0  1]\n[ 0  2  1]\n[-1  0  0]\nsage: f(m,m)\n[     2/33         0       1/5]\n[   131/55 -1136/165    -24/11]\n[     -1/5         0   -23/165]\nsage: f(m,m) == -2/33*m^3 - 1/5*m^5\nTrue\n\nsage: f = f.add_bigoh(10)\nsage: f(z,z)\n-2/33*z^3 - 1/5*z^5 + O(z^10)\nsage: f(m,m) # cannot substitute arbitrary elements when f has finite precision\nTraceback (most recent call last):\n...\nAttributeError: 'sage.matrix.matrix_rational_dense.Matrix_rational_dense' object has no attribute 'add_bigoh'\n```\n\n\nPlease test it out and let me know how it goes!\n-Niles",
+    "body": "Replying to [comment:97 niles]:\n> Replying to [comment:96 hlaw]:\n\n\n> > There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. \n\n\nI tracked down this bug -- it was unique to the case where one of the power series rings is univariate, and comes from the fact that (univariate) power series rings automatically convert any univariate power series from a given variable to another:\n\n```\nsage: R.<a> = PowerSeriesRing(ZZ)sage: S.<b> = PowerSeriesRing(ZZ)\nsage: b in R\nFalse\nsage: R.has_coerce_map_from(S)\nFalse\nsage: R(b)\na\n```\n\nI was thinking this should be filed as a separate bug, but polynomials have the same behavior, so perhaps it is intentional.  In any case, I've fixed multivariate power series to take this into account, so an error is raised when the variables don't match:\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: B(z)\n...\nTypeError: Cannot coerce input to polynomial ring.\n```\n\n> > Another problem, possibly related, is the following...\n\n\nI also implemented a `._subs_formal` method, which is called automatically by `.__call__`.  This method substitutes *anything* into the power series, requiring only that multiplication and exponentiation be defined for the inputs.  This gives all of the \"expected\" results from above.  Some further examples (from the new doctests):\n\n```\nsage: B.<s, t> = PowerSeriesRing(QQ)\nsage: C.<z> = PowerSeriesRing(QQ)\nsage: s(z,z)\nz\n\nsage: f = -2/33*s*t^2 - 1/5*t^5 - s^5*t + s^2*t^4\nsage: f(z,z)\n-2/33*z^3 - 1/5*z^5\nsage: f(z,1)\n-1/5 - 2/33*z + z^2 - z^5\nsage: RF = RealField(10)\nsage: f(z,RF(1))\n-0.20 - 0.061*z + 1.0*z^2 - 0.00*z^3 - 0.00*z^4 - 1.0*z^5\n\nsage: m = matrix(QQ,[[1,0,1],[0,2,1],[-1,0,0]])\nsage: m\n[ 1  0  1]\n[ 0  2  1]\n[-1  0  0]\nsage: f(m,m)\n[     2/33         0       1/5]\n[   131/55 -1136/165    -24/11]\n[     -1/5         0   -23/165]\nsage: f(m,m) == -2/33*m^3 - 1/5*m^5\nTrue\n\nsage: f = f.add_bigoh(10)\nsage: f(z,z)\n-2/33*z^3 - 1/5*z^5 + O(z^10)\nsage: f(m,m) # cannot substitute arbitrary elements when f has finite precision\nTraceback (most recent call last):\n...\nAttributeError: 'sage.matrix.matrix_rational_dense.Matrix_rational_dense' object has no attribute 'add_bigoh'\n```\n\nPlease test it out and let me know how it goes!\n-Niles",
     "created_at": "2011-03-27T01:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4449,10 +4414,11 @@ archive/issue_comments_012546.json:
 Replying to [comment:97 niles]:
 > Replying to [comment:96 hlaw]:
 
+
 > > There seems to be a problem with how coercion/evaluation works between two multivariate power series rings when the number of variables in each differs. 
 
-I tracked down this bug -- it was unique to the case where one of the power series rings is univariate, and comes from the fact that (univariate) power series rings automatically convert any univariate power series from a given variable to another:
 
+I tracked down this bug -- it was unique to the case where one of the power series rings is univariate, and comes from the fact that (univariate) power series rings automatically convert any univariate power series from a given variable to another:
 
 ```
 sage: R.<a> = PowerSeriesRing(ZZ)sage: S.<b> = PowerSeriesRing(ZZ)
@@ -4464,9 +4430,7 @@ sage: R(b)
 a
 ```
 
-
 I was thinking this should be filed as a separate bug, but polynomials have the same behavior, so perhaps it is intentional.  In any case, I've fixed multivariate power series to take this into account, so an error is raised when the variables don't match:
-
 
 ```
 sage: B.<s, t> = PowerSeriesRing(QQ)
@@ -4476,8 +4440,8 @@ sage: B(z)
 TypeError: Cannot coerce input to polynomial ring.
 ```
 
-
 > > Another problem, possibly related, is the following...
+
 
 I also implemented a `._subs_formal` method, which is called automatically by `.__call__`.  This method substitutes *anything* into the power series, requiring only that multiplication and exponentiation be defined for the inputs.  This gives all of the "expected" results from above.  Some further examples (from the new doctests):
 
@@ -4516,7 +4480,6 @@ Traceback (most recent call last):
 ...
 AttributeError: 'sage.matrix.matrix_rational_dense.Matrix_rational_dense' object has no attribute 'add_bigoh'
 ```
-
 
 Please test it out and let me know how it goes!
 -Niles
@@ -4610,7 +4573,7 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, 
 archive/issue_comments_012551.json:
 ```json
 {
-    "body": "Replying to [comment:98 niles]:\n\n> Please test it out and let me know how it goes! -Niles\n\nWorks great!  The quick turnaround is appreciated!\n\nCheers, Hamish.",
+    "body": "Replying to [comment:98 niles]:\n\n> Please test it out and let me know how it goes! -Niles\n\n\nWorks great!  The quick turnaround is appreciated!\n\nCheers, Hamish.",
     "created_at": "2011-03-27T11:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4623,6 +4586,7 @@ Replying to [comment:98 niles]:
 
 > Please test it out and let me know how it goes! -Niles
 
+
 Works great!  The quick turnaround is appreciated!
 
 Cheers, Hamish.
@@ -4634,7 +4598,7 @@ Cheers, Hamish.
 archive/issue_comments_012552.json:
 ```json
 {
-    "body": "Replying to [comment:101 hlaw]:\n> \n> Works great!  The quick turnaround is appreciated!\n> \n\nGlad to hear it!  If you feel capable of reviewing some part of the patch, that would be *greatly* appreciated.  Here is the current status of the various items:\n\n1. Sage passes all doctests with this patch\n(positive review; buildbot)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n(needs review)\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n(positive review; Mario Pernici)\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n(needs review)\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n(needs review)\n\n6. Integration with the rest of sage: construction and use of `PowerSeriesRings` works correctly, and parallels behavior of polynomial rings\n(needs review)\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n(positive review; Mario Pernici)\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n(needs review)\n\n9. The items on this list constitute a complete review \n(needs review)",
+    "body": "Replying to [comment:101 hlaw]:\n> \n> Works great!  The quick turnaround is appreciated!\n> \n\n\nGlad to hear it!  If you feel capable of reviewing some part of the patch, that would be *greatly* appreciated.  Here is the current status of the various items:\n\n1. Sage passes all doctests with this patch\n(positive review; buildbot)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n(needs review)\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n(positive review; Mario Pernici)\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n(needs review)\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n(needs review)\n\n6. Integration with the rest of sage: construction and use of `PowerSeriesRings` works correctly, and parallels behavior of polynomial rings\n(needs review)\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n(positive review; Mario Pernici)\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n(needs review)\n\n9. The items on this list constitute a complete review \n(needs review)",
     "created_at": "2011-03-29T00:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4647,6 +4611,7 @@ Replying to [comment:101 hlaw]:
 > 
 > Works great!  The quick turnaround is appreciated!
 > 
+
 
 Glad to hear it!  If you feel capable of reviewing some part of the patch, that would be *greatly* appreciated.  Here is the current status of the various items:
 
@@ -4747,7 +4712,7 @@ Buildbot: Apply trac_1956_combined.patch
 archive/issue_comments_012556.json:
 ```json
 {
-    "body": "Replying to [comment:79 pernici]:\n> The attached patch [attachment:mo1.patch] is a hack to satisfy this property\n> \n  {{{\n  sage: R.<x,y> = QQ[[]]\n  sage: 1 + x + y^2 + O(x, y)^5\n  1 + x + y^2 + O(x, y)^5\n  }}}\n\nI've created a separate ticket for this now, at #11256, so that it can be reviewed independently of this already extensive patch.",
+    "body": "Replying to [comment:79 pernici]:\n> The attached patch [attachment:mo1.patch] is a hack to satisfy this property\n> \n\n  {{{\n  sage: R.<x,y> = QQ[[]]\n  sage: 1 + x + y^2 + O(x, y)^5\n  1 + x + y^2 + O(x, y)^5\n  }}}\n\nI've created a separate ticket for this now, at #11256, so that it can be reviewed independently of this already extensive patch.",
     "created_at": "2011-04-26T12:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4759,6 +4724,7 @@ archive/issue_comments_012556.json:
 Replying to [comment:79 pernici]:
 > The attached patch [attachment:mo1.patch] is a hack to satisfy this property
 > 
+
   {{{
   sage: R.<x,y> = QQ[[]]
   sage: 1 + x + y^2 + O(x, y)^5
@@ -4792,7 +4758,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012558.json:
 ```json
 {
-    "body": "> 1. Sage passes all doctests with this patch (positive review; buildbot)\n\nI think the buildbot gets confused by the \"Apply\" instruction in the ticket's description. Hence, it didn't run the big patch yet.\n\n> 2. All code is documented and doctested thoroughly; documentation builds without \n> error or warning (needs review)\n\n**needs work**\n\n\n```\nsage -coverage devel/sage/sage/rings/multi_power_series_ring.py \n----------------------------------------------------------------------\ndevel/sage/sage/rings/multi_power_series_ring.py\nSCORE devel/sage/sage/rings/multi_power_series_ring.py: 96% (30 of 31)\n\nMissing documentation:\n         * unpickle_multi_power_series_ring_v0(base_ring, num_gens, names, order, default_prec, sparse):\n```\n\n\nThese just need `#indirect doctest` added:\n\n\n```\nsage -coverage devel/sage/sage/rings/multi_power_series_ring_element.py \n----------------------------------------------------------------------\ndevel/sage/sage/rings/multi_power_series_ring_element.py\nSCORE devel/sage/sage/rings/multi_power_series_ring_element.py: 100% (52 of 52)\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _subs_formal(self,*x,**kwds):\n         * _add_(left, right):\n         * _sub_(left, right):\n         * _mul_(left, right):\n         * _lmul_(self, c):\n         * _div_(self, denom_r):\n\n----------------------------------------------------------------------\n```\n\n\nBut the docs build without warnings etc.\n\n> 3. The underlying concept of the implementation (a wrapper for certain univariate \n> power series over multivariate polynomials) is sound (positive review; Mario \n> Pernici)\n\n> 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)\n\nShouldn't `def _element_constructor_(self,f)` use the default precision of the ring?\n\n> 5. multi_power_series_ring_element.py: the code accurately does what it claims to \n> do (needs review)\n\n> 6. Integration with the rest of sage: construction and use of PowerSeriesRings \n> works correctly, and parallels behavior of polynomial rings (needs review)\n\n**needs work**\n\nThe `default_prec` parameter does not seem to work as expected (or is my expectation wrong?)\n\n\n```python\nsage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n```\n\n\n> 7. Performance: the multivariate power series arithmetic is fast enough to be \n> included in Sage (positive review; Mario Pernici)\n\n> 8. Coding: the code is free from obvious inefficiencies in error handling, memory \n> management, etc. (needs review)\n\nIf the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.\n\nI have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.\n\n> 9. The items on this list constitute a complete review (needs review)\n\nFine by me.",
+    "body": "> 1. Sage passes all doctests with this patch (positive review; buildbot)\n\n\nI think the buildbot gets confused by the \"Apply\" instruction in the ticket's description. Hence, it didn't run the big patch yet.\n\n> 2. All code is documented and doctested thoroughly; documentation builds without \n> error or warning (needs review)\n\n\n**needs work**\n\n```\nsage -coverage devel/sage/sage/rings/multi_power_series_ring.py \n----------------------------------------------------------------------\ndevel/sage/sage/rings/multi_power_series_ring.py\nSCORE devel/sage/sage/rings/multi_power_series_ring.py: 96% (30 of 31)\n\nMissing documentation:\n         * unpickle_multi_power_series_ring_v0(base_ring, num_gens, names, order, default_prec, sparse):\n```\n\nThese just need `#indirect doctest` added:\n\n```\nsage -coverage devel/sage/sage/rings/multi_power_series_ring_element.py \n----------------------------------------------------------------------\ndevel/sage/sage/rings/multi_power_series_ring_element.py\nSCORE devel/sage/sage/rings/multi_power_series_ring_element.py: 100% (52 of 52)\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _subs_formal(self,*x,**kwds):\n         * _add_(left, right):\n         * _sub_(left, right):\n         * _mul_(left, right):\n         * _lmul_(self, c):\n         * _div_(self, denom_r):\n\n----------------------------------------------------------------------\n```\n\nBut the docs build without warnings etc.\n\n> 3. The underlying concept of the implementation (a wrapper for certain univariate \n> power series over multivariate polynomials) is sound (positive review; Mario \n> Pernici)\n\n\n> 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)\n\n\nShouldn't `def _element_constructor_(self,f)` use the default precision of the ring?\n\n> 5. multi_power_series_ring_element.py: the code accurately does what it claims to \n> do (needs review)\n\n\n> 6. Integration with the rest of sage: construction and use of PowerSeriesRings \n> works correctly, and parallels behavior of polynomial rings (needs review)\n\n\n**needs work**\n\nThe `default_prec` parameter does not seem to work as expected (or is my expectation wrong?)\n\n```python\nsage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n```\n\n> 7. Performance: the multivariate power series arithmetic is fast enough to be \n> included in Sage (positive review; Mario Pernici)\n\n\n> 8. Coding: the code is free from obvious inefficiencies in error handling, memory \n> management, etc. (needs review)\n\n\nIf the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.\n\nI have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.\n\n> 9. The items on this list constitute a complete review (needs review)\n\n\nFine by me.",
     "created_at": "2011-04-30T19:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4803,13 +4769,14 @@ archive/issue_comments_012558.json:
 
 > 1. Sage passes all doctests with this patch (positive review; buildbot)
 
+
 I think the buildbot gets confused by the "Apply" instruction in the ticket's description. Hence, it didn't run the big patch yet.
 
 > 2. All code is documented and doctested thoroughly; documentation builds without 
 > error or warning (needs review)
 
-**needs work**
 
+**needs work**
 
 ```
 sage -coverage devel/sage/sage/rings/multi_power_series_ring.py 
@@ -4821,9 +4788,7 @@ Missing documentation:
          * unpickle_multi_power_series_ring_v0(base_ring, num_gens, names, order, default_prec, sparse):
 ```
 
-
 These just need `#indirect doctest` added:
-
 
 ```
 sage -coverage devel/sage/sage/rings/multi_power_series_ring_element.py 
@@ -4842,27 +4807,29 @@ Possibly wrong (function name doesn't occur in doctests):
 ----------------------------------------------------------------------
 ```
 
-
 But the docs build without warnings etc.
 
 > 3. The underlying concept of the implementation (a wrapper for certain univariate 
 > power series over multivariate polynomials) is sound (positive review; Mario 
 > Pernici)
 
+
 > 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)
+
 
 Shouldn't `def _element_constructor_(self,f)` use the default precision of the ring?
 
 > 5. multi_power_series_ring_element.py: the code accurately does what it claims to 
 > do (needs review)
 
+
 > 6. Integration with the rest of sage: construction and use of PowerSeriesRings 
 > works correctly, and parallels behavior of polynomial rings (needs review)
+
 
 **needs work**
 
 The `default_prec` parameter does not seem to work as expected (or is my expectation wrong?)
-
 
 ```python
 sage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)
@@ -4870,18 +4837,20 @@ sage: x.prec()
 +Infinity
 ```
 
-
 > 7. Performance: the multivariate power series arithmetic is fast enough to be 
 > included in Sage (positive review; Mario Pernici)
 
+
 > 8. Coding: the code is free from obvious inefficiencies in error handling, memory 
 > management, etc. (needs review)
+
 
 If the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.
 
 I have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.
 
 > 9. The items on this list constitute a complete review (needs review)
+
 
 Fine by me.
 
@@ -4930,7 +4899,7 @@ Patchbot: Apply trac_1956_combined_2.patch
 archive/issue_comments_012561.json:
 ```json
 {
-    "body": "Replying to [comment:105 malb]:\n\nThanks for taking a look; sorry for the coverage negligence.  I've added the `#indirect notes`, and a docstring for `unpickle`.  Now `sage -coverage` returns 100% for both `multi_power_series` files.  As a bonus, I've added a docstring for the unpickle function of univariate power series too.\n\nI believe your other comments do not require changes -- I've elaborated below.  This means we are once again ready for review :)\n\n> \n> > 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)\n> \n> Shouldn't ```def _element_constructor_(self,f)``` use the default precision of the ring?\n> \n\nNo, I believe not.  Default precision is used only when absolutely necessary to convert an infinite precision element to a finite precision one (e.g. for inversion or reversion).  But, for example, coercion of a polynomial should result in an infinite precision element, not a finite precision one.  This is consistent with the behavior of univariate power series rings:\n\n\n```\nsage: P = QQ[x]; P\nUnivariate Polynomial Ring in x over Rational Field\n\nsage: S = P.completion(P.gen()); S\nPower Series Ring in x over Rational Field\n\nsage: S(P.random_element()).prec()\n+Infinity\n```\n\n\n```\nsage: P = QQ['x,y,z']; P\nMultivariate Polynomial Ring in x, y, z over Rational Field\n\nsage: S = P.completion(P.gens()); S\nMultivariate Power Series Ring in x, y, z over Rational Field\n\nsage: S(P.random_element()).prec()\n+Infinity\n```\n\n\n\n> > 6. Integration with the rest of sage: construction and use of `PowerSeriesRing` \n> > works correctly, and parallels behavior of polynomial rings (needs review)\n> \n> **needs work**\n> \n> The `default_prec` parameter does not seem to work as expected (or is my expectation wrong?)\n> \n> \n\n```python\nsage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n```\n\n\n\nI believe that your expectation is wrong, as described above.  Note the parallel behavior for univariate power series rings:\n\n```\nsage: P.<x> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n```\n\n\n\n> > 8. Coding: the code is free from obvious inefficiencies in error handling, memory \n> > management, etc. (needs review)\n> \n> If the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.\n\nso...I'm reading 'positive review', right? ;)\n(free from *obvious* inefficiencies, etc.)\n\n\n> \n> I have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.\n\nExcessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\n\n```\nMPowerSeries.__init__\nMPowerSeries.__reduce__\nMPowerSeries.__call__\nMPowerSeries.__getitem__\nMPowerSeries.__invert__\nMPowerSeries.__cmp__\nMPowerSeries.__mod__\nMPowerSeries.__lshift__\nMPowerSeries.__rshift__\n\nMPowerSeriesRing_generic.__init__\nMPowerSeriesRing_generic.__reduce__\nMPowerSeriesRing_generic.__cmp__\n```\n",
+    "body": "Replying to [comment:105 malb]:\n\nThanks for taking a look; sorry for the coverage negligence.  I've added the `#indirect notes`, and a docstring for `unpickle`.  Now `sage -coverage` returns 100% for both `multi_power_series` files.  As a bonus, I've added a docstring for the unpickle function of univariate power series too.\n\nI believe your other comments do not require changes -- I've elaborated below.  This means we are once again ready for review :)\n\n> \n> > 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)\n  \n> \n> Shouldn't ```def _element_constructor_(self,f)``` use the default precision of the ring?\n> \n\n\nNo, I believe not.  Default precision is used only when absolutely necessary to convert an infinite precision element to a finite precision one (e.g. for inversion or reversion).  But, for example, coercion of a polynomial should result in an infinite precision element, not a finite precision one.  This is consistent with the behavior of univariate power series rings:\n\n```\nsage: P = QQ[x]; P\nUnivariate Polynomial Ring in x over Rational Field\n\nsage: S = P.completion(P.gen()); S\nPower Series Ring in x over Rational Field\n\nsage: S(P.random_element()).prec()\n+Infinity\n```\n\n```\nsage: P = QQ['x,y,z']; P\nMultivariate Polynomial Ring in x, y, z over Rational Field\n\nsage: S = P.completion(P.gens()); S\nMultivariate Power Series Ring in x, y, z over Rational Field\n\nsage: S(P.random_element()).prec()\n+Infinity\n```\n\n\n> > 6. Integration with the rest of sage: construction and use of `PowerSeriesRing` \n> > works correctly, and parallels behavior of polynomial rings (needs review)\n\n> \n> **needs work**\n> \n> The `default_prec` parameter does not seem to work as expected (or is my expectation wrong?)\n> \n> \n\n{{{#!python\nsage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n}}}\n\n\nI believe that your expectation is wrong, as described above.  Note the parallel behavior for univariate power series rings:\n\n```\nsage: P.<x> = PowerSeriesRing(GF(127),default_prec=20)\nsage: x.prec()\n+Infinity\n```\n\n\n> > 8. Coding: the code is free from obvious inefficiencies in error handling, memory \n> > management, etc. (needs review)\n\n> \n> If the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.\n\n\nso...I'm reading 'positive review', right? ;)\n(free from *obvious* inefficiencies, etc.)\n\n\n> \n> I have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.\n\n\nExcessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\n```\nMPowerSeries.__init__\nMPowerSeries.__reduce__\nMPowerSeries.__call__\nMPowerSeries.__getitem__\nMPowerSeries.__invert__\nMPowerSeries.__cmp__\nMPowerSeries.__mod__\nMPowerSeries.__lshift__\nMPowerSeries.__rshift__\n\nMPowerSeriesRing_generic.__init__\nMPowerSeriesRing_generic.__reduce__\nMPowerSeriesRing_generic.__cmp__\n```",
     "created_at": "2011-05-02T00:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -4947,12 +4916,13 @@ I believe your other comments do not require changes -- I've elaborated below.  
 
 > 
 > > 4. multi_power_series_ring.py: the code accurately does what it claims to do (needs_review)
+  
 > 
 > Shouldn't ```def _element_constructor_(self,f)``` use the default precision of the ring?
 > 
 
-No, I believe not.  Default precision is used only when absolutely necessary to convert an infinite precision element to a finite precision one (e.g. for inversion or reversion).  But, for example, coercion of a polynomial should result in an infinite precision element, not a finite precision one.  This is consistent with the behavior of univariate power series rings:
 
+No, I believe not.  Default precision is used only when absolutely necessary to convert an infinite precision element to a finite precision one (e.g. for inversion or reversion).  But, for example, coercion of a polynomial should result in an infinite precision element, not a finite precision one.  This is consistent with the behavior of univariate power series rings:
 
 ```
 sage: P = QQ[x]; P
@@ -4964,7 +4934,6 @@ Power Series Ring in x over Rational Field
 sage: S(P.random_element()).prec()
 +Infinity
 ```
-
 
 ```
 sage: P = QQ['x,y,z']; P
@@ -4978,9 +4947,9 @@ sage: S(P.random_element()).prec()
 ```
 
 
-
 > > 6. Integration with the rest of sage: construction and use of `PowerSeriesRing` 
 > > works correctly, and parallels behavior of polynomial rings (needs review)
+
 > 
 > **needs work**
 > 
@@ -4988,12 +4957,11 @@ sage: S(P.random_element()).prec()
 > 
 > 
 
-```python
+{{{#!python
 sage: P.<x,y> = PowerSeriesRing(GF(127),default_prec=20)
 sage: x.prec()
 +Infinity
-```
-
+}}}
 
 
 I believe that your expectation is wrong, as described above.  Note the parallel behavior for univariate power series rings:
@@ -5005,11 +4973,12 @@ sage: x.prec()
 ```
 
 
-
 > > 8. Coding: the code is free from obvious inefficiencies in error handling, memory 
 > > management, etc. (needs review)
+
 > 
 > If the performance is good (7), then I think we can just assume it's okay. We can always come back and fix stuff later which is too slow.
+
 
 so...I'm reading 'positive review', right? ;)
 (free from *obvious* inefficiencies, etc.)
@@ -5018,8 +4987,8 @@ so...I'm reading 'positive review', right? ;)
 > 
 > I have to say that I don't like the excessive use of double underscore attributes. It makes it harder to inherit from it or reach into the internals (just as you have to write `_PowerSeriesRing_generic__poly_ring`) I'd just use a single underscore. I'll leave it up to you (i.e., not make my review dependent on it) whether you insist on keeping them.
 
-Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:
 
+Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:
 
 ```
 MPowerSeries.__init__
@@ -5036,7 +5005,6 @@ MPowerSeriesRing_generic.__init__
 MPowerSeriesRing_generic.__reduce__
 MPowerSeriesRing_generic.__cmp__
 ```
-
 
 
 
@@ -5063,7 +5031,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012563.json:
 ```json
 {
-    "body": "Replying to [comment:108 niles]:\n>  Here's a complete list of the double underscore attributes...\n\nTo clarify:  that's a complete list of such attributes defined in the code I've written.  You will see many more (50 or 60) if you use tab-completion to see what double underscore methods a multivariate power series or multivariate power series ring has.  I have not added any new ones (from the univariate case), simply redefined some.",
+    "body": "Replying to [comment:108 niles]:\n>  Here's a complete list of the double underscore attributes...\n\n\nTo clarify:  that's a complete list of such attributes defined in the code I've written.  You will see many more (50 or 60) if you use tab-completion to see what double underscore methods a multivariate power series or multivariate power series ring has.  I have not added any new ones (from the univariate case), simply redefined some.",
     "created_at": "2011-05-02T00:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5074,6 +5042,7 @@ archive/issue_comments_012563.json:
 
 Replying to [comment:108 niles]:
 >  Here's a complete list of the double underscore attributes...
+
 
 To clarify:  that's a complete list of such attributes defined in the code I've written.  You will see many more (50 or 60) if you use tab-completion to see what double underscore methods a multivariate power series or multivariate power series ring has.  I have not added any new ones (from the univariate case), simply redefined some.
 
@@ -5102,7 +5071,7 @@ diff between `trac_1956_combined.patch` and `trac_1956_combined_2.patch`
 archive/issue_comments_012565.json:
 ```json
 {
-    "body": "Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by @malb created at 2011-05-02 09:48:19\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n----\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n----\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
+    "body": "Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by @malb created at 2011-05-02 09:48:19\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n---\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n---\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
     "created_at": "2011-05-02T09:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5152,12 +5121,13 @@ waiting for patchbot :)
 **positive review**
 
 
-----
+---
 
 Thanks for explaining the default precision business to me! As I said, I rarely touch power series.
 
-----
+---
 > Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:
+
 
 Sorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.
 
@@ -5168,7 +5138,7 @@ Sorry, I didn't mean stuff like `__init__` which of course has to be like it is.
 archive/issue_comments_012566.json:
 ```json
 {
-    "body": "Replying to [comment:110 malb]:\n> This seems to be the current status:\n>\n> `...`\n\nGreat!  Thanks :)\n\n----\n\n> \n> Thanks for explaining the default precision business to me! As I said, I rarely touch power series.\n> \n\nGlad my explanation made sense :)\n\n\n----\n> > Excessive or not, each of the double underscore methods is necessary ...\n> Sorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.\n> \n\nAh, I agree.  This came up once before (perhaps with you, or with Simon), and indeed I've eliminated the unnecessary double underscore attributes.  Those listed above are the only ones remaining.",
+    "body": "Replying to [comment:110 malb]:\n> This seems to be the current status:\n\n>\n> `...`\n\n\nGreat!  Thanks :)\n\n---\n\n> \n> Thanks for explaining the default precision business to me! As I said, I rarely touch power series.\n> \n\n\nGlad my explanation made sense :)\n\n\n---\n> > Excessive or not, each of the double underscore methods is necessary ...\n\n> Sorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.\n> \n\n\nAh, I agree.  This came up once before (perhaps with you, or with Simon), and indeed I've eliminated the unnecessary double underscore attributes.  Those listed above are the only ones remaining.",
     "created_at": "2011-05-02T11:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5179,24 +5149,29 @@ archive/issue_comments_012566.json:
 
 Replying to [comment:110 malb]:
 > This seems to be the current status:
+
 >
 > `...`
 
+
 Great!  Thanks :)
 
-----
+---
 
 > 
 > Thanks for explaining the default precision business to me! As I said, I rarely touch power series.
 > 
 
+
 Glad my explanation made sense :)
 
 
-----
+---
 > > Excessive or not, each of the double underscore methods is necessary ...
+
 > Sorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.
 > 
+
 
 Ah, I agree.  This came up once before (perhaps with you, or with Simon), and indeed I've eliminated the unnecessary double underscore attributes.  Those listed above are the only ones remaining.
 
@@ -5225,7 +5200,7 @@ looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_orde
 archive/issue_comments_012568.json:
 ```json
 {
-    "body": "Shouldn't this be a value error instead of a type error? Since it's a wrong value and not type?\n\n\n```python\n if len(x) != self.parent().ngens(): \n  raise TypeError(\"Number of arguments does not match number of variables in parent.\") \n```\n\n\nOther than that, I think the code in `multi_power_series_ring_element.py` looks fine.",
+    "body": "Shouldn't this be a value error instead of a type error? Since it's a wrong value and not type?\n\n```python\n if len(x) != self.parent().ngens(): \n  raise TypeError(\"Number of arguments does not match number of variables in parent.\") \n```\n\nOther than that, I think the code in `multi_power_series_ring_element.py` looks fine.",
     "created_at": "2011-05-02T19:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5236,12 +5211,10 @@ archive/issue_comments_012568.json:
 
 Shouldn't this be a value error instead of a type error? Since it's a wrong value and not type?
 
-
 ```python
  if len(x) != self.parent().ngens(): 
   raise TypeError("Number of arguments does not match number of variables in parent.") 
 ```
-
 
 Other than that, I think the code in `multi_power_series_ring_element.py` looks fine.
 
@@ -5252,7 +5225,7 @@ Other than that, I think the code in `multi_power_series_ring_element.py` looks 
 archive/issue_comments_012569.json:
 ```json
 {
-    "body": "Replying to [comment:112 malb]:\n> looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?\n\nAck!  No, but I was looking for double underscore attributes defined by ``def __*``, totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.",
+    "body": "Replying to [comment:112 malb]:\n> looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?\n\n\nAck!  No, but I was looking for double underscore attributes defined by ``def __*``, totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.",
     "created_at": "2011-05-02T20:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5263,6 +5236,7 @@ archive/issue_comments_012569.json:
 
 Replying to [comment:112 malb]:
 > looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?
+
 
 Ack!  No, but I was looking for double underscore attributes defined by ``def __*``, totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.
 
@@ -5291,7 +5265,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012571.json:
 ```json
 {
-    "body": "...*sigh*... I wish I could update my previous comment to fix the syntax:\n\nReplying to [comment:114 niles]:\n> Replying to [comment:112 malb]:\n> > looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?\n> \n\nI was looking for double underscore attributes defined by \"`def __*`\", totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.",
+    "body": "...*sigh*... I wish I could update my previous comment to fix the syntax:\n\nReplying to [comment:114 niles]:\n> Replying to [comment:112 malb]:\n> > looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?\n\n> \n\nI was looking for double underscore attributes defined by \"`def __*`\", totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.",
     "created_at": "2011-05-02T20:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5305,6 +5279,7 @@ archive/issue_comments_012571.json:
 Replying to [comment:114 niles]:
 > Replying to [comment:112 malb]:
 > > looking at [attachment:trac_1956_combined_2.patch] I see `__ngens`, `__term_order` and `__poly_ring`, did you forget to upload the patch where you replaced those by `_ngens`, `_term_order` and `_poly_ring`. Or are we talking about different things?
+
 > 
 
 I was looking for double underscore attributes defined by "`def __*`", totally forgetting about these others which are not methods.  I'll upload a new version tomorrow.
@@ -5450,7 +5425,7 @@ Patchbot:  apply trac_1956_combined_3.patch
 archive/issue_comments_012578.json:
 ```json
 {
-    "body": "Replying to [comment:117 niles]:\n> * Others, which I'd rather leave double-underscore for consistency with the rest and because I don't think the background ring should be treated casually:\n>   {{{\n> __bg_power_series_ring\n> __bg_indeterminate\n> __base_ring\n> }}}\n\nWhy is there a `__base_ring` at all? The base ring is usually taken care of by inheritance of `sage.structure.parent.Parent` or other base classes. So, it should certainly be possible to work without a new attribute -- it seems to be a duplicate.",
+    "body": "Replying to [comment:117 niles]:\n> * Others, which I'd rather leave double-underscore for consistency with the rest and because I don't think the background ring should be treated casually:\n>   {{{\n> __bg_power_series_ring\n> __bg_indeterminate\n> __base_ring\n> }}}\n\n\nWhy is there a `__base_ring` at all? The base ring is usually taken care of by inheritance of `sage.structure.parent.Parent` or other base classes. So, it should certainly be possible to work without a new attribute -- it seems to be a duplicate.",
     "created_at": "2011-05-03T05:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5466,6 +5441,7 @@ Replying to [comment:117 niles]:
 > __bg_indeterminate
 > __base_ring
 > }}}
+
 
 Why is there a `__base_ring` at all? The base ring is usually taken care of by inheritance of `sage.structure.parent.Parent` or other base classes. So, it should certainly be possible to work without a new attribute -- it seems to be a duplicate.
 
@@ -5500,7 +5476,7 @@ I agree that other rings do it wrong, too. But there's no need to repeat this wr
 archive/issue_comments_012580.json:
 ```json
 {
-    "body": "Replying to [comment:121 malb]:\n> `@`Niles: as you realised in your code (in `__init__` of the ring), having double underscore attributes makes it hard to inherit because double underscore names are prefixed by the class name.\n\nTo be precise: Double underscore names are only problematic if they *start* with two underscores but do not end with two underscores.",
+    "body": "Replying to [comment:121 malb]:\n> `@`Niles: as you realised in your code (in `__init__` of the ring), having double underscore attributes makes it hard to inherit because double underscore names are prefixed by the class name.\n\n\nTo be precise: Double underscore names are only problematic if they *start* with two underscores but do not end with two underscores.",
     "created_at": "2011-05-03T07:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5511,6 +5487,7 @@ archive/issue_comments_012580.json:
 
 Replying to [comment:121 malb]:
 > `@`Niles: as you realised in your code (in `__init__` of the ring), having double underscore attributes makes it hard to inherit because double underscore names are prefixed by the class name.
+
 
 To be precise: Double underscore names are only problematic if they *start* with two underscores but do not end with two underscores.
 
@@ -5667,7 +5644,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_012587.json:
 ```json
 {
-    "body": "\n```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring.py\", line 456:\n    sage: (c,R) = M.construction(); (c,R)\nExpected:\n    (CompletionFunctor,\n    Multivariate Polynomial Ring in f0, f1, f2, f3 over Rational Field)\nGot:\n    (Completion[('f0', 'f1', 'f2', 'f3')], Multivariate Polynomial Ring in f0, f1, f2, f3 over Rational Field)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring.py\", line 459:\n    sage: c\nExpected:\n    CompletionFunctor\nGot:\n    Completion[('f0', 'f1', 'f2', 'f3')]\n**********************************************************************\n```\n",
+    "body": "```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring.py\", line 456:\n    sage: (c,R) = M.construction(); (c,R)\nExpected:\n    (CompletionFunctor,\n    Multivariate Polynomial Ring in f0, f1, f2, f3 over Rational Field)\nGot:\n    (Completion[('f0', 'f1', 'f2', 'f3')], Multivariate Polynomial Ring in f0, f1, f2, f3 over Rational Field)\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring.py\", line 459:\n    sage: c\nExpected:\n    CompletionFunctor\nGot:\n    Completion[('f0', 'f1', 'f2', 'f3')]\n**********************************************************************\n```",
     "created_at": "2011-05-11T13:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5675,7 +5652,6 @@ archive/issue_comments_012587.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-
 
 ```
 sage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring.py
@@ -5696,7 +5672,6 @@ Got:
     Completion[('f0', 'f1', 'f2', 'f3')]
 **********************************************************************
 ```
-
 
 
 
@@ -5797,7 +5772,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_012593.json:
 ```json
 {
-    "body": "Please rebase properly to sage-4.7.rc2:\n\n```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring_element.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring_element.py\", line 1299:\n    sage: f.sqrt()\nExpected:\n    Traceback (most recent call last):\n    ...\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'sqrt'\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_39[4]>\", line 1, in <module>\n        f.sqrt()###line 1299:\n    sage: f.sqrt()\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/lib/python/site-packages/sage/rings/multi_power_series_ring_element.py\", line 1304, in sqrt\n        return self.parent(self._bg_value.sqrt())\n      File \"power_series_ring_element.pyx\", line 1205, in sage.rings.power_series_ring_element.PowerSeries.sqrt (sage/rings/power_series_ring_element.c:8919)\n        s = u[0].sqrt(extend=False)\n      File \"element.pyx\", line 2003, in sage.structure.element.CommutativeRingElement.sqrt (sage/structure/element.c:14899)\n      File \"element.pyx\", line 1906, in sage.structure.element.CommutativeRingElement.is_square (sage/structure/element.c:14740)\n    NotImplementedError: is_square() not implemented for elements of Multivariate Polynomial Ring in a, b over Integer Ring\n**********************************************************************\n```\n",
+    "body": "Please rebase properly to sage-4.7.rc2:\n\n```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring_element.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/devel/sage-main/sage/rings/multi_power_series_ring_element.py\", line 1299:\n    sage: f.sqrt()\nExpected:\n    Traceback (most recent call last):\n    ...\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'sqrt'\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_39[4]>\", line 1, in <module>\n        f.sqrt()###line 1299:\n    sage: f.sqrt()\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.1.alpha1/local/lib/python/site-packages/sage/rings/multi_power_series_ring_element.py\", line 1304, in sqrt\n        return self.parent(self._bg_value.sqrt())\n      File \"power_series_ring_element.pyx\", line 1205, in sage.rings.power_series_ring_element.PowerSeries.sqrt (sage/rings/power_series_ring_element.c:8919)\n        s = u[0].sqrt(extend=False)\n      File \"element.pyx\", line 2003, in sage.structure.element.CommutativeRingElement.sqrt (sage/structure/element.c:14899)\n      File \"element.pyx\", line 1906, in sage.structure.element.CommutativeRingElement.is_square (sage/structure/element.c:14740)\n    NotImplementedError: is_square() not implemented for elements of Multivariate Polynomial Ring in a, b over Integer Ring\n**********************************************************************\n```",
     "created_at": "2011-05-12T12:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5840,13 +5815,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_012594.json:
 ```json
 {
-    "body": "Replying to [comment:130 jdemeyer]:\n> Please rebase properly to sage-4.7.rc2:\n>\n\n```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring_element.py\n**********************************************************************\n```\n\n\nI've addressed this problem, but I see other issues with `sage/interfaces/maxima.py` that I don't understand since this patch does not touch maxima . . . are those spurious failures?",
+    "body": "Replying to [comment:130 jdemeyer]:\n> Please rebase properly to sage-4.7.rc2:\n\n>\n\n```\nsage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring_element.py\n**********************************************************************\n```\n\nI've addressed this problem, but I see other issues with `sage/interfaces/maxima.py` that I don't understand since this patch does not touch maxima . . . are those spurious failures?",
     "created_at": "2011-05-12T14:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5857,13 +5831,13 @@ archive/issue_comments_012594.json:
 
 Replying to [comment:130 jdemeyer]:
 > Please rebase properly to sage-4.7.rc2:
+
 >
 
 ```
 sage -t  -force_lib devel/sage/sage/rings/multi_power_series_ring_element.py
 **********************************************************************
 ```
-
 
 I've addressed this problem, but I see other issues with `sage/interfaces/maxima.py` that I don't understand since this patch does not touch maxima . . . are those spurious failures?
 
@@ -5949,7 +5923,7 @@ Can we get this switched back to positive review?  Sage 4.7.rc3 fixes the proble
 archive/issue_comments_012599.json:
 ```json
 {
-    "body": "Replying to [comment:133 niles]:\n> Can we get this switched back to positive review?\n\n*bump*\n\nAny reviewers?",
+    "body": "Replying to [comment:133 niles]:\n> Can we get this switched back to positive review?\n\n\n*bump*\n\nAny reviewers?",
     "created_at": "2011-05-24T12:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -5960,6 +5934,7 @@ archive/issue_comments_012599.json:
 
 Replying to [comment:133 niles]:
 > Can we get this switched back to positive review?
+
 
 *bump*
 

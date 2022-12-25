@@ -109,7 +109,7 @@ Changing component from algebra to linear algebra.
 archive/issue_comments_051659.json:
 ```json
 {
-    "body": "We've got two charpoly() algorithms at the moment, but back when this bug was reported, I think the hessenberg algorithm was the default. If we try charpoly() on this matrix,\n\n\n```\nsage: A = load('/home/mjo/DetBugMatrix.sobj')\nsage: A.charpoly(algorithm='hessenberg')\n...\nValueError: element valuation cannot be negative.\n```\n\n\nIf we look at the code for charpoly(), we see that the empty hash {} is cached before the attempt to compute charpoly(). In matrix2.pyx,\n\n\n```\nD = self.fetch('charpoly')\n\nif not D is None:\n    if D.has_key(var):\n        return D[var]\nelse:\n    D = {}\n    self.cache('charpoly',D)\n\n<compute the charpoly>\n\n# Cache the result\nD[var] = f\nreturn f  \n```\n\n\nSo if computation of charpoly() fails, we'll have {} cached, and det() will blow up. A full example:\n\n\n```\nsage: A = load('/home/mjo/DetBugMatrix.sobj')\nsage: A.charpoly(algorithm='hessenberg')\n...\nValueError: element valuation cannot be negative.\nsage: A.det()\n...\nIndexError: list index out of range\nsage: A.charpoly()\n(1 + O(5^3))*x^10 + (2 + 4*5 + 2*5^2 + O(5^3))*x^9 + (4 + 4*5 + 4*5^2 + O(5^3))*x^8 + (4 + 5^2 + O(5^3))*x^7 + (4*5^2 + O(5^3))*x^6 + (3 + 5 + 5^2 + O(5^3))*x^5 + (1 + 3*5 + 5^2 + O(5^3))*x^4 + (1 + 4*5 + 4*5^2 + O(5^3))*x^3 + (1 + 4*5 + 4*5^2 + O(5^3))*x^2 + (2 + 4*5 + 4*5^2 + O(5^3))*x + (2*5 + 4*5^2 + O(5^3))\nsage: A.det()\n2*5 + 4*5^2 + O(5^3)\n```\n\n\nSo the solution, I think, is to avoid caching the empty hash until we know we've got a charpoly.",
+    "body": "We've got two charpoly() algorithms at the moment, but back when this bug was reported, I think the hessenberg algorithm was the default. If we try charpoly() on this matrix,\n\n```\nsage: A = load('/home/mjo/DetBugMatrix.sobj')\nsage: A.charpoly(algorithm='hessenberg')\n...\nValueError: element valuation cannot be negative.\n```\n\nIf we look at the code for charpoly(), we see that the empty hash {} is cached before the attempt to compute charpoly(). In matrix2.pyx,\n\n```\nD = self.fetch('charpoly')\n\nif not D is None:\n    if D.has_key(var):\n        return D[var]\nelse:\n    D = {}\n    self.cache('charpoly',D)\n\n<compute the charpoly>\n\n# Cache the result\nD[var] = f\nreturn f  \n```\n\nSo if computation of charpoly() fails, we'll have {} cached, and det() will blow up. A full example:\n\n```\nsage: A = load('/home/mjo/DetBugMatrix.sobj')\nsage: A.charpoly(algorithm='hessenberg')\n...\nValueError: element valuation cannot be negative.\nsage: A.det()\n...\nIndexError: list index out of range\nsage: A.charpoly()\n(1 + O(5^3))*x^10 + (2 + 4*5 + 2*5^2 + O(5^3))*x^9 + (4 + 4*5 + 4*5^2 + O(5^3))*x^8 + (4 + 5^2 + O(5^3))*x^7 + (4*5^2 + O(5^3))*x^6 + (3 + 5 + 5^2 + O(5^3))*x^5 + (1 + 3*5 + 5^2 + O(5^3))*x^4 + (1 + 4*5 + 4*5^2 + O(5^3))*x^3 + (1 + 4*5 + 4*5^2 + O(5^3))*x^2 + (2 + 4*5 + 4*5^2 + O(5^3))*x + (2*5 + 4*5^2 + O(5^3))\nsage: A.det()\n2*5 + 4*5^2 + O(5^3)\n```\n\nSo the solution, I think, is to avoid caching the empty hash until we know we've got a charpoly.",
     "created_at": "2012-01-04T00:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ archive/issue_comments_051659.json:
 
 We've got two charpoly() algorithms at the moment, but back when this bug was reported, I think the hessenberg algorithm was the default. If we try charpoly() on this matrix,
 
-
 ```
 sage: A = load('/home/mjo/DetBugMatrix.sobj')
 sage: A.charpoly(algorithm='hessenberg')
@@ -128,9 +127,7 @@ sage: A.charpoly(algorithm='hessenberg')
 ValueError: element valuation cannot be negative.
 ```
 
-
 If we look at the code for charpoly(), we see that the empty hash {} is cached before the attempt to compute charpoly(). In matrix2.pyx,
-
 
 ```
 D = self.fetch('charpoly')
@@ -149,9 +146,7 @@ D[var] = f
 return f  
 ```
 
-
 So if computation of charpoly() fails, we'll have {} cached, and det() will blow up. A full example:
-
 
 ```
 sage: A = load('/home/mjo/DetBugMatrix.sobj')
@@ -166,7 +161,6 @@ sage: A.charpoly()
 sage: A.det()
 2*5 + 4*5^2 + O(5^3)
 ```
-
 
 So the solution, I think, is to avoid caching the empty hash until we know we've got a charpoly.
 
@@ -231,7 +225,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_051663.json:
 ```json
 {
-    "body": "I tried the attached patch on top of 4.7.2 but the problem with the initial matrix still exists:\n\n```\n[zimmerma@coing tmp]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6442\nsage: A = load (\"DetBugMatrix.sobj\")\nsage: A.det()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 4.7.2, Release Date: 2011-10-29                       |\n| Type notebook() for the GUI, and license() for information.        |\n/tmp/<ipython console> in <module>()\n\n/usr/local/sage-4.7.2/sage/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.det (sage/matrix/matrix2.c:8222)()\n\n/usr/local/sage-4.7.2/sage/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.determinant (sage/matrix/matrix2.c:6889)()\n\nIndexError: list index out of range\n```\n\nPaul",
+    "body": "I tried the attached patch on top of 4.7.2 but the problem with the initial matrix still exists:\n\n```\n[zimmerma@coing tmp]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6442\nsage: A = load (\"DetBugMatrix.sobj\")\nsage: A.det()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 4.7.2, Release Date: 2011-10-29                       |\n| Type notebook() for the GUI, and license() for information.        |\n/tmp/<ipython console> in <module>()\n\n/usr/local/sage-4.7.2/sage/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.det (sage/matrix/matrix2.c:8222)()\n\n/usr/local/sage-4.7.2/sage/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.determinant (sage/matrix/matrix2.c:6889)()\n\nIndexError: list index out of range\n```\nPaul",
     "created_at": "2012-01-10T10:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -261,7 +255,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-
 Paul
 
 
@@ -311,7 +304,7 @@ The code from the doctest should work only after the patch, because prior to the
 archive/issue_comments_051666.json:
 ```json
 {
-    "body": "the doctest example can be simplified to:\n\n```\nA = matrix(z, [ [3 + O(5^1), 4 + O(5^1), 4 + O(5^1)],\n[2*5^2 + O(5^3), 2 + O(5^1), 1 + O(5^1)],\n[5 + O(5^2), 1 + O(5^1), 1 + O(5^1)]])\n```\n\nPaul",
+    "body": "the doctest example can be simplified to:\n\n```\nA = matrix(z, [ [3 + O(5^1), 4 + O(5^1), 4 + O(5^1)],\n[2*5^2 + O(5^3), 2 + O(5^1), 1 + O(5^1)],\n[5 + O(5^2), 1 + O(5^1), 1 + O(5^1)]])\n```\nPaul",
     "created_at": "2012-01-10T14:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -327,7 +320,6 @@ A = matrix(z, [ [3 + O(5^1), 4 + O(5^1), 4 + O(5^1)],
 [2*5^2 + O(5^3), 2 + O(5^1), 1 + O(5^1)],
 [5 + O(5^2), 1 + O(5^1), 1 + O(5^1)]])
 ```
-
 Paul
 
 
@@ -337,7 +329,7 @@ Paul
 archive/issue_comments_051667.json:
 ```json
 {
-    "body": "> The bug wasn't in the saving/loading of matrices, only in the cache code [...]\n\nok, I put it back to \"needs review\". However the summary is misleading.\n\nPaul",
+    "body": "> The bug wasn't in the saving/loading of matrices, only in the cache code [...]\n\n\nok, I put it back to \"needs review\". However the summary is misleading.\n\nPaul",
     "created_at": "2012-01-10T14:42:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
@@ -347,6 +339,7 @@ archive/issue_comments_051667.json:
 ```
 
 > The bug wasn't in the saving/loading of matrices, only in the cache code [...]
+
 
 ok, I put it back to "needs review". However the summary is misleading.
 

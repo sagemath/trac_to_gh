@@ -150,7 +150,7 @@ Resolution: fixed
 archive/issue_comments_035226.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n> The patch **trac_4682.patch** is an updated contributors list as found on the development map. I've re-organized the whole XML file for consistency, and added new details since they've arrived in the last few days.\n\nthx and very cool, worked out of the box ;)\n\npatch added, site online, for future patches please use the current version to avoid confusions: http://www.sagemath.org/res/contributors.xml\n\nh",
+    "body": "Replying to [comment:2 mvngu]:\n> The patch **trac_4682.patch** is an updated contributors list as found on the development map. I've re-organized the whole XML file for consistency, and added new details since they've arrived in the last few days.\n\n\nthx and very cool, worked out of the box ;)\n\npatch added, site online, for future patches please use the current version to avoid confusions: http://www.sagemath.org/res/contributors.xml\n\nh",
     "created_at": "2008-12-04T21:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
@@ -161,6 +161,7 @@ archive/issue_comments_035226.json:
 
 Replying to [comment:2 mvngu]:
 > The patch **trac_4682.patch** is an updated contributors list as found on the development map. I've re-organized the whole XML file for consistency, and added new details since they've arrived in the last few days.
+
 
 thx and very cool, worked out of the box ;)
 
@@ -243,7 +244,7 @@ Michael
 archive/issue_comments_035230.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> One more thing: Minh, can you give us a listing which people were added in the patch? Since it is a reorg it is hard to follow. \n\n\nThe following people were added to the devmap by **trac_4682.patch**:\n\n1. Arnaud Bergeron\n2. Nicolas Borie\n3. Hamish Ivey-Law\n4. Kwankyu Lee\n5. David Loeffler\n6. Jason Merrill\n7. Guillaume Moroz\n8. Brett Nakashima\n9. John Perry\n10. Nils-Peter Skoruppa\n11. Philippe Theveny\n12. Igor Tolkov\n\nThe above list is sorted in alphabetical order by last name.\n\n\n\n> For future reference please post two patches in the future: One to move things around, one with the actual changes.\n\n\nSure. I'll keep this in mind.",
+    "body": "Replying to [comment:6 mabshoff]:\n> One more thing: Minh, can you give us a listing which people were added in the patch? Since it is a reorg it is hard to follow. \n\n\n\nThe following people were added to the devmap by **trac_4682.patch**:\n\n1. Arnaud Bergeron\n2. Nicolas Borie\n3. Hamish Ivey-Law\n4. Kwankyu Lee\n5. David Loeffler\n6. Jason Merrill\n7. Guillaume Moroz\n8. Brett Nakashima\n9. John Perry\n10. Nils-Peter Skoruppa\n11. Philippe Theveny\n12. Igor Tolkov\n\nThe above list is sorted in alphabetical order by last name.\n\n\n\n> For future reference please post two patches in the future: One to move things around, one with the actual changes.\n\n\n\nSure. I'll keep this in mind.",
     "created_at": "2008-12-05T00:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
@@ -254,6 +255,7 @@ archive/issue_comments_035230.json:
 
 Replying to [comment:6 mabshoff]:
 > One more thing: Minh, can you give us a listing which people were added in the patch? Since it is a reorg it is hard to follow. 
+
 
 
 The following people were added to the devmap by **trac_4682.patch**:
@@ -276,6 +278,7 @@ The above list is sorted in alphabetical order by last name.
 
 
 > For future reference please post two patches in the future: One to move things around, one with the actual changes.
+
 
 
 Sure. I'll keep this in mind.

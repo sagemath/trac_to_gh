@@ -3,7 +3,7 @@
 archive/issues_000841.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe hash() function applied to a single algebraic real may give different results at different times:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1289340516\nsage: foo == 2\nTrue\nsage: hash(foo)\n2105051955\n```\n\n\n(I plan to fix this problem very soon.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/841\n\n",
+    "body": "Assignee: cwitty\n\nThe hash() function applied to a single algebraic real may give different results at different times:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1289340516\nsage: foo == 2\nTrue\nsage: hash(foo)\n2105051955\n```\n\n(I plan to fix this problem very soon.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/841\n\n",
     "created_at": "2007-10-09T00:42:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,7 +31,6 @@ sage: hash(foo)
 2105051955
 ```
 
-
 (I plan to fix this problem very soon.)
 
 
@@ -46,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/841
 archive/issue_comments_005190.json:
 ```json
 {
-    "body": "Attachment [6719.patch](tarball://root/attachments/some-uuid/ticket841/6719.patch) by cwitty created at 2007-10-09 01:03:52\n\nOK, here's a patch that makes hash() on algebraic reals stable.  New results after the patch:\n\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1968313278\nsage: foo == 2\nTrue\nsage: hash(foo)\n-1968313278\n```\n",
+    "body": "Attachment [6719.patch](tarball://root/attachments/some-uuid/ticket841/6719.patch) by cwitty created at 2007-10-09 01:03:52\n\nOK, here's a patch that makes hash() on algebraic reals stable.  New results after the patch:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1968313278\nsage: foo == 2\nTrue\nsage: hash(foo)\n-1968313278\n```",
     "created_at": "2007-10-09T01:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/841",
     "type": "issue_comment",
@@ -59,7 +58,6 @@ Attachment [6719.patch](tarball://root/attachments/some-uuid/ticket841/6719.patc
 
 OK, here's a patch that makes hash() on algebraic reals stable.  New results after the patch:
 
-
 ```
 sage: foo = sqrt(AA(4))
 sage: hash(foo)
@@ -69,7 +67,6 @@ True
 sage: hash(foo)
 -1968313278
 ```
-
 
 
 

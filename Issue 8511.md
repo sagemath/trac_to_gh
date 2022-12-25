@@ -180,7 +180,7 @@ Changing priority from minor to critical.
 archive/issue_comments_076732.json:
 ```json
 {
-    "body": "The patch [trac_8511-unexpected-indentation.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8511/trac_8511-unexpected-indentation.patch) solves the three warnings reported at #8492. However, note that the formatting in the following snippet won't properly render in the HTML version as one would expect TESTS and EXAMPLES block to render:\n\n```diff\ndiff -r 29c870e0a9e4 -r 8851bfe046d1 sage/symbolic/expression.pyx\n--- a/sage/symbolic/expression.pyx\tMon Mar 08 20:51:26 2010 -0800\n+++ b/sage/symbolic/expression.pyx\tFri Mar 12 15:12:47 2010 -0800\n@@ -3151,7 +3151,8 @@\n             sage: t.subs({a:b, b:c})\n             (x + y)^3 + b^2 + c^2\n \n-        TESTS:\n+        TESTS::\n+\n             # no arguments return the same expression\n             sage: t.subs()\n             (x + y)^3 + a^2 + b^2\n```\n\nThis is due to the comment\n\n```\n# no arguments return the same expression\n```\n\nTo get this TESTS block to render with colours as one would expect of a TESTS block, prefix that comment with \"sage: \". The reviewer patch [trac_8511-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8511/trac_8511-reviewer.patch) takes care of that. So only my patch needs review by anyone but me. If it gets a positive review, the whole ticket is good to go into Sage 4.3.4.rc0.",
+    "body": "The patch [trac_8511-unexpected-indentation.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8511/trac_8511-unexpected-indentation.patch) solves the three warnings reported at #8492. However, note that the formatting in the following snippet won't properly render in the HTML version as one would expect TESTS and EXAMPLES block to render:\n\n```diff\ndiff -r 29c870e0a9e4 -r 8851bfe046d1 sage/symbolic/expression.pyx\n--- a/sage/symbolic/expression.pyx\tMon Mar 08 20:51:26 2010 -0800\n+++ b/sage/symbolic/expression.pyx\tFri Mar 12 15:12:47 2010 -0800\n@@ -3151,7 +3151,8 @@\n             sage: t.subs({a:b, b:c})\n             (x + y)^3 + b^2 + c^2\n \n-        TESTS:\n+        TESTS::\n+\n             # no arguments return the same expression\n             sage: t.subs()\n             (x + y)^3 + a^2 + b^2\n```\nThis is due to the comment\n\n```\n# no arguments return the same expression\n```\nTo get this TESTS block to render with colours as one would expect of a TESTS block, prefix that comment with \"sage: \". The reviewer patch [trac_8511-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8511/trac_8511-reviewer.patch) takes care of that. So only my patch needs review by anyone but me. If it gets a positive review, the whole ticket is good to go into Sage 4.3.4.rc0.",
     "created_at": "2010-03-13T00:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
@@ -206,13 +206,11 @@ diff -r 29c870e0a9e4 -r 8851bfe046d1 sage/symbolic/expression.pyx
              sage: t.subs()
              (x + y)^3 + a^2 + b^2
 ```
-
 This is due to the comment
 
 ```
 # no arguments return the same expression
 ```
-
 To get this TESTS block to render with colours as one would expect of a TESTS block, prefix that comment with "sage: ". The reviewer patch [trac_8511-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8511/trac_8511-reviewer.patch) takes care of that. So only my patch needs review by anyone but me. If it gets a positive review, the whole ticket is good to go into Sage 4.3.4.rc0.
 
 

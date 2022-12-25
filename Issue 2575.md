@@ -3,7 +3,7 @@
 archive/issues_002575.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\ni'm using ccache to speed up compilation. this works very well for other packages, but the configure script of GAP seems to be have an error.\n\nenvironment variables:\n\n```\nCC=ccache gcc\nCXX=ccache g++\n```\n\n\nGAP message:\n\n```\nHost system\nuname -a:\nLinux edoras 2.6.15-51-686 #1 SMP PREEMPT Tue Feb 12 16:59:15 UTC 2008 i686 GNU/Linux\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nEs werden eingebaute Spezifikationen verwendet.\nZiel: i486-linux-gnu\nKonfiguriert mit: ../src/configure -v --enable-languages=c,c++,java,f95,objc,ada,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.0 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-java-awt=gtk-default --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-4.0-1.4.2.0/jre --enable-mpfr --disable-werror --with-tune=pentium4 --enable-checking=release i486-linux-gnu\nThread-Modell: posix\ngcc-Version 4.0.3 (Ubuntu 4.0.3-1ubuntu5)\n****************************************************\nchecking build system type... i686-pc-linux-gnu\nchecking host system type... i686-pc-linux-gnu\nchecking target system type... i686-pc-linux-gnu\nchecking for gcc... ccache gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether ccache gcc accepts -g... yes\nchecking for ccache gcc option to accept ANSI C... none needed\nchecking whether make sets $(MAKE)... yes\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating sysinfo.gap\nconfig.status: creating bin/gap.sh\nBuilding and installing gap-4.4.10\nmake[1]: Betrete Verzeichnis '/local/scratch/schilly/sage/spkg/build/gap-4.4.10.p2/src'\nif test ! -d bin;  then mkdir bin;  fi\nif test ! -d bin/i686-pc-linux-gnu-ccache;  then mkdir bin/i686-pc-linux-gnu-ccache;  fi\ncp cnf/configure.out bin/i686-pc-linux-gnu-ccache/configure\n( cd bin/i686-pc-linux-gnu-ccache ; CC='ccache gcc' ./configure --target=i686-pc-linux-gnu --prefix=/local/scratch/schilly/sage/local PREFIX=/local/scratch/schilly/sage/local CC=ccache gcc CXX=ccache g++ )\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: invalid host type: g++  \nchecking for gcc-gcc... ccache\nchecking for C compiler default output file name... configure: error: C compiler cannot create executables\nSee `config.log' for more details.\nmake[1]: *** [bin/i686-pc-linux-gnu-ccache/Makefile] Fehler 77\nError building gap.\n```\n\n\nmy guess:\n\nconfigure script, line 2293: `BASECC=`basename ${CC}``\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2575\n\n",
+    "body": "Assignee: mabshoff\n\ni'm using ccache to speed up compilation. this works very well for other packages, but the configure script of GAP seems to be have an error.\n\nenvironment variables:\n\n```\nCC=ccache gcc\nCXX=ccache g++\n```\n\nGAP message:\n\n```\nHost system\nuname -a:\nLinux edoras 2.6.15-51-686 #1 SMP PREEMPT Tue Feb 12 16:59:15 UTC 2008 i686 GNU/Linux\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nEs werden eingebaute Spezifikationen verwendet.\nZiel: i486-linux-gnu\nKonfiguriert mit: ../src/configure -v --enable-languages=c,c++,java,f95,objc,ada,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.0 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-java-awt=gtk-default --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-4.0-1.4.2.0/jre --enable-mpfr --disable-werror --with-tune=pentium4 --enable-checking=release i486-linux-gnu\nThread-Modell: posix\ngcc-Version 4.0.3 (Ubuntu 4.0.3-1ubuntu5)\n****************************************************\nchecking build system type... i686-pc-linux-gnu\nchecking host system type... i686-pc-linux-gnu\nchecking target system type... i686-pc-linux-gnu\nchecking for gcc... ccache gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether ccache gcc accepts -g... yes\nchecking for ccache gcc option to accept ANSI C... none needed\nchecking whether make sets $(MAKE)... yes\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating sysinfo.gap\nconfig.status: creating bin/gap.sh\nBuilding and installing gap-4.4.10\nmake[1]: Betrete Verzeichnis '/local/scratch/schilly/sage/spkg/build/gap-4.4.10.p2/src'\nif test ! -d bin;  then mkdir bin;  fi\nif test ! -d bin/i686-pc-linux-gnu-ccache;  then mkdir bin/i686-pc-linux-gnu-ccache;  fi\ncp cnf/configure.out bin/i686-pc-linux-gnu-ccache/configure\n( cd bin/i686-pc-linux-gnu-ccache ; CC='ccache gcc' ./configure --target=i686-pc-linux-gnu --prefix=/local/scratch/schilly/sage/local PREFIX=/local/scratch/schilly/sage/local CC=ccache gcc CXX=ccache g++ )\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: invalid host type: g++  \nchecking for gcc-gcc... ccache\nchecking for C compiler default output file name... configure: error: C compiler cannot create executables\nSee `config.log' for more details.\nmake[1]: *** [bin/i686-pc-linux-gnu-ccache/Makefile] Fehler 77\nError building gap.\n```\n\nmy guess:\n\nconfigure script, line 2293: `BASECC=`basename ${CC}``\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2575\n\n",
     "created_at": "2008-03-17T18:26:01Z",
     "labels": [
         "component: build",
@@ -27,7 +27,6 @@ environment variables:
 CC=ccache gcc
 CXX=ccache g++
 ```
-
 
 GAP message:
 
@@ -77,7 +76,6 @@ See `config.log' for more details.
 make[1]: *** [bin/i686-pc-linux-gnu-ccache/Makefile] Fehler 77
 Error building gap.
 ```
-
 
 my guess:
 
@@ -268,7 +266,7 @@ Resolution: fixed
 archive/issue_comments_017559.json:
 ```json
 {
-    "body": "it doesn't work with 4.4.10 in sage 3.1.2/src\n\n\n```\nchecking for inttypes.h... yes\nchecking for stdint.h... yes\nchecking for unistd.h... yes\nchecking whether byte ordering is bigendian... no\nchecking for void *... yes\nchecking size of void *... 4\nchecking for nm... nm\nchecking whether symbols begin with an underscore... no\nchecking build system type... Invalid configuration `g++': machine `g++' not recognized\nconfigure: error: /bin/bash ../../src/../cnf/config.sub g++ failed\nmake[1]: *** [bin/i686-pc-linux-gnu-gcc/Makefile] Error 1\nmake[1]: Leaving directory `/opt/sage/sage-src/spkg/build/gap-4.4.10.p9/src'\nError building gap.\n```\n\n\n\n```\nCXX=ccache g++\nCC=ccache gcc\n```\n\n\nunsetting those variables and the configure script works.",
+    "body": "it doesn't work with 4.4.10 in sage 3.1.2/src\n\n```\nchecking for inttypes.h... yes\nchecking for stdint.h... yes\nchecking for unistd.h... yes\nchecking whether byte ordering is bigendian... no\nchecking for void *... yes\nchecking size of void *... 4\nchecking for nm... nm\nchecking whether symbols begin with an underscore... no\nchecking build system type... Invalid configuration `g++': machine `g++' not recognized\nconfigure: error: /bin/bash ../../src/../cnf/config.sub g++ failed\nmake[1]: *** [bin/i686-pc-linux-gnu-gcc/Makefile] Error 1\nmake[1]: Leaving directory `/opt/sage/sage-src/spkg/build/gap-4.4.10.p9/src'\nError building gap.\n```\n\n```\nCXX=ccache g++\nCC=ccache gcc\n```\n\nunsetting those variables and the configure script works.",
     "created_at": "2008-09-20T19:38:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
@@ -278,7 +276,6 @@ archive/issue_comments_017559.json:
 ```
 
 it doesn't work with 4.4.10 in sage 3.1.2/src
-
 
 ```
 checking for inttypes.h... yes
@@ -296,13 +293,10 @@ make[1]: Leaving directory `/opt/sage/sage-src/spkg/build/gap-4.4.10.p9/src'
 Error building gap.
 ```
 
-
-
 ```
 CXX=ccache g++
 CC=ccache gcc
 ```
-
 
 unsetting those variables and the configure script works.
 
@@ -553,7 +547,7 @@ And stripping stuff out is probably not so cool, since it disables ccache ;)
 archive/issue_comments_017567.json:
 ```json
 {
-    "body": "Replying to [comment:11 schilly]:\n> And stripping stuff out is probably not so cool, since it disables ccache ;)\n\nUnsetting `CC` and `CXX` (as is currently done) also disables it. ;-)\n\nIf GAP still fails to configure / build when `CC` or `CXX` contain multiple words, we should probably unset `CC` and `CXX` **just in that case**, since currently even `CC=gcc-4.6.3` etc. are broken, and if the \"default\" gcc doesn't understand the flags intended for `$CC`, the build fails for no real reason.",
+    "body": "Replying to [comment:11 schilly]:\n> And stripping stuff out is probably not so cool, since it disables ccache ;)\n\n\nUnsetting `CC` and `CXX` (as is currently done) also disables it. ;-)\n\nIf GAP still fails to configure / build when `CC` or `CXX` contain multiple words, we should probably unset `CC` and `CXX` **just in that case**, since currently even `CC=gcc-4.6.3` etc. are broken, and if the \"default\" gcc doesn't understand the flags intended for `$CC`, the build fails for no real reason.",
     "created_at": "2012-03-22T14:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
@@ -564,6 +558,7 @@ archive/issue_comments_017567.json:
 
 Replying to [comment:11 schilly]:
 > And stripping stuff out is probably not so cool, since it disables ccache ;)
+
 
 Unsetting `CC` and `CXX` (as is currently done) also disables it. ;-)
 
@@ -576,7 +571,7 @@ If GAP still fails to configure / build when `CC` or `CXX` contain multiple word
 archive/issue_comments_017568.json:
 ```json
 {
-    "body": "Replying to [comment:12 leif]:\n> If GAP still fails to configure / build when `CC` or `CXX` contain multiple words, we should probably unset `CC` and `CXX` **just in that case** [...]\n\nFor the record: My GAP 4.4.12.p7 spkg for #7041 will just do that.",
+    "body": "Replying to [comment:12 leif]:\n> If GAP still fails to configure / build when `CC` or `CXX` contain multiple words, we should probably unset `CC` and `CXX` **just in that case** [...]\n\n\nFor the record: My GAP 4.4.12.p7 spkg for #7041 will just do that.",
     "created_at": "2012-03-22T17:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
@@ -587,5 +582,6 @@ archive/issue_comments_017568.json:
 
 Replying to [comment:12 leif]:
 > If GAP still fails to configure / build when `CC` or `CXX` contain multiple words, we should probably unset `CC` and `CXX` **just in that case** [...]
+
 
 For the record: My GAP 4.4.12.p7 spkg for #7041 will just do that.

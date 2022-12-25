@@ -68,7 +68,7 @@ Changing component from geometry to documentation.
 archive/issue_comments_041318.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch **geom-rst.patch** applied cleanly against 3.4.alpha0 and all doctests passed with the options `-t -long -optional`. The reference manual built fine with\n\n```\nsage -docbuild reference html\n```\n\nLooking at the relevant HTML file\n\n```\n/path/to/reference/sage/geometry/lattice_polytope.html\n```\n\nthe suggested patch fixed the problem it's intends to. So positive review on my part. Note that there are still a large number of typos in the file that **geom-rst.patch** touches, namely\n\n```\nsage/geometry/lattice_polytope.py\n```\n\nBut please open another ticket for that.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch **geom-rst.patch** applied cleanly against 3.4.alpha0 and all doctests passed with the options `-t -long -optional`. The reference manual built fine with\n\n```\nsage -docbuild reference html\n```\nLooking at the relevant HTML file\n\n```\n/path/to/reference/sage/geometry/lattice_polytope.html\n```\nthe suggested patch fixed the problem it's intends to. So positive review on my part. Note that there are still a large number of typos in the file that **geom-rst.patch** touches, namely\n\n```\nsage/geometry/lattice_polytope.py\n```\nBut please open another ticket for that.",
     "created_at": "2009-02-27T07:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5375",
     "type": "issue_comment",
@@ -86,19 +86,16 @@ The patch **geom-rst.patch** applied cleanly against 3.4.alpha0 and all doctests
 ```
 sage -docbuild reference html
 ```
-
 Looking at the relevant HTML file
 
 ```
 /path/to/reference/sage/geometry/lattice_polytope.html
 ```
-
 the suggested patch fixed the problem it's intends to. So positive review on my part. Note that there are still a large number of typos in the file that **geom-rst.patch** touches, namely
 
 ```
 sage/geometry/lattice_polytope.py
 ```
-
 But please open another ticket for that.
 
 

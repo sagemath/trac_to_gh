@@ -3,7 +3,7 @@
 archive/issues_005820.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: morphism ring comparison loads dumps\n\nAs discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:\n\n\n```\nsage: f = ZZ.hom(QQ)\nsage: g = loads(dumps(f))\nsage: f == g\nFalse\n```\n\n\n(It should return True.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5820\n\n",
+    "body": "Assignee: tbd\n\nKeywords: morphism ring comparison loads dumps\n\nAs discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:\n\n```\nsage: f = ZZ.hom(QQ)\nsage: g = loads(dumps(f))\nsage: f == g\nFalse\n```\n\n(It should return True.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5820\n\n",
     "created_at": "2009-04-19T02:54:39Z",
     "labels": [
         "component: algebra",
@@ -22,14 +22,12 @@ Keywords: morphism ring comparison loads dumps
 
 As discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:
 
-
 ```
 sage: f = ZZ.hom(QQ)
 sage: g = loads(dumps(f))
 sage: f == g
 False
 ```
-
 
 (It should return True.)
 

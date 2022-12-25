@@ -216,7 +216,7 @@ Florent: please check the small reviewer patch on the Sage-Combinat queue. If th
 archive/issue_comments_084600.json:
 ```json
 {
-    "body": "> Florent: please check the small reviewer patch on the Sage-Combinat\n> queue. If the changes are ok with you, you can fold/upload and set a\n> positive review on my behalf.\n\nHi Nicolas ! Thanks a lot for the numerous English corrections. The doc is\nmuch better now ! I'm perfectly ok with all your changes, except for the\nfollowing wrong ReST markup:\n\n\n```\ndiff --git a/sage/sets/finite_set_map_cy.pyx b/sage/sets/finite_set_map_cy.pyx\n--- a/sage/sets/finite_set_map_cy.pyx\n+++ b/sage/sets/finite_set_map_cy.pyx\n@@ -86,7 +86,7 @@ cpdef fibers(f, domain):\n         {1: {1}}\n \n     .. seealso:: :func:`fibers_args` if one needs to pass extra\n-    arguments to ``f``.\n+       arguments to ``f``.\n     \"\"\"\n     result = {}\n     for x in domain:\n```\n\n\nI folded your patch and added this small change. It is a rather trivial change\nbut, in order to follow the rules, someone has to look at it. So it's now your\njob to set the positive review :-)",
+    "body": "> Florent: please check the small reviewer patch on the Sage-Combinat\n> queue. If the changes are ok with you, you can fold/upload and set a\n> positive review on my behalf.\n\n\nHi Nicolas ! Thanks a lot for the numerous English corrections. The doc is\nmuch better now ! I'm perfectly ok with all your changes, except for the\nfollowing wrong ReST markup:\n\n```\ndiff --git a/sage/sets/finite_set_map_cy.pyx b/sage/sets/finite_set_map_cy.pyx\n--- a/sage/sets/finite_set_map_cy.pyx\n+++ b/sage/sets/finite_set_map_cy.pyx\n@@ -86,7 +86,7 @@ cpdef fibers(f, domain):\n         {1: {1}}\n \n     .. seealso:: :func:`fibers_args` if one needs to pass extra\n-    arguments to ``f``.\n+       arguments to ``f``.\n     \"\"\"\n     result = {}\n     for x in domain:\n```\n\nI folded your patch and added this small change. It is a rather trivial change\nbut, in order to follow the rules, someone has to look at it. So it's now your\njob to set the positive review :-)",
     "created_at": "2011-04-05T19:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
@@ -229,10 +229,10 @@ archive/issue_comments_084600.json:
 > queue. If the changes are ok with you, you can fold/upload and set a
 > positive review on my behalf.
 
+
 Hi Nicolas ! Thanks a lot for the numerous English corrections. The doc is
 much better now ! I'm perfectly ok with all your changes, except for the
 following wrong ReST markup:
-
 
 ```
 diff --git a/sage/sets/finite_set_map_cy.pyx b/sage/sets/finite_set_map_cy.pyx
@@ -248,7 +248,6 @@ diff --git a/sage/sets/finite_set_map_cy.pyx b/sage/sets/finite_set_map_cy.pyx
      result = {}
      for x in domain:
 ```
-
 
 I folded your patch and added this small change. It is a rather trivial change
 but, in order to follow the rules, someone has to look at it. So it's now your

@@ -3,7 +3,7 @@
 archive/issues_006574.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: elliptic curve, quadratic twist\n\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\n\nyields\n\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\n\nbut\n\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\n\ngives back\n\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n\n```\nreturn K.one_element()\n```\n\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: elliptic curve, quadratic twist\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\nyields\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\nbut\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\ngives back\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n```\nreturn K.one_element()\n```\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
     "created_at": "2009-07-20T23:03:04Z",
     "labels": [
         "component: elliptic curves",
@@ -23,56 +23,44 @@ CC:  @JohnCremona
 
 Keywords: elliptic curve, quadratic twist
 
-
 ```
 E = EllipticCurve('32a1')
 D = E.is_quadratic_twist(E)
 D, type(D)
 ```
 
-
 yields
-
 
 ```
 (1, <type 'sage.rings.rational.Rational'>)
 ```
 
-
 but
-
 
 ```
 D = E.is_quadratic_twist(E.quadratic_twist(5))
 D, type(D)
 ```
 
-
 gives back
-
 
 ```
 (5, <type 'sage.rings.integer.Integer'>)
 ```
 
-
 I think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with
-
 
 ```
 return K.one_element()
 ```
 
-
 In the second case we exit at the end after
 line 394 has changed the type by 
-
 
 ```
 if K is rings.QQ:
     D = D.squarefree_part()
 ```
-
 
 
 

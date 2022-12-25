@@ -274,7 +274,7 @@ Ditto on mabshoff's fix at #4500.
 archive/issue_comments_033038.json:
 ```json
 {
-    "body": "In addition to mabshoff's fix at #4500, I think we should add the following:\n\n\n```\ndiff -r c543000d6447 setup.py\n--- a/setup.py  Thu Nov 13 05:32:07 2008 -0800\n+++ b/setup.py  Thu Nov 13 16:26:41 2008 -0800\n@@ -13,11 +13,11 @@\n else:\n     sdist = False\n \n-# uncomment to turn warnings off\n-# import distutils.sysconfig\n-# NO_WARN = True\n-# if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n-#     extra_compile_args = ['-w']\n+# comment these four lines out to turn on warnings from gcc\n+import distutils.sysconfig\n+NO_WARN = True\n+if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n+    extra_compile_args = ['-w']\n \n if not os.environ.has_key('SAGE_ROOT'):\n     print \"    ERROR: The environment variable SAGE_ROOT must be defined.\"\n```\n\n\nThis just turns warnings back off -- as William points out, it's a lot of output for the unsuspecting. Michael and I had discussed this when we changed it, and it would be good to sit down and actually look at the warnings once to see if anything interesting is being turned up. In the interim, though, let's not spam. ;)",
+    "body": "In addition to mabshoff's fix at #4500, I think we should add the following:\n\n```\ndiff -r c543000d6447 setup.py\n--- a/setup.py  Thu Nov 13 05:32:07 2008 -0800\n+++ b/setup.py  Thu Nov 13 16:26:41 2008 -0800\n@@ -13,11 +13,11 @@\n else:\n     sdist = False\n \n-# uncomment to turn warnings off\n-# import distutils.sysconfig\n-# NO_WARN = True\n-# if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n-#     extra_compile_args = ['-w']\n+# comment these four lines out to turn on warnings from gcc\n+import distutils.sysconfig\n+NO_WARN = True\n+if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n+    extra_compile_args = ['-w']\n \n if not os.environ.has_key('SAGE_ROOT'):\n     print \"    ERROR: The environment variable SAGE_ROOT must be defined.\"\n```\n\nThis just turns warnings back off -- as William points out, it's a lot of output for the unsuspecting. Michael and I had discussed this when we changed it, and it would be good to sit down and actually look at the warnings once to see if anything interesting is being turned up. In the interim, though, let's not spam. ;)",
     "created_at": "2008-11-14T00:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
@@ -284,7 +284,6 @@ archive/issue_comments_033038.json:
 ```
 
 In addition to mabshoff's fix at #4500, I think we should add the following:
-
 
 ```
 diff -r c543000d6447 setup.py
@@ -308,7 +307,6 @@ diff -r c543000d6447 setup.py
  if not os.environ.has_key('SAGE_ROOT'):
      print "    ERROR: The environment variable SAGE_ROOT must be defined."
 ```
-
 
 This just turns warnings back off -- as William points out, it's a lot of output for the unsuspecting. Michael and I had discussed this when we changed it, and it would be good to sit down and actually look at the warnings once to see if anything interesting is being turned up. In the interim, though, let's not spam. ;)
 

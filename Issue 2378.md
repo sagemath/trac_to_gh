@@ -179,7 +179,7 @@ archive/issue_events_005617.json:
 archive/issue_comments_016011.json:
 ```json
 {
-    "body": "Code for a highlight function:\n\n\n```\nnormal_vertex_color='#fec7b8'\nnormal_edge_color = 'black'\ndef highlight(g,vertices=[],edges=[],**kwds):\n    edges = [e[0:2] for e in edges]\n    normal_edges = list(set(g.edges(labels=False)).difference(set([e[0:2] for e in edges])))\n    normal_vertices = list(set(g.vertices()).difference(set(vertices)))\n    return g.plot(vertex_colors={'red': vertices, normal_vertex_color: normal_vertices}, edge_colors={'red': edges, normal_edge_color: normal_edges},**kwds)\ng=graphs.DodecahedralGraph()\nhighlight(g,[1,2],[(1,2),(2,6)],layout=\"spring\")\n```\n",
+    "body": "Code for a highlight function:\n\n```\nnormal_vertex_color='#fec7b8'\nnormal_edge_color = 'black'\ndef highlight(g,vertices=[],edges=[],**kwds):\n    edges = [e[0:2] for e in edges]\n    normal_edges = list(set(g.edges(labels=False)).difference(set([e[0:2] for e in edges])))\n    normal_vertices = list(set(g.vertices()).difference(set(vertices)))\n    return g.plot(vertex_colors={'red': vertices, normal_vertex_color: normal_vertices}, edge_colors={'red': edges, normal_edge_color: normal_edges},**kwds)\ng=graphs.DodecahedralGraph()\nhighlight(g,[1,2],[(1,2),(2,6)],layout=\"spring\")\n```",
     "created_at": "2008-12-22T18:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
@@ -189,7 +189,6 @@ archive/issue_comments_016011.json:
 ```
 
 Code for a highlight function:
-
 
 ```
 normal_vertex_color='#fec7b8'
@@ -202,7 +201,6 @@ def highlight(g,vertices=[],edges=[],**kwds):
 g=graphs.DodecahedralGraph()
 highlight(g,[1,2],[(1,2),(2,6)],layout="spring")
 ```
-
 
 
 

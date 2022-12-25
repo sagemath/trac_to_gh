@@ -113,7 +113,7 @@ Changing component from algebra to geometry.
 archive/issue_comments_036335.json:
 ```json
 {
-    "body": "Here is a new patch, against the previous\n\n> \"minkowsky sum\" should be \"Minkowski sum\"\n\nI fixed that thanks\n\n> \"positive (aka conic) combination\" should be \"positive (aka convex) combination\"\n> (unless there is a meaning of conic combination that I don't know).\n\nsee http://en.wikipedia.org/wiki/Conical_combination\n\nDattorro [1] uses \"conic hull\" instead of \"conical hull\". Fukuda uses noneg(ray1, ray2,...). I don't know which term is better. In the new patch I chose \"conic hull\", change it to what sounds best to you, english speakers.\n\n> The Fukuda reference is good, it would be better to add a \"REFERENCES\" section since eventually such sections might be searched for and organized.\n\nYou're right, fixed in the patch\n\n> Thanks for working on this!\n\nThanks for the feedback!\n\nS\u00e9bastien\n\n[1] http://meboo.convexoptimization.com/BOOK/convexgeometry.pdf",
+    "body": "Here is a new patch, against the previous\n\n> \"minkowsky sum\" should be \"Minkowski sum\"\n\n\nI fixed that thanks\n\n> \"positive (aka conic) combination\" should be \"positive (aka convex) combination\"\n> (unless there is a meaning of conic combination that I don't know).\n\n\nsee http://en.wikipedia.org/wiki/Conical_combination\n\nDattorro [1] uses \"conic hull\" instead of \"conical hull\". Fukuda uses noneg(ray1, ray2,...). I don't know which term is better. In the new patch I chose \"conic hull\", change it to what sounds best to you, english speakers.\n\n> The Fukuda reference is good, it would be better to add a \"REFERENCES\" section since eventually such sections might be searched for and organized.\n\n\nYou're right, fixed in the patch\n\n> Thanks for working on this!\n\n\nThanks for the feedback!\n\nS\u00e9bastien\n\n[1] http://meboo.convexoptimization.com/BOOK/convexgeometry.pdf",
     "created_at": "2008-12-15T11:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4803",
     "type": "issue_comment",
@@ -126,10 +126,12 @@ Here is a new patch, against the previous
 
 > "minkowsky sum" should be "Minkowski sum"
 
+
 I fixed that thanks
 
 > "positive (aka conic) combination" should be "positive (aka convex) combination"
 > (unless there is a meaning of conic combination that I don't know).
+
 
 see http://en.wikipedia.org/wiki/Conical_combination
 
@@ -137,9 +139,11 @@ Dattorro [1] uses "conic hull" instead of "conical hull". Fukuda uses noneg(ray1
 
 > The Fukuda reference is good, it would be better to add a "REFERENCES" section since eventually such sections might be searched for and organized.
 
+
 You're right, fixed in the patch
 
 > Thanks for working on this!
+
 
 Thanks for the feedback!
 

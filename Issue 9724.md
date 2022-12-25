@@ -3,7 +3,7 @@
 archive/issues_009724.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @haraldschilly\n\nKeywords: variable empty name\n\nSage allows you to create a variable with an empty name.  While this at first appears not to cause any problems, one thing it does break is reset():\n\n```\nsage: var(' ')\n(, )\nsage: whos\nVariable   Type          Data/Info\n----------------------------------\n           Expression    \nsage: reset()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (437, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/all_cmdline.pyc in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/misc/reset.so in sage.misc.reset.reset (sage/misc/reset.c:838)()\n\nIndexError: string index out of range\nsage: del globals()['']\nsage: reset()\n```\n\nSage also allows the creation of variables with other illegal names (e.g. '1a' or '1'), but for these at least reset() still works.  There are two ways to fix this, the first is to disallow the creation of such variables via var(), but then all illegal cases would have to be taken care of, and it wouldn't help if you created illegal variables manually by inserting them into globals() (but I would argue that if you do this, you're on your own anyway).  The second way to fix the behaviour above would be to make reset() able to delete empty variables too.  This however is only viable if these variables don't break anything else, other than the case mentioned above.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9724\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @haraldschilly\n\nKeywords: variable empty name\n\nSage allows you to create a variable with an empty name.  While this at first appears not to cause any problems, one thing it does break is reset():\n\n```\nsage: var(' ')\n(, )\nsage: whos\nVariable   Type          Data/Info\n----------------------------------\n           Expression    \nsage: reset()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (437, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/all_cmdline.pyc in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/misc/reset.so in sage.misc.reset.reset (sage/misc/reset.c:838)()\n\nIndexError: string index out of range\nsage: del globals()['']\nsage: reset()\n```\nSage also allows the creation of variables with other illegal names (e.g. '1a' or '1'), but for these at least reset() still works.  There are two ways to fix this, the first is to disallow the creation of such variables via var(), but then all illegal cases would have to be taken care of, and it wouldn't help if you created illegal variables manually by inserting them into globals() (but I would argue that if you do this, you're on your own anyway).  The second way to fix the behaviour above would be to make reset() able to delete empty variables too.  This however is only viable if these variables don't break anything else, other than the case mentioned above.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9724\n\n",
     "created_at": "2010-08-11T09:47:33Z",
     "labels": [
         "component: symbolics",
@@ -48,7 +48,6 @@ IndexError: string index out of range
 sage: del globals()['']
 sage: reset()
 ```
-
 Sage also allows the creation of variables with other illegal names (e.g. '1a' or '1'), but for these at least reset() still works.  There are two ways to fix this, the first is to disallow the creation of such variables via var(), but then all illegal cases would have to be taken care of, and it wouldn't help if you created illegal variables manually by inserting them into globals() (but I would argue that if you do this, you're on your own anyway).  The second way to fix the behaviour above would be to make reset() able to delete empty variables too.  This however is only viable if these variables don't break anything else, other than the case mentioned above.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9724
@@ -62,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9724
 archive/issue_comments_094838.json:
 ```json
 {
-    "body": "Perhaps one could add a warning message giving a hint in other cases, too.\n\nFrom `#sage-devel` (IRC):\n\n```\n<cousteau> weird, I can't make the notebook display the same that real LaTeX\n I have a variable which I called {m}:   var('{m}')   In real LaTeX, it nicely displays as an m, but in the notebook it keeps the braces\n same for a variable called \\mu\\Omega\n does the notebook just get the latex() of the variables? or does it do something else?\n var('sui', latex_name=\"s_{u,i}\")   :'( I shoild read the manual first\n```\n",
+    "body": "Perhaps one could add a warning message giving a hint in other cases, too.\n\nFrom `#sage-devel` (IRC):\n\n```\n<cousteau> weird, I can't make the notebook display the same that real LaTeX\n I have a variable which I called {m}:   var('{m}')   In real LaTeX, it nicely displays as an m, but in the notebook it keeps the braces\n same for a variable called \\mu\\Omega\n does the notebook just get the latex() of the variables? or does it do something else?\n var('sui', latex_name=\"s_{u,i}\")   :'( I shoild read the manual first\n```",
     "created_at": "2010-08-16T22:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
@@ -82,7 +81,6 @@ From `#sage-devel` (IRC):
  does the notebook just get the latex() of the variables? or does it do something else?
  var('sui', latex_name="s_{u,i}")   :'( I shoild read the manual first
 ```
-
 
 
 
@@ -108,7 +106,7 @@ archive/issue_events_024333.json:
 archive/issue_comments_094839.json:
 ```json
 {
-    "body": "Fixed in the patch on #7496:\n\n\n```\nsage: var(' ')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.1.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.var (sage/calculus/var.c:687)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6276)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6048)()\n\nValueError: The name \"\" is not a valid Python identifier.\n```\n",
+    "body": "Fixed in the patch on #7496:\n\n```\nsage: var(' ')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.1.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.var (sage/calculus/var.c:687)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6276)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6048)()\n\nValueError: The name \"\" is not a valid Python identifier.\n```",
     "created_at": "2011-06-18T05:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ archive/issue_comments_094839.json:
 ```
 
 Fixed in the patch on #7496:
-
 
 ```
 sage: var(' ')
@@ -135,7 +132,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: The name "" is not a valid Python identifier.
 ```
-
 
 
 
@@ -252,7 +248,7 @@ archive/issue_events_024334.json:
 archive/issue_comments_094845.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> Probably proper form is to let the release manager change the milestone, right, Jeroen?  :)\nNo, it is easier if you change the milestone to \"sage-duplicate/invalid/wontfix\" and set to \"positive_review\".  This gives me the best overview on [http://trac.sagemath.org/sage_trac/report/40](http://trac.sagemath.org/sage_trac/report/40).  I will then close the ticket.",
+    "body": "Replying to [comment:3 kcrisman]:\n> Probably proper form is to let the release manager change the milestone, right, Jeroen?  :)\n\nNo, it is easier if you change the milestone to \"sage-duplicate/invalid/wontfix\" and set to \"positive_review\".  This gives me the best overview on [http://trac.sagemath.org/sage_trac/report/40](http://trac.sagemath.org/sage_trac/report/40).  I will then close the ticket.",
     "created_at": "2011-06-24T15:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
@@ -263,6 +259,7 @@ archive/issue_comments_094845.json:
 
 Replying to [comment:3 kcrisman]:
 > Probably proper form is to let the release manager change the milestone, right, Jeroen?  :)
+
 No, it is easier if you change the milestone to "sage-duplicate/invalid/wontfix" and set to "positive_review".  This gives me the best overview on [http://trac.sagemath.org/sage_trac/report/40](http://trac.sagemath.org/sage_trac/report/40).  I will then close the ticket.
 
 

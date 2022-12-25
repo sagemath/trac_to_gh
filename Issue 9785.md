@@ -3,7 +3,7 @@
 archive/issues_009785.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @hivert brunellus @jasongrout\n\nKeywords: multiset\n\n\n```\nsage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'b'], ['b', 'b']]\nsage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'a'], ['a', 'a']]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9786\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @hivert brunellus @jasongrout\n\nKeywords: multiset\n\n```\nsage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'b'], ['b', 'b']]\nsage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'a'], ['a', 'a']]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9786\n\n",
     "created_at": "2010-08-23T12:57:41Z",
     "labels": [
         "component: combinatorics",
@@ -22,14 +22,12 @@ CC:  @hivert brunellus @jasongrout
 
 Keywords: multiset
 
-
 ```
 sage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()
 [['a', 'a'], ['a', 'b'], ['b', 'b']]
 sage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()
 [['a', 'a'], ['a', 'a'], ['a', 'a']]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9786
 

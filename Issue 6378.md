@@ -309,7 +309,7 @@ This is a very good point. I wrote up an explanation at `wiki.sagemath.org/relea
 archive/issue_comments_050954.json:
 ```json
 {
-    "body": "Great -- I also meant that when you get this:\n\n```\nUsage: sage -merge <ticket_number>\nFor more advanced usage, see the file /home/john/sage-4.1.1/local/bin/sage-apply-ticket.\n```\n\nthen as well as finding something human-readable in that script file, there could be more usage instructions in (say) the reference manual.\n\nThat should go for all the other command-line options, of course: a sort of \"man sage\"-type output.\n\nAnyway, adding a reference to wiki.sagemath.org/release would already be useful!",
+    "body": "Great -- I also meant that when you get this:\n\n```\nUsage: sage -merge <ticket_number>\nFor more advanced usage, see the file /home/john/sage-4.1.1/local/bin/sage-apply-ticket.\n```\nthen as well as finding something human-readable in that script file, there could be more usage instructions in (say) the reference manual.\n\nThat should go for all the other command-line options, of course: a sort of \"man sage\"-type output.\n\nAnyway, adding a reference to wiki.sagemath.org/release would already be useful!",
     "created_at": "2009-08-31T15:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -324,7 +324,6 @@ Great -- I also meant that when you get this:
 Usage: sage -merge <ticket_number>
 For more advanced usage, see the file /home/john/sage-4.1.1/local/bin/sage-apply-ticket.
 ```
-
 then as well as finding something human-readable in that script file, there could be more usage instructions in (say) the reference manual.
 
 That should go for all the other command-line options, of course: a sort of "man sage"-type output.
@@ -338,7 +337,7 @@ Anyway, adding a reference to wiki.sagemath.org/release would already be useful!
 archive/issue_comments_050955.json:
 ```json
 {
-    "body": "Replying to [comment:9 craigcitro]:\n> I wrote up an explanation at `wiki.sagemath.org/release`, but there should be some documentation in the source itself. I'll work on that and post another patch -- after all, documentation makes things **much** more user-friendly. `:)`\n\n\nMeanwhile(?) http://wiki.sagemath.org/release appears to be a dead link.\n\nhttp://wiki.sagemath.org/devel/ReleaseManagement is all I've found.\n\n[I really love trac... I **did not** delete `work_issues` (it was empty; same for `upstream`).]\n\n-Leif",
+    "body": "Replying to [comment:9 craigcitro]:\n> I wrote up an explanation at `wiki.sagemath.org/release`, but there should be some documentation in the source itself. I'll work on that and post another patch -- after all, documentation makes things **much** more user-friendly. `:)`\n\n\n\nMeanwhile(?) http://wiki.sagemath.org/release appears to be a dead link.\n\nhttp://wiki.sagemath.org/devel/ReleaseManagement is all I've found.\n\n[I really love trac... I **did not** delete `work_issues` (it was empty; same for `upstream`).]\n\n-Leif",
     "created_at": "2010-01-31T23:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -349,6 +348,7 @@ archive/issue_comments_050955.json:
 
 Replying to [comment:9 craigcitro]:
 > I wrote up an explanation at `wiki.sagemath.org/release`, but there should be some documentation in the source itself. I'll work on that and post another patch -- after all, documentation makes things **much** more user-friendly. `:)`
+
 
 
 Meanwhile(?) http://wiki.sagemath.org/release appears to be a dead link.
@@ -406,7 +406,7 @@ Rebase on #8712. Apply this patch only. See comments for more info.
 archive/issue_comments_050958.json:
 ```json
 {
-    "body": "Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by @TimDumol created at 2010-04-18 13:23:22\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
+    "body": "Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by @TimDumol created at 2010-04-18 13:23:22\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
     "created_at": "2010-04-18T13:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -419,11 +419,9 @@ Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid
 
 The patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,
 
-
 ```
 sage -merge -a -e timdumol@gmail.com
 ```
-
 
 results in an error after merging everything, stating that the email address, which is the null string (''), is invalid.
 
@@ -514,7 +512,7 @@ I'm willing to give timdumol's version a positive review.  If someone can review
 archive/issue_comments_050963.json:
 ```json
 {
-    "body": "Replying to [comment:16 jhpalmieri]:\n> I'm willing to give timdumol's version a positive review.  If someone can review mine (the help messages on lines 95-110 are the only difference), that would be appreciated.\n\nHmmm, I'm ok with John's new help messages, but when will more return codes be tested?\n\nI can't tell if this ticket is that urgent s.t. we should postpone such to the follow-up.\n\nAt least there is already one... (#9319) ;-)",
+    "body": "Replying to [comment:16 jhpalmieri]:\n> I'm willing to give timdumol's version a positive review.  If someone can review mine (the help messages on lines 95-110 are the only difference), that would be appreciated.\n\n\nHmmm, I'm ok with John's new help messages, but when will more return codes be tested?\n\nI can't tell if this ticket is that urgent s.t. we should postpone such to the follow-up.\n\nAt least there is already one... (#9319) ;-)",
     "created_at": "2010-07-22T23:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
@@ -525,6 +523,7 @@ archive/issue_comments_050963.json:
 
 Replying to [comment:16 jhpalmieri]:
 > I'm willing to give timdumol's version a positive review.  If someone can review mine (the help messages on lines 95-110 are the only difference), that would be appreciated.
+
 
 Hmmm, I'm ok with John's new help messages, but when will more return codes be tested?
 

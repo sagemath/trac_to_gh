@@ -107,7 +107,7 @@ See #846. I'm planning on doing that today.
 archive/issue_comments_034119.json:
 ```json
 {
-    "body": "I am seeing a doctest failure here:\n\n```\nsage -t -long devel/sage/sage/rings/integer.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/integer.pyx\", line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[6]>\", line 1\n         sage: _test_mpz_set_longlong(Integer(100000000000))###line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\n          ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n```\n\n\nI guess this is caused by an extra \"sage: \" in that line. I am editing the patch to fix this.\n\nCheers,\n\nMichael",
+    "body": "I am seeing a doctest failure here:\n\n```\nsage -t -long devel/sage/sage/rings/integer.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/integer.pyx\", line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[6]>\", line 1\n         sage: _test_mpz_set_longlong(Integer(100000000000))###line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\n          ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n```\n\nI guess this is caused by an extra \"sage: \" in that line. I am editing the patch to fix this.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T05:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
@@ -139,7 +139,6 @@ Exception raised:
 **********************************************************************
 1 items had failures:
 ```
-
 
 I guess this is caused by an extra "sage: " in that line. I am editing the patch to fix this.
 

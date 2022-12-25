@@ -69,7 +69,7 @@ Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket61
 archive/issue_comments_048881.json:
 ```json
 {
-    "body": "The patch applies with some fuzz to 4.0.rc2, but I'm seeing a bunch of doctest failures in sage/rings:\n\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/order.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/galois_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_element.pyx\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/unit_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/complex_roots.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\"\n```\n",
+    "body": "The patch applies with some fuzz to 4.0.rc2, but I'm seeing a bunch of doctest failures in sage/rings:\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/order.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/galois_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_element.pyx\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/unit_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/complex_roots.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\"\n```",
     "created_at": "2009-05-30T08:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_048881.json:
 ```
 
 The patch applies with some fuzz to 4.0.rc2, but I'm seeing a bunch of doctest failures in sage/rings:
-
 
 ```
 The following tests failed:
@@ -96,7 +95,6 @@ The following tests failed:
 	sage -t  "devel/sage-main/sage/rings/polynomial/complex_roots.py"
 	sage -t  "devel/sage-main/sage/rings/polynomial/polynomial_element.pyx"
 ```
-
 
 
 
@@ -218,7 +216,7 @@ See also #9572.
 archive/issue_comments_048888.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> See also #9572. \nThat is a SageNB release ticket.  ?",
+    "body": "Replying to [comment:8 was]:\n> See also #9572. \n\nThat is a SageNB release ticket.  ?",
     "created_at": "2011-03-21T12:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
@@ -229,6 +227,7 @@ archive/issue_comments_048888.json:
 
 Replying to [comment:8 was]:
 > See also #9572. 
+
 That is a SageNB release ticket.  ?
 
 

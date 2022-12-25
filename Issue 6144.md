@@ -3,7 +3,7 @@
 archive/issues_006144.json:
 ```json
 {
-    "body": "CC:  @williamstein\n\n\n```\nsage: exp(x)*exp(2*x)\ne^(2*x)*e^x\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6144\n\n",
+    "body": "CC:  @williamstein\n\n```\nsage: exp(x)*exp(2*x)\ne^(2*x)*e^x\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6144\n\n",
     "created_at": "2009-05-28T05:27:18Z",
     "labels": [
         "component: symbolics",
@@ -18,12 +18,10 @@ archive/issues_006144.json:
 ```
 CC:  @williamstein
 
-
 ```
 sage: exp(x)*exp(2*x)
 e^(2*x)*e^x
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6144
 
@@ -36,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6144
 archive/issue_comments_048953.json:
 ```json
 {
-    "body": "GiNaC doesn't do this either:\n\n\n```\n> exp(x)*exp(2*x);\nexp(2*x)*exp(x)\n```\n\n\nI'll try to play with the mul::eval method in pynac to do this. The main problem is doing it without compromising speed.\n\nCheers,\n\nBurcin",
+    "body": "GiNaC doesn't do this either:\n\n```\n> exp(x)*exp(2*x);\nexp(2*x)*exp(x)\n```\n\nI'll try to play with the mul::eval method in pynac to do this. The main problem is doing it without compromising speed.\n\nCheers,\n\nBurcin",
     "created_at": "2009-05-28T10:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
@@ -47,12 +45,10 @@ archive/issue_comments_048953.json:
 
 GiNaC doesn't do this either:
 
-
 ```
 > exp(x)*exp(2*x);
 exp(2*x)*exp(x)
 ```
-
 
 I'll try to play with the mul::eval method in pynac to do this. The main problem is doing it without compromising speed.
 

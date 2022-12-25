@@ -3,7 +3,7 @@
 archive/issues_008140.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe doc of `words.CharacteristicSturmianWord` says :\n\n\n```\nINPUT:\n-  ``cf`` - an iterator outputting integers (thought of as a\n               continued fraction)\n```\n\n\nBut it does not do what it says. In fact the following \n\n\n```\nsage: cf = CFF(1/golden_ratio^2)\nsage: words.CharacteristicSturmianWord(cf)\nword: 0010001001000100010010001001000100010010...\n```\n\n\nshould output the same as\n\n\n```\nsage: words.FibonacciWord()\nword: 0100101001001010010100100101001001010010...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8140\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe doc of `words.CharacteristicSturmianWord` says :\n\n```\nINPUT:\n-  ``cf`` - an iterator outputting integers (thought of as a\n               continued fraction)\n```\n\nBut it does not do what it says. In fact the following \n\n```\nsage: cf = CFF(1/golden_ratio^2)\nsage: words.CharacteristicSturmianWord(cf)\nword: 0010001001000100010010001001000100010010...\n```\n\nshould output the same as\n\n```\nsage: words.FibonacciWord()\nword: 0100101001001010010100100101001001010010...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8140\n\n",
     "created_at": "2010-01-31T23:52:08Z",
     "labels": [
         "component: combinatorics",
@@ -22,16 +22,13 @@ CC:  abmasse
 
 The doc of `words.CharacteristicSturmianWord` says :
 
-
 ```
 INPUT:
 -  ``cf`` - an iterator outputting integers (thought of as a
                continued fraction)
 ```
 
-
 But it does not do what it says. In fact the following 
-
 
 ```
 sage: cf = CFF(1/golden_ratio^2)
@@ -39,15 +36,12 @@ sage: words.CharacteristicSturmianWord(cf)
 word: 0010001001000100010010001001000100010010...
 ```
 
-
 should output the same as
-
 
 ```
 sage: words.FibonacciWord()
 word: 0100101001001010010100100101001001010010...
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8140
@@ -271,7 +265,7 @@ The commit string for the third patch is not sufficiently descriptive.  I've ref
 archive/issue_comments_071459.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> The commit string for the third patch is not sufficiently descriptive.  I've refreshed it in my queue for 4.3.3.alpha0: `#8140: Added rename_keyword for the cf argument`.  Please let me know if this is not good enough!\n\nIt is perfect (sorry, I forgot to write the description).",
+    "body": "Replying to [comment:7 mpatel]:\n> The commit string for the third patch is not sufficiently descriptive.  I've refreshed it in my queue for 4.3.3.alpha0: `#8140: Added rename_keyword for the cf argument`.  Please let me know if this is not good enough!\n\n\nIt is perfect (sorry, I forgot to write the description).",
     "created_at": "2010-02-10T14:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
@@ -282,6 +276,7 @@ archive/issue_comments_071459.json:
 
 Replying to [comment:7 mpatel]:
 > The commit string for the third patch is not sufficiently descriptive.  I've refreshed it in my queue for 4.3.3.alpha0: `#8140: Added rename_keyword for the cf argument`.  Please let me know if this is not good enough!
+
 
 It is perfect (sorry, I forgot to write the description).
 

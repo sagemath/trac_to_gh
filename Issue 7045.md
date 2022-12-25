@@ -91,7 +91,7 @@ See #5833 for a duplicate of the current ticket.
 archive/issue_comments_058214.json:
 ```json
 {
-    "body": "\n```\n> > Building on 64-bit SuSE with SAGE_CHECK=\"yes\" failed at libgcrypt,\n> > with a bunch of errors in the gcrypt test script:\n>\n> Can you try using the updated libgcrypt spkg at ticket #7045 [1]?\n>\n> [1]http://trac.sagemath.org/sage_trac/ticket/7045\n>\n> --\n> Regards\n> Minh Van Nguyen\n\nThe new spkg 1.4.4.p0 seems to fix the problem.\n\nDavid\n```\n",
+    "body": "```\n> > Building on 64-bit SuSE with SAGE_CHECK=\"yes\" failed at libgcrypt,\n> > with a bunch of errors in the gcrypt test script:\n>\n> Can you try using the updated libgcrypt spkg at ticket #7045 [1]?\n>\n> [1]http://trac.sagemath.org/sage_trac/ticket/7045\n>\n> --\n> Regards\n> Minh Van Nguyen\n\nThe new spkg 1.4.4.p0 seems to fix the problem.\n\nDavid\n```",
     "created_at": "2009-10-01T15:52:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
@@ -99,7 +99,6 @@ archive/issue_comments_058214.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > > Building on 64-bit SuSE with SAGE_CHECK="yes" failed at libgcrypt,
@@ -117,7 +116,6 @@ The new spkg 1.4.4.p0 seems to fix the problem.
 
 David
 ```
-
 
 
 
@@ -166,7 +164,7 @@ Do you have a copy of this spkg?  The link above is now broken.
 archive/issue_comments_058217.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> Do you have a copy of this spkg?  The link above is now broken.\n\nThe spkg is now restored. Here are the changes I added in addition to drkirkby's changes:\n\n* committed drkirkby's changes in his name\n* spell check the files `SPKG.txt` and `spkg-install`\n* format `spkg-check` and `spkg-install` in a consistent way\n* add executable bits to `spkg-install`",
+    "body": "Replying to [comment:6 mhansen]:\n> Do you have a copy of this spkg?  The link above is now broken.\n\n\nThe spkg is now restored. Here are the changes I added in addition to drkirkby's changes:\n\n* committed drkirkby's changes in his name\n* spell check the files `SPKG.txt` and `spkg-install`\n* format `spkg-check` and `spkg-install` in a consistent way\n* add executable bits to `spkg-install`",
     "created_at": "2009-10-16T09:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
@@ -177,6 +175,7 @@ archive/issue_comments_058217.json:
 
 Replying to [comment:6 mhansen]:
 > Do you have a copy of this spkg?  The link above is now broken.
+
 
 The spkg is now restored. Here are the changes I added in addition to drkirkby's changes:
 

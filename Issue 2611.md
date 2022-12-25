@@ -3,7 +3,7 @@
 archive/issues_002611.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nWith the attached patch this works:\n\n```\nsage: sr = mq.SR(gf2=True)\nsage: sr\nSR(1,1,1,4)\n\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names(),R.term_order())\nsage: F = [B(f) for f in F]\nsage: F = mq.MPolynomialSystem(B,F)\nsage: F\nPolynomial System with 56 Polynomials in 20 Variables\nsage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2611\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nWith the attached patch this works:\n\n```\nsage: sr = mq.SR(gf2=True)\nsage: sr\nSR(1,1,1,4)\n\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names(),R.term_order())\nsage: F = [B(f) for f in F]\nsage: F = mq.MPolynomialSystem(B,F)\nsage: F\nPolynomial System with 56 Polynomials in 20 Variables\nsage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2611\n\n",
     "created_at": "2008-03-20T11:53:32Z",
     "labels": [
         "component: commutative algebra"
@@ -36,7 +36,6 @@ Polynomial System with 56 Polynomials in 20 Variables
 sage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2611
 
 
@@ -66,7 +65,7 @@ Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_017883.json:
 ```json
 {
-    "body": "I'm concerned by this:\n\n```\nsage: R.<x,y,z,a,b,c>=BooleanPolynomialRing(6)\nsage: f=(1-x)*(1+y)\nsage: f\nx*y + x + y + 1\nsage: f.monomial_coefficient(1)  # Shouldn't this return 1?\n0\nsage: f.monomial_coefficient(x^0)\n1\n```\n\nI think a little bit of type checking would improve things.\n\nI also notice that we don't have a coefficient method like the other mpoly rings.  However, I don't think we should let lack of associated functionality hold up a patch providing functionality.",
+    "body": "I'm concerned by this:\n\n```\nsage: R.<x,y,z,a,b,c>=BooleanPolynomialRing(6)\nsage: f=(1-x)*(1+y)\nsage: f\nx*y + x + y + 1\nsage: f.monomial_coefficient(1)  # Shouldn't this return 1?\n0\nsage: f.monomial_coefficient(x^0)\n1\n```\nI think a little bit of type checking would improve things.\n\nI also notice that we don't have a coefficient method like the other mpoly rings.  However, I don't think we should let lack of associated functionality hold up a patch providing functionality.",
     "created_at": "2008-03-20T12:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
@@ -87,7 +86,6 @@ sage: f.monomial_coefficient(1)  # Shouldn't this return 1?
 sage: f.monomial_coefficient(x^0)
 1
 ```
-
 I think a little bit of type checking would improve things.
 
 I also notice that we don't have a coefficient method like the other mpoly rings.  However, I don't think we should let lack of associated functionality hold up a patch providing functionality.

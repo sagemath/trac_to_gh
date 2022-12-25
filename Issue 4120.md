@@ -406,7 +406,7 @@ Changing component from algebra to quadratic forms.
 archive/issue_comments_029782.json:
 ```json
 {
-    "body": "To comment on the relationship with #4470:\n\n```\nAFAIK the binary quadratic forms are untouched by Jon's work. We\nshould rename the file to bring it more in line with what is coming\nfrom Jon, i.e. all I have left to do to post a patch is to rename\nvarious files to qf_ from quadratic_forms_, fix the imports and rebase\nthe extensions to module_list.py. All trivial, it just needs to be\ndone :p\n```\n\n\nCheers,\n\nMichael",
+    "body": "To comment on the relationship with #4470:\n\n```\nAFAIK the binary quadratic forms are untouched by Jon's work. We\nshould rename the file to bring it more in line with what is coming\nfrom Jon, i.e. all I have left to do to post a patch is to rename\nvarious files to qf_ from quadratic_forms_, fix the imports and rebase\nthe extensions to module_list.py. All trivial, it just needs to be\ndone :p\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T22:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -425,7 +425,6 @@ various files to qf_ from quadratic_forms_, fix the imports and rebase
 the extensions to module_list.py. All trivial, it just needs to be
 done :p
 ```
-
 
 Cheers,
 
@@ -685,7 +684,7 @@ There may be cases where restrictions on discriminants make sense.  For example,
 archive/issue_comments_029792.json:
 ```json
 {
-    "body": "Replying to [comment:23 justin]:\n> I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\nGood!  Thanks.\n\n> \n> There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?\n\nOK by me to restrict to B which are 0 or 1 mod 4 and not squares.",
+    "body": "Replying to [comment:23 justin]:\n> I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\n\nGood!  Thanks.\n\n> \n> There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?\n\n\nOK by me to restrict to B which are 0 or 1 mod 4 and not squares.",
     "created_at": "2011-03-25T21:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -697,10 +696,12 @@ archive/issue_comments_029792.json:
 Replying to [comment:23 justin]:
 > I will make the changes to raise errors rather than return unexpected values; that makes sense.
 
+
 Good!  Thanks.
 
 > 
 > There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?
+
 
 OK by me to restrict to B which are 0 or 1 mod 4 and not squares.
 
@@ -1031,7 +1032,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_029803.json:
 ```json
 {
-    "body": "Replying to [comment:38 chapoton]:\n> This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.\nIt seems that at least the patchbot \"eddy\" is testing this ticket without adverse effects.  Let's see what happens if I set it back to \"needs_review\".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)",
+    "body": "Replying to [comment:38 chapoton]:\n> This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.\n\nIt seems that at least the patchbot \"eddy\" is testing this ticket without adverse effects.  Let's see what happens if I set it back to \"needs_review\".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)",
     "created_at": "2015-06-04T11:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -1042,6 +1043,7 @@ archive/issue_comments_029803.json:
 
 Replying to [comment:38 chapoton]:
 > This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.
+
 It seems that at least the patchbot "eddy" is testing this ticket without adverse effects.  Let's see what happens if I set it back to "needs_review".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)
 
 
@@ -1121,7 +1123,7 @@ archive/issue_events_009387.json:
 archive/issue_comments_029806.json:
 ```json
 {
-    "body": "[qfbcompraw](http://doc.sagemath.org/html/en/reference/libs/sage/libs/pari/gen.html#sage.libs.pari.gen.gen_auto.qfbcompraw) is now wrapped, so calling pari directly to use it is no longer necessary, and should be fixed.\n\ncf. the patch part:\n\n```\n+            # There could be more elegant ways, but qfbcompraw isn't\n+            # wrapped yet in the PARI C library.  We may as well settle\n+            # for the below, until somebody simply implements composition\n+            # from scratch in Cython.\n+            v = list(pari('qfbcompraw(%s,%s)'%(self._pari_init_(),\n+                                            right._pari_init_())))\n```\n",
+    "body": "[qfbcompraw](http://doc.sagemath.org/html/en/reference/libs/sage/libs/pari/gen.html#sage.libs.pari.gen.gen_auto.qfbcompraw) is now wrapped, so calling pari directly to use it is no longer necessary, and should be fixed.\n\ncf. the patch part:\n\n```\n+            # There could be more elegant ways, but qfbcompraw isn't\n+            # wrapped yet in the PARI C library.  We may as well settle\n+            # for the below, until somebody simply implements composition\n+            # from scratch in Cython.\n+            v = list(pari('qfbcompraw(%s,%s)'%(self._pari_init_(),\n+                                            right._pari_init_())))\n```",
     "created_at": "2016-11-21T10:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
@@ -1142,7 +1144,6 @@ cf. the patch part:
 +            v = list(pari('qfbcompraw(%s,%s)'%(self._pari_init_(),
 +                                            right._pari_init_())))
 ```
-
 
 
 

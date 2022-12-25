@@ -3,7 +3,7 @@
 archive/issues_002813.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nFrom: Andrey Novoseltsev\nSubject: [sage-devel] Cell splitting/merging in notebook\n\n\nIs it possible to realize some convenient and fast (in the sense of\nkeyboard use) cell splitting/merging? It seems to me that now it\ninvolves manual copying of a part of code and creating/removing a\ncell, or editing the text representation. I really liked the ability\nto do it in Maple (back when I was using it ;-) by pressing some hot\nkeys since it allows you to group cells for executing in one step and\nnicer visual presentation or break them back when you want to interact\nwith intermediate values.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2813\n\n",
+    "body": "Assignee: boothby\n\n```\nFrom: Andrey Novoseltsev\nSubject: [sage-devel] Cell splitting/merging in notebook\n\n\nIs it possible to realize some convenient and fast (in the sense of\nkeyboard use) cell splitting/merging? It seems to me that now it\ninvolves manual copying of a part of code and creating/removing a\ncell, or editing the text representation. I really liked the ability\nto do it in Maple (back when I was using it ;-) by pressing some hot\nkeys since it allows you to group cells for executing in one step and\nnicer visual presentation or break them back when you want to interact\nwith intermediate values.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2813\n\n",
     "created_at": "2008-04-05T19:30:19Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_002813.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 From: Andrey Novoseltsev
@@ -33,7 +32,6 @@ keys since it allows you to group cells for executing in one step and
 nicer visual presentation or break them back when you want to interact
 with intermediate values.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2813
 

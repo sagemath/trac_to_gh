@@ -3,7 +3,7 @@
 archive/issues_005495.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThere is a typo in the error message below (not a \"perp\"haps):\n\n\n```\nwstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n*** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\t [2.4 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5495\n\n",
+    "body": "Assignee: cwitty\n\nThere is a typo in the error message below (not a \"perp\"haps):\n\n```\nwstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n*** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\t [2.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5495\n\n",
     "created_at": "2009-03-12T02:38:25Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ Assignee: cwitty
 
 There is a typo in the error message below (not a "perp"haps):
 
-
 ```
 wstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx
 sage -t  "devel/sage-main/sage/matrix/matrix2.pyx"          
@@ -28,7 +27,6 @@ sage -t  "devel/sage-main/sage/matrix/matrix2.pyx"
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
 	 [2.4 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5495
 
@@ -113,7 +111,7 @@ Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.pat
 archive/issue_comments_042595.json:
 ```json
 {
-    "body": "The patch **5495.patch** fails to apply at all against Sage 3.4:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5495/5495.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5495/5495.patch\"\napplying /home/mvngu/patch/5495/5495.patch\nunable to find 'sage-doctest' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-doctest.rej\nabort: patch failed to apply\n```\n",
+    "body": "The patch **5495.patch** fails to apply at all against Sage 3.4:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5495/5495.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5495/5495.patch\"\napplying /home/mvngu/patch/5495/5495.patch\nunable to find 'sage-doctest' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-doctest.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-03-24T08:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ unable to find 'sage-doctest' for patching
 1 out of 1 hunks FAILED -- saving rejects to file sage-doctest.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -161,7 +158,7 @@ Try using "hg_scripts" instead of "hg_sage".
 archive/issue_comments_042597.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> Try using \"hg_scripts\" instead of \"hg_sage\".\n\n\nYep, it now applies OK against Sage 3.4. Looks good, and I doctested `sage/matrix/matrix2.pyx` hoping to get a similar error as reported above. But no \"mysterious error\" popped up. Anyway, positive review for the typo fix.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> Try using \"hg_scripts\" instead of \"hg_sage\".\n\n\n\nYep, it now applies OK against Sage 3.4. Looks good, and I doctested `sage/matrix/matrix2.pyx` hoping to get a similar error as reported above. But no \"mysterious error\" popped up. Anyway, positive review for the typo fix.",
     "created_at": "2009-03-26T07:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
@@ -172,6 +169,7 @@ archive/issue_comments_042597.json:
 
 Replying to [comment:4 jhpalmieri]:
 > Try using "hg_scripts" instead of "hg_sage".
+
 
 
 Yep, it now applies OK against Sage 3.4. Looks good, and I doctested `sage/matrix/matrix2.pyx` hoping to get a similar error as reported above. But no "mysterious error" popped up. Anyway, positive review for the typo fix.

@@ -3,7 +3,7 @@
 archive/issues_006263.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThe loads/dumps test for ClassFunction fails because `__cmp__` is not defined.\n\n```\nsage: chi = ClassFunction(CyclicPermutationGroup(4), [1,-1,1,-1])\nsage: loads(dumps(chi)) == chi\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6263\n\n",
+    "body": "Assignee: joyner\n\nThe loads/dumps test for ClassFunction fails because `__cmp__` is not defined.\n\n```\nsage: chi = ClassFunction(CyclicPermutationGroup(4), [1,-1,1,-1])\nsage: loads(dumps(chi)) == chi\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6263\n\n",
     "created_at": "2009-06-11T20:28:36Z",
     "labels": [
         "component: group theory",
@@ -25,7 +25,6 @@ sage: chi = ClassFunction(CyclicPermutationGroup(4), [1,-1,1,-1])
 sage: loads(dumps(chi)) == chi
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6263
 
@@ -93,7 +92,7 @@ Does the  <  a shortcut for "does this character of G restrict to this character
 archive/issue_comments_049913.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?\n\nThe GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:\n\n```\nSo two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. \n```\n\nSo this is partly replicated here, except that the patch actually tests the groups as well as the values.\n\nIf you think it would be better, we can just ask GAP and return the answer it gives.",
+    "body": "Replying to [comment:2 wdj]:\n> I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?\n\n\nThe GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:\n\n```\nSo two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. \n```\nSo this is partly replicated here, except that the patch actually tests the groups as well as the values.\n\nIf you think it would be better, we can just ask GAP and return the answer it gives.",
     "created_at": "2009-06-11T22:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
@@ -105,12 +104,12 @@ archive/issue_comments_049913.json:
 Replying to [comment:2 wdj]:
 > I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?
 
+
 The GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:
 
 ```
 So two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. 
 ```
-
 So this is partly replicated here, except that the patch actually tests the groups as well as the values.
 
 If you think it would be better, we can just ask GAP and return the answer it gives.
@@ -122,7 +121,7 @@ If you think it would be better, we can just ask GAP and return the answer it gi
 archive/issue_comments_049914.json:
 ```json
 {
-    "body": "Replying to [comment:3 jlefebvre]:\n> Does the  <  a shortcut for \"does this character of G restrict to this character of H, where H is a subgroup of G\"?\n\nNo, it just does a comparison of the list of values. This is what GAP does (see my previous method for more information).",
+    "body": "Replying to [comment:3 jlefebvre]:\n> Does the  <  a shortcut for \"does this character of G restrict to this character of H, where H is a subgroup of G\"?\n\n\nNo, it just does a comparison of the list of values. This is what GAP does (see my previous method for more information).",
     "created_at": "2009-06-11T22:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
@@ -134,6 +133,7 @@ archive/issue_comments_049914.json:
 Replying to [comment:3 jlefebvre]:
 > Does the  <  a shortcut for "does this character of G restrict to this character of H, where H is a subgroup of G"?
 
+
 No, it just does a comparison of the list of values. This is what GAP does (see my previous method for more information).
 
 
@@ -143,7 +143,7 @@ No, it just does a comparison of the list of values. This is what GAP does (see 
 archive/issue_comments_049915.json:
 ```json
 {
-    "body": "Replying to [comment:4 saliola]:\n> Replying to [comment:2 wdj]:\n> > I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?\n> \n> The GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:\n> {{{\n> So two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. \n> }}}\n\nOkay, it seems as though at least you are improving the situation over what GAP has!\n\n\n\n> So this is partly replicated here, except that the patch actually tests the groups as well as the values.\n> \n> If you think it would be better, we can just ask GAP and return the answer it gives.",
+    "body": "Replying to [comment:4 saliola]:\n> Replying to [comment:2 wdj]:\n> > I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?\n\n> \n> The GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:\n> \n> ```\n> So two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. \n> ```\n\n\nOkay, it seems as though at least you are improving the situation over what GAP has!\n\n\n\n> So this is partly replicated here, except that the patch actually tests the groups as well as the values.\n> \n> If you think it would be better, we can just ask GAP and return the answer it gives.",
     "created_at": "2009-06-11T22:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
@@ -155,11 +155,14 @@ archive/issue_comments_049915.json:
 Replying to [comment:4 saliola]:
 > Replying to [comment:2 wdj]:
 > > I thought GAP's characters were returned in randomish order, at least for more complicated groups that have lots of conjugacy classes of a given order. Does this patch handle that situation?
+
 > 
 > The GAP manual contains a section called [Comparison of Class Functions](http://www.gap-system.org/~gap/Manuals/doc/htm/ref/CHAP070.htm#SECT003), which reads:
-> {{{
+> 
+> ```
 > So two class functions are equal if and only if their lists of values are equal, no matter whether they are class functions of the same character table, of the same group but w.r.t. different class ordering, or of different groups. 
-> }}}
+> ```
+
 
 Okay, it seems as though at least you are improving the situation over what GAP has!
 

@@ -191,7 +191,7 @@ I am Lokesh. I wanted to work on this ticket. I have made the changes in c_graph
 archive/issue_comments_065671.json:
 ```json
 {
-    "body": "Replying to [comment:6 jlokesh]:\n> Hi\n> \n> I am Lokesh.\nWelcome to Sagemath\n\n> I wanted to work on this ticket. I have made the changes in c_graph.pyx and generic_graph.py . I had an issue that changes I have made in generic_graph.py do not appear in the git status output. \nI'm not a git guru, so others may have better ideas of what's going on\n* Have you created a new branch first?\n* Do you see your changes with `git diff` ?\n* To commit your changes, I recommend to write `git commit -m \"trac #7675: short and relevant description of this commit\" -a`\n* then push your branch for instance in `u/jlokesh/7675`\n* the page http://doc.sagemath.org/html/en/developer/manual_git.html is very useful\n\nAlso, to test your changes, you can do (other methods might also be good/better)\n* `./sage -btp src/sage/graphs/` or `./sage -btp src/sage/graphs/generic_graph.py` to both compile the code and check if it passes all tests\n* `./sage -docbuild reference/graphs html` to rebuild the documentation of the graph module only. Be aware that from time to time you will be forced to rebuild the doc from scratch with `make doc-clean && make`\n\n\n> Further the shortest_paths function in generic_graph.py uses functions from boost_graph.pyx . Am I supposed to make the changes in boost_graph.pyx functions as well because internally they call boost library functions. For networkx I replaced the function call to an appropriate one which returns the distance. Should I try to do something similar here as well?\n\nThe changes you do should be consistent for all algorithms.",
+    "body": "Replying to [comment:6 jlokesh]:\n> Hi\n> \n> I am Lokesh.\n\nWelcome to Sagemath\n\n> I wanted to work on this ticket. I have made the changes in c_graph.pyx and generic_graph.py . I had an issue that changes I have made in generic_graph.py do not appear in the git status output. \n\nI'm not a git guru, so others may have better ideas of what's going on\n* Have you created a new branch first?\n* Do you see your changes with `git diff` ?\n* To commit your changes, I recommend to write `git commit -m \"trac #7675: short and relevant description of this commit\" -a`\n* then push your branch for instance in `u/jlokesh/7675`\n* the page http://doc.sagemath.org/html/en/developer/manual_git.html is very useful\n\nAlso, to test your changes, you can do (other methods might also be good/better)\n* `./sage -btp src/sage/graphs/` or `./sage -btp src/sage/graphs/generic_graph.py` to both compile the code and check if it passes all tests\n* `./sage -docbuild reference/graphs html` to rebuild the documentation of the graph module only. Be aware that from time to time you will be forced to rebuild the doc from scratch with `make doc-clean && make`\n\n\n> Further the shortest_paths function in generic_graph.py uses functions from boost_graph.pyx . Am I supposed to make the changes in boost_graph.pyx functions as well because internally they call boost library functions. For networkx I replaced the function call to an appropriate one which returns the distance. Should I try to do something similar here as well?\n\n\nThe changes you do should be consistent for all algorithms.",
     "created_at": "2017-05-18T07:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -204,9 +204,11 @@ Replying to [comment:6 jlokesh]:
 > Hi
 > 
 > I am Lokesh.
+
 Welcome to Sagemath
 
 > I wanted to work on this ticket. I have made the changes in c_graph.pyx and generic_graph.py . I had an issue that changes I have made in generic_graph.py do not appear in the git status output. 
+
 I'm not a git guru, so others may have better ideas of what's going on
 * Have you created a new branch first?
 * Do you see your changes with `git diff` ?
@@ -221,6 +223,7 @@ Also, to test your changes, you can do (other methods might also be good/better)
 
 > Further the shortest_paths function in generic_graph.py uses functions from boost_graph.pyx . Am I supposed to make the changes in boost_graph.pyx functions as well because internally they call boost library functions. For networkx I replaced the function call to an appropriate one which returns the distance. Should I try to do something similar here as well?
 
+
 The changes you do should be consistent for all algorithms.
 
 
@@ -230,7 +233,7 @@ The changes you do should be consistent for all algorithms.
 archive/issue_comments_065672.json:
 ```json
 {
-    "body": "I have added the distance_flag parameter to the shortest_path function of generic_graph.py and all the functions which are called from this function. I couldn't add it to boost_graph.pyx function as it returns both distance and path dictionaries in a list. Any changes to these functions lead to failure of doctests as they are used by other functions.\nIf distance_flag is True and u,v are not connected then the shortest_path function returns None or an exception based on the algorithm used. Networkx returns an exception. Should I also raise an exception for such a case?\n----\nNew commits:",
+    "body": "I have added the distance_flag parameter to the shortest_path function of generic_graph.py and all the functions which are called from this function. I couldn't add it to boost_graph.pyx function as it returns both distance and path dictionaries in a list. Any changes to these functions lead to failure of doctests as they are used by other functions.\nIf distance_flag is True and u,v are not connected then the shortest_path function returns None or an exception based on the algorithm used. Networkx returns an exception. Should I also raise an exception for such a case?\n\n---\nNew commits:",
     "created_at": "2017-05-20T09:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -241,7 +244,8 @@ archive/issue_comments_065672.json:
 
 I have added the distance_flag parameter to the shortest_path function of generic_graph.py and all the functions which are called from this function. I couldn't add it to boost_graph.pyx function as it returns both distance and path dictionaries in a list. Any changes to these functions lead to failure of doctests as they are used by other functions.
 If distance_flag is True and u,v are not connected then the shortest_path function returns None or an exception based on the algorithm used. Networkx returns an exception. Should I also raise an exception for such a case?
-----
+
+---
 New commits:
 
 
@@ -384,7 +388,7 @@ I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorr
 archive/issue_comments_065679.json:
 ```json
 {
-    "body": "Replying to [comment:15 jlokesh]:\n> Hi\n> \n> I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorry, I couldn't figure out the command for changing the remote branch name.\n\nread on remote branches in git.\ne.g you can remove a remote branch via `git push` with --delete option.",
+    "body": "Replying to [comment:15 jlokesh]:\n> Hi\n> \n> I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorry, I couldn't figure out the command for changing the remote branch name.\n\n\nread on remote branches in git.\ne.g you can remove a remote branch via `git push` with --delete option.",
     "created_at": "2017-05-21T11:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -398,6 +402,7 @@ Replying to [comment:15 jlokesh]:
 > 
 > I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorry, I couldn't figure out the command for changing the remote branch name.
 
+
 read on remote branches in git.
 e.g you can remove a remote branch via `git push` with --delete option.
 
@@ -408,7 +413,7 @@ e.g you can remove a remote branch via `git push` with --delete option.
 archive/issue_comments_065680.json:
 ```json
 {
-    "body": "This is much better. It passes all tests (graphs, matroid, sandpile, knots) and the doc builds properly.\n\nCould you adopt the following convention:\n\n```\n        - ``distance_flag`` -- boolean (default: ``False``). When set to ``True``, the\n          shortest path distance from ``x`` to ``y`` is returned instead of the path.\n```\n\n\n\nAlso, I'm wondering if we could return 5 instead of 5.0. May be Dima can answer this question ?\n----\nNew commits:",
+    "body": "This is much better. It passes all tests (graphs, matroid, sandpile, knots) and the doc builds properly.\n\nCould you adopt the following convention:\n\n```\n        - ``distance_flag`` -- boolean (default: ``False``). When set to ``True``, the\n          shortest path distance from ``x`` to ``y`` is returned instead of the path.\n```\n\n\nAlso, I'm wondering if we could return 5 instead of 5.0. May be Dima can answer this question ?\n\n---\nNew commits:",
     "created_at": "2017-05-21T15:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -427,9 +432,9 @@ Could you adopt the following convention:
 ```
 
 
-
 Also, I'm wondering if we could return 5 instead of 5.0. May be Dima can answer this question ?
-----
+
+---
 New commits:
 
 
@@ -681,7 +686,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_065692.json:
 ```json
 {
-    "body": "Sorry to post a little late with comments, but there are a few small things I think need to be addressed.\n\nI don't see the need or desire to have a separate dict `distances_int` in `shortest_path_all_vertices`. Just add an extra `if` statement when initializing `distances[v]`. IMO it is cleaner code and doesn't require allocating an unnecessary object.\n\nThis is both the wrong type of error (for the message) and the wrong statement:\n\n```\n            raise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\n\nFor example, `algorithm='foobar'` says we should implement a fictitious algorithm. A `ValueError` is the correct error message, but it should say something like `'unknown algorithm \"{}\"'.format(algorithm)`. (Edit: Yes, no capital letter. Bad splicing of my post.)\n\nMinor point, but for easier readability (PEP8), use `a == b` instead of `a==b` and similarly:\n\n```\ndef shortest_path_all_vertices(self, v, cutoff=None, distance_flag=False):\n```\n",
+    "body": "Sorry to post a little late with comments, but there are a few small things I think need to be addressed.\n\nI don't see the need or desire to have a separate dict `distances_int` in `shortest_path_all_vertices`. Just add an extra `if` statement when initializing `distances[v]`. IMO it is cleaner code and doesn't require allocating an unnecessary object.\n\nThis is both the wrong type of error (for the message) and the wrong statement:\n\n```\n            raise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\nFor example, `algorithm='foobar'` says we should implement a fictitious algorithm. A `ValueError` is the correct error message, but it should say something like `'unknown algorithm \"{}\"'.format(algorithm)`. (Edit: Yes, no capital letter. Bad splicing of my post.)\n\nMinor point, but for easier readability (PEP8), use `a == b` instead of `a==b` and similarly:\n\n```\ndef shortest_path_all_vertices(self, v, cutoff=None, distance_flag=False):\n```",
     "created_at": "2017-06-03T06:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -700,7 +705,6 @@ This is both the wrong type of error (for the message) and the wrong statement:
             raise ValueError("Algorithm " + algorithm + " not yet " +
                              "implemented. Please, contribute!")
 ```
-
 For example, `algorithm='foobar'` says we should implement a fictitious algorithm. A `ValueError` is the correct error message, but it should say something like `'unknown algorithm "{}"'.format(algorithm)`. (Edit: Yes, no capital letter. Bad splicing of my post.)
 
 Minor point, but for easier readability (PEP8), use `a == b` instead of `a==b` and similarly:
@@ -708,7 +712,6 @@ Minor point, but for easier readability (PEP8), use `a == b` instead of `a==b` a
 ```
 def shortest_path_all_vertices(self, v, cutoff=None, distance_flag=False):
 ```
-
 
 
 
@@ -757,7 +760,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_065695.json:
 ```json
 {
-    "body": "One last thing (well, in 2 places):\n\n```diff\n-distance_flag = False):\n+distance_flag=False):\n```\n",
+    "body": "One last thing (well, in 2 places):\n\n```diff\n-distance_flag = False):\n+distance_flag=False):\n```",
     "created_at": "2017-06-03T22:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -775,13 +778,12 @@ One last thing (well, in 2 places):
 
 
 
-
 ---
 
 archive/issue_comments_065696.json:
 ```json
 {
-    "body": "Hi\n\n\n\n```\nraise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\n\nis used by other algorithms like triangles_count, shortest_paths and shortest_path_all_pairs. Should I make the corresponding change in those algorithms as well?",
+    "body": "Hi\n\n\n```\nraise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\nis used by other algorithms like triangles_count, shortest_paths and shortest_path_all_pairs. Should I make the corresponding change in those algorithms as well?",
     "created_at": "2017-06-04T07:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -793,12 +795,10 @@ archive/issue_comments_065696.json:
 Hi
 
 
-
 ```
 raise ValueError("Algorithm " + algorithm + " not yet " +
                              "implemented. Please, contribute!")
 ```
-
 is used by other algorithms like triangles_count, shortest_paths and shortest_path_all_pairs. Should I make the corresponding change in those algorithms as well?
 
 
@@ -990,7 +990,7 @@ LGTM.
 archive/issue_comments_065705.json:
 ```json
 {
-    "body": "Looking at the code, I realize that we have the following problem:\n\n```\nsage: G = Graph()\nsage: 2 in G\nFalse\nsage: G.shortest_path(2,2)\n[2]\nsage: G.shortest_path_length(2,2)\n0\n```\n\nI don't know why it has not been reported before.\n\nCan you add necessary tests to check that u and v are in the graph and raise an error if it is not the case.\n\nThanks.",
+    "body": "Looking at the code, I realize that we have the following problem:\n\n```\nsage: G = Graph()\nsage: 2 in G\nFalse\nsage: G.shortest_path(2,2)\n[2]\nsage: G.shortest_path_length(2,2)\n0\n```\nI don't know why it has not been reported before.\n\nCan you add necessary tests to check that u and v are in the graph and raise an error if it is not the case.\n\nThanks.",
     "created_at": "2017-06-06T07:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -1010,7 +1010,6 @@ sage: G.shortest_path(2,2)
 sage: G.shortest_path_length(2,2)
 0
 ```
-
 I don't know why it has not been reported before.
 
 Can you add necessary tests to check that u and v are in the graph and raise an error if it is not the case.
@@ -1060,7 +1059,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_065708.json:
 ```json
 {
-    "body": "In the diff, I see the following modifications that must be cancelled.\n\n```\n-.. csv-table::\n+ v\\sv-table::\n```\n\n\n```\n-    :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n+*-* :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n```\n\n\nIn case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n\n\nConcerning the tests, I would prefer something like that (and \n\n```\nif not self.has_vertex(u):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(u))\nif not self.has_vertex(v):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(v))\n```\n",
+    "body": "In the diff, I see the following modifications that must be cancelled.\n\n```\n-.. csv-table::\n+ v\\sv-table::\n```\n\n```\n-    :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n+*-* :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n```\n\nIn case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n\n\nConcerning the tests, I would prefer something like that (and \n\n```\nif not self.has_vertex(u):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(u))\nif not self.has_vertex(v):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(v))\n```",
     "created_at": "2017-06-06T21:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -1076,12 +1075,10 @@ In the diff, I see the following modifications that must be cancelled.
 + v\sv-table::
 ```
 
-
 ```
 -    :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.
 +*-* :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.
 ```
-
 
 In case, you can "quickly" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.
 
@@ -1094,7 +1091,6 @@ if not self.has_vertex(u):
 if not self.has_vertex(v):
     raise ValueError("vertex '{}' is not in the (di)graph".format(v))
 ```
-
 
 
 
@@ -1121,7 +1117,7 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 archive/issue_comments_065710.json:
 ```json
 {
-    "body": "Sorry for the modifications. I have deleted the previous commit.\n\n> \n> In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> \nI have built the documentation. Is there anything specific I need to do with it?",
+    "body": "Sorry for the modifications. I have deleted the previous commit.\n\n> \n> In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> \n\nI have built the documentation. Is there anything specific I need to do with it?",
     "created_at": "2017-06-07T02:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -1135,6 +1131,7 @@ Sorry for the modifications. I have deleted the previous commit.
 > 
 > In case, you can "quickly" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.
 > 
+
 I have built the documentation. Is there anything specific I need to do with it?
 
 
@@ -1144,7 +1141,7 @@ I have built the documentation. Is there anything specific I need to do with it?
 archive/issue_comments_065711.json:
 ```json
 {
-    "body": "Replying to [comment:46 jlokesh]:\n> Sorry for the modifications. I have deleted the previous commit.\n\nok, but you have not put the tests ;)\n\n> > In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> > \n> I have built the documentation. Is there anything specific I need to do with it?\n\nFirst it tells you that it builds correctly. Then, since you have a local version of the full html documentation, you can check that the pages generated for the files you have modified display properly / look nice. If it is the case, you have nothing else to do.",
+    "body": "Replying to [comment:46 jlokesh]:\n> Sorry for the modifications. I have deleted the previous commit.\n\n\nok, but you have not put the tests ;)\n\n> > In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> > \n\n> I have built the documentation. Is there anything specific I need to do with it?\n\nFirst it tells you that it builds correctly. Then, since you have a local version of the full html documentation, you can check that the pages generated for the files you have modified display properly / look nice. If it is the case, you have nothing else to do.",
     "created_at": "2017-06-07T07:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
@@ -1156,10 +1153,12 @@ archive/issue_comments_065711.json:
 Replying to [comment:46 jlokesh]:
 > Sorry for the modifications. I have deleted the previous commit.
 
+
 ok, but you have not put the tests ;)
 
 > > In case, you can "quickly" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.
 > > 
+
 > I have built the documentation. Is there anything specific I need to do with it?
 
 First it tells you that it builds correctly. Then, since you have a local version of the full html documentation, you can check that the pages generated for the files you have modified display properly / look nice. If it is the case, you have nothing else to do.

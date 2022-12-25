@@ -3,7 +3,7 @@
 archive/issues_006550.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nWhen ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours on 't2'). That could be shorted, by saving architectural defaults, but that needs the temporary files. \n \nSetting \n\n\n```\nDELETE_TMP=0\n```\n\n\non line 76 of $SAGE_ROOT/local/bin/sage-spkg causes a syntax error. \n\nWe need way to do this. Preferably from an environment variable. \n\nIn theory, if the line is changed to:\n\n\n```\nDELETE_TMP=\"${REMOVE_TMP:-1}\"\n```\n\n\nthen setting the environment variable REMOVE_TMP to 0 would make DELETE_TMP change from 1 to 0. Otherwise, it would default to 1.\n\nBut all I get are syntax errors. \n\nTo me, this is an important enhancement if we want to reduce the build time of Sage on 't2'\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6550\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nWhen ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours on 't2'). That could be shorted, by saving architectural defaults, but that needs the temporary files. \n \nSetting \n\n```\nDELETE_TMP=0\n```\n\non line 76 of $SAGE_ROOT/local/bin/sage-spkg causes a syntax error. \n\nWe need way to do this. Preferably from an environment variable. \n\nIn theory, if the line is changed to:\n\n```\nDELETE_TMP=\"${REMOVE_TMP:-1}\"\n```\n\nthen setting the environment variable REMOVE_TMP to 0 would make DELETE_TMP change from 1 to 0. Otherwise, it would default to 1.\n\nBut all I get are syntax errors. \n\nTo me, this is an important enhancement if we want to reduce the build time of Sage on 't2'\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6550\n\n",
     "created_at": "2009-07-17T18:01:54Z",
     "labels": [
         "component: algebra"
@@ -23,11 +23,9 @@ When ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours o
  
 Setting 
 
-
 ```
 DELETE_TMP=0
 ```
-
 
 on line 76 of $SAGE_ROOT/local/bin/sage-spkg causes a syntax error. 
 
@@ -35,11 +33,9 @@ We need way to do this. Preferably from an environment variable.
 
 In theory, if the line is changed to:
 
-
 ```
 DELETE_TMP="${REMOVE_TMP:-1}"
 ```
-
 
 then setting the environment variable REMOVE_TMP to 0 would make DELETE_TMP change from 1 to 0. Otherwise, it would default to 1.
 
@@ -138,7 +134,7 @@ Changing component from algebra to build.
 archive/issue_comments_053309.json:
 ```json
 {
-    "body": "It seems if I only change DELETE_TMP to 0, then it does work. But any attempt I have made to get the code to behave in the way an environment variable is set, just fails miserably. This is despite the fact that a bit of code that changes the value of DELETE_TMP outwide of Sage works fine. \n\nAlso, I note from that script that the -m option is supposed to be used to save temp files, which is what william told me. But it only works for one file. \n\nI wrote a small script (see below) which sets the variable DELETE_TMP to 0 or 1 in exactly the same way as in the script inside $SAGE_ROOT/local/bin/sage-spkg However, the setting is done depending on the value of an environment variable.  (I've tried simpler version too, but whatever I try, I can't seem to get something that allows an environment variable to decide if temporary files are kept or not. \n\n```\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\nkirkby@t2:[~] $ export DELETE_TMP_FILES=0\nkirkby@t2:[~] $ ./testprog\nTMPVAR=0\nDELETE_TMP=0\nDELETE_TMP is zero\nkirkby@t2:[~] $ export DELETE_TMP_FILES=1\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\nkirkby@t2:[~] $ unset DELETE_TMP_FILES\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\n```\n\nHere's the code which generates this. \n\n\n```/bin/sh\nTMPVAR=\"${DELETE_TMP_FILES-1}\"\necho \"TMPVAR=$TMPVAR\"\n\nif [ \"x$TMPVAR\" = \"x0\" ] ; then\n   DELETE_TMP=0\nelif [ \"x$TMPVAR\" = \"x1\" ] ; then\n   DELETE_TMP=1\nelse\n   echo \"Error in enviroment variable DELETE_TMP_FILES.\"\n   echo \"The enviroment variable DELETE_TMP_FILES should be set to 0 to keep the temporary files, or 1 to delete them. By default they are deleted\"\n   exit\nfi\necho \"DELETE_TMP=$DELETE_TMP\"\n\nif [ $DELETE_TMP -eq  1 ] ; then\n  echo \"DELETE_TMP is one\"\nfi\n\n\nif [ $DELETE_TMP -eq 0  ] ; then\n  echo \"DELETE_TMP is zero\"\nfi\n\n```\n",
+    "body": "It seems if I only change DELETE_TMP to 0, then it does work. But any attempt I have made to get the code to behave in the way an environment variable is set, just fails miserably. This is despite the fact that a bit of code that changes the value of DELETE_TMP outwide of Sage works fine. \n\nAlso, I note from that script that the -m option is supposed to be used to save temp files, which is what william told me. But it only works for one file. \n\nI wrote a small script (see below) which sets the variable DELETE_TMP to 0 or 1 in exactly the same way as in the script inside $SAGE_ROOT/local/bin/sage-spkg However, the setting is done depending on the value of an environment variable.  (I've tried simpler version too, but whatever I try, I can't seem to get something that allows an environment variable to decide if temporary files are kept or not. \n\n```\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\nkirkby@t2:[~] $ export DELETE_TMP_FILES=0\nkirkby@t2:[~] $ ./testprog\nTMPVAR=0\nDELETE_TMP=0\nDELETE_TMP is zero\nkirkby@t2:[~] $ export DELETE_TMP_FILES=1\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\nkirkby@t2:[~] $ unset DELETE_TMP_FILES\nkirkby@t2:[~] $ ./testprog\nTMPVAR=1\nDELETE_TMP=1\nDELETE_TMP is one\n```\nHere's the code which generates this. \n\n```/bin/sh\nTMPVAR=\"${DELETE_TMP_FILES-1}\"\necho \"TMPVAR=$TMPVAR\"\n\nif [ \"x$TMPVAR\" = \"x0\" ] ; then\n   DELETE_TMP=0\nelif [ \"x$TMPVAR\" = \"x1\" ] ; then\n   DELETE_TMP=1\nelse\n   echo \"Error in enviroment variable DELETE_TMP_FILES.\"\n   echo \"The enviroment variable DELETE_TMP_FILES should be set to 0 to keep the temporary files, or 1 to delete them. By default they are deleted\"\n   exit\nfi\necho \"DELETE_TMP=$DELETE_TMP\"\n\nif [ $DELETE_TMP -eq  1 ] ; then\n  echo \"DELETE_TMP is one\"\nfi\n\n\nif [ $DELETE_TMP -eq 0  ] ; then\n  echo \"DELETE_TMP is zero\"\nfi\n\n```",
     "created_at": "2009-07-19T15:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
@@ -174,9 +170,7 @@ TMPVAR=1
 DELETE_TMP=1
 DELETE_TMP is one
 ```
-
 Here's the code which generates this. 
-
 
 ```/bin/sh
 TMPVAR="${DELETE_TMP_FILES-1}"
@@ -206,7 +200,6 @@ fi
 
 
 
-
 ---
 
 archive/issue_comments_053310.json:
@@ -232,7 +225,7 @@ I can see it is going to be needed soon for debugging on Solaris, as deleting al
 archive/issue_comments_053311.json:
 ```json
 {
-    "body": "What happens with\n\n```diff\ndiff --git a/sage-spkg b/sage-spkg\n--- a/sage-spkg\n+++ b/sage-spkg\n@@ -84,6 +84,9 @@ if [ $1 = '-s' -o $1 = '-m' ]; then\n     DELETE_TMP=0\n     shift\n fi\n+if [ \"$SAGE_KEEP_SPKG_BUILD\" = \"yes\" ]; then\n+    DELETE_TMP=0\n+fi\n \n INSTALLED=\"$SAGE_PACKAGES/installed/\"\n PKG_NAME=`echo \"$1\" | sed -e \"s/\\.spkg$//\"`\n```\n\n?",
+    "body": "What happens with\n\n```diff\ndiff --git a/sage-spkg b/sage-spkg\n--- a/sage-spkg\n+++ b/sage-spkg\n@@ -84,6 +84,9 @@ if [ $1 = '-s' -o $1 = '-m' ]; then\n     DELETE_TMP=0\n     shift\n fi\n+if [ \"$SAGE_KEEP_SPKG_BUILD\" = \"yes\" ]; then\n+    DELETE_TMP=0\n+fi\n \n INSTALLED=\"$SAGE_PACKAGES/installed/\"\n PKG_NAME=`echo \"$1\" | sed -e \"s/\\.spkg$//\"`\n```\n?",
     "created_at": "2010-08-03T04:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
@@ -258,7 +251,6 @@ diff --git a/sage-spkg b/sage-spkg
  INSTALLED="$SAGE_PACKAGES/installed/"
  PKG_NAME=`echo "$1" | sed -e "s/\.spkg$//"`
 ```
-
 ?
 
 

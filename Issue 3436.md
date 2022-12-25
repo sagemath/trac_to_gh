@@ -3,7 +3,7 @@
 archive/issues_003436.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
     "created_at": "2008-06-16T04:56:11Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ CC:  @craigcitro
 
 Matrices with prescribed density are not generated correctly:
 
-
 ```
 sage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)
 sage: len(M.nonzero_positions())
@@ -31,7 +30,6 @@ sage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)
 sage: len(M.nonzero_positions())
 465
 ```
-
 
 To wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.
 
@@ -81,7 +79,7 @@ I'll also point out that the documentation for random_matrix says that density s
 archive/issue_comments_024166.json:
 ```json
 {
-    "body": "Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\n\n```\nsage: A=random_matrix(ZZ,1000,density=1e-3,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.000814000000000000\nsage: A=random_matrix(ZZ,10000,density=1e-4,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.0000796700000000000\nsage: A=random_matrix(ZZ,100000,density=1e-5,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.13230000000000e-6\nsage: A=random_matrix(ZZ,100000,density=1e-6,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.12600000000000e-7\nsage: A=random_matrix(ZZ,100000,density=1e-7,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.08000000000000e-8\n```\n",
+    "body": "Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\n```\nsage: A=random_matrix(ZZ,1000,density=1e-3,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.000814000000000000\nsage: A=random_matrix(ZZ,10000,density=1e-4,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.0000796700000000000\nsage: A=random_matrix(ZZ,100000,density=1e-5,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.13230000000000e-6\nsage: A=random_matrix(ZZ,100000,density=1e-6,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.12600000000000e-7\nsage: A=random_matrix(ZZ,100000,density=1e-7,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.08000000000000e-8\n```",
     "created_at": "2009-07-20T14:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -91,7 +89,6 @@ archive/issue_comments_024166.json:
 ```
 
 Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.
-
 
 ```
 sage: A=random_matrix(ZZ,1000,density=1e-3,sparse=True)  
@@ -113,13 +110,12 @@ sage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())
 
 
 
-
 ---
 
 archive/issue_comments_024167.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\nWhen I tried this, I got answers like the first two: the ratio of (fraction of nonzero entries) / (density) was about 4/5.  This is consistent with the observation in the ticket description that the randomize function doesn't check whether the random element is zero: for integers, the documentation for `random_element` says that the default distribution gives `Pr(X = 0) = 1/5`. \n\nI would try to write a patch for this but pretty much all of the matrix code is written in Cython, which I don't know, so anything I write would likely be buggy and slow things down by a factor of 100.",
+    "body": "Replying to [comment:3 jason]:\n> Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\n\nWhen I tried this, I got answers like the first two: the ratio of (fraction of nonzero entries) / (density) was about 4/5.  This is consistent with the observation in the ticket description that the randomize function doesn't check whether the random element is zero: for integers, the documentation for `random_element` says that the default distribution gives `Pr(X = 0) = 1/5`. \n\nI would try to write a patch for this but pretty much all of the matrix code is written in Cython, which I don't know, so anything I write would likely be buggy and slow things down by a factor of 100.",
     "created_at": "2009-09-30T03:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -130,6 +126,7 @@ archive/issue_comments_024167.json:
 
 Replying to [comment:3 jason]:
 > Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.
+
 
 When I tried this, I got answers like the first two: the ratio of (fraction of nonzero entries) / (density) was about 4/5.  This is consistent with the observation in the ticket description that the randomize function doesn't check whether the random element is zero: for integers, the documentation for `random_element` says that the default distribution gives `Pr(X = 0) = 1/5`. 
 
@@ -376,7 +373,7 @@ Personally, I don't really care about this (the speed of generating random matri
 archive/issue_comments_024180.json:
 ```json
 {
-    "body": "> Personally, I don't really care about this (the speed of generating random matrices),\n\nI care because this gets used a *LOT* in benchmarking and automated testing of linear algebra algorithms.",
+    "body": "> Personally, I don't really care about this (the speed of generating random matrices),\n\n\nI care because this gets used a *LOT* in benchmarking and automated testing of linear algebra algorithms.",
     "created_at": "2010-01-18T22:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -386,6 +383,7 @@ archive/issue_comments_024180.json:
 ```
 
 > Personally, I don't really care about this (the speed of generating random matrices),
+
 
 I care because this gets used a *LOT* in benchmarking and automated testing of linear algebra algorithms.
 
@@ -458,7 +456,7 @@ I view the fact that the random_element methods don't pass *args and **kwargs do
 archive/issue_comments_024184.json:
 ```json
 {
-    "body": "I've now finished the implementation, but I still need to re-base it.  Here are some timings.  First, the old implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 17.5 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 8.89 ms per loop\nsage: A = MS.random_element(density=0.1)\nsage: n(len(A.nonzero_positions())/10000)\n0.231700000000000\n```\n\nSecond, the new implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 22 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 9.36 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=True)')\n25 loops, best of 3: 9.35 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=False)')\n25 loops, best of 3: 9.37 ms per loop\nsage: A = MS.random_element(density=0.1, nonzero=True)\nsage: n(len(A.nonzero_positions())/10000)\n0.0963000000000000\n```\n",
+    "body": "I've now finished the implementation, but I still need to re-base it.  Here are some timings.  First, the old implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 17.5 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 8.89 ms per loop\nsage: A = MS.random_element(density=0.1)\nsage: n(len(A.nonzero_positions())/10000)\n0.231700000000000\n```\nSecond, the new implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 22 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 9.36 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=True)')\n25 loops, best of 3: 9.35 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=False)')\n25 loops, best of 3: 9.37 ms per loop\nsage: A = MS.random_element(density=0.1, nonzero=True)\nsage: n(len(A.nonzero_positions())/10000)\n0.0963000000000000\n```",
     "created_at": "2010-01-19T01:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -479,7 +477,6 @@ sage: A = MS.random_element(density=0.1)
 sage: n(len(A.nonzero_positions())/10000)
 0.231700000000000
 ```
-
 Second, the new implementation:
 
 ```
@@ -496,7 +493,6 @@ sage: A = MS.random_element(density=0.1, nonzero=True)
 sage: n(len(A.nonzero_positions())/10000)
 0.0963000000000000
 ```
-
 
 
 
@@ -703,7 +699,7 @@ Addendum to the last patch on polynomial quotients
 archive/issue_comments_024195.json:
 ```json
 {
-    "body": "Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly2.2.patch) by spancratz created at 2010-01-19 04:49:46\n\nHere are the timings for the code that Tom wrote, which gets rid of the \"ugly\" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):\n\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: time A = MS.random_element()\nCPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s\nWall time: 27.46 s\n```\n\n\nI suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.\n\nI don't think there is much we can do about this at the moment.  Thus, I propose that we should apply all of the patches on this ticket apart from ``trac3436-tb.patch``.  I'll flatten them a little, (1) main patch (2) ``random_element`` in polynomial rings, polynomial quotient rings, and number fields.  Hopefully, this will then pass all doctests and we'll be done.\n\nAny comments?\n\nPS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's patch.",
+    "body": "Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly2.2.patch) by spancratz created at 2010-01-19 04:49:46\n\nHere are the timings for the code that Tom wrote, which gets rid of the \"ugly\" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: time A = MS.random_element()\nCPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s\nWall time: 27.46 s\n```\n\nI suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.\n\nI don't think there is much we can do about this at the moment.  Thus, I propose that we should apply all of the patches on this ticket apart from ``trac3436-tb.patch``.  I'll flatten them a little, (1) main patch (2) ``random_element`` in polynomial rings, polynomial quotient rings, and number fields.  Hopefully, this will then pass all doctests and we'll be done.\n\nAny comments?\n\nPS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's patch.",
     "created_at": "2010-01-19T04:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
@@ -716,14 +712,12 @@ Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/tick
 
 Here are the timings for the code that Tom wrote, which gets rid of the "ugly" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):
 
-
 ```
 sage: MS = MatrixSpace(CyclotomicField(10), 100, 100)
 sage: time A = MS.random_element()
 CPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s
 Wall time: 27.46 s
 ```
-
 
 I suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.
 

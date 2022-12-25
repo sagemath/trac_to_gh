@@ -3,7 +3,7 @@
 archive/issues_006291.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nKeywords: AbelianGroup\n\nMissing identity function\n\nAbelianGroup patch\nSince we can do;\n\n```\nsage: G = DihedralGroup(10)\nsage: G.identity()\n()\nsage: G = SymmetricGroup(5)\nsage: G.identity()\n()\n```\n\nI thought we should be able to do the following\n\n```\nsage: G = AbelianGroup([2,2])\nsage: G.identity()\n1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6291\n\n",
+    "body": "Assignee: joyner\n\nKeywords: AbelianGroup\n\nMissing identity function\n\nAbelianGroup patch\nSince we can do;\n\n```\nsage: G = DihedralGroup(10)\nsage: G.identity()\n()\nsage: G = SymmetricGroup(5)\nsage: G.identity()\n()\n```\nI thought we should be able to do the following\n\n```\nsage: G = AbelianGroup([2,2])\nsage: G.identity()\n1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6291\n\n",
     "created_at": "2009-06-15T03:30:39Z",
     "labels": [
         "component: group theory",
@@ -33,7 +33,6 @@ sage: G = SymmetricGroup(5)
 sage: G.identity()
 ()
 ```
-
 I thought we should be able to do the following
 
 ```
@@ -41,7 +40,6 @@ sage: G = AbelianGroup([2,2])
 sage: G.identity()
 1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6291
 

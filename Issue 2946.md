@@ -3,7 +3,7 @@
 archive/issues_002946.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: jordan_form, matrix\n\nMatrices with 0 eigenvalues crash jordan_form.  1x1 matrices do not seem affected, so the simplest example is:\n\n\n```\nj1 = matrix(ZZ,2,2,[[0,0],[0,0]])\nj1.jordan_form()\n```\n\n\nThe following code might be of some use in testing this; the function tough_nut(n) produces a highly degenerate nilpotent n by n matrix:\n\n\n```\ndef uprand(i,j, max_i = 1):\n    if i > j: return 0\n    if i == j: return 1\n    return Integer(randint(0,max_i))\ndef superd(i,j, odds = .75):\n    if j - i == 1: \n        temp = random()\n        if temp < odds: return 1\n        else: return 0\n    return 0\ndef tough_nut(m_size, odds = .75):\n    t1 = matrix(ZZ,m_size,m_size,[[uprand(i, j, max_i = 4) for j in range(m_size)] for i in range(m_size)])\n    t2 = matrix(ZZ,m_size,m_size,[[uprand(i, j, max_i = 4) for j in range(m_size)] for i in range(m_size)])\n    t2 = t2.transpose()\n    pre_j = matrix(ZZ,m_size,m_size,[[superd(i,j, odds = odds) for j in range(m_size)] for i in range(m_size)])\n    mystery_mat = t1*t2*pre_j*t2.inverse()*t1.inverse()\n    return mystery_mat\n```\n\n\nAt first I thought this was only caused by nilpotents, but it affects many matrices with a zero eigenvalue.  Maybe it is more pervasive than that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2946\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: jordan_form, matrix\n\nMatrices with 0 eigenvalues crash jordan_form.  1x1 matrices do not seem affected, so the simplest example is:\n\n```\nj1 = matrix(ZZ,2,2,[[0,0],[0,0]])\nj1.jordan_form()\n```\n\nThe following code might be of some use in testing this; the function tough_nut(n) produces a highly degenerate nilpotent n by n matrix:\n\n```\ndef uprand(i,j, max_i = 1):\n    if i > j: return 0\n    if i == j: return 1\n    return Integer(randint(0,max_i))\ndef superd(i,j, odds = .75):\n    if j - i == 1: \n        temp = random()\n        if temp < odds: return 1\n        else: return 0\n    return 0\ndef tough_nut(m_size, odds = .75):\n    t1 = matrix(ZZ,m_size,m_size,[[uprand(i, j, max_i = 4) for j in range(m_size)] for i in range(m_size)])\n    t2 = matrix(ZZ,m_size,m_size,[[uprand(i, j, max_i = 4) for j in range(m_size)] for i in range(m_size)])\n    t2 = t2.transpose()\n    pre_j = matrix(ZZ,m_size,m_size,[[superd(i,j, odds = odds) for j in range(m_size)] for i in range(m_size)])\n    mystery_mat = t1*t2*pre_j*t2.inverse()*t1.inverse()\n    return mystery_mat\n```\n\nAt first I thought this was only caused by nilpotents, but it affects many matrices with a zero eigenvalue.  Maybe it is more pervasive than that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2946\n\n",
     "created_at": "2008-04-17T21:27:33Z",
     "labels": [
         "component: linear algebra",
@@ -23,15 +23,12 @@ Keywords: jordan_form, matrix
 
 Matrices with 0 eigenvalues crash jordan_form.  1x1 matrices do not seem affected, so the simplest example is:
 
-
 ```
 j1 = matrix(ZZ,2,2,[[0,0],[0,0]])
 j1.jordan_form()
 ```
 
-
 The following code might be of some use in testing this; the function tough_nut(n) produces a highly degenerate nilpotent n by n matrix:
-
 
 ```
 def uprand(i,j, max_i = 1):
@@ -52,7 +49,6 @@ def tough_nut(m_size, odds = .75):
     mystery_mat = t1*t2*pre_j*t2.inverse()*t1.inverse()
     return mystery_mat
 ```
-
 
 At first I thought this was only caused by nilpotents, but it affects many matrices with a zero eigenvalue.  Maybe it is more pervasive than that.
 
@@ -193,7 +189,7 @@ Resolution changed from fixed to
 archive/issue_comments_020276.json:
 ```json
 {
-    "body": "There are rejection problems [with or without #2947 applied]:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch\npatching file sage/matrix/constructor.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 3591 (offset 59 lines).\nHunk #2 FAILED at 3601.\nHunk #3 FAILED at 3630.\n2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\n```\n\nCheers,\n\nMichael",
+    "body": "There are rejection problems [with or without #2947 applied]:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch\npatching file sage/matrix/constructor.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 3591 (offset 59 lines).\nHunk #2 FAILED at 3601.\nHunk #3 FAILED at 3630.\n2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\n```\nCheers,\n\nMichael",
     "created_at": "2008-04-18T06:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",
     "type": "issue_comment",
@@ -214,7 +210,6 @@ Hunk #2 FAILED at 3601.
 Hunk #3 FAILED at 3630.
 2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej
 ```
-
 Cheers,
 
 Michael

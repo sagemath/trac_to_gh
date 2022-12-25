@@ -3,7 +3,7 @@
 archive/issues_000922.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nInconsistent types:\n\n\n```\nsage: vv = prime_powers(10)\nsage: type(vv[0])\n<type 'int'>\nsage: type(vv[1])\n<type 'sage.rings.integer.Integer'>\n```\n\n\nFreebie for bug day on Saturday :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/922\n\n",
+    "body": "Assignee: somebody\n\nInconsistent types:\n\n```\nsage: vv = prime_powers(10)\nsage: type(vv[0])\n<type 'int'>\nsage: type(vv[1])\n<type 'sage.rings.integer.Integer'>\n```\n\nFreebie for bug day on Saturday :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/922\n\n",
     "created_at": "2007-10-18T18:35:31Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 Inconsistent types:
 
-
 ```
 sage: vv = prime_powers(10)
 sage: type(vv[0])
@@ -28,7 +27,6 @@ sage: type(vv[0])
 sage: type(vv[1])
 <type 'sage.rings.integer.Integer'>
 ```
-
 
 Freebie for bug day on Saturday :-)
 

@@ -3,7 +3,7 @@
 archive/issues_005301.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ghtdak @jasongrout\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n\t [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ghtdak @jasongrout\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n\t [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
     "created_at": "2009-02-18T06:57:29Z",
     "labels": [
         "component: graphics",
@@ -51,7 +51,6 @@ Exception raised:
 1 items had failures:
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5301
 
 
@@ -63,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5301
 archive/issue_comments_040698.json:
 ```json
 {
-    "body": "This problem is caused by this code snipped:\n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n    sage: xl = xlabel('time (s)')\n    sage: yl = ylabel('voltage (mV)')\n    sage: t = title('About as simple as it gets, folks')\n    sage: grid(True)\n    sage: savefig('sage.png')\n```\n\n\nGlenn has reported the same issue on a Linux box. This might be a genuine bug in MPL. \n\nCheers,\n\nMichael",
+    "body": "This problem is caused by this code snipped:\n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n    sage: xl = xlabel('time (s)')\n    sage: yl = ylabel('voltage (mV)')\n    sage: t = title('About as simple as it gets, folks')\n    sage: grid(True)\n    sage: savefig('sage.png')\n```\n\nGlenn has reported the same issue on a Linux box. This might be a genuine bug in MPL. \n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T10:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
@@ -85,7 +84,6 @@ This problem is caused by this code snipped:
     sage: grid(True)
     sage: savefig('sage.png')
 ```
-
 
 Glenn has reported the same issue on a Linux box. This might be a genuine bug in MPL. 
 
@@ -122,7 +120,7 @@ Michael
 archive/issue_comments_040700.json:
 ```json
 {
-    "body": "I think there are two separate problems:\n\n(1) \n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n[a popup appears]\n```\n\n\n(2) then do the following one line after the above:\n\n```\nsage: savefig('sage.png')\nBOOM\nValueError: Unknown file type\n```\n\n\nOther remarks:\n\n* This bug occurs exactly the same in the notebook, so is a major show stopper.\n \n* There is probably a way to get around it, since of course our own matplotlib-based plotting works fine without popping up GUI's and writing to files. \n\n\nI'm guessing the the best fix is to patch setup.py to avoid building any GUI backends for now, until we can figure out how to patch pylab itself to not use the GUI backends.  I mean, given that one has built any GUI backend, the above behavior (sans the savefig issue) definitely seems like appropriate behavior for matplotlib.",
+    "body": "I think there are two separate problems:\n\n(1) \n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n[a popup appears]\n```\n\n(2) then do the following one line after the above:\n\n```\nsage: savefig('sage.png')\nBOOM\nValueError: Unknown file type\n```\n\nOther remarks:\n\n* This bug occurs exactly the same in the notebook, so is a major show stopper.\n \n* There is probably a way to get around it, since of course our own matplotlib-based plotting works fine without popping up GUI's and writing to files. \n\n\nI'm guessing the the best fix is to patch setup.py to avoid building any GUI backends for now, until we can figure out how to patch pylab itself to not use the GUI backends.  I mean, given that one has built any GUI backend, the above behavior (sans the savefig issue) definitely seems like appropriate behavior for matplotlib.",
     "created_at": "2009-02-20T14:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ I think there are two separate problems:
 [a popup appears]
 ```
 
-
 (2) then do the following one line after the above:
 
 ```
@@ -151,7 +148,6 @@ sage: savefig('sage.png')
 BOOM
 ValueError: Unknown file type
 ```
-
 
 Other remarks:
 

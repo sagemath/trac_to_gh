@@ -3,7 +3,7 @@
 archive/issues_001133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nHi,\n\nIs there a limit on the size of permutations with the Gap interface? I\nmanaged to get an error today which seems to be due to Gap putting\n\"(...)\" at the end of a line. Here's the error:\n\n<type 'exceptions.TypeError'>: Gap produced error output\nSyntax error: expression expected in /home/carlo/.sage//temp/t40/13158//interf\\\nace//tmp line 1\n$sage3:=(1,2,8,30,43,13,3)(4,18,56,140,145,59,19)(5,23,69,162,167,72,24)(6,11,\\\n33,86,114,46,16)(7,12,34,87,115,47,17)(9,35,96,208,146,61,21)(10,38,103,220,16\\\n8,74,27)(14,22,58,141,252,124,48)(15,26,71,163,264,131,51)(20,62,150,284,288,1\\\n53,63)(25,75,172,306,310,175,76)(28,41,94,190,234,122,54)(29,42,95,191,235,123\\\n,55)(31,88,192,281,149,67,37)(32,91,199,303,171,81,40)(36,98,211,237,241,213,9\\\n9)(39,105,223,244,248,225,106)(44,50,68,144,277,236,116)(45,53,80,166,299,243,\\\n119)(49,126,255,197,193,258,127)(52,133,267,204,200,270,134)(57,142,278,232,28\\\n9,155,65)(60,66,152,285,185,282,147)(64,156,292,319,333,295,157)(70,164,300,23\\\n3,311,177,79)(73,78,174,307,188,304,169)(77,178,314,322,336,315,179)(82,110,20\\\n6,298,280,250,138)(83,111,207,276,302,251,139)(...);;\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                               ^\n\n  executing Read(\"/home/carlo/.sage//temp/t40/13158//interface//tmp\");\n\n\n\nHere's the code to reproduce it:\n\ndef p3Group(p):\n   assert is_prime(p)\n\n   F = gap.new(\"FreeGroup(3)\")\n\n   a = F.gen(1)\n   b = F.gen(2)\n   c = F.gen(3)\n\n   rels = []\n   rels.append( a**Integer(p) )\n   rels.append( b**Integer(p) )\n   rels.append( c**Integer(p) )\n   rels.append( a*b*((b*a*c)**Integer(-1)) )\n   rels.append( c*a*((a*c)**Integer(-1)) )\n   rels.append( c*b*((b*c)**Integer(-1)) )\n\n   N = gap.NormalClosure(F, gap.Subgroup(F, rels))\n   niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\n\n   a = PermutationGroupElement(gap.Image(niso, a))\n\n# This works:\np3Group(5)\n\n# This blows up:\np3Group(7)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1133\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nHi,\n\nIs there a limit on the size of permutations with the Gap interface? I\nmanaged to get an error today which seems to be due to Gap putting\n\"(...)\" at the end of a line. Here's the error:\n\n<type 'exceptions.TypeError'>: Gap produced error output\nSyntax error: expression expected in /home/carlo/.sage//temp/t40/13158//interf\\\nace//tmp line 1\n$sage3:=(1,2,8,30,43,13,3)(4,18,56,140,145,59,19)(5,23,69,162,167,72,24)(6,11,\\\n33,86,114,46,16)(7,12,34,87,115,47,17)(9,35,96,208,146,61,21)(10,38,103,220,16\\\n8,74,27)(14,22,58,141,252,124,48)(15,26,71,163,264,131,51)(20,62,150,284,288,1\\\n53,63)(25,75,172,306,310,175,76)(28,41,94,190,234,122,54)(29,42,95,191,235,123\\\n,55)(31,88,192,281,149,67,37)(32,91,199,303,171,81,40)(36,98,211,237,241,213,9\\\n9)(39,105,223,244,248,225,106)(44,50,68,144,277,236,116)(45,53,80,166,299,243,\\\n119)(49,126,255,197,193,258,127)(52,133,267,204,200,270,134)(57,142,278,232,28\\\n9,155,65)(60,66,152,285,185,282,147)(64,156,292,319,333,295,157)(70,164,300,23\\\n3,311,177,79)(73,78,174,307,188,304,169)(77,178,314,322,336,315,179)(82,110,20\\\n6,298,280,250,138)(83,111,207,276,302,251,139)(...);;\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                                                             \\\n                                               ^\n\n  executing Read(\"/home/carlo/.sage//temp/t40/13158//interface//tmp\");\n\n\n\nHere's the code to reproduce it:\n\ndef p3Group(p):\n   assert is_prime(p)\n\n   F = gap.new(\"FreeGroup(3)\")\n\n   a = F.gen(1)\n   b = F.gen(2)\n   c = F.gen(3)\n\n   rels = []\n   rels.append( a**Integer(p) )\n   rels.append( b**Integer(p) )\n   rels.append( c**Integer(p) )\n   rels.append( a*b*((b*a*c)**Integer(-1)) )\n   rels.append( c*a*((a*c)**Integer(-1)) )\n   rels.append( c*b*((b*c)**Integer(-1)) )\n\n   N = gap.NormalClosure(F, gap.Subgroup(F, rels))\n   niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\n\n   a = PermutationGroupElement(gap.Image(niso, a))\n\n# This works:\np3Group(5)\n\n# This blows up:\np3Group(7)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1133\n\n",
     "created_at": "2007-11-09T07:25:38Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_001133.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -86,7 +85,6 @@ p3Group(5)
 p3Group(7)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1133
 
 
@@ -98,7 +96,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1133
 archive/issue_comments_006846.json:
 ```json
 {
-    "body": "Solution-ish:\n\n```\n---------- Forwarded message ----------\nFrom: Steve Linton <sal@cs.st-and.ac.uk>\nDate: Nov 9, 2007 3:49 AM\nSubject: Re: Fwd: [sage-support] Issue with interface to Gap in 2.8.12\nTo: David Joyner <wdjoyner@gmail.com>\n\n\nDistinction between Print and View is the issue here. Viw truncates, Print\ndoes not.\n\nTry\n\ngap> PermList([1000,999..1]);\n\nand compare\n\ngap> Print(PermList([1000,999..1]),\"\\n\");\n\n       Steve\n\n```\n",
+    "body": "Solution-ish:\n\n```\n---------- Forwarded message ----------\nFrom: Steve Linton <sal@cs.st-and.ac.uk>\nDate: Nov 9, 2007 3:49 AM\nSubject: Re: Fwd: [sage-support] Issue with interface to Gap in 2.8.12\nTo: David Joyner <wdjoyner@gmail.com>\n\n\nDistinction between Print and View is the issue here. Viw truncates, Print\ndoes not.\n\nTry\n\ngap> PermList([1000,999..1]);\n\nand compare\n\ngap> Print(PermList([1000,999..1]),\"\\n\");\n\n       Steve\n\n```",
     "created_at": "2007-11-10T12:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1133",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ gap> Print(PermList([1000,999..1]),"\n");
 
 
 
-
 ---
 
 archive/issue_comments_006847.json:
@@ -158,7 +155,7 @@ See the last patch of #1296
 archive/issue_comments_006848.json:
 ```json
 {
-    "body": "This issue was fixed by Robert Bradshaw's patch referred above and merged in 2.9.0. It works in Sage 2.9.1.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9.1.1, Release Date: 2007-12-25                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: def p3Group(p):\n....:        assert is_prime(p)\n....:    F = gap.new(\"FreeGroup(3)\")\n....:    a = F.gen(1)\n....:    b = F.gen(2)\n....:    c = F.gen(3)\n....:    rels = []\n....:    rels.append( a**Integer(p) )\n....:    rels.append( b**Integer(p) )\n....:    rels.append( c**Integer(p) )\n....:    rels.append( a*b*((b*a*c)**Integer(-1)) )\n....:    rels.append( c*a*((a*c)**Integer(-1)) )\n....:    rels.append( c*b*((b*c)**Integer(-1)) )\n....:    N = gap.NormalClosure(F, gap.Subgroup(F, rels))\n....:    niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\n....:    a = PermutationGroupElement(gap.Image(niso, a))\n....:\nsage: p3Group(5)\nsage: p3Group(7)\nsage:\n```\n\nBut we still might need to use `View` in a the GAP interface. Can somebody confirm that it is no longer needed since Robert's patch probably eliminated that code? But it might just be that the same problem exists in other places in the GAP interface.\n\nCheers,\n\nMichael",
+    "body": "This issue was fixed by Robert Bradshaw's patch referred above and merged in 2.9.0. It works in Sage 2.9.1.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9.1.1, Release Date: 2007-12-25                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: def p3Group(p):\n....:        assert is_prime(p)\n....:    F = gap.new(\"FreeGroup(3)\")\n....:    a = F.gen(1)\n....:    b = F.gen(2)\n....:    c = F.gen(3)\n....:    rels = []\n....:    rels.append( a**Integer(p) )\n....:    rels.append( b**Integer(p) )\n....:    rels.append( c**Integer(p) )\n....:    rels.append( a*b*((b*a*c)**Integer(-1)) )\n....:    rels.append( c*a*((a*c)**Integer(-1)) )\n....:    rels.append( c*b*((b*c)**Integer(-1)) )\n....:    N = gap.NormalClosure(F, gap.Subgroup(F, rels))\n....:    niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\n....:    a = PermutationGroupElement(gap.Image(niso, a))\n....:\nsage: p3Group(5)\nsage: p3Group(7)\nsage:\n```\nBut we still might need to use `View` in a the GAP interface. Can somebody confirm that it is no longer needed since Robert's patch probably eliminated that code? But it might just be that the same problem exists in other places in the GAP interface.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-29T21:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1133",
     "type": "issue_comment",
@@ -195,7 +192,6 @@ sage: p3Group(5)
 sage: p3Group(7)
 sage:
 ```
-
 But we still might need to use `View` in a the GAP interface. Can somebody confirm that it is no longer needed since Robert's patch probably eliminated that code? But it might just be that the same problem exists in other places in the GAP interface.
 
 Cheers,
@@ -226,7 +222,7 @@ archive/issue_events_003028.json:
 archive/issue_comments_006849.json:
 ```json
 {
-    "body": "This works:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach foo.sage\nsage: p3Group\np3Group\nsage: p3Group?\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function p3Group at 0x2b14f4d08938>\nNamespace:      Interactive\nFile:           /home/mabshoff/.sage/temp/sage/16347/_scratch_mabshoff_release_cycle_sage_3_0_alpha0_foo_sage_0.py\nDefinition:     p3Group(p)\nDocstring:\n    x.__init__(...) initializes x; see x.__class__.__doc__ for signature\n\nsage: p3Group(3)\nsage: p3Group(5)\nsage: p3Group(7)\nsage: p3Group(11)\nsage: p3Group(17)\nsage:\nExiting SAGE (CPU time 0m1.25s, Wall time 1m4.75s).\nExiting spawned Gap process.\n```\n",
+    "body": "This works:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach foo.sage\nsage: p3Group\np3Group\nsage: p3Group?\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function p3Group at 0x2b14f4d08938>\nNamespace:      Interactive\nFile:           /home/mabshoff/.sage/temp/sage/16347/_scratch_mabshoff_release_cycle_sage_3_0_alpha0_foo_sage_0.py\nDefinition:     p3Group(p)\nDocstring:\n    x.__init__(...) initializes x; see x.__class__.__doc__ for signature\n\nsage: p3Group(3)\nsage: p3Group(5)\nsage: p3Group(7)\nsage: p3Group(11)\nsage: p3Group(17)\nsage:\nExiting SAGE (CPU time 0m1.25s, Wall time 1m4.75s).\nExiting spawned Gap process.\n```",
     "created_at": "2008-04-01T17:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1133",
     "type": "issue_comment",
@@ -265,7 +261,6 @@ sage:
 Exiting SAGE (CPU time 0m1.25s, Wall time 1m4.75s).
 Exiting spawned Gap process.
 ```
-
 
 
 
@@ -308,7 +303,7 @@ archive/issue_events_003029.json:
 archive/issue_comments_006851.json:
 ```json
 {
-    "body": "\n```\n[21:45] <mabshoff> wstein: could you check #1133 and conform that we can close it.\n[21:48] <wstein> I confirm that 1133 looks fixed.\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n[21:45] <mabshoff> wstein: could you check #1133 and conform that we can close it.\n[21:48] <wstein> I confirm that 1133 looks fixed.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T20:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1133",
     "type": "issue_comment",
@@ -317,12 +312,10 @@ archive/issue_comments_006851.json:
 }
 ```
 
-
 ```
 [21:45] <mabshoff> wstein: could you check #1133 and conform that we can close it.
 [21:48] <wstein> I confirm that 1133 looks fixed.
 ```
-
 
 Cheers,
 

@@ -177,7 +177,7 @@ Changing type from defect to task.
 archive/issue_comments_078737.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> A 3rd version of a sketch of a press release.\n\njust a small thing, press messages must end with \"# # #\", that's a standard to signal where it is ending.",
+    "body": "Replying to [comment:4 mvngu]:\n> A 3rd version of a sketch of a press release.\n\n\njust a small thing, press messages must end with \"# # #\", that's a standard to signal where it is ending.",
     "created_at": "2010-04-12T09:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8668",
     "type": "issue_comment",
@@ -188,6 +188,7 @@ archive/issue_comments_078737.json:
 
 Replying to [comment:4 mvngu]:
 > A 3rd version of a sketch of a press release.
+
 
 just a small thing, press messages must end with "# # #", that's a standard to signal where it is ending.
 

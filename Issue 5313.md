@@ -3,7 +3,7 @@
 archive/issues_005313.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @nexttime\n\nWhen looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting\n\n\n```\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\n\nas an error, one gets\n\n\n```\nSINGULAR error: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n...\nand then an exception is raised!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5313\n\n",
+    "body": "Assignee: @malb\n\nCC:  @nexttime\n\nWhen looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting\n\n```\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\nas an error, one gets\n\n```\nSINGULAR error: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n...\nand then an exception is raised!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5313\n\n",
     "created_at": "2009-02-19T19:18:47Z",
     "labels": [
         "component: commutative algebra",
@@ -22,16 +22,13 @@ CC:  @nexttime
 
 When looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting
 
-
 ```
 error: no more memory
 System 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2
 
 halt 14
 ```
-
 as an error, one gets
-
 
 ```
 SINGULAR error: no more memory
@@ -39,7 +36,6 @@ System 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/1
 ...
 and then an exception is raised!
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5313
 
@@ -88,7 +84,7 @@ This is really an enhancement, not a bug.
 archive/issue_comments_040840.json:
 ```json
 {
-    "body": "I'm wrong, this is a *BUG*, since Sage should not exit on memory overflow, but should instead raise an exception. \nHere's a new example to illustrate the problem:\n\n```\n\nsage: n=500\nsage: R = PolynomialRing(QQ,n,names='x')\nsage: f = sum(R.gens())\nsage: g = f*f\n\nerror: no more memory\nSystem 212048k:212048k Appl 164440k/2763k Malloc 156k/0k Valloc 167048k/2763k Pages 41762/0 Regions 360:360\n\nhalt 14\nwstein@sage:~/build/sage-4.4.4/spkg/standard$   \n```\n\n\nI should not be dumped to the command prompt!",
+    "body": "I'm wrong, this is a *BUG*, since Sage should not exit on memory overflow, but should instead raise an exception. \nHere's a new example to illustrate the problem:\n\n```\n\nsage: n=500\nsage: R = PolynomialRing(QQ,n,names='x')\nsage: f = sum(R.gens())\nsage: g = f*f\n\nerror: no more memory\nSystem 212048k:212048k Appl 164440k/2763k Malloc 156k/0k Valloc 167048k/2763k Pages 41762/0 Regions 360:360\n\nhalt 14\nwstein@sage:~/build/sage-4.4.4/spkg/standard$   \n```\n\nI should not be dumped to the command prompt!",
     "created_at": "2010-07-14T13:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -114,7 +110,6 @@ halt 14
 wstein@sage:~/build/sage-4.4.4/spkg/standard$   
 ```
 
-
 I should not be dumped to the command prompt!
 
 
@@ -124,7 +119,7 @@ I should not be dumped to the command prompt!
 archive/issue_comments_040841.json:
 ```json
 {
-    "body": "More complete log on sage.math:\n\n```\n\nwstein@sage:~/build/sage-4.4.4$ ulimit -v 1000000\nwstein@sage:~/build/sage-4.4.4$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n = 1000\nsage: R = PolynomialRing(QQ,n,names='x')\nsage: f = sum(R.gens())\nsage: g = f*f\nerror: no more memory\nSystem 212080k:212080k Appl 168836k/2090k Malloc 211k/0k Valloc 170716k/2090k Pages 42679/0 Regions 388:388\nhalt 14\nwstein@sage:~/build/sage-4.4.4$ \n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "More complete log on sage.math:\n\n```\n\nwstein@sage:~/build/sage-4.4.4$ ulimit -v 1000000\nwstein@sage:~/build/sage-4.4.4$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n = 1000\nsage: R = PolynomialRing(QQ,n,names='x')\nsage: f = sum(R.gens())\nsage: g = f*f\nerror: no more memory\nSystem 212080k:212080k Appl 168836k/2090k Malloc 211k/0k Valloc 170716k/2090k Pages 42679/0 Regions 388:388\nhalt 14\nwstein@sage:~/build/sage-4.4.4$ \n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n```",
     "created_at": "2010-07-14T20:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -152,7 +147,6 @@ wstein@sage:~/build/sage-4.4.4$
 | Sage Version 4.4.4.1, Release Date: 2010-06-28                     |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 
 
@@ -206,7 +200,7 @@ To work on singular:
 archive/issue_comments_040844.json:
 ```json
 {
-    "body": "To get rid of the \"exit of out sage\" issue hackishly:\n\n1. Modify src/kernel/mminit.cc and put abort() right after the first fprintf in the function void omSingOutOfMemoryFunc().\n\n2. Edit the file devel/sage/sage/libs/singular/polynomial.pyx  by adding _sig_on/_sig_off around `ret[0] = pp_Mult_qq(p, q, r)` in the function singular_polynomial_mul. \n\nThen we have:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: n = 1000\nsage: sage: R = PolynomialRing(QQ,n,names='x')\nsage: sage: f = sum(R.gens())\nsage: sage: g = f*f\n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n2 - Singular error: no more memory\ncalling abort\nsage: \n```\n\n\nNote that strangely there is no traceback.  But at least one gets the sage prompt back.\n\nRegarding speed:\n\nWITH the _sig_on/_sig_off stuff:\n\n```\n\nsage: R.<x,y,z> = PolynomialRing(QQ)\nsage: f = (x+y+z)^2\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 12.6 \u00b5s per loop\nsage: f = (x+y+z)\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 11.4 \u00b5s per loop\nsage: f = (x+y+z)^10+1\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('x*x')\n625 loops, best of 3: 410 ns per loop\n```\n\nand without it:\n\n\n```\nsage: sage: R.<x,y,z> = PolynomialRing(QQ)\nsage: sage: f = (x+y+z)^2\nsage:  timeit('f*(f+1)')\n625 loops, best of 3: 12.4 \u00b5s per loop\nsage: sage: f = (x+y+z)\nsage: sage: timeit('f*(f+1)')\n625 loops, best of 3: 11.2 \u00b5s per loop\nsage: sage: f = (x+y+z)^10+1\nsage: sage: timeit('f*(f+1)')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('x*x')\n625 loops, best of 3: 290 ns per loop\n```\n\n\nThis is all on sage.math.",
+    "body": "To get rid of the \"exit of out sage\" issue hackishly:\n\n1. Modify src/kernel/mminit.cc and put abort() right after the first fprintf in the function void omSingOutOfMemoryFunc().\n\n2. Edit the file devel/sage/sage/libs/singular/polynomial.pyx  by adding _sig_on/_sig_off around `ret[0] = pp_Mult_qq(p, q, r)` in the function singular_polynomial_mul. \n\nThen we have:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: n = 1000\nsage: sage: R = PolynomialRing(QQ,n,names='x')\nsage: sage: f = sum(R.gens())\nsage: sage: g = f*f\n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n2 - Singular error: no more memory\ncalling abort\nsage: \n```\n\nNote that strangely there is no traceback.  But at least one gets the sage prompt back.\n\nRegarding speed:\n\nWITH the _sig_on/_sig_off stuff:\n\n```\n\nsage: R.<x,y,z> = PolynomialRing(QQ)\nsage: f = (x+y+z)^2\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 12.6 \u00b5s per loop\nsage: f = (x+y+z)\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 11.4 \u00b5s per loop\nsage: f = (x+y+z)^10+1\nsage: timeit('f*(f+1)')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('x*x')\n625 loops, best of 3: 410 ns per loop\n```\nand without it:\n\n```\nsage: sage: R.<x,y,z> = PolynomialRing(QQ)\nsage: sage: f = (x+y+z)^2\nsage:  timeit('f*(f+1)')\n625 loops, best of 3: 12.4 \u00b5s per loop\nsage: sage: f = (x+y+z)\nsage: sage: timeit('f*(f+1)')\n625 loops, best of 3: 11.2 \u00b5s per loop\nsage: sage: f = (x+y+z)^10+1\nsage: sage: timeit('f*(f+1)')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('x*x')\n625 loops, best of 3: 290 ns per loop\n```\n\nThis is all on sage.math.",
     "created_at": "2010-07-14T21:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -237,7 +231,6 @@ calling abort
 sage: 
 ```
 
-
 Note that strangely there is no traceback.  But at least one gets the sage prompt back.
 
 Regarding speed:
@@ -259,9 +252,7 @@ sage: timeit('f*(f+1)')
 sage: timeit('x*x')
 625 loops, best of 3: 410 ns per loop
 ```
-
 and without it:
-
 
 ```
 sage: sage: R.<x,y,z> = PolynomialRing(QQ)
@@ -277,7 +268,6 @@ sage: sage: timeit('f*(f+1)')
 sage: timeit('x*x')
 625 loops, best of 3: 290 ns per loop
 ```
-
 
 This is all on sage.math.
 
@@ -402,7 +392,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_040851.json:
 ```json
 {
-    "body": "Okay, I can confirm that the equivalent of [attachment:Singular_error.patch] is in the Singular in Sage, but that nothing like [attachment:singular-spkg_add_abort.patch] is in the current Singular - `abort()` is not called, and can confirm that William's example with the ulimit still fails to raise an exception, although it does now say Singular in the error.  Sorry for not reading more carefully before.\n\nFurther, the patch [attachment:trac_5313-sigon_sigoff.patch] to Sage no longer applies.\n\n```\npatching file sage/libs/singular/polynomial.pyx\nHunk #4 FAILED at 266\nHunk #5 FAILED at 336\n2 out of 5 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej\nabort: patch failed to apply\n```\n\n\nFinally, should we submit a pull request or issue [upstream](https://github.com/Singular/Sources) for the abort issue, or is that truly too hackish to ask them to do?  Putting none of the above for upstream since one thing was completely incorporated while the other they apparently don't even know about.",
+    "body": "Okay, I can confirm that the equivalent of [attachment:Singular_error.patch] is in the Singular in Sage, but that nothing like [attachment:singular-spkg_add_abort.patch] is in the current Singular - `abort()` is not called, and can confirm that William's example with the ulimit still fails to raise an exception, although it does now say Singular in the error.  Sorry for not reading more carefully before.\n\nFurther, the patch [attachment:trac_5313-sigon_sigoff.patch] to Sage no longer applies.\n\n```\npatching file sage/libs/singular/polynomial.pyx\nHunk #4 FAILED at 266\nHunk #5 FAILED at 336\n2 out of 5 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej\nabort: patch failed to apply\n```\n\nFinally, should we submit a pull request or issue [upstream](https://github.com/Singular/Sources) for the abort issue, or is that truly too hackish to ask them to do?  Putting none of the above for upstream since one thing was completely incorporated while the other they apparently don't even know about.",
     "created_at": "2012-07-05T14:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
@@ -422,7 +412,6 @@ Hunk #5 FAILED at 336
 2 out of 5 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej
 abort: patch failed to apply
 ```
-
 
 Finally, should we submit a pull request or issue [upstream](https://github.com/Singular/Sources) for the abort issue, or is that truly too hackish to ask them to do?  Putting none of the above for upstream since one thing was completely incorporated while the other they apparently don't even know about.
 

@@ -104,7 +104,7 @@ Looks good to me.
 archive/issue_comments_084093.json:
 ```json
 {
-    "body": "Hi Mike!\n\nReplying to [comment:2 mhansen]:\n> Looks good to me.\n\nThanks for the review!",
+    "body": "Hi Mike!\n\nReplying to [comment:2 mhansen]:\n> Looks good to me.\n\n\nThanks for the review!",
     "created_at": "2010-09-17T09:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
@@ -117,6 +117,7 @@ Hi Mike!
 
 Replying to [comment:2 mhansen]:
 > Looks good to me.
+
 
 Thanks for the review!
 
@@ -161,7 +162,7 @@ Resolution: fixed
 archive/issue_comments_084095.json:
 ```json
 {
-    "body": "Actually, I get a docbuild error:\n\n```\ndocstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role \"cls\".\n```\n\nI've unmerged the patch.",
+    "body": "Actually, I get a docbuild error:\n\n```\ndocstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role \"cls\".\n```\nI've unmerged the patch.",
     "created_at": "2010-09-28T09:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
@@ -175,7 +176,6 @@ Actually, I get a docbuild error:
 ```
 docstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role "cls".
 ```
-
 I've unmerged the patch.
 
 
@@ -237,7 +237,7 @@ Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachment
 archive/issue_comments_084098.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> Actually, I get a docbuild error:\n> {{{\n> docstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role \"cls\".\n> }}}\n> I've unmerged the patch.\n\nArgl; Florent had actually already fixed this, but I forgot to upload the updated version of the patch. Since the only difference between the two patches is the cls -> class change, I am allowing myself to revert back the status to positive review.",
+    "body": "Replying to [comment:5 mpatel]:\n> Actually, I get a docbuild error:\n> \n> ```\n> docstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role \"cls\".\n> ```\n> I've unmerged the patch.\n\n\nArgl; Florent had actually already fixed this, but I forgot to upload the updated version of the patch. Since the only difference between the two patches is the cls -> class change, I am allowing myself to revert back the status to positive review.",
     "created_at": "2010-10-13T20:10:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
@@ -248,10 +248,12 @@ archive/issue_comments_084098.json:
 
 Replying to [comment:5 mpatel]:
 > Actually, I get a docbuild error:
-> {{{
+> 
+> ```
 > docstring of sage.structure.sage_object.unpickle_all:39: (ERROR/3) Unknown interpreted text role "cls".
-> }}}
+> ```
 > I've unmerged the patch.
+
 
 Argl; Florent had actually already fixed this, but I forgot to upload the updated version of the patch. Since the only difference between the two patches is the cls -> class change, I am allowing myself to revert back the status to positive review.
 

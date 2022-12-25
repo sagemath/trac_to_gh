@@ -3,7 +3,7 @@
 archive/issues_006888.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nthe $SAGE_ROOT/local/bin/sage-env has 2 small flaws.\n\n1) the script prints the following message: \n\n```\n    You must set the SAGE_ROOT environment variable or\n    run this script from the SAGE_ROOT or\n    SAGE_ROOT/local/bin/ directory.\n```\n\neven if SAGE_ROOT is set correctly.\n\n2) if SAGE_ROOT is set to a wrong path, it doesn't stop,\n\nThe attached patch fixes them. \n\nI am not a shell expert, so please test it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6888\n\n",
+    "body": "Assignee: tbd\n\nthe $SAGE_ROOT/local/bin/sage-env has 2 small flaws.\n\n1) the script prints the following message: \n\n```\n    You must set the SAGE_ROOT environment variable or\n    run this script from the SAGE_ROOT or\n    SAGE_ROOT/local/bin/ directory.\n```\neven if SAGE_ROOT is set correctly.\n\n2) if SAGE_ROOT is set to a wrong path, it doesn't stop,\n\nThe attached patch fixes them. \n\nI am not a shell expert, so please test it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6888\n\n",
     "created_at": "2009-09-04T12:59:01Z",
     "labels": [
         "component: build",
@@ -26,7 +26,6 @@ the $SAGE_ROOT/local/bin/sage-env has 2 small flaws.
     run this script from the SAGE_ROOT or
     SAGE_ROOT/local/bin/ directory.
 ```
-
 even if SAGE_ROOT is set correctly.
 
 2) if SAGE_ROOT is set to a wrong path, it doesn't stop,

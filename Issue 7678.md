@@ -3,7 +3,7 @@
 archive/issues_007678.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn sage.math, before the patch:\n\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [162.6 s]\n```\n\n\nAnd after the patch:\n\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [50.2 s]\n```\n\n\nI'm putting the milestone as 4.3 only because this is almost certainly not going to break anything whatsoever.  Please change it to 4.3.1 if you think that's more appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7678\n\n",
+    "body": "Assignee: tbd\n\nOn sage.math, before the patch:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [162.6 s]\n```\n\nAnd after the patch:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [50.2 s]\n```\n\nI'm putting the milestone as 4.3 only because this is almost certainly not going to break anything whatsoever.  Please change it to 4.3.1 if you think that's more appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7678\n\n",
     "created_at": "2009-12-13T22:32:51Z",
     "labels": [
         "component: doctest coverage",
@@ -20,21 +20,17 @@ Assignee: tbd
 
 On sage.math, before the patch:
 
-
 ```
 sage -t -long "devel/sage-main/sage/rings/arith.py"         
          [162.6 s]
 ```
 
-
 And after the patch:
-
 
 ```
 sage -t -long "devel/sage-main/sage/rings/arith.py"         
          [50.2 s]
 ```
-
 
 I'm putting the milestone as 4.3 only because this is almost certainly not going to break anything whatsoever.  Please change it to 4.3.1 if you think that's more appropriate.
 
@@ -216,7 +212,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065747.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> I see what you did here: (1) you removed tha 'gap' algorithm from the test, presumably because it was slowest\n\nActually, the splitting into range(2, 2255) including 'gap' and range(2256, 5000) excluding 'gap' was there before I touched this, and it was indeed because gap gets rather slow at doing this computation.  The only real change I made was to pick 500 integers in each range instead of testing the whole range.",
+    "body": "Replying to [comment:2 cremona]:\n> I see what you did here: (1) you removed tha 'gap' algorithm from the test, presumably because it was slowest\n\n\nActually, the splitting into range(2, 2255) including 'gap' and range(2256, 5000) excluding 'gap' was there before I touched this, and it was indeed because gap gets rather slow at doing this computation.  The only real change I made was to pick 500 integers in each range instead of testing the whole range.",
     "created_at": "2009-12-14T21:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7678",
     "type": "issue_comment",
@@ -227,6 +223,7 @@ archive/issue_comments_065747.json:
 
 Replying to [comment:2 cremona]:
 > I see what you did here: (1) you removed tha 'gap' algorithm from the test, presumably because it was slowest
+
 
 Actually, the splitting into range(2, 2255) including 'gap' and range(2256, 5000) excluding 'gap' was there before I touched this, and it was indeed because gap gets rather slow at doing this computation.  The only real change I made was to pick 500 integers in each range instead of testing the whole range.
 

@@ -3,7 +3,7 @@
 archive/issues_002337.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: save_session?\n\n[stuff deleted]\n\n       Save all variables that can be saved wto the given filename.\nThe\n\n^\n\n******\nChange \"wto\" to \"to\".\n\nKate\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2337\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: save_session?\n\n[stuff deleted]\n\n       Save all variables that can be saved wto the given filename.\nThe\n\n^\n\n******\nChange \"wto\" to \"to\".\n\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2337\n\n",
     "created_at": "2008-02-27T20:35:44Z",
     "labels": [
         "component: user interface",
@@ -17,7 +17,6 @@ archive/issues_002337.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: save_session?
@@ -34,7 +33,6 @@ Change "wto" to "to".
 
 Kate
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2337
 

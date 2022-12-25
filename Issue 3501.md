@@ -3,7 +3,7 @@
 archive/issues_003501.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis is broken:\n\n\n```\nsage: Matrix(CyclotomicField(13),3).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3501\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is broken:\n\n```\nsage: Matrix(CyclotomicField(13),3).charpoly()\n```\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3501\n\n",
     "created_at": "2008-06-24T07:51:07Z",
     "labels": [
         "component: linear algebra",
@@ -20,11 +20,9 @@ Assignee: @craigcitro
 
 This is broken:
 
-
 ```
 sage: Matrix(CyclotomicField(13),3).charpoly()
 ```
-
 
 The attached patch fixes it.
 

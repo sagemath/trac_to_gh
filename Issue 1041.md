@@ -3,7 +3,7 @@
 archive/issues_001041.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: latex(K.fractional_ideal(3, a))\n\\left(3, a\\right)\\mathbf{Q}[a]/(a^{2} + 1)     \n```\n\n\n'nuff said. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1041\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: latex(K.fractional_ideal(3, a))\n\\left(3, a\\right)\\mathbf{Q}[a]/(a^{2} + 1)     \n```\n\n'nuff said. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1041\n\n",
     "created_at": "2007-10-31T20:47:32Z",
     "labels": [
         "component: number theory",
@@ -18,13 +18,11 @@ archive/issues_001041.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: K.<a> = NumberField(x^2 + 1)
 sage: latex(K.fractional_ideal(3, a))
 \left(3, a\right)\mathbf{Q}[a]/(a^{2} + 1)     
 ```
-
 
 'nuff said. 
 

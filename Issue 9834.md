@@ -3,7 +3,7 @@
 archive/issues_009834.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\n\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
     "created_at": "2010-08-28T21:18:27Z",
     "labels": [
         "component: calculus",
@@ -24,14 +24,12 @@ CC:  mhampton
 From Sage Bugreports :
 confusing error message
 
-
 ```
 Traceback (click to the left of this block for traceback)
 ...
 UnboundLocalError: local variable 'maxima_method' referenced before
 assignment
 ```
-
 when trying
 
 ```
@@ -39,7 +37,6 @@ epsilon = 1e-2; vars = var('x'); y = function('y',x);
 de = epsilon*diff(y,x,2)+y*(1-y^2)==0;
 soln = desolve(de,y[0,-1,1,1]);
 ```
-
 
 Explanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.
 
@@ -96,7 +93,7 @@ The patch
 archive/issue_comments_096877.json:
 ```json
 {
-    "body": "One very minor comment - no time to review now:\n\n```\n. Remove the initial contition t\n```\n\nat the very end of the patch should be \"condition\".\n\nDo you think it would be worth adding another doctest to show that the sage-support request is fixed as well:\n\n```\nvar('t alpha beta n') \nx=function('x',t) \neq=diff(x,t)^2==alpha-beta abs(x)^n \nassume(n,'integer') \ndesolve(eq,x,ivar=t,contrib_ode=True) \n```\n\n\nThanks for finding and fixing this!",
+    "body": "One very minor comment - no time to review now:\n\n```\n. Remove the initial contition t\n```\nat the very end of the patch should be \"condition\".\n\nDo you think it would be worth adding another doctest to show that the sage-support request is fixed as well:\n\n```\nvar('t alpha beta n') \nx=function('x',t) \neq=diff(x,t)^2==alpha-beta abs(x)^n \nassume(n,'integer') \ndesolve(eq,x,ivar=t,contrib_ode=True) \n```\n\nThanks for finding and fixing this!",
     "created_at": "2010-09-21T13:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -110,7 +107,6 @@ One very minor comment - no time to review now:
 ```
 . Remove the initial contition t
 ```
-
 at the very end of the patch should be "condition".
 
 Do you think it would be worth adding another doctest to show that the sage-support request is fixed as well:
@@ -122,7 +118,6 @@ eq=diff(x,t)^2==alpha-beta abs(x)^n
 assume(n,'integer') 
 desolve(eq,x,ivar=t,contrib_ode=True) 
 ```
-
 
 Thanks for finding and fixing this!
 
@@ -150,7 +145,7 @@ archive/issue_events_024760.json:
 archive/issue_comments_096878.json:
 ```json
 {
-    "body": "Thanks, I will update the patch as time permits.\n\nThe equation from sage-support still fails, since Maxima fails to solve it.  Anyway. Sage and Maxima now know that n is integer.\n\n```\nmarik@um-bc107:/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux$ ./sage --maxima\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/defsys tem.fas\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/cmp.fa s\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/sysfun .lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) declare(n,integer);\n(%o1)                                done\n(%i2) eq: 'diff(x,t)^2=alpha-beta*abs(x)^n;\n                          dx 2                      n\n(%o2)                    (--)  = alpha - beta abs(x)\n                          dt\n(%i3) load('contrib_ode)$\n\n(%i4) contrib_ode(eq,x,t);\n                          dx 2                      n\n(%t4)                    (--)  = alpha - beta abs(x)\n                          dt\n\n                     first order equation not linear in y'\n\nImproper argument to ratcoeff:\n0\n#0: linear2(expr=x,x=0)(ode2.mac line 75)\n#1: ode1_a(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 176)\n#2: ode1_lie(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 54)\n -- an error. To debug this try: debugmode(true);\n\n```\n",
+    "body": "Thanks, I will update the patch as time permits.\n\nThe equation from sage-support still fails, since Maxima fails to solve it.  Anyway. Sage and Maxima now know that n is integer.\n\n```\nmarik@um-bc107:/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux$ ./sage --maxima\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/defsys tem.fas\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/cmp.fa s\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/sysfun .lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) declare(n,integer);\n(%o1)                                done\n(%i2) eq: 'diff(x,t)^2=alpha-beta*abs(x)^n;\n                          dx 2                      n\n(%o2)                    (--)  = alpha - beta abs(x)\n                          dt\n(%i3) load('contrib_ode)$\n\n(%i4) contrib_ode(eq,x,t);\n                          dx 2                      n\n(%t4)                    (--)  = alpha - beta abs(x)\n                          dt\n\n                     first order equation not linear in y'\n\nImproper argument to ratcoeff:\n0\n#0: linear2(expr=x,x=0)(ode2.mac line 75)\n#1: ode1_a(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 176)\n#2: ode1_lie(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 54)\n -- an error. To debug this try: debugmode(true);\n\n```",
     "created_at": "2010-09-21T13:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -199,13 +194,12 @@ Improper argument to ratcoeff:
 
 
 
-
 ---
 
 archive/issue_comments_096879.json:
 ```json
 {
-    "body": "This doesn't seem fixed to me:\n\n```\nsage: epsilon = 1e-2; vars = var('x'); y = function('y',x);\nsage: de = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsage: soln = desolve(de,y[0,-1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\nTypeError: 'sage.symbolic.expression.Expression' object is unsubscriptable\n```\n",
+    "body": "This doesn't seem fixed to me:\n\n```\nsage: epsilon = 1e-2; vars = var('x'); y = function('y',x);\nsage: de = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsage: soln = desolve(de,y[0,-1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\nTypeError: 'sage.symbolic.expression.Expression' object is unsubscriptable\n```",
     "created_at": "2010-09-21T13:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -230,13 +224,12 @@ TypeError: 'sage.symbolic.expression.Expression' object is unsubscriptable
 
 
 
-
 ---
 
 archive/issue_comments_096880.json:
 ```json
 {
-    "body": "Even after fixing the sytax I still get an error:\n\n```\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\n/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    436             maxima_method=P(\"method\")\n    437         if not is_SymbolicEquation(soln.sage()):\n--> 438              raise NotImplementedError, \"Unable to use initial condition for this equation (%s).\"%(str(maxima_method).strip())   \n    439         if len(ics) == 2:\n    440             tempic=(ivar==ics[0])._maxima_().str()\n\nNotImplementedError: Unable to use initial condition for this equation (freeofx).\n```\n",
+    "body": "Even after fixing the sytax I still get an error:\n\n```\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\n/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    436             maxima_method=P(\"method\")\n    437         if not is_SymbolicEquation(soln.sage()):\n--> 438              raise NotImplementedError, \"Unable to use initial condition for this equation (%s).\"%(str(maxima_method).strip())   \n    439         if len(ics) == 2:\n    440             tempic=(ivar==ics[0])._maxima_().str()\n\nNotImplementedError: Unable to use initial condition for this equation (freeofx).\n```",
     "created_at": "2010-09-21T13:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -267,7 +260,6 @@ NotImplementedError: Unable to use initial condition for this equation (freeofx)
 
 
 
-
 ---
 
 archive/issue_comments_096881.json:
@@ -291,7 +283,7 @@ Changing assignee from @burcin to mhampton.
 archive/issue_comments_096882.json:
 ```json
 {
-    "body": "Thanks for menitioning this. \n\nWihtout this patch we get\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe Sage install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH\n(please wait at most a few minutes)...\nDo not interrupt this.\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/<ipython console> in <module>()\n\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.py in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    358     if (ics is not None):\n    359         if not is_SymbolicEquation(soln.sage()):\n--> 360              raise NotImplementedError, \"Maxima was unable to use initial condition for this equation (%s)\"%(maxima_method.str())\n    361         if len(ics) == 2:\n    362             tempic=(ivar==ics[0])._maxima_().str()\n\nUnboundLocalError: local variable 'maxima_method' referenced before assignment\n```\n\nand the user does not know, what went wrong. With this patch the user knows, that it Sage is not capable to use initial conditions for this ODE.",
+    "body": "Thanks for menitioning this. \n\nWihtout this patch we get\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe Sage install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH\n(please wait at most a few minutes)...\nDo not interrupt this.\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/<ipython console> in <module>()\n\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.py in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    358     if (ics is not None):\n    359         if not is_SymbolicEquation(soln.sage()):\n--> 360              raise NotImplementedError, \"Maxima was unable to use initial condition for this equation (%s)\"%(maxima_method.str())\n    361         if len(ics) == 2:\n    362             tempic=(ivar==ics[0])._maxima_().str()\n\nUnboundLocalError: local variable 'maxima_method' referenced before assignment\n```\nand the user does not know, what went wrong. With this patch the user knows, that it Sage is not capable to use initial conditions for this ODE.",
     "created_at": "2010-09-21T14:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -328,7 +320,6 @@ UnboundLocalError                         Traceback (most recent call last)
 
 UnboundLocalError: local variable 'maxima_method' referenced before assignment
 ```
-
 and the user does not know, what went wrong. With this patch the user knows, that it Sage is not capable to use initial conditions for this ODE.
 
 

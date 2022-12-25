@@ -3,7 +3,7 @@
 archive/issues_000551.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nWilliam,\n\nI noticed that the Python that comes with SAGE-2.8.3\nstill has UCS2.\n\nAre you still considering changing to UCS4?\n\nJaap\n\n\n\nOn 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:\n> See also\n>\n> > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html\n>\n> for a discussion of Python and UCS2 vs. UCS4\n>\n> Ubuntu and Fedora distribute Python compiled with UCS4.\n> Maybe the Python version of SAGE should comply with the distribution,\n> so for example libboost_python can be used.\n\nI would definitely consider making this change, at least as long as nobody\nsees any major problems with it in the next few days.   One problem is\nthat doing \"sage -upgrade\" will require rebuilding every Python-related thing\ni SAGE, which will be a bit painful.\n\nAnyway, comments?\ngmane.comp.mathematics.sage.devel\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/551\n\n",
+    "body": "Assignee: @williamstein\n\n```\nWilliam,\n\nI noticed that the Python that comes with SAGE-2.8.3\nstill has UCS2.\n\nAre you still considering changing to UCS4?\n\nJaap\n\n\n\nOn 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:\n> See also\n>\n> > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html\n>\n> for a discussion of Python and UCS2 vs. UCS4\n>\n> Ubuntu and Fedora distribute Python compiled with UCS4.\n> Maybe the Python version of SAGE should comply with the distribution,\n> so for example libboost_python can be used.\n\nI would definitely consider making this change, at least as long as nobody\nsees any major problems with it in the next few days.   One problem is\nthat doing \"sage -upgrade\" will require rebuilding every Python-related thing\ni SAGE, which will be a bit painful.\n\nAnyway, comments?\ngmane.comp.mathematics.sage.devel\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/551\n\n",
     "created_at": "2007-09-01T16:40:14Z",
     "labels": [
         "component: packages: standard"
@@ -16,7 +16,6 @@ archive/issues_000551.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 William,
@@ -51,7 +50,6 @@ gmane.comp.mathematics.sage.devel
  -- William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/551
 
 
@@ -63,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/551
 archive/issue_comments_002823.json:
 ```json
 {
-    "body": "Making this change is very hard.  It means that Sage has to be almost completely recompiled from scratch -- at least, everything that involves Python extensions must be rebuilt.  It would thus be difficult for automatic upgrades. \n\nA test for which mode a Python is compiled with is the following:\n\n\n```\nif len(u'\\U00010800') == 1: \n   print \"UCS4\"\nelse:\n   print \"USC2\"\n```\n\n\nProbably the best solution in the long run is to test for a system-wide Python, and then figure out what its UCS number is, then make Sage's agree with it.  That would be far better than just always using 4 and leaving the distros that use 2 in the dust.",
+    "body": "Making this change is very hard.  It means that Sage has to be almost completely recompiled from scratch -- at least, everything that involves Python extensions must be rebuilt.  It would thus be difficult for automatic upgrades. \n\nA test for which mode a Python is compiled with is the following:\n\n```\nif len(u'\\U00010800') == 1: \n   print \"UCS4\"\nelse:\n   print \"USC2\"\n```\n\nProbably the best solution in the long run is to test for a system-wide Python, and then figure out what its UCS number is, then make Sage's agree with it.  That would be far better than just always using 4 and leaving the distros that use 2 in the dust.",
     "created_at": "2007-09-23T18:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/551",
     "type": "issue_comment",
@@ -76,14 +74,12 @@ Making this change is very hard.  It means that Sage has to be almost completely
 
 A test for which mode a Python is compiled with is the following:
 
-
 ```
 if len(u'\U00010800') == 1: 
    print "UCS4"
 else:
    print "USC2"
 ```
-
 
 Probably the best solution in the long run is to test for a system-wide Python, and then figure out what its UCS number is, then make Sage's agree with it.  That would be far better than just always using 4 and leaving the distros that use 2 in the dust.
 
@@ -199,7 +195,7 @@ Michael
 archive/issue_comments_002828.json:
 ```json
 {
-    "body": "When building python with ucs4 upon completion of the install all python site-packages are recompiled, i.e. numpy, scipy, sympy and so on. But upon startup of Sage the following thing happens:\n\n```\n<type 'exceptions.ImportError'>: /tmp/Work-mabshoff/release-cycle/sage-2.10.alpha2/local/lib/python2.5/site-packages/sage/misc/misc_c.so: undefined symbol: PyUnicodeUCS2_DecodeUTF8\n```\n\nRebuilding Sage lib fixes the issue, but then we need to rebuild:\n\n* zodb3-3.7.0.spkg\n* numpy-20080104-1.0.4.p1\n\nin order to make Sage start, but I expect that we need to rebuild a couple more spkgs to make the doctests actually pass.\n\nCheers,\n\nMichael",
+    "body": "When building python with ucs4 upon completion of the install all python site-packages are recompiled, i.e. numpy, scipy, sympy and so on. But upon startup of Sage the following thing happens:\n\n```\n<type 'exceptions.ImportError'>: /tmp/Work-mabshoff/release-cycle/sage-2.10.alpha2/local/lib/python2.5/site-packages/sage/misc/misc_c.so: undefined symbol: PyUnicodeUCS2_DecodeUTF8\n```\nRebuilding Sage lib fixes the issue, but then we need to rebuild:\n\n* zodb3-3.7.0.spkg\n* numpy-20080104-1.0.4.p1\n\nin order to make Sage start, but I expect that we need to rebuild a couple more spkgs to make the doctests actually pass.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-11T17:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/551",
     "type": "issue_comment",
@@ -213,7 +209,6 @@ When building python with ucs4 upon completion of the install all python site-pa
 ```
 <type 'exceptions.ImportError'>: /tmp/Work-mabshoff/release-cycle/sage-2.10.alpha2/local/lib/python2.5/site-packages/sage/misc/misc_c.so: undefined symbol: PyUnicodeUCS2_DecodeUTF8
 ```
-
 Rebuilding Sage lib fixes the issue, but then we need to rebuild:
 
 * zodb3-3.7.0.spkg

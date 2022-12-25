@@ -3,7 +3,7 @@
 archive/issues_008349.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: isogeny, elliptic curves\n\nSomething is wrong with the post_isomorphism of isogenies of elliptic curves :\n\n\n```\nsage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])\nsage: P = E([16,0])\nsage: phi = E.isogeny(P,codomain=E)\nsage: phi(P)\n(9 : 11 : 1)\nsage: phi(P) in E\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8349\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: isogeny, elliptic curves\n\nSomething is wrong with the post_isomorphism of isogenies of elliptic curves :\n\n```\nsage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])\nsage: P = E([16,0])\nsage: phi = E.isogeny(P,codomain=E)\nsage: phi(P)\n(9 : 11 : 1)\nsage: phi(P) in E\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8349\n\n",
     "created_at": "2010-02-24T17:38:51Z",
     "labels": [
         "component: elliptic curves",
@@ -23,7 +23,6 @@ Keywords: isogeny, elliptic curves
 
 Something is wrong with the post_isomorphism of isogenies of elliptic curves :
 
-
 ```
 sage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])
 sage: P = E([16,0])
@@ -33,7 +32,6 @@ sage: phi(P)
 sage: phi(P) in E
 False
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8349
@@ -101,7 +99,7 @@ Attached a quick fix -- I'm happy to let it be ignored if there's something clas
 archive/issue_comments_074433.json:
 ```json
 {
-    "body": "Wow. That was **very** quick. But maybe a bit too quick.\n\n\n```\nsage: E = EllipticCurve('11a1')\nsage: phi = E.isogeny(None,codomain=EllipticCurve('11a2'),degree=5)\nsage: [phi(P) for P in E.torsion_points()]\n[(0 : 1 : 0), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1)]\n```\n\n\nagain the images are not even on the `codomain()`. I.e. there is probably a second spot that needs a small change.",
+    "body": "Wow. That was **very** quick. But maybe a bit too quick.\n\n```\nsage: E = EllipticCurve('11a1')\nsage: phi = E.isogeny(None,codomain=EllipticCurve('11a2'),degree=5)\nsage: [phi(P) for P in E.torsion_points()]\n[(0 : 1 : 0), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1)]\n```\n\nagain the images are not even on the `codomain()`. I.e. there is probably a second spot that needs a small change.",
     "created_at": "2010-02-24T18:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
@@ -112,14 +110,12 @@ archive/issue_comments_074433.json:
 
 Wow. That was **very** quick. But maybe a bit too quick.
 
-
 ```
 sage: E = EllipticCurve('11a1')
 sage: phi = E.isogeny(None,codomain=EllipticCurve('11a2'),degree=5)
 sage: [phi(P) for P in E.torsion_points()]
 [(0 : 1 : 0), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1), (1/3 : 1/2 : 1)]
 ```
-
 
 again the images are not even on the `codomain()`. I.e. there is probably a second spot that needs a small change.
 
@@ -242,7 +238,7 @@ No, these two lines must stay as they are. They do the right thing.
 archive/issue_comments_074440.json:
 ```json
 {
-    "body": "Replying to [comment:5 wuthrich]:\n> No, these two lines must stay as they are. They do the right thing.\n\nOK, I trust you -- I tried to find an example where they did not do the right thing, and could not.\n\nI'm happy -- patch (just the 2nd one) applies to 4.3.3 and test pass.",
+    "body": "Replying to [comment:5 wuthrich]:\n> No, these two lines must stay as they are. They do the right thing.\n\n\nOK, I trust you -- I tried to find an example where they did not do the right thing, and could not.\n\nI'm happy -- patch (just the 2nd one) applies to 4.3.3 and test pass.",
     "created_at": "2010-02-24T22:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
@@ -253,6 +249,7 @@ archive/issue_comments_074440.json:
 
 Replying to [comment:5 wuthrich]:
 > No, these two lines must stay as they are. They do the right thing.
+
 
 OK, I trust you -- I tried to find an example where they did not do the right thing, and could not.
 

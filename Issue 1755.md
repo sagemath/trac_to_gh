@@ -220,7 +220,7 @@ Changing status from new to needs_review.
 archive/issue_comments_011052.json:
 ```json
 {
-    "body": "This is already implemented as block_matrix()\n\n\n```\nsage: A = random_matrix(ZZ, 2)\nsage: B = random_matrix(ZZ, 2)\nsage: C = random_matrix(ZZ, 2)\nsage: D = random_matrix(ZZ, 2)\nsage: block_matrix( [[A, B], [C, D]] )\n[  1  -3| -1  -1]\n[  0   0|  1   1]\n[-------+-------]\n[  0   0| -5   1]\n[ -1   0|-10  31]\n```\n\n\nI don't think matrix() should create block matrices. It's possible that one would want a matrix of matrices rather than to merge the matrices together.",
+    "body": "This is already implemented as block_matrix()\n\n```\nsage: A = random_matrix(ZZ, 2)\nsage: B = random_matrix(ZZ, 2)\nsage: C = random_matrix(ZZ, 2)\nsage: D = random_matrix(ZZ, 2)\nsage: block_matrix( [[A, B], [C, D]] )\n[  1  -3| -1  -1]\n[  0   0|  1   1]\n[-------+-------]\n[  0   0| -5   1]\n[ -1   0|-10  31]\n```\n\nI don't think matrix() should create block matrices. It's possible that one would want a matrix of matrices rather than to merge the matrices together.",
     "created_at": "2018-05-13T15:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1755",
     "type": "issue_comment",
@@ -230,7 +230,6 @@ archive/issue_comments_011052.json:
 ```
 
 This is already implemented as block_matrix()
-
 
 ```
 sage: A = random_matrix(ZZ, 2)
@@ -244,7 +243,6 @@ sage: block_matrix( [[A, B], [C, D]] )
 [  0   0| -5   1]
 [ -1   0|-10  31]
 ```
-
 
 I don't think matrix() should create block matrices. It's possible that one would want a matrix of matrices rather than to merge the matrices together.
 

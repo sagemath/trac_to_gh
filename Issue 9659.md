@@ -3,7 +3,7 @@
 archive/issues_009659.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @JohnCremona @dandrake @nexttime\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\n\nSee [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona @dandrake @nexttime\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\nSee [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
     "created_at": "2010-08-01T10:17:05Z",
     "labels": [
         "component: doctest coverage",
@@ -41,7 +41,6 @@ On 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code)
    For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py
             [171.9 s] 
 ```
-
 
 See [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.
 
@@ -112,7 +111,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093601.json:
 ```json
 {
-    "body": "The correct mathematical result is an exact 0,  obtained as a 2x2 determinant of the form [a,0; 0,0]:\n\n```\nsage: EK.height_pairing_matrix([P,T])\n[     1.41516132073186 -1.11022302462516e-16]\n[-1.11022302462516e-16     0.000000000000000]\n```\n\nI think the best way to get a machine-independent test here is to have\n\n```\nsage: EK.regulator_of_points([P,T]).abs() < 1e30\nTrue\n```\n\ninstead of putting the spurious small value into the doctest.\n\nThe patch does this (as well as leaving the original test with a #random tag).",
+    "body": "The correct mathematical result is an exact 0,  obtained as a 2x2 determinant of the form [a,0; 0,0]:\n\n```\nsage: EK.height_pairing_matrix([P,T])\n[     1.41516132073186 -1.11022302462516e-16]\n[-1.11022302462516e-16     0.000000000000000]\n```\nI think the best way to get a machine-independent test here is to have\n\n```\nsage: EK.regulator_of_points([P,T]).abs() < 1e30\nTrue\n```\ninstead of putting the spurious small value into the doctest.\n\nThe patch does this (as well as leaving the original test with a #random tag).",
     "created_at": "2010-08-02T01:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
@@ -128,14 +127,12 @@ sage: EK.height_pairing_matrix([P,T])
 [     1.41516132073186 -1.11022302462516e-16]
 [-1.11022302462516e-16     0.000000000000000]
 ```
-
 I think the best way to get a machine-independent test here is to have
 
 ```
 sage: EK.regulator_of_points([P,T]).abs() < 1e30
 True
 ```
-
 instead of putting the spurious small value into the doctest.
 
 The patch does this (as well as leaving the original test with a #random tag).
@@ -185,7 +182,7 @@ Also, I'd add a backref to this ticket.
 archive/issue_comments_093604.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> Hmmm, really `< 1e30`?\n> \n> Also, I'd add a backref to this ticket.\n>\n \nIf you have a better suggestion, just do it.  Any specific numerical result will change with the new pari anyway.\n\nThe height of a torsion point is already exactly 0.  We could add more special cases for the regulator of two points P,Q that if either P or Q or P-Q were torsion then the regulator is 0, but as the necessary condition is that some linear combination n*P+m*Q=0 no such code would catch all these special cases.",
+    "body": "Replying to [comment:6 leif]:\n> Hmmm, really `< 1e30`?\n> \n> Also, I'd add a backref to this ticket.\n\n>\n \nIf you have a better suggestion, just do it.  Any specific numerical result will change with the new pari anyway.\n\nThe height of a torsion point is already exactly 0.  We could add more special cases for the regulator of two points P,Q that if either P or Q or P-Q were torsion then the regulator is 0, but as the necessary condition is that some linear combination n*P+m*Q=0 no such code would catch all these special cases.",
     "created_at": "2010-08-02T01:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
@@ -198,6 +195,7 @@ Replying to [comment:6 leif]:
 > Hmmm, really `< 1e30`?
 > 
 > Also, I'd add a backref to this ticket.
+
 >
  
 If you have a better suggestion, just do it.  Any specific numerical result will change with the new pari anyway.
@@ -332,7 +330,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093611.json:
 ```json
 {
-    "body": "Replying to [comment:9 cremona]:\n> OK, my mistake -- I have updated the patch so it now says 1e-30.\n\nThat looks reasonable to me. \n\n> The optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.\n  \nAs a matter of interest, [I asked on gcc-help about the use of -O1 and -O3](http://gcc.gnu.org/ml/gcc-help/2010-07/msg00190.html). To quote from someone who I believe is a gcc developer\n\n''The -O3 optoin should be safe for correct code.  An important difference between -O2/-O3 and -O1 is that -O2 and -O3 enable strict aliasing and strict overflow.  Those options provide better optimization for correct code, but are far more likely to cause unexpected code generation for incorrect code.  See the -fstrict-aliasing and -fstrict-overflow\noptions.'' \n\n''The main difference between -O3 and -O2 is that -O3 enables more\nspeculative optimizations.  These should not miscompile your code, but\nthey may cause your program to run more slowly.''\n\nIt's not to me whether -O2 or -O3 is the better choice. You might find -O2 is actually faster than -O3!\n\nIMHO, we really do need set of benchmark results. \n\nBut the patch looks quite reasonable to me. The [IEEE 754 standard](http://en.wikipedia.org/wiki/IEEE_754-2008) does not guarantee that different systems implementing IEEE 754 maths will give the same result. Nor is there anything to say that any two different processors from Intel will give the same result. \n\nSince the correct result should be 0.0, a test that expected a number like -1.23259516440783e-32  was clearly flawed. \n\nPositive review. \n\nDave",
+    "body": "Replying to [comment:9 cremona]:\n> OK, my mistake -- I have updated the patch so it now says 1e-30.\n\n\nThat looks reasonable to me. \n\n> The optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.\n\n  \nAs a matter of interest, [I asked on gcc-help about the use of -O1 and -O3](http://gcc.gnu.org/ml/gcc-help/2010-07/msg00190.html). To quote from someone who I believe is a gcc developer\n\n''The -O3 optoin should be safe for correct code.  An important difference between -O2/-O3 and -O1 is that -O2 and -O3 enable strict aliasing and strict overflow.  Those options provide better optimization for correct code, but are far more likely to cause unexpected code generation for incorrect code.  See the -fstrict-aliasing and -fstrict-overflow\noptions.'' \n\n''The main difference between -O3 and -O2 is that -O3 enables more\nspeculative optimizations.  These should not miscompile your code, but\nthey may cause your program to run more slowly.''\n\nIt's not to me whether -O2 or -O3 is the better choice. You might find -O2 is actually faster than -O3!\n\nIMHO, we really do need set of benchmark results. \n\nBut the patch looks quite reasonable to me. The [IEEE 754 standard](http://en.wikipedia.org/wiki/IEEE_754-2008) does not guarantee that different systems implementing IEEE 754 maths will give the same result. Nor is there anything to say that any two different processors from Intel will give the same result. \n\nSince the correct result should be 0.0, a test that expected a number like -1.23259516440783e-32  was clearly flawed. \n\nPositive review. \n\nDave",
     "created_at": "2010-08-02T10:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
@@ -344,9 +342,11 @@ archive/issue_comments_093611.json:
 Replying to [comment:9 cremona]:
 > OK, my mistake -- I have updated the patch so it now says 1e-30.
 
+
 That looks reasonable to me. 
 
 > The optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.
+
   
 As a matter of interest, [I asked on gcc-help about the use of -O1 and -O3](http://gcc.gnu.org/ml/gcc-help/2010-07/msg00190.html). To quote from someone who I believe is a gcc developer
 

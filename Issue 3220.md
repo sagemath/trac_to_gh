@@ -3,7 +3,7 @@
 archive/issues_003220.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is what is fixed by this spkg:\n\n```\n  * /usr/bin/env bash;  change == to =; add support for cygwin; improve error messages and checking\n```\n\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/gmp-4.2.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3220\n\n",
+    "body": "Assignee: mabshoff\n\nThis is what is fixed by this spkg:\n\n```\n  * /usr/bin/env bash;  change == to =; add support for cygwin; improve error messages and checking\n```\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/gmp-4.2.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3220\n\n",
     "created_at": "2008-05-16T14:39:03Z",
     "labels": [
         "component: porting: cygwin",
@@ -23,7 +23,6 @@ This is what is fixed by this spkg:
 ```
   * /usr/bin/env bash;  change == to =; add support for cygwin; improve error messages and checking
 ```
-
 
 The spkg is here:
 

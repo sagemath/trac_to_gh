@@ -3,7 +3,7 @@
 archive/issues_009414.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nKeywords: number field, rationals\n\nCurrently QQ behaves different than a generic number field. This forces number theory functions to treat QQ separately, which is inconvenient.\n\n\n```\nK = QQ\nI = K.ideal(7)\n```\n\n\nThis creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have\n\n\n```\nK.<a> = NumberField(x^2+2)\nI = K.ideal(7)\n```\n\n\nSimilarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().\n\n\n```\nQQ.places()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9414\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: number field, rationals\n\nCurrently QQ behaves different than a generic number field. This forces number theory functions to treat QQ separately, which is inconvenient.\n\n```\nK = QQ\nI = K.ideal(7)\n```\n\nThis creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have\n\n```\nK.<a> = NumberField(x^2+2)\nI = K.ideal(7)\n```\n\nSimilarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().\n\n```\nQQ.places()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9414\n\n",
     "created_at": "2010-07-03T02:38:31Z",
     "labels": [
         "component: number fields",
@@ -22,29 +22,23 @@ Keywords: number field, rationals
 
 Currently QQ behaves different than a generic number field. This forces number theory functions to treat QQ separately, which is inconvenient.
 
-
 ```
 K = QQ
 I = K.ideal(7)
 ```
 
-
 This creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have
-
 
 ```
 K.<a> = NumberField(x^2+2)
 I = K.ideal(7)
 ```
 
-
 Similarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().
-
 
 ```
 QQ.places()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9414
 

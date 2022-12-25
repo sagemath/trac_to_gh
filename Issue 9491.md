@@ -94,7 +94,7 @@ argument is missing somewhere.
 archive/issue_comments_090962.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Comments from David Sanders on sage-support:\n> \n> Firstly, with this code it seems not to be possible to make a\n> region_plot *without* specifying opacity -- it looks like a default\n> argument is missing somewhere.\n\nI think that is correct.",
+    "body": "Replying to [comment:2 jason]:\n> Comments from David Sanders on sage-support:\n> \n> Firstly, with this code it seems not to be possible to make a\n> region_plot *without* specifying opacity -- it looks like a default\n> argument is missing somewhere.\n\n\nI think that is correct.",
     "created_at": "2010-09-07T02:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
@@ -109,6 +109,7 @@ Replying to [comment:2 jason]:
 > Firstly, with this code it seems not to be possible to make a
 > region_plot *without* specifying opacity -- it looks like a default
 > argument is missing somewhere.
+
 
 I think that is correct.
 

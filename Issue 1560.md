@@ -3,7 +3,7 @@
 archive/issues_001560.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nsage: line3d??\narg is not a module, class, method, function, traceback, frame, or code object\nSource code for <sage.plot.plot3dmatplotlib.Line3dFactory instance at 0x1505c10> not available.\n```\n\n\nThat isn't right. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1560\n\n",
+    "body": "Assignee: tba\n\n```\nsage: line3d??\narg is not a module, class, method, function, traceback, frame, or code object\nSource code for <sage.plot.plot3dmatplotlib.Line3dFactory instance at 0x1505c10> not available.\n```\n\nThat isn't right. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1560\n\n",
     "created_at": "2007-12-18T16:53:08Z",
     "labels": [
         "component: documentation",
@@ -18,13 +18,11 @@ archive/issues_001560.json:
 ```
 Assignee: tba
 
-
 ```
 sage: line3d??
 arg is not a module, class, method, function, traceback, frame, or code object
 Source code for <sage.plot.plot3dmatplotlib.Line3dFactory instance at 0x1505c10> not available.
 ```
-
 
 That isn't right. 
 

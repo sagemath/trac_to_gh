@@ -3,7 +3,7 @@
 archive/issues_009564.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: KeyboardInterrupt libsingular exponentiation\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\n\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
+    "body": "Assignee: @malb\n\nKeywords: KeyboardInterrupt libsingular exponentiation\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
     "created_at": "2010-07-21T13:50:23Z",
     "labels": [
         "component: commutative algebra",
@@ -29,7 +29,6 @@ sage: p
 -x^2 + 1/3*x*y + 7/2*y + 2*z
 sage: timeit('q=p^(2^10)')
 ```
-
 which might be stupid. 
 
 Anyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.

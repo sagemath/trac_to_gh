@@ -3,7 +3,7 @@
 archive/issues_000558.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\ncauses (among other things) the following:\n\n```\n==5107== 1,024 bytes in 128 blocks are definitely lost in loss record 2,196 of 2,944\n==5107==    at 0x4A0590B: realloc (vg_replace_malloc.c:306)\n==5107==    by 0x94A8760: __gmpz_realloc (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x1678B012: __pyx_f_7integer_fast_tp_dealloc (integer.c:14595)\n==5107==    by 0x1F4BD7B2: __pyx_tp_new_13multi_modular_MultiModularBasis_base (multi_modular.c:2222)\n==5107==    by 0x1F4B92A0: __pyx_tp_new_13multi_modular_MultiModularBasis (multi_modular.c:5836)\n==5107==    by 0x45A272: type_call (typeobject.c:422)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x2041FF67: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__multiply_multi_modular (matrix_integer_den\nse.c:7503)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x204237E0: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__matrix_times_matrix_c_impl (matrix_integer\n_dense.c:5487)\n```\n\nCheers,\n\nTagged for 2.8.4\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/558\n\n",
+    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\ncauses (among other things) the following:\n\n```\n==5107== 1,024 bytes in 128 blocks are definitely lost in loss record 2,196 of 2,944\n==5107==    at 0x4A0590B: realloc (vg_replace_malloc.c:306)\n==5107==    by 0x94A8760: __gmpz_realloc (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x1678B012: __pyx_f_7integer_fast_tp_dealloc (integer.c:14595)\n==5107==    by 0x1F4BD7B2: __pyx_tp_new_13multi_modular_MultiModularBasis_base (multi_modular.c:2222)\n==5107==    by 0x1F4B92A0: __pyx_tp_new_13multi_modular_MultiModularBasis (multi_modular.c:5836)\n==5107==    by 0x45A272: type_call (typeobject.c:422)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x2041FF67: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__multiply_multi_modular (matrix_integer_den\nse.c:7503)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x204237E0: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__matrix_times_matrix_c_impl (matrix_integer\n_dense.c:5487)\n```\nCheers,\n\nTagged for 2.8.4\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/558\n\n",
     "created_at": "2007-09-02T00:11:40Z",
     "labels": [
         "component: memleak",
@@ -23,7 +23,6 @@ Hello folks,
 ```
 for n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()
 ```
-
 causes (among other things) the following:
 
 ```
@@ -43,7 +42,6 @@ se.c:7503)
 ==5107==    by 0x204237E0: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__matrix_times_matrix_c_impl (matrix_integer
 _dense.c:5487)
 ```
-
 Cheers,
 
 Tagged for 2.8.4
@@ -79,7 +77,7 @@ Changing status from new to assigned.
 archive/issue_comments_002870.json:
 ```json
 {
-    "body": "Some progress with the attached patch:\n\n\n```\nsage: d = [ZZ(i**100000 + 1) for i in range(100)]; del d\nsage: get_memory_usage()\n577.11328125\nsage: sage.rings.integer.free_integer_pool()\nsage: get_memory_usage()\n570.2421875\n```\n\n\nbut if the integers are smaller nothing seems to change\n\n\n```\nsage: d = [ZZ(i**10000 + 1) for i in range(100)]; del d\nsage: get_memory_usage()\n571.078125\nsage: sage.rings.integer.free_integer_pool()\nsage: get_memory_usage()\n571.078125\n```\n\n\nfree_integer_pool() is also called on exit() if the attached patch is applied.",
+    "body": "Some progress with the attached patch:\n\n```\nsage: d = [ZZ(i**100000 + 1) for i in range(100)]; del d\nsage: get_memory_usage()\n577.11328125\nsage: sage.rings.integer.free_integer_pool()\nsage: get_memory_usage()\n570.2421875\n```\n\nbut if the integers are smaller nothing seems to change\n\n```\nsage: d = [ZZ(i**10000 + 1) for i in range(100)]; del d\nsage: get_memory_usage()\n571.078125\nsage: sage.rings.integer.free_integer_pool()\nsage: get_memory_usage()\n571.078125\n```\n\nfree_integer_pool() is also called on exit() if the attached patch is applied.",
     "created_at": "2007-09-06T18:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
@@ -90,7 +88,6 @@ archive/issue_comments_002870.json:
 
 Some progress with the attached patch:
 
-
 ```
 sage: d = [ZZ(i**100000 + 1) for i in range(100)]; del d
 sage: get_memory_usage()
@@ -100,9 +97,7 @@ sage: get_memory_usage()
 570.2421875
 ```
 
-
 but if the integers are smaller nothing seems to change
-
 
 ```
 sage: d = [ZZ(i**10000 + 1) for i in range(100)]; del d
@@ -112,7 +107,6 @@ sage: sage.rings.integer.free_integer_pool()
 sage: get_memory_usage()
 571.078125
 ```
-
 
 free_integer_pool() is also called on exit() if the attached patch is applied.
 
@@ -249,7 +243,7 @@ archive/issue_events_001484.json:
 archive/issue_comments_002876.json:
 ```json
 {
-    "body": "This patch seriously breaks SAGE.  Try \n\n```\n    sage -t --verbose coding/linear_code.py\n```\n\non exit SAGE hangs with\n\n\n```\n*** glibc detected *** /home/was/s/local/bin/python: double free or corruption (out): 0x0000000002b75f70 ***\n```\n\n\nIn the official version of SAGE, I'm commenting out the line in all.py that calls the cleanup until\nthis gets fixed.   Note that all the code mentioned above is in the offical repo, but calling\nit is commented out.",
+    "body": "This patch seriously breaks SAGE.  Try \n\n```\n    sage -t --verbose coding/linear_code.py\n```\non exit SAGE hangs with\n\n```\n*** glibc detected *** /home/was/s/local/bin/python: double free or corruption (out): 0x0000000002b75f70 ***\n```\n\nIn the official version of SAGE, I'm commenting out the line in all.py that calls the cleanup until\nthis gets fixed.   Note that all the code mentioned above is in the offical repo, but calling\nit is commented out.",
     "created_at": "2007-09-07T03:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
@@ -263,14 +257,11 @@ This patch seriously breaks SAGE.  Try
 ```
     sage -t --verbose coding/linear_code.py
 ```
-
 on exit SAGE hangs with
-
 
 ```
 *** glibc detected *** /home/was/s/local/bin/python: double free or corruption (out): 0x0000000002b75f70 ***
 ```
-
 
 In the official version of SAGE, I'm commenting out the line in all.py that calls the cleanup until
 this gets fixed.   Note that all the code mentioned above is in the offical repo, but calling

@@ -107,7 +107,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072662.json:
 ```json
 {
-    "body": "Robert,\n\nI think the point of this patch is to change the function so it is no longer off by factors of 2 by default. \nNote that the documentation, even after applying your patch, says:\n\n```\n    r\"\"\"\n    Return an interval that contains the index of the Heegner\n    point `y_K` in the group of `K`-rational points modulo torsion\n    on this elliptic curve, computed using the Gross-Zagier\n    formula and/or a point search, or the index divided by `2`.\n\n    .. note::\n\n       If ``min_p`` is bigger than 2 then the index can be off by\n       any prime less than ``min_p``. This function returns the\n       index divided by `2` exactly when the rank of `E(K)` is\n       greater than 1 and `E(\\QQ)_{/tor} \\oplus E^D(\\QQ)_{/tor}`\n       has index `2` in `E(K)_{/tor}`, where the second factor\n       undergoes a twist.\n```\n\n\nIf you've really fixed the \"factor of 2\" issue, as it seems you have, then the documentation should be changed to reflect this.  Moreover, this is an enhancement, rather than a bug fix.",
+    "body": "Robert,\n\nI think the point of this patch is to change the function so it is no longer off by factors of 2 by default. \nNote that the documentation, even after applying your patch, says:\n\n```\n    r\"\"\"\n    Return an interval that contains the index of the Heegner\n    point `y_K` in the group of `K`-rational points modulo torsion\n    on this elliptic curve, computed using the Gross-Zagier\n    formula and/or a point search, or the index divided by `2`.\n\n    .. note::\n\n       If ``min_p`` is bigger than 2 then the index can be off by\n       any prime less than ``min_p``. This function returns the\n       index divided by `2` exactly when the rank of `E(K)` is\n       greater than 1 and `E(\\QQ)_{/tor} \\oplus E^D(\\QQ)_{/tor}`\n       has index `2` in `E(K)_{/tor}`, where the second factor\n       undergoes a twist.\n```\n\nIf you've really fixed the \"factor of 2\" issue, as it seems you have, then the documentation should be changed to reflect this.  Moreover, this is an enhancement, rather than a bug fix.",
     "created_at": "2010-04-19T06:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8238",
     "type": "issue_comment",
@@ -137,7 +137,6 @@ Note that the documentation, even after applying your patch, says:
        has index `2` in `E(K)_{/tor}`, where the second factor
        undergoes a twist.
 ```
-
 
 If you've really fixed the "factor of 2" issue, as it seems you have, then the documentation should be changed to reflect this.  Moreover, this is an enhancement, rather than a bug fix.
 
@@ -238,7 +237,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072667.json:
 ```json
 {
-    "body": "I applied the patch to 4.4.3 and it worked fine (patch applies cleanly, all long tests in heegner.py pass, \n\nSome minor quibbles:\n1. on line 6365:  instead of \"an interval that contains the index, or the index over 2\" say \"... or half the index\".\n2. line 6454++:  this code is reached whe then rank is 0 (or it appears to be) but then F.gens()[0] would fail.  If it is the case that the rank would never be 0 here. I would prefer a comment to that effect and change the test to if F.rank() == 1.  (I assume that in this context calling F.rank() and F.gens() is not expensive?)\n3. After setting a=2 in line 6460 the loop should break.  (OK, so there will not be that many torsion points o nEK, but still.)  Even better would be to first compute EK.torsion_points() and only run the loop at all if it has even length?  (But still test if z itself can be divided by 2).  I'm sure I once wrote a function which returned a list of points generating torsion modulo 2*torsion....if you did\n\n```\nsage: for T in EK.torsion_subgroup().gens():\n....:     if T.order()%2==0:\n```\n\nyou would have at most 2 points to check.\n\nI'll give this a positive review once these have been fixed.",
+    "body": "I applied the patch to 4.4.3 and it worked fine (patch applies cleanly, all long tests in heegner.py pass, \n\nSome minor quibbles:\n1. on line 6365:  instead of \"an interval that contains the index, or the index over 2\" say \"... or half the index\".\n2. line 6454++:  this code is reached whe then rank is 0 (or it appears to be) but then F.gens()[0] would fail.  If it is the case that the rank would never be 0 here. I would prefer a comment to that effect and change the test to if F.rank() == 1.  (I assume that in this context calling F.rank() and F.gens() is not expensive?)\n3. After setting a=2 in line 6460 the loop should break.  (OK, so there will not be that many torsion points o nEK, but still.)  Even better would be to first compute EK.torsion_points() and only run the loop at all if it has even length?  (But still test if z itself can be divided by 2).  I'm sure I once wrote a function which returned a list of points generating torsion modulo 2*torsion....if you did\n\n```\nsage: for T in EK.torsion_subgroup().gens():\n....:     if T.order()%2==0:\n```\nyou would have at most 2 points to check.\n\nI'll give this a positive review once these have been fixed.",
     "created_at": "2010-06-05T15:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8238",
     "type": "issue_comment",
@@ -258,7 +257,6 @@ Some minor quibbles:
 sage: for T in EK.torsion_subgroup().gens():
 ....:     if T.order()%2==0:
 ```
-
 you would have at most 2 points to check.
 
 I'll give this a positive review once these have been fixed.

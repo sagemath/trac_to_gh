@@ -3,7 +3,7 @@
 archive/issues_004722.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
+    "body": "Assignee: @williamstein\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
     "created_at": "2008-12-05T23:04:07Z",
     "labels": [
         "component: number theory",
@@ -24,7 +24,6 @@ It returns a poly that defines that Hilbert class field, but it is *not* the Hil
 
 Observe:
 
-
 ```
 sage: K.<a> =QuadraticField(-97)
 sage: K.hilbert_class_polynomial()
@@ -32,7 +31,6 @@ x^4 + 9*x^2 - 6*x + 1
 sage: magma(K.discriminant()).HilbertClassPolynomial()
 $.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000
 ```
-
 
 Solution: change the name of this function and add documentation clarifying this, say including the above example.
 
@@ -67,7 +65,7 @@ Who to blame?  Either me or David Kohel, since this was done before Sage was und
 archive/issue_comments_035576.json:
 ```json
 {
-    "body": "Replying to [comment:1 was]:\n> Who to blame?  Either me or David Kohel, since this was done before Sage was under revision control.  \n\nNot me. This is a wrapper for the Pari/gp function quadhilbert.  \n\nI find this unanswered question about what it returns:\n\nhttp://pari.math.u-bordeaux.fr/archives/pari-users-0402/msg00000.html\n\nCertainly it does not return the hilbert class polynomial (minimal \npolynomial of the j-invariant), rather it returns a \"nicer\" polynomial \nover QQ which generates the Hilbert class field over K.\n\nI agree that a name change is in order to avoid this confusion, but \nI don't have a suggestion other than \n\nhilbert_class_field_[relative_]defining_polynomial\n\nwhich is a bit long, but descriptive.  Note that the hilbert_class_field \ndoes not have this as a defining polynomial (hence the relative_), \nsince it is formed as a compositum of the quadratic and degree h \nextensions rather than a relative extension.\n\nThe documentation should also be corrected to say that Schertz's method \nis used (only) for D < 0.  A reference to Schertz's methods and whatever \nmethod (Stark units?) is used for D > 0 would be desirable.",
+    "body": "Replying to [comment:1 was]:\n> Who to blame?  Either me or David Kohel, since this was done before Sage was under revision control.  \n\n\nNot me. This is a wrapper for the Pari/gp function quadhilbert.  \n\nI find this unanswered question about what it returns:\n\nhttp://pari.math.u-bordeaux.fr/archives/pari-users-0402/msg00000.html\n\nCertainly it does not return the hilbert class polynomial (minimal \npolynomial of the j-invariant), rather it returns a \"nicer\" polynomial \nover QQ which generates the Hilbert class field over K.\n\nI agree that a name change is in order to avoid this confusion, but \nI don't have a suggestion other than \n\nhilbert_class_field_[relative_]defining_polynomial\n\nwhich is a bit long, but descriptive.  Note that the hilbert_class_field \ndoes not have this as a defining polynomial (hence the relative_), \nsince it is formed as a compositum of the quadratic and degree h \nextensions rather than a relative extension.\n\nThe documentation should also be corrected to say that Schertz's method \nis used (only) for D < 0.  A reference to Schertz's methods and whatever \nmethod (Stark units?) is used for D > 0 would be desirable.",
     "created_at": "2008-12-06T01:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
@@ -78,6 +76,7 @@ archive/issue_comments_035576.json:
 
 Replying to [comment:1 was]:
 > Who to blame?  Either me or David Kohel, since this was done before Sage was under revision control.  
+
 
 Not me. This is a wrapper for the Pari/gp function quadhilbert.  
 

@@ -3,7 +3,7 @@
 archive/issues_000108.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R = Integers(125)\nsage: type(binomial(R(4), 2))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 1))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 0))\n <type 'rational.Rational'>\n```\n\n\nThe type/parent should always match that of the first argument. (Or I suppose it could lie in the fraction field. But the above behaviour is a bit confusing.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/108\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R = Integers(125)\nsage: type(binomial(R(4), 2))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 1))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 0))\n <type 'rational.Rational'>\n```\n\nThe type/parent should always match that of the first argument. (Or I suppose it could lie in the fraction field. But the above behaviour is a bit confusing.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/108\n\n",
     "created_at": "2006-10-03T18:03:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000108.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R = Integers(125)
 sage: type(binomial(R(4), 2))
@@ -27,7 +26,6 @@ sage: type(binomial(R(4), 1))
 sage: type(binomial(R(4), 0))
  <type 'rational.Rational'>
 ```
-
 
 The type/parent should always match that of the first argument. (Or I suppose it could lie in the fraction field. But the above behaviour is a bit confusing.)
 
@@ -77,7 +75,7 @@ archive/issue_events_000218.json:
 archive/issue_comments_000509.json:
 ```json
 {
-    "body": "Fixed trac Ticket #108: inconsistent return type for binomial function\n\nThis badness no longer happens:\n\n```\n  sage: R = Integers(125)\n  sage: type(binomial(R(4), 2))\n  <type 'integer_mod_pyx.IntegerMod_int'>\n  sage: type(binomial(R(4), 0))\n  <type 'rational.Rational'>\n```\n",
+    "body": "Fixed trac Ticket #108: inconsistent return type for binomial function\n\nThis badness no longer happens:\n\n```\n  sage: R = Integers(125)\n  sage: type(binomial(R(4), 2))\n  <type 'integer_mod_pyx.IntegerMod_int'>\n  sage: type(binomial(R(4), 0))\n  <type 'rational.Rational'>\n```",
     "created_at": "2006-10-05T08:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/108",
     "type": "issue_comment",
@@ -97,4 +95,3 @@ This badness no longer happens:
   sage: type(binomial(R(4), 0))
   <type 'rational.Rational'>
 ```
-

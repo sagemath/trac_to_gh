@@ -271,7 +271,7 @@ Changing assignee from @williamstein to mabshoff.
 archive/issue_comments_002257.json:
 ```json
 {
-    "body": "A status update for Sage 2.8.7.rc1:\n\ncode run:\n\n```\nfor n in range(10,100):\n  a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\nBefore:\n\n```\n==29058== LEAK SUMMARY:\n==29058==    definitely lost: 1,210,265 bytes in 113,436 blocks.\n==29058==    indirectly lost: 420,632 bytes in 7,210 blocks.\n==29058==      possibly lost: 375,630 bytes in 1,188 blocks.\n==29058==    still reachable: 92,961,383 bytes in 1,342,309 blocks.\n```\n\nAfter Patch 1 (fix for #619):\n\n```\n==13453== LEAK SUMMARY:\n==13453==    definitely lost: 1,075,235 bytes in 96,549 blocks.\n==13453==    indirectly lost: 419,640 bytes in 7,212 blocks.\n==13453==      possibly lost: 376,270 bytes in 1,195 blocks.\n==13453==    still reachable: 92,923,804 bytes in 1,342,166 blocks.\n==13453==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter Patch 2 (burcin's fix for #561):\n\n```\n==15147== LEAK SUMMARY:\n==15147==    definitely lost: 1,072,216 bytes in 96,412 blocks.\n==15147==    indirectly lost: 419,120 bytes in 7,205 blocks.\n==15147==      possibly lost: 376,558 bytes in 1,194 blocks.\n==15147==    still reachable: 92,977,412 bytes in 1,342,343 blocks.\n==15147==         suppressed: 0 bytes in 0 blocks.\n```\n\nRemaining leak: mix of LinBox and\n\n```\n==15147== 94,288 bytes in 11,786 blocks are definitely lost in loss record 2,401 of 2,546\n==15147==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==15147==    by 0x610A9A6: __gmpq_init (in /tmp/Work-mabshoff/sage-2.8.7.rc1/local/lib/libgmp.so.3.4.1)\n==15147==    by 0x12EC8E22: __pyx_f_22matrix_rational_sparse_allocate_mpq_vector (matrix_rational_sparse.c:5519)\n==15147==    by 0x12ECC464: __pyx_f_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:6560)\n==15147==    by 0x12ECC5F5: __pyx_f_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_rational_sparse.c:8\n668)\n==15147==    by 0x114ED321: __pyx_mp_ass_subscript_7matrix0_Matrix (matrix0.c:2339)\n==15147==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)\n==15147==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==15147==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n```\n",
+    "body": "A status update for Sage 2.8.7.rc1:\n\ncode run:\n\n```\nfor n in range(10,100):\n  a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\nBefore:\n\n```\n==29058== LEAK SUMMARY:\n==29058==    definitely lost: 1,210,265 bytes in 113,436 blocks.\n==29058==    indirectly lost: 420,632 bytes in 7,210 blocks.\n==29058==      possibly lost: 375,630 bytes in 1,188 blocks.\n==29058==    still reachable: 92,961,383 bytes in 1,342,309 blocks.\n```\nAfter Patch 1 (fix for #619):\n\n```\n==13453== LEAK SUMMARY:\n==13453==    definitely lost: 1,075,235 bytes in 96,549 blocks.\n==13453==    indirectly lost: 419,640 bytes in 7,212 blocks.\n==13453==      possibly lost: 376,270 bytes in 1,195 blocks.\n==13453==    still reachable: 92,923,804 bytes in 1,342,166 blocks.\n==13453==         suppressed: 0 bytes in 0 blocks.\n```\nAfter Patch 2 (burcin's fix for #561):\n\n```\n==15147== LEAK SUMMARY:\n==15147==    definitely lost: 1,072,216 bytes in 96,412 blocks.\n==15147==    indirectly lost: 419,120 bytes in 7,205 blocks.\n==15147==      possibly lost: 376,558 bytes in 1,194 blocks.\n==15147==    still reachable: 92,977,412 bytes in 1,342,343 blocks.\n==15147==         suppressed: 0 bytes in 0 blocks.\n```\nRemaining leak: mix of LinBox and\n\n```\n==15147== 94,288 bytes in 11,786 blocks are definitely lost in loss record 2,401 of 2,546\n==15147==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==15147==    by 0x610A9A6: __gmpq_init (in /tmp/Work-mabshoff/sage-2.8.7.rc1/local/lib/libgmp.so.3.4.1)\n==15147==    by 0x12EC8E22: __pyx_f_22matrix_rational_sparse_allocate_mpq_vector (matrix_rational_sparse.c:5519)\n==15147==    by 0x12ECC464: __pyx_f_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:6560)\n==15147==    by 0x12ECC5F5: __pyx_f_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_rational_sparse.c:8\n668)\n==15147==    by 0x114ED321: __pyx_mp_ass_subscript_7matrix0_Matrix (matrix0.c:2339)\n==15147==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)\n==15147==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==15147==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==15147==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n```",
     "created_at": "2007-10-16T03:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
@@ -288,7 +288,6 @@ code run:
 for n in range(10,100):
   a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()
 ```
-
 Before:
 
 ```
@@ -298,7 +297,6 @@ Before:
 ==29058==      possibly lost: 375,630 bytes in 1,188 blocks.
 ==29058==    still reachable: 92,961,383 bytes in 1,342,309 blocks.
 ```
-
 After Patch 1 (fix for #619):
 
 ```
@@ -309,7 +307,6 @@ After Patch 1 (fix for #619):
 ==13453==    still reachable: 92,923,804 bytes in 1,342,166 blocks.
 ==13453==         suppressed: 0 bytes in 0 blocks.
 ```
-
 After Patch 2 (burcin's fix for #561):
 
 ```
@@ -320,7 +317,6 @@ After Patch 2 (burcin's fix for #561):
 ==15147==    still reachable: 92,977,412 bytes in 1,342,343 blocks.
 ==15147==         suppressed: 0 bytes in 0 blocks.
 ```
-
 Remaining leak: mix of LinBox and
 
 ```
@@ -342,13 +338,12 @@ Remaining leak: mix of LinBox and
 
 
 
-
 ---
 
 archive/issue_comments_002258.json:
 ```json
 {
-    "body": "With 2.8.10.rc1 (which applied #1024) we get:\n\n```\n==15811== LEAK SUMMARY:\n==15811==    definitely lost: 406,088 bytes in 5,792 blocks.\n==15811==    indirectly lost: 415,504 bytes in 7,199 blocks.\n==15811==      possibly lost: 382,110 bytes in 1,198 blocks.\n==15811==    still reachable: 93,391,247 bytes in 1,343,745 blocks.\n==15811==         suppressed: 0 bytes in 0 blocks.\n```\n\nCheers,\n\nMichael",
+    "body": "With 2.8.10.rc1 (which applied #1024) we get:\n\n```\n==15811== LEAK SUMMARY:\n==15811==    definitely lost: 406,088 bytes in 5,792 blocks.\n==15811==    indirectly lost: 415,504 bytes in 7,199 blocks.\n==15811==      possibly lost: 382,110 bytes in 1,198 blocks.\n==15811==    still reachable: 93,391,247 bytes in 1,343,745 blocks.\n==15811==         suppressed: 0 bytes in 0 blocks.\n```\nCheers,\n\nMichael",
     "created_at": "2007-10-28T22:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
@@ -367,7 +362,6 @@ With 2.8.10.rc1 (which applied #1024) we get:
 ==15811==    still reachable: 93,391,247 bytes in 1,343,745 blocks.
 ==15811==         suppressed: 0 bytes in 0 blocks.
 ```
-
 Cheers,
 
 Michael
@@ -379,7 +373,7 @@ Michael
 archive/issue_comments_002259.json:
 ```json
 {
-    "body": "Once #1026 is merged we will have:\n\n```\n==19741== LEAK SUMMARY:\n==19741==    definitely lost: 11,608 bytes in 352 blocks.\n==19741==    indirectly lost: 286,560 bytes in 390 blocks.\n==19741==      possibly lost: 463,342 bytes in 879 blocks.\n==19741==    still reachable: 71,109,048 bytes in 1,285,713 blocks.\n==19741==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Once #1026 is merged we will have:\n\n```\n==19741== LEAK SUMMARY:\n==19741==    definitely lost: 11,608 bytes in 352 blocks.\n==19741==    indirectly lost: 286,560 bytes in 390 blocks.\n==19741==      possibly lost: 463,342 bytes in 879 blocks.\n==19741==    still reachable: 71,109,048 bytes in 1,285,713 blocks.\n==19741==         suppressed: 0 bytes in 0 blocks.\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-10-29T04:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
@@ -399,7 +393,6 @@ Once #1026 is merged we will have:
 ==19741==         suppressed: 0 bytes in 0 blocks.
 ```
 
-
 Cheers,
 
 Michael
@@ -411,7 +404,7 @@ Michael
 archive/issue_comments_002260.json:
 ```json
 {
-    "body": "With Sage 2.9.1.1 we get:\n\n```\n==29169==    definitely lost: 1,237 bytes in 54 blocks.\n==29169==    indirectly lost: 7,704 bytes in 345 blocks.\n==29169==      possibly lost: 407,801 bytes in 991 blocks.\n==29169==    still reachable: 74,012,699 bytes in 1,287,766 blocks.\n==29169==         suppressed: 0 bytes in 0 blocks.\n```\n\nThe remaining definitely & indirectly lost are all due to known problems in LinBox when using Givaro.\n\nCheers,\n\nMichael",
+    "body": "With Sage 2.9.1.1 we get:\n\n```\n==29169==    definitely lost: 1,237 bytes in 54 blocks.\n==29169==    indirectly lost: 7,704 bytes in 345 blocks.\n==29169==      possibly lost: 407,801 bytes in 991 blocks.\n==29169==    still reachable: 74,012,699 bytes in 1,287,766 blocks.\n==29169==         suppressed: 0 bytes in 0 blocks.\n```\nThe remaining definitely & indirectly lost are all due to known problems in LinBox when using Givaro.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-26T15:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
@@ -429,7 +422,6 @@ With Sage 2.9.1.1 we get:
 ==29169==    still reachable: 74,012,699 bytes in 1,287,766 blocks.
 ==29169==         suppressed: 0 bytes in 0 blocks.
 ```
-
 The remaining definitely & indirectly lost are all due to known problems in LinBox when using Givaro.
 
 Cheers,

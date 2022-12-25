@@ -3,7 +3,7 @@
 archive/issues_003343.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: ln, calculus\n\nFirst, ln should only take 1 argument.  As it is, it accepts more than one, and just ignores all of the extra ones:\n\n\n```\nsage: ln(6,2)\nlog(6)\nsage: ln(12,-2,0,0,3,4,5)\nlog(12)\n```\n\n\nSecond, the documentation for ln (hitting 'ln?') gives the documentation for the class Function_log, and hence includes things like this:\n\n```\nsage: log(1024, 2) # the following is ugly (for now)\nlog(1024)/log(2)\nsage: log(10, 4)\nlog(10)/log(4)\n```\n\n\nThe attached patch defines ln as a function accepting only one argument, and with its own documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3343\n\n",
+    "body": "Assignee: somebody\n\nKeywords: ln, calculus\n\nFirst, ln should only take 1 argument.  As it is, it accepts more than one, and just ignores all of the extra ones:\n\n```\nsage: ln(6,2)\nlog(6)\nsage: ln(12,-2,0,0,3,4,5)\nlog(12)\n```\n\nSecond, the documentation for ln (hitting 'ln?') gives the documentation for the class Function_log, and hence includes things like this:\n\n```\nsage: log(1024, 2) # the following is ugly (for now)\nlog(1024)/log(2)\nsage: log(10, 4)\nlog(10)/log(4)\n```\n\nThe attached patch defines ln as a function accepting only one argument, and with its own documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3343\n\n",
     "created_at": "2008-05-31T21:46:29Z",
     "labels": [
         "component: calculus",
@@ -22,14 +22,12 @@ Keywords: ln, calculus
 
 First, ln should only take 1 argument.  As it is, it accepts more than one, and just ignores all of the extra ones:
 
-
 ```
 sage: ln(6,2)
 log(6)
 sage: ln(12,-2,0,0,3,4,5)
 log(12)
 ```
-
 
 Second, the documentation for ln (hitting 'ln?') gives the documentation for the class Function_log, and hence includes things like this:
 
@@ -39,7 +37,6 @@ log(1024)/log(2)
 sage: log(10, 4)
 log(10)/log(4)
 ```
-
 
 The attached patch defines ln as a function accepting only one argument, and with its own documentation.
 

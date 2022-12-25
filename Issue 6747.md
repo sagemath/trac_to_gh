@@ -147,7 +147,7 @@ I know it is very easy to criticize in such cases, and much harder to come up wi
 archive/issue_comments_055407.json:
 ```json
 {
-    "body": "These are extreme examples, and I'm not sure that a top-down layout will ever look good.  I believe that the solution for this particular problem would be to implement a circular tree layout algorithm.  However, if you play with the parameters, you can get a fairly nice plot.\n\n\n```\n    T = graphs.BalancedTree(3,5)\n    P = T.plot(layout='tree',tree_root=0)\n    P.show(aspect_ratio=.1,figsize=(15,15))\n```\n",
+    "body": "These are extreme examples, and I'm not sure that a top-down layout will ever look good.  I believe that the solution for this particular problem would be to implement a circular tree layout algorithm.  However, if you play with the parameters, you can get a fairly nice plot.\n\n```\n    T = graphs.BalancedTree(3,5)\n    P = T.plot(layout='tree',tree_root=0)\n    P.show(aspect_ratio=.1,figsize=(15,15))\n```",
     "created_at": "2009-08-19T16:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
@@ -158,13 +158,11 @@ archive/issue_comments_055407.json:
 
 These are extreme examples, and I'm not sure that a top-down layout will ever look good.  I believe that the solution for this particular problem would be to implement a circular tree layout algorithm.  However, if you play with the parameters, you can get a fairly nice plot.
 
-
 ```
     T = graphs.BalancedTree(3,5)
     P = T.plot(layout='tree',tree_root=0)
     P.show(aspect_ratio=.1,figsize=(15,15))
 ```
-
 
 
 
@@ -257,7 +255,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_055412.json:
 ```json
 {
-    "body": "Replying to [comment:7 ncohen]:\n> Applies fines, and I could not find any bug in it. Clearly improves the plotting for \"human\" trees. This new patch includes the previous one, plus :\n>     * A INPUT section\n>     * A new semicolumn after EXAMPLES ::\n> \n> If you agree with these changes, you can set this ticket to positive review !\n> \n> Nathann\n\nThe change look fine.",
+    "body": "Replying to [comment:7 ncohen]:\n> Applies fines, and I could not find any bug in it. Clearly improves the plotting for \"human\" trees. This new patch includes the previous one, plus :\n> * A INPUT section\n> * A new semicolumn after EXAMPLES ::\n> \n> If you agree with these changes, you can set this ticket to positive review !\n> \n> Nathann\n\n\nThe change look fine.",
     "created_at": "2009-10-30T20:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
@@ -268,12 +266,13 @@ archive/issue_comments_055412.json:
 
 Replying to [comment:7 ncohen]:
 > Applies fines, and I could not find any bug in it. Clearly improves the plotting for "human" trees. This new patch includes the previous one, plus :
->     * A INPUT section
->     * A new semicolumn after EXAMPLES ::
+> * A INPUT section
+> * A new semicolumn after EXAMPLES ::
 > 
 > If you agree with these changes, you can set this ticket to positive review !
 > 
 > Nathann
+
 
 The change look fine.
 

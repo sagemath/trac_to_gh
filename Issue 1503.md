@@ -3,7 +3,7 @@
 archive/issues_001503.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nBefore this patch if you make a formal function it will\nnot coerce into Mathematica.  E.g..\n\n\n```\nsage: f = function('Foo', var('x'), var('y'))\nsage: mathematica(f)\nFoo[x, y]\n```\n\n\nWith this patch it does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1503\n\n",
+    "body": "Assignee: @williamstein\n\nBefore this patch if you make a formal function it will\nnot coerce into Mathematica.  E.g..\n\n```\nsage: f = function('Foo', var('x'), var('y'))\nsage: mathematica(f)\nFoo[x, y]\n```\n\nWith this patch it does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1503\n\n",
     "created_at": "2007-12-14T05:50:21Z",
     "labels": [
         "component: calculus",
@@ -21,13 +21,11 @@ Assignee: @williamstein
 Before this patch if you make a formal function it will
 not coerce into Mathematica.  E.g..
 
-
 ```
 sage: f = function('Foo', var('x'), var('y'))
 sage: mathematica(f)
 Foo[x, y]
 ```
-
 
 With this patch it does work. 
 
@@ -77,7 +75,7 @@ Attachment [trac-1503.patch](tarball://root/attachments/some-uuid/ticket1503/tra
 archive/issue_comments_009611.json:
 ```json
 {
-    "body": "\n```\n[00:32] <mabshoff> about 1503: Shoudln't the mathematica doctests require mathematica?\n[00:32] <rlm> was-1464: it was a rewrite or nice, line by line, so actually it's a little cleaner\n[00:32] <rlm> the memory management for example\n[00:33] <was-1464> yes, put # optional there.\n[00:33] <mabshoff> ok, will do.\n[00:33] <was-1464> But *only* in the two lines with mathematica(...)\n[00:33] <was-1464> Matheamtica is *not* needed for the _mathematica_init_ lines\n[00:33] <mabshoff> Yep, I was about to ask for clarification on that.\n```\n",
+    "body": "```\n[00:32] <mabshoff> about 1503: Shoudln't the mathematica doctests require mathematica?\n[00:32] <rlm> was-1464: it was a rewrite or nice, line by line, so actually it's a little cleaner\n[00:32] <rlm> the memory management for example\n[00:33] <was-1464> yes, put # optional there.\n[00:33] <mabshoff> ok, will do.\n[00:33] <was-1464> But *only* in the two lines with mathematica(...)\n[00:33] <was-1464> Matheamtica is *not* needed for the _mathematica_init_ lines\n[00:33] <mabshoff> Yep, I was about to ask for clarification on that.\n```",
     "created_at": "2007-12-15T23:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1503",
     "type": "issue_comment",
@@ -85,7 +83,6 @@ archive/issue_comments_009611.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [00:32] <mabshoff> about 1503: Shoudln't the mathematica doctests require mathematica?
@@ -97,7 +94,6 @@ archive/issue_comments_009611.json:
 [00:33] <was-1464> Matheamtica is *not* needed for the _mathematica_init_ lines
 [00:33] <mabshoff> Yep, I was about to ask for clarification on that.
 ```
-
 
 
 

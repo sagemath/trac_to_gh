@@ -74,7 +74,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071722.json:
 ```json
 {
-    "body": "The problem is the use of [str.rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip) in `twist.Worksheet_download`:\n\n```python\nsage: '112 - 01 - Review.sws'.rstrip('.sws')\n'112 - 01 - Revie'\n```\n\nThe patch uses `str.endswith` and a slice, instead.",
+    "body": "The problem is the use of [str.rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip) in `twist.Worksheet_download`:\n\n```python\nsage: '112 - 01 - Review.sws'.rstrip('.sws')\n'112 - 01 - Revie'\n```\nThe patch uses `str.endswith` and a slice, instead.",
     "created_at": "2010-02-03T06:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ The problem is the use of [str.rstrip](http://docs.python.org/library/stdtypes.h
 sage: '112 - 01 - Review.sws'.rstrip('.sws')
 '112 - 01 - Revie'
 ```
-
 The patch uses `str.endswith` and a slice, instead.
 
 

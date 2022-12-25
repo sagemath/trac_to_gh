@@ -3,7 +3,7 @@
 archive/issues_003574.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nBEFORE, with caching, on OS X:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.013 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\nteragon-2:mwrank was$ \n```\n\n\nAFTER:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.001 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3574\n\n",
+    "body": "Assignee: cwitty\n\nBEFORE, with caching, on OS X:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.013 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\nteragon-2:mwrank was$ \n```\n\nAFTER:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.001 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3574\n\n",
     "created_at": "2008-07-06T22:00:40Z",
     "labels": [
         "component: misc"
@@ -27,7 +27,6 @@ teragon-2:mwrank was$ sage -startuptime|grep mwrank
 teragon-2:mwrank was$ 
 ```
 
-
 AFTER:
 
 ```
@@ -36,7 +35,6 @@ teragon-2:mwrank was$ sage -startuptime|grep mwrank
      sage.libs.mwrank.all: 0.001 (sage.libs.all)
       interface: 0.001 (sage.libs.mwrank.all)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3574
 

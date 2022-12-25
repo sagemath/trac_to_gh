@@ -3,7 +3,7 @@
 archive/issues_001657.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is very important.\n\n\n```\nOn Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> In principle, all one would need is javac (and the java runtime\n> binaries). If they're going to be using java at all, they'll have that.\n>\n> It looks like they use the ant build tool which is a nice make system\n> for java. http://ant.apache.org/ For those interested in building the\n> java components from source, we could make an .spkg for this too (if\n> they don't have it already). I used ant for the java3d stuff too.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1657\n\n",
+    "body": "Assignee: mabshoff\n\nThis is very important.\n\n```\nOn Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> In principle, all one would need is javac (and the java runtime\n> binaries). If they're going to be using java at all, they'll have that.\n>\n> It looks like they use the ant build tool which is a nice make system\n> for java. http://ant.apache.org/ For those interested in building the\n> java components from source, we could make an .spkg for this too (if\n> they don't have it already). I used ant for the java3d stuff too.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1657\n\n",
     "created_at": "2008-01-02T19:08:00Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 This is very important.
 
-
 ```
 On Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > In principle, all one would need is javac (and the java runtime
@@ -31,7 +30,6 @@ On Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > java components from source, we could make an .spkg for this too (if
 > they don't have it already). I used ant for the java3d stuff too.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1657
 

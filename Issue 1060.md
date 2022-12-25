@@ -3,7 +3,7 @@
 archive/issues_001060.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe fix for flintqs is the same as for givaro, basically. To the file\n\n```\n    src/lanczos.c\n```\n\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\n\nThen it builds fine. \n\n-- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1060\n\n",
+    "body": "Assignee: mabshoff\n\nThe fix for flintqs is the same as for givaro, basically. To the file\n\n```\n    src/lanczos.c\n```\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\nThen it builds fine. \n\n-- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1060\n\n",
     "created_at": "2007-11-02T00:25:17Z",
     "labels": [
         "component: porting",
@@ -23,13 +23,11 @@ The fix for flintqs is the same as for givaro, basically. To the file
 ```
     src/lanczos.c
 ```
-
 add the following as the first line:
 
 ```
 #include "sys/types.h"
 ```
-
 Then it builds fine. 
 
 -- William

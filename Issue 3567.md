@@ -3,7 +3,7 @@
 archive/issues_003567.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nBEFORE:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n        transaction: 0.104 (sage.databases.db)\n         transaction._transaction: 0.103 (transaction)\n          logging: 0.004 (transaction._transaction)\n          zope: 0.096 (transaction._transaction)\n         transaction._manager: 0.000 (transaction)\n             transaction.interfaces: 0.000 (ZODB.Connection)\n0.104 transaction (sage.databases.db)\n0.103 transaction._transaction (transaction)\n0.096 zope (transaction._transaction)\n```\n\nand that's *with* disk caching (on os x though). \n\nAFTER this patch:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n             transaction.interfaces: 0.004 (ZODB.Connection)\n              transaction._transaction: 0.003 (transaction.interfaces)\n               zope: 0.000 (transaction._transaction)\n               transaction: 0.001 (transaction._transaction)\n              transaction._manager: 0.000 (transaction.interfaces)\n```\n\n\nSweet!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3567\n\n",
+    "body": "Assignee: tbd\n\nBEFORE:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n        transaction: 0.104 (sage.databases.db)\n         transaction._transaction: 0.103 (transaction)\n          logging: 0.004 (transaction._transaction)\n          zope: 0.096 (transaction._transaction)\n         transaction._manager: 0.000 (transaction)\n             transaction.interfaces: 0.000 (ZODB.Connection)\n0.104 transaction (sage.databases.db)\n0.103 transaction._transaction (transaction)\n0.096 zope (transaction._transaction)\n```\nand that's *with* disk caching (on os x though). \n\nAFTER this patch:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n             transaction.interfaces: 0.004 (ZODB.Connection)\n              transaction._transaction: 0.003 (transaction.interfaces)\n               zope: 0.000 (transaction._transaction)\n               transaction: 0.001 (transaction._transaction)\n              transaction._manager: 0.000 (transaction.interfaces)\n```\n\nSweet!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3567\n\n",
     "created_at": "2008-07-06T19:48:57Z",
     "labels": [
         "component: algebra",
@@ -32,7 +32,6 @@ teragon-2:databases was$ sage -startuptime |grep transaction
 0.103 transaction._transaction (transaction)
 0.096 zope (transaction._transaction)
 ```
-
 and that's *with* disk caching (on os x though). 
 
 AFTER this patch:
@@ -45,7 +44,6 @@ teragon-2:databases was$ sage -startuptime |grep transaction
                transaction: 0.001 (transaction._transaction)
               transaction._manager: 0.000 (transaction.interfaces)
 ```
-
 
 Sweet!
 

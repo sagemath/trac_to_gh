@@ -3,7 +3,7 @@
 archive/issues_008326.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nSphinx warnings from building the HTML reference manual include: \n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8326\n\n",
+    "body": "Assignee: sage-combinat\n\nSphinx warnings from building the HTML reference manual include: \n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8326\n\n",
     "created_at": "2010-02-22T06:06:02Z",
     "labels": [
         "component: combinatorics",
@@ -25,7 +25,6 @@ Sphinx warnings from building the HTML reference manual include:
 combinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object
 combinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8326
 

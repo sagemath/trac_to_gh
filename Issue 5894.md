@@ -3,7 +3,7 @@
 archive/issues_005894.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn a rather minimal Ubuntu 8.04 system:\n\n```\n[03:52am] pamcd: ufff, thats almost what i have available\n[03:52am] pamcd: ./install: 352: time: not found\n<SNIP>\n[03:56am] mabs: Ok, can you edit spkg/install ?\n[03:56am] mabs: Change #!/bin/sh to #!/usr/bin/env bash and restart?\n[03:57am] pamcd: ok, restarting\n[03:58am] pamcd: what is that change for?\n[03:58am] mabs: Well, it runs the shell script via bash instead of the default shell.\n[03:58am] mabs: For most systems /bin/sh is in effect bash, but that has been changing.\n[03:59am] pamcd: the default shell misses some needed functionallity?\n[03:59am] mabs: On non-linux systems /bin/sh is often the original shell.\n[03:59am] mabs: Well, it seems to not have a build in time command in your case.\n[03:59am] pamcd: btw, it seems to have solved the problem: compiling\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5894\n\n",
+    "body": "Assignee: mabshoff\n\nOn a rather minimal Ubuntu 8.04 system:\n\n```\n[03:52am] pamcd: ufff, thats almost what i have available\n[03:52am] pamcd: ./install: 352: time: not found\n<SNIP>\n[03:56am] mabs: Ok, can you edit spkg/install ?\n[03:56am] mabs: Change #!/bin/sh to #!/usr/bin/env bash and restart?\n[03:57am] pamcd: ok, restarting\n[03:58am] pamcd: what is that change for?\n[03:58am] mabs: Well, it runs the shell script via bash instead of the default shell.\n[03:58am] mabs: For most systems /bin/sh is in effect bash, but that has been changing.\n[03:59am] pamcd: the default shell misses some needed functionallity?\n[03:59am] mabs: On non-linux systems /bin/sh is often the original shell.\n[03:59am] mabs: Well, it seems to not have a build in time command in your case.\n[03:59am] pamcd: btw, it seems to have solved the problem: compiling\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5894\n\n",
     "created_at": "2009-04-25T11:05:45Z",
     "labels": [
         "component: distribution",
@@ -36,7 +36,6 @@ On a rather minimal Ubuntu 8.04 system:
 [03:59am] mabs: Well, it seems to not have a build in time command in your case.
 [03:59am] pamcd: btw, it seems to have solved the problem: compiling
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5894
 

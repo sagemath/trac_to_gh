@@ -3,7 +3,7 @@
 archive/issues_007872.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  wcauchois @jasongrout mhampton olazo @kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nIt's inclution within plot3d would be something on the likes of\n\n\n```\ndef plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):\n    if transformation==None:\n        return plot3d(f,v1ran,v2ran,**kwds)\n    else:\n        v1=v1ran[0]\n        v2=v2ran[0]\n\n        if transformation=='spherical':\n            r=var('r')\n            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)\n        elif transformation=='cylindrical':\n            r=var('r')\n            transformation=(r*cos(v1),r*sin(v1),v2,r)\n        elif str(type(transformation))==\"<type 'str'>\":\n            print 'Warning: the transformation given is not amongst the options, it will be ignored'\n            return plot3d(f,v1ran,v2ran,**kwds)\n\n        fvar=transformation[3]\n        transformation=(transformation[0],transformation[1],transformation[2])\n\n        try:\n            R=[t.subs({fvar:f}) for t in transformation]\n        except:\n            def subs_func(t):\n                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})\n            R=map(subs_func,transformation)\n        return parametric_plot(R,v1ran,v2ran,**kwds)\n```\n\n\nExamples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).\n\nSpherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
+    "body": "Assignee: olazo\n\nCC:  wcauchois @jasongrout mhampton olazo @kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nIt's inclution within plot3d would be something on the likes of\n\n```\ndef plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):\n    if transformation==None:\n        return plot3d(f,v1ran,v2ran,**kwds)\n    else:\n        v1=v1ran[0]\n        v2=v2ran[0]\n\n        if transformation=='spherical':\n            r=var('r')\n            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)\n        elif transformation=='cylindrical':\n            r=var('r')\n            transformation=(r*cos(v1),r*sin(v1),v2,r)\n        elif str(type(transformation))==\"<type 'str'>\":\n            print 'Warning: the transformation given is not amongst the options, it will be ignored'\n            return plot3d(f,v1ran,v2ran,**kwds)\n\n        fvar=transformation[3]\n        transformation=(transformation[0],transformation[1],transformation[2])\n\n        try:\n            R=[t.subs({fvar:f}) for t in transformation]\n        except:\n            def subs_func(t):\n                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})\n            R=map(subs_func,transformation)\n        return parametric_plot(R,v1ran,v2ran,**kwds)\n```\n\nExamples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).\n\nSpherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
     "created_at": "2010-01-08T17:44:47Z",
     "labels": [
         "component: graphics",
@@ -25,7 +25,6 @@ While developing a command called transform_plot3d, that generalized ploting in 
 I agreed to that, so I propose an adition to plot3d's syntax: "plot3d(function,var1range,var2range,transformation=None,**kwds)" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.
 
 It's inclution within plot3d would be something on the likes of
-
 
 ```
 def plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):
@@ -56,7 +55,6 @@ def plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):
             R=map(subs_func,transformation)
         return parametric_plot(R,v1ran,v2ran,**kwds)
 ```
-
 
 Examples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).
 
@@ -410,7 +408,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068238.json:
 ```json
 {
-    "body": "I haven't been able to do a thorough review yet, but in general I agree that this looks very nice!  Everything below should be interpreted as nitpicking; however, because of the last item (doctests) I must put this as 'needs work'.\n\nIn spherical_plot3d, it is a 'drop' of water, not a 'drom'.\n\nIn plot3d where the transformations are added, should it be\n\n```\nelif adaptive:\n```\n\nor \n\n```\nif adaptive:\n```\n\nThat is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't\n\n```\n+    from sage.symbolic.callable import is_CallableSymbolicExpression\n```\n\nbe done only if transformation is not None?\n\nThe `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.\n\nAlso, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it? \n\nAlso, doctests are needed for the abstract classes, and (for readability) a blank line between methods wouldn't hurt.",
+    "body": "I haven't been able to do a thorough review yet, but in general I agree that this looks very nice!  Everything below should be interpreted as nitpicking; however, because of the last item (doctests) I must put this as 'needs work'.\n\nIn spherical_plot3d, it is a 'drop' of water, not a 'drom'.\n\nIn plot3d where the transformations are added, should it be\n\n```\nelif adaptive:\n```\nor \n\n```\nif adaptive:\n```\nThat is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't\n\n```\n+    from sage.symbolic.callable import is_CallableSymbolicExpression\n```\nbe done only if transformation is not None?\n\nThe `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.\n\nAlso, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it? \n\nAlso, doctests are needed for the abstract classes, and (for readability) a blank line between methods wouldn't hurt.",
     "created_at": "2010-02-05T19:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -428,19 +426,16 @@ In plot3d where the transformations are added, should it be
 ```
 elif adaptive:
 ```
-
 or 
 
 ```
 if adaptive:
 ```
-
 That is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't
 
 ```
 +    from sage.symbolic.callable import is_CallableSymbolicExpression
 ```
-
 be done only if transformation is not None?
 
 The `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.
@@ -456,7 +451,7 @@ Also, doctests are needed for the abstract classes, and (for readability) a blan
 archive/issue_comments_068239.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n\nFirst of all, thanks for taking a look at this. Your comments are very thorough and I will respond to each of them in turn.\n\n> I haven't been able to do a thorough review yet, but in general I agree that this looks very nice!  Everything below should be interpreted as nitpicking; however, because of the last item (doctests) I must put this as 'needs work'.\n> \n> In spherical_plot3d, it is a 'drop' of water, not a 'drom'.\n\nYes, I think that's correct.\n\n> In plot3d where the transformations are added, should it be\n> {{{\n> elif adaptive:\n> }}}\n> or \n> {{{\n> if adaptive:\n> }}}\n> That is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't\n\nI think transformation excludes adaptive since parametric_plot3d doesn't support adaptive plots. I'll make sure to document this.\n\n> {{{\n> +    from sage.symbolic.callable import is_CallableSymbolicExpression\n> }}}\n> be done only if transformation is not None?\n\nSure. I don't see how that really matters though, since its just an import statement.\n\n> The `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.\n\nHow about `show(A + B + C + D + E)` in the TESTS section below?\n\n> Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?\n\nThis is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.\n\nFor example,\n\n```\nplot3d(..., transformation=Spherical('phi', ['r', 'theta']))\n```\n\nwill graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?\n\n> Also, doctests are needed for the abstract classes, and (for readability) a blank line between methods wouldn't hurt.\n\nOkay.",
+    "body": "Replying to [comment:17 kcrisman]:\n\nFirst of all, thanks for taking a look at this. Your comments are very thorough and I will respond to each of them in turn.\n\n> I haven't been able to do a thorough review yet, but in general I agree that this looks very nice!  Everything below should be interpreted as nitpicking; however, because of the last item (doctests) I must put this as 'needs work'.\n> \n> In spherical_plot3d, it is a 'drop' of water, not a 'drom'.\n\n\nYes, I think that's correct.\n\n> In plot3d where the transformations are added, should it be\n> \n> ```\n> elif adaptive:\n> ```\n> or \n> \n> ```\n> if adaptive:\n> ```\n> That is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't\n\n\nI think transformation excludes adaptive since parametric_plot3d doesn't support adaptive plots. I'll make sure to document this.\n\n> {{{\n> +    from sage.symbolic.callable import is_CallableSymbolicExpression\n> }}}\n> be done only if transformation is not None?\n\n\nSure. I don't see how that really matters though, since its just an import statement.\n\n> The `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.\n\n\nHow about `show(A + B + C + D + E)` in the TESTS section below?\n\n> Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?\n\n\nThis is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.\n\nFor example,\n\n```\nplot3d(..., transformation=Spherical('phi', ['r', 'theta']))\n```\nwill graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?\n\n> Also, doctests are needed for the abstract classes, and (for readability) a blank line between methods wouldn't hurt.\n\n\nOkay.",
     "created_at": "2010-02-08T01:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -473,17 +468,21 @@ First of all, thanks for taking a look at this. Your comments are very thorough 
 > 
 > In spherical_plot3d, it is a 'drop' of water, not a 'drom'.
 
+
 Yes, I think that's correct.
 
 > In plot3d where the transformations are added, should it be
-> {{{
+> 
+> ```
 > elif adaptive:
-> }}}
+> ```
 > or 
-> {{{
+> 
+> ```
 > if adaptive:
-> }}}
+> ```
 > That is, does transformation exclude adaptive?  If so, this should be documented.  Also, shouldn't
+
 
 I think transformation excludes adaptive since parametric_plot3d doesn't support adaptive plots. I'll make sure to document this.
 
@@ -492,13 +491,16 @@ I think transformation excludes adaptive since parametric_plot3d doesn't support
 > }}}
 > be done only if transformation is not None?
 
+
 Sure. I don't see how that really matters though, since its just an import statement.
 
 > The `@`interact doctests don't really make sense in the command-line format.  I tried them nonetheless, and it popped up a bunch of jmol windows - looked nice!  But there must be a better way to doctest this; perhaps just A;B;C;D;E or something.
 
+
 How about `show(A + B + C + D + E)` in the TESTS section below?
 
 > Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?
+
 
 This is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.
 
@@ -507,10 +509,10 @@ For example,
 ```
 plot3d(..., transformation=Spherical('phi', ['r', 'theta']))
 ```
-
 will graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?
 
 > Also, doctests are needed for the abstract classes, and (for readability) a blank line between methods wouldn't hurt.
+
 
 Okay.
 
@@ -613,7 +615,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068245.json:
 ```json
 {
-    "body": "> > Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?\n> \n> This is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.\n> \n> For example,\n> {{{\n> plot3d(..., transformation=Spherical('phi', ['r', 'theta']))\n> }}}\n> will graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?\n> \n\nMost of the changes seem fine.  I am still confused about this, though.  Isn't\n\n```\nsage: spherical_plot3d(e^-y,(x,0,2*pi),(y,0,pi))\n```\n\nalready allowing one to use a different name for the variables?  \n\nAh, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to\n\n```\n      sage: Spherical('theta', ['r', 'phi']) \n      Spherical coordinate system (theta in terms of r, phi) \n```\n\nby actually plotting something with this.  \n\nAlso, in line 623, I think it should be\n\n```\n   sage: var('r,u,v')\n```\n \ninstead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).\n\nIs it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.",
+    "body": "> > Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?\n\n> \n> This is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.\n> \n> For example,\n> \n> ```\n> plot3d(..., transformation=Spherical('phi', ['r', 'theta']))\n> ```\n> will graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?\n> \n\n\nMost of the changes seem fine.  I am still confused about this, though.  Isn't\n\n```\nsage: spherical_plot3d(e^-y,(x,0,2*pi),(y,0,pi))\n```\nalready allowing one to use a different name for the variables?  \n\nAh, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to\n\n```\n      sage: Spherical('theta', ['r', 'phi']) \n      Spherical coordinate system (theta in terms of r, phi) \n```\nby actually plotting something with this.  \n\nAlso, in line 623, I think it should be\n\n```\n   sage: var('r,u,v')\n``` \ninstead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).\n\nIs it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.",
     "created_at": "2010-02-12T19:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -623,22 +625,24 @@ archive/issue_comments_068245.json:
 ```
 
 > > Also, why are Cylindrical and Spherical imported in plot3d/all.py?    It's not clear to me why someone would want that available but not just use e.g. spherical_plot3d or just import Spherical if they really needed it?
+
 > 
 > This is one of the major features of the transformation system. You can use spherical_plot3d, which will graph a function r in terms of phi and theta, or you can specify transformation=Spherical() which lets you choose the dependent and independent variables.
 > 
 > For example,
-> {{{
+> 
+> ```
 > plot3d(..., transformation=Spherical('phi', ['r', 'theta']))
-> }}}
+> ```
 > will graph a function phi in terms of r and theta. So basically you get more flexibility by using Spherical(). Is there a way I could make that clearer in the documentation?
 > 
+
 
 Most of the changes seem fine.  I am still confused about this, though.  Isn't
 
 ```
 sage: spherical_plot3d(e^-y,(x,0,2*pi),(y,0,pi))
 ```
-
 already allowing one to use a different name for the variables?  
 
 Ah, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to
@@ -647,15 +651,13 @@ Ah, I think I see.  There are six different possibilities for order of independe
       sage: Spherical('theta', ['r', 'phi']) 
       Spherical coordinate system (theta in terms of r, phi) 
 ```
-
 by actually plotting something with this.  
 
 Also, in line 623, I think it should be
 
 ```
    sage: var('r,u,v')
-```
- 
+``` 
 instead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).
 
 Is it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.
@@ -667,7 +669,7 @@ Is it ok if I make it still 'needs work' to just clarify these?  For most users 
 archive/issue_comments_068246.json:
 ```json
 {
-    "body": "Replying to [comment:20 kcrisman]:\n> Ah, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to\n> {{{\n>       sage: Spherical('theta', ['r', 'phi']) \n>       Spherical coordinate system (theta in terms of r, phi) \n> }}}\n> by actually plotting something with this.  \n\nIn the docstring on line 254, I do just that.\n\n> Also, in line 623, I think it should be\n> {{{\n>    sage: var('r,u,v')\n> }}} \n> instead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).\n\nGood catch!\n\n> Is it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.\n\nI've done my best on the documentation, but it still might not be entirely clear on how to use Spherical and Cylindrical. Most users, of course, can simply use spherical_plot3d and cylindrical_plot3d. Can you make any concrete suggestions on how to improve the documentation? Does anyone have any ideas for sentences to add?",
+    "body": "Replying to [comment:20 kcrisman]:\n> Ah, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to\n> \n> ```\n>       sage: Spherical('theta', ['r', 'phi']) \n>       Spherical coordinate system (theta in terms of r, phi) \n> ```\n> by actually plotting something with this.  \n\n\nIn the docstring on line 254, I do just that.\n\n> Also, in line 623, I think it should be\n> \n> ```\n>    sage: var('r,u,v')\n> ``` \n> instead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).\n\n\nGood catch!\n\n> Is it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.\n\n\nI've done my best on the documentation, but it still might not be entirely clear on how to use Spherical and Cylindrical. Most users, of course, can simply use spherical_plot3d and cylindrical_plot3d. Can you make any concrete suggestions on how to improve the documentation? Does anyone have any ideas for sentences to add?",
     "created_at": "2010-02-13T00:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -678,23 +680,28 @@ archive/issue_comments_068246.json:
 
 Replying to [comment:20 kcrisman]:
 > Ah, I think I see.  There are six different possibilities for order of independent variables and the dependent variable, and you want to allow all of these - it that it?  Maybe you should make it clearer that this is what is going on by saying that it's not the names, but rather which one is the dependent variable, you are changing - in fact, that the names look the same only to preserve the usual terminology - and then adding to
-> {{{
+> 
+> ```
 >       sage: Spherical('theta', ['r', 'phi']) 
 >       Spherical coordinate system (theta in terms of r, phi) 
-> }}}
+> ```
 > by actually plotting something with this.  
+
 
 In the docstring on line 254, I do just that.
 
 > Also, in line 623, I think it should be
-> {{{
+> 
+> ```
 >    sage: var('r,u,v')
-> }}} 
+> ``` 
 > instead of r, u, u; I am surprised this doesn't give a doctest failure (I didn't get a chance to run that right now).
+
 
 Good catch!
 
 > Is it ok if I make it still 'needs work' to just clarify these?  For most users it will all be irrelevant, of course, but if we are really going to import Spherical() at the top level, then it should be very clear what the point is.
+
 
 I've done my best on the documentation, but it still might not be entirely clear on how to use Spherical and Cylindrical. Most users, of course, can simply use spherical_plot3d and cylindrical_plot3d. Can you make any concrete suggestions on how to improve the documentation? Does anyone have any ideas for sentences to add?
 
@@ -723,7 +730,7 @@ In your definition of spherical coordinates, is your second angle the *elevation
 archive/issue_comments_068248.json:
 ```json
 {
-    "body": "Also, given the confusion surrounding different conventions and variable names for spherical coordinates, I think it would be better to use \"radius\", \"azimuth\", and \"inclination\" (or \"elevation\"), instead of \"r\", \"phi\", and \"theta\".  Then it's unambiguous what \n\n\n```\nSpherical('radius', ['azimuth', 'inclination'])\n```\n\n\nrepresents.",
+    "body": "Also, given the confusion surrounding different conventions and variable names for spherical coordinates, I think it would be better to use \"radius\", \"azimuth\", and \"inclination\" (or \"elevation\"), instead of \"r\", \"phi\", and \"theta\".  Then it's unambiguous what \n\n```\nSpherical('radius', ['azimuth', 'inclination'])\n```\n\nrepresents.",
     "created_at": "2010-02-24T07:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -734,11 +741,9 @@ archive/issue_comments_068248.json:
 
 Also, given the confusion surrounding different conventions and variable names for spherical coordinates, I think it would be better to use "radius", "azimuth", and "inclination" (or "elevation"), instead of "r", "phi", and "theta".  Then it's unambiguous what 
 
-
 ```
 Spherical('radius', ['azimuth', 'inclination'])
 ```
-
 
 represents.
 
@@ -749,7 +754,7 @@ represents.
 archive/issue_comments_068249.json:
 ```json
 {
-    "body": "Similarly, I think cylindrical coordinate components should be spelled out:\n\n\n```\nclass Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):\n    all_vars = ['radius', 'azimuth', 'height']\n\n    _name = 'Cylindrical (radius, azimuth, height) coordinate system'\n\n    def gen_transform(self, radius=None, azimuth=None, height=None):\n        return (radius * cos(azimuth),\n                radius * sin(azimuth),\n                height)\n```\n",
+    "body": "Similarly, I think cylindrical coordinate components should be spelled out:\n\n```\nclass Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):\n    all_vars = ['radius', 'azimuth', 'height']\n\n    _name = 'Cylindrical (radius, azimuth, height) coordinate system'\n\n    def gen_transform(self, radius=None, azimuth=None, height=None):\n        return (radius * cos(azimuth),\n                radius * sin(azimuth),\n                height)\n```",
     "created_at": "2010-02-24T07:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -759,7 +764,6 @@ archive/issue_comments_068249.json:
 ```
 
 Similarly, I think cylindrical coordinate components should be spelled out:
-
 
 ```
 class Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):
@@ -775,13 +779,12 @@ class Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):
 
 
 
-
 ---
 
 archive/issue_comments_068250.json:
 ```json
 {
-    "body": "One more point that I thought of when trying to use this feature.  Why should I have to specify the names of variables more than once?  Introspection should be able to get these from my gen_transform function.  It seems like I should be able to do this:\n\n\n```\nclass Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):\n    \"\"\"\n    Some docs for the mathematical definitions of the variables\n    \"\"\"\n    def gen_transform(self, radius=None, azimuth=None, height=None):\n        return (radius * cos(azimuth),\n                radius * sin(azimuth),\n                height)\n```\n\n\nand things should just work.  all_vars can be inferred from the keyword arguments to gen_transform.  It's pretty easy to come up with a good default _name (i.e., 'name of class (variables) coordinate system').",
+    "body": "One more point that I thought of when trying to use this feature.  Why should I have to specify the names of variables more than once?  Introspection should be able to get these from my gen_transform function.  It seems like I should be able to do this:\n\n```\nclass Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):\n    \"\"\"\n    Some docs for the mathematical definitions of the variables\n    \"\"\"\n    def gen_transform(self, radius=None, azimuth=None, height=None):\n        return (radius * cos(azimuth),\n                radius * sin(azimuth),\n                height)\n```\n\nand things should just work.  all_vars can be inferred from the keyword arguments to gen_transform.  It's pretty easy to come up with a good default _name (i.e., 'name of class (variables) coordinate system').",
     "created_at": "2010-02-24T08:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -791,7 +794,6 @@ archive/issue_comments_068250.json:
 ```
 
 One more point that I thought of when trying to use this feature.  Why should I have to specify the names of variables more than once?  Introspection should be able to get these from my gen_transform function.  It seems like I should be able to do this:
-
 
 ```
 class Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):
@@ -803,7 +805,6 @@ class Cylindrical(sage.plot.plot3d.plot3d._CoordTrans):
                 radius * sin(azimuth),
                 height)
 ```
-
 
 and things should just work.  all_vars can be inferred from the keyword arguments to gen_transform.  It's pretty easy to come up with a good default _name (i.e., 'name of class (variables) coordinate system').
 
@@ -832,7 +833,7 @@ Changing assignee from olazo to @jasongrout.
 archive/issue_comments_068252.json:
 ```json
 {
-    "body": "Another polishing point: when given this syntax\n\n\n```\nspherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nplot3d(2,(u,-pi,pi),(v,0,pi),transformation=spherical,plot_points=[100,100])\n```\n\n\nwhy do I have to specify the fourth argument in spherical (i.e., \"w\")?  In the plot, you know that I'm specifying u and v to be numeric ranges, so it should be easy for Sage to realize that the function variable is w and the independent variables are u and v.",
+    "body": "Another polishing point: when given this syntax\n\n```\nspherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nplot3d(2,(u,-pi,pi),(v,0,pi),transformation=spherical,plot_points=[100,100])\n```\n\nwhy do I have to specify the fourth argument in spherical (i.e., \"w\")?  In the plot, you know that I'm specifying u and v to be numeric ranges, so it should be easy for Sage to realize that the function variable is w and the independent variables are u and v.",
     "created_at": "2010-02-24T08:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -843,12 +844,10 @@ archive/issue_comments_068252.json:
 
 Another polishing point: when given this syntax
 
-
 ```
 spherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) 
 plot3d(2,(u,-pi,pi),(v,0,pi),transformation=spherical,plot_points=[100,100])
 ```
-
 
 why do I have to specify the fourth argument in spherical (i.e., "w")?  In the plot, you know that I'm specifying u and v to be numeric ranges, so it should be easy for Sage to realize that the function variable is w and the independent variables are u and v.
 
@@ -859,7 +858,7 @@ why do I have to specify the fourth argument in spherical (i.e., "w")?  In the p
 archive/issue_comments_068253.json:
 ```json
 {
-    "body": "The current code might have a problem if I do:\n\n\n```\nspherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nplot3d(lambda x,y: 2,(-pi,pi),(0,pi),transformation=spherical,plot_points=[100,100])\n\n```\n\n\nbecause the current strategy does not specify if u or v is the first coordinate range.",
+    "body": "The current code might have a problem if I do:\n\n```\nspherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nplot3d(lambda x,y: 2,(-pi,pi),(0,pi),transformation=spherical,plot_points=[100,100])\n\n```\n\nbecause the current strategy does not specify if u or v is the first coordinate range.",
     "created_at": "2010-02-24T08:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -870,13 +869,11 @@ archive/issue_comments_068253.json:
 
 The current code might have a problem if I do:
 
-
 ```
 spherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) 
 plot3d(lambda x,y: 2,(-pi,pi),(0,pi),transformation=spherical,plot_points=[100,100])
 
 ```
-
 
 because the current strategy does not specify if u or v is the first coordinate range.
 
@@ -887,7 +884,7 @@ because the current strategy does not specify if u or v is the first coordinate 
 archive/issue_comments_068254.json:
 ```json
 {
-    "body": "Indeed, with the patch:\n\n\n```\nsage: var('u,v,w')\nsage: spherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nsage: plot3d(lambda x,y: 2,(-pi,pi),(0,pi),transformation=spherical,plot_points=[100,100])\nTraceback (most recent call last):\n...\nValueError: expected 3-tuple for urange and vrange\n```\n",
+    "body": "Indeed, with the patch:\n\n```\nsage: var('u,v,w')\nsage: spherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) \nsage: plot3d(lambda x,y: 2,(-pi,pi),(0,pi),transformation=spherical,plot_points=[100,100])\nTraceback (most recent call last):\n...\nValueError: expected 3-tuple for urange and vrange\n```",
     "created_at": "2010-02-25T04:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -898,7 +895,6 @@ archive/issue_comments_068254.json:
 
 Indeed, with the patch:
 
-
 ```
 sage: var('u,v,w')
 sage: spherical=(w*cos(u)*sin(v),w*sin(u)*sin(v),w*cos(v),w) 
@@ -907,7 +903,6 @@ Traceback (most recent call last):
 ...
 ValueError: expected 3-tuple for urange and vrange
 ```
-
 
 
 
@@ -1008,7 +1003,7 @@ Wow, great work Jason. Thank you so much. I've had a really tough quarter in sch
 archive/issue_comments_068260.json:
 ```json
 {
-    "body": "Replying to [comment:33 wcauchois]:\n> Wow, great work Jason. Thank you so much. I've had a really tough quarter in school and I really didn't have time to work on this. I'm also excited to see this feature in Sage. Thanks to everyone who helped make this happen.\n\nI totally understand.  Now I am talking about transformations in my calc 3 class, so I could take some time to finish this up.  I'm hoping it gets in fairly quickly, though I'll probably apply the patch to our class server anyway.\n\nI positive review your code (well, except for the changes I made :).  Can you review my code?",
+    "body": "Replying to [comment:33 wcauchois]:\n> Wow, great work Jason. Thank you so much. I've had a really tough quarter in school and I really didn't have time to work on this. I'm also excited to see this feature in Sage. Thanks to everyone who helped make this happen.\n\n\nI totally understand.  Now I am talking about transformations in my calc 3 class, so I could take some time to finish this up.  I'm hoping it gets in fairly quickly, though I'll probably apply the patch to our class server anyway.\n\nI positive review your code (well, except for the changes I made :).  Can you review my code?",
     "created_at": "2010-02-27T16:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -1019,6 +1014,7 @@ archive/issue_comments_068260.json:
 
 Replying to [comment:33 wcauchois]:
 > Wow, great work Jason. Thank you so much. I've had a really tough quarter in school and I really didn't have time to work on this. I'm also excited to see this feature in Sage. Thanks to everyone who helped make this happen.
+
 
 I totally understand.  Now I am talking about transformations in my calc 3 class, so I could take some time to finish this up.  I'm hoping it gets in fairly quickly, though I'll probably apply the patch to our class server anyway.
 
@@ -1070,7 +1066,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_068263.json:
 ```json
 {
-    "body": "Replying to [comment:35 wcauchois]:\n> Jason,\n> I've taken a look at your code and you've done a great job of cleaning this up! I can't find any fault with it. Apply the following patches to Sage 4.3.3: trac-7872-polish.patch, trac_7872_new-all.patch. Applies fine and passes all doctests.\n> \n\nApply the patches in this order, though: trac_7872_new-all.patch, trac-7872-polish.patch.\n\nThere is precedent for two people collaboratively writing and reviewing each other's code as being okay.  Since you've passed off on my code, and I've passed off on your code, I'll mark this as positive review.  olazo: can you look at this as well, and if you find a problem, change it back to needs work?",
+    "body": "Replying to [comment:35 wcauchois]:\n> Jason,\n> I've taken a look at your code and you've done a great job of cleaning this up! I can't find any fault with it. Apply the following patches to Sage 4.3.3: trac-7872-polish.patch, trac_7872_new-all.patch. Applies fine and passes all doctests.\n> \n\n\nApply the patches in this order, though: trac_7872_new-all.patch, trac-7872-polish.patch.\n\nThere is precedent for two people collaboratively writing and reviewing each other's code as being okay.  Since you've passed off on my code, and I've passed off on your code, I'll mark this as positive review.  olazo: can you look at this as well, and if you find a problem, change it back to needs work?",
     "created_at": "2010-03-01T12:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -1083,6 +1079,7 @@ Replying to [comment:35 wcauchois]:
 > Jason,
 > I've taken a look at your code and you've done a great job of cleaning this up! I can't find any fault with it. Apply the following patches to Sage 4.3.3: trac-7872-polish.patch, trac_7872_new-all.patch. Applies fine and passes all doctests.
 > 
+
 
 Apply the patches in this order, though: trac_7872_new-all.patch, trac-7872-polish.patch.
 
@@ -1113,7 +1110,7 @@ archive/issue_comments_068264.json:
 archive/issue_comments_068265.json:
 ```json
 {
-    "body": "Replying to [comment:36 jason]:\n> There is precedent for two people collaboratively writing and reviewing each other's code as being okay.  Since you've passed off on my code, and I've passed off on your code, I'll mark this as positive review.  olazo: can you look at this as well, and if you find a problem, change it back to needs work?\n\nI can't find anything wrong with the code, it seems quite powerful already :) ! Thanks to you two for taking interest in this. I couldn't do any more recently because of school... It's been great so far though!",
+    "body": "Replying to [comment:36 jason]:\n> There is precedent for two people collaboratively writing and reviewing each other's code as being okay.  Since you've passed off on my code, and I've passed off on your code, I'll mark this as positive review.  olazo: can you look at this as well, and if you find a problem, change it back to needs work?\n\n\nI can't find anything wrong with the code, it seems quite powerful already :) ! Thanks to you two for taking interest in this. I couldn't do any more recently because of school... It's been great so far though!",
     "created_at": "2010-03-03T03:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
@@ -1124,6 +1121,7 @@ archive/issue_comments_068265.json:
 
 Replying to [comment:36 jason]:
 > There is precedent for two people collaboratively writing and reviewing each other's code as being okay.  Since you've passed off on my code, and I've passed off on your code, I'll mark this as positive review.  olazo: can you look at this as well, and if you find a problem, change it back to needs work?
+
 
 I can't find anything wrong with the code, it seems quite powerful already :) ! Thanks to you two for taking interest in this. I couldn't do any more recently because of school... It's been great so far though!
 

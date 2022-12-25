@@ -51,7 +51,7 @@ archive/issue_comments_048463.json:
 archive/issue_comments_048464.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> \"method\" is not only easier to say, but it's easier to spell, and probably is more memorable to people...\n\nIt is also *not* the standard arg name. If you think method is better, take it to the mailing list.",
+    "body": "Replying to [comment:1 jason]:\n> \"method\" is not only easier to say, but it's easier to spell, and probably is more memorable to people...\n\n\nIt is also *not* the standard arg name. If you think method is better, take it to the mailing list.",
     "created_at": "2009-05-21T14:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -62,6 +62,7 @@ archive/issue_comments_048464.json:
 
 Replying to [comment:1 jason]:
 > "method" is not only easier to say, but it's easier to spell, and probably is more memorable to people...
+
 
 It is also *not* the standard arg name. If you think method is better, take it to the mailing list.
 
@@ -90,7 +91,7 @@ okay, I didn't realize there was a standard.  The weight of history changes the 
 archive/issue_comments_048466.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> okay, I didn't realize there was a standard...\n\nActually, neither did I. But when David and I did a search for \"method=\", most of what we found were places where he was using that name.\n\nIn fact, here is a complete (I think) list of the functions which use this (4.0.alpha0):\n\n\n```\ncalculus/desolvers.py: eulers_method, eulers_method_2x2\ncoding/decoder.py: decode\ncoding/linear_code.py: decode, is_permutation_equivalent, permutation_automorphism_group, spectrum\nfinance/easter.py: easter\ncombinat/designs/block_design.py: ProjectiveGeometryDesign\ncombinat/designs/covering_design.py: __init__, method\ncombinat/designs/incidence_structures.py: dual_incidence_structure\ngroups/matrix_gps/matrix_group.py: as_permutation_group, module_composition_factors\nschemes/elliptic_curves/padic_lseries.py: frobenius\nmatrix/matrix_double_dense.pyx: exp\nmatrix/matrix_modn_sparse.pyx: _rank_linbox\nrings/polynomial/polynomial_compiled.pyx: __init__\n```\n",
+    "body": "Replying to [comment:3 jason]:\n> okay, I didn't realize there was a standard...\n\n\nActually, neither did I. But when David and I did a search for \"method=\", most of what we found were places where he was using that name.\n\nIn fact, here is a complete (I think) list of the functions which use this (4.0.alpha0):\n\n```\ncalculus/desolvers.py: eulers_method, eulers_method_2x2\ncoding/decoder.py: decode\ncoding/linear_code.py: decode, is_permutation_equivalent, permutation_automorphism_group, spectrum\nfinance/easter.py: easter\ncombinat/designs/block_design.py: ProjectiveGeometryDesign\ncombinat/designs/covering_design.py: __init__, method\ncombinat/designs/incidence_structures.py: dual_incidence_structure\ngroups/matrix_gps/matrix_group.py: as_permutation_group, module_composition_factors\nschemes/elliptic_curves/padic_lseries.py: frobenius\nmatrix/matrix_double_dense.pyx: exp\nmatrix/matrix_modn_sparse.pyx: _rank_linbox\nrings/polynomial/polynomial_compiled.pyx: __init__\n```",
     "created_at": "2009-05-22T04:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -102,10 +103,10 @@ archive/issue_comments_048466.json:
 Replying to [comment:3 jason]:
 > okay, I didn't realize there was a standard...
 
+
 Actually, neither did I. But when David and I did a search for "method=", most of what we found were places where he was using that name.
 
 In fact, here is a complete (I think) list of the functions which use this (4.0.alpha0):
-
 
 ```
 calculus/desolvers.py: eulers_method, eulers_method_2x2
@@ -121,7 +122,6 @@ matrix/matrix_double_dense.pyx: exp
 matrix/matrix_modn_sparse.pyx: _rank_linbox
 rings/polynomial/polynomial_compiled.pyx: __init__
 ```
-
 
 
 
@@ -186,7 +186,7 @@ The current patch passes sage -testall with guava removed and all patched on #57
 archive/issue_comments_048470.json:
 ```json
 {
-    "body": "Fails to apply cleanly to Sage 4.0.1.\n\n```\napplying /home/palmieri/trac_6094-method-vs-algorithm.patch\npatching file sage/coding/linear_code.py\nHunk #1 FAILED at 315\nHunk #2 FAILED at 341\nHunk #3 FAILED at 351\nHunk #5 FAILED at 1144\nHunk #6 FAILED at 1165\nHunk #11 FAILED at 1636\nHunk #12 FAILED at 1651\nHunk #13 FAILED at 1668\nHunk #15 FAILED at 1758\nHunk #22 FAILED at 2179\n10 out of 23 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej\npatching file sage/combinat/designs/block_design.py\nHunk #2 FAILED at 89\n1 out of 3 hunks FAILED -- saving rejects to file sage/combinat/designs/block_design.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Fails to apply cleanly to Sage 4.0.1.\n\n```\napplying /home/palmieri/trac_6094-method-vs-algorithm.patch\npatching file sage/coding/linear_code.py\nHunk #1 FAILED at 315\nHunk #2 FAILED at 341\nHunk #3 FAILED at 351\nHunk #5 FAILED at 1144\nHunk #6 FAILED at 1165\nHunk #11 FAILED at 1636\nHunk #12 FAILED at 1651\nHunk #13 FAILED at 1668\nHunk #15 FAILED at 1758\nHunk #22 FAILED at 2179\n10 out of 23 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej\npatching file sage/combinat/designs/block_design.py\nHunk #2 FAILED at 89\n1 out of 3 hunks FAILED -- saving rejects to file sage/combinat/designs/block_design.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-06-09T03:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -216,7 +216,6 @@ Hunk #2 FAILED at 89
 1 out of 3 hunks FAILED -- saving rejects to file sage/combinat/designs/block_design.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -317,7 +316,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_048476.json:
 ```json
 {
-    "body": "It was pointed out by people in our status reports session that this patch violates our deprecation policy.  Yuck.  I.e., technically we should do\n\n```\ndef f(algorithm='default', method=None):\n    if method is not None:\n        deprecation('...')\n        algorithm = method\n```\n\nbasically *everywhere*, then remove them all in a year.  Hmmmm....",
+    "body": "It was pointed out by people in our status reports session that this patch violates our deprecation policy.  Yuck.  I.e., technically we should do\n\n```\ndef f(algorithm='default', method=None):\n    if method is not None:\n        deprecation('...')\n        algorithm = method\n```\nbasically *everywhere*, then remove them all in a year.  Hmmmm....",
     "created_at": "2010-01-18T09:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -334,7 +333,6 @@ def f(algorithm='default', method=None):
         deprecation('...')
         algorithm = method
 ```
-
 basically *everywhere*, then remove them all in a year.  Hmmmm....
 
 
@@ -380,7 +378,7 @@ I've sent this back to "needs work" to await deprecation warnings.  With more to
 archive/issue_comments_048479.json:
 ```json
 {
-    "body": "I wonder if it could be done with a decorator?\n\n```\n@deprecate_method\ndef f(..., method=\"foo\"):\n    ...\n\n```\n",
+    "body": "I wonder if it could be done with a decorator?\n\n```\n@deprecate_method\ndef f(..., method=\"foo\"):\n    ...\n\n```",
     "created_at": "2010-01-18T21:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -400,13 +398,12 @@ def f(..., method="foo"):
 
 
 
-
 ---
 
 archive/issue_comments_048480.json:
 ```json
 {
-    "body": "Replying to [comment:15 was]:\n> I wonder if it could be done with a decorator?\n\nYep.  See the already-merged #8607.",
+    "body": "Replying to [comment:15 was]:\n> I wonder if it could be done with a decorator?\n\n\nYep.  See the already-merged #8607.",
     "created_at": "2010-05-11T18:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -417,6 +414,7 @@ archive/issue_comments_048480.json:
 
 Replying to [comment:15 was]:
 > I wonder if it could be done with a decorator?
+
 
 Yep.  See the already-merged #8607.
 
@@ -534,7 +532,7 @@ Minor complaint about how the decorator works, I'll put this on #9907.  More her
 archive/issue_comments_048486.json:
 ```json
 {
-    "body": "Decorator complaint is bigger than these tickets.  Its on sage-devel.\n\nsage -tp 4 devel/sage yields:\n\n\n```\n        sage -t  devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed\n        sage -t  devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n```\n\n\nwhich are all reproducible on my machine.\n\nFirst is an easy fix, extra deprecation warning in a doctest elsewhere when using `frobenius()`.\n\nSecond is just me.  I nuked all my documentation while testing the new color scheme.  Ignore it.\n\nThird looks like something is pickling the two decorators and once they get moved the pickle breaks, so maybe this really belongs on #9907?  Complaint follows.  Parts look mysterious to me, other parts look like they involve these decorators.  It could be a false alarm from my development setup.\n\n\n```\nrob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n**********************************************************************\nFile \"/sage/dev/devel/sage/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_plot_misc_options__.sobj\n    ** failed:  _class__sage_plot_misc_rename_keyword__.sobj\n    Failed:\n    _class__sage_plot_misc_options__.sobj\n    _class__sage_plot_misc_rename_keyword__.sobj\n    Successfully unpickled 584 objects.\n    Failed to unpickle 2 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/rob/.sage//tmp/.doctest_sage_object.py\n         [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n\n```\n",
+    "body": "Decorator complaint is bigger than these tickets.  Its on sage-devel.\n\nsage -tp 4 devel/sage yields:\n\n```\n        sage -t  devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed\n        sage -t  devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n```\n\nwhich are all reproducible on my machine.\n\nFirst is an easy fix, extra deprecation warning in a doctest elsewhere when using `frobenius()`.\n\nSecond is just me.  I nuked all my documentation while testing the new color scheme.  Ignore it.\n\nThird looks like something is pickling the two decorators and once they get moved the pickle breaks, so maybe this really belongs on #9907?  Complaint follows.  Parts look mysterious to me, other parts look like they involve these decorators.  It could be a false alarm from my development setup.\n\n```\nrob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n**********************************************************************\nFile \"/sage/dev/devel/sage/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_plot_misc_options__.sobj\n    ** failed:  _class__sage_plot_misc_rename_keyword__.sobj\n    Failed:\n    _class__sage_plot_misc_options__.sobj\n    _class__sage_plot_misc_rename_keyword__.sobj\n    Successfully unpickled 584 objects.\n    Failed to unpickle 2 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/rob/.sage//tmp/.doctest_sage_object.py\n         [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n\n```",
     "created_at": "2010-09-16T05:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -547,13 +545,11 @@ Decorator complaint is bigger than these tickets.  Its on sage-devel.
 
 sage -tp 4 devel/sage yields:
 
-
 ```
         sage -t  devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed
         sage -t  devel/sage/sage/misc/sagedoc.py # 3 doctests failed
         sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed
 ```
-
 
 which are all reproducible on my machine.
 
@@ -562,7 +558,6 @@ First is an easy fix, extra deprecation warning in a doctest elsewhere when usin
 Second is just me.  I nuked all my documentation while testing the new color scheme.  Ignore it.
 
 Third looks like something is pickling the two decorators and once they get moved the pickle breaks, so maybe this really belongs on #9907?  Complaint follows.  Parts look mysterious to me, other parts look like they involve these decorators.  It could be a false alarm from my development setup.
-
 
 ```
 rob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
@@ -602,7 +597,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/structure/sage_object.pyx"
 
 ```
-
 
 
 
@@ -652,7 +646,7 @@ Cheers, Johan
 archive/issue_comments_048489.json:
 ```json
 {
-    "body": "Replying to [comment:20 jsrn]:\n> Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n\nNo problem.  Just holler if you want to learn some new ropes.\n\n> sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n\nIf you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n\nPickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n\nRob",
+    "body": "Replying to [comment:20 jsrn]:\n> Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n\n\nNo problem.  Just holler if you want to learn some new ropes.\n\n> sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n\n\nIf you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n\nPickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n\nRob",
     "created_at": "2010-09-16T07:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -664,9 +658,11 @@ archive/issue_comments_048489.json:
 Replying to [comment:20 jsrn]:
 > Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.
 
+
 No problem.  Just holler if you want to learn some new ropes.
 
 > sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.
+
 
 If you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.
 
@@ -681,7 +677,7 @@ Rob
 archive/issue_comments_048490.json:
 ```json
 {
-    "body": "Replying to [comment:21 rbeezer]:\n> Replying to [comment:20 jsrn]:\n> > Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n> \n> No problem.  Just holler if you want to learn some new ropes.\n> \n> > sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n> \n> If you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n> \n> Pickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n> \n> Rob\n\nI'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. I've created a new Trac #9919 for making the workaround mentioned in #9907 general by patching sage_wraps. Then I can make this patch depend only on #9919. The future of #9907 can then be decided later (the current patch there would then have to be dependent on this patch and include patching the files patched here).",
+    "body": "Replying to [comment:21 rbeezer]:\n> Replying to [comment:20 jsrn]:\n> > Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n\n> \n> No problem.  Just holler if you want to learn some new ropes.\n> \n> > sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n\n> \n> If you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n> \n> Pickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n> \n> Rob\n\n\nI'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. I've created a new Trac #9919 for making the workaround mentioned in #9907 general by patching sage_wraps. Then I can make this patch depend only on #9919. The future of #9907 can then be decided later (the current patch there would then have to be dependent on this patch and include patching the files patched here).",
     "created_at": "2010-09-16T14:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -693,16 +689,19 @@ archive/issue_comments_048490.json:
 Replying to [comment:21 rbeezer]:
 > Replying to [comment:20 jsrn]:
 > > Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.
+
 > 
 > No problem.  Just holler if you want to learn some new ropes.
 > 
 > > sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.
+
 > 
 > If you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.
 > 
 > Pickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?
 > 
 > Rob
+
 
 I'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. I've created a new Trac #9919 for making the workaround mentioned in #9907 general by patching sage_wraps. Then I can make this patch depend only on #9919. The future of #9907 can then be decided later (the current patch there would then have to be dependent on this patch and include patching the files patched here).
 
@@ -713,7 +712,7 @@ I'm also interested in cleaning up and improving Sage ;-) But you're right. This
 archive/issue_comments_048491.json:
 ```json
 {
-    "body": "Replying to [comment:22 jsrn]:\n> I'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. \n\nOf course - cleanup is definitely to be encouraged!  But too many times the clean-up and cans of worms are unavoidable.  When you can, best to avoid trouble and isolate the problem like you are doing.",
+    "body": "Replying to [comment:22 jsrn]:\n> I'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. \n\n\nOf course - cleanup is definitely to be encouraged!  But too many times the clean-up and cans of worms are unavoidable.  When you can, best to avoid trouble and isolate the problem like you are doing.",
     "created_at": "2010-09-16T17:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -724,6 +723,7 @@ archive/issue_comments_048491.json:
 
 Replying to [comment:22 jsrn]:
 > I'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. 
+
 
 Of course - cleanup is definitely to be encouraged!  But too many times the clean-up and cans of worms are unavoidable.  When you can, best to avoid trouble and isolate the problem like you are doing.
 
@@ -888,7 +888,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_048500.json:
 ```json
 {
-    "body": "The patch needs to be rebased to sage-4.6.1.alpha0:\n\n```\npatching file doc/en/constructions/linear_codes.rst\npatching file sage/calculus/desolvers.py\nHunk #1 succeeded at 61 (offset 3 lines).\nHunk #2 succeeded at 829 (offset 117 lines).\nHunk #3 succeeded at 854 (offset 117 lines).\nHunk #4 succeeded at 886 (offset 117 lines).\nHunk #5 succeeded at 900 (offset 117 lines).\nHunk #6 succeeded at 938 (offset 117 lines).\nHunk #7 succeeded at 994 (offset 117 lines).\npatching file sage/coding/code_bounds.py\npatching file sage/coding/decoder.py\npatching file sage/coding/linear_code.py\nHunk #1 succeeded at 202 (offset 2 lines).\nHunk #2 succeeded at 322 (offset 2 lines).\nHunk #3 succeeded at 359 (offset 2 lines).\nHunk #4 succeeded at 369 (offset 2 lines).\nHunk #5 succeeded at 1115 (offset 2 lines).\nHunk #6 succeeded at 1143 (offset 2 lines).\nHunk #7 succeeded at 1164 (offset 2 lines).\nHunk #8 succeeded at 1174 (offset 2 lines).\nHunk #9 succeeded at 1535 (offset 2 lines).\nHunk #10 succeeded at 1556 (offset 2 lines).\nHunk #11 succeeded at 1580 (offset 2 lines).\nHunk #12 succeeded at 1716 (offset 2 lines).\nHunk #13 succeeded at 1731 (offset 2 lines).\nHunk #14 succeeded at 1745 (offset 2 lines).\nHunk #15 succeeded at 1775 (offset 2 lines).\nHunk #16 succeeded at 1814 (offset 2 lines).\nHunk #17 succeeded at 1871 (offset 2 lines).\nHunk #18 succeeded at 1891 (offset 2 lines).\nHunk #19 succeeded at 1905 (offset 2 lines).\nHunk #20 succeeded at 1937 (offset 2 lines).\nHunk #21 succeeded at 1954 (offset 2 lines).\nHunk #22 succeeded at 2289 (offset 13 lines).\nHunk #23 succeeded at 2307 (offset 13 lines).\nHunk #24 succeeded at 2326 (offset 13 lines).\nHunk #25 succeeded at 2387 (offset 13 lines).\npatching file sage/combinat/designs/block_design.py\npatching file sage/combinat/designs/incidence_structures.py\npatching file sage/finance/easter.py\npatching file sage/groups/matrix_gps/matrix_group.py\npatching file sage/interfaces/ecm.py\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #4 FAILED at 1524.\nHunk #5 succeeded at 1544 (offset 1 line).\nHunk #6 succeeded at 1567 (offset 1 line).\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_double_dense.pyx.rej\npatching file sage/matrix/matrix_modn_sparse.pyx\nHunk #2 succeeded at 778 with fuzz 2.\nHunk #3 succeeded at 791 with fuzz 2.\npatching file sage/rings/polynomial/polynomial_compiled.pyx\npatching file sage/schemes/elliptic_curves/padic_lseries.py\npatching file sage/symbolic/expression.pyx\nHunk #2 succeeded at 6443 (offset 745 lines).\nHunk #3 succeeded at 6452 (offset 745 lines).\nHunk #4 succeeded at 6504 (offset 745 lines).\nHunk #5 succeeded at 6642 (offset 745 lines).\nHunk #6 succeeded at 6651 (offset 745 lines).\nHunk #7 succeeded at 6698 (offset 745 lines).\nHunk #8 succeeded at 6718 (offset 745 lines).\nHunk #9 succeeded at 6734 (offset 745 lines).\nHunk #10 succeeded at 6760 (offset 745 lines).\nHunk #11 succeeded at 6827 (offset 745 lines).\nHunk #12 succeeded at 6864 (offset 745 lines).\n```\n",
+    "body": "The patch needs to be rebased to sage-4.6.1.alpha0:\n\n```\npatching file doc/en/constructions/linear_codes.rst\npatching file sage/calculus/desolvers.py\nHunk #1 succeeded at 61 (offset 3 lines).\nHunk #2 succeeded at 829 (offset 117 lines).\nHunk #3 succeeded at 854 (offset 117 lines).\nHunk #4 succeeded at 886 (offset 117 lines).\nHunk #5 succeeded at 900 (offset 117 lines).\nHunk #6 succeeded at 938 (offset 117 lines).\nHunk #7 succeeded at 994 (offset 117 lines).\npatching file sage/coding/code_bounds.py\npatching file sage/coding/decoder.py\npatching file sage/coding/linear_code.py\nHunk #1 succeeded at 202 (offset 2 lines).\nHunk #2 succeeded at 322 (offset 2 lines).\nHunk #3 succeeded at 359 (offset 2 lines).\nHunk #4 succeeded at 369 (offset 2 lines).\nHunk #5 succeeded at 1115 (offset 2 lines).\nHunk #6 succeeded at 1143 (offset 2 lines).\nHunk #7 succeeded at 1164 (offset 2 lines).\nHunk #8 succeeded at 1174 (offset 2 lines).\nHunk #9 succeeded at 1535 (offset 2 lines).\nHunk #10 succeeded at 1556 (offset 2 lines).\nHunk #11 succeeded at 1580 (offset 2 lines).\nHunk #12 succeeded at 1716 (offset 2 lines).\nHunk #13 succeeded at 1731 (offset 2 lines).\nHunk #14 succeeded at 1745 (offset 2 lines).\nHunk #15 succeeded at 1775 (offset 2 lines).\nHunk #16 succeeded at 1814 (offset 2 lines).\nHunk #17 succeeded at 1871 (offset 2 lines).\nHunk #18 succeeded at 1891 (offset 2 lines).\nHunk #19 succeeded at 1905 (offset 2 lines).\nHunk #20 succeeded at 1937 (offset 2 lines).\nHunk #21 succeeded at 1954 (offset 2 lines).\nHunk #22 succeeded at 2289 (offset 13 lines).\nHunk #23 succeeded at 2307 (offset 13 lines).\nHunk #24 succeeded at 2326 (offset 13 lines).\nHunk #25 succeeded at 2387 (offset 13 lines).\npatching file sage/combinat/designs/block_design.py\npatching file sage/combinat/designs/incidence_structures.py\npatching file sage/finance/easter.py\npatching file sage/groups/matrix_gps/matrix_group.py\npatching file sage/interfaces/ecm.py\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #4 FAILED at 1524.\nHunk #5 succeeded at 1544 (offset 1 line).\nHunk #6 succeeded at 1567 (offset 1 line).\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_double_dense.pyx.rej\npatching file sage/matrix/matrix_modn_sparse.pyx\nHunk #2 succeeded at 778 with fuzz 2.\nHunk #3 succeeded at 791 with fuzz 2.\npatching file sage/rings/polynomial/polynomial_compiled.pyx\npatching file sage/schemes/elliptic_curves/padic_lseries.py\npatching file sage/symbolic/expression.pyx\nHunk #2 succeeded at 6443 (offset 745 lines).\nHunk #3 succeeded at 6452 (offset 745 lines).\nHunk #4 succeeded at 6504 (offset 745 lines).\nHunk #5 succeeded at 6642 (offset 745 lines).\nHunk #6 succeeded at 6651 (offset 745 lines).\nHunk #7 succeeded at 6698 (offset 745 lines).\nHunk #8 succeeded at 6718 (offset 745 lines).\nHunk #9 succeeded at 6734 (offset 745 lines).\nHunk #10 succeeded at 6760 (offset 745 lines).\nHunk #11 succeeded at 6827 (offset 745 lines).\nHunk #12 succeeded at 6864 (offset 745 lines).\n```",
     "created_at": "2010-11-10T09:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
@@ -965,7 +965,6 @@ Hunk #10 succeeded at 6760 (offset 745 lines).
 Hunk #11 succeeded at 6827 (offset 745 lines).
 Hunk #12 succeeded at 6864 (offset 745 lines).
 ```
-
 
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2126
 archive/issue_comments_013911.json:
 ```json
 {
-    "body": "The last line should probably read\n\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %r\"%(a0inv, K) \n```\n\n\nrather than\n\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %s\"%(a0inv, K._repr_()) \n```\n\n\nOther than that, I approve.",
+    "body": "The last line should probably read\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %r\"%(a0inv, K) \n```\n\nrather than\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %s\"%(a0inv, K._repr_()) \n```\n\nOther than that, I approve.",
     "created_at": "2008-02-14T06:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
@@ -44,19 +44,15 @@ archive/issue_comments_013911.json:
 
 The last line should probably read
 
-
 ```
 raise ValueError, "-(2*k)/B_k (=%s) must be invertible in the %r"%(a0inv, K) 
 ```
 
-
 rather than
-
 
 ```
 raise ValueError, "-(2*k)/B_k (=%s) must be invertible in the %s"%(a0inv, K._repr_()) 
 ```
-
 
 Other than that, I approve.
 

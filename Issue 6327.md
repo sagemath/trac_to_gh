@@ -3,7 +3,7 @@
 archive/issues_006327.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhat's up with this?\n\n\n```\nsage -t -long --optional devel/sage/sage/libs/pari/gen.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/libs/pari/gen.pyx\", line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_177[4]>\", line 1, in <module>\n        e.ellpow([Integer(0),Integer(0)], I+Integer(1)) # optional###line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\n      File \"gen.pyx\", line 9170, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44129)\n        raise PariError, errno\n    PariError: sorry, (15)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_177\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wst\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6327\n\n",
+    "body": "Assignee: tbd\n\nWhat's up with this?\n\n```\nsage -t -long --optional devel/sage/sage/libs/pari/gen.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/libs/pari/gen.pyx\", line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_177[4]>\", line 1, in <module>\n        e.ellpow([Integer(0),Integer(0)], I+Integer(1)) # optional###line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\n      File \"gen.pyx\", line 9170, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44129)\n        raise PariError, errno\n    PariError: sorry, (15)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_177\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wst\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6327\n\n",
     "created_at": "2009-06-16T15:04:26Z",
     "labels": [
         "component: optional packages",
@@ -19,7 +19,6 @@ archive/issues_006327.json:
 Assignee: tbd
 
 What's up with this?
-
 
 ```
 sage -t -long --optional devel/sage/sage/libs/pari/gen.pyx
@@ -46,7 +45,6 @@ Exception raised:
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/wst
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6327
 
@@ -257,7 +255,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_050418.json:
 ```json
 {
-    "body": "Replying to [comment:7 davidloeffler]:\n> Looks good and all doctests pass. See #9977 for a follow-up ticket. (I wonder who will get to open the golden ticket #10000?)\n\nThanks for the review and I completely agree with the follow-up ticket.",
+    "body": "Replying to [comment:7 davidloeffler]:\n> Looks good and all doctests pass. See #9977 for a follow-up ticket. (I wonder who will get to open the golden ticket #10000?)\n\n\nThanks for the review and I completely agree with the follow-up ticket.",
     "created_at": "2010-09-23T14:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
@@ -268,6 +266,7 @@ archive/issue_comments_050418.json:
 
 Replying to [comment:7 davidloeffler]:
 > Looks good and all doctests pass. See #9977 for a follow-up ticket. (I wonder who will get to open the golden ticket #10000?)
+
 
 Thanks for the review and I completely agree with the follow-up ticket.
 

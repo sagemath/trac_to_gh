@@ -3,7 +3,7 @@
 archive/issues_003880.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\n\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
+    "body": "Assignee: @williamstein\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
     "created_at": "2008-08-16T19:22:55Z",
     "labels": [
         "component: graphics",
@@ -24,7 +24,6 @@ According to the arrow documentation,
 An arrow from (xmin, ymin) to (xmax, ymax).
 ```
 
-
 However, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).
 
 For example:
@@ -32,7 +31,6 @@ For example:
 ```
 sage: arrow((1, 1), (-1,-1))
 ```
-
 will draw an arrow from (1,1) to (0,0).
 
 Issue created by migration from https://trac.sagemath.org/ticket/3880
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3880
 archive/issue_comments_027622.json:
 ```json
 {
-    "body": "According to the docs on matplotlib:\n\n> patches.FancyArrow(x, y, dx, dy, ...\n\nFixing the line where this constructor is called should solve the problem.",
+    "body": "According to the docs on matplotlib:\n\n> patches.FancyArrow(x, y, dx, dy, ...\n\n\nFixing the line where this constructor is called should solve the problem.",
     "created_at": "2008-08-16T19:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
@@ -58,6 +56,7 @@ archive/issue_comments_027622.json:
 According to the docs on matplotlib:
 
 > patches.FancyArrow(x, y, dx, dy, ...
+
 
 Fixing the line where this constructor is called should solve the problem.
 

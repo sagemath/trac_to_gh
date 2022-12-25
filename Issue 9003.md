@@ -3,7 +3,7 @@
 archive/issues_009003.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Mac PPC G4 with 10.4:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\n    sage: V.base_extend(QQ)\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9003\n\n",
+    "body": "Assignee: tbd\n\nOn Mac PPC G4 with 10.4:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\n    sage: V.base_extend(QQ)\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9003\n\n",
     "created_at": "2010-05-21T00:04:26Z",
     "labels": [
         "component: doctest coverage",
@@ -30,7 +30,6 @@ Got:
     V
 **********************************************************************
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9003
@@ -118,7 +117,7 @@ I **don't** get this failure with 32 bit 4.4 built from source on a  1.8 GHz Pow
 archive/issue_comments_083123.json:
 ```json
 {
-    "body": "Guys, this problem is *by far* worse than I ever thought! I changed the lines 1124ff in question in \"modules/free_module.py\" to:\n\n```\n            sage: V = ZZ^7; V\n            Ambient free module of rank 7 over the principal ideal domain Integer Ring\n            sage: W = V.base_extend(QQ)\n            sage: W._repr_()\n            'Vector space of dimension 7 over Rational Field'\n            sage: W\n            Vector space of dimension 7 over Rational Field\n```\n\n\nand this is the one failing doctest I get when running \"sage -t -verbose \"devel/sage/sage/modules/free_module.py\"\":\n\n```\nTrying:\n    set_random_seed(0L)\nExpecting nothing\nok\nTrying:\n    change_warning_output(sys.stdout)\nExpecting nothing\nok\nTrying:\n    V = ZZ**Integer(7); V###line 1124:_sage_    >>> V = ZZ^7; V\nExpecting:\n    Ambient free module of rank 7 over the principal ideal domain Integer Ring\nok\nTrying:\n    W = V.base_extend(QQ)###line 1126:_sage_    >>> W = V.base_extend(QQ)\nExpecting nothing\nok\nTrying:\n    W._repr_()###line 1127:_sage_    >>> W._repr_()\nExpecting:\n    'Vector space of dimension 7 over Rational Field'\nok\nTrying:\n    W###line 1129:_sage_    >>> W\nExpecting:\n    Vector space of dimension 7 over Rational Field\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 924, in __main__.example_23\nFailed example:\n    W###line 1129:_sage_    >>> W\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n```\n\nUnbelievable!\n\nThe problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?",
+    "body": "Guys, this problem is *by far* worse than I ever thought! I changed the lines 1124ff in question in \"modules/free_module.py\" to:\n\n```\n            sage: V = ZZ^7; V\n            Ambient free module of rank 7 over the principal ideal domain Integer Ring\n            sage: W = V.base_extend(QQ)\n            sage: W._repr_()\n            'Vector space of dimension 7 over Rational Field'\n            sage: W\n            Vector space of dimension 7 over Rational Field\n```\n\nand this is the one failing doctest I get when running \"sage -t -verbose \"devel/sage/sage/modules/free_module.py\"\":\n\n```\nTrying:\n    set_random_seed(0L)\nExpecting nothing\nok\nTrying:\n    change_warning_output(sys.stdout)\nExpecting nothing\nok\nTrying:\n    V = ZZ**Integer(7); V###line 1124:_sage_    >>> V = ZZ^7; V\nExpecting:\n    Ambient free module of rank 7 over the principal ideal domain Integer Ring\nok\nTrying:\n    W = V.base_extend(QQ)###line 1126:_sage_    >>> W = V.base_extend(QQ)\nExpecting nothing\nok\nTrying:\n    W._repr_()###line 1127:_sage_    >>> W._repr_()\nExpecting:\n    'Vector space of dimension 7 over Rational Field'\nok\nTrying:\n    W###line 1129:_sage_    >>> W\nExpecting:\n    Vector space of dimension 7 over Rational Field\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 924, in __main__.example_23\nFailed example:\n    W###line 1129:_sage_    >>> W\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n```\nUnbelievable!\n\nThe problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?",
     "created_at": "2010-05-22T20:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -138,7 +137,6 @@ Guys, this problem is *by far* worse than I ever thought! I changed the lines 11
             sage: W
             Vector space of dimension 7 over Rational Field
 ```
-
 
 and this is the one failing doctest I get when running "sage -t -verbose "devel/sage/sage/modules/free_module.py"":
 
@@ -178,7 +176,6 @@ Expected:
 Got:
     V
 ```
-
 Unbelievable!
 
 The problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?
@@ -226,7 +223,7 @@ My system is Mac Pro, Quad-core Intel Xeon 64bit, Snow Leopard. With Sage 4.4.2,
 archive/issue_comments_083126.json:
 ```json
 {
-    "body": "Thanks, klee, hopefully this will help us track it down.\n\nReplying to [comment:3 kcrisman]:\n> So on 10.4 and 10.5, but not on OS X 10.6.  Very interesting.  I don't have time to look at this now, but will be happy to test.  Given that the changes from rc0 to final [http://groups.google.com/group/sage-release/msg/45369d3053275b58?](http://groups.google.com/group/sage-release/msg/45369d3053275b58?)  are all in documentation, this seems strange.\n\nHere they are:\n\n```\n#8915: Mike Zabrocki: improve documentation on combinat.dyck_words [Reviewed by Minh Van Nguyen, S\u00e9bastien Labb\u00e9] \n#8919: William Laffin: documetation error in super_categories for Sets [Reviewed by Minh Van Nguyen] \n#8964: Jason Grout: Two small typos [Reviewed by Francis Clarke] \n#8979: Andr\u00e9-Patrick Bubel: spelling mistake in sage/gsl/ode.pyx [Reviewed by Minh Van Nguyen] \n#8990: Georg S. Weber: update MPIR 1.2.2 license information as requested by upstream [Reviewed by Minh Van Nguyen] \n#8991: Rob Beezer: Adjust developer walkthrough for two changes to mercurial queues syntax [Reviewed by Arthur Lubovsky] \n```\n\nI'll try to revert some of these and see if that helps track it down.",
+    "body": "Thanks, klee, hopefully this will help us track it down.\n\nReplying to [comment:3 kcrisman]:\n> So on 10.4 and 10.5, but not on OS X 10.6.  Very interesting.  I don't have time to look at this now, but will be happy to test.  Given that the changes from rc0 to final [http://groups.google.com/group/sage-release/msg/45369d3053275b58?](http://groups.google.com/group/sage-release/msg/45369d3053275b58?)  are all in documentation, this seems strange.\n\n\nHere they are:\n\n```\n#8915: Mike Zabrocki: improve documentation on combinat.dyck_words [Reviewed by Minh Van Nguyen, S\u00e9bastien Labb\u00e9] \n#8919: William Laffin: documetation error in super_categories for Sets [Reviewed by Minh Van Nguyen] \n#8964: Jason Grout: Two small typos [Reviewed by Francis Clarke] \n#8979: Andr\u00e9-Patrick Bubel: spelling mistake in sage/gsl/ode.pyx [Reviewed by Minh Van Nguyen] \n#8990: Georg S. Weber: update MPIR 1.2.2 license information as requested by upstream [Reviewed by Minh Van Nguyen] \n#8991: Rob Beezer: Adjust developer walkthrough for two changes to mercurial queues syntax [Reviewed by Arthur Lubovsky] \n```\nI'll try to revert some of these and see if that helps track it down.",
     "created_at": "2010-05-25T15:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -240,6 +237,7 @@ Thanks, klee, hopefully this will help us track it down.
 Replying to [comment:3 kcrisman]:
 > So on 10.4 and 10.5, but not on OS X 10.6.  Very interesting.  I don't have time to look at this now, but will be happy to test.  Given that the changes from rc0 to final [http://groups.google.com/group/sage-release/msg/45369d3053275b58?](http://groups.google.com/group/sage-release/msg/45369d3053275b58?)  are all in documentation, this seems strange.
 
+
 Here they are:
 
 ```
@@ -250,7 +248,6 @@ Here they are:
 #8990: Georg S. Weber: update MPIR 1.2.2 license information as requested by upstream [Reviewed by Minh Van Nguyen] 
 #8991: Rob Beezer: Adjust developer walkthrough for two changes to mercurial queues syntax [Reviewed by Arthur Lubovsky] 
 ```
-
 I'll try to revert some of these and see if that helps track it down.
 
 
@@ -260,7 +257,7 @@ I'll try to revert some of these and see if that helps track it down.
 archive/issue_comments_083127.json:
 ```json
 {
-    "body": "After much testing, I am pretty certain that the error is caused by revision 14321.  You may ask what that revision looks like.  \n\n```\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\ndiff -r 26a4be28b4ef -r 1451c00a8d44 sage/version.py\n--- a/sage/version.py   Wed May 19 00:55:29 2010 -0700\n+++ b/sage/version.py   Wed May 19 00:55:29 2010 -0700\n@@ -1,2 +1,2 @@\n \"\"\"nodoctests\"\"\"\n-version='4.4.2.rc0'; date='2010-05-12'\n+version='4.4.2'; date='2010-05-19'\n\n```\n\nWHAT???\n\nBut on my OSX 10.4.11 PPC G4 at 1.25 GHz, that very last change to get to Sage 4.4.2 is what does it.   Combine that with klee's report, and I am totally baffled.  Is it possible that some weird cumulative change could cause a weird overflow or something along the lines of what GeorgSWeber is suggesting?",
+    "body": "After much testing, I am pretty certain that the error is caused by revision 14321.  You may ask what that revision looks like.  \n\n```\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\ndiff -r 26a4be28b4ef -r 1451c00a8d44 sage/version.py\n--- a/sage/version.py   Wed May 19 00:55:29 2010 -0700\n+++ b/sage/version.py   Wed May 19 00:55:29 2010 -0700\n@@ -1,2 +1,2 @@\n \"\"\"nodoctests\"\"\"\n-version='4.4.2.rc0'; date='2010-05-12'\n+version='4.4.2'; date='2010-05-19'\n\n```\nWHAT???\n\nBut on my OSX 10.4.11 PPC G4 at 1.25 GHz, that very last change to get to Sage 4.4.2 is what does it.   Combine that with klee's report, and I am totally baffled.  Is it possible that some weird cumulative change could cause a weird overflow or something along the lines of what GeorgSWeber is suggesting?",
     "created_at": "2010-05-26T02:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -287,7 +284,6 @@ diff -r 26a4be28b4ef -r 1451c00a8d44 sage/version.py
 +version='4.4.2'; date='2010-05-19'
 
 ```
-
 WHAT???
 
 But on my OSX 10.4.11 PPC G4 at 1.25 GHz, that very last change to get to Sage 4.4.2 is what does it.   Combine that with klee's report, and I am totally baffled.  Is it possible that some weird cumulative change could cause a weird overflow or something along the lines of what GeorgSWeber is suggesting?
@@ -317,7 +313,7 @@ I haven't been following this ticket (or the sage-release thread), but just a ra
 archive/issue_comments_083129.json:
 ```json
 {
-    "body": "Replying to [comment:5 GeorgSWeber]:\n> The problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?\n\nIn this case, it should be `~/.sage/tmp/.doctest_free_module.py`. It's only kept after failing tests, I believe.",
+    "body": "Replying to [comment:5 GeorgSWeber]:\n> The problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?\n\n\nIn this case, it should be `~/.sage/tmp/.doctest_free_module.py`. It's only kept after failing tests, I believe.",
     "created_at": "2010-05-26T09:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -329,6 +325,7 @@ archive/issue_comments_083129.json:
 Replying to [comment:5 GeorgSWeber]:
 > The problem seems to lie within the doctest framework ... does anybody has experience with that? I think I stumbled once upon a time over temporary files from doctests, does anyone remember where these are stored?
 
+
 In this case, it should be `~/.sage/tmp/.doctest_free_module.py`. It's only kept after failing tests, I believe.
 
 
@@ -338,7 +335,7 @@ In this case, it should be `~/.sage/tmp/.doctest_free_module.py`. It's only kept
 archive/issue_comments_083130.json:
 ```json
 {
-    "body": "Replying to [comment:10 craigcitro]:\n> I haven't been following this ticket (or the sage-release thread), but just a random idea to throw out there: is there any chance that one or more of those quote characters is actually in a different character set, or something else like that? \n\n(At least) `version.py` does not contain any non-ASCII characters.",
+    "body": "Replying to [comment:10 craigcitro]:\n> I haven't been following this ticket (or the sage-release thread), but just a random idea to throw out there: is there any chance that one or more of those quote characters is actually in a different character set, or something else like that? \n\n\n(At least) `version.py` does not contain any non-ASCII characters.",
     "created_at": "2010-05-26T12:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -350,6 +347,7 @@ archive/issue_comments_083130.json:
 Replying to [comment:10 craigcitro]:
 > I haven't been following this ticket (or the sage-release thread), but just a random idea to throw out there: is there any chance that one or more of those quote characters is actually in a different character set, or something else like that? 
 
+
 (At least) `version.py` does not contain any non-ASCII characters.
 
 
@@ -359,7 +357,7 @@ Replying to [comment:10 craigcitro]:
 archive/issue_comments_083131.json:
 ```json
 {
-    "body": "To add to the confusion (or is this enlightening for somebody?), here is what happened when I revisited the issue, freshly firing up Sage-4.4.2:\n\n```\ngeorg-webers-computer:~ georgweber$ cd ../Shared/sage/sage-4.4.2\ngeorg-webers-computer:/Users/Shared/sage/sage-4.4.2 georgweber$ ./sage -t devel/sage/sage/modules/free_module.py\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n         [60.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 60.5 seconds\ngeorg-webers-computer:/Users/Shared/sage/sage-4.4.2 georgweber$ ./sage -t devel/sage/sage/modules/free_module.py\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 1129:\n    sage: W\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/georgweber/.sage//tmp/.doctest_free_module.py\n         [34.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/modules/free_module.py\"\nTotal time for all tests: 34.7 seconds\n```\n\nSo the very first attempt was successful! However it took much time. I think this is due to the fact that quite some libraries have to be loaded to memory, which is not anymore the case for the subsequent tests (where the needed libraries are already present). After this first successful run, *all* directly following runs fail (I just tried a couple of times, only the first one is attached above). Note that I did let run the tests without doing any changes to code in between (you might notice that I had let run the doctest on file like I had changed it); I just used \"arrow up\" in the terminal to get the last command and re-issued it, immediately after the first one.\n\nSo if anybody is doing tests w.r.t. this issue, please keep in mind that the \"history\" does seem to matter, i.e. whether the system was just started up, or whether already test have been running!\n\nSince Kwankyu Lee reported above that he could \"get\" this issue on OS X 64bit (with Sage-4.4.2, after applying a seemingly totally unrelated patch to it) also, I altered the title line a bit.",
+    "body": "To add to the confusion (or is this enlightening for somebody?), here is what happened when I revisited the issue, freshly firing up Sage-4.4.2:\n\n```\ngeorg-webers-computer:~ georgweber$ cd ../Shared/sage/sage-4.4.2\ngeorg-webers-computer:/Users/Shared/sage/sage-4.4.2 georgweber$ ./sage -t devel/sage/sage/modules/free_module.py\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n         [60.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 60.5 seconds\ngeorg-webers-computer:/Users/Shared/sage/sage-4.4.2 georgweber$ ./sage -t devel/sage/sage/modules/free_module.py\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 1129:\n    sage: W\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/georgweber/.sage//tmp/.doctest_free_module.py\n         [34.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/modules/free_module.py\"\nTotal time for all tests: 34.7 seconds\n```\nSo the very first attempt was successful! However it took much time. I think this is due to the fact that quite some libraries have to be loaded to memory, which is not anymore the case for the subsequent tests (where the needed libraries are already present). After this first successful run, *all* directly following runs fail (I just tried a couple of times, only the first one is attached above). Note that I did let run the tests without doing any changes to code in between (you might notice that I had let run the doctest on file like I had changed it); I just used \"arrow up\" in the terminal to get the last command and re-issued it, immediately after the first one.\n\nSo if anybody is doing tests w.r.t. this issue, please keep in mind that the \"history\" does seem to matter, i.e. whether the system was just started up, or whether already test have been running!\n\nSince Kwankyu Lee reported above that he could \"get\" this issue on OS X 64bit (with Sage-4.4.2, after applying a seemingly totally unrelated patch to it) also, I altered the title line a bit.",
     "created_at": "2010-05-26T15:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -402,7 +400,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/modules/free_module.py"
 Total time for all tests: 34.7 seconds
 ```
-
 So the very first attempt was successful! However it took much time. I think this is due to the fact that quite some libraries have to be loaded to memory, which is not anymore the case for the subsequent tests (where the needed libraries are already present). After this first successful run, *all* directly following runs fail (I just tried a couple of times, only the first one is attached above). Note that I did let run the tests without doing any changes to code in between (you might notice that I had let run the doctest on file like I had changed it); I just used "arrow up" in the terminal to get the last command and re-issued it, immediately after the first one.
 
 So if anybody is doing tests w.r.t. this issue, please keep in mind that the "history" does seem to matter, i.e. whether the system was just started up, or whether already test have been running!
@@ -458,7 +455,7 @@ That is really bizarre... is it the change to version or to date in version.py t
 archive/issue_comments_083134.json:
 ```json
 {
-    "body": "Some more tapping around in the dark:\n\n```\n        EXAMPLES::\n        \n            sage: testname = ZZ^7\n            sage: testname.base_extend(QQ)\n            Vector space of dimension 7 over Rational Field\n```\n\ngives:\n\n```\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 1125:\n    sage: testname.base_extend(QQ)\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n```\n\nAmazing. Now try a bit \"Eau de Cologne\":\n\n```\n        EXAMPLES::\n        \n            sage: testname = ZZ^4711\n            sage: testname.base_extend(QQ)\n            Vector space of dimension 4711 over Rational Field\n```\n\nand this gives (repeatedly, several times):\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n         [35.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 35.3 seconds\n```\n\nHmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* \"ZZ^7\" lurking with the name of \"V\", getting loaded/dumped or something like that ...",
+    "body": "Some more tapping around in the dark:\n\n```\n        EXAMPLES::\n        \n            sage: testname = ZZ^7\n            sage: testname.base_extend(QQ)\n            Vector space of dimension 7 over Rational Field\n```\ngives:\n\n```\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2/devel/sage/sage/modules/free_module.py\", line 1125:\n    sage: testname.base_extend(QQ)\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n```\nAmazing. Now try a bit \"Eau de Cologne\":\n\n```\n        EXAMPLES::\n        \n            sage: testname = ZZ^4711\n            sage: testname.base_extend(QQ)\n            Vector space of dimension 4711 over Rational Field\n```\nand this gives (repeatedly, several times):\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n         [35.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 35.3 seconds\n```\nHmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* \"ZZ^7\" lurking with the name of \"V\", getting loaded/dumped or something like that ...",
     "created_at": "2010-05-26T16:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -476,7 +473,6 @@ Some more tapping around in the dark:
             sage: testname.base_extend(QQ)
             Vector space of dimension 7 over Rational Field
 ```
-
 gives:
 
 ```
@@ -489,7 +485,6 @@ Got:
     V
 **********************************************************************
 ```
-
 Amazing. Now try a bit "Eau de Cologne":
 
 ```
@@ -499,7 +494,6 @@ Amazing. Now try a bit "Eau de Cologne":
             sage: testname.base_extend(QQ)
             Vector space of dimension 4711 over Rational Field
 ```
-
 and this gives (repeatedly, several times):
 
 ```
@@ -510,7 +504,6 @@ sage -t  "devel/sage/sage/modules/free_module.py"
 All tests passed!
 Total time for all tests: 35.3 seconds
 ```
-
 Hmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* "ZZ^7" lurking with the name of "V", getting loaded/dumped or something like that ...
 
 
@@ -556,7 +549,7 @@ And keep in mind this error seems to only occur on MacOS...
 archive/issue_comments_083137.json:
 ```json
 {
-    "body": "Replying to [comment:16 GeorgSWeber]:\n>\n> Hmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* `\"ZZ^7\"` lurking with the name of \"V\", getting loaded/dumped or something like that ...\n\nThat sounds like a very good idea.\n\nElsewhere in the file is an example renaming `QQ^7` to V...",
+    "body": "Replying to [comment:16 GeorgSWeber]:\n>\n> Hmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* `\"ZZ^7\"` lurking with the name of \"V\", getting loaded/dumped or something like that ...\n\n\nThat sounds like a very good idea.\n\nElsewhere in the file is an example renaming `QQ^7` to V...",
     "created_at": "2010-05-26T16:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -568,6 +561,7 @@ archive/issue_comments_083137.json:
 Replying to [comment:16 GeorgSWeber]:
 >
 > Hmm, I've got to stop here for today, but the next thing one might check, is whether in (the doctest file of) free_module.py, somewhere there is *another* `"ZZ^7"` lurking with the name of "V", getting loaded/dumped or something like that ...
+
 
 That sounds like a very good idea.
 
@@ -692,7 +686,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083143.json:
 ```json
 {
-    "body": "Replying to [comment:22 wjp]:\n> I can't really think of anything other than seemingly unrelated things affecting the garbage collector somehow... I think avoiding renaming an object used in a different doctest should be a safe solution. (Patch attached.)\n\nDoes this solve the problem, or just its symptoms? ;-)\n\nI wonder if only the doctesting is affected...",
+    "body": "Replying to [comment:22 wjp]:\n> I can't really think of anything other than seemingly unrelated things affecting the garbage collector somehow... I think avoiding renaming an object used in a different doctest should be a safe solution. (Patch attached.)\n\n\nDoes this solve the problem, or just its symptoms? ;-)\n\nI wonder if only the doctesting is affected...",
     "created_at": "2010-05-27T22:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -703,6 +697,7 @@ archive/issue_comments_083143.json:
 
 Replying to [comment:22 wjp]:
 > I can't really think of anything other than seemingly unrelated things affecting the garbage collector somehow... I think avoiding renaming an object used in a different doctest should be a safe solution. (Patch attached.)
+
 
 Does this solve the problem, or just its symptoms? ;-)
 
@@ -733,7 +728,7 @@ If I understand it correctly, the only reason that it works on other systems is 
 archive/issue_comments_083145.json:
 ```json
 {
-    "body": "Replying to [comment:25 wjp]:\n> If I understand it correctly, the only reason that it works on other systems is that the garbage collector deletes an object (`QQ^7`) between the two doctests. I think it would be safer not to depend on that.\n\nActually, I don't know that it's the garbage collector:\n\n\n```\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: V\nfoo\nsage: del V\nsage: import gc\nsage: gc.collect()\n54\nsage: QQ^7\nfoo\n```\n\n\nOf course, maybe I'm tricking myself because something else is holding onto a non-weakref that prevents the stored `V` from being collected?\n\nThat said, I think the answer to Leif's question above is \"yes and no.\" I think this *will* fix the issue for now, which is good. On the other hand, I think there still are weirdnesses lurking that should be investigated ... or at least explained to me if they're already understood. `;)`\n\nIt can't _just_ be the garbage collector -- the fact that the version strings were futzing with it means that it somehow has to intersect with weirdness related to pickling ... maybe because of the pickle jar? In any event, there's some weird behavior, and we should open a ticket to ferret out that weird behavior. Once that's open, I say positive review and merge Willem Jan's patch ...",
+    "body": "Replying to [comment:25 wjp]:\n> If I understand it correctly, the only reason that it works on other systems is that the garbage collector deletes an object (`QQ^7`) between the two doctests. I think it would be safer not to depend on that.\n\n\nActually, I don't know that it's the garbage collector:\n\n```\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: V\nfoo\nsage: del V\nsage: import gc\nsage: gc.collect()\n54\nsage: QQ^7\nfoo\n```\n\nOf course, maybe I'm tricking myself because something else is holding onto a non-weakref that prevents the stored `V` from being collected?\n\nThat said, I think the answer to Leif's question above is \"yes and no.\" I think this *will* fix the issue for now, which is good. On the other hand, I think there still are weirdnesses lurking that should be investigated ... or at least explained to me if they're already understood. `;)`\n\nIt can't _just_ be the garbage collector -- the fact that the version strings were futzing with it means that it somehow has to intersect with weirdness related to pickling ... maybe because of the pickle jar? In any event, there's some weird behavior, and we should open a ticket to ferret out that weird behavior. Once that's open, I say positive review and merge Willem Jan's patch ...",
     "created_at": "2010-05-27T22:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -745,8 +740,8 @@ archive/issue_comments_083145.json:
 Replying to [comment:25 wjp]:
 > If I understand it correctly, the only reason that it works on other systems is that the garbage collector deletes an object (`QQ^7`) between the two doctests. I think it would be safer not to depend on that.
 
-Actually, I don't know that it's the garbage collector:
 
+Actually, I don't know that it's the garbage collector:
 
 ```
 sage: V = QQ^7
@@ -761,7 +756,6 @@ sage: QQ^7
 foo
 ```
 
-
 Of course, maybe I'm tricking myself because something else is holding onto a non-weakref that prevents the stored `V` from being collected?
 
 That said, I think the answer to Leif's question above is "yes and no." I think this *will* fix the issue for now, which is good. On the other hand, I think there still are weirdnesses lurking that should be investigated ... or at least explained to me if they're already understood. `;)`
@@ -775,7 +769,7 @@ It can't _just_ be the garbage collector -- the fact that the version strings we
 archive/issue_comments_083146.json:
 ```json
 {
-    "body": "I think the ipython/sage output history might still be holding a ref there:\n\n\n```\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: del V\nsage: import gc\nsage: gc.collect()\n60\nsage: QQ^7\nVector space of dimension 7 over Rational Field\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: V\nfoo\nsage: import gc\nsage: gc.collect()\n9\nsage: QQ^7\nfoo\n```\n\n\n(I left out printing V the first time.)\n\n\nI don't understand the impact of the version either... It might just be affecting the GC algorithm in some subtle way due to different memory usage, but I realize that's next to impossible to verify.",
+    "body": "I think the ipython/sage output history might still be holding a ref there:\n\n```\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: del V\nsage: import gc\nsage: gc.collect()\n60\nsage: QQ^7\nVector space of dimension 7 over Rational Field\nsage: V = QQ^7\nsage: V.rename('foo')\nsage: V\nfoo\nsage: import gc\nsage: gc.collect()\n9\nsage: QQ^7\nfoo\n```\n\n(I left out printing V the first time.)\n\n\nI don't understand the impact of the version either... It might just be affecting the GC algorithm in some subtle way due to different memory usage, but I realize that's next to impossible to verify.",
     "created_at": "2010-05-27T22:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -785,7 +779,6 @@ archive/issue_comments_083146.json:
 ```
 
 I think the ipython/sage output history might still be holding a ref there:
-
 
 ```
 sage: V = QQ^7
@@ -807,7 +800,6 @@ sage: QQ^7
 foo
 ```
 
-
 (I left out printing V the first time.)
 
 
@@ -820,7 +812,7 @@ I don't understand the impact of the version either... It might just be affectin
 archive/issue_comments_083147.json:
 ```json
 {
-    "body": "Replying to [comment:27 wjp]:\n> I think the ipython/sage output history might still be holding a ref there:\n> \n\nThat's right, I think there's an IPython variable called `Out` -- but deleting the reference in there doesn't do it once it's been printed ... apparently something else is holding one, too. \n\nEven still, though, it's printed by the doctests -- so if whoever is holding on to it is part of Python and not just IPython, we'd still hit the same issue.",
+    "body": "Replying to [comment:27 wjp]:\n> I think the ipython/sage output history might still be holding a ref there:\n> \n\n\nThat's right, I think there's an IPython variable called `Out` -- but deleting the reference in there doesn't do it once it's been printed ... apparently something else is holding one, too. \n\nEven still, though, it's printed by the doctests -- so if whoever is holding on to it is part of Python and not just IPython, we'd still hit the same issue.",
     "created_at": "2010-05-27T23:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -832,6 +824,7 @@ archive/issue_comments_083147.json:
 Replying to [comment:27 wjp]:
 > I think the ipython/sage output history might still be holding a ref there:
 > 
+
 
 That's right, I think there's an IPython variable called `Out` -- but deleting the reference in there doesn't do it once it's been printed ... apparently something else is holding one, too. 
 
@@ -924,7 +917,7 @@ I tested that with the latter patch, the former is not needed anymore.
 archive/issue_comments_083152.json:
 ```json
 {
-    "body": "> Both patches are workarounds. But I feel that the latter from me is a bit closer to the root cause. Actually, the \"rename\" feature is used a handful of times in the `free_module.py` file, and any of these occurences had (before the latter patch) the potential to cause the failure seen (or a very similar one).\n\nThis seems reasonable.  I'll try to check this later tonight.",
+    "body": "> Both patches are workarounds. But I feel that the latter from me is a bit closer to the root cause. Actually, the \"rename\" feature is used a handful of times in the `free_module.py` file, and any of these occurences had (before the latter patch) the potential to cause the failure seen (or a very similar one).\n\n\nThis seems reasonable.  I'll try to check this later tonight.",
     "created_at": "2010-08-05T20:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9003",
     "type": "issue_comment",
@@ -934,6 +927,7 @@ archive/issue_comments_083152.json:
 ```
 
 > Both patches are workarounds. But I feel that the latter from me is a bit closer to the root cause. Actually, the "rename" feature is used a handful of times in the `free_module.py` file, and any of these occurences had (before the latter patch) the potential to cause the failure seen (or a very similar one).
+
 
 This seems reasonable.  I'll try to check this later tonight.
 

@@ -3,7 +3,7 @@
 archive/issues_008519.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: positive integer\n\nWe have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger\n\n\n```\nsage: NonNegativeIntegers()\nNon negative integers\nsage: PositiveInteger()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/nicolas/<ipython console> in <module>()\n\nNameError: name 'PositiveInteger' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8519\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: positive integer\n\nWe have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger\n\n```\nsage: NonNegativeIntegers()\nNon negative integers\nsage: PositiveInteger()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/nicolas/<ipython console> in <module>()\n\nNameError: name 'PositiveInteger' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8519\n\n",
     "created_at": "2010-03-13T11:33:46Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ Keywords: positive integer
 
 We have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger
 
-
 ```
 sage: NonNegativeIntegers()
 Non negative integers
@@ -35,7 +34,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'PositiveInteger' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8519
 
@@ -108,7 +106,7 @@ Hello Nicolas, will you set a +2 with the new description ?
 archive/issue_comments_076816.json:
 ```json
 {
-    "body": "Replying to [comment:5 nborie]:\n> Hello Nicolas, will you set a +2 with the new description ?\n\nYes. I just spent 5 minutes discussing about this with Florent over the phone. In the end, we vote for IntegerRange(a,b, step=c), and NonNegativeIntegers / PositiveIntegers being subclasses (to add further properties; like the fact that they are semigroups/monoids/semirings/....).",
+    "body": "Replying to [comment:5 nborie]:\n> Hello Nicolas, will you set a +2 with the new description ?\n\n\nYes. I just spent 5 minutes discussing about this with Florent over the phone. In the end, we vote for IntegerRange(a,b, step=c), and NonNegativeIntegers / PositiveIntegers being subclasses (to add further properties; like the fact that they are semigroups/monoids/semirings/....).",
     "created_at": "2010-03-13T12:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -119,6 +117,7 @@ archive/issue_comments_076816.json:
 
 Replying to [comment:5 nborie]:
 > Hello Nicolas, will you set a +2 with the new description ?
+
 
 Yes. I just spent 5 minutes discussing about this with Florent over the phone. In the end, we vote for IntegerRange(a,b, step=c), and NonNegativeIntegers / PositiveIntegers being subclasses (to add further properties; like the fact that they are semigroups/monoids/semirings/....).
 
@@ -195,7 +194,7 @@ The __contains__ function is false. It works only for IntegerRange(-Infinity,Inf
 archive/issue_comments_076820.json:
 ```json
 {
-    "body": "Ok, after think a while...\n\nI will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n\n```\nsage: TestSuite(Set([])).run()\nThe following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n```\n\nI need this feature for coherence!! Python range easily give out an empty list like:\n\n```\nsage: range(1,20,-1)\n[]\nsage: range(20,1,1)\n[]\n```\n\nAdding - and + Infinity, we will have a lot of arguments which will build an emptyset. Currently, I did not find a good empty set with categories.\n\nMy code does not allow negative ``step`` and check that ``begin`` < ``end`` to avoid the empty case.\n\nOn other hand, my current status is:\nBenchmarks for my PhD Thesis --> add number_of_transitive_group --> Add enumerated set of TransitiveGroups() --> Add PositiveInteger --> Add IntegerRange feature --> MAX DEPTH OF RECURSION...\n\nAs this EmptySet (with categories) is an empty thing, I have an idea of who can implemented that ?",
+    "body": "Ok, after think a while...\n\nI will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n\n```\nsage: TestSuite(Set([])).run()\nThe following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n```\nI need this feature for coherence!! Python range easily give out an empty list like:\n\n```\nsage: range(1,20,-1)\n[]\nsage: range(20,1,1)\n[]\n```\nAdding - and + Infinity, we will have a lot of arguments which will build an emptyset. Currently, I did not find a good empty set with categories.\n\nMy code does not allow negative ``step`` and check that ``begin`` < ``end`` to avoid the empty case.\n\nOn other hand, my current status is:\nBenchmarks for my PhD Thesis --> add number_of_transitive_group --> Add enumerated set of TransitiveGroups() --> Add PositiveInteger --> Add IntegerRange feature --> MAX DEPTH OF RECURSION...\n\nAs this EmptySet (with categories) is an empty thing, I have an idea of who can implemented that ?",
     "created_at": "2010-03-13T21:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -212,7 +211,6 @@ I will update this code and give IntegerRange the behavior of range() if and onl
 sage: TestSuite(Set([])).run()
 The following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements
 ```
-
 I need this feature for coherence!! Python range easily give out an empty list like:
 
 ```
@@ -221,7 +219,6 @@ sage: range(1,20,-1)
 sage: range(20,1,1)
 []
 ```
-
 Adding - and + Infinity, we will have a lot of arguments which will build an emptyset. Currently, I did not find a good empty set with categories.
 
 My code does not allow negative ``step`` and check that ``begin`` < ``end`` to avoid the empty case.
@@ -238,7 +235,7 @@ As this EmptySet (with categories) is an empty thing, I have an idea of who can 
 archive/issue_comments_076821.json:
 ```json
 {
-    "body": "Replying to [comment:10 nborie]:\n> I will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n> {{{\n> sage: TestSuite(Set([])).run()\n> The following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n> }}}\n\nFor consintency of the category you should use an `EnumeratedSet` rather than a `Set`:\n\n```\nsage: f = FiniteEnumeratedSet([])\nsage: TestSuite(f).run()\n[...]\nThe following tests failed: _test_an_element, _test_elements, _test_some_elements\n```\n\nYou can't expect to get anything better than that with the current specification of sets: All those three tests are buggy in the sense that they suppose that there is at least one element in the set. So forget about it and don't run TestSuite on an empty set until we fix this.",
+    "body": "Replying to [comment:10 nborie]:\n> I will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n> \n> ```\n> sage: TestSuite(Set([])).run()\n> The following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n> ```\n\n\nFor consintency of the category you should use an `EnumeratedSet` rather than a `Set`:\n\n```\nsage: f = FiniteEnumeratedSet([])\nsage: TestSuite(f).run()\n[...]\nThe following tests failed: _test_an_element, _test_elements, _test_some_elements\n```\nYou can't expect to get anything better than that with the current specification of sets: All those three tests are buggy in the sense that they suppose that there is at least one element in the set. So forget about it and don't run TestSuite on an empty set until we fix this.",
     "created_at": "2010-03-13T22:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -249,10 +246,12 @@ archive/issue_comments_076821.json:
 
 Replying to [comment:10 nborie]:
 > I will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....
-> {{{
+> 
+> ```
 > sage: TestSuite(Set([])).run()
 > The following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements
-> }}}
+> ```
+
 
 For consintency of the category you should use an `EnumeratedSet` rather than a `Set`:
 
@@ -262,7 +261,6 @@ sage: TestSuite(f).run()
 [...]
 The following tests failed: _test_an_element, _test_elements, _test_some_elements
 ```
-
 You can't expect to get anything better than that with the current specification of sets: All those three tests are buggy in the sense that they suppose that there is at least one element in the set. So forget about it and don't run TestSuite on an empty set until we fix this.
 
 
@@ -494,7 +492,7 @@ Nicolas.
 archive/issue_comments_076832.json:
 ```json
 {
-    "body": "Replying to [comment:17 nborie]:\n> My last comment was not well formatted, so for the release manager, please apply : \n \n*  trac_8519_Range_factory-nb.patch \n*  trac_8519_Range_factory-review-fh.2.patch \n*  trac_8519_Range_factory-review2-nb.patch\n\nReviewing this I noticed that we forgot to mention that this depends on #8524\n\nFlorent",
+    "body": "Replying to [comment:17 nborie]:\n> My last comment was not well formatted, so for the release manager, please apply : \n\n \n*  trac_8519_Range_factory-nb.patch \n*  trac_8519_Range_factory-review-fh.2.patch \n*  trac_8519_Range_factory-review2-nb.patch\n\nReviewing this I noticed that we forgot to mention that this depends on #8524\n\nFlorent",
     "created_at": "2010-04-16T12:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -505,6 +503,7 @@ archive/issue_comments_076832.json:
 
 Replying to [comment:17 nborie]:
 > My last comment was not well formatted, so for the release manager, please apply : 
+
  
 *  trac_8519_Range_factory-nb.patch 
 *  trac_8519_Range_factory-review-fh.2.patch 
@@ -521,7 +520,7 @@ Florent
 archive/issue_comments_076833.json:
 ```json
 {
-    "body": "Replying to [comment:18 hivert]:\n> Reviewing this I noticed that we forgot to mention that this depends on #8524\n\nIn what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?",
+    "body": "Replying to [comment:18 hivert]:\n> Reviewing this I noticed that we forgot to mention that this depends on #8524\n\n\nIn what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?",
     "created_at": "2010-04-16T18:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -533,6 +532,7 @@ archive/issue_comments_076833.json:
 Replying to [comment:18 hivert]:
 > Reviewing this I noticed that we forgot to mention that this depends on #8524
 
+
 In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?
 
 
@@ -542,7 +542,7 @@ In what way does it depend on it?  I've merged the three patches into a prototyp
 archive/issue_comments_076834.json:
 ```json
 {
-    "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\nDone (well, almost; Florent just need to check my changes). The dependency is functional, not syntactical. I would have expected the tests to fail without #8524! Maybe the problem that was encountered and triggered the writting of #8524 did not end up being doctested, which would be bad!",
+    "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\n\nDone (well, almost; Florent just need to check my changes). The dependency is functional, not syntactical. I would have expected the tests to fail without #8524! Maybe the problem that was encountered and triggered the writting of #8524 did not end up being doctested, which would be bad!",
     "created_at": "2010-04-16T23:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -554,8 +554,10 @@ archive/issue_comments_076834.json:
 Replying to [comment:19 jhpalmieri]:
 > Replying to [comment:18 hivert]:
 > > Reviewing this I noticed that we forgot to mention that this depends on #8524
+
 > 
 > In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?
+
 
 Done (well, almost; Florent just need to check my changes). The dependency is functional, not syntactical. I would have expected the tests to fail without #8524! Maybe the problem that was encountered and triggered the writting of #8524 did not end up being doctested, which would be bad!
 
@@ -566,7 +568,7 @@ Done (well, almost; Florent just need to check my changes). The dependency is fu
 archive/issue_comments_076835.json:
 ```json
 {
-    "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\nMy mistake ! Forget about my comment.",
+    "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\n\nMy mistake ! Forget about my comment.",
     "created_at": "2010-04-16T23:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
@@ -578,8 +580,10 @@ archive/issue_comments_076835.json:
 Replying to [comment:19 jhpalmieri]:
 > Replying to [comment:18 hivert]:
 > > Reviewing this I noticed that we forgot to mention that this depends on #8524
+
 > 
 > In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?
+
 
 My mistake ! Forget about my comment.
 

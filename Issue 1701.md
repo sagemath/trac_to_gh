@@ -55,7 +55,7 @@ Michael
 archive/issue_comments_010753.json:
 ```json
 {
-    "body": "I just checked, it is not merged yet:\n\nmulti_polynomial_libsingular.pyx in Sage 2.9.2:\n\n\n```\n    def __dealloc__(self):\n        \"\"\"\n        \"\"\"\n        cdef ring *oldRing = NULL\n        if currRing != self._ring:\n            oldRing = currRing\n            rChangeCurrRing(self._ring)\n        rDelete(self._ring)\n        if oldRing != NULL:\n            rChangeCurrRing(oldRing)\n```\n",
+    "body": "I just checked, it is not merged yet:\n\nmulti_polynomial_libsingular.pyx in Sage 2.9.2:\n\n```\n    def __dealloc__(self):\n        \"\"\"\n        \"\"\"\n        cdef ring *oldRing = NULL\n        if currRing != self._ring:\n            oldRing = currRing\n            rChangeCurrRing(self._ring)\n        rDelete(self._ring)\n        if oldRing != NULL:\n            rChangeCurrRing(oldRing)\n```",
     "created_at": "2008-01-06T16:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1701",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ archive/issue_comments_010753.json:
 I just checked, it is not merged yet:
 
 multi_polynomial_libsingular.pyx in Sage 2.9.2:
-
 
 ```
     def __dealloc__(self):
@@ -81,7 +80,6 @@ multi_polynomial_libsingular.pyx in Sage 2.9.2:
         if oldRing != NULL:
             rChangeCurrRing(oldRing)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008589.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @nilesjohnson sage-combinat\n\nThis patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way\n\n\n```\n   sage: G.algebra(R)\n```\n\n\nAnother feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8589\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @nilesjohnson sage-combinat\n\nThis patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way\n\n```\n   sage: G.algebra(R)\n```\n\nAnother feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8589\n\n",
     "created_at": "2010-03-23T17:16:37Z",
     "labels": [
         "component: combinatorics"
@@ -21,11 +21,9 @@ CC:  @nilesjohnson sage-combinat
 
 This patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way
 
-
 ```
    sage: G.algebra(R)
 ```
-
 
 Another feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)
 
@@ -82,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077657.json:
 ```json
 {
-    "body": "Is line 919 in sage/categories/modules_with_basis.py a typo?\n\n```\n:meth:`rodulesWithBasis.HomCategory.ElementMethods.on_basis`. \n       ^\n```\n\nAlso, at the start of sage/groups/perm_gps/permgroup.py, the line \n\n```\nfrom sage.combinat.family import Family\n```\n\nmight be changed to \n\n```\nfrom sage.sets.family import Family\n```\n\n(since sage.combinat.family says \"This is a backward compatibility stub. Use :mod:`sage.sets.family` instead\").",
+    "body": "Is line 919 in sage/categories/modules_with_basis.py a typo?\n\n```\n:meth:`rodulesWithBasis.HomCategory.ElementMethods.on_basis`. \n       ^\n```\nAlso, at the start of sage/groups/perm_gps/permgroup.py, the line \n\n```\nfrom sage.combinat.family import Family\n```\nmight be changed to \n\n```\nfrom sage.sets.family import Family\n```\n(since sage.combinat.family says \"This is a backward compatibility stub. Use :mod:`sage.sets.family` instead\").",
     "created_at": "2010-04-02T16:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -97,19 +95,16 @@ Is line 919 in sage/categories/modules_with_basis.py a typo?
 :meth:`rodulesWithBasis.HomCategory.ElementMethods.on_basis`. 
        ^
 ```
-
 Also, at the start of sage/groups/perm_gps/permgroup.py, the line 
 
 ```
 from sage.combinat.family import Family
 ```
-
 might be changed to 
 
 ```
 from sage.sets.family import Family
 ```
-
 (since sage.combinat.family says "This is a backward compatibility stub. Use :mod:`sage.sets.family` instead").
 
 
@@ -141,7 +136,7 @@ Valentin
 archive/issue_comments_077659.json:
 ```json
 {
-    "body": "Replying to [comment:3 vferay]:\n> You're right! A new version of the patch has been uploaded\n\nThe feature here depends on the Algebra functorial constructions #8881 which are not yet finished.",
+    "body": "Replying to [comment:3 vferay]:\n> You're right! A new version of the patch has been uploaded\n\n\nThe feature here depends on the Algebra functorial constructions #8881 which are not yet finished.",
     "created_at": "2010-05-05T02:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -152,6 +147,7 @@ archive/issue_comments_077659.json:
 
 Replying to [comment:3 vferay]:
 > You're right! A new version of the patch has been uploaded
+
 
 The feature here depends on the Algebra functorial constructions #8881 which are not yet finished.
 
@@ -198,7 +194,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_077662.json:
 ```json
 {
-    "body": "Replying to [comment:5 vferay]:\n> Ok I wait until the Algebra functorial constructions are finished to finalize the patch\n\n#8881 was just merged in sage 4.4.4!",
+    "body": "Replying to [comment:5 vferay]:\n> Ok I wait until the Algebra functorial constructions are finished to finalize the patch\n\n\n#8881 was just merged in sage 4.4.4!",
     "created_at": "2010-06-09T15:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -210,6 +206,7 @@ archive/issue_comments_077662.json:
 Replying to [comment:5 vferay]:
 > Ok I wait until the Algebra functorial constructions are finished to finalize the patch
 
+
 #8881 was just merged in sage 4.4.4!
 
 
@@ -219,7 +216,7 @@ Replying to [comment:5 vferay]:
 archive/issue_comments_077663.json:
 ```json
 {
-    "body": "For the record with 4.4.3 and this patch applied,\n\n```\nsage: SymmetricGroup(3).algebra(QQ)\n```\n\ntriggers an error about _basis_keys",
+    "body": "For the record with 4.4.3 and this patch applied,\n\n```\nsage: SymmetricGroup(3).algebra(QQ)\n```\ntriggers an error about _basis_keys",
     "created_at": "2010-06-14T23:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -233,7 +230,6 @@ For the record with 4.4.3 and this patch applied,
 ```
 sage: SymmetricGroup(3).algebra(QQ)
 ```
-
 triggers an error about _basis_keys
 
 
@@ -243,7 +239,7 @@ triggers an error about _basis_keys
 archive/issue_comments_077664.json:
 ```json
 {
-    "body": "Hello,\n\nIs there any new progress on this?  \n\nI'd like to help, but I think I have to start by understanding `Family`:  \n\nReplying to [comment:1 vferay]:\n> * The generators of permutation groups were returned as a list and not as a family, which is the case for other types of groups. They are now returned as a family.\n\n`DihedralGroup` and `CyclicPermutationGroup` both return `gens` as lists, and polynomial/power series rings return `gens` as tuples . . . could someone tell me if there is an effort under way to convert all of these to `Family`, or what sorts of things do already return `gens` as a `Family`?\n\nAre there other work issues for this patch (other than the bug with 4.4.3 reported by nthiery), or is it otherwise ready for review?\n\nthanks,\nNiles",
+    "body": "Hello,\n\nIs there any new progress on this?  \n\nI'd like to help, but I think I have to start by understanding `Family`:  \n\nReplying to [comment:1 vferay]:\n> * The generators of permutation groups were returned as a list and not as a family, which is the case for other types of groups. They are now returned as a family.\n\n\n`DihedralGroup` and `CyclicPermutationGroup` both return `gens` as lists, and polynomial/power series rings return `gens` as tuples . . . could someone tell me if there is an effort under way to convert all of these to `Family`, or what sorts of things do already return `gens` as a `Family`?\n\nAre there other work issues for this patch (other than the bug with 4.4.3 reported by nthiery), or is it otherwise ready for review?\n\nthanks,\nNiles",
     "created_at": "2010-10-10T20:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -261,6 +257,7 @@ I'd like to help, but I think I have to start by understanding `Family`:
 Replying to [comment:1 vferay]:
 > * The generators of permutation groups were returned as a list and not as a family, which is the case for other types of groups. They are now returned as a family.
 
+
 `DihedralGroup` and `CyclicPermutationGroup` both return `gens` as lists, and polynomial/power series rings return `gens` as tuples . . . could someone tell me if there is an effort under way to convert all of these to `Family`, or what sorts of things do already return `gens` as a `Family`?
 
 Are there other work issues for this patch (other than the bug with 4.4.3 reported by nthiery), or is it otherwise ready for review?
@@ -275,7 +272,7 @@ Niles
 archive/issue_comments_077665.json:
 ```json
 {
-    "body": "Hello,\n\n   finishing this patch is on my todo list of the week.\n\n>  could someone tell me if there is an effort under way to convert all of these to Family, or \n> what sorts of things do already return gens as a Family?\nIf we are only interested with groups, there is no interest to return things as a Family, but it is the natural structure when we work with algebra generators. So the change was to unify this but I confess that I don't remember for which function I wanted to do that.\n\nmore soon,\n\nValentin",
+    "body": "Hello,\n\n   finishing this patch is on my todo list of the week.\n\n>  could someone tell me if there is an effort under way to convert all of these to Family, or \n\n> what sorts of things do already return gens as a Family?\nIf we are only interested with groups, there is no interest to return things as a Family, but it is the natural structure when we work with algebra generators. So the change was to unify this but I confess that I don't remember for which function I wanted to do that.\n\nmore soon,\n\nValentin",
     "created_at": "2010-10-11T15:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -289,6 +286,7 @@ Hello,
    finishing this patch is on my todo list of the week.
 
 >  could someone tell me if there is an effort under way to convert all of these to Family, or 
+
 > what sorts of things do already return gens as a Family?
 If we are only interested with groups, there is no interest to return things as a Family, but it is the natural structure when we work with algebra generators. So the change was to unify this but I confess that I don't remember for which function I wanted to do that.
 
@@ -303,7 +301,7 @@ Valentin
 archive/issue_comments_077666.json:
 ```json
 {
-    "body": "Replying to [comment:9 vferay]:\n> > could someone tell me if there is an effort under way to convert all of these to Family, or \n> > what sorts of things do already return gens as a Family?\n\n> If we are only interested with groups, there is no interest to\n> return things as a Family, but it is the natural structure when we\n> work with algebra generators. So the change was to unify this but I\n> confess that I don't remember for which function I wanted to do\n> that.\n\nThe current convention is for algebra_generators,\nsemigroup_generators, and the like to return families.\n\nThere definitely is a plan for the long run (at least a wish from the\nsage-combinat group :-)) to have .gens() return a family as well. But\nthis will require some serious coordination to maintain backward\ncompatibility, and I'd rather have it done in a separate patch.\n\nValentin: do you really need this feature right now?",
+    "body": "Replying to [comment:9 vferay]:\n> > could someone tell me if there is an effort under way to convert all of these to Family, or \n> > what sorts of things do already return gens as a Family?\n\n\n> If we are only interested with groups, there is no interest to\n> return things as a Family, but it is the natural structure when we\n> work with algebra generators. So the change was to unify this but I\n> confess that I don't remember for which function I wanted to do\n> that.\n\n\nThe current convention is for algebra_generators,\nsemigroup_generators, and the like to return families.\n\nThere definitely is a plan for the long run (at least a wish from the\nsage-combinat group :-)) to have .gens() return a family as well. But\nthis will require some serious coordination to maintain backward\ncompatibility, and I'd rather have it done in a separate patch.\n\nValentin: do you really need this feature right now?",
     "created_at": "2010-10-12T16:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -316,11 +314,13 @@ Replying to [comment:9 vferay]:
 > > could someone tell me if there is an effort under way to convert all of these to Family, or 
 > > what sorts of things do already return gens as a Family?
 
+
 > If we are only interested with groups, there is no interest to
 > return things as a Family, but it is the natural structure when we
 > work with algebra generators. So the change was to unify this but I
 > confess that I don't remember for which function I wanted to do
 > that.
+
 
 The current convention is for algebra_generators,
 semigroup_generators, and the like to return families.
@@ -339,7 +339,7 @@ Valentin: do you really need this feature right now?
 archive/issue_comments_077667.json:
 ```json
 {
-    "body": "Hello,\n\n> Valentin: do you really need this feature right now? \nIt was needed in the function algebra_generators() which can be called on a group or semi-group algebra. But I changed this function such that it works in both cases.\n\nI splitted the patch in 2 and keep just the part on group algebra and Hopf algebra (and not the part turning group generators into a family).\n\nEverything seems to work now (I have one error in the test of hopf_algebra_with_basis.py :\n\"... still using old coercion framework) when the patch is applied in the sage-combinat queue. But it seems to depend on other patches (because import it when no other patches are applied lead to a lot of mistakes. Nicolas, do you know which ones and what I should do.\n\nI attach the new version of the patch",
+    "body": "Hello,\n\n> Valentin: do you really need this feature right now? \n\nIt was needed in the function algebra_generators() which can be called on a group or semi-group algebra. But I changed this function such that it works in both cases.\n\nI splitted the patch in 2 and keep just the part on group algebra and Hopf algebra (and not the part turning group generators into a family).\n\nEverything seems to work now (I have one error in the test of hopf_algebra_with_basis.py :\n\"... still using old coercion framework) when the patch is applied in the sage-combinat queue. But it seems to depend on other patches (because import it when no other patches are applied lead to a lot of mistakes. Nicolas, do you know which ones and what I should do.\n\nI attach the new version of the patch",
     "created_at": "2010-10-13T13:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -351,6 +351,7 @@ archive/issue_comments_077667.json:
 Hello,
 
 > Valentin: do you really need this feature right now? 
+
 It was needed in the function algebra_generators() which can be called on a group or semi-group algebra. But I changed this function such that it works in both cases.
 
 I splitted the patch in 2 and keep just the part on group algebra and Hopf algebra (and not the part turning group generators into a family).
@@ -367,7 +368,7 @@ I attach the new version of the patch
 archive/issue_comments_077668.json:
 ```json
 {
-    "body": "Replying to [comment:11 vferay]:\n> It was needed in the function algebra_generators() which can be\n> called on a group or semi-group algebra. But I changed this function\n> such that it works in both cases.\n\nThanks. Do you mind fixing instead semigroup_generators?\n\n> I splitted the patch in 2 and keep just the part on group algebra\n> and Hopf algebra (and not the part turning group generators into a\n> family).\n\nThanks.\n\n> Everything seems to work now (I have one error in the test of\n> hopf_algebra_with_basis.py : \"... still using old coercion\n> framework) when the patch is applied in the sage-combinat queue. But\n> it seems to depend on other patches (because import it when no other\n> patches are applied lead to a lot of mistakes. Nicolas, do you know\n> which ones and what I should do.\n\nAfter investigation, your patch depends on:\n\n- trac_9648_modulemorphism_codomain_extension-cs.patch # Needs review\n- free_module_basis_key_initialisation-nb.patch\n\n#9648 just needs a last pass of proofreading + rerunning the tests\nwith the latest Sage. Do you volunteer for the former?\n\nI just created #10127 for the second. We should be able to finalize it\nsoon with Nicolas B.\n\nWith those patches applied, I only get two trivial errors in sage/categories:\n\n\n```\nsage -t  \"devel/sage-combinat/sage/categories/groups.py\"    \n**********************************************************************\nFile \"/opt/sage-4.5.2/devel/sage-combinat/sage/categories/groups.py\", line 69:\n    sage: A.group_generators()\nExpected:\n    [(2,3,4), (1,2,3)]\nGot:\n    [(1,2,3), (2,3,4)]\nsage -t  \"devel/sage-combinat/sage/categories/algebra_functor.py\"\n**********************************************************************\nFile \"/opt/sage-4.5.2/devel/sage-combinat/sage/categories/algebra_functor.py\", line 37:\n    sage: Groups().Algebras(QQ) # todo: update once there will be a category for group algebras\nExpected:\n    Category of monoid algebras over Rational Field\nGot:\n    Category of group algebras over Rational Field\n```\n\n\nCheers,\n\t\t\tNicolas",
+    "body": "Replying to [comment:11 vferay]:\n> It was needed in the function algebra_generators() which can be\n> called on a group or semi-group algebra. But I changed this function\n> such that it works in both cases.\n\n\nThanks. Do you mind fixing instead semigroup_generators?\n\n> I splitted the patch in 2 and keep just the part on group algebra\n> and Hopf algebra (and not the part turning group generators into a\n> family).\n\n\nThanks.\n\n> Everything seems to work now (I have one error in the test of\n> hopf_algebra_with_basis.py : \"... still using old coercion\n> framework) when the patch is applied in the sage-combinat queue. But\n> it seems to depend on other patches (because import it when no other\n> patches are applied lead to a lot of mistakes. Nicolas, do you know\n> which ones and what I should do.\n\n\nAfter investigation, your patch depends on:\n\n- trac_9648_modulemorphism_codomain_extension-cs.patch # Needs review\n- free_module_basis_key_initialisation-nb.patch\n\n#9648 just needs a last pass of proofreading + rerunning the tests\nwith the latest Sage. Do you volunteer for the former?\n\nI just created #10127 for the second. We should be able to finalize it\nsoon with Nicolas B.\n\nWith those patches applied, I only get two trivial errors in sage/categories:\n\n```\nsage -t  \"devel/sage-combinat/sage/categories/groups.py\"    \n**********************************************************************\nFile \"/opt/sage-4.5.2/devel/sage-combinat/sage/categories/groups.py\", line 69:\n    sage: A.group_generators()\nExpected:\n    [(2,3,4), (1,2,3)]\nGot:\n    [(1,2,3), (2,3,4)]\nsage -t  \"devel/sage-combinat/sage/categories/algebra_functor.py\"\n**********************************************************************\nFile \"/opt/sage-4.5.2/devel/sage-combinat/sage/categories/algebra_functor.py\", line 37:\n    sage: Groups().Algebras(QQ) # todo: update once there will be a category for group algebras\nExpected:\n    Category of monoid algebras over Rational Field\nGot:\n    Category of group algebras over Rational Field\n```\n\nCheers,\n\t\t\tNicolas",
     "created_at": "2010-10-13T14:19:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -381,11 +382,13 @@ Replying to [comment:11 vferay]:
 > called on a group or semi-group algebra. But I changed this function
 > such that it works in both cases.
 
+
 Thanks. Do you mind fixing instead semigroup_generators?
 
 > I splitted the patch in 2 and keep just the part on group algebra
 > and Hopf algebra (and not the part turning group generators into a
 > family).
+
 
 Thanks.
 
@@ -395,6 +398,7 @@ Thanks.
 > it seems to depend on other patches (because import it when no other
 > patches are applied lead to a lot of mistakes. Nicolas, do you know
 > which ones and what I should do.
+
 
 After investigation, your patch depends on:
 
@@ -408,7 +412,6 @@ I just created #10127 for the second. We should be able to finalize it
 soon with Nicolas B.
 
 With those patches applied, I only get two trivial errors in sage/categories:
-
 
 ```
 sage -t  "devel/sage-combinat/sage/categories/groups.py"    
@@ -429,7 +432,6 @@ Got:
     Category of group algebras over Rational Field
 ```
 
-
 Cheers,
 			Nicolas
 
@@ -440,7 +442,7 @@ Cheers,
 archive/issue_comments_077669.json:
 ```json
 {
-    "body": "Hi\n\n> Thanks. Do you mind fixing instead semigroup_generators? \nYou mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.\n\n> #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. Do you > volunteer for the former? \nok I will try to do that.\n\n> With those patches applied, I only get two trivial errors in sage/categories: \nthe first one does not appear on my computer (?). I corrected the second one.\n\nValentin",
+    "body": "Hi\n\n> Thanks. Do you mind fixing instead semigroup_generators? \n  \nYou mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.\n\n> #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. Do you > volunteer for the former? \n\nok I will try to do that.\n\n> With those patches applied, I only get two trivial errors in sage/categories: \n\nthe first one does not appear on my computer (?). I corrected the second one.\n\nValentin",
     "created_at": "2010-10-14T10:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -452,12 +454,15 @@ archive/issue_comments_077669.json:
 Hi
 
 > Thanks. Do you mind fixing instead semigroup_generators? 
+  
 You mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.
 
 > #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. Do you > volunteer for the former? 
+
 ok I will try to do that.
 
 > With those patches applied, I only get two trivial errors in sage/categories: 
+
 the first one does not appear on my computer (?). I corrected the second one.
 
 Valentin
@@ -469,7 +474,7 @@ Valentin
 archive/issue_comments_077670.json:
 ```json
 {
-    "body": "Replying to [comment:13 vferay]:\n> > Thanks. Do you mind fixing instead semigroup_generators? \n> You mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.\n\nOops, I investigated this too quickly. The culprit is actually Groups.ParentMethods.group_generators which returns self.gens() directly, instead of making the result first into a family.\n\n> > #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. > > Do you volunteer for the former? \n> ok I will try to do that.\n\nThanks!\n\n> > With those patches applied, I only get two trivial errors in sage/categories: \n> the first one does not appear on my computer (?). \n\nHmm. Which patches did you have applied when you tried? Which version of Sage?\n\n> I corrected the second one.\n\nThanks!",
+    "body": "Replying to [comment:13 vferay]:\n> > Thanks. Do you mind fixing instead semigroup_generators? \n  \n> You mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.\n\nOops, I investigated this too quickly. The culprit is actually Groups.ParentMethods.group_generators which returns self.gens() directly, instead of making the result first into a family.\n\n> > #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. > > Do you volunteer for the former? \n\n> ok I will try to do that.\n\nThanks!\n\n> > With those patches applied, I only get two trivial errors in sage/categories: \n\n> the first one does not appear on my computer (?). \n\nHmm. Which patches did you have applied when you tried? Which version of Sage?\n\n> I corrected the second one.\n\n\nThanks!",
     "created_at": "2010-10-14T12:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -480,21 +485,25 @@ archive/issue_comments_077670.json:
 
 Replying to [comment:13 vferay]:
 > > Thanks. Do you mind fixing instead semigroup_generators? 
+  
 > You mean that you want semigroup_generators to return a list. I assume that this will need to change a few things in all the semigroup file. Another solution is also to overload the algebra_generators function for group algebras.
 
 Oops, I investigated this too quickly. The culprit is actually Groups.ParentMethods.group_generators which returns self.gens() directly, instead of making the result first into a family.
 
 > > #9648 just needs a last pass of proofreading + rerunning the tests with the latest Sage. > > Do you volunteer for the former? 
+
 > ok I will try to do that.
 
 Thanks!
 
 > > With those patches applied, I only get two trivial errors in sage/categories: 
+
 > the first one does not appear on my computer (?). 
 
 Hmm. Which patches did you have applied when you tried? Which version of Sage?
 
 > I corrected the second one.
+
 
 Thanks!
 
@@ -505,7 +514,7 @@ Thanks!
 archive/issue_comments_077671.json:
 ```json
 {
-    "body": "Replying to nthiery:\n\n> Oops, I investigated this too quickly. The culprit is actually\n> Groups.ParentMethods?.group_generators which returns self.gens() directly, instead of making the > result first into a family. \nok I have changed this function and every test pass...\n\nI think the patch is ready now, I am waiting that the other patches are included in sage to set it as need_review .\n\n\n> > > With those patches applied, I only get two trivial errors in sage/categories:\n> > the first one does not appear on my computer (?).\n> Hmm. Which patches did you have applied when you tried? Which version of Sage? \nversion 4.5.3, patches up to this one were applied. But now, I find the same result as you do (except that now, it has been transformed into a family)...\n\nValentin",
+    "body": "Replying to nthiery:\n\n> Oops, I investigated this too quickly. The culprit is actually\n> Groups.ParentMethods?.group_generators which returns self.gens() directly, instead of making the > result first into a family. \n\nok I have changed this function and every test pass...\n\nI think the patch is ready now, I am waiting that the other patches are included in sage to set it as need_review .\n\n\n> > > With those patches applied, I only get two trivial errors in sage/categories:\n\n> > the first one does not appear on my computer (?).\n> Hmm. Which patches did you have applied when you tried? Which version of Sage? \n  \nversion 4.5.3, patches up to this one were applied. But now, I find the same result as you do (except that now, it has been transformed into a family)...\n\nValentin",
     "created_at": "2010-10-14T13:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -518,14 +527,17 @@ Replying to nthiery:
 
 > Oops, I investigated this too quickly. The culprit is actually
 > Groups.ParentMethods?.group_generators which returns self.gens() directly, instead of making the > result first into a family. 
+
 ok I have changed this function and every test pass...
 
 I think the patch is ready now, I am waiting that the other patches are included in sage to set it as need_review .
 
 
 > > > With those patches applied, I only get two trivial errors in sage/categories:
+
 > > the first one does not appear on my computer (?).
 > Hmm. Which patches did you have applied when you tried? Which version of Sage? 
+  
 version 4.5.3, patches up to this one were applied. But now, I find the same result as you do (except that now, it has been transformed into a family)...
 
 Valentin
@@ -537,7 +549,7 @@ Valentin
 archive/issue_comments_077672.json:
 ```json
 {
-    "body": "All test pass on 4.5.3, with the following patches applied:\n\n```\ntrac_9648_modulemorphism_codomain_extension-cs.patch # Needs review\ntrac_10127_free_module_basis_key_initialisation-nb.patch # Under review\ntrac_8589_feature_group_algebras_vf.patch  #-4_5    # Under review\ntrac_8589_feature_group_algebras-reviewer-nt.patch\n```\n\n\nGenerally speaking, the patch is good to go, up to missing documentation and tests for Coalgebras.ElementMethods.counit. Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation compiles smoothly, and upload here. \n\nThen you can set a positive review on my behalf. Thanks for your work on that!\n\nNiles: feel free to make a last check up!",
+    "body": "All test pass on 4.5.3, with the following patches applied:\n\n```\ntrac_9648_modulemorphism_codomain_extension-cs.patch # Needs review\ntrac_10127_free_module_basis_key_initialisation-nb.patch # Under review\ntrac_8589_feature_group_algebras_vf.patch  #-4_5    # Under review\ntrac_8589_feature_group_algebras-reviewer-nt.patch\n```\n\nGenerally speaking, the patch is good to go, up to missing documentation and tests for Coalgebras.ElementMethods.counit. Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation compiles smoothly, and upload here. \n\nThen you can set a positive review on my behalf. Thanks for your work on that!\n\nNiles: feel free to make a last check up!",
     "created_at": "2010-10-15T13:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -554,7 +566,6 @@ trac_10127_free_module_basis_key_initialisation-nb.patch # Under review
 trac_8589_feature_group_algebras_vf.patch  #-4_5    # Under review
 trac_8589_feature_group_algebras-reviewer-nt.patch
 ```
-
 
 Generally speaking, the patch is good to go, up to missing documentation and tests for Coalgebras.ElementMethods.counit. Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation compiles smoothly, and upload here. 
 
@@ -604,7 +615,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_077674.json:
 ```json
 {
-    "body": "> Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation\n> compiles smoothly, and upload here.\n\nDone!",
+    "body": "> Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation\n> compiles smoothly, and upload here.\n\n\nDone!",
     "created_at": "2010-10-18T13:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
@@ -615,6 +626,7 @@ archive/issue_comments_077674.json:
 
 > Valentin, please fold in my reviewer's patch, add doc and test, check that the documentation
 > compiles smoothly, and upload here.
+
 
 Done!
 

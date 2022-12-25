@@ -162,7 +162,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089204.json:
 ```json
 {
-    "body": "\n```\nsage -t  ell_number_field.py\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 1049:\n    sage: K=NumberField(x^2+3)\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[5]>\", line 1, in <module>\n        K=NumberField(x**Integer(2)+Integer(3))###line 1049:\n    sage: K=NumberField(x^2+3)\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/rings/number_field/number_field.py\", line 431, in NumberField\n        raise TypeError, \"You must specify the name of the generator.\"\n    TypeError: You must specify the name of the generator.\n**********************************************************************                           \n```\n\n\nYou should also probably delete, rather than comment out, the code in ell_rational_field.",
+    "body": "```\nsage -t  ell_number_field.py\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 1049:\n    sage: K=NumberField(x^2+3)\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[5]>\", line 1, in <module>\n        K=NumberField(x**Integer(2)+Integer(3))###line 1049:\n    sage: K=NumberField(x^2+3)\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/rings/number_field/number_field.py\", line 431, in NumberField\n        raise TypeError, \"You must specify the name of the generator.\"\n    TypeError: You must specify the name of the generator.\n**********************************************************************                           \n```\n\nYou should also probably delete, rather than comment out, the code in ell_rational_field.",
     "created_at": "2010-07-02T20:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
@@ -170,7 +170,6 @@ archive/issue_comments_089204.json:
     "user": "https://github.com/loefflerd"
 }
 ```
-
 
 ```
 sage -t  ell_number_field.py
@@ -193,7 +192,6 @@ Exception raised:
     TypeError: You must specify the name of the generator.
 **********************************************************************                           
 ```
-
 
 You should also probably delete, rather than comment out, the code in ell_rational_field.
 

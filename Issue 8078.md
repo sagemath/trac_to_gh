@@ -3,7 +3,7 @@
 archive/issues_008078.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @orlitzky\n\nKeywords: solve, inequality\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\n\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @orlitzky\n\nKeywords: solve, inequality\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
     "created_at": "2010-01-26T12:37:46Z",
     "labels": [
         "component: symbolics",
@@ -28,7 +28,6 @@ Sage with patch #7325 fails to solve some simple ineqaulitites
 sage: solve(x^4+2>0,x)
 [[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]
 ```
-
 This should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8078
@@ -42,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8078
 archive/issue_comments_070675.json:
 ```json
 {
-    "body": "Looks like this was indeed fixed in the Maxima upgrade.  We just need a patch to confirm this.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: plotpatches\nsage: solve(x^4+2>0,x)\n[x < +Infinity]\nsage: \n```\n",
+    "body": "Looks like this was indeed fixed in the Maxima upgrade.  We just need a patch to confirm this.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: plotpatches\nsage: solve(x^4+2>0,x)\n[x < +Infinity]\nsage: \n```",
     "created_at": "2011-02-07T15:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
@@ -66,7 +65,6 @@ sage: solve(x^4+2>0,x)
 [x < +Infinity]
 sage: 
 ```
-
 
 
 

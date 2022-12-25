@@ -3,7 +3,7 @@
 archive/issues_008196.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n```\nsage: a=mod(3,15)\nsage: a.is_square?\n...\n            ALGORITHM: Calculate the Jacobi symbol\n            `(mathtt{self}/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(mathtt{self})` must be even or greater than\n```\n\nClearly the math formulae are not displayed correctly in tty mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8196\n\n",
+    "body": "Assignee: mvngu\n\n```\nsage: a=mod(3,15)\nsage: a.is_square?\n...\n            ALGORITHM: Calculate the Jacobi symbol\n            `(mathtt{self}/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(mathtt{self})` must be even or greater than\n```\nClearly the math formulae are not displayed correctly in tty mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8196\n\n",
     "created_at": "2010-02-05T20:14:00Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_008196.json:
 ```
 Assignee: mvngu
 
-
 ```
 sage: a=mod(3,15)
 sage: a.is_square?
@@ -29,7 +28,6 @@ sage: a.is_square?
             is 0 mod `p`, where `p^k || n`, then
             `ord_p(mathtt{self})` must be even or greater than
 ```
-
 Clearly the math formulae are not displayed correctly in tty mode.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8196
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8196
 archive/issue_comments_072164.json:
 ```json
 {
-    "body": "> Clearly the math formulae are not displayed correctly in tty mode.\n\nHow would you expect them to be displayed, given that it's tty mode?",
+    "body": "> Clearly the math formulae are not displayed correctly in tty mode.\n\n\nHow would you expect them to be displayed, given that it's tty mode?",
     "created_at": "2010-02-05T20:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
@@ -54,6 +52,7 @@ archive/issue_comments_072164.json:
 
 > Clearly the math formulae are not displayed correctly in tty mode.
 
+
 How would you expect them to be displayed, given that it's tty mode?
 
 
@@ -63,7 +62,7 @@ How would you expect them to be displayed, given that it's tty mode?
 archive/issue_comments_072165.json:
 ```json
 {
-    "body": "> How would you expect them to be displayed, given that it's tty mode? \n\nthe \"mathtt{...}\" should not appear, thus we should get something like:\n\n```\n            ALGORITHM: Calculate the Jacobi symbol\n            `(self/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(self)` must be even or greater than\n```\n",
+    "body": "> How would you expect them to be displayed, given that it's tty mode? \n\n\nthe \"mathtt{...}\" should not appear, thus we should get something like:\n\n```\n            ALGORITHM: Calculate the Jacobi symbol\n            `(self/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(self)` must be even or greater than\n```",
     "created_at": "2010-02-07T21:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
@@ -73,6 +72,7 @@ archive/issue_comments_072165.json:
 ```
 
 > How would you expect them to be displayed, given that it's tty mode? 
+
 
 the "mathtt{...}" should not appear, thus we should get something like:
 
@@ -86,13 +86,12 @@ the "mathtt{...}" should not appear, thus we should get something like:
 
 
 
-
 ---
 
 archive/issue_comments_072166.json:
 ```json
 {
-    "body": "Replying to [comment:2 zimmerma]:\n> the \"mathtt{...}\" should not appear\n\nThe patch at #8209 does this, but really only because mathtt is broken everywhere: broken in notebook documentation and in the reference manual, so might as well fix it from the command line, too.  I really don't think we want to write what would essentially be a LaTeX --> text converter, so there are limits to how good the help strings will look from the command line.\n\nI suggest we close this, since #8209 takes care of the specific issue here.",
+    "body": "Replying to [comment:2 zimmerma]:\n> the \"mathtt{...}\" should not appear\n\n\nThe patch at #8209 does this, but really only because mathtt is broken everywhere: broken in notebook documentation and in the reference manual, so might as well fix it from the command line, too.  I really don't think we want to write what would essentially be a LaTeX --> text converter, so there are limits to how good the help strings will look from the command line.\n\nI suggest we close this, since #8209 takes care of the specific issue here.",
     "created_at": "2010-02-07T21:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
@@ -103,6 +102,7 @@ archive/issue_comments_072166.json:
 
 Replying to [comment:2 zimmerma]:
 > the "mathtt{...}" should not appear
+
 
 The patch at #8209 does this, but really only because mathtt is broken everywhere: broken in notebook documentation and in the reference manual, so might as well fix it from the command line, too.  I really don't think we want to write what would essentially be a LaTeX --> text converter, so there are limits to how good the help strings will look from the command line.
 

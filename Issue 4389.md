@@ -3,7 +3,7 @@
 archive/issues_004389.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t -long -optional devel/sage/sage/groups/perm_gps/permgroup.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/permgroup.py\", line 179:\n    sage: H.gens()                            # requires optional database_gap\nExpected:\n    ((1,2,3,4), (1,3))\nGot:\n    [(1,2,3,4), (1,3)]\n**********************************************************************\n```\n\nThe above is caused by changing the printing of permutations that went into Sage a while ago. The fix is obvious.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4389\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long -optional devel/sage/sage/groups/perm_gps/permgroup.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/permgroup.py\", line 179:\n    sage: H.gens()                            # requires optional database_gap\nExpected:\n    ((1,2,3,4), (1,3))\nGot:\n    [(1,2,3,4), (1,3)]\n**********************************************************************\n```\nThe above is caused by changing the printing of permutations that went into Sage a while ago. The fix is obvious.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4389\n\n",
     "created_at": "2008-10-30T05:35:08Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_004389.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage -t -long -optional devel/sage/sage/groups/perm_gps/permgroup.py
 **********************************************************************
@@ -30,7 +29,6 @@ Got:
     [(1,2,3,4), (1,3)]
 **********************************************************************
 ```
-
 The above is caused by changing the printing of permutations that went into Sage a while ago. The fix is obvious.
 
 Cheers,

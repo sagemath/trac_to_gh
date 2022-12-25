@@ -3,7 +3,7 @@
 archive/issues_008762.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nOn Apr 24, 2010, at 5:36 PM, Michael Rybalkin wrote:\n\nHow to get monomial with large exponent in the polynomial rings?\n\nFor example I hsave polynomial ring over large finite field:\np = next_prime(10^20)\nR.<x> = PolynomialRing(GF(p), sparse=True)\n\nMonomial x^(10^7) construction takes 2 seconds:\ntime tmp = x^(10^7)\n\nMonomial x^(10^8) construction uses all 6 Gb server memory and cannot\nfinish.\nAnd without 'sparse=True' option I cannot even get x^(10^6).\n\nWhat is the limitations for monomial exponents in polynomial rings?\nWhat can be done in my case? For example GAP handles this case without\nany problem.\n\nSeems like the sparse=True flag is horribly broken for GF(p)[x]:\n\nsage: p = next_prime(10^20)\nsage: R.<x> = PolynomialRing(GF(p), sparse=True)\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zz_pex.Polynomial_ZZ_pEX'>\n\nsage: R.<x> = PolynomialRing(QQ, sparse=True)\nsage: x^(10^8)\nx^100000000\n\n\n- Robert Bradshaw\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8762\n\n",
+    "body": "Assignee: @aghitza\n\n```\nOn Apr 24, 2010, at 5:36 PM, Michael Rybalkin wrote:\n\nHow to get monomial with large exponent in the polynomial rings?\n\nFor example I hsave polynomial ring over large finite field:\np = next_prime(10^20)\nR.<x> = PolynomialRing(GF(p), sparse=True)\n\nMonomial x^(10^7) construction takes 2 seconds:\ntime tmp = x^(10^7)\n\nMonomial x^(10^8) construction uses all 6 Gb server memory and cannot\nfinish.\nAnd without 'sparse=True' option I cannot even get x^(10^6).\n\nWhat is the limitations for monomial exponents in polynomial rings?\nWhat can be done in my case? For example GAP handles this case without\nany problem.\n\nSeems like the sparse=True flag is horribly broken for GF(p)[x]:\n\nsage: p = next_prime(10^20)\nsage: R.<x> = PolynomialRing(GF(p), sparse=True)\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zz_pex.Polynomial_ZZ_pEX'>\n\nsage: R.<x> = PolynomialRing(QQ, sparse=True)\nsage: x^(10^8)\nx^100000000\n\n\n- Robert Bradshaw\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8762\n\n",
     "created_at": "2010-04-25T07:17:01Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_008762.json:
 }
 ```
 Assignee: @aghitza
-
 
 ```
 On Apr 24, 2010, at 5:36 PM, Michael Rybalkin wrote:
@@ -54,7 +53,6 @@ x^100000000
 
 - Robert Bradshaw
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8762
 

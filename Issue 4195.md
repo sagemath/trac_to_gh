@@ -3,7 +3,7 @@
 archive/issues_004195.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: plotting, ideal, polynomial\n\nThis now works without having surf installed:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: I = R.ideal([y^3 - x^2])\nsage: I.plot()\nsage: I = R.ideal([y^2 - x^2 - 1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4195\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: plotting, ideal, polynomial\n\nThis now works without having surf installed:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: I = R.ideal([y^3 - x^2])\nsage: I.plot()\nsage: I = R.ideal([y^2 - x^2 - 1])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4195\n\n",
     "created_at": "2008-09-25T12:09:01Z",
     "labels": [
         "component: graphics"
@@ -29,7 +29,6 @@ sage: I = R.ideal([y^3 - x^2])
 sage: I.plot()
 sage: I = R.ideal([y^2 - x^2 - 1])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4195
 

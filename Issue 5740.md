@@ -3,7 +3,7 @@
 archive/issues_005740.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\n        -  ``taylor`` - (default: False); if True, use Taylor\n           series, which allows more integrals to be computed (but may also\n           crash in some obscure cases due to bugs in Maxima).\n\nintegrals --> \"limits\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5740\n\n",
+    "body": "Assignee: @burcin\n\n```\n        -  ``taylor`` - (default: False); if True, use Taylor\n           series, which allows more integrals to be computed (but may also\n           crash in some obscure cases due to bugs in Maxima).\n\nintegrals --> \"limits\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5740\n\n",
     "created_at": "2009-04-11T00:59:53Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_005740.json:
 ```
 Assignee: @burcin
 
-
 ```
         -  ``taylor`` - (default: False); if True, use Taylor
            series, which allows more integrals to be computed (but may also
@@ -27,7 +26,6 @@ Assignee: @burcin
 
 integrals --> "limits"
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5740
 

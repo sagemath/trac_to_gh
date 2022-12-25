@@ -3,7 +3,7 @@
 archive/issues_004720.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:\n\n\n\n```\nExpecting:\n     -0.500000000000000 + 0.866025403784439*I\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.2.1.rc0/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 210, in __main__.example_10\nFailed example:\n     closest_root(x**Integer(3)-Integer(1), CDF.gen(0))###line\n223:_sage_    >>> closest_root(x^3-1, CDF.0)\nExpected:\n     -0.500000000000000 + 0.866025403784439*I\nGot:\n     -0.500000000000000 + 0.866025403784438*I\n\n\n```\n\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4720\n\n",
+    "body": "Assignee: tbd\n\nOn Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:\n\n\n```\nExpecting:\n     -0.500000000000000 + 0.866025403784439*I\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.2.1.rc0/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 210, in __main__.example_10\nFailed example:\n     closest_root(x**Integer(3)-Integer(1), CDF.gen(0))###line\n223:_sage_    >>> closest_root(x^3-1, CDF.0)\nExpected:\n     -0.500000000000000 + 0.866025403784439*I\nGot:\n     -0.500000000000000 + 0.866025403784438*I\n\n\n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4720\n\n",
     "created_at": "2008-12-05T21:57:48Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_004720.json:
 Assignee: tbd
 
 On Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:
-
 
 
 ```
@@ -38,7 +37,6 @@ Got:
 
 
 ```
-
 
 
 Jaap
@@ -132,7 +130,7 @@ Fine by me.
 archive/issue_comments_035537.json:
 ```json
 {
-    "body": "This patch needs to be rebased:\n\n```\nsage-3.2.2.alpha1/devel/sage$ patch -p1 < trac_4720.patch \npatching file sage/rings/number_field/number_field_morphisms.pyx\nHunk #1 FAILED at 221.\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/number_field/number_field_morphisms.pyx.rej\n```\n\nI will look into it.\n\nCheers,\n\nMichael",
+    "body": "This patch needs to be rebased:\n\n```\nsage-3.2.2.alpha1/devel/sage$ patch -p1 < trac_4720.patch \npatching file sage/rings/number_field/number_field_morphisms.pyx\nHunk #1 FAILED at 221.\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/number_field/number_field_morphisms.pyx.rej\n```\nI will look into it.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-10T07:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
@@ -149,7 +147,6 @@ patching file sage/rings/number_field/number_field_morphisms.pyx
 Hunk #1 FAILED at 221.
 1 out of 1 hunk FAILED -- saving rejects to file sage/rings/number_field/number_field_morphisms.pyx.rej
 ```
-
 I will look into it.
 
 Cheers,

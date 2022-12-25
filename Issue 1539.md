@@ -3,7 +3,7 @@
 archive/issues_001539.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nwstein: note-to-self devel/doc is missing from the bdist.\n[08:33am] wstein: maybe it shouldn't be.\n[08:33am] wstein: I don't know.\n[08:33am] wstein: I think bdist should have it...\n[08:33am] wstein: trac ticket\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1539\n\n",
+    "body": "Assignee: mabshoff\n\n```\nwstein: note-to-self devel/doc is missing from the bdist.\n[08:33am] wstein: maybe it shouldn't be.\n[08:33am] wstein: I don't know.\n[08:33am] wstein: I think bdist should have it...\n[08:33am] wstein: trac ticket\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1539\n\n",
     "created_at": "2007-12-16T16:35:16Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_001539.json:
 ```
 Assignee: mabshoff
 
-
 ```
 wstein: note-to-self devel/doc is missing from the bdist.
 [08:33am] wstein: maybe it shouldn't be.
@@ -26,7 +25,6 @@ wstein: note-to-self devel/doc is missing from the bdist.
 [08:33am] wstein: I think bdist should have it...
 [08:33am] wstein: trac ticket
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1539
 
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1539
 archive/issue_comments_009801.json:
 ```json
 {
-    "body": "#1708 duplicated this\n\nAlso, here is a comment from Kate Minola, which is the same problem.  I've thus\npromoted this to a blocker:\n\n```\nFor sage-2.10.1, if I compile from source and run\n'make check' - all is fine.  If I then build a binary\ndistribution (using -bdist), and then inside the binary\ndistribution run 'make check' I get the following errors.\n\nKate\n\nTesting SAGE tutorial\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 18: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/tut: No such file\nor directory\nERROR: File ./tut.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./tut.tex\nTotal time for all tests: 0.0 seconds\nTesting SAGE programming guide\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 22: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/prog: No such\nfile or directory\nERROR: File ./prog.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./prog.tex\nTotal time for all tests: 0.0 seconds\nTesting SAGE constructions guide\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 26: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/const: No such\nfile or directory\nERROR: File ./const.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./const.tex\nTotal time for all tests: 0.0 seconds\n```\n",
+    "body": "#1708 duplicated this\n\nAlso, here is a comment from Kate Minola, which is the same problem.  I've thus\npromoted this to a blocker:\n\n```\nFor sage-2.10.1, if I compile from source and run\n'make check' - all is fine.  If I then build a binary\ndistribution (using -bdist), and then inside the binary\ndistribution run 'make check' I get the following errors.\n\nKate\n\nTesting SAGE tutorial\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 18: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/tut: No such file\nor directory\nERROR: File ./tut.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./tut.tex\nTotal time for all tests: 0.0 seconds\nTesting SAGE programming guide\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 22: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/prog: No such\nfile or directory\nERROR: File ./prog.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./prog.tex\nTotal time for all tests: 0.0 seconds\nTesting SAGE constructions guide\n/home/kate/sage/sage-2.10.1-x86_64-Linux/dist/sage-2.10.1-x86_64-Linux/\nlocal/bin/sage-maketest: line 26: cd: /home/kate/sage/sage-2.10.1-\nx86_64-Linux/dist/sage-2.10.1-x86_64-Linux/devel/doc/const: No such\nfile or directory\nERROR: File ./const.tex is missing\nexit code: 1\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       ./const.tex\nTotal time for all tests: 0.0 seconds\n```",
     "created_at": "2008-02-12T16:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1539",
     "type": "issue_comment",
@@ -104,7 +102,6 @@ The following tests failed:
        ./const.tex
 Total time for all tests: 0.0 seconds
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003857.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\n\nHowever, clearly:\n\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
+    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\nHowever, clearly:\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
     "created_at": "2008-08-14T21:07:07Z",
     "labels": [
         "component: number theory",
@@ -31,14 +31,11 @@ sage: BinaryQF_reduced_representatives(-63)
  3*x^2 + 3*x*y + 6*y^2]
 ```
 
-
 However, clearly:
-
 
 ```
 4*x^2 - x*y + 4*y^2
 ```
-
 
 isn't a reduced form.
 BinaryQF_reduced_representatives is incorrectly classifying some forms.
@@ -119,7 +116,7 @@ Patch implementing a superior BinaryQF_reduced_representatives method.
 archive/issue_comments_027414.json:
 ```json
 {
-    "body": "Attachment [3857.patch](tarball://root/attachments/some-uuid/ticket3857/3857.patch) by choldsworth created at 2008-08-25 00:41:40\n\nI have submitted a new patch (superseding my first patch), re-implementing the BinaryQF_reduced_representatives method, and addressing your point 3.\n\nI agree the other points need fixing but feel they should have their own ticket, or at least separate patches.\n\nHere are some timings from the new method.\n\nOld code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 29.6 s per loop\n```\n\n\nNew code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 38.9 ms per loop\n```\n",
+    "body": "Attachment [3857.patch](tarball://root/attachments/some-uuid/ticket3857/3857.patch) by choldsworth created at 2008-08-25 00:41:40\n\nI have submitted a new patch (superseding my first patch), re-implementing the BinaryQF_reduced_representatives method, and addressing your point 3.\n\nI agree the other points need fixing but feel they should have their own ticket, or at least separate patches.\n\nHere are some timings from the new method.\n\nOld code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 29.6 s per loop\n```\n\nNew code:\n\n```\nsage: timeit(\"BinaryQF_reduced_representatives(-4004)\")\n5 loops, best of 3: 38.9 ms per loop\n```",
     "created_at": "2008-08-25T00:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -143,14 +140,12 @@ sage: timeit("BinaryQF_reduced_representatives(-4004)")
 5 loops, best of 3: 29.6 s per loop
 ```
 
-
 New code:
 
 ```
 sage: timeit("BinaryQF_reduced_representatives(-4004)")
 5 loops, best of 3: 38.9 ms per loop
 ```
-
 
 
 
@@ -241,7 +236,7 @@ Changing assignee from @williamstein to NilsSkoruppa.
 archive/issue_comments_027419.json:
 ```json
 {
-    "body": "The last patch seemed to be OK. However, I noticed that the bounds for the search region for reduced forms was not optimal. I inserted the optimal bounds and modified the loop logic accordingly, and I gained a speedup of a factor around 10.\n\nBefore:\n\n```\nsage: timeit( 'BinaryQF_reduced_representatives(-998995)')\n5 loops, best of 3: 5.52 s per loop\n```\n\n\nAfter:\n\n```\nsage: timeit( 'BinaryQF_reduced_representatives(-998995)')\n5 loops, best of 3: 547 ms per loop\n```\n\n\nDoctest runs successfully and I tested 1000 discriminants with 6 digits each, compared to the corresponding results produced by the last patch and compared number of produced forms with Hurwitz class numbers in gp. I think its OK now. Ready for being reviewed.",
+    "body": "The last patch seemed to be OK. However, I noticed that the bounds for the search region for reduced forms was not optimal. I inserted the optimal bounds and modified the loop logic accordingly, and I gained a speedup of a factor around 10.\n\nBefore:\n\n```\nsage: timeit( 'BinaryQF_reduced_representatives(-998995)')\n5 loops, best of 3: 5.52 s per loop\n```\n\nAfter:\n\n```\nsage: timeit( 'BinaryQF_reduced_representatives(-998995)')\n5 loops, best of 3: 547 ms per loop\n```\n\nDoctest runs successfully and I tested 1000 discriminants with 6 digits each, compared to the corresponding results produced by the last patch and compared number of produced forms with Hurwitz class numbers in gp. I think its OK now. Ready for being reviewed.",
     "created_at": "2008-09-06T15:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -259,14 +254,12 @@ sage: timeit( 'BinaryQF_reduced_representatives(-998995)')
 5 loops, best of 3: 5.52 s per loop
 ```
 
-
 After:
 
 ```
 sage: timeit( 'BinaryQF_reduced_representatives(-998995)')
 5 loops, best of 3: 547 ms per loop
 ```
-
 
 Doctest runs successfully and I tested 1000 discriminants with 6 digits each, compared to the corresponding results produced by the last patch and compared number of produced forms with Hurwitz class numbers in gp. I think its OK now. Ready for being reviewed.
 

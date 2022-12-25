@@ -3,7 +3,7 @@
 archive/issues_004358.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @jdemeyer\n\nThis:\n\n\n```\nsage: EllipticCurve('37a').sha().an_numerical()\n```\n\n\nspawn a new gp process every time it is computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4358\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @jdemeyer\n\nThis:\n\n```\nsage: EllipticCurve('37a').sha().an_numerical()\n```\n\nspawn a new gp process every time it is computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4358\n\n",
     "created_at": "2008-10-24T05:17:34Z",
     "labels": [
         "component: interfaces",
@@ -22,11 +22,9 @@ CC:  @JohnCremona @jdemeyer
 
 This:
 
-
 ```
 sage: EllipticCurve('37a').sha().an_numerical()
 ```
-
 
 spawn a new gp process every time it is computed.
 
@@ -164,7 +162,7 @@ Changing status from new to needs_review.
 archive/issue_comments_031956.json:
 ```json
 {
-    "body": "Tim Dokchitser's `gp` script `computel.gp`, which is used internally by `an_numerical`, uses global variables, which is a good reason to use a different `gp` instance for every call.\n\nI first suspected an unnecessary line of code in `Lseries_ell.dokchitser()`, but this was not the cause:\n\n```diff\n--- a/sage/schemes/elliptic_curves/lseries_ell.py\n+++ b/sage/schemes/elliptic_curves/lseries_ell.py\n@@ -132,7 +132,6 @@\n                        eps = self.__E.root_number(),\n                        poles = [],\n                        prec = prec)\n-        gp = L.gp()\n         s = 'e = ellinit(%s);'%list(self.__E.minimal_model().a_invariants())\n         s += 'a(k) = ellak(e, k);'\n         L.init_coeffs('a(k)', 1, pari_precode = s,\n```\n\nThis line just starts the `gp` instance a bit sooner than necessary, so I don't think a patch is needed.",
+    "body": "Tim Dokchitser's `gp` script `computel.gp`, which is used internally by `an_numerical`, uses global variables, which is a good reason to use a different `gp` instance for every call.\n\nI first suspected an unnecessary line of code in `Lseries_ell.dokchitser()`, but this was not the cause:\n\n```diff\n--- a/sage/schemes/elliptic_curves/lseries_ell.py\n+++ b/sage/schemes/elliptic_curves/lseries_ell.py\n@@ -132,7 +132,6 @@\n                        eps = self.__E.root_number(),\n                        poles = [],\n                        prec = prec)\n-        gp = L.gp()\n         s = 'e = ellinit(%s);'%list(self.__E.minimal_model().a_invariants())\n         s += 'a(k) = ellak(e, k);'\n         L.init_coeffs('a(k)', 1, pari_precode = s,\n```\nThis line just starts the `gp` instance a bit sooner than necessary, so I don't think a patch is needed.",
     "created_at": "2013-08-13T20:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4358",
     "type": "issue_comment",
@@ -189,7 +187,6 @@ I first suspected an unnecessary line of code in `Lseries_ell.dokchitser()`, but
          s += 'a(k) = ellak(e, k);'
          L.init_coeffs('a(k)', 1, pari_precode = s,
 ```
-
 This line just starts the `gp` instance a bit sooner than necessary, so I don't think a patch is needed.
 
 

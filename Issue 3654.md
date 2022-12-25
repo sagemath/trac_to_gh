@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3654
 archive/issue_comments_025782.json:
 ```json
 {
-    "body": "IIRC warn prints to stderr, so we are not catching the output. This seems similar to Burcin's code:\n\n```\ndef MPolynomialRing(*args, **kwds):\n    import warnings\n    warnings.warn(\"MPolynomialRing is deprecated, use PolynomialRing instead!\", DeprecationWarning, stacklevel=2)\n    return PolynomialRing(*args, **kwds)\n```\n\nThe above should certainly use some more generic infrastructure like the one provided by Jason's patch.\n\nCheers,\n\nMichael",
+    "body": "IIRC warn prints to stderr, so we are not catching the output. This seems similar to Burcin's code:\n\n```\ndef MPolynomialRing(*args, **kwds):\n    import warnings\n    warnings.warn(\"MPolynomialRing is deprecated, use PolynomialRing instead!\", DeprecationWarning, stacklevel=2)\n    return PolynomialRing(*args, **kwds)\n```\nThe above should certainly use some more generic infrastructure like the one provided by Jason's patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-15T01:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
@@ -47,7 +47,6 @@ def MPolynomialRing(*args, **kwds):
     warnings.warn("MPolynomialRing is deprecated, use PolynomialRing instead!", DeprecationWarning, stacklevel=2)
     return PolynomialRing(*args, **kwds)
 ```
-
 The above should certainly use some more generic infrastructure like the one provided by Jason's patch.
 
 Cheers,
@@ -97,7 +96,7 @@ patch updated to fix all doctest errors and make this functionality used.
 archive/issue_comments_025785.json:
 ```json
 {
-    "body": "\n```\n[2:44pm] mabshoff: mhansen: how do you like #3654?\n[2:44pm] mabshoff: I think I will merge it \n[2:45pm] mhansen: Yep -- looks good.\n[2:45pm] mabshoff: I agree. Nice work jason-\n[2:45pm] jason-: yeah!\n```\n\n\nPositive review from me and the gang.\n\nCheers,\n\nMichael",
+    "body": "```\n[2:44pm] mabshoff: mhansen: how do you like #3654?\n[2:44pm] mabshoff: I think I will merge it \n[2:45pm] mhansen: Yep -- looks good.\n[2:45pm] mabshoff: I agree. Nice work jason-\n[2:45pm] jason-: yeah!\n```\n\nPositive review from me and the gang.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T21:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
@@ -106,7 +105,6 @@ archive/issue_comments_025785.json:
 }
 ```
 
-
 ```
 [2:44pm] mabshoff: mhansen: how do you like #3654?
 [2:44pm] mabshoff: I think I will merge it 
@@ -114,7 +112,6 @@ archive/issue_comments_025785.json:
 [2:45pm] mabshoff: I agree. Nice work jason-
 [2:45pm] jason-: yeah!
 ```
-
 
 Positive review from me and the gang.
 

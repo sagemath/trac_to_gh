@@ -3,7 +3,7 @@
 archive/issues_001856.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry this:\n\n```\nsage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)\n```\n\nA tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1856\n\n",
+    "body": "Assignee: @williamstein\n\nTry this:\n\n```\nsage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)\n```\nA tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1856\n\n",
     "created_at": "2008-01-19T23:45:50Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ Try this:
 ```
 sage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)
 ```
-
 A tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1856

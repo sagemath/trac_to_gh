@@ -3,7 +3,7 @@
 archive/issues_001937.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n[10:42] <malb> sage: A.LLL?\n...\n[10:44] <craigcitro> what's mu_{i+1,i} ?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1937\n\n",
+    "body": "Assignee: tba\n\n```\n[10:42] <malb> sage: A.LLL?\n...\n[10:44] <craigcitro> what's mu_{i+1,i} ?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1937\n\n",
     "created_at": "2008-01-26T10:48:58Z",
     "labels": [
         "component: documentation",
@@ -18,13 +18,11 @@ archive/issues_001937.json:
 ```
 Assignee: tba
 
-
 ```
 [10:42] <malb> sage: A.LLL?
 ...
 [10:44] <craigcitro> what's mu_{i+1,i} ?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1937
 

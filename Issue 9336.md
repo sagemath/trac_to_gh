@@ -71,7 +71,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088007.json:
 ```json
 {
-    "body": "Good job!  Patch applies to 4.4.4 and tests pass and docs build fine.\n\nAfter this the number_fields directory scores as follows:\n\n```\n\nSCORE sage/rings/number_field//unit_group.py: 100% (15 of 15)\nSCORE sage/rings/number_field//number_field_element.pyx: 81% (91 of 111)\nSCORE sage/rings/number_field//totallyreal.pyx: 100% (4 of 4)\nSCORE sage/rings/number_field//number_field_base.pyx: 72% (8 of 11)\nSCORE sage/rings/number_field//order.py: 100% (62 of 62)\nSCORE sage/rings/number_field//number_field_element_quadratic.pyx: 95% (42 of 44)\nSCORE sage/rings/number_field//number_field.py: 100% (183 of 183)\nSCORE sage/rings/number_field//number_field_ideal.py: 92% (72 of 78)\nSCORE sage/rings/number_field//totallyreal_dsage.py: 13% (2 of 15)\nSCORE sage/rings/number_field//maps.py: 100% (23 of 23)\nSCORE sage/rings/number_field//number_field_rel.py: 91% (62 of 68)\nSCORE sage/rings/number_field//totallyreal_data.pyx: 100% (7 of 7)\nSCORE sage/rings/number_field//small_primes_of_degree_one.py: 100% (4 of 4)\nSCORE sage/rings/number_field//galois_group.py: 100% (29 of 29)\nSCORE sage/rings/number_field//number_field_ideal_rel.py: 78% (22 of 28)\nSCORE sage/rings/number_field//totallyreal_rel.py: 60% (3 of 5)\nSCORE sage/rings/number_field//morphism.py: 100% (22 of 22)\nSCORE sage/rings/number_field//class_group.py: 72% (13 of 18)\nSCORE sage/rings/number_field//number_field_morphisms.pyx: 100% (13 of 13)\nSCORE sage/rings/number_field//totallyreal_phc.py: 100% (2 of 2)\n```\n",
+    "body": "Good job!  Patch applies to 4.4.4 and tests pass and docs build fine.\n\nAfter this the number_fields directory scores as follows:\n\n```\n\nSCORE sage/rings/number_field//unit_group.py: 100% (15 of 15)\nSCORE sage/rings/number_field//number_field_element.pyx: 81% (91 of 111)\nSCORE sage/rings/number_field//totallyreal.pyx: 100% (4 of 4)\nSCORE sage/rings/number_field//number_field_base.pyx: 72% (8 of 11)\nSCORE sage/rings/number_field//order.py: 100% (62 of 62)\nSCORE sage/rings/number_field//number_field_element_quadratic.pyx: 95% (42 of 44)\nSCORE sage/rings/number_field//number_field.py: 100% (183 of 183)\nSCORE sage/rings/number_field//number_field_ideal.py: 92% (72 of 78)\nSCORE sage/rings/number_field//totallyreal_dsage.py: 13% (2 of 15)\nSCORE sage/rings/number_field//maps.py: 100% (23 of 23)\nSCORE sage/rings/number_field//number_field_rel.py: 91% (62 of 68)\nSCORE sage/rings/number_field//totallyreal_data.pyx: 100% (7 of 7)\nSCORE sage/rings/number_field//small_primes_of_degree_one.py: 100% (4 of 4)\nSCORE sage/rings/number_field//galois_group.py: 100% (29 of 29)\nSCORE sage/rings/number_field//number_field_ideal_rel.py: 78% (22 of 28)\nSCORE sage/rings/number_field//totallyreal_rel.py: 60% (3 of 5)\nSCORE sage/rings/number_field//morphism.py: 100% (22 of 22)\nSCORE sage/rings/number_field//class_group.py: 72% (13 of 18)\nSCORE sage/rings/number_field//number_field_morphisms.pyx: 100% (13 of 13)\nSCORE sage/rings/number_field//totallyreal_phc.py: 100% (2 of 2)\n```",
     "created_at": "2010-06-26T06:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
@@ -110,7 +110,6 @@ SCORE sage/rings/number_field//totallyreal_phc.py: 100% (2 of 2)
 
 
 
-
 ---
 
 archive/issue_comments_088008.json:
@@ -134,7 +133,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_088009.json:
 ```json
 {
-    "body": "Just one little niggle: according to the developer's guide, code like\n\n```\n        try: \n            return self.list()[0] \n        except: \n            raise ValueError, \"Set is empty\"\n```\n\n(lines 91 to 94 in the patched morphism.py) should be avoided.  Better would be\n\n```\n        try: \n            return self[0] \n        except IndexError: \n            raise ValueError, \"Set is empty\"\n```\n",
+    "body": "Just one little niggle: according to the developer's guide, code like\n\n```\n        try: \n            return self.list()[0] \n        except: \n            raise ValueError, \"Set is empty\"\n```\n(lines 91 to 94 in the patched morphism.py) should be avoided.  Better would be\n\n```\n        try: \n            return self[0] \n        except IndexError: \n            raise ValueError, \"Set is empty\"\n```",
     "created_at": "2010-06-27T19:47:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
@@ -151,7 +150,6 @@ Just one little niggle: according to the developer's guide, code like
         except: 
             raise ValueError, "Set is empty"
 ```
-
 (lines 91 to 94 in the patched morphism.py) should be avoided.  Better would be
 
 ```
@@ -160,7 +158,6 @@ Just one little niggle: according to the developer's guide, code like
         except IndexError: 
             raise ValueError, "Set is empty"
 ```
-
 
 
 
@@ -243,7 +240,7 @@ Here's a new patch, which explicitly checks whether the length of the list is 0 
 archive/issue_comments_088014.json:
 ```json
 {
-    "body": "Replying to [comment:6 davidloeffler]:\n> Here's a new patch ...\n\nThat works fine, so back to positive review.",
+    "body": "Replying to [comment:6 davidloeffler]:\n> Here's a new patch ...\n\n\nThat works fine, so back to positive review.",
     "created_at": "2010-06-28T17:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
@@ -254,6 +251,7 @@ archive/issue_comments_088014.json:
 
 Replying to [comment:6 davidloeffler]:
 > Here's a new patch ...
+
 
 That works fine, so back to positive review.
 

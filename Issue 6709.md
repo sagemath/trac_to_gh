@@ -127,7 +127,7 @@ Changing assignee from tbd to drkirkby.
 archive/issue_comments_054989.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n> I added \"32-bit\" to the title, as this ticket was created when Sage was only building 64-bit. \n\nI mean the ticket was opened when Sage was only building 32-bit. Now it will build 64-bit, but does not work very well in 64-bit mode.",
+    "body": "Replying to [comment:3 drkirkby]:\n> I added \"32-bit\" to the title, as this ticket was created when Sage was only building 64-bit. \n\n\nI mean the ticket was opened when Sage was only building 32-bit. Now it will build 64-bit, but does not work very well in 64-bit mode.",
     "created_at": "2011-04-02T12:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
@@ -138,6 +138,7 @@ archive/issue_comments_054989.json:
 
 Replying to [comment:3 drkirkby]:
 > I added "32-bit" to the title, as this ticket was created when Sage was only building 64-bit. 
+
 
 I mean the ticket was opened when Sage was only building 32-bit. Now it will build 64-bit, but does not work very well in 64-bit mode.
 

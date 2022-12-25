@@ -3,7 +3,7 @@
 archive/issues_007583.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  logix@foobar.franken.de\n\nFrom IRC:\n\n```\n07:34 < logix> help('sage.numerical.optimize.find_minimum_on_interval')\n07:35 < logix> shouldn't this say \"f\" instead of \"self\"?\n07:36 < mvngu> logix: Yes.\n07:36 < mvngu> logix: Can you create a ticket for it?\n07:37 < logix> mvngu: i don't have a trac account...\n07:38 < logix> i'd ask wstein, but i don't think it's worth the hassle just for \n               this small thing... so could you perhaps? :)\n07:38 < mvngu> Oh, I'll create a ticket then...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7583\n\n",
+    "body": "Assignee: mvngu\n\nCC:  logix@foobar.franken.de\n\nFrom IRC:\n\n```\n07:34 < logix> help('sage.numerical.optimize.find_minimum_on_interval')\n07:35 < logix> shouldn't this say \"f\" instead of \"self\"?\n07:36 < mvngu> logix: Yes.\n07:36 < mvngu> logix: Can you create a ticket for it?\n07:37 < logix> mvngu: i don't have a trac account...\n07:38 < logix> i'd ask wstein, but i don't think it's worth the hassle just for \n               this small thing... so could you perhaps? :)\n07:38 < mvngu> Oh, I'll create a ticket then...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7583\n\n",
     "created_at": "2009-12-02T15:40:56Z",
     "labels": [
         "component: documentation",
@@ -33,7 +33,6 @@ From IRC:
                this small thing... so could you perhaps? :)
 07:38 < mvngu> Oh, I'll create a ticket then...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7583
 

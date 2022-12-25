@@ -112,7 +112,7 @@ I haven't made the changes Robert suggested, but I wanted to get an updated patc
 archive/issue_comments_068399.json:
 ```json
 {
-    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
@@ -126,7 +126,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -192,7 +191,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068403.json:
 ```json
 {
-    "body": "Apply:\n\n\n```\n7883_ideals.patch\n7883_fixes.patch\n```\n\n\nProbably will not pass doctests unless you also apply the patches on #8333 and #8334.",
+    "body": "Apply:\n\n```\n7883_ideals.patch\n7883_fixes.patch\n```\n\nProbably will not pass doctests unless you also apply the patches on #8333 and #8334.",
     "created_at": "2010-09-19T13:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
@@ -203,12 +202,10 @@ archive/issue_comments_068403.json:
 
 Apply:
 
-
 ```
 7883_ideals.patch
 7883_fixes.patch
 ```
-
 
 Probably will not pass doctests unless you also apply the patches on #8333 and #8334.
 

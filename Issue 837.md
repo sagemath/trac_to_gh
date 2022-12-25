@@ -3,7 +3,7 @@
 archive/issues_000837.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis violates the principle of least surprise, at least for me:\n\n\n```\nsage: x = -2.0\nsage: x.abs()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'abs'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/837\n\n",
+    "body": "Assignee: somebody\n\nThis violates the principle of least surprise, at least for me:\n\n```\nsage: x = -2.0\nsage: x.abs()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'abs'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/837\n\n",
     "created_at": "2007-10-07T15:22:26Z",
     "labels": [
         "component: basic arithmetic"
@@ -19,7 +19,6 @@ Assignee: somebody
 
 This violates the principle of least surprise, at least for me:
 
-
 ```
 sage: x = -2.0
 sage: x.abs()
@@ -30,7 +29,6 @@ sage: x.abs()
 
 <type 'exceptions.AttributeError'>: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'abs'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/837

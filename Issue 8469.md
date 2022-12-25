@@ -71,7 +71,7 @@ Looks good and builds fine. Nice job!
 archive/issue_comments_076149.json:
 ```json
 {
-    "body": "Two comments: \n* In this tutorial, euler_phi(n) is called several times. The whole security of RSA lies in the fact that euler_phi takes a long time if you don't know the factorization. I'd suggest using a variable:\n\n\n```\nphi = (p-1)*(q-1)\n```\n\n\nWhen I've taught about RSA, I've used big primes:\n\n\n```\np = next_prime(randint(10^100,10^101))\nq = next_prime(randint(10^100,10^101))\n```\n\n\nand euler_phi would take for ever, of course. If this is reasonable to you, I'll be glad to write a patch, of course.\n\n* A missing space was generating a minor problem with latex. I attach a patch only for that, waiting for your opinions on the first item.",
+    "body": "Two comments: \n* In this tutorial, euler_phi(n) is called several times. The whole security of RSA lies in the fact that euler_phi takes a long time if you don't know the factorization. I'd suggest using a variable:\n\n```\nphi = (p-1)*(q-1)\n```\n\nWhen I've taught about RSA, I've used big primes:\n\n```\np = next_prime(randint(10^100,10^101))\nq = next_prime(randint(10^100,10^101))\n```\n\nand euler_phi would take for ever, of course. If this is reasonable to you, I'll be glad to write a patch, of course.\n\n* A missing space was generating a minor problem with latex. I attach a patch only for that, waiting for your opinions on the first item.",
     "created_at": "2010-05-12T15:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -83,20 +83,16 @@ archive/issue_comments_076149.json:
 Two comments: 
 * In this tutorial, euler_phi(n) is called several times. The whole security of RSA lies in the fact that euler_phi takes a long time if you don't know the factorization. I'd suggest using a variable:
 
-
 ```
 phi = (p-1)*(q-1)
 ```
 
-
 When I've taught about RSA, I've used big primes:
-
 
 ```
 p = next_prime(randint(10^100,10^101))
 q = next_prime(randint(10^100,10^101))
 ```
-
 
 and euler_phi would take for ever, of course. If this is reasonable to you, I'll be glad to write a patch, of course.
 
@@ -127,7 +123,7 @@ Attachment [trac_8469_add_a_space.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_076151.json:
 ```json
 {
-    "body": "Replying to [comment:5 pang]:\n> If this is reasonable to you, I'll be glad to write a patch, of course.\n\nThat would be nice. Thank you.\n\n\n\n\n\n>  * A missing space was generating a minor problem with latex. I attach a patch only for that\n\nYour patch looks OK to me.\n\n\n\nAlso, could you put your real name in the \"Reviewer(s):\" field? That way, it makes it easier to credit you for your contribution.",
+    "body": "Replying to [comment:5 pang]:\n> If this is reasonable to you, I'll be glad to write a patch, of course.\n\n\nThat would be nice. Thank you.\n\n\n\n\n\n>  * A missing space was generating a minor problem with latex. I attach a patch only for that\n\n\nYour patch looks OK to me.\n\n\n\nAlso, could you put your real name in the \"Reviewer(s):\" field? That way, it makes it easier to credit you for your contribution.",
     "created_at": "2010-05-15T04:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -139,6 +135,7 @@ archive/issue_comments_076151.json:
 Replying to [comment:5 pang]:
 > If this is reasonable to you, I'll be glad to write a patch, of course.
 
+
 That would be nice. Thank you.
 
 
@@ -146,6 +143,7 @@ That would be nice. Thank you.
 
 
 >  * A missing space was generating a minor problem with latex. I attach a patch only for that
+
 
 Your patch looks OK to me.
 
@@ -220,7 +218,7 @@ based on Sage 4.5.2.rc0
 archive/issue_comments_076155.json:
 ```json
 {
-    "body": "Attachment [trac_8469-review-rebased.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-review-rebased.patch) by mvngu created at 2010-08-03 12:13:50\n\nWhen applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush \nadding trac_8469-rsa.patch to series file\napplying trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8469-rsa.patch\n```\n\nI have rebased my patch against Sage 4.5.2.rc0 in order to resolve the above failure.\n\n\n\nThe content of pang's patch [attachment:trac_8469_review_final.patch] is mostly OK, but the way the patch itself is structured is frowned upon. From the way it looks, I guess that the patch was put together by concatenating many patches together into one file. That's not how you should put patches together. Use Mercurial queue to concatenate patches into one patch. I have done this and uploaded an updated version of pang's patch, which also fixes some typos found in his original patch. For reference, here are the fixed typos:\n\n```diff\n--- a/doc/en/thematic_tutorials/numtheory_rsa.rst\n+++ b/doc/en/thematic_tutorials/numtheory_rsa.rst\n@@ -295,8 +295,8 @@\n pseudo-random integer uniformly distributed within the closed interval\n `[0, n-1]`.  \n \n-We can compute the value `\\varphi(n)` calling the sage function\n-``euler_phi(n)``, but for arbitrary large prime numbers `p` and `q`,\n+We can compute the value `\\varphi(n)` by calling the sage function\n+``euler_phi(n)``, but for arbitrarily large prime numbers `p` and `q`,\n this can take an enormous amount of time. Indeed, the private key\n can be quickly deduced from the public key once you know `\\varphi(n)`,\n so it is an important part of the security of the RSA cryptosystem that\n```\n\nPang's updated patch and the typo fixes are all rolled into one patch. See the ticket description for instructions on applying the relevant patches.\n\n\n\nFor ticket to be closed, the following must happen:\n\n1. Someone needs to sign off on [attachment:trac_8469-rsa.patch]. This is my patch, so it requires a reviewer other than myself.\n2. Someone needs to sign off on [attachment:trac_8469-review-rebased.patch]. This is pang's original patch together with some typo fixes by me. I'm happy with pang's content. But someone other than myself needs to go over the fixes I included in this updated patch.",
+    "body": "Attachment [trac_8469-review-rebased.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-review-rebased.patch) by mvngu created at 2010-08-03 12:13:50\n\nWhen applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush \nadding trac_8469-rsa.patch to series file\napplying trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8469-rsa.patch\n```\nI have rebased my patch against Sage 4.5.2.rc0 in order to resolve the above failure.\n\n\n\nThe content of pang's patch [attachment:trac_8469_review_final.patch] is mostly OK, but the way the patch itself is structured is frowned upon. From the way it looks, I guess that the patch was put together by concatenating many patches together into one file. That's not how you should put patches together. Use Mercurial queue to concatenate patches into one patch. I have done this and uploaded an updated version of pang's patch, which also fixes some typos found in his original patch. For reference, here are the fixed typos:\n\n```diff\n--- a/doc/en/thematic_tutorials/numtheory_rsa.rst\n+++ b/doc/en/thematic_tutorials/numtheory_rsa.rst\n@@ -295,8 +295,8 @@\n pseudo-random integer uniformly distributed within the closed interval\n `[0, n-1]`.  \n \n-We can compute the value `\\varphi(n)` calling the sage function\n-``euler_phi(n)``, but for arbitrary large prime numbers `p` and `q`,\n+We can compute the value `\\varphi(n)` by calling the sage function\n+``euler_phi(n)``, but for arbitrarily large prime numbers `p` and `q`,\n this can take an enormous amount of time. Indeed, the private key\n can be quickly deduced from the public key once you know `\\varphi(n)`,\n so it is an important part of the security of the RSA cryptosystem that\n```\nPang's updated patch and the typo fixes are all rolled into one patch. See the ticket description for instructions on applying the relevant patches.\n\n\n\nFor ticket to be closed, the following must happen:\n\n1. Someone needs to sign off on [attachment:trac_8469-rsa.patch]. This is my patch, so it requires a reviewer other than myself.\n2. Someone needs to sign off on [attachment:trac_8469-review-rebased.patch]. This is pang's original patch together with some typo fixes by me. I'm happy with pang's content. But someone other than myself needs to go over the fixes I included in this updated patch.",
     "created_at": "2010-08-03T12:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -244,7 +242,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8469-rsa.patch
 ```
-
 I have rebased my patch against Sage 4.5.2.rc0 in order to resolve the above failure.
 
 
@@ -266,7 +263,6 @@ The content of pang's patch [attachment:trac_8469_review_final.patch] is mostly 
  can be quickly deduced from the public key once you know `\varphi(n)`,
  so it is an important part of the security of the RSA cryptosystem that
 ```
-
 Pang's updated patch and the typo fixes are all rolled into one patch. See the ticket description for instructions on applying the relevant patches.
 
 
@@ -303,7 +299,7 @@ Apply trac_8469-rsa.patch, trac_8469-review-rebased.patch
 archive/issue_comments_076157.json:
 ```json
 {
-    "body": "I suspect that this patch needs to be rebased.  When I tried to apply [attachment:trac_8469-rsa.patch] to sage-4.7.rc3 I got\n\n\n\n```\nsage: hg_sage.apply(\"/home/mariah/trac_8469-rsa.patch\")\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg import   \"/home/mariah/trac_8469-rsa.patch\"\napplying /home/mariah/trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 16\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\nabort: patch failed to apply\nsage:\n```\n",
+    "body": "I suspect that this patch needs to be rebased.  When I tried to apply [attachment:trac_8469-rsa.patch] to sage-4.7.rc3 I got\n\n\n```\nsage: hg_sage.apply(\"/home/mariah/trac_8469-rsa.patch\")\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc3-x86_64-Linux-core2-fc-review-8469/devel/sage\" && hg import   \"/home/mariah/trac_8469-rsa.patch\"\napplying /home/mariah/trac_8469-rsa.patch\npatching file doc/en/thematic_tutorials/index.rst\nHunk #1 FAILED at 16\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/thematic_tutorials/index.rst.rej\nabort: patch failed to apply\nsage:\n```",
     "created_at": "2011-05-23T20:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
@@ -313,7 +309,6 @@ archive/issue_comments_076157.json:
 ```
 
 I suspect that this patch needs to be rebased.  When I tried to apply [attachment:trac_8469-rsa.patch] to sage-4.7.rc3 I got
-
 
 
 ```
@@ -328,7 +323,6 @@ Hunk #1 FAILED at 16
 abort: patch failed to apply
 sage:
 ```
-
 
 
 

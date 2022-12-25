@@ -3,7 +3,7 @@
 archive/issues_005843.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @mwhansen\n\nKeywords: race condition, cached_method, cache\n\nConsider the following class (simplified from a real life example, after 3 hours of heisenbug debugging):\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n\n\nThe reason is that x.f and y.f, and all other instances of bla share the same cached_method object.\n\n```\nsage: x.f is y.f\nTrue\nsage: x.f is x.__class__.f\nTrue\n```\n\n\nand the _instance field is set to the latest instance for which this method has been queried:\n\n```\nsage: yf = y.f\nsage: yf._instance is y\nTrue\nsage: x.f\nCached version of <function f at 0xb532d84>\nsage: yf._instance is y\nFalse\nsage: yf._instance is x\nTrue\n```\n\n\nMost of the time things work well, but there can be race conditions, as in the example above.\n\nNicolas and Florent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5843\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @mwhansen\n\nKeywords: race condition, cached_method, cache\n\nConsider the following class (simplified from a real life example, after 3 hours of heisenbug debugging):\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n\nThe reason is that x.f and y.f, and all other instances of bla share the same cached_method object.\n\n```\nsage: x.f is y.f\nTrue\nsage: x.f is x.__class__.f\nTrue\n```\n\nand the _instance field is set to the latest instance for which this method has been queried:\n\n```\nsage: yf = y.f\nsage: yf._instance is y\nTrue\nsage: x.f\nCached version of <function f at 0xb532d84>\nsage: yf._instance is y\nFalse\nsage: yf._instance is x\nTrue\n```\n\nMost of the time things work well, but there can be race conditions, as in the example above.\n\nNicolas and Florent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5843\n\n",
     "created_at": "2009-04-21T08:43:49Z",
     "labels": [
         "component: misc",
@@ -35,7 +35,6 @@ class bla:
         return self.value
 ```
 
-
 The method f ignores its input, and should return self.value:
 
 ```
@@ -47,14 +46,12 @@ sage: y.f(None)
 2
 ```
 
-
 Then, y.f(x.f) should ignore the inner x.f and return 2. It does not:
 
 ```
 sage: sage: y.f(x.f)
 1
 ```
-
 
 The reason is that x.f and y.f, and all other instances of bla share the same cached_method object.
 
@@ -64,7 +61,6 @@ True
 sage: x.f is x.__class__.f
 True
 ```
-
 
 and the _instance field is set to the latest instance for which this method has been queried:
 
@@ -79,7 +75,6 @@ False
 sage: yf._instance is x
 True
 ```
-
 
 Most of the time things work well, but there can be race conditions, as in the example above.
 
@@ -175,7 +170,7 @@ Using a function/closure would also handle the caching (and I added a comment in
 archive/issue_comments_045857.json:
 ```json
 {
-    "body": "Excellent patch (I couldn't figure out how to fix this, glad you did), but there doesn't seem to be a test for the main problem:\n\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n",
+    "body": "Excellent patch (I couldn't figure out how to fix this, glad you did), but there doesn't seem to be a test for the main problem:\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```",
     "created_at": "2010-01-20T11:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
@@ -186,7 +181,6 @@ archive/issue_comments_045857.json:
 
 Excellent patch (I couldn't figure out how to fix this, glad you did), but there doesn't seem to be a test for the main problem:
 
-
 ```
 class bla:
     def __init__(self, value):
@@ -196,7 +190,6 @@ class bla:
     def f(self, x):
         return self.value
 ```
-
 
 The method f ignores its input, and should return self.value:
 
@@ -209,14 +202,12 @@ sage: y.f(None)
 2
 ```
 
-
 Then, y.f(x.f) should ignore the inner x.f and return 2. It does not:
 
 ```
 sage: sage: y.f(x.f)
 1
 ```
-
 
 
 

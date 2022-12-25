@@ -472,7 +472,7 @@ archive/issue_events_002437.json:
 archive/issue_comments_005388.json:
 ```json
 {
-    "body": "I get the following on 2.10.3.alpha0\n\n```\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg import   \"/home/mhansen/.sage/temp/sage/15288/tmp_2.patch\"\napplying /home/mhansen/.sage/temp/sage/15288/tmp_2.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 FAILED at 3035\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "I get the following on 2.10.3.alpha0\n\n```\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg import   \"/home/mhansen/.sage/temp/sage/15288/tmp_2.patch\"\napplying /home/mhansen/.sage/temp/sage/15288/tmp_2.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 FAILED at 3035\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-02-27T18:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
@@ -493,7 +493,6 @@ Hunk #1 FAILED at 3035
 1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 

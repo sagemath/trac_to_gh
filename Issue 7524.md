@@ -3,7 +3,7 @@
 archive/issues_007524.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @novoselt @jasongrout\n\nNotice that the frame axes are shown when using \"show\", but are missing when using \"save\"\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y')                \n(x, y)\nsage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))\nsage: a.show()\nsage: a.save('test.png')\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7524\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @novoselt @jasongrout\n\nNotice that the frame axes are shown when using \"show\", but are missing when using \"save\"\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y')                \n(x, y)\nsage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))\nsage: a.show()\nsage: a.save('test.png')\n```\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7524\n\n",
     "created_at": "2009-11-24T08:28:25Z",
     "labels": [
         "component: graphics",
@@ -22,7 +22,6 @@ CC:  @novoselt @jasongrout
 
 Notice that the frame axes are shown when using "show", but are missing when using "save"
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -32,7 +31,6 @@ sage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))
 sage: a.show()
 sage: a.save('test.png')
 ```
-
 | Sage Version 4.2.1, Release Date: 2009-11-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 

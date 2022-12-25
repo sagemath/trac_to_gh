@@ -3,7 +3,7 @@
 archive/issues_005640.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n          \t\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
+    "body": "Assignee: @williamstein\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n          \t\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
     "created_at": "2009-03-30T03:16:35Z",
     "labels": [
         "component: graphics",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 This sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:
 
-
 ```
                         cmap -- the name of
                         a predefined colormap, a list of colors
@@ -28,7 +27,6 @@ This sentence, which is in the help for contour_plot, should also be in the help
                         Type: import matplotlib.cm; matplotlib.cm.datad.keys()
                         for available colormap names.
 ```
-
 
 It should also be in the output here too:
 
@@ -44,7 +42,6 @@ The allowed options for MatrixPlot defined by a 1 x 1 data grid are:
                         matplotlib Colormap.
     zorder         The layer level in which to draw                     
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5640
 
@@ -131,7 +128,7 @@ Changing status from new to assigned.
 archive/issue_comments_043974.json:
 ```json
 {
-    "body": "Some hunk failures when applied against Sage 4.1.alpha0:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5640/trac_5640.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5640/trac_5640.patch\nLoading: [.....]\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg import   \"/home/mvngu/.sage/temp/sage.math.washington.edu/23662/tmp_1.patch\"\napplying /home/mvngu/.sage/temp/sage.math.washington.edu/23662/tmp_1.patch\npatching file sage/plot/contour_plot.py\nHunk #2 FAILED at 76\nHunk #3 FAILED at 84\nHunk #5 FAILED at 147\nHunk #6 FAILED at 223\nHunk #7 FAILED at 266\nHunk #8 FAILED at 287\nHunk #9 FAILED at 405\n7 out of 9 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/density_plot.py\nHunk #2 FAILED at 78\nHunk #3 FAILED at 86\nHunk #4 FAILED at 121\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/density_plot.py.rej\npatching file sage/plot/matrix_plot.py\nHunk #2 FAILED at 81\nHunk #4 FAILED at 135\n2 out of 4 hunks FAILED -- saving rejects to file sage/plot/matrix_plot.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Some hunk failures when applied against Sage 4.1.alpha0:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5640/trac_5640.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5640/trac_5640.patch\nLoading: [.....]\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage\" && hg import   \"/home/mvngu/.sage/temp/sage.math.washington.edu/23662/tmp_1.patch\"\napplying /home/mvngu/.sage/temp/sage.math.washington.edu/23662/tmp_1.patch\npatching file sage/plot/contour_plot.py\nHunk #2 FAILED at 76\nHunk #3 FAILED at 84\nHunk #5 FAILED at 147\nHunk #6 FAILED at 223\nHunk #7 FAILED at 266\nHunk #8 FAILED at 287\nHunk #9 FAILED at 405\n7 out of 9 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/density_plot.py\nHunk #2 FAILED at 78\nHunk #3 FAILED at 86\nHunk #4 FAILED at 121\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/density_plot.py.rej\npatching file sage/plot/matrix_plot.py\nHunk #2 FAILED at 81\nHunk #4 FAILED at 135\n2 out of 4 hunks FAILED -- saving rejects to file sage/plot/matrix_plot.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-06-24T22:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
@@ -170,7 +167,6 @@ Hunk #4 FAILED at 135
 2 out of 4 hunks FAILED -- saving rejects to file sage/plot/matrix_plot.py.rej
 abort: patch failed to apply
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002848.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  justin\n\nJustin Walker reported:\n\n```\n     sage -t  devel/sage/sage/misc/prandom.py\n     File \"/Users/tmp/sage-3.0.alpha2/tmp/prandom.py\", line 241:\n         sage: [gauss(0, 100) for i in range(3)]\n     Expected:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718097]\n     Got:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718115] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2848\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  justin\n\nJustin Walker reported:\n\n```\n     sage -t  devel/sage/sage/misc/prandom.py\n     File \"/Users/tmp/sage-3.0.alpha2/tmp/prandom.py\", line 241:\n         sage: [gauss(0, 100) for i in range(3)]\n     Expected:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718097]\n     Got:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718115] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2848\n\n",
     "created_at": "2008-04-07T19:49:36Z",
     "labels": [
         "component: doctest coverage",
@@ -32,7 +32,6 @@ Justin Walker reported:
      Got:
          [24.916051749154448, -62.992720615792727, -8.1993122536718115] 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2848
 

@@ -49,7 +49,7 @@ Attachment [trac_6968_vector_times_matrix.patch](tarball://root/attachments/some
 archive/issue_comments_057542.json:
 ```json
 {
-    "body": "for the record:\n\nbefore:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True)\nsage: time p = v*m\nCPU times: user 2.26 s, sys: 0.00 s, total: 2.26 s\nWall time: 2.26 s \n```\n\n\nafter:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True) \nsage: time p = v*m \nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n```\n",
+    "body": "for the record:\n\nbefore:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True)\nsage: time p = v*m\nCPU times: user 2.26 s, sys: 0.00 s, total: 2.26 s\nWall time: 2.26 s \n```\n\nafter:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True) \nsage: time p = v*m \nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n```",
     "created_at": "2009-09-20T20:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ CPU times: user 2.26 s, sys: 0.00 s, total: 2.26 s
 Wall time: 2.26 s 
 ```
 
-
 after:
 
 ```
@@ -80,7 +79,6 @@ sage: time p = v*m
 CPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s
 Wall time: 0.21 s
 ```
-
 
 
 

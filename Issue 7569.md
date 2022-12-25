@@ -162,7 +162,7 @@ Nathann
 archive/issue_comments_064279.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n> I agree, but I did not know how to comment a random generator.... How would you do that ? ;-)\n> \n> Nathann\n\nThere are several ways, e.g.\n\n```\nsage: v = G.random_vertex()\nsage: v in G\nsage: G.has_vertex(v)\nTrue\n```\n\netc.\nYou can also do\n\n```\nsage: G.random_edge(labels=False)\n(...,...)\nsage: G.random_edge(labels=True)\n(...,...,...)\n```\n",
+    "body": "Replying to [comment:6 ncohen]:\n> I agree, but I did not know how to comment a random generator.... How would you do that ? ;-)\n> \n> Nathann\n\n\nThere are several ways, e.g.\n\n```\nsage: v = G.random_vertex()\nsage: v in G\nsage: G.has_vertex(v)\nTrue\n```\netc.\nYou can also do\n\n```\nsage: G.random_edge(labels=False)\n(...,...)\nsage: G.random_edge(labels=True)\n(...,...,...)\n```",
     "created_at": "2010-03-04T17:06:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
@@ -176,6 +176,7 @@ Replying to [comment:6 ncohen]:
 > 
 > Nathann
 
+
 There are several ways, e.g.
 
 ```
@@ -184,7 +185,6 @@ sage: v in G
 sage: G.has_vertex(v)
 True
 ```
-
 etc.
 You can also do
 
@@ -194,7 +194,6 @@ sage: G.random_edge(labels=False)
 sage: G.random_edge(labels=True)
 (...,...,...)
 ```
-
 
 
 

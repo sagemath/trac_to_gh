@@ -286,7 +286,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085330.json:
 ```json
 {
-    "body": "Replying to [comment:7 jdemeyer]:\n> SPKG.txt needs to be updated to mention this ticket.\n\ndone.",
+    "body": "Replying to [comment:7 jdemeyer]:\n> SPKG.txt needs to be updated to mention this ticket.\n\n\ndone.",
     "created_at": "2011-05-19T11:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9154",
     "type": "issue_comment",
@@ -297,6 +297,7 @@ archive/issue_comments_085330.json:
 
 Replying to [comment:7 jdemeyer]:
 > SPKG.txt needs to be updated to mention this ticket.
+
 
 done.
 
@@ -381,7 +382,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_085335.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> Where is the spkg?\n> \n> The requested URL `/home/dima/boehm_gc-7.1.p7.spkg` was not found on this server.\n\nMea culpa. Fixed the URL.",
+    "body": "Replying to [comment:11 jdemeyer]:\n> Where is the spkg?\n> \n> The requested URL `/home/dima/boehm_gc-7.1.p7.spkg` was not found on this server.\n\n\nMea culpa. Fixed the URL.",
     "created_at": "2011-05-24T09:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9154",
     "type": "issue_comment",
@@ -394,6 +395,7 @@ Replying to [comment:11 jdemeyer]:
 > Where is the spkg?
 > 
 > The requested URL `/home/dima/boehm_gc-7.1.p7.spkg` was not found on this server.
+
 
 Mea culpa. Fixed the URL.
 

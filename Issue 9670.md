@@ -3,7 +3,7 @@
 archive/issues_009670.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kohel @pelegm pang\n\nCurrently, this file is pretty woeful.\n\n```\nprobability/random_variable.py: 3% (1 of 29)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9670\n\n",
+    "body": "Assignee: mvngu\n\nCC:  kohel @pelegm pang\n\nCurrently, this file is pretty woeful.\n\n```\nprobability/random_variable.py: 3% (1 of 29)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9670\n\n",
     "created_at": "2010-08-02T19:55:09Z",
     "labels": [
         "component: documentation"
@@ -24,7 +24,6 @@ Currently, this file is pretty woeful.
 ```
 probability/random_variable.py: 3% (1 of 29)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9670
 
@@ -95,7 +94,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_093771.json:
 ```json
 {
-    "body": "This file is a great example of \"if it isn't tested, it's totally broken!\"  I've never used any of this code before just now when I grad student walked into my office and asked how to use it.  He (fortunately) couldn't even get started because typing `DiscreteProbabilitySpace?` in the notebook provides absolutely no help at all (strangely, in the command line, it does).   So I looked at the code and came up with the first trivial example:\n\n\n```\nsage: n=6; P = dict([(i,1/n) for i in [1..n]])\nsage: X = DiscreteProbabilitySpace(P.keys(), P)\nsage: X\nDiscrete probability space defined by {1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6: 1/6}\nsage: X.expectation()\n0.166666666666667\n```\n\n\nLiterally, the first thing I tried came out completely wrong!  That's sure as hell not the expectation, which should be sum i*1/n = n*(n+1)/2/n = (n+1)/2 = 7/2.    \n\nI then looked at the code for expectation.  It's obviously got not test (and don't worry kcrisman -- you didn't add any), and the code itself is just wrong:\n\n```\n    def expectation(self):\n        r\"\"\"\n        The expectation of the discrete random variable, namely\n        `\\sum_{x \\in S} p(x) X[x]`, where `X` = self and\n        `S` is the probability space of `X`.\n        \"\"\"\n        E = 0\n        Omega = self.probability_space()\n        for x in self._function.keys():\n            E += Omega(x) * self(x)\n        return E\n```\n\n\nI don't know why it does Omega=..., since self.probability_space() is self is True.\nI don't know why this doesn't use a single list comprehension line.  \n\nHere self._function is the dictionary: `{1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6: 1/6`}.\nSo the code should be:\n\n```\ndef expectation(self):\n    return sum(x*self(x) for x in self._function.keys())\n```\n\nright?  \n\nIndeed,\n\n```\nsage: self=X;  sum(x*self(x) for x in self._function.keys())\n3.50000000000000\n```\n\n\nBut that said, what's up with the floating point numbers?  Shouldn't the answer be exact?\n\n```\nsage: type(self(1))\n<type 'sage.rings.real_mpfr.RealNumber'>\n```\n\n\nThere is a way to deal with this:\n\n```\nsage: X = DiscreteProbabilitySpace(P.keys(), P, codomain=QQ)\nsage: self=X;  sum(x*self(x) for x in self._function.keys())\n7/2\n```\n\nBut shouldn't the default codomain depend on the dictionary P?   It should take the values and find a common parent for them (e.g., using Sequence), then take the fraction field of that.  \n\nIn defense of the original code, David K. wrote it before Sequence existed, and we were just figuring out how to use Python at the time.... and didn't know if Sage would have more than 3 users. \n\nAnyway, this code as is scary and needs massive, massive reworking.  \n\nAnd since I'm reporting a specific bug, I am changing this to a defect.",
+    "body": "This file is a great example of \"if it isn't tested, it's totally broken!\"  I've never used any of this code before just now when I grad student walked into my office and asked how to use it.  He (fortunately) couldn't even get started because typing `DiscreteProbabilitySpace?` in the notebook provides absolutely no help at all (strangely, in the command line, it does).   So I looked at the code and came up with the first trivial example:\n\n```\nsage: n=6; P = dict([(i,1/n) for i in [1..n]])\nsage: X = DiscreteProbabilitySpace(P.keys(), P)\nsage: X\nDiscrete probability space defined by {1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6: 1/6}\nsage: X.expectation()\n0.166666666666667\n```\n\nLiterally, the first thing I tried came out completely wrong!  That's sure as hell not the expectation, which should be sum i*1/n = n*(n+1)/2/n = (n+1)/2 = 7/2.    \n\nI then looked at the code for expectation.  It's obviously got not test (and don't worry kcrisman -- you didn't add any), and the code itself is just wrong:\n\n```\n    def expectation(self):\n        r\"\"\"\n        The expectation of the discrete random variable, namely\n        `\\sum_{x \\in S} p(x) X[x]`, where `X` = self and\n        `S` is the probability space of `X`.\n        \"\"\"\n        E = 0\n        Omega = self.probability_space()\n        for x in self._function.keys():\n            E += Omega(x) * self(x)\n        return E\n```\n\nI don't know why it does Omega=..., since self.probability_space() is self is True.\nI don't know why this doesn't use a single list comprehension line.  \n\nHere self._function is the dictionary: `{1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6: 1/6`}.\nSo the code should be:\n\n```\ndef expectation(self):\n    return sum(x*self(x) for x in self._function.keys())\n```\nright?  \n\nIndeed,\n\n```\nsage: self=X;  sum(x*self(x) for x in self._function.keys())\n3.50000000000000\n```\n\nBut that said, what's up with the floating point numbers?  Shouldn't the answer be exact?\n\n```\nsage: type(self(1))\n<type 'sage.rings.real_mpfr.RealNumber'>\n```\n\nThere is a way to deal with this:\n\n```\nsage: X = DiscreteProbabilitySpace(P.keys(), P, codomain=QQ)\nsage: self=X;  sum(x*self(x) for x in self._function.keys())\n7/2\n```\nBut shouldn't the default codomain depend on the dictionary P?   It should take the values and find a common parent for them (e.g., using Sequence), then take the fraction field of that.  \n\nIn defense of the original code, David K. wrote it before Sequence existed, and we were just figuring out how to use Python at the time.... and didn't know if Sage would have more than 3 users. \n\nAnyway, this code as is scary and needs massive, massive reworking.  \n\nAnd since I'm reporting a specific bug, I am changing this to a defect.",
     "created_at": "2012-01-26T19:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -106,7 +105,6 @@ archive/issue_comments_093771.json:
 
 This file is a great example of "if it isn't tested, it's totally broken!"  I've never used any of this code before just now when I grad student walked into my office and asked how to use it.  He (fortunately) couldn't even get started because typing `DiscreteProbabilitySpace?` in the notebook provides absolutely no help at all (strangely, in the command line, it does).   So I looked at the code and came up with the first trivial example:
 
-
 ```
 sage: n=6; P = dict([(i,1/n) for i in [1..n]])
 sage: X = DiscreteProbabilitySpace(P.keys(), P)
@@ -115,7 +113,6 @@ Discrete probability space defined by {1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6
 sage: X.expectation()
 0.166666666666667
 ```
-
 
 Literally, the first thing I tried came out completely wrong!  That's sure as hell not the expectation, which should be sum i*1/n = n*(n+1)/2/n = (n+1)/2 = 7/2.    
 
@@ -135,7 +132,6 @@ I then looked at the code for expectation.  It's obviously got not test (and don
         return E
 ```
 
-
 I don't know why it does Omega=..., since self.probability_space() is self is True.
 I don't know why this doesn't use a single list comprehension line.  
 
@@ -146,7 +142,6 @@ So the code should be:
 def expectation(self):
     return sum(x*self(x) for x in self._function.keys())
 ```
-
 right?  
 
 Indeed,
@@ -156,14 +151,12 @@ sage: self=X;  sum(x*self(x) for x in self._function.keys())
 3.50000000000000
 ```
 
-
 But that said, what's up with the floating point numbers?  Shouldn't the answer be exact?
 
 ```
 sage: type(self(1))
 <type 'sage.rings.real_mpfr.RealNumber'>
 ```
-
 
 There is a way to deal with this:
 
@@ -172,7 +165,6 @@ sage: X = DiscreteProbabilitySpace(P.keys(), P, codomain=QQ)
 sage: self=X;  sum(x*self(x) for x in self._function.keys())
 7/2
 ```
-
 But shouldn't the default codomain depend on the dictionary P?   It should take the values and find a common parent for them (e.g., using Sequence), then take the fraction field of that.  
 
 In defense of the original code, David K. wrote it before Sequence existed, and we were just figuring out how to use Python at the time.... and didn't know if Sage would have more than 3 users. 
@@ -188,7 +180,7 @@ And since I'm reporting a specific bug, I am changing this to a defect.
 archive/issue_comments_093772.json:
 ```json
 {
-    "body": "I agree the code (among the first I wrote) should be improved or rewritten.\n\nAlso note that \"discrete\" should be \"finite\" -- I never implemented any code  for infinite discrete probability spaces and the finiteness of X a rather heavy assumption.\n\nThat said, despite the lack of documentation, I assert that the above output  is correct.  The idea of the discrete or finite probability spaces is that  the underlying set S of X can be anything:\n\n\n```\nsage: n = 6 sage: S = list('abcdef') \nsage: P = dict([(S[i],1/n) for i in [1..n]]) \nsage: X = DiscreteProbabilitySpace(S, P) \nsage: X.expectation() \n0.166666666666667\n```\n\n\nIt so happens that a probability function IS a random variable so that  one can ask for its expectation.  Thus probability space inherits from  random variables which generalize them.\n\nWith S so defined, it should be clear that it certainly doesn't make  sense to form \\sum_{x \\in S} x p(x), since S need not be contained in  a module over the reals for which this sum makes sense.  Rather for a  probability space, the expectation is \\sum p(x)<sup>2.</sup>\n\nFor reasons of avoiding coefficient blowup in the rationals, the default  uses a real ring. This is a design decision which is perhaps questionable, but avoids problems with undergraduate teaching. If you want the  probability space with value ring in the rationals, then explicitly set  the codomain:\n\n\n```\nsage: X = DiscreteProbabilitySpace(S, P, codomain = QQ) \nsage: X.expectation() \n1/6\n```\n\n\nTo get the random variable you intended, you need to first create the  probability space as above, then define the random variable with respect  to this:\n\n\n```\nsage: f = dict([(S[i],i+1) for i in range(n)]) \nsage: F = DiscreteRandomVariable(X,f) \nsage: F.expectation() \n3.50000000000000\n```\n\n\nAgain, for exact values, set the codomain:\n\n\n```\nsage: F = DiscreteRandomVariable(X,f,codomain = QQ) \nsage: F.expectation() \n7/2\n```\n\n\nThis two-step creation for a random variable is a bit awkward  if all you want is the uniform probability function. Since this  occurs quite often in practice (for a finite probability space), it might be practical to have a shortcut which defines the  uniform probability space by default.  In that case the syntax  might be changed from (X,f,codomain) to (f,X,codomain), or  without change, just letting X be a list or finite set and  setting up the uniform probability on it.  This is NOT implemented, but would be a more intuitive construction for what you intended:\n\n\n```\nsage: S = list('abcdef') \nsage: F = DiscreteRandomVariable(S,dict([(S[i],i+1) for i in range(n)])) \nsage: X = F.probability_space(); X \nDiscrete probability space defined by {'a': 1/6, 'c': 1/6, 'b': 1/6, 'e': 1/6, 'd': 1/6, 'f': 1/6}\n```\n\n\nAt the time of writing this (and maybe still true) there was no class of finite sets and morphisms of sets, which would provide  a more natural input to the constructors for probability space  and random variables.  It would be a cleaner construction to  have the codomain attached to the function f or probability  function p, and have some general mechanism for checking that  the domains of f and p agree and that codomain of f is a module  over the codomain of p. Python dictionaries were the closest  I could come (without implementing a category of sets) to the  datastructure for morphism of sets.\n\nCurrently the domain of a random variable is assumed to be some  real ring or subring but vector-valued random variables would  make sense in a number of settings.",
+    "body": "I agree the code (among the first I wrote) should be improved or rewritten.\n\nAlso note that \"discrete\" should be \"finite\" -- I never implemented any code  for infinite discrete probability spaces and the finiteness of X a rather heavy assumption.\n\nThat said, despite the lack of documentation, I assert that the above output  is correct.  The idea of the discrete or finite probability spaces is that  the underlying set S of X can be anything:\n\n```\nsage: n = 6 sage: S = list('abcdef') \nsage: P = dict([(S[i],1/n) for i in [1..n]]) \nsage: X = DiscreteProbabilitySpace(S, P) \nsage: X.expectation() \n0.166666666666667\n```\n\nIt so happens that a probability function IS a random variable so that  one can ask for its expectation.  Thus probability space inherits from  random variables which generalize them.\n\nWith S so defined, it should be clear that it certainly doesn't make  sense to form \\sum_{x \\in S} x p(x), since S need not be contained in  a module over the reals for which this sum makes sense.  Rather for a  probability space, the expectation is \\sum p(x)<sup>2.</sup>\n\nFor reasons of avoiding coefficient blowup in the rationals, the default  uses a real ring. This is a design decision which is perhaps questionable, but avoids problems with undergraduate teaching. If you want the  probability space with value ring in the rationals, then explicitly set  the codomain:\n\n```\nsage: X = DiscreteProbabilitySpace(S, P, codomain = QQ) \nsage: X.expectation() \n1/6\n```\n\nTo get the random variable you intended, you need to first create the  probability space as above, then define the random variable with respect  to this:\n\n```\nsage: f = dict([(S[i],i+1) for i in range(n)]) \nsage: F = DiscreteRandomVariable(X,f) \nsage: F.expectation() \n3.50000000000000\n```\n\nAgain, for exact values, set the codomain:\n\n```\nsage: F = DiscreteRandomVariable(X,f,codomain = QQ) \nsage: F.expectation() \n7/2\n```\n\nThis two-step creation for a random variable is a bit awkward  if all you want is the uniform probability function. Since this  occurs quite often in practice (for a finite probability space), it might be practical to have a shortcut which defines the  uniform probability space by default.  In that case the syntax  might be changed from (X,f,codomain) to (f,X,codomain), or  without change, just letting X be a list or finite set and  setting up the uniform probability on it.  This is NOT implemented, but would be a more intuitive construction for what you intended:\n\n```\nsage: S = list('abcdef') \nsage: F = DiscreteRandomVariable(S,dict([(S[i],i+1) for i in range(n)])) \nsage: X = F.probability_space(); X \nDiscrete probability space defined by {'a': 1/6, 'c': 1/6, 'b': 1/6, 'e': 1/6, 'd': 1/6, 'f': 1/6}\n```\n\nAt the time of writing this (and maybe still true) there was no class of finite sets and morphisms of sets, which would provide  a more natural input to the constructors for probability space  and random variables.  It would be a cleaner construction to  have the codomain attached to the function f or probability  function p, and have some general mechanism for checking that  the domains of f and p agree and that codomain of f is a module  over the codomain of p. Python dictionaries were the closest  I could come (without implementing a category of sets) to the  datastructure for morphism of sets.\n\nCurrently the domain of a random variable is assumed to be some  real ring or subring but vector-valued random variables would  make sense in a number of settings.",
     "created_at": "2012-01-26T22:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -203,7 +195,6 @@ Also note that "discrete" should be "finite" -- I never implemented any code  fo
 
 That said, despite the lack of documentation, I assert that the above output  is correct.  The idea of the discrete or finite probability spaces is that  the underlying set S of X can be anything:
 
-
 ```
 sage: n = 6 sage: S = list('abcdef') 
 sage: P = dict([(S[i],1/n) for i in [1..n]]) 
@@ -212,13 +203,11 @@ sage: X.expectation()
 0.166666666666667
 ```
 
-
 It so happens that a probability function IS a random variable so that  one can ask for its expectation.  Thus probability space inherits from  random variables which generalize them.
 
 With S so defined, it should be clear that it certainly doesn't make  sense to form \sum_{x \in S} x p(x), since S need not be contained in  a module over the reals for which this sum makes sense.  Rather for a  probability space, the expectation is \sum p(x)<sup>2.</sup>
 
 For reasons of avoiding coefficient blowup in the rationals, the default  uses a real ring. This is a design decision which is perhaps questionable, but avoids problems with undergraduate teaching. If you want the  probability space with value ring in the rationals, then explicitly set  the codomain:
-
 
 ```
 sage: X = DiscreteProbabilitySpace(S, P, codomain = QQ) 
@@ -226,9 +215,7 @@ sage: X.expectation()
 1/6
 ```
 
-
 To get the random variable you intended, you need to first create the  probability space as above, then define the random variable with respect  to this:
-
 
 ```
 sage: f = dict([(S[i],i+1) for i in range(n)]) 
@@ -237,9 +224,7 @@ sage: F.expectation()
 3.50000000000000
 ```
 
-
 Again, for exact values, set the codomain:
-
 
 ```
 sage: F = DiscreteRandomVariable(X,f,codomain = QQ) 
@@ -247,9 +232,7 @@ sage: F.expectation()
 7/2
 ```
 
-
 This two-step creation for a random variable is a bit awkward  if all you want is the uniform probability function. Since this  occurs quite often in practice (for a finite probability space), it might be practical to have a shortcut which defines the  uniform probability space by default.  In that case the syntax  might be changed from (X,f,codomain) to (f,X,codomain), or  without change, just letting X be a list or finite set and  setting up the uniform probability on it.  This is NOT implemented, but would be a more intuitive construction for what you intended:
-
 
 ```
 sage: S = list('abcdef') 
@@ -257,7 +240,6 @@ sage: F = DiscreteRandomVariable(S,dict([(S[i],i+1) for i in range(n)]))
 sage: X = F.probability_space(); X 
 Discrete probability space defined by {'a': 1/6, 'c': 1/6, 'b': 1/6, 'e': 1/6, 'd': 1/6, 'f': 1/6}
 ```
-
 
 At the time of writing this (and maybe still true) there was no class of finite sets and morphisms of sets, which would provide  a more natural input to the constructors for probability space  and random variables.  It would be a cleaner construction to  have the codomain attached to the function f or probability  function p, and have some general mechanism for checking that  the domains of f and p agree and that codomain of f is a module  over the codomain of p. Python dictionaries were the closest  I could come (without implementing a category of sets) to the  datastructure for morphism of sets.
 
@@ -324,7 +306,7 @@ Thanks for the discussion here.  I just want to point out that #10770 fell afoul
 archive/issue_comments_093776.json:
 ```json
 {
-    "body": "Some remarks from Tvrtko Tadic, a UW grad student in probability:\n\n```\nI don't think discrete probability\nspace needs to have an expectation (as a function).\nIt could be\nfor example that a kid gets an apple with probability 1/2,\nand a orange with probability 1/2. We can't sum\nhalf an apple and half an orange.\n\nSo I don't think the class DiscreteProbabilitySpace should\nhave an expectation method at all.\nIt could be that somebody started an expectation\nmethod in the wrong class and the forgot about it.\n\nI tried the expectation for DiscreteRandomVariable, and it works\nfine. (Random variables take values in real numbers,\nand the expectation is defined for them not for\nprobability spaces.)\n\nEXAMPLE (DICE):\n\nP=dict([(i,1/6) for i in [1..6]])\nOmega=[1..6]\n\nPS=DiscreteProbabilitySpace(Omega,P)\n\nf=dict([(i,i) for i in [1..6]])\nX=DiscreteRandomVariable(PS,f)\n\nX.expectation()# (it should be 7/2)\nX.variance() # (it should be 35/12)\n\nIt works!\n\nI will take a look at the other packages Sage has\nfor probability (and related areas) that you mentioned.\n\nBest,\nTvrtko\n\n---\n\n> Thanks - the original author of the code posted a long message to that\n> ticket -- please look again.\nI see, I still think that the expectation function\nin the class probability space is confusing, it\nwill only confuse people.\n\nI have also noticed that in these classes\nyou can't add  add or multiply random variables\neither by another random variable or by an number.\nAll of these operations give a random variable,\nand it seems that this could easily be done.\n\nI could, maybe do something like this for the final project,\nmake my class by adding new methods\nto the one existing\nand then we could see\nwhat could be added to the class in Sage.\n\n>Mind if I post your remarks there?\nYou can post my remarks.\n```\n",
+    "body": "Some remarks from Tvrtko Tadic, a UW grad student in probability:\n\n```\nI don't think discrete probability\nspace needs to have an expectation (as a function).\nIt could be\nfor example that a kid gets an apple with probability 1/2,\nand a orange with probability 1/2. We can't sum\nhalf an apple and half an orange.\n\nSo I don't think the class DiscreteProbabilitySpace should\nhave an expectation method at all.\nIt could be that somebody started an expectation\nmethod in the wrong class and the forgot about it.\n\nI tried the expectation for DiscreteRandomVariable, and it works\nfine. (Random variables take values in real numbers,\nand the expectation is defined for them not for\nprobability spaces.)\n\nEXAMPLE (DICE):\n\nP=dict([(i,1/6) for i in [1..6]])\nOmega=[1..6]\n\nPS=DiscreteProbabilitySpace(Omega,P)\n\nf=dict([(i,i) for i in [1..6]])\nX=DiscreteRandomVariable(PS,f)\n\nX.expectation()# (it should be 7/2)\nX.variance() # (it should be 35/12)\n\nIt works!\n\nI will take a look at the other packages Sage has\nfor probability (and related areas) that you mentioned.\n\nBest,\nTvrtko\n\n---\n\n> Thanks - the original author of the code posted a long message to that\n> ticket -- please look again.\nI see, I still think that the expectation function\nin the class probability space is confusing, it\nwill only confuse people.\n\nI have also noticed that in these classes\nyou can't add  add or multiply random variables\neither by another random variable or by an number.\nAll of these operations give a random variable,\nand it seems that this could easily be done.\n\nI could, maybe do something like this for the final project,\nmake my class by adding new methods\nto the one existing\nand then we could see\nwhat could be added to the class in Sage.\n\n>Mind if I post your remarks there?\nYou can post my remarks.\n```",
     "created_at": "2012-01-27T05:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -400,7 +382,6 @@ You can post my remarks.
 
 
 
-
 ---
 
 archive/issue_comments_093777.json:
@@ -444,7 +425,7 @@ similar computations.
 archive/issue_comments_093778.json:
 ```json
 {
-    "body": "Kohel's examples above are a mess.  Here's something that actually works:\n\n```\nsage: n=6\nsage: S = list('abcdef')\nsage: P = dict([(S[i-1],1/n) for i in [1..n]]) \nsage: X = DiscreteProbabilitySpace(S, P)\nsage: X.expectation() \n0.166666666666667\nsage: f = dict([(S[i],i+1) for i in range(n)]) \nsage: F = DiscreteRandomVariable(X,f) \nsage: F.expectation() \n3.50000000000000\n```\n",
+    "body": "Kohel's examples above are a mess.  Here's something that actually works:\n\n```\nsage: n=6\nsage: S = list('abcdef')\nsage: P = dict([(S[i-1],1/n) for i in [1..n]]) \nsage: X = DiscreteProbabilitySpace(S, P)\nsage: X.expectation() \n0.166666666666667\nsage: f = dict([(S[i],i+1) for i in range(n)]) \nsage: F = DiscreteRandomVariable(X,f) \nsage: F.expectation() \n3.50000000000000\n```",
     "created_at": "2012-02-09T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9670",
     "type": "issue_comment",
@@ -467,7 +448,6 @@ sage: F = DiscreteRandomVariable(X,f)
 sage: F.expectation() 
 3.50000000000000
 ```
-
 
 
 

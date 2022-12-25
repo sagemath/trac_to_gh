@@ -3,7 +3,7 @@
 archive/issues_008444.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: univariate polynomial ring coercion\n\nAt [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:\n\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.51171875\n6673 0.12890625\n8785 0.12890625\n10897 0.12890625\n13009 0.12890625\n15121 0.12890625\n17233 0.12890625\n19345 0.12890625\n21457 0.12890625\n23569 0.12890625\n25681 0.12890625\n27793 0.12890625\n29905 0.12890625\n32017 0.12890625\n34129 0.12890625\n36241 0.12890625\n38353 0.12890625\n40465 0.12890625\n42577 0.12890625\n44689 0.12890625\n46801 0.12890625\n48913 0.12890625\n```\n\nThis is with sage 4.3.3 on sage.math.\n\nSo, the first 6673 everything is good. Then, after 2112 rounds there is a leak of (if I did not miscompute) 135168 Byte.\n\nThis does not occur for multivariate rings:\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8444\n\n",
+    "body": "Assignee: tbd\n\nKeywords: univariate polynomial ring coercion\n\nAt [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.51171875\n6673 0.12890625\n8785 0.12890625\n10897 0.12890625\n13009 0.12890625\n15121 0.12890625\n17233 0.12890625\n19345 0.12890625\n21457 0.12890625\n23569 0.12890625\n25681 0.12890625\n27793 0.12890625\n29905 0.12890625\n32017 0.12890625\n34129 0.12890625\n36241 0.12890625\n38353 0.12890625\n40465 0.12890625\n42577 0.12890625\n44689 0.12890625\n46801 0.12890625\n48913 0.12890625\n```\nThis is with sage 4.3.3 on sage.math.\n\nSo, the first 6673 everything is good. Then, after 2112 rounds there is a leak of (if I did not miscompute) 135168 Byte.\n\nThis does not occur for multivariate rings:\n\n```\nsage: R.<x,y> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8444\n\n",
     "created_at": "2010-03-05T12:41:29Z",
     "labels": [
         "component: memleak",
@@ -21,7 +21,6 @@ Assignee: tbd
 Keywords: univariate polynomial ring coercion
 
 At [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:
-
 
 ```
 sage: R.<x> = QQ[]
@@ -56,13 +55,11 @@ sage: for n in range(50000):
 46801 0.12890625
 48913 0.12890625
 ```
-
 This is with sage 4.3.3 on sage.math.
 
 So, the first 6673 everything is good. Then, after 2112 rounds there is a leak of (if I did not miscompute) 135168 Byte.
 
 This does not occur for multivariate rings:
-
 
 ```
 sage: R.<x,y> = QQ[]
@@ -76,7 +73,6 @@ sage: for n in range(50000):
 ....:
 0 1.5
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8444
 
@@ -205,7 +201,7 @@ Changing status from new to needs_review.
 archive/issue_comments_075793.json:
 ```json
 {
-    "body": "The attached patch seems to fix the memleak. I worked on top of 4.3.3; all tests pass with this patch, and the snippet in the ticket description goes through without extra allocations:\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:     \n0 1.6015625\nsage: \n```\n\n\nHere's the full commit log which explains the patch:\n\n#8444: fix memory leak due to dup call to `_sig_on` in the bottom part of `PariInstance.__call__`\n\nAt the bottom of `PariInstance.__call__` both `_sig_on` (first) and `_sig_str`\n(later) are used. In fact, both count as calls to `_sig_on` (actually `_sig_on` is\nequivalent to `_sig_str(NULL)`) and these are *not* reentrant, i.e. nesting is not\nsupported (anyway, there's only one implicit `_sig_off` in the call to new_gen).\n\nA double `_sig_on`, as defined in `interrupt.h`, is usually equivalent to a single\none -- however, for the pari library these macros are overrided as `_pari_sig_on`\n(defined in `misc.h` and `pari_err.h`) adding a call to pari's own error catching\nfunction.  Calling the `err_catch()` function twice without the corresponding\ncall to `err_leave()` results in a memory leak which is reported in #8444.\n\nThe patch is one-liner: removing the first `_sig_on` fixes the memory leak.\n\nNote: this line was added by changeset `10536:423520e7d069` as part of a large\neffort to add lots of missing calls to `_sig_on` in pari interface. However, I\nthink in this case it was just an oversight because the already existing call to\n`_sig_on` was only implicit in the call to `_sig_str`.",
+    "body": "The attached patch seems to fix the memleak. I worked on top of 4.3.3; all tests pass with this patch, and the snippet in the ticket description goes through without extra allocations:\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:     \n0 1.6015625\nsage: \n```\n\nHere's the full commit log which explains the patch:\n\n#8444: fix memory leak due to dup call to `_sig_on` in the bottom part of `PariInstance.__call__`\n\nAt the bottom of `PariInstance.__call__` both `_sig_on` (first) and `_sig_str`\n(later) are used. In fact, both count as calls to `_sig_on` (actually `_sig_on` is\nequivalent to `_sig_str(NULL)`) and these are *not* reentrant, i.e. nesting is not\nsupported (anyway, there's only one implicit `_sig_off` in the call to new_gen).\n\nA double `_sig_on`, as defined in `interrupt.h`, is usually equivalent to a single\none -- however, for the pari library these macros are overrided as `_pari_sig_on`\n(defined in `misc.h` and `pari_err.h`) adding a call to pari's own error catching\nfunction.  Calling the `err_catch()` function twice without the corresponding\ncall to `err_leave()` results in a memory leak which is reported in #8444.\n\nThe patch is one-liner: removing the first `_sig_on` fixes the memory leak.\n\nNote: this line was added by changeset `10536:423520e7d069` as part of a large\neffort to add lots of missing calls to `_sig_on` in pari interface. However, I\nthink in this case it was just an oversight because the already existing call to\n`_sig_on` was only implicit in the call to `_sig_str`.",
     "created_at": "2010-03-11T04:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
@@ -229,7 +225,6 @@ sage: for n in range(50000):
 0 1.6015625
 sage: 
 ```
-
 
 Here's the full commit log which explains the patch:
 

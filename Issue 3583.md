@@ -3,7 +3,7 @@
 archive/issues_003583.json:
 ```json
 {
-    "body": "Assignee: failure\n\nOn Debian 64-bit vmware:\n\n\n```\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2677:\n    sage: W.interrupt()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2681:\n    sage: W.check_comp()\nExpected:\n    ('e', None)\nGot:\n    ('w', Cell 0; in=factor(2^997-1), out=)\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_85\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_worksheet.py\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3583\n\n",
+    "body": "Assignee: failure\n\nOn Debian 64-bit vmware:\n\n```\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2677:\n    sage: W.interrupt()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2681:\n    sage: W.check_comp()\nExpected:\n    ('e', None)\nGot:\n    ('w', Cell 0; in=factor(2^997-1), out=)\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_85\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_worksheet.py\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3583\n\n",
     "created_at": "2008-07-07T15:19:22Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ archive/issues_003583.json:
 Assignee: failure
 
 On Debian 64-bit vmware:
-
 
 ```
 File "/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py", line 2677:
@@ -42,7 +41,6 @@ Got:
 ***Test Failed*** 2 failures.
 For whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_worksheet.py
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008224.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  @jhpalmieri @qed777\n\nKeywords: help\n\nThe following works :\n\n\n```\nsage: w = Word(range(10))\nsage: help(w)\n```\n\n\nbut this one :\n\n\n```\nsage: w = Word(lambda n:n)\nsage: w\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\n\nneither the following :\n\n\n```\nsage: from itertools import repeat\nsage: w = Word(repeat(4))\nsage: w\nword: 4444444444444444444444444444444444444444...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8224\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @jhpalmieri @qed777\n\nKeywords: help\n\nThe following works :\n\n```\nsage: w = Word(range(10))\nsage: help(w)\n```\n\nbut this one :\n\n```\nsage: w = Word(lambda n:n)\nsage: w\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\nneither the following :\n\n```\nsage: from itertools import repeat\nsage: w = Word(repeat(4))\nsage: w\nword: 4444444444444444444444444444444444444444...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8224\n\n",
     "created_at": "2010-02-09T22:51:52Z",
     "labels": [
         "component: documentation",
@@ -24,15 +24,12 @@ Keywords: help
 
 The following works :
 
-
 ```
 sage: w = Word(range(10))
 sage: help(w)
 ```
 
-
 but this one :
-
 
 ```
 sage: w = Word(lambda n:n)
@@ -54,9 +51,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: an integer is required
 ```
 
-
 neither the following :
-
 
 ```
 sage: from itertools import repeat
@@ -78,7 +73,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: an integer is required
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8224
 

@@ -3,7 +3,7 @@
 archive/issues_003752.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:\n>\n> Hi,\n>\n> I'm trying to use some GAP code in the Sage notebook, and the code has\n> many one-line comments in it (starting with #). I switched the\n> notebook to gap mode (using the dropdown menu) and then noticed that\n> in each cell only commands that appear before the first comment are\n> processed by GAP. The same happens in cells that start with %gap.\n>\n> Can someone perhaps verify this behaviour and/or suggest a fix? (I'm\n> using Sage 3.0.5, and the same behaviour seems to occur on\n> Sagenb.org.)\n\nYes, here's an example of this in the sage notebook text form (I made the triple {'s into double for this ticket): \n\n{{{\nUntitled\nsystem:gap\n\n\n{{id=112|\nPrint(2 + 2); # add numbers\nPrint(3 + 3); # add more numbers\n///\n\n4\n}}\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3752\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:\n>\n> Hi,\n>\n> I'm trying to use some GAP code in the Sage notebook, and the code has\n> many one-line comments in it (starting with #). I switched the\n> notebook to gap mode (using the dropdown menu) and then noticed that\n> in each cell only commands that appear before the first comment are\n> processed by GAP. The same happens in cells that start with %gap.\n>\n> Can someone perhaps verify this behaviour and/or suggest a fix? (I'm\n> using Sage 3.0.5, and the same behaviour seems to occur on\n> Sagenb.org.)\n\nYes, here's an example of this in the sage notebook text form (I made the triple {'s into double for this ticket): \n\n{{{\nUntitled\nsystem:gap\n\n\n{{id=112|\nPrint(2 + 2); # add numbers\nPrint(3 + 3); # add more numbers\n///\n\n4\n}}\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3752\n\n",
     "created_at": "2008-08-01T01:13:39Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_003752.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:
@@ -61,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3752
 archive/issue_comments_026603.json:
 ```json
 {
-    "body": "This problem can be fixed by adding the following lines at the start of the \neval method in the file interfaces/gap.py:\n\n\n```\n        # remove comments, replace newlines by space\n        x = \"\".join([(r[:r.find('#')] if r.find('#')!=-1 else r)+' ' \\\n                     for r in x.split('\\n')])\n```\n\n\n(This still needs to be tested on a variety of GAP input lines.)\n\nI also noticed that if the length of the string processed by GAP is more than ~103 characters, then no output is produced (although the GAP code seems to be evaluated correctly and any functions defined in the code works in subsequent notebook cells).\n\nHere is an example:\n\n\n```\n{{id=112|\n%gap\ntest := function()\nreturn \"make a long input string  (delete 1 char to see the output)\";\nend;\ntest();\n///\n}}\n```\n",
+    "body": "This problem can be fixed by adding the following lines at the start of the \neval method in the file interfaces/gap.py:\n\n```\n        # remove comments, replace newlines by space\n        x = \"\".join([(r[:r.find('#')] if r.find('#')!=-1 else r)+' ' \\\n                     for r in x.split('\\n')])\n```\n\n(This still needs to be tested on a variety of GAP input lines.)\n\nI also noticed that if the length of the string processed by GAP is more than ~103 characters, then no output is produced (although the GAP code seems to be evaluated correctly and any functions defined in the code works in subsequent notebook cells).\n\nHere is an example:\n\n```\n{{id=112|\n%gap\ntest := function()\nreturn \"make a long input string  (delete 1 char to see the output)\";\nend;\ntest();\n///\n}}\n```",
     "created_at": "2008-08-07T23:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
@@ -73,20 +72,17 @@ archive/issue_comments_026603.json:
 This problem can be fixed by adding the following lines at the start of the 
 eval method in the file interfaces/gap.py:
 
-
 ```
         # remove comments, replace newlines by space
         x = "".join([(r[:r.find('#')] if r.find('#')!=-1 else r)+' ' \
                      for r in x.split('\n')])
 ```
 
-
 (This still needs to be tested on a variety of GAP input lines.)
 
 I also noticed that if the length of the string processed by GAP is more than ~103 characters, then no output is produced (although the GAP code seems to be evaluated correctly and any functions defined in the code works in subsequent notebook cells).
 
 Here is an example:
-
 
 ```
 {{id=112|
@@ -98,7 +94,6 @@ test();
 ///
 }}
 ```
-
 
 
 

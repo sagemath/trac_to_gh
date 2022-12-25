@@ -3,7 +3,7 @@
 archive/issues_003746.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\n\n\n\n```\nwstein@iras:~/iras/build/sage-3.0.6.final>         ./sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 17221 Segmentation fault      /home/wstein/iras/build/sage-3.0.6.final/local/bin/python /home/wstein/iras/build/sage-3.0.6.final/tmp/.doctest_dist_factor.py >/tmp/tmpKoKDAX 2>/tmp/tmpz35sr7\n[DSage] Closed connection to localhost\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [25.0 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\nTotal time for all tests: 25.0 seconds\nwstein@iras:~/iras/build/sage-3.0.6.final> \n```\n\n\n\n```\nwstein@iras:~/iras/build/sage-3.0.6.final> uname -a\nLinux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux\n\ncpuinfo:\n...\nprocessor  : 3\nvendor     : GenuineIntel\narch       : IA-64\nfamily     : 32\nmodel      : 0\nrevision   : 7\narchrev    : 0\nfeatures   : branchlong, 16-byte atomic ops\ncpu number : 0\ncpu regs   : 4\ncpu MHz    : 1594.000675\nitc MHz    : 399.167296\nBogoMIPS   : 3186.68\nsiblings   : 2\nphysical id: 3\ncore id    : 1\nthread id  : 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3746\n\n",
+    "body": "Assignee: @yqiang\n\n\n\n```\nwstein@iras:~/iras/build/sage-3.0.6.final>         ./sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 17221 Segmentation fault      /home/wstein/iras/build/sage-3.0.6.final/local/bin/python /home/wstein/iras/build/sage-3.0.6.final/tmp/.doctest_dist_factor.py >/tmp/tmpKoKDAX 2>/tmp/tmpz35sr7\n[DSage] Closed connection to localhost\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [25.0 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\nTotal time for all tests: 25.0 seconds\nwstein@iras:~/iras/build/sage-3.0.6.final> \n```\n\n```\nwstein@iras:~/iras/build/sage-3.0.6.final> uname -a\nLinux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux\n\ncpuinfo:\n...\nprocessor  : 3\nvendor     : GenuineIntel\narch       : IA-64\nfamily     : 32\nmodel      : 0\nrevision   : 7\narchrev    : 0\nfeatures   : branchlong, 16-byte atomic ops\ncpu number : 0\ncpu regs   : 4\ncpu MHz    : 1594.000675\nitc MHz    : 399.167296\nBogoMIPS   : 3186.68\nsiblings   : 2\nphysical id: 3\ncore id    : 1\nthread id  : 0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3746\n\n",
     "created_at": "2008-07-30T13:36:06Z",
     "labels": [
         "component: dsage",
@@ -17,7 +17,6 @@ archive/issues_003746.json:
 }
 ```
 Assignee: @yqiang
-
 
 
 
@@ -38,8 +37,6 @@ The following tests failed:
 Total time for all tests: 25.0 seconds
 wstein@iras:~/iras/build/sage-3.0.6.final> 
 ```
-
-
 
 ```
 wstein@iras:~/iras/build/sage-3.0.6.final> uname -a
@@ -65,7 +62,6 @@ physical id: 3
 core id    : 1
 thread id  : 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3746
 
@@ -96,7 +92,7 @@ Changing priority from major to blocker.
 archive/issue_comments_026550.json:
 ```json
 {
-    "body": "This also happens on sage.math (opteron debian):\n\n```\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 19413 Segmentation fault      /home/was/build/sage-3.1.alpha0/local/bin/python /home/was/build/sage-3.1.alpha0/tmp/.doctest_dist_factor.py >/tmp/tmpPwlp8k 2>/tmp/tmpRTHU_D\n[DSage] Closed connection to localhost\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\t [25.5 s]\n```\n",
+    "body": "This also happens on sage.math (opteron debian):\n\n```\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 19413 Segmentation fault      /home/was/build/sage-3.1.alpha0/local/bin/python /home/was/build/sage-3.1.alpha0/tmp/.doctest_dist_factor.py >/tmp/tmpPwlp8k 2>/tmp/tmpRTHU_D\n[DSage] Closed connection to localhost\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\t [25.5 s]\n```",
     "created_at": "2008-08-02T18:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3746",
     "type": "issue_comment",
@@ -114,7 +110,6 @@ sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 194
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
 	 [25.5 s]
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_001222.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/numerical/test.py\nsage -t  devel/sage-main/sage/numerical/test.py\n**********************************************************************\nFile \"test.py\", line 4:\n    : from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[0]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    : from cvxopt.base import *\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so, 2): Symbol not found:\n__g95_ioparm\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n**********************************************************************\nFile \"test.py\", line 5:\n    : from cvxopt import umfpack\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n        from cvxopt import umfpack###line 5:\n    : from cvxopt import umfpack\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so, 2): Symbol not found:\n__g95_st_write_done\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so\n      Expected in: dynamic lookup\n\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_test.py\n         [13.2 s]\nexit code: 256\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1222\n\n",
+    "body": "Assignee: mabshoff\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/numerical/test.py\nsage -t  devel/sage-main/sage/numerical/test.py\n**********************************************************************\nFile \"test.py\", line 4:\n    : from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[0]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    : from cvxopt.base import *\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so, 2): Symbol not found:\n__g95_ioparm\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n**********************************************************************\nFile \"test.py\", line 5:\n    : from cvxopt import umfpack\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n        from cvxopt import umfpack###line 5:\n    : from cvxopt import umfpack\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so, 2): Symbol not found:\n__g95_st_write_done\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so\n      Expected in: dynamic lookup\n\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_test.py\n         [13.2 s]\nexit code: 256\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1222\n\n",
     "created_at": "2007-11-20T22:51:10Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_001222.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 michael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -
@@ -68,7 +67,6 @@ For whitespace errors, see the file .doctest_test.py
          [13.2 s]
 exit code: 256
 ```
-
 
 Cheers,
 
@@ -200,7 +198,7 @@ http://sage.math.washington.edu/home/jkantor/cvxopt-0.9.p3.spkg
 archive/issue_comments_007587.json:
 ```json
 {
-    "body": "Hmm, does cvxopt assume that ATLAS is installed now? On sage.math without ATLAS I now get:\n\n```\nUsing g95Traceback (most recent call last):\n  File \"setup.py\", line 56, in <module>\n    if os.path.exists(ATLAS_LIB_DIR+'/libatlas.a') or os.path.exists(ATLAS_LIB_DIR+'/libatlas.dylib') or os.path.exits(ATLAS_LIB_DIR+'/libatlas.so'):\nAttributeError: 'module' object has no attribute 'exits'\n```\n\nCheers,\n\nMichael",
+    "body": "Hmm, does cvxopt assume that ATLAS is installed now? On sage.math without ATLAS I now get:\n\n```\nUsing g95Traceback (most recent call last):\n  File \"setup.py\", line 56, in <module>\n    if os.path.exists(ATLAS_LIB_DIR+'/libatlas.a') or os.path.exists(ATLAS_LIB_DIR+'/libatlas.dylib') or os.path.exits(ATLAS_LIB_DIR+'/libatlas.so'):\nAttributeError: 'module' object has no attribute 'exits'\n```\nCheers,\n\nMichael",
     "created_at": "2007-11-27T13:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
@@ -217,7 +215,6 @@ Using g95Traceback (most recent call last):
     if os.path.exists(ATLAS_LIB_DIR+'/libatlas.a') or os.path.exists(ATLAS_LIB_DIR+'/libatlas.dylib') or os.path.exits(ATLAS_LIB_DIR+'/libatlas.so'):
 AttributeError: 'module' object has no attribute 'exits'
 ```
-
 Cheers,
 
 Michael

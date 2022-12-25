@@ -3,7 +3,7 @@
 archive/issues_006816.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
     "created_at": "2009-08-24T00:07:01Z",
     "labels": [
         "component: calculus",
@@ -22,7 +22,6 @@ CC:  @mwhansen
 
 Integration sometimes hangs in sage-4.1.1.
 
-
 ```
 flat:~ wstein$ sage
 ----------------------------------------------------------------------
@@ -32,7 +31,6 @@ sage: var('t,theta')
 sage: integrate(t * cos(-theta*t), (t,-oo,oo))
 [.. and it hangs forever ..]
 ```
-
 | Sage Version 4.1.1, Release Date: 2009-08-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 In fact, in Maxima what is happening is the following:
@@ -48,7 +46,6 @@ positive       <--- i type this.
 (%i7) 
 ```
 
-
 For some reason the question "Is  theta  positive, negative, or zero?" is not getting seen by pexpect as it should.  Argh!
 
 This works in Maxima:
@@ -60,7 +57,6 @@ This works in Maxima:
 (%o2)                                  0
 ```
 
-
 The same doesn't work in Sage though, which is very weird:
 
 ```
@@ -69,7 +65,6 @@ sage: var('t,theta')
 sage: assume(theta>0)
 sage: integrate(t * cos(-theta*t), (t,-oo,oo))
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6816
 
@@ -102,7 +97,7 @@ But it still hangs in Sage.  That is really strange.  Note that the indefinite i
 archive/issue_comments_056102.json:
 ```json
 {
-    "body": "This ticket is invalid.  \n\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t*cos(-theta*t),t,-oo,oo)\n0\n```\n\n\nIn fact, ANY sage integration attempted with the syntax provided by the originator of the ticket will fail!!!  That's because (for better or for worse) we don't have #1221 or #2787 in Sage.  But those tickets already exist.",
+    "body": "This ticket is invalid.  \n\n```\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t*cos(-theta*t),t,-oo,oo)\n0\n```\n\nIn fact, ANY sage integration attempted with the syntax provided by the originator of the ticket will fail!!!  That's because (for better or for worse) we don't have #1221 or #2787 in Sage.  But those tickets already exist.",
     "created_at": "2009-10-05T15:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
@@ -113,14 +108,12 @@ archive/issue_comments_056102.json:
 
 This ticket is invalid.  
 
-
 ```
 sage: var('t,theta')
 (t, theta)
 sage: integrate(t*cos(-theta*t),t,-oo,oo)
 0
 ```
-
 
 In fact, ANY sage integration attempted with the syntax provided by the originator of the ticket will fail!!!  That's because (for better or for worse) we don't have #1221 or #2787 in Sage.  But those tickets already exist.
 
@@ -293,7 +286,7 @@ Now that #7327 has been opened, one of these two is a duplicate.
 archive/issue_comments_056110.json:
 ```json
 {
-    "body": "Hmm...that code looks pretty long.  Why not just:\n\n\n```\nif 1<=len(v)<=3:\n    return integral(expression,*v)\n```\n\n\nand take care of all three cases in one swoop?\n\nAlso, it completely ignores the rest of the parameters in the function call, like algorithm, etc.",
+    "body": "Hmm...that code looks pretty long.  Why not just:\n\n```\nif 1<=len(v)<=3:\n    return integral(expression,*v)\n```\n\nand take care of all three cases in one swoop?\n\nAlso, it completely ignores the rest of the parameters in the function call, like algorithm, etc.",
     "created_at": "2009-10-28T01:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
@@ -304,12 +297,10 @@ archive/issue_comments_056110.json:
 
 Hmm...that code looks pretty long.  Why not just:
 
-
 ```
 if 1<=len(v)<=3:
     return integral(expression,*v)
 ```
-
 
 and take care of all three cases in one swoop?
 

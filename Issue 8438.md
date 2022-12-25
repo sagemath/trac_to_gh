@@ -3,7 +3,7 @@
 archive/issues_008438.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  nborie\n\nKeywords: skew partitions\n\n\n```\nsage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()\n         ###\n        #\n       ##\n       ##\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8438\n\n",
+    "body": "Assignee: @hivert\n\nCC:  nborie\n\nKeywords: skew partitions\n\n```\nsage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()\n         ###\n        #\n       ##\n       ##\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8438\n\n",
     "created_at": "2010-03-04T20:42:23Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +21,6 @@ CC:  nborie
 
 Keywords: skew partitions
 
-
 ```
 sage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()
          ###
@@ -29,7 +28,6 @@ sage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()
        ##
        ##
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8438
 
@@ -78,7 +76,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075625.json:
 ```json
 {
-    "body": "Can you improve that : \n\n\n```\nsage: S = SkewPartition(([6],[6])) \nsage: S.column_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: S.row_lengths()\n[0]\nsage: from_row_and_column_length([0],[0,0,0,0,0,0]) \n[[6], [6]] #perfect\n\nsage: S = SkewPartition(([1,1,1,1,1,1],[1,1,1,1,1,1]))\nsage: S.column_lengths()\n[0]\nsage: S.row_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\n...\nValueError: invalid skew partition\n```\n",
+    "body": "Can you improve that : \n\n```\nsage: S = SkewPartition(([6],[6])) \nsage: S.column_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: S.row_lengths()\n[0]\nsage: from_row_and_column_length([0],[0,0,0,0,0,0]) \n[[6], [6]] #perfect\n\nsage: S = SkewPartition(([1,1,1,1,1,1],[1,1,1,1,1,1]))\nsage: S.column_lengths()\n[0]\nsage: S.row_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\n...\nValueError: invalid skew partition\n```",
     "created_at": "2010-03-05T18:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
@@ -88,7 +86,6 @@ archive/issue_comments_075625.json:
 ```
 
 Can you improve that : 
-
 
 ```
 sage: S = SkewPartition(([6],[6])) 
@@ -111,7 +108,6 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: invalid skew partition
 ```
-
 
 
 
@@ -138,7 +134,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075627.json:
 ```json
 {
-    "body": "Sorry,\n\nI don't know which behaviour you want for the last example I gave...\n\nI ran : \n\n```\nsage: for i in range(10):\n....:     for S in SkewPartitions(i):\n....:         if S != from_row_and_column_length(S.row_lengths(),S.column_lengths()):\n....:             print S\n....:             \nsage:\n```\n\nThat works! For the example comming from my last comment... I don't know.\n\nOtherwise, the patch is correct (apply, test and doc.). I am not an expert with Skew Partitions...",
+    "body": "Sorry,\n\nI don't know which behaviour you want for the last example I gave...\n\nI ran : \n\n```\nsage: for i in range(10):\n....:     for S in SkewPartitions(i):\n....:         if S != from_row_and_column_length(S.row_lengths(),S.column_lengths()):\n....:             print S\n....:             \nsage:\n```\nThat works! For the example comming from my last comment... I don't know.\n\nOtherwise, the patch is correct (apply, test and doc.). I am not an expert with Skew Partitions...",
     "created_at": "2010-03-05T18:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
@@ -161,7 +157,6 @@ sage: for i in range(10):
 ....:             
 sage:
 ```
-
 That works! For the example comming from my last comment... I don't know.
 
 Otherwise, the patch is correct (apply, test and doc.). I am not an expert with Skew Partitions...
@@ -191,7 +186,7 @@ Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/a
 archive/issue_comments_075629.json:
 ```json
 {
-    "body": "Replying to [comment:2 nborie]:\n> Can you improve that : \n> \n\n```\nsage: S = SkewPartition(([1,1,1,1,1,1],[1,1,1,1,1,1]))\nsage: S.column_lengths()\n[0]\nsage: S.row_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\n...\nValueError: invalid skew partition\n```\n\nThe cases with 0 row and columns length are ambiguous (see the example in the doc). I now raise a proper error:\n\n```\nsage: sage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: row and column length must be positive\n```\n\nI re-uploaded the new patch ! Please review.",
+    "body": "Replying to [comment:2 nborie]:\n> Can you improve that : \n> \n\n{{{\nsage: S = SkewPartition(([1,1,1,1,1,1],[1,1,1,1,1,1]))\nsage: S.column_lengths()\n[0]\nsage: S.row_lengths()\n[0, 0, 0, 0, 0, 0]\nsage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n\n---\nValueError                                Traceback (most recent call last)\n...\n...\nValueError: invalid skew partition\n}}}\nThe cases with 0 row and columns length are ambiguous (see the example in the doc). I now raise a proper error:\n\n```\nsage: sage: from_row_and_column_length([0,0,0,0,0,0],[0]) \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: row and column length must be positive\n```\nI re-uploaded the new patch ! Please review.",
     "created_at": "2010-03-10T08:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
@@ -204,20 +199,20 @@ Replying to [comment:2 nborie]:
 > Can you improve that : 
 > 
 
-```
+{{{
 sage: S = SkewPartition(([1,1,1,1,1,1],[1,1,1,1,1,1]))
 sage: S.column_lengths()
 [0]
 sage: S.row_lengths()
 [0, 0, 0, 0, 0, 0]
 sage: from_row_and_column_length([0,0,0,0,0,0],[0]) 
----------------------------------------------------------------------------
+
+---
 ValueError                                Traceback (most recent call last)
 ...
 ...
 ValueError: invalid skew partition
-```
-
+}}}
 The cases with 0 row and columns length are ambiguous (see the example in the doc). I now raise a proper error:
 
 ```
@@ -227,7 +222,6 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: row and column length must be positive
 ```
-
 I re-uploaded the new patch ! Please review.
 
 

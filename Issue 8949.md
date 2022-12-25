@@ -3,7 +3,7 @@
 archive/issues_008949.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: import numpy\nsage: a = numpy.array([1,2])\nsage: type(a[0])\n<type 'numpy.int32'>\nsage: f(x) = x^2\nsage: f(a[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n./sage-4.4.2/<ipython console> in <module>()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__call__ (sage/symbolic/expression.cpp:15476)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/callable.pyc in _call_element_(self, _the_element, *args, **kwds)\n    454         d = dict(zip(map(repr, self.arguments()), args))\n    455         d.update(kwds)\n--> 456         return SR(_the_element.substitute(**d))\n    457\n    458\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:14850)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:10193)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent_old.so in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:3288)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce (sage/structure/parent.c:6970)()\n\nTypeError: no canonical coercion from <type 'numpy.int32'> to Callable function ring with arguments (x,)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8949\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n```\nsage: import numpy\nsage: a = numpy.array([1,2])\nsage: type(a[0])\n<type 'numpy.int32'>\nsage: f(x) = x^2\nsage: f(a[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n./sage-4.4.2/<ipython console> in <module>()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__call__ (sage/symbolic/expression.cpp:15476)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/callable.pyc in _call_element_(self, _the_element, *args, **kwds)\n    454         d = dict(zip(map(repr, self.arguments()), args))\n    455         d.update(kwds)\n--> 456         return SR(_the_element.substitute(**d))\n    457\n    458\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:14850)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:10193)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent_old.so in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:3288)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce (sage/structure/parent.c:6970)()\n\nTypeError: no canonical coercion from <type 'numpy.int32'> to Callable function ring with arguments (x,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8949\n\n",
     "created_at": "2010-05-11T08:18:24Z",
     "labels": [
         "component: symbolics",
@@ -19,7 +19,6 @@ archive/issues_008949.json:
 Assignee: @burcin
 
 CC:  @jasongrout
-
 
 ```
 sage: import numpy
@@ -51,7 +50,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: no canonical coercion from <type 'numpy.int32'> to Callable function ring with arguments (x,)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8949
@@ -272,7 +270,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082262.json:
 ```json
 {
-    "body": "Hello,\n\nI propose to close this as duplicates because of #18076. With the branch applied\n\n```\nsage: import numpy\nsage: cos(numpy.float('12'))\n0.8438539587324921\n```\n\nThough it is not perfect since the result is a Python float and not a numpy float.\n\nVincent",
+    "body": "Hello,\n\nI propose to close this as duplicates because of #18076. With the branch applied\n\n```\nsage: import numpy\nsage: cos(numpy.float('12'))\n0.8438539587324921\n```\nThough it is not perfect since the result is a Python float and not a numpy float.\n\nVincent",
     "created_at": "2015-03-28T12:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
@@ -290,7 +288,6 @@ sage: import numpy
 sage: cos(numpy.float('12'))
 0.8438539587324921
 ```
-
 Though it is not perfect since the result is a Python float and not a numpy float.
 
 Vincent

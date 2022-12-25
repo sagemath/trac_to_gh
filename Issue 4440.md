@@ -56,7 +56,7 @@ Michael
 archive/issue_comments_032574.json:
 ```json
 {
-    "body": "The restriction to 4 indentation levels is decidedly strange, given that the patch itself has a 6-deep indentation.  This can be written more elegantly:\n\n\n```\nvar indenting, id, tab;\nindenting = RegExp(\"\\n( *)\",\"g\");\nwhile(indenting.test(text[0])) {\n  id   = indexing.lastIndex;\n  tab  = RegExp.lastMatch.substring(1);\n}\nif( id == second_last_break && second_last_break != -1) {\n    get_cell(id).value = text[0] + tab + text[1]; \n    set_cursor_position(cell, position + tab.length);\n}\n```\n\n\nThe above code hasn't been tested, but should be a good start.",
+    "body": "The restriction to 4 indentation levels is decidedly strange, given that the patch itself has a 6-deep indentation.  This can be written more elegantly:\n\n```\nvar indenting, id, tab;\nindenting = RegExp(\"\\n( *)\",\"g\");\nwhile(indenting.test(text[0])) {\n  id   = indexing.lastIndex;\n  tab  = RegExp.lastMatch.substring(1);\n}\nif( id == second_last_break && second_last_break != -1) {\n    get_cell(id).value = text[0] + tab + text[1]; \n    set_cursor_position(cell, position + tab.length);\n}\n```\n\nThe above code hasn't been tested, but should be a good start.",
     "created_at": "2008-11-05T00:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4440",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ archive/issue_comments_032574.json:
 ```
 
 The restriction to 4 indentation levels is decidedly strange, given that the patch itself has a 6-deep indentation.  This can be written more elegantly:
-
 
 ```
 var indenting, id, tab;
@@ -80,7 +79,6 @@ if( id == second_last_break && second_last_break != -1) {
     set_cursor_position(cell, position + tab.length);
 }
 ```
-
 
 The above code hasn't been tested, but should be a good start.
 
@@ -128,7 +126,7 @@ Works not, but doesn't break Internet Explorer and Opera.
 archive/issue_comments_032577.json:
 ```json
 {
-    "body": "REVIEW\n\nThis is *REALLY* nice and *almost* works.  It has one bug, which is that if you enter a blank line, the auto-indent is off by one.  E.g., I got the following when I entered a blank line after the first print statement:\n\n```\nif True:\n    print \"hi\"\n    \n   print \"mom\"\n```\n\n\nI should have got either\n\n```\nif True:\n    print \"hi\"\n    \n    print \"mom\"\n```\n\nor \n\n```\nif True:\n    print \"hi\"\n\nprint \"mom\"\n```\n\n\nWhich is a design decision.  To be more like the Python/Ipython command line, one would get the latter.  To be more like an IDE, maybe the former.  I don't care which, just that the current behavior (which is neither) is buggy.\n\nThat said, if this bit rots forever that would be bad.  I would almost rather have the buggy patch than no patch at all, since even with the bug it's pretty nice functionality.\n\nIt would however by nice if there were a way to turn it off.  That will have to wait until Timothy Clemans user management features get in.",
+    "body": "REVIEW\n\nThis is *REALLY* nice and *almost* works.  It has one bug, which is that if you enter a blank line, the auto-indent is off by one.  E.g., I got the following when I entered a blank line after the first print statement:\n\n```\nif True:\n    print \"hi\"\n    \n   print \"mom\"\n```\n\nI should have got either\n\n```\nif True:\n    print \"hi\"\n    \n    print \"mom\"\n```\nor \n\n```\nif True:\n    print \"hi\"\n\nprint \"mom\"\n```\n\nWhich is a design decision.  To be more like the Python/Ipython command line, one would get the latter.  To be more like an IDE, maybe the former.  I don't care which, just that the current behavior (which is neither) is buggy.\n\nThat said, if this bit rots forever that would be bad.  I would almost rather have the buggy patch than no patch at all, since even with the bug it's pretty nice functionality.\n\nIt would however by nice if there were a way to turn it off.  That will have to wait until Timothy Clemans user management features get in.",
     "created_at": "2008-11-27T17:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4440",
     "type": "issue_comment",
@@ -148,7 +146,6 @@ if True:
    print "mom"
 ```
 
-
 I should have got either
 
 ```
@@ -157,7 +154,6 @@ if True:
     
     print "mom"
 ```
-
 or 
 
 ```
@@ -166,7 +162,6 @@ if True:
 
 print "mom"
 ```
-
 
 Which is a design decision.  To be more like the Python/Ipython command line, one would get the latter.  To be more like an IDE, maybe the former.  I don't care which, just that the current behavior (which is neither) is buggy.
 

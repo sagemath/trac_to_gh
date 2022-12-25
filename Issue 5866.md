@@ -182,7 +182,7 @@ archive/issue_events_013795.json:
 archive/issue_comments_046254.json:
 ```json
 {
-    "body": "I'll create a new ticket for this issue, but I thought it useful to add to this ticket. \n\nI tried to update freetype to the latest version (2.3.12), but the build fails with:\n\n\n```\nlibtool: link: (cd \"/export/home/drkirkby/32/sage-4.4.3/spkg/build/freetype-2.3.12/src/objs/.libs\" && rm \"libfreetype.so.6\" && ln -s \"libfreetype.so.6.4.0\" \"libfreetype.so.6\")\nlibfreetype.so.6: No such file or directory\nmake: *** [/export/home/drkirkby/32/sage-4.4.3/spkg/build/freetype-2.3.12/src/objs/libfreetype.la] Error 2\n\nreal    3m16.562s\nuser    2m54.021s\nsys     0m22.112s\nsage: An error occurred while installing freetype-2.3.12\n```\n\n\nChanging spkg-install to \n\n\n```\nif [ \"x`uname`\" != xSunOS ] ; then \n   GNUMAKE=${MAKE} ./configure --prefix=\"$SAGE_LOCAL\"\nelse\n  ./configure --prefix=\"$SAGE_LOCAL\"\nfi\n```\n\n\nallows the latest freetype to build on Solaris 10 on SPARC.",
+    "body": "I'll create a new ticket for this issue, but I thought it useful to add to this ticket. \n\nI tried to update freetype to the latest version (2.3.12), but the build fails with:\n\n```\nlibtool: link: (cd \"/export/home/drkirkby/32/sage-4.4.3/spkg/build/freetype-2.3.12/src/objs/.libs\" && rm \"libfreetype.so.6\" && ln -s \"libfreetype.so.6.4.0\" \"libfreetype.so.6\")\nlibfreetype.so.6: No such file or directory\nmake: *** [/export/home/drkirkby/32/sage-4.4.3/spkg/build/freetype-2.3.12/src/objs/libfreetype.la] Error 2\n\nreal    3m16.562s\nuser    2m54.021s\nsys     0m22.112s\nsage: An error occurred while installing freetype-2.3.12\n```\n\nChanging spkg-install to \n\n```\nif [ \"x`uname`\" != xSunOS ] ; then \n   GNUMAKE=${MAKE} ./configure --prefix=\"$SAGE_LOCAL\"\nelse\n  ./configure --prefix=\"$SAGE_LOCAL\"\nfi\n```\n\nallows the latest freetype to build on Solaris 10 on SPARC.",
     "created_at": "2010-06-10T07:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
@@ -195,7 +195,6 @@ I'll create a new ticket for this issue, but I thought it useful to add to this 
 
 I tried to update freetype to the latest version (2.3.12), but the build fails with:
 
-
 ```
 libtool: link: (cd "/export/home/drkirkby/32/sage-4.4.3/spkg/build/freetype-2.3.12/src/objs/.libs" && rm "libfreetype.so.6" && ln -s "libfreetype.so.6.4.0" "libfreetype.so.6")
 libfreetype.so.6: No such file or directory
@@ -207,9 +206,7 @@ sys     0m22.112s
 sage: An error occurred while installing freetype-2.3.12
 ```
 
-
 Changing spkg-install to 
-
 
 ```
 if [ "x`uname`" != xSunOS ] ; then 
@@ -218,7 +215,6 @@ else
   ./configure --prefix="$SAGE_LOCAL"
 fi
 ```
-
 
 allows the latest freetype to build on Solaris 10 on SPARC.
 

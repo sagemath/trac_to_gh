@@ -3,7 +3,7 @@
 archive/issues_008878.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: coercion, morphism\n\nIn #7420, it was discussed that the current coercion model is using depth first search to find for coercion paths between different parents, and that it would be better to use breath-first / Dijkstra to get a shortest coercion path. For example, we obtained once a coercion path of length 20 among symmetric functions.\n\nPatch under development on the Sage-Combinat server.\n\nNote: the following issue is probably related:\n\n```\nA = CombinatorialFreeModule(QQ, ZZ, prefix = \"A\")\nB = CombinatorialFreeModule(QQ, ZZ, prefix = \"B\")\nC = CombinatorialFreeModule(QQ, ZZ, prefix = \"C\")\nD = CombinatorialFreeModule(QQ, ZZ, prefix = \"D\")\n\ndef make_morph(X, Y):\n    X.module_morphism(Y.monomial).register_as_coercion()\n\nmake_morph(A,B)\nmake_morph(B,A)\n\nmake_morph(C,A)\n\nmake_morph(D,C)\n\nd = D.monomial(1)\n\nA(d)\nB(d)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8878\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: coercion, morphism\n\nIn #7420, it was discussed that the current coercion model is using depth first search to find for coercion paths between different parents, and that it would be better to use breath-first / Dijkstra to get a shortest coercion path. For example, we obtained once a coercion path of length 20 among symmetric functions.\n\nPatch under development on the Sage-Combinat server.\n\nNote: the following issue is probably related:\n\n```\nA = CombinatorialFreeModule(QQ, ZZ, prefix = \"A\")\nB = CombinatorialFreeModule(QQ, ZZ, prefix = \"B\")\nC = CombinatorialFreeModule(QQ, ZZ, prefix = \"C\")\nD = CombinatorialFreeModule(QQ, ZZ, prefix = \"D\")\n\ndef make_morph(X, Y):\n    X.module_morphism(Y.monomial).register_as_coercion()\n\nmake_morph(A,B)\nmake_morph(B,A)\n\nmake_morph(C,A)\n\nmake_morph(D,C)\n\nd = D.monomial(1)\n\nA(d)\nB(d)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8878\n\n",
     "created_at": "2010-05-04T23:35:06Z",
     "labels": [
         "component: coercion",
@@ -48,7 +48,6 @@ d = D.monomial(1)
 A(d)
 B(d)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8878
 

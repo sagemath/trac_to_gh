@@ -3,7 +3,7 @@
 archive/issues_004896.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\n\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
+    "body": "Assignee: @williamstein\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
     "created_at": "2008-12-31T02:33:36Z",
     "labels": [
         "component: interfaces",
@@ -24,14 +24,11 @@ Make it so all the following work:
 sage: magma(QQ['x,y'].0).sage()
 ```
 
-
 Note that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:
-
 
 ```
 sage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()
 ```
-
 after applying #4779.
 
 When the above loop runs for "a while" without crashing (after applying #4779), then this ticket can be closed.
@@ -258,7 +255,7 @@ Changing component from interfaces to interfaces: optional.
 archive/issue_comments_037051.json:
 ```json
 {
-    "body": "Got\n\n```\nMultivariate Polynomial Ring in x0, x1, x2, x3, x4, x5, x6, x7 over Ring of integers modulo 30768  File \"<string>\", line 1\n    Residue class ring of integers modulo Integer(30768)['x0, x1, x2, x3, x4, x5, x6, x7'.replace('$.', 'x').replace('.', '')](dict([ ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x2'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(17090) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x2'), Integer('0x0'), Integer('0x0') ), Integer(8615) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0') ), Integer(24187) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(5374) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(27378) ) ]))\n                ^\nSyntaxError: invalid syntax\n```\n\nand\n\n```\nUnivariate Polynomial Ring in x over Ring of integers modulo 11908  File \"<string>\", line 1\n    Residue class ring of integers modulo 11908['x'.replace('$.', 'x').replace('.', '')]([ 9823, 11770, 6616 ])\n                ^\nSyntaxError: invalid syntax\n```\n",
+    "body": "Got\n\n```\nMultivariate Polynomial Ring in x0, x1, x2, x3, x4, x5, x6, x7 over Ring of integers modulo 30768  File \"<string>\", line 1\n    Residue class ring of integers modulo Integer(30768)['x0, x1, x2, x3, x4, x5, x6, x7'.replace('$.', 'x').replace('.', '')](dict([ ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x2'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(17090) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x2'), Integer('0x0'), Integer('0x0') ), Integer(8615) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0') ), Integer(24187) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x1'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(5374) ), ( ( Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0'), Integer('0x0') ), Integer(27378) ) ]))\n                ^\nSyntaxError: invalid syntax\n```\nand\n\n```\nUnivariate Polynomial Ring in x over Ring of integers modulo 11908  File \"<string>\", line 1\n    Residue class ring of integers modulo 11908['x'.replace('$.', 'x').replace('.', '')]([ 9823, 11770, 6616 ])\n                ^\nSyntaxError: invalid syntax\n```",
     "created_at": "2018-06-23T08:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
@@ -275,7 +272,6 @@ Multivariate Polynomial Ring in x0, x1, x2, x3, x4, x5, x6, x7 over Ring of inte
                 ^
 SyntaxError: invalid syntax
 ```
-
 and
 
 ```
@@ -287,13 +283,12 @@ SyntaxError: invalid syntax
 
 
 
-
 ---
 
 archive/issue_comments_037052.json:
 ```json
 {
-    "body": "Comes from\n\n```\nsage: R=Zmod(137)\nsage: magma(R)\nResidue class ring of integers modulo 137\nsage: magma(R).sage()\n  File \"<string>\", line 1\n    Residue class ring of integers modulo Integer(137)\n                ^\nSyntaxError: invalid syntax\n```\n",
+    "body": "Comes from\n\n```\nsage: R=Zmod(137)\nsage: magma(R)\nResidue class ring of integers modulo 137\nsage: magma(R).sage()\n  File \"<string>\", line 1\n    Residue class ring of integers modulo Integer(137)\n                ^\nSyntaxError: invalid syntax\n```",
     "created_at": "2018-06-23T12:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
@@ -314,7 +309,6 @@ sage: magma(R).sage()
                 ^
 SyntaxError: invalid syntax
 ```
-
 
 
 

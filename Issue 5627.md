@@ -72,7 +72,7 @@ While fixing this, I also changed the TypeErrors to more appropriate ValueErrors
 archive/issue_comments_043848.json:
 ```json
 {
-    "body": "Here's a trivial observation on performance. Look at the line\n\n```\n247\t        for r in range(2,p):\n```\n\nWith the patch as is, on sage.math I get the following timings:\n\n```\n# BEFORE\nsage: p = 179424673\nsage: time quadratic_nonresidue(p)\nCPU times: user 9.07 s, sys: 4.37 s, total: 13.44 s\nWall time: 13.44 s\n5\nsage: timeit(\"quadratic_nonresidue(p)\")\n5 loops, best of 3: 19.3 s per loop\n```\n\nNow if I change the said line to\n\n```\n247\t        for r in xrange(2,p):\n```\n\nI get some performance improvement:\n\n```\n# AFTER\nsage: p = 179424673\nsage: time quadratic_nonresidue(p)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n5\nsage: timeit(\"quadratic_nonresidue(p)\")\n625 loops, best of 3: 36.6 \u00b5s per loop\n```\n\nHowever, in both cases whether we use `range()` or `xrange()`, if p is say 88462514817229869523, then I get the following error for `range()`:\n\n```\nsage: p = 88462514817229869523\nsage: quadratic_nonresidue(p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/14179/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/scratch/mvngu/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.pyc in quadratic_nonresidue(p)\n    245     ## Find the smallest non-residue mod p\n    246     try:\n--> 247         for r in range(2,p):\n    248             if legendre_symbol(r, p) == -1:\n    249                 return r\n\nTypeError: range() integer end argument expected, got sage.rings.integer.Integer.\n```\n\nAnd for `xrange()`, I get a similar error, but this time it's an `OverflowError`:\n\n```\nsage: p = 88462514817229869523\nsage: quadratic_nonresidue(p)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/14262/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/scratch/mvngu/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.pyc in quadratic_nonresidue(p)\n    245     ## Find the smallest non-residue mod p\n    246     try:\n--> 247         for r in xrange(2,p):\n    248             if legendre_symbol(r, p) == -1:\n    249                 return r\n\nOverflowError: long int too large to convert to int\n```\n",
+    "body": "Here's a trivial observation on performance. Look at the line\n\n```\n247\t        for r in range(2,p):\n```\nWith the patch as is, on sage.math I get the following timings:\n\n```\n# BEFORE\nsage: p = 179424673\nsage: time quadratic_nonresidue(p)\nCPU times: user 9.07 s, sys: 4.37 s, total: 13.44 s\nWall time: 13.44 s\n5\nsage: timeit(\"quadratic_nonresidue(p)\")\n5 loops, best of 3: 19.3 s per loop\n```\nNow if I change the said line to\n\n```\n247\t        for r in xrange(2,p):\n```\nI get some performance improvement:\n\n```\n# AFTER\nsage: p = 179424673\nsage: time quadratic_nonresidue(p)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n5\nsage: timeit(\"quadratic_nonresidue(p)\")\n625 loops, best of 3: 36.6 \u00b5s per loop\n```\nHowever, in both cases whether we use `range()` or `xrange()`, if p is say 88462514817229869523, then I get the following error for `range()`:\n\n```\nsage: p = 88462514817229869523\nsage: quadratic_nonresidue(p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/14179/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/scratch/mvngu/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.pyc in quadratic_nonresidue(p)\n    245     ## Find the smallest non-residue mod p\n    246     try:\n--> 247         for r in range(2,p):\n    248             if legendre_symbol(r, p) == -1:\n    249                 return r\n\nTypeError: range() integer end argument expected, got sage.rings.integer.Integer.\n```\nAnd for `xrange()`, I get a similar error, but this time it's an `OverflowError`:\n\n```\nsage: p = 88462514817229869523\nsage: quadratic_nonresidue(p)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/14262/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/scratch/mvngu/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.pyc in quadratic_nonresidue(p)\n    245     ## Find the smallest non-residue mod p\n    246     try:\n--> 247         for r in xrange(2,p):\n    248             if legendre_symbol(r, p) == -1:\n    249                 return r\n\nOverflowError: long int too large to convert to int\n```",
     "created_at": "2009-03-31T06:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ Here's a trivial observation on performance. Look at the line
 ```
 247	        for r in range(2,p):
 ```
-
 With the patch as is, on sage.math I get the following timings:
 
 ```
@@ -99,13 +98,11 @@ Wall time: 13.44 s
 sage: timeit("quadratic_nonresidue(p)")
 5 loops, best of 3: 19.3 s per loop
 ```
-
 Now if I change the said line to
 
 ```
 247	        for r in xrange(2,p):
 ```
-
 I get some performance improvement:
 
 ```
@@ -118,7 +115,6 @@ Wall time: 0.00 s
 sage: timeit("quadratic_nonresidue(p)")
 625 loops, best of 3: 36.6 µs per loop
 ```
-
 However, in both cases whether we use `range()` or `xrange()`, if p is say 88462514817229869523, then I get the following error for `range()`:
 
 ```
@@ -138,7 +134,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: range() integer end argument expected, got sage.rings.integer.Integer.
 ```
-
 And for `xrange()`, I get a similar error, but this time it's an `OverflowError`:
 
 ```
@@ -158,7 +153,6 @@ OverflowError                             Traceback (most recent call last)
 
 OverflowError: long int too large to convert to int
 ```
-
 
 
 
@@ -209,7 +203,7 @@ referee patch
 archive/issue_comments_043851.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch `quad-nonres.patch` applies OK against Sage 3.4.1.alpha0; all doctests passed with the options\n\n```\n-t -long\n```\n\nI'm also adding the patch `trac_5627-referee.patch` which adds another test case in addition to kcrisman's test case. This patch should be applied on top of kcrisman's patch. So positive review for kcrisman's patch. Only my patch needs to be reviewed.\n\n\n\nAs for my observation on performance improvement, I agree with kcrisman that the issue should definitely be addressed in another ticket. That issue should not prevent kcrisman's patch from being applied, since kcrisman's patch only deals with exception handling, adding a test case, and fixing a typo.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch `quad-nonres.patch` applies OK against Sage 3.4.1.alpha0; all doctests passed with the options\n\n```\n-t -long\n```\nI'm also adding the patch `trac_5627-referee.patch` which adds another test case in addition to kcrisman's test case. This patch should be applied on top of kcrisman's patch. So positive review for kcrisman's patch. Only my patch needs to be reviewed.\n\n\n\nAs for my observation on performance improvement, I agree with kcrisman that the issue should definitely be addressed in another ticket. That issue should not prevent kcrisman's patch from being applied, since kcrisman's patch only deals with exception handling, adding a test case, and fixing a typo.",
     "created_at": "2009-04-02T05:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -227,7 +221,6 @@ The patch `quad-nonres.patch` applies OK against Sage 3.4.1.alpha0; all doctests
 ```
 -t -long
 ```
-
 I'm also adding the patch `trac_5627-referee.patch` which adds another test case in addition to kcrisman's test case. This patch should be applied on top of kcrisman's patch. So positive review for kcrisman's patch. Only my patch needs to be reviewed.
 
 
@@ -316,7 +309,7 @@ Any comment from mvngu who did the original refereeing?
 archive/issue_comments_043855.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]: \n> Any comment from mvngu who did the original refereeing?\n\n\nIt looks like this ticket has reached a stage where it's more difficult to merge, as is the case with #545, although not as difficult. The original idea was to fix a typo and add some test cases. Since cremona now adds more quadratic forms stuff, I don't feel confident to review the technical maths content of his patch. Further enhancements should have been addressed in another ticket, where it would be easier to review and merge. Some quadratic forms experts to the rescue? :-)",
+    "body": "Replying to [comment:7 cremona]: \n> Any comment from mvngu who did the original refereeing?\n\n\n\nIt looks like this ticket has reached a stage where it's more difficult to merge, as is the case with #545, although not as difficult. The original idea was to fix a typo and add some test cases. Since cremona now adds more quadratic forms stuff, I don't feel confident to review the technical maths content of his patch. Further enhancements should have been addressed in another ticket, where it would be easier to review and merge. Some quadratic forms experts to the rescue? :-)",
     "created_at": "2009-04-17T02:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -327,6 +320,7 @@ archive/issue_comments_043855.json:
 
 Replying to [comment:7 cremona]: 
 > Any comment from mvngu who did the original refereeing?
+
 
 
 It looks like this ticket has reached a stage where it's more difficult to merge, as is the case with #545, although not as difficult. The original idea was to fix a typo and add some test cases. Since cremona now adds more quadratic forms stuff, I don't feel confident to review the technical maths content of his patch. Further enhancements should have been addressed in another ticket, where it would be easier to review and merge. Some quadratic forms experts to the rescue? :-)
@@ -382,7 +376,7 @@ Michael
 archive/issue_comments_043858.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n> John,\n> \n> can you please open another patch for the issues you observed and attach the patch at the new ticket? I will then delete the patch here.\n\nDone at #5834.  The patch there is the same as the 3rd one here (rebased and checked), and it relies on the first two patches here being applied first.  The third patch here can now be deleted.\n\nNext time I feel inspired to do something similar I'll do so in a new ticket in the first place.\n\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:10 mabshoff]:\n> John,\n> \n> can you please open another patch for the issues you observed and attach the patch at the new ticket? I will then delete the patch here.\n\n\nDone at #5834.  The patch there is the same as the 3rd one here (rebased and checked), and it relies on the first two patches here being applied first.  The third patch here can now be deleted.\n\nNext time I feel inspired to do something similar I'll do so in a new ticket in the first place.\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2009-04-20T10:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -395,6 +389,7 @@ Replying to [comment:10 mabshoff]:
 > John,
 > 
 > can you please open another patch for the issues you observed and attach the patch at the new ticket? I will then delete the patch here.
+
 
 Done at #5834.  The patch there is the same as the 3rd one here (rebased and checked), and it relies on the first two patches here being applied first.  The third patch here can now be deleted.
 
@@ -487,7 +482,7 @@ Resolution: fixed
 archive/issue_comments_043861.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> Merged both patches in Sage 3.4.2.alpha0.\n> \n> John: This is touching quadratic forms code, so I am CCing you. You really ought to get rid of the \"Oops!\" bit when throwing exceptions :)\n> \n> Cheers,\n> \n> Michael\n\nThey were not my \"oops\"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.",
+    "body": "Replying to [comment:12 mabshoff]:\n> Merged both patches in Sage 3.4.2.alpha0.\n> \n> John: This is touching quadratic forms code, so I am CCing you. You really ought to get rid of the \"Oops!\" bit when throwing exceptions :)\n> \n> Cheers,\n> \n> Michael\n\n\nThey were not my \"oops\"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.",
     "created_at": "2009-04-24T10:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -505,6 +500,7 @@ Replying to [comment:12 mabshoff]:
 > 
 > Michael
 
+
 They were not my "oops"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.
 
 
@@ -514,7 +510,7 @@ They were not my "oops"s, and I agree with you.  I just did not remove them.  If
 archive/issue_comments_043862.json:
 ```json
 {
-    "body": "Replying to [comment:13 cremona]:\n\n> They were not my \"oops\"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.\n\nSorry John, I meant to alert Jon Hanke (But I misspelled his name :(). Jon Hanke is supposed to get coverage up to 100% for the quadratic forms code by the end of the month, so I wanted him to be aware of all patches that touch quadratic forms. We might still get #5834 in before that happens, so we will see. So far there is no patch from Jon to merge AFAIK :(\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:13 cremona]:\n\n> They were not my \"oops\"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.\n\n\nSorry John, I meant to alert Jon Hanke (But I misspelled his name :(). Jon Hanke is supposed to get coverage up to 100% for the quadratic forms code by the end of the month, so I wanted him to be aware of all patches that touch quadratic forms. We might still get #5834 in before that happens, so we will see. So far there is no patch from Jon to merge AFAIK :(\n\nCheers,\n\nMichael",
     "created_at": "2009-04-24T10:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
@@ -526,6 +522,7 @@ archive/issue_comments_043862.json:
 Replying to [comment:13 cremona]:
 
 > They were not my "oops"s, and I agree with you.  I just did not remove them.  If we do this now with a new ticket/ patch then it will interfere with #5834 but I think I could live with that.
+
 
 Sorry John, I meant to alert Jon Hanke (But I misspelled his name :(). Jon Hanke is supposed to get coverage up to 100% for the quadratic forms code by the end of the month, so I wanted him to be aware of all patches that touch quadratic forms. We might still get #5834 in before that happens, so we will see. So far there is no patch from Jon to merge AFAIK :(
 

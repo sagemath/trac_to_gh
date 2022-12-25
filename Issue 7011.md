@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7011
 archive/issue_comments_057859.json:
 ```json
 {
-    "body": "On second thought, scratch the -1 idea. We can just make one change to sage-ptest: line 267 could be\n\n```\nnumthreads = min(8, multiprocessing.cpu_count())\n```\n\nAnyone who is desperate to saturate a machine with more than 8 cores can just specify it on the command line.",
+    "body": "On second thought, scratch the -1 idea. We can just make one change to sage-ptest: line 267 could be\n\n```\nnumthreads = min(8, multiprocessing.cpu_count())\n```\nAnyone who is desperate to saturate a machine with more than 8 cores can just specify it on the command line.",
     "created_at": "2009-09-25T08:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7011",
     "type": "issue_comment",
@@ -55,7 +55,6 @@ On second thought, scratch the -1 idea. We can just make one change to sage-ptes
 ```
 numthreads = min(8, multiprocessing.cpu_count())
 ```
-
 Anyone who is desperate to saturate a machine with more than 8 cores can just specify it on the command line.
 
 

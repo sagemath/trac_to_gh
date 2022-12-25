@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3523
 archive/issue_comments_024776.json:
 ```json
 {
-    "body": "WARNING: current version of package doesn't copy libflint.so over correctly after build on linux, but does on OS X.  On linux you must do\n\n```\n   sage -f -m flint-1.0.10.spkg\n   then copy spkg/build/flint-1.0.10/src/... ?? libflint.so to SAGE_ROOT/local/lib\n```\n",
+    "body": "WARNING: current version of package doesn't copy libflint.so over correctly after build on linux, but does on OS X.  On linux you must do\n\n```\n   sage -f -m flint-1.0.10.spkg\n   then copy spkg/build/flint-1.0.10/src/... ?? libflint.so to SAGE_ROOT/local/lib\n```",
     "created_at": "2008-06-27T18:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ WARNING: current version of package doesn't copy libflint.so over correctly afte
    sage -f -m flint-1.0.10.spkg
    then copy spkg/build/flint-1.0.10/src/... ?? libflint.so to SAGE_ROOT/local/lib
 ```
-
 
 
 

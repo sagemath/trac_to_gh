@@ -3,7 +3,7 @@
 archive/issues_007285.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nMercurial no longer has an hgmerge script.  This if one does \n\n```\nsage: install_scripts('/usr/local/bin/')\n```\n\nwith sage right now then very bad things happen.  For starters, you get an hgmerge script that hangs, which means any time any file ever gets merged with mercurial, instead of getting a merge option, you get a hang.  Pretty confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7285\n\n",
+    "body": "Assignee: tbd\n\nMercurial no longer has an hgmerge script.  This if one does \n\n```\nsage: install_scripts('/usr/local/bin/')\n```\nwith sage right now then very bad things happen.  For starters, you get an hgmerge script that hangs, which means any time any file ever gets merged with mercurial, instead of getting a merge option, you get a hang.  Pretty confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7285\n\n",
     "created_at": "2009-10-25T03:47:15Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ Mercurial no longer has an hgmerge script.  This if one does
 ```
 sage: install_scripts('/usr/local/bin/')
 ```
-
 with sage right now then very bad things happen.  For starters, you get an hgmerge script that hangs, which means any time any file ever gets merged with mercurial, instead of getting a merge option, you get a hang.  Pretty confusing. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7285

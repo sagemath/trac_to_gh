@@ -167,7 +167,7 @@ archive/issue_events_011992.json:
 archive/issue_comments_039646.json:
 ```json
 {
-    "body": "I've rebased this patch against 3.4 and added loads of new functionality. Chris Kurth has given permission for his KFarey package to be incorporated into Sage, and I've started by incorporating the permutation machinery, which gives a way of representing and working with arbitrary finite index subgroups of SL2Z.\n\nHere is a sample (taken from the docstring of one of my new files):\n\n\n```\nsage: a2 = SymmetricGroup(7)([(1,2),(3,4),(5,6)]); a3 = SymmetricGroup(7)([(1,3,5),(2,6,7)])\nsage: G = ArithmeticSubgroup_Permutation(a2*a3, ~a2 * ~a3); G\nArithmetic subgroup corresponding to permutations L=(1,6)(2,3,4,5,7), R=(1,7,6,3,4)(2,5)\nsage: G.index()\n7\nsage: G.dimension_cusp_forms(4)\n1\nsage: G.is_congruence()\nFalse\n```\n\n\nI've also moved most of the dimension-formula code out of sage/modular/dims.py into methods of congruence subgroup objects. Given how tangled the original version was, I consider that an improvement. (Let it suffice to say that there were two separate functions in that file which both calculated the index of Gamma0(N) in SL2Z in essentially the same way.) \n\nFarey symbols, optimal generators, etc can follow in a later patch if people are interested.\n\n(John and Craig: I'm quite keen to get this merged in quickly, as it changes just about every file in sage/modular and so is extremely vulnerable to bitrotting -- any chance either of you could take a look at this?)\n\nDavid",
+    "body": "I've rebased this patch against 3.4 and added loads of new functionality. Chris Kurth has given permission for his KFarey package to be incorporated into Sage, and I've started by incorporating the permutation machinery, which gives a way of representing and working with arbitrary finite index subgroups of SL2Z.\n\nHere is a sample (taken from the docstring of one of my new files):\n\n```\nsage: a2 = SymmetricGroup(7)([(1,2),(3,4),(5,6)]); a3 = SymmetricGroup(7)([(1,3,5),(2,6,7)])\nsage: G = ArithmeticSubgroup_Permutation(a2*a3, ~a2 * ~a3); G\nArithmetic subgroup corresponding to permutations L=(1,6)(2,3,4,5,7), R=(1,7,6,3,4)(2,5)\nsage: G.index()\n7\nsage: G.dimension_cusp_forms(4)\n1\nsage: G.is_congruence()\nFalse\n```\n\nI've also moved most of the dimension-formula code out of sage/modular/dims.py into methods of congruence subgroup objects. Given how tangled the original version was, I consider that an improvement. (Let it suffice to say that there were two separate functions in that file which both calculated the index of Gamma0(N) in SL2Z in essentially the same way.) \n\nFarey symbols, optimal generators, etc can follow in a later patch if people are interested.\n\n(John and Craig: I'm quite keen to get this merged in quickly, as it changes just about every file in sage/modular and so is extremely vulnerable to bitrotting -- any chance either of you could take a look at this?)\n\nDavid",
     "created_at": "2009-03-23T17:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ I've rebased this patch against 3.4 and added loads of new functionality. Chris 
 
 Here is a sample (taken from the docstring of one of my new files):
 
-
 ```
 sage: a2 = SymmetricGroup(7)([(1,2),(3,4),(5,6)]); a3 = SymmetricGroup(7)([(1,3,5),(2,6,7)])
 sage: G = ArithmeticSubgroup_Permutation(a2*a3, ~a2 * ~a3); G
@@ -192,7 +191,6 @@ sage: G.dimension_cusp_forms(4)
 sage: G.is_congruence()
 False
 ```
-
 
 I've also moved most of the dimension-formula code out of sage/modular/dims.py into methods of congruence subgroup objects. Given how tangled the original version was, I consider that an improvement. (Let it suffice to say that there were two separate functions in that file which both calculated the index of Gamma0(N) in SL2Z in essentially the same way.) 
 
@@ -399,7 +397,7 @@ archive/issue_events_011994.json:
 archive/issue_comments_039655.json:
 ```json
 {
-    "body": "This patch causes three doctest failures in \n\n```\n\tsage -t  devel/sage/sage/modular/quatalg/brandt.py # 7 doctests failed\n\tsage -t  devel/sage/doc/en/bordeaux_2008/modular_forms_and_hecke_operators.rst # 2 doctests failed\n\tsage -t  devel/sage/doc/en/constructions/modular_forms.rst # 4 doctests failed\n```\n\nYou might want to wait for 3.4.1.rc0 since the failure in sage/modular/quatalg/brandt.py in introduced via the patches at #5520.\n\nCheers,\n\nMichael",
+    "body": "This patch causes three doctest failures in \n\n```\n\tsage -t  devel/sage/sage/modular/quatalg/brandt.py # 7 doctests failed\n\tsage -t  devel/sage/doc/en/bordeaux_2008/modular_forms_and_hecke_operators.rst # 2 doctests failed\n\tsage -t  devel/sage/doc/en/constructions/modular_forms.rst # 4 doctests failed\n```\nYou might want to wait for 3.4.1.rc0 since the failure in sage/modular/quatalg/brandt.py in introduced via the patches at #5520.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T20:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
@@ -415,7 +413,6 @@ This patch causes three doctest failures in
 	sage -t  devel/sage/doc/en/bordeaux_2008/modular_forms_and_hecke_operators.rst # 2 doctests failed
 	sage -t  devel/sage/doc/en/constructions/modular_forms.rst # 4 doctests failed
 ```
-
 You might want to wait for 3.4.1.rc0 since the failure in sage/modular/quatalg/brandt.py in introduced via the patches at #5520.
 
 Cheers,

@@ -54,7 +54,7 @@ I mean, it is the spkg for #1301 (not #1306).
 archive/issue_comments_014822.json:
 ```json
 {
-    "body": "To use this right now, for example, to generate the graphs of order 3, do:\n\n\n```\nsage: a=os.popen(\"nauty-geng 3\").read().split()\n>A nauty-geng -d0D2 n=3 e=0-3\n>Z 4 graphs generated in 0.00 sec\nsage: a\n['B?', 'BO', 'BW', 'Bw']\nsage: graph_list = [Graph(i) for i in a]\nsage: graph_list\n\n[Graph on 3 vertices,\n Graph on 3 vertices,\n Graph on 3 vertices,\n Graph on 3 vertices]\n```\n",
+    "body": "To use this right now, for example, to generate the graphs of order 3, do:\n\n```\nsage: a=os.popen(\"nauty-geng 3\").read().split()\n>A nauty-geng -d0D2 n=3 e=0-3\n>Z 4 graphs generated in 0.00 sec\nsage: a\n['B?', 'BO', 'BW', 'Bw']\nsage: graph_list = [Graph(i) for i in a]\nsage: graph_list\n\n[Graph on 3 vertices,\n Graph on 3 vertices,\n Graph on 3 vertices,\n Graph on 3 vertices]\n```",
     "created_at": "2008-02-21T00:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ archive/issue_comments_014822.json:
 ```
 
 To use this right now, for example, to generate the graphs of order 3, do:
-
 
 ```
 sage: a=os.popen("nauty-geng 3").read().split()
@@ -83,13 +82,12 @@ sage: graph_list
 
 
 
-
 ---
 
 archive/issue_comments_014823.json:
 ```json
 {
-    "body": "Or, for a pretty picture:\n\n\n```\nsage: graph_list = [Graph(g) for g in os.popen(\"nauty-geng -l 4\").read().split()]\n>A nauty-geng -ld0D3 n=4 e=0-6\n>Z 11 graphs generated in 0.00 sec\nsage: show(graph_list)\nsage: # to compare to Robert Miller's NICE algorithm in Sage:\nsage: show(graphs(4))\n```\n",
+    "body": "Or, for a pretty picture:\n\n```\nsage: graph_list = [Graph(g) for g in os.popen(\"nauty-geng -l 4\").read().split()]\n>A nauty-geng -ld0D3 n=4 e=0-6\n>Z 11 graphs generated in 0.00 sec\nsage: show(graph_list)\nsage: # to compare to Robert Miller's NICE algorithm in Sage:\nsage: show(graphs(4))\n```",
     "created_at": "2008-02-21T01:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ archive/issue_comments_014823.json:
 
 Or, for a pretty picture:
 
-
 ```
 sage: graph_list = [Graph(g) for g in os.popen("nauty-geng -l 4").read().split()]
 >A nauty-geng -ld0D3 n=4 e=0-6
@@ -109,7 +106,6 @@ sage: show(graph_list)
 sage: # to compare to Robert Miller's NICE algorithm in Sage:
 sage: show(graphs(4))
 ```
-
 
 
 
@@ -214,7 +210,7 @@ rlm: is there a way to create a cython library interface for an optional spkg?  
 archive/issue_comments_014829.json:
 ```json
 {
-    "body": "Replying to [comment:11 jason]:\n> rlm: is there a way to create a cython library interface for an optional spkg?  I would love to create a cython interface to the library functions, but the cython needs to be compiled and put into the sage system when the nauty package is installed, not when sage is compiled.\n> \n\nSo far there is now way to do this, at least I am not aware of any way to do this. The ticket to fix this is #2088.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 jason]:\n> rlm: is there a way to create a cython library interface for an optional spkg?  I would love to create a cython interface to the library functions, but the cython needs to be compiled and put into the sage system when the nauty package is installed, not when sage is compiled.\n> \n\n\nSo far there is now way to do this, at least I am not aware of any way to do this. The ticket to fix this is #2088.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T12:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
@@ -226,6 +222,7 @@ archive/issue_comments_014829.json:
 Replying to [comment:11 jason]:
 > rlm: is there a way to create a cython library interface for an optional spkg?  I would love to create a cython interface to the library functions, but the cython needs to be compiled and put into the sage system when the nauty package is installed, not when sage is compiled.
 > 
+
 
 So far there is now way to do this, at least I am not aware of any way to do this. The ticket to fix this is #2088.
 

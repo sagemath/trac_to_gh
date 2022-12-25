@@ -88,7 +88,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_088608.json:
 ```json
 {
-    "body": "This applies okay to 4.5.2.a1 and seems to pass all tests, except for some unrelated failures. However, there are no examples in edge_cut with vertices=True, eg\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.edge_cut(0, 3, method=\"FF\", vertices=True)\n[3, [(0, 1, None), (0, 4, None), (0, 5, None)], [[0], [1, 2, 3, 4, 5, 6, 7, 8, 9]]]\n```\n\nWhy is this?",
+    "body": "This applies okay to 4.5.2.a1 and seems to pass all tests, except for some unrelated failures. However, there are no examples in edge_cut with vertices=True, eg\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.edge_cut(0, 3, method=\"FF\", vertices=True)\n[3, [(0, 1, None), (0, 4, None), (0, 5, None)], [[0], [1, 2, 3, 4, 5, 6, 7, 8, 9]]]\n```\nWhy is this?",
     "created_at": "2010-07-29T13:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
@@ -99,13 +99,11 @@ archive/issue_comments_088608.json:
 
 This applies okay to 4.5.2.a1 and seems to pass all tests, except for some unrelated failures. However, there are no examples in edge_cut with vertices=True, eg
 
-
 ```
 sage: g = graphs.PetersenGraph()
 sage: g.edge_cut(0, 3, method="FF", vertices=True)
 [3, [(0, 1, None), (0, 4, None), (0, 5, None)], [[0], [1, 2, 3, 4, 5, 6, 7, 8, 9]]]
 ```
-
 Why is this?
 
 
@@ -115,7 +113,7 @@ Why is this?
 archive/issue_comments_088609.json:
 ```json
 {
-    "body": "> Why is this?\n \nWhat do you think of line 3652 of the generic_graph.py file ? `:-)`\n\n\n```\nsage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) \n```\n\n\nNathann",
+    "body": "> Why is this?\n\n \nWhat do you think of line 3652 of the generic_graph.py file ? `:-)`\n\n```\nsage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) \n```\n\nNathann",
     "created_at": "2010-07-29T14:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
@@ -125,14 +123,13 @@ archive/issue_comments_088609.json:
 ```
 
 > Why is this?
+
  
 What do you think of line 3652 of the generic_graph.py file ? `:-)`
-
 
 ```
 sage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) 
 ```
-
 
 Nathann
 
@@ -143,7 +140,7 @@ Nathann
 archive/issue_comments_088610.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> > Why is this?\n>  \n> What do you think of line 3652 of the generic_graph.py file ? `:-)`\n> \n> {{{\n> sage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) \n> }}}\n> \n> Nathann\n\nThe value isn't returned, so the potential user cannot see examples of how the output changes for different choices of the input. I'm just wondering if there was a good reason for omitting the edges in the output. An example with value_only=False would be equally nice. Finally, to be extremely picky, the description\n\n\n```\n``vertices`` -- boolean (default: ``False``). When set to ``True``,\n          also returns the two sets of vertices that are disconnected by\n          the cut. Implies ``value_only=False``.\n```\n\nshould probably read\n\n```\n``vertices`` -- boolean (default: ``False``). When set to ``True``,\n          returns a list of edges in the edge cut and the two \n          sets of vertices that are disconnected by the cut. \n          Note: ``vertices=True`` implies ``value_only=False``.\n```\n\n\nDoes this seem reasonable?",
+    "body": "Replying to [comment:4 ncohen]:\n> > Why is this?\n\n>  \n> What do you think of line 3652 of the generic_graph.py file ? `:-)`\n> \n> \n> ```\n> sage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) \n> ```\n> \n> Nathann\n\n\nThe value isn't returned, so the potential user cannot see examples of how the output changes for different choices of the input. I'm just wondering if there was a good reason for omitting the edges in the output. An example with value_only=False would be equally nice. Finally, to be extremely picky, the description\n\n```\n``vertices`` -- boolean (default: ``False``). When set to ``True``,\n          also returns the two sets of vertices that are disconnected by\n          the cut. Implies ``value_only=False``.\n```\nshould probably read\n\n```\n``vertices`` -- boolean (default: ``False``). When set to ``True``,\n          returns a list of edges in the edge cut and the two \n          sets of vertices that are disconnected by the cut. \n          Note: ``vertices=True`` implies ``value_only=False``.\n```\n\nDoes this seem reasonable?",
     "created_at": "2010-07-29T16:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
@@ -154,24 +151,25 @@ archive/issue_comments_088610.json:
 
 Replying to [comment:4 ncohen]:
 > > Why is this?
+
 >  
 > What do you think of line 3652 of the generic_graph.py file ? `:-)`
 > 
-> {{{
+> 
+> ```
 > sage: value,edges,[set1,set2] = g.edge_cut(0, 14, use_edge_labels=True, vertices=True) 
-> }}}
+> ```
 > 
 > Nathann
 
-The value isn't returned, so the potential user cannot see examples of how the output changes for different choices of the input. I'm just wondering if there was a good reason for omitting the edges in the output. An example with value_only=False would be equally nice. Finally, to be extremely picky, the description
 
+The value isn't returned, so the potential user cannot see examples of how the output changes for different choices of the input. I'm just wondering if there was a good reason for omitting the edges in the output. An example with value_only=False would be equally nice. Finally, to be extremely picky, the description
 
 ```
 ``vertices`` -- boolean (default: ``False``). When set to ``True``,
           also returns the two sets of vertices that are disconnected by
           the cut. Implies ``value_only=False``.
 ```
-
 should probably read
 
 ```
@@ -180,7 +178,6 @@ should probably read
           sets of vertices that are disconnected by the cut. 
           Note: ``vertices=True`` implies ``value_only=False``.
 ```
-
 
 Does this seem reasonable?
 
@@ -249,7 +246,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_088614.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n> It does ! I just updated the patch with you example and the corrected docstring `:-)`\n> \n> There was, indeed, a reason for never showing directly the output of all these \n> methods : it formerly used Linear Programming, and the results of LP, even \n> though correct, can vary depending on the time of the day and the solver used. \n> So showing it is asking for trouble, though one can perfectly check some \n> relations... But this Python implementation being deterministic, it's fine now !\n> \n> Nathann\n\nExcellent. Passed tested for me (except for unrelated doctest failures on a mac 10.6.4).\n\nThanks Nathann!!",
+    "body": "Replying to [comment:6 ncohen]:\n> It does ! I just updated the patch with you example and the corrected docstring `:-)`\n> \n> There was, indeed, a reason for never showing directly the output of all these \n> methods : it formerly used Linear Programming, and the results of LP, even \n> though correct, can vary depending on the time of the day and the solver used. \n> So showing it is asking for trouble, though one can perfectly check some \n> relations... But this Python implementation being deterministic, it's fine now !\n> \n> Nathann\n\n\nExcellent. Passed tested for me (except for unrelated doctest failures on a mac 10.6.4).\n\nThanks Nathann!!",
     "created_at": "2010-07-29T22:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
@@ -268,6 +265,7 @@ Replying to [comment:6 ncohen]:
 > relations... But this Python implementation being deterministic, it's fine now !
 > 
 > Nathann
+
 
 Excellent. Passed tested for me (except for unrelated doctest failures on a mac 10.6.4).
 

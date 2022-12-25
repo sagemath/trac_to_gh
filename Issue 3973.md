@@ -95,7 +95,7 @@ Michael
 archive/issue_comments_028489.json:
 ```json
 {
-    "body": "One small comment on the patch: Please escape the hash in the docstring since otherwise TeX will be unhappy when building the documentation:\n\n```\nThis used to be different see trac #3973\n```\n\n\nJohn: I assume this patch is right up your alley.\n\nCheers,\n\nMichael",
+    "body": "One small comment on the patch: Please escape the hash in the docstring since otherwise TeX will be unhappy when building the documentation:\n\n```\nThis used to be different see trac #3973\n```\n\nJohn: I assume this patch is right up your alley.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-28T12:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3973",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ One small comment on the patch: Please escape the hash in the docstring since ot
 ```
 This used to be different see trac #3973
 ```
-
 
 John: I assume this patch is right up your alley.
 

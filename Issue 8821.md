@@ -54,7 +54,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080866.json:
 ```json
 {
-    "body": "Looks good, and is much needed. I haven't finished reading it, but I have some comments: \n\nFirst, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading. For example, univarite polynomials are instances of PrincipalIdealDomainElement, even if they are. Another example, testing for RingElement could be deceptive. At least one of\n\n\n```\nsage: isinstance(matrix(ZZ, 2), RingElement)\nTrue\nsage: isinstance(matrix(ZZ, 2,3), RingElement)\nTrue\n```\n\n\nis False. (I consider the first a bug.)\n\nSecond, we don't want to create the expectation that Python elements are unique, as they usually aren't: \n\n\n```\nsage: a = -15r\nsage: b = -15r\nsage: a is b\nFalse\n```\n\n\nOnly some really common integers are.",
+    "body": "Looks good, and is much needed. I haven't finished reading it, but I have some comments: \n\nFirst, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading. For example, univarite polynomials are instances of PrincipalIdealDomainElement, even if they are. Another example, testing for RingElement could be deceptive. At least one of\n\n```\nsage: isinstance(matrix(ZZ, 2), RingElement)\nTrue\nsage: isinstance(matrix(ZZ, 2,3), RingElement)\nTrue\n```\n\nis False. (I consider the first a bug.)\n\nSecond, we don't want to create the expectation that Python elements are unique, as they usually aren't: \n\n```\nsage: a = -15r\nsage: b = -15r\nsage: a is b\nFalse\n```\n\nOnly some really common integers are.",
     "created_at": "2010-04-29T10:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ Looks good, and is much needed. I haven't finished reading it, but I have some c
 
 First, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading. For example, univarite polynomials are instances of PrincipalIdealDomainElement, even if they are. Another example, testing for RingElement could be deceptive. At least one of
 
-
 ```
 sage: isinstance(matrix(ZZ, 2), RingElement)
 True
@@ -75,11 +74,9 @@ sage: isinstance(matrix(ZZ, 2,3), RingElement)
 True
 ```
 
-
 is False. (I consider the first a bug.)
 
 Second, we don't want to create the expectation that Python elements are unique, as they usually aren't: 
-
 
 ```
 sage: a = -15r
@@ -87,7 +84,6 @@ sage: b = -15r
 sage: a is b
 False
 ```
-
 
 Only some really common integers are.
 
@@ -98,7 +94,7 @@ Only some really common integers are.
 archive/issue_comments_080867.json:
 ```json
 {
-    "body": "Hi Robert,\n\nReplying to [comment:2 robertwb]:\n\n> First, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading.\n\nOK, I wanted to give a first approximation on how classes relate with mathematics. Perhaps I should emphasize that the analogy is not perfect (I already mention that different classes may also relate with different implementations of the same mathematical structure).\n\n> ` sage: isinstance(matrix(ZZ, 2), RingElement) True sage: isinstance(matrix(ZZ, 2,3), RingElement) True ` is False. (I consider the first a bug.)\n\nReally? The first is a square matrix, so, I think the second is wrong.\n\n> Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:\n\nRight, that should be clarified.\n\nThank you!\n\nSimon",
+    "body": "Hi Robert,\n\nReplying to [comment:2 robertwb]:\n\n> First, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading.\n\n\nOK, I wanted to give a first approximation on how classes relate with mathematics. Perhaps I should emphasize that the analogy is not perfect (I already mention that different classes may also relate with different implementations of the same mathematical structure).\n\n> ` sage: isinstance(matrix(ZZ, 2), RingElement) True sage: isinstance(matrix(ZZ, 2,3), RingElement) True ` is False. (I consider the first a bug.)\n\n\nReally? The first is a square matrix, so, I think the second is wrong.\n\n> Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:\n\n\nRight, that should be clarified.\n\nThank you!\n\nSimon",
     "created_at": "2010-04-29T10:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -113,13 +109,16 @@ Replying to [comment:2 robertwb]:
 
 > First, I might focus less on the types and isinstance corresponding to mathematical categories, as they can be misleading.
 
+
 OK, I wanted to give a first approximation on how classes relate with mathematics. Perhaps I should emphasize that the analogy is not perfect (I already mention that different classes may also relate with different implementations of the same mathematical structure).
 
 > ` sage: isinstance(matrix(ZZ, 2), RingElement) True sage: isinstance(matrix(ZZ, 2,3), RingElement) True ` is False. (I consider the first a bug.)
 
+
 Really? The first is a square matrix, so, I think the second is wrong.
 
 > Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:
+
 
 Right, that should be clarified.
 
@@ -134,7 +133,7 @@ Simon
 archive/issue_comments_080868.json:
 ```json
 {
-    "body": "Replying to [comment:3 SimonKing]:\n> > Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:\n> \n> Right, that should be clarified.\nYes, that's what I suggested in the `sage-devel` thread. ;-)\n(And Robert noted that this is implementation-specific even in plain Python.)\nOne should clarify that in general\n  `a is b` => `a == b`\nbut not necessarily the opposite.\n\nRegarding comparison:\nIt should be stressed that not only `a == b` returns `False` if coercion fails but also `a != b` (silently) returns `False` in that case.\n\nReading on...\n\nBtw (ticket description), I'd still say Sage's coercion *is* (a kind of) implicit type conversion...\n\nIt seems we've reached ultimate confusion in the `sage-devel` thread (\"exact\" and \"inexact\" domains); I unfortunately haven't been able to reply so far...\n\n-Leif",
+    "body": "Replying to [comment:3 SimonKing]:\n> > Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:\n\n> \n> Right, that should be clarified.\n\nYes, that's what I suggested in the `sage-devel` thread. ;-)\n(And Robert noted that this is implementation-specific even in plain Python.)\nOne should clarify that in general\n  `a is b` => `a == b`\nbut not necessarily the opposite.\n\nRegarding comparison:\nIt should be stressed that not only `a == b` returns `False` if coercion fails but also `a != b` (silently) returns `False` in that case.\n\nReading on...\n\nBtw (ticket description), I'd still say Sage's coercion *is* (a kind of) implicit type conversion...\n\nIt seems we've reached ultimate confusion in the `sage-devel` thread (\"exact\" and \"inexact\" domains); I unfortunately haven't been able to reply so far...\n\n-Leif",
     "created_at": "2010-04-29T11:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -145,8 +144,10 @@ archive/issue_comments_080868.json:
 
 Replying to [comment:3 SimonKing]:
 > > Second, we don't want to create the expectation that Python elements are unique, as they usually aren't:
+
 > 
 > Right, that should be clarified.
+
 Yes, that's what I suggested in the `sage-devel` thread. ;-)
 (And Robert noted that this is implementation-specific even in plain Python.)
 One should clarify that in general
@@ -171,7 +172,7 @@ It seems we've reached ultimate confusion in the `sage-devel` thread ("exact" an
 archive/issue_comments_080869.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> Btw (ticket description), I'd still say Sage's coercion *is* (a kind of) implicit type conversion...\nOk, one might clarify that an implicit conversion (coercion) in Sage can be performed even if the objects' types appear to be the same; but this is not really different to other object-oriented languages (cf. virtual functions).",
+    "body": "Replying to [comment:4 leif]:\n> Btw (ticket description), I'd still say Sage's coercion *is* (a kind of) implicit type conversion...\n\nOk, one might clarify that an implicit conversion (coercion) in Sage can be performed even if the objects' types appear to be the same; but this is not really different to other object-oriented languages (cf. virtual functions).",
     "created_at": "2010-04-29T11:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -182,6 +183,7 @@ archive/issue_comments_080869.json:
 
 Replying to [comment:4 leif]:
 > Btw (ticket description), I'd still say Sage's coercion *is* (a kind of) implicit type conversion...
+
 Ok, one might clarify that an implicit conversion (coercion) in Sage can be performed even if the objects' types appear to be the same; but this is not really different to other object-oriented languages (cf. virtual functions).
 
 
@@ -191,7 +193,7 @@ Ok, one might clarify that an implicit conversion (coercion) in Sage can be perf
 archive/issue_comments_080870.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> Regarding comparison:\n> It should be stressed that not only `a == b` returns `False` if coercion fails but also `a != b` (silently) returns `False` in that case.\n\nNo, it doesn't:\n\n\n```\nsage: GF(5)(1) == GF(2)(1)\nFalse\nsage: GF(5)(1) != GF(2)(1)\nTrue\nsage: R.<x,a,b> = QQ[]\nsage: S.<x,c,d> = QQ[]\nsage: x == R('x')\nFalse\nsage: x != R('x')\nTrue\n```\n",
+    "body": "Replying to [comment:4 leif]:\n> Regarding comparison:\n> It should be stressed that not only `a == b` returns `False` if coercion fails but also `a != b` (silently) returns `False` in that case.\n\n\nNo, it doesn't:\n\n```\nsage: GF(5)(1) == GF(2)(1)\nFalse\nsage: GF(5)(1) != GF(2)(1)\nTrue\nsage: R.<x,a,b> = QQ[]\nsage: S.<x,c,d> = QQ[]\nsage: x == R('x')\nFalse\nsage: x != R('x')\nTrue\n```",
     "created_at": "2010-04-29T12:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -204,8 +206,8 @@ Replying to [comment:4 leif]:
 > Regarding comparison:
 > It should be stressed that not only `a == b` returns `False` if coercion fails but also `a != b` (silently) returns `False` in that case.
 
-No, it doesn't:
 
+No, it doesn't:
 
 ```
 sage: GF(5)(1) == GF(2)(1)
@@ -219,7 +221,6 @@ False
 sage: x != R('x')
 True
 ```
-
 
 
 
@@ -266,7 +267,7 @@ I added another patch (on top of the first patch), taking into account some of y
 archive/issue_comments_080873.json:
 ```json
 {
-    "body": "Replying to [comment:6 SimonKing]:\n> No, it doesn't:\n> sage: GF(5)(1) != GF(2)(1)\n> True\nThen document the opposite (of what **I** stated) ;-)\n\n(I thought this was said in some Sage documentation, but it seems I took this assumption from Robert's statement:\n\n  \"In Python, the convention is that == and != never raise an error, so  \n  False is returned if coercion fails (the two domains are incompatible).\"\n\nin http://groups.google.com/group/sage-devel/msg/3ec75b62fcb3f295 and my reply: http://groups.google.com/group/sage-devel/msg/2f2e69bfb8623a4a)",
+    "body": "Replying to [comment:6 SimonKing]:\n> No, it doesn't:\n> sage: GF(5)(1) != GF(2)(1)\n> True\n\nThen document the opposite (of what **I** stated) ;-)\n\n(I thought this was said in some Sage documentation, but it seems I took this assumption from Robert's statement:\n\n  \"In Python, the convention is that == and != never raise an error, so  \n  False is returned if coercion fails (the two domains are incompatible).\"\n\nin http://groups.google.com/group/sage-devel/msg/3ec75b62fcb3f295 and my reply: http://groups.google.com/group/sage-devel/msg/2f2e69bfb8623a4a)",
     "created_at": "2010-04-29T13:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -279,6 +280,7 @@ Replying to [comment:6 SimonKing]:
 > No, it doesn't:
 > sage: GF(5)(1) != GF(2)(1)
 > True
+
 Then document the opposite (of what **I** stated) ;-)
 
 (I thought this was said in some Sage documentation, but it seems I took this assumption from Robert's statement:
@@ -295,7 +297,7 @@ in http://groups.google.com/group/sage-devel/msg/3ec75b62fcb3f295 and my reply: 
 archive/issue_comments_080874.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> Replying to [comment:6 SimonKing]:\n> > No, it doesn't:\n> > sage: GF(5)(1) != GF(2)(1)\n> > True\n> Then document the opposite (of what **I** stated) ;-)\n\nThis is already part of the patch that I provided a few minutes ago.\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:8 leif]:\n> Replying to [comment:6 SimonKing]:\n> > No, it doesn't:\n> > sage: GF(5)(1) != GF(2)(1)\n> > True\n\n> Then document the opposite (of what **I** stated) ;-)\n\nThis is already part of the patch that I provided a few minutes ago.\n\nCheers,\n\nSimon",
     "created_at": "2010-04-29T13:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -309,6 +311,7 @@ Replying to [comment:8 leif]:
 > > No, it doesn't:
 > > sage: GF(5)(1) != GF(2)(1)
 > > True
+
 > Then document the opposite (of what **I** stated) ;-)
 
 This is already part of the patch that I provided a few minutes ago.
@@ -382,7 +385,7 @@ Otherwise, I think this should get a positive review.
 archive/issue_comments_080878.json:
 ```json
 {
-    "body": "There's a typo (missing space) in one headline (\"Parents,types and categories\"[sic]).\n\n----\n\nI've actually given up thinking about Sage's \"coercion model\", because IMHO still different people seem to have different ideas of what it is and how it does or should work (including different interpretations of terms).\n\nIf you want to have fun, compare this description to that in [William's and Burcin's recent paper](http://wstein.org/papers/icms/icms_2010.pdf) (page 12)... ;-)\n\n(Reading that, one would think *every* coercion in Sage is a type \n**promotion**. \"only from exact to inexact\" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] \"inexact\" domain.)\n\n----\n\nI'd write that Sage implements its own *type system*, which must not be confused with **Python's** (as opposed to \"... type conversion and type coercion known from, e.g., the C programming language\").\n\nThe explanation that there can only be a finite number of classes in Python is somewhat wrong; in fact, classes can be created dynamically (regarding finite memory, there can only be finitely many instances of a class, too).",
+    "body": "There's a typo (missing space) in one headline (\"Parents,types and categories\"[sic]).\n\n---\n\nI've actually given up thinking about Sage's \"coercion model\", because IMHO still different people seem to have different ideas of what it is and how it does or should work (including different interpretations of terms).\n\nIf you want to have fun, compare this description to that in [William's and Burcin's recent paper](http://wstein.org/papers/icms/icms_2010.pdf) (page 12)... ;-)\n\n(Reading that, one would think *every* coercion in Sage is a type \n**promotion**. \"only from exact to inexact\" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] \"inexact\" domain.)\n\n---\n\nI'd write that Sage implements its own *type system*, which must not be confused with **Python's** (as opposed to \"... type conversion and type coercion known from, e.g., the C programming language\").\n\nThe explanation that there can only be a finite number of classes in Python is somewhat wrong; in fact, classes can be created dynamically (regarding finite memory, there can only be finitely many instances of a class, too).",
     "created_at": "2010-06-21T21:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -393,7 +396,7 @@ archive/issue_comments_080878.json:
 
 There's a typo (missing space) in one headline ("Parents,types and categories"[sic]).
 
-----
+---
 
 I've actually given up thinking about Sage's "coercion model", because IMHO still different people seem to have different ideas of what it is and how it does or should work (including different interpretations of terms).
 
@@ -402,7 +405,7 @@ If you want to have fun, compare this description to that in [William's and Burc
 (Reading that, one would think *every* coercion in Sage is a type 
 **promotion**. "only from exact to inexact" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] "inexact" domain.)
 
-----
+---
 
 I'd write that Sage implements its own *type system*, which must not be confused with **Python's** (as opposed to "... type conversion and type coercion known from, e.g., the C programming language").
 
@@ -415,7 +418,7 @@ The explanation that there can only be a finite number of classes in Python is s
 archive/issue_comments_080879.json:
 ```json
 {
-    "body": "Replying to [comment:13 leif]:\n\n> If you want to have fun, compare this description to that in [William's and Burcin's recent paper](http://wstein.org/papers/icms/icms_2010.pdf) (page 12)... ;-)\n> \n> (Reading that, one would think *every* coercion in Sage is a type \n> **promotion**. \"only from exact to inexact\" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] \"inexact\" domain.)\n\nZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.\n\nReading p. 12 of the Stein-Erocal paper, I would think that every coercion comes from an embedding, but this is not true.  Every coercion should come from a mathematically canonical map (like mapping Z to any ring, or the inclusion of Q into R).  Thinking about it mathematically makes sense to me, and I think this is the whole point.\n\nAlso, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.",
+    "body": "Replying to [comment:13 leif]:\n\n> If you want to have fun, compare this description to that in [William's and Burcin's recent paper](http://wstein.org/papers/icms/icms_2010.pdf) (page 12)... ;-)\n> \n> (Reading that, one would think *every* coercion in Sage is a type \n> **promotion**. \"only from exact to inexact\" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] \"inexact\" domain.)\n\n\nZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.\n\nReading p. 12 of the Stein-Erocal paper, I would think that every coercion comes from an embedding, but this is not true.  Every coercion should come from a mathematically canonical map (like mapping Z to any ring, or the inclusion of Q into R).  Thinking about it mathematically makes sense to me, and I think this is the whole point.\n\nAlso, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.",
     "created_at": "2010-06-21T21:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -430,6 +433,7 @@ Replying to [comment:13 leif]:
 > 
 > (Reading that, one would think *every* coercion in Sage is a type 
 > **promotion**. "only from exact to inexact" suggests the opposite, type **demotion**, and does, e.g., not include `QQ.has_coerce_map_from(ZZ)`, where I'd consider `ZZ` the [more] "inexact" domain.)
+
 
 ZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.
 
@@ -462,7 +466,7 @@ See also #9300.
 archive/issue_comments_080881.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> [...] ZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.\nWell, irrational numbers and limited precision are different aspects; in principle, \"the\" real field should contain QQ. And at least some irrational numbers (I personally don't consider them numbers ;-) , or at least not \"real\" in the sense of existence) *can* be represented - in general as (symbolic) constants or as limits.\n\n(On the other hand, `NaN in RR`, but `infinity` is not, `RR.pi` is a method, `RR.pi() == pi` - where `parent(pi)` is `Symbolic Ring` - evaluates to `True`...)\n\n> Reading p. 12 of the Stein-Erocal paper, I would think that every coercion comes from an embedding, but this is not true.  Every coercion should come from a mathematically canonical map (like mapping Z to any ring, or the inclusion of Q into R).  Thinking about it mathematically makes sense to me, and I think this is the whole point.\nIf it's clear to everyone what is meant by \"exact\" and \"inexact\"...\n\nMapping Q into R is not the same as mapping `QQ` into `RR`; in fact, Sage supports the direction that is sound in the mathematical domains, i.e. that is valid for Q and R, though the implementation (the actual domains considered mathematically; floating-point numbers in the case of `RR`) would suggest the opposite, because every element of `RR` (except some symbolic constants) can be represented in `QQ`. IMHO coercions (as opposed to conversions) should be injective; the natural embedding of Q in R does *not* hold for \"Sage's\" Q and R, `QQ` and `RR`.\n\n> Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.\nI'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely \"parents\".",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> [...] ZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.\n\nWell, irrational numbers and limited precision are different aspects; in principle, \"the\" real field should contain QQ. And at least some irrational numbers (I personally don't consider them numbers ;-) , or at least not \"real\" in the sense of existence) *can* be represented - in general as (symbolic) constants or as limits.\n\n(On the other hand, `NaN in RR`, but `infinity` is not, `RR.pi` is a method, `RR.pi() == pi` - where `parent(pi)` is `Symbolic Ring` - evaluates to `True`...)\n\n> Reading p. 12 of the Stein-Erocal paper, I would think that every coercion comes from an embedding, but this is not true.  Every coercion should come from a mathematically canonical map (like mapping Z to any ring, or the inclusion of Q into R).  Thinking about it mathematically makes sense to me, and I think this is the whole point.\n\nIf it's clear to everyone what is meant by \"exact\" and \"inexact\"...\n\nMapping Q into R is not the same as mapping `QQ` into `RR`; in fact, Sage supports the direction that is sound in the mathematical domains, i.e. that is valid for Q and R, though the implementation (the actual domains considered mathematically; floating-point numbers in the case of `RR`) would suggest the opposite, because every element of `RR` (except some symbolic constants) can be represented in `QQ`. IMHO coercions (as opposed to conversions) should be injective; the natural embedding of Q in R does *not* hold for \"Sage's\" Q and R, `QQ` and `RR`.\n\n> Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.\n\nI'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely \"parents\".",
     "created_at": "2010-06-21T23:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -473,16 +477,19 @@ archive/issue_comments_080881.json:
 
 Replying to [comment:14 jhpalmieri]:
 > [...] ZZ and QQ are equally exact: any element of them can be represented exactly on a computer.  Because of the presence of some transcendental numbers with no exact representation, RR is inherently inexact: when you work in RR, you're only working up to some level of precision.
+
 Well, irrational numbers and limited precision are different aspects; in principle, "the" real field should contain QQ. And at least some irrational numbers (I personally don't consider them numbers ;-) , or at least not "real" in the sense of existence) *can* be represented - in general as (symbolic) constants or as limits.
 
 (On the other hand, `NaN in RR`, but `infinity` is not, `RR.pi` is a method, `RR.pi() == pi` - where `parent(pi)` is `Symbolic Ring` - evaluates to `True`...)
 
 > Reading p. 12 of the Stein-Erocal paper, I would think that every coercion comes from an embedding, but this is not true.  Every coercion should come from a mathematically canonical map (like mapping Z to any ring, or the inclusion of Q into R).  Thinking about it mathematically makes sense to me, and I think this is the whole point.
+
 If it's clear to everyone what is meant by "exact" and "inexact"...
 
 Mapping Q into R is not the same as mapping `QQ` into `RR`; in fact, Sage supports the direction that is sound in the mathematical domains, i.e. that is valid for Q and R, though the implementation (the actual domains considered mathematically; floating-point numbers in the case of `RR`) would suggest the opposite, because every element of `RR` (except some symbolic constants) can be represented in `QQ`. IMHO coercions (as opposed to conversions) should be injective; the natural embedding of Q in R does *not* hold for "Sage's" Q and R, `QQ` and `RR`.
 
 > Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other "consumers" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.
+
 I'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely "parents".
 
 
@@ -492,7 +499,7 @@ I'm not sure what that refers to; nevertheless the reader will (or should) be fa
 archive/issue_comments_080882.json:
 ```json
 {
-    "body": "Coercions in Sage are supposed to model the underlying mathematics.  So a coercion from QQ to RR is defined, as it should be.\n\nReplying to [comment:16 leif]:\n> And at least some irrational numbers *can* be represented - in general as (symbolic) constants or as limits.\n\nThat's why I used the qualifier \"some\" in \"the presence of some transcendental numbers\".  And of course every real number can be represented as a limit of rationals...\n\n> IMHO coercions (as opposed to conversions) should be injective.\n\nNo.  The natural map from ZZ to ZZ/nZZ should be a coercion, as indeed should be the natural map from ZZ to any ring.  The same for the standard map from an object (ring, group, module, ...) to any of its quotients.  These are typically not injective, but they are also completely canonical.  Any canonical map should be a coercion.\n\n> the natural embedding of Q in R does *not* hold for \"Sage's\" Q and R, `QQ` and `RR`.\n\nI'm willing to believe this, but can you provide evidence?\n\n> > Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.\n> I'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely \"parents\".\n\nIt refers to, for example, your statement \"I'd write that Sage implements its own type system ...\".  I think this sort of statement puts more of a programming-type focus than a mathematical one.",
+    "body": "Coercions in Sage are supposed to model the underlying mathematics.  So a coercion from QQ to RR is defined, as it should be.\n\nReplying to [comment:16 leif]:\n> And at least some irrational numbers *can* be represented - in general as (symbolic) constants or as limits.\n\n\nThat's why I used the qualifier \"some\" in \"the presence of some transcendental numbers\".  And of course every real number can be represented as a limit of rationals...\n\n> IMHO coercions (as opposed to conversions) should be injective.\n\n\nNo.  The natural map from ZZ to ZZ/nZZ should be a coercion, as indeed should be the natural map from ZZ to any ring.  The same for the standard map from an object (ring, group, module, ...) to any of its quotients.  These are typically not injective, but they are also completely canonical.  Any canonical map should be a coercion.\n\n> the natural embedding of Q in R does *not* hold for \"Sage's\" Q and R, `QQ` and `RR`.\n\n\nI'm willing to believe this, but can you provide evidence?\n\n> > Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other \"consumers\" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.\n\n> I'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely \"parents\".\n\nIt refers to, for example, your statement \"I'd write that Sage implements its own type system ...\".  I think this sort of statement puts more of a programming-type focus than a mathematical one.",
     "created_at": "2010-06-22T03:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
@@ -506,17 +513,21 @@ Coercions in Sage are supposed to model the underlying mathematics.  So a coerci
 Replying to [comment:16 leif]:
 > And at least some irrational numbers *can* be represented - in general as (symbolic) constants or as limits.
 
+
 That's why I used the qualifier "some" in "the presence of some transcendental numbers".  And of course every real number can be represented as a limit of rationals...
 
 > IMHO coercions (as opposed to conversions) should be injective.
+
 
 No.  The natural map from ZZ to ZZ/nZZ should be a coercion, as indeed should be the natural map from ZZ to any ring.  The same for the standard map from an object (ring, group, module, ...) to any of its quotients.  These are typically not injective, but they are also completely canonical.  Any canonical map should be a coercion.
 
 > the natural embedding of Q in R does *not* hold for "Sage's" Q and R, `QQ` and `RR`.
 
+
 I'm willing to believe this, but can you provide evidence?
 
 > > Also, remember that a document like the Sage tutorial is aimed to a large degree at mathematicians and math students (and other "consumers" of mathematics), moreso than to people with a computer science focus.  So focusing on types, etc., is not appropriate.
+
 > I'm not sure what that refers to; nevertheless the reader will (or should) be familiar with Python, including the concept of its types and classes, and will be confronted with the differences between Python types (including classes) and Sage's types, namely "parents".
 
 It refers to, for example, your statement "I'd write that Sage implements its own type system ...".  I think this sort of statement puts more of a programming-type focus than a mathematical one.

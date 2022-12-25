@@ -3,7 +3,7 @@
 archive/issues_006421.json:
 ```json
 {
-    "body": "From sage-devel:\n\n\n```\n> On Thu, Jun 25, 2009 at 11:31 PM, Nick\n> Alexander<ncalexander@gmail.com> wrote:\n> >\n> > Can someone verify that this is a bug? \u00a0Any hope a fix? \u00a0(This is\n> > with sage-4.0.2 on sage.math.)\n> >\n> > {{{\n> > sage: complex_plot((x^2 + I).sqrt().real_part(), (-2, 2), (-2, 2))\n> > ---------------------------------------------------------------------------\n> ...\n> > RuntimeError: cannot find SFunction in table\n> > }}}\n> \n> It seems, its not just complex_plot issue. It is happening for other\n> plots. For example,  the following works fine in 3.4 but fails with\n> the same error in 4.0.2\n> -----\n> sage: x,y=var('x,y'); plot3d( log(x+I*y).imag(), (x,-2,2), (y,-2,2))\n> ...\n> RuntimeError: cannot find SFunction in table\n> -----\n\nsage: %debug\n> /home/burcin/sage/sage-4.0.2.rc0/expression.pyx(3115)sage.symbolic.expression.Expression.operator\n> (sage/symbolic/expression.cpp:15268)()\n\nipdb> u\n> /home/burcin/sage/sage-4.0.2.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py(206)__call__()\n    205 \n--> 206         operator = ex.operator()\n    207         if operator is None:\n\nipdb> print ex\narctan2(real_part(y) + imag_part(x), real_part(x) - imag_part(y))\n\n\nBoth of these fail because Sage doesn't define a symbolic arctan2\nfunction. There is instead a simple wrapper around arctan in\nsage/functions/trig.py:\n\nsage: arctan2(x,y)\narctan(x/y)\n\n```\n\n\nIt's possible that this worked on 4.0, and I broke it with #6244.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6421\n\n",
+    "body": "From sage-devel:\n\n```\n> On Thu, Jun 25, 2009 at 11:31 PM, Nick\n> Alexander<ncalexander@gmail.com> wrote:\n> >\n> > Can someone verify that this is a bug? \u00a0Any hope a fix? \u00a0(This is\n> > with sage-4.0.2 on sage.math.)\n> >\n> > {{{\n> > sage: complex_plot((x^2 + I).sqrt().real_part(), (-2, 2), (-2, 2))\n> > ---------------------------------------------------------------------------\n> ...\n> > RuntimeError: cannot find SFunction in table\n> > }}}\n> \n> It seems, its not just complex_plot issue. It is happening for other\n> plots. For example,  the following works fine in 3.4 but fails with\n> the same error in 4.0.2\n> -----\n> sage: x,y=var('x,y'); plot3d( log(x+I*y).imag(), (x,-2,2), (y,-2,2))\n> ...\n> RuntimeError: cannot find SFunction in table\n> -----\n\nsage: %debug\n> /home/burcin/sage/sage-4.0.2.rc0/expression.pyx(3115)sage.symbolic.expression.Expression.operator\n> (sage/symbolic/expression.cpp:15268)()\n\nipdb> u\n> /home/burcin/sage/sage-4.0.2.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py(206)__call__()\n    205 \n--> 206         operator = ex.operator()\n    207         if operator is None:\n\nipdb> print ex\narctan2(real_part(y) + imag_part(x), real_part(x) - imag_part(y))\n\n\nBoth of these fail because Sage doesn't define a symbolic arctan2\nfunction. There is instead a simple wrapper around arctan in\nsage/functions/trig.py:\n\nsage: arctan2(x,y)\narctan(x/y)\n\n```\n\nIt's possible that this worked on 4.0, and I broke it with #6244.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6421\n\n",
     "created_at": "2009-06-26T12:22:36Z",
     "labels": [
         "component: symbolics",
@@ -17,7 +17,6 @@ archive/issues_006421.json:
 }
 ```
 From sage-devel:
-
 
 ```
 > On Thu, Jun 25, 2009 at 11:31 PM, Nick
@@ -64,7 +63,6 @@ sage: arctan2(x,y)
 arctan(x/y)
 
 ```
-
 
 It's possible that this worked on 4.0, and I broke it with #6244.
 
@@ -136,7 +134,7 @@ Set assignee to @kcrisman.
 archive/issue_comments_051459.json:
 ```json
 {
-    "body": "Okay, this seems to fix everything and passes tests on trig.py and symbolic/expression.py and /function.py.    I made the function consistent with Maxima, Pynac, and Python math.  Only issue, which I would really appreciate some insight on but should not prevent it from going in, is the following:\n\n```\nsage: latex(arctan2)\n\\arctan\nsage: var('y')\ny\nsage: latex(arctan2(y,x))\n\\mbox{atan2}\\left(y,x\\right)\n```\n\nOf course, this doesn't fix the question about plotting, but now the failure on that will be clearer.",
+    "body": "Okay, this seems to fix everything and passes tests on trig.py and symbolic/expression.py and /function.py.    I made the function consistent with Maxima, Pynac, and Python math.  Only issue, which I would really appreciate some insight on but should not prevent it from going in, is the following:\n\n```\nsage: latex(arctan2)\n\\arctan\nsage: var('y')\ny\nsage: latex(arctan2(y,x))\n\\mbox{atan2}\\left(y,x\\right)\n```\nOf course, this doesn't fix the question about plotting, but now the failure on that will be clearer.",
     "created_at": "2009-06-26T17:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
@@ -155,7 +153,6 @@ y
 sage: latex(arctan2(y,x))
 \mbox{atan2}\left(y,x\right)
 ```
-
 Of course, this doesn't fix the question about plotting, but now the failure on that will be clearer.
 
 

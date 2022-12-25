@@ -3,7 +3,7 @@
 archive/issues_007273.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom the pil-1.1.6.spkg's \"setup.py\":\n\n```\n# --------------------------------------------------------------------\n# Library pointers.\n#\n# Use None to look for the libraries in well-known library locations.\n# Use a string to specify a single directory, for both the library and\n# the include files.  Use a tuple to specify separate directories:\n# (libpath, includepath).  Examples:\n#\n# JPEG_ROOT = \"/home/libraries/jpeg-6b\"\n# TIFF_ROOT = \"/opt/tiff/lib\", \"/opt/tiff/include\"\n#\n# If you have \"lib\" and \"include\" directories under a common parent,\n# you can use the \"libinclude\" helper:\n#\n# TIFF_ROOT = libinclude(\"/opt/tiff\")\n\nFREETYPE_ROOT = None\nJPEG_ROOT = None\nTIFF_ROOT = None\nZLIB_ROOT = None\nTCL_ROOT = None\n\n# FIXME: add mechanism to explicitly *disable* the use of a library\n\n# --------------------------------------------------------------------\n```\n\nand any of these libraries the setup thinks it finds will be set as\n\n```\n-DHAVE_LIBJPEG -DHAVE_LIBZ\n```\n\nand the like in \"building '_imaging' extension\".\n\nThis means that if a Sage binary is built on a computer with having some of these libraries, then this binary will *not* work (might not even start) on a computer not having at least these libraries available.\n\nEven more fun (again taken from PIL's setup.py):\n\n```\n        elif sys.platform == \"darwin\":\n            # attempt to make sure we pick freetype2 over other versions\n            add_directory(include_dirs, \"/sw/include/freetype2\")\n            add_directory(include_dirs, \"/sw/lib/freetype2/include\")\n            # fink installation directories\n            add_directory(library_dirs, \"/sw/lib\")\n            add_directory(include_dirs, \"/sw/include\")\n            # darwin ports installation directories\n            add_directory(library_dirs, \"/opt/local/lib\")\n            add_directory(include_dirs, \"/opt/local/include\")\n```\n\nLast, but not least, pil-1.1.6 as contained in Sage-4.2.alpha1 breaks the Sage build, at least on my computer. It somehow thinks it could find \"libjpeg\" and its includes, but then cannot:\n\n```\n...\nrunning build_ext\n--- using frameworks at /System/Library/Frameworks\nbuilding '_imaging' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-\nprototypes -DHAVE_LIBJPEG -DHAVE_LIBZ -I/System/Library/Frameworks/\nTcl.framework/Headers -I/System/Library/Frameworks/Tk.framework/\nHeaders -I/Users/Shared/sage/sage-4.2.alpha1/local/include/freetype2 -\nIlibImaging -I/opt/local/include -I/Users/Shared/sage/sage-4.2.alpha1/\nlocal/include -I/usr/local/include -I/usr/include -I/Users/Shared/sage/\nsage-4.2.alpha1/local/include/python2.6 -c decode.c -o build/\ntemp.macosx-10.3-i386-2.6/decode.o\nIn file included from decode.c:653:\nlibImaging/Jpeg.h:11:21: error: jpeglib.h: No such file or directory\nIn file included from decode.c:653:\nlibImaging/Jpeg.h:17: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:26: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:49: error: field 'cinfo' has incomplete type\nlibImaging/Jpeg.h:62: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:90: error: field 'cinfo' has incomplete type\nerror: command 'gcc' failed with exit status 1\n\nThe full install.log is at http://sage.math.washington.edu/home/weberg/logs/sage-4.2.alpha1_install.log\n```\n\nBut the problem with the binaries *will* occur on any platform, not only Darwin.\n\nSo we either have to also include a jpeg.spkg, a tiff.spkg, and so on in Sage (and make sure PIL uses these !!!), or cripple PIL to not use any of these libraries (even if they *were* present).\n\nThe former is problematic, as far as I remember e.g. the tiff license is not GPL compatible (apart from the technical aspects), but I might be mistaken. Crippling might render PIL pretty useless, however.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7273\n\n",
+    "body": "Assignee: mabshoff\n\nFrom the pil-1.1.6.spkg's \"setup.py\":\n\n```\n# --------------------------------------------------------------------\n# Library pointers.\n#\n# Use None to look for the libraries in well-known library locations.\n# Use a string to specify a single directory, for both the library and\n# the include files.  Use a tuple to specify separate directories:\n# (libpath, includepath).  Examples:\n#\n# JPEG_ROOT = \"/home/libraries/jpeg-6b\"\n# TIFF_ROOT = \"/opt/tiff/lib\", \"/opt/tiff/include\"\n#\n# If you have \"lib\" and \"include\" directories under a common parent,\n# you can use the \"libinclude\" helper:\n#\n# TIFF_ROOT = libinclude(\"/opt/tiff\")\n\nFREETYPE_ROOT = None\nJPEG_ROOT = None\nTIFF_ROOT = None\nZLIB_ROOT = None\nTCL_ROOT = None\n\n# FIXME: add mechanism to explicitly *disable* the use of a library\n\n# --------------------------------------------------------------------\n```\nand any of these libraries the setup thinks it finds will be set as\n\n```\n-DHAVE_LIBJPEG -DHAVE_LIBZ\n```\nand the like in \"building '_imaging' extension\".\n\nThis means that if a Sage binary is built on a computer with having some of these libraries, then this binary will *not* work (might not even start) on a computer not having at least these libraries available.\n\nEven more fun (again taken from PIL's setup.py):\n\n```\n        elif sys.platform == \"darwin\":\n            # attempt to make sure we pick freetype2 over other versions\n            add_directory(include_dirs, \"/sw/include/freetype2\")\n            add_directory(include_dirs, \"/sw/lib/freetype2/include\")\n            # fink installation directories\n            add_directory(library_dirs, \"/sw/lib\")\n            add_directory(include_dirs, \"/sw/include\")\n            # darwin ports installation directories\n            add_directory(library_dirs, \"/opt/local/lib\")\n            add_directory(include_dirs, \"/opt/local/include\")\n```\nLast, but not least, pil-1.1.6 as contained in Sage-4.2.alpha1 breaks the Sage build, at least on my computer. It somehow thinks it could find \"libjpeg\" and its includes, but then cannot:\n\n```\n...\nrunning build_ext\n--- using frameworks at /System/Library/Frameworks\nbuilding '_imaging' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-\nprototypes -DHAVE_LIBJPEG -DHAVE_LIBZ -I/System/Library/Frameworks/\nTcl.framework/Headers -I/System/Library/Frameworks/Tk.framework/\nHeaders -I/Users/Shared/sage/sage-4.2.alpha1/local/include/freetype2 -\nIlibImaging -I/opt/local/include -I/Users/Shared/sage/sage-4.2.alpha1/\nlocal/include -I/usr/local/include -I/usr/include -I/Users/Shared/sage/\nsage-4.2.alpha1/local/include/python2.6 -c decode.c -o build/\ntemp.macosx-10.3-i386-2.6/decode.o\nIn file included from decode.c:653:\nlibImaging/Jpeg.h:11:21: error: jpeglib.h: No such file or directory\nIn file included from decode.c:653:\nlibImaging/Jpeg.h:17: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:26: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:49: error: field 'cinfo' has incomplete type\nlibImaging/Jpeg.h:62: error: field 'pub' has incomplete type\nlibImaging/Jpeg.h:90: error: field 'cinfo' has incomplete type\nerror: command 'gcc' failed with exit status 1\n\nThe full install.log is at http://sage.math.washington.edu/home/weberg/logs/sage-4.2.alpha1_install.log\n```\nBut the problem with the binaries *will* occur on any platform, not only Darwin.\n\nSo we either have to also include a jpeg.spkg, a tiff.spkg, and so on in Sage (and make sure PIL uses these !!!), or cripple PIL to not use any of these libraries (even if they *were* present).\n\nThe former is problematic, as far as I remember e.g. the tiff license is not GPL compatible (apart from the technical aspects), but I might be mistaken. Crippling might render PIL pretty useless, however.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7273\n\n",
     "created_at": "2009-10-23T20:50:07Z",
     "labels": [
         "component: packages: standard",
@@ -48,13 +48,11 @@ TCL_ROOT = None
 
 # --------------------------------------------------------------------
 ```
-
 and any of these libraries the setup thinks it finds will be set as
 
 ```
 -DHAVE_LIBJPEG -DHAVE_LIBZ
 ```
-
 and the like in "building '_imaging' extension".
 
 This means that if a Sage binary is built on a computer with having some of these libraries, then this binary will *not* work (might not even start) on a computer not having at least these libraries available.
@@ -73,7 +71,6 @@ Even more fun (again taken from PIL's setup.py):
             add_directory(library_dirs, "/opt/local/lib")
             add_directory(include_dirs, "/opt/local/include")
 ```
-
 Last, but not least, pil-1.1.6 as contained in Sage-4.2.alpha1 breaks the Sage build, at least on my computer. It somehow thinks it could find "libjpeg" and its includes, but then cannot:
 
 ```
@@ -101,7 +98,6 @@ error: command 'gcc' failed with exit status 1
 
 The full install.log is at http://sage.math.washington.edu/home/weberg/logs/sage-4.2.alpha1_install.log
 ```
-
 But the problem with the binaries *will* occur on any platform, not only Darwin.
 
 So we either have to also include a jpeg.spkg, a tiff.spkg, and so on in Sage (and make sure PIL uses these !!!), or cripple PIL to not use any of these libraries (even if they *were* present).
@@ -119,7 +115,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7273
 archive/issue_comments_060399.json:
 ```json
 {
-    "body": "> Crippling might render PIL pretty useless, however. \n\nPIL will still be able to work with PNG, which we do include.\n\n---\n\nThat said, I'm OK with not including PIL in sage-4.2.  Whoever really wants PIL in Sage should fix the above issues for a future Sage release.",
+    "body": "> Crippling might render PIL pretty useless, however. \n\n\nPIL will still be able to work with PNG, which we do include.\n\n---\n\nThat said, I'm OK with not including PIL in sage-4.2.  Whoever really wants PIL in Sage should fix the above issues for a future Sage release.",
     "created_at": "2009-10-23T21:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7273",
     "type": "issue_comment",
@@ -129,6 +125,7 @@ archive/issue_comments_060399.json:
 ```
 
 > Crippling might render PIL pretty useless, however. 
+
 
 PIL will still be able to work with PNG, which we do include.
 
@@ -381,7 +378,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_060411.json:
 ```json
 {
-    "body": "> I'm guessing libtiff and libjpeg have to be voted in? \n\nFor standard yes, but for optional, the main thing is to get somebody to referee the packages and commit to maintaining them.",
+    "body": "> I'm guessing libtiff and libjpeg have to be voted in? \n\n\nFor standard yes, but for optional, the main thing is to get somebody to referee the packages and commit to maintaining them.",
     "created_at": "2009-11-12T06:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7273",
     "type": "issue_comment",
@@ -391,6 +388,7 @@ archive/issue_comments_060411.json:
 ```
 
 > I'm guessing libtiff and libjpeg have to be voted in? 
+
 
 For standard yes, but for optional, the main thing is to get somebody to referee the packages and commit to maintaining them.
 

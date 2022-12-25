@@ -85,7 +85,7 @@ Unfortunately, another ticket already got "p8", and the changes here need to be 
 archive/issue_comments_050976.json:
 ```json
 {
-    "body": "Replying to [comment:2 rlm]:\n> Unfortunately, another ticket already got \"p8\", and the changes here need to be reapplied to that spkg.\n\nThat spkg is available here:\n\nhttp://sage.math.washington.edu/home/rlmill/ntl-5.4.2.p8.spkg",
+    "body": "Replying to [comment:2 rlm]:\n> Unfortunately, another ticket already got \"p8\", and the changes here need to be reapplied to that spkg.\n\n\nThat spkg is available here:\n\nhttp://sage.math.washington.edu/home/rlmill/ntl-5.4.2.p8.spkg",
     "created_at": "2009-07-02T23:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6380",
     "type": "issue_comment",
@@ -96,6 +96,7 @@ archive/issue_comments_050976.json:
 
 Replying to [comment:2 rlm]:
 > Unfortunately, another ticket already got "p8", and the changes here need to be reapplied to that spkg.
+
 
 That spkg is available here:
 
@@ -140,7 +141,7 @@ now it is
 archive/issue_comments_050978.json:
 ```json
 {
-    "body": "Replying to [comment:4 drkirkby]:\n> OK, I've made the changes. \n> \n> Please see: \n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/ntl-5.4.2.p9/ (different directory to last one)\nThe NTL spkg above contains some junk and changes were not checked in. I've checked in changes in David Kirkby's name. The updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg",
+    "body": "Replying to [comment:4 drkirkby]:\n> OK, I've made the changes. \n> \n> Please see: \n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/ntl-5.4.2.p9/ (different directory to last one)\n\nThe NTL spkg above contains some junk and changes were not checked in. I've checked in changes in David Kirkby's name. The updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg",
     "created_at": "2009-07-15T16:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6380",
     "type": "issue_comment",
@@ -155,6 +156,7 @@ Replying to [comment:4 drkirkby]:
 > Please see: 
 > 
 > http://sage.math.washington.edu/home/kirkby/Solaris-fixes/ntl-5.4.2.p9/ (different directory to last one)
+
 The NTL spkg above contains some junk and changes were not checked in. I've checked in changes in David Kirkby's name. The updated spkg is available at
 
 http://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg
@@ -166,7 +168,7 @@ http://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg
 archive/issue_comments_050979.json:
 ```json
 {
-    "body": "After installing the NTL package at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg\n\nand running doctests on all of the Sage library, I got this:\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/modular/hecke/morphism.py # 0 doctests failed\n        sage -t -long devel/sage-main/sage/categories/morphism.pyx # 0 doctests failed\n```\n\nThe funny thing is that it reports doctest failures, with \"0 doctests failed\". I reinstalled `ntl-5.4.2.p8.spkg` and ran all doctests again, and they passed. I then installed **ntl-5.4.2.p9.spkg** a second time, ran all doctests, and they now passed without any of those weird \"0 doctests failed\".",
+    "body": "After installing the NTL package at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/ntl-5.4.2.p9.spkg\n\nand running doctests on all of the Sage library, I got this:\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/modular/hecke/morphism.py # 0 doctests failed\n        sage -t -long devel/sage-main/sage/categories/morphism.pyx # 0 doctests failed\n```\nThe funny thing is that it reports doctest failures, with \"0 doctests failed\". I reinstalled `ntl-5.4.2.p8.spkg` and ran all doctests again, and they passed. I then installed **ntl-5.4.2.p9.spkg** a second time, ran all doctests, and they now passed without any of those weird \"0 doctests failed\".",
     "created_at": "2009-07-15T17:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6380",
     "type": "issue_comment",
@@ -187,7 +189,6 @@ The following tests failed:
         sage -t -long devel/sage-main/sage/modular/hecke/morphism.py # 0 doctests failed
         sage -t -long devel/sage-main/sage/categories/morphism.pyx # 0 doctests failed
 ```
-
 The funny thing is that it reports doctest failures, with "0 doctests failed". I reinstalled `ntl-5.4.2.p8.spkg` and ran all doctests again, and they passed. I then installed **ntl-5.4.2.p9.spkg** a second time, ran all doctests, and they now passed without any of those weird "0 doctests failed".
 
 

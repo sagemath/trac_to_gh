@@ -3,7 +3,7 @@
 archive/issues_006036.json:
 ```json
 {
-    "body": "Assignee: Somebody\n\nThis works:\n\n\n```\nsage: R.<x,y>=PolynomialRing(QQ,2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nx^2 + y*x + y\n```\n\n\nBut this does not work:\n\n\n```\nsage: R.<x,y>=PolynomialRing(GF(5),2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index \n```\n\n\nThe bug is essentially in:\n\n```\nsage: B=QQ[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\n2*x + 1\nsage: B=GF(5)[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index\n}}\n\nI think the second form is not acceptable. Then the function\nremove_from_tuple() in sage.rings.polynomial.multi_polynomial.pyx\nshould be revised as it output (1,) from (1,2) for example\n\nIssue created by migration from https://trac.sagemath.org/ticket/6036\n\n",
+    "body": "Assignee: Somebody\n\nThis works:\n\n```\nsage: R.<x,y>=PolynomialRing(QQ,2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nx^2 + y*x + y\n```\n\nBut this does not work:\n\n```\nsage: R.<x,y>=PolynomialRing(GF(5),2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index \n```\n\nThe bug is essentially in:\n\n```\nsage: B=QQ[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\n2*x + 1\nsage: B=GF(5)[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index\n}}\n\nI think the second form is not acceptable. Then the function\nremove_from_tuple() in sage.rings.polynomial.multi_polynomial.pyx\nshould be revised as it output (1,) from (1,2) for example\n\nIssue created by migration from https://trac.sagemath.org/ticket/6036\n\n",
     "created_at": "2009-05-14T02:16:55Z",
     "labels": [
         "component: algebra",
@@ -21,7 +21,6 @@ Assignee: Somebody
 
 This works:
 
-
 ```
 sage: R.<x,y>=PolynomialRing(QQ,2)
 sage: a=x^2+x*y+y
@@ -29,9 +28,7 @@ sage: a.polynomial(x)
 x^2 + y*x + y
 ```
 
-
 But this does not work:
-
 
 ```
 sage: R.<x,y>=PolynomialRing(GF(5),2)
@@ -41,7 +38,6 @@ Traceback (most recent call last):
 ...
 TypeError: 'tuple' object cannot be interpreted as an index 
 ```
-
 
 The bug is essentially in:
 

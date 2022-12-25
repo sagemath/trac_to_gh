@@ -3,7 +3,7 @@
 archive/issues_004042.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
+    "body": "Assignee: @malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
     "created_at": "2008-09-02T21:00:38Z",
     "labels": [
         "component: build",
@@ -32,7 +32,6 @@ checking for x86 cpuid 0x80000006 output... unknown
 ./configure: line 21618: 16#unknown: value too great for base (error token is "16#unknown")
 ```
 
-
 Cheers,
 
 Michael
@@ -48,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4042
 archive/issue_comments_029094.json:
 ```json
 {
-    "body": "It does seem to build on **cleo**:\n\n```\n[malb@cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo\nprocessor  : 0\nvendor     : GenuineIntel\narch       : IA-64\nfamily     : Itanium 2\nmodel      : 0\nrevision   : 7\narchrev    : 0\nfeatures   : branchlong, 16-byte atomic ops\ncpu number : 0\ncpu regs   : 4\ncpu MHz    : 1594.000718\nitc MHz    : 399.177970\nBogoMIPS   : 3186.68\nsiblings   : 2\nphysical id: 0\ncore id    : 0\nthread id  : 0\n```\n\n\n\n```\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /bin/sed\nchecking the number of available CPUs... 4\nchecking the number of available CPUs... 4\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 16384 Bytes\nchecking the L2 cache size... 1048576 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```\n",
+    "body": "It does seem to build on **cleo**:\n\n```\n[malb@cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo\nprocessor  : 0\nvendor     : GenuineIntel\narch       : IA-64\nfamily     : Itanium 2\nmodel      : 0\nrevision   : 7\narchrev    : 0\nfeatures   : branchlong, 16-byte atomic ops\ncpu number : 0\ncpu regs   : 4\ncpu MHz    : 1594.000718\nitc MHz    : 399.177970\nBogoMIPS   : 3186.68\nsiblings   : 2\nphysical id: 0\ncore id    : 0\nthread id  : 0\n```\n\n```\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /bin/sed\nchecking the number of available CPUs... 4\nchecking the number of available CPUs... 4\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 16384 Bytes\nchecking the L2 cache size... 1048576 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```",
     "created_at": "2008-09-03T13:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4042",
     "type": "issue_comment",
@@ -80,8 +79,6 @@ core id    : 0
 thread id  : 0
 ```
 
-
-
 ```
 checking mm_malloc.h usability... no
 checking mm_malloc.h presence... no
@@ -95,7 +92,6 @@ checking the L1 cache size... 16384 Bytes
 checking the L2 cache size... 1048576 Bytes
 checking whether make sets $(MAKE)... (cached) yes
 ```
-
 
 
 
@@ -126,7 +122,7 @@ Michael
 archive/issue_comments_029096.json:
 ```json
 {
-    "body": "http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg\n\n\n```\n[19:41] <malb> mabshoff I bow down to you insisting on porting, the Itanium did reveal real bugs\n[19:41] <malb> All tests passed.\n[19:41] <mabshoff> :)[19:42] <malb> okay all tests pass on cleo\n[19:42] <malb> and it compiles on iras\n[19:43] <malb> sage.math:/home/malb/spkgs/libm4ri-20080903.spkg\n[19:43] <mabshoff> Nice. Is that the spkg at http://trac.sagemath.org/sage_trac/ticket/4042\n```\n",
+    "body": "http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg\n\n```\n[19:41] <malb> mabshoff I bow down to you insisting on porting, the Itanium did reveal real bugs\n[19:41] <malb> All tests passed.\n[19:41] <mabshoff> :)[19:42] <malb> okay all tests pass on cleo\n[19:42] <malb> and it compiles on iras\n[19:43] <malb> sage.math:/home/malb/spkgs/libm4ri-20080903.spkg\n[19:43] <mabshoff> Nice. Is that the spkg at http://trac.sagemath.org/sage_trac/ticket/4042\n```",
     "created_at": "2008-09-03T18:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4042",
     "type": "issue_comment",
@@ -137,7 +133,6 @@ archive/issue_comments_029096.json:
 
 http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg
 
-
 ```
 [19:41] <malb> mabshoff I bow down to you insisting on porting, the Itanium did reveal real bugs
 [19:41] <malb> All tests passed.
@@ -146,7 +141,6 @@ http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg
 [19:43] <malb> sage.math:/home/malb/spkgs/libm4ri-20080903.spkg
 [19:43] <mabshoff> Nice. Is that the spkg at http://trac.sagemath.org/sage_trac/ticket/4042
 ```
-
 
 
 

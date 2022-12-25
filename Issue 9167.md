@@ -3,7 +3,7 @@
 archive/issues_009167.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen @dimpase jpflori @jdemeyer\n\nThough the C-library interface to ecl builds on cygwin, it does not work at all.  All tests fail:\n\n\n```\nsage: import sage.libs.ecl\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\nImportError: No such process\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9167\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen @dimpase jpflori @jdemeyer\n\nThough the C-library interface to ecl builds on cygwin, it does not work at all.  All tests fail:\n\n```\nsage: import sage.libs.ecl\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\nImportError: No such process\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9167\n\n",
     "created_at": "2010-06-07T04:25:41Z",
     "labels": [
         "component: porting: cygwin",
@@ -22,7 +22,6 @@ CC:  @mwhansen @dimpase jpflori @jdemeyer
 
 Though the C-library interface to ecl builds on cygwin, it does not work at all.  All tests fail:
 
-
 ```
 sage: import sage.libs.ecl
 ---------------------------------------------------------------------------
@@ -33,7 +32,6 @@ ImportError                               Traceback (most recent call last)
 ImportError: No such process
 sage: 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9167
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9167
 archive/issue_comments_085448.json:
 ```json
 {
-    "body": "I don't know if it's related, but gcc reports are couple of rather serious looking warning messages with ecl. \n\n\n```\n/export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:678: warning: too few arguments for format\n/export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:680: warning: too many arguments for format\n```\n\n\nI'm surprised that gcc does not reject such code and refuse to compile it. \n\nDave",
+    "body": "I don't know if it's related, but gcc reports are couple of rather serious looking warning messages with ecl. \n\n```\n/export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:678: warning: too few arguments for format\n/export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:680: warning: too many arguments for format\n```\n\nI'm surprised that gcc does not reject such code and refuse to compile it. \n\nDave",
     "created_at": "2010-08-02T04:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -57,12 +55,10 @@ archive/issue_comments_085448.json:
 
 I don't know if it's related, but gcc reports are couple of rather serious looking warning messages with ecl. 
 
-
 ```
 /export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:678: warning: too few arguments for format
 /export/home/drkirkby/sage-4.5.1/spkg/build/ecl-10.2.1.p1/src/src/c/dpp.c:680: warning: too many arguments for format
 ```
-
 
 I'm surprised that gcc does not reject such code and refuse to compile it. 
 
@@ -115,7 +111,7 @@ Two possibly irrelevant data points:
 archive/issue_comments_085451.json:
 ```json
 {
-    "body": "A possibly useful explanation of something similar from the [Cygwin list](http://www.mail-archive.com/cygwin`@`cygwin.com/msg115538.html):\n\n```\nNow that they are in the cygwin dll, libgfortran doesn't need\n> to provide them anymore but this has the unfortunate side-effect of breaking\n> old executables, since on Windows an imported function reference in an\n> executable has to specify not just the function name but also the particular\n> DLL from which the import comes.\n>\n>  I imagine that on ELF platforms where the executable just has a list of\n> undefined functions and a list of shared libs to load and the dynamic linker\n> just satisfies an undefined symbol from whichever lib it first comes across a\n> definition of it, this probably works without anything needing changing.  But\n> we're stuck I'm afraid when exports move around like this.\n```\n",
+    "body": "A possibly useful explanation of something similar from the [Cygwin list](http://www.mail-archive.com/cygwin`@`cygwin.com/msg115538.html):\n\n```\nNow that they are in the cygwin dll, libgfortran doesn't need\n> to provide them anymore but this has the unfortunate side-effect of breaking\n> old executables, since on Windows an imported function reference in an\n> executable has to specify not just the function name but also the particular\n> DLL from which the import comes.\n>\n>  I imagine that on ELF platforms where the executable just has a list of\n> undefined functions and a list of shared libs to load and the dynamic linker\n> just satisfies an undefined symbol from whichever lib it first comes across a\n> definition of it, this probably works without anything needing changing.  But\n> we're stuck I'm afraid when exports move around like this.\n```",
     "created_at": "2011-08-08T15:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -142,7 +138,6 @@ Now that they are in the cygwin dll, libgfortran doesn't need
 
 
 
-
 ---
 
 archive/issue_comments_085452.json:
@@ -166,7 +161,7 @@ archive/issue_comments_085452.json:
 archive/issue_comments_085453.json:
 ```json
 {
-    "body": "[Cygwin's cygcheck information](http://www.cygwin.com/cygwin-ug-net/using-utils.html) was much more helpful, and I find two things.\n* When looking at `$SAGE_LOCAL/libs/ecl.dll`, \n\n```\ncygcheck: track_down:  could not find cyggc-1.dll\n```\n\n   shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.\n* When looking at `devel/sage/build/lib.cygwin.../sage/libs/ecl.dll`, I find\n\n```\ncygcheck: track_down:  could not find csage.dll\n```\n\n   This file is in `devel/sage/c_lib` and `local/lib`, but maybe that's not enough?",
+    "body": "[Cygwin's cygcheck information](http://www.cygwin.com/cygwin-ug-net/using-utils.html) was much more helpful, and I find two things.\n* When looking at `$SAGE_LOCAL/libs/ecl.dll`, \n\n```\ncygcheck: track_down:  could not find cyggc-1.dll\n```\n   shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.\n* When looking at `devel/sage/build/lib.cygwin.../sage/libs/ecl.dll`, I find\n\n```\ncygcheck: track_down:  could not find csage.dll\n```\n   This file is in `devel/sage/c_lib` and `local/lib`, but maybe that's not enough?",
     "created_at": "2011-08-08T16:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -181,14 +176,12 @@ archive/issue_comments_085453.json:
 ```
 cygcheck: track_down:  could not find cyggc-1.dll
 ```
-
    shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.
 * When looking at `devel/sage/build/lib.cygwin.../sage/libs/ecl.dll`, I find
 
 ```
 cygcheck: track_down:  could not find csage.dll
 ```
-
    This file is in `devel/sage/c_lib` and `local/lib`, but maybe that's not enough?
 
 
@@ -198,7 +191,7 @@ cygcheck: track_down:  could not find csage.dll
 archive/issue_comments_085454.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> [Cygwin's cygcheck information](http://www.cygwin.com/cygwin-ug-net/using-utils.html) was much more helpful, and I find two things.\n>  * When looking at `$SAGE_LOCAL/libs/ecl.dll`, \n> {{{\n> cygcheck: track_down:  could not find cyggc-1.dll\n> }}}\n>    shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.\n\nMine, at least, does NOT have `cyggc-1.dll` anywhere.  Apparently it does have libgc (this is a garbage collector) which I've seen connected to `cyggc-1.dll` on [the Cygwin list](http://www.mail-archive.com/cygwin-apps`@`cygwin.com/msg06654.html).  But I don't see how I could have `libgc` without `cyggc-1.dll` if that were the case... I guess the only thing to try is upgrading my libgc and adding libgc-devel, though I'm a little scared!",
+    "body": "Replying to [comment:6 kcrisman]:\n> [Cygwin's cygcheck information](http://www.cygwin.com/cygwin-ug-net/using-utils.html) was much more helpful, and I find two things.\n> * When looking at `$SAGE_LOCAL/libs/ecl.dll`, \n> \n> ```\n> cygcheck: track_down:  could not find cyggc-1.dll\n> ```\n>    shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.\n\n\nMine, at least, does NOT have `cyggc-1.dll` anywhere.  Apparently it does have libgc (this is a garbage collector) which I've seen connected to `cyggc-1.dll` on [the Cygwin list](http://www.mail-archive.com/cygwin-apps`@`cygwin.com/msg06654.html).  But I don't see how I could have `libgc` without `cyggc-1.dll` if that were the case... I guess the only thing to try is upgrading my libgc and adding libgc-devel, though I'm a little scared!",
     "created_at": "2011-08-08T16:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -209,11 +202,13 @@ archive/issue_comments_085454.json:
 
 Replying to [comment:6 kcrisman]:
 > [Cygwin's cygcheck information](http://www.cygwin.com/cygwin-ug-net/using-utils.html) was much more helpful, and I find two things.
->  * When looking at `$SAGE_LOCAL/libs/ecl.dll`, 
-> {{{
+> * When looking at `$SAGE_LOCAL/libs/ecl.dll`, 
+> 
+> ```
 > cygcheck: track_down:  could not find cyggc-1.dll
-> }}}
+> ```
 >    shows up a lot.   I have `cyggcc_s-1.dll`, `cyggcj-*`, `cyggcr-0.dll` and some others, but not this, in `/bin/`.
+
 
 Mine, at least, does NOT have `cyggc-1.dll` anywhere.  Apparently it does have libgc (this is a garbage collector) which I've seen connected to `cyggc-1.dll` on [the Cygwin list](http://www.mail-archive.com/cygwin-apps`@`cygwin.com/msg06654.html).  But I don't see how I could have `libgc` without `cyggc-1.dll` if that were the case... I guess the only thing to try is upgrading my libgc and adding libgc-devel, though I'm a little scared!
 
@@ -224,7 +219,7 @@ Mine, at least, does NOT have `cyggc-1.dll` anywhere.  Apparently it does have l
 archive/issue_comments_085455.json:
 ```json
 {
-    "body": "I can't even figure out where this is created!  Unless \n\n```\ncygwin* | mingw* | pw32*)\n  version_type=windows\n  need_version=no\n  need_lib_prefix=no\n  case $GCC,$host_os in\n  yes,cygwin*)\n    library_names_spec='$libname.dll.a'\n    soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n    postinstall_cmds='dlpath=`bash 2>&1 -c '\\''. $dir/${file}i;echo \\$dlname'\\''`~\n      dldir=$destdir/`dirname \\$dlpath`~\n      test -d \\$dldir || mkdir -p \\$dldir~\n      $install_prog .libs/$dlname \\$dldir/$dlname'\n    postuninstall_cmds='dldll=`bash 2>&1 -c '\\''. $file; echo \\$dlname'\\''`~\n      dlpath=$dir/\\$dldll~\n       $rm \\$dlpath'\n```\n\nand a few similar things in the configure and aclocal files.  I can't quite parse those sed things, though I am pretty sure this wouldn't produce that - but I'm not sure what `${release}` would be in this context.",
+    "body": "I can't even figure out where this is created!  Unless \n\n```\ncygwin* | mingw* | pw32*)\n  version_type=windows\n  need_version=no\n  need_lib_prefix=no\n  case $GCC,$host_os in\n  yes,cygwin*)\n    library_names_spec='$libname.dll.a'\n    soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n    postinstall_cmds='dlpath=`bash 2>&1 -c '\\''. $dir/${file}i;echo \\$dlname'\\''`~\n      dldir=$destdir/`dirname \\$dlpath`~\n      test -d \\$dldir || mkdir -p \\$dldir~\n      $install_prog .libs/$dlname \\$dldir/$dlname'\n    postuninstall_cmds='dldll=`bash 2>&1 -c '\\''. $file; echo \\$dlname'\\''`~\n      dlpath=$dir/\\$dldll~\n       $rm \\$dlpath'\n```\nand a few similar things in the configure and aclocal files.  I can't quite parse those sed things, though I am pretty sure this wouldn't produce that - but I'm not sure what `${release}` would be in this context.",
     "created_at": "2011-08-08T16:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -252,7 +247,6 @@ cygwin* | mingw* | pw32*)
       dlpath=$dir/\$dldll~
        $rm \$dlpath'
 ```
-
 and a few similar things in the configure and aclocal files.  I can't quite parse those sed things, though I am pretty sure this wouldn't produce that - but I'm not sure what `${release}` would be in this context.
 
 
@@ -262,7 +256,7 @@ and a few similar things in the configure and aclocal files.  I can't quite pars
 archive/issue_comments_085456.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n>\n\n```\n...\n    soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n...\n```\n\n> and a few similar things in the configure and aclocal files.\n\nWhere does this come from? ECL?\n\nThis *might* be the cause of the problem, since the `sed` command also replaces the `lib` prefix by `cyg`.",
+    "body": "Replying to [comment:8 kcrisman]:\n>\n\n{{{\n...\n    soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n...\n}}}\n> and a few similar things in the configure and aclocal files.\n\n\nWhere does this come from? ECL?\n\nThis *might* be the cause of the problem, since the `sed` command also replaces the `lib` prefix by `cyg`.",
     "created_at": "2011-08-08T18:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -274,13 +268,13 @@ archive/issue_comments_085456.json:
 Replying to [comment:8 kcrisman]:
 >
 
-```
+{{{
 ...
     soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'
 ...
-```
-
+}}}
 > and a few similar things in the configure and aclocal files.
+
 
 Where does this come from? ECL?
 
@@ -315,7 +309,7 @@ I vaguely remember there was also `dlltool` (perhaps from the MinGW project thou
 archive/issue_comments_085458.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:8 kcrisman]:\n> >\n> {{{\n> ...\n>     soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n> ...\n> }}}\n> > and a few similar things in the configure and aclocal files.\n> \n> Where does this come from? ECL?\n\nNo!  This is from the configure file for libgc-6.4.1 or so - the Boehm GC, ported to Cygwin.  I have libgc, just not cyggc.\n\n> This *might* be the cause of the problem, since the `sed` command also replaces the `lib` prefix by `cyg`.\n\nRight, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n\nI'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n\nAs to the tools, I think that cygcheck helped a lot, so for now I'm going to stick with that because I actually sort of understand it :)",
+    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:8 kcrisman]:\n> >\n\n> {{{\n> ...\n>     soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'\n> ...\n> }}}\n> > and a few similar things in the configure and aclocal files.\n\n> \n> Where does this come from? ECL?\n\n\nNo!  This is from the configure file for libgc-6.4.1 or so - the Boehm GC, ported to Cygwin.  I have libgc, just not cyggc.\n\n> This *might* be the cause of the problem, since the `sed` command also replaces the `lib` prefix by `cyg`.\n\n\nRight, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n\nI'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n\nAs to the tools, I think that cygcheck helped a lot, so for now I'm going to stick with that because I actually sort of understand it :)",
     "created_at": "2011-08-08T19:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -327,18 +321,22 @@ archive/issue_comments_085458.json:
 Replying to [comment:9 leif]:
 > Replying to [comment:8 kcrisman]:
 > >
+
 > {{{
 > ...
 >     soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'
 > ...
 > }}}
 > > and a few similar things in the configure and aclocal files.
+
 > 
 > Where does this come from? ECL?
+
 
 No!  This is from the configure file for libgc-6.4.1 or so - the Boehm GC, ported to Cygwin.  I have libgc, just not cyggc.
 
 > This *might* be the cause of the problem, since the `sed` command also replaces the `lib` prefix by `cyg`.
+
 
 Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  
 
@@ -353,7 +351,7 @@ As to the tools, I think that cygcheck helped a lot, so for now I'm going to sti
 archive/issue_comments_085459.json:
 ```json
 {
-    "body": "> Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n> \n> I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n\nI think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ....  Not for the last time, I have to say that Cygwin definitely is a moving target.",
+    "body": "> Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n> \n> I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n\n\nI think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ....  Not for the last time, I have to say that Cygwin definitely is a moving target.",
     "created_at": "2011-08-08T20:21:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -366,6 +364,7 @@ archive/issue_comments_085459.json:
 > 
 > I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(
 
+
 I think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ....  Not for the last time, I have to say that Cygwin definitely is a moving target.
 
 
@@ -375,7 +374,7 @@ I think that libgc-devel was what it took to get this file.  However, the upgrad
 archive/issue_comments_085460.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> \n> > Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n> > \n> > I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n> \n> I think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ...\n\n...and I managed to toast my Cygwin lapack.  As far as I can tell I downgraded everything necessary to the right version, rebuilt lapack, rebooted, but still no go.  \n\n```\n$ python\n>>> import numpy\nImportError <snip>\n```\n\nNuts.  Note that fixing this for the Cygwin Python should fix it for Sage, I think, since we use the same Fortran stuff and even lapack (?), certainly BLAS/ATLAS.",
+    "body": "Replying to [comment:12 kcrisman]:\n> \n> > Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  \n> > \n> > I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(\n\n> \n> I think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ...\n\n\n...and I managed to toast my Cygwin lapack.  As far as I can tell I downgraded everything necessary to the right version, rebuilt lapack, rebooted, but still no go.  \n\n```\n$ python\n>>> import numpy\nImportError <snip>\n```\nNuts.  Note that fixing this for the Cygwin Python should fix it for Sage, I think, since we use the same Fortran stuff and even lapack (?), certainly BLAS/ATLAS.",
     "created_at": "2011-08-08T21:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -389,8 +388,10 @@ Replying to [comment:12 kcrisman]:
 > > Right, that is why I pointed to it.  But it doesn't seem to replace the `-6.4.1` (or `-7.1.1`, now) with `-1`, as far as I could tell.  And I didn't have anything like `cyggc-*` on it.  
 > > 
 > > I'm almost done upgrading and adding `libgc-devel` on my Cygwin - which meant upgrading basically every single Cygwin package, because this Cygwin hadn't been changed in a year or more.  Hopefully won't break anything else, but probably will :(
+
 > 
 > I think that libgc-devel was what it took to get this file.  However, the upgrade upgraded too much - see [this Cygwin list thread](http://cygwin.com/ml/cygwin/2011-03/msg00750.html) - so I had to downgrade libgfortran as described there, and gcc, and ...
+
 
 ...and I managed to toast my Cygwin lapack.  As far as I can tell I downgraded everything necessary to the right version, rebuilt lapack, rebooted, but still no go.  
 
@@ -399,7 +400,6 @@ $ python
 >>> import numpy
 ImportError <snip>
 ```
-
 Nuts.  Note that fixing this for the Cygwin Python should fix it for Sage, I think, since we use the same Fortran stuff and even lapack (?), certainly BLAS/ATLAS.
 
 
@@ -431,7 +431,7 @@ This might be a `PATH` problem, judging by some similar issues elsewhere.  Unfor
 archive/issue_comments_085462.json:
 ```json
 {
-    "body": "> However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  \n\nYeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?  It certainly doesn't include `local/lib`, but I don't know if that's really the problem.",
+    "body": "> However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  \n\n\nYeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?  It certainly doesn't include `local/lib`, but I don't know if that's really the problem.",
     "created_at": "2011-08-09T02:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -442,6 +442,7 @@ archive/issue_comments_085462.json:
 
 > However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  
 
+
 Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?  It certainly doesn't include `local/lib`, but I don't know if that's really the problem.
 
 
@@ -451,7 +452,7 @@ Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found fo
 archive/issue_comments_085463.json:
 ```json
 {
-    "body": "Replying to [comment:15 kcrisman]:\n> > However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  \n> \n> Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?\n\nIn `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.\n\n> It certainly doesn't include `local/lib`, but I don't know if that's really the problem.\n\nWell, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.",
+    "body": "Replying to [comment:15 kcrisman]:\n> > However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  \n\n> \n> Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?\n\n\nIn `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.\n\n> It certainly doesn't include `local/lib`, but I don't know if that's really the problem.\n\n\nWell, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.",
     "created_at": "2011-08-09T03:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -462,12 +463,15 @@ archive/issue_comments_085463.json:
 
 Replying to [comment:15 kcrisman]:
 > > However, there is also still a problem that `cygcheck` finds all the needed dlls for the `ecl.dll` in `local/lib` and `local/bin`, but not for the ones in `devel/sage/build/sage/libs/`.  It cannot find `ecl.dll` or `csage.dll`.  Which seems weird, since those files certainly exist.  
+
 > 
 > Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?
+
 
 In `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.
 
 > It certainly doesn't include `local/lib`, but I don't know if that's really the problem.
+
 
 Well, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.
 
@@ -478,7 +482,7 @@ Well, before editing `sage-env`, you could just try modifying your `PATH` from t
 archive/issue_comments_085464.json:
 ```json
 {
-    "body": "> > Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?\n> \n> In `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.\n> \n> > It certainly doesn't include `local/lib`, but I don't know if that's really the problem.\n\nWell, I have good news and bad news.  \n> Well, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.\n* Good news: editing `PATH` from the shell to include `local/lib` made cygcheck pass for these files.\n* News: `sage-env` includes\n\n```\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n```\n\n* Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure it's a path issue, but maybe they are in the wrong order or something?   I have no idea how complex this could get...",
+    "body": "> > Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?\n\n> \n> In `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.\n> \n> > It certainly doesn't include `local/lib`, but I don't know if that's really the problem.\n\n\nWell, I have good news and bad news.  \n> Well, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.\n* Good news: editing `PATH` from the shell to include `local/lib` made cygcheck pass for these files.\n* News: `sage-env` includes\n\n```\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n```\n* Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure it's a path issue, but maybe they are in the wrong order or something?   I have no idea how complex this could get...",
     "created_at": "2011-08-09T13:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -488,10 +492,12 @@ archive/issue_comments_085464.json:
 ```
 
 > > Yeah, after a `./sage -br` it still looks like `csage.dll` is not being found for some reason.  Must be a path issue, I think.  Where do we set the Sage path?
+
 > 
 > In `local/bin/sage-env`. You could special-case Cygwin there and add all directories that contain DLLs, as Windows treats them as executables.
 > 
 > > It certainly doesn't include `local/lib`, but I don't know if that's really the problem.
+
 
 Well, I have good news and bad news.  
 > Well, before editing `sage-env`, you could just try modifying your `PATH` from the shell accordingly.
@@ -503,7 +509,6 @@ if [ "$UNAME" = "CYGWIN" ]; then
     PATH="$PATH:$SAGE_LOCAL/lib" && export PATH
 fi
 ```
-
 * Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure it's a path issue, but maybe they are in the wrong order or something?   I have no idea how complex this could get...
 
 
@@ -513,7 +518,7 @@ fi
 archive/issue_comments_085465.json:
 ```json
 {
-    "body": ">  * News: `sage-env` includes\n\n```\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n```\n\n>  * Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure \nFor some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?",
+    "body": ">  * News: `sage-env` includes\n \n{{{\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n}}}\n>  * Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure \n \nFor some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?",
     "created_at": "2011-08-09T15:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -523,14 +528,14 @@ archive/issue_comments_085465.json:
 ```
 
 >  * News: `sage-env` includes
-
-```
+ 
+{{{
 if [ "$UNAME" = "CYGWIN" ]; then
     PATH="$PATH:$SAGE_LOCAL/lib" && export PATH
 fi
-```
-
+}}}
 >  * Bad news: even with this added to `PATH` *and* this being in the `sage-env`, I still have this problem.  I'm still pretty sure 
+ 
 For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?
 
 
@@ -558,7 +563,7 @@ Another possibility, suggested by [this thread](http://old.nabble.com/Re%3A-inst
 archive/issue_comments_085467.json:
 ```json
 {
-    "body": "Replying to [comment:18 kcrisman]:\n> >  * News: `sage-env` includes\n\n```sh\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n```\n\n\nYep, but this should IMHO be moved up in the file (including the definition of `UNAME`), in any case above\n\n```sh\nif [ \"$1\" = \"-short\" ]; then\n    return 0\nfi\n```\n\nand `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.\n\n> For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?\n\nNo idea. What does `os.environ.get(\"PATH\")` give?\n\nI also don't know if we have to add some more or different things to `PYTHONPATH` on Cygwin.\n\nNote that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it is a directory] in `sage-env`) is a **symbolic link** on Linux etc. (pointing to `$SAGE_LOCAL/lib/python2.6`); I don't know if it is the real directory on Cygwin instead.",
+    "body": "Replying to [comment:18 kcrisman]:\n> >  * News: `sage-env` includes\n \n{{{#!sh\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib\" && export PATH\nfi\n}}}\n\nYep, but this should IMHO be moved up in the file (including the definition of `UNAME`), in any case above\n\n```sh\nif [ \"$1\" = \"-short\" ]; then\n    return 0\nfi\n```\nand `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.\n\n> For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?\n\n\nNo idea. What does `os.environ.get(\"PATH\")` give?\n\nI also don't know if we have to add some more or different things to `PYTHONPATH` on Cygwin.\n\nNote that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it is a directory] in `sage-env`) is a **symbolic link** on Linux etc. (pointing to `$SAGE_LOCAL/lib/python2.6`); I don't know if it is the real directory on Cygwin instead.",
     "created_at": "2011-08-09T17:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -569,13 +574,12 @@ archive/issue_comments_085467.json:
 
 Replying to [comment:18 kcrisman]:
 > >  * News: `sage-env` includes
-
-```sh
+ 
+{{{#!sh
 if [ "$UNAME" = "CYGWIN" ]; then
     PATH="$PATH:$SAGE_LOCAL/lib" && export PATH
 fi
-```
-
+}}}
 
 Yep, but this should IMHO be moved up in the file (including the definition of `UNAME`), in any case above
 
@@ -584,10 +588,10 @@ if [ "$1" = "-short" ]; then
     return 0
 fi
 ```
-
 and `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.
 
 > For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?
+
 
 No idea. What does `os.environ.get("PATH")` give?
 
@@ -602,7 +606,7 @@ Note that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it i
 archive/issue_comments_085468.json:
 ```json
 {
-    "body": "> and `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.\nThat sounds like a good idea.  But should it be before `$SAGE_ROOT` and `$SAGE_LOCAL/bin`?\n> > For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?\n> \n> No idea. What does `os.environ.get(\"PATH\")` give?\nThis gives what I would expect - Sage root, Sage local bin, usr/bin, some Cygwin stuff, a Lapack thing I had to add due to my carelessness, and then Sage local lib.\n> I also don't know if we have to add some more or different things to `PYTHONPATH` on Cygwin.\nThis is very sparse.  It is just the directory below.\n> Note that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it is a directory] in `sage-env`) is a **symbolic link** on Linux etc. (pointing to `$SAGE_LOCAL/lib/python2.6`); I don't know if it is the real directory on Cygwin instead.\nIt looks like it's the same on Cygwin.\n\nAnother interesting thing is that there are libntl.dll files in /local/bin and /local/lib.  Moving just one doesn't seem to do much - note that the bin one is the one imported usually, as in your comment above.  Furthermore, apparently only the ecl.dll in devel/sage/build/sage/libs needs libntl.dll and cyggmp, while the one in local/{bin,lib} just wants cyggmp-3.dll.\n\nAnyway, I guess I can move files around all day but I'm not getting any nearer.",
+    "body": "> and `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.\n\nThat sounds like a good idea.  But should it be before `$SAGE_ROOT` and `$SAGE_LOCAL/bin`?\n> > For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?\n\n> \n> No idea. What does `os.environ.get(\"PATH\")` give?\n\nThis gives what I would expect - Sage root, Sage local bin, usr/bin, some Cygwin stuff, a Lapack thing I had to add due to my carelessness, and then Sage local lib.\n> I also don't know if we have to add some more or different things to `PYTHONPATH` on Cygwin.\n\nThis is very sparse.  It is just the directory below.\n> Note that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it is a directory] in `sage-env`) is a **symbolic link** on Linux etc. (pointing to `$SAGE_LOCAL/lib/python2.6`); I don't know if it is the real directory on Cygwin instead.\n\nIt looks like it's the same on Cygwin.\n\nAnother interesting thing is that there are libntl.dll files in /local/bin and /local/lib.  Moving just one doesn't seem to do much - note that the bin one is the one imported usually, as in your comment above.  Furthermore, apparently only the ecl.dll in devel/sage/build/sage/libs needs libntl.dll and cyggmp, while the one in local/{bin,lib} just wants cyggmp-3.dll.\n\nAnyway, I guess I can move files around all day but I'm not getting any nearer.",
     "created_at": "2011-08-09T20:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -612,14 +616,19 @@ archive/issue_comments_085468.json:
 ```
 
 > and `$SAGE_LOCAL/lib` should be **pre**pended to pick up Sage's versions *first*.
+
 That sounds like a good idea.  But should it be before `$SAGE_ROOT` and `$SAGE_LOCAL/bin`?
 > > For some reason this is not actually in Sage's path, gotten by `sys.path` in the Sage session.  And adding it to `sys.path` didn't help, either.  What the heck is going on?
+
 > 
 > No idea. What does `os.environ.get("PATH")` give?
+
 This gives what I would expect - Sage root, Sage local bin, usr/bin, some Cygwin stuff, a Lapack thing I had to add due to my carelessness, and then Sage local lib.
 > I also don't know if we have to add some more or different things to `PYTHONPATH` on Cygwin.
+
 This is very sparse.  It is just the directory below.
 > Note that e.g. `$SAGE_LOCAL/lib/python` (which is added to `PYTHONPATH` [if it is a directory] in `sage-env`) is a **symbolic link** on Linux etc. (pointing to `$SAGE_LOCAL/lib/python2.6`); I don't know if it is the real directory on Cygwin instead.
+
 It looks like it's the same on Cygwin.
 
 Another interesting thing is that there are libntl.dll files in /local/bin and /local/lib.  Moving just one doesn't seem to do much - note that the bin one is the one imported usually, as in your comment above.  Furthermore, apparently only the ecl.dll in devel/sage/build/sage/libs needs libntl.dll and cyggmp, while the one in local/{bin,lib} just wants cyggmp-3.dll.
@@ -651,7 +660,7 @@ Question for Dima or others; is it possible that we have *too many* copies of th
 archive/issue_comments_085470.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> Question for Dima or others; is it possible that we have *too many* copies of the dlls?  Either that the ecl.dll files are in too many places - local/lib and local/bin - or that the extra libntl.dll files also are causing problems?  See #11635 for where this started - perhaps this is the cause of all the trouble?  \n\n\nfor the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).",
+    "body": "Replying to [comment:22 kcrisman]:\n> Question for Dima or others; is it possible that we have *too many* copies of the dlls?  Either that the ecl.dll files are in too many places - local/lib and local/bin - or that the extra libntl.dll files also are causing problems?  See #11635 for where this started - perhaps this is the cause of all the trouble?  \n\n\n\nfor the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).",
     "created_at": "2011-12-14T02:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -664,6 +673,7 @@ Replying to [comment:22 kcrisman]:
 > Question for Dima or others; is it possible that we have *too many* copies of the dlls?  Either that the ecl.dll files are in too many places - local/lib and local/bin - or that the extra libntl.dll files also are causing problems?  See #11635 for where this started - perhaps this is the cause of all the trouble?  
 
 
+
 for the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).
 
 
@@ -673,7 +683,7 @@ for the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; o
 archive/issue_comments_085471.json:
 ```json
 {
-    "body": "> for the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).\nRight, and the third one is the one which which yields \"No such process\".  \n\nAlthough just by chance I tried (in `./sage -ipython`) \n\n```\nfrom sage.matrix import matrix_integer_dense_hnf\nNameError: ZZ\n```\n\nfrom the import from `sage.libs.ntl.ntl_ZZ` even though\n\n```\nfrom sage.libs.ntl import *\nntl_ZZ\n```\n\nworks fine.  Still going to take a while to track all this down, sigh...\n\nWhat do you think about the possibility that it's just a path problem suggested above?  I just don't know enough about how all this works to be sure.",
+    "body": "> for the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).\n\nRight, and the third one is the one which which yields \"No such process\".  \n\nAlthough just by chance I tried (in `./sage -ipython`) \n\n```\nfrom sage.matrix import matrix_integer_dense_hnf\nNameError: ZZ\n```\nfrom the import from `sage.libs.ntl.ntl_ZZ` even though\n\n```\nfrom sage.libs.ntl import *\nntl_ZZ\n```\nworks fine.  Still going to take a while to track all this down, sigh...\n\nWhat do you think about the possibility that it's just a path problem suggested above?  I just don't know enough about how all this works to be sure.",
     "created_at": "2011-12-14T02:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -683,6 +693,7 @@ archive/issue_comments_085471.json:
 ```
 
 > for the record, 2 different copies of ecl.dll in SAGE_ROOT/local/ are created; one in local/lib (and/or local/bin), created from ecl spkg, the other in local/lib/python2.6/site-packages/sage/libs/, which contains Sage/Python interface to ecl (I don't know details about how and when it is built).
+
 Right, and the third one is the one which which yields "No such process".  
 
 Although just by chance I tried (in `./sage -ipython`) 
@@ -691,14 +702,12 @@ Although just by chance I tried (in `./sage -ipython`)
 from sage.matrix import matrix_integer_dense_hnf
 NameError: ZZ
 ```
-
 from the import from `sage.libs.ntl.ntl_ZZ` even though
 
 ```
 from sage.libs.ntl import *
 ntl_ZZ
 ```
-
 works fine.  Still going to take a while to track all this down, sigh...
 
 What do you think about the possibility that it's just a path problem suggested above?  I just don't know enough about how all this works to be sure.
@@ -710,7 +719,7 @@ What do you think about the possibility that it's just a path problem suggested 
 archive/issue_comments_085472.json:
 ```json
 {
-    "body": "Here's something interesting.\n\n```\nUser 1@GC02635 /home/SageUser/sage-4.7.2\n$ cygcheck local/bin/ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\ecl.dll\n  C:\\cygwin\\bin\\cyggc-1.dll\n    C:\\cygwin\\bin\\cygwin1.dll\n      C:\\WINDOWS\\system32\\ADVAPI32.DLL\n        C:\\WINDOWS\\system32\\KERNEL32.dll\n          C:\\WINDOWS\\system32\\ntdll.dll\n        C:\\WINDOWS\\system32\\RPCRT4.dll\n          C:\\WINDOWS\\system32\\Secur32.dll\n    C:\\cygwin\\bin\\cyggcc_s-1.dll\n  C:\\cygwin\\bin\\cyggmp-3.dll\n  C:\\cygwin\\bin\\cygffi-4.dll\n\nUser 1@GC02635 /home/SageUser/sage-4.7.2\n$ cygcheck local/bin/ecl.exe\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\ecl.exe\n  C:\\cygwin\\bin\\cygwin1.dll\n    C:\\WINDOWS\\system32\\ADVAPI32.DLL\n      C:\\WINDOWS\\system32\\KERNEL32.dll\n        C:\\WINDOWS\\system32\\ntdll.dll\n      C:\\WINDOWS\\system32\\RPCRT4.dll\n        C:\\WINDOWS\\system32\\Secur32.dll\ncygcheck: track_down: could not find ecl.dll\n\n```\n\nOr maybe it's boring.  At any rate, I find this weird.\n\nAnd here is the cygcheck for the offending dll.\n\n```\nUser 1@GC02635 /home/SageUser/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs\n$ cygcheck ./ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n  C:\\cygwin\\bin\\cygwin1.dll\n    C:\\WINDOWS\\system32\\ADVAPI32.DLL\n      C:\\WINDOWS\\system32\\KERNEL32.dll\n        C:\\WINDOWS\\system32\\ntdll.dll\n      C:\\WINDOWS\\system32\\RPCRT4.dll\n        C:\\WINDOWS\\system32\\Secur32.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\ncygcheck: track_down: could not find libpython2.6.dll\n\ncygcheck: track_down: could not find libpython2.6.dll\n\ncygcheck: track_down: could not find csage.dll\n\ncygcheck: track_down: could not find csage.dll\n\n```\n\nThat's a lot of things not to find.",
+    "body": "Here's something interesting.\n\n```\nUser 1@GC02635 /home/SageUser/sage-4.7.2\n$ cygcheck local/bin/ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\ecl.dll\n  C:\\cygwin\\bin\\cyggc-1.dll\n    C:\\cygwin\\bin\\cygwin1.dll\n      C:\\WINDOWS\\system32\\ADVAPI32.DLL\n        C:\\WINDOWS\\system32\\KERNEL32.dll\n          C:\\WINDOWS\\system32\\ntdll.dll\n        C:\\WINDOWS\\system32\\RPCRT4.dll\n          C:\\WINDOWS\\system32\\Secur32.dll\n    C:\\cygwin\\bin\\cyggcc_s-1.dll\n  C:\\cygwin\\bin\\cyggmp-3.dll\n  C:\\cygwin\\bin\\cygffi-4.dll\n\nUser 1@GC02635 /home/SageUser/sage-4.7.2\n$ cygcheck local/bin/ecl.exe\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\ecl.exe\n  C:\\cygwin\\bin\\cygwin1.dll\n    C:\\WINDOWS\\system32\\ADVAPI32.DLL\n      C:\\WINDOWS\\system32\\KERNEL32.dll\n        C:\\WINDOWS\\system32\\ntdll.dll\n      C:\\WINDOWS\\system32\\RPCRT4.dll\n        C:\\WINDOWS\\system32\\Secur32.dll\ncygcheck: track_down: could not find ecl.dll\n\n```\nOr maybe it's boring.  At any rate, I find this weird.\n\nAnd here is the cygcheck for the offending dll.\n\n```\nUser 1@GC02635 /home/SageUser/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs\n$ cygcheck ./ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n  C:\\cygwin\\bin\\cygwin1.dll\n    C:\\WINDOWS\\system32\\ADVAPI32.DLL\n      C:\\WINDOWS\\system32\\KERNEL32.dll\n        C:\\WINDOWS\\system32\\ntdll.dll\n      C:\\WINDOWS\\system32\\RPCRT4.dll\n        C:\\WINDOWS\\system32\\Secur32.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\ncygcheck: track_down: could not find libpython2.6.dll\n\ncygcheck: track_down: could not find libpython2.6.dll\n\ncygcheck: track_down: could not find csage.dll\n\ncygcheck: track_down: could not find csage.dll\n\n```\nThat's a lot of things not to find.",
     "created_at": "2011-12-14T02:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -748,7 +757,6 @@ C:\cygwin\home\SageUser\sage-4.7.2\local\bin\ecl.exe
 cygcheck: track_down: could not find ecl.dll
 
 ```
-
 Or maybe it's boring.  At any rate, I find this weird.
 
 And here is the cygcheck for the offending dll.
@@ -773,7 +781,6 @@ cygcheck: track_down: could not find csage.dll
 cygcheck: track_down: could not find csage.dll
 
 ```
-
 That's a lot of things not to find.
 
 
@@ -783,7 +790,7 @@ That's a lot of things not to find.
 archive/issue_comments_085473.json:
 ```json
 {
-    "body": "Scratch that - in private comm. Dima points out that we should be in the subshell.\n\n```\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n(sage subshell) GC02635:sage-4.7.2 User 1$ cd local/lib/python2.6/site-packages/sage/libs/\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n(sage subshell) GC02635:libs User 1$ cygcheck ./ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\libpython2.6.dll\n    C:\\cygwin\\bin\\cygwin1.dll\n      C:\\WINDOWS\\system32\\ADVAPI32.DLL\n        C:\\WINDOWS\\system32\\KERNEL32.dll\n          C:\\WINDOWS\\system32\\ntdll.dll\n        C:\\WINDOWS\\system32\\RPCRT4.dll\n          C:\\WINDOWS\\system32\\Secur32.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n    C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\lib\\csage.dll\n      C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\cyggmp-3.dll\n      C:\\cygwin\\bin\\cyggcc_s-1.dll\n      C:\\cygwin\\bin\\cygstdc++-6.dll\n      C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\lib\\libntl.dll\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n```\n\nBut doing it outside its own directory yields the same \"could not find\" message as before.  It only finds it if I'm already in site-packages/sage/.",
+    "body": "Scratch that - in private comm. Dima points out that we should be in the subshell.\n\n```\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n(sage subshell) GC02635:sage-4.7.2 User 1$ cd local/lib/python2.6/site-packages/sage/libs/\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n(sage subshell) GC02635:libs User 1$ cygcheck ./ecl.dll\nC:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\libpython2.6.dll\n    C:\\cygwin\\bin\\cygwin1.dll\n      C:\\WINDOWS\\system32\\ADVAPI32.DLL\n        C:\\WINDOWS\\system32\\KERNEL32.dll\n          C:\\WINDOWS\\system32\\ntdll.dll\n        C:\\WINDOWS\\system32\\RPCRT4.dll\n          C:\\WINDOWS\\system32\\Secur32.dll\n  C:\\cygwin\\home\\SageUser\\sage-4.7.2\\devel\\sage-main\\build\\sage\\libs\\ecl.dll\n    C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\lib\\csage.dll\n      C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\bin\\cyggmp-3.dll\n      C:\\cygwin\\bin\\cyggcc_s-1.dll\n      C:\\cygwin\\bin\\cygstdc++-6.dll\n      C:\\cygwin\\home\\SageUser\\sage-4.7.2\\local\\lib\\libntl.dll\nSAGE_ROOT=/home/SageUser/sage-4.7.2\n```\nBut doing it outside its own directory yields the same \"could not find\" message as before.  It only finds it if I'm already in site-packages/sage/.",
     "created_at": "2011-12-14T03:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -815,7 +822,6 @@ C:\cygwin\home\SageUser\sage-4.7.2\devel\sage-main\build\sage\libs\ecl.dll
       C:\cygwin\home\SageUser\sage-4.7.2\local\lib\libntl.dll
 SAGE_ROOT=/home/SageUser/sage-4.7.2
 ```
-
 But doing it outside its own directory yields the same "could not find" message as before.  It only finds it if I'm already in site-packages/sage/.
 
 
@@ -825,7 +831,7 @@ But doing it outside its own directory yields the same "could not find" message 
 archive/issue_comments_085474.json:
 ```json
 {
-    "body": "Replying to [comment:26 kcrisman]:\n> Scratch that - in private comm. Dima points out that we should be in the subshell.\n\nstill, we need to know details of Sage/Python extension implementation on Cygwin to solve this. It could be just an artefact of broken Python/Cython (fork() failures when running sage -b are a pain...)",
+    "body": "Replying to [comment:26 kcrisman]:\n> Scratch that - in private comm. Dima points out that we should be in the subshell.\n\n\nstill, we need to know details of Sage/Python extension implementation on Cygwin to solve this. It could be just an artefact of broken Python/Cython (fork() failures when running sage -b are a pain...)",
     "created_at": "2011-12-14T04:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -836,6 +842,7 @@ archive/issue_comments_085474.json:
 
 Replying to [comment:26 kcrisman]:
 > Scratch that - in private comm. Dima points out that we should be in the subshell.
+
 
 still, we need to know details of Sage/Python extension implementation on Cygwin to solve this. It could be just an artefact of broken Python/Cython (fork() failures when running sage -b are a pain...)
 
@@ -922,7 +929,7 @@ And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.
 archive/issue_comments_085479.json:
 ```json
 {
-    "body": "Replying to [comment:32 jpflori]:\n> And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.\nthe following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.",
+    "body": "Replying to [comment:32 jpflori]:\n> And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.\n\nthe following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.",
     "created_at": "2012-08-07T14:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -933,6 +940,7 @@ archive/issue_comments_085479.json:
 
 Replying to [comment:32 jpflori]:
 > And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.
+
 the following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.
 
 
@@ -962,7 +970,7 @@ and these two variables are set to '' and 'dll' by configure on Cygwin.
 archive/issue_comments_085481.json:
 ```json
 {
-    "body": "Replying to [comment:33 dimpase]:\n> Replying to [comment:32 jpflori]:\n> > And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.\n> the following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.\nI agree with you.\nThe question is now if it's trivial enough to modify the build of the shared library on Cygwin.\nUnfortunately, ecl does not use libtool.",
+    "body": "Replying to [comment:33 dimpase]:\n> Replying to [comment:32 jpflori]:\n> > And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.\n\n> the following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.\nI agree with you.\nThe question is now if it's trivial enough to modify the build of the shared library on Cygwin.\nUnfortunately, ecl does not use libtool.",
     "created_at": "2012-08-07T14:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -974,6 +982,7 @@ archive/issue_comments_085481.json:
 Replying to [comment:33 dimpase]:
 > Replying to [comment:32 jpflori]:
 > > And the question is now, why do we get ecl.dll in local/lib/ rather than libecl.dll.
+
 > the following [Cygwin doc](http://cygwin.com/cygwin-ug-net/dll.html#dll-build) seems to imply that  `lib` prefix is merely a matter of convenience; it recommends that there should be no `libecl.dll`; it should rather be `cygecl.dll` and `libecl.dll.a`.
 I agree with you.
 The question is now if it's trivial enough to modify the build of the shared library on Cygwin.
@@ -1085,7 +1094,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085487.json:
 ```json
 {
-    "body": "Replying to [comment:37 jpflori]:\n> As I had to run autoconf which modified a lot of data in config*, the patch included and the hg history will be quite big ...\n\nYou may try to use the exact same versions of `automake` and `autoconf`... ;-)\n\n> Another solution would be to included a patched src directory in the spkg, but I can already hear people ranting.\n\nWell, I'm personally ok with just \"autoreconfing\" `src/`, but such disturbes the move to git.\n\n> Or directly patch configure in a minimal way, but I'm not so inclined to doing so.\n\nIf the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.",
+    "body": "Replying to [comment:37 jpflori]:\n> As I had to run autoconf which modified a lot of data in config*, the patch included and the hg history will be quite big ...\n\n\nYou may try to use the exact same versions of `automake` and `autoconf`... ;-)\n\n> Another solution would be to included a patched src directory in the spkg, but I can already hear people ranting.\n\n\nWell, I'm personally ok with just \"autoreconfing\" `src/`, but such disturbes the move to git.\n\n> Or directly patch configure in a minimal way, but I'm not so inclined to doing so.\n\n\nIf the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.",
     "created_at": "2012-08-07T17:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1097,13 +1106,16 @@ archive/issue_comments_085487.json:
 Replying to [comment:37 jpflori]:
 > As I had to run autoconf which modified a lot of data in config*, the patch included and the hg history will be quite big ...
 
+
 You may try to use the exact same versions of `automake` and `autoconf`... ;-)
 
 > Another solution would be to included a patched src directory in the spkg, but I can already hear people ranting.
 
+
 Well, I'm personally ok with just "autoreconfing" `src/`, but such disturbes the move to git.
 
 > Or directly patch configure in a minimal way, but I'm not so inclined to doing so.
+
 
 If the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.
 
@@ -1114,7 +1126,7 @@ If the patch isn't that large, that's perhaps the best solution until upstream i
 archive/issue_comments_085488.json:
 ```json
 {
-    "body": "Replying to [comment:39 leif]:\n> If the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.\n> \nI agree with both these ideas, see also https://groups.google.com/d/topic/sage-devel/Ikwfh6PXJnQ/discussion .\n\nThe problem with patching configure directly is that it needs more dirty work and I'm lazy to do it.",
+    "body": "Replying to [comment:39 leif]:\n> If the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.\n> \n\nI agree with both these ideas, see also https://groups.google.com/d/topic/sage-devel/Ikwfh6PXJnQ/discussion .\n\nThe problem with patching configure directly is that it needs more dirty work and I'm lazy to do it.",
     "created_at": "2012-08-07T17:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1126,6 +1138,7 @@ archive/issue_comments_085488.json:
 Replying to [comment:39 leif]:
 > If the patch isn't that large, that's perhaps the best solution until upstream includes a fix.  If they quickly include it into some devel version, we could try to upgrade to that.
 > 
+
 I agree with both these ideas, see also https://groups.google.com/d/topic/sage-devel/Ikwfh6PXJnQ/discussion .
 
 The problem with patching configure directly is that it needs more dirty work and I'm lazy to do it.
@@ -1173,7 +1186,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085491.json:
 ```json
 {
-    "body": "the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:\n \n\n```\n...\ngcc -I/usr/include/ncurses -fno-strict-aliasing -fwrapv -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/src/sage/sage-5.2/local/include/ecl/ -I/usr/local/src/sage/sage-5.2/local/include -I/usr/local/src/sage/sage-5.2/local/include/csage -I/usr/local/src/sage/sage-5.2/devel/sage/sage/ext -I/usr/local/src/sage/sage-5.2/local/include/python2.7 -c sage/libs/ecl.c -o build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o -w\ngcc -shared -Wl,--enable-auto-image-base -L/usr/local/src/sage/sage-5.2/local/lib build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o -L/usr/local/src/sage/sage-5.2/local/lib -L/usr/local/src/sage/sage-5.2/local/lib/python2.7/config -lcsage -lecl -lgmp -lstdc++ -lntl -lpython2.7 -o build/lib.cygwin-1.7.16-i686-2.7/sage/libs/ecl.dll\nbuild/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o: In function `__pyx_pf_4sage_4libs_3ecl_4shutdown_ecl':\n/usr/local/src/sage/sage-5.2/devel/sage/sage/libs/ecl.c:3134: undefined reference to `_cl_shutdown'\nbuild/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o: In function `__pyx_pf_4sage_4libs_3ecl_9EclObject_12__hash__':\n/usr/local/src/sage/sage-5.2/devel/sage/sage/libs/ecl.c:4906: undefined reference to `_cl_sxhash'\n.....and lots of siimilar errors...........\n```\n",
+    "body": "the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:\n \n```\n...\ngcc -I/usr/include/ncurses -fno-strict-aliasing -fwrapv -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/src/sage/sage-5.2/local/include/ecl/ -I/usr/local/src/sage/sage-5.2/local/include -I/usr/local/src/sage/sage-5.2/local/include/csage -I/usr/local/src/sage/sage-5.2/devel/sage/sage/ext -I/usr/local/src/sage/sage-5.2/local/include/python2.7 -c sage/libs/ecl.c -o build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o -w\ngcc -shared -Wl,--enable-auto-image-base -L/usr/local/src/sage/sage-5.2/local/lib build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o -L/usr/local/src/sage/sage-5.2/local/lib -L/usr/local/src/sage/sage-5.2/local/lib/python2.7/config -lcsage -lecl -lgmp -lstdc++ -lntl -lpython2.7 -o build/lib.cygwin-1.7.16-i686-2.7/sage/libs/ecl.dll\nbuild/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o: In function `__pyx_pf_4sage_4libs_3ecl_4shutdown_ecl':\n/usr/local/src/sage/sage-5.2/devel/sage/sage/libs/ecl.c:3134: undefined reference to `_cl_shutdown'\nbuild/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o: In function `__pyx_pf_4sage_4libs_3ecl_9EclObject_12__hash__':\n/usr/local/src/sage/sage-5.2/devel/sage/sage/libs/ecl.c:4906: undefined reference to `_cl_sxhash'\n.....and lots of siimilar errors...........\n```",
     "created_at": "2012-08-08T04:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1184,7 +1197,6 @@ archive/issue_comments_085491.json:
 
 the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:
  
-
 ```
 ...
 gcc -I/usr/include/ncurses -fno-strict-aliasing -fwrapv -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/src/sage/sage-5.2/local/include/ecl/ -I/usr/local/src/sage/sage-5.2/local/include -I/usr/local/src/sage/sage-5.2/local/include/csage -I/usr/local/src/sage/sage-5.2/devel/sage/sage/ext -I/usr/local/src/sage/sage-5.2/local/include/python2.7 -c sage/libs/ecl.c -o build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o -w
@@ -1198,13 +1210,12 @@ build/temp.cygwin-1.7.16-i686-2.7/sage/libs/ecl.o: In function `__pyx_pf_4sage_4
 
 
 
-
 ---
 
 archive/issue_comments_085492.json:
 ```json
 {
-    "body": "Replying to [comment:43 dimpase]:\n> the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:\n\nplease aslo see [Redhat's docs](http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/4/html/Using_ld_the_GNU_Linker/win32.html) for more details on linking on Cygwin. It seems that we might misunderstand the need for and the purpose of `libecl.dll.a`",
+    "body": "Replying to [comment:43 dimpase]:\n> the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:\n\n\nplease aslo see [Redhat's docs](http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/4/html/Using_ld_the_GNU_Linker/win32.html) for more details on linking on Cygwin. It seems that we might misunderstand the need for and the purpose of `libecl.dll.a`",
     "created_at": "2012-08-08T05:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1215,6 +1226,7 @@ archive/issue_comments_085492.json:
 
 Replying to [comment:43 dimpase]:
 > the new spkg installs OK, but gives the following linking error during the build of various Sage dlls:
+
 
 please aslo see [Redhat's docs](http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/4/html/Using_ld_the_GNU_Linker/win32.html) for more details on linking on Cygwin. It seems that we might misunderstand the need for and the purpose of `libecl.dll.a`
 
@@ -1288,7 +1300,7 @@ Running nm on both libraries from this spkg and the previous one shows the same 
 archive/issue_comments_085496.json:
 ```json
 {
-    "body": "Replying to [comment:47 jpflori]:\n> Running nm on both libraries from this spkg and the previous one shows the same symbols exactly, but with a different address base.\n\nthe culprit is the new libecl.dll.a, which gets picked up by the linker first, what which is not what is needed (as this is for other purposes).\nAnd this makes perfect sense, that's exactly what happens according to the Redhat docs cited above.\n\nI have overcome this by moving libecl.dll.a out of SAGELOCAL/lib, and creating there a symbolic link named cygecl.dll \nto ../bin/cygecl.dll\n\nHopefully will get Sage that can at least start up some time soon...",
+    "body": "Replying to [comment:47 jpflori]:\n> Running nm on both libraries from this spkg and the previous one shows the same symbols exactly, but with a different address base.\n\n\nthe culprit is the new libecl.dll.a, which gets picked up by the linker first, what which is not what is needed (as this is for other purposes).\nAnd this makes perfect sense, that's exactly what happens according to the Redhat docs cited above.\n\nI have overcome this by moving libecl.dll.a out of SAGELOCAL/lib, and creating there a symbolic link named cygecl.dll \nto ../bin/cygecl.dll\n\nHopefully will get Sage that can at least start up some time soon...",
     "created_at": "2012-08-08T10:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1299,6 +1311,7 @@ archive/issue_comments_085496.json:
 
 Replying to [comment:47 jpflori]:
 > Running nm on both libraries from this spkg and the previous one shows the same symbols exactly, but with a different address base.
+
 
 the culprit is the new libecl.dll.a, which gets picked up by the linker first, what which is not what is needed (as this is for other purposes).
 And this makes perfect sense, that's exactly what happens according to the Redhat docs cited above.
@@ -1338,7 +1351,7 @@ And I don't think we have any piece of code which makes sure these dll.a files a
 archive/issue_comments_085498.json:
 ```json
 {
-    "body": "Replying to [comment:49 jpflori]:\n> I don't agree with the point that libecl.dll.a cshould not be picked up by the linker.\n> It is not necessary and you can directly link to cygecl.dll, that I agree with, but it should be possible to go through libecl.dll.a as well.\n\nRedhat docs recommend direct linking over the import library linking, as more efficient.\nFurther than that, no Idea. I don't have much (positive :-)) experience with Win32 dlls.\n\n> Of course, there might be a problem with the produced libecl.dll.a, \n> \n\nthis could well be the case, e.g. `__declspec(dllexport)` declarations missing in the source when compiling.\n(and there are arcane rules about using -export-all-symbols and the above declarations at the same time)\n Or some options to the linker are wrong/missing?\n\n> but using import files should not be impossible.\n> Or then I don't understand how any piece of Sage can link with MPIR, MPFR and any other library which uses libtool and which generates as well import files and put them into SAGE_LOCAL/lib/ where they get picked up before anything else.\n\nnote that there are also these .la files produced along the way in the case the libtool is used.\n\n\n> And I don't think we have any piece of code which makes sure these dll.a files are not used.",
+    "body": "Replying to [comment:49 jpflori]:\n> I don't agree with the point that libecl.dll.a cshould not be picked up by the linker.\n> It is not necessary and you can directly link to cygecl.dll, that I agree with, but it should be possible to go through libecl.dll.a as well.\n\n\nRedhat docs recommend direct linking over the import library linking, as more efficient.\nFurther than that, no Idea. I don't have much (positive :-)) experience with Win32 dlls.\n\n> Of course, there might be a problem with the produced libecl.dll.a, \n> \n\n\nthis could well be the case, e.g. `__declspec(dllexport)` declarations missing in the source when compiling.\n(and there are arcane rules about using -export-all-symbols and the above declarations at the same time)\n Or some options to the linker are wrong/missing?\n\n> but using import files should not be impossible.\n> Or then I don't understand how any piece of Sage can link with MPIR, MPFR and any other library which uses libtool and which generates as well import files and put them into SAGE_LOCAL/lib/ where they get picked up before anything else.\n\n\nnote that there are also these .la files produced along the way in the case the libtool is used.\n\n\n> And I don't think we have any piece of code which makes sure these dll.a files are not used.",
     "created_at": "2012-08-08T10:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1351,11 +1364,13 @@ Replying to [comment:49 jpflori]:
 > I don't agree with the point that libecl.dll.a cshould not be picked up by the linker.
 > It is not necessary and you can directly link to cygecl.dll, that I agree with, but it should be possible to go through libecl.dll.a as well.
 
+
 Redhat docs recommend direct linking over the import library linking, as more efficient.
 Further than that, no Idea. I don't have much (positive :-)) experience with Win32 dlls.
 
 > Of course, there might be a problem with the produced libecl.dll.a, 
 > 
+
 
 this could well be the case, e.g. `__declspec(dllexport)` declarations missing in the source when compiling.
 (and there are arcane rules about using -export-all-symbols and the above declarations at the same time)
@@ -1363,6 +1378,7 @@ this could well be the case, e.g. `__declspec(dllexport)` declarations missing i
 
 > but using import files should not be impossible.
 > Or then I don't understand how any piece of Sage can link with MPIR, MPFR and any other library which uses libtool and which generates as well import files and put them into SAGE_LOCAL/lib/ where they get picked up before anything else.
+
 
 note that there are also these .la files produced along the way in the case the libtool is used.
 
@@ -1554,7 +1570,7 @@ See discussion at https://groups.google.com/d/topic/sage-devel/Ikwfh6PXJnQ/discu
 archive/issue_comments_085508.json:
 ```json
 {
-    "body": "Replying to [comment:56 dimpase]:\n> well, I have finished the previous build, but then Sage was refusing to start, throwing the usual fork() problems, even after repeated rebasealls and reboots. I've decided to update Cygwin and uninstall as much as possible of unneeded parts of Cygwin, in hope that it will help. But I am not optimistic. \n\nno, still no luck. I start to suspect that 2GB of RAM are not enough on 32-bit Windows 7 to run Sage. When I examine the location of Sage dlls which produce these fork() failures, I see that \n  their preferred base addresses (set up by rebaseall) have nothing to do with the actual places they are allocated;\n\n  these actual places may be already used by Win32 system dlls.\n\nIt could also be that it's just the 32-bit system is to blame, not the relatively low by modern standards amount of RAM. It's pathetic that on Linux 0.5GB of RAM are enough to have a well-running Sage, while here 2GB are not enough.",
+    "body": "Replying to [comment:56 dimpase]:\n> well, I have finished the previous build, but then Sage was refusing to start, throwing the usual fork() problems, even after repeated rebasealls and reboots. I've decided to update Cygwin and uninstall as much as possible of unneeded parts of Cygwin, in hope that it will help. But I am not optimistic. \n\n\nno, still no luck. I start to suspect that 2GB of RAM are not enough on 32-bit Windows 7 to run Sage. When I examine the location of Sage dlls which produce these fork() failures, I see that \n  their preferred base addresses (set up by rebaseall) have nothing to do with the actual places they are allocated;\n\n  these actual places may be already used by Win32 system dlls.\n\nIt could also be that it's just the 32-bit system is to blame, not the relatively low by modern standards amount of RAM. It's pathetic that on Linux 0.5GB of RAM are enough to have a well-running Sage, while here 2GB are not enough.",
     "created_at": "2012-08-10T04:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1565,6 +1581,7 @@ archive/issue_comments_085508.json:
 
 Replying to [comment:56 dimpase]:
 > well, I have finished the previous build, but then Sage was refusing to start, throwing the usual fork() problems, even after repeated rebasealls and reboots. I've decided to update Cygwin and uninstall as much as possible of unneeded parts of Cygwin, in hope that it will help. But I am not optimistic. 
+
 
 no, still no luck. I start to suspect that 2GB of RAM are not enough on 32-bit Windows 7 to run Sage. When I examine the location of Sage dlls which produce these fork() failures, I see that 
   their preferred base addresses (set up by rebaseall) have nothing to do with the actual places they are allocated;
@@ -1867,7 +1884,7 @@ For review only - based on JP's spkg
 archive/issue_comments_085524.json:
 ```json
 {
-    "body": "Attachment [spkg-take2.diff](tarball://root/attachments/some-uuid/ticket9167/spkg-take2.diff) by @kcrisman created at 2012-12-06 17:03:11\n\n> Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.\n\nOkay, I see what I did wrong.  I still have the weird unknown extended keyword thing while untarring, but at least the patches apply now!  Waiting on the build, hopefully all will be well on Cygwin.",
+    "body": "Attachment [spkg-take2.diff](tarball://root/attachments/some-uuid/ticket9167/spkg-take2.diff) by @kcrisman created at 2012-12-06 17:03:11\n\n> Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.\n\n\nOkay, I see what I did wrong.  I still have the weird unknown extended keyword thing while untarring, but at least the patches apply now!  Waiting on the build, hopefully all will be well on Cygwin.",
     "created_at": "2012-12-06T17:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1879,6 +1896,7 @@ archive/issue_comments_085524.json:
 Attachment [spkg-take2.diff](tarball://root/attachments/some-uuid/ticket9167/spkg-take2.diff) by @kcrisman created at 2012-12-06 17:03:11
 
 > Not quite ready for prime-time, but [this spkg](http://sage.math.washington.edu/home/kcrisman/ecl-12.7.1.p1.spkg) with the above diff.  This is just naively porting JP's diff.  Somehow I mixed up something, and also there is the problem with the weird tarring... but an attempt, anyway.
+
 
 Okay, I see what I did wrong.  I still have the weird unknown extended keyword thing while untarring, but at least the patches apply now!  Waiting on the build, hopefully all will be well on Cygwin.
 
@@ -1907,7 +1925,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085526.json:
 ```json
 {
-    "body": "After rebuilding the Maxima package, I get weird things on Mac.  They pretty much all look like this.\n\n```\nFile \"/Users/.../sage-5.4.rc2/devel/sage-main/sage/functions/piecewise.py\", line 396:\n    sage: f.integral(definite=True)\nException raised:\n<snip>\n        ecl_eval(\"(require 'maxima)\")\n      File \"ecl.pyx\", line 1236, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6990)\n      File \"ecl.pyx\", line 1251, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6927)\n      File \"ecl.pyx\", line 257, in sage.libs.ecl.ecl_safe_eval (sage/libs/ecl.c:2805)\n    RuntimeError: ECL says: Detected access to an invalid or protected memory address.\n```\n\nSo definitely not ready.  JP, did I miss something obvious?",
+    "body": "After rebuilding the Maxima package, I get weird things on Mac.  They pretty much all look like this.\n\n```\nFile \"/Users/.../sage-5.4.rc2/devel/sage-main/sage/functions/piecewise.py\", line 396:\n    sage: f.integral(definite=True)\nException raised:\n<snip>\n        ecl_eval(\"(require 'maxima)\")\n      File \"ecl.pyx\", line 1236, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6990)\n      File \"ecl.pyx\", line 1251, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6927)\n      File \"ecl.pyx\", line 257, in sage.libs.ecl.ecl_safe_eval (sage/libs/ecl.c:2805)\n    RuntimeError: ECL says: Detected access to an invalid or protected memory address.\n```\nSo definitely not ready.  JP, did I miss something obvious?",
     "created_at": "2012-12-06T17:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1929,7 +1947,6 @@ Exception raised:
       File "ecl.pyx", line 257, in sage.libs.ecl.ecl_safe_eval (sage/libs/ecl.c:2805)
     RuntimeError: ECL says: Detected access to an invalid or protected memory address.
 ```
-
 So definitely not ready.  JP, did I miss something obvious?
 
 
@@ -1957,7 +1974,7 @@ Eh, and it didn't even work on Cygwin for some reason (that is, same import erro
 archive/issue_comments_085528.json:
 ```json
 {
-    "body": "> Eh, and it didn't even work on Cygwin for some reason (that is, same import errors).  I'm going to try JP's again.\nAnd now I get the same bad behavior (Mac and Cygwin).  I have a feeling that previous ECL stuff isn't properly destroyed when one does `sage -f ecl-x.y.z.spkg`.  But whatever.",
+    "body": "> Eh, and it didn't even work on Cygwin for some reason (that is, same import errors).  I'm going to try JP's again.\n\nAnd now I get the same bad behavior (Mac and Cygwin).  I have a feeling that previous ECL stuff isn't properly destroyed when one does `sage -f ecl-x.y.z.spkg`.  But whatever.",
     "created_at": "2012-12-06T18:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -1967,6 +1984,7 @@ archive/issue_comments_085528.json:
 ```
 
 > Eh, and it didn't even work on Cygwin for some reason (that is, same import errors).  I'm going to try JP's again.
+
 And now I get the same bad behavior (Mac and Cygwin).  I have a feeling that previous ECL stuff isn't properly destroyed when one does `sage -f ecl-x.y.z.spkg`.  But whatever.
 
 
@@ -2151,7 +2169,7 @@ By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean fo
 archive/issue_comments_085538.json:
 ```json
 {
-    "body": "Replying to [comment:80 kcrisman]:\n> By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n\nTo ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\n(Something we should probably do at #13364 as well.)",
+    "body": "Replying to [comment:80 kcrisman]:\n> By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n\n\nTo ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\n(Something we should probably do at #13364 as well.)",
     "created_at": "2012-12-19T15:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2162,6 +2180,7 @@ archive/issue_comments_085538.json:
 
 Replying to [comment:80 kcrisman]:
 > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.
+
 
 To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.
 
@@ -2174,7 +2193,7 @@ To ease things, I'd then not hard-code the (new) name, but test whether `maxima.
 archive/issue_comments_085539.json:
 ```json
 {
-    "body": "Replying to [comment:81 leif]:\n> Replying to [comment:80 kcrisman]:\n> > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n\nindeed, this can and should be done.\n\n> \n> To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\ngood idea!\n\n> \n> (Something we should probably do at #13364 as well.)\n>",
+    "body": "Replying to [comment:81 leif]:\n> Replying to [comment:80 kcrisman]:\n> > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n\n\nindeed, this can and should be done.\n\n> \n> To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\n\ngood idea!\n\n> \n> (Something we should probably do at #13364 as well.)\n\n>",
     "created_at": "2012-12-19T16:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2187,15 +2206,18 @@ Replying to [comment:81 leif]:
 > Replying to [comment:80 kcrisman]:
 > > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.
 
+
 indeed, this can and should be done.
 
 > 
 > To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.
 
+
 good idea!
 
 > 
 > (Something we should probably do at #13364 as well.)
+
 >
 
 
@@ -2223,7 +2245,7 @@ Feel free to do so in another ticket, change dependencies here, update #13364 to
 archive/issue_comments_085541.json:
 ```json
 {
-    "body": "Replying to [comment:83 jpflori]:\n> Feel free to do so in another ticket, change dependencies here, update #13364 to be based on this new ticket, and remove dependency on this ECL ticket form #13364.\n\nI'd rather see this ticket brought to completion. I imagine it's just a small autoconf fix, right?\nI'm adding to the ticket description a link to updated maxima 5.26 spkg.\n\nCan one close #13324 as a duplicate?",
+    "body": "Replying to [comment:83 jpflori]:\n> Feel free to do so in another ticket, change dependencies here, update #13364 to be based on this new ticket, and remove dependency on this ECL ticket form #13364.\n\n\nI'd rather see this ticket brought to completion. I imagine it's just a small autoconf fix, right?\nI'm adding to the ticket description a link to updated maxima 5.26 spkg.\n\nCan one close #13324 as a duplicate?",
     "created_at": "2012-12-19T17:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2234,6 +2256,7 @@ archive/issue_comments_085541.json:
 
 Replying to [comment:83 jpflori]:
 > Feel free to do so in another ticket, change dependencies here, update #13364 to be based on this new ticket, and remove dependency on this ECL ticket form #13364.
+
 
 I'd rather see this ticket brought to completion. I imagine it's just a small autoconf fix, right?
 I'm adding to the ticket description a link to updated maxima 5.26 spkg.
@@ -2330,7 +2353,7 @@ Yeah, and Jeroen ranted when I asked to close #12115 and merge it within #13137 
 archive/issue_comments_085546.json:
 ```json
 {
-    "body": "Replying to [comment:86 jpflori]:\n> I think that #13324 still needs_review and potential firther changes (no feedback from upstream yet on the uncaught segfault issue).\n> \n> Closing #13324 would be similar to what I wanted to do for #12115 and #13137 except for the fact that #12115 was kind of trivial and got merged into #13137, whereas here we would merge a big (almost functional?) ticket into a simpler (but potentially more controversial) one.\n\n#13324 is partially duplicating #13364. The segfault one sees with Maxima is due to an infinite recursion in some Maxima code, as\nis acknowledged on [maxima bug tracker, bug 2520](https://sourceforge.net/p/maxima/bugs/2520/). I am not sure ECL can be blamed for crashing on this.",
+    "body": "Replying to [comment:86 jpflori]:\n> I think that #13324 still needs_review and potential firther changes (no feedback from upstream yet on the uncaught segfault issue).\n> \n> Closing #13324 would be similar to what I wanted to do for #12115 and #13137 except for the fact that #12115 was kind of trivial and got merged into #13137, whereas here we would merge a big (almost functional?) ticket into a simpler (but potentially more controversial) one.\n\n\n#13324 is partially duplicating #13364. The segfault one sees with Maxima is due to an infinite recursion in some Maxima code, as\nis acknowledged on [maxima bug tracker, bug 2520](https://sourceforge.net/p/maxima/bugs/2520/). I am not sure ECL can be blamed for crashing on this.",
     "created_at": "2012-12-19T17:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2343,6 +2366,7 @@ Replying to [comment:86 jpflori]:
 > I think that #13324 still needs_review and potential firther changes (no feedback from upstream yet on the uncaught segfault issue).
 > 
 > Closing #13324 would be similar to what I wanted to do for #12115 and #13137 except for the fact that #12115 was kind of trivial and got merged into #13137, whereas here we would merge a big (almost functional?) ticket into a simpler (but potentially more controversial) one.
+
 
 #13324 is partially duplicating #13364. The segfault one sees with Maxima is due to an infinite recursion in some Maxima code, as
 is acknowledged on [maxima bug tracker, bug 2520](https://sourceforge.net/p/maxima/bugs/2520/). I am not sure ECL can be blamed for crashing on this.
@@ -2373,7 +2397,7 @@ I must say I don't really care, especially that when Maxima is fixed, there shou
 archive/issue_comments_085548.json:
 ```json
 {
-    "body": "Replying to [comment:86 jpflori]:\n> And I still think the change to Maxima spkg-install script should be done in an independent (and quite trivial) ticket called something like \"let Maxima spkg properly install with different version of ECL\", it would be merged really quicly, and then rebase #13364 to update Maxima on top of that new ticket.\n\nYep, that's what I was thinking of as well.  (Unless the Maxima guys [and probably we, too] are super-quick and fix all issues within the next few days...)\n\n\n> With this approach people could just drop in different versions of ECl and ply with them.\n\nAlthough I occasionally hear the contrary (e.g. \"Why let LCalc build with different versions of PARI?\"), we shouldn't establish unnecessary dependencies, so yes.\n\n\n\n\n> Generally I feel that keeping issues, or even \"independent\" changes, into separated tickets is a good idea.\n\n*Generally.*  Unfortunately often N developers touch the \"same\" code (or spkgs) such that at least N-1 developers have to rebase their changes M<sub>N</sub> times, or the fixes just rotten and never get merged.",
+    "body": "Replying to [comment:86 jpflori]:\n> And I still think the change to Maxima spkg-install script should be done in an independent (and quite trivial) ticket called something like \"let Maxima spkg properly install with different version of ECL\", it would be merged really quicly, and then rebase #13364 to update Maxima on top of that new ticket.\n\n\nYep, that's what I was thinking of as well.  (Unless the Maxima guys [and probably we, too] are super-quick and fix all issues within the next few days...)\n\n\n> With this approach people could just drop in different versions of ECl and ply with them.\n\n\nAlthough I occasionally hear the contrary (e.g. \"Why let LCalc build with different versions of PARI?\"), we shouldn't establish unnecessary dependencies, so yes.\n\n\n\n\n> Generally I feel that keeping issues, or even \"independent\" changes, into separated tickets is a good idea.\n\n\n*Generally.*  Unfortunately often N developers touch the \"same\" code (or spkgs) such that at least N-1 developers have to rebase their changes M<sub>N</sub> times, or the fixes just rotten and never get merged.",
     "created_at": "2012-12-19T20:21:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2385,10 +2409,12 @@ archive/issue_comments_085548.json:
 Replying to [comment:86 jpflori]:
 > And I still think the change to Maxima spkg-install script should be done in an independent (and quite trivial) ticket called something like "let Maxima spkg properly install with different version of ECL", it would be merged really quicly, and then rebase #13364 to update Maxima on top of that new ticket.
 
+
 Yep, that's what I was thinking of as well.  (Unless the Maxima guys [and probably we, too] are super-quick and fix all issues within the next few days...)
 
 
 > With this approach people could just drop in different versions of ECl and ply with them.
+
 
 Although I occasionally hear the contrary (e.g. "Why let LCalc build with different versions of PARI?"), we shouldn't establish unnecessary dependencies, so yes.
 
@@ -2396,6 +2422,7 @@ Although I occasionally hear the contrary (e.g. "Why let LCalc build with differ
 
 
 > Generally I feel that keeping issues, or even "independent" changes, into separated tickets is a good idea.
+
 
 *Generally.*  Unfortunately often N developers touch the "same" code (or spkgs) such that at least N-1 developers have to rebase their changes M<sub>N</sub> times, or the fixes just rotten and never get merged.
 
@@ -2406,7 +2433,7 @@ Although I occasionally hear the contrary (e.g. "Why let LCalc build with differ
 archive/issue_comments_085549.json:
 ```json
 {
-    "body": "Replying to [comment:81 leif]:\n> Replying to [comment:80 kcrisman]:\n> > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n> \n> To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\nOK, this is now #13860\n\nPlease review!",
+    "body": "Replying to [comment:81 leif]:\n> Replying to [comment:80 kcrisman]:\n> > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.\n\n> \n> To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.\n\n\nOK, this is now #13860\n\nPlease review!",
     "created_at": "2012-12-23T08:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2418,8 +2445,10 @@ archive/issue_comments_085549.json:
 Replying to [comment:81 leif]:
 > Replying to [comment:80 kcrisman]:
 > > By the way, could this be upgraded irrespective of upgrading Maxima?  (I mean for Sage proper.)  If all we need is to change the location of the Maxima library, maybe we could avoid having to track down the doctest issues in #13364 right now, by providing a minimal Maxima spkg change here.
+
 > 
 > To ease things, I'd then not hard-code the (new) name, but test whether `maxima.system.fasb` is present, and if so, copy that, otherwise (try to) copy `maxima.fasb`, or bail out if none of these is present.
+
 
 OK, this is now #13860
 
@@ -2432,7 +2461,7 @@ Please review!
 archive/issue_comments_085550.json:
 ```json
 {
-    "body": "> OK, this is now #13860\n> \n> Please review!\n\nApparently that has positive review now.  JP, do we really need to generate a smaller patch with \"use matching autoconf\", or is that unnecessary?  This ticket is currently \"needs info\" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.",
+    "body": "> OK, this is now #13860\n> \n> Please review!\n\n\nApparently that has positive review now.  JP, do we really need to generate a smaller patch with \"use matching autoconf\", or is that unnecessary?  This ticket is currently \"needs info\" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.",
     "created_at": "2012-12-29T03:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2445,6 +2474,7 @@ archive/issue_comments_085550.json:
 > 
 > Please review!
 
+
 Apparently that has positive review now.  JP, do we really need to generate a smaller patch with "use matching autoconf", or is that unnecessary?  This ticket is currently "needs info" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.
 
 
@@ -2454,7 +2484,7 @@ Apparently that has positive review now.  JP, do we really need to generate a sm
 archive/issue_comments_085551.json:
 ```json
 {
-    "body": "Replying to [comment:93 kcrisman]:\n> > OK, this is now #13860\n> > \n> > Please review!\n> \n> Apparently that has positive review now.  JP, do we really need to generate a smaller patch with \"use matching autoconf\", or is that unnecessary?  This ticket is currently \"needs info\" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.\nI'd like to get upstream feedback on the import library changes and include an official patch rather mine.\nI guess we'll have to wait for the end of the holidays for that :)",
+    "body": "Replying to [comment:93 kcrisman]:\n> > OK, this is now #13860\n> > \n> > Please review!\n\n> \n> Apparently that has positive review now.  JP, do we really need to generate a smaller patch with \"use matching autoconf\", or is that unnecessary?  This ticket is currently \"needs info\" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.\n\nI'd like to get upstream feedback on the import library changes and include an official patch rather mine.\nI guess we'll have to wait for the end of the holidays for that :)",
     "created_at": "2013-01-04T10:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2467,8 +2497,10 @@ Replying to [comment:93 kcrisman]:
 > > OK, this is now #13860
 > > 
 > > Please review!
+
 > 
 > Apparently that has positive review now.  JP, do we really need to generate a smaller patch with "use matching autoconf", or is that unnecessary?  This ticket is currently "needs info" but it isn't clear to me what info is needed.  Is it really sage-pending on #13324, or is there something else we're trying to get feedback on?  Thanks.
+
 I'd like to get upstream feedback on the import library changes and include an official patch rather mine.
 I guess we'll have to wait for the end of the holidays for that :)
 
@@ -2497,7 +2529,7 @@ And inbetween we can already get #13324 merged...
 archive/issue_comments_085553.json:
 ```json
 {
-    "body": "> And inbetween we can already get #13324 merged...\nAnd maybe even #13364...",
+    "body": "> And inbetween we can already get #13324 merged...\n\nAnd maybe even #13364...",
     "created_at": "2013-01-04T14:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2507,6 +2539,7 @@ archive/issue_comments_085553.json:
 ```
 
 > And inbetween we can already get #13324 merged...
+
 And maybe even #13364...
 
 
@@ -2516,7 +2549,7 @@ And maybe even #13364...
 archive/issue_comments_085554.json:
 ```json
 {
-    "body": "> I'd like to get upstream feedback on the import library changes and include an official patch rather mine.\n> I guess we'll have to wait for the end of the holidays for that :)\nMy holidays are done :)  And it does look like there has been some activity on the ECL list again.  But I think that's not important and we can all take a break, because...\n\nReally I think there is no reason to wait on upstream; Sage does contribute upstream, but we still take care of our own.  Is there anything *else* you would want to change here?  even the whole \"generate smaller patch\" thing seems less significant.  As far as I'm concerned, the current spkg is fine especially since the \"dependencies\" in Maxima and ECL are in/positive review.",
+    "body": "> I'd like to get upstream feedback on the import library changes and include an official patch rather mine.\n> I guess we'll have to wait for the end of the holidays for that :)\n\nMy holidays are done :)  And it does look like there has been some activity on the ECL list again.  But I think that's not important and we can all take a break, because...\n\nReally I think there is no reason to wait on upstream; Sage does contribute upstream, but we still take care of our own.  Is there anything *else* you would want to change here?  even the whole \"generate smaller patch\" thing seems less significant.  As far as I'm concerned, the current spkg is fine especially since the \"dependencies\" in Maxima and ECL are in/positive review.",
     "created_at": "2013-01-14T17:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2527,6 +2560,7 @@ archive/issue_comments_085554.json:
 
 > I'd like to get upstream feedback on the import library changes and include an official patch rather mine.
 > I guess we'll have to wait for the end of the holidays for that :)
+
 My holidays are done :)  And it does look like there has been some activity on the ECL list again.  But I think that's not important and we can all take a break, because...
 
 Really I think there is no reason to wait on upstream; Sage does contribute upstream, but we still take care of our own.  Is there anything *else* you would want to change here?  even the whole "generate smaller patch" thing seems less significant.  As far as I'm concerned, the current spkg is fine especially since the "dependencies" in Maxima and ECL are in/positive review.
@@ -2592,7 +2626,7 @@ Just a reminder for me, I should add a simple hack to take care of http://source
 archive/issue_comments_085558.json:
 ```json
 {
-    "body": "> Just a reminder for me, I should add a simple hack to take care of http://sourceforge.net/p/ecls/bugs/222/ in order to produce cleaner libs as well.\nMaybe that *can* wait for upstream; I don't think it's necessary here and I don't know if I'll have the chance to test things as much now.",
+    "body": "> Just a reminder for me, I should add a simple hack to take care of http://sourceforge.net/p/ecls/bugs/222/ in order to produce cleaner libs as well.\n\nMaybe that *can* wait for upstream; I don't think it's necessary here and I don't know if I'll have the chance to test things as much now.",
     "created_at": "2013-01-15T14:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2602,6 +2636,7 @@ archive/issue_comments_085558.json:
 ```
 
 > Just a reminder for me, I should add a simple hack to take care of http://sourceforge.net/p/ecls/bugs/222/ in order to produce cleaner libs as well.
+
 Maybe that *can* wait for upstream; I don't think it's necessary here and I don't know if I'll have the chance to test things as much now.
 
 
@@ -2640,7 +2675,7 @@ What would be your strategy Jeroen?
 archive/issue_comments_085560.json:
 ```json
 {
-    "body": "Replying to [comment:103 jpflori]:\n> What would be your strategy Jeroen?\nThe plan is certainly to merge #13324 in sage-5.7.beta0.  Of course, unexpected problems can always appear, but so far the new ECL has passed all buildbot tests.\n\nI don't quite understand how this ticket relates to #13324, as that is also about Cygwin...",
+    "body": "Replying to [comment:103 jpflori]:\n> What would be your strategy Jeroen?\n\nThe plan is certainly to merge #13324 in sage-5.7.beta0.  Of course, unexpected problems can always appear, but so far the new ECL has passed all buildbot tests.\n\nI don't quite understand how this ticket relates to #13324, as that is also about Cygwin...",
     "created_at": "2013-01-18T09:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2651,6 +2686,7 @@ archive/issue_comments_085560.json:
 
 Replying to [comment:103 jpflori]:
 > What would be your strategy Jeroen?
+
 The plan is certainly to merge #13324 in sage-5.7.beta0.  Of course, unexpected problems can always appear, but so far the new ECL has passed all buildbot tests.
 
 I don't quite understand how this ticket relates to #13324, as that is also about Cygwin...
@@ -2966,7 +3002,7 @@ I can no longer check this due to horrible BLODA issues but my comment:115 stand
 archive/issue_comments_085577.json:
 ```json
 {
-    "body": "Is it possible one might get a doctest error on this?  I did a weird upgrade where I already had this ticket, from 5.6.rc0 to 5.6, and then got this.\n\n```\nFile \"/Users/karl.crisman/Downloads/sage-5.6/devel/sage/sage/libs/ecl.pyx\", line 247:\n    sage: inf_loop()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: ECL says: Console interrupt\nGot:\n    Traceback (most recent call last):\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        inf_loop()###line 247:\n    sage: inf_loop()\n      File \"ecl.pyx\", line 704, in sage.libs.ecl.EclObject.__call__ (sage/libs/ecl.c:5038)\n      File \"ecl.pyx\", line 280, in sage.libs.ecl.ecl_safe_apply (sage/libs/ecl.c:3049)\n    RuntimeError: ECL says: Console interrupt.\n```\n\nNote the one-character difference (on Mac, anyway).  Can someone check this?  I think it might be due to my having done the upgrade and thus not important.",
+    "body": "Is it possible one might get a doctest error on this?  I did a weird upgrade where I already had this ticket, from 5.6.rc0 to 5.6, and then got this.\n\n```\nFile \"/Users/karl.crisman/Downloads/sage-5.6/devel/sage/sage/libs/ecl.pyx\", line 247:\n    sage: inf_loop()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: ECL says: Console interrupt\nGot:\n    Traceback (most recent call last):\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/karl.crisman/Downloads/sage-5.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        inf_loop()###line 247:\n    sage: inf_loop()\n      File \"ecl.pyx\", line 704, in sage.libs.ecl.EclObject.__call__ (sage/libs/ecl.c:5038)\n      File \"ecl.pyx\", line 280, in sage.libs.ecl.ecl_safe_apply (sage/libs/ecl.c:3049)\n    RuntimeError: ECL says: Console interrupt.\n```\nNote the one-character difference (on Mac, anyway).  Can someone check this?  I think it might be due to my having done the upgrade and thus not important.",
     "created_at": "2013-01-24T21:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9167",
     "type": "issue_comment",
@@ -2999,7 +3035,6 @@ Got:
       File "ecl.pyx", line 280, in sage.libs.ecl.ecl_safe_apply (sage/libs/ecl.c:3049)
     RuntimeError: ECL says: Console interrupt.
 ```
-
 Note the one-character difference (on Mac, anyway).  Can someone check this?  I think it might be due to my having done the upgrade and thus not important.
 
 

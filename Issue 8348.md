@@ -3,7 +3,7 @@
 archive/issues_008348.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
     "created_at": "2010-02-24T16:23:17Z",
     "labels": [
         "component: basic arithmetic",
@@ -37,7 +37,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: find_root() got an unexpected keyword argument 'prec'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8348
 
@@ -86,7 +85,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_074421.json:
 ```json
 {
-    "body": "> This is about adding capability not currently present, so should be an enhancement. \n\nI do not agree. The documentation does not say that `find_root` only works in double precision,\nthus this is a defect (at least of the documentation). Do you agree with that?",
+    "body": "> This is about adding capability not currently present, so should be an enhancement. \n\n\nI do not agree. The documentation does not say that `find_root` only works in double precision,\nthus this is a defect (at least of the documentation). Do you agree with that?",
     "created_at": "2010-03-17T07:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
@@ -96,6 +95,7 @@ archive/issue_comments_074421.json:
 ```
 
 > This is about adding capability not currently present, so should be an enhancement. 
+
 
 I do not agree. The documentation does not say that `find_root` only works in double precision,
 thus this is a defect (at least of the documentation). Do you agree with that?
@@ -225,7 +225,7 @@ Paul
 archive/issue_comments_074427.json:
 ```json
 {
-    "body": "LGTM.\n\nReplying to [comment:6 zimmerma]:\n> Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nOnly (part of) the documentation is duplicated; one of the function is a wrapper for the other. It is unfortunate indeed, but that's a problem that occurs everywhere in Sage, so I don't think it really makes sense to open a ticket for that particular instance.\n----\nNew commits:",
+    "body": "LGTM.\n\nReplying to [comment:6 zimmerma]:\n> Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\n\nOnly (part of) the documentation is duplicated; one of the function is a wrapper for the other. It is unfortunate indeed, but that's a problem that occurs everywhere in Sage, so I don't think it really makes sense to open a ticket for that particular instance.\n\n---\nNew commits:",
     "created_at": "2014-01-29T07:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
@@ -239,8 +239,10 @@ LGTM.
 Replying to [comment:6 zimmerma]:
 > Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.
 
+
 Only (part of) the documentation is duplicated; one of the function is a wrapper for the other. It is unfortunate indeed, but that's a problem that occurs everywhere in Sage, so I don't think it really makes sense to open a ticket for that particular instance.
-----
+
+---
 New commits:
 
 

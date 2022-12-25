@@ -77,7 +77,7 @@ archive/issue_comments_092875.json:
 archive/issue_comments_092876.json:
 ```json
 {
-    "body": "Replying to [comment:3 vbraun]:\n> #9470 and #9326 are ready to be merged, but I thought that 4.5.2 is in feature freeze now?\n\nIndeed, we'll release 4.5.2 very soon.  I've been preparing a 4.5.3.alpha0.",
+    "body": "Replying to [comment:3 vbraun]:\n> #9470 and #9326 are ready to be merged, but I thought that 4.5.2 is in feature freeze now?\n\n\nIndeed, we'll release 4.5.2 very soon.  I've been preparing a 4.5.3.alpha0.",
     "created_at": "2010-08-07T19:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
@@ -88,6 +88,7 @@ archive/issue_comments_092876.json:
 
 Replying to [comment:3 vbraun]:
 > #9470 and #9326 are ready to be merged, but I thought that 4.5.2 is in feature freeze now?
+
 
 Indeed, we'll release 4.5.2 very soon.  I've been preparing a 4.5.3.alpha0.
 

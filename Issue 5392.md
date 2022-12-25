@@ -3,7 +3,7 @@
 archive/issues_005392.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider\n\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
+    "body": "Assignee: @williamstein\n\nConsider\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
     "created_at": "2009-02-27T16:03:04Z",
     "labels": [
         "component: number theory",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 Consider
 
-
 ```
 sage: R.<a> = NumberField(x^4 - 2*x^2 - 1)
 sage: S.<i> = R.extension(x^2 + 1)
 sage: S.subfield(a + i/a)
 ```
-
 
 The S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).
 
@@ -277,7 +275,7 @@ Attachment [trac_5392_subfield_review.patch](tarball://root/attachments/some-uui
 archive/issue_comments_041451.json:
 ```json
 {
-    "body": "Replying to [comment:8 mkosters]:\n> `@`jdemeyer: is it correct now?\n\nIt has a proper commit message now. So assuming this is the same patch, I'll put this to positive review again.",
+    "body": "Replying to [comment:8 mkosters]:\n> `@`jdemeyer: is it correct now?\n\n\nIt has a proper commit message now. So assuming this is the same patch, I'll put this to positive review again.",
     "created_at": "2013-07-24T08:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
@@ -288,6 +286,7 @@ archive/issue_comments_041451.json:
 
 Replying to [comment:8 mkosters]:
 > `@`jdemeyer: is it correct now?
+
 
 It has a proper commit message now. So assuming this is the same patch, I'll put this to positive review again.
 

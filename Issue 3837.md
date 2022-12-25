@@ -73,7 +73,7 @@ John
 archive/issue_comments_027221.json:
 ```json
 {
-    "body": "The following seems to be the offending code: In trac_3674_sage-trac3674new.patch\n\n```\n+++ b/sage/schemes/elliptic_curves/ell_point.py Thu Aug 07 22:02:56 2008 +0100\n@@ -54,7 +54,6 @@ AUTHORS:\n #                  http://www.gnu.org/licenses/\n #*****************************************************************************\n \n-from math import ceil, floor, sqrt\n```\n\nAnd then\n\n```\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Wed Jul 30 06:34:58 2008 -0700\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Thu Aug 07 22:02:56 2008 +0100\n@@ -11,6 +11,8 @@ AUTHORS:\n    -- Christian Wuthrich (2007): added padic sha computation\n    -- David Roe (2007-9): moved sha, l-series and p-adic functionality to separate files.\n    -- John Cremona (2008-01)\n+   -- Tobias Nagel & Michael Mardaus (2008-07): added integral_points\n+   -- John Cremona (2008-07): further work on integral_points\n \"\"\"\n \n #*****************************************************************************\n@@ -55,7 +57,7 @@ import sage.databases.cremona\n import sage.databases.cremona\n from   sage.libs.pari.all import pari\n import sage.functions.transcendental as transcendental\n-import math\n+from sage.calculus.calculus import sqrt, floor, ceil\n```\n\nSo we end up (indirectly) calling Maxima in sha.py.\n\nWilliam and I discussed the problem and it seems that the new code requires higher precision as the double values provided by the Python math library. The goal is not to blame you three, but to sort out how we can avoid calling Maxima without breaking the new code. :)\n\nCheers,\n\nMichael",
+    "body": "The following seems to be the offending code: In trac_3674_sage-trac3674new.patch\n\n```\n+++ b/sage/schemes/elliptic_curves/ell_point.py Thu Aug 07 22:02:56 2008 +0100\n@@ -54,7 +54,6 @@ AUTHORS:\n #                  http://www.gnu.org/licenses/\n #*****************************************************************************\n \n-from math import ceil, floor, sqrt\n```\nAnd then\n\n```\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Wed Jul 30 06:34:58 2008 -0700\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Thu Aug 07 22:02:56 2008 +0100\n@@ -11,6 +11,8 @@ AUTHORS:\n    -- Christian Wuthrich (2007): added padic sha computation\n    -- David Roe (2007-9): moved sha, l-series and p-adic functionality to separate files.\n    -- John Cremona (2008-01)\n+   -- Tobias Nagel & Michael Mardaus (2008-07): added integral_points\n+   -- John Cremona (2008-07): further work on integral_points\n \"\"\"\n \n #*****************************************************************************\n@@ -55,7 +57,7 @@ import sage.databases.cremona\n import sage.databases.cremona\n from   sage.libs.pari.all import pari\n import sage.functions.transcendental as transcendental\n-import math\n+from sage.calculus.calculus import sqrt, floor, ceil\n```\nSo we end up (indirectly) calling Maxima in sha.py.\n\nWilliam and I discussed the problem and it seems that the new code requires higher precision as the double values provided by the Python math library. The goal is not to blame you three, but to sort out how we can avoid calling Maxima without breaking the new code. :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T22:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ The following seems to be the offending code: In trac_3674_sage-trac3674new.patc
  
 -from math import ceil, floor, sqrt
 ```
-
 And then
 
 ```
@@ -114,7 +113,6 @@ And then
 -import math
 +from sage.calculus.calculus import sqrt, floor, ceil
 ```
-
 So we end up (indirectly) calling Maxima in sha.py.
 
 William and I discussed the problem and it seems that the new code requires higher precision as the double values provided by the Python math library. The goal is not to blame you three, but to sort out how we can avoid calling Maxima without breaking the new code. :)
@@ -194,7 +192,7 @@ Thanks -- I'm sure I changed the tag to "needs review" but apparently not!
 archive/issue_comments_027225.json:
 ```json
 {
-    "body": "Hi John,\n\nwith both patches applied I am getting \n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/ell_rational_field.py\", line 3827:\n    sage: a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_100[12]>\", line 1, in <module>\n        a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)###line 3827:\n    sage: a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4161, in integral_points\n        low_bound = R((sqrt(d_L_0 - Q) - T)/c)\n    OverflowError: math range error\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_100\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_ell_rational_field.py\n         [69.0 s]\n```\n\non sage.math.\n\nCheers,\n\nMichael",
+    "body": "Hi John,\n\nwith both patches applied I am getting \n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/ell_rational_field.py\", line 3827:\n    sage: a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_100[12]>\", line 1, in <module>\n        a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)###line 3827:\n    sage: a=E.integral_points([P1,P2,P3,P4,P5]); len(a)  # long time (400s!)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4161, in integral_points\n        low_bound = R((sqrt(d_L_0 - Q) - T)/c)\n    OverflowError: math range error\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_100\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_ell_rational_field.py\n         [69.0 s]\n```\non sage.math.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-14T23:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
@@ -229,7 +227,6 @@ Exception raised:
 For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_ell_rational_field.py
          [69.0 s]
 ```
-
 on sage.math.
 
 Cheers,

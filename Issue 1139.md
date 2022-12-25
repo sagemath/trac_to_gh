@@ -3,7 +3,7 @@
 archive/issues_001139.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n\n```\nsage: f=x\nsage: f.nintegral(x,0,1,1e-14)\nMaxima ERROR:\n         ***MESSAGE FROM ROUTINE DQAGS IN LIBRARY SLATEC.\n ***POTENTIALLY RECOVERABLE ERROR, PROG ABORTED, TRACEBACK REQUESTED\n *  ABNORMAL RETURN\n *  ERROR NUMBER = 6\n *   \n ***END OF MESSAGE\n \n ***JOB ABORT DUE TO UNRECOVERED ERROR.\n0          ERROR MESSAGE SUMMARY\n LIBRARY    SUBROUTINE MESSAGE START             NERR     LEVEL     COUNT\n SLATEC     DQAGS      ABNORMAL RETURN              6         1         2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1139\n\n",
+    "body": "Assignee: jkantor\n\n```\nsage: f=x\nsage: f.nintegral(x,0,1,1e-14)\nMaxima ERROR:\n         ***MESSAGE FROM ROUTINE DQAGS IN LIBRARY SLATEC.\n ***POTENTIALLY RECOVERABLE ERROR, PROG ABORTED, TRACEBACK REQUESTED\n *  ABNORMAL RETURN\n *  ERROR NUMBER = 6\n *   \n ***END OF MESSAGE\n \n ***JOB ABORT DUE TO UNRECOVERED ERROR.\n0          ERROR MESSAGE SUMMARY\n LIBRARY    SUBROUTINE MESSAGE START             NERR     LEVEL     COUNT\n SLATEC     DQAGS      ABNORMAL RETURN              6         1         2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1139\n\n",
     "created_at": "2007-11-10T15:39:07Z",
     "labels": [
         "component: numerical",
@@ -17,7 +17,6 @@ archive/issues_001139.json:
 }
 ```
 Assignee: jkantor
-
 
 ```
 sage: f=x
@@ -35,7 +34,6 @@ Maxima ERROR:
  LIBRARY    SUBROUTINE MESSAGE START             NERR     LEVEL     COUNT
  SLATEC     DQAGS      ABNORMAL RETURN              6         1         2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1139
 
@@ -65,7 +63,7 @@ archive/issue_events_003053.json:
 archive/issue_comments_006903.json:
 ```json
 {
-    "body": "This is due to a restriction in QUADPACK (which Maxima is using).\n\n\n```\nc                     and epsrel.lt.max(50*rel.mach.acc.,0.5d-28),\nc                     the routine will end with ier = 6.\n```\n\n\nThe exception should be caught, and a more helpful error should be raised.",
+    "body": "This is due to a restriction in QUADPACK (which Maxima is using).\n\n```\nc                     and epsrel.lt.max(50*rel.mach.acc.,0.5d-28),\nc                     the routine will end with ier = 6.\n```\n\nThe exception should be caught, and a more helpful error should be raised.",
     "created_at": "2007-12-06T21:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
@@ -76,12 +74,10 @@ archive/issue_comments_006903.json:
 
 This is due to a restriction in QUADPACK (which Maxima is using).
 
-
 ```
 c                     and epsrel.lt.max(50*rel.mach.acc.,0.5d-28),
 c                     the routine will end with ier = 6.
 ```
-
 
 The exception should be caught, and a more helpful error should be raised.
 

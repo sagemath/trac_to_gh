@@ -3,7 +3,7 @@
 archive/issues_004650.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: sparse\n\nmatrix_modn_sparse needs some housecleaning.  One gem, in particular:\n\n\n```\n    cdef Py_ssize_t i, j, k\n    k = 0\n    for i from 0 <= i < self._nrows:\n        for j from 0 <= j < self.rows[i].num_nonzero:\n            k+=1\n    return QQ(k)/QQ(self.nrows()*self.ncols()) \n```\n\n\nalso, it could use some fast nonzero_positions, getitem, etc. methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/4650\n\n",
+    "body": "Assignee: boothby\n\nKeywords: sparse\n\nmatrix_modn_sparse needs some housecleaning.  One gem, in particular:\n\n```\n    cdef Py_ssize_t i, j, k\n    k = 0\n    for i from 0 <= i < self._nrows:\n        for j from 0 <= j < self.rows[i].num_nonzero:\n            k+=1\n    return QQ(k)/QQ(self.nrows()*self.ncols()) \n```\n\nalso, it could use some fast nonzero_positions, getitem, etc. methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/4650\n\n",
     "created_at": "2008-11-29T02:35:02Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ Keywords: sparse
 
 matrix_modn_sparse needs some housecleaning.  One gem, in particular:
 
-
 ```
     cdef Py_ssize_t i, j, k
     k = 0
@@ -32,7 +31,6 @@ matrix_modn_sparse needs some housecleaning.  One gem, in particular:
             k+=1
     return QQ(k)/QQ(self.nrows()*self.ncols()) 
 ```
-
 
 also, it could use some fast nonzero_positions, getitem, etc. methods
 

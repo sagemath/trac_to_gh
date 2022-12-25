@@ -182,7 +182,7 @@ Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/tra
 archive/issue_comments_062697.json:
 ```json
 {
-    "body": "Two comments: this is not your fault, but can you fix lines 39-40 of quotient_ring.py?  Right now it says\n\n```\n    Creates a quotient ring of the ring `R` by the ideal `I`. Variables are \n    labeled by ``names``. (If the quotient ring is a quotient of a \n    polynomial ring.). If ``names`` isn't given, 'bar' will be appended to \n    the variable names in `R`. \n```\n\nand the parentheses and surrounding punctuation really bother me.  Should this say\n\n```\n    Creates a quotient ring of the ring `R` by the ideal `I`. Variables are \n    labeled by ``names`` (if the quotient ring is a quotient of a \n    polynomial ring). If ``names`` isn't given, 'bar' will be appended to \n    the variable names in `R`. \n```\n\n?  Or even remove the parentheses altogether?\n\nSecond and more importantly, I'm getting doctest failures in schemes/elliptic_curves:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 46 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/formal_group.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py # 3 doctests failed\n```\n\nThe problem seems to be the change to rings.pyx.  I don't know why you would ever want to `return` a `NotImplementedError` instead of raising it, but that change seems to be causing the problems.  So my suggestion is to get rid of that change, make sure doctests pass, and then perhaps open up a new ticket in which that issue is addressed.",
+    "body": "Two comments: this is not your fault, but can you fix lines 39-40 of quotient_ring.py?  Right now it says\n\n```\n    Creates a quotient ring of the ring `R` by the ideal `I`. Variables are \n    labeled by ``names``. (If the quotient ring is a quotient of a \n    polynomial ring.). If ``names`` isn't given, 'bar' will be appended to \n    the variable names in `R`. \n```\nand the parentheses and surrounding punctuation really bother me.  Should this say\n\n```\n    Creates a quotient ring of the ring `R` by the ideal `I`. Variables are \n    labeled by ``names`` (if the quotient ring is a quotient of a \n    polynomial ring). If ``names`` isn't given, 'bar' will be appended to \n    the variable names in `R`. \n```\n?  Or even remove the parentheses altogether?\n\nSecond and more importantly, I'm getting doctest failures in schemes/elliptic_curves:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 46 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/formal_group.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py # 3 doctests failed\n```\nThe problem seems to be the change to rings.pyx.  I don't know why you would ever want to `return` a `NotImplementedError` instead of raising it, but that change seems to be causing the problems.  So my suggestion is to get rid of that change, make sure doctests pass, and then perhaps open up a new ticket in which that issue is addressed.",
     "created_at": "2009-11-23T05:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
@@ -199,7 +199,6 @@ Two comments: this is not your fault, but can you fix lines 39-40 of quotient_ri
     polynomial ring.). If ``names`` isn't given, 'bar' will be appended to 
     the variable names in `R`. 
 ```
-
 and the parentheses and surrounding punctuation really bother me.  Should this say
 
 ```
@@ -208,7 +207,6 @@ and the parentheses and surrounding punctuation really bother me.  Should this s
     polynomial ring). If ``names`` isn't given, 'bar' will be appended to 
     the variable names in `R`. 
 ```
-
 ?  Or even remove the parentheses altogether?
 
 Second and more importantly, I'm getting doctest failures in schemes/elliptic_curves:
@@ -221,7 +219,6 @@ The following tests failed:
 	sage -t -long devel/sage/sage/schemes/elliptic_curves/formal_group.py # 1 doctests failed
 	sage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py # 3 doctests failed
 ```
-
 The problem seems to be the change to rings.pyx.  I don't know why you would ever want to `return` a `NotImplementedError` instead of raising it, but that change seems to be causing the problems.  So my suggestion is to get rid of that change, make sure doctests pass, and then perhaps open up a new ticket in which that issue is addressed.
 
 

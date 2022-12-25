@@ -3,7 +3,7 @@
 archive/issues_006939.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777 @kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777 @kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
     "created_at": "2009-09-15T22:08:01Z",
     "labels": [
         "component: notebook",
@@ -26,12 +26,10 @@ This patch makes scrollbars appear on output that is too wide, but just on that 
 
 To test, do something like:
 
-
 ```
 f=cos(x)-x
 show(f.taylor(x,0,50))
 ```
-
 
 in the notebook
 
@@ -64,7 +62,7 @@ Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/so
 archive/issue_comments_057257.json:
 ```json
 {
-    "body": "Sweet.  I love CSS.  Tested successfully on Safari 4 and Firefox 3.5.  Wish I had access to IE or Linux versions, but this should be okay.\n\nCheck out also:\n\n```\nshow(plot(sin(x),-10,10),figsize=[20,20])\n```\n\nSo you can now generate big pictures in the notebook if you have a reason to do so.  \n\nBut question: why not just overflow, not overflow-x, or also overflow-y?  Those eternally long outputs can be a real pain at times.  Try factorial(10000). Also, how many browsers support CSS3 and not just CSS2?  I can imagine a lot of people on XP having problems with some old version of IE.",
+    "body": "Sweet.  I love CSS.  Tested successfully on Safari 4 and Firefox 3.5.  Wish I had access to IE or Linux versions, but this should be okay.\n\nCheck out also:\n\n```\nshow(plot(sin(x),-10,10),figsize=[20,20])\n```\nSo you can now generate big pictures in the notebook if you have a reason to do so.  \n\nBut question: why not just overflow, not overflow-x, or also overflow-y?  Those eternally long outputs can be a real pain at times.  Try factorial(10000). Also, how many browsers support CSS3 and not just CSS2?  I can imagine a lot of people on XP having problems with some old version of IE.",
     "created_at": "2009-09-16T13:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
@@ -80,7 +78,6 @@ Check out also:
 ```
 show(plot(sin(x),-10,10),figsize=[20,20])
 ```
-
 So you can now generate big pictures in the notebook if you have a reason to do so.  
 
 But question: why not just overflow, not overflow-x, or also overflow-y?  Those eternally long outputs can be a real pain at times.  Try factorial(10000). Also, how many browsers support CSS3 and not just CSS2?  I can imagine a lot of people on XP having problems with some old version of IE.
@@ -188,7 +185,7 @@ I meant #6865 in the above comment.
 archive/issue_comments_057263.json:
 ```json
 {
-    "body": "I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha1/devel/sage-main/sage/server/notebook/cell.py\", line 2293:\n    sage: C.html_out()\nExpected:\n    '\\n...<table class=\"cell_output_box\">...</table>'\nGot:\n    '\\n               <div class=\"cell_output_div\">\\n               <table class=\"cell_output_box\"><tr>\\n               <td class=\"cell_number\" id=\"cell_number_0\" onClick=\"cycle_cell_output_type(0);\">\\n                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\n               </td>\\n               <td class=\"output_cell\"><div class=\"cell_div_output_wrap\" id=\"cell_div_output_0\"><div class=\"cell_output_wrap\" id=\"cell_output_0\"><pre class=\"shrunk\">5</pre></div><div class=\"cell_output_nowrap_wrap\" id=\"cell_output_nowrap_0\"><pre class=\"shrunk\">5</pre></div><div class=\"cell_output_html_wrap\" id=\"cell_output_html_0\"> </div></div></td></tr></table></div>'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_94\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/release/sage-4.1.2.alpha1/tmp/.doctest_cell.py\n\t [28.1 s]\n```\n",
+    "body": "I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha1/devel/sage-main/sage/server/notebook/cell.py\", line 2293:\n    sage: C.html_out()\nExpected:\n    '\\n...<table class=\"cell_output_box\">...</table>'\nGot:\n    '\\n               <div class=\"cell_output_div\">\\n               <table class=\"cell_output_box\"><tr>\\n               <td class=\"cell_number\" id=\"cell_number_0\" onClick=\"cycle_cell_output_type(0);\">\\n                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\n               </td>\\n               <td class=\"output_cell\"><div class=\"cell_div_output_wrap\" id=\"cell_div_output_0\"><div class=\"cell_output_wrap\" id=\"cell_output_0\"><pre class=\"shrunk\">5</pre></div><div class=\"cell_output_nowrap_wrap\" id=\"cell_output_nowrap_0\"><pre class=\"shrunk\">5</pre></div><div class=\"cell_output_html_wrap\" id=\"cell_output_html_0\"> </div></div></td></tr></table></div>'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_94\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/release/sage-4.1.2.alpha1/tmp/.doctest_cell.py\n\t [28.1 s]\n```",
     "created_at": "2009-09-18T00:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
@@ -215,7 +212,6 @@ Got:
 For whitespace errors, see the file /home/mvngu/release/sage-4.1.2.alpha1/tmp/.doctest_cell.py
 	 [28.1 s]
 ```
-
 
 
 
@@ -408,7 +404,7 @@ Resolution: fixed
 archive/issue_comments_057273.json:
 ```json
 {
-    "body": "Replying to [comment:15 jason]:\n> Minh--if there's something wrong with me positive reviewing mpatel's changes, please let me know.\nI don't see anything wrong, as long as you don't review your own changes and make it positive review. In this case, I see that you reviewed someone else's (mpatel) changes which in this case is a rebase. You never know; rebasing a patch can actually cause unexpected problems. Thank you for your work!\n\n\n\n\nMerged patches in this order:\n\n1. `#6865`\n2. `trac-6939-notebook-css-overflow.2.patch`",
+    "body": "Replying to [comment:15 jason]:\n> Minh--if there's something wrong with me positive reviewing mpatel's changes, please let me know.\n\nI don't see anything wrong, as long as you don't review your own changes and make it positive review. In this case, I see that you reviewed someone else's (mpatel) changes which in this case is a rebase. You never know; rebasing a patch can actually cause unexpected problems. Thank you for your work!\n\n\n\n\nMerged patches in this order:\n\n1. `#6865`\n2. `trac-6939-notebook-css-overflow.2.patch`",
     "created_at": "2009-09-22T18:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
@@ -419,6 +415,7 @@ archive/issue_comments_057273.json:
 
 Replying to [comment:15 jason]:
 > Minh--if there's something wrong with me positive reviewing mpatel's changes, please let me know.
+
 I don't see anything wrong, as long as you don't review your own changes and make it positive review. In this case, I see that you reviewed someone else's (mpatel) changes which in this case is a rebase. You never know; rebasing a patch can actually cause unexpected problems. Thank you for your work!
 
 

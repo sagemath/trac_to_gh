@@ -299,7 +299,7 @@ Michael
 archive/issue_comments_038905.json:
 ```json
 {
-    "body": "Arrg, this code actually does introduce a problem since `\\w` does not include the directory separator `/`. Hence:\n\n```\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 510, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 470, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 385, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 366, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 348, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 338, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency sage/finance/sage.pxd included in sage/finance/time_series.pyx.\nsage: There was an error installing modified sage library code.\n```\n\n\nSorry for the hasty review :(\n\nCheers,\n\nMichael",
+    "body": "Arrg, this code actually does introduce a problem since `\\w` does not include the directory separator `/`. Hence:\n\n```\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 510, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 470, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 385, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 366, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 348, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 338, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency sage/finance/sage.pxd included in sage/finance/time_series.pyx.\nsage: There was an error installing modified sage library code.\n```\n\nSorry for the hasty review :(\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T09:27:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
@@ -330,7 +330,6 @@ Traceback (most recent call last):
 IOError: could not find dependency sage/finance/sage.pxd included in sage/finance/time_series.pyx.
 sage: There was an error installing modified sage library code.
 ```
-
 
 Sorry for the hasty review :(
 

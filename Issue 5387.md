@@ -392,7 +392,7 @@ Michael
 archive/issue_comments_041422.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> To keep things simple: Merged trac_5387_reviewer-fixes.patch in Sage 3.4.rc0.\nSorry about this, Michael. I'll keep your advice in mind.",
+    "body": "Replying to [comment:8 mabshoff]:\n> To keep things simple: Merged trac_5387_reviewer-fixes.patch in Sage 3.4.rc0.\n\nSorry about this, Michael. I'll keep your advice in mind.",
     "created_at": "2009-03-01T04:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
@@ -403,4 +403,5 @@ archive/issue_comments_041422.json:
 
 Replying to [comment:8 mabshoff]:
 > To keep things simple: Merged trac_5387_reviewer-fixes.patch in Sage 3.4.rc0.
+
 Sorry about this, Michael. I'll keep your advice in mind.

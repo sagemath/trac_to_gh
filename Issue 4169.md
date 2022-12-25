@@ -169,7 +169,7 @@ The SPKG installs cleanly and looks good (hg status, SPKG.txt). Patch applies cl
 archive/issue_comments_030203.json:
 ```json
 {
-    "body": "A couple remarks:\n\n* Please do not attach spkgs to trac, instead link them from some webspace.\n* The version patches by Tim break on every BSD and Solaris where we do not use the GNU ld per default. We now work around this by linking gld to ld, but this is *not* a long term solution. Sage in general does not benefit from versioned libraries, indeed they case a bunch of problems when linking extensions, due to the links the archives get larger and on top of that it makes the memory address space on Cygwin even more scare, so I intend to remove every one of those version patches in the future. Those patches should be moved into the Debian packaging directory or alternatively you should provide a makefile target for not versioned libraries.\n* My OSX 64 bit fixes are not in the spkg since this one was based on 0.8.p1, not p2. Please make sure that in the future you case new spkgs on the latest one in Sage. I have fixed the OSX 64 bit missing bits in 0.9.p0 and for now left the versioned library code in makemakefile.py. I intend to remove that code in the future or add a *BSD/Solaris makefile target. Using versioned libraries should be optional.\n* Feel free to add the minimal patch that adds 64 bit OSX support to your repo. If LDFLAGS was actually used when linking on OSX we do not need a separate target like\n\n```\n+print \"libzn_poly.dylib64: $(LIBOBJS)\"\n+print \"\\t$(CC) -m64 -single_module -fPIC -dynamiclib -o libzn_poly.dylib $(LIBOBJS) $(LIBS)\"\n+print\n```\n\n\nBut it is late, so I will take the easy way out instead of fixing the problem the right way :)\n\nCheers,\n\nMichael",
+    "body": "A couple remarks:\n\n* Please do not attach spkgs to trac, instead link them from some webspace.\n* The version patches by Tim break on every BSD and Solaris where we do not use the GNU ld per default. We now work around this by linking gld to ld, but this is *not* a long term solution. Sage in general does not benefit from versioned libraries, indeed they case a bunch of problems when linking extensions, due to the links the archives get larger and on top of that it makes the memory address space on Cygwin even more scare, so I intend to remove every one of those version patches in the future. Those patches should be moved into the Debian packaging directory or alternatively you should provide a makefile target for not versioned libraries.\n* My OSX 64 bit fixes are not in the spkg since this one was based on 0.8.p1, not p2. Please make sure that in the future you case new spkgs on the latest one in Sage. I have fixed the OSX 64 bit missing bits in 0.9.p0 and for now left the versioned library code in makemakefile.py. I intend to remove that code in the future or add a *BSD/Solaris makefile target. Using versioned libraries should be optional.\n* Feel free to add the minimal patch that adds 64 bit OSX support to your repo. If LDFLAGS was actually used when linking on OSX we do not need a separate target like\n\n```\n+print \"libzn_poly.dylib64: $(LIBOBJS)\"\n+print \"\\t$(CC) -m64 -single_module -fPIC -dynamiclib -o libzn_poly.dylib $(LIBOBJS) $(LIBS)\"\n+print\n```\n\nBut it is late, so I will take the easy way out instead of fixing the problem the right way :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T08:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4169",
     "type": "issue_comment",
@@ -190,7 +190,6 @@ A couple remarks:
 +print "\t$(CC) -m64 -single_module -fPIC -dynamiclib -o libzn_poly.dylib $(LIBOBJS) $(LIBS)"
 +print
 ```
-
 
 But it is late, so I will take the easy way out instead of fixing the problem the right way :)
 
@@ -285,7 +284,7 @@ Merged in Sage 3.1.3.alpha2
 archive/issue_comments_030207.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n>  * The version patches by Tim break on every BSD and Solaris \n\nI don't really understand the issues here, and I see malb has just opened a thread on sage-devel, so I'll leave this to the experts to thrash out, and I'll be sure to follow their recommendations in future :-)\n\n>  * My OSX 64 bit fixes are not in the spkg since this one was based on 0.8.p1, not p2. Please make sure that in the future you case new spkgs on the latest one in Sage.\n\nOops, sorry about that.\n\ndavid",
+    "body": "Replying to [comment:7 mabshoff]:\n>  * The version patches by Tim break on every BSD and Solaris \n\n\nI don't really understand the issues here, and I see malb has just opened a thread on sage-devel, so I'll leave this to the experts to thrash out, and I'll be sure to follow their recommendations in future :-)\n\n>  * My OSX 64 bit fixes are not in the spkg since this one was based on 0.8.p1, not p2. Please make sure that in the future you case new spkgs on the latest one in Sage.\n\n\nOops, sorry about that.\n\ndavid",
     "created_at": "2008-09-26T12:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4169",
     "type": "issue_comment",
@@ -297,9 +296,11 @@ archive/issue_comments_030207.json:
 Replying to [comment:7 mabshoff]:
 >  * The version patches by Tim break on every BSD and Solaris 
 
+
 I don't really understand the issues here, and I see malb has just opened a thread on sage-devel, so I'll leave this to the experts to thrash out, and I'll be sure to follow their recommendations in future :-)
 
 >  * My OSX 64 bit fixes are not in the spkg since this one was based on 0.8.p1, not p2. Please make sure that in the future you case new spkgs on the latest one in Sage.
+
 
 Oops, sorry about that.
 

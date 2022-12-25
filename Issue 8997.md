@@ -3,7 +3,7 @@
 archive/issues_008997.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
     "created_at": "2010-05-20T00:19:02Z",
     "labels": [
         "component: algebra",
@@ -39,7 +39,6 @@ See the file schemes/plane_curves/projective_curve.py, where it says
         The answer has dimension 2 (confirmed via Magma). But it varies
         between 1 and quite large with Singular.
 ```
-
 
 The problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.
 
@@ -89,7 +88,7 @@ Changing component from algebra to algebraic geometry.
 archive/issue_comments_083050.json:
 ```json
 {
-    "body": "Replying to [ticket:8997 was]:\n\n> \n> The problem can be solved by learning how the relevant code in Singular works then correctly wrapping it. \n\nAre there any more details on this available?",
+    "body": "Replying to [ticket:8997 was]:\n\n> \n> The problem can be solved by learning how the relevant code in Singular works then correctly wrapping it. \n\n\nAre there any more details on this available?",
     "created_at": "2010-05-21T16:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -102,6 +101,7 @@ Replying to [ticket:8997 was]:
 
 > 
 > The problem can be solved by learning how the relevant code in Singular works then correctly wrapping it. 
+
 
 Are there any more details on this available?
 
@@ -130,7 +130,7 @@ For the record, the relevant Singular ticket is here: http://www.singular.uni-kl
 archive/issue_comments_083052.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> For the record, the relevant Singular ticket is here: http://www.singular.uni-kl.de:8002/trac/ticket/153\n\nThanks. This suggests that all one needs to do is to add the singular command \n\n```\nsystem(\"random\", mySeedAsAnInt);\n```\n\nat the top of the function code.",
+    "body": "Replying to [comment:3 was]:\n> For the record, the relevant Singular ticket is here: http://www.singular.uni-kl.de:8002/trac/ticket/153\n\n\nThanks. This suggests that all one needs to do is to add the singular command \n\n```\nsystem(\"random\", mySeedAsAnInt);\n```\nat the top of the function code.",
     "created_at": "2010-05-25T11:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -142,12 +142,12 @@ archive/issue_comments_083052.json:
 Replying to [comment:3 was]:
 > For the record, the relevant Singular ticket is here: http://www.singular.uni-kl.de:8002/trac/ticket/153
 
+
 Thanks. This suggests that all one needs to do is to add the singular command 
 
 ```
 system("random", mySeedAsAnInt);
 ```
-
 at the top of the function code.
 
 
@@ -215,7 +215,7 @@ Changing status from new to needs_work.
 archive/issue_comments_083056.json:
 ```json
 {
-    "body": "This patch does not work. My guess is that\n\n\n```\nsystem(\"random\", mySeedAsAnInt);\n```\n\ndoes not really set the random seed for all commands, but I could easily be wrong. In any case, it seems that the command now does return the dimension in a consistent way for different machines. That is progress, since the old version was much worse. However, the basis (ie, the list of functions spanning the RR space) is not deterministic. I'm not sure how to fix that.",
+    "body": "This patch does not work. My guess is that\n\n```\nsystem(\"random\", mySeedAsAnInt);\n```\ndoes not really set the random seed for all commands, but I could easily be wrong. In any case, it seems that the command now does return the dimension in a consistent way for different machines. That is progress, since the old version was much worse. However, the basis (ie, the list of functions spanning the RR space) is not deterministic. I'm not sure how to fix that.",
     "created_at": "2010-05-27T17:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -226,11 +226,9 @@ archive/issue_comments_083056.json:
 
 This patch does not work. My guess is that
 
-
 ```
 system("random", mySeedAsAnInt);
 ```
-
 does not really set the random seed for all commands, but I could easily be wrong. In any case, it seems that the command now does return the dimension in a consistent way for different machines. That is progress, since the old version was much worse. However, the basis (ie, the list of functions spanning the RR space) is not deterministic. I'm not sure how to fix that.
 
 
@@ -240,7 +238,7 @@ does not really set the random seed for all commands, but I could easily be wron
 archive/issue_comments_083057.json:
 ```json
 {
-    "body": "My impression is that the problem lies with Singular. I adapted the example in the description above and typed directly into Singular the following:\n\n\n```\nkill s, C, Ctemp, temp, G, R, LG;\n\nLIB \"brnoeth.lib\";\nint plevel=printlevel;\nprintlevel=-1;\nsystem(\"random\", 1);\n\nring s=5,(x,y),lp;\nlist C=Adj_div(x7+y7+1);\nC=NSplaces(1,C);\ndef R=C[1][2];\n\n# I want to look at the points to be able to define\n# the same divisor each time, see below\ndef Ctemp=extcurve(1,C);\ndef temp=Ctemp[1][5];\nsetring temp;\nprint(POINTS);\n\nsetring R;\n\n# adapt the line below according to the ordering of the points\n# i always chose the divisor 3(0,-1,1)-1(1,2,1)+10(2,1,1)\nintvec G = ;\n\nlist LG=BrillNoether(G,C);\nLG;\n\nprintlevel=plevel;\n```\n\n\nNot only did the bases vary each time I ran this code (even though I fixed the random seed in the sixth line), the resulting bases also had different cardinality (either 0 or 2).\n\n(I also tried to post this on the Singular trac server, but failed to do so. Maybe someone else is able to update the Singular ticket?)",
+    "body": "My impression is that the problem lies with Singular. I adapted the example in the description above and typed directly into Singular the following:\n\n```\nkill s, C, Ctemp, temp, G, R, LG;\n\nLIB \"brnoeth.lib\";\nint plevel=printlevel;\nprintlevel=-1;\nsystem(\"random\", 1);\n\nring s=5,(x,y),lp;\nlist C=Adj_div(x7+y7+1);\nC=NSplaces(1,C);\ndef R=C[1][2];\n\n# I want to look at the points to be able to define\n# the same divisor each time, see below\ndef Ctemp=extcurve(1,C);\ndef temp=Ctemp[1][5];\nsetring temp;\nprint(POINTS);\n\nsetring R;\n\n# adapt the line below according to the ordering of the points\n# i always chose the divisor 3(0,-1,1)-1(1,2,1)+10(2,1,1)\nintvec G = ;\n\nlist LG=BrillNoether(G,C);\nLG;\n\nprintlevel=plevel;\n```\n\nNot only did the bases vary each time I ran this code (even though I fixed the random seed in the sixth line), the resulting bases also had different cardinality (either 0 or 2).\n\n(I also tried to post this on the Singular trac server, but failed to do so. Maybe someone else is able to update the Singular ticket?)",
     "created_at": "2010-07-19T09:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -250,7 +248,6 @@ archive/issue_comments_083057.json:
 ```
 
 My impression is that the problem lies with Singular. I adapted the example in the description above and typed directly into Singular the following:
-
 
 ```
 kill s, C, Ctemp, temp, G, R, LG;
@@ -283,7 +280,6 @@ LG;
 
 printlevel=plevel;
 ```
-
 
 Not only did the bases vary each time I ran this code (even though I fixed the random seed in the sixth line), the resulting bases also had different cardinality (either 0 or 2).
 
@@ -392,7 +388,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_083063.json:
 ```json
 {
-    "body": "Replying to [comment:12 minz]:\n> Following Jose's explanations on the Singular trac server, the modified Sage wrapper \n\n...\n\nThank you! \n\nI'll look at this carefully when classes end this semester, which will be in a few weeks.",
+    "body": "Replying to [comment:12 minz]:\n> Following Jose's explanations on the Singular trac server, the modified Sage wrapper \n\n\n...\n\nThank you! \n\nI'll look at this carefully when classes end this semester, which will be in a few weeks.",
     "created_at": "2010-11-29T00:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -403,6 +399,7 @@ archive/issue_comments_083063.json:
 
 Replying to [comment:12 minz]:
 > Following Jose's explanations on the Singular trac server, the modified Sage wrapper 
+
 
 ...
 
@@ -527,7 +524,7 @@ This needs some clarifications:
 archive/issue_comments_083068.json:
 ```json
 {
-    "body": "Replying to [comment:16 jdemeyer]:\n> This needs some clarifications:\n>  * which patch(es) need to be applied?\n>  * who are the authors/reviewers? (please fill in the real names in \n> the Author and Reviewer fields on this ticket)\n\nDone. Others helped, such as William Stein and Jose Farran.\n\nMany thanks to everyone who helped with fixing this issue!\n\nCan this be changed back to positive review now?",
+    "body": "Replying to [comment:16 jdemeyer]:\n> This needs some clarifications:\n> * which patch(es) need to be applied?\n> * who are the authors/reviewers? (please fill in the real names in \n> the Author and Reviewer fields on this ticket)\n\n\nDone. Others helped, such as William Stein and Jose Farran.\n\nMany thanks to everyone who helped with fixing this issue!\n\nCan this be changed back to positive review now?",
     "created_at": "2011-01-18T20:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -538,9 +535,10 @@ archive/issue_comments_083068.json:
 
 Replying to [comment:16 jdemeyer]:
 > This needs some clarifications:
->  * which patch(es) need to be applied?
->  * who are the authors/reviewers? (please fill in the real names in 
+> * which patch(es) need to be applied?
+> * who are the authors/reviewers? (please fill in the real names in 
 > the Author and Reviewer fields on this ticket)
+
 
 Done. Others helped, such as William Stein and Jose Farran.
 
@@ -555,7 +553,7 @@ Can this be changed back to positive review now?
 archive/issue_comments_083069.json:
 ```json
 {
-    "body": "Replying to [comment:17 wdj]:\n> Replying to [comment:16 jdemeyer]:\n> > This needs some clarifications:\n> >  * which patch(es) need to be applied?\nYou didn't answer this question...",
+    "body": "Replying to [comment:17 wdj]:\n> Replying to [comment:16 jdemeyer]:\n> > This needs some clarifications:\n> > * which patch(es) need to be applied?\n\nYou didn't answer this question...",
     "created_at": "2011-01-19T01:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -567,7 +565,8 @@ archive/issue_comments_083069.json:
 Replying to [comment:17 wdj]:
 > Replying to [comment:16 jdemeyer]:
 > > This needs some clarifications:
-> >  * which patch(es) need to be applied?
+> > * which patch(es) need to be applied?
+
 You didn't answer this question...
 
 
@@ -577,7 +576,7 @@ You didn't answer this question...
 archive/issue_comments_083070.json:
 ```json
 {
-    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:17 wdj]:\n> > Replying to [comment:16 jdemeyer]:\n> > > This needs some clarifications:\n> > >  * which patch(es) need to be applied?\n> You didn't answer this question...\n\nSorry! Just trac_8997_fix_rr_basis_and_doc.patch",
+    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:17 wdj]:\n> > Replying to [comment:16 jdemeyer]:\n> > > This needs some clarifications:\n> > > * which patch(es) need to be applied?\n\n> You didn't answer this question...\n\nSorry! Just trac_8997_fix_rr_basis_and_doc.patch",
     "created_at": "2011-01-19T01:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
@@ -590,7 +589,8 @@ Replying to [comment:18 jdemeyer]:
 > Replying to [comment:17 wdj]:
 > > Replying to [comment:16 jdemeyer]:
 > > > This needs some clarifications:
-> > >  * which patch(es) need to be applied?
+> > > * which patch(es) need to be applied?
+
 > You didn't answer this question...
 
 Sorry! Just trac_8997_fix_rr_basis_and_doc.patch

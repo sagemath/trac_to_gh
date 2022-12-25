@@ -133,7 +133,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091190.json:
 ```json
 {
-    "body": "Looks good! I tried forcing Fortran to build before Python in 4.5.rc1, and got the following with this patch applied:\n\n\n```\nfortran-20100629/src/g95/g95_x86_osx.tar.bz2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux geom 2.6.24-24-server #1 SMP Tue Aug 18 16:51:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\nThe spkg-install script depends on Python, but Python is not\nyet installed.  If this is a standard package, you should\nproperly update the /scratch/rlmill/test/sage-4.5.rc1/spkg/standard/deps script.\n```\n",
+    "body": "Looks good! I tried forcing Fortran to build before Python in 4.5.rc1, and got the following with this patch applied:\n\n```\nfortran-20100629/src/g95/g95_x86_osx.tar.bz2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux geom 2.6.24-24-server #1 SMP Tue Aug 18 16:51:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\nThe spkg-install script depends on Python, but Python is not\nyet installed.  If this is a standard package, you should\nproperly update the /scratch/rlmill/test/sage-4.5.rc1/spkg/standard/deps script.\n```",
     "created_at": "2010-07-16T08:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
@@ -143,7 +143,6 @@ archive/issue_comments_091190.json:
 ```
 
 Looks good! I tried forcing Fortran to build before Python in 4.5.rc1, and got the following with this patch applied:
-
 
 ```
 fortran-20100629/src/g95/g95_x86_osx.tar.bz2
@@ -166,7 +165,6 @@ The spkg-install script depends on Python, but Python is not
 yet installed.  If this is a standard package, you should
 properly update the /scratch/rlmill/test/sage-4.5.rc1/spkg/standard/deps script.
 ```
-
 
 
 
@@ -215,7 +213,7 @@ P.S.: In general, I think it's a bad idea to make Sage packages depend on Python
 archive/issue_comments_091193.json:
 ```json
 {
-    "body": "Yet another one:\n\nPerhaps in addition to a slightly modified version of William's patch, put that as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\n```sh\n#!/usr/bin/env bash\n\necho python $@ \":\"\n\necho \"Error: Sage's Python has not yet been installed!\"\necho \"       This is most probably due to incorrect dependencies in the Makefiles.\"\necho \"Please report this to ...\"\n\nexit 1\n```\n\nand let the Python spkg just overwrite it with the binary. (This avoids unnecessary indirection.)",
+    "body": "Yet another one:\n\nPerhaps in addition to a slightly modified version of William's patch, put that as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\n```sh\n#!/usr/bin/env bash\n\necho python $@ \":\"\n\necho \"Error: Sage's Python has not yet been installed!\"\necho \"       This is most probably due to incorrect dependencies in the Makefiles.\"\necho \"Please report this to ...\"\n\nexit 1\n```\nand let the Python spkg just overwrite it with the binary. (This avoids unnecessary indirection.)",
     "created_at": "2010-07-16T13:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
@@ -239,7 +237,6 @@ echo "Please report this to ..."
 
 exit 1
 ```
-
 and let the Python spkg just overwrite it with the binary. (This avoids unnecessary indirection.)
 
 
@@ -269,7 +266,7 @@ Unless this ticket gets immediately merged, please also consider [this bug](http
 archive/issue_comments_091195.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> Yet another one:\n> \n> Perhaps in addition to a slightly modified version of William's patch, put that \n> as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\nI definitely do not like this idea.  Though it seems good at first, it's really bad. \n\n  (1) it's hackish\n\n  (2) It means that once python is installed, the scripts repository is always confused/corrupted/etc.   In particular, it would completely break \"sage -upgrade\", since the scripts repo is upgraded via `hg pull`.",
+    "body": "Replying to [comment:7 leif]:\n> Yet another one:\n> \n> Perhaps in addition to a slightly modified version of William's patch, put that \n> as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\n\nI definitely do not like this idea.  Though it seems good at first, it's really bad. \n\n  (1) it's hackish\n\n  (2) It means that once python is installed, the scripts repository is always confused/corrupted/etc.   In particular, it would completely break \"sage -upgrade\", since the scripts repo is upgraded via `hg pull`.",
     "created_at": "2010-07-17T12:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
@@ -283,6 +280,7 @@ Replying to [comment:7 leif]:
 > 
 > Perhaps in addition to a slightly modified version of William's patch, put that 
 > as `$SAGE_LOCAL/bin/python` into the scripts repo:
+
 
 I definitely do not like this idea.  Though it seems good at first, it's really bad. 
 

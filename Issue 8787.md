@@ -119,7 +119,7 @@ hashlib module failed to import
 archive/issue_comments_080326.json:
 ```json
 {
-    "body": "Replying to [comment:3 mariah]:\n> Sadly, building sage-4.3.5 with gcc-4.4.3 and openssl-1.0.0.spkg \n> did NOT work on one of my company's computers (not connected to\n> the Internet).  The machine is similar hardware to Skynet/taurus, \n> but running Red Hat Enterprise Linux Server.\n> \n> First I installed openssl-1.0.0.spkg.  Then I did 'make testlong'.\n> The build failed while trying to build python-2.6.4.p7 with the\n> message\n\nCan you post the log that results from doing\n\n  sage -f openssl-1.0.0\n\nand also the log that results from building python, e.g.,\n\n  sage -f python-2.6.4.p7\n\n\nAlso, did you get this failure on taurus?  If so, I can just test there.",
+    "body": "Replying to [comment:3 mariah]:\n> Sadly, building sage-4.3.5 with gcc-4.4.3 and openssl-1.0.0.spkg \n> did NOT work on one of my company's computers (not connected to\n> the Internet).  The machine is similar hardware to Skynet/taurus, \n> but running Red Hat Enterprise Linux Server.\n> \n> First I installed openssl-1.0.0.spkg.  Then I did 'make testlong'.\n> The build failed while trying to build python-2.6.4.p7 with the\n> message\n\n\nCan you post the log that results from doing\n\n  sage -f openssl-1.0.0\n\nand also the log that results from building python, e.g.,\n\n  sage -f python-2.6.4.p7\n\n\nAlso, did you get this failure on taurus?  If so, I can just test there.",
     "created_at": "2010-05-05T15:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
@@ -137,6 +137,7 @@ Replying to [comment:3 mariah]:
 > First I installed openssl-1.0.0.spkg.  Then I did 'make testlong'.
 > The build failed while trying to build python-2.6.4.p7 with the
 > message
+
 
 Can you post the log that results from doing
 
@@ -156,7 +157,7 @@ Also, did you get this failure on taurus?  If so, I can just test there.
 archive/issue_comments_080327.json:
 ```json
 {
-    "body": "> Can you post the log that results from doing\n> \n>   sage -f openssl-1.0.0\n> \n> and also the log that results from building python, e.g.,\n> \n>   sage -f python-2.6.4.p7\n\nI do not believe I am allowed to export the logs.\nThis problem is happening on one of our internal \ncompany machines.\n\n> Also, did you get this failure on taurus?  If so, I can just test there.\n\nI tried to reproduce the problem on taurus, but sadly the \nproblem does NOT seem to be reproducible on taurus.",
+    "body": "> Can you post the log that results from doing\n> \n>   sage -f openssl-1.0.0\n> \n> and also the log that results from building python, e.g.,\n> \n>   sage -f python-2.6.4.p7\n\n\nI do not believe I am allowed to export the logs.\nThis problem is happening on one of our internal \ncompany machines.\n\n> Also, did you get this failure on taurus?  If so, I can just test there.\n\n\nI tried to reproduce the problem on taurus, but sadly the \nproblem does NOT seem to be reproducible on taurus.",
     "created_at": "2010-05-05T15:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
@@ -173,11 +174,13 @@ archive/issue_comments_080327.json:
 > 
 >   sage -f python-2.6.4.p7
 
+
 I do not believe I am allowed to export the logs.
 This problem is happening on one of our internal 
 company machines.
 
 > Also, did you get this failure on taurus?  If so, I can just test there.
+
 
 I tried to reproduce the problem on taurus, but sadly the 
 problem does NOT seem to be reproducible on taurus.
@@ -189,7 +192,7 @@ problem does NOT seem to be reproducible on taurus.
 archive/issue_comments_080328.json:
 ```json
 {
-    "body": "\n```\nI have investigated the problem and found that \nthe reason for the failure is that openssl-1.0.0\nputs libraries in $SAGE_ROOT/local/lib64 on 64-bit \nmachines. Sage does not add $SAGE_ROOT/local/lib64\nto the LD_LIBRARY_PATH.\n\nIf you add\n\n  --libdir=lib\n\nto the ./config line in spkg-install, then sage\nbuilds with openssl-1.0.0 and all tests pass.\n```\n",
+    "body": "```\nI have investigated the problem and found that \nthe reason for the failure is that openssl-1.0.0\nputs libraries in $SAGE_ROOT/local/lib64 on 64-bit \nmachines. Sage does not add $SAGE_ROOT/local/lib64\nto the LD_LIBRARY_PATH.\n\nIf you add\n\n  --libdir=lib\n\nto the ./config line in spkg-install, then sage\nbuilds with openssl-1.0.0 and all tests pass.\n```",
     "created_at": "2010-05-27T14:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
@@ -197,7 +200,6 @@ archive/issue_comments_080328.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
-
 
 ```
 I have investigated the problem and found that 
@@ -213,7 +215,6 @@ If you add
 to the ./config line in spkg-install, then sage
 builds with openssl-1.0.0 and all tests pass.
 ```
-
 
 
 

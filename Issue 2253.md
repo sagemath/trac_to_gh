@@ -3,7 +3,7 @@
 archive/issues_002253.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\n\nAlpha2 installed and tested on Toshiba Laptop under Ubuntu.\n\nmake test failures:\n\n\n       sage -t  devel/sage-main/sage/groups/group.pyx\n       sage -t  devel/sage-main/sage/functions/special.py\n       sage -t  devel/sage-main/sage/misc/sage_timeit_class.pyx\n       sage -t  devel/sage-main/sage/misc/functional.py\n       sage -t  devel/sage-main/sage/schemes/elliptic_curves/padics.py\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal_rel.py\n       sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n       sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\nTotal time for all tests: 4938.4 seconds\n\ntest log is on my server:\n\n       http://www.billp.org/alpha2-test.log\n\nif you need any further details.\nTime for bed!\n\n```\n\n\nLooking at the actual doctest log suggest what to do to fix such things,\nand I'll do it now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2253\n\n",
+    "body": "Assignee: failure\n\n```\n\nAlpha2 installed and tested on Toshiba Laptop under Ubuntu.\n\nmake test failures:\n\n\n       sage -t  devel/sage-main/sage/groups/group.pyx\n       sage -t  devel/sage-main/sage/functions/special.py\n       sage -t  devel/sage-main/sage/misc/sage_timeit_class.pyx\n       sage -t  devel/sage-main/sage/misc/functional.py\n       sage -t  devel/sage-main/sage/schemes/elliptic_curves/padics.py\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal_rel.py\n       sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n       sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\nTotal time for all tests: 4938.4 seconds\n\ntest log is on my server:\n\n       http://www.billp.org/alpha2-test.log\n\nif you need any further details.\nTime for bed!\n\n```\n\nLooking at the actual doctest log suggest what to do to fix such things,\nand I'll do it now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2253\n\n",
     "created_at": "2008-02-21T22:50:39Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002253.json:
 }
 ```
 Assignee: failure
-
 
 ```
 
@@ -45,7 +44,6 @@ if you need any further details.
 Time for bed!
 
 ```
-
 
 Looking at the actual doctest log suggest what to do to fix such things,
 and I'll do it now.

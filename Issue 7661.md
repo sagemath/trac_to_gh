@@ -3,7 +3,7 @@
 archive/issues_007661.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
     "created_at": "2009-12-11T14:18:05Z",
     "labels": [
         "component: interfaces",
@@ -26,7 +26,6 @@ From the sage-devel thread:
 
 http://groups.google.com/group/sage-devel/t/c89582242c83a349
 
-
 ```
 On Fri, 11 Dec 2009 13:46:31 +0100
 Nathann Cohen <nathann.cohen@gmail.com> wrote:
@@ -39,14 +38,12 @@ Nathann Cohen <nathann.cohen@gmail.com> wrote:
 > sage: ((m1/n)-(m2/n)).expand().simplify()
 ```
 
-
 On 4.3.rc0, I get this:
 
 ```
 TypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and
 '<class 'sage.functions.generalized.FunctionDiracDelta'>'
 ```
-
 
 The Maxima interface seems to give precedence to the global function
 dictionary instead of the local variables when converting Maxima output
@@ -59,7 +56,6 @@ sage: maxima(dirac_delta(x))
 delta(x)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7661
 
 
@@ -71,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7661
 archive/issue_comments_065467.json:
 ```json
 {
-    "body": "People run into this all the time, evidently:\n\n```\n[15:21] --> SageWWW has joined this channel (~SageWWW@64.241.37.140).\n[15:23] <SageWWW> hey guys.  what do you think about http://pastebin.ca/1772520\n[15:24] <SageWWW> d = var('delta'), so now d is a reference to a sage.symbolic.expression.Expression\n[15:25] <SageWWW> but when we try to add it to something else, it thinks its a sage.functions.generalized.FunctionDiracDelta\n[15:27] <wstein> http://trac.sagemath.org/sage_trac/ticket/7661\n```\n",
+    "body": "People run into this all the time, evidently:\n\n```\n[15:21] --> SageWWW has joined this channel (~SageWWW@64.241.37.140).\n[15:23] <SageWWW> hey guys.  what do you think about http://pastebin.ca/1772520\n[15:24] <SageWWW> d = var('delta'), so now d is a reference to a sage.symbolic.expression.Expression\n[15:25] <SageWWW> but when we try to add it to something else, it thinks its a sage.functions.generalized.FunctionDiracDelta\n[15:27] <wstein> http://trac.sagemath.org/sage_trac/ticket/7661\n```",
     "created_at": "2010-01-30T23:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
@@ -89,7 +85,6 @@ People run into this all the time, evidently:
 [15:25] <SageWWW> but when we try to add it to something else, it thinks its a sage.functions.generalized.FunctionDiracDelta
 [15:27] <wstein> http://trac.sagemath.org/sage_trac/ticket/7661
 ```
-
 
 
 
@@ -205,7 +200,7 @@ This patch depends on #7748.
 archive/issue_comments_065473.json:
 ```json
 {
-    "body": "Thanks for working onthis. Is #7748 the only prerequisity? I installed three patches as described at #7748 and got the following error\n\n```\npatching file sage/calculus/calculus.py\nHunk #3 succeeded at 1414 with fuzz 1 (offset -4 lines).\nHunk #5 FAILED at 1455\n1 out of 14 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Thanks for working onthis. Is #7748 the only prerequisity? I installed three patches as described at #7748 and got the following error\n\n```\npatching file sage/calculus/calculus.py\nHunk #3 succeeded at 1414 with fuzz 1 (offset -4 lines).\nHunk #5 FAILED at 1455\n1 out of 14 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2010-04-09T08:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
@@ -223,7 +218,6 @@ Hunk #5 FAILED at 1455
 1 out of 14 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -272,7 +266,7 @@ Changing assignee from @williamstein to @burcin.
 archive/issue_comments_065476.json:
 ```json
 {
-    "body": "Hello Burcin\n\nI think that two lines should be removed from the patch\n\n```\nglobal _syms \n_syms = sage.symbolic.pynac.symbol_table.get('maxima', {}) \n```\n\n\nI updated your patch, it is now http://user.mendelu.cz/marik/sage/trac_7661-maxima_convert_back2.patch\n\nIf everything will work, I'll return in few (several) hours with positive review (tests in functions, interfaces, symbolics and calculus passed, now running all the test). \n\nRobert",
+    "body": "Hello Burcin\n\nI think that two lines should be removed from the patch\n\n```\nglobal _syms \n_syms = sage.symbolic.pynac.symbol_table.get('maxima', {}) \n```\n\nI updated your patch, it is now http://user.mendelu.cz/marik/sage/trac_7661-maxima_convert_back2.patch\n\nIf everything will work, I'll return in few (several) hours with positive review (tests in functions, interfaces, symbolics and calculus passed, now running all the test). \n\nRobert",
     "created_at": "2010-04-09T14:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
@@ -289,7 +283,6 @@ I think that two lines should be removed from the patch
 global _syms 
 _syms = sage.symbolic.pynac.symbol_table.get('maxima', {}) 
 ```
-
 
 I updated your patch, it is now http://user.mendelu.cz/marik/sage/trac_7661-maxima_convert_back2.patch
 

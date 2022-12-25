@@ -3,7 +3,7 @@
 archive/issues_000633.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: spkg-install, spkg-check\n\nWhen building spkgs manually by invoking spkg-install on the shell I oftern do not have sage-env sourced. Consequently odd things happen:\n\n```\n[mabshoff@m940 mpfr-2.2.1.p1]$ ./spkg-install\n./spkg-install: line 16: [: =: unary operator expected\n```\n\nWe ought to verify that at least SAGE_LOCAL is non-empty. If it is empty print a warning message and exit.\n\nTo fix this we need to touch every spkg-install in the tree which is more that 75 scripts. So while we are at it we should also add spkg-check scripts to each spkg while we are at it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/633\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: spkg-install, spkg-check\n\nWhen building spkgs manually by invoking spkg-install on the shell I oftern do not have sage-env sourced. Consequently odd things happen:\n\n```\n[mabshoff@m940 mpfr-2.2.1.p1]$ ./spkg-install\n./spkg-install: line 16: [: =: unary operator expected\n```\nWe ought to verify that at least SAGE_LOCAL is non-empty. If it is empty print a warning message and exit.\n\nTo fix this we need to touch every spkg-install in the tree which is more that 75 scripts. So while we are at it we should also add spkg-check scripts to each spkg while we are at it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/633\n\n",
     "created_at": "2007-09-10T03:42:39Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ When building spkgs manually by invoking spkg-install on the shell I oftern do n
 [mabshoff@m940 mpfr-2.2.1.p1]$ ./spkg-install
 ./spkg-install: line 16: [: =: unary operator expected
 ```
-
 We ought to verify that at least SAGE_LOCAL is non-empty. If it is empty print a warning message and exit.
 
 To fix this we need to touch every spkg-install in the tree which is more that 75 scripts. So while we are at it we should also add spkg-check scripts to each spkg while we are at it.
@@ -64,7 +63,7 @@ Changing status from new to assigned.
 archive/issue_comments_003246.json:
 ```json
 {
-    "body": "I suggest adding the following to the top of all spkg-install and spkg-check scripts:\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   exit 1\nfi\n```\n\n\nCheers,\n\nMichael",
+    "body": "I suggest adding the following to the top of all spkg-install and spkg-check scripts:\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   exit 1\nfi\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T10:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/633",
     "type": "issue_comment",
@@ -82,7 +81,6 @@ if [ "$SAGE_LOCAL" = "" ]; then
 fi
 ```
 
-
 Cheers,
 
 Michael
@@ -94,7 +92,7 @@ Michael
 archive/issue_comments_003247.json:
 ```json
 {
-    "body": "Wouldn't it be useful to also give a hint about what the user should do, e.g., something like:\n\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n",
+    "body": "Wouldn't it be useful to also give a hint about what the user should do, e.g., something like:\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```",
     "created_at": "2008-01-27T13:33:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/633",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ archive/issue_comments_003247.json:
 
 Wouldn't it be useful to also give a hint about what the user should do, e.g., something like:
 
-
 ```
 if [ "$SAGE_LOCAL" = "" ]; then
    echo "SAGE_LOCAL undefined ... exiting";
@@ -113,7 +110,6 @@ if [ "$SAGE_LOCAL" = "" ]; then
    exit 1
 fi
 ```
-
 
 
 

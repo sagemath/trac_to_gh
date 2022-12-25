@@ -3,7 +3,7 @@
 archive/issues_005010.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWe are seeing the following doctest failure:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1311:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1313:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n```\n\nThis is because we are using the C library instead of RDF to create inf and nan.\n\nNote that this is a different issue than #672.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5010\n\n",
+    "body": "Assignee: mabshoff\n\nWe are seeing the following doctest failure:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1311:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1313:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n```\nThis is because we are using the C library instead of RDF to create inf and nan.\n\nNote that this is a different issue than #672.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5010\n\n",
     "created_at": "2009-01-18T06:39:47Z",
     "labels": [
         "component: porting: solaris",
@@ -36,7 +36,6 @@ Expected:
 Got:
     -NaN
 ```
-
 This is because we are using the C library instead of RDF to create inf and nan.
 
 Note that this is a different issue than #672.

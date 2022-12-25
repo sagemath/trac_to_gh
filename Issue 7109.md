@@ -3,7 +3,7 @@
 archive/issues_007109.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @cswiercz @novoselt\n\nKeywords: polyhedra\n\nThe Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, \"linearities\" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:\n\n**H-representation: inequalities and equalities**\n\n**V-representation: conv(vertices) + IR_+{rays} + IR{lines}**\n\nIt is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:\n\n```\n  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()\n  [[0, 1]]\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() \n  []\n```\n\nAlso, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.\n\nFinally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. \n\n### Proposal\n\nI propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. \n\nIf one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.\n\n\n### cdd caveats\n\ncdd sometimes omits the origin as a vertex:\n\n```\n  sage: Polyhedron(ieqs=[[0, 1]]).vertices()\n  []\n```\n\ncdd also sometimes adds a \"inequality at infininty\"; Contrary to the output below, the half-line has only one face\n\n```\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()\n  [[0, [0]], [1, [1]]]\n```\n\nGiven equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)\n\n### Plan\n\n1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg\n\n2) change polyhedra.py to run cdd only once in the constructor (TODO)\n\n3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an \"inequality at infinity\" (TODO)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7109\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @cswiercz @novoselt\n\nKeywords: polyhedra\n\nThe Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, \"linearities\" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:\n\n**H-representation: inequalities and equalities**\n\n**V-representation: conv(vertices) + IR_+{rays} + IR{lines}**\n\nIt is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:\n\n```\n  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()\n  [[0, 1]]\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() \n  []\n```\nAlso, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.\n\nFinally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. \n\n### Proposal\n\nI propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. \n\nIf one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.\n\n\n### cdd caveats\n\ncdd sometimes omits the origin as a vertex:\n\n```\n  sage: Polyhedron(ieqs=[[0, 1]]).vertices()\n  []\n```\ncdd also sometimes adds a \"inequality at infininty\"; Contrary to the output below, the half-line has only one face\n\n```\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()\n  [[0, [0]], [1, [1]]]\n```\nGiven equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)\n\n### Plan\n\n1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg\n\n2) change polyhedra.py to run cdd only once in the constructor (TODO)\n\n3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an \"inequality at infinity\" (TODO)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7109\n\n",
     "created_at": "2009-10-04T13:46:52Z",
     "labels": [
         "component: geometry"
@@ -35,7 +35,6 @@ It is often confusing what has already been computed from the complementary repr
   sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() 
   []
 ```
-
 Also, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.
 
 Finally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. 
@@ -55,14 +54,12 @@ cdd sometimes omits the origin as a vertex:
   sage: Polyhedron(ieqs=[[0, 1]]).vertices()
   []
 ```
-
 cdd also sometimes adds a "inequality at infininty"; Contrary to the output below, the half-line has only one face
 
 ```
   sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()
   [[0, [0]], [1, [1]]]
 ```
-
 Given equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)
 
 ### Plan
@@ -439,7 +436,7 @@ I will keep thinking about this; my understanding is improving as I write the do
 archive/issue_comments_058760.json:
 ```json
 {
-    "body": "I am planning on changing things so that as many former doctests pass as possible.  I think this is doable without changing a whole lot.\n\nI am a little concerned about some major speed regressions.  I think more things need to be cached, but there might be other issues as well.  As just one example, the current polyhedra.py does:\n\n```\ntime p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(10)])\n```\n\nin about 0.05 seconds on my laptop, while the patched version takes about 3.5 seconds - a factor of 70.  This seems unacceptable.  I will try to profile this a bit but any  insights are appreciated.\n\nIn case my tone seems overly negative, I would like to re-iterate that I am still impressed and excited by this rewrite and I think polytopes in sage will be in much better shape after this is completed.",
+    "body": "I am planning on changing things so that as many former doctests pass as possible.  I think this is doable without changing a whole lot.\n\nI am a little concerned about some major speed regressions.  I think more things need to be cached, but there might be other issues as well.  As just one example, the current polyhedra.py does:\n\n```\ntime p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(10)])\n```\nin about 0.05 seconds on my laptop, while the patched version takes about 3.5 seconds - a factor of 70.  This seems unacceptable.  I will try to profile this a bit but any  insights are appreciated.\n\nIn case my tone seems overly negative, I would like to re-iterate that I am still impressed and excited by this rewrite and I think polytopes in sage will be in much better shape after this is completed.",
     "created_at": "2009-10-27T00:59:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -455,7 +452,6 @@ I am a little concerned about some major speed regressions.  I think more things
 ```
 time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(10)])
 ```
-
 in about 0.05 seconds on my laptop, while the patched version takes about 3.5 seconds - a factor of 70.  This seems unacceptable.  I will try to profile this a bit but any  insights are appreciated.
 
 In case my tone seems overly negative, I would like to re-iterate that I am still impressed and excited by this rewrite and I think polytopes in sage will be in much better shape after this is completed.
@@ -467,7 +463,7 @@ In case my tone seems overly negative, I would like to re-iterate that I am stil
 archive/issue_comments_058761.json:
 ```json
 {
-    "body": "Previously we only eliminated redundant vertices, now we also eliminate redundant (in)equalities. I added some timing to the output:\n\n\n```\nsage: time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(14)], verbose=true)\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n 1 2 4 8 16 32\n[...]\n 1 13 169 2197 28561 371293\nend\n\n# walltime used for complementary representation: 0s\n# walltime used for canonical H-representation: 6s\n# walltime used for canonical V-representation: 0s\n\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n[...]\n 1 13 169 2197 28561 371293\nend\n\nH-representation\nbegin\n 110 6 rational\n 0 11880 -4578 659 -42 1\n[...]\n 0 17160 -6026 791 -46 1\nend\n\nVertex graph\nbegin\n  14    14\n 1 13 : 2 3 4 5 6 7 8 9 10 11 12 13 14 \n[...]\n 14 13 : 1 2 3 4 5 6 7 8 9 10 11 12 13 \nend\n# walltime used for vertex adjacencies: 0s\n\nFacet graph\nbegin\n  110    110\n 1 5 : 9 45 91 105 110 \n 2 5 : 8 9 38 92 103 \n[...]\n 110 5 : 1 46 91 105 109 \nend\n# walltime used for facet adjacencies: 10s\n\n\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 16.37 s\n```\n\n\nThe polyhedral input is one with relatively few vertices (and without any redundancies), but lots of inequalities. This is why reducing the inequalities to a minimal set takes relatively long.\n\nAbout 2/3 of the total time is spent on computing facet adjacencies. This part of the computation could be split off, but since it is less than one order of magnitude it is probably not worth the added complexity.",
+    "body": "Previously we only eliminated redundant vertices, now we also eliminate redundant (in)equalities. I added some timing to the output:\n\n```\nsage: time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(14)], verbose=true)\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n 1 2 4 8 16 32\n[...]\n 1 13 169 2197 28561 371293\nend\n\n# walltime used for complementary representation: 0s\n# walltime used for canonical H-representation: 6s\n# walltime used for canonical V-representation: 0s\n\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n[...]\n 1 13 169 2197 28561 371293\nend\n\nH-representation\nbegin\n 110 6 rational\n 0 11880 -4578 659 -42 1\n[...]\n 0 17160 -6026 791 -46 1\nend\n\nVertex graph\nbegin\n  14    14\n 1 13 : 2 3 4 5 6 7 8 9 10 11 12 13 14 \n[...]\n 14 13 : 1 2 3 4 5 6 7 8 9 10 11 12 13 \nend\n# walltime used for vertex adjacencies: 0s\n\nFacet graph\nbegin\n  110    110\n 1 5 : 9 45 91 105 110 \n 2 5 : 8 9 38 92 103 \n[...]\n 110 5 : 1 46 91 105 109 \nend\n# walltime used for facet adjacencies: 10s\n\n\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 16.37 s\n```\n\nThe polyhedral input is one with relatively few vertices (and without any redundancies), but lots of inequalities. This is why reducing the inequalities to a minimal set takes relatively long.\n\nAbout 2/3 of the total time is spent on computing facet adjacencies. This part of the computation could be split off, but since it is less than one order of magnitude it is probably not worth the added complexity.",
     "created_at": "2009-10-28T17:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -477,7 +473,6 @@ archive/issue_comments_058761.json:
 ```
 
 Previously we only eliminated redundant vertices, now we also eliminate redundant (in)equalities. I added some timing to the output:
-
 
 ```
 sage: time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(14)], verbose=true)
@@ -535,7 +530,6 @@ end
 CPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s
 Wall time: 16.37 s
 ```
-
 
 The polyhedral input is one with relatively few vertices (and without any redundancies), but lots of inequalities. This is why reducing the inequalities to a minimal set takes relatively long.
 
@@ -813,7 +807,7 @@ vertex_incidences}}}
 archive/issue_comments_058773.json:
 ```json
 {
-    "body": "I may be missing something, but I think the new version of the cddlib package you attached is missing \n\n```\npatch -p0 < patches/cdd_both_reps-make.patch\n```\n\nin its spkg-install.  I posted a modified version at:\n[http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg](http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg)",
+    "body": "I may be missing something, but I think the new version of the cddlib package you attached is missing \n\n```\npatch -p0 < patches/cdd_both_reps-make.patch\n```\nin its spkg-install.  I posted a modified version at:\n[http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg](http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg)",
     "created_at": "2009-12-26T04:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -827,7 +821,6 @@ I may be missing something, but I think the new version of the cddlib package yo
 ```
 patch -p0 < patches/cdd_both_reps-make.patch
 ```
-
 in its spkg-install.  I posted a modified version at:
 [http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg](http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg)
 
@@ -1065,7 +1058,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_058785.json:
 ```json
 {
-    "body": "Here is how (I think) everything should be applied. First, the patches from within sage\n\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh1.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_vb1.patch')\n```\n\n\nNow the cddlib-094f.spkg update: in the sage home directory, do\n\n\n```\n[vbraun@volker-two sage]$ ls\nCOPYING.txt  data  devel  examples  install.log  ipython  local  makefile  README.txt  sage  sage-README-osx.txt  spkg\n[vbraun@volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg\n[...]\n[vbraun@volker-two sage]$ ./sage -f cddlib-094f.spkg \n[...]\n[vbraun@volker-two sage]$ ./sage -br\n```\n\n\nI did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctests pass. It seems to me that trac_7109_referee2.patch unnecessarily includes the patch from #7820. In any case, #7820 only fixes output that is used in doctests and should be completely independent of this rewrite.",
+    "body": "Here is how (I think) everything should be applied. First, the patches from within sage\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh1.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_vb1.patch')\n```\n\nNow the cddlib-094f.spkg update: in the sage home directory, do\n\n```\n[vbraun@volker-two sage]$ ls\nCOPYING.txt  data  devel  examples  install.log  ipython  local  makefile  README.txt  sage  sage-README-osx.txt  spkg\n[vbraun@volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg\n[...]\n[vbraun@volker-two sage]$ ./sage -f cddlib-094f.spkg \n[...]\n[vbraun@volker-two sage]$ ./sage -br\n```\n\nI did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctests pass. It seems to me that trac_7109_referee2.patch unnecessarily includes the patch from #7820. In any case, #7820 only fixes output that is used in doctests and should be completely independent of this rewrite.",
     "created_at": "2010-01-23T01:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1076,15 +1069,12 @@ archive/issue_comments_058785.json:
 
 Here is how (I think) everything should be applied. First, the patches from within sage
 
-
 ```
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh1.patch')
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_vb1.patch')
 ```
 
-
 Now the cddlib-094f.spkg update: in the sage home directory, do
-
 
 ```
 [vbraun@volker-two sage]$ ls
@@ -1095,7 +1085,6 @@ COPYING.txt  data  devel  examples  install.log  ipython  local  makefile  READM
 [...]
 [vbraun@volker-two sage]$ ./sage -br
 ```
-
 
 I did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctests pass. It seems to me that trac_7109_referee2.patch unnecessarily includes the patch from #7820. In any case, #7820 only fixes output that is used in doctests and should be completely independent of this rewrite.
 
@@ -1204,7 +1193,7 @@ Cumulative patch, includes vbraun's latest additions + 2 doctests
 archive/issue_comments_058791.json:
 ```json
 {
-    "body": "The new spkg has a few minor issues:\n\n\n```\n[ghitza@artin cddlib-094f-p2]$ hg status\nM spkg-install\n? .DS_Store\n? patches/cdd_both_reps-make.patch\n? patches/cdd_both_reps.c\n```\n\n\nI fixed all of this and put up the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nNote that SPKG.txt is not in the correct format, but this will be another ticket.\n\n\nNow:  There are obviously not enough patches on this ticket :)  So I'm adding another one.  It is small and consists mostly of very minor typo fixes.  It also addresses one major issue: when I ran long doctests on `geometry/polyhedra.py`, it timed out on me.  Here is the reason:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: time c5_20 = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(1,21)])\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 244.51 s\nsage: time c5_20_fl = c5_20.face_lattice() \nCPU times: user 64.62 s, sys: 0.06 s, total: 64.68 s\nWall time: 64.78 s\nsage: time [len(x) for x in c5_20_fl.level_sets()]\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\n[1, 20, 190, 580, 680, 272, 1]\nsage: time p600 = polytopes.six_hundred_cell()\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 3175.85 s\nsage: time len(list(p600.bounded_edges()))\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n720\n```\n\n| Sage Version 4.3.1, Release Date: 2010-01-20                       |\n| Type notebook() for the GUI, and license() for information.        |\nThese tests are not just long, they are way too long to include.  So I have marked them as `#not tested`.  If you can think of some way to get them under 30 seconds each, they can go back in.  I don't want to just delete them since they are examples of usage.\n\nOne thing that I noticed but not fixed is that none of the geometry code is in the reference manual at the moment.  This should be another ticket.\n\nIn summary: I'm giving a positive review to everything so far; someone needs to look at my patch.  We'll sort out authors/reviewers/etc when it's all done.\n\nSummary for the release manager who will have to merge this: once everything has a positive review, get the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nthen apply `trac_7109_mh2.patch` and `trac_7109_ag.patch`.",
+    "body": "The new spkg has a few minor issues:\n\n```\n[ghitza@artin cddlib-094f-p2]$ hg status\nM spkg-install\n? .DS_Store\n? patches/cdd_both_reps-make.patch\n? patches/cdd_both_reps.c\n```\n\nI fixed all of this and put up the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nNote that SPKG.txt is not in the correct format, but this will be another ticket.\n\n\nNow:  There are obviously not enough patches on this ticket :)  So I'm adding another one.  It is small and consists mostly of very minor typo fixes.  It also addresses one major issue: when I ran long doctests on `geometry/polyhedra.py`, it timed out on me.  Here is the reason:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: time c5_20 = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(1,21)])\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 244.51 s\nsage: time c5_20_fl = c5_20.face_lattice() \nCPU times: user 64.62 s, sys: 0.06 s, total: 64.68 s\nWall time: 64.78 s\nsage: time [len(x) for x in c5_20_fl.level_sets()]\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\n[1, 20, 190, 580, 680, 272, 1]\nsage: time p600 = polytopes.six_hundred_cell()\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 3175.85 s\nsage: time len(list(p600.bounded_edges()))\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n720\n```\n| Sage Version 4.3.1, Release Date: 2010-01-20                       |\n| Type notebook() for the GUI, and license() for information.        |\nThese tests are not just long, they are way too long to include.  So I have marked them as `#not tested`.  If you can think of some way to get them under 30 seconds each, they can go back in.  I don't want to just delete them since they are examples of usage.\n\nOne thing that I noticed but not fixed is that none of the geometry code is in the reference manual at the moment.  This should be another ticket.\n\nIn summary: I'm giving a positive review to everything so far; someone needs to look at my patch.  We'll sort out authors/reviewers/etc when it's all done.\n\nSummary for the release manager who will have to merge this: once everything has a positive review, get the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nthen apply `trac_7109_mh2.patch` and `trac_7109_ag.patch`.",
     "created_at": "2010-01-24T01:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1215,7 +1204,6 @@ archive/issue_comments_058791.json:
 
 The new spkg has a few minor issues:
 
-
 ```
 [ghitza@artin cddlib-094f-p2]$ hg status
 M spkg-install
@@ -1223,7 +1211,6 @@ M spkg-install
 ? patches/cdd_both_reps-make.patch
 ? patches/cdd_both_reps.c
 ```
-
 
 I fixed all of this and put up the new spkg at
 
@@ -1233,7 +1220,6 @@ Note that SPKG.txt is not in the correct format, but this will be another ticket
 
 
 Now:  There are obviously not enough patches on this ticket :)  So I'm adding another one.  It is small and consists mostly of very minor typo fixes.  It also addresses one major issue: when I ran long doctests on `geometry/polyhedra.py`, it timed out on me.  Here is the reason:
-
 
 ```
 ----------------------------------------------------------------------
@@ -1256,7 +1242,6 @@ CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
 Wall time: 0.02 s
 720
 ```
-
 | Sage Version 4.3.1, Release Date: 2010-01-20                       |
 | Type notebook() for the GUI, and license() for information.        |
 These tests are not just long, they are way too long to include.  So I have marked them as `#not tested`.  If you can think of some way to get them under 30 seconds each, they can go back in.  I don't want to just delete them since they are examples of usage.
@@ -1464,7 +1449,7 @@ Marshall and Volker, I have put the two of you down as spkg maintainers, but you
 archive/issue_comments_058801.json:
 ```json
 {
-    "body": "Unfortunately, this ticket conflicts with #7535. I merged #7535 at about 8 hours before the current ticket was positively reviewed. So after merging the patches at #7535, merging the patch [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch) results in a long hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush\nadding trac_7535-errors-raise.patch to series file\napplying trac_7535-errors-raise.patch\nnow at: trac_7535-errors-raise.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush\nadding trac_7535-part2.patch to series file\napplying trac_7535-part2.patch\nnow at: trac_7535-part2.patch\n[mvngu@sage sage-main]$ \n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush\nadding trac_7109_mh2.patch to series file\napplying trac_7109_mh2.patch\npatching file sage/geometry/polyhedra.py\nHunk #8 FAILED at 2795\n1 out of 14 hunks FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7109_mh2.patch\n```\n\nSo what happens here is that you could wait for Sage 4.3.2.alpha0 to be released and then rebase the patches on this ticket against Sage 4.3.2.alpha0. Another option is to rebase [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch), and possibly [trac_7109_ag.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_ag.patch) as well, on top of #7535.",
+    "body": "Unfortunately, this ticket conflicts with #7535. I merged #7535 at about 8 hours before the current ticket was positively reviewed. So after merging the patches at #7535, merging the patch [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch) results in a long hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush\nadding trac_7535-errors-raise.patch to series file\napplying trac_7535-errors-raise.patch\nnow at: trac_7535-errors-raise.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush\nadding trac_7535-part2.patch to series file\napplying trac_7535-part2.patch\nnow at: trac_7535-part2.patch\n[mvngu@sage sage-main]$ \n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush\nadding trac_7109_mh2.patch to series file\napplying trac_7109_mh2.patch\npatching file sage/geometry/polyhedra.py\nHunk #8 FAILED at 2795\n1 out of 14 hunks FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7109_mh2.patch\n```\nSo what happens here is that you could wait for Sage 4.3.2.alpha0 to be released and then rebase the patches on this ticket against Sage 4.3.2.alpha0. Another option is to rebase [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch), and possibly [trac_7109_ag.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_ag.patch) as well, on top of #7535.",
     "created_at": "2010-01-25T04:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
@@ -1495,7 +1480,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_7109_mh2.patch
 ```
-
 So what happens here is that you could wait for Sage 4.3.2.alpha0 to be released and then rebase the patches on this ticket against Sage 4.3.2.alpha0. Another option is to rebase [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch), and possibly [trac_7109_ag.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_ag.patch) as well, on top of #7535.
 
 

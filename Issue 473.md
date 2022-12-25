@@ -57,7 +57,7 @@ example of massif heap profiler
 archive/issue_comments_002357.json:
 ```json
 {
-    "body": "Attachment [massif.19869.ps](tarball://root/attachments/some-uuid/ticket473/massif.19869.ps) by mabshoff created at 2007-08-21 15:48:28\n\nIn addition increase the timeout value in sage-doctest to above 180 seconds depending on whether valgrind is used. Otherwise certain tests fail with timeouts:\n\n```\n==31586== Using valgrind-3.2.1, a dynamic binary instrumentation framework.\n==31586== Copyright (C) 2000-2006, and GNU GPL'd, by Julian Seward et al.\n==31586== For more details, rerun with: -v\n==31586==\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n==31586==\n==31586== Total spacetime:   1,269,947,691,109 ms.B\n==31586== heap:              84.8%\n==31586== heap admin:        14.6%\n==31586== stack(s):           0.4%\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [222.3 s]\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [massif.19869.ps](tarball://root/attachments/some-uuid/ticket473/massif.19869.ps) by mabshoff created at 2007-08-21 15:48:28\n\nIn addition increase the timeout value in sage-doctest to above 180 seconds depending on whether valgrind is used. Otherwise certain tests fail with timeouts:\n\n```\n==31586== Using valgrind-3.2.1, a dynamic binary instrumentation framework.\n==31586== Copyright (C) 2000-2006, and GNU GPL'd, by Julian Seward et al.\n==31586== For more details, rerun with: -v\n==31586==\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n==31586==\n==31586== Total spacetime:   1,269,947,691,109 ms.B\n==31586== heap:              84.8%\n==31586== heap admin:        14.6%\n==31586== stack(s):           0.4%\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [222.3 s]\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T15:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ In addition increase the timeout value in sage-doctest to above 180 seconds depe
 *** *** Error: TIMED OUT! *** ***
          [222.3 s]
 ```
-
 
 Cheers,
 

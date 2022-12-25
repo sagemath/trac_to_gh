@@ -57,7 +57,7 @@ Attachment [trac4224-question-printing-lbound.patch](tarball://root/attachments/
 archive/issue_comments_030637.json:
 ```json
 {
-    "body": "Carl, \n\nI observed the following failure on a Core2 Quad running Solaris:\n\n```\nsage -t  devel/sage/sage/rings/qqbar.py                     \n**********************************************************************\nFile \"/home/mabshoff/build-3.1.3.alpha0/sage-3.1.3.alpha0-fulvia/tmp/qqbar.py\", line 3770:\n    sage: cp.complex_roots(30, 1)\nExpected:\n    [1.189207115002721?,\n     -1.189207115002721?,\n     1.189207115002721?*I,\n     -1.189207115002721?*I]\nGot:\n    [1.189207115002721?, -1.1892071150027211?, 1.189207115002721?*I, -1.189207115002721?*I]\n**********************************************************************\n```\n\nCould this be related to this issue? I am reviewing the patch and will see what is going on on Solaris once I build 3.1.3 on it.\n\nCheers,\n\nMichael",
+    "body": "Carl, \n\nI observed the following failure on a Core2 Quad running Solaris:\n\n```\nsage -t  devel/sage/sage/rings/qqbar.py                     \n**********************************************************************\nFile \"/home/mabshoff/build-3.1.3.alpha0/sage-3.1.3.alpha0-fulvia/tmp/qqbar.py\", line 3770:\n    sage: cp.complex_roots(30, 1)\nExpected:\n    [1.189207115002721?,\n     -1.189207115002721?,\n     1.189207115002721?*I,\n     -1.189207115002721?*I]\nGot:\n    [1.189207115002721?, -1.1892071150027211?, 1.189207115002721?*I, -1.189207115002721?*I]\n**********************************************************************\n```\nCould this be related to this issue? I am reviewing the patch and will see what is going on on Solaris once I build 3.1.3 on it.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-01T10:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4224",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ Got:
     [1.189207115002721?, -1.1892071150027211?, 1.189207115002721?*I, -1.189207115002721?*I]
 **********************************************************************
 ```
-
 Could this be related to this issue? I am reviewing the patch and will see what is going on on Solaris once I build 3.1.3 on it.
 
 Cheers,

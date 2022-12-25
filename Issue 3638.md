@@ -3,7 +3,7 @@
 archive/issues_003638.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI think this bit of code should not produce an exception.  The vectors should both be coerced to belong to Z8!^3 and compared.\n\n```\nsage: Z8=IntegerModRing(8)\nsage: vector(ZZ,[1,2,11])==vector(Z8,[1,2,3])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_space'\n```\n\n\nNote that a similar thing seems to work in other cases (because 7 is prime and Z7 is a field?).\n\n```\nsage: Z7=IntegerModRing(7)\nsage: vector(ZZ,[1,2,10])==vector(Z7,[1,2,3])\nTrue\n```\n\n\n\nThis may or may not be related, but combining QQ and Z7 produces some wrong results:\n\n```\nsage: Z7=IntegerModRing(7)\nsage: vector(Z7,[1,2,3])==vector(QQ,[1,2,3])\nFalse\n```\n\nThat those vectors are not equal is truly disturbing.  This should either raise an exception about not having compatible parents or should be True.  I'll let the coercion guru's argue about that. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3638\n\n",
+    "body": "Assignee: tbd\n\nI think this bit of code should not produce an exception.  The vectors should both be coerced to belong to Z8!^3 and compared.\n\n```\nsage: Z8=IntegerModRing(8)\nsage: vector(ZZ,[1,2,11])==vector(Z8,[1,2,3])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_space'\n```\n\nNote that a similar thing seems to work in other cases (because 7 is prime and Z7 is a field?).\n\n```\nsage: Z7=IntegerModRing(7)\nsage: vector(ZZ,[1,2,10])==vector(Z7,[1,2,3])\nTrue\n```\n\n\nThis may or may not be related, but combining QQ and Z7 produces some wrong results:\n\n```\nsage: Z7=IntegerModRing(7)\nsage: vector(Z7,[1,2,3])==vector(QQ,[1,2,3])\nFalse\n```\nThat those vectors are not equal is truly disturbing.  This should either raise an exception about not having compatible parents or should be True.  I'll let the coercion guru's argue about that. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3638\n\n",
     "created_at": "2008-07-11T02:08:47Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_space'
 ```
 
-
 Note that a similar thing seems to work in other cases (because 7 is prime and Z7 is a field?).
 
 ```
@@ -39,7 +38,6 @@ True
 ```
 
 
-
 This may or may not be related, but combining QQ and Z7 produces some wrong results:
 
 ```
@@ -47,7 +45,6 @@ sage: Z7=IntegerModRing(7)
 sage: vector(Z7,[1,2,3])==vector(QQ,[1,2,3])
 False
 ```
-
 That those vectors are not equal is truly disturbing.  This should either raise an exception about not having compatible parents or should be True.  I'll let the coercion guru's argue about that. :)
 
 Issue created by migration from https://trac.sagemath.org/ticket/3638

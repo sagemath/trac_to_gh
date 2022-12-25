@@ -3,7 +3,7 @@
 archive/issues_007235.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n>> There is definitely no way the 10.6 OS X binary will work on OS X\n>> 10.4, and I would find it highly unlikely that it would work on 10.5\n>> either.  If the readme says that, it is very misleading (I think the\n>> readme is  refering to the source code).\n>\n> The ReadMe says that.\n\nI see it says:\n\n**\n  These binaries are only for OS X 10.4 or 10.5.  They will not work on OS X 10.3. \n**\n\nHowever, that's simply wrong, since the binaries are only for the platform listed in the name of the dmg.  Argh.  That needs to be changed.  (I was thinking of a different README file when I wrote my response.)    Thanks for the bug report.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7235\n\n",
+    "body": "Assignee: tbd\n\n```\n>> There is definitely no way the 10.6 OS X binary will work on OS X\n>> 10.4, and I would find it highly unlikely that it would work on 10.5\n>> either.  If the readme says that, it is very misleading (I think the\n>> readme is  refering to the source code).\n>\n> The ReadMe says that.\n\nI see it says:\n\n**\n  These binaries are only for OS X 10.4 or 10.5.  They will not work on OS X 10.3. \n**\n\nHowever, that's simply wrong, since the binaries are only for the platform listed in the name of the dmg.  Argh.  That needs to be changed.  (I was thinking of a different README file when I wrote my response.)    Thanks for the bug report.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7235\n\n",
     "created_at": "2009-10-17T19:43:21Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_007235.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 >> There is definitely no way the 10.6 OS X binary will work on OS X
@@ -38,7 +37,6 @@ However, that's simply wrong, since the binaries are only for the platform liste
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7235
 
@@ -90,7 +88,7 @@ See ticket #5296 for related work on the age-worn OS X Readme.
 archive/issue_comments_059904.json:
 ```json
 {
-    "body": "See also this thread on sage-support about naming conventions:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c6fc409f60053f4#\n\nBTW, on the Sage download page side-by-side with the Mac binaries (.dmg's), there is a README.txt file reading:\n\n```\nNOTE: the OS X 10.4 binary works fine on OS X 10.5. \n```\n\nOne might put more information there, too.",
+    "body": "See also this thread on sage-support about naming conventions:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c6fc409f60053f4#\n\nBTW, on the Sage download page side-by-side with the Mac binaries (.dmg's), there is a README.txt file reading:\n\n```\nNOTE: the OS X 10.4 binary works fine on OS X 10.5. \n```\nOne might put more information there, too.",
     "created_at": "2009-10-24T19:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ BTW, on the Sage download page side-by-side with the Mac binaries (.dmg's), ther
 ```
 NOTE: the OS X 10.4 binary works fine on OS X 10.5. 
 ```
-
 One might put more information there, too.
 
 

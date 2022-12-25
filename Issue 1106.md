@@ -3,7 +3,7 @@
 archive/issues_001106.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe general implementation right now is:\n\n```\ncdef int _cmp_c_impl(self, Element right) except -2:\n    return cmp(self._list(), right._list())\n```\n\nwhich has a huge memory overhead. This should be optimised. Also, Matrix_modn_dense should have a faster special cmp method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1106\n\n",
+    "body": "Assignee: @williamstein\n\nThe general implementation right now is:\n\n```\ncdef int _cmp_c_impl(self, Element right) except -2:\n    return cmp(self._list(), right._list())\n```\nwhich has a huge memory overhead. This should be optimised. Also, Matrix_modn_dense should have a faster special cmp method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1106\n\n",
     "created_at": "2007-11-05T12:22:36Z",
     "labels": [
         "component: linear algebra"
@@ -23,7 +23,6 @@ The general implementation right now is:
 cdef int _cmp_c_impl(self, Element right) except -2:
     return cmp(self._list(), right._list())
 ```
-
 which has a huge memory overhead. This should be optimised. Also, Matrix_modn_dense should have a faster special cmp method.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1106

@@ -151,7 +151,7 @@ archive/issue_events_022105.json:
 archive/issue_comments_083444.json:
 ```json
 {
-    "body": "Sage's command does call fpLLL.  This ticket should be closed. \n\nType \n\n```\nsage: algdep??\n```\n\nto see...",
+    "body": "Sage's command does call fpLLL.  This ticket should be closed. \n\nType \n\n```\nsage: algdep??\n```\nto see...",
     "created_at": "2014-11-06T23:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
@@ -167,7 +167,6 @@ Type
 ```
 sage: algdep??
 ```
-
 to see...
 
 
@@ -177,7 +176,7 @@ to see...
 archive/issue_comments_083445.json:
 ```json
 {
-    "body": ">  Sage's command does call fpLLL. This ticket should be closed. \n\nok, but the documentation should be fixed:\n\n```\n   Note that \"algebraic_dependency\" is a synonym for \"algdep\".\nsage: a=sqrt(2)+sqrt(3);algebraic_dependency(a,4)\n---------------------------------------------------------------------------\nNameError                                Traceback (most recent call last)\n<ipython-input-10-0409cbaa7642> in <module>()\n----> 1 a=sqrt(Integer(2))+sqrt(Integer(3));algebraic_dependency(a,Integer(4))\n\nNameError: name 'algebraic_dependency' is not defined\n```\n\nand:\n\n```\n   You can specify the number of known bits or digits of z with\n   \"known_bits=k\" or \"known_digits=k\". PARI is then told to compute\n   the result using 0.8k of these bits/digits.\n```\n\nIf fpLLL is used now, `PARI` should be removed or replaced here.\n\nPaul",
+    "body": ">  Sage's command does call fpLLL. This ticket should be closed. \n\n\nok, but the documentation should be fixed:\n\n```\n   Note that \"algebraic_dependency\" is a synonym for \"algdep\".\nsage: a=sqrt(2)+sqrt(3);algebraic_dependency(a,4)\n---------------------------------------------------------------------------\nNameError                                Traceback (most recent call last)\n<ipython-input-10-0409cbaa7642> in <module>()\n----> 1 a=sqrt(Integer(2))+sqrt(Integer(3));algebraic_dependency(a,Integer(4))\n\nNameError: name 'algebraic_dependency' is not defined\n```\nand:\n\n```\n   You can specify the number of known bits or digits of z with\n   \"known_bits=k\" or \"known_digits=k\". PARI is then told to compute\n   the result using 0.8k of these bits/digits.\n```\nIf fpLLL is used now, `PARI` should be removed or replaced here.\n\nPaul",
     "created_at": "2014-11-07T06:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
@@ -187,6 +186,7 @@ archive/issue_comments_083445.json:
 ```
 
 >  Sage's command does call fpLLL. This ticket should be closed. 
+
 
 ok, but the documentation should be fixed:
 
@@ -200,7 +200,6 @@ NameError                                Traceback (most recent call last)
 
 NameError: name 'algebraic_dependency' is not defined
 ```
-
 and:
 
 ```
@@ -208,7 +207,6 @@ and:
    "known_bits=k" or "known_digits=k". PARI is then told to compute
    the result using 0.8k of these bits/digits.
 ```
-
 If fpLLL is used now, `PARI` should be removed or replaced here.
 
 Paul

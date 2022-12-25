@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9847
 archive/issue_comments_097013.json:
 ```json
 {
-    "body": "From around line 180 of `SAGE_LOCAL/bin/sage-env`:\n\n```sh\nif [ -z \"$RHOME\" ]; then\n    RHOME=\"$SAGE_LOCAL/lib/R\" && export RHOME\nfi\n```\n\nShould we add a similar test for `R_PROFILE`?",
+    "body": "From around line 180 of `SAGE_LOCAL/bin/sage-env`:\n\n```sh\nif [ -z \"$RHOME\" ]; then\n    RHOME=\"$SAGE_LOCAL/lib/R\" && export RHOME\nfi\n```\nShould we add a similar test for `R_PROFILE`?",
     "created_at": "2010-09-01T09:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -51,7 +51,6 @@ if [ -z "$RHOME" ]; then
     RHOME="$SAGE_LOCAL/lib/R" && export RHOME
 fi
 ```
-
 Should we add a similar test for `R_PROFILE`?
 
 
@@ -61,7 +60,7 @@ Should we add a similar test for `R_PROFILE`?
 archive/issue_comments_097014.json:
 ```json
 {
-    "body": "I think we should perhaps\n\n```sh\nunset R_PROFILE\n```\n\nin R's `spkg-install`, too.",
+    "body": "I think we should perhaps\n\n```sh\nunset R_PROFILE\n```\nin R's `spkg-install`, too.",
     "created_at": "2010-09-01T13:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -75,7 +74,6 @@ I think we should perhaps
 ```sh
 unset R_PROFILE
 ```
-
 in R's `spkg-install`, too.
 
 
@@ -120,7 +118,7 @@ archive/issue_events_024783.json:
 archive/issue_comments_097016.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> I think we should perhaps\n\n```sh\nunset R_PROFILE\n```\n\n> in R's `spkg-install`, too.\n\n#9906 (R 2.10.1.p5) does this now.",
+    "body": "Replying to [comment:2 leif]:\n> I think we should perhaps\n\n{{{#!sh\nunset R_PROFILE\n}}}\n> in R's `spkg-install`, too.\n\n\n#9906 (R 2.10.1.p5) does this now.",
     "created_at": "2011-08-05T10:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -132,11 +130,11 @@ archive/issue_comments_097016.json:
 Replying to [comment:2 leif]:
 > I think we should perhaps
 
-```sh
+{{{#!sh
 unset R_PROFILE
-```
-
+}}}
 > in R's `spkg-install`, too.
+
 
 #9906 (R 2.10.1.p5) does this now.
 
@@ -205,7 +203,7 @@ Sound good?  ;-)  But I don't think that will be necessary.
 archive/issue_comments_097020.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Sorry I didn't come back to this.  It is correct that the spkgs at #9906 do this in the spkg scripts.  \n> \n> So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!\n\nIn that case, you should also give *this ticket* positive review, such that the release manager will close it, with \"resolution: duplicate\".\n\nIf issues with `R_PROFILE` should (re)arise unrelated to (the installation of) the R spkg, i.e., which would have to be fixed elsewhere, we can still reopen *this* ticket.\n\n(IIRC some of the problems showed up *during doctesting*, but because `R_PROFILE` had been set *during installation*, so are now fixed by the new spkg. If there needs to be done more w.r.t. this -- which I don't think -- this can be addressed at #9906 as Karl-Dieter suggests.)\n\nNote that this ticket already has #9906 as its dependency.",
+    "body": "Replying to [comment:6 kcrisman]:\n> Sorry I didn't come back to this.  It is correct that the spkgs at #9906 do this in the spkg scripts.  \n> \n> So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!\n\n\nIn that case, you should also give *this ticket* positive review, such that the release manager will close it, with \"resolution: duplicate\".\n\nIf issues with `R_PROFILE` should (re)arise unrelated to (the installation of) the R spkg, i.e., which would have to be fixed elsewhere, we can still reopen *this* ticket.\n\n(IIRC some of the problems showed up *during doctesting*, but because `R_PROFILE` had been set *during installation*, so are now fixed by the new spkg. If there needs to be done more w.r.t. this -- which I don't think -- this can be addressed at #9906 as Karl-Dieter suggests.)\n\nNote that this ticket already has #9906 as its dependency.",
     "created_at": "2011-08-18T17:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -218,6 +216,7 @@ Replying to [comment:6 kcrisman]:
 > Sorry I didn't come back to this.  It is correct that the spkgs at #9906 do this in the spkg scripts.  
 > 
 > So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!
+
 
 In that case, you should also give *this ticket* positive review, such that the release manager will close it, with "resolution: duplicate".
 
@@ -252,7 +251,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_097022.json:
 ```json
 {
-    "body": "> > So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!\n> \n> In that case, you should also give *this ticket* positive review, such that the release manager will close it, with \"resolution: duplicate\".\n\nCorrect.  I just wanted to make sure :)  Great.\n\n> (IIRC some of the problems showed up *during doctesting*, but because `R_PROFILE` had been set *during installation*, so are now fixed by the new spkg. If there needs to be done more w.r.t. this -- which I don't think -- this can be addressed at #9906 as Karl-Dieter suggests.)\nYeah, I'm pretty sure that was the issue, or more precisely that `R_PROFILE` was *not* (re)set.\n> Note that this ticket already has #9906 as its dependency.\nWell, that wouldn't be necessary with a duplicate/wontfix one.\n\nSee you at #9906, eventually (when I get time to do all the many tests on that).",
+    "body": "> > So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!\n\n> \n> In that case, you should also give *this ticket* positive review, such that the release manager will close it, with \"resolution: duplicate\".\n\n\nCorrect.  I just wanted to make sure :)  Great.\n\n> (IIRC some of the problems showed up *during doctesting*, but because `R_PROFILE` had been set *during installation*, so are now fixed by the new spkg. If there needs to be done more w.r.t. this -- which I don't think -- this can be addressed at #9906 as Karl-Dieter suggests.)\n\nYeah, I'm pretty sure that was the issue, or more precisely that `R_PROFILE` was *not* (re)set.\n> Note that this ticket already has #9906 as its dependency.\n\nWell, that wouldn't be necessary with a duplicate/wontfix one.\n\nSee you at #9906, eventually (when I get time to do all the many tests on that).",
     "created_at": "2011-08-18T17:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -262,14 +261,18 @@ archive/issue_comments_097022.json:
 ```
 
 > > So I can give this positive review as long as Leif promises that if I or some other reviewer find out that the fix at #9906 doesn't solve the type of problem above, that it will get addressed there and no longer here!
+
 > 
 > In that case, you should also give *this ticket* positive review, such that the release manager will close it, with "resolution: duplicate".
+
 
 Correct.  I just wanted to make sure :)  Great.
 
 > (IIRC some of the problems showed up *during doctesting*, but because `R_PROFILE` had been set *during installation*, so are now fixed by the new spkg. If there needs to be done more w.r.t. this -- which I don't think -- this can be addressed at #9906 as Karl-Dieter suggests.)
+
 Yeah, I'm pretty sure that was the issue, or more precisely that `R_PROFILE` was *not* (re)set.
 > Note that this ticket already has #9906 as its dependency.
+
 Well, that wouldn't be necessary with a duplicate/wontfix one.
 
 See you at #9906, eventually (when I get time to do all the many tests on that).
@@ -495,7 +498,7 @@ In that case, applies and presumably works (I certainly can't test this, but bas
 archive/issue_comments_097031.json:
 ```json
 {
-    "body": "Replying to [comment:16 kcrisman]:\n> And the `R_HOME` and `R_PROFILE` will be \"reset\" after one exits the Sage shell, correct?\nSure, although nothing is really \"reset\", you just get your old shell back which never saw `sage-env`.",
+    "body": "Replying to [comment:16 kcrisman]:\n> And the `R_HOME` and `R_PROFILE` will be \"reset\" after one exits the Sage shell, correct?\n\nSure, although nothing is really \"reset\", you just get your old shell back which never saw `sage-env`.",
     "created_at": "2013-03-27T01:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9846",
     "type": "issue_comment",
@@ -506,6 +509,7 @@ archive/issue_comments_097031.json:
 
 Replying to [comment:16 kcrisman]:
 > And the `R_HOME` and `R_PROFILE` will be "reset" after one exits the Sage shell, correct?
+
 Sure, although nothing is really "reset", you just get your old shell back which never saw `sage-env`.
 
 

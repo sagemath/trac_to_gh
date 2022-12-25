@@ -51,7 +51,7 @@ Is this up for review?
 archive/issue_comments_071560.json:
 ```json
 {
-    "body": "> Is this up for review? \n\nyes it should be easy :-)",
+    "body": "> Is this up for review? \n\n\nyes it should be easy :-)",
     "created_at": "2010-02-02T20:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -61,6 +61,7 @@ archive/issue_comments_071560.json:
 ```
 
 > Is this up for review? 
+
 
 yes it should be easy :-)
 
@@ -185,7 +186,7 @@ The attachment [13535.patch](http://trac.sagemath.org/sage_trac/attachment/ticke
 archive/issue_comments_071567.json:
 ```json
 {
-    "body": "> Perhaps  trac_8153-plot-doc.patch is the effect you originally wanted to achieve? \n\nno, since with the tty interface of Sage we still get two ':':\n\n```\nsage: plot?\n...\n        We plot the sin function::\n...\n```\n",
+    "body": "> Perhaps  trac_8153-plot-doc.patch is the effect you originally wanted to achieve? \n\n\nno, since with the tty interface of Sage we still get two ':':\n\n```\nsage: plot?\n...\n        We plot the sin function::\n...\n```",
     "created_at": "2010-02-02T22:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
@@ -196,6 +197,7 @@ archive/issue_comments_071567.json:
 
 > Perhaps  trac_8153-plot-doc.patch is the effect you originally wanted to achieve? 
 
+
 no, since with the tty interface of Sage we still get two ':':
 
 ```
@@ -204,7 +206,6 @@ sage: plot?
         We plot the sin function::
 ...
 ```
-
 
 
 

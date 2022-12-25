@@ -3,7 +3,7 @@
 archive/issues_001039.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nwrapper for Dokchitser L-series of a number field, so that one can do the following:\n\n\n```\nsage: K.<a> =NumberField(x^2+x-1)\nsage: L = K.Lseries_dokchitser()\nsage: L(-1)\n0.0333333333333333\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1039\n\n",
+    "body": "Assignee: @williamstein\n\nwrapper for Dokchitser L-series of a number field, so that one can do the following:\n\n```\nsage: K.<a> =NumberField(x^2+x-1)\nsage: L = K.Lseries_dokchitser()\nsage: L(-1)\n0.0333333333333333\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1039\n\n",
     "created_at": "2007-10-31T17:37:07Z",
     "labels": [
         "component: number theory",
@@ -20,14 +20,12 @@ Assignee: @williamstein
 
 wrapper for Dokchitser L-series of a number field, so that one can do the following:
 
-
 ```
 sage: K.<a> =NumberField(x^2+x-1)
 sage: L = K.Lseries_dokchitser()
 sage: L(-1)
 0.0333333333333333
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1039
 

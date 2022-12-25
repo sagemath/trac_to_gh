@@ -3,7 +3,7 @@
 archive/issues_008606.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\n\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\n\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
     "created_at": "2010-03-25T15:11:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ on my machine):
 sage: 2.0^53
 9.00719925474099e15
 ```
-
 This is what we expect: the float `2.0` propagates to the whole
 expression.
 
@@ -39,7 +38,6 @@ However:
 sage: 2^53.0
 9007199254740992
 ```
-
 Note the result is an integer, not a float! Thus the information
 about the inexact value has been lost. Same thing with
 `2^float(53)` and `2^RR(53)`.
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8606
 archive/issue_comments_077834.json:
 ```json
 {
-    "body": "The problem is in the function __pow__ in sage/rings/integer.pyx.  There we find:\n\n```\n        try:\n            nn = PyNumber_Index(n)\n        except TypeError:\n            try:\n```\n\nI think PyNumber_Index(53.0) is the long \"53\".    Thus to change this as you wish, that code must be changed.",
+    "body": "The problem is in the function __pow__ in sage/rings/integer.pyx.  There we find:\n\n```\n        try:\n            nn = PyNumber_Index(n)\n        except TypeError:\n            try:\n```\nI think PyNumber_Index(53.0) is the long \"53\".    Thus to change this as you wish, that code must be changed.",
     "created_at": "2010-03-29T05:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -72,7 +70,6 @@ The problem is in the function __pow__ in sage/rings/integer.pyx.  There we find
         except TypeError:
             try:
 ```
-
 I think PyNumber_Index(53.0) is the long "53".    Thus to change this as you wish, that code must be changed.
 
 
@@ -82,7 +79,7 @@ I think PyNumber_Index(53.0) is the long "53".    Thus to change this as you wis
 archive/issue_comments_077835.json:
 ```json
 {
-    "body": "William, in fact `nn = PyNumber_Index(n)` raises an error, thus we go to\n\n```\n            try:\n                nn = Integer(n)\n            except TypeError:\n                try:\n                    s = parent_c(n)(self)\n                    return s**n\n```\n\nwhere `nn = Integer(n)` succeeds for n=53.0, but fails for n=53.1:\n\n```\nsage: Integer(53.0)\n53\nsage: Integer(53.1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/detached/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6449)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._integer_ (sage/rings/real_mpfr.c:11846)()\n\nTypeError: Attempt to coerce non-integral RealNumber to Integer\n```\n\nIf `Integer(53.0)` would return an error too, this would fix the problem. However we would\nthen need a specific method to coerce an integral real number to integer...\n\nOn a side note, `int` seems to behave differently:\n\n```\nsage: int(53.0)\n53\nsage: int(53.1)\n53\n```\n",
+    "body": "William, in fact `nn = PyNumber_Index(n)` raises an error, thus we go to\n\n```\n            try:\n                nn = Integer(n)\n            except TypeError:\n                try:\n                    s = parent_c(n)(self)\n                    return s**n\n```\nwhere `nn = Integer(n)` succeeds for n=53.0, but fails for n=53.1:\n\n```\nsage: Integer(53.0)\n53\nsage: Integer(53.1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/detached/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6449)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._integer_ (sage/rings/real_mpfr.c:11846)()\n\nTypeError: Attempt to coerce non-integral RealNumber to Integer\n```\nIf `Integer(53.0)` would return an error too, this would fix the problem. However we would\nthen need a specific method to coerce an integral real number to integer...\n\nOn a side note, `int` seems to behave differently:\n\n```\nsage: int(53.0)\n53\nsage: int(53.1)\n53\n```",
     "created_at": "2010-03-29T11:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -101,7 +98,6 @@ William, in fact `nn = PyNumber_Index(n)` raises an error, thus we go to
                     s = parent_c(n)(self)
                     return s**n
 ```
-
 where `nn = Integer(n)` succeeds for n=53.0, but fails for n=53.1:
 
 ```
@@ -119,7 +115,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: Attempt to coerce non-integral RealNumber to Integer
 ```
-
 If `Integer(53.0)` would return an error too, this would fix the problem. However we would
 then need a specific method to coerce an integral real number to integer...
 
@@ -131,7 +126,6 @@ sage: int(53.0)
 sage: int(53.1)
 53
 ```
-
 
 
 
@@ -158,7 +152,7 @@ It seems like we should fix pow, rather than change Integer(53.0).  In pow, it s
 archive/issue_comments_077837.json:
 ```json
 {
-    "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by @zimmermann6 created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
+    "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by @zimmermann6 created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\n\nthanks, that did the trick! I am attaching a patch to review.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -171,6 +165,7 @@ Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/tra
 
 Jason,
 > It seems like just deleting the Integer(n) try clause might be the right thing to do.
+
 
 thanks, that did the trick! I am attaching a patch to review.
 
@@ -255,7 +250,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_077842.json:
 ```json
 {
-    "body": "The changes in attachment:trac_8606.patch look good to me and all the doctests pass. I'm ready to give this a positive review, but I have a minor comment first:\n\nShouldn't we also drop the try/except clause around `parent_c(n)(self)`? The error message returned by the `except` is not very helpful and I can't think of any test case to actually fall in that clause. Note that if the conversion `parent_c(n)(self)` fails, we get a `TypeError` not an `AttributeError`:\n\n\n```\nsage: 5^('a')\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'\n```\n",
+    "body": "The changes in attachment:trac_8606.patch look good to me and all the doctests pass. I'm ready to give this a positive review, but I have a minor comment first:\n\nShouldn't we also drop the try/except clause around `parent_c(n)(self)`? The error message returned by the `except` is not very helpful and I can't think of any test case to actually fall in that clause. Note that if the conversion `parent_c(n)(self)` fails, we get a `TypeError` not an `AttributeError`:\n\n```\nsage: 5^('a')\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'\n```",
     "created_at": "2010-05-24T14:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -268,14 +263,12 @@ The changes in attachment:trac_8606.patch look good to me and all the doctests p
 
 Shouldn't we also drop the try/except clause around `parent_c(n)(self)`? The error message returned by the `except` is not very helpful and I can't think of any test case to actually fall in that clause. Note that if the conversion `parent_c(n)(self)` fails, we get a `TypeError` not an `AttributeError`:
 
-
 ```
 sage: 5^('a')
 Traceback (most recent call last):
 ...
 TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'
 ```
-
 
 
 
@@ -360,7 +353,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077847.json:
 ```json
 {
-    "body": "Replying to [comment:10 zimmerma]:\n> thank you Burcin for your review. I have attached a new patch following your proposal.\n> However we still get the same (unhelpful) error message for `5^('a')`.\n> All doctests still pass.\n\nI was referring to the message `\"exponent (=%s) must be an integer.\\nCoerce your numbers to real or complex numbers first.\"` as unhelpful. You're right that the message `unsupported operand type(s) for ** or pow(): 'str' and 'str'` can be confusing as well. It just didn't occur to me since I was staring at the code and expected exactly that.\n\nWe could catch the `TypeError` and change the message to \"Cannot find a common domain to perform the operation. Please convert your arguments to the desired types explicitly.\" or something similar.\n\nI'm still changing this to positive review since the patch fixes a bug and a more meaningful error message is just an enhancement.",
+    "body": "Replying to [comment:10 zimmerma]:\n> thank you Burcin for your review. I have attached a new patch following your proposal.\n> However we still get the same (unhelpful) error message for `5^('a')`.\n> All doctests still pass.\n\n\nI was referring to the message `\"exponent (=%s) must be an integer.\\nCoerce your numbers to real or complex numbers first.\"` as unhelpful. You're right that the message `unsupported operand type(s) for ** or pow(): 'str' and 'str'` can be confusing as well. It just didn't occur to me since I was staring at the code and expected exactly that.\n\nWe could catch the `TypeError` and change the message to \"Cannot find a common domain to perform the operation. Please convert your arguments to the desired types explicitly.\" or something similar.\n\nI'm still changing this to positive review since the patch fixes a bug and a more meaningful error message is just an enhancement.",
     "created_at": "2010-05-26T10:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
@@ -373,6 +366,7 @@ Replying to [comment:10 zimmerma]:
 > thank you Burcin for your review. I have attached a new patch following your proposal.
 > However we still get the same (unhelpful) error message for `5^('a')`.
 > All doctests still pass.
+
 
 I was referring to the message `"exponent (=%s) must be an integer.\nCoerce your numbers to real or complex numbers first."` as unhelpful. You're right that the message `unsupported operand type(s) for ** or pow(): 'str' and 'str'` can be confusing as well. It just didn't occur to me since I was staring at the code and expected exactly that.
 

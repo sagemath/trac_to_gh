@@ -141,7 +141,7 @@ for the record, I disagree :-)
 archive/issue_comments_013232.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> for the record, I disagree :-)\n\nNoted :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 malb]:\n> for the record, I disagree :-)\n\n\nNoted :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-10T20:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
@@ -152,6 +152,7 @@ archive/issue_comments_013232.json:
 
 Replying to [comment:3 malb]:
 > for the record, I disagree :-)
+
 
 Noted :)
 

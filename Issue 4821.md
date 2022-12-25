@@ -3,7 +3,7 @@
 archive/issues_004821.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mkoeppe\n\nKeywords: scilab, matlab\n\nI made an experimental scilab-5.0.3.spkg\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/Scilab/scilab-5.0.3.spkg\n]\n\n\n```\n\nPlease test it by downloading it into $SAGEROOT\nand type\n\n./sage -f -m scilab-5.0.3.spkg\n\nThe -m argument keeps the package in the spkg/build directory for\nfurther experimentation.\n\nSee spkg-install:\nI did a minimal\n./configure --without-javasci --without-gui --with-gfortran\n\n\nThere are two dependencies left: pcre and matio\n\nI don't know how essential they are for a full functional scilab :(\n\n\n```\n\n\nCheers,\n\nJaap\n\n\nFor me it worked on Fedora 9 and Fedora 10\n\n\n```\nreal\t36m7.756s\nuser\t22m25.173s\nsys\t9m55.849s\nSuccessfully installed scilab-5.0.3\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-3.2.2.alpha0/spkg/build/scilab-5.0.3\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing scilab-5.0.3.spkg\n[jaap@paix sage-3.2.2.alpha0]$\n[...]\nsage: scilab.console()\ngraphics module not found.\njavasci module not found.\n         ___________________________________________\n                        scilab-5.0.3\n\n                  Consortium Scilab (DIGITEO)\n                Copyright (c) 1989-2008 (INRIA)\n                Copyright (c) 1989-2007 (ENPC)\n         ___________________________________________\n\n\nStartup execution:\n   loading initial environment\n\n-->\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4821\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mkoeppe\n\nKeywords: scilab, matlab\n\nI made an experimental scilab-5.0.3.spkg\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/Scilab/scilab-5.0.3.spkg\n]\n\n```\n\nPlease test it by downloading it into $SAGEROOT\nand type\n\n./sage -f -m scilab-5.0.3.spkg\n\nThe -m argument keeps the package in the spkg/build directory for\nfurther experimentation.\n\nSee spkg-install:\nI did a minimal\n./configure --without-javasci --without-gui --with-gfortran\n\n\nThere are two dependencies left: pcre and matio\n\nI don't know how essential they are for a full functional scilab :(\n\n\n```\n\nCheers,\n\nJaap\n\n\nFor me it worked on Fedora 9 and Fedora 10\n\n```\nreal\t36m7.756s\nuser\t22m25.173s\nsys\t9m55.849s\nSuccessfully installed scilab-5.0.3\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-3.2.2.alpha0/spkg/build/scilab-5.0.3\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing scilab-5.0.3.spkg\n[jaap@paix sage-3.2.2.alpha0]$\n[...]\nsage: scilab.console()\ngraphics module not found.\njavasci module not found.\n         ___________________________________________\n                        scilab-5.0.3\n\n                  Consortium Scilab (DIGITEO)\n                Copyright (c) 1989-2008 (INRIA)\n                Copyright (c) 1989-2007 (ENPC)\n         ___________________________________________\n\n\nStartup execution:\n   loading initial environment\n\n-->\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4821\n\n",
     "created_at": "2008-12-17T18:32:04Z",
     "labels": [
         "component: packages: experimental",
@@ -27,7 +27,6 @@ I made an experimental scilab-5.0.3.spkg
 [http://sage.math.washington.edu/home/jsp/SPKGS/Scilab/scilab-5.0.3.spkg
 ]
 
-
 ```
 
 Please test it by downloading it into $SAGEROOT
@@ -50,14 +49,12 @@ I don't know how essential they are for a full functional scilab :(
 
 ```
 
-
 Cheers,
 
 Jaap
 
 
 For me it worked on Fedora 9 and Fedora 10
-
 
 ```
 real	36m7.756s
@@ -88,7 +85,6 @@ Startup execution:
 
 -->
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4821
 
@@ -123,7 +119,7 @@ Michael
 archive/issue_comments_036480.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> This spkg needs at least to attempt to pick the right Fortran runtime at configure time.\n> \n\nOf course you are right, but I don't know how to do that.\n\nBesides there are other dependencies to be resolved.\n\nWhat I did on Fedora was cycling .configure and installing missing dependencies.\n\nNot very suited for inclusion in spkg-install :-)!\n\nJaap",
+    "body": "Replying to [comment:1 mabshoff]:\n> This spkg needs at least to attempt to pick the right Fortran runtime at configure time.\n> \n\n\nOf course you are right, but I don't know how to do that.\n\nBesides there are other dependencies to be resolved.\n\nWhat I did on Fedora was cycling .configure and installing missing dependencies.\n\nNot very suited for inclusion in spkg-install :-)!\n\nJaap",
     "created_at": "2009-02-05T16:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4821",
     "type": "issue_comment",
@@ -135,6 +131,7 @@ archive/issue_comments_036480.json:
 Replying to [comment:1 mabshoff]:
 > This spkg needs at least to attempt to pick the right Fortran runtime at configure time.
 > 
+
 
 Of course you are right, but I don't know how to do that.
 

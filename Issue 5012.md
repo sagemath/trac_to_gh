@@ -3,7 +3,7 @@
 archive/issues_005012.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nHere we go:\n\n```\n[4:36pm] mabs: cwitty: I have another interesting bug for you:\n[4:36pm] mabs: File \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/qqbar.py\", line 3826:\n[4:36pm] mabs:     sage: cp.complex_roots(30, 1)\n[4:36pm] mabs: Expected:\n[4:36pm] mabs:     [1.189207115002721?,\n[4:36pm] mabs:     -1.189207115002721?,\n[4:36pm] mabs:     1.189207115002721?*I,\n[4:36pm] mabs:     -1.189207115002721?*I]\n[4:36pm] mabs: Got:\n[4:36pm] mabs:     [1.189207115002721?, -1.189207115002722?, 1.189207115002721?*I, -1.189207115002721?*I]\n[4:37pm] mabs: Notice that the second and third entries are different?\n[4:37pm] mabs: Ehh, the second only\n[4:38pm] cwitty: Yes.  It's probably not a bug; complex_roots doesn't guarantee to find the tightest possible \ninterval, and it depends on ATLAS which doesn't guarantee identical results.\n[4:38pm] mabs: ok\n[4:38pm] mabs: Should I use \"...\" then?\n[4:38pm] cwitty: Yes.\n```\n\n\nPatch coming up. Credit is shared with cwitty.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5012\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nHere we go:\n\n```\n[4:36pm] mabs: cwitty: I have another interesting bug for you:\n[4:36pm] mabs: File \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/qqbar.py\", line 3826:\n[4:36pm] mabs:     sage: cp.complex_roots(30, 1)\n[4:36pm] mabs: Expected:\n[4:36pm] mabs:     [1.189207115002721?,\n[4:36pm] mabs:     -1.189207115002721?,\n[4:36pm] mabs:     1.189207115002721?*I,\n[4:36pm] mabs:     -1.189207115002721?*I]\n[4:36pm] mabs: Got:\n[4:36pm] mabs:     [1.189207115002721?, -1.189207115002722?, 1.189207115002721?*I, -1.189207115002721?*I]\n[4:37pm] mabs: Notice that the second and third entries are different?\n[4:37pm] mabs: Ehh, the second only\n[4:38pm] cwitty: Yes.  It's probably not a bug; complex_roots doesn't guarantee to find the tightest possible \ninterval, and it depends on ATLAS which doesn't guarantee identical results.\n[4:38pm] mabs: ok\n[4:38pm] mabs: Should I use \"...\" then?\n[4:38pm] cwitty: Yes.\n```\n\nPatch coming up. Credit is shared with cwitty.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5012\n\n",
     "created_at": "2009-01-18T06:50:40Z",
     "labels": [
         "component: porting: solaris",
@@ -41,7 +41,6 @@ interval, and it depends on ATLAS which doesn't guarantee identical results.
 [4:38pm] mabs: Should I use "..." then?
 [4:38pm] cwitty: Yes.
 ```
-
 
 Patch coming up. Credit is shared with cwitty.
 

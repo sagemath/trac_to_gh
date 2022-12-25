@@ -3,7 +3,7 @@
 archive/issues_007657.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein boothby @kcrisman @jhpalmieri\n\nThe sagenb.org log has this error in it a bunch:\n\n```\n2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Exception rendering:2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 630, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 607, in _deferGenerator\n            deferred.callback(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 243, in callback\n            self._startRunCallbacks(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 312, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/web2/resource.py\", line 230, in <lambda>            ).addCallback(lambda res: self.render(request))\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 113\n1, in render            worksheet.check_comp()\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3133, in check_comp            out = self.postprocess_output(output_status.output, C)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3619, in postprocess_output            I = C._before_preparse.split('\\n')\n        exceptions.AttributeError: Cell instance has no attribute '_before_preparse'\n```\n\n\nFix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7657\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein boothby @kcrisman @jhpalmieri\n\nThe sagenb.org log has this error in it a bunch:\n\n```\n2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Exception rendering:2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 630, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 607, in _deferGenerator\n            deferred.callback(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 243, in callback\n            self._startRunCallbacks(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 312, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/web2/resource.py\", line 230, in <lambda>            ).addCallback(lambda res: self.render(request))\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 113\n1, in render            worksheet.check_comp()\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3133, in check_comp            out = self.postprocess_output(output_status.output, C)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3619, in postprocess_output            I = C._before_preparse.split('\\n')\n        exceptions.AttributeError: Cell instance has no attribute '_before_preparse'\n```\n\nFix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7657\n\n",
     "created_at": "2009-12-11T05:04:23Z",
     "labels": [
         "component: notebook",
@@ -47,7 +47,6 @@ g/twisted/web2/resource.py", line 230, in <lambda>            ).addCallback(lamb
  3619, in postprocess_output            I = C._before_preparse.split('\n')
         exceptions.AttributeError: Cell instance has no attribute '_before_preparse'
 ```
-
 
 Fix this.
 
@@ -199,7 +198,7 @@ archive/issue_events_018230.json:
 archive/issue_comments_065385.json:
 ```json
 {
-    "body": "The problem is that in `check_comp` we have\n\n```\nC = self.__queue[0]\n<a few things>\ntry:\n    output_status = S.output_status()\nexcept RuntimeError, msg:\n    verbose(\"Computation was interrupted or failed. Restarting.\\n%s\" % msg) \n    self.__comp_is_running = False\n    self.start_next_comp()\n    return 'w', C\nout = self.postprocess_output(output_status.output, C)\n```\n\nwhich is where the exception is raised, but this `_before_preparse` is only defined in `start_next_comp`, which *also* does\n\n```\nC = self.__queue[0]\n<a lot of stuff getting the input>\nself.sage().execute(input, os.path.abspath(self.data_directory()))\n```\n\nSo if a worksheet cell is updated in `sagenb/flask_version/worksheet.py` and \n\n```\n@worksheet_command('cell_update')\ndef worksheet_cell_update(worksheet):\n    <stuff>\n    worksheet.check_comp()\n    <lots more>\n     # Compute 'em, if we got 'em.\n    worksheet.start_next_comp()\n```\n\nor if somehow in the code above the computation is interrupted but the same cell is enqueued, this kind of race condition could occur.  I'd recommend either enqueuing a lot of cells at once, or interrupting and restarting a lot of cells, to replicate this - which could be hard.",
+    "body": "The problem is that in `check_comp` we have\n\n```\nC = self.__queue[0]\n<a few things>\ntry:\n    output_status = S.output_status()\nexcept RuntimeError, msg:\n    verbose(\"Computation was interrupted or failed. Restarting.\\n%s\" % msg) \n    self.__comp_is_running = False\n    self.start_next_comp()\n    return 'w', C\nout = self.postprocess_output(output_status.output, C)\n```\nwhich is where the exception is raised, but this `_before_preparse` is only defined in `start_next_comp`, which *also* does\n\n```\nC = self.__queue[0]\n<a lot of stuff getting the input>\nself.sage().execute(input, os.path.abspath(self.data_directory()))\n```\nSo if a worksheet cell is updated in `sagenb/flask_version/worksheet.py` and \n\n```\n@worksheet_command('cell_update')\ndef worksheet_cell_update(worksheet):\n    <stuff>\n    worksheet.check_comp()\n    <lots more>\n     # Compute 'em, if we got 'em.\n    worksheet.start_next_comp()\n```\nor if somehow in the code above the computation is interrupted but the same cell is enqueued, this kind of race condition could occur.  I'd recommend either enqueuing a lot of cells at once, or interrupting and restarting a lot of cells, to replicate this - which could be hard.",
     "created_at": "2014-12-10T20:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
@@ -222,7 +221,6 @@ except RuntimeError, msg:
     return 'w', C
 out = self.postprocess_output(output_status.output, C)
 ```
-
 which is where the exception is raised, but this `_before_preparse` is only defined in `start_next_comp`, which *also* does
 
 ```
@@ -230,7 +228,6 @@ C = self.__queue[0]
 <a lot of stuff getting the input>
 self.sage().execute(input, os.path.abspath(self.data_directory()))
 ```
-
 So if a worksheet cell is updated in `sagenb/flask_version/worksheet.py` and 
 
 ```
@@ -242,7 +239,6 @@ def worksheet_cell_update(worksheet):
      # Compute 'em, if we got 'em.
     worksheet.start_next_comp()
 ```
-
 or if somehow in the code above the computation is interrupted but the same cell is enqueued, this kind of race condition could occur.  I'd recommend either enqueuing a lot of cells at once, or interrupting and restarting a lot of cells, to replicate this - which could be hard.
 
 

@@ -140,7 +140,7 @@ Note: I ended up throwing away a bit of code in crystals/spins.py, which was the
 archive/issue_comments_075129.json:
 ```json
 {
-    "body": "> Florent: please double check it. If that's fine, fold everything together, post here and set a positive review!\n\nAll tests passed on sage, I folded and set positive review.",
+    "body": "> Florent: please double check it. If that's fine, fold everything together, post here and set a positive review!\n\n\nAll tests passed on sage, I folded and set positive review.",
     "created_at": "2010-04-21T21:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8402",
     "type": "issue_comment",
@@ -150,6 +150,7 @@ archive/issue_comments_075129.json:
 ```
 
 > Florent: please double check it. If that's fine, fold everything together, post here and set a positive review!
+
 
 All tests passed on sage, I folded and set positive review.
 

@@ -3,7 +3,7 @@
 archive/issues_009876.json:
 ```json
 {
-    "body": "Assignee: tmonteil\n\nCC:  sage-combinat abmasse @seblabbe\n\nAdd 3 methods to the `sage/combinat/words/finite_word.py`:\n\n1. sturmian_desubstitute_as_possible\n2. is_sturmian_factor\n3. is_tangent\n\n\n```\nsage: w = Word('01110110110111011101',alphabet='01')\nsage: w.is_tangent()                  \nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9877\n\n",
+    "body": "Assignee: tmonteil\n\nCC:  sage-combinat abmasse @seblabbe\n\nAdd 3 methods to the `sage/combinat/words/finite_word.py`:\n\n1. sturmian_desubstitute_as_possible\n2. is_sturmian_factor\n3. is_tangent\n\n```\nsage: w = Word('01110110110111011101',alphabet='01')\nsage: w.is_tangent()                  \nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9877\n\n",
     "created_at": "2010-09-08T21:05:26Z",
     "labels": [
         "component: combinatorics"
@@ -25,13 +25,11 @@ Add 3 methods to the `sage/combinat/words/finite_word.py`:
 2. is_sturmian_factor
 3. is_tangent
 
-
 ```
 sage: w = Word('01110110110111011101',alphabet='01')
 sage: w.is_tangent()                  
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9877
 
@@ -104,7 +102,7 @@ I'm waiting for sage-combinat to install and I'll test and look more thoroughly 
 archive/issue_comments_097589.json:
 ```json
 {
-    "body": "There is another problem with your function:\n\n```\nTypeError: Your word must be defined on a binary alphabet\nsage: \nsage: \nsage: Word('ababab', alphabet='ab').is_sturmian_factor()\nTrue\nsage: Word('ababab').is_sturmian_factor()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/alexandre/Applications/sage/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.pyc in is_sturmian_factor(self)\n   4197         - Thierry Monteil\n   4198         \"\"\"\n-> 4199         return self.sturmian_desubstitute_as_possible().is_empty()\n   4200 \n   4201 \n\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.pyc in sturmian_desubstitute_as_possible(self)\n   4086         W = self.parent()\n   4087         if (W.size_of_alphabet() != 2):\n-> 4088             raise TypeError, 'Your word must be defined on a binary alphabet'\n   4089         alphabet = W.alphabet()\n   4090         if self.is_empty():\n\nTypeError: Your word must be defined on a binary alphabet\n```\n\n\nI think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression\nlen(set(self)) == 2\n\nI think the clean solution would be to replace the deprecated function `alphabet()` by a new one that would compute the *real alphabet* in question, so that there would be two kinds of alphabet:\n\n1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).\n2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`\n\nThe first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n\nWhat I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.",
+    "body": "There is another problem with your function:\n\n```\nTypeError: Your word must be defined on a binary alphabet\nsage: \nsage: \nsage: Word('ababab', alphabet='ab').is_sturmian_factor()\nTrue\nsage: Word('ababab').is_sturmian_factor()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/alexandre/Applications/sage/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.pyc in is_sturmian_factor(self)\n   4197         - Thierry Monteil\n   4198         \"\"\"\n-> 4199         return self.sturmian_desubstitute_as_possible().is_empty()\n   4200 \n   4201 \n\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.pyc in sturmian_desubstitute_as_possible(self)\n   4086         W = self.parent()\n   4087         if (W.size_of_alphabet() != 2):\n-> 4088             raise TypeError, 'Your word must be defined on a binary alphabet'\n   4089         alphabet = W.alphabet()\n   4090         if self.is_empty():\n\nTypeError: Your word must be defined on a binary alphabet\n```\n\nI think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression\nlen(set(self)) == 2\n\nI think the clean solution would be to replace the deprecated function `alphabet()` by a new one that would compute the *real alphabet* in question, so that there would be two kinds of alphabet:\n\n1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).\n2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`\n\nThe first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n\nWhat I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.",
     "created_at": "2010-10-01T19:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -144,7 +142,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: Your word must be defined on a binary alphabet
 ```
 
-
 I think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression
 len(set(self)) == 2
 
@@ -182,7 +179,7 @@ I might be wrong, but it seems that the code for the `desubstitute_as_possible` 
 archive/issue_comments_097591.json:
 ```json
 {
-    "body": "Replying to [comment:2 abmasse]:\n>  1. Could you add a reference where one can find the proof that a word is finite sturmian if and only if you can desubstitute it to the empy word?\n\nSure. This is a well known result (though there are many variants of this idea, i do not know whether this exact one is written somewhere), but i will add at least in the Arnoux chapter of the Pytheas Fogg book. I guess i will also add a reference to a recent article of Smillie and Ulcigrai which explains this in a nice way.",
+    "body": "Replying to [comment:2 abmasse]:\n>  1. Could you add a reference where one can find the proof that a word is finite sturmian if and only if you can desubstitute it to the empy word?\n\n\nSure. This is a well known result (though there are many variants of this idea, i do not know whether this exact one is written somewhere), but i will add at least in the Arnoux chapter of the Pytheas Fogg book. I guess i will also add a reference to a recent article of Smillie and Ulcigrai which explains this in a nice way.",
     "created_at": "2010-10-01T22:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -194,6 +191,7 @@ archive/issue_comments_097591.json:
 Replying to [comment:2 abmasse]:
 >  1. Could you add a reference where one can find the proof that a word is finite sturmian if and only if you can desubstitute it to the empy word?
 
+
 Sure. This is a well known result (though there are many variants of this idea, i do not know whether this exact one is written somewhere), but i will add at least in the Arnoux chapter of the Pytheas Fogg book. I guess i will also add a reference to a recent article of Smillie and Ulcigrai which explains this in a nice way.
 
 
@@ -203,7 +201,7 @@ Sure. This is a well known result (though there are many variants of this idea, 
 archive/issue_comments_097592.json:
 ```json
 {
-    "body": "Replying to [comment:2 abmasse]:\n>  2. Not very important, but there are two comment `# print <something>` that should be removed from the code in the function `is_sturmian_factor`.\n\nok.",
+    "body": "Replying to [comment:2 abmasse]:\n>  2. Not very important, but there are two comment `# print <something>` that should be removed from the code in the function `is_sturmian_factor`.\n\n\nok.",
     "created_at": "2010-10-01T22:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -215,6 +213,7 @@ archive/issue_comments_097592.json:
 Replying to [comment:2 abmasse]:
 >  2. Not very important, but there are two comment `# print <something>` that should be removed from the code in the function `is_sturmian_factor`.
 
+
 ok.
 
 
@@ -224,7 +223,7 @@ ok.
 archive/issue_comments_097593.json:
 ```json
 {
-    "body": "Replying to [comment:2 abmasse]:\n>  2. As I told you when you were in Montreal, I think I prefer the name `is_finite_sturmian` (or just `is_sturmian`) over the name `is_sturmian_factor`. I feel that the last one implies an argument like in `w.is_sturmian_factor(u)` and it seems to be used in many articles (just googling it, you find a big list).\n\nActually, those words are the balanced one, but the method `is_balanced` already exists with a slower (quadratic complexity) implementation (that implements the definition of the balanced word). The first name of my method was `is_factor_of_a_sturmian_word`, which describes precisely the method but is too long.\n\nI do not really like `is_finite_sturmian`, and i am completely opposed to the name `is_sturmian` because the word Sturmian is reserved for infinite words (and this is not the role of sage to change historical notations). Also `is_finite_sturmian` will not be well positioned in the automatic completion.\n\nAnother possibility could be to add a parameter `algorithm` with values `default`, `desubstitution` or `definition` and merge this method into the existing slow method `is_balanced` (with the `desubstitution` algorithm only applying for 1-balanced words).",
+    "body": "Replying to [comment:2 abmasse]:\n>  2. As I told you when you were in Montreal, I think I prefer the name `is_finite_sturmian` (or just `is_sturmian`) over the name `is_sturmian_factor`. I feel that the last one implies an argument like in `w.is_sturmian_factor(u)` and it seems to be used in many articles (just googling it, you find a big list).\n\n\nActually, those words are the balanced one, but the method `is_balanced` already exists with a slower (quadratic complexity) implementation (that implements the definition of the balanced word). The first name of my method was `is_factor_of_a_sturmian_word`, which describes precisely the method but is too long.\n\nI do not really like `is_finite_sturmian`, and i am completely opposed to the name `is_sturmian` because the word Sturmian is reserved for infinite words (and this is not the role of sage to change historical notations). Also `is_finite_sturmian` will not be well positioned in the automatic completion.\n\nAnother possibility could be to add a parameter `algorithm` with values `default`, `desubstitution` or `definition` and merge this method into the existing slow method `is_balanced` (with the `desubstitution` algorithm only applying for 1-balanced words).",
     "created_at": "2010-10-01T23:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -235,6 +234,7 @@ archive/issue_comments_097593.json:
 
 Replying to [comment:2 abmasse]:
 >  2. As I told you when you were in Montreal, I think I prefer the name `is_finite_sturmian` (or just `is_sturmian`) over the name `is_sturmian_factor`. I feel that the last one implies an argument like in `w.is_sturmian_factor(u)` and it seems to be used in many articles (just googling it, you find a big list).
+
 
 Actually, those words are the balanced one, but the method `is_balanced` already exists with a slower (quadratic complexity) implementation (that implements the definition of the balanced word). The first name of my method was `is_factor_of_a_sturmian_word`, which describes precisely the method but is too long.
 
@@ -249,7 +249,7 @@ Another possibility could be to add a parameter `algorithm` with values `default
 archive/issue_comments_097594.json:
 ```json
 {
-    "body": "Replying to [comment:7 tmonteil]:\n\n> \n> Another possibility could be to add a parameter `algorithm` with values `default`, `desubstitution` or `definition` and merge this method into the existing slow method `is_balanced` (with the `desubstitution` algorithm only applying for 1-balanced words).\n\nThis is a very good idea. I think you should do it.",
+    "body": "Replying to [comment:7 tmonteil]:\n\n> \n> Another possibility could be to add a parameter `algorithm` with values `default`, `desubstitution` or `definition` and merge this method into the existing slow method `is_balanced` (with the `desubstitution` algorithm only applying for 1-balanced words).\n\n\nThis is a very good idea. I think you should do it.",
     "created_at": "2010-10-01T23:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -263,6 +263,7 @@ Replying to [comment:7 tmonteil]:
 > 
 > Another possibility could be to add a parameter `algorithm` with values `default`, `desubstitution` or `definition` and merge this method into the existing slow method `is_balanced` (with the `desubstitution` algorithm only applying for 1-balanced words).
 
+
 This is a very good idea. I think you should do it.
 
 
@@ -272,7 +273,7 @@ This is a very good idea. I think you should do it.
 archive/issue_comments_097595.json:
 ```json
 {
-    "body": "Replying to [comment:3 abmasse]:\n> There is another problem with your function:\n\n```\n[cut]\nTypeError: Your word must be defined on a binary alphabet\n```\n\n> \n> I think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression\n> len(set(self)) == 2\n> \n> I think the clean solution would be to replace the deprecated function `alphabet()` by a new one that would compute the *real alphabet* in question, so that there would be two kinds of alphabet:\n> \n>  1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).\n>  2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`\n> \n> The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n> \n> What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.\n\n\nSince it is explained in the documentation, this is not a bug but a feature ;)\n\nI was thinking about this alphabet problem, and i am willing to write a ticket about that issue. I think that such a decision should be made for the whole word directory, with its whole community. Here are some bits.\n\nIf i start to do such tests in such a method, then almost every method of the FiniteWords class will have to do it as well, and the faster parent().alphabet() method will become useless. So there is a problem of code replication.\n\nAnother problem is that a test like `len(set(w)) == 2` takes probably a linear time whereas `size_of_alphabet` is just looking into the parent, which is constant time. \n\nSome programmer (user) should know where his/her words are living and should be warned if not. Making \"friendly code\" does not mean to pass over dirty programmer's inconsistencies, because then it won't detect the clean programmer's mistakes anymore. Fore those lazy ways of programming, we can imagine a global option which tells how the methods should care about the alphabet, so that both kinds of behavior are possible.\n\nAs for me, this may look Bourbachist (in particular not `bash`-ist ;), but i would like the empty word defined on a 2-letter alphabet to be recognized as a factor of a Sturmian word and not necessarily the empty word defined on a three letter alphabet (or at least to be warned if i do so). This may be, a contrario, an argument to make a difference between `is_sturmian_factor` (or `is_finite_sturmian`) and `is_balanced(1)`.\n\n\nIf in some very few occasion, the user will indeed need to use such a method on some words defined on some non-two-letter alphabet, but then there should be some general coerce methods like `redefine_alphabet` or `minimize_alphabet_to_actually_used_letters` that s-he can use in his/her code.\n\nAnother example of why the alphabet question deals with the whole `word` directory, and why there should be an overall policy is the following:\n\n\n```\nsage: words.LowerMechanicalWord(1/sqrt(2)).parent()\nWords\nsage: words.CharacteristicSturmianWord(1/sqrt(2)).parent()\nWords over Ordered Alphabet [0, 1]\n```\n",
+    "body": "Replying to [comment:3 abmasse]:\n> There is another problem with your function:\n\n{{{\n[cut]\nTypeError: Your word must be defined on a binary alphabet\n}}}\n> \n> I think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression\n> len(set(self)) == 2\n> \n> I think the clean solution would be to replace the deprecated function `alphabet()` by a new one that would compute the *real alphabet* in question, so that there would be two kinds of alphabet:\n> \n> 1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).\n> 2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`\n> \n> The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n> \n> What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.\n\n\n\nSince it is explained in the documentation, this is not a bug but a feature ;)\n\nI was thinking about this alphabet problem, and i am willing to write a ticket about that issue. I think that such a decision should be made for the whole word directory, with its whole community. Here are some bits.\n\nIf i start to do such tests in such a method, then almost every method of the FiniteWords class will have to do it as well, and the faster parent().alphabet() method will become useless. So there is a problem of code replication.\n\nAnother problem is that a test like `len(set(w)) == 2` takes probably a linear time whereas `size_of_alphabet` is just looking into the parent, which is constant time. \n\nSome programmer (user) should know where his/her words are living and should be warned if not. Making \"friendly code\" does not mean to pass over dirty programmer's inconsistencies, because then it won't detect the clean programmer's mistakes anymore. Fore those lazy ways of programming, we can imagine a global option which tells how the methods should care about the alphabet, so that both kinds of behavior are possible.\n\nAs for me, this may look Bourbachist (in particular not `bash`-ist ;), but i would like the empty word defined on a 2-letter alphabet to be recognized as a factor of a Sturmian word and not necessarily the empty word defined on a three letter alphabet (or at least to be warned if i do so). This may be, a contrario, an argument to make a difference between `is_sturmian_factor` (or `is_finite_sturmian`) and `is_balanced(1)`.\n\n\nIf in some very few occasion, the user will indeed need to use such a method on some words defined on some non-two-letter alphabet, but then there should be some general coerce methods like `redefine_alphabet` or `minimize_alphabet_to_actually_used_letters` that s-he can use in his/her code.\n\nAnother example of why the alphabet question deals with the whole `word` directory, and why there should be an overall policy is the following:\n\n```\nsage: words.LowerMechanicalWord(1/sqrt(2)).parent()\nWords\nsage: words.CharacteristicSturmianWord(1/sqrt(2)).parent()\nWords over Ordered Alphabet [0, 1]\n```",
     "created_at": "2010-10-02T00:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -284,23 +285,23 @@ archive/issue_comments_097595.json:
 Replying to [comment:3 abmasse]:
 > There is another problem with your function:
 
-```
+{{{
 [cut]
 TypeError: Your word must be defined on a binary alphabet
-```
-
+}}}
 > 
 > I think this shouldn't be the case. In fact, this is interesting, because it raises another problem I had when working on another patch. What I suggest is that you could first verify if the parent has size 2 and, if it's not the case, you check if its *real* alphabet has size 2 by using the expression
 > len(set(self)) == 2
 > 
 > I think the clean solution would be to replace the deprecated function `alphabet()` by a new one that would compute the *real alphabet* in question, so that there would be two kinds of alphabet:
 > 
->  1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).
->  2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`
+> 1. The one corresponding to the parent of the word (for instance `aaab` might be a word defined on the alphabet `{a,b,c}`).
+> 2. The one corresponding to the alphabet realized by the word `Alph(aaab) = {a,b}`
 > 
 > The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.
 > 
 > What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.
+
 
 
 Since it is explained in the documentation, this is not a bug but a feature ;)
@@ -320,7 +321,6 @@ If in some very few occasion, the user will indeed need to use such a method on 
 
 Another example of why the alphabet question deals with the whole `word` directory, and why there should be an overall policy is the following:
 
-
 ```
 sage: words.LowerMechanicalWord(1/sqrt(2)).parent()
 Words
@@ -330,13 +330,12 @@ Words over Ordered Alphabet [0, 1]
 
 
 
-
 ---
 
 archive/issue_comments_097596.json:
 ```json
 {
-    "body": "> The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n> \n> What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.\n\nI think this is a very good suggestion.\n\nS\u00e9bastien",
+    "body": "> The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.\n> \n> What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.\n\n\nI think this is a very good suggestion.\n\nS\u00e9bastien",
     "created_at": "2010-10-15T22:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -348,6 +347,7 @@ archive/issue_comments_097596.json:
 > The first one is called by `w.parent().alphabet()` while the second one would be obtained from `w.alphabet()`. But this is for another ticket.
 > 
 > What I suggest is that you simply add the `len(set(w)) == 2` condition to your code and we'll clean it eventually.
+
 
 I think this is a very good suggestion.
 
@@ -425,7 +425,7 @@ Tested on Sage 4.6
 archive/issue_comments_097600.json:
 ```json
 {
-    "body": "Attachment [trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch) by tmonteil created at 2010-12-29 16:56:11\n\nHi Alexandre,\n\ni started to work back on this ticket. This new patch is supposed to solve your four points. \n\nSince the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\nAlso, concerning a previous comment on using existing sage code, i looked for some \"run\" method and the only similar code i found was the `_delta_iterator()` method in the `Word_class` class. I tried to use it, but it seems that the use of the `groupby` itertool followed by `len` makes a slower code:\n\n\n```\nfrom itertools import groupby\n\ndef runs_groupby(self):\n    for letter, run in groupby(self):\n        yield letter, len(list(run))\n\ndef runs_homemade(self):\n    try:\n        previous_letter = self[0]\n    except IndexError:\n        return\n    current_run_length = 0\n    for i in self:\n        if i == previous_letter:\n            current_run_length += 1\n        else:\n            yield previous_letter , current_run_length\n            current_run_length = 1\n            previous_letter = i\n    yield previous_letter , current_run_length\n\ntimeit('for i in runs_groupby(words.FibonacciWord()[:1000]):\\n    print i')\n\ntimeit('for i in runs_homemade(words.FibonacciWord()[:1000]):\\n    print i')\n\n```\n\n\nThe first takes 28.6 ms per loop whereas the second takes 18.2 ms per loop. The problem is that the first method, though more low-level, is like passing twice on the word, which seems to be slower than the second (high-level) one-pass method.\n\nCiao,\nThierry",
+    "body": "Attachment [trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch](tarball://root/attachments/some-uuid/ticket9877/trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch) by tmonteil created at 2010-12-29 16:56:11\n\nHi Alexandre,\n\ni started to work back on this ticket. This new patch is supposed to solve your four points. \n\nSince the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\nAlso, concerning a previous comment on using existing sage code, i looked for some \"run\" method and the only similar code i found was the `_delta_iterator()` method in the `Word_class` class. I tried to use it, but it seems that the use of the `groupby` itertool followed by `len` makes a slower code:\n\n```\nfrom itertools import groupby\n\ndef runs_groupby(self):\n    for letter, run in groupby(self):\n        yield letter, len(list(run))\n\ndef runs_homemade(self):\n    try:\n        previous_letter = self[0]\n    except IndexError:\n        return\n    current_run_length = 0\n    for i in self:\n        if i == previous_letter:\n            current_run_length += 1\n        else:\n            yield previous_letter , current_run_length\n            current_run_length = 1\n            previous_letter = i\n    yield previous_letter , current_run_length\n\ntimeit('for i in runs_groupby(words.FibonacciWord()[:1000]):\\n    print i')\n\ntimeit('for i in runs_homemade(words.FibonacciWord()[:1000]):\\n    print i')\n\n```\n\nThe first takes 28.6 ms per loop whereas the second takes 18.2 ms per loop. The problem is that the first method, though more low-level, is like passing twice on the word, which seems to be slower than the second (high-level) one-pass method.\n\nCiao,\nThierry",
     "created_at": "2010-12-29T16:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -443,7 +443,6 @@ i started to work back on this ticket. This new patch is supposed to solve your 
 Since the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).
 
 Also, concerning a previous comment on using existing sage code, i looked for some "run" method and the only similar code i found was the `_delta_iterator()` method in the `Word_class` class. I tried to use it, but it seems that the use of the `groupby` itertool followed by `len` makes a slower code:
-
 
 ```
 from itertools import groupby
@@ -472,7 +471,6 @@ timeit('for i in runs_groupby(words.FibonacciWord()[:1000]):\n    print i')
 timeit('for i in runs_homemade(words.FibonacciWord()[:1000]):\n    print i')
 
 ```
-
 
 The first takes 28.6 ms per loop whereas the second takes 18.2 ms per loop. The problem is that the first method, though more low-level, is like passing twice on the word, which seems to be slower than the second (high-level) one-pass method.
 
@@ -526,7 +524,7 @@ See the report of the patchbot.
 archive/issue_comments_097603.json:
 ```json
 {
-    "body": "Salut Thierry,\n\n1.\n\n> Since the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\nWhy? Can you explain more? I don't think the protection is needed.\n\n2. \n\nThe patch is having the following lines::\n\n\n```\nw_isolated = W(l_isolated,datatype='letter') #the word associated to the isolated letter\nw_running = W(l_running,datatype='letter') #the word associated to the running letter\n```\n\n\nI remember I suggested you to use datatype = 'letter'. But I realized today that this was supported only for the old sage words objects saved in the pickle jar. So, by introducing it now in this patch, we would have to keep it. So we need to make a decision if we keep it or not. If we don't keep it, you can do the following instead:\n\n\n```\nw_isolated = W([l_isolated]) #the word associated to the isolated letter\nw_running = W([l_running]) #the word associated to the running letter\n```\n\n\n3. I think we should redefine the function alphabet for finite words and return the letter occuring in the word and caching the result (I can post a patch for this). And so, the function `is_tangent` could look if this method return a two letter alphabet when the parent don't.",
+    "body": "Salut Thierry,\n\n1.\n\n> Since the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).\n\n\nWhy? Can you explain more? I don't think the protection is needed.\n\n2. \n\nThe patch is having the following lines::\n\n```\nw_isolated = W(l_isolated,datatype='letter') #the word associated to the isolated letter\nw_running = W(l_running,datatype='letter') #the word associated to the running letter\n```\n\nI remember I suggested you to use datatype = 'letter'. But I realized today that this was supported only for the old sage words objects saved in the pickle jar. So, by introducing it now in this patch, we would have to keep it. So we need to make a decision if we keep it or not. If we don't keep it, you can do the following instead:\n\n```\nw_isolated = W([l_isolated]) #the word associated to the isolated letter\nw_running = W([l_running]) #the word associated to the running letter\n```\n\n3. I think we should redefine the function alphabet for finite words and return the letter occuring in the word and caching the result (I can post a patch for this). And so, the function `is_tangent` could look if this method return a two letter alphabet when the parent don't.",
     "created_at": "2011-01-28T15:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -541,27 +539,24 @@ Salut Thierry,
 
 > Since the `is_tangent()` method can now be applied to a word with more than 2 letters, i added a protection in the `FiniteWordPath_all` class into the file `paths.py` so that `is_tangent()` could not be applied for such word paths. Indeed, there is an extended definition for them, which is not yet written (see the paper).
 
+
 Why? Can you explain more? I don't think the protection is needed.
 
 2. 
 
 The patch is having the following lines::
 
-
 ```
 w_isolated = W(l_isolated,datatype='letter') #the word associated to the isolated letter
 w_running = W(l_running,datatype='letter') #the word associated to the running letter
 ```
 
-
 I remember I suggested you to use datatype = 'letter'. But I realized today that this was supported only for the old sage words objects saved in the pickle jar. So, by introducing it now in this patch, we would have to keep it. So we need to make a decision if we keep it or not. If we don't keep it, you can do the following instead:
-
 
 ```
 w_isolated = W([l_isolated]) #the word associated to the isolated letter
 w_running = W([l_running]) #the word associated to the running letter
 ```
-
 
 3. I think we should redefine the function alphabet for finite words and return the letter occuring in the word and caching the result (I can post a patch for this). And so, the function `is_tangent` could look if this method return a two letter alphabet when the parent don't.
 
@@ -590,7 +585,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_097605.json:
 ```json
 {
-    "body": "I get the following error while building the documentation :\n\n\n```\n/Users/slabbe/Applications/sage-4.6.2/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.\npy:docstring of sage.combinat.words.finite_word.FiniteWord_class.is_sturmian_factor:47: (ERROR/3) Unexpected indentation.                                                                                      \n```\n",
+    "body": "I get the following error while building the documentation :\n\n```\n/Users/slabbe/Applications/sage-4.6.2/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.\npy:docstring of sage.combinat.words.finite_word.FiniteWord_class.is_sturmian_factor:47: (ERROR/3) Unexpected indentation.                                                                                      \n```",
     "created_at": "2011-03-16T18:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -601,12 +596,10 @@ archive/issue_comments_097605.json:
 
 I get the following error while building the documentation :
 
-
 ```
 /Users/slabbe/Applications/sage-4.6.2/local/lib/python2.6/site-packages/sage/combinat/words/finite_word.
 py:docstring of sage.combinat.words.finite_word.FiniteWord_class.is_sturmian_factor:47: (ERROR/3) Unexpected indentation.                                                                                      
 ```
-
 
 
 
@@ -635,7 +628,7 @@ Apply trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch
 archive/issue_comments_097607.json:
 ```json
 {
-    "body": "Hello,\n\nSome comments to motivate the author of the patch.\n\n1) The problem with datatype=letter may be fixed by the following. At the begining of the function, create a dictionnary \"word_from_letter\" with keys the two letters and values as words of length 1. It is the best way to do as a call to the parent for the creation of an object is always time consuming. With that done, all tests pass on sage-5.0.beta7.\n\n2) It would be nice to put a \"reverse engineering\" example (random or not) as follows:\n\n```\nsage: s1 = WordMorphism('a->ab,b->b')\nsage: s2 = WordMorphism('a->ba,b->b')\nsage: s3 = WordMorphism('a->a,b->ba')\nsage: s4 = WordMorphism('a->a,b->ab')\nsage: W=Words('ab')\nsage: w=W('ab')\nsage: for i in xrange(8): w = choice([s1,s2,s3,s4])(w)   \nsage: w\nword: aabaaabaabaaabaabaabaaabaabaabaaabaabaaa...\nsage: w.is_sturmian_factor()\nTrue\n```\n\n\n3) There is still the doctest problem mentionned in comment: 17\n\nIt would be great to have this patch integrated in sage-5.0!",
+    "body": "Hello,\n\nSome comments to motivate the author of the patch.\n\n1) The problem with datatype=letter may be fixed by the following. At the begining of the function, create a dictionnary \"word_from_letter\" with keys the two letters and values as words of length 1. It is the best way to do as a call to the parent for the creation of an object is always time consuming. With that done, all tests pass on sage-5.0.beta7.\n\n2) It would be nice to put a \"reverse engineering\" example (random or not) as follows:\n\n```\nsage: s1 = WordMorphism('a->ab,b->b')\nsage: s2 = WordMorphism('a->ba,b->b')\nsage: s3 = WordMorphism('a->a,b->ba')\nsage: s4 = WordMorphism('a->a,b->ab')\nsage: W=Words('ab')\nsage: w=W('ab')\nsage: for i in xrange(8): w = choice([s1,s2,s3,s4])(w)   \nsage: w\nword: aabaaabaabaaabaabaabaaabaabaabaaabaabaaa...\nsage: w.is_sturmian_factor()\nTrue\n```\n\n3) There is still the doctest problem mentionned in comment: 17\n\nIt would be great to have this patch integrated in sage-5.0!",
     "created_at": "2012-03-23T23:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -665,7 +658,6 @@ word: aabaaabaabaaabaabaabaaabaabaabaaabaabaaa...
 sage: w.is_sturmian_factor()
 True
 ```
-
 
 3) There is still the doctest problem mentionned in comment: 17
 
@@ -736,7 +728,7 @@ Should I incorporate 2) ?
 archive/issue_comments_097611.json:
 ```json
 {
-    "body": "Replying to [comment:21 chapoton]:\n> I have made the necessary changes for 1) and 3). \n> \n> Should I incorporate 2) ?\n\nI would. You do not like the example ?",
+    "body": "Replying to [comment:21 chapoton]:\n> I have made the necessary changes for 1) and 3). \n> \n> Should I incorporate 2) ?\n\n\nI would. You do not like the example ?",
     "created_at": "2013-02-15T21:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -750,6 +742,7 @@ Replying to [comment:21 chapoton]:
 > 
 > Should I incorporate 2) ?
 
+
 I would. You do not like the example ?
 
 
@@ -759,7 +752,7 @@ I would. You do not like the example ?
 archive/issue_comments_097612.json:
 ```json
 {
-    "body": "Here it is. I had to change the result to\n\n```\nword: abaaabaaabaabaaabaaabaabaaabaabaaabaaaba...\n```\n\nfor the doctest to pass.\n\nPlease review.",
+    "body": "Here it is. I had to change the result to\n\n```\nword: abaaabaaabaabaaabaaabaabaaabaabaaabaaaba...\n```\nfor the doctest to pass.\n\nPlease review.",
     "created_at": "2013-02-15T21:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -773,7 +766,6 @@ Here it is. I had to change the result to
 ```
 word: abaaabaaabaabaaabaaabaabaaabaabaaabaaaba...
 ```
-
 for the doctest to pass.
 
 Please review.
@@ -1008,7 +1000,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097624.json:
 ```json
 {
-    "body": "There is a problem building the documentation:\n\n```\n[combinat ] /release/merger/sage-5.9.beta0/local/lib/python2.7/site-packages/sage/combinat/words/finite_word.py:docstring of sage.combinat.words.finite_word:47: WARNING: Enumerated list ends without a blank line; unexpected unindent.\n```\n",
+    "body": "There is a problem building the documentation:\n\n```\n[combinat ] /release/merger/sage-5.9.beta0/local/lib/python2.7/site-packages/sage/combinat/words/finite_word.py:docstring of sage.combinat.words.finite_word:47: WARNING: Enumerated list ends without a blank line; unexpected unindent.\n```",
     "created_at": "2013-03-13T14:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9876",
     "type": "issue_comment",
@@ -1022,7 +1014,6 @@ There is a problem building the documentation:
 ```
 [combinat ] /release/merger/sage-5.9.beta0/local/lib/python2.7/site-packages/sage/combinat/words/finite_word.py:docstring of sage.combinat.words.finite_word:47: WARNING: Enumerated list ends without a blank line; unexpected unindent.
 ```
-
 
 
 

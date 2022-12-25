@@ -122,7 +122,7 @@ LGTM.
 archive/issue_comments_062545.json:
 ```json
 {
-    "body": "The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg) contains some changes not yet checked in:\n\n```\n[mvngu@sage scipy-0.7.1]$ hg status\n? .copy_patches.pl.swp\n? patches/setup.py.special.orig\n```\n\nIs `patches/setup.py.special.orig` meant to be under revision control? The file `.copy_patches.pl.swp` looks like a junk file. If so, it needs to be deleted.",
+    "body": "The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg) contains some changes not yet checked in:\n\n```\n[mvngu@sage scipy-0.7.1]$ hg status\n? .copy_patches.pl.swp\n? patches/setup.py.special.orig\n```\nIs `patches/setup.py.special.orig` meant to be under revision control? The file `.copy_patches.pl.swp` looks like a junk file. If so, it needs to be deleted.",
     "created_at": "2010-01-24T23:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7442",
     "type": "issue_comment",
@@ -138,7 +138,6 @@ The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-
 ? .copy_patches.pl.swp
 ? patches/setup.py.special.orig
 ```
-
 Is `patches/setup.py.special.orig` meant to be under revision control? The file `.copy_patches.pl.swp` looks like a junk file. If so, it needs to be deleted.
 
 

@@ -3,7 +3,7 @@
 archive/issues_005326.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nJacob wrote on [sage-devel]:\n\n> From reading the documentation of the TermOrder command, it looks \n> like if I want to use a term order not defined in SAGE, I should \n> be able to make my term order a string that can be passed to \n> Singular.  This works for some term orderings, but not for those \n> that have commas in their definitions.  Judging from the code, I \n> think that SAGE sees the comma and assumes that I want a block \n> ordering (which I don't).\n\n> For example, if I want weighted reverse lex ordering with some\n> weights, I can do that in Singular:\n {{{\nring rr=0,(x,y),wp(2,3);\npoly f=x2+y3;\ndeg(f);\n9\npoly g = x<sup>3*y+y</sup>3;\nideal I = f,g;\nstd(I);\n_[1]=y3+x2\n_[2]=x3y-x2\n_[3]=x5+x2y2\n }}}\n\n> But not in SAGE:\n\n```\nsage: T = TermOrder(\"wp(2,3)\")\nTraceback (most recent call last):\n...\nTypeError: wp(2,3) is not a valid term ordering\n```\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2,T)\nsage: R._singular_()\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5326\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nJacob wrote on [sage-devel]:\n\n> From reading the documentation of the TermOrder command, it looks \n> like if I want to use a term order not defined in SAGE, I should \n> be able to make my term order a string that can be passed to \n> Singular.  This works for some term orderings, but not for those \n> that have commas in their definitions.  Judging from the code, I \n> think that SAGE sees the comma and assumes that I want a block \n> ordering (which I don't).\n\n\n> For example, if I want weighted reverse lex ordering with some\n> weights, I can do that in Singular:\n\n {{{\nring rr=0,(x,y),wp(2,3);\npoly f=x2+y3;\ndeg(f);\n9\npoly g = x<sup>3*y+y</sup>3;\nideal I = f,g;\nstd(I);\n_[1]=y3+x2\n_[2]=x3y-x2\n_[3]=x5+x2y2\n }}}\n\n> But not in SAGE:\n\n{{{\nsage: T = TermOrder(\"wp(2,3)\")\nTraceback (most recent call last):\n...\nTypeError: wp(2,3) is not a valid term ordering\n}}}\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2,T)\nsage: R._singular_()\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5326\n\n",
     "created_at": "2009-02-21T02:07:21Z",
     "labels": [
         "component: commutative algebra"
@@ -29,8 +29,10 @@ Jacob wrote on [sage-devel]:
 > think that SAGE sees the comma and assumes that I want a block 
 > ordering (which I don't).
 
+
 > For example, if I want weighted reverse lex ordering with some
 > weights, I can do that in Singular:
+
  {{{
 ring rr=0,(x,y),wp(2,3);
 poly f=x2+y3;
@@ -46,13 +48,12 @@ _[3]=x5+x2y2
 
 > But not in SAGE:
 
-```
+{{{
 sage: T = TermOrder("wp(2,3)")
 Traceback (most recent call last):
 ...
 TypeError: wp(2,3) is not a valid term ordering
-```
-
+}}}
 
 ```
 sage: R.<x,y> = PolynomialRing(QQ,2,T)
@@ -63,7 +64,6 @@ sage: R._singular_()
 //                  : names    x y
 //        block   2 : ordering C
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5326
 
@@ -355,7 +355,7 @@ Changing status from needs_info to positive_review.
 archive/issue_comments_040925.json:
 ```json
 {
-    "body": "The correct syntax is \n\n```\nT =  TermOrder(\"wp\",(2,3))\n```\n",
+    "body": "The correct syntax is \n\n```\nT =  TermOrder(\"wp\",(2,3))\n```",
     "created_at": "2017-06-02T13:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
@@ -369,7 +369,6 @@ The correct syntax is
 ```
 T =  TermOrder("wp",(2,3))
 ```
-
 
 
 

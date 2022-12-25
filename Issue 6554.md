@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6554
 archive/issue_comments_053348.json:
 ```json
 {
-    "body": "Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by @jasongrout created at 2009-07-18 14:54:27\n\nThis took a very long time before, if it was even possible.\n\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```\n",
+    "body": "Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by @jasongrout created at 2009-07-18 14:54:27\n\nThis took a very long time before, if it was even possible.\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```",
     "created_at": "2009-07-18T14:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
@@ -46,12 +46,10 @@ Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-
 
 This took a very long time before, if it was even possible.
 
-
 ```
         sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)
         sage: matrix_plot(A,marker=',')
 ```
-
 
 
 
@@ -96,7 +94,7 @@ It would be really great if this was reviewed in time for the Monday deadline fo
 archive/issue_comments_053351.json:
 ```json
 {
-    "body": "This installs fine (amd64 ubuntu 9.04, sage 4.1.1.alpha0) and I'm running tests now. However, why is it that\n\n\n```\nsage: B = random_matrix(ZZ, 10, 20, density=.4, sparse=True, x = 10)\nsage: matrix_plot(B, cmap='hsv').show(axes=False)\n```\n\nreturns a ble-and white scatterplot, but\n\n\n```\nsage: C = random_matrix(ZZ, 10, 20, x = 10)\nsage: matrix_plot(C, cmap='hsv').show(axes=False)\n```\n\nreturns a multi-colored plot? The docstring indicates that the colors plotted\nindicate the relative difference in sizes between the matrix entries. This seems\nto be incorrect, unless I am missing something, in the sparse case. Should a \ncomment to this effect be added to the docstring?",
+    "body": "This installs fine (amd64 ubuntu 9.04, sage 4.1.1.alpha0) and I'm running tests now. However, why is it that\n\n```\nsage: B = random_matrix(ZZ, 10, 20, density=.4, sparse=True, x = 10)\nsage: matrix_plot(B, cmap='hsv').show(axes=False)\n```\nreturns a ble-and white scatterplot, but\n\n```\nsage: C = random_matrix(ZZ, 10, 20, x = 10)\nsage: matrix_plot(C, cmap='hsv').show(axes=False)\n```\nreturns a multi-colored plot? The docstring indicates that the colors plotted\nindicate the relative difference in sizes between the matrix entries. This seems\nto be incorrect, unless I am missing something, in the sparse case. Should a \ncomment to this effect be added to the docstring?",
     "created_at": "2009-07-26T12:07:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
@@ -107,20 +105,16 @@ archive/issue_comments_053351.json:
 
 This installs fine (amd64 ubuntu 9.04, sage 4.1.1.alpha0) and I'm running tests now. However, why is it that
 
-
 ```
 sage: B = random_matrix(ZZ, 10, 20, density=.4, sparse=True, x = 10)
 sage: matrix_plot(B, cmap='hsv').show(axes=False)
 ```
-
 returns a ble-and white scatterplot, but
-
 
 ```
 sage: C = random_matrix(ZZ, 10, 20, x = 10)
 sage: matrix_plot(C, cmap='hsv').show(axes=False)
 ```
-
 returns a multi-colored plot? The docstring indicates that the colors plotted
 indicate the relative difference in sizes between the matrix entries. This seems
 to be incorrect, unless I am missing something, in the sparse case. Should a 
@@ -171,7 +165,7 @@ Good point; the docstring should be updated.  I've attached a small patch that u
 archive/issue_comments_053354.json:
 ```json
 {
-    "body": "Yes, looks good and passes sage -testall (intel macbook, OS 10.4.11) except for\n\n\n```\n        sage -t  \"devel/sage/sage/parallel/decorate.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\n\nThey seem unrelated. As far as I am concerned, this gets a positive review.",
+    "body": "Yes, looks good and passes sage -testall (intel macbook, OS 10.4.11) except for\n\n```\n        sage -t  \"devel/sage/sage/parallel/decorate.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\nThey seem unrelated. As far as I am concerned, this gets a positive review.",
     "created_at": "2009-07-27T18:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
@@ -182,12 +176,10 @@ archive/issue_comments_053354.json:
 
 Yes, looks good and passes sage -testall (intel macbook, OS 10.4.11) except for
 
-
 ```
         sage -t  "devel/sage/sage/parallel/decorate.py"
         sage -t  "devel/sage/sage/symbolic/expression.pyx"
 ```
-
 They seem unrelated. As far as I am concerned, this gets a positive review.
 
 

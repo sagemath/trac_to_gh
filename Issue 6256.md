@@ -3,7 +3,7 @@
 archive/issues_006256.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: var('kappa')\nkappa\nsage: x = sqrt(kappa)\nsage: F = exp(x)\nsage: F\ne^sqrt(kappa)\nsage: F/F\ne^(2*sqrt(kappa))\nsage: 1/F\ne^(-sqrt(kappa))\nsage: (1/F) * F\ne^(2*sqrt(kappa))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6256\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n```\nsage: var('kappa')\nkappa\nsage: x = sqrt(kappa)\nsage: F = exp(x)\nsage: F\ne^sqrt(kappa)\nsage: F/F\ne^(2*sqrt(kappa))\nsage: 1/F\ne^(-sqrt(kappa))\nsage: (1/F) * F\ne^(2*sqrt(kappa))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6256\n\n",
     "created_at": "2009-06-10T08:48:57Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Assignee: @burcin
 
 CC:  @jasongrout
 
-
 ```
 sage: var('kappa')
 kappa
@@ -36,7 +35,6 @@ e^(-sqrt(kappa))
 sage: (1/F) * F
 e^(2*sqrt(kappa))
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6256
 
@@ -67,7 +65,7 @@ Changing status from new to assigned.
 archive/issue_comments_049875.json:
 ```json
 {
-    "body": "Here is the fix for pynac:\n\n```\ndiff --git a/ginac/mul.cpp b/ginac/mul.cpp\n--- a/ginac/mul.cpp\n+++ b/ginac/mul.cpp\n@@ -1167,7 +1167,7 @@\n        if (cmpval != 0) {\n                return cmpval;\n        }\n-       if (seq.size() == 1 && overall_coeff.is_equal(_ex_1))\n+       if (seq.size() == 1 && overall_coeff.is_equal(_ex1))\n                return 0;\n        return 1;\n }\n```\n\n\nI'll post an updated spkg later together with a fix for #6244.",
+    "body": "Here is the fix for pynac:\n\n```\ndiff --git a/ginac/mul.cpp b/ginac/mul.cpp\n--- a/ginac/mul.cpp\n+++ b/ginac/mul.cpp\n@@ -1167,7 +1167,7 @@\n        if (cmpval != 0) {\n                return cmpval;\n        }\n-       if (seq.size() == 1 && overall_coeff.is_equal(_ex_1))\n+       if (seq.size() == 1 && overall_coeff.is_equal(_ex1))\n                return 0;\n        return 1;\n }\n```\n\nI'll post an updated spkg later together with a fix for #6244.",
     "created_at": "2009-06-13T22:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
@@ -92,7 +90,6 @@ diff --git a/ginac/mul.cpp b/ginac/mul.cpp
         return 1;
  }
 ```
-
 
 I'll post an updated spkg later together with a fix for #6244.
 

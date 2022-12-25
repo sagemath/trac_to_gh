@@ -242,7 +242,7 @@ Dave
 archive/issue_comments_092778.json:
 ```json
 {
-    "body": "Replying to [comment:10 drkirkby]:\n> Is anyone working on the FreeBSD port now? I'm not aware of Peter working on it. I think he got a bit fed up with what he called the \n> \n> \"release it now, we'll make it work later\" mentality.\n> \n> (They are Peter's words, not mine. See #9601.)\n> \n> Dave \n\nOops, Peter put his comments on #6456, not #9601 which is this ticket! \n\nDave.",
+    "body": "Replying to [comment:10 drkirkby]:\n> Is anyone working on the FreeBSD port now? I'm not aware of Peter working on it. I think he got a bit fed up with what he called the \n> \n> \"release it now, we'll make it work later\" mentality.\n> \n> (They are Peter's words, not mine. See #9601.)\n> \n> Dave \n\n\nOops, Peter put his comments on #6456, not #9601 which is this ticket! \n\nDave.",
     "created_at": "2012-01-31T21:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
@@ -260,6 +260,7 @@ Replying to [comment:10 drkirkby]:
 > 
 > Dave 
 
+
 Oops, Peter put his comments on #6456, not #9601 which is this ticket! 
 
 Dave.
@@ -271,7 +272,7 @@ Dave.
 archive/issue_comments_092779.json:
 ```json
 {
-    "body": "> > Is anyone working on the FreeBSD port now? I'm not aware of Peter working on it. I think he got a bit fed up with what he \nWell, a friend of one of the WeBWorK developers did manage to make a Sage that passed most tests not too long ago.   See the link in comment:9.",
+    "body": "> > Is anyone working on the FreeBSD port now? I'm not aware of Peter working on it. I think he got a bit fed up with what he \n\nWell, a friend of one of the WeBWorK developers did manage to make a Sage that passed most tests not too long ago.   See the link in comment:9.",
     "created_at": "2012-02-01T01:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
@@ -281,6 +282,7 @@ archive/issue_comments_092779.json:
 ```
 
 > > Is anyone working on the FreeBSD port now? I'm not aware of Peter working on it. I think he got a bit fed up with what he 
+
 Well, a friend of one of the WeBWorK developers did manage to make a Sage that passed most tests not too long ago.   See the link in comment:9.
 
 

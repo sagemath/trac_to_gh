@@ -3,7 +3,7 @@
 archive/issues_005075.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  dmharvey @nilesjohnson @categorie\n\nKeywords: polynomials, power series, inexact rings\n\nThe generic polynomial class truncates leading zeroes, and this can cause problems when working over an inexact ring in which is_zero can return True even for an inexact zero (e.g., see #2943). Here is a simple example:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(t)\nsage: y\nO(t^1)\nsage: z = y*s\nsage: z\n0\nsage: z.list()\n[]\n```\n\nThis was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):\n\n```\nsage: C = pAdicField(11)\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(11)\nsage: y\nO(11)\nsage: z = y*s\nsage: z\n(O(11))*s\n```\n\nThe other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5075\n\n",
+    "body": "Assignee: @roed314\n\nCC:  dmharvey @nilesjohnson @categorie\n\nKeywords: polynomials, power series, inexact rings\n\nThe generic polynomial class truncates leading zeroes, and this can cause problems when working over an inexact ring in which is_zero can return True even for an inexact zero (e.g., see #2943). Here is a simple example:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(t)\nsage: y\nO(t^1)\nsage: z = y*s\nsage: z\n0\nsage: z.list()\n[]\n```\nThis was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):\n\n```\nsage: C = pAdicField(11)\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(11)\nsage: y\nO(11)\nsage: z = y*s\nsage: z\n(O(11))*s\n```\nThe other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5075\n\n",
     "created_at": "2009-01-23T19:04:16Z",
     "labels": [
         "component: algebra",
@@ -36,7 +36,6 @@ sage: z
 sage: z.list()
 []
 ```
-
 This was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):
 
 ```
@@ -49,7 +48,6 @@ sage: z = y*s
 sage: z
 (O(11))*s
 ```
-
 The other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5075
@@ -190,7 +188,7 @@ archive/issue_events_011708.json:
 archive/issue_comments_038579.json:
 ```json
 {
-    "body": "David, could you give us a rebase for sage 6.1?  I know you're doing a lot of other work for padics, but we're trying to solve a more basic issue with power series comparison at #9457.  Power series over padics are a confusing obstacle there, and we wanted to see if the patch here would help.\n\nHere's the specific bug we're trying to track down (in sage 6.1):  Power series over p-adics are changing inexact zeros to exact zeros -- this looks similar to the problem with polynomials on this ticket, but notice that the problem happens even for p-adics:\n\n\n```\nsage: Ct.<t> = PowerSeriesRing(Qp(11))\nsage: O(11^2) # inexact zero\nO(11^2)\nsage: Ct(O(11^2)) # coercing to power series ring looses finite precision\n0\nsage: Ct(1+O(11^2)) # finite precision is retained for non-zero elements\n1 + O(11^2)\n```\n\n\nThere is a problem with multiplication of a p-adic by an element of the power series ring, which might be caused by the problem above:\n\n```\nsage: 1+O(11^2)*t  # finite precision is retained\n1 + O(11^20) + O(11^2)*t  \n\nsage: O(11^2)*t  # finite precision is lost\n0\n```\n\n\nNote that there is a similar problem for more general power series ring over power series ring:\n\n\n```\nsage: D.<x> = PowerSeriesRing(QQ)\nsage: Ds.<s> = PowerSeriesRing(D)\nsage: O(x)  # inexact zero\nO(x^1)\nsage: Ds(O(x)) # finite precision is lost\n0\nsage: Ds(1+O(x)) # finite precision is retained\n1 + O(x)\n\nsage: 1+O(x)*s # !! this is different from behavior of power series over padic ring\n1\n```\n\n\nMy hope is that starting with a rebase of this patch would be a step toward solving this problem.  Perhaps it will have to be extended to power series over inexact rings too.  Unfortunately I don't understand the current status of padics well enough to do this rebase myself.",
+    "body": "David, could you give us a rebase for sage 6.1?  I know you're doing a lot of other work for padics, but we're trying to solve a more basic issue with power series comparison at #9457.  Power series over padics are a confusing obstacle there, and we wanted to see if the patch here would help.\n\nHere's the specific bug we're trying to track down (in sage 6.1):  Power series over p-adics are changing inexact zeros to exact zeros -- this looks similar to the problem with polynomials on this ticket, but notice that the problem happens even for p-adics:\n\n```\nsage: Ct.<t> = PowerSeriesRing(Qp(11))\nsage: O(11^2) # inexact zero\nO(11^2)\nsage: Ct(O(11^2)) # coercing to power series ring looses finite precision\n0\nsage: Ct(1+O(11^2)) # finite precision is retained for non-zero elements\n1 + O(11^2)\n```\n\nThere is a problem with multiplication of a p-adic by an element of the power series ring, which might be caused by the problem above:\n\n```\nsage: 1+O(11^2)*t  # finite precision is retained\n1 + O(11^20) + O(11^2)*t  \n\nsage: O(11^2)*t  # finite precision is lost\n0\n```\n\nNote that there is a similar problem for more general power series ring over power series ring:\n\n```\nsage: D.<x> = PowerSeriesRing(QQ)\nsage: Ds.<s> = PowerSeriesRing(D)\nsage: O(x)  # inexact zero\nO(x^1)\nsage: Ds(O(x)) # finite precision is lost\n0\nsage: Ds(1+O(x)) # finite precision is retained\n1 + O(x)\n\nsage: 1+O(x)*s # !! this is different from behavior of power series over padic ring\n1\n```\n\nMy hope is that starting with a rebase of this patch would be a step toward solving this problem.  Perhaps it will have to be extended to power series over inexact rings too.  Unfortunately I don't understand the current status of padics well enough to do this rebase myself.",
     "created_at": "2014-02-03T15:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
@@ -203,7 +201,6 @@ David, could you give us a rebase for sage 6.1?  I know you're doing a lot of ot
 
 Here's the specific bug we're trying to track down (in sage 6.1):  Power series over p-adics are changing inexact zeros to exact zeros -- this looks similar to the problem with polynomials on this ticket, but notice that the problem happens even for p-adics:
 
-
 ```
 sage: Ct.<t> = PowerSeriesRing(Qp(11))
 sage: O(11^2) # inexact zero
@@ -213,7 +210,6 @@ sage: Ct(O(11^2)) # coercing to power series ring looses finite precision
 sage: Ct(1+O(11^2)) # finite precision is retained for non-zero elements
 1 + O(11^2)
 ```
-
 
 There is a problem with multiplication of a p-adic by an element of the power series ring, which might be caused by the problem above:
 
@@ -225,9 +221,7 @@ sage: O(11^2)*t  # finite precision is lost
 0
 ```
 
-
 Note that there is a similar problem for more general power series ring over power series ring:
-
 
 ```
 sage: D.<x> = PowerSeriesRing(QQ)
@@ -242,7 +236,6 @@ sage: Ds(1+O(x)) # finite precision is retained
 sage: 1+O(x)*s # !! this is different from behavior of power series over padic ring
 1
 ```
-
 
 My hope is that starting with a rebase of this patch would be a step toward solving this problem.  Perhaps it will have to be extended to power series over inexact rings too.  Unfortunately I don't understand the current status of padics well enough to do this rebase myself.
 

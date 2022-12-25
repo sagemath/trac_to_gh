@@ -3,7 +3,7 @@
 archive/issues_000291.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: multivariate polynomial ring printing\n\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-1*r1\n```\n\n\nThis is tricky.  This is an issue with stacking rings... how does QQ['x']['y'] tell (QQ['x'](-1))*y to print as '-y'?  I don't know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/291\n\n",
+    "body": "Assignee: somebody\n\nKeywords: multivariate polynomial ring printing\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-1*r1\n```\n\nThis is tricky.  This is an issue with stacking rings... how does QQ['x']['y'] tell (QQ['x'](-1))*y to print as '-y'?  I don't know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/291\n\n",
     "created_at": "2007-02-24T05:13:52Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,13 +20,11 @@ Assignee: somebody
 
 Keywords: multivariate polynomial ring printing
 
-
 ```
 sage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']
 sage: R(-r1)
 -1*r1
 ```
-
 
 This is tricky.  This is an issue with stacking rings... how does QQ['x']['y'] tell (QQ['x'](-1))*y to print as '-y'?  I don't know.
 
@@ -59,7 +57,7 @@ Changing assignee from somebody to @ncalexan.
 archive/issue_comments_001367.json:
 ```json
 {
-    "body": "The following demonstrates this nicely:\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 - 3)\n\nsage: L.<b> = K.extension(K['x'].0^2 - 5)\n\nsage: L\n Extension by x^2 + -5 of the Number Field in a with defining polynomial x^2 - 3\n```\n",
+    "body": "The following demonstrates this nicely:\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 - 3)\n\nsage: L.<b> = K.extension(K['x'].0^2 - 5)\n\nsage: L\n Extension by x^2 + -5 of the Number Field in a with defining polynomial x^2 - 3\n```",
     "created_at": "2007-02-25T09:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ archive/issue_comments_001367.json:
 
 The following demonstrates this nicely:
 
-
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^2 - 3)
 
@@ -79,7 +76,6 @@ sage: L.<b> = K.extension(K['x'].0^2 - 5)
 sage: L
  Extension by x^2 + -5 of the Number Field in a with defining polynomial x^2 - 3
 ```
-
 
 
 
@@ -106,7 +102,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_001369.json:
 ```json
 {
-    "body": "nick's xeample is annoying, but it illustrates a completely different problem.\n\nIn any case the original multivariate example no longer fails since singular does the printing.\nHowever this example fails:\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 - 3) \nsage: R.<r1, r0, s1, s2, z> = K['r1', 'r0', 's1', 's2', 'z']\nsage: -r1\n(-1)*r1\n```\n\n\nHowever, since the output is correct, this is not a bug, but an enhancement issue.",
+    "body": "nick's xeample is annoying, but it illustrates a completely different problem.\n\nIn any case the original multivariate example no longer fails since singular does the printing.\nHowever this example fails:\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 - 3) \nsage: R.<r1, r0, s1, s2, z> = K['r1', 'r0', 's1', 's2', 'z']\nsage: -r1\n(-1)*r1\n```\n\nHowever, since the output is correct, this is not a bug, but an enhancement issue.",
     "created_at": "2007-08-18T21:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -120,14 +116,12 @@ nick's xeample is annoying, but it illustrates a completely different problem.
 In any case the original multivariate example no longer fails since singular does the printing.
 However this example fails:
 
-
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^2 - 3) 
 sage: R.<r1, r0, s1, s2, z> = K['r1', 'r0', 's1', 's2', 'z']
 sage: -r1
 (-1)*r1
 ```
-
 
 However, since the output is correct, this is not a bug, but an enhancement issue.
 
@@ -138,7 +132,7 @@ However, since the output is correct, this is not a bug, but an enhancement issu
 archive/issue_comments_001370.json:
 ```json
 {
-    "body": "The original printing issue has been solved by 2.8.1pre:\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-r1\n```\n\nThe points made by was in the replies still apply.\n\nCheers,\n\nMichael",
+    "body": "The original printing issue has been solved by 2.8.1pre:\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-r1\n```\nThe points made by was in the replies still apply.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T13:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -154,7 +148,6 @@ sage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']
 sage: R(-r1)
 -r1
 ```
-
 The points made by was in the replies still apply.
 
 Cheers,
@@ -203,7 +196,7 @@ archive/issue_events_000664.json:
 archive/issue_comments_001372.json:
 ```json
 {
-    "body": "The attached patch fixes this bug and the associated doc-tests.  As an added bonus, it speeds up the str conversion just a little bit too.\n\nBefore patch:\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: len(f.monomials())\n27\nsage: %timeit str(f)\n100 loops, best of 3: 2.85 ms per loop\n```\n\n\nAfter patch:\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: len(f.monomials())\n27\nsage: %timeit str(f)\n100 loops, best of 3: 2.43 ms per loop\n```\n",
+    "body": "The attached patch fixes this bug and the associated doc-tests.  As an added bonus, it speeds up the str conversion just a little bit too.\n\nBefore patch:\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: len(f.monomials())\n27\nsage: %timeit str(f)\n100 loops, best of 3: 2.85 ms per loop\n```\n\nAfter patch:\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: len(f.monomials())\n27\nsage: %timeit str(f)\n100 loops, best of 3: 2.43 ms per loop\n```",
     "created_at": "2008-03-20T12:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
@@ -225,7 +218,6 @@ sage: %timeit str(f)
 100 loops, best of 3: 2.85 ms per loop
 ```
 
-
 After patch:
 
 ```
@@ -236,7 +228,6 @@ sage: len(f.monomials())
 sage: %timeit str(f)
 100 loops, best of 3: 2.43 ms per loop
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008033.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  rkirov\n\n\n```\nHi,\n\nThe new graph editor in sage by Rado is AWESOME.  One can try it\neasily at http://sagenb.org by typing:\n\n g = graphs.CompleteGraph(10)\n graph_editor(g)\n\nThe actual source code is at\n\n  local/lib/python/site-packages/sagenb-0.6-py2.6.egg/sagenb/data/graph_editor/\n\nIt would be *GREAT* if there were a README.txt file in that directory\nthat explained what all the js files actually are, something about how\nthe graph editor works, where the code that does spring layout\ndynamically is located, etc.   I looked at the code for five minutes\nand couldn't deduce answers to any of those questions.\n\nSo, could somebody familiar with the graph editor write something and\npost a patch.  Or just respond to this email with what would go in a\nREADME.txt?   I have two undergrads who might want to work on that\ncode, but it would help a lot of there were some docs.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8033\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  rkirov\n\n```\nHi,\n\nThe new graph editor in sage by Rado is AWESOME.  One can try it\neasily at http://sagenb.org by typing:\n\n g = graphs.CompleteGraph(10)\n graph_editor(g)\n\nThe actual source code is at\n\n  local/lib/python/site-packages/sagenb-0.6-py2.6.egg/sagenb/data/graph_editor/\n\nIt would be *GREAT* if there were a README.txt file in that directory\nthat explained what all the js files actually are, something about how\nthe graph editor works, where the code that does spring layout\ndynamically is located, etc.   I looked at the code for five minutes\nand couldn't deduce answers to any of those questions.\n\nSo, could somebody familiar with the graph editor write something and\npost a patch.  Or just respond to this email with what would go in a\nREADME.txt?   I have two undergrads who might want to work on that\ncode, but it would help a lot of there were some docs.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8033\n\n",
     "created_at": "2010-01-21T22:54:04Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_008033.json:
 Assignee: @williamstein
 
 CC:  rkirov
-
 
 ```
 Hi,
@@ -47,7 +46,6 @@ code, but it would help a lot of there were some docs.
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8033
 
 
@@ -59,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8033
 archive/issue_comments_070046.json:
 ```json
 {
-    "body": "And here is the content (from Mitesh Patel):\n\n```\nThe main files are\n\n       a. sage/graphs/graph_editor.py\n       b. graph_editor.html\n       c. graph_editor.js\n       d. processing.editor.min.js\n\nEvaluating graph_editor(G) (see (a)) in an input cell generates\ncode/markup for an inline frame, which the notebook inserts into the\ncorresponding output cell.  The iframe loads (b) as its content.  In\nturn, (b) draws in jQuery / UI, the layout algorithms in (c), and the\nHTML5 canvas rendering engine in (d).\n\nAccording to\n\n       http://trac.sagemath.org/sage_trac/ticket/1321#comment:31\n\nRado adapted (d) from a project called Processing.js\n\nhttp://processingjs.org/\nhttp://processingjs.org/reference\nhttp://processingjs.org/download\n\nwhose original and minified source files are\n\n       e. processing.js\n       f. processing.min.js\n\nTo make it somewhat easier to understand the differences between (f) and\n(d), I put (d) through a JS \"beautifier\"\n\n       http://jsbeautifier.org/\n\nThe result is\n\n       g. processing.editor.js\n\nBut I decided not to give the same treatment to (e) and attempt to make\na concise diff.\n```\n",
+    "body": "And here is the content (from Mitesh Patel):\n\n```\nThe main files are\n\n       a. sage/graphs/graph_editor.py\n       b. graph_editor.html\n       c. graph_editor.js\n       d. processing.editor.min.js\n\nEvaluating graph_editor(G) (see (a)) in an input cell generates\ncode/markup for an inline frame, which the notebook inserts into the\ncorresponding output cell.  The iframe loads (b) as its content.  In\nturn, (b) draws in jQuery / UI, the layout algorithms in (c), and the\nHTML5 canvas rendering engine in (d).\n\nAccording to\n\n       http://trac.sagemath.org/sage_trac/ticket/1321#comment:31\n\nRado adapted (d) from a project called Processing.js\n\nhttp://processingjs.org/\nhttp://processingjs.org/reference\nhttp://processingjs.org/download\n\nwhose original and minified source files are\n\n       e. processing.js\n       f. processing.min.js\n\nTo make it somewhat easier to understand the differences between (f) and\n(d), I put (d) through a JS \"beautifier\"\n\n       http://jsbeautifier.org/\n\nThe result is\n\n       g. processing.editor.js\n\nBut I decided not to give the same treatment to (e) and attempt to make\na concise diff.\n```",
     "created_at": "2010-01-21T22:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
@@ -111,7 +109,6 @@ The result is
 But I decided not to give the same treatment to (e) and attempt to make
 a concise diff.
 ```
-
 
 
 

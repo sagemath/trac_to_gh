@@ -199,7 +199,7 @@ Rescheduled for January 18th
 archive/issue_comments_035072.json:
 ```json
 {
-    "body": "Needs work, but only minor issues:\n\n```\napplying ../../../patches/twisted_padic_lseries.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #5 FAILED at 4640\n1 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\nabort: patch failed to apply\n```\n\nThat one hunk is only an empty line replacing an empty line (?!?), so could be ignored (and wouldn't prevent a positive review from my side). But there's real work also, some doctest failures:\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/padic_lseries.py\"\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/padic_lseries.py\", line 644:\n    sage: E.quadratic_twist(-19).label()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[22]>\", line 1, in <module>\n        E.quadratic_twist(-Integer(19)).label()###line 644:\n    sage: E.quadratic_twist(-19).label()\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2720, in cremona_label\n        raise RuntimeError, \"Cremona label not known for %s.\"%self\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + y = x^3 - x^2 - 120*x - 2183 over Rational Field.\n**********************************************************************\n1 items had failures:\n   1 of  23 in __main__.example_14\n***Test Failed*** 1 failures.\n```\n\nThe doctest failure above seems to come from that I used a vanilla Sage 3.2.3, and the example seems to need the optional extended Cremona tables --- so just add a \"#optional\" or so.\n\nThere are also a bunch of doctest failures for \"sha_tate.py\", which pop up (only) if the doctest \"-long\" option is used.\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 276:\n    sage: EllipticCurve('123a1').sha().an_padic(41) #rank 1    (long time)\nExpected:\n    1 + O(41)\nGot:\n    40 + O(41)\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 283:\n    sage: EllipticCurve('34a1').sha().an_padic(5) # rank 0     (long time)\nException raised:\n.......\n    sage: EllipticCurve('34a1').sha().an_padic(5) # rank 0     (long time)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 394, in an_padic\n        lps = lp.Dp_valued_series(n,quadratic_twist=D,prec=r+1)\n    TypeError: Dp_valued_series() got an unexpected keyword argument 'quadratic_twist'\n........\n    sage: e.sha().p_primary_bound(7)           # long time\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 458, in p_primary_bound\n        shan = self.an_padic(p,prec = 0,use_twist=True)\n    TypeError: an_padic() got an unexpected keyword argument 'use_twist'\n```\n\nExcept for the first (which might be architecture related, the old file had this doctest with a \"#random\" comment --- I'm using a Mac) all the following \"long\" doctest failures in sha_tate.py just seem to be artifacts from development, easily to be cleaned up.\n\nAll in all: nothing serious, but as-is it can't go in.",
+    "body": "Needs work, but only minor issues:\n\n```\napplying ../../../patches/twisted_padic_lseries.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #5 FAILED at 4640\n1 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\nabort: patch failed to apply\n```\nThat one hunk is only an empty line replacing an empty line (?!?), so could be ignored (and wouldn't prevent a positive review from my side). But there's real work also, some doctest failures:\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/padic_lseries.py\"\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/padic_lseries.py\", line 644:\n    sage: E.quadratic_twist(-19).label()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[22]>\", line 1, in <module>\n        E.quadratic_twist(-Integer(19)).label()###line 644:\n    sage: E.quadratic_twist(-19).label()\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2720, in cremona_label\n        raise RuntimeError, \"Cremona label not known for %s.\"%self\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + y = x^3 - x^2 - 120*x - 2183 over Rational Field.\n**********************************************************************\n1 items had failures:\n   1 of  23 in __main__.example_14\n***Test Failed*** 1 failures.\n```\nThe doctest failure above seems to come from that I used a vanilla Sage 3.2.3, and the example seems to need the optional extended Cremona tables --- so just add a \"#optional\" or so.\n\nThere are also a bunch of doctest failures for \"sha_tate.py\", which pop up (only) if the doctest \"-long\" option is used.\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 276:\n    sage: EllipticCurve('123a1').sha().an_padic(41) #rank 1    (long time)\nExpected:\n    1 + O(41)\nGot:\n    40 + O(41)\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 283:\n    sage: EllipticCurve('34a1').sha().an_padic(5) # rank 0     (long time)\nException raised:\n.......\n    sage: EllipticCurve('34a1').sha().an_padic(5) # rank 0     (long time)\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 394, in an_padic\n        lps = lp.Dp_valued_series(n,quadratic_twist=D,prec=r+1)\n    TypeError: Dp_valued_series() got an unexpected keyword argument 'quadratic_twist'\n........\n    sage: e.sha().p_primary_bound(7)           # long time\n      File \"/Users/georgweber/Public/sage/sage-3.2.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 458, in p_primary_bound\n        shan = self.an_padic(p,prec = 0,use_twist=True)\n    TypeError: an_padic() got an unexpected keyword argument 'use_twist'\n```\nExcept for the first (which might be architecture related, the old file had this doctest with a \"#random\" comment --- I'm using a Mac) all the following \"long\" doctest failures in sha_tate.py just seem to be artifacts from development, easily to be cleaned up.\n\nAll in all: nothing serious, but as-is it can't go in.",
     "created_at": "2009-01-18T23:43:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -217,7 +217,6 @@ Hunk #5 FAILED at 4640
 1 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej
 abort: patch failed to apply
 ```
-
 That one hunk is only an empty line replacing an empty line (?!?), so could be ignored (and wouldn't prevent a positive review from my side). But there's real work also, some doctest failures:
 
 ```
@@ -244,7 +243,6 @@ Exception raised:
    1 of  23 in __main__.example_14
 ***Test Failed*** 1 failures.
 ```
-
 The doctest failure above seems to come from that I used a vanilla Sage 3.2.3, and the example seems to need the optional extended Cremona tables --- so just add a "#optional" or so.
 
 There are also a bunch of doctest failures for "sha_tate.py", which pop up (only) if the doctest "-long" option is used.
@@ -273,7 +271,6 @@ Exception raised:
         shan = self.an_padic(p,prec = 0,use_twist=True)
     TypeError: an_padic() got an unexpected keyword argument 'use_twist'
 ```
-
 Except for the first (which might be architecture related, the old file had this doctest with a "#random" comment --- I'm using a Mac) all the following "long" doctest failures in sha_tate.py just seem to be artifacts from development, easily to be cleaned up.
 
 All in all: nothing serious, but as-is it can't go in.
@@ -505,7 +502,7 @@ Replaces all previous patches.
 archive/issue_comments_035080.json:
 ```json
 {
-    "body": "The latest patch causes doctest failures in two files:\n\n```\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 2 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 6 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "The latest patch causes doctest failures in two files:\n\n```\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 2 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 6 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T23:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -520,7 +517,6 @@ The latest patch causes doctest failures in two files:
 	sage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 2 doctests failed
 	sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 6 doctests failed
 ```
-
 
 Cheers,
 
@@ -590,7 +586,7 @@ archive/issue_events_010687.json:
 archive/issue_comments_035082.json:
 ```json
 {
-    "body": "Replying to [comment:12 GeorgSWeber]:\n> Michael,\n> \n> begging your pardon, but I see none of these doctest failures against vanilla Sage-3.4 on my MacIntel box. I do confirm \"positive review\" (just finished testlong and docbuild)! Let's wait for 3.4.1.alpha and see, I think the reason is that some other patch that went already in your local tree causes this. It should be sorted out easily, once the first 3.4.1.alpha release is out. :-)\n\nThese failures happen against my merge tree, so no point in reinstating the positive review. I would also prefer if William took a look at this patch since he seemed to have written most of the original code.\n\n> Cheers,\n> gsw\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 GeorgSWeber]:\n> Michael,\n> \n> begging your pardon, but I see none of these doctest failures against vanilla Sage-3.4 on my MacIntel box. I do confirm \"positive review\" (just finished testlong and docbuild)! Let's wait for 3.4.1.alpha and see, I think the reason is that some other patch that went already in your local tree causes this. It should be sorted out easily, once the first 3.4.1.alpha release is out. :-)\n\n\nThese failures happen against my merge tree, so no point in reinstating the positive review. I would also prefer if William took a look at this patch since he seemed to have written most of the original code.\n\n> Cheers,\n> gsw\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-26T00:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -604,10 +600,12 @@ Replying to [comment:12 GeorgSWeber]:
 > 
 > begging your pardon, but I see none of these doctest failures against vanilla Sage-3.4 on my MacIntel box. I do confirm "positive review" (just finished testlong and docbuild)! Let's wait for 3.4.1.alpha and see, I think the reason is that some other patch that went already in your local tree causes this. It should be sorted out easily, once the first 3.4.1.alpha release is out. :-)
 
+
 These failures happen against my merge tree, so no point in reinstating the positive review. I would also prefer if William took a look at this patch since he seemed to have written most of the original code.
 
 > Cheers,
 > gsw
+
 
 Cheers,
 
@@ -654,7 +652,7 @@ archive/issue_events_010689.json:
 archive/issue_comments_035083.json:
 ```json
 {
-    "body": "Uh oh.\n\nNo offense meant, I was just too excited so I started the review after midnight.\n\nAnd sorry, my fault, I re-checked my setup and it seems that somehow I had forgotten a \"sage -b\" in the course. I do see the failures against vanilla sage-3.4, and they seem to be severe:\n\n```\nFile \"/Users/georgweber/Public/sage/sage-3.4/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 5164:\n    sage: [P[0] for P in EllipticCurve([0,0,0,-468,2592]).integral_points()]\nExpected:\n    [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, 1476, 2034, 67246]\nGot:\n    [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186]\n```\n\nand most of the other failed doctests also point to missing integral points. There had been a patch of John (IIRC) that had healed an issue with this, and the current patch of Chris seems to miss these parts (more precisely seems to revert the code to the old buggy state).\n\nAs a by-result, this means that I definitely shouldn't try to review patches without being well-rested. Which probably means I won't be able to do reviews at all. :-((( \n\nCheers,\ngsw",
+    "body": "Uh oh.\n\nNo offense meant, I was just too excited so I started the review after midnight.\n\nAnd sorry, my fault, I re-checked my setup and it seems that somehow I had forgotten a \"sage -b\" in the course. I do see the failures against vanilla sage-3.4, and they seem to be severe:\n\n```\nFile \"/Users/georgweber/Public/sage/sage-3.4/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 5164:\n    sage: [P[0] for P in EllipticCurve([0,0,0,-468,2592]).integral_points()]\nExpected:\n    [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, 1476, 2034, 67246]\nGot:\n    [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186]\n```\nand most of the other failed doctests also point to missing integral points. There had been a patch of John (IIRC) that had healed an issue with this, and the current patch of Chris seems to miss these parts (more precisely seems to revert the code to the old buggy state).\n\nAs a by-result, this means that I definitely shouldn't try to review patches without being well-rested. Which probably means I won't be able to do reviews at all. :-((( \n\nCheers,\ngsw",
     "created_at": "2009-03-26T00:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -677,7 +675,6 @@ Expected:
 Got:
     [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186]
 ```
-
 and most of the other failed doctests also point to missing integral points. There had been a patch of John (IIRC) that had healed an issue with this, and the current patch of Chris seems to miss these parts (more precisely seems to revert the code to the old buggy state).
 
 As a by-result, this means that I definitely shouldn't try to review patches without being well-rested. Which probably means I won't be able to do reviews at all. :-((( 
@@ -692,7 +689,7 @@ gsw
 archive/issue_comments_035084.json:
 ```json
 {
-    "body": "Uiuiui, I am sorry that was quite bad. I did not merge well ell_rational_field. \n\nI add another patch that should be applied after the previous. \nIt looks to me as if everything passes now. Except\n\n\n```\nFile \"/maths/staff/pmzcw/Desktop/sage/twists/elliptic_curves/ell_rational_field.py\", line 3096:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n```\n\n\nbut this is due to having installed the optional package. I still don't know if there is a way to include a test only if the optional package is NOT there. But anyway that is not in my code.",
+    "body": "Uiuiui, I am sorry that was quite bad. I did not merge well ell_rational_field. \n\nI add another patch that should be applied after the previous. \nIt looks to me as if everything passes now. Except\n\n```\nFile \"/maths/staff/pmzcw/Desktop/sage/twists/elliptic_curves/ell_rational_field.py\", line 3096:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n```\n\nbut this is due to having installed the optional package. I still don't know if there is a way to include a test only if the optional package is NOT there. But anyway that is not in my code.",
     "created_at": "2009-03-26T15:03:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
@@ -706,7 +703,6 @@ Uiuiui, I am sorry that was quite bad. I did not merge well ell_rational_field.
 I add another patch that should be applied after the previous. 
 It looks to me as if everything passes now. Except
 
-
 ```
 File "/maths/staff/pmzcw/Desktop/sage/twists/elliptic_curves/ell_rational_field.py", line 3096:
     sage: E.cremona_label()
@@ -717,7 +713,6 @@ Expected:
 Got:
     '10351a1'
 ```
-
 
 but this is due to having installed the optional package. I still don't know if there is a way to include a test only if the optional package is NOT there. But anyway that is not in my code.
 

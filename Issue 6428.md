@@ -98,7 +98,7 @@ Changing component from algebra to commutative algebra.
 archive/issue_comments_051524.json:
 ```json
 {
-    "body": "This is still a bug.   Ick!\n\n\n```\nsage: R.<y,z> =Frac(QQ['x'])[]\nsage: y^(2^32)\n1\nsage: y^(2^32-1)\ny^-1\nsage: y^(2^31)\ny^-2147483648\n```\n",
+    "body": "This is still a bug.   Ick!\n\n```\nsage: R.<y,z> =Frac(QQ['x'])[]\nsage: y^(2^32)\n1\nsage: y^(2^32-1)\ny^-1\nsage: y^(2^31)\ny^-2147483648\n```",
     "created_at": "2010-01-18T01:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ archive/issue_comments_051524.json:
 ```
 
 This is still a bug.   Ick!
-
 
 ```
 sage: R.<y,z> =Frac(QQ['x'])[]
@@ -122,13 +121,12 @@ y^-2147483648
 
 
 
-
 ---
 
 archive/issue_comments_051525.json:
 ```json
 {
-    "body": "Here is better input to replicate what is at the core of the problem:\n\n```\nsage: a = sage.rings.polynomial.polydict.PolyDict({(2147483647r,):1r})\nsage: a*a\nPolyDict with representation {(-2,): 1}\n```\n",
+    "body": "Here is better input to replicate what is at the core of the problem:\n\n```\nsage: a = sage.rings.polynomial.polydict.PolyDict({(2147483647r,):1r})\nsage: a*a\nPolyDict with representation {(-2,): 1}\n```",
     "created_at": "2010-01-18T09:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -144,7 +142,6 @@ sage: a = sage.rings.polynomial.polydict.PolyDict({(2147483647r,):1r})
 sage: a*a
 PolyDict with representation {(-2,): 1}
 ```
-
 
 
 
@@ -207,7 +204,7 @@ This patch simply reports an error if this happens. I thought the polydict ring 
 archive/issue_comments_051529.json:
 ```json
 {
-    "body": "> This patch simply reports an error if this happens. I thought the polydict\n> ring was supposed to allow arbitrary precision exponents. \n\nSince in the entire Cython implementation of polydict, the exponents are represented internally as C ints there is no way it is supposed to represent arbitrary precision exponents.   One could write something that does arbitrary exponents, but that ETuple stuff simply isn't such a thing.",
+    "body": "> This patch simply reports an error if this happens. I thought the polydict\n> ring was supposed to allow arbitrary precision exponents. \n\n\nSince in the entire Cython implementation of polydict, the exponents are represented internally as C ints there is no way it is supposed to represent arbitrary precision exponents.   One could write something that does arbitrary exponents, but that ETuple stuff simply isn't such a thing.",
     "created_at": "2010-01-18T22:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -219,6 +216,7 @@ archive/issue_comments_051529.json:
 > This patch simply reports an error if this happens. I thought the polydict
 > ring was supposed to allow arbitrary precision exponents. 
 
+
 Since in the entire Cython implementation of polydict, the exponents are represented internally as C ints there is no way it is supposed to represent arbitrary precision exponents.   One could write something that does arbitrary exponents, but that ETuple stuff simply isn't such a thing.
 
 
@@ -228,7 +226,7 @@ Since in the entire Cython implementation of polydict, the exponents are represe
 archive/issue_comments_051530.json:
 ```json
 {
-    "body": "By the way, for basic arithmetic, the symbolic ring supports arbitrary exponents. \n\n\n```\nsage: var('y')\ny\nsage: y^(2^32)\ny^4294967296\nsage: y^(2^50)\ny^1125899906842624\nsage: y^(2^50+y)\ny^(y + 1125899906842624)\n```\n",
+    "body": "By the way, for basic arithmetic, the symbolic ring supports arbitrary exponents. \n\n```\nsage: var('y')\ny\nsage: y^(2^32)\ny^4294967296\nsage: y^(2^50)\ny^1125899906842624\nsage: y^(2^50+y)\ny^(y + 1125899906842624)\n```",
     "created_at": "2010-01-18T22:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
@@ -238,7 +236,6 @@ archive/issue_comments_051530.json:
 ```
 
 By the way, for basic arithmetic, the symbolic ring supports arbitrary exponents. 
-
 
 ```
 sage: var('y')
@@ -250,7 +247,6 @@ y^1125899906842624
 sage: y^(2^50+y)
 y^(y + 1125899906842624)
 ```
-
 
 
 

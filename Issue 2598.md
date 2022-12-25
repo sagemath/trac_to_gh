@@ -3,7 +3,7 @@
 archive/issues_002598.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis works for some time now:\n\n\n```\nsage: ZZ([1,0], 2)\n1\n```\n\n\nand after the patch this also works:\n\n\n```\nsage: ZZ([GF(2)(1),GF(2)(0)], 2)\n1\n```\n\n\nIt is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2598\n\n",
+    "body": "Assignee: somebody\n\nThis works for some time now:\n\n```\nsage: ZZ([1,0], 2)\n1\n```\n\nand after the patch this also works:\n\n```\nsage: ZZ([GF(2)(1),GF(2)(0)], 2)\n1\n```\n\nIt is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2598\n\n",
     "created_at": "2008-03-19T16:04:10Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,21 +20,17 @@ Assignee: somebody
 
 This works for some time now:
 
-
 ```
 sage: ZZ([1,0], 2)
 1
 ```
 
-
 and after the patch this also works:
-
 
 ```
 sage: ZZ([GF(2)(1),GF(2)(0)], 2)
 1
 ```
-
 
 It is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.
 

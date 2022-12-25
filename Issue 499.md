@@ -3,7 +3,7 @@
 archive/issues_000499.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nReported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb\n\n\n```\nx = 1/2\nx.n()\n\nException (click to the left for traceback):\n...\nAttributeError: 'sage.rings.rational.Rational' object has no attribute 'n' \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/499\n\n",
+    "body": "Assignee: somebody\n\nReported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb\n\n```\nx = 1/2\nx.n()\n\nException (click to the left for traceback):\n...\nAttributeError: 'sage.rings.rational.Rational' object has no attribute 'n' \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/499\n\n",
     "created_at": "2007-08-28T17:45:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 Reported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb
 
-
 ```
 x = 1/2
 x.n()
@@ -29,7 +28,6 @@ Exception (click to the left for traceback):
 ...
 AttributeError: 'sage.rings.rational.Rational' object has no attribute 'n' 
 ```
-
 
 Cheers,
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/499
 archive/issue_comments_002486.json:
 ```json
 {
-    "body": "This is done, but it's capital N:\n\n```\nsage: x = 1/2\nsage: x.N()\n0.500000000000000\n```\n",
+    "body": "This is done, but it's capital N:\n\n```\nsage: x = 1/2\nsage: x.N()\n0.500000000000000\n```",
     "created_at": "2007-08-31T21:06:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/499",
     "type": "issue_comment",
@@ -62,7 +60,6 @@ sage: x = 1/2
 sage: x.N()
 0.500000000000000
 ```
-
 
 
 

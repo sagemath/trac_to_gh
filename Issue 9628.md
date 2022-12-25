@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9628
 archive/issue_comments_093152.json:
 ```json
 {
-    "body": "This is apparently resolved (perhaps it was a pre-mathjax issue), but I think that there *is* a very minor thing that in the live documentation the two equations in the system  somehow are typeset directly next to each other.\n\n```\n\n.. math::\n\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n\n```\n\nsomehow isn't rendering properly.",
+    "body": "This is apparently resolved (perhaps it was a pre-mathjax issue), but I think that there *is* a very minor thing that in the live documentation the two equations in the system  somehow are typeset directly next to each other.\n\n```\n\n.. math::\n\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n\n```\nsomehow isn't rendering properly.",
     "created_at": "2014-11-20T16:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9628",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ This is apparently resolved (perhaps it was a pre-mathjax issue), but I think th
     m_2 x_2''+ k_2 (x_2-x_1) = 0,
 
 ```
-
 somehow isn't rendering properly.
 
 

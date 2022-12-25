@@ -3,7 +3,7 @@
 archive/issues_006053.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nKeywords: numpy, cython, notebook\n\nin a notebook cell with\n\n\n\n```\n%cython\ncimport numpy as np\n```\n\n\nan error is thrown because numpy/arrayobject.h isn't found by gcc.  No directive for the numpy include directories is part of the compiler invocation.\n\nthe header path is:\n\n$SAGE_LOCAL/lib/python2.5/site-packages/numpy/core/include/numpy/arrayobject.h\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6053\n\n",
+    "body": "Assignee: jkantor\n\nKeywords: numpy, cython, notebook\n\nin a notebook cell with\n\n\n```\n%cython\ncimport numpy as np\n```\n\nan error is thrown because numpy/arrayobject.h isn't found by gcc.  No directive for the numpy include directories is part of the compiler invocation.\n\nthe header path is:\n\n$SAGE_LOCAL/lib/python2.5/site-packages/numpy/core/include/numpy/arrayobject.h\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6053\n\n",
     "created_at": "2009-05-17T04:44:56Z",
     "labels": [
         "component: numerical",
@@ -24,12 +24,10 @@ Keywords: numpy, cython, notebook
 in a notebook cell with
 
 
-
 ```
 %cython
 cimport numpy as np
 ```
-
 
 an error is thrown because numpy/arrayobject.h isn't found by gcc.  No directive for the numpy include directories is part of the compiler invocation.
 

@@ -3,7 +3,7 @@
 archive/issues_008897.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: a = 170*units.mass.pound\nsage: a.convert(units.mass.drachma)\n```\n\ngives\n\n```\nTypeError: unable to convert x (=kilogram) to an integer\n```\n\ndespite 1 drachma is 0.00429234 kilograms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8897\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: a = 170*units.mass.pound\nsage: a.convert(units.mass.drachma)\n```\ngives\n\n```\nTypeError: unable to convert x (=kilogram) to an integer\n```\ndespite 1 drachma is 0.00429234 kilograms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8897\n\n",
     "created_at": "2010-05-05T21:27:48Z",
     "labels": [
         "component: symbolics",
@@ -18,18 +18,15 @@ archive/issues_008897.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: a = 170*units.mass.pound
 sage: a.convert(units.mass.drachma)
 ```
-
 gives
 
 ```
 TypeError: unable to convert x (=kilogram) to an integer
 ```
-
 despite 1 drachma is 0.00429234 kilograms.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8897
@@ -43,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8897
 archive/issue_comments_081689.json:
 ```json
 {
-    "body": "Same is true for other units of mass or time, that contains tuples in unitdict:\n\n\n```\nsage: sage.symbolic.units.unitdict['mass']['obol']\n\"(0.000715380000000000,{'greek':1/6})\"\nsage: sage.symbolic.units.unitdict['mass']['drachma']\n\"(0.00429234000000000, {'greek':1})\"\nsage: sage.symbolic.units.unitdict['mass']['mina']   \n\"(0.429234000000000, {'greek':100})\"\nsage: sage.symbolic.units.unitdict['mass']['talent']\n\"(25.7540400000000, {'greek':6000})\"\nsage: sage.symbolic.units.unitdict['time']['sidereal_second']\n\"(0.997269566329086, {'sidereal':1})\"\nsage: sage.symbolic.units.unitdict['time']['sidereal_day']\n\"(86164.0905308330, {'sidereal':86400})\"\n```\n\nall those result in same \"unable to convert x to an integer\", coming from:\n\n```\nsage: sage.symbolic.units.base_units(units.time.sidereal_second)\n```\n",
+    "body": "Same is true for other units of mass or time, that contains tuples in unitdict:\n\n```\nsage: sage.symbolic.units.unitdict['mass']['obol']\n\"(0.000715380000000000,{'greek':1/6})\"\nsage: sage.symbolic.units.unitdict['mass']['drachma']\n\"(0.00429234000000000, {'greek':1})\"\nsage: sage.symbolic.units.unitdict['mass']['mina']   \n\"(0.429234000000000, {'greek':100})\"\nsage: sage.symbolic.units.unitdict['mass']['talent']\n\"(25.7540400000000, {'greek':6000})\"\nsage: sage.symbolic.units.unitdict['time']['sidereal_second']\n\"(0.997269566329086, {'sidereal':1})\"\nsage: sage.symbolic.units.unitdict['time']['sidereal_day']\n\"(86164.0905308330, {'sidereal':86400})\"\n```\nall those result in same \"unable to convert x to an integer\", coming from:\n\n```\nsage: sage.symbolic.units.base_units(units.time.sidereal_second)\n```",
     "created_at": "2012-08-09T11:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8897",
     "type": "issue_comment",
@@ -53,7 +50,6 @@ archive/issue_comments_081689.json:
 ```
 
 Same is true for other units of mass or time, that contains tuples in unitdict:
-
 
 ```
 sage: sage.symbolic.units.unitdict['mass']['obol']
@@ -69,13 +65,11 @@ sage: sage.symbolic.units.unitdict['time']['sidereal_second']
 sage: sage.symbolic.units.unitdict['time']['sidereal_day']
 "(86164.0905308330, {'sidereal':86400})"
 ```
-
 all those result in same "unable to convert x to an integer", coming from:
 
 ```
 sage: sage.symbolic.units.base_units(units.time.sidereal_second)
 ```
-
 
 
 

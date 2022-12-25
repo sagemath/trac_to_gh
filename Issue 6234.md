@@ -3,7 +3,7 @@
 archive/issues_006234.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @mwhansen @ncalexan\n\nJust get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:\n\n\n```\n        # See if we're trying out the experimental parallel build\n        # code.\n        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6234\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @mwhansen @ncalexan\n\nJust get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:\n\n```\n        # See if we're trying out the experimental parallel build\n        # code.\n        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6234\n\n",
     "created_at": "2009-06-06T16:47:27Z",
     "labels": [
         "component: build"
@@ -21,13 +21,11 @@ CC:  @mwhansen @ncalexan
 
 Just get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:
 
-
 ```
         # See if we're trying out the experimental parallel build
         # code.
         if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6234
 
@@ -112,7 +110,7 @@ This wasn't showing up in the "needs review" list, because that does a text sear
 archive/issue_comments_049644.json:
 ```json
 {
-    "body": "I can't say for certain that this is at fault, but this was from the build of 4.0.2.alpha0 on sage.math:\n\n\n```\n...\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix2.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix2.o -w\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pEX.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lcsage \\\n-lntl -lgmp -lgmpxx -lm -lstdc++ -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pEX.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local/lib/python2.5/si\\\nte-packages/numpy/core/include -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//inc\\\nlude/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local/include/python2.5 \\\n-c sage/matrix/matrix_complex_double_dense.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.o -w\ngcc -pthread -shared build/temp.linux-x86_64-2.5/sage/matrix/action.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lstdc++ -lntl\\\n -o build/lib.linux-x86_64-2.5/sage/matrix/action.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix_cyclo_dense.cpp -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_cyclo_dense.\\\no -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -pthread -shared build/temp.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -\\\nlcsage -lcblas -latlas -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix_dense.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_dense.o -w\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pX.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lcsage -\\\nlntl -lgmp -lgmpxx -lm -lstdc++ -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pX.so\nerror: could not create 'build/temp.linux-x86_64-2.5/sage/matrix': File exists\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n...\n```\n",
+    "body": "I can't say for certain that this is at fault, but this was from the build of 4.0.2.alpha0 on sage.math:\n\n```\n...\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix2.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix2.o -w\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pEX.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lcsage \\\n-lntl -lgmp -lgmpxx -lm -lstdc++ -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pEX.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local/lib/python2.5/si\\\nte-packages/numpy/core/include -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//inc\\\nlude/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local/include/python2.5 \\\n-c sage/matrix/matrix_complex_double_dense.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.o -w\ngcc -pthread -shared build/temp.linux-x86_64-2.5/sage/matrix/action.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lstdc++ -lntl\\\n -o build/lib.linux-x86_64-2.5/sage/matrix/action.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix_cyclo_dense.cpp -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_cyclo_dense.\\\no -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -pthread -shared build/temp.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -\\\nlcsage -lcblas -latlas -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/matrix/matrix_complex_double_dense.so\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//include -I/scra\\\ntch/ncalexan/releases/sage-4.0.2.alpha0/local//include/csage -I/scratch/ncalexan/releases/sage-4.0.2.alpha0/devel//sage/sage/ext -I/scratch/ncalexan/r\\\neleases/sage-4.0.2.alpha0/local/include/python2.5 -c sage/matrix/matrix_dense.c -o build/temp.linux-x86_64-2.5/sage/matrix/matrix_dense.o -w\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pX.o -L/scratch/ncalexan/releases/sage-4.0.2.alpha0/local//lib -lcsage -lcsage -\\\nlntl -lgmp -lgmpxx -lm -lstdc++ -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/libs/ntl/ntl_ZZ_pX.so\nerror: could not create 'build/temp.linux-x86_64-2.5/sage/matrix': File exists\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n...\n```",
     "created_at": "2009-06-11T20:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
@@ -122,7 +120,6 @@ archive/issue_comments_049644.json:
 ```
 
 I can't say for certain that this is at fault, but this was from the build of 4.0.2.alpha0 on sage.math:
-
 
 ```
 ...
@@ -155,7 +152,6 @@ sage: There was an error installing modified sage library code.
 ERROR installing SAGE
 ...
 ```
-
 
 
 

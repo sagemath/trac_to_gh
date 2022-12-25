@@ -3,7 +3,7 @@
 archive/issues_005467.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
+    "body": "Assignee: @mwhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
     "created_at": "2009-03-10T18:03:16Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +20,6 @@ Assignee: @mwhansen
 
 ON OS X and Linux with Macaulay 1.2.
 
-
 ```
 teragon:~ wstein$ sage
 ----------------------------------------------------------------------
@@ -32,7 +31,6 @@ sage1
 sage: macaulay2(10^10000)
 sage2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5467
 

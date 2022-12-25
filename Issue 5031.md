@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5031
 archive/issue_comments_038246.json:
 ```json
 {
-    "body": "Some timings\n\n```\nBEFORE:\nsage: a = random_matrix(GF(19),500)\nsage: time b = a.lift()\nCPU times: user 0.93 s, sys: 0.02 s, total: 0.95 s\nWall time: 0.96 s\nsage: a = random_matrix(GF(19),200,sparse=True)\nsage: time b = a.lift()\nCPU times: user 0.81 s, sys: 0.01 s, total: 0.82 s\nWall time: 0.82 s\n\nAFTER:\nsage: a = random_matrix(GF(19),500)\nsage: time b = a.lift()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.04 s\nsage: a = random_matrix(GF(19),200,sparse=True)\nsage: time b = a.lift()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04 s\nsage: 0.82/0.04\n20.5000000000000\n```\n",
+    "body": "Some timings\n\n```\nBEFORE:\nsage: a = random_matrix(GF(19),500)\nsage: time b = a.lift()\nCPU times: user 0.93 s, sys: 0.02 s, total: 0.95 s\nWall time: 0.96 s\nsage: a = random_matrix(GF(19),200,sparse=True)\nsage: time b = a.lift()\nCPU times: user 0.81 s, sys: 0.01 s, total: 0.82 s\nWall time: 0.82 s\n\nAFTER:\nsage: a = random_matrix(GF(19),500)\nsage: time b = a.lift()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.04 s\nsage: a = random_matrix(GF(19),200,sparse=True)\nsage: time b = a.lift()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04 s\nsage: 0.82/0.04\n20.5000000000000\n```",
     "created_at": "2009-01-20T05:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ Wall time: 0.04 s
 sage: 0.82/0.04
 20.5000000000000
 ```
-
 
 
 

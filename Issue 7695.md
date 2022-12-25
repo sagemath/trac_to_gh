@@ -3,7 +3,7 @@
 archive/issues_007695.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nKeywords: cyclotomic fields, subfields\n\n\n```\nsage: F = CyclotomicField(7)\nsage: K = F.subfields(3)[0][0]\nsage: K\nNumber Field in zeta70 with defining polynomial x^3 + x^2 - 2*x - 1\n```\n\n\nI think this convention of adding a 0 to the variable name, as nice and practicle as it is in general, is not good in this case. The resulting algebraic element is not a 70th root of unity as the name would suggest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7695\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: cyclotomic fields, subfields\n\n```\nsage: F = CyclotomicField(7)\nsage: K = F.subfields(3)[0][0]\nsage: K\nNumber Field in zeta70 with defining polynomial x^3 + x^2 - 2*x - 1\n```\n\nI think this convention of adding a 0 to the variable name, as nice and practicle as it is in general, is not good in this case. The resulting algebraic element is not a 70th root of unity as the name would suggest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7695\n\n",
     "created_at": "2009-12-16T00:33:08Z",
     "labels": [
         "component: number fields",
@@ -21,14 +21,12 @@ Assignee: @loefflerd
 
 Keywords: cyclotomic fields, subfields
 
-
 ```
 sage: F = CyclotomicField(7)
 sage: K = F.subfields(3)[0][0]
 sage: K
 Number Field in zeta70 with defining polynomial x^3 + x^2 - 2*x - 1
 ```
-
 
 I think this convention of adding a 0 to the variable name, as nice and practicle as it is in general, is not good in this case. The resulting algebraic element is not a 70th root of unity as the name would suggest.
 
@@ -262,7 +260,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065911.json:
 ```json
 {
-    "body": "Replying to [comment:13 wuthrich]:\n> a little bit annoying that the push resets the dependency again. what did i do wrong ?\n`sage --dev` has its own local version of the dependencies.  I think that when the local and remote dependencies are different, it is supposed to ask if you want to upload or download the dependency list or to leave the two lists different.",
+    "body": "Replying to [comment:13 wuthrich]:\n> a little bit annoying that the push resets the dependency again. what did i do wrong ?\n\n`sage --dev` has its own local version of the dependencies.  I think that when the local and remote dependencies are different, it is supposed to ask if you want to upload or download the dependency list or to leave the two lists different.",
     "created_at": "2013-12-30T21:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
@@ -273,6 +271,7 @@ archive/issue_comments_065911.json:
 
 Replying to [comment:13 wuthrich]:
 > a little bit annoying that the push resets the dependency again. what did i do wrong ?
+
 `sage --dev` has its own local version of the dependencies.  I think that when the local and remote dependencies are different, it is supposed to ask if you want to upload or download the dependency list or to leave the two lists different.
 
 

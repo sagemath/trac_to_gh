@@ -51,7 +51,7 @@ Attachment [trac-5023.patch](tarball://root/attachments/some-uuid/ticket5023/tra
 archive/issue_comments_038184.json:
 ```json
 {
-    "body": "The attachment fixes the above typo and two more. However for the last one (tahn -> tanh) I am\nconcerned about the fact that there was no doctest for the corresponding function.\n\n```\nsage: a=tanh(2)\nsage: a._algebraic_(QQbar)\n...\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\n\nDid I something wrong? If not, a new ticket should be opened.",
+    "body": "The attachment fixes the above typo and two more. However for the last one (tahn -> tanh) I am\nconcerned about the fact that there was no doctest for the corresponding function.\n\n```\nsage: a=tanh(2)\nsage: a._algebraic_(QQbar)\n...\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\nDid I something wrong? If not, a new ticket should be opened.",
     "created_at": "2009-01-19T21:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5023",
     "type": "issue_comment",
@@ -69,7 +69,6 @@ sage: a._algebraic_(QQbar)
 ...
 TypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational
 ```
-
 Did I something wrong? If not, a new ticket should be opened.
 
 
@@ -79,7 +78,7 @@ Did I something wrong? If not, a new ticket should be opened.
 archive/issue_comments_038185.json:
 ```json
 {
-    "body": "The patch corrected the typos, so a positive review.\n\nBut still\n\n\n```\n[jaap@paix sage-3.3.alpha4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3.alpha5, Release Date: 2009-02-03                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a=tanh(2)\n\nsage: a._algebraic_(QQbar)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\n\n\nSomeone more knowledgeable should decide to open a new ticket or not.\n\nJaap",
+    "body": "The patch corrected the typos, so a positive review.\n\nBut still\n\n```\n[jaap@paix sage-3.3.alpha4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3.alpha5, Release Date: 2009-02-03                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a=tanh(2)\n\nsage: a._algebraic_(QQbar)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\n\nSomeone more knowledgeable should decide to open a new ticket or not.\n\nJaap",
     "created_at": "2009-02-05T15:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5023",
     "type": "issue_comment",
@@ -91,7 +90,6 @@ archive/issue_comments_038185.json:
 The patch corrected the typos, so a positive review.
 
 But still
-
 
 ```
 [jaap@paix sage-3.3.alpha4]$ ./sage
@@ -108,7 +106,6 @@ TypeError                                 Traceback (most recent call last)
 [...]
 TypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational
 ```
-
 
 Someone more knowledgeable should decide to open a new ticket or not.
 

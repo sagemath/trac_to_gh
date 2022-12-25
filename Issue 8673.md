@@ -3,7 +3,7 @@
 archive/issues_008673.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n\n```\nLe 10-02-23, Paul Zimmermann a \u00e9crit :\n\nsage: def f(n):\n   return n^2\n\nsage: w = Word(f,length=23)\n\nsage: w[24]\n576\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8673\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n```\nLe 10-02-23, Paul Zimmermann a \u00e9crit :\n\nsage: def f(n):\n   return n^2\n\nsage: w = Word(f,length=23)\n\nsage: w[24]\n576\n\nPaul\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8673\n\n",
     "created_at": "2010-04-11T14:00:57Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +20,6 @@ Assignee: @seblabbe
 
 CC:  abmasse
 
-
 ```
 Le 10-02-23, Paul Zimmermann a écrit :
 
@@ -34,7 +33,6 @@ sage: w[24]
 
 Paul
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8673
 

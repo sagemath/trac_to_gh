@@ -3,7 +3,7 @@
 archive/issues_002991.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nThe following happens some of the time (though not always).  I'm guessing the fix is to\nallow for more possibilities in the output?\n\n\n```\nsage@modular:~/build/sage-3.0.rc1$ ./sage -t devel/sage/sage/dsage/tests/testdoc.py\nsage -t  devel/sage/sage/dsage/tests/testdoc.py             **********************************************************************\nFile \"/home2/sage/build/sage-3.0.rc1/tmp/testdoc.py\", line 46:\n    sage: reactor.callFromThread(reactor.stop)\nExpected nothing\nGot:\n    [DSage] Closed connection to localhost\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.rc1/tmp/testdoc.py\", line 47:\n    sage: d._dsage_thread.join()\nExpected:\n    [DSage] Closed connection to localhost\nGot nothing\n**********************************************************************\n1 items had failures:\n   2 of  23 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home2/sage/build/sage-3.0.rc1/tmp/.doctest_testdoc.py\n         [20.0 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/dsage/tests/testdoc.py\nTotal time for all tests: 20.0 seconds\nsage@modular:~/build/sage-3.0.rc1$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2991\n\n",
+    "body": "Assignee: @yqiang\n\nThe following happens some of the time (though not always).  I'm guessing the fix is to\nallow for more possibilities in the output?\n\n```\nsage@modular:~/build/sage-3.0.rc1$ ./sage -t devel/sage/sage/dsage/tests/testdoc.py\nsage -t  devel/sage/sage/dsage/tests/testdoc.py             **********************************************************************\nFile \"/home2/sage/build/sage-3.0.rc1/tmp/testdoc.py\", line 46:\n    sage: reactor.callFromThread(reactor.stop)\nExpected nothing\nGot:\n    [DSage] Closed connection to localhost\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.rc1/tmp/testdoc.py\", line 47:\n    sage: d._dsage_thread.join()\nExpected:\n    [DSage] Closed connection to localhost\nGot nothing\n**********************************************************************\n1 items had failures:\n   2 of  23 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home2/sage/build/sage-3.0.rc1/tmp/.doctest_testdoc.py\n         [20.0 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/dsage/tests/testdoc.py\nTotal time for all tests: 20.0 seconds\nsage@modular:~/build/sage-3.0.rc1$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2991\n\n",
     "created_at": "2008-04-21T16:49:02Z",
     "labels": [
         "component: dsage",
@@ -21,7 +21,6 @@ Assignee: @yqiang
 
 The following happens some of the time (though not always).  I'm guessing the fix is to
 allow for more possibilities in the output?
-
 
 ```
 sage@modular:~/build/sage-3.0.rc1$ ./sage -t devel/sage/sage/dsage/tests/testdoc.py
@@ -53,7 +52,6 @@ The following tests failed:
 Total time for all tests: 20.0 seconds
 sage@modular:~/build/sage-3.0.rc1$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2991
 

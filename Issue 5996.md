@@ -239,7 +239,7 @@ The patches need to be applied in the order they appear on the ticket.
 archive/issue_comments_047611.json:
 ```json
 {
-    "body": "I'm reviewing the coding style and docstring formatting. Here are some problems I notice with the coding style:\n1. It doesn't follow many of the coding conventions in the [Developers' Guide](http://www.sagemath.org/doc/developer/conventions.html). In particular, don't use camel case for function name. The following functions are currently in camel case: `Wigner3j`, `ClebschGordan`, `_bigDeltacoeff`, `Racah`, `Wigner6j`, `Wigner9j`, `Gaunt`.\n2. The Python code is mostly squashed together and makes little use of white space. For example, instead of writing a function signature like this:\n\n```\ndef _bigDeltacoeff(aa,bb,cc,prec=None):\n```\n\n it should be written as follows:\n\n```\ndef _big_delta_coeff(aa, bb, cc, prec=None):\n```\n\n which makes use of white space so it doesn't look like code is squashed together. Another example, don't do this\n\n```\nif(int(aa+bb-cc)!=(aa+bb-cc)):\n```\n\n Instead, write it like this:\n\n```\nif int(aa + bb - cc) != (aa + bb - cc):\n```\n\n This means that the whole module needs to be reformatted to make use of white space.\n1. The docstring of some functions don't follow the guidelines [here](http://www.sagemath.org/doc/developer/conventions.html#docstring-content). In particular, the docstring should be organized with the following two items first:\n   1. A one-sentence description of the function, followed by a blank line.\n   2. An INPUT and an OUTPUT block for input and output arguments (see below for format). The type names should be descriptive, but do not have to represent the exact Sage/Python types. For example, use \u201cinteger\u201d for anything that behaves like an integer; you do not have to put a precise type name such as int.\n\nIf no one beats me to it, I'll upload a patch to address the issues I raised above.",
+    "body": "I'm reviewing the coding style and docstring formatting. Here are some problems I notice with the coding style:\n1. It doesn't follow many of the coding conventions in the [Developers' Guide](http://www.sagemath.org/doc/developer/conventions.html). In particular, don't use camel case for function name. The following functions are currently in camel case: `Wigner3j`, `ClebschGordan`, `_bigDeltacoeff`, `Racah`, `Wigner6j`, `Wigner9j`, `Gaunt`.\n2. The Python code is mostly squashed together and makes little use of white space. For example, instead of writing a function signature like this:\n\n```\ndef _bigDeltacoeff(aa,bb,cc,prec=None):\n```\n it should be written as follows:\n\n```\ndef _big_delta_coeff(aa, bb, cc, prec=None):\n```\n which makes use of white space so it doesn't look like code is squashed together. Another example, don't do this\n\n```\nif(int(aa+bb-cc)!=(aa+bb-cc)):\n```\n Instead, write it like this:\n\n```\nif int(aa + bb - cc) != (aa + bb - cc):\n```\n This means that the whole module needs to be reformatted to make use of white space.\n1. The docstring of some functions don't follow the guidelines [here](http://www.sagemath.org/doc/developer/conventions.html#docstring-content). In particular, the docstring should be organized with the following two items first:\n   1. A one-sentence description of the function, followed by a blank line.\n   2. An INPUT and an OUTPUT block for input and output arguments (see below for format). The type names should be descriptive, but do not have to represent the exact Sage/Python types. For example, use \u201cinteger\u201d for anything that behaves like an integer; you do not have to put a precise type name such as int.\n\nIf no one beats me to it, I'll upload a patch to address the issues I raised above.",
     "created_at": "2009-07-11T13:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -255,25 +255,21 @@ I'm reviewing the coding style and docstring formatting. Here are some problems 
 ```
 def _bigDeltacoeff(aa,bb,cc,prec=None):
 ```
-
  it should be written as follows:
 
 ```
 def _big_delta_coeff(aa, bb, cc, prec=None):
 ```
-
  which makes use of white space so it doesn't look like code is squashed together. Another example, don't do this
 
 ```
 if(int(aa+bb-cc)!=(aa+bb-cc)):
 ```
-
  Instead, write it like this:
 
 ```
 if int(aa + bb - cc) != (aa + bb - cc):
 ```
-
  This means that the whole module needs to be reformatted to make use of white space.
 1. The docstring of some functions don't follow the guidelines [here](http://www.sagemath.org/doc/developer/conventions.html#docstring-content). In particular, the docstring should be organized with the following two items first:
    1. A one-sentence description of the function, followed by a blank line.
@@ -308,7 +304,7 @@ Just to be clear: I have no problem with anyone improving the code. I personally
 archive/issue_comments_047613.json:
 ```json
 {
-    "body": "Replying to [comment:11 jrasch]:\n> Could I just suggest that we merge this into Sage as is, since IMHO it is a piece of functionality that should be of interest to a number of computational physicist and chemists.\n\n\nYes, it would be good to have this merged in Sage 4.1.1. But as they now stand, the patches do not conform to a number of coding conventions in addition to conventions regarding docstring formatting.",
+    "body": "Replying to [comment:11 jrasch]:\n> Could I just suggest that we merge this into Sage as is, since IMHO it is a piece of functionality that should be of interest to a number of computational physicist and chemists.\n\n\n\nYes, it would be good to have this merged in Sage 4.1.1. But as they now stand, the patches do not conform to a number of coding conventions in addition to conventions regarding docstring formatting.",
     "created_at": "2009-07-12T14:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -319,6 +315,7 @@ archive/issue_comments_047613.json:
 
 Replying to [comment:11 jrasch]:
 > Could I just suggest that we merge this into Sage as is, since IMHO it is a piece of functionality that should be of interest to a number of computational physicist and chemists.
+
 
 
 Yes, it would be good to have this merged in Sage 4.1.1. But as they now stand, the patches do not conform to a number of coding conventions in addition to conventions regarding docstring formatting.
@@ -372,7 +369,7 @@ In reply to Jens' comment about latex: I have fixed things so that the docstring
 archive/issue_comments_047616.json:
 ```json
 {
-    "body": "Replying to [comment:14 AlexGhitza]:\n> OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\nI appreciate that you've taken the time to make the code and docstring conform to the coding styles. It's a tedious task that causes short-term pain. But the long-term benefit is that at least the Sage library is standardized on a coding convention. Your new patch should make the reviewing process easier for me.\n\n\n\n> In reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.\nNote that with Sage 4.1, the HTML version of the reference manual is a bit broken. The HTML version of the reference does build successfully. However, if the docstring for a function or class uses the \".. MATH::\" tag, then it won't render in the generated HTML version. That is, when you use a web browser to view the corresponding HTML page that documents the function, anything typeset within the \".. MATH::\" tag won't show up. You can get a quick glimpse of the rendered math expression, but you have to refresh the page every second. And the math expression would only be displayed for a fraction of a second. This issue was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23) thread and the corresponding ticket is #6512.",
+    "body": "Replying to [comment:14 AlexGhitza]:\n> OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nI appreciate that you've taken the time to make the code and docstring conform to the coding styles. It's a tedious task that causes short-term pain. But the long-term benefit is that at least the Sage library is standardized on a coding convention. Your new patch should make the reviewing process easier for me.\n\n\n\n> In reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.\n\nNote that with Sage 4.1, the HTML version of the reference manual is a bit broken. The HTML version of the reference does build successfully. However, if the docstring for a function or class uses the \".. MATH::\" tag, then it won't render in the generated HTML version. That is, when you use a web browser to view the corresponding HTML page that documents the function, anything typeset within the \".. MATH::\" tag won't show up. You can get a quick glimpse of the rendered math expression, but you have to refresh the page every second. And the math expression would only be displayed for a fraction of a second. This issue was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23) thread and the corresponding ticket is #6512.",
     "created_at": "2009-07-13T12:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -383,11 +380,13 @@ archive/issue_comments_047616.json:
 
 Replying to [comment:14 AlexGhitza]:
 > OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.
+
 I appreciate that you've taken the time to make the code and docstring conform to the coding styles. It's a tedious task that causes short-term pain. But the long-term benefit is that at least the Sage library is standardized on a coding convention. Your new patch should make the reviewing process easier for me.
 
 
 
 > In reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.
+
 Note that with Sage 4.1, the HTML version of the reference manual is a bit broken. The HTML version of the reference does build successfully. However, if the docstring for a function or class uses the ".. MATH::" tag, then it won't render in the generated HTML version. That is, when you use a web browser to view the corresponding HTML page that documents the function, anything typeset within the ".. MATH::" tag won't show up. You can get a quick glimpse of the rendered math expression, but you have to refresh the page every second. And the math expression would only be displayed for a fraction of a second. This issue was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23) thread and the corresponding ticket is #6512.
 
 
@@ -547,7 +546,7 @@ Resolution: fixed
 archive/issue_comments_047624.json:
 ```json
 {
-    "body": "Just as a followup, note that \n\n```\nsage: gaunt(1,1,1,0,1,-1)\n0\nsage: gaunt(int(1),int(1),int(1),int(0),int(1),int(-1))\n1/2*sqrt(3)/sqrt(pi)\n```\n\nThis was noted at [this ask.sagemath question](http://ask.sagemath.org/question/2683/different-answers-with-gaunt).  I've opened #14735 for this.",
+    "body": "Just as a followup, note that \n\n```\nsage: gaunt(1,1,1,0,1,-1)\n0\nsage: gaunt(int(1),int(1),int(1),int(0),int(1),int(-1))\n1/2*sqrt(3)/sqrt(pi)\n```\nThis was noted at [this ask.sagemath question](http://ask.sagemath.org/question/2683/different-answers-with-gaunt).  I've opened #14735 for this.",
     "created_at": "2013-06-12T15:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -564,5 +563,4 @@ sage: gaunt(1,1,1,0,1,-1)
 sage: gaunt(int(1),int(1),int(1),int(0),int(1),int(-1))
 1/2*sqrt(3)/sqrt(pi)
 ```
-
 This was noted at [this ask.sagemath question](http://ask.sagemath.org/question/2683/different-answers-with-gaunt).  I've opened #14735 for this.

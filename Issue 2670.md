@@ -3,7 +3,7 @@
 archive/issues_002670.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee the numpy where() command or the matlab find() command:\n\nhttp://www.scipy.org/NumPy_for_Matlab_Users\n\nso:\n\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m>2\n*returns matrix([[False,True],[True,True]])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2670\n\n",
+    "body": "Assignee: mabshoff\n\nSee the numpy where() command or the matlab find() command:\n\nhttp://www.scipy.org/NumPy_for_Matlab_Users\n\nso:\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m>2\n*returns matrix([[False,True],[True,True]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2670\n\n",
     "created_at": "2008-03-25T22:27:36Z",
     "labels": [
         "component: cygwin"
@@ -23,13 +23,11 @@ http://www.scipy.org/NumPy_for_Matlab_Users
 
 so:
 
-
 ```
 sage: m=matrix([[1,2,],[3,4]])
 sage: m>2
 *returns matrix([[False,True],[True,True]])
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2670
@@ -134,7 +132,7 @@ archive/issue_events_006241.json:
 archive/issue_comments_018340.json:
 ```json
 {
-    "body": "Changing the original proposal, how about adding a find() method of a matrix that takes a boolean test and applies the boolean function to the entries of the matrix.\n\nSo in the above example,\n\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m.find(lambda x:x>2)\n*returns matrix([[False,False],[True,True]])\n```\n",
+    "body": "Changing the original proposal, how about adding a find() method of a matrix that takes a boolean test and applies the boolean function to the entries of the matrix.\n\nSo in the above example,\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m.find(lambda x:x>2)\n*returns matrix([[False,False],[True,True]])\n```",
     "created_at": "2008-03-31T19:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
@@ -147,13 +145,11 @@ Changing the original proposal, how about adding a find() method of a matrix tha
 
 So in the above example,
 
-
 ```
 sage: m=matrix([[1,2,],[3,4]])
 sage: m.find(lambda x:x>2)
 *returns matrix([[False,False],[True,True]])
 ```
-
 
 
 

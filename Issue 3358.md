@@ -189,7 +189,7 @@ I'm probably not the best person to review this but if there's anything I can do
 archive/issue_comments_023323.json:
 ```json
 {
-    "body": "I think there are some issues with eclib-ungnu.patch:\n\n* the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n* some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n\nAs is the patch needs to be rebased slighly:\n\n```\n/eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \npatching file Makefile\nHunk #4 FAILED at 45.\n1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\npatching file Makefile.dynamic\npatching file g0n/Makefile\nHunk #2 succeeded at 25 with fuzz 2.\npatching file procs/Makefile\nHunk #2 FAILED at 23.\n1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\npatching file qcurves/Makefile\npatching file qrank/Makefile\n```\n\n\nI am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n\nCheers,\n\nMichael",
+    "body": "I think there are some issues with eclib-ungnu.patch:\n\n* the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n* some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n\nAs is the patch needs to be rebased slighly:\n\n```\n/eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \npatching file Makefile\nHunk #4 FAILED at 45.\n1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\npatching file Makefile.dynamic\npatching file g0n/Makefile\nHunk #2 succeeded at 25 with fuzz 2.\npatching file procs/Makefile\nHunk #2 FAILED at 23.\n1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\npatching file qcurves/Makefile\npatching file qrank/Makefile\n```\n\nI am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T22:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",
     "type": "issue_comment",
@@ -220,7 +220,6 @@ patching file qcurves/Makefile
 patching file qrank/Makefile
 ```
 
-
 I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.
 
 Cheers,
@@ -234,7 +233,7 @@ Michael
 archive/issue_comments_023324.json:
 ```json
 {
-    "body": "Replying to [comment:9 mabshoff]:\n> I think there are some issues with eclib-ungnu.patch:\n> \n>  * the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n>  * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n> \n> As is the patch needs to be rebased slighly:\n> {{{\n> /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \n> patching file Makefile\n> Hunk #4 FAILED at 45.\n> 1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\n> patching file Makefile.dynamic\n> patching file g0n/Makefile\n> Hunk #2 succeeded at 25 with fuzz 2.\n> patching file procs/Makefile\n> Hunk #2 FAILED at 23.\n> 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\n> patching file qcurves/Makefile\n> patching file qrank/Makefile\n> }}}\n> \n> I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n> \n> Cheers,\n> \n> Michael \n\nI am happy to go along with whatever is best for Sage. I agree that one should be able to type \"make\" without setting environment variables manually.  John",
+    "body": "Replying to [comment:9 mabshoff]:\n> I think there are some issues with eclib-ungnu.patch:\n> \n> * the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n> * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n> \n> As is the patch needs to be rebased slighly:\n> \n> ```\n> /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \n> patching file Makefile\n> Hunk #4 FAILED at 45.\n> 1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\n> patching file Makefile.dynamic\n> patching file g0n/Makefile\n> Hunk #2 succeeded at 25 with fuzz 2.\n> patching file procs/Makefile\n> Hunk #2 FAILED at 23.\n> 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\n> patching file qcurves/Makefile\n> patching file qrank/Makefile\n> ```\n> \n> I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n> \n> Cheers,\n> \n> Michael \n\n\nI am happy to go along with whatever is best for Sage. I agree that one should be able to type \"make\" without setting environment variables manually.  John",
     "created_at": "2008-11-28T22:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",
     "type": "issue_comment",
@@ -246,11 +245,12 @@ archive/issue_comments_023324.json:
 Replying to [comment:9 mabshoff]:
 > I think there are some issues with eclib-ungnu.patch:
 > 
->  * the formal changes, i.e. the removal of the ".o" from the makefiles should be independent of the other changes for reviewing purposes
->  * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.
+> * the formal changes, i.e. the removal of the ".o" from the makefiles should be independent of the other changes for reviewing purposes
+> * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.
 > 
 > As is the patch needs to be rebased slighly:
-> {{{
+> 
+> ```
 > /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\?format\=raw 
 > patching file Makefile
 > Hunk #4 FAILED at 45.
@@ -263,13 +263,14 @@ Replying to [comment:9 mabshoff]:
 > 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej
 > patching file qcurves/Makefile
 > patching file qrank/Makefile
-> }}}
+> ```
 > 
 > I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.
 > 
 > Cheers,
 > 
 > Michael 
+
 
 I am happy to go along with whatever is best for Sage. I agree that one should be able to type "make" without setting environment variables manually.  John
 
@@ -280,7 +281,7 @@ I am happy to go along with whatever is best for Sage. I agree that one should b
 archive/issue_comments_023325.json:
 ```json
 {
-    "body": "Hi guys,\n\nI am a bit out of action at the moment but I should comment on what I\nhad done and why.\n\nReplying to [comment:9 mabshoff]:\n> I think there are some issues with eclib-ungnu.patch:\n> \n>  * the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n\nI reviewed my patch and the removal of the \".o\" and its inclusion in\n$(OBJ_SUF) and $(SOBJ_SUF) was needed to write a working \".SUFFIXES:\"\nold unix style rule and keep putting \"_n\" in the object. It can be simplified\nif we remove it. It is a remnant of the various building options that weren't\nused in sage but could be restored with a bit of creativity and some environment\nvariables.\n\n>  * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n> \n\nThe behavior before and after the patch is currently the same if you\ndon't set any variables. It defaults to look for stuff in /usr/local .\nEither you do some autodetection or you pass variables. It probably \nshould be documented in a README.\n\n> As is the patch needs to be rebased slighly:\n> {{{\n> /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \n> patching file Makefile\n> Hunk #4 FAILED at 45.\n> 1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\n> patching file Makefile.dynamic\n> patching file g0n/Makefile\n> Hunk #2 succeeded at 25 with fuzz 2.\n> patching file procs/Makefile\n> Hunk #2 FAILED at 23.\n> 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\n> patching file qcurves/Makefile\n> patching file qrank/Makefile\n> }}}\n> \n\nI'll have a look and rebase it if that's all it takes.\n\n> I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n> \n\nThe two first patches are really obsolete in many ways. And yes, after doing\nsome growing up I realise PIC->pic is wrong for something like sage. It is \ndebatable that it could be selected appropriately at the start of the building \nprocess but that wouldn't be KISS.\n\n> Cheers,\n> \n> Michael \n\nCheers,\nFrancois",
+    "body": "Hi guys,\n\nI am a bit out of action at the moment but I should comment on what I\nhad done and why.\n\nReplying to [comment:9 mabshoff]:\n> I think there are some issues with eclib-ungnu.patch:\n> \n> * the formal changes, i.e. the removal of the \".o\" from the makefiles should be independent of the other changes for reviewing purposes\n\n\nI reviewed my patch and the removal of the \".o\" and its inclusion in\n$(OBJ_SUF) and $(SOBJ_SUF) was needed to write a working \".SUFFIXES:\"\nold unix style rule and keep putting \"_n\" in the object. It can be simplified\nif we remove it. It is a remnant of the various building options that weren't\nused in sage but could be restored with a bit of creativity and some environment\nvariables.\n\n>  * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.\n \n> \n\nThe behavior before and after the patch is currently the same if you\ndon't set any variables. It defaults to look for stuff in /usr/local .\nEither you do some autodetection or you pass variables. It probably \nshould be documented in a README.\n\n> As is the patch needs to be rebased slighly:\n> \n> ```\n> /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\\?format\\=raw \n> patching file Makefile\n> Hunk #4 FAILED at 45.\n> 1 out of 4 hunks FAILED -- saving rejects to file Makefile.rej\n> patching file Makefile.dynamic\n> patching file g0n/Makefile\n> Hunk #2 succeeded at 25 with fuzz 2.\n> patching file procs/Makefile\n> Hunk #2 FAILED at 23.\n> 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej\n> patching file qcurves/Makefile\n> patching file qrank/Makefile\n> ```\n> \n\n\nI'll have a look and rebase it if that's all it takes.\n\n> I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.\n> \n\n\nThe two first patches are really obsolete in many ways. And yes, after doing\nsome growing up I realise PIC->pic is wrong for something like sage. It is \ndebatable that it could be selected appropriately at the start of the building \nprocess but that wouldn't be KISS.\n\n> Cheers,\n> \n> Michael \n\n\nCheers,\nFrancois",
     "created_at": "2008-11-29T10:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",
     "type": "issue_comment",
@@ -297,7 +298,8 @@ had done and why.
 Replying to [comment:9 mabshoff]:
 > I think there are some issues with eclib-ungnu.patch:
 > 
->  * the formal changes, i.e. the removal of the ".o" from the makefiles should be independent of the other changes for reviewing purposes
+> * the formal changes, i.e. the removal of the ".o" from the makefiles should be independent of the other changes for reviewing purposes
+
 
 I reviewed my patch and the removal of the ".o" and its inclusion in
 $(OBJ_SUF) and $(SOBJ_SUF) was needed to write a working ".SUFFIXES:"
@@ -307,6 +309,7 @@ used in sage but could be restored with a bit of creativity and some environment
 variables.
 
 >  * some of the fixes will have the makefiles as is working with Sage, but if anyone attempted to compile eclib without explicitly setting env variables like NTL the compile will break or the build will not include features like pari support. I don't care which way we go here, but this is up to John since it is his code project.
+ 
 > 
 
 The behavior before and after the patch is currently the same if you
@@ -315,7 +318,8 @@ Either you do some autodetection or you pass variables. It probably
 should be documented in a README.
 
 > As is the patch needs to be rebased slighly:
-> {{{
+> 
+> ```
 > /eclib-20080310.p7/src$ patch -p1 --dry-run < eclib-ungnu.patch\?format\=raw 
 > patching file Makefile
 > Hunk #4 FAILED at 45.
@@ -328,13 +332,15 @@ should be documented in a README.
 > 1 out of 6 hunks FAILED -- saving rejects to file procs/Makefile.rej
 > patching file qcurves/Makefile
 > patching file qrank/Makefile
-> }}}
+> ```
 > 
+
 
 I'll have a look and rebase it if that's all it takes.
 
 > I am -1 on all the other three patches at this ticket. Some of those might be salvaged, i.e. from the spkg-install patches like the better installation, but the PIC->pic change is just plain wrong.
 > 
+
 
 The two first patches are really obsolete in many ways. And yes, after doing
 some growing up I realise PIC->pic is wrong for something like sage. It is 
@@ -344,6 +350,7 @@ process but that wouldn't be KISS.
 > Cheers,
 > 
 > Michael 
+
 
 Cheers,
 Francois
@@ -543,7 +550,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_023335.json:
 ```json
 {
-    "body": "Replying to [comment:16 fbissey]:\n> This is obsolete, solved by the current eclib, we should close it.\n\nAgreed.",
+    "body": "Replying to [comment:16 fbissey]:\n> This is obsolete, solved by the current eclib, we should close it.\n\n\nAgreed.",
     "created_at": "2012-08-05T12:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",
     "type": "issue_comment",
@@ -554,6 +561,7 @@ archive/issue_comments_023335.json:
 
 Replying to [comment:16 fbissey]:
 > This is obsolete, solved by the current eclib, we should close it.
+
 
 Agreed.
 

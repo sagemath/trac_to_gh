@@ -3,7 +3,7 @@
 archive/issues_002364.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
+    "body": "Assignee: @williamstein\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
     "created_at": "2008-03-01T22:14:14Z",
     "labels": [
         "component: algebraic geometry",
@@ -23,7 +23,6 @@ It should be better documented in animate.py how to specify the interframe delay
 ```
 sage: animate?
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2364
@@ -73,7 +72,7 @@ Changing assignee from @williamstein to tba.
 archive/issue_comments_015906.json:
 ```json
 {
-    "body": "Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by @jhpalmieri created at 2008-10-01 21:07:15\n\nHere's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:\n\n1. It improves the documentation for `show` and `animate`, as requested.\n\n2. It adds docstrings and doctests to several functions for which they were missing; the file now has over 90% coverage.  (Only `__init__` is undocumented now.)\n\n3. Many doctests used to be optional, things like\n\n```\nsage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], \n...                xmin=0, xmax=2*pi, figsize=[2,1])\n```\n\nThese don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.\n\n4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.",
+    "body": "Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by @jhpalmieri created at 2008-10-01 21:07:15\n\nHere's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:\n\n1. It improves the documentation for `show` and `animate`, as requested.\n\n2. It adds docstrings and doctests to several functions for which they were missing; the file now has over 90% coverage.  (Only `__init__` is undocumented now.)\n\n3. Many doctests used to be optional, things like\n\n```\nsage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], \n...                xmin=0, xmax=2*pi, figsize=[2,1])\n```\nThese don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.\n\n4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.",
     "created_at": "2008-10-01T21:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -96,7 +95,6 @@ Here's a patch, based on 3.1.3.alpha2. I started working on animate.py before I 
 sage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], 
 ...                xmin=0, xmax=2*pi, figsize=[2,1])
 ```
-
 These don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.
 
 4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.
@@ -126,7 +124,7 @@ Changing keywords from "" to "animate, documentation, doctest".
 archive/issue_comments_015908.json:
 ```json
 {
-    "body": "5. Oh, one other thing: in the `gif` method (and hence in `save` and `show` which call it), I added a message saying where the file was being saved.  Before, you would type\n\n```\na.save('bozo.gif')\n```\n\nand, if you were using the notebook interface, the file would be saved something like 5 subdirectories below .sage.  This is still true, but at least now you're told where the file is.",
+    "body": "5. Oh, one other thing: in the `gif` method (and hence in `save` and `show` which call it), I added a message saying where the file was being saved.  Before, you would type\n\n```\na.save('bozo.gif')\n```\nand, if you were using the notebook interface, the file would be saved something like 5 subdirectories below .sage.  This is still true, but at least now you're told where the file is.",
     "created_at": "2008-10-01T21:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ archive/issue_comments_015908.json:
 ```
 a.save('bozo.gif')
 ```
-
 and, if you were using the notebook interface, the file would be saved something like 5 subdirectories below .sage.  This is still true, but at least now you're told where the file is.
 
 
@@ -232,7 +229,7 @@ Michael
 archive/issue_comments_015913.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. \n\nI didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.",
+    "body": "Replying to [comment:6 mabshoff]:\n> I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. \n\n\nI didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.",
     "created_at": "2008-10-28T14:46:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -244,6 +241,7 @@ archive/issue_comments_015913.json:
 Replying to [comment:6 mabshoff]:
 > I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. 
 
+
 I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.
 
 
@@ -253,7 +251,7 @@ I didn't change the location of the file -- as far as I know it's always been th
 archive/issue_comments_015914.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n\n> I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.\n\nSure. The issue will pop up once somebody runs doctests as non-owner. I don't particularly care if that issue gets fixed now or not, so a new ticket would get this patch a positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 jhpalmieri]:\n\n> I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.\n\n\nSure. The issue will pop up once somebody runs doctests as non-owner. I don't particularly care if that issue gets fixed now or not, so a new ticket would get this patch a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T14:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -265,6 +263,7 @@ archive/issue_comments_015914.json:
 Replying to [comment:7 jhpalmieri]:
 
 > I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.
+
 
 Sure. The issue will pop up once somebody runs doctests as non-owner. I don't particularly care if that issue gets fixed now or not, so a new ticket would get this patch a positive review.
 
@@ -299,7 +298,7 @@ Unfortunately (?), doctests won't catch it, since these commands are all optiona
 archive/issue_comments_015916.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.\n> \n>   John\n\nYes, but someone [can you guess? :)] has started running Sage with \"-t -long -optional\", so in the future we will catch this. I am all for merging this patch after someone verifies that the animate command still works as expected. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.\n> \n>   John\n\n\nYes, but someone [can you guess? :)] has started running Sage with \"-t -long -optional\", so in the future we will catch this. I am all for merging this patch after someone verifies that the animate command still works as expected. \n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T15:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -312,6 +311,7 @@ Replying to [comment:9 jhpalmieri]:
 > Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.
 > 
 >   John
+
 
 Yes, but someone [can you guess? :)] has started running Sage with "-t -long -optional", so in the future we will catch this. I am all for merging this patch after someone verifies that the animate command still works as expected. 
 
@@ -326,7 +326,7 @@ Michael
 archive/issue_comments_015917.json:
 ```json
 {
-    "body": "Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n\n```\n        If ImageMagick is not installed, you will get an error message:\n            sage: a.gif()       # optional\n            /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n            found\n\n            Error: ImageMagick does not appear to be installed. Saving an\n            animation to a GIF file or displaying an animation requires\n            ImageMagick, so please install it and try again.\n\n            See www.imagemagick.org, for example.\n```\n\nThis will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\nAlso, I have doctests like this\n\n```\n            sage: a.save(show_path=True)  # optional\n            Animation saved to file /home/isaac/.sage/sage0.gif.\n```\n\nin which I have inserted an invented pathname. What should I do about these?",
+    "body": "Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n\n```\n        If ImageMagick is not installed, you will get an error message:\n            sage: a.gif()       # optional\n            /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n            found\n\n            Error: ImageMagick does not appear to be installed. Saving an\n            animation to a GIF file or displaying an animation requires\n            ImageMagick, so please install it and try again.\n\n            See www.imagemagick.org, for example.\n```\nThis will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\nAlso, I have doctests like this\n\n```\n            sage: a.save(show_path=True)  # optional\n            Animation saved to file /home/isaac/.sage/sage0.gif.\n```\nin which I have inserted an invented pathname. What should I do about these?",
     "created_at": "2008-10-28T18:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -349,7 +349,6 @@ Oh dear.  I don't know how to write the doctests, then.  For example, I have a d
 
             See www.imagemagick.org, for example.
 ```
-
 This will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?
 
 Also, I have doctests like this
@@ -358,7 +357,6 @@ Also, I have doctests like this
             sage: a.save(show_path=True)  # optional
             Animation saved to file /home/isaac/.sage/sage0.gif.
 ```
-
 in which I have inserted an invented pathname. What should I do about these?
 
 
@@ -368,7 +366,7 @@ in which I have inserted an invented pathname. What should I do about these?
 archive/issue_comments_015918.json:
 ```json
 {
-    "body": "Replying to [comment:11 jhpalmieri]:\n> Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n> {{{\n>         If ImageMagick is not installed, you will get an error message:\n>             sage: a.gif()       # optional\n>             /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n>             found\n> \n>             Error: ImageMagick does not appear to be installed. Saving an\n>             animation to a GIF file or displaying an animation requires\n>             ImageMagick, so please install it and try again.\n> \n>             See www.imagemagick.org, for example.\n> }}}\n> This will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\nNope, if someone runs optional doctests and the binary required is not there it will blow up. Nothing can change that until we have a more clever \"#optinal\" doctest treatment. \n\n> Also, I have doctests like this\n> {{{\n>             sage: a.save(show_path=True)  # optional\n>             Animation saved to file /home/isaac/.sage/sage0.gif.\n> }}}\n> in which I have inserted an invented pathname. What should I do about these?\n\nThis would need to be changed to \n\n \"Animation saved to file .../sage0.gif.\"\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n> \n> ```\n>         If ImageMagick is not installed, you will get an error message:\n>             sage: a.gif()       # optional\n>             /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n>             found\n> \n>             Error: ImageMagick does not appear to be installed. Saving an\n>             animation to a GIF file or displaying an animation requires\n>             ImageMagick, so please install it and try again.\n> \n>             See www.imagemagick.org, for example.\n> ```\n> This will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\n\nNope, if someone runs optional doctests and the binary required is not there it will blow up. Nothing can change that until we have a more clever \"#optinal\" doctest treatment. \n\n> Also, I have doctests like this\n> \n> ```\n>             sage: a.save(show_path=True)  # optional\n>             Animation saved to file /home/isaac/.sage/sage0.gif.\n> ```\n> in which I have inserted an invented pathname. What should I do about these?\n\n\nThis would need to be changed to \n\n \"Animation saved to file .../sage0.gif.\"\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T18:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
@@ -379,7 +377,8 @@ archive/issue_comments_015918.json:
 
 Replying to [comment:11 jhpalmieri]:
 > Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: 
-> {{{
+> 
+> ```
 >         If ImageMagick is not installed, you will get an error message:
 >             sage: a.gif()       # optional
 >             /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not
@@ -390,17 +389,20 @@ Replying to [comment:11 jhpalmieri]:
 >             ImageMagick, so please install it and try again.
 > 
 >             See www.imagemagick.org, for example.
-> }}}
+> ```
 > This will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?
+
 
 Nope, if someone runs optional doctests and the binary required is not there it will blow up. Nothing can change that until we have a more clever "#optinal" doctest treatment. 
 
 > Also, I have doctests like this
-> {{{
+> 
+> ```
 >             sage: a.save(show_path=True)  # optional
 >             Animation saved to file /home/isaac/.sage/sage0.gif.
-> }}}
+> ```
 > in which I have inserted an invented pathname. What should I do about these?
+
 
 This would need to be changed to 
 

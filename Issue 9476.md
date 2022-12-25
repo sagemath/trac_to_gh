@@ -224,7 +224,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_090817.json:
 ```json
 {
-    "body": "Hmm. I think this might have something to do with one of the things I saw on #9247.\n\nI'm attaching the reviewer patch, which causes the following:\n\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.5.eclib-test/devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 429:\n    sage: M=sage.schemes.elliptic_curves.ell_modular_symbols.ModularSymbolECLIB(E,-1)\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\nFile \"/Users/rlmill/sage-4.5.eclib-test/devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 438:\n    sage: M=sage.schemes.elliptic_curves.ell_modular_symbols.ModularSymbolECLIB(E,-1)\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\n```\n\n\nJohn,\n\nCan you give some info about what's going on here?",
+    "body": "Hmm. I think this might have something to do with one of the things I saw on #9247.\n\nI'm attaching the reviewer patch, which causes the following:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.5.eclib-test/devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 429:\n    sage: M=sage.schemes.elliptic_curves.ell_modular_symbols.ModularSymbolECLIB(E,-1)\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\nFile \"/Users/rlmill/sage-4.5.eclib-test/devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 438:\n    sage: M=sage.schemes.elliptic_curves.ell_modular_symbols.ModularSymbolECLIB(E,-1)\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\n```\n\nJohn,\n\nCan you give some info about what's going on here?",
     "created_at": "2010-07-17T13:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
@@ -236,7 +236,6 @@ archive/issue_comments_090817.json:
 Hmm. I think this might have something to do with one of the things I saw on #9247.
 
 I'm attaching the reviewer patch, which causes the following:
-
 
 ```
 sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_modular_symbols.py"
@@ -254,7 +253,6 @@ Got:
     Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.
 **********************************************************************
 ```
-
 
 John,
 
@@ -379,7 +377,7 @@ reviewer addendum looks good to me.
 archive/issue_comments_090824.json:
 ```json
 {
-    "body": "I'm having difficulty getting the new package:\n\n```\n$ wget http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.spkg\n--19:50:47--  http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.spkg\n           => `eclib-20100711.spkg'\nResolving www.warwick.ac.uk... 137.205.243.107\nConnecting to www.warwick.ac.uk|137.205.243.107|:80... connected.\nHTTP request sent, awaiting response... \n```\n\n\nCan someone check its availability and perhaps put a copy on the Sage cluster?\n\nAlso, should I apply both patches, too?",
+    "body": "I'm having difficulty getting the new package:\n\n```\n$ wget http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.spkg\n--19:50:47--  http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.spkg\n           => `eclib-20100711.spkg'\nResolving www.warwick.ac.uk... 137.205.243.107\nConnecting to www.warwick.ac.uk|137.205.243.107|:80... connected.\nHTTP request sent, awaiting response... \n```\n\nCan someone check its availability and perhaps put a copy on the Sage cluster?\n\nAlso, should I apply both patches, too?",
     "created_at": "2010-08-07T02:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
@@ -398,7 +396,6 @@ Resolving www.warwick.ac.uk... 137.205.243.107
 Connecting to www.warwick.ac.uk|137.205.243.107|:80... connected.
 HTTP request sent, awaiting response... 
 ```
-
 
 Can someone check its availability and perhaps put a copy on the Sage cluster?
 

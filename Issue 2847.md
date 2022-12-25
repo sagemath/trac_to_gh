@@ -66,7 +66,7 @@ Code looks fine to me.  I haven't checked it yet as my machine is tied up doing 
 archive/issue_comments_019495.json:
 ```json
 {
-    "body": "The patch currently does not apply against my tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-limits.patch\npatching file sage/rings/polynomial/cyclotomic.pyx\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-radical.patch\npatching file sage/rings/polynomial/cyclotomic.pyx\nHunk #1 FAILED at 72.\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/cyclotomic.pyx.rej\n```\n\nFeel free to rebase against /scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage\n\nCheers,\n\nMichael",
+    "body": "The patch currently does not apply against my tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-limits.patch\npatching file sage/rings/polynomial/cyclotomic.pyx\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-radical.patch\npatching file sage/rings/polynomial/cyclotomic.pyx\nHunk #1 FAILED at 72.\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/cyclotomic.pyx.rej\n```\nFeel free to rebase against /scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage\n\nCheers,\n\nMichael",
     "created_at": "2008-04-07T20:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ patching file sage/rings/polynomial/cyclotomic.pyx
 Hunk #1 FAILED at 72.
 1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/cyclotomic.pyx.rej
 ```
-
 Feel free to rebase against /scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage
 
 Cheers,
@@ -205,7 +204,7 @@ Resolution: fixed
 archive/issue_comments_019501.json:
 ```json
 {
-    "body": "Hmm, after merging those two patches I get a new doctest failure:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/polynomial_ring.py\", line 582:\n    sage: S.cyclotomic_polynomial(12)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[5]>\", line 1, in <module>\n        S.cyclotomic_polynomial(Integer(12))###line 582:\n    sage: S.cyclotomic_polynomial(12)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 600, in cyclotomic_polynomial\n        return self(cyclotomic.cyclotomic_coeffs(n), check=True)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 1058, in __call__\n        return polynomial_modn_dense_ntl.Polynomial_dense_mod_p(self, x, check, is_gen,construct=construct)\n      File \"polynomial_modn_dense_ntl.pyx\", line 101, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_n.__init__\n        x = self._dict_to_list(x, R(0))\n    TypeError: 'NoneType' object is not callable\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/.doctest_polynomial_ring.py\n\n         [3.3 s]\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3.3 seconds\n```\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Hmm, after merging those two patches I get a new doctest failure:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/polynomial_ring.py\", line 582:\n    sage: S.cyclotomic_polynomial(12)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[5]>\", line 1, in <module>\n        S.cyclotomic_polynomial(Integer(12))###line 582:\n    sage: S.cyclotomic_polynomial(12)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 600, in cyclotomic_polynomial\n        return self(cyclotomic.cyclotomic_coeffs(n), check=True)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 1058, in __call__\n        return polynomial_modn_dense_ntl.Polynomial_dense_mod_p(self, x, check, is_gen,construct=construct)\n      File \"polynomial_modn_dense_ntl.pyx\", line 101, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_n.__init__\n        x = self._dict_to_list(x, R(0))\n    TypeError: 'NoneType' object is not callable\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/.doctest_polynomial_ring.py\n\n         [3.3 s]\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3.3 seconds\n```\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-09T04:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
@@ -249,7 +248,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 3.3 seconds
 ```
-
 Thoughts?
 
 Cheers,

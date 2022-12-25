@@ -129,7 +129,7 @@ Jeroen, if you agree with my changes, please merge them into the spkg, and I can
 archive/issue_comments_063487.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> I originally wanted to give it immediately a positive review, though `patches/posix.py.patch` (which is redundant and for reference only) had not been updated, but just the line numbers changed. (I haven't updated it either.)\nSince the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\n> Jeroen's changes look fine, except `spkg-install` still tried to copy an obsolete, now removed patch (to `setup.py`).\nThanks for spotting this.\n\n> Then I took a closer look at the rest (including `SPKG.txt`), which ended up in my reviewer patch.\n> \n> Jeroen, if you agree with my changes, please merge them into the spkg, and I can give it positive review. ;-)\nThanks for looking more carefully at this, I just wanted a new spkg quickly :-)",
+    "body": "Replying to [comment:6 leif]:\n> I originally wanted to give it immediately a positive review, though `patches/posix.py.patch` (which is redundant and for reference only) had not been updated, but just the line numbers changed. (I haven't updated it either.)\n\nSince the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\n> Jeroen's changes look fine, except `spkg-install` still tried to copy an obsolete, now removed patch (to `setup.py`).\n\nThanks for spotting this.\n\n> Then I took a closer look at the rest (including `SPKG.txt`), which ended up in my reviewer patch.\n> \n> Jeroen, if you agree with my changes, please merge them into the spkg, and I can give it positive review. ;-)\n\nThanks for looking more carefully at this, I just wanted a new spkg quickly :-)",
     "created_at": "2010-11-02T10:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -140,14 +140,17 @@ archive/issue_comments_063487.json:
 
 Replying to [comment:6 leif]:
 > I originally wanted to give it immediately a positive review, though `patches/posix.py.patch` (which is redundant and for reference only) had not been updated, but just the line numbers changed. (I haven't updated it either.)
+
 Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).
 
 > Jeroen's changes look fine, except `spkg-install` still tried to copy an obsolete, now removed patch (to `setup.py`).
+
 Thanks for spotting this.
 
 > Then I took a closer look at the rest (including `SPKG.txt`), which ended up in my reviewer patch.
 > 
 > Jeroen, if you agree with my changes, please merge them into the spkg, and I can give it positive review. ;-)
+
 Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)
 
 
@@ -193,7 +196,7 @@ Apply on top of leif's patch
 archive/issue_comments_063490.json:
 ```json
 {
-    "body": "Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by @nexttime created at 2010-11-02 10:49:09\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\nWell, the ticket's first (opening) anniversary is close...",
+    "body": "Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by @nexttime created at 2010-11-02 10:49:09\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\n\nWell, the ticket's first (opening) anniversary is close...",
     "created_at": "2010-11-02T10:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -207,11 +210,13 @@ Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticke
 Replying to [comment:7 jdemeyer]:
 > Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).
 
+
 Obviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)
 
 In general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.
  
 > Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)
+
 
 Well, the ticket's first (opening) anniversary is close...
 
@@ -284,7 +289,7 @@ Changing assignee from tbd to @nexttime.
 archive/issue_comments_063494.json:
 ```json
 {
-    "body": "Yep, it's the old one again:\n\n```sh\nFinished installing mercurial-1.6.4.p0.spkg\n\nreal\t0m2.384s\nuser\t0m1.960s\nsys\t0m0.430s\nleif@quadriga:~/Sage/sage-4.6$ ./sage -hg --version\nMercurial Distributed SCM (version 1.3.1)\n\nCopyright (C) 2005-2009 Matt Mackall <mpm@selenic.com> and others\nThis is free software; see the source for copying conditions. There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n",
+    "body": "Yep, it's the old one again:\n\n```sh\nFinished installing mercurial-1.6.4.p0.spkg\n\nreal\t0m2.384s\nuser\t0m1.960s\nsys\t0m0.430s\nleif@quadriga:~/Sage/sage-4.6$ ./sage -hg --version\nMercurial Distributed SCM (version 1.3.1)\n\nCopyright (C) 2005-2009 Matt Mackall <mpm@selenic.com> and others\nThis is free software; see the source for copying conditions. There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```",
     "created_at": "2010-11-02T11:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -311,13 +316,12 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 
-
 ---
 
 archive/issue_comments_063495.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> Ooops, did you patch/upload the wrong package?\n> \n> I have a completely different upstream src now... (and the size decreased significantly)\n\nYou are totally right, I forgot to update the `src/` directory when making the new spkg.  I automated this for the PARI spkg and forgot that not every spkg does this automatically :-)",
+    "body": "Replying to [comment:11 leif]:\n> Ooops, did you patch/upload the wrong package?\n> \n> I have a completely different upstream src now... (and the size decreased significantly)\n\n\nYou are totally right, I forgot to update the `src/` directory when making the new spkg.  I automated this for the PARI spkg and forgot that not every spkg does this automatically :-)",
     "created_at": "2010-11-02T11:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -330,6 +334,7 @@ Replying to [comment:11 leif]:
 > Ooops, did you patch/upload the wrong package?
 > 
 > I have a completely different upstream src now... (and the size decreased significantly)
+
 
 You are totally right, I forgot to update the `src/` directory when making the new spkg.  I automated this for the PARI spkg and forgot that not every spkg does this automatically :-)
 
@@ -358,7 +363,7 @@ Should be fixed now, sorry for this...
 archive/issue_comments_063497.json:
 ```json
 {
-    "body": "\n```\n! patches/setup.py\n! patches/setup.py.patch\n```\n\n;-)",
+    "body": "```\n! patches/setup.py\n! patches/setup.py.patch\n```\n;-)",
     "created_at": "2010-11-02T11:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
@@ -367,12 +372,10 @@ archive/issue_comments_063497.json:
 }
 ```
 
-
 ```
 ! patches/setup.py
 ! patches/setup.py.patch
 ```
-
 ;-)
 
 

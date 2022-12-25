@@ -57,7 +57,7 @@ Patch for the improvements described in this ticket. Touches files setup.py, com
 archive/issue_comments_002416.json:
 ```json
 {
-    "body": "NOTE: The attached patch depends on the patch attached to ticket #468 being applied (or on that bug being fixed in some other way, of course).\n\nSome more notes on the attached file:\nMany changes were made to partitions_c.cc to do some code cleanup, templatize some code, attempt to make the use of long doubles behave nicely across different platforms, to use qd_real and dd_real types, and to select the precision much more carefully.\n\nThe changes to combinat.py are just some doctest additions.\n\nThe change to setup.py is just to link partitions_c.cc with the qd library when it builds. (I think that it adds 5 characters to setup.py.)\n\nSome timing results on a core duo T2400 (1.83 ghz):\n\nbefore patch:\n\n```\nsage: time a = number_of_partitions(100000000)\nCPU times: user 7.50 s, sys: 0.00 s, total: 7.50 s\nWall time: 7.50\nsage: time a = number_of_partitions(1000000000)\nCPU times: user 102.16 s, sys: 0.12 s, total: 102.28 s\nWall time: 102.94\n```\n\nafter patch:\n\n```\nsage: time a = number_of_partitions(100000000)\nCPU times: user 4.00 s, sys: 0.01 s, total: 4.01 s\nWall time: 4.11\nsage: time a = number_of_partitions(1000000000)\nCPU times: user 38.08 s, sys: 0.06 s, total: 38.14 s\nWall time: 39.24\n```\n",
+    "body": "NOTE: The attached patch depends on the patch attached to ticket #468 being applied (or on that bug being fixed in some other way, of course).\n\nSome more notes on the attached file:\nMany changes were made to partitions_c.cc to do some code cleanup, templatize some code, attempt to make the use of long doubles behave nicely across different platforms, to use qd_real and dd_real types, and to select the precision much more carefully.\n\nThe changes to combinat.py are just some doctest additions.\n\nThe change to setup.py is just to link partitions_c.cc with the qd library when it builds. (I think that it adds 5 characters to setup.py.)\n\nSome timing results on a core duo T2400 (1.83 ghz):\n\nbefore patch:\n\n```\nsage: time a = number_of_partitions(100000000)\nCPU times: user 7.50 s, sys: 0.00 s, total: 7.50 s\nWall time: 7.50\nsage: time a = number_of_partitions(1000000000)\nCPU times: user 102.16 s, sys: 0.12 s, total: 102.28 s\nWall time: 102.94\n```\nafter patch:\n\n```\nsage: time a = number_of_partitions(100000000)\nCPU times: user 4.00 s, sys: 0.01 s, total: 4.01 s\nWall time: 4.11\nsage: time a = number_of_partitions(1000000000)\nCPU times: user 38.08 s, sys: 0.06 s, total: 38.14 s\nWall time: 39.24\n```",
     "created_at": "2007-08-29T16:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
@@ -87,7 +87,6 @@ sage: time a = number_of_partitions(1000000000)
 CPU times: user 102.16 s, sys: 0.12 s, total: 102.28 s
 Wall time: 102.94
 ```
-
 after patch:
 
 ```
@@ -98,7 +97,6 @@ sage: time a = number_of_partitions(1000000000)
 CPU times: user 38.08 s, sys: 0.06 s, total: 38.14 s
 Wall time: 39.24
 ```
-
 
 
 

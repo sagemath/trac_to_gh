@@ -3,7 +3,7 @@
 archive/issues_005512.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
     "created_at": "2009-03-13T17:31:47Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  sage-combinat
 
 Keywords: species
 
-
 ```
 sage: T = species.BinaryTreeSpecies()
 sage: t = T.structures([1,2,3])[0]; t
@@ -32,7 +31,6 @@ sage: t[0], t[1][0]
 sage: t[0] == t[1][0]
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5512
 
@@ -209,7 +207,7 @@ Florent
 archive/issue_comments_042732.json:
 ```json
 {
-    "body": "Replying to [comment:9 hivert]:\n> Hi Jeroen,\n> \n> Thanks for pointing that #10227 is still awaiting for review. \n> \n> One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? \n\nI would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.",
+    "body": "Replying to [comment:9 hivert]:\n> Hi Jeroen,\n> \n> Thanks for pointing that #10227 is still awaiting for review. \n> \n> One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? \n\n\nI would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.",
     "created_at": "2011-06-14T17:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
@@ -224,6 +222,7 @@ Replying to [comment:9 hivert]:
 > Thanks for pointing that #10227 is still awaiting for review. 
 > 
 > One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? 
+
 
 I would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.
 

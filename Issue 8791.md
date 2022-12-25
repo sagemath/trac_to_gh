@@ -3,7 +3,7 @@
 archive/issues_008791.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @fredrik-johansson @haraldschilly\n\nAs the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:\n\n```\n[mvngu@sage mpmath]$ sage -coverage ext_main.pyx \n----------------------------------------------------------------------\next_main.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ext_main.pyx: 0% (0 of 102)\n\nMissing documentation:\n\t * __cinit__(ctx):\n\t * default(ctx):\n\t * _get_prec(ctx):\n\t * _set_prec(ctx, prec):\n\t * _set_dps(ctx, n):\n\t * _get_dps(ctx):\n\t * _get_prec_rounding(ctx):\n\t * mpf make_mpf(ctx, tuple v):\n\t * mpc make_mpc(ctx, tuple v):\n\t * _convert_param(ctx, x):\n\t * _wrap_libmp_function(ctx, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * _wrap_specfun(cls, name, f, wrap):\n\t * __init__(self, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * __call__(self, x, **kwargs):\n\t * __init__(self, name, f):\n\t * __call__(self, *args, **kwargs):\n\t * __richcmp__(self, other, int op):\n\t * __add__(self, other):\n\t * __sub__(self, other):\n\t * __mul__(self, other):\n\t * __div__(self, other):\n\t * __mod__(self, other):\n\t * __pow__(self, other, mod):\n\t * ae(s, t, rel_eps=None, abs_eps=None):\n\t * __hash__(self):\n\t * __repr__(self):\n\t * __str__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * __int__(self):\n\t * __long__(self):\n\t * __float__(self):\n\t * __complex__(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __init__(self, x=0, **kwargs):\n\t * __reduce__(self):\n\t * _get_mpf(self):\n\t * _set_mpf(self, v):\n\t * __nonzero__(self):\n\t * __hash__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * to_fixed(self, long prec):\n\t * __int__(self):\n\t * __float__(self):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __cinit__(self):\n\t * __neg__(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * sqrt(s):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, func, name, docname=''):\n\t * __call__(self, prec=None, dps=None, rounding=None):\n\t * _mpf_(self):\n\t * __repr__(self):\n\t * __nonzero__(self):\n\t * __neg__(self):\n\t * __pos__(self):\n\t * __abs__(self):\n\t * sqrt(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __hash__(self):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, real=0, imag=0):\n\t * __cinit__(self):\n\t * __reduce__(self):\n\t * __setstate__(self, val):\n\t * __repr__(self):\n\t * __str__(s):\n\t * __nonzero__(self):\n\t * __complex__(self):\n\t * _get_mpc(self):\n\t * _set_mpc(self, tuple v):\n\t * real(self):\n\t * imag(self):\n\t * __hash__(self):\n\t * __neg__(s):\n\t * conjugate(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * __richcmp__(self, other, int op):\n\n\nMissing doctests:\n\t * convert(ctx, x, strings=True):\n\t * isnan(ctx, x):\n\t * isinf(ctx, x):\n\t * isint(ctx, x):\n\t * fsum(ctx, terms, bint absolute=False, bint squared=False):\n\t * fdot(ctx, A, B=None):\n\t * mag(ctx, x):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8791\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @fredrik-johansson @haraldschilly\n\nAs the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:\n\n```\n[mvngu@sage mpmath]$ sage -coverage ext_main.pyx \n----------------------------------------------------------------------\next_main.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ext_main.pyx: 0% (0 of 102)\n\nMissing documentation:\n\t * __cinit__(ctx):\n\t * default(ctx):\n\t * _get_prec(ctx):\n\t * _set_prec(ctx, prec):\n\t * _set_dps(ctx, n):\n\t * _get_dps(ctx):\n\t * _get_prec_rounding(ctx):\n\t * mpf make_mpf(ctx, tuple v):\n\t * mpc make_mpc(ctx, tuple v):\n\t * _convert_param(ctx, x):\n\t * _wrap_libmp_function(ctx, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * _wrap_specfun(cls, name, f, wrap):\n\t * __init__(self, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * __call__(self, x, **kwargs):\n\t * __init__(self, name, f):\n\t * __call__(self, *args, **kwargs):\n\t * __richcmp__(self, other, int op):\n\t * __add__(self, other):\n\t * __sub__(self, other):\n\t * __mul__(self, other):\n\t * __div__(self, other):\n\t * __mod__(self, other):\n\t * __pow__(self, other, mod):\n\t * ae(s, t, rel_eps=None, abs_eps=None):\n\t * __hash__(self):\n\t * __repr__(self):\n\t * __str__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * __int__(self):\n\t * __long__(self):\n\t * __float__(self):\n\t * __complex__(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __init__(self, x=0, **kwargs):\n\t * __reduce__(self):\n\t * _get_mpf(self):\n\t * _set_mpf(self, v):\n\t * __nonzero__(self):\n\t * __hash__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * to_fixed(self, long prec):\n\t * __int__(self):\n\t * __float__(self):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __cinit__(self):\n\t * __neg__(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * sqrt(s):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, func, name, docname=''):\n\t * __call__(self, prec=None, dps=None, rounding=None):\n\t * _mpf_(self):\n\t * __repr__(self):\n\t * __nonzero__(self):\n\t * __neg__(self):\n\t * __pos__(self):\n\t * __abs__(self):\n\t * sqrt(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __hash__(self):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, real=0, imag=0):\n\t * __cinit__(self):\n\t * __reduce__(self):\n\t * __setstate__(self, val):\n\t * __repr__(self):\n\t * __str__(s):\n\t * __nonzero__(self):\n\t * __complex__(self):\n\t * _get_mpc(self):\n\t * _set_mpc(self, tuple v):\n\t * real(self):\n\t * imag(self):\n\t * __hash__(self):\n\t * __neg__(s):\n\t * conjugate(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * __richcmp__(self, other, int op):\n\n\nMissing doctests:\n\t * convert(ctx, x, strings=True):\n\t * isnan(ctx, x):\n\t * isinf(ctx, x):\n\t * isint(ctx, x):\n\t * fsum(ctx, terms, bint absolute=False, bint squared=False):\n\t * fdot(ctx, A, B=None):\n\t * mag(ctx, x):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8791\n\n",
     "created_at": "2010-04-28T04:44:20Z",
     "labels": [
         "component: documentation"
@@ -136,7 +136,6 @@ Missing doctests:
 	 * mag(ctx, x):
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8791
 
 
@@ -148,7 +147,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8791
 archive/issue_comments_080361.json:
 ```json
 {
-    "body": "Argh. Who wrote this code?\n\nThe actual code coverage, indirectly through mpmath's unit tests (which however aren't run automatically by Sage) is close to 99%, but writing Sage doctests slipped my mind entirely.\n\nSome of these functions have doctests, but they're added at runtime when importing mpmath. I'm considering whether statically duplicating them is a good idea, or whether it's better to just add static placeholders.\n\nMost of these are probably trivial to write, e.g.:\n\n```\nsage: import mpmath\nsage: mpmath.mpf(1).__add__(1)\nmpf('2.0')\n```\n\nBut I can't say when I'll have time to do this.",
+    "body": "Argh. Who wrote this code?\n\nThe actual code coverage, indirectly through mpmath's unit tests (which however aren't run automatically by Sage) is close to 99%, but writing Sage doctests slipped my mind entirely.\n\nSome of these functions have doctests, but they're added at runtime when importing mpmath. I'm considering whether statically duplicating them is a good idea, or whether it's better to just add static placeholders.\n\nMost of these are probably trivial to write, e.g.:\n\n```\nsage: import mpmath\nsage: mpmath.mpf(1).__add__(1)\nmpf('2.0')\n```\nBut I can't say when I'll have time to do this.",
     "created_at": "2010-04-28T07:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -170,7 +169,6 @@ sage: import mpmath
 sage: mpmath.mpf(1).__add__(1)
 mpf('2.0')
 ```
-
 But I can't say when I'll have time to do this.
 
 
@@ -180,7 +178,7 @@ But I can't say when I'll have time to do this.
 archive/issue_comments_080362.json:
 ```json
 {
-    "body": "While I started to write some tests, I stumbled about `to_fixed()`. What does it do? Would be\n\n\n```\nsage: import mpmath\nsage: mpmath.mpf('88494.93').to_fixed(6)\n5663675\n```\n\n\nbe a doctest or a total abuse?!",
+    "body": "While I started to write some tests, I stumbled about `to_fixed()`. What does it do? Would be\n\n```\nsage: import mpmath\nsage: mpmath.mpf('88494.93').to_fixed(6)\n5663675\n```\n\nbe a doctest or a total abuse?!",
     "created_at": "2010-04-28T13:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -191,13 +189,11 @@ archive/issue_comments_080362.json:
 
 While I started to write some tests, I stumbled about `to_fixed()`. What does it do? Would be
 
-
 ```
 sage: import mpmath
 sage: mpmath.mpf('88494.93').to_fixed(6)
 5663675
 ```
-
 
 be a doctest or a total abuse?!
 
@@ -208,7 +204,7 @@ be a doctest or a total abuse?!
 archive/issue_comments_080363.json:
 ```json
 {
-    "body": "Thanks a *lot*, Harald!\n\nto_fixed converts a number to binary fixed-point format. Perhaps for clarity something like the following could be used (1.25 is for exactness):\n\n\n```\nsage: mpmath.mpf(1.25).to_fixed(10)\n1280\nsage: int(1.25 * 2^10)\n1280\n```\n",
+    "body": "Thanks a *lot*, Harald!\n\nto_fixed converts a number to binary fixed-point format. Perhaps for clarity something like the following could be used (1.25 is for exactness):\n\n```\nsage: mpmath.mpf(1.25).to_fixed(10)\n1280\nsage: int(1.25 * 2^10)\n1280\n```",
     "created_at": "2010-04-28T14:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -221,14 +217,12 @@ Thanks a *lot*, Harald!
 
 to_fixed converts a number to binary fixed-point format. Perhaps for clarity something like the following could be used (1.25 is for exactness):
 
-
 ```
 sage: mpmath.mpf(1.25).to_fixed(10)
 1280
 sage: int(1.25 * 2^10)
 1280
 ```
-
 
 
 
@@ -451,7 +445,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080375.json:
 ```json
 {
-    "body": "This obviously fails on 32-bit systems:\n\n```\nsage -t  --long -force_lib devel/sage/sage/libs/mpmath/ext_main.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-5.0.beta10/devel/sage-main/sage/libs/mpmath/ext_main.pyx\", line 2023:\n    sage: int(7.25 * 2**30)\nExpected:\n    7784628224\nGot:\n    7784628224L\n**********************************************************************\n```\n",
+    "body": "This obviously fails on 32-bit systems:\n\n```\nsage -t  --long -force_lib devel/sage/sage/libs/mpmath/ext_main.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-5.0.beta10/devel/sage-main/sage/libs/mpmath/ext_main.pyx\", line 2023:\n    sage: int(7.25 * 2**30)\nExpected:\n    7784628224\nGot:\n    7784628224L\n**********************************************************************\n```",
     "created_at": "2012-03-23T12:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
@@ -473,7 +467,6 @@ Got:
     7784628224L
 **********************************************************************
 ```
-
 
 
 

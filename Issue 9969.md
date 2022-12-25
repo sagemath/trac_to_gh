@@ -3,7 +3,7 @@
 archive/issues_009969.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dimpase @kcrisman @nthiery @timokau\n\n[Dima Pasechnik reports on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/3fe4b83c4c612663#3fe4b83c4c612663):\n\n```\nBuilds and tests OK on Linux amd64 (Debian unstable). Got one test failure:\n\nsage -t  \"devel/sage/sage/interfaces/r.py\"\n**********************************************************************\nFile \"/usr/local/src/sage/sage-4.6.alpha1/devel/sage/sage/interfaces/r.py\", line 1128:\n    sage: tmpdir in sageobj(r.getwd())\nExpected:\n    True\nGot:\n    False\n\nthat however would  not repeat if I tested again...\n```\n\n\nI've also seen this error, on occasion.  The test lines are\n\n```python\n            sage: import tempfile\n            sage: tmpdir = tempfile.mkdtemp()\n            sage: r.chdir(tmpdir)\n            sage: tmpdir in sageobj(r.getwd()) \n            True\n```\n\nOn sage.math, I get\n\n```python\nsage: import tempfile\nsage: \nsage: fail = 0\nsage: for i in xrange(1000):\n....:     tmpdir = tempfile.mkdtemp()\n....:     r.chdir(tmpdir)\n....:     if tmpdir not in sageobj(r.getwd()):\n....:             fail += 1\n....: \nsage: print fail\n13\n```\n\nfor example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9970\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dimpase @kcrisman @nthiery @timokau\n\n[Dima Pasechnik reports on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/3fe4b83c4c612663#3fe4b83c4c612663):\n\n```\nBuilds and tests OK on Linux amd64 (Debian unstable). Got one test failure:\n\nsage -t  \"devel/sage/sage/interfaces/r.py\"\n**********************************************************************\nFile \"/usr/local/src/sage/sage-4.6.alpha1/devel/sage/sage/interfaces/r.py\", line 1128:\n    sage: tmpdir in sageobj(r.getwd())\nExpected:\n    True\nGot:\n    False\n\nthat however would  not repeat if I tested again...\n```\n\nI've also seen this error, on occasion.  The test lines are\n\n```python\n            sage: import tempfile\n            sage: tmpdir = tempfile.mkdtemp()\n            sage: r.chdir(tmpdir)\n            sage: tmpdir in sageobj(r.getwd()) \n            True\n```\nOn sage.math, I get\n\n```python\nsage: import tempfile\nsage: \nsage: fail = 0\nsage: for i in xrange(1000):\n....:     tmpdir = tempfile.mkdtemp()\n....:     r.chdir(tmpdir)\n....:     if tmpdir not in sageobj(r.getwd()):\n....:             fail += 1\n....: \nsage: print fail\n13\n```\nfor example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9970\n\n",
     "created_at": "2010-09-22T22:32:47Z",
     "labels": [
         "component: doctest coverage",
@@ -37,7 +37,6 @@ Got:
 that however would  not repeat if I tested again...
 ```
 
-
 I've also seen this error, on occasion.  The test lines are
 
 ```python
@@ -47,7 +46,6 @@ I've also seen this error, on occasion.  The test lines are
             sage: tmpdir in sageobj(r.getwd()) 
             True
 ```
-
 On sage.math, I get
 
 ```python
@@ -63,7 +61,6 @@ sage: for i in xrange(1000):
 sage: print fail
 13
 ```
-
 for example.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9970
@@ -77,7 +74,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9970
 archive/issue_comments_099764.json:
 ```json
 {
-    "body": "That's very interesting, thanks for pointing it out.  Since the `r.chdir()` is a pretty recent addition, it's not surprising there are unusual bugs with this.  I get the same behavior on Mac OS X 10.4, so this is not platform dependent, unsurprisingly.\n\n I am wondering whether it is simply that the directory names are preparsed or something with all those `Integer` things - maybe these 13-20 out of 1000 are the ones that have numeric characters in the alphanumeric string?.  Though `/tmp/tmp0Py04L` only has the `04` in `Integer`, not the first `0`.  Also, I get\n\n\n```\n/tmp/tmpooH_dP [1] \"/private/tmp/tmpooH_dP\" /private/tmp/tmpooH_dP\n/tmp/tmpLPmXNF [1] \"/private/tmp/tmpLPmXNF\" /private/tmp/tmpLPmXNF\n/tmp/tmpH7BqRp [1] \"/private/tmp/tmpH7BqRp\" /private/tmp/tmpH7BqRp\n/tmp/tmpmV9yGJ [1] \"/private/tmp/tmpmV9yGJ\" /private/tmp/tmpmV9yGJ\n/tmp/tmpZig4LH [1] \"/private/tmp/tmpZig4LH\" /private/tmp/tmpZigInteger(4)H\n```\n\nin printing out the first ones until I get a failure (change the `if` loop to a `while` loop, basically), and a second time\n\n```\n/tmp/tmp2Ny1fm [1] \"/private/tmp/tmp2Ny1fm\" /private/tmp/tmp2Ny1fm\n/tmp/tmpY6qCbW [1] \"/private/tmp/tmpY6qCbW\" /private/tmp/tmpY6qCbW\n/tmp/tmpQWhSyG [1] \"/private/tmp/tmpQWhSyG\" /private/tmp/tmpQWhSyG\n/tmp/tmpJnST6Z [1] \"/private/tmp/tmpJnST6Z\" /private/tmp/tmpJnST6Z\n/tmp/tmpiP3g5g [1] \"/private/tmp/tmpiP3g5g\" /private/tmp/tmpiP3g5g\n/tmp/tmpBo_DwU [1] \"/private/tmp/tmpBo_DwU\" /private/tmp/tmpBo_DwU\n/tmp/tmp0O2kjX [1] \"/private/tmp/tmp0O2kjX\" /private/tmp/tmp0O2kjX\n/tmp/tmpJzFFFs [1] \"/private/tmp/tmpJzFFFs\" /private/tmp/tmpJzFFFs\n/tmp/tmpF3eRCC [1] \"/private/tmp/tmpF3eRCC\" /private/tmp/tmpF3eRCC\n/tmp/tmp3Vd1Lg [1] \"/private/tmp/tmp3Vd1Lg\" /private/tmp/tmp3VdInteger(1)g\n```\n\nso that can't be the issue, at least not by itself.  The position of the integer seems irrelevant as well.",
+    "body": "That's very interesting, thanks for pointing it out.  Since the `r.chdir()` is a pretty recent addition, it's not surprising there are unusual bugs with this.  I get the same behavior on Mac OS X 10.4, so this is not platform dependent, unsurprisingly.\n\n I am wondering whether it is simply that the directory names are preparsed or something with all those `Integer` things - maybe these 13-20 out of 1000 are the ones that have numeric characters in the alphanumeric string?.  Though `/tmp/tmp0Py04L` only has the `04` in `Integer`, not the first `0`.  Also, I get\n\n```\n/tmp/tmpooH_dP [1] \"/private/tmp/tmpooH_dP\" /private/tmp/tmpooH_dP\n/tmp/tmpLPmXNF [1] \"/private/tmp/tmpLPmXNF\" /private/tmp/tmpLPmXNF\n/tmp/tmpH7BqRp [1] \"/private/tmp/tmpH7BqRp\" /private/tmp/tmpH7BqRp\n/tmp/tmpmV9yGJ [1] \"/private/tmp/tmpmV9yGJ\" /private/tmp/tmpmV9yGJ\n/tmp/tmpZig4LH [1] \"/private/tmp/tmpZig4LH\" /private/tmp/tmpZigInteger(4)H\n```\nin printing out the first ones until I get a failure (change the `if` loop to a `while` loop, basically), and a second time\n\n```\n/tmp/tmp2Ny1fm [1] \"/private/tmp/tmp2Ny1fm\" /private/tmp/tmp2Ny1fm\n/tmp/tmpY6qCbW [1] \"/private/tmp/tmpY6qCbW\" /private/tmp/tmpY6qCbW\n/tmp/tmpQWhSyG [1] \"/private/tmp/tmpQWhSyG\" /private/tmp/tmpQWhSyG\n/tmp/tmpJnST6Z [1] \"/private/tmp/tmpJnST6Z\" /private/tmp/tmpJnST6Z\n/tmp/tmpiP3g5g [1] \"/private/tmp/tmpiP3g5g\" /private/tmp/tmpiP3g5g\n/tmp/tmpBo_DwU [1] \"/private/tmp/tmpBo_DwU\" /private/tmp/tmpBo_DwU\n/tmp/tmp0O2kjX [1] \"/private/tmp/tmp0O2kjX\" /private/tmp/tmp0O2kjX\n/tmp/tmpJzFFFs [1] \"/private/tmp/tmpJzFFFs\" /private/tmp/tmpJzFFFs\n/tmp/tmpF3eRCC [1] \"/private/tmp/tmpF3eRCC\" /private/tmp/tmpF3eRCC\n/tmp/tmp3Vd1Lg [1] \"/private/tmp/tmp3Vd1Lg\" /private/tmp/tmp3VdInteger(1)g\n```\nso that can't be the issue, at least not by itself.  The position of the integer seems irrelevant as well.",
     "created_at": "2010-09-23T00:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -90,7 +87,6 @@ That's very interesting, thanks for pointing it out.  Since the `r.chdir()` is a
 
  I am wondering whether it is simply that the directory names are preparsed or something with all those `Integer` things - maybe these 13-20 out of 1000 are the ones that have numeric characters in the alphanumeric string?.  Though `/tmp/tmp0Py04L` only has the `04` in `Integer`, not the first `0`.  Also, I get
 
-
 ```
 /tmp/tmpooH_dP [1] "/private/tmp/tmpooH_dP" /private/tmp/tmpooH_dP
 /tmp/tmpLPmXNF [1] "/private/tmp/tmpLPmXNF" /private/tmp/tmpLPmXNF
@@ -98,7 +94,6 @@ That's very interesting, thanks for pointing it out.  Since the `r.chdir()` is a
 /tmp/tmpmV9yGJ [1] "/private/tmp/tmpmV9yGJ" /private/tmp/tmpmV9yGJ
 /tmp/tmpZig4LH [1] "/private/tmp/tmpZig4LH" /private/tmp/tmpZigInteger(4)H
 ```
-
 in printing out the first ones until I get a failure (change the `if` loop to a `while` loop, basically), and a second time
 
 ```
@@ -113,7 +108,6 @@ in printing out the first ones until I get a failure (change the `if` loop to a 
 /tmp/tmpF3eRCC [1] "/private/tmp/tmpF3eRCC" /private/tmp/tmpF3eRCC
 /tmp/tmp3Vd1Lg [1] "/private/tmp/tmp3Vd1Lg" /private/tmp/tmp3VdInteger(1)g
 ```
-
 so that can't be the issue, at least not by itself.  The position of the integer seems irrelevant as well.
 
 
@@ -161,7 +155,7 @@ Ticket #10264 is an apparent duplicate.  Jeroen Demeyer has attached a patch the
 archive/issue_comments_099767.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> Ticket #10264 is an apparent duplicate.  Jeroen Demeyer has attached a patch there.\n\nNo, it seems to be a different problem with the same doctest.",
+    "body": "Replying to [comment:5 mpatel]:\n> Ticket #10264 is an apparent duplicate.  Jeroen Demeyer has attached a patch there.\n\n\nNo, it seems to be a different problem with the same doctest.",
     "created_at": "2010-11-15T09:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -172,6 +166,7 @@ archive/issue_comments_099767.json:
 
 Replying to [comment:5 mpatel]:
 > Ticket #10264 is an apparent duplicate.  Jeroen Demeyer has attached a patch there.
+
 
 No, it seems to be a different problem with the same doctest.
 
@@ -199,7 +194,7 @@ archive/issue_events_025160.json:
 archive/issue_comments_099768.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> No, it seems to be a different problem with the same doctest.\n\nExactly.  However, in order not to get into merge conflicts, I propose that any patch for this ticket actually goes to #10264.",
+    "body": "Replying to [comment:6 mpatel]:\n> No, it seems to be a different problem with the same doctest.\n\n\nExactly.  However, in order not to get into merge conflicts, I propose that any patch for this ticket actually goes to #10264.",
     "created_at": "2010-11-15T09:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -210,6 +205,7 @@ archive/issue_comments_099768.json:
 
 Replying to [comment:6 mpatel]:
 > No, it seems to be a different problem with the same doctest.
+
 
 Exactly.  However, in order not to get into merge conflicts, I propose that any patch for this ticket actually goes to #10264.
 
@@ -238,7 +234,7 @@ If you look carefully, you notice that these errors happen exactly when there is
 archive/issue_comments_099770.json:
 ```json
 {
-    "body": "Replying to [comment:8 jdemeyer]:\n> If you look carefully, you notice that these errors happen exactly when there is a digit followed by the letter \"L\".\nHah!  You got it nailed - \n\n```\n/tmp/tmp3Vd1Lg [1] \"/private/tmp/tmp3Vd1Lg\" /private/tmp/tmp3VdInteger(1)g\n```\n\nthe `1L` becomes `Integer(1)`.  And all of them do that.  \n\nSo it thinks we have a 'long integer' when in fact it's just a random directory.  I think maybe this is a problem in R itself, in `setwd`?",
+    "body": "Replying to [comment:8 jdemeyer]:\n> If you look carefully, you notice that these errors happen exactly when there is a digit followed by the letter \"L\".\n\nHah!  You got it nailed - \n\n```\n/tmp/tmp3Vd1Lg [1] \"/private/tmp/tmp3Vd1Lg\" /private/tmp/tmp3VdInteger(1)g\n```\nthe `1L` becomes `Integer(1)`.  And all of them do that.  \n\nSo it thinks we have a 'long integer' when in fact it's just a random directory.  I think maybe this is a problem in R itself, in `setwd`?",
     "created_at": "2010-11-15T19:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -249,12 +245,12 @@ archive/issue_comments_099770.json:
 
 Replying to [comment:8 jdemeyer]:
 > If you look carefully, you notice that these errors happen exactly when there is a digit followed by the letter "L".
+
 Hah!  You got it nailed - 
 
 ```
 /tmp/tmp3Vd1Lg [1] "/private/tmp/tmp3Vd1Lg" /private/tmp/tmp3VdInteger(1)g
 ```
-
 the `1L` becomes `Integer(1)`.  And all of them do that.  
 
 So it thinks we have a 'long integer' when in fact it's just a random directory.  I think maybe this is a problem in R itself, in `setwd`?
@@ -284,7 +280,7 @@ Changing keywords from "" to "r".
 archive/issue_comments_099772.json:
 ```json
 {
-    "body": "Replying to [comment:9 kcrisman]:\n> I think maybe this is a problem in R itself, in `setwd`?\n\nI doubt it, since `r.getwd()` returns the right thing, but `sageobj(r.getwd())` not.",
+    "body": "Replying to [comment:9 kcrisman]:\n> I think maybe this is a problem in R itself, in `setwd`?\n\n\nI doubt it, since `r.getwd()` returns the right thing, but `sageobj(r.getwd())` not.",
     "created_at": "2010-11-16T08:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -296,6 +292,7 @@ archive/issue_comments_099772.json:
 Replying to [comment:9 kcrisman]:
 > I think maybe this is a problem in R itself, in `setwd`?
 
+
 I doubt it, since `r.getwd()` returns the right thing, but `sageobj(r.getwd())` not.
 
 
@@ -305,7 +302,7 @@ I doubt it, since `r.getwd()` returns the right thing, but `sageobj(r.getwd())` 
 archive/issue_comments_099773.json:
 ```json
 {
-    "body": "If I comment out line 1717 in `interfaces/r.py`\n\n```python\n        # Change 'dL' to 'Integer(d)'\n        exp = rel_re_integer.sub(self._subs_integer, exp)\n```\n\n(in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.",
+    "body": "If I comment out line 1717 in `interfaces/r.py`\n\n```python\n        # Change 'dL' to 'Integer(d)'\n        exp = rel_re_integer.sub(self._subs_integer, exp)\n```\n(in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.",
     "created_at": "2010-11-17T07:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -320,7 +317,6 @@ If I comment out line 1717 in `interfaces/r.py`
         # Change 'dL' to 'Integer(d)'
         exp = rel_re_integer.sub(self._subs_integer, exp)
 ```
-
 (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.
 
 
@@ -330,7 +326,7 @@ If I comment out line 1717 in `interfaces/r.py`
 archive/issue_comments_099774.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> If I comment out line 1717 in `interfaces/r.py`\n> {{{\n> #!python\n>         # Change 'dL' to 'Integer(d)'\n>         exp = rel_re_integer.sub(self._subs_integer, exp)\n> }}}\n> (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.\n\nBut I suppose you might get errors somewhere else?",
+    "body": "Replying to [comment:11 mpatel]:\n> If I comment out line 1717 in `interfaces/r.py`\n> \n> ```\n> #!python\n>         # Change 'dL' to 'Integer(d)'\n>         exp = rel_re_integer.sub(self._subs_integer, exp)\n> ```\n> (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.\n\n\nBut I suppose you might get errors somewhere else?",
     "created_at": "2010-11-17T08:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -341,12 +337,14 @@ archive/issue_comments_099774.json:
 
 Replying to [comment:11 mpatel]:
 > If I comment out line 1717 in `interfaces/r.py`
-> {{{
+> 
+> ```
 > #!python
 >         # Change 'dL' to 'Integer(d)'
 >         exp = rel_re_integer.sub(self._subs_integer, exp)
-> }}}
+> ```
 > (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.
+
 
 But I suppose you might get errors somewhere else?
 
@@ -357,7 +355,7 @@ But I suppose you might get errors somewhere else?
 archive/issue_comments_099775.json:
 ```json
 {
-    "body": "Replying to [comment:12 jdemeyer]:\n> Replying to [comment:11 mpatel]:\n> > If I comment out line 1717 in `interfaces/r.py`\n> > {{{\n> > #!python\n> >         # Change 'dL' to 'Integer(d)'\n> >         exp = rel_re_integer.sub(self._subs_integer, exp)\n> > }}}\n> > (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.\n> \n> But I suppose you might get errors somewhere else?\n\nYou're probably right.  I was just following up on your observation about long integers with an experiment.\n\nHow about\n\n```python\nsage: '\"%s\"' % os.path.realpath(tmpdir) == r.eval('dput(%s)' % r.getwd().name())\nTrue\n```\n\n?  Can we simplify this?",
+    "body": "Replying to [comment:12 jdemeyer]:\n> Replying to [comment:11 mpatel]:\n> > If I comment out line 1717 in `interfaces/r.py`\n> > \n> > ```\n> > #!python\n> >         # Change 'dL' to 'Integer(d)'\n> >         exp = rel_re_integer.sub(self._subs_integer, exp)\n> > ```\n> > (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.\n\n> \n> But I suppose you might get errors somewhere else?\n\n\nYou're probably right.  I was just following up on your observation about long integers with an experiment.\n\nHow about\n\n```python\nsage: '\"%s\"' % os.path.realpath(tmpdir) == r.eval('dput(%s)' % r.getwd().name())\nTrue\n```\n?  Can we simplify this?",
     "created_at": "2010-11-26T15:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -369,14 +367,17 @@ archive/issue_comments_099775.json:
 Replying to [comment:12 jdemeyer]:
 > Replying to [comment:11 mpatel]:
 > > If I comment out line 1717 in `interfaces/r.py`
-> > {{{
+> > 
+> > ```
 > > #!python
 > >         # Change 'dL' to 'Integer(d)'
 > >         exp = rel_re_integer.sub(self._subs_integer, exp)
-> > }}}
+> > ```
 > > (in `sage.interfaces.r.RElement._sage_`), I get no failures with the script in the description.
+
 > 
 > But I suppose you might get errors somewhere else?
+
 
 You're probably right.  I was just following up on your observation about long integers with an experiment.
 
@@ -386,7 +387,6 @@ How about
 sage: '"%s"' % os.path.realpath(tmpdir) == r.eval('dput(%s)' % r.getwd().name())
 True
 ```
-
 ?  Can we simplify this?
 
 
@@ -396,7 +396,7 @@ True
 archive/issue_comments_099776.json:
 ```json
 {
-    "body": "Or\n\n```python\nsage: os.path.realpath(tmpdir) in str(r.getwd())\nTrue\n```\n\n?",
+    "body": "Or\n\n```python\nsage: os.path.realpath(tmpdir) in str(r.getwd())\nTrue\n```\n?",
     "created_at": "2010-11-26T15:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -411,7 +411,6 @@ Or
 sage: os.path.realpath(tmpdir) in str(r.getwd())
 True
 ```
-
 ?
 
 
@@ -439,7 +438,7 @@ Personally, I am **against** changing doctests when the underlying functions are
 archive/issue_comments_099778.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Personally, I am **against** changing doctests when the underlying functions are broken.  In this case, it is clearly the conversion from R to Sage which is broken, not the doctest.  By changing the doctest, we just hide the bug under the carpet instead of solving it.\n\n+1, though the doctest tries to test something else as I understand it.",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Personally, I am **against** changing doctests when the underlying functions are broken.  In this case, it is clearly the conversion from R to Sage which is broken, not the doctest.  By changing the doctest, we just hide the bug under the carpet instead of solving it.\n\n\n+1, though the doctest tries to test something else as I understand it.",
     "created_at": "2010-12-02T12:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -450,6 +449,7 @@ archive/issue_comments_099778.json:
 
 Replying to [comment:15 jdemeyer]:
 > Personally, I am **against** changing doctests when the underlying functions are broken.  In this case, it is clearly the conversion from R to Sage which is broken, not the doctest.  By changing the doctest, we just hide the bug under the carpet instead of solving it.
+
 
 +1, though the doctest tries to test something else as I understand it.
 
@@ -514,7 +514,7 @@ Attachment [9970_r_strings.patch](tarball://root/attachments/some-uuid/ticket997
 archive/issue_comments_099782.json:
 ```json
 {
-    "body": "Replying to [comment:17 wjp]:\n> I have a patch that should fix this, but due to lack of knowledge of R I can't effectively test it. I think it needs some more doctests for the `_sage_` function.\nI will eventually look at this, but because it's a rather harmless doctest failure (even though we really don't like doctest failures) I won't be able to check it out very quickly.  \n\nI'm also putting your request from sage-devel here for reference as to what you think is needed for review - thanks!\n\n```\nIf somebody more familiar with the R language and interface could take a look \nif the string-related corner cases work, and if it didn't break anything \nnon-string-related (and maybe add some more doctests to the _sage_ method), \nthat would be great. \n```\n",
+    "body": "Replying to [comment:17 wjp]:\n> I have a patch that should fix this, but due to lack of knowledge of R I can't effectively test it. I think it needs some more doctests for the `_sage_` function.\n\nI will eventually look at this, but because it's a rather harmless doctest failure (even though we really don't like doctest failures) I won't be able to check it out very quickly.  \n\nI'm also putting your request from sage-devel here for reference as to what you think is needed for review - thanks!\n\n```\nIf somebody more familiar with the R language and interface could take a look \nif the string-related corner cases work, and if it didn't break anything \nnon-string-related (and maybe add some more doctests to the _sage_ method), \nthat would be great. \n```",
     "created_at": "2011-01-14T01:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -525,6 +525,7 @@ archive/issue_comments_099782.json:
 
 Replying to [comment:17 wjp]:
 > I have a patch that should fix this, but due to lack of knowledge of R I can't effectively test it. I think it needs some more doctests for the `_sage_` function.
+
 I will eventually look at this, but because it's a rather harmless doctest failure (even though we really don't like doctest failures) I won't be able to check it out very quickly.  
 
 I'm also putting your request from sage-devel here for reference as to what you think is needed for review - thanks!
@@ -535,7 +536,6 @@ if the string-related corner cases work, and if it didn't break anything
 non-string-related (and maybe add some more doctests to the _sage_ method), 
 that would be great. 
 ```
-
 
 
 
@@ -598,7 +598,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_099786.json:
 ```json
 {
-    "body": "By #12415, a remark was added in r.py, pointing to this ticket:\n\n```\n            sage: os.path.realpath(tmpdir) == sageobj(r.getwd())  # known bug (:trac:`9970`)\n            True\n```\n\n\nNote that in #12876, Nicolas changes the test by inserting os.path.realpath on the right side as well, hence:\n\n```\n            sage: os.path.realpath(tmpdir) == os.path.realpath(sageobj(r.getwd()))\n            True\n```\n\n\nI don't know if this test is all what this ticket is about. So, please decide yourself if this ticket became a duplicate (or actually a sub-problem) of #12876",
+    "body": "By #12415, a remark was added in r.py, pointing to this ticket:\n\n```\n            sage: os.path.realpath(tmpdir) == sageobj(r.getwd())  # known bug (:trac:`9970`)\n            True\n```\n\nNote that in #12876, Nicolas changes the test by inserting os.path.realpath on the right side as well, hence:\n\n```\n            sage: os.path.realpath(tmpdir) == os.path.realpath(sageobj(r.getwd()))\n            True\n```\n\nI don't know if this test is all what this ticket is about. So, please decide yourself if this ticket became a duplicate (or actually a sub-problem) of #12876",
     "created_at": "2013-05-23T20:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -614,14 +614,12 @@ By #12415, a remark was added in r.py, pointing to this ticket:
             True
 ```
 
-
 Note that in #12876, Nicolas changes the test by inserting os.path.realpath on the right side as well, hence:
 
 ```
             sage: os.path.realpath(tmpdir) == os.path.realpath(sageobj(r.getwd()))
             True
 ```
-
 
 I don't know if this test is all what this ticket is about. So, please decide yourself if this ticket became a duplicate (or actually a sub-problem) of #12876
 
@@ -650,7 +648,7 @@ Unrelated as far as I can tell.
 archive/issue_comments_099788.json:
 ```json
 {
-    "body": "Replying to [comment:21 wjp]:\n> Unrelated as far as I can tell.\n\nOK, then the ticket status should probably reverted (it has been \"needs work\").\n\nIn any case, it seems that #12876 needs this change to make the doctest failure vanish. I suggest that a \"todo\" is added, referring to this ticket, stating that the doctest fix from #12876 is not a fix of the underlying problem, which is dealt with here.",
+    "body": "Replying to [comment:21 wjp]:\n> Unrelated as far as I can tell.\n\n\nOK, then the ticket status should probably reverted (it has been \"needs work\").\n\nIn any case, it seems that #12876 needs this change to make the doctest failure vanish. I suggest that a \"todo\" is added, referring to this ticket, stating that the doctest fix from #12876 is not a fix of the underlying problem, which is dealt with here.",
     "created_at": "2013-05-23T20:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -661,6 +659,7 @@ archive/issue_comments_099788.json:
 
 Replying to [comment:21 wjp]:
 > Unrelated as far as I can tell.
+
 
 OK, then the ticket status should probably reverted (it has been "needs work").
 
@@ -709,7 +708,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099791.json:
 ```json
 {
-    "body": "Replying to [comment:22 SimonKing]:\n> In any case, it seems that #12876 needs this change to make the doctest failure vanish.\nAre you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.",
+    "body": "Replying to [comment:22 SimonKing]:\n> In any case, it seems that #12876 needs this change to make the doctest failure vanish.\n\nAre you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.",
     "created_at": "2013-05-24T06:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -720,6 +719,7 @@ archive/issue_comments_099791.json:
 
 Replying to [comment:22 SimonKing]:
 > In any case, it seems that #12876 needs this change to make the doctest failure vanish.
+
 Are you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.
 
 
@@ -729,7 +729,7 @@ Are you sure, because I don't see what #12876 has to do with either the conversi
 archive/issue_comments_099792.json:
 ```json
 {
-    "body": "Replying to [comment:24 jdemeyer]:\n> Replying to [comment:22 SimonKing]:\n> > In any case, it seems that #12876 needs this change to make the doctest failure vanish.\n> Are you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.\n\nWell, at least it used to need it. If I recall correctly, at the time when I created the first version of this patch, we got a consistent error in the test, and with the patch the error consistently vanished.\n\nHowever, as I've learned today, the tests also pass without this patch. So, we should drop it.",
+    "body": "Replying to [comment:24 jdemeyer]:\n> Replying to [comment:22 SimonKing]:\n> > In any case, it seems that #12876 needs this change to make the doctest failure vanish.\n\n> Are you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.\n\nWell, at least it used to need it. If I recall correctly, at the time when I created the first version of this patch, we got a consistent error in the test, and with the patch the error consistently vanished.\n\nHowever, as I've learned today, the tests also pass without this patch. So, we should drop it.",
     "created_at": "2013-05-24T07:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -741,6 +741,7 @@ archive/issue_comments_099792.json:
 Replying to [comment:24 jdemeyer]:
 > Replying to [comment:22 SimonKing]:
 > > In any case, it seems that #12876 needs this change to make the doctest failure vanish.
+
 > Are you sure, because I don't see what #12876 has to do with either the conversion from R to Sage or with filesystem paths.
 
 Well, at least it used to need it. If I recall correctly, at the time when I created the first version of this patch, we got a consistent error in the test, and with the patch the error consistently vanished.
@@ -908,7 +909,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_099794.json:
 ```json
 {
-    "body": "Replying to [comment:25 SimonKing]:\n> However, as I've learned today, the tests also pass without this patch. So, we should drop it.\n\nSo should this ticket be closed as invalid?",
+    "body": "Replying to [comment:25 SimonKing]:\n> However, as I've learned today, the tests also pass without this patch. So, we should drop it.\n\n\nSo should this ticket be closed as invalid?",
     "created_at": "2015-02-10T08:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -920,6 +921,7 @@ archive/issue_comments_099794.json:
 Replying to [comment:25 SimonKing]:
 > However, as I've learned today, the tests also pass without this patch. So, we should drop it.
 
+
 So should this ticket be closed as invalid?
 
 
@@ -929,7 +931,7 @@ So should this ticket be closed as invalid?
 archive/issue_comments_099795.json:
 ```json
 {
-    "body": "Replying to [comment:30 mmezzarobba]:\n> So should this ticket be closed as invalid?\n**NO**",
+    "body": "Replying to [comment:30 mmezzarobba]:\n> So should this ticket be closed as invalid?\n\n**NO**",
     "created_at": "2015-02-10T09:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9969",
     "type": "issue_comment",
@@ -940,6 +942,7 @@ archive/issue_comments_099795.json:
 
 Replying to [comment:30 mmezzarobba]:
 > So should this ticket be closed as invalid?
+
 **NO**
 
 

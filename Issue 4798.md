@@ -3,7 +3,7 @@
 archive/issues_004798.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nThis is from #4639:\n\n```\nInstall cython-0.10.3.spkg at http://sage.math.washington.edu/home/robertwb/cython/ ,\nwhich contains a fix to http://trac.cython.org/cython_trac/ticket/162 and I think is \nthe underlying cause here (and probably elsewhere). \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4798\n\n",
+    "body": "Assignee: @robertwb\n\nThis is from #4639:\n\n```\nInstall cython-0.10.3.spkg at http://sage.math.washington.edu/home/robertwb/cython/ ,\nwhich contains a fix to http://trac.cython.org/cython_trac/ticket/162 and I think is \nthe underlying cause here (and probably elsewhere). \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4798\n\n",
     "created_at": "2008-12-14T17:08:53Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ Install cython-0.10.3.spkg at http://sage.math.washington.edu/home/robertwb/cyth
 which contains a fix to http://trac.cython.org/cython_trac/ticket/162 and I think is 
 the underlying cause here (and probably elsewhere). 
 ```
-
 
 Cheers,
 

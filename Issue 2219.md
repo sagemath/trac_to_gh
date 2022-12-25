@@ -3,7 +3,7 @@
 archive/issues_002219.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nroot_field()\n-- whose docstring does not say that self should be irreducible,\nthough in fact it must. \n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2219\n\n",
+    "body": "Assignee: @williamstein\n\n```\nroot_field()\n-- whose docstring does not say that self should be irreducible,\nthough in fact it must. \n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2219\n\n",
     "created_at": "2008-02-20T03:51:37Z",
     "labels": [
         "component: number theory",
@@ -19,13 +19,11 @@ archive/issues_002219.json:
 ```
 Assignee: @williamstein
 
-
 ```
 root_field()
 -- whose docstring does not say that self should be irreducible,
 though in fact it must. 
 ```
-
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9
 

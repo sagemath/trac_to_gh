@@ -3,7 +3,7 @@
 archive/issues_001904.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
     "created_at": "2008-01-24T02:46:27Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_001904.json:
 Assignee: @williamstein
 
 CC:  @loefflerd
-
 
 ```
 sage: E = EllipticCurve('37a1')
@@ -42,7 +41,6 @@ Traceback (most recent call last):
 TypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational
 s
 ```
-
 
 The root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. 
 
@@ -245,7 +243,7 @@ Changing status from new to needs_info.
 archive/issue_comments_012031.json:
 ```json
 {
-    "body": "the examples in the description work with Sage 4.7.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 9322\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.98691729246392\nsage: Lambda.matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\nsage: Lambda.gram_matrix()\n[ 8.96079466670088 0.000000000000000]\n[0.000000000000000  6.00930990211758]\nsage: Lambda.basis()\n(2.99345864623196, 2.45138938198679*I)\nsage: Lambda.basis_matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\n```\n\nShould this ticket be closed?\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "body": "the examples in the description work with Sage 4.7.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 9322\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.98691729246392\nsage: Lambda.matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\nsage: Lambda.gram_matrix()\n[ 8.96079466670088 0.000000000000000]\n[0.000000000000000  6.00930990211758]\nsage: Lambda.basis()\n(2.99345864623196, 2.45138938198679*I)\nsage: Lambda.basis_matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\n```\nShould this ticket be closed?\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
     "created_at": "2011-09-16T13:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
@@ -276,7 +274,6 @@ sage: Lambda.basis_matrix()
 [ 2.99345864623196 0.000000000000000]
 [0.000000000000000  2.45138938198679]
 ```
-
 Should this ticket be closed?
 | Sage Version 4.7.1, Release Date: 2011-08-11                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -289,7 +286,7 @@ Paul
 archive/issue_comments_012032.json:
 ```json
 {
-    "body": "Replying to [comment:7 zimmerma]:\n\n> Should this ticket be closed?\n> \n> Paul\n\nIn my opinion, yes, but see the comments above by David Loeffler.",
+    "body": "Replying to [comment:7 zimmerma]:\n\n> Should this ticket be closed?\n> \n> Paul\n\n\nIn my opinion, yes, but see the comments above by David Loeffler.",
     "created_at": "2011-09-16T13:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
@@ -303,6 +300,7 @@ Replying to [comment:7 zimmerma]:
 > Should this ticket be closed?
 > 
 > Paul
+
 
 In my opinion, yes, but see the comments above by David Loeffler.
 

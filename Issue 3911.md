@@ -3,7 +3,7 @@
 archive/issues_003911.json:
 ```json
 {
-    "body": "Assignee: tba\n\nthe framework should allow to generate a bibliography etc. while not reinventing the wheel: BibTeX? By citing in docstrings I mean stuff like this:\n\n```\nINPUT:\n   foo -- bar (as described in [BCDT]\n\nREFERENCES:\n[BCDT] Breuil, Conrad, Diamond, Taylor, \"Modularity ....\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3911\n\n",
+    "body": "Assignee: tba\n\nthe framework should allow to generate a bibliography etc. while not reinventing the wheel: BibTeX? By citing in docstrings I mean stuff like this:\n\n```\nINPUT:\n   foo -- bar (as described in [BCDT]\n\nREFERENCES:\n[BCDT] Breuil, Conrad, Diamond, Taylor, \"Modularity ....\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3911\n\n",
     "created_at": "2008-08-20T14:29:10Z",
     "labels": [
         "component: documentation"
@@ -26,7 +26,6 @@ INPUT:
 REFERENCES:
 [BCDT] Breuil, Conrad, Diamond, Taylor, "Modularity ...."
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3911
 
@@ -148,7 +147,7 @@ It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citatio
 archive/issue_comments_027920.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citations\n\nI now that. I meant in Sage's documentation so that documentation writes in Sage will use it :).\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 malb]:\n> It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citations\n\n\nI now that. I meant in Sage's documentation so that documentation writes in Sage will use it :).\n\nCheers,\n\nMichael",
     "created_at": "2009-04-27T15:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
@@ -159,6 +158,7 @@ archive/issue_comments_027920.json:
 
 Replying to [comment:3 malb]:
 > It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citations
+
 
 I now that. I meant in Sage's documentation so that documentation writes in Sage will use it :).
 

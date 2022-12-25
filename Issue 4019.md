@@ -49,7 +49,7 @@ Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket401
 archive/issue_comments_028928.json:
 ```json
 {
-    "body": "The code looks fine.  However, I'm getting a doctest failure in finite_field_ntl_gf2e.pyx:\n\n\n```\nFile \"/opt/sage/tmp/finite_field_ntl_gf2e.py\", line 1018:\n    sage: e == f\nExpected:\n    True\nGot:\n    False\n```\n\n\nI can't tell where this is coming from.",
+    "body": "The code looks fine.  However, I'm getting a doctest failure in finite_field_ntl_gf2e.pyx:\n\n```\nFile \"/opt/sage/tmp/finite_field_ntl_gf2e.py\", line 1018:\n    sage: e == f\nExpected:\n    True\nGot:\n    False\n```\n\nI can't tell where this is coming from.",
     "created_at": "2008-08-31T12:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_028928.json:
 
 The code looks fine.  However, I'm getting a doctest failure in finite_field_ntl_gf2e.pyx:
 
-
 ```
 File "/opt/sage/tmp/finite_field_ntl_gf2e.py", line 1018:
     sage: e == f
@@ -69,7 +68,6 @@ Expected:
 Got:
     False
 ```
-
 
 I can't tell where this is coming from.
 
@@ -120,7 +118,7 @@ I have been unable to reproduce this error, are you sure it's from this patch?
 archive/issue_comments_028931.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> I have been unable to reproduce this error, are you sure it's from this patch? \n\nRobert, Alex,\n\napplying this patch only to my merge tree does not result in any doctest failure, so I am giving this a positive review. Hopefully this will not bit us in the ass down the road ;)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> I have been unable to reproduce this error, are you sure it's from this patch? \n\n\nRobert, Alex,\n\napplying this patch only to my merge tree does not result in any doctest failure, so I am giving this a positive review. Hopefully this will not bit us in the ass down the road ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T21:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
@@ -131,6 +129,7 @@ archive/issue_comments_028931.json:
 
 Replying to [comment:4 robertwb]:
 > I have been unable to reproduce this error, are you sure it's from this patch? 
+
 
 Robert, Alex,
 

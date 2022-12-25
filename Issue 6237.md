@@ -3,7 +3,7 @@
 archive/issues_006237.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: roots CDF multiplicities\n\n\n```\nsage: pari('v')\nv\nsage: pari('u')\nu\nsage: u = QQ['u'].0\nsage: v = QQ['u']['v'].0\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant()\n-27*u^14 - 32*u^9\nsage: f.discriminant().roots(CDF, multiplicities=False)\n\n[-1.03456371594,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n -0.31969776999 - 0.983928563571*I,\n -0.31969776999 + 0.983928563571*I,\n 0.836979627962 - 0.608101294789*I,\n 0.836979627962 + 0.608101294789*I]\n```\n\n\nNote the repetition of 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6237\n\n",
+    "body": "Assignee: somebody\n\nKeywords: roots CDF multiplicities\n\n```\nsage: pari('v')\nv\nsage: pari('u')\nu\nsage: u = QQ['u'].0\nsage: v = QQ['u']['v'].0\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant()\n-27*u^14 - 32*u^9\nsage: f.discriminant().roots(CDF, multiplicities=False)\n\n[-1.03456371594,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n -0.31969776999 - 0.983928563571*I,\n -0.31969776999 + 0.983928563571*I,\n 0.836979627962 - 0.608101294789*I,\n 0.836979627962 + 0.608101294789*I]\n```\n\nNote the repetition of 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6237\n\n",
     "created_at": "2009-06-06T22:30:12Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_006237.json:
 Assignee: somebody
 
 Keywords: roots CDF multiplicities
-
 
 ```
 sage: pari('v')
@@ -48,7 +47,6 @@ sage: f.discriminant().roots(CDF, multiplicities=False)
  0.836979627962 - 0.608101294789*I,
  0.836979627962 + 0.608101294789*I]
 ```
-
 
 Note the repetition of 0.
 
@@ -119,7 +117,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_049727.json:
 ```json
 {
-    "body": "This is fine overall, assuming the answer to the following question is yes.\n\n```\n            if output_complex:\n                rts = sort_complex_numbers_for_display([L(root) for root in ext_rts])\n            else:\n                rts = [L(root.real()) for root in ext_rts if root.imag() == 0]\n```\n\nThe first list gives a canonical ordering, so using \n\n```\n                rts_mult.append((rt, mult))\n                j += mult\n```\n\nis okay, it won't append the same thing twice.  Is that also true for the second list?  I couldn't come up with an example that breaks it, but that just means I don't know much about how polynomials are represented internally.  At any rate, it should probably be ordered, just to be on the safe side, if you use that way of finding multiplicities.  Does Pari not compute multiplicities for this?  Maxima's implementation does, though perhaps it doesn't do arbitrary precision.  I assume numpy definitely doesn't do multiplicities.",
+    "body": "This is fine overall, assuming the answer to the following question is yes.\n\n```\n            if output_complex:\n                rts = sort_complex_numbers_for_display([L(root) for root in ext_rts])\n            else:\n                rts = [L(root.real()) for root in ext_rts if root.imag() == 0]\n```\nThe first list gives a canonical ordering, so using \n\n```\n                rts_mult.append((rt, mult))\n                j += mult\n```\nis okay, it won't append the same thing twice.  Is that also true for the second list?  I couldn't come up with an example that breaks it, but that just means I don't know much about how polynomials are represented internally.  At any rate, it should probably be ordered, just to be on the safe side, if you use that way of finding multiplicities.  Does Pari not compute multiplicities for this?  Maxima's implementation does, though perhaps it doesn't do arbitrary precision.  I assume numpy definitely doesn't do multiplicities.",
     "created_at": "2010-01-04T15:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
@@ -136,14 +134,12 @@ This is fine overall, assuming the answer to the following question is yes.
             else:
                 rts = [L(root.real()) for root in ext_rts if root.imag() == 0]
 ```
-
 The first list gives a canonical ordering, so using 
 
 ```
                 rts_mult.append((rt, mult))
                 j += mult
 ```
-
 is okay, it won't append the same thing twice.  Is that also true for the second list?  I couldn't come up with an example that breaks it, but that just means I don't know much about how polynomials are represented internally.  At any rate, it should probably be ordered, just to be on the safe side, if you use that way of finding multiplicities.  Does Pari not compute multiplicities for this?  Maxima's implementation does, though perhaps it doesn't do arbitrary precision.  I assume numpy definitely doesn't do multiplicities.
 
 
@@ -153,7 +149,7 @@ is okay, it won't append the same thing twice.  Is that also true for the second
 archive/issue_comments_049728.json:
 ```json
 {
-    "body": "Thanks for catching this.\n\nFrom Pari's documentation for the function we're using:\n\n\n```\npolroots(pol,{flag = 0})\n\ncomplex roots of the polynomial pol, given as a column vector where each root is repeated according to its multiplicity. [...]\n\nThe algorithm used is a modification of A.Sch\u00a8nhage's root-finding algorithm, due to and implemented by X.Gourdon. Barring bugs, it is guaranteed to converge and to give the roots to the required accuracy.\n```\n\n\nThere is no mention of the roots being sorted.  I guess I could read the source code and find out, but I like you suggestion of sorting the Pari output anyway -- just in case they change the behaviour in the future.\n\nAlso from the above snippet, Pari indeed does not give the multiplicities, it just repeats each root the correct number of times.\n\nI will replace the patch soon.",
+    "body": "Thanks for catching this.\n\nFrom Pari's documentation for the function we're using:\n\n```\npolroots(pol,{flag = 0})\n\ncomplex roots of the polynomial pol, given as a column vector where each root is repeated according to its multiplicity. [...]\n\nThe algorithm used is a modification of A.Sch\u00a8nhage's root-finding algorithm, due to and implemented by X.Gourdon. Barring bugs, it is guaranteed to converge and to give the roots to the required accuracy.\n```\n\nThere is no mention of the roots being sorted.  I guess I could read the source code and find out, but I like you suggestion of sorting the Pari output anyway -- just in case they change the behaviour in the future.\n\nAlso from the above snippet, Pari indeed does not give the multiplicities, it just repeats each root the correct number of times.\n\nI will replace the patch soon.",
     "created_at": "2010-01-04T23:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
@@ -166,7 +162,6 @@ Thanks for catching this.
 
 From Pari's documentation for the function we're using:
 
-
 ```
 polroots(pol,{flag = 0})
 
@@ -174,7 +169,6 @@ complex roots of the polynomial pol, given as a column vector where each root is
 
 The algorithm used is a modification of A.Sch¨nhage's root-finding algorithm, due to and implemented by X.Gourdon. Barring bugs, it is guaranteed to converge and to give the roots to the required accuracy.
 ```
-
 
 There is no mention of the roots being sorted.  I guess I could read the source code and find out, but I like you suggestion of sorting the Pari output anyway -- just in case they change the behaviour in the future.
 
@@ -285,7 +279,7 @@ Anyway, positive review!
 archive/issue_comments_049734.json:
 ```json
 {
-    "body": "Did you try the whole thing, including `pari('v')` and `pari('u')` ?\n\nIt seems to work for me.  Of course, if I had written the example I would have tried something like\n\n\n```\nsage: R.<u> = QQ[]\nsage: S.<v> = R[]\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant()\n```\n\n\nThis does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  It's a shame that it doesn't work out of the box.  In fact, I would even like something like the following to work:\n\n\n```\nsage: R.<u, v> = QQ[]\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant(v)\n```\n\n\nAnyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.",
+    "body": "Did you try the whole thing, including `pari('v')` and `pari('u')` ?\n\nIt seems to work for me.  Of course, if I had written the example I would have tried something like\n\n```\nsage: R.<u> = QQ[]\nsage: S.<v> = R[]\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant()\n```\n\nThis does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  It's a shame that it doesn't work out of the box.  In fact, I would even like something like the following to work:\n\n```\nsage: R.<u, v> = QQ[]\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant(v)\n```\n\nAnyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.",
     "created_at": "2010-01-05T06:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
@@ -298,7 +292,6 @@ Did you try the whole thing, including `pari('v')` and `pari('u')` ?
 
 It seems to work for me.  Of course, if I had written the example I would have tried something like
 
-
 ```
 sage: R.<u> = QQ[]
 sage: S.<v> = R[]
@@ -306,16 +299,13 @@ sage: f = v^3 - u^7 + 2*u^3*v
 sage: f.discriminant()
 ```
 
-
 This does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  It's a shame that it doesn't work out of the box.  In fact, I would even like something like the following to work:
-
 
 ```
 sage: R.<u, v> = QQ[]
 sage: f = v^3 - u^7 + 2*u^3*v
 sage: f.discriminant(v)
 ```
-
 
 Anyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.
 
@@ -326,7 +316,7 @@ Anyway, it's beyond the scope of this ticket.  I might open an enhancement ticke
 archive/issue_comments_049735.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexGhitza]:\n> Did you try the whole thing, including `pari('v')` and `pari('u')` ?\nYes.  Again, oddly enough, the same thing did work when I tried it on sage.math, so it must be highly sensitive to something, though not sure what - maybe I had typed in something earlier that made it work/not work.\n> \n> It seems to work for me.  Of course, if I had written the example I would have tried something like\n> \n> {{{\n> sage: R.<u> = QQ[]\n> sage: S.<v> = R[]\n> sage: f = v^3 - u^7 + 2*u^3*v\n> sage: f.discriminant()\n> }}}\n> \n> This does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  \nHuh.  Well, glad to know it.\n> Anyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.\nGo for it, though I won't be able to help on it.",
+    "body": "Replying to [comment:6 AlexGhitza]:\n> Did you try the whole thing, including `pari('v')` and `pari('u')` ?\nYes.  Again, oddly enough, the same thing did work when I tried it on sage.math, so it must be highly sensitive to something, though not sure what - maybe I had typed in something earlier that made it work/not work.\n> \n> It seems to work for me.  Of course, if I had written the example I would have tried something like\n> \n> \n> ```\n> sage: R.<u> = QQ[]\n> sage: S.<v> = R[]\n> sage: f = v^3 - u^7 + 2*u^3*v\n> sage: f.discriminant()\n> ```\n> \n> This does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  \nHuh.  Well, glad to know it.\n> Anyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.\n\nGo for it, though I won't be able to help on it.",
     "created_at": "2010-01-05T13:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
@@ -341,16 +331,18 @@ Yes.  Again, oddly enough, the same thing did work when I tried it on sage.math,
 > 
 > It seems to work for me.  Of course, if I had written the example I would have tried something like
 > 
-> {{{
+> 
+> ```
 > sage: R.<u> = QQ[]
 > sage: S.<v> = R[]
 > sage: f = v^3 - u^7 + 2*u^3*v
 > sage: f.discriminant()
-> }}}
+> ```
 > 
 > This does indeed fail with a `PariError(8)`.  And this is apparently documented in the docstring for `discriminant`.  
 Huh.  Well, glad to know it.
 > Anyway, it's beyond the scope of this ticket.  I might open an enhancement ticket about it.
+
 Go for it, though I won't be able to help on it.
 
 

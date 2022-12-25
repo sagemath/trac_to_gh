@@ -71,7 +71,7 @@ Fixed the doctests
 archive/issue_comments_061989.json:
 ```json
 {
-    "body": "I got two test failures:\n\n```\nsage -t  \"4.2/devel/sage-main/sage/sphinxify.py\"            \n**********************************************************************\nFile \"/home/apps/sage-4.2/devel/sage-main/sage/sphinxify.py\", line 51:\n    sage: sphinxify('A test')\nExpected:\n    '\\n<div class=\"docstring\">\\n    \\n  <p>A test</p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  <p>A test</p>\\n\\n\\n</div>'\n**********************************************************************\nFile \"/home/apps/sage-4.2/devel/sage-main/sage/sphinxify.py\", line 53:\n    sage: sphinxify('**Testing**\\n`monospace`')\nExpected:\n    '\\n<div class=\"docstring\"...<strong>Testing</strong>\\n<span class=\"math\"...</p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  <p><strong>Testing</strong>\\n<span class=\"math\">monospace</span></p>\\n\\n\\n</div>'\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_2\n***Test Failed*** 2 failures.\n```\n\nBut it could be my setup.  If not, please see version 2 of the patch.",
+    "body": "I got two test failures:\n\n```\nsage -t  \"4.2/devel/sage-main/sage/sphinxify.py\"            \n**********************************************************************\nFile \"/home/apps/sage-4.2/devel/sage-main/sage/sphinxify.py\", line 51:\n    sage: sphinxify('A test')\nExpected:\n    '\\n<div class=\"docstring\">\\n    \\n  <p>A test</p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  <p>A test</p>\\n\\n\\n</div>'\n**********************************************************************\nFile \"/home/apps/sage-4.2/devel/sage-main/sage/sphinxify.py\", line 53:\n    sage: sphinxify('**Testing**\\n`monospace`')\nExpected:\n    '\\n<div class=\"docstring\"...<strong>Testing</strong>\\n<span class=\"math\"...</p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  <p><strong>Testing</strong>\\n<span class=\"math\">monospace</span></p>\\n\\n\\n</div>'\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_2\n***Test Failed*** 2 failures.\n```\nBut it could be my setup.  If not, please see version 2 of the patch.",
     "created_at": "2009-11-04T05:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ Got:
    2 of   5 in __main__.example_2
 ***Test Failed*** 2 failures.
 ```
-
 But it could be my setup.  If not, please see version 2 of the patch.
 
 

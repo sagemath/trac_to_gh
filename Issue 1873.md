@@ -3,7 +3,7 @@
 archive/issues_001873.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI'm using Sage 2.10 now. Expansion for elements in SFAElementary works\ngreat now, but there is another problem: the expansion lies in the\nwrong ring.\n\n```\nsage: e=SFAElementary(QQ)\nsage: f=e([2]).expand(2)\nsage: f\nx0*x1\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\n\nThe same code but for SFASchur results in:\n\n```\nsage: s=SFASchur(QQ)\nsage: f=s([2]).expand(2)\nsage: f\nx0^2 + x0*x1 + x1^2\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1873\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI'm using Sage 2.10 now. Expansion for elements in SFAElementary works\ngreat now, but there is another problem: the expansion lies in the\nwrong ring.\n\n```\nsage: e=SFAElementary(QQ)\nsage: f=e([2]).expand(2)\nsage: f\nx0*x1\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\nThe same code but for SFASchur results in:\n\n```\nsage: s=SFASchur(QQ)\nsage: f=s([2]).expand(2)\nsage: f\nx0^2 + x0*x1 + x1^2\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1 over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1873\n\n",
     "created_at": "2008-01-20T22:22:55Z",
     "labels": [
         "component: combinatorics",
@@ -34,7 +34,6 @@ sage: f.parent()
 Multivariate Polynomial Ring in x0, x1, x2 over Rational Field
 ```
 
-
 The same code but for SFASchur results in:
 
 ```
@@ -45,7 +44,6 @@ x0^2 + x0*x1 + x1^2
 sage: f.parent()
 Multivariate Polynomial Ring in x0, x1 over Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1873
 

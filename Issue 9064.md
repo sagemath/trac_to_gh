@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083979.json:
 ```json
 {
-    "body": "Since the file is empty, I can't do think of any way to actually do this with HG.  It seems impossible.  \n\n```\nflat:matrix wstein$ hg rm  padics\nremoving padics/__init__.py\nflat:matrix wstein$ \nflat:matrix wstein$ \nflat:matrix wstein$ hg ci\nflat:matrix wstein$ hg export ip\nabort: unknown revision 'ip'!\nflat:matrix wstein$ hg export tip\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1281549848 25200\n# Node ID 029114d1f8a76cbd4d88b2a9a28fecadac170205\n# Parent  5b338f2e484f2065d3d30d47bc204d6e9ed13d12\ntrac 9064 -- remove p-adic matrix directory\n```\n\n(see nothing!)\n\nSo there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nSo to the release manager merging this, just do the following:\n\n\n```\ncd SAGE_ROOT/devel/sage/sage/matrix\nsage -hg rm  padics\nsage -hg ci\n```\n\n\nand checkin the resulting empty patch.    Unfortunately, this won't do anything for people doing \"sage -upgrade\".  Anyway, it's an empty directory so whatever happens is pretty harmless.",
+    "body": "Since the file is empty, I can't do think of any way to actually do this with HG.  It seems impossible.  \n\n```\nflat:matrix wstein$ hg rm  padics\nremoving padics/__init__.py\nflat:matrix wstein$ \nflat:matrix wstein$ \nflat:matrix wstein$ hg ci\nflat:matrix wstein$ hg export ip\nabort: unknown revision 'ip'!\nflat:matrix wstein$ hg export tip\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1281549848 25200\n# Node ID 029114d1f8a76cbd4d88b2a9a28fecadac170205\n# Parent  5b338f2e484f2065d3d30d47bc204d6e9ed13d12\ntrac 9064 -- remove p-adic matrix directory\n```\n(see nothing!)\n\nSo there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nSo to the release manager merging this, just do the following:\n\n```\ncd SAGE_ROOT/devel/sage/sage/matrix\nsage -hg rm  padics\nsage -hg ci\n```\n\nand checkin the resulting empty patch.    Unfortunately, this won't do anything for people doing \"sage -upgrade\".  Anyway, it's an empty directory so whatever happens is pretty harmless.",
     "created_at": "2010-08-11T18:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
@@ -78,20 +78,17 @@ flat:matrix wstein$ hg export tip
 # Parent  5b338f2e484f2065d3d30d47bc204d6e9ed13d12
 trac 9064 -- remove p-adic matrix directory
 ```
-
 (see nothing!)
 
 So there is no patch to post, and I take David Roe's statement (above) as a positive review.
 
 So to the release manager merging this, just do the following:
 
-
 ```
 cd SAGE_ROOT/devel/sage/sage/matrix
 sage -hg rm  padics
 sage -hg ci
 ```
-
 
 and checkin the resulting empty patch.    Unfortunately, this won't do anything for people doing "sage -upgrade".  Anyway, it's an empty directory so whatever happens is pretty harmless.
 
@@ -138,7 +135,7 @@ Remove matrix/padics.
 archive/issue_comments_083982.json:
 ```json
 {
-    "body": "Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by @qed777 created at 2010-08-31 02:06:01\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nI've attached a patch made with the Mercurial queues extension.",
+    "body": "Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by @qed777 created at 2010-08-31 02:06:01\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\n\nI've attached a patch made with the Mercurial queues extension.",
     "created_at": "2010-08-31T02:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
@@ -151,6 +148,7 @@ Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some
 
 Replying to [comment:1 was]:
 > So there is no patch to post, and I take David Roe's statement (above) as a positive review.
+
 
 I've attached a patch made with the Mercurial queues extension.
 

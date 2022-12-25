@@ -380,7 +380,7 @@ An addtional patch to fix some bugs in the dual lattice generation/ description.
 archive/issue_comments_091036.json:
 ```json
 {
-    "body": "Please open a new ticket for your bugfix since this ticket is already closed. Btw.:\n\n\n```\nsage: A\n[   1    5   -3    1]\n[-290  -14    1    1]\n[ -13   -6    6   -1]\n[  15   -1    3   62]\n\nsage: A.matrix_from_rows(range(A.nrows())[::-1])\n[  15   -1    3   62]\n[ -13   -6    6   -1]\n[-290  -14    1    1]\n[   1    5   -3    1]\n\n```\n",
+    "body": "Please open a new ticket for your bugfix since this ticket is already closed. Btw.:\n\n```\nsage: A\n[   1    5   -3    1]\n[-290  -14    1    1]\n[ -13   -6    6   -1]\n[  15   -1    3   62]\n\nsage: A.matrix_from_rows(range(A.nrows())[::-1])\n[  15   -1    3   62]\n[ -13   -6    6   -1]\n[-290  -14    1    1]\n[   1    5   -3    1]\n\n```",
     "created_at": "2010-07-21T08:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
@@ -390,7 +390,6 @@ archive/issue_comments_091036.json:
 ```
 
 Please open a new ticket for your bugfix since this ticket is already closed. Btw.:
-
 
 ```
 sage: A
@@ -406,4 +405,3 @@ sage: A.matrix_from_rows(range(A.nrows())[::-1])
 [   1    5   -3    1]
 
 ```
-

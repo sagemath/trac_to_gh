@@ -3,7 +3,7 @@
 archive/issues_004867.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -i gcc-4.2.1\n...\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n/usr/include/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4867\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -i gcc-4.2.1\n...\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n/usr/include/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4867\n\n",
     "created_at": "2008-12-24T05:54:21Z",
     "labels": [
         "component: packages: optional",
@@ -18,7 +18,6 @@ archive/issues_004867.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage -i gcc-4.2.1
 ...
@@ -32,7 +31,6 @@ In file included from /usr/include/features.h:354,
                  from ../../gcc-4.2.1/gcc/tsystem.h:90,
                  from ../../gcc-4.2.1/gcc/libgcc2.c:33:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4867
 
@@ -84,7 +82,7 @@ archive/issue_events_011207.json:
 archive/issue_comments_036804.json:
 ```json
 {
-    "body": "The issue is not that bits are missing, the problem is plainly and simply that on Ubuntu multi lib in *any* upstream gcc is broken because the Ubuntu people chose to rename\n\n```\nlib64 -> lib\nlib -> lib32\n```\n\nOne can disable multilib support and get a 64 bit gcc on sage.math that way.\n\nCheers,\n\nMichael",
+    "body": "The issue is not that bits are missing, the problem is plainly and simply that on Ubuntu multi lib in *any* upstream gcc is broken because the Ubuntu people chose to rename\n\n```\nlib64 -> lib\nlib -> lib32\n```\nOne can disable multilib support and get a 64 bit gcc on sage.math that way.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-11T02:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
@@ -99,7 +97,6 @@ The issue is not that bits are missing, the problem is plainly and simply that o
 lib64 -> lib
 lib -> lib32
 ```
-
 One can disable multilib support and get a 64 bit gcc on sage.math that way.
 
 Cheers,

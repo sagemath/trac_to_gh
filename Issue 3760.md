@@ -3,7 +3,7 @@
 archive/issues_003760.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nTrying:\n    for p in prime_range(Integer(10000)):           #long time (~20s)###line 1014:_sage_    >>> for p in prime_range(10000):           #long time (~20s)\n          if p != Integer(389):\n              G=E.change_ring(GF(p)).abelian_group()\nExpecting nothing\n\nerror: no more memory\nSystem 5116k:5116k Appl 4666k/449k Malloc 4088k/3k Valloc 1024k/445k Pages 159/97 Regions 2:2\n\nhalt 14  \n\n         [19.0 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long --verbose devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\nTotal time for all tests: 19.0 seconds\nbsd:sage-3.1.alpha0 was$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3760\n\n",
+    "body": "Assignee: @williamstein\n\n```\nTrying:\n    for p in prime_range(Integer(10000)):           #long time (~20s)###line 1014:_sage_    >>> for p in prime_range(10000):           #long time (~20s)\n          if p != Integer(389):\n              G=E.change_ring(GF(p)).abelian_group()\nExpecting nothing\n\nerror: no more memory\nSystem 5116k:5116k Appl 4666k/449k Malloc 4088k/3k Valloc 1024k/445k Pages 159/97 Regions 2:2\n\nhalt 14  \n\n         [19.0 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long --verbose devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\nTotal time for all tests: 19.0 seconds\nbsd:sage-3.1.alpha0 was$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3760\n\n",
     "created_at": "2008-08-02T19:05:06Z",
     "labels": [
         "component: number theory",
@@ -18,7 +18,6 @@ archive/issues_003760.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Trying:
@@ -43,7 +42,6 @@ The following tests failed:
 Total time for all tests: 19.0 seconds
 bsd:sage-3.1.alpha0 was$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3760
 
@@ -120,7 +118,7 @@ gsw
 archive/issue_comments_026653.json:
 ```json
 {
-    "body": "The following code specifically seems to expose the problem:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(Integer(10000)): \n    if p != Integer(389):\n        G=E.change_ring(GF(p)).abelian_group()\n```\n\nOn sage.math the memory increase is about 70 MB with Sage 3.2.2.rc0, so I have no idea how this could fail on OSX.\n\nCheers,\n\nMichael",
+    "body": "The following code specifically seems to expose the problem:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(Integer(10000)): \n    if p != Integer(389):\n        G=E.change_ring(GF(p)).abelian_group()\n```\nOn sage.math the memory increase is about 70 MB with Sage 3.2.2.rc0, so I have no idea how this could fail on OSX.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-17T03:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3760",
     "type": "issue_comment",
@@ -137,7 +135,6 @@ for p in prime_range(Integer(10000)):
     if p != Integer(389):
         G=E.change_ring(GF(p)).abelian_group()
 ```
-
 On sage.math the memory increase is about 70 MB with Sage 3.2.2.rc0, so I have no idea how this could fail on OSX.
 
 Cheers,
@@ -151,7 +148,7 @@ Michael
 archive/issue_comments_026654.json:
 ```json
 {
-    "body": "This exposes the problem much more clearly on my MacBook Pro:\n\n```\nteragon:sage-3.3.rc2 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve('389a')\nsage: time v = [E.change_ring(GF(p)) for p in prime_range(10000) if p != 389]\n| Sage Version 3.3.rc2, Release Date: 2009-02-17                     |\n| Type notebook() for the GUI, and license() for information.        |\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\n",
+    "body": "This exposes the problem much more clearly on my MacBook Pro:\n\n```\nteragon:sage-3.3.rc2 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve('389a')\nsage: time v = [E.change_ring(GF(p)) for p in prime_range(10000) if p != 389]\n| Sage Version 3.3.rc2, Release Date: 2009-02-17                     |\n| Type notebook() for the GUI, and license() for information.        |\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```",
     "created_at": "2009-02-19T18:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3760",
     "type": "issue_comment",
@@ -178,13 +175,12 @@ halt 14
 
 
 
-
 ---
 
 archive/issue_comments_026655.json:
 ```json
 {
-    "body": "This is really a problem with Singular.  It has nothing to do with elliptic curve:\n\n\n```\nteragon:sage-3.3.rc2 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: v = prime_range(4974); len(v)\n666\nsage: w = [GF(p)['x,y'] for p in v]\n| Sage Version 3.3.rc2, Release Date: 2009-02-17                     |\n| Type notebook() for the GUI, and license() for information.        |\nerror: no more memory (mminit.cc)\nSystem 4608k:4608k Appl 4510k/97k Malloc 4093k/2k Valloc 512k/95k Pages 121/7 Regions 1:1\n\nhalt 14\nteragon:sage-3.3.rc2 wstein$ uname -a\nDarwin teragon.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n```\n\n\n\nArgh!",
+    "body": "This is really a problem with Singular.  It has nothing to do with elliptic curve:\n\n```\nteragon:sage-3.3.rc2 wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: v = prime_range(4974); len(v)\n666\nsage: w = [GF(p)['x,y'] for p in v]\n| Sage Version 3.3.rc2, Release Date: 2009-02-17                     |\n| Type notebook() for the GUI, and license() for information.        |\nerror: no more memory (mminit.cc)\nSystem 4608k:4608k Appl 4510k/97k Malloc 4093k/2k Valloc 512k/95k Pages 121/7 Regions 1:1\n\nhalt 14\nteragon:sage-3.3.rc2 wstein$ uname -a\nDarwin teragon.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n```\n\n\nArgh!",
     "created_at": "2009-02-19T19:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3760",
     "type": "issue_comment",
@@ -194,7 +190,6 @@ archive/issue_comments_026655.json:
 ```
 
 This is really a problem with Singular.  It has nothing to do with elliptic curve:
-
 
 ```
 teragon:sage-3.3.rc2 wstein$ sage
@@ -212,7 +207,6 @@ halt 14
 teragon:sage-3.3.rc2 wstein$ uname -a
 Darwin teragon.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386
 ```
-
 
 
 Argh!
@@ -242,7 +236,7 @@ By the way, it says "mminit.cc" in the above, since I hardcoded that into the si
 archive/issue_comments_026657.json:
 ```json
 {
-    "body": "Yippieh:\n\n```\nsage: v = prime_range(4974); len(v)\n666\nsage: w = [GF(p)['x,y'] for p in v]\nsage: \n```\n",
+    "body": "Yippieh:\n\n```\nsage: v = prime_range(4974); len(v)\n666\nsage: w = [GF(p)['x,y'] for p in v]\nsage: \n```",
     "created_at": "2009-02-22T22:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3760",
     "type": "issue_comment",
@@ -259,7 +253,6 @@ sage: v = prime_range(4974); len(v)
 sage: w = [GF(p)['x,y'] for p in v]
 sage: 
 ```
-
 
 
 

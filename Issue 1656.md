@@ -57,7 +57,7 @@ Changing status from new to assigned.
 archive/issue_comments_010507.json:
 ```json
 {
-    "body": "On my system, unless PATH is forced to be imported from the external environment, SCons somehow decides to try using the path:\n\n```\n/usr/local/bin:/opt/bin:/bin:/usr/bin\n```\n\ndespite the fact that /opt/bin doesn't exist. (This has caused mischief in the past because I had an old version of gcc in /usr/local/bin and a current one in /usr/bin; in my PATH, /usr/bin comes first.) How is this generated?",
+    "body": "On my system, unless PATH is forced to be imported from the external environment, SCons somehow decides to try using the path:\n\n```\n/usr/local/bin:/opt/bin:/bin:/usr/bin\n```\ndespite the fact that /opt/bin doesn't exist. (This has caused mischief in the past because I had an old version of gcc in /usr/local/bin and a current one in /usr/bin; in my PATH, /usr/bin comes first.) How is this generated?",
     "created_at": "2008-01-02T19:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1656",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ On my system, unless PATH is forced to be imported from the external environment
 ```
 /usr/local/bin:/opt/bin:/bin:/usr/bin
 ```
-
 despite the fact that /opt/bin doesn't exist. (This has caused mischief in the past because I had an old version of gcc in /usr/local/bin and a current one in /usr/bin; in my PATH, /usr/bin comes first.) How is this generated?
 
 

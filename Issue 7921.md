@@ -163,7 +163,7 @@ Patch 2: stronger category tests
 archive/issue_comments_068799.json:
 ```json
 {
-    "body": "The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n\nsage/groups/group.pyx\n\n```\n    def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n```\n\n\nGroups are not yet converted over to the new coercion model, and are a mess in general. \n\nIn sage/modular/abvar/abvar.py, you removed the method but kept the docstring floating there. Those tests should be kept, but probably not put there. \n\nsage/modules/free_module.py - It'd be good to test the category of non-vector space.\n\nCould you explain the changes to sage/structure/sage_object.pyx?",
+    "body": "The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n\nsage/groups/group.pyx\n\n```\n    def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n```\n\nGroups are not yet converted over to the new coercion model, and are a mess in general. \n\nIn sage/modular/abvar/abvar.py, you removed the method but kept the docstring floating there. Those tests should be kept, but probably not put there. \n\nsage/modules/free_module.py - It'd be good to test the category of non-vector space.\n\nCould you explain the changes to sage/structure/sage_object.pyx?",
     "created_at": "2010-01-19T14:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -179,7 +179,6 @@ sage/groups/group.pyx
 ```
     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? 
 ```
-
 
 Groups are not yet converted over to the new coercion model, and are a mess in general. 
 
@@ -232,7 +231,7 @@ I didn't look much at the second patch, but this should almost certainly be a se
 archive/issue_comments_068802.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> I didn't look much at the second patch, but this should almost certainly be a second ticket. \n\nOk, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.",
+    "body": "Replying to [comment:8 robertwb]:\n> I didn't look much at the second patch, but this should almost certainly be a second ticket. \n\n\nOk, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.",
     "created_at": "2010-01-19T18:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -243,6 +242,7 @@ archive/issue_comments_068802.json:
 
 Replying to [comment:8 robertwb]:
 > I didn't look much at the second patch, but this should almost certainly be a second ticket. 
+
 
 Ok, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.
 
@@ -271,7 +271,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_068804.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n\nWell, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.\n\n> sage/groups/group.pyx\n> {{{\n>     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n> }}}\n> \n> Groups are not yet converted over to the new coercion model, and are a mess in general.\n\nOk. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.\n\n> In sage/modular/abvar/abvar.py, you removed the method but kept the docstring floating there. Those tests should be kept, but probably not put there. \n\nOops, fixed.\n\n> sage/modules/free_module.py - It'd be good to test the category of non-vector space.\n\nDone.\n\n> Could you explain the changes to sage/structure/sage_object.pyx?\n\nI improved the description on top of the patch, including a comment about this.",
+    "body": "Replying to [comment:7 robertwb]:\n> The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n\n\nWell, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.\n\n> sage/groups/group.pyx\n> \n> ```\n>     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n> ```\n> \n> Groups are not yet converted over to the new coercion model, and are a mess in general.\n\n\nOk. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.\n\n> In sage/modular/abvar/abvar.py, you removed the method but kept the docstring floating there. Those tests should be kept, but probably not put there. \n\n\nOops, fixed.\n\n> sage/modules/free_module.py - It'd be good to test the category of non-vector space.\n\n\nDone.\n\n> Could you explain the changes to sage/structure/sage_object.pyx?\n\n\nI improved the description on top of the patch, including a comment about this.",
     "created_at": "2010-01-19T18:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -283,26 +283,32 @@ archive/issue_comments_068804.json:
 Replying to [comment:7 robertwb]:
 > The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. 
 
+
 Well, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.
 
 > sage/groups/group.pyx
-> {{{
+> 
+> ```
 >     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? 
-> }}}
+> ```
 > 
 > Groups are not yet converted over to the new coercion model, and are a mess in general.
+
 
 Ok. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.
 
 > In sage/modular/abvar/abvar.py, you removed the method but kept the docstring floating there. Those tests should be kept, but probably not put there. 
 
+
 Oops, fixed.
 
 > sage/modules/free_module.py - It'd be good to test the category of non-vector space.
 
+
 Done.
 
 > Could you explain the changes to sage/structure/sage_object.pyx?
+
 
 I improved the description on top of the patch, including a comment about this.
 
@@ -330,7 +336,7 @@ archive/issue_events_018969.json:
 archive/issue_comments_068805.json:
 ```json
 {
-    "body": "Replying to [comment:9 nthiery]:\n> Replying to [comment:8 robertwb]:\n> > I didn't look much at the second patch, but this should almost certainly be a second ticket. \n> \n> Ok, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.\n\nThis is now #8001 (darn, missed, that was sooo close from #8000!)",
+    "body": "Replying to [comment:9 nthiery]:\n> Replying to [comment:8 robertwb]:\n> > I didn't look much at the second patch, but this should almost certainly be a second ticket. \n\n> \n> Ok, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.\n\n\nThis is now #8001 (darn, missed, that was sooo close from #8000!)",
     "created_at": "2010-01-19T18:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -342,8 +348,10 @@ archive/issue_comments_068805.json:
 Replying to [comment:9 nthiery]:
 > Replying to [comment:8 robertwb]:
 > > I didn't look much at the second patch, but this should almost certainly be a second ticket. 
+
 > 
 > Ok, will do. Florent volunteered to review it, since it's mostly about testsuites and categories.
+
 
 This is now #8001 (darn, missed, that was sooo close from #8000!)
 
@@ -372,7 +380,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_068807.json:
 ```json
 {
-    "body": "Replying to [comment:10 nthiery]:\n> Replying to [comment:7 robertwb]:\n> > The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n> \n> Well, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.\n\nOK. \n\n> > sage/groups/group.pyx\n> > {{{\n> >     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n> > }}}\n> > \n> > Groups are not yet converted over to the new coercion model, and are a mess in general.\n> \n> Ok. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? \n\nEventually, for sure. \n\n> Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.\n\nNo, comments like this are good. I was just somewhat answering your question. \n\n> > Could you explain the changes to sage/structure/sage_object.pyx?\n> \n> I improved the description on top of the patch, including a comment about this.\n\nThanks. Look forward to being able to do stuff like this. On a somewhat related note, you might be interested in the binop decorator at #383.",
+    "body": "Replying to [comment:10 nthiery]:\n> Replying to [comment:7 robertwb]:\n> > The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. \n\n> \n> Well, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.\n\n\nOK. \n\n> > sage/groups/group.pyx\n> > \n> > ```\n> >     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? \n> > ```\n> > \n> > Groups are not yet converted over to the new coercion model, and are a mess in general.\n\n> \n> Ok. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? \n\n\nEventually, for sure. \n\n> Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.\n\n\nNo, comments like this are good. I was just somewhat answering your question. \n\n> > Could you explain the changes to sage/structure/sage_object.pyx?\n\n> \n> I improved the description on top of the patch, including a comment about this.\n\n\nThanks. Look forward to being able to do stuff like this. On a somewhat related note, you might be interested in the binop decorator at #383.",
     "created_at": "2010-01-19T20:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -384,29 +392,37 @@ archive/issue_comments_068807.json:
 Replying to [comment:10 nthiery]:
 > Replying to [comment:7 robertwb]:
 > > The attribute lookup code looks good. Most of the other changes are minor, though changing loads/dumps to running tests is an independent change is seems. 
+
 > 
 > Well, I actually only added 2/3 of them, mostly as an attempt to catch possible introduced issues. The others were already there, and needed to be updated due to all the new (often failing) tests coming from categories.
+
 
 OK. 
 
 > > sage/groups/group.pyx
-> > {{{
+> > 
+> > ```
 > >     def __call__(self, x): # NT: doesn't this get in the way of the coercion mechanism? 
-> > }}}
+> > ```
 > > 
 > > Groups are not yet converted over to the new coercion model, and are a mess in general.
+
 > 
 > Ok. Shouldn't this def be removed, so as not to prevent groups inheriting from Group to progressively get converted to the coercion model? 
+
 
 Eventually, for sure. 
 
 > Sure, that should be a separate patch. As for the comment above: I just can't prevent myself from adding comments in the code when I stumble on strange stuff. I can remove it if you prefer.
 
+
 No, comments like this are good. I was just somewhat answering your question. 
 
 > > Could you explain the changes to sage/structure/sage_object.pyx?
+
 > 
 > I improved the description on top of the patch, including a comment about this.
+
 
 Thanks. Look forward to being able to do stuff like this. On a somewhat related note, you might be interested in the binop decorator at #383.
 
@@ -509,7 +525,7 @@ Merged [trac_7921-categories_for_extension_types-nt.patch](http://trac.sagemath.
 archive/issue_comments_068812.json:
 ```json
 {
-    "body": "I have a question regarding this old ticket. The following fails:\n\n```\nsage: a = ModularForms(11,4).an_element()\nsage: a._test_category()\n```\n\nThe reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance\n\n```\nclass HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):\n```\n\nI get a\n\n```\nmetaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base\n```\n\n\nAnyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes). The methods from the element_class are available anyway (just like for extension classes). So is it safe to remove this check from `_test_category`? I.e. should we change\n\n```\nif not is_extension_type(self.__class__):\n    # For usual Python classes, that should be done with\n    # standard inheritance\n    tester.assert_(isinstance(self, self.parent().category().element_class))\nelse:\n    # For extension types we just check that inheritance\n    # occurs on a dummy attribute of Sets().ElementMethods\n    tester.assert_(hasattr(self, \"_dummy_attribute\"))\n```\n\ninto\n\n```\n    tester.assert_(hasattr(self, \"_dummy_attribute\"))\n```\n",
+    "body": "I have a question regarding this old ticket. The following fails:\n\n```\nsage: a = ModularForms(11,4).an_element()\nsage: a._test_category()\n```\nThe reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance\n\n```\nclass HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):\n```\nI get a\n\n```\nmetaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base\n```\n\nAnyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes). The methods from the element_class are available anyway (just like for extension classes). So is it safe to remove this check from `_test_category`? I.e. should we change\n\n```\nif not is_extension_type(self.__class__):\n    # For usual Python classes, that should be done with\n    # standard inheritance\n    tester.assert_(isinstance(self, self.parent().category().element_class))\nelse:\n    # For extension types we just check that inheritance\n    # occurs on a dummy attribute of Sets().ElementMethods\n    tester.assert_(hasattr(self, \"_dummy_attribute\"))\n```\ninto\n\n```\n    tester.assert_(hasattr(self, \"_dummy_attribute\"))\n```",
     "created_at": "2014-05-10T19:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -524,19 +540,16 @@ I have a question regarding this old ticket. The following fails:
 sage: a = ModularForms(11,4).an_element()
 sage: a._test_category()
 ```
-
 The reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance
 
 ```
 class HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):
 ```
-
 I get a
 
 ```
 metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base
 ```
-
 
 Anyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes). The methods from the element_class are available anyway (just like for extension classes). So is it safe to remove this check from `_test_category`? I.e. should we change
 
@@ -550,7 +563,6 @@ else:
     # occurs on a dummy attribute of Sets().ElementMethods
     tester.assert_(hasattr(self, "_dummy_attribute"))
 ```
-
 into
 
 ```
@@ -559,13 +571,12 @@ into
 
 
 
-
 ---
 
 archive/issue_comments_068813.json:
 ```json
 {
-    "body": "Replying to [comment:15 saraedum]:\n> I have a question regarding this old ticket. The following fails:\n> {{{\n> sage: a = ModularForms(11,4).an_element()\n> sage: a._test_category()\n> }}}\n> The reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance\n> {{{\n> class HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):\n> }}}\n> I get a\n> {{{\n> metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base\n> }}}\n\nIf it's not an extension type, it really should inherit `a.parent().category().element_class`.\nExcept in complicated cases (e.g. parents whose elements can belong to\nseveral classes), this is taken care of automatically if a category is specified to\n`Parent.__init__`; otherwise one needs to use manually\n`_make_element_class`. See sage.categories.primer (better with #10963 applied) and the\ndocumentation of Category for details.\n\nMost likely the issue here is that the category is not specified\nproperly.\n\n> Anyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes).\n\nMost of my bread and butter element classes are *not* extension\nclasses :-) Just for one example:\n\n\n```\nsage: x = CombinatorialFreeModule(QQ, [1,2,3]).an_element()\nsage: x.__class__\n<class 'sage.combinat.free_module.CombinatorialFreeModule_with_category.element_class'>\nsage: x.__class__.__bases__\n(sage.combinat.free_module.CombinatorialFreeModuleElement,\n sage.categories.vector_spaces.VectorSpaces.WithBasis.element_class)\n```\n\n\n> So is it safe to remove this check from `_test_category`?\n\nPlease don't: so far failures here have always pointed to actual bugs.\n\nCheers,\n                            Nicolas",
+    "body": "Replying to [comment:15 saraedum]:\n> I have a question regarding this old ticket. The following fails:\n> \n> ```\n> sage: a = ModularForms(11,4).an_element()\n> sage: a._test_category()\n> ```\n> The reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance\n> \n> ```\n> class HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):\n> ```\n> I get a\n> \n> ```\n> metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base\n> ```\n\n\nIf it's not an extension type, it really should inherit `a.parent().category().element_class`.\nExcept in complicated cases (e.g. parents whose elements can belong to\nseveral classes), this is taken care of automatically if a category is specified to\n`Parent.__init__`; otherwise one needs to use manually\n`_make_element_class`. See sage.categories.primer (better with #10963 applied) and the\ndocumentation of Category for details.\n\nMost likely the issue here is that the category is not specified\nproperly.\n\n> Anyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes).\n\n\nMost of my bread and butter element classes are *not* extension\nclasses :-) Just for one example:\n\n```\nsage: x = CombinatorialFreeModule(QQ, [1,2,3]).an_element()\nsage: x.__class__\n<class 'sage.combinat.free_module.CombinatorialFreeModule_with_category.element_class'>\nsage: x.__class__.__bases__\n(sage.combinat.free_module.CombinatorialFreeModuleElement,\n sage.categories.vector_spaces.VectorSpaces.WithBasis.element_class)\n```\n\n> So is it safe to remove this check from `_test_category`?\n\n\nPlease don't: so far failures here have always pointed to actual bugs.\n\nCheers,\n                            Nicolas",
     "created_at": "2014-05-10T22:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
@@ -576,18 +587,22 @@ archive/issue_comments_068813.json:
 
 Replying to [comment:15 saraedum]:
 > I have a question regarding this old ticket. The following fails:
-> {{{
+> 
+> ```
 > sage: a = ModularForms(11,4).an_element()
 > sage: a._test_category()
-> }}}
+> ```
 > The reason for this is that `a` is not an extension class so `_test_category` expects that the type of `a` inherits from `a.parent().category().element_class`. Now if I try to do such inheritance
-> {{{
+> 
+> ```
 > class HeckeModuleElement(sage.modules.module_element.ModuleElement, HeckeModules.element_class):
-> }}}
+> ```
 > I get a
-> {{{
+> 
+> ```
 > metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its base
-> }}}
+> ```
+
 
 If it's not an extension type, it really should inherit `a.parent().category().element_class`.
 Except in complicated cases (e.g. parents whose elements can belong to
@@ -601,9 +616,9 @@ properly.
 
 > Anyway, I'm getting the feeling that such inheritance does not happen anywhere (partly because most element classes are extension classes).
 
+
 Most of my bread and butter element classes are *not* extension
 classes :-) Just for one example:
-
 
 ```
 sage: x = CombinatorialFreeModule(QQ, [1,2,3]).an_element()
@@ -614,8 +629,8 @@ sage: x.__class__.__bases__
  sage.categories.vector_spaces.VectorSpaces.WithBasis.element_class)
 ```
 
-
 > So is it safe to remove this check from `_test_category`?
+
 
 Please don't: so far failures here have always pointed to actual bugs.
 

@@ -3,7 +3,7 @@
 archive/issues_002012.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/patches/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/jmol/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/._.DS_Store\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2012\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/patches/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/jmol/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/._.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2012\n\n",
     "created_at": "2008-01-31T23:23:21Z",
     "labels": [
         "component: packages: standard",
@@ -18,13 +18,11 @@ archive/issues_002012.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/jmol-11.5.2/patches/._.DS_Store
 sage-2.10.1.rc3/spkg/standard/jmol-11.5.2/jmol/._.DS_Store
 sage-2.10.1.rc3/spkg/standard/jmol-11.5.2/._.DS_Store
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2012
 

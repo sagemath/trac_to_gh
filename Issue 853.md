@@ -3,7 +3,7 @@
 archive/issues_000853.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb\n\n\n```\nDavid Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/\nincludes several implementations of PSLQ, written in C++, and is\nlicensed under BSD. However, ARPREC raw multi arithmatic timings\ndon't look too favorable http://pari.math.u-bordeaux.fr/benchs/\ntimings-mpfr.html and one has the same fix-x86 issues as quad-double.\nIt looks like, however, one of the advantages of PSLQ is that it does\nnot require full-precision at many of the intermediate steps. (that's\nwhat this two-level stuff is about in his package--most operations\nare performed with machine-double arithmetic).\n\nZimmermann also has a GPL implementation, based on gmp, which is only\n1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how\nspeeds compare.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/853\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb\n\n```\nDavid Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/\nincludes several implementations of PSLQ, written in C++, and is\nlicensed under BSD. However, ARPREC raw multi arithmatic timings\ndon't look too favorable http://pari.math.u-bordeaux.fr/benchs/\ntimings-mpfr.html and one has the same fix-x86 issues as quad-double.\nIt looks like, however, one of the advantages of PSLQ is that it does\nnot require full-precision at many of the intermediate steps. (that's\nwhat this two-level stuff is about in his package--most operations\nare performed with machine-double arithmetic).\n\nZimmermann also has a GPL implementation, based on gmp, which is only\n1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how\nspeeds compare.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/853\n\n",
     "created_at": "2007-10-12T00:27:12Z",
     "labels": [
         "component: number theory"
@@ -18,7 +18,6 @@ archive/issues_000853.json:
 Assignee: @williamstein
 
 CC:  @burcin @robertwb
-
 
 ```
 David Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/
@@ -35,7 +34,6 @@ Zimmermann also has a GPL implementation, based on gmp, which is only
 1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how
 speeds compare.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/853
 
@@ -86,7 +84,7 @@ To be precise, Zimmerman's code is at http://www.loria.fr/~zimmerma/free/pslq-1.
 archive/issue_comments_005255.json:
 ```json
 {
-    "body": "I've attached the code/paper that was attached to the following email.\n\n\n```\nagnes.jany@googlemail.com>\nto\twstein@gmail.com\ndate\tMon, Aug 10, 2009 at 2:16 PM\nsubject\tPSLQ implementation\nmailed-by\tgooglemail.com\n\t\nhide details 2:16 PM (1 hour ago)\n\t\n\t\nReply\n\t\n\tFollow up message\nDear Mr Stein,\n\nI'm a mathematics student at the Johannes-Gutenberg University of Mainz, Germany.\nAs a part of my diploma thesis, I have implemented PSLQ to SAGE. You can find\nthe code, a worksheet and a documentation in the attachment of this email. Maybe\nyou can use my work for your project.\n\nYours sincerely,\nAgnes Jany\n```\n",
+    "body": "I've attached the code/paper that was attached to the following email.\n\n```\nagnes.jany@googlemail.com>\nto\twstein@gmail.com\ndate\tMon, Aug 10, 2009 at 2:16 PM\nsubject\tPSLQ implementation\nmailed-by\tgooglemail.com\n\t\nhide details 2:16 PM (1 hour ago)\n\t\n\t\nReply\n\t\n\tFollow up message\nDear Mr Stein,\n\nI'm a mathematics student at the Johannes-Gutenberg University of Mainz, Germany.\nAs a part of my diploma thesis, I have implemented PSLQ to SAGE. You can find\nthe code, a worksheet and a documentation in the attachment of this email. Maybe\nyou can use my work for your project.\n\nYours sincerely,\nAgnes Jany\n```",
     "created_at": "2009-08-10T23:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ archive/issue_comments_005255.json:
 ```
 
 I've attached the code/paper that was attached to the following email.
-
 
 ```
 agnes.jany@googlemail.com>
@@ -124,13 +121,12 @@ Agnes Jany
 
 
 
-
 ---
 
 archive/issue_comments_005256.json:
 ```json
 {
-    "body": "Attachment [pslqimplementation.zip](tarball://root/attachments/some-uuid/ticket853/pslqimplementation.zip) by @aghitza created at 2009-11-29 03:01:50\n\nNote that mpmath, which is now a standard Sage package, contains an implementation of pslq:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.mp.dps = 30\nsage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])\n[2, 0, 0, 0, 0, 0, -1]\nsage: mpmath.pslq([pi/4, acot(5), acot(239)])\n[1, -4, 1]\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html\n\nThe first one says that the only integer relation between the square roots of 2,3,...,8 is `2\\sqrt{2}-\\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.",
+    "body": "Attachment [pslqimplementation.zip](tarball://root/attachments/some-uuid/ticket853/pslqimplementation.zip) by @aghitza created at 2009-11-29 03:01:50\n\nNote that mpmath, which is now a standard Sage package, contains an implementation of pslq:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.mp.dps = 30\nsage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])\n[2, 0, 0, 0, 0, 0, -1]\nsage: mpmath.pslq([pi/4, acot(5), acot(239)])\n[1, -4, 1]\n```\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html\n\nThe first one says that the only integer relation between the square roots of 2,3,...,8 is `2\\sqrt{2}-\\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.",
     "created_at": "2009-11-29T03:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -143,7 +139,6 @@ Attachment [pslqimplementation.zip](tarball://root/attachments/some-uuid/ticket8
 
 Note that mpmath, which is now a standard Sage package, contains an implementation of pslq:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -154,7 +149,6 @@ sage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])
 sage: mpmath.pslq([pi/4, acot(5), acot(239)])
 [1, -4, 1]
 ```
-
 | Sage Version 4.2.1, Release Date: 2009-11-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 The examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html
@@ -168,7 +162,7 @@ The first one says that the only integer relation between the square roots of 2,
 archive/issue_comments_005257.json:
 ```json
 {
-    "body": "It would still be worth it to wrap Paul Zimmermann's C implementation, since it's fast.  I tried it together with the mpmath implementation on the real life example given at the top of http://www.cecm.sfu.ca/organics/papers/bailey/paper/html/node6.html\n\nBoth give the right answer (yay!).  According to timeit:\n\nZimmermann's C implementation:\n\n\n```\n25 loops, best of 3: 13.6 ms per loop\n```\n\n\nmpmath's implementation:\n\n\n```\n5 loops, best of 3: 267 ms per loop\n```\n\n\nSo the C code is 20 times faster in this example.",
+    "body": "It would still be worth it to wrap Paul Zimmermann's C implementation, since it's fast.  I tried it together with the mpmath implementation on the real life example given at the top of http://www.cecm.sfu.ca/organics/papers/bailey/paper/html/node6.html\n\nBoth give the right answer (yay!).  According to timeit:\n\nZimmermann's C implementation:\n\n```\n25 loops, best of 3: 13.6 ms per loop\n```\n\nmpmath's implementation:\n\n```\n5 loops, best of 3: 267 ms per loop\n```\n\nSo the C code is 20 times faster in this example.",
     "created_at": "2009-11-29T03:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -183,19 +177,15 @@ Both give the right answer (yay!).  According to timeit:
 
 Zimmermann's C implementation:
 
-
 ```
 25 loops, best of 3: 13.6 ms per loop
 ```
 
-
 mpmath's implementation:
-
 
 ```
 5 loops, best of 3: 267 ms per loop
 ```
-
 
 So the C code is 20 times faster in this example.
 
@@ -361,7 +351,7 @@ PPS: I'll change the milestone back to sage-wishlist until this is ready for rev
 archive/issue_comments_005263.json:
 ```json
 {
-    "body": "It's good to see you have tested this on Solaris, though there is a potential Solaris issue:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then \n    echo \"64 bit MacIntel\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \nfi\n```\n\n\nshould, at the very least, be replaced by \n\n\n```\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit version of pslq\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \n    LDFLAGS=\"$LDFLAGS -m64 \"; export LDFLAGS \nfi\n```\n\n\n\nIt is in general safer to put an x in front of the `uname` and then test for whatever we want, with an x in front of that. (This is for maximum portability, using any shell, and is not essential, but I think a good habit to get into). There is no need to quote \"xyes\" as we know it has no spaces in it. \n\nWithout removing the Darwin restriction, it would be impossible to build a 64-bit version on Solaris, OpenSolaris or other system such as HP-UX where both 32-bit and 64-bit executables are supported.\n\nWhether LDFLAGS is necessary or not depends on the package. I've not tried building this 64-bit Solaris. I'll have a look at that later, but I do not think setting LDFLAGS ever appears to do any harm, and is sometimes essential. \n\nActually, better still would be \n\n\n```\nif [ -z \"$CFLAG64\" ] ; then\n  CFLAG64=-m64\nfi\n\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit of pslq\" \n    CFLAGS=\"$CFLAGS  $CFLAG64\"\n    LDFLAGS=\"$LDFLAGS $CFLAG64\"\nfi\n\nif [ \"x`$SAGE_LOCAL/bin/testcc.sh`\" = xGNU ] ; then\n  CFLAGS=\"$CFLAGS -Wall -pedantic\"\nfi\n\nexport CFLAGS\nexport LDFLAGS\n\n```\n\n\nas that would \n* Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). \n* Add the compiler options -Wall and -pedantic if using gcc. \n\nCompiling with the -Wall -pedantic options I get:\n\n\n```\ndrkirkby@hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c \npslq-1.0.c: In function \u2018print_column\u2019:\npslq-1.0.c:175: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_relation\u2019:\npslq-1.0.c:224: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 3 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_matrix\u2019:\npslq-1.0.c:240: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018pslq\u2019:\npslq-1.0.c:855: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:858: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:860: warning: format \u2018%d\u2019 expects type \u2018int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:870: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:892: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c: In function \u2018main\u2019:\npslq-1.0.c:972: warning: implicit declaration of function \u2018strcmp\u2019\npslq-1.0.c:1040: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c:1044: warning: format \u2018%u\u2019 expects type \u2018unsigned int *\u2019, but argument 2 has type \u2018long unsigned int *\u2019\npslq-1.0.c:1055: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\n```\n\n\nSome of those warnings would lead me to believe a 64-bit build of this would not work as expected. In that case, 'unsigned int' would be 4 bytes, but 'long unsigned int' would be 8 bytes. That could go very pear shaped. \n\nThe function strcmp() is defined in strings.h on Solaris, so I would suggest adding\n\n```\n#include <strings.h>\n```\n\n\nI can't comment on the maths aspect of it - I'm not a mathematician. \n\nSome of these issues need reporting upstream, some are problems with spkg-install. \n\n\n**I would note that all of the above code snippets I wrote were untested, so would need testing**\n\nDave",
+    "body": "It's good to see you have tested this on Solaris, though there is a potential Solaris issue:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then \n    echo \"64 bit MacIntel\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \nfi\n```\n\nshould, at the very least, be replaced by \n\n```\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit version of pslq\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \n    LDFLAGS=\"$LDFLAGS -m64 \"; export LDFLAGS \nfi\n```\n\n\nIt is in general safer to put an x in front of the `uname` and then test for whatever we want, with an x in front of that. (This is for maximum portability, using any shell, and is not essential, but I think a good habit to get into). There is no need to quote \"xyes\" as we know it has no spaces in it. \n\nWithout removing the Darwin restriction, it would be impossible to build a 64-bit version on Solaris, OpenSolaris or other system such as HP-UX where both 32-bit and 64-bit executables are supported.\n\nWhether LDFLAGS is necessary or not depends on the package. I've not tried building this 64-bit Solaris. I'll have a look at that later, but I do not think setting LDFLAGS ever appears to do any harm, and is sometimes essential. \n\nActually, better still would be \n\n```\nif [ -z \"$CFLAG64\" ] ; then\n  CFLAG64=-m64\nfi\n\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit of pslq\" \n    CFLAGS=\"$CFLAGS  $CFLAG64\"\n    LDFLAGS=\"$LDFLAGS $CFLAG64\"\nfi\n\nif [ \"x`$SAGE_LOCAL/bin/testcc.sh`\" = xGNU ] ; then\n  CFLAGS=\"$CFLAGS -Wall -pedantic\"\nfi\n\nexport CFLAGS\nexport LDFLAGS\n\n```\n\nas that would \n* Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). \n* Add the compiler options -Wall and -pedantic if using gcc. \n\nCompiling with the -Wall -pedantic options I get:\n\n```\ndrkirkby@hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c \npslq-1.0.c: In function \u2018print_column\u2019:\npslq-1.0.c:175: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_relation\u2019:\npslq-1.0.c:224: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 3 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_matrix\u2019:\npslq-1.0.c:240: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018pslq\u2019:\npslq-1.0.c:855: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:858: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:860: warning: format \u2018%d\u2019 expects type \u2018int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:870: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:892: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c: In function \u2018main\u2019:\npslq-1.0.c:972: warning: implicit declaration of function \u2018strcmp\u2019\npslq-1.0.c:1040: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c:1044: warning: format \u2018%u\u2019 expects type \u2018unsigned int *\u2019, but argument 2 has type \u2018long unsigned int *\u2019\npslq-1.0.c:1055: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\n```\n\nSome of those warnings would lead me to believe a 64-bit build of this would not work as expected. In that case, 'unsigned int' would be 4 bytes, but 'long unsigned int' would be 8 bytes. That could go very pear shaped. \n\nThe function strcmp() is defined in strings.h on Solaris, so I would suggest adding\n\n```\n#include <strings.h>\n```\n\nI can't comment on the maths aspect of it - I'm not a mathematician. \n\nSome of these issues need reporting upstream, some are problems with spkg-install. \n\n\n**I would note that all of the above code snippets I wrote were untested, so would need testing**\n\nDave",
     "created_at": "2010-02-21T13:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -372,7 +362,6 @@ archive/issue_comments_005263.json:
 
 It's good to see you have tested this on Solaris, though there is a potential Solaris issue:
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then 
     echo "64 bit MacIntel" 
@@ -380,9 +369,7 @@ if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
 fi
 ```
 
-
 should, at the very least, be replaced by 
-
 
 ```
 if [ "x`uname`" = xyes ]; then 
@@ -393,7 +380,6 @@ fi
 ```
 
 
-
 It is in general safer to put an x in front of the `uname` and then test for whatever we want, with an x in front of that. (This is for maximum portability, using any shell, and is not essential, but I think a good habit to get into). There is no need to quote "xyes" as we know it has no spaces in it. 
 
 Without removing the Darwin restriction, it would be impossible to build a 64-bit version on Solaris, OpenSolaris or other system such as HP-UX where both 32-bit and 64-bit executables are supported.
@@ -401,7 +387,6 @@ Without removing the Darwin restriction, it would be impossible to build a 64-bi
 Whether LDFLAGS is necessary or not depends on the package. I've not tried building this 64-bit Solaris. I'll have a look at that later, but I do not think setting LDFLAGS ever appears to do any harm, and is sometimes essential. 
 
 Actually, better still would be 
-
 
 ```
 if [ -z "$CFLAG64" ] ; then
@@ -423,13 +408,11 @@ export LDFLAGS
 
 ```
 
-
 as that would 
 * Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). 
 * Add the compiler options -Wall and -pedantic if using gcc. 
 
 Compiling with the -Wall -pedantic options I get:
-
 
 ```
 drkirkby@hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c 
@@ -452,7 +435,6 @@ pslq-1.0.c:1044: warning: format ‘%u’ expects type ‘unsigned int *’, but
 pslq-1.0.c:1055: warning: format ‘%u’ expects type ‘unsigned int’, but argument 2 has type ‘long unsigned int’
 ```
 
-
 Some of those warnings would lead me to believe a 64-bit build of this would not work as expected. In that case, 'unsigned int' would be 4 bytes, but 'long unsigned int' would be 8 bytes. That could go very pear shaped. 
 
 The function strcmp() is defined in strings.h on Solaris, so I would suggest adding
@@ -460,7 +442,6 @@ The function strcmp() is defined in strings.h on Solaris, so I would suggest add
 ```
 #include <strings.h>
 ```
-
 
 I can't comment on the maths aspect of it - I'm not a mathematician. 
 
@@ -524,7 +505,7 @@ Since you're looking at reviewing this, I will try to finish up the documentatio
 archive/issue_comments_005266.json:
 ```json
 {
-    "body": "I did a comparison of my PSLQ implementation (within Sage) with fpLLL with a knapsack matrix.\nWith Bailey's \"node6\" example, fpLLL is 14 times faster:\n\n```\nsage: m = matrix(9,10)\nsage: for i in range(9):\n    m[i,i]=1\nsage: for i in range(9):\n    m[i,9]=ZZ(num_list[i]*RealField(200)(2)^180)//2^10\n\nsage: L=m.LLL()\nsage: L.row(0)\n(-480, 1920, 0, -16, -255, -660, 840, 160, -360, 219687)\nsage: p.coefficients()\n(480, -1920, 0, 16, 255, 660, -840, -160, 360)\n\nsage: %timeit L=m.LLL()\n625 loops, best of 3: 1.41 ms per loop\n\nsage: %timeit p=PSLQ(num_list, prec=167)\n25 loops, best of 3: 19.8 ms per loop\n```\n\nThus apart from historical reasons (or comparison with fpLLL) I don't see any point to add PSLQ in Sage. Or the default PSLQ mode should be to call fpLLL. However maybe I'm biased because\nfpLLL was designed by a former student of mine.",
+    "body": "I did a comparison of my PSLQ implementation (within Sage) with fpLLL with a knapsack matrix.\nWith Bailey's \"node6\" example, fpLLL is 14 times faster:\n\n```\nsage: m = matrix(9,10)\nsage: for i in range(9):\n    m[i,i]=1\nsage: for i in range(9):\n    m[i,9]=ZZ(num_list[i]*RealField(200)(2)^180)//2^10\n\nsage: L=m.LLL()\nsage: L.row(0)\n(-480, 1920, 0, -16, -255, -660, 840, 160, -360, 219687)\nsage: p.coefficients()\n(480, -1920, 0, 16, 255, 660, -840, -160, 360)\n\nsage: %timeit L=m.LLL()\n625 loops, best of 3: 1.41 ms per loop\n\nsage: %timeit p=PSLQ(num_list, prec=167)\n25 loops, best of 3: 19.8 ms per loop\n```\nThus apart from historical reasons (or comparison with fpLLL) I don't see any point to add PSLQ in Sage. Or the default PSLQ mode should be to call fpLLL. However maybe I'm biased because\nfpLLL was designed by a former student of mine.",
     "created_at": "2010-02-23T17:30:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -555,7 +536,6 @@ sage: %timeit L=m.LLL()
 sage: %timeit p=PSLQ(num_list, prec=167)
 25 loops, best of 3: 19.8 ms per loop
 ```
-
 Thus apart from historical reasons (or comparison with fpLLL) I don't see any point to add PSLQ in Sage. Or the default PSLQ mode should be to call fpLLL. However maybe I'm biased because
 fpLLL was designed by a former student of mine.
 
@@ -566,7 +546,7 @@ fpLLL was designed by a former student of mine.
 archive/issue_comments_005267.json:
 ```json
 {
-    "body": "> Or the default PSLQ mode should be to call fpLLL. \n\nin fact, it would be cleaner to have a function `linear_relation`, which could have\nalgorithm=LLL (default) or algorithm=PSLQ.",
+    "body": "> Or the default PSLQ mode should be to call fpLLL. \n\n\nin fact, it would be cleaner to have a function `linear_relation`, which could have\nalgorithm=LLL (default) or algorithm=PSLQ.",
     "created_at": "2010-02-23T17:33:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -576,6 +556,7 @@ archive/issue_comments_005267.json:
 ```
 
 > Or the default PSLQ mode should be to call fpLLL. 
+
 
 in fact, it would be cleaner to have a function `linear_relation`, which could have
 algorithm=LLL (default) or algorithm=PSLQ.
@@ -587,7 +568,7 @@ algorithm=LLL (default) or algorithm=PSLQ.
 archive/issue_comments_005268.json:
 ```json
 {
-    "body": "I got some more information about PSLQ by David Bailey, who agreed that I forward it to the Sage\ndevelopers (the references [1] and [2] are those from pslq-1.0.c):\n\n```\nComments:  Reference [1] in your note is the original PSLQ paper, but\nthe algorithm as presented there is quite cumbersome, as it involves\n(needlessly) many full-matrix operations.  Reference [2] stated an\nabbreviated but equivalent version; unfortunately, however, it includes\none bug.  Thus I strongly suggest that you base your implementation on\nthe following paper:\n\nDavid H. Bailey and David J. Broadhurst, \"Parallel Integer Relation\nDetection: Techniques and Applications,\" /Mathematics of Computation/,\nvol. 70, no. 236 (Oct 2000), pg. 1719-1736.  Our preprint copy is\navailable at:\nhttp://crd.lbl.gov/~dhbailey/dhbpapers/ppslq.pdf\n\nThe basic PSLQ algorithm is stated on page 2, and should work well as\nstated (please let me know if you have any problems).  A two-level and a\nthree-level variant are also described, which are faster but quite a bit\nmore complicated.\n\nHowever, if you are really serious, I suggest that you try the\n\"multi-pair\" variant of PSLQ, which is presented in the above paper\nbeginning on page 10.  Although we devised this scheme originally to be\nsuitable for parallel processing, we have found that even on a single\nprocessor system it runs significantly faster, and is significantly more\neffective in recovering relations when the input data is given only to\nlimited precision.  Two- and a three-level variants of the multi-pair\nscheme, in analogy to the two- and three-level versions of the regular\nPSLQ, are also given in the paper.  These are much faster than the basic\nmulti-pair PSLQ scheme, because they perform most operations using\nordinary double-precision arithmetic, updating the multi-precision\narrays only occasionally when needed.\n\nIn my own work, I always use the multi-pair PSLQ.  I use the basic\nmulti-pair PSLQ for n up to 10 or 20 and for modest precision.  For\nlarger n, and, say, 500-digit or more precision, I generally use\ntwo-level multi-pair scheme.  For truly \"heroic\" calculations (e.g., n >\n100 and precision level > 2000 digits), I use the three-level multi-pair\nscheme, since it has advantages for very large calculations and runs\nwell on a parallel system -- see some case studies mentioned in the\nabove paper.\n\nPlease let me know if it works for you.  And if you have any questions,\nI would be pleased to respond.  If you wish, you can look at the\nimplementations of PSLQ and the multi-pair PSLQ schemes (in both C++ and\nFortran-90) that we have bundled with our ARPREC package:\nhttp://crd.lbl.gov/~dhbailey/mpdist\n```\n\nI will try to modify my code to use the \"basic PSLQ algorithm\" described in the paper\nmentioned above. However in the short term I won't be able to implement the multi-pair\nvariant. Thus if somebody wants to do it, please proceed. Alternatively, one might use\nthe PSLQ variants from ARPREC (if the license is ok).",
+    "body": "I got some more information about PSLQ by David Bailey, who agreed that I forward it to the Sage\ndevelopers (the references [1] and [2] are those from pslq-1.0.c):\n\n```\nComments:  Reference [1] in your note is the original PSLQ paper, but\nthe algorithm as presented there is quite cumbersome, as it involves\n(needlessly) many full-matrix operations.  Reference [2] stated an\nabbreviated but equivalent version; unfortunately, however, it includes\none bug.  Thus I strongly suggest that you base your implementation on\nthe following paper:\n\nDavid H. Bailey and David J. Broadhurst, \"Parallel Integer Relation\nDetection: Techniques and Applications,\" /Mathematics of Computation/,\nvol. 70, no. 236 (Oct 2000), pg. 1719-1736.  Our preprint copy is\navailable at:\nhttp://crd.lbl.gov/~dhbailey/dhbpapers/ppslq.pdf\n\nThe basic PSLQ algorithm is stated on page 2, and should work well as\nstated (please let me know if you have any problems).  A two-level and a\nthree-level variant are also described, which are faster but quite a bit\nmore complicated.\n\nHowever, if you are really serious, I suggest that you try the\n\"multi-pair\" variant of PSLQ, which is presented in the above paper\nbeginning on page 10.  Although we devised this scheme originally to be\nsuitable for parallel processing, we have found that even on a single\nprocessor system it runs significantly faster, and is significantly more\neffective in recovering relations when the input data is given only to\nlimited precision.  Two- and a three-level variants of the multi-pair\nscheme, in analogy to the two- and three-level versions of the regular\nPSLQ, are also given in the paper.  These are much faster than the basic\nmulti-pair PSLQ scheme, because they perform most operations using\nordinary double-precision arithmetic, updating the multi-precision\narrays only occasionally when needed.\n\nIn my own work, I always use the multi-pair PSLQ.  I use the basic\nmulti-pair PSLQ for n up to 10 or 20 and for modest precision.  For\nlarger n, and, say, 500-digit or more precision, I generally use\ntwo-level multi-pair scheme.  For truly \"heroic\" calculations (e.g., n >\n100 and precision level > 2000 digits), I use the three-level multi-pair\nscheme, since it has advantages for very large calculations and runs\nwell on a parallel system -- see some case studies mentioned in the\nabove paper.\n\nPlease let me know if it works for you.  And if you have any questions,\nI would be pleased to respond.  If you wish, you can look at the\nimplementations of PSLQ and the multi-pair PSLQ schemes (in both C++ and\nFortran-90) that we have bundled with our ARPREC package:\nhttp://crd.lbl.gov/~dhbailey/mpdist\n```\nI will try to modify my code to use the \"basic PSLQ algorithm\" described in the paper\nmentioned above. However in the short term I won't be able to implement the multi-pair\nvariant. Thus if somebody wants to do it, please proceed. Alternatively, one might use\nthe PSLQ variants from ARPREC (if the license is ok).",
     "created_at": "2010-02-24T07:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -646,7 +627,6 @@ implementations of PSLQ and the multi-pair PSLQ schemes (in both C++ and
 Fortran-90) that we have bundled with our ARPREC package:
 http://crd.lbl.gov/~dhbailey/mpdist
 ```
-
 I will try to modify my code to use the "basic PSLQ algorithm" described in the paper
 mentioned above. However in the short term I won't be able to implement the multi-pair
 variant. Thus if somebody wants to do it, please proceed. Alternatively, one might use
@@ -703,7 +683,7 @@ Florent
 archive/issue_comments_005271.json:
 ```json
 {
-    "body": "Replying to [comment:20 hivert]:\n> How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n\nno idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\nPaul",
+    "body": "Replying to [comment:20 hivert]:\n> How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n\n\nno idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\nPaul",
     "created_at": "2012-06-20T19:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -714,6 +694,7 @@ archive/issue_comments_005271.json:
 
 Replying to [comment:20 hivert]:
 > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?
+
 
 no idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.
 
@@ -726,7 +707,7 @@ Paul
 archive/issue_comments_005272.json:
 ```json
 {
-    "body": "Replying to [comment:21 zimmerma]:\n> Replying to [comment:20 hivert]:\n> > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n> \n> no idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\nI'm at a small workshop and there is someone which is currently using Maple and is considering to switch to Sage.. Maple has both LLL and PSLQ. He told me that, he has some stability problem with LLL, in the sense that removing some precision digits gives drastically different results. Apparently PSLQ doesn't. I've no idea if it's a problem with the algorithms or the implementation.",
+    "body": "Replying to [comment:21 zimmerma]:\n> Replying to [comment:20 hivert]:\n> > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n\n> \n> no idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\n\nI'm at a small workshop and there is someone which is currently using Maple and is considering to switch to Sage.. Maple has both LLL and PSLQ. He told me that, he has some stability problem with LLL, in the sense that removing some precision digits gives drastically different results. Apparently PSLQ doesn't. I've no idea if it's a problem with the algorithms or the implementation.",
     "created_at": "2012-06-20T21:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -738,8 +719,10 @@ archive/issue_comments_005272.json:
 Replying to [comment:21 zimmerma]:
 > Replying to [comment:20 hivert]:
 > > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?
+
 > 
 > no idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.
+
 
 I'm at a small workshop and there is someone which is currently using Maple and is considering to switch to Sage.. Maple has both LLL and PSLQ. He told me that, he has some stability problem with LLL, in the sense that removing some precision digits gives drastically different results. Apparently PSLQ doesn't. I've no idea if it's a problem with the algorithms or the implementation.
 
@@ -790,7 +773,7 @@ In terms of "stability", our experiments indicate that PSLQ tends to stick with 
 archive/issue_comments_005275.json:
 ```json
 {
-    "body": "Alex,\n\n> I can dig up an explicit example of this if you are interested.\n\nyes please do! Such explicit examples are extremely useful.\n\nPaul",
+    "body": "Alex,\n\n> I can dig up an explicit example of this if you are interested.\n\n\nyes please do! Such explicit examples are extremely useful.\n\nPaul",
     "created_at": "2012-06-21T07:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -802,6 +785,7 @@ archive/issue_comments_005275.json:
 Alex,
 
 > I can dig up an explicit example of this if you are interested.
+
 
 yes please do! Such explicit examples are extremely useful.
 
@@ -832,7 +816,7 @@ Any news on this ticket?
 archive/issue_comments_005277.json:
 ```json
 {
-    "body": "> Any news on this ticket?\n\nI don't know what information was missing in comment [comment:9], but the following reference might be useful: http://dl.acm.org/citation.cfm?id=2465936\n\nPaul",
+    "body": "> Any news on this ticket?\n\n\nI don't know what information was missing in comment [comment:9], but the following reference might be useful: http://dl.acm.org/citation.cfm?id=2465936\n\nPaul",
     "created_at": "2014-11-19T18:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/853",
     "type": "issue_comment",
@@ -842,6 +826,7 @@ archive/issue_comments_005277.json:
 ```
 
 > Any news on this ticket?
+
 
 I don't know what information was missing in comment [comment:9], but the following reference might be useful: http://dl.acm.org/citation.cfm?id=2465936
 

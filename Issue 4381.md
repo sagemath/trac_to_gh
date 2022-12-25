@@ -3,7 +3,7 @@
 archive/issues_004381.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @mwhansen @burcin\n\nOff sage-3.1.3 passing the argument -wthread is not correct. The argument -wthread must be the first argument passed to ipython in order to take effect.\n\nSee the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/sage-sage:\n\n\n\n```\n[jaap@paix bin]$ diff sage-sage ../../../sage-3.1.2/local/bin/sage-sage\n51d50\n<     echo \"  -combinat <...> -- run sage-combinat patch management script\"\n188a188,203\n> SAGE_STARTUP=\"\n> import sage.misc.misc; print \\\n> sage.misc.misc.branch_current_hg_notice(sage.misc.misc.branch_current_hg()); \\\n> from sage.misc.interpreter import preparser; preparser(True);\\\n> import sage.all_cmdline; sage.all_cmdline._init_cmdline(globals());\\\n> from sage.all import Integer, RealNumber;\\\n> import os; os.chdir(\\\"$CUR\\\");\\\n> import sage.misc.interpreter;\\\n> from sage.misc.interpreter import attached_files\\\n> \"\n> \n> if [ \"$SAGE_IMPORTALL\" != \"no\" ]; then\n>    SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP\"\";from sage.all_cmdline import *\"\n> else\n>    SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP\"\n> fi\n189a205,206\n> SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP_COMMAND\"\";_=sage.misc.interpreter.load_startup_file(\\\"$SAGE_STARTUP_FILE\\\")\"\n> export SAGE_STARTUP_COMMAND\n200c217\n<     sage-ipython \"$@\" -i\n---\n>     sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n251,257d267\n< if [ $1 = '-combinat' -o $1 = '--combinat' ]; then\n<     cd \"$CUR\"\n<     shift\n<     sage-combinat \"$@\"\n<     exit $?\n< fi\n< \n514c524\n<    sage-ipython  $LOGOPT -rcfile=\"$IPYTHONRC\" -i -c \"$SAGE_STARTUP_COMMAND\" \"$@\" \n---\n>    sage-ipython  $LOGOPT -rcfile=\"$IPYTHONRC\" -c \"$SAGE_STARTUP_COMMAND\" \"$@\"\n[jaap@paix bin]$ \n\n\n```\n\n\n\ncwitty to the rescue?\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4381\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen @burcin\n\nOff sage-3.1.3 passing the argument -wthread is not correct. The argument -wthread must be the first argument passed to ipython in order to take effect.\n\nSee the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/sage-sage:\n\n\n```\n[jaap@paix bin]$ diff sage-sage ../../../sage-3.1.2/local/bin/sage-sage\n51d50\n<     echo \"  -combinat <...> -- run sage-combinat patch management script\"\n188a188,203\n> SAGE_STARTUP=\"\n> import sage.misc.misc; print \\\n> sage.misc.misc.branch_current_hg_notice(sage.misc.misc.branch_current_hg()); \\\n> from sage.misc.interpreter import preparser; preparser(True);\\\n> import sage.all_cmdline; sage.all_cmdline._init_cmdline(globals());\\\n> from sage.all import Integer, RealNumber;\\\n> import os; os.chdir(\\\"$CUR\\\");\\\n> import sage.misc.interpreter;\\\n> from sage.misc.interpreter import attached_files\\\n> \"\n> \n> if [ \"$SAGE_IMPORTALL\" != \"no\" ]; then\n>    SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP\"\";from sage.all_cmdline import *\"\n> else\n>    SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP\"\n> fi\n189a205,206\n> SAGE_STARTUP_COMMAND=\"$SAGE_STARTUP_COMMAND\"\";_=sage.misc.interpreter.load_startup_file(\\\"$SAGE_STARTUP_FILE\\\")\"\n> export SAGE_STARTUP_COMMAND\n200c217\n<     sage-ipython \"$@\" -i\n---\n>     sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n251,257d267\n< if [ $1 = '-combinat' -o $1 = '--combinat' ]; then\n<     cd \"$CUR\"\n<     shift\n<     sage-combinat \"$@\"\n<     exit $?\n< fi\n< \n514c524\n<    sage-ipython  $LOGOPT -rcfile=\"$IPYTHONRC\" -i -c \"$SAGE_STARTUP_COMMAND\" \"$@\" \n---\n>    sage-ipython  $LOGOPT -rcfile=\"$IPYTHONRC\" -c \"$SAGE_STARTUP_COMMAND\" \"$@\"\n[jaap@paix bin]$ \n\n\n```\n\n\ncwitty to the rescue?\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4381\n\n",
     "created_at": "2008-10-29T19:26:07Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ CC:  @mwhansen @burcin
 Off sage-3.1.3 passing the argument -wthread is not correct. The argument -wthread must be the first argument passed to ipython in order to take effect.
 
 See the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/sage-sage:
-
 
 
 ```
@@ -70,7 +69,6 @@ See the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/s
 
 
 ```
-
 
 
 cwitty to the rescue?
@@ -156,7 +154,7 @@ Michael
 archive/issue_comments_032173.json:
 ```json
 {
-    "body": "After applying the patch to sage-3.2.1.alpha0:\n\n\n\n```\n mhansen: after installing wxPython in sage-3.2.1.alph0 I get:\n<jaap> [jaap@paix sage-3.2.1.alpha0]$ ./sage -wthread\n<jaap> ----------------------------------------------------------------------\n<jaap> | Sage Version 3.2.1.alpha0, Release Date: 2008-11-23                |\n<jaap> | Type notebook() for the GUI, and license() for information.        |\n<jaap> ----------------------------------------------------------------------\n<jaap> ------------------------------------------------------------\n<jaap>    File \"<ipython console>\", line 1\n<jaap>      /home/jaap/downloads/sage-3.2.1.alpha0/local/bin/sage-startup\n<jaap>      ^\n<jaap> SyntaxError: invalid syntax\n<mhansen> Hmm...\n```\n",
+    "body": "After applying the patch to sage-3.2.1.alpha0:\n\n\n```\n mhansen: after installing wxPython in sage-3.2.1.alph0 I get:\n<jaap> [jaap@paix sage-3.2.1.alpha0]$ ./sage -wthread\n<jaap> ----------------------------------------------------------------------\n<jaap> | Sage Version 3.2.1.alpha0, Release Date: 2008-11-23                |\n<jaap> | Type notebook() for the GUI, and license() for information.        |\n<jaap> ----------------------------------------------------------------------\n<jaap> ------------------------------------------------------------\n<jaap>    File \"<ipython console>\", line 1\n<jaap>      /home/jaap/downloads/sage-3.2.1.alpha0/local/bin/sage-startup\n<jaap>      ^\n<jaap> SyntaxError: invalid syntax\n<mhansen> Hmm...\n```",
     "created_at": "2008-11-25T23:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4381",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ archive/issue_comments_032173.json:
 ```
 
 After applying the patch to sage-3.2.1.alpha0:
-
 
 
 ```
@@ -183,7 +180,6 @@ After applying the patch to sage-3.2.1.alpha0:
 <jaap> SyntaxError: invalid syntax
 <mhansen> Hmm...
 ```
-
 
 
 

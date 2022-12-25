@@ -69,7 +69,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_029904.json:
 ```json
 {
-    "body": "Yes, thanks for the clarification. I meant for many of them one could implement them directly against mpfr. For example:\n\n\n```\n\ninclude \"sage/rings/mpfr.pxi\"\nfrom sage.rings.complex_number cimport ComplexNumber\n\ndef my_exp(ComplexNumber self):\n    cdef ComplexNumber z = self._new()\n    cdef mpfr_t r\n    mpfr_init2(r, self._prec)\n    mpfr_exp(r, self.__re, GMP_RNDN)\n    mpfr_cos(z.__re, self.__im, GMP_RNDN)\n    mpfr_mul(z.__re, z.__re, r, GMP_RNDN)\n    mpfr_sin(z.__im, self.__im, GMP_RNDN)\n    mpfr_mul(z.__im, z.__im, r, GMP_RNDN)\n    mpfr_clear(r)\n    return z\n```\n\n\nThen\n\n\n```\nsage: a = CC.pi() + CC.0/3\nsage: my_exp(a) == a.exp()\nTrue\nsage: timeit(\"a.exp()\")\n625 loops, best of 3: 514 \u00b5s per loop\nsage: timeit(\"my_exp(a)\")\n625 loops, best of 3: 16.1 \u00b5s per loop\nsage: 514/16.1\n31.9254658385093\n```\n\n\nThis could be low-hanging fruit for a new developer.",
+    "body": "Yes, thanks for the clarification. I meant for many of them one could implement them directly against mpfr. For example:\n\n```\n\ninclude \"sage/rings/mpfr.pxi\"\nfrom sage.rings.complex_number cimport ComplexNumber\n\ndef my_exp(ComplexNumber self):\n    cdef ComplexNumber z = self._new()\n    cdef mpfr_t r\n    mpfr_init2(r, self._prec)\n    mpfr_exp(r, self.__re, GMP_RNDN)\n    mpfr_cos(z.__re, self.__im, GMP_RNDN)\n    mpfr_mul(z.__re, z.__re, r, GMP_RNDN)\n    mpfr_sin(z.__im, self.__im, GMP_RNDN)\n    mpfr_mul(z.__im, z.__im, r, GMP_RNDN)\n    mpfr_clear(r)\n    return z\n```\n\nThen\n\n```\nsage: a = CC.pi() + CC.0/3\nsage: my_exp(a) == a.exp()\nTrue\nsage: timeit(\"a.exp()\")\n625 loops, best of 3: 514 \u00b5s per loop\nsage: timeit(\"my_exp(a)\")\n625 loops, best of 3: 16.1 \u00b5s per loop\nsage: 514/16.1\n31.9254658385093\n```\n\nThis could be low-hanging fruit for a new developer.",
     "created_at": "2008-09-16T18:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4132",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_029904.json:
 ```
 
 Yes, thanks for the clarification. I meant for many of them one could implement them directly against mpfr. For example:
-
 
 ```
 
@@ -99,9 +98,7 @@ def my_exp(ComplexNumber self):
     return z
 ```
 
-
 Then
-
 
 ```
 sage: a = CC.pi() + CC.0/3
@@ -114,7 +111,6 @@ sage: timeit("my_exp(a)")
 sage: 514/16.1
 31.9254658385093
 ```
-
 
 This could be low-hanging fruit for a new developer.
 
@@ -209,7 +205,7 @@ Thanks. For the most part it looks good. Here's some suggestions though:
 archive/issue_comments_029909.json:
 ```json
 {
-    "body": "Attachment [trac4132-speedup-complex-functions.patch](tarball://root/attachments/some-uuid/ticket4132/trac4132-speedup-complex-functions.patch) by @aghitza created at 2008-09-29 02:26:18\n\nI have replaced the old patch with one that addresses the first two points made above.  I had actually done benchmarks while writing the code, and they're now listed further down in this comment.\n\nAs for the point on accuracy: I guess the issue is elliptic_logarithm, which was somewhat broken before this patch and is still broken now (see #4214); this has nothing to do with this ticket, though.\n\nTimings after/before the patch (z was chosen randomly):\n\n\n```\nsage: z = CC(0.588296734970724 - 0.918562568630843*I)\nsage: z\n0.588296734970724 - 0.918562568630843*I\nsage: timeit(\"z.is_zero()\")                          \n625 loops, best of 3: 901 ns per loop    # was 11.7 \u00b5s\nsage: timeit(\"z^(2/3)\")\n625 loops, best of 3: 80 \u00b5s per loop     # was 110 \u00b5s\nsage: timeit(\"z.csch()\")\n625 loops, best of 3: 18.2 \u00b5s per loop   # was 70.4 \u00b5s\nsage: timeit(\"z.sech()\")\n625 loops, best of 3: 18.3 \u00b5s per loop   # was 70.2 \u00b5s\nsage: timeit(\"z.cotan()\")\n625 loops, best of 3: 24.6 \u00b5s per loop   # was 52.5 \u00b5s\nsage: timeit(\"z.cos()\")  \n625 loops, best of 3: 21.9 \u00b5s per loop   # was 50.2 \u00b5s\nsage: timeit(\"z.cosh()\")\n625 loops, best of 3: 16.9 \u00b5s per loop   # was 50.9 \u00b5s\nsage: timeit(\"z.sin()\") \n625 loops, best of 3: 22.1 \u00b5s per loop   # was 50.2 \u00b5s\nsage: timeit(\"z.sinh()\")\n625 loops, best of 3: 17.2 \u00b5s per loop   # was 51.3 \u00b5s\nsage: timeit(\"z.tan()\") \n625 loops, best of 3: 22.9 \u00b5s per loop   # was 52.8 \u00b5s\nsage: timeit(\"z.tanh()\")\n625 loops, best of 3: 17.8 \u00b5s per loop   # was 51.8 \u00b5s\nsage: timeit(\"z.argument()\")\n625 loops, best of 3: 26.4 \u00b5s per loop   # was 36.3 \u00b5s\nsage: timeit(\"z.exp()\")     \n625 loops, best of 3: 10.8 \u00b5s per loop   # was 49.2 \u00b5s\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 34.4 \u00b5s per loop   # was 44.1 \u00b5s\nsage: timeit(\"z.nth_root(20)\")\n625 loops, best of 3: 56 \u00b5s per loop     # was 94.1 \u00b5s\nsage: timeit(\"z.nth_root(20, all=True)\")             \n625 loops, best of 3: 232 \u00b5s per loop    # was 537 \u00b5s\n```\n",
+    "body": "Attachment [trac4132-speedup-complex-functions.patch](tarball://root/attachments/some-uuid/ticket4132/trac4132-speedup-complex-functions.patch) by @aghitza created at 2008-09-29 02:26:18\n\nI have replaced the old patch with one that addresses the first two points made above.  I had actually done benchmarks while writing the code, and they're now listed further down in this comment.\n\nAs for the point on accuracy: I guess the issue is elliptic_logarithm, which was somewhat broken before this patch and is still broken now (see #4214); this has nothing to do with this ticket, though.\n\nTimings after/before the patch (z was chosen randomly):\n\n```\nsage: z = CC(0.588296734970724 - 0.918562568630843*I)\nsage: z\n0.588296734970724 - 0.918562568630843*I\nsage: timeit(\"z.is_zero()\")                          \n625 loops, best of 3: 901 ns per loop    # was 11.7 \u00b5s\nsage: timeit(\"z^(2/3)\")\n625 loops, best of 3: 80 \u00b5s per loop     # was 110 \u00b5s\nsage: timeit(\"z.csch()\")\n625 loops, best of 3: 18.2 \u00b5s per loop   # was 70.4 \u00b5s\nsage: timeit(\"z.sech()\")\n625 loops, best of 3: 18.3 \u00b5s per loop   # was 70.2 \u00b5s\nsage: timeit(\"z.cotan()\")\n625 loops, best of 3: 24.6 \u00b5s per loop   # was 52.5 \u00b5s\nsage: timeit(\"z.cos()\")  \n625 loops, best of 3: 21.9 \u00b5s per loop   # was 50.2 \u00b5s\nsage: timeit(\"z.cosh()\")\n625 loops, best of 3: 16.9 \u00b5s per loop   # was 50.9 \u00b5s\nsage: timeit(\"z.sin()\") \n625 loops, best of 3: 22.1 \u00b5s per loop   # was 50.2 \u00b5s\nsage: timeit(\"z.sinh()\")\n625 loops, best of 3: 17.2 \u00b5s per loop   # was 51.3 \u00b5s\nsage: timeit(\"z.tan()\") \n625 loops, best of 3: 22.9 \u00b5s per loop   # was 52.8 \u00b5s\nsage: timeit(\"z.tanh()\")\n625 loops, best of 3: 17.8 \u00b5s per loop   # was 51.8 \u00b5s\nsage: timeit(\"z.argument()\")\n625 loops, best of 3: 26.4 \u00b5s per loop   # was 36.3 \u00b5s\nsage: timeit(\"z.exp()\")     \n625 loops, best of 3: 10.8 \u00b5s per loop   # was 49.2 \u00b5s\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 34.4 \u00b5s per loop   # was 44.1 \u00b5s\nsage: timeit(\"z.nth_root(20)\")\n625 loops, best of 3: 56 \u00b5s per loop     # was 94.1 \u00b5s\nsage: timeit(\"z.nth_root(20, all=True)\")             \n625 loops, best of 3: 232 \u00b5s per loop    # was 537 \u00b5s\n```",
     "created_at": "2008-09-29T02:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4132",
     "type": "issue_comment",
@@ -225,7 +221,6 @@ I have replaced the old patch with one that addresses the first two points made 
 As for the point on accuracy: I guess the issue is elliptic_logarithm, which was somewhat broken before this patch and is still broken now (see #4214); this has nothing to do with this ticket, though.
 
 Timings after/before the patch (z was chosen randomly):
-
 
 ```
 sage: z = CC(0.588296734970724 - 0.918562568630843*I)
@@ -267,13 +262,12 @@ sage: timeit("z.nth_root(20, all=True)")
 
 
 
-
 ---
 
 archive/issue_comments_029910.json:
 ```json
 {
-    "body": "Nice work. You've probably noticed by now that the trig operations are expensive, so you could possibly shave 25% of some of the calls where you compute both sinh and cosh by using the identity\n\n    cosh(x) = sqrt(1+sinh(x)).\n\nOn the note of expensive trig, might I suggest a faster sqrt \n\n\n```\ndef new_sqrt(ComplexNumber self, all=False):\n    cdef ComplexNumber z = self._new()\n    if mpfr_zero_p(self.__im):\n        if mpfr_sgn(self.__re) >= 0:\n            mpfr_set_ui(z.__im, 0, rnd)\n            mpfr_sqrt(z.__re, self.__re, rnd)\n        else:\n            mpfr_set_ui(z.__re, 0, rnd)\n            mpfr_neg(z.__im, self.__re, rnd)\n            mpfr_sqrt(z.__im, z.__im, rnd)\n        if all:\n            return [z, -z] if z else [z]\n        else:\n            return z\n    # z = x + yi = (a+bi)^2\n    # expand, substitute, solve (note that a is nonzero)\n    # a^2 = (x + sqrt(x^2+y^2))/2\n    cdef mpfr_t a2\n    mpfr_init2(a2, self._prec)\n    mpfr_hypot(a2, self.__re, self.__im, rnd)\n    mpfr_add(a2, a2, self.__re, rnd)\n    mpfr_mul_2si(a2, a2, -1, rnd)\n    # a = sqrt(a2)\n    mpfr_sqrt(z.__re, a2, rnd)\n    # b = y/(2a)\n    mpfr_div(z.__im, self.__im, z.__re, rnd)\n    mpfr_mul_2si(z.__im, z.__im, -1, rnd)\n    mpfr_clear(a2)\n    if all:\n        return [z, -z]\n    else:\n        return z\n```\n\n\nwhich should run in 3 or 4 \u00b5s with 53 bits, and an even more significant improvement further out. \n\nThis patch is very good, exactly what I wanted when I wrote the ticket, so thanks. The only thing that *needs* to change for a positive review is I noticed in several case you write `long(n)` when you want an unsigned long. What this does is create a python int, call the python type \"long\" on it to get a python long, then extract that as a c long. In summary, just write `n` to get a C [unsigned] long just as you would in C. (This is a common confusion with Cython, as the C long and python long are totally different things.)",
+    "body": "Nice work. You've probably noticed by now that the trig operations are expensive, so you could possibly shave 25% of some of the calls where you compute both sinh and cosh by using the identity\n\n    cosh(x) = sqrt(1+sinh(x)).\n\nOn the note of expensive trig, might I suggest a faster sqrt \n\n```\ndef new_sqrt(ComplexNumber self, all=False):\n    cdef ComplexNumber z = self._new()\n    if mpfr_zero_p(self.__im):\n        if mpfr_sgn(self.__re) >= 0:\n            mpfr_set_ui(z.__im, 0, rnd)\n            mpfr_sqrt(z.__re, self.__re, rnd)\n        else:\n            mpfr_set_ui(z.__re, 0, rnd)\n            mpfr_neg(z.__im, self.__re, rnd)\n            mpfr_sqrt(z.__im, z.__im, rnd)\n        if all:\n            return [z, -z] if z else [z]\n        else:\n            return z\n    # z = x + yi = (a+bi)^2\n    # expand, substitute, solve (note that a is nonzero)\n    # a^2 = (x + sqrt(x^2+y^2))/2\n    cdef mpfr_t a2\n    mpfr_init2(a2, self._prec)\n    mpfr_hypot(a2, self.__re, self.__im, rnd)\n    mpfr_add(a2, a2, self.__re, rnd)\n    mpfr_mul_2si(a2, a2, -1, rnd)\n    # a = sqrt(a2)\n    mpfr_sqrt(z.__re, a2, rnd)\n    # b = y/(2a)\n    mpfr_div(z.__im, self.__im, z.__re, rnd)\n    mpfr_mul_2si(z.__im, z.__im, -1, rnd)\n    mpfr_clear(a2)\n    if all:\n        return [z, -z]\n    else:\n        return z\n```\n\nwhich should run in 3 or 4 \u00b5s with 53 bits, and an even more significant improvement further out. \n\nThis patch is very good, exactly what I wanted when I wrote the ticket, so thanks. The only thing that *needs* to change for a positive review is I noticed in several case you write `long(n)` when you want an unsigned long. What this does is create a python int, call the python type \"long\" on it to get a python long, then extract that as a c long. In summary, just write `n` to get a C [unsigned] long just as you would in C. (This is a common confusion with Cython, as the C long and python long are totally different things.)",
     "created_at": "2008-09-29T18:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4132",
     "type": "issue_comment",
@@ -287,7 +281,6 @@ Nice work. You've probably noticed by now that the trig operations are expensive
     cosh(x) = sqrt(1+sinh(x)).
 
 On the note of expensive trig, might I suggest a faster sqrt 
-
 
 ```
 def new_sqrt(ComplexNumber self, all=False):
@@ -323,7 +316,6 @@ def new_sqrt(ComplexNumber self, all=False):
     else:
         return z
 ```
-
 
 which should run in 3 or 4 µs with 53 bits, and an even more significant improvement further out. 
 

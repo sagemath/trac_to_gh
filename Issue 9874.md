@@ -161,7 +161,7 @@ It's conceivable that this is resolved by [this github PR](https://github.com/sa
 archive/issue_comments_097543.json:
 ```json
 {
-    "body": "I believe this request did indeed take care of it!  At least, in Sage 5.6 I can confirm that just entering a link of the form\n\n```\nhttp://sage....edu/home/pub/73/\n```\n\nworked nicely.  Jason, can you try this?  I'd like to have dual confirmation that I'm not crazy.",
+    "body": "I believe this request did indeed take care of it!  At least, in Sage 5.6 I can confirm that just entering a link of the form\n\n```\nhttp://sage....edu/home/pub/73/\n```\nworked nicely.  Jason, can you try this?  I'd like to have dual confirmation that I'm not crazy.",
     "created_at": "2013-06-14T17:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9874",
     "type": "issue_comment",
@@ -175,7 +175,6 @@ I believe this request did indeed take care of it!  At least, in Sage 5.6 I can 
 ```
 http://sage....edu/home/pub/73/
 ```
-
 worked nicely.  Jason, can you try this?  I'd like to have dual confirmation that I'm not crazy.
 
 

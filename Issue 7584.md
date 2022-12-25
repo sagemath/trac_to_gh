@@ -3,7 +3,7 @@
 archive/issues_007584.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFrom IRC:\n\n```\n08:32 < schilly> mvngu: i found a spkg inside the pari spkg. was that me while \n                 scripting or is is this everywhere?\n08:32 < mvngu> schilly: Let me check with Sage 4.3.alpha0\n08:33 < schilly> ok\n08:36 < mvngu> With Sage 4.2.1, it's the file pari-2.3.3.p5/pari-2.3.3.p5.spkg, \n               which a small file. The same goes for Sage 4.3.alpha0.\n08:37 < mvngu> That file should be removed; it's not used anywhere as far as I \n               can tell.\n08:37 < mvngu> I think it was introduced during the update to .p5\n08:37 < mvngu> Unintentionally, of course.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7584\n\n",
+    "body": "Assignee: tbd\n\nFrom IRC:\n\n```\n08:32 < schilly> mvngu: i found a spkg inside the pari spkg. was that me while \n                 scripting or is is this everywhere?\n08:32 < mvngu> schilly: Let me check with Sage 4.3.alpha0\n08:33 < schilly> ok\n08:36 < mvngu> With Sage 4.2.1, it's the file pari-2.3.3.p5/pari-2.3.3.p5.spkg, \n               which a small file. The same goes for Sage 4.3.alpha0.\n08:37 < mvngu> That file should be removed; it's not used anywhere as far as I \n               can tell.\n08:37 < mvngu> I think it was introduced during the update to .p5\n08:37 < mvngu> Unintentionally, of course.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7584\n\n",
     "created_at": "2009-12-02T16:57:41Z",
     "labels": [
         "component: packages: standard",
@@ -33,7 +33,6 @@ From IRC:
 08:37 < mvngu> I think it was introduced during the update to .p5
 08:37 < mvngu> Unintentionally, of course.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7584
 

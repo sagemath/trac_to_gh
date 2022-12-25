@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6223
 archive/issue_comments_049587.json:
 ```json
 {
-    "body": "Removing `include \"../ext/python_list.pxi\"` from `sage/structure/coerce_dict.pyx` gives trouble:\n\n\n```\npython `which cython` --embed-positions --directive cdivision=True,autotestdict=False -I/usr/local/src/sage-4.6.alpha3/devel/sage-test -o sage/structure/coerce_dict.c sage/structure/coerce_dict.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n\n    cdef get(self, k1, k2, k3):\n        cdef Py_ssize_t h = (<Py_ssize_t><void *>k1 + 13*<Py_ssize_t><void *>k2 ^ 503*<Py_ssize_t><void *>k3)\n        if h < 0: h = -h\n        cdef Py_ssize_t i\n        bucket = <object>PyList_GET_ITEM(self.buckets, h % PyList_GET_SIZE(self.buckets))\n                                       ^\n------------------------------------------------------------\n\n/usr/local/src/sage-4.6.alpha3/devel/sage-test/sage/structure/coerce_dict.pyx:225:40: undeclared name not builtin: PyList_GET_ITEM\n```\n",
+    "body": "Removing `include \"../ext/python_list.pxi\"` from `sage/structure/coerce_dict.pyx` gives trouble:\n\n```\npython `which cython` --embed-positions --directive cdivision=True,autotestdict=False -I/usr/local/src/sage-4.6.alpha3/devel/sage-test -o sage/structure/coerce_dict.c sage/structure/coerce_dict.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n\n    cdef get(self, k1, k2, k3):\n        cdef Py_ssize_t h = (<Py_ssize_t><void *>k1 + 13*<Py_ssize_t><void *>k2 ^ 503*<Py_ssize_t><void *>k3)\n        if h < 0: h = -h\n        cdef Py_ssize_t i\n        bucket = <object>PyList_GET_ITEM(self.buckets, h % PyList_GET_SIZE(self.buckets))\n                                       ^\n------------------------------------------------------------\n\n/usr/local/src/sage-4.6.alpha3/devel/sage-test/sage/structure/coerce_dict.pyx:225:40: undeclared name not builtin: PyList_GET_ITEM\n```",
     "created_at": "2010-10-12T13:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_049587.json:
 ```
 
 Removing `include "../ext/python_list.pxi"` from `sage/structure/coerce_dict.pyx` gives trouble:
-
 
 ```
 python `which cython` --embed-positions --directive cdivision=True,autotestdict=False -I/usr/local/src/sage-4.6.alpha3/devel/sage-test -o sage/structure/coerce_dict.c sage/structure/coerce_dict.pyx
@@ -60,7 +59,6 @@ Error converting Pyrex file to C:
 
 /usr/local/src/sage-4.6.alpha3/devel/sage-test/sage/structure/coerce_dict.pyx:225:40: undeclared name not builtin: PyList_GET_ITEM
 ```
-
 
 
 

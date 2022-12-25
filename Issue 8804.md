@@ -143,7 +143,7 @@ This looks okay, but I'm not sure how to test the documentation building and loo
 archive/issue_comments_080656.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> This looks okay, but I'm not sure how to test the documentation building and looking right. \n\nA quick-and-dirty way is to rebuild as follows from SAGE_ROOT:\n\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\n\nIf you really want to be thorough, you could delete the whole output directory resulting from building the Sage documentation and then rebuild the whole reference manual again. This would take much longer than the above quick-and-dirty way, but it sure is more thorough. From SAGE_ROOT, do:\n\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n\n\n\n\n> Also, just for my information, when do we need r\"\"\" and when is \"\"\" sufficient?  \n\nWe need `r\"\"\"` when the docstring contains LaTeX escapes, i.e. LaTeX macros that start with a backslash character. In most other cases, `\"\"\"` is sufficient. For example, if your docstring contains something like \n\n\n```\n\\sin(x)^2 + \\cos(x)^2 = 1\n```\n\n\nthen your docstring must be delimited with `r\"\"\"`. For safety, I always use `r\"\"\"`.\n\n\n\n\n>  Also, apparently the input for init goes in the class definition - is that right? \n\nAt the moment, that is the case because docstrings for methods and functions whose names start with an underscore don't show up on the reference manual. So full documentation for the constructor `__init__` are recommended to be in the class docstring. That way, documentation relating to the constructor, including its input and output documentation, shows up on the reference manual.",
+    "body": "Replying to [comment:3 kcrisman]:\n> This looks okay, but I'm not sure how to test the documentation building and looking right. \n\n\nA quick-and-dirty way is to rebuild as follows from SAGE_ROOT:\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\nIf you really want to be thorough, you could delete the whole output directory resulting from building the Sage documentation and then rebuild the whole reference manual again. This would take much longer than the above quick-and-dirty way, but it sure is more thorough. From SAGE_ROOT, do:\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n\n\n\n> Also, just for my information, when do we need r\"\"\" and when is \"\"\" sufficient?  \n\n\nWe need `r\"\"\"` when the docstring contains LaTeX escapes, i.e. LaTeX macros that start with a backslash character. In most other cases, `\"\"\"` is sufficient. For example, if your docstring contains something like \n\n```\n\\sin(x)^2 + \\cos(x)^2 = 1\n```\n\nthen your docstring must be delimited with `r\"\"\"`. For safety, I always use `r\"\"\"`.\n\n\n\n\n>  Also, apparently the input for init goes in the class definition - is that right? \n\n\nAt the moment, that is the case because docstrings for methods and functions whose names start with an underscore don't show up on the reference manual. So full documentation for the constructor `__init__` are recommended to be in the class docstring. That way, documentation relating to the constructor, including its input and output documentation, shows up on the reference manual.",
     "created_at": "2010-05-10T21:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
@@ -155,17 +155,15 @@ archive/issue_comments_080656.json:
 Replying to [comment:3 kcrisman]:
 > This looks okay, but I'm not sure how to test the documentation building and looking right. 
 
-A quick-and-dirty way is to rebuild as follows from SAGE_ROOT:
 
+A quick-and-dirty way is to rebuild as follows from SAGE_ROOT:
 
 ```sh
 ./sage -b main
 ./sage -docbuild reference html
 ```
 
-
 If you really want to be thorough, you could delete the whole output directory resulting from building the Sage documentation and then rebuild the whole reference manual again. This would take much longer than the above quick-and-dirty way, but it sure is more thorough. From SAGE_ROOT, do:
-
 
 ```sh
 rm -rf devel/sage-main/doc/output/
@@ -175,16 +173,14 @@ rm -rf devel/sage-main/doc/output/
 
 
 
-
 > Also, just for my information, when do we need r""" and when is """ sufficient?  
 
-We need `r"""` when the docstring contains LaTeX escapes, i.e. LaTeX macros that start with a backslash character. In most other cases, `"""` is sufficient. For example, if your docstring contains something like 
 
+We need `r"""` when the docstring contains LaTeX escapes, i.e. LaTeX macros that start with a backslash character. In most other cases, `"""` is sufficient. For example, if your docstring contains something like 
 
 ```
 \sin(x)^2 + \cos(x)^2 = 1
 ```
-
 
 then your docstring must be delimited with `r"""`. For safety, I always use `r"""`.
 
@@ -192,6 +188,7 @@ then your docstring must be delimited with `r"""`. For safety, I always use `r""
 
 
 >  Also, apparently the input for init goes in the class definition - is that right? 
+
 
 At the moment, that is the case because docstrings for methods and functions whose names start with an underscore don't show up on the reference manual. So full documentation for the constructor `__init__` are recommended to be in the class docstring. That way, documentation relating to the constructor, including its input and output documentation, shows up on the reference manual.
 

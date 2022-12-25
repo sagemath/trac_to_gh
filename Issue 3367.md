@@ -70,7 +70,7 @@ This is fixed in 3.1.2 at least (`CachedFunction` and `cached_function` are avai
 archive/issue_comments_023514.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> This is fixed in 3.1.2 at least (`CachedFunction` and `cached_function` are available now). This ticket can be closed.\n\nI thought so, too, but cached_function is just an alias for CachedFunction in the code. To close this ticket the code should be moved to cached_function and CachedFunction should be officially deprecated.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 malb]:\n> This is fixed in 3.1.2 at least (`CachedFunction` and `cached_function` are available now). This ticket can be closed.\n\n\nI thought so, too, but cached_function is just an alias for CachedFunction in the code. To close this ticket the code should be moved to cached_function and CachedFunction should be officially deprecated.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T20:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
@@ -81,6 +81,7 @@ archive/issue_comments_023514.json:
 
 Replying to [comment:2 malb]:
 > This is fixed in 3.1.2 at least (`CachedFunction` and `cached_function` are available now). This ticket can be closed.
+
 
 I thought so, too, but cached_function is just an alias for CachedFunction in the code. To close this ticket the code should be moved to cached_function and CachedFunction should be officially deprecated.
 

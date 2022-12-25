@@ -3,7 +3,7 @@
 archive/issues_002617.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider the following examples (reported by Dean Moore here: http://groups.google.com/group/sage-support/browse_thread/thread/5555e780a76b3343#)\n\n```\nsage: solve(sin(x^2)/x == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^2 == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^3 == 0)\n[x == 0]\n```\n\nNone of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2617\n\n",
+    "body": "Assignee: @williamstein\n\nConsider the following examples (reported by Dean Moore here: http://groups.google.com/group/sage-support/browse_thread/thread/5555e780a76b3343#)\n\n```\nsage: solve(sin(x^2)/x == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^2 == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^3 == 0)\n[x == 0]\n```\nNone of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2617\n\n",
     "created_at": "2008-03-20T20:22:24Z",
     "labels": [
         "component: calculus",
@@ -28,7 +28,6 @@ sage: solve(sin(x^2)/x^2 == 0)
 sage: solve(sin(x^2)/x^3 == 0)
 [x == 0]
 ```
-
 None of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2617
@@ -122,7 +121,7 @@ I hope, it could be used also in Sage. I'll try it, hope within a week.
 archive/issue_comments_017926.json:
 ```json
 {
-    "body": "Replying to [comment:3 robert.marik]:\n> Perhaps related issue is also that the solving acot(x) == 0 ends with error message \"The number 0 isn't in the domain of cot\"\n> \n\nNo, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return \nsage: solve(acot(x),x)\n[]\ninstead.  Feel free to open a ticket for that and put me in the cc: field.  \n\nBut this is unrelated to the issue in the ticket, which is a genuine Maxima bug, as far as I can tell.",
+    "body": "Replying to [comment:3 robert.marik]:\n> Perhaps related issue is also that the solving acot(x) == 0 ends with error message \"The number 0 isn't in the domain of cot\"\n> \n\n\nNo, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return \nsage: solve(acot(x),x)\n[]\ninstead.  Feel free to open a ticket for that and put me in the cc: field.  \n\nBut this is unrelated to the issue in the ticket, which is a genuine Maxima bug, as far as I can tell.",
     "created_at": "2009-10-08T13:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -134,6 +133,7 @@ archive/issue_comments_017926.json:
 Replying to [comment:3 robert.marik]:
 > Perhaps related issue is also that the solving acot(x) == 0 ends with error message "The number 0 isn't in the domain of cot"
 > 
+
 
 No, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return 
 sage: solve(acot(x),x)
@@ -149,7 +149,7 @@ But this is unrelated to the issue in the ticket, which is a genuine Maxima bug,
 archive/issue_comments_017927.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> Replying to [comment:3 robert.marik]:\n> > Perhaps related issue is also that the solving acot(x) == 0 ends with error message \"The number 0 isn't in the domain of cot\"\n> > \n> \n> No, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return \n> sage: solve(acot(x),x)\n> []\nThis will be addressed (not the main point of this ticket) in the patch for #7745.  The main point is still a bug in Maxima 5.20.1.",
+    "body": "Replying to [comment:4 kcrisman]:\n> Replying to [comment:3 robert.marik]:\n> > Perhaps related issue is also that the solving acot(x) == 0 ends with error message \"The number 0 isn't in the domain of cot\"\n> > \n\n> \n> No, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return \n> sage: solve(acot(x),x)\n> []\n\nThis will be addressed (not the main point of this ticket) in the patch for #7745.  The main point is still a bug in Maxima 5.20.1.",
     "created_at": "2009-12-22T19:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -162,10 +162,12 @@ Replying to [comment:4 kcrisman]:
 > Replying to [comment:3 robert.marik]:
 > > Perhaps related issue is also that the solving acot(x) == 0 ends with error message "The number 0 isn't in the domain of cot"
 > > 
+
 > 
 > No, this is an appropriate error message (it's from Maxima, not Sage). There are no solutions to acot(x)==0, at least over the reals (and presumably over the complex field as well?).  Now that we know about that error, it would be easy to put a catch in for something like that error message and return 
 > sage: solve(acot(x),x)
 > []
+
 This will be addressed (not the main point of this ticket) in the patch for #7745.  The main point is still a bug in Maxima 5.20.1.
 
 
@@ -208,7 +210,7 @@ Any idea?
 archive/issue_comments_017929.json:
 ```json
 {
-    "body": "As it turns out, to_poly_solve can handle this sort of thing (see in Maxima the share/contrib/rtest_to_poly_solver.mac line 1092).  But we would have to figure out a way to interpret the if statements properly (for instance, to note that twice an integer plus one is not zero).\n\n```\n/* Sage Ticket 2617; see also Sage mailing list 18 March 2008 */\n\nnicedummies(to_poly_solve(sin(x^2)/x,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n\nnicedummies(to_poly_solve(sin(x^2)/x^2,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n\nnicedummies(to_poly_solve(sin(x^2)/x^3,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n```\n",
+    "body": "As it turns out, to_poly_solve can handle this sort of thing (see in Maxima the share/contrib/rtest_to_poly_solver.mac line 1092).  But we would have to figure out a way to interpret the if statements properly (for instance, to note that twice an integer plus one is not zero).\n\n```\n/* Sage Ticket 2617; see also Sage mailing list 18 March 2008 */\n\nnicedummies(to_poly_solve(sin(x^2)/x,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n\nnicedummies(to_poly_solve(sin(x^2)/x^2,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n\nnicedummies(to_poly_solve(sin(x^2)/x^3,x));\n%union(%if(2*%z0+1 # 0,[x = -sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(2*%z0+1 # 0,[x = sqrt(2*%pi*%z0+%pi)],%union()),\n             %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),\n             %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$\n```",
     "created_at": "2009-12-24T03:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -240,7 +242,6 @@ nicedummies(to_poly_solve(sin(x^2)/x^3,x));
              %if(%z1 # 0,[x = -sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()),
              %if(%z1 # 0,[x = sqrt(2)*sqrt(%pi)*sqrt(%z1)],%union()))$
 ```
-
 
 
 
@@ -446,7 +447,7 @@ On the other hand, if sympy can now solve everything Maxima does, one could try 
 archive/issue_comments_017934.json:
 ```json
 {
-    "body": "This has still been an issue, and so I've implemented an optional solution\n\nYou can pass the optional argument (`check_domain`) to `solve`, which will tell it to check each solution it finds with SymPy to see if it's NaN. I added some documentation and an example.\n\nI ran (on my machine) all the current doc-tests with the new argument to make sure it accepts all their solutions, and it does, but I believe it significantly slows down the function, so probably should not end up defaulting to `True` without some more considerations / optimizations (especially since `solve` is widely used)\n\nSee the added documentation example:\n\n\n```\nsage: solve((x^2 - 1)/(sin(x - 1)) == 0, x, check_domain=True)\n[x == -1]\n```\n\n----\nNew commits:",
+    "body": "This has still been an issue, and so I've implemented an optional solution\n\nYou can pass the optional argument (`check_domain`) to `solve`, which will tell it to check each solution it finds with SymPy to see if it's NaN. I added some documentation and an example.\n\nI ran (on my machine) all the current doc-tests with the new argument to make sure it accepts all their solutions, and it does, but I believe it significantly slows down the function, so probably should not end up defaulting to `True` without some more considerations / optimizations (especially since `solve` is widely used)\n\nSee the added documentation example:\n\n```\nsage: solve((x^2 - 1)/(sin(x - 1)) == 0, x, check_domain=True)\n[x == -1]\n```\n\n---\nNew commits:",
     "created_at": "2019-07-07T17:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -463,13 +464,12 @@ I ran (on my machine) all the current doc-tests with the new argument to make su
 
 See the added documentation example:
 
-
 ```
 sage: solve((x^2 - 1)/(sin(x - 1)) == 0, x, check_domain=True)
 [x == -1]
 ```
 
-----
+---
 New commits:
 
 
@@ -583,7 +583,7 @@ archive/issue_events_006106.json:
 archive/issue_comments_017937.json:
 ```json
 {
-    "body": "On 9.1.beta5 we get something else than the ticket description\n\n```\nsage: solve(sin(x^2)/x == 0)\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n<ipython-input-1-e922184d1fd1> in <module>()\n----> 1 solve(sin(x**Integer(2))/x == Integer(0))\n\n/opt/sage/local/lib/python3.7/site-packages/sage/symbolic/relation.py in solve(f, *args, **kwds)\n   1016         x = args\n   1017     else:\n-> 1018         x = args[0]\n   1019     if isinstance(x, (list, tuple)):\n   1020         for i in x:\n\nIndexError: tuple index out of range\n```\n",
+    "body": "On 9.1.beta5 we get something else than the ticket description\n\n```\nsage: solve(sin(x^2)/x == 0)\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n<ipython-input-1-e922184d1fd1> in <module>()\n----> 1 solve(sin(x**Integer(2))/x == Integer(0))\n\n/opt/sage/local/lib/python3.7/site-packages/sage/symbolic/relation.py in solve(f, *args, **kwds)\n   1016         x = args\n   1017     else:\n-> 1018         x = args[0]\n   1019     if isinstance(x, (list, tuple)):\n   1020         for i in x:\n\nIndexError: tuple index out of range\n```",
     "created_at": "2020-02-22T15:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -613,13 +613,12 @@ IndexError: tuple index out of range
 
 
 
-
 ---
 
 archive/issue_comments_017938.json:
 ```json
 {
-    "body": "Your solution is somehow complicated and provides a wrong answer. Why not prefer\n\n```\nsage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\nComplement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n```\n",
+    "body": "Your solution is somehow complicated and provides a wrong answer. Why not prefer\n\n```\nsage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\nComplement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n```",
     "created_at": "2020-02-22T15:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -634,7 +633,6 @@ Your solution is somehow complicated and provides a wrong answer. Why not prefer
 sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
 ```
-
 
 
 
@@ -661,7 +659,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_017940.json:
 ```json
 {
-    "body": "Replying to [comment:22 vdelecroix]:\n> Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> {{{\n> sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm=\"sympy\")\n> Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> }}}\n\nthe syntax you are providing is not user friendly. I would prefer the previous syntax.",
+    "body": "Replying to [comment:22 vdelecroix]:\n> Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> \n> ```\n> sage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\n> Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> ```\n\n\nthe syntax you are providing is not user friendly. I would prefer the previous syntax.",
     "created_at": "2020-02-22T17:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -672,10 +670,12 @@ archive/issue_comments_017940.json:
 
 Replying to [comment:22 vdelecroix]:
 > Your solution is somehow complicated and provides a wrong answer. Why not prefer
-> {{{
-> sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm="sympy")
+> 
+> ```
+> sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
-> }}}
+> ```
+
 
 the syntax you are providing is not user friendly. I would prefer the previous syntax.
 
@@ -686,7 +686,7 @@ the syntax you are providing is not user friendly. I would prefer the previous s
 archive/issue_comments_017941.json:
 ```json
 {
-    "body": "Replying to [comment:22 vdelecroix]:\n> Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> {{{\n> sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm=\"sympy\")\n> Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> }}}\nI think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.",
+    "body": "Replying to [comment:22 vdelecroix]:\n> Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> \n> ```\n> sage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\n> Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> ```\n\nI think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.",
     "created_at": "2020-03-02T15:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -697,10 +697,12 @@ archive/issue_comments_017941.json:
 
 Replying to [comment:22 vdelecroix]:
 > Your solution is somehow complicated and provides a wrong answer. Why not prefer
-> {{{
-> sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm="sympy")
+> 
+> ```
+> sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
-> }}}
+> ```
+
 I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.
 
 
@@ -710,7 +712,7 @@ I think the syntax simplicity can be judged in the later stages, I do want to as
 archive/issue_comments_017942.json:
 ```json
 {
-    "body": "Replying to [comment:24 gh-Shlokatadistance]:\n> Replying to [comment:22 vdelecroix]:\n> > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > {{{\n> > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm=\"sympy\")\n> > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > }}}\n> I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n\nI don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.",
+    "body": "Replying to [comment:24 gh-Shlokatadistance]:\n> Replying to [comment:22 vdelecroix]:\n> > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > \n> > ```\n> > sage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\n> > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > ```\n\n> I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n\nI don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.",
     "created_at": "2020-03-02T15:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -722,10 +724,12 @@ archive/issue_comments_017942.json:
 Replying to [comment:24 gh-Shlokatadistance]:
 > Replying to [comment:22 vdelecroix]:
 > > Your solution is somehow complicated and provides a wrong answer. Why not prefer
-> > {{{
-> > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm="sympy")
+> > 
+> > ```
+> > sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
-> > }}}
+> > ```
+
 > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.
 
 I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.
@@ -737,7 +741,7 @@ I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), 
 archive/issue_comments_017943.json:
 ```json
 {
-    "body": "Replying to [comment:25 vdelecroix]:\n> Replying to [comment:24 gh-Shlokatadistance]:\n> > Replying to [comment:22 vdelecroix]:\n> > > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > > {{{\n> > > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm=\"sympy\")\n> > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > > }}}\n> > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n> \n> I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.\n\nAhh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution",
+    "body": "Replying to [comment:25 vdelecroix]:\n> Replying to [comment:24 gh-Shlokatadistance]:\n> > Replying to [comment:22 vdelecroix]:\n> > > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > > \n> > > ```\n> > > sage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\n> > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > > ```\n\n> > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n> \n> I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.\n\n\nAhh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution",
     "created_at": "2020-03-02T16:00:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -750,13 +754,16 @@ Replying to [comment:25 vdelecroix]:
 > Replying to [comment:24 gh-Shlokatadistance]:
 > > Replying to [comment:22 vdelecroix]:
 > > > Your solution is somehow complicated and provides a wrong answer. Why not prefer
-> > > {{{
-> > > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm="sympy")
+> > > 
+> > > ```
+> > > sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 > > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
-> > > }}}
+> > > ```
+
 > > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.
 > 
 > I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.
+
 
 Ahh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution
 
@@ -767,7 +774,7 @@ Ahh my bad, I was trying to obtain a more numeric based answer, I did see that t
 archive/issue_comments_017944.json:
 ```json
 {
-    "body": "Replying to [comment:26 gh-Shlokatadistance]:\n> Replying to [comment:25 vdelecroix]:\n> > Replying to [comment:24 gh-Shlokatadistance]:\n> > > Replying to [comment:22 vdelecroix]:\n> > > > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > > > {{{\n> > > > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm=\"sympy\")\n> > > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > > > }}}\n> > > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n> > \n> > I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.\n> \n> Ahh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution\n\nIdeally, it should be possible to convert it to the parametrized set `{sqrt(2*n*pi): n in ZZ \\ {0}}`.",
+    "body": "Replying to [comment:26 gh-Shlokatadistance]:\n> Replying to [comment:25 vdelecroix]:\n> > Replying to [comment:24 gh-Shlokatadistance]:\n> > > Replying to [comment:22 vdelecroix]:\n> > > > Your solution is somehow complicated and provides a wrong answer. Why not prefer\n> > > > \n> > > > ```\n> > > > sage: solve(sin(x^2)/x^3 == 0, x, algorithm=\"sympy\")\n> > > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))\n> > > > ```\n\n> > > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.\n> > \n> > I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.\n\n> \n> Ahh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution\n\n\nIdeally, it should be possible to convert it to the parametrized set `{sqrt(2*n*pi): n in ZZ \\ {0}}`.",
     "created_at": "2020-03-02T16:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -781,15 +788,19 @@ Replying to [comment:26 gh-Shlokatadistance]:
 > > Replying to [comment:24 gh-Shlokatadistance]:
 > > > Replying to [comment:22 vdelecroix]:
 > > > > Your solution is somehow complicated and provides a wrong answer. Why not prefer
-> > > > {{{
-> > > > sage: solve(sin(x<sup>2)/x</sup>3 == 0, x, algorithm="sympy")
+> > > > 
+> > > > ```
+> > > > sage: solve(sin(x^2)/x^3 == 0, x, algorithm="sympy")
 > > > > Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))
-> > > > }}}
+> > > > ```
+
 > > > I think the syntax simplicity can be judged in the later stages, I do want to ask are you able to obtain the answer from this? because I can't seem to be getting this work, even after a certain modification, such as additional functions for testing and new variable.
 > > 
 > > I don't understand your question. `Complement(ConditionSet(x, Eq(sin(x**2), 0), Complexes), FiniteSet(0))` is the answer. Not in a very nice form, but a valid answer.
+
 > 
 > Ahh my bad, I was trying to obtain a more numeric based answer, I did see that the second statement did resemble the solution
+
 
 Ideally, it should be possible to convert it to the parametrized set `{sqrt(2*n*pi): n in ZZ \ {0}}`.
 
@@ -800,7 +811,7 @@ Ideally, it should be possible to convert it to the parametrized set `{sqrt(2*n*
 archive/issue_comments_017945.json:
 ```json
 {
-    "body": "Yes exactly, from what I reckon the procedure is simply returning like a set, and I think that has to do with the way the conditions were defined. I think by providing a few other cases on the same will help us resolve this issue, something along the lines of\n\n```\ndef condition_set():\n   for x in solution_set # this can be solution set for our trigonometric functions\n       a = solve(the given problem)\n       ans = pi_set(a) # pi_set is the set of our pi value, based on a random value\n      return ans\n```\n\nSomething along these lines , of course this is just a suggestion",
+    "body": "Yes exactly, from what I reckon the procedure is simply returning like a set, and I think that has to do with the way the conditions were defined. I think by providing a few other cases on the same will help us resolve this issue, something along the lines of\n\n```\ndef condition_set():\n   for x in solution_set # this can be solution set for our trigonometric functions\n       a = solve(the given problem)\n       ans = pi_set(a) # pi_set is the set of our pi value, based on a random value\n      return ans\n```\nSomething along these lines , of course this is just a suggestion",
     "created_at": "2020-03-21T19:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2617",
     "type": "issue_comment",
@@ -818,7 +829,6 @@ def condition_set():
        ans = pi_set(a) # pi_set is the set of our pi value, based on a random value
       return ans
 ```
-
 Something along these lines , of course this is just a suggestion
 
 

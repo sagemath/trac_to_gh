@@ -3,7 +3,7 @@
 archive/issues_006337.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: version()\n'Sage Version 4.0.1, Release Date: 2009-06-06'\nsage: var('a d')\n(a, d)\nsage: A = matrix([[a,0],[1,d]])\nsage: A.eigenvalues()\n[d, a]\nsage: A.jordan_form()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call\nlast)\n\n/home/bo198214/.sage/temp/darkdepth/6404/\n_home_bo198214__sage_init_sage_0.py in <module>()\n\n/usr/src/sage-4.0.1-linux-Debian_GNU_Linux_5.0_lenny-sse2-x86_64-Linux/\nlocal/lib/python2.5/site-packages/sage/matrix/matrix2.so in\nsage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:27915)()\n\nRuntimeError: Some eigenvalue does not exist in Symbolic Ring.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6337\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: version()\n'Sage Version 4.0.1, Release Date: 2009-06-06'\nsage: var('a d')\n(a, d)\nsage: A = matrix([[a,0],[1,d]])\nsage: A.eigenvalues()\n[d, a]\nsage: A.jordan_form()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call\nlast)\n\n/home/bo198214/.sage/temp/darkdepth/6404/\n_home_bo198214__sage_init_sage_0.py in <module>()\n\n/usr/src/sage-4.0.1-linux-Debian_GNU_Linux_5.0_lenny-sse2-x86_64-Linux/\nlocal/lib/python2.5/site-packages/sage/matrix/matrix2.so in\nsage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:27915)()\n\nRuntimeError: Some eigenvalue does not exist in Symbolic Ring.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6337\n\n",
     "created_at": "2009-06-16T16:58:27Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_006337.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: version()
@@ -41,7 +40,6 @@ sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:27915)()
 
 RuntimeError: Some eigenvalue does not exist in Symbolic Ring.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6337
 
@@ -78,7 +76,7 @@ While the eigenvalues method works, it doesn't compute multiplicities, so I am n
 archive/issue_comments_050479.json:
 ```json
 {
-    "body": "This one looks different now:\n\n```\nsage: sage: var('a d')\n(a, d)\nsage: sage: A = matrix([[a,0],[1,d]])\nsage: sage: A.eigenvalues()\n[d, a]\nsage: sage: A.jordan_form()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-8-708dc91119f4> in <module>()\n----> 1 A.jordan_form()\n\n/home/darij/sage-5.11.beta3/local/lib/python2.7/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:44267)()\n\nValueError: Jordan normal form not implemented over inexact rings.\n```\n\n\nI agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...",
+    "body": "This one looks different now:\n\n```\nsage: sage: var('a d')\n(a, d)\nsage: sage: A = matrix([[a,0],[1,d]])\nsage: sage: A.eigenvalues()\n[d, a]\nsage: sage: A.jordan_form()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-8-708dc91119f4> in <module>()\n----> 1 A.jordan_form()\n\n/home/darij/sage-5.11.beta3/local/lib/python2.7/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:44267)()\n\nValueError: Jordan normal form not implemented over inexact rings.\n```\n\nI agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...",
     "created_at": "2013-06-22T23:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: Jordan normal form not implemented over inexact rings.
 ```
-
 
 I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...
 
@@ -253,7 +250,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050481.json:
 ```json
 {
-    "body": "Replying to [comment:3 darij]:\n> I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\nSo this would be invalid now?",
+    "body": "Replying to [comment:3 darij]:\n> I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\n\nSo this would be invalid now?",
     "created_at": "2015-07-31T13:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
@@ -264,6 +261,7 @@ archive/issue_comments_050481.json:
 
 Replying to [comment:3 darij]:
 > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...
+
 So this would be invalid now?
 
 
@@ -325,7 +323,7 @@ I think someone who understands symbolic better should weigh in.
 archive/issue_comments_050483.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhampton]:\n> Things are failing early on, with the roots command.  E.g.:\n> \n> sage: var('a, d')\n> sage: ((d - x)*(a - x)).roots()\n> [(x, 1)]\n\nWhat is failing here? In order to get the expected answer you need of course to specify the variable\n\n```\nsage: var('a d')\n(a, d)\nsage:  ((d - x)*(a - x)).roots()\n[(x, 1)]\nsage:  ((d - x)*(a - x)).roots(x)\n[(d, 1), (a, 1)]\nsage:  ((d - x)**2).roots()\n[(x, 2)]\n```\n",
+    "body": "Replying to [comment:1 mhampton]:\n> Things are failing early on, with the roots command.  E.g.:\n> \n> sage: var('a, d')\n> sage: ((d - x)*(a - x)).roots()\n> [(x, 1)]\n\n\nWhat is failing here? In order to get the expected answer you need of course to specify the variable\n\n```\nsage: var('a d')\n(a, d)\nsage:  ((d - x)*(a - x)).roots()\n[(x, 1)]\nsage:  ((d - x)*(a - x)).roots(x)\n[(d, 1), (a, 1)]\nsage:  ((d - x)**2).roots()\n[(x, 2)]\n```",
     "created_at": "2015-08-09T14:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
@@ -341,6 +339,7 @@ Replying to [comment:1 mhampton]:
 > sage: ((d - x)*(a - x)).roots()
 > [(x, 1)]
 
+
 What is failing here? In order to get the expected answer you need of course to specify the variable
 
 ```
@@ -353,7 +352,6 @@ sage:  ((d - x)*(a - x)).roots(x)
 sage:  ((d - x)**2).roots()
 [(x, 2)]
 ```
-
 
 
 
@@ -414,7 +412,7 @@ Here is a straightforward implementation of `jordan_form()` for symbolic matrice
 archive/issue_comments_050485.json:
 ```json
 {
-    "body": "This looks fine to me.\n\n\nReplying to [comment:8 rws]:\n> Replying to [comment:3 darij]:\n> > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\n> So this would be invalid now?\nThe Jordan normal form does not require more \"exactness\" from the ring as do the eigenvalues which are already implemented for symbolic matrices (calling maxima). Hence I see no point in discussing whether or not we should offer a jordan_form method for symbolic matrices, it seems natural to do it as what is proposed here.\n\nJust one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\n  {{{#!python\n  sage: a = matrix(QQ,3,[1,0,1,0,2,0,0,0,1])\n  sage: a.jordan_form()\n  [2|0 0]\n  [-+---]\n  [0|1 1]\n  [0|0 1]\n  }}}",
+    "body": "This looks fine to me.\n\n\nReplying to [comment:8 rws]:\n> Replying to [comment:3 darij]:\n> > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\n\n> So this would be invalid now?\nThe Jordan normal form does not require more \"exactness\" from the ring as do the eigenvalues which are already implemented for symbolic matrices (calling maxima). Hence I see no point in discussing whether or not we should offer a jordan_form method for symbolic matrices, it seems natural to do it as what is proposed here.\n\nJust one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\n  {{{#!python\n  sage: a = matrix(QQ,3,[1,0,1,0,2,0,0,0,1])\n  sage: a.jordan_form()\n  [2|0 0]\n  [-+---]\n  [0|1 1]\n  [0|0 1]\n  }}}",
     "created_at": "2015-09-15T16:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
@@ -429,6 +427,7 @@ This looks fine to me.
 Replying to [comment:8 rws]:
 > Replying to [comment:3 darij]:
 > > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...
+
 > So this would be invalid now?
 The Jordan normal form does not require more "exactness" from the ring as do the eigenvalues which are already implemented for symbolic matrices (calling maxima). Hence I see no point in discussing whether or not we should offer a jordan_form method for symbolic matrices, it seems natural to do it as what is proposed here.
 
@@ -503,7 +502,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050489.json:
 ```json
 {
-    "body": "Replying to [comment:12 cpernet]:\n> Just one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\nThanks for noticing, I added this in the latest commit.",
+    "body": "Replying to [comment:12 cpernet]:\n> Just one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\n\nThanks for noticing, I added this in the latest commit.",
     "created_at": "2015-09-17T15:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
@@ -514,6 +513,7 @@ archive/issue_comments_050489.json:
 
 Replying to [comment:12 cpernet]:
 > Just one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.
+
 Thanks for noticing, I added this in the latest commit.
 
 

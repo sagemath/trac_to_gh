@@ -3,7 +3,7 @@
 archive/issues_006899.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
+    "body": "Assignee: @burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
     "created_at": "2009-09-07T03:21:53Z",
     "labels": [
         "component: calculus",
@@ -32,7 +32,6 @@ sage: b = a.simplify(); b
 sage: float(b)
 -1.0
 ```
-
 
 Dylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. 
 
@@ -119,7 +118,7 @@ faster conversion to float
 archive/issue_comments_056891.json:
 ```json
 {
-    "body": "Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by @burcin created at 2009-09-12 19:02:54\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
+    "body": "Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by @burcin created at 2009-09-12 19:02:54\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\nUsing mpfr directly:\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
     "created_at": "2009-09-12T19:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
@@ -134,7 +133,6 @@ attachment:trac_6899.take2.patch doesn't go through python function calls for th
 
 With the python calls to `.is_real()` and `.real_part()`:
 
-
 ```
 sage: t = CC([2^20,0])
 sage: float(t)
@@ -143,9 +141,7 @@ sage: %timeit u = float(t)
 100000 loops, best of 3: 1.48 µs per loop
 ```
 
-
 Using mpfr directly:
-
 
 ```
 sage: t = CC([2^20,0])
@@ -154,7 +150,6 @@ sage: float(t)
 sage: %timeit u = float(t)
 1000000 loops, best of 3: 221 ns per loop
 ```
-
 
 I give a positive review to Mike's changes. Mike, can you look over the two lines I touched?
 

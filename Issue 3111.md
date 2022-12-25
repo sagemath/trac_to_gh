@@ -3,7 +3,7 @@
 archive/issues_003111.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nPaste this code into a Sage session:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n    if p != 389:\n       try:\n           G = E.change_ring(GF(p)).abelian_group()\n       except Exception, msg:\n           print \"p = %s fails\"%p\n           print msg\n```\n\n\nThe output varies on run and computer.  Typical output looks like this:\n\n```\np = 7 fails\nNo solution in bsgs()\np = 1901 fails\n\np = 4273 fails\n\np = 5101 fails\n\np = 7177 fails\n\np = 7433 fails\n\np = 9013 fails\n\np = 9049 fails\n\np = 9749 fails\n```\n\n\nThe actual failures are assertion failures in the baby-step giant-step implementation.\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/3111\n\n",
+    "body": "Assignee: @JohnCremona\n\nPaste this code into a Sage session:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n    if p != 389:\n       try:\n           G = E.change_ring(GF(p)).abelian_group()\n       except Exception, msg:\n           print \"p = %s fails\"%p\n           print msg\n```\n\nThe output varies on run and computer.  Typical output looks like this:\n\n```\np = 7 fails\nNo solution in bsgs()\np = 1901 fails\n\np = 4273 fails\n\np = 5101 fails\n\np = 7177 fails\n\np = 7433 fails\n\np = 9013 fails\n\np = 9049 fails\n\np = 9749 fails\n```\n\nThe actual failures are assertion failures in the baby-step giant-step implementation.\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/3111\n\n",
     "created_at": "2008-05-06T16:07:05Z",
     "labels": [
         "component: number theory",
@@ -31,7 +31,6 @@ for p in prime_range(10000):
            print msg
 ```
 
-
 The output varies on run and computer.  Typical output looks like this:
 
 ```
@@ -54,7 +53,6 @@ p = 9049 fails
 p = 9749 fails
 ```
 
-
 The actual failures are assertion failures in the baby-step giant-step implementation.
 
  -- William
@@ -70,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3111
 archive/issue_comments_021458.json:
 ```json
 {
-    "body": "Under OS X (10.5.1 intel core2 duo with 2GB RAM)\nI also get a repeatable massive memory overflow that completely crashes Sage:\n\n```\nsage: E = EllipticCurve('389a')\nsage: for p in prime_range(10000):\n....:         if p != 389:\n....:            try:\n....:                G = E.change_ring(GF(p)).abelian_group()\n....:        except Exception, msg:\n....:                print \"p = %s fails\"%p\n....:            print msg\n....: \np = 7 fails\nNo solution in bsgs()\np = 523 fails\n\np = 2477 fails\n\np = 3001 fails\n\np = 3449 fails\n\n\nerror: no more memory\nSystem 5120k:5120k Appl 4637k/482k Malloc 4094k/1k Valloc 1024k/480k Pages 152/104 Regions 2:2\n\nhalt 14\nteragon-2:sage-3.0.1 was$ \n\n```\n\n\n\nRunning this under gdb yields nothing useful:\n\n\n```\n\nerror: no more memory\nSystem 5116k:5116k Appl 4629k/486k Malloc 4086k/5k Valloc 1024k/481k Pages 152/104 Regions 2:2\n\nhalt 14\n\nProgram exited with code 016.\n(gdb) bt\nNo stack.\n```\n",
+    "body": "Under OS X (10.5.1 intel core2 duo with 2GB RAM)\nI also get a repeatable massive memory overflow that completely crashes Sage:\n\n```\nsage: E = EllipticCurve('389a')\nsage: for p in prime_range(10000):\n....:         if p != 389:\n....:            try:\n....:                G = E.change_ring(GF(p)).abelian_group()\n....:        except Exception, msg:\n....:                print \"p = %s fails\"%p\n....:            print msg\n....: \np = 7 fails\nNo solution in bsgs()\np = 523 fails\n\np = 2477 fails\n\np = 3001 fails\n\np = 3449 fails\n\n\nerror: no more memory\nSystem 5120k:5120k Appl 4637k/482k Malloc 4094k/1k Valloc 1024k/480k Pages 152/104 Regions 2:2\n\nhalt 14\nteragon-2:sage-3.0.1 was$ \n\n```\n\n\nRunning this under gdb yields nothing useful:\n\n```\n\nerror: no more memory\nSystem 5116k:5116k Appl 4629k/486k Malloc 4086k/5k Valloc 1024k/481k Pages 152/104 Regions 2:2\n\nhalt 14\n\nProgram exited with code 016.\n(gdb) bt\nNo stack.\n```",
     "created_at": "2008-05-06T16:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -112,9 +110,7 @@ teragon-2:sage-3.0.1 was$
 ```
 
 
-
 Running this under gdb yields nothing useful:
-
 
 ```
 
@@ -127,7 +123,6 @@ Program exited with code 016.
 (gdb) bt
 No stack.
 ```
-
 
 
 
@@ -172,7 +167,7 @@ NOte -- the above is not a leak between calls of abelian_group.  It's that one s
 archive/issue_comments_021461.json:
 ```json
 {
-    "body": "With Sage 3.0.1 on sage.math this seems rather harmless:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n28670 mabshoff  20   0  455m 141m  21m S    0  0.2   0:35.02 sage-ipython\n29958 mabshoff  15   0 97.7m  24m 2060 S    0  0.0   0:03.67 python\n28715 mabshoff  16   0  634m  14m 2096 S    0  0.0   0:02.27 gp\n```\n\nIf for some dumb reason pari doubles the stack once more on OSX you are SOL. I tried on OSX 10.5 and I hit the same error. Now it sounds like a 64 bit OSX version of Sage would fix that issue, but .....\n\nCheers,\n\nMichael",
+    "body": "With Sage 3.0.1 on sage.math this seems rather harmless:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n28670 mabshoff  20   0  455m 141m  21m S    0  0.2   0:35.02 sage-ipython\n29958 mabshoff  15   0 97.7m  24m 2060 S    0  0.0   0:03.67 python\n28715 mabshoff  16   0  634m  14m 2096 S    0  0.0   0:02.27 gp\n```\nIf for some dumb reason pari doubles the stack once more on OSX you are SOL. I tried on OSX 10.5 and I hit the same error. Now it sounds like a 64 bit OSX version of Sage would fix that issue, but .....\n\nCheers,\n\nMichael",
     "created_at": "2008-05-06T17:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -189,7 +184,6 @@ With Sage 3.0.1 on sage.math this seems rather harmless:
 29958 mabshoff  15   0 97.7m  24m 2060 S    0  0.0   0:03.67 python
 28715 mabshoff  16   0  634m  14m 2096 S    0  0.0   0:02.27 gp
 ```
-
 If for some dumb reason pari doubles the stack once more on OSX you are SOL. I tried on OSX 10.5 and I hit the same error. Now it sounds like a 64 bit OSX version of Sage would fix that issue, but .....
 
 Cheers,
@@ -403,7 +397,7 @@ I would prefer to use 10 specific primes, as using random primes gives unrepeata
 archive/issue_comments_021472.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n> sage-3111-extra.patch does the following:\n> \n>    * deleted two debuggin print lines\n>    * added doctest to show that the original post is fixed\n>    * passes all doctests in sage/schemes/elliptic_curves\n> \n> For the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.\n\nHi John,\n\nyou could do two tests: \n* a quick one that is run per default \n* a long one marked with `#long` - 18 seconds is not a problem with long.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 cremona]:\n> sage-3111-extra.patch does the following:\n> \n> * deleted two debuggin print lines\n> * added doctest to show that the original post is fixed\n> * passes all doctests in sage/schemes/elliptic_curves\n> \n> For the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.\n\n\nHi John,\n\nyou could do two tests: \n* a quick one that is run per default \n* a long one marked with `#long` - 18 seconds is not a problem with long.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-12T21:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -415,11 +409,12 @@ archive/issue_comments_021472.json:
 Replying to [comment:10 cremona]:
 > sage-3111-extra.patch does the following:
 > 
->    * deleted two debuggin print lines
->    * added doctest to show that the original post is fixed
->    * passes all doctests in sage/schemes/elliptic_curves
+> * deleted two debuggin print lines
+> * added doctest to show that the original post is fixed
+> * passes all doctests in sage/schemes/elliptic_curves
 > 
 > For the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.
+
 
 Hi John,
 
@@ -438,7 +433,7 @@ Michael
 archive/issue_comments_021473.json:
 ```json
 {
-    "body": "Replying to [comment:11 broune]:\n> I would prefer to use 10 specific primes, as using random primes gives unrepeatable results. Unless Sage does something like reset the random seed before each test?\n\nSage now uses the same seed per default for randomness at the start of each doctest, so it is reproducible. Not all sources of randomness have that property yet, but for primes it should work. So no need to stick `#random` in the doctest string.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 broune]:\n> I would prefer to use 10 specific primes, as using random primes gives unrepeatable results. Unless Sage does something like reset the random seed before each test?\n\n\nSage now uses the same seed per default for randomness at the start of each doctest, so it is reproducible. Not all sources of randomness have that property yet, but for primes it should work. So no need to stick `#random` in the doctest string.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-12T21:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
@@ -449,6 +444,7 @@ archive/issue_comments_021473.json:
 
 Replying to [comment:11 broune]:
 > I would prefer to use 10 specific primes, as using random primes gives unrepeatable results. Unless Sage does something like reset the random seed before each test?
+
 
 Sage now uses the same seed per default for randomness at the start of each doctest, so it is reproducible. Not all sources of randomness have that property yet, but for primes it should work. So no need to stick `#random` in the doctest string.
 

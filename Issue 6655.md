@@ -245,7 +245,7 @@ Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachment
 archive/issue_comments_054535.json:
 ```json
 {
-    "body": "> * Please use consistently \"in English convention\" instead of \"in english notations\",\n> see line 840, 963, 924.\n\nFixed...\n\n> * Would it be possible to lift the methods arm_length, leg_length, hook_length, arm_cells, etc also to SkewPartitions? I recently needed those and it would be convenient to have them directly in Sage.\n\nExcept for `cells` which I just added, they are all accessible through `l.outer().arm_length`... So I'm not sure we wan't to link all of those.",
+    "body": "> * Please use consistently \"in English convention\" instead of \"in english notations\",\n> see line 840, 963, 924.\n\n\nFixed...\n\n> * Would it be possible to lift the methods arm_length, leg_length, hook_length, arm_cells, etc also to SkewPartitions? I recently needed those and it would be convenient to have them directly in Sage.\n\n\nExcept for `cells` which I just added, they are all accessible through `l.outer().arm_length`... So I'm not sure we wan't to link all of those.",
     "created_at": "2010-05-04T23:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
@@ -257,9 +257,11 @@ archive/issue_comments_054535.json:
 > * Please use consistently "in English convention" instead of "in english notations",
 > see line 840, 963, 924.
 
+
 Fixed...
 
 > * Would it be possible to lift the methods arm_length, leg_length, hook_length, arm_cells, etc also to SkewPartitions? I recently needed those and it would be convenient to have them directly in Sage.
+
 
 Except for `cells` which I just added, they are all accessible through `l.outer().arm_length`... So I'm not sure we wan't to link all of those.
 

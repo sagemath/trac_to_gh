@@ -3,7 +3,7 @@
 archive/issues_008120.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @nthiery\n\nThe documentation of `UniqueRepresentation` says \n\n```\n    Similarly, the identity is used as hash function, which is also as\n    fast as it can get. However this means that the hash function may\n    change in between Sage sessions, or even within the same Sage\n    session (see below). Subclasses should overload :meth:`__hash__`\n    if this could be a problem.\n```\n\nBut there is no implementation of `__hash__`.\n\nI'm adding one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8120\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @nthiery\n\nThe documentation of `UniqueRepresentation` says \n\n```\n    Similarly, the identity is used as hash function, which is also as\n    fast as it can get. However this means that the hash function may\n    change in between Sage sessions, or even within the same Sage\n    session (see below). Subclasses should overload :meth:`__hash__`\n    if this could be a problem.\n```\nBut there is no implementation of `__hash__`.\n\nI'm adding one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8120\n\n",
     "created_at": "2010-01-29T15:31:33Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ The documentation of `UniqueRepresentation` says
     session (see below). Subclasses should overload :meth:`__hash__`
     if this could be a problem.
 ```
-
 But there is no implementation of `__hash__`.
 
 I'm adding one.
@@ -157,7 +156,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071257.json:
 ```json
 {
-    "body": "Hi Paul,\n\nReplying to [comment:3 zimmerma]:\n> I'd like to review that patch but I'm missing an example to try.\n\nI'm not sure what you want: in the patch you have the following tests example:\n\n```\nsage: class bla(UniqueRepresentation, SageObject): pass \nsage: x = bla(); hx = hash(x) \nsage: x.rename(\"toto\")    \nsage: hx == hash(x) \nTrue \n```\n\nIf you want more elaborated examples using `UniqueRepresentation`, they are dozens of them through sage library (the ultimate goal is that nearly each parent inherits from this). Pick you favorite one (prime.py is a good example see #7397):\n\n```\ntomahawk-*ge-combinat/sage $ grep -l UniqueRepresentation **/*.py\ncategories/category.py\ncategories/enumerated_sets.py\ncategories/examples/commutative_additive_monoids.py\ncategories/examples/commutative_additive_semigroups.py\ncategories/examples/finite_coxeter_groups.py\ncategories/examples/finite_enumerated_sets.py\ncategories/examples/finite_monoids.py\ncategories/examples/finite_semigroups.py\ncategories/examples/finite_weyl_groups.py\ncategories/examples/infinite_enumerated_sets.py\ncategories/examples/monoids.py\ncategories/examples/semigroups.py\ncategories/examples/sets_cat.py\ncategories/primer.py\ncategories/semigroups.py\ncategories/sets_cat.py\ncombinat/crystals/affine.py\ncombinat/crystals/letters.py\ncombinat/free_module.py\ncombinat/root_system/cartan_type.py\ncombinat/root_system/root_system.py\ncombinat/root_system/type_dual.py\ncombinat/root_system/type_relabel.py\ncombinat/root_system/weyl_group.py\ncombinat/sf/sf.py\ngroups/matrix_gps/general_linear.py\ngroups/matrix_gps/special_linear.py\ngroups/perm_gps/permgroup_named.py\nmisc/classcall_metaclass.py\nmisc/constant_function.py\nmisc/nested_class_test.py\nsets/disjoint_union_enumerated_sets.py\nsets/finite_enumerated_set.py\nsets/non_negative_integers.py\nsets/primes.py\nstructure/all.py\nstructure/dynamic_class.py\nstructure/unique_representation.py\n```\n",
+    "body": "Hi Paul,\n\nReplying to [comment:3 zimmerma]:\n> I'd like to review that patch but I'm missing an example to try.\n\n\nI'm not sure what you want: in the patch you have the following tests example:\n\n```\nsage: class bla(UniqueRepresentation, SageObject): pass \nsage: x = bla(); hx = hash(x) \nsage: x.rename(\"toto\")    \nsage: hx == hash(x) \nTrue \n```\nIf you want more elaborated examples using `UniqueRepresentation`, they are dozens of them through sage library (the ultimate goal is that nearly each parent inherits from this). Pick you favorite one (prime.py is a good example see #7397):\n\n```\ntomahawk-*ge-combinat/sage $ grep -l UniqueRepresentation **/*.py\ncategories/category.py\ncategories/enumerated_sets.py\ncategories/examples/commutative_additive_monoids.py\ncategories/examples/commutative_additive_semigroups.py\ncategories/examples/finite_coxeter_groups.py\ncategories/examples/finite_enumerated_sets.py\ncategories/examples/finite_monoids.py\ncategories/examples/finite_semigroups.py\ncategories/examples/finite_weyl_groups.py\ncategories/examples/infinite_enumerated_sets.py\ncategories/examples/monoids.py\ncategories/examples/semigroups.py\ncategories/examples/sets_cat.py\ncategories/primer.py\ncategories/semigroups.py\ncategories/sets_cat.py\ncombinat/crystals/affine.py\ncombinat/crystals/letters.py\ncombinat/free_module.py\ncombinat/root_system/cartan_type.py\ncombinat/root_system/root_system.py\ncombinat/root_system/type_dual.py\ncombinat/root_system/type_relabel.py\ncombinat/root_system/weyl_group.py\ncombinat/sf/sf.py\ngroups/matrix_gps/general_linear.py\ngroups/matrix_gps/special_linear.py\ngroups/perm_gps/permgroup_named.py\nmisc/classcall_metaclass.py\nmisc/constant_function.py\nmisc/nested_class_test.py\nsets/disjoint_union_enumerated_sets.py\nsets/finite_enumerated_set.py\nsets/non_negative_integers.py\nsets/primes.py\nstructure/all.py\nstructure/dynamic_class.py\nstructure/unique_representation.py\n```",
     "created_at": "2010-02-07T09:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -171,6 +170,7 @@ Hi Paul,
 Replying to [comment:3 zimmerma]:
 > I'd like to review that patch but I'm missing an example to try.
 
+
 I'm not sure what you want: in the patch you have the following tests example:
 
 ```
@@ -180,7 +180,6 @@ sage: x.rename("toto")
 sage: hx == hash(x) 
 True 
 ```
-
 If you want more elaborated examples using `UniqueRepresentation`, they are dozens of them through sage library (the ultimate goal is that nearly each parent inherits from this). Pick you favorite one (prime.py is a good example see #7397):
 
 ```
@@ -227,7 +226,6 @@ structure/unique_representation.py
 
 
 
-
 ---
 
 archive/issue_comments_071258.json:
@@ -252,7 +250,7 @@ I tried the patch and sage -t * and got the same failures that I get without the
 archive/issue_comments_071259.json:
 ```json
 {
-    "body": "Replying to [comment:6 zimmerma]:\n> I tried the patch and sage -t * and got the same failures that I get without the patch\n> (on x86_64 Fedora12, see #7773). Thus a positive review for me.\n\nSo are you waiting for another review ? Or did you simply forgot to check the relevant box ?",
+    "body": "Replying to [comment:6 zimmerma]:\n> I tried the patch and sage -t * and got the same failures that I get without the patch\n> (on x86_64 Fedora12, see #7773). Thus a positive review for me.\n\n\nSo are you waiting for another review ? Or did you simply forgot to check the relevant box ?",
     "created_at": "2010-02-08T12:43:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -264,6 +262,7 @@ archive/issue_comments_071259.json:
 Replying to [comment:6 zimmerma]:
 > I tried the patch and sage -t * and got the same failures that I get without the patch
 > (on x86_64 Fedora12, see #7773). Thus a positive review for me.
+
 
 So are you waiting for another review ? Or did you simply forgot to check the relevant box ?
 
@@ -292,7 +291,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071261.json:
 ```json
 {
-    "body": "> So are you waiting for another review ?\n\nno, I was waiting for the \"needs review\" status.",
+    "body": "> So are you waiting for another review ?\n\n\nno, I was waiting for the \"needs review\" status.",
     "created_at": "2010-02-08T12:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -302,6 +301,7 @@ archive/issue_comments_071261.json:
 ```
 
 > So are you waiting for another review ?
+
 
 no, I was waiting for the "needs review" status.
 
@@ -348,7 +348,7 @@ Remove assignee @hivert.
 archive/issue_comments_071264.json:
 ```json
 {
-    "body": "Just one thing Florent: please fix the following doctest:\n\n```\nsage: hash(x) # random \nTrue\n```\n\nso that the reader expects some integer result.\n\nMaybe some test like:\n\n```\nsage: type(hash(x))\nint\n```\n\ncould be added.",
+    "body": "Just one thing Florent: please fix the following doctest:\n\n```\nsage: hash(x) # random \nTrue\n```\nso that the reader expects some integer result.\n\nMaybe some test like:\n\n```\nsage: type(hash(x))\nint\n```\ncould be added.",
     "created_at": "2010-02-08T13:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -363,7 +363,6 @@ Just one thing Florent: please fix the following doctest:
 sage: hash(x) # random 
 True
 ```
-
 so that the reader expects some integer result.
 
 Maybe some test like:
@@ -372,7 +371,6 @@ Maybe some test like:
 sage: type(hash(x))
 int
 ```
-
 could be added.
 
 
@@ -400,7 +398,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_071266.json:
 ```json
 {
-    "body": "Replying to [comment:9 nthiery]:\n> \n> Just one thing Florent: please fix the following doctest:\n> {{{\n> sage: hash(x) # random \n> True\n> }}}\n> so that the reader expects some integer result.\n> \n> Maybe some test like:\n> {{{\n> sage: type(hash(x))\n> int\n> }}}\n> could be added.\n\nOups !!! I'm resubmitting a patch with the following diff:\n\n```\ndiff --git a/sage/structure/unique_representation.py b/sage/structure/unique_represent\nation.py\n--- a/sage/structure/unique_representation.py\n+++ b/sage/structure/unique_representation.py\n@@ -483,7 +483,9 @@ class UniqueRepresentation:\n             sage: x = UniqueRepresentation()\n             sage: y = UniqueRepresentation()\n             sage: hash(x) # random\n-            True\n+            74153040\n+            sage: type(hash(x))\n+            <type 'int'>\n             sage: hash(x) == hash(y)\n             True\n             sage: class bla(UniqueRepresentation, SageObject): pass\n```\n\n\nPlease re-review...\n\nFlorent",
+    "body": "Replying to [comment:9 nthiery]:\n> \n> Just one thing Florent: please fix the following doctest:\n> \n> ```\n> sage: hash(x) # random \n> True\n> ```\n> so that the reader expects some integer result.\n> \n> Maybe some test like:\n> \n> ```\n> sage: type(hash(x))\n> int\n> ```\n> could be added.\n\n\nOups !!! I'm resubmitting a patch with the following diff:\n\n```\ndiff --git a/sage/structure/unique_representation.py b/sage/structure/unique_represent\nation.py\n--- a/sage/structure/unique_representation.py\n+++ b/sage/structure/unique_representation.py\n@@ -483,7 +483,9 @@ class UniqueRepresentation:\n             sage: x = UniqueRepresentation()\n             sage: y = UniqueRepresentation()\n             sage: hash(x) # random\n-            True\n+            74153040\n+            sage: type(hash(x))\n+            <type 'int'>\n             sage: hash(x) == hash(y)\n             True\n             sage: class bla(UniqueRepresentation, SageObject): pass\n```\n\nPlease re-review...\n\nFlorent",
     "created_at": "2010-02-08T16:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -412,18 +410,21 @@ archive/issue_comments_071266.json:
 Replying to [comment:9 nthiery]:
 > 
 > Just one thing Florent: please fix the following doctest:
-> {{{
+> 
+> ```
 > sage: hash(x) # random 
 > True
-> }}}
+> ```
 > so that the reader expects some integer result.
 > 
 > Maybe some test like:
-> {{{
+> 
+> ```
 > sage: type(hash(x))
 > int
-> }}}
+> ```
 > could be added.
+
 
 Oups !!! I'm resubmitting a patch with the following diff:
 
@@ -444,7 +445,6 @@ ation.py
              True
              sage: class bla(UniqueRepresentation, SageObject): pass
 ```
-
 
 Please re-review...
 
@@ -475,7 +475,7 @@ Attachment [trac_8120-uniquerep_hash-fh.patch](tarball://root/attachments/some-u
 archive/issue_comments_071268.json:
 ```json
 {
-    "body": "> Please re-review... \n\nwill do it as soon as my current sage -t * finishes. In the meantime you can click on\n\"needs review\", unless more work is needed.",
+    "body": "> Please re-review... \n\n\nwill do it as soon as my current sage -t * finishes. In the meantime you can click on\n\"needs review\", unless more work is needed.",
     "created_at": "2010-02-08T16:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -485,6 +485,7 @@ archive/issue_comments_071268.json:
 ```
 
 > Please re-review... 
+
 
 will do it as soon as my current sage -t * finishes. In the meantime you can click on
 "needs review", unless more work is needed.
@@ -496,7 +497,7 @@ will do it as soon as my current sage -t * finishes. In the meantime you can cli
 archive/issue_comments_071269.json:
 ```json
 {
-    "body": "Replying to [comment:11 zimmerma]:\n> > Please re-review... \n> \n> will do it as soon as my current sage -t * finishes. In the meantime you can click on\n> \"needs review\", unless more work is needed.\n\nActually, the precise button I needed to hit was \"Submit Changes\" ;-)",
+    "body": "Replying to [comment:11 zimmerma]:\n> > Please re-review... \n\n> \n> will do it as soon as my current sage -t * finishes. In the meantime you can click on\n> \"needs review\", unless more work is needed.\n\n\nActually, the precise button I needed to hit was \"Submit Changes\" ;-)",
     "created_at": "2010-02-08T16:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -507,9 +508,11 @@ archive/issue_comments_071269.json:
 
 Replying to [comment:11 zimmerma]:
 > > Please re-review... 
+
 > 
 > will do it as soon as my current sage -t * finishes. In the meantime you can click on
 > "needs review", unless more work is needed.
+
 
 Actually, the precise button I needed to hit was "Submit Changes" ;-)
 
@@ -560,7 +563,7 @@ Anyway, whatever is decided, I suggest to keep it for a forthcomming ticket, sin
 archive/issue_comments_071272.json:
 ```json
 {
-    "body": "Replying to [comment:13 hivert]:\n> Nicolas (and also Paul), you didn't comment about the following thought:\n> \n> However, since we are in `UniqueRepresentations` we could use `__classcall__` which knows the parameters that constructed the object to insert into the created object the hash value of those parameters in the same veins it insert some stuff needed for pickling/unpickling. Any comment about that ?\n\nThat sounds good. We should probably include the class of the object in the hash calculation.\n\n> Anyway, whatever is decided, I suggest to keep it for a forthcomming ticket, since it can raise some backward compatibility issues...\n\nYup.",
+    "body": "Replying to [comment:13 hivert]:\n> Nicolas (and also Paul), you didn't comment about the following thought:\n> \n> However, since we are in `UniqueRepresentations` we could use `__classcall__` which knows the parameters that constructed the object to insert into the created object the hash value of those parameters in the same veins it insert some stuff needed for pickling/unpickling. Any comment about that ?\n\n\nThat sounds good. We should probably include the class of the object in the hash calculation.\n\n> Anyway, whatever is decided, I suggest to keep it for a forthcomming ticket, since it can raise some backward compatibility issues...\n\n\nYup.",
     "created_at": "2010-02-08T16:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8120",
     "type": "issue_comment",
@@ -574,9 +577,11 @@ Replying to [comment:13 hivert]:
 > 
 > However, since we are in `UniqueRepresentations` we could use `__classcall__` which knows the parameters that constructed the object to insert into the created object the hash value of those parameters in the same veins it insert some stuff needed for pickling/unpickling. Any comment about that ?
 
+
 That sounds good. We should probably include the class of the object in the hash calculation.
 
 > Anyway, whatever is decided, I suggest to keep it for a forthcomming ticket, since it can raise some backward compatibility issues...
+
 
 Yup.
 

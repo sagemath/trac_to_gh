@@ -3,7 +3,7 @@
 archive/issues_000327.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn sage base check of prerequisites should also check for perl 5.8.  According to Kevin \nBuzzard, building maxima using perl 5.6 fails with this error, but upgrading to perl 5.8\nresolves the problem:\n\n```\n\"Unknown open() mode '<:crlf' at ./build_index.pl line 25\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/327\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage base check of prerequisites should also check for perl 5.8.  According to Kevin \nBuzzard, building maxima using perl 5.6 fails with this error, but upgrading to perl 5.8\nresolves the problem:\n\n```\n\"Unknown open() mode '<:crlf' at ./build_index.pl line 25\".\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/327\n\n",
     "created_at": "2007-03-21T22:38:11Z",
     "labels": [
         "component: packages: standard",
@@ -25,7 +25,6 @@ resolves the problem:
 ```
 "Unknown open() mode '<:crlf' at ./build_index.pl line 25".
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/327
 
@@ -74,7 +73,7 @@ I think we do this now.  See line 5825 in prereq-0.7/configure.  Perhaps we can 
 archive/issue_comments_001545.json:
 ```json
 {
-    "body": "Yes, it can be closed. The configure script is generated from this bit of code I wrote in configure.ac\n\n\n```\n# The stats program R 2.9.2 needs perl 5.8.0 or later.\n# If anything needs a later version, then this should be updated.\nAC_PATH_PROG([PERL],[perl])\nAX_PROG_PERL_VERSION([5.8.0],[],[AC_MSG_ERROR([Sorry, your version of perl is too old]) ])\n```\n\n\nThe 'AC_MSG_ERROR' will cause the build to terminate at that point. \n\nDave",
+    "body": "Yes, it can be closed. The configure script is generated from this bit of code I wrote in configure.ac\n\n```\n# The stats program R 2.9.2 needs perl 5.8.0 or later.\n# If anything needs a later version, then this should be updated.\nAC_PATH_PROG([PERL],[perl])\nAX_PROG_PERL_VERSION([5.8.0],[],[AC_MSG_ERROR([Sorry, your version of perl is too old]) ])\n```\n\nThe 'AC_MSG_ERROR' will cause the build to terminate at that point. \n\nDave",
     "created_at": "2010-06-09T20:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/327",
     "type": "issue_comment",
@@ -85,14 +84,12 @@ archive/issue_comments_001545.json:
 
 Yes, it can be closed. The configure script is generated from this bit of code I wrote in configure.ac
 
-
 ```
 # The stats program R 2.9.2 needs perl 5.8.0 or later.
 # If anything needs a later version, then this should be updated.
 AC_PATH_PROG([PERL],[perl])
 AX_PROG_PERL_VERSION([5.8.0],[],[AC_MSG_ERROR([Sorry, your version of perl is too old]) ])
 ```
-
 
 The 'AC_MSG_ERROR' will cause the build to terminate at that point. 
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7108
 archive/issue_comments_058738.json:
 ```json
 {
-    "body": "I just tried a clean build of sage-4.1.2.rc0 + a bit and get *only* one failure in twist.py:\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/server/simple/twist.py\"\n```\n\n\nThe failure is:\n\n```\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n**********************************************************************\nFile \"/home/wstein/screen/cicero/build/sage-4.1.2.rc1.alpha1/devel/sage/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_twist.py\n         [17.8 s]\n```\n\n\nThis is somwhat expected since cicero is slow and the difference between the above two is that one didn't finish and the other did.  Hmm.",
+    "body": "I just tried a clean build of sage-4.1.2.rc0 + a bit and get *only* one failure in twist.py:\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/server/simple/twist.py\"\n```\n\nThe failure is:\n\n```\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n**********************************************************************\nFile \"/home/wstein/screen/cicero/build/sage-4.1.2.rc1.alpha1/devel/sage/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_twist.py\n         [17.8 s]\n```\n\nThis is somwhat expected since cicero is slow and the difference between the above two is that one didn't finish and the other did.  Hmm.",
     "created_at": "2009-10-04T17:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7108",
     "type": "issue_comment",
@@ -43,7 +43,6 @@ archive/issue_comments_058738.json:
 
 I just tried a clean build of sage-4.1.2.rc0 + a bit and get *only* one failure in twist.py:
 
-
 ```
 ----------------------------------------------------------------------
 The following tests failed:
@@ -51,7 +50,6 @@ The following tests failed:
 
         sage -t -long "devel/sage/sage/server/simple/twist.py"
 ```
-
 
 The failure is:
 
@@ -84,7 +82,6 @@ For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_twist.py
          [17.8 s]
 ```
 
-
 This is somwhat expected since cicero is slow and the difference between the above two is that one didn't finish and the other did.  Hmm.
 
 
@@ -94,7 +91,7 @@ This is somwhat expected since cicero is slow and the difference between the abo
 archive/issue_comments_058739.json:
 ```json
 {
-    "body": "I also see exactly the same twist.py failure on opensuse 64-bit.  I think this is likely just a poorly written doctest. \n\nYes, in fact, looking at the doctest it is:\n\n```\nRun a command::\n\n    sage: sleep(0.5)\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\n```\n\n\nTo be frank, it is utterly ridiculous to think that a doctest like this is going to work all the time.  Often computers get heavily loaded during testing, or are slow because of DNS configuration, virtualization, etc.   The above test needs to be rewritten.  Two options:\n    \n* try repeatedly until status is done.\n\n* put some ...'s in the output.",
+    "body": "I also see exactly the same twist.py failure on opensuse 64-bit.  I think this is likely just a poorly written doctest. \n\nYes, in fact, looking at the doctest it is:\n\n```\nRun a command::\n\n    sage: sleep(0.5)\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\n```\n\nTo be frank, it is utterly ridiculous to think that a doctest like this is going to work all the time.  Often computers get heavily loaded during testing, or are slow because of DNS configuration, virtualization, etc.   The above test needs to be rewritten.  Two options:\n    \n* try repeatedly until status is done.\n\n* put some ...'s in the output.",
     "created_at": "2009-10-04T17:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7108",
     "type": "issue_comment",
@@ -120,7 +117,6 @@ Run a command::
     ___S_A_G_E___
     4
 ```
-
 
 To be frank, it is utterly ridiculous to think that a doctest like this is going to work all the time.  Often computers get heavily loaded during testing, or are slow because of DNS configuration, virtualization, etc.   The above test needs to be rewritten.  Two options:
     

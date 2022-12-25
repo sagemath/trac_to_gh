@@ -3,7 +3,7 @@
 archive/issues_008909.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap, cyclotomic fields, invariant rings\n\nWhen coercing from GAP to a cyclotomic field, it was assumed that the generator of a cyclotomic field is *always* called ``E(n)``. But this is not necessarily the case, in particular when the object in GAP was created from Sage.\n\nMoreover, GAP prints an additional exclamation mark in front of numbers if they are part of a matrix defined over a cyclotomic field.\n\nFor these two reasons, the following example used to fail, but now works with the patch:\n\n```\n            sage: F=CyclotomicField(8)\n            sage: z=F.gen()\n            sage: a=gap(z+1/z); a\n            -zeta8^3+zeta8\n            sage: F(a)\n            -zeta8^3 + zeta8\n            sage: b=gap(Matrix(F,[[z^2,1],[0,a+1]])); b\n            [ [ zeta8^2, !1 ], [ !0, -zeta8^3+zeta8+1 ] ]\n            sage: b[1,2]\n            !1\n            sage: F(b[1,2])\n            1\n            sage: Matrix(b,F)\n            [             zeta8^2                    1]\n            [                   0 -zeta8^3 + zeta8 + 1]\n```\n\n\nThe idea was\n* to remove the exclamation mark when it is attempted to coerce into the rationals\n* to test whether the generator name in GAP happens to coincide with the generator name in Sage (here: ``zeta8``).\n\nThe motivation for working on it is my attempt to improve the computation of non-modular invariant rings of finite groups: There is a doc test using a finite matrix group over a cyclotomic field.\n\nOne massive bottle neck for the computation of invariant rings with Singular is the computation of the Reynolds operator. It requires to enumerate the group elements, and Singular is not good at this task.\n\nThe patch uses GAP to enumerate the group elements and uses this to construct the Reynolds operator in Singular. For complicated groups, this should save a massive amount of resources.\n\nWith the patch, the enumeration of group elements in Singular has the status of a backup: If the transformation of the matrix group into GAP fails or if the transformation of the resulting GAP matrices back into Sage fails, then the old algorithm is used.\n\nI think this ticket is about \"interfaces\". I hope this labelling is correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8909\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap, cyclotomic fields, invariant rings\n\nWhen coercing from GAP to a cyclotomic field, it was assumed that the generator of a cyclotomic field is *always* called ``E(n)``. But this is not necessarily the case, in particular when the object in GAP was created from Sage.\n\nMoreover, GAP prints an additional exclamation mark in front of numbers if they are part of a matrix defined over a cyclotomic field.\n\nFor these two reasons, the following example used to fail, but now works with the patch:\n\n```\n            sage: F=CyclotomicField(8)\n            sage: z=F.gen()\n            sage: a=gap(z+1/z); a\n            -zeta8^3+zeta8\n            sage: F(a)\n            -zeta8^3 + zeta8\n            sage: b=gap(Matrix(F,[[z^2,1],[0,a+1]])); b\n            [ [ zeta8^2, !1 ], [ !0, -zeta8^3+zeta8+1 ] ]\n            sage: b[1,2]\n            !1\n            sage: F(b[1,2])\n            1\n            sage: Matrix(b,F)\n            [             zeta8^2                    1]\n            [                   0 -zeta8^3 + zeta8 + 1]\n```\n\nThe idea was\n* to remove the exclamation mark when it is attempted to coerce into the rationals\n* to test whether the generator name in GAP happens to coincide with the generator name in Sage (here: ``zeta8``).\n\nThe motivation for working on it is my attempt to improve the computation of non-modular invariant rings of finite groups: There is a doc test using a finite matrix group over a cyclotomic field.\n\nOne massive bottle neck for the computation of invariant rings with Singular is the computation of the Reynolds operator. It requires to enumerate the group elements, and Singular is not good at this task.\n\nThe patch uses GAP to enumerate the group elements and uses this to construct the Reynolds operator in Singular. For complicated groups, this should save a massive amount of resources.\n\nWith the patch, the enumeration of group elements in Singular has the status of a backup: If the transformation of the matrix group into GAP fails or if the transformation of the resulting GAP matrices back into Sage fails, then the old algorithm is used.\n\nI think this ticket is about \"interfaces\". I hope this labelling is correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8909\n\n",
     "created_at": "2010-05-07T10:58:12Z",
     "labels": [
         "component: interfaces"
@@ -44,7 +44,6 @@ For these two reasons, the following example used to fail, but now works with th
             [             zeta8^2                    1]
             [                   0 -zeta8^3 + zeta8 + 1]
 ```
-
 
 The idea was
 * to remove the exclamation mark when it is attempted to coerce into the rationals
@@ -217,7 +216,7 @@ There's a bare except clause at 6767 which should be fixed.
 archive/issue_comments_081937.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> There's a bare except clause at 6767 which should be fixed.\n\nBy 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.",
+    "body": "Replying to [comment:4 mhansen]:\n> There's a bare except clause at 6767 which should be fixed.\n\n\nBy 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.",
     "created_at": "2010-07-04T19:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8909",
     "type": "issue_comment",
@@ -228,6 +227,7 @@ archive/issue_comments_081937.json:
 
 Replying to [comment:4 mhansen]:
 > There's a bare except clause at 6767 which should be fixed.
+
 
 By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.
 
@@ -274,7 +274,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081940.json:
 ```json
 {
-    "body": "Attachment [trac_8909_catch_exception.patch](tarball://root/attachments/some-uuid/ticket8909/trac_8909_catch_exception.patch) by @simon-king-jena created at 2010-07-04 19:12:30\n\nReplying to [comment:5 SimonKing]:\n> Replying to [comment:4 mhansen]:\n> > There's a bare except clause at 6767 which should be fixed.\n> \n> By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.\n> \n\nUnder the assumption that I understood you correctly, I provided a second patch that specifies that we only want to catch a `TypeError`, and return to needs_review.",
+    "body": "Attachment [trac_8909_catch_exception.patch](tarball://root/attachments/some-uuid/ticket8909/trac_8909_catch_exception.patch) by @simon-king-jena created at 2010-07-04 19:12:30\n\nReplying to [comment:5 SimonKing]:\n> Replying to [comment:4 mhansen]:\n> > There's a bare except clause at 6767 which should be fixed.\n\n> \n> By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.\n> \n\n\nUnder the assumption that I understood you correctly, I provided a second patch that specifies that we only want to catch a `TypeError`, and return to needs_review.",
     "created_at": "2010-07-04T19:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8909",
     "type": "issue_comment",
@@ -288,9 +288,11 @@ Attachment [trac_8909_catch_exception.patch](tarball://root/attachments/some-uui
 Replying to [comment:5 SimonKing]:
 > Replying to [comment:4 mhansen]:
 > > There's a bare except clause at 6767 which should be fixed.
+
 > 
 > By 'bare', you mean that it is not specified what error is raised? So, `except TypeError:` instead of `except:`? Well this would be easy enough to fix.
 > 
+
 
 Under the assumption that I understood you correctly, I provided a second patch that specifies that we only want to catch a `TypeError`, and return to needs_review.
 

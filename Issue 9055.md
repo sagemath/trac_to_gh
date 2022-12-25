@@ -286,7 +286,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083856.json:
 ```json
 {
-    "body": "Replying to [comment:7 cturner]:\n> We (John Cremona, David Joyner and myself) believe we have identified what \n> needs to be done to fix the issues with the coding modules and we will \n> return to it after sage days 22!\n\nThe new attachment (to be applied on top of the previous one) \nseems to fix the problems in the coding thry docstrings.",
+    "body": "Replying to [comment:7 cturner]:\n> We (John Cremona, David Joyner and myself) believe we have identified what \n> needs to be done to fix the issues with the coding modules and we will \n> return to it after sage days 22!\n\n\nThe new attachment (to be applied on top of the previous one) \nseems to fix the problems in the coding thry docstrings.",
     "created_at": "2010-07-26T23:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -300,6 +300,7 @@ Replying to [comment:7 cturner]:
 > needs to be done to fix the issues with the coding modules and we will 
 > return to it after sage days 22!
 
+
 The new attachment (to be applied on top of the previous one) 
 seems to fix the problems in the coding thry docstrings.
 
@@ -310,7 +311,7 @@ seems to fix the problems in the coding thry docstrings.
 archive/issue_comments_083857.json:
 ```json
 {
-    "body": "The second patch does not apply cleanly anymore, on sage-4.6.rc0 I am getting\n\n```\napplying trac-9055-coding-thry-docstring-fixes.patch\npatching file sage/coding/linear_code.py\nHunk #13 FAILED at 2028\n```\n",
+    "body": "The second patch does not apply cleanly anymore, on sage-4.6.rc0 I am getting\n\n```\napplying trac-9055-coding-thry-docstring-fixes.patch\npatching file sage/coding/linear_code.py\nHunk #13 FAILED at 2028\n```",
     "created_at": "2010-11-01T02:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -326,7 +327,6 @@ applying trac-9055-coding-thry-docstring-fixes.patch
 patching file sage/coding/linear_code.py
 Hunk #13 FAILED at 2028
 ```
-
 
 
 
@@ -374,7 +374,7 @@ archive/issue_events_022190.json:
 archive/issue_comments_083859.json:
 ```json
 {
-    "body": "Replying to [comment:10 novoselt]:\n> What exactly has happened to the broken doctests? It does not seem to me that the new output is merely a permutation of the old one. \n\nThe ordering of vector spaces over finite fields is used all over the place. In constructing the Hamming codes, etc. I think there is a echelon form involved afterward as well, so it is easy enough to seem like this isn't just a problem with order changing...\n\nThe new patch includes all previous ones, and fixes a docstring fix which needed to be rebased.",
+    "body": "Replying to [comment:10 novoselt]:\n> What exactly has happened to the broken doctests? It does not seem to me that the new output is merely a permutation of the old one. \n\n\nThe ordering of vector spaces over finite fields is used all over the place. In constructing the Hamming codes, etc. I think there is a echelon form involved afterward as well, so it is easy enough to seem like this isn't just a problem with order changing...\n\nThe new patch includes all previous ones, and fixes a docstring fix which needed to be rebased.",
     "created_at": "2010-12-01T13:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -385,6 +385,7 @@ archive/issue_comments_083859.json:
 
 Replying to [comment:10 novoselt]:
 > What exactly has happened to the broken doctests? It does not seem to me that the new output is merely a permutation of the old one. 
+
 
 The ordering of vector spaces over finite fields is used all over the place. In constructing the Hamming codes, etc. I think there is a echelon form involved afterward as well, so it is easy enough to seem like this isn't just a problem with order changing...
 
@@ -415,7 +416,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083861.json:
 ```json
 {
-    "body": "I will simply mention for the record that things like\n\n```\n        G = self.gen_mat()\n        F = self.base_ring()\n        q = F.order()\n        q0 = F0.order()\n        a = log(q,q0)  # test if F/F0 is a field extension\n        if not isinstance(a, Integer):\n            raise ValueError,\"Base field must be an extension of given field %s\"%F0\n        n = len(G.columns())\n        k = len(G.rows())\n        G0 = [[x**q0 for x in g.list()] for g in G.rows()]\n        G1 = [[x for x in g.list()] for g in G.rows()]\n        G2 = G0+G1\n        MS = MatrixSpace(F,2*k,n)\n        G3 = MS(G2)\n        r = G3.rank()\n        MS = MatrixSpace(F,r,n)\n        Grref = G3.echelon_form()\n        G = MS([Grref.row(i) for i in range(r)])\n        return LinearCode(G)\n```\n\n(`galois_closure` in `linear_code.py`) can be vastly simplified, and probably sped up in the process.\n\nProgramming no-nos:\n1. Using logarithms to test whether one finite field is contained in another (why not just check whether the characteristics are the same and if one degree divides the other?).\n2. `G1 = [[x for x in g.list()] for g in G.rows()]` ... Why not `G1 = G.rows()` or at least `G1 = [g.list() for g in G.rows()]` etc.? This is a big waste of time (remember that Python is slow anyway...)\n3. This is also bad:\n\n```\n        MS = MatrixSpace(F,2*k,n)\n        G3 = MS(G2)\n        r = G3.rank()\n        MS = MatrixSpace(F,r,n)\n        Grref = G3.echelon_form()\n        G = MS([Grref.row(i) for i in range(r)])\n```\n\n... why not just `G3 = Matrix(F, 2*k, n, G2); G = G3.row_space().basis_matrix()` or the equivalent? It's easier to follow and might be more efficient, too. \n\n(Not criticisms of code in this ticket at all, for the skimmer -- just an indication that `linear_code.py` needs more work...)",
+    "body": "I will simply mention for the record that things like\n\n```\n        G = self.gen_mat()\n        F = self.base_ring()\n        q = F.order()\n        q0 = F0.order()\n        a = log(q,q0)  # test if F/F0 is a field extension\n        if not isinstance(a, Integer):\n            raise ValueError,\"Base field must be an extension of given field %s\"%F0\n        n = len(G.columns())\n        k = len(G.rows())\n        G0 = [[x**q0 for x in g.list()] for g in G.rows()]\n        G1 = [[x for x in g.list()] for g in G.rows()]\n        G2 = G0+G1\n        MS = MatrixSpace(F,2*k,n)\n        G3 = MS(G2)\n        r = G3.rank()\n        MS = MatrixSpace(F,r,n)\n        Grref = G3.echelon_form()\n        G = MS([Grref.row(i) for i in range(r)])\n        return LinearCode(G)\n```\n(`galois_closure` in `linear_code.py`) can be vastly simplified, and probably sped up in the process.\n\nProgramming no-nos:\n1. Using logarithms to test whether one finite field is contained in another (why not just check whether the characteristics are the same and if one degree divides the other?).\n2. `G1 = [[x for x in g.list()] for g in G.rows()]` ... Why not `G1 = G.rows()` or at least `G1 = [g.list() for g in G.rows()]` etc.? This is a big waste of time (remember that Python is slow anyway...)\n3. This is also bad:\n\n```\n        MS = MatrixSpace(F,2*k,n)\n        G3 = MS(G2)\n        r = G3.rank()\n        MS = MatrixSpace(F,r,n)\n        Grref = G3.echelon_form()\n        G = MS([Grref.row(i) for i in range(r)])\n```\n... why not just `G3 = Matrix(F, 2*k, n, G2); G = G3.row_space().basis_matrix()` or the equivalent? It's easier to follow and might be more efficient, too. \n\n(Not criticisms of code in this ticket at all, for the skimmer -- just an indication that `linear_code.py` needs more work...)",
     "created_at": "2010-12-01T13:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -447,7 +448,6 @@ I will simply mention for the record that things like
         G = MS([Grref.row(i) for i in range(r)])
         return LinearCode(G)
 ```
-
 (`galois_closure` in `linear_code.py`) can be vastly simplified, and probably sped up in the process.
 
 Programming no-nos:
@@ -463,7 +463,6 @@ Programming no-nos:
         Grref = G3.echelon_form()
         G = MS([Grref.row(i) for i in range(r)])
 ```
-
 ... why not just `G3 = Matrix(F, 2*k, n, G2); G = G3.row_space().basis_matrix()` or the equivalent? It's easier to follow and might be more efficient, too. 
 
 (Not criticisms of code in this ticket at all, for the skimmer -- just an indication that `linear_code.py` needs more work...)
@@ -495,7 +494,7 @@ Apply last
 archive/issue_comments_083863.json:
 ```json
 {
-    "body": "I've prettified documentation of the new module and improved exception handling, since there were several blocks like\n\n```\ntry:\n   ...\nexcept:\n   pass\n```\n\nwhich potentially can cause strange errors or results. In particular, such a code may be hard to interrupt if it is taking too long.\n\nIf someone can go over my patch and approve it, please switch this ticket to positive review. Tests pass.",
+    "body": "I've prettified documentation of the new module and improved exception handling, since there were several blocks like\n\n```\ntry:\n   ...\nexcept:\n   pass\n```\nwhich potentially can cause strange errors or results. In particular, such a code may be hard to interrupt if it is taking too long.\n\nIf someone can go over my patch and approve it, please switch this ticket to positive review. Tests pass.",
     "created_at": "2010-12-01T17:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -512,7 +511,6 @@ try:
 except:
    pass
 ```
-
 which potentially can cause strange errors or results. In particular, such a code may be hard to interrupt if it is taking too long.
 
 If someone can go over my patch and approve it, please switch this ticket to positive review. Tests pass.
@@ -720,7 +718,7 @@ Sorry wrong ticket, my bad :(
 archive/issue_comments_083872.json:
 ```json
 {
-    "body": "Replying to [comment:20 vbraun]:\n> Depends on #9055\n\nInteresting, a recursive ticket :-)  Do you want to denial-of-service the patchbot?",
+    "body": "Replying to [comment:20 vbraun]:\n> Depends on #9055\n\n\nInteresting, a recursive ticket :-)  Do you want to denial-of-service the patchbot?",
     "created_at": "2011-01-19T22:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
@@ -731,5 +729,6 @@ archive/issue_comments_083872.json:
 
 Replying to [comment:20 vbraun]:
 > Depends on #9055
+
 
 Interesting, a recursive ticket :-)  Do you want to denial-of-service the patchbot?

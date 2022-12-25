@@ -146,7 +146,7 @@ Changing status from assigned to new.
 archive/issue_comments_015400.json:
 ```json
 {
-    "body": "> Reassigning to William for review since he's the man behind sage-sage :-)\n\nWhat are you talking about?  sage-sage is an incomprehensible disaster :-)\n\n -- William",
+    "body": "> Reassigning to William for review since he's the man behind sage-sage :-)\n\n\nWhat are you talking about?  sage-sage is an incomprehensible disaster :-)\n\n -- William",
     "created_at": "2008-03-02T08:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_015400.json:
 ```
 
 > Reassigning to William for review since he's the man behind sage-sage :-)
+
 
 What are you talking about?  sage-sage is an incomprehensible disaster :-)
 

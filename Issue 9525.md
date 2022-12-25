@@ -3,7 +3,7 @@
 archive/issues_009525.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer\n\nWhilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is\n\n\n```\npython setup.py install\n```\n\n\nwith no error checking. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9525\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer\n\nWhilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is\n\n```\npython setup.py install\n```\n\nwith no error checking. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9525\n\n",
     "created_at": "2010-07-17T08:32:55Z",
     "labels": [
         "component: build",
@@ -22,11 +22,9 @@ CC:  @jdemeyer
 
 Whilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is
 
-
 ```
 python setup.py install
 ```
-
 
 with no error checking. 
 
@@ -79,7 +77,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091490.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> This needs to be coordinated with #6456\n\nthis is done in my latest update just submitted on #6456",
+    "body": "Replying to [comment:1 mhansen]:\n> This needs to be coordinated with #6456\n\n\nthis is done in my latest update just submitted on #6456",
     "created_at": "2010-07-26T15:00:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
@@ -90,6 +88,7 @@ archive/issue_comments_091490.json:
 
 Replying to [comment:1 mhansen]:
 > This needs to be coordinated with #6456
+
 
 this is done in my latest update just submitted on #6456
 

@@ -61,7 +61,7 @@ archive/issue_events_003067.json:
 archive/issue_comments_006937.json:
 ```json
 {
-    "body": "Comments from some experts:\n\n```\n\nOn 12/11/2007, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> I don't have much expertise in the area, but it looks like a sound\n> proposal to me. The trial division bound seems a bit low (and perhaps\n> should be adjusted for the size of the input). Is this similar to\n> what Pari does? Would it make sense to parallelize ECM/QS by default\n> on a multi-core system?\n>\n> - Robert\n>\nBill Hart <goodwillhart@googlemail.com>\n\t\n\t\nThis proposal is absolutely correct. It is *exactly* what I would do,\nwith one exception. I would not issue a warning that MPQS is going to\nstart, unless the factorisation is over say 70 digits (~90s).\n\nBill.\n```\n",
+    "body": "Comments from some experts:\n\n```\n\nOn 12/11/2007, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> I don't have much expertise in the area, but it looks like a sound\n> proposal to me. The trial division bound seems a bit low (and perhaps\n> should be adjusted for the size of the input). Is this similar to\n> what Pari does? Would it make sense to parallelize ECM/QS by default\n> on a multi-core system?\n>\n> - Robert\n>\nBill Hart <goodwillhart@googlemail.com>\n\t\n\t\nThis proposal is absolutely correct. It is *exactly* what I would do,\nwith one exception. I would not issue a warning that MPQS is going to\nstart, unless the factorisation is over say 70 digits (~90s).\n\nBill.\n```",
     "created_at": "2007-11-12T12:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ start, unless the factorisation is over say 70 digits (~90s).
 
 Bill.
 ```
-
 
 
 
@@ -425,7 +424,7 @@ archive/issue_events_003075.json:
 archive/issue_comments_006948.json:
 ```json
 {
-    "body": "> Make sure you understand the procedure for closing tickets. \n\nsorry, I wasn't aware of that.",
+    "body": "> Make sure you understand the procedure for closing tickets. \n\n\nsorry, I wasn't aware of that.",
     "created_at": "2010-02-07T21:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -435,6 +434,7 @@ archive/issue_comments_006948.json:
 ```
 
 > Make sure you understand the procedure for closing tickets. 
+
 
 sorry, I wasn't aware of that.
 
@@ -569,7 +569,7 @@ quadratic sieve from flint is currently not installed, so I couldn't use it.
 archive/issue_comments_006955.json:
 ```json
 {
-    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n> \n> sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.\n\nPersonally, I wouldn't care that much about huge perfect powers.  I agree with the PARI people that this is essentially a non-issue.",
+    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n> \n> sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.\n\n\nPersonally, I wouldn't care that much about huge perfect powers.  I agree with the PARI people that this is essentially a non-issue.",
     "created_at": "2010-11-20T09:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -583,6 +583,7 @@ Replying to [comment:16 aapitzsch]:
 > 
 > sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.
 
+
 Personally, I wouldn't care that much about huge perfect powers.  I agree with the PARI people that this is essentially a non-issue.
 
 
@@ -592,7 +593,7 @@ Personally, I wouldn't care that much about huge perfect powers.  I agree with t
 archive/issue_comments_006956.json:
 ```json
 {
-    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n\nI would call it `sage/rings/factorint.pyx` or so.  It would be nice if you would move *all* the integer factoring code there, not only the newly added code.\n\nI would love to help with this ticket, but I'm already involved in too many tickets...",
+    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n\n\nI would call it `sage/rings/factorint.pyx` or so.  It would be nice if you would move *all* the integer factoring code there, not only the newly added code.\n\nI would love to help with this ticket, but I'm already involved in too many tickets...",
     "created_at": "2010-11-20T09:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -603,6 +604,7 @@ archive/issue_comments_006956.json:
 
 Replying to [comment:16 aapitzsch]:
 > Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?
+
 
 I would call it `sage/rings/factorint.pyx` or so.  It would be nice if you would move *all* the integer factoring code there, not only the newly added code.
 
@@ -633,7 +635,7 @@ Perfect power checking doesn't cost that much but it improves considerably the s
 archive/issue_comments_006958.json:
 ```json
 {
-    "body": "Replying to [comment:19 aapitzsch]:\n> Perfect power checking doesn't cost that much but it improves considerably the speed if it's a perfect power.\n\nTrial division doesn't cost that much but it improves considerably the speed if it has lots of small factors.\n\nNow guess which is more likely for a random number...",
+    "body": "Replying to [comment:19 aapitzsch]:\n> Perfect power checking doesn't cost that much but it improves considerably the speed if it's a perfect power.\n\n\nTrial division doesn't cost that much but it improves considerably the speed if it has lots of small factors.\n\nNow guess which is more likely for a random number...",
     "created_at": "2010-11-20T09:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -644,6 +646,7 @@ archive/issue_comments_006958.json:
 
 Replying to [comment:19 aapitzsch]:
 > Perfect power checking doesn't cost that much but it improves considerably the speed if it's a perfect power.
+
 
 Trial division doesn't cost that much but it improves considerably the speed if it has lots of small factors.
 
@@ -674,7 +677,7 @@ Besides, if you want to check for a power, just check for a perfect power.  No n
 archive/issue_comments_006960.json:
 ```json
 {
-    "body": "That's what I do.\n\n```\nif n.is_power(): \n    from sympy import factorint \n    return [(Integer(p),e) for p,e in factorint(n).items()]\n```\n",
+    "body": "That's what I do.\n\n```\nif n.is_power(): \n    from sympy import factorint \n    return [(Integer(p),e) for p,e in factorint(n).items()]\n```",
     "created_at": "2010-11-20T09:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -690,7 +693,6 @@ if n.is_power():
     from sympy import factorint 
     return [(Integer(p),e) for p,e in factorint(n).items()]
 ```
-
 
 
 
@@ -717,7 +719,7 @@ That doesn't look good.  If `n` is a power, you should write `n` as `b^k` and th
 archive/issue_comments_006962.json:
 ```json
 {
-    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n\nYes, that'd be a fine place for it. \n\n> sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.\n\nThen -1 from moving away from Pari. We can check for perfect powers very quickly using gmp/mpir first. \n\n> quadratic sieve from flint is currently not installed, so I couldn't use it.\n\nWell, expect some followup patches then :). \n\n- Robert",
+    "body": "Replying to [comment:16 aapitzsch]:\n> Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?\n\n\nYes, that'd be a fine place for it. \n\n> sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.\n\n\nThen -1 from moving away from Pari. We can check for perfect powers very quickly using gmp/mpir first. \n\n> quadratic sieve from flint is currently not installed, so I couldn't use it.\n\n\nWell, expect some followup patches then :). \n\n- Robert",
     "created_at": "2010-11-20T22:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
@@ -729,13 +731,16 @@ archive/issue_comments_006962.json:
 Replying to [comment:16 aapitzsch]:
 > Okay, I will move the code to a new module. How should it be called? Should it stay in `sage/rings`?
 
+
 Yes, that'd be a fine place for it. 
 
 > sympy.factorint becomes slow very fast but it can handle perfect powers better than other functions.
 
+
 Then -1 from moving away from Pari. We can check for perfect powers very quickly using gmp/mpir first. 
 
 > quadratic sieve from flint is currently not installed, so I couldn't use it.
+
 
 Well, expect some followup patches then :). 
 

@@ -64,7 +64,7 @@ archive/issue_events_004452.json:
 archive/issue_comments_011578.json:
 ```json
 {
-    "body": "This has been around for a while, and it's been bugging me.  I fixed it by writing methods !__call!__ and !__contains!__ for the class GeneralLinearGroup_generic, so that the GAP ones (which hang over ZZ) don't get used.  A pleasant side effect is that things are now faster for the cases that were working before (i.e. over finite fields):\n\nbefore:\n\n```\nsage: G = GL(5, GF(next_prime(6*10^4)))                                    \nsage: m = [[1,0,1,0,2],[0,1,0,1,1],[0,0,1,0,0],[0,0,0,1,1],[0,0,0,0,1]]                              \nsage: timeit(\"G(m)\")                                                                                     \n25 loops, best of 3: 9.56 ms per loop\n```\n\n\nafter:\n\n```\nsage: G = GL(5, GF(next_prime(6*10^4)))                                    \nsage: m = [[1,0,1,0,2], [0,1,0,1,1], [0,0,1,0,0], [0,0,0,1,1], [0,0,0,0,1]]                              \nsage: timeit(\"G(m)\")                                                                                     \n625 loops, best of 3: 459 \u00b5s per loop\n```\n\n\nThe same issue comes up for all the matrix groups.  For the moment, I have only dealt with the really easy cases of GL and SL.  If this gets approved and merged, I will open a new ticket for the other classes of groups and deal with them in a similar way.",
+    "body": "This has been around for a while, and it's been bugging me.  I fixed it by writing methods !__call!__ and !__contains!__ for the class GeneralLinearGroup_generic, so that the GAP ones (which hang over ZZ) don't get used.  A pleasant side effect is that things are now faster for the cases that were working before (i.e. over finite fields):\n\nbefore:\n\n```\nsage: G = GL(5, GF(next_prime(6*10^4)))                                    \nsage: m = [[1,0,1,0,2],[0,1,0,1,1],[0,0,1,0,0],[0,0,0,1,1],[0,0,0,0,1]]                              \nsage: timeit(\"G(m)\")                                                                                     \n25 loops, best of 3: 9.56 ms per loop\n```\n\nafter:\n\n```\nsage: G = GL(5, GF(next_prime(6*10^4)))                                    \nsage: m = [[1,0,1,0,2], [0,1,0,1,1], [0,0,1,0,0], [0,0,0,1,1], [0,0,0,0,1]]                              \nsage: timeit(\"G(m)\")                                                                                     \n625 loops, best of 3: 459 \u00b5s per loop\n```\n\nThe same issue comes up for all the matrix groups.  For the moment, I have only dealt with the really easy cases of GL and SL.  If this gets approved and merged, I will open a new ticket for the other classes of groups and deal with them in a similar way.",
     "created_at": "2008-08-29T13:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ sage: timeit("G(m)")
 25 loops, best of 3: 9.56 ms per loop
 ```
 
-
 after:
 
 ```
@@ -93,7 +92,6 @@ sage: m = [[1,0,1,0,2], [0,1,0,1,1], [0,0,1,0,0], [0,0,0,1,1], [0,0,0,0,1]]
 sage: timeit("G(m)")                                                                                     
 625 loops, best of 3: 459 µs per loop
 ```
-
 
 The same issue comes up for all the matrix groups.  For the moment, I have only dealt with the really easy cases of GL and SL.  If this gets approved and merged, I will open a new ticket for the other classes of groups and deal with them in a similar way.
 
@@ -202,7 +200,7 @@ Good idea.  I have made the changes and replaced the patch with a new one.
 archive/issue_comments_011584.json:
 ```json
 {
-    "body": "Excellent.  These are much more helpful messages.\n\nThe new patch applies ok to 3.1.2.alpha3 (there was a little fuzz:\n\n```\napplying /home/john/1834-gl_z_call.patch\npatching file sage/groups/matrix_gps/matrix_group.py\nHunk #1 succeeded at 13 with fuzz 1 (offset 3 lines).\n```\n\nbut nothing serious).   All doctests in sage.groups.matrix_groups pass.  Publish!",
+    "body": "Excellent.  These are much more helpful messages.\n\nThe new patch applies ok to 3.1.2.alpha3 (there was a little fuzz:\n\n```\napplying /home/john/1834-gl_z_call.patch\npatching file sage/groups/matrix_gps/matrix_group.py\nHunk #1 succeeded at 13 with fuzz 1 (offset 3 lines).\n```\nbut nothing serious).   All doctests in sage.groups.matrix_groups pass.  Publish!",
     "created_at": "2008-09-02T08:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
@@ -220,7 +218,6 @@ applying /home/john/1834-gl_z_call.patch
 patching file sage/groups/matrix_gps/matrix_group.py
 Hunk #1 succeeded at 13 with fuzz 1 (offset 3 lines).
 ```
-
 but nothing serious).   All doctests in sage.groups.matrix_groups pass.  Publish!
 
 

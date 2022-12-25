@@ -3,7 +3,7 @@
 archive/issues_005760.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nplot/plot3d/shapes.pyx: 16% (5 of 31)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5760\n\n",
+    "body": "Assignee: mabshoff\n\n```\nplot/plot3d/shapes.pyx: 16% (5 of 31)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5760\n\n",
     "created_at": "2009-04-11T19:04:00Z",
     "labels": [
         "component: doctest coverage",
@@ -18,11 +18,9 @@ archive/issues_005760.json:
 ```
 Assignee: mabshoff
 
-
 ```
 plot/plot3d/shapes.pyx: 16% (5 of 31)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5760
 

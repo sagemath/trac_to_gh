@@ -3,7 +3,7 @@
 archive/issues_005314.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\n\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
     "created_at": "2009-02-19T19:33:12Z",
     "labels": [
         "component: combinatorics",
@@ -28,7 +28,6 @@ Right now sage consider that there is no empty permutations.
 sage: [] in Permutations()
 False
 ```
-
 There seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.
 
 The patch solve this defect:
@@ -42,7 +41,6 @@ sage: Permutations(0).list()
 sage: Permutations(0).count()
 1
 ```
-
 
 Author: Florent Hivert
 

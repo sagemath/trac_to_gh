@@ -3,7 +3,7 @@
 archive/issues_005172.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee on cicero:\n\n```\nsage -t -long \"devel/sage/sage/calculus/calculus.py\"        \n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cicero/devel/sage/sage/calculus/calculus.py\", line 3206:\n    sage: f.roots(ring=CC)\nExpected:\n    [(-0.0588115223184495, 1), (-1.331099917875... - 1.52241655183732*I, 1), (-1.33109991787579 + 1.52241655183732*I, 1), (1.36050567903502 - 1.51880872209965*I, 1), (1.36050567903502 + 1.51880872209965*I, 1)]\nGot:\n    [(-0.0588115223184495, 1), (-1.33109991787580 - 1.52241655183732*I, 1), (-1.33109991787580 + 1.52241655183732*I, 1), (1.36050567903502 - 1.51880872209965*I, 1), (1.36050567903502 + 1.51880872209965*I, 1)]\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cicero/devel/sage/sage/calculus/calculus.py\", line 3210:\n    sage: f.roots(ring=CC, multiplicities=False)\nExpected:\n    [-0.0588115223184495, -1.331099917875... - 1.52241655183732*I, -1.33109991787579 + 1.52241655183732*I, 1.36050567903502 - 1.51880872209965*I, 1.36050567903502 + 1.51880872209965*I]\nGot:\n    [-0.0588115223184495, -1.33109991787580 - 1.52241655183732*I, -1.33109991787580 + 1.52241655183732*I, 1.36050567903502 - 1.51880872209965*I, 1.36050567903502 + 1.51880872209965*I]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5172\n\n",
+    "body": "Assignee: mabshoff\n\nSee on cicero:\n\n```\nsage -t -long \"devel/sage/sage/calculus/calculus.py\"        \n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cicero/devel/sage/sage/calculus/calculus.py\", line 3206:\n    sage: f.roots(ring=CC)\nExpected:\n    [(-0.0588115223184495, 1), (-1.331099917875... - 1.52241655183732*I, 1), (-1.33109991787579 + 1.52241655183732*I, 1), (1.36050567903502 - 1.51880872209965*I, 1), (1.36050567903502 + 1.51880872209965*I, 1)]\nGot:\n    [(-0.0588115223184495, 1), (-1.33109991787580 - 1.52241655183732*I, 1), (-1.33109991787580 + 1.52241655183732*I, 1), (1.36050567903502 - 1.51880872209965*I, 1), (1.36050567903502 + 1.51880872209965*I, 1)]\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cicero/devel/sage/sage/calculus/calculus.py\", line 3210:\n    sage: f.roots(ring=CC, multiplicities=False)\nExpected:\n    [-0.0588115223184495, -1.331099917875... - 1.52241655183732*I, -1.33109991787579 + 1.52241655183732*I, 1.36050567903502 - 1.51880872209965*I, 1.36050567903502 + 1.51880872209965*I]\nGot:\n    [-0.0588115223184495, -1.33109991787580 - 1.52241655183732*I, -1.33109991787580 + 1.52241655183732*I, 1.36050567903502 - 1.51880872209965*I, 1.36050567903502 + 1.51880872209965*I]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5172\n\n",
     "created_at": "2009-02-04T14:09:25Z",
     "labels": [
         "component: doctest coverage",
@@ -39,7 +39,6 @@ Got:
     [-0.0588115223184495, -1.33109991787580 - 1.52241655183732*I, -1.33109991787580 + 1.52241655183732*I, 1.36050567903502 - 1.51880872209965*I, 1.36050567903502 + 1.51880872209965*I]
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5172
 
@@ -88,7 +87,7 @@ Changing status from new to assigned.
 archive/issue_comments_039551.json:
 ```json
 {
-    "body": "After applying the patch:\n\n\n```\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n\t [276.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 276.2 seconds\n[jaap@paix sage-3.3.alpha4]$ \n\n```\n\n\nWorks for me on Fedora 9, 32 bits\n\nJaap",
+    "body": "After applying the patch:\n\n```\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n\t [276.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 276.2 seconds\n[jaap@paix sage-3.3.alpha4]$ \n\n```\n\nWorks for me on Fedora 9, 32 bits\n\nJaap",
     "created_at": "2009-02-05T15:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5172",
     "type": "issue_comment",
@@ -98,7 +97,6 @@ archive/issue_comments_039551.json:
 ```
 
 After applying the patch:
-
 
 ```
 sage -t  "devel/sage/sage/calculus/calculus.py"             
@@ -110,7 +108,6 @@ Total time for all tests: 276.2 seconds
 [jaap@paix sage-3.3.alpha4]$ 
 
 ```
-
 
 Works for me on Fedora 9, 32 bits
 

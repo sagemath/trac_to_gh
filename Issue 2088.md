@@ -48,7 +48,7 @@ archive/issue_events_004998.json:
 archive/issue_comments_013482.json:
 ```json
 {
-    "body": "I guess this works now, using\n\n```\nif is_package_installed('some_package'):\n```\n\nin `module_list.py`.",
+    "body": "I guess this works now, using\n\n```\nif is_package_installed('some_package'):\n```\nin `module_list.py`.",
     "created_at": "2013-08-13T15:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ I guess this works now, using
 ```
 if is_package_installed('some_package'):
 ```
-
 in `module_list.py`.
 
 

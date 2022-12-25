@@ -109,7 +109,7 @@ archive/issue_events_003275.json:
 archive/issue_comments_007723.json:
 ```json
 {
-    "body": "WARNING: This is full of bugs and issues.  \n\nE.g.,             \n\n```\nsage: E = EllipticCurve([0, 0, 1/216, -7/1296, 1/7776])\nsage: F = E.global_integral_model(); F\noutputs a non-integral model!\n```\n\n\nDO NOT apply this until further patche(s) are posted.\n\nI'm working on some now.\n\nALSO -- there are many new functions with no doctets.",
+    "body": "WARNING: This is full of bugs and issues.  \n\nE.g.,             \n\n```\nsage: E = EllipticCurve([0, 0, 1/216, -7/1296, 1/7776])\nsage: F = E.global_integral_model(); F\noutputs a non-integral model!\n```\n\nDO NOT apply this until further patche(s) are posted.\n\nI'm working on some now.\n\nALSO -- there are many new functions with no doctets.",
     "created_at": "2007-12-15T07:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -128,7 +128,6 @@ sage: F = E.global_integral_model(); F
 outputs a non-integral model!
 ```
 
-
 DO NOT apply this until further patche(s) are posted.
 
 I'm working on some now.
@@ -142,7 +141,7 @@ ALSO -- there are many new functions with no doctets.
 archive/issue_comments_007724.json:
 ```json
 {
-    "body": "Some missing doctests or things that will cause latex problems:\n\n```\na/sage/schemes/elliptic_curves/ell_generic.py\nintegral_model\nchange_weierstrass_model\n\na/sage/rings/complex_double.pyx\nargument\n\n* number_field_element.pyx -- nth_root has \\ but no r\"\"\"\n* same prob in WeierstrassIsomorphism\n* no doctest in init method for WeierstrassIsomorphism\n* no doctest in init method for WeierstrassIsomorphism _call_\n```\n",
+    "body": "Some missing doctests or things that will cause latex problems:\n\n```\na/sage/schemes/elliptic_curves/ell_generic.py\nintegral_model\nchange_weierstrass_model\n\na/sage/rings/complex_double.pyx\nargument\n\n* number_field_element.pyx -- nth_root has \\ but no r\"\"\"\n* same prob in WeierstrassIsomorphism\n* no doctest in init method for WeierstrassIsomorphism\n* no doctest in init method for WeierstrassIsomorphism _call_\n```",
     "created_at": "2007-12-15T07:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -169,13 +168,12 @@ argument
 
 
 
-
 ---
 
 archive/issue_comments_007725.json:
 ```json
 {
-    "body": "\n```\n[11:14pm] wstein-rvw-1239: It might be easy for you to fix the problems.\n[11:14pm] wstein-rvw-1239: E.g.,            sage: E = EllipticCurve([0, 0, 1/216, -7/1296, 1/7776])\n[11:14pm] wstein-rvw-1239:             sage: F = E.global_integral_model(); F\n[11:14pm] wstein-rvw-1239: doesn't return an integral model.\n[11:14pm] wstein-rvw-1239: E = EllipticCurve([1/3, 5]); E\n[11:14pm] wstein-rvw-1239: E.integral_model()\n[11:14pm] wstein-rvw-1239: returns a non-integral model\n```\n",
+    "body": "```\n[11:14pm] wstein-rvw-1239: It might be easy for you to fix the problems.\n[11:14pm] wstein-rvw-1239: E.g.,            sage: E = EllipticCurve([0, 0, 1/216, -7/1296, 1/7776])\n[11:14pm] wstein-rvw-1239:             sage: F = E.global_integral_model(); F\n[11:14pm] wstein-rvw-1239: doesn't return an integral model.\n[11:14pm] wstein-rvw-1239: E = EllipticCurve([1/3, 5]); E\n[11:14pm] wstein-rvw-1239: E.integral_model()\n[11:14pm] wstein-rvw-1239: returns a non-integral model\n```",
     "created_at": "2007-12-15T07:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
@@ -183,7 +181,6 @@ archive/issue_comments_007725.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 [11:14pm] wstein-rvw-1239: It might be easy for you to fix the problems.
@@ -194,7 +191,6 @@ archive/issue_comments_007725.json:
 [11:14pm] wstein-rvw-1239: E.integral_model()
 [11:14pm] wstein-rvw-1239: returns a non-integral model
 ```
-
 
 
 

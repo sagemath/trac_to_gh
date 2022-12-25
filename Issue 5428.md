@@ -3,7 +3,7 @@
 archive/issues_005428.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nJohn Palmieri reported this first in sage-3.4.alpha. I is still here\nin rc0:\n\n\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n\n```\n\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nJohn Palmieri reported this first in sage-3.4.alpha. I is still here\nin rc0:\n\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
     "created_at": "2009-03-03T13:01:22Z",
     "labels": [
         "component: doctest coverage",
@@ -25,7 +25,6 @@ John Palmieri reported this first in sage-3.4.alpha. I is still here
 in rc0:
 
 
-
 ```
 File "/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst", line 25:
     sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
@@ -41,7 +40,6 @@ Got:
 ```
 
 
-
 Jaap
 
 Issue created by migration from https://trac.sagemath.org/ticket/5428
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5428
 archive/issue_comments_041907.json:
 ```json
 {
-    "body": "In sage-3.3 we have:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3, Release Date: 2009-02-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n\n\n```\n\n\nversus\n\n\n```\n(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\n```\n\n\nin sage-3.4.xxx\n\n\nJaap",
+    "body": "In sage-3.3 we have:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3, Release Date: 2009-02-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n\n\n```\n\nversus\n\n```\n(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\n```\n\nin sage-3.4.xxx\n\n\nJaap",
     "created_at": "2009-03-03T13:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -77,14 +75,11 @@ sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
 
 ```
 
-
 versus
-
 
 ```
 (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)
 ```
-
 
 in sage-3.4.xxx
 
@@ -118,7 +113,7 @@ The least unplausible one (for me) is the patch about NTL (#5340) --- but I woul
 archive/issue_comments_041909.json:
 ```json
 {
-    "body": "Replying to [comment:3 GeorgSWeber]:\n\nHi Georg,\n\n> I'm more than a bit baffled. I have looked twice now over the patches that went into Sage in between 3.3 and 3.4.alpha0, but still I have no idea why this change would possibly be caused by any of them.\n\nThe issue exists in both 3.3 and 3.4.alpha0/rc0 - the Bordeaux document was written in October 2008 by William and never doctested until the ReST patches. \n\n> The least unplausible one (for me) is the patch about NTL (#5340) --- but I would not really believe that until I see it, i.e. testing with removing/reapplying it. (And I'm currently busy with other things.) \n\nThat patch isn't the cause. It would be interesting to see if it is a generic 32 vs. 64 bit problem or 32 bit linux specific.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 GeorgSWeber]:\n\nHi Georg,\n\n> I'm more than a bit baffled. I have looked twice now over the patches that went into Sage in between 3.3 and 3.4.alpha0, but still I have no idea why this change would possibly be caused by any of them.\n\n\nThe issue exists in both 3.3 and 3.4.alpha0/rc0 - the Bordeaux document was written in October 2008 by William and never doctested until the ReST patches. \n\n> The least unplausible one (for me) is the patch about NTL (#5340) --- but I would not really believe that until I see it, i.e. testing with removing/reapplying it. (And I'm currently busy with other things.) \n\n\nThat patch isn't the cause. It would be interesting to see if it is a generic 32 vs. 64 bit problem or 32 bit linux specific.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-04T04:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -133,9 +128,11 @@ Hi Georg,
 
 > I'm more than a bit baffled. I have looked twice now over the patches that went into Sage in between 3.3 and 3.4.alpha0, but still I have no idea why this change would possibly be caused by any of them.
 
+
 The issue exists in both 3.3 and 3.4.alpha0/rc0 - the Bordeaux document was written in October 2008 by William and never doctested until the ReST patches. 
 
 > The least unplausible one (for me) is the patch about NTL (#5340) --- but I would not really believe that until I see it, i.e. testing with removing/reapplying it. (And I'm currently busy with other things.) 
+
 
 That patch isn't the cause. It would be interesting to see if it is a generic 32 vs. 64 bit problem or 32 bit linux specific.
 
@@ -222,7 +219,7 @@ So it seems that only Jaap's description did mislead me, and the patch is good.
 archive/issue_comments_041913.json:
 ```json
 {
-    "body": "I don't think the patch will do:\n\nOn sage.math, 64 bits:\n\n```\njsp@sage:/scratch/jsp/sage-3.4.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\n| Sage Version 3.4.rc0, Release Date: 2009-03-02                     |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nOn Fedora 9, 32 bits:\n\n\n```\n[jaap@paix sage-3.4.alpha0]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.rc0, Release Date: 2009-03-02                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n\n```\n\n\n\nCan't explain the different output.\n\nJaap",
+    "body": "I don't think the patch will do:\n\nOn sage.math, 64 bits:\n\n```\njsp@sage:/scratch/jsp/sage-3.4.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\n| Sage Version 3.4.rc0, Release Date: 2009-03-02                     |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\nOn Fedora 9, 32 bits:\n\n```\n[jaap@paix sage-3.4.alpha0]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.rc0, Release Date: 2009-03-02                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n\n```\n\n\nCan't explain the different output.\n\nJaap",
     "created_at": "2009-03-04T20:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -245,9 +242,7 @@ sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
 | Type notebook() for the GUI, and license() for information.        |
 ```
 
-
 On Fedora 9, 32 bits:
-
 
 ```
 [jaap@paix sage-3.4.alpha0]$ ./sage
@@ -259,7 +254,6 @@ sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
  (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)
 
 ```
-
 
 
 Can't explain the different output.
@@ -337,7 +331,7 @@ Michael
 archive/issue_comments_041917.json:
 ```json
 {
-    "body": "Matter-of-factly, the following:\n\n```\nModularSymbols(389,sign=1).basis()\n```\n\ngives different output on 32 bit OS X versus 64 bit sage.math. It seems to be consistent w.r.t. architecture , though.\n\nThe modular symbols code is old, and definitely should have more examples and doctests. Especially the above one should be added, if only to show clearly that an architecture dependency is there. The doctests that are there do focus on the important stuff, not on how the modular symbols bases are enumerated, or the explicit matrices of Hecke operators. (But e.g. on characteristic polynomials of the Hecke operators and their factorization instead --- which are *not* architecture dependent, as I just did check!) It would be interesting if the Cremona EC-lib modular symbol implementation (also in Sage) yields the same architecture dependency.\n\nI admit I don't know yet where the architecture dependency actually creeps in.\n\nBut I believe what I see, and do think the (current) patch does its job.",
+    "body": "Matter-of-factly, the following:\n\n```\nModularSymbols(389,sign=1).basis()\n```\ngives different output on 32 bit OS X versus 64 bit sage.math. It seems to be consistent w.r.t. architecture , though.\n\nThe modular symbols code is old, and definitely should have more examples and doctests. Especially the above one should be added, if only to show clearly that an architecture dependency is there. The doctests that are there do focus on the important stuff, not on how the modular symbols bases are enumerated, or the explicit matrices of Hecke operators. (But e.g. on characteristic polynomials of the Hecke operators and their factorization instead --- which are *not* architecture dependent, as I just did check!) It would be interesting if the Cremona EC-lib modular symbol implementation (also in Sage) yields the same architecture dependency.\n\nI admit I don't know yet where the architecture dependency actually creeps in.\n\nBut I believe what I see, and do think the (current) patch does its job.",
     "created_at": "2009-03-04T21:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -351,7 +345,6 @@ Matter-of-factly, the following:
 ```
 ModularSymbols(389,sign=1).basis()
 ```
-
 gives different output on 32 bit OS X versus 64 bit sage.math. It seems to be consistent w.r.t. architecture , though.
 
 The modular symbols code is old, and definitely should have more examples and doctests. Especially the above one should be added, if only to show clearly that an architecture dependency is there. The doctests that are there do focus on the important stuff, not on how the modular symbols bases are enumerated, or the explicit matrices of Hecke operators. (But e.g. on characteristic polynomials of the Hecke operators and their factorization instead --- which are *not* architecture dependent, as I just did check!) It would be interesting if the Cremona EC-lib modular symbol implementation (also in Sage) yields the same architecture dependency.
@@ -389,7 +382,7 @@ I just checked that the documentation still builds fine (it does). I think this 
 archive/issue_comments_041919.json:
 ```json
 {
-    "body": "I tracked down some architecture-dependence in sage.modular when I was working on randstate.pyx (trying to remove \"# random\"), but then I never got around to submitting the patch.  Perhaps this is the problem?\n\nUntested, very old, possibly no-longer-applies patch chunk:\n\n```\n--- a/sage/modular/modsym/relation_matrix.py\tSat Mar 29 12:28:22 2008 -0700\n+++ b/sage/modular/modsym/relation_matrix.py\tSun Mar 30 07:09:50 2008 -0700\n@@ -391,7 +391,8 @@ def sparse_2term_quotient(rels, n, F):\n     ZERO = F(0)\n     coef = [ONE for i in xrange(n)] \n     related_to_me = [[] for i in xrange(n)]\n-    for v0, v1 in rels:\n+    # Sort rels so that we get the same answer on 32-bit and 64-bit platforms.\n+    for v0, v1 in sorted(rels):\n         c0 = coef[v0[0]] * F(v0[1])\n         c1 = coef[v1[0]] * F(v1[1])\n         # Mod out by the relation \n```\n\n\nIterating through a set uses an order that depends on the `__hash__`, and `__hash__` values are different between 32-bit and 64-bit platforms.  I think I remember that sorting rels fixed that.  (I don't know what the performance implications are, but probably not much; sorting is pretty fast.)",
+    "body": "I tracked down some architecture-dependence in sage.modular when I was working on randstate.pyx (trying to remove \"# random\"), but then I never got around to submitting the patch.  Perhaps this is the problem?\n\nUntested, very old, possibly no-longer-applies patch chunk:\n\n```\n--- a/sage/modular/modsym/relation_matrix.py\tSat Mar 29 12:28:22 2008 -0700\n+++ b/sage/modular/modsym/relation_matrix.py\tSun Mar 30 07:09:50 2008 -0700\n@@ -391,7 +391,8 @@ def sparse_2term_quotient(rels, n, F):\n     ZERO = F(0)\n     coef = [ONE for i in xrange(n)] \n     related_to_me = [[] for i in xrange(n)]\n-    for v0, v1 in rels:\n+    # Sort rels so that we get the same answer on 32-bit and 64-bit platforms.\n+    for v0, v1 in sorted(rels):\n         c0 = coef[v0[0]] * F(v0[1])\n         c1 = coef[v1[0]] * F(v1[1])\n         # Mod out by the relation \n```\n\nIterating through a set uses an order that depends on the `__hash__`, and `__hash__` values are different between 32-bit and 64-bit platforms.  I think I remember that sorting rels fixed that.  (I don't know what the performance implications are, but probably not much; sorting is pretty fast.)",
     "created_at": "2009-03-04T23:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -417,7 +410,6 @@ Untested, very old, possibly no-longer-applies patch chunk:
          # Mod out by the relation 
 ```
 
-
 Iterating through a set uses an order that depends on the `__hash__`, and `__hash__` values are different between 32-bit and 64-bit platforms.  I think I remember that sorting rels fixed that.  (I don't know what the performance implications are, but probably not much; sorting is pretty fast.)
 
 
@@ -427,7 +419,7 @@ Iterating through a set uses an order that depends on the `__hash__`, and `__has
 archive/issue_comments_041920.json:
 ```json
 {
-    "body": "Replying to [comment:13 cwitty]:\n> I tracked down some architecture-dependence in sage.modular when I was working on randstate.pyx (trying to remove \"# random\"), but then I never got around to submitting the patch.  Perhaps this is the problem?\n> \n> Untested, very old, possibly no-longer-applies patch chunk:\n\nApplying this \"patch\" introduced a ton of test failures all over the place.\n\nJaap",
+    "body": "Replying to [comment:13 cwitty]:\n> I tracked down some architecture-dependence in sage.modular when I was working on randstate.pyx (trying to remove \"# random\"), but then I never got around to submitting the patch.  Perhaps this is the problem?\n> \n> Untested, very old, possibly no-longer-applies patch chunk:\n\n\nApplying this \"patch\" introduced a ton of test failures all over the place.\n\nJaap",
     "created_at": "2009-03-05T18:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -440,6 +432,7 @@ Replying to [comment:13 cwitty]:
 > I tracked down some architecture-dependence in sage.modular when I was working on randstate.pyx (trying to remove "# random"), but then I never got around to submitting the patch.  Perhaps this is the problem?
 > 
 > Untested, very old, possibly no-longer-applies patch chunk:
+
 
 Applying this "patch" introduced a ton of test failures all over the place.
 
@@ -472,7 +465,7 @@ I'm adding wstein to the CC list on the theory that he may have written the orig
 archive/issue_comments_041922.json:
 ```json
 {
-    "body": "Replying to [comment:15 cwitty]:\n> I don't see any way that this change could break the algorithm, so I'm guessing that these test failures are changing from one mathematically-correct answer to another mathematically-correct answer.  (But this should definitely be checked by somebody who understands the mathematics.)\n> \n> I'm adding wstein to the CC list on the theory that he may have written the original code.  (The code is present in the very first revision that got checked in to mercurial, so version history doesn't say who wrote it.)\n\n\nI saw some weird results in here:\n\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/doc/en/constructions/modular_forms.rst\"\n\tsage -t  \"devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\"\n\tsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\tsage -t  \"devel/sage/sage/modular/cusps.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/space.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/heilbronn.pyx\"\n\tsage -t  \"devel/sage/sage/modular/modsym/boundary.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/ambient.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/hecke_operator.py\"\n\tsage -t  \"devel/sage/sage/modular/modform/numerical.py\"\n\tsage -t  \"devel/sage/sage/modular/hecke/ambient_module.py\"\n\tsage -t  \"devel/sage/sage/modular/hecke/module.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/abvar.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/homology.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/cuspidal_subgroup.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/finite_subgroup.py\"\n\tsage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n\tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/padic_lseries.py\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\nTotal time for all tests: 2885.1 seconds\nPlease see /scratch/jsp/sage-3.4.alpha0/tmp/test.log for the complete log from this test.\njsp@sage:/scratch/jsp/sage-3.4.alpha0$ \n```\n\n\n\nJaap",
+    "body": "Replying to [comment:15 cwitty]:\n> I don't see any way that this change could break the algorithm, so I'm guessing that these test failures are changing from one mathematically-correct answer to another mathematically-correct answer.  (But this should definitely be checked by somebody who understands the mathematics.)\n> \n> I'm adding wstein to the CC list on the theory that he may have written the original code.  (The code is present in the very first revision that got checked in to mercurial, so version history doesn't say who wrote it.)\n\n\n\nI saw some weird results in here:\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/doc/en/constructions/modular_forms.rst\"\n\tsage -t  \"devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\"\n\tsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\tsage -t  \"devel/sage/sage/modular/cusps.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/space.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/heilbronn.pyx\"\n\tsage -t  \"devel/sage/sage/modular/modsym/boundary.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/ambient.py\"\n\tsage -t  \"devel/sage/sage/modular/modsym/hecke_operator.py\"\n\tsage -t  \"devel/sage/sage/modular/modform/numerical.py\"\n\tsage -t  \"devel/sage/sage/modular/hecke/ambient_module.py\"\n\tsage -t  \"devel/sage/sage/modular/hecke/module.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/abvar.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/homology.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/cuspidal_subgroup.py\"\n\tsage -t  \"devel/sage/sage/modular/abvar/finite_subgroup.py\"\n\tsage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n\tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/padic_lseries.py\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\nTotal time for all tests: 2885.1 seconds\nPlease see /scratch/jsp/sage-3.4.alpha0/tmp/test.log for the complete log from this test.\njsp@sage:/scratch/jsp/sage-3.4.alpha0$ \n```\n\n\nJaap",
     "created_at": "2009-03-05T19:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -487,8 +480,8 @@ Replying to [comment:15 cwitty]:
 > I'm adding wstein to the CC list on the theory that he may have written the original code.  (The code is present in the very first revision that got checked in to mercurial, so version history doesn't say who wrote it.)
 
 
-I saw some weird results in here:
 
+I saw some weird results in here:
 
 
 ```
@@ -523,7 +516,6 @@ jsp@sage:/scratch/jsp/sage-3.4.alpha0$
 ```
 
 
-
 Jaap
 
 
@@ -551,7 +543,7 @@ Oops, I had the wrong TRAC username when I tried to CC william...
 archive/issue_comments_041924.json:
 ```json
 {
-    "body": "> I'm adding wstein to the CC list on the theory that he may \n> have written the original code. \n\nI did write the code.  A big +1 to sorted(rels), even though that will mean changing lots of doctests.   That's definitely the right fix. \n\nI tried the change and ran doctests and the many failures are all consistent with making a specific change of basis like sorted rels would do.   So this is the right fix, but requires a lot of work to update all the doctests.  Somebody let me know when a patch is up so I can referee it :-)",
+    "body": "> I'm adding wstein to the CC list on the theory that he may \n> have written the original code. \n\n\nI did write the code.  A big +1 to sorted(rels), even though that will mean changing lots of doctests.   That's definitely the right fix. \n\nI tried the change and ran doctests and the many failures are all consistent with making a specific change of basis like sorted rels would do.   So this is the right fix, but requires a lot of work to update all the doctests.  Somebody let me know when a patch is up so I can referee it :-)",
     "created_at": "2009-03-06T16:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -562,6 +554,7 @@ archive/issue_comments_041924.json:
 
 > I'm adding wstein to the CC list on the theory that he may 
 > have written the original code. 
+
 
 I did write the code.  A big +1 to sorted(rels), even though that will mean changing lots of doctests.   That's definitely the right fix. 
 
@@ -598,7 +591,7 @@ But could we not postpone this to a point release 3.4.x, and open another ticket
 archive/issue_comments_041926.json:
 ```json
 {
-    "body": "Replying to [comment:19 GeorgSWeber]:\n\nHi Georg,\n\n> But could we not postpone this to a point release 3.4.x, and open another ticket for that?!? (The Bordeaux ReST file would have to be touched a second time, but that's trivial.)\n\nI talked to William about this: positive review for the workaround patch, please open another ticket for the above fixes so it will be sorted out later.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:19 GeorgSWeber]:\n\nHi Georg,\n\n> But could we not postpone this to a point release 3.4.x, and open another ticket for that?!? (The Bordeaux ReST file would have to be touched a second time, but that's trivial.)\n\n\nI talked to William about this: positive review for the workaround patch, please open another ticket for the above fixes so it will be sorted out later.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-08T06:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
@@ -612,6 +605,7 @@ Replying to [comment:19 GeorgSWeber]:
 Hi Georg,
 
 > But could we not postpone this to a point release 3.4.x, and open another ticket for that?!? (The Bordeaux ReST file would have to be touched a second time, but that's trivial.)
+
 
 I talked to William about this: positive review for the workaround patch, please open another ticket for the above fixes so it will be sorted out later.
 

@@ -3,7 +3,7 @@
 archive/issues_003420.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn Fedora 9:\n\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
+    "body": "Assignee: @williamstein\n\nOn Fedora 9:\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
     "created_at": "2008-06-13T18:55:59Z",
     "labels": [
         "component: finance",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 On Fedora 9:
 
-
 ```
 sage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************
 File "/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py", line 56:
@@ -33,7 +32,6 @@ Got:
 1 items had failures:
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3420

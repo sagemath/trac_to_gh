@@ -103,7 +103,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064249.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Could there be a small wrapper to (the better one) called degree_sequence as well?\n\nAs I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.\n\n\n\n\n> If the graph theory tour ever gets back up, this would be ideal to put in it as well.\n\nNod.",
+    "body": "Replying to [comment:2 kcrisman]:\n> Could there be a small wrapper to (the better one) called degree_sequence as well?\n\n\nAs I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.\n\n\n\n\n> If the graph theory tour ever gets back up, this would be ideal to put in it as well.\n\n\nNod.",
     "created_at": "2009-11-30T22:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
@@ -115,12 +115,14 @@ archive/issue_comments_064249.json:
 Replying to [comment:2 kcrisman]:
 > Could there be a small wrapper to (the better one) called degree_sequence as well?
 
+
 As I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.
 
 
 
 
 > If the graph theory tour ever gets back up, this would be ideal to put in it as well.
+
 
 Nod.
 
@@ -131,7 +133,7 @@ Nod.
 archive/issue_comments_064250.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> Replying to [comment:2 kcrisman]:\n> > Could there be a small wrapper to (the better one) called degree_sequence as well?\n> \n> As I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.\n\nYes, that is exactly what I meant - wrapping the examples you provide, as it were.  I don't have time to do this, unfortunately, though it should be pretty easy.",
+    "body": "Replying to [comment:3 mvngu]:\n> Replying to [comment:2 kcrisman]:\n> > Could there be a small wrapper to (the better one) called degree_sequence as well?\n\n> \n> As I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.\n\n\nYes, that is exactly what I meant - wrapping the examples you provide, as it were.  I don't have time to do this, unfortunately, though it should be pretty easy.",
     "created_at": "2009-11-30T22:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
@@ -143,8 +145,10 @@ archive/issue_comments_064250.json:
 Replying to [comment:3 mvngu]:
 > Replying to [comment:2 kcrisman]:
 > > Could there be a small wrapper to (the better one) called degree_sequence as well?
+
 > 
 > As I mentioned in my [email](http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5) to sage-devel, I'm unable to find a function or method in the graph theory module that computes the degree sequence of a given graph. So there is no function or method for wrapping, unless you can point me to such a method/function. On the other hand, are you suggesting that there be a method in the class `GenericGraph` called `degree_sequence()` that does exactly as its name implies? If so, then that could be done.
+
 
 Yes, that is exactly what I meant - wrapping the examples you provide, as it were.  I don't have time to do this, unfortunately, though it should be pretty easy.
 
@@ -227,7 +231,7 @@ based on Sage 4.3.alpha0
 archive/issue_comments_064255.json:
 ```json
 {
-    "body": "Attachment [trac_7564-degree-sequences.patch](tarball://root/attachments/some-uuid/ticket7564/trac_7564-degree-sequences.patch) by mvngu created at 2009-12-01 07:37:23\n\nReplying to [comment:6 ncohen]:\n> Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)\n\nY-E-S, yes! :-)\n\n\n\nThe patch `trac_7564-degree-sequences.patch` implements the following degree sequences:\n\n1. `degree_sequence()` --- the degree sequence of a (di)graph. This is implemented in the class `GenericGraph`.\n2. `in_degree_sequence()` --- the indegree sequence of a digraph. This is implemented in the class `DiGraph`.\n3. `out_degree_sequence()` --- the outdegree sequence of a digraph, also implemented in the class `DiGraph`.\n \nI use the method names `in_degree_sequence()` and `out_degree_sequence()` to be consistent with how the graph theory module names the indegree and outdegree methods.",
+    "body": "Attachment [trac_7564-degree-sequences.patch](tarball://root/attachments/some-uuid/ticket7564/trac_7564-degree-sequences.patch) by mvngu created at 2009-12-01 07:37:23\n\nReplying to [comment:6 ncohen]:\n> Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)\n\n\nY-E-S, yes! :-)\n\n\n\nThe patch `trac_7564-degree-sequences.patch` implements the following degree sequences:\n\n1. `degree_sequence()` --- the degree sequence of a (di)graph. This is implemented in the class `GenericGraph`.\n2. `in_degree_sequence()` --- the indegree sequence of a digraph. This is implemented in the class `DiGraph`.\n3. `out_degree_sequence()` --- the outdegree sequence of a digraph, also implemented in the class `DiGraph`.\n \nI use the method names `in_degree_sequence()` and `out_degree_sequence()` to be consistent with how the graph theory module names the indegree and outdegree methods.",
     "created_at": "2009-12-01T07:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
@@ -240,6 +244,7 @@ Attachment [trac_7564-degree-sequences.patch](tarball://root/attachments/some-uu
 
 Replying to [comment:6 ncohen]:
 > Could it be possible to define in the same patch functions outdegree_sequence and indegree_sequence for DiGraphs ? :-)
+
 
 Y-E-S, yes! :-)
 

@@ -3,7 +3,7 @@
 archive/issues_009519.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n\n`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
     "created_at": "2010-07-16T22:43:58Z",
     "labels": [
         "component: build",
@@ -22,7 +22,6 @@ CC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase
 
 Building Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. 
 
-
 ```
 gcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest
 ld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64
@@ -37,11 +36,9 @@ Status: 255
 Output:
 ```
 
-
 `wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. 
 
 But the build process still goes on to report that scipy has installed OK. 
-
 
 ```
 real    22m34.927s
@@ -50,9 +47,7 @@ sys     1m5.603s
 Successfully installed scipy-0.7.p5
 ```
 
-
 What is odd, is that `spkg-install` looks to be OK to me. 
-
 
 ```
 python setup.py build
@@ -68,7 +63,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 ```
-
 
 The problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  
 
@@ -171,7 +165,7 @@ Compressed version of sage-4.5/spkg/logs/scipy-0.7.p5.log
 archive/issue_comments_091361.json:
 ```json
 {
-    "body": "If enough parts of Sage run, you could try running the test suite, e.g.,\n\n```sh\n$ ./sage -sh\nsage subshell$ easy_install nose\nsage subshell$ exit\n$ ./sage -python -c \"import scipy; scipy.test()\"\n```\n\n[Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.\n\nI suppose we could optionally (if the user/developer desires) install nose automatically.",
+    "body": "If enough parts of Sage run, you could try running the test suite, e.g.,\n\n```sh\n$ ./sage -sh\nsage subshell$ easy_install nose\nsage subshell$ exit\n$ ./sage -python -c \"import scipy; scipy.test()\"\n```\n[Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.\n\nI suppose we could optionally (if the user/developer desires) install nose automatically.",
     "created_at": "2010-07-17T00:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
@@ -188,7 +182,6 @@ sage subshell$ easy_install nose
 sage subshell$ exit
 $ ./sage -python -c "import scipy; scipy.test()"
 ```
-
 [Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.
 
 I suppose we could optionally (if the user/developer desires) install nose automatically.
@@ -200,7 +193,7 @@ I suppose we could optionally (if the user/developer desires) install nose autom
 archive/issue_comments_091362.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> Well, `_configtest` sounds rather harmless...\n> \n> Are you sure the finally produced(?) scipy is really broken?\n\nI'm not certain. I thought ATLAS was broken, but I think I have remade the broken library. How can I test just scipy? The 64-bit SPARC port is not 100% ok. I can't run the doctests, as it segfaults, but Sage does semi-work. I can do computations with it. So `sage -t foobar` might work\n\nDave",
+    "body": "Replying to [comment:3 leif]:\n> Well, `_configtest` sounds rather harmless...\n> \n> Are you sure the finally produced(?) scipy is really broken?\n\n\nI'm not certain. I thought ATLAS was broken, but I think I have remade the broken library. How can I test just scipy? The 64-bit SPARC port is not 100% ok. I can't run the doctests, as it segfaults, but Sage does semi-work. I can do computations with it. So `sage -t foobar` might work\n\nDave",
     "created_at": "2010-07-17T00:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
@@ -214,6 +207,7 @@ Replying to [comment:3 leif]:
 > 
 > Are you sure the finally produced(?) scipy is really broken?
 
+
 I'm not certain. I thought ATLAS was broken, but I think I have remade the broken library. How can I test just scipy? The 64-bit SPARC port is not 100% ok. I can't run the doctests, as it segfaults, but Sage does semi-work. I can do computations with it. So `sage -t foobar` might work
 
 Dave
@@ -225,7 +219,7 @@ Dave
 archive/issue_comments_091363.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> If enough parts of Sage run, you could try running the test suite, e.g.,\n> {{{\n> #!sh\n> $ ./sage -sh\n> sage subshell$ easy_install nose\n> sage subshell$ exit\n> $ ./sage -python -c \"import scipy; scipy.test()\"\n> }}}\n> [Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.\n> \n> I suppose we could optionally (if the user/developer desires) install nose automatically.\n\nI've never come across 'nose' - my python skills are next to zero. I will attach a log. As you can see, it finally fails with a core dump, but perhaps has some useful information before it dumps core.\n\nBTW, I've removed the static atlas libs, leaving only the shared ones. That might be a cause of a problem. I can't understand the need for both. If yyou look in the ATLAS package, you can see about 3 dynamic libraries will be missing. Two are not built, and one is deleted. I built them all and deleted no dynamic ones - only the static. \n\n\nDave",
+    "body": "Replying to [comment:5 mpatel]:\n> If enough parts of Sage run, you could try running the test suite, e.g.,\n> \n> ```\n> #!sh\n> $ ./sage -sh\n> sage subshell$ easy_install nose\n> sage subshell$ exit\n> $ ./sage -python -c \"import scipy; scipy.test()\"\n> ```\n> [Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.\n> \n> I suppose we could optionally (if the user/developer desires) install nose automatically.\n\n\nI've never come across 'nose' - my python skills are next to zero. I will attach a log. As you can see, it finally fails with a core dump, but perhaps has some useful information before it dumps core.\n\nBTW, I've removed the static atlas libs, leaving only the shared ones. That might be a cause of a problem. I can't understand the need for both. If yyou look in the ATLAS package, you can see about 3 dynamic libraries will be missing. Two are not built, and one is deleted. I built them all and deleted no dynamic ones - only the static. \n\n\nDave",
     "created_at": "2010-07-17T00:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
@@ -236,16 +230,18 @@ archive/issue_comments_091363.json:
 
 Replying to [comment:5 mpatel]:
 > If enough parts of Sage run, you could try running the test suite, e.g.,
-> {{{
+> 
+> ```
 > #!sh
 > $ ./sage -sh
 > sage subshell$ easy_install nose
 > sage subshell$ exit
 > $ ./sage -python -c "import scipy; scipy.test()"
-> }}}
+> ```
 > [Here's the output](http://sage.math.washington.edu/home/mpatel/trac/9519/scipy_nosetest.log) on sage.math with 4.5.
 > 
 > I suppose we could optionally (if the user/developer desires) install nose automatically.
+
 
 I've never come across 'nose' - my python skills are next to zero. I will attach a log. As you can see, it finally fails with a core dump, but perhaps has some useful information before it dumps core.
 

@@ -3,7 +3,7 @@
 archive/issues_001791.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAs reported by Kate in https://groups.google.com/group/sage-devel/t/1cd682b8f3e49748\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2549:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [...1.00000000000000...*I, 1.00000000000000...*I]\nGot:\n    [1.00000000000000 + 1.11022302462516e-16*I, 1.12045416424138e-16 +\n1.00000000000000*I] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1791\n\n",
+    "body": "Assignee: failure\n\nAs reported by Kate in https://groups.google.com/group/sage-devel/t/1cd682b8f3e49748\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2549:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [...1.00000000000000...*I, 1.00000000000000...*I]\nGot:\n    [1.00000000000000 + 1.11022302462516e-16*I, 1.12045416424138e-16 +\n1.00000000000000*I] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1791\n\n",
     "created_at": "2008-01-16T01:42:28Z",
     "labels": [
         "component: doctest coverage",
@@ -32,7 +32,6 @@ Got:
     [1.00000000000000 + 1.11022302462516e-16*I, 1.12045416424138e-16 +
 1.00000000000000*I] 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1791
 

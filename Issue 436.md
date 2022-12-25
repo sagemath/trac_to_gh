@@ -161,7 +161,7 @@ archive/issue_events_001073.json:
 archive/issue_comments_002179.json:
 ```json
 {
-    "body": "> However, the issue of \"user connects to port x with wrong protocol\" is never going to go away.\n\nTom is right.   I'm closing this ticket as invalid.",
+    "body": "> However, the issue of \"user connects to port x with wrong protocol\" is never going to go away.\n\n\nTom is right.   I'm closing this ticket as invalid.",
     "created_at": "2009-11-19T21:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
@@ -171,6 +171,7 @@ archive/issue_comments_002179.json:
 ```
 
 > However, the issue of "user connects to port x with wrong protocol" is never going to go away.
+
 
 Tom is right.   I'm closing this ticket as invalid.
 

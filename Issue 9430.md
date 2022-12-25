@@ -92,7 +92,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089882.json:
 ```json
 {
-    "body": "Doctest error preview (`ptestlong` still running):\n\n```\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\n**********************************************************************\nFile \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2205:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/leif/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/leif/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/leif/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python/site-packages/sage/misc/misc.py\", line 2666, in my_wrap\n        return func(*args)\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2519, in interact\n        html(C.render())\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2058, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 1994, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n**********************************************************************\n1 items had failures:\n   1 of  34 in __main__.example_99\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_interact.py\n\t [6.3 s]\n```\n\n(Ubuntu 9.04 x86, P4 Prescott, gcc 4.3.3, sequential build)\n\nWith vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).\n\nI've copied `sagenb-0.8.1.spkg` and `zodb3-3.7.0.p4.spkg` (#9436) to `spkg/standard`, built Sage, applied #7379 (Sage library patch for sagenb 0.8.1), run `./sage -b`, rebuilt the documentation and then started the test.\n\nI blindly guess there won't come up further errors originating from the new sagenb package.",
+    "body": "Doctest error preview (`ptestlong` still running):\n\n```\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\n**********************************************************************\nFile \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2205:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/leif/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/leif/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/leif/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python/site-packages/sage/misc/misc.py\", line 2666, in my_wrap\n        return func(*args)\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2519, in interact\n        html(C.render())\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2058, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 1994, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n**********************************************************************\n1 items had failures:\n   1 of  34 in __main__.example_99\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_interact.py\n\t [6.3 s]\n```\n(Ubuntu 9.04 x86, P4 Prescott, gcc 4.3.3, sequential build)\n\nWith vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).\n\nI've copied `sagenb-0.8.1.spkg` and `zodb3-3.7.0.p4.spkg` (#9436) to `spkg/standard`, built Sage, applied #7379 (Sage library patch for sagenb 0.8.1), run `./sage -b`, rebuilt the documentation and then started the test.\n\nI blindly guess there won't come up further errors originating from the new sagenb package.",
     "created_at": "2010-07-07T14:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
@@ -136,7 +136,6 @@ Exception raised:
 For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_interact.py
 	 [6.3 s]
 ```
-
 (Ubuntu 9.04 x86, P4 Prescott, gcc 4.3.3, sequential build)
 
 With vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).
@@ -190,7 +189,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089885.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> With vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).\n\nNot *really* vanilla, actually alpha3 with #9432 (fixing a single doctest error, unrelated to this ticket, merged in alpha4) passed all tests.",
+    "body": "Replying to [comment:4 leif]:\n> With vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).\n\n\nNot *really* vanilla, actually alpha3 with #9432 (fixing a single doctest error, unrelated to this ticket, merged in alpha4) passed all tests.",
     "created_at": "2010-07-07T17:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
@@ -201,6 +200,7 @@ archive/issue_comments_089885.json:
 
 Replying to [comment:4 leif]:
 > With vanilla Sage 4.5.**alpha3**, all doctests passed on that system (same with alpha4 on Ubuntu 9.04 x86_64, gcc 4.5.0; `ptestlong`).
+
 
 Not *really* vanilla, actually alpha3 with #9432 (fixing a single doctest error, unrelated to this ticket, merged in alpha4) passed all tests.
 
@@ -251,7 +251,7 @@ Rebuilding the HTML documentation also succeeded (except for the missing `conf.p
 archive/issue_comments_089888.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> I'll test it on Ubuntu 9.04 x86_64 tomorrow.\n\nI've successfully built Sage 4.5.alpha4 with SageNB 0.8.1 and zodb3 3.7.0.p4 (#9436), both sequentially and in parallel (`SAGE_PARALLEL_SPKG_BUILD=\"yes\", MAKE=\"make -j4\"`).\n\nNo downloads during install, HTML documentation builds (except missing `conf.py` in `thematic_tutorials`), and all long tests passed (`make ptestlong`).\n\nAll builds/tests performed independently, i.e. from scratch.\n\nLeaving as \"needs review\" since IMHO tests by others on other platforms should follow.",
+    "body": "Replying to [comment:7 leif]:\n> I'll test it on Ubuntu 9.04 x86_64 tomorrow.\n\n\nI've successfully built Sage 4.5.alpha4 with SageNB 0.8.1 and zodb3 3.7.0.p4 (#9436), both sequentially and in parallel (`SAGE_PARALLEL_SPKG_BUILD=\"yes\", MAKE=\"make -j4\"`).\n\nNo downloads during install, HTML documentation builds (except missing `conf.py` in `thematic_tutorials`), and all long tests passed (`make ptestlong`).\n\nAll builds/tests performed independently, i.e. from scratch.\n\nLeaving as \"needs review\" since IMHO tests by others on other platforms should follow.",
     "created_at": "2010-07-08T16:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
@@ -262,6 +262,7 @@ archive/issue_comments_089888.json:
 
 Replying to [comment:7 leif]:
 > I'll test it on Ubuntu 9.04 x86_64 tomorrow.
+
 
 I've successfully built Sage 4.5.alpha4 with SageNB 0.8.1 and zodb3 3.7.0.p4 (#9436), both sequentially and in parallel (`SAGE_PARALLEL_SPKG_BUILD="yes", MAKE="make -j4"`).
 

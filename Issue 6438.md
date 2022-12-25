@@ -144,7 +144,7 @@ All tests pass with the above spkg and patch.
 archive/issue_comments_051590.json:
 ```json
 {
-    "body": "The SPKG at\n\nhttp://sage.math.washington.edu/home/robertwb/cython/cython-0.11.2.1.spkg\n\ndoesn't contain a file called `.hgignore` like the current version in Sage 4.1. So when one executes the command\n\n```\nhg status\n```\n\none sees a lot of source files. I've added a `.hgignore` file to the repository of that SPKG. The updated SPKG is up at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/cython-0.11.2.1.spkg\n\nAll doctests passed with the latter SPKG and `6438-cython.patch`.",
+    "body": "The SPKG at\n\nhttp://sage.math.washington.edu/home/robertwb/cython/cython-0.11.2.1.spkg\n\ndoesn't contain a file called `.hgignore` like the current version in Sage 4.1. So when one executes the command\n\n```\nhg status\n```\none sees a lot of source files. I've added a `.hgignore` file to the repository of that SPKG. The updated SPKG is up at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/cython-0.11.2.1.spkg\n\nAll doctests passed with the latter SPKG and `6438-cython.patch`.",
     "created_at": "2009-07-24T12:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
@@ -162,7 +162,6 @@ doesn't contain a file called `.hgignore` like the current version in Sage 4.1. 
 ```
 hg status
 ```
-
 one sees a lot of source files. I've added a `.hgignore` file to the repository of that SPKG. The updated SPKG is up at
 
 http://sage.math.washington.edu/home/mvngu/patch/cython-0.11.2.1.spkg

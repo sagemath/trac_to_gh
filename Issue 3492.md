@@ -3,7 +3,7 @@
 archive/issues_003492.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: finite field homomorphism\n\nThe attached patch adapts `sage/rings/number_field/morphism.py` so that the syntax for homorphisms of number fields also works for finite fields.  Thus\n\n```\nsage: End(GF(125, 'a')).list()\n\n[\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> a,\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> 3*a^2 + 1,\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> 2*a^2 + 4*a + 4\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3492\n\n",
+    "body": "Assignee: tbd\n\nKeywords: finite field homomorphism\n\nThe attached patch adapts `sage/rings/number_field/morphism.py` so that the syntax for homorphisms of number fields also works for finite fields.  Thus\n\n```\nsage: End(GF(125, 'a')).list()\n\n[\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> a,\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> 3*a^2 + 1,\nRing endomorphism of Finite Field in a of size 5^3\n  Defn: a |--> 2*a^2 + 4*a + 4\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3492\n\n",
     "created_at": "2008-06-22T22:44:09Z",
     "labels": [
         "component: algebra"
@@ -33,7 +33,6 @@ Ring endomorphism of Finite Field in a of size 5^3
   Defn: a |--> 2*a^2 + 4*a + 4
 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3492
 

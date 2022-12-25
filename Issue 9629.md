@@ -206,7 +206,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093157.json:
 ```json
 {
-    "body": "Replying to [comment:4 aapitzsch]:\n> `-merge` option is gone.\nGreat, one ticket less!",
+    "body": "Replying to [comment:4 aapitzsch]:\n> `-merge` option is gone.\n\nGreat, one ticket less!",
     "created_at": "2014-06-22T16:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
@@ -217,6 +217,7 @@ archive/issue_comments_093157.json:
 
 Replying to [comment:4 aapitzsch]:
 > `-merge` option is gone.
+
 Great, one ticket less!
 
 

@@ -70,7 +70,7 @@ Attachment [4702-magma.patch](tarball://root/attachments/some-uuid/ticket4702/47
 archive/issue_comments_035354.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nAll the code looks good.  I doctested the whole tree and there are several doctests failures in free_module.py, but no other doctest failures.  \n\nNick, could you \"explain\" this behavior\n\n```\nsage: a = RR(pi)\nsage: a\n3.14159265358979\nsage: magma(a)\n3.14159265358979\nsage: a = RR(pi)\nsage: b = magma(a)\nsage: b\n3.14159265358979\nsage: b.Parent()\nReal field of precision 15\nsage: b._sage_()\n3.1415926535898\nsage: b._sage_().parent()\nReal Field with 49 bits of precision\n```\n\nI.e., why precision is lost in going back and forth.  Technically, it's not a priori necessary to loose bits, is it? \n\nAnother remark -- the MagmaElement objects all have a sage method, so you can do\n\n```\nsage: b.sage()\n```\n\ninstead of `b._sage_()` in doctests, which likely sets a better example.\n\nThis is a superb patch.  I read carefully through the rest and I'm happy with\neverything.  I just want a short discussion about precision issues (going back and forth) and strategies, and fixing of the free_module.py doctests.\n\nBy the way, Sage numbers I think don't print all their decimal digits by default.  This a feature that Carl Witty added about a year ago, and may be responsible for the precision loss going back and forth.\n\nWilliam",
+    "body": "REFEREE REPORT:\n\nAll the code looks good.  I doctested the whole tree and there are several doctests failures in free_module.py, but no other doctest failures.  \n\nNick, could you \"explain\" this behavior\n\n```\nsage: a = RR(pi)\nsage: a\n3.14159265358979\nsage: magma(a)\n3.14159265358979\nsage: a = RR(pi)\nsage: b = magma(a)\nsage: b\n3.14159265358979\nsage: b.Parent()\nReal field of precision 15\nsage: b._sage_()\n3.1415926535898\nsage: b._sage_().parent()\nReal Field with 49 bits of precision\n```\nI.e., why precision is lost in going back and forth.  Technically, it's not a priori necessary to loose bits, is it? \n\nAnother remark -- the MagmaElement objects all have a sage method, so you can do\n\n```\nsage: b.sage()\n```\ninstead of `b._sage_()` in doctests, which likely sets a better example.\n\nThis is a superb patch.  I read carefully through the rest and I'm happy with\neverything.  I just want a short discussion about precision issues (going back and forth) and strategies, and fixing of the free_module.py doctests.\n\nBy the way, Sage numbers I think don't print all their decimal digits by default.  This a feature that Carl Witty added about a year ago, and may be responsible for the precision loss going back and forth.\n\nWilliam",
     "created_at": "2008-12-05T02:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ sage: b._sage_()
 sage: b._sage_().parent()
 Real Field with 49 bits of precision
 ```
-
 I.e., why precision is lost in going back and forth.  Technically, it's not a priori necessary to loose bits, is it? 
 
 Another remark -- the MagmaElement objects all have a sage method, so you can do
@@ -110,7 +109,6 @@ Another remark -- the MagmaElement objects all have a sage method, so you can do
 ```
 sage: b.sage()
 ```
-
 instead of `b._sage_()` in doctests, which likely sets a better example.
 
 This is a superb patch.  I read carefully through the rest and I'm happy with
@@ -147,7 +145,7 @@ i made this since for doctesting purposes I wanted to (1) leave nick's code in p
 archive/issue_comments_035356.json:
 ```json
 {
-    "body": "Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-ncalexan-magma-updates-2.patch) by @ncalexan created at 2008-12-05 05:38:34\n\nI wasn't testing free_module.py correctly, so that's fixed.\n\nI have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:\n\n\n```\nsage: a = 61/3.0; a\n20.3333333333333\nsage: a.str(truncate=False)\n'20.333333333333332'\nsage: magma(a).sage()\n20.3333333333333\nsage: magma(a).sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332')\n20.3333333333333\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()\nRealField(53)(20.3333333333333)\n```\n\n\nIt's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.",
+    "body": "Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-ncalexan-magma-updates-2.patch) by @ncalexan created at 2008-12-05 05:38:34\n\nI wasn't testing free_module.py correctly, so that's fixed.\n\nI have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:\n\n```\nsage: a = 61/3.0; a\n20.3333333333333\nsage: a.str(truncate=False)\n'20.333333333333332'\nsage: magma(a).sage()\n20.3333333333333\nsage: magma(a).sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332')\n20.3333333333333\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()\nRealField(53)(20.3333333333333)\n```\n\nIt's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.",
     "created_at": "2008-12-05T05:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -161,7 +159,6 @@ Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some
 I wasn't testing free_module.py correctly, so that's fixed.
 
 I have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:
-
 
 ```
 sage: a = 61/3.0; a
@@ -179,7 +176,6 @@ sage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(trunca
 sage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()
 RealField(53)(20.3333333333333)
 ```
-
 
 It's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.
 
@@ -210,7 +206,7 @@ Both 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fr
 archive/issue_comments_035358.json:
 ```json
 {
-    "body": "Attachment [4702-extcode-ncalexan-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-ncalexan-magma.patch) by @williamstein created at 2008-12-05 06:16:09\n\nPositive review!\n\nMabshoff, apply exactly these two patches:\n\n```\n4702-ncalexan-magma-updates-2.patch\n4702-extcode-ncalexan-magma.patch\n```\n",
+    "body": "Attachment [4702-extcode-ncalexan-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-ncalexan-magma.patch) by @williamstein created at 2008-12-05 06:16:09\n\nPositive review!\n\nMabshoff, apply exactly these two patches:\n\n```\n4702-ncalexan-magma-updates-2.patch\n4702-extcode-ncalexan-magma.patch\n```",
     "created_at": "2008-12-05T06:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
@@ -229,7 +225,6 @@ Mabshoff, apply exactly these two patches:
 4702-ncalexan-magma-updates-2.patch
 4702-extcode-ncalexan-magma.patch
 ```
-
 
 
 

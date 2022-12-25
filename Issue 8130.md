@@ -3,7 +3,7 @@
 archive/issues_008130.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTry this:\n\n```\nsage: s = u\"\u010d\"\nsage: view(s)\n```\n\nIt will throw a `UnicodeDecodeError`.  This much can be fixed using the \"experimental\" patch at #8083; however, after applying that patch,\n\n```\nsage: view(s)\n```\n\npops open a dvi/pdf file showing the wrong unicode character.\n\nSee #8083 and #8128 for tickets focusing on latex and unicode in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8130\n\n",
+    "body": "Assignee: tbd\n\nTry this:\n\n```\nsage: s = u\"\u010d\"\nsage: view(s)\n```\nIt will throw a `UnicodeDecodeError`.  This much can be fixed using the \"experimental\" patch at #8083; however, after applying that patch,\n\n```\nsage: view(s)\n```\npops open a dvi/pdf file showing the wrong unicode character.\n\nSee #8083 and #8128 for tickets focusing on latex and unicode in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8130\n\n",
     "created_at": "2010-01-30T04:51:58Z",
     "labels": [
         "component: misc",
@@ -25,13 +25,11 @@ Try this:
 sage: s = u"č"
 sage: view(s)
 ```
-
 It will throw a `UnicodeDecodeError`.  This much can be fixed using the "experimental" patch at #8083; however, after applying that patch,
 
 ```
 sage: view(s)
 ```
-
 pops open a dvi/pdf file showing the wrong unicode character.
 
 See #8083 and #8128 for tickets focusing on latex and unicode in the notebook.
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8130
 archive/issue_comments_071362.json:
 ```json
 {
-    "body": "What if we try just\n\n```python\nsage: s ='\u010d'\nsage: view(s)\nsage: s.decode('utf8')\nu'\\u010d'\n```\n\n?  This opens a PDF file for me that shows the expected character.",
+    "body": "What if we try just\n\n```python\nsage: s ='\u010d'\nsage: view(s)\nsage: s.decode('utf8')\nu'\\u010d'\n```\n?  This opens a PDF file for me that shows the expected character.",
     "created_at": "2010-01-30T11:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
@@ -66,7 +64,6 @@ sage: view(s)
 sage: s.decode('utf8')
 u'\u010d'
 ```
-
 ?  This opens a PDF file for me that shows the expected character.
 
 

@@ -3,7 +3,7 @@
 archive/issues_003469.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   1]\nsage: V = (ZZ^2).span([(1/2,1/2), (0,2)]); V\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   2]\nsage: W(V.gen(0))\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3469\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   1]\nsage: V = (ZZ^2).span([(1/2,1/2), (0,2)]); V\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   2]\nsage: W(V.gen(0))\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3469\n\n",
     "created_at": "2008-06-19T07:29:53Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +19,6 @@ archive/issues_003469.json:
 Assignee: @williamstein
 
 CC:  @jasongrout
-
 
 ```
 sage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W
@@ -38,7 +37,6 @@ Traceback (most recent call last):
 TypeError: no coercion of this rational to integer
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3469
 
 
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3469
 archive/issue_comments_024412.json:
 ```json
 {
-    "body": "Also\n\n```\nsage: type(V.gen())\n<type 'sage.modules.vector_rational_dense.Vector_rational_dense'>\nsage: type(V([1,2]))\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\n",
+    "body": "Also\n\n```\nsage: type(V.gen())\n<type 'sage.modules.vector_rational_dense.Vector_rational_dense'>\nsage: type(V([1,2]))\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```",
     "created_at": "2008-06-19T07:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3469",
     "type": "issue_comment",
@@ -70,13 +68,12 @@ sage: type(V([1,2]))
 
 
 
-
 ---
 
 archive/issue_comments_024413.json:
 ```json
 {
-    "body": "This seems to be the real issue: \n\n```\nsage: V([1/2,1/2])\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n",
+    "body": "This seems to be the real issue: \n\n```\nsage: V([1/2,1/2])\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```",
     "created_at": "2008-06-19T07:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3469",
     "type": "issue_comment",
@@ -93,7 +90,6 @@ Traceback (most recent call last):
 ...
 TypeError: no coercion of this rational to integer
 ```
-
 
 
 

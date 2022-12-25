@@ -3,7 +3,7 @@
 archive/issues_004825.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nThis is an ongoing discussion on sage-devel right now.\n\nBasically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.\n\nWe can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.\n\n\n```\nfrom pdflib.pdfparser import PDFDocument, PDFParser\nimport sys\nstdout = sys.stdout\n\ndoc = PDFDocument()\nfp = file('foo.pdf', 'rb')\nparser = PDFParser(doc, fp)\ndoc.initialize()\n\nfor xref in doc.xrefs:\n    for objid in xref.objids():\n        try:\n            obj = doc.getobj(objid)\n        except:\n            continue\n        if isinstance(obj,dict) and 'Type' in obj and obj['Type'].name == \"Annot\":\n            if 'Subtype' in obj and obj['Subtype'].name == \"FileAttachment\":\n                # We have an attached file!\n                filespec = obj['FS']\n                # Look for embedded file; we could try to extract the\n                # filename too (and make sure it's an sws file). but that is platform dependent.  See page\n                # 182 (Section 3.10.2) of\n                # http://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf.\n                if 'EF' in filespec:\n                    fileobj = filespec['EF']['F']\n                    embeddedspec = filespec['EF']\n                    stdout.write(fileobj.resolve().get_data())\n                    # Just output the first file found.\n                    exit()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4825\n\n",
+    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nThis is an ongoing discussion on sage-devel right now.\n\nBasically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.\n\nWe can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.\n\n```\nfrom pdflib.pdfparser import PDFDocument, PDFParser\nimport sys\nstdout = sys.stdout\n\ndoc = PDFDocument()\nfp = file('foo.pdf', 'rb')\nparser = PDFParser(doc, fp)\ndoc.initialize()\n\nfor xref in doc.xrefs:\n    for objid in xref.objids():\n        try:\n            obj = doc.getobj(objid)\n        except:\n            continue\n        if isinstance(obj,dict) and 'Type' in obj and obj['Type'].name == \"Annot\":\n            if 'Subtype' in obj and obj['Subtype'].name == \"FileAttachment\":\n                # We have an attached file!\n                filespec = obj['FS']\n                # Look for embedded file; we could try to extract the\n                # filename too (and make sure it's an sws file). but that is platform dependent.  See page\n                # 182 (Section 3.10.2) of\n                # http://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf.\n                if 'EF' in filespec:\n                    fileobj = filespec['EF']['F']\n                    embeddedspec = filespec['EF']\n                    stdout.write(fileobj.resolve().get_data())\n                    # Just output the first file found.\n                    exit()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4825\n\n",
     "created_at": "2008-12-18T09:08:05Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ This is an ongoing discussion on sage-devel right now.
 Basically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.
 
 We can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.
-
 
 ```
 from pdflib.pdfparser import PDFDocument, PDFParser
@@ -58,7 +57,6 @@ for xref in doc.xrefs:
                     # Just output the first file found.
                     exit()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4825
 

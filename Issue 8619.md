@@ -3,7 +3,7 @@
 archive/issues_008619.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\n\n```\nSELINUX\n--------\n\nOn Linux, if you get this error message:\n\n    \" restore segment prot after reloc: Permission denied \"\n\nthe problem is probably related to SELinux. See the following URL for\nfurther information:\n\n```\n\n\n    http://www.ittvis.com/services/techtip.asp?ttid=3092\n\nIt would be better if the prereq script when sage first builds were to check for selinux.   This could be done possibly following the above link which says to look at /etc/sysconfig/selinux.  \n\nThere are some relevant emails in late March 2010 from John Bussoletti in sage-support about this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8619\n\n",
+    "body": "Assignee: GeorgSWeber\n\n```\nSELINUX\n--------\n\nOn Linux, if you get this error message:\n\n    \" restore segment prot after reloc: Permission denied \"\n\nthe problem is probably related to SELinux. See the following URL for\nfurther information:\n\n```\n\n    http://www.ittvis.com/services/techtip.asp?ttid=3092\n\nIt would be better if the prereq script when sage first builds were to check for selinux.   This could be done possibly following the above link which says to look at /etc/sysconfig/selinux.  \n\nThere are some relevant emails in late March 2010 from John Bussoletti in sage-support about this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8619\n\n",
     "created_at": "2010-03-28T19:09:54Z",
     "labels": [
         "component: build",
@@ -18,7 +18,6 @@ archive/issues_008619.json:
 ```
 Assignee: GeorgSWeber
 
-
 ```
 SELINUX
 --------
@@ -31,7 +30,6 @@ the problem is probably related to SELinux. See the following URL for
 further information:
 
 ```
-
 
     http://www.ittvis.com/services/techtip.asp?ttid=3092
 
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8619
 archive/issue_comments_077980.json:
 ```json
 {
-    "body": "\n```\nThe command \"sestatus\" returns the following text on my system:\n       SELinux Status:                 enabled\n       SELinuxfs mount:                /selinux\n       Current mode:                   permissive\n       Mode from config file:          permissive\n       Policy version:                 24\n       Policy from config file:                targeted\n\nSo it seems that if you grep for \"Current mode\" and find either \"disabled\"\nor \"permissive\", sage should build, but if you encounter \"enabled\" then it\nmay fail to build those apps that make the stack executable.\n\nOn my system sestatus is in /usr/sbin.\n\nJohn Bussoletti\n```\n",
+    "body": "```\nThe command \"sestatus\" returns the following text on my system:\n       SELinux Status:                 enabled\n       SELinuxfs mount:                /selinux\n       Current mode:                   permissive\n       Mode from config file:          permissive\n       Policy version:                 24\n       Policy from config file:                targeted\n\nSo it seems that if you grep for \"Current mode\" and find either \"disabled\"\nor \"permissive\", sage should build, but if you encounter \"enabled\" then it\nmay fail to build those apps that make the stack executable.\n\nOn my system sestatus is in /usr/sbin.\n\nJohn Bussoletti\n```",
     "created_at": "2010-03-29T04:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ archive/issue_comments_077980.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 The command "sestatus" returns the following text on my system:
@@ -77,7 +74,6 @@ On my system sestatus is in /usr/sbin.
 
 John Bussoletti
 ```
-
 
 
 

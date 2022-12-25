@@ -3,7 +3,7 @@
 archive/issues_000625.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe number of binaries in the current Sage 2.8.4 is limited. But many systems, especially more exotic Unixes, have fortran compilers installed. So instead of failing look for one of those, warn user and select them in the order \n\n```\ngfortran > g95 > g77\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/625\n\n",
+    "body": "Assignee: mabshoff\n\nThe number of binaries in the current Sage 2.8.4 is limited. But many systems, especially more exotic Unixes, have fortran compilers installed. So instead of failing look for one of those, warn user and select them in the order \n\n```\ngfortran > g95 > g77\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/625\n\n",
     "created_at": "2007-09-08T23:34:04Z",
     "labels": [
         "component: packages: standard",
@@ -23,7 +23,6 @@ The number of binaries in the current Sage 2.8.4 is limited. But many systems, e
 ```
 gfortran > g95 > g77
 ```
-
 Cheers,
 
 Michael

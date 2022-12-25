@@ -146,7 +146,7 @@ as an optional package?
 archive/issue_comments_096969.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> Harald, Mike, or Minh, could you please add\n> \n>  http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n> \n> as an optional package?\n\nDone. See the updated optional spkg page\n\nhttp://www.sagemath.org/packages/optional/\n\nThe new package is now being mirrored.",
+    "body": "Replying to [comment:6 mpatel]:\n> Harald, Mike, or Minh, could you please add\n> \n>  http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n> \n> as an optional package?\n\n\nDone. See the updated optional spkg page\n\nhttp://www.sagemath.org/packages/optional/\n\nThe new package is now being mirrored.",
     "created_at": "2010-11-01T10:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
@@ -161,6 +161,7 @@ Replying to [comment:6 mpatel]:
 >  http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg
 > 
 > as an optional package?
+
 
 Done. See the updated optional spkg page
 

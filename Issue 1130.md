@@ -3,7 +3,7 @@
 archive/issues_001130.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe user has three new options of finite extension fields:\n1. \"legendre\" - as the name implies: using Legendre symbols\n\n```\nsage: k.<a> = GF(3^10)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: time E.cardinality('legendre')\nCPU times: user 0.39 s, sys: 0.05 s, total: 0.44 s\nWall time: 0.44\n58997\n```\n\n\n1. \"bsgs\" - using the Baby-Step Giant-Step algorithm\n\n```\nsage: time E.cardinality('bsgs')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n\n1. \"heuristic\" - use \"legendre\" if q<100 (as in mwrank) and \"bsgs\" else\n\n```\nsage: time E.cardinality()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n\nNeither of these will win any speed records but it is *much* better than the naive algorithm used before.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1130\n\n",
+    "body": "Assignee: @malb\n\nThe user has three new options of finite extension fields:\n1. \"legendre\" - as the name implies: using Legendre symbols\n\n```\nsage: k.<a> = GF(3^10)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: time E.cardinality('legendre')\nCPU times: user 0.39 s, sys: 0.05 s, total: 0.44 s\nWall time: 0.44\n58997\n```\n\n1. \"bsgs\" - using the Baby-Step Giant-Step algorithm\n\n```\nsage: time E.cardinality('bsgs')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n1. \"heuristic\" - use \"legendre\" if q<100 (as in mwrank) and \"bsgs\" else\n\n```\nsage: time E.cardinality()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\nNeither of these will win any speed records but it is *much* better than the naive algorithm used before.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1130\n\n",
     "created_at": "2007-11-08T22:16:45Z",
     "labels": [
         "component: number theory"
@@ -29,7 +29,6 @@ Wall time: 0.44
 58997
 ```
 
-
 1. "bsgs" - using the Baby-Step Giant-Step algorithm
 
 ```
@@ -39,7 +38,6 @@ Wall time: 0.02
 58997
 ```
 
-
 1. "heuristic" - use "legendre" if q<100 (as in mwrank) and "bsgs" else
 
 ```
@@ -48,7 +46,6 @@ CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
 Wall time: 0.02
 58997
 ```
-
 
 Neither of these will win any speed records but it is *much* better than the naive algorithm used before.
 
@@ -118,7 +115,7 @@ One concern I have that the use of the hasse bound may not be enough for extreme
 archive/issue_comments_006821.json:
 ```json
 {
-    "body": "David Harvey on [sage-devel]:\n\n```\nI'm very concerned about this patch. It is not the case that the LCM\nof the orders of all elements of E(GF(q)) will equal the order of E \n(GF(q)). I haven't tried the code, but if I understand the code\ncorrectly, it will go into an infinite loop on such cases, and it may\nwell give incorrect results in other cases.\n```\n",
+    "body": "David Harvey on [sage-devel]:\n\n```\nI'm very concerned about this patch. It is not the case that the LCM\nof the orders of all elements of E(GF(q)) will equal the order of E \n(GF(q)). I haven't tried the code, but if I understand the code\ncorrectly, it will go into an infinite loop on such cases, and it may\nwell give incorrect results in other cases.\n```",
     "created_at": "2007-11-18T15:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -139,13 +136,12 @@ well give incorrect results in other cases.
 
 
 
-
 ---
 
 archive/issue_comments_006822.json:
 ```json
 {
-    "body": "my reply:\n\n```\nYes, it should not go in, my bad, sorry. I quickly hacked to together\nthe algorithm in \"Elliptic Curves\" by Lawrence Washington and \napparently screwed up badly on the way. He writes:\n\n\"\"\"\n7. If we are looking for the #E(F_q), then repeat steps (1)-(6)  \n[finding the order of a point, malb] with randomly chosen points \nin E(F_q) until the greatest common multiple of the orders divides\nonly one integer N with q + 1 -2*sqrt(q) <= N <= q + 1 + 2*sqrt(q). \nThen N = #E(F_q).\n\"\"\"\n\nApparently I overread the 'divides' part. Also, what is a \n'greatest common divisor'?\n```\n",
+    "body": "my reply:\n\n```\nYes, it should not go in, my bad, sorry. I quickly hacked to together\nthe algorithm in \"Elliptic Curves\" by Lawrence Washington and \napparently screwed up badly on the way. He writes:\n\n\"\"\"\n7. If we are looking for the #E(F_q), then repeat steps (1)-(6)  \n[finding the order of a point, malb] with randomly chosen points \nin E(F_q) until the greatest common multiple of the orders divides\nonly one integer N with q + 1 -2*sqrt(q) <= N <= q + 1 + 2*sqrt(q). \nThen N = #E(F_q).\n\"\"\"\n\nApparently I overread the 'divides' part. Also, what is a \n'greatest common divisor'?\n```",
     "created_at": "2007-11-18T15:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -175,13 +171,12 @@ Apparently I overread the 'divides' part. Also, what is a
 
 
 
-
 ---
 
 archive/issue_comments_006823.json:
 ```json
 {
-    "body": "and David again:\n\n\n```\nI still don't believe this algorithm.\n\nLook at this example:\n\nsage: K.<a> = GF(3^4)\nsage: K.polynomial()\na^4 + 2*a^3 + 2\nsage: E = EllipticCurve(K, [2*a^2 + 2*a + 2, 2*a^3 + 2*a + 1])\nsage: points = E.points()\nsage: len(points)\n100\nsage: LCM([P.order() for P in points])\n10\n\nThe hasse bound says the the number of points must be in [64, 100].  \nBut if the best we can do is show divisibility by 10, that's not  \nenough information: it could be 70, 80, 90, or 100.\n\nDoes Washington place any other restrictions on the finite field or  \non the curve?\n```\n",
+    "body": "and David again:\n\n```\nI still don't believe this algorithm.\n\nLook at this example:\n\nsage: K.<a> = GF(3^4)\nsage: K.polynomial()\na^4 + 2*a^3 + 2\nsage: E = EllipticCurve(K, [2*a^2 + 2*a + 2, 2*a^3 + 2*a + 1])\nsage: points = E.points()\nsage: len(points)\n100\nsage: LCM([P.order() for P in points])\n10\n\nThe hasse bound says the the number of points must be in [64, 100].  \nBut if the best we can do is show divisibility by 10, that's not  \nenough information: it could be 70, 80, 90, or 100.\n\nDoes Washington place any other restrictions on the finite field or  \non the curve?\n```",
     "created_at": "2007-11-18T15:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -191,7 +186,6 @@ archive/issue_comments_006823.json:
 ```
 
 and David again:
-
 
 ```
 I still don't believe this algorithm.
@@ -215,7 +209,6 @@ enough information: it could be 70, 80, 90, or 100.
 Does Washington place any other restrictions on the finite field or  
 on the curve?
 ```
-
 
 
 
@@ -244,7 +237,7 @@ jec
 archive/issue_comments_006825.json:
 ```json
 {
-    "body": "\n```\n\n> What's the latest on\n>\n> http://trac.sagemath.org/sage_trac/ticket/1130\n>\n> It looks to me like David Harvey pointed out that the algorithm was\n> maybe wrong.  It's unclear if\n> something needs to be done or not after quickly looking at the\n> comments.    Is all that needs to\n> happen for malb to make another patch that incorporates the table the\n> John mentions in his last\n> comment?\n\nSince the code in question was only determining the group\norder, not structure, as long as the table of exceptions is dealt with\nproperly the basic algorithm should work.\n\nBy the way, Larry Washington is currently preparing a second edition\nof his book and he is planning to incorporate this correction,\nattributing it to me and David Harvey.\n\nJohn\n```\n",
+    "body": "```\n\n> What's the latest on\n>\n> http://trac.sagemath.org/sage_trac/ticket/1130\n>\n> It looks to me like David Harvey pointed out that the algorithm was\n> maybe wrong.  It's unclear if\n> something needs to be done or not after quickly looking at the\n> comments.    Is all that needs to\n> happen for malb to make another patch that incorporates the table the\n> John mentions in his last\n> comment?\n\nSince the code in question was only determining the group\norder, not structure, as long as the table of exceptions is dealt with\nproperly the basic algorithm should work.\n\nBy the way, Larry Washington is currently preparing a second edition\nof his book and he is planning to incorporate this correction,\nattributing it to me and David Harvey.\n\nJohn\n```",
     "created_at": "2007-12-21T09:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1130",
     "type": "issue_comment",
@@ -252,7 +245,6 @@ archive/issue_comments_006825.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -278,7 +270,6 @@ attributing it to me and David Harvey.
 
 John
 ```
-
 
 
 

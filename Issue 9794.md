@@ -3,7 +3,7 @@
 archive/issues_009794.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\n\n```\npts = [(1,2),(2,3),(3,2),(4,3),(5,2),(6,3)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nSR(f) \n2. If one has a non-symbolic polynomial currently, it won't plot with \nthe new plotting syntax. \nplot(f,0,5) # works, old-school Sage \nplot(f,(x,0,5)) # doesn't work, new-school Sage \nplot(f,x,0,5) # doesn't work, though sort of makes sense it shouldn't \nsince x isn't a symbolic variable now... ? \n```\n\nObviously any polynomial f is what is at issue, not just this particular one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9795\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\n```\npts = [(1,2),(2,3),(3,2),(4,3),(5,2),(6,3)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nSR(f) \n2. If one has a non-symbolic polynomial currently, it won't plot with \nthe new plotting syntax. \nplot(f,0,5) # works, old-school Sage \nplot(f,(x,0,5)) # doesn't work, new-school Sage \nplot(f,x,0,5) # doesn't work, though sort of makes sense it shouldn't \nsince x isn't a symbolic variable now... ? \n```\nObviously any polynomial f is what is at issue, not just this particular one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9795\n\n",
     "created_at": "2010-08-24T15:19:24Z",
     "labels": [
         "component: graphics",
@@ -20,7 +20,6 @@ Assignee: jason, was
 
 CC:  @jasongrout
 
-
 ```
 pts = [(1,2),(2,3),(3,2),(4,3),(5,2),(6,3)] 
 R.<x>=QQ[] 
@@ -33,7 +32,6 @@ plot(f,(x,0,5)) # doesn't work, new-school Sage
 plot(f,x,0,5) # doesn't work, though sort of makes sense it shouldn't 
 since x isn't a symbolic variable now... ? 
 ```
-
 Obviously any polynomial f is what is at issue, not just this particular one.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9795
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9795
 archive/issue_comments_096007.json:
 ```json
 {
-    "body": "This would be good to work too, if we can fix the above.\n\n```\npts = [(1,2)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nf.plot(0,7) \n<boom because integers have no .plot() method>\n```\n",
+    "body": "This would be good to work too, if we can fix the above.\n\n```\npts = [(1,2)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nf.plot(0,7) \n<boom because integers have no .plot() method>\n```",
     "created_at": "2010-08-24T15:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9794",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ f = R.lagrange_polynomial(pts)
 f.plot(0,7) 
 <boom because integers have no .plot() method>
 ```
-
 
 
 

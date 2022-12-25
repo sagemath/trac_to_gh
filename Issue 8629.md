@@ -194,7 +194,7 @@ archive/issue_comments_078113.json:
 archive/issue_comments_078114.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> (I would love to be notified for new tickets in graphics, graph theory, notebook, interact, linear algebra, misc, and numerical categories, if possible!)\n\nYour wish is my command :-)\n\n\nYou are now notified of new tickets within the following components: graphics, graph theory, notebook, interact, linear algebra, misc, and numerical.",
+    "body": "Replying to [comment:6 jason]:\n> (I would love to be notified for new tickets in graphics, graph theory, notebook, interact, linear algebra, misc, and numerical categories, if possible!)\n\n\nYour wish is my command :-)\n\n\nYou are now notified of new tickets within the following components: graphics, graph theory, notebook, interact, linear algebra, misc, and numerical.",
     "created_at": "2010-03-31T18:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8629",
     "type": "issue_comment",
@@ -205,6 +205,7 @@ archive/issue_comments_078114.json:
 
 Replying to [comment:6 jason]:
 > (I would love to be notified for new tickets in graphics, graph theory, notebook, interact, linear algebra, misc, and numerical categories, if possible!)
+
 
 Your wish is my command :-)
 

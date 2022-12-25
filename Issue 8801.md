@@ -3,7 +3,7 @@
 archive/issues_008801.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
+    "body": "Assignee: @aghitza\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
     "created_at": "2010-04-28T14:24:54Z",
     "labels": [
         "component: algebraic geometry"
@@ -19,7 +19,6 @@ Assignee: @aghitza
 
 This was requested by Ursula Whitcher on sage-support.  She adds:
 
-
 ```
   I'm playing with a family of plane curves with rational coefficients in 
   the complex projective plane.  So rational or complex numbers would be 
@@ -28,7 +27,6 @@ This was requested by Ursula Whitcher on sage-support.  She adds:
   (something like a x^2 + b/(a-1) y^2), and compute the projective dual in 
   terms of those constants.
 ```
-
 
 A good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps
 
@@ -126,7 +124,7 @@ Patch rebased on top of Sage 5.2.
 archive/issue_comments_080605.json:
 ```json
 {
-    "body": "Here is a git branch. Maybe this could be considered as need review ?\n----\nNew commits:",
+    "body": "Here is a git branch. Maybe this could be considered as need review ?\n\n---\nNew commits:",
     "created_at": "2014-03-06T13:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
@@ -136,7 +134,8 @@ archive/issue_comments_080605.json:
 ```
 
 Here is a git branch. Maybe this could be considered as need review ?
-----
+
+---
 New commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_005928.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: multiplication factorization coercion\n\nThis was uncovered at #5921.  Observe:\n\n\n```\nsage: P.<x> = ZZ\nsage: f = 2*x + 2\nsage: c = f.content()\nsage: g = f//c\nsage: F1 = c.factor(); [type(a[0]) for a in F1]\n[<type 'sage.rings.integer.Integer'>]\nsage: F2 = g.factor(); [type(a[0]) for a in F2]\n[<type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\nsage: F1*F2\n2 * (x + 1)\nsage: [type(a[0]) for a in F1*F2]\n[<type 'sage.rings.integer.Integer'>,\n <type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\n```\n\n\nI think that multiplying two factorisations should make sure that the factors can be coerced into a common universe, so that all factors have the same parent.  If that's impossible, then an error should be thrown.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5928\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: multiplication factorization coercion\n\nThis was uncovered at #5921.  Observe:\n\n```\nsage: P.<x> = ZZ\nsage: f = 2*x + 2\nsage: c = f.content()\nsage: g = f//c\nsage: F1 = c.factor(); [type(a[0]) for a in F1]\n[<type 'sage.rings.integer.Integer'>]\nsage: F2 = g.factor(); [type(a[0]) for a in F2]\n[<type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\nsage: F1*F2\n2 * (x + 1)\nsage: [type(a[0]) for a in F1*F2]\n[<type 'sage.rings.integer.Integer'>,\n <type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\n```\n\nI think that multiplying two factorisations should make sure that the factors can be coerced into a common universe, so that all factors have the same parent.  If that's impossible, then an error should be thrown.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5928\n\n",
     "created_at": "2009-04-29T01:43:08Z",
     "labels": [
         "component: factorization",
@@ -24,7 +24,6 @@ Keywords: multiplication factorization coercion
 
 This was uncovered at #5921.  Observe:
 
-
 ```
 sage: P.<x> = ZZ
 sage: f = 2*x + 2
@@ -40,7 +39,6 @@ sage: [type(a[0]) for a in F1*F2]
 [<type 'sage.rings.integer.Integer'>,
  <type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]
 ```
-
 
 I think that multiplying two factorisations should make sure that the factors can be coerced into a common universe, so that all factors have the same parent.  If that's impossible, then an error should be thrown.
 
@@ -92,7 +90,7 @@ Changing status from new to assigned.
 archive/issue_comments_046780.json:
 ```json
 {
-    "body": "Attachment [trac_5928.patch](tarball://root/attachments/some-uuid/ticket5928/trac_5928.patch) by @JohnCremona created at 2009-04-29 08:58:29\n\nThis patch looks good, applies to 3.4.2.alpha0 and tests in sage/structure pass as well as those in sage/rings/*.py (I did not go into subdirectories).\n\nI was a little disappointed by this:\n\n```\nsage: R.<x> = ZZ[]\nsage: S.<y> = QQ[]\nsage: f = x^2-1\nsage: g = y^3-1\nsage: f.factor()\n(x - 1) * (x + 1)\nsage: g.factor()\n(y - 1) * (y^2 + y + 1)\nsage: f.factor() * g.factor()\n(1) * (y - 1) * (x - 1) * (x + 1) * (y^2 + y + 1)\nsage: (f.factor() * g.factor()).universe()\nCategory of objects\n```\n\nand in fact coercion is not clever enough to allow x*y here.  but it does work if you do \n\n```\nsage: S.<x> = QQ[]\nsage: y=S.gen(0)\nsage: g = y^3-1\nsage: f.factor() * g.factor()\n(x + 1) * (x - 1)^2 * (x^2 + x + 1)\n```\n\n-- i.e. you have to define the two rings with the same name of the variable even if you use a different name for input.  Weird, but it is not going to stop this patch!",
+    "body": "Attachment [trac_5928.patch](tarball://root/attachments/some-uuid/ticket5928/trac_5928.patch) by @JohnCremona created at 2009-04-29 08:58:29\n\nThis patch looks good, applies to 3.4.2.alpha0 and tests in sage/structure pass as well as those in sage/rings/*.py (I did not go into subdirectories).\n\nI was a little disappointed by this:\n\n```\nsage: R.<x> = ZZ[]\nsage: S.<y> = QQ[]\nsage: f = x^2-1\nsage: g = y^3-1\nsage: f.factor()\n(x - 1) * (x + 1)\nsage: g.factor()\n(y - 1) * (y^2 + y + 1)\nsage: f.factor() * g.factor()\n(1) * (y - 1) * (x - 1) * (x + 1) * (y^2 + y + 1)\nsage: (f.factor() * g.factor()).universe()\nCategory of objects\n```\nand in fact coercion is not clever enough to allow x*y here.  but it does work if you do \n\n```\nsage: S.<x> = QQ[]\nsage: y=S.gen(0)\nsage: g = y^3-1\nsage: f.factor() * g.factor()\n(x + 1) * (x - 1)^2 * (x^2 + x + 1)\n```\n-- i.e. you have to define the two rings with the same name of the variable even if you use a different name for input.  Weird, but it is not going to stop this patch!",
     "created_at": "2009-04-29T08:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5928",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ sage: f.factor() * g.factor()
 sage: (f.factor() * g.factor()).universe()
 Category of objects
 ```
-
 and in fact coercion is not clever enough to allow x*y here.  but it does work if you do 
 
 ```
@@ -131,7 +128,6 @@ sage: g = y^3-1
 sage: f.factor() * g.factor()
 (x + 1) * (x - 1)^2 * (x^2 + x + 1)
 ```
-
 -- i.e. you have to define the two rings with the same name of the variable even if you use a different name for input.  Weird, but it is not going to stop this patch!
 
 

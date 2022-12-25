@@ -113,7 +113,7 @@ Attachment [trac_5671-part2.patch](tarball://root/attachments/some-uuid/ticket56
 archive/issue_comments_044276.json:
 ```json
 {
-    "body": "Attachment [trac_5671-part3.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part3.patch) by @williamstein created at 2009-04-02 23:11:34\n\nWith just the posted code to this point:\n\n```\nsage: S = minisat.Solver(verbosity=2)\nsage: S.new_var()\n0\nsage: S.new_var()\n1\nsage: S.new_var()\n2\nsage: S.new_var()\n3\nsage: S.add_clause([1])\npushing lit.p =  Literal 1\nsage: S.add_clause([2])\npushing lit.p =  Literal 2\nsage: S.solve()\n============================[ Search Statistics ]==============================\n===============================================================================\n===============================================================================\nVerified 0 original clauses.\nTrue\n```\n",
+    "body": "Attachment [trac_5671-part3.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part3.patch) by @williamstein created at 2009-04-02 23:11:34\n\nWith just the posted code to this point:\n\n```\nsage: S = minisat.Solver(verbosity=2)\nsage: S.new_var()\n0\nsage: S.new_var()\n1\nsage: S.new_var()\n2\nsage: S.new_var()\n3\nsage: S.add_clause([1])\npushing lit.p =  Literal 1\nsage: S.add_clause([2])\npushing lit.p =  Literal 2\nsage: S.solve()\n============================[ Search Statistics ]==============================\n===============================================================================\n===============================================================================\nVerified 0 original clauses.\nTrue\n```",
     "created_at": "2009-04-02T23:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -147,7 +147,6 @@ sage: S.solve()
 Verified 0 original clauses.
 True
 ```
-
 
 
 
@@ -187,7 +186,7 @@ might be relevant. It is an enhanced MiniSat with:
 archive/issue_comments_044278.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> This\n> \n>    http://planete.inrialpes.fr/~soos/CryptoMiniSat/index.html\n> \n> might be relevant. It is an enhanced MiniSat with:\n> \n>  * Natively handled XOR functions\n>  * Statistics generation\n>  * Search randomization\n>  * Detailed solving process visualization\n>  * Clause grouping and group naming\n>  * Variable naming\n>  * Debug mode\n>  * Code cleanup\n\nGiven this and recent developments at #418, perhaps this is a dupe?",
+    "body": "Replying to [comment:5 malb]:\n> This\n> \n>    http://planete.inrialpes.fr/~soos/CryptoMiniSat/index.html\n> \n> might be relevant. It is an enhanced MiniSat with:\n> \n> * Natively handled XOR functions\n> * Statistics generation\n> * Search randomization\n> * Detailed solving process visualization\n> * Clause grouping and group naming\n> * Variable naming\n> * Debug mode\n> * Code cleanup\n\n\nGiven this and recent developments at #418, perhaps this is a dupe?",
     "created_at": "2012-06-04T19:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -203,14 +202,15 @@ Replying to [comment:5 malb]:
 > 
 > might be relevant. It is an enhanced MiniSat with:
 > 
->  * Natively handled XOR functions
->  * Statistics generation
->  * Search randomization
->  * Detailed solving process visualization
->  * Clause grouping and group naming
->  * Variable naming
->  * Debug mode
->  * Code cleanup
+> * Natively handled XOR functions
+> * Statistics generation
+> * Search randomization
+> * Detailed solving process visualization
+> * Clause grouping and group naming
+> * Variable naming
+> * Debug mode
+> * Code cleanup
+
 
 Given this and recent developments at #418, perhaps this is a dupe?
 
@@ -395,7 +395,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_044283.json:
 ```json
 {
-    "body": "Replying to [comment:12 malb]:\n> I'm not sure what needs review here?\n\nAs far as I understand the way to have a ticket closes as \"wontfix\" or similar is to set the milestone to `duplicate/invalid/wontfix` and wait for someone else to review that choice.",
+    "body": "Replying to [comment:12 malb]:\n> I'm not sure what needs review here?\n\n\nAs far as I understand the way to have a ticket closes as \"wontfix\" or similar is to set the milestone to `duplicate/invalid/wontfix` and wait for someone else to review that choice.",
     "created_at": "2014-03-14T16:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
@@ -406,6 +406,7 @@ archive/issue_comments_044283.json:
 
 Replying to [comment:12 malb]:
 > I'm not sure what needs review here?
+
 
 As far as I understand the way to have a ticket closes as "wontfix" or similar is to set the milestone to `duplicate/invalid/wontfix` and wait for someone else to review that choice.
 

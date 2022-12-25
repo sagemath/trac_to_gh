@@ -3,7 +3,7 @@
 archive/issues_000961.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHello,\n\nI am not sure if this qualifies as a bug, but by storing the list in ~/.sage the following should work even if the user doesn't have write permission below $SAGE_LOCAL:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage -standard\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/standard/list --> /home/was/s/tmp/list\n[Errno 13] Permission denied: '/home/was/s/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/standard/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/961\n\n",
+    "body": "Assignee: mabshoff\n\nHello,\n\nI am not sure if this qualifies as a bug, but by storing the list in ~/.sage the following should work even if the user doesn't have write permission below $SAGE_LOCAL:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage -standard\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/standard/list --> /home/was/s/tmp/list\n[Errno 13] Permission denied: '/home/was/s/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/standard/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/961\n\n",
     "created_at": "2007-10-21T14:19:24Z",
     "labels": [
         "component: packages: standard",
@@ -45,7 +45,6 @@ then try again.
 
 ********************************************************************************
 ```
-
 Cheers,
 
 Michael

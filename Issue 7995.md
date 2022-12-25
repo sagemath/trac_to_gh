@@ -107,7 +107,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069712.json:
 ```json
 {
-    "body": "I don't know much the doctest framework. But the code looks good, and this removes two seriously annoying misfeatures of doctests. Thanks so much for scratching this itch for me!\n\nQuick remarks:\n\n- When there is an exception in the doctesting framework; will we get\n  a traceback? That would be most handy!\n\n- in \"... Check the process exit codes ...\": codes -> code?\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n> # Return value in process exit code: \n> # 0: all tests passed \n> # 1: file not found \n> # 2: KeyboardInterrupt \n> # 3: doctest process was terminated by a signal \n> # 4: the doctesting framework raised an exception \n> # 100: failed doctests \n> #################################################################### \n>\n> def test_code(filename): \n>     # Return value in the doctest process exit code: \n>     # 0: everything passed \n>     # 1-253: number of failed doctests \n>     # 254: >= 254 doctests failed \n>     # 255: exception raised by doctesting framework",
+    "body": "I don't know much the doctest framework. But the code looks good, and this removes two seriously annoying misfeatures of doctests. Thanks so much for scratching this itch for me!\n\nQuick remarks:\n\n- When there is an exception in the doctesting framework; will we get\n  a traceback? That would be most handy!\n\n- in \"... Check the process exit codes ...\": codes -> code?\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n> # Return value in process exit code: \n> # 0: all tests passed \n> # 1: file not found \n> # 2: KeyboardInterrupt \n> # 3: doctest process was terminated by a signal \n> # 4: the doctesting framework raised an exception \n> # 100: failed doctests \n> #################################################################### \n\n>\n> def test_code(filename): \n>     # Return value in the doctest process exit code: \n>     # 0: everything passed \n>     # 1-253: number of failed doctests \n>     # 254: >= 254 doctests failed \n>     # 255: exception raised by doctesting framework",
     "created_at": "2010-01-20T08:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ Quick remarks:
 > # 4: the doctesting framework raised an exception 
 > # 100: failed doctests 
 > #################################################################### 
+
 >
 > def test_code(filename): 
 >     # Return value in the doctest process exit code: 
@@ -151,7 +152,7 @@ Quick remarks:
 archive/issue_comments_069713.json:
 ```json
 {
-    "body": "Sorry, I screwed up my citation. Here it is again.\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n\n```\n # Return value in process exit code: \n # 0: all tests passed \n # 1: file not found \n # 2: KeyboardInterrupt \n # 3: doctest process was terminated by a signal \n # 4: the doctesting framework raised an exception \n # 100: failed doctests \n #################################################################### \n\n def test_code(filename): \n     # Return value in the doctest process exit code: \n     # 0: everything passed \n     # 1-253: number of failed doctests \n     # 254: >= 254 doctests failed \n     # 255: exception raised by doctesting framework \n```\n",
+    "body": "Sorry, I screwed up my citation. Here it is again.\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n```\n # Return value in process exit code: \n # 0: all tests passed \n # 1: file not found \n # 2: KeyboardInterrupt \n # 3: doctest process was terminated by a signal \n # 4: the doctesting framework raised an exception \n # 100: failed doctests \n #################################################################### \n\n def test_code(filename): \n     # Return value in the doctest process exit code: \n     # 0: everything passed \n     # 1-253: number of failed doctests \n     # 254: >= 254 doctests failed \n     # 255: exception raised by doctesting framework \n```",
     "created_at": "2010-01-20T09:01:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -164,7 +165,6 @@ Sorry, I screwed up my citation. Here it is again.
 
 - The following two comments seem contradictory. Or am I
   misunderstanding something?
-
 
 ```
  # Return value in process exit code: 
@@ -186,13 +186,12 @@ Sorry, I screwed up my citation. Here it is again.
 
 
 
-
 ---
 
 archive/issue_comments_069714.json:
 ```json
 {
-    "body": "Replying to [comment:4 nthiery]:\n> Sorry, I screwed up my citation. Here it is again.\n\nOops again. This remark is actually about #7993. I was looking at both, and got confused.",
+    "body": "Replying to [comment:4 nthiery]:\n> Sorry, I screwed up my citation. Here it is again.\n\n\nOops again. This remark is actually about #7993. I was looking at both, and got confused.",
     "created_at": "2010-01-20T09:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -203,6 +202,7 @@ archive/issue_comments_069714.json:
 
 Replying to [comment:4 nthiery]:
 > Sorry, I screwed up my citation. Here it is again.
+
 
 Oops again. This remark is actually about #7993. I was looking at both, and got confused.
 
@@ -379,7 +379,7 @@ I hope to fix this while working on #8641.
 archive/issue_comments_069723.json:
 ```json
 {
-    "body": "I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\nThe python docs for `os.system`:\n\n\n```\nOn Unix, the return value is the exit status of the process encoded in\nthe format specified for wait().\n```\n\n\nAnd for `os.wait`:\n\n\n```\nWait for completion of a child process, and return a tuple containing\nits pid and exit status indication: a 16-bit number, whose low byte is\nthe signal number that killed the process, and whose high byte is the\nexit status (if the signal number is zero); the high bit of the low byte\nis set if a core file was produced. Availability: Unix.\n```\n",
+    "body": "I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\nThe python docs for `os.system`:\n\n```\nOn Unix, the return value is the exit status of the process encoded in\nthe format specified for wait().\n```\n\nAnd for `os.wait`:\n\n```\nWait for completion of a child process, and return a tuple containing\nits pid and exit status indication: a 16-bit number, whose low byte is\nthe signal number that killed the process, and whose high byte is the\nexit status (if the signal number is zero); the high bit of the low byte\nis set if a core file was produced. Availability: Unix.\n```",
     "created_at": "2010-04-13T13:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -392,15 +392,12 @@ I tested this, and it worked for me, as well as matching what the python docs sa
 
 The python docs for `os.system`:
 
-
 ```
 On Unix, the return value is the exit status of the process encoded in
 the format specified for wait().
 ```
 
-
 And for `os.wait`:
-
 
 ```
 Wait for completion of a child process, and return a tuple containing
@@ -409,7 +406,6 @@ the signal number that killed the process, and whose high byte is the
 exit status (if the signal number is zero); the high bit of the low byte
 is set if a core file was produced. Availability: Unix.
 ```
-
 
 
 
@@ -436,7 +432,7 @@ See #8641 for a followup.
 archive/issue_comments_069725.json:
 ```json
 {
-    "body": "Replying to [comment:12 wjp]:\n> I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\nNo, it doesn't. I'll work on this more, but I know that, on my Ubuntu 9.10 system, if I ctrl-c while running tests on a bunch of files, it doesn't interrupt the whole process. In sage-test, I have this:\n\n```\nprint 'finished with %s, err: %s' % (F, err)\nerr = err // 256\nprint 'finished with %s, err: %s' % (F, err)\n```\n\nand here's what I get:\n\n```\ndrake@sagenb:~/s/sage-4.3.5$ ./sage -t devel/sage/sage/combinat/t*.py\nsage -t  \"devel/sage/sage/combinat/tableau.py\"              \n^CKeyboardInterrupt -- interrupted after 2.3 seconds!\nfinished with devel/sage/sage/combinat/tableau.py, err: 2\nfinished with devel/sage/sage/combinat/tableau.py, err: 0\n         [2.4 s]\nsage -t  \"devel/sage/sage/combinat/tools.py\"                \nfinished with devel/sage/sage/combinat/tools.py, err: 0\nfinished with devel/sage/sage/combinat/tools.py, err: 0\n         [1.6 s]\nsage -t  \"devel/sage/sage/combinat/tuple.py\"                \nfinished with devel/sage/sage/combinat/tuple.py, err: 0\nfinished with devel/sage/sage/combinat/tuple.py, err: 0\n         [2.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.2 seconds\n```\n\n\nI'm not sure why this isn't working.",
+    "body": "Replying to [comment:12 wjp]:\n> I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\n\nNo, it doesn't. I'll work on this more, but I know that, on my Ubuntu 9.10 system, if I ctrl-c while running tests on a bunch of files, it doesn't interrupt the whole process. In sage-test, I have this:\n\n```\nprint 'finished with %s, err: %s' % (F, err)\nerr = err // 256\nprint 'finished with %s, err: %s' % (F, err)\n```\nand here's what I get:\n\n```\ndrake@sagenb:~/s/sage-4.3.5$ ./sage -t devel/sage/sage/combinat/t*.py\nsage -t  \"devel/sage/sage/combinat/tableau.py\"              \n^CKeyboardInterrupt -- interrupted after 2.3 seconds!\nfinished with devel/sage/sage/combinat/tableau.py, err: 2\nfinished with devel/sage/sage/combinat/tableau.py, err: 0\n         [2.4 s]\nsage -t  \"devel/sage/sage/combinat/tools.py\"                \nfinished with devel/sage/sage/combinat/tools.py, err: 0\nfinished with devel/sage/sage/combinat/tools.py, err: 0\n         [1.6 s]\nsage -t  \"devel/sage/sage/combinat/tuple.py\"                \nfinished with devel/sage/sage/combinat/tuple.py, err: 0\nfinished with devel/sage/sage/combinat/tuple.py, err: 0\n         [2.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.2 seconds\n```\n\nI'm not sure why this isn't working.",
     "created_at": "2010-04-13T22:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -448,6 +444,7 @@ archive/issue_comments_069725.json:
 Replying to [comment:12 wjp]:
 > I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?
 
+
 No, it doesn't. I'll work on this more, but I know that, on my Ubuntu 9.10 system, if I ctrl-c while running tests on a bunch of files, it doesn't interrupt the whole process. In sage-test, I have this:
 
 ```
@@ -455,7 +452,6 @@ print 'finished with %s, err: %s' % (F, err)
 err = err // 256
 print 'finished with %s, err: %s' % (F, err)
 ```
-
 and here's what I get:
 
 ```
@@ -479,7 +475,6 @@ All tests passed!
 Total time for all tests: 6.2 seconds
 ```
 
-
 I'm not sure why this isn't working.
 
 
@@ -489,7 +484,7 @@ I'm not sure why this isn't working.
 archive/issue_comments_069726.json:
 ```json
 {
-    "body": "I put in a few print statements, like Dan did:\n\n```\n    print err,\n    err = err // 256\n    print err\n```\n\nOn my iMac running OS X 10.6, when I hit ctrl-C, I see\n\n```\n515 2\n```\n\nwhich looks okay.\n\nOn sage.math, I see\n\n```\n2 0\n```\n\nwhich doesn't.",
+    "body": "I put in a few print statements, like Dan did:\n\n```\n    print err,\n    err = err // 256\n    print err\n```\nOn my iMac running OS X 10.6, when I hit ctrl-C, I see\n\n```\n515 2\n```\nwhich looks okay.\n\nOn sage.math, I see\n\n```\n2 0\n```\nwhich doesn't.",
     "created_at": "2010-04-13T22:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
@@ -505,13 +500,11 @@ I put in a few print statements, like Dan did:
     err = err // 256
     print err
 ```
-
 On my iMac running OS X 10.6, when I hit ctrl-C, I see
 
 ```
 515 2
 ```
-
 which looks okay.
 
 On sage.math, I see
@@ -519,5 +512,4 @@ On sage.math, I see
 ```
 2 0
 ```
-
 which doesn't.

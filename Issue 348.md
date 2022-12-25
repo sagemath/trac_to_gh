@@ -3,7 +3,7 @@
 archive/issues_000348.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nMy current bioinformatics textbook uses R for all its coding examples,\nand since I wanted to use python/biopython for my course, I tried to\ninstall the R-python interface.  As is often the case with such\nthings, it turned out to be far from self-contained, and I needed a\nwhole bunch of libraries I didn't have (this was on OS X 10.4).  Since\nI am impatient and low on time, I gave up after about 1/2 hour, since\nthere is a very nice R.app for OS X available already and I didn't\nhave any specific connection in mind.  However, it looks like I will\noften have statistics grad students in that course and they might use\nsuch an interface.  So I will give another vote in favor of getting R\ninto sage.  Currently I think sage should appeal to everyone in math\nexcept perhaps math ed and stats folks, and having R included would\nwin over the stats people.\n\n-Marshall Hampton\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/348\n\n",
+    "body": "Assignee: @williamstein\n\n```\nMy current bioinformatics textbook uses R for all its coding examples,\nand since I wanted to use python/biopython for my course, I tried to\ninstall the R-python interface.  As is often the case with such\nthings, it turned out to be far from self-contained, and I needed a\nwhole bunch of libraries I didn't have (this was on OS X 10.4).  Since\nI am impatient and low on time, I gave up after about 1/2 hour, since\nthere is a very nice R.app for OS X available already and I didn't\nhave any specific connection in mind.  However, it looks like I will\noften have statistics grad students in that course and they might use\nsuch an interface.  So I will give another vote in favor of getting R\ninto sage.  Currently I think sage should appeal to everyone in math\nexcept perhaps math ed and stats folks, and having R included would\nwin over the stats people.\n\n-Marshall Hampton\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/348\n\n",
     "created_at": "2007-04-06T19:08:55Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_000348.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 My current bioinformatics textbook uses R for all its coding examples,
@@ -37,7 +36,6 @@ win over the stats people.
 -Marshall Hampton
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/348
 

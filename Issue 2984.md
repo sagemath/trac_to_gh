@@ -3,7 +3,7 @@
 archive/issues_002984.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n20:30 < wstein|afk> See this page: http://kbase.redhat.com/faq/FAQ_105_9111.shtm\n20:30 < wstein|afk> It says \"These messages are informative only. When any application performs an unaligned \n                    access, the processor traps into the kernel and the kernel emulates the unaligned access. \n                    The program will work correctly however there will be a performance hit, as emulating the \n                    unaligned memory access is a software operation and not a hardware operation.\"\n20:30 < mabshoff> ok\n```\n\n\nThis will not be needed once #2209 is done, I hope. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2984\n\n",
+    "body": "Assignee: mabshoff\n\n```\n20:30 < wstein|afk> See this page: http://kbase.redhat.com/faq/FAQ_105_9111.shtm\n20:30 < wstein|afk> It says \"These messages are informative only. When any application performs an unaligned \n                    access, the processor traps into the kernel and the kernel emulates the unaligned access. \n                    The program will work correctly however there will be a performance hit, as emulating the \n                    unaligned memory access is a software operation and not a hardware operation.\"\n20:30 < mabshoff> ok\n```\n\nThis will not be needed once #2209 is done, I hope. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2984\n\n",
     "created_at": "2008-04-21T03:37:37Z",
     "labels": [
         "component: cygwin",
@@ -19,7 +19,6 @@ archive/issues_002984.json:
 ```
 Assignee: mabshoff
 
-
 ```
 20:30 < wstein|afk> See this page: http://kbase.redhat.com/faq/FAQ_105_9111.shtm
 20:30 < wstein|afk> It says "These messages are informative only. When any application performs an unaligned 
@@ -28,7 +27,6 @@ Assignee: mabshoff
                     unaligned memory access is a software operation and not a hardware operation."
 20:30 < mabshoff> ok
 ```
-
 
 This will not be needed once #2209 is done, I hope. 
 

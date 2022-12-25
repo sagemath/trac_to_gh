@@ -3,7 +3,7 @@
 archive/issues_003999.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis will greatly facilitate writing generic code. \n\n\n```\n        sage: from sage.groups.multiplicative_wrapper import MultiplicativeWrapper\n\n        sage: R.<x,y> = ZZ[]\n        sage: G = MultiplicativeWrapper(R)\n        sage: a, b = G(x), G(y)\n        sage: a^2 * b^5 * a\n        (3*x + 5*y)\n        sage: a/b\n        (x - y)\n\n        sage: E = EllipticCurve('37a')\n        sage: P = E([0,0])\n        sage: G = MultiplicativeWrapper(P.parent(), repr_format=None); G\n\n        sage: a = G(P); a\n        (0 : 0 : 1)\n        sage: b = G(5*P); b\n        (1/4 : -5/8 : 1)\n        sage: a^2 * b\n        (-5/9 : 8/27 : 1)\n        sage: 7*P\n        (-5/9 : 8/27 : 1)\n        sage: 10*P == a^10\n        True\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3999\n\n",
+    "body": "Assignee: somebody\n\nThis will greatly facilitate writing generic code. \n\n```\n        sage: from sage.groups.multiplicative_wrapper import MultiplicativeWrapper\n\n        sage: R.<x,y> = ZZ[]\n        sage: G = MultiplicativeWrapper(R)\n        sage: a, b = G(x), G(y)\n        sage: a^2 * b^5 * a\n        (3*x + 5*y)\n        sage: a/b\n        (x - y)\n\n        sage: E = EllipticCurve('37a')\n        sage: P = E([0,0])\n        sage: G = MultiplicativeWrapper(P.parent(), repr_format=None); G\n\n        sage: a = G(P); a\n        (0 : 0 : 1)\n        sage: b = G(5*P); b\n        (1/4 : -5/8 : 1)\n        sage: a^2 * b\n        (-5/9 : 8/27 : 1)\n        sage: 7*P\n        (-5/9 : 8/27 : 1)\n        sage: 10*P == a^10\n        True\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3999\n\n",
     "created_at": "2008-08-30T11:27:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_003999.json:
 Assignee: somebody
 
 This will greatly facilitate writing generic code. 
-
 
 ```
         sage: from sage.groups.multiplicative_wrapper import MultiplicativeWrapper
@@ -49,7 +48,6 @@ This will greatly facilitate writing generic code.
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3999
 
 
@@ -61,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3999
 archive/issue_comments_028665.json:
 ```json
 {
-    "body": "Virtually no overhead: \n\n```\nsage: from sage.groups.multiplicative_wrapper import MultiplicativeWrapper\nsage: R.<x,y> = ZZ[]\nsage: G = MultiplicativeWrapper(R)\nsage: f = R.random_element()\nsage: g = R.random_element()\nsage: timeit(\"2*f + 5*g\")\n625 loops, best of 3: 48.4 \u00b5s per loop\nsage: a = G(f)\nsage: b = G(g)\nsage: timeit(\"a^2 * b^5\")\n625 loops, best of 3: 49 \u00b5s per loop\n```\n",
+    "body": "Virtually no overhead: \n\n```\nsage: from sage.groups.multiplicative_wrapper import MultiplicativeWrapper\nsage: R.<x,y> = ZZ[]\nsage: G = MultiplicativeWrapper(R)\nsage: f = R.random_element()\nsage: g = R.random_element()\nsage: timeit(\"2*f + 5*g\")\n625 loops, best of 3: 48.4 \u00b5s per loop\nsage: a = G(f)\nsage: b = G(g)\nsage: timeit(\"a^2 * b^5\")\n625 loops, best of 3: 49 \u00b5s per loop\n```",
     "created_at": "2008-08-30T11:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -85,7 +83,6 @@ sage: b = G(g)
 sage: timeit("a^2 * b^5")
 625 loops, best of 3: 49 µs per loop
 ```
-
 
 
 
@@ -118,7 +115,7 @@ This is not a negative review, just a non-review.
 archive/issue_comments_028667.json:
 ```json
 {
-    "body": "> I am trying hard to see how this might actually be useful in practice.\n\nThe first thing that comes to mind is the generic discrete log code that you wrote a while back. One then wouldn't have to use the cumbersome (and slower) op(x,y) notation for the group operations to be able to handle both additive (via the wrapper) and multiplicative groups. \n\nI had assumed the implementation of abelian groups was, at its core, additive using Z-modules and all (this seems more natural to me, as well as much more efficient). I'm not sure if this is part of the \"great abelian groups rewrite\" or not, but IMHO I think it should be. I also wrote the patch this direction because (in Sage) additive groups are all abelien (they inherit from modules), and there is a functor from them to generic non-abelien groups but not the other way around. It could also be handy in trying to (formally) implement Z[G] where G is initially presented as an additive group. \n\nTrying to add additive notation to these would be difficult, as they do not inherit from ModuleElement. Were you trying to make it so if I took elements of a multiplicative group (say, a permutation group) and did `a+b` it would instead do `a*b`. I would probably rather have it throw an error in this case. \n\nI could pretty easily write a patch going the other way if you would find it useful (though strange stuff might happen if one tries to use it on non-abelien groups, depending on the assumptions people make throughout the rest of the Sage library).",
+    "body": "> I am trying hard to see how this might actually be useful in practice.\n\n\nThe first thing that comes to mind is the generic discrete log code that you wrote a while back. One then wouldn't have to use the cumbersome (and slower) op(x,y) notation for the group operations to be able to handle both additive (via the wrapper) and multiplicative groups. \n\nI had assumed the implementation of abelian groups was, at its core, additive using Z-modules and all (this seems more natural to me, as well as much more efficient). I'm not sure if this is part of the \"great abelian groups rewrite\" or not, but IMHO I think it should be. I also wrote the patch this direction because (in Sage) additive groups are all abelien (they inherit from modules), and there is a functor from them to generic non-abelien groups but not the other way around. It could also be handy in trying to (formally) implement Z[G] where G is initially presented as an additive group. \n\nTrying to add additive notation to these would be difficult, as they do not inherit from ModuleElement. Were you trying to make it so if I took elements of a multiplicative group (say, a permutation group) and did `a+b` it would instead do `a*b`. I would probably rather have it throw an error in this case. \n\nI could pretty easily write a patch going the other way if you would find it useful (though strange stuff might happen if one tries to use it on non-abelien groups, depending on the assumptions people make throughout the rest of the Sage library).",
     "created_at": "2008-09-02T23:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -128,6 +125,7 @@ archive/issue_comments_028667.json:
 ```
 
 > I am trying hard to see how this might actually be useful in practice.
+
 
 The first thing that comes to mind is the generic discrete log code that you wrote a while back. One then wouldn't have to use the cumbersome (and slower) op(x,y) notation for the group operations to be able to handle both additive (via the wrapper) and multiplicative groups. 
 
@@ -144,7 +142,7 @@ I could pretty easily write a patch going the other way if you would find it use
 archive/issue_comments_028668.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThis bitrotted.  I couldn't apply cleanly because of setup.py being refactored.  I fixed that by hand, but then this wouldn't compile:\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/groups/multiplicative_wrapper.pyx.\nExecute 1 commands (using 1 cpus)\npython2.5 `which cython` --embed-positions --incref-local-binop -I/home/was/build/sage-3.2.1.alpha1/devel/sage-main -o sage/groups/multiplicative_wrapper.c sage/groups/multiplicative_wrapper.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        except:\n            if x == 1:\n                return self.one\n            raise\n            \n    cpdef bint _has_coerce_map_from_(self, S) except -2:\n         ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:113:10: C method '_has_coerce_map_from_' not previously declared in definition part of extension type\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        cdef MultWrapperElement e = <MultWrapperElement>PY_NEW(MultWrapperElement)\n        e._parent = self._parent\n        e._elt = elt\n        return e\n\n    cdef MonoidElement _mul_c_impl(self, MonoidElement right):\n        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:191:9: C method '_mul_c_impl' not previously declared in definition part of extension type\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        return e\n\n    cdef MonoidElement _mul_c_impl(self, MonoidElement right):\n        return self._new(self._elt._add_c((<MultWrapperElement>right)._elt))\n\n    cdef MultiplicativeGroupElement _div_c_impl(self, MultiplicativeGroupElement right):\n        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:194:9: C method '_div_c_impl' not previously declared in definition part of extension type\nParallel build failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n",
+    "body": "REFEREE REPORT:\n\nThis bitrotted.  I couldn't apply cleanly because of setup.py being refactored.  I fixed that by hand, but then this wouldn't compile:\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/groups/multiplicative_wrapper.pyx.\nExecute 1 commands (using 1 cpus)\npython2.5 `which cython` --embed-positions --incref-local-binop -I/home/was/build/sage-3.2.1.alpha1/devel/sage-main -o sage/groups/multiplicative_wrapper.c sage/groups/multiplicative_wrapper.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        except:\n            if x == 1:\n                return self.one\n            raise\n            \n    cpdef bint _has_coerce_map_from_(self, S) except -2:\n         ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:113:10: C method '_has_coerce_map_from_' not previously declared in definition part of extension type\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        cdef MultWrapperElement e = <MultWrapperElement>PY_NEW(MultWrapperElement)\n        e._parent = self._parent\n        e._elt = elt\n        return e\n\n    cdef MonoidElement _mul_c_impl(self, MonoidElement right):\n        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:191:9: C method '_mul_c_impl' not previously declared in definition part of extension type\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        return e\n\n    cdef MonoidElement _mul_c_impl(self, MonoidElement right):\n        return self._new(self._elt._add_c((<MultWrapperElement>right)._elt))\n\n    cdef MultiplicativeGroupElement _div_c_impl(self, MultiplicativeGroupElement right):\n        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.2.1.alpha1/devel/sage-main/sage/groups/multiplicative_wrapper.pyx:194:9: C method '_div_c_impl' not previously declared in definition part of extension type\nParallel build failed with status 256.\nsage: There was an error installing modified sage library code.\n```",
     "created_at": "2008-11-28T21:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -218,7 +216,6 @@ sage: There was an error installing modified sage library code.
 
 
 
-
 ---
 
 archive/issue_comments_028669.json:
@@ -244,7 +241,7 @@ For my purposes, my patch will work fine, for example with elliptic curve groups
 archive/issue_comments_028670.json:
 ```json
 {
-    "body": "The bitrot was due to #4310 and #4175, the patch has been updated. \n\nThre needs to be more doctests. \n\n\n```\nsage/groups/multiplicative_wrapper.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)\n...\n```\n\n\nI'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. \n\nMost of my patch is not about coercion, but anyone doesn't understand how coercion is working I'm the one to blame until I at the very least put out some good documentation.",
+    "body": "The bitrot was due to #4310 and #4175, the patch has been updated. \n\nThre needs to be more doctests. \n\n```\nsage/groups/multiplicative_wrapper.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)\n...\n```\n\nI'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. \n\nMost of my patch is not about coercion, but anyone doesn't understand how coercion is working I'm the one to blame until I at the very least put out some good documentation.",
     "created_at": "2008-12-07T10:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -257,14 +254,12 @@ The bitrot was due to #4310 and #4175, the patch has been updated.
 
 Thre needs to be more doctests. 
 
-
 ```
 sage/groups/multiplicative_wrapper.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
 SCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)
 ...
 ```
-
 
 I'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. 
 
@@ -295,7 +290,7 @@ Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999
 archive/issue_comments_028672.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n> The bitrot was due to #4310 and #4175, the patch has been updated. \n> \n> Thre needs to be more doctests. \n> \n> {{{\n> sage/groups/multiplicative_wrapper.pyx\n> ERROR: Please define a s == loads(dumps(s)) doctest.\n> SCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)\n> ...\n> }}}\n> \n> I'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. \n\nOK, will do.  a+b will not work for multiplicative groups:  it will give a NotImplementedError, while a*b will work.  And vive versa if the group was created as multiplicative (which will be the old, default behaviour).\n\n> \n> Most of my patch is not about coercion, but anyone doesn't understand how coercion is working I'm the one to blame until I at the very least put out some good documentation.",
+    "body": "Replying to [comment:6 robertwb]:\n> The bitrot was due to #4310 and #4175, the patch has been updated. \n> \n> Thre needs to be more doctests. \n> \n> \n> ```\n> sage/groups/multiplicative_wrapper.pyx\n> ERROR: Please define a s == loads(dumps(s)) doctest.\n> SCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)\n> ...\n> ```\n> \n> I'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. \n\n\nOK, will do.  a+b will not work for multiplicative groups:  it will give a NotImplementedError, while a*b will work.  And vive versa if the group was created as multiplicative (which will be the old, default behaviour).\n\n> \n> Most of my patch is not about coercion, but anyone doesn't understand how coercion is working I'm the one to blame until I at the very least put out some good documentation.",
     "created_at": "2008-12-07T13:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
@@ -309,14 +304,16 @@ Replying to [comment:6 robertwb]:
 > 
 > Thre needs to be more doctests. 
 > 
-> {{{
+> 
+> ```
 > sage/groups/multiplicative_wrapper.pyx
 > ERROR: Please define a s == loads(dumps(s)) doctest.
 > SCORE sage/groups/multiplicative_wrapper.pyx: 20% (5 of 24)
 > ...
-> }}}
+> ```
 > 
 > I'll hold off until I see John Cremona's patch. Could you post it, even if it's not done yet? I'm not sure I like the idea of `a+b` just working for any multiplicative group though. 
+
 
 OK, will do.  a+b will not work for multiplicative groups:  it will give a NotImplementedError, while a*b will work.  And vive versa if the group was created as multiplicative (which will be the old, default behaviour).
 

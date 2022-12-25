@@ -3,7 +3,7 @@
 archive/issues_005223.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
+    "body": "Assignee: somebody\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
     "created_at": "2009-02-09T20:03:19Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ sage: timeit('f//389')
 625 loops, best of 3: 228 µs per loop
 ```
 
-
 AFTER:
 
 ```
@@ -38,7 +37,6 @@ sage: f = 389*R.random_element(1000)
 sage: timeit('f//389')
 625 loops, best of 3: 48.3 µs per loop
 ```
-
 
 The bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.
 
@@ -75,7 +73,7 @@ Patch looks good. Fixes obvious mistake on my part. :)
 archive/issue_comments_039951.json:
 ```json
 {
-    "body": "This patch causes the following doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\nsage -t -long \"devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 592:\n    sage: b = a.rshift_coeffs(1); b\nExpected:\n    (O(13^3))*t^2 + (1 + O(13^2))*t + (13 + O(13^5))\nGot:\n    (O(13^3))*t^2 + (9 + 8*13 + O(13^2))*t + (7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 594:\n    sage: b.list()\nExpected:\n    [13 + O(13^5), 1 + O(13^2), O(13^3)]\nGot:\n    [7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4), 9 + 8*13 + O(13^2), O(13^3)]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 596:\n    sage: b = a.rshift_coeffs(2); b\nExpected:\n    (O(13^2))*t^2 + (O(13))*t + (1 + O(13^4))\nGot:\n    (O(13^2))*t^2 + (7 + O(13))*t + (8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 598:\n    sage: b.list()\nExpected:\n    [1 + O(13^4), O(13), O(13^2)]\nGot:\n    [8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4), 7 + O(13), O(13^2)]\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes the following doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\nsage -t -long \"devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 592:\n    sage: b = a.rshift_coeffs(1); b\nExpected:\n    (O(13^3))*t^2 + (1 + O(13^2))*t + (13 + O(13^5))\nGot:\n    (O(13^3))*t^2 + (9 + 8*13 + O(13^2))*t + (7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 594:\n    sage: b.list()\nExpected:\n    [13 + O(13^5), 1 + O(13^2), O(13^3)]\nGot:\n    [7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4), 9 + 8*13 + O(13^2), O(13^3)]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 596:\n    sage: b = a.rshift_coeffs(2); b\nExpected:\n    (O(13^2))*t^2 + (O(13))*t + (1 + O(13^4))\nGot:\n    (O(13^2))*t^2 + (7 + O(13))*t + (8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 598:\n    sage: b.list()\nExpected:\n    [1 + O(13^4), O(13), O(13^2)]\nGot:\n    [8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4), 7 + O(13), O(13^2)]\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T07:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
@@ -119,7 +117,6 @@ Got:
     [8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4), 7 + O(13), O(13^2)]
 **********************************************************************
 ```
-
 
 Cheers,
 

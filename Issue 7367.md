@@ -76,7 +76,7 @@ I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.
 archive/issue_comments_061625.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n\nOf course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.",
+    "body": "Replying to [comment:1 mpatel]:\n> I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n\n\nOf course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.",
     "created_at": "2009-11-01T14:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
@@ -87,6 +87,7 @@ archive/issue_comments_061625.json:
 
 Replying to [comment:1 mpatel]:
 > I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.
+
 
 Of course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.
 
@@ -115,7 +116,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061627.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> Replying to [comment:1 mpatel]:\n> > I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n> \n> Of course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.\n\nDocstring fixes are up at http://trac.sagemath.org/sage_trac/ticket/7384",
+    "body": "Replying to [comment:2 mpatel]:\n> Replying to [comment:1 mpatel]:\n> > I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n\n> \n> Of course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.\n\n\nDocstring fixes are up at http://trac.sagemath.org/sage_trac/ticket/7384",
     "created_at": "2009-11-03T20:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
@@ -127,8 +128,10 @@ archive/issue_comments_061627.json:
 Replying to [comment:2 mpatel]:
 > Replying to [comment:1 mpatel]:
 > > I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.
+
 > 
 > Of course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.
+
 
 Docstring fixes are up at http://trac.sagemath.org/sage_trac/ticket/7384
 

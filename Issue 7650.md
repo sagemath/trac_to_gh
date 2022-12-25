@@ -3,7 +3,7 @@
 archive/issues_007650.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @mwhansen @jasongrout\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @mwhansen @jasongrout\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
     "created_at": "2009-12-10T03:12:15Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ CC:  @williamstein @TimDumol @mwhansen @jasongrout
 ```
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7650
 
@@ -58,7 +57,7 @@ I'm working on a patch for this and whatever other problems I can fix.
 archive/issue_comments_065275.json:
 ```json
 {
-    "body": "\n```python\nsage -t -verbose \"notebook.py\"                              \nTraceback (most recent call last):\n  File \"/home/.sage//tmp/.doctest_notebook.py\", line 18, in <module>\n    from notebook import *\n  File \"/home/.sage/tmp/notebook.py\", line 38, in <module>\n    import css          # style\nImportError: No module named css\n         [2.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"notebook.py\"\nTotal time for all tests: 2.5 seconds\n```\n\n\nAdding\n\n```python\nimport sys\nsys.path.append('/home/sage/notebook/sagenb/sagenb')\nsys.path.append('/home/sage/notebook/sagenb/sagenb/notebook')\n```\n\nto the top of `notebook.py` allows testing to proceed.  I'm not sure about a real solution.",
+    "body": "```python\nsage -t -verbose \"notebook.py\"                              \nTraceback (most recent call last):\n  File \"/home/.sage//tmp/.doctest_notebook.py\", line 18, in <module>\n    from notebook import *\n  File \"/home/.sage/tmp/notebook.py\", line 38, in <module>\n    import css          # style\nImportError: No module named css\n         [2.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"notebook.py\"\nTotal time for all tests: 2.5 seconds\n```\n\nAdding\n\n```python\nimport sys\nsys.path.append('/home/sage/notebook/sagenb/sagenb')\nsys.path.append('/home/sage/notebook/sagenb/sagenb/notebook')\n```\nto the top of `notebook.py` allows testing to proceed.  I'm not sure about a real solution.",
     "created_at": "2009-12-10T03:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -66,7 +65,6 @@ archive/issue_comments_065275.json:
     "user": "https://github.com/qed777"
 }
 ```
-
 
 ```python
 sage -t -verbose "notebook.py"                              
@@ -87,7 +85,6 @@ The following tests failed:
 Total time for all tests: 2.5 seconds
 ```
 
-
 Adding
 
 ```python
@@ -95,7 +92,6 @@ import sys
 sys.path.append('/home/sage/notebook/sagenb/sagenb')
 sys.path.append('/home/sage/notebook/sagenb/sagenb/notebook')
 ```
-
 to the top of `notebook.py` allows testing to proceed.  I'm not sure about a real solution.
 
 
@@ -161,7 +157,7 @@ Changing priority from major to blocker.
 archive/issue_comments_065279.json:
 ```json
 {
-    "body": "Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by @qed777 created at 2009-12-10 11:57:53\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by @qed777 created at 2009-12-10 11:57:53\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
     "created_at": "2009-12-10T11:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -179,7 +175,6 @@ Anyway, with the scripts repository patch, we can do, e.g.,
 ```sh
 $ sage -t --force_lib sagenb/
 ```
-
 With the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.
 
 Remarks:
@@ -215,7 +210,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065281.json:
 ```json
 {
-    "body": "Should we add, e.g., \n\n```sh\nsage -t --force_lib $SAGE_ROOT/local/lib/python/site-packages/sagenb\n```\n\nto `$SAGE_ROOT/makefile`?  Or `sage-test`?",
+    "body": "Should we add, e.g., \n\n```sh\nsage -t --force_lib $SAGE_ROOT/local/lib/python/site-packages/sagenb\n```\nto `$SAGE_ROOT/makefile`?  Or `sage-test`?",
     "created_at": "2009-12-10T12:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -229,7 +224,6 @@ Should we add, e.g.,
 ```sh
 sage -t --force_lib $SAGE_ROOT/local/lib/python/site-packages/sagenb
 ```
-
 to `$SAGE_ROOT/makefile`?  Or `sage-test`?
 
 
@@ -257,7 +251,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065283.json:
 ```json
 {
-    "body": "I like this patch a lot.  However, a nitpick: get rid of the / before tmp here:\n\n```\nSAGE_TESTDIR = os.path.join(DOT_SAGE, \"/tmp\") \n```\n\nLikewise, elsewhere in the patch there are a bunch of os.path.joins combined with explicit* slashes.  \n\nRegarding adding sage -t sagenb, etc., to sage-test or whatever: \"yes!\"",
+    "body": "I like this patch a lot.  However, a nitpick: get rid of the / before tmp here:\n\n```\nSAGE_TESTDIR = os.path.join(DOT_SAGE, \"/tmp\") \n```\nLikewise, elsewhere in the patch there are a bunch of os.path.joins combined with explicit* slashes.  \n\nRegarding adding sage -t sagenb, etc., to sage-test or whatever: \"yes!\"",
     "created_at": "2009-12-10T18:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -271,7 +265,6 @@ I like this patch a lot.  However, a nitpick: get rid of the / before tmp here:
 ```
 SAGE_TESTDIR = os.path.join(DOT_SAGE, "/tmp") 
 ```
-
 Likewise, elsewhere in the patch there are a bunch of os.path.joins combined with explicit* slashes.  
 
 Regarding adding sage -t sagenb, etc., to sage-test or whatever: "yes!"
@@ -731,7 +724,7 @@ Fix interact doctests for 4.3.1.alpha2 (colors.py).  Replaces previous sagenb pa
 archive/issue_comments_065305.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by @TimDumol created at 2010-01-16 21:22:05\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by @TimDumol created at 2010-01-16 21:22:05\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\n\nShouldn't this be put in a new ticket?",
     "created_at": "2010-01-16T21:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -745,6 +738,7 @@ Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/som
 Replying to [comment:17 mpatel]:
 > V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.
 
+
 Shouldn't this be put in a new ticket?
 
 
@@ -754,7 +748,7 @@ Shouldn't this be put in a new ticket?
 archive/issue_comments_065306.json:
 ```json
 {
-    "body": "Yes, but it's already here.  :)  In the course of fixing many failed doctests, I noticed it and a few other small problems:\n\n* In `run_notebook.notebook_twisted`: Replaced `nb.directory()` (not defined) with `nb._dir`.\n* In `worksheet`: Replaced `self.__collaborators` (`AttributeError`) with `self.collaborators()` in a few places.\n* In `worksheet.set_filename`:\n\n```diff\n-        self.__dir = os.path.join(self.notebook().worksheet_directory(), filename)\n+        self.__dir = os.path.join(self.notebook()._dir, filename)\n```\n\n* In `worksheet.tags`:\n\n```diff\n             d = dict(self.__user_view)\n         except AttributeError:\n             self.user_view(self.owner())\n-            d = self.__user_view\n+            d = copy.copy(self.__user_view)\n         for user, val in d.iteritems():\n-            d[user] = [val]\n+            if not isinstance(val, list):\n+                d[user] = [val]\n         return d\n```\n\n This ensures the tests in `Worksheet.reconstruct_from_basic` pass and that calling `tags` does not alter the current user view, e.g., turning `1` into `[1]`.\n\nAlso:\n\n* Removed argument `verbose` (obsolete) from `Cell.set_introspect_html`.",
+    "body": "Yes, but it's already here.  :)  In the course of fixing many failed doctests, I noticed it and a few other small problems:\n\n* In `run_notebook.notebook_twisted`: Replaced `nb.directory()` (not defined) with `nb._dir`.\n* In `worksheet`: Replaced `self.__collaborators` (`AttributeError`) with `self.collaborators()` in a few places.\n* In `worksheet.set_filename`:\n\n```diff\n-        self.__dir = os.path.join(self.notebook().worksheet_directory(), filename)\n+        self.__dir = os.path.join(self.notebook()._dir, filename)\n```\n* In `worksheet.tags`:\n\n```diff\n             d = dict(self.__user_view)\n         except AttributeError:\n             self.user_view(self.owner())\n-            d = self.__user_view\n+            d = copy.copy(self.__user_view)\n         for user, val in d.iteritems():\n-            d[user] = [val]\n+            if not isinstance(val, list):\n+                d[user] = [val]\n         return d\n```\n This ensures the tests in `Worksheet.reconstruct_from_basic` pass and that calling `tags` does not alter the current user view, e.g., turning `1` into `[1]`.\n\nAlso:\n\n* Removed argument `verbose` (obsolete) from `Cell.set_introspect_html`.",
     "created_at": "2010-01-17T14:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
@@ -773,7 +767,6 @@ Yes, but it's already here.  :)  In the course of fixing many failed doctests, I
 -        self.__dir = os.path.join(self.notebook().worksheet_directory(), filename)
 +        self.__dir = os.path.join(self.notebook()._dir, filename)
 ```
-
 * In `worksheet.tags`:
 
 ```diff
@@ -788,7 +781,6 @@ Yes, but it's already here.  :)  In the course of fixing many failed doctests, I
 +                d[user] = [val]
          return d
 ```
-
  This ensures the tests in `Worksheet.reconstruct_from_basic` pass and that calling `tags` does not alter the current user view, e.g., turning `1` into `[1]`.
 
 Also:

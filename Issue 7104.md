@@ -231,7 +231,7 @@ changing to needs work, since it needs to be rebased/redone.
 archive/issue_comments_058699.json:
 ```json
 {
-    "body": "Replying to [comment:7 was]:\n> changing to needs work, since it needs to be rebased/redone. \nPlease see #7367.",
+    "body": "Replying to [comment:7 was]:\n> changing to needs work, since it needs to be rebased/redone. \n\nPlease see #7367.",
     "created_at": "2009-11-12T01:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7104",
     "type": "issue_comment",
@@ -242,6 +242,7 @@ archive/issue_comments_058699.json:
 
 Replying to [comment:7 was]:
 > changing to needs work, since it needs to be rebased/redone. 
+
 Please see #7367.
 
 

@@ -3,7 +3,7 @@
 archive/issues_009640.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime @jdemeyer\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\n\nUsing a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.\n\nDependencies: #9343, #9636\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @jdemeyer\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\nUsing a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.\n\nDependencies: #9343, #9636\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
     "created_at": "2010-07-29T15:47:12Z",
     "labels": [
         "component: interfaces"
@@ -26,7 +26,6 @@ Traceback (most recent call last):
 ...
 PariError:  (15)
 ```
-
 
 Using a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.
 
@@ -279,7 +278,7 @@ The latest patch does everything that I think it should do.  I hope it is reason
 archive/issue_comments_093279.json:
 ```json
 {
-    "body": "Patchbot:\n\n```\napply 9640-pari_error_callbacks.patch\u200b\n```\n",
+    "body": "Patchbot:\n\n```\napply 9640-pari_error_callbacks.patch\u200b\n```",
     "created_at": "2013-09-23T10:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -293,7 +292,6 @@ Patchbot:
 ```
 apply 9640-pari_error_callbacks.patch​
 ```
-
 
 
 
@@ -338,7 +336,7 @@ Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and u
 archive/issue_comments_093282.json:
 ```json
 {
-    "body": "Replying to [comment:12 jdemeyer]:\n> Why not set `cb_pari_handle_exception = _pari_handle_exception` globally and have `pari_catch_sig_on()` simply be **equal** to `sig_on()` (and then of course change `pari_catch_sig_on()` back to `sig_on()`).\nGood question.  That would mean we simply always have PARI exception handling enabled, which would be more efficient and should not make any difference since PARI shouldn't be called outside of `sig_on()/sig_off()` anyway.  I'll try it out.",
+    "body": "Replying to [comment:12 jdemeyer]:\n> Why not set `cb_pari_handle_exception = _pari_handle_exception` globally and have `pari_catch_sig_on()` simply be **equal** to `sig_on()` (and then of course change `pari_catch_sig_on()` back to `sig_on()`).\n\nGood question.  That would mean we simply always have PARI exception handling enabled, which would be more efficient and should not make any difference since PARI shouldn't be called outside of `sig_on()/sig_off()` anyway.  I'll try it out.",
     "created_at": "2013-10-03T10:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -349,6 +347,7 @@ archive/issue_comments_093282.json:
 
 Replying to [comment:12 jdemeyer]:
 > Why not set `cb_pari_handle_exception = _pari_handle_exception` globally and have `pari_catch_sig_on()` simply be **equal** to `sig_on()` (and then of course change `pari_catch_sig_on()` back to `sig_on()`).
+
 Good question.  That would mean we simply always have PARI exception handling enabled, which would be more efficient and should not make any difference since PARI shouldn't be called outside of `sig_on()/sig_off()` anyway.  I'll try it out.
 
 
@@ -378,7 +377,7 @@ Peter, is there any chance you could review #14029 and #13311 because those tick
 archive/issue_comments_093284.json:
 ```json
 {
-    "body": "Replying to [comment:13 jdemeyer]:\n> Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...\nWhy `abort()` and not `raise(SIGUSR1)` or another signal code?",
+    "body": "Replying to [comment:13 jdemeyer]:\n> Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...\n\nWhy `abort()` and not `raise(SIGUSR1)` or another signal code?",
     "created_at": "2013-10-03T10:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -389,6 +388,7 @@ archive/issue_comments_093284.json:
 
 Replying to [comment:13 jdemeyer]:
 > Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...
+
 Why `abort()` and not `raise(SIGUSR1)` or another signal code?
 
 
@@ -416,7 +416,7 @@ I am thinking about merging (parts of) #10018 here, especially the doctests.
 archive/issue_comments_093286.json:
 ```json
 {
-    "body": "Replying to [comment:16 pbruin]:\n> Replying to [comment:13 jdemeyer]:\n> > Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...\n> Why `abort()` and not `raise(SIGUSR1)` or another signal code?\nBecause we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.",
+    "body": "Replying to [comment:16 pbruin]:\n> Replying to [comment:13 jdemeyer]:\n> > Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...\n\n> Why `abort()` and not `raise(SIGUSR1)` or another signal code?\nBecause we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.",
     "created_at": "2013-10-03T10:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -428,6 +428,7 @@ archive/issue_comments_093286.json:
 Replying to [comment:16 pbruin]:
 > Replying to [comment:13 jdemeyer]:
 > > Instead of using `sage_siglongjmp()`, I think it's safer to call `abort()` and use the normal signal handling mechanism. Otherwise we have to consider race conditions like a `SIGINT` arriving during the `sage_siglongjmp()` call...
+
 > Why `abort()` and not `raise(SIGUSR1)` or another signal code?
 Because we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.
 
@@ -438,7 +439,7 @@ Because we already handle `abort()` anyway and because I see no gain of adding a
 archive/issue_comments_093287.json:
 ```json
 {
-    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:16 pbruin]:\n> > Why `abort()` and not `raise(SIGUSR1)` or another signal code?\n> Because we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.\nBut we handle it by raising a new `RuntimeError`, among other things, unless I misunderstand `interrupt.c`.  So wouldn't the `SIGABRT` handler need to have a special case for the case where it is called in this way?  This would be rather inelegant.",
+    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:16 pbruin]:\n> > Why `abort()` and not `raise(SIGUSR1)` or another signal code?\n\n> Because we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.\nBut we handle it by raising a new `RuntimeError`, among other things, unless I misunderstand `interrupt.c`.  So wouldn't the `SIGABRT` handler need to have a special case for the case where it is called in this way?  This would be rather inelegant.",
     "created_at": "2013-10-03T10:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -450,6 +451,7 @@ archive/issue_comments_093287.json:
 Replying to [comment:18 jdemeyer]:
 > Replying to [comment:16 pbruin]:
 > > Why `abort()` and not `raise(SIGUSR1)` or another signal code?
+
 > Because we already handle `abort()` anyway and because I see no gain of adding an extra signal, with the risk that `SIGUSR1` is used by other Sage packages.
 But we handle it by raising a new `RuntimeError`, among other things, unless I misunderstand `interrupt.c`.  So wouldn't the `SIGABRT` handler need to have a special case for the case where it is called in this way?  This would be rather inelegant.
 
@@ -460,7 +462,7 @@ But we handle it by raising a new `RuntimeError`, among other things, unless I m
 archive/issue_comments_093288.json:
 ```json
 {
-    "body": "Replying to [comment:19 pbruin]:\n> This would be rather inelegant.\nI personally don't find it inelegant. In any case, we would encapsalate this through some call like `sig_error()`.",
+    "body": "Replying to [comment:19 pbruin]:\n> This would be rather inelegant.\n\nI personally don't find it inelegant. In any case, we would encapsalate this through some call like `sig_error()`.",
     "created_at": "2013-10-03T10:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -471,6 +473,7 @@ archive/issue_comments_093288.json:
 
 Replying to [comment:19 pbruin]:
 > This would be rather inelegant.
+
 I personally don't find it inelegant. In any case, we would encapsalate this through some call like `sig_error()`.
 
 
@@ -480,7 +483,7 @@ I personally don't find it inelegant. In any case, we would encapsalate this thr
 archive/issue_comments_093289.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Peter, is there any chance you could review #14029 and #13311 because those tickets also make changes to the interrupt code.\nNot very soon, unfortunately (lots of work at the moment), but I'll put my name in the CC list.",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Peter, is there any chance you could review #14029 and #13311 because those tickets also make changes to the interrupt code.\n\nNot very soon, unfortunately (lots of work at the moment), but I'll put my name in the CC list.",
     "created_at": "2013-10-03T20:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -491,6 +494,7 @@ archive/issue_comments_093289.json:
 
 Replying to [comment:15 jdemeyer]:
 > Peter, is there any chance you could review #14029 and #13311 because those tickets also make changes to the interrupt code.
+
 Not very soon, unfortunately (lots of work at the moment), but I'll put my name in the CC list.
 
 
@@ -592,7 +596,7 @@ What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and a
 archive/issue_comments_093295.json:
 ```json
 {
-    "body": "Replying to [comment:28 pbruin]:\n> What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?\nFor me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code). Something like:\n\n```python\ntry:\n    pari.....\nexcept PariError as E:\n    if E.parimessage() == \"division by zero\":\n        raise ZeroDivisionError\n    else:\n        raise\n```\n\nPerhaps this is never going to happen, but at least the method `parimessage()` doesn't hurt either.",
+    "body": "Replying to [comment:28 pbruin]:\n> What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?\n\nFor me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code). Something like:\n\n```python\ntry:\n    pari.....\nexcept PariError as E:\n    if E.parimessage() == \"division by zero\":\n        raise ZeroDivisionError\n    else:\n        raise\n```\nPerhaps this is never going to happen, but at least the method `parimessage()` doesn't hurt either.",
     "created_at": "2013-11-02T20:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -603,6 +607,7 @@ archive/issue_comments_093295.json:
 
 Replying to [comment:28 pbruin]:
 > What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?
+
 For me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code). Something like:
 
 ```python
@@ -614,7 +619,6 @@ except PariError as E:
     else:
         raise
 ```
-
 Perhaps this is never going to happen, but at least the method `parimessage()` doesn't hurt either.
 
 
@@ -624,7 +628,7 @@ Perhaps this is never going to happen, but at least the method `parimessage()` d
 archive/issue_comments_093296.json:
 ```json
 {
-    "body": "Replying to [comment:29 jdemeyer]:\n> Replying to [comment:28 pbruin]:\n> > What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?\n> For me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code).\nThat is a possibility.  On the other hand, the global variable `errmessage` is another thing that has disappeared in PARI 2.6.  It has been replaced by a function `const char *numerr_name(long numerr)` which returns e.g. `\"e_INV\"` for zero division errors.  This means that in the near future your example will probably look like\n\n```python\nif pari.numerr_name(E.errnum()) == \"e_INV\":\n    raise ZeroDivisionError\n```\n\nOf course, one could then think of a method of `PariError` encapsulating this if necessary, but `parimessage` would no longer be an appropriate name.\n\nFor the time being (at least until we switch to PARI 2.6) or unless someone really wants a method like this, I think it is easiest to just remove it.",
+    "body": "Replying to [comment:29 jdemeyer]:\n> Replying to [comment:28 pbruin]:\n> > What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?\n\n> For me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code).\nThat is a possibility.  On the other hand, the global variable `errmessage` is another thing that has disappeared in PARI 2.6.  It has been replaced by a function `const char *numerr_name(long numerr)` which returns e.g. `\"e_INV\"` for zero division errors.  This means that in the near future your example will probably look like\n\n```python\nif pari.numerr_name(E.errnum()) == \"e_INV\":\n    raise ZeroDivisionError\n```\nOf course, one could then think of a method of `PariError` encapsulating this if necessary, but `parimessage` would no longer be an appropriate name.\n\nFor the time being (at least until we switch to PARI 2.6) or unless someone really wants a method like this, I think it is easiest to just remove it.",
     "created_at": "2013-11-03T00:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -636,6 +640,7 @@ archive/issue_comments_093296.json:
 Replying to [comment:29 jdemeyer]:
 > Replying to [comment:28 pbruin]:
 > > What is the use of `PariError.parimessage()`?  It doesn't seem to be used, and appears to normally be a substring of `PariError.__str__()`.  Do you have any application for it in mind, or can it be removed?
+
 > For me, it can be removed. But it existed before (as a function `__errmessage()`) and one possible use would be to check that an error is of a given type without relying on the PARI error codes (for example, in pure Python code).
 That is a possibility.  On the other hand, the global variable `errmessage` is another thing that has disappeared in PARI 2.6.  It has been replaced by a function `const char *numerr_name(long numerr)` which returns e.g. `"e_INV"` for zero division errors.  This means that in the near future your example will probably look like
 
@@ -643,7 +648,6 @@ That is a possibility.  On the other hand, the global variable `errmessage` is a
 if pari.numerr_name(E.errnum()) == "e_INV":
     raise ZeroDivisionError
 ```
-
 Of course, one could then think of a method of `PariError` encapsulating this if necessary, but `parimessage` would no longer be an appropriate name.
 
 For the time being (at least until we switch to PARI 2.6) or unless someone really wants a method like this, I think it is easiest to just remove it.
@@ -711,7 +715,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093300.json:
 ```json
 {
-    "body": "Replying to [comment:32 pbruin]:\n> I'm happy with this now.  Hopefully someone wants to review it.\nSince we both looked at eachother's work, I guess that counts as positive review.",
+    "body": "Replying to [comment:32 pbruin]:\n> I'm happy with this now.  Hopefully someone wants to review it.\n\nSince we both looked at eachother's work, I guess that counts as positive review.",
     "created_at": "2013-11-04T12:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
@@ -722,6 +726,7 @@ archive/issue_comments_093300.json:
 
 Replying to [comment:32 pbruin]:
 > I'm happy with this now.  Hopefully someone wants to review it.
+
 Since we both looked at eachother's work, I guess that counts as positive review.
 
 

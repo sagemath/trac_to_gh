@@ -3,7 +3,7 @@
 archive/issues_008460.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI get this failure on Solaris 10, on SPARC using a modified version of the 4.3.4.alpha0 sources. (All modifications were necessary to get Sage to build). \n\n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 562:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    33\nGot:\n    34\n**********************************************************************\n```\n\n\n\nI'm guessing a bit about the category for his. I'll this if I have chosen the wrong category. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8460\n\n",
+    "body": "Assignee: @williamstein\n\nI get this failure on Solaris 10, on SPARC using a modified version of the 4.3.4.alpha0 sources. (All modifications were necessary to get Sage to build). \n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 562:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    33\nGot:\n    34\n**********************************************************************\n```\n\n\nI'm guessing a bit about the category for his. I'll this if I have chosen the wrong category. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8460\n\n",
     "created_at": "2010-03-06T22:13:05Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 I get this failure on Solaris 10, on SPARC using a modified version of the 4.3.4.alpha0 sources. (All modifications were necessary to get Sage to build). 
 
-
 ```
 **********************************************************************
 File "/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py", line 562:
@@ -31,7 +30,6 @@ Got:
     34
 **********************************************************************
 ```
-
 
 
 I'm guessing a bit about the category for his. I'll this if I have chosen the wrong category. 

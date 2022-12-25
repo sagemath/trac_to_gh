@@ -3,7 +3,7 @@
 archive/issues_007825.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nCC:  drkirkby @williamstein @craigcitro\n\nFreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:\n\n```\ngcc  -o libpari-gmp.so.2.3.3 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -Wl,-shared,-soname=libpari-gmp.so.2 mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o -lc -lm -L/home/peter/sage/sage-4.3/local/lib -lgmp \n/usr/bin/ld: mp.o: relocation R_X86_64_32S can not be used when making a shared object; recompile with -fPIC\nmp.o: could not read symbols: Bad value\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7825\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  drkirkby @williamstein @craigcitro\n\nFreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:\n\n```\ngcc  -o libpari-gmp.so.2.3.3 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -Wl,-shared,-soname=libpari-gmp.so.2 mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o -lc -lm -L/home/peter/sage/sage-4.3/local/lib -lgmp \n/usr/bin/ld: mp.o: relocation R_X86_64_32S can not be used when making a shared object; recompile with -fPIC\nmp.o: could not read symbols: Bad value\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7825\n\n",
     "created_at": "2010-01-03T02:26:54Z",
     "labels": [
         "component: porting: bsd",
@@ -30,7 +30,6 @@ mp.o: could not read symbols: Bad value
 
 Stop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7825
 
@@ -61,7 +60,7 @@ Attachment [7825.pari.patch](tarball://root/attachments/some-uuid/ticket7825/782
 archive/issue_comments_067616.json:
 ```json
 {
-    "body": "Hi Peter, \n\nThank you for cc'ing me. \n\nThe fix looks like it will resolve the FreeBSD issue, but there is an obvious problem with the SPARC platform on that line, as -fPIC will be selected there too, which may not always be appropriate. \n\nIf #7818 gets implemented, it will add a variable FPIC_FLAG which could be set once for any compiler. I don't know if you could change this so spkg-install has something like\n\n\n```\nFPIC_FLAG=-fPIC\n```\n\nthen use $FPIC_FLAG in pari-2.3.3.p5/patches/get_dlcflags. \n\nThat way, it should work today, and with simple removal of the one line from spkg-install, this could work with any compiler. \n\nOh why was there never a standard for compiler flags! Life would be so much easier. \n\nDave",
+    "body": "Hi Peter, \n\nThank you for cc'ing me. \n\nThe fix looks like it will resolve the FreeBSD issue, but there is an obvious problem with the SPARC platform on that line, as -fPIC will be selected there too, which may not always be appropriate. \n\nIf #7818 gets implemented, it will add a variable FPIC_FLAG which could be set once for any compiler. I don't know if you could change this so spkg-install has something like\n\n```\nFPIC_FLAG=-fPIC\n```\nthen use $FPIC_FLAG in pari-2.3.3.p5/patches/get_dlcflags. \n\nThat way, it should work today, and with simple removal of the one line from spkg-install, this could work with any compiler. \n\nOh why was there never a standard for compiler flags! Life would be so much easier. \n\nDave",
     "created_at": "2010-01-03T03:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
@@ -78,11 +77,9 @@ The fix looks like it will resolve the FreeBSD issue, but there is an obvious pr
 
 If #7818 gets implemented, it will add a variable FPIC_FLAG which could be set once for any compiler. I don't know if you could change this so spkg-install has something like
 
-
 ```
 FPIC_FLAG=-fPIC
 ```
-
 then use $FPIC_FLAG in pari-2.3.3.p5/patches/get_dlcflags. 
 
 That way, it should work today, and with simple removal of the one line from spkg-install, this could work with any compiler. 

@@ -3,7 +3,7 @@
 archive/issues_002455.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @ncalexan\n\nAfter the patch was applied:\n\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
+    "body": "Assignee: tba\n\nCC:  @ncalexan\n\nAfter the patch was applied:\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
     "created_at": "2008-03-10T12:07:54Z",
     "labels": [
         "component: documentation",
@@ -22,7 +22,6 @@ CC:  @ncalexan
 
 After the patch was applied:
 
-
 ```
 SCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)
 
@@ -33,7 +32,6 @@ Missing doctests:
          * _macaulay2_(self, macaulay2=None)
          * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)
 ```
-
 
 I cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.
 
@@ -72,7 +70,6 @@ Possibly wrong (function name doesn't occur in doctests):
 
 ----------------------------------------------------------------------
 ```
-
 
 This patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.
 
@@ -217,7 +214,7 @@ I say apply after fixing that Groebner business.
 archive/issue_comments_016588.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncalexan]:\n> This looks good to me, with one major exception: all the Groebner's were changed to \"Gr\u00c3\u00b6bner\" and it doesn't display correctly for me.  I think we should stick to standard transliteration or latex.\n\nThis is a Trac issue. It prints correctly (as \"Gr\u00f6bner\") in my shell, in the reference manual PDF and in the Sage notebook.",
+    "body": "Replying to [comment:3 ncalexan]:\n> This looks good to me, with one major exception: all the Groebner's were changed to \"Gr\u00c3\u00b6bner\" and it doesn't display correctly for me.  I think we should stick to standard transliteration or latex.\n\n\nThis is a Trac issue. It prints correctly (as \"Gr\u00f6bner\") in my shell, in the reference manual PDF and in the Sage notebook.",
     "created_at": "2008-03-12T18:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
@@ -228,6 +225,7 @@ archive/issue_comments_016588.json:
 
 Replying to [comment:3 ncalexan]:
 > This looks good to me, with one major exception: all the Groebner's were changed to "GrÃ¶bner" and it doesn't display correctly for me.  I think we should stick to standard transliteration or latex.
+
 
 This is a Trac issue. It prints correctly (as "Gröbner") in my shell, in the reference manual PDF and in the Sage notebook.
 

@@ -3,7 +3,7 @@
 archive/issues_004279.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t  devel/sage/sage/rings/real_lazy.pyx \n********************************************************************** \nFile \"/Users/mh/Desktop/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549: \n    sage: complex(CLF(-1)^(1/4)) \nExpected: \n    (0.70710678118654757+0.70710678118654746j) \nGot: \n    (0.70710678118654746+0.70710678118654757j) \n*********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4279\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/rings/real_lazy.pyx \n********************************************************************** \nFile \"/Users/mh/Desktop/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549: \n    sage: complex(CLF(-1)^(1/4)) \nExpected: \n    (0.70710678118654757+0.70710678118654746j) \nGot: \n    (0.70710678118654746+0.70710678118654757j) \n*********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4279\n\n",
     "created_at": "2008-10-14T09:42:43Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_004279.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage -t  devel/sage/sage/rings/real_lazy.pyx 
 ********************************************************************** 
@@ -31,7 +30,6 @@ Got:
     (0.70710678118654746+0.70710678118654757j) 
 *********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4279
 
@@ -62,7 +60,7 @@ Changing status from new to assigned.
 archive/issue_comments_031240.json:
 ```json
 {
-    "body": "On a G5 with 10.4 I am seeing the following issue:\n\n```\nsage -t -long devel/sage/sage/rings/real_lazy.pyx           \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549:\n    sage: complex(CLF(-1)^(1/4))\nExpected:\n    (0.70710678118654757+0.70710678118654746j)\nGot:\n    (0.70710678118654746+0.70710678118654757j)\n**********************************************************************\n```\n",
+    "body": "On a G5 with 10.4 I am seeing the following issue:\n\n```\nsage -t -long devel/sage/sage/rings/real_lazy.pyx           \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549:\n    sage: complex(CLF(-1)^(1/4))\nExpected:\n    (0.70710678118654757+0.70710678118654746j)\nGot:\n    (0.70710678118654746+0.70710678118654757j)\n**********************************************************************\n```",
     "created_at": "2008-10-14T11:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4279",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ Got:
     (0.70710678118654746+0.70710678118654757j)
 **********************************************************************
 ```
-
 
 
 

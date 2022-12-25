@@ -3,7 +3,7 @@
 archive/issues_004322.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nKeywords: modular polynomial database\n\nIn 3.1.4, install this optional spkg with\n\n\n```\nsage -i database_kohel-20060803\n```\n\n\nthen \n\n\n```\nsage: DBMP = ClassicalModularPolynomialDatabase()\nsage: DBMP[29]\n<string>:1: Warning: 'with' will become a reserved keyword in Python 2.6\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1683, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.1.4/devel/sage-main/sage/structure/<ipython console> in <module>()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/databases/db_modular_polynomials.pyc in __getitem__(self, level)\n     93             for cff in coeff_list:\n     94                 poly[(cff[0],cff[1])] = Integer(cff[2])\n---> 95         return P(polydict.PolyDict(poly))\n     96 \n     97 class ModularCorrespondenceDatabase(ModularPolynomialDatabase):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:6996)()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3732)()\n    303                         del self._convert_from_list[i]\n    304                         break\n--> 305                 raise\n    306             \n    307         raise TypeError, \"No conversion defined from %s to %s\"%(R, self)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.__call__ (sage/structure/parent.c:3619)()\n    294             try:\n    295                 if no_extra_args:\n--> 296                     return mor._call_(x)\n    297                 else:\n    298                     return mor._call_with_args(x, args, kwds)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2622)()\n     74                 print type(self._codomain), self._codomain\n     75                 print type(self._codomain._element_constructor), self._codomain._element_constructor\n---> 76             raise\n     77 \n     78     cpdef Element _call_with_args(self, x, args=(), kwds={}):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2537)()\n     69     cpdef Element _call_(self, x):\n     70         try:\n---> 71             return self._codomain._element_constructor(x)\n     72         except:\n     73             if print_warnings:\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5688)()\n\nTypeError: unable to coerce <type 'sage.rings.polynomial.polydict.PolyDict'> to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4322\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nKeywords: modular polynomial database\n\nIn 3.1.4, install this optional spkg with\n\n```\nsage -i database_kohel-20060803\n```\n\nthen \n\n```\nsage: DBMP = ClassicalModularPolynomialDatabase()\nsage: DBMP[29]\n<string>:1: Warning: 'with' will become a reserved keyword in Python 2.6\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1683, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.1.4/devel/sage-main/sage/structure/<ipython console> in <module>()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/databases/db_modular_polynomials.pyc in __getitem__(self, level)\n     93             for cff in coeff_list:\n     94                 poly[(cff[0],cff[1])] = Integer(cff[2])\n---> 95         return P(polydict.PolyDict(poly))\n     96 \n     97 class ModularCorrespondenceDatabase(ModularPolynomialDatabase):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:6996)()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3732)()\n    303                         del self._convert_from_list[i]\n    304                         break\n--> 305                 raise\n    306             \n    307         raise TypeError, \"No conversion defined from %s to %s\"%(R, self)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.__call__ (sage/structure/parent.c:3619)()\n    294             try:\n    295                 if no_extra_args:\n--> 296                     return mor._call_(x)\n    297                 else:\n    298                     return mor._call_with_args(x, args, kwds)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2622)()\n     74                 print type(self._codomain), self._codomain\n     75                 print type(self._codomain._element_constructor), self._codomain._element_constructor\n---> 76             raise\n     77 \n     78     cpdef Element _call_with_args(self, x, args=(), kwds={}):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2537)()\n     69     cpdef Element _call_(self, x):\n     70         try:\n---> 71             return self._codomain._element_constructor(x)\n     72         except:\n     73             if print_warnings:\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5688)()\n\nTypeError: unable to coerce <type 'sage.rings.polynomial.polydict.PolyDict'> to an integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4322\n\n",
     "created_at": "2008-10-18T21:43:44Z",
     "labels": [
         "component: optional packages",
@@ -24,14 +24,11 @@ Keywords: modular polynomial database
 
 In 3.1.4, install this optional spkg with
 
-
 ```
 sage -i database_kohel-20060803
 ```
 
-
 then 
-
 
 ```
 sage: DBMP = ClassicalModularPolynomialDatabase()
@@ -87,7 +84,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unable to coerce <type 'sage.rings.polynomial.polydict.PolyDict'> to an integer
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4322
 
@@ -221,7 +217,7 @@ Changing assignee from @robertwb to mabshoff.
 archive/issue_comments_031607.json:
 ```json
 {
-    "body": "Actually, it looks like it's due to #4021, MPolynomial_libsingular over ZZ. It still works in the generic case: \n\n\n```\nsage: P.<x,y> = ZZ['t']['x,y']\nsage: a = sage.rings.polynomial.polydict.PolyDict({(1,0):1,(0,1):-1})\nsage: P(a)\nx - y\n```\n\n\nDespite the fact that polydicts are no longer used, I can't think of any reason why one would need this construction. More efficient (and less prone to breakage in the future is) direct construction from a dict. \n\n\n```\nsage: P.<x,y> = ZZ[]\nsage: P({(1,0):1,(0,1):-1})\nx - y\n```\n",
+    "body": "Actually, it looks like it's due to #4021, MPolynomial_libsingular over ZZ. It still works in the generic case: \n\n```\nsage: P.<x,y> = ZZ['t']['x,y']\nsage: a = sage.rings.polynomial.polydict.PolyDict({(1,0):1,(0,1):-1})\nsage: P(a)\nx - y\n```\n\nDespite the fact that polydicts are no longer used, I can't think of any reason why one would need this construction. More efficient (and less prone to breakage in the future is) direct construction from a dict. \n\n```\nsage: P.<x,y> = ZZ[]\nsage: P({(1,0):1,(0,1):-1})\nx - y\n```",
     "created_at": "2008-10-21T19:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
@@ -232,7 +228,6 @@ archive/issue_comments_031607.json:
 
 Actually, it looks like it's due to #4021, MPolynomial_libsingular over ZZ. It still works in the generic case: 
 
-
 ```
 sage: P.<x,y> = ZZ['t']['x,y']
 sage: a = sage.rings.polynomial.polydict.PolyDict({(1,0):1,(0,1):-1})
@@ -240,16 +235,13 @@ sage: P(a)
 x - y
 ```
 
-
 Despite the fact that polydicts are no longer used, I can't think of any reason why one would need this construction. More efficient (and less prone to breakage in the future is) direct construction from a dict. 
-
 
 ```
 sage: P.<x,y> = ZZ[]
 sage: P({(1,0):1,(0,1):-1})
 x - y
 ```
-
 
 
 

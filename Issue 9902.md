@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098280.json:
 ```json
 {
-    "body": "Hello,\n\nNote that there was already an example at the end of `Integer.is_prime`:\n\n```\nsage: proof.arithmetic()\nTrue\nsage: n = 10^100 + 267\nsage: timeit(\"n.is_prime()\")  # not tested\n5 loops, best of 3: 163 ms per loop\nsage: proof.arithmetic(False)\nsage: proof.arithmetic()\nFalse\nsage: timeit(\"n.is_prime()\")  # not tested\n1000 loops, best of 3: 573 us per loop\n```\n\nWhat about a similar one in `arith.is_prime`\n\n```\nsage: a = 2**2048 + 981\nsage: is_prime(a)    # not tested - takes ~ 1min\nsage: proof.arithmetic(False)\nsage: is_prime(a)    # instantaneous!\nTrue\nsage: proof.arithmetic(True)\n```\n\n\nVincent",
+    "body": "Hello,\n\nNote that there was already an example at the end of `Integer.is_prime`:\n\n```\nsage: proof.arithmetic()\nTrue\nsage: n = 10^100 + 267\nsage: timeit(\"n.is_prime()\")  # not tested\n5 loops, best of 3: 163 ms per loop\nsage: proof.arithmetic(False)\nsage: proof.arithmetic()\nFalse\nsage: timeit(\"n.is_prime()\")  # not tested\n1000 loops, best of 3: 573 us per loop\n```\nWhat about a similar one in `arith.is_prime`\n\n```\nsage: a = 2**2048 + 981\nsage: is_prime(a)    # not tested - takes ~ 1min\nsage: proof.arithmetic(False)\nsage: is_prime(a)    # instantaneous!\nTrue\nsage: proof.arithmetic(True)\n```\n\nVincent",
     "created_at": "2015-04-20T11:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9902",
     "type": "issue_comment",
@@ -94,7 +94,6 @@ False
 sage: timeit("n.is_prime()")  # not tested
 1000 loops, best of 3: 573 us per loop
 ```
-
 What about a similar one in `arith.is_prime`
 
 ```
@@ -105,7 +104,6 @@ sage: is_prime(a)    # instantaneous!
 True
 sage: proof.arithmetic(True)
 ```
-
 
 Vincent
 
@@ -208,7 +206,7 @@ Not sure if you did this intentionally, but tickets without milestone will not b
 archive/issue_comments_098286.json:
 ```json
 {
-    "body": "Replying to [comment:6 vbraun]:\n> Not sure if you did this intentionally, but tickets without milestone will not be merged\n\nNo, I just didn't notice that there was no milestone set. Thanks!",
+    "body": "Replying to [comment:6 vbraun]:\n> Not sure if you did this intentionally, but tickets without milestone will not be merged\n\n\nNo, I just didn't notice that there was no milestone set. Thanks!",
     "created_at": "2015-04-23T06:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9902",
     "type": "issue_comment",
@@ -219,6 +217,7 @@ archive/issue_comments_098286.json:
 
 Replying to [comment:6 vbraun]:
 > Not sure if you did this intentionally, but tickets without milestone will not be merged
+
 
 No, I just didn't notice that there was no milestone set. Thanks!
 
@@ -246,7 +245,7 @@ archive/issue_events_024949.json:
 archive/issue_comments_098287.json:
 ```json
 {
-    "body": "\n```\n sage -t --long src/sage/sets/set_from_iterator.py\n **********************************************************************\n File \"src/sage/sets/set_from_iterator.py\", line 443, in\n sage.sets.set_from_iterator.Decorator._sage_doc_\n Failed example:\n     print sage_getdoc(d)   # indirect doctest\n Expected:\n        Test whether \"self\" is prime.\n     ...\n        IMPLEMENTATION: Calls the PARI \"isprime\" function.\n     <BLANKLINE>\n Got:\n        Test whether \"self\" is prime.\n     <BLANKLINE>\n        INPUT:\n     <BLANKLINE>\n        * \"proof\" -- Boolean or \"None\" (default). If False, use a strong\n          pseudo-primality test (see \"is_pseudoprime()\"). If True, use a\n          provable primality test.  If unset, use the \"default arithmetic\n          proof flag\".\n     <BLANKLINE>\n        Note: Integer primes are by definition *positive*! This is\n          different than Magma, but the same as in PARI. See also the\n          \"is_irreducible()\" method.\n     <BLANKLINE>\n        EXAMPLES:\n     <BLANKLINE>\n           sage: z = 2^31 - 1\n           sage: z.is_prime()\n           True\n           sage: z = 2^31\n           sage: z.is_prime()\n           False\n           sage: z = 7\n           sage: z.is_prime()\n           True\n           sage: z = -7\n           sage: z.is_prime()\n           False\n           sage: z.is_irreducible()\n           True\n     <BLANKLINE>\n           sage: z = 10^80 + 129\n           sage: z.is_prime(proof=False)\n           True\n           sage: z.is_prime(proof=True)\n           True\n     <BLANKLINE>\n        When starting Sage the arithmetic proof flag is True. We can change\n        it to False as follows:\n     <BLANKLINE>\n           sage: proof.arithmetic()\n           True\n           sage: n = 10^100 + 267\n           sage: timeit(\"n.is_prime()\")  # not tested\n           5 loops, best of 3: 163 ms per loop\n           sage: proof.arithmetic(False)\n           sage: proof.arithmetic()\n           False\n           sage: timeit(\"n.is_prime()\")  # not tested\n           1000 loops, best of 3: 573 us per loop\n     <BLANKLINE>\n        ALGORITHM:\n     <BLANKLINE>\n        Calls the PARI \"isprime\" function.\n     <BLANKLINE>\n **********************************************************************\n 1 item had failures:\n    1 of   6 in sage.sets.set_from_iterator.Decorator._sage_doc_\n     [213 tests, 1 failure, 4.14 s]\n```\n",
+    "body": "```\n sage -t --long src/sage/sets/set_from_iterator.py\n **********************************************************************\n File \"src/sage/sets/set_from_iterator.py\", line 443, in\n sage.sets.set_from_iterator.Decorator._sage_doc_\n Failed example:\n     print sage_getdoc(d)   # indirect doctest\n Expected:\n        Test whether \"self\" is prime.\n     ...\n        IMPLEMENTATION: Calls the PARI \"isprime\" function.\n     <BLANKLINE>\n Got:\n        Test whether \"self\" is prime.\n     <BLANKLINE>\n        INPUT:\n     <BLANKLINE>\n        * \"proof\" -- Boolean or \"None\" (default). If False, use a strong\n          pseudo-primality test (see \"is_pseudoprime()\"). If True, use a\n          provable primality test.  If unset, use the \"default arithmetic\n          proof flag\".\n     <BLANKLINE>\n        Note: Integer primes are by definition *positive*! This is\n          different than Magma, but the same as in PARI. See also the\n          \"is_irreducible()\" method.\n     <BLANKLINE>\n        EXAMPLES:\n     <BLANKLINE>\n           sage: z = 2^31 - 1\n           sage: z.is_prime()\n           True\n           sage: z = 2^31\n           sage: z.is_prime()\n           False\n           sage: z = 7\n           sage: z.is_prime()\n           True\n           sage: z = -7\n           sage: z.is_prime()\n           False\n           sage: z.is_irreducible()\n           True\n     <BLANKLINE>\n           sage: z = 10^80 + 129\n           sage: z.is_prime(proof=False)\n           True\n           sage: z.is_prime(proof=True)\n           True\n     <BLANKLINE>\n        When starting Sage the arithmetic proof flag is True. We can change\n        it to False as follows:\n     <BLANKLINE>\n           sage: proof.arithmetic()\n           True\n           sage: n = 10^100 + 267\n           sage: timeit(\"n.is_prime()\")  # not tested\n           5 loops, best of 3: 163 ms per loop\n           sage: proof.arithmetic(False)\n           sage: proof.arithmetic()\n           False\n           sage: timeit(\"n.is_prime()\")  # not tested\n           1000 loops, best of 3: 573 us per loop\n     <BLANKLINE>\n        ALGORITHM:\n     <BLANKLINE>\n        Calls the PARI \"isprime\" function.\n     <BLANKLINE>\n **********************************************************************\n 1 item had failures:\n    1 of   6 in sage.sets.set_from_iterator.Decorator._sage_doc_\n     [213 tests, 1 failure, 4.14 s]\n```",
     "created_at": "2015-04-25T01:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9902",
     "type": "issue_comment",
@@ -254,7 +253,6 @@ archive/issue_comments_098287.json:
     "user": "https://github.com/vbraun"
 }
 ```
-
 
 ```
  sage -t --long src/sage/sets/set_from_iterator.py
@@ -331,7 +329,6 @@ archive/issue_comments_098287.json:
 
 
 
-
 ---
 
 archive/issue_comments_098288.json:
@@ -373,7 +370,7 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 archive/issue_comments_098290.json:
 ```json
 {
-    "body": "Replying to [comment:8 vbraun]:\n> {{{\n>  sage -t --long src/sage/sets/set_from_iterator.py\n>  **********************************************************************\n>  File \"src/sage/sets/set_from_iterator.py\", line 443, in\n> }}}\n\nThanks, fixed.",
+    "body": "Replying to [comment:8 vbraun]:\n> {{{\n>  sage -t --long src/sage/sets/set_from_iterator.py\n>  **********************************************************************\n>  File \"src/sage/sets/set_from_iterator.py\", line 443, in\n> }}}\n\n\nThanks, fixed.",
     "created_at": "2015-04-25T10:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9902",
     "type": "issue_comment",
@@ -388,6 +385,7 @@ Replying to [comment:8 vbraun]:
 >  **********************************************************************
 >  File "src/sage/sets/set_from_iterator.py", line 443, in
 > }}}
+
 
 Thanks, fixed.
 

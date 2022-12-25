@@ -3,7 +3,7 @@
 archive/issues_002599.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Permutation([1,2,3]).to_permutation_group_element()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/<ipython console> in <module>()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/combinat/permutation.py in to_permutation_group_element(self)\n    438         \"\"\"\n    439 \n--> 440         return PermutationGroupElement(self.to_cycles(singletons=False))\n    441 \n    442     def signature(p):\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.gap_format()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2599\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: Permutation([1,2,3]).to_permutation_group_element()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/<ipython console> in <module>()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/combinat/permutation.py in to_permutation_group_element(self)\n    438         \"\"\"\n    439 \n--> 440         return PermutationGroupElement(self.to_cycles(singletons=False))\n    441 \n    442     def signature(p):\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.gap_format()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2599\n\n",
     "created_at": "2008-03-19T18:46:00Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +20,6 @@ archive/issues_002599.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
-
 
 ```
 sage: Permutation([1,2,3]).to_permutation_group_element()
@@ -42,7 +41,6 @@ sage: Permutation([1,2,3]).to_permutation_group_element()
 
 <type 'exceptions.IndexError'>: list index out of range
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2599
 

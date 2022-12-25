@@ -3,7 +3,7 @@
 archive/issues_005932.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
+    "body": "Assignee: @rlmill\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
     "created_at": "2009-04-29T05:21:23Z",
     "labels": [
         "component: graph theory",
@@ -25,7 +25,6 @@ Returns a random d-regular graph on n vertices, or returns False on
 failure.
 ```
 
-
 However, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:
 
 ```
@@ -35,7 +34,6 @@ Graph on 0 vertices
 sage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)
 232
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5932
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5932
 archive/issue_comments_046824.json:
 ```json
 {
-    "body": "This is a bug in NetworkX. Their docstring says:\n\n\n```\nDefinition:     networkx.random_regular_graph(d, n, seed=None)\nSource:\ndef random_regular_graph(d, n, seed=None):\n    \"\"\"Return a random regular graph of n nodes each with degree d, G_{n,d}.\n    Return False if unsuccessful.\n```\n",
+    "body": "This is a bug in NetworkX. Their docstring says:\n\n```\nDefinition:     networkx.random_regular_graph(d, n, seed=None)\nSource:\ndef random_regular_graph(d, n, seed=None):\n    \"\"\"Return a random regular graph of n nodes each with degree d, G_{n,d}.\n    Return False if unsuccessful.\n```",
     "created_at": "2009-04-29T16:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5932",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ archive/issue_comments_046824.json:
 
 This is a bug in NetworkX. Their docstring says:
 
-
 ```
 Definition:     networkx.random_regular_graph(d, n, seed=None)
 Source:
@@ -68,7 +65,6 @@ def random_regular_graph(d, n, seed=None):
     """Return a random regular graph of n nodes each with degree d, G_{n,d}.
     Return False if unsuccessful.
 ```
-
 
 
 

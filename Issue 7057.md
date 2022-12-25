@@ -3,7 +3,7 @@
 archive/issues_007057.json:
 ```json
 {
-    "body": "Assignee: tbd\n\ncliquer seems one seriously messed up package! Under some circumstances (see #6852) it can fail to build as it can't find the Sun C compiler cc. On other occasions, it can build with gcc, even though CC is set to the Sun compiler. \n\nIn the example below, CC was set to the Sun compiler, but cliquer uses gcc instead!\n\n\n```\ncliquer-1.2/.hg/undo.dirstate\ncliquer-1.2/SConstruct\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Building targets ...\ngcc -o src/cl.pic.o -c -fPIC src/cl.c\ngcc -o src/cliquer.pic.o -c -fPIC src/cliquer.c\ngcc -o src/graph.pic.o -c -fPIC src/graph.c\ngcc -o src/reorder.pic.o -c -fPIC src/reorder.c\ngcc -G -o libcliquer.so src/cl.pic.o src/cliquer.pic.o src/graph.pic.o src/reorder.pic.o\nInstall file: \"libcliquer.so\" as \"Build/libcliquer.so\"\nscons: done building targets.\n\nreal    0m7.963s\nuser    0m5.668s\nsys     0m1.410s\nSuccessfully installed cliquer-1.2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7057\n\n",
+    "body": "Assignee: tbd\n\ncliquer seems one seriously messed up package! Under some circumstances (see #6852) it can fail to build as it can't find the Sun C compiler cc. On other occasions, it can build with gcc, even though CC is set to the Sun compiler. \n\nIn the example below, CC was set to the Sun compiler, but cliquer uses gcc instead!\n\n```\ncliquer-1.2/.hg/undo.dirstate\ncliquer-1.2/SConstruct\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Building targets ...\ngcc -o src/cl.pic.o -c -fPIC src/cl.c\ngcc -o src/cliquer.pic.o -c -fPIC src/cliquer.c\ngcc -o src/graph.pic.o -c -fPIC src/graph.c\ngcc -o src/reorder.pic.o -c -fPIC src/reorder.c\ngcc -G -o libcliquer.so src/cl.pic.o src/cliquer.pic.o src/graph.pic.o src/reorder.pic.o\nInstall file: \"libcliquer.so\" as \"Build/libcliquer.so\"\nscons: done building targets.\n\nreal    0m7.963s\nuser    0m5.668s\nsys     0m1.410s\nSuccessfully installed cliquer-1.2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7057\n\n",
     "created_at": "2009-09-28T21:11:04Z",
     "labels": [
         "component: porting: solaris",
@@ -21,7 +21,6 @@ Assignee: tbd
 cliquer seems one seriously messed up package! Under some circumstances (see #6852) it can fail to build as it can't find the Sun C compiler cc. On other occasions, it can build with gcc, even though CC is set to the Sun compiler. 
 
 In the example below, CC was set to the Sun compiler, but cliquer uses gcc instead!
-
 
 ```
 cliquer-1.2/.hg/undo.dirstate
@@ -53,7 +52,6 @@ user    0m5.668s
 sys     0m1.410s
 Successfully installed cliquer-1.2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7057
 

@@ -3,7 +3,7 @@
 archive/issues_008632.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\na sage (4.3.3) notebook shows the correct picture of\n\n\n```\nplot(x^2-5,(x,0,5),ymin=0)\n```\n\n\n\nThe save method ignores the ymin parameter:\n\n\n```\nplot(x^2-5,(x,0,5),ymin=0).save(\"/tmp/test.png\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8632\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\na sage (4.3.3) notebook shows the correct picture of\n\n```\nplot(x^2-5,(x,0,5),ymin=0)\n```\n\n\nThe save method ignores the ymin parameter:\n\n```\nplot(x^2-5,(x,0,5),ymin=0).save(\"/tmp/test.png\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8632\n\n",
     "created_at": "2010-03-30T17:12:08Z",
     "labels": [
         "component: graphics",
@@ -22,20 +22,16 @@ CC:  @kcrisman
 
 a sage (4.3.3) notebook shows the correct picture of
 
-
 ```
 plot(x^2-5,(x,0,5),ymin=0)
 ```
 
 
-
 The save method ignores the ymin parameter:
-
 
 ```
 plot(x^2-5,(x,0,5),ymin=0).save("/tmp/test.png")
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8632
 
@@ -193,7 +189,7 @@ Also, what exactly should the test do? How do I verify that images from `show` a
 archive/issue_comments_078150.json:
 ```json
 {
-    "body": "Replying to [comment:5 novoselt]:\n> Could you please remind me what is the usual temp directory for Sage?\nSee line 1732 of your patch for #7981 ;-)  - `kwds.setdefault('filename', sage.misc.misc.tmp_filename() + '.png') `\n> Also, what exactly should the test do? How do I verify that images from `show` and `save` are the same? It seems like a waste of time on tests if it is only checked that these commands don't raise an exception - they were working before as well, just not as they should.\nSadly, we can't do that yet.  (Matplotlib apparently does do this with Nose, but we don't have the capability yet.)   Partly this could be useful for the future day when we CAN check things like this...\n\nBut for now the point is that at least someone can visually verify that there is a different min than $y=-5$ if they care to look.  We want to document that we have done something about the particular one. \n\nAlternately, you could try to ask a release manager to close this as a duplicate of #7981.  Personally, I think it would be worth adding an example to the save documentation that one can choose to either put the commands in `.save(foo=bar)` or to pass it one from `plot(f,foo=bar)`; that could be useful for a complete newbie to the code to see, so that they don't have to follow code around.",
+    "body": "Replying to [comment:5 novoselt]:\n> Could you please remind me what is the usual temp directory for Sage?\n\nSee line 1732 of your patch for #7981 ;-)  - `kwds.setdefault('filename', sage.misc.misc.tmp_filename() + '.png') `\n> Also, what exactly should the test do? How do I verify that images from `show` and `save` are the same? It seems like a waste of time on tests if it is only checked that these commands don't raise an exception - they were working before as well, just not as they should.\n\nSadly, we can't do that yet.  (Matplotlib apparently does do this with Nose, but we don't have the capability yet.)   Partly this could be useful for the future day when we CAN check things like this...\n\nBut for now the point is that at least someone can visually verify that there is a different min than $y=-5$ if they care to look.  We want to document that we have done something about the particular one. \n\nAlternately, you could try to ask a release manager to close this as a duplicate of #7981.  Personally, I think it would be worth adding an example to the save documentation that one can choose to either put the commands in `.save(foo=bar)` or to pass it one from `plot(f,foo=bar)`; that could be useful for a complete newbie to the code to see, so that they don't have to follow code around.",
     "created_at": "2011-01-13T17:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8632",
     "type": "issue_comment",
@@ -204,8 +200,10 @@ archive/issue_comments_078150.json:
 
 Replying to [comment:5 novoselt]:
 > Could you please remind me what is the usual temp directory for Sage?
+
 See line 1732 of your patch for #7981 ;-)  - `kwds.setdefault('filename', sage.misc.misc.tmp_filename() + '.png') `
 > Also, what exactly should the test do? How do I verify that images from `show` and `save` are the same? It seems like a waste of time on tests if it is only checked that these commands don't raise an exception - they were working before as well, just not as they should.
+
 Sadly, we can't do that yet.  (Matplotlib apparently does do this with Nose, but we don't have the capability yet.)   Partly this could be useful for the future day when we CAN check things like this...
 
 But for now the point is that at least someone can visually verify that there is a different min than $y=-5$ if they care to look.  We want to document that we have done something about the particular one. 
@@ -441,7 +439,7 @@ Just FYI - still applies fine on 4.6.2.alpha0.
 archive/issue_comments_078163.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> Just FYI - still applies fine on 4.6.2.alpha0.\n\nActually, it doesn't:\n\n```\npatching file sage/plot/plot.py\nHunk #1 FAILED at 2394.\n1 out of 1 hunk FAILED -- saving rejects to file sage/plot/plot.py.rej\n```\n",
+    "body": "Replying to [comment:14 kcrisman]:\n> Just FYI - still applies fine on 4.6.2.alpha0.\n\n\nActually, it doesn't:\n\n```\npatching file sage/plot/plot.py\nHunk #1 FAILED at 2394.\n1 out of 1 hunk FAILED -- saving rejects to file sage/plot/plot.py.rej\n```",
     "created_at": "2011-01-19T01:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8632",
     "type": "issue_comment",
@@ -453,6 +451,7 @@ archive/issue_comments_078163.json:
 Replying to [comment:14 kcrisman]:
 > Just FYI - still applies fine on 4.6.2.alpha0.
 
+
 Actually, it doesn't:
 
 ```
@@ -460,7 +459,6 @@ patching file sage/plot/plot.py
 Hunk #1 FAILED at 2394.
 1 out of 1 hunk FAILED -- saving rejects to file sage/plot/plot.py.rej
 ```
-
 
 
 

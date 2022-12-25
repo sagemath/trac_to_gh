@@ -3,7 +3,7 @@
 archive/issues_004980.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSomewhere we should note the standard way to deal with getting the indices from a slice object is\n\n\n```\nrange(*s.indices(size))\n```\n\n\nwhere s is our slice and size is the size of the object we are applying the slice to.  See #4974 for lots of other information and discussion of various ways to do this, converging on the above simply standard python.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4980\n\n",
+    "body": "Assignee: tba\n\nSomewhere we should note the standard way to deal with getting the indices from a slice object is\n\n```\nrange(*s.indices(size))\n```\n\nwhere s is our slice and size is the size of the object we are applying the slice to.  See #4974 for lots of other information and discussion of various ways to do this, converging on the above simply standard python.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4980\n\n",
     "created_at": "2009-01-15T06:12:26Z",
     "labels": [
         "component: documentation",
@@ -20,11 +20,9 @@ Assignee: tba
 
 Somewhere we should note the standard way to deal with getting the indices from a slice object is
 
-
 ```
 range(*s.indices(size))
 ```
-
 
 where s is our slice and size is the size of the object we are applying the slice to.  See #4974 for lots of other information and discussion of various ways to do this, converging on the above simply standard python.
 

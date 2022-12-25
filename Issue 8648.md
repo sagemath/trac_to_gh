@@ -3,7 +3,7 @@
 archive/issues_008648.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: element constructor\n\nGeneric __call__ function for parents has a default value for its first argument. This prevents from making a difference between A() and A(0). This causes problems for crystal code, where the typical input is A(2,1,4,3,0,...). For example:\n\n\n```\n    sage: T = CrystalOfTableaux(['B',3], shape=[3])\n    sage: t=T(1,2,0)\n    sage: t\n    [[1, 2, 0]]\n\n    sage: T = CrystalOfTableaux(['B',3], shape=[])\n    sage: t=T()\n    sage: t     # goes boom\n    sage: t._list # this list should be empty\n    [0]\n```\n\n\nSuggestion: self.__call__() could instead call right away self._element_constructor_().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8648\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: element constructor\n\nGeneric __call__ function for parents has a default value for its first argument. This prevents from making a difference between A() and A(0). This causes problems for crystal code, where the typical input is A(2,1,4,3,0,...). For example:\n\n```\n    sage: T = CrystalOfTableaux(['B',3], shape=[3])\n    sage: t=T(1,2,0)\n    sage: t\n    [[1, 2, 0]]\n\n    sage: T = CrystalOfTableaux(['B',3], shape=[])\n    sage: t=T()\n    sage: t     # goes boom\n    sage: t._list # this list should be empty\n    [0]\n```\n\nSuggestion: self.__call__() could instead call right away self._element_constructor_().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8648\n\n",
     "created_at": "2010-04-03T15:34:28Z",
     "labels": [
         "component: coercion",
@@ -23,7 +23,6 @@ Keywords: element constructor
 
 Generic __call__ function for parents has a default value for its first argument. This prevents from making a difference between A() and A(0). This causes problems for crystal code, where the typical input is A(2,1,4,3,0,...). For example:
 
-
 ```
     sage: T = CrystalOfTableaux(['B',3], shape=[3])
     sage: t=T(1,2,0)
@@ -36,7 +35,6 @@ Generic __call__ function for parents has a default value for its first argument
     sage: t._list # this list should be empty
     [0]
 ```
-
 
 Suggestion: self.__call__() could instead call right away self._element_constructor_().
 
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8648
 archive/issue_comments_078333.json:
 ```json
 {
-    "body": "An alternate suggestion: in CrystalOfTableaux define\n\n\n```\n\n    def __call__(self, x=[], *args, **kwds):\n        return Parent.__call__(self, x, *args, **kwds)\n\n```\n",
+    "body": "An alternate suggestion: in CrystalOfTableaux define\n\n```\n\n    def __call__(self, x=[], *args, **kwds):\n        return Parent.__call__(self, x, *args, **kwds)\n\n```",
     "created_at": "2010-10-16T23:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
@@ -63,14 +61,12 @@ archive/issue_comments_078333.json:
 
 An alternate suggestion: in CrystalOfTableaux define
 
-
 ```
 
     def __call__(self, x=[], *args, **kwds):
         return Parent.__call__(self, x, *args, **kwds)
 
 ```
-
 
 
 
@@ -97,7 +93,7 @@ Oh, I see.  The issue is that the generic call is constructing a morphism from t
 archive/issue_comments_078335.json:
 ```json
 {
-    "body": "Hi David!\n\nThanks for your feedback!\n\nReplying to [comment:2 roed]:\n> Oh, I see.  The issue is that the generic call is constructing a morphism from the parent of x, and so x can't be non-existent.  You may need to just completely override the generic `Parent.__call__`.  \n\nI'd rather not duplicate that rather technical code :-) And still we want to benefit from coercion ... \n\nDo you see an inconvenient to the first approach suggested?",
+    "body": "Hi David!\n\nThanks for your feedback!\n\nReplying to [comment:2 roed]:\n> Oh, I see.  The issue is that the generic call is constructing a morphism from the parent of x, and so x can't be non-existent.  You may need to just completely override the generic `Parent.__call__`.  \n\n\nI'd rather not duplicate that rather technical code :-) And still we want to benefit from coercion ... \n\nDo you see an inconvenient to the first approach suggested?",
     "created_at": "2010-10-20T20:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
@@ -113,6 +109,7 @@ Thanks for your feedback!
 Replying to [comment:2 roed]:
 > Oh, I see.  The issue is that the generic call is constructing a morphism from the parent of x, and so x can't be non-existent.  You may need to just completely override the generic `Parent.__call__`.  
 
+
 I'd rather not duplicate that rather technical code :-) And still we want to benefit from coercion ... 
 
 Do you see an inconvenient to the first approach suggested?
@@ -124,7 +121,7 @@ Do you see an inconvenient to the first approach suggested?
 archive/issue_comments_078336.json:
 ```json
 {
-    "body": "I think the \n\n\n```\n    def __call__(self, x=[], *args, **kwds):\n        return Parent.__call__(self, x, *args, **kwds)\n```\n\n\napproach is probably the best.  I had to do this recently when converting some old code to use the new `Parent.__call__`.",
+    "body": "I think the \n\n```\n    def __call__(self, x=[], *args, **kwds):\n        return Parent.__call__(self, x, *args, **kwds)\n```\n\napproach is probably the best.  I had to do this recently when converting some old code to use the new `Parent.__call__`.",
     "created_at": "2010-10-20T20:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
@@ -135,12 +132,10 @@ archive/issue_comments_078336.json:
 
 I think the 
 
-
 ```
     def __call__(self, x=[], *args, **kwds):
         return Parent.__call__(self, x, *args, **kwds)
 ```
-
 
 approach is probably the best.  I had to do this recently when converting some old code to use the new `Parent.__call__`.
 

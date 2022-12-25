@@ -3,7 +3,7 @@
 archive/issues_003936.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jakobkroeker\n\nIt is impossible to have Python's universal comparison and have mathematically sound meaning to comparison. Transitivity and/or other properties have to cave at some point.\n\nOne example:\n\n```\nsage: L=[int(0),None,1,int(2),3]\nsage: L.sort()\nsage: L\n[1, None, 0, 2, 3]\nsage: L[0]<L[2]\nFalse\n```\n\nWould it be at all feasible to throw exceptions on non-sensical comparisons, such as 1 > None ?\n`**` instead of `^` seems pretty mild compared to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3936\n\n",
+    "body": "Assignee: tbd\n\nCC:  jakobkroeker\n\nIt is impossible to have Python's universal comparison and have mathematically sound meaning to comparison. Transitivity and/or other properties have to cave at some point.\n\nOne example:\n\n```\nsage: L=[int(0),None,1,int(2),3]\nsage: L.sort()\nsage: L\n[1, None, 0, 2, 3]\nsage: L[0]<L[2]\nFalse\n```\nWould it be at all feasible to throw exceptions on non-sensical comparisons, such as 1 > None ?\n`**` instead of `^` seems pretty mild compared to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3936\n\n",
     "created_at": "2008-08-23T20:08:58Z",
     "labels": [
         "component: algebra",
@@ -32,7 +32,6 @@ sage: L
 sage: L[0]<L[2]
 False
 ```
-
 Would it be at all feasible to throw exceptions on non-sensical comparisons, such as 1 > None ?
 `**` instead of `^` seems pretty mild compared to this.
 

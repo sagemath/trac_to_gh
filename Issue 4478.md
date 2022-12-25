@@ -3,7 +3,7 @@
 archive/issues_004478.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
+    "body": "Assignee: @timabbott\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
     "created_at": "2008-11-09T08:13:11Z",
     "labels": [
         "component: debian-package",
@@ -32,7 +32,6 @@ dasource ./sage-2.10.1
 sbuildhack "$DEBIAN_RELEASE" *.dsc
 echo "Debian Build complete"
 ```
-
 
 See for example the "sage-2.10.1"
 
@@ -101,7 +100,7 @@ Changing status from new to assigned.
 archive/issue_comments_033015.json:
 ```json
 {
-    "body": "This needs some careful fix, i.e. the file exists in two places:\n\n```\n./local/bin/spkg-debian-maybe\n./devel/sage-main/spkg-debian-maybe\n```\n\nBut it is also referred to in two places:\n\n```\ndevel/sage-main/setup.py\ndevel/sage-main/spkg-dist\n```\n\n\nCheers,\n\nMichael",
+    "body": "This needs some careful fix, i.e. the file exists in two places:\n\n```\n./local/bin/spkg-debian-maybe\n./devel/sage-main/spkg-debian-maybe\n```\nBut it is also referred to in two places:\n\n```\ndevel/sage-main/setup.py\ndevel/sage-main/spkg-dist\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-10T04:14:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
@@ -116,14 +115,12 @@ This needs some careful fix, i.e. the file exists in two places:
 ./local/bin/spkg-debian-maybe
 ./devel/sage-main/spkg-debian-maybe
 ```
-
 But it is also referred to in two places:
 
 ```
 devel/sage-main/setup.py
 devel/sage-main/spkg-dist
 ```
-
 
 Cheers,
 

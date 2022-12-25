@@ -3,7 +3,7 @@
 archive/issues_004102.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach\n\nThe motivation for this is\n\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n\n```\nsage: polylog(1,x),(x,.1,.9) #makes a fine plot\n```\n\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach\n\nThe motivation for this is\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n```\nsage: polylog(1,x),(x,.1,.9) #makes a fine plot\n```\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
     "created_at": "2008-09-12T01:06:09Z",
     "labels": [
         "component: calculus"
@@ -21,7 +21,6 @@ CC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach
 
 The motivation for this is
 
-
 ```
 sage: plot(bessel_J(1, x), (x, 1, 10))
 Traceback (most recent call last):
@@ -29,14 +28,11 @@ Traceback (most recent call last):
 TypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.
 ```
 
-
 The problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot
-
 
 ```
 sage: polylog(1,x),(x,.1,.9) #makes a fine plot
 ```
-
 
 See discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5
 
@@ -125,7 +121,7 @@ See #3426 and #4230 for other tickets related to bessel functions. It would make
 archive/issue_comments_029543.json:
 ```json
 {
-    "body": "See also #10636, which I somehow never saw before.  [This sage-support thread](https://groups.google.com/forum/?fromgroups=#!topic/sage-support/XzpN97E26qQ) yields an interesting related error:\n\n```\nsage: var('k')\nk\nsage: Z = sum( ((-1)^k*(x^(2*k+1))/factorial(2*k+1)),k,0,oo)\nsage: Z\n1/2*sqrt(pi)*sqrt(2)*sqrt(x)*bessel_j(1/2, x)\nsage: Z(x=3)\n1/2*sqrt(pi)*sqrt(2)*sqrt(3)*bessel_j(1/2, 3)\nsage: Z(x=3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage.symbolic.expression.Expression._numerical_approx (sage/symbolic/expression.cpp:20822)()\n\nTypeError: cannot evaluate symbolic expression numerically\nsage: besse\nbessel_I  bessel_J  bessel_K  bessel_Y  \n```\n\nNote that we apparently aren't yet converting Maxima's Bessel properly to 'our' uppercase version because of this.",
+    "body": "See also #10636, which I somehow never saw before.  [This sage-support thread](https://groups.google.com/forum/?fromgroups=#!topic/sage-support/XzpN97E26qQ) yields an interesting related error:\n\n```\nsage: var('k')\nk\nsage: Z = sum( ((-1)^k*(x^(2*k+1))/factorial(2*k+1)),k,0,oo)\nsage: Z\n1/2*sqrt(pi)*sqrt(2)*sqrt(x)*bessel_j(1/2, x)\nsage: Z(x=3)\n1/2*sqrt(pi)*sqrt(2)*sqrt(3)*bessel_j(1/2, 3)\nsage: Z(x=3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage.symbolic.expression.Expression._numerical_approx (sage/symbolic/expression.cpp:20822)()\n\nTypeError: cannot evaluate symbolic expression numerically\nsage: besse\nbessel_I  bessel_J  bessel_K  bessel_Y  \n```\nNote that we apparently aren't yet converting Maxima's Bessel properly to 'our' uppercase version because of this.",
     "created_at": "2012-09-16T03:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -154,7 +150,6 @@ TypeError: cannot evaluate symbolic expression numerically
 sage: besse
 bessel_I  bessel_J  bessel_K  bessel_Y  
 ```
-
 Note that we apparently aren't yet converting Maxima's Bessel properly to 'our' uppercase version because of this.
 
 
@@ -190,7 +185,7 @@ What new names do people like in the interim?
 archive/issue_comments_029545.json:
 ```json
 {
-    "body": "Replying to [comment:8 benjaminfjones]:\n> What new names do people like in the interim? \n> \n>  * `bessel_J_symbolic`\n>  * `bessel_J_sym`\n>  * `bessel_Js`\n> \n> ???\n\nWhat is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?\n\n\nThanks for looking into this.",
+    "body": "Replying to [comment:8 benjaminfjones]:\n> What new names do people like in the interim? \n> \n> * `bessel_J_symbolic`\n> * `bessel_J_sym`\n> * `bessel_Js`\n> \n> ???\n\n\nWhat is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?\n\n\nThanks for looking into this.",
     "created_at": "2012-10-03T11:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -202,11 +197,12 @@ archive/issue_comments_029545.json:
 Replying to [comment:8 benjaminfjones]:
 > What new names do people like in the interim? 
 > 
->  * `bessel_J_symbolic`
->  * `bessel_J_sym`
->  * `bessel_Js`
+> * `bessel_J_symbolic`
+> * `bessel_J_sym`
+> * `bessel_Js`
 > 
 > ???
+
 
 What is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?
 
@@ -220,7 +216,7 @@ Thanks for looking into this.
 archive/issue_comments_029546.json:
 ```json
 {
-    "body": "> What is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?\nI concur.\n> >  * `bessel_J_symbolic`\nOne could use that as the \"symbolic\" class one and then do the usual `foo = Foo_Class()`?\n> Thanks for looking into this.\nAgreed!",
+    "body": "> What is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?\n\nI concur.\n> >  * `bessel_J_symbolic`\n \nOne could use that as the \"symbolic\" class one and then do the usual `foo = Foo_Class()`?\n> Thanks for looking into this.\n\nAgreed!",
     "created_at": "2012-10-03T14:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -230,10 +226,13 @@ archive/issue_comments_029546.json:
 ```
 
 > What is wrong with taking over `bessel_{I,J,K,Y}`? Why do we need interim names?
+
 I concur.
 > >  * `bessel_J_symbolic`
+ 
 One could use that as the "symbolic" class one and then do the usual `foo = Foo_Class()`?
 > Thanks for looking into this.
+
 Agreed!
 
 
@@ -243,7 +242,7 @@ Agreed!
 archive/issue_comments_029547.json:
 ```json
 {
-    "body": "Replying to [comment:8 benjaminfjones]:\n> What new names do people like in the interim? \n\nI agree with Burcin: just use `bessel_J` (etc) if possible.\n\nBut regardless of the name, I'd love to see this get in -- it will make teaching a PDE class a bit easier. (No more `lambda` expressions in the plots...) Thanks for working on this!",
+    "body": "Replying to [comment:8 benjaminfjones]:\n> What new names do people like in the interim? \n\n\nI agree with Burcin: just use `bessel_J` (etc) if possible.\n\nBut regardless of the name, I'd love to see this get in -- it will make teaching a PDE class a bit easier. (No more `lambda` expressions in the plots...) Thanks for working on this!",
     "created_at": "2012-10-03T16:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -254,6 +253,7 @@ archive/issue_comments_029547.json:
 
 Replying to [comment:8 benjaminfjones]:
 > What new names do people like in the interim? 
+
 
 I agree with Burcin: just use `bessel_J` (etc) if possible.
 
@@ -368,7 +368,7 @@ BTW, I suggest moving this code to a new file `sage/functions/bessel.py`.
 archive/issue_comments_029552.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n\nThanks for the comments. I finally found some time to get back to this ticket :) \n\n> Nice!  A few comments of the type you solicited:\n>  * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n\nThat was intentional, I was trying not to shadow the builtin name.\n\n>  * I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n\nI think `f(x) = Bessel(0,x)` is better, I don't like `x` being implicit on the right hand side.\n\n>  * `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n\nGood question, I haven't tested it out. I think I'm going to rewrite most of the code anyway so I'll keep this in mind.\n\n>  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n\n???\n\n>  * At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n\nGood point, I'll make sure to doctest the exceptions.\n\n>  * `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n\nI don't know about this. I had this in the case of the single parameter functions like `Bessel(1,'K')` that Maxima doesn't have equivalents for (it just has the two parameter functions). I think I'll scrap the idea of having all infinitely many one-parameter Bessel functions registered as their own symbolic functions (see Burcin's comments below).\n\n>  * How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\n\nIdeally all of them. Some will need to be modified because of the change in numerical back-end.\n\n> Anyway, clearly a lot of planning and looks very promising!",
+    "body": "Replying to [comment:13 kcrisman]:\n\nThanks for the comments. I finally found some time to get back to this ticket :) \n\n> Nice!  A few comments of the type you solicited:\n> * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n\n\nThat was intentional, I was trying not to shadow the builtin name.\n\n>  * I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n\n\nI think `f(x) = Bessel(0,x)` is better, I don't like `x` being implicit on the right hand side.\n\n>  * `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n\n\nGood question, I haven't tested it out. I think I'm going to rewrite most of the code anyway so I'll keep this in mind.\n\n>  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n\n\n???\n\n>  * At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n\n\nGood point, I'll make sure to doctest the exceptions.\n\n>  * `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n\n\nI don't know about this. I had this in the case of the single parameter functions like `Bessel(1,'K')` that Maxima doesn't have equivalents for (it just has the two parameter functions). I think I'll scrap the idea of having all infinitely many one-parameter Bessel functions registered as their own symbolic functions (see Burcin's comments below).\n\n>  * How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\n\n\nIdeally all of them. Some will need to be modified because of the change in numerical back-end.\n\n> Anyway, clearly a lot of planning and looks very promising!",
     "created_at": "2012-12-27T20:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -382,31 +382,38 @@ Replying to [comment:13 kcrisman]:
 Thanks for the comments. I finally found some time to get back to this ticket :) 
 
 > Nice!  A few comments of the type you solicited:
->  * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.
+> * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.
+
 
 That was intentional, I was trying not to shadow the builtin name.
 
 >  * I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.
 
+
 I think `f(x) = Bessel(0,x)` is better, I don't like `x` being implicit on the right hand side.
 
 >  * `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to "our" uppercase Bessel functions?
+
 
 Good question, I haven't tested it out. I think I'm going to rewrite most of the code anyway so I'll keep this in mind.
 
 >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.
 
+
 ???
 
 >  * At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.
+
 
 Good point, I'll make sure to doctest the exceptions.
 
 >  * `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.
 
+
 I don't know about this. I had this in the case of the single parameter functions like `Bessel(1,'K')` that Maxima doesn't have equivalents for (it just has the two parameter functions). I think I'll scrap the idea of having all infinitely many one-parameter Bessel functions registered as their own symbolic functions (see Burcin's comments below).
 
 >  * How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?
+
 
 Ideally all of them. Some will need to be modified because of the change in numerical back-end.
 
@@ -419,7 +426,7 @@ Ideally all of them. Some will need to be modified because of the change in nume
 archive/issue_comments_029553.json:
 ```json
 {
-    "body": "Replying to [comment:14 burcin]:\n\nThanks for looking at it!\n\n> Thanks for the patch. Bessel functions are symbolic with so few lines of code. Amazing. :)\n> \n> I like the metaclass idea. That never occured to me before as an option for functions with parameters, like the order here. I have a few questions:\n> \n>  - what is the advantage of creating a new symbolic function for each (type, order) pair, instead of having a generic function for each type that takes the order as a parameter? The latter would be similar to the design of the `psi()` function in GiNaC/Pynac.\n\nThe advantage I had in mind was just code reuse. In hindsight though, this approach makes the code more complicated and less maintainable that it needs to be. I'm going to refactor it into four generic functions in `sage/functions/bessel.py` as you suggest.\n\n>  - wouldn't this approach make life harder if in the future we want to add exact evaluation method for Bessel_J only?\n\nGood point.. \n\n> I am also concerned about blowing up the symbolic function registry with these instances. Note that we keep an entry in a C++ list with a pointer to all the possible custom methods, and a Python dictionary with a function -> Pynac id mapping for each subclass of `BuiltinFunction` that is instantiated.\n\nAlso a good point. This occurred to me, but I didn't think through the consequences very much. I can see it being a problem if a user can inadvertently create a very large number of symbolic functions at runtime by doing something innocuous like:\n\n\n```\nsage: point([ (k, Bessel(k, 'J')(pi)) for k in range(1000) ])\n... (1000 new symbolic function classes created!)\n```\n\n\n\n> BTW, I suggest moving this code to a new file `sage/functions/bessel.py`.\n\nGood idea. New patch coming soon...",
+    "body": "Replying to [comment:14 burcin]:\n\nThanks for looking at it!\n\n> Thanks for the patch. Bessel functions are symbolic with so few lines of code. Amazing. :)\n> \n> I like the metaclass idea. That never occured to me before as an option for functions with parameters, like the order here. I have a few questions:\n> \n> - what is the advantage of creating a new symbolic function for each (type, order) pair, instead of having a generic function for each type that takes the order as a parameter? The latter would be similar to the design of the `psi()` function in GiNaC/Pynac.\n\n\nThe advantage I had in mind was just code reuse. In hindsight though, this approach makes the code more complicated and less maintainable that it needs to be. I'm going to refactor it into four generic functions in `sage/functions/bessel.py` as you suggest.\n\n>  - wouldn't this approach make life harder if in the future we want to add exact evaluation method for Bessel_J only?\n\n\nGood point.. \n\n> I am also concerned about blowing up the symbolic function registry with these instances. Note that we keep an entry in a C++ list with a pointer to all the possible custom methods, and a Python dictionary with a function -> Pynac id mapping for each subclass of `BuiltinFunction` that is instantiated.\n\n\nAlso a good point. This occurred to me, but I didn't think through the consequences very much. I can see it being a problem if a user can inadvertently create a very large number of symbolic functions at runtime by doing something innocuous like:\n\n```\nsage: point([ (k, Bessel(k, 'J')(pi)) for k in range(1000) ])\n... (1000 new symbolic function classes created!)\n```\n\n\n> BTW, I suggest moving this code to a new file `sage/functions/bessel.py`.\n\n\nGood idea. New patch coming soon...",
     "created_at": "2012-12-27T20:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -436,18 +443,20 @@ Thanks for looking at it!
 > 
 > I like the metaclass idea. That never occured to me before as an option for functions with parameters, like the order here. I have a few questions:
 > 
->  - what is the advantage of creating a new symbolic function for each (type, order) pair, instead of having a generic function for each type that takes the order as a parameter? The latter would be similar to the design of the `psi()` function in GiNaC/Pynac.
+> - what is the advantage of creating a new symbolic function for each (type, order) pair, instead of having a generic function for each type that takes the order as a parameter? The latter would be similar to the design of the `psi()` function in GiNaC/Pynac.
+
 
 The advantage I had in mind was just code reuse. In hindsight though, this approach makes the code more complicated and less maintainable that it needs to be. I'm going to refactor it into four generic functions in `sage/functions/bessel.py` as you suggest.
 
 >  - wouldn't this approach make life harder if in the future we want to add exact evaluation method for Bessel_J only?
 
+
 Good point.. 
 
 > I am also concerned about blowing up the symbolic function registry with these instances. Note that we keep an entry in a C++ list with a pointer to all the possible custom methods, and a Python dictionary with a function -> Pynac id mapping for each subclass of `BuiltinFunction` that is instantiated.
 
-Also a good point. This occurred to me, but I didn't think through the consequences very much. I can see it being a problem if a user can inadvertently create a very large number of symbolic functions at runtime by doing something innocuous like:
 
+Also a good point. This occurred to me, but I didn't think through the consequences very much. I can see it being a problem if a user can inadvertently create a very large number of symbolic functions at runtime by doing something innocuous like:
 
 ```
 sage: point([ (k, Bessel(k, 'J')(pi)) for k in range(1000) ])
@@ -455,8 +464,8 @@ sage: point([ (k, Bessel(k, 'J')(pi)) for k in range(1000) ])
 ```
 
 
-
 > BTW, I suggest moving this code to a new file `sage/functions/bessel.py`.
+
 
 Good idea. New patch coming soon...
 
@@ -467,7 +476,7 @@ Good idea. New patch coming soon...
 archive/issue_comments_029554.json:
 ```json
 {
-    "body": "> >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n> \n> ???\n\nSuch as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces \"naturally\" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)",
+    "body": "> >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n \n> \n> ???\n\n\nSuch as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces \"naturally\" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)",
     "created_at": "2012-12-27T20:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -477,8 +486,10 @@ archive/issue_comments_029554.json:
 ```
 
 > >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.
+ 
 > 
 > ???
+
 
 Such as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces "naturally" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)
 
@@ -489,7 +500,7 @@ Such as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and 
 archive/issue_comments_029555.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n> > >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n> > \n> > ???\n> \n> Such as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces \"naturally\" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)\n\nOh, right. I just didn't see what in the code you were referring to. I see now.\n\nAnyway, to one of your earlier questions, with the new code I'm about to post the following conversions to and from Maxima work great:\n\n\n```\nsage: mb = maxima(bessel_I(1,x))\nsage: mb.sage()                 \nbessel_I(1, x)\nsage:  x,y = var('x,y')\nsage:  f = maxima(Bessel(typ='K')(x,y))\nsage: f.derivative('x')\n%pi*csc(%pi*x)*('diff(bessel_i(-x,y),x,1)-'diff(bessel_i(x,y),x,1))/2-%pi*bessel_k(x,y)*cot(%pi*x)\nsage: m = f.derivative('x')\nsage: m.sage()\n-1/2*(x*bessel_I(-x, y)/y - x*bessel_I(x, y)/y + bessel_I(-x - 1, y) + bessel_I(x - 1, y))*pi*csc(pi*x) - pi*cot(pi*x)*bessel_K(x, y)\n```\n",
+    "body": "Replying to [comment:17 kcrisman]:\n> > >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n \n> > \n> > ???\n\n> \n> Such as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces \"naturally\" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)\n\n\nOh, right. I just didn't see what in the code you were referring to. I see now.\n\nAnyway, to one of your earlier questions, with the new code I'm about to post the following conversions to and from Maxima work great:\n\n```\nsage: mb = maxima(bessel_I(1,x))\nsage: mb.sage()                 \nbessel_I(1, x)\nsage:  x,y = var('x,y')\nsage:  f = maxima(Bessel(typ='K')(x,y))\nsage: f.derivative('x')\n%pi*csc(%pi*x)*('diff(bessel_i(-x,y),x,1)-'diff(bessel_i(x,y),x,1))/2-%pi*bessel_k(x,y)*cot(%pi*x)\nsage: m = f.derivative('x')\nsage: m.sage()\n-1/2*(x*bessel_I(-x, y)/y - x*bessel_I(x, y)/y + bessel_I(-x - 1, y) + bessel_I(x - 1, y))*pi*csc(pi*x) - pi*cot(pi*x)*bessel_K(x, y)\n```",
     "created_at": "2012-12-27T23:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -500,15 +511,17 @@ archive/issue_comments_029555.json:
 
 Replying to [comment:17 kcrisman]:
 > > >  * Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.
+ 
 > > 
 > > ???
+
 > 
 > Such as [this](http://docs.python.org/3.1/library/stdtypes.html#str.format) and [this](http://docs.python.org/3.1/library/string.html#formatstrings).  Just for forward-compatibility (instead of the percent business).  Problem is that when I looked for ways to get around braces "naturally" occurring in LaTeX, there weren't necessarily a lot of them.  (Ways, that is.)
+
 
 Oh, right. I just didn't see what in the code you were referring to. I see now.
 
 Anyway, to one of your earlier questions, with the new code I'm about to post the following conversions to and from Maxima work great:
-
 
 ```
 sage: mb = maxima(bessel_I(1,x))
@@ -522,7 +535,6 @@ sage: m = f.derivative('x')
 sage: m.sage()
 -1/2*(x*bessel_I(-x, y)/y - x*bessel_I(x, y)/y + bessel_I(-x - 1, y) + bessel_I(x - 1, y))*pi*csc(pi*x) - pi*cot(pi*x)*bessel_K(x, y)
 ```
-
 
 
 
@@ -679,7 +691,7 @@ Changing status from new to needs_review.
 archive/issue_comments_029563.json:
 ```json
 {
-    "body": "Here's the only failures I got with 5.7.beta3.\n\n```\nsage -t  \"devel/sage-main/sage/calculus/desolvers.py\"       \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/calculus/desolvers.py\", line 252:\n    sage: desolve(x^2*diff(y,x,x)+x*diff(y,x)+(x^2-4)*y==0,y)\nExpected:\n    k1*bessel_j(2, x) + k2*bessel_y(2, x)\nGot:\n    k1*bessel_J(2, x) + k2*bessel_Y(2, x)\n**********************************************************************\n1 items had failures:\n   1 of  62 in __main__.example_1\n***Test Failed*** 1 failures.\n\t [10.1 s]\n```\n\nHmm, should we keep the lowercase versions around, or was that actually an error that we never parsed those?  Apparently it was pure Maxima output, looking at the old code, so just replace with the actual return value.\n\n```\nsage -t  \"devel/sage-main/sage/calculus/wester.py\"          \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/calculus/wester.py\", line 39:\n    sage: bessel_J (2, 1+I)\nExpected:\n    0.0415798869439621 + 0.247397641513306*I\nGot:\n    bessel_J(2, I + 1)\n**********************************************************************\n1 items had failures:\n   1 of 200 in __main__.example_0\n***Test Failed*** 1 failures.\n\t [4.4 s]\n```\n\nEasy enough to fix - we could even add the `n()` version there.  Actually, we probably should, since the test is probably testing for something - we'll have to just read that quick.\n\n```\nsage -t  \"devel/sage-main/sage/functions/special.py\"        \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/functions/special.py\", line 521:\n    sage: n(bessel_J(3,10,\"maxima\"))\nException raised:\n    Traceback (most recent call last):\n    sage: n(bessel_J(3,10,\"maxima\"))\n      File \"function.pyx\", line 354, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3976)\n    TypeError: Symbolic function bessel_J takes exactly 2 arguments (3 given)\n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/functions/special.py\", line 536:\n    sage: n(bessel_J(3,10,\"maxima\"))\nException raised:\n        n(bessel_J(Integer(3),Integer(10),\"maxima\"))###line 536:\n    sage: n(bessel_J(3,10,\"maxima\"))\n      File \"function.pyx\", line 354, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3976)\n    TypeError: Symbolic function bessel_J takes exactly 2 arguments (3 given)\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_8\n   1 of   5 in __main__.example_9\n***Test Failed*** 2 failures.\n\t [3.8 s]\n```\n\nHmm, here is where that potential deprecation I mentioned might come in.\n\n```\nsage -t  \"devel/sage-main/sage/symbolic/random_tests.py\"    \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/symbolic/random_tests.py\", line 236:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\nException raised:\n<snip>\n      File \"misc.pyx\", line 209, in sage.structure.misc.getattr_from_other_class (sage/structure/misc.c:1488)\n    AttributeError: 'sage.rings.complex_interval.ComplexIntervalFieldElement' object has no attribute 'arcsin'\n**********************************************************************\n```\n\nApparently the usual craziness with random expression has reached new heights with these extra functions.   I suggest we just try a different seed or something.  Not every random expression will be meaningful, for instance.",
+    "body": "Here's the only failures I got with 5.7.beta3.\n\n```\nsage -t  \"devel/sage-main/sage/calculus/desolvers.py\"       \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/calculus/desolvers.py\", line 252:\n    sage: desolve(x^2*diff(y,x,x)+x*diff(y,x)+(x^2-4)*y==0,y)\nExpected:\n    k1*bessel_j(2, x) + k2*bessel_y(2, x)\nGot:\n    k1*bessel_J(2, x) + k2*bessel_Y(2, x)\n**********************************************************************\n1 items had failures:\n   1 of  62 in __main__.example_1\n***Test Failed*** 1 failures.\n\t [10.1 s]\n```\nHmm, should we keep the lowercase versions around, or was that actually an error that we never parsed those?  Apparently it was pure Maxima output, looking at the old code, so just replace with the actual return value.\n\n```\nsage -t  \"devel/sage-main/sage/calculus/wester.py\"          \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/calculus/wester.py\", line 39:\n    sage: bessel_J (2, 1+I)\nExpected:\n    0.0415798869439621 + 0.247397641513306*I\nGot:\n    bessel_J(2, I + 1)\n**********************************************************************\n1 items had failures:\n   1 of 200 in __main__.example_0\n***Test Failed*** 1 failures.\n\t [4.4 s]\n```\nEasy enough to fix - we could even add the `n()` version there.  Actually, we probably should, since the test is probably testing for something - we'll have to just read that quick.\n\n```\nsage -t  \"devel/sage-main/sage/functions/special.py\"        \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/functions/special.py\", line 521:\n    sage: n(bessel_J(3,10,\"maxima\"))\nException raised:\n    Traceback (most recent call last):\n    sage: n(bessel_J(3,10,\"maxima\"))\n      File \"function.pyx\", line 354, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3976)\n    TypeError: Symbolic function bessel_J takes exactly 2 arguments (3 given)\n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/functions/special.py\", line 536:\n    sage: n(bessel_J(3,10,\"maxima\"))\nException raised:\n        n(bessel_J(Integer(3),Integer(10),\"maxima\"))###line 536:\n    sage: n(bessel_J(3,10,\"maxima\"))\n      File \"function.pyx\", line 354, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3976)\n    TypeError: Symbolic function bessel_J takes exactly 2 arguments (3 given)\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_8\n   1 of   5 in __main__.example_9\n***Test Failed*** 2 failures.\n\t [3.8 s]\n```\nHmm, here is where that potential deprecation I mentioned might come in.\n\n```\nsage -t  \"devel/sage-main/sage/symbolic/random_tests.py\"    \n**********************************************************************\nFile \"/Users/.../sage-5.7.beta3/devel/sage-main/sage/symbolic/random_tests.py\", line 236:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\nException raised:\n<snip>\n      File \"misc.pyx\", line 209, in sage.structure.misc.getattr_from_other_class (sage/structure/misc.c:1488)\n    AttributeError: 'sage.rings.complex_interval.ComplexIntervalFieldElement' object has no attribute 'arcsin'\n**********************************************************************\n```\nApparently the usual craziness with random expression has reached new heights with these extra functions.   I suggest we just try a different seed or something.  Not every random expression will be meaningful, for instance.",
     "created_at": "2013-02-08T18:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -705,7 +717,6 @@ Got:
 ***Test Failed*** 1 failures.
 	 [10.1 s]
 ```
-
 Hmm, should we keep the lowercase versions around, or was that actually an error that we never parsed those?  Apparently it was pure Maxima output, looking at the old code, so just replace with the actual return value.
 
 ```
@@ -723,7 +734,6 @@ Got:
 ***Test Failed*** 1 failures.
 	 [4.4 s]
 ```
-
 Easy enough to fix - we could even add the `n()` version there.  Actually, we probably should, since the test is probably testing for something - we'll have to just read that quick.
 
 ```
@@ -751,7 +761,6 @@ Exception raised:
 ***Test Failed*** 2 failures.
 	 [3.8 s]
 ```
-
 Hmm, here is where that potential deprecation I mentioned might come in.
 
 ```
@@ -765,7 +774,6 @@ Exception raised:
     AttributeError: 'sage.rings.complex_interval.ComplexIntervalFieldElement' object has no attribute 'arcsin'
 **********************************************************************
 ```
-
 Apparently the usual craziness with random expression has reached new heights with these extra functions.   I suggest we just try a different seed or something.  Not every random expression will be meaningful, for instance.
 
 
@@ -816,7 +824,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_029566.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n\nThanks for looking over the patch!\n\n> Dumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n>  * `unqiue` typo\n>  * `Verfify` typo\n>  * `increasin` typo\n>  * I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n\nFixed, it was a one space indentation problem.\n\n>  * Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n\nI was unsure about this. I think now it makes most sense to just stick with I_\\alpha when in a math block.\n\n>  * ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n>  * Trac tickets should use `:trac:` syntax\n>  * Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n\nThe way the code works you have to specify the variable on the right hand side, e.g.:\n\n\n```\nsage: f(x) = Bessel(0)(x)\nsage: f(x) = bessel_I(0, x)\n```\n\n\nThis is because `Bessel()` returns lambda functions under the hood. Personally, I prefer having the variable dependence made explicit, but I'm open to suggestions if there are other\nways you can think of to get that functionality.\n\n>  * Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n\nI'll work on Bessel Y and K, I realize now that you mention it that I didn't fill in the definitions there :). Anyone with good doctest suggestions for these is welcome to chime in, I'll add the tests if you can think of interesting or relevant ones.\n\n>  * I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n\nYep, you're right.\n\n>  * How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n\nThis is a question that's been troubling me. I don't know how to make the deprecation happen and make progress here without renaming the new functions and then swapping them in when the deprecation period is over. The infrastructure we have for adding symbolic functions (inheriting from `BuiltinFunction`, etc) doesn't support any kind of system arguments without overriding `call()`.\n\nAt least existing code that uses the Bessel functions as they are now in Sage won't break unless they explicitly use the system argument.\n\nMaybe `@`burcin has a suggestion here?\n\n>  * I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n\nGood point, I'll see what I can salvage.\n\n>  * The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...\n\nIt doesn't make a difference to me, I used alpha because that's what's on the wikipedia page :) Abramowitz & Stegun uses n or \\nu and so does the mpmath documentation. I can easily switch \\alpha to \\nu with some editor-fu.",
+    "body": "Replying to [comment:22 kcrisman]:\n\nThanks for looking over the patch!\n\n> Dumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n> * `unqiue` typo\n> * `Verfify` typo\n> * `increasin` typo\n> * I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n\n\nFixed, it was a one space indentation problem.\n\n>  * Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n\n\nI was unsure about this. I think now it makes most sense to just stick with I_\\alpha when in a math block.\n\n>  * ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n>  * Trac tickets should use `:trac:` syntax\n>  * Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n\n\nThe way the code works you have to specify the variable on the right hand side, e.g.:\n\n```\nsage: f(x) = Bessel(0)(x)\nsage: f(x) = bessel_I(0, x)\n```\n\nThis is because `Bessel()` returns lambda functions under the hood. Personally, I prefer having the variable dependence made explicit, but I'm open to suggestions if there are other\nways you can think of to get that functionality.\n\n>  * Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n\n\nI'll work on Bessel Y and K, I realize now that you mention it that I didn't fill in the definitions there :). Anyone with good doctest suggestions for these is welcome to chime in, I'll add the tests if you can think of interesting or relevant ones.\n\n>  * I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n\n\nYep, you're right.\n\n>  * How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n\n\nThis is a question that's been troubling me. I don't know how to make the deprecation happen and make progress here without renaming the new functions and then swapping them in when the deprecation period is over. The infrastructure we have for adding symbolic functions (inheriting from `BuiltinFunction`, etc) doesn't support any kind of system arguments without overriding `call()`.\n\nAt least existing code that uses the Bessel functions as they are now in Sage won't break unless they explicitly use the system argument.\n\nMaybe `@`burcin has a suggestion here?\n\n>  * I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n\n\nGood point, I'll see what I can salvage.\n\n>  * The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...\n\n\nIt doesn't make a difference to me, I used alpha because that's what's on the wikipedia page :) Abramowitz & Stegun uses n or \\nu and so does the mpmath documentation. I can easily switch \\alpha to \\nu with some editor-fu.",
     "created_at": "2013-02-13T07:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -830,14 +838,16 @@ Replying to [comment:22 kcrisman]:
 Thanks for looking over the patch!
 
 > Dumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.
->  * `unqiue` typo
->  * `Verfify` typo
->  * `increasin` typo
->  * I don't know why, but the math following "It follows from Bessel's..." doesn't look right in the doc (the `:math:` directive is not parsed)
+> * `unqiue` typo
+> * `Verfify` typo
+> * `increasin` typo
+> * I don't know why, but the math following "It follows from Bessel's..." doesn't look right in the doc (the `:math:` directive is not parsed)
+
 
 Fixed, it was a one space indentation problem.
 
 >  * Is \operatorname{bessel\_I}(\alpha, x) standard or should we just just the I sub whatever?
+
 
 I was unsure about this. I think now it makes most sense to just stick with I_\alpha when in a math block.
 
@@ -845,27 +855,29 @@ I was unsure about this. I think now it makes most sense to just stick with I_\a
 >  * Trac tickets should use `:trac:` syntax
 >  * Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...
 
-The way the code works you have to specify the variable on the right hand side, e.g.:
 
+The way the code works you have to specify the variable on the right hand side, e.g.:
 
 ```
 sage: f(x) = Bessel(0)(x)
 sage: f(x) = bessel_I(0, x)
 ```
 
-
 This is because `Bessel()` returns lambda functions under the hood. Personally, I prefer having the variable dependence made explicit, but I'm open to suggestions if there are other
 ways you can think of to get that functionality.
 
 >  * Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again
 
+
 I'll work on Bessel Y and K, I realize now that you mention it that I didn't fill in the definitions there :). Anyone with good doctest suggestions for these is welcome to chime in, I'll add the tests if you can think of interesting or relevant ones.
 
 >  * I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.
 
+
 Yep, you're right.
 
 >  * How should we deal with the removal of the `"maxima"` and `"pari"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.
+
 
 This is a question that's been troubling me. I don't know how to make the deprecation happen and make progress here without renaming the new functions and then swapping them in when the deprecation period is over. The infrastructure we have for adding symbolic functions (inheriting from `BuiltinFunction`, etc) doesn't support any kind of system arguments without overriding `call()`.
 
@@ -875,9 +887,11 @@ Maybe `@`burcin has a suggestion here?
 
 >  * I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.
 
+
 Good point, I'll see what I can salvage.
 
 >  * The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...
+
 
 It doesn't make a difference to me, I used alpha because that's what's on the wikipedia page :) Abramowitz & Stegun uses n or \nu and so does the mpmath documentation. I can easily switch \alpha to \nu with some editor-fu.
 
@@ -972,7 +986,7 @@ Some additional notes regarding your comments, `@`kcrisman:
 archive/issue_comments_029571.json:
 ```json
 {
-    "body": "Nice work.  I do feel like we should ask on sage-devel about deprecating the evaluation system keywords versus (as in the current version) simply removing them but leaving room for their return...\n\n```\nassert _system == 'mpmath' \n```\n\nI suppose we could at least doctest this as a todo with the error message it receives with the \"wrong\" input.\n\nI still want to give it a final go-over, but various testing of your tests and code makes me think this is ready.  What a job!",
+    "body": "Nice work.  I do feel like we should ask on sage-devel about deprecating the evaluation system keywords versus (as in the current version) simply removing them but leaving room for their return...\n\n```\nassert _system == 'mpmath' \n```\nI suppose we could at least doctest this as a todo with the error message it receives with the \"wrong\" input.\n\nI still want to give it a final go-over, but various testing of your tests and code makes me think this is ready.  What a job!",
     "created_at": "2013-03-13T16:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -986,7 +1000,6 @@ Nice work.  I do feel like we should ask on sage-devel about deprecating the eva
 ```
 assert _system == 'mpmath' 
 ```
-
 I suppose we could at least doctest this as a todo with the error message it receives with the "wrong" input.
 
 I still want to give it a final go-over, but various testing of your tests and code makes me think this is ready.  What a job!
@@ -998,7 +1011,7 @@ I still want to give it a final go-over, but various testing of your tests and c
 archive/issue_comments_029572.json:
 ```json
 {
-    "body": "I spent some time today thinking about the deprecation issue. Here's my summary:\n\nThe current patches introduce two API changes. First, the new `bessel_I, bessel_J, etc` functions take two positional arguments whereas the old ones take 2 positional arguments and two optional keyword arguments (`algorithm` and `prec`). The second API change is the same change in arguments, but to the constructor `Bessel`.\n\nI can add deprecation warnings to the `Bessel` constructor easily and have it call the old `bessel_?` functions during the deprecation period. On the other hand, I don't know how to implement deprecation for the old `bessel_?` functions. I can imagine trying to override `BuiltinFunction`'s call method, or turning the new `bessel_?` functions into wrappers which call the new ones if two arguments are used, and give a deprecation warning and call the old versions if more than 2 arguments are given.\n\n----\n\nI can:\n\n1. try to implement the deprecation\n2. ask on sage-devel for a waiver from the deprecation policy in this case\n3. other?\n\nWhat say you all?",
+    "body": "I spent some time today thinking about the deprecation issue. Here's my summary:\n\nThe current patches introduce two API changes. First, the new `bessel_I, bessel_J, etc` functions take two positional arguments whereas the old ones take 2 positional arguments and two optional keyword arguments (`algorithm` and `prec`). The second API change is the same change in arguments, but to the constructor `Bessel`.\n\nI can add deprecation warnings to the `Bessel` constructor easily and have it call the old `bessel_?` functions during the deprecation period. On the other hand, I don't know how to implement deprecation for the old `bessel_?` functions. I can imagine trying to override `BuiltinFunction`'s call method, or turning the new `bessel_?` functions into wrappers which call the new ones if two arguments are used, and give a deprecation warning and call the old versions if more than 2 arguments are given.\n\n---\n\nI can:\n\n1. try to implement the deprecation\n2. ask on sage-devel for a waiver from the deprecation policy in this case\n3. other?\n\nWhat say you all?",
     "created_at": "2013-03-26T00:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1013,7 +1026,7 @@ The current patches introduce two API changes. First, the new `bessel_I, bessel_
 
 I can add deprecation warnings to the `Bessel` constructor easily and have it call the old `bessel_?` functions during the deprecation period. On the other hand, I don't know how to implement deprecation for the old `bessel_?` functions. I can imagine trying to override `BuiltinFunction`'s call method, or turning the new `bessel_?` functions into wrappers which call the new ones if two arguments are used, and give a deprecation warning and call the old versions if more than 2 arguments are given.
 
-----
+---
 
 I can:
 
@@ -1106,7 +1119,7 @@ The algorithm keyword in _eval_ requires a work in progress branch of pynac that
 archive/issue_comments_029577.json:
 ```json
 {
-    "body": "Right, I understand - my point is that maybe the deprecation message should be slightly different, something like\n\n```\ndeprecation(4102, 'precision argument is deprecated\\nalgorithm argument will only be available as a named keyword in the future and is currently in mothballs')\n```\n\nor something somewhat more professional/accurate than that.",
+    "body": "Right, I understand - my point is that maybe the deprecation message should be slightly different, something like\n\n```\ndeprecation(4102, 'precision argument is deprecated\\nalgorithm argument will only be available as a named keyword in the future and is currently in mothballs')\n```\nor something somewhat more professional/accurate than that.",
     "created_at": "2013-03-27T01:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1120,7 +1133,6 @@ Right, I understand - my point is that maybe the deprecation message should be s
 ```
 deprecation(4102, 'precision argument is deprecated\nalgorithm argument will only be available as a named keyword in the future and is currently in mothballs')
 ```
-
 or something somewhat more professional/accurate than that.
 
 
@@ -1150,7 +1162,7 @@ I see, sure, how about just:
 archive/issue_comments_029579.json:
 ```json
 {
-    "body": "> I see, sure, how about just:\n> \"precision argument is deprecated, algorithm argument is currently deprecated, but will be available as a named keyword in the future\"\nThat sounds good, except that I would put a semicolon instead of a comma in the first comma spot.",
+    "body": "> I see, sure, how about just:\n> \"precision argument is deprecated, algorithm argument is currently deprecated, but will be available as a named keyword in the future\"\n\nThat sounds good, except that I would put a semicolon instead of a comma in the first comma spot.",
     "created_at": "2013-03-27T17:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1161,6 +1173,7 @@ archive/issue_comments_029579.json:
 
 > I see, sure, how about just:
 > "precision argument is deprecated, algorithm argument is currently deprecated, but will be available as a named keyword in the future"
+
 That sounds good, except that I would put a semicolon instead of a comma in the first comma spot.
 
 
@@ -1262,7 +1275,7 @@ Patchbot shows test failures on sage-5.9.beta2
 archive/issue_comments_029585.json:
 ```json
 {
-    "body": "> Patchbot shows test failures on sage-5.9.beta2\nIn particular, they are relevant:\n\n```\nsage -t sage/functions/bessel.py\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 977, in sage.functions.bessel.Bessel\nFailed example:\n    f = desolve(diffeq, y, [1, 1, 1]); f\nExpected:\n    (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\nGot:\n    (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 983, in sage.functions.bessel.Bessel\nFailed example:\n    fp.subs(x=1).n()\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/storage2TB/patchbot/Sage/sage-5.9.beta2/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 460, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/mnt/storage2TB/patchbot/Sage/sage-5.9.beta2/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 819, in execute\n        exec compiled in globs\n      File \"<doctest sage.functions.bessel.Bessel[29]>\", line 1, in <module>\n        fp.subs(x=Integer(1)).n()\n      File \"expression.pyx\", line 4381, in sage.symbolic.expression.Expression._numerical_approx (sage/symbolic/expression.cpp:21011)\n    TypeError: cannot evaluate symbolic expression numerically\n**********************************************************************\n1 item had failures:\n   2 of  46 in sage.functions.bessel.Bessel\n    [258 tests, 2 failures, 16.6 s]\n----------------------------------------------------------------------\nsage -t sage/functions/bessel.py  # 2 doctests failed\n----------------------------------------------------------------------\n```\n\nI don't like that some are lowercase and some uppercase.  I think that the second error is just a result of that - the derivative won't function properly.",
+    "body": "> Patchbot shows test failures on sage-5.9.beta2\n\nIn particular, they are relevant:\n\n```\nsage -t sage/functions/bessel.py\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 977, in sage.functions.bessel.Bessel\nFailed example:\n    f = desolve(diffeq, y, [1, 1, 1]); f\nExpected:\n    (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\nGot:\n    (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 983, in sage.functions.bessel.Bessel\nFailed example:\n    fp.subs(x=1).n()\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/storage2TB/patchbot/Sage/sage-5.9.beta2/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 460, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/mnt/storage2TB/patchbot/Sage/sage-5.9.beta2/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 819, in execute\n        exec compiled in globs\n      File \"<doctest sage.functions.bessel.Bessel[29]>\", line 1, in <module>\n        fp.subs(x=Integer(1)).n()\n      File \"expression.pyx\", line 4381, in sage.symbolic.expression.Expression._numerical_approx (sage/symbolic/expression.cpp:21011)\n    TypeError: cannot evaluate symbolic expression numerically\n**********************************************************************\n1 item had failures:\n   2 of  46 in sage.functions.bessel.Bessel\n    [258 tests, 2 failures, 16.6 s]\n----------------------------------------------------------------------\nsage -t sage/functions/bessel.py  # 2 doctests failed\n----------------------------------------------------------------------\n```\nI don't like that some are lowercase and some uppercase.  I think that the second error is just a result of that - the derivative won't function properly.",
     "created_at": "2013-04-02T00:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1272,6 +1285,7 @@ archive/issue_comments_029585.json:
 ```
 
 > Patchbot shows test failures on sage-5.9.beta2
+
 In particular, they are relevant:
 
 ```
@@ -1306,7 +1320,6 @@ Exception raised:
 sage -t sage/functions/bessel.py  # 2 doctests failed
 ----------------------------------------------------------------------
 ```
-
 I don't like that some are lowercase and some uppercase.  I think that the second error is just a result of that - the derivative won't function properly.
 
 
@@ -1316,7 +1329,7 @@ I don't like that some are lowercase and some uppercase.  I think that the secon
 archive/issue_comments_029586.json:
 ```json
 {
-    "body": "There is something strange going on. Here is sage-5.9.beta2 with the three patches applied:\n\n\n```\n[bjones@cabbage:devel/sage]% ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:  y = function('y', x)\nsage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0\nsage: f = desolve(diffeq, y, [1, 1, 1]); f\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\n\n| Sage Version 5.9.beta2, Release Date: 2013-03-28                   |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nwhich is exactly what the doctest expects.\n\nNow doctesting `sage/functions/bessel.py` with sage in the exact same state:\n\n\n```\n[bjones@cabbage:devel/sage]% ../../sage -t sage/functions/bessel.py                \nRunning doctests with ID 2013-04-01-21-31-17-4bc246be.\nDoctesting 1 file.\nsage -t sage/functions/bessel.py\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 977, in sage.functions.bessel.Bessel\nFailed example:\n    f = desolve(diffeq, y, [1, 1, 1]); f\nExpected:\n    (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\nGot:\n    (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n```\n\n\nThe lower cased `bessel_j` is what Maxima returns if you don't register a conversion to `bessel_J`, the Sage symbolic version of J that these patches introduce.\n\nWhat is also strange is that the above output does actually represent a different form of the correct solution (modulo replacing bessel_j by bessel_J).\n\nSo what is going on here?\n\nFWIW, sage-5.8 with same three patches applied does not exhibit this behavior.",
+    "body": "There is something strange going on. Here is sage-5.9.beta2 with the three patches applied:\n\n```\n[bjones@cabbage:devel/sage]% ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:  y = function('y', x)\nsage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0\nsage: f = desolve(diffeq, y, [1, 1, 1]); f\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\n| Sage Version 5.9.beta2, Release Date: 2013-03-28                   |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nwhich is exactly what the doctest expects.\n\nNow doctesting `sage/functions/bessel.py` with sage in the exact same state:\n\n```\n[bjones@cabbage:devel/sage]% ../../sage -t sage/functions/bessel.py                \nRunning doctests with ID 2013-04-01-21-31-17-4bc246be.\nDoctesting 1 file.\nsage -t sage/functions/bessel.py\n**********************************************************************\nFile \"sage/functions/bessel.py\", line 977, in sage.functions.bessel.Bessel\nFailed example:\n    f = desolve(diffeq, y, [1, 1, 1]); f\nExpected:\n    (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\nGot:\n    (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n```\n\nThe lower cased `bessel_j` is what Maxima returns if you don't register a conversion to `bessel_J`, the Sage symbolic version of J that these patches introduce.\n\nWhat is also strange is that the above output does actually represent a different form of the correct solution (modulo replacing bessel_j by bessel_J).\n\nSo what is going on here?\n\nFWIW, sage-5.8 with same three patches applied does not exhibit this behavior.",
     "created_at": "2013-04-02T04:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1326,7 +1339,6 @@ archive/issue_comments_029586.json:
 ```
 
 There is something strange going on. Here is sage-5.9.beta2 with the three patches applied:
-
 
 ```
 [bjones@cabbage:devel/sage]% ../../sage
@@ -1342,14 +1354,12 @@ sage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0
 sage: f = desolve(diffeq, y, [1, 1, 1]); f
 (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))
 ```
-
 | Sage Version 5.9.beta2, Release Date: 2013-03-28                   |
 | Type "notebook()" for the browser-based notebook interface.        |
 | Type "help()" for help.                                            |
 which is exactly what the doctest expects.
 
 Now doctesting `sage/functions/bessel.py` with sage in the exact same state:
-
 
 ```
 [bjones@cabbage:devel/sage]% ../../sage -t sage/functions/bessel.py                
@@ -1365,7 +1375,6 @@ Expected:
 Got:
     (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))
 ```
-
 
 The lower cased `bessel_j` is what Maxima returns if you don't register a conversion to `bessel_J`, the Sage symbolic version of J that these patches introduce.
 
@@ -1420,7 +1429,7 @@ benjaminfjones: I don't understand the problem. It seems to me that the doctest 
 archive/issue_comments_029589.json:
 ```json
 {
-    "body": "So the correct output is:\n\n\n```\n(bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\n```\n\n\nthat is both mathematically correct and what you get when you apply the patches, run sage, and execute the commands manually.\n\nThe problem is that when you **doctest** the same exact commands in the same exact sage, the output that comes back is different in two ways (explained in the comment above).",
+    "body": "So the correct output is:\n\n```\n(bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))\n```\n\nthat is both mathematically correct and what you get when you apply the patches, run sage, and execute the commands manually.\n\nThe problem is that when you **doctest** the same exact commands in the same exact sage, the output that comes back is different in two ways (explained in the comment above).",
     "created_at": "2013-04-05T16:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1431,11 +1440,9 @@ archive/issue_comments_029589.json:
 
 So the correct output is:
 
-
 ```
 (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1)) - (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_Y(0, 1)*bessel_J(1, 1) - bessel_Y(1, 1)*bessel_J(0, 1))
 ```
-
 
 that is both mathematically correct and what you get when you apply the patches, run sage, and execute the commands manually.
 
@@ -1448,7 +1455,7 @@ The problem is that when you **doctest** the same exact commands in the same exa
 archive/issue_comments_029590.json:
 ```json
 {
-    "body": "More clues: (?)\n\nHere are the three commands in question\n\n\n```\nsage: y = function('y', x)\nsage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0\nsage: f = desolve(diffeq, y, [1, 1, 1]); f\n```\n\n\n1. running the commands in an interactive sage session directly after startup, output is:\n\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\n\n\n2. running the same commands as included in a doctest in `sage/functions/bessel.py`, output is:\n\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n```\n\n\n3. putting the three commands in a docstring alone in a new file `foo.py` and doctesting that, output is:\n\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\n\nnote: same output as in (1)\n\nSo it looks like there is some hidden state affecting the doctesting in scenario (2).",
+    "body": "More clues: (?)\n\nHere are the three commands in question\n\n```\nsage: y = function('y', x)\nsage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0\nsage: f = desolve(diffeq, y, [1, 1, 1]); f\n```\n\n1. running the commands in an interactive sage session directly after startup, output is:\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\n\n2. running the same commands as included in a doctest in `sage/functions/bessel.py`, output is:\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))\n```\n\n3. putting the three commands in a docstring alone in a new file `foo.py` and doctesting that, output is:\n\n```\n(bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))\n```\nnote: same output as in (1)\n\nSo it looks like there is some hidden state affecting the doctesting in scenario (2).",
     "created_at": "2013-04-05T16:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1461,37 +1468,29 @@ More clues: (?)
 
 Here are the three commands in question
 
-
 ```
 sage: y = function('y', x)
 sage: diffeq = x^2*diff(y,x,x) + x*diff(y,x) + x^2*y == 0
 sage: f = desolve(diffeq, y, [1, 1, 1]); f
 ```
 
-
 1. running the commands in an interactive sage session directly after startup, output is:
-
 
 ```
 (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))
 ```
 
-
 2. running the same commands as included in a doctest in `sage/functions/bessel.py`, output is:
-
 
 ```
 (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_j(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1)) - (bessel_j(0, 1) + bessel_j(1, 1))*bessel_Y(0, x)/(bessel_j(0, 1)*bessel_Y(1, 1) - bessel_j(1, 1)*bessel_Y(0, 1))
 ```
 
-
 3. putting the three commands in a docstring alone in a new file `foo.py` and doctesting that, output is:
-
 
 ```
 (bessel_Y(0, 1) + bessel_Y(1, 1))*bessel_J(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1)) - (bessel_J(0, 1) + bessel_J(1, 1))*bessel_Y(0, x)/(bessel_J(0, 1)*bessel_Y(1, 1) - bessel_J(1, 1)*bessel_Y(0, 1))
 ```
-
 note: same output as in (1)
 
 So it looks like there is some hidden state affecting the doctesting in scenario (2).
@@ -1503,7 +1502,7 @@ So it looks like there is some hidden state affecting the doctesting in scenario
 archive/issue_comments_029591.json:
 ```json
 {
-    "body": "Replying to [comment:45 benjaminfjones]:\n> So it looks like there is some hidden state affecting the doctesting in scenario (2). \nThe doctests which are run *before* that test are extra \"state\".",
+    "body": "Replying to [comment:45 benjaminfjones]:\n> So it looks like there is some hidden state affecting the doctesting in scenario (2). \n\nThe doctests which are run *before* that test are extra \"state\".",
     "created_at": "2013-04-09T12:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1514,6 +1513,7 @@ archive/issue_comments_029591.json:
 
 Replying to [comment:45 benjaminfjones]:
 > So it looks like there is some hidden state affecting the doctesting in scenario (2). 
+
 The doctests which are run *before* that test are extra "state".
 
 
@@ -1579,7 +1579,7 @@ Copy of trac_symbolic_bessel_v5, minus one doctest block
 archive/issue_comments_029595.json:
 ```json
 {
-    "body": "I still have not been able to track down the doctesting issue (described starting at comment:41). I've tried bisecting the doctest state (delta debugging) to no avail. The problem seems to be intimately linked to the doctesting environment. I'm unable to reproduce the doctest failure when running __all__ the prior doctests which come before in `bessel.py`, in the right order, by hand, and then running the offending one.\n\nThe only thing I can tell for sure is that at some point as the doctests are run, one of the pynac symbol tables get's modified. This causes the `bessel_j` vs `bessel_J` problem.\n\nMy inclination is to remove the offending doctest and file a new ticket to resolve the problem. Meanwhile, the bessel function code can be reviewed and become useful. I've posted a patch `trac_symbolic_bessel_v6` which removes the offending doctest block.\n\nComments?\n\n----\n\nPatchbot, apply trac_symbolic_bessel_v6.patch trac_symbolic_bessel_doctests.patch trac_symbolic_bessel_deprecation.patch",
+    "body": "I still have not been able to track down the doctesting issue (described starting at comment:41). I've tried bisecting the doctest state (delta debugging) to no avail. The problem seems to be intimately linked to the doctesting environment. I'm unable to reproduce the doctest failure when running __all__ the prior doctests which come before in `bessel.py`, in the right order, by hand, and then running the offending one.\n\nThe only thing I can tell for sure is that at some point as the doctests are run, one of the pynac symbol tables get's modified. This causes the `bessel_j` vs `bessel_J` problem.\n\nMy inclination is to remove the offending doctest and file a new ticket to resolve the problem. Meanwhile, the bessel function code can be reviewed and become useful. I've posted a patch `trac_symbolic_bessel_v6` which removes the offending doctest block.\n\nComments?\n\n---\n\nPatchbot, apply trac_symbolic_bessel_v6.patch trac_symbolic_bessel_doctests.patch trac_symbolic_bessel_deprecation.patch",
     "created_at": "2013-05-20T23:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1596,7 +1596,7 @@ My inclination is to remove the offending doctest and file a new ticket to resol
 
 Comments?
 
-----
+---
 
 Patchbot, apply trac_symbolic_bessel_v6.patch trac_symbolic_bessel_doctests.patch trac_symbolic_bessel_deprecation.patch
 
@@ -1625,7 +1625,7 @@ Tests are passing on 5.10.beta4. The startup time plugin is failing, however. Sh
 archive/issue_comments_029597.json:
 ```json
 {
-    "body": "Replying to [comment:49 benjaminfjones]:\n> Tests are passing on 5.10.beta4. The startup time plugin is failing, however. Should we lazy import here? Also how about lazy import for all the special functions (the idea being that relatively few users will need any given special function)?\n\n+100 to lazy import for all special functions, but in a separate ticket.\n\nIt would be great if you can use lazy import for the functions defined here to silence the startup time plugin.\n\n\nAbout the doctesting framework issue: I briefly tried to debug this and didn't get anywhere either. I agree that we should move this to a new ticket and not hold this one up longer. Instead of removing the test, can you mark it `# not tested` and mention the ticket number?\n\nThanks a lot for your work on this.",
+    "body": "Replying to [comment:49 benjaminfjones]:\n> Tests are passing on 5.10.beta4. The startup time plugin is failing, however. Should we lazy import here? Also how about lazy import for all the special functions (the idea being that relatively few users will need any given special function)?\n\n\n+100 to lazy import for all special functions, but in a separate ticket.\n\nIt would be great if you can use lazy import for the functions defined here to silence the startup time plugin.\n\n\nAbout the doctesting framework issue: I briefly tried to debug this and didn't get anywhere either. I agree that we should move this to a new ticket and not hold this one up longer. Instead of removing the test, can you mark it `# not tested` and mention the ticket number?\n\nThanks a lot for your work on this.",
     "created_at": "2013-05-27T17:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1636,6 +1636,7 @@ archive/issue_comments_029597.json:
 
 Replying to [comment:49 benjaminfjones]:
 > Tests are passing on 5.10.beta4. The startup time plugin is failing, however. Should we lazy import here? Also how about lazy import for all the special functions (the idea being that relatively few users will need any given special function)?
+
 
 +100 to lazy import for all special functions, but in a separate ticket.
 
@@ -1653,7 +1654,7 @@ Thanks a lot for your work on this.
 archive/issue_comments_029598.json:
 ```json
 {
-    "body": "I'm trying to understand how the interfacing works. Is this the intended output?\n\n```\nsage: maxima(bessel_I).sage()\nbessel_i\n```\n",
+    "body": "I'm trying to understand how the interfacing works. Is this the intended output?\n\n```\nsage: maxima(bessel_I).sage()\nbessel_i\n```",
     "created_at": "2013-05-27T18:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1671,13 +1672,12 @@ bessel_i
 
 
 
-
 ---
 
 archive/issue_comments_029599.json:
 ```json
 {
-    "body": "`maxima_function()`, used in `sage.functions.bessel._bessel_J`, overwrites the symbol table entry:\n\n```\nsage: from sage.functions.special import maxima_function\nsage: type(sage.symbolic.pynac.symbol_table['maxima']['bessel_j'])\n<class 'sage.functions.bessel.Function_Bessel_J'>\nsage: maxima_function('bessel_j')\nbessel_j\nsage: type(sage.symbolic.pynac.symbol_table['maxima']['bessel_j'])\n<class 'sage.functions.special.NewMaximaFunction'>\n```\n",
+    "body": "`maxima_function()`, used in `sage.functions.bessel._bessel_J`, overwrites the symbol table entry:\n\n```\nsage: from sage.functions.special import maxima_function\nsage: type(sage.symbolic.pynac.symbol_table['maxima']['bessel_j'])\n<class 'sage.functions.bessel.Function_Bessel_J'>\nsage: maxima_function('bessel_j')\nbessel_j\nsage: type(sage.symbolic.pynac.symbol_table['maxima']['bessel_j'])\n<class 'sage.functions.special.NewMaximaFunction'>\n```",
     "created_at": "2013-05-27T19:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1700,13 +1700,12 @@ sage: type(sage.symbolic.pynac.symbol_table['maxima']['bessel_j'])
 
 
 
-
 ---
 
 archive/issue_comments_029600.json:
 ```json
 {
-    "body": "`@`burcin: Okay! Good idea. I'll lazy import the Bessel stuff and create a new ticket for the rest.\n\n`@`vbraun: Thanks! That's good detective work. How did you figure that out (I wasted a lot of time trying to find the culprit)?\n\n----\n\nI'll look into addressing the symbol table issue and report back with updated patches.",
+    "body": "`@`burcin: Okay! Good idea. I'll lazy import the Bessel stuff and create a new ticket for the rest.\n\n`@`vbraun: Thanks! That's good detective work. How did you figure that out (I wasted a lot of time trying to find the culprit)?\n\n---\n\nI'll look into addressing the symbol table issue and report back with updated patches.",
     "created_at": "2013-05-28T16:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1719,7 +1718,7 @@ archive/issue_comments_029600.json:
 
 `@`vbraun: Thanks! That's good detective work. How did you figure that out (I wasted a lot of time trying to find the culprit)?
 
-----
+---
 
 I'll look into addressing the symbol table issue and report back with updated patches.
 
@@ -1730,7 +1729,7 @@ I'll look into addressing the symbol table issue and report back with updated pa
 archive/issue_comments_029601.json:
 ```json
 {
-    "body": "Replying to [comment:53 benjaminfjones]:\n> `@`vbraun: Thanks! That's good detective work. How did you figure that out\n\nYou better sit down for this one ;-)\n\n```\n$ grep bessel_j sage/functions/*\n```\n",
+    "body": "Replying to [comment:53 benjaminfjones]:\n> `@`vbraun: Thanks! That's good detective work. How did you figure that out\n\n\nYou better sit down for this one ;-)\n\n```\n$ grep bessel_j sage/functions/*\n```",
     "created_at": "2013-05-28T17:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1742,12 +1741,12 @@ archive/issue_comments_029601.json:
 Replying to [comment:53 benjaminfjones]:
 > `@`vbraun: Thanks! That's good detective work. How did you figure that out
 
+
 You better sit down for this one ;-)
 
 ```
 $ grep bessel_j sage/functions/*
 ```
-
 
 
 
@@ -1920,7 +1919,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_029611.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by @benjaminfjones created at 2013-06-15 05:33:06\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---- \n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
+    "body": "Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by @benjaminfjones created at 2013-06-15 05:33:06\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---\n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
     "created_at": "2013-06-15T05:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -1939,7 +1938,7 @@ Doctests in all the touched files pass, I'll wait for the patchbot to see about 
 
 Hope y'all at Sage Days have a chance to review the patches.
 
----- 
+---
 
 Patchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch
 
@@ -2064,7 +2063,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_029618.json:
 ```json
 {
-    "body": "I removed the lazy import.\n\nReady for review!\n\n----\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch",
+    "body": "I removed the lazy import.\n\nReady for review!\n\n---\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch",
     "created_at": "2013-06-16T01:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2077,7 +2076,7 @@ I removed the lazy import.
 
 Ready for review!
 
-----
+---
 
 Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch
 
@@ -2152,7 +2151,7 @@ Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bess
 archive/issue_comments_029622.json:
 ```json
 {
-    "body": "Thanks, those changes all look fine. The assertions aren't necessary, I should have removed them.\n\n----\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.patch",
+    "body": "Thanks, those changes all look fine. The assertions aren't necessary, I should have removed them.\n\n---\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.patch",
     "created_at": "2013-06-17T22:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2163,7 +2162,7 @@ archive/issue_comments_029622.json:
 
 Thanks, those changes all look fine. The assertions aren't necessary, I should have removed them.
 
-----
+---
 
 Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.patch
 
@@ -2174,7 +2173,7 @@ Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.
 archive/issue_comments_029623.json:
 ```json
 {
-    "body": "Great. I just noticed that it was already in the manuals though. New patch.\n\n----\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.2.patch",
+    "body": "Great. I just noticed that it was already in the manuals though. New patch.\n\n---\n\nPatchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.2.patch",
     "created_at": "2013-06-17T22:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2185,7 +2184,7 @@ archive/issue_comments_029623.json:
 
 Great. I just noticed that it was already in the manuals though. New patch.
 
-----
+---
 
 Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.patch bessel_2.2.patch
 
@@ -2324,7 +2323,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_029631.json:
 ```json
 {
-    "body": "I get several doctest failures:\n\n```\nsage -t --long devel/sage/sage/functions/bessel.py\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 101, in sage.functions.bessel\nFailed example:\n    bessel_J(0, x).diff(x)\nExpected:\n    1/2*bessel_J(-1, x) - 1/2*bessel_J(1, x)\nGot:\n    -1/2*bessel_J(1, x) + 1/2*bessel_J(-1, x)\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 248, in sage.functions.bessel.Function_Bessel_J\nFailed example:\n    f.diff(x)\nExpected:\n    1/2*bessel_J(1, x) - 1/2*bessel_J(3, x)\nGot:\n    -1/2*bessel_J(3, x) + 1/2*bessel_J(1, x)\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 357, in sage.functions.bessel.Function_Bessel_J._derivative_\nFailed example:\n    derivative(f, z)\nExpected:\n    z |--> 1/2*bessel_J(9, z) - 1/2*bessel_J(11, z)\nGot:\n    z |--> -1/2*bessel_J(11, z) + 1/2*bessel_J(9, z)\n**********************************************************************\n```\n\n(and various similar failures)",
+    "body": "I get several doctest failures:\n\n```\nsage -t --long devel/sage/sage/functions/bessel.py\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 101, in sage.functions.bessel\nFailed example:\n    bessel_J(0, x).diff(x)\nExpected:\n    1/2*bessel_J(-1, x) - 1/2*bessel_J(1, x)\nGot:\n    -1/2*bessel_J(1, x) + 1/2*bessel_J(-1, x)\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 248, in sage.functions.bessel.Function_Bessel_J\nFailed example:\n    f.diff(x)\nExpected:\n    1/2*bessel_J(1, x) - 1/2*bessel_J(3, x)\nGot:\n    -1/2*bessel_J(3, x) + 1/2*bessel_J(1, x)\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 357, in sage.functions.bessel.Function_Bessel_J._derivative_\nFailed example:\n    derivative(f, z)\nExpected:\n    z |--> 1/2*bessel_J(9, z) - 1/2*bessel_J(11, z)\nGot:\n    z |--> -1/2*bessel_J(11, z) + 1/2*bessel_J(9, z)\n**********************************************************************\n```\n(and various similar failures)",
     "created_at": "2013-06-19T06:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2363,7 +2362,6 @@ Got:
     z |--> -1/2*bessel_J(11, z) + 1/2*bessel_J(9, z)
 **********************************************************************
 ```
-
 (and various similar failures)
 
 
@@ -2517,7 +2515,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_029640.json:
 ```json
 {
-    "body": "On `silius` (ia64):\n\n```\nsage -t --long devel/sage/sage/functions/bessel.py\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 258, in sage.functions.bessel.Function_Bessel_J\nFailed example:\n    A[0]\nExpected:\n    0.44005058574493355\nGot:\n    0.44005058574493366\n**********************************************************************\n```\n",
+    "body": "On `silius` (ia64):\n\n```\nsage -t --long devel/sage/sage/functions/bessel.py\n**********************************************************************\nFile \"devel/sage/sage/functions/bessel.py\", line 258, in sage.functions.bessel.Function_Bessel_J\nFailed example:\n    A[0]\nExpected:\n    0.44005058574493355\nGot:\n    0.44005058574493366\n**********************************************************************\n```",
     "created_at": "2013-06-20T19:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2540,7 +2538,6 @@ Got:
     0.44005058574493366
 **********************************************************************
 ```
-
 
 
 
@@ -2657,7 +2654,7 @@ Resolution: fixed
 archive/issue_comments_029646.json:
 ```json
 {
-    "body": "This is wrong:\n\n\n```\nsage: var('nu z')\n(nu, z)\nsage: bessel_J(nu, z).diff(nu)\n-1/2*bessel_J(nu + 1, z) + 1/2*bessel_J(nu - 1, z)\nsage: bessel_J(nu, z).diff(z)\n-1/2*bessel_J(nu + 1, z) + 1/2*bessel_J(nu - 1, z)\n```\n",
+    "body": "This is wrong:\n\n```\nsage: var('nu z')\n(nu, z)\nsage: bessel_J(nu, z).diff(nu)\n-1/2*bessel_J(nu + 1, z) + 1/2*bessel_J(nu - 1, z)\nsage: bessel_J(nu, z).diff(z)\n-1/2*bessel_J(nu + 1, z) + 1/2*bessel_J(nu - 1, z)\n```",
     "created_at": "2013-08-07T06:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2668,7 +2665,6 @@ archive/issue_comments_029646.json:
 
 This is wrong:
 
-
 ```
 sage: var('nu z')
 (nu, z)
@@ -2677,7 +2673,6 @@ sage: bessel_J(nu, z).diff(nu)
 sage: bessel_J(nu, z).diff(z)
 -1/2*bessel_J(nu + 1, z) + 1/2*bessel_J(nu - 1, z)
 ```
-
 
 
 
@@ -2722,7 +2717,7 @@ New patch fixes this issue. Can this be merged in 5.11?
 archive/issue_comments_029649.json:
 ```json
 {
-    "body": "Replying to [comment:83 eviatarbach]:\n> New patch fixes this issue. Can this be merged in 5.11?\nNo, you should make a follow-up ticket for this.",
+    "body": "Replying to [comment:83 eviatarbach]:\n> New patch fixes this issue. Can this be merged in 5.11?\n\nNo, you should make a follow-up ticket for this.",
     "created_at": "2013-08-07T07:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2733,6 +2728,7 @@ archive/issue_comments_029649.json:
 
 Replying to [comment:83 eviatarbach]:
 > New patch fixes this issue. Can this be merged in 5.11?
+
 No, you should make a follow-up ticket for this.
 
 
@@ -2760,7 +2756,7 @@ Oh okay, then can this ticket be removed from 5.11? I'm just worried about havin
 archive/issue_comments_029651.json:
 ```json
 {
-    "body": "Replying to [comment:83 eviatarbach]:\n> New patch fixes this issue. Can this be merged in 5.11?\nSorry, I really meant: perhaps yes it can be in sage-5.11, but in any case there needs to be a follow-up ticket (make it milestone: sage-5.11 and priority: blocker) and the new patch needs to be reviewed.",
+    "body": "Replying to [comment:83 eviatarbach]:\n> New patch fixes this issue. Can this be merged in 5.11?\n\nSorry, I really meant: perhaps yes it can be in sage-5.11, but in any case there needs to be a follow-up ticket (make it milestone: sage-5.11 and priority: blocker) and the new patch needs to be reviewed.",
     "created_at": "2013-08-07T07:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
@@ -2771,6 +2767,7 @@ archive/issue_comments_029651.json:
 
 Replying to [comment:83 eviatarbach]:
 > New patch fixes this issue. Can this be merged in 5.11?
+
 Sorry, I really meant: perhaps yes it can be in sage-5.11, but in any case there needs to be a follow-up ticket (make it milestone: sage-5.11 and priority: blocker) and the new patch needs to be reviewed.
 
 

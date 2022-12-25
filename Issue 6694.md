@@ -149,7 +149,7 @@ Feel free to edit the optional CSS patch.
 archive/issue_comments_054908.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Feel free to edit the optional CSS patch.\nOr ignore it altogether!",
+    "body": "Replying to [comment:4 mpatel]:\n> Feel free to edit the optional CSS patch.\n\nOr ignore it altogether!",
     "created_at": "2009-09-21T03:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -160,6 +160,7 @@ archive/issue_comments_054908.json:
 
 Replying to [comment:4 mpatel]:
 > Feel free to edit the optional CSS patch.
+
 Or ignore it altogether!
 
 
@@ -271,7 +272,7 @@ Great, thanks for the quick change.  That should make it a little easier to merg
 archive/issue_comments_054914.json:
 ```json
 {
-    "body": "Replying to [comment:9 mhampton]:\n> Great, thanks for the quick change.  That should make it a little easier to merge this into William's notebook rewrite.\nNo problem.  To really tax a browser, try \"evaluating all\" cells in a long section of the manual.",
+    "body": "Replying to [comment:9 mhampton]:\n> Great, thanks for the quick change.  That should make it a little easier to merge this into William's notebook rewrite.\n\nNo problem.  To really tax a browser, try \"evaluating all\" cells in a long section of the manual.",
     "created_at": "2009-09-23T14:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6694",
     "type": "issue_comment",
@@ -282,6 +283,7 @@ archive/issue_comments_054914.json:
 
 Replying to [comment:9 mhampton]:
 > Great, thanks for the quick change.  That should make it a little easier to merge this into William's notebook rewrite.
+
 No problem.  To really tax a browser, try "evaluating all" cells in a long section of the manual.
 
 

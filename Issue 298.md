@@ -108,7 +108,7 @@ This looks invalid or maybe even done.
 archive/issue_comments_001412.json:
 ```json
 {
-    "body": "\n```\nwstein:\nWhy do you think #298 should be closed?\n[2:45pm] wstein:\nIt's more important than ever to fix.\n[2:45pm] jason-:\nI thought it was talking about doctesting, basically\n[2:45pm] wstein:\nThere is a directory SAGE_ROOT/examples.\n[2:45pm] wstein:\nThat code isn't tested at all.\n[2:45pm] jason-:\nto quote the comment, \"where is that code\"?\n[2:45pm] wstein:\nIt's a terrifying disaster.\n[2:45pm] jason-:\noh, okay\n[2:45pm] jason-:\nnever mind\n[2:46pm] wstein:\nI can't believe I still haven't dealt with this... but oh well.\n[2:46pm] wstein:\nIt's one of those things that looks easy until you try it.\n```\n",
+    "body": "```\nwstein:\nWhy do you think #298 should be closed?\n[2:45pm] wstein:\nIt's more important than ever to fix.\n[2:45pm] jason-:\nI thought it was talking about doctesting, basically\n[2:45pm] wstein:\nThere is a directory SAGE_ROOT/examples.\n[2:45pm] wstein:\nThat code isn't tested at all.\n[2:45pm] jason-:\nto quote the comment, \"where is that code\"?\n[2:45pm] wstein:\nIt's a terrifying disaster.\n[2:45pm] jason-:\noh, okay\n[2:45pm] jason-:\nnever mind\n[2:46pm] wstein:\nI can't believe I still haven't dealt with this... but oh well.\n[2:46pm] wstein:\nIt's one of those things that looks easy until you try it.\n```",
     "created_at": "2009-11-19T22:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
@@ -116,7 +116,6 @@ archive/issue_comments_001412.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 wstein:
@@ -142,7 +141,6 @@ I can't believe I still haven't dealt with this... but oh well.
 [2:46pm] wstein:
 It's one of those things that looks easy until you try it.
 ```
-
 
 
 

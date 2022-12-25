@@ -104,7 +104,7 @@ Changing assignee from somebody to @williamstein.
 archive/issue_comments_000375.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> Is this a SAGE problem? \n\nNo clue.  I was hoping an expert here would know.  This could be a problem in SAGE, browser, Trac.",
+    "body": "Replying to [comment:2 was]:\n> Is this a SAGE problem? \n\n\nNo clue.  I was hoping an expert here would know.  This could be a problem in SAGE, browser, Trac.",
     "created_at": "2006-10-07T23:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_comment",
@@ -115,6 +115,7 @@ archive/issue_comments_000375.json:
 
 Replying to [comment:2 was]:
 > Is this a SAGE problem? 
+
 
 No clue.  I was hoping an expert here would know.  This could be a problem in SAGE, browser, Trac.
 

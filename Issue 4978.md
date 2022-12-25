@@ -3,7 +3,7 @@
 archive/issues_004978.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nspkg-install has the following:\n\n```\n    # Do performance tuning steps.\n    if [ `uname` = \"Linux\" -a `uname -m` = \"ppc64\" ]; then\n        echo \"NTL auto tuning is broken on Linux ppc64.  Please report this to Victor Shoup.  Thanks.\"\n    else\n        do_tune\n    fi\n```\n\nI cannot imagine the tuning code being broken and even if it is the spkg should still at least build, so fix it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4978\n\n",
+    "body": "Assignee: mabshoff\n\nspkg-install has the following:\n\n```\n    # Do performance tuning steps.\n    if [ `uname` = \"Linux\" -a `uname -m` = \"ppc64\" ]; then\n        echo \"NTL auto tuning is broken on Linux ppc64.  Please report this to Victor Shoup.  Thanks.\"\n    else\n        do_tune\n    fi\n```\nI cannot imagine the tuning code being broken and even if it is the spkg should still at least build, so fix it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4978\n\n",
     "created_at": "2009-01-14T22:55:53Z",
     "labels": [
         "component: build",
@@ -28,7 +28,6 @@ spkg-install has the following:
         do_tune
     fi
 ```
-
 I cannot imagine the tuning code being broken and even if it is the spkg should still at least build, so fix it.
 
 Cheers,
@@ -46,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4978
 archive/issue_comments_037881.json:
 ```json
 {
-    "body": "> I cannot imagine ... being broken ...\n\nFamous last words :-)",
+    "body": "> I cannot imagine ... being broken ...\n\n\nFamous last words :-)",
     "created_at": "2009-01-15T03:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4978",
     "type": "issue_comment",
@@ -56,6 +55,7 @@ archive/issue_comments_037881.json:
 ```
 
 > I cannot imagine ... being broken ...
+
 
 Famous last words :-)
 

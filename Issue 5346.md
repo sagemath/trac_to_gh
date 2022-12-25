@@ -3,7 +3,7 @@
 archive/issues_005346.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nReported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/usr/local/src/sage-3.3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2675:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5346\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nReported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/usr/local/src/sage-3.3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2675:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5346\n\n",
     "created_at": "2009-02-23T07:34:07Z",
     "labels": [
         "component: number theory",
@@ -35,7 +35,6 @@ Got:
     '10351a1'
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5346
 
@@ -93,7 +92,7 @@ gsw
 archive/issue_comments_041113.json:
 ```json
 {
-    "body": "Replying to [comment:2 GeorgSWeber]:\n> For the record:\n> \n> The optional database covers conductor ranges from 10000 to 130000 AFAIK. So an obviously working patch (to be tested ...) already discussed elsewhere (I don't remember exactly who had this idea first, it wasn't me) would be to exchange the curve with conductor 10351 in the doctest, with a curve having conductor bigger than 130000.\n\nI agree, and suggest\n\n```\nsage: E = EllipticCurve([1, -1, 0, -79, 289]) \nsage: E.cremona_label()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/1126/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in cremona_label(self, space)\n   3034                 X = self.database_curve()\n   3035             except RuntimeError:\n-> 3036                 raise RuntimeError, \"Cremona label not known for %s.\"%self\n   3037             self.__cremona_label = X.__cremona_label\n   3038             return self.cremona_label(space)\n\nRuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y = x^3 - x^2 - 79*x + 289 over Rational Field.\n```\n\nas that curve will one day have label 234446a1 (or b1 or c1, I forget).\n\n\n> \n> Cheers,\n> gsw",
+    "body": "Replying to [comment:2 GeorgSWeber]:\n> For the record:\n> \n> The optional database covers conductor ranges from 10000 to 130000 AFAIK. So an obviously working patch (to be tested ...) already discussed elsewhere (I don't remember exactly who had this idea first, it wasn't me) would be to exchange the curve with conductor 10351 in the doctest, with a curve having conductor bigger than 130000.\n\n\nI agree, and suggest\n\n```\nsage: E = EllipticCurve([1, -1, 0, -79, 289]) \nsage: E.cremona_label()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/1126/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in cremona_label(self, space)\n   3034                 X = self.database_curve()\n   3035             except RuntimeError:\n-> 3036                 raise RuntimeError, \"Cremona label not known for %s.\"%self\n   3037             self.__cremona_label = X.__cremona_label\n   3038             return self.cremona_label(space)\n\nRuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y = x^3 - x^2 - 79*x + 289 over Rational Field.\n```\nas that curve will one day have label 234446a1 (or b1 or c1, I forget).\n\n\n> \n> Cheers,\n> gsw",
     "created_at": "2009-03-27T08:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5346",
     "type": "issue_comment",
@@ -106,6 +105,7 @@ Replying to [comment:2 GeorgSWeber]:
 > For the record:
 > 
 > The optional database covers conductor ranges from 10000 to 130000 AFAIK. So an obviously working patch (to be tested ...) already discussed elsewhere (I don't remember exactly who had this idea first, it wasn't me) would be to exchange the curve with conductor 10351 in the doctest, with a curve having conductor bigger than 130000.
+
 
 I agree, and suggest
 
@@ -126,7 +126,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y = x^3 - x^2 - 79*x + 289 over Rational Field.
 ```
-
 as that curve will one day have label 234446a1 (or b1 or c1, I forget).
 
 

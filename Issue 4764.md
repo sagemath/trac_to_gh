@@ -3,7 +3,7 @@
 archive/issues_004764.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n```\nsage: f = EllipticCurve('128a').modular_symbol_space()\nsage: f.complement()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/robert/.sage/sage_notebook/worksheets/admin/110/code/7.py\", line 7, in <module>\n    f.complement()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 202, in complement\n    raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nNote that the error is wrong, as \n\n\n```\nsage: ModularSymbols(128, sign=1)\n          \t\n\nModular Symbols space of dimension 18 for Gamma_0(128) of weight 2 with sign 1 over Rational Field\n```\n\n\nhowever, it should have cut the rank down to 17.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4764\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: f = EllipticCurve('128a').modular_symbol_space()\nsage: f.complement()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/robert/.sage/sage_notebook/worksheets/admin/110/code/7.py\", line 7, in <module>\n    f.complement()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 202, in complement\n    raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\nNote that the error is wrong, as \n\n```\nsage: ModularSymbols(128, sign=1)\n          \t\n\nModular Symbols space of dimension 18 for Gamma_0(128) of weight 2 with sign 1 over Rational Field\n```\n\nhowever, it should have cut the rank down to 17.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4764\n\n",
     "created_at": "2008-12-12T01:50:28Z",
     "labels": [
         "component: modular forms",
@@ -17,7 +17,6 @@ archive/issues_004764.json:
 }
 ```
 Assignee: @craigcitro
-
 
 ```
 sage: f = EllipticCurve('128a').modular_symbol_space()
@@ -33,9 +32,7 @@ Traceback (most recent call last):
 RuntimeError: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).
 ```
 
-
 Note that the error is wrong, as 
-
 
 ```
 sage: ModularSymbols(128, sign=1)
@@ -43,7 +40,6 @@ sage: ModularSymbols(128, sign=1)
 
 Modular Symbols space of dimension 18 for Gamma_0(128) of weight 2 with sign 1 over Rational Field
 ```
-
 
 however, it should have cut the rank down to 17.
 

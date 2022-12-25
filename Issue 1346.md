@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1346
 archive/issue_comments_008604.json:
 ```json
 {
-    "body": "Bill Hart wrote in http://groups.google.com/group/sage-devel/t/e54f8dd59f799354\n\n```\nSomeone noted in ticket 1346 that the fpLLL doctests use random data,\nand said that we should do tests with fixed data which return a known\nresult.\n\nI don't agree with this. There is no reason why LLL should return the\nsame result from implementation to implementation. fpLLL may well\nchange the lattices returned and this would break any fixed doctests,\nbut would not necessarily constitute a bug in fpLLL.\n\nInstead, the tests should generate random matrices of various kinds\nusing the programs provided with fpLLL for this purpose, then is\nshould reduce the lattices using the SAGE wrapping of fpLLL. Then it\nshould test that the lattices really have been reduced, using whatever\ntest you like. The one distributed with fpLLL for this purpose should\nbe sufficient, though one written in SAGE to directly test the Lovasz\ncondition or some such thing would be better.\n\nI don't know how the doctests work at the moment, but I don't think\nthe defect as reported really is a defect.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Bill Hart wrote in http://groups.google.com/group/sage-devel/t/e54f8dd59f799354\n\n```\nSomeone noted in ticket 1346 that the fpLLL doctests use random data,\nand said that we should do tests with fixed data which return a known\nresult.\n\nI don't agree with this. There is no reason why LLL should return the\nsame result from implementation to implementation. fpLLL may well\nchange the lattices returned and this would break any fixed doctests,\nbut would not necessarily constitute a bug in fpLLL.\n\nInstead, the tests should generate random matrices of various kinds\nusing the programs provided with fpLLL for this purpose, then is\nshould reduce the lattices using the SAGE wrapping of fpLLL. Then it\nshould test that the lattices really have been reduced, using whatever\ntest you like. The one distributed with fpLLL for this purpose should\nbe sufficient, though one written in SAGE to directly test the Lovasz\ncondition or some such thing would be better.\n\nI don't know how the doctests work at the moment, but I don't think\nthe defect as reported really is a defect.\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-06T13:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ I don't know how the doctests work at the moment, but I don't think
 the defect as reported really is a defect.
 ```
 
-
 Cheers,
 
 Michael
@@ -78,7 +77,7 @@ Michael
 archive/issue_comments_008605.json:
 ```json
 {
-    "body": "\n```\n13:48 < wstein-2813> re: #1346 -- do we have an is_LLL_reduced function anywhere yet?\n13:49 < wstein-2813> If so, we could just use that on the output of LLL functions.\n13:49 < wstein-2813> That would be the way to solve the problem (but keep the random output).\n```\n",
+    "body": "```\n13:48 < wstein-2813> re: #1346 -- do we have an is_LLL_reduced function anywhere yet?\n13:49 < wstein-2813> If so, we could just use that on the output of LLL functions.\n13:49 < wstein-2813> That would be the way to solve the problem (but keep the random output).\n```",
     "created_at": "2008-04-05T20:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
@@ -87,13 +86,11 @@ archive/issue_comments_008605.json:
 }
 ```
 
-
 ```
 13:48 < wstein-2813> re: #1346 -- do we have an is_LLL_reduced function anywhere yet?
 13:49 < wstein-2813> If so, we could just use that on the output of LLL functions.
 13:49 < wstein-2813> That would be the way to solve the problem (but keep the random output).
 ```
-
 
 
 
@@ -138,7 +135,7 @@ Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket134
 archive/issue_comments_008608.json:
 ```json
 {
-    "body": "Damien Stehl\u00e9 suggested three ways to check for LLL reduction off-list:\n\n\n```\nIn order to checking the LLL-reducedness of a basis, I have three ideas.\n\n1) One could think that  LLL on a LLL-reduced basis should not do anything. So one idea would be \nto run another (reliable) LLL routine on the output, and see if it actually does nothing. That \nshould be easy in SAGE, since you have an easy access to several LLLs. You have to pay attention \nto the LLL parameters (delta and eta), which could be annoying since eta is not specified in NTL\n(though it is >1/2).\nYou also have to pay attention to the precision if you use fp-arithmetic (it should be high \nenough). In any case,  it is going to be dirty and provide bugs or inconsistences between the \ndifferent codes. And on top of it, a LLL may actually do something on an already-reduced basis,\nas long as it provides another reduced basis. Due to fp-errors, this may actually occur.\nFurthermore, there are portability issues. fplll is not portable between 32 bit and 64 bit \nmachine (for efficiency reasons). I know inputs for which it answers something\ndifferent on 32 and 64 bit machines.\n\n2) Compute the Gram-Schmidt Orthogonalisation with rational arithmetic and check if the LLL \nconditions are satisfied. Easy, but slow on large examples.\n\n3) Use Gilles Villard's paper that tries to do the same as 2), but with fp-arithmetic.\nCertification of the QR factor R and of lattice basis reducedness. ISSAC 2007: 361-368\n```\n\n\nI do 2) in the above patch.",
+    "body": "Damien Stehl\u00e9 suggested three ways to check for LLL reduction off-list:\n\n```\nIn order to checking the LLL-reducedness of a basis, I have three ideas.\n\n1) One could think that  LLL on a LLL-reduced basis should not do anything. So one idea would be \nto run another (reliable) LLL routine on the output, and see if it actually does nothing. That \nshould be easy in SAGE, since you have an easy access to several LLLs. You have to pay attention \nto the LLL parameters (delta and eta), which could be annoying since eta is not specified in NTL\n(though it is >1/2).\nYou also have to pay attention to the precision if you use fp-arithmetic (it should be high \nenough). In any case,  it is going to be dirty and provide bugs or inconsistences between the \ndifferent codes. And on top of it, a LLL may actually do something on an already-reduced basis,\nas long as it provides another reduced basis. Due to fp-errors, this may actually occur.\nFurthermore, there are portability issues. fplll is not portable between 32 bit and 64 bit \nmachine (for efficiency reasons). I know inputs for which it answers something\ndifferent on 32 and 64 bit machines.\n\n2) Compute the Gram-Schmidt Orthogonalisation with rational arithmetic and check if the LLL \nconditions are satisfied. Easy, but slow on large examples.\n\n3) Use Gilles Villard's paper that tries to do the same as 2), but with fp-arithmetic.\nCertification of the QR factor R and of lattice basis reducedness. ISSAC 2007: 361-368\n```\n\nI do 2) in the above patch.",
     "created_at": "2008-10-06T13:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
@@ -148,7 +145,6 @@ archive/issue_comments_008608.json:
 ```
 
 Damien Stehlé suggested three ways to check for LLL reduction off-list:
-
 
 ```
 In order to checking the LLL-reducedness of a basis, I have three ideas.
@@ -172,7 +168,6 @@ conditions are satisfied. Easy, but slow on large examples.
 3) Use Gilles Villard's paper that tries to do the same as 2), but with fp-arithmetic.
 Certification of the QR factor R and of lattice basis reducedness. ISSAC 2007: 361-368
 ```
-
 
 I do 2) in the above patch.
 

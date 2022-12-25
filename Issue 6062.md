@@ -3,7 +3,7 @@
 archive/issues_006062.json:
 ```json
 {
-    "body": "Assignee: @tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
+    "body": "Assignee: @tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
     "created_at": "2009-05-18T05:08:40Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ sage: QQ(5).is_padic_square(int(2))
 ...
 AttributeError: 'int' object has no attribute 'is_prime'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6062
 

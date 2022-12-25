@@ -107,7 +107,7 @@ I think it relies on changes in #4267, though, since it changes the paths that t
 archive/issue_comments_026760.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> I think it relies on changes in #4267, though, since it changes the paths that the notebook uses to include jsmath.  All of these changes are intertangled at #4267.\n\nMmh, the jsmath changes should be pretty harmless and as is #4267 is a mess. So taking care of jsmath independently and then redoing #4267 might be an option, but unless somebody else is doing the work I guess it is your call :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jason]:\n> I think it relies on changes in #4267, though, since it changes the paths that the notebook uses to include jsmath.  All of these changes are intertangled at #4267.\n\n\nMmh, the jsmath changes should be pretty harmless and as is #4267 is a mess. So taking care of jsmath independently and then redoing #4267 might be an option, but unless somebody else is doing the work I guess it is your call :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T17:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
@@ -118,6 +118,7 @@ archive/issue_comments_026760.json:
 
 Replying to [comment:4 jason]:
 > I think it relies on changes in #4267, though, since it changes the paths that the notebook uses to include jsmath.  All of these changes are intertangled at #4267.
+
 
 Mmh, the jsmath changes should be pretty harmless and as is #4267 is a mess. So taking care of jsmath independently and then redoing #4267 might be an option, but unless somebody else is doing the work I guess it is your call :)
 
@@ -193,7 +194,7 @@ archive/issue_comments_026763.json:
 archive/issue_comments_026764.json:
 ```json
 {
-    "body": "Replying to [comment:8 jason]:\n> #4674 is also a ticket about updating jsmath (but also includes one other thing).\n\nI agree, so I am closing this as a dupe of #4674.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 jason]:\n> #4674 is also a ticket about updating jsmath (but also includes one other thing).\n\n\nI agree, so I am closing this as a dupe of #4674.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T18:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
@@ -204,6 +205,7 @@ archive/issue_comments_026764.json:
 
 Replying to [comment:8 jason]:
 > #4674 is also a ticket about updating jsmath (but also includes one other thing).
+
 
 I agree, so I am closing this as a dupe of #4674.
 
@@ -269,7 +271,7 @@ archive/issue_events_008642.json:
 archive/issue_comments_026766.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> (when I say \"all at once\", I mean \"breaking up #4267 into functional tickets\" instead of trying to just pull out one change and then redo #4267).\n> \n> Likely, #4267 will end up as several tickets:\n> \n>  1. Make all the existing javascript code spkgs\n>  1. Various jquery-related cleanups of the javascript code\n>  1. Add TinyMCE as an (optional?) spkg\n>  1. Make the shift-click work (in-place wysiwyg editing).\n> \n\nI would much rather have individual tickers:\n\n* move jsmath to its own spkg (#4674)\n* move jquery to its own spkg and remove both in tree copies (#3767)\n* cleanups of jquery code\n* TinyMCE\n* in place wysiwyg editing \n\nin exactly that order. Feel free to open three tickets (since we already have the jsmath and the jquery one) and then nuke #4267 and #4184 since both of them are a mess.\n\nDoing multiple related, but independent tasks always leads to giant screw ups like #4276 where one small issue with one aspect of the ticket leads to the whole ticket going stale. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 jason]:\n> (when I say \"all at once\", I mean \"breaking up #4267 into functional tickets\" instead of trying to just pull out one change and then redo #4267).\n> \n> Likely, #4267 will end up as several tickets:\n> \n> 1. Make all the existing javascript code spkgs\n> 2. Various jquery-related cleanups of the javascript code\n> 3. Add TinyMCE as an (optional?) spkg\n> 4. Make the shift-click work (in-place wysiwyg editing).\n> \n\n\nI would much rather have individual tickers:\n\n* move jsmath to its own spkg (#4674)\n* move jquery to its own spkg and remove both in tree copies (#3767)\n* cleanups of jquery code\n* TinyMCE\n* in place wysiwyg editing \n\nin exactly that order. Feel free to open three tickets (since we already have the jsmath and the jquery one) and then nuke #4267 and #4184 since both of them are a mess.\n\nDoing multiple related, but independent tasks always leads to giant screw ups like #4276 where one small issue with one aspect of the ticket leads to the whole ticket going stale. \n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T18:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
@@ -283,11 +285,12 @@ Replying to [comment:7 jason]:
 > 
 > Likely, #4267 will end up as several tickets:
 > 
->  1. Make all the existing javascript code spkgs
->  1. Various jquery-related cleanups of the javascript code
->  1. Add TinyMCE as an (optional?) spkg
->  1. Make the shift-click work (in-place wysiwyg editing).
+> 1. Make all the existing javascript code spkgs
+> 2. Various jquery-related cleanups of the javascript code
+> 3. Add TinyMCE as an (optional?) spkg
+> 4. Make the shift-click work (in-place wysiwyg editing).
 > 
+
 
 I would much rather have individual tickers:
 

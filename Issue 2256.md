@@ -3,7 +3,7 @@
 archive/issues_002256.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout cwitty @robertwb\n\nKeywords: matrix inverse CC complex\n\n\n```\nsage: M = matrix(CC, 2, 2, [(-1.00000000000000 - 2.00000000000000*I, 5.00000000000000 - 6.00000000000000*I), (-2.00000000000000 - 2.00000000000000*I, 7.00000000000000 - 8.00000000000000*I)])\nsage: M\n\n[-1.00000000000000 - 2.00000000000000*I  5.00000000000000 - 6.00000000000000*I]\n[-2.00000000000000 - 2.00000000000000*I  7.00000000000000 - 8.00000000000000*I]\nsage: M.determinant()\n-1.00000000000000 - 8.00000000000000*I\nsage: M.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\nsage: M.parent().change_ring(CDF)(M).inverse()\n\n[ 0.876923076923 + 0.984615384615*I -0.661538461538 - 0.707692307692*I]\n[-0.276923076923 + 0.215384615385*I 0.261538461538 - 0.0923076923077*I]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2256\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout cwitty @robertwb\n\nKeywords: matrix inverse CC complex\n\n```\nsage: M = matrix(CC, 2, 2, [(-1.00000000000000 - 2.00000000000000*I, 5.00000000000000 - 6.00000000000000*I), (-2.00000000000000 - 2.00000000000000*I, 7.00000000000000 - 8.00000000000000*I)])\nsage: M\n\n[-1.00000000000000 - 2.00000000000000*I  5.00000000000000 - 6.00000000000000*I]\n[-2.00000000000000 - 2.00000000000000*I  7.00000000000000 - 8.00000000000000*I]\nsage: M.determinant()\n-1.00000000000000 - 8.00000000000000*I\nsage: M.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\nsage: M.parent().change_ring(CDF)(M).inverse()\n\n[ 0.876923076923 + 0.984615384615*I -0.661538461538 - 0.707692307692*I]\n[-0.276923076923 + 0.215384615385*I 0.261538461538 - 0.0923076923077*I]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2256\n\n",
     "created_at": "2008-02-22T08:00:07Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  @ncalexan @jasongrout cwitty @robertwb
 
 Keywords: matrix inverse CC complex
-
 
 ```
 sage: M = matrix(CC, 2, 2, [(-1.00000000000000 - 2.00000000000000*I, 5.00000000000000 - 6.00000000000000*I), (-2.00000000000000 - 2.00000000000000*I, 7.00000000000000 - 8.00000000000000*I)])
@@ -48,7 +47,6 @@ sage: M.parent().change_ring(CDF)(M).inverse()
 [-0.276923076923 + 0.215384615385*I 0.261538461538 - 0.0923076923077*I]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2256
 
 
@@ -60,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2256
 archive/issue_comments_014906.json:
 ```json
 {
-    "body": "I made a similar ticket with the same issue with RQDF.  I think the following is the underlying problem:\n\n\n```\nsage: me = M.echelon_form()\nsage: me\n\n[                         1.00000000000000                     -2.22044604925031e-16]\n[                                        0 1.00000000000000 - 5.55111512312578e-17*I]\nsage: me[0,0] == 1\nTrue\nsage: me[1,1] == 1\nFalse\n```\n",
+    "body": "I made a similar ticket with the same issue with RQDF.  I think the following is the underlying problem:\n\n```\nsage: me = M.echelon_form()\nsage: me\n\n[                         1.00000000000000                     -2.22044604925031e-16]\n[                                        0 1.00000000000000 - 5.55111512312578e-17*I]\nsage: me[0,0] == 1\nTrue\nsage: me[1,1] == 1\nFalse\n```",
     "created_at": "2008-02-22T21:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ archive/issue_comments_014906.json:
 ```
 
 I made a similar ticket with the same issue with RQDF.  I think the following is the underlying problem:
-
 
 ```
 sage: me = M.echelon_form()
@@ -86,13 +83,12 @@ False
 
 
 
-
 ---
 
 archive/issue_comments_014907.json:
 ```json
 {
-    "body": "mhansen's comment is right on.  Indeed, SAGE is successfully computing the inverse, but the __invert__ method is throwing an exception because of the diagonal elements of the echelon form are not all ones.   This is simply because:\n\n\n```\nsage: a = CC(-1, -2); b = CC(5, -6); c = CC(-2,-2); d = CC(7, -8)\nsage: z = d - b*c/a\nsage: z * z^-1\n1.00000000000000 - 5.55111512312578e-17*I\n```\n\n\nAh, the joys of inexact fields.   See also the ticket #3162.",
+    "body": "mhansen's comment is right on.  Indeed, SAGE is successfully computing the inverse, but the __invert__ method is throwing an exception because of the diagonal elements of the echelon form are not all ones.   This is simply because:\n\n```\nsage: a = CC(-1, -2); b = CC(5, -6); c = CC(-2,-2); d = CC(7, -8)\nsage: z = d - b*c/a\nsage: z * z^-1\n1.00000000000000 - 5.55111512312578e-17*I\n```\n\nAh, the joys of inexact fields.   See also the ticket #3162.",
     "created_at": "2008-05-12T02:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
@@ -103,14 +99,12 @@ archive/issue_comments_014907.json:
 
 mhansen's comment is right on.  Indeed, SAGE is successfully computing the inverse, but the __invert__ method is throwing an exception because of the diagonal elements of the echelon form are not all ones.   This is simply because:
 
-
 ```
 sage: a = CC(-1, -2); b = CC(5, -6); c = CC(-2,-2); d = CC(7, -8)
 sage: z = d - b*c/a
 sage: z * z^-1
 1.00000000000000 - 5.55111512312578e-17*I
 ```
-
 
 Ah, the joys of inexact fields.   See also the ticket #3162.
 

@@ -3,7 +3,7 @@
 archive/issues_001210.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nKeywords: polynomial p-adic print mode cache caching\n\nThe issue is in the caching:\n\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nTrue\n```\n\nThe issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and\n\n```\nsage: R == S\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1210\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: polynomial p-adic print mode cache caching\n\nThe issue is in the caching:\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nTrue\n```\nThe issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and\n\n```\nsage: R == S\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1210\n\n",
     "created_at": "2007-11-19T21:54:44Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ Keywords: polynomial p-adic print mode cache caching
 
 The issue is in the caching:
 
-
 ```
 sage: R = Qp(7, print_mode='val-unit')
 sage: S = Qp(7)
@@ -39,14 +38,12 @@ False
 sage: R['x'] is S['x']
 True
 ```
-
 The issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and
 
 ```
 sage: R == S
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1210
 
@@ -97,7 +94,7 @@ Use this one instead
 archive/issue_comments_007485.json:
 ```json
 {
-    "body": "I have lots of doctest failures... wrong versions?  The argument \"print_pos\" does not appear anywhere in my sage/rings/padics directory, btw.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: nca\nsage: import sage_emacs as emacs\nsage: R = Qp(7, print_mode='digits', print_pos=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ncalexan/.sage/temp/sage.math.washington.edu/16970/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:579)()\n    106 \n    107 \n--> 108 \n    109 \n    110 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.create_key_and_extra_args (sage/structure/factory.c:1373)()\n    193 \n    194 \n--> 195 \n    196 \n    197 \n\nTypeError: create_key() got an unexpected keyword argument 'print_pos'\nsage: S = Qp(7, print_mode='digits', print_pos=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/16970/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:579)()\n    106 \n    107 \n--> 108 \n    109 \n    110 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.create_key_and_extra_args (sage/structure/factory.c:1373)()\n    193 \n    194 \n--> 195 \n    196 \n    197 \n\nTypeError: create_key() got an unexpected keyword argument 'print_pos'\nsage: \n```\n",
+    "body": "I have lots of doctest failures... wrong versions?  The argument \"print_pos\" does not appear anywhere in my sage/rings/padics directory, btw.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: nca\nsage: import sage_emacs as emacs\nsage: R = Qp(7, print_mode='digits', print_pos=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ncalexan/.sage/temp/sage.math.washington.edu/16970/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:579)()\n    106 \n    107 \n--> 108 \n    109 \n    110 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.create_key_and_extra_args (sage/structure/factory.c:1373)()\n    193 \n    194 \n--> 195 \n    196 \n    197 \n\nTypeError: create_key() got an unexpected keyword argument 'print_pos'\nsage: S = Qp(7, print_mode='digits', print_pos=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/16970/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:579)()\n    106 \n    107 \n--> 108 \n    109 \n    110 \n\n/scratch/nca/sage-3.3.alpha1-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/factory.so in sage.structure.factory.UniqueFactory.create_key_and_extra_args (sage/structure/factory.c:1373)()\n    193 \n    194 \n--> 195 \n    196 \n    197 \n\nTypeError: create_key() got an unexpected keyword argument 'print_pos'\nsage: \n```",
     "created_at": "2009-01-24T22:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
@@ -107,7 +104,6 @@ archive/issue_comments_007485.json:
 ```
 
 I have lots of doctest failures... wrong versions?  The argument "print_pos" does not appear anywhere in my sage/rings/padics directory, btw.
-
 
 ```
 ----------------------------------------------------------------------
@@ -172,7 +168,6 @@ sage:
 
 
 
-
 ---
 
 archive/issue_comments_007486.json:
@@ -200,7 +195,7 @@ Michael
 archive/issue_comments_007487.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> David, Nick: Has this problem been fixed due to the work by David merged in 3.4.1.rc3?\n> \n> Cheers,\n> \n> Michael\n\nIt would appear so. Consider:\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nFalse # this is now fixed\nsage: R['x'](7^2)\n(7^2 * 1 + O(7^22))\nsage: S['x'](7^2)\n(7^2 + O(7^22))\nsage: R['x'](7^2+1)\n(50 + O(7^20))\nsage: S['x'](7^2+1)\n(1 + 7^2 + O(7^20))\n```\n\nHowever, this is still puzzling:\n\n```\nsage: R['x'] == S['x']\nFalse\n```\n",
+    "body": "Replying to [comment:3 mabshoff]:\n> David, Nick: Has this problem been fixed due to the work by David merged in 3.4.1.rc3?\n> \n> Cheers,\n> \n> Michael\n\n\nIt would appear so. Consider:\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nFalse # this is now fixed\nsage: R['x'](7^2)\n(7^2 * 1 + O(7^22))\nsage: S['x'](7^2)\n(7^2 + O(7^22))\nsage: R['x'](7^2+1)\n(50 + O(7^20))\nsage: S['x'](7^2+1)\n(1 + 7^2 + O(7^20))\n```\nHowever, this is still puzzling:\n\n```\nsage: R['x'] == S['x']\nFalse\n```",
     "created_at": "2009-05-20T21:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
@@ -215,6 +210,7 @@ Replying to [comment:3 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 It would appear so. Consider:
 
@@ -242,14 +238,12 @@ sage: R['x'](7^2+1)
 sage: S['x'](7^2+1)
 (1 + 7^2 + O(7^20))
 ```
-
 However, this is still puzzling:
 
 ```
 sage: R['x'] == S['x']
 False
 ```
-
 
 
 
@@ -275,7 +269,7 @@ archive/issue_events_003217.json:
 archive/issue_comments_007488.json:
 ```json
 {
-    "body": "I get with `5.9.beta1`:\n\n```\nsage: sage: R = Qp(7, print_mode='val-unit')\nsage: sage: S = Qp(7)\nsage: R is S\nFalse\nsage: R == S\nFalse\nsage: R['x'] == S['x']\nFalse\nsage: R['x'] is S['x']\nFalse\n```\n\nwhich is the expected behavior due to `UniqueRepresentation` parents.",
+    "body": "I get with `5.9.beta1`:\n\n```\nsage: sage: R = Qp(7, print_mode='val-unit')\nsage: sage: S = Qp(7)\nsage: R is S\nFalse\nsage: R == S\nFalse\nsage: R['x'] == S['x']\nFalse\nsage: R['x'] is S['x']\nFalse\n```\nwhich is the expected behavior due to `UniqueRepresentation` parents.",
     "created_at": "2013-04-10T23:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
@@ -298,7 +292,6 @@ False
 sage: R['x'] is S['x']
 False
 ```
-
 which is the expected behavior due to `UniqueRepresentation` parents.
 
 
@@ -326,7 +319,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_007490.json:
 ```json
 {
-    "body": "Replying to [comment:5 tscrim]:\n> I get with `5.9.beta1`:\n> {{{\n> sage: sage: R = Qp(7, print_mode='val-unit')\n> sage: sage: S = Qp(7)\n> sage: R is S\n> False\n> sage: R == S\n> False\n> sage: R['x'] == S['x']\n> False\n> sage: R['x'] is S['x']\n> False\n> }}}\n> which is the expected behavior due to `UniqueRepresentation` parents.\n\nIt should be due to `UniqueFactory` (in `6.2.beta3`). But anyway, documentation of `Qp` says \n\n```\nPRINTING:\n\n    There are many different ways to print `p`-adic elements.\n    ...\n    Note that the printing options affect whether different\n    `p`-adic fields are considered equal.\n```\n",
+    "body": "Replying to [comment:5 tscrim]:\n> I get with `5.9.beta1`:\n> \n> ```\n> sage: sage: R = Qp(7, print_mode='val-unit')\n> sage: sage: S = Qp(7)\n> sage: R is S\n> False\n> sage: R == S\n> False\n> sage: R['x'] == S['x']\n> False\n> sage: R['x'] is S['x']\n> False\n> ```\n> which is the expected behavior due to `UniqueRepresentation` parents.\n\n\nIt should be due to `UniqueFactory` (in `6.2.beta3`). But anyway, documentation of `Qp` says \n\n```\nPRINTING:\n\n    There are many different ways to print `p`-adic elements.\n    ...\n    Note that the printing options affect whether different\n    `p`-adic fields are considered equal.\n```",
     "created_at": "2014-03-09T22:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
@@ -337,7 +330,8 @@ archive/issue_comments_007490.json:
 
 Replying to [comment:5 tscrim]:
 > I get with `5.9.beta1`:
-> {{{
+> 
+> ```
 > sage: sage: R = Qp(7, print_mode='val-unit')
 > sage: sage: S = Qp(7)
 > sage: R is S
@@ -348,8 +342,9 @@ Replying to [comment:5 tscrim]:
 > False
 > sage: R['x'] is S['x']
 > False
-> }}}
+> ```
 > which is the expected behavior due to `UniqueRepresentation` parents.
+
 
 It should be due to `UniqueFactory` (in `6.2.beta3`). But anyway, documentation of `Qp` says 
 
@@ -361,7 +356,6 @@ PRINTING:
     Note that the printing options affect whether different
     `p`-adic fields are considered equal.
 ```
-
 
 
 

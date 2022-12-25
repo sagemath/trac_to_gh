@@ -3,7 +3,7 @@
 archive/issues_009421.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\n\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\n\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
     "created_at": "2010-07-03T13:56:02Z",
     "labels": [
         "component: calculus",
@@ -29,7 +29,6 @@ sage: var('c')
 sage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()
 c*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4
 ```
-
 Here the first occurrence of `c` is an integration constant,
 whereas the second one is the parameter in the ODE:
 
@@ -38,7 +37,6 @@ sage: var('d')
 sage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()
 c*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4
 ```
-
 In case the ODE contains `c`, desolve should choose another
 name for the integration constant.
 
@@ -234,7 +232,7 @@ Paul
 archive/issue_comments_089717.json:
 ```json
 {
-    "body": "Replying to [comment:7 zimmerma]:\n> thus should we have a dependency on #8734?\n\nThen everything waits for that review, which could take forever. But I want the warning now.",
+    "body": "Replying to [comment:7 zimmerma]:\n> thus should we have a dependency on #8734?\n\n\nThen everything waits for that review, which could take forever. But I want the warning now.",
     "created_at": "2014-03-26T04:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
@@ -246,6 +244,7 @@ archive/issue_comments_089717.json:
 Replying to [comment:7 zimmerma]:
 > thus should we have a dependency on #8734?
 
+
 Then everything waits for that review, which could take forever. But I want the warning now.
 
 
@@ -255,7 +254,7 @@ Then everything waits for that review, which could take forever. But I want the 
 archive/issue_comments_089718.json:
 ```json
 {
-    "body": "You might want to consider this one too:\n\n```\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\nk2*e^(-x) + k1*e^x\n```\n\nWe can recognize the variables as distinct before they are converted from maxima:\n\n```\nsage: function('f',x)\nf(x)\nsage: var('c')\nc\nsage: V=diff(f(x),x)-f(x)+c\nsage: v=maxima_calculus(V)\nsage: v.ode2(f(x),x)\n'f(x)=(c*%e^-x+%c)*%e^x\nsage: v.ode2(f(x),x).ecl()\n<ECL: ((MEQUAL SIMP) ((%F SIMP) $X)\n ((MTIMES SIMP)\n  ((MPLUS SIMP) $%C\n   ((MTIMES SIMP) $C ((MEXPT SIMP) $%E ((MTIMES SIMP) -1 $X))))\n  ((MEXPT SIMP) $%E $X)))>\n```\n\nso perhaps the right solution is to warn when sage's \"forget the %\" causes a name collision (with the righter solution being: making sage's \"forget the %\" more intelligent, so that collisions can be avoided)",
+    "body": "You might want to consider this one too:\n\n```\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\nk2*e^(-x) + k1*e^x\n```\nWe can recognize the variables as distinct before they are converted from maxima:\n\n```\nsage: function('f',x)\nf(x)\nsage: var('c')\nc\nsage: V=diff(f(x),x)-f(x)+c\nsage: v=maxima_calculus(V)\nsage: v.ode2(f(x),x)\n'f(x)=(c*%e^-x+%c)*%e^x\nsage: v.ode2(f(x),x).ecl()\n<ECL: ((MEQUAL SIMP) ((%F SIMP) $X)\n ((MTIMES SIMP)\n  ((MPLUS SIMP) $%C\n   ((MTIMES SIMP) $C ((MEXPT SIMP) $%E ((MTIMES SIMP) -1 $X))))\n  ((MEXPT SIMP) $%E $X)))>\n```\nso perhaps the right solution is to warn when sage's \"forget the %\" causes a name collision (with the righter solution being: making sage's \"forget the %\" more intelligent, so that collisions can be avoided)",
     "created_at": "2014-03-26T05:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
@@ -270,7 +269,6 @@ You might want to consider this one too:
 sage: desolve(diff(f(x),x,x)-f(x),f(x))
 k2*e^(-x) + k1*e^x
 ```
-
 We can recognize the variables as distinct before they are converted from maxima:
 
 ```
@@ -289,7 +287,6 @@ sage: v.ode2(f(x),x).ecl()
    ((MTIMES SIMP) $C ((MEXPT SIMP) $%E ((MTIMES SIMP) -1 $X))))
   ((MEXPT SIMP) $%E $X)))>
 ```
-
 so perhaps the right solution is to warn when sage's "forget the %" causes a name collision (with the righter solution being: making sage's "forget the %" more intelligent, so that collisions can be avoided)
 
 
@@ -299,7 +296,7 @@ so perhaps the right solution is to warn when sage's "forget the %" causes a nam
 archive/issue_comments_089719.json:
 ```json
 {
-    "body": "With #16007 the output is now\n\n```\nsage: sage: x=function('x',t)\nsage: sage: var('c')\nc\nsage: sage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\n1/2*t^2 + _C*e^(-2*t) + 1/2*c - 3/2*t + 3/4\n\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\n_K2*e^(-x) + _K1*e^x\n```\n\nAs that's a simple and fine solution instead of a warning or an extended patch I would be glad if someone could review that one-liner.",
+    "body": "With #16007 the output is now\n\n```\nsage: sage: x=function('x',t)\nsage: sage: var('c')\nc\nsage: sage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\n1/2*t^2 + _C*e^(-2*t) + 1/2*c - 3/2*t + 3/4\n\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\n_K2*e^(-x) + _K1*e^x\n```\nAs that's a simple and fine solution instead of a warning or an extended patch I would be glad if someone could review that one-liner.",
     "created_at": "2014-03-26T16:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
@@ -320,7 +317,6 @@ sage: sage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()
 sage: desolve(diff(f(x),x,x)-f(x),f(x))
 _K2*e^(-x) + _K1*e^x
 ```
-
 As that's a simple and fine solution instead of a warning or an extended patch I would be glad if someone could review that one-liner.
 
 

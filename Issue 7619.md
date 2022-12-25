@@ -3,7 +3,7 @@
 archive/issues_007619.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
     "created_at": "2009-12-08T12:45:18Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +21,6 @@ CC:  @saliola
 
 Currently pickling doesn't work for finite word defined by iterator and callable :
 
-
 ```
 sage: w = Word(iter('abcdefghijkl'))
 sage: loads(dumps(w))
@@ -30,9 +29,7 @@ Traceback (most recent call last):
 PicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed
 ```
 
-
 This is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:
-
 
 ```
 sage: w = Word(iter('abcdefghijkl'))
@@ -41,7 +38,6 @@ word: abcdefghijkl
 sage: type(_)
 <class 'sage.combinat.words.word.FiniteWord_list'>
 ```
-
 
 This is more general solution to the problem solved in #7519.
 
@@ -93,7 +89,7 @@ The patch save those finite words to list. I wonder if tuple is better or is the
 archive/issue_comments_064996.json:
 ```json
 {
-    "body": "I just uploaded the patch. Pickle is now supported for infinite word defined from a function :\n\n\n```\nsage: w = Word(lambda n:n)\nsage: loads(dumps(w))\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\n```\n\n\nIt uses the `pickle_function` and `unpickle_function` (which gives a new utility for `datatype` argument)\n\n\n```\nsage: lambda n:n\n<function <lambda> at 0x887e764>\nsage: pickle_function(_)\n\"csage.misc.fpickle\\ncode_ctor\\np1\\n(I1\\nI1\\nI1\\nI67\\nS'|\\\\x00\\\\x00S'\\np2\\n(t(t(S'n'\\ntp3\\nS'<ipython console>'\\np4\\nS'<lambda>'\\np5\\nI1\\nS''\\ntRp6\\n.\"\nsage: Word(_, datatype='pickled_function')\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\n```\n\n\nSince `pickle_function` fails on `CallableFromListOfWords`, those finite words are expanded as a list in order to be saved:\n\n\n```\nsage: w = Word(range(5)) * Word('abcde')\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\nsage: z = loads(dumps(w))\nsage: z\nword: 01234abcde\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\n\nNeeds review!!",
+    "body": "I just uploaded the patch. Pickle is now supported for infinite word defined from a function :\n\n```\nsage: w = Word(lambda n:n)\nsage: loads(dumps(w))\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\n```\n\nIt uses the `pickle_function` and `unpickle_function` (which gives a new utility for `datatype` argument)\n\n```\nsage: lambda n:n\n<function <lambda> at 0x887e764>\nsage: pickle_function(_)\n\"csage.misc.fpickle\\ncode_ctor\\np1\\n(I1\\nI1\\nI1\\nI67\\nS'|\\\\x00\\\\x00S'\\np2\\n(t(t(S'n'\\ntp3\\nS'<ipython console>'\\np4\\nS'<lambda>'\\np5\\nI1\\nS''\\ntRp6\\n.\"\nsage: Word(_, datatype='pickled_function')\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\n```\n\nSince `pickle_function` fails on `CallableFromListOfWords`, those finite words are expanded as a list in order to be saved:\n\n```\nsage: w = Word(range(5)) * Word('abcde')\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\nsage: z = loads(dumps(w))\nsage: z\nword: 01234abcde\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\nNeeds review!!",
     "created_at": "2010-01-14T18:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
@@ -104,16 +100,13 @@ archive/issue_comments_064996.json:
 
 I just uploaded the patch. Pickle is now supported for infinite word defined from a function :
 
-
 ```
 sage: w = Word(lambda n:n)
 sage: loads(dumps(w))
 word: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...
 ```
 
-
 It uses the `pickle_function` and `unpickle_function` (which gives a new utility for `datatype` argument)
-
 
 ```
 sage: lambda n:n
@@ -124,9 +117,7 @@ sage: Word(_, datatype='pickled_function')
 word: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...
 ```
 
-
 Since `pickle_function` fails on `CallableFromListOfWords`, those finite words are expanded as a list in order to be saved:
-
 
 ```
 sage: w = Word(range(5)) * Word('abcde')
@@ -138,7 +129,6 @@ word: 01234abcde
 sage: type(z)
 <class 'sage.combinat.words.word.FiniteWord_list'>
 ```
-
 
 Needs review!!
 

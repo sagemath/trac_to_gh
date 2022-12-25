@@ -3,7 +3,7 @@
 archive/issues_005125.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nFor the attached list, `Ideal(gb).basis_is_groebner()` returns `True` but the basis is not a Gr\u00f6bner basis!\n\nThe code in question:\n\n\n```\n    def basis_is_groebner(self, singular=singular_default):\n        self.ring()._singular_().set_ring()\n\n        F = singular( self.gens(), \"module\" )\n        LTF = singular( [f.lt() for f in self.gens()] , \"module\" )\n\n        M = (F * LTF.syz()).reduce(self._singular_())\n\n        for i in range(M.nrows()):\n            if int(singular.eval(\"%s[1][%s+1]!=0\"%(M.name(),i))):\n                return False\n\n        self._singular_().attrib('isSB',1)\n        return True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5125\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nFor the attached list, `Ideal(gb).basis_is_groebner()` returns `True` but the basis is not a Gr\u00f6bner basis!\n\nThe code in question:\n\n```\n    def basis_is_groebner(self, singular=singular_default):\n        self.ring()._singular_().set_ring()\n\n        F = singular( self.gens(), \"module\" )\n        LTF = singular( [f.lt() for f in self.gens()] , \"module\" )\n\n        M = (F * LTF.syz()).reduce(self._singular_())\n\n        for i in range(M.nrows()):\n            if int(singular.eval(\"%s[1][%s+1]!=0\"%(M.name(),i))):\n                return False\n\n        self._singular_().attrib('isSB',1)\n        return True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5125\n\n",
     "created_at": "2009-01-29T00:02:15Z",
     "labels": [
         "component: commutative algebra",
@@ -25,7 +25,6 @@ For the attached list, `Ideal(gb).basis_is_groebner()` returns `True` but the ba
 
 The code in question:
 
-
 ```
     def basis_is_groebner(self, singular=singular_default):
         self.ring()._singular_().set_ring()
@@ -42,7 +41,6 @@ The code in question:
         self._singular_().attrib('isSB',1)
         return True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5125
 

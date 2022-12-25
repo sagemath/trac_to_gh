@@ -3,7 +3,7 @@
 archive/issues_004388.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: EllipticCurve('11a').period_lattice().basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4388\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: EllipticCurve('11a').period_lattice().basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4388\n\n",
     "created_at": "2008-10-30T05:15:58Z",
     "labels": [
         "component: number theory",
@@ -18,14 +18,12 @@ archive/issues_004388.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: EllipticCurve('11a').period_lattice().basis_matrix()
 Traceback (most recent call last):
 ...
 TypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4388
 
@@ -80,7 +78,7 @@ I think at least mathematically the idea of "basis matrix" makes sense, and I wa
 archive/issue_comments_032237.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> But I really wanted basis_matrix(), since I wanted to compute the determinant of the basis matrix in order to find the volume of the period lattice. \n> \n> There is no volume method.  That would also be nice.   \n\nIt _is_ there:  complex_area()  (not my choice of name)!\n\n> \n> I think at least mathematically the idea of \"basis matrix\" makes sense, and I was happy it was there (except that it is broken).\n\nYou'll have to explain it to me.  Do you want the 2x2 matrix of reals consisting of the real and imaginary parts of the period basis?  That would be easy to add, like this:\n\n\n```\nsage: E = EllipticCurve('389a1')\nsage: L = E.period_lattice()\nsage: M = Matrix([[CC(w).real(), CC(w).imag()] for w in L.basis()]); M\n\n[ 2.49021256085505 0.000000000000000]\n[0.000000000000000  1.97173770155165]\nsage: M.det()\n4.91004599111539\nsage: L.complex_area()\n4.91004599111539\n```\n\n\n\nand\n\n\n```\nsage: E = EllipticCurve('11a1')\nsage: L = E.period_lattice()\nsage: M = Matrix([[CC(w).real(), CC(w).imag()] for w in L.basis()]); M\n\n[ 1.26920930427955 0.000000000000000]\n[0.634604652139777  1.45881661693850]\nsage: M.det()\n1.85154362345596\nsage: L.complex_area()\n1.85154362345596\n```\n",
+    "body": "Replying to [comment:2 was]:\n> But I really wanted basis_matrix(), since I wanted to compute the determinant of the basis matrix in order to find the volume of the period lattice. \n> \n> There is no volume method.  That would also be nice.   \n\n\nIt _is_ there:  complex_area()  (not my choice of name)!\n\n> \n> I think at least mathematically the idea of \"basis matrix\" makes sense, and I was happy it was there (except that it is broken).\n\n\nYou'll have to explain it to me.  Do you want the 2x2 matrix of reals consisting of the real and imaginary parts of the period basis?  That would be easy to add, like this:\n\n```\nsage: E = EllipticCurve('389a1')\nsage: L = E.period_lattice()\nsage: M = Matrix([[CC(w).real(), CC(w).imag()] for w in L.basis()]); M\n\n[ 2.49021256085505 0.000000000000000]\n[0.000000000000000  1.97173770155165]\nsage: M.det()\n4.91004599111539\nsage: L.complex_area()\n4.91004599111539\n```\n\n\nand\n\n```\nsage: E = EllipticCurve('11a1')\nsage: L = E.period_lattice()\nsage: M = Matrix([[CC(w).real(), CC(w).imag()] for w in L.basis()]); M\n\n[ 1.26920930427955 0.000000000000000]\n[0.634604652139777  1.45881661693850]\nsage: M.det()\n1.85154362345596\nsage: L.complex_area()\n1.85154362345596\n```",
     "created_at": "2008-10-30T18:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
@@ -94,13 +92,14 @@ Replying to [comment:2 was]:
 > 
 > There is no volume method.  That would also be nice.   
 
+
 It _is_ there:  complex_area()  (not my choice of name)!
 
 > 
 > I think at least mathematically the idea of "basis matrix" makes sense, and I was happy it was there (except that it is broken).
 
-You'll have to explain it to me.  Do you want the 2x2 matrix of reals consisting of the real and imaginary parts of the period basis?  That would be easy to add, like this:
 
+You'll have to explain it to me.  Do you want the 2x2 matrix of reals consisting of the real and imaginary parts of the period basis?  That would be easy to add, like this:
 
 ```
 sage: E = EllipticCurve('389a1')
@@ -116,9 +115,7 @@ sage: L.complex_area()
 ```
 
 
-
 and
-
 
 ```
 sage: E = EllipticCurve('11a1')
@@ -132,7 +129,6 @@ sage: M.det()
 sage: L.complex_area()
 1.85154362345596
 ```
-
 
 
 

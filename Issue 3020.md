@@ -131,7 +131,7 @@ archive/issue_events_006855.json:
 archive/issue_comments_020707.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> The patch looks good, some comments though:\n>  * I'd prefer to have the table in a different file rather than `finite_field.py`, say `gf2x_irred_table.py`?\n\nOk, I can do that.  If I then put\n\n```\n   import gf2x_irred_table\n```\n\nat the appropriate point in finite_field.py, it would only read it in if the function is called, right?\n\n>  * This is table from NTL? Can't we just read in the NTL table automatically?\n\nThis was intended to be a quick fix.  A better fix (as I originally posted) is to change the NTL wrapping code to use NTL's own function, when creating the field.  At the same time we could just wrap NTL's BuildSparseIrred() function.\n\n>  * Did you check if each entry is irreducible? I assume so, I just want to make it formally sure.\n\nI checked for k<1000 and was intending to do the rest (as you say, to be formally sure), but it takes quite a long time.",
+    "body": "Replying to [comment:2 malb]:\n> The patch looks good, some comments though:\n> * I'd prefer to have the table in a different file rather than `finite_field.py`, say `gf2x_irred_table.py`?\n\n\nOk, I can do that.  If I then put\n\n```\n   import gf2x_irred_table\n```\nat the appropriate point in finite_field.py, it would only read it in if the function is called, right?\n\n>  * This is table from NTL? Can't we just read in the NTL table automatically?\n\n\nThis was intended to be a quick fix.  A better fix (as I originally posted) is to change the NTL wrapping code to use NTL's own function, when creating the field.  At the same time we could just wrap NTL's BuildSparseIrred() function.\n\n>  * Did you check if each entry is irreducible? I assume so, I just want to make it formally sure.\n\n\nI checked for k<1000 and was intending to do the rest (as you say, to be formally sure), but it takes quite a long time.",
     "created_at": "2008-04-25T08:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -142,21 +142,23 @@ archive/issue_comments_020707.json:
 
 Replying to [comment:2 malb]:
 > The patch looks good, some comments though:
->  * I'd prefer to have the table in a different file rather than `finite_field.py`, say `gf2x_irred_table.py`?
+> * I'd prefer to have the table in a different file rather than `finite_field.py`, say `gf2x_irred_table.py`?
+
 
 Ok, I can do that.  If I then put
 
 ```
    import gf2x_irred_table
 ```
-
 at the appropriate point in finite_field.py, it would only read it in if the function is called, right?
 
 >  * This is table from NTL? Can't we just read in the NTL table automatically?
 
+
 This was intended to be a quick fix.  A better fix (as I originally posted) is to change the NTL wrapping code to use NTL's own function, when creating the field.  At the same time we could just wrap NTL's BuildSparseIrred() function.
 
 >  * Did you check if each entry is irreducible? I assume so, I just want to make it formally sure.
+
 
 I checked for k<1000 and was intending to do the rest (as you say, to be formally sure), but it takes quite a long time.
 
@@ -347,7 +349,7 @@ updated patch which fixes the typo
 archive/issue_comments_020717.json:
 ```json
 {
-    "body": "> # typo in line 147 (spare -> sparse) \n\nFixed in updated patch (same patch, overwritten) \n\n> # l.203-4: I wondered why you call BuildSparseIrred first. But\n> I see that NTL's BuildRandomIrred takes a monic irreducible as\n> input and returns another of the same degree, which is rather\n> bizarre, so I guess you had no choice.\n\nexactly, but I'm not an NTL expert.",
+    "body": "> # typo in line 147 (spare -> sparse) \n\n\nFixed in updated patch (same patch, overwritten) \n\n> # l.203-4: I wondered why you call BuildSparseIrred first. But\n> I see that NTL's BuildRandomIrred takes a monic irreducible as\n> input and returns another of the same degree, which is rather\n> bizarre, so I guess you had no choice.\n\n\nexactly, but I'm not an NTL expert.",
     "created_at": "2008-05-06T10:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -358,12 +360,14 @@ archive/issue_comments_020717.json:
 
 > # typo in line 147 (spare -> sparse) 
 
+
 Fixed in updated patch (same patch, overwritten) 
 
 > # l.203-4: I wondered why you call BuildSparseIrred first. But
 > I see that NTL's BuildRandomIrred takes a monic irreducible as
 > input and returns another of the same degree, which is rather
 > bizarre, so I guess you had no choice.
+
 
 exactly, but I'm not an NTL expert.
 
@@ -398,7 +402,7 @@ Michael
 archive/issue_comments_020719.json:
 ```json
 {
-    "body": "Replying to [comment:13 mabshoff]:\n> it is my understand now to only apply GF2X_sparse_poly.patch. \n\ncorrect.\n\n> What is the status of the concern regarding the random state? Was that just a \n> general observation since Carl only covered so many randomness sources by his\n> framework?\n\nMy guess is that he covers NTL, but we can always open another ticket and address the issue there.",
+    "body": "Replying to [comment:13 mabshoff]:\n> it is my understand now to only apply GF2X_sparse_poly.patch. \n\n\ncorrect.\n\n> What is the status of the concern regarding the random state? Was that just a \n> general observation since Carl only covered so many randomness sources by his\n> framework?\n\n\nMy guess is that he covers NTL, but we can always open another ticket and address the issue there.",
     "created_at": "2008-05-06T11:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -410,11 +414,13 @@ archive/issue_comments_020719.json:
 Replying to [comment:13 mabshoff]:
 > it is my understand now to only apply GF2X_sparse_poly.patch. 
 
+
 correct.
 
 > What is the status of the concern regarding the random state? Was that just a 
 > general observation since Carl only covered so many randomness sources by his
 > framework?
+
 
 My guess is that he covers NTL, but we can always open another ticket and address the issue there.
 

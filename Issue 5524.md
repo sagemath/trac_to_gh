@@ -128,7 +128,7 @@ Changing assignee from cwitty to @nthiery.
 archive/issue_comments_042896.json:
 ```json
 {
-    "body": "I'm getting a failing doctest:\n\n```\nsage -t  \"devel/sage-trac/sage/misc/misc.py\"                \n**********************************************************************\nFile \"/usr/local/src/sage/devel/sage-trac/sage/misc/misc.py\", line 2103:\n    sage: TestSuite(f).run()\nException raised:\n...\nAttributeError: 'AttrCallObject' object has no attribute '_tester'\n```\n\n\nI'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?",
+    "body": "I'm getting a failing doctest:\n\n```\nsage -t  \"devel/sage-trac/sage/misc/misc.py\"                \n**********************************************************************\nFile \"/usr/local/src/sage/devel/sage-trac/sage/misc/misc.py\", line 2103:\n    sage: TestSuite(f).run()\nException raised:\n...\nAttributeError: 'AttrCallObject' object has no attribute '_tester'\n```\n\nI'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?",
     "created_at": "2010-01-26T21:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
@@ -148,7 +148,6 @@ Exception raised:
 ...
 AttributeError: 'AttrCallObject' object has no attribute '_tester'
 ```
-
 
 I'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?
 
@@ -177,7 +176,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_042898.json:
 ```json
 {
-    "body": "Replying to [comment:4 jbandlow]:\n> I'm getting a failing doctest:\n> I'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?\n\nI should have mentioned it depends on #8001.",
+    "body": "Replying to [comment:4 jbandlow]:\n> I'm getting a failing doctest:\n> I'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?\n\n\nI should have mentioned it depends on #8001.",
     "created_at": "2010-01-26T21:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
@@ -189,6 +188,7 @@ archive/issue_comments_042898.json:
 Replying to [comment:4 jbandlow]:
 > I'm getting a failing doctest:
 > I'm applying on top of 4.3.1 plus #7976, #7921, #7938, #8028.  Am I missing something?
+
 
 I should have mentioned it depends on #8001.
 

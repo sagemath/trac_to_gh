@@ -3,7 +3,7 @@
 archive/issues_004367.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n   sage: plot(gamma(x),(x,1,5))\n```\n\n\nGives error.  \n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jvoight/.sage/sage_notebook/worksheets/jvoight/10/code/18.py\", line 6, in <module>\n    plot(gamma(x),(x,Integer(1),Integer(5)))\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/functions/transcendental.py\", line 106, in gamma\n    return CC(s).gamma()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py\", line 211, in __call__\n    return x._complex_mpfr_field_( self )\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1451, in _complex_mpfr_field_\n    raise TypeError\nTypeError\n```\n\n\nThere seems to be some confusing type error in coercion between floats and complex numbers.\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4367\n\n",
+    "body": "Assignee: @williamstein\n\n```\n   sage: plot(gamma(x),(x,1,5))\n```\n\nGives error.  \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jvoight/.sage/sage_notebook/worksheets/jvoight/10/code/18.py\", line 6, in <module>\n    plot(gamma(x),(x,Integer(1),Integer(5)))\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/functions/transcendental.py\", line 106, in gamma\n    return CC(s).gamma()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py\", line 211, in __call__\n    return x._complex_mpfr_field_( self )\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1451, in _complex_mpfr_field_\n    raise TypeError\nTypeError\n```\n\nThere seems to be some confusing type error in coercion between floats and complex numbers.\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4367\n\n",
     "created_at": "2008-10-25T18:54:40Z",
     "labels": [
         "component: graphics",
@@ -18,14 +18,11 @@ archive/issues_004367.json:
 ```
 Assignee: @williamstein
 
-
 ```
    sage: plot(gamma(x),(x,1,5))
 ```
 
-
 Gives error.  
-
 
 ```
 Traceback (most recent call last):
@@ -42,7 +39,6 @@ Traceback (most recent call last):
     raise TypeError
 TypeError
 ```
-
 
 There seems to be some confusing type error in coercion between floats and complex numbers.
 

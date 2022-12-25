@@ -111,7 +111,7 @@ So I guess what I'm proposing is that we raise an exception if a Gauss or Jacobi
 archive/issue_comments_025673.json:
 ```json
 {
-    "body": "Even in the prime case, I think the last two outputs below should agree:\n\n```\nsage: N = 13\nsage: D = DirichletGroup(N)\nsage: g = D(1)\nsage: g.jacobi_sum(g)\n13\nsage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])\n11\n```\n\n(My previous comment was with N=9, which is not prime.) If your proposal is accepted and an exception is raised, I'd prefer to have an option where the exception is over-written and the result computed anyway. (Some people do research on finite ring computations and might find the ring-theoretic Jacobi+Gauss sum functions interesting.)",
+    "body": "Even in the prime case, I think the last two outputs below should agree:\n\n```\nsage: N = 13\nsage: D = DirichletGroup(N)\nsage: g = D(1)\nsage: g.jacobi_sum(g)\n13\nsage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])\n11\n```\n(My previous comment was with N=9, which is not prime.) If your proposal is accepted and an exception is raised, I'd prefer to have an option where the exception is over-written and the result computed anyway. (Some people do research on finite ring computations and might find the ring-theoretic Jacobi+Gauss sum functions interesting.)",
     "created_at": "2008-07-16T20:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ sage: g.jacobi_sum(g)
 sage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])
 11
 ```
-
 (My previous comment was with N=9, which is not prime.) If your proposal is accepted and an exception is raised, I'd prefer to have an option where the exception is over-written and the result computed anyway. (Some people do research on finite ring computations and might find the ring-theoretic Jacobi+Gauss sum functions interesting.)
 
 

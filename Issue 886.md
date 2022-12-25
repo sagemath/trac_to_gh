@@ -3,7 +3,7 @@
 archive/issues_000886.json:
 ```json
 {
-    "body": "Assignee: failure\n\nA trivial doctest failure.  On sage.math:\n\n```\nFile \"integer_mod.pyx\", line 460:\n    sage: type(a.polynomial())\nExpected:\n    <class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/886\n\n",
+    "body": "Assignee: failure\n\nA trivial doctest failure.  On sage.math:\n\n```\nFile \"integer_mod.pyx\", line 460:\n    sage: type(a.polynomial())\nExpected:\n    <class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/886\n\n",
     "created_at": "2007-10-13T20:25:31Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ Expected:
 Got:
     <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/886
 

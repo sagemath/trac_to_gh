@@ -144,7 +144,7 @@ Nathann
 archive/issue_comments_081466.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n> Oops... It sounds like the patch uploaded here does not corerespond to the ticket at all ^^;\n> \n\nThanks.  I was kind of wondering where the CPLEX stuff was... :)\n\n\n> About #8364, well.. I still agree with you when you say a dict is cleaner, but it will definitely be very quickly annoying to do all this when you just want to change the solver.. And to be honest, there are only 2 different arguments which can be passed down to the MixedIntegerLinearProgram at the moment :\n> \n>  * log ( verbosity)\n>  * solver (change the default solver)\n> \n> It may be beter though, to satisfy all of us, to just replace this **kwds by these two parameters... So I will completely rewrite #8364 like this if you agree, which needed to be done anyway as its patch is not based on the latest version of sage :-)\n\n\nThat sounds like a great plan.",
+    "body": "Replying to [comment:6 ncohen]:\n> Oops... It sounds like the patch uploaded here does not corerespond to the ticket at all ^^;\n> \n\n\nThanks.  I was kind of wondering where the CPLEX stuff was... :)\n\n\n> About #8364, well.. I still agree with you when you say a dict is cleaner, but it will definitely be very quickly annoying to do all this when you just want to change the solver.. And to be honest, there are only 2 different arguments which can be passed down to the MixedIntegerLinearProgram at the moment :\n> \n> * log ( verbosity)\n> * solver (change the default solver)\n> \n> It may be beter though, to satisfy all of us, to just replace this **kwds by these two parameters... So I will completely rewrite #8364 like this if you agree, which needed to be done anyway as its patch is not based on the latest version of sage :-)\n\n\n\nThat sounds like a great plan.",
     "created_at": "2010-05-05T14:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
@@ -157,15 +157,17 @@ Replying to [comment:6 ncohen]:
 > Oops... It sounds like the patch uploaded here does not corerespond to the ticket at all ^^;
 > 
 
+
 Thanks.  I was kind of wondering where the CPLEX stuff was... :)
 
 
 > About #8364, well.. I still agree with you when you say a dict is cleaner, but it will definitely be very quickly annoying to do all this when you just want to change the solver.. And to be honest, there are only 2 different arguments which can be passed down to the MixedIntegerLinearProgram at the moment :
 > 
->  * log ( verbosity)
->  * solver (change the default solver)
+> * log ( verbosity)
+> * solver (change the default solver)
 > 
 > It may be beter though, to satisfy all of us, to just replace this **kwds by these two parameters... So I will completely rewrite #8364 like this if you agree, which needed to be done anyway as its patch is not based on the latest version of sage :-)
+
 
 
 That sounds like a great plan.
@@ -215,7 +217,7 @@ Nathann
 archive/issue_comments_081469.json:
 ```json
 {
-    "body": "Replying to [comment:9 ncohen]:\n> Hmmm... Ok, but... why ? The user just wants to incraase the level of verbosity of the function he is using, is he really interested in knowing we are using LP in this particular case ? It's as if we were using algorithm_log or function_log... What do we earn this way ? :-)\n\n\nGood point.  \"log\" didn't seem to be the usual convention.  It would be more conventional to use a \"verbose\" keyword for printing out lots of intermediate information.",
+    "body": "Replying to [comment:9 ncohen]:\n> Hmmm... Ok, but... why ? The user just wants to incraase the level of verbosity of the function he is using, is he really interested in knowing we are using LP in this particular case ? It's as if we were using algorithm_log or function_log... What do we earn this way ? :-)\n\n\n\nGood point.  \"log\" didn't seem to be the usual convention.  It would be more conventional to use a \"verbose\" keyword for printing out lots of intermediate information.",
     "created_at": "2010-05-06T03:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
@@ -226,6 +228,7 @@ archive/issue_comments_081469.json:
 
 Replying to [comment:9 ncohen]:
 > Hmmm... Ok, but... why ? The user just wants to incraase the level of verbosity of the function he is using, is he really interested in knowing we are using LP in this particular case ? It's as if we were using algorithm_log or function_log... What do we earn this way ? :-)
+
 
 
 Good point.  "log" didn't seem to be the usual convention.  It would be more conventional to use a "verbose" keyword for printing out lots of intermediate information.
@@ -273,7 +276,7 @@ Removes a "CPLEX IS NOT IMPLEMENTED YET" from the solve function's documentation
 archive/issue_comments_081472.json:
 ```json
 {
-    "body": "Replying to [comment:12 ncohen]:\n> Removes a \"CPLEX IS NOT IMPLEMENTED YET\" from the solve function's documentation !\n\nNice.  Um, except that the linear programming stuff is not in the \"tutorial\", but in the \"Constructions\" document.  I can see that being confusing...\n\nDon't update the patch yet; when I get cplex working, I might have another comment or two.",
+    "body": "Replying to [comment:12 ncohen]:\n> Removes a \"CPLEX IS NOT IMPLEMENTED YET\" from the solve function's documentation !\n\n\nNice.  Um, except that the linear programming stuff is not in the \"tutorial\", but in the \"Constructions\" document.  I can see that being confusing...\n\nDon't update the patch yet; when I get cplex working, I might have another comment or two.",
     "created_at": "2010-05-14T20:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
@@ -284,6 +287,7 @@ archive/issue_comments_081472.json:
 
 Replying to [comment:12 ncohen]:
 > Removes a "CPLEX IS NOT IMPLEMENTED YET" from the solve function's documentation !
+
 
 Nice.  Um, except that the linear programming stuff is not in the "tutorial", but in the "Constructions" document.  I can see that being confusing...
 
@@ -350,7 +354,7 @@ Changing assignee from @jasongrout to @nathanncohen.
 archive/issue_comments_081476.json:
 ```json
 {
-    "body": "Even with this patch, the first time I use p.solve(), I see this from CPLEX:\n\n\n```\nIBM ILOG License Manager: \"IBM ILOG Optimization Suite for Academic Initiative\" is accessing CPLEX 12 with option(s): \"e m b q \".\n```\n\n\nIs that unavoidable?  (Maybe it's desirable, I don't know)",
+    "body": "Even with this patch, the first time I use p.solve(), I see this from CPLEX:\n\n```\nIBM ILOG License Manager: \"IBM ILOG Optimization Suite for Academic Initiative\" is accessing CPLEX 12 with option(s): \"e m b q \".\n```\n\nIs that unavoidable?  (Maybe it's desirable, I don't know)",
     "created_at": "2010-05-15T03:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
@@ -361,11 +365,9 @@ archive/issue_comments_081476.json:
 
 Even with this patch, the first time I use p.solve(), I see this from CPLEX:
 
-
 ```
 IBM ILOG License Manager: "IBM ILOG Optimization Suite for Academic Initiative" is accessing CPLEX 12 with option(s): "e m b q ".
 ```
-
 
 Is that unavoidable?  (Maybe it's desirable, I don't know)
 

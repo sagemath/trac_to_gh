@@ -3,7 +3,7 @@
 archive/issues_000711.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage:  I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nInterrupting Singular...\nInterrupting Singular...\n\n<type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)\n```\n\nbut singular is still running!\n\nIssue created by migration from https://trac.sagemath.org/ticket/711\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage:  I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nInterrupting Singular...\nInterrupting Singular...\n\n<type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)\n```\nbut singular is still running!\n\nIssue created by migration from https://trac.sagemath.org/ticket/711\n\n",
     "created_at": "2007-09-20T18:19:40Z",
     "labels": [
         "component: interfaces",
@@ -18,7 +18,6 @@ archive/issues_000711.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: P = PolynomialRing(QQ,10,'x')
 sage:  I = sage.rings.ideal.Katsura(P)
@@ -28,7 +27,6 @@ Interrupting Singular...
 
 <type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)
 ```
-
 but singular is still running!
 
 Issue created by migration from https://trac.sagemath.org/ticket/711

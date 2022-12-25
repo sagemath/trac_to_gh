@@ -3,7 +3,7 @@
 archive/issues_003887.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @ClementPernet\n\nHere's a crazy bug:\n\n\n```\nsage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])\nsage: m.det()\n-73786800370889000442\nsage: m.det(proof=False)\n73786976294838206464\n```\n\n\nAmusingly, the `proof=False` one is correct. Fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3887\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ClementPernet\n\nHere's a crazy bug:\n\n```\nsage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])\nsage: m.det()\n-73786800370889000442\nsage: m.det(proof=False)\n73786976294838206464\n```\n\nAmusingly, the `proof=False` one is correct. Fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3887\n\n",
     "created_at": "2008-08-18T10:48:28Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ CC:  @ClementPernet
 
 Here's a crazy bug:
 
-
 ```
 sage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])
 sage: m.det()
@@ -31,7 +30,6 @@ sage: m.det()
 sage: m.det(proof=False)
 73786976294838206464
 ```
-
 
 Amusingly, the `proof=False` one is correct. Fix is attached.
 
@@ -195,7 +193,7 @@ What hardware was this on? I'm having trouble reproducing this bug (after revert
 archive/issue_comments_027681.json:
 ```json
 {
-    "body": "This pops up on my MacBook Pro, and whatever hardware Nils was running on (his linux laptop, not sure beyond that). \n\nI just checked -- reverting this patch gets me the same error:\n\n\n```\nsage: diagonal_matrix(ZZ, 68, [2]*66 + [1,1]).det()\n-73786800370889000442\n```\n\n\nThe bound that gets determined in that function is also wrong -- in this case, the divisor it finds is 2, and the final determinant is 2^66:\n\n\n```\nsage: 2^66\n73786976294838206464\nsage: 2^66 < 10^20\nTrue\nsage: 2^66 < 10^20//2\nFalse\n```\n",
+    "body": "This pops up on my MacBook Pro, and whatever hardware Nils was running on (his linux laptop, not sure beyond that). \n\nI just checked -- reverting this patch gets me the same error:\n\n```\nsage: diagonal_matrix(ZZ, 68, [2]*66 + [1,1]).det()\n-73786800370889000442\n```\n\nThe bound that gets determined in that function is also wrong -- in this case, the divisor it finds is 2, and the final determinant is 2^66:\n\n```\nsage: 2^66\n73786976294838206464\nsage: 2^66 < 10^20\nTrue\nsage: 2^66 < 10^20//2\nFalse\n```",
     "created_at": "2008-12-18T00:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
@@ -208,15 +206,12 @@ This pops up on my MacBook Pro, and whatever hardware Nils was running on (his l
 
 I just checked -- reverting this patch gets me the same error:
 
-
 ```
 sage: diagonal_matrix(ZZ, 68, [2]*66 + [1,1]).det()
 -73786800370889000442
 ```
 
-
 The bound that gets determined in that function is also wrong -- in this case, the divisor it finds is 2, and the final determinant is 2^66:
-
 
 ```
 sage: 2^66
@@ -226,7 +221,6 @@ True
 sage: 2^66 < 10^20//2
 False
 ```
-
 
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5557
 archive/issue_comments_043157.json:
 ```json
 {
-    "body": "This is a pretty stupid thing to do, but even so, I think an error message would be better than a wrong answer:\n\n```\nsage: foo = random_matrix(ZZ, 5)\nsage: foo.determinant(algorithm='4x4')\n-143\nsage: copy(foo).determinant()\n-159\n```\n",
+    "body": "This is a pretty stupid thing to do, but even so, I think an error message would be better than a wrong answer:\n\n```\nsage: foo = random_matrix(ZZ, 5)\nsage: foo.determinant(algorithm='4x4')\n-143\nsage: copy(foo).determinant()\n-159\n```",
     "created_at": "2009-03-18T17:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -52,13 +52,12 @@ sage: copy(foo).determinant()
 
 
 
-
 ---
 
 archive/issue_comments_043158.json:
 ```json
 {
-    "body": "cwitty, this wasn't quite ready -- but thanks for your diligence!  The new patch makes this method default for dimension 4, and removes the algorithm='4x4' option.  Also, I put the code used to generate this code into the matrix_integer_dense.pyx file.  Finally, the _det_4x4 method has been changed to _det_4x4_unsafe.\n\nTimings:\n\n```\nSage 3.4:\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    5 loops, best of 3: 1.75 s per loop\nUpdated...\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    625 loops, best of 3: 175 \u00b5s per loop\nUsing Pari:\n    sage: N = pari(M)\n    sage: timeit(\"N.matdet();\")\n    625 loops, best of 3: 337 \u00b5s per loop\n```\n\n\nSo in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.",
+    "body": "cwitty, this wasn't quite ready -- but thanks for your diligence!  The new patch makes this method default for dimension 4, and removes the algorithm='4x4' option.  Also, I put the code used to generate this code into the matrix_integer_dense.pyx file.  Finally, the _det_4x4 method has been changed to _det_4x4_unsafe.\n\nTimings:\n\n```\nSage 3.4:\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    5 loops, best of 3: 1.75 s per loop\nUpdated...\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    625 loops, best of 3: 175 \u00b5s per loop\nUsing Pari:\n    sage: N = pari(M)\n    sage: timeit(\"N.matdet();\")\n    625 loops, best of 3: 337 \u00b5s per loop\n```\n\nSo in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.",
     "created_at": "2009-03-18T23:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -88,7 +87,6 @@ Using Pari:
     625 loops, best of 3: 337 µs per loop
 ```
 
-
 So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.
 
 
@@ -98,7 +96,7 @@ So in general, this is hugely faster than the previous version of Sage, and twic
 archive/issue_comments_043159.json:
 ```json
 {
-    "body": "Replying to [comment:2 boothby]:\n\n```\n> Timings:\n> {{{\n> Sage 3.4:\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     5 loops, best of 3: 1.75 s per loop\n> Updated...\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     625 loops, best of 3: 175 \u00b5s per loop\n> Using Pari:\n>     sage: N = pari(M)\n>     sage: timeit(\"N.matdet();\")\n>     625 loops, best of 3: 337 \u00b5s per loop\n> }}}\n```\n\n> So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.\nHi Tom. Is it possible for you to give some system/architecture info of the machine from which you got the above timing statistics? Such info plus timing statistics are good for a release tour.",
+    "body": "Replying to [comment:2 boothby]:\n\n```\n> Timings:\n> {{{\n> Sage 3.4:\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     5 loops, best of 3: 1.75 s per loop\n> Updated...\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     625 loops, best of 3: 175 \u00b5s per loop\n> Using Pari:\n>     sage: N = pari(M)\n>     sage: timeit(\"N.matdet();\")\n>     625 loops, best of 3: 337 \u00b5s per loop\n> }}}\n```\n> So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.\n\nHi Tom. Is it possible for you to give some system/architecture info of the machine from which you got the above timing statistics? Such info plus timing statistics are good for a release tour.",
     "created_at": "2009-03-19T04:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -128,8 +126,8 @@ Replying to [comment:2 boothby]:
 >     625 loops, best of 3: 337 µs per loop
 > }}}
 ```
-
 > So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.
+
 Hi Tom. Is it possible for you to give some system/architecture info of the machine from which you got the above timing statistics? Such info plus timing statistics are good for a release tour.
 
 
@@ -139,7 +137,7 @@ Hi Tom. Is it possible for you to give some system/architecture info of the mach
 archive/issue_comments_043160.json:
 ```json
 {
-    "body": "How fast is it on smaller input?  Using PARI more efficiently I was able to get the following timings (in my branch of Sage):\n\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 14.9 \u00b5s per loop\nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 16.3 \u00b5s per loop\n```\n \n\nThings slow down for bigger input though:\n\n```\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 104 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 186 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 1.2 ms per loop\n```\n\n\nThe above is on OS X 32-bit core2duo 2.6Ghz.\n\nWilliam",
+    "body": "How fast is it on smaller input?  Using PARI more efficiently I was able to get the following timings (in my branch of Sage):\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 14.9 \u00b5s per loop\nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 16.3 \u00b5s per loop\n``` \n\nThings slow down for bigger input though:\n\n```\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 104 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 186 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 1.2 ms per loop\n```\n\nThe above is on OS X 32-bit core2duo 2.6Ghz.\n\nWilliam",
     "created_at": "2009-03-19T18:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -150,7 +148,6 @@ archive/issue_comments_043160.json:
 
 How fast is it on smaller input?  Using PARI more efficiently I was able to get the following timings (in my branch of Sage):
 
-
 ```
 sage: M = S.random_element(1,10^8)
 sage: timeit('M.det();M._clear_cache()')
@@ -158,8 +155,7 @@ sage: timeit('M.det();M._clear_cache()')
 sage: M = S.random_element(1,10^10)
 sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 16.3 µs per loop
-```
- 
+``` 
 
 Things slow down for bigger input though:
 
@@ -175,7 +171,6 @@ sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 1.2 ms per loop
 ```
 
-
 The above is on OS X 32-bit core2duo 2.6Ghz.
 
 William
@@ -187,7 +182,7 @@ William
 archive/issue_comments_043161.json:
 ```json
 {
-    "body": "Answering my question, on my computer with your code:\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 8.82 \u00b5s per loop\nsage: \nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 9.86 \u00b5s per loop\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 49.8 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 92.2 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 585 \u00b5s per loop\n```\n",
+    "body": "Answering my question, on my computer with your code:\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 8.82 \u00b5s per loop\nsage: \nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 9.86 \u00b5s per loop\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 49.8 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 92.2 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 585 \u00b5s per loop\n```",
     "created_at": "2009-03-19T20:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -216,7 +211,6 @@ sage: M = S.random_element(1,10^1000)
 sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 585 µs per loop
 ```
-
 
 
 
@@ -287,7 +281,7 @@ Michael
 archive/issue_comments_043165.json:
 ```json
 {
-    "body": "> So I guess the real question is; what percentage of the time \n> in the Brandt matrix code is being spent computing determinants? \n> Will this cut a couple of seconds off, or only a few millis off \n> of a 30-second computation? \n\nIt will definitely only cut \"a few millis\".\n\nBut I guess I'm OK with this code going in.",
+    "body": "> So I guess the real question is; what percentage of the time \n> in the Brandt matrix code is being spent computing determinants? \n> Will this cut a couple of seconds off, or only a few millis off \n> of a 30-second computation? \n\n\nIt will definitely only cut \"a few millis\".\n\nBut I guess I'm OK with this code going in.",
     "created_at": "2009-03-25T16:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -301,6 +295,7 @@ archive/issue_comments_043165.json:
 > Will this cut a couple of seconds off, or only a few millis off 
 > of a 30-second computation? 
 
+
 It will definitely only cut "a few millis".
 
 But I guess I'm OK with this code going in.
@@ -312,7 +307,7 @@ But I guess I'm OK with this code going in.
 archive/issue_comments_043166.json:
 ```json
 {
-    "body": "The two patches are causing a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/matrix/matrix_integer_dense.pyx\", line 3050:\n    sage: A.determinant(algorithm='linbox')\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: you must pass the proof=False option to the determinant command to use Linbox's det algorithm\nGot:\n    -843\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "The two patches are causing a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/matrix/matrix_integer_dense.pyx\", line 3050:\n    sage: A.determinant(algorithm='linbox')\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: you must pass the proof=False option to the determinant command to use Linbox's det algorithm\nGot:\n    -843\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-26T00:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -336,7 +331,6 @@ Got:
     -843
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -421,7 +415,7 @@ cwitty's argument is precisely how I justified (to myself) that this behavior is
 archive/issue_comments_043171.json:
 ```json
 {
-    "body": "> cwitty's argument is precisely how I justified (to myself) that this \n> behavior is OK. If you disagree, then this is an orthogonal issue, \n> and we should allow the user to override the\n\nOK, I'm convinced.",
+    "body": "> cwitty's argument is precisely how I justified (to myself) that this \n> behavior is OK. If you disagree, then this is an orthogonal issue, \n> and we should allow the user to override the\n\n\nOK, I'm convinced.",
     "created_at": "2009-03-29T18:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
@@ -433,6 +427,7 @@ archive/issue_comments_043171.json:
 > cwitty's argument is precisely how I justified (to myself) that this 
 > behavior is OK. If you disagree, then this is an orthogonal issue, 
 > and we should allow the user to override the
+
 
 OK, I'm convinced.
 

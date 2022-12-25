@@ -3,7 +3,7 @@
 archive/issues_002232.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis works\n\n```\nsage: 1.digits(16,'0123456789abcdef')\n['1']\nsage: 2.digits(16,'0123456789abcdef')\n['2']\n```\n\nbut this don't\n\n```\nsage: 0.digits(16,'0123456789abcdef')\n[]\n```\n\n\nThe problem exists for all bases. The '0'-value is never returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2232\n\n",
+    "body": "Assignee: somebody\n\nThis works\n\n```\nsage: 1.digits(16,'0123456789abcdef')\n['1']\nsage: 2.digits(16,'0123456789abcdef')\n['2']\n```\nbut this don't\n\n```\nsage: 0.digits(16,'0123456789abcdef')\n[]\n```\n\nThe problem exists for all bases. The '0'-value is never returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2232\n\n",
     "created_at": "2008-02-20T14:11:38Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,14 +26,12 @@ sage: 1.digits(16,'0123456789abcdef')
 sage: 2.digits(16,'0123456789abcdef')
 ['2']
 ```
-
 but this don't
 
 ```
 sage: 0.digits(16,'0123456789abcdef')
 []
 ```
-
 
 The problem exists for all bases. The '0'-value is never returned.
 
@@ -101,7 +99,7 @@ This might be relevant to #2170 (or the other way around)
 archive/issue_comments_014753.json:
 ```json
 {
-    "body": "I'm supposing that the poster of this bug wants:\n\n```\nsage: 0.digits(16,'0123456789abcdef')\n['0']\n```\n\n\nI do not like that.  I think one should use str for this (witness 2.10.2's current operation):  \n\n```\nsage: 0.str(10)\n'0'\nsage: f=0.str(10)\nsage: [c for c in f]\n['0']\n```\n\n\nI don't think that what I suggested is a perfect analog for what may have desired, but I don't like the inconsistency that this desired \"fix\" introduces for digits.",
+    "body": "I'm supposing that the poster of this bug wants:\n\n```\nsage: 0.digits(16,'0123456789abcdef')\n['0']\n```\n\nI do not like that.  I think one should use str for this (witness 2.10.2's current operation):  \n\n```\nsage: 0.str(10)\n'0'\nsage: f=0.str(10)\nsage: [c for c in f]\n['0']\n```\n\nI don't think that what I suggested is a perfect analog for what may have desired, but I don't like the inconsistency that this desired \"fix\" introduces for digits.",
     "created_at": "2008-03-01T16:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -117,7 +115,6 @@ sage: 0.digits(16,'0123456789abcdef')
 ['0']
 ```
 
-
 I do not like that.  I think one should use str for this (witness 2.10.2's current operation):  
 
 ```
@@ -128,7 +125,6 @@ sage: [c for c in f]
 ['0']
 ```
 
-
 I don't think that what I suggested is a perfect analog for what may have desired, but I don't like the inconsistency that this desired "fix" introduces for digits.
 
 
@@ -138,7 +134,7 @@ I don't think that what I suggested is a perfect analog for what may have desire
 archive/issue_comments_014754.json:
 ```json
 {
-    "body": "This example above (base=16) is from the docstring.\nYou're right that you should use \".str\" if you just want to get the string representation of a number in a given base.\n\nBut the digits function can do more. It can take any indexable object as source for the digits.\nSo i think this is really a bug which should be fixed, because this \n\n```\nsage: 0.digits(11,'pleasefixme')\n```\n\nshould return\n\n```\n['p']\n```\n",
+    "body": "This example above (base=16) is from the docstring.\nYou're right that you should use \".str\" if you just want to get the string representation of a number in a given base.\n\nBut the digits function can do more. It can take any indexable object as source for the digits.\nSo i think this is really a bug which should be fixed, because this \n\n```\nsage: 0.digits(11,'pleasefixme')\n```\nshould return\n\n```\n['p']\n```",
     "created_at": "2008-03-02T10:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -156,7 +152,6 @@ So i think this is really a bug which should be fixed, because this
 ```
 sage: 0.digits(11,'pleasefixme')
 ```
-
 should return
 
 ```
@@ -165,13 +160,12 @@ should return
 
 
 
-
 ---
 
 archive/issue_comments_014755.json:
 ```json
 {
-    "body": "I see that there is some precedent for agreeing that this is a bug:\n\n```\nsage: 0.ndigits()\n1\n```\n\nGiven my opinion that this bug is invalid, I would also want to change ndigits.  While on the subject of digits and ndigits, I think it is really awful that their default bases are not the same.",
+    "body": "I see that there is some precedent for agreeing that this is a bug:\n\n```\nsage: 0.ndigits()\n1\n```\nGiven my opinion that this bug is invalid, I would also want to change ndigits.  While on the subject of digits and ndigits, I think it is really awful that their default bases are not the same.",
     "created_at": "2008-03-03T19:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -186,7 +180,6 @@ I see that there is some precedent for agreeing that this is a bug:
 sage: 0.ndigits()
 1
 ```
-
 Given my opinion that this bug is invalid, I would also want to change ndigits.  While on the subject of digits and ndigits, I think it is really awful that their default bases are not the same.
 
 
@@ -218,7 +211,7 @@ see discussion [http://groups.google.com/group/sage-devel/browse_thread/thread/f
 archive/issue_comments_014757.json:
 ```json
 {
-    "body": "With-out applying and running the code, I have some comments.\n\n 1) I do not like the change in semantics when the digits are passed in.  I think that is way too arbitrary.  Essentially, you are overriding the default to padto when digits are passed in and making it default padto=1.\n\n 2) The \"zero = 0\" in the snippet below will create a python int with 0 -- it should be a sage int.  Use the_integer_ring._zero_element\n\n```\n \nif digits is None: \n    zero = 0           # value for padding \nelse: \n    zero = digits[0]   # value for padding \n```\n\n\n 3) Could you also in this patch change ndigits so it returns 0 for 0?  I think that accurately reflects the will of sage-devel and fits in this patch nicely.\n\nThanks for coding this patch up!",
+    "body": "With-out applying and running the code, I have some comments.\n\n 1) I do not like the change in semantics when the digits are passed in.  I think that is way too arbitrary.  Essentially, you are overriding the default to padto when digits are passed in and making it default padto=1.\n\n 2) The \"zero = 0\" in the snippet below will create a python int with 0 -- it should be a sage int.  Use the_integer_ring._zero_element\n\n```\n \nif digits is None: \n    zero = 0           # value for padding \nelse: \n    zero = digits[0]   # value for padding \n```\n\n 3) Could you also in this patch change ndigits so it returns 0 for 0?  I think that accurately reflects the will of sage-devel and fits in this patch nicely.\n\nThanks for coding this patch up!",
     "created_at": "2008-04-04T11:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",
     "type": "issue_comment",
@@ -240,7 +233,6 @@ if digits is None:
 else: 
     zero = digits[0]   # value for padding 
 ```
-
 
  3) Could you also in this patch change ndigits so it returns 0 for 0?  I think that accurately reflects the will of sage-devel and fits in this patch nicely.
 

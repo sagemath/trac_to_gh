@@ -3,7 +3,7 @@
 archive/issues_000975.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n(See http://groups.google.com/group/sage-devel/browse_thread/thread/78f8b6afea8ca8c8 for some discussion of this bug.)\n\nWhen sage launches an external application (for example, eog, or singular) it does so with LD_LIBRARY_PATH set to sage defaults. This is necessary for some applications (e.g. singular), but it breaks other applications on some systems (e.g. eog, when running on bober's laptop).\n\nThe following examples all take place on bober's laptop, which is a 32-bit Core Duo recently upgraded to Ubuntu 7.10. (Presumably, the problems were not there under Ubuntu 7.04 so this is a system specific defect.)\n\nSome typical examples are\n\n\n```\nsage: !eog\neog: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n\nsage: !gimp\ngimp: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n\nsage: !gvim\ngvim: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n```\n\n\nAlso, this extends to a problem with python package locations, for example (glchess is a python program, which, on Ubuntu, at least, has most of its files installed under `/usr/lib/python2.5/site-packages/glchess`)\n\n\n```\nsage: !glchess\nTraceback (most recent call last):\n  File \"/usr/games/glchess\", line 18, in <module>\n    from glchess.glchess import start_game\nImportError: No module named glchess.glchess\n```\n\n\nA basic temporary workaround is to change certain instances of `os.system(command)` to\n`os.system(\"LD_LIBRARY_PATH='' \" + command)`. This may allow plot().show() to work correctly in some cases, for example.\n\nA possible better fix described by mabshoff is \n\n  The problem is that application like singular would fail if LD_LIBRARY_PATH was unset. One solution would be to come up with a white list of applications that are \"Sage internal\" or alternatively check if in case we do '!foo' whether there is a foo in $SAGE_LOCAL/bin and execute with LD_LIBRARY_PATH or alternatively if foo isn't in $SAGE_LOCAL/bin execute with the old LD_LIBRARY_PATH before sage-env changed it [and not with an empty one!]\n\nIssue created by migration from https://trac.sagemath.org/ticket/975\n\n",
+    "body": "Assignee: mabshoff\n\n(See http://groups.google.com/group/sage-devel/browse_thread/thread/78f8b6afea8ca8c8 for some discussion of this bug.)\n\nWhen sage launches an external application (for example, eog, or singular) it does so with LD_LIBRARY_PATH set to sage defaults. This is necessary for some applications (e.g. singular), but it breaks other applications on some systems (e.g. eog, when running on bober's laptop).\n\nThe following examples all take place on bober's laptop, which is a 32-bit Core Duo recently upgraded to Ubuntu 7.10. (Presumably, the problems were not there under Ubuntu 7.04 so this is a system specific defect.)\n\nSome typical examples are\n\n```\nsage: !eog\neog: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n\nsage: !gimp\ngimp: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n\nsage: !gvim\ngvim: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n```\n\nAlso, this extends to a problem with python package locations, for example (glchess is a python program, which, on Ubuntu, at least, has most of its files installed under `/usr/lib/python2.5/site-packages/glchess`)\n\n```\nsage: !glchess\nTraceback (most recent call last):\n  File \"/usr/games/glchess\", line 18, in <module>\n    from glchess.glchess import start_game\nImportError: No module named glchess.glchess\n```\n\nA basic temporary workaround is to change certain instances of `os.system(command)` to\n`os.system(\"LD_LIBRARY_PATH='' \" + command)`. This may allow plot().show() to work correctly in some cases, for example.\n\nA possible better fix described by mabshoff is \n\n  The problem is that application like singular would fail if LD_LIBRARY_PATH was unset. One solution would be to come up with a white list of applications that are \"Sage internal\" or alternatively check if in case we do '!foo' whether there is a foo in $SAGE_LOCAL/bin and execute with LD_LIBRARY_PATH or alternatively if foo isn't in $SAGE_LOCAL/bin execute with the old LD_LIBRARY_PATH before sage-env changed it [and not with an empty one!]\n\nIssue created by migration from https://trac.sagemath.org/ticket/975\n\n",
     "created_at": "2007-10-23T19:26:12Z",
     "labels": [
         "component: distribution",
@@ -27,7 +27,6 @@ The following examples all take place on bober's laptop, which is a 32-bit Core 
 
 Some typical examples are
 
-
 ```
 sage: !eog
 eog: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64
@@ -39,9 +38,7 @@ sage: !gvim
 gvim: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter
 ```
 
-
 Also, this extends to a problem with python package locations, for example (glchess is a python program, which, on Ubuntu, at least, has most of its files installed under `/usr/lib/python2.5/site-packages/glchess`)
-
 
 ```
 sage: !glchess
@@ -50,7 +47,6 @@ Traceback (most recent call last):
     from glchess.glchess import start_game
 ImportError: No module named glchess.glchess
 ```
-
 
 A basic temporary workaround is to change certain instances of `os.system(command)` to
 `os.system("LD_LIBRARY_PATH='' " + command)`. This may allow plot().show() to work correctly in some cases, for example.
@@ -188,7 +184,7 @@ f
 archive/issue_comments_005929.json:
 ```json
 {
-    "body": "\n```\n> \n> \n> sage: hg_sage.commit()\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg diff  | less\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg commit\n> emacs: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol:\n> FT_Library_SetLcdFilter\n> transaction abort!\n> rollback completed\n> abort: edit failed: emacs exited with status 127\n> \n\nThis is a library conflict.   I know how to fix it, by unsetting some environment\nvariables before calling emacs.   This is trac #975:\n    http://trac.sagemath.org/sage_trac/ticket/975\n\nFor now, if you put this in your SAGE_ROOT/local/bin/ it will be a work-around:\n   (1) Make a file SAGE_ROOT/local/bin/emacs\n   (2) Put this in it:\n\n#!/bin/sh\nunset LD_LIBRARY_PATH\nunset DYLD_LIBRARY_PATH\n/usr/bin/emacs $@\n\n   (3) make it executable:\n        chmod +x SAGE_ROOT/local/bin/emacs\n\nWilliam\n```\n",
+    "body": "```\n> \n> \n> sage: hg_sage.commit()\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg diff  | less\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg commit\n> emacs: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol:\n> FT_Library_SetLcdFilter\n> transaction abort!\n> rollback completed\n> abort: edit failed: emacs exited with status 127\n> \n\nThis is a library conflict.   I know how to fix it, by unsetting some environment\nvariables before calling emacs.   This is trac #975:\n    http://trac.sagemath.org/sage_trac/ticket/975\n\nFor now, if you put this in your SAGE_ROOT/local/bin/ it will be a work-around:\n   (1) Make a file SAGE_ROOT/local/bin/emacs\n   (2) Put this in it:\n\n#!/bin/sh\nunset LD_LIBRARY_PATH\nunset DYLD_LIBRARY_PATH\n/usr/bin/emacs $@\n\n   (3) make it executable:\n        chmod +x SAGE_ROOT/local/bin/emacs\n\nWilliam\n```",
     "created_at": "2007-12-11T02:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
@@ -196,7 +192,6 @@ archive/issue_comments_005929.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > 
@@ -229,7 +224,6 @@ unset DYLD_LIBRARY_PATH
 
 William
 ```
-
 
 
 
@@ -290,7 +284,7 @@ archive/issue_events_002697.json:
 archive/issue_comments_005931.json:
 ```json
 {
-    "body": "The update-environment.patch takes care of the case:\n\n!eog\n\nor other commands using the shell \"!\" function.  However, this does not address other searches for libraries.  So, for example, plot(x,0,1).show() still does *not* pop up a window.\n\nThe following will pop up a window, though:\n\n\n```\nsage: import os\nsage: os.environ['LD_LIBRARY_PATH']=os.environ['SAGE_ORIG_LD_LIBRARY_PATH']\nsage: plot(x,1,2).show()\n```\n\n\nNote that using os.environ like this exposes a memory leak on FreeBSD and possibly Mac OSX (see http://docs.python.org/lib/os-procinfo.html and http://www.freebsd.org/cgi/man.cgi?query=putenv&sektion=3 for example).  Also, probably messes up other things that depend on the modified LD_LIBRARY_PATH\n\nI have no idea how to set the LD_LIBRARY_PATH for the show() command, for example.",
+    "body": "The update-environment.patch takes care of the case:\n\n!eog\n\nor other commands using the shell \"!\" function.  However, this does not address other searches for libraries.  So, for example, plot(x,0,1).show() still does *not* pop up a window.\n\nThe following will pop up a window, though:\n\n```\nsage: import os\nsage: os.environ['LD_LIBRARY_PATH']=os.environ['SAGE_ORIG_LD_LIBRARY_PATH']\nsage: plot(x,1,2).show()\n```\n\nNote that using os.environ like this exposes a memory leak on FreeBSD and possibly Mac OSX (see http://docs.python.org/lib/os-procinfo.html and http://www.freebsd.org/cgi/man.cgi?query=putenv&sektion=3 for example).  Also, probably messes up other things that depend on the modified LD_LIBRARY_PATH\n\nI have no idea how to set the LD_LIBRARY_PATH for the show() command, for example.",
     "created_at": "2007-12-12T00:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
@@ -307,13 +301,11 @@ or other commands using the shell "!" function.  However, this does not address 
 
 The following will pop up a window, though:
 
-
 ```
 sage: import os
 sage: os.environ['LD_LIBRARY_PATH']=os.environ['SAGE_ORIG_LD_LIBRARY_PATH']
 sage: plot(x,1,2).show()
 ```
-
 
 Note that using os.environ like this exposes a memory leak on FreeBSD and possibly Mac OSX (see http://docs.python.org/lib/os-procinfo.html and http://www.freebsd.org/cgi/man.cgi?query=putenv&sektion=3 for example).  Also, probably messes up other things that depend on the modified LD_LIBRARY_PATH
 

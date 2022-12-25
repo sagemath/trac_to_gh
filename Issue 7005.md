@@ -83,7 +83,7 @@ Cheers, Georg
 archive/issue_comments_057826.json:
 ```json
 {
-    "body": "Replying to [comment:2 GeorgSWeber]:\n> The issue with libSingular on Cygwin always had been that it didn't work well with Python extensions / Cython. Does this work now (I can't test it myself currently, lacking a cygwin system/install)? If so, it has taken literally years to weed out one obstacle after another ... \n\nI have a working Cygwin install, but don't really know anything about the interface with Python extensions and Cython. Can you give me something to test? A simple bit of code to compile and try, maybe?",
+    "body": "Replying to [comment:2 GeorgSWeber]:\n> The issue with libSingular on Cygwin always had been that it didn't work well with Python extensions / Cython. Does this work now (I can't test it myself currently, lacking a cygwin system/install)? If so, it has taken literally years to weed out one obstacle after another ... \n\n\nI have a working Cygwin install, but don't really know anything about the interface with Python extensions and Cython. Can you give me something to test? A simple bit of code to compile and try, maybe?",
     "created_at": "2009-09-27T23:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
@@ -95,6 +95,7 @@ archive/issue_comments_057826.json:
 Replying to [comment:2 GeorgSWeber]:
 > The issue with libSingular on Cygwin always had been that it didn't work well with Python extensions / Cython. Does this work now (I can't test it myself currently, lacking a cygwin system/install)? If so, it has taken literally years to weed out one obstacle after another ... 
 
+
 I have a working Cygwin install, but don't really know anything about the interface with Python extensions and Cython. Can you give me something to test? A simple bit of code to compile and try, maybe?
 
 
@@ -104,7 +105,7 @@ I have a working Cygwin install, but don't really know anything about the interf
 archive/issue_comments_057827.json:
 ```json
 {
-    "body": "Replying to [comment:2 GeorgSWeber]:\n> Hi, just to mention it:\n> \n> this \"p1\" spkg is based on the \"original\" Singular spkg from Sage 4.1.2.alpha1/2, and not on the \"p0\" spkg referenced from trac #6951. The changes therein already were forgotten once (in the transition from Singular 3-1-0-2 to Singular 3-1-0-4), so please make sure that they are not forgotten again :-)\n> \n> The issue with libSingular on Cygwin always had been that it didn't work \n> well with Python extensions / Cython. Does this work now (I can't test it \n> myself currently, lacking a cygwin system/install)? If so, it has taken\n> literally years to weed out one obstacle after another ... \n\nSage doesn't work on Cygwin, so *nobody knows*!   That said, Michael Abshoff claimed the problems with libSingular on Cygwin were fixed in May when Martin Albrecht and Michael Abshoff both visited UW, and were evidently the same as the problems that had to be fixed to get Sage to work on 64-bit OS X 10.5.   So yes, it is likely that this is resolved.  But that's not what this patch is about.",
+    "body": "Replying to [comment:2 GeorgSWeber]:\n> Hi, just to mention it:\n> \n> this \"p1\" spkg is based on the \"original\" Singular spkg from Sage 4.1.2.alpha1/2, and not on the \"p0\" spkg referenced from trac #6951. The changes therein already were forgotten once (in the transition from Singular 3-1-0-2 to Singular 3-1-0-4), so please make sure that they are not forgotten again :-)\n> \n> The issue with libSingular on Cygwin always had been that it didn't work \n> well with Python extensions / Cython. Does this work now (I can't test it \n> myself currently, lacking a cygwin system/install)? If so, it has taken\n> literally years to weed out one obstacle after another ... \n\n\nSage doesn't work on Cygwin, so *nobody knows*!   That said, Michael Abshoff claimed the problems with libSingular on Cygwin were fixed in May when Martin Albrecht and Michael Abshoff both visited UW, and were evidently the same as the problems that had to be fixed to get Sage to work on 64-bit OS X 10.5.   So yes, it is likely that this is resolved.  But that's not what this patch is about.",
     "created_at": "2009-10-01T15:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
@@ -123,6 +124,7 @@ Replying to [comment:2 GeorgSWeber]:
 > myself currently, lacking a cygwin system/install)? If so, it has taken
 > literally years to weed out one obstacle after another ... 
 
+
 Sage doesn't work on Cygwin, so *nobody knows*!   That said, Michael Abshoff claimed the problems with libSingular on Cygwin were fixed in May when Martin Albrecht and Michael Abshoff both visited UW, and were evidently the same as the problems that had to be fixed to get Sage to work on 64-bit OS X 10.5.   So yes, it is likely that this is resolved.  But that's not what this patch is about.
 
 
@@ -132,7 +134,7 @@ Sage doesn't work on Cygwin, so *nobody knows*!   That said, Michael Abshoff cla
 archive/issue_comments_057828.json:
 ```json
 {
-    "body": "> The issue with libSingular on Cygwin always had been that it didn't\n> work well with Python extensions / Cython. Does this work now...\n\nYES.  It works fine.",
+    "body": "> The issue with libSingular on Cygwin always had been that it didn't\n> work well with Python extensions / Cython. Does this work now...\n\n\nYES.  It works fine.",
     "created_at": "2009-10-25T01:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
@@ -143,6 +145,7 @@ archive/issue_comments_057828.json:
 
 > The issue with libSingular on Cygwin always had been that it didn't
 > work well with Python extensions / Cython. Does this work now...
+
 
 YES.  It works fine.
 

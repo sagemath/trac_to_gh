@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4162
 archive/issue_comments_030144.json:
 ```json
 {
-    "body": "For reference, here is a list from the above mailing list discussion:\n\n\n```\n# Desirable Trac Features #\n\n* more statistics\n* a default CC to a google group sage-trac, this requires that a\n  google group is created [done] and that somebody with admin\n  access to sagemath.org enables smtp for trac [not done yet]\n* mercurial bundle browsing: This is currently not support by\n  the mercurial plugin for trac, but Robert Bradshaw might end up\n  doing some trac hacking as part of his TA appointment at UW so\n  he could perhaps look into this.\n* IRC logs: A trac extension to log IRC channels exists. We should\n  consider using it, but make it clear in #sage-devel that the\n  discussion is logged. We should also consider adding #sage-support\n  so that the signal/noise ratio for development stays high on\n  #sage-devel, but sage newbies could ask questions about Sage use.\n  This would also potentially be a way for people to move up in\n  the food chain from sage newbie to experienced user to eventually\n  sage developer.\n* loads more interesting bits at http://trac-hacks.org/ - but we\n  should not merge in too many extensions because it makes\n  maintainability more difficult once we upgrade to newer trac\n  releases. I maintain several phpBB installations and not\n  adding a wild bunch of mods proved to be a smart choice.\n* Jason Grout has suggested new \"states\" of tickets to make\n  the system more finely grained:\n\n      active\n      active (needs more info)\n      patch (code needs work)\n      patch (code needs review)\n      patch (code needs to be committed)\n      fixed\n      duplicate\n      invalid\n      worksforme\n      wontfix\n      bydesign\n\n   The names have been modeled after Drupal's ticket tracking system \n```\n",
+    "body": "For reference, here is a list from the above mailing list discussion:\n\n```\n# Desirable Trac Features #\n\n* more statistics\n* a default CC to a google group sage-trac, this requires that a\n  google group is created [done] and that somebody with admin\n  access to sagemath.org enables smtp for trac [not done yet]\n* mercurial bundle browsing: This is currently not support by\n  the mercurial plugin for trac, but Robert Bradshaw might end up\n  doing some trac hacking as part of his TA appointment at UW so\n  he could perhaps look into this.\n* IRC logs: A trac extension to log IRC channels exists. We should\n  consider using it, but make it clear in #sage-devel that the\n  discussion is logged. We should also consider adding #sage-support\n  so that the signal/noise ratio for development stays high on\n  #sage-devel, but sage newbies could ask questions about Sage use.\n  This would also potentially be a way for people to move up in\n  the food chain from sage newbie to experienced user to eventually\n  sage developer.\n* loads more interesting bits at http://trac-hacks.org/ - but we\n  should not merge in too many extensions because it makes\n  maintainability more difficult once we upgrade to newer trac\n  releases. I maintain several phpBB installations and not\n  adding a wild bunch of mods proved to be a smart choice.\n* Jason Grout has suggested new \"states\" of tickets to make\n  the system more finely grained:\n\n      active\n      active (needs more info)\n      patch (code needs work)\n      patch (code needs review)\n      patch (code needs to be committed)\n      fixed\n      duplicate\n      invalid\n      worksforme\n      wontfix\n      bydesign\n\n   The names have been modeled after Drupal's ticket tracking system \n```",
     "created_at": "2008-09-21T02:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4162",
     "type": "issue_comment",
@@ -44,7 +44,6 @@ archive/issue_comments_030144.json:
 ```
 
 For reference, here is a list from the above mailing list discussion:
-
 
 ```
 # Desirable Trac Features #
@@ -87,7 +86,6 @@ For reference, here is a list from the above mailing list discussion:
 
    The names have been modeled after Drupal's ticket tracking system 
 ```
-
 
 
 

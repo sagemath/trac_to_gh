@@ -3,7 +3,7 @@
 archive/issues_002940.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following should all work \n\n\n```\nsage: var('x,y')\n(x, y)\nsage: (a < 1) + (b < 2)\nb + a < 3\nsage: (a < 1) + (b <= 2)\na + b < 3\nsage: (a <= 1) + (b == 2)\na + b <= 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2940\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should all work \n\n```\nsage: var('x,y')\n(x, y)\nsage: (a < 1) + (b < 2)\nb + a < 3\nsage: (a < 1) + (b <= 2)\na + b < 3\nsage: (a <= 1) + (b == 2)\na + b <= 3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2940\n\n",
     "created_at": "2008-04-16T09:07:51Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 The following should all work 
 
-
 ```
 sage: var('x,y')
 (x, y)
@@ -31,7 +30,6 @@ a + b < 3
 sage: (a <= 1) + (b == 2)
 a + b <= 3
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2940
 

@@ -3,7 +3,7 @@
 archive/issues_003872.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
     "created_at": "2008-08-15T10:11:17Z",
     "labels": [
         "component: calculus",
@@ -25,7 +25,6 @@ The goal of this ticket:
 1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. 
 
 2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:
-
 
 ```
 sage: var("x y",ns=1)
@@ -50,7 +49,6 @@ sage: x = sympy.var('x'); y = sympy.var('y')
 sage: timeit("((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()")
 625 loops, best of 3: 691 µs per loop
 ```
-
 
 
 The above would go in *before* any of this replaces the existing symbolic framework.
@@ -84,7 +82,7 @@ Changing assignee from @garyfurnish to @williamstein.
 archive/issue_comments_027540.json:
 ```json
 {
-    "body": "NOTE: There is something wrong on Itanium Linux since the library has no .so.  I did\n\n```\n  ln -s libginac-1.4.0.0.3 libginac.so\n```\n\nin local/lib, and then it built.  Mabshoff says \"some autoconf problem\".",
+    "body": "NOTE: There is something wrong on Itanium Linux since the library has no .so.  I did\n\n```\n  ln -s libginac-1.4.0.0.3 libginac.so\n```\nin local/lib, and then it built.  Mabshoff says \"some autoconf problem\".",
     "created_at": "2008-08-15T10:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -98,7 +96,6 @@ NOTE: There is something wrong on Itanium Linux since the library has no .so.  I
 ```
   ln -s libginac-1.4.0.0.3 libginac.so
 ```
-
 in local/lib, and then it built.  Mabshoff says "some autoconf problem".
 
 
@@ -138,7 +135,7 @@ The patches look good to me in general. Just a naive question -- why do you need
 archive/issue_comments_027542.json:
 ```json
 {
-    "body": "Sorry for the formatting, here:\n\n```\n \t82\tcdef Expression new_Expression_from_GEx(GEx juice): \n \t83\t    cdef Expression nex \n \t84\t    nex = <Expression>PY_NEW(Expression) \n \t85\t    GEx_construct_ex(&nex._gobj, juice) \n \t86\t    nex._parent = ring.NSR \n \t87\t    return nex \n```\n",
+    "body": "Sorry for the formatting, here:\n\n```\n \t82\tcdef Expression new_Expression_from_GEx(GEx juice): \n \t83\t    cdef Expression nex \n \t84\t    nex = <Expression>PY_NEW(Expression) \n \t85\t    GEx_construct_ex(&nex._gobj, juice) \n \t86\t    nex._parent = ring.NSR \n \t87\t    return nex \n```",
     "created_at": "2008-08-19T20:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ Sorry for the formatting, here:
  	86	    nex._parent = ring.NSR 
  	87	    return nex 
 ```
-
 
 
 
@@ -184,7 +180,7 @@ PY_NEW is a macro that creates a new object without calling any of the `__init__
 archive/issue_comments_027544.json:
 ```json
 {
-    "body": "Don't know if I am doing something wrong:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT add.lo -MD -MP -MF .deps/add.Tpo -c add.cpp  -fPIC -DPIC -DPIC -o add.o\nIn file included from expair.h:27,\n                 from expairseq.h:32,\n                 from add.h:26,\n                 from add.cpp:28:\nnumeric.h:97: error: extra qualification 'GiNaC::Number_T::' on member 'Number_T'\nmake[2]: *** [add.lo] Error 1\n```\n\nI am using Sage 3.1.1. Changing this:\n\nNumber_T::~Number_T();\n\nto this:\n\n~Number_T();\n\nin numeric.h fixes the problem for me. Using:\n\n```\n$ g++ --version\ng++ (Debian 4.3.1-9) 4.3.1\nCopyright (C) 2008 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n\n\nUnfortunately then it fails at:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT numeric.lo -MD -MP -MF .deps/numeric.Tpo -c numeric.cpp  -fPIC -DPIC -DPIC -o numeric.o\nnumeric.cpp: In function 'std::ostream& GiNaC::operator<<(std::ostream&, const GiNaC::Number_T&)':\nnumeric.cpp:231: error: jump to case label\nnumeric.cpp:222: error:   crosses initialization of 'PyObject* o'\n```\n\n\nI don't have more time to investigate.",
+    "body": "Don't know if I am doing something wrong:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT add.lo -MD -MP -MF .deps/add.Tpo -c add.cpp  -fPIC -DPIC -DPIC -o add.o\nIn file included from expair.h:27,\n                 from expairseq.h:32,\n                 from add.h:26,\n                 from add.cpp:28:\nnumeric.h:97: error: extra qualification 'GiNaC::Number_T::' on member 'Number_T'\nmake[2]: *** [add.lo] Error 1\n```\nI am using Sage 3.1.1. Changing this:\n\nNumber_T::~Number_T();\n\nto this:\n\n~Number_T();\n\nin numeric.h fixes the problem for me. Using:\n\n```\n$ g++ --version\ng++ (Debian 4.3.1-9) 4.3.1\nCopyright (C) 2008 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n\nUnfortunately then it fails at:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT numeric.lo -MD -MP -MF .deps/numeric.Tpo -c numeric.cpp  -fPIC -DPIC -DPIC -o numeric.o\nnumeric.cpp: In function 'std::ostream& GiNaC::operator<<(std::ostream&, const GiNaC::Number_T&)':\nnumeric.cpp:231: error: jump to case label\nnumeric.cpp:222: error:   crosses initialization of 'PyObject* o'\n```\n\nI don't have more time to investigate.",
     "created_at": "2008-08-20T11:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -204,7 +200,6 @@ In file included from expair.h:27,
 numeric.h:97: error: extra qualification 'GiNaC::Number_T::' on member 'Number_T'
 make[2]: *** [add.lo] Error 1
 ```
-
 I am using Sage 3.1.1. Changing this:
 
 Number_T::~Number_T();
@@ -223,7 +218,6 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-
 Unfortunately then it fails at:
 
 ```
@@ -232,7 +226,6 @@ numeric.cpp: In function 'std::ostream& GiNaC::operator<<(std::ostream&, const G
 numeric.cpp:231: error: jump to case label
 numeric.cpp:222: error:   crosses initialization of 'PyObject* o'
 ```
-
 
 I don't have more time to investigate.
 
@@ -300,7 +293,7 @@ So --- positive review!  Let's get this in sage.
 archive/issue_comments_027547.json:
 ```json
 {
-    "body": "Replying to [comment:19 was]:\n\n> So --- positive review!  Let's get this in sage.\n\nAfter ghmm I want to do some wider build testing, especially on Linux Itanium, Solaris as well as Cygwin before merging this.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:19 was]:\n\n> So --- positive review!  Let's get this in sage.\n\n\nAfter ghmm I want to do some wider build testing, especially on Linux Itanium, Solaris as well as Cygwin before merging this.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-23T23:51:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -312,6 +305,7 @@ archive/issue_comments_027547.json:
 Replying to [comment:19 was]:
 
 > So --- positive review!  Let's get this in sage.
+
 
 After ghmm I want to do some wider build testing, especially on Linux Itanium, Solaris as well as Cygwin before merging this.
 
@@ -326,7 +320,7 @@ Michael
 archive/issue_comments_027548.json:
 ```json
 {
-    "body": "Trying to install the spkg on OS X 10.4\n\n\n```\n...\nConfiguration of GiNaC 1.4.3 done. Now type \"make\".\ncd . && /bin/sh /Users/robert/sage/current/spkg/build/pynac-0.1/src/missing --run autoheader\naclocal.m4:17: error: this file was generated for autoconf 2.61.\nYou have another version of autoconf.  If you want to use that,\nyou should regenerate the build system entirely.\naclocal.m4:17: the top level\nautom4te: /usr/bin/gm4 failed with exit status: 63\nautoheader: /usr/bin/autom4te failed with exit status: 63\nmake: *** [config.h.in] Error 1\nError building ginac.\n\nreal    0m20.315s\nuser    0m6.509s\nsys     0m11.412s\n```\n\n\nI could have sworn I tried this out a month ago (perhaps that was on sage.math).",
+    "body": "Trying to install the spkg on OS X 10.4\n\n```\n...\nConfiguration of GiNaC 1.4.3 done. Now type \"make\".\ncd . && /bin/sh /Users/robert/sage/current/spkg/build/pynac-0.1/src/missing --run autoheader\naclocal.m4:17: error: this file was generated for autoconf 2.61.\nYou have another version of autoconf.  If you want to use that,\nyou should regenerate the build system entirely.\naclocal.m4:17: the top level\nautom4te: /usr/bin/gm4 failed with exit status: 63\nautoheader: /usr/bin/autom4te failed with exit status: 63\nmake: *** [config.h.in] Error 1\nError building ginac.\n\nreal    0m20.315s\nuser    0m6.509s\nsys     0m11.412s\n```\n\nI could have sworn I tried this out a month ago (perhaps that was on sage.math).",
     "created_at": "2008-09-23T23:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -336,7 +330,6 @@ archive/issue_comments_027548.json:
 ```
 
 Trying to install the spkg on OS X 10.4
-
 
 ```
 ...
@@ -355,7 +348,6 @@ real    0m20.315s
 user    0m6.509s
 sys     0m11.412s
 ```
-
 
 I could have sworn I tried this out a month ago (perhaps that was on sage.math).
 
@@ -410,7 +402,7 @@ Michael
 archive/issue_comments_027551.json:
 ```json
 {
-    "body": "A couple remarks:\n\n* pynac runs autoheader:\n\n```\nmake  all-recursive\nmake[1]: Entering directory `/scratch/mabshoff/release-cycle/review/pynac-0.1/src'\nMaking all in ginac\n```\n\n* CPPFLAGS and potentially LDFLAGS need to be set so we pick up Sage's Python:\n\n```\n/bin/sh ../libtool    --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5/   \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5  \n-g -O2 -MT ex.lo -MD -MP -MF .deps/ex.Tpo -c -o ex.lo ex.cpp\n```\n\n* spkg-install needs some cleanup, i.e. delete the PolyBoRi references, switch to #!/usr/bin/env bash, etc\n* SPKG.txt should explain which patches/changes were made to make Ginac work with Python types/remove the CLN dependency. That patch should be somewhere in a repo since at some point we will rebase on upstream\n* Ginac depends on dlopen, so this is a portability issue that needs to be taken into consideration and should be mentioned in SPKG.txt\n\nCheers,\n\nMichael",
+    "body": "A couple remarks:\n\n* pynac runs autoheader:\n\n```\nmake  all-recursive\nmake[1]: Entering directory `/scratch/mabshoff/release-cycle/review/pynac-0.1/src'\nMaking all in ginac\n```\n* CPPFLAGS and potentially LDFLAGS need to be set so we pick up Sage's Python:\n\n```\n/bin/sh ../libtool    --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5/   \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5  \n-g -O2 -MT ex.lo -MD -MP -MF .deps/ex.Tpo -c -o ex.lo ex.cpp\n```\n* spkg-install needs some cleanup, i.e. delete the PolyBoRi references, switch to #!/usr/bin/env bash, etc\n* SPKG.txt should explain which patches/changes were made to make Ginac work with Python types/remove the CLN dependency. That patch should be somewhere in a repo since at some point we will rebase on upstream\n* Ginac depends on dlopen, so this is a portability issue that needs to be taken into consideration and should be mentioned in SPKG.txt\n\nCheers,\n\nMichael",
     "created_at": "2008-09-30T09:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -428,7 +420,6 @@ make  all-recursive
 make[1]: Entering directory `/scratch/mabshoff/release-cycle/review/pynac-0.1/src'
 Making all in ginac
 ```
-
 * CPPFLAGS and potentially LDFLAGS need to be set so we pick up Sage's Python:
 
 ```
@@ -437,7 +428,6 @@ Making all in ginac
 -I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5  
 -g -O2 -MT ex.lo -MD -MP -MF .deps/ex.Tpo -c -o ex.lo ex.cpp
 ```
-
 * spkg-install needs some cleanup, i.e. delete the PolyBoRi references, switch to #!/usr/bin/env bash, etc
 * SPKG.txt should explain which patches/changes were made to make Ginac work with Python types/remove the CLN dependency. That patch should be somewhere in a repo since at some point we will rebase on upstream
 * Ginac depends on dlopen, so this is a portability issue that needs to be taken into consideration and should be mentioned in SPKG.txt
@@ -603,7 +593,7 @@ Can we release alpha0 as soon as possible so that people can play with pynac and
 archive/issue_comments_027559.json:
 ```json
 {
-    "body": "Replying to [comment:28 jason]:\n> Can we release alpha0 as soon as possible so that people can play with pynac and try to find bugs?\n\nYes, the plan to do so is very soon, i.e. alpha0 today. But we need to have a review for #4243 and #4244 to catch up with the current state of the art here.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:28 jason]:\n> Can we release alpha0 as soon as possible so that people can play with pynac and try to find bugs?\n\n\nYes, the plan to do so is very soon, i.e. alpha0 today. But we need to have a review for #4243 and #4244 to catch up with the current state of the art here.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T08:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
@@ -614,6 +604,7 @@ archive/issue_comments_027559.json:
 
 Replying to [comment:28 jason]:
 > Can we release alpha0 as soon as possible so that people can play with pynac and try to find bugs?
+
 
 Yes, the plan to do so is very soon, i.e. alpha0 today. But we need to have a review for #4243 and #4244 to catch up with the current state of the art here.
 

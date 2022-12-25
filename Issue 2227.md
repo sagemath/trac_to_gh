@@ -3,7 +3,7 @@
 archive/issues_002227.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\n\t [8.8 s]\nsage -t  devel/sage-main/sage/misc/sageinspect.py           **********************************************************************\nFile \"sageinspect.py\", line 412:\n    sage: sage_getdef(sage.rings.integer.Integer.factor, obj_name='factor')\nExpected:\n    \"factor(algorithm='pari', proof='True')\"\nGot:\n    \"factor(algorithm='pari', proof='True', limit='None')\"\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_10\n***Test Failed*** 1 failures.\n\n```\n\n\nFIX -- just change the doctest -- this makes perfect sense.\n(I added a new limit option to factor).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2227\n\n",
+    "body": "Assignee: failure\n\n```\n\t [8.8 s]\nsage -t  devel/sage-main/sage/misc/sageinspect.py           **********************************************************************\nFile \"sageinspect.py\", line 412:\n    sage: sage_getdef(sage.rings.integer.Integer.factor, obj_name='factor')\nExpected:\n    \"factor(algorithm='pari', proof='True')\"\nGot:\n    \"factor(algorithm='pari', proof='True', limit='None')\"\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_10\n***Test Failed*** 1 failures.\n\n```\n\nFIX -- just change the doctest -- this makes perfect sense.\n(I added a new limit option to factor).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2227\n\n",
     "created_at": "2008-02-20T07:01:40Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002227.json:
 }
 ```
 Assignee: failure
-
 
 ```
 	 [8.8 s]
@@ -35,7 +34,6 @@ Got:
 ***Test Failed*** 1 failures.
 
 ```
-
 
 FIX -- just change the doctest -- this makes perfect sense.
 (I added a new limit option to factor).

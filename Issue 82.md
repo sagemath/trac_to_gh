@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/82
 archive/issue_comments_000414.json:
 ```json
 {
-    "body": "Note.  In the second example a is not undefined.  It's the print representation of the generator\nof a number field.  It's not supposed to suddenly be injected into the current scope. \n\n```\nsage: V =A.eigenvectors()\nsage: V[0][1].parent()\n Number Field in a with defining polynomial x^2 + 3\n```\n",
+    "body": "Note.  In the second example a is not undefined.  It's the print representation of the generator\nof a number field.  It's not supposed to suddenly be injected into the current scope. \n\n```\nsage: V =A.eigenvectors()\nsage: V[0][1].parent()\n Number Field in a with defining polynomial x^2 + 3\n```",
     "created_at": "2006-09-25T23:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ sage: V =A.eigenvectors()
 sage: V[0][1].parent()
  Number Field in a with defining polynomial x^2 + 3
 ```
-
 
 
 
@@ -98,7 +97,7 @@ Resolution: fixed
 archive/issue_comments_000416.json:
 ```json
 {
-    "body": "It now works (though notation slightly different now):\n\n```\nsage: M = MatrixSpace(RationalField(),2,2)\nsage: A = M([1,-4,1, -1])\nsage: p = A.charpoly()\nsage: K = NumberField(p,'alpha')\nsage: M = MatrixSpace(K,2,2)\nsage: A = M([1,-4,1, -1])\nsage: A.eigenspaces()\n[\n(alpha, [\n(1, alpha - 1)\n]),\n(-alpha, [\n(1, -alpha - 1)\n])\n]\n```\n",
+    "body": "It now works (though notation slightly different now):\n\n```\nsage: M = MatrixSpace(RationalField(),2,2)\nsage: A = M([1,-4,1, -1])\nsage: p = A.charpoly()\nsage: K = NumberField(p,'alpha')\nsage: M = MatrixSpace(K,2,2)\nsage: A = M([1,-4,1, -1])\nsage: A.eigenspaces()\n[\n(alpha, [\n(1, alpha - 1)\n]),\n(-alpha, [\n(1, -alpha - 1)\n])\n]\n```",
     "created_at": "2007-01-12T22:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_comment",
@@ -126,7 +125,6 @@ sage: A.eigenspaces()
 ])
 ]
 ```
-
 
 
 

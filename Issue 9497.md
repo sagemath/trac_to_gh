@@ -3,7 +3,7 @@
 archive/issues_009497.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nRight now the Singular spkg contains the lines:\n\n```\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\n\n\nSince Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.\n\nWhy precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9497\n\n",
+    "body": "Assignee: GeorgSWeber\n\nRight now the Singular spkg contains the lines:\n\n```\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\n\nSince Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.\n\nWhy precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9497\n\n",
     "created_at": "2010-07-14T13:53:39Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ Right now the Singular spkg contains the lines:
 MAKE="make"
 export MAKE
 ```
-
 
 Since Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.
 
@@ -60,7 +59,7 @@ cf. http://trac.sagemath.org/sage_trac/ticket/8059#comment:65
 archive/issue_comments_091038.json:
 ```json
 {
-    "body": "I believe this is fixed. I just ran the following on geom.math using the modified spkg-install attached to this ticket:\n\n\n```sh\nfor i in `seq 1 16`; do \n  export MAKE=\"make -j$i\"; \n  time ./spkg-install &> /home/malb/scratch/singular-build-log-$i; \n  tail -n 3 /home/malb/scratch/singular-build-log-$i;\ndone\n```\n\n\nThe output\n\n```\nreal    10m40.257s\nuser    9m30.120s\nsys     1m17.510s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    6m59.972s\nuser    10m49.180s\nsys     1m33.340s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    5m9.335s\nuser    10m38.340s\nsys     1m17.190s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m18.527s\nuser    10m42.200s\nsys     1m23.110s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m12.274s\nuser    10m54.550s\nsys     1m26.130s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m40.495s\nuser    11m4.800s\nsys     1m27.700s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m22.933s\nuser    10m15.020s\nsys     1m16.510s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m21.500s\nuser    10m36.230s\nsys     1m17.520s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m31.700s\nuser    11m22.920s\nsys     1m18.760s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m10.116s\nuser    10m20.960s\nsys     1m18.830s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m26.779s\nuser    11m42.740s\nsys     1m24.450s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m7.259s\nuser    11m7.970s\nsys     1m23.890s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m3.277s\nuser    10m40.610s\nsys     1m19.030s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m3.885s\nuser    10m46.770s\nsys     1m18.490s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m9.547s\nuser    10m43.620s\nsys     1m17.870s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m9.297s\nuser    11m37.370s\nsys     1m16.790s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n```\n",
+    "body": "I believe this is fixed. I just ran the following on geom.math using the modified spkg-install attached to this ticket:\n\n```sh\nfor i in `seq 1 16`; do \n  export MAKE=\"make -j$i\"; \n  time ./spkg-install &> /home/malb/scratch/singular-build-log-$i; \n  tail -n 3 /home/malb/scratch/singular-build-log-$i;\ndone\n```\n\nThe output\n\n```\nreal    10m40.257s\nuser    9m30.120s\nsys     1m17.510s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    6m59.972s\nuser    10m49.180s\nsys     1m33.340s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    5m9.335s\nuser    10m38.340s\nsys     1m17.190s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m18.527s\nuser    10m42.200s\nsys     1m23.110s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m12.274s\nuser    10m54.550s\nsys     1m26.130s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m40.495s\nuser    11m4.800s\nsys     1m27.700s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m22.933s\nuser    10m15.020s\nsys     1m16.510s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m21.500s\nuser    10m36.230s\nsys     1m17.520s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m31.700s\nuser    11m22.920s\nsys     1m18.760s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m10.116s\nuser    10m20.960s\nsys     1m18.830s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m26.779s\nuser    11m42.740s\nsys     1m24.450s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m7.259s\nuser    11m7.970s\nsys     1m23.890s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m3.277s\nuser    10m40.610s\nsys     1m19.030s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m3.885s\nuser    10m46.770s\nsys     1m18.490s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    3m9.547s\nuser    10m43.620s\nsys     1m17.870s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n\nreal    4m9.297s\nuser    11m37.370s\nsys     1m16.790s\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a\nranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a\nSingular-3-1-1\n```",
     "created_at": "2011-01-14T18:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
@@ -71,7 +70,6 @@ archive/issue_comments_091038.json:
 
 I believe this is fixed. I just ran the following on geom.math using the modified spkg-install attached to this ticket:
 
-
 ```sh
 for i in `seq 1 16`; do 
   export MAKE="make -j$i"; 
@@ -79,7 +77,6 @@ for i in `seq 1 16`; do
   tail -n 3 /home/malb/scratch/singular-build-log-$i;
 done
 ```
-
 
 The output
 
@@ -196,7 +193,6 @@ ranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libfac.a
 ranlib /scratch/malb/sage-4.6.1.rc1/local/lib/libsingfac_g.a
 Singular-3-1-1
 ```
-
 
 
 
@@ -342,7 +338,7 @@ By the way, I built p5 by applying malb's patch to the current p4.  I tested tha
 archive/issue_comments_091046.json:
 ```json
 {
-    "body": "John,\n\nI thought the parallel builds of Singular 3-1-1-4 were fixed on #9946 - where I tested a parallel build of Singular  3-1-1-4 for 500 times, with no failures. I'm a bit puzzled why parallel builds need to be enabled in this package, when they should have been done on #9946\n\nThe problem with builds that break in parallel is that they are very hard to test properly. Just because something builds a few times, does not mean it will build 100% of the time. Failures tend to be random in nature. Martin Albrecht has tested this 16 times, which I don't think is enough really. It took me more than 16 builds of Sage to find that `boehm_gc-7.1.p6` has a race condition. \n\nhttp://www.mail-archive.com/sage-devel`@`googlegroups.com/msg42997.html\n\nBTW, \n\nif you use my machine hawk, and change your path to use the compilers: \n\n\n```\n/usr/local/gcc-4.5.0-delayed/bin/gcc\n/usr/local/gcc-4.5.0-delayed/bin/g++\n/usr/local/gcc-4.5.0-delayed/bin/gfortran\n```\n\n\nthen set an environment variable \n\n\n```\nMAX_COMPILER_DELAY_IN_MICRO_SECONDS\n```\n\n\nto something like 100000, then it will pause a random amount of time (in the range 0 to 100 ms) before invoking the compiler. These random delays will tend to help induce race problems, as it changes the order in which files are built. The file\n\n\n```\n/usr/local/gcc-4.5.0-delayed/bin/gcc\n```\n\n\nis just a shell script, which calls something to pause for a random time before actually compiling the C file. \n\n\n```/bin/sh \n/usr/local/bin/randomsleep\n/usr/local/gcc-4.5.0/bin/gcc \"$@\"\ndrkirkby@hawk:~$ \n```\n\n\nIn fact, I use `/usr/local/gcc-4.5.0-delayed/bin/gcc` all the time, though I rarely have `MAX_COMPILER_DELAY_IN_MICRO_SECONDS` set. \n\nPerhaps you can clarify what has changed here since #9946 - I'm too tired to look now. It will have to wait until I have had some sleep. \n\nThe changes from p5 to p6 look fine, but I've not investigated what has changed between #9946 and the p5 you have created. \n\nDave",
+    "body": "John,\n\nI thought the parallel builds of Singular 3-1-1-4 were fixed on #9946 - where I tested a parallel build of Singular  3-1-1-4 for 500 times, with no failures. I'm a bit puzzled why parallel builds need to be enabled in this package, when they should have been done on #9946\n\nThe problem with builds that break in parallel is that they are very hard to test properly. Just because something builds a few times, does not mean it will build 100% of the time. Failures tend to be random in nature. Martin Albrecht has tested this 16 times, which I don't think is enough really. It took me more than 16 builds of Sage to find that `boehm_gc-7.1.p6` has a race condition. \n\nhttp://www.mail-archive.com/sage-devel`@`googlegroups.com/msg42997.html\n\nBTW, \n\nif you use my machine hawk, and change your path to use the compilers: \n\n```\n/usr/local/gcc-4.5.0-delayed/bin/gcc\n/usr/local/gcc-4.5.0-delayed/bin/g++\n/usr/local/gcc-4.5.0-delayed/bin/gfortran\n```\n\nthen set an environment variable \n\n```\nMAX_COMPILER_DELAY_IN_MICRO_SECONDS\n```\n\nto something like 100000, then it will pause a random amount of time (in the range 0 to 100 ms) before invoking the compiler. These random delays will tend to help induce race problems, as it changes the order in which files are built. The file\n\n```\n/usr/local/gcc-4.5.0-delayed/bin/gcc\n```\n\nis just a shell script, which calls something to pause for a random time before actually compiling the C file. \n\n```/bin/sh \n/usr/local/bin/randomsleep\n/usr/local/gcc-4.5.0/bin/gcc \"$@\"\ndrkirkby@hawk:~$ \n```\n\nIn fact, I use `/usr/local/gcc-4.5.0-delayed/bin/gcc` all the time, though I rarely have `MAX_COMPILER_DELAY_IN_MICRO_SECONDS` set. \n\nPerhaps you can clarify what has changed here since #9946 - I'm too tired to look now. It will have to wait until I have had some sleep. \n\nThe changes from p5 to p6 look fine, but I've not investigated what has changed between #9946 and the p5 you have created. \n\nDave",
     "created_at": "2011-03-27T04:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
@@ -363,39 +359,31 @@ BTW,
 
 if you use my machine hawk, and change your path to use the compilers: 
 
-
 ```
 /usr/local/gcc-4.5.0-delayed/bin/gcc
 /usr/local/gcc-4.5.0-delayed/bin/g++
 /usr/local/gcc-4.5.0-delayed/bin/gfortran
 ```
 
-
 then set an environment variable 
-
 
 ```
 MAX_COMPILER_DELAY_IN_MICRO_SECONDS
 ```
 
-
 to something like 100000, then it will pause a random amount of time (in the range 0 to 100 ms) before invoking the compiler. These random delays will tend to help induce race problems, as it changes the order in which files are built. The file
-
 
 ```
 /usr/local/gcc-4.5.0-delayed/bin/gcc
 ```
 
-
 is just a shell script, which calls something to pause for a random time before actually compiling the C file. 
-
 
 ```/bin/sh 
 /usr/local/bin/randomsleep
 /usr/local/gcc-4.5.0/bin/gcc "$@"
 drkirkby@hawk:~$ 
 ```
-
 
 In fact, I use `/usr/local/gcc-4.5.0-delayed/bin/gcc` all the time, though I rarely have `MAX_COMPILER_DELAY_IN_MICRO_SECONDS` set. 
 
@@ -470,7 +458,7 @@ Dave: the test seems to have succeeded: each of the 100 builds reported building
 archive/issue_comments_091050.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> Dave: the test seems to have succeeded: each of the 100 builds reported building successfully.  I suppose to really test it, I should run full doctests after each build, but I didn't do that.\n\nI think `singular-3-1-1-4.p6` is OK, but I'll wait about 12 hours before giving a positive review. That will give my tests more chance to run. I've done some longer random delays than you, which will have more chance of finding a bug, but due to the build times, it is not possible to build so many of these. \n\nI think the doctest idea, whilst nice, would take too long. It would probably not be \nnecessary to run all the doctests, though sorting out what ones are necessary would be difficult. \n\nWhat would be useful, (and practical) is to compare the sizes of the libraries created each time. They appear to be identical. Unfortunately the md5 checksums of the files do change each time - I guess there is date/time information in them, which is not identical on each build. But I think if a package builds multiple times and the files built were always of the same length, we could be reasonably sure they are OK. I've just implemented such a change to `new.sh`, though this is only in use on the code which has random delays of up to 5 seconds. \n\nI think long random delays is the most likely way to find race conditions, but of course the builds take a lot longer. But there's no problem in building in many directories at the same time. If one builds Singular in N different directories with Sage in them, with a maximum delay of T seconds (mean T/2) in each directory, the mean delay is going to be T/(2*N) seconds. The fact the delays are present should mean building lots of copies of Singular at the same time does not overload the CPU. Memory might be an issue though - this machine only has 12 GB. Technically that's the maximum supported RAM in this Sun workstation, though in fact it is possible to get 3<sup>rd</sup> party 4 GB DIMMS to fit, so putting 24 GB in the machine is technically possible, though quite costly for a home computer. \n\nAnyway, I'll look at the test results in 12 hours or so, and unless I find any failures, I'll be giving the `singular-3-1-1-4.p6` package a positive review. \n\nDave",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> Dave: the test seems to have succeeded: each of the 100 builds reported building successfully.  I suppose to really test it, I should run full doctests after each build, but I didn't do that.\n\n\nI think `singular-3-1-1-4.p6` is OK, but I'll wait about 12 hours before giving a positive review. That will give my tests more chance to run. I've done some longer random delays than you, which will have more chance of finding a bug, but due to the build times, it is not possible to build so many of these. \n\nI think the doctest idea, whilst nice, would take too long. It would probably not be \nnecessary to run all the doctests, though sorting out what ones are necessary would be difficult. \n\nWhat would be useful, (and practical) is to compare the sizes of the libraries created each time. They appear to be identical. Unfortunately the md5 checksums of the files do change each time - I guess there is date/time information in them, which is not identical on each build. But I think if a package builds multiple times and the files built were always of the same length, we could be reasonably sure they are OK. I've just implemented such a change to `new.sh`, though this is only in use on the code which has random delays of up to 5 seconds. \n\nI think long random delays is the most likely way to find race conditions, but of course the builds take a lot longer. But there's no problem in building in many directories at the same time. If one builds Singular in N different directories with Sage in them, with a maximum delay of T seconds (mean T/2) in each directory, the mean delay is going to be T/(2*N) seconds. The fact the delays are present should mean building lots of copies of Singular at the same time does not overload the CPU. Memory might be an issue though - this machine only has 12 GB. Technically that's the maximum supported RAM in this Sun workstation, though in fact it is possible to get 3<sup>rd</sup> party 4 GB DIMMS to fit, so putting 24 GB in the machine is technically possible, though quite costly for a home computer. \n\nAnyway, I'll look at the test results in 12 hours or so, and unless I find any failures, I'll be giving the `singular-3-1-1-4.p6` package a positive review. \n\nDave",
     "created_at": "2011-03-27T21:33:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
@@ -481,6 +469,7 @@ archive/issue_comments_091050.json:
 
 Replying to [comment:8 jhpalmieri]:
 > Dave: the test seems to have succeeded: each of the 100 builds reported building successfully.  I suppose to really test it, I should run full doctests after each build, but I didn't do that.
+
 
 I think `singular-3-1-1-4.p6` is OK, but I'll wait about 12 hours before giving a positive review. That will give my tests more chance to run. I've done some longer random delays than you, which will have more chance of finding a bug, but due to the build times, it is not possible to build so many of these. 
 
@@ -520,7 +509,7 @@ As far as doctesting goes, it's probably not sufficient, but testing sage/sage/l
 archive/issue_comments_091052.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> As far as doctesting goes, it's probably not sufficient, but testing sage/sage/libs/singular/ is a quick check to make sure things are working.\nTrue. It would be nice if there was some way of knowing what tests made use of Singular or any other part of Sage. \n\nI've not checked this, but I've just started a build with this script.\n\n$ make && ./new.sh\n\nwhere `new.sh` is:\n\n\n```/bin/bash\n\nset -o pipefail\n\nexport MAX_COMPILER_DELAY_IN_MICRO_SECONDS=5000000\nexport PATH=/usr/local/gcc-4.5.0-delayed/bin/:$PATH\nexport CC=/usr/local/gcc-4.5.0-delayed/bin/gcc\nexport CXX=/usr/local/gcc-4.5.0-delayed/bin/g++\n\nJOBS=12\nRUNS=500\nfor I in `seq $RUNS`;\ndo\n    LOG=\"singular-3-1-1-4-j$JOBS.log.$I\"\n    if [ ! -f \"$LOG\" ]; then\n        env MAKE=\"make -j$JOBS\" ./sage -f singular-3-1-1-4.p6.spkg 2>&1 | tee \"$LOG\"\n        CODE=$?\n        ./sage -b  >> \"$LOG\"\n        ./sage -t devel/sage/sage/libs/singular/ >> \"$LOG\"\n        echo $0 run $I of $RUNS: code= $CODE\n    fi\ndone\n```\n\n\nThat might well be totally broken - no idea, and are going to bed now, so I'm not going to check it. \n\nDave",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> As far as doctesting goes, it's probably not sufficient, but testing sage/sage/libs/singular/ is a quick check to make sure things are working.\nTrue. It would be nice if there was some way of knowing what tests made use of Singular or any other part of Sage. \n\nI've not checked this, but I've just started a build with this script.\n\n$ make && ./new.sh\n\nwhere `new.sh` is:\n\n```/bin/bash\n\nset -o pipefail\n\nexport MAX_COMPILER_DELAY_IN_MICRO_SECONDS=5000000\nexport PATH=/usr/local/gcc-4.5.0-delayed/bin/:$PATH\nexport CC=/usr/local/gcc-4.5.0-delayed/bin/gcc\nexport CXX=/usr/local/gcc-4.5.0-delayed/bin/g++\n\nJOBS=12\nRUNS=500\nfor I in `seq $RUNS`;\ndo\n    LOG=\"singular-3-1-1-4-j$JOBS.log.$I\"\n    if [ ! -f \"$LOG\" ]; then\n        env MAKE=\"make -j$JOBS\" ./sage -f singular-3-1-1-4.p6.spkg 2>&1 | tee \"$LOG\"\n        CODE=$?\n        ./sage -b  >> \"$LOG\"\n        ./sage -t devel/sage/sage/libs/singular/ >> \"$LOG\"\n        echo $0 run $I of $RUNS: code= $CODE\n    fi\ndone\n```\n\nThat might well be totally broken - no idea, and are going to bed now, so I'm not going to check it. \n\nDave",
     "created_at": "2011-03-28T00:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
@@ -538,7 +527,6 @@ I've not checked this, but I've just started a build with this script.
 $ make && ./new.sh
 
 where `new.sh` is:
-
 
 ```/bin/bash
 
@@ -563,7 +551,6 @@ do
     fi
 done
 ```
-
 
 That might well be totally broken - no idea, and are going to bed now, so I'm not going to check it. 
 

@@ -3,7 +3,7 @@
 archive/issues_007858.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen @TimDumol\n\nFrom Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\n\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen @TimDumol\n\nFrom Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
     "created_at": "2010-01-06T18:51:25Z",
     "labels": [
         "component: notebook",
@@ -27,13 +27,11 @@ From Firebug's console:
 syntax error
     KEY_SHIFT = "16,16"
 ```
-
 We should declare each variable explicitly (to avoid implicit globals), e.g.,
 
 ```js
 var KEY_SHIFT = "16,16";
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7858
 
@@ -138,7 +136,7 @@ LGTM.
 archive/issue_comments_067992.json:
 ```json
 {
-    "body": "Replying to [comment:4 timdumol]:\n> LGTM.\nIt seems I have been too zealous: the SageNB tests work, but shift+enter is not detected by my browser (FF 3.5.2/Linux).",
+    "body": "Replying to [comment:4 timdumol]:\n> LGTM.\n\nIt seems I have been too zealous: the SageNB tests work, but shift+enter is not detected by my browser (FF 3.5.2/Linux).",
     "created_at": "2010-01-06T20:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
@@ -149,6 +147,7 @@ archive/issue_comments_067992.json:
 
 Replying to [comment:4 timdumol]:
 > LGTM.
+
 It seems I have been too zealous: the SageNB tests work, but shift+enter is not detected by my browser (FF 3.5.2/Linux).
 
 

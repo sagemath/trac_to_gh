@@ -3,7 +3,7 @@
 archive/issues_004281.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used\nas a closure. Also, the missing loads(dumps(..)) test fails:\n\n```\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4281\n\n",
+    "body": "Assignee: @williamstein\n\nThis is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used\nas a closure. Also, the missing loads(dumps(..)) test fails:\n\n```\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4281\n\n",
     "created_at": "2008-10-14T13:47:05Z",
     "labels": [
         "component: algebraic geometry",
@@ -27,7 +27,6 @@ sage: eq = e.tate_curve(5)
 sage: eq == loads(dumps(eq))
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4281
 
@@ -131,7 +130,7 @@ The last patch does not for fix it for me. Do I do something wrong ?
 archive/issue_comments_031257.json:
 ```json
 {
-    "body": "I agree with Chris. Probably Robert attached the wrong patch. This one (4281-tate-pickle.patch)\nis already in 3.1.4 but the loads/dumps problem is still there:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n",
+    "body": "I agree with Chris. Probably Robert attached the wrong patch. This one (4281-tate-pickle.patch)\nis already in 3.1.4 but the loads/dumps problem is still there:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```",
     "created_at": "2008-10-18T11:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
@@ -153,7 +152,6 @@ sage: eq = e.tate_curve(5)
 sage: eq == loads(dumps(eq))
 False
 ```
-
 
 
 
@@ -243,7 +241,7 @@ But I agree that the patch fixes this by now and the ticket should be closed.
 archive/issue_comments_031262.json:
 ```json
 {
-    "body": "Replying to [comment:8 wuthrich]:\n> Strictly speaking there is still something to do. It checks if E and p are equal. In a perfect implementation this should be an elliptic curve over a local field and we should check if they are isomorphic over this field, not over Q.\n> \n\nWhen we have a type to hold elliptic curves over local fields then this can perhaps be changed.  I also did not bother to compare the (possibly) cached power series which are part of the class's data.  As I see it, this _cmp_ function is only there for technical Pythonic reasons, and serious mathematical functionality would not be implemented via the == operator.\n\n\n> But I agree that the patch fixes this by now and the ticket should be closed.\n\nGood!  Thanks.",
+    "body": "Replying to [comment:8 wuthrich]:\n> Strictly speaking there is still something to do. It checks if E and p are equal. In a perfect implementation this should be an elliptic curve over a local field and we should check if they are isomorphic over this field, not over Q.\n> \n\n\nWhen we have a type to hold elliptic curves over local fields then this can perhaps be changed.  I also did not bother to compare the (possibly) cached power series which are part of the class's data.  As I see it, this _cmp_ function is only there for technical Pythonic reasons, and serious mathematical functionality would not be implemented via the == operator.\n\n\n> But I agree that the patch fixes this by now and the ticket should be closed.\n\n\nGood!  Thanks.",
     "created_at": "2008-10-20T09:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
@@ -256,10 +254,12 @@ Replying to [comment:8 wuthrich]:
 > Strictly speaking there is still something to do. It checks if E and p are equal. In a perfect implementation this should be an elliptic curve over a local field and we should check if they are isomorphic over this field, not over Q.
 > 
 
+
 When we have a type to hold elliptic curves over local fields then this can perhaps be changed.  I also did not bother to compare the (possibly) cached power series which are part of the class's data.  As I see it, this _cmp_ function is only there for technical Pythonic reasons, and serious mathematical functionality would not be implemented via the == operator.
 
 
 > But I agree that the patch fixes this by now and the ticket should be closed.
+
 
 Good!  Thanks.
 

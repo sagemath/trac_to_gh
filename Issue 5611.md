@@ -146,7 +146,7 @@ This may be a duplicate of another ticket, or at least of work someone is doing 
 archive/issue_comments_043736.json:
 ```json
 {
-    "body": "I may have been wrong about what's needed for blackboard bold: I think I want the font msbm10, not bbold10. Here are two possible jsmath spkgs:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-bbold10.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-bbold10.p0.spkg)  (old one: bbold10)\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-msbm10.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-msbm10.p0.spkg)  (new one: msbm10)\n\nAfter installing the spkg, test it by adding one line to the file sage/server/notebook/notebook.py:\n\n```\ndiff -r 0a59c5ea9cac -r 9d482703384d sage/server/notebook/notebook.py\n--- a/sage/server/notebook/notebook.py\tWed Mar 25 09:33:27 2009 -0700\n+++ b/sage/server/notebook/notebook.py\tWed Mar 25 14:07:43 2009 -0700\n@@ -1754,6 +1754,7 @@\n          jsMath.Extension.Require(\"verb\");\n          jsMath.Extension.Require(\"moreArrows\");\n          jsMath.Extension.Require(\"AMSmath\");\n+         jsMath.Extension.Require(\"AMSsymbols\");\n </script>'''\n \n         # import latex macros\n```\n\nThen in the notebook, try\n\n```\n%html\n$\\mathbb{R}$\n```\n",
+    "body": "I may have been wrong about what's needed for blackboard bold: I think I want the font msbm10, not bbold10. Here are two possible jsmath spkgs:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-bbold10.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-bbold10.p0.spkg)  (old one: bbold10)\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-msbm10.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b-msbm10.p0.spkg)  (new one: msbm10)\n\nAfter installing the spkg, test it by adding one line to the file sage/server/notebook/notebook.py:\n\n```\ndiff -r 0a59c5ea9cac -r 9d482703384d sage/server/notebook/notebook.py\n--- a/sage/server/notebook/notebook.py\tWed Mar 25 09:33:27 2009 -0700\n+++ b/sage/server/notebook/notebook.py\tWed Mar 25 14:07:43 2009 -0700\n@@ -1754,6 +1754,7 @@\n          jsMath.Extension.Require(\"verb\");\n          jsMath.Extension.Require(\"moreArrows\");\n          jsMath.Extension.Require(\"AMSmath\");\n+         jsMath.Extension.Require(\"AMSsymbols\");\n </script>'''\n \n         # import latex macros\n```\nThen in the notebook, try\n\n```\n%html\n$\\mathbb{R}$\n```",
     "created_at": "2009-04-01T00:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5611",
     "type": "issue_comment",
@@ -176,14 +176,12 @@ diff -r 0a59c5ea9cac -r 9d482703384d sage/server/notebook/notebook.py
  
          # import latex macros
 ```
-
 Then in the notebook, try
 
 ```
 %html
 $\mathbb{R}$
 ```
-
 
 
 
@@ -210,7 +208,7 @@ Attachment [jsmath-amssymbols.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_043738.json:
 ```json
 {
-    "body": "> After installing the spkg, test it by adding one line to the file sage/server/notebook/notebook.py:\n\nThe attached patch adds this single line.  So apply the patch, install the spkg (msbm version), and try\n\n```\n%html\n$\\mathbb{R}$\n```\n",
+    "body": "> After installing the spkg, test it by adding one line to the file sage/server/notebook/notebook.py:\n\n\nThe attached patch adds this single line.  So apply the patch, install the spkg (msbm version), and try\n\n```\n%html\n$\\mathbb{R}$\n```",
     "created_at": "2009-04-14T21:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5611",
     "type": "issue_comment",
@@ -221,6 +219,7 @@ archive/issue_comments_043738.json:
 
 > After installing the spkg, test it by adding one line to the file sage/server/notebook/notebook.py:
 
+
 The attached patch adds this single line.  So apply the patch, install the spkg (msbm version), and try
 
 ```
@@ -230,13 +229,12 @@ $\mathbb{R}$
 
 
 
-
 ---
 
 archive/issue_comments_043739.json:
 ```json
 {
-    "body": "I need to clear up one thing: the correct spkg to download is here:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b.p0.spkg)\n\nThis is the version with the msbm font.  (The one I mentioned earlier also has this font, but the name of the spkg is wrong -- it's not just \"jsmath-3.6b.p0\" -- and that confuses sage.  The correct one is just a renamed version of the earlier one.)\n\nInstall this, install the patch, and things should work...\n\n> This may be a duplicate of another ticket, or at least of work someone is doing which will appear in another ticket\n\nI think we've waited long enough for the other ticket to appear. I'm giving up and opening this one up for review.",
+    "body": "I need to clear up one thing: the correct spkg to download is here:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/jsmath-3.6b.p0.spkg)\n\nThis is the version with the msbm font.  (The one I mentioned earlier also has this font, but the name of the spkg is wrong -- it's not just \"jsmath-3.6b.p0\" -- and that confuses sage.  The correct one is just a renamed version of the earlier one.)\n\nInstall this, install the patch, and things should work...\n\n> This may be a duplicate of another ticket, or at least of work someone is doing which will appear in another ticket\n\n\nI think we've waited long enough for the other ticket to appear. I'm giving up and opening this one up for review.",
     "created_at": "2009-04-14T21:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5611",
     "type": "issue_comment",
@@ -254,6 +252,7 @@ This is the version with the msbm font.  (The one I mentioned earlier also has t
 Install this, install the patch, and things should work...
 
 > This may be a duplicate of another ticket, or at least of work someone is doing which will appear in another ticket
+
 
 I think we've waited long enough for the other ticket to appear. I'm giving up and opening this one up for review.
 

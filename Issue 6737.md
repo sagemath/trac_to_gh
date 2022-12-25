@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6737
 archive/issue_comments_055111.json:
 ```json
 {
-    "body": "\n```\nsage: search_src('pyrex')\nmatrix/matrix_modn_sparse.pyx:7:TODO: - move vectors into a pyrex vector class - add _add_ and\nserver/notebook/worksheet.py:3800:        elif system in ['cython', 'pyrex', 'sagex']:\ncombinat/expnums.pyx:126:    A vanilla python (but compiled via pyrex) implementation of\ncombinat/matrices/dancing_links.pyx:106:        # It is the *trick* needed to pickle pyrex extension types.\nrings/complex_interval.pyx:12:    -- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/ring.pyx:1040:            #except AttributeError:   # for pyrex classes\nrings/rational.pyx:3172:def pyrex_rational_reconstruction(integer.Integer a, integer.Integer m):\nrings/rational.pyx:3194:        sage: sage.rings.rational.pyrex_rational_reconstruction(34, 100)\nrings/integer.pyx:596:                    # pyrex to play games with refcount for the None object, which\nrings/integer.pyx:622:                # we could skip the double lookup. Unfortunately pyrex doesn't\nrings/integer.pyx:670:        # It is the *trick* needed to pickle pyrex extension types.\nrings/integer.pyx:2616:        return rational.pyrex_rational_reconstruction(self, m)\nrings/complex_number.pyx:8:- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/polynomial/polynomial_compiled.pyx:24:    pyrex.\ngraphs/generic_graph_pyx.pyx:74:    This kind of speed cannot be achieved by naive pyrexification of the\nmisc/all.py:74:pyrex = cython # synonym -- for now\ngsl/all.py:2:# http://wwwteor.mi.infn.it/%7Epernici/pyrexgsl/pyrexgsl.html\n```\n",
+    "body": "```\nsage: search_src('pyrex')\nmatrix/matrix_modn_sparse.pyx:7:TODO: - move vectors into a pyrex vector class - add _add_ and\nserver/notebook/worksheet.py:3800:        elif system in ['cython', 'pyrex', 'sagex']:\ncombinat/expnums.pyx:126:    A vanilla python (but compiled via pyrex) implementation of\ncombinat/matrices/dancing_links.pyx:106:        # It is the *trick* needed to pickle pyrex extension types.\nrings/complex_interval.pyx:12:    -- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/ring.pyx:1040:            #except AttributeError:   # for pyrex classes\nrings/rational.pyx:3172:def pyrex_rational_reconstruction(integer.Integer a, integer.Integer m):\nrings/rational.pyx:3194:        sage: sage.rings.rational.pyrex_rational_reconstruction(34, 100)\nrings/integer.pyx:596:                    # pyrex to play games with refcount for the None object, which\nrings/integer.pyx:622:                # we could skip the double lookup. Unfortunately pyrex doesn't\nrings/integer.pyx:670:        # It is the *trick* needed to pickle pyrex extension types.\nrings/integer.pyx:2616:        return rational.pyrex_rational_reconstruction(self, m)\nrings/complex_number.pyx:8:- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/polynomial/polynomial_compiled.pyx:24:    pyrex.\ngraphs/generic_graph_pyx.pyx:74:    This kind of speed cannot be achieved by naive pyrexification of the\nmisc/all.py:74:pyrex = cython # synonym -- for now\ngsl/all.py:2:# http://wwwteor.mi.infn.it/%7Epernici/pyrexgsl/pyrexgsl.html\n```",
     "created_at": "2010-01-18T04:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
@@ -39,7 +39,6 @@ archive/issue_comments_055111.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 sage: search_src('pyrex')
@@ -61,7 +60,6 @@ graphs/generic_graph_pyx.pyx:74:    This kind of speed cannot be achieved by nai
 misc/all.py:74:pyrex = cython # synonym -- for now
 gsl/all.py:2:# http://wwwteor.mi.infn.it/%7Epernici/pyrexgsl/pyrexgsl.html
 ```
-
 
 
 

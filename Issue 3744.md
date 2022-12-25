@@ -49,7 +49,7 @@ Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_026531.json:
 ```json
 {
-    "body": "This patch does not apply cleanly to 3.1.alpha0:\n\n```\nsage: hg_sage.apply (\"/home/john/3744-coercion-left.patch\")\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg import   \"/home/john/3744-coercion-left.patch\"\napplying /home/john/3744-coercion-left.patch\npatching file sage/structure/coerce.pyx\nHunk #1 FAILED at 737\nHunk #2 FAILED at 754\n2 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej\nabort: patch failed to apply\n```\n\n\nI'm not sure how it fits in with the main coercion model patches though.",
+    "body": "This patch does not apply cleanly to 3.1.alpha0:\n\n```\nsage: hg_sage.apply (\"/home/john/3744-coercion-left.patch\")\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/john/tmp/sage-3.1.alpha0/devel/sage\" && hg import   \"/home/john/3744-coercion-left.patch\"\napplying /home/john/3744-coercion-left.patch\npatching file sage/structure/coerce.pyx\nHunk #1 FAILED at 737\nHunk #2 FAILED at 754\n2 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej\nabort: patch failed to apply\n```\n\nI'm not sure how it fits in with the main coercion model patches though.",
     "created_at": "2008-08-10T10:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ Hunk #2 FAILED at 754
 2 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej
 abort: patch failed to apply
 ```
-
 
 I'm not sure how it fits in with the main coercion model patches though.
 
@@ -101,7 +100,7 @@ Let's wait until #3738 gets in.
 archive/issue_comments_026533.json:
 ```json
 {
-    "body": "Still does not apply cleanly to 3.1.alpha2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: 3744\nsage: hg_sage.apply(\"/home/john/3744-coercion-left.patch\")\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg status\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg status\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg import   \"/home/john/3744-coercion-left.patch\"\napplying /home/john/3744-coercion-left.patch\npatching file sage/structure/coerce.pyx\nHunk #1 succeeded at 845 with fuzz 2 (offset 105 lines).\nHunk #2 FAILED at 780\n1 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "Still does not apply cleanly to 3.1.alpha2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: 3744\nsage: hg_sage.apply(\"/home/john/3744-coercion-left.patch\")\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg status\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg status\ncd \"/home/john/sage-3.1.alpha2/devel/sage\" && hg import   \"/home/john/3744-coercion-left.patch\"\napplying /home/john/3744-coercion-left.patch\npatching file sage/structure/coerce.pyx\nHunk #1 succeeded at 845 with fuzz 2 (offset 105 lines).\nHunk #2 FAILED at 780\n1 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-08-14T20:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
@@ -127,7 +126,6 @@ Hunk #2 FAILED at 780
 1 out of 2 hunks FAILED -- saving rejects to file sage/structure/coerce.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 

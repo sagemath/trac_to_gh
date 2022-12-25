@@ -105,7 +105,7 @@ Attachment [3799-doctest.patch](tarball://root/attachments/some-uuid/ticket3799/
 archive/issue_comments_026955.json:
 ```json
 {
-    "body": "Due to the new restrictions on incoming patches, this can't be merged until all of the functions added/modified have doctests. This includes `verify_type, verify_operator, construct_skeleton, _apply_format, _apply_plot,` and maybe others. For discussion, if nothing else, I challenge `No doctest is intentional.` in `database.py`.\n\nPerhaps this could be reworded/more specific (and you don't need to shout, I can hear you ;-) ):\n\n```\n# WORD ON THE STREET IS THAT SQLITE IS RETARDED ABOUT\n# *ALTER TABLE* COMMANDS... SO MEANWHILE WE ACCOMPLISH THIS\n# BY CREATING A TEMPORARY TABLE.  SUGGESTIONS FOR SPEEDUP ARE\n# WELCOME.  (OR JUST SEND A PATCH...)\n```\n\n\nWhy was the copyright statement removed from `graph_database.py`? Remember that these statements protect our code!",
+    "body": "Due to the new restrictions on incoming patches, this can't be merged until all of the functions added/modified have doctests. This includes `verify_type, verify_operator, construct_skeleton, _apply_format, _apply_plot,` and maybe others. For discussion, if nothing else, I challenge `No doctest is intentional.` in `database.py`.\n\nPerhaps this could be reworded/more specific (and you don't need to shout, I can hear you ;-) ):\n\n```\n# WORD ON THE STREET IS THAT SQLITE IS RETARDED ABOUT\n# *ALTER TABLE* COMMANDS... SO MEANWHILE WE ACCOMPLISH THIS\n# BY CREATING A TEMPORARY TABLE.  SUGGESTIONS FOR SPEEDUP ARE\n# WELCOME.  (OR JUST SEND A PATCH...)\n```\n\nWhy was the copyright statement removed from `graph_database.py`? Remember that these statements protect our code!",
     "created_at": "2008-09-22T15:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ Perhaps this could be reworded/more specific (and you don't need to shout, I can
 # BY CREATING A TEMPORARY TABLE.  SUGGESTIONS FOR SPEEDUP ARE
 # WELCOME.  (OR JUST SEND A PATCH...)
 ```
-
 
 Why was the copyright statement removed from `graph_database.py`? Remember that these statements protect our code!
 

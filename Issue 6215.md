@@ -126,7 +126,7 @@ Positive review, but next time please adhere to the `trac_####-description` file
 archive/issue_comments_049564.json:
 ```json
 {
-    "body": "Replying to [comment:4 rlm]:\n> Positive review, \n\nThanks!\n\n> but next time please adhere to the `trac_####-description` filename format.\n\nSure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?",
+    "body": "Replying to [comment:4 rlm]:\n> Positive review, \n\n\nThanks!\n\n> but next time please adhere to the `trac_####-description` filename format.\n\n\nSure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?",
     "created_at": "2009-06-22T06:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
@@ -138,9 +138,11 @@ archive/issue_comments_049564.json:
 Replying to [comment:4 rlm]:
 > Positive review, 
 
+
 Thanks!
 
 > but next time please adhere to the `trac_####-description` filename format.
+
 
 Sure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?
 
@@ -151,7 +153,7 @@ Sure; sorry I did not know about that. Is it documented anywhere? May I suggest 
 archive/issue_comments_049565.json:
 ```json
 {
-    "body": "Replying to [comment:5 nthiery]:\n> Sure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?\n\nPlease do!",
+    "body": "Replying to [comment:5 nthiery]:\n> Sure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?\n\n\nPlease do!",
     "created_at": "2009-06-22T06:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
@@ -162,6 +164,7 @@ archive/issue_comments_049565.json:
 
 Replying to [comment:5 nthiery]:
 > Sure; sorry I did not know about that. Is it documented anywhere? May I suggest an addition in http://wiki.sagemath.org/TracGuidelines?
+
 
 Please do!
 

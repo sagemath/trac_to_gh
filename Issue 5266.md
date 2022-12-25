@@ -3,7 +3,7 @@
 archive/issues_005266.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
+    "body": "Assignee: @williamstein\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
     "created_at": "2009-02-14T10:22:25Z",
     "labels": [
         "component: graphics",
@@ -18,12 +18,10 @@ archive/issues_005266.json:
 ```
 Assignee: @williamstein
 
-
 ```
 var('x,y')
 plot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)
 ```
-
 
 picks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.
 

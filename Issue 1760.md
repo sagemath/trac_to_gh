@@ -3,7 +3,7 @@
 archive/issues_001760.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @gvol\n\n\n```\nWell, perhaps this is know, but apropos the petition to make steps\n4--6 of installation in OS X nicer, there are a very easy way. Simply\nrename the sage script to sage.command. This way if you double-click\nover it from finder it will be automatically launched inside a\nTerminal session.\n\nSaludos,\nRafa\n\nP.D. I'm not a OSX guru, only a /bin/sh user in OSX landscape ;-)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1760\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @gvol\n\n```\nWell, perhaps this is know, but apropos the petition to make steps\n4--6 of installation in OS X nicer, there are a very easy way. Simply\nrename the sage script to sage.command. This way if you double-click\nover it from finder it will be automatically launched inside a\nTerminal session.\n\nSaludos,\nRafa\n\nP.D. I'm not a OSX guru, only a /bin/sh user in OSX landscape ;-)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1760\n\n",
     "created_at": "2008-01-11T22:20:11Z",
     "labels": [
         "component: user interface",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  @gvol
 
-
 ```
 Well, perhaps this is know, but apropos the petition to make steps
 4--6 of installation in OS X nicer, there are a very easy way. Simply
@@ -34,7 +33,6 @@ Rafa
 P.D. I'm not a OSX guru, only a /bin/sh user in OSX landscape ;-)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1760
 
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1760
 archive/issue_comments_011075.json:
 ```json
 {
-    "body": "One way to implement this is make it so sage -bdist on osx, in addition to just making  dmg, also does\n\n```\n ln -s sage sage.command\n```\n\nin SAGE_ROOT right before making the dmg file.   This should just involve\nadding one line to SAGE_ROOT/local/bin/sage-bdist",
+    "body": "One way to implement this is make it so sage -bdist on osx, in addition to just making  dmg, also does\n\n```\n ln -s sage sage.command\n```\nin SAGE_ROOT right before making the dmg file.   This should just involve\nadding one line to SAGE_ROOT/local/bin/sage-bdist",
     "created_at": "2008-01-11T22:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ One way to implement this is make it so sage -bdist on osx, in addition to just 
 ```
  ln -s sage sage.command
 ```
-
 in SAGE_ROOT right before making the dmg file.   This should just involve
 adding one line to SAGE_ROOT/local/bin/sage-bdist
 

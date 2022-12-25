@@ -52,7 +52,7 @@ Attachment [qasm-1.4.spkg](tarball://root/attachments/some-uuid/ticket4856/qasm-
 archive/issue_comments_036735.json:
 ```json
 {
-    "body": "This ticket needs work in several areas:\n\n* SPKG.txt is not up to current standards, see http://wiki.sagemath.org/spkgTemplate\n\n* spkg-install is not up to current standards, see http://wiki.sagemath.org/SPKG_Audit resp. trac ticket #633 --- adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n\n* The spkg-install says:\n\n```\n    echo \"You must make sure the dvipng program is available on your system.\"\n    echo \"You might be able to install the dvipng program listed in the\"\n    echo \"output of 'sage -optional'.  If that doesn't work, just use whatever\"\n    echo \"is offered by your operating system.\"\n    exit 1\n```\n\nbut in the discussion on sage-devel (link above) it is said:\n\n```\nDo not install that dvipng spkg.  You *MUST* install dvipng instead\nusing whatever method your operating system provides (e.g., rpm, deb,\netc.).  It's a completely standard linux program.  The Sage dvipng\nspkg will be deleted soon, since it doesn't make sense for us to be\nhosting it.\n\n -- William \n```\n\n\n* (optional) the qasm.py would benefit from a doctest, the addition of some kind of example could easily be turned into a working spkg-check script",
+    "body": "This ticket needs work in several areas:\n\n* SPKG.txt is not up to current standards, see http://wiki.sagemath.org/spkgTemplate\n\n* spkg-install is not up to current standards, see http://wiki.sagemath.org/SPKG_Audit resp. trac ticket #633 --- adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n\n* The spkg-install says:\n\n```\n    echo \"You must make sure the dvipng program is available on your system.\"\n    echo \"You might be able to install the dvipng program listed in the\"\n    echo \"output of 'sage -optional'.  If that doesn't work, just use whatever\"\n    echo \"is offered by your operating system.\"\n    exit 1\n```\nbut in the discussion on sage-devel (link above) it is said:\n\n```\nDo not install that dvipng spkg.  You *MUST* install dvipng instead\nusing whatever method your operating system provides (e.g., rpm, deb,\netc.).  It's a completely standard linux program.  The Sage dvipng\nspkg will be deleted soon, since it doesn't make sense for us to be\nhosting it.\n\n -- William \n```\n\n* (optional) the qasm.py would benefit from a doctest, the addition of some kind of example could easily be turned into a working spkg-check script",
     "created_at": "2009-01-02T09:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ This ticket needs work in several areas:
     echo "is offered by your operating system."
     exit 1
 ```
-
 but in the discussion on sage-devel (link above) it is said:
 
 ```
@@ -88,7 +87,6 @@ hosting it.
 
  -- William 
 ```
-
 
 * (optional) the qasm.py would benefit from a doctest, the addition of some kind of example could easily be turned into a working spkg-check script
 
@@ -133,7 +131,7 @@ Resolution: wontfix
 archive/issue_comments_036737.json:
 ```json
 {
-    "body": ">  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n\nI've always considered that SAGE_LOCAL thing pointless.\n\nAnyway, upon further reflection, and given the lack of response by anybody in the community related to qasm, I think this is way too specialized to be an official optional spkg.  I'm thus closing this ticket.",
+    "body": ">  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n\n\nI've always considered that SAGE_LOCAL thing pointless.\n\nAnyway, upon further reflection, and given the lack of response by anybody in the community related to qasm, I think this is way too specialized to be an official optional spkg.  I'm thus closing this ticket.",
     "created_at": "2009-01-02T15:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
@@ -143,6 +141,7 @@ archive/issue_comments_036737.json:
 ```
 
 >  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO
+
 
 I've always considered that SAGE_LOCAL thing pointless.
 
@@ -155,7 +154,7 @@ Anyway, upon further reflection, and given the lack of response by anybody in th
 archive/issue_comments_036738.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> >  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n> \n> I've always considered that SAGE_LOCAL thing pointless.\n> \n\nNot if you run spkg-install from the command line to debug things.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 was]:\n> >  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO\n\n> \n> I've always considered that SAGE_LOCAL thing pointless.\n> \n\n\nNot if you run spkg-install from the command line to debug things.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T15:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
@@ -166,9 +165,11 @@ archive/issue_comments_036738.json:
 
 Replying to [comment:3 was]:
 > >  adding a check for SAGE_LOCAL to be non-empty is a blocker IMHO
+
 > 
 > I've always considered that SAGE_LOCAL thing pointless.
 > 
+
 
 Not if you run spkg-install from the command line to debug things.
 

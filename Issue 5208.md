@@ -3,7 +3,7 @@
 archive/issues_005208.json:
 ```json
 {
-    "body": "Assignee: @rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
     "created_at": "2009-02-08T19:34:30Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ Keywords: matrix, left_kernel, right_kernel
 
 Calls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.
 
-
 ```
 sage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)
 
@@ -41,7 +40,6 @@ Basis matrix:
 0 x 200 dense matrix over Rational Field
 CPU time: 70.76 s,  Wall time: 71.55 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5208
 
@@ -123,7 +121,7 @@ archive/issue_events_012060.json:
 archive/issue_comments_039823.json:
 ```json
 {
-    "body": "Looks good to me.\n\nOne little thing which doesn't matter too much:\n\n\n```\nif K is not None:\n```\n\n\nis a bit easier to read than\n\n\n```\nif not K is None:\n```\n",
+    "body": "Looks good to me.\n\nOne little thing which doesn't matter too much:\n\n```\nif K is not None:\n```\n\nis a bit easier to read than\n\n```\nif not K is None:\n```",
     "created_at": "2009-02-08T23:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
@@ -136,19 +134,15 @@ Looks good to me.
 
 One little thing which doesn't matter too much:
 
-
 ```
 if K is not None:
 ```
 
-
 is a bit easier to read than
-
 
 ```
 if not K is None:
 ```
-
 
 
 
@@ -157,7 +151,7 @@ if not K is None:
 archive/issue_comments_039824.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n\nI agree that the orginal phrasing is awkward to read the first time you see it.  But it's lots of places, in the matrix code it occurs this way whenever the cache is queried.  Across all of the source, grep gives me 627 instances of \"is None\", with 606 of those being \"is not None\"\n\nShould we engage the battle here with these three instances?  ;-)  I'd be happy to add another patch (though I'm not sure how to mark the title).\n\n> Looks good to me.\n> \n> One little thing which doesn't matter too much:\n> \n> {{{\n> if K is not None:\n> }}}\n> \n> is a bit easier to read than\n> \n> {{{\n> if not K is None:\n> }}}",
+    "body": "Replying to [comment:3 mhansen]:\n\nI agree that the orginal phrasing is awkward to read the first time you see it.  But it's lots of places, in the matrix code it occurs this way whenever the cache is queried.  Across all of the source, grep gives me 627 instances of \"is None\", with 606 of those being \"is not None\"\n\nShould we engage the battle here with these three instances?  ;-)  I'd be happy to add another patch (though I'm not sure how to mark the title).\n\n> Looks good to me.\n> \n> One little thing which doesn't matter too much:\n> \n> \n> ```\n> if K is not None:\n> ```\n> \n> is a bit easier to read than\n> \n> \n> ```\n> if not K is None:\n> ```",
     "created_at": "2009-02-09T00:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
@@ -176,15 +170,17 @@ Should we engage the battle here with these three instances?  ;-)  I'd be happy 
 > 
 > One little thing which doesn't matter too much:
 > 
-> {{{
+> 
+> ```
 > if K is not None:
-> }}}
+> ```
 > 
 > is a bit easier to read than
 > 
-> {{{
+> 
+> ```
 > if not K is None:
-> }}}
+> ```
 
 
 
@@ -211,7 +207,7 @@ Now that I think about it, I'll be adding code to create alternative bases, and 
 archive/issue_comments_039826.json:
 ```json
 {
-    "body": "This patch needs a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0/devel/sage$ patch -p1 < trac_5208_kernels.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 1420 with fuzz 2.\nHunk #2 FAILED at 1503.\nHunk #3 succeeded at 1593 (offset 19 lines).\nHunk #4 succeeded at 1621 (offset 19 lines).\nHunk #5 succeeded at 1640 (offset 19 lines).\nHunk #6 succeeded at 1650 (offset 19 lines).\nHunk #7 succeeded at 1669 (offset 19 lines).\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch needs a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0/devel/sage$ patch -p1 < trac_5208_kernels.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 1420 with fuzz 2.\nHunk #2 FAILED at 1503.\nHunk #3 succeeded at 1593 (offset 19 lines).\nHunk #4 succeeded at 1621 (offset 19 lines).\nHunk #5 succeeded at 1640 (offset 19 lines).\nHunk #6 succeeded at 1650 (offset 19 lines).\nHunk #7 succeeded at 1669 (offset 19 lines).\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T07:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
@@ -233,7 +229,6 @@ Hunk #5 succeeded at 1640 (offset 19 lines).
 Hunk #6 succeeded at 1650 (offset 19 lines).
 Hunk #7 succeeded at 1669 (offset 19 lines).
 ```
-
 
 Cheers,
 

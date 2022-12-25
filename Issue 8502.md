@@ -3,7 +3,7 @@
 archive/issues_008502.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @categorie @malb\n\nKeywords: polynomial evaluation\n\nThe following behaviour does not agree with the documentation for the {{{__call__}} function on multivariable polynomials, which states that (as one would expect and hope) the result should lie in the constant field:\n\n```\nsage: K.<t> = NumberField(x^2+47)\nsage: R.<X,Y,Z> = K[]\nsage: f = X+Y+Z\nsage: a = f(t,t,t)\nsage: a.parent()\nMultivariate Polynomial Ring in X, Y, Z over Number Field in t with defining polynomial x^2 + 47\n```\n\nIt is also inconsistent:\n\n```\nsage: R.<X,Y,Z> = QQ[]\nsage: f = X+Y+Z\nsage: a = f(2,3,4)\nsage: a.parent()\nRational Field\n```\n\nThis causes strange bugs -- see #8498 for an example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8502\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @categorie @malb\n\nKeywords: polynomial evaluation\n\nThe following behaviour does not agree with the documentation for the {{{__call__}} function on multivariable polynomials, which states that (as one would expect and hope) the result should lie in the constant field:\n\n```\nsage: K.<t> = NumberField(x^2+47)\nsage: R.<X,Y,Z> = K[]\nsage: f = X+Y+Z\nsage: a = f(t,t,t)\nsage: a.parent()\nMultivariate Polynomial Ring in X, Y, Z over Number Field in t with defining polynomial x^2 + 47\n```\nIt is also inconsistent:\n\n```\nsage: R.<X,Y,Z> = QQ[]\nsage: f = X+Y+Z\nsage: a = f(2,3,4)\nsage: a.parent()\nRational Field\n```\nThis causes strange bugs -- see #8498 for an example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8502\n\n",
     "created_at": "2010-03-11T22:08:11Z",
     "labels": [
         "component: algebra",
@@ -32,7 +32,6 @@ sage: a = f(t,t,t)
 sage: a.parent()
 Multivariate Polynomial Ring in X, Y, Z over Number Field in t with defining polynomial x^2 + 47
 ```
-
 It is also inconsistent:
 
 ```
@@ -42,7 +41,6 @@ sage: a = f(2,3,4)
 sage: a.parent()
 Rational Field
 ```
-
 This causes strange bugs -- see #8498 for an example.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8502

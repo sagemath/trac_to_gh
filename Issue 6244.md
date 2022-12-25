@@ -3,7 +3,7 @@
 archive/issues_006244.json:
 ```json
 {
-    "body": "CC:  @ncalexan\n\nKeywords: conjugate, pynac\n\n1) pynac  .conjugate() method returns wrong answer:\n\n\n```\nf(x) = function('f',x)\nf(x).conjugate()\n\nf(conjugate(x))\n```\n\n\nAbove is certainly not true. For example: f(x) = I + x implies\nf(x).conjugate() = -I + conjugate(x) which is not equal to\nf(conjugate(x))\n\n\n2)  view() causes SIGSEGV crash\n\n\n```\nf(x) = function('f',x)\ng(x) = f(x).conjugate()\nview( g(x) )\nboom!!\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6244\n\n",
+    "body": "CC:  @ncalexan\n\nKeywords: conjugate, pynac\n\n1) pynac  .conjugate() method returns wrong answer:\n\n```\nf(x) = function('f',x)\nf(x).conjugate()\n\nf(conjugate(x))\n```\n\nAbove is certainly not true. For example: f(x) = I + x implies\nf(x).conjugate() = -I + conjugate(x) which is not equal to\nf(conjugate(x))\n\n\n2)  view() causes SIGSEGV crash\n\n```\nf(x) = function('f',x)\ng(x) = f(x).conjugate()\nview( g(x) )\nboom!!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6244\n\n",
     "created_at": "2009-06-08T01:40:44Z",
     "labels": [
         "component: symbolics",
@@ -22,14 +22,12 @@ Keywords: conjugate, pynac
 
 1) pynac  .conjugate() method returns wrong answer:
 
-
 ```
 f(x) = function('f',x)
 f(x).conjugate()
 
 f(conjugate(x))
 ```
-
 
 Above is certainly not true. For example: f(x) = I + x implies
 f(x).conjugate() = -I + conjugate(x) which is not equal to
@@ -38,14 +36,12 @@ f(conjugate(x))
 
 2)  view() causes SIGSEGV crash
 
-
 ```
 f(x) = function('f',x)
 g(x) = f(x).conjugate()
 view( g(x) )
 boom!!
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6244

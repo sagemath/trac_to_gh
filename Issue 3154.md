@@ -3,7 +3,7 @@
 archive/issues_003154.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the notebook we have this, caused by _eval_cmd in worksheet.py:\n\n\n```\n%python \n2+2\nprint \"'hi\\'\"\n///\n\n'hi\\u0027\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3154\n\n",
+    "body": "Assignee: boothby\n\nIn the notebook we have this, caused by _eval_cmd in worksheet.py:\n\n```\n%python \n2+2\nprint \"'hi\\'\"\n///\n\n'hi\\u0027\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3154\n\n",
     "created_at": "2008-05-10T22:43:31Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 In the notebook we have this, caused by _eval_cmd in worksheet.py:
 
-
 ```
 %python 
 2+2
@@ -29,7 +28,6 @@ print "'hi\'"
 
 'hi\u0027
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3154
 
@@ -140,7 +138,7 @@ Can we also use `%r` instead of `base64`-encoding in
 archive/issue_comments_021825.json:
 ```json
 {
-    "body": "The second patch causes two SageNB doctest failures:\n\n```python\nFile \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py\", line 3695:\n    sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)\nExpected:\n    (True, u\"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')\")\nGot:\n    (True, u\"print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')\")\n**********************************************************************\nFile \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py\", line 3721:\n    sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)\nExpected:\n    (True, u\"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')\")\nGot:\n    (True, \"print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')\")\n\n```\n\nDoes the latter reveal a [minor] problem with #7249?",
+    "body": "The second patch causes two SageNB doctest failures:\n\n```python\nFile \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py\", line 3695:\n    sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)\nExpected:\n    (True, u\"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')\")\nGot:\n    (True, u\"print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')\")\n**********************************************************************\nFile \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py\", line 3721:\n    sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)\nExpected:\n    (True, u\"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')\")\nGot:\n    (True, \"print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')\")\n\n```\nDoes the latter reveal a [minor] problem with #7249?",
     "created_at": "2010-01-18T10:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -167,7 +165,6 @@ Got:
     (True, "print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')")
 
 ```
-
 Does the latter reveal a [minor] problem with #7249?
 
 
@@ -177,7 +174,7 @@ Does the latter reveal a [minor] problem with #7249?
 archive/issue_comments_021826.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Can we also use `%r` instead of `base64`-encoding in\n> \n>  * `sage.misc.preparser.load_wrap`\n>  * `sagenb.misc.support.automatic_name_filter`\n>  * `worksheet.Worksheet.preparse`\n> \n> ?\nI believe so. I'd rather that be put in a new ticket though.\n\nThe attached patch should solve the mentioned doctest problems. Can't see how they're related to #7249 though.",
+    "body": "Replying to [comment:3 mpatel]:\n> Can we also use `%r` instead of `base64`-encoding in\n> \n> * `sage.misc.preparser.load_wrap`\n> * `sagenb.misc.support.automatic_name_filter`\n> * `worksheet.Worksheet.preparse`\n> \n> ?\n\nI believe so. I'd rather that be put in a new ticket though.\n\nThe attached patch should solve the mentioned doctest problems. Can't see how they're related to #7249 though.",
     "created_at": "2010-01-18T11:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
@@ -189,11 +186,12 @@ archive/issue_comments_021826.json:
 Replying to [comment:3 mpatel]:
 > Can we also use `%r` instead of `base64`-encoding in
 > 
->  * `sage.misc.preparser.load_wrap`
->  * `sagenb.misc.support.automatic_name_filter`
->  * `worksheet.Worksheet.preparse`
+> * `sage.misc.preparser.load_wrap`
+> * `sagenb.misc.support.automatic_name_filter`
+> * `worksheet.Worksheet.preparse`
 > 
 > ?
+
 I believe so. I'd rather that be put in a new ticket though.
 
 The attached patch should solve the mentioned doctest problems. Can't see how they're related to #7249 though.

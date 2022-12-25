@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7854
 archive/issue_comments_067930.json:
 ```json
 {
-    "body": "Small modifications, good results :\nBefore :\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n10 loops, best of 3: 200 ms per loop\n```\n\n\nAfter :\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n100 loops, best of 3: 4.75 ms per loop\n```\n",
+    "body": "Small modifications, good results :\nBefore :\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n10 loops, best of 3: 200 ms per loop\n```\n\nAfter :\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n100 loops, best of 3: 4.75 ms per loop\n```",
     "created_at": "2010-01-16T16:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7854",
     "type": "issue_comment",
@@ -62,14 +62,12 @@ sage: %timeit graphs.WorldMap().edge_connectivity()
 10 loops, best of 3: 200 ms per loop
 ```
 
-
 After :
 
 ```
 sage: %timeit graphs.WorldMap().edge_connectivity()
 100 loops, best of 3: 4.75 ms per loop
 ```
-
 
 
 
@@ -114,7 +112,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_067933.json:
 ```json
 {
-    "body": "Nathann, I tried before the patch but got:\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n...\nValueError: There does not seem to be any Linear Program solver installed. Please visit http://www.sagemath.org/packages/optional/ to install CBC or GLPK.\n```\n\nWhich LP package did you use? CBC or GLPK? Did you check you got a speedup with both?",
+    "body": "Nathann, I tried before the patch but got:\n\n```\nsage: %timeit graphs.WorldMap().edge_connectivity()\n...\nValueError: There does not seem to be any Linear Program solver installed. Please visit http://www.sagemath.org/packages/optional/ to install CBC or GLPK.\n```\nWhich LP package did you use? CBC or GLPK? Did you check you got a speedup with both?",
     "created_at": "2010-02-25T22:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7854",
     "type": "issue_comment",
@@ -130,7 +128,6 @@ sage: %timeit graphs.WorldMap().edge_connectivity()
 ...
 ValueError: There does not seem to be any Linear Program solver installed. Please visit http://www.sagemath.org/packages/optional/ to install CBC or GLPK.
 ```
-
 Which LP package did you use? CBC or GLPK? Did you check you got a speedup with both?
 
 
@@ -201,7 +198,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067937.json:
 ```json
 {
-    "body": "thanks Nathann for your answer.\nI successfully installed the cbc package from http://www.sagemath.org/packages/optional/ in 4.3.3\n(btw, there are several compiler warnings during compilation, on a 64-bit Core 2 Duo).\n*Before* applying your patch, I get:\n\n```\nsage: g = 2 * graphs.PetersenGraph() \nsage: g.edge_connectivity() \n0.0\nsage: g = graphs.PathGraph(10) \nsage: g.edge_connectivity() \n1.0\nsage: g = digraphs.ButterflyGraph(3) \nsage: g.edge_connectivity() \n0.0\nsage: g = 2 * graphs.PetersenGraph() \nsage: g.vertex_connectivity() \n0.0\nsage: g = graphs.PathGraph(10) \nsage:  g.vertex_connectivity() \n1.0\nsage: g = digraphs.ButterflyGraph(3) \nsage: g.vertex_connectivity() \n0.0\n```\n\nthus it seems to me some work is needed, because according to the patch documentation, after\napplying the patch I will get integer values instead of floating-point numbers, which may break\nsome code using those functions.\n\nPaul",
+    "body": "thanks Nathann for your answer.\nI successfully installed the cbc package from http://www.sagemath.org/packages/optional/ in 4.3.3\n(btw, there are several compiler warnings during compilation, on a 64-bit Core 2 Duo).\n*Before* applying your patch, I get:\n\n```\nsage: g = 2 * graphs.PetersenGraph() \nsage: g.edge_connectivity() \n0.0\nsage: g = graphs.PathGraph(10) \nsage: g.edge_connectivity() \n1.0\nsage: g = digraphs.ButterflyGraph(3) \nsage: g.edge_connectivity() \n0.0\nsage: g = 2 * graphs.PetersenGraph() \nsage: g.vertex_connectivity() \n0.0\nsage: g = graphs.PathGraph(10) \nsage:  g.vertex_connectivity() \n1.0\nsage: g = digraphs.ButterflyGraph(3) \nsage: g.vertex_connectivity() \n0.0\n```\nthus it seems to me some work is needed, because according to the patch documentation, after\napplying the patch I will get integer values instead of floating-point numbers, which may break\nsome code using those functions.\n\nPaul",
     "created_at": "2010-02-26T08:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7854",
     "type": "issue_comment",
@@ -235,7 +232,6 @@ sage: g = digraphs.ButterflyGraph(3)
 sage: g.vertex_connectivity() 
 0.0
 ```
-
 thus it seems to me some work is needed, because according to the patch documentation, after
 applying the patch I will get integer values instead of floating-point numbers, which may break
 some code using those functions.

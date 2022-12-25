@@ -3,7 +3,7 @@
 archive/issues_009484.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/e05229d90733c78d for an example of how to do CSG (intersections and unions of solid objects) with implicit_plot3d; I think the given example:\n\n```\nsage: var('x,y,z')\n(x, y, z)\nsage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2), smooth=False)\n```\n\n(along with some explanation) should be added to the implicit_plot3d docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9484\n\n",
+    "body": "Assignee: cwitty\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/e05229d90733c78d for an example of how to do CSG (intersections and unions of solid objects) with implicit_plot3d; I think the given example:\n\n```\nsage: var('x,y,z')\n(x, y, z)\nsage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2), smooth=False)\n```\n(along with some explanation) should be added to the implicit_plot3d docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9484\n\n",
     "created_at": "2010-07-12T17:34:19Z",
     "labels": [
         "component: graphics",
@@ -25,7 +25,6 @@ sage: var('x,y,z')
 (x, y, z)
 sage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2), smooth=False)
 ```
-
 (along with some explanation) should be added to the implicit_plot3d docstring.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9484

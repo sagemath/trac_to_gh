@@ -118,7 +118,7 @@ archive/issue_events_008307.json:
 archive/issue_comments_025499.json:
 ```json
 {
-    "body": "Here is an example that illustrates the difference:\n\n```\nsage: k.<a> = GF(2^100)\nsage: time g = k.random_element().charpoly()\nCPU times: user 1.17 s, sys: 0.02 s, total: 1.18 s\nWall time: 1.36 s\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^100)));')\n'Time: 0.000'\n```\n\n\nHere's the sage code that does the charpoly computation:\n\n```\nsage: a.charpoly??\n        from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing\n        R = PolynomialRing(self.parent().prime_subfield(), var)\n        return R(self._pari_().charpoly('x').lift())\n```\n\n\nIt turns out that pari is just totally abysmal at computing charpolys of Mod's.\n\n```\nsage: f = k.random_element()._pari_()\nsage: time g = f.charpoly('x')\nCPU times: user 1.13 s, sys: 0.01 s, total: 1.14 s\nWall time: 1.26 s\nsage: f.type()\n't_POLMOD'\n```\n\n\nFortunately Sage matrices aren't quite as bad, though of course this is still vastly\nslower than Magma:\n\n```\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 0.36 s, sys: 0.00 s, total: 0.36 s\nWall time: 0.37 s\n\n```\n\n\nAsymptotically though this is still vastly better than the current situation:\n\n```\nage: k.<a> = GF(2^200)\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 2.21 s, sys: 0.03 s, total: 2.24 s\nWall time: 2.24 s\nsage: time g = k.random_element().charpoly()\nCPU times: user 14.14 s, sys: 0.08 s, total: 14.22 s\nWall time: 14.27 s\n```\n\n\nBut still this sucks compared to magma\n\n```\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^300)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^400)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^600)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^1000)));')\n'Time: 0.030'\n```\n\n\nI looked at NTL seems to have no functions at all for charpoly or minpoly\nof elements of GF(2^n).  :-(\n\nhttp://www.shoup.net/ntl/doc/GF2E.txt",
+    "body": "Here is an example that illustrates the difference:\n\n```\nsage: k.<a> = GF(2^100)\nsage: time g = k.random_element().charpoly()\nCPU times: user 1.17 s, sys: 0.02 s, total: 1.18 s\nWall time: 1.36 s\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^100)));')\n'Time: 0.000'\n```\n\nHere's the sage code that does the charpoly computation:\n\n```\nsage: a.charpoly??\n        from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing\n        R = PolynomialRing(self.parent().prime_subfield(), var)\n        return R(self._pari_().charpoly('x').lift())\n```\n\nIt turns out that pari is just totally abysmal at computing charpolys of Mod's.\n\n```\nsage: f = k.random_element()._pari_()\nsage: time g = f.charpoly('x')\nCPU times: user 1.13 s, sys: 0.01 s, total: 1.14 s\nWall time: 1.26 s\nsage: f.type()\n't_POLMOD'\n```\n\nFortunately Sage matrices aren't quite as bad, though of course this is still vastly\nslower than Magma:\n\n```\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 0.36 s, sys: 0.00 s, total: 0.36 s\nWall time: 0.37 s\n\n```\n\nAsymptotically though this is still vastly better than the current situation:\n\n```\nage: k.<a> = GF(2^200)\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 2.21 s, sys: 0.03 s, total: 2.24 s\nWall time: 2.24 s\nsage: time g = k.random_element().charpoly()\nCPU times: user 14.14 s, sys: 0.08 s, total: 14.22 s\nWall time: 14.27 s\n```\n\nBut still this sucks compared to magma\n\n```\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^300)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^400)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^600)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^1000)));')\n'Time: 0.030'\n```\n\nI looked at NTL seems to have no functions at all for charpoly or minpoly\nof elements of GF(2^n).  :-(\n\nhttp://www.shoup.net/ntl/doc/GF2E.txt",
     "created_at": "2008-07-09T19:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
@@ -138,7 +138,6 @@ sage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^100)));')
 'Time: 0.000'
 ```
 
-
 Here's the sage code that does the charpoly computation:
 
 ```
@@ -147,7 +146,6 @@ sage: a.charpoly??
         R = PolynomialRing(self.parent().prime_subfield(), var)
         return R(self._pari_().charpoly('x').lift())
 ```
-
 
 It turns out that pari is just totally abysmal at computing charpolys of Mod's.
 
@@ -160,7 +158,6 @@ sage: f.type()
 't_POLMOD'
 ```
 
-
 Fortunately Sage matrices aren't quite as bad, though of course this is still vastly
 slower than Magma:
 
@@ -170,7 +167,6 @@ CPU times: user 0.36 s, sys: 0.00 s, total: 0.36 s
 Wall time: 0.37 s
 
 ```
-
 
 Asymptotically though this is still vastly better than the current situation:
 
@@ -183,7 +179,6 @@ sage: time g = k.random_element().charpoly()
 CPU times: user 14.14 s, sys: 0.08 s, total: 14.22 s
 Wall time: 14.27 s
 ```
-
 
 But still this sucks compared to magma
 
@@ -202,7 +197,6 @@ sage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^1000)));')
 'Time: 0.030'
 ```
 
-
 I looked at NTL seems to have no functions at all for charpoly or minpoly
 of elements of GF(2^n).  :-(
 
@@ -215,7 +209,7 @@ http://www.shoup.net/ntl/doc/GF2E.txt
 archive/issue_comments_025500.json:
 ```json
 {
-    "body": "also note:\n\n\n```\nsage: k.<a> = GF(2^500)\nsage: time g = k.random_element()\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time m = g.matrix()\nCPU times: user 11.59 s, sys: 0.82 s, total: 12.41 s\nWall time: 12.41 s\nsage: time f = m.charpoly()\nCPU times: user 20.51 s, sys: 0.01 s, total: 20.52 s\nWall time: 20.51 s\n```\n",
+    "body": "also note:\n\n```\nsage: k.<a> = GF(2^500)\nsage: time g = k.random_element()\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time m = g.matrix()\nCPU times: user 11.59 s, sys: 0.82 s, total: 12.41 s\nWall time: 12.41 s\nsage: time f = m.charpoly()\nCPU times: user 20.51 s, sys: 0.01 s, total: 20.52 s\nWall time: 20.51 s\n```",
     "created_at": "2008-07-09T19:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
@@ -225,7 +219,6 @@ archive/issue_comments_025500.json:
 ```
 
 also note:
-
 
 ```
 sage: k.<a> = GF(2^500)
@@ -239,7 +232,6 @@ sage: time f = m.charpoly()
 CPU times: user 20.51 s, sys: 0.01 s, total: 20.52 s
 Wall time: 20.51 s
 ```
-
 
 
 

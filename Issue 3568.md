@@ -3,7 +3,7 @@
 archive/issues_003568.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nBEFORE\n\n```\nteragon-2:databases was$ sage -startuptime |grep -i web2\n           twisted.web2: 0.106 (twist)\n            twisted.python: 0.004 (twisted.web2)\n            twisted._version: 0.001 (twisted.web2)\n            twisted.web2._version: 0.000 (twisted.web2)\n            cgi: 0.004 (twisted.web2)\n            twisted.internet: 0.011 (twisted.web2)\n            twisted.persisted: 0.001 (twisted.web2)\n            zope.interface.adapter: 0.001 (twisted.web2)\n            calendar: 0.002 (twisted.web2)\n            twisted.internet.defer: 0.000 (twisted.web2)\n            twisted.internet.interfaces: 0.000 (twisted.web2)\n             twisted.web2.stream: 0.000 (OpenSSL)\n             twisted.web2.filter.range: 0.001 (OpenSSL)\n             twisted.web2.responsecode: 0.000 (OpenSSL)\n             twisted.web2.channel.cgi: 0.001 (OpenSSL)\n             twisted.web2.channel.scgi: 0.000 (OpenSSL)\n              twisted.web2.channel: 0.000 (twisted.web2.channel.scgi)\n             twisted.web2.channel.http: 0.002 (OpenSSL)\n             twisted.web2.channel.fastcgi: 0.000 (OpenSSL)\n0.106 twisted.web2 (twist)\n```\n\n\nThis is on os x with disk caching.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3568\n\n",
+    "body": "Assignee: boothby\n\nBEFORE\n\n```\nteragon-2:databases was$ sage -startuptime |grep -i web2\n           twisted.web2: 0.106 (twist)\n            twisted.python: 0.004 (twisted.web2)\n            twisted._version: 0.001 (twisted.web2)\n            twisted.web2._version: 0.000 (twisted.web2)\n            cgi: 0.004 (twisted.web2)\n            twisted.internet: 0.011 (twisted.web2)\n            twisted.persisted: 0.001 (twisted.web2)\n            zope.interface.adapter: 0.001 (twisted.web2)\n            calendar: 0.002 (twisted.web2)\n            twisted.internet.defer: 0.000 (twisted.web2)\n            twisted.internet.interfaces: 0.000 (twisted.web2)\n             twisted.web2.stream: 0.000 (OpenSSL)\n             twisted.web2.filter.range: 0.001 (OpenSSL)\n             twisted.web2.responsecode: 0.000 (OpenSSL)\n             twisted.web2.channel.cgi: 0.001 (OpenSSL)\n             twisted.web2.channel.scgi: 0.000 (OpenSSL)\n              twisted.web2.channel: 0.000 (twisted.web2.channel.scgi)\n             twisted.web2.channel.http: 0.002 (OpenSSL)\n             twisted.web2.channel.fastcgi: 0.000 (OpenSSL)\n0.106 twisted.web2 (twist)\n```\n\nThis is on os x with disk caching.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3568\n\n",
     "created_at": "2008-07-06T19:54:38Z",
     "labels": [
         "component: notebook"
@@ -43,7 +43,6 @@ teragon-2:databases was$ sage -startuptime |grep -i web2
 0.106 twisted.web2 (twist)
 ```
 
-
 This is on os x with disk caching.
 
 
@@ -59,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3568
 archive/issue_comments_025156.json:
 ```json
 {
-    "body": "AFTER (also, apply #3560):\n\n\n```\nteragon-2:notebook was$ sage -startuptime |grep web2\nteragon-2:notebook was$ \n```\n\n\nAnd if you apply #3560 maybe something like this:\n\n```\nteragon-2:notebook was$ sage -startuptime |grep notebook\n      notebook.all: 0.005 (sage.server.all)\n       notebook_object: 0.003 (notebook.all)\n        run_notebook: 0.002 (notebook_object)\n         getpass: 0.001 (run_notebook)\n       sagetex: 0.000 (notebook.all)\n       interact: 0.002 (notebook.all)\n```\n",
+    "body": "AFTER (also, apply #3560):\n\n```\nteragon-2:notebook was$ sage -startuptime |grep web2\nteragon-2:notebook was$ \n```\n\nAnd if you apply #3560 maybe something like this:\n\n```\nteragon-2:notebook was$ sage -startuptime |grep notebook\n      notebook.all: 0.005 (sage.server.all)\n       notebook_object: 0.003 (notebook.all)\n        run_notebook: 0.002 (notebook_object)\n         getpass: 0.001 (run_notebook)\n       sagetex: 0.000 (notebook.all)\n       interact: 0.002 (notebook.all)\n```",
     "created_at": "2008-07-06T20:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
@@ -70,12 +69,10 @@ archive/issue_comments_025156.json:
 
 AFTER (also, apply #3560):
 
-
 ```
 teragon-2:notebook was$ sage -startuptime |grep web2
 teragon-2:notebook was$ 
 ```
-
 
 And if you apply #3560 maybe something like this:
 
@@ -88,7 +85,6 @@ teragon-2:notebook was$ sage -startuptime |grep notebook
        sagetex: 0.000 (notebook.all)
        interact: 0.002 (notebook.all)
 ```
-
 
 
 
@@ -213,7 +209,7 @@ All credit to was.
 archive/issue_comments_025163.json:
 ```json
 {
-    "body": "For some reason this patch causes massive doctest failures:\n\n```\n        sage -t -long devel/sage/sage/server/notebook/cell.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 0 doctests failed\n        sage -t -long devel/sage/sage/misc/session.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weight_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_reducible.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_dual.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_G.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_F.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_E.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_A.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/root_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/ambient_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/dynkin_diagram.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/root_system.py # 3 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/cartan_type.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 4 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/spins.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/letters.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "For some reason this patch causes massive doctest failures:\n\n```\n        sage -t -long devel/sage/sage/server/notebook/cell.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 0 doctests failed\n        sage -t -long devel/sage/sage/misc/session.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weight_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_reducible.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_dual.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_G.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_F.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_E.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/type_A.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/root_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/ambient_space.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/dynkin_diagram.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/root_system.py # 3 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/cartan_type.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 4 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/spins.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/crystals/letters.py # 1 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed\n        sage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-11T04:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
@@ -246,7 +242,6 @@ For some reason this patch causes massive doctest failures:
         sage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed
         sage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed
 ```
-
 
 Cheers,
 

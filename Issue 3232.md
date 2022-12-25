@@ -3,7 +3,7 @@
 archive/issues_003232.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
+    "body": "Assignee: @williamstein\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
     "created_at": "2008-05-16T23:18:54Z",
     "labels": [
         "component: linear algebra"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 The BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. 
 
-
 ```
   -- BKZ: Block Korkin-Zolotarev reduction.
      This is slower, but yields a higher-quality basis,
@@ -28,7 +27,6 @@ The BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL
      This basically generalizes the LLL reduction condition
      from blocks of size 2 to blocks of larger size.
 ```
-
 
 It enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.
 
@@ -195,7 +193,7 @@ w00t, I'll fix the typos today-ish.
 archive/issue_comments_022351.json:
 ```json
 {
-    "body": "To highlight BKZ's features here is a Sage session for the NTRU example rpw provided:\n\n```\nsage: M = eval(open(\"ntru_2_47.sage\").read()[4:])\nsage: M\n94 x 94 dense matrix over Integer Ring\n\nsage: %time M_BKZ = M.BKZ()\nCPU times: user 17.64 s, sys: 0.03 s, total: 17.67 s\nWall time: 17.98 s\n\nsage: %time M_LLL = M.LLL()\nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.30 s\n\nsage: %time M_LLL_NTL = M.LLL(algorithm=\"NTL:LLL\")\nCPU times: user 0.11 s, sys: 0.01 s, total: 0.12 s\nWall time: 0.16 s\n\nsage: sqrt(sum([ a^2 for a in M_BKZ[0] ])).n()\n10.1488915650922\n\nsage: sqrt(sum([ a^2 for a in M_LLL[0] ])).n()\n23.0000000000000\n\nsage: sqrt(sum([ a^2 for a in M_LLL_NTL[0] ])).n()\n23.0000000000000\n\nsage: sqrt(sum([ a^2 for a in M_BKZ[93] ])).n()\n20.7364413533277\n\nsage: sqrt(sum([ a^2 for a in M_LLL[93] ])).n()\n43.0116263352131\n\nsage: sqrt(sum([ a^2 for a in M_LLL_NTL[93] ])).n()\n47.6340214552582\n```\n",
+    "body": "To highlight BKZ's features here is a Sage session for the NTRU example rpw provided:\n\n```\nsage: M = eval(open(\"ntru_2_47.sage\").read()[4:])\nsage: M\n94 x 94 dense matrix over Integer Ring\n\nsage: %time M_BKZ = M.BKZ()\nCPU times: user 17.64 s, sys: 0.03 s, total: 17.67 s\nWall time: 17.98 s\n\nsage: %time M_LLL = M.LLL()\nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.30 s\n\nsage: %time M_LLL_NTL = M.LLL(algorithm=\"NTL:LLL\")\nCPU times: user 0.11 s, sys: 0.01 s, total: 0.12 s\nWall time: 0.16 s\n\nsage: sqrt(sum([ a^2 for a in M_BKZ[0] ])).n()\n10.1488915650922\n\nsage: sqrt(sum([ a^2 for a in M_LLL[0] ])).n()\n23.0000000000000\n\nsage: sqrt(sum([ a^2 for a in M_LLL_NTL[0] ])).n()\n23.0000000000000\n\nsage: sqrt(sum([ a^2 for a in M_BKZ[93] ])).n()\n20.7364413533277\n\nsage: sqrt(sum([ a^2 for a in M_LLL[93] ])).n()\n43.0116263352131\n\nsage: sqrt(sum([ a^2 for a in M_LLL_NTL[93] ])).n()\n47.6340214552582\n```",
     "created_at": "2008-07-08T11:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
@@ -241,7 +239,6 @@ sage: sqrt(sum([ a^2 for a in M_LLL[93] ])).n()
 sage: sqrt(sum([ a^2 for a in M_LLL_NTL[93] ])).n()
 47.6340214552582
 ```
-
 
 
 

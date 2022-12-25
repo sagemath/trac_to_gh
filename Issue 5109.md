@@ -51,7 +51,7 @@ Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/tra
 archive/issue_comments_038957.json:
 ```json
 {
-    "body": "This applies cleanly to 3.3.alpha2 and passes sage -t. The examples also agree with some examples given on http://en.wikipedia.org/wiki/Bell_polynomials, as well as this agreement: \n\n\n```\nsage: stirling_number2(6,2) == bell_polynomial(6,2)(1,1,1,1,1) \nTrue\nsage: stirling_number2(6,4) == bell_polynomial(6,4)(1,1,1) \nTrue\nsage: stirling_number2(7,4) == bell_polynomial(7,4)(1,1,1,1) \nTrue\n```\n\n\n\nI ran sage -testall and got this failure:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n**********************************************************************\nFile \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.3.alpha2/devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n**********************************************************************\n```\n\nThough I don't know what a d_basis is, I think it is an unrelated failure\nso I'm giving this a positive review.",
+    "body": "This applies cleanly to 3.3.alpha2 and passes sage -t. The examples also agree with some examples given on http://en.wikipedia.org/wiki/Bell_polynomials, as well as this agreement: \n\n```\nsage: stirling_number2(6,2) == bell_polynomial(6,2)(1,1,1,1,1) \nTrue\nsage: stirling_number2(6,4) == bell_polynomial(6,4)(1,1,1) \nTrue\nsage: stirling_number2(7,4) == bell_polynomial(7,4)(1,1,1,1) \nTrue\n```\n\n\nI ran sage -testall and got this failure:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n**********************************************************************\nFile \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.3.alpha2/devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n**********************************************************************\n```\nThough I don't know what a d_basis is, I think it is an unrelated failure\nso I'm giving this a positive review.",
     "created_at": "2009-01-27T12:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ archive/issue_comments_038957.json:
 ```
 
 This applies cleanly to 3.3.alpha2 and passes sage -t. The examples also agree with some examples given on http://en.wikipedia.org/wiki/Bell_polynomials, as well as this agreement: 
-
 
 ```
 sage: stirling_number2(6,2) == bell_polynomial(6,2)(1,1,1,1,1) 
@@ -73,9 +72,7 @@ True
 ```
 
 
-
 I ran sage -testall and got this failure:
-
 
 ```
 sage -t  "devel/sage/sage/rings/polynomial/toy_d_basis.py"  
@@ -88,7 +85,6 @@ Got:
     [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]
 **********************************************************************
 ```
-
 Though I don't know what a d_basis is, I think it is an unrelated failure
 so I'm giving this a positive review.
 
@@ -99,7 +95,7 @@ so I'm giving this a positive review.
 archive/issue_comments_038958.json:
 ```json
 {
-    "body": "One more test (also positive):\n\n\n```\nsage: n=6\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 7\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 8\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 20\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: bell_number(n)\n51724158235372\n```\n\nReturns these pretty fast too!",
+    "body": "One more test (also positive):\n\n```\nsage: n=6\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 7\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 8\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 20\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: bell_number(n)\n51724158235372\n```\nReturns these pretty fast too!",
     "created_at": "2009-01-27T12:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
@@ -109,7 +105,6 @@ archive/issue_comments_038958.json:
 ```
 
 One more test (also positive):
-
 
 ```
 sage: n=6
@@ -127,7 +122,6 @@ True
 sage: bell_number(n)
 51724158235372
 ```
-
 Returns these pretty fast too!
 
 

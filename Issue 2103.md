@@ -3,7 +3,7 @@
 archive/issues_002103.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
     "created_at": "2008-02-08T07:46:52Z",
     "labels": [
         "component: modular forms",
@@ -24,14 +24,12 @@ Given a congruence subgroup G, return a list of representatives for the G-equiva
 
 Sample wished-for session:
 
-
 ```
 sage: C = Cusps
 sage: G = Gamma0(5)
 sage: C(G)
 [Infinity, 0]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2103
@@ -118,7 +116,7 @@ archive/issue_events_005044.json:
 archive/issue_comments_013674.json:
 ```json
 {
-    "body": "The above patch adds a cusps() method for all congruence subgroups; this accepts an optional boolean keyword argument \"bdmap\". \n\nIf \"bdmap\" is true, then the method creates the space of modular symbols for the congruence subgroup and calls the .cusps() method on this, which triggers computation of the boundary map; the existing code for computing the boundary map also gives the set of cusps as a side-effect. They aren't computed in reduced form, though, so we reduce them and pass them back to the user.\n\nIf \"bdmap\" is false (the default), the method finds all cusps by directly calculating the appropriate list of rational numbers -- there are two hidden helper methods, one to do this for Gamma0 and another for Gamma1 and GammaH. This is *much* faster than computing the boundary map if N is large. \n\nI've also added a reduce_cusp method, which is essentially a wrapper around Craig Citro's _reduce_cusp method but throws away the extra output of a sign, since that's not so important\noutside the specific context of modular symbol boundary maps.\n\nIn the course of fixing this, I've also made some other changes: I found that existing code gives\n\n``` \nsage: Gamma1(11) == GammaH(11, [])\nFalse\nsage: Gamma0(11) == GammaH(11, [2])\nFalse\n```\n\ndespite the fact that in both cases the two groups are the same.\n\nHence I've adjusted things so that Gamma0 and Gamma1 inherit from GammaH, and use the GammaH __cmp__ methods. Things are now much more consistent, but there was a slight side-effect of breaking a doctest in abvar/abvar.py as the sort order of congruence subgroups has changed -- there is no way to avoid this, because at the moment we have the following: \n\n```\nsage: Gamma1(11) < Gamma0(11)\nFalse\nsage: GammaH(11, []) < GammaH(11, [2])\nTrue\n```\n\n\nI know that having cusps() as a method of congruence subgroups isn't the syntax originally proposed, but I don't like the idea of using Cusps_class.__call__(). If anyone feels strongly about this I'll happily add methods to Cusps_class so one can say\n\n```\nsage: Cusps.orbit_reps(Gamma1(11))\n...\n```\n\nor whatever.",
+    "body": "The above patch adds a cusps() method for all congruence subgroups; this accepts an optional boolean keyword argument \"bdmap\". \n\nIf \"bdmap\" is true, then the method creates the space of modular symbols for the congruence subgroup and calls the .cusps() method on this, which triggers computation of the boundary map; the existing code for computing the boundary map also gives the set of cusps as a side-effect. They aren't computed in reduced form, though, so we reduce them and pass them back to the user.\n\nIf \"bdmap\" is false (the default), the method finds all cusps by directly calculating the appropriate list of rational numbers -- there are two hidden helper methods, one to do this for Gamma0 and another for Gamma1 and GammaH. This is *much* faster than computing the boundary map if N is large. \n\nI've also added a reduce_cusp method, which is essentially a wrapper around Craig Citro's _reduce_cusp method but throws away the extra output of a sign, since that's not so important\noutside the specific context of modular symbol boundary maps.\n\nIn the course of fixing this, I've also made some other changes: I found that existing code gives\n\n``` \nsage: Gamma1(11) == GammaH(11, [])\nFalse\nsage: Gamma0(11) == GammaH(11, [2])\nFalse\n```\ndespite the fact that in both cases the two groups are the same.\n\nHence I've adjusted things so that Gamma0 and Gamma1 inherit from GammaH, and use the GammaH __cmp__ methods. Things are now much more consistent, but there was a slight side-effect of breaking a doctest in abvar/abvar.py as the sort order of congruence subgroups has changed -- there is no way to avoid this, because at the moment we have the following: \n\n```\nsage: Gamma1(11) < Gamma0(11)\nFalse\nsage: GammaH(11, []) < GammaH(11, [2])\nTrue\n```\n\nI know that having cusps() as a method of congruence subgroups isn't the syntax originally proposed, but I don't like the idea of using Cusps_class.__call__(). If anyone feels strongly about this I'll happily add methods to Cusps_class so one can say\n\n```\nsage: Cusps.orbit_reps(Gamma1(11))\n...\n```\nor whatever.",
     "created_at": "2008-09-22T19:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -144,7 +142,6 @@ False
 sage: Gamma0(11) == GammaH(11, [2])
 False
 ```
-
 despite the fact that in both cases the two groups are the same.
 
 Hence I've adjusted things so that Gamma0 and Gamma1 inherit from GammaH, and use the GammaH __cmp__ methods. Things are now much more consistent, but there was a slight side-effect of breaking a doctest in abvar/abvar.py as the sort order of congruence subgroups has changed -- there is no way to avoid this, because at the moment we have the following: 
@@ -156,14 +153,12 @@ sage: GammaH(11, []) < GammaH(11, [2])
 True
 ```
 
-
 I know that having cusps() as a method of congruence subgroups isn't the syntax originally proposed, but I don't like the idea of using Cusps_class.__call__(). If anyone feels strongly about this I'll happily add methods to Cusps_class so one can say
 
 ```
 sage: Cusps.orbit_reps(Gamma1(11))
 ...
 ```
-
 or whatever.
 
 
@@ -191,7 +186,7 @@ I've added myself on the CC list for this.  My student Maite Aranes is in the pr
 archive/issue_comments_013676.json:
 ```json
 {
-    "body": "For the patch **2103.patch**, here's a possible fix for improving the documentation:\n\n\n\n```\n-Since Gamma0(N) always, contains the matrix -1, this always\n+Since Gamma0(N) always contains the matrix -1, this always\n```\n\nAfter applying that diff, you'd get:\n\n```\nReturn True precisely if this subgroup contains the matrix -1. \n\nSince Gamma0(N) always contains the matrix -1, this always \nreturns True.\n```\n",
+    "body": "For the patch **2103.patch**, here's a possible fix for improving the documentation:\n\n\n```\n-Since Gamma0(N) always, contains the matrix -1, this always\n+Since Gamma0(N) always contains the matrix -1, this always\n```\nAfter applying that diff, you'd get:\n\n```\nReturn True precisely if this subgroup contains the matrix -1. \n\nSince Gamma0(N) always contains the matrix -1, this always \nreturns True.\n```",
     "created_at": "2008-10-27T12:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -203,12 +198,10 @@ archive/issue_comments_013676.json:
 For the patch **2103.patch**, here's a possible fix for improving the documentation:
 
 
-
 ```
 -Since Gamma0(N) always, contains the matrix -1, this always
 +Since Gamma0(N) always contains the matrix -1, this always
 ```
-
 After applying that diff, you'd get:
 
 ```
@@ -220,13 +213,12 @@ returns True.
 
 
 
-
 ---
 
 archive/issue_comments_013677.json:
 ```json
 {
-    "body": "\n```\napplying /local/jec/2103.patch\npatching file sage/modular/congroup.py\nHunk #3 FAILED at 589\n1 out of 10 hunks FAILED -- saving rejects to file sage/modular/congroup.py.rej\nabort: patch failed to apply\n```\n\n\nSame on both 3.1.4 and 3.2.apha0.  David, could you rebase this?  Then I'll review it.\n\nWhile I'm here: am I right in thinking that there's quite a lot of code which is just moved from one place to another?  (Judging by the amount of red and blue I see when viewing the patch).\n\nI certainly like the code from looking at it by eye but it needs to be able to be applied...\n\nMy guess is that the code for giving a complete set of cusp representatives is not very efficient, but I also think it unlikely that that function would be needed for large N anyway.  I never wrote down explicit representatives even for Gamma_0(N), but think that you should have all a/d where 0<d|N and a runs through invertible residues mod gcd(d,N/d) lifted to be coprime to d.",
+    "body": "```\napplying /local/jec/2103.patch\npatching file sage/modular/congroup.py\nHunk #3 FAILED at 589\n1 out of 10 hunks FAILED -- saving rejects to file sage/modular/congroup.py.rej\nabort: patch failed to apply\n```\n\nSame on both 3.1.4 and 3.2.apha0.  David, could you rebase this?  Then I'll review it.\n\nWhile I'm here: am I right in thinking that there's quite a lot of code which is just moved from one place to another?  (Judging by the amount of red and blue I see when viewing the patch).\n\nI certainly like the code from looking at it by eye but it needs to be able to be applied...\n\nMy guess is that the code for giving a complete set of cusp representatives is not very efficient, but I also think it unlikely that that function would be needed for large N anyway.  I never wrote down explicit representatives even for Gamma_0(N), but think that you should have all a/d where 0<d|N and a runs through invertible residues mod gcd(d,N/d) lifted to be coprime to d.",
     "created_at": "2008-10-27T12:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
@@ -235,7 +227,6 @@ archive/issue_comments_013677.json:
 }
 ```
 
-
 ```
 applying /local/jec/2103.patch
 patching file sage/modular/congroup.py
@@ -243,7 +234,6 @@ Hunk #3 FAILED at 589
 1 out of 10 hunks FAILED -- saving rejects to file sage/modular/congroup.py.rej
 abort: patch failed to apply
 ```
-
 
 Same on both 3.1.4 and 3.2.apha0.  David, could you rebase this?  Then I'll review it.
 

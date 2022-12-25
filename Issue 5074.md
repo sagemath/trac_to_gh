@@ -3,7 +3,7 @@
 archive/issues_005074.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
     "created_at": "2009-01-23T14:30:09Z",
     "labels": [
         "component: commutative algebra",
@@ -18,7 +18,6 @@ archive/issues_005074.json:
 ```
 Assignee: @malb
 
-
 ```
 sage: k.<a> = GF(9)
 sage: R.<x,y> = PolynomialRing(k)
@@ -29,7 +28,6 @@ sage: h.factor()
 sage: h.factor()
 (-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)
 ```
-
 
 Note that the factors need not even be coprime!
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5074
 archive/issue_comments_038561.json:
 ```json
 {
-    "body": "Code I use to find countexamples:\n\n\n```\nk.<a> = GF(19^2); R.<x,y> = PolynomialRing(k)\nfor i in range(5000):\n    v = [R.random_element() for _ in range(3)]; print i; assert prod(v).factor().prod() == prod(v)\n```\n",
+    "body": "Code I use to find countexamples:\n\n```\nk.<a> = GF(19^2); R.<x,y> = PolynomialRing(k)\nfor i in range(5000):\n    v = [R.random_element() for _ in range(3)]; print i; assert prod(v).factor().prod() == prod(v)\n```",
     "created_at": "2009-01-23T14:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -57,13 +55,11 @@ archive/issue_comments_038561.json:
 
 Code I use to find countexamples:
 
-
 ```
 k.<a> = GF(19^2); R.<x,y> = PolynomialRing(k)
 for i in range(5000):
     v = [R.random_element() for _ in range(3)]; print i; assert prod(v).factor().prod() == prod(v)
 ```
-
 
 
 
@@ -90,7 +86,7 @@ Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/tra
 archive/issue_comments_038563.json:
 ```json
 {
-    "body": "The original problem seems to be fixed by now. I ran the above snipped and everything was fine. However, for GF(9) I do get an error:\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: factor(h)\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\nsage.rings.polynomial.multi_polynomial.MPolynomial._factor_over_nonprime_finite_field()\nAssertionError: bug in Singular factoring an auxiliary polynomial over GF(p): bad multiplicity (1, 2)\n```\n",
+    "body": "The original problem seems to be fixed by now. I ran the above snipped and everything was fine. However, for GF(9) I do get an error:\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: factor(h)\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\nsage.rings.polynomial.multi_polynomial.MPolynomial._factor_over_nonprime_finite_field()\nAssertionError: bug in Singular factoring an auxiliary polynomial over GF(p): bad multiplicity (1, 2)\n```",
     "created_at": "2010-07-12T15:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -112,7 +108,6 @@ AssertionError                            Traceback (most recent call last)
 sage.rings.polynomial.multi_polynomial.MPolynomial._factor_over_nonprime_finite_field()
 AssertionError: bug in Singular factoring an auxiliary polynomial over GF(p): bad multiplicity (1, 2)
 ```
-
 
 
 
@@ -139,7 +134,7 @@ Changing status from new to needs_work.
 archive/issue_comments_038565.json:
 ```json
 {
-    "body": "It's definitely still broken.  Note that it isn't broken every single time :-):\n\n```\n\nsage: sage: k.<a> = GF(9)sage: sage: R.<x,y> = PolynomialRing(k)\nsage: sage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^8*y^2 - x^7*y^3 + x^6*y^4 - x^5*y^5 + x^3*y^7 + x^2*y^8 + x*y^9 + y^10 + x^8*y + x^7*y^2 - x^3*y^6 - x^2*y^7 + y^9 - x^8 + x^3*y^5 + x*y^7 - y^8 - x^7 + x^4*y^3 + x^3*y^4 - x^2*y^5 + y^7 - x^4*y^2 + x^3*y^3 + x^2*y^4 + x*y^5 - y^6 - x^5 - x^4*y - y^5 + x^4 - x^3*y + x^2*y^2 + x^3 + x*y^2 - y^3 + x^2 - x*y + x + 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n```\n",
+    "body": "It's definitely still broken.  Note that it isn't broken every single time :-):\n\n```\n\nsage: sage: k.<a> = GF(9)sage: sage: R.<x,y> = PolynomialRing(k)\nsage: sage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^8*y^2 - x^7*y^3 + x^6*y^4 - x^5*y^5 + x^3*y^7 + x^2*y^8 + x*y^9 + y^10 + x^8*y + x^7*y^2 - x^3*y^6 - x^2*y^7 + y^9 - x^8 + x^3*y^5 + x*y^7 - y^8 - x^7 + x^4*y^3 + x^3*y^4 - x^2*y^5 + y^7 - x^4*y^2 + x^3*y^3 + x^2*y^4 + x*y^5 - y^6 - x^5 - x^4*y - y^5 + x^4 - x^3*y + x^2*y^2 + x^3 + x*y^2 - y^3 + x^2 - x*y + x + 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n```",
     "created_at": "2010-07-14T22:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -166,7 +161,6 @@ sage: h.factor()
 
 
 
-
 ---
 
 archive/issue_comments_038566.json:
@@ -190,7 +184,7 @@ See also #9498.
 archive/issue_comments_038567.json:
 ```json
 {
-    "body": "I just tried it again with 3-1-1-3 which does have some new factorisation code over GF(p)\n\n\n```\nsage: k.<a> = GF(9)sage: sage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: for i in range(10): h.factor(proof=False)\n....: \n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n\n\n```\n",
+    "body": "I just tried it again with 3-1-1-3 which does have some new factorisation code over GF(p)\n\n```\nsage: k.<a> = GF(9)sage: sage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\nsage: for i in range(10): h.factor(proof=False)\n....: \n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n(x^2 + x*y - y^2 + 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^4 + x^3*y + x*y^3 - y^4 + x^3 - x^2*y - x*y^2 + x^2 + x*y + y^2 - x - 1)\n\n\n```",
     "created_at": "2010-07-15T09:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
@@ -200,7 +194,6 @@ archive/issue_comments_038567.json:
 ```
 
 I just tried it again with 3-1-1-3 which does have some new factorisation code over GF(p)
-
 
 ```
 sage: k.<a> = GF(9)sage: sage: R.<x,y> = PolynomialRing(k)
@@ -220,7 +213,6 @@ sage: for i in range(10): h.factor(proof=False)
 
 
 ```
-
 
 
 

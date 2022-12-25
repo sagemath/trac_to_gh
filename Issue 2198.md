@@ -111,7 +111,7 @@ To be precise, this is a duplicate of #6532, where there is a much better discus
 archive/issue_comments_014409.json:
 ```json
 {
-    "body": "> To release manager - I recommend this ticket be closed as as duplicate.\n> \n> To be precise, this is a duplicate of #6532, where there is a much better discussion (as opposed to none here).  \n>",
+    "body": "> To release manager - I recommend this ticket be closed as as duplicate.\n> \n> To be precise, this is a duplicate of #6532, where there is a much better discussion (as opposed to none here).  \n\n>",
     "created_at": "2009-12-11T20:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
@@ -123,6 +123,7 @@ archive/issue_comments_014409.json:
 > To release manager - I recommend this ticket be closed as as duplicate.
 > 
 > To be precise, this is a duplicate of #6532, where there is a much better discussion (as opposed to none here).  
+
 >
 
 

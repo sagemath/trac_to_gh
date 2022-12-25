@@ -3,7 +3,7 @@
 archive/issues_001420.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nhttp://www.sagemath.org/doc/html/tut/node39.html#sec:notebook\n\nYour worksheet can be emailed to someone else, how can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\nSHOULD READ:\n\nYour worksheet can be emailed to someone else, who can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\n\n\n\nThanks for your efforts.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1420\n\n",
+    "body": "Assignee: tba\n\n```\nhttp://www.sagemath.org/doc/html/tut/node39.html#sec:notebook\n\nYour worksheet can be emailed to someone else, how can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\nSHOULD READ:\n\nYour worksheet can be emailed to someone else, who can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\n\n\n\nThanks for your efforts.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1420\n\n",
     "created_at": "2007-12-07T18:34:07Z",
     "labels": [
         "component: documentation",
@@ -19,7 +19,6 @@ archive/issues_001420.json:
 ```
 Assignee: tba
 
-
 ```
 http://www.sagemath.org/doc/html/tut/node39.html#sec:notebook
 
@@ -34,7 +33,6 @@ Your worksheet can be emailed to someone else, who can open it up in their copy 
 
 Thanks for your efforts.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1420
 

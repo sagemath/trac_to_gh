@@ -104,7 +104,7 @@ Note this upgrade won't work unless LinBox is upgraded as well.
 archive/issue_comments_091239.json:
 ```json
 {
-    "body": "Replying to [comment:6 malb]:\n> Note this upgrade won't work unless LinBox is upgraded as well.\nI was going to say that, not to mention we need a givaro-3.3.xx spkg too.",
+    "body": "Replying to [comment:6 malb]:\n> Note this upgrade won't work unless LinBox is upgraded as well.\n\nI was going to say that, not to mention we need a givaro-3.3.xx spkg too.",
     "created_at": "2011-08-23T04:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -115,6 +115,7 @@ archive/issue_comments_091239.json:
 
 Replying to [comment:6 malb]:
 > Note this upgrade won't work unless LinBox is upgraded as well.
+
 I was going to say that, not to mention we need a givaro-3.3.xx spkg too.
 
 
@@ -160,7 +161,7 @@ Yep, I opened #11718 for that but I just accidentally killed the last three hour
 archive/issue_comments_091242.json:
 ```json
 {
-    "body": "**Status update:**\n\nWe get errors like this\n\n\n```\n/sage-4.7.1/local/include/givaro/givzpz16table1.inl:424: error: \u2018UINT32_MAX\u2019 was not declared in this scope\n```\n\n\non *sage.math* unless we explicitly pass `-D__STDC_LIMIT_MACROS` in `spkg-install`. This works but is weird because Givaro does set `__STDC_LIMIT_MACROS` before it includes `<stdint.h>`. Also, I do not have this problem my local machine (running 64-bit Debian/GNU Linux)",
+    "body": "**Status update:**\n\nWe get errors like this\n\n```\n/sage-4.7.1/local/include/givaro/givzpz16table1.inl:424: error: \u2018UINT32_MAX\u2019 was not declared in this scope\n```\n\non *sage.math* unless we explicitly pass `-D__STDC_LIMIT_MACROS` in `spkg-install`. This works but is weird because Givaro does set `__STDC_LIMIT_MACROS` before it includes `<stdint.h>`. Also, I do not have this problem my local machine (running 64-bit Debian/GNU Linux)",
     "created_at": "2011-08-23T18:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -173,11 +174,9 @@ archive/issue_comments_091242.json:
 
 We get errors like this
 
-
 ```
 /sage-4.7.1/local/include/givaro/givzpz16table1.inl:424: error: ‘UINT32_MAX’ was not declared in this scope
 ```
-
 
 on *sage.math* unless we explicitly pass `-D__STDC_LIMIT_MACROS` in `spkg-install`. This works but is weird because Givaro does set `__STDC_LIMIT_MACROS` before it includes `<stdint.h>`. Also, I do not have this problem my local machine (running 64-bit Debian/GNU Linux)
 
@@ -336,7 +335,7 @@ Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case ther
 archive/issue_comments_091251.json:
 ```json
 {
-    "body": "Replying to [comment:20 vbraun]:\n> Patch doesn't apply on top of the m4ri update (#12840, #12841).\n\nThat's weird, I have it applied here:\n\n\n```\n$ hg qap                                                                                                                        [r16883 mq:5/5 sage-linbox.patch -  1:09PM]\ntrac_12840_m4ri_new_version.patch\ntrac_12841_m4rie_new_version.patch\ntrac_9511_givaro_3_6_x.patch\nmatrix_modn_dense_no_linbox.patch\nsage-linbox.patch\n```\n\n \n> Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` \n\nI just copied what Paul Zimmermann suggested as a fix for the book. Paul is CCed, so if he agrees, I'll change the doctest accordingly.",
+    "body": "Replying to [comment:20 vbraun]:\n> Patch doesn't apply on top of the m4ri update (#12840, #12841).\n\n\nThat's weird, I have it applied here:\n\n```\n$ hg qap                                                                                                                        [r16883 mq:5/5 sage-linbox.patch -  1:09PM]\ntrac_12840_m4ri_new_version.patch\ntrac_12841_m4rie_new_version.patch\ntrac_9511_givaro_3_6_x.patch\nmatrix_modn_dense_no_linbox.patch\nsage-linbox.patch\n```\n \n> Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` \n\n\nI just copied what Paul Zimmermann suggested as a fix for the book. Paul is CCed, so if he agrees, I'll change the doctest accordingly.",
     "created_at": "2012-06-18T12:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -348,8 +347,8 @@ archive/issue_comments_091251.json:
 Replying to [comment:20 vbraun]:
 > Patch doesn't apply on top of the m4ri update (#12840, #12841).
 
-That's weird, I have it applied here:
 
+That's weird, I have it applied here:
 
 ```
 $ hg qap                                                                                                                        [r16883 mq:5/5 sage-linbox.patch -  1:09PM]
@@ -359,9 +358,9 @@ trac_9511_givaro_3_6_x.patch
 matrix_modn_dense_no_linbox.patch
 sage-linbox.patch
 ```
-
  
 > Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` 
+
 
 I just copied what Paul Zimmermann suggested as a fix for the book. Paul is CCed, so if he agrees, I'll change the doctest accordingly.
 
@@ -372,7 +371,7 @@ I just copied what Paul Zimmermann suggested as a fix for the book. Paul is CCed
 archive/issue_comments_091252.json:
 ```json
 {
-    "body": "Where does the line \n\n```\n              depends = [SAGE_INC + 'givaro/givconfig.h']), \n```\n\nin your `module_list.py` come from? Its not in sage-5.1.beta3.\n\nAlso (and perhaps related), #11718 is no longer a dependency for this ticket right?",
+    "body": "Where does the line \n\n```\n              depends = [SAGE_INC + 'givaro/givconfig.h']), \n```\nin your `module_list.py` come from? Its not in sage-5.1.beta3.\n\nAlso (and perhaps related), #11718 is no longer a dependency for this ticket right?",
     "created_at": "2012-06-18T12:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -386,7 +385,6 @@ Where does the line
 ```
               depends = [SAGE_INC + 'givaro/givconfig.h']), 
 ```
-
 in your `module_list.py` come from? Its not in sage-5.1.beta3.
 
 Also (and perhaps related), #11718 is no longer a dependency for this ticket right?
@@ -398,7 +396,7 @@ Also (and perhaps related), #11718 is no longer a dependency for this ticket rig
 archive/issue_comments_091253.json:
 ```json
 {
-    "body": "Replying to [comment:22 vbraun]:\n> Where does the line \n> {{{\n>               depends = [SAGE_INC + 'givaro/givconfig.h']), \n> }}}\n> in your `module_list.py` come from? Its not in sage-5.1.beta3.\n\nIt's from \n\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/12761/12761_givaro_depends.patch\n\nwhich was merged in 5.0.1.rc1.\n> Also (and perhaps related), #11718 is no longer a dependency for this ticket right?\n\nRight, fixed that.",
+    "body": "Replying to [comment:22 vbraun]:\n> Where does the line \n> \n> ```\n>               depends = [SAGE_INC + 'givaro/givconfig.h']), \n> ```\n> in your `module_list.py` come from? Its not in sage-5.1.beta3.\n\n\nIt's from \n\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/12761/12761_givaro_depends.patch\n\nwhich was merged in 5.0.1.rc1.\n> Also (and perhaps related), #11718 is no longer a dependency for this ticket right?\n\n\nRight, fixed that.",
     "created_at": "2012-06-18T13:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -409,10 +407,12 @@ archive/issue_comments_091253.json:
 
 Replying to [comment:22 vbraun]:
 > Where does the line 
-> {{{
+> 
+> ```
 >               depends = [SAGE_INC + 'givaro/givconfig.h']), 
-> }}}
+> ```
 > in your `module_list.py` come from? Its not in sage-5.1.beta3.
+
 
 It's from 
 
@@ -420,6 +420,7 @@ http://trac.sagemath.org/sage_trac/attachment/ticket/12761/12761_givaro_depends.
 
 which was merged in 5.0.1.rc1.
 > Also (and perhaps related), #11718 is no longer a dependency for this ticket right?
+
 
 Right, fixed that.
 
@@ -484,7 +485,7 @@ Lets leave it at the current state but in general its probably best to avoid cyc
 archive/issue_comments_091257.json:
 ```json
 {
-    "body": "Replying to [comment:20 vbraun]:\n> Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` \n\nI prefer to leave `Set([r for r in R])` which is more explicit (in my opinion) and to make\nthe changes minimal in the book. There are no duplicate elements here (in a finite field).\n\nPaul",
+    "body": "Replying to [comment:20 vbraun]:\n> Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` \n\n\nI prefer to leave `Set([r for r in R])` which is more explicit (in my opinion) and to make\nthe changes minimal in the book. There are no duplicate elements here (in a finite field).\n\nPaul",
     "created_at": "2012-06-18T13:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -495,6 +496,7 @@ archive/issue_comments_091257.json:
 
 Replying to [comment:20 vbraun]:
 > Also, `Set([r for r in R])` should be just `Set(R)` or (even better in case there are duplicate elements) `sorted(R)` 
+
 
 I prefer to leave `Set([r for r in R])` which is more explicit (in my opinion) and to make
 the changes minimal in the book. There are no duplicate elements here (in a finite field).
@@ -508,7 +510,7 @@ Paul
 archive/issue_comments_091258.json:
 ```json
 {
-    "body": "The identity list comprehension doesn't add anything to the understanding here. Why not\n\n```\nSet([ s for s in [r for r in R]))\n```\n\nto make it really really explicit? :-P  \n\nIf anything, this teaches bad habits. The only valid argument imho is that nobody is going to actually look into the sage.tests directory to learn how to use Sage. So I don't really care here but I would never let this stand in a doctest that is visible in the manual.",
+    "body": "The identity list comprehension doesn't add anything to the understanding here. Why not\n\n```\nSet([ s for s in [r for r in R]))\n```\nto make it really really explicit? :-P  \n\nIf anything, this teaches bad habits. The only valid argument imho is that nobody is going to actually look into the sage.tests directory to learn how to use Sage. So I don't really care here but I would never let this stand in a doctest that is visible in the manual.",
     "created_at": "2012-06-18T14:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -522,7 +524,6 @@ The identity list comprehension doesn't add anything to the understanding here. 
 ```
 Set([ s for s in [r for r in R]))
 ```
-
 to make it really really explicit? :-P  
 
 If anything, this teaches bad habits. The only valid argument imho is that nobody is going to actually look into the sage.tests directory to learn how to use Sage. So I don't really care here but I would never let this stand in a doctest that is visible in the manual.
@@ -534,7 +535,7 @@ If anything, this teaches bad habits. The only valid argument imho is that nobod
 archive/issue_comments_091259.json:
 ```json
 {
-    "body": "I'm getting testing failures on sage-5.1.beta5 (this worked fine on beta3, but the `cholesky()` method is new in beta5):\n\n```\n[vbraun@volker-desktop matrix]$ sage -t sage/matrix/matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n**********************************************************************\nFile \"/home/vbraun/opt/sage-5.1.beta5/devel/sage-main/sage/matrix/matrix2.pyx\", line 9813:\n    sage: L\nExpected:\n    [            3             0             0]\n    [    4*a^2 + 1             1             0]\n    [      3*a + 2 a^2 + 2*a + 3             3]\nGot:\n    [            2             0             0]\n    [      a^2 + 4             1             0]\n    [      2*a + 3 a^2 + 2*a + 3             2]\n**********************************************************************\n1 items had failures:\n   1 of  65 in __main__.example_105\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/vbraun/.sage//tmp/matrix2_12014.py\n\t [12.8 s]\n```\n",
+    "body": "I'm getting testing failures on sage-5.1.beta5 (this worked fine on beta3, but the `cholesky()` method is new in beta5):\n\n```\n[vbraun@volker-desktop matrix]$ sage -t sage/matrix/matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n**********************************************************************\nFile \"/home/vbraun/opt/sage-5.1.beta5/devel/sage-main/sage/matrix/matrix2.pyx\", line 9813:\n    sage: L\nExpected:\n    [            3             0             0]\n    [    4*a^2 + 1             1             0]\n    [      3*a + 2 a^2 + 2*a + 3             3]\nGot:\n    [            2             0             0]\n    [      a^2 + 4             1             0]\n    [      2*a + 3 a^2 + 2*a + 3             2]\n**********************************************************************\n1 items had failures:\n   1 of  65 in __main__.example_105\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/vbraun/.sage//tmp/matrix2_12014.py\n\t [12.8 s]\n```",
     "created_at": "2012-06-21T15:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -569,13 +570,12 @@ For whitespace errors, see the file /home/vbraun/.sage//tmp/matrix2_12014.py
 
 
 
-
 ---
 
 archive/issue_comments_091260.json:
 ```json
 {
-    "body": "Compiles fine, but one failure with the testsuite on mark/skynet (SPARC solaris)\n\n```\n/bin/bash ../libtool --tag=CXX   --mode=link g++ -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include  -fPIC -I\"/home/vbraun/opt/mark/sage-5.1.beta3/local/include\" -static   -o te\nst-trunc test-trunc.o  -L../src -L../src/.libs -lgivaro -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib -lgmpxx -lgmp -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib -lgmpxx -lgmp\nlibtool: link: g++ -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include -fPIC -I/home/vbraun/opt/mark/sage-5.1.beta3/local/include -o test-trunc test-trunc.o  -L../src -L../src/.l\nibs /home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/src/.libs/libgivaro.a -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libgmpxx.so /home/vbraun/opt/mark/sag\ne-5.1.beta3/local/lib/libstdc++.so -lm /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libgmp.so -Wl,-R -Wl,/home/vbraun/opt/mark/sage-5.1.beta3/local/lib -Wl,-R -Wl,/home/vbraun/opt/mark/sage-5.1.beta3/local/lib\nld: warning: file /home/vbraun/opt/mark/sage-5.1.beta3/local//lib/libstdc++.so: linked to /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libstdc++.so: attempted multiple inclusion of file\ng++ -DHAVE_CONFIG_H -I. -I..  -I..  -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include -I../src/kernel/system -I../src/kernel/memory -I../src/kernel/zpz -I../src/kernel/integer -I../src/kernel -I../src/library/poly1 -I../s\nrc/kernel/bstruct -I../src/library/tools  -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include  -fPIC -I\"/home/vbraun/opt/mark/sage-5.1.beta3/local/include\" -c -o test-crt.o test-\ncrt.C\n```\n\nlooks good but then further down\n\n```\nPASS: test-trunc\n/bin/bash: line 5: 12309 Bus Error               (core dumped) ${dir}$tst\nFAIL: test-crt\nPASS: test-geom\nPASS: test-integer\nPASS: test-conversion\nPASS: test-ratrecon\n=============================================\n1 of 12 tests failed\nPlease report to Jean-Guillaume.Dumas@imag.fr\n=============================================\nmake[3]: *** [check-TESTS] Error 1\nmake[3]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake[2]: *** [check-am] Error 2\nmake[2]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake[1]: *** [check-recursive] Error 1\nmake[1]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake: *** [check-recursive] Error 1\nError while running the Givaro testsuite ... exiting\n```\n",
+    "body": "Compiles fine, but one failure with the testsuite on mark/skynet (SPARC solaris)\n\n```\n/bin/bash ../libtool --tag=CXX   --mode=link g++ -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include  -fPIC -I\"/home/vbraun/opt/mark/sage-5.1.beta3/local/include\" -static   -o te\nst-trunc test-trunc.o  -L../src -L../src/.libs -lgivaro -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib -lgmpxx -lgmp -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib -lgmpxx -lgmp\nlibtool: link: g++ -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include -fPIC -I/home/vbraun/opt/mark/sage-5.1.beta3/local/include -o test-trunc test-trunc.o  -L../src -L../src/.l\nibs /home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/src/.libs/libgivaro.a -L/home/vbraun/opt/mark/sage-5.1.beta3/local//lib /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libgmpxx.so /home/vbraun/opt/mark/sag\ne-5.1.beta3/local/lib/libstdc++.so -lm /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libgmp.so -Wl,-R -Wl,/home/vbraun/opt/mark/sage-5.1.beta3/local/lib -Wl,-R -Wl,/home/vbraun/opt/mark/sage-5.1.beta3/local/lib\nld: warning: file /home/vbraun/opt/mark/sage-5.1.beta3/local//lib/libstdc++.so: linked to /home/vbraun/opt/mark/sage-5.1.beta3/local/lib/libstdc++.so: attempted multiple inclusion of file\ng++ -DHAVE_CONFIG_H -I. -I..  -I..  -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include -I../src/kernel/system -I../src/kernel/memory -I../src/kernel/zpz -I../src/kernel/integer -I../src/kernel -I../src/library/poly1 -I../s\nrc/kernel/bstruct -I../src/library/tools  -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include  -fPIC -I\"/home/vbraun/opt/mark/sage-5.1.beta3/local/include\" -c -o test-crt.o test-\ncrt.C\n```\nlooks good but then further down\n\n```\nPASS: test-trunc\n/bin/bash: line 5: 12309 Bus Error               (core dumped) ${dir}$tst\nFAIL: test-crt\nPASS: test-geom\nPASS: test-integer\nPASS: test-conversion\nPASS: test-ratrecon\n=============================================\n1 of 12 tests failed\nPlease report to Jean-Guillaume.Dumas@imag.fr\n=============================================\nmake[3]: *** [check-TESTS] Error 1\nmake[3]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake[2]: *** [check-am] Error 2\nmake[2]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake[1]: *** [check-recursive] Error 1\nmake[1]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'\nmake: *** [check-recursive] Error 1\nError while running the Givaro testsuite ... exiting\n```",
     "created_at": "2012-06-22T12:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -597,7 +597,6 @@ g++ -DHAVE_CONFIG_H -I. -I..  -I..  -I/home/vbraun/opt/mark/sage-5.1.beta3/local
 rc/kernel/bstruct -I../src/library/tools  -O0 -Wall -g -DNDEBUG -UGIVARO_DEBUG -UDEBUG -I/home/vbraun/opt/mark/sage-5.1.beta3/local//include  -fPIC -I"/home/vbraun/opt/mark/sage-5.1.beta3/local/include" -c -o test-crt.o test-
 crt.C
 ```
-
 looks good but then further down
 
 ```
@@ -624,7 +623,6 @@ Error while running the Givaro testsuite ... exiting
 
 
 
-
 ---
 
 archive/issue_comments_091261.json:
@@ -648,7 +646,7 @@ Attachment [trac_9511_givaro_3_7_x.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_091262.json:
 ```json
 {
-    "body": "I rebased the patch to 5.1.beta5. In particular, this patch removes the line from `matrix2.pyx` that producses the offending output\n\n```\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n**********************************************************************\nFile \"/home/vbraun/opt/sage-5.1.beta5/devel/sage-main/sage/matrix/matrix2.pyx\", line 9813:\n    sage: L\nExpected:\n    [            3             0             0]\n    [    4*a^2 + 1             1             0]\n    [      3*a + 2 a^2 + 2*a + 3             3]\nGot:\n    [            2             0             0]\n    [      a^2 + 4             1             0]\n    [      2*a + 3 a^2 + 2*a + 3             2]\n**********************************************************************\n```\n\nThe Cholesky decomposition is not unique over finite fields and we shouldn't test for the output (which can be random depending on which square-root is chosen) but test for L*L<sup>T</sup> == A. This is done by the line after the line removed in this patch. Hence, correctness is checked. Note that I discussed this off-list Rob Beezer who is the author of the line removed in this patch.",
+    "body": "I rebased the patch to 5.1.beta5. In particular, this patch removes the line from `matrix2.pyx` that producses the offending output\n\n```\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n**********************************************************************\nFile \"/home/vbraun/opt/sage-5.1.beta5/devel/sage-main/sage/matrix/matrix2.pyx\", line 9813:\n    sage: L\nExpected:\n    [            3             0             0]\n    [    4*a^2 + 1             1             0]\n    [      3*a + 2 a^2 + 2*a + 3             3]\nGot:\n    [            2             0             0]\n    [      a^2 + 4             1             0]\n    [      2*a + 3 a^2 + 2*a + 3             2]\n**********************************************************************\n```\nThe Cholesky decomposition is not unique over finite fields and we shouldn't test for the output (which can be random depending on which square-root is chosen) but test for L*L<sup>T</sup> == A. This is done by the line after the line removed in this patch. Hence, correctness is checked. Note that I discussed this off-list Rob Beezer who is the author of the line removed in this patch.",
     "created_at": "2012-06-24T15:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -674,7 +672,6 @@ Got:
     [      2*a + 3 a^2 + 2*a + 3             2]
 **********************************************************************
 ```
-
 The Cholesky decomposition is not unique over finite fields and we shouldn't test for the output (which can be random depending on which square-root is chosen) but test for L*L<sup>T</sup> == A. This is done by the line after the line removed in this patch. Hence, correctness is checked. Note that I discussed this off-list Rob Beezer who is the author of the line removed in this patch.
 
 
@@ -684,7 +681,7 @@ The Cholesky decomposition is not unique over finite fields and we shouldn't tes
 archive/issue_comments_091263.json:
 ```json
 {
-    "body": "Replying to [comment:32 vbraun]:\n> {{{\n> PASS: test-trunc\n> /bin/bash: line 5: 12309 Bus Error               (core dumped) ${dir}$tst\n> FAIL: test-crt\n> }}}\n\nShall we set this to **needs work** then? What's our policy for stuff like this?",
+    "body": "Replying to [comment:32 vbraun]:\n> {{{\n> PASS: test-trunc\n> /bin/bash: line 5: 12309 Bus Error               (core dumped) ${dir}$tst\n> FAIL: test-crt\n> }}}\n\n\nShall we set this to **needs work** then? What's our policy for stuff like this?",
     "created_at": "2012-06-24T15:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -699,6 +696,7 @@ Replying to [comment:32 vbraun]:
 > /bin/bash: line 5: 12309 Bus Error               (core dumped) ${dir}$tst
 > FAIL: test-crt
 > }}}
+
 
 Shall we set this to **needs work** then? What's our policy for stuff like this?
 
@@ -727,7 +725,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_091265.json:
 ```json
 {
-    "body": "I talked to Jean-Guillaume and he gave me an experimental patch but it didn't help. Here is the gdb backtrace\n\n```\n-bash-3.00$ /home/vbraun/opt/mark/gdb-7.4.1/gdb/gdb test-crt\nGNU gdb (GDB) 7.4.1\nCopyright (C) 2012 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"sparc-sun-solaris2.10\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from\n/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests/test-crt...done.\n(gdb) run\nStarting program:\n/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests/test-crt\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 1 (LWP 1)]\n0x00029030 in Givaro::GFqDom<long>::GFqDom (this=0x7eaec, F=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givgfq.h:100\n100                     _dcharacteristic = F._dcharacteristic;\n(gdb) bt\n#0  0x00029030 in Givaro::GFqDom<long>::GFqDom (this=0x7eaec, F=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givgfq.h:100\n#1  0x00033c3c in Givaro::GivaroMM<Givaro::GFqDom<long> >::initone\n(p=0x7eaec, V=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givaromm.h:297\n#2  0x00031110 in Givaro::GivaroMM<Givaro::GFqDom<long> >::initialize\n(bloc=0x7eaec, s=15, V=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givaromm.h:300\n#3  0x000268f8 in Givaro::Array0<Givaro::GFqDom<long> >::build\n(this=0xffbff890, s=15, t=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givarray0.inl:30\n#4  0x00021ad0 in Givaro::Array0<Givaro::GFqDom<long> >::Array0\n(this=0xffbff890, s=15)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givarray0.inl:39\n#5  0x0001bf04 in tmain<Givaro::GFqDom<long> > (argc=1,\nargv=0xffbffb3c, generator=...) at test-crt.C:49\n#6  0x00013d00 in main (argc=1, argv=0xffbffb3c) at test-crt.C:151\n(gdb) l\n95              {\n96                      zero = F.zero;\n97                      one = F.one;\n98                      mOne = F.mOne;\n99                      _characteristic = F._characteristic;\n100                     _dcharacteristic = F._dcharacteristic;\n101                     _exponent = F._exponent;\n102                     _irred = F._irred;\n103                     _q = F._q;\n104                     _qm1 = F._qm1;\n```\n\nI think we should at least wait a bit more if he can come up with a working patch.",
+    "body": "I talked to Jean-Guillaume and he gave me an experimental patch but it didn't help. Here is the gdb backtrace\n\n```\n-bash-3.00$ /home/vbraun/opt/mark/gdb-7.4.1/gdb/gdb test-crt\nGNU gdb (GDB) 7.4.1\nCopyright (C) 2012 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"sparc-sun-solaris2.10\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from\n/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests/test-crt...done.\n(gdb) run\nStarting program:\n/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests/test-crt\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 1 (LWP 1)]\n0x00029030 in Givaro::GFqDom<long>::GFqDom (this=0x7eaec, F=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givgfq.h:100\n100                     _dcharacteristic = F._dcharacteristic;\n(gdb) bt\n#0  0x00029030 in Givaro::GFqDom<long>::GFqDom (this=0x7eaec, F=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givgfq.h:100\n#1  0x00033c3c in Givaro::GivaroMM<Givaro::GFqDom<long> >::initone\n(p=0x7eaec, V=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givaromm.h:297\n#2  0x00031110 in Givaro::GivaroMM<Givaro::GFqDom<long> >::initialize\n(bloc=0x7eaec, s=15, V=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givaromm.h:300\n#3  0x000268f8 in Givaro::Array0<Givaro::GFqDom<long> >::build\n(this=0xffbff890, s=15, t=...)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givarray0.inl:30\n#4  0x00021ad0 in Givaro::Array0<Givaro::GFqDom<long> >::Array0\n(this=0xffbff890, s=15)\n   at /home/vbraun/opt/mark/sage-5.1.beta3/local//include/givaro/givarray0.inl:39\n#5  0x0001bf04 in tmain<Givaro::GFqDom<long> > (argc=1,\nargv=0xffbffb3c, generator=...) at test-crt.C:49\n#6  0x00013d00 in main (argc=1, argv=0xffbffb3c) at test-crt.C:151\n(gdb) l\n95              {\n96                      zero = F.zero;\n97                      one = F.one;\n98                      mOne = F.mOne;\n99                      _characteristic = F._characteristic;\n100                     _dcharacteristic = F._dcharacteristic;\n101                     _exponent = F._exponent;\n102                     _irred = F._irred;\n103                     _q = F._q;\n104                     _qm1 = F._qm1;\n```\nI think we should at least wait a bit more if he can come up with a working patch.",
     "created_at": "2012-06-24T15:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -792,7 +790,6 @@ argv=0xffbffb3c, generator=...) at test-crt.C:49
 103                     _q = F._q;
 104                     _qm1 = F._qm1;
 ```
-
 I think we should at least wait a bit more if he can come up with a working patch.
 
 
@@ -892,7 +889,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_091269.json:
 ```json
 {
-    "body": "From the spkg-install:\n\n```\nif [ -f \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx ]; then\n    echo \"Touching extensions linked against Givaro\"\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/finite_field_givaro.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/libs/linbox/linbox.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/libs/singular/singular.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/matrix/matrix_mpolynomial_dense.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx\nfi\n```\n\nSo **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?",
+    "body": "From the spkg-install:\n\n```\nif [ -f \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx ]; then\n    echo \"Touching extensions linked against Givaro\"\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/finite_field_givaro.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/libs/linbox/linbox.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/libs/singular/singular.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/matrix/matrix_mpolynomial_dense.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\n    touch \"$SAGE_ROOT\"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx\nfi\n```\nSo **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?",
     "created_at": "2012-06-26T15:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -914,7 +911,6 @@ if [ -f "$SAGE_ROOT"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_lib
     touch "$SAGE_ROOT"/devel/sage/sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx
 fi
 ```
-
 So **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?
 
 
@@ -1000,7 +996,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_091274.json:
 ```json
 {
-    "body": "Replying to [comment:39 vbraun]:\n> So **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?\n\nThis was supposed to be fixed in #12761 (merged in sage-5.0.1.rc1 and sage-5.1.beta4 and clearly mentioned in the comments and dependencies of this ticket!), so your spkg should be rebased to that.",
+    "body": "Replying to [comment:39 vbraun]:\n> So **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?\n\n\nThis was supposed to be fixed in #12761 (merged in sage-5.0.1.rc1 and sage-5.1.beta4 and clearly mentioned in the comments and dependencies of this ticket!), so your spkg should be rebased to that.",
     "created_at": "2012-06-27T07:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1011,6 +1007,7 @@ archive/issue_comments_091274.json:
 
 Replying to [comment:39 vbraun]:
 > So **THIS** is the reason why `sage/rings/finite_field_givaro.pyx` magically reappears once in a while. This file has been renamed a long time ago but whenever you reinstall givaro it is recreated. Our setup stuff does take care of recompiling dependent Cython classes, so this whole section is useless. Can you take it out before we ship it?
+
 
 This was supposed to be fixed in #12761 (merged in sage-5.0.1.rc1 and sage-5.1.beta4 and clearly mentioned in the comments and dependencies of this ticket!), so your spkg should be rebased to that.
 
@@ -1099,7 +1096,7 @@ TBH, I don't care either way.
 archive/issue_comments_091279.json:
 ```json
 {
-    "body": "Replying to [comment:46 malb]:\n> TBH, I don't care either way.\nWell, if you *remove* a patch, you should have a reason for it...",
+    "body": "Replying to [comment:46 malb]:\n> TBH, I don't care either way.\n\nWell, if you *remove* a patch, you should have a reason for it...",
     "created_at": "2012-06-27T15:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1110,6 +1107,7 @@ archive/issue_comments_091279.json:
 
 Replying to [comment:46 malb]:
 > TBH, I don't care either way.
+
 Well, if you *remove* a patch, you should have a reason for it...
 
 
@@ -1191,7 +1189,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_091284.json:
 ```json
 {
-    "body": "Attachment [givaro-3.2.13-3.7.0.diff](tarball://root/attachments/some-uuid/ticket9511/givaro-3.2.13-3.7.0.diff) by @jdemeyer created at 2012-06-27 20:41:41\n\nYou should keep the\n\n```\necho >&2 Error\n```\n\ninstead of \n\n```\necho Error\n```\n\nand also the Cygwin patch and the `$SAGE_LOCAL` quoting (i.e. don't undo something from givaro-3.2.13 unless you have a reason too).",
+    "body": "Attachment [givaro-3.2.13-3.7.0.diff](tarball://root/attachments/some-uuid/ticket9511/givaro-3.2.13-3.7.0.diff) by @jdemeyer created at 2012-06-27 20:41:41\n\nYou should keep the\n\n```\necho >&2 Error\n```\ninstead of \n\n```\necho Error\n```\nand also the Cygwin patch and the `$SAGE_LOCAL` quoting (i.e. don't undo something from givaro-3.2.13 unless you have a reason too).",
     "created_at": "2012-06-27T20:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1207,13 +1205,11 @@ You should keep the
 ```
 echo >&2 Error
 ```
-
 instead of 
 
 ```
 echo Error
 ```
-
 and also the Cygwin patch and the `$SAGE_LOCAL` quoting (i.e. don't undo something from givaro-3.2.13 unless you have a reason too).
 
 
@@ -1549,7 +1545,7 @@ I haven't made any changes to the spkg yet, so I'm not going to partake in the b
 archive/issue_comments_091297.json:
 ```json
 {
-    "body": "Replying to [comment:60 jhpalmieri]:\n> I thought that Jeroen's scripts for Sage releases added those tags automatically\nIndeed.",
+    "body": "Replying to [comment:60 jhpalmieri]:\n> I thought that Jeroen's scripts for Sage releases added those tags automatically\n\nIndeed.",
     "created_at": "2012-08-21T09:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",
     "type": "issue_comment",
@@ -1560,6 +1556,7 @@ archive/issue_comments_091297.json:
 
 Replying to [comment:60 jhpalmieri]:
 > I thought that Jeroen's scripts for Sage releases added those tags automatically
+
 Indeed.
 
 

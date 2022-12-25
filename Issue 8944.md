@@ -3,7 +3,7 @@
 archive/issues_008944.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/msg/dbe5b953a06d1f39) report:\n\n\n```\nThe first on seems to be a trivial 32-bit vs. 64-bit\nissue (probably occurs on any 32-bit machine, even without the \"long\"\noption):\n\nsage -t -long \"devel/sage/sage/matrix/matrix1.pyx\"\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2.alpha0/devel/sage/sage/matrix/\nmatrix1.pyx\", line 460:\n    sage: b.dtype\nExpected:\n    dtype('int64')\nGot:\n    dtype('int32')\n********************************************************************** \n```\n\n\nThis also happens on the Skynet machine cicero, a 32-bit Fedora 12 machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8944\n\n",
+    "body": "Assignee: tbd\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/msg/dbe5b953a06d1f39) report:\n\n```\nThe first on seems to be a trivial 32-bit vs. 64-bit\nissue (probably occurs on any 32-bit machine, even without the \"long\"\noption):\n\nsage -t -long \"devel/sage/sage/matrix/matrix1.pyx\"\n**********************************************************************\nFile \"/Users/Shared/sage/test/sage-4.4.2.alpha0/devel/sage/sage/matrix/\nmatrix1.pyx\", line 460:\n    sage: b.dtype\nExpected:\n    dtype('int64')\nGot:\n    dtype('int32')\n********************************************************************** \n```\n\nThis also happens on the Skynet machine cicero, a 32-bit Fedora 12 machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8944\n\n",
     "created_at": "2010-05-10T11:01:12Z",
     "labels": [
         "component: doctest coverage",
@@ -21,7 +21,6 @@ Assignee: tbd
 
 From this [sage-devel](http://groups.google.com/group/sage-devel/msg/dbe5b953a06d1f39) report:
 
-
 ```
 The first on seems to be a trivial 32-bit vs. 64-bit
 issue (probably occurs on any 32-bit machine, even without the "long"
@@ -38,7 +37,6 @@ Got:
     dtype('int32')
 ********************************************************************** 
 ```
-
 
 This also happens on the Skynet machine cicero, a 32-bit Fedora 12 machine.
 

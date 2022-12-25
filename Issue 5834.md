@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_045762.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> Gonzalo, Jon,\n> \n> this is your area of expertise. Can either one of you review?\n> \n> And by the way: \"3. I removed random_int_upto(n) since it does the same as ZZ.random_element(n).\" is #5888. As it turned out that if you wanted some random number larger than 2^53 you ended up with loads of integers that had a common divisor of 2^47 causing some trouble to Bill Hart today when he looked at the HNF code in Sage to compare some code he has written in FLINT.\n> \n> Cheers,\n> \n> Michael\n\nMoral: do not reinvent the wheel, especially if your version is square.  Use the wheels provided!",
+    "body": "Replying to [comment:2 mabshoff]:\n> Gonzalo, Jon,\n> \n> this is your area of expertise. Can either one of you review?\n> \n> And by the way: \"3. I removed random_int_upto(n) since it does the same as ZZ.random_element(n).\" is #5888. As it turned out that if you wanted some random number larger than 2^53 you ended up with loads of integers that had a common divisor of 2^47 causing some trouble to Bill Hart today when he looked at the HNF code in Sage to compare some code he has written in FLINT.\n> \n> Cheers,\n> \n> Michael\n\n\nMoral: do not reinvent the wheel, especially if your version is square.  Use the wheels provided!",
     "created_at": "2009-04-24T10:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
@@ -96,6 +96,7 @@ Replying to [comment:2 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Moral: do not reinvent the wheel, especially if your version is square.  Use the wheels provided!
 

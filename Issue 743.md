@@ -3,7 +3,7 @@
 archive/issues_000743.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?\n\n* Makes it easy to assign an object to a single vertex, multiple vertices, or all vertices.  (Currently, you must assign the entire graph at once).\n\n* Makes it easy to retrieve an object associated with a vertex or multiple objects associated with multiple vertices (currently we can only retrieve one vertex at a time).\n\n* Has symmetry in the get/set functions (currently there is an \"associate\" and a \"obj\" function).\n\nIt seems that the simplest way to deal with multiple vertices is to use a dictionary, as is currently done, to associate a set of vertices with their corresponding objects.\n\nHere's an example of a possible idea:\n\n\n```\n  sage: g=Graph();\n  sage: g.add_vertices(10);\n  sage: g.set_vertices({0: 'vertex0', 1: 'vertex1'})\n  sage: g.set_vertex({3: 'vertex3'})\n  sage: g.set_vertex(4,'vertex4')\n  sage: g.get_vertices()\n  {0: 'vertex0', 1: 'vertex1', 3: 'vertex3', 4: 'vertex4'}\n  sage: g.get_vertex(0)\n  'vertex0'\n  sage: g.get_vertices([0,1])\n  {0: 'vertex0', 1: 'vertex1'}\n```\n\n\nOf course, in the above example, the strings could have been replaced with any objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/743\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?\n\n* Makes it easy to assign an object to a single vertex, multiple vertices, or all vertices.  (Currently, you must assign the entire graph at once).\n\n* Makes it easy to retrieve an object associated with a vertex or multiple objects associated with multiple vertices (currently we can only retrieve one vertex at a time).\n\n* Has symmetry in the get/set functions (currently there is an \"associate\" and a \"obj\" function).\n\nIt seems that the simplest way to deal with multiple vertices is to use a dictionary, as is currently done, to associate a set of vertices with their corresponding objects.\n\nHere's an example of a possible idea:\n\n```\n  sage: g=Graph();\n  sage: g.add_vertices(10);\n  sage: g.set_vertices({0: 'vertex0', 1: 'vertex1'})\n  sage: g.set_vertex({3: 'vertex3'})\n  sage: g.set_vertex(4,'vertex4')\n  sage: g.get_vertices()\n  {0: 'vertex0', 1: 'vertex1', 3: 'vertex3', 4: 'vertex4'}\n  sage: g.get_vertex(0)\n  'vertex0'\n  sage: g.get_vertices([0,1])\n  {0: 'vertex0', 1: 'vertex1'}\n```\n\nOf course, in the above example, the strings could have been replaced with any objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/743\n\n",
     "created_at": "2007-09-24T18:12:25Z",
     "labels": [
         "component: combinatorics"
@@ -31,7 +31,6 @@ It seems that the simplest way to deal with multiple vertices is to use a dictio
 
 Here's an example of a possible idea:
 
-
 ```
   sage: g=Graph();
   sage: g.add_vertices(10);
@@ -46,7 +45,6 @@ Here's an example of a possible idea:
   {0: 'vertex0', 1: 'vertex1'}
 ```
 
-
 Of course, in the above example, the strings could have been replaced with any objects.
 
 Issue created by migration from https://trac.sagemath.org/ticket/743
@@ -60,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/743
 archive/issue_comments_004333.json:
 ```json
 {
-    "body": "Additional comments, stemming from Chris Godsil's wishlist:\n\n\n```\n>>> (c) Edge-colored graphs: A graph and functions from its edges to an index\n>>> set, and vice versa. These could also be represented as a set of\n>>> matchings,\n>>> and this data structure can be used to represent maps on surfaces.\n>> I think we should make a nice system for attaching arbitrary metadata to\n>> vertices and edges of a graph. Something like an attribute dictionary\n>> for each vertex and edge.\n> There is an existing trac ticket for improving the vertex association\n> setup- most likely these comments should just go on that ticket. Any\n> object at all can be the label for an edge, so I don't think there is\n> too much to do here.\n```\n",
+    "body": "Additional comments, stemming from Chris Godsil's wishlist:\n\n```\n>>> (c) Edge-colored graphs: A graph and functions from its edges to an index\n>>> set, and vice versa. These could also be represented as a set of\n>>> matchings,\n>>> and this data structure can be used to represent maps on surfaces.\n>> I think we should make a nice system for attaching arbitrary metadata to\n>> vertices and edges of a graph. Something like an attribute dictionary\n>> for each vertex and edge.\n> There is an existing trac ticket for improving the vertex association\n> setup- most likely these comments should just go on that ticket. Any\n> object at all can be the label for an edge, so I don't think there is\n> too much to do here.\n```",
     "created_at": "2007-11-28T19:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ archive/issue_comments_004333.json:
 ```
 
 Additional comments, stemming from Chris Godsil's wishlist:
-
 
 ```
 >>> (c) Edge-colored graphs: A graph and functions from its edges to an index
@@ -85,7 +82,6 @@ Additional comments, stemming from Chris Godsil's wishlist:
 > object at all can be the label for an edge, so I don't think there is
 > too much to do here.
 ```
-
 
 
 

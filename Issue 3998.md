@@ -67,7 +67,7 @@ Resolution: duplicate
 archive/issue_comments_028664.json:
 ```json
 {
-    "body": "This looked very familiar and in fact the patch is already in 3.1.2.alpha2:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run -R < trac_3998.patch\\?format\\=raw \npatching file sage/interfaces/sage0.py\n```\n\nSo, this is a dupe of #3983.\n\nCheers,\n\nMichael",
+    "body": "This looked very familiar and in fact the patch is already in 3.1.2.alpha2:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run -R < trac_3998.patch\\?format\\=raw \npatching file sage/interfaces/sage0.py\n```\nSo, this is a dupe of #3983.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T23:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3998",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ This looked very familiar and in fact the patch is already in 3.1.2.alpha2:
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run -R < trac_3998.patch\?format\=raw 
 patching file sage/interfaces/sage0.py
 ```
-
 So, this is a dupe of #3983.
 
 Cheers,

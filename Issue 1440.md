@@ -3,7 +3,7 @@
 archive/issues_001440.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI very much agree that the problem below is a bug, which we should resolve. \n\n\n```\nsubs and substitute are not equivalent for single variable\npolynomials,\nthough they are in the field of fractions or for polynomials in more\nthan\none variable:\n\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15, Release Date: 2007-12-03                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R.<x> = QQ[]\nsage: f = x^3 + x - 3\nsage: f.subs(x = 5)\n127\nsage: f.substitute(x = 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call\nlast)\n\n/Users/mafwc/<ipython console> in <module>()\n\n/Users/mafwc/element.pyx in\nsage.structure.element.Element.substitute()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.subs()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.__call__()\n\n<type 'exceptions.ValueError'>: must not specify both a keyword and\npositional argument\n\n\nsage: g = f/(x - 1)\nsage: [g.subs(x = 5), g.substitute(x = 5)]\n[127/4, 127/4]\n\n\nsage: R2.<y, z> = PolynomialRing(QQ, 2)\nsage: h = y^3*z + 4*y*z^2 + y + 3*z - 7\nsage: [h.subs(y = 5), h.substitute(y = 5)]\n[20*z^2 + 128*z - 2, 20*z^2 + 128*z - 2]\n\n\n[Mac OS X 10.4.11, 2 GHz Intel Core 2 Duo, 1 GB].\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1440\n\n",
+    "body": "Assignee: somebody\n\nI very much agree that the problem below is a bug, which we should resolve. \n\n```\nsubs and substitute are not equivalent for single variable\npolynomials,\nthough they are in the field of fractions or for polynomials in more\nthan\none variable:\n\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15, Release Date: 2007-12-03                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R.<x> = QQ[]\nsage: f = x^3 + x - 3\nsage: f.subs(x = 5)\n127\nsage: f.substitute(x = 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call\nlast)\n\n/Users/mafwc/<ipython console> in <module>()\n\n/Users/mafwc/element.pyx in\nsage.structure.element.Element.substitute()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.subs()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.__call__()\n\n<type 'exceptions.ValueError'>: must not specify both a keyword and\npositional argument\n\n\nsage: g = f/(x - 1)\nsage: [g.subs(x = 5), g.substitute(x = 5)]\n[127/4, 127/4]\n\n\nsage: R2.<y, z> = PolynomialRing(QQ, 2)\nsage: h = y^3*z + 4*y*z^2 + y + 3*z - 7\nsage: [h.subs(y = 5), h.substitute(y = 5)]\n[20*z^2 + 128*z - 2, 20*z^2 + 128*z - 2]\n\n\n[Mac OS X 10.4.11, 2 GHz Intel Core 2 Duo, 1 GB].\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1440\n\n",
     "created_at": "2007-12-09T21:09:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_001440.json:
 Assignee: somebody
 
 I very much agree that the problem below is a bug, which we should resolve. 
-
 
 ```
 subs and substitute are not equivalent for single variable
@@ -70,7 +69,6 @@ sage: [h.subs(y = 5), h.substitute(y = 5)]
 
 [Mac OS X 10.4.11, 2 GHz Intel Core 2 Duo, 1 GB].
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1440
 
@@ -139,7 +137,7 @@ Changing status from new to assigned.
 archive/issue_comments_009265.json:
 ```json
 {
-    "body": "Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by @JohnCremona created at 2008-05-13 21:56:50\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
+    "body": "Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by @JohnCremona created at 2008-05-13 21:56:50\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
     "created_at": "2008-05-13T21:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
@@ -157,7 +155,6 @@ If this is just an alias would it not be simpler to just put
 ```
     substitute = subs
 ```
-
 in the class definition instead of defining a second function which calls the first?
 
 Secondly, for some reason the patch posted does not display in the normal way, but I don't know why.
@@ -189,7 +186,7 @@ Is it possible to attach a docstring if the function is written using an assignm
 archive/issue_comments_009267.json:
 ```json
 {
-    "body": "Replying to [comment:5 broune]:\n> Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.\n\nNot literally,  but after the assignment they are the __same__ function so the docstring for one is displayed for both.  For example, `prime_factors` is a synonym for `prime_divisors`, and look:\n\n```\nsage: n=123\nsage: n.prime_factors?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method prime_divisors of sage.rings.integer.Integer object at 0xa124980>\nNamespace:      Interactive\nDocstring:\n\n            The prime divisors of self, sorted in increasing order.  If n\n            is negative, we do *not* include -1 among the prime divisors, since -1 is\n            not a prime number.\n\n            EXAMPLES:\n                sage: a = 1; a.prime_divisors()\n                []\n                sage: a = 100; a.prime_divisors()\n                [2, 5]\n                sage: a = -100; a.prime_divisors()\n                [2, 5]\n                sage: a = 2004; a.prime_divisors()\n                [2, 3, 167]\n```\n\nAlthough that looks slightly strange, I think it is ok, especially if the docstring mentions the synonym (which in this case it does not, which is my fault since I inserted the synonym while no-one was looking).",
+    "body": "Replying to [comment:5 broune]:\n> Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.\n\n\nNot literally,  but after the assignment they are the __same__ function so the docstring for one is displayed for both.  For example, `prime_factors` is a synonym for `prime_divisors`, and look:\n\n```\nsage: n=123\nsage: n.prime_factors?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method prime_divisors of sage.rings.integer.Integer object at 0xa124980>\nNamespace:      Interactive\nDocstring:\n\n            The prime divisors of self, sorted in increasing order.  If n\n            is negative, we do *not* include -1 among the prime divisors, since -1 is\n            not a prime number.\n\n            EXAMPLES:\n                sage: a = 1; a.prime_divisors()\n                []\n                sage: a = 100; a.prime_divisors()\n                [2, 5]\n                sage: a = -100; a.prime_divisors()\n                [2, 5]\n                sage: a = 2004; a.prime_divisors()\n                [2, 3, 167]\n```\nAlthough that looks slightly strange, I think it is ok, especially if the docstring mentions the synonym (which in this case it does not, which is my fault since I inserted the synonym while no-one was looking).",
     "created_at": "2008-05-14T08:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
@@ -200,6 +197,7 @@ archive/issue_comments_009267.json:
 
 Replying to [comment:5 broune]:
 > Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.
+
 
 Not literally,  but after the assignment they are the __same__ function so the docstring for one is displayed for both.  For example, `prime_factors` is a synonym for `prime_divisors`, and look:
 
@@ -226,7 +224,6 @@ Docstring:
                 sage: a = 2004; a.prime_divisors()
                 [2, 3, 167]
 ```
-
 Although that looks slightly strange, I think it is ok, especially if the docstring mentions the synonym (which in this case it does not, which is my fault since I inserted the synonym while no-one was looking).
 
 
@@ -292,7 +289,7 @@ I can see no reason not to apply this one-liner (redef_substi2.patch), even if t
 archive/issue_comments_009271.json:
 ```json
 {
-    "body": "I second that, please apply. I'll open a new ticket for:\n\n```\nThis is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class. I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded. Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.\n```\n",
+    "body": "I second that, please apply. I'll open a new ticket for:\n\n```\nThis is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class. I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded. Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.\n```",
     "created_at": "2008-06-04T20:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
@@ -306,7 +303,6 @@ I second that, please apply. I'll open a new ticket for:
 ```
 This is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class. I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded. Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.
 ```
-
 
 
 

@@ -212,7 +212,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080411.json:
 ```json
 {
-    "body": "The documentation doesn't even build correctly:\n\n```\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula:6: WARNING: Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula:6: WARNING: Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_not:11: WARNING: Inline literal start-string without end-string.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_ors:11: WARNING: Inline literal start-string without end-string.\n```\n",
+    "body": "The documentation doesn't even build correctly:\n\n```\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula:6: WARNING: Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula:6: WARNING: Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_not:11: WARNING: Inline literal start-string without end-string.\ndochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_ors:11: WARNING: Inline literal start-string without end-string.\n```",
     "created_at": "2013-07-25T17:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ dochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/
 dochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_not:11: WARNING: Inline literal start-string without end-string.
 dochtml.log:[logic    ] /mazur/release/merger/sage-5.11.rc0/local/lib/python2.7/site-packages/sage/logic/boolformula.py:docstring of sage.logic.boolformula.BooleanFormula.dist_ors:11: WARNING: Inline literal start-string without end-string.
 ```
-
 
 
 
@@ -255,7 +254,7 @@ archive/issue_events_021434.json:
 archive/issue_comments_080412.json:
 ```json
 {
-    "body": "Why end lines with\n\n```\n.::\n```\n\n\nI think these would be rendered as `.:`\n\nYou probably want\n\n```\n. ::\n```\n",
+    "body": "Why end lines with\n\n```\n.::\n```\n\nI think these would be rendered as `.:`\n\nYou probably want\n\n```\n. ::\n```",
     "created_at": "2013-07-25T17:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8793",
     "type": "issue_comment",
@@ -270,7 +269,6 @@ Why end lines with
 .::
 ```
 
-
 I think these would be rendered as `.:`
 
 You probably want
@@ -278,7 +276,6 @@ You probably want
 ```
 . ::
 ```
-
 
 
 

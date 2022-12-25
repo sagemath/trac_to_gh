@@ -3,7 +3,7 @@
 archive/issues_009502.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThere is an inconsistency in the example below for the echelonized basis of submodules with basis:\n\n```\nsage: F = FreeModule(ZZ, 3)\nsage: S = F.submodule_with_basis([(1,2,3),(3,2,1)])\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nUser basis matrix:\n[1 2 3]\n[3 2 1]\nsage: parent(S.echelonized_basis()[0])\nAmbient free module of rank 3 over the principal ideal domain Integer Ring\n```\n\n\nFor automatic bases everything is OK:\n\n```\nsage: S = F.submodule([(1,2,3),(3,2,1)])\nsage: parent(S.echelonized_basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\n```\n\n\nI am working on a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9502\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThere is an inconsistency in the example below for the echelonized basis of submodules with basis:\n\n```\nsage: F = FreeModule(ZZ, 3)\nsage: S = F.submodule_with_basis([(1,2,3),(3,2,1)])\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nUser basis matrix:\n[1 2 3]\n[3 2 1]\nsage: parent(S.echelonized_basis()[0])\nAmbient free module of rank 3 over the principal ideal domain Integer Ring\n```\n\nFor automatic bases everything is OK:\n\n```\nsage: S = F.submodule([(1,2,3),(3,2,1)])\nsage: parent(S.echelonized_basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\n```\n\nI am working on a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9502\n\n",
     "created_at": "2010-07-15T02:49:51Z",
     "labels": [
         "component: algebra",
@@ -34,7 +34,6 @@ sage: parent(S.echelonized_basis()[0])
 Ambient free module of rank 3 over the principal ideal domain Integer Ring
 ```
 
-
 For automatic bases everything is OK:
 
 ```
@@ -50,7 +49,6 @@ Echelon basis matrix:
 [1 2 3]
 [0 4 8]
 ```
-
 
 I am working on a patch to fix this.
 
@@ -173,7 +171,7 @@ I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get "ImportE
 archive/issue_comments_091112.json:
 ```json
 {
-    "body": "Replying to [comment:4 ddrake]:\n> I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get \"ImportError: cannot import name SR\". Any ideas? I've rebuilt the entire Sage library and the problem persists. \n\nThat's strange, since the patch does not mention `SR`...",
+    "body": "Replying to [comment:4 ddrake]:\n> I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get \"ImportError: cannot import name SR\". Any ideas? I've rebuilt the entire Sage library and the problem persists. \n\n\nThat's strange, since the patch does not mention `SR`...",
     "created_at": "2010-07-22T14:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9502",
     "type": "issue_comment",
@@ -185,6 +183,7 @@ archive/issue_comments_091112.json:
 Replying to [comment:4 ddrake]:
 > I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get "ImportError: cannot import name SR". Any ideas? I've rebuilt the entire Sage library and the problem persists. 
 
+
 That's strange, since the patch does not mention `SR`...
 
 
@@ -194,7 +193,7 @@ That's strange, since the patch does not mention `SR`...
 archive/issue_comments_091113.json:
 ```json
 {
-    "body": "Replying to [comment:5 novoselt]:\n> Replying to [comment:4 ddrake]:\n> > I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get \"ImportError: cannot import name SR\". Any ideas? I've rebuilt the entire Sage library and the problem persists. \n> \n> That's strange, since the patch does not mention `SR`...\nSure it does, implicitly - the final bit is part of \n\n```\ncdef class SymbolicRing(CommutativeRing):\n```\n\nwhich is changed.   And #8562 in alpha0 did change the behavior of Fields, though it's not clear to me how that change would affect SR's ability to import...",
+    "body": "Replying to [comment:5 novoselt]:\n> Replying to [comment:4 ddrake]:\n> > I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get \"ImportError: cannot import name SR\". Any ideas? I've rebuilt the entire Sage library and the problem persists. \n\n> \n> That's strange, since the patch does not mention `SR`...\n\nSure it does, implicitly - the final bit is part of \n\n```\ncdef class SymbolicRing(CommutativeRing):\n```\nwhich is changed.   And #8562 in alpha0 did change the behavior of Fields, though it's not clear to me how that change would affect SR's ability to import...",
     "created_at": "2010-07-23T01:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9502",
     "type": "issue_comment",
@@ -206,14 +205,15 @@ archive/issue_comments_091113.json:
 Replying to [comment:5 novoselt]:
 > Replying to [comment:4 ddrake]:
 > > I applied the patch to 4.5.2.alpha0 and when I try to start Sage, I get "ImportError: cannot import name SR". Any ideas? I've rebuilt the entire Sage library and the problem persists. 
+
 > 
 > That's strange, since the patch does not mention `SR`...
+
 Sure it does, implicitly - the final bit is part of 
 
 ```
 cdef class SymbolicRing(CommutativeRing):
 ```
-
 which is changed.   And #8562 in alpha0 did change the behavior of Fields, though it's not clear to me how that change would affect SR's ability to import...
 
 

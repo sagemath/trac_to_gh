@@ -241,7 +241,7 @@ The order to apply is QQ, RR, simplify, CC.
 archive/issue_comments_029715.json:
 ```json
 {
-    "body": "Robert,\n\nI merged the four patches and the only issue is the following:\n\n```\nsage -t -long devel/sage/sage/rings/real_mpfr.pyx           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/real_mpfr.py\", line 1900:\n    sage: RR(-1.234567)._pari_()\nExpected:\n    -1.2345670000000000000\nGot:\n    -1.2345670000000000001\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_58\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_real_mpfr.py\n         [10.8 s]\n```\n\nI don't changing the doctest is the solution here since the \"Real Number Inputs Improved\" patch from 3.1.2 was supposed to fix this. Or am I completely wrong here? Either way: feel free to add a patch here or in case it is something more than non-trivial open another ticket.\n\nCheers,\n\nMichael",
+    "body": "Robert,\n\nI merged the four patches and the only issue is the following:\n\n```\nsage -t -long devel/sage/sage/rings/real_mpfr.pyx           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/real_mpfr.py\", line 1900:\n    sage: RR(-1.234567)._pari_()\nExpected:\n    -1.2345670000000000000\nGot:\n    -1.2345670000000000001\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_58\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_real_mpfr.py\n         [10.8 s]\n```\nI don't changing the doctest is the solution here since the \"Real Number Inputs Improved\" patch from 3.1.2 was supposed to fix this. Or am I completely wrong here? Either way: feel free to add a patch here or in case it is something more than non-trivial open another ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T00:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -270,7 +270,6 @@ Got:
 For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_real_mpfr.py
          [10.8 s]
 ```
-
 I don't changing the doctest is the solution here since the "Real Number Inputs Improved" patch from 3.1.2 was supposed to fix this. Or am I completely wrong here? Either way: feel free to add a patch here or in case it is something more than non-trivial open another ticket.
 
 Cheers,
@@ -336,7 +335,7 @@ archive/issue_events_009367.json:
 archive/issue_comments_029718.json:
 ```json
 {
-    "body": "Oh, I think I know what the issue is (we have two real fields of 53 bits prec). I'll post a patch that addresses this. \n\n\n```\nsage: (1.2).parent() is RR\n False\n```\n",
+    "body": "Oh, I think I know what the issue is (we have two real fields of 53 bits prec). I'll post a patch that addresses this. \n\n```\nsage: (1.2).parent() is RR\n False\n```",
     "created_at": "2008-09-25T00:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -347,12 +346,10 @@ archive/issue_comments_029718.json:
 
 Oh, I think I know what the issue is (we have two real fields of 53 bits prec). I'll post a patch that addresses this. 
 
-
 ```
 sage: (1.2).parent() is RR
  False
 ```
-
 
 
 
@@ -379,7 +376,7 @@ Also, the patches at #4096 (which I will rebase against 3.1.3.alpha1 as soon as 
 archive/issue_comments_029720.json:
 ```json
 {
-    "body": "Actually, after those patches I get \n\n\n```\nsage: 1.2.parent() is RR\nTrue\n```\n\n\nSit looks like a pari issue for sure. For example, I get \n\n\n```\nsage: (-1.23456)._pari_()\n-1.2345600000000000001\n```\n\n\nwhich isn't using `RR.__call__` at all.",
+    "body": "Actually, after those patches I get \n\n```\nsage: 1.2.parent() is RR\nTrue\n```\n\nSit looks like a pari issue for sure. For example, I get \n\n```\nsage: (-1.23456)._pari_()\n-1.2345600000000000001\n```\n\nwhich isn't using `RR.__call__` at all.",
     "created_at": "2008-09-25T00:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
@@ -390,21 +387,17 @@ archive/issue_comments_029720.json:
 
 Actually, after those patches I get 
 
-
 ```
 sage: 1.2.parent() is RR
 True
 ```
 
-
 Sit looks like a pari issue for sure. For example, I get 
-
 
 ```
 sage: (-1.23456)._pari_()
 -1.2345600000000000001
 ```
-
 
 which isn't using `RR.__call__` at all.
 

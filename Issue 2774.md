@@ -3,7 +3,7 @@
 archive/issues_002774.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2)\nsage: B._singular_()\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering lp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2774\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2)\nsage: B._singular_()\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering lp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2774\n\n",
     "created_at": "2008-04-02T16:09:06Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ CC:  @burcin
 
 Keywords: polybori
 
-
 ```
 sage: B.<x,y> = BooleanPolynomialRing(2)
 sage: B._singular_()
@@ -35,7 +34,6 @@ sage: B._singular_()
 _[1]=x2+x
 _[2]=y2+y
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2774
 

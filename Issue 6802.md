@@ -3,7 +3,7 @@
 archive/issues_006802.json:
 ```json
 {
-    "body": "Keywords: var(), real variable\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/7bf451cf8202e085) thread, there is a request for `var()` to be able to define a \"real\" variable. Then one can do this\n\n```\nsage: a = var(\"a\")\nsage: conjugate(a)\na\n```\n\nAs of Sage 4.1.1, we have this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = var(\"a\")\nsage: conjugate(a)\nconjugate(a)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6802\n\n",
+    "body": "Keywords: var(), real variable\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/7bf451cf8202e085) thread, there is a request for `var()` to be able to define a \"real\" variable. Then one can do this\n\n```\nsage: a = var(\"a\")\nsage: conjugate(a)\na\n```\nAs of Sage 4.1.1, we have this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = var(\"a\")\nsage: conjugate(a)\nconjugate(a)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6802\n\n",
     "created_at": "2009-08-22T10:49:16Z",
     "labels": [
         "component: symbolics"
@@ -24,7 +24,6 @@ sage: a = var("a")
 sage: conjugate(a)
 a
 ```
-
 As of Sage 4.1.1, we have this:
 
 ```
@@ -34,7 +33,6 @@ sage: a = var("a")
 sage: conjugate(a)
 conjugate(a)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6802
 

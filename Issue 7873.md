@@ -102,7 +102,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068271.json:
 ```json
 {
-    "body": "Two comments: you've changed \"$CP\" to \"cp\" even though $CP is still defined in sage-env.  Does this matter?\n\nAlso (and this is not new -- it happens with the old spkg, too): when I install the spkg, I get this at the end:\n\n```\ncp: ../../bin is a directory (not copied).\ncp: cp: No such file or directory\n```\n\nAny ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.",
+    "body": "Two comments: you've changed \"$CP\" to \"cp\" even though $CP is still defined in sage-env.  Does this matter?\n\nAlso (and this is not new -- it happens with the old spkg, too): when I install the spkg, I get this at the end:\n\n```\ncp: ../../bin is a directory (not copied).\ncp: cp: No such file or directory\n```\nAny ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.",
     "created_at": "2010-01-08T20:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7873",
     "type": "issue_comment",
@@ -119,7 +119,6 @@ Also (and this is not new -- it happens with the old spkg, too): when I install 
 cp: ../../bin is a directory (not copied).
 cp: cp: No such file or directory
 ```
-
 Any ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.
 
 
@@ -129,7 +128,7 @@ Any ideas why?  Anyway, since gap works, maybe we shouldn't worry about this rig
 archive/issue_comments_068272.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Two comments: you've changed \"$CP\" to \"cp\" even though $CP is still defined in sage-env.  Does this matter?\n\nNo. I looked at that before deciding to replace them, but could see no reason not to in this case. One was a simple copy\n\n```\ncp patches/gap_cygwin \"$SAGE_LOCAL\"/bin/gap\n```\n\nthe other was recursive, but simply used the POSIX compatible '-r' option. There seemed to be no reason to use any other version of cp in such cases. \n\nThe GNU verison of 'cp' has some non-POSIX options (-a being one of them). Had that be iused in gap, then I would have left the $CP, but in this case, with only a very standard option used, there is no reason not to use whatever version of 'cp' is in the path first. Any 'cp' will work. \n\n> Also (and this is not new -- it happens with the old spkg, too): when I install the spkg, I get this at the end:\n> {{{\n> cp: ../../bin is a directory (not copied).\n> cp: cp: No such file or directory\n> }}}\n> Any ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.\n\nLooking at the 'cp' (or $CP) command I could not work out what spkg-install was trying to do (I just posted something on sage-devel about it). The code simply makes no sense to me. \n\nSince \n* The package functions, despite the errors. \n* I wanted to do it asap, in case it caused an issue with the sage-env ticket (#7818) \n* I could not work out what was the intended behavior. 'cp' is used in a way I'd never use it. \n* There is talk on sage-devel of updating gap\n\nit seemed like it was best left to another day. Like the fact CC and CXX get unset. I think it would be wise to find a way around the issues this creates, but again I did not attempt to fix it. That will certainly present a problem if one tried to use a Sun compiler to build gap. \n\nI'm not even convinced this will work in 64-bit mode on OS X, as it does not have the SAGE64 stuff which every other spkg-install file has. \n\nSo, overall, the changes I made were only necessary ones, and no others. \n\nDave",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Two comments: you've changed \"$CP\" to \"cp\" even though $CP is still defined in sage-env.  Does this matter?\n\n\nNo. I looked at that before deciding to replace them, but could see no reason not to in this case. One was a simple copy\n\n```\ncp patches/gap_cygwin \"$SAGE_LOCAL\"/bin/gap\n```\nthe other was recursive, but simply used the POSIX compatible '-r' option. There seemed to be no reason to use any other version of cp in such cases. \n\nThe GNU verison of 'cp' has some non-POSIX options (-a being one of them). Had that be iused in gap, then I would have left the $CP, but in this case, with only a very standard option used, there is no reason not to use whatever version of 'cp' is in the path first. Any 'cp' will work. \n\n> Also (and this is not new -- it happens with the old spkg, too): when I install the spkg, I get this at the end:\n> \n> ```\n> cp: ../../bin is a directory (not copied).\n> cp: cp: No such file or directory\n> ```\n> Any ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.\n\n\nLooking at the 'cp' (or $CP) command I could not work out what spkg-install was trying to do (I just posted something on sage-devel about it). The code simply makes no sense to me. \n\nSince \n* The package functions, despite the errors. \n* I wanted to do it asap, in case it caused an issue with the sage-env ticket (#7818) \n* I could not work out what was the intended behavior. 'cp' is used in a way I'd never use it. \n* There is talk on sage-devel of updating gap\n\nit seemed like it was best left to another day. Like the fact CC and CXX get unset. I think it would be wise to find a way around the issues this creates, but again I did not attempt to fix it. That will certainly present a problem if one tried to use a Sun compiler to build gap. \n\nI'm not even convinced this will work in 64-bit mode on OS X, as it does not have the SAGE64 stuff which every other spkg-install file has. \n\nSo, overall, the changes I made were only necessary ones, and no others. \n\nDave",
     "created_at": "2010-01-08T21:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7873",
     "type": "issue_comment",
@@ -141,22 +140,24 @@ archive/issue_comments_068272.json:
 Replying to [comment:3 jhpalmieri]:
 > Two comments: you've changed "$CP" to "cp" even though $CP is still defined in sage-env.  Does this matter?
 
+
 No. I looked at that before deciding to replace them, but could see no reason not to in this case. One was a simple copy
 
 ```
 cp patches/gap_cygwin "$SAGE_LOCAL"/bin/gap
 ```
-
 the other was recursive, but simply used the POSIX compatible '-r' option. There seemed to be no reason to use any other version of cp in such cases. 
 
 The GNU verison of 'cp' has some non-POSIX options (-a being one of them). Had that be iused in gap, then I would have left the $CP, but in this case, with only a very standard option used, there is no reason not to use whatever version of 'cp' is in the path first. Any 'cp' will work. 
 
 > Also (and this is not new -- it happens with the old spkg, too): when I install the spkg, I get this at the end:
-> {{{
+> 
+> ```
 > cp: ../../bin is a directory (not copied).
 > cp: cp: No such file or directory
-> }}}
+> ```
 > Any ideas why?  Anyway, since gap works, maybe we shouldn't worry about this right now.
+
 
 Looking at the 'cp' (or $CP) command I could not work out what spkg-install was trying to do (I just posted something on sage-devel about it). The code simply makes no sense to me. 
 

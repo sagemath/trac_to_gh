@@ -3,7 +3,7 @@
 archive/issues_007281.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.2.alpha1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 87:\n    sage: find_root(cos(phi)==sin(phi),0,pi/2)\nExpected:\n    0.78539816339744839\nGot:\n    0.78539816339744828\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_5\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7281\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.2.alpha1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 87:\n    sage: find_root(cos(phi)==sin(phi),0,pi/2)\nExpected:\n    0.78539816339744839\nGot:\n    0.78539816339744828\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_5\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7281\n\n",
     "created_at": "2009-10-24T03:35:08Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_007281.json:
 ```
 Assignee: tbd
 
-
 ```
 sage -t -long "devel/sage/doc/en/tutorial/tour_algebra.rst" 
 **********************************************************************
@@ -34,7 +33,6 @@ Got:
    1 of   4 in __main__.example_5
 ***Test Failed*** 1 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7281
 

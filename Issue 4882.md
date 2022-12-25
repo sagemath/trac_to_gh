@@ -3,7 +3,7 @@
 archive/issues_004882.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Fedora 9, 32 bits:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 58:\n    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))\nExpected:\n    verbose 0 ... Warning: falling back to very slow toy implementation.\nGot nothing\n**********************************************************************\n1 items had failures:\n   1 of  47 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n\t [44.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 44.6 seconds\n\n```\n\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4882\n\n",
+    "body": "Assignee: tbd\n\nOn Fedora 9, 32 bits:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 58:\n    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))\nExpected:\n    verbose 0 ... Warning: falling back to very slow toy implementation.\nGot nothing\n**********************************************************************\n1 items had failures:\n   1 of  47 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n\t [44.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 44.6 seconds\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4882\n\n",
     "created_at": "2008-12-26T17:39:31Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_004882.json:
 Assignee: tbd
 
 On Fedora 9, 32 bits:
-
 
 ```
 sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
@@ -45,7 +44,6 @@ The following tests failed:
 Total time for all tests: 44.6 seconds
 
 ```
-
 
 
 Jaap
@@ -133,7 +131,7 @@ Attachment [trac_4882.patch](tarball://root/attachments/some-uuid/ticket4882/tra
 archive/issue_comments_036928.json:
 ```json
 {
-    "body": "After the patch:\n\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 65:\n    sage: a^2 + b^2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[16]>\", line 1, in <module>\n        a**Integer(2) + b**Integer(2) == Integer(0)###line 65:\n    sage: a^2 + b^2 == 0\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 67:\n    sage: a^3 - b^2\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[17]>\", line 1, in <module>\n        a**Integer(3) - b**Integer(2)###line 67:\n    sage: a^3 - b^2\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 69:\n    sage: (a+b)^17\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[18]>\", line 1, in <module>\n        (a+b)**Integer(17)###line 69:\n    sage: (a+b)^17\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 71:\n    sage: S(17) == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[19]>\", line 1, in <module>\n        S(Integer(17)) == Integer(0)###line 71:\n    sage: S(17) == 0\n    NameError: name 'S' is not defined\n**********************************************************************\n1 items had failures:\n   4 of  45 in __main__.example_0\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n\t [12.6 s]\nexit code: 1024\n \n\n```\n\n\nNeeds work\n\nJaap",
+    "body": "After the patch:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 65:\n    sage: a^2 + b^2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[16]>\", line 1, in <module>\n        a**Integer(2) + b**Integer(2) == Integer(0)###line 65:\n    sage: a^2 + b^2 == 0\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 67:\n    sage: a^3 - b^2\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[17]>\", line 1, in <module>\n        a**Integer(3) - b**Integer(2)###line 67:\n    sage: a^3 - b^2\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 69:\n    sage: (a+b)^17\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[18]>\", line 1, in <module>\n        (a+b)**Integer(17)###line 69:\n    sage: (a+b)^17\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 71:\n    sage: S(17) == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[19]>\", line 1, in <module>\n        S(Integer(17)) == Integer(0)###line 71:\n    sage: S(17) == 0\n    NameError: name 'S' is not defined\n**********************************************************************\n1 items had failures:\n   4 of  45 in __main__.example_0\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n\t [12.6 s]\nexit code: 1024\n \n\n```\n\nNeeds work\n\nJaap",
     "created_at": "2008-12-26T18:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ archive/issue_comments_036928.json:
 ```
 
 After the patch:
-
 
 
 ```
@@ -218,7 +215,6 @@ exit code: 1024
  
 
 ```
-
 
 Needs work
 
@@ -295,7 +291,7 @@ Michael
 archive/issue_comments_036932.json:
 ```json
 {
-    "body": "Now:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n\t [39.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.8 seconds\n\n```\n\n\nCheers,\n\nJaap",
+    "body": "Now:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n\t [39.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.8 seconds\n\n```\n\nCheers,\n\nJaap",
     "created_at": "2008-12-26T22:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
@@ -315,7 +311,6 @@ All tests passed!
 Total time for all tests: 39.8 seconds
 
 ```
-
 
 Cheers,
 

@@ -104,7 +104,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_096012.json:
 ```json
 {
-    "body": "This looks good.  Running:\n\n```\nsage -testall -long\n```\n\ngives that all doctests pass except five unrelated tests (in sage/plot/plot3d/tachyon.py and sage/plot/plot3d/base.pyx) that also fail in an unpatched copy of Sage (version 4.6.1, built from source on 64-bit Linux).",
+    "body": "This looks good.  Running:\n\n```\nsage -testall -long\n```\ngives that all doctests pass except five unrelated tests (in sage/plot/plot3d/tachyon.py and sage/plot/plot3d/base.pyx) that also fail in an unpatched copy of Sage (version 4.6.1, built from source on 64-bit Linux).",
     "created_at": "2011-02-04T22:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
@@ -118,7 +118,6 @@ This looks good.  Running:
 ```
 sage -testall -long
 ```
-
 gives that all doctests pass except five unrelated tests (in sage/plot/plot3d/tachyon.py and sage/plot/plot3d/base.pyx) that also fail in an unpatched copy of Sage (version 4.6.1, built from source on 64-bit Linux).
 
 
@@ -168,7 +167,7 @@ I hope it's okay that I 'guessed' the reviewer's name from the trac main page!
 archive/issue_comments_096015.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> I hope it's okay that I 'guessed' the reviewer's name from the trac main page!\n\nI suppose so, I do that all the time.",
+    "body": "Replying to [comment:5 kcrisman]:\n> I hope it's okay that I 'guessed' the reviewer's name from the trac main page!\n\n\nI suppose so, I do that all the time.",
     "created_at": "2011-02-07T08:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
@@ -179,6 +178,7 @@ archive/issue_comments_096015.json:
 
 Replying to [comment:5 kcrisman]:
 > I hope it's okay that I 'guessed' the reviewer's name from the trac main page!
+
 
 I suppose so, I do that all the time.
 

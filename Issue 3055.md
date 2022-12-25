@@ -162,7 +162,7 @@ Tracy McKay and Laura DeLoss should also get credit for exposing this bug.
 archive/issue_comments_021053.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> Tracy McKay and Laura DeLoss should also get credit for exposing this bug.\n\nWell, did they fix the bug? So far we only give credit for doing that. People who find bugs are not credited and while we could add a \"reported by FOO\" byline I am not sure those people will get added to the credit list.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 jason]:\n> Tracy McKay and Laura DeLoss should also get credit for exposing this bug.\n\n\nWell, did they fix the bug? So far we only give credit for doing that. People who find bugs are not credited and while we could add a \"reported by FOO\" byline I am not sure those people will get added to the credit list.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T03:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3055",
     "type": "issue_comment",
@@ -173,6 +173,7 @@ archive/issue_comments_021053.json:
 
 Replying to [comment:5 jason]:
 > Tracy McKay and Laura DeLoss should also get credit for exposing this bug.
+
 
 Well, did they fix the bug? So far we only give credit for doing that. People who find bugs are not credited and while we could add a "reported by FOO" byline I am not sure those people will get added to the credit list.
 

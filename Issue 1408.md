@@ -3,7 +3,7 @@
 archive/issues_001408.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis was reported by Matt Miller:\n\n```\n\n\n       then mv -f \".deps/darwin_stop_world.Tpo\" \".deps/\ndarwin_stop_world.Plo\"; else rm -f \".deps/darwin_stop_world.Tpo\"; exit\n1; fi\nrm -f .libs/darwin_stop_world.lo\ngcc -DPACKAGE_NAME=\\\"gc\\\" -DPACKAGE_TARNAME=\\\"gc\\\" -DPACKAGE_VERSION=\n\\\"6.8\\\" \"-DPACKAGE_STRING=\\\"gc 6.8\\\"\" -DPACKAGE_BUGREPORT=\n\\\"Hans.Boehm@hp.com\\\" -DGC_VERSION_MAJOR=6 -DGC_VERSION_MINOR=8 -\nDPACKAGE=\\\"gc\\\" -DVERSION=\\\"6.8\\\" -DGC_DARdarwin_stop_world.c:203:\nerror: 'ppc_thread_state_t' has no member named 'r1'\ndarwin_stop_world.c:205: error: 'ppc_thread_state_t' has no member\nnamed 'r0'\n...\ndarwin_stop_world.c:235: error: 'ppc_thread_state_t' has no member\nnamed 'r31'\nmake[1]: *** [darwin_stop_world.lo] Error 1\nmake: *** [install-recursive] Error 1\nError installing GC garbage collection library.\n\nreal    2m44.303s\nuser    0m33.283s\nsys     0m37.224s\nsage: An error occurred while installing macaulay2-20061014\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1408\n\n",
+    "body": "Assignee: @williamstein\n\nThis was reported by Matt Miller:\n\n```\n\n\n       then mv -f \".deps/darwin_stop_world.Tpo\" \".deps/\ndarwin_stop_world.Plo\"; else rm -f \".deps/darwin_stop_world.Tpo\"; exit\n1; fi\nrm -f .libs/darwin_stop_world.lo\ngcc -DPACKAGE_NAME=\\\"gc\\\" -DPACKAGE_TARNAME=\\\"gc\\\" -DPACKAGE_VERSION=\n\\\"6.8\\\" \"-DPACKAGE_STRING=\\\"gc 6.8\\\"\" -DPACKAGE_BUGREPORT=\n\\\"Hans.Boehm@hp.com\\\" -DGC_VERSION_MAJOR=6 -DGC_VERSION_MINOR=8 -\nDPACKAGE=\\\"gc\\\" -DVERSION=\\\"6.8\\\" -DGC_DARdarwin_stop_world.c:203:\nerror: 'ppc_thread_state_t' has no member named 'r1'\ndarwin_stop_world.c:205: error: 'ppc_thread_state_t' has no member\nnamed 'r0'\n...\ndarwin_stop_world.c:235: error: 'ppc_thread_state_t' has no member\nnamed 'r31'\nmake[1]: *** [darwin_stop_world.lo] Error 1\nmake: *** [install-recursive] Error 1\nError installing GC garbage collection library.\n\nreal    2m44.303s\nuser    0m33.283s\nsys     0m37.224s\nsage: An error occurred while installing macaulay2-20061014\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1408\n\n",
     "created_at": "2007-12-06T04:19:03Z",
     "labels": [
         "component: packages: standard",
@@ -46,7 +46,6 @@ user    0m33.283s
 sys     0m37.224s
 sage: An error occurred while installing macaulay2-20061014
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1408
 

@@ -3,7 +3,7 @@
 archive/issues_006867.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHello everybody !!!\n\nAs I wrote a new numerical.MIP class using symbolics, which will be waaaaaayyyyy easier to use, here is the necessary update of GLPK which can stand all those news !\n\nTo install it :\n\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p1.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6867\n\n",
+    "body": "Assignee: tbd\n\nHello everybody !!!\n\nAs I wrote a new numerical.MIP class using symbolics, which will be waaaaaayyyyy easier to use, here is the necessary update of GLPK which can stand all those news !\n\nTo install it :\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p1.spkg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6867\n\n",
     "created_at": "2009-09-02T17:33:12Z",
     "labels": [
         "component: packages: optional"
@@ -23,11 +23,9 @@ As I wrote a new numerical.MIP class using symbolics, which will be waaaaaayyyyy
 
 To install it :
 
-
 ```
 sage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p1.spkg
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6867
 

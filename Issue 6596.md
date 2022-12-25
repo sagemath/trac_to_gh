@@ -55,7 +55,7 @@ CCing Burcin, because this patch contains the first step of refactoring he wants
 archive/issue_comments_053894.json:
 ```json
 {
-    "body": "Groebner Strategy in action\n\n\n```\nsage: P = PolynomialRing(QQ,6,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: J = Ideal(I.groebner_basis())\nsage: J.ngens()\n45\n```\n\n\n\n```\nsage: f = P.random_element()\n```\n\n\nThe usual call to `kNF`:\n\n\n```\nsage: %timeit f.reduce(J.gens())\n1000 loops, best of 3: 1.11 ms per loop\n```\n\n\nUsing the `GroebnerStrategy` object.\n\n\n```\nsage: %timeit J.reduce(f)\n100000 loops, best of 3: 9.37 \u00b5s per loop\n```\n",
+    "body": "Groebner Strategy in action\n\n```\nsage: P = PolynomialRing(QQ,6,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: J = Ideal(I.groebner_basis())\nsage: J.ngens()\n45\n```\n\n```\nsage: f = P.random_element()\n```\n\nThe usual call to `kNF`:\n\n```\nsage: %timeit f.reduce(J.gens())\n1000 loops, best of 3: 1.11 ms per loop\n```\n\nUsing the `GroebnerStrategy` object.\n\n```\nsage: %timeit J.reduce(f)\n100000 loops, best of 3: 9.37 \u00b5s per loop\n```",
     "created_at": "2009-07-23T08:39:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ archive/issue_comments_053894.json:
 
 Groebner Strategy in action
 
-
 ```
 sage: P = PolynomialRing(QQ,6,'x')
 sage: I = sage.rings.ideal.Cyclic(P)
@@ -75,30 +74,23 @@ sage: J.ngens()
 45
 ```
 
-
-
 ```
 sage: f = P.random_element()
 ```
 
-
 The usual call to `kNF`:
-
 
 ```
 sage: %timeit f.reduce(J.gens())
 1000 loops, best of 3: 1.11 ms per loop
 ```
 
-
 Using the `GroebnerStrategy` object.
-
 
 ```
 sage: %timeit J.reduce(f)
 100000 loops, best of 3: 9.37 µs per loop
 ```
-
 
 
 
@@ -181,7 +173,7 @@ I am having trouble applying this patch on top of sage-4.1.1 + the latest spkg a
 archive/issue_comments_053899.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> This patch requires Singular 3-1-0-4 which is available at\n> \n>   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg\n> \n\nNote that this is outdated, use \n\n  http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.spkg\n\ninstead.",
+    "body": "Replying to [comment:3 malb]:\n> This patch requires Singular 3-1-0-4 which is available at\n> \n>   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg\n> \n\n\nNote that this is outdated, use \n\n  http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.spkg\n\ninstead.",
     "created_at": "2009-08-19T10:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
@@ -195,6 +187,7 @@ Replying to [comment:3 malb]:
 > 
 >   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg
 > 
+
 
 Note that this is outdated, use 
 

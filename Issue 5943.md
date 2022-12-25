@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5943
 archive/issue_comments_046881.json:
 ```json
 {
-    "body": "Hmm, the back trace looks pretty bad:\n\n```\nmabshoff@sage:~$ sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/usr/local/sage/local/bin/sage-ipython\nGNU gdb 6.8-debian\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...\n[Thread debugging using libthread_db enabled]\nPython 2.5.2 (r252:60911, Mar 11 2009, 22:18:38) \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[New Thread 0x7fe3285456e0 (LWP 11010)]\nsage: prime_pi(2^50)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fe3285456e0 (LWP 11010)]\n0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n(gdb) bt\n#0  0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n#1  0x00fc73d0eb623c9b in ?? ()\nCannot access memory at address 0xff0ff3d0eb624364\n(gdb) \n```\n",
+    "body": "Hmm, the back trace looks pretty bad:\n\n```\nmabshoff@sage:~$ sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/usr/local/sage/local/bin/sage-ipython\nGNU gdb 6.8-debian\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...\n[Thread debugging using libthread_db enabled]\nPython 2.5.2 (r252:60911, Mar 11 2009, 22:18:38) \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[New Thread 0x7fe3285456e0 (LWP 11010)]\nsage: prime_pi(2^50)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fe3285456e0 (LWP 11010)]\n0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n(gdb) bt\n#0  0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n#1  0x00fc73d0eb623c9b in ?? ()\nCannot access memory at address 0xff0ff3d0eb624364\n(gdb) \n```",
     "created_at": "2009-04-29T22:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -81,13 +81,12 @@ Cannot access memory at address 0xff0ff3d0eb624364
 
 
 
-
 ---
 
 archive/issue_comments_046882.json:
 ```json
 {
-    "body": "I can't get this to segfault.  I tried on sage.math and on my laptop (macbook running 32-bit archlinux).  The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's \"known\" to be a good approximation to prime_pi):\n\n\n```\nx     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2\n2^46   2280998753949                2280998753949               2.28099863535e+12\n2^47   4461632979717                4454203917918               4.46163280359e+12\n2^48   8731188863470                8612800813048               8.73118897751e+12\n2^49  17094432576778               15793194017311               1.70944327138e+13\n2^50  33483379603407               21969300962685               3.34833795774e+13\n```\n\n\nSo it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.",
+    "body": "I can't get this to segfault.  I tried on sage.math and on my laptop (macbook running 32-bit archlinux).  The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's \"known\" to be a good approximation to prime_pi):\n\n```\nx     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2\n2^46   2280998753949                2280998753949               2.28099863535e+12\n2^47   4461632979717                4454203917918               4.46163280359e+12\n2^48   8731188863470                8612800813048               8.73118897751e+12\n2^49  17094432576778               15793194017311               1.70944327138e+13\n2^50  33483379603407               21969300962685               3.34833795774e+13\n```\n\nSo it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.",
     "created_at": "2009-05-02T11:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -98,7 +97,6 @@ archive/issue_comments_046882.json:
 
 I can't get this to segfault.  I tried on sage.math and on my laptop (macbook running 32-bit archlinux).  The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's "known" to be a good approximation to prime_pi):
 
-
 ```
 x     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2
 2^46   2280998753949                2280998753949               2.28099863535e+12
@@ -107,7 +105,6 @@ x     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x)
 2^49  17094432576778               15793194017311               1.70944327138e+13
 2^50  33483379603407               21969300962685               3.34833795774e+13
 ```
-
 
 So it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.
 
@@ -118,7 +115,7 @@ So it seems that the problem starts somewhere between `2^46` and `2^47`, and tha
 archive/issue_comments_046883.json:
 ```json
 {
-    "body": "We might want to either implement this ourselves or just put reasonable limit on this:\n\n```\nsage\" len(prime_range(2^35))\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3772)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3458)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:40660)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44402)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.allocatemem (sage/libs/pari/gen.c:40001)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.init_stack (sage/libs/pari/gen.c:43371)()\n\nMemoryError: Unable to allocate 131072000000 bytes memory for PARI.\n```\n",
+    "body": "We might want to either implement this ourselves or just put reasonable limit on this:\n\n```\nsage\" len(prime_range(2^35))\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3772)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3458)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:40660)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44402)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.allocatemem (sage/libs/pari/gen.c:40001)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.init_stack (sage/libs/pari/gen.c:43371)()\n\nMemoryError: Unable to allocate 131072000000 bytes memory for PARI.\n```",
     "created_at": "2009-05-03T00:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -166,7 +163,6 @@ MemoryError: Unable to allocate 131072000000 bytes memory for PARI.
 
 
 
-
 ---
 
 archive/issue_comments_046884.json:
@@ -190,7 +186,7 @@ Changing priority from blocker to critical.
 archive/issue_comments_046885.json:
 ```json
 {
-    "body": "I get now (in sage 4.2.1)\n\n\n```\nlen(prime_range(2^50))\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 5, in <module>\n    len(prime_range(_sage_const_2 **_sage_const_50 ))\n  File \"\", line 1, in <module>\n    \n  File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3822)\n  File \"fast_arith.pyx\", line 100, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3508)\n  File \"gen.pyx\", line 8663, in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:41327)\nOverflowError: long int too large to convert to int\n```\n\n\nwhich is the same problem as #7017.",
+    "body": "I get now (in sage 4.2.1)\n\n```\nlen(prime_range(2^50))\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 5, in <module>\n    len(prime_range(_sage_const_2 **_sage_const_50 ))\n  File \"\", line 1, in <module>\n    \n  File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3822)\n  File \"fast_arith.pyx\", line 100, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3508)\n  File \"gen.pyx\", line 8663, in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:41327)\nOverflowError: long int too large to convert to int\n```\n\nwhich is the same problem as #7017.",
     "created_at": "2009-12-03T14:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -200,7 +196,6 @@ archive/issue_comments_046885.json:
 ```
 
 I get now (in sage 4.2.1)
-
 
 ```
 len(prime_range(2^50))
@@ -217,7 +212,6 @@ Traceback (most recent call last):
 OverflowError: long int too large to convert to int
 ```
 
-
 which is the same problem as #7017.
 
 
@@ -227,7 +221,7 @@ which is the same problem as #7017.
 archive/issue_comments_046886.json:
 ```json
 {
-    "body": "In Sage 4.7.2.alpha3, I get the following:\n\n\n```\nsage: len(prime_range(2^50))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/home/keshav/<ipython console> in <module>()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4082)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3717)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:47679)()\n\nPariError: not enough memory (28)\n```\n\n\nIs there something wrong with this, or should this ticket be closed?",
+    "body": "In Sage 4.7.2.alpha3, I get the following:\n\n```\nsage: len(prime_range(2^50))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/home/keshav/<ipython console> in <module>()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4082)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3717)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:47679)()\n\nPariError: not enough memory (28)\n```\n\nIs there something wrong with this, or should this ticket be closed?",
     "created_at": "2011-10-15T09:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -237,7 +231,6 @@ archive/issue_comments_046886.json:
 ```
 
 In Sage 4.7.2.alpha3, I get the following:
-
 
 ```
 sage: len(prime_range(2^50))
@@ -254,7 +247,6 @@ PariError                                 Traceback (most recent call last)
 
 PariError: not enough memory (28)
 ```
-
 
 Is there something wrong with this, or should this ticket be closed?
 
@@ -426,7 +418,7 @@ archive/issue_events_013923.json:
 archive/issue_comments_046894.json:
 ```json
 {
-    "body": "On hawk (OpenSolaris 06.2009-32):\n\n```\nsage -t -long  -force_lib devel/sage/sage/rings/fast_arith.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/rings/fast_arith.pyx\", line 122:\n    sage: prime_range(sys.maxint)\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\nGot:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:\n    sage: prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n        cpdef prime_range(start, stop=None, algorithm=\"pari_primes\", bint py_ints=False):\n      File \"fast_arith.pyx\", line 161, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3929)\n        res.append(z)\n    MemoryError\n**********************************************************************\n```\n",
+    "body": "On hawk (OpenSolaris 06.2009-32):\n\n```\nsage -t -long  -force_lib devel/sage/sage/rings/fast_arith.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/rings/fast_arith.pyx\", line 122:\n    sage: prime_range(sys.maxint)\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\nGot:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:\n    sage: prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n        cpdef prime_range(start, stop=None, algorithm=\"pari_primes\", bint py_ints=False):\n      File \"fast_arith.pyx\", line 161, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3929)\n        res.append(z)\n    MemoryError\n**********************************************************************\n```",
     "created_at": "2011-12-21T09:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -467,7 +459,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_046895.json:
@@ -491,7 +482,7 @@ Resolution changed from fixed to
 archive/issue_comments_046896.json:
 ```json
 {
-    "body": "Hmm. For comparison, on x86_64, within a doctest:\n\n\n```\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\n    xyzzy\nGot:\n    Traceback (most recent call last):\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:_sage_    >>> prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n      File \"fast_arith.pyx\", line 150, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3795)\n      File \"gen.pyx\", line 10262, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:49373)\n    PariError: not enough memory (28)\n```\n\n\nWhat's `sys.maxint` on hawk? I don't have an account there. On my machine:\n\n\n```\nsage: sys.maxint\n9223372036854775807\n```\n\n\nMaybe the doctest should test a specific number to avoid vagaries of various platforms? Or maybe we should dig around in the code to find out why there are two different code paths that run out of memory in this operation with two different error messages.",
+    "body": "Hmm. For comparison, on x86_64, within a doctest:\n\n```\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\n    xyzzy\nGot:\n    Traceback (most recent call last):\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:_sage_    >>> prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n      File \"fast_arith.pyx\", line 150, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3795)\n      File \"gen.pyx\", line 10262, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:49373)\n    PariError: not enough memory (28)\n```\n\nWhat's `sys.maxint` on hawk? I don't have an account there. On my machine:\n\n```\nsage: sys.maxint\n9223372036854775807\n```\n\nMaybe the doctest should test a specific number to avoid vagaries of various platforms? Or maybe we should dig around in the code to find out why there are two different code paths that run out of memory in this operation with two different error messages.",
     "created_at": "2011-12-21T09:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -501,7 +492,6 @@ archive/issue_comments_046896.json:
 ```
 
 Hmm. For comparison, on x86_64, within a doctest:
-
 
 ```
 Expected:
@@ -525,15 +515,12 @@ Got:
     PariError: not enough memory (28)
 ```
 
-
 What's `sys.maxint` on hawk? I don't have an account there. On my machine:
-
 
 ```
 sage: sys.maxint
 9223372036854775807
 ```
-
 
 Maybe the doctest should test a specific number to avoid vagaries of various platforms? Or maybe we should dig around in the code to find out why there are two different code paths that run out of memory in this operation with two different error messages.
 
@@ -564,7 +551,7 @@ It looks like Pari actually created a list of `(2^32 - 1)` primes? I think I sti
 archive/issue_comments_046898.json:
 ```json
 {
-    "body": "Replying to [comment:12 kini]:\n> What's `sys.maxint` on hawk? I don't have an account there.\n\n```\nsage: sys.maxint\n2147483647\nsage: 2**31 -1\n2147483647\n```\n",
+    "body": "Replying to [comment:12 kini]:\n> What's `sys.maxint` on hawk? I don't have an account there.\n\n{{{\nsage: sys.maxint\n2147483647\nsage: 2**31 -1\n2147483647\n}}}",
     "created_at": "2011-12-22T12:40:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
     "type": "issue_comment",
@@ -576,13 +563,12 @@ archive/issue_comments_046898.json:
 Replying to [comment:12 kini]:
 > What's `sys.maxint` on hawk? I don't have an account there.
 
-```
+{{{
 sage: sys.maxint
 2147483647
 sage: 2**31 -1
 2147483647
-```
-
+}}}
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002950.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):\n\n\n```\nsage: from sage.plot.plot3d.all import line3d, point3d\nsage: pl = point3d([(1, 0, 0), (0, 1, 0), (-1, -1, 0)])\nsage: pl = point3d([(1, 0, 0), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2950\n\n",
+    "body": "Assignee: @williamstein\n\nIf point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):\n\n```\nsage: from sage.plot.plot3d.all import line3d, point3d\nsage: pl = point3d([(1, 0, 0), (0, 1, 0), (-1, -1, 0)])\nsage: pl = point3d([(1, 0, 0), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2950\n\n",
     "created_at": "2008-04-18T05:46:16Z",
     "labels": [
         "component: graphics",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 If point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):
 
-
 ```
 sage: from sage.plot.plot3d.all import line3d, point3d
 sage: pl = point3d([(1, 0, 0), (0, 1, 0), (-1, -1, 0)])
@@ -32,7 +31,6 @@ Traceback (most recent call last):
 ...
 TypeError: float() argument must be a string or a number
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2950

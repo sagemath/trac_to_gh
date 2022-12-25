@@ -196,7 +196,7 @@ Here's a silly thing: this patch has never appeared in the list of patches needi
 archive/issue_comments_048678.json:
 ```json
 {
-    "body": "I haven't tried installing this, but here are some comments based on browsing the code. \n\nIt looks like this is excellent functionality, but there are some things I'm not very happy with. \n\n(1) Brutally converting all finite groups into permutation groups will mean we can't generally create an element of the group algebra from an element of the group, which means that most of the basic arithmetic operations that I originally wrote the class for won't work any more. Please don't do this; rather, add more functionality to the basic Group class, or (if absolutely necessary) make GroupAlgebra store both the original group and its permutation form (and the mapping between them).\n\n(2) Many of these docstrings are somewhat confusing; I can't for the life of me work out what the docstring for \"good_for\" is trying to say -- some of it seems to be about the function at hand, some about another unnamed function, and nowhere is it defined what the function actually does.\n\n(3) Lots of these functions need more testing. There are some obvious typos, e.g. in is_noetherian:  \n\n```\nif self.group().is_polycyclic and self.base_ring().is_field():\n```\n\nshould read\n\n```\nif self.group().is_polycyclic() and self.base_ring().is_field():\n```\n\n\nWhen there are lots of different cases handled in a function, it's good to have a test for each case -- the aim is that \"sage -testall\" should test every single line of code in the Sage library, and much of this code simply won't get hit. Then typos like this come out in the wash.\n\n(4) It would be good if the GroupAlgebra class could be incorporated into the reference manual (by adding a line to `sage/doc/en/reference/algebras.rst`). To do this will require lots of formatting changes to the docstrings (e.g. example blocks must look like\n\n```\nEXAMPLE::\n\n    sage: some code\n```\n\nwith two colons and a blank line). This is somewhat orthogonal to your patch and is actually my fault -- when I wrote the group algebra class, I forgot to add it to the reference manual, so it never got updated when we changed to a new and better reference manual compilation system -- but it seems a shame to make the problem worse by adding many new functions with new docstrings that are not ReSTified.\n\nMuch of this is cosmetic, but (1) is a big issue -- I don't think we can consider merging this into Sage if it's going to break creating elements of group algebras for most of our finite group classes. So I'm changing this back to \"needs work\"; sorry.",
+    "body": "I haven't tried installing this, but here are some comments based on browsing the code. \n\nIt looks like this is excellent functionality, but there are some things I'm not very happy with. \n\n(1) Brutally converting all finite groups into permutation groups will mean we can't generally create an element of the group algebra from an element of the group, which means that most of the basic arithmetic operations that I originally wrote the class for won't work any more. Please don't do this; rather, add more functionality to the basic Group class, or (if absolutely necessary) make GroupAlgebra store both the original group and its permutation form (and the mapping between them).\n\n(2) Many of these docstrings are somewhat confusing; I can't for the life of me work out what the docstring for \"good_for\" is trying to say -- some of it seems to be about the function at hand, some about another unnamed function, and nowhere is it defined what the function actually does.\n\n(3) Lots of these functions need more testing. There are some obvious typos, e.g. in is_noetherian:  \n\n```\nif self.group().is_polycyclic and self.base_ring().is_field():\n```\nshould read\n\n```\nif self.group().is_polycyclic() and self.base_ring().is_field():\n```\n\nWhen there are lots of different cases handled in a function, it's good to have a test for each case -- the aim is that \"sage -testall\" should test every single line of code in the Sage library, and much of this code simply won't get hit. Then typos like this come out in the wash.\n\n(4) It would be good if the GroupAlgebra class could be incorporated into the reference manual (by adding a line to `sage/doc/en/reference/algebras.rst`). To do this will require lots of formatting changes to the docstrings (e.g. example blocks must look like\n\n```\nEXAMPLE::\n\n    sage: some code\n```\nwith two colons and a blank line). This is somewhat orthogonal to your patch and is actually my fault -- when I wrote the group algebra class, I forgot to add it to the reference manual, so it never got updated when we changed to a new and better reference manual compilation system -- but it seems a shame to make the problem worse by adding many new functions with new docstrings that are not ReSTified.\n\nMuch of this is cosmetic, but (1) is a big issue -- I don't think we can consider merging this into Sage if it's going to break creating elements of group algebras for most of our finite group classes. So I'm changing this back to \"needs work\"; sorry.",
     "created_at": "2009-06-14T11:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -218,13 +218,11 @@ It looks like this is excellent functionality, but there are some things I'm not
 ```
 if self.group().is_polycyclic and self.base_ring().is_field():
 ```
-
 should read
 
 ```
 if self.group().is_polycyclic() and self.base_ring().is_field():
 ```
-
 
 When there are lots of different cases handled in a function, it's good to have a test for each case -- the aim is that "sage -testall" should test every single line of code in the Sage library, and much of this code simply won't get hit. Then typos like this come out in the wash.
 
@@ -235,7 +233,6 @@ EXAMPLE::
 
     sage: some code
 ```
-
 with two colons and a blank line). This is somewhat orthogonal to your patch and is actually my fault -- when I wrote the group algebra class, I forgot to add it to the reference manual, so it never got updated when we changed to a new and better reference manual compilation system -- but it seems a shame to make the problem worse by adding many new functions with new docstrings that are not ReSTified.
 
 Much of this is cosmetic, but (1) is a big issue -- I don't think we can consider merging this into Sage if it's going to break creating elements of group algebras for most of our finite group classes. So I'm changing this back to "needs work"; sorry.
@@ -266,7 +263,7 @@ I've started to attack (1), it looks like I needed to convert group to their per
 archive/issue_comments_048680.json:
 ```json
 {
-    "body": "Replying to [comment:6 jlefebvre]:\n> it looks like I needed to convert group to their permutation group representation to deal with AbelianGroup class.\n\nI would be *extremely* surprised if this were the best way of doing it. \n\nBy the way, there are some major changes pending to the abelian group implementation -- the plan is to implement them directly in Sage via the machinery we already have for linear algebra over ZZ, using William Stein's work at ticket #5882, rather than relying on Gap. (This is for several reasons, one of which being the speed penalty of communicating with Gap via the pexpect interface.)\n\nDavid",
+    "body": "Replying to [comment:6 jlefebvre]:\n> it looks like I needed to convert group to their permutation group representation to deal with AbelianGroup class.\n\n\nI would be *extremely* surprised if this were the best way of doing it. \n\nBy the way, there are some major changes pending to the abelian group implementation -- the plan is to implement them directly in Sage via the machinery we already have for linear algebra over ZZ, using William Stein's work at ticket #5882, rather than relying on Gap. (This is for several reasons, one of which being the speed penalty of communicating with Gap via the pexpect interface.)\n\nDavid",
     "created_at": "2009-06-15T09:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -277,6 +274,7 @@ archive/issue_comments_048680.json:
 
 Replying to [comment:6 jlefebvre]:
 > it looks like I needed to convert group to their permutation group representation to deal with AbelianGroup class.
+
 
 I would be *extremely* surprised if this were the best way of doing it. 
 
@@ -291,7 +289,7 @@ David
 archive/issue_comments_048681.json:
 ```json
 {
-    "body": "> By the way, there are some major changes pending to the abelian group implementation --\n>  the plan is to implement them directly in Sage via the machinery we already have for \n> linear algebra over ZZ, using William Stein's work at ticket #5882, \n\nAnd amazingly, I will have time to work on this soon! (I claim.)",
+    "body": "> By the way, there are some major changes pending to the abelian group implementation --\n>  the plan is to implement them directly in Sage via the machinery we already have for \n> linear algebra over ZZ, using William Stein's work at ticket #5882, \n\n\nAnd amazingly, I will have time to work on this soon! (I claim.)",
     "created_at": "2009-06-15T12:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6105",
     "type": "issue_comment",
@@ -303,6 +301,7 @@ archive/issue_comments_048681.json:
 > By the way, there are some major changes pending to the abelian group implementation --
 >  the plan is to implement them directly in Sage via the machinery we already have for 
 > linear algebra over ZZ, using William Stein's work at ticket #5882, 
+
 
 And amazingly, I will have time to work on this soon! (I claim.)
 

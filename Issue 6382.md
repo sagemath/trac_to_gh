@@ -3,7 +3,7 @@
 archive/issues_006382.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen mvngu\n\nThis should work:\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/resid_tg105.upc.es/5930/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.additive_order (sage/structure/element.c:8113)()\n\nNotImplementedError: \nsage: P.order()\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6382\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen mvngu\n\nThis should work:\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/resid_tg105.upc.es/5930/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.additive_order (sage/structure/element.c:8113)()\n\nNotImplementedError: \nsage: P.order()\n5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6382\n\n",
     "created_at": "2009-06-21T23:39:34Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  @mwhansen mvngu
 
 This should work:
 
-
 ```
 sage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P
 (5 : 5 : 1)
@@ -38,7 +37,6 @@ NotImplementedError:
 sage: P.order()
 5
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6382
 

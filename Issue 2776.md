@@ -3,7 +3,7 @@
 archive/issues_002776.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThis now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2776\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThis now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2776\n\n",
     "created_at": "2008-04-02T16:16:47Z",
     "labels": [
         "component: commutative algebra",
@@ -27,7 +27,6 @@ This now works:
 ```
 sage: B.<x,y,z> = BooleanPolynomialRing()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2776
 

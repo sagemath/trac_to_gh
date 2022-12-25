@@ -187,7 +187,7 @@ I am a bit worried about the 53-bit precision used to compute the polynomials.  
 archive/issue_comments_089496.json:
 ```json
 {
-    "body": "> #9400 is now merged: does that help?\n\nMaybe, I did not think about it.\n\n> How hard is it to get the 2-part of the conductor?  If it is really hard, why not just honestly return the odd part (and change the name, or something)?\n\nI don't know. Right now it give the right thing quite frequently, but not always. I would have to think harder to see if one can put the 2-part in as well. I won't do that, I fear.\n\n> I am a bit worried about the 53-bit precision used to compute the polynomials.  Do you now that it always enough (surely not!), or is that wishful thinking?  Is it much too slow to use the appropriate cyclotomic field?\n\nIt is really very very slow with cyclotomic fields. To be honest, I do not think anyone wants to construct a field of the size that would require higher precision in this computation. But that is not an argument to improve this.",
+    "body": "> #9400 is now merged: does that help?\n\n\nMaybe, I did not think about it.\n\n> How hard is it to get the 2-part of the conductor?  If it is really hard, why not just honestly return the odd part (and change the name, or something)?\n\n\nI don't know. Right now it give the right thing quite frequently, but not always. I would have to think harder to see if one can put the 2-part in as well. I won't do that, I fear.\n\n> I am a bit worried about the 53-bit precision used to compute the polynomials.  Do you now that it always enough (surely not!), or is that wishful thinking?  Is it much too slow to use the appropriate cyclotomic field?\n\n\nIt is really very very slow with cyclotomic fields. To be honest, I do not think anyone wants to construct a field of the size that would require higher precision in this computation. But that is not an argument to improve this.",
     "created_at": "2010-11-11T22:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -198,13 +198,16 @@ archive/issue_comments_089496.json:
 
 > #9400 is now merged: does that help?
 
+
 Maybe, I did not think about it.
 
 > How hard is it to get the 2-part of the conductor?  If it is really hard, why not just honestly return the odd part (and change the name, or something)?
 
+
 I don't know. Right now it give the right thing quite frequently, but not always. I would have to think harder to see if one can put the 2-part in as well. I won't do that, I fear.
 
 > I am a bit worried about the 53-bit precision used to compute the polynomials.  Do you now that it always enough (surely not!), or is that wishful thinking?  Is it much too slow to use the appropriate cyclotomic field?
+
 
 It is really very very slow with cyclotomic fields. To be honest, I do not think anyone wants to construct a field of the size that would require higher precision in this computation. But that is not an argument to improve this.
 
@@ -215,7 +218,7 @@ It is really very very slow with cyclotomic fields. To be honest, I do not think
 archive/issue_comments_089497.json:
 ```json
 {
-    "body": "I think the computation of fixed field polynomials can be made fasterusing Gauss's formula for the products of periods; see Disquisitiones \u00a7343 and/or van der Waerden \u00a754. The formula involves only the exponents of $\\zeta$ in the cyclotomic field $\\QQ(\\zeta)$, so the computation can be carried out computing only with integers\u00a0(so any concerns about precision are avoided).\u00a0\n\nThe code with which I've been testing this follows. I've removed the requirement that the order d is prime, which is unnecessary, and dealt separately with the easy cases d = 2 and f = 1.\n\n\n```\ndef fixed_field_polynomial_new(self):\n    ZZ = IntegerRing()\n\n    n = ZZ(self.conductor())\n    if not n.is_prime():\n        raise NotImplementedError, 'the conductor %s is supposed to be prime' % n\n    \n    d = self.order()\n        \n    # check that there will be such a field of degree d inside QQ(zeta_n)\n    if euler_phi(n) % d != 0:\n        raise ValueError, 'No field exists because %s does not divide %s=phi(%s)' % (d,euler_phi(n),n)\n    f = euler_phi(n)/d\n\n    S = PolynomialRing(ZZ, 'x')\n\n    if f == 1:\n        return cyclotomic_polynomial(n, S.gen())\n    \n    if d == 2:\n        if n.mod(4) == 1:\n            s = -1\n        else:\n            s = 1\n        return S([s*(n + s)/4, 1, 1])\n\n# Using the notation of van der Waerden, where $\\zeta$ is a primitive \n# $n$-root of unity,\n# $$\n# \\eta_i = \\sum_{j=0}^{f-1}\\zeta^{g^{i+dj}},\n# $$\n# is represented by eta[i] as the list of exponents.  \n# \n# gen_index is a dictionary such that gen_index[r] = i if the exponent r \n# occurs in eta[i].  Thus $\\eta^{(r)} = \\eta_i$ in van der Waerden's \n# notation.\n\n    R = IntegerModRing(n)\n    g = R.unit_gens()[0]\n    gen_index = {}\n    eta = []\n    for i in range(d):\n        eta.append([])\n        for j in range(f):\n            r = g**(i + d*j)\n            eta[i].append(r)\n            gen_index[r] = i\n\n# Using Gauss's formula\n# $$\n# \\eta^{(r)}\\eta^{(s)} = \\sum_{j=0}^{f-1}\\eta^{(r+sg^{dj})}\n# $$\n# (with $r=1$), we construct the matrix representing multiplication by\n# $\\eta_0=\\eta^{(1)}$ with respect to the basis consisting of the $\\eta_i$.\n# Its characteristic polynomial generates the field.  The element\n# $\\eta^(0)$=f=-f\\sum_{i=0}^{d-1}\\eta_i$ is represented by eta_zero.\n\n    V = FreeModule(ZZ, d)\n    eta_zero = V([-f]*d)\n    m = []\n    for j in range(d):\n       v = 0\n       for e in eta[j]:\n            try:\n                s = V.gen(gen_index[1 + e])              \n            except KeyError:\n                s = eta_zero\n            v += s\n       m.append(v)\n    m = matrix(m)\n    return m.charpoly(S.0)\n```\n",
+    "body": "I think the computation of fixed field polynomials can be made fasterusing Gauss's formula for the products of periods; see Disquisitiones \u00a7343 and/or van der Waerden \u00a754. The formula involves only the exponents of $\\zeta$ in the cyclotomic field $\\QQ(\\zeta)$, so the computation can be carried out computing only with integers\u00a0(so any concerns about precision are avoided).\u00a0\n\nThe code with which I've been testing this follows. I've removed the requirement that the order d is prime, which is unnecessary, and dealt separately with the easy cases d = 2 and f = 1.\n\n```\ndef fixed_field_polynomial_new(self):\n    ZZ = IntegerRing()\n\n    n = ZZ(self.conductor())\n    if not n.is_prime():\n        raise NotImplementedError, 'the conductor %s is supposed to be prime' % n\n    \n    d = self.order()\n        \n    # check that there will be such a field of degree d inside QQ(zeta_n)\n    if euler_phi(n) % d != 0:\n        raise ValueError, 'No field exists because %s does not divide %s=phi(%s)' % (d,euler_phi(n),n)\n    f = euler_phi(n)/d\n\n    S = PolynomialRing(ZZ, 'x')\n\n    if f == 1:\n        return cyclotomic_polynomial(n, S.gen())\n    \n    if d == 2:\n        if n.mod(4) == 1:\n            s = -1\n        else:\n            s = 1\n        return S([s*(n + s)/4, 1, 1])\n\n# Using the notation of van der Waerden, where $\\zeta$ is a primitive \n# $n$-root of unity,\n# $$\n# \\eta_i = \\sum_{j=0}^{f-1}\\zeta^{g^{i+dj}},\n# $$\n# is represented by eta[i] as the list of exponents.  \n# \n# gen_index is a dictionary such that gen_index[r] = i if the exponent r \n# occurs in eta[i].  Thus $\\eta^{(r)} = \\eta_i$ in van der Waerden's \n# notation.\n\n    R = IntegerModRing(n)\n    g = R.unit_gens()[0]\n    gen_index = {}\n    eta = []\n    for i in range(d):\n        eta.append([])\n        for j in range(f):\n            r = g**(i + d*j)\n            eta[i].append(r)\n            gen_index[r] = i\n\n# Using Gauss's formula\n# $$\n# \\eta^{(r)}\\eta^{(s)} = \\sum_{j=0}^{f-1}\\eta^{(r+sg^{dj})}\n# $$\n# (with $r=1$), we construct the matrix representing multiplication by\n# $\\eta_0=\\eta^{(1)}$ with respect to the basis consisting of the $\\eta_i$.\n# Its characteristic polynomial generates the field.  The element\n# $\\eta^(0)$=f=-f\\sum_{i=0}^{d-1}\\eta_i$ is represented by eta_zero.\n\n    V = FreeModule(ZZ, d)\n    eta_zero = V([-f]*d)\n    m = []\n    for j in range(d):\n       v = 0\n       for e in eta[j]:\n            try:\n                s = V.gen(gen_index[1 + e])              \n            except KeyError:\n                s = eta_zero\n            v += s\n       m.append(v)\n    m = matrix(m)\n    return m.charpoly(S.0)\n```",
     "created_at": "2010-12-19T10:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -227,7 +230,6 @@ archive/issue_comments_089497.json:
 I think the computation of fixed field polynomials can be made fasterusing Gauss's formula for the products of periods; see Disquisitiones §343 and/or van der Waerden §54. The formula involves only the exponents of $\zeta$ in the cyclotomic field $\QQ(\zeta)$, so the computation can be carried out computing only with integers (so any concerns about precision are avoided). 
 
 The code with which I've been testing this follows. I've removed the requirement that the order d is prime, which is unnecessary, and dealt separately with the easy cases d = 2 and f = 1.
-
 
 ```
 def fixed_field_polynomial_new(self):
@@ -302,7 +304,6 @@ def fixed_field_polynomial_new(self):
     m = matrix(m)
     return m.charpoly(S.0)
 ```
-
 
 
 
@@ -668,7 +669,7 @@ This is very old code and I nor anyone else has looked at it for 6 years. I am s
 archive/issue_comments_089508.json:
 ```json
 {
-    "body": "I converted this into a git branch and changed the fixed_field_polynomial functionality to use pari instead as discussed on https://github.com/LMFDB/lmfdb/issues/3994 , thanks to Aurel Page for the Pari code.\n\nI have left the old code for fixed_field_polynomial intact, although it only works for prime conductor and order characters I like the idea of having a second easily viewable implementation in the source, to verify against if necessary.\n----\nNew commits:",
+    "body": "I converted this into a git branch and changed the fixed_field_polynomial functionality to use pari instead as discussed on https://github.com/LMFDB/lmfdb/issues/3994 , thanks to Aurel Page for the Pari code.\n\nI have left the old code for fixed_field_polynomial intact, although it only works for prime conductor and order characters I like the idea of having a second easily viewable implementation in the source, to verify against if necessary.\n\n---\nNew commits:",
     "created_at": "2020-09-01T22:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -680,7 +681,8 @@ archive/issue_comments_089508.json:
 I converted this into a git branch and changed the fixed_field_polynomial functionality to use pari instead as discussed on https://github.com/LMFDB/lmfdb/issues/3994 , thanks to Aurel Page for the Pari code.
 
 I have left the old code for fixed_field_polynomial intact, although it only works for prime conductor and order characters I like the idea of having a second easily viewable implementation in the source, to verify against if necessary.
-----
+
+---
 New commits:
 
 
@@ -742,7 +744,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089510.json:
 ```json
 {
-    "body": "What about\n\n```\n    def fixed_field_polynomial(self, algorithm = \"pari\"):\n        ...\n        if algorithm == \"sage\":\n            ...\n            return m.charpoly(xx)\n\n        elif algorithm == \"pari\":\n             ...\n             return H.sage({\"x\":x})\n        else:\n             raise NotImplentedError(\"...\")\n```\n\ninstead of\n\n```\n    def fixed_field_polynomial(self, algorithm = \"pari\"):\n        ...\n        if algorithm == \"sage\":\n            ...\n            return m.charpoly(xx)\n\n        # Use pari\n        ...\n        return H.sage({\"x\":x})\n```\n\n?",
+    "body": "What about\n\n```\n    def fixed_field_polynomial(self, algorithm = \"pari\"):\n        ...\n        if algorithm == \"sage\":\n            ...\n            return m.charpoly(xx)\n\n        elif algorithm == \"pari\":\n             ...\n             return H.sage({\"x\":x})\n        else:\n             raise NotImplentedError(\"...\")\n```\ninstead of\n\n```\n    def fixed_field_polynomial(self, algorithm = \"pari\"):\n        ...\n        if algorithm == \"sage\":\n            ...\n            return m.charpoly(xx)\n\n        # Use pari\n        ...\n        return H.sage({\"x\":x})\n```\n?",
     "created_at": "2020-09-01T22:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -766,7 +768,6 @@ What about
         else:
              raise NotImplentedError("...")
 ```
-
 instead of
 
 ```
@@ -780,7 +781,6 @@ instead of
         ...
         return H.sage({"x":x})
 ```
-
 ?
 
 
@@ -854,7 +854,7 @@ some dirichlet missing their D capital in the documentation
 archive/issue_comments_089514.json:
 ```json
 {
-    "body": "This\n\n```diff\n+        K = NumberField(poly, 'a')\n+        return K\n```\n\ncould be just one line. Same for\n\n```diff\n+    A = [map_Zmstar_to_Zm(h) for h in Hgens]\n+    return A\n```\n",
+    "body": "This\n\n```diff\n+        K = NumberField(poly, 'a')\n+        return K\n```\ncould be just one line. Same for\n\n```diff\n+    A = [map_Zmstar_to_Zm(h) for h in Hgens]\n+    return A\n```",
     "created_at": "2020-10-18T09:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
@@ -869,14 +869,12 @@ This
 +        K = NumberField(poly, 'a')
 +        return K
 ```
-
 could be just one line. Same for
 
 ```diff
 +    A = [map_Zmstar_to_Zm(h) for h in Hgens]
 +    return A
 ```
-
 
 
 

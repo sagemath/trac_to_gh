@@ -3,7 +3,7 @@
 archive/issues_009554.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @loefflerd @novoselt @vbraun @TimDumol\n\nThis happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:\n\n```\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9554\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @loefflerd @novoselt @vbraun @TimDumol\n\nThis happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:\n\n```\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9554\n\n",
     "created_at": "2010-07-20T08:55:02Z",
     "labels": [
         "component: notebook",
@@ -38,7 +38,6 @@ Got:
    1 of   8 in __main__.example_22
 ***Test Failed*** 1 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9554
 
@@ -171,7 +170,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091939.json:
 ```json
 {
-    "body": "P.S.:\n\n```sh\nleif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n? sagenb/sagenb.po\n```\n\n(This is of course in vanilla 0.8.1, too.)",
+    "body": "P.S.:\n\n```sh\nleif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n? sagenb/sagenb.po\n```\n(This is of course in vanilla 0.8.1, too.)",
     "created_at": "2010-07-22T16:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
@@ -186,7 +185,6 @@ P.S.:
 leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 ? sagenb/sagenb.po
 ```
-
 (This is of course in vanilla 0.8.1, too.)
 
 
@@ -196,7 +194,7 @@ leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 archive/issue_comments_091940.json:
 ```json
 {
-    "body": "Replying to [comment:1 vbraun]:\n> Can you double-check that you applied `trac_8988-sageinspect_doctest_fix.patch` from #8988? That patch was supposed to fix precisely this issue. In fact, there are 3 patches in #8988, see http://trac.sagemath.org/sage_trac/ticket/8988#comment:42\n\nAll three patches were merged in 4.5.2.alpha0 -- changesets 14652-4.",
+    "body": "Replying to [comment:1 vbraun]:\n> Can you double-check that you applied `trac_8988-sageinspect_doctest_fix.patch` from #8988? That patch was supposed to fix precisely this issue. In fact, there are 3 patches in #8988, see http://trac.sagemath.org/sage_trac/ticket/8988#comment:42\n\n\nAll three patches were merged in 4.5.2.alpha0 -- changesets 14652-4.",
     "created_at": "2010-07-23T02:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
@@ -207,6 +205,7 @@ archive/issue_comments_091940.json:
 
 Replying to [comment:1 vbraun]:
 > Can you double-check that you applied `trac_8988-sageinspect_doctest_fix.patch` from #8988? That patch was supposed to fix precisely this issue. In fact, there are 3 patches in #8988, see http://trac.sagemath.org/sage_trac/ticket/8988#comment:42
+
 
 All three patches were merged in 4.5.2.alpha0 -- changesets 14652-4.
 
@@ -255,7 +254,7 @@ Since the patch is clearly the right thing to do I'll give it a positive review.
 archive/issue_comments_091943.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> P.S.:\n> {{{\n> #!sh\n> leif`@`portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n> ? sagenb/sagenb.po\n> }}}\n> (This is of course in vanilla 0.8.1, too.)\n\nThis is now #9580.",
+    "body": "Replying to [comment:5 leif]:\n> P.S.:\n> \n> ```\n> #!sh\n> leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n> ? sagenb/sagenb.po\n> ```\n> (This is of course in vanilla 0.8.1, too.)\n\n\nThis is now #9580.",
     "created_at": "2010-07-23T06:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
@@ -266,12 +265,14 @@ archive/issue_comments_091943.json:
 
 Replying to [comment:5 leif]:
 > P.S.:
-> {{{
+> 
+> ```
 > #!sh
-> leif`@`portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
+> leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 > ? sagenb/sagenb.po
-> }}}
+> ```
 > (This is of course in vanilla 0.8.1, too.)
+
 
 This is now #9580.
 
@@ -334,7 +335,7 @@ archive/issue_events_023783.json:
 archive/issue_comments_091946.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> (I'm not going to upload the patched spkg though, it's almost 19MB. So if appropriate, someone else has to provide it on sage.math.)\n\nDo you have a Sage cluster (i.e., sage.math, boxen.math, etc.) account?  If not, William Stein can make one for you.",
+    "body": "Replying to [comment:4 leif]:\n> (I'm not going to upload the patched spkg though, it's almost 19MB. So if appropriate, someone else has to provide it on sage.math.)\n\n\nDo you have a Sage cluster (i.e., sage.math, boxen.math, etc.) account?  If not, William Stein can make one for you.",
     "created_at": "2010-07-23T07:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
@@ -345,5 +346,6 @@ archive/issue_comments_091946.json:
 
 Replying to [comment:4 leif]:
 > (I'm not going to upload the patched spkg though, it's almost 19MB. So if appropriate, someone else has to provide it on sage.math.)
+
 
 Do you have a Sage cluster (i.e., sage.math, boxen.math, etc.) account?  If not, William Stein can make one for you.

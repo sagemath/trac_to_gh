@@ -256,7 +256,7 @@ Excellent.  I have nearly finished a patch which implements is_supersingular and
 archive/issue_comments_083706.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> Excellent.  I have nearly finished a patch which implements is_supersingular and is_ordinary (independently of computing the Hasse inv.)\n\nSee #9087",
+    "body": "Replying to [comment:7 cremona]:\n> Excellent.  I have nearly finished a patch which implements is_supersingular and is_ordinary (independently of computing the Hasse inv.)\n\n\nSee #9087",
     "created_at": "2010-05-30T11:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9052",
     "type": "issue_comment",
@@ -267,5 +267,6 @@ archive/issue_comments_083706.json:
 
 Replying to [comment:7 cremona]:
 > Excellent.  I have nearly finished a patch which implements is_supersingular and is_ordinary (independently of computing the Hasse inv.)
+
 
 See #9087

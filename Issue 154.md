@@ -3,7 +3,7 @@
 archive/issues_000154.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
     "created_at": "2006-10-26T20:37:48Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,7 +19,6 @@ archive/issues_000154.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: R.<x,y> = PolynomialRing(QQ,2)
 sage: i = ideal([x + y - 1])
@@ -29,7 +28,6 @@ Traceback (most recent call last):
 ...
 KeyError: 'Dimension of homogeneity space'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/154
 

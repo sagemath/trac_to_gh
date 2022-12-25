@@ -103,7 +103,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090695.json:
 ```json
 {
-    "body": "The `cone_containing` method of a `Fan_of_toric_variety` should also return a `Cone_of_toric_variety`, but right now:\n\n```\nsage: P2=toric_varieties.P2()\nsage: fan=P2.fan()\nsage: [ type(c) for c in fan ]\n[<class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>, <class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>, <class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>]\nsage: N=fan.lattice()\nsage: c = fan.cone_containing( N(0,1) ); c\n1-d cone in 2-d lattice N\nsage: type(c)\n<class 'sage.geometry.cone.ConvexRationalPolyhedralCone'>\nsage: c.ambient()\n1-d cone in 2-d lattice N\n```\n",
+    "body": "The `cone_containing` method of a `Fan_of_toric_variety` should also return a `Cone_of_toric_variety`, but right now:\n\n```\nsage: P2=toric_varieties.P2()\nsage: fan=P2.fan()\nsage: [ type(c) for c in fan ]\n[<class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>, <class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>, <class 'sage.schemes.generic.toric_variety.Cone_of_toric_variety'>]\nsage: N=fan.lattice()\nsage: c = fan.cone_containing( N(0,1) ); c\n1-d cone in 2-d lattice N\nsage: type(c)\n<class 'sage.geometry.cone.ConvexRationalPolyhedralCone'>\nsage: c.ambient()\n1-d cone in 2-d lattice N\n```",
     "created_at": "2010-07-23T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
@@ -127,7 +127,6 @@ sage: type(c)
 sage: c.ambient()
 1-d cone in 2-d lattice N
 ```
-
 
 
 

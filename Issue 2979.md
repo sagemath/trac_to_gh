@@ -51,7 +51,7 @@ which at least sets up a simple way to do this.  It might not work though becaus
 archive/issue_comments_020475.json:
 ```json
 {
-    "body": "Do not use the spkg I suggested above.  It will just lead to the following error.  Throwing\nin a make distclean to spkg-do-install would probably fix the problem though.  That said,\nthis will not fix the user's problem on the mailing list.  It fixes *some* users's problems\nthough (e.g., Martin Albrecht).\n\n```\nconfigure: loading cache config.cache\nconfigure: error: `CFLAGS' was not set in the previous run\nconfigure: error: changes in the environment can compromise the build\nconfigure: error: run `make distclean' and/or `rm config.cache' and\nstart over\nError configuring clisp\n\nreal    1m19.616s\nuser    0m33.158s\nsys     0m22.378s\nsage: An error occurred while installing clisp-2.41.p14\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/zarathustra/Download/sage-3.0.rc1/install.log.  Describe your\ncomputer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14 and\ntype 'make'.\nInstead type \"/home/zarathustra/Download/sage-3.0.rc1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nYou must set the SAGE_ROOT environment variable or\nrun this script from the SAGE_ROOT or\nSAGE_ROOT/local/bin/ directory.\nclisp-2.41.p14\nMachine:\nLinux localhost.localdomain 2.6.25-1.fc9.i686 #1 SMP Thu Apr 17\n01:47:10 EDT 2008 i686 i686 i386 GNU/Linux\n\nAnd I get the same error as above after setting the CFLAGS\n```\n",
+    "body": "Do not use the spkg I suggested above.  It will just lead to the following error.  Throwing\nin a make distclean to spkg-do-install would probably fix the problem though.  That said,\nthis will not fix the user's problem on the mailing list.  It fixes *some* users's problems\nthough (e.g., Martin Albrecht).\n\n```\nconfigure: loading cache config.cache\nconfigure: error: `CFLAGS' was not set in the previous run\nconfigure: error: changes in the environment can compromise the build\nconfigure: error: run `make distclean' and/or `rm config.cache' and\nstart over\nError configuring clisp\n\nreal    1m19.616s\nuser    0m33.158s\nsys     0m22.378s\nsage: An error occurred while installing clisp-2.41.p14\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/zarathustra/Download/sage-3.0.rc1/install.log.  Describe your\ncomputer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14 and\ntype 'make'.\nInstead type \"/home/zarathustra/Download/sage-3.0.rc1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nYou must set the SAGE_ROOT environment variable or\nrun this script from the SAGE_ROOT or\nSAGE_ROOT/local/bin/ directory.\nclisp-2.41.p14\nMachine:\nLinux localhost.localdomain 2.6.25-1.fc9.i686 #1 SMP Thu Apr 17\n01:47:10 EDT 2008 i686 i686 i386 GNU/Linux\n\nAnd I get the same error as above after setting the CFLAGS\n```",
     "created_at": "2008-04-21T16:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
@@ -102,13 +102,12 @@ And I get the same error as above after setting the CFLAGS
 
 
 
-
 ---
 
 archive/issue_comments_020476.json:
 ```json
 {
-    "body": "\n```\n12:57 < gginiu> wstein: I made that clisp build... I noticed that CFLAGS takes no effect, they are set in \n                Makefile, and I only had to enable fix that is there for 4.2.x, patches/makefile.in line \n                1127, changed 4.2* into 4.[2-3]*\n```\n",
+    "body": "```\n12:57 < gginiu> wstein: I made that clisp build... I noticed that CFLAGS takes no effect, they are set in \n                Makefile, and I only had to enable fix that is there for 4.2.x, patches/makefile.in line \n                1127, changed 4.2* into 4.[2-3]*\n```",
     "created_at": "2008-04-21T20:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
@@ -117,13 +116,11 @@ archive/issue_comments_020476.json:
 }
 ```
 
-
 ```
 12:57 < gginiu> wstein: I made that clisp build... I noticed that CFLAGS takes no effect, they are set in 
                 Makefile, and I only had to enable fix that is there for 4.2.x, patches/makefile.in line 
                 1127, changed 4.2* into 4.[2-3]*
 ```
-
 
 
 

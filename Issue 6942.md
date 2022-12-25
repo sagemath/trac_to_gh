@@ -3,7 +3,7 @@
 archive/issues_006942.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nKeywords: jordan_form, transformation\n\nThe following code returns an incorrect result:\n\n```\nmm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1],[1,1,1,0,0,1,0],[1,1,1,0,1,0,0],[1,1,1,1,1,1,0]])\n_,S = mm.jordan_form(transformation=True)\nS.rank()\n```\n\nS should be invertible, so the rank should be 7, but the rank of the above is 5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6942\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nKeywords: jordan_form, transformation\n\nThe following code returns an incorrect result:\n\n```\nmm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1],[1,1,1,0,0,1,0],[1,1,1,0,1,0,0],[1,1,1,1,1,1,0]])\n_,S = mm.jordan_form(transformation=True)\nS.rank()\n```\nS should be invertible, so the rank should be 7, but the rank of the above is 5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6942\n\n",
     "created_at": "2009-09-16T01:35:43Z",
     "labels": [
         "component: algebra",
@@ -30,7 +30,6 @@ mm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1]
 _,S = mm.jordan_form(transformation=True)
 S.rank()
 ```
-
 S should be invertible, so the rank should be 7, but the rank of the above is 5.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6942
@@ -79,7 +78,7 @@ archive/issue_events_016337.json:
 archive/issue_comments_057285.json:
 ```json
 {
-    "body": "According to Magma:\n\n\n```\nu,v:=JordanForm(Matrix(GF(2),7,7,StringToIntegerSequence(\"1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0\")));\n\nprint \"jordan form:\";\nu;\nprint \"transformation\";\nv;\n\ngives\n\nMagma V2.15-14    Tue Nov 24 2009 10:36:58    [Seed = 4156006409]\n   -------------------------------------\n\njordan form:\n[1 0 0 0 0 0 0]\n[0 1 1 0 0 0 0]\n[0 0 1 0 0 0 0]\n[0 0 0 1 1 0 0]\n[0 0 0 0 1 0 0]\n[0 0 0 0 0 1 1]\n[0 0 0 0 0 0 1]\ntransformation\n[0 0 0 0 1 1 0]\n[0 0 0 0 0 0 1]\n[1 1 1 1 1 1 1]\n[0 0 0 0 0 1 0]\n[1 1 1 0 1 1 0]\n[1 0 1 0 0 0 0]\n[1 1 0 1 1 1 0]\n\nTotal time: 0.180 seconds, Total memory usage: 7.27MB\n```\n",
+    "body": "According to Magma:\n\n```\nu,v:=JordanForm(Matrix(GF(2),7,7,StringToIntegerSequence(\"1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0\")));\n\nprint \"jordan form:\";\nu;\nprint \"transformation\";\nv;\n\ngives\n\nMagma V2.15-14    Tue Nov 24 2009 10:36:58    [Seed = 4156006409]\n   -------------------------------------\n\njordan form:\n[1 0 0 0 0 0 0]\n[0 1 1 0 0 0 0]\n[0 0 1 0 0 0 0]\n[0 0 0 1 1 0 0]\n[0 0 0 0 1 0 0]\n[0 0 0 0 0 1 1]\n[0 0 0 0 0 0 1]\ntransformation\n[0 0 0 0 1 1 0]\n[0 0 0 0 0 0 1]\n[1 1 1 1 1 1 1]\n[0 0 0 0 0 1 0]\n[1 1 1 0 1 1 0]\n[1 0 1 0 0 0 0]\n[1 1 0 1 1 1 0]\n\nTotal time: 0.180 seconds, Total memory usage: 7.27MB\n```",
     "created_at": "2009-11-23T23:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -89,7 +88,6 @@ archive/issue_comments_057285.json:
 ```
 
 According to Magma:
-
 
 ```
 u,v:=JordanForm(Matrix(GF(2),7,7,StringToIntegerSequence("1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0")));
@@ -126,13 +124,12 @@ Total time: 0.180 seconds, Total memory usage: 7.27MB
 
 
 
-
 ---
 
 archive/issue_comments_057286.json:
 ```json
 {
-    "body": "Or more verbosely:\n\n\n```\nm:=Matrix(GF(2),7,7,StringToIntegerSequence(\"1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0\"));\njor,trans:=JordanForm(m);\n\nprint \"jordan form:\";\njor;\nprint \"transformation\";\ntrans;\nprint \"m*transformation\";\ntrans*m;\nprint \"transformation*jordan form\";\njor*trans; \n\ngives\n\nMagma V2.15-14    Tue Nov 24 2009 10:41:01    [Seed = 3482294566]\n   -------------------------------------\n\njordan form:\n[1 0 0 0 0 0 0]\n[0 1 1 0 0 0 0]\n[0 0 1 0 0 0 0]\n[0 0 0 1 1 0 0]\n[0 0 0 0 1 0 0]\n[0 0 0 0 0 1 1]\n[0 0 0 0 0 0 1]\ntransformation\n[0 0 0 0 1 1 0]\n[0 0 0 0 0 0 1]\n[1 1 1 1 1 1 1]\n[0 0 0 0 0 1 0]\n[1 1 1 0 1 1 0]\n[1 0 1 0 0 0 0]\n[1 1 0 1 1 1 0]\nm*transformation\n[0 0 0 0 1 1 0]\n[1 1 1 1 1 1 0]\n[1 1 1 1 1 1 1]\n[1 1 1 0 1 0 0]\n[1 1 1 0 1 1 0]\n[0 1 1 1 1 1 0]\n[1 1 0 1 1 1 0]\ntransformation*jordan form\n[0 0 0 0 1 1 0]\n[1 1 1 1 1 1 0]\n[1 1 1 1 1 1 1]\n[1 1 1 0 1 0 0]\n[1 1 1 0 1 1 0]\n[0 1 1 1 1 1 0]\n[1 1 0 1 1 1 0]\n\nTotal time: 0.170 seconds, Total memory usage: 7.27MB\n\n```\n",
+    "body": "Or more verbosely:\n\n```\nm:=Matrix(GF(2),7,7,StringToIntegerSequence(\"1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0\"));\njor,trans:=JordanForm(m);\n\nprint \"jordan form:\";\njor;\nprint \"transformation\";\ntrans;\nprint \"m*transformation\";\ntrans*m;\nprint \"transformation*jordan form\";\njor*trans; \n\ngives\n\nMagma V2.15-14    Tue Nov 24 2009 10:41:01    [Seed = 3482294566]\n   -------------------------------------\n\njordan form:\n[1 0 0 0 0 0 0]\n[0 1 1 0 0 0 0]\n[0 0 1 0 0 0 0]\n[0 0 0 1 1 0 0]\n[0 0 0 0 1 0 0]\n[0 0 0 0 0 1 1]\n[0 0 0 0 0 0 1]\ntransformation\n[0 0 0 0 1 1 0]\n[0 0 0 0 0 0 1]\n[1 1 1 1 1 1 1]\n[0 0 0 0 0 1 0]\n[1 1 1 0 1 1 0]\n[1 0 1 0 0 0 0]\n[1 1 0 1 1 1 0]\nm*transformation\n[0 0 0 0 1 1 0]\n[1 1 1 1 1 1 0]\n[1 1 1 1 1 1 1]\n[1 1 1 0 1 0 0]\n[1 1 1 0 1 1 0]\n[0 1 1 1 1 1 0]\n[1 1 0 1 1 1 0]\ntransformation*jordan form\n[0 0 0 0 1 1 0]\n[1 1 1 1 1 1 0]\n[1 1 1 1 1 1 1]\n[1 1 1 0 1 0 0]\n[1 1 1 0 1 1 0]\n[0 1 1 1 1 1 0]\n[1 1 0 1 1 1 0]\n\nTotal time: 0.170 seconds, Total memory usage: 7.27MB\n\n```",
     "created_at": "2009-11-23T23:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -142,7 +139,6 @@ archive/issue_comments_057286.json:
 ```
 
 Or more verbosely:
-
 
 ```
 m:=Matrix(GF(2),7,7,StringToIntegerSequence("1 0 1 0 0 0 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1 1 0"));
@@ -198,7 +194,6 @@ transformation*jordan form
 Total time: 0.170 seconds, Total memory usage: 7.27MB
 
 ```
-
 
 
 
@@ -285,7 +280,7 @@ Sebastian
 archive/issue_comments_057291.json:
 ```json
 {
-    "body": "This is looking pretty good.  But I'll have to spend some more time with it.  Until then, here's another 10x10 matrix with a nice Jordan form and nearly no fractions in the transformation matrix.\n\n\n```\nmatrix(QQ, [\n[-6,  9,  -7,  -5,  5,  12,  -22,  14,  8,  21 ],\n[ -3,  5,  -3,  -1,  2,  7,  -12,  9,  1,  12 ],\n[8,  -9,  8,  6,  0,  -14,  25,  -13,  -4,  -26 ],\n[-7,  9,  -7,  -5,  0,  13,  -23,  13,  2,  24 ],\n[0,  -1,  0,  -1,  -3,  -2,  3,  -4,  -2,  -3 ],\n[3,  2,  1,  2,  9,  -1,  1,  5,  5,  -5 ],\n[-1,  3,  -3,  -2,  4,  3,  -6,  4,  4,  3 ],\n[3,  -4,  3,  2,  1,  -5,  9,  -5,  1,  -9 ],\n[0,  2,  0,  0,  2,  2,  -4,  4,  2,  4 ],\n[-4,  4,  -5,  -4,  -1,  6,  -11,  4,  1, 10]\n])\n```\n",
+    "body": "This is looking pretty good.  But I'll have to spend some more time with it.  Until then, here's another 10x10 matrix with a nice Jordan form and nearly no fractions in the transformation matrix.\n\n```\nmatrix(QQ, [\n[-6,  9,  -7,  -5,  5,  12,  -22,  14,  8,  21 ],\n[ -3,  5,  -3,  -1,  2,  7,  -12,  9,  1,  12 ],\n[8,  -9,  8,  6,  0,  -14,  25,  -13,  -4,  -26 ],\n[-7,  9,  -7,  -5,  0,  13,  -23,  13,  2,  24 ],\n[0,  -1,  0,  -1,  -3,  -2,  3,  -4,  -2,  -3 ],\n[3,  2,  1,  2,  9,  -1,  1,  5,  5,  -5 ],\n[-1,  3,  -3,  -2,  4,  3,  -6,  4,  4,  3 ],\n[3,  -4,  3,  2,  1,  -5,  9,  -5,  1,  -9 ],\n[0,  2,  0,  0,  2,  2,  -4,  4,  2,  4 ],\n[-4,  4,  -5,  -4,  -1,  6,  -11,  4,  1, 10]\n])\n```",
     "created_at": "2010-01-24T08:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -295,7 +290,6 @@ archive/issue_comments_057291.json:
 ```
 
 This is looking pretty good.  But I'll have to spend some more time with it.  Until then, here's another 10x10 matrix with a nice Jordan form and nearly no fractions in the transformation matrix.
-
 
 ```
 matrix(QQ, [
@@ -311,7 +305,6 @@ matrix(QQ, [
 [-4,  4,  -5,  -4,  -1,  6,  -11,  4,  1, 10]
 ])
 ```
-
 
 
 
@@ -494,7 +487,7 @@ Sebastian
 archive/issue_comments_057300.json:
 ```json
 {
-    "body": "Replying to [comment:11 spancratz]:\n\n> \n> Also, Minh, thank you for picking up the slack and completing the review process!\n\n\nMinh and Rob---thank you both of you for reviewing this!",
+    "body": "Replying to [comment:11 spancratz]:\n\n> \n> Also, Minh, thank you for picking up the slack and completing the review process!\n\n\n\nMinh and Rob---thank you both of you for reviewing this!",
     "created_at": "2010-02-06T03:10:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
@@ -507,6 +500,7 @@ Replying to [comment:11 spancratz]:
 
 > 
 > Also, Minh, thank you for picking up the slack and completing the review process!
+
 
 
 Minh and Rob---thank you both of you for reviewing this!

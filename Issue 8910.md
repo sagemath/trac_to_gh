@@ -52,7 +52,7 @@ Changing status from new to needs_work.
 archive/issue_comments_081945.json:
 ```json
 {
-    "body": "Attachment [trac_8910-combinatorial_class_parent-fh.patch](tarball://root/attachments/some-uuid/ticket8910/trac_8910-combinatorial_class_parent-fh.patch) by @hivert created at 2010-05-31 15:37:21\n\nThe patch has been reviewed by Nicolas on the patch queue. I folded the review patches:\n\n```\n$ hg qgoto trac_8910-subsets_an_element-fh.patch\n$ hg qfold trac_8910-subsets_an_element-review-nt.patch\n$ hg qfold trac_8910-subsets_an_element-review-review-fh.patch\n```\n\nAnd Nicolas said by e-mail\n\n```\n> D\u00e8s que j'ai ton feu vert, je folde tout, et met la positive review sur trac.\n\nFeu vert!\n```\n\nMeaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.\n\nTherefore I allowed myself to put the positive review.",
+    "body": "Attachment [trac_8910-combinatorial_class_parent-fh.patch](tarball://root/attachments/some-uuid/ticket8910/trac_8910-combinatorial_class_parent-fh.patch) by @hivert created at 2010-05-31 15:37:21\n\nThe patch has been reviewed by Nicolas on the patch queue. I folded the review patches:\n\n```\n$ hg qgoto trac_8910-subsets_an_element-fh.patch\n$ hg qfold trac_8910-subsets_an_element-review-nt.patch\n$ hg qfold trac_8910-subsets_an_element-review-review-fh.patch\n```\nAnd Nicolas said by e-mail\n\n```\n> D\u00e8s que j'ai ton feu vert, je folde tout, et met la positive review sur trac.\n\nFeu vert!\n```\nMeaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.\n\nTherefore I allowed myself to put the positive review.",
     "created_at": "2010-05-31T15:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8910",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ $ hg qgoto trac_8910-subsets_an_element-fh.patch
 $ hg qfold trac_8910-subsets_an_element-review-nt.patch
 $ hg qfold trac_8910-subsets_an_element-review-review-fh.patch
 ```
-
 And Nicolas said by e-mail
 
 ```
@@ -78,7 +77,6 @@ And Nicolas said by e-mail
 
 Feu vert!
 ```
-
 Meaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.
 
 Therefore I allowed myself to put the positive review.
@@ -144,7 +142,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081949.json:
 ```json
 {
-    "body": "> Meaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.\n\n> Therefore I allowed myself to put the positive review.\n\nDone",
+    "body": "> Meaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.\n\n\n> Therefore I allowed myself to put the positive review.\n\n\nDone",
     "created_at": "2010-05-31T15:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8910",
     "type": "issue_comment",
@@ -155,7 +153,9 @@ archive/issue_comments_081949.json:
 
 > Meaning: (FH) as soon as I have your green light I fold the whole bunch, and set positive review on trac. (Answer from Nicolas) Green Light.
 
+
 > Therefore I allowed myself to put the positive review.
+
 
 Done
 

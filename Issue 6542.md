@@ -167,7 +167,7 @@ I made ticket #6543 to fix the lack of doctests; that can build on this patch.
 archive/issue_comments_053235.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhampton]:\n> Well, yeah - the whole damn file needs doctests, which will take a while.  But I really think this should be fixed as soon as possible.\nTrue; I just meant to add a string with doctest that \n\n```\ntostr([5,4,3])\n' 5.0 4.0 3.0 '\n```\n\nas per Sage convention to check that it was fixed; that shouldn't be too bad.  I'd do it myself but do not have a current Sage build available.\n> I made ticket #6543 to fix the lack of doctests; that can build on this patch.\nYes, I've been thinking about doing this for a while too.",
+    "body": "Replying to [comment:5 mhampton]:\n> Well, yeah - the whole damn file needs doctests, which will take a while.  But I really think this should be fixed as soon as possible.\n\nTrue; I just meant to add a string with doctest that \n\n```\ntostr([5,4,3])\n' 5.0 4.0 3.0 '\n```\nas per Sage convention to check that it was fixed; that shouldn't be too bad.  I'd do it myself but do not have a current Sage build available.\n> I made ticket #6543 to fix the lack of doctests; that can build on this patch.\n\nYes, I've been thinking about doing this for a while too.",
     "created_at": "2009-07-16T19:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
@@ -178,15 +178,16 @@ archive/issue_comments_053235.json:
 
 Replying to [comment:5 mhampton]:
 > Well, yeah - the whole damn file needs doctests, which will take a while.  But I really think this should be fixed as soon as possible.
+
 True; I just meant to add a string with doctest that 
 
 ```
 tostr([5,4,3])
 ' 5.0 4.0 3.0 '
 ```
-
 as per Sage convention to check that it was fixed; that shouldn't be too bad.  I'd do it myself but do not have a current Sage build available.
 > I made ticket #6543 to fix the lack of doctests; that can build on this patch.
+
 Yes, I've been thinking about doing this for a while too.
 
 
@@ -288,7 +289,7 @@ Works perfectly for me -- Sage 4.1.
 archive/issue_comments_053241.json:
 ```json
 {
-    "body": "Typo in the word \"seperated\" on line 990:\n\n```\n-Converts vector information to a space-seperated string.\n+Converts vector information to a space-separated string.\n```\n",
+    "body": "Typo in the word \"seperated\" on line 990:\n\n```\n-Converts vector information to a space-seperated string.\n+Converts vector information to a space-separated string.\n```",
     "created_at": "2009-07-27T13:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
@@ -303,7 +304,6 @@ Typo in the word "seperated" on line 990:
 -Converts vector information to a space-seperated string.
 +Converts vector information to a space-separated string.
 ```
-
 
 
 

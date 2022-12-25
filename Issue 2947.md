@@ -70,7 +70,7 @@ Looks good to me.
 archive/issue_comments_020284.json:
 ```json
 {
-    "body": "There are rejection problems [with or without #2946 applied]:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch\npatching file sage/matrix/constructor.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 3591 (offset 59 lines).\nHunk #2 FAILED at 3601.\nHunk #3 FAILED at 3630.\n2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\n(reverse-i-search)`rm': patch -p1 < trac_2946_noninvertible_jordan_form.patch\n```\n\n\nCheers,\n\nMichael",
+    "body": "There are rejection problems [with or without #2946 applied]:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch\npatching file sage/matrix/constructor.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch\npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 3591 (offset 59 lines).\nHunk #2 FAILED at 3601.\nHunk #3 FAILED at 3630.\n2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\n(reverse-i-search)`rm': patch -p1 < trac_2946_noninvertible_jordan_form.patch\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-18T06:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2947",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ Hunk #3 FAILED at 3630.
 2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej
 (reverse-i-search)`rm': patch -p1 < trac_2946_noninvertible_jordan_form.patch
 ```
-
 
 Cheers,
 

@@ -96,7 +96,7 @@ Instead of repurposing `fan.is_complete()`, how about an extra optional argument
 archive/issue_comments_086831.json:
 ```json
 {
-    "body": "Replying to [comment:2 vbraun]:\n> I agree about disabling checks eventually, but for now I think its good to catch potential bugs elsewhere.\n\nGood point!\n\n> Instead of repurposing `fan.is_complete()`, how about an extra optional argument to `RationalPolyhedralFan.__init__(assume_complete=False)`.\n\nOK!\n\n> Once `Fan` is finished I can migrate the construction from `Fan` to `RationalPolyhedralFan` to speed things up further.\n\nThat can make things fragile and lead to extra works of putting rays into proper spaces and making them immutable. That's exactly what `Fan(..., check=False)` is taking care of, if it does it in a slow way - it is a bug that should be fixed ;-)\n\nIt may be a good idea to keep a dictionary of these named varieties, so that repetitive calls to, say, `P1xP1` will return the same object. Another option is to make `ToricVariety` to return unique varieties if they were already constructed before, but it can be quite tedious compared to affine and projective spaces.",
+    "body": "Replying to [comment:2 vbraun]:\n> I agree about disabling checks eventually, but for now I think its good to catch potential bugs elsewhere.\n\n\nGood point!\n\n> Instead of repurposing `fan.is_complete()`, how about an extra optional argument to `RationalPolyhedralFan.__init__(assume_complete=False)`.\n\n\nOK!\n\n> Once `Fan` is finished I can migrate the construction from `Fan` to `RationalPolyhedralFan` to speed things up further.\n\n\nThat can make things fragile and lead to extra works of putting rays into proper spaces and making them immutable. That's exactly what `Fan(..., check=False)` is taking care of, if it does it in a slow way - it is a bug that should be fixed ;-)\n\nIt may be a good idea to keep a dictionary of these named varieties, so that repetitive calls to, say, `P1xP1` will return the same object. Another option is to make `ToricVariety` to return unique varieties if they were already constructed before, but it can be quite tedious compared to affine and projective spaces.",
     "created_at": "2010-06-15T16:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -108,13 +108,16 @@ archive/issue_comments_086831.json:
 Replying to [comment:2 vbraun]:
 > I agree about disabling checks eventually, but for now I think its good to catch potential bugs elsewhere.
 
+
 Good point!
 
 > Instead of repurposing `fan.is_complete()`, how about an extra optional argument to `RationalPolyhedralFan.__init__(assume_complete=False)`.
 
+
 OK!
 
 > Once `Fan` is finished I can migrate the construction from `Fan` to `RationalPolyhedralFan` to speed things up further.
+
 
 That can make things fragile and lead to extra works of putting rays into proper spaces and making them immutable. That's exactly what `Fan(..., check=False)` is taking care of, if it does it in a slow way - it is a bug that should be fixed ;-)
 
@@ -127,7 +130,7 @@ It may be a good idea to keep a dictionary of these named varieties, so that rep
 archive/issue_comments_086832.json:
 ```json
 {
-    "body": "Since all of the named toric varieties seem to have valid Python identifiers for names, it seems more consistent to follow the interfaces of named graphs.\n\n\n```\nsage: graphs.CompleteGraph(4)\n```\n\n\nYou could have something like\n\n\n```\nsage: toric_varieties.Conifold()\n```\n",
+    "body": "Since all of the named toric varieties seem to have valid Python identifiers for names, it seems more consistent to follow the interfaces of named graphs.\n\n```\nsage: graphs.CompleteGraph(4)\n```\n\nYou could have something like\n\n```\nsage: toric_varieties.Conifold()\n```",
     "created_at": "2010-06-20T02:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -138,19 +141,15 @@ archive/issue_comments_086832.json:
 
 Since all of the named toric varieties seem to have valid Python identifiers for names, it seems more consistent to follow the interfaces of named graphs.
 
-
 ```
 sage: graphs.CompleteGraph(4)
 ```
 
-
 You could have something like
-
 
 ```
 sage: toric_varieties.Conifold()
 ```
-
 
 
 
@@ -259,7 +258,7 @@ Improved patch
 archive/issue_comments_086838.json:
 ```json
 {
-    "body": "Replying to [comment:7 vbraun]:\n> Now with commit message. What is the recommended way of extracting a patch from the Mercurial queue?\n\nI am not sure. I always put the patch in question on the top, then run Sage and use `hg_sage.export(\"tip\", \"trac_xxxx_description\")` command.",
+    "body": "Replying to [comment:7 vbraun]:\n> Now with commit message. What is the recommended way of extracting a patch from the Mercurial queue?\n\n\nI am not sure. I always put the patch in question on the top, then run Sage and use `hg_sage.export(\"tip\", \"trac_xxxx_description\")` command.",
     "created_at": "2010-06-26T00:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -270,6 +269,7 @@ archive/issue_comments_086838.json:
 
 Replying to [comment:7 vbraun]:
 > Now with commit message. What is the recommended way of extracting a patch from the Mercurial queue?
+
 
 I am not sure. I always put the patch in question on the top, then run Sage and use `hg_sage.export("tip", "trac_xxxx_description")` command.
 
@@ -389,7 +389,7 @@ Here is the new patch. The `_make_CPRFanoToricVariety` method renumber the cones
 archive/issue_comments_086845.json:
 ```json
 {
-    "body": "* I don't think that `coordinate_points=ray2point.values()` does what you want - the order of elements in the dictionary is unpredictable. I think that \n\n```\nray2point = dict([ (i, points.index(r)) for i,r in enumerate(rays)]) \n```\n\n should be replaced with\n\n```\nray2point = [points.index(r) for r in rays]\n```\n\n\n* Is there any reason why coordinate names are given in constructor functions? It seems to me that they would look better next to the rays in the data block.",
+    "body": "* I don't think that `coordinate_points=ray2point.values()` does what you want - the order of elements in the dictionary is unpredictable. I think that \n\n```\nray2point = dict([ (i, points.index(r)) for i,r in enumerate(rays)]) \n```\n should be replaced with\n\n```\nray2point = [points.index(r) for r in rays]\n```\n\n* Is there any reason why coordinate names are given in constructor functions? It seems to me that they would look better next to the rays in the data block.",
     "created_at": "2010-06-29T21:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -403,13 +403,11 @@ archive/issue_comments_086845.json:
 ```
 ray2point = dict([ (i, points.index(r)) for i,r in enumerate(rays)]) 
 ```
-
  should be replaced with
 
 ```
 ray2point = [points.index(r) for r in rays]
 ```
-
 
 * Is there any reason why coordinate names are given in constructor functions? It seems to me that they would look better next to the rays in the data block.
 
@@ -478,7 +476,7 @@ Updated patch
 archive/issue_comments_086849.json:
 ```json
 {
-    "body": "1) Can we replace C with A whenever it refers to complex numbers, e.g. `C2` ===> `A2` with documentation \"Return the affine plane `\\mathbb{A}^2` as a toric variety. ...\"? I know that usually one thinks of complex numbers in toric geometry (I do it always), but the default field is the rational one and I think it would be better to have \"neutral\" names. Note that there is already no reference to the base field in all projective spaces, which is good, I think.\n\n2) I think the module looks better in the documentation if its description on the first line is \"Library of toric varieties\" without \"a\". Although I can't really judge how bad it is from the English point of view not to have an article ;-)\n\n3) In general the module docstring should include more information according to http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files\nAt the very least you should add yourself as the initial author, some description of how it works also can be nice.\n\n4) Unfortunately, it is not very consistent in Sage, but I try to follow http://www.python.org/dev/peps/pep-0257/ cited in the beginning of http://sagemath.org/doc/developer/conventions.html#python-coding-conventions in the part of having a single line \"command type\" description in the beginning of docstrings, i.e. in most cases \"Return ...\" In many cases Sage uses \"Returns ...\" and the example in Developer's Guide is even worse: \"This function returns ...\" I definitely do not require you to follow the style I have chosen, but it can be nice if you follow it anyway for consistency purposes ;-)\n\n5) Following Developer's Guide, the input block of `Cube_deformation` should look like\n\n```\nINPUT:\n\n    - ``k`` -- integer. The case ``k=0`` is :meth:`Cube_face_fan`. \n```\n\n\n6) I think it will be good for cross-linking compiled documentation if all functions have one of these output blocks (in addition to the more mathematical description of the output which they already have):\n\n```\nOUTPUT:\n\n- :class:`toric variety\n  <sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\n- :class:`CPR-Fano toric variety\n  <sage.schemes.generic.fano_toric_variety.CPRFanoToricVariety_field>`.\n```\n\n\n7) I think it will be good if all examples displayed rays and names of coordinates, like\n\n```\nsage: Conifold = toric_varieties.Conifold()\nsage: Conifold\n3-d affine toric variety\nsage: Conifold.fan().ray_matrix()\n[0 0 1 1]\n[0 1 0 1]\n[1 1 1 1]\nsage: Conifold.gens()\n(u, x, y, v)\n```\n\nIt will make the compiled documentation more informative.\n\n8) `check=self._check` should be passed to constructors of toric varieties as well. Once we are confident that the rest of the code is correct and set `self._check=False` by default, my hope is that there will be no \"# long time\" comments in this module.\n\n9) `sage -coverage` shows doctests of private functions as possibly wrong, there should be a comment \"# indirect doctest\" in their examples.\n\n10) It also shows `TestSuite` error which I propose to ignore so far. There isn't really anything to test for such a class and I don't think there is any point in pickling it. If somebody disagrees, at least it will be easy for them to track down this module and do whatever is necessary.\n\nLet me know what you think!",
+    "body": "1) Can we replace C with A whenever it refers to complex numbers, e.g. `C2` ===> `A2` with documentation \"Return the affine plane `\\mathbb{A}^2` as a toric variety. ...\"? I know that usually one thinks of complex numbers in toric geometry (I do it always), but the default field is the rational one and I think it would be better to have \"neutral\" names. Note that there is already no reference to the base field in all projective spaces, which is good, I think.\n\n2) I think the module looks better in the documentation if its description on the first line is \"Library of toric varieties\" without \"a\". Although I can't really judge how bad it is from the English point of view not to have an article ;-)\n\n3) In general the module docstring should include more information according to http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files\nAt the very least you should add yourself as the initial author, some description of how it works also can be nice.\n\n4) Unfortunately, it is not very consistent in Sage, but I try to follow http://www.python.org/dev/peps/pep-0257/ cited in the beginning of http://sagemath.org/doc/developer/conventions.html#python-coding-conventions in the part of having a single line \"command type\" description in the beginning of docstrings, i.e. in most cases \"Return ...\" In many cases Sage uses \"Returns ...\" and the example in Developer's Guide is even worse: \"This function returns ...\" I definitely do not require you to follow the style I have chosen, but it can be nice if you follow it anyway for consistency purposes ;-)\n\n5) Following Developer's Guide, the input block of `Cube_deformation` should look like\n\n```\nINPUT:\n\n    - ``k`` -- integer. The case ``k=0`` is :meth:`Cube_face_fan`. \n```\n\n6) I think it will be good for cross-linking compiled documentation if all functions have one of these output blocks (in addition to the more mathematical description of the output which they already have):\n\n```\nOUTPUT:\n\n- :class:`toric variety\n  <sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\n- :class:`CPR-Fano toric variety\n  <sage.schemes.generic.fano_toric_variety.CPRFanoToricVariety_field>`.\n```\n\n7) I think it will be good if all examples displayed rays and names of coordinates, like\n\n```\nsage: Conifold = toric_varieties.Conifold()\nsage: Conifold\n3-d affine toric variety\nsage: Conifold.fan().ray_matrix()\n[0 0 1 1]\n[0 1 0 1]\n[1 1 1 1]\nsage: Conifold.gens()\n(u, x, y, v)\n```\nIt will make the compiled documentation more informative.\n\n8) `check=self._check` should be passed to constructors of toric varieties as well. Once we are confident that the rest of the code is correct and set `self._check=False` by default, my hope is that there will be no \"# long time\" comments in this module.\n\n9) `sage -coverage` shows doctests of private functions as possibly wrong, there should be a comment \"# indirect doctest\" in their examples.\n\n10) It also shows `TestSuite` error which I propose to ignore so far. There isn't really anything to test for such a class and I don't think there is any point in pickling it. If somebody disagrees, at least it will be easy for them to track down this module and do whatever is necessary.\n\nLet me know what you think!",
     "created_at": "2010-07-02T20:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -504,7 +502,6 @@ INPUT:
     - ``k`` -- integer. The case ``k=0`` is :meth:`Cube_face_fan`. 
 ```
 
-
 6) I think it will be good for cross-linking compiled documentation if all functions have one of these output blocks (in addition to the more mathematical description of the output which they already have):
 
 ```
@@ -519,7 +516,6 @@ OUTPUT:
   <sage.schemes.generic.fano_toric_variety.CPRFanoToricVariety_field>`.
 ```
 
-
 7) I think it will be good if all examples displayed rays and names of coordinates, like
 
 ```
@@ -533,7 +529,6 @@ sage: Conifold.fan().ray_matrix()
 sage: Conifold.gens()
 (u, x, y, v)
 ```
-
 It will make the compiled documentation more informative.
 
 8) `check=self._check` should be passed to constructors of toric varieties as well. Once we are confident that the rest of the code is correct and set `self._check=False` by default, my hope is that there will be no "# long time" comments in this module.
@@ -672,7 +667,7 @@ Updated patch
 archive/issue_comments_086855.json:
 ```json
 {
-    "body": "Looks great!\n\nJust a couple more little picks:\n\n* `Cube_deformation(k)` does NOT \"Construct a sequence of toric varieties with torsion in the Chow group\" since for every given `k` it will return only a particular element of the sequence. In the OUTPUT block of this function, can we turn \"toric variety\" into a hyperlink?\n\n* I don't quite like that other outputs will look in the documentation like \"An instance of toric variety.\" I am totally fine without the dash in the beginning, but I'd prefer either plain-language \"Toric variety.\" or a longer but more code-accurate \"An instance of `ToricVariety_field`.\" given by one of these:\n\n```\nOUTPUT:\n\n:class:`Toric variety\n<sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\nAn instance of\n:class:`~sage.schemes.generic.toric_variety.ToricVariety_field`.\n```\n\n\nThe second point is optional, if \"An instance of toric variety.\" is exactly what you want, it is OK with me.",
+    "body": "Looks great!\n\nJust a couple more little picks:\n\n* `Cube_deformation(k)` does NOT \"Construct a sequence of toric varieties with torsion in the Chow group\" since for every given `k` it will return only a particular element of the sequence. In the OUTPUT block of this function, can we turn \"toric variety\" into a hyperlink?\n\n* I don't quite like that other outputs will look in the documentation like \"An instance of toric variety.\" I am totally fine without the dash in the beginning, but I'd prefer either plain-language \"Toric variety.\" or a longer but more code-accurate \"An instance of `ToricVariety_field`.\" given by one of these:\n\n```\nOUTPUT:\n\n:class:`Toric variety\n<sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\nAn instance of\n:class:`~sage.schemes.generic.toric_variety.ToricVariety_field`.\n```\n\nThe second point is optional, if \"An instance of toric variety.\" is exactly what you want, it is OK with me.",
     "created_at": "2010-07-02T22:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
@@ -700,7 +695,6 @@ OUTPUT:
 An instance of
 :class:`~sage.schemes.generic.toric_variety.ToricVariety_field`.
 ```
-
 
 The second point is optional, if "An instance of toric variety." is exactly what you want, it is OK with me.
 

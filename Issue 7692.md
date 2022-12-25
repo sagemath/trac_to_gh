@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7692
 archive/issue_comments_065874.json:
 ```json
 {
-    "body": "\n```\nHi William,\n\nI don't want to send a 10 MB attachment (the unzipped database file is now\nabout 31 MB instead of the former 20), so I've attached a bash script that\nshould automatically generate the spkg file for you.  As long as you have\nwget installed and the database can be downloaded (it doesn't check for\nfailure) it should work just fine.\n\nLet me know if you have any problems running the script or using the spkg\nit generates and I'll get it fixed as quickly as possible.\n\nBest,\nSteven\n```\n\n\n(see attachment: update-sloane)",
+    "body": "```\nHi William,\n\nI don't want to send a 10 MB attachment (the unzipped database file is now\nabout 31 MB instead of the former 20), so I've attached a bash script that\nshould automatically generate the spkg file for you.  As long as you have\nwget installed and the database can be downloaded (it doesn't check for\nfailure) it should work just fine.\n\nLet me know if you have any problems running the script or using the spkg\nit generates and I'll get it fixed as quickly as possible.\n\nBest,\nSteven\n```\n\n(see attachment: update-sloane)",
     "created_at": "2009-12-18T01:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_065874.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Hi William,
@@ -58,7 +57,6 @@ it generates and I'll get it fixed as quickly as possible.
 Best,
 Steven
 ```
-
 
 (see attachment: update-sloane)
 
@@ -143,7 +141,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065879.json:
 ```json
 {
-    "body": "The package installed ok, but sloane.py needs work:\n\n\n\n```\nsage: SloaneEncyclopedia.load()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (48, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/jaap/.sage/temp/vrede.jaapspies.nl/14953/_home_jaap__sage_init_sage_0.py in <module>()\n\n/home/jaap/downloads/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/databases/sloane.pyc in load(self)\n    246                 seqnum = int(m.group('num'));\n    247                 msg = m.group('body').strip();\n--> 248                 self.__data__[seqnum] = [seqnum, None, ','+msg+',']\n    249         verbose(\"Finished loading\", tm)\n    250         self.__loaded__ = True\n\nIndexError: list assignment index out of range\n\n\n```\n\n\nFirst of all there are more sequence in the databas:\n\n\n\n```\nclass SloaneEncyclopediaClass:\n    \"\"\"\n    A local copy of the Sloane Online Encyclopedia of Integer Sequences\n    that contains only the sequence numbers and the sequences\n    themselves.\n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        Initialize the database but do not load any of the data.\n        \"\"\"\n        self.__file__ = \"%s/data/sloane/sloane-oeis.bz2\"%os.environ[\"SAGE_ROOT\"]\n        self.__arraysize__ = 114751 # maximum sequence number + 1\n        self.__loaded__ = False\n\n\n```\n\n\n\nJaap",
+    "body": "The package installed ok, but sloane.py needs work:\n\n\n```\nsage: SloaneEncyclopedia.load()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (48, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/jaap/.sage/temp/vrede.jaapspies.nl/14953/_home_jaap__sage_init_sage_0.py in <module>()\n\n/home/jaap/downloads/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/databases/sloane.pyc in load(self)\n    246                 seqnum = int(m.group('num'));\n    247                 msg = m.group('body').strip();\n--> 248                 self.__data__[seqnum] = [seqnum, None, ','+msg+',']\n    249         verbose(\"Finished loading\", tm)\n    250         self.__loaded__ = True\n\nIndexError: list assignment index out of range\n\n\n```\n\nFirst of all there are more sequence in the databas:\n\n\n```\nclass SloaneEncyclopediaClass:\n    \"\"\"\n    A local copy of the Sloane Online Encyclopedia of Integer Sequences\n    that contains only the sequence numbers and the sequences\n    themselves.\n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        Initialize the database but do not load any of the data.\n        \"\"\"\n        self.__file__ = \"%s/data/sloane/sloane-oeis.bz2\"%os.environ[\"SAGE_ROOT\"]\n        self.__arraysize__ = 114751 # maximum sequence number + 1\n        self.__loaded__ = False\n\n\n```\n\n\nJaap",
     "created_at": "2009-12-18T18:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -153,7 +151,6 @@ archive/issue_comments_065879.json:
 ```
 
 The package installed ok, but sloane.py needs work:
-
 
 
 ```
@@ -179,9 +176,7 @@ IndexError: list assignment index out of range
 
 ```
 
-
 First of all there are more sequence in the databas:
-
 
 
 ```
@@ -203,7 +198,6 @@ class SloaneEncyclopediaClass:
 ```
 
 
-
 Jaap
 
 
@@ -213,7 +207,7 @@ Jaap
 archive/issue_comments_065880.json:
 ```json
 {
-    "body": "\n```\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven\n```\n",
+    "body": "```\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven\n```",
     "created_at": "2009-12-19T00:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -221,7 +215,6 @@ archive/issue_comments_065880.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 I completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run "cut -d' ' -f1 sloane-oeis | head".)
@@ -241,13 +234,12 @@ Steven
 
 
 
-
 ---
 
 archive/issue_comments_065881.json:
 ```json
 {
-    "body": "More readable version:\n\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\n\n```\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n```\n\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven",
+    "body": "More readable version:\n\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\n```\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n```\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven",
     "created_at": "2009-12-19T05:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -264,11 +256,9 @@ The two best fixes I have in mind, other than getting Sloane to renumber that on
 
 If we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like
 
-
 ```
 cut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq
 ```
-
 
 where sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.
 
@@ -420,7 +410,7 @@ Jaap
 archive/issue_comments_065888.json:
 ```json
 {
-    "body": "Two remarks:\n\n[1] Maybe the name of the patch should be conform the standard: trac_7692.patch\n\n[2] Output is in Python:\n\n\n```\nsage: SloaneEncyclopedia[111111]\n [1, 2, 0, 2, 6, 46, 338, 2926, 28146, 298526, 3454434, 43286526, 583835650, 8433987582L, 129941213186L, 2127349165822L, 36889047574274L, 675548628690430L, 13030733384956418L, 264111424634864638L]\n\n```\n\n\nI would like to see this in Sage.\n\nShall we open another ticket?\n\nCheers,\n\nJaap",
+    "body": "Two remarks:\n\n[1] Maybe the name of the patch should be conform the standard: trac_7692.patch\n\n[2] Output is in Python:\n\n```\nsage: SloaneEncyclopedia[111111]\n [1, 2, 0, 2, 6, 46, 338, 2926, 28146, 298526, 3454434, 43286526, 583835650, 8433987582L, 129941213186L, 2127349165822L, 36889047574274L, 675548628690430L, 13030733384956418L, 264111424634864638L]\n\n```\n\nI would like to see this in Sage.\n\nShall we open another ticket?\n\nCheers,\n\nJaap",
     "created_at": "2009-12-22T17:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
@@ -435,13 +425,11 @@ Two remarks:
 
 [2] Output is in Python:
 
-
 ```
 sage: SloaneEncyclopedia[111111]
  [1, 2, 0, 2, 6, 46, 338, 2926, 28146, 298526, 3454434, 43286526, 583835650, 8433987582L, 129941213186L, 2127349165822L, 36889047574274L, 675548628690430L, 13030733384956418L, 264111424634864638L]
 
 ```
-
 
 I would like to see this in Sage.
 

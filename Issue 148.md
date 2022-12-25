@@ -102,7 +102,7 @@ archive/issue_events_000276.json:
 archive/issue_comments_000675.json:
 ```json
 {
-    "body": "this simply isn't true.  I tried this both with print mode and\ndirectly from a worksheet with this in edit mode followed by\nio cells.  \n\n```\n\n<a href=\"/trac92\">trac92</a>\n\n\n```\n\n\n\nIn each case the link does not go to localhost.  It's absolute. \nAnyway, I do not understand this bug report at all.",
+    "body": "this simply isn't true.  I tried this both with print mode and\ndirectly from a worksheet with this in edit mode followed by\nio cells.  \n\n```\n\n<a href=\"/trac92\">trac92</a>\n\n\n```\n\n\nIn each case the link does not go to localhost.  It's absolute. \nAnyway, I do not understand this bug report at all.",
     "created_at": "2007-01-19T11:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_comment",
@@ -121,7 +121,6 @@ io cells.
 
 
 ```
-
 
 
 In each case the link does not go to localhost.  It's absolute. 

@@ -51,7 +51,7 @@ This looks good, with the same caveat that we need to remember to remove the `sp
 archive/issue_comments_050004.json:
 ```json
 {
-    "body": "> (Is there an obvious reason there isn't just a flag for these we set somewhere in the sage build process?) \n\nThere is such a flag.  It's SAGE_CHECK.  See http://trac.sagemath.org/sage_trac/ticket/6282.  It's just not documented, so nobody seems to know about it.",
+    "body": "> (Is there an obvious reason there isn't just a flag for these we set somewhere in the sage build process?) \n\n\nThere is such a flag.  It's SAGE_CHECK.  See http://trac.sagemath.org/sage_trac/ticket/6282.  It's just not documented, so nobody seems to know about it.",
     "created_at": "2009-06-14T09:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6271",
     "type": "issue_comment",
@@ -61,6 +61,7 @@ archive/issue_comments_050004.json:
 ```
 
 > (Is there an obvious reason there isn't just a flag for these we set somewhere in the sage build process?) 
+
 
 There is such a flag.  It's SAGE_CHECK.  See http://trac.sagemath.org/sage_trac/ticket/6282.  It's just not documented, so nobody seems to know about it.
 

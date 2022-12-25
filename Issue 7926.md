@@ -69,7 +69,7 @@ Changing keywords from "" to "ecc2011".
 archive/issue_comments_068864.json:
 ```json
 {
-    "body": "I confirm, this patch fails to apply to Sage 4.7.1 and thus should be rebased:\n\n```\nsage: hg_sage.import_patch(\"/tmp/7926-mw-docs.patch\")\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg import   \"/tmp/7926-mw-docs.patch\"\napplying /tmp/7926-mw-docs.patch\npatching file sage/schemes/elliptic_curves/monsky_washnitzer.py\nHunk #3 FAILED at 2228\nHunk #6 FAILED at 2391\n2 out of 9 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/monsky_washnitzer.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\nHunk #1 FAILED at 174\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py.rej\nabort: patch failed to apply\n```\n\nPaul",
+    "body": "I confirm, this patch fails to apply to Sage 4.7.1 and thus should be rebased:\n\n```\nsage: hg_sage.import_patch(\"/tmp/7926-mw-docs.patch\")\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.7.1/sage/devel/sage\" && hg import   \"/tmp/7926-mw-docs.patch\"\napplying /tmp/7926-mw-docs.patch\npatching file sage/schemes/elliptic_curves/monsky_washnitzer.py\nHunk #3 FAILED at 2228\nHunk #6 FAILED at 2391\n2 out of 9 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/monsky_washnitzer.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\nHunk #1 FAILED at 174\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py.rej\nabort: patch failed to apply\n```\nPaul",
     "created_at": "2011-09-16T13:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
@@ -95,7 +95,6 @@ Hunk #1 FAILED at 174
 1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py.rej
 abort: patch failed to apply
 ```
-
 Paul
 
 
@@ -237,7 +236,7 @@ Sorry I never got to 100%, but getting this in now is better than letting it bit
 archive/issue_comments_068872.json:
 ```json
 {
-    "body": "The documentation doesn't even build properly:\n\n```\ndochtml.log:/padic/scratch/jdemeyer/merger/sage-5.0.beta12/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/monsky_washnitzer.py:docstring of sage.schemes.elliptic_curves.monsky_washnitzer:7: WARNING: Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/padic/scratch/jdemeyer/merger/sage-5.0.beta12/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/monsky_washnitzer.py:docstring of sage.schemes.elliptic_curves.monsky_washnitzer:15: WARNING: Block quote ends without a blank line; unexpected unindent.\ndochtml.log:WARNING: inline latex u'\\\\phi(x) = x^p\\n\\n\\\\phi(y) = y^p \\\\sqrt{1 ': latex exited with error:\ndochtml.log:WARNING: inline latex u'\\\\phi^*(dx/2y) = px^{p-1} y(\\\\phi(y))^{-1} dx/2y\\n              = px^{p-1} y^{1-p} \\\\sqrt{1 ': latex exited with error:\n```\n",
+    "body": "The documentation doesn't even build properly:\n\n```\ndochtml.log:/padic/scratch/jdemeyer/merger/sage-5.0.beta12/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/monsky_washnitzer.py:docstring of sage.schemes.elliptic_curves.monsky_washnitzer:7: WARNING: Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/padic/scratch/jdemeyer/merger/sage-5.0.beta12/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/monsky_washnitzer.py:docstring of sage.schemes.elliptic_curves.monsky_washnitzer:15: WARNING: Block quote ends without a blank line; unexpected unindent.\ndochtml.log:WARNING: inline latex u'\\\\phi(x) = x^p\\n\\n\\\\phi(y) = y^p \\\\sqrt{1 ': latex exited with error:\ndochtml.log:WARNING: inline latex u'\\\\phi^*(dx/2y) = px^{p-1} y(\\\\phi(y))^{-1} dx/2y\\n              = px^{p-1} y^{1-p} \\\\sqrt{1 ': latex exited with error:\n```",
     "created_at": "2012-03-28T07:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
@@ -254,7 +253,6 @@ dochtml.log:/padic/scratch/jdemeyer/merger/sage-5.0.beta12/local/lib/python2.7/s
 dochtml.log:WARNING: inline latex u'\\phi(x) = x^p\n\n\\phi(y) = y^p \\sqrt{1 ': latex exited with error:
 dochtml.log:WARNING: inline latex u'\\phi^*(dx/2y) = px^{p-1} y(\\phi(y))^{-1} dx/2y\n              = px^{p-1} y^{1-p} \\sqrt{1 ': latex exited with error:
 ```
-
 
 
 
@@ -301,7 +299,7 @@ Paul
 archive/issue_comments_068875.json:
 ```json
 {
-    "body": "The easiest way is\n\n```\nmake doc\n```\n\nfrom $SAGE_ROOT, but that will build more than you need.\n\nYou could also do (from $SAGE_ROOT):\n\n```\n./sage --docbuild reference html\n```\n\n\nNote that the documentation will actually build, there aren only WARNINGs.  So you have to look for warnings in the on-screen output.",
+    "body": "The easiest way is\n\n```\nmake doc\n```\nfrom $SAGE_ROOT, but that will build more than you need.\n\nYou could also do (from $SAGE_ROOT):\n\n```\n./sage --docbuild reference html\n```\n\nNote that the documentation will actually build, there aren only WARNINGs.  So you have to look for warnings in the on-screen output.",
     "created_at": "2012-03-28T09:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
@@ -315,7 +313,6 @@ The easiest way is
 ```
 make doc
 ```
-
 from $SAGE_ROOT, but that will build more than you need.
 
 You could also do (from $SAGE_ROOT):
@@ -323,7 +320,6 @@ You could also do (from $SAGE_ROOT):
 ```
 ./sage --docbuild reference html
 ```
-
 
 Note that the documentation will actually build, there aren only WARNINGs.  So you have to look for warnings in the on-screen output.
 

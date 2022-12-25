@@ -172,7 +172,7 @@ archive/issue_events_024115.json:
 archive/issue_comments_093703.json:
 ```json
 {
-    "body": "Hi,\n\nFor the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.  For example, by playing with ideals in Sage (code is complicated though...), I quickly got into this situation:\n\n```\nsage: n0\n[11, 3; 0, 1]\nsage: n1\n[11, 3; 0, 1]\nsage: hash(n0)\n-7493989779944505307\nsage: hash(n1)\n-6341068275337658331\n```\n",
+    "body": "Hi,\n\nFor the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.  For example, by playing with ideals in Sage (code is complicated though...), I quickly got into this situation:\n\n```\nsage: n0\n[11, 3; 0, 1]\nsage: n1\n[11, 3; 0, 1]\nsage: hash(n0)\n-7493989779944505307\nsage: hash(n1)\n-6341068275337658331\n```",
     "created_at": "2011-07-29T20:19:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
@@ -198,13 +198,12 @@ sage: hash(n1)
 
 
 
-
 ---
 
 archive/issue_comments_093704.json:
 ```json
 {
-    "body": "Replying to [comment:5 was]:\n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\nSee #11611, I have not tracked it down precisely.",
+    "body": "Replying to [comment:5 was]:\n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\n\nSee #11611, I have not tracked it down precisely.",
     "created_at": "2011-08-01T10:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
@@ -215,6 +214,7 @@ archive/issue_comments_093704.json:
 
 Replying to [comment:5 was]:
 > For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.
+
 See #11611, I have not tracked it down precisely.
 
 
@@ -224,7 +224,7 @@ See #11611, I have not tracked it down precisely.
 archive/issue_comments_093705.json:
 ```json
 {
-    "body": "Replying to [comment:5 was]:\n> Hi,\n> \n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\nDon't blaim PARI when the fault is the Sage->PARI interface. The issue is not `hash_GEN()`, it is a problem with how integers are converted from Sage to PARI.  I have a patch for this issue at #11611.",
+    "body": "Replying to [comment:5 was]:\n> Hi,\n> \n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\n\nDon't blaim PARI when the fault is the Sage->PARI interface. The issue is not `hash_GEN()`, it is a problem with how integers are converted from Sage to PARI.  I have a patch for this issue at #11611.",
     "created_at": "2011-08-03T13:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
@@ -237,4 +237,5 @@ Replying to [comment:5 was]:
 > Hi,
 > 
 > For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.
+
 Don't blaim PARI when the fault is the Sage->PARI interface. The issue is not `hash_GEN()`, it is a problem with how integers are converted from Sage to PARI.  I have a patch for this issue at #11611.

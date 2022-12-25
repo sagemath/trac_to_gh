@@ -139,7 +139,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091798.json:
 ```json
 {
-    "body": "Based on the same idea (`_mul_no_template_`):\n\n```\nsage: K = Integers(2**6)\nsage: R.<x> = K[]\nsage: f = R([1,2,5,-9]); g = R([1,2,3,4])\nsage: %timeit f._mul_zn_poly(g)\n100000 loops, best of 3: 5.32 us per loop\nsage: %timeit f._mul_(g)\n1000000 loops, best of 3: 1 us per loop\nsage: %timeit f._mul_no_template(g)\n1000000 loops, best of 3: 790 ns per loop\nsage: %timeit f*g\n1000000 loops, best of 3: 845 ns per loop\n```\n\nSo it seems the templating overhead is not so terrible.\nIt also varies a little bit depending on the finite field.\nAnd it does not seem the templating code can be really trimmed down and further optimized.\n\nSo I suggest to close this ticket as won't fix.",
+    "body": "Based on the same idea (`_mul_no_template_`):\n\n```\nsage: K = Integers(2**6)\nsage: R.<x> = K[]\nsage: f = R([1,2,5,-9]); g = R([1,2,3,4])\nsage: %timeit f._mul_zn_poly(g)\n100000 loops, best of 3: 5.32 us per loop\nsage: %timeit f._mul_(g)\n1000000 loops, best of 3: 1 us per loop\nsage: %timeit f._mul_no_template(g)\n1000000 loops, best of 3: 790 ns per loop\nsage: %timeit f*g\n1000000 loops, best of 3: 845 ns per loop\n```\nSo it seems the templating overhead is not so terrible.\nIt also varies a little bit depending on the finite field.\nAnd it does not seem the templating code can be really trimmed down and further optimized.\n\nSo I suggest to close this ticket as won't fix.",
     "created_at": "2014-02-26T23:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9542",
     "type": "issue_comment",
@@ -163,7 +163,6 @@ sage: %timeit f._mul_no_template(g)
 sage: %timeit f*g
 1000000 loops, best of 3: 845 ns per loop
 ```
-
 So it seems the templating overhead is not so terrible.
 It also varies a little bit depending on the finite field.
 And it does not seem the templating code can be really trimmed down and further optimized.

@@ -3,7 +3,7 @@
 archive/issues_000923.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\n> I think \"sage.:\" should be replaced by\n>\n>   sage: f.factor_padic()       # not tested\n>\n> i.e., \"putting not tested\" as  a comment has the same effect\n> as sage.:.  I wrote the\"sage.\" notation before there were\n> doctesting comment modifiers.\n>\n> Does this seem ok with everybody?   Comment modifiers are definitely\n> much clearer than \"sage.:\".\n\nSounds better to me.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/923\n\n",
+    "body": "Assignee: failure\n\n```\n> I think \"sage.:\" should be replaced by\n>\n>   sage: f.factor_padic()       # not tested\n>\n> i.e., \"putting not tested\" as  a comment has the same effect\n> as sage.:.  I wrote the\"sage.\" notation before there were\n> doctesting comment modifiers.\n>\n> Does this seem ok with everybody?   Comment modifiers are definitely\n> much clearer than \"sage.:\".\n\nSounds better to me.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/923\n\n",
     "created_at": "2007-10-18T19:43:58Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_000923.json:
 }
 ```
 Assignee: failure
-
 
 ```
 > I think "sage.:" should be replaced by
@@ -33,7 +32,6 @@ Assignee: failure
 
 Sounds better to me.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/923
 

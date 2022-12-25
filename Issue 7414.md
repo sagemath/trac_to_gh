@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062266.json:
 ```json
 {
-    "body": "for the record,\n\nbefore:\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n5 loops, best of 3: 2.08 s per loop\nsage: iv = p.to_inversion_vector()\nsage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')\n25 loops, best of 3: 9.57 ms per loop\n```\n\n\nafter:\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n25 loops, best of 3: 14.7 ms per loop\nsage: iv = p.to_inversion_vector()\nsage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')\n625 loops, best of 3: 1.47 ms per loop\n```\n",
+    "body": "for the record,\n\nbefore:\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n5 loops, best of 3: 2.08 s per loop\nsage: iv = p.to_inversion_vector()\nsage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')\n25 loops, best of 3: 9.57 ms per loop\n```\n\nafter:\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n25 loops, best of 3: 14.7 ms per loop\nsage: iv = p.to_inversion_vector()\nsage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')\n625 loops, best of 3: 1.47 ms per loop\n```",
     "created_at": "2009-11-08T20:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
@@ -73,7 +73,6 @@ sage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')
 25 loops, best of 3: 9.57 ms per loop
 ```
 
-
 after:
 
 ```
@@ -84,7 +83,6 @@ sage: iv = p.to_inversion_vector()
 sage: timeit('sage.combinat.permutation.from_inversion_vector(iv)')
 625 loops, best of 3: 1.47 ms per loop
 ```
-
 
 
 
@@ -129,7 +127,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062269.json:
 ```json
 {
-    "body": "Yes, this is very good for large permutaions ! but is is much slower on small permutations, where I will use it :-) Sorry for this...\n\nBefore:\n\n```\n625 loops, best of 3: 16.4 \u00b5s per loop\n625 loops, best of 3: 19.2 \u00b5s per loop\n625 loops, best of 3: 33.3 \u00b5s per loop\n625 loops, best of 3: 87.4 \u00b5s per loop\n625 loops, best of 3: 356 \u00b5s per loop\n125 loops, best of 3: 2.04 ms per loop\n25 loops, best of 3: 14.2 ms per loop\n5 loops, best of 3: 117 ms per loop\n```\n\nafter:\n\n```\n625 loops, best of 3: 18.1 \u00b5s per loop\n625 loops, best of 3: 19.9 \u00b5s per loop\n625 loops, best of 3: 51.2 \u00b5s per loop\n625 loops, best of 3: 166 \u00b5s per loop\n625 loops, best of 3: 794 \u00b5s per loop\n125 loops, best of 3: 4.86 ms per loop\n25 loops, best of 3: 33.2 ms per loop\n5 loops, best of 3: 271 ms per loop\n```\n\n\nI suggest you to reinstate the former implementation and to change from one to the other depending on the size of the permutations. I wrote the same in MuPAD, the cut-of point where around 18. \n\nMoreover, since the Lehmer code is the inversion vector of the inverse, you can speed up it for large n. Also, if you would take the chance to write the definition of the lehmer code (c_i = the number of j > i s.t. s(j) < s(i)) and to put a link beetween those two methods, then I would be extremely happy to put a positive review. \n\nSorry to give you more work. \n\nCheers,\n\nFlorent",
+    "body": "Yes, this is very good for large permutaions ! but is is much slower on small permutations, where I will use it :-) Sorry for this...\n\nBefore:\n\n```\n625 loops, best of 3: 16.4 \u00b5s per loop\n625 loops, best of 3: 19.2 \u00b5s per loop\n625 loops, best of 3: 33.3 \u00b5s per loop\n625 loops, best of 3: 87.4 \u00b5s per loop\n625 loops, best of 3: 356 \u00b5s per loop\n125 loops, best of 3: 2.04 ms per loop\n25 loops, best of 3: 14.2 ms per loop\n5 loops, best of 3: 117 ms per loop\n```\nafter:\n\n```\n625 loops, best of 3: 18.1 \u00b5s per loop\n625 loops, best of 3: 19.9 \u00b5s per loop\n625 loops, best of 3: 51.2 \u00b5s per loop\n625 loops, best of 3: 166 \u00b5s per loop\n625 loops, best of 3: 794 \u00b5s per loop\n125 loops, best of 3: 4.86 ms per loop\n25 loops, best of 3: 33.2 ms per loop\n5 loops, best of 3: 271 ms per loop\n```\n\nI suggest you to reinstate the former implementation and to change from one to the other depending on the size of the permutations. I wrote the same in MuPAD, the cut-of point where around 18. \n\nMoreover, since the Lehmer code is the inversion vector of the inverse, you can speed up it for large n. Also, if you would take the chance to write the definition of the lehmer code (c_i = the number of j > i s.t. s(j) < s(i)) and to put a link beetween those two methods, then I would be extremely happy to put a positive review. \n\nSorry to give you more work. \n\nCheers,\n\nFlorent",
     "created_at": "2009-11-09T08:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
@@ -152,7 +150,6 @@ Before:
 25 loops, best of 3: 14.2 ms per loop
 5 loops, best of 3: 117 ms per loop
 ```
-
 after:
 
 ```
@@ -165,7 +162,6 @@ after:
 25 loops, best of 3: 33.2 ms per loop
 5 loops, best of 3: 271 ms per loop
 ```
-
 
 I suggest you to reinstate the former implementation and to change from one to the other depending on the size of the permutations. I wrote the same in MuPAD, the cut-of point where around 18. 
 
@@ -224,7 +220,7 @@ Attachment [trac_7414-inversion_vector.patch](tarball://root/attachments/some-uu
 archive/issue_comments_062272.json:
 ```json
 {
-    "body": "I did my best to keep small permutations fast.\nHere are the new timings.\n\n\n```\nsage: for k in [0,1,2,3,4,5,6,7]:\n    L=Permutations(k).list()\n    print k\n    timeit('[len(p._to_inversion_vector_orig()) for p in L]')\n    timeit('[len(p._to_inversion_vector_small()) for p in L]')\n    timeit('[len(p.to_inversion_vector()) for p in L]')\n....:     \n0\n625 loops, best of 3: 2.35 \u00b5s per loop\n625 loops, best of 3: 3.86 \u00b5s per loop\n625 loops, best of 3: 1.43 \u00b5s per loop\n1\n625 loops, best of 3: 3.23 \u00b5s per loop\n625 loops, best of 3: 4.98 \u00b5s per loop\n625 loops, best of 3: 1.54 \u00b5s per loop\n2\n625 loops, best of 3: 7.69 \u00b5s per loop\n625 loops, best of 3: 12.2 \u00b5s per loop\n625 loops, best of 3: 3.13 \u00b5s per loop\n3\n625 loops, best of 3: 29.6 \u00b5s per loop\n625 loops, best of 3: 38 \u00b5s per loop\n625 loops, best of 3: 11.2 \u00b5s per loop\n4\n625 loops, best of 3: 152 \u00b5s per loop\n625 loops, best of 3: 171 \u00b5s per loop\n625 loops, best of 3: 197 \u00b5s per loop\n5\n625 loops, best of 3: 957 \u00b5s per loop\n625 loops, best of 3: 961 \u00b5s per loop\n625 loops, best of 3: 1.09 ms per loop\n6\n125 loops, best of 3: 7.14 ms per loop\n125 loops, best of 3: 6.39 ms per loop\n125 loops, best of 3: 7.12 ms per loop\n7\n5 loops, best of 3: 64.4 ms per loop\n5 loops, best of 3: 51.1 ms per loop\n5 loops, best of 3: 55.5 ms per loop\n```\n\n\nTimings for big permutations are also quite improved thanks to an improved base case.\n\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n125 loops, best of 3: 7.03 ms per loop\n```\n\n\nAs you suggested, I also improved the to_lehmer_code method. Here is the comparison, first for small sizes,\n\nbefore:\n\n```\nsage: for k in [0,1,2,3,4,5,6]:\n....:         L=Permutations(k).list()\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n625 loops, best of 3: 4.06 \u00b5s per loop\n625 loops, best of 3: 5.86 \u00b5s per loop\n625 loops, best of 3: 13.8 \u00b5s per loop\n625 loops, best of 3: 51.2 \u00b5s per loop\n625 loops, best of 3: 248 \u00b5s per loop\n625 loops, best of 3: 1.55 ms per loop\n25 loops, best of 3: 11.4 ms per loop\n```\n\n\nafter:\n\n```\nsage: for k in [0,1,2,3,4,5,6]:\n....:         L=Permutations(k).list()\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n625 loops, best of 3: 2.5 \u00b5s per loop\n625 loops, best of 3: 3.81 \u00b5s per loop\n625 loops, best of 3: 9.44 \u00b5s per loop\n625 loops, best of 3: 32 \u00b5s per loop\n625 loops, best of 3: 150 \u00b5s per loop\n625 loops, best of 3: 880 \u00b5s per loop\n125 loops, best of 3: 5.89 ms per loop\n```\n\n\nand for big sizes,\n\nbefore:\n\n```\nsage: for k in [100,300,600,1000]:\n....:         L=[Permutation(sample(xrange(1,k+1), k)) for _ in xrange(10)]\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n25 loops, best of 3: 20.2 ms per loop\n5 loops, best of 3: 174 ms per loop\n5 loops, best of 3: 704 ms per loop\n5 loops, best of 3: 1.94 s per loop\n```\n\n\nafter\n\n```\nsage: for k in [100,300,600,1000]:\n....:         L=[Permutation(sample(xrange(1,k+1), k)) for _ in xrange(10)]\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n125 loops, best of 3: 1.89 ms per loop\n25 loops, best of 3: 11.2 ms per loop\n25 loops, best of 3: 37.4 ms per loop\n5 loops, best of 3: 69.1 ms per loop\n```\n",
+    "body": "I did my best to keep small permutations fast.\nHere are the new timings.\n\n```\nsage: for k in [0,1,2,3,4,5,6,7]:\n    L=Permutations(k).list()\n    print k\n    timeit('[len(p._to_inversion_vector_orig()) for p in L]')\n    timeit('[len(p._to_inversion_vector_small()) for p in L]')\n    timeit('[len(p.to_inversion_vector()) for p in L]')\n....:     \n0\n625 loops, best of 3: 2.35 \u00b5s per loop\n625 loops, best of 3: 3.86 \u00b5s per loop\n625 loops, best of 3: 1.43 \u00b5s per loop\n1\n625 loops, best of 3: 3.23 \u00b5s per loop\n625 loops, best of 3: 4.98 \u00b5s per loop\n625 loops, best of 3: 1.54 \u00b5s per loop\n2\n625 loops, best of 3: 7.69 \u00b5s per loop\n625 loops, best of 3: 12.2 \u00b5s per loop\n625 loops, best of 3: 3.13 \u00b5s per loop\n3\n625 loops, best of 3: 29.6 \u00b5s per loop\n625 loops, best of 3: 38 \u00b5s per loop\n625 loops, best of 3: 11.2 \u00b5s per loop\n4\n625 loops, best of 3: 152 \u00b5s per loop\n625 loops, best of 3: 171 \u00b5s per loop\n625 loops, best of 3: 197 \u00b5s per loop\n5\n625 loops, best of 3: 957 \u00b5s per loop\n625 loops, best of 3: 961 \u00b5s per loop\n625 loops, best of 3: 1.09 ms per loop\n6\n125 loops, best of 3: 7.14 ms per loop\n125 loops, best of 3: 6.39 ms per loop\n125 loops, best of 3: 7.12 ms per loop\n7\n5 loops, best of 3: 64.4 ms per loop\n5 loops, best of 3: 51.1 ms per loop\n5 loops, best of 3: 55.5 ms per loop\n```\n\nTimings for big permutations are also quite improved thanks to an improved base case.\n\n```\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_inversion_vector()')\n125 loops, best of 3: 7.03 ms per loop\n```\n\nAs you suggested, I also improved the to_lehmer_code method. Here is the comparison, first for small sizes,\n\nbefore:\n\n```\nsage: for k in [0,1,2,3,4,5,6]:\n....:         L=Permutations(k).list()\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n625 loops, best of 3: 4.06 \u00b5s per loop\n625 loops, best of 3: 5.86 \u00b5s per loop\n625 loops, best of 3: 13.8 \u00b5s per loop\n625 loops, best of 3: 51.2 \u00b5s per loop\n625 loops, best of 3: 248 \u00b5s per loop\n625 loops, best of 3: 1.55 ms per loop\n25 loops, best of 3: 11.4 ms per loop\n```\n\nafter:\n\n```\nsage: for k in [0,1,2,3,4,5,6]:\n....:         L=Permutations(k).list()\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n625 loops, best of 3: 2.5 \u00b5s per loop\n625 loops, best of 3: 3.81 \u00b5s per loop\n625 loops, best of 3: 9.44 \u00b5s per loop\n625 loops, best of 3: 32 \u00b5s per loop\n625 loops, best of 3: 150 \u00b5s per loop\n625 loops, best of 3: 880 \u00b5s per loop\n125 loops, best of 3: 5.89 ms per loop\n```\n\nand for big sizes,\n\nbefore:\n\n```\nsage: for k in [100,300,600,1000]:\n....:         L=[Permutation(sample(xrange(1,k+1), k)) for _ in xrange(10)]\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n25 loops, best of 3: 20.2 ms per loop\n5 loops, best of 3: 174 ms per loop\n5 loops, best of 3: 704 ms per loop\n5 loops, best of 3: 1.94 s per loop\n```\n\nafter\n\n```\nsage: for k in [100,300,600,1000]:\n....:         L=[Permutation(sample(xrange(1,k+1), k)) for _ in xrange(10)]\n....:     timeit('[len(p.to_lehmer_code()) for p in L]')\n....: \n125 loops, best of 3: 1.89 ms per loop\n25 loops, best of 3: 11.2 ms per loop\n25 loops, best of 3: 37.4 ms per loop\n5 loops, best of 3: 69.1 ms per loop\n```",
     "created_at": "2009-11-09T23:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
@@ -235,7 +231,6 @@ archive/issue_comments_062272.json:
 
 I did my best to keep small permutations fast.
 Here are the new timings.
-
 
 ```
 sage: for k in [0,1,2,3,4,5,6,7]:
@@ -279,16 +274,13 @@ sage: for k in [0,1,2,3,4,5,6,7]:
 5 loops, best of 3: 55.5 ms per loop
 ```
 
-
 Timings for big permutations are also quite improved thanks to an improved base case.
-
 
 ```
 sage: p= Permutations(1000).random_element()
 sage: timeit('p.to_inversion_vector()')
 125 loops, best of 3: 7.03 ms per loop
 ```
-
 
 As you suggested, I also improved the to_lehmer_code method. Here is the comparison, first for small sizes,
 
@@ -308,7 +300,6 @@ sage: for k in [0,1,2,3,4,5,6]:
 25 loops, best of 3: 11.4 ms per loop
 ```
 
-
 after:
 
 ```
@@ -325,7 +316,6 @@ sage: for k in [0,1,2,3,4,5,6]:
 125 loops, best of 3: 5.89 ms per loop
 ```
 
-
 and for big sizes,
 
 before:
@@ -341,7 +331,6 @@ sage: for k in [100,300,600,1000]:
 5 loops, best of 3: 1.94 s per loop
 ```
 
-
 after
 
 ```
@@ -354,7 +343,6 @@ sage: for k in [100,300,600,1000]:
 25 loops, best of 3: 37.4 ms per loop
 5 loops, best of 3: 69.1 ms per loop
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004983.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI do not like this:\n\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
+    "body": "Assignee: @williamstein\n\nI do not like this:\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
     "created_at": "2009-01-16T00:30:50Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 I do not like this:
 
-
 ```
 sage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])
 sage: sage: b=a.jordan_form()
@@ -31,7 +30,6 @@ sage: b.subdivisions
 10
 ```
 
-
 Notice that you can make the subdivisions nonsense because it can be changed.
 Also, of course,
 
@@ -41,7 +39,6 @@ sage: b.subdivisions?
         integers.  It derives from the Element class, so
 [other useless stuff]
 ```
-
 
 
 I don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.
@@ -57,7 +54,6 @@ and
    ([0, 1, 3, 4], [0, 1, 3, 4])
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4983
 
 
@@ -69,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4983
 archive/issue_comments_037916.json:
 ```json
 {
-    "body": "The method is \n\n\n```\nsage: b.get_subdivisions()\n([1, 3], [1, 3])\n```\n\n\nbut this should probably be changed to have an attribute _subdivisions and a method subdivisions() for consistency.",
+    "body": "The method is \n\n```\nsage: b.get_subdivisions()\n([1, 3], [1, 3])\n```\n\nbut this should probably be changed to have an attribute _subdivisions and a method subdivisions() for consistency.",
     "created_at": "2009-01-16T00:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -80,12 +76,10 @@ archive/issue_comments_037916.json:
 
 The method is 
 
-
 ```
 sage: b.get_subdivisions()
 ([1, 3], [1, 3])
 ```
-
 
 but this should probably be changed to have an attribute _subdivisions and a method subdivisions() for consistency.
 
@@ -278,7 +272,7 @@ kcrisman: I just posted a fix for #10847.  (The issue was, the patches at #10847
 archive/issue_comments_037927.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> kcrisman: I just posted a fix for #10847.  (The issue was, the patches at #10847 used the attribute `matrix.subdivisions` instead of using the method `matrix.get_subdivisions()`.)\nThanks, I appreciate it.  I was aware of the incompatibility, just didn't have time to take care of it myself the next few days.",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> kcrisman: I just posted a fix for #10847.  (The issue was, the patches at #10847 used the attribute `matrix.subdivisions` instead of using the method `matrix.get_subdivisions()`.)\n\nThanks, I appreciate it.  I was aware of the incompatibility, just didn't have time to take care of it myself the next few days.",
     "created_at": "2011-03-23T11:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -289,6 +283,7 @@ archive/issue_comments_037927.json:
 
 Replying to [comment:8 jhpalmieri]:
 > kcrisman: I just posted a fix for #10847.  (The issue was, the patches at #10847 used the attribute `matrix.subdivisions` instead of using the method `matrix.get_subdivisions()`.)
+
 Thanks, I appreciate it.  I was aware of the incompatibility, just didn't have time to take care of it myself the next few days.
 
 
@@ -316,7 +311,7 @@ Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_037929.json:
 ```json
 {
-    "body": "I just uploaded a new patch; the only difference is I added the comment\n\n```\n    # 'get_subdivisions' is kept for backwards compatibility: see #4983. \n```\n\nright before `get_subdivisions = subdivisions`.",
+    "body": "I just uploaded a new patch; the only difference is I added the comment\n\n```\n    # 'get_subdivisions' is kept for backwards compatibility: see #4983. \n```\nright before `get_subdivisions = subdivisions`.",
     "created_at": "2011-03-23T17:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -330,7 +325,6 @@ I just uploaded a new patch; the only difference is I added the comment
 ```
     # 'get_subdivisions' is kept for backwards compatibility: see #4983. 
 ```
-
 right before `get_subdivisions = subdivisions`.
 
 
@@ -448,7 +442,7 @@ If it's literally a fairly trivial rebase and nothing changed in terms of testin
 archive/issue_comments_037936.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> Here's a patch rebased against #10974.  \n\nThanks, John.\n\n> Does this need review or not?\n\nNormally, I'd say \"not.\"  But I have two or three  other rebase tasks for later this afternoon, so I can give it a quick test then.\n\nRob",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> Here's a patch rebased against #10974.  \n\n\nThanks, John.\n\n> Does this need review or not?\n\n\nNormally, I'd say \"not.\"  But I have two or three  other rebase tasks for later this afternoon, so I can give it a quick test then.\n\nRob",
     "created_at": "2011-04-04T19:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -460,9 +454,11 @@ archive/issue_comments_037936.json:
 Replying to [comment:12 jhpalmieri]:
 > Here's a patch rebased against #10974.  
 
+
 Thanks, John.
 
 > Does this need review or not?
+
 
 Normally, I'd say "not."  But I have two or three  other rebase tasks for later this afternoon, so I can give it a quick test then.
 
@@ -511,7 +507,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_037939.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> I think it would be okay to [...] set back to positive review.\nDone.",
+    "body": "Replying to [comment:14 kcrisman]:\n> I think it would be okay to [...] set back to positive review.\n\nDone.",
     "created_at": "2011-04-04T20:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -522,6 +518,7 @@ archive/issue_comments_037939.json:
 
 Replying to [comment:14 kcrisman]:
 > I think it would be okay to [...] set back to positive review.
+
 Done.
 
 
@@ -531,7 +528,7 @@ Done.
 archive/issue_comments_037940.json:
 ```json
 {
-    "body": "Replying to [comment:16 jhpalmieri]:\n>  (I've already done this, but it's good to double-check it.)\n\nDouble-check shows everything is fine on 4.7.alpha3: applies, builds, passes long tests.\n\nThanks again, John, for sparing me the work on #10974.  As a bonus I upgraded the depends/apply block to Jeroen's new formatting.  ;-)",
+    "body": "Replying to [comment:16 jhpalmieri]:\n>  (I've already done this, but it's good to double-check it.)\n\n\nDouble-check shows everything is fine on 4.7.alpha3: applies, builds, passes long tests.\n\nThanks again, John, for sparing me the work on #10974.  As a bonus I upgraded the depends/apply block to Jeroen's new formatting.  ;-)",
     "created_at": "2011-04-04T23:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
@@ -542,6 +539,7 @@ archive/issue_comments_037940.json:
 
 Replying to [comment:16 jhpalmieri]:
 >  (I've already done this, but it's good to double-check it.)
+
 
 Double-check shows everything is fine on 4.7.alpha3: applies, builds, passes long tests.
 

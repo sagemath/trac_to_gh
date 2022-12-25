@@ -159,7 +159,7 @@ You should never use `except:` without an exception type, otherwise you would ca
 archive/issue_comments_074565.json:
 ```json
 {
-    "body": "There is a problem with the documentation:\n\n```\n/release/merger/sage-5.7.beta2/local/lib/python2.7/site-packages/sage/combinat/root_system/coxeter_group.py:docstring of sage.combinat.root_system.coxeter_group.CoxeterGroupAsPermutationGroup.Element.has_descent:3: WARNING: more than one target found for cross-reference u'descents': sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ElementMethods.descents, sage.categories.coxeter_groups.CoxeterGroups.ElementMethods.descents, sage.combinat.tableau.Tableau.descents, sage.combinat.sf.ns_macdonald.AugmentedLatticeDiagramFilling.descents, sage.combinat.permutation.Permutation_class.descents, sage.combinat.composition.Composition_class.descents\n```\n",
+    "body": "There is a problem with the documentation:\n\n```\n/release/merger/sage-5.7.beta2/local/lib/python2.7/site-packages/sage/combinat/root_system/coxeter_group.py:docstring of sage.combinat.root_system.coxeter_group.CoxeterGroupAsPermutationGroup.Element.has_descent:3: WARNING: more than one target found for cross-reference u'descents': sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ElementMethods.descents, sage.categories.coxeter_groups.CoxeterGroups.ElementMethods.descents, sage.combinat.tableau.Tableau.descents, sage.combinat.sf.ns_macdonald.AugmentedLatticeDiagramFilling.descents, sage.combinat.permutation.Permutation_class.descents, sage.combinat.composition.Composition_class.descents\n```",
     "created_at": "2013-01-26T14:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
@@ -173,7 +173,6 @@ There is a problem with the documentation:
 ```
 /release/merger/sage-5.7.beta2/local/lib/python2.7/site-packages/sage/combinat/root_system/coxeter_group.py:docstring of sage.combinat.root_system.coxeter_group.CoxeterGroupAsPermutationGroup.Element.has_descent:3: WARNING: more than one target found for cross-reference u'descents': sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ElementMethods.descents, sage.categories.coxeter_groups.CoxeterGroups.ElementMethods.descents, sage.combinat.tableau.Tableau.descents, sage.combinat.sf.ns_macdonald.AugmentedLatticeDiagramFilling.descents, sage.combinat.permutation.Permutation_class.descents, sage.combinat.composition.Composition_class.descents
 ```
-
 
 
 

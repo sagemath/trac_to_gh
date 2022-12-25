@@ -3,7 +3,7 @@
 archive/issues_004370.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIt would be very useful to be able to clone the documentation repository as well as the source repo.  As Minh Van Nguyen said:\n\n```\nIs there a corresponding command or process that I can use to clone the\ndoc-main repo as well?\n\nWhenever I review the official documentation that's shipped with each\nSage release, I would go into\n\n<sage-home>/devel/doc-main\n\nand then review the documentation from there. If I'm reviewing someone's\npatch to any file in the latter directory, I would not clone doc-main\n(since I don't yet know how to do that). Instead, I would go ahead with\napplying the patch and then do more review of the patch. At this point,\nat least one of two things can happen:\n\n[1] If the patch gets a positive review, then all is fine and good.\n\n[2] However, in case there's something wrong with the patched file and I\nwant to un-apply the patch, I would do this:\n\nsage: hg_doc.revert()\n\nThis command reverts back to the stage at which the file in question is\nunpatched.\n\nAnother possibility is for me to copy a source distro to more than one\ndirectory, and then build (and test) the distro from those different\ndirectories. That way, I would have a copy of Sage that I can use and\nwith which I won't apply any documentation patches. And I would also\nhave another copy of Sage for applying documentation patches. Building\none copy of a source distro usually takes a _very_ long time on each\nmachine that I have access to --- and running all standard tests further\nadd to my waiting time. As you can imagine, repeating the build and test\nprocesses on the same machine for another copy of the same source distro\nwould further add to the waiting time. (Man, I can't wait to work on\nSage ;-)\n```\n\nand as mabshoff replied:\n\n```\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n```\n\n\nI think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4370\n\n",
+    "body": "Assignee: tba\n\nIt would be very useful to be able to clone the documentation repository as well as the source repo.  As Minh Van Nguyen said:\n\n```\nIs there a corresponding command or process that I can use to clone the\ndoc-main repo as well?\n\nWhenever I review the official documentation that's shipped with each\nSage release, I would go into\n\n<sage-home>/devel/doc-main\n\nand then review the documentation from there. If I'm reviewing someone's\npatch to any file in the latter directory, I would not clone doc-main\n(since I don't yet know how to do that). Instead, I would go ahead with\napplying the patch and then do more review of the patch. At this point,\nat least one of two things can happen:\n\n[1] If the patch gets a positive review, then all is fine and good.\n\n[2] However, in case there's something wrong with the patched file and I\nwant to un-apply the patch, I would do this:\n\nsage: hg_doc.revert()\n\nThis command reverts back to the stage at which the file in question is\nunpatched.\n\nAnother possibility is for me to copy a source distro to more than one\ndirectory, and then build (and test) the distro from those different\ndirectories. That way, I would have a copy of Sage that I can use and\nwith which I won't apply any documentation patches. And I would also\nhave another copy of Sage for applying documentation patches. Building\none copy of a source distro usually takes a _very_ long time on each\nmachine that I have access to --- and running all standard tests further\nadd to my waiting time. As you can imagine, repeating the build and test\nprocesses on the same machine for another copy of the same source distro\nwould further add to the waiting time. (Man, I can't wait to work on\nSage ;-)\n```\nand as mabshoff replied:\n\n```\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n```\n\nI think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4370\n\n",
     "created_at": "2008-10-26T13:25:22Z",
     "labels": [
         "component: documentation"
@@ -56,7 +56,6 @@ processes on the same machine for another copy of the same source distro
 would further add to the waiting time. (Man, I can't wait to work on
 Sage ;-)
 ```
-
 and as mabshoff replied:
 
 ```
@@ -66,7 +65,6 @@ even try yourself - just look at local/bin/sage-clone and ignore
 nearly everything toward the end since that deals with build file
 issues.
 ```
-
 
 I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.
 
@@ -82,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4370
 archive/issue_comments_032046.json:
 ```json
 {
-    "body": "Replying to [ticket:4370 cremona]:\n> It would be very useful to be able to clone the documentation repository as well as the source repo.\n\n\nIndeed.\n\n\n+1 for your comment\n\n\n\n\n> and as mabshoff replied:\n\n```\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n```\n\n> \n> I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\nI'll try to figure out how to implement the suggested clone command. Since I often work with the doc-main directory tree, this is more for my personal benefit. Of course, suggestions are always welcome.",
+    "body": "Replying to [ticket:4370 cremona]:\n> It would be very useful to be able to clone the documentation repository as well as the source repo.\n\n\n\nIndeed.\n\n\n+1 for your comment\n\n\n\n\n> and as mabshoff replied:\n\n{{{\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n}}}\n> \n> I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\n\nI'll try to figure out how to implement the suggested clone command. Since I often work with the doc-main directory tree, this is more for my personal benefit. Of course, suggestions are always welcome.",
     "created_at": "2008-10-26T23:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -95,6 +93,7 @@ Replying to [ticket:4370 cremona]:
 > It would be very useful to be able to clone the documentation repository as well as the source repo.
 
 
+
 Indeed.
 
 
@@ -105,16 +104,16 @@ Indeed.
 
 > and as mabshoff replied:
 
-```
+{{{
 it is fairly simple to add a clone command for the doc repo. If you
 want it just open a ticket and someone will take care of it. You can
 even try yourself - just look at local/bin/sage-clone and ignore
 nearly everything toward the end since that deals with build file
 issues.
-```
-
+}}}
 > 
 > I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.
+
 
 
 I'll try to figure out how to implement the suggested clone command. Since I often work with the doc-main directory tree, this is more for my personal benefit. Of course, suggestions are always welcome.
@@ -444,7 +443,7 @@ obsoleted, don't use (moved to #4442)
 archive/issue_comments_032060.json:
 ```json
 {
-    "body": "Attachment [4370-sage_library.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_library.patch) by GeorgSWeber created at 2008-11-04 22:00:17\n\nHi Michael,\nthanks for the review!\n\n> 4370-sage_library.patch should go to its own ticker since it is independent. \nDone, it is now #4441. I also moved the congroup.py patch away to #4442.\n\n>I would also not per default build the Sage documentation on clone\nOK. I will address that in an update.\n\n> - we do not do this for the sage library repo itself. \nYou're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\n> I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. \nAh, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning \"$SAGE_ROOT/local/bin\" would be a bad idea. But the content of the patch(es) did not and will not allow for that.\n\n>Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. \nWell. It might be helpful for the ReST documentation deployment.\n\n>In the end I don't think this should be merged into 3.2 :(. \nFine, at least for me.",
+    "body": "Attachment [4370-sage_library.patch](tarball://root/attachments/some-uuid/ticket4370/4370-sage_library.patch) by GeorgSWeber created at 2008-11-04 22:00:17\n\nHi Michael,\nthanks for the review!\n\n> 4370-sage_library.patch should go to its own ticker since it is independent. \n\nDone, it is now #4441. I also moved the congroup.py patch away to #4442.\n\n>I would also not per default build the Sage documentation on clone\nOK. I will address that in an update.\n\n> - we do not do this for the sage library repo itself. \n \nYou're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\n> I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. \n\nAh, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning \"$SAGE_ROOT/local/bin\" would be a bad idea. But the content of the patch(es) did not and will not allow for that.\n\n>Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. \nWell. It might be helpful for the ReST documentation deployment.\n\n>In the end I don't think this should be merged into 3.2 :(. \n\nFine, at least for me.",
     "created_at": "2008-11-04T22:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -459,21 +458,25 @@ Hi Michael,
 thanks for the review!
 
 > 4370-sage_library.patch should go to its own ticker since it is independent. 
+
 Done, it is now #4441. I also moved the congroup.py patch away to #4442.
 
 >I would also not per default build the Sage documentation on clone
 OK. I will address that in an update.
 
 > - we do not do this for the sage library repo itself. 
+ 
 You're wrong here. See lines 68-91 of the "sage-clone" script, where explicitly "sage -b branch" is called. But let's clone the doc dir without (re-)build, OK.
 
 > I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. 
+
 Ah, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning "$SAGE_ROOT/local/bin" would be a bad idea. But the content of the patch(es) did not and will not allow for that.
 
 >Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. 
 Well. It might be helpful for the ReST documentation deployment.
 
 >In the end I don't think this should be merged into 3.2 :(. 
+
 Fine, at least for me.
 
 
@@ -483,7 +486,7 @@ Fine, at least for me.
 archive/issue_comments_032061.json:
 ```json
 {
-    "body": "Replying to [comment:7 GeorgSWeber]:\n> > - we do not do this for the sage library repo itself. \n> You're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\nYou are right, but \"sage -b\" on an uptodate repo only rebuilds libcsage.so, so the build is more or less instant. Building the documentation takes *forever* with the current toolchain, but ReST will fix that.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 GeorgSWeber]:\n> > - we do not do this for the sage library repo itself. \n \n> You're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\nYou are right, but \"sage -b\" on an uptodate repo only rebuilds libcsage.so, so the build is more or less instant. Building the documentation takes *forever* with the current toolchain, but ReST will fix that.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-04T22:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4370",
     "type": "issue_comment",
@@ -494,6 +497,7 @@ archive/issue_comments_032061.json:
 
 Replying to [comment:7 GeorgSWeber]:
 > > - we do not do this for the sage library repo itself. 
+ 
 > You're wrong here. See lines 68-91 of the "sage-clone" script, where explicitly "sage -b branch" is called. But let's clone the doc dir without (re-)build, OK.
 
 You are right, but "sage -b" on an uptodate repo only rebuilds libcsage.so, so the build is more or less instant. Building the documentation takes *forever* with the current toolchain, but ReST will fix that.

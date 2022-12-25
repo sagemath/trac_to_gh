@@ -3,7 +3,7 @@
 archive/issues_006325.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/linear_algebra.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/linear_algebra.rst\", line 461:\n    sage: octave.solve_linear_system(A,b)    # requires optional octave\nExpected:\n    [-0.33333299999999999, 0.66666700000000001, -3.5236600000000002e-18]\nGot:\n    [-0.33333299999999999, 0.66666700000000001, 0]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6325\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/linear_algebra.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/linear_algebra.rst\", line 461:\n    sage: octave.solve_linear_system(A,b)    # requires optional octave\nExpected:\n    [-0.33333299999999999, 0.66666700000000001, -3.5236600000000002e-18]\nGot:\n    [-0.33333299999999999, 0.66666700000000001, 0]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6325\n\n",
     "created_at": "2009-06-16T14:56:17Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006325.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/doc/en/constructions/linear_algebra.rst
@@ -33,7 +32,6 @@ Got:
    1 of   7 in __main__.example_21
 ***Test Failed*** 1 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6325
 
@@ -64,7 +62,7 @@ I'm not sure how to fix this. Should I add "# random numerical noise" in additio
 archive/issue_comments_050383.json:
 ```json
 {
-    "body": "Reply by email:\n\n> I'm ok for now with just changing the output to 0 since I'm only\n> running optional doctests on sage.math, with the output is 0.\n> William\n\nThe attached patch does this.\n\nPatch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.",
+    "body": "Reply by email:\n\n> I'm ok for now with just changing the output to 0 since I'm only\n> running optional doctests on sage.math, with the output is 0.\n> William\n\n\nThe attached patch does this.\n\nPatch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.",
     "created_at": "2009-06-17T12:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
@@ -78,6 +76,7 @@ Reply by email:
 > I'm ok for now with just changing the output to 0 since I'm only
 > running optional doctests on sage.math, with the output is 0.
 > William
+
 
 The attached patch does this.
 

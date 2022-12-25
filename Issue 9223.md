@@ -3,7 +3,7 @@
 archive/issues_009223.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: cremona elliptic curve database\n\nAs of sage-4.4.3, we have:\n\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 42% (17 of 40)\n\nMissing documentation:\n\t * _init(self, ftpdata):\n\t * __repr__(self):\n\t * CremonaDatabase():\n\n\nMissing doctests:\n\t * rebuild(data_tgz, largest_conductor, decompress=True):\n\t * __init__(self, read_only=True):\n\t * __iter__(self):\n\t * __getitem__(self, N):\n\t * __repr__(self):\n\t * allbsd(self, N):\n\t * allcurves(self, N):\n\t * allgens(self, N):\n\t * degphi(self, N):\n\t * elliptic_curve_from_ainvs(self, N, ainvs):\n\t * elliptic_curve(self, label):\n\t * iter(self, conductors):\n\t * isogeny_classes(self, conductor):\n\t * isogeny_class(self, label):\n\t * list(self, conductors):\n\t * _init_allcurves(self, ftpdata, largest_conductor=0):\n\t * _init_degphi(self, ftpdata, largest_conductor=0):\n\t * _init_allbsd(self, ftpdata, largest_conductor=0):\n\t * _init_allgens(self, ftpdata, largest_conductor=0):\n\t * __init__(self, read_only=True):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9223\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: cremona elliptic curve database\n\nAs of sage-4.4.3, we have:\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 42% (17 of 40)\n\nMissing documentation:\n\t * _init(self, ftpdata):\n\t * __repr__(self):\n\t * CremonaDatabase():\n\n\nMissing doctests:\n\t * rebuild(data_tgz, largest_conductor, decompress=True):\n\t * __init__(self, read_only=True):\n\t * __iter__(self):\n\t * __getitem__(self, N):\n\t * __repr__(self):\n\t * allbsd(self, N):\n\t * allcurves(self, N):\n\t * allgens(self, N):\n\t * degphi(self, N):\n\t * elliptic_curve_from_ainvs(self, N, ainvs):\n\t * elliptic_curve(self, label):\n\t * iter(self, conductors):\n\t * isogeny_classes(self, conductor):\n\t * isogeny_class(self, label):\n\t * list(self, conductors):\n\t * _init_allcurves(self, ftpdata, largest_conductor=0):\n\t * _init_degphi(self, ftpdata, largest_conductor=0):\n\t * _init_allbsd(self, ftpdata, largest_conductor=0):\n\t * _init_allgens(self, ftpdata, largest_conductor=0):\n\t * __init__(self, read_only=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9223\n\n",
     "created_at": "2010-06-12T09:26:59Z",
     "labels": [
         "component: doctest coverage",
@@ -21,7 +21,6 @@ Assignee: mvngu
 Keywords: cremona elliptic curve database
 
 As of sage-4.4.3, we have:
-
 
 ```
 ERROR: Please add a `TestSuite(s).run()` doctest.
@@ -56,7 +55,6 @@ Missing doctests:
 	 * __init__(self, read_only=True):
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9223
 
 
@@ -68,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9223
 archive/issue_comments_086384.json:
 ```json
 {
-    "body": "After the patch:\n\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 85% (34 of 40)\n\nMissing documentation:\n\t * _init(self, ftpdata):\n\n\nMissing doctests:\n\t * rebuild(data_tgz, largest_conductor, decompress=True):\n\t * _init_allcurves(self, ftpdata, largest_conductor=0):\n\t * _init_degphi(self, ftpdata, largest_conductor=0):\n\t * _init_allbsd(self, ftpdata, largest_conductor=0):\n\t * _init_allgens(self, ftpdata, largest_conductor=0):\n```\n\n\nI'm not sure how to test the remaining ones...",
+    "body": "After the patch:\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 85% (34 of 40)\n\nMissing documentation:\n\t * _init(self, ftpdata):\n\n\nMissing doctests:\n\t * rebuild(data_tgz, largest_conductor, decompress=True):\n\t * _init_allcurves(self, ftpdata, largest_conductor=0):\n\t * _init_degphi(self, ftpdata, largest_conductor=0):\n\t * _init_allbsd(self, ftpdata, largest_conductor=0):\n\t * _init_allgens(self, ftpdata, largest_conductor=0):\n```\n\nI'm not sure how to test the remaining ones...",
     "created_at": "2010-06-12T11:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ archive/issue_comments_086384.json:
 ```
 
 After the patch:
-
 
 ```
 ERROR: Please add a `TestSuite(s).run()` doctest.
@@ -95,7 +92,6 @@ Missing doctests:
 	 * _init_allbsd(self, ftpdata, largest_conductor=0):
 	 * _init_allgens(self, ftpdata, largest_conductor=0):
 ```
-
 
 I'm not sure how to test the remaining ones...
 

@@ -149,7 +149,7 @@ This patch applied cleanly on top of #9245, so it seems that there is no need fo
 archive/issue_comments_087811.json:
 ```json
 {
-    "body": "If there is only one function for which it would be nice to have a corresponding cone method, I'd wait before redoing toric varieties to make copies of fans.\n\nI don't like `HH` notation, which I associate with Hochschild (co)homology... While it is used in Macaulay2, it does not quite seem to be in the spirit of Sage. Macaulay2 is much more flexible in terms of operators and it may be a good choice there, but here I would prefer `cohomology_ring` etc. I don't see any problems with \"What cohomology?\" question since it can be clearly indicated in the documentation of all functions. (Do we plan to support multiple cohomology theories?)\n\nI think `HH_class_of(cone)` ===> `cohomology_class(cone)` would be better.\n\nAlso `HH_exp(p)` ===> `cohomology_exp(p)` or better yet just `exp(p)`. Even better would be `p.exp()` which will not require toric variety at all, but that requires completely different handling so should be left till after divisor patch is merged.\n\nI propose to do the following with `c` and others:\n\n```\ndef Chern_class(self, deg=None): \n    r\"\"\"\n    Return Chern class of the tangent bundle of the toric variety. \n\n    A synonym for this function is ``c``.\n    ...\n    \"\"\"\n    ... # actual code\n\nc = Chern_class\n```\n\nThis way we keep convenient access to all this functions, but at the same time provide descriptive names, so that glancing on TAB-completion clearly shows what is available. The same thing is done with `.numerical_approx()` and `.n()` methods in Sage.",
+    "body": "If there is only one function for which it would be nice to have a corresponding cone method, I'd wait before redoing toric varieties to make copies of fans.\n\nI don't like `HH` notation, which I associate with Hochschild (co)homology... While it is used in Macaulay2, it does not quite seem to be in the spirit of Sage. Macaulay2 is much more flexible in terms of operators and it may be a good choice there, but here I would prefer `cohomology_ring` etc. I don't see any problems with \"What cohomology?\" question since it can be clearly indicated in the documentation of all functions. (Do we plan to support multiple cohomology theories?)\n\nI think `HH_class_of(cone)` ===> `cohomology_class(cone)` would be better.\n\nAlso `HH_exp(p)` ===> `cohomology_exp(p)` or better yet just `exp(p)`. Even better would be `p.exp()` which will not require toric variety at all, but that requires completely different handling so should be left till after divisor patch is merged.\n\nI propose to do the following with `c` and others:\n\n```\ndef Chern_class(self, deg=None): \n    r\"\"\"\n    Return Chern class of the tangent bundle of the toric variety. \n\n    A synonym for this function is ``c``.\n    ...\n    \"\"\"\n    ... # actual code\n\nc = Chern_class\n```\nThis way we keep convenient access to all this functions, but at the same time provide descriptive names, so that glancing on TAB-completion clearly shows what is available. The same thing is done with `.numerical_approx()` and `.n()` methods in Sage.",
     "created_at": "2010-07-03T21:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ def Chern_class(self, deg=None):
 
 c = Chern_class
 ```
-
 This way we keep convenient access to all this functions, but at the same time provide descriptive names, so that glancing on TAB-completion clearly shows what is available. The same thing is done with `.numerical_approx()` and `.n()` methods in Sage.
 
 
@@ -210,7 +209,7 @@ As for the cohomology ring, I did the name changes. The new patch also defines c
 archive/issue_comments_087813.json:
 ```json
 {
-    "body": "Replying to [comment:6 vbraun]:\n> As for the cones, once I get to the Chow group it would also be nice if `cone.A()` would return the Chow cycle associated to the cone. And a cone should be able to return the orbit closure as a toric variety. Really, in toric geometry there is lots of stuff associated to a cone and it would be nice if we could write `cone.stuff()`.\n\nOK, will work on it this week.\n\n> As for the cohomology ring, I did the name changes. The new patch also defines classes `CohomologyRing(QuotientRing)` and `CohomologyClass(QuotientRingElement)`, so we have something to attach `exp()` and `truncate_to_degree()` to.\n\nGreat and neat! However, http://wiki.sagemath.org/coercion advises against overriding `__call__` method in classes derived from `Parent`, and in this case I think it should be doable to do it the recommended way.",
+    "body": "Replying to [comment:6 vbraun]:\n> As for the cones, once I get to the Chow group it would also be nice if `cone.A()` would return the Chow cycle associated to the cone. And a cone should be able to return the orbit closure as a toric variety. Really, in toric geometry there is lots of stuff associated to a cone and it would be nice if we could write `cone.stuff()`.\n\n\nOK, will work on it this week.\n\n> As for the cohomology ring, I did the name changes. The new patch also defines classes `CohomologyRing(QuotientRing)` and `CohomologyClass(QuotientRingElement)`, so we have something to attach `exp()` and `truncate_to_degree()` to.\n\n\nGreat and neat! However, http://wiki.sagemath.org/coercion advises against overriding `__call__` method in classes derived from `Parent`, and in this case I think it should be doable to do it the recommended way.",
     "created_at": "2010-07-05T13:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -222,9 +221,11 @@ archive/issue_comments_087813.json:
 Replying to [comment:6 vbraun]:
 > As for the cones, once I get to the Chow group it would also be nice if `cone.A()` would return the Chow cycle associated to the cone. And a cone should be able to return the orbit closure as a toric variety. Really, in toric geometry there is lots of stuff associated to a cone and it would be nice if we could write `cone.stuff()`.
 
+
 OK, will work on it this week.
 
 > As for the cohomology ring, I did the name changes. The new patch also defines classes `CohomologyRing(QuotientRing)` and `CohomologyClass(QuotientRingElement)`, so we have something to attach `exp()` and `truncate_to_degree()` to.
+
 
 Great and neat! However, http://wiki.sagemath.org/coercion advises against overriding `__call__` method in classes derived from `Parent`, and in this case I think it should be doable to do it the recommended way.
 
@@ -253,7 +254,7 @@ Note that `QuotientRing`  does override `__call__` and, moreover, explicitly ref
 archive/issue_comments_087815.json:
 ```json
 {
-    "body": "I fixed `QuotientRing` to use the coercion as described in the wiki, but now everything else breaks. Something is going on with the coercion system that I don't understand. With the `first_attempt.patch`, the quotient rings work fine. But, for example, this now fails:\n\n```\nsage: FF = FiniteField(7)\nsage: P.<x> = PolynomialRing(FF)\nsage: x+1\nTypeError                                 Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.alpha1/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:10876)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)()\n\nTypeError: unsupported operand parent(s) for '+': 'Univariate Polynomial Ring in x over Finite Field of size 7' and 'Integer Ring'\n```\n\nBut I neither touched univariate polynomial rings nor finite field code! Does anyone understand what is going on?",
+    "body": "I fixed `QuotientRing` to use the coercion as described in the wiki, but now everything else breaks. Something is going on with the coercion system that I don't understand. With the `first_attempt.patch`, the quotient rings work fine. But, for example, this now fails:\n\n```\nsage: FF = FiniteField(7)\nsage: P.<x> = PolynomialRing(FF)\nsage: x+1\nTypeError                                 Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.alpha1/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:10876)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)()\n\nTypeError: unsupported operand parent(s) for '+': 'Univariate Polynomial Ring in x over Finite Field of size 7' and 'Integer Ring'\n```\nBut I neither touched univariate polynomial rings nor finite field code! Does anyone understand what is going on?",
     "created_at": "2010-07-06T06:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -278,7 +279,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand parent(s) for '+': 'Univariate Polynomial Ring in x over Finite Field of size 7' and 'Integer Ring'
 ```
-
 But I neither touched univariate polynomial rings nor finite field code! Does anyone understand what is going on?
 
 
@@ -463,7 +463,7 @@ P.S. Looks like patch at #9470 is in conflict with this one, so we should decide
 archive/issue_comments_087824.json:
 ```json
 {
-    "body": "3. I was trying to not have yet another ring attached to fans, since there are already too many rings floating around ;-)  On the other hand, the SR ideal makes sense just for fans so I wanted to move the SR ideal function there, maybe someone is interested in it without the toric variety. I'll move the caching of rings up to the toric variety.\n\n4. I agree with the divisor names, but until we have the divisors finished I think its easiest to just go with default names = names of homogeneous coordinates. \n\n12. Integration is with compact supports (it is really intersection in homology)\n\n```\nsage: C2 = toric_varieties.A2()\nsage: C2.volume_form()\n0\n```\n\nand the index theorem doesn't work. In particular, Euler number of `C^2` = Euler number of point = 1. And yes, evaluation of the index theorem is faster than computing a basis for the (co)homology groups.",
+    "body": "3. I was trying to not have yet another ring attached to fans, since there are already too many rings floating around ;-)  On the other hand, the SR ideal makes sense just for fans so I wanted to move the SR ideal function there, maybe someone is interested in it without the toric variety. I'll move the caching of rings up to the toric variety.\n\n4. I agree with the divisor names, but until we have the divisors finished I think its easiest to just go with default names = names of homogeneous coordinates. \n\n12. Integration is with compact supports (it is really intersection in homology)\n\n```\nsage: C2 = toric_varieties.A2()\nsage: C2.volume_form()\n0\n```\nand the index theorem doesn't work. In particular, Euler number of `C^2` = Euler number of point = 1. And yes, evaluation of the index theorem is faster than computing a basis for the (co)homology groups.",
     "created_at": "2010-07-18T19:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
@@ -483,7 +483,6 @@ sage: C2 = toric_varieties.A2()
 sage: C2.volume_form()
 0
 ```
-
 and the index theorem doesn't work. In particular, Euler number of `C^2` = Euler number of point = 1. And yes, evaluation of the index theorem is faster than computing a basis for the (co)homology groups.
 
 

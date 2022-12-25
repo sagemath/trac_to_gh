@@ -3,7 +3,7 @@
 archive/issues_009644.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @kcrisman @nexttime @dandrake @haraldschilly mvngu\n\nReported by Dan on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/3694601bc3de1a80):\n\n```\nThis is an observation about the pre-compiled binaries for Mac OS.\n\nIf the (unpacked) sage disk image directory is saved in a folder that has a\nspace character in its name, for example:\n\n$HOME/Applications/my folder\n\nThen sage will not load properly when the \"sage\" executable is clicked. The\nterminal session begins, but the application doesn't load successfully.\n\nChanging the parent directory name to \"my_folder\" resolved this issue.\n\nWhile using space characters in directory names probably isn't all that common\nin UNIX or Linux installations, it is more common in Mac OS installations.\nPerhaps the installation instructions could be updated to mention this issue? \n```\n\n\nThis actually appears to be a more general problem:\n\n```sh\n$ hostname\nsage.math.washington.edu\n$ pwd\n/mnt/usb1/scratch/mpatel/tmp/my sage\n$ ./sage\nError setting environment variables by running /mnt/usb1/scratch/mpatel/tmp/my sage/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\ncat: /bin/sage-banner: No such file or directory\nmkdir: cannot create directory `': No such file or directory\ncp: cannot create directory `/ipython': Permission denied\nTraceback (most recent call last):\n  File \"./sage-cleaner\", line 25, in <module>\n    DOT_SAGE = os.environ['DOT_SAGE']\n  File \"/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/UserDict.py\", line 22, in __getitem__\n    raise KeyError(key)\nKeyError: 'DOT_SAGE'\n**********************************************************************\nWelcome to IPython. I will try to create a personal configuration directory\nwhere you can customize many aspects of IPython's functionality in:\n\n/ipython\nInitializing from configuration /mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/UserConfig\nWARNING: \n\nThere was a problem with the installation:\n[Errno 13] Permission denied: '/ipython'\nTry to correct it or contact the developers if you think it's a bug.\nIPython will proceed with builtin defaults.\nPlease press <RETURN> to start IPython.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9644\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kcrisman @nexttime @dandrake @haraldschilly mvngu\n\nReported by Dan on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/3694601bc3de1a80):\n\n```\nThis is an observation about the pre-compiled binaries for Mac OS.\n\nIf the (unpacked) sage disk image directory is saved in a folder that has a\nspace character in its name, for example:\n\n$HOME/Applications/my folder\n\nThen sage will not load properly when the \"sage\" executable is clicked. The\nterminal session begins, but the application doesn't load successfully.\n\nChanging the parent directory name to \"my_folder\" resolved this issue.\n\nWhile using space characters in directory names probably isn't all that common\nin UNIX or Linux installations, it is more common in Mac OS installations.\nPerhaps the installation instructions could be updated to mention this issue? \n```\n\nThis actually appears to be a more general problem:\n\n```sh\n$ hostname\nsage.math.washington.edu\n$ pwd\n/mnt/usb1/scratch/mpatel/tmp/my sage\n$ ./sage\nError setting environment variables by running /mnt/usb1/scratch/mpatel/tmp/my sage/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\ncat: /bin/sage-banner: No such file or directory\nmkdir: cannot create directory `': No such file or directory\ncp: cannot create directory `/ipython': Permission denied\nTraceback (most recent call last):\n  File \"./sage-cleaner\", line 25, in <module>\n    DOT_SAGE = os.environ['DOT_SAGE']\n  File \"/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/UserDict.py\", line 22, in __getitem__\n    raise KeyError(key)\nKeyError: 'DOT_SAGE'\n**********************************************************************\nWelcome to IPython. I will try to create a personal configuration directory\nwhere you can customize many aspects of IPython's functionality in:\n\n/ipython\nInitializing from configuration /mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/UserConfig\nWARNING: \n\nThere was a problem with the installation:\n[Errno 13] Permission denied: '/ipython'\nTry to correct it or contact the developers if you think it's a bug.\nIPython will proceed with builtin defaults.\nPlease press <RETURN> to start IPython.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9644\n\n",
     "created_at": "2010-07-30T01:15:46Z",
     "labels": [
         "component: misc",
@@ -40,7 +40,6 @@ in UNIX or Linux installations, it is more common in Mac OS installations.
 Perhaps the installation instructions could be updated to mention this issue? 
 ```
 
-
 This actually appears to be a more general problem:
 
 ```sh
@@ -74,7 +73,6 @@ IPython will proceed with builtin defaults.
 Please press <RETURN> to start IPython.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9644
 
 
@@ -86,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9644
 archive/issue_comments_093321.json:
 ```json
 {
-    "body": "After applying \n\n```diff\ndiff --git a/sage-sage b/sage-sage\n--- a/sage-sage\n+++ b/sage-sage\n@@ -127,7 +127,7 @@ usage_advanced() {\n     exit 1\n }\n \n-. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n+. \"$SAGE_ROOT/local/bin/sage-env\"   1>/dev/null 2>/dev/null\n \n if [ $? -ne 0 ]; then\n    echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\"\n```\n\nI get\n\n```python\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nls: cannot access /mnt/usb1/scratch/mpatel/tmp/my: No such file or directory\nls: cannot access sage/devel/sage: Not a directory\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.5.2.rc0, Release Date: 2010-07-28                   |\n| Type notebook() for the GUI, and license() for information.        |\n/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/mnt/usb1/scratch/mpatel/tmp/my sage/ipy_profile_sage.py in <module>()\n     14     from sage.misc.interpreter import attached_files\n     15 \n---> 16     branch = sage.misc.misc.branch_current_hg_notice(sage.misc.misc.branch_current_hg())\n     17     if branch:\n     18         print branch\n\n/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/sage/misc/misc.pyc in branch_current_hg()\n   1877     i = s.rfind('->')\n   1878     if i == -1:\n-> 1879         raise RuntimeError, \"unable to determine branch?!\"\n   1880     s = s[i+2:]\n   1881     i = s.find('-')\n\nRuntimeError: unable to determine branch?!\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n\nsage: \n```\n",
+    "body": "After applying \n\n```diff\ndiff --git a/sage-sage b/sage-sage\n--- a/sage-sage\n+++ b/sage-sage\n@@ -127,7 +127,7 @@ usage_advanced() {\n     exit 1\n }\n \n-. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n+. \"$SAGE_ROOT/local/bin/sage-env\"   1>/dev/null 2>/dev/null\n \n if [ $? -ne 0 ]; then\n    echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\"\n```\nI get\n\n```python\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nls: cannot access /mnt/usb1/scratch/mpatel/tmp/my: No such file or directory\nls: cannot access sage/devel/sage: Not a directory\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.5.2.rc0, Release Date: 2010-07-28                   |\n| Type notebook() for the GUI, and license() for information.        |\n/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/mnt/usb1/scratch/mpatel/tmp/my sage/ipy_profile_sage.py in <module>()\n     14     from sage.misc.interpreter import attached_files\n     15 \n---> 16     branch = sage.misc.misc.branch_current_hg_notice(sage.misc.misc.branch_current_hg())\n     17     if branch:\n     18         print branch\n\n/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/sage/misc/misc.pyc in branch_current_hg()\n   1877     i = s.rfind('->')\n   1878     if i == -1:\n-> 1879         raise RuntimeError, \"unable to determine branch?!\"\n   1880     s = s[i+2:]\n   1881     i = s.find('-')\n\nRuntimeError: unable to determine branch?!\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n\nsage: \n```",
     "created_at": "2010-07-30T01:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -111,7 +109,6 @@ diff --git a/sage-sage b/sage-sage
  if [ $? -ne 0 ]; then
     echo "Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel)."
 ```
-
 I get
 
 ```python
@@ -159,7 +156,6 @@ sage:
 
 
 
-
 ---
 
 archive/issue_comments_093322.json:
@@ -193,7 +189,7 @@ It is well documented that `$SAGE_ROOT` (and therefore `$SAGE_LOCAL` **must not*
 archive/issue_comments_093323.json:
 ```json
 {
-    "body": "Ok, it could perhaps be documented in more prominent places, but it's (still) twice in `$SAGE_ROOT/README.txt`, the second time a bit to mild:\n\n```\n...\nMORE DETAILED INSTRUCTIONS TO BUILD FROM SOURCE\n-----------------------------------------------\n...\n3. Extract the Sage source tarball and cd into a directory with no\n   spaces in it. [...]\n\n...\n\nRELOCATION\n----------\n\nYou *should* be able to move the sage-x.y.z directory anywhere you\nwant. If you copy the sage script or make a symbolic link to it, you\nshould modify the script to reflect this (as instructed at the top of\nthe script). It is best if the path to Sage does not have any spaces in\nit.\n...\n```\n\n\nAnd afair it is (or at least has been at some time) better documented in the Installation Guide.\n\nSo I would open two tickets (one could be this with changed title):\n\n* Make sure `$SAGE_ROOT` does not contain spaces, e.g. in `sage-env` (blocker).\n\n* Improve documentation (CAPSLOCK? Add/move remarks to top of files.)",
+    "body": "Ok, it could perhaps be documented in more prominent places, but it's (still) twice in `$SAGE_ROOT/README.txt`, the second time a bit to mild:\n\n```\n...\nMORE DETAILED INSTRUCTIONS TO BUILD FROM SOURCE\n-----------------------------------------------\n...\n3. Extract the Sage source tarball and cd into a directory with no\n   spaces in it. [...]\n\n...\n\nRELOCATION\n----------\n\nYou *should* be able to move the sage-x.y.z directory anywhere you\nwant. If you copy the sage script or make a symbolic link to it, you\nshould modify the script to reflect this (as instructed at the top of\nthe script). It is best if the path to Sage does not have any spaces in\nit.\n...\n```\n\nAnd afair it is (or at least has been at some time) better documented in the Installation Guide.\n\nSo I would open two tickets (one could be this with changed title):\n\n* Make sure `$SAGE_ROOT` does not contain spaces, e.g. in `sage-env` (blocker).\n\n* Improve documentation (CAPSLOCK? Add/move remarks to top of files.)",
     "created_at": "2010-07-30T02:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -224,7 +220,6 @@ the script). It is best if the path to Sage does not have any spaces in
 it.
 ...
 ```
-
 
 And afair it is (or at least has been at some time) better documented in the Installation Guide.
 
@@ -269,7 +264,7 @@ Argh...
 archive/issue_comments_093325.json:
 ```json
 {
-    "body": "With the attached patch I get:\n\n```sh\nleif@portland:~/Sage /sage-4.5.2.alpha0-j12$ ./sage\nError: The path to the Sage directory ($SAGE_ROOT) MUST NOT contain spaces.\nIt is currently \"/home/leif/Sage /sage-4.5.2.alpha0-j12\".\nYou must correct this by moving Sage (or renaming some directories) first.\nExiting now...\nleif@portland:~/Sage /sage-4.5.2.alpha0-j12$ \n```\n\n(Note the spaces in the path, I simply renamed a component of the path to my Sage directories.)",
+    "body": "With the attached patch I get:\n\n```sh\nleif@portland:~/Sage /sage-4.5.2.alpha0-j12$ ./sage\nError: The path to the Sage directory ($SAGE_ROOT) MUST NOT contain spaces.\nIt is currently \"/home/leif/Sage /sage-4.5.2.alpha0-j12\".\nYou must correct this by moving Sage (or renaming some directories) first.\nExiting now...\nleif@portland:~/Sage /sage-4.5.2.alpha0-j12$ \n```\n(Note the spaces in the path, I simply renamed a component of the path to my Sage directories.)",
     "created_at": "2010-07-30T04:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -288,7 +283,6 @@ You must correct this by moving Sage (or renaming some directories) first.
 Exiting now...
 leif@portland:~/Sage /sage-4.5.2.alpha0-j12$ 
 ```
-
 (Note the spaces in the path, I simply renamed a component of the path to my Sage directories.)
 
 
@@ -318,7 +312,7 @@ The error message could of course be a bit more friendly, for example:
 archive/issue_comments_093327.json:
 ```json
 {
-    "body": "An alternative, perhaps simpler, but \"less efficient\" test for spaces would be:\n\n```sh\n    [ `echo \"X${SAGE_ROOT}X\" | wc -w` -ne 1 ]\n```\n\n(This one catches leading and trailing blanks, too, like the shell function in the patch when called properly. But we usually have leading and trailing slashs/path separators in `$SAGE_ROOT` anyway.)",
+    "body": "An alternative, perhaps simpler, but \"less efficient\" test for spaces would be:\n\n```sh\n    [ `echo \"X${SAGE_ROOT}X\" | wc -w` -ne 1 ]\n```\n(This one catches leading and trailing blanks, too, like the shell function in the patch when called properly. But we usually have leading and trailing slashs/path separators in `$SAGE_ROOT` anyway.)",
     "created_at": "2010-07-30T07:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -332,7 +326,6 @@ An alternative, perhaps simpler, but "less efficient" test for spaces would be:
 ```sh
     [ `echo "X${SAGE_ROOT}X" | wc -w` -ne 1 ]
 ```
-
 (This one catches leading and trailing blanks, too, like the shell function in the patch when called properly. But we usually have leading and trailing slashs/path separators in `$SAGE_ROOT` anyway.)
 
 
@@ -342,7 +335,7 @@ An alternative, perhaps simpler, but "less efficient" test for spaces would be:
 archive/issue_comments_093328.json:
 ```json
 {
-    "body": "I know there was one bit of code in sage which removed one space, but not multiple ones. i.e. \n\n\n```\nsed 's/ //' \n```\n\n\nrather than \n\n\n```\nsed 's/ //g'\n```\n\n\nI changed the one occurrence I spotted, but there might be others lucking. \n\nOf course, the best way to solve this is to not have any hacks like this, and just get Sage to build with spaces in paths. If things are quoted properly, this should be possible. \n\nPerhaps there should be an environment variable that can be used to bypass that hack which removes spaces. Then we could slowly find the packages that have problems and correct them one by one. Once they were all corrected, the hack could be removed and Sage would build on paths with spaces in them. \n\nDave",
+    "body": "I know there was one bit of code in sage which removed one space, but not multiple ones. i.e. \n\n```\nsed 's/ //' \n```\n\nrather than \n\n```\nsed 's/ //g'\n```\n\nI changed the one occurrence I spotted, but there might be others lucking. \n\nOf course, the best way to solve this is to not have any hacks like this, and just get Sage to build with spaces in paths. If things are quoted properly, this should be possible. \n\nPerhaps there should be an environment variable that can be used to bypass that hack which removes spaces. Then we could slowly find the packages that have problems and correct them one by one. Once they were all corrected, the hack could be removed and Sage would build on paths with spaces in them. \n\nDave",
     "created_at": "2010-07-30T10:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -353,19 +346,15 @@ archive/issue_comments_093328.json:
 
 I know there was one bit of code in sage which removed one space, but not multiple ones. i.e. 
 
-
 ```
 sed 's/ //' 
 ```
 
-
 rather than 
-
 
 ```
 sed 's/ //g'
 ```
-
 
 I changed the one occurrence I spotted, but there might be others lucking. 
 
@@ -424,7 +413,7 @@ Of course users that only download and install binaries should somehow get infor
 archive/issue_comments_093331.json:
 ```json
 {
-    "body": "> \n> Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.\n\nAnd THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.  \n\nAnyway, I'm glad to see this wasn't a platform-specific issue.  Probably this ticket should get closed by fixing the manual and adding the error messages, as it were, and then one could open a sage-wishlist milestone ticket for supporting spaces in the path.  (The error message may also want to say that certain Sage components would fail otherwise? Or would that be too long?)",
+    "body": "> \n> Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.\n\n\nAnd THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.  \n\nAnyway, I'm glad to see this wasn't a platform-specific issue.  Probably this ticket should get closed by fixing the manual and adding the error messages, as it were, and then one could open a sage-wishlist milestone ticket for supporting spaces in the path.  (The error message may also want to say that certain Sage components would fail otherwise? Or would that be too long?)",
     "created_at": "2010-07-30T15:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -435,6 +424,7 @@ archive/issue_comments_093331.json:
 
 > 
 > Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.
+
 
 And THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.  
 
@@ -465,7 +455,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093333.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> > \n> > Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.\n> \n> And THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.\n\nAlthough the README.txt (and other scattered pieces of information) are rarely changed/current, I really thought this was a well-known issue, since I came across that in the documentation many times. (I think it once was better placed, s.t. nobody could miss it, though people tend to read READMEs and installation guides - if at all - *after* they run into problems... ;-) )\n\n> [...] Probably this ticket should get closed by fixing the manual and adding the error messages, as it were, and then one could open a sage-wishlist milestone ticket for supporting spaces in the path.\n\nYes, that's what I was thinking of, too.\n\n> The error message may also want to say that certain Sage components would fail otherwise? Or would that be too long?\n\nAs long as it fits onto a 80x25 screen... Feel free to add a \"reviewer patch\" or make some suggestion and I'll update the patch. I'm quite sure then this could get into 4.5.2.\n\nSomeone volunteering for a revised README?\n\nHarald, ideas for the web page?",
+    "body": "Replying to [comment:11 kcrisman]:\n> > \n> > Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.\n\n> \n> And THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.\n\n\nAlthough the README.txt (and other scattered pieces of information) are rarely changed/current, I really thought this was a well-known issue, since I came across that in the documentation many times. (I think it once was better placed, s.t. nobody could miss it, though people tend to read READMEs and installation guides - if at all - *after* they run into problems... ;-) )\n\n> [...] Probably this ticket should get closed by fixing the manual and adding the error messages, as it were, and then one could open a sage-wishlist milestone ticket for supporting spaces in the path.\n\n\nYes, that's what I was thinking of, too.\n\n> The error message may also want to say that certain Sage components would fail otherwise? Or would that be too long?\n\n\nAs long as it fits onto a 80x25 screen... Feel free to add a \"reviewer patch\" or make some suggestion and I'll update the patch. I'm quite sure then this could get into 4.5.2.\n\nSomeone volunteering for a revised README?\n\nHarald, ideas for the web page?",
     "created_at": "2010-07-30T16:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -477,16 +467,20 @@ archive/issue_comments_093333.json:
 Replying to [comment:11 kcrisman]:
 > > 
 > > Of course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.
+
 > 
 > And THAT was the point of the original post - that README.txt should probably also mention this issue for downloads, since he downloaded a *binary*.
+
 
 Although the README.txt (and other scattered pieces of information) are rarely changed/current, I really thought this was a well-known issue, since I came across that in the documentation many times. (I think it once was better placed, s.t. nobody could miss it, though people tend to read READMEs and installation guides - if at all - *after* they run into problems... ;-) )
 
 > [...] Probably this ticket should get closed by fixing the manual and adding the error messages, as it were, and then one could open a sage-wishlist milestone ticket for supporting spaces in the path.
 
+
 Yes, that's what I was thinking of, too.
 
 > The error message may also want to say that certain Sage components would fail otherwise? Or would that be too long?
+
 
 As long as it fits onto a 80x25 screen... Feel free to add a "reviewer patch" or make some suggestion and I'll update the patch. I'm quite sure then this could get into 4.5.2.
 
@@ -770,7 +764,7 @@ Thanks, very good.
 archive/issue_comments_093347.json:
 ```json
 {
-    "body": "The invocation of sage-env from the top-level makefile is causing errors.  On sage.math:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\nlocal/bin/sage-env: 70: Syntax error: Bad function name\nmake: *** [ptestlong] Error 2\n```\n\nOn my mac:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\nlocal/bin/sage-env: line 77: `contains-spaces': not a valid identifier\nmake: *** [ptestlong] Error 2\n```\n\nOn t2.math:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\n/bin/sh: contains-spaces: is not an identifier\nmake: *** [ptestlong] Error 1\n```\n\nIn all cases, changing \"contains-spaces\" to \"contains_spaces\" seems to fix the problem.  I'm attaching a small patch to do this.  (On Solaris systems, I also see a new warning, presumably because we're not redirecting output to /dev/null: after typing \"make ptestlong\", I see\n\n```\nBuild finished.  The built documents can be found in /scratch/palmieri/sage-4.5.3.rc0/devel/sage/doc/output/html/fr/a_tour_of_sage\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\n/bin/sh: source: not found\nTesting that Sage starts...\nYes, Sage starts.\nTesting that Sage starts...\nYes, Sage starts.\nGlobal iterations: 1\nFile iterations: 1\n```\n\nNote the line `/bin/sh: source: not found`.  Is this important?  If so, we should deal with it on another ticket...)",
+    "body": "The invocation of sage-env from the top-level makefile is causing errors.  On sage.math:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\nlocal/bin/sage-env: 70: Syntax error: Bad function name\nmake: *** [ptestlong] Error 2\n```\nOn my mac:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\nlocal/bin/sage-env: line 77: `contains-spaces': not a valid identifier\nmake: *** [ptestlong] Error 2\n```\nOn t2.math:\n\n```\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\n/bin/sh: contains-spaces: is not an identifier\nmake: *** [ptestlong] Error 1\n```\nIn all cases, changing \"contains-spaces\" to \"contains_spaces\" seems to fix the problem.  I'm attaching a small patch to do this.  (On Solaris systems, I also see a new warning, presumably because we're not redirecting output to /dev/null: after typing \"make ptestlong\", I see\n\n```\nBuild finished.  The built documents can be found in /scratch/palmieri/sage-4.5.3.rc0/devel/sage/doc/output/html/fr/a_tour_of_sage\n. local/bin/sage-env && sage-starts && ./sage -tp 0  -sagenb -long devel/sage/doc/common devel/sage/doc/en devel/sage/doc/fr devel/sage/sage 2>&1 | tee -a ptestlong.log\n/bin/sh: source: not found\nTesting that Sage starts...\nYes, Sage starts.\nTesting that Sage starts...\nYes, Sage starts.\nGlobal iterations: 1\nFile iterations: 1\n```\nNote the line `/bin/sh: source: not found`.  Is this important?  If so, we should deal with it on another ticket...)",
     "created_at": "2010-09-22T18:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -786,7 +780,6 @@ The invocation of sage-env from the top-level makefile is causing errors.  On sa
 local/bin/sage-env: 70: Syntax error: Bad function name
 make: *** [ptestlong] Error 2
 ```
-
 On my mac:
 
 ```
@@ -794,7 +787,6 @@ On my mac:
 local/bin/sage-env: line 77: `contains-spaces': not a valid identifier
 make: *** [ptestlong] Error 2
 ```
-
 On t2.math:
 
 ```
@@ -802,7 +794,6 @@ On t2.math:
 /bin/sh: contains-spaces: is not an identifier
 make: *** [ptestlong] Error 1
 ```
-
 In all cases, changing "contains-spaces" to "contains_spaces" seems to fix the problem.  I'm attaching a small patch to do this.  (On Solaris systems, I also see a new warning, presumably because we're not redirecting output to /dev/null: after typing "make ptestlong", I see
 
 ```
@@ -816,7 +807,6 @@ Yes, Sage starts.
 Global iterations: 1
 File iterations: 1
 ```
-
 Note the line `/bin/sh: source: not found`.  Is this important?  If so, we should deal with it on another ticket...)
 
 
@@ -862,7 +852,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093350.json:
 ```json
 {
-    "body": "Thanks, I wanted to make exactly the same change weeks ago... (replacing the dash in the name by an underscore).\n\nAlso, `source` should be replaced by `.` (period). (At #9960 or here.)\n\n(Note that this error message has always been there; you just had to look into `/dev/null`... ;-) Redirecting `stderr` to Nirvana is rarely a good idea.)\n\n----\n\nAlthough the Makefile shouldn't break the assumption that we're using `bash`; so either `sage-env` should be removed there, or the line should be `bash -c ...`, or `/usr/bin/env bash -c ...`. There are various ways to fix that.\n\nI wonder if `sage-starts` shouldn't use `bash` (instead of `sh`) and itself source `sage-env`; then we could drop `. local/bin/sage-env &&` from `TESTPRELIMS`. (This would IMHO be cleaner.)",
+    "body": "Thanks, I wanted to make exactly the same change weeks ago... (replacing the dash in the name by an underscore).\n\nAlso, `source` should be replaced by `.` (period). (At #9960 or here.)\n\n(Note that this error message has always been there; you just had to look into `/dev/null`... ;-) Redirecting `stderr` to Nirvana is rarely a good idea.)\n\n---\n\nAlthough the Makefile shouldn't break the assumption that we're using `bash`; so either `sage-env` should be removed there, or the line should be `bash -c ...`, or `/usr/bin/env bash -c ...`. There are various ways to fix that.\n\nI wonder if `sage-starts` shouldn't use `bash` (instead of `sh`) and itself source `sage-env`; then we could drop `. local/bin/sage-env &&` from `TESTPRELIMS`. (This would IMHO be cleaner.)",
     "created_at": "2010-09-22T20:32:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -877,7 +867,7 @@ Also, `source` should be replaced by `.` (period). (At #9960 or here.)
 
 (Note that this error message has always been there; you just had to look into `/dev/null`... ;-) Redirecting `stderr` to Nirvana is rarely a good idea.)
 
-----
+---
 
 Although the Makefile shouldn't break the assumption that we're using `bash`; so either `sage-env` should be removed there, or the line should be `bash -c ...`, or `/usr/bin/env bash -c ...`. There are various ways to fix that.
 
@@ -890,7 +880,7 @@ I wonder if `sage-starts` shouldn't use `bash` (instead of `sh`) and itself sour
 archive/issue_comments_093351.json:
 ```json
 {
-    "body": "The changes look fine. \n\nThe `/bin/sh: [`](../tree/master/`) is quite a common error. We should not solve it by redirecting stderr to /dev/null, but removing the word `source` and replacing it with a dot. I suspect there are many instances of this lucking around. The problem is the command does not exist in `/bin/sh` but does in `bash` See below. \n\nHere my default shell is `bash`, so `source` exists as a built in shell command. \n\n```\nkirkby@t2:64 ~$ source\n-bash: source: filename argument required\nsource: usage: source filename [arguments]\n```\n\n\nNow change my shell to /bin/sh\n\n\n```\nkirkby@t2:64 ~$ sh\n$ source\nsource: not found\n$ \n```\n\n\nI'd prefer to use the more portable `.` (dot) which will achieve the same, but is not a bashism. These should certainly be addressed on another ticket. The fact they  are not producing any known errors, makes me wonder how important it is to source the files in the first place!",
+    "body": "The changes look fine. \n\nThe `/bin/sh: [`](../tree/master/`) is quite a common error. We should not solve it by redirecting stderr to /dev/null, but removing the word `source` and replacing it with a dot. I suspect there are many instances of this lucking around. The problem is the command does not exist in `/bin/sh` but does in `bash` See below. \n\nHere my default shell is `bash`, so `source` exists as a built in shell command. \n\n```\nkirkby@t2:64 ~$ source\n-bash: source: filename argument required\nsource: usage: source filename [arguments]\n```\n\nNow change my shell to /bin/sh\n\n```\nkirkby@t2:64 ~$ sh\n$ source\nsource: not found\n$ \n```\n\nI'd prefer to use the more portable `.` (dot) which will achieve the same, but is not a bashism. These should certainly be addressed on another ticket. The fact they  are not producing any known errors, makes me wonder how important it is to source the files in the first place!",
     "created_at": "2010-09-22T20:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
@@ -911,9 +901,7 @@ kirkby@t2:64 ~$ source
 source: usage: source filename [arguments]
 ```
 
-
 Now change my shell to /bin/sh
-
 
 ```
 kirkby@t2:64 ~$ sh
@@ -921,7 +909,6 @@ $ source
 source: not found
 $ 
 ```
-
 
 I'd prefer to use the more portable `.` (dot) which will achieve the same, but is not a bashism. These should certainly be addressed on another ticket. The fact they  are not producing any known errors, makes me wonder how important it is to source the files in the first place!
 

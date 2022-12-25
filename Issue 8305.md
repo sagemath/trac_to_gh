@@ -218,7 +218,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073470.json:
 ```json
 {
-    "body": "maybe this can be considered as a good first step towards 100% ?\n----\nNew commits:",
+    "body": "maybe this can be considered as a good first step towards 100% ?\n\n---\nNew commits:",
     "created_at": "2014-01-05T13:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
@@ -228,7 +228,8 @@ archive/issue_comments_073470.json:
 ```
 
 maybe this can be considered as a good first step towards 100% ?
-----
+
+---
 New commits:
 
 

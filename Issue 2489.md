@@ -3,7 +3,7 @@
 archive/issues_002489.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\n\nsymmetrica.kostka_tab([[2,2],[1]],[2,1])\n\nevaluating this expression leads to the error message:\n\nException exceptions.TypeError: 'an integer is required' in\n'sage.libs.symmetrica.symmetrica._op_integer' ignored\nException exceptions.TypeError: 'an integer is required' in\n'sage.libs.symmetrica.symmetrica._op_integer' ignored\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2489\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\n\nsymmetrica.kostka_tab([[2,2],[1]],[2,1])\n\nevaluating this expression leads to the error message:\n\nException exceptions.TypeError: 'an integer is required' in\n'sage.libs.symmetrica.symmetrica._op_integer' ignored\nException exceptions.TypeError: 'an integer is required' in\n'sage.libs.symmetrica.symmetrica._op_integer' ignored\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2489\n\n",
     "created_at": "2008-03-12T11:01:42Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +19,6 @@ archive/issues_002489.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
-
 
 ```
 
@@ -40,7 +39,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2489
 

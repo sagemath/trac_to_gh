@@ -3,7 +3,7 @@
 archive/issues_009267.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: words, charge, cocharge\n\nThe following behavior is currently in sage:\n\n```\nsage: w = Word([1,2,3,1,2])\nsage: w.charge()\n0\n```\n\nThis is inconsistent with the definition one usually finds in the\nliterature, which would give the charge of this word as 2. (see\nMacdonald's book, for example).\n\nThe goal of this ticket is to fix this bug, add a cocharge statistic, and extend the definition to words without partition content.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9267\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: words, charge, cocharge\n\nThe following behavior is currently in sage:\n\n```\nsage: w = Word([1,2,3,1,2])\nsage: w.charge()\n0\n```\nThis is inconsistent with the definition one usually finds in the\nliterature, which would give the charge of this word as 2. (see\nMacdonald's book, for example).\n\nThe goal of this ticket is to fix this bug, add a cocharge statistic, and extend the definition to words without partition content.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9267\n\n",
     "created_at": "2010-06-18T18:40:13Z",
     "labels": [
         "component: combinatorics",
@@ -27,7 +27,6 @@ sage: w = Word([1,2,3,1,2])
 sage: w.charge()
 0
 ```
-
 This is inconsistent with the definition one usually finds in the
 literature, which would give the charge of this word as 2. (see
 Macdonald's book, for example).
@@ -81,7 +80,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087147.json:
 ```json
 {
-    "body": "Tested against sage-4.4.4. Patch applies cleanly. All tests pass. The code looks good.\n\nJust a few documentation issues:\n\n- Add a line break here:\n\n```\n r\"\"\"Implements Lascoux and Schutzenberger's `s_i` operator, swapping\n```\n\n\n- Please add a reference in the documentation to an article or book that defines charge, cocharge, Lascoux and Schutzenberger's `s_i` operators, etc.\n\n- Since this definition of charge differs from that found in Macdonald's book, and since Sage uses many of Macdonald's conventions, I think it is a good idea to add a warning in the docstring of charge that explains that this is the common definition found in the literature and that it differs from that in Macdonald's book.",
+    "body": "Tested against sage-4.4.4. Patch applies cleanly. All tests pass. The code looks good.\n\nJust a few documentation issues:\n\n- Add a line break here:\n\n```\n r\"\"\"Implements Lascoux and Schutzenberger's `s_i` operator, swapping\n```\n\n- Please add a reference in the documentation to an article or book that defines charge, cocharge, Lascoux and Schutzenberger's `s_i` operators, etc.\n\n- Since this definition of charge differs from that found in Macdonald's book, and since Sage uses many of Macdonald's conventions, I think it is a good idea to add a warning in the docstring of charge that explains that this is the common definition found in the literature and that it differs from that in Macdonald's book.",
     "created_at": "2010-06-29T19:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
@@ -99,7 +98,6 @@ Just a few documentation issues:
 ```
  r"""Implements Lascoux and Schutzenberger's `s_i` operator, swapping
 ```
-
 
 - Please add a reference in the documentation to an article or book that defines charge, cocharge, Lascoux and Schutzenberger's `s_i` operators, etc.
 
@@ -222,7 +220,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_087154.json:
 ```json
 {
-    "body": "Replying to [comment:4 saliola]:\n> Jason, is the \\A intentional in references [2] and [3]?\n\nIn a first, incorrectly sphinxed, attempt to add these references, the 'A.' was being interpreted as the start of a list, so I had to make the 'A' a literal.  But that's not happening anymore, so I've removed the backslash.\n\n> Otherwise, this gets a positive review from me, provided that the documentation builds correctly (I have not had the chance to build it yet, and won't be able to do it today).\n\nGreat!  I think the doc builds ok, but I will wait until someone else verifies this instead of setting positive review on my own patch.\n\nThanks again, Franco.",
+    "body": "Replying to [comment:4 saliola]:\n> Jason, is the \\A intentional in references [2] and [3]?\n\n\nIn a first, incorrectly sphinxed, attempt to add these references, the 'A.' was being interpreted as the start of a list, so I had to make the 'A' a literal.  But that's not happening anymore, so I've removed the backslash.\n\n> Otherwise, this gets a positive review from me, provided that the documentation builds correctly (I have not had the chance to build it yet, and won't be able to do it today).\n\n\nGreat!  I think the doc builds ok, but I will wait until someone else verifies this instead of setting positive review on my own patch.\n\nThanks again, Franco.",
     "created_at": "2010-06-30T18:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
@@ -234,9 +232,11 @@ archive/issue_comments_087154.json:
 Replying to [comment:4 saliola]:
 > Jason, is the \A intentional in references [2] and [3]?
 
+
 In a first, incorrectly sphinxed, attempt to add these references, the 'A.' was being interpreted as the start of a list, so I had to make the 'A' a literal.  But that's not happening anymore, so I've removed the backslash.
 
 > Otherwise, this gets a positive review from me, provided that the documentation builds correctly (I have not had the chance to build it yet, and won't be able to do it today).
+
 
 Great!  I think the doc builds ok, but I will wait until someone else verifies this instead of setting positive review on my own patch.
 

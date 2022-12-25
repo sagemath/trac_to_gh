@@ -3,7 +3,7 @@
 archive/issues_008225.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:\n> Dear all,\n>\n> Cells starting with \"%time\" stopped working with 4.3.2.  (It works\n> with 4.3.1.)  Is it no long supported or is it a bug? (time still\n> works with the command line.)\n>\n> Running on Linux 32-bit, ubuntu binary.\n>\n> Thanks,\n```\n\nWow, what a horrible, horrible regression!   Indeed, I've confirmed that what happens is that doing %time causes the notebook to hang forever, and be pretty broken thereafter.   Ouch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8225\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:\n> Dear all,\n>\n> Cells starting with \"%time\" stopped working with 4.3.2.  (It works\n> with 4.3.1.)  Is it no long supported or is it a bug? (time still\n> works with the command line.)\n>\n> Running on Linux 32-bit, ubuntu binary.\n>\n> Thanks,\n```\nWow, what a horrible, horrible regression!   Indeed, I've confirmed that what happens is that doing %time causes the notebook to hang forever, and be pretty broken thereafter.   Ouch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8225\n\n",
     "created_at": "2010-02-10T01:39:34Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_008225.json:
 ```
 Assignee: @williamstein
 
-
 ```
 
 
@@ -34,7 +33,6 @@ On Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:
 >
 > Thanks,
 ```
-
 Wow, what a horrible, horrible regression!   Indeed, I've confirmed that what happens is that doing %time causes the notebook to hang forever, and be pretty broken thereafter.   Ouch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8225

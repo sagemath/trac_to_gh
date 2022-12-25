@@ -3,7 +3,7 @@
 archive/issues_006825.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nMariah Lenox reported the following doctest failure when running the test suite:\n\n```\nsage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.1.1-x86_64-Linux-core2-fc-move/devel/sage/sage/modules/vector_real_double_dense.pyx\",\nline 72:\n   sage: v.stats_skew()\nExpected:\n   0.0\nGot:\n   doctest:106: SyntaxWarning: assertion is always true, perhaps\nremove parentheses?\n   0.0\n**********************************************************************\n1 items had failures:\n```\n\nBut if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6825\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nMariah Lenox reported the following doctest failure when running the test suite:\n\n```\nsage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.1.1-x86_64-Linux-core2-fc-move/devel/sage/sage/modules/vector_real_double_dense.pyx\",\nline 72:\n   sage: v.stats_skew()\nExpected:\n   0.0\nGot:\n   doctest:106: SyntaxWarning: assertion is always true, perhaps\nremove parentheses?\n   0.0\n**********************************************************************\n1 items had failures:\n```\nBut if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6825\n\n",
     "created_at": "2009-08-25T17:18:55Z",
     "labels": [
         "component: doctest coverage",
@@ -37,7 +37,6 @@ remove parentheses?
 **********************************************************************
 1 items had failures:
 ```
-
 But if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6825
@@ -69,7 +68,7 @@ I think this is probably an error in scipy or numpy.
 archive/issue_comments_056187.json:
 ```json
 {
-    "body": "\n```\nI can make the problem described in sage trac ticket #6825\nreproducible and not intermitent.\n\nIf you remove\n\n    local/lib/python/site-packages/scipy/stats/mstats_basic.pyc\n\nthen you will see the error when you run\n\n    sage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n\nThis reproduces the problem whether or not you move the build directory.\n\n\nOne possible fix for the problem is to remove line 106 of\n\n    local/lib/python/site-packages/scipy/stats/mstats_basic.py\n\nwhich is the assert line about which the output message complains.\n\n\nI do not know a lot about python, but it seems that\npython evidently has some check that the sage tree has moved and\nso rebuilds *.pyc files if they have not been regenerated recently.\nI am surprised that local/bin/sage-location does not remove all the\n*.pyc files and rebuild them when the sage tree moves.\n\nMariah\n```\n",
+    "body": "```\nI can make the problem described in sage trac ticket #6825\nreproducible and not intermitent.\n\nIf you remove\n\n    local/lib/python/site-packages/scipy/stats/mstats_basic.pyc\n\nthen you will see the error when you run\n\n    sage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n\nThis reproduces the problem whether or not you move the build directory.\n\n\nOne possible fix for the problem is to remove line 106 of\n\n    local/lib/python/site-packages/scipy/stats/mstats_basic.py\n\nwhich is the assert line about which the output message complains.\n\n\nI do not know a lot about python, but it seems that\npython evidently has some check that the sage tree has moved and\nso rebuilds *.pyc files if they have not been regenerated recently.\nI am surprised that local/bin/sage-location does not remove all the\n*.pyc files and rebuild them when the sage tree moves.\n\nMariah\n```",
     "created_at": "2009-09-02T15:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
@@ -77,7 +76,6 @@ archive/issue_comments_056187.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 I can make the problem described in sage trac ticket #6825
@@ -112,7 +110,6 @@ Mariah
 
 
 
-
 ---
 
 archive/issue_comments_056188.json:
@@ -136,7 +133,7 @@ Changing priority from major to blocker.
 archive/issue_comments_056189.json:
 ```json
 {
-    "body": "Now I get a mysterious error in Sage 4.2.alpha0:\n\n```\n[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx\nsage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.1 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nTotal time for all tests: 3.1 seconds\n```\n",
+    "body": "Now I get a mysterious error in Sage 4.2.alpha0:\n\n```\n[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx\nsage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.1 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nTotal time for all tests: 3.1 seconds\n```",
     "created_at": "2009-10-21T22:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
@@ -164,13 +161,12 @@ Total time for all tests: 3.1 seconds
 
 
 
-
 ---
 
 archive/issue_comments_056190.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> Now I get a mysterious error in Sage 4.2.alpha0:\n\nThis seems like a totally different error.  Should a new ticket be opened?",
+    "body": "Replying to [comment:4 mvngu]:\n> Now I get a mysterious error in Sage 4.2.alpha0:\n\n\nThis seems like a totally different error.  Should a new ticket be opened?",
     "created_at": "2009-10-21T22:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
@@ -181,6 +177,7 @@ archive/issue_comments_056190.json:
 
 Replying to [comment:4 mvngu]:
 > Now I get a mysterious error in Sage 4.2.alpha0:
+
 
 This seems like a totally different error.  Should a new ticket be opened?
 
@@ -322,7 +319,7 @@ Oh, and the thing mike patched has already been fixed upstream.
 archive/issue_comments_056197.json:
 ```json
 {
-    "body": "Replying to [comment:12 was]:\n> Oh, and the thing mike patched has already been fixed upstream.\n\nWe're already a version behind (we're at 0.7, but upstream is 0.7.1).  Would upgrading to 0.7.1 get us this fix?",
+    "body": "Replying to [comment:12 was]:\n> Oh, and the thing mike patched has already been fixed upstream.\n\n\nWe're already a version behind (we're at 0.7, but upstream is 0.7.1).  Would upgrading to 0.7.1 get us this fix?",
     "created_at": "2009-11-12T06:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
@@ -333,6 +330,7 @@ archive/issue_comments_056197.json:
 
 Replying to [comment:12 was]:
 > Oh, and the thing mike patched has already been fixed upstream.
+
 
 We're already a version behind (we're at 0.7, but upstream is 0.7.1).  Would upgrading to 0.7.1 get us this fix?
 

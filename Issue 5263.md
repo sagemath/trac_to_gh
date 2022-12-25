@@ -119,7 +119,7 @@ Dave
 archive/issue_comments_040328.json:
 ```json
 {
-    "body": "Following the suggestions [here](http://groups.google.com/group/comp.lang.python/browse_thread/thread/d931cdc326d7032b?hl=en) and [here](http://stackoverflow.com/questions/166545/finding-a-public-facing-ip-address-in-python), I get:\n\n```python\nsage: import socket\nsage: socket.gethostbyname(socket.gethostname())\n'127.0.0.1'\nsage: s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsage: s.connect(('google.com', 0))\nsage: s.getsockname()[0]\n'192.168.x.y'\nsage: import urllib\nsage: urllib.urlopen('http://whatismyip.org').read()\n'a.b.c.d'\n```\n\nI'm looking now for ways to iterate over the available interfaces in Twisted...\n\nBy the way, there are a few suggestions to the main problem at #5675.\n\nWhat is a good name for a keyword option that's inserted instead of the `interface` (post-#7639, `address` is deprecated) when `interface=''`?",
+    "body": "Following the suggestions [here](http://groups.google.com/group/comp.lang.python/browse_thread/thread/d931cdc326d7032b?hl=en) and [here](http://stackoverflow.com/questions/166545/finding-a-public-facing-ip-address-in-python), I get:\n\n```python\nsage: import socket\nsage: socket.gethostbyname(socket.gethostname())\n'127.0.0.1'\nsage: s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsage: s.connect(('google.com', 0))\nsage: s.getsockname()[0]\n'192.168.x.y'\nsage: import urllib\nsage: urllib.urlopen('http://whatismyip.org').read()\n'a.b.c.d'\n```\nI'm looking now for ways to iterate over the available interfaces in Twisted...\n\nBy the way, there are a few suggestions to the main problem at #5675.\n\nWhat is a good name for a keyword option that's inserted instead of the `interface` (post-#7639, `address` is deprecated) when `interface=''`?",
     "created_at": "2010-01-16T04:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ sage: import urllib
 sage: urllib.urlopen('http://whatismyip.org').read()
 'a.b.c.d'
 ```
-
 I'm looking now for ways to iterate over the available interfaces in Twisted...
 
 By the way, there are a few suggestions to the main problem at #5675.
@@ -156,7 +155,7 @@ What is a good name for a keyword option that's inserted instead of the `interfa
 archive/issue_comments_040329.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> I'm looking now for ways to iterate over the available interfaces in Twisted...\nI *think* Twisted just uses [socket](http://docs.python.org/library/socket.html), which \nuses the underlying system's socket library.  I don't know if there is a local, cross-platform way to iterate over `'0.0.0.0'` (all interfaces) and map each to an IP address.",
+    "body": "Replying to [comment:6 mpatel]:\n> I'm looking now for ways to iterate over the available interfaces in Twisted...\n\nI *think* Twisted just uses [socket](http://docs.python.org/library/socket.html), which \nuses the underlying system's socket library.  I don't know if there is a local, cross-platform way to iterate over `'0.0.0.0'` (all interfaces) and map each to an IP address.",
     "created_at": "2010-01-16T06:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
@@ -167,6 +166,7 @@ archive/issue_comments_040329.json:
 
 Replying to [comment:6 mpatel]:
 > I'm looking now for ways to iterate over the available interfaces in Twisted...
+
 I *think* Twisted just uses [socket](http://docs.python.org/library/socket.html), which 
 uses the underlying system's socket library.  I don't know if there is a local, cross-platform way to iterate over `'0.0.0.0'` (all interfaces) and map each to an IP address.
 

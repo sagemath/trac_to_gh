@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6022
 archive/issue_comments_047871.json:
 ```json
 {
-    "body": "By the way: to test this,\n\n```\nlatex.extra_preamble('\\\\usepackage{tkz-graph}')\n```\n\nand (taken from [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html)):\n\n```\n%latex\n\\begin{tikzpicture}[node distance   = 4 cm]\n     \\GraphInit[vstyle=Shade]\n     \\tikzset{LabelStyle/.style =   {draw,\n                                     fill  = yellow,\n                                     text  = red}}\n     \\Vertex{A}\n     \\EA(A){B}\n     \\EA(B){C}\n     \\tikzset{node distance   = 8 cm}% modifie la distance entre les nodes\n     \\NO(B){D}\n     \\Edge[label=1](B)(D)\n     \\tikzset{EdgeStyle/.append style = {bend left}}\n     \\Edge[label=4](A)(B)\n     \\Edge[label=5](B)(A)\n     \\Edge[label=6](B)(C)\n     \\Edge[label=7](C)(B)\n     \\Edge[label=2](A)(D)\n     \\Edge[label=3](D)(C)\n  \\end{tikzpicture}\n```\n\nBefore the patch, I just get a little black blob.  After the patch, I get a nice picture.  (This assume that you have the tkz-graph package installed, as well as the most recent version of pgf.)",
+    "body": "By the way: to test this,\n\n```\nlatex.extra_preamble('\\\\usepackage{tkz-graph}')\n```\nand (taken from [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html)):\n\n```\n%latex\n\\begin{tikzpicture}[node distance   = 4 cm]\n     \\GraphInit[vstyle=Shade]\n     \\tikzset{LabelStyle/.style =   {draw,\n                                     fill  = yellow,\n                                     text  = red}}\n     \\Vertex{A}\n     \\EA(A){B}\n     \\EA(B){C}\n     \\tikzset{node distance   = 8 cm}% modifie la distance entre les nodes\n     \\NO(B){D}\n     \\Edge[label=1](B)(D)\n     \\tikzset{EdgeStyle/.append style = {bend left}}\n     \\Edge[label=4](A)(B)\n     \\Edge[label=5](B)(A)\n     \\Edge[label=6](B)(C)\n     \\Edge[label=7](C)(B)\n     \\Edge[label=2](A)(D)\n     \\Edge[label=3](D)(C)\n  \\end{tikzpicture}\n```\nBefore the patch, I just get a little black blob.  After the patch, I get a nice picture.  (This assume that you have the tkz-graph package installed, as well as the most recent version of pgf.)",
     "created_at": "2009-05-11T22:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ By the way: to test this,
 ```
 latex.extra_preamble('\\usepackage{tkz-graph}')
 ```
-
 and (taken from [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html)):
 
 ```
@@ -77,7 +76,6 @@ and (taken from [http://altermundus.com/pages/graph.html](http://altermundus.com
      \Edge[label=3](D)(C)
   \end{tikzpicture}
 ```
-
 Before the patch, I just get a little black blob.  After the patch, I get a nice picture.  (This assume that you have the tkz-graph package installed, as well as the most recent version of pgf.)
 
 
@@ -87,7 +85,7 @@ Before the patch, I just get a little black blob.  After the patch, I get a nice
 archive/issue_comments_047872.json:
 ```json
 {
-    "body": "Here's a test that will work with a \"vanilla\" latex installation:\n\n```\n%latex\n\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\n```\n\nThat is, it won't work before applying that patch: I get no output from this.  With the patch, it produces a picture.",
+    "body": "Here's a test that will work with a \"vanilla\" latex installation:\n\n```\n%latex\n\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\n```\nThat is, it won't work before applying that patch: I get no output from this.  With the patch, it produces a picture.",
     "created_at": "2009-05-12T00:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ Here's a test that will work with a "vanilla" latex installation:
   \psarc{-}(5,0){3.2}{270}{290}
 \end{pspicture}
 ```
-
 That is, it won't work before applying that patch: I get no output from this.  With the patch, it produces a picture.
 
 

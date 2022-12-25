@@ -3,7 +3,7 @@
 archive/issues_007406.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\n\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\n\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\n\nand \n\n```\n(x^a)^b\n```\n\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\nand \n\n```\n(x^a)^b\n```\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
     "created_at": "2009-11-06T20:37:51Z",
     "labels": [
         "component: symbolics",
@@ -27,14 +27,11 @@ sage: latex((x^pi)^e)
 {(x)}^{\pi}^{e}
 ```
 
-
 Burcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like 
 
 ```
 {{(x)}^{\pi}}^{e}
 ```
-
-
 
 ```
 The code for printing
@@ -58,31 +55,26 @@ cd spkg/build/pynac-0.1.9/src
 make install 
 ```
 
-
 However a better fix would be to get 
 
 ```
 {x}^{a}
 ```
-
 if the base is an atom (or not power) and
 
 ```
 \left({x^a}\right}^{b}
 ```
-
 if the base is a power. This allows to distinguish easily between
 
 ```
 x^(a^b) 
 ```
-
 and 
 
 ```
 (x^a)^b
 ```
-
 
 A workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications
 
@@ -90,7 +82,6 @@ A workaround is to remove powers of powers by simplification. For example radcan
 sage: latex(maxima((x^pi)^e).radcan().sage())
 x^{\pi e}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7406
 
@@ -121,7 +112,7 @@ Changing keywords from "latex, power, jsmath" to "latex, power, jsmath, pynac".
 archive/issue_comments_062205.json:
 ```json
 {
-    "body": "Perhaps close problem is\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{(\\sqrt{x^{7}} + \\frac{1}{x^{2}})} x\n```\n\n\nNote missing \\left and \\right at outside parentheses which makes the rendering of the expression far from perfect. Should look like\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{\\left(\\sqrt{x^{7}} + \\frac{1}{x^{2}}\\right)} x\n```\n",
+    "body": "Perhaps close problem is\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{(\\sqrt{x^{7}} + \\frac{1}{x^{2}})} x\n```\n\nNote missing \\left and \\right at outside parentheses which makes the rendering of the expression far from perfect. Should look like\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{\\left(\\sqrt{x^{7}} + \\frac{1}{x^{2}}\\right)} x\n```",
     "created_at": "2009-11-21T23:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
@@ -137,14 +128,12 @@ sage: latex(x*(1/(x^2)+sqrt(x^7)))
 {(\sqrt{x^{7}} + \frac{1}{x^{2}})} x
 ```
 
-
 Note missing \left and \right at outside parentheses which makes the rendering of the expression far from perfect. Should look like
 
 ```
 sage: latex(x*(1/(x^2)+sqrt(x^7)))
 {\left(\sqrt{x^{7}} + \frac{1}{x^{2}}\right)} x
 ```
-
 
 
 

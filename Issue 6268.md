@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6268
 archive/issue_comments_049969.json:
 ```json
 {
-    "body": "\n```\n[mvngu@sage sage-4.0.1]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: # the following work as expected\nsage: latex(sec)\n\\sec\nsage: latex(csc)\n\\csc\nsage: latex(cot)\n\\cot\nsage: # but the following have extra \"\\mbox\" around the trig function name\nsage: latex(sec(x))\n\\mbox{\\sec}\\left(x\\right)\nsage: latex(csc(x))\n\\mbox{\\csc}\\left(x\\right)\nsage: latex(cot(x))\n\\mbox{\\cot}\\left(x\\right)\n```\n",
+    "body": "```\n[mvngu@sage sage-4.0.1]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: # the following work as expected\nsage: latex(sec)\n\\sec\nsage: latex(csc)\n\\csc\nsage: latex(cot)\n\\cot\nsage: # but the following have extra \"\\mbox\" around the trig function name\nsage: latex(sec(x))\n\\mbox{\\sec}\\left(x\\right)\nsage: latex(csc(x))\n\\mbox{\\csc}\\left(x\\right)\nsage: latex(cot(x))\n\\mbox{\\cot}\\left(x\\right)\n```",
     "created_at": "2009-06-12T19:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
@@ -43,7 +43,6 @@ archive/issue_comments_049969.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-
 
 ```
 [mvngu@sage sage-4.0.1]$ sage
@@ -64,7 +63,6 @@ sage: latex(csc(x))
 sage: latex(cot(x))
 \mbox{\cot}\left(x\right)
 ```
-
 
 
 
@@ -90,7 +88,7 @@ archive/issue_events_014674.json:
 archive/issue_comments_049970.json:
 ```json
 {
-    "body": "Is this a bug in ginac/pynac?  Look at this:\n\n```\nsage: SR\nSymbolic Ring\nsage: SR._latex_element_(sin(x))\n'\\\\sin\\\\left(x\\\\right)'\nsage: SR._latex_element_(sec(x))\n'\\\\mbox{\\\\sec}\\\\left(x\\\\right)'\n```\n\nThe method `_latex_element_` is a one-liner:\n\n```\n        return GEx_to_str_latex(&x._gobj)\n```\n\nand I think GEx_to_str_latex is a ginac/pynac thing.  At least, I found it in sage/libs/ginac/decl.pxi.\n\nIt's possible to work around it, I think, with a patch like the attached, but I'm not at all convinced that this is the right way to fix it.  If you think it's okay, feel free to review it, but since I'm not sure, I've labeled it as \"not read for review\".",
+    "body": "Is this a bug in ginac/pynac?  Look at this:\n\n```\nsage: SR\nSymbolic Ring\nsage: SR._latex_element_(sin(x))\n'\\\\sin\\\\left(x\\\\right)'\nsage: SR._latex_element_(sec(x))\n'\\\\mbox{\\\\sec}\\\\left(x\\\\right)'\n```\nThe method `_latex_element_` is a one-liner:\n\n```\n        return GEx_to_str_latex(&x._gobj)\n```\nand I think GEx_to_str_latex is a ginac/pynac thing.  At least, I found it in sage/libs/ginac/decl.pxi.\n\nIt's possible to work around it, I think, with a patch like the attached, but I'm not at all convinced that this is the right way to fix it.  If you think it's okay, feel free to review it, but since I'm not sure, I've labeled it as \"not read for review\".",
     "created_at": "2009-06-12T20:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
@@ -109,13 +107,11 @@ sage: SR._latex_element_(sin(x))
 sage: SR._latex_element_(sec(x))
 '\\mbox{\\sec}\\left(x\\right)'
 ```
-
 The method `_latex_element_` is a one-liner:
 
 ```
         return GEx_to_str_latex(&x._gobj)
 ```
-
 and I think GEx_to_str_latex is a ginac/pynac thing.  At least, I found it in sage/libs/ginac/decl.pxi.
 
 It's possible to work around it, I think, with a patch like the attached, but I'm not at all convinced that this is the right way to fix it.  If you think it's okay, feel free to review it, but since I'm not sure, I've labeled it as "not read for review".

@@ -3,7 +3,7 @@
 archive/issues_005206.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: attach\n\nThis problem is specific to attaching files ending with \".py\" in the notebook.  It does not seem to affect the command-line, or files ending with \".sage\".  Some files that are moved around from different filesystems and editors end up having end-of-line commands that look like: \"\\r\\n\".  These raise a syntax error when attached.  Here is an example (of course you need to change the path):\n\n\n```\ntestfile = file('/home/marshall/Desktop/misc/testrn.py','w')\ntestfile.write('my_var = 2\\r\\n')\ntestfile.close()\nattach /home/marshall/Desktop/misc/testrn.py\n\n    Syntax Error:\n        attach /home/marshall/Desktop/misc/testrn.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5206\n\n",
+    "body": "Assignee: boothby\n\nKeywords: attach\n\nThis problem is specific to attaching files ending with \".py\" in the notebook.  It does not seem to affect the command-line, or files ending with \".sage\".  Some files that are moved around from different filesystems and editors end up having end-of-line commands that look like: \"\\r\\n\".  These raise a syntax error when attached.  Here is an example (of course you need to change the path):\n\n```\ntestfile = file('/home/marshall/Desktop/misc/testrn.py','w')\ntestfile.write('my_var = 2\\r\\n')\ntestfile.close()\nattach /home/marshall/Desktop/misc/testrn.py\n\n    Syntax Error:\n        attach /home/marshall/Desktop/misc/testrn.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5206\n\n",
     "created_at": "2009-02-08T08:18:24Z",
     "labels": [
         "component: notebook",
@@ -22,7 +22,6 @@ Keywords: attach
 
 This problem is specific to attaching files ending with ".py" in the notebook.  It does not seem to affect the command-line, or files ending with ".sage".  Some files that are moved around from different filesystems and editors end up having end-of-line commands that look like: "\r\n".  These raise a syntax error when attached.  Here is an example (of course you need to change the path):
 
-
 ```
 testfile = file('/home/marshall/Desktop/misc/testrn.py','w')
 testfile.write('my_var = 2\r\n')
@@ -32,7 +31,6 @@ attach /home/marshall/Desktop/misc/testrn.py
     Syntax Error:
         attach /home/marshall/Desktop/misc/testrn.py
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5206
 

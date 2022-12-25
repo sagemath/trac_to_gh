@@ -223,7 +223,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078230.json:
 ```json
 {
-    "body": "Your patch seems to work as far as hitting Ctrl-C goes, but if doctesting more than one file, if doctests fail, the entire run fails:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 177, in <module>\n    err = test_file(F)\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 125, in test_file\n    err = test(F, 'doctest ' + opts + extra_opts)\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 84, in test\n    err = check_call(s, shell=True)\n  File \"/scratch/sage-4.3.5/local/lib/python/subprocess.py\", line 488, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command '/scratch/sage-4.3.5/local/bin/sage-doctest  \"devel/sage/sage/combinat/tableau.py\"' returned non-zero exit status 100\n```\n\nI think we want subprocess.call, not check_call; that will allow us to pass the exit code back up if we want to; \"call\" returns the exit code, but check_call either returns or raises CalledProcessError. Of course, if you like, we can catch the exception and just use that information.\n\nAlso, I think we can avoid the shell=True bit, since our command line is so simple: just do\n\n```\nerr = call([os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd), F])\n```\n\nand, on line 127, change 'doctest ' (note the space) to 'doctest'.\n\nFinally, if using the subprocess module, I think we get the genuine return code and there's no need for any \"err = err // 256\" business.",
+    "body": "Your patch seems to work as far as hitting Ctrl-C goes, but if doctesting more than one file, if doctests fail, the entire run fails:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 177, in <module>\n    err = test_file(F)\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 125, in test_file\n    err = test(F, 'doctest ' + opts + extra_opts)\n  File \"/scratch/sage-4.3.5/local/bin/sage-test\", line 84, in test\n    err = check_call(s, shell=True)\n  File \"/scratch/sage-4.3.5/local/lib/python/subprocess.py\", line 488, in check_call\n    raise CalledProcessError(retcode, cmd)\nsubprocess.CalledProcessError: Command '/scratch/sage-4.3.5/local/bin/sage-doctest  \"devel/sage/sage/combinat/tableau.py\"' returned non-zero exit status 100\n```\nI think we want subprocess.call, not check_call; that will allow us to pass the exit code back up if we want to; \"call\" returns the exit code, but check_call either returns or raises CalledProcessError. Of course, if you like, we can catch the exception and just use that information.\n\nAlso, I think we can avoid the shell=True bit, since our command line is so simple: just do\n\n```\nerr = call([os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd), F])\n```\nand, on line 127, change 'doctest ' (note the space) to 'doctest'.\n\nFinally, if using the subprocess module, I think we get the genuine return code and there's no need for any \"err = err // 256\" business.",
     "created_at": "2010-04-13T23:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -246,7 +246,6 @@ Traceback (most recent call last):
     raise CalledProcessError(retcode, cmd)
 subprocess.CalledProcessError: Command '/scratch/sage-4.3.5/local/bin/sage-doctest  "devel/sage/sage/combinat/tableau.py"' returned non-zero exit status 100
 ```
-
 I think we want subprocess.call, not check_call; that will allow us to pass the exit code back up if we want to; "call" returns the exit code, but check_call either returns or raises CalledProcessError. Of course, if you like, we can catch the exception and just use that information.
 
 Also, I think we can avoid the shell=True bit, since our command line is so simple: just do
@@ -254,7 +253,6 @@ Also, I think we can avoid the shell=True bit, since our command line is so simp
 ```
 err = call([os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd), F])
 ```
-
 and, on line 127, change 'doctest ' (note the space) to 'doctest'.
 
 Finally, if using the subprocess module, I think we get the genuine return code and there's no need for any "err = err // 256" business.
@@ -360,7 +358,7 @@ apply on top of trac_8641.patch
 archive/issue_comments_078236.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> This isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).\n\nAh, nice catch. I didn't test with -long. I took your patch and it works properly on my Ubuntu machines and on bsd.math.\n\nwjp, could you take a look at these patches? I think everything is fine, but another opinion would be nice.\n\nAlso, we still should work on sage-ptest; as pointed out at #7995, there's duplicated code there. But at least with this ticket, we can easily use Mercurial's bisect command to track down failing doctests.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> This isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).\n\n\nAh, nice catch. I didn't test with -long. I took your patch and it works properly on my Ubuntu machines and on bsd.math.\n\nwjp, could you take a look at these patches? I think everything is fine, but another opinion would be nice.\n\nAlso, we still should work on sage-ptest; as pointed out at #7995, there's duplicated code there. But at least with this ticket, we can easily use Mercurial's bisect command to track down failing doctests.",
     "created_at": "2010-04-14T03:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -371,6 +369,7 @@ archive/issue_comments_078236.json:
 
 Replying to [comment:9 jhpalmieri]:
 > This isn't quite working for me: I get errors if I do "sage -t -long FILE".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).
+
 
 Ah, nice catch. I didn't test with -long. I took your patch and it works properly on my Ubuntu machines and on bsd.math.
 
@@ -385,7 +384,7 @@ Also, we still should work on sage-ptest; as pointed out at #7995, there's dupli
 archive/issue_comments_078237.json:
 ```json
 {
-    "body": "I wonder if something else could be happening. Possibly by coincidence, 2 is also SIGINT. Could it be that on sage.math the sage-doctest script itself is being killed by the Ctrl-C instead of the doctest it is running?\n\nAfter all, if you trigger one of the other error cases (like regular error failures), they are caught on sage.math properly.\n\nAlso, a transcript from sage.math:\n\n\n```\nsage: os.system(\"true\")\n0\nsage: os.system(\"false\")\n256\nsage: os.system(\"sleep 100\")\n[press Ctrl-C]\n2\n```\n\n\nSo the return values of `os.system` seem to match the specs.",
+    "body": "I wonder if something else could be happening. Possibly by coincidence, 2 is also SIGINT. Could it be that on sage.math the sage-doctest script itself is being killed by the Ctrl-C instead of the doctest it is running?\n\nAfter all, if you trigger one of the other error cases (like regular error failures), they are caught on sage.math properly.\n\nAlso, a transcript from sage.math:\n\n```\nsage: os.system(\"true\")\n0\nsage: os.system(\"false\")\n256\nsage: os.system(\"sleep 100\")\n[press Ctrl-C]\n2\n```\n\nSo the return values of `os.system` seem to match the specs.",
     "created_at": "2010-04-14T12:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -400,7 +399,6 @@ After all, if you trigger one of the other error cases (like regular error failu
 
 Also, a transcript from sage.math:
 
-
 ```
 sage: os.system("true")
 0
@@ -411,7 +409,6 @@ sage: os.system("sleep 100")
 2
 ```
 
-
 So the return values of `os.system` seem to match the specs.
 
 
@@ -421,7 +418,7 @@ So the return values of `os.system` seem to match the specs.
 archive/issue_comments_078238.json:
 ```json
 {
-    "body": "P.S. It does sound like using subprocess.call might be more portable; its docs have fewer warnings about undefined return values.\n\nIt does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line\n\n\n```\nfailed.append(sage_test_command(F)+\" # KeyboardInterrupt\")\n```\n\n\nI'll take a closer look at the patch later today.",
+    "body": "P.S. It does sound like using subprocess.call might be more portable; its docs have fewer warnings about undefined return values.\n\nIt does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line\n\n```\nfailed.append(sage_test_command(F)+\" # KeyboardInterrupt\")\n```\n\nI'll take a closer look at the patch later today.",
     "created_at": "2010-04-14T12:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -434,11 +431,9 @@ P.S. It does sound like using subprocess.call might be more portable; its docs h
 
 It does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line
 
-
 ```
 failed.append(sage_test_command(F)+" # KeyboardInterrupt")
 ```
-
 
 I'll take a closer look at the patch later today.
 
@@ -449,7 +444,7 @@ I'll take a closer look at the patch later today.
 archive/issue_comments_078239.json:
 ```json
 {
-    "body": "Replying to [comment:12 wjp]:\n\n> I'll take a closer look at the patch later today.\n\nDo you recommend any changes to [attachment:trac_8641.patch] or [attachment:trac_8641-part2.patch]?\n\nBy the way, we may need to rebase these for #8891.",
+    "body": "Replying to [comment:12 wjp]:\n\n> I'll take a closer look at the patch later today.\n\n\nDo you recommend any changes to [attachment:trac_8641.patch] or [attachment:trac_8641-part2.patch]?\n\nBy the way, we may need to rebase these for #8891.",
     "created_at": "2010-06-12T09:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -461,6 +456,7 @@ archive/issue_comments_078239.json:
 Replying to [comment:12 wjp]:
 
 > I'll take a closer look at the patch later today.
+
 
 Do you recommend any changes to [attachment:trac_8641.patch] or [attachment:trac_8641-part2.patch]?
 
@@ -508,7 +504,7 @@ Combined patch rebased vs 4.4.4.alpha0 + #8891.  Replaces all previous.
 archive/issue_comments_078241.json:
 ```json
 {
-    "body": "Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by @qed777 created at 2010-06-14 09:32:06\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
+    "body": "Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by @qed777 created at 2010-06-14 09:32:06\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
     "created_at": "2010-06-14T09:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -523,6 +519,7 @@ Replying to [comment:13 mpatel]:
 
 > By the way, we may need to rebase these for #8891.
 
+
 I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].
 
 
@@ -532,7 +529,7 @@ I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased
 archive/issue_comments_078242.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> Replying to [comment:13 mpatel]:\n> \n> > By the way, we may need to rebase these for #8891.\n> \n> I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].\n\nHmm, on 4.4.4.alpha0, I get a hunk reject: on line 123 or so, my copy of sage-test says\n\n```\n   elif os.path.isdir(F) and not (F[:1] == '.') \\\n            and not '#' in F and not os.sep + 'notes' in F:\n```\n\nand your patch says\n\n```\n     elif (os.path.isdir(F) and  not '#' in F and\n           not os.sep + 'notes' in F):\n```\n\n...so somebody changed the backslash line continuation to parentheses. I'll manually fix the hunk and test your patch.",
+    "body": "Replying to [comment:15 mpatel]:\n> Replying to [comment:13 mpatel]:\n> \n> > By the way, we may need to rebase these for #8891.\n\n> \n> I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].\n\n\nHmm, on 4.4.4.alpha0, I get a hunk reject: on line 123 or so, my copy of sage-test says\n\n```\n   elif os.path.isdir(F) and not (F[:1] == '.') \\\n            and not '#' in F and not os.sep + 'notes' in F:\n```\nand your patch says\n\n```\n     elif (os.path.isdir(F) and  not '#' in F and\n           not os.sep + 'notes' in F):\n```\n...so somebody changed the backslash line continuation to parentheses. I'll manually fix the hunk and test your patch.",
     "created_at": "2010-06-15T02:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -545,8 +542,10 @@ Replying to [comment:15 mpatel]:
 > Replying to [comment:13 mpatel]:
 > 
 > > By the way, we may need to rebase these for #8891.
+
 > 
 > I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].
+
 
 Hmm, on 4.4.4.alpha0, I get a hunk reject: on line 123 or so, my copy of sage-test says
 
@@ -554,14 +553,12 @@ Hmm, on 4.4.4.alpha0, I get a hunk reject: on line 123 or so, my copy of sage-te
    elif os.path.isdir(F) and not (F[:1] == '.') \
             and not '#' in F and not os.sep + 'notes' in F:
 ```
-
 and your patch says
 
 ```
      elif (os.path.isdir(F) and  not '#' in F and
            not os.sep + 'notes' in F):
 ```
-
 ...so somebody changed the backslash line continuation to parentheses. I'll manually fix the hunk and test your patch.
 
 
@@ -571,7 +568,7 @@ and your patch says
 archive/issue_comments_078243.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].\n\nI fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without \"-long\", so it seems to work pretty well on my Ubuntu machine.",
+    "body": "Replying to [comment:15 mpatel]:\n> I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].\n\n\nI fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without \"-long\", so it seems to work pretty well on my Ubuntu machine.",
     "created_at": "2010-06-15T03:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -583,6 +580,7 @@ archive/issue_comments_078243.json:
 Replying to [comment:15 mpatel]:
 > I've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].
 
+
 I fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without "-long", so it seems to work pretty well on my Ubuntu machine.
 
 
@@ -592,7 +590,7 @@ I fixed the hunk reject and your patch seems to work fine. The exit codes match 
 archive/issue_comments_078244.json:
 ```json
 {
-    "body": "Replying to [comment:17 ddrake]:\n> I fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without \"-long\", so it seems to work pretty well on my Ubuntu machine.\n\nI tested on bsd.math and the patch works there, too.",
+    "body": "Replying to [comment:17 ddrake]:\n> I fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without \"-long\", so it seems to work pretty well on my Ubuntu machine.\n\n\nI tested on bsd.math and the patch works there, too.",
     "created_at": "2010-06-15T05:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -604,6 +602,7 @@ archive/issue_comments_078244.json:
 Replying to [comment:17 ddrake]:
 > I fixed the hunk reject and your patch seems to work fine. The exit codes match up with what `sage-doctest` says (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception). I tried with individual files, directories, with and without "-long", so it seems to work pretty well on my Ubuntu machine.
 
+
 I tested on bsd.math and the patch works there, too.
 
 
@@ -613,7 +612,7 @@ I tested on bsd.math and the patch works there, too.
 archive/issue_comments_078245.json:
 ```json
 {
-    "body": "Replying to [comment:17 ddrake]:\n> (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception).\n\nShould you still want to try, the example in ticket #7993 will trigger one of those.",
+    "body": "Replying to [comment:17 ddrake]:\n> (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception).\n\n\nShould you still want to try, the example in ticket #7993 will trigger one of those.",
     "created_at": "2010-06-15T08:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -624,6 +623,7 @@ archive/issue_comments_078245.json:
 
 Replying to [comment:17 ddrake]:
 > (although I didn't check exit code 4, since I don't know how to make the doctesting framework raise an exception).
+
 
 Should you still want to try, the example in ticket #7993 will trigger one of those.
 
@@ -692,7 +692,7 @@ Changing assignee from tbd to @dandrake.
 archive/issue_comments_078249.json:
 ```json
 {
-    "body": "mpatel: on line 337 of sage-ptest and line 176 of sage-test, your patch (attachment:trac_8641-doctest_exit_codes.2.patch) always sets err = 2. Can you change that to\n\n```\n   err = 2 | err\n```\n\n? Then, if doctesting a bunch of files and hit ctrl-c, you can tell the difference between \"all the tests that ran passed\" and \"there was at least one doctest failure\". (And other errors that might have happened before you hit ctrl-c.)",
+    "body": "mpatel: on line 337 of sage-ptest and line 176 of sage-test, your patch (attachment:trac_8641-doctest_exit_codes.2.patch) always sets err = 2. Can you change that to\n\n```\n   err = 2 | err\n```\n? Then, if doctesting a bunch of files and hit ctrl-c, you can tell the difference between \"all the tests that ran passed\" and \"there was at least one doctest failure\". (And other errors that might have happened before you hit ctrl-c.)",
     "created_at": "2010-06-16T04:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -706,7 +706,6 @@ mpatel: on line 337 of sage-ptest and line 176 of sage-test, your patch (attachm
 ```
    err = 2 | err
 ```
-
 ? Then, if doctesting a bunch of files and hit ctrl-c, you can tell the difference between "all the tests that ran passed" and "there was at least one doctest failure". (And other errors that might have happened before you hit ctrl-c.)
 
 
@@ -790,7 +789,7 @@ I'll try to find time to take a proper look friday or this weekend, but at first
 archive/issue_comments_078254.json:
 ```json
 {
-    "body": "Replying to [comment:12 wjp]:\n> [subprocess.call] does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line\n> \n> {{{\n> failed.append(sage_test_command(F)+\" # KeyboardInterrupt\")\n> }}}\n\nHrm, I'm not sure this is true -- at least on my Ubuntu machine. With the most recent version of patch, I changed the bit starting at line 84 of sage-test to this:\n\n```\n  try:\n      err = call(s, shell=True)\n      print '%s returned code %s' % (s, err)\n  except KeyboardInterrupt:\n      print '*****sage-text line 87 caught keyboard interrupt'\n      raise\n```\n\nI then ran a doctest (combinat/words/finite_word.py) and in another terminal, sent the called process a SIGINT with\n\n```\nkill -2 `ps ax | grep finite_word | grep sage-doctest | grep python | awk '{print $1}'\n```\n\nThe result is:\n\n```\nsage -t  \"devel/sage/sage/combinat/words/finite_word.py\"\nKeyboardInterrupt -- interrupted after 3.37038588524 seconds!\n/home/drake/s/sage-4.4.4.alpha0-test/local/bin/sage-doctest  \"devel/sage/sage/combinat/words/finite_word.py\" returned code 2\nAborting further tests.\n```\n\nThe \"interrupted after 3.370...\" is from sage-doctest, line 668, which then exits with return code 2. It seems like subprocess.call in this instance notes that the process finished, and dutifully passes on the return code -- without raising a KeyboardInterrupt. Then, on line 95 the `failed.append(sage_test_command(F)+\" # KeyboardInterrupt\")` bit is executed and a KeyboardInterrupt is raised; that causes the \"Aborting further tests\" to be printed.\n\nIf I hit ctrl-c while running the doctest, it gets caught as you would expect:\n\n```\nsage -t  \"devel/sage/sage/combinat/words/finite_word.py\"\n^CKeyboardInterrupt -- interrupted after 2.75523304939 seconds!\n*****sage-text line 87 caught keyboard interrupt\nAborting further tests.\n```\n\n\nWhat is interesting is, if instead of sending SIGINT to the Python sage-doctest process, I send a SIGINT to the *shell* process created by subprocess.call, it seems to do nothing -- the doctest runs normally, finishes, but the return code is -2; this agrees with [the Popen returncode documentation](http://docs.python.org/library/subprocess.html#subprocess.Popen.returncode). Then, the entire process exits with return code 254, which is a bit strange, but at least it's indicating that something strange happened.",
+    "body": "Replying to [comment:12 wjp]:\n> [subprocess.call] does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line\n> \n> \n> ```\n> failed.append(sage_test_command(F)+\" # KeyboardInterrupt\")\n> ```\n\n\nHrm, I'm not sure this is true -- at least on my Ubuntu machine. With the most recent version of patch, I changed the bit starting at line 84 of sage-test to this:\n\n```\n  try:\n      err = call(s, shell=True)\n      print '%s returned code %s' % (s, err)\n  except KeyboardInterrupt:\n      print '*****sage-text line 87 caught keyboard interrupt'\n      raise\n```\nI then ran a doctest (combinat/words/finite_word.py) and in another terminal, sent the called process a SIGINT with\n\n```\nkill -2 `ps ax | grep finite_word | grep sage-doctest | grep python | awk '{print $1}'\n```\nThe result is:\n\n```\nsage -t  \"devel/sage/sage/combinat/words/finite_word.py\"\nKeyboardInterrupt -- interrupted after 3.37038588524 seconds!\n/home/drake/s/sage-4.4.4.alpha0-test/local/bin/sage-doctest  \"devel/sage/sage/combinat/words/finite_word.py\" returned code 2\nAborting further tests.\n```\nThe \"interrupted after 3.370...\" is from sage-doctest, line 668, which then exits with return code 2. It seems like subprocess.call in this instance notes that the process finished, and dutifully passes on the return code -- without raising a KeyboardInterrupt. Then, on line 95 the `failed.append(sage_test_command(F)+\" # KeyboardInterrupt\")` bit is executed and a KeyboardInterrupt is raised; that causes the \"Aborting further tests\" to be printed.\n\nIf I hit ctrl-c while running the doctest, it gets caught as you would expect:\n\n```\nsage -t  \"devel/sage/sage/combinat/words/finite_word.py\"\n^CKeyboardInterrupt -- interrupted after 2.75523304939 seconds!\n*****sage-text line 87 caught keyboard interrupt\nAborting further tests.\n```\n\nWhat is interesting is, if instead of sending SIGINT to the Python sage-doctest process, I send a SIGINT to the *shell* process created by subprocess.call, it seems to do nothing -- the doctest runs normally, finishes, but the return code is -2; this agrees with [the Popen returncode documentation](http://docs.python.org/library/subprocess.html#subprocess.Popen.returncode). Then, the entire process exits with return code 254, which is a bit strange, but at least it's indicating that something strange happened.",
     "created_at": "2010-06-18T03:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
@@ -802,9 +801,11 @@ archive/issue_comments_078254.json:
 Replying to [comment:12 wjp]:
 > [subprocess.call] does throw a KeyboardInterrupt itself when the called program gets a SIGINT, though, so we may have to catch that to execute the line
 > 
-> {{{
+> 
+> ```
 > failed.append(sage_test_command(F)+" # KeyboardInterrupt")
-> }}}
+> ```
+
 
 Hrm, I'm not sure this is true -- at least on my Ubuntu machine. With the most recent version of patch, I changed the bit starting at line 84 of sage-test to this:
 
@@ -816,13 +817,11 @@ Hrm, I'm not sure this is true -- at least on my Ubuntu machine. With the most r
       print '*****sage-text line 87 caught keyboard interrupt'
       raise
 ```
-
 I then ran a doctest (combinat/words/finite_word.py) and in another terminal, sent the called process a SIGINT with
 
 ```
 kill -2 `ps ax | grep finite_word | grep sage-doctest | grep python | awk '{print $1}'
 ```
-
 The result is:
 
 ```
@@ -831,7 +830,6 @@ KeyboardInterrupt -- interrupted after 3.37038588524 seconds!
 /home/drake/s/sage-4.4.4.alpha0-test/local/bin/sage-doctest  "devel/sage/sage/combinat/words/finite_word.py" returned code 2
 Aborting further tests.
 ```
-
 The "interrupted after 3.370..." is from sage-doctest, line 668, which then exits with return code 2. It seems like subprocess.call in this instance notes that the process finished, and dutifully passes on the return code -- without raising a KeyboardInterrupt. Then, on line 95 the `failed.append(sage_test_command(F)+" # KeyboardInterrupt")` bit is executed and a KeyboardInterrupt is raised; that causes the "Aborting further tests" to be printed.
 
 If I hit ctrl-c while running the doctest, it gets caught as you would expect:
@@ -842,7 +840,6 @@ sage -t  "devel/sage/sage/combinat/words/finite_word.py"
 *****sage-text line 87 caught keyboard interrupt
 Aborting further tests.
 ```
-
 
 What is interesting is, if instead of sending SIGINT to the Python sage-doctest process, I send a SIGINT to the *shell* process created by subprocess.call, it seems to do nothing -- the doctest runs normally, finishes, but the return code is -2; this agrees with [the Popen returncode documentation](http://docs.python.org/library/subprocess.html#subprocess.Popen.returncode). Then, the entire process exits with return code 254, which is a bit strange, but at least it's indicating that something strange happened.
 

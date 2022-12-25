@@ -186,7 +186,7 @@ Since my one main concern at #3982 is taken care of, I think this can go in.
 archive/issue_comments_024451.json:
 ```json
 {
-    "body": "There is a reject apllying Nick's first patch:\n\n```\n--- sage-doctest\n+++ sage-doctest\n@@ -218,8 +241,8 @@ def extract_doc(file_name, module):\n             doc = doc_preparse(F[i:j+3])\n         except SyntaxError:\n             doc = F[i:j+3]\n-        if len(doc):\n-            doc = '\"\"\">>> set_random_seed(0L)\\n\\n' + doc[3:]\n+#         if len(doc):\n+#             doc = '\"\"\">>> print \"YYY\"; print random() # ; set_random_seed(0L)\\n\\n' + doc[3:]\n         s += \"\\tr\"+ doc + \"\\n\\n\"\n         F = F[j+3:]\n```\n\nI am attempting to merge this manually.\n\nCheers,\n\nMichael",
+    "body": "There is a reject apllying Nick's first patch:\n\n```\n--- sage-doctest\n+++ sage-doctest\n@@ -218,8 +241,8 @@ def extract_doc(file_name, module):\n             doc = doc_preparse(F[i:j+3])\n         except SyntaxError:\n             doc = F[i:j+3]\n-        if len(doc):\n-            doc = '\"\"\">>> set_random_seed(0L)\\n\\n' + doc[3:]\n+#         if len(doc):\n+#             doc = '\"\"\">>> print \"YYY\"; print random() # ; set_random_seed(0L)\\n\\n' + doc[3:]\n         s += \"\\tr\"+ doc + \"\\n\\n\"\n         F = F[j+3:]\n```\nI am attempting to merge this manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T23:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -211,7 +211,6 @@ There is a reject apllying Nick's first patch:
          s += "\tr"+ doc + "\n\n"
          F = F[j+3:]
 ```
-
 I am attempting to merge this manually.
 
 Cheers,
@@ -247,7 +246,7 @@ Michael
 archive/issue_comments_024453.json:
 ```json
 {
-    "body": "If I merge the patch without the troublesome hunk I see 4 doctests related to the random framework and timeit itself fail:\n\n```\n\tsage -t -long devel/sage/sage/misc/sage_timeit_class.pyx # 7 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_timeit.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/prandom.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/randstate.pyx # 6 doctests failed\n```\n\n\nOh well, life sucks :)\n\nCheers,\n\nMichael",
+    "body": "If I merge the patch without the troublesome hunk I see 4 doctests related to the random framework and timeit itself fail:\n\n```\n\tsage -t -long devel/sage/sage/misc/sage_timeit_class.pyx # 7 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_timeit.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/prandom.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/randstate.pyx # 6 doctests failed\n```\n\nOh well, life sucks :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-05T00:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -264,7 +263,6 @@ If I merge the patch without the troublesome hunk I see 4 doctests related to th
 	sage -t -long devel/sage/sage/misc/prandom.py # 2 doctests failed
 	sage -t -long devel/sage/sage/misc/randstate.pyx # 6 doctests failed
 ```
-
 
 Oh well, life sucks :)
 
@@ -332,7 +330,7 @@ archive/issue_events_007909.json:
 archive/issue_comments_024456.json:
 ```json
 {
-    "body": "For \"sage -sdist\" to work we need to copy ncadoctest.py, sagedoctest.py in sage-make_devel_packages after \n\n```\n  cp -p $SAGE_ROOT/local/bin/SbuildHack.pm $SCRIPTS/\n```\n\nI will take care of this once the patch passes doctests.\n\nCheers,\n\nMichael",
+    "body": "For \"sage -sdist\" to work we need to copy ncadoctest.py, sagedoctest.py in sage-make_devel_packages after \n\n```\n  cp -p $SAGE_ROOT/local/bin/SbuildHack.pm $SCRIPTS/\n```\nI will take care of this once the patch passes doctests.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T08:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -346,7 +344,6 @@ For "sage -sdist" to work we need to copy ncadoctest.py, sagedoctest.py in sage-
 ```
   cp -p $SAGE_ROOT/local/bin/SbuildHack.pm $SCRIPTS/
 ```
-
 I will take care of this once the patch passes doctests.
 
 Cheers,
@@ -360,7 +357,7 @@ Michael
 archive/issue_comments_024457.json:
 ```json
 {
-    "body": "Hi Mike,\n\nthere is one tiny easy to fix doctest issue left:\n\n```\nsage -t -long devel/sage/sage/misc/sage_timeit.py           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/misc/sage_timeit.py\", line 48:\n    sage: sage_timeit(\"a = 2\\nb=131\\nfactor(a^b-1)\", globals(), number=10)\nExpected:\n    '10 loops, best of 3: ... per loop'\nGot:\n    10 loops, best of 3: 18.4 ms per loop\n**********************************************************************\n```\n\nI will fix this via a followup patch.\n\nCheers,\n\nMichael",
+    "body": "Hi Mike,\n\nthere is one tiny easy to fix doctest issue left:\n\n```\nsage -t -long devel/sage/sage/misc/sage_timeit.py           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/misc/sage_timeit.py\", line 48:\n    sage: sage_timeit(\"a = 2\\nb=131\\nfactor(a^b-1)\", globals(), number=10)\nExpected:\n    '10 loops, best of 3: ... per loop'\nGot:\n    10 loops, best of 3: 18.4 ms per loop\n**********************************************************************\n```\nI will fix this via a followup patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T17:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
@@ -384,7 +381,6 @@ Got:
     10 loops, best of 3: 18.4 ms per loop
 **********************************************************************
 ```
-
 I will fix this via a followup patch.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_008489.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dandrake @zimmermann6\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake @zimmermann6\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
     "created_at": "2010-03-10T15:24:32Z",
     "labels": [
         "component: documentation"
@@ -23,7 +23,6 @@ Keywords: sagetex, doctest
 
 The attached patch for sagetex adds a new sageexample environment for sagetex:
 
-
 ```
 \begin{sageexample}
   sage: 1+1
@@ -32,7 +31,6 @@ The attached patch for sagetex adds a new sageexample environment for sagetex:
   x^3
 \end{sageexample}
 ```
-
 
 The (ultimate) goal is to allow for straightforward copy paste of
 pieces of sage doctests into one's latex document. See the attached
@@ -183,7 +181,7 @@ I have had troubles getting doctesting to work -- every time I try `sage -t my_f
 archive/issue_comments_076418.json:
 ```json
 {
-    "body": "Replying to [comment:4 ddrake]:\n> Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.\n\nAh, great, thanks for the link! I googled for it, somehow missed it, and went for the quickest way to send you a patch.",
+    "body": "Replying to [comment:4 ddrake]:\n> Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.\n\n\nAh, great, thanks for the link! I googled for it, somehow missed it, and went for the quickest way to send you a patch.",
     "created_at": "2010-03-17T22:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -195,6 +193,7 @@ archive/issue_comments_076418.json:
 Replying to [comment:4 ddrake]:
 > Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.
 
+
 Ah, great, thanks for the link! I googled for it, somehow missed it, and went for the quickest way to send you a patch.
 
 
@@ -204,7 +203,7 @@ Ah, great, thanks for the link! I googled for it, somehow missed it, and went fo
 archive/issue_comments_076419.json:
 ```json
 {
-    "body": "Replying to [comment:3 ddrake]:\n> Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)\n\nYeah, I am not patient, and did kill pdflatex the hard way a couple times while trying things around :-)",
+    "body": "Replying to [comment:3 ddrake]:\n> Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)\n\n\nYeah, I am not patient, and did kill pdflatex the hard way a couple times while trying things around :-)",
     "created_at": "2010-03-17T22:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -216,6 +215,7 @@ archive/issue_comments_076419.json:
 Replying to [comment:3 ddrake]:
 > Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)
 
+
 Yeah, I am not patient, and did kill pdflatex the hard way a couple times while trying things around :-)
 
 
@@ -225,7 +225,7 @@ Yeah, I am not patient, and did kill pdflatex the hard way a couple times while 
 archive/issue_comments_076420.json:
 ```json
 {
-    "body": "Replying to [comment:5 ddrake]:\n> I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a \"mysterious error\". Same thing if I try with the .py file. \n\nYeah, just reusing my_file.sage looked cool, and worked on trivial examples, but that is not robust. I am about to upload a new patch which produces a separate file with just the doctests, and that seems to work fine (and is probably more readable by the user in case of trouble).",
+    "body": "Replying to [comment:5 ddrake]:\n> I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a \"mysterious error\". Same thing if I try with the .py file. \n\n\nYeah, just reusing my_file.sage looked cool, and worked on trivial examples, but that is not robust. I am about to upload a new patch which produces a separate file with just the doctests, and that seems to work fine (and is probably more readable by the user in case of trouble).",
     "created_at": "2010-03-17T23:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -236,6 +236,7 @@ archive/issue_comments_076420.json:
 
 Replying to [comment:5 ddrake]:
 > I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a "mysterious error". Same thing if I try with the .py file. 
+
 
 Yeah, just reusing my_file.sage looked cool, and worked on trivial examples, but that is not robust. I am about to upload a new patch which produces a separate file with just the doctests, and that seems to work fine (and is probably more readable by the user in case of trouble).
 
@@ -322,7 +323,7 @@ This should be closed when #8605 is merged (possibly just closed now, since the 
 archive/issue_comments_076425.json:
 ```json
 {
-    "body": "For reference: Copy-paste from a PDF document to a Sage session won't necessarily work. That is, if a sageexample environment contains strings defined using (simple) quotes, those quotes can be rendered in PDF by differents characters: backquotes and quotes. The encoding used in TeX sources files seems to have its role here.\n\n\n```\n\\documentclass[12pt]{book}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\\usepackage{sagetex}\n\\usepackage[frenchb]{babel}\n\\begin{document}\n\\begin{sageexample}\n    sage: x, y, a, b, c, d = var('x y a b c d')\n\\end{sageexample}\n\\end{document}\n```\n\nReplying to [ticket:8489 nthiery]:\n\n> The (ultimate) goal is to allow for straightforward copy paste of pieces of sage doctests into one's latex document. See the attached pdf (the sources of which are included in the patch) for details.^^",
+    "body": "For reference: Copy-paste from a PDF document to a Sage session won't necessarily work. That is, if a sageexample environment contains strings defined using (simple) quotes, those quotes can be rendered in PDF by differents characters: backquotes and quotes. The encoding used in TeX sources files seems to have its role here.\n\n```\n\\documentclass[12pt]{book}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\\usepackage{sagetex}\n\\usepackage[frenchb]{babel}\n\\begin{document}\n\\begin{sageexample}\n    sage: x, y, a, b, c, d = var('x y a b c d')\n\\end{sageexample}\n\\end{document}\n```\nReplying to [ticket:8489 nthiery]:\n\n> The (ultimate) goal is to allow for straightforward copy paste of pieces of sage doctests into one's latex document. See the attached pdf (the sources of which are included in the patch) for details.^^",
     "created_at": "2010-03-30T21:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -332,7 +333,6 @@ archive/issue_comments_076425.json:
 ```
 
 For reference: Copy-paste from a PDF document to a Sage session won't necessarily work. That is, if a sageexample environment contains strings defined using (simple) quotes, those quotes can be rendered in PDF by differents characters: backquotes and quotes. The encoding used in TeX sources files seems to have its role here.
-
 
 ```
 \documentclass[12pt]{book}
@@ -347,7 +347,6 @@ For reference: Copy-paste from a PDF document to a Sage session won't necessaril
 \end{sageexample}
 \end{document}
 ```
-
 Replying to [ticket:8489 nthiery]:
 
 > The (ultimate) goal is to allow for straightforward copy paste of pieces of sage doctests into one's latex document. See the attached pdf (the sources of which are included in the patch) for details.^^
@@ -419,7 +418,7 @@ Seems to be a bug, no?
 archive/issue_comments_076429.json:
 ```json
 {
-    "body": "Replying to [comment:13 jason]:\n> ddrake: what do you say about the last comment about quotes being changed?\n\nI'm not sure how to fix that. I don't think it's an issue about encoding in the document; a single straight quote (ASCII character 39) should be the same in any non-crazy encoding, since all reasonable encodings that I know of agree for characters 0 to 127.\n\nThe issue, I think, is the character that gets put into the final PDF. I'm not sure how to bypass the usual TeX behavior of turning single quotes into curly final quotes.\n\nIn any case, Nicolas' original goal is cut and paste from Sage into a LaTeX document, which works now.\n\nIf this is a highly desired feature, I could work on it, but since cut and paste of things with single quotes generally doesn't work from TeX-generated PDFs anyway, I'm not sure how important this should be.",
+    "body": "Replying to [comment:13 jason]:\n> ddrake: what do you say about the last comment about quotes being changed?\n\n\nI'm not sure how to fix that. I don't think it's an issue about encoding in the document; a single straight quote (ASCII character 39) should be the same in any non-crazy encoding, since all reasonable encodings that I know of agree for characters 0 to 127.\n\nThe issue, I think, is the character that gets put into the final PDF. I'm not sure how to bypass the usual TeX behavior of turning single quotes into curly final quotes.\n\nIn any case, Nicolas' original goal is cut and paste from Sage into a LaTeX document, which works now.\n\nIf this is a highly desired feature, I could work on it, but since cut and paste of things with single quotes generally doesn't work from TeX-generated PDFs anyway, I'm not sure how important this should be.",
     "created_at": "2010-04-20T06:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -430,6 +429,7 @@ archive/issue_comments_076429.json:
 
 Replying to [comment:13 jason]:
 > ddrake: what do you say about the last comment about quotes being changed?
+
 
 I'm not sure how to fix that. I don't think it's an issue about encoding in the document; a single straight quote (ASCII character 39) should be the same in any non-crazy encoding, since all reasonable encodings that I know of agree for characters 0 to 127.
 
@@ -446,7 +446,7 @@ If this is a highly desired feature, I could work on it, but since cut and paste
 archive/issue_comments_076430.json:
 ```json
 {
-    "body": "Replying to [comment:14 mmeulien]:\n> The following has no effect on sageexample environments:\n> \n> \\setlength{\\sagetexindent}{15ex}\n> \n> Seems to be a bug, no?\n\nHmmm. I tried to get the indent to work, but adding an hspace in the obvious places didn't work. I can investigate this more, but one problem is that the example environment works in a completely different way than the other verbatim-like environments. I'll look into this and see if I can figure it out. Changing the parindent might work.",
+    "body": "Replying to [comment:14 mmeulien]:\n> The following has no effect on sageexample environments:\n> \n> \\setlength{\\sagetexindent}{15ex}\n> \n> Seems to be a bug, no?\n\n\nHmmm. I tried to get the indent to work, but adding an hspace in the obvious places didn't work. I can investigate this more, but one problem is that the example environment works in a completely different way than the other verbatim-like environments. I'll look into this and see if I can figure it out. Changing the parindent might work.",
     "created_at": "2010-04-20T07:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
@@ -461,6 +461,7 @@ Replying to [comment:14 mmeulien]:
 > \setlength{\sagetexindent}{15ex}
 > 
 > Seems to be a bug, no?
+
 
 Hmmm. I tried to get the indent to work, but adding an hspace in the obvious places didn't work. I can investigate this more, but one problem is that the example environment works in a completely different way than the other verbatim-like environments. I'll look into this and see if I can figure it out. Changing the parindent might work.
 

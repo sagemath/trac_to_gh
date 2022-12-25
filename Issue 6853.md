@@ -3,7 +3,7 @@
 archive/issues_006853.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThere is an incomplete closing script tag in `server/notebook/templates/notebook/head.tmpl`:\n\n```\n<script type=\"text/javascript\" src=\"/javascript/sage3d.js\"></script\n```\n\n\nI don't know if this actually affects any rendering engine.  I just noticed it when viewing the source for a worksheet page in Firefox.\n\nThis depends on #6568.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6853\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThere is an incomplete closing script tag in `server/notebook/templates/notebook/head.tmpl`:\n\n```\n<script type=\"text/javascript\" src=\"/javascript/sage3d.js\"></script\n```\n\nI don't know if this actually affects any rendering engine.  I just noticed it when viewing the source for a worksheet page in Firefox.\n\nThis depends on #6568.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6853\n\n",
     "created_at": "2009-08-31T22:09:05Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ There is an incomplete closing script tag in `server/notebook/templates/notebook
 ```
 <script type="text/javascript" src="/javascript/sage3d.js"></script
 ```
-
 
 I don't know if this actually affects any rendering engine.  I just noticed it when viewing the source for a worksheet page in Firefox.
 
@@ -64,7 +63,7 @@ Apply only this patch.
 archive/issue_comments_056399.json:
 ```json
 {
-    "body": "I'm not sure about why these lines appear in the patch:\n\n```\n-{% endmacro %}\n\\ No newline at end of file\n+{% endmacro %}\n```\n\nThese also appear in the new patch at #6459.",
+    "body": "I'm not sure about why these lines appear in the patch:\n\n```\n-{% endmacro %}\n\\ No newline at end of file\n+{% endmacro %}\n```\nThese also appear in the new patch at #6459.",
     "created_at": "2009-08-31T22:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6853",
     "type": "issue_comment",
@@ -80,7 +79,6 @@ I'm not sure about why these lines appear in the patch:
 \ No newline at end of file
 +{% endmacro %}
 ```
-
 These also appear in the new patch at #6459.
 
 

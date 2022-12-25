@@ -3,7 +3,7 @@
 archive/issues_007313.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @dandrake\n\nHello !!!\n\nOut of curiosity, I tried to look for a function I knew in Sage :\n\n```\nsage: search_doc(\"Floyd-Warshall\")\nhtml/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall algorithm to find a shortest weighted path\nsage: search_doc(\"Floyd-Warshall\",\"pair\")\nsage: Graph.shortest_path_all_pairs?\n```\n\n\nI understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7313\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nHello !!!\n\nOut of curiosity, I tried to look for a function I knew in Sage :\n\n```\nsage: search_doc(\"Floyd-Warshall\")\nhtml/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall algorithm to find a shortest weighted path\nsage: search_doc(\"Floyd-Warshall\",\"pair\")\nsage: Graph.shortest_path_all_pairs?\n```\n\nI understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7313\n\n",
     "created_at": "2009-10-26T13:44:46Z",
     "labels": [
         "component: documentation",
@@ -31,7 +31,6 @@ html/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall alg
 sage: search_doc("Floyd-Warshall","pair")
 sage: Graph.shortest_path_all_pairs?
 ```
-
 
 I understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.
 
@@ -156,7 +155,7 @@ archive/issue_events_017328.json:
 archive/issue_comments_060998.json:
 ```json
 {
-    "body": "Here's a patch implementing a \"multiline\" keyword for searches, so you can do\n\n```\nsage: print search_src('dhsw', 'betti', interact=False)\n\nsage: print search_src('dhsw', 'betti', interact=False, multiline=True)\nhomology/chain_complex.py\nhomology/simplicial_complex.py\n\n```\n\n(With multiline searches, it doesn't return line numbers, just the file names.)",
+    "body": "Here's a patch implementing a \"multiline\" keyword for searches, so you can do\n\n```\nsage: print search_src('dhsw', 'betti', interact=False)\n\nsage: print search_src('dhsw', 'betti', interact=False, multiline=True)\nhomology/chain_complex.py\nhomology/simplicial_complex.py\n\n```\n(With multiline searches, it doesn't return line numbers, just the file names.)",
     "created_at": "2010-01-20T04:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
@@ -175,7 +174,6 @@ homology/chain_complex.py
 homology/simplicial_complex.py
 
 ```
-
 (With multiline searches, it doesn't return line numbers, just the file names.)
 
 
@@ -205,7 +203,7 @@ depends on #7018
 archive/issue_comments_061000.json:
 ```json
 {
-    "body": "Tested this on sage-4.3.2.alpha0 with trac_7313-multiline.patch \n(tried the patch in ticket #7018 but that had errors)\n\nLook for occurrences of \"Pseudo\". We find two occurrences.\n\n```\nsage: search_src(\"Pseudo-\")\ncombinat/words/word.py:2655:        -   [2] V. Anne, L.Q. Zamboni, I. Zorca, Palindromes and Pseudo-\ncombinat/words/word.py:2656:            Palindromes in Episturmian and Pseudo-Palindromic Infinite Words,\nrings/all.py:122:# Pseudo-ring of PARI objects.\ndatabases/compressed_storage.py:113:        Pseudo-acquisition for base's stuff that we don't\n```\n\n\nNext, search for a multiline ocurrence of \"Pseudo-Palindromes\" which should occur over lines 2655-2656 in word.py according to the last search. (Note: the 2nd line is prefixed with whitespace)\n\n\n```\nsage: search_src(\"Pseudo-Palindromes\", multiline=True) # finds nothing\n\n```\n\n\nNot sure if the problem is due to the patch mentioned in #7018 needs including and updating for alpha0, or this ticket needs more work or theres something Ive missed.",
+    "body": "Tested this on sage-4.3.2.alpha0 with trac_7313-multiline.patch \n(tried the patch in ticket #7018 but that had errors)\n\nLook for occurrences of \"Pseudo\". We find two occurrences.\n\n```\nsage: search_src(\"Pseudo-\")\ncombinat/words/word.py:2655:        -   [2] V. Anne, L.Q. Zamboni, I. Zorca, Palindromes and Pseudo-\ncombinat/words/word.py:2656:            Palindromes in Episturmian and Pseudo-Palindromic Infinite Words,\nrings/all.py:122:# Pseudo-ring of PARI objects.\ndatabases/compressed_storage.py:113:        Pseudo-acquisition for base's stuff that we don't\n```\n\nNext, search for a multiline ocurrence of \"Pseudo-Palindromes\" which should occur over lines 2655-2656 in word.py according to the last search. (Note: the 2nd line is prefixed with whitespace)\n\n```\nsage: search_src(\"Pseudo-Palindromes\", multiline=True) # finds nothing\n\n```\n\nNot sure if the problem is due to the patch mentioned in #7018 needs including and updating for alpha0, or this ticket needs more work or theres something Ive missed.",
     "created_at": "2010-01-30T13:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
@@ -227,15 +225,12 @@ rings/all.py:122:# Pseudo-ring of PARI objects.
 databases/compressed_storage.py:113:        Pseudo-acquisition for base's stuff that we don't
 ```
 
-
 Next, search for a multiline ocurrence of "Pseudo-Palindromes" which should occur over lines 2655-2656 in word.py according to the last search. (Note: the 2nd line is prefixed with whitespace)
-
 
 ```
 sage: search_src("Pseudo-Palindromes", multiline=True) # finds nothing
 
 ```
-
 
 Not sure if the problem is due to the patch mentioned in #7018 needs including and updating for alpha0, or this ticket needs more work or theres something Ive missed.
 
@@ -246,7 +241,7 @@ Not sure if the problem is due to the patch mentioned in #7018 needs including a
 archive/issue_comments_061001.json:
 ```json
 {
-    "body": "> Tested this on sage-4.3.2.alpha0 with trac_7313-multiline.patch (tried the patch in ticket #7018 but that had errors)\n\n(The patch from #7018 is already part of 4.3.2.alpha0, which is probably why applying it gave you errors.)\n\nSince the string \"Pseudo-Palindromes\" doesn't appear, I think it is correct that searching for it returns nothing.  Try this instead:\n\n```\nsage: search_src(\"Pseudo-\", \"Palindromes\", multiline=True)\n```\n\nActually, though, Pseudo- and Palindromes appear on the same line, so this isn't the best test case.  How about\n\n```\nsage: search_src(\"Zamboni\", \"Infinite\")\n\nsage: search_src(\"Zamboni\", \"Infinite\", multiline=True)\ncombinat/words/word.py\n```\n",
+    "body": "> Tested this on sage-4.3.2.alpha0 with trac_7313-multiline.patch (tried the patch in ticket #7018 but that had errors)\n\n\n(The patch from #7018 is already part of 4.3.2.alpha0, which is probably why applying it gave you errors.)\n\nSince the string \"Pseudo-Palindromes\" doesn't appear, I think it is correct that searching for it returns nothing.  Try this instead:\n\n```\nsage: search_src(\"Pseudo-\", \"Palindromes\", multiline=True)\n```\nActually, though, Pseudo- and Palindromes appear on the same line, so this isn't the best test case.  How about\n\n```\nsage: search_src(\"Zamboni\", \"Infinite\")\n\nsage: search_src(\"Zamboni\", \"Infinite\", multiline=True)\ncombinat/words/word.py\n```",
     "created_at": "2010-01-30T16:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
@@ -257,6 +252,7 @@ archive/issue_comments_061001.json:
 
 > Tested this on sage-4.3.2.alpha0 with trac_7313-multiline.patch (tried the patch in ticket #7018 but that had errors)
 
+
 (The patch from #7018 is already part of 4.3.2.alpha0, which is probably why applying it gave you errors.)
 
 Since the string "Pseudo-Palindromes" doesn't appear, I think it is correct that searching for it returns nothing.  Try this instead:
@@ -264,7 +260,6 @@ Since the string "Pseudo-Palindromes" doesn't appear, I think it is correct that
 ```
 sage: search_src("Pseudo-", "Palindromes", multiline=True)
 ```
-
 Actually, though, Pseudo- and Palindromes appear on the same line, so this isn't the best test case.  How about
 
 ```
@@ -273,7 +268,6 @@ sage: search_src("Zamboni", "Infinite")
 sage: search_src("Zamboni", "Infinite", multiline=True)
 combinat/words/word.py
 ```
-
 
 
 
@@ -318,7 +312,7 @@ Quick note: `multiline = kwds.get('multiline', False)`, etc., should also work.
 archive/issue_comments_061004.json:
 ```json
 {
-    "body": "(Confirming positive review). \nTried a number of tests, verified using egrep and all worked (including using options such as path_re and ignore_case). Representative test below. \n\n\n```\nsage: search_src(\"Labbe\",path_re=\".*py\") # returned a few occurences including in word.py (not shown)\n\nsage: search_src(\"Pirillo\",path_re=\".*py\") \ncombinat/words/word_generators.py:753:        -   [1] X. Droubay, J. Justin, G. Pirillo, Episturmian words and some\ncombinat/words/word_generators.py:756:        -   [2] J. Justin, G. Pirillo, Episturmian words and episturmian\ncombinat/words/word.py:2875:        -   [3] X. Droubay, J. Justin, G. Pirillo, Episturmian words and\n\nsage: search_src(\"Pirillo\",\"Labbe\",path_re=\".*py\") # not found (on same line)\n\nsage: search_src(\"Pirillo\",\"Labbe\",multiline=True,path_re=\".*py\") # Expect one occurence and found one.\ncombinat/words/word_generators.py\n```\n",
+    "body": "(Confirming positive review). \nTried a number of tests, verified using egrep and all worked (including using options such as path_re and ignore_case). Representative test below. \n\n```\nsage: search_src(\"Labbe\",path_re=\".*py\") # returned a few occurences including in word.py (not shown)\n\nsage: search_src(\"Pirillo\",path_re=\".*py\") \ncombinat/words/word_generators.py:753:        -   [1] X. Droubay, J. Justin, G. Pirillo, Episturmian words and some\ncombinat/words/word_generators.py:756:        -   [2] J. Justin, G. Pirillo, Episturmian words and episturmian\ncombinat/words/word.py:2875:        -   [3] X. Droubay, J. Justin, G. Pirillo, Episturmian words and\n\nsage: search_src(\"Pirillo\",\"Labbe\",path_re=\".*py\") # not found (on same line)\n\nsage: search_src(\"Pirillo\",\"Labbe\",multiline=True,path_re=\".*py\") # Expect one occurence and found one.\ncombinat/words/word_generators.py\n```",
     "created_at": "2010-01-31T03:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
@@ -329,7 +323,6 @@ archive/issue_comments_061004.json:
 
 (Confirming positive review). 
 Tried a number of tests, verified using egrep and all worked (including using options such as path_re and ignore_case). Representative test below. 
-
 
 ```
 sage: search_src("Labbe",path_re=".*py") # returned a few occurences including in word.py (not shown)
@@ -344,7 +337,6 @@ sage: search_src("Pirillo","Labbe",path_re=".*py") # not found (on same line)
 sage: search_src("Pirillo","Labbe",multiline=True,path_re=".*py") # Expect one occurence and found one.
 combinat/words/word_generators.py
 ```
-
 
 
 

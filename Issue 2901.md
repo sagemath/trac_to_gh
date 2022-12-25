@@ -91,7 +91,7 @@ One quibble: could the module comment make it clear why this is in Cython and no
 archive/issue_comments_019955.json:
 ```json
 {
-    "body": "Ok, I tracked down the issue for the reject of hunk two in worksheet.py. It expects:\n\n```\nif t.startswith('load_session'):\n    filename = self.hunt_file(filename)\n```\n\nBut the file contains:\n\n```\nfilename = self.hunt_file(filename)\n```\n\nI am deleting hunk two as is and then apply the rest of the patch.\n\nCheers,\n\nMichael",
+    "body": "Ok, I tracked down the issue for the reject of hunk two in worksheet.py. It expects:\n\n```\nif t.startswith('load_session'):\n    filename = self.hunt_file(filename)\n```\nBut the file contains:\n\n```\nfilename = self.hunt_file(filename)\n```\nI am deleting hunk two as is and then apply the rest of the patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T16:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2901",
     "type": "issue_comment",
@@ -106,13 +106,11 @@ Ok, I tracked down the issue for the reject of hunk two in worksheet.py. It expe
 if t.startswith('load_session'):
     filename = self.hunt_file(filename)
 ```
-
 But the file contains:
 
 ```
 filename = self.hunt_file(filename)
 ```
-
 I am deleting hunk two as is and then apply the rest of the patch.
 
 Cheers,

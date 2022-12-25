@@ -3,7 +3,7 @@
 archive/issues_005210.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nPASS: t-assign \nPASS: t-binary \nPASS: t-cast \nPASS: t-constr \nPASS: t-headers \nPASS: t-istream \nistream mpf_t operator>> wrong \n  point , \n  str   \"1,\" \n  got   123 \n  want  1 \n  localeconv point \",\" \n/bin/sh: line 1: 13352 Abort trap              ${dir}$tst \nFAIL: t-locale \nPASS: t-misc \nPASS: t-ops \nPASS: t-ostream \nPASS: t-prec \nPASS: t-rand \nPASS: t-ternary \nPASS: t-unary \n============================================================= \n1 of 14 tests failed \nPlease report to http://groups.google.co.uk/group/mpir-devel/ \n============================================================= \nmake[6]: *** [check-TESTS] Error 1 \nmake[5]: *** [check-am] Error 2 \nmake[4]: *** [check-recursive] Error 1 \nmake[3]: *** [check-recursive] Error 1 \nmake[2]: *** [check] Error 2 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5210\n\n",
+    "body": "Assignee: mabshoff\n\n```\nPASS: t-assign \nPASS: t-binary \nPASS: t-cast \nPASS: t-constr \nPASS: t-headers \nPASS: t-istream \nistream mpf_t operator>> wrong \n  point , \n  str   \"1,\" \n  got   123 \n  want  1 \n  localeconv point \",\" \n/bin/sh: line 1: 13352 Abort trap              ${dir}$tst \nFAIL: t-locale \nPASS: t-misc \nPASS: t-ops \nPASS: t-ostream \nPASS: t-prec \nPASS: t-rand \nPASS: t-ternary \nPASS: t-unary \n============================================================= \n1 of 14 tests failed \nPlease report to http://groups.google.co.uk/group/mpir-devel/ \n============================================================= \nmake[6]: *** [check-TESTS] Error 1 \nmake[5]: *** [check-am] Error 2 \nmake[4]: *** [check-recursive] Error 1 \nmake[3]: *** [check-recursive] Error 1 \nmake[2]: *** [check] Error 2 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5210\n\n",
     "created_at": "2009-02-08T20:17:37Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_005210.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 PASS: t-assign 
@@ -52,7 +51,6 @@ make[4]: *** [check-recursive] Error 1
 make[3]: *** [check-recursive] Error 1 
 make[2]: *** [check] Error 2 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5210
 
@@ -133,7 +131,7 @@ Changing status from new to assigned.
 archive/issue_comments_039841.json:
 ```json
 {
-    "body": "Success for me.\n\n\n```\n~/Devel/sage-3.2.3 $ uname -a\nDarwin pv139196.reshsg.uci.edu 9.5.0 Darwin Kernel Version 9.5.0: Wed Sep  3 11:29:43 PDT 2008; root:xnu-1228.7.58~1/RELEASE_I386 i386 i386\n```\n\n\nLog at [http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log](http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log).",
+    "body": "Success for me.\n\n```\n~/Devel/sage-3.2.3 $ uname -a\nDarwin pv139196.reshsg.uci.edu 9.5.0 Darwin Kernel Version 9.5.0: Wed Sep  3 11:29:43 PDT 2008; root:xnu-1228.7.58~1/RELEASE_I386 i386 i386\n```\n\nLog at [http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log](http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log).",
     "created_at": "2009-02-11T05:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5210",
     "type": "issue_comment",
@@ -144,12 +142,10 @@ archive/issue_comments_039841.json:
 
 Success for me.
 
-
 ```
 ~/Devel/sage-3.2.3 $ uname -a
 Darwin pv139196.reshsg.uci.edu 9.5.0 Darwin Kernel Version 9.5.0: Wed Sep  3 11:29:43 PDT 2008; root:xnu-1228.7.58~1/RELEASE_I386 i386 i386
 ```
-
 
 Log at [http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log](http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log).
 

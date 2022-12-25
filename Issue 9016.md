@@ -3,7 +3,7 @@
 archive/issues_009016.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
     "created_at": "2010-05-22T15:36:30Z",
     "labels": [
         "component: algebra",
@@ -22,12 +22,10 @@ CC:  @robertwb
 
 Attached patch makes morphisms hashable in a reasonably fast way by defining the following:
 
-
 ```
     def __hash__(self):
         return hash((self._domain, self._codomain))
 ```
-
 
 It also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.
 
@@ -80,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083261.json:
 ```json
 {
-    "body": "There seems to be a problem with inheriting `__hash__()` methods. The class `sage.categories.morphism.SetMorphism` derives from `sage.categories.morphism.Morphism` which in turn derives from `sage.categories.map.Map`.\n\nEven after adding a `__hash__()` method to `sage.categories.map.Map`, instances of `SetMorphism` are not hashable:\n\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: X.<x> = ZZ[]\nsage: Y = ZZ\nsage: phi = SetMorphism(Hom(X, Y, Rings()), lambda p: p[0])\nsage: hash(phi)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/sage/sage-4.4.1.alpha2-patched/<ipython console> in <module>()\n\nTypeError: unhashable type: 'sage.categories.morphism.SetMorphism'\n```\n\n\nNote also that `sage.categories.map.Map` derives from `sage.structure.element.Element` which also has a `__hash__()` method.\n\nAny hints?",
+    "body": "There seems to be a problem with inheriting `__hash__()` methods. The class `sage.categories.morphism.SetMorphism` derives from `sage.categories.morphism.Morphism` which in turn derives from `sage.categories.map.Map`.\n\nEven after adding a `__hash__()` method to `sage.categories.map.Map`, instances of `SetMorphism` are not hashable:\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: X.<x> = ZZ[]\nsage: Y = ZZ\nsage: phi = SetMorphism(Hom(X, Y, Rings()), lambda p: p[0])\nsage: hash(phi)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/sage/sage-4.4.1.alpha2-patched/<ipython console> in <module>()\n\nTypeError: unhashable type: 'sage.categories.morphism.SetMorphism'\n```\n\nNote also that `sage.categories.map.Map` derives from `sage.structure.element.Element` which also has a `__hash__()` method.\n\nAny hints?",
     "created_at": "2010-05-22T15:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -92,7 +90,6 @@ archive/issue_comments_083261.json:
 There seems to be a problem with inheriting `__hash__()` methods. The class `sage.categories.morphism.SetMorphism` derives from `sage.categories.morphism.Morphism` which in turn derives from `sage.categories.map.Map`.
 
 Even after adding a `__hash__()` method to `sage.categories.map.Map`, instances of `SetMorphism` are not hashable:
-
 
 ```
 sage: from sage.categories.morphism import SetMorphism
@@ -107,7 +104,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unhashable type: 'sage.categories.morphism.SetMorphism'
 ```
-
 
 Note also that `sage.categories.map.Map` derives from `sage.structure.element.Element` which also has a `__hash__()` method.
 
@@ -176,7 +172,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083265.json:
 ```json
 {
-    "body": "This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\n```\nsage -t  \"devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\", line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[11]>\", line 1, in <module>\n        Q._coerce_map_from_(V.scale(Integer(2)))###line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/fg_pid/fgp_module.py\", line 388, in _coerce_map_from_\n        return bool(self._V._coerce_map_from_(S))\n      File \"element.pyx\", line 741, in sage.structure.element.Element.__nonzero__ (sage/structure/element.c:5731)\n      File \"element.pyx\", line 863, in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7107)\n      File \"element.pyx\", line 835, in sage.structure.element.Element._richcmp (sage/structure/element.c:6989)\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/matrix_morphism.py\", line 111, in __cmp__\n        return cmp(self.matrix(), other.matrix())\n      File \"element.pyx\", line 306, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)\n      File \"parent.pyx\", line 268, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)\n      File \"parent.pyx\", line 170, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)\n    AttributeError: 'sage.categories.morphism.CallMorphism' object has no attribute 'matrix'\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_7\n***Test Failed*** 1 failures.\n```\n",
+    "body": "This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\n```\nsage -t  \"devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\", line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[11]>\", line 1, in <module>\n        Q._coerce_map_from_(V.scale(Integer(2)))###line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/fg_pid/fgp_module.py\", line 388, in _coerce_map_from_\n        return bool(self._V._coerce_map_from_(S))\n      File \"element.pyx\", line 741, in sage.structure.element.Element.__nonzero__ (sage/structure/element.c:5731)\n      File \"element.pyx\", line 863, in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7107)\n      File \"element.pyx\", line 835, in sage.structure.element.Element._richcmp (sage/structure/element.c:6989)\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/matrix_morphism.py\", line 111, in __cmp__\n        return cmp(self.matrix(), other.matrix())\n      File \"element.pyx\", line 306, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)\n      File \"parent.pyx\", line 268, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)\n      File \"parent.pyx\", line 170, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)\n    AttributeError: 'sage.categories.morphism.CallMorphism' object has no attribute 'matrix'\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_7\n***Test Failed*** 1 failures.\n```",
     "created_at": "2010-07-01T08:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -219,7 +215,6 @@ Exception raised:
    1 of  12 in __main__.example_7
 ***Test Failed*** 1 failures.
 ```
-
 
 
 
@@ -282,7 +277,7 @@ apply only this patch
 archive/issue_comments_083269.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by @burcin created at 2010-09-13 10:22:41\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
+    "body": "Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by @burcin created at 2010-09-13 10:22:41\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
     "created_at": "2010-09-13T10:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -295,6 +290,7 @@ Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/som
 
 Replying to [comment:5 davidloeffler]:
 > This patch causes a doctest failure on vanilla Sage 4.5.alpha1: 
+
 
 I uploaded a new patch which fixes this.
 
@@ -385,7 +381,7 @@ I'm not so sure this is a good generic hash function--it means that all morphism
 archive/issue_comments_083274.json:
 ```json
 {
-    "body": "Replying to [comment:9 robertwb]:\n> I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing. \n\nI looked over the patch once more. The hash functions defined here use all the information I see in the class. Do you have any specific suggestions for improvement?",
+    "body": "Replying to [comment:9 robertwb]:\n> I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing. \n\n\nI looked over the patch once more. The hash functions defined here use all the information I see in the class. Do you have any specific suggestions for improvement?",
     "created_at": "2011-05-30T20:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -396,6 +392,7 @@ archive/issue_comments_083274.json:
 
 Replying to [comment:9 robertwb]:
 > I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing. 
+
 
 I looked over the patch once more. The hash functions defined here use all the information I see in the class. Do you have any specific suggestions for improvement?
 
@@ -466,7 +463,7 @@ Robert, even though you chose to mark this as an enhancement in comment:3, it is
 archive/issue_comments_083278.json:
 ```json
 {
-    "body": "Replying to [comment:12 burcin]:\n> I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.\n\nThe string representation is more often overridden to be distinct for distinct morphisms \n\n> The current patch uses the hash of the images of the generators when the morphism class contains this information. See line 1103 of `sage/rings/morphism.pyx` for example. In order to implement your suggestion we would also have to change the comparison functions, which compare the same data this patch hashes.\n\nAre you saying that any two morphisms in the same homset compare equal? That is a bug for sure. I'd rather not be able to compare such morphisms. \n\n> <rant>\n> Robert, even though you chose to mark this as an enhancement in comment:3, it is actually a bug that effects my work. The category framework relies heavily on cached functions, which in turn need the arguments of these to be hashable. For example, I need unique parents that also depend on a morphism/map (difference/differential rings). I opened this ticket when I ran into this problem a year ago. \n\nHappy to change it back given the context. \n\n> I know I haven't really pushed it through, but it still is a shame that it takes so long for such a small change to get into a release.\n> </rant>\n\nI know this all to well--too much bureaucracy and churn in the code among other things. That was one of my primary motivations for the patchbot, so hopefully simple changes could get approved quickly.",
+    "body": "Replying to [comment:12 burcin]:\n> I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.\n\n\nThe string representation is more often overridden to be distinct for distinct morphisms \n\n> The current patch uses the hash of the images of the generators when the morphism class contains this information. See line 1103 of `sage/rings/morphism.pyx` for example. In order to implement your suggestion we would also have to change the comparison functions, which compare the same data this patch hashes.\n\n\nAre you saying that any two morphisms in the same homset compare equal? That is a bug for sure. I'd rather not be able to compare such morphisms. \n\n> <rant>\n> Robert, even though you chose to mark this as an enhancement in comment:3, it is actually a bug that effects my work. The category framework relies heavily on cached functions, which in turn need the arguments of these to be hashable. For example, I need unique parents that also depend on a morphism/map (difference/differential rings). I opened this ticket when I ran into this problem a year ago. \n\n\nHappy to change it back given the context. \n\n> I know I haven't really pushed it through, but it still is a shame that it takes so long for such a small change to get into a release.\n> </rant>\n\n\nI know this all to well--too much bureaucracy and churn in the code among other things. That was one of my primary motivations for the patchbot, so hopefully simple changes could get approved quickly.",
     "created_at": "2011-05-31T16:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -478,19 +475,23 @@ archive/issue_comments_083278.json:
 Replying to [comment:12 burcin]:
 > I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.
 
+
 The string representation is more often overridden to be distinct for distinct morphisms 
 
 > The current patch uses the hash of the images of the generators when the morphism class contains this information. See line 1103 of `sage/rings/morphism.pyx` for example. In order to implement your suggestion we would also have to change the comparison functions, which compare the same data this patch hashes.
+
 
 Are you saying that any two morphisms in the same homset compare equal? That is a bug for sure. I'd rather not be able to compare such morphisms. 
 
 > <rant>
 > Robert, even though you chose to mark this as an enhancement in comment:3, it is actually a bug that effects my work. The category framework relies heavily on cached functions, which in turn need the arguments of these to be hashable. For example, I need unique parents that also depend on a morphism/map (difference/differential rings). I opened this ticket when I ran into this problem a year ago. 
 
+
 Happy to change it back given the context. 
 
 > I know I haven't really pushed it through, but it still is a shame that it takes so long for such a small change to get into a release.
 > </rant>
+
 
 I know this all to well--too much bureaucracy and churn in the code among other things. That was one of my primary motivations for the patchbot, so hopefully simple changes could get approved quickly.
 
@@ -519,7 +520,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_083280.json:
 ```json
 {
-    "body": "This looks good for the most part. I think Robert was thinking the `hash((domain, codomaim))` was the hash for the individual morphism, as opposed to that being the hash for the homset (as it currently is). The morphism's hash is from the image of the generators which I believe is sufficient. (This breaks down if you look at a large amount of maps from different domains to the same image in the same codomain and same number of generators, but this seems like something extremely unlikely to occur in practice. We could also hash in the parent to take care of this...)\n\nHowever this does not pass the doctests on my (virtual) machine which runs with 32-bit instead of 64-bit (which the patchbot runs on). Here are my hash values:\n\n```\nrings/morphism.pyx\n line 542: 1975065480\n line 959: 467020541\n line 1147: -664373037\n line 1554: -644670332\n line 1699: 1917770400\n\ncategories/map.pyx\n line 1047: 433071207\n line 1290: -1460497211\n```\n\nAlso, I don't believe you need `# indirect doctest` for the `hash()`, but this isn't that important.",
+    "body": "This looks good for the most part. I think Robert was thinking the `hash((domain, codomaim))` was the hash for the individual morphism, as opposed to that being the hash for the homset (as it currently is). The morphism's hash is from the image of the generators which I believe is sufficient. (This breaks down if you look at a large amount of maps from different domains to the same image in the same codomain and same number of generators, but this seems like something extremely unlikely to occur in practice. We could also hash in the parent to take care of this...)\n\nHowever this does not pass the doctests on my (virtual) machine which runs with 32-bit instead of 64-bit (which the patchbot runs on). Here are my hash values:\n\n```\nrings/morphism.pyx\n line 542: 1975065480\n line 959: 467020541\n line 1147: -664373037\n line 1554: -644670332\n line 1699: 1917770400\n\ncategories/map.pyx\n line 1047: 433071207\n line 1290: -1460497211\n```\nAlso, I don't believe you need `# indirect doctest` for the `hash()`, but this isn't that important.",
     "created_at": "2012-11-18T08:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -544,7 +545,6 @@ categories/map.pyx
  line 1047: 433071207
  line 1290: -1460497211
 ```
-
 Also, I don't believe you need `# indirect doctest` for the `hash()`, but this isn't that important.
 
 
@@ -662,7 +662,7 @@ apply only this patch
 archive/issue_comments_083286.json:
 ```json
 {
-    "body": "Replying to [comment:16 tscrim]:\n> Looks much better now. Two more minor things (sorry for not noticing this earlier):\n\nThanks for the quick feedback. I attached [attachment:trac_9016-morphishm_hash.take5.patch a new patch] fixing the two issues mentioned above.\n\nPatchbot, apply trac_9016-morphishm_hash.take5.patch\n\nI guess it's too late to fix the horrific typo in the file name. :)",
+    "body": "Replying to [comment:16 tscrim]:\n> Looks much better now. Two more minor things (sorry for not noticing this earlier):\n\n\nThanks for the quick feedback. I attached [attachment:trac_9016-morphishm_hash.take5.patch a new patch] fixing the two issues mentioned above.\n\nPatchbot, apply trac_9016-morphishm_hash.take5.patch\n\nI guess it's too late to fix the horrific typo in the file name. :)",
     "created_at": "2012-11-19T11:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -673,6 +673,7 @@ archive/issue_comments_083286.json:
 
 Replying to [comment:16 tscrim]:
 > Looks much better now. Two more minor things (sorry for not noticing this earlier):
+
 
 Thanks for the quick feedback. I attached [attachment:trac_9016-morphishm_hash.take5.patch a new patch] fixing the two issues mentioned above.
 
@@ -745,7 +746,7 @@ Apply trac_9016-morphism_hash.patch
 archive/issue_comments_083290.json:
 ```json
 {
-    "body": "I would argue that in general it's better to avoid having these arbitrary values for hash tested exactly at all (unless they're meaningful, like hash(ZZ(2)) == 2), especially when they vary for 64 and 32-bit values.  Better to test it functionally, like\n\n\n```\nsage: { phi: 'yes' }[phi]\n'yes'\n```\n\n\nor even\n\n\n```\nhash(phi) == hash(phi)\nTrue\nhash(phi) == hash(rho)\nFalse\n```\n",
+    "body": "I would argue that in general it's better to avoid having these arbitrary values for hash tested exactly at all (unless they're meaningful, like hash(ZZ(2)) == 2), especially when they vary for 64 and 32-bit values.  Better to test it functionally, like\n\n```\nsage: { phi: 'yes' }[phi]\n'yes'\n```\n\nor even\n\n```\nhash(phi) == hash(phi)\nTrue\nhash(phi) == hash(rho)\nFalse\n```",
     "created_at": "2012-11-19T19:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -756,15 +757,12 @@ archive/issue_comments_083290.json:
 
 I would argue that in general it's better to avoid having these arbitrary values for hash tested exactly at all (unless they're meaningful, like hash(ZZ(2)) == 2), especially when they vary for 64 and 32-bit values.  Better to test it functionally, like
 
-
 ```
 sage: { phi: 'yes' }[phi]
 'yes'
 ```
 
-
 or even
-
 
 ```
 hash(phi) == hash(phi)
@@ -772,7 +770,6 @@ True
 hash(phi) == hash(rho)
 False
 ```
-
 
 
 
@@ -825,7 +822,7 @@ Aside from this, I've also been bitten several times from changing a hash (to ma
 archive/issue_comments_083293.json:
 ```json
 {
-    "body": "Hmm..interesting. Also good to know about the dictionary pickling. I cannot disagree at all with your rant; I use the patchbot to get my 64-bit hash values >_<. So would you agree to hash tests of the form:\n\n```\nsage: hash(phi) == hash(phi)\nTrue\n```\n\n?\n\nThanks,\n\nTravis",
+    "body": "Hmm..interesting. Also good to know about the dictionary pickling. I cannot disagree at all with your rant; I use the patchbot to get my 64-bit hash values >_<. So would you agree to hash tests of the form:\n\n```\nsage: hash(phi) == hash(phi)\nTrue\n```\n?\n\nThanks,\n\nTravis",
     "created_at": "2012-11-20T16:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
@@ -840,7 +837,6 @@ Hmm..interesting. Also good to know about the dictionary pickling. I cannot disa
 sage: hash(phi) == hash(phi)
 True
 ```
-
 ?
 
 Thanks,

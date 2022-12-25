@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6456
 archive/issue_comments_051881.json:
 ```json
 {
-    "body": "Fly in the ointment: The recent version has this statement on its license page http://abel.ee.ucla.edu/cvxopt/copyright.html:\n\n\n```\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n```\n\nOlder versions apparently did not have that.",
+    "body": "Fly in the ointment: The recent version has this statement on its license page http://abel.ee.ucla.edu/cvxopt/copyright.html:\n\n```\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n```\nOlder versions apparently did not have that.",
     "created_at": "2009-07-01T23:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -44,11 +44,9 @@ archive/issue_comments_051881.json:
 
 Fly in the ointment: The recent version has this statement on its license page http://abel.ee.ucla.edu/cvxopt/copyright.html:
 
-
 ```
 CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 ```
-
 Older versions apparently did not have that.
 
 
@@ -58,7 +56,7 @@ Older versions apparently did not have that.
 archive/issue_comments_051882.json:
 ```json
 {
-    "body": "I've recently upgraded it for me to 1.1.2. The problem is, that the sources from them did not compile on my ubuntu 9.10 machine. So I went to the [ubuntu packges db for lucid](http://packages.ubuntu.com/lucid/python-cvxopt) and grabbed their version. I don't know what they did in their patch, but I guess it's non trivial...\n\nMy spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/).\n\nThe only remaining modification I had to made to run the examples from the cvxopt website in `%python` mode was to replace \n\n\n```\nfrom random import ...\n```\n\nto\n\n```\nfrom sage.misc.prandom import ...\n```\n\nin `./src/src/python/__init__.py` at several places.\n\n**Q:**\n\n1. what's the usual/best mechanism to avoid using Sage's `random` and switch back to python's random?!\n2. i have no idea what the solaris patches did in the older version, neither do i know how to get it building on another system :(",
+    "body": "I've recently upgraded it for me to 1.1.2. The problem is, that the sources from them did not compile on my ubuntu 9.10 machine. So I went to the [ubuntu packges db for lucid](http://packages.ubuntu.com/lucid/python-cvxopt) and grabbed their version. I don't know what they did in their patch, but I guess it's non trivial...\n\nMy spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/).\n\nThe only remaining modification I had to made to run the examples from the cvxopt website in `%python` mode was to replace \n\n```\nfrom random import ...\n```\nto\n\n```\nfrom sage.misc.prandom import ...\n```\nin `./src/src/python/__init__.py` at several places.\n\n**Q:**\n\n1. what's the usual/best mechanism to avoid using Sage's `random` and switch back to python's random?!\n2. i have no idea what the solaris patches did in the older version, neither do i know how to get it building on another system :(",
     "created_at": "2010-01-26T12:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -73,17 +71,14 @@ My spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/).
 
 The only remaining modification I had to made to run the examples from the cvxopt website in `%python` mode was to replace 
 
-
 ```
 from random import ...
 ```
-
 to
 
 ```
 from sage.misc.prandom import ...
 ```
-
 in `./src/src/python/__init__.py` at several places.
 
 **Q:**
@@ -156,7 +151,7 @@ Changing status from new to needs_work.
 archive/issue_comments_051886.json:
 ```json
 {
-    "body": "Replying to [comment:3 schilly]:\n> I've created an updated p1 spkg.\n> \n> Using the 1.1.2 sources directly, I get this error `site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank` ... I also fiddled around with the setup.py file.\n> \n> [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\nsage -t  \"devel/sage-work/sage/numerical/optimize.py\"\n\nbumps out essentially due to:\n\n```\n\nsage: from cvxopt import cholmod\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/dima/sage/devel/sage-work/sage/<ipython console> in <module>()\n\nImportError: /home/dima/sage/local/lib/python2.6/site-packages/cvxopt/cholmod.so: undefined symbol: _g95_filename\nsage: \n```\n\n\nCan you reproduce this on a stand-alone build of cvxopt?",
+    "body": "Replying to [comment:3 schilly]:\n> I've created an updated p1 spkg.\n> \n> Using the 1.1.2 sources directly, I get this error `site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank` ... I also fiddled around with the setup.py file.\n> \n> [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\nsage -t  \"devel/sage-work/sage/numerical/optimize.py\"\n\nbumps out essentially due to:\n\n```\n\nsage: from cvxopt import cholmod\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/dima/sage/devel/sage-work/sage/<ipython console> in <module>()\n\nImportError: /home/dima/sage/local/lib/python2.6/site-packages/cvxopt/cholmod.so: undefined symbol: _g95_filename\nsage: \n```\n\nCan you reproduce this on a stand-alone build of cvxopt?",
     "created_at": "2010-02-04T10:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -171,6 +166,7 @@ Replying to [comment:3 schilly]:
 > Using the 1.1.2 sources directly, I get this error `site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank` ... I also fiddled around with the setup.py file.
 > 
 > [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)
+
 sage -t  "devel/sage-work/sage/numerical/optimize.py"
 
 bumps out essentially due to:
@@ -186,7 +182,6 @@ ImportError                               Traceback (most recent call last)
 ImportError: /home/dima/sage/local/lib/python2.6/site-packages/cvxopt/cholmod.so: undefined symbol: _g95_filename
 sage: 
 ```
-
 
 Can you reproduce this on a stand-alone build of cvxopt?
 
@@ -235,7 +230,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_051889.json:
 ```json
 {
-    "body": "Replying to [comment:3 schilly]:\n> I've created an updated p1 spkg.\n> \n> Using the 1.1.2 sources directly, I get this error `site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank` ... I also fiddled around with the setup.py file.\n> \n> [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\nplease check the patch I just uploaded. It fixes this problem;\nyou just had to link against more dynamic libs...",
+    "body": "Replying to [comment:3 schilly]:\n> I've created an updated p1 spkg.\n> \n> Using the 1.1.2 sources directly, I get this error `site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank` ... I also fiddled around with the setup.py file.\n> \n> [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\n\nplease check the patch I just uploaded. It fixes this problem;\nyou just had to link against more dynamic libs...",
     "created_at": "2010-02-04T16:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -251,6 +246,7 @@ Replying to [comment:3 schilly]:
 > 
 > [cvxopt 1.1.2 p1 spkg is here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)
 
+
 please check the patch I just uploaded. It fixes this problem;
 you just had to link against more dynamic libs...
 
@@ -261,7 +257,7 @@ you just had to link against more dynamic libs...
 archive/issue_comments_051890.json:
 ```json
 {
-    "body": "Replying to [comment:6 dimpase]:\n\n> please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...\n\nThanks, I knew that it is something with that! Works now!!! ;) \n\nI've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\nNext I'll try if using the debian/ubuntu version of it was really necessary.\n\nFor everyone who wants to try this, don't forget that you have to disable the preparser in Sage via `preparser(False)` ... otherwise there are unknown types when you try to create a matrix with cvxopt's matrix command.",
+    "body": "Replying to [comment:6 dimpase]:\n\n> please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...\n\n\nThanks, I knew that it is something with that! Works now!!! ;) \n\nI've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\nNext I'll try if using the debian/ubuntu version of it was really necessary.\n\nFor everyone who wants to try this, don't forget that you have to disable the preparser in Sage via `preparser(False)` ... otherwise there are unknown types when you try to create a matrix with cvxopt's matrix command.",
     "created_at": "2010-02-04T17:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -273,6 +269,7 @@ archive/issue_comments_051890.json:
 Replying to [comment:6 dimpase]:
 
 > please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...
+
 
 Thanks, I knew that it is something with that! Works now!!! ;) 
 
@@ -289,7 +286,7 @@ For everyone who wants to try this, don't forget that you have to disable the pr
 archive/issue_comments_051891.json:
 ```json
 {
-    "body": "Replying to [comment:7 schilly]:\n\n> I've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n> \n> Next I'll try if using the debian/ubuntu version of it was really necessary.\n> \nplease take out f77blas all over in setup.py, for this is apparently obsolete and not needed - and also nukes the installation on Mac OS X (ppc) -- (otherwise it works on the latter platform)",
+    "body": "Replying to [comment:7 schilly]:\n\n> I've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n> \n> Next I'll try if using the debian/ubuntu version of it was really necessary.\n> \n\nplease take out f77blas all over in setup.py, for this is apparently obsolete and not needed - and also nukes the installation on Mac OS X (ppc) -- (otherwise it works on the latter platform)",
     "created_at": "2010-02-05T05:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -304,6 +301,7 @@ Replying to [comment:7 schilly]:
 > 
 > Next I'll try if using the debian/ubuntu version of it was really necessary.
 > 
+
 please take out f77blas all over in setup.py, for this is apparently obsolete and not needed - and also nukes the installation on Mac OS X (ppc) -- (otherwise it works on the latter platform)
 
 
@@ -331,7 +329,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_051893.json:
 ```json
 {
-    "body": "Replying to [comment:7 schilly]:\n\n\nI think that really what remains to be done is to remove dependencies on \nobsolete fortrans (f77), see my other comment on this.\nLet's get it done!\n\n\n> Replying to [comment:6 dimpase]:\n> \n> > please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...\n> \n> Thanks, I knew that it is something with that! Works now!!! ;) \n> \n> I've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n> \n> Next I'll try if using the debian/ubuntu version of it was really necessary.\n\nI don't see a necessity to try non-debian/ubunty version.\nIf you look at the debian patches, you see that all they changed is the source\nwere slight tweaks in setup.py\n\n> \n> For everyone who wants to try this, don't forget that you have to disable the preparser in Sage via `preparser(False)` ... otherwise there are unknown types when you try to create a matrix with cvxopt's matrix command.\n\nDoes this mean that we should think of importing cvxopt's matrix into Sage under some other name? I don't know what the usual Sage's way to deal with such things, i.e. name clashes between packages, is.",
+    "body": "Replying to [comment:7 schilly]:\n\n\nI think that really what remains to be done is to remove dependencies on \nobsolete fortrans (f77), see my other comment on this.\nLet's get it done!\n\n\n> Replying to [comment:6 dimpase]:\n> \n> > please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...\n\n> \n> Thanks, I knew that it is something with that! Works now!!! ;) \n> \n> I've uploaded [1.1.1.p2 here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n> \n> Next I'll try if using the debian/ubuntu version of it was really necessary.\n\n\nI don't see a necessity to try non-debian/ubunty version.\nIf you look at the debian patches, you see that all they changed is the source\nwere slight tweaks in setup.py\n\n> \n> For everyone who wants to try this, don't forget that you have to disable the preparser in Sage via `preparser(False)` ... otherwise there are unknown types when you try to create a matrix with cvxopt's matrix command.\n\n\nDoes this mean that we should think of importing cvxopt's matrix into Sage under some other name? I don't know what the usual Sage's way to deal with such things, i.e. name clashes between packages, is.",
     "created_at": "2010-02-15T13:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -351,6 +349,7 @@ Let's get it done!
 > Replying to [comment:6 dimpase]:
 > 
 > > please check the patch I just uploaded. It fixes this problem; you just had to link against more dynamic libs...
+
 > 
 > Thanks, I knew that it is something with that! Works now!!! ;) 
 > 
@@ -358,12 +357,14 @@ Let's get it done!
 > 
 > Next I'll try if using the debian/ubuntu version of it was really necessary.
 
+
 I don't see a necessity to try non-debian/ubunty version.
 If you look at the debian patches, you see that all they changed is the source
 were slight tweaks in setup.py
 
 > 
 > For everyone who wants to try this, don't forget that you have to disable the preparser in Sage via `preparser(False)` ... otherwise there are unknown types when you try to create a matrix with cvxopt's matrix command.
+
 
 Does this mean that we should think of importing cvxopt's matrix into Sage under some other name? I don't know what the usual Sage's way to deal with such things, i.e. name clashes between packages, is.
 
@@ -393,7 +394,7 @@ archive/issue_comments_051894.json:
 archive/issue_comments_051895.json:
 ```json
 {
-    "body": "Replying to [comment:10 drkirkby]:\n>  * Have the license issue been resolved? \n\nit is GPL v3 or later. Does it matter?\nI suppose I can ask the authors to tweak it, if it is really necessary. \n\n>  * Has this been tested on Solaris? \n\nno, but I can try on one of Skynet's machines (perhaps you can tell me which \none is most likely to work :)), or you can try it yourself.\n(I don't have a ready Solaris install anywhere).",
+    "body": "Replying to [comment:10 drkirkby]:\n>  * Have the license issue been resolved? \n\n\nit is GPL v3 or later. Does it matter?\nI suppose I can ask the authors to tweak it, if it is really necessary. \n\n>  * Has this been tested on Solaris? \n\n\nno, but I can try on one of Skynet's machines (perhaps you can tell me which \none is most likely to work :)), or you can try it yourself.\n(I don't have a ready Solaris install anywhere).",
     "created_at": "2010-02-16T13:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -405,10 +406,12 @@ archive/issue_comments_051895.json:
 Replying to [comment:10 drkirkby]:
 >  * Have the license issue been resolved? 
 
+
 it is GPL v3 or later. Does it matter?
 I suppose I can ask the authors to tweak it, if it is really necessary. 
 
 >  * Has this been tested on Solaris? 
+
 
 no, but I can try on one of Skynet's machines (perhaps you can tell me which 
 one is most likely to work :)), or you can try it yourself.
@@ -421,7 +424,7 @@ one is most likely to work :)), or you can try it yourself.
 archive/issue_comments_051896.json:
 ```json
 {
-    "body": "You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n\n```\nsage: license()\n```\n\n\nsays all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n\nThe code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n\nI suggest you download sage 4.3.0.1 from one of the mirrors\n\nhttp://www.sagemath.org/download-solaris.html\n\nUse the following settings. \n\n\n```\nkirkby@t2:[~] $ echo $PATH\n/usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin\nkirkby@t2:[~] $ echo $LD_LIBRARY_PATH\n/usr/local/gcc-4.4.1-sun-linker/lib:=/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9:/usr/local/lib\n```\n\n\ntype make, and build Sage, then try your package. \n\nThere is also a binary of Sage on the mirrors. You could download that. I'm not precisely sure what you then need to do to build just your package using the binary as a starting point. \n\nThe latest Sage source will not build on Solaris, but 4.3.0.1 will. \n\nDave",
+    "body": "You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n```\nsage: license()\n```\n\nsays all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n\nThe code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n\nI suggest you download sage 4.3.0.1 from one of the mirrors\n\nhttp://www.sagemath.org/download-solaris.html\n\nUse the following settings. \n\n```\nkirkby@t2:[~] $ echo $PATH\n/usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin\nkirkby@t2:[~] $ echo $LD_LIBRARY_PATH\n/usr/local/gcc-4.4.1-sun-linker/lib:=/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9:/usr/local/lib\n```\n\ntype make, and build Sage, then try your package. \n\nThere is also a binary of Sage on the mirrors. You could download that. I'm not precisely sure what you then need to do to build just your package using the binary as a starting point. \n\nThe latest Sage source will not build on Solaris, but 4.3.0.1 will. \n\nDave",
     "created_at": "2010-02-16T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -432,11 +435,9 @@ archive/issue_comments_051896.json:
 
 You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. 
 
-
 ```
 sage: license()
 ```
-
 
 says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. 
 
@@ -448,14 +449,12 @@ http://www.sagemath.org/download-solaris.html
 
 Use the following settings. 
 
-
 ```
 kirkby@t2:[~] $ echo $PATH
 /usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin
 kirkby@t2:[~] $ echo $LD_LIBRARY_PATH
 /usr/local/gcc-4.4.1-sun-linker/lib:=/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9:/usr/local/lib
 ```
-
 
 type make, and build Sage, then try your package. 
 
@@ -472,7 +471,7 @@ Dave
 archive/issue_comments_051897.json:
 ```json
 {
-    "body": "Replying to [comment:12 drkirkby]:\n> You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n\nWell, cvxopt is an optional package, so it must be in the same boat as jmath,\nor some gap packages, that are also not GPL 2.\n\n\n> \n> {{{\n> sage: license()\n> }}}\n> \n> says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n> \n> The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n> \n\nhmm, isn't this a sparc/solaris?\n\nSunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n\nDima",
+    "body": "Replying to [comment:12 drkirkby]:\n> You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n\n\nWell, cvxopt is an optional package, so it must be in the same boat as jmath,\nor some gap packages, that are also not GPL 2.\n\n\n> \n> \n> ```\n> sage: license()\n> ```\n> \n> says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n> \n> The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n> \n\n\nhmm, isn't this a sparc/solaris?\n\nSunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n\nDima",
     "created_at": "2010-02-16T19:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -485,19 +484,22 @@ Replying to [comment:12 drkirkby]:
 > You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. 
 
 
+
 Well, cvxopt is an optional package, so it must be in the same boat as jmath,
 or some gap packages, that are also not GPL 2.
 
 
 > 
-> {{{
+> 
+> ```
 > sage: license()
-> }}}
+> ```
 > 
 > says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. 
 > 
 > The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. 
 > 
+
 
 hmm, isn't this a sparc/solaris?
 
@@ -512,7 +514,7 @@ Dima
 archive/issue_comments_051898.json:
 ```json
 {
-    "body": "Replying to [comment:13 dimpase]:\n> Replying to [comment:12 drkirkby]:\n> > You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n> \n> \n> Well, cvxopt is an optional package, so it must be in the same boat as jmath,\n> or some gap packages, that are also not GPL 2.\n\nFair enough. \n\n> > \n> > {{{\n> > sage: license()\n> > }}}\n> > \n> > says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n> > \n> > The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n> > \n> \n> hmm, isn't this a sparc/solaris?\n> \n> SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n> \n> Dima\n\nYes, it is. Sorry, I was not aware of the existance of that machine. \n\nHowever, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n\nI've written some somewhat simpler instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 on how to build Sage on 't2'. They are simpler, as I have already put the right tools in the right locations. \n\nThe Sun Blade 2500 (mark2) should be quicker than the T5240 (t2) at building Sage. However it would require some setting up of the build environment to build Sage. If you just want an easy solution, 't2' will just work, albeit not as quickly as the Sun Blade 2500. \n\nDave",
+    "body": "Replying to [comment:13 dimpase]:\n> Replying to [comment:12 drkirkby]:\n> > You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n> \n> \n> Well, cvxopt is an optional package, so it must be in the same boat as jmath,\n> or some gap packages, that are also not GPL 2.\n\n\nFair enough. \n\n> > \n> > \n> > ```\n> > sage: license()\n> > ```\n> > \n> > says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. \n> > \n> > The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. \n> > \n\n> \n> hmm, isn't this a sparc/solaris?\n> \n> SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n> \n> Dima\n\n\nYes, it is. Sorry, I was not aware of the existance of that machine. \n\nHowever, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n\nI've written some somewhat simpler instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 on how to build Sage on 't2'. They are simpler, as I have already put the right tools in the right locations. \n\nThe Sun Blade 2500 (mark2) should be quicker than the T5240 (t2) at building Sage. However it would require some setting up of the build environment to build Sage. If you just want an easy solution, 't2' will just work, albeit not as quickly as the Sun Blade 2500. \n\nDave",
     "created_at": "2010-02-16T20:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -524,28 +526,33 @@ archive/issue_comments_051898.json:
 Replying to [comment:13 dimpase]:
 > Replying to [comment:12 drkirkby]:
 > > You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. 
+
 > 
 > 
 > Well, cvxopt is an optional package, so it must be in the same boat as jmath,
 > or some gap packages, that are also not GPL 2.
 
+
 Fair enough. 
 
 > > 
-> > {{{
+> > 
+> > ```
 > > sage: license()
-> > }}}
+> > ```
 > > 
 > > says all code except jsmath is GPL2, and apparently jsmath is ok, as Sage does not link to it. 
 > > 
 > > The code will not build on skynet, as there are no SPARC machines there. It should build it on 't2' easily though. 
 > > 
+
 > 
 > hmm, isn't this a sparc/solaris?
 > 
 > SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500
 > 
 > Dima
+
 
 Yes, it is. Sorry, I was not aware of the existance of that machine. 
 
@@ -564,7 +571,7 @@ Dave
 archive/issue_comments_051899.json:
 ```json
 {
-    "body": "Replying to [comment:14 drkirkby]:\n\n> > hmm, isn't this a sparc/solaris?\n> > \n> > SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n> > \n> > Dima\n> \n> Yes, it is. Sorry, I was not aware of the existance of that machine. \n> \n> However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n\nwell, on Skynet there is /usr/local/skynet_bash_profile \nthat you can source upon login (from .bashrc, or just manually), \nand this gives you the ready setup to build Sage.\n\nI don't have an account on t2, it seems to me.\nBy the way, absent-mindedly I started building 4.3.3.alpha on there,\nand it went till gnutls, where it stopped... I noticed that gnutls is over 2 years old, version 2.2.2, whereas the current one is 2.8.5. Shouldn't one upgrade to this one, before even trying to fix this?\n\n\nDima",
+    "body": "Replying to [comment:14 drkirkby]:\n\n> > hmm, isn't this a sparc/solaris?\n> > \n> > SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n> > \n> > Dima\n\n> \n> Yes, it is. Sorry, I was not aware of the existance of that machine. \n> \n> However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n\n\nwell, on Skynet there is /usr/local/skynet_bash_profile \nthat you can source upon login (from .bashrc, or just manually), \nand this gives you the ready setup to build Sage.\n\nI don't have an account on t2, it seems to me.\nBy the way, absent-mindedly I started building 4.3.3.alpha on there,\nand it went till gnutls, where it stopped... I noticed that gnutls is over 2 years old, version 2.2.2, whereas the current one is 2.8.5. Shouldn't one upgrade to this one, before even trying to fix this?\n\n\nDima",
     "created_at": "2010-02-16T21:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -580,10 +587,12 @@ Replying to [comment:14 drkirkby]:
 > > SunOS mark2 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500
 > > 
 > > Dima
+
 > 
 > Yes, it is. Sorry, I was not aware of the existance of that machine. 
 > 
 > However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. 
+
 
 well, on Skynet there is /usr/local/skynet_bash_profile 
 that you can source upon login (from .bashrc, or just manually), 
@@ -603,7 +612,7 @@ Dima
 archive/issue_comments_051900.json:
 ```json
 {
-    "body": "Replying to [comment:12 drkirkby]:\n> You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\nI emailed William about this, and he said it's OK in this case, it can be v3.",
+    "body": "Replying to [comment:12 drkirkby]:\n> You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. \n\n\nI emailed William about this, and he said it's OK in this case, it can be v3.",
     "created_at": "2010-02-16T21:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -615,6 +624,7 @@ archive/issue_comments_051900.json:
 Replying to [comment:12 drkirkby]:
 > You better check the license issue with William. Code should be GPL 2 or GPL2+, but there are exceptions if a package is optional and some other conditions - I've never fully understood  under what conditions code can be GLP 3. But you might find you can only use the latest version which is GPL 2, and not a GPL 3 version. 
 
+
 I emailed William about this, and he said it's OK in this case, it can be v3.
 
 
@@ -624,7 +634,7 @@ I emailed William about this, and he said it's OK in this case, it can be v3.
 archive/issue_comments_051901.json:
 ```json
 {
-    "body": "Replying to [comment:15 dimpase]:\n> Replying to [comment:14 drkirkby]: \n> > However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n> \n> well, on Skynet there is /usr/local/skynet_bash_profile \n> that you can source upon login (from .bashrc, or just manually), \n> and this gives you the ready setup to build Sage.\n\nI'm not however aware of anyone building Sage on there recently, so I don't know if the environment is set up suitably. Quite a few Solaris-specific changes have been made in the last year, and some of them might not be compatible with the build system on there. I don't know. Specifically, if \n\n```\ngcc -v \n```\n\n\nshows gcc was configured with the GNU linker, then the GNU linker must be in your path before the Sun linker. (Basically, whatever linker gcc uses, must be in your path first, as some code makes the assumption the first linker in your path is the one gcc uses, which might not be true.) I'm not aware of a foolproof test of this.\n\nThere should be something like \n\n\n```\n--with-ld=/usr/ccs/bin/ld\n```\n\nif the Sun linker was used, or \n\n```\n--with-ld=/path/to/gnu/ld\n```\n\nif the GNU linker was used. \n\nCertainly, I've never had a problem with gnutls failing on 't2'. \n \n> I don't have an account on t2, it seems to me.\n\nI've emailed William to ask if you can have an account on t2, as that might be the simplest solution, though that Blade 2500 would be significantly faster than 't2'. \n\n> By the way, absent-mindedly I started building 4.3.3.alpha on there,\n> and it went till gnutls, where it stopped... I noticed that gnutls is over 2 years old, version 2.2.2, whereas the current one is 2.8.5. Shouldn't one upgrade to this one, before even trying to fix this?\n> \n> Dima\n\nI can see your point about upgrading, though I'm not aware of any particular issues with the version in Sage. That version will build on Solaris. You could try appending /usr/sfw/lib to your LD_LIBRARY_PATH. I have known of issues with gnutls on OpenSolaris, but not on Solaris 10. \n\nI see your post about the GPL 3. That bit is sorted out then. \n\nDave",
+    "body": "Replying to [comment:15 dimpase]:\n> Replying to [comment:14 drkirkby]: \n> > However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. \n\n> \n> well, on Skynet there is /usr/local/skynet_bash_profile \n> that you can source upon login (from .bashrc, or just manually), \n> and this gives you the ready setup to build Sage.\n\n\nI'm not however aware of anyone building Sage on there recently, so I don't know if the environment is set up suitably. Quite a few Solaris-specific changes have been made in the last year, and some of them might not be compatible with the build system on there. I don't know. Specifically, if \n\n```\ngcc -v \n```\n\nshows gcc was configured with the GNU linker, then the GNU linker must be in your path before the Sun linker. (Basically, whatever linker gcc uses, must be in your path first, as some code makes the assumption the first linker in your path is the one gcc uses, which might not be true.) I'm not aware of a foolproof test of this.\n\nThere should be something like \n\n```\n--with-ld=/usr/ccs/bin/ld\n```\nif the Sun linker was used, or \n\n```\n--with-ld=/path/to/gnu/ld\n```\nif the GNU linker was used. \n\nCertainly, I've never had a problem with gnutls failing on 't2'. \n \n> I don't have an account on t2, it seems to me.\n\n\nI've emailed William to ask if you can have an account on t2, as that might be the simplest solution, though that Blade 2500 would be significantly faster than 't2'. \n\n> By the way, absent-mindedly I started building 4.3.3.alpha on there,\n> and it went till gnutls, where it stopped... I noticed that gnutls is over 2 years old, version 2.2.2, whereas the current one is 2.8.5. Shouldn't one upgrade to this one, before even trying to fix this?\n> \n> Dima\n\n\nI can see your point about upgrading, though I'm not aware of any particular issues with the version in Sage. That version will build on Solaris. You could try appending /usr/sfw/lib to your LD_LIBRARY_PATH. I have known of issues with gnutls on OpenSolaris, but not on Solaris 10. \n\nI see your post about the GPL 3. That bit is sorted out then. \n\nDave",
     "created_at": "2010-02-16T22:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -636,10 +646,12 @@ archive/issue_comments_051901.json:
 Replying to [comment:15 dimpase]:
 > Replying to [comment:14 drkirkby]: 
 > > However, I do not know how the compilers and paths are configured on that machine. You need to have GNU make & GNU tar in your path before the Sun ones, and you need to have the Sun linker (/usr/ccs/bin/ld) in your path before any GNU ones. There are some general instructions on building Sage on Solaris at http://wiki.sagemath.org/solaris which you would need to follow. 
+
 > 
 > well, on Skynet there is /usr/local/skynet_bash_profile 
 > that you can source upon login (from .bashrc, or just manually), 
 > and this gives you the ready setup to build Sage.
+
 
 I'm not however aware of anyone building Sage on there recently, so I don't know if the environment is set up suitably. Quite a few Solaris-specific changes have been made in the last year, and some of them might not be compatible with the build system on there. I don't know. Specifically, if 
 
@@ -647,27 +659,24 @@ I'm not however aware of anyone building Sage on there recently, so I don't know
 gcc -v 
 ```
 
-
 shows gcc was configured with the GNU linker, then the GNU linker must be in your path before the Sun linker. (Basically, whatever linker gcc uses, must be in your path first, as some code makes the assumption the first linker in your path is the one gcc uses, which might not be true.) I'm not aware of a foolproof test of this.
 
 There should be something like 
 
-
 ```
 --with-ld=/usr/ccs/bin/ld
 ```
-
 if the Sun linker was used, or 
 
 ```
 --with-ld=/path/to/gnu/ld
 ```
-
 if the GNU linker was used. 
 
 Certainly, I've never had a problem with gnutls failing on 't2'. 
  
 > I don't have an account on t2, it seems to me.
+
 
 I've emailed William to ask if you can have an account on t2, as that might be the simplest solution, though that Blade 2500 would be significantly faster than 't2'. 
 
@@ -675,6 +684,7 @@ I've emailed William to ask if you can have an account on t2, as that might be t
 > and it went till gnutls, where it stopped... I noticed that gnutls is over 2 years old, version 2.2.2, whereas the current one is 2.8.5. Shouldn't one upgrade to this one, before even trying to fix this?
 > 
 > Dima
+
 
 I can see your point about upgrading, though I'm not aware of any particular issues with the version in Sage. That version will build on Solaris. You could try appending /usr/sfw/lib to your LD_LIBRARY_PATH. I have known of issues with gnutls on OpenSolaris, but not on Solaris 10. 
 
@@ -689,7 +699,7 @@ Dave
 archive/issue_comments_051902.json:
 ```json
 {
-    "body": "Replying to [comment:8 dimpase]:\n\n> Replying to [comment:7 schilly]:\n>\nHere is an updated version, that also works on Solaris (this needed copying sun_complex.h from old cvxopt-0.9\nand patching cvxopt.h). I also turned on building GSL-extension (by turning on the appropriate option in setup.py, \nand supplying right include and lib-paths)\n  \n[http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p3.spkg](http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p3.spkg)",
+    "body": "Replying to [comment:8 dimpase]:\n\n> Replying to [comment:7 schilly]:\n\n>\nHere is an updated version, that also works on Solaris (this needed copying sun_complex.h from old cvxopt-0.9\nand patching cvxopt.h). I also turned on building GSL-extension (by turning on the appropriate option in setup.py, \nand supplying right include and lib-paths)\n  \n[http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p3.spkg](http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p3.spkg)",
     "created_at": "2010-03-18T15:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -701,6 +711,7 @@ archive/issue_comments_051902.json:
 Replying to [comment:8 dimpase]:
 
 > Replying to [comment:7 schilly]:
+
 >
 Here is an updated version, that also works on Solaris (this needed copying sun_complex.h from old cvxopt-0.9
 and patching cvxopt.h). I also turned on building GSL-extension (by turning on the appropriate option in setup.py, 
@@ -771,7 +782,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_051906.json:
 ```json
 {
-    "body": "Replying to [comment:19 schilly]:\n> hi, great work, your 1.1.2.p3.spkg works for me on intel core2 duo with ubuntu 9.04 running 4.3.4.rc0.\n> \n> It's just that the name shouldn't have the .p3, the SPKG.txt is not correct (your name missing), the patches aren't yours but still mine and there is no mention what you have really done with the *.h files for solaris. where is a good page to read about the spkg policies?!?\n\nOK, finally here comes an update:\n[http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg](http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg)\n\nFixed SPKG.txt, added all the patches in patches/,  further changes as we discussed by email (see SPKG.txt).\nTested (with Sage 4.3.4) on Linux x86 and x86_64, Solaris (t2) and on MacOSX 10.5 PPC (G4)",
+    "body": "Replying to [comment:19 schilly]:\n> hi, great work, your 1.1.2.p3.spkg works for me on intel core2 duo with ubuntu 9.04 running 4.3.4.rc0.\n> \n> It's just that the name shouldn't have the .p3, the SPKG.txt is not correct (your name missing), the patches aren't yours but still mine and there is no mention what you have really done with the *.h files for solaris. where is a good page to read about the spkg policies?!?\n\n\nOK, finally here comes an update:\n[http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg](http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg)\n\nFixed SPKG.txt, added all the patches in patches/,  further changes as we discussed by email (see SPKG.txt).\nTested (with Sage 4.3.4) on Linux x86 and x86_64, Solaris (t2) and on MacOSX 10.5 PPC (G4)",
     "created_at": "2010-03-24T16:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -784,6 +795,7 @@ Replying to [comment:19 schilly]:
 > hi, great work, your 1.1.2.p3.spkg works for me on intel core2 duo with ubuntu 9.04 running 4.3.4.rc0.
 > 
 > It's just that the name shouldn't have the .p3, the SPKG.txt is not correct (your name missing), the patches aren't yours but still mine and there is no mention what you have really done with the *.h files for solaris. where is a good page to read about the spkg policies?!?
+
 
 OK, finally here comes an update:
 [http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg](http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg)
@@ -816,7 +828,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_051908.json:
 ```json
 {
-    "body": "Replying to [comment:20 dimpase]:\n> Fixed SPKG.txt\n\nspkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.\n\nfinal spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)",
+    "body": "Replying to [comment:20 dimpase]:\n> Fixed SPKG.txt\n\n\nspkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.\n\nfinal spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)",
     "created_at": "2010-03-24T16:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -827,6 +839,7 @@ archive/issue_comments_051908.json:
 
 Replying to [comment:20 dimpase]:
 > Fixed SPKG.txt
+
 
 spkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.
 
@@ -839,7 +852,7 @@ final spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)
 archive/issue_comments_051909.json:
 ```json
 {
-    "body": "Replying to [comment:21 schilly]:\n> Replying to [comment:20 dimpase]:\n> > Fixed SPKG.txt\n> \n> spkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.\n> \n> final spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\nOK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?",
+    "body": "Replying to [comment:21 schilly]:\n> Replying to [comment:20 dimpase]:\n> > Fixed SPKG.txt\n\n> \n> spkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.\n> \n> final spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)\n\n\nOK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?",
     "created_at": "2010-03-24T18:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -851,10 +864,12 @@ archive/issue_comments_051909.json:
 Replying to [comment:21 schilly]:
 > Replying to [comment:20 dimpase]:
 > > Fixed SPKG.txt
+
 > 
 > spkg works for me on ubuntu 9.04, intel core2 duo and sage 4.3.4. I've just further cleaned up the SPKG.txt file since only the net changes are relevant and now there is also a title plus a description.
 > 
 > final spkg is [here](http://boxen.math.washington.edu/home/schilly/sage/spkg/)
+
 
 OK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?
 
@@ -865,7 +880,7 @@ OK, great, thanks! How do we finalise this? Should I make myself the owner? Shou
 archive/issue_comments_051910.json:
 ```json
 {
-    "body": "Replying to [comment:22 dimpase]:\n> OK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?\n\nUhm, we both are the authors and well, we need a thrid party to give us a positive review ;)",
+    "body": "Replying to [comment:22 dimpase]:\n> OK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?\n\n\nUhm, we both are the authors and well, we need a thrid party to give us a positive review ;)",
     "created_at": "2010-03-24T18:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -876,6 +891,7 @@ archive/issue_comments_051910.json:
 
 Replying to [comment:22 dimpase]:
 > OK, great, thanks! How do we finalise this? Should I make myself the owner? Should I make you (and/or myself?) the author?
+
 
 Uhm, we both are the authors and well, we need a thrid party to give us a positive review ;)
 
@@ -932,7 +948,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_051913.json:
 ```json
 {
-    "body": "Replying to [comment:24 ncohen]:\n> P.S. : what would you think of creating another ticket to add a line about this perparsing bug somewhere there : http://www.sagemath.org/doc/numerical_sage/cvxopt.html ?\n\nThat's not a bug, the examples in that tutorial redefine `Integer` as `int` and similar workarounds. I prefer disabling the preparser or switching to pure python mode. However, maybe this could be done automatically somehow (as with numpy arrays?) but that's not the scope of this ticket.",
+    "body": "Replying to [comment:24 ncohen]:\n> P.S. : what would you think of creating another ticket to add a line about this perparsing bug somewhere there : http://www.sagemath.org/doc/numerical_sage/cvxopt.html ?\n\n\nThat's not a bug, the examples in that tutorial redefine `Integer` as `int` and similar workarounds. I prefer disabling the preparser or switching to pure python mode. However, maybe this could be done automatically somehow (as with numpy arrays?) but that's not the scope of this ticket.",
     "created_at": "2010-03-25T18:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -943,6 +959,7 @@ archive/issue_comments_051913.json:
 
 Replying to [comment:24 ncohen]:
 > P.S. : what would you think of creating another ticket to add a line about this perparsing bug somewhere there : http://www.sagemath.org/doc/numerical_sage/cvxopt.html ?
+
 
 That's not a bug, the examples in that tutorial redefine `Integer` as `int` and similar workarounds. I prefer disabling the preparser or switching to pure python mode. However, maybe this could be done automatically somehow (as with numpy arrays?) but that's not the scope of this ticket.
 
@@ -971,7 +988,7 @@ trival changes to the cvxopt chapter in the numerical sage tutorial
 archive/issue_comments_051915.json:
 ```json
 {
-    "body": "Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by @jhpalmieri created at 2010-04-19 21:58:42\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```\n",
+    "body": "Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by @jhpalmieri created at 2010-04-19 21:58:42\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```",
     "created_at": "2010-04-19T21:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -991,13 +1008,12 @@ Any ideas why the new spkg is so much smaller than the old one?
 
 
 
-
 ---
 
 archive/issue_comments_051916.json:
 ```json
 {
-    "body": "Replying to [comment:26 jhpalmieri]:\n> Any ideas why the new spkg is so much smaller than the old one?\n\niirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).",
+    "body": "Replying to [comment:26 jhpalmieri]:\n> Any ideas why the new spkg is so much smaller than the old one?\n\n\niirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).",
     "created_at": "2010-04-19T22:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1008,6 +1024,7 @@ archive/issue_comments_051916.json:
 
 Replying to [comment:26 jhpalmieri]:
 > Any ideas why the new spkg is so much smaller than the old one?
+
 
 iirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).
 
@@ -1062,7 +1079,7 @@ I don't think this is ready to go in.  Some issues:
 archive/issue_comments_051919.json:
 ```json
 {
-    "body": "Replying to [comment:28 mhansen]:\n> I don't think this is ready to go in.  Some issues:\n> \n> 1. I don't think there should be a patches-old directory.  If people need them for historical reasons, then they should get them from the hg repo since that's what it is there for.\n\nOK, this is clear. We need to check if we didn't nuke the old .hg/,\nand put it back, if necessary. \n\n> \n> 2. Files are modified in place in the src/ directory.  That should be as close to clean as vanilla upstream as possible.  The modified files should be copied over from patches/\n\nOK, this is clear too (although this seems to be against the historic way cvxopt spkg was created)\n\n> \n> 3. In the patches directory, the patches should be unified diffs (diff -Naur).\n\nI don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n\n\n> \n> 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.\n\nwe'll see.",
+    "body": "Replying to [comment:28 mhansen]:\n> I don't think this is ready to go in.  Some issues:\n> \n> 1. I don't think there should be a patches-old directory.  If people need them for historical reasons, then they should get them from the hg repo since that's what it is there for.\n\n\nOK, this is clear. We need to check if we didn't nuke the old .hg/,\nand put it back, if necessary. \n\n> \n> 2. Files are modified in place in the src/ directory.  That should be as close to clean as vanilla upstream as possible.  The modified files should be copied over from patches/\n\n\nOK, this is clear too (although this seems to be against the historic way cvxopt spkg was created)\n\n> \n> 3. In the patches directory, the patches should be unified diffs (diff -Naur).\n\n\nI don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n\n\n> \n> 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.\n\n\nwe'll see.",
     "created_at": "2010-04-28T07:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1076,22 +1093,26 @@ Replying to [comment:28 mhansen]:
 > 
 > 1. I don't think there should be a patches-old directory.  If people need them for historical reasons, then they should get them from the hg repo since that's what it is there for.
 
+
 OK, this is clear. We need to check if we didn't nuke the old .hg/,
 and put it back, if necessary. 
 
 > 
 > 2. Files are modified in place in the src/ directory.  That should be as close to clean as vanilla upstream as possible.  The modified files should be copied over from patches/
 
+
 OK, this is clear too (although this seems to be against the historic way cvxopt spkg was created)
 
 > 
 > 3. In the patches directory, the patches should be unified diffs (diff -Naur).
+
 
 I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?
 
 
 > 
 > 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.
+
 
 we'll see.
 
@@ -1102,7 +1123,7 @@ we'll see.
 archive/issue_comments_051920.json:
 ```json
 {
-    "body": "Replying to [comment:29 dimpase]:\n> I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n\nYou should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.",
+    "body": "Replying to [comment:29 dimpase]:\n> I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n\n\nYou should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.",
     "created_at": "2010-04-28T07:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1114,6 +1135,7 @@ archive/issue_comments_051920.json:
 Replying to [comment:29 dimpase]:
 > I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?
 
+
 You should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.
 
 
@@ -1123,7 +1145,7 @@ You should have both the patched file and the diff in the patches/ directory.  T
 archive/issue_comments_051921.json:
 ```json
 {
-    "body": "Replying to [comment:30 mhansen]:\n> Replying to [comment:29 dimpase]:\n> > I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n> \n> You should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.\n\nThis seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.",
+    "body": "Replying to [comment:30 mhansen]:\n> Replying to [comment:29 dimpase]:\n> > I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?\n\n> \n> You should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.\n\n\nThis seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.",
     "created_at": "2010-04-28T07:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1135,8 +1157,10 @@ archive/issue_comments_051921.json:
 Replying to [comment:30 mhansen]:
 > Replying to [comment:29 dimpase]:
 > > I don't get this. Are you saying that patches cannot be just files that are ready to be copied, that they must be diffs, and the spkg-install must be patching rather than copying?
+
 > 
 > You should have both the patched file and the diff in the patches/ directory.  The diff is useful when upgrading the spkg.
+
 
 This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.
 
@@ -1147,7 +1171,7 @@ This seems to be an unnecessary duplication of information. The diffs can be tri
 archive/issue_comments_051922.json:
 ```json
 {
-    "body": "Replying to [comment:31 dimpase]:\n> This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.\n\nThey can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.",
+    "body": "Replying to [comment:31 dimpase]:\n> This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.\n\n\nThey can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.",
     "created_at": "2010-05-25T00:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1159,6 +1183,7 @@ archive/issue_comments_051922.json:
 Replying to [comment:31 dimpase]:
 > This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.
 
+
 They can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.
 
 
@@ -1168,7 +1193,7 @@ They can be recreated if you have the correct version of the source from which t
 archive/issue_comments_051923.json:
 ```json
 {
-    "body": "Replying to [comment:32 mhansen]:\n> Replying to [comment:31 dimpase]:\n> > This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.\n> \n> They can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.\n\nI should have time next week to fix this, finally...\nDima",
+    "body": "Replying to [comment:32 mhansen]:\n> Replying to [comment:31 dimpase]:\n> > This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.\n\n> \n> They can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.\n\n\nI should have time next week to fix this, finally...\nDima",
     "created_at": "2010-07-15T21:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1180,8 +1205,10 @@ archive/issue_comments_051923.json:
 Replying to [comment:32 mhansen]:
 > Replying to [comment:31 dimpase]:
 > > This seems to be an unnecessary duplication of information. The diffs can be trivially created, if needed.
+
 > 
 > They can be recreated if you have the correct version of the source from which the patched file was created.  It's easier if the actual diff is in the version control.
+
 
 I should have time next week to fix this, finally...
 Dima
@@ -1249,7 +1276,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_051927.json:
 ```json
 {
-    "body": "Replying to [comment:28 mhansen]:\n> I don't think this is ready to go in.  Some issues:\n> \n> 1. I don't think there should be a patches-old directory.  If people need them for historical reasons, then they should get them from the hg repo since that's what it is there for.\n> \n> 2. Files are modified in place in the src/ directory.  That should be as close to clean as vanilla upstream as possible.  The modified files should be copied over from patches/\n> \n> 3. In the patches directory, the patches should be unified diffs (diff -Naur).\n> \n> 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.\n\nthe update, that takes your comments into account, is here\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg\n\nPlease have a look, hopefully it is OK now.\nDima",
+    "body": "Replying to [comment:28 mhansen]:\n> I don't think this is ready to go in.  Some issues:\n> \n> 1. I don't think there should be a patches-old directory.  If people need them for historical reasons, then they should get them from the hg repo since that's what it is there for.\n> \n> 2. Files are modified in place in the src/ directory.  That should be as close to clean as vanilla upstream as possible.  The modified files should be copied over from patches/\n> \n> 3. In the patches directory, the patches should be unified diffs (diff -Naur).\n> \n> 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.\n\n\nthe update, that takes your comments into account, is here\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg\n\nPlease have a look, hopefully it is OK now.\nDima",
     "created_at": "2010-07-26T14:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1268,6 +1295,7 @@ Replying to [comment:28 mhansen]:
 > 3. In the patches directory, the patches should be unified diffs (diff -Naur).
 > 
 > 4. In spkg-install, you should just remove the old, unnecessary code instead of just commenting it out.  Also, I don't think the SAGE_LOCAL check is necessary.
+
 
 the update, that takes your comments into account, is here
 http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg
@@ -1320,7 +1348,7 @@ regarding glpk, Dima are you able to enable the glpk flag and try building it? i
 archive/issue_comments_051930.json:
 ```json
 {
-    "body": "Replying to [comment:37 schilly]:\n> regarding glpk, Dima are you able to enable the glpk flag and try building it? if it works i can test it again and see if that's fine - if it doesn't build and you run into bigger problems, we should finally update this spkg anyways and postpone glpk support in cvxopt.\n\nThere's a patch for glpk for the old cvxopt 0.9 at #9598.   The changes there should work find for cvxopt 1.1 as well.",
+    "body": "Replying to [comment:37 schilly]:\n> regarding glpk, Dima are you able to enable the glpk flag and try building it? if it works i can test it again and see if that's fine - if it doesn't build and you run into bigger problems, we should finally update this spkg anyways and postpone glpk support in cvxopt.\n\n\nThere's a patch for glpk for the old cvxopt 0.9 at #9598.   The changes there should work find for cvxopt 1.1 as well.",
     "created_at": "2010-07-26T15:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1332,6 +1360,7 @@ archive/issue_comments_051930.json:
 Replying to [comment:37 schilly]:
 > regarding glpk, Dima are you able to enable the glpk flag and try building it? if it works i can test it again and see if that's fine - if it doesn't build and you run into bigger problems, we should finally update this spkg anyways and postpone glpk support in cvxopt.
 
+
 There's a patch for glpk for the old cvxopt 0.9 at #9598.   The changes there should work find for cvxopt 1.1 as well.
 
 
@@ -1341,7 +1370,7 @@ There's a patch for glpk for the old cvxopt 0.9 at #9598.   The changes there sh
 archive/issue_comments_051931.json:
 ```json
 {
-    "body": "Looking in \n\n\n```\ncvxopt-1.1.2/src\n```\n\n\nI see \n\n\n```\ndrwxr-xr-x   3 drkirkby staff          5 Mar 24 11:40 cvxopt-1.1.2\nlrwxrwxrwx   1 drkirkby staff         16 Jul 26 16:10 src -> cvxopt-1.1.2/src\n```\n\n\nIt is certainly unusual to do this. Normally the top level src directory contains the source, not another directory with a link like this. I know of no other package like this. \n\nI'm also puzzled why we have this:\n\n\n```\n# Solaris-specific patches\ncp -p patches/sun_complex.h src/src/C/\ncp -p patches/cvxopt.h src/src/C/\n```\n\n\nThere is no file `src/src/C/sun_complex.h` so the first line just creates copies the file `/usr/include/complex.h` from Solaris to the patches directory. That file is from Sun, and its doubtful we can legally distribute `/usr/include/complex.h`\n\nThe second patch, patches/cvxopt.h differs from src/src/C/cvxopt.h by very little. A diff shows:\n\n\n```\ndrkirkby@hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/cvxopt.h patches/cvxopt.h\n--- src/src/C/cvxopt.h\tMon Jul 26 11:16:09 2010\n+++ patches/cvxopt.h\tMon Jul 26 10:58:48 2010\n@@ -26,7 +26,14 @@\n /* ANSI99 complex is disabled during build of CHOLMOD */\n \n #ifndef NO_ANSI99_COMPLEX\n+\n+/* work around Solaris 10 specific problem in complex.h */\n+#if defined (__sun)\n+#include \"sun_complex.h\"\n+#else\n #include \"complex.h\"\n+#endif\n+\n #define MAT_BUFZ(O)  ((complex *)((matrix *)O)->buffer)\n #endif\n```\n\n\nIf I'm not mistaken, all these two patches achieve is to  \n\n* Add a file `/usr/include/complex.h` to Sage taken from Solaris, that it is doubtful we can legally include, though I doubt Sun (now Oracle) will complain. \n* Change a file `patches/cvxopt.h` to include the file we have just illegally copied. \n\nIt would to me at least be a lot easier to just change the second file so it had\n\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */ \n#include <complex.h>\n#endif\n```\n\n\nWhy are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?\n\nDave",
+    "body": "Looking in \n\n```\ncvxopt-1.1.2/src\n```\n\nI see \n\n```\ndrwxr-xr-x   3 drkirkby staff          5 Mar 24 11:40 cvxopt-1.1.2\nlrwxrwxrwx   1 drkirkby staff         16 Jul 26 16:10 src -> cvxopt-1.1.2/src\n```\n\nIt is certainly unusual to do this. Normally the top level src directory contains the source, not another directory with a link like this. I know of no other package like this. \n\nI'm also puzzled why we have this:\n\n```\n# Solaris-specific patches\ncp -p patches/sun_complex.h src/src/C/\ncp -p patches/cvxopt.h src/src/C/\n```\n\nThere is no file `src/src/C/sun_complex.h` so the first line just creates copies the file `/usr/include/complex.h` from Solaris to the patches directory. That file is from Sun, and its doubtful we can legally distribute `/usr/include/complex.h`\n\nThe second patch, patches/cvxopt.h differs from src/src/C/cvxopt.h by very little. A diff shows:\n\n```\ndrkirkby@hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/cvxopt.h patches/cvxopt.h\n--- src/src/C/cvxopt.h\tMon Jul 26 11:16:09 2010\n+++ patches/cvxopt.h\tMon Jul 26 10:58:48 2010\n@@ -26,7 +26,14 @@\n /* ANSI99 complex is disabled during build of CHOLMOD */\n \n #ifndef NO_ANSI99_COMPLEX\n+\n+/* work around Solaris 10 specific problem in complex.h */\n+#if defined (__sun)\n+#include \"sun_complex.h\"\n+#else\n #include \"complex.h\"\n+#endif\n+\n #define MAT_BUFZ(O)  ((complex *)((matrix *)O)->buffer)\n #endif\n```\n\nIf I'm not mistaken, all these two patches achieve is to  \n\n* Add a file `/usr/include/complex.h` to Sage taken from Solaris, that it is doubtful we can legally include, though I doubt Sun (now Oracle) will complain. \n* Change a file `patches/cvxopt.h` to include the file we have just illegally copied. \n\nIt would to me at least be a lot easier to just change the second file so it had\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */ \n#include <complex.h>\n#endif\n```\n\nWhy are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?\n\nDave",
     "created_at": "2010-07-26T15:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1352,25 +1381,20 @@ archive/issue_comments_051931.json:
 
 Looking in 
 
-
 ```
 cvxopt-1.1.2/src
 ```
 
-
 I see 
-
 
 ```
 drwxr-xr-x   3 drkirkby staff          5 Mar 24 11:40 cvxopt-1.1.2
 lrwxrwxrwx   1 drkirkby staff         16 Jul 26 16:10 src -> cvxopt-1.1.2/src
 ```
 
-
 It is certainly unusual to do this. Normally the top level src directory contains the source, not another directory with a link like this. I know of no other package like this. 
 
 I'm also puzzled why we have this:
-
 
 ```
 # Solaris-specific patches
@@ -1378,11 +1402,9 @@ cp -p patches/sun_complex.h src/src/C/
 cp -p patches/cvxopt.h src/src/C/
 ```
 
-
 There is no file `src/src/C/sun_complex.h` so the first line just creates copies the file `/usr/include/complex.h` from Solaris to the patches directory. That file is from Sun, and its doubtful we can legally distribute `/usr/include/complex.h`
 
 The second patch, patches/cvxopt.h differs from src/src/C/cvxopt.h by very little. A diff shows:
-
 
 ```
 drkirkby@hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/cvxopt.h patches/cvxopt.h
@@ -1404,7 +1426,6 @@ drkirkby@hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/
  #endif
 ```
 
-
 If I'm not mistaken, all these two patches achieve is to  
 
 * Add a file `/usr/include/complex.h` to Sage taken from Solaris, that it is doubtful we can legally include, though I doubt Sun (now Oracle) will complain. 
@@ -1412,13 +1433,11 @@ If I'm not mistaken, all these two patches achieve is to
 
 It would to me at least be a lot easier to just change the second file so it had
 
-
 ```
 #ifdef if defined __sun /* Need to check if that's the best one */ 
 #include <complex.h>
 #endif
 ```
-
 
 Why are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?
 
@@ -1452,7 +1471,7 @@ Dave
 archive/issue_comments_051933.json:
 ```json
 {
-    "body": "Replying to [comment:39 drkirkby]:\n> Why are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?\n\nBecause that's the way it was done in 0.9 and nobody of us knows about this in such a detail.",
+    "body": "Replying to [comment:39 drkirkby]:\n> Why are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?\n\n\nBecause that's the way it was done in 0.9 and nobody of us knows about this in such a detail.",
     "created_at": "2010-07-26T15:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1464,6 +1483,7 @@ archive/issue_comments_051933.json:
 Replying to [comment:39 drkirkby]:
 > Why are we bothering to copy a system file from Solaris, rather than just not use `#include <complex.h>`?
 
+
 Because that's the way it was done in 0.9 and nobody of us knows about this in such a detail.
 
 
@@ -1473,7 +1493,7 @@ Because that's the way it was done in 0.9 and nobody of us knows about this in s
 archive/issue_comments_051934.json:
 ```json
 {
-    "body": "Replying to [comment:36 dunfield]:\n> This ticket should be coordinated with #9598, which adds GLPK support to cvxopt.\nplease see\n\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\nThis incorporates the #9598 in 1.1.2.\nOnly tested on Linux Debian 32bit.\nI won't be having much internet until after tomorrow.\n\nDima",
+    "body": "Replying to [comment:36 dunfield]:\n> This ticket should be coordinated with #9598, which adds GLPK support to cvxopt.\n\nplease see\n\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\nThis incorporates the #9598 in 1.1.2.\nOnly tested on Linux Debian 32bit.\nI won't be having much internet until after tomorrow.\n\nDima",
     "created_at": "2010-07-26T16:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1484,6 +1504,7 @@ archive/issue_comments_051934.json:
 
 Replying to [comment:36 dunfield]:
 > This ticket should be coordinated with #9598, which adds GLPK support to cvxopt.
+
 please see
 
 http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg
@@ -1501,7 +1522,7 @@ Dima
 archive/issue_comments_051935.json:
 ```json
 {
-    "body": "Replying to [comment:42 dimpase]:\n> This incorporates the #9598 in 1.1.2.\n\nI tested it again and also tried to use glpk as an lp solver and it worked:\n\n\n```\nsage: from cvxopt import matrix, solvers\nsage: c = matrix([-4., -5.])\nsage: G = matrix([[2., 1., -1., 0.], [1., 2., 0., -1.]])\nsage: h = matrix([3., 3., 0., 0.])\nsage: sol = solvers.lp(c, G, h, solver='glpk')\nGLPK Simplex Optimizer, v4.44\n4 rows, 2 columns, 6 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  1.000e+00  max|aij| =  2.000e+00  ratio =  2.000e+00\nProblem data seem to be well scaled\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =   0.000000000e+00  infeas =  0.000e+00 (0)\n*     2: obj =  -9.000000000e+00  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\n```\n\n\n----\n\ndear release manager, please don't forget to include GLPL as a dependency for cvxopt in the spkg/standard/deps file according to [this comment](http://trac.sagemath.org/sage_trac/ticket/9598#comment:3).",
+    "body": "Replying to [comment:42 dimpase]:\n> This incorporates the #9598 in 1.1.2.\n\n\nI tested it again and also tried to use glpk as an lp solver and it worked:\n\n```\nsage: from cvxopt import matrix, solvers\nsage: c = matrix([-4., -5.])\nsage: G = matrix([[2., 1., -1., 0.], [1., 2., 0., -1.]])\nsage: h = matrix([3., 3., 0., 0.])\nsage: sol = solvers.lp(c, G, h, solver='glpk')\nGLPK Simplex Optimizer, v4.44\n4 rows, 2 columns, 6 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  1.000e+00  max|aij| =  2.000e+00  ratio =  2.000e+00\nProblem data seem to be well scaled\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =   0.000000000e+00  infeas =  0.000e+00 (0)\n*     2: obj =  -9.000000000e+00  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\n```\n\n---\n\ndear release manager, please don't forget to include GLPL as a dependency for cvxopt in the spkg/standard/deps file according to [this comment](http://trac.sagemath.org/sage_trac/ticket/9598#comment:3).",
     "created_at": "2010-07-26T16:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1513,8 +1534,8 @@ archive/issue_comments_051935.json:
 Replying to [comment:42 dimpase]:
 > This incorporates the #9598 in 1.1.2.
 
-I tested it again and also tried to use glpk as an lp solver and it worked:
 
+I tested it again and also tried to use glpk as an lp solver and it worked:
 
 ```
 sage: from cvxopt import matrix, solvers
@@ -1536,8 +1557,7 @@ Size of triangular part = 2
 OPTIMAL SOLUTION FOUND
 ```
 
-
-----
+---
 
 dear release manager, please don't forget to include GLPL as a dependency for cvxopt in the spkg/standard/deps file according to [this comment](http://trac.sagemath.org/sage_trac/ticket/9598#comment:3).
 
@@ -1548,7 +1568,7 @@ dear release manager, please don't forget to include GLPL as a dependency for cv
 archive/issue_comments_051936.json:
 ```json
 {
-    "body": "> This incorporates the #9598 in 1.1.2.\n> Only tested on Linux Debian 32bit.\n\nWorks fine on OS X Leopard, used same test as shilly above.",
+    "body": "> This incorporates the #9598 in 1.1.2.\n> Only tested on Linux Debian 32bit.\n\n\nWorks fine on OS X Leopard, used same test as shilly above.",
     "created_at": "2010-07-26T16:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1559,6 +1579,7 @@ archive/issue_comments_051936.json:
 
 > This incorporates the #9598 in 1.1.2.
 > Only tested on Linux Debian 32bit.
+
 
 Works fine on OS X Leopard, used same test as shilly above.
 
@@ -1614,7 +1635,7 @@ Dave
 archive/issue_comments_051939.json:
 ```json
 {
-    "body": "Replying to [comment:27 schilly]:\n> Replying to [comment:26 jhpalmieri]:\n> > Any ideas why the new spkg is so much smaller than the old one?\n> \n> iirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).\n\nI don't think that was such a good idea, as the documentation and the examples can be used to test the package. To quote from the `INSTALL` file. \n\n\n```\nTest it:\n--------\nTo test that the installation was successful, go to the examples\ndirectory and try one of the examples, for example,\n\n    $ cd examples/doc/chap8\n    $ python lp\n```\n\n\nSo if a spkg-check file was created, whilst leaving the documentation and examples in place, it would be possible to check this. \n\nGiven there is only one .spkg which will be merged in 4.5.2, would it not be better to work on this a bit more? I can see some obvious things that could be improved. \n\n* Put back the examples and documentation. \n* Add an spkg-check file and test the examples - this will only happen if SAGE_CHECK=yes\n* Try removing all the Solaris specific patches. I just did a **very** quick test on an OpenSolaris machine, and found this built without those patches. \n* Change the directory structure to what is standard in Sage, and not as it is now. \n* Remove the patches from #9598, which IMHO have not been checked carefully. \n\nI'll leave it up to you guys how you resolve it. If you want me to make a package based on that above, I'd be willing to do it. \n\nDave",
+    "body": "Replying to [comment:27 schilly]:\n> Replying to [comment:26 jhpalmieri]:\n> > Any ideas why the new spkg is so much smaller than the old one?\n\n> \n> iirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).\n\n\nI don't think that was such a good idea, as the documentation and the examples can be used to test the package. To quote from the `INSTALL` file. \n\n```\nTest it:\n--------\nTo test that the installation was successful, go to the examples\ndirectory and try one of the examples, for example,\n\n    $ cd examples/doc/chap8\n    $ python lp\n```\n\nSo if a spkg-check file was created, whilst leaving the documentation and examples in place, it would be possible to check this. \n\nGiven there is only one .spkg which will be merged in 4.5.2, would it not be better to work on this a bit more? I can see some obvious things that could be improved. \n\n* Put back the examples and documentation. \n* Add an spkg-check file and test the examples - this will only happen if SAGE_CHECK=yes\n* Try removing all the Solaris specific patches. I just did a **very** quick test on an OpenSolaris machine, and found this built without those patches. \n* Change the directory structure to what is standard in Sage, and not as it is now. \n* Remove the patches from #9598, which IMHO have not been checked carefully. \n\nI'll leave it up to you guys how you resolve it. If you want me to make a package based on that above, I'd be willing to do it. \n\nDave",
     "created_at": "2010-07-26T18:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1626,11 +1647,12 @@ archive/issue_comments_051939.json:
 Replying to [comment:27 schilly]:
 > Replying to [comment:26 jhpalmieri]:
 > > Any ideas why the new spkg is so much smaller than the old one?
+
 > 
 > iirc we have removed documentation and examples. They are not exposed in any way or not used at all (tex sources).
 
-I don't think that was such a good idea, as the documentation and the examples can be used to test the package. To quote from the `INSTALL` file. 
 
+I don't think that was such a good idea, as the documentation and the examples can be used to test the package. To quote from the `INSTALL` file. 
 
 ```
 Test it:
@@ -1641,7 +1663,6 @@ directory and try one of the examples, for example,
     $ cd examples/doc/chap8
     $ python lp
 ```
-
 
 So if a spkg-check file was created, whilst leaving the documentation and examples in place, it would be possible to check this. 
 
@@ -1682,7 +1703,7 @@ Over at #9598, I just uploaded a change in the Sage docs of cvxopt which include
 archive/issue_comments_051941.json:
 ```json
 {
-    "body": "Replying to [comment:45 drkirkby]:\n> Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:\n\nDave, it's just the question of turning a particular interface on.\nThere should be no problems --- most of all cause there is 0 exposure of\nthis to any Sage code at the moment.\n\nThe next step would be to have a proper test for this somewhere...\n\n> \n>  * #9598 has not been tested properly. \n>  * There is no documentation for the updates, so nothing to indicate that cvxopt can be used with the glpk solver.\n>  * There are no additional doc tests which show the output of using cvxopt with the glpk solver. \n>  * The author does not know if it's platform dependent or not, and says he has only checked on OS X. \n> \n> I've marked #9598 as needs work, as based on what I deduce, it does need work before being what I personally consider acceptable. \n> \n> Dave \n>",
+    "body": "Replying to [comment:45 drkirkby]:\n> Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:\n\n\nDave, it's just the question of turning a particular interface on.\nThere should be no problems --- most of all cause there is 0 exposure of\nthis to any Sage code at the moment.\n\nThe next step would be to have a proper test for this somewhere...\n\n> \n> * #9598 has not been tested properly. \n> * There is no documentation for the updates, so nothing to indicate that cvxopt can be used with the glpk solver.\n> * There are no additional doc tests which show the output of using cvxopt with the glpk solver. \n> * The author does not know if it's platform dependent or not, and says he has only checked on OS X. \n> \n> I've marked #9598 as needs work, as based on what I deduce, it does need work before being what I personally consider acceptable. \n> \n> Dave \n\n>",
     "created_at": "2010-07-27T11:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1694,6 +1715,7 @@ archive/issue_comments_051941.json:
 Replying to [comment:45 drkirkby]:
 > Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:
 
+
 Dave, it's just the question of turning a particular interface on.
 There should be no problems --- most of all cause there is 0 exposure of
 this to any Sage code at the moment.
@@ -1701,14 +1723,15 @@ this to any Sage code at the moment.
 The next step would be to have a proper test for this somewhere...
 
 > 
->  * #9598 has not been tested properly. 
->  * There is no documentation for the updates, so nothing to indicate that cvxopt can be used with the glpk solver.
->  * There are no additional doc tests which show the output of using cvxopt with the glpk solver. 
->  * The author does not know if it's platform dependent or not, and says he has only checked on OS X. 
+> * #9598 has not been tested properly. 
+> * There is no documentation for the updates, so nothing to indicate that cvxopt can be used with the glpk solver.
+> * There are no additional doc tests which show the output of using cvxopt with the glpk solver. 
+> * The author does not know if it's platform dependent or not, and says he has only checked on OS X. 
 > 
 > I've marked #9598 as needs work, as based on what I deduce, it does need work before being what I personally consider acceptable. 
 > 
 > Dave 
+
 >
 
 
@@ -1718,7 +1741,7 @@ The next step would be to have a proper test for this somewhere...
 archive/issue_comments_051942.json:
 ```json
 {
-    "body": "Replying to [comment:48 dimpase]:\n> Replying to [comment:45 drkirkby]:\n> > Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:\n> \n> Dave, it's just the question of turning a particular interface on.\n> There should be no problems --- most of all cause there is 0 exposure of\n> this to any Sage code at the moment.\n> \n> The next step would be to have a proper test for this somewhere...\n\nBut my understanding is that there should be a test, so code like that in #9598 can't be committed until there is a test and documentation for it - I note that some documentation has now been added, though I'm not sure about test code. It does not seem right to me to link to a library when\n\n* Whether the linking on some platforms is untested.\n* The is no documentation to cvxopt to show how to use this library.\n* There is no test code. \n\n(That was the situation at the time I marked it as needing work - that may have changed now). \n\nNote also that cvxopt does have test code, which is not executed. Since that was not before, I'm not suggesting that should be made conditional on getting a positive review. But given this ticket will not be merged in 4.5.2 (as only one .spkg file will be), it would seem wise to sort out that too, and run the package's self-tests. That would mean restoring the documentation and examples, as that is how this code gets tested. \n\nSorry if I appear too pedantic, but I'm just trying to ensure that what we have works on all platforms, is tested on all platforms, and is documented properly. \n\nDave",
+    "body": "Replying to [comment:48 dimpase]:\n> Replying to [comment:45 drkirkby]:\n> > Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:\n\n> \n> Dave, it's just the question of turning a particular interface on.\n> There should be no problems --- most of all cause there is 0 exposure of\n> this to any Sage code at the moment.\n> \n> The next step would be to have a proper test for this somewhere...\n\n\nBut my understanding is that there should be a test, so code like that in #9598 can't be committed until there is a test and documentation for it - I note that some documentation has now been added, though I'm not sure about test code. It does not seem right to me to link to a library when\n\n* Whether the linking on some platforms is untested.\n* The is no documentation to cvxopt to show how to use this library.\n* There is no test code. \n\n(That was the situation at the time I marked it as needing work - that may have changed now). \n\nNote also that cvxopt does have test code, which is not executed. Since that was not before, I'm not suggesting that should be made conditional on getting a positive review. But given this ticket will not be merged in 4.5.2 (as only one .spkg file will be), it would seem wise to sort out that too, and run the package's self-tests. That would mean restoring the documentation and examples, as that is how this code gets tested. \n\nSorry if I appear too pedantic, but I'm just trying to ensure that what we have works on all platforms, is tested on all platforms, and is documented properly. \n\nDave",
     "created_at": "2010-07-27T11:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1730,12 +1753,14 @@ archive/issue_comments_051942.json:
 Replying to [comment:48 dimpase]:
 > Replying to [comment:45 drkirkby]:
 > > Are you sure its a good idea to merge the changes from #9598? IMHO, it would be better to make these tickets separate, as:
+
 > 
 > Dave, it's just the question of turning a particular interface on.
 > There should be no problems --- most of all cause there is 0 exposure of
 > this to any Sage code at the moment.
 > 
 > The next step would be to have a proper test for this somewhere...
+
 
 But my understanding is that there should be a test, so code like that in #9598 can't be committed until there is a test and documentation for it - I note that some documentation has now been added, though I'm not sure about test code. It does not seem right to me to link to a library when
 
@@ -1758,7 +1783,7 @@ Dave
 archive/issue_comments_051943.json:
 ```json
 {
-    "body": "Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by @peterjeremy created at 2010-07-27 23:01:20\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
+    "body": "Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by @peterjeremy created at 2010-07-27 23:01:20\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
     "created_at": "2010-07-27T23:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1806,7 +1831,6 @@ C/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompati
 C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'
 ```
 
-
 `Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.
 
 
@@ -1816,7 +1840,7 @@ C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize
 archive/issue_comments_051944.json:
 ```json
 {
-    "body": "While this builds on t2.math, it fails to build on mark (a skynet solaris machine).  Of course, the old version of cvxopt doesn't build on mark, either...\n\nWith either version, I get this, right at the start of the build:\n\n```\nrunning build_ext\nbuilding 'glpk' extension\ncreating build/temp.solaris-2.10-sun4u-2.6\ncreating build/temp.solaris-2.10-sun4u-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/pa\\\nlmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/\\\npython2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\nIn file included from C/cvxopt.h:32:0,\n                 from C/glpk.c:20:\nC/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```\n",
+    "body": "While this builds on t2.math, it fails to build on mark (a skynet solaris machine).  Of course, the old version of cvxopt doesn't build on mark, either...\n\nWith either version, I get this, right at the start of the build:\n\n```\nrunning build_ext\nbuilding 'glpk' extension\ncreating build/temp.solaris-2.10-sun4u-2.6\ncreating build/temp.solaris-2.10-sun4u-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/pa\\\nlmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/\\\npython2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\nIn file included from C/cvxopt.h:32:0,\n                 from C/glpk.c:20:\nC/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```",
     "created_at": "2010-07-28T00:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1846,13 +1870,12 @@ Error building/installing cvxopt
 
 
 
-
 ---
 
 archive/issue_comments_051945.json:
 ```json
 {
-    "body": "Replying to [comment:51 jhpalmieri]:\n> While this builds on t2.math, it fails to build on mark (a skynet solaris machine).  Of course, the old version of cvxopt doesn't build on mark, either...\n> \n> With either version, I get this, right at the start of the build:\n> {{{\n> running build_ext\n> building 'glpk' extension\n> creating build/temp.solaris-2.10-sun4u-2.6\n> creating build/temp.solaris-2.10-sun4u-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/pa\\\n> lmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/\\\n> python2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\n> In file included from C/cvxopt.h:32:0,\n>                  from C/glpk.c:20:\n> C/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\n> error: command 'gcc' failed with exit status 1\n> Error building/installing cvxopt\n> }}}\n\nJohn, what is the md5 checksum of the package you used? Where did you get it from? I took Dima's package \n\n http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\n(md5 = 38681db8e19f69b0e7972c5278e8e183)\n\nbut get no such error message on t2.math (Solaris 10). I do notice a lot of unused variables, and other compiler warnings, which always make me a bit weary of code. \n\nI think in light of what Peter Jeremy has found, it would be foolish to not add an spkg-check file and execute the self-tests for cvxopt. \n\nDave",
+    "body": "Replying to [comment:51 jhpalmieri]:\n> While this builds on t2.math, it fails to build on mark (a skynet solaris machine).  Of course, the old version of cvxopt doesn't build on mark, either...\n> \n> With either version, I get this, right at the start of the build:\n> \n> ```\n> running build_ext\n> building 'glpk' extension\n> creating build/temp.solaris-2.10-sun4u-2.6\n> creating build/temp.solaris-2.10-sun4u-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/pa\\\n> lmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/\\\n> python2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\n> In file included from C/cvxopt.h:32:0,\n>                  from C/glpk.c:20:\n> C/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\n> error: command 'gcc' failed with exit status 1\n> Error building/installing cvxopt\n> ```\n\n\nJohn, what is the md5 checksum of the package you used? Where did you get it from? I took Dima's package \n\n http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\n(md5 = 38681db8e19f69b0e7972c5278e8e183)\n\nbut get no such error message on t2.math (Solaris 10). I do notice a lot of unused variables, and other compiler warnings, which always make me a bit weary of code. \n\nI think in light of what Peter Jeremy has found, it would be foolish to not add an spkg-check file and execute the self-tests for cvxopt. \n\nDave",
     "created_at": "2010-07-28T02:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1865,7 +1888,8 @@ Replying to [comment:51 jhpalmieri]:
 > While this builds on t2.math, it fails to build on mark (a skynet solaris machine).  Of course, the old version of cvxopt doesn't build on mark, either...
 > 
 > With either version, I get this, right at the start of the build:
-> {{{
+> 
+> ```
 > running build_ext
 > building 'glpk' extension
 > creating build/temp.solaris-2.10-sun4u-2.6
@@ -1878,7 +1902,8 @@ Replying to [comment:51 jhpalmieri]:
 > C/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'
 > error: command 'gcc' failed with exit status 1
 > Error building/installing cvxopt
-> }}}
+> ```
+
 
 John, what is the md5 checksum of the package you used? Where did you get it from? I took Dima's package 
 
@@ -1919,7 +1944,7 @@ On the skynet machine mark, I can't build either the old version or the new one 
 archive/issue_comments_051947.json:
 ```json
 {
-    "body": "Replying to [comment:50 pjeremy]:\n> 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> \n> Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n\ncould it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n\nIt can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n\nLast but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...",
+    "body": "Replying to [comment:50 pjeremy]:\n> 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> \n> Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n\n\ncould it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n\nIt can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n\nLast but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...",
     "created_at": "2010-07-28T11:40:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1932,6 +1957,7 @@ Replying to [comment:50 pjeremy]:
 > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.
 > 
 > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.
+
 
 could it simply be that some -m64 or whatever flag settings to be added to spkg-install? 
 
@@ -1946,7 +1972,7 @@ Last but not least, I would object in strongest possible terms to call a blocker
 archive/issue_comments_051948.json:
 ```json
 {
-    "body": "Replying to [comment:40 drkirkby]:\n> I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. \n\nsun_complex.h is in the current cvxopt spkg.\nI added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. \n\nNote that <complex.h> is included in cvxopt.h by default, albeit under some condition, etc.\n\nIf you have a better solution that works on t2, please post a patch here, and I make \ncvxopt-1.1.2.p2.spkg that incorporates it.\nI am also willing to put back examples and docs.\n\nDima",
+    "body": "Replying to [comment:40 drkirkby]:\n> I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. \n\n\nsun_complex.h is in the current cvxopt spkg.\nI added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. \n\nNote that <complex.h> is included in cvxopt.h by default, albeit under some condition, etc.\n\nIf you have a better solution that works on t2, please post a patch here, and I make \ncvxopt-1.1.2.p2.spkg that incorporates it.\nI am also willing to put back examples and docs.\n\nDima",
     "created_at": "2010-07-28T11:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1957,6 +1983,7 @@ archive/issue_comments_051948.json:
 
 Replying to [comment:40 drkirkby]:
 > I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. 
+
 
 sun_complex.h is in the current cvxopt spkg.
 I added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. 
@@ -1976,7 +2003,7 @@ Dima
 archive/issue_comments_051949.json:
 ```json
 {
-    "body": "Replying to [comment:55 dimpase]:\n> Replying to [comment:40 drkirkby]:\n> > I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. \n> \n> sun_complex.h is in the current cvxopt spkg.\n> I added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. \n> \n> Note that <complex.h> is included in cvxopt.h by default, albeit under some condition, etc.\n> \n> If you have a better solution that works on t2, please post a patch here, and I make \n> cvxopt-1.1.2.p2.spkg that incorporates it.\n> I am also willing to put back examples and docs.\n> \n> Dima\n\nThe current patch for Solaris does not work at all with gcc 4.5, as there's a syntax error in the code I wrote above, which you copied. \n\nThis line is not legal C\n\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */\n```\n\n\nand gives a warning from the compiler\n\n\n```\nIn file included from C/glpk.c:20:0:\nC/cvxopt.h:30:11: warning: extra tokens at end of #ifdef directive\n```\n\n\nIt then goes on to give an error message, as I suspect the header file <complex.h> does not get included. I suspect gcc is interpreting this as \n\n\n```\n#ifdef if\n```\n\n\nI think we need the documentation and examples back, add an spkg-check file, and run all the self-tests. Unfortunately, I don't have time to do any of that now, though I can do it later today. (My wife is waiting on me to do some things in the house!)\n\nNote Peter's problem is new to this upgrade, and the warning looks to me that it could cause a problem on any 64-bit system - irrespective of whether -m64 is added as a compiler flag. In fact, I doubt Peter ever uses -m64 in his builds on FreeBSD. \n\nDave",
+    "body": "Replying to [comment:55 dimpase]:\n> Replying to [comment:40 drkirkby]:\n> > I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. \n\n> \n> sun_complex.h is in the current cvxopt spkg.\n> I added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. \n> \n> Note that <complex.h> is included in cvxopt.h by default, albeit under some condition, etc.\n> \n> If you have a better solution that works on t2, please post a patch here, and I make \n> cvxopt-1.1.2.p2.spkg that incorporates it.\n> I am also willing to put back examples and docs.\n> \n> Dima\n\n\nThe current patch for Solaris does not work at all with gcc 4.5, as there's a syntax error in the code I wrote above, which you copied. \n\nThis line is not legal C\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */\n```\n\nand gives a warning from the compiler\n\n```\nIn file included from C/glpk.c:20:0:\nC/cvxopt.h:30:11: warning: extra tokens at end of #ifdef directive\n```\n\nIt then goes on to give an error message, as I suspect the header file <complex.h> does not get included. I suspect gcc is interpreting this as \n\n```\n#ifdef if\n```\n\nI think we need the documentation and examples back, add an spkg-check file, and run all the self-tests. Unfortunately, I don't have time to do any of that now, though I can do it later today. (My wife is waiting on me to do some things in the house!)\n\nNote Peter's problem is new to this upgrade, and the warning looks to me that it could cause a problem on any 64-bit system - irrespective of whether -m64 is added as a compiler flag. In fact, I doubt Peter ever uses -m64 in his builds on FreeBSD. \n\nDave",
     "created_at": "2010-07-28T12:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -1988,6 +2015,7 @@ archive/issue_comments_051949.json:
 Replying to [comment:55 dimpase]:
 > Replying to [comment:40 drkirkby]:
 > > I should add, `/usr/include/complex.h` is included in the first release of Solaris 10 (released in March 2005) and also in the latest OpenSolaris build. There seems little point in doing what we are doing, espeically given it is doubtful if this is legal - the header is not released under the GPL. 
+
 > 
 > sun_complex.h is in the current cvxopt spkg.
 > I added the sun_complex.h inclusion to 1.1.2 cause I was not able to make it work on t2 otherwise. So I just went with the solution that is known to work. 
@@ -2000,32 +2028,27 @@ Replying to [comment:55 dimpase]:
 > 
 > Dima
 
+
 The current patch for Solaris does not work at all with gcc 4.5, as there's a syntax error in the code I wrote above, which you copied. 
 
 This line is not legal C
-
 
 ```
 #ifdef if defined __sun /* Need to check if that's the best one */
 ```
 
-
 and gives a warning from the compiler
-
 
 ```
 In file included from C/glpk.c:20:0:
 C/cvxopt.h:30:11: warning: extra tokens at end of #ifdef directive
 ```
 
-
 It then goes on to give an error message, as I suspect the header file <complex.h> does not get included. I suspect gcc is interpreting this as 
-
 
 ```
 #ifdef if
 ```
-
 
 I think we need the documentation and examples back, add an spkg-check file, and run all the self-tests. Unfortunately, I don't have time to do any of that now, though I can do it later today. (My wife is waiting on me to do some things in the house!)
 
@@ -2060,7 +2083,7 @@ Dave
 archive/issue_comments_051951.json:
 ```json
 {
-    "body": "I've spent as long on this as I am able to for a while, so I thought I'd post what I have got. \n\nNote, that since 1.12 has never been merged into sage, this should be called 1.12 and not 1.12.p0, 1.12.p1 or similar. There's noting wrong with people adding a temporary letter or patch level if they want, but when its finally merged, it should not have all these temporary builds. \n\nI've created a package which builds on Solaris, but it fails all self-tests on Solaris.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n\nIt builds on Linux, but fails about half the self-tests on Linux.\n\nTo run the self-tests, type\n\n\n```\n$ export SAGE_CHECK=yes\n$ ./sage -i http://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n```\n\n\nI've not committed any changes. \n\nI'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nDave",
+    "body": "I've spent as long on this as I am able to for a while, so I thought I'd post what I have got. \n\nNote, that since 1.12 has never been merged into sage, this should be called 1.12 and not 1.12.p0, 1.12.p1 or similar. There's noting wrong with people adding a temporary letter or patch level if they want, but when its finally merged, it should not have all these temporary builds. \n\nI've created a package which builds on Solaris, but it fails all self-tests on Solaris.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n\nIt builds on Linux, but fails about half the self-tests on Linux.\n\nTo run the self-tests, type\n\n```\n$ export SAGE_CHECK=yes\n$ ./sage -i http://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n```\n\nI've not committed any changes. \n\nI'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nDave",
     "created_at": "2010-07-28T16:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2081,12 +2104,10 @@ It builds on Linux, but fails about half the self-tests on Linux.
 
 To run the self-tests, type
 
-
 ```
 $ export SAGE_CHECK=yes
 $ ./sage -i http://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg
 ```
-
 
 I've not committed any changes. 
 
@@ -2119,7 +2140,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_051953.json:
 ```json
 {
-    "body": "Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPKG.txt.swp`, which should not be there.  Also, I can't build these on the skynet machine mark (sparc solaris), but I can if (following Dave's suggestion), I comment out these lines in spkg-install:\n\n```\ncp -p patches/sun_complex.h src/src/C/\ncp -p patches/cvxopt.h src/src/C/\n```\n\nI haven't tried building on t2 with this modification.",
+    "body": "Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPKG.txt.swp`, which should not be there.  Also, I can't build these on the skynet machine mark (sparc solaris), but I can if (following Dave's suggestion), I comment out these lines in spkg-install:\n\n```\ncp -p patches/sun_complex.h src/src/C/\ncp -p patches/cvxopt.h src/src/C/\n```\nI haven't tried building on t2 with this modification.",
     "created_at": "2010-07-28T16:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2134,7 +2155,6 @@ Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPK
 cp -p patches/sun_complex.h src/src/C/
 cp -p patches/cvxopt.h src/src/C/
 ```
-
 I haven't tried building on t2 with this modification.
 
 
@@ -2144,7 +2164,7 @@ I haven't tried building on t2 with this modification.
 archive/issue_comments_051954.json:
 ```json
 {
-    "body": "Replying to [comment:59 jhpalmieri]:\n> Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPKG.txt.swp`, which should not be there.  \n\nWell spotted. \n> Also, I can't build these on the skynet machine mark (sparc solaris), but I can if (following Dave's suggestion), I comment out these lines in spkg-install:\n> {{{\n> cp -p patches/sun_complex.h src/src/C/\n> cp -p patches/cvxopt.h src/src/C/\n> }}}\n\nIt's odd, since if I comment those lines out on OpenSolaris, it fails to build:\n\n\n```\ncopying python/coneprog.py -> build/lib.solaris-2.11-i86pc-2.6/cvxopt\nrunning build_ext\nbuilding 'base' extension\ncreating build/temp.solaris-2.11-i86pc-2.6\ncreating build/temp.solaris-2.11-i86pc-2.6/C\ngcc -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -m64 -fPIC -I/export/home/drkirkby/sage-4.5.2.alpha1/local/include/python2.6 -c C/base.c -o build/temp.solaris-2.11-i86pc-2.6/C/base.o\nC/base.c: In function 'convert_znum':\nC/base.c:156: error: '_Imaginary_I' undeclared (first use in this function)\nC/base.c:156: error: (Each undeclared identifier is reported only once\nC/base.c:156: error: for each function it appears in.)\nC/base.c: In function 'initbase':\nC/base.c:1727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nC/base.c:1736: warning: dereferencing type-punned pointer will break strict-aliasing rules\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```\n\n\nI think Dima's package \n\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\nhas a syntax error in the patch, so that will fail on Solaris. But my own package \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n\nlacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another. \n\n> I haven't tried building on t2 with this modification.\n\nDo not be too surprised if you need to change it again!\n\nI will need to double-check if the old version of cvxopt was building on OpenSolaris. I think it was, but #9525 shows that the package would report it had built, even if it failed. \n\nI've deleted my older builds on OpenSolaris but since I use a ZFS file system, with snapshots enabled every 15 minutes, so I can easily get back to an older build. Or I could just rebuild an older Sage on here, as it takes less than half an hour. I do need to check what's happening here. \n\nUnfortunately, the last few weeks I seem to be spending a lot of time trying to test things on Solaris for people. I've been involved in the cvxopt, Pari, Singular and some other package updates. \n\n\n\nDave",
+    "body": "Replying to [comment:59 jhpalmieri]:\n> Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPKG.txt.swp`, which should not be there.  \n\n\nWell spotted. \n> Also, I can't build these on the skynet machine mark (sparc solaris), but I can if (following Dave's suggestion), I comment out these lines in spkg-install:\n> \n> ```\n> cp -p patches/sun_complex.h src/src/C/\n> cp -p patches/cvxopt.h src/src/C/\n> ```\n\n\nIt's odd, since if I comment those lines out on OpenSolaris, it fails to build:\n\n```\ncopying python/coneprog.py -> build/lib.solaris-2.11-i86pc-2.6/cvxopt\nrunning build_ext\nbuilding 'base' extension\ncreating build/temp.solaris-2.11-i86pc-2.6\ncreating build/temp.solaris-2.11-i86pc-2.6/C\ngcc -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -m64 -fPIC -I/export/home/drkirkby/sage-4.5.2.alpha1/local/include/python2.6 -c C/base.c -o build/temp.solaris-2.11-i86pc-2.6/C/base.o\nC/base.c: In function 'convert_znum':\nC/base.c:156: error: '_Imaginary_I' undeclared (first use in this function)\nC/base.c:156: error: (Each undeclared identifier is reported only once\nC/base.c:156: error: for each function it appears in.)\nC/base.c: In function 'initbase':\nC/base.c:1727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nC/base.c:1736: warning: dereferencing type-punned pointer will break strict-aliasing rules\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```\n\nI think Dima's package \n\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\nhas a syntax error in the patch, so that will fail on Solaris. But my own package \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg\n\nlacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another. \n\n> I haven't tried building on t2 with this modification.\n\n\nDo not be too surprised if you need to change it again!\n\nI will need to double-check if the old version of cvxopt was building on OpenSolaris. I think it was, but #9525 shows that the package would report it had built, even if it failed. \n\nI've deleted my older builds on OpenSolaris but since I use a ZFS file system, with snapshots enabled every 15 minutes, so I can easily get back to an older build. Or I could just rebuild an older Sage on here, as it takes less than half an hour. I do need to check what's happening here. \n\nUnfortunately, the last few weeks I seem to be spending a lot of time trying to test things on Solaris for people. I've been involved in the cvxopt, Pari, Singular and some other package updates. \n\n\n\nDave",
     "created_at": "2010-07-28T17:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2156,15 +2176,17 @@ archive/issue_comments_051954.json:
 Replying to [comment:59 jhpalmieri]:
 > Two quick comments: both Dima's and Dave's packages seem to contain a file `.SPKG.txt.swp`, which should not be there.  
 
+
 Well spotted. 
 > Also, I can't build these on the skynet machine mark (sparc solaris), but I can if (following Dave's suggestion), I comment out these lines in spkg-install:
-> {{{
+> 
+> ```
 > cp -p patches/sun_complex.h src/src/C/
 > cp -p patches/cvxopt.h src/src/C/
-> }}}
+> ```
+
 
 It's odd, since if I comment those lines out on OpenSolaris, it fails to build:
-
 
 ```
 copying python/coneprog.py -> build/lib.solaris-2.11-i86pc-2.6/cvxopt
@@ -2184,7 +2206,6 @@ error: command 'gcc' failed with exit status 1
 Error building/installing cvxopt
 ```
 
-
 I think Dima's package 
 
 http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg
@@ -2196,6 +2217,7 @@ http://boxen.math.washington.edu/home/kirkby/patches/cvxopt-1.1.2.spkg
 lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another. 
 
 > I haven't tried building on t2 with this modification.
+
 
 Do not be too surprised if you need to change it again!
 
@@ -2252,7 +2274,7 @@ Results from running cvxopt's self tests on a Linux system (sage.math), but sett
 archive/issue_comments_051957.json:
 ```json
 {
-    "body": "Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by @haraldschilly created at 2010-07-28 17:58:48\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
+    "body": "Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by @haraldschilly created at 2010-07-28 17:58:48\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
     "created_at": "2010-07-28T17:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2265,6 +2287,7 @@ Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:58 drkirkby]:
 > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. 
+
 
 I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.
 
@@ -2339,7 +2362,7 @@ There are still currently some problems with the spkg.
 archive/issue_comments_051961.json:
 ```json
 {
-    "body": "and btw, covsel also works and looks like this:\n\n\n```\nharri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ sage -python covsel\n500 rows/columns, 1741 nonzeros\n\nNewton decrement squared: 5.01869e+08\nNewton decrement squared: 1.29139e+08\nNewton decrement squared: 3.26344e+07\nNewton decrement squared: 1.14508e+02\nNewton decrement squared: 2.68329e+01\nNewton decrement squared: 1.52504e+00\nNewton decrement squared: 5.25935e-03\nNewton decrement squared: 6.89978e-08\nNewton decrement squared: 1.34440e-17\nnumber of iterations:  9\nharri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ echo \"$?\"\n0\n```\n",
+    "body": "and btw, covsel also works and looks like this:\n\n```\nharri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ sage -python covsel\n500 rows/columns, 1741 nonzeros\n\nNewton decrement squared: 5.01869e+08\nNewton decrement squared: 1.29139e+08\nNewton decrement squared: 3.26344e+07\nNewton decrement squared: 1.14508e+02\nNewton decrement squared: 2.68329e+01\nNewton decrement squared: 1.52504e+00\nNewton decrement squared: 5.25935e-03\nNewton decrement squared: 6.89978e-08\nNewton decrement squared: 1.34440e-17\nnumber of iterations:  9\nharri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ echo \"$?\"\n0\n```",
     "created_at": "2010-07-28T18:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2349,7 +2372,6 @@ archive/issue_comments_051961.json:
 ```
 
 and btw, covsel also works and looks like this:
-
 
 ```
 harri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ sage -python covsel
@@ -2371,13 +2393,12 @@ harri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ echo "$?"
 
 
 
-
 ---
 
 archive/issue_comments_051962.json:
 ```json
 {
-    "body": "Replying to [comment:62 schilly]:\n> Replying to [comment:58 drkirkby]:\n> > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n> \n> I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? \n\nProbably not. \n\n> For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. \n\nThat may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:\n\n\n```\n   from sage.misc.prandom import seed\n   ImportError: cannot import name seed\n```\n\n\ndoes not look like a plotting problem or library to me. Would you agree? \n\n> Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nYes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. \n\n> I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.\n\nAt the minute, this is certainly worst than the previous version on Solaris. \n\nThe warning messages noticed by Peter look pretty serious to me and are new to this version. Those occur on any platform. \n\nI personally feel these issues should be resolved, otherwise we could end up making matters worst. If the upgrade does not get done properly now, it probably never will. \n\nDave",
+    "body": "Replying to [comment:62 schilly]:\n> Replying to [comment:58 drkirkby]:\n> > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\n> \n> I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? \n\n\nProbably not. \n\n> For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. \n\n\nThat may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:\n\n```\n   from sage.misc.prandom import seed\n   ImportError: cannot import name seed\n```\n\ndoes not look like a plotting problem or library to me. Would you agree? \n\n> Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\n\nYes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. \n\n> I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.\n\n\nAt the minute, this is certainly worst than the previous version on Solaris. \n\nThe warning messages noticed by Peter look pretty serious to me and are new to this version. Those occur on any platform. \n\nI personally feel these issues should be resolved, otherwise we could end up making matters worst. If the upgrade does not get done properly now, it probably never will. \n\nDave",
     "created_at": "2010-07-28T18:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2389,29 +2410,32 @@ archive/issue_comments_051962.json:
 Replying to [comment:62 schilly]:
 > Replying to [comment:58 drkirkby]:
 > > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. 
+
 > 
 > I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? 
+
 
 Probably not. 
 
 > For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. 
 
-That may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:
 
+That may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:
 
 ```
    from sage.misc.prandom import seed
    ImportError: cannot import name seed
 ```
 
-
 does not look like a plotting problem or library to me. Would you agree? 
 
 > Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.
 
+
 Yes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. 
 
 > I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.
+
 
 At the minute, this is certainly worst than the previous version on Solaris. 
 
@@ -2428,7 +2452,7 @@ Dave
 archive/issue_comments_051963.json:
 ```json
 {
-    "body": "Replying to [comment:54 dimpase]:\n> Replying to [comment:50 pjeremy]:\n> > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> > \n> > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n> \n> could it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n\nNo.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.\n\n> It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n\nI do not consider an amd64/x86_64 system to be \"fancy\".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.\n\n> Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...\n\nThere is little point in upgrading to a package that is known to be broken.  This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the \"incompatible pointer type\" warnings in either my own or boxen builds) so by upgrading, we would be introducing a regression into Sage.  I am very concerned at this \"release it now, we'll make it work later\" mentality.  If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - complaints of \"feature X is missing\" are easily rectified, claims of \"Sage gave me wrong answers\" can quickly turn into \"you can't trust the output from Sage\" and are far more difficult to refute.",
+    "body": "Replying to [comment:54 dimpase]:\n> Replying to [comment:50 pjeremy]:\n> > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> > \n> > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n\n> \n> could it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n\n\nNo.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.\n\n> It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n\n\nI do not consider an amd64/x86_64 system to be \"fancy\".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.\n\n> Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...\n\n\nThere is little point in upgrading to a package that is known to be broken.  This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the \"incompatible pointer type\" warnings in either my own or boxen builds) so by upgrading, we would be introducing a regression into Sage.  I am very concerned at this \"release it now, we'll make it work later\" mentality.  If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - complaints of \"feature X is missing\" are easily rectified, claims of \"Sage gave me wrong answers\" can quickly turn into \"you can't trust the output from Sage\" and are far more difficult to refute.",
     "created_at": "2010-07-28T19:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2442,16 +2466,20 @@ Replying to [comment:54 dimpase]:
 > > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.
 > > 
 > > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.
+
 > 
 > could it simply be that some -m64 or whatever flag settings to be added to spkg-install? 
+
 
 No.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.
 
 > It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.
 
+
 I do not consider an amd64/x86_64 system to be "fancy".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.
 
 > Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...
+
 
 There is little point in upgrading to a package that is known to be broken.  This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the "incompatible pointer type" warnings in either my own or boxen builds) so by upgrading, we would be introducing a regression into Sage.  I am very concerned at this "release it now, we'll make it work later" mentality.  If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - complaints of "feature X is missing" are easily rectified, claims of "Sage gave me wrong answers" can quickly turn into "you can't trust the output from Sage" and are far more difficult to refute.
 
@@ -2462,7 +2490,7 @@ There is little point in upgrading to a package that is known to be broken.  Thi
 archive/issue_comments_051964.json:
 ```json
 {
-    "body": "Replying to [comment:60 drkirkby]:\n\n> But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.\n\nIt still fails to build on mark:\n\n```\nbuilding 'glpk' extension\ncreating build/temp.solaris-2.10-sun4u-2.6\ncreating build/temp.solaris-2.10-sun4u-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/python2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\nIn file included from C/cvxopt.h:32:0,\n                 from C/glpk.c:20:\nC/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```\n\nI'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the \"patches\" directory between your spkg and Dima's.",
+    "body": "Replying to [comment:60 drkirkby]:\n\n> But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.\n\n\nIt still fails to build on mark:\n\n```\nbuilding 'glpk' extension\ncreating build/temp.solaris-2.10-sun4u-2.6\ncreating build/temp.solaris-2.10-sun4u-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include -I/home/palmieri/mark/sage-4.5.2.alpha1/local/include/python2.6 -c C/glpk.c -o build/temp.solaris-2.10-sun4u-2.6/C/glpk.o\nIn file included from C/cvxopt.h:32:0,\n                 from C/glpk.c:20:\nC/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n```\nI'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the \"patches\" directory between your spkg and Dima's.",
     "created_at": "2010-07-28T19:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2474,6 +2502,7 @@ archive/issue_comments_051964.json:
 Replying to [comment:60 drkirkby]:
 
 > But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.
+
 
 It still fails to build on mark:
 
@@ -2488,7 +2517,6 @@ C/sun_complex.h:33:32: error: expected identifier or '(' before '_Imaginary'
 error: command 'gcc' failed with exit status 1
 Error building/installing cvxopt
 ```
-
 I'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the "patches" directory between your spkg and Dima's.
 
 
@@ -2498,7 +2526,7 @@ I'm not sure what syntax error you're referring to, but I don't see a difference
 archive/issue_comments_051965.json:
 ```json
 {
-    "body": "Replying to [comment:68 jhpalmieri]:\n> Replying to [comment:60 drkirkby]:\n> \n> > But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.\n> \n> It still fails to build on mark:\n\nDid the previous version build on the Solaris host 'mark' on Skynet? \n\n> I'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the \"patches\" directory between your spkg and Dima's.\n\nIn a build log I see of yours on mark, there was a warning reported about extra items on line 30 (IIRC) of a header file. That came from the code\n\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */ \n```\n\n\nwhich I typed above in this ticket, but appears to have been copied into one of the versions of this package. That code was incorrectly typed by me - it was put as a comment in this ticket, and I'd not checked it with a C compiler. It certainly does not what do what I had intended. I assumed that was in Dima's package, but I appolise if I was mistaken. Either way, the code is wrong. \n\nDave",
+    "body": "Replying to [comment:68 jhpalmieri]:\n> Replying to [comment:60 drkirkby]:\n> \n> > But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.\n\n> \n> It still fails to build on mark:\n\n\nDid the previous version build on the Solaris host 'mark' on Skynet? \n\n> I'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the \"patches\" directory between your spkg and Dima's.\n\n\nIn a build log I see of yours on mark, there was a warning reported about extra items on line 30 (IIRC) of a header file. That came from the code\n\n```\n#ifdef if defined __sun /* Need to check if that's the best one */ \n```\n\nwhich I typed above in this ticket, but appears to have been copied into one of the versions of this package. That code was incorrectly typed by me - it was put as a comment in this ticket, and I'd not checked it with a C compiler. It certainly does not what do what I had intended. I assumed that was in Dima's package, but I appolise if I was mistaken. Either way, the code is wrong. \n\nDave",
     "created_at": "2010-07-28T20:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2511,20 +2539,21 @@ Replying to [comment:68 jhpalmieri]:
 > Replying to [comment:60 drkirkby]:
 > 
 > > But my own package lacks that syntax error. But it seems to be necessary to add patches on some version of Solaris and messes up the build on another.
+
 > 
 > It still fails to build on mark:
+
 
 Did the previous version build on the Solaris host 'mark' on Skynet? 
 
 > I'm not sure what syntax error you're referring to, but I don't see a difference in any of the files in the "patches" directory between your spkg and Dima's.
 
-In a build log I see of yours on mark, there was a warning reported about extra items on line 30 (IIRC) of a header file. That came from the code
 
+In a build log I see of yours on mark, there was a warning reported about extra items on line 30 (IIRC) of a header file. That came from the code
 
 ```
 #ifdef if defined __sun /* Need to check if that's the best one */ 
 ```
-
 
 which I typed above in this ticket, but appears to have been copied into one of the versions of this package. That code was incorrectly typed by me - it was put as a comment in this ticket, and I'd not checked it with a C compiler. It certainly does not what do what I had intended. I assumed that was in Dima's package, but I appolise if I was mistaken. Either way, the code is wrong. 
 
@@ -2537,7 +2566,7 @@ Dave
 archive/issue_comments_051966.json:
 ```json
 {
-    "body": "Replying to [comment:67 pjeremy]:\n \n> There is little point in upgrading to a package that is known to be broken. \n\nAgreed. \n\nI don't think some of the people commenting on the ticket realise what that warning is about. In fact, I personally feel gcc should consider that an error and not just issue a warning. I doubt the Sun compiler would permit that code. \n\n\n> This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the \"incompatible pointer type\" warnings in either my own or boxen builds) \n\nMe neither. That bug is a regression. \n\n> so by upgrading, we would be introducing a regression into Sage.  \n\nYes. \n\n> I am very concerned at this \"release it now, we'll make it work later\" mentality.  \n\nMe too. There is **far** too much emphasis in Sage of adding features and far too little in controlling quality. This ticket seems to be a prime example of that. \n\n> If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - \n\nYes. \n\n> complaints of \"feature X is missing\" are easily rectified, claims of \"Sage gave me wrong answers\" can quickly turn into \"you can't trust the output from Sage\" and are far more difficult to refute.\n\nYes. Likewise complaints of Sage crashed damages Sage's reputation. The bug you found could certainly cause a crash. \n\nDave",
+    "body": "Replying to [comment:67 pjeremy]:\n \n> There is little point in upgrading to a package that is known to be broken. \n\n\nAgreed. \n\nI don't think some of the people commenting on the ticket realise what that warning is about. In fact, I personally feel gcc should consider that an error and not just issue a warning. I doubt the Sun compiler would permit that code. \n\n\n> This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the \"incompatible pointer type\" warnings in either my own or boxen builds) \n\n\nMe neither. That bug is a regression. \n\n> so by upgrading, we would be introducing a regression into Sage.  \n\n\nYes. \n\n> I am very concerned at this \"release it now, we'll make it work later\" mentality.  \n\n\nMe too. There is **far** too much emphasis in Sage of adding features and far too little in controlling quality. This ticket seems to be a prime example of that. \n\n> If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - \n\n\nYes. \n\n> complaints of \"feature X is missing\" are easily rectified, claims of \"Sage gave me wrong answers\" can quickly turn into \"you can't trust the output from Sage\" and are far more difficult to refute.\n\n\nYes. Likewise complaints of Sage crashed damages Sage's reputation. The bug you found could certainly cause a crash. \n\nDave",
     "created_at": "2010-07-28T20:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2550,6 +2579,7 @@ Replying to [comment:67 pjeremy]:
  
 > There is little point in upgrading to a package that is known to be broken. 
 
+
 Agreed. 
 
 I don't think some of the people commenting on the ticket realise what that warning is about. In fact, I personally feel gcc should consider that an error and not just issue a warning. I doubt the Sun compiler would permit that code. 
@@ -2557,21 +2587,26 @@ I don't think some of the people commenting on the ticket realise what that warn
 
 > This particular bug does not appear to be present in cvxopt-0.9 (at least I can't find the "incompatible pointer type" warnings in either my own or boxen builds) 
 
+
 Me neither. That bug is a regression. 
 
 > so by upgrading, we would be introducing a regression into Sage.  
+
 
 Yes. 
 
 > I am very concerned at this "release it now, we'll make it work later" mentality.  
 
+
 Me too. There is **far** too much emphasis in Sage of adding features and far too little in controlling quality. This ticket seems to be a prime example of that. 
 
 > If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - 
 
+
 Yes. 
 
 > complaints of "feature X is missing" are easily rectified, claims of "Sage gave me wrong answers" can quickly turn into "you can't trust the output from Sage" and are far more difficult to refute.
+
 
 Yes. Likewise complaints of Sage crashed damages Sage's reputation. The bug you found could certainly cause a crash. 
 
@@ -2610,7 +2645,7 @@ Dave
 archive/issue_comments_051968.json:
 ```json
 {
-    "body": "Replying to [comment:71 drkirkby]:\n>  * Try an earlier release (i.e newer than 0.9, but not the latest)\n\nI don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n\n>  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n\nTo be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n\nI started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n\nAlso, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage?",
+    "body": "Replying to [comment:71 drkirkby]:\n>  * Try an earlier release (i.e newer than 0.9, but not the latest)\n\n\nI don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n\n>  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n\n\nTo be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n\nI started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n\nAlso, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage?",
     "created_at": "2010-07-29T04:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2622,9 +2657,11 @@ archive/issue_comments_051968.json:
 Replying to [comment:71 drkirkby]:
 >  * Try an earlier release (i.e newer than 0.9, but not the latest)
 
+
 I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is "ancient". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.
 
 >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.
+
 
 To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.
 
@@ -2639,7 +2676,7 @@ Also, whilst reading through the revision history for cvxopt, I notice that ther
 archive/issue_comments_051969.json:
 ```json
 {
-    "body": "Replying to [comment:61 drkirkby]:\n> I'm attaching a log of the test results on Linux. Either there is a big problem here, or my code for the testing is wrong. The cvxopt does not have a simple `make check` as on most packages, so there is a bigger chance of an error on my part. \n> \n\nI am presently using Sage+cvxopt-1.1.2 in my research computations, and results I get make sense, so I cannot expect the problem you report being too hard to fix. I'll have a look now.\n\nDima",
+    "body": "Replying to [comment:61 drkirkby]:\n> I'm attaching a log of the test results on Linux. Either there is a big problem here, or my code for the testing is wrong. The cvxopt does not have a simple `make check` as on most packages, so there is a bigger chance of an error on my part. \n> \n\n\nI am presently using Sage+cvxopt-1.1.2 in my research computations, and results I get make sense, so I cannot expect the problem you report being too hard to fix. I'll have a look now.\n\nDima",
     "created_at": "2010-07-29T10:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2652,6 +2689,7 @@ Replying to [comment:61 drkirkby]:
 > I'm attaching a log of the test results on Linux. Either there is a big problem here, or my code for the testing is wrong. The cvxopt does not have a simple `make check` as on most packages, so there is a bigger chance of an error on my part. 
 > 
 
+
 I am presently using Sage+cvxopt-1.1.2 in my research computations, and results I get make sense, so I cannot expect the problem you report being too hard to fix. I'll have a look now.
 
 Dima
@@ -2663,7 +2701,7 @@ Dima
 archive/issue_comments_051970.json:
 ```json
 {
-    "body": "Replying to [comment:72 pjeremy]:\n> Replying to [comment:71 drkirkby]:\n> >  * Try an earlier release (i.e newer than 0.9, but not the latest)\n> \n> I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n> \n> >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n> \n> To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n> \n> I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n> \n> Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? \n\nI am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.\n\nRegarding random, cvxopt has switched to using external random sources before 0.9.8, which is the currently used in Sage 4.5.1 spkg version. So I do not see why this is relevant at this point at all.",
+    "body": "Replying to [comment:72 pjeremy]:\n> Replying to [comment:71 drkirkby]:\n> >  * Try an earlier release (i.e newer than 0.9, but not the latest)\n \n> \n> I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n> \n> >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n \n> \n> To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n> \n> I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n> \n> Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? \n\n\nI am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.\n\nRegarding random, cvxopt has switched to using external random sources before 0.9.8, which is the currently used in Sage 4.5.1 spkg version. So I do not see why this is relevant at this point at all.",
     "created_at": "2010-07-29T10:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2675,16 +2713,19 @@ archive/issue_comments_051970.json:
 Replying to [comment:72 pjeremy]:
 > Replying to [comment:71 drkirkby]:
 > >  * Try an earlier release (i.e newer than 0.9, but not the latest)
+ 
 > 
 > I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is "ancient". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.
 > 
 > >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.
+ 
 > 
 > To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.
 > 
 > I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.
 > 
 > Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? 
+
 
 I am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.
 
@@ -2697,7 +2738,7 @@ Regarding random, cvxopt has switched to using external random sources before 0.
 archive/issue_comments_051971.json:
 ```json
 {
-    "body": "Replying to [comment:67 pjeremy]:\n> Replying to [comment:54 dimpase]:\n> > Replying to [comment:50 pjeremy]:\n> > > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> > > \n> > > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n> > \n> > could it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n> \n> No.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.\n> \n> > It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n> \n> I do not consider an amd64/x86_64 system to be \"fancy\".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.\n> \n> > Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...\n> \n> There is little point in upgrading to a package that is known to be broken.  \n\nThere is also little point in keeping 0.9.8 in Sage! It's next to impossible to use 0.9.8 for anything serious, as it's not supported, it is known to be buggy in one or another way (one can dig this up in cvxopt archives, if needed), there are no easy to find examples to look at for 0.9, etc etc etc.\n\nSticking to 0.9.8 is the same as having no cvxopt in Sage at all...",
+    "body": "Replying to [comment:67 pjeremy]:\n> Replying to [comment:54 dimpase]:\n> > Replying to [comment:50 pjeremy]:\n> > > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> > > \n> > > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n\n> > \n> > could it simply be that some -m64 or whatever flag settings to be added to spkg-install? \n\n> \n> No.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.\n> \n> > It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.\n\n> \n> I do not consider an amd64/x86_64 system to be \"fancy\".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.\n> \n> > Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...\n\n> \n> There is little point in upgrading to a package that is known to be broken.  \n\n\nThere is also little point in keeping 0.9.8 in Sage! It's next to impossible to use 0.9.8 for anything serious, as it's not supported, it is known to be buggy in one or another way (one can dig this up in cvxopt archives, if needed), there are no easy to find examples to look at for 0.9, etc etc etc.\n\nSticking to 0.9.8 is the same as having no cvxopt in Sage at all...",
     "created_at": "2010-07-29T11:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2712,18 +2753,23 @@ Replying to [comment:67 pjeremy]:
 > > > 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.
 > > > 
 > > > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.
+
 > > 
 > > could it simply be that some -m64 or whatever flag settings to be added to spkg-install? 
+
 > 
 > No.  The code is wrong/buggy/broken.  The breakage is probably hidden in 32-bit builds.
 > 
 > > It can very well be that the standalone cvxopt does not work on that fancy 64-bit systems anyway. If this is the case, I am not willing to do anything on this at this ticket.
+
 > 
 > I do not consider an amd64/x86_64 system to be "fancy".  I suspect that anyone wanting to do serious work with Sage will be using a 64-bit system.
 > 
 > > Last but not least, I would object in strongest possible terms to call a blocker an issue that is present in the current cvxopt (0.9) spkg. We must upgrade, and then try to improve, and not sit endlessly here...
+
 > 
 > There is little point in upgrading to a package that is known to be broken.  
+
 
 There is also little point in keeping 0.9.8 in Sage! It's next to impossible to use 0.9.8 for anything serious, as it's not supported, it is known to be buggy in one or another way (one can dig this up in cvxopt archives, if needed), there are no easy to find examples to look at for 0.9, etc etc etc.
 
@@ -2736,7 +2782,7 @@ Sticking to 0.9.8 is the same as having no cvxopt in Sage at all...
 archive/issue_comments_051972.json:
 ```json
 {
-    "body": "Replying to [comment:74 dimpase]:\n> Replying to [comment:72 pjeremy]:\n> > Replying to [comment:71 drkirkby]:\n> > >  * Try an earlier release (i.e newer than 0.9, but not the latest)\n> > \n> > I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n> > \n> > >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n> > \n> > To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n> > \n> > I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n> > \n> > Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? \n> \n> I am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.\n> \n> Regarding random, cvxopt has switched to using external random sources before 0.9.8, which is the currently used in Sage 4.5.1 spkg version. So I do not see why this is relevant at this point at all.\n\nThe pointer problem could potentially cause segfaults and data corruption. That's my single biggest concern. Not a single test passed on my Solaris build. \n\nThere appears to be a split view on this ticket\n\n* Those that want it updated for the functionality. \n* Those that don't want the current code updated because they feel it's a regression. \n\nHow about making the updated version an optional or experimental package? (Personally I feel the latter is more appropriate). Those that feel they need the update can use it, whilst those that consider it makes Sage less stable will simply not bother installing it. \n\nI think Peter's comments about the: \n\n*\"release it now, we'll make it work later\" mentality*'\n\nis very true here. \n\nDave",
+    "body": "Replying to [comment:74 dimpase]:\n> Replying to [comment:72 pjeremy]:\n> > Replying to [comment:71 drkirkby]:\n> > >  * Try an earlier release (i.e newer than 0.9, but not the latest)\n \n> > \n> > I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is \"ancient\". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.\n> > \n> > >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.\n \n> > \n> > To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.\n> > \n> > I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.\n> > \n> > Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? \n\n> \n> I am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.\n> \n> Regarding random, cvxopt has switched to using external random sources before 0.9.8, which is the currently used in Sage 4.5.1 spkg version. So I do not see why this is relevant at this point at all.\n\n\nThe pointer problem could potentially cause segfaults and data corruption. That's my single biggest concern. Not a single test passed on my Solaris build. \n\nThere appears to be a split view on this ticket\n\n* Those that want it updated for the functionality. \n* Those that don't want the current code updated because they feel it's a regression. \n\nHow about making the updated version an optional or experimental package? (Personally I feel the latter is more appropriate). Those that feel they need the update can use it, whilst those that consider it makes Sage less stable will simply not bother installing it. \n\nI think Peter's comments about the: \n\n*\"release it now, we'll make it work later\" mentality*'\n\nis very true here. \n\nDave",
     "created_at": "2010-07-29T11:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2749,20 +2795,24 @@ Replying to [comment:74 dimpase]:
 > Replying to [comment:72 pjeremy]:
 > > Replying to [comment:71 drkirkby]:
 > > >  * Try an earlier release (i.e newer than 0.9, but not the latest)
+ 
 > > 
 > > I don't see any benefit in this. The only justification I can find mentioned in this thread for updating cvxopt is that the current version is "ancient". Unless someone comes up with a more compelling reason for updating, I would suggest sticking to the current spkg until problems with cvxopt-1.1.2 are resolved.
 > > 
 > > >  * Contact the author, making him aware of the bug Peter found - i.e. passing 64-bit pointers when the code is expecting 32-bit ones. Also point out there are a lot of variables declared, which are never used.
+ 
 > > 
 > > To be precise, the code is passing pointers to 64-bit objects to functions expecting pointers to 32-bit objects.
 > > 
 > > I started to look at how difficult it would be to fix this morning but ran out of train journey before I got very far.
 > > 
 > > Also, whilst reading through the revision history for cvxopt, I notice that there have been a couple of changes that don't appear to be backward compatible: The `cvxopt.random` module was deleted in 0.9.2 and the definition of `bool(A)` (where `A` is a matrix) was changed in 1.1. Are these changes likely to impact other components of Sage? 
+
 > 
 > I am not aware of any Sage component that uses cvxopt. Surely, upgrading from 0.9 to 1.1 will break some code using cvxopt, but this is to be expected. The structure of the library has changed somewhat, so some imports might need to be fixed.
 > 
 > Regarding random, cvxopt has switched to using external random sources before 0.9.8, which is the currently used in Sage 4.5.1 spkg version. So I do not see why this is relevant at this point at all.
+
 
 The pointer problem could potentially cause segfaults and data corruption. That's my single biggest concern. Not a single test passed on my Solaris build. 
 
@@ -2788,7 +2838,7 @@ Dave
 archive/issue_comments_051973.json:
 ```json
 {
-    "body": "Replying to [comment:75 dimpase]:\n\n> Sticking to 0.9.8 is the same as having no cvxopt in Sage at all...\n\nWhy was 0.9.8 ever put in Sage if its so useless? \n\nYour comment about 0.9.8 being buggy is interesting. \n\nVersion 1.1.2 is most obviously buggy. \n\nDave",
+    "body": "Replying to [comment:75 dimpase]:\n\n> Sticking to 0.9.8 is the same as having no cvxopt in Sage at all...\n\n\nWhy was 0.9.8 ever put in Sage if its so useless? \n\nYour comment about 0.9.8 being buggy is interesting. \n\nVersion 1.1.2 is most obviously buggy. \n\nDave",
     "created_at": "2010-07-29T11:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2800,6 +2850,7 @@ archive/issue_comments_051973.json:
 Replying to [comment:75 dimpase]:
 
 > Sticking to 0.9.8 is the same as having no cvxopt in Sage at all...
+
 
 Why was 0.9.8 ever put in Sage if its so useless? 
 
@@ -2816,7 +2867,7 @@ Dave
 archive/issue_comments_051974.json:
 ```json
 {
-    "body": "Replying to [comment:66 drkirkby]:\n> Replying to [comment:62 schilly]:\n> > Replying to [comment:58 drkirkby]:\n> > > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n> > \n> > I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? \n> \n> Probably not. \n> \n> > For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. \n> \n> That may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:\n> \n> {{{\n>    from sage.misc.prandom import seed\n>    ImportError: cannot import name seed\n> }}}\n> \n> does not look like a plotting problem or library to me. Would you agree? \n> \n> > Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n> \n> Yes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. \n> \n> > I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.\n> \n> At the minute, this is certainly worst than the previous version on Solaris. \n> \n> The warning messages noticed by Peter look pretty serious to me and are new to this version. Those occur on any platform. \n> \n> I personally feel these issues should be resolved, otherwise we could end up making matters worst. If the upgrade does not get done properly now, it probably never will. \n> \n\nDave, \n\nyour spkg-check is buggy. You probably end up calling a very wrong python to run the examples. E.g. if I cd to  \ncvxopt-1.1.2/src/examples/doc/chap8\nmake a symbolic link mcsdp.py to mcsdp, fire up sage, and do\n\nsage: load('mcsdp.py')\n\nit happily runs without any errors etc. And this is one of examples your spkg-check fails on with weird error messages. So the problem does not seem to be in cvxopt here, but rather in your script...\n \nDima",
+    "body": "Replying to [comment:66 drkirkby]:\n> Replying to [comment:62 schilly]:\n> > Replying to [comment:58 drkirkby]:\n> > > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\n> > \n> > I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? \n\n> \n> Probably not. \n> \n> > For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. \n\n> \n> That may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:\n> \n> \n> ```\n>    from sage.misc.prandom import seed\n>    ImportError: cannot import name seed\n> ```\n> \n> does not look like a plotting problem or library to me. Would you agree? \n> \n> > Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\n> \n> Yes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. \n> \n> > I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.\n\n> \n> At the minute, this is certainly worst than the previous version on Solaris. \n> \n> The warning messages noticed by Peter look pretty serious to me and are new to this version. Those occur on any platform. \n> \n> I personally feel these issues should be resolved, otherwise we could end up making matters worst. If the upgrade does not get done properly now, it probably never will. \n> \n\n\nDave, \n\nyour spkg-check is buggy. You probably end up calling a very wrong python to run the examples. E.g. if I cd to  \ncvxopt-1.1.2/src/examples/doc/chap8\nmake a symbolic link mcsdp.py to mcsdp, fire up sage, and do\n\nsage: load('mcsdp.py')\n\nit happily runs without any errors etc. And this is one of examples your spkg-check fails on with weird error messages. So the problem does not seem to be in cvxopt here, but rather in your script...\n \nDima",
     "created_at": "2010-07-29T12:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2829,27 +2880,33 @@ Replying to [comment:66 drkirkby]:
 > Replying to [comment:62 schilly]:
 > > Replying to [comment:58 drkirkby]:
 > > > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. 
+
 > > 
 > > I've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? 
+
 > 
 > Probably not. 
 > 
 > > For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. 
+
 > 
 > That may be true. I don't know exactly what exists on sage.math. But many of the messages do not seem to indicate such a problem to me. Things like:
 > 
-> {{{
+> 
+> ```
 >    from sage.misc.prandom import seed
 >    ImportError: cannot import name seed
-> }}}
+> ```
 > 
 > does not look like a plotting problem or library to me. Would you agree? 
 > 
 > > Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.
+
 > 
 > Yes, I had noticed that, but given the large number of problems, it was only one in around 20 tests. I can easily change that, but it seems to be in the noise at the minute. 
 > 
 > > I appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.
+
 > 
 > At the minute, this is certainly worst than the previous version on Solaris. 
 > 
@@ -2857,6 +2914,7 @@ Replying to [comment:66 drkirkby]:
 > 
 > I personally feel these issues should be resolved, otherwise we could end up making matters worst. If the upgrade does not get done properly now, it probably never will. 
 > 
+
 
 Dave, 
 
@@ -2877,7 +2935,7 @@ Dima
 archive/issue_comments_051975.json:
 ```json
 {
-    "body": "Replying to [comment:78 dimpase]:\n\n> Dave, \n> \n> your spkg-check is buggy. You probably end up calling a very wrong python to run the examples. E.g. if I cd to  \n> cvxopt-1.1.2/src/examples/doc/chap8\n> make a symbolic link mcsdp.py to mcsdp, fire up sage, and do\n> \n> sage: load('mcsdp.py')\n> \n> it happily runs without any errors etc. And this is one of examples your spkg-check fails on with weird error messages. So the problem does not seem to be in cvxopt here, but rather in your script...\n>  \n> Dima\n> \n\nDima, \n\nI made it very clear that \"I've spent as long on this as I am able to for a while, so I thought I'd post what I have got.\" I also made it clear I'd not committed the changes - a clear reflection I was not confident of them all. \n\nhttp://trac.sagemath.org/sage_trac/ticket/6456#comment:58\n\nIf the wrong python is being called, that's a bug, as the first in the path, which is the one in Sage, should be called. One could work around that with \"$SAGE_LOCAL/nib/python\"\n\nI'm aware of the issue with calling the .bin file, but as I remarked above, that's in the noise compared to the most significant issues of warnings from the compiler. \n\nFeel free to improve the test suite. Rather than execute them all in a loop, perhaps its better to cd to the directory and run them from there. But those changes are not going to get around the more serious issue, which is seen well before the test suite is run. \n\nI'm involved in many things at Sage at the moment. \n\n* This ticket\n* #9343 - the upgrade of Pari, which is a non-trivial issue\n* #9281 - trying to get more self-tests into Sage. \n* #8059 - update Singular SPKG to newest upstream release. Another big package\n\nIn addition, I've involved in same way with other less time consuming tickets\n\n* #9533: Update GSL to the latest upstream release (1.14) & permit parallel building.\n* #9568: Update IML to the newest upstream release, and improve spkg-install\n* #9603: Force iconv to build + install on HP-UX. Currently it is only installed on Solaris and Cygwin.\n \nI really don't have a huge amount of time to devote to this one. I'm less inclined to devote time to improving the self-tests on this package, as its clear the package is more seriously broken when its compiled. \n\nI seem to get cc'ed on a number of tickets where people can't be bothered to build on Solaris, so they think I will do the work for them. I'm tending to do that less now. There should be a much larger disk on t2 soon, so there will be even less excuse for people to pester me do do the Solaris checking. I never pester others other check code on Linux or OS X. I just do it myself. \n\nTo be fair Dima, this is not aimed at you, as you have checked code on Solaris many times.\n\nWith all the comments above on this ticket, how many people have actually made an effort to test cvxopt on a few computers with a few different operating systems. Compare that with \n\n#9533: Update GSL to the latest upstream release (1.14) & permit parallel building.\n\nwhere a lot of people have tested the code on multiple operating systems, with multiple compilers and run all the self-tests and run all the doctests on popular platforms. That's been done on \n\n* Cygwin\n* FreeBSD\n* HP-UX\n* Linux\n* OpenSolaris\n* OS X\n* Solaris \n\n\nDave",
+    "body": "Replying to [comment:78 dimpase]:\n\n> Dave, \n> \n> your spkg-check is buggy. You probably end up calling a very wrong python to run the examples. E.g. if I cd to  \n> cvxopt-1.1.2/src/examples/doc/chap8\n> make a symbolic link mcsdp.py to mcsdp, fire up sage, and do\n> \n> sage: load('mcsdp.py')\n> \n> it happily runs without any errors etc. And this is one of examples your spkg-check fails on with weird error messages. So the problem does not seem to be in cvxopt here, but rather in your script...\n>  \n> Dima\n> \n\n\nDima, \n\nI made it very clear that \"I've spent as long on this as I am able to for a while, so I thought I'd post what I have got.\" I also made it clear I'd not committed the changes - a clear reflection I was not confident of them all. \n\nhttp://trac.sagemath.org/sage_trac/ticket/6456#comment:58\n\nIf the wrong python is being called, that's a bug, as the first in the path, which is the one in Sage, should be called. One could work around that with \"$SAGE_LOCAL/nib/python\"\n\nI'm aware of the issue with calling the .bin file, but as I remarked above, that's in the noise compared to the most significant issues of warnings from the compiler. \n\nFeel free to improve the test suite. Rather than execute them all in a loop, perhaps its better to cd to the directory and run them from there. But those changes are not going to get around the more serious issue, which is seen well before the test suite is run. \n\nI'm involved in many things at Sage at the moment. \n\n* This ticket\n* #9343 - the upgrade of Pari, which is a non-trivial issue\n* #9281 - trying to get more self-tests into Sage. \n* #8059 - update Singular SPKG to newest upstream release. Another big package\n\nIn addition, I've involved in same way with other less time consuming tickets\n\n* #9533: Update GSL to the latest upstream release (1.14) & permit parallel building.\n* #9568: Update IML to the newest upstream release, and improve spkg-install\n* #9603: Force iconv to build + install on HP-UX. Currently it is only installed on Solaris and Cygwin.\n \nI really don't have a huge amount of time to devote to this one. I'm less inclined to devote time to improving the self-tests on this package, as its clear the package is more seriously broken when its compiled. \n\nI seem to get cc'ed on a number of tickets where people can't be bothered to build on Solaris, so they think I will do the work for them. I'm tending to do that less now. There should be a much larger disk on t2 soon, so there will be even less excuse for people to pester me do do the Solaris checking. I never pester others other check code on Linux or OS X. I just do it myself. \n\nTo be fair Dima, this is not aimed at you, as you have checked code on Solaris many times.\n\nWith all the comments above on this ticket, how many people have actually made an effort to test cvxopt on a few computers with a few different operating systems. Compare that with \n\n#9533: Update GSL to the latest upstream release (1.14) & permit parallel building.\n\nwhere a lot of people have tested the code on multiple operating systems, with multiple compilers and run all the self-tests and run all the doctests on popular platforms. That's been done on \n\n* Cygwin\n* FreeBSD\n* HP-UX\n* Linux\n* OpenSolaris\n* OS X\n* Solaris \n\n\nDave",
     "created_at": "2010-07-29T13:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2900,6 +2958,7 @@ Replying to [comment:78 dimpase]:
 >  
 > Dima
 > 
+
 
 Dima, 
 
@@ -2956,7 +3015,7 @@ Dave
 archive/issue_comments_051976.json:
 ```json
 {
-    "body": "Replying to [comment:50 pjeremy]:\n> 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> \n> Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n> Compiling in FreeBSD/amd64 (with or without the above patch) gives:\n> {{{\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\n> C/misc_solvers.c: In function 'scale':\n> C/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\n> C/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\n> C/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c: In function 'pack2':\n> C/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> }}}\n\nthe following 2-byte change appears to cure the problem. Semantically, this \nrestricts the dense matrices that are dealt with to the sizes 2^31 by 2^31, but this\nis OK for all the practical purposes.\nHopefully CVXOPT people will come up with a better fix, but for the time being\nthis should suffice and cure this particular headache.\n\n\n\n```\n--- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300\n+++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700\n@@ -61,7 +61,7 @@\n typedef struct {\n   PyObject_HEAD\n   void *buffer;          /* in column-major-mode array of type 'id' */\n-  int_t nrows, ncols;    /* number of rows and columns */\n+  int nrows, ncols;    /* number of rows and columns -- was int_t */\n   int   id;              /* DOUBLE, INT, COMPLEX */\n } matrix;\n```\n\n \n\n> \n> `Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.\n\n\nIt remains to sort out the complex.h stuff on Solaris...",
+    "body": "Replying to [comment:50 pjeremy]:\n> 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n> \n> Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\n> Compiling in FreeBSD/amd64 (with or without the above patch) gives:\n> \n> ```\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\n> C/misc_solvers.c: In function 'scale':\n> C/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\n> C/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\n> C/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c: In function 'pack2':\n> C/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\n> C/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> C/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\n> C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n> ```\n\n\nthe following 2-byte change appears to cure the problem. Semantically, this \nrestricts the dense matrices that are dealt with to the sizes 2^31 by 2^31, but this\nis OK for all the practical purposes.\nHopefully CVXOPT people will come up with a better fix, but for the time being\nthis should suffice and cure this particular headache.\n\n\n```\n--- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300\n+++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700\n@@ -61,7 +61,7 @@\n typedef struct {\n   PyObject_HEAD\n   void *buffer;          /* in column-major-mode array of type 'id' */\n-  int_t nrows, ncols;    /* number of rows and columns */\n+  int nrows, ncols;    /* number of rows and columns -- was int_t */\n   int   id;              /* DOUBLE, INT, COMPLEX */\n } matrix;\n```\n \n\n> \n> `Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.\n\n\n\nIt remains to sort out the complex.h stuff on Solaris...",
     "created_at": "2010-07-29T16:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -2970,7 +3029,8 @@ Replying to [comment:50 pjeremy]:
 > 
 > Note that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.
 > Compiling in FreeBSD/amd64 (with or without the above patch) gives:
-> {{{
+> 
+> ```
 > gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o
 > C/misc_solvers.c: In function 'scale':
 > C/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type
@@ -3000,14 +3060,14 @@ Replying to [comment:50 pjeremy]:
 > C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'
 > C/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type
 > C/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'
-> }}}
+> ```
+
 
 the following 2-byte change appears to cure the problem. Semantically, this 
 restricts the dense matrices that are dealt with to the sizes 2^31 by 2^31, but this
 is OK for all the practical purposes.
 Hopefully CVXOPT people will come up with a better fix, but for the time being
 this should suffice and cure this particular headache.
-
 
 
 ```
@@ -3022,11 +3082,11 @@ this should suffice and cure this particular headache.
    int   id;              /* DOUBLE, INT, COMPLEX */
  } matrix;
 ```
-
  
 
 > 
 > `Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.
+
 
 
 It remains to sort out the complex.h stuff on Solaris...
@@ -3038,7 +3098,7 @@ It remains to sort out the complex.h stuff on Solaris...
 archive/issue_comments_051977.json:
 ```json
 {
-    "body": "Replying to [comment:80 dimpase]:\n> Replying to [comment:50 pjeremy]:\n[...]\n\n> the following 2-byte change appears to cure the problem. Semantically, this \n> restricts the dense matrices that are dealt with to the sizes 2^31 by 2^31, but this\n> is OK for all the practical purposes.\n> Hopefully CVXOPT people will come up with a better fix, but for the time being\n> this should suffice and cure this particular headache.\n> \n> \n\n```\n --- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300\n +++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700\n @@ -61,7 +61,7 @@\n  typedef struct {\n    PyObject_HEAD\n    void *buffer;          /* in column-major-mode array of type 'id' */\n -  int_t nrows, ncols;    /* number of rows and columns */\n +  int nrows, ncols;    /* number of rows and columns -- was int_t */\n    int   id;              /* DOUBLE, INT, COMPLEX */\n  } matrix;\n }}}\n\nOne of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\nI am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n(and eventually hooking up the cvxopt's documentation to Sage's documentation)\n\nFurther, the Sun complex.h related issue, I looked at the /usr/include/complex.h over on t2 and mark. It just does not make sense how  _Imaginary_I is (not) defined there,\nsomething like\n{{{\n#define _Imaginary_I _Imaginary_I\n}}}\n---no wonder it does not work. While it does make sense in the supplied patches/sun_complex.h, which differs from the former at this and few other places. \n\nDima",
+    "body": "Replying to [comment:80 dimpase]:\n> Replying to [comment:50 pjeremy]:\n\n[...]\n\n> the following 2-byte change appears to cure the problem. Semantically, this \n> restricts the dense matrices that are dealt with to the sizes 2^31 by 2^31, but this\n> is OK for all the practical purposes.\n> Hopefully CVXOPT people will come up with a better fix, but for the time being\n> this should suffice and cure this particular headache.\n> \n> \n\n{{{\n --- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300\n +++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700\n `@``@` -61,7 +61,7 `@``@`\n  typedef struct {\n    PyObject_HEAD\n    void *buffer;          /* in column-major-mode array of type 'id' */\n-  int_t nrows, ncols;    /* number of rows and columns */\n +  int nrows, ncols;    /* number of rows and columns -- was int_t */\n    int   id;              /* DOUBLE, INT, COMPLEX */\n  } matrix;\n }}}\n\nOne of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\nI am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n(and eventually hooking up the cvxopt's documentation to Sage's documentation)\n\nFurther, the Sun complex.h related issue, I looked at the /usr/include/complex.h over on t2 and mark. It just does not make sense how  _Imaginary_I is (not) defined there,\nsomething like\n\n```\n#define _Imaginary_I _Imaginary_I\n```\n---no wonder it does not work. While it does make sense in the supplied patches/sun_complex.h, which differs from the former at this and few other places. \n\nDima",
     "created_at": "2010-07-30T15:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3049,6 +3109,7 @@ archive/issue_comments_051977.json:
 
 Replying to [comment:80 dimpase]:
 > Replying to [comment:50 pjeremy]:
+
 [...]
 
 > the following 2-byte change appears to cure the problem. Semantically, this 
@@ -3059,14 +3120,14 @@ Replying to [comment:80 dimpase]:
 > 
 > 
 
-```
+{{{
  --- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300
  +++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700
- @@ -61,7 +61,7 @@
+ `@``@` -61,7 +61,7 `@``@`
   typedef struct {
     PyObject_HEAD
     void *buffer;          /* in column-major-mode array of type 'id' */
- -  int_t nrows, ncols;    /* number of rows and columns */
+-  int_t nrows, ncols;    /* number of rows and columns */
  +  int nrows, ncols;    /* number of rows and columns -- was int_t */
     int   id;              /* DOUBLE, INT, COMPLEX */
   } matrix;
@@ -3079,9 +3140,10 @@ I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from
 
 Further, the Sun complex.h related issue, I looked at the /usr/include/complex.h over on t2 and mark. It just does not make sense how  _Imaginary_I is (not) defined there,
 something like
-{{{
+
+```
 #define _Imaginary_I _Imaginary_I
-}}}
+```
 ---no wonder it does not work. While it does make sense in the supplied patches/sun_complex.h, which differs from the former at this and few other places. 
 
 Dima
@@ -3093,7 +3155,7 @@ Dima
 archive/issue_comments_051978.json:
 ```json
 {
-    "body": "Replying to [comment:82 dimpase]:\n> Replying to [comment:80 dimpase]:\n> > Replying to [comment:50 pjeremy]:\n> [...]\n> One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\nGood.\n\n> I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n> (and eventually hooking up the cvxopt's documentation to Sage's documentation)\n\nI think having those self-tests will be very useful. It might need a change of method, to change to a directory before running them, rather than run them from a higher level directory as I did. \n\n> Further, the Sun complex.h related issue, \n\nDon't waste any time on that. I've spent most of the day looking at this, and will summarise my findings later.",
+    "body": "Replying to [comment:82 dimpase]:\n> Replying to [comment:80 dimpase]:\n> > Replying to [comment:50 pjeremy]:\n\n> [...]\n> One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\n\nGood.\n\n> I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n> (and eventually hooking up the cvxopt's documentation to Sage's documentation)\n\n\nI think having those self-tests will be very useful. It might need a change of method, to change to a directory before running them, rather than run them from a higher level directory as I did. \n\n> Further, the Sun complex.h related issue, \n\n\nDon't waste any time on that. I've spent most of the day looking at this, and will summarise my findings later.",
     "created_at": "2010-07-30T23:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3105,17 +3167,21 @@ archive/issue_comments_051978.json:
 Replying to [comment:82 dimpase]:
 > Replying to [comment:80 dimpase]:
 > > Replying to [comment:50 pjeremy]:
+
 > [...]
 > One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.
+
 
 Good.
 
 > I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.
 > (and eventually hooking up the cvxopt's documentation to Sage's documentation)
 
+
 I think having those self-tests will be very useful. It might need a change of method, to change to a directory before running them, rather than run them from a higher level directory as I did. 
 
 > Further, the Sun complex.h related issue, 
+
 
 Don't waste any time on that. I've spent most of the day looking at this, and will summarise my findings later.
 
@@ -3126,7 +3192,7 @@ Don't waste any time on that. I've spent most of the day looking at this, and wi
 archive/issue_comments_051979.json:
 ```json
 {
-    "body": "Replying to [comment:82 dimpase]:\n> Replying to [comment:80 dimpase]:\n> > the following 2-byte change appears to cure the problem. Semantically, this \n...\n> One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\nThat's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.\n\n> I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n\nDepending on the cvxopt project's definition of \"shortly\", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)",
+    "body": "Replying to [comment:82 dimpase]:\n> Replying to [comment:80 dimpase]:\n> > the following 2-byte change appears to cure the problem. Semantically, this \n\n...\n> One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\n\nThat's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.\n\n> I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n\n\nDepending on the cvxopt project's definition of \"shortly\", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)",
     "created_at": "2010-07-31T03:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3138,12 +3204,15 @@ archive/issue_comments_051979.json:
 Replying to [comment:82 dimpase]:
 > Replying to [comment:80 dimpase]:
 > > the following 2-byte change appears to cure the problem. Semantically, this 
+
 ...
 > One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.
+
 
 That's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.
 
 > I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.
+
 
 Depending on the cvxopt project's definition of "shortly", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)
 
@@ -3154,7 +3223,7 @@ Depending on the cvxopt project's definition of "shortly", that sounds reasonabl
 archive/issue_comments_051980.json:
 ```json
 {
-    "body": "I set about trying to resolve why cvxopt would build on some Solaris systems but not on others. I believe I have finally got to the bottom of this. \n\nIf one looks in the current cvxopt SPKG.txt file, there is a reference to this bug, and why the sun_complex.h was added. \n\nhttp://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6549313\n\nwhich does not appear to have any activity for more than 3 years. There's a little test program there, which I modified a bit to print good or bad:\n\n\n```\n#include <stdio.h>\n#include <complex.h>\n\n/*\n * \"volatile\" is meant to prevent gcc from calculating the sqrt as a\n * constant, we want to test libc.\n */\nvolatile complex double z = -_Complex_I;\nint\nmain(void)\n{\n        z = csqrt(z);\n        if (creal(z) > 0.0)\n                printf(\"good\\n\");       /* good */\n        else\n                printf(\"bad\\n\");       /* bad */\n}\n```\n\n\nAfter saving that to a file `test.c` I then tried to compile this using \n\n\n```\ngcc -lm -std=c99 test.c  # Or in some cases using the Sun compiler.\n```\n\nin each case noting if the file compiled, or whether it gave an error like:\n\n```\n$ gcc -lm -std=c99 test.c\ntest.c:8: error: '_Complex_I' undeclared here (not in a function)\n```\n\nAssuming it did compile (which was the minority of cases), if that test program printed 'good' or 'bad' when it was run. \n\nComparing different 12 systems I have access to, **sorted in order of the release date** of the operating system, this is what I found:\n\n|            |       |            |      |                 |            |           |         |\n|------------|-------|------------|------|-----------------|------------|-----------|---------|\n|**Computer**|**CPU**|**hostname**|**OS**|**Release of OS**|**Compiler**|**Compile**|*'Result*|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 4.5.0|Yes|Good|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|SunStudio 12.1|Yes|Bad|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 4.4.4|No|-|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 3.4.3|No|-|\n|unknown |x86|orcus|Solaris 10|10/2009|gcc 4.3.4|No|-|\n|unknown |x86|orcus|Solaris 10|10/2009|gcc 3.4.3|No|-|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|SunStudio 12.1|Yes|Good|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 4.5.0|Yes|Good|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 4.4.4|No|-|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 4.3.4|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 3.4.5|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 3.4.3|No|-|\n|Sun T5240|SPARC|t2|Solaris 10|05/2009|gcc 4.4.1|No|-|\n|Sun T5240|SPARC|t2|Solaris 10|05/2009|gcc 3.4.3|No|-|\n|Sun Fire X4540|x86|disk|OpenSolaris|11/2008|gcc 3.4.3|No|-|\n|Dell OptiPlex 755|x86|fulvia|Solaris 10|05/2008|gcc 4.5.0|Yes|Good|\n|Dell OptiPlex 755|x86|fulvia|Solaris 10|05/2008|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|gcc 4.5.0|Yes|Good|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|SunStudio 12|Yes|Bad|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|4.5.0|Yes|Good|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|4.4.3|No|-|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|3.4.3|No|-|\n|Sun Netra T1|SPARC|kestrel|Solaris 10|03/2005|4.4.2|No|-|\n|Sun Netra T1|SPARC|kestrel|Solaris 10|03/2005|3.4.3|No|-|\n|Sun Fire 480R|SPARC|ra|Solaris 8|02/2004|gcc 4.3.4|No|-|\nNotes:\n* *swan* , *redstart* , *hawk* and *kestrel* are my own personal machines. \n* *fulvia*, *mark* and *mark2* are hosts on Skynet. \n* *disk* and *t2* are hosts on the *.math.washington.edu network.\n* *ra* and *mercury* are hosts on blastwave.org. (Dennis Clark of Blastwave has given me access to their network, which is useful, as their Sun Blade 2500 has faster CPUs than the Sun Blade 2500 on Skynet).\n* *orcus* is a Solaris zone running on some x86 hardware on the blastwave.org network. I don't know what that hardware is - since it's in a Solaris zone, this is hidden. \n* *ra* on the blastwave.org network runs a version of Solaris older than what Sage aims to support. IMHO, we should aim to support all Solaris 10 releases, the first of which was released in March 2005, but not bother with older releases, where there are C99 related issues. \n\nLooking at those results, some patterns can be seen. \n* Every time gcc 4.5.0 was used, `test.c` compiled and run OK. (gcc 4.5.0 was available on all the skynet machines and I built it on all my own machines. I did not bother building it on t2.math, disk.math or any of the machines on Blastwave.)\n* If an older version of gcc was used, `test.c` would never compile. \n* Whether the system had SPARC or x86 processors did change the behavior. \n* The age of the operating system did not matter. (Although I have some doubts if this would have worked with gcc 4.5 on the old Solaris 8 machine, but as noted above, this is too old to bother supporting.) \n\nI then realised that this is the same bug that hit us with the Sage library before (#7932). I reported that to the gcc bug database as two bugs - one for SPARC, one for x86. The GCC developers then closed one as a duplicate of the other. \n* http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42753\n* http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42755\n\nIf you read [gcc bug 42753](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42753), it basically boils down to the fact that the gcc developers claim it's a bug in the Sun header file, but that their *fixincludes* is lacking the facility to deal with this. However, their *fixincludes* was updated in gcc 4.5, so this problem was fixed in gcc 4.5. \n\nSo I suspect we have two options. \n* Force people to use gcc 4.5 on Solaris, then remove the `sun_complex.h` hack completely. That would be rather annoying, since that's the latest version of gcc, and I'm not aware of anywhere where one can download a pre-compiled gcc 4.5 binary. People would have to build it themselves, which is a non-trivial process on Solaris. \n* We apply that patch on gcc versions older than 4.5, but omit the patch with gcc version 4.5 or later. There's an example of how to do this [here](http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/cpp/predefined-macros.html) using the gcc macros `__GNUC__`, `__GNUC_MINOR__` and `__GNUC_PATCHLEVEL__`. It's easy to see what macros gcc defines, by creating an empty file `foobar.c`, and using `gcc -c -E -dM foobar.c` \n\nSo in summary, I think the solution to the Solaris problem is that the code in cvxopt needs changing so that the patched header only gets included when building with gcc less than 4.5.0. I suspect the easiest solution is to always apply a patched header file, but arrange for the patch to just include `<complex.h>` on gcc 4.5.0 or later, but have its current behavior on earlier gcc series. \n\nAlthough I've not yet modified `sun_complex.h` to have this behavior, I suspect it will allow the code to compile on any gcc >= 4.0.1, which is the earliest Sage supports. \n\n\nDave",
+    "body": "I set about trying to resolve why cvxopt would build on some Solaris systems but not on others. I believe I have finally got to the bottom of this. \n\nIf one looks in the current cvxopt SPKG.txt file, there is a reference to this bug, and why the sun_complex.h was added. \n\nhttp://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6549313\n\nwhich does not appear to have any activity for more than 3 years. There's a little test program there, which I modified a bit to print good or bad:\n\n```\n#include <stdio.h>\n#include <complex.h>\n\n/*\n * \"volatile\" is meant to prevent gcc from calculating the sqrt as a\n * constant, we want to test libc.\n */\nvolatile complex double z = -_Complex_I;\nint\nmain(void)\n{\n        z = csqrt(z);\n        if (creal(z) > 0.0)\n                printf(\"good\\n\");       /* good */\n        else\n                printf(\"bad\\n\");       /* bad */\n}\n```\n\nAfter saving that to a file `test.c` I then tried to compile this using \n\n```\ngcc -lm -std=c99 test.c  # Or in some cases using the Sun compiler.\n```\nin each case noting if the file compiled, or whether it gave an error like:\n\n```\n$ gcc -lm -std=c99 test.c\ntest.c:8: error: '_Complex_I' undeclared here (not in a function)\n```\nAssuming it did compile (which was the minority of cases), if that test program printed 'good' or 'bad' when it was run. \n\nComparing different 12 systems I have access to, **sorted in order of the release date** of the operating system, this is what I found:\n\n|            |       |            |      |                 |            |           |         |\n|------------|-------|------------|------|-----------------|------------|-----------|---------|\n|**Computer**|**CPU**|**hostname**|**OS**|**Release of OS**|**Compiler**|**Compile**|*'Result*|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 4.5.0|Yes|Good|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|SunStudio 12.1|Yes|Bad|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 4.4.4|No|-|\n|Sun Blade 2000|SPARC|swan|Solaris 10|10/2009|gcc 3.4.3|No|-|\n|unknown |x86|orcus|Solaris 10|10/2009|gcc 4.3.4|No|-|\n|unknown |x86|orcus|Solaris 10|10/2009|gcc 3.4.3|No|-|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|SunStudio 12.1|Yes|Good|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 4.5.0|Yes|Good|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 4.4.4|No|-|\n|Sun Ultra 27|x86|hawk|OpenSolaris|06/2009|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 4.3.4|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 3.4.5|No|-|\n|Sun Blade 2500|SPARC|mercury|Solaris 10|05/2009|gcc 3.4.3|No|-|\n|Sun T5240|SPARC|t2|Solaris 10|05/2009|gcc 4.4.1|No|-|\n|Sun T5240|SPARC|t2|Solaris 10|05/2009|gcc 3.4.3|No|-|\n|Sun Fire X4540|x86|disk|OpenSolaris|11/2008|gcc 3.4.3|No|-|\n|Dell OptiPlex 755|x86|fulvia|Solaris 10|05/2008|gcc 4.5.0|Yes|Good|\n|Dell OptiPlex 755|x86|fulvia|Solaris 10|05/2008|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|gcc 4.5.0|Yes|Good|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|gcc 3.4.3|No|-|\n|Sun Blade 2500|SPARC|mark|Solaris 10|01/2006|SunStudio 12|Yes|Bad|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|4.5.0|Yes|Good|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|4.4.3|No|-|\n|Sun Blade 1000|SPARC|redstart|Solaris 10|03/2005|3.4.3|No|-|\n|Sun Netra T1|SPARC|kestrel|Solaris 10|03/2005|4.4.2|No|-|\n|Sun Netra T1|SPARC|kestrel|Solaris 10|03/2005|3.4.3|No|-|\n|Sun Fire 480R|SPARC|ra|Solaris 8|02/2004|gcc 4.3.4|No|-|\nNotes:\n* *swan* , *redstart* , *hawk* and *kestrel* are my own personal machines. \n* *fulvia*, *mark* and *mark2* are hosts on Skynet. \n* *disk* and *t2* are hosts on the *.math.washington.edu network.\n* *ra* and *mercury* are hosts on blastwave.org. (Dennis Clark of Blastwave has given me access to their network, which is useful, as their Sun Blade 2500 has faster CPUs than the Sun Blade 2500 on Skynet).\n* *orcus* is a Solaris zone running on some x86 hardware on the blastwave.org network. I don't know what that hardware is - since it's in a Solaris zone, this is hidden. \n* *ra* on the blastwave.org network runs a version of Solaris older than what Sage aims to support. IMHO, we should aim to support all Solaris 10 releases, the first of which was released in March 2005, but not bother with older releases, where there are C99 related issues. \n\nLooking at those results, some patterns can be seen. \n* Every time gcc 4.5.0 was used, `test.c` compiled and run OK. (gcc 4.5.0 was available on all the skynet machines and I built it on all my own machines. I did not bother building it on t2.math, disk.math or any of the machines on Blastwave.)\n* If an older version of gcc was used, `test.c` would never compile. \n* Whether the system had SPARC or x86 processors did change the behavior. \n* The age of the operating system did not matter. (Although I have some doubts if this would have worked with gcc 4.5 on the old Solaris 8 machine, but as noted above, this is too old to bother supporting.) \n\nI then realised that this is the same bug that hit us with the Sage library before (#7932). I reported that to the gcc bug database as two bugs - one for SPARC, one for x86. The GCC developers then closed one as a duplicate of the other. \n* http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42753\n* http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42755\n\nIf you read [gcc bug 42753](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=42753), it basically boils down to the fact that the gcc developers claim it's a bug in the Sun header file, but that their *fixincludes* is lacking the facility to deal with this. However, their *fixincludes* was updated in gcc 4.5, so this problem was fixed in gcc 4.5. \n\nSo I suspect we have two options. \n* Force people to use gcc 4.5 on Solaris, then remove the `sun_complex.h` hack completely. That would be rather annoying, since that's the latest version of gcc, and I'm not aware of anywhere where one can download a pre-compiled gcc 4.5 binary. People would have to build it themselves, which is a non-trivial process on Solaris. \n* We apply that patch on gcc versions older than 4.5, but omit the patch with gcc version 4.5 or later. There's an example of how to do this [here](http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/cpp/predefined-macros.html) using the gcc macros `__GNUC__`, `__GNUC_MINOR__` and `__GNUC_PATCHLEVEL__`. It's easy to see what macros gcc defines, by creating an empty file `foobar.c`, and using `gcc -c -E -dM foobar.c` \n\nSo in summary, I think the solution to the Solaris problem is that the code in cvxopt needs changing so that the patched header only gets included when building with gcc less than 4.5.0. I suspect the easiest solution is to always apply a patched header file, but arrange for the patch to just include `<complex.h>` on gcc 4.5.0 or later, but have its current behavior on earlier gcc series. \n\nAlthough I've not yet modified `sun_complex.h` to have this behavior, I suspect it will allow the code to compile on any gcc >= 4.0.1, which is the earliest Sage supports. \n\n\nDave",
     "created_at": "2010-07-31T08:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3170,7 +3239,6 @@ If one looks in the current cvxopt SPKG.txt file, there is a reference to this b
 http://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6549313
 
 which does not appear to have any activity for more than 3 years. There's a little test program there, which I modified a bit to print good or bad:
-
 
 ```
 #include <stdio.h>
@@ -3192,21 +3260,17 @@ main(void)
 }
 ```
 
-
 After saving that to a file `test.c` I then tried to compile this using 
-
 
 ```
 gcc -lm -std=c99 test.c  # Or in some cases using the Sun compiler.
 ```
-
 in each case noting if the file compiled, or whether it gave an error like:
 
 ```
 $ gcc -lm -std=c99 test.c
 test.c:8: error: '_Complex_I' undeclared here (not in a function)
 ```
-
 Assuming it did compile (which was the minority of cases), if that test program printed 'good' or 'bad' when it was run. 
 
 Comparing different 12 systems I have access to, **sorted in order of the release date** of the operating system, this is what I found:
@@ -3329,7 +3393,7 @@ Dave
 archive/issue_comments_051983.json:
 ```json
 {
-    "body": "Replying to [comment:87 drkirkby]:\n> This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. \n>\n\nI meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. \n\n> I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. \n\nWe should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. \n\n\n```\n#include <complex.h>\n#if defined(__sun__) && defined(__GNUC__)\n   #if __GNUC__ < 4  || ( __GNUC__ == 4 && __GNUC_MINOR__ < 5   )\n\n      #undef  _Complex_I\n      #define _Complex_I (__extension__ 1.0iF)\n\n      #undef I\n      #define I _Complex_I\n\n   #endif\n#endif\n```\n\n\nThere's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. \n}}}",
+    "body": "Replying to [comment:87 drkirkby]:\n> This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. \n\n>\n\nI meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. \n\n> I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. \n\n\nWe should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. \n\n```\n#include <complex.h>\n#if defined(__sun__) && defined(__GNUC__)\n   #if __GNUC__ < 4  || ( __GNUC__ == 4 && __GNUC_MINOR__ < 5   )\n\n      #undef  _Complex_I\n      #define _Complex_I (__extension__ 1.0iF)\n\n      #undef I\n      #define I _Complex_I\n\n   #endif\n#endif\n```\n\nThere's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. \n}}}",
     "created_at": "2010-08-01T08:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3340,14 +3404,15 @@ archive/issue_comments_051983.json:
 
 Replying to [comment:87 drkirkby]:
 > This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. 
+
 >
 
 I meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. 
 
 > I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. 
 
-We should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. 
 
+We should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. 
 
 ```
 #include <complex.h>
@@ -3364,7 +3429,6 @@ We should get that patch upstream if possible. As you can see, it is very trivia
 #endif
 ```
 
-
 There's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. 
 }}}
 
@@ -3375,7 +3439,7 @@ There's no need to have a huge great header file as there is at the minute. It i
 archive/issue_comments_051984.json:
 ```json
 {
-    "body": "Replying to [comment:88 drkirkby]:\n> Replying to [comment:87 drkirkby]:\n> > This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. \n> >\n> \n> I meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. \n> \n> > I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. \n> \n> We should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. \n> \n\n```\n #include <complex.h>\n #if defined(__sun__) && defined(__GNUC__)\n    #if __GNUC__ < 4  || ( __GNUC__ == 4 && __GNUC_MINOR__ < 5   )\n \n       #undef  _Complex_I\n       #define _Complex_I (__extension__ 1.0iF)\n \n       #undef I\n       #define I _Complex_I\n \n    #endif\n #endif\n```\n\n\nWhy do you check for gcc here? I imagine with other compilers the problem\nwould be the same, too. (for the sake of reporting upstream...)\nIs SunStudio 12 providing its own fix for this?\n\nOtherwise I agree that this looks more pleasant than the current sun_complex.h hack;\nI'll put it in the updated cvxopt 1.1.2 now.\n\nDima\n\n\n\n> \n> There's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. \n> }}}\n>",
+    "body": "Replying to [comment:88 drkirkby]:\n> Replying to [comment:87 drkirkby]:\n> > This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. \n\n> >\n> \n> I meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. \n> \n> > I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. \n\n> \n> We should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. \n> \n\n{{{\n #include <complex.h>\n #if defined(__sun__) && defined(__GNUC__)\n    #if __GNUC__ < 4  || ( __GNUC__ == 4 && __GNUC_MINOR__ < 5   )\n \n       #undef  _Complex_I\n       #define _Complex_I (__extension__ 1.0iF)\n \n       #undef I\n       #define I _Complex_I\n \n    #endif\n #endif\n}}}\n\nWhy do you check for gcc here? I imagine with other compilers the problem\nwould be the same, too. (for the sake of reporting upstream...)\nIs SunStudio 12 providing its own fix for this?\n\nOtherwise I agree that this looks more pleasant than the current sun_complex.h hack;\nI'll put it in the updated cvxopt 1.1.2 now.\n\nDima\n\n\n\n> \n> There's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. \n> }}}\n\n>",
     "created_at": "2010-08-01T15:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3387,16 +3451,18 @@ archive/issue_comments_051984.json:
 Replying to [comment:88 drkirkby]:
 > Replying to [comment:87 drkirkby]:
 > > This problem with cvxopt on Solaris has become critical now, as there are no longer any compilers except gcc 4.5.0 on any of the Solaris machines. 
+
 > >
 > 
 > I meant to add there are no compilers able to build Sage on Solaris on and of the Skynet machines. 
 > 
 > > I've created a very small patch to fix the current version of cvxopt so it builds on Solaris. 
+
 > 
 > We should get that patch upstream if possible. As you can see, it is very trivial. All we need to add to the upstream source is something like this. 
 > 
 
-```
+{{{
  #include <complex.h>
  #if defined(__sun__) && defined(__GNUC__)
     #if __GNUC__ < 4  || ( __GNUC__ == 4 && __GNUC_MINOR__ < 5   )
@@ -3409,8 +3475,7 @@ Replying to [comment:88 drkirkby]:
  
     #endif
  #endif
-```
-
+}}}
 
 Why do you check for gcc here? I imagine with other compilers the problem
 would be the same, too. (for the sake of reporting upstream...)
@@ -3426,6 +3491,7 @@ Dima
 > 
 > There's no need to have a huge great header file as there is at the minute. It is totally unnecessary. One two items are missing from the header file, so only two need to be added. The patch currently add a very large proprietary header file when only a few lines of code are needed. 
 > }}}
+
 >
 
 
@@ -3435,7 +3501,7 @@ Dima
 archive/issue_comments_051985.json:
 ```json
 {
-    "body": "Replying to [comment:89 dimpase]:\n\n> Why do you check for gcc here? I imagine with other compilers the problem\n> would be the same, too. (for the sake of reporting upstream...)\n> Is \"SunStudio 12 providing its own fix for this?\n\n\nThe fix is not needed with the SunStudio compiler. I can compile a test program that uses `_Complex_I` with the Sun compiler without resorting to any hacks - see the big table above I produced. \n \nhttp://trac.sagemath.org/sage_trac/ticket/6456#comment:85\n\nIn any case, I've not done much testing with SunStudio on this, so it would be unwise to start applying patches without testing them. \n\n> Otherwise I agree that this looks more pleasant than the current sun_complex.h hack;\n> I'll put it in the updated cvxopt 1.1.2 now.\n> \n> Dima\n\nYes, I think so too. gcc 4.5.0 creates a file with the fixed header, which I inspected. That is huge, looking similar to that the current patch in Sage. There's no need to repeat them all. And as I noted before, it is doubtful if its 100% legal to do so. All I did was copied the necessary parts. \n\nI did email the cvxopt developers about this, so hopefully it can be fixed upstream. You might not actually need the patch at all when 1.13 is released. \n\nDave",
+    "body": "Replying to [comment:89 dimpase]:\n\n> Why do you check for gcc here? I imagine with other compilers the problem\n> would be the same, too. (for the sake of reporting upstream...)\n> Is \"SunStudio 12 providing its own fix for this?\n\n\n\nThe fix is not needed with the SunStudio compiler. I can compile a test program that uses `_Complex_I` with the Sun compiler without resorting to any hacks - see the big table above I produced. \n \nhttp://trac.sagemath.org/sage_trac/ticket/6456#comment:85\n\nIn any case, I've not done much testing with SunStudio on this, so it would be unwise to start applying patches without testing them. \n\n> Otherwise I agree that this looks more pleasant than the current sun_complex.h hack;\n> I'll put it in the updated cvxopt 1.1.2 now.\n> \n> Dima\n\n\nYes, I think so too. gcc 4.5.0 creates a file with the fixed header, which I inspected. That is huge, looking similar to that the current patch in Sage. There's no need to repeat them all. And as I noted before, it is doubtful if its 100% legal to do so. All I did was copied the necessary parts. \n\nI did email the cvxopt developers about this, so hopefully it can be fixed upstream. You might not actually need the patch at all when 1.13 is released. \n\nDave",
     "created_at": "2010-08-01T15:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3451,6 +3517,7 @@ Replying to [comment:89 dimpase]:
 > Is "SunStudio 12 providing its own fix for this?
 
 
+
 The fix is not needed with the SunStudio compiler. I can compile a test program that uses `_Complex_I` with the Sun compiler without resorting to any hacks - see the big table above I produced. 
  
 http://trac.sagemath.org/sage_trac/ticket/6456#comment:85
@@ -3461,6 +3528,7 @@ In any case, I've not done much testing with SunStudio on this, so it would be u
 > I'll put it in the updated cvxopt 1.1.2 now.
 > 
 > Dima
+
 
 Yes, I think so too. gcc 4.5.0 creates a file with the fixed header, which I inspected. That is huge, looking similar to that the current patch in Sage. There's no need to repeat them all. And as I noted before, it is doubtful if its 100% legal to do so. All I did was copied the necessary parts. 
 
@@ -3475,7 +3543,7 @@ Dave
 archive/issue_comments_051986.json:
 ```json
 {
-    "body": "Replying to [comment:84 pjeremy]:\n> Replying to [comment:82 dimpase]:\n> > Replying to [comment:80 dimpase]:\n> > > the following 2-byte change appears to cure the problem. Semantically, this \n> ...\n> > One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n> \n> That's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.\n> \n> > I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n> \n> Depending on the cvxopt project's definition of \"shortly\", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)\n\nNew spkg is here:\n http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg\n\nhere is the list of goodies that got added/updated/fixed:\n* applied P.Jeremy's FreeBSD patch\n* corrected the 64-bit specific int* bug reported by pjeremy\n* turned on GSL extension (this is the default mode for CVXOPT, and GSL is a standard Sage spkg, so\n  this makes perfect sense); this in particular allowed to get rid of strange random seed-related\n  import bugs uncovered by David Kirkby's spkg-check\n  TODO(?): one might want to enchance the code to allow other Sage random sources,\n   at the moment only GSL is used in CVXOPT-1.1.2 spkg, apparently it will need an unclear\n   to me \"with seed(..)\" construct.\n  TODO: We will need to make sure that CVXOPT is built after GSL\n* modified spkg-check to report test names, cd to appropriate subdirs, and skip .bin files.\n  TODO: add more tests.\n* corrected the .patch files in patches/ to be in right order --- just run the makepatchfiles\n  script to re-create these files!\n* removed html doc files in src/doc; the .rst doc files are there, so it's a question of\n  rebuilding them \n  (e.g. one can do sage -sh; cd src/doc; make html)\n  TODO: incorporate docs buiding into spkg-install, and/or merge into \n  Sage documentation \n* included David's shortened and gcc-version targeted Sun-specific patch\n  (comment 88); removed sun_complex.h  \n* took care of SPKG.txt sections, as mentioned in comment 87\n\nMAJOR change:\nit now depends on GSL--- this gets rid of sage.prandom related problems\n\nMAJOR TODOs:\nMacOSX fixes, and testing with gcc-4.5 on as many platforms as possible\n(otherwise it looks good to go !)\n\nDima",
+    "body": "Replying to [comment:84 pjeremy]:\n> Replying to [comment:82 dimpase]:\n> > Replying to [comment:80 dimpase]:\n> > > the following 2-byte change appears to cure the problem. Semantically, this \n\n> ...\n> > One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.\n\n> \n> That's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.\n> \n> > I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.\n\n> \n> Depending on the cvxopt project's definition of \"shortly\", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)\n\n\nNew spkg is here:\n http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg\n\nhere is the list of goodies that got added/updated/fixed:\n* applied P.Jeremy's FreeBSD patch\n* corrected the 64-bit specific int* bug reported by pjeremy\n* turned on GSL extension (this is the default mode for CVXOPT, and GSL is a standard Sage spkg, so\n  this makes perfect sense); this in particular allowed to get rid of strange random seed-related\n  import bugs uncovered by David Kirkby's spkg-check\n  TODO(?): one might want to enchance the code to allow other Sage random sources,\n   at the moment only GSL is used in CVXOPT-1.1.2 spkg, apparently it will need an unclear\n   to me \"with seed(..)\" construct.\n  TODO: We will need to make sure that CVXOPT is built after GSL\n* modified spkg-check to report test names, cd to appropriate subdirs, and skip .bin files.\n  TODO: add more tests.\n* corrected the .patch files in patches/ to be in right order --- just run the makepatchfiles\n  script to re-create these files!\n* removed html doc files in src/doc; the .rst doc files are there, so it's a question of\n  rebuilding them \n  (e.g. one can do sage -sh; cd src/doc; make html)\n  TODO: incorporate docs buiding into spkg-install, and/or merge into \n  Sage documentation \n* included David's shortened and gcc-version targeted Sun-specific patch\n  (comment 88); removed sun_complex.h  \n* took care of SPKG.txt sections, as mentioned in comment 87\n\nMAJOR change:\nit now depends on GSL--- this gets rid of sage.prandom related problems\n\nMAJOR TODOs:\nMacOSX fixes, and testing with gcc-4.5 on as many platforms as possible\n(otherwise it looks good to go !)\n\nDima",
     "created_at": "2010-08-01T19:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3488,14 +3556,18 @@ Replying to [comment:84 pjeremy]:
 > Replying to [comment:82 dimpase]:
 > > Replying to [comment:80 dimpase]:
 > > > the following 2-byte change appears to cure the problem. Semantically, this 
+
 > ...
 > > One of cvxopt developers has acknowledged this as a valid fix. Further, he says that it will get into a new cvxopt release, 1.1.3, due shortly.
+
 > 
 > That's good.  I'm sorry that *Real Life* intervened and I wasn't able to complete the investigation of this problem myself.  I've checked and it gets rid of the warnings on FreeBSD as well.  That leaves only just over 3000 warnings in a Sage build that need investigating.
 > 
 > > I am inclined to wait for 1.1.3, while preparing an spkg-check starting off from Dave's version, and eventually sorting out OSX and Cygwin.
+
 > 
 > Depending on the cvxopt project's definition of "shortly", that sounds reasonable.  I would appreciate the new SPKG including my fix to support FreeBSD (and something similar may be needed to support Cygwin)
+
 
 New spkg is here:
  http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.spkg
@@ -3561,7 +3633,7 @@ Would appreciate hearing how it does with gcc 4.5 (Linux and Solaris)
 archive/issue_comments_051988.json:
 ```json
 {
-    "body": "Replying to [comment:92 dimpase]:\n\n> Would appreciate hearing how it does with gcc 4.5 (Linux and Solaris)\n\nI've been to the pub tonight and have several beers. I think it's best if I don't start building anything now! \n\nBut I'll look at that when I have sobered up a bit. \n\nBe aware, there is a ticket to update gsl #9533. However, IIRC, an inspection of the GSL ChangeLog shows that all the changes were related to way GSL is built, and nothing to do with actual changes in the algorithms. But please check that! As I said, I have had a few (well a few too many) beers tonight!\n\nDave",
+    "body": "Replying to [comment:92 dimpase]:\n\n> Would appreciate hearing how it does with gcc 4.5 (Linux and Solaris)\n\n\nI've been to the pub tonight and have several beers. I think it's best if I don't start building anything now! \n\nBut I'll look at that when I have sobered up a bit. \n\nBe aware, there is a ticket to update gsl #9533. However, IIRC, an inspection of the GSL ChangeLog shows that all the changes were related to way GSL is built, and nothing to do with actual changes in the algorithms. But please check that! As I said, I have had a few (well a few too many) beers tonight!\n\nDave",
     "created_at": "2010-08-01T21:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3573,6 +3645,7 @@ archive/issue_comments_051988.json:
 Replying to [comment:92 dimpase]:
 
 > Would appreciate hearing how it does with gcc 4.5 (Linux and Solaris)
+
 
 I've been to the pub tonight and have several beers. I think it's best if I don't start building anything now! 
 
@@ -3589,7 +3662,7 @@ Dave
 archive/issue_comments_051989.json:
 ```json
 {
-    "body": "I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n\n\n```\nImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n```\n",
+    "body": "I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n\n```\nImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n```",
     "created_at": "2010-10-12T00:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3600,11 +3673,9 @@ archive/issue_comments_051989.json:
 
 I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:
 
-
 ```
 ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank
 ```
-
 
 
 
@@ -3613,7 +3684,7 @@ ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefin
 archive/issue_comments_051990.json:
 ```json
 {
-    "body": "Replying to [comment:94 mhansen]:\n> I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n\nDo you run g95 rather than gfortran? As you might have noticed, there is no g95-specific configuration in my spkg.\nI can look into this if you like.\n\nWhy do you call it 1.1.3? Have you got CVXOPT v1.1.3-sources?!\n\n\nDima\n\n> \n> {{{\n> ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n> }}}",
+    "body": "Replying to [comment:94 mhansen]:\n> I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n\n\nDo you run g95 rather than gfortran? As you might have noticed, there is no g95-specific configuration in my spkg.\nI can look into this if you like.\n\nWhy do you call it 1.1.3? Have you got CVXOPT v1.1.3-sources?!\n\n\nDima\n\n> \n> \n> ```\n> ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n> ```",
     "created_at": "2010-10-12T00:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3625,6 +3696,7 @@ archive/issue_comments_051990.json:
 Replying to [comment:94 mhansen]:
 > I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:
 
+
 Do you run g95 rather than gfortran? As you might have noticed, there is no g95-specific configuration in my spkg.
 I can look into this if you like.
 
@@ -3634,9 +3706,10 @@ Why do you call it 1.1.3? Have you got CVXOPT v1.1.3-sources?!
 Dima
 
 > 
-> {{{
+> 
+> ```
 > ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank
-> }}}
+> ```
 
 
 
@@ -3665,7 +3738,7 @@ This is based on the 1.1.3 sources which are on the CVXOPT website.
 archive/issue_comments_051992.json:
 ```json
 {
-    "body": "Replying to [comment:96 mhansen]:\n> I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.\n\ng95 is distributed with Sage. Do you by any chance got in installed in your instance of Sage?\n> \n> This is based on the 1.1.3 sources which are on the CVXOPT website.\nThanks. I was watching CVXOPT's googlegoup, but, weirdly enough, it is silent of this!",
+    "body": "Replying to [comment:96 mhansen]:\n> I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.\n\n\ng95 is distributed with Sage. Do you by any chance got in installed in your instance of Sage?\n> \n> This is based on the 1.1.3 sources which are on the CVXOPT website.\nThanks. I was watching CVXOPT's googlegoup, but, weirdly enough, it is silent of this!",
     "created_at": "2010-10-12T01:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3676,6 +3749,7 @@ archive/issue_comments_051992.json:
 
 Replying to [comment:96 mhansen]:
 > I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.
+
 
 g95 is distributed with Sage. Do you by any chance got in installed in your instance of Sage?
 > 
@@ -3689,7 +3763,7 @@ Thanks. I was watching CVXOPT's googlegoup, but, weirdly enough, it is silent of
 archive/issue_comments_051993.json:
 ```json
 {
-    "body": "Replying to [comment:94 mhansen]:\n> I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n> \n> {{{\n> ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n> }}}\n\nI tried your spkg on Sage 4.6.alpha1 (Debian x64), and it seems to work just fine.\nThat undefined symbol you got must really have something to do with your setup, not with the spkg\n(moreover, noone reported something like this with my latest 1.1.2 spkg, while you have this problem with 1.1.2, as well)",
+    "body": "Replying to [comment:94 mhansen]:\n> I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:\n> \n> \n> ```\n> ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank\n> ```\n\n\nI tried your spkg on Sage 4.6.alpha1 (Debian x64), and it seems to work just fine.\nThat undefined symbol you got must really have something to do with your setup, not with the spkg\n(moreover, noone reported something like this with my latest 1.1.2 spkg, while you have this problem with 1.1.2, as well)",
     "created_at": "2010-10-12T02:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3701,9 +3775,11 @@ archive/issue_comments_051993.json:
 Replying to [comment:94 mhansen]:
 > I've made a new spkg at http://sage.math.washington.edu/home/mhansen/cvxopt-1.1.3.spkg based on Dima's latest one.  I've also included the changes to make this build on Cygwin.  However, with both this and the 1.1.2 package, I get the following error on my Linux box:
 > 
-> {{{
+> 
+> ```
 > ImportError: /opt/sage/local/lib/python2.6/site-packages/cvxopt/base.so: undefined symbol: _g95_stop_blank
-> }}}
+> ```
+
 
 I tried your spkg on Sage 4.6.alpha1 (Debian x64), and it seems to work just fine.
 That undefined symbol you got must really have something to do with your setup, not with the spkg
@@ -3736,7 +3812,7 @@ Nathann
 archive/issue_comments_051995.json:
 ```json
 {
-    "body": "A few comments. \n* I changed the title, since this is a new version. \n* There's a file `patches/setup.py.orig` which is not in the repository. What is this .orig supposed to be? Is it from the old version of this package, since it is totally different from the setup.py in the source files. If its only from the previous version of the package, it serves no real useful purpose and can be deleted. \n\n\n```\n-rw-r--r--   1 drkirkby staff       5701 Sep 16 05:55 ./src/src/setup.py\n-rw-r--r--   1 drkirkby staff       5648 Oct 12 00:53 ./patches/setup.py.patch\n-rw-r--r--   1 drkirkby staff       6226 Oct 12 01:09 ./patches/setup.py\n-rw-r--r--   1 drkirkby staff       6228 Oct 12 01:06 ./patches/setup.py.orig\n```\n\n\n* The modification time of ./patches/setup.py.patch is Oct 12 00:53, yet the file that should be created from, ./patches/setup.py was last edited 16 minute later. I'm a bit suspicious of how this package has been patched, \n* The description in SPKG.txt could be a lot more informative. There's a much better description in the file `setup.py`. \n* It would be sensible to list the author's email addresses in the 'Upstream Contact' section of SPKG.txt. They are in the file setup.py. \n* The entry for cvxopt-1.1.2 in SPKG.txt should be removed, since 1.1.2 was never merged into Sage at all. All the changes should be under the 1.1.3 section. \n* All the \"TODO\" items in SPKG.txt would be better moved to the special build instructions section of SPKG.txt, since they have not been done, they should not be done in the ChangeLog, which should document changes made. \n* Some of the TODO items **must** be done now, and can't be left. For example, this is now linking against both GSL and GLPK, so adding those dependencies to the file `spkg/standard/deps` must be listed as a change that has been made, rather than a TODO. \n* I've attached a revised spkg/standard/deps which makes sure that both GSL and GLPK are built before cvxopt. \n* All the authors who have contributed should be listed in SPKG.txt. There are several missing, including myself, Peter Jeremy and perhaps others. \n* The authors field on here needs to have the full names of people, not their user names.",
+    "body": "A few comments. \n* I changed the title, since this is a new version. \n* There's a file `patches/setup.py.orig` which is not in the repository. What is this .orig supposed to be? Is it from the old version of this package, since it is totally different from the setup.py in the source files. If its only from the previous version of the package, it serves no real useful purpose and can be deleted. \n\n```\n-rw-r--r--   1 drkirkby staff       5701 Sep 16 05:55 ./src/src/setup.py\n-rw-r--r--   1 drkirkby staff       5648 Oct 12 00:53 ./patches/setup.py.patch\n-rw-r--r--   1 drkirkby staff       6226 Oct 12 01:09 ./patches/setup.py\n-rw-r--r--   1 drkirkby staff       6228 Oct 12 01:06 ./patches/setup.py.orig\n```\n\n* The modification time of ./patches/setup.py.patch is Oct 12 00:53, yet the file that should be created from, ./patches/setup.py was last edited 16 minute later. I'm a bit suspicious of how this package has been patched, \n* The description in SPKG.txt could be a lot more informative. There's a much better description in the file `setup.py`. \n* It would be sensible to list the author's email addresses in the 'Upstream Contact' section of SPKG.txt. They are in the file setup.py. \n* The entry for cvxopt-1.1.2 in SPKG.txt should be removed, since 1.1.2 was never merged into Sage at all. All the changes should be under the 1.1.3 section. \n* All the \"TODO\" items in SPKG.txt would be better moved to the special build instructions section of SPKG.txt, since they have not been done, they should not be done in the ChangeLog, which should document changes made. \n* Some of the TODO items **must** be done now, and can't be left. For example, this is now linking against both GSL and GLPK, so adding those dependencies to the file `spkg/standard/deps` must be listed as a change that has been made, rather than a TODO. \n* I've attached a revised spkg/standard/deps which makes sure that both GSL and GLPK are built before cvxopt. \n* All the authors who have contributed should be listed in SPKG.txt. There are several missing, including myself, Peter Jeremy and perhaps others. \n* The authors field on here needs to have the full names of people, not their user names.",
     "created_at": "2010-10-12T07:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3749,14 +3825,12 @@ A few comments.
 * I changed the title, since this is a new version. 
 * There's a file `patches/setup.py.orig` which is not in the repository. What is this .orig supposed to be? Is it from the old version of this package, since it is totally different from the setup.py in the source files. If its only from the previous version of the package, it serves no real useful purpose and can be deleted. 
 
-
 ```
 -rw-r--r--   1 drkirkby staff       5701 Sep 16 05:55 ./src/src/setup.py
 -rw-r--r--   1 drkirkby staff       5648 Oct 12 00:53 ./patches/setup.py.patch
 -rw-r--r--   1 drkirkby staff       6226 Oct 12 01:09 ./patches/setup.py
 -rw-r--r--   1 drkirkby staff       6228 Oct 12 01:06 ./patches/setup.py.orig
 ```
-
 
 * The modification time of ./patches/setup.py.patch is Oct 12 00:53, yet the file that should be created from, ./patches/setup.py was last edited 16 minute later. I'm a bit suspicious of how this package has been patched, 
 * The description in SPKG.txt could be a lot more informative. There's a much better description in the file `setup.py`. 
@@ -3851,7 +3925,7 @@ One more thing. It seems the list of dependencies of this is far larger than lis
 archive/issue_comments_052000.json:
 ```json
 {
-    "body": "Replying to [comment:96 mhansen]:\n> I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.\n> \n> This is based on the 1.1.3 sources which are on the CVXOPT website.\n\nI just tested it on MacOSX 10.5 PPC that uses g95, and it works just fine (not only the doctest in numerical/optimize.py, but also some of my code that uses other CVXOPT features).\nVery good, as I feared this to be the major sticking point...",
+    "body": "Replying to [comment:96 mhansen]:\n> I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.\n> \n> This is based on the 1.1.3 sources which are on the CVXOPT website.\n\n\nI just tested it on MacOSX 10.5 PPC that uses g95, and it works just fine (not only the doctest in numerical/optimize.py, but also some of my code that uses other CVXOPT features).\nVery good, as I feared this to be the major sticking point...",
     "created_at": "2010-10-17T06:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3864,6 +3938,7 @@ Replying to [comment:96 mhansen]:
 > I use gfortran -- g95 isn't installed on my system.  Maybe some previous library that it's picking up used g95?  I'm not sure.  I'll try rebuilding the relevant spkgs.
 > 
 > This is based on the 1.1.3 sources which are on the CVXOPT website.
+
 
 I just tested it on MacOSX 10.5 PPC that uses g95, and it works just fine (not only the doctest in numerical/optimize.py, but also some of my code that uses other CVXOPT features).
 Very good, as I feared this to be the major sticking point...
@@ -3911,7 +3986,7 @@ I've posted a new spkg in the same place addressing many of David's points.
 archive/issue_comments_052003.json:
 ```json
 {
-    "body": "Replying to [comment:104 mhansen]:\n> I've posted a new spkg in the same place addressing many of David's points.\n\ntested on Linuces, MacOSX 10.5 PPC, OpenSolaris x86. All good!",
+    "body": "Replying to [comment:104 mhansen]:\n> I've posted a new spkg in the same place addressing many of David's points.\n\n\ntested on Linuces, MacOSX 10.5 PPC, OpenSolaris x86. All good!",
     "created_at": "2010-11-09T15:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -3922,6 +3997,7 @@ archive/issue_comments_052003.json:
 
 Replying to [comment:104 mhansen]:
 > I've posted a new spkg in the same place addressing many of David's points.
+
 
 tested on Linuces, MacOSX 10.5 PPC, OpenSolaris x86. All good!
 
@@ -3991,7 +4067,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_052007.json:
 ```json
 {
-    "body": "Replying to [comment:106 jdemeyer]:\n> I am not convinced that the licence issue is resolved.\n> \n>  * cvxopt is a **standard** package in Sage (if that would matter).\n>  * `SPKG.txt` claims the licence to be \"multiple licenses: GPLv2, GPLv3, GNU Lesser General Public License, v2.1\" when in fact it is simply GPLv3+.  It is true that *parts* of cvxopt have different licences, but the package as a whole is GPLv3+.  In any case, this has to be changed in `SPKG.txt`\n> \n> I posted to sage-devel about this.\n\nas I read on sage-devel, it's not a problem, as CVXOPT is not a part of sage-x.y.z.spkg. SPKG.txt merely reflects the CVXOPT's copyright notice, as given here:\nhttp://abel.ee.ucla.edu/cvxopt/copyright.html\nSo we should not change SPKG.txt.",
+    "body": "Replying to [comment:106 jdemeyer]:\n> I am not convinced that the licence issue is resolved.\n> \n> * cvxopt is a **standard** package in Sage (if that would matter).\n> * `SPKG.txt` claims the licence to be \"multiple licenses: GPLv2, GPLv3, GNU Lesser General Public License, v2.1\" when in fact it is simply GPLv3+.  It is true that *parts* of cvxopt have different licences, but the package as a whole is GPLv3+.  In any case, this has to be changed in `SPKG.txt`\n> \n> I posted to sage-devel about this.\n\n\nas I read on sage-devel, it's not a problem, as CVXOPT is not a part of sage-x.y.z.spkg. SPKG.txt merely reflects the CVXOPT's copyright notice, as given here:\nhttp://abel.ee.ucla.edu/cvxopt/copyright.html\nSo we should not change SPKG.txt.",
     "created_at": "2010-11-10T09:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4003,10 +4079,11 @@ archive/issue_comments_052007.json:
 Replying to [comment:106 jdemeyer]:
 > I am not convinced that the licence issue is resolved.
 > 
->  * cvxopt is a **standard** package in Sage (if that would matter).
->  * `SPKG.txt` claims the licence to be "multiple licenses: GPLv2, GPLv3, GNU Lesser General Public License, v2.1" when in fact it is simply GPLv3+.  It is true that *parts* of cvxopt have different licences, but the package as a whole is GPLv3+.  In any case, this has to be changed in `SPKG.txt`
+> * cvxopt is a **standard** package in Sage (if that would matter).
+> * `SPKG.txt` claims the licence to be "multiple licenses: GPLv2, GPLv3, GNU Lesser General Public License, v2.1" when in fact it is simply GPLv3+.  It is true that *parts* of cvxopt have different licences, but the package as a whole is GPLv3+.  In any case, this has to be changed in `SPKG.txt`
 > 
 > I posted to sage-devel about this.
+
 
 as I read on sage-devel, it's not a problem, as CVXOPT is not a part of sage-x.y.z.spkg. SPKG.txt merely reflects the CVXOPT's copyright notice, as given here:
 http://abel.ee.ucla.edu/cvxopt/copyright.html
@@ -4037,7 +4114,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052009.json:
 ```json
 {
-    "body": "I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n\n```\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n```\n\n\nThere is no mention of the other licences which are mentioned in SPKG.txt",
+    "body": "I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n\n```\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n```\n\nThere is no mention of the other licences which are mentioned in SPKG.txt",
     "created_at": "2010-11-10T09:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4051,7 +4128,6 @@ I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly 
 ```
 CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 ```
-
 
 There is no mention of the other licences which are mentioned in SPKG.txt
 
@@ -4080,7 +4156,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052011.json:
 ```json
 {
-    "body": "Replying to [comment:108 jdemeyer]:\n> I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n\n```\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n```\n\n\n\n> \n> There is no mention of the other licences which are mentioned in SPKG.txt\n\nIMHO you're slightly misquoting. The text goes on there, and mentions more licences. Anyway.\n\nWould you agree to the following text in SPKG.txt?\n\n\n```\n## License\nGPLv3 or later. Includes parts under GPLv2, \nGNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n(Sage-compatible)\n```\n",
+    "body": "Replying to [comment:108 jdemeyer]:\n> I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n\n{{{\nCVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n}}}\n\n\n> \n> There is no mention of the other licences which are mentioned in SPKG.txt\n\n\nIMHO you're slightly misquoting. The text goes on there, and mentions more licences. Anyway.\n\nWould you agree to the following text in SPKG.txt?\n\n```\n## License\nGPLv3 or later. Includes parts under GPLv2, \nGNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n(Sage-compatible)\n```",
     "created_at": "2010-11-10T11:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4092,19 +4168,18 @@ archive/issue_comments_052011.json:
 Replying to [comment:108 jdemeyer]:
 > I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page
 
-```
+{{{
 CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-```
-
+}}}
 
 
 > 
 > There is no mention of the other licences which are mentioned in SPKG.txt
 
+
 IMHO you're slightly misquoting. The text goes on there, and mentions more licences. Anyway.
 
 Would you agree to the following text in SPKG.txt?
-
 
 ```
 ## License
@@ -4112,7 +4187,6 @@ GPLv3 or later. Includes parts under GPLv2,
 GNU Lesser General Public License, v2.1. See src/LICENSE for more details.
 (Sage-compatible)
 ```
-
 
 
 
@@ -4139,7 +4213,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_052013.json:
 ```json
 {
-    "body": "Replying to [comment:108 jdemeyer]:\n> I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n> {{{\n> CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n> }}}\n> \n> There is no mention of the other licences which are mentioned in SPKG.txt\n\nAlthough the LICENSE file starts by saying it is GPL3, read further down and you will find:\n\n\n```\nThe CVXOPT distribution includes source code for a subset of the \nSuiteSparse suite of sparse matrix algorithms, including:\n\n- AMD Version 2.2. Copyright (c) 2007 by Timothy A. Davis, Patrick R. \n  Amestoy, and Iain S. Duff.\n- CHOLMOD Version 1.7.1 Copyright (c) 2005-2009 by University of Florida,\n  Timothy A. Davis and W. Hager.\n- COLAMD version 2.7.  Copyright (c) 1998-2007 by Timothy A. Davis.\n- UMFPACK Version 5.4.0. Copyright (c) 1994-2009 by Timothy A. Davis.\n\nThese packages are licensed under the terms of the GNU General Public \nLicense, version 2 or higher (UMFPACK, the Supernodal module of CHOLMOD)\nand the GNU Lesser General Public License, version 2.1 or higher \n(the other CHOLMOD modules, AMD, COLAMD).  For copyright and license \ndetails, consult the README files in the source directories or the website \nlisted below.\n```\n\n\nSo there are multiple licenses.\n\nIIRC, it was me who added those comments, though it might have been another package I'm thinking of. \n\nDave",
+    "body": "Replying to [comment:108 jdemeyer]:\n> I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page\n> \n> ```\n> CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n> ```\n> \n> There is no mention of the other licences which are mentioned in SPKG.txt\n\n\nAlthough the LICENSE file starts by saying it is GPL3, read further down and you will find:\n\n```\nThe CVXOPT distribution includes source code for a subset of the \nSuiteSparse suite of sparse matrix algorithms, including:\n\n- AMD Version 2.2. Copyright (c) 2007 by Timothy A. Davis, Patrick R. \n  Amestoy, and Iain S. Duff.\n- CHOLMOD Version 1.7.1 Copyright (c) 2005-2009 by University of Florida,\n  Timothy A. Davis and W. Hager.\n- COLAMD version 2.7.  Copyright (c) 1998-2007 by Timothy A. Davis.\n- UMFPACK Version 5.4.0. Copyright (c) 1994-2009 by Timothy A. Davis.\n\nThese packages are licensed under the terms of the GNU General Public \nLicense, version 2 or higher (UMFPACK, the Supernodal module of CHOLMOD)\nand the GNU Lesser General Public License, version 2.1 or higher \n(the other CHOLMOD modules, AMD, COLAMD).  For copyright and license \ndetails, consult the README files in the source directories or the website \nlisted below.\n```\n\nSo there are multiple licenses.\n\nIIRC, it was me who added those comments, though it might have been another package I'm thinking of. \n\nDave",
     "created_at": "2010-11-10T11:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4150,14 +4224,15 @@ archive/issue_comments_052013.json:
 
 Replying to [comment:108 jdemeyer]:
 > I disagree that `SPKG.txt` reflects CVXOPT's copyright notice.  It very clearly says on the CVXOPT page
-> {{{
+> 
+> ```
 > CVXOPT is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-> }}}
+> ```
 > 
 > There is no mention of the other licences which are mentioned in SPKG.txt
 
-Although the LICENSE file starts by saying it is GPL3, read further down and you will find:
 
+Although the LICENSE file starts by saying it is GPL3, read further down and you will find:
 
 ```
 The CVXOPT distribution includes source code for a subset of the 
@@ -4177,7 +4252,6 @@ and the GNU Lesser General Public License, version 2.1 or higher
 details, consult the README files in the source directories or the website 
 listed below.
 ```
-
 
 So there are multiple licenses.
 
@@ -4218,7 +4292,7 @@ Dave
 archive/issue_comments_052015.json:
 ```json
 {
-    "body": "Replying to [comment:111 drkirkby]:\n> Yes, it was me who added the comments - see my comments 3 months ago on this ticket. \n> \n> I don't see what the problem is though - Sage includes a lot of code licensed under the GNU Lesser General Public License - e.g. MPIR recently changed to that. Hence my comment this are \"Sage compatible\". Actually, I think someone has changed that, as I doubt I would have started the sentence with a lower case 's', but it's a minor point.  I think the license issue is a *non-issue*. \n> \n> I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n\nThey wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n\nHow about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n\nDima\n\n> \n> I'm more concerned we have made this use GLPK, but to the best of my knowledge, there's not a single doc test showing any example of how to use GLPK, so we have no idea of that functionality works at all.\n> \n> Dave",
+    "body": "Replying to [comment:111 drkirkby]:\n> Yes, it was me who added the comments - see my comments 3 months ago on this ticket. \n> \n> I don't see what the problem is though - Sage includes a lot of code licensed under the GNU Lesser General Public License - e.g. MPIR recently changed to that. Hence my comment this are \"Sage compatible\". Actually, I think someone has changed that, as I doubt I would have started the sentence with a lower case 's', but it's a minor point.  I think the license issue is a *non-issue*. \n> \n> I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n\n\nThey wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n\nHow about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n\nDima\n\n> \n> I'm more concerned we have made this use GLPK, but to the best of my knowledge, there's not a single doc test showing any example of how to use GLPK, so we have no idea of that functionality works at all.\n> \n> Dave",
     "created_at": "2010-11-10T12:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4233,6 +4307,7 @@ Replying to [comment:111 drkirkby]:
 > I don't see what the problem is though - Sage includes a lot of code licensed under the GNU Lesser General Public License - e.g. MPIR recently changed to that. Hence my comment this are "Sage compatible". Actually, I think someone has changed that, as I doubt I would have started the sentence with a lower case 's', but it's a minor point.  I think the license issue is a *non-issue*. 
 > 
 > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. 
+
 
 They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.
 
@@ -4252,7 +4327,7 @@ Dima
 archive/issue_comments_052016.json:
 ```json
 {
-    "body": "Replying to [comment:109 dimpase]:\n> Would you agree to the following text in SPKG.txt?\n> \n> {{{\n> == License ==\n> GPLv3 or later. Includes parts under GPLv2, \n> GNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n> (Sage-compatible)\n> }}}\n\nYes.",
+    "body": "Replying to [comment:109 dimpase]:\n> Would you agree to the following text in SPKG.txt?\n> \n> \n> ```\n> == License ==\n> GPLv3 or later. Includes parts under GPLv2, \n> GNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n> (Sage-compatible)\n> ```\n\n\nYes.",
     "created_at": "2010-11-10T12:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4264,12 +4339,14 @@ archive/issue_comments_052016.json:
 Replying to [comment:109 dimpase]:
 > Would you agree to the following text in SPKG.txt?
 > 
-> {{{
+> 
+> ```
 > == License ==
 > GPLv3 or later. Includes parts under GPLv2, 
 > GNU Lesser General Public License, v2.1. See src/LICENSE for more details.
 > (Sage-compatible)
-> }}}
+> ```
+
 
 Yes.
 
@@ -4298,7 +4375,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_052018.json:
 ```json
 {
-    "body": "Replying to [comment:110 drkirkby]:\n> Although the LICENSE file starts by saying it is GPL3, read further down and you will find:\n> [...]\n> So there are multiple licenses.\n\nWell, it depends what you mean with \"multiple licences\".  It is true that cvxopt **includes** code under GPLv2, LGPL2.1 but the package **as a whole** is licenced as GPLv3.  So as far as Sage is concerned, the licence is GPLv3+ and that's it.",
+    "body": "Replying to [comment:110 drkirkby]:\n> Although the LICENSE file starts by saying it is GPL3, read further down and you will find:\n> [...]\n> So there are multiple licenses.\n\n\nWell, it depends what you mean with \"multiple licences\".  It is true that cvxopt **includes** code under GPLv2, LGPL2.1 but the package **as a whole** is licenced as GPLv3.  So as far as Sage is concerned, the licence is GPLv3+ and that's it.",
     "created_at": "2010-11-10T12:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4311,6 +4388,7 @@ Replying to [comment:110 drkirkby]:
 > Although the LICENSE file starts by saying it is GPL3, read further down and you will find:
 > [...]
 > So there are multiple licenses.
+
 
 Well, it depends what you mean with "multiple licences".  It is true that cvxopt **includes** code under GPLv2, LGPL2.1 but the package **as a whole** is licenced as GPLv3.  So as far as Sage is concerned, the licence is GPLv3+ and that's it.
 
@@ -4339,7 +4417,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052020.json:
 ```json
 {
-    "body": "Replying to [comment:113 jdemeyer]:\n> Replying to [comment:109 dimpase]:\n> > Would you agree to the following text in SPKG.txt?\n> > \n> > {{{\n> > == License ==\n> > GPLv3 or later. Includes parts under GPLv2, \n> > GNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n> > (Sage-compatible)\n> > }}}\n> \n> Yes.\n\nthe updated spkg is here:\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg\n\nonly the licence section of SPKG.txt has been changed.",
+    "body": "Replying to [comment:113 jdemeyer]:\n> Replying to [comment:109 dimpase]:\n> > Would you agree to the following text in SPKG.txt?\n> > \n> > \n> > ```\n> > == License ==\n> > GPLv3 or later. Includes parts under GPLv2, \n> > GNU Lesser General Public License, v2.1. See src/LICENSE for more details.\n> > (Sage-compatible)\n> > ```\n\n> \n> Yes.\n\n\nthe updated spkg is here:\nhttp://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg\n\nonly the licence section of SPKG.txt has been changed.",
     "created_at": "2010-11-10T12:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4352,14 +4430,17 @@ Replying to [comment:113 jdemeyer]:
 > Replying to [comment:109 dimpase]:
 > > Would you agree to the following text in SPKG.txt?
 > > 
-> > {{{
+> > 
+> > ```
 > > == License ==
 > > GPLv3 or later. Includes parts under GPLv2, 
 > > GNU Lesser General Public License, v2.1. See src/LICENSE for more details.
 > > (Sage-compatible)
-> > }}}
+> > ```
+
 > 
 > Yes.
+
 
 the updated spkg is here:
 http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg
@@ -4373,7 +4454,7 @@ only the licence section of SPKG.txt has been changed.
 archive/issue_comments_052021.json:
 ```json
 {
-    "body": "Replying to [comment:112 dimpase]:\n> Replying to [comment:111 drkirkby]:\n> > \n> > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n> \n> They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n\nI've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. \n \n> How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n> \n> Dima\n\nWell, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. \n\nWould it take you long to write a few doctests which show how to use GLPK with CVXOPT? \n\nDave",
+    "body": "Replying to [comment:112 dimpase]:\n> Replying to [comment:111 drkirkby]:\n> > \n> > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n\n> \n> They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n\n\nI've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. \n \n> How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n> \n> Dima\n\n\nWell, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. \n\nWould it take you long to write a few doctests which show how to use GLPK with CVXOPT? \n\nDave",
     "created_at": "2010-11-10T13:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4386,14 +4467,17 @@ Replying to [comment:112 dimpase]:
 > Replying to [comment:111 drkirkby]:
 > > 
 > > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. 
+
 > 
 > They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.
+
 
 I've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. 
  
 > How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....
 > 
 > Dima
+
 
 Well, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. 
 
@@ -4426,7 +4510,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_052023.json:
 ```json
 {
-    "body": "Replying to [comment:116 drkirkby]:\n> Replying to [comment:112 dimpase]:\n> > Replying to [comment:111 drkirkby]:\n> > > \n> > > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n> > \n> > They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n> \n> I've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. \n>  \n> > How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n> > \n> > Dima\n> \n> Well, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. \n> \n> Would it take you long to write a few doctests which show how to use GLPK with CVXOPT? \n\nI had them already written. :-) Please see and test the patch (tested on Debian x64 and on your Sun).\n\nDima\n\n\n> \n> Dave",
+    "body": "Replying to [comment:116 drkirkby]:\n> Replying to [comment:112 dimpase]:\n> > Replying to [comment:111 drkirkby]:\n> > > \n> > > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. \n\n> > \n> > They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.\n\n> \n> I've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. \n>  \n> > How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....\n> > \n> > Dima\n\n> \n> Well, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. \n> \n> Would it take you long to write a few doctests which show how to use GLPK with CVXOPT? \n\n\nI had them already written. :-) Please see and test the patch (tested on Debian x64 and on your Sun).\n\nDima\n\n\n> \n> Dave",
     "created_at": "2010-11-10T14:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4440,18 +4524,22 @@ Replying to [comment:116 drkirkby]:
 > > Replying to [comment:111 drkirkby]:
 > > > 
 > > > I have some recollection that the cvxopt authors were going to incorporate my Solaris patch, so given this has ticket has been changed from using version 1.1.2 to using 1.1.3, I'm puzzled that does not appear to have happened. 
+
 > > 
 > > They wanted to look into it, that's all. I guess this has become even more irrelevant, as I don't even have a machine where to test this patch any more. They are probably in the same position.
+
 > 
 > I've just set up t2.math after Williams screwed it by removing the NFS shares it depends on. I've not announced it yet, since I have not fully built Sage (it's building ATLAS now). But hopefully that situation will not exist any longer. 
 >  
 > > How about we upgrade this now, and then fix remaining issues in TODO in new ticket(s)? I need this stuff, and I am sick and tired of extra manual labour I need to do in order to use this version of cvxopt....
 > > 
 > > Dima
+
 > 
 > Well, personally I don't think testing the **new** functionality should be left to a TODO. There's not a single test of the GLPK working with CVXOPT. We have made changes to allow them to be used together, but not tested that they actually work. I think that's bad practice myself. 
 > 
 > Would it take you long to write a few doctests which show how to use GLPK with CVXOPT? 
+
 
 I had them already written. :-) Please see and test the patch (tested on Debian x64 and on your Sun).
 
@@ -4525,7 +4613,7 @@ Dave
 archive/issue_comments_052026.json:
 ```json
 {
-    "body": "Replying to [comment:118 drkirkby]:\n\n> If I understand this correctly, the default solver gives a result of 6.2499999 and GLPK gives 6.25. These two are very similar, so although I've got no idea what sort of relative error can be expected of the different solvers, intuitively it looks like the two solvers are agreeing with each other. \n\nthese two solvers use rather different algorithms. The default solver uses an interior point method, and GLPK uses a simplex method. The latter is exact, the former is approximate. The exactness of the simplex method is not an absolute given though, as GLPK uses floating points to compute with, essentially, rational data. On this particular example it seems to have enough precision to give the exact answer.\n\n\n> \n> I've got no idea if the answer is right though! Is there any theoretical reason for accepting these answers? Or is the answer accepted just because that what's the computer gives? If it was possible to compute this in another way (perhaps using Mathematica or something like that), or better still a theoretical explanation of why it is right, it would give me personally more confidence. I really dislike numerical results which are not substantiated in any way. \n\n\nThis can be checked using the outputs of the solvers (so called complementary slackness condition). \n\n```\nsage: v=vector([-1.0,-1.0,-1.0])\nsage: m=matrix([[50.0,24.0,0.0],[30.0,33.0,0.0],[-1.0,0.0,0.0],[0.0,-1.0,0.0],[0.0,0.0,1.0],[0.0,0.0,-1.0\n....: ]])\nsage: h=vector([2400.0,2100.0,-45.0,-5.0,1.0,-1.0])\nsage: sol=linear_program(v,m,h,solver='glpk')\nGLPK Simplex Optimizer, v4.44\n6 rows, 3 columns, 8 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  2.400e+01  max|aij| =  5.000e+01  ratio =  2.083e+00\nGM: min|aij| =  8.128e-01  max|aij| =  1.230e+00  ratio =  1.514e+00\nEQ: min|aij| =  6.606e-01  max|aij| =  1.000e+00  ratio =  1.514e+00\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =  -5.100000000e+01  infeas =  0.000e+00 (0)\n*     1: obj =  -5.225000000e+01  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\nsage: sol\n{'status': 'optimal', 's': (-3.8369307731e-13, 543.75, 0.0, 1.25, 0.0, 0.0), 'primal objective': -52.250000000000014, 'y': (), 'x': (45.0, 6.25, 1.0), 'z': (0.0416666666667, -0.0, 1.08333333333, -0.0, 1.0, -0.0)}\nsage: sol['s']*sol['z']\n-1.59872115546e-14\nsage: sol=linear_program(v,m,h)\nsage: sol\n{'status': 'optimal', 's': (1.26732907086e-07, 543.750000521, 1.09482003526e-08, 1.24999997812, 1.89761395929e-09, 2.07552470867e-09), 'primal objective': -52.249999985182768, 'y': (), 'x': (45.000000009, 6.24999997613, 1.00000000009), 'z': (0.0416666686307, 3.3075453137e-11, 1.08333341676, 3.70511110788e-08, 11.1479097616, 10.1479097616)}\nsage: sol['s']*sol['z']\n1.2365642167e-07\n```\n\n(the fact that `sol['s']*sol['z']` is 0.0 (well, with an acceptable error, for both solvers, although the default server could be tuned a bit better) is that complementary slackness condition in action)\n\nBut this is more coding, if done properly.\nIn fact, a function checking these should become a part of the library.\nIn this case, however, I am positive the answers are correct, and I can call myself an expert on this stuff :-)\n\nDima",
+    "body": "Replying to [comment:118 drkirkby]:\n\n> If I understand this correctly, the default solver gives a result of 6.2499999 and GLPK gives 6.25. These two are very similar, so although I've got no idea what sort of relative error can be expected of the different solvers, intuitively it looks like the two solvers are agreeing with each other. \n\n\nthese two solvers use rather different algorithms. The default solver uses an interior point method, and GLPK uses a simplex method. The latter is exact, the former is approximate. The exactness of the simplex method is not an absolute given though, as GLPK uses floating points to compute with, essentially, rational data. On this particular example it seems to have enough precision to give the exact answer.\n\n\n> \n> I've got no idea if the answer is right though! Is there any theoretical reason for accepting these answers? Or is the answer accepted just because that what's the computer gives? If it was possible to compute this in another way (perhaps using Mathematica or something like that), or better still a theoretical explanation of why it is right, it would give me personally more confidence. I really dislike numerical results which are not substantiated in any way. \n\n\n\nThis can be checked using the outputs of the solvers (so called complementary slackness condition). \n\n```\nsage: v=vector([-1.0,-1.0,-1.0])\nsage: m=matrix([[50.0,24.0,0.0],[30.0,33.0,0.0],[-1.0,0.0,0.0],[0.0,-1.0,0.0],[0.0,0.0,1.0],[0.0,0.0,-1.0\n....: ]])\nsage: h=vector([2400.0,2100.0,-45.0,-5.0,1.0,-1.0])\nsage: sol=linear_program(v,m,h,solver='glpk')\nGLPK Simplex Optimizer, v4.44\n6 rows, 3 columns, 8 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  2.400e+01  max|aij| =  5.000e+01  ratio =  2.083e+00\nGM: min|aij| =  8.128e-01  max|aij| =  1.230e+00  ratio =  1.514e+00\nEQ: min|aij| =  6.606e-01  max|aij| =  1.000e+00  ratio =  1.514e+00\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =  -5.100000000e+01  infeas =  0.000e+00 (0)\n*     1: obj =  -5.225000000e+01  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\nsage: sol\n{'status': 'optimal', 's': (-3.8369307731e-13, 543.75, 0.0, 1.25, 0.0, 0.0), 'primal objective': -52.250000000000014, 'y': (), 'x': (45.0, 6.25, 1.0), 'z': (0.0416666666667, -0.0, 1.08333333333, -0.0, 1.0, -0.0)}\nsage: sol['s']*sol['z']\n-1.59872115546e-14\nsage: sol=linear_program(v,m,h)\nsage: sol\n{'status': 'optimal', 's': (1.26732907086e-07, 543.750000521, 1.09482003526e-08, 1.24999997812, 1.89761395929e-09, 2.07552470867e-09), 'primal objective': -52.249999985182768, 'y': (), 'x': (45.000000009, 6.24999997613, 1.00000000009), 'z': (0.0416666686307, 3.3075453137e-11, 1.08333341676, 3.70511110788e-08, 11.1479097616, 10.1479097616)}\nsage: sol['s']*sol['z']\n1.2365642167e-07\n```\n(the fact that `sol['s']*sol['z']` is 0.0 (well, with an acceptable error, for both solvers, although the default server could be tuned a bit better) is that complementary slackness condition in action)\n\nBut this is more coding, if done properly.\nIn fact, a function checking these should become a part of the library.\nIn this case, however, I am positive the answers are correct, and I can call myself an expert on this stuff :-)\n\nDima",
     "created_at": "2010-11-10T18:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4538,11 +4626,13 @@ Replying to [comment:118 drkirkby]:
 
 > If I understand this correctly, the default solver gives a result of 6.2499999 and GLPK gives 6.25. These two are very similar, so although I've got no idea what sort of relative error can be expected of the different solvers, intuitively it looks like the two solvers are agreeing with each other. 
 
+
 these two solvers use rather different algorithms. The default solver uses an interior point method, and GLPK uses a simplex method. The latter is exact, the former is approximate. The exactness of the simplex method is not an absolute given though, as GLPK uses floating points to compute with, essentially, rational data. On this particular example it seems to have enough precision to give the exact answer.
 
 
 > 
 > I've got no idea if the answer is right though! Is there any theoretical reason for accepting these answers? Or is the answer accepted just because that what's the computer gives? If it was possible to compute this in another way (perhaps using Mathematica or something like that), or better still a theoretical explanation of why it is right, it would give me personally more confidence. I really dislike numerical results which are not substantiated in any way. 
+
 
 
 This can be checked using the outputs of the solvers (so called complementary slackness condition). 
@@ -4576,7 +4666,6 @@ sage: sol
 sage: sol['s']*sol['z']
 1.2365642167e-07
 ```
-
 (the fact that `sol['s']*sol['z']` is 0.0 (well, with an acceptable error, for both solvers, although the default server could be tuned a bit better) is that complementary slackness condition in action)
 
 But this is more coding, if done properly.
@@ -4667,7 +4756,7 @@ If this hasn't been tested on OS X 10.4 PPC, I'm glad to do it.  I'll go ahead a
 archive/issue_comments_052030.json:
 ```json
 {
-    "body": "Is there something else that needs to be upgraded with this?  I get the following installing this package on 4.6.alpha0 (not a build from scratch, though):\n\n```\nbuilding 'gsl' extension\ncreating build/temp.macosx-10.4-ppc-2.6\ncreating build/temp.macosx-10.4-ppc-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\ngcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n/usr/bin/ld: can't locate file for: -lcblas\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n\n```\n\nI don't know what this error means - I guess it have something to do with linking.",
+    "body": "Is there something else that needs to be upgraded with this?  I get the following installing this package on 4.6.alpha0 (not a build from scratch, though):\n\n```\nbuilding 'gsl' extension\ncreating build/temp.macosx-10.4-ppc-2.6\ncreating build/temp.macosx-10.4-ppc-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\ngcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n/usr/bin/ld: can't locate file for: -lcblas\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nError building/installing cvxopt\n\n```\nI don't know what this error means - I guess it have something to do with linking.",
     "created_at": "2010-11-11T14:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4690,7 +4779,6 @@ error: command 'gcc' failed with exit status 1
 Error building/installing cvxopt
 
 ```
-
 I don't know what this error means - I guess it have something to do with linking.
 
 
@@ -4700,7 +4788,7 @@ I don't know what this error means - I guess it have something to do with linkin
 archive/issue_comments_052031.json:
 ```json
 {
-    "body": "Replying to [comment:122 kcrisman]:\n> Is there something else that needs to be upgraded with this?  I get the following installing this package on 4.6.alpha0 (not a build from scratch, though):\n> {{{\n> building 'gsl' extension\n> creating build/temp.macosx-10.4-ppc-2.6\n> creating build/temp.macosx-10.4-ppc-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\n> gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n> /usr/bin/ld: can't locate file for: -lcblas\n> collect2: ld returned 1 exit status\n> error: command 'gcc' failed with exit status 1\n> Error building/installing cvxopt\n> \n> }}}\n> I don't know what this error means - I guess it have something to do with linking.  \n\nIt does. There is not SAGE_LOCAL/lib/libcblas* on MacOSX PPC (however linking works for me on MacOSX 10.5 PPC)\nPlease try the new, just updated, spkg. (Both on PPC and on MacOSX x86, if possible).\n\nDima",
+    "body": "Replying to [comment:122 kcrisman]:\n> Is there something else that needs to be upgraded with this?  I get the following installing this package on 4.6.alpha0 (not a build from scratch, though):\n> \n> ```\n> building 'gsl' extension\n> creating build/temp.macosx-10.4-ppc-2.6\n> creating build/temp.macosx-10.4-ppc-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\n> gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n> /usr/bin/ld: can't locate file for: -lcblas\n> collect2: ld returned 1 exit status\n> error: command 'gcc' failed with exit status 1\n> Error building/installing cvxopt\n> \n> ```\n> I don't know what this error means - I guess it have something to do with linking.  \n\n\nIt does. There is not SAGE_LOCAL/lib/libcblas* on MacOSX PPC (however linking works for me on MacOSX 10.5 PPC)\nPlease try the new, just updated, spkg. (Both on PPC and on MacOSX x86, if possible).\n\nDima",
     "created_at": "2010-11-11T15:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4711,7 +4799,8 @@ archive/issue_comments_052031.json:
 
 Replying to [comment:122 kcrisman]:
 > Is there something else that needs to be upgraded with this?  I get the following installing this package on 4.6.alpha0 (not a build from scratch, though):
-> {{{
+> 
+> ```
 > building 'gsl' extension
 > creating build/temp.macosx-10.4-ppc-2.6
 > creating build/temp.macosx-10.4-ppc-2.6/C
@@ -4722,8 +4811,9 @@ Replying to [comment:122 kcrisman]:
 > error: command 'gcc' failed with exit status 1
 > Error building/installing cvxopt
 > 
-> }}}
+> ```
 > I don't know what this error means - I guess it have something to do with linking.  
+
 
 It does. There is not SAGE_LOCAL/lib/libcblas* on MacOSX PPC (however linking works for me on MacOSX 10.5 PPC)
 Please try the new, just updated, spkg. (Both on PPC and on MacOSX x86, if possible).
@@ -4737,7 +4827,7 @@ Dima
 archive/issue_comments_052032.json:
 ```json
 {
-    "body": "On the 10.4 PPC:\n\n```\nbuilding 'gsl' extension\ncreating build/temp.macosx-10.4-ppc-2.6\ncreating build/temp.macosx-10.4-ppc-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\ngcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n/usr/bin/ld: can't locate file for: -latlas\ncollect2: ld returned 1 exit status\n```\n\nI have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?\n\nI don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don't have time to check this, but I assume you're also keeping track of these on the SPKG.txt and diffs :)",
+    "body": "On the 10.4 PPC:\n\n```\nbuilding 'gsl' extension\ncreating build/temp.macosx-10.4-ppc-2.6\ncreating build/temp.macosx-10.4-ppc-2.6/C\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\ngcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n/usr/bin/ld: can't locate file for: -latlas\ncollect2: ld returned 1 exit status\n```\nI have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?\n\nI don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don't have time to check this, but I assume you're also keeping track of these on the SPKG.txt and diffs :)",
     "created_at": "2010-11-11T15:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4757,7 +4847,6 @@ gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_looku
 /usr/bin/ld: can't locate file for: -latlas
 collect2: ld returned 1 exit status
 ```
-
 I have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?
 
 I don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don't have time to check this, but I assume you're also keeping track of these on the SPKG.txt and diffs :)
@@ -4769,7 +4858,7 @@ I don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don'
 archive/issue_comments_052033.json:
 ```json
 {
-    "body": "Replying to [comment:125 kcrisman]:\n> On the 10.4 PPC:\n> {{{\n> building 'gsl' extension\n> creating build/temp.macosx-10.4-ppc-2.6\n> creating build/temp.macosx-10.4-ppc-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\n> gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n> /usr/bin/ld: can't locate file for: -latlas\n> collect2: ld returned 1 exit status\n> }}}\n\n> I have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?\n\nno, they don't exist on MacOSX PPC! I don't know about MacOSX Intel, as I don't have such a machine yet.\nMoreover, on my 10.5 PPC linker is not bothered by nonexistence of these libraries.\nSo this is an artefact of old hard- and soft-ware. What a bloody mess...\nCould you tell me the result of the following on your 10.4:\n\n```\n$ sage -python\n>>> import os\n>>> os.uname()\n```\n\nso that  I can code this into setup.py of the package...\n\nDima\n\n\n\n> \n> I don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don't have time to check this, but I assume you're also keeping track of these on the SPKG.txt and diffs :)",
+    "body": "Replying to [comment:125 kcrisman]:\n> On the 10.4 PPC:\n> \n> ```\n> building 'gsl' extension\n> creating build/temp.macosx-10.4-ppc-2.6\n> creating build/temp.macosx-10.4-ppc-2.6/C\n> gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include -I/Users/student/Desktop/sage-4.6/local/include/python2.6 -c C/gsl.c -o build/temp.macosx-10.4-ppc-2.6/C/gsl.o\n> gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so\n> /usr/bin/ld: can't locate file for: -latlas\n> collect2: ld returned 1 exit status\n> ```\n\n\n> I have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?\n\n\nno, they don't exist on MacOSX PPC! I don't know about MacOSX Intel, as I don't have such a machine yet.\nMoreover, on my 10.5 PPC linker is not bothered by nonexistence of these libraries.\nSo this is an artefact of old hard- and soft-ware. What a bloody mess...\nCould you tell me the result of the following on your 10.4:\n\n```\n$ sage -python\n>>> import os\n>>> os.uname()\n```\nso that  I can code this into setup.py of the package...\n\nDima\n\n\n\n> \n> I don't have 10.4 Intel, but I can try it on 10.6 Intel once this works.  I don't have time to check this, but I assume you're also keeping track of these on the SPKG.txt and diffs :)",
     "created_at": "2010-11-11T15:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4780,7 +4869,8 @@ archive/issue_comments_052033.json:
 
 Replying to [comment:125 kcrisman]:
 > On the 10.4 PPC:
-> {{{
+> 
+> ```
 > building 'gsl' extension
 > creating build/temp.macosx-10.4-ppc-2.6
 > creating build/temp.macosx-10.4-ppc-2.6/C
@@ -4788,9 +4878,11 @@ Replying to [comment:125 kcrisman]:
 > gcc -L/Users/student/Desktop/sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-ppc-2.6/C/gsl.o -L/Users/student/Desktop/sage-4.6/local/lib -lm -llapack -lgsl -lgslcblas -lblas -latlas -lgsl -o build/lib.macosx-10.4-ppc-2.6/cvxopt/gsl.so
 > /usr/bin/ld: can't locate file for: -latlas
 > collect2: ld returned 1 exit status
-> }}}
+> ```
+
 
 > I have a feeling there are a few things that it won't be finding :) but of course these libraries exist, right?
+
 
 no, they don't exist on MacOSX PPC! I don't know about MacOSX Intel, as I don't have such a machine yet.
 Moreover, on my 10.5 PPC linker is not bothered by nonexistence of these libraries.
@@ -4802,7 +4894,6 @@ $ sage -python
 >>> import os
 >>> os.uname()
 ```
-
 so that  I can code this into setup.py of the package...
 
 Dima
@@ -4819,7 +4910,7 @@ Dima
 archive/issue_comments_052034.json:
 ```json
 {
-    "body": "You might want to look at the ticket #8664 for upgrading MPIR for some discussion of this - I think you've been involved on that ticket as well.\n\n```\nDasher-03:~/Desktop/sage-4.6 student$ uname -m\nPower Macintosh\nDasher-03:~/Desktop/sage-4.6 student$ uname -a\nDarwin Dasher-03.local 8.11.0 Darwin Kernel Version 8.11.0: Wed Oct 10 18:26:00 PDT 2007; root:xnu-792.24.17~1/RELEASE_PPC Power Macintosh powerpc\n```\n\nand what you expected on sage-devel under Python.",
+    "body": "You might want to look at the ticket #8664 for upgrading MPIR for some discussion of this - I think you've been involved on that ticket as well.\n\n```\nDasher-03:~/Desktop/sage-4.6 student$ uname -m\nPower Macintosh\nDasher-03:~/Desktop/sage-4.6 student$ uname -a\nDarwin Dasher-03.local 8.11.0 Darwin Kernel Version 8.11.0: Wed Oct 10 18:26:00 PDT 2007; root:xnu-792.24.17~1/RELEASE_PPC Power Macintosh powerpc\n```\nand what you expected on sage-devel under Python.",
     "created_at": "2010-11-11T16:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4836,7 +4927,6 @@ Power Macintosh
 Dasher-03:~/Desktop/sage-4.6 student$ uname -a
 Darwin Dasher-03.local 8.11.0 Darwin Kernel Version 8.11.0: Wed Oct 10 18:26:00 PDT 2007; root:xnu-792.24.17~1/RELEASE_PPC Power Macintosh powerpc
 ```
-
 and what you expected on sage-devel under Python.
 
 
@@ -4846,7 +4936,7 @@ and what you expected on sage-devel under Python.
 archive/issue_comments_052035.json:
 ```json
 {
-    "body": "By the way, of \n\n```\n-lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl\n```\n\nif they should all be in `$SAGE_LOCAL/lib`, then I have \n\n```\nliblapack.a\nlibgsl.a       \nlibgsl.dylib   \nlibgsl.la      \nlibgslcblas.a\nlibgslcblas.dylib\nlibgslcblas.la\nlibblas.a     \n```\n\nMaybe that helps.  Where does libcblas come from in other systems?  It's not a Sage package, and the BLAS spkg-install only installs libblas.a, as far as I can tell.",
+    "body": "By the way, of \n\n```\n-lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl\n```\nif they should all be in `$SAGE_LOCAL/lib`, then I have \n\n```\nliblapack.a\nlibgsl.a       \nlibgsl.dylib   \nlibgsl.la      \nlibgslcblas.a\nlibgslcblas.dylib\nlibgslcblas.la\nlibblas.a     \n```\nMaybe that helps.  Where does libcblas come from in other systems?  It's not a Sage package, and the BLAS spkg-install only installs libblas.a, as far as I can tell.",
     "created_at": "2010-11-11T16:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4860,7 +4950,6 @@ By the way, of
 ```
 -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl
 ```
-
 if they should all be in `$SAGE_LOCAL/lib`, then I have 
 
 ```
@@ -4873,7 +4962,6 @@ libgslcblas.dylib
 libgslcblas.la
 libblas.a     
 ```
-
 Maybe that helps.  Where does libcblas come from in other systems?  It's not a Sage package, and the BLAS spkg-install only installs libblas.a, as far as I can tell.
 
 
@@ -4901,7 +4989,7 @@ I believe libcblas comes from ATLAS which we do not install on OS X.  I had refe
 archive/issue_comments_052037.json:
 ```json
 {
-    "body": "Replying to [comment:128 kcrisman]:\n> By the way, of \n> {{{\n> -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl\n> }}}\nif they should all be in `$SAGE_LOCAL/lib`, then I have \n\n```\n liblapack.a\n libgsl.a       \n libgsl.dylib   \n libgsl.la      \n libgslcblas.a\n libgslcblas.dylib\n libgslcblas.la\n libblas.a     \n }}}\n\nsure, I have the same.\n\n> Maybe that helps.  Where does libcblas come from in other systems?  It's not a Sage package, and the BLAS spkg-install only installs libblas.a, as far as I can tell.\n\nOn my machine I have, surely coming from Xcode (part of Accelerate framework, formerly altVec...): \n{{{\n$ ls -l /usr/lib/*cblas*\nlrwxr-xr-x 1 root wheel 112 Apr 12  1976 /usr/lib/libcblas.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib\n$ ls -l /usr/lib/*atlas*\nlrwxr-xr-x 1 root wheel 112 Apr 12  1976 /usr/lib/libatlas.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib\n$ ls -l /usr/lib/*lapack*\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/libclapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/libf77lapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/liblapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\n}}}\nThese are platform-optimised libraries, that should be used on MacOSX.\nSo your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\n\nDo you have anything like this in /usr/lib ?\n\nBut anyway, one just have to link against the native libraries.\nWhat does your gcc -v say? In my case:\n{{{\n$ gcc -v\nUsing built-in specs.\nTarget: powerpc-apple-darwin9\nConfigured with: /var/tmp/gcc_42/gcc_42-5577~1/src/configure --disable-checking --prefix=/usr --mandir=/usr/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin9 --with-gxx-include-dir=/usr/include/c++/4.0.0 --program-prefix= --host=powerpc-apple-darwin9 --target=powerpc-apple-darwin9\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5577)\n}}}\nSo you see with-slibdir=/usr/lib there, so this must mean that it picks up these libcblas, etc, there.",
+    "body": "Replying to [comment:128 kcrisman]:\n> By the way, of \n> \n> ```\n> -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl\n> ```\n\nif they should all be in `$SAGE_LOCAL/lib`, then I have \n\n```\n liblapack.a\n libgsl.a       \n libgsl.dylib   \n libgsl.la      \n libgslcblas.a\n libgslcblas.dylib\n libgslcblas.la\n libblas.a     \n }}}\n\nsure, I have the same.\n\n> Maybe that helps.  Where does libcblas come from in other systems?  It's not a Sage package, and the BLAS spkg-install only installs libblas.a, as far as I can tell.\n\nOn my machine I have, surely coming from Xcode (part of Accelerate framework, formerly altVec...): \n{{{\n$ ls -l /usr/lib/*cblas*\nlrwxr-xr-x 1 root wheel 112 Apr 12  1976 /usr/lib/libcblas.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib\n$ ls -l /usr/lib/*atlas*\nlrwxr-xr-x 1 root wheel 112 Apr 12  1976 /usr/lib/libatlas.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib\n$ ls -l /usr/lib/*lapack*\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/libclapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/libf77lapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\nlrwxr-xr-x 1 root wheel 114 Apr 12  1976 /usr/lib/liblapack.dylib -> ../..//System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib\n}}}\nThese are platform-optimised libraries, that should be used on MacOSX.\nSo your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\n\nDo you have anything like this in /usr/lib ?\n\nBut anyway, one just have to link against the native libraries.\nWhat does your gcc -v say? In my case:\n{{{\n$ gcc -v\nUsing built-in specs.\nTarget: powerpc-apple-darwin9\nConfigured with: /var/tmp/gcc_42/gcc_42-5577~1/src/configure --disable-checking --prefix=/usr --mandir=/usr/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin9 --with-gxx-include-dir=/usr/include/c++/4.0.0 --program-prefix= --host=powerpc-apple-darwin9 --target=powerpc-apple-darwin9\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5577)\n}}}\nSo you see with-slibdir=/usr/lib there, so this must mean that it picks up these libcblas, etc, there.",
     "created_at": "2010-11-11T17:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4912,9 +5000,11 @@ archive/issue_comments_052037.json:
 
 Replying to [comment:128 kcrisman]:
 > By the way, of 
-> {{{
+> 
+> ```
 > -lm -llapack -lgsl -lgslcblas -lblas -lcblas -latlas -lgsl
-> }}}
+> ```
+
 if they should all be in `$SAGE_LOCAL/lib`, then I have 
 
 ```
@@ -4967,7 +5057,7 @@ So you see with-slibdir=/usr/lib there, so this must mean that it picks up these
 archive/issue_comments_052038.json:
 ```json
 {
-    "body": "> These are platform-optimised libraries, that should be used on MacOSX.\nYes.  Well, not the lapack, which we don't.\n> So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\nYes.\n\n> \n> Do you have anything like this in /usr/lib ?\n> \n> But anyway, one just have to link against the native libraries.\n> What does your gcc -v say? In my case:\nSame.\n\nHere are some things I get:\n\n```\nDasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/\nHeaders          libBLAS.dylib    libvDSP.dylib    vecLib\nResources        libLAPACK.dylib  libvMisc.dylib   \nDasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/Headers/\ncblas.h                 vBigNum.h               vecLib.h\nclapack.h               vDSP.h                  vecLibTypes.h\nvBLAS.h                 vDSP_translate.h        vectorOps.h\nvBasicOps.h             vForce.h                vfp.h\nDasher-03:~ student$ ls -l /usr/lib/*atlas*ls: /usr/lib/*atlas*: No such file or directory\nDasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or directory\n```\n",
+    "body": "> These are platform-optimised libraries, that should be used on MacOSX.\nYes.  Well, not the lapack, which we don't.\n> So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\n\nYes.\n\n> \n> Do you have anything like this in /usr/lib ?\n> \n> But anyway, one just have to link against the native libraries.\n> What does your gcc -v say? In my case:\n\nSame.\n\nHere are some things I get:\n\n```\nDasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/\nHeaders          libBLAS.dylib    libvDSP.dylib    vecLib\nResources        libLAPACK.dylib  libvMisc.dylib   \nDasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/Headers/\ncblas.h                 vBigNum.h               vecLib.h\nclapack.h               vDSP.h                  vecLibTypes.h\nvBLAS.h                 vDSP_translate.h        vectorOps.h\nvBasicOps.h             vForce.h                vfp.h\nDasher-03:~ student$ ls -l /usr/lib/*atlas*ls: /usr/lib/*atlas*: No such file or directory\nDasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or directory\n```",
     "created_at": "2010-11-11T17:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -4979,6 +5069,7 @@ archive/issue_comments_052038.json:
 > These are platform-optimised libraries, that should be used on MacOSX.
 Yes.  Well, not the lapack, which we don't.
 > So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.
+
 Yes.
 
 > 
@@ -4986,6 +5077,7 @@ Yes.
 > 
 > But anyway, one just have to link against the native libraries.
 > What does your gcc -v say? In my case:
+
 Same.
 
 Here are some things I get:
@@ -5005,13 +5097,12 @@ Dasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or
 
 
 
-
 ---
 
 archive/issue_comments_052039.json:
 ```json
 {
-    "body": "Replying to [comment:131 kcrisman]:\n> \n> > These are platform-optimised libraries, that should be used on MacOSX.\n> Yes.  Well, not the lapack, which we don't.\n> > So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\n> Yes.\n> \n> > \n> > Do you have anything like this in /usr/lib ?\n> > \n> > But anyway, one just have to link against the native libraries.\n> > What does your gcc -v say? In my case:\n> Same.\n> \n> Here are some things I get:\n> {{{\n> Dasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/\n> Headers          libBLAS.dylib    libvDSP.dylib    vecLib\n> Resources        libLAPACK.dylib  libvMisc.dylib   \n> Dasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/Headers/\n> cblas.h                 vBigNum.h               vecLib.h\n> clapack.h               vDSP.h                  vecLibTypes.h\n> vBLAS.h                 vDSP_translate.h        vectorOps.h\n> vBasicOps.h             vForce.h                vfp.h\n> Dasher-03:~ student$ ls -l /usr/lib/*atlas*ls: /usr/lib/*atlas*: No such file or directory\n> Dasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or directory\n> }}}\n\nI also removed atlas from the list of libraries to be linked on Darwin, and uploaded the updated spkg. Please test on OSX, both PPC and Intel. Thanks!\n\nDima",
+    "body": "Replying to [comment:131 kcrisman]:\n> \n> > These are platform-optimised libraries, that should be used on MacOSX.\n\n> Yes.  Well, not the lapack, which we don't.\n> > So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.\n\n> Yes.\n> \n> > \n> > Do you have anything like this in /usr/lib ?\n> > \n> > But anyway, one just have to link against the native libraries.\n> > What does your gcc -v say? In my case:\n\n> Same.\n> \n> Here are some things I get:\n> \n> ```\n> Dasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/\n> Headers          libBLAS.dylib    libvDSP.dylib    vecLib\n> Resources        libLAPACK.dylib  libvMisc.dylib   \n> Dasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/Headers/\n> cblas.h                 vBigNum.h               vecLib.h\n> clapack.h               vDSP.h                  vecLibTypes.h\n> vBLAS.h                 vDSP_translate.h        vectorOps.h\n> vBasicOps.h             vForce.h                vfp.h\n> Dasher-03:~ student$ ls -l /usr/lib/*atlas*ls: /usr/lib/*atlas*: No such file or directory\n> Dasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or directory\n> ```\n\n\nI also removed atlas from the list of libraries to be linked on Darwin, and uploaded the updated spkg. Please test on OSX, both PPC and Intel. Thanks!\n\nDima",
     "created_at": "2010-11-11T17:36:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5023,8 +5114,10 @@ archive/issue_comments_052039.json:
 Replying to [comment:131 kcrisman]:
 > 
 > > These are platform-optimised libraries, that should be used on MacOSX.
+
 > Yes.  Well, not the lapack, which we don't.
 > > So your linker trouble seems to be a sign of Xcode not being properly installed, or that your Xcode is much older than mine, and the directories layout has changed.
+
 > Yes.
 > 
 > > 
@@ -5032,10 +5125,12 @@ Replying to [comment:131 kcrisman]:
 > > 
 > > But anyway, one just have to link against the native libraries.
 > > What does your gcc -v say? In my case:
+
 > Same.
 > 
 > Here are some things I get:
-> {{{
+> 
+> ```
 > Dasher-03:~ student$ ls /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/
 > Headers          libBLAS.dylib    libvDSP.dylib    vecLib
 > Resources        libLAPACK.dylib  libvMisc.dylib   
@@ -5046,7 +5141,8 @@ Replying to [comment:131 kcrisman]:
 > vBasicOps.h             vForce.h                vfp.h
 > Dasher-03:~ student$ ls -l /usr/lib/*atlas*ls: /usr/lib/*atlas*: No such file or directory
 > Dasher-03:~ student$ ls -l /usr/lib/*cblas*ls: /usr/lib/*cblas*: No such file or directory
-> }}}
+> ```
+
 
 I also removed atlas from the list of libraries to be linked on Darwin, and uploaded the updated spkg. Please test on OSX, both PPC and Intel. Thanks!
 
@@ -5077,7 +5173,7 @@ Can we also remove gslcblas which is quite slow?
 archive/issue_comments_052041.json:
 ```json
 {
-    "body": "Replying to [comment:133 mhansen]:\n> Can we also remove gslcblas which is quite slow?\nWould that be a different ticket? I'm confused.\n\n`@`dima - testing!  It already made it past the first few extensions, so that's a good sign.",
+    "body": "Replying to [comment:133 mhansen]:\n> Can we also remove gslcblas which is quite slow?\n\nWould that be a different ticket? I'm confused.\n\n`@`dima - testing!  It already made it past the first few extensions, so that's a good sign.",
     "created_at": "2010-11-11T17:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5088,6 +5184,7 @@ archive/issue_comments_052041.json:
 
 Replying to [comment:133 mhansen]:
 > Can we also remove gslcblas which is quite slow?
+
 Would that be a different ticket? I'm confused.
 
 `@`dima - testing!  It already made it past the first few extensions, so that's a good sign.
@@ -5099,7 +5196,7 @@ Would that be a different ticket? I'm confused.
 archive/issue_comments_052042.json:
 ```json
 {
-    "body": "Replying to [comment:134 kcrisman]:\n> Replying to [comment:133 mhansen]:\n> > Can we also remove gslcblas which is quite slow?\n> Would that be a different ticket? I'm confused.\n\nI mean make it so that CVXOPT never tries to link against it.",
+    "body": "Replying to [comment:134 kcrisman]:\n> Replying to [comment:133 mhansen]:\n> > Can we also remove gslcblas which is quite slow?\n\n> Would that be a different ticket? I'm confused.\n\nI mean make it so that CVXOPT never tries to link against it.",
     "created_at": "2010-11-11T17:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5111,6 +5208,7 @@ archive/issue_comments_052042.json:
 Replying to [comment:134 kcrisman]:
 > Replying to [comment:133 mhansen]:
 > > Can we also remove gslcblas which is quite slow?
+
 > Would that be a different ticket? I'm confused.
 
 I mean make it so that CVXOPT never tries to link against it.
@@ -5122,7 +5220,7 @@ I mean make it so that CVXOPT never tries to link against it.
 archive/issue_comments_052043.json:
 ```json
 {
-    "body": "Replying to [comment:135 mhansen]:\n> Replying to [comment:134 kcrisman]:\n> > Replying to [comment:133 mhansen]:\n> > > Can we also remove gslcblas which is quite slow?\n> > Would that be a different ticket? I'm confused.\n> \n> I mean make it so that CVXOPT never tries to link against it.\nOkay, as in your earlier comment.",
+    "body": "Replying to [comment:135 mhansen]:\n> Replying to [comment:134 kcrisman]:\n> > Replying to [comment:133 mhansen]:\n> > > Can we also remove gslcblas which is quite slow?\n\n> > Would that be a different ticket? I'm confused.\n> \n> I mean make it so that CVXOPT never tries to link against it.\n\nOkay, as in your earlier comment.",
     "created_at": "2010-11-11T18:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5135,9 +5233,11 @@ Replying to [comment:135 mhansen]:
 > Replying to [comment:134 kcrisman]:
 > > Replying to [comment:133 mhansen]:
 > > > Can we also remove gslcblas which is quite slow?
+
 > > Would that be a different ticket? I'm confused.
 > 
 > I mean make it so that CVXOPT never tries to link against it.
+
 Okay, as in your earlier comment.
 
 
@@ -5147,7 +5247,7 @@ Okay, as in your earlier comment.
 archive/issue_comments_052044.json:
 ```json
 {
-    "body": "I tested sage/numerical/ and got only a couple failures, but they look ominous - all of this type, where it can't find a symbol with g95.  Which is weird, because of course I used G95 to compile this Sage.\n\n```\nsage -t  \"devel/sage/sage/numerical/optimize.py\"            \n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.6/devel/sage/sage/numerical/optimize.py\", line 468:\n    sage: sol=linear_program(c,G,h)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        sol=linear_program(c,G,h)###line 468:\n    sage: sol=linear_program(c,G,h)\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/sage/numerical/optimize.py\", line 485, in linear_program\n        from cvxopt.base import matrix as m\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/__init__.py\", line 31, in <module>\n        import base\n    ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so, 2): Symbol not found: __g95_stop_blank\n      Referenced from: /Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.6/devel/sage/sage/numerical/test.py\", line 4:\n    sage: from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    sage: from cvxopt.base import *\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/__init__.py\", line 31, in <module>\n        import base\n    ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so, 2): Symbol not found: __g95_st_write_done\n      Referenced from: /Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n```\n",
+    "body": "I tested sage/numerical/ and got only a couple failures, but they look ominous - all of this type, where it can't find a symbol with g95.  Which is weird, because of course I used G95 to compile this Sage.\n\n```\nsage -t  \"devel/sage/sage/numerical/optimize.py\"            \n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.6/devel/sage/sage/numerical/optimize.py\", line 468:\n    sage: sol=linear_program(c,G,h)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        sol=linear_program(c,G,h)###line 468:\n    sage: sol=linear_program(c,G,h)\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/sage/numerical/optimize.py\", line 485, in linear_program\n        from cvxopt.base import matrix as m\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/__init__.py\", line 31, in <module>\n        import base\n    ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so, 2): Symbol not found: __g95_stop_blank\n      Referenced from: /Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n**********************************************************************\nFile \"/Users/student/Desktop/sage-4.6/devel/sage/sage/numerical/test.py\", line 4:\n    sage: from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    sage: from cvxopt.base import *\n      File \"/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/__init__.py\", line 31, in <module>\n        import base\n    ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so, 2): Symbol not found: __g95_st_write_done\n      Referenced from: /Users/student/Desktop/sage-4.6/local/lib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n```",
     "created_at": "2010-11-11T18:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5205,13 +5305,12 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_052045.json:
 ```json
 {
-    "body": "Replying to [comment:137 kcrisman]:\n> I tested sage/numerical/ and got only a couple failures, but they look ominous - all of this type, where it can't find a symbol with g95.  Which is weird, because of course I used G95 to compile this Sage.\n\nwell, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n(it worked for me, also with g95...)\nThis should be fixed in  just uploaded update of  the spkg.\nCould you please test it?\n\n(also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)",
+    "body": "Replying to [comment:137 kcrisman]:\n> I tested sage/numerical/ and got only a couple failures, but they look ominous - all of this type, where it can't find a symbol with g95.  Which is weird, because of course I used G95 to compile this Sage.\n\n\nwell, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n(it worked for me, also with g95...)\nThis should be fixed in  just uploaded update of  the spkg.\nCould you please test it?\n\n(also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)",
     "created_at": "2010-11-12T06:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5222,6 +5321,7 @@ archive/issue_comments_052045.json:
 
 Replying to [comment:137 kcrisman]:
 > I tested sage/numerical/ and got only a couple failures, but they look ominous - all of this type, where it can't find a symbol with g95.  Which is weird, because of course I used G95 to compile this Sage.
+
 
 well, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a
 (it worked for me, also with g95...)
@@ -5237,7 +5337,7 @@ Could you please test it?
 archive/issue_comments_052046.json:
 ```json
 {
-    "body": "Replying to [comment:133 mhansen]:\n> Can we also remove gslcblas which is quite slow?\n\nremoved in the update. Please test...",
+    "body": "Replying to [comment:133 mhansen]:\n> Can we also remove gslcblas which is quite slow?\n\n\nremoved in the update. Please test...",
     "created_at": "2010-11-12T06:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5249,6 +5349,7 @@ archive/issue_comments_052046.json:
 Replying to [comment:133 mhansen]:
 > Can we also remove gslcblas which is quite slow?
 
+
 removed in the update. Please test...
 
 
@@ -5258,7 +5359,7 @@ removed in the update. Please test...
 archive/issue_comments_052047.json:
 ```json
 {
-    "body": "Replying to [comment:118 drkirkby]:\n\n\n\n> \n> Another concern I have is that the doctest might not be too good across multiple platforms. It would never surprise me, if on another CPU, the GLPK solver gave something like 6.2499999 instead of 6.25. Making the doctest accept any value starting with 6.2 would be silly, as that could allow huge errors to pass. But I don't know how best to handle this. This seems a weakness in the way we doctest. Assuming the real answer is 6.25, we really want something that will accept any x such that abs(x-6.25) < 1e-6 or something like that. \n> \n> I don't know what this does on SPARC ('mark' or 'mark2' on skynet), but I'd not be too surprised if the answers came out slightly differently. My Sun you tested on is not a SPARC processor, but an Intel Xeon. \n\nJust tested on t2, on Sage 4.6, with SAGE_CHECK=yes, and the tests in sage/numerical/optimize.py, all works.\n(Actually, it already worked on PPC, which is also not an 80-bit floating point, but only 64...)\n\nNow waiting for OSX 10.4 results, and hopefully MacOSX Intel, too.\n\nDima",
+    "body": "Replying to [comment:118 drkirkby]:\n\n\n\n> \n> Another concern I have is that the doctest might not be too good across multiple platforms. It would never surprise me, if on another CPU, the GLPK solver gave something like 6.2499999 instead of 6.25. Making the doctest accept any value starting with 6.2 would be silly, as that could allow huge errors to pass. But I don't know how best to handle this. This seems a weakness in the way we doctest. Assuming the real answer is 6.25, we really want something that will accept any x such that abs(x-6.25) < 1e-6 or something like that. \n> \n> I don't know what this does on SPARC ('mark' or 'mark2' on skynet), but I'd not be too surprised if the answers came out slightly differently. My Sun you tested on is not a SPARC processor, but an Intel Xeon. \n\n\nJust tested on t2, on Sage 4.6, with SAGE_CHECK=yes, and the tests in sage/numerical/optimize.py, all works.\n(Actually, it already worked on PPC, which is also not an 80-bit floating point, but only 64...)\n\nNow waiting for OSX 10.4 results, and hopefully MacOSX Intel, too.\n\nDima",
     "created_at": "2010-11-12T09:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5276,6 +5377,7 @@ Replying to [comment:118 drkirkby]:
 > 
 > I don't know what this does on SPARC ('mark' or 'mark2' on skynet), but I'd not be too surprised if the answers came out slightly differently. My Sun you tested on is not a SPARC processor, but an Intel Xeon. 
 
+
 Just tested on t2, on Sage 4.6, with SAGE_CHECK=yes, and the tests in sage/numerical/optimize.py, all works.
 (Actually, it already worked on PPC, which is also not an 80-bit floating point, but only 64...)
 
@@ -5290,7 +5392,7 @@ Dima
 archive/issue_comments_052048.json:
 ```json
 {
-    "body": "> well, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n> (it worked for me, also with g95...)\n> This should be fixed in  just uploaded update of  the spkg.\n> Could you please test it?\nBuilds.\n> (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)\nWith `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:\n\n```\nError: /Users/student/Desktop/sage-4.6/local/bin/python l2ac.py failed\nTesting  robls.py ...\nTraceback (most recent call last):\n  File \"robls.py\", line 5, in <module>\n    from cvxopt import solvers, blas, lapack\n  File \"/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/__init__.py\", line 31, in <module>\n    import base\nImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/base.so, 2): Symbol not found: _cblas_zhemm\n  Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib\n  Expected in: dynamic lookup\n```\n\nAll of these ask about `_cblas_zhemm`.\n\nTesting sage/numerical gives me all tests passed, though.\n\nIs there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.",
+    "body": "> well, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n> (it worked for me, also with g95...)\n> This should be fixed in  just uploaded update of  the spkg.\n> Could you please test it?\n\nBuilds.\n> (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)\n\nWith `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:\n\n```\nError: /Users/student/Desktop/sage-4.6/local/bin/python l2ac.py failed\nTesting  robls.py ...\nTraceback (most recent call last):\n  File \"robls.py\", line 5, in <module>\n    from cvxopt import solvers, blas, lapack\n  File \"/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/__init__.py\", line 31, in <module>\n    import base\nImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/base.so, 2): Symbol not found: _cblas_zhemm\n  Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib\n  Expected in: dynamic lookup\n```\nAll of these ask about `_cblas_zhemm`.\n\nTesting sage/numerical gives me all tests passed, though.\n\nIs there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.",
     "created_at": "2010-11-12T15:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5303,8 +5405,10 @@ archive/issue_comments_052048.json:
 > (it worked for me, also with g95...)
 > This should be fixed in  just uploaded update of  the spkg.
 > Could you please test it?
+
 Builds.
 > (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)
+
 With `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:
 
 ```
@@ -5319,7 +5423,6 @@ ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-pac
   Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib
   Expected in: dynamic lookup
 ```
-
 All of these ask about `_cblas_zhemm`.
 
 Testing sage/numerical gives me all tests passed, though.
@@ -5333,7 +5436,7 @@ Is there any other part of Sage which would conceivably depend on these changes 
 archive/issue_comments_052049.json:
 ```json
 {
-    "body": "I can't test it on OS X 10.6 Intel because I have upgraded in place so much and get things like\n\n```\ngcc -L/Users/.../sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.6-i386-2.6/C/gsl.o -L/Users/.../sage-4.6.1.alpha0/local/lib\n```\n\nwith an error that they can't find the sage-4.6 folder - which makes sense, because it's not there.  So someone else might have to test this.  \n\nJust to put this down, the previous cvxopt didn't have an spkg-check, I guess, because I reinstalled that and it successfully reinstalled (on the PPC machine).   Hopefully this issue is really easy to fix; it would be a shame to upgrade cvxopt without it passing its new check, though on the balance it sounds like having this ancient of cvxopt is tantamount to being even worse than that.",
+    "body": "I can't test it on OS X 10.6 Intel because I have upgraded in place so much and get things like\n\n```\ngcc -L/Users/.../sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.6-i386-2.6/C/gsl.o -L/Users/.../sage-4.6.1.alpha0/local/lib\n```\nwith an error that they can't find the sage-4.6 folder - which makes sense, because it's not there.  So someone else might have to test this.  \n\nJust to put this down, the previous cvxopt didn't have an spkg-check, I guess, because I reinstalled that and it successfully reinstalled (on the PPC machine).   Hopefully this issue is really easy to fix; it would be a shame to upgrade cvxopt without it passing its new check, though on the balance it sounds like having this ancient of cvxopt is tantamount to being even worse than that.",
     "created_at": "2010-11-12T16:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5347,7 +5450,6 @@ I can't test it on OS X 10.6 Intel because I have upgraded in place so much and 
 ```
 gcc -L/Users/.../sage-4.6/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.6-i386-2.6/C/gsl.o -L/Users/.../sage-4.6.1.alpha0/local/lib
 ```
-
 with an error that they can't find the sage-4.6 folder - which makes sense, because it's not there.  So someone else might have to test this.  
 
 Just to put this down, the previous cvxopt didn't have an spkg-check, I guess, because I reinstalled that and it successfully reinstalled (on the PPC machine).   Hopefully this issue is really easy to fix; it would be a shame to upgrade cvxopt without it passing its new check, though on the balance it sounds like having this ancient of cvxopt is tantamount to being even worse than that.
@@ -5359,7 +5461,7 @@ Just to put this down, the previous cvxopt didn't have an spkg-check, I guess, b
 archive/issue_comments_052050.json:
 ```json
 {
-    "body": "Replying to [comment:141 kcrisman]:\n \n> Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n\nDo you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that.",
+    "body": "Replying to [comment:141 kcrisman]:\n \n> Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n\n\nDo you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that.",
     "created_at": "2010-11-12T16:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5372,6 +5474,7 @@ Replying to [comment:141 kcrisman]:
  
 > Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.
 
+
 Do you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that.
 
 
@@ -5381,7 +5484,7 @@ Do you have an account on bsd.math? If not, ask William for one. That is not a s
 archive/issue_comments_052051.json:
 ```json
 {
-    "body": "Replying to [comment:143 drkirkby]:\n> Replying to [comment:141 kcrisman]:\n>  \n> > Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n> \n> Do you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that. \n\nSorry, that's irrelevant - this is for the OS X 10.4 PPC.  I think one of the skynet ones has this (?) but I'm not interested in, nor probably qualified for, access to that.  My best work happens on machines I have physical access to :)",
+    "body": "Replying to [comment:143 drkirkby]:\n> Replying to [comment:141 kcrisman]:\n>  \n> > Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n\n> \n> Do you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that. \n\n\nSorry, that's irrelevant - this is for the OS X 10.4 PPC.  I think one of the skynet ones has this (?) but I'm not interested in, nor probably qualified for, access to that.  My best work happens on machines I have physical access to :)",
     "created_at": "2010-11-12T17:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5394,8 +5497,10 @@ Replying to [comment:143 drkirkby]:
 > Replying to [comment:141 kcrisman]:
 >  
 > > Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.
+
 > 
 > Do you have an account on bsd.math? If not, ask William for one. That is not a speed daemon, but its an Mac with an Intel CPU running 10.6. It takes a few hours, but not days to test Sage on that. 
+
 
 Sorry, that's irrelevant - this is for the OS X 10.4 PPC.  I think one of the skynet ones has this (?) but I'm not interested in, nor probably qualified for, access to that.  My best work happens on machines I have physical access to :)
 
@@ -5406,7 +5511,7 @@ Sorry, that's irrelevant - this is for the OS X 10.4 PPC.  I think one of the sk
 archive/issue_comments_052052.json:
 ```json
 {
-    "body": "Replying to [comment:141 kcrisman]:\n> > well, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n> > (it worked for me, also with g95...)\n> > This should be fixed in  just uploaded update of  the spkg.\n> > Could you please test it?\n> Builds.\n> > (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)\n> With `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:\n\n```\n Error: /Users/student/Desktop/sage-4.6/local/bin/python l2ac.py failed\nTesting  robls.py ...\nTraceback (most recent call last):\n File \"robls.py\", line 5, in <module>\n     from cvxopt import solvers, blas, lapack\n   File \"/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/__init__.py\", line 31, in <module>\n     import base\n ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/base.so, 2): Symbol not found: _cblas_zhemm\n   Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib\n   Expected in: dynamic lookup\n```\n\n> All of these ask about `_cblas_zhemm`.\n\nMost probably this is due to missing gslcblas in the list of libraries to link. I've put it back in and uploaded the updated\nspkg. Please test! (with SAGE_CHECK=yes, naturally).\nThanks.\n\n> \n> Testing sage/numerical gives me all tests passed, though.\n> \n> Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n\nNo, there is no need to test anything else; the only exposure to cvxopt is in sage/numerical/optimize.py.\n\nDima",
+    "body": "Replying to [comment:141 kcrisman]:\n> > well, an old gcc toolchain (?): g95 somehow doesn't know where to look for its own libf95.a\n> > (it worked for me, also with g95...)\n> > This should be fixed in  just uploaded update of  the spkg.\n> > Could you please test it?\n\n> Builds.\n> > (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)\n\n> With `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:\n\n```\n Error: /Users/student/Desktop/sage-4.6/local/bin/python l2ac.py failed\nTesting  robls.py ...\nTraceback (most recent call last):\n File \"robls.py\", line 5, in <module>\n     from cvxopt import solvers, blas, lapack\n   File \"/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/__init__.py\", line 31, in <module>\n     import base\n ImportError: dlopen(/Users/student/Desktop/sage-4.6/local/lib/python2.6/site-packages/cvxopt/base.so, 2): Symbol not found: _cblas_zhemm\n   Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib\n   Expected in: dynamic lookup\n```\n> All of these ask about `_cblas_zhemm`.\n\n\nMost probably this is due to missing gslcblas in the list of libraries to link. I've put it back in and uploaded the updated\nspkg. Please test! (with SAGE_CHECK=yes, naturally).\nThanks.\n\n> \n> Testing sage/numerical gives me all tests passed, though.\n> \n> Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.\n\n\nNo, there is no need to test anything else; the only exposure to cvxopt is in sage/numerical/optimize.py.\n\nDima",
     "created_at": "2010-11-12T18:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5420,8 +5525,10 @@ Replying to [comment:141 kcrisman]:
 > > (it worked for me, also with g95...)
 > > This should be fixed in  just uploaded update of  the spkg.
 > > Could you please test it?
+
 > Builds.
 > > (also, if it builds, could you try building it with SAGE_CHECK=yes, too ?)
+
 > With `SAGE_CHECK=yes` I get a whole bunch of errors, all looking for the same thing - like this one:
 
 ```
@@ -5436,8 +5543,8 @@ Traceback (most recent call last):
    Referenced from: /Users/student/Desktop/sage-4.6/local/lib//libgsl.0.dylib
    Expected in: dynamic lookup
 ```
-
 > All of these ask about `_cblas_zhemm`.
+
 
 Most probably this is due to missing gslcblas in the list of libraries to link. I've put it back in and uploaded the updated
 spkg. Please test! (with SAGE_CHECK=yes, naturally).
@@ -5447,6 +5554,7 @@ Thanks.
 > Testing sage/numerical gives me all tests passed, though.
 > 
 > Is there any other part of Sage which would conceivably depend on these changes at all?  Testing the whole thing on this computer would take until Monday.
+
 
 No, there is no need to test anything else; the only exposure to cvxopt is in sage/numerical/optimize.py.
 
@@ -5459,7 +5567,7 @@ Dima
 archive/issue_comments_052053.json:
 ```json
 {
-    "body": "Well, this latest one installed normally, which is good.  So far the test suite hasn't failed, which is also good.  However, it seems to be taking a long time (>10 minutes) for the first file\n\n```\nSuccessfully installed cvxopt-1.1.3\nRunning the test suite.\nTesting in src/examples/doc/chap10 \nTesting  l1svc.py ...\n```\n\nand unfortunately I need to leave now to catch my train before it's too dark to bike without lights.  So Monday morning you will find out whether this has worked.  Eventually I will learn how to ssh tunnel into this computer, but I don't have time to do so right now :)  \n\nAt any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! \n\nWhat else needs to be done for positive review - have all the license etc. issues been resolved?",
+    "body": "Well, this latest one installed normally, which is good.  So far the test suite hasn't failed, which is also good.  However, it seems to be taking a long time (>10 minutes) for the first file\n\n```\nSuccessfully installed cvxopt-1.1.3\nRunning the test suite.\nTesting in src/examples/doc/chap10 \nTesting  l1svc.py ...\n```\nand unfortunately I need to leave now to catch my train before it's too dark to bike without lights.  So Monday morning you will find out whether this has worked.  Eventually I will learn how to ssh tunnel into this computer, but I don't have time to do so right now :)  \n\nAt any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! \n\nWhat else needs to be done for positive review - have all the license etc. issues been resolved?",
     "created_at": "2010-11-12T21:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5476,7 +5584,6 @@ Running the test suite.
 Testing in src/examples/doc/chap10 
 Testing  l1svc.py ...
 ```
-
 and unfortunately I need to leave now to catch my train before it's too dark to bike without lights.  So Monday morning you will find out whether this has worked.  Eventually I will learn how to ssh tunnel into this computer, but I don't have time to do so right now :)  
 
 At any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! 
@@ -5490,7 +5597,7 @@ What else needs to be done for positive review - have all the license etc. issue
 archive/issue_comments_052054.json:
 ```json
 {
-    "body": "Replying to [comment:146 kcrisman]:\n> Well, this latest one installed normally, which is good.  So far the test suite hasn't failed, which is also good.  However, it seems to be taking a long time (>10 minutes) for the first file\n\n> At any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! \n> \n\nI got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\nSo after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\nThe updated version is uploaded.\n\nAt any rate, a test on OSX 10.6 would be great to have.\n\n\n\n> What else needs to be done for positive review - have all the license etc. issues been resolved?",
+    "body": "Replying to [comment:146 kcrisman]:\n> Well, this latest one installed normally, which is good.  So far the test suite hasn't failed, which is also good.  However, it seems to be taking a long time (>10 minutes) for the first file\n\n\n> At any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! \n> \n\n\nI got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\nSo after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\nThe updated version is uploaded.\n\nAt any rate, a test on OSX 10.6 would be great to have.\n\n\n\n> What else needs to be done for positive review - have all the license etc. issues been resolved?",
     "created_at": "2010-11-14T13:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5502,8 +5609,10 @@ archive/issue_comments_052054.json:
 Replying to [comment:146 kcrisman]:
 > Well, this latest one installed normally, which is good.  So far the test suite hasn't failed, which is also good.  However, it seems to be taking a long time (>10 minutes) for the first file
 
+
 > At any rate this is a good sign.  I might also get to build a brand-new alpha on OS X 10.6 eventually and test this there too.  Good luck! 
 > 
+
 
 I got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.
 So after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.
@@ -5522,7 +5631,7 @@ At any rate, a test on OSX 10.6 would be great to have.
 archive/issue_comments_052055.json:
 ```json
 {
-    "body": "Replying to [comment:147 dimpase]:\n> I got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\n> So after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\n> The updated version is uploaded.\n> \n> At any rate, a test on OSX 10.6 would be great to have.\n\nbsd.math runs 10.6, not 10.4.  You might have been confused because of the output of \"uname\", more particularly \"uname -r\":\n\n```\nbsd:~ palmieri$ uname -r\n10.4.0\n```\n\nThe \"10\" corresponds somehow to OS X 10.6, and the \"4\" means it's running OS X 10.6.4.  (OS X 10.4 would return \"8.???\" and OS X 10.5 would return \"9.???\".)",
+    "body": "Replying to [comment:147 dimpase]:\n> I got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\n> So after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\n> The updated version is uploaded.\n> \n> At any rate, a test on OSX 10.6 would be great to have.\n\n\nbsd.math runs 10.6, not 10.4.  You might have been confused because of the output of \"uname\", more particularly \"uname -r\":\n\n```\nbsd:~ palmieri$ uname -r\n10.4.0\n```\nThe \"10\" corresponds somehow to OS X 10.6, and the \"4\" means it's running OS X 10.6.4.  (OS X 10.4 would return \"8.???\" and OS X 10.5 would return \"9.???\".)",
     "created_at": "2010-11-14T15:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5538,13 +5647,13 @@ Replying to [comment:147 dimpase]:
 > 
 > At any rate, a test on OSX 10.6 would be great to have.
 
+
 bsd.math runs 10.6, not 10.4.  You might have been confused because of the output of "uname", more particularly "uname -r":
 
 ```
 bsd:~ palmieri$ uname -r
 10.4.0
 ```
-
 The "10" corresponds somehow to OS X 10.6, and the "4" means it's running OS X 10.6.4.  (OS X 10.4 would return "8.???" and OS X 10.5 would return "9.???".)
 
 
@@ -5554,7 +5663,7 @@ The "10" corresponds somehow to OS X 10.6, and the "4" means it's running OS X 1
 archive/issue_comments_052056.json:
 ```json
 {
-    "body": "Replying to [comment:148 jhpalmieri]:\n> Replying to [comment:147 dimpase]:\n> > I got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\n> > So after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\n> > The updated version is uploaded.\n> > \n> > At any rate, a test on OSX 10.6 would be great to have.\n> \n> bsd.math runs 10.6, not 10.4.  You might have been confused because of the output of \"uname\", more particularly \"uname -r\":\n> {{{\n> bsd:~ palmieri$ uname -r\n> 10.4.0\n> }}}\n> The \"10\" corresponds somehow to OS X 10.6, and the \"4\" means it's running OS X 10.6.4.  (OS X 10.4 would return \"8.???\" and OS X 10.5 would return \"9.???\".)\n\nWhy the hell do the operating systems do this. Solaris is just as bad. \n\nThis is Solaris 10\n\n```\nkirkby@t2:64 ~$ uname -r\n5.10\n```\n\n\nand AIX 6.1\n\n```\n$ uname -r\n1\n$ uname -a\nAIX lpar5 1 6 00C6B7C04C00\n```\n\n\nLinux is no better \n\n```\nkirkby@sage:~$ uname -r\n2.6.24-28-server\n```\n\n\nI can't recall if HP-UX is a bit more sensible, and can't be bothered to switch on my HP-UX machine to find out. \n</gripe>",
+    "body": "Replying to [comment:148 jhpalmieri]:\n> Replying to [comment:147 dimpase]:\n> > I got an account on bsd.math and tested on OSX 10.4 Intel. I had to change the way the package detects which fortran compiler is used, so this is now done without resorting to checking for platforms (Darwin, etc) at all.\n> > So after these changes it tested OK on OSX10.4 Intel, OSX10.5 PPC, Solaris (t2) and Debian x64.\n> > The updated version is uploaded.\n> > \n> > At any rate, a test on OSX 10.6 would be great to have.\n\n> \n> bsd.math runs 10.6, not 10.4.  You might have been confused because of the output of \"uname\", more particularly \"uname -r\":\n> \n> ```\n> bsd:~ palmieri$ uname -r\n> 10.4.0\n> ```\n> The \"10\" corresponds somehow to OS X 10.6, and the \"4\" means it's running OS X 10.6.4.  (OS X 10.4 would return \"8.???\" and OS X 10.5 would return \"9.???\".)\n\n\nWhy the hell do the operating systems do this. Solaris is just as bad. \n\nThis is Solaris 10\n\n```\nkirkby@t2:64 ~$ uname -r\n5.10\n```\n\nand AIX 6.1\n\n```\n$ uname -r\n1\n$ uname -a\nAIX lpar5 1 6 00C6B7C04C00\n```\n\nLinux is no better \n\n```\nkirkby@sage:~$ uname -r\n2.6.24-28-server\n```\n\nI can't recall if HP-UX is a bit more sensible, and can't be bothered to switch on my HP-UX machine to find out. \n</gripe>",
     "created_at": "2010-11-14T18:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5570,13 +5679,16 @@ Replying to [comment:148 jhpalmieri]:
 > > The updated version is uploaded.
 > > 
 > > At any rate, a test on OSX 10.6 would be great to have.
+
 > 
 > bsd.math runs 10.6, not 10.4.  You might have been confused because of the output of "uname", more particularly "uname -r":
-> {{{
+> 
+> ```
 > bsd:~ palmieri$ uname -r
 > 10.4.0
-> }}}
+> ```
 > The "10" corresponds somehow to OS X 10.6, and the "4" means it's running OS X 10.6.4.  (OS X 10.4 would return "8.???" and OS X 10.5 would return "9.???".)
+
 
 Why the hell do the operating systems do this. Solaris is just as bad. 
 
@@ -5587,7 +5699,6 @@ kirkby@t2:64 ~$ uname -r
 5.10
 ```
 
-
 and AIX 6.1
 
 ```
@@ -5597,14 +5708,12 @@ $ uname -a
 AIX lpar5 1 6 00C6B7C04C00
 ```
 
-
 Linux is no better 
 
 ```
 kirkby@sage:~$ uname -r
 2.6.24-28-server
 ```
-
 
 I can't recall if HP-UX is a bit more sensible, and can't be bothered to switch on my HP-UX machine to find out. 
 </gripe>
@@ -5678,7 +5787,7 @@ option to linear_program() to use glpk as the solver
 archive/issue_comments_052060.json:
 ```json
 {
-    "body": "Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by @dimpase created at 2010-11-15 13:29:34\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n>  1. [attachment:6456-numerical_sage_cvxopt.patch]\n>  1. [attachment:6456-cvxopt-glpk-interface.patch]\n>  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\ndone.\n\nDima",
+    "body": "Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by @dimpase created at 2010-11-15 13:29:34\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n> 1. [attachment:6456-numerical_sage_cvxopt.patch]\n> 2. [attachment:6456-cvxopt-glpk-interface.patch]\n> 3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\n\ndone.\n\nDima",
     "created_at": "2010-11-15T13:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5692,14 +5801,16 @@ Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uu
 Replying to [comment:150 jdemeyer]:
 > Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:
 > 
->  1. [attachment:6456-numerical_sage_cvxopt.patch]
->  1. [attachment:6456-cvxopt-glpk-interface.patch]
->  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)
+> 1. [attachment:6456-numerical_sage_cvxopt.patch]
+> 2. [attachment:6456-cvxopt-glpk-interface.patch]
+> 3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)
 > 
+
 
 right, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).
 
 > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).
+
 
 done.
 
@@ -5768,7 +5879,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052064.json:
 ```json
 {
-    "body": "Replying to [comment:151 dimpase]:\n> > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> \n> done.\n\nExcept that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...",
+    "body": "Replying to [comment:151 dimpase]:\n> > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\n> \n> done.\n\n\nExcept that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...",
     "created_at": "2010-11-15T15:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5779,8 +5890,10 @@ archive/issue_comments_052064.json:
 
 Replying to [comment:151 dimpase]:
 > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).
+
 > 
 > done.
+
 
 Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...
 
@@ -5827,7 +5940,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052067.json:
 ```json
 {
-    "body": "Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by @dimpase created at 2010-11-15 15:41:37\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> > \n> > done.\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\nAUB",
+    "body": "Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by @dimpase created at 2010-11-15 15:41:37\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\n> > \n> > done.\n\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\n\nAUB",
     "created_at": "2010-11-15T15:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5841,10 +5954,13 @@ Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball
 Replying to [comment:153 jdemeyer]:
 > Replying to [comment:151 dimpase]:
 > > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).
+
 > > 
 > > done.
+
 > 
 > Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...
+
 
 AUB
 
@@ -5855,7 +5971,7 @@ AUB
 archive/issue_comments_052068.json:
 ```json
 {
-    "body": "There's a failure with 4.6.1.alpha2 on Skynet's iras (ia64-Linux-suse):\n\n```python\n$ ./sage -t -long  -force_lib devel/sage/doc/en/numerical_sage/cvxopt.rst \nsage -t -long -force_lib \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/tmp/sage_iras/sage-4.6.1.alpha2/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 129:\n    sage: print sol['x']      # ... below since can get -00 or +00 depending on architecture\nExpected:\n    [ 1.00e+00]\n    [ 1.00e+00]\nGot:\n    [ 1.00e-00]\n    [ 1.00e+00]\n    <BLANKLINE>\n```\n",
+    "body": "There's a failure with 4.6.1.alpha2 on Skynet's iras (ia64-Linux-suse):\n\n```python\n$ ./sage -t -long  -force_lib devel/sage/doc/en/numerical_sage/cvxopt.rst \nsage -t -long -force_lib \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/tmp/sage_iras/sage-4.6.1.alpha2/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 129:\n    sage: print sol['x']      # ... below since can get -00 or +00 depending on architecture\nExpected:\n    [ 1.00e+00]\n    [ 1.00e+00]\nGot:\n    [ 1.00e-00]\n    [ 1.00e+00]\n    <BLANKLINE>\n```",
     "created_at": "2010-11-22T13:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5883,13 +5999,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_052069.json:
 ```json
 {
-    "body": "Replying to [comment:156 mpatel]:\n> There's a failure with 4.6.1.alpha2 on Skynet's iras (ia64-Linux-suse):\n\nPatch at #10309",
+    "body": "Replying to [comment:156 mpatel]:\n> There's a failure with 4.6.1.alpha2 on Skynet's iras (ia64-Linux-suse):\n\n\nPatch at #10309",
     "created_at": "2010-11-22T14:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5900,6 +6015,7 @@ archive/issue_comments_052069.json:
 
 Replying to [comment:156 mpatel]:
 > There's a failure with 4.6.1.alpha2 on Skynet's iras (ia64-Linux-suse):
+
 
 Patch at #10309
 
@@ -5946,7 +6062,7 @@ Is there anything else that needs to happen for this to get positive review?  I'
 archive/issue_comments_052072.json:
 ```json
 {
-    "body": "Replying to [comment:158 kcrisman]:\n> Is there anything else that needs to happen for this to get positive review?\n\nSomebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...",
+    "body": "Replying to [comment:158 kcrisman]:\n> Is there anything else that needs to happen for this to get positive review?\n\n\nSomebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...",
     "created_at": "2010-12-02T16:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5958,6 +6074,7 @@ archive/issue_comments_052072.json:
 Replying to [comment:158 kcrisman]:
 > Is there anything else that needs to happen for this to get positive review?
 
+
 Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...
 
 
@@ -5967,7 +6084,7 @@ Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sen
 archive/issue_comments_052073.json:
 ```json
 {
-    "body": "Replying to [comment:159 jdemeyer]:\n> Replying to [comment:158 kcrisman]:\n> > Is there anything else that needs to happen for this to get positive review?\n> \n> Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...\n\nBeing an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)",
+    "body": "Replying to [comment:159 jdemeyer]:\n> Replying to [comment:158 kcrisman]:\n> > Is there anything else that needs to happen for this to get positive review?\n\n> \n> Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...\n\n\nBeing an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)",
     "created_at": "2010-12-02T17:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -5979,8 +6096,10 @@ archive/issue_comments_052073.json:
 Replying to [comment:159 jdemeyer]:
 > Replying to [comment:158 kcrisman]:
 > > Is there anything else that needs to happen for this to get positive review?
+
 > 
 > Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...
+
 
 Being an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)
 
@@ -5991,7 +6110,7 @@ Being an author, I am biased, but I think it has been reviewed over and over to 
 archive/issue_comments_052074.json:
 ```json
 {
-    "body": "Replying to [comment:160 dimpase]:\n> Replying to [comment:159 jdemeyer]:\n> > Replying to [comment:158 kcrisman]:\n> > > Is there anything else that needs to happen for this to get positive review?\n> > \n> > Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...\n> \n> Being an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)\nOf course!\n\nI have a brief question about the patches.  The Solaris one and the init one seem fine, and most of the setup.py makes sense for finding Sage-specific things.  \n\nI do have a question about `BUILD_GLPK` being set to 1, since there is a comment that one can only do this if glpk is installed, \"optional at this moment\".  So will this cause problems?  Apparently not... There is a hanging parenthesis there as well.   Anyway, I'd like to know what that is about.\n\nAlso, in SPKG.txt there is a spelling \"enchance\" instead of \"enhance\", and \"recongnision\" instead of \"recognition\".\n\nEverything else seems to make sense, though I should note I am not a shell script or install expert :)  Still, with no problems reported on 4.6.1.alpha2, perhaps it's time for positive review once those things get resolved.",
+    "body": "Replying to [comment:160 dimpase]:\n> Replying to [comment:159 jdemeyer]:\n> > Replying to [comment:158 kcrisman]:\n> > > Is there anything else that needs to happen for this to get positive review?\n\n> > \n> > Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...\n\n> \n> Being an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)\n\nOf course!\n\nI have a brief question about the patches.  The Solaris one and the init one seem fine, and most of the setup.py makes sense for finding Sage-specific things.  \n\nI do have a question about `BUILD_GLPK` being set to 1, since there is a comment that one can only do this if glpk is installed, \"optional at this moment\".  So will this cause problems?  Apparently not... There is a hanging parenthesis there as well.   Anyway, I'd like to know what that is about.\n\nAlso, in SPKG.txt there is a spelling \"enchance\" instead of \"enhance\", and \"recongnision\" instead of \"recognition\".\n\nEverything else seems to make sense, though I should note I am not a shell script or install expert :)  Still, with no problems reported on 4.6.1.alpha2, perhaps it's time for positive review once those things get resolved.",
     "created_at": "2010-12-02T17:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -6004,10 +6123,13 @@ Replying to [comment:160 dimpase]:
 > Replying to [comment:159 jdemeyer]:
 > > Replying to [comment:158 kcrisman]:
 > > > Is there anything else that needs to happen for this to get positive review?
+
 > > 
 > > Somebody should look at the spkg, check that `spkg-install`, `SPKG.txt` make sense, check any patches (I believe there are none in this spkg),...
+
 > 
 > Being an author, I am biased, but I think it has been reviewed over and over to near-death already, and found sound enough :-)
+
 Of course!
 
 I have a brief question about the patches.  The Solaris one and the init one seem fine, and most of the setup.py makes sense for finding Sage-specific things.  
@@ -6025,7 +6147,7 @@ Everything else seems to make sense, though I should note I am not a shell scrip
 archive/issue_comments_052075.json:
 ```json
 {
-    "body": "Replying to [comment:161 kcrisman]:\n\n> I do have a question about `BUILD_GLPK` being set to 1, since there is a comment that one can only do this if glpk is installed, \"optional at this moment\".  So will this cause problems?  Apparently not... There is a hanging parenthesis there as well.   Anyway, I'd like to know what that is about.\n\nFixed. A leftover from times when GLPK was still optional. Now GLPK is standard.\n\n> \n> Also, in SPKG.txt there is a spelling \"enchance\" instead of \"enhance\", and \"recongnision\" instead of \"recognition\".\n> \n\nfixed.\n\n> Everything else seems to make sense, though I should note I am not a shell script or install expert :)  Still, with no problems reported on 4.6.1.alpha2, perhaps it's time for positive review once those things get resolved.\n\nOK so the fixes are in the spkg file in the same location.\n\nThanks for your time,\n\nDima",
+    "body": "Replying to [comment:161 kcrisman]:\n\n> I do have a question about `BUILD_GLPK` being set to 1, since there is a comment that one can only do this if glpk is installed, \"optional at this moment\".  So will this cause problems?  Apparently not... There is a hanging parenthesis there as well.   Anyway, I'd like to know what that is about.\n\n\nFixed. A leftover from times when GLPK was still optional. Now GLPK is standard.\n\n> \n> Also, in SPKG.txt there is a spelling \"enchance\" instead of \"enhance\", and \"recongnision\" instead of \"recognition\".\n> \n\n\nfixed.\n\n> Everything else seems to make sense, though I should note I am not a shell script or install expert :)  Still, with no problems reported on 4.6.1.alpha2, perhaps it's time for positive review once those things get resolved.\n\n\nOK so the fixes are in the spkg file in the same location.\n\nThanks for your time,\n\nDima",
     "created_at": "2010-12-02T18:10:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -6038,15 +6160,18 @@ Replying to [comment:161 kcrisman]:
 
 > I do have a question about `BUILD_GLPK` being set to 1, since there is a comment that one can only do this if glpk is installed, "optional at this moment".  So will this cause problems?  Apparently not... There is a hanging parenthesis there as well.   Anyway, I'd like to know what that is about.
 
+
 Fixed. A leftover from times when GLPK was still optional. Now GLPK is standard.
 
 > 
 > Also, in SPKG.txt there is a spelling "enchance" instead of "enhance", and "recongnision" instead of "recognition".
 > 
 
+
 fixed.
 
 > Everything else seems to make sense, though I should note I am not a shell script or install expert :)  Still, with no problems reported on 4.6.1.alpha2, perhaps it's time for positive review once those things get resolved.
+
 
 OK so the fixes are in the spkg file in the same location.
 
@@ -6133,7 +6258,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_052080.json:
 ```json
 {
-    "body": "Replying to [comment:164 jdemeyer]:\n> Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.\n\nI thought this had been debated on sage-devel before, and William's opinion is that it should not be .p0. There's noting in the Sage Developers Guide to say it should be either. As such, I don't think that this is a reasonable reason for putting the ticket to needs work. \n\nDave",
+    "body": "Replying to [comment:164 jdemeyer]:\n> Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.\n\n\nI thought this had been debated on sage-devel before, and William's opinion is that it should not be .p0. There's noting in the Sage Developers Guide to say it should be either. As such, I don't think that this is a reasonable reason for putting the ticket to needs work. \n\nDave",
     "created_at": "2010-12-03T02:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -6144,6 +6269,7 @@ archive/issue_comments_052080.json:
 
 Replying to [comment:164 jdemeyer]:
 > Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.
+
 
 I thought this had been debated on sage-devel before, and William's opinion is that it should not be .p0. There's noting in the Sage Developers Guide to say it should be either. As such, I don't think that this is a reasonable reason for putting the ticket to needs work. 
 
@@ -6156,7 +6282,7 @@ Dave
 archive/issue_comments_052081.json:
 ```json
 {
-    "body": "Replying to [comment:164 jdemeyer]:\n> Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.\n\nI believe the opposite, and was specifically indoctorinated into my belief when I was updating GAP and its GAP-packages spkgs.\nHereby I blatantly change the status to Positive Review :-)",
+    "body": "Replying to [comment:164 jdemeyer]:\n> Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.\n\n\nI believe the opposite, and was specifically indoctorinated into my belief when I was updating GAP and its GAP-packages spkgs.\nHereby I blatantly change the status to Positive Review :-)",
     "created_at": "2010-12-03T05:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
@@ -6167,6 +6293,7 @@ archive/issue_comments_052081.json:
 
 Replying to [comment:164 jdemeyer]:
 > Since the package is not pure upstream and contains pacthes, I believe it should be renamed to `cvxopt-1.1.3.p0.spkg`.
+
 
 I believe the opposite, and was specifically indoctorinated into my belief when I was updating GAP and its GAP-packages spkgs.
 Hereby I blatantly change the status to Positive Review :-)

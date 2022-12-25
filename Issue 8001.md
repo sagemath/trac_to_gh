@@ -157,7 +157,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069804.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> I'm uploading a small trivial review patch. Here are the comment:\n>  - Add a missing \"`\";\n>  - Improve the layout of an enumeration;\n>  - replace `ZZ._tester` with `QQ._tester` to show that the gadget is automatically attached (Noting to do with the previous call on `ZZ`.\n> \n> Otherwise the patch is ready to go. \n\nThanks for the review!\n\n> Nicolas: You can add positive review once you had a look on my review patch.  \n\nDone!",
+    "body": "Replying to [comment:3 hivert]:\n> I'm uploading a small trivial review patch. Here are the comment:\n> - Add a missing \"`\";\n> - Improve the layout of an enumeration;\n> - replace `ZZ._tester` with `QQ._tester` to show that the gadget is automatically attached (Noting to do with the previous call on `ZZ`.\n> \n> Otherwise the patch is ready to go. \n\n\nThanks for the review!\n\n> Nicolas: You can add positive review once you had a look on my review patch.  \n\n\nDone!",
     "created_at": "2010-01-23T14:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
@@ -168,15 +168,17 @@ archive/issue_comments_069804.json:
 
 Replying to [comment:3 hivert]:
 > I'm uploading a small trivial review patch. Here are the comment:
->  - Add a missing "`";
->  - Improve the layout of an enumeration;
->  - replace `ZZ._tester` with `QQ._tester` to show that the gadget is automatically attached (Noting to do with the previous call on `ZZ`.
+> - Add a missing "`";
+> - Improve the layout of an enumeration;
+> - replace `ZZ._tester` with `QQ._tester` to show that the gadget is automatically attached (Noting to do with the previous call on `ZZ`.
 > 
 > Otherwise the patch is ready to go. 
+
 
 Thanks for the review!
 
 > Nicolas: You can add positive review once you had a look on my review patch.  
+
 
 Done!
 

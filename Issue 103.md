@@ -3,7 +3,7 @@
 archive/issues_000103.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n> There's a problem with rebuilding when you modify .pxd files but nothing  \n> else. i.e. it the build system doesn't seem to recognise when .pyx files  \n> depend on modified .pxd files. I had to manually remove all the .c files  \n> to force a rebuild.\n\nYou could touch the corresponding pyx file.\n\nAnyway, this is a NotImplementedError -- i.e., the build system that Python has doesn't\nknow anything about thins like pxd files.   What happens is that when you type\n\"sage -br\", SAGE runs setup.py (which I wrote from scratch).  setup.py looks\nat each .pyx and if it newer than the corresponding .c file, then it runs\npyrex on the pyx file.  This produces a new .c file.   Then Python's distutils\nsees the new .c file, hence rebuilds the module.    I haven't implemented\nsomething similar for .pxd or .pxi files yet.    One possibility would be to\nsimple check if there are any non .c files with the same name (except for the\nextension) that are newer than a given .c file.  If so, regenerate the .c files.\nThis would be pretty easy to implement (it's just a matter of adding some code\nto setup.py).  I'll put it on trac. \n\nIssue created by migration from https://trac.sagemath.org/ticket/103\n\n",
+    "body": "Assignee: @williamstein\n\n> There's a problem with rebuilding when you modify .pxd files but nothing  \n> else. i.e. it the build system doesn't seem to recognise when .pyx files  \n> depend on modified .pxd files. I had to manually remove all the .c files  \n> to force a rebuild.\n\n\nYou could touch the corresponding pyx file.\n\nAnyway, this is a NotImplementedError -- i.e., the build system that Python has doesn't\nknow anything about thins like pxd files.   What happens is that when you type\n\"sage -br\", SAGE runs setup.py (which I wrote from scratch).  setup.py looks\nat each .pyx and if it newer than the corresponding .c file, then it runs\npyrex on the pyx file.  This produces a new .c file.   Then Python's distutils\nsees the new .c file, hence rebuilds the module.    I haven't implemented\nsomething similar for .pxd or .pxi files yet.    One possibility would be to\nsimple check if there are any non .c files with the same name (except for the\nextension) that are newer than a given .c file.  If so, regenerate the .c files.\nThis would be pretty easy to implement (it's just a matter of adding some code\nto setup.py).  I'll put it on trac. \n\nIssue created by migration from https://trac.sagemath.org/ticket/103\n\n",
     "created_at": "2006-10-02T04:08:59Z",
     "labels": [
         "component: user interface",
@@ -22,6 +22,7 @@ Assignee: @williamstein
 > else. i.e. it the build system doesn't seem to recognise when .pyx files  
 > depend on modified .pxd files. I had to manually remove all the .c files  
 > to force a rebuild.
+
 
 You could touch the corresponding pyx file.
 

@@ -3,7 +3,7 @@
 archive/issues_007876.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
+    "body": "Assignee: @burcin\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
     "created_at": "2010-01-09T13:57:28Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 It appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.
 
-
 ```
 sage: f=(1/2-1/2*I )*sqrt(2)
 sage: f
@@ -33,7 +32,6 @@ sage: latex(f)
 -\left(\frac{1}{2} I + \frac{1}{2}\right) \, \sqrt{2}
 sage: 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7876
 
@@ -219,7 +217,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068311.json:
 ```json
 {
-    "body": "I get a single reject from the patch, in symbolic/random_tests.py on sage.math.  Here is what I have in random_tests.py:\n\n\n```\n        sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\n        sinh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + csch(-(0.708874026302 - 0.954135400334*I)*v3)))^coth(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n\n```\n\n\nwhereas the patch has:\n\n\n```\n         sage: from sage.symbolic.random_tests import *\n         sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\n-        arctanh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf(-(0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n+        arctanh(sinh(-coth(v2)/erf((-0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf((-0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^((-0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin((-0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n```\n",
+    "body": "I get a single reject from the patch, in symbolic/random_tests.py on sage.math.  Here is what I have in random_tests.py:\n\n```\n        sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\n        sinh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + csch(-(0.708874026302 - 0.954135400334*I)*v3)))^coth(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n\n```\n\nwhereas the patch has:\n\n```\n         sage: from sage.symbolic.random_tests import *\n         sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\n-        arctanh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf(-(0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n+        arctanh(sinh(-coth(v2)/erf((-0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf((-0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^((-0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin((-0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))\n```",
     "created_at": "2010-01-21T00:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
@@ -230,16 +228,13 @@ archive/issue_comments_068311.json:
 
 I get a single reject from the patch, in symbolic/random_tests.py on sage.math.  Here is what I have in random_tests.py:
 
-
 ```
         sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)
         sinh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + csch(-(0.708874026302 - 0.954135400334*I)*v3)))^coth(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))
 
 ```
 
-
 whereas the patch has:
-
 
 ```
          sage: from sage.symbolic.random_tests import *
@@ -247,7 +242,6 @@ whereas the patch has:
 -        arctanh(sinh(-coth(v2)/erf(-(0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf(-(0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^(-(0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin(-(0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))
 +        arctanh(sinh(-coth(v2)/erf((-0.615863165633 + 0.879368031485*I)*v1^2*v3) - gamma(pi) + erf((-0.708874026302 - 0.954135400334*I)*v3)))^arcsech(-cosh(-polylog((v2 + 0.913564344312 + 0.0898040160336*I)^((-0.723896589334 - 0.799038508886*I)*v2), -v1 - v3))/arcsin((-0.0263902659909 + 0.153261789843*I)*arctan2(pi, arccot(pi))))
 ```
-
 
 
 
@@ -274,7 +268,7 @@ See #6559 for the correct order of patches to avoid the reject.
 archive/issue_comments_068313.json:
 ```json
 {
-    "body": "The following now displays correctly using Sage Version 4.3.1 (Release Date: 2010-01-20)\nwith pynac 0.1.11 (and also without any patches mentioned in this ticket)\n\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\n\nsage: f\n(-1/2*I + 1/2)*sqrt(2)\n\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\n\nsage: f+1/2*sqrt(2)\n(-1/2*I + 1)*sqrt(2)\n\nsage: f-I*1/2*sqrt(2)\n(-I + 1/2)*sqrt(2)\n\nsage: f-I/2*sqrt(2)\n(-I + 1/2)*sqrt(2)\n\nsage: f+I/2*sqrt(2)\n1/2*sqrt(2)\n\nsage: latex(f)\n\\left(-\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\n\nsage: latex(f+I/2*sqrt(2))\n\\frac{1}{2} \\, \\sqrt{2}\n\nsage: (1-I)^2\n-2*I\n\nsage: (1+I)^2\n2*I\n\nsage: (1+I*sqrt(2))^2\n(I*sqrt(2) + 1)^2\n\nsage: expand((1+I*sqrt(2))^2)\n2*I*sqrt(2) - 1\n```\n",
+    "body": "The following now displays correctly using Sage Version 4.3.1 (Release Date: 2010-01-20)\nwith pynac 0.1.11 (and also without any patches mentioned in this ticket)\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\n\nsage: f\n(-1/2*I + 1/2)*sqrt(2)\n\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\n\nsage: f+1/2*sqrt(2)\n(-1/2*I + 1)*sqrt(2)\n\nsage: f-I*1/2*sqrt(2)\n(-I + 1/2)*sqrt(2)\n\nsage: f-I/2*sqrt(2)\n(-I + 1/2)*sqrt(2)\n\nsage: f+I/2*sqrt(2)\n1/2*sqrt(2)\n\nsage: latex(f)\n\\left(-\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\n\nsage: latex(f+I/2*sqrt(2))\n\\frac{1}{2} \\, \\sqrt{2}\n\nsage: (1-I)^2\n-2*I\n\nsage: (1+I)^2\n2*I\n\nsage: (1+I*sqrt(2))^2\n(I*sqrt(2) + 1)^2\n\nsage: expand((1+I*sqrt(2))^2)\n2*I*sqrt(2) - 1\n```",
     "created_at": "2010-01-25T08:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
@@ -285,7 +279,6 @@ archive/issue_comments_068313.json:
 
 The following now displays correctly using Sage Version 4.3.1 (Release Date: 2010-01-20)
 with pynac 0.1.11 (and also without any patches mentioned in this ticket)
-
 
 ```
 sage: f=(1/2-1/2*I )*sqrt(2)
@@ -326,7 +319,6 @@ sage: (1+I*sqrt(2))^2
 sage: expand((1+I*sqrt(2))^2)
 2*I*sqrt(2) - 1
 ```
-
 
 
 

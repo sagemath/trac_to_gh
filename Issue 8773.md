@@ -3,7 +3,7 @@
 archive/issues_008773.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp\n\nIf you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\nsage: gap('2+3')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\n```\n\n\nExactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:\n\n```\n[wstein@lena sage-4.4]$ ../sage-4.3.3/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\n5\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nDeleting workspaces, etc., doesn't help.   The GAP spkg is unchanged between these two versions of Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8773\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp\n\nIf you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\nsage: gap('2+3')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\n```\n\nExactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:\n\n```\n[wstein@lena sage-4.4]$ ../sage-4.3.3/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\n5\n```\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nDeleting workspaces, etc., doesn't help.   The GAP spkg is unchanged between these two versions of Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8773\n\n",
     "created_at": "2010-04-26T22:28:45Z",
     "labels": [
         "component: build",
@@ -73,7 +73,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: Unable to start gap
 ```
 
-
 Exactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:
 
 ```
@@ -83,7 +82,6 @@ Exactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:
 sage: gap('2+3')
 5
 ```
-
 | Sage Version 4.3.3, Release Date: 2010-02-21                       |
 | Type notebook() for the GUI, and license() for information.        |
 Deleting workspaces, etc., doesn't help.   The GAP spkg is unchanged between these two versions of Sage.
@@ -122,7 +120,7 @@ We've had this sort of problem (many times) before...
 archive/issue_comments_080166.json:
 ```json
 {
-    "body": "I tried building without -O2, and the problem vanishes.   I did this by *brutally* deleting -O2 everywhere in the src tree (!).   Then I built and now suddenly GAP works:\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+2')\n4\n```\n",
+    "body": "I tried building without -O2, and the problem vanishes.   I did this by *brutally* deleting -O2 everywhere in the src tree (!).   Then I built and now suddenly GAP works:\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+2')\n4\n```",
     "created_at": "2010-04-26T23:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ I tried building without -O2, and the problem vanishes.   I did this by *brutall
 sage: gap('2+2')
 4
 ```
-
 
 
 
@@ -212,7 +209,7 @@ http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg
 archive/issue_comments_080170.json:
 ```json
 {
-    "body": "Replying to [comment:5 wjp]:\n> Building on Dima's new p2 from #8774, I created a p3 that avoids the strict aliasing problems by cleaning up some of the code. I also un-pre-applied saveload.patch in src/, and cleaned up a number of files in src/tst/ (including the large `src/tst/GAP\\ 4\\ PPC`) which were somehow copied from src/.\n> \n> New spkg at:\n> \n> http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg\n\nthis needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n\nThis is quite a drastic change, and there is no telling how older versions of gcc would cope!\nI think it should get seen by real GAP kernel folks before we start even think of shipping this.\n\nShould I post this on GAP-support, of which I happen to be a member?\n\nFinally, I do not understand why it is a blocker. Is 4.4.1 going to support gcc-4.5.0 ?!\nI would say that attempting to support gcc-***.0 is a waste of time.\nLet it ripe to at least .1 or better .2...\nI therefore lower the priority of this to major.\n\nI would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n \nDima",
+    "body": "Replying to [comment:5 wjp]:\n> Building on Dima's new p2 from #8774, I created a p3 that avoids the strict aliasing problems by cleaning up some of the code. I also un-pre-applied saveload.patch in src/, and cleaned up a number of files in src/tst/ (including the large `src/tst/GAP\\ 4\\ PPC`) which were somehow copied from src/.\n> \n> New spkg at:\n> \n> http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg\n\n\nthis needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n\nThis is quite a drastic change, and there is no telling how older versions of gcc would cope!\nI think it should get seen by real GAP kernel folks before we start even think of shipping this.\n\nShould I post this on GAP-support, of which I happen to be a member?\n\nFinally, I do not understand why it is a blocker. Is 4.4.1 going to support gcc-4.5.0 ?!\nI would say that attempting to support gcc-***.0 is a waste of time.\nLet it ripe to at least .1 or better .2...\nI therefore lower the priority of this to major.\n\nI would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n \nDima",
     "created_at": "2010-04-28T16:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -227,6 +224,7 @@ Replying to [comment:5 wjp]:
 > New spkg at:
 > 
 > http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg
+
 
 this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).
 
@@ -269,7 +267,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080172.json:
 ```json
 {
-    "body": "Replying to [comment:6 dimpase]:\n> this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n> \n> This is quite a drastic change, and there is no telling how older versions of gcc would cope!\n\nNot so drastic, really. The changes are very much localised, and the new code is *far* less risky than the current version. Older versions of gcc should have no problem with it.I agree it needs testing on more platforms, of course.\n\n> I think it should get seen by real GAP kernel folks before we start even think of shipping this.\n> \n> Should I post this on GAP-support, of which I happen to be a member?\n\nIf you could, that would be great. Thanks.\n\n\n> I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n\nIn my opinion writing such a check would cause more potential for trouble than the changes.\n\n-Willem Jan",
+    "body": "Replying to [comment:6 dimpase]:\n> this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n> \n> This is quite a drastic change, and there is no telling how older versions of gcc would cope!\n\n\nNot so drastic, really. The changes are very much localised, and the new code is *far* less risky than the current version. Older versions of gcc should have no problem with it.I agree it needs testing on more platforms, of course.\n\n> I think it should get seen by real GAP kernel folks before we start even think of shipping this.\n> \n> Should I post this on GAP-support, of which I happen to be a member?\n\n\nIf you could, that would be great. Thanks.\n\n\n> I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n\n\nIn my opinion writing such a check would cause more potential for trouble than the changes.\n\n-Willem Jan",
     "created_at": "2010-04-28T16:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -283,16 +281,19 @@ Replying to [comment:6 dimpase]:
 > 
 > This is quite a drastic change, and there is no telling how older versions of gcc would cope!
 
+
 Not so drastic, really. The changes are very much localised, and the new code is *far* less risky than the current version. Older versions of gcc should have no problem with it.I agree it needs testing on more platforms, of course.
 
 > I think it should get seen by real GAP kernel folks before we start even think of shipping this.
 > 
 > Should I post this on GAP-support, of which I happen to be a member?
 
+
 If you could, that would be great. Thanks.
 
 
 > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.
+
 
 In my opinion writing such a check would cause more potential for trouble than the changes.
 
@@ -323,7 +324,7 @@ P.S. The patch I added to this spkg likely doesn't satisfy gap's formatting/docu
 archive/issue_comments_080174.json:
 ```json
 {
-    "body": "Replying to [comment:7 wjp]:\n[...]\n> > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n> \n> In my opinion writing such a check would cause more potential for trouble than the changes.\n\nHoezo, Willem Jan? :-)\n\nYou don't need to do #if 's in the code...\nGet gcc version in spkg-install, and only apply new patches in case you get right version.\nAnd print a warning that it's a new, not quite tested, stuff.\nA couple lines of shell code...\n\nDima\n\n> \n> -Willem Jan",
+    "body": "Replying to [comment:7 wjp]:\n[...]\n> > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n\n> \n> In my opinion writing such a check would cause more potential for trouble than the changes.\n\n\nHoezo, Willem Jan? :-)\n\nYou don't need to do #if 's in the code...\nGet gcc version in spkg-install, and only apply new patches in case you get right version.\nAnd print a warning that it's a new, not quite tested, stuff.\nA couple lines of shell code...\n\nDima\n\n> \n> -Willem Jan",
     "created_at": "2010-04-28T17:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -335,8 +336,10 @@ archive/issue_comments_080174.json:
 Replying to [comment:7 wjp]:
 [...]
 > > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.
+
 > 
 > In my opinion writing such a check would cause more potential for trouble than the changes.
+
 
 Hoezo, Willem Jan? :-)
 
@@ -357,7 +360,7 @@ Dima
 archive/issue_comments_080175.json:
 ```json
 {
-    "body": "Replying to [comment:6 dimpase]:\n> Replying to [comment:5 wjp]:\n> > Building on Dima's new p2 from #8774, I created a p3 that avoids the strict aliasing problems by cleaning up some of the code. I also un-pre-applied saveload.patch in src/, and cleaned up a number of files in src/tst/ (including the large `src/tst/GAP\\ 4\\ PPC`) which were somehow copied from src/.\n> > \n> > New spkg at:\n> > \n> > http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg\n> \n> this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n> \n> This is quite a drastic change, and there is no telling how older versions of gcc would cope!\n> I think it should get seen by real GAP kernel folks before we start even think of shipping this.\n> \n> Should I post this on GAP-support, of which I happen to be a member?\n> \n> Finally, I do not understand why it is a blocker. Is 4.4.1 going to support gcc-4.5.0 ?!\n\nYes.\n\n> I would say that attempting to support gcc-***.0 is a waste of time.\n\nNot if it's what our clients want.",
+    "body": "Replying to [comment:6 dimpase]:\n> Replying to [comment:5 wjp]:\n> > Building on Dima's new p2 from #8774, I created a p3 that avoids the strict aliasing problems by cleaning up some of the code. I also un-pre-applied saveload.patch in src/, and cleaned up a number of files in src/tst/ (including the large `src/tst/GAP\\ 4\\ PPC`) which were somehow copied from src/.\n> > \n> > New spkg at:\n> > \n> > http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg\n\n> \n> this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).\n> \n> This is quite a drastic change, and there is no telling how older versions of gcc would cope!\n> I think it should get seen by real GAP kernel folks before we start even think of shipping this.\n> \n> Should I post this on GAP-support, of which I happen to be a member?\n> \n> Finally, I do not understand why it is a blocker. Is 4.4.1 going to support gcc-4.5.0 ?!\n\n\nYes.\n\n> I would say that attempting to support gcc-***.0 is a waste of time.\n\n\nNot if it's what our clients want.",
     "created_at": "2010-04-28T17:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -373,6 +376,7 @@ Replying to [comment:6 dimpase]:
 > > New spkg at:
 > > 
 > > http://www.math.leidenuniv.nl/~wpalenst/sage/gap-4.4.12.p3.spkg
+
 > 
 > this needs to be tested on every platform Sage supports, (itaniums, macs, sparcs...).
 > 
@@ -383,9 +387,11 @@ Replying to [comment:6 dimpase]:
 > 
 > Finally, I do not understand why it is a blocker. Is 4.4.1 going to support gcc-4.5.0 ?!
 
+
 Yes.
 
 > I would say that attempting to support gcc-***.0 is a waste of time.
+
 
 Not if it's what our clients want.
 
@@ -396,7 +402,7 @@ Not if it's what our clients want.
 archive/issue_comments_080176.json:
 ```json
 {
-    "body": "Replying to [comment:9 dimpase]:\n> Replying to [comment:7 wjp]:\n> [...]\n> > > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n> > \n> > In my opinion writing such a check would cause more potential for trouble than the changes.\n>\n> You don't need to do #if 's in the code...\n> Get gcc version in spkg-install, and only apply new patches in case you get right version.\n> And print a warning that it's a new, not quite tested, stuff.\n> A couple lines of shell code...\n\nLet me rephrase it: I don't think the changes are risky enough to justify having two separate versions of the code.",
+    "body": "Replying to [comment:9 dimpase]:\n> Replying to [comment:7 wjp]:\n> [...]\n> > > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.\n\n> > \n> > In my opinion writing such a check would cause more potential for trouble than the changes.\n\n>\n> You don't need to do #if 's in the code...\n> Get gcc version in spkg-install, and only apply new patches in case you get right version.\n> And print a warning that it's a new, not quite tested, stuff.\n> A couple lines of shell code...\n\n\nLet me rephrase it: I don't think the changes are risky enough to justify having two separate versions of the code.",
     "created_at": "2010-04-28T18:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -409,13 +415,16 @@ Replying to [comment:9 dimpase]:
 > Replying to [comment:7 wjp]:
 > [...]
 > > > I would also propose another way to get it in Sage:   make these new patches conditional on gcc version >=4.5.
+
 > > 
 > > In my opinion writing such a check would cause more potential for trouble than the changes.
+
 >
 > You don't need to do #if 's in the code...
 > Get gcc version in spkg-install, and only apply new patches in case you get right version.
 > And print a warning that it's a new, not quite tested, stuff.
 > A couple lines of shell code...
+
 
 Let me rephrase it: I don't think the changes are risky enough to justify having two separate versions of the code.
 
@@ -496,7 +505,7 @@ archive/issue_events_021381.json:
 archive/issue_comments_080180.json:
 ```json
 {
-    "body": "From upstream, which approves:\n\n```\nWell done Willem. The diagnosis looks correct. This is old code and clearly the nice solution is to use a suitable union type so as to be more honest with the C compiler about what is actually being passed back and forth. Is there an easy way to pass me the proposed patch and I'll either apply it to GAP development branch or send you a preferred version if I want to do it a little differently.\n\nSaveDouble/LoadDouble can probably also be handled correctly with unions, so long as, in\n\nunion { char bytes[sizeof(double)], double d};\n\n\none can rely on bytes including all the data of double. Does anyone know anything about this? Otherwise might be better to use void * and memcopy or something like that.\n\n       Steve\n```\n",
+    "body": "From upstream, which approves:\n\n```\nWell done Willem. The diagnosis looks correct. This is old code and clearly the nice solution is to use a suitable union type so as to be more honest with the C compiler about what is actually being passed back and forth. Is there an easy way to pass me the proposed patch and I'll either apply it to GAP development branch or send you a preferred version if I want to do it a little differently.\n\nSaveDouble/LoadDouble can probably also be handled correctly with unions, so long as, in\n\nunion { char bytes[sizeof(double)], double d};\n\n\none can rely on bytes including all the data of double. Does anyone know anything about this? Otherwise might be better to use void * and memcopy or something like that.\n\n       Steve\n```",
     "created_at": "2010-04-28T19:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -522,13 +531,12 @@ one can rely on bytes including all the data of double. Does anyone know anythin
 
 
 
-
 ---
 
 archive/issue_comments_080181.json:
 ```json
 {
-    "body": "More readable:\n\"Well done Willem. The diagnosis looks correct. This is old code and clearly the nice solution is to use a suitable union type so as to be more honest with the C compiler about what is actually being passed back and forth. Is there an easy way to pass me the proposed patch and I'll either apply it to GAP development branch or send you a preferred version if I want to do it a little differently.\n\nSaveDouble/LoadDouble can probably also be handled correctly with unions, so long as, in\n\n```\nunion { char bytes[sizeof(double)], double d};\n```\n\n\none can rely on bytes including all the data of double. Does anyone know anything about this? Otherwise might be better to use void * and memcopy or something like that.\n\n       Steve\"",
+    "body": "More readable:\n\"Well done Willem. The diagnosis looks correct. This is old code and clearly the nice solution is to use a suitable union type so as to be more honest with the C compiler about what is actually being passed back and forth. Is there an easy way to pass me the proposed patch and I'll either apply it to GAP development branch or send you a preferred version if I want to do it a little differently.\n\nSaveDouble/LoadDouble can probably also be handled correctly with unions, so long as, in\n\n```\nunion { char bytes[sizeof(double)], double d};\n```\n\none can rely on bytes including all the data of double. Does anyone know anything about this? Otherwise might be better to use void * and memcopy or something like that.\n\n       Steve\"",
     "created_at": "2010-04-28T19:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
@@ -545,7 +553,6 @@ SaveDouble/LoadDouble can probably also be handled correctly with unions, so lon
 ```
 union { char bytes[sizeof(double)], double d};
 ```
-
 
 one can rely on bytes including all the data of double. Does anyone know anything about this? Otherwise might be better to use void * and memcopy or something like that.
 

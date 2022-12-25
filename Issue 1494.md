@@ -3,7 +3,7 @@
 archive/issues_001494.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: O = K.maximal_order()\nsage: K(O.1)\nTraceback (most recent call last):\n...\nTypeError: Cannot coerce element into this number field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1494\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: O = K.maximal_order()\nsage: K(O.1)\nTraceback (most recent call last):\n...\nTypeError: Cannot coerce element into this number field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1494\n\n",
     "created_at": "2007-12-13T22:08:23Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_001494.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: K.<z> = CyclotomicField(7)
 sage: O = K.maximal_order()
@@ -27,7 +26,6 @@ Traceback (most recent call last):
 ...
 TypeError: Cannot coerce element into this number field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1494
 

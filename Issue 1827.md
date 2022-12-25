@@ -213,7 +213,7 @@ Resolution: fixed
 archive/issue_comments_011546.json:
 ```json
 {
-    "body": "OK, I take this back. \n\nIt used to be that some multiplication code was written as \n\n\n```\ndef _lmul_(self, other):\n    if not other:\n        return other\n    ...\n```\n\n\nThis would succeed when other was ANY type with bool(other) == False, and an_element was used to construct `other` to pass in and try it out (in the action detection code) which would cause it to succeed and this \"valid\" action would get cached (resulting in a error or segfault when a non-zero `other` was passed. \n\nIt now forces other to be an element of self.parent().base_ring(), which solves this problem.",
+    "body": "OK, I take this back. \n\nIt used to be that some multiplication code was written as \n\n```\ndef _lmul_(self, other):\n    if not other:\n        return other\n    ...\n```\n\nThis would succeed when other was ANY type with bool(other) == False, and an_element was used to construct `other` to pass in and try it out (in the action detection code) which would cause it to succeed and this \"valid\" action would get cached (resulting in a error or segfault when a non-zero `other` was passed. \n\nIt now forces other to be an element of self.parent().base_ring(), which solves this problem.",
     "created_at": "2008-01-19T19:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1827",
     "type": "issue_comment",
@@ -226,14 +226,12 @@ OK, I take this back.
 
 It used to be that some multiplication code was written as 
 
-
 ```
 def _lmul_(self, other):
     if not other:
         return other
     ...
 ```
-
 
 This would succeed when other was ANY type with bool(other) == False, and an_element was used to construct `other` to pass in and try it out (in the action detection code) which would cause it to succeed and this "valid" action would get cached (resulting in a error or segfault when a non-zero `other` was passed. 
 

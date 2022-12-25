@@ -3,7 +3,7 @@
 archive/issues_006628.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
     "created_at": "2009-07-26T13:59:05Z",
     "labels": [
         "component: commutative algebra"
@@ -23,7 +23,6 @@ Keywords: singular, libsingular, commutative algebra
 
 The attached patch implements the following:
 
-
 ```
 sage: P = PolynomialRing(GF(127),10,'x')
 sage: I = Ideal(P.random_element() for _ in range(3000))
@@ -35,9 +34,7 @@ Wall time: 0.08 s
 [1]
 ```
 
-
 For comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)
-
 
 ```
 sage: %time I.groebner_basis()
@@ -45,7 +42,6 @@ CPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s
 Wall time: 1.92 s
 [1]
 ```
-
 
 This patch requires an updated Singular SPKG (see below).
 
@@ -97,7 +93,7 @@ Burcin, I just replaced the patch to fix a doctest failure.
 archive/issue_comments_054193.json:
 ```json
 {
-    "body": "Btw. this also works now:\n\n\n```\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: groebner?\nType:           SingularLibraryFunction\nBase Class:     <type 'sage.libs.singular.function.SingularLibraryFunction'>\nString Form:    groebner (singular function)\nNamespace:      Interactive\nFile:           /usr/local/sage-4.1/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nDocstring:\n\n    groebner\n    --------\n\n    Procedure from library `standard.lib' (*note standard_lib::).\n\n    *Syntax:*\n         `groebner (' ideal_expression `)'\n         `groebner (' module_expression `)'\n         `groebner (' ideal_expression`,' int_expression `)'\n         `groebner (' module_expression`,' int_expression `)'\n...\n```\n",
+    "body": "Btw. this also works now:\n\n```\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: groebner?\nType:           SingularLibraryFunction\nBase Class:     <type 'sage.libs.singular.function.SingularLibraryFunction'>\nString Form:    groebner (singular function)\nNamespace:      Interactive\nFile:           /usr/local/sage-4.1/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nDocstring:\n\n    groebner\n    --------\n\n    Procedure from library `standard.lib' (*note standard_lib::).\n\n    *Syntax:*\n         `groebner (' ideal_expression `)'\n         `groebner (' module_expression `)'\n         `groebner (' ideal_expression`,' int_expression `)'\n         `groebner (' module_expression`,' int_expression `)'\n...\n```",
     "created_at": "2009-07-26T15:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -107,7 +103,6 @@ archive/issue_comments_054193.json:
 ```
 
 Btw. this also works now:
-
 
 ```
 sage: from sage.libs.singular.function import singular_function, lib
@@ -135,13 +130,12 @@ Docstring:
 
 
 
-
 ---
 
 archive/issue_comments_054194.json:
 ```json
 {
-    "body": "Hi!\nIt looks very promosing.\nHowever, I have difficulties to apply the patch.\nUsing sage-4.1.0 and the updated singular spkg:\n\nI tried it with and without the refactoring patch, also using a fresh installation:\n\n```\nsage -hg import ~/Downloads/libsingular_functions.patch \napplying /Users/michael/Downloads/libsingular_functions.patch\npatching file module_list.py\nHunk #1 FAILED at 441\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\nunable to find 'sage/libs/singular/polynomial.pyx' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #3 FAILED at 207\nHunk #4 succeeded at 215 with fuzz 2 (offset -43 lines).\nHunk #7 FAILED at 853\n2 out of 7 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\npatching file sage/libs/singular/singular.pxd\nHunk #1 FAILED at 0\nHunk #2 FAILED at 26\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pxd.rej\npatching file sage/libs/singular/singular.pyx\nHunk #1 FAILED at 24\nHunk #2 succeeded at 514 with fuzz 2 (offset -15 lines).\nHunk #3 FAILED at 593\n2 out of 3 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pyx.rej\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #1 FAILED at 1906\nHunk #2 FAILED at 2019\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\n```\n\nMichael",
+    "body": "Hi!\nIt looks very promosing.\nHowever, I have difficulties to apply the patch.\nUsing sage-4.1.0 and the updated singular spkg:\n\nI tried it with and without the refactoring patch, also using a fresh installation:\n\n```\nsage -hg import ~/Downloads/libsingular_functions.patch \napplying /Users/michael/Downloads/libsingular_functions.patch\npatching file module_list.py\nHunk #1 FAILED at 441\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\nunable to find 'sage/libs/singular/polynomial.pyx' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #3 FAILED at 207\nHunk #4 succeeded at 215 with fuzz 2 (offset -43 lines).\nHunk #7 FAILED at 853\n2 out of 7 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\npatching file sage/libs/singular/singular.pxd\nHunk #1 FAILED at 0\nHunk #2 FAILED at 26\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pxd.rej\npatching file sage/libs/singular/singular.pyx\nHunk #1 FAILED at 24\nHunk #2 succeeded at 514 with fuzz 2 (offset -15 lines).\nHunk #3 FAILED at 593\n2 out of 3 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pyx.rej\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #1 FAILED at 1906\nHunk #2 FAILED at 2019\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\n```\nMichael",
     "created_at": "2009-07-27T07:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -184,7 +178,6 @@ Hunk #1 FAILED at 1906
 Hunk #2 FAILED at 2019
 2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej
 ```
-
 Michael
 
 
@@ -239,7 +232,7 @@ From the Singular side, this nontrivial patch looks fine.
 archive/issue_comments_054197.json:
 ```json
 {
-    "body": "Here some different timings with even better factor: opposite kind of example: very tiny input, output and almost nothing to compute, replaces some\nsingular interpreter call via pexpect with libsingular kernel function call\n\n\n```python\nfrom sage.libs.singular import function as sf\nintersect=sf.SingularKernelFunction(\"intersect\")\nsage: P.<x,y,z>=QQ[]\nsage: j=P.ideal(x,z)\nsage: i=P.ideal(x,y)\nsage: timeit(\"z=i.intersection(j)\")\n125 loops, best of 3: 5.12 ms per loop\nsage: timeit(\"z=intersect(i,j)\")\n625 loops, best of 3: 60.9 \u00b5s per loop\n\n```\n",
+    "body": "Here some different timings with even better factor: opposite kind of example: very tiny input, output and almost nothing to compute, replaces some\nsingular interpreter call via pexpect with libsingular kernel function call\n\n```python\nfrom sage.libs.singular import function as sf\nintersect=sf.SingularKernelFunction(\"intersect\")\nsage: P.<x,y,z>=QQ[]\nsage: j=P.ideal(x,z)\nsage: i=P.ideal(x,y)\nsage: timeit(\"z=i.intersection(j)\")\n125 loops, best of 3: 5.12 ms per loop\nsage: timeit(\"z=intersect(i,j)\")\n625 loops, best of 3: 60.9 \u00b5s per loop\n\n```",
     "created_at": "2009-07-29T07:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -250,7 +243,6 @@ archive/issue_comments_054197.json:
 
 Here some different timings with even better factor: opposite kind of example: very tiny input, output and almost nothing to compute, replaces some
 singular interpreter call via pexpect with libsingular kernel function call
-
 
 ```python
 from sage.libs.singular import function as sf
@@ -267,13 +259,12 @@ sage: timeit("z=intersect(i,j)")
 
 
 
-
 ---
 
 archive/issue_comments_054198.json:
 ```json
 {
-    "body": "It seems this patch makes docbuild choke because\n\n\n```\ngroebner\n--------\n```\n\n\nis contained in one docstring.",
+    "body": "It seems this patch makes docbuild choke because\n\n```\ngroebner\n--------\n```\n\nis contained in one docstring.",
     "created_at": "2009-08-04T11:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -284,12 +275,10 @@ archive/issue_comments_054198.json:
 
 It seems this patch makes docbuild choke because
 
-
 ```
 groebner
 --------
 ```
-
 
 is contained in one docstring.
 
@@ -318,7 +307,7 @@ fixed in updated patch.
 archive/issue_comments_054200.json:
 ```json
 {
-    "body": "On IRC:\n\n```\n[13:02] <mvngu> malb: The package singular-3-1-0-4-20090723.spkg compiles OK on t2!\n```\n",
+    "body": "On IRC:\n\n```\n[13:02] <mvngu> malb: The package singular-3-1-0-4-20090723.spkg compiles OK on t2!\n```",
     "created_at": "2009-08-04T12:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -332,7 +321,6 @@ On IRC:
 ```
 [13:02] <mvngu> malb: The package singular-3-1-0-4-20090723.spkg compiles OK on t2!
 ```
-
 
 
 
@@ -421,7 +409,7 @@ The referee patch looks good. I think the next step would be to port stuff in `m
 archive/issue_comments_054205.json:
 ```json
 {
-    "body": "Replying to [comment:13 malb]:\n> The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.\n\nIndeed.  I'm expecting awesomeness (more Singular functionality readily exposed in Sage), speed, and the occasional bug fix.\n\nI'll try to have a look at #6596 soon, but it's a bit bigger, and it will probably take a few days.",
+    "body": "Replying to [comment:13 malb]:\n> The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.\n\n\nIndeed.  I'm expecting awesomeness (more Singular functionality readily exposed in Sage), speed, and the occasional bug fix.\n\nI'll try to have a look at #6596 soon, but it's a bit bigger, and it will probably take a few days.",
     "created_at": "2009-08-20T11:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
@@ -432,6 +420,7 @@ archive/issue_comments_054205.json:
 
 Replying to [comment:13 malb]:
 > The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.
+
 
 Indeed.  I'm expecting awesomeness (more Singular functionality readily exposed in Sage), speed, and the occasional bug fix.
 

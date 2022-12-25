@@ -106,7 +106,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_074597.json:
 ```json
 {
-    "body": "The commit message is nonsensical:\n\n```\n[mq]: trac_8362_doc_fix-sl.patch\n```\n\n**Note to release manager:** When merging the patch, qrefresh and replace the above message with a sensible commit message such as:\n\n```\n#8362: Fix typo in documentation of Disjoint Union of Enumerated Sets\n```\n",
+    "body": "The commit message is nonsensical:\n\n```\n[mq]: trac_8362_doc_fix-sl.patch\n```\n**Note to release manager:** When merging the patch, qrefresh and replace the above message with a sensible commit message such as:\n\n```\n#8362: Fix typo in documentation of Disjoint Union of Enumerated Sets\n```",
     "created_at": "2010-02-26T01:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
@@ -120,13 +120,11 @@ The commit message is nonsensical:
 ```
 [mq]: trac_8362_doc_fix-sl.patch
 ```
-
 **Note to release manager:** When merging the patch, qrefresh and replace the above message with a sensible commit message such as:
 
 ```
 #8362: Fix typo in documentation of Disjoint Union of Enumerated Sets
 ```
-
 
 
 
@@ -153,7 +151,7 @@ Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_074599.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> The commit message is nonsensical:\n\nI just fixed the commit message. The release manager won't need to do it.\n\nS\u00e9bstien",
+    "body": "Replying to [comment:4 mvngu]:\n> The commit message is nonsensical:\n\n\nI just fixed the commit message. The release manager won't need to do it.\n\nS\u00e9bstien",
     "created_at": "2010-02-26T15:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
@@ -164,6 +162,7 @@ archive/issue_comments_074599.json:
 
 Replying to [comment:4 mvngu]:
 > The commit message is nonsensical:
+
 
 I just fixed the commit message. The release manager won't need to do it.
 

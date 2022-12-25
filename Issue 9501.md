@@ -3,7 +3,7 @@
 archive/issues_009501.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  mvngu\n\nSimon King mentioned that sometimes his code crashes/leaks/etc.  So make it so one can do:\n\n```\n@fork\ndef f(x,y,z,...):\n    ...\n```\n\nand then f gets computed in a blocking forked process, and the result is returned via pickling. This is 100% to thwart mem leaks, segfaults, and guaranteed timeout possibility.   This could be basically just a light wrapper around `@`parallel(1).  Also, make a global flag to turn this off, so `@`fork does nothing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9501\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  mvngu\n\nSimon King mentioned that sometimes his code crashes/leaks/etc.  So make it so one can do:\n\n```\n@fork\ndef f(x,y,z,...):\n    ...\n```\nand then f gets computed in a blocking forked process, and the result is returned via pickling. This is 100% to thwart mem leaks, segfaults, and guaranteed timeout possibility.   This could be basically just a light wrapper around `@`parallel(1).  Also, make a global flag to turn this off, so `@`fork does nothing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9501\n\n",
     "created_at": "2010-07-14T22:32:17Z",
     "labels": [
         "component: misc",
@@ -27,7 +27,6 @@ Simon King mentioned that sometimes his code crashes/leaks/etc.  So make it so o
 def f(x,y,z,...):
     ...
 ```
-
 and then f gets computed in a blocking forked process, and the result is returned via pickling. This is 100% to thwart mem leaks, segfaults, and guaranteed timeout possibility.   This could be basically just a light wrapper around `@`parallel(1).  Also, make a global flag to turn this off, so `@`fork does nothing.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9501
@@ -102,7 +101,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091085.json:
 ```json
 {
-    "body": "\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage/sage/parallel/decorate.py\", line 292:\n\n    sage: g()\n\nExpected:\n\n    '10'\n\nGot:\n\n    [Errno 16] Device or resource busy: '/home/malb/.sage/temp/sage.math.washington.edu/29514/dir_0/.nfs000000000482d3cd00028d9f'\n\n    '10'\n\n**********************************************************************\n\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage/sage/parallel/decorate.py\", line 303:\n\n    sage: g()\n\nExpected:\n\n    'a'\n\nGot:\n\n    [Errno 16] Device or resource busy: '/home/malb/.sage/temp/sage.math.washington.edu/29514/dir_1/.nfs000000000482d3d300028da0'\n\n    'a'\n\n\n```\n",
+    "body": "```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage/sage/parallel/decorate.py\", line 292:\n\n    sage: g()\n\nExpected:\n\n    '10'\n\nGot:\n\n    [Errno 16] Device or resource busy: '/home/malb/.sage/temp/sage.math.washington.edu/29514/dir_0/.nfs000000000482d3cd00028d9f'\n\n    '10'\n\n**********************************************************************\n\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage/sage/parallel/decorate.py\", line 303:\n\n    sage: g()\n\nExpected:\n\n    'a'\n\nGot:\n\n    [Errno 16] Device or resource busy: '/home/malb/.sage/temp/sage.math.washington.edu/29514/dir_1/.nfs000000000482d3d300028da0'\n\n    'a'\n\n\n```",
     "created_at": "2010-07-15T18:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_comment",
@@ -110,7 +109,6 @@ archive/issue_comments_091085.json:
     "user": "https://github.com/malb"
 }
 ```
-
 
 ```
 File "/mnt/usb1/scratch/malb/sage-4.4/devel/sage/sage/parallel/decorate.py", line 292:
@@ -145,7 +143,6 @@ Got:
 
 
 ```
-
 
 
 
@@ -338,7 +335,7 @@ Patch looks good, tests passed.
 archive/issue_comments_091096.json:
 ```json
 {
-    "body": "I think the 'warning' sections need to be in proper REsT format, which I *think* (but won't guarantee) should look more like\n\n```\n.. warning::\n```\n\nor something like that.  I'm cc:ing mvngu since he will know :)",
+    "body": "I think the 'warning' sections need to be in proper REsT format, which I *think* (but won't guarantee) should look more like\n\n```\n.. warning::\n```\nor something like that.  I'm cc:ing mvngu since he will know :)",
     "created_at": "2010-07-16T14:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_comment",
@@ -352,7 +349,6 @@ I think the 'warning' sections need to be in proper REsT format, which I *think*
 ```
 .. warning::
 ```
-
 or something like that.  I'm cc:ing mvngu since he will know :)
 
 
@@ -380,7 +376,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_091098.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> I think the 'warning' sections need to be in proper REsT format, which I *think* (but won't guarantee) should look more like\n\n```\n.. warning::\n```\n\n> or something like that.\n\nThat's right. See [this section](http://sphinx.pocoo.org/markup/para.html#dir-warning) of the Sphinx reference manual.",
+    "body": "Replying to [comment:12 kcrisman]:\n> I think the 'warning' sections need to be in proper REsT format, which I *think* (but won't guarantee) should look more like\n\n{{{\n.. warning::\n}}}\n> or something like that.\n\n\nThat's right. See [this section](http://sphinx.pocoo.org/markup/para.html#dir-warning) of the Sphinx reference manual.",
     "created_at": "2010-07-17T02:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9501",
     "type": "issue_comment",
@@ -392,11 +388,11 @@ archive/issue_comments_091098.json:
 Replying to [comment:12 kcrisman]:
 > I think the 'warning' sections need to be in proper REsT format, which I *think* (but won't guarantee) should look more like
 
-```
+{{{
 .. warning::
-```
-
+}}}
 > or something like that.
+
 
 That's right. See [this section](http://sphinx.pocoo.org/markup/para.html#dir-warning) of the Sphinx reference manual.
 

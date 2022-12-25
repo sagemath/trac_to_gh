@@ -3,7 +3,7 @@
 archive/issues_002770.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be great to have a plot_region function which would plot a region where a system of equations/inequalities were true.\n\nHere is an initial version:\n\n\n```\ndef plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):\n    if not isinstance(funcs, (list, tuple)):\n        funcs = [funcs]\n    hvar, hmin, hmax = var1_range\n    vvar, vmin, vmax = var2_range\n    funcs = prod([f._fast_float_(\"%r\"%hvar, \"%r\"%vvar) for f in funcs])\n    return contour_plot(funcs, var1_range, var2_range, plot_points=plot_points,**kwds)\n```\n\n\nThis uses an idea from cwitty (to use contour_plot) and the patch from #2768.  A screenshot is attached below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2770\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be great to have a plot_region function which would plot a region where a system of equations/inequalities were true.\n\nHere is an initial version:\n\n```\ndef plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):\n    if not isinstance(funcs, (list, tuple)):\n        funcs = [funcs]\n    hvar, hmin, hmax = var1_range\n    vvar, vmin, vmax = var2_range\n    funcs = prod([f._fast_float_(\"%r\"%hvar, \"%r\"%vvar) for f in funcs])\n    return contour_plot(funcs, var1_range, var2_range, plot_points=plot_points,**kwds)\n```\n\nThis uses an idea from cwitty (to use contour_plot) and the patch from #2768.  A screenshot is attached below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2770\n\n",
     "created_at": "2008-04-02T07:49:40Z",
     "labels": [
         "component: graphics"
@@ -21,7 +21,6 @@ It would be great to have a plot_region function which would plot a region where
 
 Here is an initial version:
 
-
 ```
 def plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):
     if not isinstance(funcs, (list, tuple)):
@@ -31,7 +30,6 @@ def plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):
     funcs = prod([f._fast_float_("%r"%hvar, "%r"%vvar) for f in funcs])
     return contour_plot(funcs, var1_range, var2_range, plot_points=plot_points,**kwds)
 ```
-
 
 This uses an idea from cwitty (to use contour_plot) and the patch from #2768.  A screenshot is attached below.
 
@@ -162,7 +160,7 @@ archive/issue_comments_018995.json:
 archive/issue_comments_018996.json:
 ```json
 {
-    "body": "This has some odd behavior which I hope the author could please comment on:\n\nThis looks good:\n\n```\nsage: P1 = region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3), incol='green', bordercol='red')\nsage: show(P1)\n```\n\n\nThis looks very odd (wrong but maybe the algorithm just needs more points?):\n\n```\nsage: P2 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', bordercol='red')\nsage: show(P2)\n```\n\n\nThis looks plain wrong (and I think we have provided enough points:-):\n\n\n```\nsage: P3 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', bordercol='red', plot_points=1000)\nsage: show(P3)\n```\n",
+    "body": "This has some odd behavior which I hope the author could please comment on:\n\nThis looks good:\n\n```\nsage: P1 = region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3), incol='green', bordercol='red')\nsage: show(P1)\n```\n\nThis looks very odd (wrong but maybe the algorithm just needs more points?):\n\n```\nsage: P2 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', bordercol='red')\nsage: show(P2)\n```\n\nThis looks plain wrong (and I think we have provided enough points:-):\n\n```\nsage: P3 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', bordercol='red', plot_points=1000)\nsage: show(P3)\n```",
     "created_at": "2008-12-30T05:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -180,7 +178,6 @@ sage: P1 = region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3), incol='green', borde
 sage: show(P1)
 ```
 
-
 This looks very odd (wrong but maybe the algorithm just needs more points?):
 
 ```
@@ -188,15 +185,12 @@ sage: P2 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', b
 sage: show(P2)
 ```
 
-
 This looks plain wrong (and I think we have provided enough points:-):
-
 
 ```
 sage: P3 = region_plot(cos(x^2+y^2) <= 0, (-30, 30), (-30, 30), incol='green', bordercol='red', plot_points=1000)
 sage: show(P3)
 ```
-
 
 
 
@@ -247,7 +241,7 @@ For this example, plot_points=400 looks much more reasonable.
 archive/issue_comments_018999.json:
 ```json
 {
-    "body": "Okay, thanks for that explanation. This is a useful patch.\n\nMy impression is that if it can't be easily fixed, then at least it should be documented how to adjust the parameters to get proper behaviour. I'm guessing that the people who will use this patch are students and teachers, so the more detailed examples the better:-) Does this seem reasonable?\n\nWith that's I'd be prepared to give it a positive review.\n\nOther cool examples you could include:\n\n```\nsage: region_plot(x*(x-1)*(x+1)+y^2<0, (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)\nsage: region_plot([x*(x-1)*(x+1)+y^2<0, x>-1], (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)\n```\n\nAnd one similar to Jason's:\n\n```\nsage: P = region_plot([x^2+y^2<4, x>-1], (-2, 2), (-2, 2), incol='lightblue', bordercol='gray', plot_points=400)\nsage: P.show(aspect_ratio=1)\n```\n\n(I know you have \n\n\n```\nregion_plot([x^2+y^2<1, x<y], (-2,2), (-2,2)) \n```\n\nbut it looks odd without the aspect ratio set.)\n\nDo these seem reasonable Arnaud?",
+    "body": "Okay, thanks for that explanation. This is a useful patch.\n\nMy impression is that if it can't be easily fixed, then at least it should be documented how to adjust the parameters to get proper behaviour. I'm guessing that the people who will use this patch are students and teachers, so the more detailed examples the better:-) Does this seem reasonable?\n\nWith that's I'd be prepared to give it a positive review.\n\nOther cool examples you could include:\n\n```\nsage: region_plot(x*(x-1)*(x+1)+y^2<0, (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)\nsage: region_plot([x*(x-1)*(x+1)+y^2<0, x>-1], (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)\n```\nAnd one similar to Jason's:\n\n```\nsage: P = region_plot([x^2+y^2<4, x>-1], (-2, 2), (-2, 2), incol='lightblue', bordercol='gray', plot_points=400)\nsage: P.show(aspect_ratio=1)\n```\n(I know you have \n\n```\nregion_plot([x^2+y^2<1, x<y], (-2,2), (-2,2)) \n```\nbut it looks odd without the aspect ratio set.)\n\nDo these seem reasonable Arnaud?",
     "created_at": "2008-12-30T06:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2770",
     "type": "issue_comment",
@@ -268,21 +262,17 @@ Other cool examples you could include:
 sage: region_plot(x*(x-1)*(x+1)+y^2<0, (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)
 sage: region_plot([x*(x-1)*(x+1)+y^2<0, x>-1], (-3, 2), (-3, 3), incol='lightblue', bordercol='gray', plot_points=400)
 ```
-
 And one similar to Jason's:
 
 ```
 sage: P = region_plot([x^2+y^2<4, x>-1], (-2, 2), (-2, 2), incol='lightblue', bordercol='gray', plot_points=400)
 sage: P.show(aspect_ratio=1)
 ```
-
 (I know you have 
-
 
 ```
 region_plot([x^2+y^2<1, x<y], (-2,2), (-2,2)) 
 ```
-
 but it looks odd without the aspect ratio set.)
 
 Do these seem reasonable Arnaud?

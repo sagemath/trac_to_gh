@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8112
 archive/issue_comments_071094.json:
 ```json
 {
-    "body": "Here is an spkg:\n[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libflint.so \nlocal/lib/libflint.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n\n```\n\n\nJaap",
+    "body": "Here is an spkg:\n[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libflint.so \nlocal/lib/libflint.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n\n```\n\nJaap",
     "created_at": "2010-01-28T16:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -48,13 +48,11 @@ Here is an spkg:
 [http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)
 
 
-
 ```
 jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libflint.so 
 local/lib/libflint.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 
 ```
-
 
 Jaap
 
@@ -83,7 +81,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071096.json:
 ```json
 {
-    "body": "It's not clear to me what is intended here. \n\n* There is no such thing as CXXFLAG. Did you mean CXXFLAGS? \n* The point of CFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C compiler, which -m64 in most, but not all cases. \n* The point of CXXFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C++ compiler, which -m64 in most, but not all cases. \n\n\nIf Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 to -m64, then I would not bother patching Flint at all. Just set those two environments variables. They will not mess up the build process in any way, and since they are variables, they could be set to something else. Setting CFLAGS is known to cause problems, but setting CFLAG64 or CXXFLAG64 will not cause any problems. \n\nIf you do need to patch this again, then you can remove this code:\n\n\n```\n./test_gcc_version.sh\nif [ $? -ne 0 ]; then\n   echo \"GCC version less than 3.4.0\"\n   echo \"Flint will not be able to compile successfully\"\n   exit 1\nfi\n```\n\n\nsince 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. \n\nThinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type\n\n\n```\n$ CFLAG64=-m64\n$ export CFLAG64\n$ CXXFLAG64=-m64\n$ export CXXFLAG64\n```\n\n\nuntil such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. \n\nI suspect this ticket can be closed as 'wontfix' as no fixes are needed, but I may be wrong. \n\nDave",
+    "body": "It's not clear to me what is intended here. \n\n* There is no such thing as CXXFLAG. Did you mean CXXFLAGS? \n* The point of CFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C compiler, which -m64 in most, but not all cases. \n* The point of CXXFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C++ compiler, which -m64 in most, but not all cases. \n\n\nIf Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 to -m64, then I would not bother patching Flint at all. Just set those two environments variables. They will not mess up the build process in any way, and since they are variables, they could be set to something else. Setting CFLAGS is known to cause problems, but setting CFLAG64 or CXXFLAG64 will not cause any problems. \n\nIf you do need to patch this again, then you can remove this code:\n\n```\n./test_gcc_version.sh\nif [ $? -ne 0 ]; then\n   echo \"GCC version less than 3.4.0\"\n   echo \"Flint will not be able to compile successfully\"\n   exit 1\nfi\n```\n\nsince 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. \n\nThinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type\n\n```\n$ CFLAG64=-m64\n$ export CFLAG64\n$ CXXFLAG64=-m64\n$ export CXXFLAG64\n```\n\nuntil such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. \n\nI suspect this ticket can be closed as 'wontfix' as no fixes are needed, but I may be wrong. \n\nDave",
     "created_at": "2010-01-29T18:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -103,7 +101,6 @@ If Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 t
 
 If you do need to patch this again, then you can remove this code:
 
-
 ```
 ./test_gcc_version.sh
 if [ $? -ne 0 ]; then
@@ -113,11 +110,9 @@ if [ $? -ne 0 ]; then
 fi
 ```
 
-
 since 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. 
 
 Thinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type
-
 
 ```
 $ CFLAG64=-m64
@@ -125,7 +120,6 @@ $ export CFLAG64
 $ CXXFLAG64=-m64
 $ export CXXFLAG64
 ```
-
 
 until such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. 
 
@@ -158,7 +152,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071098.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> It's not clear to me what is intended here. \n> \n>  * There is no such thing as CXXFLAG. Did you mean CXXFLAGS? \n\nI don't see anything alike in the patch file!?\n\n>  * The point of CFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C compiler, which -m64 in most, but not all cases. \n>  * The point of CXXFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C++ compiler, which -m64 in most, but not all cases. \n> \n> \n> If Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 to -m64, then I would not bother patching Flint at all. Just set those two environments variables. They will not mess up the build process in any way, and since they are variables, they could be set to something else. Setting CFLAGS is known to cause problems, but setting CFLAG64 or CXXFLAG64 will not cause any problems. \n> \n\nAre you shure flint will build that way?\n\n\n> If you do need to patch this again, then you can remove this code:\n> \n> {{{\n> ./test_gcc_version.sh\n> if [ $? -ne 0 ]; then\n>    echo \"GCC version less than 3.4.0\"\n>    echo \"Flint will not be able to compile successfully\"\n>    exit 1\n> fi\n> }}}\n> \n> since 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. \n> \n> Thinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type\n> \n> {{{\n> $ CFLAG64=-m64\n> $ export CFLAG64\n> $ CXXFLAG64=-m64\n> $ export CXXFLAG64\n> }}}\n> \n> until such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. \n> \n> I suspect this ticket can be closed as 'wontfix' as no fixes are needed, but I may be wrong. \n> \n\nWe'll see.\n\n\n> Dave \n>",
+    "body": "Replying to [comment:2 drkirkby]:\n> It's not clear to me what is intended here. \n> \n> * There is no such thing as CXXFLAG. Did you mean CXXFLAGS? \n\n\nI don't see anything alike in the patch file!?\n\n>  * The point of CFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C compiler, which -m64 in most, but not all cases. \n>  * The point of CXXFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C++ compiler, which -m64 in most, but not all cases. \n \n> \n> \n> If Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 to -m64, then I would not bother patching Flint at all. Just set those two environments variables. They will not mess up the build process in any way, and since they are variables, they could be set to something else. Setting CFLAGS is known to cause problems, but setting CFLAG64 or CXXFLAG64 will not cause any problems. \n> \n\n\nAre you shure flint will build that way?\n\n\n> If you do need to patch this again, then you can remove this code:\n> \n> \n> ```\n> ./test_gcc_version.sh\n> if [ $? -ne 0 ]; then\n>    echo \"GCC version less than 3.4.0\"\n>    echo \"Flint will not be able to compile successfully\"\n>    exit 1\n> fi\n> ```\n> \n> since 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. \n> \n> Thinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type\n> \n> \n> ```\n> $ CFLAG64=-m64\n> $ export CFLAG64\n> $ CXXFLAG64=-m64\n> $ export CXXFLAG64\n> ```\n> \n> until such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. \n> \n> I suspect this ticket can be closed as 'wontfix' as no fixes are needed, but I may be wrong. \n> \n\n\nWe'll see.\n\n\n> Dave \n\n>",
     "created_at": "2010-01-29T19:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -170,51 +164,58 @@ archive/issue_comments_071098.json:
 Replying to [comment:2 drkirkby]:
 > It's not clear to me what is intended here. 
 > 
->  * There is no such thing as CXXFLAG. Did you mean CXXFLAGS? 
+> * There is no such thing as CXXFLAG. Did you mean CXXFLAGS? 
+
 
 I don't see anything alike in the patch file!?
 
 >  * The point of CFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C compiler, which -m64 in most, but not all cases. 
 >  * The point of CXXFLAG64 is that it would be set to whatever flag is needed to build 64 bit executables with a C++ compiler, which -m64 in most, but not all cases. 
+ 
 > 
 > 
 > If Flint will build by setting the environment variables CFLAG64 and CXXFLAG64 to -m64, then I would not bother patching Flint at all. Just set those two environments variables. They will not mess up the build process in any way, and since they are variables, they could be set to something else. Setting CFLAGS is known to cause problems, but setting CFLAG64 or CXXFLAG64 will not cause any problems. 
 > 
+
 
 Are you shure flint will build that way?
 
 
 > If you do need to patch this again, then you can remove this code:
 > 
-> {{{
+> 
+> ```
 > ./test_gcc_version.sh
 > if [ $? -ne 0 ]; then
 >    echo "GCC version less than 3.4.0"
 >    echo "Flint will not be able to compile successfully"
 >    exit 1
 > fi
-> }}}
+> ```
 > 
 > since 'prereq' will ensure that gcc is at least 4.0.1. That also means the file test_gcc_version.sh can be removed, as it is now redundant. 
 > 
 > Thinking about this 64-bit patching process in general, it is better to simply use CFLAG64 and CXXFLAG64 rather than -m64, and simply document the user must type
 > 
-> {{{
+> 
+> ```
 > $ CFLAG64=-m64
 > $ export CFLAG64
 > $ CXXFLAG64=-m64
 > $ export CXXFLAG64
-> }}}
+> ```
 > 
 > until such time as sage-env is updated. At which point, that will be unnecessary to do. That will avoid -m64 ever having to be hard-coded again, which is a good thing, as not all compilers accept that flag. 
 > 
 > I suspect this ticket can be closed as 'wontfix' as no fixes are needed, but I may be wrong. 
 > 
 
+
 We'll see.
 
 
 > Dave 
+
 >
 
 
@@ -242,7 +243,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071100.json:
 ```json
 {
-    "body": "Maybe the description was somewhat misleading or I was unclear over the meaning of this.\n\nWhat I propose is:\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   FLINT_TUNE=\" -fPIC -m64 -funroll-loops\"\n   export CFLAGS=\"$CFLAGS -m64\"\n   export CXXFLAGS=\"$CXXFLAGS -m64\"\n   export CFLAG64=\"$CFLAG64 -m64\"\n   export CXXFLAG64=\"$CXXFLAG -m64\"\nfi\n\n```\n\n\nNow if CFLAGS is empty the -m64 gets in.\n\nSee the patch.\n\nJaap",
+    "body": "Maybe the description was somewhat misleading or I was unclear over the meaning of this.\n\nWhat I propose is:\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   FLINT_TUNE=\" -fPIC -m64 -funroll-loops\"\n   export CFLAGS=\"$CFLAGS -m64\"\n   export CXXFLAGS=\"$CXXFLAGS -m64\"\n   export CFLAG64=\"$CFLAG64 -m64\"\n   export CXXFLAG64=\"$CXXFLAG -m64\"\nfi\n\n```\n\nNow if CFLAGS is empty the -m64 gets in.\n\nSee the patch.\n\nJaap",
     "created_at": "2010-01-31T16:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -255,7 +256,6 @@ Maybe the description was somewhat misleading or I was unclear over the meaning 
 
 What I propose is:
 
-
 ```
 if [ "x$SAGE64" = xyes ]; then
    FLINT_TUNE=" -fPIC -m64 -funroll-loops"
@@ -266,7 +266,6 @@ if [ "x$SAGE64" = xyes ]; then
 fi
 
 ```
-
 
 Now if CFLAGS is empty the -m64 gets in.
 
@@ -355,7 +354,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071104.json:
 ```json
 {
-    "body": "Done as you suggested. We pass $CFLAG64 to FLINT_TUNE if SAGE64=yes.\nBut export CXXFLAG64 appropriate. See makefile.\n\n\n```\n# Since this code uses the C++ compiler as a linker to produce\n# a library, the -m64 (or equivalent) option must be provided, as it\n# it is in the line above where the target is libflint.dylib64\n\nlibflint.so: $(FLINTOBJ)\n        $(CPP) $(CXXFLAG64) -fPIC -shared -o libflint.so $(FLINTOBJ) $(LIBS)\n```\n\n\n\n\n```\nFound gcc 4 or later\ng++  -m64 -fPIC -shared -o libflint.so zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/ -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/  -lgmp -lpthread -lntl -lm \nDeleting old FLINT\nInstalling new library file\n\n```\n\n\n\nNew spkg with the same name:\n[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)\n\n\nJaap",
+    "body": "Done as you suggested. We pass $CFLAG64 to FLINT_TUNE if SAGE64=yes.\nBut export CXXFLAG64 appropriate. See makefile.\n\n```\n# Since this code uses the C++ compiler as a linker to produce\n# a library, the -m64 (or equivalent) option must be provided, as it\n# it is in the line above where the target is libflint.dylib64\n\nlibflint.so: $(FLINTOBJ)\n        $(CPP) $(CXXFLAG64) -fPIC -shared -o libflint.so $(FLINTOBJ) $(LIBS)\n```\n\n\n```\nFound gcc 4 or later\ng++  -m64 -fPIC -shared -o libflint.so zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/ -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/  -lgmp -lpthread -lntl -lm \nDeleting old FLINT\nInstalling new library file\n\n```\n\n\nNew spkg with the same name:\n[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)\n\n\nJaap",
     "created_at": "2010-02-23T16:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -367,7 +366,6 @@ archive/issue_comments_071104.json:
 Done as you suggested. We pass $CFLAG64 to FLINT_TUNE if SAGE64=yes.
 But export CXXFLAG64 appropriate. See makefile.
 
-
 ```
 # Since this code uses the C++ compiler as a linker to produce
 # a library, the -m64 (or equivalent) option must be provided, as it
@@ -378,8 +376,6 @@ libflint.so: $(FLINTOBJ)
 ```
 
 
-
-
 ```
 Found gcc 4 or later
 g++  -m64 -fPIC -shared -o libflint.so zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/ -L/export/home/jaap/Downloads/sage-4.3.3.alpha1/local/lib/  -lgmp -lpthread -lntl -lm 
@@ -387,7 +383,6 @@ Deleting old FLINT
 Installing new library file
 
 ```
-
 
 
 New spkg with the same name:
@@ -439,7 +434,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071107.json:
 ```json
 {
-    "body": "Your fix resolves the issues we have, and is unlikely to break anything (see below for a possible exception). I do have a few comments that are worth documenting. \n\n* I was a bit concerned that -funroll-loops will be enabled when SAGE64 is set to yes, despite the fact that it supposed to crash on an UltraSPARC III+ processor. (Previously -funroll-loops was disabled on Solaris SPARC). However, testing showed this will **not** build on Solaris 10 in 64-bit mode on SPARC, irrespective of whether -funroll-loops is set or not. Therefore the inclusion of -funroll-loops is not causing any extra problems on SPARC, and might actually improve performance when the issues are resolved on 64-bit SPARC. \n\n* There was no need to export CXXFLAG64, as Flint will not use it, but it can do no harm whatsoever.\n\n* I'm changing the title slightly, from CFLAGS to FLINT_TUNE, as CFLAGS is not used directly in the spkg-install. It is FLINT_TUNE that gets set\n\n\n```\ndrkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ grep CFLAGS spkg-install\ndrkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ \n```\n\n\nPositive review.",
+    "body": "Your fix resolves the issues we have, and is unlikely to break anything (see below for a possible exception). I do have a few comments that are worth documenting. \n\n* I was a bit concerned that -funroll-loops will be enabled when SAGE64 is set to yes, despite the fact that it supposed to crash on an UltraSPARC III+ processor. (Previously -funroll-loops was disabled on Solaris SPARC). However, testing showed this will **not** build on Solaris 10 in 64-bit mode on SPARC, irrespective of whether -funroll-loops is set or not. Therefore the inclusion of -funroll-loops is not causing any extra problems on SPARC, and might actually improve performance when the issues are resolved on 64-bit SPARC. \n\n* There was no need to export CXXFLAG64, as Flint will not use it, but it can do no harm whatsoever.\n\n* I'm changing the title slightly, from CFLAGS to FLINT_TUNE, as CFLAGS is not used directly in the spkg-install. It is FLINT_TUNE that gets set\n\n```\ndrkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ grep CFLAGS spkg-install\ndrkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ \n```\n\nPositive review.",
     "created_at": "2010-03-03T18:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
@@ -456,12 +451,10 @@ Your fix resolves the issues we have, and is unlikely to break anything (see bel
 
 * I'm changing the title slightly, from CFLAGS to FLINT_TUNE, as CFLAGS is not used directly in the spkg-install. It is FLINT_TUNE that gets set
 
-
 ```
 drkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ grep CFLAGS spkg-install
 drkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ 
 ```
-
 
 Positive review.
 

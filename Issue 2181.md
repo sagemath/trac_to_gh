@@ -3,7 +3,7 @@
 archive/issues_002181.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n                                                                GP/PARI CALCULATOR Version 2.3.3 (released)\n                                                        i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                                                         compiled: Feb 15 2008, gcc-4.0.1 (Apple Inc. build 5465)\n                                                            (readline not compiled in, extended help available)\n```\n\n\nThe above should not say \"readline not compiled in\".  It didn't with older versions of the pari spkg.  So something broke this.   \n\nI once installed Sage on OS X for Ken Ribet specifically because gp's readline does work in OS X with Sage, and he couldn't get a very that worked without Sage no matter what he tried.  Now this is broken, which is bad. \n\nWe should have a doctest that runs gp as a subprocess and verifies that readline is compiled in.  E.g.,\n\n\n```\nsage: import pexpect; p = pexpect.spawn('gp')\nsage: p.expect('\\?')\n0\nsage: assert 'readline not compiled in' not in p.before\n```\n\n\nThen this problem will never happen again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2181\n\n",
+    "body": "Assignee: mabshoff\n\n```\n                                                                GP/PARI CALCULATOR Version 2.3.3 (released)\n                                                        i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                                                         compiled: Feb 15 2008, gcc-4.0.1 (Apple Inc. build 5465)\n                                                            (readline not compiled in, extended help available)\n```\n\nThe above should not say \"readline not compiled in\".  It didn't with older versions of the pari spkg.  So something broke this.   \n\nI once installed Sage on OS X for Ken Ribet specifically because gp's readline does work in OS X with Sage, and he couldn't get a very that worked without Sage no matter what he tried.  Now this is broken, which is bad. \n\nWe should have a doctest that runs gp as a subprocess and verifies that readline is compiled in.  E.g.,\n\n```\nsage: import pexpect; p = pexpect.spawn('gp')\nsage: p.expect('\\?')\n0\nsage: assert 'readline not compiled in' not in p.before\n```\n\nThen this problem will never happen again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2181\n\n",
     "created_at": "2008-02-16T21:29:24Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_002181.json:
 ```
 Assignee: mabshoff
 
-
 ```
                                                                 GP/PARI CALCULATOR Version 2.3.3 (released)
                                                         i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version
@@ -26,13 +25,11 @@ Assignee: mabshoff
                                                             (readline not compiled in, extended help available)
 ```
 
-
 The above should not say "readline not compiled in".  It didn't with older versions of the pari spkg.  So something broke this.   
 
 I once installed Sage on OS X for Ken Ribet specifically because gp's readline does work in OS X with Sage, and he couldn't get a very that worked without Sage no matter what he tried.  Now this is broken, which is bad. 
 
 We should have a doctest that runs gp as a subprocess and verifies that readline is compiled in.  E.g.,
-
 
 ```
 sage: import pexpect; p = pexpect.spawn('gp')
@@ -40,7 +37,6 @@ sage: p.expect('\?')
 0
 sage: assert 'readline not compiled in' not in p.before
 ```
-
 
 Then this problem will never happen again. 
 

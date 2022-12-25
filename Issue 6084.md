@@ -442,7 +442,7 @@ I'm getting started on this.  Let me know if you want to help review it once I g
 archive/issue_comments_048348.json:
 ```json
 {
-    "body": "Replying to [comment:11 roed]:\n> I'm getting started on this.  \n\nGreat!\n\n> Let me know if you want to help review it once I get it back in shape.\n\nIndeed, I'd be happy to help :)",
+    "body": "Replying to [comment:11 roed]:\n> I'm getting started on this.  \n\n\nGreat!\n\n> Let me know if you want to help review it once I get it back in shape.\n\n\nIndeed, I'd be happy to help :)",
     "created_at": "2011-04-07T15:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -454,9 +454,11 @@ archive/issue_comments_048348.json:
 Replying to [comment:11 roed]:
 > I'm getting started on this.  
 
+
 Great!
 
 > Let me know if you want to help review it once I get it back in shape.
+
 
 Indeed, I'd be happy to help :)
 
@@ -615,7 +617,7 @@ Not all doctests work yet, but I wanted to get this posted so that people could 
 archive/issue_comments_048357.json:
 ```json
 {
-    "body": "Replying to [comment:13 roed]:\n\nGreat!  The patches do all apply and build on 4.7, but there are errors when starting sage:\n\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/niles/sage/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n...\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr_ (sage/rings/polynomial/polynomial_element.c:14010)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr (sage/rings/polynomial/polynomial_element.c:13276)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._top_nonzero_power (sage/rings/polynomial/polynomial_element.c:17586)()\n\nTypeError: degree() takes no arguments (1 given)\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\nsage:\n```\n\n\nAlso, there are a number of failures on 4.7.1.alpha2 so this will have to be rebased.",
+    "body": "Replying to [comment:13 roed]:\n\nGreat!  The patches do all apply and build on 4.7, but there are errors when starting sage:\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/niles/sage/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n...\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr_ (sage/rings/polynomial/polynomial_element.c:14010)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr (sage/rings/polynomial/polynomial_element.c:13276)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._top_nonzero_power (sage/rings/polynomial/polynomial_element.c:17586)()\n\nTypeError: degree() takes no arguments (1 given)\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\nsage:\n```\n\nAlso, there are a number of failures on 4.7.1.alpha2 so this will have to be rebased.",
     "created_at": "2011-06-10T20:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
@@ -627,7 +629,6 @@ archive/issue_comments_048357.json:
 Replying to [comment:13 roed]:
 
 Great!  The patches do all apply and build on 4.7, but there are errors when starting sage:
-
 
 ```
 ---------------------------------------------------------------------------
@@ -653,7 +654,6 @@ Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 sage:
 ```
-
 
 Also, there are a number of failures on 4.7.1.alpha2 so this will have to be rebased.
 

@@ -3,7 +3,7 @@
 archive/issues_001399.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThere are some operations which are either unimplemented or give (what I would consider to be) wrong answers:\n\nN=-7\n\nN.is_prime()\n>>false\n\nI believe that this should give the answer \"true\".\n\nAlso, if one tries\n`ZZ.ideal(N).is_prime()`\n\none gets a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1399\n\n",
+    "body": "Assignee: somebody\n\nThere are some operations which are either unimplemented or give (what I would consider to be) wrong answers:\n\nN=-7\n\nN.is_prime()\n>>false\n\n\nI believe that this should give the answer \"true\".\n\nAlso, if one tries\n`ZZ.ideal(N).is_prime()`\n\none gets a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1399\n\n",
     "created_at": "2007-12-04T22:49:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -24,6 +24,7 @@ N=-7
 
 N.is_prime()
 >>false
+
 
 I believe that this should give the answer "true".
 
@@ -132,7 +133,7 @@ Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.pat
 archive/issue_comments_008992.json:
 ```json
 {
-    "body": "NO!!!!!!\n\nThe change to ideal.py is fine, but making is_prime(-7) return True is *wrong*.\n\nJustification:\n\n```\nsage: gp.eval('isprime(-7)')\n'0'\nsage: prime_range(-10,10)\n[2, 3, 5, 7]\n```\n\nand in Wikipedia it says:\n \n\"In mathematics, a prime number (or a prime) is a natural number which has exactly two distinct natural number divisors: 1 and itself.\"\n\nand more importantly it says the same thing in my elementary number theory book.\n\nSo NO.\n\nHowever, the change to ideal.py is fine.",
+    "body": "NO!!!!!!\n\nThe change to ideal.py is fine, but making is_prime(-7) return True is *wrong*.\n\nJustification:\n\n```\nsage: gp.eval('isprime(-7)')\n'0'\nsage: prime_range(-10,10)\n[2, 3, 5, 7]\n```\nand in Wikipedia it says:\n \n\"In mathematics, a prime number (or a prime) is a natural number which has exactly two distinct natural number divisors: 1 and itself.\"\n\nand more importantly it says the same thing in my elementary number theory book.\n\nSo NO.\n\nHowever, the change to ideal.py is fine.",
     "created_at": "2007-12-13T23:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -153,7 +154,6 @@ sage: gp.eval('isprime(-7)')
 sage: prime_range(-10,10)
 [2, 3, 5, 7]
 ```
-
 and in Wikipedia it says:
  
 "In mathematics, a prime number (or a prime) is a natural number which has exactly two distinct natural number divisors: 1 and itself."
@@ -171,7 +171,7 @@ However, the change to ideal.py is fine.
 archive/issue_comments_008993.json:
 ```json
 {
-    "body": "Oh, I should add that  Magma defines -7 to be Prime\n\n\n```\nsage: magma.eval('IsPrime(-7)')\n'true'\n```\n",
+    "body": "Oh, I should add that  Magma defines -7 to be Prime\n\n```\nsage: magma.eval('IsPrime(-7)')\n'true'\n```",
     "created_at": "2007-12-13T23:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -182,12 +182,10 @@ archive/issue_comments_008993.json:
 
 Oh, I should add that  Magma defines -7 to be Prime
 
-
 ```
 sage: magma.eval('IsPrime(-7)')
 'true'
 ```
-
 
 
 
@@ -196,7 +194,7 @@ sage: magma.eval('IsPrime(-7)')
 archive/issue_comments_008994.json:
 ```json
 {
-    "body": "Note:\n\n```\nsage: I = ZZ.ideal(-7)\nsage: I.gens()\n(-7,)\n```\n\nIf the change to integer.pyx isn't accepted, then the change to ideal.py needs to account for -1.",
+    "body": "Note:\n\n```\nsage: I = ZZ.ideal(-7)\nsage: I.gens()\n(-7,)\n```\nIf the change to integer.pyx isn't accepted, then the change to ideal.py needs to account for -1.",
     "created_at": "2007-12-13T23:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
@@ -212,7 +210,6 @@ sage: I = ZZ.ideal(-7)
 sage: I.gens()
 (-7,)
 ```
-
 If the change to integer.pyx isn't accepted, then the change to ideal.py needs to account for -1.
 
 

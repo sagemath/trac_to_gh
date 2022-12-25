@@ -3,7 +3,7 @@
 archive/issues_005309.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t -long \"devel/sage/sage/misc/package.py\"\n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/misc/package.py\", line 50:\n    sage: sage.misc.package.install_all_optional_packages(dry_run=True)\nExpected:\n    Installing ...\n    []\nGot:\n    Using SAGE Server http://www.sagemath.org//packages\n    http://www.sagemath.org//packages/optional/list --> /Users/wstein/build/build/sage-3.3.rc2/tmp/list\n    [Errno socket error] (8, 'nodename nor servname provided, or not known')\n\nSOLUTION: This was caused by the networking being down during this test.   These tests should be marked # optional, since doctesting sage *must* not require an external network connection.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5309\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long \"devel/sage/sage/misc/package.py\"\n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/misc/package.py\", line 50:\n    sage: sage.misc.package.install_all_optional_packages(dry_run=True)\nExpected:\n    Installing ...\n    []\nGot:\n    Using SAGE Server http://www.sagemath.org//packages\n    http://www.sagemath.org//packages/optional/list --> /Users/wstein/build/build/sage-3.3.rc2/tmp/list\n    [Errno socket error] (8, 'nodename nor servname provided, or not known')\n\nSOLUTION: This was caused by the networking being down during this test.   These tests should be marked # optional, since doctesting sage *must* not require an external network connection.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5309\n\n",
     "created_at": "2009-02-18T19:06:11Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_005309.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage -t -long "devel/sage/sage/misc/package.py"
@@ -35,7 +34,6 @@ Got:
 
 SOLUTION: This was caused by the networking being down during this test.   These tests should be marked # optional, since doctesting sage *must* not require an external network connection.  
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5309
 

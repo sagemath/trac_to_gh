@@ -154,7 +154,7 @@ Is there a repo I could -upgrade from rather than re-building the whole thing fr
 archive/issue_comments_012263.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> Sure, I'll re-base it. \n> \n> Is there a repo I could -upgrade from rather than re-building the whole thing from source? \n\nNope, but it has been suggested a couple time to create a devel repo somewhere on sagemath.org to offer such a way to testbuild. I also saw that R failed to build for you on OSX 10.4 - I am building rc0 now on a 10.4 box to fix the issue.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> Sure, I'll re-base it. \n> \n> Is there a repo I could -upgrade from rather than re-building the whole thing from source? \n\n\nNope, but it has been suggested a couple time to create a devel repo somewhere on sagemath.org to offer such a way to testbuild. I also saw that R failed to build for you on OSX 10.4 - I am building rc0 now on a 10.4 box to fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T22:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -167,6 +167,7 @@ Replying to [comment:4 robertwb]:
 > Sure, I'll re-base it. 
 > 
 > Is there a repo I could -upgrade from rather than re-building the whole thing from source? 
+
 
 Nope, but it has been suggested a couple time to create a devel repo somewhere on sagemath.org to offer such a way to testbuild. I also saw that R failed to build for you on OSX 10.4 - I am building rc0 now on a 10.4 box to fix the issue.
 
@@ -181,7 +182,7 @@ Michael
 archive/issue_comments_012264.json:
 ```json
 {
-    "body": "Here's some timings:\n\n\n```\nsage: f(x,y,z) = sin(z)/(1+x^2+y^2)\nsage: lambda_f = lambda x,y,z: math.sin(z)/(1+x^2+y^2)\nsage: fast_f = f._fast_float_('x','y','z')\n\nsage: sage: A = range(50000)\nsage: sage: time for _ in A: r = f(1.0r, 2.0r, 3.0r)\nCPU times: user 12.47 s, sys: 0.08 s, total: 12.54 s\nWall time: 12.73\n\nsage: sage: time for _ in A: r = lambda_f(1.0r, 2.0r, 3.0r)\nCPU times: user 1.32 s, sys: 0.01 s, total: 1.33 s\nWall time: 1.37\n\nsage: sage: time for _ in A: r = fast_f(1.0r, 2.0r, 3.0r)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n```\n",
+    "body": "Here's some timings:\n\n```\nsage: f(x,y,z) = sin(z)/(1+x^2+y^2)\nsage: lambda_f = lambda x,y,z: math.sin(z)/(1+x^2+y^2)\nsage: fast_f = f._fast_float_('x','y','z')\n\nsage: sage: A = range(50000)\nsage: sage: time for _ in A: r = f(1.0r, 2.0r, 3.0r)\nCPU times: user 12.47 s, sys: 0.08 s, total: 12.54 s\nWall time: 12.73\n\nsage: sage: time for _ in A: r = lambda_f(1.0r, 2.0r, 3.0r)\nCPU times: user 1.32 s, sys: 0.01 s, total: 1.33 s\nWall time: 1.37\n\nsage: sage: time for _ in A: r = fast_f(1.0r, 2.0r, 3.0r)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n```",
     "created_at": "2008-01-26T23:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -191,7 +192,6 @@ archive/issue_comments_012264.json:
 ```
 
 Here's some timings:
-
 
 ```
 sage: f(x,y,z) = sin(z)/(1+x^2+y^2)
@@ -211,7 +211,6 @@ sage: sage: time for _ in A: r = fast_f(1.0r, 2.0r, 3.0r)
 CPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s
 Wall time: 0.04
 ```
-
 
 
 
@@ -256,7 +255,7 @@ The bundle just attached is merged with the plotting code of 2.10.1.rc0. Since W
 archive/issue_comments_012267.json:
 ```json
 {
-    "body": "Wow, this is amazing compared to before!!!!!!!!!!!!!!!!!  Wow!  This is an awesome patch full of beautiful code.   It will have a major impact on how the calculus code is used in the future, and make things like numerical integration, ode's, etc. way way way faster. \n\nrefereeing:\n\n* The the file morphism.pyx there are a bunch of print statements that shouldn't be there.  They must have been for debugging purposes:\n\n```\n    cdef Element _call_c_impl(self, Element x):\n        print type(self), self\n        print <long>self._call_c\n        print <long>Morphism._call_c\n        print <long>FormalCoercionMorphism._call_c\n        raise NotImplementedError\n\n```\n\n\n* More doctests are needed, e.g., L3096 of calculus.py, has two functions without doctests:\n\n```\n    def fast_float_function(self, vars):\n        return self._fast_float_(vars)\n\n    def _fast_float_(self, *vars):\n        try:\n```\n\n\n* Is ext/ really the right place for fast_eval.pyx?  Maybe.  I'm just not sure...\n\n* I wish there were a few sentences at the top of fast_eval.pyx about what it does. \n\n* There's still a lot in fast_eval.pyx that needs doctests; it's coverage score is only 14%:\n\n```\nteragon:ext was$ sage -coverage fast_eval.pyx\n----------------------------------------------------------------------\nfast_eval.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE fast_eval.pyx: 14% (6 of 41)\n```\n\n\n* This code in fast_eval.pyx is clearly TOTALLY WRONG and would give an infinite loop if it were actually tested: \n\n```\n+    def sec(self):\n+        return ~self.sec()   \n```\n\n\n   \n\nOtherwise it looks good to me.   Fix the above then this patch should get marked with \"positive review\"",
+    "body": "Wow, this is amazing compared to before!!!!!!!!!!!!!!!!!  Wow!  This is an awesome patch full of beautiful code.   It will have a major impact on how the calculus code is used in the future, and make things like numerical integration, ode's, etc. way way way faster. \n\nrefereeing:\n\n* The the file morphism.pyx there are a bunch of print statements that shouldn't be there.  They must have been for debugging purposes:\n\n```\n    cdef Element _call_c_impl(self, Element x):\n        print type(self), self\n        print <long>self._call_c\n        print <long>Morphism._call_c\n        print <long>FormalCoercionMorphism._call_c\n        raise NotImplementedError\n\n```\n\n* More doctests are needed, e.g., L3096 of calculus.py, has two functions without doctests:\n\n```\n    def fast_float_function(self, vars):\n        return self._fast_float_(vars)\n\n    def _fast_float_(self, *vars):\n        try:\n```\n\n* Is ext/ really the right place for fast_eval.pyx?  Maybe.  I'm just not sure...\n\n* I wish there were a few sentences at the top of fast_eval.pyx about what it does. \n\n* There's still a lot in fast_eval.pyx that needs doctests; it's coverage score is only 14%:\n\n```\nteragon:ext was$ sage -coverage fast_eval.pyx\n----------------------------------------------------------------------\nfast_eval.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE fast_eval.pyx: 14% (6 of 41)\n```\n\n* This code in fast_eval.pyx is clearly TOTALLY WRONG and would give an infinite loop if it were actually tested: \n\n```\n+    def sec(self):\n+        return ~self.sec()   \n```\n\n   \n\nOtherwise it looks good to me.   Fix the above then this patch should get marked with \"positive review\"",
     "created_at": "2008-01-27T16:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -281,7 +280,6 @@ refereeing:
 
 ```
 
-
 * More doctests are needed, e.g., L3096 of calculus.py, has two functions without doctests:
 
 ```
@@ -291,7 +289,6 @@ refereeing:
     def _fast_float_(self, *vars):
         try:
 ```
-
 
 * Is ext/ really the right place for fast_eval.pyx?  Maybe.  I'm just not sure...
 
@@ -307,14 +304,12 @@ ERROR: Please define a s == loads(dumps(s)) doctest.
 SCORE fast_eval.pyx: 14% (6 of 41)
 ```
 
-
 * This code in fast_eval.pyx is clearly TOTALLY WRONG and would give an infinite loop if it were actually tested: 
 
 ```
 +    def sec(self):
 +        return ~self.sec()   
 ```
-
 
    
 
@@ -370,7 +365,7 @@ I've posted a .patch that fixes most of those failures, plus a bunch of roughnes
 archive/issue_comments_012270.json:
 ```json
 {
-    "body": "Do not apply the above patch last patch--everything passes on my computer including the lines \n\n\n```\nsage: list(h)\n['push 1.5', 'load 0', 'add', 'call sin(1)']\n```\n\n\ninstead of \n\n\n\n```\nsage: list(h)\n['push 1.5', 'load 0', 'add', 'call 1 0x942acc20']\n```\n\n\nIt looks like you didn't do a sage -b after applying merging the changes.",
+    "body": "Do not apply the above patch last patch--everything passes on my computer including the lines \n\n```\nsage: list(h)\n['push 1.5', 'load 0', 'add', 'call sin(1)']\n```\n\ninstead of \n\n\n```\nsage: list(h)\n['push 1.5', 'load 0', 'add', 'call 1 0x942acc20']\n```\n\nIt looks like you didn't do a sage -b after applying merging the changes.",
     "created_at": "2008-01-29T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
@@ -381,22 +376,18 @@ archive/issue_comments_012270.json:
 
 Do not apply the above patch last patch--everything passes on my computer including the lines 
 
-
 ```
 sage: list(h)
 ['push 1.5', 'load 0', 'add', 'call sin(1)']
 ```
 
-
 instead of 
-
 
 
 ```
 sage: list(h)
 ['push 1.5', 'load 0', 'add', 'call 1 0x942acc20']
 ```
-
 
 It looks like you didn't do a sage -b after applying merging the changes.
 

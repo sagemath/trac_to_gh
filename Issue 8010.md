@@ -3,7 +3,7 @@
 archive/issues_008010.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  georgsweber\n\nAny use of f2py, e.g. following the examples at http://www.sagemath.org/doc/numerical_sage/f2py.html lead to a crash:\n\n\n```\nerror: Command \"sage_fortran -Wall -shared /var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortran_module_0module.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortranobject.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/Users/felix/.sage/temp/<my domain name>/52076/tmp_0.o -L\"Using built-in specs.\n/Applications/sage-4.3.1.rc1/local/bin/../lib/gcc/i686-apple-darwin8/4.2.3/x86_64\" \n-lgfortran -o ./fortran_module_0.so\" failed with exit status 1\n\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\nUsing built-in specs.\nTarget: i686-apple-darwin8\nConfigured with: /Builds/unix/gcc/gcc-4.2/configure --prefix=/usr/local \n--mandir=/share/man --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ \n--build=i686-apple-darwin8 --host=i686-apple-darwin8 --target=i686-apple-\ndarwin8 --enable-languages=fortran\nThread model: posix\ngcc version 4.2.3\n\n<SNIP>\n```\n\n\nThis is using 4.3.1rc1 on 10.6, 64-bit.\n\nThe problem is that local/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py adds a \"-shared\" flag when linking, even though OS X doesn't support it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8010\n\n",
+    "body": "Assignee: tbd\n\nCC:  georgsweber\n\nAny use of f2py, e.g. following the examples at http://www.sagemath.org/doc/numerical_sage/f2py.html lead to a crash:\n\n```\nerror: Command \"sage_fortran -Wall -shared /var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortran_module_0module.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortranobject.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/Users/felix/.sage/temp/<my domain name>/52076/tmp_0.o -L\"Using built-in specs.\n/Applications/sage-4.3.1.rc1/local/bin/../lib/gcc/i686-apple-darwin8/4.2.3/x86_64\" \n-lgfortran -o ./fortran_module_0.so\" failed with exit status 1\n\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\nUsing built-in specs.\nTarget: i686-apple-darwin8\nConfigured with: /Builds/unix/gcc/gcc-4.2/configure --prefix=/usr/local \n--mandir=/share/man --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ \n--build=i686-apple-darwin8 --host=i686-apple-darwin8 --target=i686-apple-\ndarwin8 --enable-languages=fortran\nThread model: posix\ngcc version 4.2.3\n\n<SNIP>\n```\n\nThis is using 4.3.1rc1 on 10.6, 64-bit.\n\nThe problem is that local/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py adds a \"-shared\" flag when linking, even though OS X doesn't support it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8010\n\n",
     "created_at": "2010-01-20T06:42:41Z",
     "labels": [
         "component: packages: standard",
@@ -21,7 +21,6 @@ Assignee: tbd
 CC:  georgsweber
 
 Any use of f2py, e.g. following the examples at http://www.sagemath.org/doc/numerical_sage/f2py.html lead to a crash:
-
 
 ```
 error: Command "sage_fortran -Wall -shared /var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-
@@ -58,7 +57,6 @@ gcc version 4.2.3
 
 <SNIP>
 ```
-
 
 This is using 4.3.1rc1 on 10.6, 64-bit.
 
@@ -405,7 +403,7 @@ Was this reported upstream?  Did it have to be?
 archive/issue_comments_069904.json:
 ```json
 {
-    "body": ">Was this reported upstream? Did it have to be?\nI haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.",
+    "body": ">Was this reported upstream? Did it have to be?\n\nI haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.",
     "created_at": "2010-09-09T13:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
@@ -415,6 +413,7 @@ archive/issue_comments_069904.json:
 ```
 
 >Was this reported upstream? Did it have to be?
+
 I haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.
 
 
@@ -566,7 +565,7 @@ Also, it would be worth investigating the status of this issue (as well as #7831
 archive/issue_comments_069910.json:
 ```json
 {
-    "body": "Replying to [comment:19 kcrisman]:\n> Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\nDone.",
+    "body": "Replying to [comment:19 kcrisman]:\n> Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\n\nDone.",
     "created_at": "2010-11-04T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
@@ -577,5 +576,6 @@ archive/issue_comments_069910.json:
 
 Replying to [comment:19 kcrisman]:
 > Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? 
+
 
 Done.

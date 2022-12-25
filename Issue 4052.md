@@ -114,7 +114,7 @@ Also is there special procedure to bump the patch version of a spkg?
 archive/issue_comments_029155.json:
 ```json
 {
-    "body": "Replying to [comment:2 anakha]:\n> The new patch adds an entry to the SPKG.txt file.\n\nThanks.\n\n> Also is there special procedure to bump the patch version of a spkg?\n\nYou need to rename the directory to the updated patchlevel and then recreate the spkg. There is nothing more to it :)\n\nFeel free to create spkgs, but please do not attach them to trac, put post a link. A diff would still be appreciated to make the review process easier.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 anakha]:\n> The new patch adds an entry to the SPKG.txt file.\n\n\nThanks.\n\n> Also is there special procedure to bump the patch version of a spkg?\n\n\nYou need to rename the directory to the updated patchlevel and then recreate the spkg. There is nothing more to it :)\n\nFeel free to create spkgs, but please do not attach them to trac, put post a link. A diff would still be appreciated to make the review process easier.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-03T19:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4052",
     "type": "issue_comment",
@@ -126,9 +126,11 @@ archive/issue_comments_029155.json:
 Replying to [comment:2 anakha]:
 > The new patch adds an entry to the SPKG.txt file.
 
+
 Thanks.
 
 > Also is there special procedure to bump the patch version of a spkg?
+
 
 You need to rename the directory to the updated patchlevel and then recreate the spkg. There is nothing more to it :)
 

@@ -55,7 +55,7 @@ Attachment [ell-doctest.patch](tarball://root/attachments/some-uuid/ticket5905/e
 archive/issue_comments_046592.json:
 ```json
 {
-    "body": "The patch successfully fixes two problems in the reference manual. This eliminates one of the warnings which occurs when building the reference manual.  (The only one I still see is\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.2.alpha0-upgrade/devel/sage-new/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\n```\n\nin case anyone knows what to do about that.  If so, open a new ticket.)",
+    "body": "The patch successfully fixes two problems in the reference manual. This eliminates one of the warnings which occurs when building the reference manual.  (The only one I still see is\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.2.alpha0-upgrade/devel/sage-new/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\n```\nin case anyone knows what to do about that.  If so, open a new ticket.)",
     "created_at": "2009-04-27T04:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5905",
     "type": "issue_comment",
@@ -69,7 +69,6 @@ The patch successfully fixes two problems in the reference manual. This eliminat
 ```
 checking consistency... WARNING: /Applications/sage_builds/sage-3.4.2.alpha0-upgrade/devel/sage-new/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree
 ```
-
 in case anyone knows what to do about that.  If so, open a new ticket.)
 
 

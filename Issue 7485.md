@@ -76,7 +76,7 @@ NOTE: On Linux, this spkg change makes Sage depend on having gfortran installed.
 archive/issue_comments_063106.json:
 ```json
 {
-    "body": "The new Fortran spkg cuts about 7 MB. The Fortran spkg in Sage 4.3.1.rc0 is about 40MB:\n\n```\nmvngu@mod standard]$ du -hs fortran-20071120.p9.spkg \n40M     fortran-20071120.p9.spkg\n```\n\nwhile the new spkg is about 33 MB:\n\n```\n[mvngu@mod fortran]$ du -hs fortran-20100117.spkg \n33M\tfortran-20100117.spkg\n```\n\nThat should be good news for mirroring and downloading the source distribution. Just a trivial nit-pick. The file `spkg-install` has changes that are not yet checked in:\n\n```\n[mvngu@mod fortran-20100117]$ hg st\nM spkg-install\n```\n\nSince the Linux Fortran binaries have been removed from the Fortran spkg, do you still want to keep the following conditional in the file `spkg-install`? Between lines 75--81:\n\n```\n    elif OS == 'linux':\n       if arch == 'x86_64':\n          print \"Installing Linux x86-64 g95 compiler\"\n          file = 'g95_linux_64.tar.bz2'\n       elif arch == 'i686' or arch == 'i586' or arch == 'i486' or arch == 'i386':\n          print \"Installing Linux i686 g95 compiler\"\n          file = 'g95_linux_32.tar.bz2'\n```\n",
+    "body": "The new Fortran spkg cuts about 7 MB. The Fortran spkg in Sage 4.3.1.rc0 is about 40MB:\n\n```\nmvngu@mod standard]$ du -hs fortran-20071120.p9.spkg \n40M     fortran-20071120.p9.spkg\n```\nwhile the new spkg is about 33 MB:\n\n```\n[mvngu@mod fortran]$ du -hs fortran-20100117.spkg \n33M\tfortran-20100117.spkg\n```\nThat should be good news for mirroring and downloading the source distribution. Just a trivial nit-pick. The file `spkg-install` has changes that are not yet checked in:\n\n```\n[mvngu@mod fortran-20100117]$ hg st\nM spkg-install\n```\nSince the Linux Fortran binaries have been removed from the Fortran spkg, do you still want to keep the following conditional in the file `spkg-install`? Between lines 75--81:\n\n```\n    elif OS == 'linux':\n       if arch == 'x86_64':\n          print \"Installing Linux x86-64 g95 compiler\"\n          file = 'g95_linux_64.tar.bz2'\n       elif arch == 'i686' or arch == 'i586' or arch == 'i486' or arch == 'i386':\n          print \"Installing Linux i686 g95 compiler\"\n          file = 'g95_linux_32.tar.bz2'\n```",
     "created_at": "2010-01-18T12:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
@@ -91,21 +91,18 @@ The new Fortran spkg cuts about 7 MB. The Fortran spkg in Sage 4.3.1.rc0 is abou
 mvngu@mod standard]$ du -hs fortran-20071120.p9.spkg 
 40M     fortran-20071120.p9.spkg
 ```
-
 while the new spkg is about 33 MB:
 
 ```
 [mvngu@mod fortran]$ du -hs fortran-20100117.spkg 
 33M	fortran-20100117.spkg
 ```
-
 That should be good news for mirroring and downloading the source distribution. Just a trivial nit-pick. The file `spkg-install` has changes that are not yet checked in:
 
 ```
 [mvngu@mod fortran-20100117]$ hg st
 M spkg-install
 ```
-
 Since the Linux Fortran binaries have been removed from the Fortran spkg, do you still want to keep the following conditional in the file `spkg-install`? Between lines 75--81:
 
 ```
@@ -120,13 +117,12 @@ Since the Linux Fortran binaries have been removed from the Fortran spkg, do you
 
 
 
-
 ---
 
 archive/issue_comments_063107.json:
 ```json
 {
-    "body": "> Since the Linux Fortran binaries have been removed from the \n>Fortran spkg, do you still want to keep the following conditional in the file spkg-install? \n\nI do.  I want to make minimal changes to the spkg so that it works.  I'm not keen on breaking anything, and there is arbitrarily much that can go wrong.\n\nNote that in future we should be able to get rid of the rest of the g95 binaries, shrinking the size of the spkg another 10MB or so.\n\nThe new spkg is here:\n\n    http://wstein.org/home/wstein/patches/fortran-20100118.spkg\n\nIt just checks in the changes.",
+    "body": "> Since the Linux Fortran binaries have been removed from the \n\n>Fortran spkg, do you still want to keep the following conditional in the file spkg-install? \n\nI do.  I want to make minimal changes to the spkg so that it works.  I'm not keen on breaking anything, and there is arbitrarily much that can go wrong.\n\nNote that in future we should be able to get rid of the rest of the g95 binaries, shrinking the size of the spkg another 10MB or so.\n\nThe new spkg is here:\n\n    http://wstein.org/home/wstein/patches/fortran-20100118.spkg\n\nIt just checks in the changes.",
     "created_at": "2010-01-18T13:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
@@ -136,6 +132,7 @@ archive/issue_comments_063107.json:
 ```
 
 > Since the Linux Fortran binaries have been removed from the 
+
 >Fortran spkg, do you still want to keep the following conditional in the file spkg-install? 
 
 I do.  I want to make minimal changes to the spkg so that it works.  I'm not keen on breaking anything, and there is arbitrarily much that can go wrong.
@@ -155,7 +152,7 @@ It just checks in the changes.
 archive/issue_comments_063108.json:
 ```json
 {
-    "body": "Looks good. On Linux and Solaris machines (mod.math, rosemary.math, t2.math), only the script `sage_fortran` is installed under `SAGE_LOCAL/bin`. This is in contrast to the previous behaviour, which was to install Linux Fortran binaries regardless of whether the Linux system already had a system-wide Fortran compiler. On OS X machine (bsd.math), `sage_fortran` and OS X specific Fortran binaries are installed under `SAGE_LOCAL/bin` as expected. I tested [fortran-20100118.spkg](http://wstein.org/home/wstein/patches/fortran-20100118.spkg) with Sage 4.3.1.rc1 on mod.math, rosemary.math, and bsd.math. Doctesting resulted in the following known failure as reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/7c9e8c5a006e4f9f):\n\n```\n[mvngu@boxen sage-4.3.1.rc1]$ ./sage -t -long devel/sage-main/sage/misc/sagedoc.py \nsage -t -long \"devel/sage-main/sage/misc/sagedoc.py\"        \n**********************************************************************\nFile \"/dev/shm/mvngu/sage-4.3.1.rc1/devel/sage-main/sage/misc/sagedoc.py\", line 365:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sagedoc.py\n\t [20.8 s]\nexit code: 1024\n```\n\nThe changes in this updated Fortran spkg are minimal. Linux specific Fortran binaries have been removed. The install script `spkg-install` is essentially as it was previously, with the added test that if the current system is Linux, then test to see if that system has a Fortran compiler.",
+    "body": "Looks good. On Linux and Solaris machines (mod.math, rosemary.math, t2.math), only the script `sage_fortran` is installed under `SAGE_LOCAL/bin`. This is in contrast to the previous behaviour, which was to install Linux Fortran binaries regardless of whether the Linux system already had a system-wide Fortran compiler. On OS X machine (bsd.math), `sage_fortran` and OS X specific Fortran binaries are installed under `SAGE_LOCAL/bin` as expected. I tested [fortran-20100118.spkg](http://wstein.org/home/wstein/patches/fortran-20100118.spkg) with Sage 4.3.1.rc1 on mod.math, rosemary.math, and bsd.math. Doctesting resulted in the following known failure as reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/7c9e8c5a006e4f9f):\n\n```\n[mvngu@boxen sage-4.3.1.rc1]$ ./sage -t -long devel/sage-main/sage/misc/sagedoc.py \nsage -t -long \"devel/sage-main/sage/misc/sagedoc.py\"        \n**********************************************************************\nFile \"/dev/shm/mvngu/sage-4.3.1.rc1/devel/sage-main/sage/misc/sagedoc.py\", line 365:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sagedoc.py\n\t [20.8 s]\nexit code: 1024\n```\nThe changes in this updated Fortran spkg are minimal. Linux specific Fortran binaries have been removed. The install script `spkg-install` is essentially as it was previously, with the added test that if the current system is Linux, then test to see if that system has a Fortran compiler.",
     "created_at": "2010-01-19T18:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
@@ -184,7 +181,6 @@ For whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sagedoc
 	 [20.8 s]
 exit code: 1024
 ```
-
 The changes in this updated Fortran spkg are minimal. Linux specific Fortran binaries have been removed. The install script `spkg-install` is essentially as it was previously, with the added test that if the current system is Linux, then test to see if that system has a Fortran compiler.
 
 

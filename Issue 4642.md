@@ -3,7 +3,7 @@
 archive/issues_004642.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nJeffrey reported:\n\n```\nI've just downloaded and launched Sage on an Ubuntu 8.10 box.  I \nunzipped the file and ran ./sage and got this: \n  WARNING!  This Sage install was built on a machine that supports \n  instructions that are not available on this computer.  Sage will \n  likely fail with ILLEGAL INSTRUCTION errors! The following processor \n  flags were on the build machine but are not on this computer: \n  nx up \nI downloaded this image of Sage: \n  sage-3.2-ubuntu32bit-intel-i686-Linux.tar.gz \nIs there anything I can do? \nThanks in advance \nJeffrey \n```\n\n\nThe problem is that nx for example is a no execute flag and has zero impact on compatibility for binaries. We should only trac sse, sse2 and see3 flags (and potentially others, but I will do some research here.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4642\n\n",
+    "body": "Assignee: mabshoff\n\nJeffrey reported:\n\n```\nI've just downloaded and launched Sage on an Ubuntu 8.10 box.  I \nunzipped the file and ran ./sage and got this: \n  WARNING!  This Sage install was built on a machine that supports \n  instructions that are not available on this computer.  Sage will \n  likely fail with ILLEGAL INSTRUCTION errors! The following processor \n  flags were on the build machine but are not on this computer: \n  nx up \nI downloaded this image of Sage: \n  sage-3.2-ubuntu32bit-intel-i686-Linux.tar.gz \nIs there anything I can do? \nThanks in advance \nJeffrey \n```\n\nThe problem is that nx for example is a no execute flag and has zero impact on compatibility for binaries. We should only trac sse, sse2 and see3 flags (and potentially others, but I will do some research here.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4642\n\n",
     "created_at": "2008-11-28T07:41:37Z",
     "labels": [
         "component: build",
@@ -34,7 +34,6 @@ Is there anything I can do?
 Thanks in advance 
 Jeffrey 
 ```
-
 
 The problem is that nx for example is a no execute flag and has zero impact on compatibility for binaries. We should only trac sse, sse2 and see3 flags (and potentially others, but I will do some research here.
 
@@ -89,7 +88,7 @@ Changing priority from major to blocker.
 archive/issue_comments_034875.json:
 ```json
 {
-    "body": "Replying to [comment:1 was]:\n> Can somebody please post a list of flags to be ignored here.  Obviously up and nx are on it.  Anything else?\n\nWhy don't we do it the other way around, i.e. only consider flags we know cause trouble: sse, sse2, sse4 and maybe three or four more. These flags are vectorization flags and are the only ones I am aware of that need consideration. All the other flags are CPU properties that aren't related to instruction sets.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 was]:\n> Can somebody please post a list of flags to be ignored here.  Obviously up and nx are on it.  Anything else?\n\n\nWhy don't we do it the other way around, i.e. only consider flags we know cause trouble: sse, sse2, sse4 and maybe three or four more. These flags are vectorization flags and are the only ones I am aware of that need consideration. All the other flags are CPU properties that aren't related to instruction sets.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T18:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
@@ -100,6 +99,7 @@ archive/issue_comments_034875.json:
 
 Replying to [comment:1 was]:
 > Can somebody please post a list of flags to be ignored here.  Obviously up and nx are on it.  Anything else?
+
 
 Why don't we do it the other way around, i.e. only consider flags we know cause trouble: sse, sse2, sse4 and maybe three or four more. These flags are vectorization flags and are the only ones I am aware of that need consideration. All the other flags are CPU properties that aren't related to instruction sets.
 

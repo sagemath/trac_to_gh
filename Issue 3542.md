@@ -109,7 +109,7 @@ OMFG! W00t!!
 archive/issue_comments_024998.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* Patch applies and works fine. Doctests pass.\n\n* You need r\"\"\" instead of \"\"\" for some of the docstrings where you use backslashes.\n\n```\n \t75\tdef bernmm_bern_modp(long p, long k): \n \t76\t    \"\"\" \n \t77\t    Computes $B_k \\mod p$, where $B_k$ is the k-th Bernoulli number. \n```\n\n\n* You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?\n\n* I would prefer if there were an algorithm=\"default\" or algorithm=\"heuristic\" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.\n\n* I found bugs in either PARI or your new code!  This happens also with num_threads=1.\n\n```\nsage: for k in range(1,10000):\n....:     if bernoulli(2*k, algorithm='bernmm', num_threads=2) != bernoulli(2*k, algorithm='pari'): print k\n....:     \n2932\n2957\n3443\n3962\n3973\n...\n```\n\nThis is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). \n\n* What does this do?  Just curious.  Maybe you could document it.\n\n``` \nNTL_CLIENT; \n```\n\n\n* Wow, this patch has a really large amount of interesting C++ code, all well documented.  This must have been quite a lot of work -- it's of course the best in the world and multithreaded.  Amazing.",
+    "body": "REFEREE REPORT:\n\n* Patch applies and works fine. Doctests pass.\n\n* You need r\"\"\" instead of \"\"\" for some of the docstrings where you use backslashes.\n\n```\n \t75\tdef bernmm_bern_modp(long p, long k): \n \t76\t    \"\"\" \n \t77\t    Computes $B_k \\mod p$, where $B_k$ is the k-th Bernoulli number. \n```\n\n* You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?\n\n* I would prefer if there were an algorithm=\"default\" or algorithm=\"heuristic\" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.\n\n* I found bugs in either PARI or your new code!  This happens also with num_threads=1.\n\n```\nsage: for k in range(1,10000):\n....:     if bernoulli(2*k, algorithm='bernmm', num_threads=2) != bernoulli(2*k, algorithm='pari'): print k\n....:     \n2932\n2957\n3443\n3962\n3973\n...\n```\nThis is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). \n\n* What does this do?  Just curious.  Maybe you could document it.\n\n``` \nNTL_CLIENT; \n```\n\n* Wow, this patch has a really large amount of interesting C++ code, all well documented.  This must have been quite a lot of work -- it's of course the best in the world and multithreaded.  Amazing.",
     "created_at": "2008-08-01T02:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -130,7 +130,6 @@ REFEREE REPORT:
  	77	    Computes $B_k \mod p$, where $B_k$ is the k-th Bernoulli number. 
 ```
 
-
 * You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?
 
 * I would prefer if there were an algorithm="default" or algorithm="heuristic" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.
@@ -148,7 +147,6 @@ sage: for k in range(1,10000):
 3973
 ...
 ```
-
 This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). 
 
 * What does this do?  Just curious.  Maybe you could document it.
@@ -156,7 +154,6 @@ This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP
 ``` 
 NTL_CLIENT; 
 ```
-
 
 * Wow, this patch has a really large amount of interesting C++ code, all well documented.  This must have been quite a lot of work -- it's of course the best in the world and multithreaded.  Amazing.
 
@@ -167,7 +164,7 @@ NTL_CLIENT;
 archive/issue_comments_024999.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n>  * You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?\n\nNo, I don't understand what you mean. I thought all the function documentation was automatically included in the reference manual?\n\n\n>  * I would prefer if there were an algorithm=\"default\" or algorithm=\"heuristic\" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.\n\nOkay.\n\n\n>  * I found bugs in either PARI or your new code!  This happens also with num_threads=1.\n> {{{\n> sage: for k in range(1,10000):\n> ....:     if bernoulli(2*k, algorithm='bernmm', num_threads=2) != bernoulli(2*k, algorithm='pari'): print k\n> ....:     \n> 2932\n> 2957\n> 3443\n> 3962\n> 3973\n> ...\n> }}}\n> This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). \n\nNasty. Thanks for picking that up. I've found the bug and I should have a fix tomorrow. That's quite annoying, because I actually do have a test suite which I ran on a 32-bit machine, and it was specifically designed to pick up that kind of crap, and I still missed it. (The first failure occurs when the largest prime modulus is just below `2^15`, which was a good clue :-))\n\n\n>  * What does this do?  Just curious.  Maybe you could document it.\n> {{{ \n> NTL_CLIENT; \n> }}}\n\nThis is a standard NTL macro that Shoup recommends putting at the top of any file that uses NTL. It does something to do with namespaces. See\n\nhttp://www.shoup.net/ntl/doc/tour-ex1.html",
+    "body": "Replying to [comment:3 was]:\n>  * You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?\n\n\nNo, I don't understand what you mean. I thought all the function documentation was automatically included in the reference manual?\n\n\n>  * I would prefer if there were an algorithm=\"default\" or algorithm=\"heuristic\" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.\n\n\nOkay.\n\n\n>  * I found bugs in either PARI or your new code!  This happens also with num_threads=1.\n \n> {{{\n> sage: for k in range(1,10000):\n> ....:     if bernoulli(2*k, algorithm='bernmm', num_threads=2) != bernoulli(2*k, algorithm='pari'): print k\n> ....:     \n> 2932\n> 2957\n> 3443\n> 3962\n> 3973\n> ...\n> }}}\n> This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). \n\n\nNasty. Thanks for picking that up. I've found the bug and I should have a fix tomorrow. That's quite annoying, because I actually do have a test suite which I ran on a 32-bit machine, and it was specifically designed to pick up that kind of crap, and I still missed it. (The first failure occurs when the largest prime modulus is just below `2^15`, which was a good clue :-))\n\n\n>  * What does this do?  Just curious.  Maybe you could document it.\n \n> {{{ \n> NTL_CLIENT; \n> }}}\n\n\nThis is a standard NTL macro that Shoup recommends putting at the top of any file that uses NTL. It does something to do with namespaces. See\n\nhttp://www.shoup.net/ntl/doc/tour-ex1.html",
     "created_at": "2008-08-01T03:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -179,15 +176,18 @@ archive/issue_comments_024999.json:
 Replying to [comment:3 was]:
 >  * You may want to post a patch to add the docs to the reference manual.   Do you know how to do that?
 
+
 No, I don't understand what you mean. I thought all the function documentation was automatically included in the reference manual?
 
 
 >  * I would prefer if there were an algorithm="default" or algorithm="heuristic" option or something that say uses pari for small inputs (up to 20000 or so), then switches over to bernmm for larger inputs.
 
+
 Okay.
 
 
 >  * I found bugs in either PARI or your new code!  This happens also with num_threads=1.
+ 
 > {{{
 > sage: for k in range(1,10000):
 > ....:     if bernoulli(2*k, algorithm='bernmm', num_threads=2) != bernoulli(2*k, algorithm='pari'): print k
@@ -201,13 +201,16 @@ Okay.
 > }}}
 > This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). 
 
+
 Nasty. Thanks for picking that up. I've found the bug and I should have a fix tomorrow. That's quite annoying, because I actually do have a test suite which I ran on a 32-bit machine, and it was specifically designed to pick up that kind of crap, and I still missed it. (The first failure occurs when the largest prime modulus is just below `2^15`, which was a good clue :-))
 
 
 >  * What does this do?  Just curious.  Maybe you could document it.
+ 
 > {{{ 
 > NTL_CLIENT; 
 > }}}
+
 
 This is a standard NTL macro that Shoup recommends putting at the top of any file that uses NTL. It does something to do with namespaces. See
 
@@ -220,7 +223,7 @@ http://www.shoup.net/ntl/doc/tour-ex1.html
 archive/issue_comments_025000.json:
 ```json
 {
-    "body": ">     * You may want to post a patch to add the docs to the reference manual. Do you know how to do that?\n\n> No, I don't understand what you mean. I thought all the function documentation was automatically\n> included in the reference manual? \n\nThe layout and choice contents of the reference manual are done by hand.  If you read the instructions in SAGE_ROOT/devel/doc/ref/README.txt hopefully that will explain what you need to do.",
+    "body": ">     * You may want to post a patch to add the docs to the reference manual. Do you know how to do that?\n\n\n> No, I don't understand what you mean. I thought all the function documentation was automatically\n> included in the reference manual? \n\n\nThe layout and choice contents of the reference manual are done by hand.  If you read the instructions in SAGE_ROOT/devel/doc/ref/README.txt hopefully that will explain what you need to do.",
     "created_at": "2008-08-01T12:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
@@ -231,8 +234,10 @@ archive/issue_comments_025000.json:
 
 >     * You may want to post a patch to add the docs to the reference manual. Do you know how to do that?
 
+
 > No, I don't understand what you mean. I thought all the function documentation was automatically
 > included in the reference manual? 
+
 
 The layout and choice contents of the reference manual are done by hand.  If you read the instructions in SAGE_ROOT/devel/doc/ref/README.txt hopefully that will explain what you need to do.
 

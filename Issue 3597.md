@@ -3,7 +3,7 @@
 archive/issues_003597.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is on menas on skynet:\n\n\n```\n\nConfigure findings:\n  FFI:        no (user requested: default)\n  readline:   no (user requested: /home/wstein/menas/build/sage-3.0.4.alpha2/local)\n  libsigsegv: no, consider installing GNU libsigsegv\nAs you requested, we will proceed without libsigsegv...\n./makemake  --with-readline=/home/wstein/menas/build/sage-3.0.4.alpha2/local --prefix=/home/wstein/menas/build/sage-3.0.4.alpha2/local --without-libintl    > Makefile\nmakemake: configure failed to detect readline\nError configuring clisp\n\nreal    0m35.648s\nuser    0m10.957s\nsys     0m10.445s\nsage: An error occurred while installing clisp-2.46.p1\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3597\n\n",
+    "body": "Assignee: mabshoff\n\nThis is on menas on skynet:\n\n```\n\nConfigure findings:\n  FFI:        no (user requested: default)\n  readline:   no (user requested: /home/wstein/menas/build/sage-3.0.4.alpha2/local)\n  libsigsegv: no, consider installing GNU libsigsegv\nAs you requested, we will proceed without libsigsegv...\n./makemake  --with-readline=/home/wstein/menas/build/sage-3.0.4.alpha2/local --prefix=/home/wstein/menas/build/sage-3.0.4.alpha2/local --without-libintl    > Makefile\nmakemake: configure failed to detect readline\nError configuring clisp\n\nreal    0m35.648s\nuser    0m10.957s\nsys     0m10.445s\nsage: An error occurred while installing clisp-2.46.p1\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3597\n\n",
     "created_at": "2008-07-07T23:30:37Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ archive/issues_003597.json:
 Assignee: mabshoff
 
 This is on menas on skynet:
-
 
 ```
 
@@ -39,7 +38,6 @@ sys     0m10.445s
 sage: An error occurred while installing clisp-2.46.p1
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3597
 

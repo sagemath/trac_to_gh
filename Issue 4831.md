@@ -118,7 +118,7 @@ Michael
 archive/issue_comments_036548.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> John,\n> \n> we will probably not merge an aweful lot of patches into 3.3 before all the ReST patches go in.\n> \n\nThat's fine, I knew that and meant to put 3.4 on it.\n\n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:2 mabshoff]:\n> John,\n> \n> we will probably not merge an aweful lot of patches into 3.3 before all the ReST patches go in.\n> \n\n\nThat's fine, I knew that and meant to put 3.4 on it.\n\n> Cheers,\n> \n> Michael",
     "created_at": "2008-12-20T16:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
@@ -132,6 +132,7 @@ Replying to [comment:2 mabshoff]:
 > 
 > we will probably not merge an aweful lot of patches into 3.3 before all the ReST patches go in.
 > 
+
 
 That's fine, I knew that and meant to put 3.4 on it.
 
@@ -192,7 +193,7 @@ On the docstring comment -- yes, and the same is true for very many patches in t
 archive/issue_comments_036551.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n\n> On the docstring comment -- yes, and the same is true for very many patches in there now!\n\nThe patches for the ReST transition will be rebased post Sage 3.3.x, so no need to worry about that now. One of the goals of SD 12 is to get every patch that is ready into 3.3.x (where x probably is equal to 1).\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 cremona]:\n\n> On the docstring comment -- yes, and the same is true for very many patches in there now!\n\n\nThe patches for the ReST transition will be rebased post Sage 3.3.x, so no need to worry about that now. One of the goals of SD 12 is to get every patch that is ready into 3.3.x (where x probably is equal to 1).\n\nCheers,\n\nMichael",
     "created_at": "2009-01-15T12:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
@@ -204,6 +205,7 @@ archive/issue_comments_036551.json:
 Replying to [comment:5 cremona]:
 
 > On the docstring comment -- yes, and the same is true for very many patches in there now!
+
 
 The patches for the ReST transition will be rebased post Sage 3.3.x, so no need to worry about that now. One of the goals of SD 12 is to get every patch that is ready into 3.3.x (where x probably is equal to 1).
 

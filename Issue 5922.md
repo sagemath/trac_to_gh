@@ -3,7 +3,7 @@
 archive/issues_005922.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIf you make a symbolic link to SAGE_ROOT, then doctesting will not work at all:\n\n\n```\nwstein@bsd:~$ ln -s build/sage-3.4.1 xyz\nwstein@bsd:~$ cd xyz\nwstein@bsd:~/xyz$ ls\n0.png\t\t\tdevel\t\t\tipython\t\t\tsage-python\t\ttest.sobj\nCOPYING.txt\t\tdist\t\t\tlocal\t\t\tsage.png\t\ttestlong.log\nHISTORY.txt\t\tdocs-0.html\t\tmakefile\t\tsage0.png\t\ttmp\nREADME.txt\t\texamples\t\tsage\t\t\tsage1.png\t\ttmp.sws\ndata\t\t\tinstall.log\t\tsage-README-osx.txt\tspkg\nwstein@bsd:~/xyz$ ./sage -t devel/sage/sage/plot/plot3d/parametric_plot3d.py \nsage -t  \"devel/sage/sage/plot/plot3d/parametric_plot3d.py\" \n  File \"./parametric_plot3d.py\", line 18\n    from devel/sage/sage/plot/plot3d/parametric_plot3d import *\n              ^\nSyntaxError: invalid syntax\n\n\t [0.8 s]\nexit code: 1024\n \n```\n\n\nThe reason for this is related to *my* bugfix for testing files outside the tree.  Basically, that we're in the tree is not detected correctly in the case of symlinks, so the doctest program decides we are not in the tree, hence tries to import the function.  This, of course, fails. \n\nIdeas for solutions:\n  \n1. Use a different command line option for testing outside tree.\n \n2. Improve detection of whether or not in Sage tree. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5922\n\n",
+    "body": "Assignee: mabshoff\n\nIf you make a symbolic link to SAGE_ROOT, then doctesting will not work at all:\n\n```\nwstein@bsd:~$ ln -s build/sage-3.4.1 xyz\nwstein@bsd:~$ cd xyz\nwstein@bsd:~/xyz$ ls\n0.png\t\t\tdevel\t\t\tipython\t\t\tsage-python\t\ttest.sobj\nCOPYING.txt\t\tdist\t\t\tlocal\t\t\tsage.png\t\ttestlong.log\nHISTORY.txt\t\tdocs-0.html\t\tmakefile\t\tsage0.png\t\ttmp\nREADME.txt\t\texamples\t\tsage\t\t\tsage1.png\t\ttmp.sws\ndata\t\t\tinstall.log\t\tsage-README-osx.txt\tspkg\nwstein@bsd:~/xyz$ ./sage -t devel/sage/sage/plot/plot3d/parametric_plot3d.py \nsage -t  \"devel/sage/sage/plot/plot3d/parametric_plot3d.py\" \n  File \"./parametric_plot3d.py\", line 18\n    from devel/sage/sage/plot/plot3d/parametric_plot3d import *\n              ^\nSyntaxError: invalid syntax\n\n\t [0.8 s]\nexit code: 1024\n \n```\n\nThe reason for this is related to *my* bugfix for testing files outside the tree.  Basically, that we're in the tree is not detected correctly in the case of symlinks, so the doctest program decides we are not in the tree, hence tries to import the function.  This, of course, fails. \n\nIdeas for solutions:\n  \n1. Use a different command line option for testing outside tree.\n \n2. Improve detection of whether or not in Sage tree. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5922\n\n",
     "created_at": "2009-04-28T21:05:38Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_005922.json:
 Assignee: mabshoff
 
 If you make a symbolic link to SAGE_ROOT, then doctesting will not work at all:
-
 
 ```
 wstein@bsd:~$ ln -s build/sage-3.4.1 xyz
@@ -41,7 +40,6 @@ SyntaxError: invalid syntax
 exit code: 1024
  
 ```
-
 
 The reason for this is related to *my* bugfix for testing files outside the tree.  Basically, that we're in the tree is not detected correctly in the case of symlinks, so the doctest program decides we are not in the tree, hence tries to import the function.  This, of course, fails. 
 

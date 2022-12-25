@@ -67,7 +67,7 @@ Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_044879.json:
 ```json
 {
-    "body": "Cool example in the docstring, though of course that the sudoku command at the top level takes forever on this hard one is a bummer.  I wish there were a better solver in sage..\n\n\n```\nsage: B = matrix(ZZ, 9, 9, [ [0,0,0,0,1,0,9,0,0], [8,0,0,4,0,0,0,0,0], [2,0,0,0,0,0,0,0,0], [0,7,0,0,3,0,0,0,0], [0,0,0,0,0,0,2,0,4], [0,0,0,0,0,0,0,5,8], [0,6,0,0,0,0,1,3,0], [7,0,0,2,0,0,0,0,0], [0,0,0,8,0,0,0,0,0] ])\nsage: sudoku(B)\n[wait forever...]\n```\n\n\nVery nice job adding doctests!!",
+    "body": "Cool example in the docstring, though of course that the sudoku command at the top level takes forever on this hard one is a bummer.  I wish there were a better solver in sage..\n\n```\nsage: B = matrix(ZZ, 9, 9, [ [0,0,0,0,1,0,9,0,0], [8,0,0,4,0,0,0,0,0], [2,0,0,0,0,0,0,0,0], [0,7,0,0,3,0,0,0,0], [0,0,0,0,0,0,2,0,4], [0,0,0,0,0,0,0,5,8], [0,6,0,0,0,0,1,3,0], [7,0,0,2,0,0,0,0,0], [0,0,0,8,0,0,0,0,0] ])\nsage: sudoku(B)\n[wait forever...]\n```\n\nVery nice job adding doctests!!",
     "created_at": "2009-04-12T05:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
@@ -78,13 +78,11 @@ archive/issue_comments_044879.json:
 
 Cool example in the docstring, though of course that the sudoku command at the top level takes forever on this hard one is a bummer.  I wish there were a better solver in sage..
 
-
 ```
 sage: B = matrix(ZZ, 9, 9, [ [0,0,0,0,1,0,9,0,0], [8,0,0,4,0,0,0,0,0], [2,0,0,0,0,0,0,0,0], [0,7,0,0,3,0,0,0,0], [0,0,0,0,0,0,2,0,4], [0,0,0,0,0,0,0,5,8], [0,6,0,0,0,0,1,3,0], [7,0,0,2,0,0,0,0,0], [0,0,0,8,0,0,0,0,0] ])
 sage: sudoku(B)
 [wait forever...]
 ```
-
 
 Very nice job adding doctests!!
 
@@ -95,7 +93,7 @@ Very nice job adding doctests!!
 archive/issue_comments_044880.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> I wish there were a better solver in sage..\n\nI did have some thoughts about that while working through this...\n\n> ` [wait forever...] `\n\nI did eventually get a solution on that one, but didn't go back to do a timing on it!",
+    "body": "Replying to [comment:2 was]:\n> I wish there were a better solver in sage..\n\n\nI did have some thoughts about that while working through this...\n\n> ` [wait forever...] `\n\n\nI did eventually get a solution on that one, but didn't go back to do a timing on it!",
     "created_at": "2009-04-12T06:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
@@ -107,9 +105,11 @@ archive/issue_comments_044880.json:
 Replying to [comment:2 was]:
 > I wish there were a better solver in sage..
 
+
 I did have some thoughts about that while working through this...
 
 > ` [wait forever...] `
+
 
 I did eventually get a solution on that one, but didn't go back to do a timing on it!
 

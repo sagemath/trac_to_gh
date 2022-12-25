@@ -104,7 +104,7 @@ Setting this to "needs review" to perhaps get it merged (early) into Sage 4.6.*,
 archive/issue_comments_098453.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n\n> Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),\n\nI assume you tested this on Linux - that is a non-Unix! \n\nSolaris, recent OS X, AIX 5.3 or later and one of the more recent HP-UX releases are Unix. \n\nEven the {{{df}} command of Linux violates the Unix standard. \n\nDave",
+    "body": "Replying to [comment:1 leif]:\n\n> Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),\n\n\nI assume you tested this on Linux - that is a non-Unix! \n\nSolaris, recent OS X, AIX 5.3 or later and one of the more recent HP-UX releases are Unix. \n\nEven the {{{df}} command of Linux violates the Unix standard. \n\nDave",
     "created_at": "2010-09-16T13:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ archive/issue_comments_098453.json:
 Replying to [comment:1 leif]:
 
 > Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),
+
 
 I assume you tested this on Linux - that is a non-Unix! 
 
@@ -132,7 +133,7 @@ Dave
 archive/issue_comments_098454.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> Replying to [comment:1 leif]:\n> \n> > Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),\n> \n> I assume you tested this on Linux\n\nI did.\n\n> - that is a non-Unix! \n\nU[nN][iI][xX] is a trademark, but also a stretchable term. ;-)\n\nShould I say U**x-like OSs?",
+    "body": "Replying to [comment:2 drkirkby]:\n> Replying to [comment:1 leif]:\n> \n> > Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),\n\n> \n> I assume you tested this on Linux\n\n\nI did.\n\n> - that is a non-Unix! \n\n\nU[nN][iI][xX] is a trademark, but also a stretchable term. ;-)\n\nShould I say U**x-like OSs?",
     "created_at": "2010-09-16T13:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -145,12 +146,15 @@ Replying to [comment:2 drkirkby]:
 > Replying to [comment:1 leif]:
 > 
 > > Hope this doesn't cause trouble on non-Unices (like e.g. Cygwin),
+
 > 
 > I assume you tested this on Linux
+
 
 I did.
 
 > - that is a non-Unix! 
+
 
 U[nN][iI][xX] is a trademark, but also a stretchable term. ;-)
 
@@ -211,7 +215,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098457.json:
 ```json
 {
-    "body": "Replying to [comment:4 GeorgSWeber]:\n> Sorry, but this will certainly break on Cygwin!\n\nDid you read the comments here or at the other ticket? I explicitly asked if this is needed on Cygwin (twice), cc'ed Mike, and suggested to use `uname_specific()` in that case.\n\n> Just have a look at the Makefile for the \"g0nntl\" library (in the eclib spkg, see the file /src/g0n/Makefile, line 41):\n> \n\n> NTLLFLAGS = -L$(NTLLIBDIR) -lntl -lgmp -lpari\n\nBad example, since you can safely remove PARI there (too; and also from `NTLLFLAGS` in all other Makefiles); NTL uses GMP, but not PARI. (Only `procs/parifact.*` uses PARI, so PARI has to be linked to all executables and shared libraries that contain / use *that*, e.g. `libjcntl.{so,dylib,dll`}, which in turn is linked to `libg0nntl.*`.)\n\n(Note that \"pari\" is **not** listed in the `libraries` of `sage.libs.cremona.mat`, though \"jcntl\" is, and \"g0nntl\", too.)\n\nEven if e.g. `libg0nntl.so` directly depended on PARI, none of the extension modules whose `libraries` I've changed does.\n\nThere's a difference between dynamically and statically linking btw.\n\n> I've changed the title of the ticket somewhat, to reflect this, and added a line to the description.\n\nBy *\"removing ... from the extension modules\"* I meant removing the in fact (locally) unused libraries from the dynamic (dependencies) section, i.e. for example the `NEEDED` entries in ELF.\n\n> If this ticket is meant to fix some OS X specific issue (see the main ticket at trac #9896), I'd propose to use the \"uname_specific\" feature in such a way, that the change to the module_list.py affects Darwin --- and only Darwin.\n\nAgain, as mentioned in my first comment here, and also at #9896, this is a *general* problem which is unrelated to Darwin as the OS.\n\n> Ensuring that the change is visible on only as few system as possible, as few systems as possible are affected of a possible breakage by such a change.\n\nThe opposite is closer to what is needed: if at all, PARI has to be listed in `libraries` *only on Cygwin* (or MS Windows) if you're right (but see above); I'm not sure if it would be required on older Darwins as well.\n\nSo I'll update the patch to use `uname_specific()` (if that makes you happy ;-) - I'd really like to give it a try *as is* on Cygwin), which then should be tested (also) on MacOS X 10.4 (Tiger).",
+    "body": "Replying to [comment:4 GeorgSWeber]:\n> Sorry, but this will certainly break on Cygwin!\n\n\nDid you read the comments here or at the other ticket? I explicitly asked if this is needed on Cygwin (twice), cc'ed Mike, and suggested to use `uname_specific()` in that case.\n\n> Just have a look at the Makefile for the \"g0nntl\" library (in the eclib spkg, see the file /src/g0n/Makefile, line 41):\n> \n\n\n> NTLLFLAGS = -L$(NTLLIBDIR) -lntl -lgmp -lpari\n\n\nBad example, since you can safely remove PARI there (too; and also from `NTLLFLAGS` in all other Makefiles); NTL uses GMP, but not PARI. (Only `procs/parifact.*` uses PARI, so PARI has to be linked to all executables and shared libraries that contain / use *that*, e.g. `libjcntl.{so,dylib,dll`}, which in turn is linked to `libg0nntl.*`.)\n\n(Note that \"pari\" is **not** listed in the `libraries` of `sage.libs.cremona.mat`, though \"jcntl\" is, and \"g0nntl\", too.)\n\nEven if e.g. `libg0nntl.so` directly depended on PARI, none of the extension modules whose `libraries` I've changed does.\n\nThere's a difference between dynamically and statically linking btw.\n\n> I've changed the title of the ticket somewhat, to reflect this, and added a line to the description.\n\n\nBy *\"removing ... from the extension modules\"* I meant removing the in fact (locally) unused libraries from the dynamic (dependencies) section, i.e. for example the `NEEDED` entries in ELF.\n\n> If this ticket is meant to fix some OS X specific issue (see the main ticket at trac #9896), I'd propose to use the \"uname_specific\" feature in such a way, that the change to the module_list.py affects Darwin --- and only Darwin.\n\n\nAgain, as mentioned in my first comment here, and also at #9896, this is a *general* problem which is unrelated to Darwin as the OS.\n\n> Ensuring that the change is visible on only as few system as possible, as few systems as possible are affected of a possible breakage by such a change.\n\n\nThe opposite is closer to what is needed: if at all, PARI has to be listed in `libraries` *only on Cygwin* (or MS Windows) if you're right (but see above); I'm not sure if it would be required on older Darwins as well.\n\nSo I'll update the patch to use `uname_specific()` (if that makes you happy ;-) - I'd really like to give it a try *as is* on Cygwin), which then should be tested (also) on MacOS X 10.4 (Tiger).",
     "created_at": "2010-09-17T00:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -223,12 +227,15 @@ archive/issue_comments_098457.json:
 Replying to [comment:4 GeorgSWeber]:
 > Sorry, but this will certainly break on Cygwin!
 
+
 Did you read the comments here or at the other ticket? I explicitly asked if this is needed on Cygwin (twice), cc'ed Mike, and suggested to use `uname_specific()` in that case.
 
 > Just have a look at the Makefile for the "g0nntl" library (in the eclib spkg, see the file /src/g0n/Makefile, line 41):
 > 
 
+
 > NTLLFLAGS = -L$(NTLLIBDIR) -lntl -lgmp -lpari
+
 
 Bad example, since you can safely remove PARI there (too; and also from `NTLLFLAGS` in all other Makefiles); NTL uses GMP, but not PARI. (Only `procs/parifact.*` uses PARI, so PARI has to be linked to all executables and shared libraries that contain / use *that*, e.g. `libjcntl.{so,dylib,dll`}, which in turn is linked to `libg0nntl.*`.)
 
@@ -240,13 +247,16 @@ There's a difference between dynamically and statically linking btw.
 
 > I've changed the title of the ticket somewhat, to reflect this, and added a line to the description.
 
+
 By *"removing ... from the extension modules"* I meant removing the in fact (locally) unused libraries from the dynamic (dependencies) section, i.e. for example the `NEEDED` entries in ELF.
 
 > If this ticket is meant to fix some OS X specific issue (see the main ticket at trac #9896), I'd propose to use the "uname_specific" feature in such a way, that the change to the module_list.py affects Darwin --- and only Darwin.
 
+
 Again, as mentioned in my first comment here, and also at #9896, this is a *general* problem which is unrelated to Darwin as the OS.
 
 > Ensuring that the change is visible on only as few system as possible, as few systems as possible are affected of a possible breakage by such a change.
+
 
 The opposite is closer to what is needed: if at all, PARI has to be listed in `libraries` *only on Cygwin* (or MS Windows) if you're right (but see above); I'm not sure if it would be required on older Darwins as well.
 
@@ -259,7 +269,7 @@ So I'll update the patch to use `uname_specific()` (if that makes you happy ;-) 
 archive/issue_comments_098458.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> \n> Even if e.g. `libg0nntl.so` directly depended on PARI, none of the extension modules whose `libraries` I've changed does.\n> \n\nEven if the -lpari dependency in the build/compile call of the libg0nntl is technically superfluous, and/or none of the extension modules used libpari functionality in the end --- this parameter -lpari is *there* (in the Makefile line mentioned). This might be a bug in this eclib Makefile. Which probably doesn't matter on most systems, but might very well matter on Cygwin (and the presence of lpari in the module_list.py entries just a q'n'd workaround). Put in other words: the module_list.py patch might be incomplete without also updating (correcting?) this Makefile.\n\n> \n> So I'll update the patch to use `uname_specific()` (if that makes you happy ;-) - I'd really like to give it a try *as is* on Cygwin), which then should be tested (also) on MacOS X 10.4 (Tiger).\n\nSo both of us are kind of stuck here --- neither of us seems to have access to some Cygwin system, to do \"real life\" testing. Personally, I do have access to Mac OS X 10.4 systems (both MacIntel and MacPPC), but does that suffice to work on the ticket? I mean, wouldn't updating Sage-4.5.3 to Sage-4.6 still break on Cygwin (even if we fixed all other OS's)?\n\nIn general, such update problems are not new. The Sage build/update mechanisms have shortcomings that are well known. In the past, one had to (and did) give hints to them. I can't put my finger to a specific release or sage-devel thread right now, but the idea is as simple as powerful, I'll explain it at the example at hand.\n\nSolution:\n\nJust artificially bump up the version number of the eclib spkg.\n(No real changes are done to its contents --- and often in the past, even the update of the SPKG.txt was forgotten, but that's another matter, one should do that always).\n\nAs a result, during an update, the eclib spkg *will* be built anew, and as a consequence, also during \"sage -b\" the mentioned extensions are rebuilt. Et voila.\n\nLeif, I couldn't follow each and every of the recent threads on sage-devel and sage-release, let alone trac. Has this \"old way\" been discussed, or even considered (for Sage-4.6)? If not, should a message thread on sage-release be opened?\n\nI think there's a very good chance to get the update from Sage-4.5.3 to Sage-4.6 working, just by artificially bumping up the version numbers of a handful spkg's (in the sense I described above). \n\nCheers,\n\nGeorg",
+    "body": "Replying to [comment:5 leif]:\n> \n> Even if e.g. `libg0nntl.so` directly depended on PARI, none of the extension modules whose `libraries` I've changed does.\n> \n\n\nEven if the -lpari dependency in the build/compile call of the libg0nntl is technically superfluous, and/or none of the extension modules used libpari functionality in the end --- this parameter -lpari is *there* (in the Makefile line mentioned). This might be a bug in this eclib Makefile. Which probably doesn't matter on most systems, but might very well matter on Cygwin (and the presence of lpari in the module_list.py entries just a q'n'd workaround). Put in other words: the module_list.py patch might be incomplete without also updating (correcting?) this Makefile.\n\n> \n> So I'll update the patch to use `uname_specific()` (if that makes you happy ;-) - I'd really like to give it a try *as is* on Cygwin), which then should be tested (also) on MacOS X 10.4 (Tiger).\n\n\nSo both of us are kind of stuck here --- neither of us seems to have access to some Cygwin system, to do \"real life\" testing. Personally, I do have access to Mac OS X 10.4 systems (both MacIntel and MacPPC), but does that suffice to work on the ticket? I mean, wouldn't updating Sage-4.5.3 to Sage-4.6 still break on Cygwin (even if we fixed all other OS's)?\n\nIn general, such update problems are not new. The Sage build/update mechanisms have shortcomings that are well known. In the past, one had to (and did) give hints to them. I can't put my finger to a specific release or sage-devel thread right now, but the idea is as simple as powerful, I'll explain it at the example at hand.\n\nSolution:\n\nJust artificially bump up the version number of the eclib spkg.\n(No real changes are done to its contents --- and often in the past, even the update of the SPKG.txt was forgotten, but that's another matter, one should do that always).\n\nAs a result, during an update, the eclib spkg *will* be built anew, and as a consequence, also during \"sage -b\" the mentioned extensions are rebuilt. Et voila.\n\nLeif, I couldn't follow each and every of the recent threads on sage-devel and sage-release, let alone trac. Has this \"old way\" been discussed, or even considered (for Sage-4.6)? If not, should a message thread on sage-release be opened?\n\nI think there's a very good chance to get the update from Sage-4.5.3 to Sage-4.6 working, just by artificially bumping up the version numbers of a handful spkg's (in the sense I described above). \n\nCheers,\n\nGeorg",
     "created_at": "2010-09-17T10:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -273,10 +283,12 @@ Replying to [comment:5 leif]:
 > Even if e.g. `libg0nntl.so` directly depended on PARI, none of the extension modules whose `libraries` I've changed does.
 > 
 
+
 Even if the -lpari dependency in the build/compile call of the libg0nntl is technically superfluous, and/or none of the extension modules used libpari functionality in the end --- this parameter -lpari is *there* (in the Makefile line mentioned). This might be a bug in this eclib Makefile. Which probably doesn't matter on most systems, but might very well matter on Cygwin (and the presence of lpari in the module_list.py entries just a q'n'd workaround). Put in other words: the module_list.py patch might be incomplete without also updating (correcting?) this Makefile.
 
 > 
 > So I'll update the patch to use `uname_specific()` (if that makes you happy ;-) - I'd really like to give it a try *as is* on Cygwin), which then should be tested (also) on MacOS X 10.4 (Tiger).
+
 
 So both of us are kind of stuck here --- neither of us seems to have access to some Cygwin system, to do "real life" testing. Personally, I do have access to Mac OS X 10.4 systems (both MacIntel and MacPPC), but does that suffice to work on the ticket? I mean, wouldn't updating Sage-4.5.3 to Sage-4.6 still break on Cygwin (even if we fixed all other OS's)?
 
@@ -304,7 +316,7 @@ Georg
 archive/issue_comments_098459.json:
 ```json
 {
-    "body": "Replying to [comment:6 GeorgSWeber]:\n> Solution:\n> \n> Just artificially bump up the version number of the eclib spkg.\n> (No real changes are done to its contents --- and often in the past, even the update of the SPKG.txt was forgotten, but that's another matter, one should do that always).\n> \n> As a result, during an update, the eclib spkg *will* be built anew, and as a consequence, also during \"sage -b\" the mentioned extensions are rebuilt. Et voila.\n\nThis doesn't work either, see http://trac.sagemath.org/sage_trac/ticket/9896#comment:16. (Bumping the patch level is equivalent to doing `./sage -f ...`.)\n\n\n> I think there's a very good chance to get the update from Sage-4.5.3 to Sage-4.6 working, just by artificially bumping up the version numbers of a handful spkg's (in the sense I described above). \n\nNevertheless, imagine upgrading MPIR (#8664). Do you want to bump the version numbers of dozens of packages? Changing `sage-spkg` to `sage-spkg -f` in `spkg/standard/deps` avoids this, but doesn't solve all problems we have with (re)building the Sage library.\n\nRobert B. wanted to make Cython smarter such that more of what's manually provided in `module_list.py` gets deduced automatically from the Cython source files (through pragmas), but the new Cython 0.13 doesn't yet support these enhancements.\n\nSo unfortunately we currently have to keep hacking `module_list.py` and `setup.py` to get around subtle dependency issues...\n\nWe might as an alternative add `depends = [ ... ]` to these extension modules to get them updated when ECLIB gets (I think in general not a bad idea), but this doesn't really address the PARI issue, i.e. that the library should IMHO not be listed there.\n\nThere are or have been btw. other weird things like `libcsage` and `libstdc++` being linked to each and every module, regardless of the language or if the module referenced symbols from there at all.\n\nI started cleaning up `module_list.py` month ago (which is quite tedious), but then Robert said we'd have a better solution in the near future...",
+    "body": "Replying to [comment:6 GeorgSWeber]:\n> Solution:\n> \n> Just artificially bump up the version number of the eclib spkg.\n> (No real changes are done to its contents --- and often in the past, even the update of the SPKG.txt was forgotten, but that's another matter, one should do that always).\n> \n> As a result, during an update, the eclib spkg *will* be built anew, and as a consequence, also during \"sage -b\" the mentioned extensions are rebuilt. Et voila.\n\n\nThis doesn't work either, see http://trac.sagemath.org/sage_trac/ticket/9896#comment:16. (Bumping the patch level is equivalent to doing `./sage -f ...`.)\n\n\n> I think there's a very good chance to get the update from Sage-4.5.3 to Sage-4.6 working, just by artificially bumping up the version numbers of a handful spkg's (in the sense I described above). \n\n\nNevertheless, imagine upgrading MPIR (#8664). Do you want to bump the version numbers of dozens of packages? Changing `sage-spkg` to `sage-spkg -f` in `spkg/standard/deps` avoids this, but doesn't solve all problems we have with (re)building the Sage library.\n\nRobert B. wanted to make Cython smarter such that more of what's manually provided in `module_list.py` gets deduced automatically from the Cython source files (through pragmas), but the new Cython 0.13 doesn't yet support these enhancements.\n\nSo unfortunately we currently have to keep hacking `module_list.py` and `setup.py` to get around subtle dependency issues...\n\nWe might as an alternative add `depends = [ ... ]` to these extension modules to get them updated when ECLIB gets (I think in general not a bad idea), but this doesn't really address the PARI issue, i.e. that the library should IMHO not be listed there.\n\nThere are or have been btw. other weird things like `libcsage` and `libstdc++` being linked to each and every module, regardless of the language or if the module referenced symbols from there at all.\n\nI started cleaning up `module_list.py` month ago (which is quite tedious), but then Robert said we'd have a better solution in the near future...",
     "created_at": "2010-09-17T14:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -321,10 +333,12 @@ Replying to [comment:6 GeorgSWeber]:
 > 
 > As a result, during an update, the eclib spkg *will* be built anew, and as a consequence, also during "sage -b" the mentioned extensions are rebuilt. Et voila.
 
+
 This doesn't work either, see http://trac.sagemath.org/sage_trac/ticket/9896#comment:16. (Bumping the patch level is equivalent to doing `./sage -f ...`.)
 
 
 > I think there's a very good chance to get the update from Sage-4.5.3 to Sage-4.6 working, just by artificially bumping up the version numbers of a handful spkg's (in the sense I described above). 
+
 
 Nevertheless, imagine upgrading MPIR (#8664). Do you want to bump the version numbers of dozens of packages? Changing `sage-spkg` to `sage-spkg -f` in `spkg/standard/deps` avoids this, but doesn't solve all problems we have with (re)building the Sage library.
 
@@ -540,7 +554,7 @@ Please explain the rationale for this patch.  [The comment you linked to](http:/
 archive/issue_comments_098470.json:
 ```json
 {
-    "body": "The modules you are removing \"-lpari\" from are actually linked against pari, so I think \"pari\" should be kept.\n\nThe following have been built with this patch applied:\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/mwrank/mwrank.so\n        linux-vdso.so.1 =>  (0x00007ffff6dfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007febee7b5000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007febee49a000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007febee23c000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007febedf3b000)\n        librankntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/librankntl.so (0x00007febedc8a000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007febed8a5000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007febed62d000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007febed426000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007febed121000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007febecd4d000)\n        libm.so.6 => /lib/libm.so.6 (0x00007febecab7000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007febec8a2000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007febec686000)\n        libc.so.6 => /lib/libc.so.6 (0x00007febec323000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007febebc61000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007febeebf0000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007febeba5c000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007febeb859000)\n```\n\n\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/homspace.so\n        linux-vdso.so.1 =>  (0x00007fff8adfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fa382917000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fa3826b8000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007fa3823b7000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007fa3821b1000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007fa381dcb000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007fa381b53000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007fa38184e000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007fa381533000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007fa38115f000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fa380eca000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007fa380cb4000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007fa380a98000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fa380736000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007fa380073000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fa382d38000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fa37fe6f000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fa37fc6b000)\n```\n\n\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/newforms.so\n        linux-vdso.so.1 =>  (0x00007fff60bfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fcc585fb000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fcc5839c000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007fcc5809b000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007fcc57e95000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007fcc57aaf000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007fcc57837000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007fcc57532000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007fcc57217000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007fcc56e43000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fcc56bae000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007fcc56998000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007fcc5677c000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fcc5641a000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007fcc55d57000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fcc58a1e000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fcc55b53000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fcc5594f000)\n```\n",
+    "body": "The modules you are removing \"-lpari\" from are actually linked against pari, so I think \"pari\" should be kept.\n\nThe following have been built with this patch applied:\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/mwrank/mwrank.so\n        linux-vdso.so.1 =>  (0x00007ffff6dfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007febee7b5000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007febee49a000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007febee23c000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007febedf3b000)\n        librankntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/librankntl.so (0x00007febedc8a000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007febed8a5000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007febed62d000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007febed426000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007febed121000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007febecd4d000)\n        libm.so.6 => /lib/libm.so.6 (0x00007febecab7000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007febec8a2000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007febec686000)\n        libc.so.6 => /lib/libc.so.6 (0x00007febec323000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007febebc61000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007febeebf0000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007febeba5c000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007febeb859000)\n```\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/homspace.so\n        linux-vdso.so.1 =>  (0x00007fff8adfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fa382917000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fa3826b8000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007fa3823b7000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007fa3821b1000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007fa381dcb000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007fa381b53000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007fa38184e000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007fa381533000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007fa38115f000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fa380eca000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007fa380cb4000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007fa380a98000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fa380736000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007fa380073000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fa382d38000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fa37fe6f000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fa37fc6b000)\n```\n\n```\n(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/newforms.so\n        linux-vdso.so.1 =>  (0x00007fff60bfd000)\n        libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fcc585fb000)\n        libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fcc5839c000)\n        libjcntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libjcntl.so (0x00007fcc5809b000)\n        libgmpxx.so.1 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmpxx.so.1 (0x00007fcc57e95000)\n        libntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libntl.so (0x00007fcc57aaf000)\n        libgmp.so.7 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libgmp.so.7 (0x00007fcc57837000)\n        libstdc++.so.6 => /home/jdemeyer/local/lib64/libstdc++.so.6 (0x00007fcc57532000)\n        libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007fcc57217000)\n        libpython2.7.so.1.0 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpython2.7.so.1.0 (0x00007fcc56e43000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fcc56bae000)\n        libgcc_s.so.1 => /home/jdemeyer/local/lib64/libgcc_s.so.1 (0x00007fcc56998000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0x00007fcc5677c000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fcc5641a000)\n        libpari-gmp.so.3 => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libpari-gmp.so.3 (0x00007fcc55d57000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fcc58a1e000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fcc55b53000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fcc5594f000)\n```",
     "created_at": "2012-04-07T06:59:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -576,8 +590,6 @@ The following have been built with this patch applied:
         libutil.so.1 => /lib/libutil.so.1 (0x00007febeb859000)
 ```
 
-
-
 ```
 (sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/homspace.so
         linux-vdso.so.1 =>  (0x00007fff8adfd000)
@@ -600,8 +612,6 @@ The following have been built with this patch applied:
         libutil.so.1 => /lib/libutil.so.1 (0x00007fa37fc6b000)
 ```
 
-
-
 ```
 (sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/newforms.so
         linux-vdso.so.1 =>  (0x00007fff60bfd000)
@@ -623,7 +633,6 @@ The following have been built with this patch applied:
         libdl.so.2 => /lib/libdl.so.2 (0x00007fcc55b53000)
         libutil.so.1 => /lib/libutil.so.1 (0x00007fcc5594f000)
 ```
-
 
 
 
@@ -650,7 +659,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_098472.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Please explain the rationale for this patch.\n\nIs this so hard to understand?\n\n> [The comment you linked to](http://trac.sagemath.org/sage_trac/ticket/9896#comment:18) does not explain this.\n\nIt does, as does the further discussion on this ticket (and #9896).\n\n> And the following sentence is also very vague: \"\n> > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.\n\nWhy specify libraries to link to if they aren't used / needed at all?\n\nThis **is** simply confusing, obviously inefficient, and causes trouble if the (unused) libraries the extension modules (i.e., their `.so`s) refer to get updated, since they'll still pull in the old, obsolete ones (which may also have already been deleted, in which case at least less weird errors are raised), for no reason.\n\nAs mentioned earlier and elsewhere, the eclib spkg is a special case anyway (also regarding the list of libraries its modules are linked to; cf. [comment:5 my comment above]).",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Please explain the rationale for this patch.\n\n\nIs this so hard to understand?\n\n> [The comment you linked to](http://trac.sagemath.org/sage_trac/ticket/9896#comment:18) does not explain this.\n\n\nIt does, as does the further discussion on this ticket (and #9896).\n\n> And the following sentence is also very vague: \"\n> > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.\n\n\nWhy specify libraries to link to if they aren't used / needed at all?\n\nThis **is** simply confusing, obviously inefficient, and causes trouble if the (unused) libraries the extension modules (i.e., their `.so`s) refer to get updated, since they'll still pull in the old, obsolete ones (which may also have already been deleted, in which case at least less weird errors are raised), for no reason.\n\nAs mentioned earlier and elsewhere, the eclib spkg is a special case anyway (also regarding the list of libraries its modules are linked to; cf. [comment:5 my comment above]).",
     "created_at": "2012-04-07T08:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -662,14 +671,17 @@ archive/issue_comments_098472.json:
 Replying to [comment:15 jdemeyer]:
 > Please explain the rationale for this patch.
 
+
 Is this so hard to understand?
 
 > [The comment you linked to](http://trac.sagemath.org/sage_trac/ticket/9896#comment:18) does not explain this.
+
 
 It does, as does the further discussion on this ticket (and #9896).
 
 > And the following sentence is also very vague: "
 > > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.
+
 
 Why specify libraries to link to if they aren't used / needed at all?
 
@@ -684,7 +696,7 @@ As mentioned earlier and elsewhere, the eclib spkg is a special case anyway (als
 archive/issue_comments_098473.json:
 ```json
 {
-    "body": "Replying to [comment:16 jdemeyer]:\n> The modules you are removing \"-lpari\" from are actually linked against pari, so I think \"pari\" should be kept.\n\n??? If you can safely remove `-lpari` in `module_list.py`, what's the problem?\n\nYour `ldd` dumps just show that eclib's modules also have the PARI library in their NEEDED tags, so what?  (Doesn't matter here whether they really need / use them or not.)",
+    "body": "Replying to [comment:16 jdemeyer]:\n> The modules you are removing \"-lpari\" from are actually linked against pari, so I think \"pari\" should be kept.\n\n\n??? If you can safely remove `-lpari` in `module_list.py`, what's the problem?\n\nYour `ldd` dumps just show that eclib's modules also have the PARI library in their NEEDED tags, so what?  (Doesn't matter here whether they really need / use them or not.)",
     "created_at": "2012-04-07T08:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -695,6 +707,7 @@ archive/issue_comments_098473.json:
 
 Replying to [comment:16 jdemeyer]:
 > The modules you are removing "-lpari" from are actually linked against pari, so I think "pari" should be kept.
+
 
 ??? If you can safely remove `-lpari` in `module_list.py`, what's the problem?
 
@@ -725,7 +738,7 @@ I still don't see the problem...  anyway, has this patch been tested on Cygwin?
 archive/issue_comments_098475.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> Replying to [comment:15 jdemeyer]:\n> > Please explain the rationale for this patch.\n> > And the following sentence is also very vague: \"\n> > > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.\n> \n> Why specify libraries to link to if they aren't used / needed at all?\n> \n> This **is** simply confusing, obviously inefficient, and causes trouble if the (unused) libraries the extension modules (i.e., their `.so`s) refer to get updated, since they'll still pull in the old, obsolete ones (which may also have already been deleted, in which case at least less weird errors are raised), for no reason.\n\n\n```sh\n# This is your (unused) library:\necho \"void foo(){}\" > foo.c\ngcc -c foo.c\ngcc -shared -o libfoo.so.1 -Wl,-soname,libfoo.so.1 foo.o\nln -sf libfoo.so.1 libfoo.so\n\n# Now build your \"extension module\" bar (which doesn't *need* libfoo):\necho \"int main(){}\" > bar.c\ngcc -o bar bar.c -L. -lfoo\n\n# \"Load\" it:\nLD_LIBRARY_PATH=. ./bar # fine\n\n# Now update the unused foo library:\nrm -f libfoo.so*\n# Don't have to recompile foo.c, but one usually would of course.\ngcc -shared -o libfoo.so.2 -Wl,-soname,libfoo.so.2 foo.o\nln -sf libfoo.so.2 libfoo.so\n\n# Now load / run your \"extension module\" again:\nLD_LIBRARY_PATH=. ./bar # boom\n```\n",
+    "body": "Replying to [comment:17 leif]:\n> Replying to [comment:15 jdemeyer]:\n> > Please explain the rationale for this patch.\n> > And the following sentence is also very vague: \"\n> > > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.\n\n> \n> Why specify libraries to link to if they aren't used / needed at all?\n> \n> This **is** simply confusing, obviously inefficient, and causes trouble if the (unused) libraries the extension modules (i.e., their `.so`s) refer to get updated, since they'll still pull in the old, obsolete ones (which may also have already been deleted, in which case at least less weird errors are raised), for no reason.\n\n\n```sh\n# This is your (unused) library:\necho \"void foo(){}\" > foo.c\ngcc -c foo.c\ngcc -shared -o libfoo.so.1 -Wl,-soname,libfoo.so.1 foo.o\nln -sf libfoo.so.1 libfoo.so\n\n# Now build your \"extension module\" bar (which doesn't *need* libfoo):\necho \"int main(){}\" > bar.c\ngcc -o bar bar.c -L. -lfoo\n\n# \"Load\" it:\nLD_LIBRARY_PATH=. ./bar # fine\n\n# Now update the unused foo library:\nrm -f libfoo.so*\n# Don't have to recompile foo.c, but one usually would of course.\ngcc -shared -o libfoo.so.2 -Wl,-soname,libfoo.so.2 foo.o\nln -sf libfoo.so.2 libfoo.so\n\n# Now load / run your \"extension module\" again:\nLD_LIBRARY_PATH=. ./bar # boom\n```",
     "created_at": "2012-04-07T09:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -739,6 +752,7 @@ Replying to [comment:17 leif]:
 > > Please explain the rationale for this patch.
 > > And the following sentence is also very vague: "
 > > > This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble.
+
 > 
 > Why specify libraries to link to if they aren't used / needed at all?
 > 
@@ -771,13 +785,12 @@ LD_LIBRARY_PATH=. ./bar # boom
 
 
 
-
 ---
 
 archive/issue_comments_098476.json:
 ```json
 {
-    "body": "Ooops, missed the last lines:\n\n```sh\n# (You'll certainly agree that rebuilding bar doesn't make sense\n# since it doesn't really use / need libfoo at all.)\n\n# Things get weirder if you use bar (as a module / library) and have\n# another module baz which actually uses libfoo, and refers to the new\n# version.  If the old libfoo.so.1 wasn't deleted, you'll most probably\n# get name clashs, or baz tries to use symbols the obsolete libfoo\n# doesn't have, but bar pulled in the older version. \n```\n\n\n:-)",
+    "body": "Ooops, missed the last lines:\n\n```sh\n# (You'll certainly agree that rebuilding bar doesn't make sense\n# since it doesn't really use / need libfoo at all.)\n\n# Things get weirder if you use bar (as a module / library) and have\n# another module baz which actually uses libfoo, and refers to the new\n# version.  If the old libfoo.so.1 wasn't deleted, you'll most probably\n# get name clashs, or baz tries to use symbols the obsolete libfoo\n# doesn't have, but bar pulled in the older version. \n```\n\n:-)",
     "created_at": "2012-04-07T09:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -799,7 +812,6 @@ Ooops, missed the last lines:
 # doesn't have, but bar pulled in the older version. 
 ```
 
-
 :-)
 
 
@@ -809,7 +821,7 @@ Ooops, missed the last lines:
 archive/issue_comments_098477.json:
 ```json
 {
-    "body": "Replying to [comment:19 jdemeyer]:\n> anyway, has this patch been tested on Cygwin?\n\nYes, it used to work on Cygwin as well; see [comment:10 Mike's 17 months old comment above].",
+    "body": "Replying to [comment:19 jdemeyer]:\n> anyway, has this patch been tested on Cygwin?\n\n\nYes, it used to work on Cygwin as well; see [comment:10 Mike's 17 months old comment above].",
     "created_at": "2012-04-07T09:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -820,6 +832,7 @@ archive/issue_comments_098477.json:
 
 Replying to [comment:19 jdemeyer]:
 > anyway, has this patch been tested on Cygwin?
+
 
 Yes, it used to work on Cygwin as well; see [comment:10 Mike's 17 months old comment above].
 
@@ -848,7 +861,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_098479.json:
 ```json
 {
-    "body": "Replying to [comment:18 leif]:\n> Your `ldd` dumps just show that eclib's modules also have the PARI library in their NEEDED tags, so what?  (Doesn't matter here whether they really need / use them or not.)\neclib actually uses PARI.\n\nGiven that the modules link against `-lpari` anyway, the issue mentioned in [comment:20] can still happen.\n\nTherefore, I see absolutely no problem.",
+    "body": "Replying to [comment:18 leif]:\n> Your `ldd` dumps just show that eclib's modules also have the PARI library in their NEEDED tags, so what?  (Doesn't matter here whether they really need / use them or not.)\n\neclib actually uses PARI.\n\nGiven that the modules link against `-lpari` anyway, the issue mentioned in [comment:20] can still happen.\n\nTherefore, I see absolutely no problem.",
     "created_at": "2013-03-06T15:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9913",
     "type": "issue_comment",
@@ -859,6 +872,7 @@ archive/issue_comments_098479.json:
 
 Replying to [comment:18 leif]:
 > Your `ldd` dumps just show that eclib's modules also have the PARI library in their NEEDED tags, so what?  (Doesn't matter here whether they really need / use them or not.)
+
 eclib actually uses PARI.
 
 Given that the modules link against `-lpari` anyway, the issue mentioned in [comment:20] can still happen.

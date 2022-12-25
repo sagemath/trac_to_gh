@@ -52,7 +52,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061367.json:
 ```json
 {
-    "body": "There is an extra file, SPKG.txt~, in the package.\n\nI don't know if this should block its inclusion (I think this should go in as an optional package ASAP so it gets wider testing) but the show function doesn't work on my intel mac, 10.4.11, opening a TIFF file:\n\n\n```\nsage: import Image\nsage: im = Image.open(\"/Users/mh/Pictures/psym.tiff\")\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```\n",
+    "body": "There is an extra file, SPKG.txt~, in the package.\n\nI don't know if this should block its inclusion (I think this should go in as an optional package ASAP so it gets wider testing) but the show function doesn't work on my intel mac, 10.4.11, opening a TIFF file:\n\n```\nsage: import Image\nsage: im = Image.open(\"/Users/mh/Pictures/psym.tiff\")\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```",
     "created_at": "2009-11-17T15:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ archive/issue_comments_061367.json:
 There is an extra file, SPKG.txt~, in the package.
 
 I don't know if this should block its inclusion (I think this should go in as an optional package ASAP so it gets wider testing) but the show function doesn't work on my intel mac, 10.4.11, opening a TIFF file:
-
 
 ```
 sage: import Image
@@ -79,13 +78,12 @@ sage: dyld: Symbol not found: __cg_jpeg_resync_to_restart
 
 
 
-
 ---
 
 archive/issue_comments_061368.json:
 ```json
 {
-    "body": "Oops that was a TIFF example, but it happens with jpegs too:\n\n```\nsage: im = Image.open(\"/Users/mh/Pictures/v2shot.jpg\")\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```\n",
+    "body": "Oops that was a TIFF example, but it happens with jpegs too:\n\n```\nsage: im = Image.open(\"/Users/mh/Pictures/v2shot.jpg\")\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```",
     "created_at": "2009-11-17T15:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -103,7 +101,6 @@ sage: dyld: Symbol not found: __cg_jpeg_resync_to_restart
   Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO
   Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib
 ```
-
 
 
 
@@ -166,7 +163,7 @@ This needs checking on Solaris
 archive/issue_comments_061372.json:
 ```json
 {
-    "body": "When I try an example like mhampton's above (`im = Image.open(...), im.show()`, I get the message\n\n```\nImportError: The _imaging C module is not installed\n```\n\n(This is on OS X 10.6.)  Is this an issue?",
+    "body": "When I try an example like mhampton's above (`im = Image.open(...), im.show()`, I get the message\n\n```\nImportError: The _imaging C module is not installed\n```\n(This is on OS X 10.6.)  Is this an issue?",
     "created_at": "2009-12-22T06:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -180,7 +177,6 @@ When I try an example like mhampton's above (`im = Image.open(...), im.show()`, 
 ```
 ImportError: The _imaging C module is not installed
 ```
-
 (This is on OS X 10.6.)  Is this an issue?
 
 
@@ -210,7 +206,7 @@ Dave
 archive/issue_comments_061374.json:
 ```json
 {
-    "body": "A few points looking at spkg-install, which is overly complicated following recent updates to sage-env. \n\n* The recent changes to sage-env (#7818) will mean a **lot** of spkg-install can be removed. In particular most, if not all the SAGE64 stuff, as sage-env will automatically add the right flags to CFLAGS, CXFLAGS etc for a 64-bit build. It will not do this (yet) for LDFLAGS so it **may** be necessary to add that, but I'm not convinced it will be necessary. It needs testing on bsd.math without the LD flags set. If it builds, then forgot it all. If it needs LDFLAGS to have -m64, replace -m64 with \n\n```\nif [ \"x$SAGE64\" = xyes ] ; then\n  LDFLAGS=\"$LDFLAGS $CFLAG64\" \n  export $LDFLAGS\nfi\n```\n\nthen it will work irrespective of the flag needed to generate 64-bit binaries. (Not all compilers need -m64, as others use -q64 and other flags). I'm not totally convinced LDFLAGS ever needs -m64, as I believe LDFLAGS gets passed to the linker. No linker I am aware of has the -m64 option (check GNU binutils manual if you wish). But I'm not 100% sure it is never needed. I think the right flag if needed is -64 for the GNU linker, but it is rarely needed, as normally the linker can work out whether a 32 or 64 bit binary is needed, based on the object files. The exception is when creasting shared libraries from archives, where the linker may not be able to determine this.\n* Remove the checks for the Sun compiler and adding -Wall with gcc. The updates to sage-env will add the -Wall for you with gcc. \n* Remove the checks to see if there is a mix of Sun and GNU compilers - that is taken care of elsewhere now. \n\n* Unless there is good reason, remove the \n\n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\nas it was agreed recently (see sage-devel) that there is no need for there to be variables for very basic commands. However, if the source code makes use of $CP etc, then they might have to stay. But if possible, just use mv, cp etc. \n\n* Someting called 'CC' is used here. I'm not sure what that is, but be aware the Sun C++ compiler is called 'CC' so there might be a name clash. Make sure the absolute path to CC is specified if it's not already done, otherwise it may break if the Sun C++ compiler is in the path. \n\n* Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n\nIt does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n\nI'll help you do this. \n\nDave",
+    "body": "A few points looking at spkg-install, which is overly complicated following recent updates to sage-env. \n\n* The recent changes to sage-env (#7818) will mean a **lot** of spkg-install can be removed. In particular most, if not all the SAGE64 stuff, as sage-env will automatically add the right flags to CFLAGS, CXFLAGS etc for a 64-bit build. It will not do this (yet) for LDFLAGS so it **may** be necessary to add that, but I'm not convinced it will be necessary. It needs testing on bsd.math without the LD flags set. If it builds, then forgot it all. If it needs LDFLAGS to have -m64, replace -m64 with \n\n```\nif [ \"x$SAGE64\" = xyes ] ; then\n  LDFLAGS=\"$LDFLAGS $CFLAG64\" \n  export $LDFLAGS\nfi\n```\nthen it will work irrespective of the flag needed to generate 64-bit binaries. (Not all compilers need -m64, as others use -q64 and other flags). I'm not totally convinced LDFLAGS ever needs -m64, as I believe LDFLAGS gets passed to the linker. No linker I am aware of has the -m64 option (check GNU binutils manual if you wish). But I'm not 100% sure it is never needed. I think the right flag if needed is -64 for the GNU linker, but it is rarely needed, as normally the linker can work out whether a 32 or 64 bit binary is needed, based on the object files. The exception is when creasting shared libraries from archives, where the linker may not be able to determine this.\n* Remove the checks for the Sun compiler and adding -Wall with gcc. The updates to sage-env will add the -Wall for you with gcc. \n* Remove the checks to see if there is a mix of Sun and GNU compilers - that is taken care of elsewhere now. \n\n* Unless there is good reason, remove the \n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\nas it was agreed recently (see sage-devel) that there is no need for there to be variables for very basic commands. However, if the source code makes use of $CP etc, then they might have to stay. But if possible, just use mv, cp etc. \n\n* Someting called 'CC' is used here. I'm not sure what that is, but be aware the Sun C++ compiler is called 'CC' so there might be a name clash. Make sure the absolute path to CC is specified if it's not already done, otherwise it may break if the Sun C++ compiler is in the path. \n\n* Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n\nIt does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n\nI'll help you do this. \n\nDave",
     "created_at": "2010-01-10T05:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -229,20 +225,17 @@ if [ "x$SAGE64" = xyes ] ; then
   export $LDFLAGS
 fi
 ```
-
 then it will work irrespective of the flag needed to generate 64-bit binaries. (Not all compilers need -m64, as others use -q64 and other flags). I'm not totally convinced LDFLAGS ever needs -m64, as I believe LDFLAGS gets passed to the linker. No linker I am aware of has the -m64 option (check GNU binutils manual if you wish). But I'm not 100% sure it is never needed. I think the right flag if needed is -64 for the GNU linker, but it is rarely needed, as normally the linker can work out whether a 32 or 64 bit binary is needed, based on the object files. The exception is when creasting shared libraries from archives, where the linker may not be able to determine this.
 * Remove the checks for the Sun compiler and adding -Wall with gcc. The updates to sage-env will add the -Wall for you with gcc. 
 * Remove the checks to see if there is a mix of Sun and GNU compilers - that is taken care of elsewhere now. 
 
 * Unless there is good reason, remove the 
 
-
 ```
 : ${CP=cp}; CP="$CP -f"; export CP
 : ${MV=mv}; MV="$MV -f"; export MV
 : ${RM=rm}; RM="$RM -f"; export RM
 ```
-
 as it was agreed recently (see sage-devel) that there is no need for there to be variables for very basic commands. However, if the source code makes use of $CP etc, then they might have to stay. But if possible, just use mv, cp etc. 
 
 * Someting called 'CC' is used here. I'm not sure what that is, but be aware the Sun C++ compiler is called 'CC' so there might be a name clash. Make sure the absolute path to CC is specified if it's not already done, otherwise it may break if the Sun C++ compiler is in the path. 
@@ -280,7 +273,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061376.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n> [...]\n>  * Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n> \n> It does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n> \n> I'll help you do this. \n> \n> Dave \n> \n>  \n\nPerfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that section can't be removed.",
+    "body": "Replying to [comment:9 drkirkby]:\n> [...]\n> * Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n> \n> It does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n> \n> I'll help you do this. \n> \n> Dave \n> \n>  \n\n\nPerfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that section can't be removed.",
     "created_at": "2010-01-10T05:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -291,7 +284,7 @@ archive/issue_comments_061376.json:
 
 Replying to [comment:9 drkirkby]:
 > [...]
->  * Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. 
+> * Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. 
 > 
 > It does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. 
 > 
@@ -300,6 +293,7 @@ Replying to [comment:9 drkirkby]:
 > Dave 
 > 
 >  
+
 
 Perfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that section can't be removed.
 
@@ -328,7 +322,7 @@ Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7344/spkg-i
 archive/issue_comments_061378.json:
 ```json
 {
-    "body": "I've looked at this, and have attached a revised spkg-install, which is a lot simpler. However, there are some odd things about this. \n\n* Why is the package called libjpeg-7.p1, rather than libjpeg-7 ? The .p0 is appended when a patch is applied, .p1 is used when a second patch is applied. This would therefore imply it's been patched twice, whereas in fact it has not. \n* There is no need for a patches directory when there are no patches.\n* What is the purpose of this code \n\n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\n\nI just took the libjpeg source code, then built it with:\n\n```\n$ ./configure --prefix=/tmp\n$ make \n$ make install\n```\n\nand it all went ok, without me having to override 'cp', 'mv' or 'rm'. \n\n* You would need to get William or someone else to look over the license. I know there is one requirement there, which is not a requirement of the GPL. That is, if you use their code, you must acknowledge them. Having had some GPL'ed code of mine ripped off without acknowledgment, I was a bit annoyed, but I've been told there is no requirement to acknowledge anyone if you use their GPL code. I am not a lawyer are more interested in the technical aspects than license conditions, but someone would need to verify this license is compatible. \n\nIn the attacked in spkg-install I've left all the overriding of cp, but I don't feel it should be necessary. \n\nDave",
+    "body": "I've looked at this, and have attached a revised spkg-install, which is a lot simpler. However, there are some odd things about this. \n\n* Why is the package called libjpeg-7.p1, rather than libjpeg-7 ? The .p0 is appended when a patch is applied, .p1 is used when a second patch is applied. This would therefore imply it's been patched twice, whereas in fact it has not. \n* There is no need for a patches directory when there are no patches.\n* What is the purpose of this code \n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\nI just took the libjpeg source code, then built it with:\n\n```\n$ ./configure --prefix=/tmp\n$ make \n$ make install\n```\nand it all went ok, without me having to override 'cp', 'mv' or 'rm'. \n\n* You would need to get William or someone else to look over the license. I know there is one requirement there, which is not a requirement of the GPL. That is, if you use their code, you must acknowledge them. Having had some GPL'ed code of mine ripped off without acknowledgment, I was a bit annoyed, but I've been told there is no requirement to acknowledge anyone if you use their GPL code. I am not a lawyer are more interested in the technical aspects than license conditions, but someone would need to verify this license is compatible. \n\nIn the attacked in spkg-install I've left all the overriding of cp, but I don't feel it should be necessary. \n\nDave",
     "created_at": "2010-01-11T20:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -343,13 +337,11 @@ I've looked at this, and have attached a revised spkg-install, which is a lot si
 * There is no need for a patches directory when there are no patches.
 * What is the purpose of this code 
 
-
 ```
 : ${CP=cp}; CP="$CP -f"; export CP
 : ${MV=mv}; MV="$MV -f"; export MV
 : ${RM=rm}; RM="$RM -f"; export RM
 ```
-
 
 I just took the libjpeg source code, then built it with:
 
@@ -358,7 +350,6 @@ $ ./configure --prefix=/tmp
 $ make 
 $ make install
 ```
-
 and it all went ok, without me having to override 'cp', 'mv' or 'rm'. 
 
 * You would need to get William or someone else to look over the license. I know there is one requirement there, which is not a requirement of the GPL. That is, if you use their code, you must acknowledge them. Having had some GPL'ed code of mine ripped off without acknowledgment, I was a bit annoyed, but I've been told there is no requirement to acknowledge anyone if you use their GPL code. I am not a lawyer are more interested in the technical aspects than license conditions, but someone would need to verify this license is compatible. 
@@ -410,7 +401,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061381.json:
 ```json
 {
-    "body": "New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n\nAs stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\nI am unsure of the GPL compatibility of libjpeg's licensing, but this message on: http://www.mail-archive.com/mozilla-license`@`mozilla.org/msg00143.html seems to suggest that it is widely considered GPL compatible. Otherwise, we may want to consider libjpeg-turbo (http://sourceforge.net/projects/libjpeg-turbo/) and patch PIL to use that.\n\nRegarding review of this package:\n\nThe package may be reviewed by using the PIL package, as above:\n\n\n```\nsage: import Image\nsage: im = Image.open(\"<your-jpeg-file-here>\")\nsage: im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: im.save(\"wherever.jpg\")\n```\n",
+    "body": "New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n\nAs stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\nI am unsure of the GPL compatibility of libjpeg's licensing, but this message on: http://www.mail-archive.com/mozilla-license`@`mozilla.org/msg00143.html seems to suggest that it is widely considered GPL compatible. Otherwise, we may want to consider libjpeg-turbo (http://sourceforge.net/projects/libjpeg-turbo/) and patch PIL to use that.\n\nRegarding review of this package:\n\nThe package may be reviewed by using the PIL package, as above:\n\n```\nsage: import Image\nsage: im = Image.open(\"<your-jpeg-file-here>\")\nsage: im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: im.save(\"wherever.jpg\")\n```",
     "created_at": "2010-08-17T18:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -429,7 +420,6 @@ Regarding review of this package:
 
 The package may be reviewed by using the PIL package, as above:
 
-
 ```
 sage: import Image
 sage: im = Image.open("<your-jpeg-file-here>")
@@ -439,7 +429,6 @@ TIFF (455, 495) 1
 sage: im.show()
 sage: im.save("wherever.jpg")
 ```
-
 
 
 
@@ -466,7 +455,7 @@ archive/issue_comments_061382.json:
 archive/issue_comments_061383.json:
 ```json
 {
-    "body": "Replying to [comment:13 timdumol]:\n> New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n> \n> As stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\nThere's a much simpler way to unset RM than use\n\n\n```\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\n\none can use:\n\n\n```\nunset RM\n```\n\n\nIf a Makefile needs RM set, I feel it would be better to fix the Makefile and report that upstream. Likewise if a Makefile needs `rm -f`, it should use `rm -f`",
+    "body": "Replying to [comment:13 timdumol]:\n> New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n> \n> As stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\n\nThere's a much simpler way to unset RM than use\n\n```\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\none can use:\n\n```\nunset RM\n```\n\nIf a Makefile needs RM set, I feel it would be better to fix the Makefile and report that upstream. Likewise if a Makefile needs `rm -f`, it should use `rm -f`",
     "created_at": "2011-04-08T08:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -480,21 +469,18 @@ Replying to [comment:13 timdumol]:
 > 
 > As stated in #7818, some makefiles depend on $RM being unset or set to "rm -f". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).
 
-There's a much simpler way to unset RM than use
 
+There's a much simpler way to unset RM than use
 
 ```
 : ${RM=rm}; RM="$RM -f"; export RM
 ```
 
-
 one can use:
-
 
 ```
 unset RM
 ```
-
 
 If a Makefile needs RM set, I feel it would be better to fix the Makefile and report that upstream. Likewise if a Makefile needs `rm -f`, it should use `rm -f`
 
@@ -668,7 +654,7 @@ Review instructions are as above. This definitely needs testing on a Mac, as I a
 archive/issue_comments_061393.json:
 ```json
 {
-    "body": "This fails to build on my OS X box. Here is the tail end of the log:\n\n```\nchecking whether to use version script when building libjpeg-turbo... yes\nchecking whether to include arithmetic encoding support... yes\nchecking whether to include arithmetic decoding support... yes\nchecking if we have SIMD optimisations for cpu type... yes (i386)\nchecking for nasm... nasm\nchecking for object file format of host system... Mach-O\nchecking for object file format specifier (NAFLAGS) ... -fmacho -DMACHO\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n```\n",
+    "body": "This fails to build on my OS X box. Here is the tail end of the log:\n\n```\nchecking whether to use version script when building libjpeg-turbo... yes\nchecking whether to include arithmetic encoding support... yes\nchecking whether to include arithmetic decoding support... yes\nchecking if we have SIMD optimisations for cpu type... yes (i386)\nchecking for nasm... nasm\nchecking for object file format of host system... Mach-O\nchecking for object file format specifier (NAFLAGS) ... -fmacho -DMACHO\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n```",
     "created_at": "2011-08-02T23:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -695,7 +681,6 @@ Failed to configure libjpeg ... exiting
 
 
 
-
 ---
 
 archive/issue_comments_061394.json:
@@ -719,7 +704,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061395.json:
 ```json
 {
-    "body": "Replying to [comment:21 jhpalmieri]:\n> This fails to build on my OS X box. Here is the tail end of the log:\n\nHaven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not sure if (i.e., rather doubt that) we intend to use `nasm` at all, which probably requires some additional `configure` option (if `nasm` is installed) or perhaps setting `AS`.",
+    "body": "Replying to [comment:21 jhpalmieri]:\n> This fails to build on my OS X box. Here is the tail end of the log:\n\n\nHaven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not sure if (i.e., rather doubt that) we intend to use `nasm` at all, which probably requires some additional `configure` option (if `nasm` is installed) or perhaps setting `AS`.",
     "created_at": "2011-08-03T00:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -731,6 +716,7 @@ archive/issue_comments_061395.json:
 Replying to [comment:21 jhpalmieri]:
 > This fails to build on my OS X box. Here is the tail end of the log:
 
+
 Haven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not sure if (i.e., rather doubt that) we intend to use `nasm` at all, which probably requires some additional `configure` option (if `nasm` is installed) or perhaps setting `AS`.
 
 
@@ -740,7 +726,7 @@ Haven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not su
 archive/issue_comments_061396.json:
 ```json
 {
-    "body": "Replying to [comment:22 leif]:\n> Replying to [comment:21 jhpalmieri]:\n> > This fails to build on my OS X box. Here is the tail end of the log:\n> \n> Haven't looked at the spkg yet, but perhaps attach your `config.log`\n\nI've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).",
+    "body": "Replying to [comment:22 leif]:\n> Replying to [comment:21 jhpalmieri]:\n> > This fails to build on my OS X box. Here is the tail end of the log:\n\n> \n> Haven't looked at the spkg yet, but perhaps attach your `config.log`\n\n\nI've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).",
     "created_at": "2011-08-03T03:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -752,8 +738,10 @@ archive/issue_comments_061396.json:
 Replying to [comment:22 leif]:
 > Replying to [comment:21 jhpalmieri]:
 > > This fails to build on my OS X box. Here is the tail end of the log:
+
 > 
 > Haven't looked at the spkg yet, but perhaps attach your `config.log`
+
 
 I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).
 
@@ -764,7 +752,7 @@ I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.
 archive/issue_comments_061397.json:
 ```json
 {
-    "body": "Replying to [comment:23 jhpalmieri]:\n> I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n\nHmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n\nJohn, did you set `SAGE64=yes`?\n\nHaven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n\n----\n\nBtw., there's crap in the spkg, and I can't read the Mercurial files:\n\n```sh\n$ ls -a\n.   .hg        .hgignore~     spkg-install       SPKG.txt       src\n..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n$ hg log ; hg status\nabort: requirement 'dotencode' not supported!\nabort: requirement 'dotencode' not supported!\n```\n\n\nAlso, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n\n```sh\n# This was needed for libjpeg. Is this needed for libjpeg-turbo?\n#if [ -n \"`uname -s | grep Darwin`\" ]; then\n#   $CP ../patches/config.sub .\n#   $CP ../patches/config.guess .\n#   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n#   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n#else\n./configure --prefix=\"$SAGE_LOCAL\"\n#fi\n```\n\nthough that's not necessarily the problem.",
+    "body": "Replying to [comment:23 jhpalmieri]:\n> I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n\n\nHmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n\nJohn, did you set `SAGE64=yes`?\n\nHaven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n\n---\n\nBtw., there's crap in the spkg, and I can't read the Mercurial files:\n\n```sh\n$ ls -a\n.   .hg        .hgignore~     spkg-install       SPKG.txt       src\n..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n$ hg log ; hg status\nabort: requirement 'dotencode' not supported!\nabort: requirement 'dotencode' not supported!\n```\n\nAlso, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n\n```sh\n# This was needed for libjpeg. Is this needed for libjpeg-turbo?\n#if [ -n \"`uname -s | grep Darwin`\" ]; then\n#   $CP ../patches/config.sub .\n#   $CP ../patches/config.guess .\n#   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n#   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n#else\n./configure --prefix=\"$SAGE_LOCAL\"\n#fi\n```\nthough that's not necessarily the problem.",
     "created_at": "2011-08-03T05:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -776,13 +764,14 @@ archive/issue_comments_061397.json:
 Replying to [comment:23 jhpalmieri]:
 > I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).
 
+
 Hmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)
 
 John, did you set `SAGE64=yes`?
 
 Haven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)
 
-----
+---
 
 Btw., there's crap in the spkg, and I can't read the Mercurial files:
 
@@ -794,7 +783,6 @@ $ hg log ; hg status
 abort: requirement 'dotencode' not supported!
 abort: requirement 'dotencode' not supported!
 ```
-
 
 Also, unfortunately Tim has deleted the old "patches" that were applied on MacOS X
 
@@ -809,7 +797,6 @@ Also, unfortunately Tim has deleted the old "patches" that were applied on MacOS
 ./configure --prefix="$SAGE_LOCAL"
 #fi
 ```
-
 though that's not necessarily the problem.
 
 
@@ -819,7 +806,7 @@ though that's not necessarily the problem.
 archive/issue_comments_061398.json:
 ```json
 {
-    "body": "> John, did you set SAGE64=yes?\n\nI hadn't, because with OS X 10.6 on 64-bit machines, it shouldn't be necessary.  I just tried it anyway, and got the same result.\n\nThe file BUILDING.txt in the src directory says this:\n\n```\n-- NASM\n   * 0.98, or 2.01 or later is required for a 32-bit build\n   * NASM 2.00 or later is required for a 64-bit build\n   * NASM 2.07 or later is required for a 64-bit build on OS X.  This can be\n     obtained from MacPorts (http://www.macports.org/).\n```\n\nThe default version of nasm seems to be 0.98.40, or at least that's what I have installed.  The same file also says this; perhaps this is the way to go:\n\n```\n32-bit Library Build on 64-bit OS X\n-----------------------------------\n\nAdd\n\n  CFLAGS='-O3 -m32' LDFLAGS=-m32\n\nto the configure command line.\n```\n\nIf I configure with those options, it seems to succeed.  That is, I ran \"sage -sh\", then changed to the directory `sage/spkg/build/libjpeg_turbo-1.1.1/src` and ran\n\n```\nCFLAGS='-O3 -m32' LDFLAGS=-m32 ./configure --prefix=/Applications/sage/local\n```\n\nThen `make` succeeded.  I haven't tried `make install` or testing it inside of Sage.",
+    "body": "> John, did you set SAGE64=yes?\n\n\nI hadn't, because with OS X 10.6 on 64-bit machines, it shouldn't be necessary.  I just tried it anyway, and got the same result.\n\nThe file BUILDING.txt in the src directory says this:\n\n```\n-- NASM\n   * 0.98, or 2.01 or later is required for a 32-bit build\n   * NASM 2.00 or later is required for a 64-bit build\n   * NASM 2.07 or later is required for a 64-bit build on OS X.  This can be\n     obtained from MacPorts (http://www.macports.org/).\n```\nThe default version of nasm seems to be 0.98.40, or at least that's what I have installed.  The same file also says this; perhaps this is the way to go:\n\n```\n32-bit Library Build on 64-bit OS X\n-----------------------------------\n\nAdd\n\n  CFLAGS='-O3 -m32' LDFLAGS=-m32\n\nto the configure command line.\n```\nIf I configure with those options, it seems to succeed.  That is, I ran \"sage -sh\", then changed to the directory `sage/spkg/build/libjpeg_turbo-1.1.1/src` and ran\n\n```\nCFLAGS='-O3 -m32' LDFLAGS=-m32 ./configure --prefix=/Applications/sage/local\n```\nThen `make` succeeded.  I haven't tried `make install` or testing it inside of Sage.",
     "created_at": "2011-08-03T05:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -829,6 +816,7 @@ archive/issue_comments_061398.json:
 ```
 
 > John, did you set SAGE64=yes?
+
 
 I hadn't, because with OS X 10.6 on 64-bit machines, it shouldn't be necessary.  I just tried it anyway, and got the same result.
 
@@ -841,7 +829,6 @@ The file BUILDING.txt in the src directory says this:
    * NASM 2.07 or later is required for a 64-bit build on OS X.  This can be
      obtained from MacPorts (http://www.macports.org/).
 ```
-
 The default version of nasm seems to be 0.98.40, or at least that's what I have installed.  The same file also says this; perhaps this is the way to go:
 
 ```
@@ -854,13 +841,11 @@ Add
 
 to the configure command line.
 ```
-
 If I configure with those options, it seems to succeed.  That is, I ran "sage -sh", then changed to the directory `sage/spkg/build/libjpeg_turbo-1.1.1/src` and ran
 
 ```
 CFLAGS='-O3 -m32' LDFLAGS=-m32 ./configure --prefix=/Applications/sage/local
 ```
-
 Then `make` succeeded.  I haven't tried `make install` or testing it inside of Sage.
 
 
@@ -870,7 +855,7 @@ Then `make` succeeded.  I haven't tried `make install` or testing it inside of S
 archive/issue_comments_061399.json:
 ```json
 {
-    "body": "> perhaps this is the way to go\n\nOr maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)",
+    "body": "> perhaps this is the way to go\n\n\nOr maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)",
     "created_at": "2011-08-03T05:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -881,6 +866,7 @@ archive/issue_comments_061399.json:
 
 > perhaps this is the way to go
 
+
 Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me "IOError: decoder jpeg not available".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)
 
 
@@ -890,7 +876,7 @@ Or maybe not; either I did something wrong or I can't use the 32-bit library in 
 archive/issue_comments_061400.json:
 ```json
 {
-    "body": "Replying to [comment:26 jhpalmieri]:\n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build\n\nYeah, you cannot use both 32- and 64-bit libraries or modules within / from the same executable.\n\n> Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\nI wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\n(You could also try temporarily \"removing\" `nasm` by renaming it to something obscure and then run `./configure`.)\n\nIf `libjpeg` stays an optional package, we could of course also add an optional `nasm` package (if the licence allows this), but I won't add more (binary?) standard spkgs just to accomplish prerequisites. Fortran is IMHO bad enough.\n\nOr we have to resort to some other (upstream) `libjpeg` package.",
+    "body": "Replying to [comment:26 jhpalmieri]:\n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build\n\n\nYeah, you cannot use both 32- and 64-bit libraries or modules within / from the same executable.\n\n> Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\n\nI wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\n(You could also try temporarily \"removing\" `nasm` by renaming it to something obscure and then run `./configure`.)\n\nIf `libjpeg` stays an optional package, we could of course also add an optional `nasm` package (if the licence allows this), but I won't add more (binary?) standard spkgs just to accomplish prerequisites. Fortran is IMHO bad enough.\n\nOr we have to resort to some other (upstream) `libjpeg` package.",
     "created_at": "2011-08-03T06:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -902,9 +888,11 @@ archive/issue_comments_061400.json:
 Replying to [comment:26 jhpalmieri]:
 > Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build
 
+
 Yeah, you cannot use both 32- and 64-bit libraries or modules within / from the same executable.
 
 > Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)
+
 
 I wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.
 
@@ -921,7 +909,7 @@ Or we have to resort to some other (upstream) `libjpeg` package.
 archive/issue_comments_061401.json:
 ```json
 {
-    "body": "Replying to [comment:27 leif]:\n> I wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\nYep, configuring with `--without-simd` should work, as the only assembler source files are all in `src/simd/`.",
+    "body": "Replying to [comment:27 leif]:\n> I wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\n\nYep, configuring with `--without-simd` should work, as the only assembler source files are all in `src/simd/`.",
     "created_at": "2011-08-03T06:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -933,6 +921,7 @@ archive/issue_comments_061401.json:
 Replying to [comment:27 leif]:
 > I wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.
 
+
 Yep, configuring with `--without-simd` should work, as the only assembler source files are all in `src/simd/`.
 
 
@@ -942,7 +931,7 @@ Yep, configuring with `--without-simd` should work, as the only assembler source
 archive/issue_comments_061402.json:
 ```json
 {
-    "body": "Replying to [comment:24 leif]:\n> Replying to [comment:23 jhpalmieri]:\n> > I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n> \n> Hmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n> \n> John, did you set `SAGE64=yes`?\n> \n> Haven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n> \n> ----\n> \n> Btw., there's crap in the spkg, and I can't read the Mercurial files:\n> {{{\n> #!sh\n> $ ls -a\n> .   .hg        .hgignore~     spkg-install       SPKG.txt       src\n> ..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n> $ hg log ; hg status\n> abort: requirement 'dotencode' not supported!\n> abort: requirement 'dotencode' not supported!\n> }}}\n\nSorry, I used a pretty recent version of Mercurial to create the repository, and it seems that it is backwards incompatible. I'll use `sage -hg` instead. I'll delete the trash files.\n\n> \n> Also, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n> {{{\n> #!sh\n> # This was needed for libjpeg. Is this needed for libjpeg-turbo?\n> #if [ -n \"`uname -s | grep Darwin`\" ]; then\n> #   $CP ../patches/config.sub .\n> #   $CP ../patches/config.guess .\n> #   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n> #   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n> #else\n> ./configure --prefix=\"$SAGE_LOCAL\"\n> #fi\n> }}}\n> though that's not necessarily the problem.",
+    "body": "Replying to [comment:24 leif]:\n> Replying to [comment:23 jhpalmieri]:\n> > I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n\n> \n> Hmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n> \n> John, did you set `SAGE64=yes`?\n> \n> Haven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n> \n> \n> ---\n> \n> Btw., there's crap in the spkg, and I can't read the Mercurial files:\n> \n> ```\n> #!sh\n> $ ls -a\n> .   .hg        .hgignore~     spkg-install       SPKG.txt       src\n> ..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n> $ hg log ; hg status\n> abort: requirement 'dotencode' not supported!\n> abort: requirement 'dotencode' not supported!\n> ```\n\n\nSorry, I used a pretty recent version of Mercurial to create the repository, and it seems that it is backwards incompatible. I'll use `sage -hg` instead. I'll delete the trash files.\n\n> \n> Also, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n> \n> ```\n> #!sh\n> # This was needed for libjpeg. Is this needed for libjpeg-turbo?\n> #if [ -n \"`uname -s | grep Darwin`\" ]; then\n> #   $CP ../patches/config.sub .\n> #   $CP ../patches/config.guess .\n> #   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n> #   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n> #else\n> ./configure --prefix=\"$SAGE_LOCAL\"\n> #fi\n> ```\n> though that's not necessarily the problem.",
     "created_at": "2011-08-03T09:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -954,6 +943,7 @@ archive/issue_comments_061402.json:
 Replying to [comment:24 leif]:
 > Replying to [comment:23 jhpalmieri]:
 > > I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).
+
 > 
 > Hmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)
 > 
@@ -961,10 +951,12 @@ Replying to [comment:24 leif]:
 > 
 > Haven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)
 > 
-> ----
+> 
+> ---
 > 
 > Btw., there's crap in the spkg, and I can't read the Mercurial files:
-> {{{
+> 
+> ```
 > #!sh
 > $ ls -a
 > .   .hg        .hgignore~     spkg-install       SPKG.txt       src
@@ -972,13 +964,15 @@ Replying to [comment:24 leif]:
 > $ hg log ; hg status
 > abort: requirement 'dotencode' not supported!
 > abort: requirement 'dotencode' not supported!
-> }}}
+> ```
+
 
 Sorry, I used a pretty recent version of Mercurial to create the repository, and it seems that it is backwards incompatible. I'll use `sage -hg` instead. I'll delete the trash files.
 
 > 
 > Also, unfortunately Tim has deleted the old "patches" that were applied on MacOS X
-> {{{
+> 
+> ```
 > #!sh
 > # This was needed for libjpeg. Is this needed for libjpeg-turbo?
 > #if [ -n "`uname -s | grep Darwin`" ]; then
@@ -989,7 +983,7 @@ Sorry, I used a pretty recent version of Mercurial to create the repository, and
 > #else
 > ./configure --prefix="$SAGE_LOCAL"
 > #fi
-> }}}
+> ```
 > though that's not necessarily the problem.
 
 
@@ -999,7 +993,7 @@ Sorry, I used a pretty recent version of Mercurial to create the repository, and
 archive/issue_comments_061403.json:
 ```json
 {
-    "body": "Replying to [comment:26 jhpalmieri]:\n> > perhaps this is the way to go\n> \n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\nI am uncertain, but I believe that you need to reinstall PIL (sage -f pil) in order to enable JPEG capabilities.",
+    "body": "Replying to [comment:26 jhpalmieri]:\n> > perhaps this is the way to go\n\n> \n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\n\nI am uncertain, but I believe that you need to reinstall PIL (sage -f pil) in order to enable JPEG capabilities.",
     "created_at": "2011-08-03T09:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -1010,8 +1004,10 @@ archive/issue_comments_061403.json:
 
 Replying to [comment:26 jhpalmieri]:
 > > perhaps this is the way to go
+
 > 
 > Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me "IOError: decoder jpeg not available".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)
+
 
 I am uncertain, but I believe that you need to reinstall PIL (sage -f pil) in order to enable JPEG capabilities.
 
@@ -1082,7 +1078,7 @@ As with the spkg at #7345, you should also provide a patch to the scripts repo, 
 archive/issue_comments_061407.json:
 ```json
 {
-    "body": "Replying to [comment:33 jhpalmieri]:\n> As with the spkg at #7345, you should also provide a patch to the scripts repo, adding the appropriate files to .hgignore there.\n\n... if we really want to install any executables as well.\n\nUsing them from Sage would certainly be inefficient, and `local/bin/` is already filled up with a lot of .... useful tools.",
+    "body": "Replying to [comment:33 jhpalmieri]:\n> As with the spkg at #7345, you should also provide a patch to the scripts repo, adding the appropriate files to .hgignore there.\n\n\n... if we really want to install any executables as well.\n\nUsing them from Sage would certainly be inefficient, and `local/bin/` is already filled up with a lot of .... useful tools.",
     "created_at": "2011-08-04T11:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -1093,6 +1089,7 @@ archive/issue_comments_061407.json:
 
 Replying to [comment:33 jhpalmieri]:
 > As with the spkg at #7345, you should also provide a patch to the scripts repo, adding the appropriate files to .hgignore there.
+
 
 ... if we really want to install any executables as well.
 
@@ -1123,7 +1120,7 @@ Changing keywords from "" to "sd32".
 archive/issue_comments_061409.json:
 ```json
 {
-    "body": "Replying to [comment:18 timdumol]:\n> It seems that libjpeg's license is not compatible with GPL, \n> according to: http://www.thomasalspaugh.org/pub/osl-sps/libjpeg8c.html. \n> Also, libjpeg-turbo seems to be significantly faster than libjpeg, while being \n> licensed under GPL. I'm making a package for that now.\n\nThere is a discussion of the libjpeg-turbo license by the main developer (I think) here: http://sourceforge.net/projects/libjpeg-turbo/forums/forum/1086868/topic/4519797\n\nIt's definitely \"licensed under GPL\".   However, it seems to be licensed under a subset of LGPL, which would definitely be GPL compatible.",
+    "body": "Replying to [comment:18 timdumol]:\n> It seems that libjpeg's license is not compatible with GPL, \n> according to: http://www.thomasalspaugh.org/pub/osl-sps/libjpeg8c.html. \n> Also, libjpeg-turbo seems to be significantly faster than libjpeg, while being \n> licensed under GPL. I'm making a package for that now.\n\n\nThere is a discussion of the libjpeg-turbo license by the main developer (I think) here: http://sourceforge.net/projects/libjpeg-turbo/forums/forum/1086868/topic/4519797\n\nIt's definitely \"licensed under GPL\".   However, it seems to be licensed under a subset of LGPL, which would definitely be GPL compatible.",
     "created_at": "2011-11-14T16:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -1138,6 +1135,7 @@ Replying to [comment:18 timdumol]:
 > Also, libjpeg-turbo seems to be significantly faster than libjpeg, while being 
 > licensed under GPL. I'm making a package for that now.
 
+
 There is a discussion of the libjpeg-turbo license by the main developer (I think) here: http://sourceforge.net/projects/libjpeg-turbo/forums/forum/1086868/topic/4519797
 
 It's definitely "licensed under GPL".   However, it seems to be licensed under a subset of LGPL, which would definitely be GPL compatible.
@@ -1149,7 +1147,7 @@ It's definitely "licensed under GPL".   However, it seems to be licensed under a
 archive/issue_comments_061410.json:
 ```json
 {
-    "body": "I tried building libjpeg_turbo-1.1.1.spkg on OS X 10.7 (Lion) with XCode 4.2.x and it fails during the ./configure stage:\n\n```\n...\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n\nreal\t0m14.878s\n```\n",
+    "body": "I tried building libjpeg_turbo-1.1.1.spkg on OS X 10.7 (Lion) with XCode 4.2.x and it fails during the ./configure stage:\n\n```\n...\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n\nreal\t0m14.878s\n```",
     "created_at": "2011-11-14T16:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
@@ -1169,7 +1167,6 @@ Failed to configure libjpeg ... exiting
 
 real	0m14.878s
 ```
-
 
 
 

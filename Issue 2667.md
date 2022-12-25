@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2667
 archive/issue_comments_018319.json:
 ```json
 {
-    "body": "Attachment [transform-trac2667.patch](tarball://root/attachments/some-uuid/ticket2667/transform-trac2667.patch) by @rhinton created at 2008-03-29 04:55:58\n\nI discussed this solution with robertwb and cwitty.  I added a `__list__()` method to RealDoubleVectorSpaceElement to allow its elements to be converted to a list.  This makes the hand-off between Transform and matrix() work (see transform.pyx line 44).  \n\nHowever, the vector was still coming into the Transform object wrapped in a one-element list.  The problem was that Graphics3d.translate() allows a variable number of arguments for convenience.  Before, if the first argument was a list or a tuple (note NOT a vector), this sequence was passed directly to self.transform().  As suggested by robertwb, replacing the code\n\n```\n        if isinstance(x[0], (tuple, list)):\n            x = x[0]\n```\n\nwith \n\n```\n        if len(x)==1:\n            x = x[0]\n```\n\nworks since a sequence is the only acceptable one-argument input in this case.  This solution also avoids having to check types.\n\nNote that changing the isinstance() call in the scale() method just below DOES NOT work.  I didn't take the time to figure out why; everything seems to be working now.  (The special-case code around line 627 and the fact that scale() is meaningful with only one input argument probably have something to do with it.)",
+    "body": "Attachment [transform-trac2667.patch](tarball://root/attachments/some-uuid/ticket2667/transform-trac2667.patch) by @rhinton created at 2008-03-29 04:55:58\n\nI discussed this solution with robertwb and cwitty.  I added a `__list__()` method to RealDoubleVectorSpaceElement to allow its elements to be converted to a list.  This makes the hand-off between Transform and matrix() work (see transform.pyx line 44).  \n\nHowever, the vector was still coming into the Transform object wrapped in a one-element list.  The problem was that Graphics3d.translate() allows a variable number of arguments for convenience.  Before, if the first argument was a list or a tuple (note NOT a vector), this sequence was passed directly to self.transform().  As suggested by robertwb, replacing the code\n\n```\n        if isinstance(x[0], (tuple, list)):\n            x = x[0]\n```\nwith \n\n```\n        if len(x)==1:\n            x = x[0]\n```\nworks since a sequence is the only acceptable one-argument input in this case.  This solution also avoids having to check types.\n\nNote that changing the isinstance() call in the scale() method just below DOES NOT work.  I didn't take the time to figure out why; everything seems to be working now.  (The special-case code around line 627 and the fact that scale() is meaningful with only one input argument probably have something to do with it.)",
     "created_at": "2008-03-29T04:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
@@ -65,14 +65,12 @@ However, the vector was still coming into the Transform object wrapped in a one-
         if isinstance(x[0], (tuple, list)):
             x = x[0]
 ```
-
 with 
 
 ```
         if len(x)==1:
             x = x[0]
 ```
-
 works since a sequence is the only acceptable one-argument input in this case.  This solution also avoids having to check types.
 
 Note that changing the isinstance() call in the scale() method just below DOES NOT work.  I didn't take the time to figure out why; everything seems to be working now.  (The special-case code around line 627 and the fact that scale() is meaningful with only one input argument probably have something to do with it.)

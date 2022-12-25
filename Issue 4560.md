@@ -3,7 +3,7 @@
 archive/issues_004560.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThis is bad\n\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThis is bad\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
     "created_at": "2008-11-20T01:35:11Z",
     "labels": [
         "component: calculus",
@@ -22,12 +22,10 @@ CC:  @mwhansen
 
 This is bad
 
-
 ```
 sage: sqrt(2) in CC
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4560
 
@@ -93,7 +91,7 @@ archive/issue_events_010394.json:
 archive/issue_comments_034096.json:
 ```json
 {
-    "body": "The above patch causes the following doctest failure in tut.tex:\n\n```\nThere is one subtlety in defining complex numbers: as mentioned above,\nthe symbol \\code{i} represents a square root of \\minusone, but it is a\n\\emph{formal} square root of \\minusone; it is not in the complex numbers.\nCalling \\code{CC(i)} returns the complex square root of \\minusone.\n%link\n\\begin{verbatim}\nsage: i in CC\nFalse\n```\n\nnow returns true. After some discussion with William it was decided to change the doctest.\n\nCheers,\n\nMichael",
+    "body": "The above patch causes the following doctest failure in tut.tex:\n\n```\nThere is one subtlety in defining complex numbers: as mentioned above,\nthe symbol \\code{i} represents a square root of \\minusone, but it is a\n\\emph{formal} square root of \\minusone; it is not in the complex numbers.\nCalling \\code{CC(i)} returns the complex square root of \\minusone.\n%link\n\\begin{verbatim}\nsage: i in CC\nFalse\n```\nnow returns true. After some discussion with William it was decided to change the doctest.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T08:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ Calling \code{CC(i)} returns the complex square root of \minusone.
 sage: i in CC
 False
 ```
-
 now returns true. After some discussion with William it was decided to change the doctest.
 
 Cheers,

@@ -102,7 +102,7 @@ Michael
 archive/issue_comments_015049.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> I'm sorry, I should add that this passes sage -testall, except for the file const.tex. I'll fix this separately. (There is no way I know of to create a mercurial bundle containing both code patches and doc fixes.)\n\nSince the code for documentation and the sage library are in different repos you cannot submit a bundle that contains changesets from both repos. I would also plead you once more to use the export command, if needed via the command line, i.e. `hg export $CHANGESET` because there are clearly some issues with the way you do bundle :(\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 wdj]:\n> I'm sorry, I should add that this passes sage -testall, except for the file const.tex. I'll fix this separately. (There is no way I know of to create a mercurial bundle containing both code patches and doc fixes.)\n\n\nSince the code for documentation and the sage library are in different repos you cannot submit a bundle that contains changesets from both repos. I would also plead you once more to use the export command, if needed via the command line, i.e. `hg export $CHANGESET` because there are clearly some issues with the way you do bundle :(\n\nCheers,\n\nMichael",
     "created_at": "2008-02-23T15:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
@@ -113,6 +113,7 @@ archive/issue_comments_015049.json:
 
 Replying to [comment:2 wdj]:
 > I'm sorry, I should add that this passes sage -testall, except for the file const.tex. I'll fix this separately. (There is no way I know of to create a mercurial bundle containing both code patches and doc fixes.)
+
 
 Since the code for documentation and the sage library are in different repos you cannot submit a bundle that contains changesets from both repos. I would also plead you once more to use the export command, if needed via the command line, i.e. `hg export $CHANGESET` because there are clearly some issues with the way you do bundle :(
 
@@ -201,7 +202,7 @@ Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch
 archive/issue_comments_015054.json:
 ```json
 {
-    "body": "Replying to [comment:5 wdj]:\n> I don't know how to export a doc bundle (and I've tried many different ways). I'm attaching the patch, just in case.\n\nThe patch looks good and does apply cleanly against my 2.10.3.alpha0. That isn't a formal review, just a technical observation. The reason the bundle is so large because William hasn't pushed out the changes from 2.10.2 to the repos and it contains every commit from 2.10.1 onward. So in the end it is all William's fault :)\n\nTo export the doc patch go into `$SAGE_ROOT/devel/doc` and us hg to do an `hg export tip` (at least for the last commit). You can do the same using Sage's hg interface to the doc repo, i.e. do `hg_doc.log()` to see the changelog.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 wdj]:\n> I don't know how to export a doc bundle (and I've tried many different ways). I'm attaching the patch, just in case.\n\n\nThe patch looks good and does apply cleanly against my 2.10.3.alpha0. That isn't a formal review, just a technical observation. The reason the bundle is so large because William hasn't pushed out the changes from 2.10.2 to the repos and it contains every commit from 2.10.1 onward. So in the end it is all William's fault :)\n\nTo export the doc patch go into `$SAGE_ROOT/devel/doc` and us hg to do an `hg export tip` (at least for the last commit). You can do the same using Sage's hg interface to the doc repo, i.e. do `hg_doc.log()` to see the changelog.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-23T15:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
@@ -212,6 +213,7 @@ archive/issue_comments_015054.json:
 
 Replying to [comment:5 wdj]:
 > I don't know how to export a doc bundle (and I've tried many different ways). I'm attaching the patch, just in case.
+
 
 The patch looks good and does apply cleanly against my 2.10.3.alpha0. That isn't a formal review, just a technical observation. The reason the bundle is so large because William hasn't pushed out the changes from 2.10.2 to the repos and it contains every commit from 2.10.1 onward. So in the end it is all William's fault :)
 
@@ -228,7 +230,7 @@ Michael
 archive/issue_comments_015055.json:
 ```json
 {
-    "body": "Replying to [comment:6 wdj]:\n> I just figured out how to export a doc bundle to a patch. It's actually obvious and easy, so I don't know what the problem was before. It is attached too. \n> \n> Can you tell me if these are acceptable or if they need to be redone?\n\nI can now see that we crossed paths while I wrote the answer to your initial question. Both patches look correct and apply cleanly against my current repo. So once they get positively reviewed (by rlm?) they can go in.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 wdj]:\n> I just figured out how to export a doc bundle to a patch. It's actually obvious and easy, so I don't know what the problem was before. It is attached too. \n> \n> Can you tell me if these are acceptable or if they need to be redone?\n\n\nI can now see that we crossed paths while I wrote the answer to your initial question. Both patches look correct and apply cleanly against my current repo. So once they get positively reviewed (by rlm?) they can go in.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-23T15:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
@@ -241,6 +243,7 @@ Replying to [comment:6 wdj]:
 > I just figured out how to export a doc bundle to a patch. It's actually obvious and easy, so I don't know what the problem was before. It is attached too. 
 > 
 > Can you tell me if these are acceptable or if they need to be redone?
+
 
 I can now see that we crossed paths while I wrote the answer to your initial question. Both patches look correct and apply cleanly against my current repo. So once they get positively reviewed (by rlm?) they can go in.
 

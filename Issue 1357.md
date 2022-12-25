@@ -3,7 +3,7 @@
 archive/issues_001357.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nSomething like this should work:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + x + 1).roots(ring=QQbar)\n```\n\nbut currently it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1357\n\n",
+    "body": "Assignee: cwitty\n\nSomething like this should work:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + x + 1).roots(ring=QQbar)\n```\nbut currently it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1357\n\n",
     "created_at": "2007-12-02T01:28:37Z",
     "labels": [
         "component: misc"
@@ -23,7 +23,6 @@ Something like this should work:
 sage: x = polygen(ZZ)
 sage: (x^2 + x + 1).roots(ring=QQbar)
 ```
-
 but currently it doesn't.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1357
@@ -55,7 +54,7 @@ Attachment [1357.patch](tarball://root/attachments/some-uuid/ticket1357/1357.pat
 archive/issue_comments_008654.json:
 ```json
 {
-    "body": "Before:\n\n```\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: interval_roots = f.roots(ring=CIF)\nsage: x_coords = [QQbar.polynomial_root(f, x_interval[0]) for x_interval in interval_roots]\nsage: f = E.defining_polynomial()\nsage: y = polygen(QQbar,'y')\nsage: points = []\nsage: for x in x_coords:\n...       g = f(x,y,1)\n...       rootsg = complex_roots(g, min_prec=53)\n...       for root in rootsg:\n...           y_coord = root[0]\n...           yy = QQbar.polynomial_root(g, y_coord)\n...           points.append([x, yy])\n```\n\nAfter:\n\n```\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: x_coords = f.roots(ring=QQbar)\nsage: g = E.defining_polynomial()\nsage: y = polygen(QQbar, 'y')\nsage: points = []\nsage: for x in x_coords:\n...    h = g(x[0],y,1)\n...    rootsh = h.roots(ring=QQbar)\n...    for root in rootsh:\n...        points.append([x[0], root[0]])\n```\n",
+    "body": "Before:\n\n```\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: interval_roots = f.roots(ring=CIF)\nsage: x_coords = [QQbar.polynomial_root(f, x_interval[0]) for x_interval in interval_roots]\nsage: f = E.defining_polynomial()\nsage: y = polygen(QQbar,'y')\nsage: points = []\nsage: for x in x_coords:\n...       g = f(x,y,1)\n...       rootsg = complex_roots(g, min_prec=53)\n...       for root in rootsg:\n...           y_coord = root[0]\n...           yy = QQbar.polynomial_root(g, y_coord)\n...           points.append([x, yy])\n```\nAfter:\n\n```\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: x_coords = f.roots(ring=QQbar)\nsage: g = E.defining_polynomial()\nsage: y = polygen(QQbar, 'y')\nsage: points = []\nsage: for x in x_coords:\n...    h = g(x[0],y,1)\n...    rootsh = h.roots(ring=QQbar)\n...    for root in rootsh:\n...        points.append([x[0], root[0]])\n```",
     "created_at": "2007-12-02T19:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_comment",
@@ -83,7 +82,6 @@ sage: for x in x_coords:
 ...           yy = QQbar.polynomial_root(g, y_coord)
 ...           points.append([x, yy])
 ```
-
 After:
 
 ```
@@ -99,7 +97,6 @@ sage: for x in x_coords:
 ...    for root in rootsh:
 ...        points.append([x[0], root[0]])
 ```
-
 
 
 

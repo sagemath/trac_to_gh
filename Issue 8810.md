@@ -135,7 +135,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080728.json:
 ```json
 {
-    "body": "Another point--I'm concerned about the following doctest in `stanley_symmetric_function_as_polynomial`:\n\n```\n    sage: W = WeylGroup(['B',3,1]) \n    sage: W.from_reduced_word([3,2,1]).stanley_symmetric_function_as_polynomial() \n    2.0*x1^3 + x1*x2 + 0.5*x3\n```\n\nThe coefficients should be in QQ, I think.  Probably you can replace\n` return sum(...) ` with ` return R(sum( ... )) `.",
+    "body": "Another point--I'm concerned about the following doctest in `stanley_symmetric_function_as_polynomial`:\n\n```\n    sage: W = WeylGroup(['B',3,1]) \n    sage: W.from_reduced_word([3,2,1]).stanley_symmetric_function_as_polynomial() \n    2.0*x1^3 + x1*x2 + 0.5*x3\n```\nThe coefficients should be in QQ, I think.  Probably you can replace\n` return sum(...) ` with ` return R(sum( ... )) `.",
     "created_at": "2010-06-04T13:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -151,7 +151,6 @@ Another point--I'm concerned about the following doctest in `stanley_symmetric_f
     sage: W.from_reduced_word([3,2,1]).stanley_symmetric_function_as_polynomial() 
     2.0*x1^3 + x1*x2 + 0.5*x3
 ```
-
 The coefficients should be in QQ, I think.  Probably you can replace
 ` return sum(...) ` with ` return R(sum( ... )) `.
 
@@ -236,7 +235,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080733.json:
 ```json
 {
-    "body": "Hi Steve!\n\nI pushed a reviewers patch on the Sage-Combinat server. It fixes a bug\nor two, improves doctests, removes some unneeded imports, and removes\nsome unneeded code. By the way, I have rebased the Grothendieck patch.\n\nThere are still quite a few missing doctests:\n\n\n```\n> sage -coverage combinat/root_system/pieri_factors.py                          \n----------------------------------------------------------------------\ncombinat/root_system/pieri_factors.py\nSCORE combinat/root_system/pieri_factors.py: 77% (28 of 36)\nMissing documentation:\n\t * elements(self):\n\t * __classcall__(cls, W, min_length = 0, max_length = infinity, min_support = frozenset([]), max_support = None):\n\t * maximal_elements_combinatorial(self):\nMissing doctests:\n\t * __iter__(self):\n\t * __iter__(self):\n\t * stanley_symm_poly_weight(self,w):\n\t * maximal_elements_combinatorial(self):\n\t * stanley_symm_poly_weight(self, w):\n```\n\n\nPlease fix them, and look for TODO's in the file!",
+    "body": "Hi Steve!\n\nI pushed a reviewers patch on the Sage-Combinat server. It fixes a bug\nor two, improves doctests, removes some unneeded imports, and removes\nsome unneeded code. By the way, I have rebased the Grothendieck patch.\n\nThere are still quite a few missing doctests:\n\n```\n> sage -coverage combinat/root_system/pieri_factors.py                          \n----------------------------------------------------------------------\ncombinat/root_system/pieri_factors.py\nSCORE combinat/root_system/pieri_factors.py: 77% (28 of 36)\nMissing documentation:\n\t * elements(self):\n\t * __classcall__(cls, W, min_length = 0, max_length = infinity, min_support = frozenset([]), max_support = None):\n\t * maximal_elements_combinatorial(self):\nMissing doctests:\n\t * __iter__(self):\n\t * __iter__(self):\n\t * stanley_symm_poly_weight(self,w):\n\t * maximal_elements_combinatorial(self):\n\t * stanley_symm_poly_weight(self, w):\n```\n\nPlease fix them, and look for TODO's in the file!",
     "created_at": "2010-06-10T17:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -252,7 +251,6 @@ or two, improves doctests, removes some unneeded imports, and removes
 some unneeded code. By the way, I have rebased the Grothendieck patch.
 
 There are still quite a few missing doctests:
-
 
 ```
 > sage -coverage combinat/root_system/pieri_factors.py                          
@@ -270,7 +268,6 @@ Missing doctests:
 	 * maximal_elements_combinatorial(self):
 	 * stanley_symm_poly_weight(self, w):
 ```
-
 
 Please fix them, and look for TODO's in the file!
 
@@ -321,7 +318,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080736.json:
 ```json
 {
-    "body": "Replying to [comment:9 stevenpon]:\n> Thanks Nicolas!\n> \n> I was not sure how one usually goes about incorporating modifications from a reviewer's patch, so I hope what I did was alright.  I incorporated your changes into my patch, added documentation and fixed the TODO's, and then disabled your reviewer patch in the combinat queue.  The latest patch is now in the combinat queue and on the trac server.\n\nSee `hg qfold`, in the patch server documentation.\n\nI have just added a new reviewer's patch, fixing the lack of tests for `__classcall__`, and a couple other small issues. Please review, fold, and reupload here. With that, this patch is good to go from a technical view point. I am now running all tests.\n\nAnne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?",
+    "body": "Replying to [comment:9 stevenpon]:\n> Thanks Nicolas!\n> \n> I was not sure how one usually goes about incorporating modifications from a reviewer's patch, so I hope what I did was alright.  I incorporated your changes into my patch, added documentation and fixed the TODO's, and then disabled your reviewer patch in the combinat queue.  The latest patch is now in the combinat queue and on the trac server.\n\n\nSee `hg qfold`, in the patch server documentation.\n\nI have just added a new reviewer's patch, fixing the lack of tests for `__classcall__`, and a couple other small issues. Please review, fold, and reupload here. With that, this patch is good to go from a technical view point. I am now running all tests.\n\nAnne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?",
     "created_at": "2010-06-21T23:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -334,6 +331,7 @@ Replying to [comment:9 stevenpon]:
 > Thanks Nicolas!
 > 
 > I was not sure how one usually goes about incorporating modifications from a reviewer's patch, so I hope what I did was alright.  I incorporated your changes into my patch, added documentation and fixed the TODO's, and then disabled your reviewer patch in the combinat queue.  The latest patch is now in the combinat queue and on the trac server.
+
 
 See `hg qfold`, in the patch server documentation.
 
@@ -348,7 +346,7 @@ Anne: do you think we need further review from the mathematical view point? If y
 archive/issue_comments_080737.json:
 ```json
 {
-    "body": "For the record, all test pass on 4.4.3 on ubuntu linux with the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8910-combinatorial_class_parent-fh.patch\ntrac_8910-subsets_an_element-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_8490_review-sl.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8890-free_module-cleanup-nt.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ntrac_8911_categorification_crystals-as.patch\ntrac_8380_gap3_interface.patch\ntrac_9056_semirings_category-nb.patch\ntrac_9056_semirings_category-review-nt.patch\ntrac_8747-testsuite-speedup-fh.patch\ntrac_9105-categories-primer-improvements-nt.patch\ntrac_9213-doc_poset_elements-sl.patch\ntrac_9214-doc_lyndon_word-sl.patch\ntrac_8984_crystals_alcove_path_model_bj.patch\ntrac_9215_doc_animate-sl.patch\ntrac_9216_doc_group_pyx-sl.patch\ntrac_8562-rebased.patch\ntrac_9259-combinatorialclass_doc_fix-fh.patch\ntrac_8810_stanley_symmetric_functions-sp-as.patch\ntrac_8810_stanley_symmetric_functions-review-nt.patch\n```\n",
+    "body": "For the record, all test pass on 4.4.3 on ubuntu linux with the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8910-combinatorial_class_parent-fh.patch\ntrac_8910-subsets_an_element-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_8490_review-sl.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8890-free_module-cleanup-nt.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ntrac_8911_categorification_crystals-as.patch\ntrac_8380_gap3_interface.patch\ntrac_9056_semirings_category-nb.patch\ntrac_9056_semirings_category-review-nt.patch\ntrac_8747-testsuite-speedup-fh.patch\ntrac_9105-categories-primer-improvements-nt.patch\ntrac_9213-doc_poset_elements-sl.patch\ntrac_9214-doc_lyndon_word-sl.patch\ntrac_8984_crystals_alcove_path_model_bj.patch\ntrac_9215_doc_animate-sl.patch\ntrac_9216_doc_group_pyx-sl.patch\ntrac_8562-rebased.patch\ntrac_9259-combinatorialclass_doc_fix-fh.patch\ntrac_8810_stanley_symmetric_functions-sp-as.patch\ntrac_8810_stanley_symmetric_functions-review-nt.patch\n```",
     "created_at": "2010-06-21T23:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -406,13 +404,12 @@ trac_8810_stanley_symmetric_functions-review-nt.patch
 
 
 
-
 ---
 
 archive/issue_comments_080738.json:
 ```json
 {
-    "body": "> Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?\n\nIf a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.",
+    "body": "> Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?\n\n\nIf a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.",
     "created_at": "2010-06-22T08:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -423,6 +420,7 @@ archive/issue_comments_080738.json:
 
 > Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?
 
+
 If a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.
 
 
@@ -432,7 +430,7 @@ If a mathematical review is needed, then Mark Shimozono or Jason Bandlow might b
 archive/issue_comments_080739.json:
 ```json
 {
-    "body": "Replying to [comment:12 aschilling]:\n> > Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?\n> \n> If a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.\n\nGood idea. Let's try to save Jason some time for other reviews. Can you please send a quick e-mail to Mark?",
+    "body": "Replying to [comment:12 aschilling]:\n> > Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?\n\n> \n> If a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.\n\n\nGood idea. Let's try to save Jason some time for other reviews. Can you please send a quick e-mail to Mark?",
     "created_at": "2010-06-22T08:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -443,8 +441,10 @@ archive/issue_comments_080739.json:
 
 Replying to [comment:12 aschilling]:
 > > Anne: do you think we need further review from the mathematical view point? If yes, do you have suggestions for a reviewer?
+
 > 
 > If a mathematical review is needed, then Mark Shimozono or Jason Bandlow might be good candidates.
+
 
 Good idea. Let's try to save Jason some time for other reviews. Can you please send a quick e-mail to Mark?
 
@@ -600,7 +600,7 @@ archive/issue_events_021492.json:
 archive/issue_comments_080746.json:
 ```json
 {
-    "body": "Replying to [comment:17 davidloeffler]:\n> You might want to go through your combinat queue and check that none of the other patches introduce tabs, because rlm is going to merge #8680 in the next alpha, after which the doctest script will reject any source file that contains a tab character.\n\nGreat, I can't wait until #8680 is merged and our devs get early notices about tabs!",
+    "body": "Replying to [comment:17 davidloeffler]:\n> You might want to go through your combinat queue and check that none of the other patches introduce tabs, because rlm is going to merge #8680 in the next alpha, after which the doctest script will reject any source file that contains a tab character.\n\n\nGreat, I can't wait until #8680 is merged and our devs get early notices about tabs!",
     "created_at": "2010-07-01T10:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -611,6 +611,7 @@ archive/issue_comments_080746.json:
 
 Replying to [comment:17 davidloeffler]:
 > You might want to go through your combinat queue and check that none of the other patches introduce tabs, because rlm is going to merge #8680 in the next alpha, after which the doctest script will reject any source file that contains a tab character.
+
 
 Great, I can't wait until #8680 is merged and our devs get early notices about tabs!
 
@@ -639,7 +640,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080748.json:
 ```json
 {
-    "body": "With [attachment:trac_8810_stanley_symmetric_functions-untabified.patch], I get one docbuild warning:\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sage/combinat/sf/monomial.py:docstring of sage.combinat.sf.monomial.SymmetricFunctionAlgebra_monomial.from_polynomial_exp:36: (ERROR/3) Unknown interpreted text role \"function\".\n```\n\nI'm about to attach a small patch that should fix this.",
+    "body": "With [attachment:trac_8810_stanley_symmetric_functions-untabified.patch], I get one docbuild warning:\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sage/combinat/sf/monomial.py:docstring of sage.combinat.sf.monomial.SymmetricFunctionAlgebra_monomial.from_polynomial_exp:36: (ERROR/3) Unknown interpreted text role \"function\".\n```\nI'm about to attach a small patch that should fix this.",
     "created_at": "2010-07-21T01:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
@@ -653,7 +654,6 @@ With [attachment:trac_8810_stanley_symmetric_functions-untabified.patch], I get 
 ```
 /mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sage/combinat/sf/monomial.py:docstring of sage.combinat.sf.monomial.SymmetricFunctionAlgebra_monomial.from_polynomial_exp:36: (ERROR/3) Unknown interpreted text role "function".
 ```
-
 I'm about to attach a small patch that should fix this.
 
 

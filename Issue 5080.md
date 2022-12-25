@@ -3,7 +3,7 @@
 archive/issues_005080.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2618, in congruence_number\n    self.__congruence_number = W.congruence_number(V)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 938, in congruence_number\n    W = other.q_expansion_module(prec, ZZ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 770, in q_expansion_module\n    return self._q_expansion_module_integral(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 910, in _q_expansion_module_integral\n    V = self.q_expansion_module(prec, QQ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 772, in q_expansion_module\n    return self._q_expansion_module_rational(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 861, in _q_expansion_module_rational\n    return self._q_expansion_module(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 820, in _q_expansion_module\n    return A.span([f.padded_list(prec) for f in self.q_expansion_basis(prec, algorithm)])\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 602, in q_expansion_basis\n    return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 1073, in _q_expansion_basis_hecke_dual\n    v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 797, in dual_hecke_matrix\n    T = self._compute_dual_hecke_matrix(n)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 110, in _compute_dual_hecke_matrix\n    return A.restrict(self.dual_free_module(), check=check)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 320, in dual_free_module\n    \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5080\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2618, in congruence_number\n    self.__congruence_number = W.congruence_number(V)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 938, in congruence_number\n    W = other.q_expansion_module(prec, ZZ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 770, in q_expansion_module\n    return self._q_expansion_module_integral(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 910, in _q_expansion_module_integral\n    V = self.q_expansion_module(prec, QQ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 772, in q_expansion_module\n    return self._q_expansion_module_rational(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 861, in _q_expansion_module_rational\n    return self._q_expansion_module(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 820, in _q_expansion_module\n    return A.span([f.padded_list(prec) for f in self.q_expansion_basis(prec, algorithm)])\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 602, in q_expansion_basis\n    return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 1073, in _q_expansion_basis_hecke_dual\n    v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 797, in dual_hecke_matrix\n    T = self._compute_dual_hecke_matrix(n)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 110, in _compute_dual_hecke_matrix\n    return A.restrict(self.dual_free_module(), check=check)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 320, in dual_free_module\n    \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5080\n\n",
     "created_at": "2009-01-24T00:31:15Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_005080.json:
 Assignee: @craigcitro
 
 CC:  @craigcitro
-
 
 ```
 sage: E = EllipticCurve("128a") 
@@ -53,7 +52,6 @@ Traceback (most recent call last):
     "(cut down to rank %s, but should have cut down to rank %s)."%(V.rank(), self.rank())
 RuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5080
 
@@ -144,7 +142,7 @@ Here's a patch.
 archive/issue_comments_038614.json:
 ```json
 {
-    "body": "I'm about to try this out.  Is there a doctest showing that \n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n```\n\nnow works?",
+    "body": "I'm about to try this out.  Is there a doctest showing that \n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n```\nnow works?",
     "created_at": "2009-05-18T15:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -159,7 +157,6 @@ I'm about to try this out.  Is there a doctest showing that
 sage: E = EllipticCurve("128a") 
 sage: E.congruence_number()
 ```
-
 now works?
 
 
@@ -169,7 +166,7 @@ now works?
 archive/issue_comments_038615.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> I'm about to try this out.  Is there a doctest showing that \n> {{{\n> sage: E = EllipticCurve(\"128a\") \n> sage: E.congruence_number()\n> }}}\n> now works?\n\nWhich it does:\n\n```\nsage: sage: E = EllipticCurve(\"128a\")\nsage: sage: E.congruence_number()\n32\n```\n",
+    "body": "Replying to [comment:4 cremona]:\n> I'm about to try this out.  Is there a doctest showing that \n> \n> ```\n> sage: E = EllipticCurve(\"128a\") \n> sage: E.congruence_number()\n> ```\n> now works?\n\n\nWhich it does:\n\n```\nsage: sage: E = EllipticCurve(\"128a\")\nsage: sage: E.congruence_number()\n32\n```",
     "created_at": "2009-05-18T15:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -180,11 +177,13 @@ archive/issue_comments_038615.json:
 
 Replying to [comment:4 cremona]:
 > I'm about to try this out.  Is there a doctest showing that 
-> {{{
+> 
+> ```
 > sage: E = EllipticCurve("128a") 
 > sage: E.congruence_number()
-> }}}
+> ```
 > now works?
+
 
 Which it does:
 
@@ -193,7 +192,6 @@ sage: sage: E = EllipticCurve("128a")
 sage: sage: E.congruence_number()
 32
 ```
-
 
 
 
@@ -276,7 +274,7 @@ Brilliant.  And I forgot to say (on one of these tickets) -- we do now have 100%
 archive/issue_comments_038620.json:
 ```json
 {
-    "body": "Unfortunately this patch causes a massive speed regression:\n\n```\nsage: time EllipticCurve('858k2').sha().an_padic(Integer(7))\nCPU times: user 8.90 s, sys: 0.33 s, total: 9.23 s\nWall time: 9.52 s\n7^2 + O(7^3)\n```\n\nWith both patches from this ticket this one alone takes minutes, so sorry, but \"needs work\".\n\nCheers,\n\nMichael",
+    "body": "Unfortunately this patch causes a massive speed regression:\n\n```\nsage: time EllipticCurve('858k2').sha().an_padic(Integer(7))\nCPU times: user 8.90 s, sys: 0.33 s, total: 9.23 s\nWall time: 9.52 s\n7^2 + O(7^3)\n```\nWith both patches from this ticket this one alone takes minutes, so sorry, but \"needs work\".\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T23:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -293,7 +291,6 @@ CPU times: user 8.90 s, sys: 0.33 s, total: 9.23 s
 Wall time: 9.52 s
 7^2 + O(7^3)
 ```
-
 With both patches from this ticket this one alone takes minutes, so sorry, but "needs work".
 
 Cheers,
@@ -345,7 +342,7 @@ It's definitely the right choice to go for correctness over speed first. I'll lo
 archive/issue_comments_038623.json:
 ```json
 {
-    "body": "Hi Craig,\n\nIt's a delicate thing. There are two potential first-approximation algorithms for computing complements, or (equivalently) embedded duals: either work on the dual side (cutting down to the smallest space on which Hecke acts like it does on self) or work on the ambient side (cutting down to the smallest space on which Hecke acts like it does on the quotient ambient/self). \n\nWhat we had before was one algorithm in `complement` and the other in `dual_free_module`, never exploiting the fact that the two problems are essentially equivalent. I standardised on the algorithm that `complement` was using, largely because the code to handle the pathological case (for which neither algorithm works) was already there in the `complement` routine.\n\nThe classy fix is to heuristically choose which algorithm to use, because (in non-pathological cases) the dual-side version is much quicker when the given submodule is much smaller than the ambient space, and the ambient-side version is much quicker when the given submodule is most of the ambient space. This is (roughly) what is meant by the comment in `submodule.py` saying:\n\n```\n# TODO: optimize in some cases by computing image of\n# complementary factor instead of kernel...?\n```\n\n\nDavid",
+    "body": "Hi Craig,\n\nIt's a delicate thing. There are two potential first-approximation algorithms for computing complements, or (equivalently) embedded duals: either work on the dual side (cutting down to the smallest space on which Hecke acts like it does on self) or work on the ambient side (cutting down to the smallest space on which Hecke acts like it does on the quotient ambient/self). \n\nWhat we had before was one algorithm in `complement` and the other in `dual_free_module`, never exploiting the fact that the two problems are essentially equivalent. I standardised on the algorithm that `complement` was using, largely because the code to handle the pathological case (for which neither algorithm works) was already there in the `complement` routine.\n\nThe classy fix is to heuristically choose which algorithm to use, because (in non-pathological cases) the dual-side version is much quicker when the given submodule is much smaller than the ambient space, and the ambient-side version is much quicker when the given submodule is most of the ambient space. This is (roughly) what is meant by the comment in `submodule.py` saying:\n\n```\n# TODO: optimize in some cases by computing image of\n# complementary factor instead of kernel...?\n```\n\nDavid",
     "created_at": "2009-05-19T09:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -366,7 +363,6 @@ The classy fix is to heuristically choose which algorithm to use, because (in no
 # TODO: optimize in some cases by computing image of
 # complementary factor instead of kernel...?
 ```
-
 
 David
 
@@ -662,7 +658,7 @@ archive/issue_events_011719.json:
 archive/issue_comments_038637.json:
 ```json
 {
-    "body": "\n```\nOn Jun 27, 11:54 pm, davidloeffler <dave.loeff...@gmail.com> wrote:\n> On SuSE, 32-bit, sage -testall -long passes except for errors in the\n> same three files Jaap reported above (and a harmless timeout in\n> elliptic curves).\n\nI spoke too soon. Something rather harmful has in fact happened: the\nwrong patches have been merged for track #5080. My first attempt at\nfixing this problem caused a catastrophic slowdown in elliptic curve\nSha routines, so I started again from scratch and did a new patch that\nworked differently. It seems that the old patch has been merged, with\nthe result that\n\nsage: EllipticCurve(\"858k1\").sha().an_padic(7)\n\nhas been slowed down by *several orders of magnitude*. That was why I\nwas seeing timeouts in that file.\n\nTo reiterate: the patch \"trac_5080.patch\" on that ticket is evil, bad\nand wrong, should not have been merged, and must be removed from Sage\nASAP.\n\nDavid\n```\n",
+    "body": "```\nOn Jun 27, 11:54 pm, davidloeffler <dave.loeff...@gmail.com> wrote:\n> On SuSE, 32-bit, sage -testall -long passes except for errors in the\n> same three files Jaap reported above (and a harmless timeout in\n> elliptic curves).\n\nI spoke too soon. Something rather harmful has in fact happened: the\nwrong patches have been merged for track #5080. My first attempt at\nfixing this problem caused a catastrophic slowdown in elliptic curve\nSha routines, so I started again from scratch and did a new patch that\nworked differently. It seems that the old patch has been merged, with\nthe result that\n\nsage: EllipticCurve(\"858k1\").sha().an_padic(7)\n\nhas been slowed down by *several orders of magnitude*. That was why I\nwas seeing timeouts in that file.\n\nTo reiterate: the patch \"trac_5080.patch\" on that ticket is evil, bad\nand wrong, should not have been merged, and must be removed from Sage\nASAP.\n\nDavid\n```",
     "created_at": "2009-06-28T15:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
@@ -670,7 +666,6 @@ archive/issue_comments_038637.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 On Jun 27, 11:54 pm, davidloeffler <dave.loeff...@gmail.com> wrote:
@@ -696,7 +691,6 @@ ASAP.
 
 David
 ```
-
 
 
 

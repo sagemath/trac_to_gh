@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5799
 archive/issue_comments_045406.json:
 ```json
 {
-    "body": "To create a patch that contains a png you need to export a git style patch. Then export two patches, one for the Sage library and one for the ext repo. The names should be \n\n* trac_5799_sage_$FOO\n* trac_5799_ext_$BAR\n \nrespectively. It is generally a good idea to split tickets into independent tasks, i.e. this is a borderline case and can be done via one ticket.\n\nThis also strikes me as kind of odd:\n\n```\n<script type=\"text/javascript\" src=\"../../../../../../../local/notebook/javascript/jsmath/easy/load.js\"></script> \n```\n\ngiven that everywhere else we use \n\n```\n<script type=\"text/javascript\" src=\"/javascript_local/$FOO\"></script>\n```\n\nbut that might be unavoidable. \n\n\nCheers,\n\nMichael",
+    "body": "To create a patch that contains a png you need to export a git style patch. Then export two patches, one for the Sage library and one for the ext repo. The names should be \n\n* trac_5799_sage_$FOO\n* trac_5799_ext_$BAR\n \nrespectively. It is generally a good idea to split tickets into independent tasks, i.e. this is a borderline case and can be done via one ticket.\n\nThis also strikes me as kind of odd:\n\n```\n<script type=\"text/javascript\" src=\"../../../../../../../local/notebook/javascript/jsmath/easy/load.js\"></script> \n```\ngiven that everywhere else we use \n\n```\n<script type=\"text/javascript\" src=\"/javascript_local/$FOO\"></script>\n```\nbut that might be unavoidable. \n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T05:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -83,13 +83,11 @@ This also strikes me as kind of odd:
 ```
 <script type="text/javascript" src="../../../../../../../local/notebook/javascript/jsmath/easy/load.js"></script> 
 ```
-
 given that everywhere else we use 
 
 ```
 <script type="text/javascript" src="/javascript_local/$FOO"></script>
 ```
-
 but that might be unavoidable. 
 
 
@@ -122,7 +120,7 @@ Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_045408.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> To create a patch [...]\n\nThanks for the tips!  Take two attached.\n\n> This also strikes me as kind of odd:\n\nI'm about to attach an alternative to trac_5799_sage_jsmath_doc.patch.",
+    "body": "Replying to [comment:1 mabshoff]:\n> To create a patch [...]\n\n\nThanks for the tips!  Take two attached.\n\n> This also strikes me as kind of odd:\n\n\nI'm about to attach an alternative to trac_5799_sage_jsmath_doc.patch.",
     "created_at": "2009-04-16T08:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -134,9 +132,11 @@ archive/issue_comments_045408.json:
 Replying to [comment:1 mabshoff]:
 > To create a patch [...]
 
+
 Thanks for the tips!  Take two attached.
 
 > This also strikes me as kind of odd:
+
 
 I'm about to attach an alternative to trac_5799_sage_jsmath_doc.patch.
 
@@ -289,7 +289,7 @@ Does this mean that we should make `--jsmath` the default for building html docs
 archive/issue_comments_045416.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> Does this mean that we should make `--jsmath` the default for building html docs?  It's much faster than building without using jsmath.\n\nI think `\\QQ` and friends generate an unsightly error message.  I'll try to learn how to make an spkg, for #4714 and #5447.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> Does this mean that we should make `--jsmath` the default for building html docs?  It's much faster than building without using jsmath.\n\n\nI think `\\QQ` and friends generate an unsightly error message.  I'll try to learn how to make an spkg, for #4714 and #5447.",
     "created_at": "2009-06-27T22:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -300,6 +300,7 @@ archive/issue_comments_045416.json:
 
 Replying to [comment:7 jhpalmieri]:
 > Does this mean that we should make `--jsmath` the default for building html docs?  It's much faster than building without using jsmath.
+
 
 I think `\QQ` and friends generate an unsightly error message.  I'll try to learn how to make an spkg, for #4714 and #5447.
 
@@ -362,7 +363,7 @@ In order to get the `sage -sdist` command to work after applying this patch, I h
 archive/issue_comments_045419.json:
 ```json
 {
-    "body": "This is what happened:\n\n```\n[geom sage-4.1.alpha3]$ ./sage -sdist 4.1.rc0\nUpdating Cython code....\nTime to execute 0 commands: 1.50203704834e-05 seconds\nFinished compiling Cython code (time = 0.324697971344 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/version.py -> build/lib.linux-x86_64-2.6/sage\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.00903582572937 seconds.\nrunning install_lib\ncopying build/lib.linux-x86_64-2.6/sage/version.py -> /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage\nbyte-compiling /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage/version.py to version.pyc\nrunning install_egg_info\nWriting /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage-4.1.rc0-py2.6.egg-info\ncp: cannot stat `*.sage': No such file or directory\ncp: cannot stat `ipythonrc': No such file or directory\ncp: cannot stat `spkg/update': No such file or directory\nrm: cannot remove `doc-*.spkg': No such file or directory\ndiff -r f307132d9d7c sage/version.py\n--- a/sage/version.py   Thu Jul 02 11:52:36 2009 +0200\n+++ b/sage/version.py   Sat Jul 04 12:58:13 2009 -0700\n@@ -1,2 +1,2 @@\n \"\"\"nodoctests\"\"\"\n-version='4.1.alpha3'; date='2009-07-02'\n+version='4.1.rc0'; date='2009-07-04'\nM sage/version.py\ncp: cannot stat `build.py': No such file or directory\ncp: cannot stat `clib.py': No such file or directory\ncp: cannot stat `sagebuild.py': No such file or directory\ncp: warning: source file `spkg-delauto' specified more than once\ncp: cannot stat `debian': No such file or directory\nrm: cannot remove `c_lib/*.so': No such file or directory\nrm: cannot remove `c_lib/*.os': No such file or directory\nDeleting autogenerated file ./matrix/matrix_rational_dense.c\n\n...<SNIP>...\n\nDeleting autogenerated file ./algebras/quatalg/quaternion_algebra_cython.cpp\nrunning sdist\nerror: doc/common/static/sageicon.png: No such file or directory\n./spkg-dist: line 54: cd: dist: No such file or directory\ngzip: sage-4.1.rc0.tar.gz: No such file or directory\nbzip2: Can't open input file sage-4.1.rc0.tar: No such file or directory.\nmv: cannot stat `sage-4.1.rc0.tar.bz2': No such file or directory\nmv: cannot stat `dist/sage-4.1.rc0.spkg': No such file or directory\nThe package sage-4.1.rc0.spkg wasn't created.\nError building the Sage packages.\n```\n\n\nNo point in posting a huge patch, so here is a link:\n\nhttp://sage.math.washington.edu/home/rlmill/trac_5799-unlink.patch",
+    "body": "This is what happened:\n\n```\n[geom sage-4.1.alpha3]$ ./sage -sdist 4.1.rc0\nUpdating Cython code....\nTime to execute 0 commands: 1.50203704834e-05 seconds\nFinished compiling Cython code (time = 0.324697971344 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/version.py -> build/lib.linux-x86_64-2.6/sage\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.00903582572937 seconds.\nrunning install_lib\ncopying build/lib.linux-x86_64-2.6/sage/version.py -> /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage\nbyte-compiling /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage/version.py to version.pyc\nrunning install_egg_info\nWriting /space/rlm/sage-4.1.alpha3/local/lib/python2.6/site-packages/sage-4.1.rc0-py2.6.egg-info\ncp: cannot stat `*.sage': No such file or directory\ncp: cannot stat `ipythonrc': No such file or directory\ncp: cannot stat `spkg/update': No such file or directory\nrm: cannot remove `doc-*.spkg': No such file or directory\ndiff -r f307132d9d7c sage/version.py\n--- a/sage/version.py   Thu Jul 02 11:52:36 2009 +0200\n+++ b/sage/version.py   Sat Jul 04 12:58:13 2009 -0700\n@@ -1,2 +1,2 @@\n \"\"\"nodoctests\"\"\"\n-version='4.1.alpha3'; date='2009-07-02'\n+version='4.1.rc0'; date='2009-07-04'\nM sage/version.py\ncp: cannot stat `build.py': No such file or directory\ncp: cannot stat `clib.py': No such file or directory\ncp: cannot stat `sagebuild.py': No such file or directory\ncp: warning: source file `spkg-delauto' specified more than once\ncp: cannot stat `debian': No such file or directory\nrm: cannot remove `c_lib/*.so': No such file or directory\nrm: cannot remove `c_lib/*.os': No such file or directory\nDeleting autogenerated file ./matrix/matrix_rational_dense.c\n\n...<SNIP>...\n\nDeleting autogenerated file ./algebras/quatalg/quaternion_algebra_cython.cpp\nrunning sdist\nerror: doc/common/static/sageicon.png: No such file or directory\n./spkg-dist: line 54: cd: dist: No such file or directory\ngzip: sage-4.1.rc0.tar.gz: No such file or directory\nbzip2: Can't open input file sage-4.1.rc0.tar: No such file or directory.\nmv: cannot stat `sage-4.1.rc0.tar.bz2': No such file or directory\nmv: cannot stat `dist/sage-4.1.rc0.spkg': No such file or directory\nThe package sage-4.1.rc0.spkg wasn't created.\nError building the Sage packages.\n```\n\nNo point in posting a huge patch, so here is a link:\n\nhttp://sage.math.washington.edu/home/rlmill/trac_5799-unlink.patch",
     "created_at": "2009-07-04T21:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -424,7 +425,6 @@ The package sage-4.1.rc0.spkg wasn't created.
 Error building the Sage packages.
 ```
 
-
 No point in posting a huge patch, so here is a link:
 
 http://sage.math.washington.edu/home/rlmill/trac_5799-unlink.patch
@@ -458,7 +458,7 @@ Perhaps we can make the symbolic link itself in jsMath's `spkg-install`.  Does t
 archive/issue_comments_045421.json:
 ```json
 {
-    "body": "I'm worried, since a fresh install of sage-4.1.rc0 is missing most of these files in `doc/common/static`:\n\n\n```\n[geom sage-main]$ cd doc/common/static/\n[geom static]$ ls\ntotal 4.0K\ndrwxr-xr-x 3 rlmill rlmill 4.0K 2009-07-04 14:18 jsmath\n[geom static]$ ls jsmath\ntotal 16K\n-rw-r--r-- 1 rlmill rlmill  12K 2009-07-04 14:13 COPYING.txt\ndrwxr-xr-x 3 rlmill rlmill 4.0K 2009-07-04 14:18 fonts\n```\n\n\nHas anyone tested a fresh build of sage-4.1.rc0 to see if things related to this ticket work?",
+    "body": "I'm worried, since a fresh install of sage-4.1.rc0 is missing most of these files in `doc/common/static`:\n\n```\n[geom sage-main]$ cd doc/common/static/\n[geom static]$ ls\ntotal 4.0K\ndrwxr-xr-x 3 rlmill rlmill 4.0K 2009-07-04 14:18 jsmath\n[geom static]$ ls jsmath\ntotal 16K\n-rw-r--r-- 1 rlmill rlmill  12K 2009-07-04 14:13 COPYING.txt\ndrwxr-xr-x 3 rlmill rlmill 4.0K 2009-07-04 14:18 fonts\n```\n\nHas anyone tested a fresh build of sage-4.1.rc0 to see if things related to this ticket work?",
     "created_at": "2009-07-07T18:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -468,7 +468,6 @@ archive/issue_comments_045421.json:
 ```
 
 I'm worried, since a fresh install of sage-4.1.rc0 is missing most of these files in `doc/common/static`:
-
 
 ```
 [geom sage-main]$ cd doc/common/static/
@@ -480,7 +479,6 @@ total 16K
 -rw-r--r-- 1 rlmill rlmill  12K 2009-07-04 14:13 COPYING.txt
 drwxr-xr-x 3 rlmill rlmill 4.0K 2009-07-04 14:18 fonts
 ```
-
 
 Has anyone tested a fresh build of sage-4.1.rc0 to see if things related to this ticket work?
 
@@ -597,7 +595,7 @@ This is a bit of a shot in the dark, but does trac_5799_manifest.patch help?
 archive/issue_comments_045427.json:
 ```json
 {
-    "body": "Replying to [comment:15 jhpalmieri]:\n> This is a bit of a shot in the dark, but does trac_5799_manifest.patch help?\n\nI think this is what I was looking for. Thank you!",
+    "body": "Replying to [comment:15 jhpalmieri]:\n> This is a bit of a shot in the dark, but does trac_5799_manifest.patch help?\n\n\nI think this is what I was looking for. Thank you!",
     "created_at": "2009-07-07T19:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -608,6 +606,7 @@ archive/issue_comments_045427.json:
 
 Replying to [comment:15 jhpalmieri]:
 > This is a bit of a shot in the dark, but does trac_5799_manifest.patch help?
+
 
 I think this is what I was looking for. Thank you!
 
@@ -708,7 +707,7 @@ Is it possible to include symbolic links in `MANIFEST.in`?  Unless I'm wrong, we
 archive/issue_comments_045432.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Is it possible to include symbolic links in `MANIFEST.in`?\n\nI had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...",
+    "body": "Replying to [comment:20 mpatel]:\n> Is it possible to include symbolic links in `MANIFEST.in`?\n\n\nI had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...",
     "created_at": "2009-07-20T14:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -719,6 +718,7 @@ archive/issue_comments_045432.json:
 
 Replying to [comment:20 mpatel]:
 > Is it possible to include symbolic links in `MANIFEST.in`?
+
 
 I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the "new version," and see whether the notebook still works...
 
@@ -747,7 +747,7 @@ Attempt to get distutils to preserve symbolic links.
 archive/issue_comments_045434.json:
 ```json
 {
-    "body": "Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by @qed777 created at 2009-07-21 11:28:30\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
+    "body": "Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by @qed777 created at 2009-07-21 11:28:30\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
     "created_at": "2009-07-21T11:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -761,6 +761,7 @@ Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid
 Replying to [comment:21 rlm]:
 > Replying to [comment:20 mpatel]:
 > > Is it possible to include symbolic links in `MANIFEST.in`?
+
 > I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the "new version," and see whether the notebook still works...
 This [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:
 
@@ -797,7 +798,7 @@ We really need to create a new ticket for this issue and continue there. I would
 archive/issue_comments_045436.json:
 ```json
 {
-    "body": "Replying to [comment:23 rlm]:\n> We really need to create a new ticket for this issue and continue there. I would also suggest taking this up on sage-devel.\nI've opened #6614.",
+    "body": "Replying to [comment:23 rlm]:\n> We really need to create a new ticket for this issue and continue there. I would also suggest taking this up on sage-devel.\n\nI've opened #6614.",
     "created_at": "2009-07-24T15:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
@@ -808,4 +809,5 @@ archive/issue_comments_045436.json:
 
 Replying to [comment:23 rlm]:
 > We really need to create a new ticket for this issue and continue there. I would also suggest taking this up on sage-devel.
+
 I've opened #6614.

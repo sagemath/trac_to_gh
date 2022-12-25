@@ -3,7 +3,7 @@
 archive/issues_005805.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nOn Fedora 9, 32 bit:\n\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
+    "body": "Assignee: @craigcitro\n\nOn Fedora 9, 32 bit:\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
     "created_at": "2009-04-16T21:02:12Z",
     "labels": [
         "component: modular forms",
@@ -21,7 +21,6 @@ Assignee: @craigcitro
 On Fedora 9, 32 bit:
 
 
-
 ```
 sage -t  "devel/sage/sage/modular/dirichlet.py"             
 **********************************************************************
@@ -37,7 +36,6 @@ Got:
 ***Test Failed*** 1 failures.
 
 ```
-
 
 
 Cheers,
@@ -93,7 +91,7 @@ Changing assignee from @craigcitro to mabshoff.
 archive/issue_comments_045477.json:
 ```json
 {
-    "body": "Another datapoint from 3.4.1.rc3 on Solaris 10/x86-64 running in 32 bit mode:\n\n```\nsage -t -long devel/sage/sage/modular/dirichlet.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc2/sage-3.4.1.rc2-fulvia-gcc-4.3.3/\ndevel/sage-main/sage/modular/dirichlet.py\", line 10\n44:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n```\n",
+    "body": "Another datapoint from 3.4.1.rc3 on Solaris 10/x86-64 running in 32 bit mode:\n\n```\nsage -t -long devel/sage/sage/modular/dirichlet.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc2/sage-3.4.1.rc2-fulvia-gcc-4.3.3/\ndevel/sage-main/sage/modular/dirichlet.py\", line 10\n44:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n```",
     "created_at": "2009-04-17T10:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5805",
     "type": "issue_comment",
@@ -117,7 +115,6 @@ Got:
     6.66133814775e-16 + 1.73205080757*I
 **********************************************************************
 ```
-
 
 
 

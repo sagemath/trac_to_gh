@@ -3,7 +3,7 @@
 archive/issues_005256.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: matrices, invert, determinant\n\nThere where a lot of inconsistency and bugs in the handling of trivial matrices.\nThe following patch aims to solve these and to check systematicly the coherence. Here is a selection of weirdness:\n* plain wrong answers\n\n```\nsage: m = matrix(SR, 1,1, [1])\nsage: m.inverse()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage: m = matrix(RDF, 0,2)\nsage: m.inverse()\n[]\n```\n\n* Inconsistencies in the answers depending on the base ring\n\n```\nsage: m = matrix(RDF, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nLinAlgError                               Traceback (most recent call last)\n```\n\n   whereas\n\n```\nsage: m = matrix(QQ, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n```\n\n\nAside rewriting some error messages, changing some exception and working around several bug in particular in maxima's handling of matrix over SR, the main contribution of this patch lies in the function `test_trivial_matrices_inverse` in `sage/matrix/matrix_space.py` and its associated doctests. Trough a bunch of assertions this function indirectly checks the behavior of matrix spaces. Any new implementation of a kind of matrices should be checked be this function. \n\nPatch Author: Florent Hivert\n\nIssue created by migration from https://trac.sagemath.org/ticket/5256\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: matrices, invert, determinant\n\nThere where a lot of inconsistency and bugs in the handling of trivial matrices.\nThe following patch aims to solve these and to check systematicly the coherence. Here is a selection of weirdness:\n* plain wrong answers\n\n```\nsage: m = matrix(SR, 1,1, [1])\nsage: m.inverse()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage: m = matrix(RDF, 0,2)\nsage: m.inverse()\n[]\n```\n* Inconsistencies in the answers depending on the base ring\n\n```\nsage: m = matrix(RDF, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nLinAlgError                               Traceback (most recent call last)\n```\n   whereas\n\n```\nsage: m = matrix(QQ, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n```\n\nAside rewriting some error messages, changing some exception and working around several bug in particular in maxima's handling of matrix over SR, the main contribution of this patch lies in the function `test_trivial_matrices_inverse` in `sage/matrix/matrix_space.py` and its associated doctests. Trough a bunch of assertions this function indirectly checks the behavior of matrix spaces. Any new implementation of a kind of matrices should be checked be this function. \n\nPatch Author: Florent Hivert\n\nIssue created by migration from https://trac.sagemath.org/ticket/5256\n\n",
     "created_at": "2009-02-13T18:47:24Z",
     "labels": [
         "component: linear algebra",
@@ -37,7 +37,6 @@ sage: m = matrix(RDF, 0,2)
 sage: m.inverse()
 []
 ```
-
 * Inconsistencies in the answers depending on the base ring
 
 ```
@@ -46,7 +45,6 @@ sage: m.inverse()
 ---------------------------------------------------------------------------
 LinAlgError                               Traceback (most recent call last)
 ```
-
    whereas
 
 ```
@@ -55,7 +53,6 @@ sage: m.inverse()
 ---------------------------------------------------------------------------
 ZeroDivisionError                         Traceback (most recent call last)
 ```
-
 
 Aside rewriting some error messages, changing some exception and working around several bug in particular in maxima's handling of matrix over SR, the main contribution of this patch lies in the function `test_trivial_matrices_inverse` in `sage/matrix/matrix_space.py` and its associated doctests. Trough a bunch of assertions this function indirectly checks the behavior of matrix spaces. Any new implementation of a kind of matrices should be checked be this function. 
 
@@ -108,7 +105,7 @@ Changing status from new to assigned.
 archive/issue_comments_040255.json:
 ```json
 {
-    "body": "I'm really happy you did all this.  I'll look at this soon, unless someone else gets to it before me.\n\nIt'd be great to have a system-wide function that tested different Sage types for consistency on things like this.  That way, all someone would have to remember to do is add their new sage type to a doctest like:\n\n\n```\nsage: check_consistency(MY_NEW_TYPE)\nTrue\n```\n\n\nThat function would automatically call things like the function in this patch and other functions for vectors, polynomials, etc.",
+    "body": "I'm really happy you did all this.  I'll look at this soon, unless someone else gets to it before me.\n\nIt'd be great to have a system-wide function that tested different Sage types for consistency on things like this.  That way, all someone would have to remember to do is add their new sage type to a doctest like:\n\n```\nsage: check_consistency(MY_NEW_TYPE)\nTrue\n```\n\nThat function would automatically call things like the function in this patch and other functions for vectors, polynomials, etc.",
     "created_at": "2009-02-13T19:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
@@ -121,12 +118,10 @@ I'm really happy you did all this.  I'll look at this soon, unless someone else 
 
 It'd be great to have a system-wide function that tested different Sage types for consistency on things like this.  That way, all someone would have to remember to do is add their new sage type to a doctest like:
 
-
 ```
 sage: check_consistency(MY_NEW_TYPE)
 True
 ```
-
 
 That function would automatically call things like the function in this patch and other functions for vectors, polynomials, etc.
 
@@ -206,7 +201,7 @@ I didn't run doctests yet, will do now.
 archive/issue_comments_040259.json:
 ```json
 {
-    "body": "I have doctested this patch on top of #5242 and #5244 in my current Sage 3.3.rc1 merge tree and:\n\n```\nAll tests passed!\n```\n\n\nCheers,\n\nMichael",
+    "body": "I have doctested this patch on top of #5242 and #5244 in my current Sage 3.3.rc1 merge tree and:\n\n```\nAll tests passed!\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T16:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
@@ -220,7 +215,6 @@ I have doctested this patch on top of #5242 and #5244 in my current Sage 3.3.rc1
 ```
 All tests passed!
 ```
-
 
 Cheers,
 

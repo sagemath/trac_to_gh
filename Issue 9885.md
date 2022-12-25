@@ -3,7 +3,7 @@
 archive/issues_009885.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\n\nThis is not:\n\n```\nsage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 37.9 \u00b5s per loop\n```\n\n\nWow. See also #9885 for a not-quite-as-insane version of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9886\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\nThis is not:\n\n```\nsage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 37.9 \u00b5s per loop\n```\n\nWow. See also #9885 for a not-quite-as-insane version of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9886\n\n",
     "created_at": "2010-09-09T16:07:25Z",
     "labels": [
         "component: performance",
@@ -22,7 +22,6 @@ Sage 4.5.3, 2.6GHz Opteron, Linux
 
 This is ok:
 
-
 ```
 sage: R = Integers(3^20)
 sage: u = R(2)
@@ -30,14 +29,12 @@ sage: timeit("z = u.lift()")
 625 loops, best of 3: 351 ns per loop
 ```
 
-
 This is not:
 
 ```
 sage: timeit("z = ZZ(u)")
 625 loops, best of 3: 37.9 µs per loop
 ```
-
 
 Wow. See also #9885 for a not-quite-as-insane version of this.
 
@@ -124,7 +121,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097824.json:
 ```json
 {
-    "body": "sage-6.2.beta4:\n\n```\nsage: sage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 142 ns per loop\nsage: sage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 280 ns per loop\n```\n",
+    "body": "sage-6.2.beta4:\n\n```\nsage: sage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 142 ns per loop\nsage: sage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 280 ns per loop\n```",
     "created_at": "2014-03-14T17:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9885",
     "type": "issue_comment",
@@ -141,7 +138,6 @@ sage: sage: timeit("z = u.lift()")
 sage: sage: timeit("z = ZZ(u)")
 625 loops, best of 3: 280 ns per loop
 ```
-
 
 
 

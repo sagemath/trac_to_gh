@@ -3,7 +3,7 @@
 archive/issues_002418.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
+    "body": "Assignee: @williamstein\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
     "created_at": "2008-03-07T05:01:20Z",
     "labels": [
         "component: interfaces",
@@ -38,7 +38,6 @@ sage: (p/2^100).roots()
 <class 'sage.libs.pari.gen.PariError'>: division by zero (46)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2418
 
 
@@ -50,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2418
 archive/issue_comments_016269.json:
 ```json
 {
-    "body": "Actually, this is really just pari giving us an error: \n\n\n```\n? fp\n%4 = (6.223015277861140000000000000 E-61 + 0.E-38*I)*x^50 + (0.E-38 + 0.E-38*I)*x^49 + (0.E-38 + 0.E-38*I)*x^48 + (0.E-38 + 0.E-38*I)*x^47 + (0.E-38 + 0.E-38*I)*x^46 + (0.E-38 + 0.E-38*I)*x^45 + (0.E-38 + 0.E-38*I)*x^44 + (0.E-38 + 0.E-38*I)*x^43 + (0.E-38 + 0.E-38*I)*x^42 + (0.E-38 + 0.E-38*I)*x^41 + (0.E-38 + 0.E-38*I)*x^40 + (0.E-38 + 0.E-38*I)*x^39 + (0.E-38 + 0.E-38*I)*x^38 + (0.E-38 + 0.E-38*I)*x^37 + (0.E-38 + 0.E-38*I)*x^36 + (0.E-38 + 0.E-38*I)*x^35 + (0.E-38 + 0.E-38*I)*x^34 + (0.E-38 + 0.E-38*I)*x^33 + (0.E-38 + 0.E-38*I)*x^32 + (0.E-38 + 0.E-38*I)*x^31 + (0.E-38 + 0.E-38*I)*x^30 + (0.E-38 + 0.E-38*I)*x^29 + (0.E-38 + 0.E-38*I)*x^28 + (0.E-38 + 0.E-38*I)*x^27 + (0.E-38 + 0.E-38*I)*x^26 + (0.E-38 + 0.E-38*I)*x^25 + (0.E-38 + 0.E-38*I)*x^24 + (0.E-38 + 0.E-38*I)*x^23 + (0.E-38 + 0.E-38*I)*x^22 + (0.E-38 + 0.E-38*I)*x^21 + (0.E-38 + 0.E-38*I)*x^20 + (0.E-38 + 0.E-38*I)*x^19 + (0.E-38 + 0.E-38*I)*x^18 + (0.E-38 + 0.E-38*I)*x^17 + (0.E-38 + 0.E-38*I)*x^16 + (0.E-38 + 0.E-38*I)*x^15 + (0.E-38 + 0.E-38*I)*x^14 + (0.E-38 + 0.E-38*I)*x^13 + (0.E-38 + 0.E-38*I)*x^12 + (0.E-38 + 0.E-38*I)*x^11 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x^10 + (0.E-38 + 0.E-38*I)*x^9 + (0.E-38 + 0.E-38*I)*x^8 + (0.E-38 + 0.E-38*I)*x^7 + (0.E-38 + 0.E-38*I)*x^6 + (0.E-38 + 0.E-38*I)*x^5 + (0.E-38 + 0.E-38*I)*x^4 + (0.E-38 + 0.E-38*I)*x^3 + (0.E-38 + 0.E-38*I)*x^2 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x + (7.888609052210120000000000000 E-31 + 0.E-38*I)\n? polroots(fp)\n  *** polroots: division by zero\n```\n\n\nI think that makes this ticket invalid ... Carl, does that seem reasonable to you? In particular, do you have any code you've written that we might fall back on if Pari fails like this?",
+    "body": "Actually, this is really just pari giving us an error: \n\n```\n? fp\n%4 = (6.223015277861140000000000000 E-61 + 0.E-38*I)*x^50 + (0.E-38 + 0.E-38*I)*x^49 + (0.E-38 + 0.E-38*I)*x^48 + (0.E-38 + 0.E-38*I)*x^47 + (0.E-38 + 0.E-38*I)*x^46 + (0.E-38 + 0.E-38*I)*x^45 + (0.E-38 + 0.E-38*I)*x^44 + (0.E-38 + 0.E-38*I)*x^43 + (0.E-38 + 0.E-38*I)*x^42 + (0.E-38 + 0.E-38*I)*x^41 + (0.E-38 + 0.E-38*I)*x^40 + (0.E-38 + 0.E-38*I)*x^39 + (0.E-38 + 0.E-38*I)*x^38 + (0.E-38 + 0.E-38*I)*x^37 + (0.E-38 + 0.E-38*I)*x^36 + (0.E-38 + 0.E-38*I)*x^35 + (0.E-38 + 0.E-38*I)*x^34 + (0.E-38 + 0.E-38*I)*x^33 + (0.E-38 + 0.E-38*I)*x^32 + (0.E-38 + 0.E-38*I)*x^31 + (0.E-38 + 0.E-38*I)*x^30 + (0.E-38 + 0.E-38*I)*x^29 + (0.E-38 + 0.E-38*I)*x^28 + (0.E-38 + 0.E-38*I)*x^27 + (0.E-38 + 0.E-38*I)*x^26 + (0.E-38 + 0.E-38*I)*x^25 + (0.E-38 + 0.E-38*I)*x^24 + (0.E-38 + 0.E-38*I)*x^23 + (0.E-38 + 0.E-38*I)*x^22 + (0.E-38 + 0.E-38*I)*x^21 + (0.E-38 + 0.E-38*I)*x^20 + (0.E-38 + 0.E-38*I)*x^19 + (0.E-38 + 0.E-38*I)*x^18 + (0.E-38 + 0.E-38*I)*x^17 + (0.E-38 + 0.E-38*I)*x^16 + (0.E-38 + 0.E-38*I)*x^15 + (0.E-38 + 0.E-38*I)*x^14 + (0.E-38 + 0.E-38*I)*x^13 + (0.E-38 + 0.E-38*I)*x^12 + (0.E-38 + 0.E-38*I)*x^11 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x^10 + (0.E-38 + 0.E-38*I)*x^9 + (0.E-38 + 0.E-38*I)*x^8 + (0.E-38 + 0.E-38*I)*x^7 + (0.E-38 + 0.E-38*I)*x^6 + (0.E-38 + 0.E-38*I)*x^5 + (0.E-38 + 0.E-38*I)*x^4 + (0.E-38 + 0.E-38*I)*x^3 + (0.E-38 + 0.E-38*I)*x^2 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x + (7.888609052210120000000000000 E-31 + 0.E-38*I)\n? polroots(fp)\n  *** polroots: division by zero\n```\n\nI think that makes this ticket invalid ... Carl, does that seem reasonable to you? In particular, do you have any code you've written that we might fall back on if Pari fails like this?",
     "created_at": "2009-01-23T13:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
@@ -61,14 +60,12 @@ archive/issue_comments_016269.json:
 
 Actually, this is really just pari giving us an error: 
 
-
 ```
 ? fp
 %4 = (6.223015277861140000000000000 E-61 + 0.E-38*I)*x^50 + (0.E-38 + 0.E-38*I)*x^49 + (0.E-38 + 0.E-38*I)*x^48 + (0.E-38 + 0.E-38*I)*x^47 + (0.E-38 + 0.E-38*I)*x^46 + (0.E-38 + 0.E-38*I)*x^45 + (0.E-38 + 0.E-38*I)*x^44 + (0.E-38 + 0.E-38*I)*x^43 + (0.E-38 + 0.E-38*I)*x^42 + (0.E-38 + 0.E-38*I)*x^41 + (0.E-38 + 0.E-38*I)*x^40 + (0.E-38 + 0.E-38*I)*x^39 + (0.E-38 + 0.E-38*I)*x^38 + (0.E-38 + 0.E-38*I)*x^37 + (0.E-38 + 0.E-38*I)*x^36 + (0.E-38 + 0.E-38*I)*x^35 + (0.E-38 + 0.E-38*I)*x^34 + (0.E-38 + 0.E-38*I)*x^33 + (0.E-38 + 0.E-38*I)*x^32 + (0.E-38 + 0.E-38*I)*x^31 + (0.E-38 + 0.E-38*I)*x^30 + (0.E-38 + 0.E-38*I)*x^29 + (0.E-38 + 0.E-38*I)*x^28 + (0.E-38 + 0.E-38*I)*x^27 + (0.E-38 + 0.E-38*I)*x^26 + (0.E-38 + 0.E-38*I)*x^25 + (0.E-38 + 0.E-38*I)*x^24 + (0.E-38 + 0.E-38*I)*x^23 + (0.E-38 + 0.E-38*I)*x^22 + (0.E-38 + 0.E-38*I)*x^21 + (0.E-38 + 0.E-38*I)*x^20 + (0.E-38 + 0.E-38*I)*x^19 + (0.E-38 + 0.E-38*I)*x^18 + (0.E-38 + 0.E-38*I)*x^17 + (0.E-38 + 0.E-38*I)*x^16 + (0.E-38 + 0.E-38*I)*x^15 + (0.E-38 + 0.E-38*I)*x^14 + (0.E-38 + 0.E-38*I)*x^13 + (0.E-38 + 0.E-38*I)*x^12 + (0.E-38 + 0.E-38*I)*x^11 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x^10 + (0.E-38 + 0.E-38*I)*x^9 + (0.E-38 + 0.E-38*I)*x^8 + (0.E-38 + 0.E-38*I)*x^7 + (0.E-38 + 0.E-38*I)*x^6 + (0.E-38 + 0.E-38*I)*x^5 + (0.E-38 + 0.E-38*I)*x^4 + (0.E-38 + 0.E-38*I)*x^3 + (0.E-38 + 0.E-38*I)*x^2 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x + (7.888609052210120000000000000 E-31 + 0.E-38*I)
 ? polroots(fp)
   *** polroots: division by zero
 ```
-
 
 I think that makes this ticket invalid ... Carl, does that seem reasonable to you? In particular, do you have any code you've written that we might fall back on if Pari fails like this?
 
@@ -209,7 +206,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_016277.json:
 ```json
 {
-    "body": "\n```\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 4281\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_2418.patch\n```\n",
+    "body": "```\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 4281\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_2418.patch\n```",
     "created_at": "2010-01-13T10:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
@@ -217,7 +214,6 @@ archive/issue_comments_016277.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 patching file sage/rings/polynomial/polynomial_element.pyx
@@ -227,7 +223,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_2418.patch
 ```
-
 
 
 

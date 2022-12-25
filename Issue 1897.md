@@ -3,7 +3,7 @@
 archive/issues_001897.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n12:46 < ianxek> hi there\n12:47 < ianxek> A Latex question in sage : if I define a variable say x=3 and later on use the\n                %latex environment and use $\\sage{x}$ then it says x is unknown\n12:48 < ianxek> How do I tell sage to access the previously defined x ?\n13:03 < sage> This is a bug in Sage!\n13:03 < sage> However, here is a workaround until it gets fixed.\n13:03 < sage> ianxek.\n13:03 < sage> latex.eval('$2+\\sage{a}$', locals=globals())\n13:03 < sage> I.e., instead of typing %latex in the cell, do \n13:04 < sage> latex.eval(\"A latex string\", locals=globals())\n13:04 < sage> And you'll see the variables properly.\n13:04 < sage> Thanks for asking this question.\n```\n\n\nI think the problem involves system.eval not getting passed the\nglobals() dictionary correctly...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1897\n\n",
+    "body": "Assignee: boothby\n\n```\n12:46 < ianxek> hi there\n12:47 < ianxek> A Latex question in sage : if I define a variable say x=3 and later on use the\n                %latex environment and use $\\sage{x}$ then it says x is unknown\n12:48 < ianxek> How do I tell sage to access the previously defined x ?\n13:03 < sage> This is a bug in Sage!\n13:03 < sage> However, here is a workaround until it gets fixed.\n13:03 < sage> ianxek.\n13:03 < sage> latex.eval('$2+\\sage{a}$', locals=globals())\n13:03 < sage> I.e., instead of typing %latex in the cell, do \n13:04 < sage> latex.eval(\"A latex string\", locals=globals())\n13:04 < sage> And you'll see the variables properly.\n13:04 < sage> Thanks for asking this question.\n```\n\nI think the problem involves system.eval not getting passed the\nglobals() dictionary correctly...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1897\n\n",
     "created_at": "2008-01-23T21:05:16Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_001897.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 12:46 < ianxek> hi there
@@ -33,7 +32,6 @@ Assignee: boothby
 13:04 < sage> And you'll see the variables properly.
 13:04 < sage> Thanks for asking this question.
 ```
-
 
 I think the problem involves system.eval not getting passed the
 globals() dictionary correctly...
@@ -105,7 +103,7 @@ The problem was caused by syseval in sage.server.support needing the second posi
 archive/issue_comments_011979.json:
 ```json
 {
-    "body": "With %latex in notebook I'm getting \n\n```\nAn error occured.\nError latexing slide.\n```\n",
+    "body": "With %latex in notebook I'm getting \n\n```\nAn error occured.\nError latexing slide.\n```",
     "created_at": "2009-01-21T07:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
@@ -120,7 +118,6 @@ With %latex in notebook I'm getting
 An error occured.
 Error latexing slide.
 ```
-
 
 
 

@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071118.json:
 ```json
 {
-    "body": "With this patch applied, on 32-bit linux we have:\n\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.3.2.alpha0$         sage -t  -long \"devel/sage/sage/libs/cremona/newforms.pyx\"                                                                                        \n\nsage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"   \n\n         [6.3 s]\n                \n```\n\n\nWhich is good.   However, I do not think the patch you posted explains very well what is going on.  It's not good for a user reading it.  I've posted an additional patch (apply after yours), which I think does a better job testing things and illustrating the issue.",
+    "body": "With this patch applied, on 32-bit linux we have:\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.3.2.alpha0$         sage -t  -long \"devel/sage/sage/libs/cremona/newforms.pyx\"                                                                                        \n\nsage -t -long \"devel/sage/sage/libs/cremona/newforms.pyx\"   \n\n         [6.3 s]\n                \n```\n\nWhich is good.   However, I do not think the patch you posted explains very well what is going on.  It's not good for a user reading it.  I've posted an additional patch (apply after yours), which I think does a better job testing things and illustrating the issue.",
     "created_at": "2010-01-28T23:07:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_071118.json:
 
 With this patch applied, on 32-bit linux we have:
 
-
 ```
 wstein@ubuntu32:/tmp/wstein/farm/sage-4.3.2.alpha0$         sage -t  -long "devel/sage/sage/libs/cremona/newforms.pyx"                                                                                        
 
@@ -89,7 +88,6 @@ sage -t -long "devel/sage/sage/libs/cremona/newforms.pyx"
          [6.3 s]
                 
 ```
-
 
 Which is good.   However, I do not think the patch you posted explains very well what is going on.  It's not good for a user reading it.  I've posted an additional patch (apply after yours), which I think does a better job testing things and illustrating the issue.
 

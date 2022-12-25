@@ -3,7 +3,7 @@
 archive/issues_002956.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @orlitzky\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
+    "body": "Assignee: somebody\n\nCC:  @orlitzky\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
     "created_at": "2008-04-19T15:26:41Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,7 +28,6 @@ sage: x^(2^64 + 12345)
 x^12345
 ```
 
-
 In one test, I also saw a crash, but I can't reproduce it.
 
 ```
@@ -40,7 +39,6 @@ sage: (x^12345)^54321
 Unhandled SIGSEGV: A segmentation fault occured in SAGE.
 ...
 ```
-
 (The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2956
@@ -71,7 +69,7 @@ archive/issue_events_006754.json:
 archive/issue_comments_020338.json:
 ```json
 {
-    "body": "For the 2nd example, I do not get a crash, but a funny result with 3.1.4 on a 32-bit computer:\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\nx^28393*y^10232\n```\n\nNote that y does not appear in the input!\n\nPossible explanation: 12345*54321 = 10232*2^16+28393.\nApparently the low 16 bits are used to store the exponent of x, and the upper 16 bits\nfor the exponent of y, but no check for overflow is done!!!",
+    "body": "For the 2nd example, I do not get a crash, but a funny result with 3.1.4 on a 32-bit computer:\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\nx^28393*y^10232\n```\nNote that y does not appear in the input!\n\nPossible explanation: 12345*54321 = 10232*2^16+28393.\nApparently the low 16 bits are used to store the exponent of x, and the upper 16 bits\nfor the exponent of y, but no check for overflow is done!!!",
     "created_at": "2008-10-19T13:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
@@ -87,7 +85,6 @@ sage: K.<x,y> = ZZ[]
 sage: (x^12345)^54321
 x^28393*y^10232
 ```
-
 Note that y does not appear in the input!
 
 Possible explanation: 12345*54321 = 10232*2^16+28393.
@@ -211,7 +208,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_020345.json:
 ```json
 {
-    "body": "I tried on a 32-bit machine with vanilla 4.7.2. The first doctest is ok, for the second one I get:\n\n```\nsage: (x^12345)^54321\n...\nOverflowError: Exponent overflow (670592745).\n```\n\nthus the patch needs work.\n\nPaul Zimmermann",
+    "body": "I tried on a 32-bit machine with vanilla 4.7.2. The first doctest is ok, for the second one I get:\n\n```\nsage: (x^12345)^54321\n...\nOverflowError: Exponent overflow (670592745).\n```\nthus the patch needs work.\n\nPaul Zimmermann",
     "created_at": "2012-01-08T10:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
@@ -227,7 +224,6 @@ sage: (x^12345)^54321
 ...
 OverflowError: Exponent overflow (670592745).
 ```
-
 thus the patch needs work.
 
 Paul Zimmermann

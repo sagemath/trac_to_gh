@@ -67,7 +67,7 @@ Changing priority from major to blocker.
 archive/issue_comments_009681.json:
 ```json
 {
-    "body": "\n```\n[9:43pm] cwitty-rvw-1514: wstein-rvw-1119, it looks like #1514 does not have any doctests for whatever bugs you are fixing?\n[9:43pm] craigcitro: gmp comes before pari in the build order for libcsage\n[9:44pm] wstein-rvw-1119: cwitty-1514 -- the buginess is that nothing works at all.\n[9:44pm] wstein-rvw-1119: it's hard to have a doctest for that.\n[9:44pm] wstein-rvw-1119: However, notice the first line of the patch, which turns *on* doctesting for the sageinspect.py file\n[9:44pm] wstein-rvw-1119: So there are many new doctests as a result.\n[9:45pm] wstein-rvw-1119: It's really a design change anyway -- to use the files in SAGE_ROOT/devel/sage/sage instead of SAGE_ROOT/local/lib/python/site-packages/sage/,\n[9:45pm] wstein-rvw-1119: since for some reason often some .pyx files or other files that are relevant don't get copied over there.\n[9:45pm] wstein-rvw-1119: But SAGE_ROOT/devel/sage/sage does.\n```\n",
+    "body": "```\n[9:43pm] cwitty-rvw-1514: wstein-rvw-1119, it looks like #1514 does not have any doctests for whatever bugs you are fixing?\n[9:43pm] craigcitro: gmp comes before pari in the build order for libcsage\n[9:44pm] wstein-rvw-1119: cwitty-1514 -- the buginess is that nothing works at all.\n[9:44pm] wstein-rvw-1119: it's hard to have a doctest for that.\n[9:44pm] wstein-rvw-1119: However, notice the first line of the patch, which turns *on* doctesting for the sageinspect.py file\n[9:44pm] wstein-rvw-1119: So there are many new doctests as a result.\n[9:45pm] wstein-rvw-1119: It's really a design change anyway -- to use the files in SAGE_ROOT/devel/sage/sage instead of SAGE_ROOT/local/lib/python/site-packages/sage/,\n[9:45pm] wstein-rvw-1119: since for some reason often some .pyx files or other files that are relevant don't get copied over there.\n[9:45pm] wstein-rvw-1119: But SAGE_ROOT/devel/sage/sage does.\n```",
     "created_at": "2007-12-15T05:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1514",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ archive/issue_comments_009681.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 [9:43pm] cwitty-rvw-1514: wstein-rvw-1119, it looks like #1514 does not have any doctests for whatever bugs you are fixing?
@@ -88,7 +87,6 @@ archive/issue_comments_009681.json:
 [9:45pm] wstein-rvw-1119: since for some reason often some .pyx files or other files that are relevant don't get copied over there.
 [9:45pm] wstein-rvw-1119: But SAGE_ROOT/devel/sage/sage does.
 ```
-
 
 
 

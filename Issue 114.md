@@ -3,7 +3,7 @@
 archive/issues_000114.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\ntrac doesn't work at all in Python 2.5, hence not with SAGE. \n\nI've moved it to the experimental package repo. \n\nThere are posts out there about one of the depenencies like this: \n\n```\nThe ClearSilver developer is on vacation, though, so it\nprobably won't be fixed for a couple of weeks. Just stay with Python\n2.4 a little longer (or, possibly, dive into the clearsilver source\nand see what the problem is).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/114\n\n",
+    "body": "Assignee: @williamstein\n\ntrac doesn't work at all in Python 2.5, hence not with SAGE. \n\nI've moved it to the experimental package repo. \n\nThere are posts out there about one of the depenencies like this: \n\n```\nThe ClearSilver developer is on vacation, though, so it\nprobably won't be fixed for a couple of weeks. Just stay with Python\n2.4 a little longer (or, possibly, dive into the clearsilver source\nand see what the problem is).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/114\n\n",
     "created_at": "2006-10-07T09:15:21Z",
     "labels": [
         "component: user interface",
@@ -29,7 +29,6 @@ probably won't be fixed for a couple of weeks. Just stay with Python
 2.4 a little longer (or, possibly, dive into the clearsilver source
 and see what the problem is).
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/114
 

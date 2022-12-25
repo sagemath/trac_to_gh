@@ -56,7 +56,7 @@ Changing status from new to assigned.
 archive/issue_comments_032150.json:
 ```json
 {
-    "body": "With the html files added to MANIFEST.in the repo does not lack any files:\n\n```\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ hg stat\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ \n```\n\n\nCheers,\n\nMichael",
+    "body": "With the html files added to MANIFEST.in the repo does not lack any files:\n\n```\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ hg stat\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4378",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ With the html files added to MANIFEST.in the repo does not lack any files:
 dist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ hg stat
 dist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ 
 ```
-
 
 Cheers,
 

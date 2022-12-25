@@ -226,7 +226,7 @@ Is there a corresponding list of commands for patches?
 archive/issue_comments_014608.json:
 ```json
 {
-    "body": "To quote from that page:\n\n```\nYou can make all changes in the repository you're working in as a bundle by\ntyping hg_sage.bundle('mybundle') (this creates an hg bundle mybundle.hg). \nAlternatively, you can export any particular changeset as plain text \npatches by typing hg_sage.export(...); note that each individual changeset \nis recorded as a different patch. hg_sage.export(...) needs at least the \nargument revs - integer or list of integers (revision numbers); use the \nhg_sage.log() function to see them. An optional second argument is a \n'patch_filename', default is '(changeset_revision_number).patch'.\n```\n\nThe command `hg_sage.bundle('mybundle')` creates a bundle against the current main repo, which is at 2.10.1. Use `hg_sage.export(...)` with the right commit numbers, which `hg_sage.log()` does tell you.\n\nCheers,\n\nMichael",
+    "body": "To quote from that page:\n\n```\nYou can make all changes in the repository you're working in as a bundle by\ntyping hg_sage.bundle('mybundle') (this creates an hg bundle mybundle.hg). \nAlternatively, you can export any particular changeset as plain text \npatches by typing hg_sage.export(...); note that each individual changeset \nis recorded as a different patch. hg_sage.export(...) needs at least the \nargument revs - integer or list of integers (revision numbers); use the \nhg_sage.log() function to see them. An optional second argument is a \n'patch_filename', default is '(changeset_revision_number).patch'.\n```\nThe command `hg_sage.bundle('mybundle')` creates a bundle against the current main repo, which is at 2.10.1. Use `hg_sage.export(...)` with the right commit numbers, which `hg_sage.log()` does tell you.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T18:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
@@ -247,7 +247,6 @@ argument revs - integer or list of integers (revision numbers); use the
 hg_sage.log() function to see them. An optional second argument is a 
 'patch_filename', default is '(changeset_revision_number).patch'.
 ```
-
 The command `hg_sage.bundle('mybundle')` creates a bundle against the current main repo, which is at 2.10.1. Use `hg_sage.export(...)` with the right commit numbers, which `hg_sage.log()` does tell you.
 
 Cheers,

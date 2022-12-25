@@ -292,7 +292,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_013134.json:
 ```json
 {
-    "body": "According to the \"principle of least surprise\", supporting floordiv for finite fields looks suspicious\n\n```\nsage: ZZ(5) // ZZ(3)\n1\nsage: GF(7)(5) // GF(7)(3)\n4\n```\n\nIf this is just an alias of division, why do we need it?",
+    "body": "According to the \"principle of least surprise\", supporting floordiv for finite fields looks suspicious\n\n```\nsage: ZZ(5) // ZZ(3)\n1\nsage: GF(7)(5) // GF(7)(3)\n4\n```\nIf this is just an alias of division, why do we need it?",
     "created_at": "2016-01-20T14:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
@@ -309,7 +309,6 @@ sage: ZZ(5) // ZZ(3)
 sage: GF(7)(5) // GF(7)(3)
 4
 ```
-
 If this is just an alias of division, why do we need it?
 
 
@@ -319,7 +318,7 @@ If this is just an alias of division, why do we need it?
 archive/issue_comments_013135.json:
 ```json
 {
-    "body": "Replying to [comment:16 vdelecroix]:\n> According to the \"principle of least surprise\", supporting floordiv for finite fields looks suspicious\n\nThat's outside the scope of this ticket. This ticket only implements coercion for `__floordiv__`, it doesn't otherwise change the semantics of floor division. There shouldn't be anything controversial in this ticket.",
+    "body": "Replying to [comment:16 vdelecroix]:\n> According to the \"principle of least surprise\", supporting floordiv for finite fields looks suspicious\n\n\nThat's outside the scope of this ticket. This ticket only implements coercion for `__floordiv__`, it doesn't otherwise change the semantics of floor division. There shouldn't be anything controversial in this ticket.",
     "created_at": "2016-01-20T14:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
@@ -330,6 +329,7 @@ archive/issue_comments_013135.json:
 
 Replying to [comment:16 vdelecroix]:
 > According to the "principle of least surprise", supporting floordiv for finite fields looks suspicious
+
 
 That's outside the scope of this ticket. This ticket only implements coercion for `__floordiv__`, it doesn't otherwise change the semantics of floor division. There shouldn't be anything controversial in this ticket.
 

@@ -3,7 +3,7 @@
 archive/issues_005383.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: principal ideal domain span free module isinstance\n\nThis is the cause of things like:\n\n\n```\nsage: R.<x, y> = QQ[]\nsage: M = R^2\nsage: span(R, vector([1, 0]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/dhcp_v009_038.mobile.uci.edu/301/_Users_ncalexan_Documents_School_rumely_polynomial_ring_as_module2_sage_142.py in <module>()\n\n/Users/ncalexan/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    408 \n    409     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n--> 410         raise TypeError, \"The base_ring (= %s) must be a principal ideal domain.\"%R\n    411     if len(gens) == 0:\n    412         return FreeModule(R, 0)\n\nTypeError: The base_ring (= Multivariate Polynomial Ring in x, y over Rational Field) must be a principal ideal domain.\n```\n\n\nSurprisingly few places where this bites us:\n\n\n```\nsage: search_src('PrincipalIdealDomain')\nmodules/free_module.py:        elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:    if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:        if not isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_quadratic_module.py:    elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nrings/all.py:from principal_ideal_domain import PrincipalIdealDomain, is_PrincipalIdealDomain\nrings/all.py:from principal_ideal_domain_element import PrincipalIdealDomainElement, is_PrincipalIdealDomainElement\nrings/ideal.py:    if isinstance(R, sage.rings.principal_ideal_domain.PrincipalIdealDomain):\n<snip>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5383\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: principal ideal domain span free module isinstance\n\nThis is the cause of things like:\n\n```\nsage: R.<x, y> = QQ[]\nsage: M = R^2\nsage: span(R, vector([1, 0]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/dhcp_v009_038.mobile.uci.edu/301/_Users_ncalexan_Documents_School_rumely_polynomial_ring_as_module2_sage_142.py in <module>()\n\n/Users/ncalexan/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    408 \n    409     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n--> 410         raise TypeError, \"The base_ring (= %s) must be a principal ideal domain.\"%R\n    411     if len(gens) == 0:\n    412         return FreeModule(R, 0)\n\nTypeError: The base_ring (= Multivariate Polynomial Ring in x, y over Rational Field) must be a principal ideal domain.\n```\n\nSurprisingly few places where this bites us:\n\n```\nsage: search_src('PrincipalIdealDomain')\nmodules/free_module.py:        elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:    if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:        if not isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_quadratic_module.py:    elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nrings/all.py:from principal_ideal_domain import PrincipalIdealDomain, is_PrincipalIdealDomain\nrings/all.py:from principal_ideal_domain_element import PrincipalIdealDomainElement, is_PrincipalIdealDomainElement\nrings/ideal.py:    if isinstance(R, sage.rings.principal_ideal_domain.PrincipalIdealDomain):\n<snip>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5383\n\n",
     "created_at": "2009-02-26T04:41:00Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 Keywords: principal ideal domain span free module isinstance
 
 This is the cause of things like:
-
 
 ```
 sage: R.<x, y> = QQ[]
@@ -42,9 +41,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: The base_ring (= Multivariate Polynomial Ring in x, y over Rational Field) must be a principal ideal domain.
 ```
 
-
 Surprisingly few places where this bites us:
-
 
 ```
 sage: search_src('PrincipalIdealDomain')
@@ -57,7 +54,6 @@ rings/all.py:from principal_ideal_domain_element import PrincipalIdealDomainElem
 rings/ideal.py:    if isinstance(R, sage.rings.principal_ideal_domain.PrincipalIdealDomain):
 <snip>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5383
 
@@ -267,7 +263,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_041381.json:
 ```json
 {
-    "body": "Easy ticket.\n----\nNew commits:",
+    "body": "Easy ticket.\n\n---\nNew commits:",
     "created_at": "2014-02-18T07:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
@@ -277,7 +273,8 @@ archive/issue_comments_041381.json:
 ```
 
 Easy ticket.
-----
+
+---
 New commits:
 
 

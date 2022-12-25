@@ -3,7 +3,7 @@
 archive/issues_002654.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
+    "body": "Assignee: @malb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
     "created_at": "2008-03-23T12:24:24Z",
     "labels": [
         "component: commutative algebra",
@@ -31,7 +31,6 @@ I think it would be more efficient to use the recursion
 \Phi_{p*n}(X) = \Phi_n(X^p) # if p|n
               = \Phi_n(X^p)/\Phi_n(X) # else
 ```
-
 (though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.
 
 Secondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as "very dumb" and it is hard to disagree!).
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2654
 archive/issue_comments_018202.json:
 ```json
 {
-    "body": "I think this proves it.  Here's my new implementation as a Sage function:\n\n```\ndef newcyc(n):\n    assert n>0\n    plist = n.prime_divisors()\n    X = PolynomialRing(ZZ,'X').gen()\n    f = X-1\n    m = n\n    for p in plist:\n    \tf = f(X**p)//f(X)\n\tm //= p\n    return f.subs(X**m)\n```\n\n\nNow newcyc(factorial(10)) takes 15s compared with cyclotomic_polynomial(factorial(10)) whihc takes 108s.  When you take into account the fact that the old function is written in cython while the new one is in sage, I think I have proved my point!  Moreover the code for the new function is very much simpler.",
+    "body": "I think this proves it.  Here's my new implementation as a Sage function:\n\n```\ndef newcyc(n):\n    assert n>0\n    plist = n.prime_divisors()\n    X = PolynomialRing(ZZ,'X').gen()\n    f = X-1\n    m = n\n    for p in plist:\n    \tf = f(X**p)//f(X)\n\tm //= p\n    return f.subs(X**m)\n```\n\nNow newcyc(factorial(10)) takes 15s compared with cyclotomic_polynomial(factorial(10)) whihc takes 108s.  When you take into account the fact that the old function is written in cython while the new one is in sage, I think I have proved my point!  Moreover the code for the new function is very much simpler.",
     "created_at": "2008-03-23T12:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -70,7 +69,6 @@ def newcyc(n):
 	m //= p
     return f.subs(X**m)
 ```
-
 
 Now newcyc(factorial(10)) takes 15s compared with cyclotomic_polynomial(factorial(10)) whihc takes 108s.  When you take into account the fact that the old function is written in cython while the new one is in sage, I think I have proved my point!  Moreover the code for the new function is very much simpler.
 
@@ -98,7 +96,7 @@ archive/issue_events_006214.json:
 archive/issue_comments_018203.json:
 ```json
 {
-    "body": "This is due to some (very!) poor conversion code, not due to the algorithm itself. \n\n\n```\nsage: import sage.rings.polynomial.cyclotomic as c\nsage: n = factorial(10)\nsage: time f = newcyc(n)\nCPU time: 12.40 s,  Wall time: 12.53 s\nsage: time L = c.cyclotomic_coeffs(n)\nCPU time: 0.12 s,  Wall time: 0.13 s\n```\n",
+    "body": "This is due to some (very!) poor conversion code, not due to the algorithm itself. \n\n```\nsage: import sage.rings.polynomial.cyclotomic as c\nsage: n = factorial(10)\nsage: time f = newcyc(n)\nCPU time: 12.40 s,  Wall time: 12.53 s\nsage: time L = c.cyclotomic_coeffs(n)\nCPU time: 0.12 s,  Wall time: 0.13 s\n```",
     "created_at": "2008-03-31T20:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -109,7 +107,6 @@ archive/issue_comments_018203.json:
 
 This is due to some (very!) poor conversion code, not due to the algorithm itself. 
 
-
 ```
 sage: import sage.rings.polynomial.cyclotomic as c
 sage: n = factorial(10)
@@ -118,7 +115,6 @@ CPU time: 12.40 s,  Wall time: 12.53 s
 sage: time L = c.cyclotomic_coeffs(n)
 CPU time: 0.12 s,  Wall time: 0.13 s
 ```
-
 
 
 
@@ -163,7 +159,7 @@ Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/26
 archive/issue_comments_018206.json:
 ```json
 {
-    "body": "With timings like that, I couldn't resist\n\n\n```\nsage: time f = cyclotomic_polynomial(factorial(10))\nCPU times: user 0.09 s, sys: 0.03 s, total: 0.12 s\nWall time: 0.13\nsage: time f = cyclotomic_polynomial(10^5)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\nsage: time f = cyclotomic_polynomial(10^6)\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.02\nsage: time f = cyclotomic_polynomial(10^7)\nCPU times: user 0.14 s, sys: 0.07 s, total: 0.22 s\nWall time: 0.23\n```\n\n\nImplementing an `is_cyclotomic` function is also a good idea, but probably a separate ticket.",
+    "body": "With timings like that, I couldn't resist\n\n```\nsage: time f = cyclotomic_polynomial(factorial(10))\nCPU times: user 0.09 s, sys: 0.03 s, total: 0.12 s\nWall time: 0.13\nsage: time f = cyclotomic_polynomial(10^5)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\nsage: time f = cyclotomic_polynomial(10^6)\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.02\nsage: time f = cyclotomic_polynomial(10^7)\nCPU times: user 0.14 s, sys: 0.07 s, total: 0.22 s\nWall time: 0.23\n```\n\nImplementing an `is_cyclotomic` function is also a good idea, but probably a separate ticket.",
     "created_at": "2008-04-01T00:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -173,7 +169,6 @@ archive/issue_comments_018206.json:
 ```
 
 With timings like that, I couldn't resist
-
 
 ```
 sage: time f = cyclotomic_polynomial(factorial(10))
@@ -190,7 +185,6 @@ CPU times: user 0.14 s, sys: 0.07 s, total: 0.22 s
 Wall time: 0.23
 ```
 
-
 Implementing an `is_cyclotomic` function is also a good idea, but probably a separate ticket.
 
 
@@ -200,7 +194,7 @@ Implementing an `is_cyclotomic` function is also a good idea, but probably a sep
 archive/issue_comments_018207.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nIt builds fine.  It works fine, but gives the wrong (?) answer for n=1. \n\n\n```\nsage: cyclotomic_polynomial(1)\n-x + 1\nsage: gp('polcyclo(1)')\nx - 1\nsage: magma('CyclotomicPolynomial(1)')\n$.1 - 1\n```\n\n\nI also got it to Segfault.  Heh heh:\n\n\n```\nsage: time f = cyclotomic_polynomial(2^30)\nsage.bin(3624) malloc: *** error for object 0x6b089e0: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(3624) malloc: *** error for object 0x6b0cb90: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nFix the above 2, and it's a positive review.",
+    "body": "REFEREE REPORT:\n\nIt builds fine.  It works fine, but gives the wrong (?) answer for n=1. \n\n```\nsage: cyclotomic_polynomial(1)\n-x + 1\nsage: gp('polcyclo(1)')\nx - 1\nsage: magma('CyclotomicPolynomial(1)')\n$.1 - 1\n```\n\nI also got it to Segfault.  Heh heh:\n\n```\nsage: time f = cyclotomic_polynomial(2^30)\nsage.bin(3624) malloc: *** error for object 0x6b089e0: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(3624) malloc: *** error for object 0x6b0cb90: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nFix the above 2, and it's a positive review.",
     "created_at": "2008-04-01T04:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -213,7 +207,6 @@ REFEREE REPORT:
 
 It builds fine.  It works fine, but gives the wrong (?) answer for n=1. 
 
-
 ```
 sage: cyclotomic_polynomial(1)
 -x + 1
@@ -223,9 +216,7 @@ sage: magma('CyclotomicPolynomial(1)')
 $.1 - 1
 ```
 
-
 I also got it to Segfault.  Heh heh:
-
 
 ```
 sage: time f = cyclotomic_polynomial(2^30)
@@ -245,7 +236,6 @@ SAGE will now terminate (sorry).
 ------------------------------------------------------------
 
 ```
-
 
 Fix the above 2, and it's a positive review.
 
@@ -312,7 +302,7 @@ Changing assignee from @malb to @robertwb.
 archive/issue_comments_018211.json:
 ```json
 {
-    "body": "So far so good:\n\n```\nsage: cyclotomic_polynomial(1)\nx - 1\nsage: cyclotomic_polynomial(2^45)\n---------------------------------------------------------------------------\n<type 'exceptions.MemoryError'>           Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/local/lib/python2.5/site-packages/sage/misc/functional.py in cyclotomic_polynomial(n, var)\n    199     \"\"\"\n    200     return sage.rings.all.PolynomialRing(\\\n--> 201                   sage.rings.all.ZZ, name=var).cyclotomic_polynomial(n)\n    202\n    203 def decomposition(x):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in cyclotomic_polynomial(self, n)\n    594             return self.gen() - 1\n    595         else:\n--> 596             return self(cyclotomic.cyclotomic_coeffs(n), check=True)\n    597\n    598     def gen(self, n=0):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/cyclotomic.pyx in sage.rings.polynomial.cyclotomic.cyclotomic_coeffs()\n\n<type 'exceptions.MemoryError'>: Not enough memory to calculate cyclotomic polynomial of 35184372088832\n```\n\n\nI tried `cyclotomic_polynomial(2^30)` on sage.math, but killed it when it started to consume more than 16GB of RAM. So can somebody please check on as 32 bit platform?\n\nBut: it causes doctest trouble for me:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py: 1 doctests failed\nsage -t -long devel/sage/sage/rings/polynomial/cyclotomic.pyx: 1 doctests failed\nsage -t -long devel/sage/sage/combinat/sf/hall_littlewood.py: 16 doctests failed\nsage -t -long devel/sage/sage/combinat/schubert_polynomial.py: 4 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "So far so good:\n\n```\nsage: cyclotomic_polynomial(1)\nx - 1\nsage: cyclotomic_polynomial(2^45)\n---------------------------------------------------------------------------\n<type 'exceptions.MemoryError'>           Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/local/lib/python2.5/site-packages/sage/misc/functional.py in cyclotomic_polynomial(n, var)\n    199     \"\"\"\n    200     return sage.rings.all.PolynomialRing(\\\n--> 201                   sage.rings.all.ZZ, name=var).cyclotomic_polynomial(n)\n    202\n    203 def decomposition(x):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in cyclotomic_polynomial(self, n)\n    594             return self.gen() - 1\n    595         else:\n--> 596             return self(cyclotomic.cyclotomic_coeffs(n), check=True)\n    597\n    598     def gen(self, n=0):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha0/cyclotomic.pyx in sage.rings.polynomial.cyclotomic.cyclotomic_coeffs()\n\n<type 'exceptions.MemoryError'>: Not enough memory to calculate cyclotomic polynomial of 35184372088832\n```\n\nI tried `cyclotomic_polynomial(2^30)` on sage.math, but killed it when it started to consume more than 16GB of RAM. So can somebody please check on as 32 bit platform?\n\nBut: it causes doctest trouble for me:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_ring.py: 1 doctests failed\nsage -t -long devel/sage/sage/rings/polynomial/cyclotomic.pyx: 1 doctests failed\nsage -t -long devel/sage/sage/combinat/sf/hall_littlewood.py: 16 doctests failed\nsage -t -long devel/sage/sage/combinat/schubert_polynomial.py: 4 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T12:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -351,7 +341,6 @@ sage: cyclotomic_polynomial(2^45)
 <type 'exceptions.MemoryError'>: Not enough memory to calculate cyclotomic polynomial of 35184372088832
 ```
 
-
 I tried `cyclotomic_polynomial(2^30)` on sage.math, but killed it when it started to consume more than 16GB of RAM. So can somebody please check on as 32 bit platform?
 
 But: it causes doctest trouble for me:
@@ -362,7 +351,6 @@ sage -t -long devel/sage/sage/rings/polynomial/cyclotomic.pyx: 1 doctests failed
 sage -t -long devel/sage/sage/combinat/sf/hall_littlewood.py: 16 doctests failed
 sage -t -long devel/sage/sage/combinat/schubert_polynomial.py: 4 doctests failed
 ```
-
 
 Cheers,
 
@@ -395,7 +383,7 @@ I'll try it on my 32 bit machine now.
 archive/issue_comments_018213.json:
 ```json
 {
-    "body": "This is on a 32-bit machine (Linux fermat 2.6.22-14-generic #1 SMP Tue Feb 12 07:42:25 UTC 2008 i686 GNU/Linux)\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: cyclo\nsage: time f=cyclotomic_polynomial(2^26)\nCPU times: user 0.70 s, sys: 0.54 s, total: 1.24 s\nWall time: 1.24\nsage: time f=cyclotomic_polynomial(2^27)\nexcessive length in vector::SetLength\n/home/jec/sage-2.11/local/bin/sage-sage: line 214: 30105 Aborted                 (core dumped) sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nBy the way, there's a huge time penalty in displaying the results of (say) `cyclotomic_polynomial(2^26)`, after the wall time is displayed and before the poly itself is (which is why in the above clip I assigned the result to a variable instead of outputting it).  I supect that the output takes time O(degree) instead of O(number-of-terms).  If that is true, can it be fixed?",
+    "body": "This is on a 32-bit machine (Linux fermat 2.6.22-14-generic #1 SMP Tue Feb 12 07:42:25 UTC 2008 i686 GNU/Linux)\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: cyclo\nsage: time f=cyclotomic_polynomial(2^26)\nCPU times: user 0.70 s, sys: 0.54 s, total: 1.24 s\nWall time: 1.24\nsage: time f=cyclotomic_polynomial(2^27)\nexcessive length in vector::SetLength\n/home/jec/sage-2.11/local/bin/sage-sage: line 214: 30105 Aborted                 (core dumped) sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nBy the way, there's a huge time penalty in displaying the results of (say) `cyclotomic_polynomial(2^26)`, after the wall time is displayed and before the poly itself is (which is why in the above clip I assigned the result to a variable instead of outputting it).  I supect that the output takes time O(degree) instead of O(number-of-terms).  If that is true, can it be fixed?",
     "created_at": "2008-04-01T15:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -405,7 +393,6 @@ archive/issue_comments_018213.json:
 ```
 
 This is on a 32-bit machine (Linux fermat 2.6.22-14-generic #1 SMP Tue Feb 12 07:42:25 UTC 2008 i686 GNU/Linux)
-
 
 
 ```
@@ -419,7 +406,6 @@ sage: time f=cyclotomic_polynomial(2^27)
 excessive length in vector::SetLength
 /home/jec/sage-2.11/local/bin/sage-sage: line 214: 30105 Aborted                 (core dumped) sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
-
 | SAGE Version 2.11, Release Date: 2008-03-30                        |
 | Type notebook() for the GUI, and license() for information.        |
 By the way, there's a huge time penalty in displaying the results of (say) `cyclotomic_polynomial(2^26)`, after the wall time is displayed and before the poly itself is (which is why in the above clip I assigned the result to a variable instead of outputting it).  I supect that the output takes time O(degree) instead of O(number-of-terms).  If that is true, can it be fixed?
@@ -431,7 +417,7 @@ By the way, there's a huge time penalty in displaying the results of (say) `cycl
 archive/issue_comments_018214.json:
 ```json
 {
-    "body": "The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing\n\n\n```\nsage: ZZ['x']({2^30: 1})\noverflow in SetCoeff\n/Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\n\nI'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? \n\nPrinting taking a long time is a more involved problem, but the real issue here is that we don't have sparse univariate polynomials. \n\nI'll look at the doctests too, it's strange 'cause I didn't change anything that should have affected combinat.",
+    "body": "The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing\n\n```\nsage: ZZ['x']({2^30: 1})\noverflow in SetCoeff\n/Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\nI'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? \n\nPrinting taking a long time is a more involved problem, but the real issue here is that we don't have sparse univariate polynomials. \n\nI'll look at the doctests too, it's strange 'cause I didn't change anything that should have affected combinat.",
     "created_at": "2008-04-01T20:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -442,13 +428,11 @@ archive/issue_comments_018214.json:
 
 The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing
 
-
 ```
 sage: ZZ['x']({2^30: 1})
 overflow in SetCoeff
 /Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
-
 
 I'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? 
 
@@ -463,7 +447,7 @@ I'll look at the doctests too, it's strange 'cause I didn't change anything that
 archive/issue_comments_018215.json:
 ```json
 {
-    "body": "Replying to [comment:14 robertwb]:\n> The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing\n> \n> {{{\n> sage: ZZ['x']({2^30: 1})\n> overflow in SetCoeff\n> /Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython \"$`@`\" -c \"$SAGE_STARTUP_COMMAND;\"\n> }}}\n> \n> I'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? \n> \n\nNo such limit is mentioned at http://www.shoup.net/ntl/doc/ZZX.txt\n\n> Printing taking a long time is a more involved problem, but the real issue here is that we don't have sparse univariate polynomials. \n> \n> I'll look at the doctests too, it's strange 'cause I didn't change anything that should have affected combinat.",
+    "body": "Replying to [comment:14 robertwb]:\n> The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing\n> \n> \n> ```\n> sage: ZZ['x']({2^30: 1})\n> overflow in SetCoeff\n> /Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n> ```\n> \n> I'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? \n> \n\n\nNo such limit is mentioned at http://www.shoup.net/ntl/doc/ZZX.txt\n\n> Printing taking a long time is a more involved problem, but the real issue here is that we don't have sparse univariate polynomials. \n> \n> I'll look at the doctests too, it's strange 'cause I didn't change anything that should have affected combinat.",
     "created_at": "2008-04-01T21:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -475,14 +459,16 @@ archive/issue_comments_018215.json:
 Replying to [comment:14 robertwb]:
 > The SetLength crash is an NTL issue (NTL has a limit on how large polynomials can be, one can duplicate the error trying to make x<sup>{(2</sup>30)} directly by doing
 > 
-> {{{
+> 
+> ```
 > sage: ZZ['x']({2^30: 1})
 > overflow in SetCoeff
-> /Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
-> }}}
+> /Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
+> ```
 > 
 > I'll make it throw an error instead of crashing in this case. Does anyone know what the NTL limit is for polynomial degrees? 
 > 
+
 
 No such limit is mentioned at http://www.shoup.net/ntl/doc/ZZX.txt
 
@@ -515,7 +501,7 @@ Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_018217.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by @robertwb created at 2008-04-02 19:58:29\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
+    "body": "Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by @robertwb created at 2008-04-02 19:58:29\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
     "created_at": "2008-04-02T19:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -530,11 +516,9 @@ I implemented fast printing for `ZZ[x]`, but the generic case could be done bett
 
 As for the limit, it's buried in ntl/include/ctools.h. 
 
-
 ```
 #define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))
 ```
-
 
 which is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.
 
@@ -564,7 +548,7 @@ All four patches are needed!
 archive/issue_comments_018219.json:
 ```json
 {
-    "body": "I am seeing one doctest failure with all four patches applied on sage.math:\n\n```\nsage-3.0.alpha1$ ./sage -t -long devel/sage/sage/rings/polynomial/polynomial_integer_dense_ntl.pyx\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_integer_dense_ntl.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/polynomial_integer_dense_ntl.py\", line 131:\n    sage: ZZ['x']({2^3: 1})\nExpected:\n    x^8\n    Traceback (most recent call last):\n    ...\n    OverflowError: Dense NTL integer polynomials have a maximum degree of 268435455\nGot:\n    x^8\n**********************************************************************\n```\n\n\nI would assume this is a 32bit vs. 64bit issue. Man, it is time for FLINT to take over Z[x].\n\nCheers,\n\nMichael",
+    "body": "I am seeing one doctest failure with all four patches applied on sage.math:\n\n```\nsage-3.0.alpha1$ ./sage -t -long devel/sage/sage/rings/polynomial/polynomial_integer_dense_ntl.pyx\nsage -t -long devel/sage/sage/rings/polynomial/polynomial_integer_dense_ntl.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/polynomial_integer_dense_ntl.py\", line 131:\n    sage: ZZ['x']({2^3: 1})\nExpected:\n    x^8\n    Traceback (most recent call last):\n    ...\n    OverflowError: Dense NTL integer polynomials have a maximum degree of 268435455\nGot:\n    x^8\n**********************************************************************\n```\n\nI would assume this is a 32bit vs. 64bit issue. Man, it is time for FLINT to take over Z[x].\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T13:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
@@ -590,7 +574,6 @@ Got:
     x^8
 **********************************************************************
 ```
-
 
 I would assume this is a 32bit vs. 64bit issue. Man, it is time for FLINT to take over Z[x].
 

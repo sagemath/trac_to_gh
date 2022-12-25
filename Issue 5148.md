@@ -106,7 +106,7 @@ Michael
 archive/issue_comments_039314.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> please let us know via a comment on the ticket that you have updated the Dev map. I will then properly close this ticket.\n\nHi, the \"problem\" is, there are now two websites, the current one and the new one. I've edited the current one and the new one, so you can close this ticket now. But I want to avoid this duplicate work in the future.\n\nAlso for the future, it would be easier if you, mvngu, just send me the new .xml file with all edits at once and no diffs.",
+    "body": "Replying to [comment:3 mabshoff]:\n> please let us know via a comment on the ticket that you have updated the Dev map. I will then properly close this ticket.\n\n\nHi, the \"problem\" is, there are now two websites, the current one and the new one. I've edited the current one and the new one, so you can close this ticket now. But I want to avoid this duplicate work in the future.\n\nAlso for the future, it would be easier if you, mvngu, just send me the new .xml file with all edits at once and no diffs.",
     "created_at": "2009-02-02T11:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5148",
     "type": "issue_comment",
@@ -117,6 +117,7 @@ archive/issue_comments_039314.json:
 
 Replying to [comment:3 mabshoff]:
 > please let us know via a comment on the ticket that you have updated the Dev map. I will then properly close this ticket.
+
 
 Hi, the "problem" is, there are now two websites, the current one and the new one. I've edited the current one and the new one, so you can close this ticket now. But I want to avoid this duplicate work in the future.
 
@@ -185,7 +186,7 @@ Michael
 archive/issue_comments_039317.json:
 ```json
 {
-    "body": "Replying to [comment:4 schilly]:\n> Also for the future, it would be easier if you, mvngu, just send me the new .xml file with all edits at once and no diffs. \nDo you mean a process like this: Download the XML file http://www.sagemath.org/res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC you on that ticket? Or email the modified XML file to your Gmail account?",
+    "body": "Replying to [comment:4 schilly]:\n> Also for the future, it would be easier if you, mvngu, just send me the new .xml file with all edits at once and no diffs. \n\nDo you mean a process like this: Download the XML file http://www.sagemath.org/res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC you on that ticket? Or email the modified XML file to your Gmail account?",
     "created_at": "2009-02-03T00:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5148",
     "type": "issue_comment",
@@ -196,6 +197,7 @@ archive/issue_comments_039317.json:
 
 Replying to [comment:4 schilly]:
 > Also for the future, it would be easier if you, mvngu, just send me the new .xml file with all edits at once and no diffs. 
+
 Do you mean a process like this: Download the XML file http://www.sagemath.org/res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC you on that ticket? Or email the modified XML file to your Gmail account?
 
 
@@ -205,7 +207,7 @@ Do you mean a process like this: Download the XML file http://www.sagemath.org/r
 archive/issue_comments_039318.json:
 ```json
 {
-    "body": "Replying to [comment:6 mvngu]:\n> Do you mean a process like this: Download the XML file http://www.sagemath.org\n> /res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC \n> you on that ticket? \n\nyes, attach to a ticket is the best way, because i can download it directly from trac into the web directory (1-step) and you know exactly what's on the web. i'm also not updating it, since i'm emailing you changes i would do - do don't worry with diffs! Therefore you can also bunch together all changes in one ticket.\n\ngreez h",
+    "body": "Replying to [comment:6 mvngu]:\n> Do you mean a process like this: Download the XML file http://www.sagemath.org\n> /res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC \n> you on that ticket? \n\n\nyes, attach to a ticket is the best way, because i can download it directly from trac into the web directory (1-step) and you know exactly what's on the web. i'm also not updating it, since i'm emailing you changes i would do - do don't worry with diffs! Therefore you can also bunch together all changes in one ticket.\n\ngreez h",
     "created_at": "2009-02-03T09:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5148",
     "type": "issue_comment",
@@ -218,6 +220,7 @@ Replying to [comment:6 mvngu]:
 > Do you mean a process like this: Download the XML file http://www.sagemath.org
 > /res/contributors.xml and edit it. Then attach the locally modified XML file to a ticket and CC 
 > you on that ticket? 
+
 
 yes, attach to a ticket is the best way, because i can download it directly from trac into the web directory (1-step) and you know exactly what's on the web. i'm also not updating it, since i'm emailing you changes i would do - do don't worry with diffs! Therefore you can also bunch together all changes in one ticket.
 
@@ -252,7 +255,7 @@ Michael
 archive/issue_comments_039320.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> I would still like to see diffs since they make it obvious what changed and in case something goes wrong it is much easier to see *what* happened when.\n> \n\nok, well, good point.",
+    "body": "Replying to [comment:8 mabshoff]:\n> I would still like to see diffs since they make it obvious what changed and in case something goes wrong it is much easier to see *what* happened when.\n> \n\n\nok, well, good point.",
     "created_at": "2009-02-03T15:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5148",
     "type": "issue_comment",
@@ -264,5 +267,6 @@ archive/issue_comments_039320.json:
 Replying to [comment:8 mabshoff]:
 > I would still like to see diffs since they make it obvious what changed and in case something goes wrong it is much easier to see *what* happened when.
 > 
+
 
 ok, well, good point.

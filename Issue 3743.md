@@ -65,7 +65,7 @@ archive/issue_events_008573.json:
 archive/issue_comments_026524.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nYou determine whether a user is an admin with\n\n```\n           if self.username == 'admin' \n```\n\nIt would be better to determine whether a user is an admin by using the account_type() method of users.  This is because a user with a username other than 'admin' can still be an admin; with the code you've written you would introduce a bug since suddenly certain admin-like things wouldn't work for such a user, but they should.",
+    "body": "REFEREE REPORT:\n\nYou determine whether a user is an admin with\n\n```\n           if self.username == 'admin' \n```\nIt would be better to determine whether a user is an admin by using the account_type() method of users.  This is because a user with a username other than 'admin' can still be an admin; with the code you've written you would introduce a bug since suddenly certain admin-like things wouldn't work for such a user, but they should.",
     "created_at": "2008-07-29T21:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3743",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ You determine whether a user is an admin with
 ```
            if self.username == 'admin' 
 ```
-
 It would be better to determine whether a user is an admin by using the account_type() method of users.  This is because a user with a username other than 'admin' can still be an admin; with the code you've written you would introduce a bug since suddenly certain admin-like things wouldn't work for such a user, but they should.
 
 

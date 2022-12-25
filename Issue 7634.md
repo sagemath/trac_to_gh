@@ -3,7 +3,7 @@
 archive/issues_007634.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [113.1 s]\n```\n\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [78.5 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [113.1 s]\n```\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [78.5 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
     "created_at": "2009-12-09T02:07:02Z",
     "labels": [
         "component: graph theory"
@@ -31,14 +31,12 @@ BEFORE:
 sage -t  "devel/sage-main/sage/graphs/graph.py"             
 	 [113.1 s]
 ```
-
 AFTER:
 
 ```
 sage -t  "devel/sage-main/sage/graphs/graph.py"             
 	 [78.5 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7634
 
@@ -51,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7634
 archive/issue_comments_065110.json:
 ```json
 {
-    "body": "Hmmm... When applying your patch here is what I get :\n\n```\n~/sage/sage-A/sage/graphs$ sage -t graph.py \nsage -t  \"devel/sage-A/sage/graphs/graph.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [360.5 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-A/sage/graphs/graph.py\"\nTotal time for all tests: 360.5 seconds\n```\n\nI know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? \n\nNathann",
+    "body": "Hmmm... When applying your patch here is what I get :\n\n```\n~/sage/sage-A/sage/graphs$ sage -t graph.py \nsage -t  \"devel/sage-A/sage/graphs/graph.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [360.5 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-A/sage/graphs/graph.py\"\nTotal time for all tests: 360.5 seconds\n```\nI know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? \n\nNathann",
     "created_at": "2009-12-09T10:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ The following tests failed:
         sage -t  "devel/sage-A/sage/graphs/graph.py"
 Total time for all tests: 360.5 seconds
 ```
-
 I know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? 
 
 Nathann
@@ -108,7 +105,7 @@ Changing status from new to needs_info.
 archive/issue_comments_065112.json:
 ```json
 {
-    "body": "Hmmm, it seems to come from the docstring \n\n```\nG = graphs.CubeGraph(8)\nH = G.distance_graph([1,3,5,7])\n```\n\n\nWhich is *very* long !",
+    "body": "Hmmm, it seems to come from the docstring \n\n```\nG = graphs.CubeGraph(8)\nH = G.distance_graph([1,3,5,7])\n```\n\nWhich is *very* long !",
     "created_at": "2009-12-09T11:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -124,7 +121,6 @@ G = graphs.CubeGraph(8)
 H = G.distance_graph([1,3,5,7])
 ```
 
-
 Which is *very* long !
 
 
@@ -134,7 +130,7 @@ Which is *very* long !
 archive/issue_comments_065113.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>         sage -t  \"devel/sage-A/sage/graphs/graph.py\"\n> Total time for all tests: 360.5 seconds\n> }}}\n> I know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? \n\nI would try this :)\n\n\n```\nsage -t -verbose graph.py\n```\n",
+    "body": "Replying to [comment:2 ncohen]:\n> \n> ---\n> The following tests failed:\n> \n> \n>         sage -t  \"devel/sage-A/sage/graphs/graph.py\"\n> Total time for all tests: 360.5 seconds\n> }}}\n> I know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? \n\n\nI would try this :)\n\n```\nsage -t -verbose graph.py\n```",
     "created_at": "2009-12-09T11:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -144,7 +140,8 @@ archive/issue_comments_065113.json:
 ```
 
 Replying to [comment:2 ncohen]:
-> ----------------------------------------------------------------------
+> 
+> ---
 > The following tests failed:
 > 
 > 
@@ -153,13 +150,12 @@ Replying to [comment:2 ncohen]:
 > }}}
 > I know that this could not give you much information, but I do not know of any way to make -t more verbose... any idea ? 
 
-I would try this :)
 
+I would try this :)
 
 ```
 sage -t -verbose graph.py
 ```
-
 
 
 
@@ -244,7 +240,7 @@ I guess it should be somewhere on the ticket that #7651 should be taken care of 
 archive/issue_comments_065118.json:
 ```json
 {
-    "body": "With the patch from #7640, it gives :\n\nBEFORE:\n\n```\nG = graphs.CubeGraph(8)\nsage: time a=G.distance_graph([1,3,5,7])\nCPU times: user 8.15 s, sys: 0.03 s, total: 8.17 s\nWall time: 8.18 s\n```\n\n\nAFTER:\n\n```\nG = graphs.CubeGraph(8)\nsage: time a=G.distance_graph([1,3,5,7])\nCPU times: user 6.51 s, sys: 0.03 s, total: 6.55 s\nWall time: 6.56 s\n```\n",
+    "body": "With the patch from #7640, it gives :\n\nBEFORE:\n\n```\nG = graphs.CubeGraph(8)\nsage: time a=G.distance_graph([1,3,5,7])\nCPU times: user 8.15 s, sys: 0.03 s, total: 8.17 s\nWall time: 8.18 s\n```\n\nAFTER:\n\n```\nG = graphs.CubeGraph(8)\nsage: time a=G.distance_graph([1,3,5,7])\nCPU times: user 6.51 s, sys: 0.03 s, total: 6.55 s\nWall time: 6.56 s\n```",
     "created_at": "2009-12-12T18:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
@@ -264,7 +260,6 @@ CPU times: user 8.15 s, sys: 0.03 s, total: 8.17 s
 Wall time: 8.18 s
 ```
 
-
 AFTER:
 
 ```
@@ -273,7 +268,6 @@ sage: time a=G.distance_graph([1,3,5,7])
 CPU times: user 6.51 s, sys: 0.03 s, total: 6.55 s
 Wall time: 6.56 s
 ```
-
 
 
 

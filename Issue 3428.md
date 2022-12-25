@@ -3,7 +3,7 @@
 archive/issues_003428.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAttached patch fixes this:\n\n\n```\nsage: R.<x> = ZZ[]\nsage: 0//(2*x)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n...\n/home/burcin/work/sage/sage-3.0.2/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.quo_rem (sage/rings/polynomial/polynomial_integer_dense_ntl.cpp:4638)()\n\nArithmeticError: division not exact in Z[x] (consider coercing to Q[x] first) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3428\n\n",
+    "body": "Assignee: somebody\n\nAttached patch fixes this:\n\n```\nsage: R.<x> = ZZ[]\nsage: 0//(2*x)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n...\n/home/burcin/work/sage/sage-3.0.2/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.quo_rem (sage/rings/polynomial/polynomial_integer_dense_ntl.cpp:4638)()\n\nArithmeticError: division not exact in Z[x] (consider coercing to Q[x] first) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3428\n\n",
     "created_at": "2008-06-15T19:34:54Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 Attached patch fixes this:
 
-
 ```
 sage: R.<x> = ZZ[]
 sage: 0//(2*x)
@@ -32,7 +31,6 @@ ArithmeticError                           Traceback (most recent call last)
 
 ArithmeticError: division not exact in Z[x] (consider coercing to Q[x] first) 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3428
 

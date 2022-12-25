@@ -3,7 +3,7 @@
 archive/issues_008991.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  alubovsky\n\n\n```\nhg qinit\nhg -f qnew\n```\n\n\nare deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8991\n\n",
+    "body": "Assignee: mvngu\n\nCC:  alubovsky\n\n```\nhg qinit\nhg -f qnew\n```\n\nare deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8991\n\n",
     "created_at": "2010-05-19T00:09:26Z",
     "labels": [
         "component: documentation",
@@ -21,12 +21,10 @@ Assignee: mvngu
 
 CC:  alubovsky
 
-
 ```
 hg qinit
 hg -f qnew
 ```
-
 
 are deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.
 
@@ -160,7 +158,7 @@ I should add, i applied the patch to the latest version of sage-combinat reposit
 archive/issue_comments_082987.json:
 ```json
 {
-    "body": "Replying to [comment:4 alubovsky]:\n> (not sure what mq changes are accurately reported means.)\n\nI was just suggesting you might note the *content* of the changes was correct.  I don't have Mercurial 1.5 installed anywhere, so was working off documantation I could find online (which wsn't always helpful).\n\nIn this case, I think the sage-combinat repo is probably OK.",
+    "body": "Replying to [comment:4 alubovsky]:\n> (not sure what mq changes are accurately reported means.)\n\n\nI was just suggesting you might note the *content* of the changes was correct.  I don't have Mercurial 1.5 installed anywhere, so was working off documantation I could find online (which wsn't always helpful).\n\nIn this case, I think the sage-combinat repo is probably OK.",
     "created_at": "2010-05-19T05:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8991",
     "type": "issue_comment",
@@ -171,6 +169,7 @@ archive/issue_comments_082987.json:
 
 Replying to [comment:4 alubovsky]:
 > (not sure what mq changes are accurately reported means.)
+
 
 I was just suggesting you might note the *content* of the changes was correct.  I don't have Mercurial 1.5 installed anywhere, so was working off documantation I could find online (which wsn't always helpful).
 

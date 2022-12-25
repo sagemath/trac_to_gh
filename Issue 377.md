@@ -3,7 +3,7 @@
 archive/issues_000377.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nswas@ubuntu:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.5.2-alpha, Release Date: 2007-05-20                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a> = NumberField(x^3 + 2/3*x + 1)\nsage: a^3 + a\nMulMod: bad args\nAborted\nwas@ubuntu:~$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/377\n\n",
+    "body": "Assignee: somebody\n\n```\nswas@ubuntu:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.5.2-alpha, Release Date: 2007-05-20                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a> = NumberField(x^3 + 2/3*x + 1)\nsage: a^3 + a\nMulMod: bad args\nAborted\nwas@ubuntu:~$\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/377\n\n",
     "created_at": "2007-05-23T18:35:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000377.json:
 ```
 Assignee: somebody
 
-
 ```
 swas@ubuntu:~$ sage
 ----------------------------------------------------------------------
@@ -30,7 +29,6 @@ MulMod: bad args
 Aborted
 was@ubuntu:~$
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/377
 

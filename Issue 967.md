@@ -3,7 +3,7 @@
 archive/issues_000967.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe attached patches implement inplace operators for `IntegerMod`, `FiniteFieldElement_givaro` and `MPolynomial_libsingular`.\n\nSome timings for GF(q)\n\nBefore:\n\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 6.79 ms per loop\n```\n\n\nAfter:\n\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 2.05 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/967\n\n",
+    "body": "Assignee: somebody\n\nThe attached patches implement inplace operators for `IntegerMod`, `FiniteFieldElement_givaro` and `MPolynomial_libsingular`.\n\nSome timings for GF(q)\n\nBefore:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 6.79 ms per loop\n```\n\nAfter:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 2.05 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/967\n\n",
     "created_at": "2007-10-21T22:37:50Z",
     "labels": [
         "component: basic arithmetic"
@@ -23,7 +23,6 @@ Some timings for GF(q)
 
 Before:
 
-
 ```
 sage: k.<a> = GF(2^15)
 sage: A = [a^i for i in range(k.order())]
@@ -31,9 +30,7 @@ sage: %timeit _ = sum(A)
 100 loops, best of 3: 6.79 ms per loop
 ```
 
-
 After:
-
 
 ```
 sage: k.<a> = GF(2^15)
@@ -41,7 +38,6 @@ sage: A = [a^i for i in range(k.order())]
 sage: %timeit _ = sum(A)
 100 loops, best of 3: 2.05 ms per loop
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/967
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2351
 archive/issue_comments_015758.json:
 ```json
 {
-    "body": "This requires somehow updating the apache-ssl certificate on sage.math and restarting apachessl.  This happens in \n\n```\n/etc/apache-ssl\n```\n\non sage.math.",
+    "body": "This requires somehow updating the apache-ssl certificate on sage.math and restarting apachessl.  This happens in \n\n```\n/etc/apache-ssl\n```\non sage.math.",
     "created_at": "2008-03-01T06:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -47,7 +47,6 @@ This requires somehow updating the apache-ssl certificate on sage.math and resta
 ```
 /etc/apache-ssl
 ```
-
 on sage.math.
 
 
@@ -57,7 +56,7 @@ on sage.math.
 archive/issue_comments_015759.json:
 ```json
 {
-    "body": "From http://www.apache-ssl.org/\n\n\n```\nNow I've got my server installed, how do I create a test certificate?\n\nStep one - create the key and request:\n\n  openssl req -new > new.cert.csr\n\nStep two - remove the passphrase from the key (optional):\n\n  openssl rsa -in privkey.pem -out new.cert.key\n\nStep three - convert request into signed cert:\n\n   openssl x509 -in new.cert.csr -out new.cert.cert -req -signkey new.cert.key -days 365\n\nThe Apache-SSL directives that you need to use the resulting cert are:\n\n  SSLCertificateFile /path/to/certs/new.cert.cert\n  SSLCertificateKeyFile /path/to/certs/new.cert.key\n\nHow do I create a client certificate?\n\nStep one - create a CA certificate/key pair, as above.\n\nStep two - sign the client request with the CA key:\n\n  openssl x509 -req -in client.cert.csr -out client.cert.cert -signkey my.CA.key -CA my.CA.cert -CAkey my.CA.key -CAcreateserial -days 365\n\nStep three - issue the file 'client.cert.cert' to the requester.\n\nThe Apache-SSL directives that you need to validate against this cert are:\n\n  SSLCACertificateFile /path/to/certs/my.CA.cert\n  SSLVerifyClient 2\n```\n",
+    "body": "From http://www.apache-ssl.org/\n\n```\nNow I've got my server installed, how do I create a test certificate?\n\nStep one - create the key and request:\n\n  openssl req -new > new.cert.csr\n\nStep two - remove the passphrase from the key (optional):\n\n  openssl rsa -in privkey.pem -out new.cert.key\n\nStep three - convert request into signed cert:\n\n   openssl x509 -in new.cert.csr -out new.cert.cert -req -signkey new.cert.key -days 365\n\nThe Apache-SSL directives that you need to use the resulting cert are:\n\n  SSLCertificateFile /path/to/certs/new.cert.cert\n  SSLCertificateKeyFile /path/to/certs/new.cert.key\n\nHow do I create a client certificate?\n\nStep one - create a CA certificate/key pair, as above.\n\nStep two - sign the client request with the CA key:\n\n  openssl x509 -req -in client.cert.csr -out client.cert.cert -signkey my.CA.key -CA my.CA.cert -CAkey my.CA.key -CAcreateserial -days 365\n\nStep three - issue the file 'client.cert.cert' to the requester.\n\nThe Apache-SSL directives that you need to validate against this cert are:\n\n  SSLCACertificateFile /path/to/certs/my.CA.cert\n  SSLVerifyClient 2\n```",
     "created_at": "2008-03-02T01:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -67,7 +66,6 @@ archive/issue_comments_015759.json:
 ```
 
 From http://www.apache-ssl.org/
-
 
 ```
 Now I've got my server installed, how do I create a test certificate?
@@ -107,13 +105,12 @@ The Apache-SSL directives that you need to validate against this cert are:
 
 
 
-
 ---
 
 archive/issue_comments_015760.json:
 ```json
 {
-    "body": "This is still a problem, at least according to Firefox 3.0b4:\n\n```\nSecure Connection Failed\n\nsagenb.com uses an invalid security certificate.\n\nThe certificate is not trusted because it is self signed.\nThe certificate is only valid for www.sagenb.org.\nThe certificate expired on 02/20/2008 06:22 AM.\n\n(Error code: sec_error_expired_issuer_certificate)\n```\n",
+    "body": "This is still a problem, at least according to Firefox 3.0b4:\n\n```\nSecure Connection Failed\n\nsagenb.com uses an invalid security certificate.\n\nThe certificate is not trusted because it is self signed.\nThe certificate is only valid for www.sagenb.org.\nThe certificate expired on 02/20/2008 06:22 AM.\n\n(Error code: sec_error_expired_issuer_certificate)\n```",
     "created_at": "2008-03-19T04:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -135,7 +132,6 @@ The certificate expired on 02/20/2008 06:22 AM.
 
 (Error code: sec_error_expired_issuer_certificate)
 ```
-
 
 
 
@@ -197,7 +193,7 @@ You have to fix this on sagemath.org by editing files in /etc/apache-ssl, I thin
 archive/issue_comments_015763.json:
 ```json
 {
-    "body": "I may have just fixed this by typing\n\n```\nsage:/etc/apache-ssl# openssl req -new -x509 -days 365 -nodes -out apache.pem -keyout apache.pem\n```\n\n\non sage.math.washington.edu.  Can somebody check if the certificate is now no longer expired.  If so, this ticket can be closed.",
+    "body": "I may have just fixed this by typing\n\n```\nsage:/etc/apache-ssl# openssl req -new -x509 -days 365 -nodes -out apache.pem -keyout apache.pem\n```\n\non sage.math.washington.edu.  Can somebody check if the certificate is now no longer expired.  If so, this ticket can be closed.",
     "created_at": "2008-04-02T13:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -212,7 +208,6 @@ I may have just fixed this by typing
 sage:/etc/apache-ssl# openssl req -new -x509 -days 365 -nodes -out apache.pem -keyout apache.pem
 ```
 
-
 on sage.math.washington.edu.  Can somebody check if the certificate is now no longer expired.  If so, this ticket can be closed.
 
 
@@ -222,7 +217,7 @@ on sage.math.washington.edu.  Can somebody check if the certificate is now no lo
 archive/issue_comments_015764.json:
 ```json
 {
-    "body": "I still get after a clearing of the cache and a couple reloads:\n\n```\nwww.sagenb.org uses an invalid security certificate.\n\nThe certificate is not trusted because it is self signed.\nThe certificate expired on 02/20/2008 06:22 AM.\n\n(Error code: sec_error_expired_issuer_certificate)\n```\n\nMaybe you need to restart the webserver?\n\nCheers,\n\nMichael",
+    "body": "I still get after a clearing of the cache and a couple reloads:\n\n```\nwww.sagenb.org uses an invalid security certificate.\n\nThe certificate is not trusted because it is self signed.\nThe certificate expired on 02/20/2008 06:22 AM.\n\n(Error code: sec_error_expired_issuer_certificate)\n```\nMaybe you need to restart the webserver?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T13:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -241,7 +236,6 @@ The certificate expired on 02/20/2008 06:22 AM.
 
 (Error code: sec_error_expired_issuer_certificate)
 ```
-
 Maybe you need to restart the webserver?
 
 Cheers,

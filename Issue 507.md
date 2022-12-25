@@ -3,7 +3,7 @@
 archive/issues_000507.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\n\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
+    "body": "Assignee: @williamstein\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
     "created_at": "2007-08-29T08:16:40Z",
     "labels": [
         "component: interfaces",
@@ -24,7 +24,6 @@ Assignee: @williamstein
 solve([x==1], x)
 ```
 
-
 2. Run it like so:
 
 ```
@@ -32,13 +31,11 @@ solve([x==1], x)
   Exception exceptions.AttributeError: "'NoneType' object has no attribute 'ExceptionPexpect'" in  ignored
 ```
 
-
 3. If you put instead
 
 ```
 print solve([x==1], x)
 ```
-
 then everything works fine.
 
 Clearly there is a bug there, probably with quitting the pexpect interface to maxima. 
@@ -75,7 +72,7 @@ I've attached a work-around for this bug (6116.patch). It is probably best to un
 archive/issue_comments_002531.json:
 ```json
 {
-    "body": "\n```\n[09:58] <mabshoff> But it would still be interesting to see what causes the problem.\n[09:59] <janwil> yes, it's a mystery to me right now ...\n[09:59] <mabshoff> Not only to you :)\n[09:59] <janwil> :)\n[10:01] <mhansen_> Yeah, that worked for me.\n[10:01] <mabshoff> malb's patch?\n[10:02] <mhansen_> Yep.\n[10:02] <mabshoff> Well, we should get it merged in 2.8.4.3 then. We can always revert it in case it causes \n[10:02] <mhansen_> I was also getting that error when I was running some of the tests with nose.   The tests would pass, but those would come up at the end.\n[10:03] <mabshoff> trouble on a range of platforms.\n[10:03] <mabshoff> Interesting.\n```\n",
+    "body": "```\n[09:58] <mabshoff> But it would still be interesting to see what causes the problem.\n[09:59] <janwil> yes, it's a mystery to me right now ...\n[09:59] <mabshoff> Not only to you :)\n[09:59] <janwil> :)\n[10:01] <mhansen_> Yeah, that worked for me.\n[10:01] <mabshoff> malb's patch?\n[10:02] <mhansen_> Yep.\n[10:02] <mabshoff> Well, we should get it merged in 2.8.4.3 then. We can always revert it in case it causes \n[10:02] <mhansen_> I was also getting that error when I was running some of the tests with nose.   The tests would pass, but those would come up at the end.\n[10:03] <mabshoff> trouble on a range of platforms.\n[10:03] <mabshoff> Interesting.\n```",
     "created_at": "2007-09-17T08:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/507",
     "type": "issue_comment",
@@ -83,7 +80,6 @@ archive/issue_comments_002531.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [09:58] <mabshoff> But it would still be interesting to see what causes the problem.
@@ -98,7 +94,6 @@ archive/issue_comments_002531.json:
 [10:03] <mabshoff> trouble on a range of platforms.
 [10:03] <mabshoff> Interesting.
 ```
-
 
 
 

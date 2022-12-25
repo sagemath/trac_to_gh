@@ -99,7 +99,7 @@ Changing assignee from mabshoff to @robertwb.
 archive/issue_comments_011366.json:
 ```json
 {
-    "body": "With Sage 2.10 [more or less final] I get:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local//include -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local//include/csage -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/devel//sage/sage/ext -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local/include/python2.5 -c sage/libs/pari/gen.c -o build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\nsage/libs/pari/gen.c: In function \u2018__pyx_tp_clear_4sage_4libs_4pari_3gen_PariInstance\u2019:\nsage/libs/pari/gen.c:33063: error: invalid lvalue in assignment\nsage/libs/pari/gen.c:33066: error: invalid lvalue in assignment\nsage/libs/pari/gen.c:33069: error: invalid lvalue in assignment\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\nThis corresponds to:\n\n```\nstatic int __pyx_tp_clear_4sage_4libs_4pari_3gen_PariInstance(PyObject *o) {\n  struct __pyx_obj_4sage_4libs_4pari_3gen_PariInstance *p = (struct __pyx_obj_4sage_4libs_4pari_3gen_PariInstance *)o;\n  PyObject* tmp;\n  if (__pyx_ptype_4sage_9structure_11parent_base_ParentWithBase->tp_clear) {\n    __pyx_ptype_4sage_9structure_11parent_base_ParentWithBase->tp_clear(o);\n  }\n  tmp = ((PyObject*)p->ZERO);\n  ((PyObject*)p->ZERO) = Py_None; Py_INCREF(Py_None); [line 33063]\n  Py_XDECREF(tmp);\n  tmp = ((PyObject*)p->ONE);\n  ((PyObject*)p->ONE) = Py_None; Py_INCREF(Py_None);\n  Py_XDECREF(tmp);\n  tmp = ((PyObject*)p->TWO);\n  ((PyObject*)p->TWO) = Py_None; Py_INCREF(Py_None);\n  Py_XDECREF(tmp);\n  return 0;\n}\n```\n\n\nCheers,\n\nMichael",
+    "body": "With Sage 2.10 [more or less final] I get:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local//include -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local//include/csage -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/devel//sage/sage/ext -I/scratch/mabshoff/release-cycle/sage-2.10.alpha4/local/include/python2.5 -c sage/libs/pari/gen.c -o build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\nsage/libs/pari/gen.c: In function \u2018__pyx_tp_clear_4sage_4libs_4pari_3gen_PariInstance\u2019:\nsage/libs/pari/gen.c:33063: error: invalid lvalue in assignment\nsage/libs/pari/gen.c:33066: error: invalid lvalue in assignment\nsage/libs/pari/gen.c:33069: error: invalid lvalue in assignment\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\nThis corresponds to:\n\n```\nstatic int __pyx_tp_clear_4sage_4libs_4pari_3gen_PariInstance(PyObject *o) {\n  struct __pyx_obj_4sage_4libs_4pari_3gen_PariInstance *p = (struct __pyx_obj_4sage_4libs_4pari_3gen_PariInstance *)o;\n  PyObject* tmp;\n  if (__pyx_ptype_4sage_9structure_11parent_base_ParentWithBase->tp_clear) {\n    __pyx_ptype_4sage_9structure_11parent_base_ParentWithBase->tp_clear(o);\n  }\n  tmp = ((PyObject*)p->ZERO);\n  ((PyObject*)p->ZERO) = Py_None; Py_INCREF(Py_None); [line 33063]\n  Py_XDECREF(tmp);\n  tmp = ((PyObject*)p->ONE);\n  ((PyObject*)p->ONE) = Py_None; Py_INCREF(Py_None);\n  Py_XDECREF(tmp);\n  tmp = ((PyObject*)p->TWO);\n  ((PyObject*)p->TWO) = Py_None; Py_INCREF(Py_None);\n  Py_XDECREF(tmp);\n  return 0;\n}\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-18T05:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1801",
     "type": "issue_comment",
@@ -119,7 +119,6 @@ sage/libs/pari/gen.c:33069: error: invalid lvalue in assignment
 error: command 'gcc' failed with exit status 1
 sage: There was an error installing modified sage library code.
 ```
-
 This corresponds to:
 
 ```
@@ -141,7 +140,6 @@ static int __pyx_tp_clear_4sage_4libs_4pari_3gen_PariInstance(PyObject *o) {
   return 0;
 }
 ```
-
 
 Cheers,
 

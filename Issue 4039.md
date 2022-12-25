@@ -3,7 +3,7 @@
 archive/issues_004039.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTwo different ways to do partial fractions should have the same function name:\n\n\n```\nsage: x=polygen(QQ)\nsage: f=(x - 3)/((x +1)*(x-1))\nsage: f.partial_fraction_decomposition()\n(0, [-1/(x - 1), 2/(x + 1)])\nsage: x=var('x')\nsage: f=(x - 3)/((x +1)*(x-1))\nsage: f.partial_fraction()\n2/(x + 1) - 1/(x - 1)\n```\n\n\nAn added bonus would be if they gave similar output (currently one gives a list, the other gives an expression).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4039\n\n",
+    "body": "Assignee: tbd\n\nTwo different ways to do partial fractions should have the same function name:\n\n```\nsage: x=polygen(QQ)\nsage: f=(x - 3)/((x +1)*(x-1))\nsage: f.partial_fraction_decomposition()\n(0, [-1/(x - 1), 2/(x + 1)])\nsage: x=var('x')\nsage: f=(x - 3)/((x +1)*(x-1))\nsage: f.partial_fraction()\n2/(x + 1) - 1/(x - 1)\n```\n\nAn added bonus would be if they gave similar output (currently one gives a list, the other gives an expression).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4039\n\n",
     "created_at": "2008-09-02T15:41:20Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 Two different ways to do partial fractions should have the same function name:
 
-
 ```
 sage: x=polygen(QQ)
 sage: f=(x - 3)/((x +1)*(x-1))
@@ -31,7 +30,6 @@ sage: f=(x - 3)/((x +1)*(x-1))
 sage: f.partial_fraction()
 2/(x + 1) - 1/(x - 1)
 ```
-
 
 An added bonus would be if they gave similar output (currently one gives a list, the other gives an expression).
 

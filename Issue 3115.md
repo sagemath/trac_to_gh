@@ -3,7 +3,7 @@
 archive/issues_003115.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n\n```\nsage: R = RealField(sci_not=True)\nsage: a = R(23.4)\nsage: a\n2.34000000000000e1\nsage: a = R(234.5)\nsage: a\n2.34500000000000e2\n```\n\n\nThe exponent should only be a multiple of three for readability, because of units and its prefix names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3115\n\n",
+    "body": "Assignee: jkantor\n\n```\nsage: R = RealField(sci_not=True)\nsage: a = R(23.4)\nsage: a\n2.34000000000000e1\nsage: a = R(234.5)\nsage: a\n2.34500000000000e2\n```\n\nThe exponent should only be a multiple of three for readability, because of units and its prefix names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3115\n\n",
     "created_at": "2008-05-06T22:25:57Z",
     "labels": [
         "component: numerical",
@@ -18,7 +18,6 @@ archive/issues_003115.json:
 ```
 Assignee: jkantor
 
-
 ```
 sage: R = RealField(sci_not=True)
 sage: a = R(23.4)
@@ -28,7 +27,6 @@ sage: a = R(234.5)
 sage: a
 2.34500000000000e2
 ```
-
 
 The exponent should only be a multiple of three for readability, because of units and its prefix names.
 
@@ -79,7 +77,7 @@ I think it might be useful to unify the repr mechanism for RDF, CDF, RR, and CC.
 archive/issue_comments_021523.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> \"scientific notation\" ... \"engineering notation\" \n\nyes, you are right. regarding calculators something else comes to my mind, too: displaying rounded values. internally it calculates with doubles and full precision, but it  just displays 3 or 4 significant digits. since in engeneering everything is just a \"real\" value, too many digits make no sense. The most general implementation would then be a format string or parameter list to indicate the number of significant digits and a characterization of the exponent: \"4Esci\" or \"3Eeng\" or as parameter list: significant=4, =3, sci_not=\"sci\", =\"eng\" - e.g. resulting in 13.4e3 for 13391.131423 formatted as significant=3 sci_not=\"eng\"",
+    "body": "Replying to [comment:1 jason]:\n> \"scientific notation\" ... \"engineering notation\" \n\n\nyes, you are right. regarding calculators something else comes to my mind, too: displaying rounded values. internally it calculates with doubles and full precision, but it  just displays 3 or 4 significant digits. since in engeneering everything is just a \"real\" value, too many digits make no sense. The most general implementation would then be a format string or parameter list to indicate the number of significant digits and a characterization of the exponent: \"4Esci\" or \"3Eeng\" or as parameter list: significant=4, =3, sci_not=\"sci\", =\"eng\" - e.g. resulting in 13.4e3 for 13391.131423 formatted as significant=3 sci_not=\"eng\"",
     "created_at": "2008-05-07T08:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
@@ -90,6 +88,7 @@ archive/issue_comments_021523.json:
 
 Replying to [comment:1 jason]:
 > "scientific notation" ... "engineering notation" 
+
 
 yes, you are right. regarding calculators something else comes to my mind, too: displaying rounded values. internally it calculates with doubles and full precision, but it  just displays 3 or 4 significant digits. since in engeneering everything is just a "real" value, too many digits make no sense. The most general implementation would then be a format string or parameter list to indicate the number of significant digits and a characterization of the exponent: "4Esci" or "3Eeng" or as parameter list: significant=4, =3, sci_not="sci", ="eng" - e.g. resulting in 13.4e3 for 13391.131423 formatted as significant=3 sci_not="eng"
 
@@ -142,7 +141,7 @@ I've been hoping that "printers" (briefly mentioned at the end of http://wiki.sa
 archive/issue_comments_021526.json:
 ```json
 {
-    "body": "cwitty, you are right. i don't really understand your note on that page, but my idea now is, to have a formatter object, that is independent of the number class. then, one could set the formatter in the constructor or later with setFormatter(..).\n\nmockup for engineering, 6 significant digits:\n\n\n```\nf = NumberFormatter(\"#.#####\", exponent=\"engineering\")\n[or similar]\nf = NumberFormatter(significant=6, exponent=\"engineering\")\nr = RealField(formatter=f)\n[or later]\nr.setFormatter(f)\n```\n\n\nwith such a formatter assigned, the string representation is passed through that parser.",
+    "body": "cwitty, you are right. i don't really understand your note on that page, but my idea now is, to have a formatter object, that is independent of the number class. then, one could set the formatter in the constructor or later with setFormatter(..).\n\nmockup for engineering, 6 significant digits:\n\n```\nf = NumberFormatter(\"#.#####\", exponent=\"engineering\")\n[or similar]\nf = NumberFormatter(significant=6, exponent=\"engineering\")\nr = RealField(formatter=f)\n[or later]\nr.setFormatter(f)\n```\n\nwith such a formatter assigned, the string representation is passed through that parser.",
     "created_at": "2008-05-10T20:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
@@ -155,7 +154,6 @@ cwitty, you are right. i don't really understand your note on that page, but my 
 
 mockup for engineering, 6 significant digits:
 
-
 ```
 f = NumberFormatter("#.#####", exponent="engineering")
 [or similar]
@@ -164,7 +162,6 @@ r = RealField(formatter=f)
 [or later]
 r.setFormatter(f)
 ```
-
 
 with such a formatter assigned, the string representation is passed through that parser.
 
@@ -175,7 +172,7 @@ with such a formatter assigned, the string representation is passed through that
 archive/issue_comments_021527.json:
 ```json
 {
-    "body": "OK, it looks like I totally misunderstood the \"printers\" idea.\n\nMy contention is that configurable printing should be associated with the top-level read-eval-print loop (that is, basically in a global variable), rather than being associated with particular parents (fields/rings/etc.)  It is the idea of having parents that differ only in how elements print that I consider painful.\n\nConsider:\n\n```\nf1 = NumberFormatter(significant=5, exponent=\"engineering\")\nf2 = NumberFormatter(significant=6, exponent=\"engineering\")\nr1 = RealField(formatter=f1)\nr1b = RealField(formatter=f1)\nr2 = RealField(formatter=f2)\n```\n\nDo we have `r1==RR`?  Do we have `r1==r1b`?  Do we have `r1==r2`?  Do we have `r1 is r1b`?  Do any of these change if we do `r1.setFormatter(f2)`?\n\n(Note that if we have `r1 is r1b` and we also have `setFormatter`, then you can accidentally change the formatting of an existing field when you think you're creating a new field and changing the formatting of the new field.  On the other hand, if we don't have `r1 is r1b`, then we can't cache field creation, which is a horrible performance hit; I've seen Sage programs that speed up by a factor of 2 when field creation is cached.)\n\nHow does `r1(pi)+r2(e)` print?\n\nCan you set the formatter on the global `RR`?  If so, does that also change the printing of `CC`?\n\nHow should zeta_symmetric(2/3) print?  (Currently this creates a brand new RealField() and the return value will print according to that RealField().)",
+    "body": "OK, it looks like I totally misunderstood the \"printers\" idea.\n\nMy contention is that configurable printing should be associated with the top-level read-eval-print loop (that is, basically in a global variable), rather than being associated with particular parents (fields/rings/etc.)  It is the idea of having parents that differ only in how elements print that I consider painful.\n\nConsider:\n\n```\nf1 = NumberFormatter(significant=5, exponent=\"engineering\")\nf2 = NumberFormatter(significant=6, exponent=\"engineering\")\nr1 = RealField(formatter=f1)\nr1b = RealField(formatter=f1)\nr2 = RealField(formatter=f2)\n```\nDo we have `r1==RR`?  Do we have `r1==r1b`?  Do we have `r1==r2`?  Do we have `r1 is r1b`?  Do any of these change if we do `r1.setFormatter(f2)`?\n\n(Note that if we have `r1 is r1b` and we also have `setFormatter`, then you can accidentally change the formatting of an existing field when you think you're creating a new field and changing the formatting of the new field.  On the other hand, if we don't have `r1 is r1b`, then we can't cache field creation, which is a horrible performance hit; I've seen Sage programs that speed up by a factor of 2 when field creation is cached.)\n\nHow does `r1(pi)+r2(e)` print?\n\nCan you set the formatter on the global `RR`?  If so, does that also change the printing of `CC`?\n\nHow should zeta_symmetric(2/3) print?  (Currently this creates a brand new RealField() and the return value will print according to that RealField().)",
     "created_at": "2008-05-10T21:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
@@ -197,7 +194,6 @@ r1 = RealField(formatter=f1)
 r1b = RealField(formatter=f1)
 r2 = RealField(formatter=f2)
 ```
-
 Do we have `r1==RR`?  Do we have `r1==r1b`?  Do we have `r1==r2`?  Do we have `r1 is r1b`?  Do any of these change if we do `r1.setFormatter(f2)`?
 
 (Note that if we have `r1 is r1b` and we also have `setFormatter`, then you can accidentally change the formatting of an existing field when you think you're creating a new field and changing the formatting of the new field.  On the other hand, if we don't have `r1 is r1b`, then we can't cache field creation, which is a horrible performance hit; I've seen Sage programs that speed up by a factor of 2 when field creation is cached.)

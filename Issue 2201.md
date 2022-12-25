@@ -3,7 +3,7 @@
 archive/issues_002201.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @jaapspies\n\nJaap reported the following doctest failure on sage-devel:\n\n\n```\njaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************\nFile \"number_field.py\", line 2087:\n    sage: F.reduced_basis()\nExpected:\n    [1, alpha, alpha^2 - 15*alpha + 1, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\nGot:\n    [1, alpha, alpha^2 - 15*alpha, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_60\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [33.8 s]\nexit code: 256\n```\n\n\nThis is due to different precision getting used to compute an embedding somewhere -- the fix was to add an optional `prec` argument, which is useful in its own right, and then make the doctests call with a specific precision. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2201\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @jaapspies\n\nJaap reported the following doctest failure on sage-devel:\n\n```\njaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************\nFile \"number_field.py\", line 2087:\n    sage: F.reduced_basis()\nExpected:\n    [1, alpha, alpha^2 - 15*alpha + 1, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\nGot:\n    [1, alpha, alpha^2 - 15*alpha, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_60\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [33.8 s]\nexit code: 256\n```\n\nThis is due to different precision getting used to compute an embedding somewhere -- the fix was to add an optional `prec` argument, which is useful in its own right, and then make the doctests call with a specific precision. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2201\n\n",
     "created_at": "2008-02-18T01:24:56Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ CC:  @jaapspies
 
 Jaap reported the following doctest failure on sage-devel:
 
-
 ```
 jaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py
 sage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************
@@ -41,7 +40,6 @@ For whitespace errors, see the file .doctest_number_field.py
          [33.8 s]
 exit code: 256
 ```
-
 
 This is due to different precision getting used to compute an embedding somewhere -- the fix was to add an optional `prec` argument, which is useful in its own right, and then make the doctests call with a specific precision. 
 
@@ -130,7 +128,7 @@ Jaap
 archive/issue_comments_014458.json:
 ```json
 {
-    "body": "Just applied the patch by hand and it works:\n\n\n```\n\n[jaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py\n         [21.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 21.3 seconds\n\n```\n",
+    "body": "Just applied the patch by hand and it works:\n\n```\n\n[jaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py\n         [21.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 21.3 seconds\n\n```",
     "created_at": "2008-02-18T12:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2201",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ archive/issue_comments_014458.json:
 ```
 
 Just applied the patch by hand and it works:
-
 
 ```
 
@@ -153,7 +150,6 @@ All tests passed!
 Total time for all tests: 21.3 seconds
 
 ```
-
 
 
 

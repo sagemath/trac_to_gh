@@ -239,7 +239,7 @@ Merged 9467.patch and 9468.patch in Sage 3.0.alpha5
 archive/issue_comments_019779.json:
 ```json
 {
-    "body": "Replying to [comment:5 AlexGhitza]:\n> Patches look good.\nThanks!  and sorry for the factor_integer() problem which these caused.  John",
+    "body": "Replying to [comment:5 AlexGhitza]:\n> Patches look good.\n\nThanks!  and sorry for the factor_integer() problem which these caused.  John",
     "created_at": "2008-04-14T13:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2880",
     "type": "issue_comment",
@@ -250,4 +250,5 @@ archive/issue_comments_019779.json:
 
 Replying to [comment:5 AlexGhitza]:
 > Patches look good.
+
 Thanks!  and sorry for the factor_integer() problem which these caused.  John

@@ -56,7 +56,7 @@ vertex_colors might also suffer from the same problem...
 archive/issue_comments_046659.json:
 ```json
 {
-    "body": "Attachment [trac_5914.patch](tarball://root/attachments/some-uuid/ticket5914/trac_5914.patch) by @williamstein created at 2009-04-28 14:00:57\n\nQuick remark: If you do \n\n```\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':(0,1)})\n```\n\nas you put in the ticket description, you get an error.  The proper input is:\n\n```\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':[(0,1)]})\n```\n\n\nThis patch works fine.",
+    "body": "Attachment [trac_5914.patch](tarball://root/attachments/some-uuid/ticket5914/trac_5914.patch) by @williamstein created at 2009-04-28 14:00:57\n\nQuick remark: If you do \n\n```\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':(0,1)})\n```\nas you put in the ticket description, you get an error.  The proper input is:\n\n```\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':[(0,1)]})\n```\n\nThis patch works fine.",
     "created_at": "2009-04-28T14:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5914",
     "type": "issue_comment",
@@ -73,14 +73,12 @@ Quick remark: If you do
 sage: G = graphs.CompleteGraph(5)
 sage: G.show(edge_colors={'red':(0,1)})
 ```
-
 as you put in the ticket description, you get an error.  The proper input is:
 
 ```
 sage: G = graphs.CompleteGraph(5)
 sage: G.show(edge_colors={'red':[(0,1)]})
 ```
-
 
 This patch works fine.
 

@@ -3,7 +3,7 @@
 archive/issues_001640.json:
 ```json
 {
-    "body": "Assignee: tba\n\nDocumentation missing:\n\n```\nE = EllipticCurve('5077a')\nE.heegner_discriminants?\n```\n\n\n\nsays\n\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\nType:        <type 'instancemethod'>\nDefinition:  E.heegner_discriminants(bound)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\n\nbut\n\n\n\n```\nE.heegner_index?\n```\n\n\n\nis ok.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1640\n\n",
+    "body": "Assignee: tba\n\nDocumentation missing:\n\n```\nE = EllipticCurve('5077a')\nE.heegner_discriminants?\n```\n\n\nsays\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\nType:        <type 'instancemethod'>\nDefinition:  E.heegner_discriminants(bound)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nbut\n\n\n```\nE.heegner_index?\n```\n\n\nis ok.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1640\n\n",
     "created_at": "2007-12-30T14:27:11Z",
     "labels": [
         "component: documentation",
@@ -27,9 +27,7 @@ E.heegner_discriminants?
 ```
 
 
-
 says
-
 
 
 ```
@@ -41,15 +39,12 @@ x.__init__(...) initializes x; see x.__class__.__doc__ for signature
 ```
 
 
-
 but
-
 
 
 ```
 E.heegner_index?
 ```
-
 
 
 is ok.

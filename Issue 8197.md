@@ -3,7 +3,7 @@
 archive/issues_008197.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nMany functions have a check=True (or check=False) parameter where the caller can avoid come costly checking of the input if they know exactly what they are doing.  That is a Good Thing, but unfortunately it is not always documented well.\n\nFor example,\n\n```\nage: P2 = ProjectiveSpace(GF(2),2)\nsage: P = P2.point((0,0,1))\nsage: Q = P2.point([0,0,1])\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nTrue\nsage: P._coords\n[0, 0, 1]\nsage: Q._coords\n[0, 0, 1]\n```\n\n\nNow the same but with \"check=False\":\n\n\n```\nsage: P = P2.point((0,0,1),check=False)\nsage: Q = P2.point([0,0,1],check=False)\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nFalse\nsage: P._coords\n(0, 0, 1)\nsage: Q._coords\n[0, 0, 1]\n```\n\nThe point is that on creation of the point, valid tuple input is\nconverted to a list, unless check=False in which case tuples are left as tuples.  This can result in wrong results.\n\nIn this example, the point-creation function should document the check= parameter by stating that the coordinates should be given as a list, not a tuple, with entries in the right parent, of the roght length, and (for curves or other schemes where there are polynomial equations to be satisfied) satisfying the defining equations.\n\nThere are surely many places in the source code where these remarks apply, but I have tagged this ticket \"algebraic geometry\" since that's where I ran into it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8197\n\n",
+    "body": "Assignee: @aghitza\n\nMany functions have a check=True (or check=False) parameter where the caller can avoid come costly checking of the input if they know exactly what they are doing.  That is a Good Thing, but unfortunately it is not always documented well.\n\nFor example,\n\n```\nage: P2 = ProjectiveSpace(GF(2),2)\nsage: P = P2.point((0,0,1))\nsage: Q = P2.point([0,0,1])\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nTrue\nsage: P._coords\n[0, 0, 1]\nsage: Q._coords\n[0, 0, 1]\n```\n\nNow the same but with \"check=False\":\n\n```\nsage: P = P2.point((0,0,1),check=False)\nsage: Q = P2.point([0,0,1],check=False)\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nFalse\nsage: P._coords\n(0, 0, 1)\nsage: Q._coords\n[0, 0, 1]\n```\nThe point is that on creation of the point, valid tuple input is\nconverted to a list, unless check=False in which case tuples are left as tuples.  This can result in wrong results.\n\nIn this example, the point-creation function should document the check= parameter by stating that the coordinates should be given as a list, not a tuple, with entries in the right parent, of the roght length, and (for curves or other schemes where there are polynomial equations to be satisfied) satisfying the defining equations.\n\nThere are surely many places in the source code where these remarks apply, but I have tagged this ticket \"algebraic geometry\" since that's where I ran into it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8197\n\n",
     "created_at": "2010-02-05T20:20:21Z",
     "labels": [
         "component: algebraic geometry",
@@ -38,9 +38,7 @@ sage: Q._coords
 [0, 0, 1]
 ```
 
-
 Now the same but with "check=False":
-
 
 ```
 sage: P = P2.point((0,0,1),check=False)
@@ -56,7 +54,6 @@ sage: P._coords
 sage: Q._coords
 [0, 0, 1]
 ```
-
 The point is that on creation of the point, valid tuple input is
 converted to a list, unless check=False in which case tuples are left as tuples.  This can result in wrong results.
 
@@ -97,7 +94,7 @@ will as well. To me this looks like `check=False` does more than turn off checks
 archive/issue_comments_072170.json:
 ```json
 {
-    "body": "Replying to [ticket:8197 cremona]:\n\n> The point is that on creation of the point, valid tuple input is converted to a list, unless check=False in which case tuples are left as tuples.\n\nJohn, it's not quite accurate what you say:\n\n\n```\nsage: P2 = ProjectiveSpace(GF(2),2)\nsage: type(P2.point([0,0,1])._coords)\n<class 'sage.structure.sequence.Sequence'>\nsage: type(P2.point([0,0,1], check=False)._coords)\n<type 'list'>\n```\n\neven though\n\n\n```\nsage: P2.point([0,0,1], check=False) == P2.point([0,0,1])\nTrue\n```\n\nThe relevant code is for the class  `SchemeMorphism_projective_coordinates_field` in  `schemes/generic/morphism.py :`\u00a0with `check=False,` absolutely nothing is  done except for setting the attribute `_coords`.  Thus\n\n\n```\nsage: P = P2.point(\"Anything\", check=False)\nsage: P._coords\n'Anything'\nsage: P\n('A' : 'n' : 'y' : 't' : 'h' : 'i' : 'n' : 'g')\n```\n\nSo, strictly speaking, the coordinates have to be given as a `Sequence` of the right length.\n\nI think you're right that the key thing is documentation.  In each case there's a design balance to be drawn (when `check=False`) between on the one hand checking nothing at all and on the other making some basic conversions, while not doing time-consuming things such as, for example, verifying that an input satisfies a polynomial.  How this balance is drawn will vary, but the INPUT block ought make it clear how the requirements depend on the value of `check`.\n\nThe relevant part of the documentation for `SchemeMorphism_projective_coordinates_field` says\n\n\n```\n\u00a0\u00a0\u00a0 \u00a0- \u00a0``v`` - a list or tuple of coordinates in K\n```\n\nThe code shows that this is actually too restrictive when `check` is True, and it is inaccurate when\u00a0check\u00a0is False.",
+    "body": "Replying to [ticket:8197 cremona]:\n\n> The point is that on creation of the point, valid tuple input is converted to a list, unless check=False in which case tuples are left as tuples.\n\n\nJohn, it's not quite accurate what you say:\n\n```\nsage: P2 = ProjectiveSpace(GF(2),2)\nsage: type(P2.point([0,0,1])._coords)\n<class 'sage.structure.sequence.Sequence'>\nsage: type(P2.point([0,0,1], check=False)._coords)\n<type 'list'>\n```\neven though\n\n```\nsage: P2.point([0,0,1], check=False) == P2.point([0,0,1])\nTrue\n```\nThe relevant code is for the class  `SchemeMorphism_projective_coordinates_field` in  `schemes/generic/morphism.py :`\u00a0with `check=False,` absolutely nothing is  done except for setting the attribute `_coords`.  Thus\n\n```\nsage: P = P2.point(\"Anything\", check=False)\nsage: P._coords\n'Anything'\nsage: P\n('A' : 'n' : 'y' : 't' : 'h' : 'i' : 'n' : 'g')\n```\nSo, strictly speaking, the coordinates have to be given as a `Sequence` of the right length.\n\nI think you're right that the key thing is documentation.  In each case there's a design balance to be drawn (when `check=False`) between on the one hand checking nothing at all and on the other making some basic conversions, while not doing time-consuming things such as, for example, verifying that an input satisfies a polynomial.  How this balance is drawn will vary, but the INPUT block ought make it clear how the requirements depend on the value of `check`.\n\nThe relevant part of the documentation for `SchemeMorphism_projective_coordinates_field` says\n\n```\n\u00a0\u00a0\u00a0 \u00a0- \u00a0``v`` - a list or tuple of coordinates in K\n```\nThe code shows that this is actually too restrictive when `check` is True, and it is inaccurate when\u00a0check\u00a0is False.",
     "created_at": "2010-02-06T10:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8197",
     "type": "issue_comment",
@@ -110,8 +107,8 @@ Replying to [ticket:8197 cremona]:
 
 > The point is that on creation of the point, valid tuple input is converted to a list, unless check=False in which case tuples are left as tuples.
 
-John, it's not quite accurate what you say:
 
+John, it's not quite accurate what you say:
 
 ```
 sage: P2 = ProjectiveSpace(GF(2),2)
@@ -120,17 +117,13 @@ sage: type(P2.point([0,0,1])._coords)
 sage: type(P2.point([0,0,1], check=False)._coords)
 <type 'list'>
 ```
-
 even though
-
 
 ```
 sage: P2.point([0,0,1], check=False) == P2.point([0,0,1])
 True
 ```
-
 The relevant code is for the class  `SchemeMorphism_projective_coordinates_field` in  `schemes/generic/morphism.py :` with `check=False,` absolutely nothing is  done except for setting the attribute `_coords`.  Thus
-
 
 ```
 sage: P = P2.point("Anything", check=False)
@@ -139,18 +132,15 @@ sage: P._coords
 sage: P
 ('A' : 'n' : 'y' : 't' : 'h' : 'i' : 'n' : 'g')
 ```
-
 So, strictly speaking, the coordinates have to be given as a `Sequence` of the right length.
 
 I think you're right that the key thing is documentation.  In each case there's a design balance to be drawn (when `check=False`) between on the one hand checking nothing at all and on the other making some basic conversions, while not doing time-consuming things such as, for example, verifying that an input satisfies a polynomial.  How this balance is drawn will vary, but the INPUT block ought make it clear how the requirements depend on the value of `check`.
 
 The relevant part of the documentation for `SchemeMorphism_projective_coordinates_field` says
 
-
 ```
      -  ``v`` - a list or tuple of coordinates in K
 ```
-
 The code shows that this is actually too restrictive when `check` is True, and it is inaccurate when check is False.
 
 

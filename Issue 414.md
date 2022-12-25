@@ -3,7 +3,7 @@
 archive/issues_000414.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nApparently, the list of allowed file formats to attach got shorter recently:\n\n\n```\n<type 'exceptions.ImportError'>: Attaching of '/home/malb/foobar.pyx'\nnot implemented (load .py, .spyx, and .sage files)\n```\n\n\nbut `attach 'foobar.spyx'` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/414\n\n",
+    "body": "Assignee: @williamstein\n\nApparently, the list of allowed file formats to attach got shorter recently:\n\n```\n<type 'exceptions.ImportError'>: Attaching of '/home/malb/foobar.pyx'\nnot implemented (load .py, .spyx, and .sage files)\n```\n\nbut `attach 'foobar.spyx'` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/414\n\n",
     "created_at": "2007-08-09T13:36:35Z",
     "labels": [
         "component: user interface",
@@ -21,12 +21,10 @@ Assignee: @williamstein
 
 Apparently, the list of allowed file formats to attach got shorter recently:
 
-
 ```
 <type 'exceptions.ImportError'>: Attaching of '/home/malb/foobar.pyx'
 not implemented (load .py, .spyx, and .sage files)
 ```
-
 
 but `attach 'foobar.spyx'` works.
 

@@ -3,7 +3,7 @@
 archive/issues_009884.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\n\nThis is not:\n\n```\nsage: timeit(\"z = Integer(u)\")\n625 loops, best of 3: 1.27 \u00b5s per loop\n```\n\n\nWhy is this so much slower? Or how is the user supposed to know which one to use?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9885\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\nThis is not:\n\n```\nsage: timeit(\"z = Integer(u)\")\n625 loops, best of 3: 1.27 \u00b5s per loop\n```\n\nWhy is this so much slower? Or how is the user supposed to know which one to use?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9885\n\n",
     "created_at": "2010-09-09T16:05:47Z",
     "labels": [
         "component: performance",
@@ -21,7 +21,6 @@ Sage 4.5.3, 2.6GHz Opteron, Linux
 
 This is ok:
 
-
 ```
 sage: R = Integers(3^20)
 sage: u = R(2)
@@ -29,14 +28,12 @@ sage: timeit("z = u.lift()")
 625 loops, best of 3: 351 ns per loop
 ```
 
-
 This is not:
 
 ```
 sage: timeit("z = Integer(u)")
 625 loops, best of 3: 1.27 µs per loop
 ```
-
 
 Why is this so much slower? Or how is the user supposed to know which one to use?
 
@@ -107,7 +104,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097805.json:
 ```json
 {
-    "body": "This at least helps a bit (dropping from 900ns to 580ns in my tests) by avoiding a double attribute lookup that was already highlighted as undesirable in the code.\n----\nNew commits:",
+    "body": "This at least helps a bit (dropping from 900ns to 580ns in my tests) by avoiding a double attribute lookup that was already highlighted as undesirable in the code.\n\n---\nNew commits:",
     "created_at": "2014-03-14T22:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -117,7 +114,8 @@ archive/issue_comments_097805.json:
 ```
 
 This at least helps a bit (dropping from 900ns to 580ns in my tests) by avoiding a double attribute lookup that was already highlighted as undesirable in the code.
-----
+
+---
 New commits:
 
 
@@ -192,7 +190,7 @@ Anyway, the possibility for catching extraneous errors with guarding too much wi
 archive/issue_comments_097808.json:
 ```json
 {
-    "body": "Replying to [comment:6 nbruin]:\n>  - The try/except is now also guarding errors that may arise during the execution of the `_integer_` method, not just the ones that arise in looking up the attribute. That could mask genuine errors and cause this method to execute follow-up code when really there is an `_integer_` method available.\n\nTrue. But that pattern is so common in sage that I don't worry too much.\n\n>  - While try/except is fast to execute when no error is raised, it does incur a large penalty when the attribute is not found (where `getattr(x,\"_integer_\",None)` should return `None` with little penalty). So I expect your code is slower for branches that come below the `x._integer_` branch.\n\nWell, that's the case of the branch used in my timings!\n\n> I'd recommend adopting the `getattr` solution and otherwise sticking with your branch.\n\nI already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.",
+    "body": "Replying to [comment:6 nbruin]:\n>  - The try/except is now also guarding errors that may arise during the execution of the `_integer_` method, not just the ones that arise in looking up the attribute. That could mask genuine errors and cause this method to execute follow-up code when really there is an `_integer_` method available.\n\n\nTrue. But that pattern is so common in sage that I don't worry too much.\n\n>  - While try/except is fast to execute when no error is raised, it does incur a large penalty when the attribute is not found (where `getattr(x,\"_integer_\",None)` should return `None` with little penalty). So I expect your code is slower for branches that come below the `x._integer_` branch.\n\n\nWell, that's the case of the branch used in my timings!\n\n> I'd recommend adopting the `getattr` solution and otherwise sticking with your branch.\n\n\nI already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.",
     "created_at": "2014-03-15T18:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -204,13 +202,16 @@ archive/issue_comments_097808.json:
 Replying to [comment:6 nbruin]:
 >  - The try/except is now also guarding errors that may arise during the execution of the `_integer_` method, not just the ones that arise in looking up the attribute. That could mask genuine errors and cause this method to execute follow-up code when really there is an `_integer_` method available.
 
+
 True. But that pattern is so common in sage that I don't worry too much.
 
 >  - While try/except is fast to execute when no error is raised, it does incur a large penalty when the attribute is not found (where `getattr(x,"_integer_",None)` should return `None` with little penalty). So I expect your code is slower for branches that come below the `x._integer_` branch.
 
+
 Well, that's the case of the branch used in my timings!
 
 > I'd recommend adopting the `getattr` solution and otherwise sticking with your branch.
+
 
 I already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.
 
@@ -221,7 +222,7 @@ I already tried after seeing your version, and the hybrid solution was the slowe
 archive/issue_comments_097809.json:
 ```json
 {
-    "body": "Replying to [comment:7 mmezzarobba]:\n> I already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.\n\nHm, something must have gone wrong in the hybridization then. With this test code:\n\n```\ndef test1(n,x):\n    cdef long N=n\n    for i in range(N):\n        t1(x)\ndef test2(n,x):\n    cdef long N=n\n    for i in range(N):\n        t2(x)\ndef t1(o):\n    cdef object A=getattr(o,\"_integer_\",None)\n    if A is not None:\n        return A\n    else:\n        return None\ndef t2(o):\n    try:\n        return o._integer_\n    except AttributeError:\n        return None\n```\n\nI get\n\n```\nsage: R=GF(5)\nsage: a=R(1)\nsage: timeit('test1(100000,a)')\n125 loops, best of 3: 6.94 ms per loop\nsage: timeit('test2(100000,a)')\n125 loops, best of 3: 7.49 ms per loop\nsage: timeit('test1(100000,R)')\n5 loops, best of 3: 123 ms per loop\nsage: timeit('test2(100000,R)')\n5 loops, best of 3: 146 ms per loop\n```\n\nyou see that `getattr` is consistently faster in looking up the attribute, and also how expensive it is to fail to find it. Other variants using `PyObject_GetAttr` etc. were a little slower still.",
+    "body": "Replying to [comment:7 mmezzarobba]:\n> I already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.\n\n\nHm, something must have gone wrong in the hybridization then. With this test code:\n\n```\ndef test1(n,x):\n    cdef long N=n\n    for i in range(N):\n        t1(x)\ndef test2(n,x):\n    cdef long N=n\n    for i in range(N):\n        t2(x)\ndef t1(o):\n    cdef object A=getattr(o,\"_integer_\",None)\n    if A is not None:\n        return A\n    else:\n        return None\ndef t2(o):\n    try:\n        return o._integer_\n    except AttributeError:\n        return None\n```\nI get\n\n```\nsage: R=GF(5)\nsage: a=R(1)\nsage: timeit('test1(100000,a)')\n125 loops, best of 3: 6.94 ms per loop\nsage: timeit('test2(100000,a)')\n125 loops, best of 3: 7.49 ms per loop\nsage: timeit('test1(100000,R)')\n5 loops, best of 3: 123 ms per loop\nsage: timeit('test2(100000,R)')\n5 loops, best of 3: 146 ms per loop\n```\nyou see that `getattr` is consistently faster in looking up the attribute, and also how expensive it is to fail to find it. Other variants using `PyObject_GetAttr` etc. were a little slower still.",
     "created_at": "2014-03-15T18:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -232,6 +233,7 @@ archive/issue_comments_097809.json:
 
 Replying to [comment:7 mmezzarobba]:
 > I already tried after seeing your version, and the hybrid solution was the slowest of the three (by a significant amount). I didn't try to understand why.
+
 
 Hm, something must have gone wrong in the hybridization then. With this test code:
 
@@ -256,7 +258,6 @@ def t2(o):
     except AttributeError:
         return None
 ```
-
 I get
 
 ```
@@ -271,7 +272,6 @@ sage: timeit('test1(100000,R)')
 sage: timeit('test2(100000,R)')
 5 loops, best of 3: 146 ms per loop
 ```
-
 you see that `getattr` is consistently faster in looking up the attribute, and also how expensive it is to fail to find it. Other variants using `PyObject_GetAttr` etc. were a little slower still.
 
 
@@ -281,7 +281,7 @@ you see that `getattr` is consistently faster in looking up the attribute, and a
 archive/issue_comments_097810.json:
 ```json
 {
-    "body": "OK, with this change made to your patch:\n\n```diff\n--- a/src/sage/rings/integer.pyx\n+++ b/src/sage/rings/integer.pyx\n@@ -693,11 +693,10 @@ cdef class Integer(sage.structure.element.EuclideanDomainE\n \n             else:\n \n-                try:\n-                    set_from_Integer(self, x._integer_(the_integer_ring))\n+                otmp=getattr(x,\"_integer_\",None)\n+                if otmp is not None:\n+                    set_from_Integer(self, otmp(the_integer_ring))\n                     return\n-                except AttributeError:\n-                    pass\n```\n\nI get hardly a difference in timing. Using\n\n```\n%cpaste\ncython(\"\"\"\nfrom sage.rings.integer import Integer\ndef test(a,n):\n  cdef long N=n\n  for i in range(N):\n      v=Integer(a)\n\"\"\")\n--\nR = Integers(3^20)\nu=R(2)\ntimeit(\"test(u,100000)\")\n```\n\nI get 20.3 ms for `getattr` and 20.7ms for the `try/except` variant. So, really a minute difference, but still measurable.I'd go for the getattr option, mainly because of the error checking.",
+    "body": "OK, with this change made to your patch:\n\n```diff\n--- a/src/sage/rings/integer.pyx\n+++ b/src/sage/rings/integer.pyx\n@@ -693,11 +693,10 @@ cdef class Integer(sage.structure.element.EuclideanDomainE\n \n             else:\n \n-                try:\n-                    set_from_Integer(self, x._integer_(the_integer_ring))\n+                otmp=getattr(x,\"_integer_\",None)\n+                if otmp is not None:\n+                    set_from_Integer(self, otmp(the_integer_ring))\n                     return\n-                except AttributeError:\n-                    pass\n```\nI get hardly a difference in timing. Using\n\n```\n%cpaste\ncython(\"\"\"\nfrom sage.rings.integer import Integer\ndef test(a,n):\n  cdef long N=n\n  for i in range(N):\n      v=Integer(a)\n\"\"\")\n--\nR = Integers(3^20)\nu=R(2)\ntimeit(\"test(u,100000)\")\n```\nI get 20.3 ms for `getattr` and 20.7ms for the `try/except` variant. So, really a minute difference, but still measurable.I'd go for the getattr option, mainly because of the error checking.",
     "created_at": "2014-03-15T19:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -308,7 +308,6 @@ OK, with this change made to your patch:
 -                except AttributeError:
 -                    pass
 ```
-
 I get hardly a difference in timing. Using
 
 ```
@@ -325,7 +324,6 @@ R = Integers(3^20)
 u=R(2)
 timeit("test(u,100000)")
 ```
-
 I get 20.3 ms for `getattr` and 20.7ms for the `try/except` variant. So, really a minute difference, but still measurable.I'd go for the getattr option, mainly because of the error checking.
 
 
@@ -335,7 +333,7 @@ I get 20.3 ms for `getattr` and 20.7ms for the `try/except` variant. So, really 
 archive/issue_comments_097811.json:
 ```json
 {
-    "body": "You are of course right. I think the hybrid version I tested was with `PyObject_GetAttrString`.\n----\nNew commits:",
+    "body": "You are of course right. I think the hybrid version I tested was with `PyObject_GetAttrString`.\n\n---\nNew commits:",
     "created_at": "2014-03-16T09:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -345,7 +343,8 @@ archive/issue_comments_097811.json:
 ```
 
 You are of course right. I think the hybrid version I tested was with `PyObject_GetAttrString`.
-----
+
+---
 New commits:
 
 
@@ -445,7 +444,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_097817.json:
 ```json
 {
-    "body": "Replying to [comment:12 pbruin]:\n> The docstring of `set_from_pari_gen()` doesn't have the right format, it should be an indented `EXAMPLE[S]::` or `TEST[S]::` block, maybe with a line of explanation.\n\nThanks, I didn't know this was necessary for docstrings that only contain tests.",
+    "body": "Replying to [comment:12 pbruin]:\n> The docstring of `set_from_pari_gen()` doesn't have the right format, it should be an indented `EXAMPLE[S]::` or `TEST[S]::` block, maybe with a line of explanation.\n\n\nThanks, I didn't know this was necessary for docstrings that only contain tests.",
     "created_at": "2014-05-05T18:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9884",
     "type": "issue_comment",
@@ -456,6 +455,7 @@ archive/issue_comments_097817.json:
 
 Replying to [comment:12 pbruin]:
 > The docstring of `set_from_pari_gen()` doesn't have the right format, it should be an indented `EXAMPLE[S]::` or `TEST[S]::` block, maybe with a line of explanation.
+
 
 Thanks, I didn't know this was necessary for docstrings that only contain tests.
 

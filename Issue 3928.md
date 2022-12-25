@@ -3,7 +3,7 @@
 archive/issues_003928.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nSay, I want to define a multigraph with selfloops, and edge labels..\nOne way to do this is:\n\nimport networkx\nG=networkx.XDiGraph(selfloops=True,multiedges=True)\nfor i in range(3): G.add_node(i)\nfor i in [(1,1,'hola'),(1,1,'hi'),(1,2,'two'),(1,2,'dos'),\n(2,1,'one')]: G.add_edge(i)\nG=DiGraph(G)\n\nNow, I would be tempted to just do the following:\nG=DiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nloops=True, multiedges=True)\n\nor trying\n\nimport networkx\nG=networkx.XDiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nselfloops=True, multiedges=True)\n\nBut in each case  I get:\n\nG.edges()\n\n(1, 1, 'h'), (1, 1, 'i'), (1, 2, 'd'), (1, 2, 'o'), (1, 2, 's'), (2,\n1,\n'o'), (2, 1, 'n'), (2, 1, 'e')]\n\n\nWhich is not as intended for two reasons:  One is that the labels are\nwrong, and the other one is that it created three edges from 1 to 2.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3928\n\n",
+    "body": "Assignee: @rlmill\n\n```\nSay, I want to define a multigraph with selfloops, and edge labels..\nOne way to do this is:\n\nimport networkx\nG=networkx.XDiGraph(selfloops=True,multiedges=True)\nfor i in range(3): G.add_node(i)\nfor i in [(1,1,'hola'),(1,1,'hi'),(1,2,'two'),(1,2,'dos'),\n(2,1,'one')]: G.add_edge(i)\nG=DiGraph(G)\n\nNow, I would be tempted to just do the following:\nG=DiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nloops=True, multiedges=True)\n\nor trying\n\nimport networkx\nG=networkx.XDiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nselfloops=True, multiedges=True)\n\nBut in each case  I get:\n\nG.edges()\n\n(1, 1, 'h'), (1, 1, 'i'), (1, 2, 'd'), (1, 2, 'o'), (1, 2, 's'), (2,\n1,\n'o'), (2, 1, 'n'), (2, 1, 'e')]\n\n\nWhich is not as intended for two reasons:  One is that the labels are\nwrong, and the other one is that it created three edges from 1 to 2.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3928\n\n",
     "created_at": "2008-08-22T17:58:49Z",
     "labels": [
         "component: graph theory",
@@ -17,7 +17,6 @@ archive/issues_003928.json:
 }
 ```
 Assignee: @rlmill
-
 
 ```
 Say, I want to define a multigraph with selfloops, and edge labels..
@@ -52,7 +51,6 @@ G.edges()
 Which is not as intended for two reasons:  One is that the labels are
 wrong, and the other one is that it created three edges from 1 to 2.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3928
@@ -120,7 +118,7 @@ archive/issue_events_009011.json:
 archive/issue_comments_028060.json:
 ```json
 {
-    "body": "Indeed, the following works:\n\n\n```\nsage: G=DiGraph({1:{1:['hola','hi'], 2:['two','dos']},2:{1:['one']}}, loops=True, multiedges=True)\nsage: G.edges()\n[(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1, 'one')]\n\n```\n",
+    "body": "Indeed, the following works:\n\n```\nsage: G=DiGraph({1:{1:['hola','hi'], 2:['two','dos']},2:{1:['one']}}, loops=True, multiedges=True)\nsage: G.edges()\n[(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1, 'one')]\n\n```",
     "created_at": "2008-08-23T03:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3928",
     "type": "issue_comment",
@@ -131,14 +129,12 @@ archive/issue_comments_028060.json:
 
 Indeed, the following works:
 
-
 ```
 sage: G=DiGraph({1:{1:['hola','hi'], 2:['two','dos']},2:{1:['one']}}, loops=True, multiedges=True)
 sage: G.edges()
 [(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1, 'one')]
 
 ```
-
 
 
 
@@ -217,7 +213,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_028064.json:
 ```json
 {
-    "body": "As per Robert's comment and the suggestion on sage-devel to add documentation, I'm reopening this to add the following to the documentation:\n\n\n```\nFor a digraph with multiple edges and labels, one must provide a list\nwithin the dictionary:\n\nsage: G=DiGraph({1:{1:['hola','hi'], 2:['two','dos']},2:{1:['one']}},\nloops=True, multiedges=True)\nsage: G.edges()\n[(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1,\n'one')]\n```\n",
+    "body": "As per Robert's comment and the suggestion on sage-devel to add documentation, I'm reopening this to add the following to the documentation:\n\n```\nFor a digraph with multiple edges and labels, one must provide a list\nwithin the dictionary:\n\nsage: G=DiGraph({1:{1:['hola','hi'], 2:['two','dos']},2:{1:['one']}},\nloops=True, multiedges=True)\nsage: G.edges()\n[(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1,\n'one')]\n```",
     "created_at": "2008-08-26T15:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3928",
     "type": "issue_comment",
@@ -227,7 +223,6 @@ archive/issue_comments_028064.json:
 ```
 
 As per Robert's comment and the suggestion on sage-devel to add documentation, I'm reopening this to add the following to the documentation:
-
 
 ```
 For a digraph with multiple edges and labels, one must provide a list
@@ -239,7 +234,6 @@ sage: G.edges()
 [(1, 1, 'hi'), (1, 1, 'hola'), (1, 2, 'dos'), (1, 2, 'two'), (2, 1,
 'one')]
 ```
-
 
 
 

@@ -50,7 +50,7 @@ See #7379 for the initial implementation of this feature.
 archive/issue_comments_082443.json:
 ```json
 {
-    "body": "Okay, the attached patch lets you specify controls on each side, as well as the width of the interact.  The following code gives the interact in the screenshot attached.\n\n\n```\n\nvar('x')\n@interact(layout=dict(top=[['f'],['r','plot_points']], bottom=[['color','thickness'],['adaptive_recursion','adaptive_tolerance']], left=[['gridlines'],['fill'],['frame'],['axes']], right=[['linestyle']]))\ndef plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)), \n                 color=color_selector(widget='colorpicker'),\n                 thickness=(3,(1..10)),\n                 adaptive_recursion=(5,(0..10)), adaptive_tolerance=(0.01,(0.001,1)),\n                 plot_points=(20,(1..100)),\n                 linestyle=['-','--','-.',':'],\n                 gridlines=False, fill=False,\n                 frame=False, axes=True\n                 ):\n    show(plot(f, (x,r[0],r[1]), color=color, thickness=thickness, \n                 adaptive_recursion=adaptive_recursion,\n                 adaptive_tolerance=adaptive_tolerance, plot_points=plot_points,\n                 linestyle=linestyle, fill=fill if fill else None), \n                 gridlines=gridlines, frame=frame, axes=axes)\n```\n",
+    "body": "Okay, the attached patch lets you specify controls on each side, as well as the width of the interact.  The following code gives the interact in the screenshot attached.\n\n```\n\nvar('x')\n@interact(layout=dict(top=[['f'],['r','plot_points']], bottom=[['color','thickness'],['adaptive_recursion','adaptive_tolerance']], left=[['gridlines'],['fill'],['frame'],['axes']], right=[['linestyle']]))\ndef plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)), \n                 color=color_selector(widget='colorpicker'),\n                 thickness=(3,(1..10)),\n                 adaptive_recursion=(5,(0..10)), adaptive_tolerance=(0.01,(0.001,1)),\n                 plot_points=(20,(1..100)),\n                 linestyle=['-','--','-.',':'],\n                 gridlines=False, fill=False,\n                 frame=False, axes=True\n                 ):\n    show(plot(f, (x,r[0],r[1]), color=color, thickness=thickness, \n                 adaptive_recursion=adaptive_recursion,\n                 adaptive_tolerance=adaptive_tolerance, plot_points=plot_points,\n                 linestyle=linestyle, fill=fill if fill else None), \n                 gridlines=gridlines, frame=frame, axes=axes)\n```",
     "created_at": "2010-05-14T03:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_082443.json:
 ```
 
 Okay, the attached patch lets you specify controls on each side, as well as the width of the interact.  The following code gives the interact in the screenshot attached.
-
 
 ```
 
@@ -81,7 +80,6 @@ def plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)),
                  linestyle=linestyle, fill=fill if fill else None), 
                  gridlines=gridlines, frame=frame, axes=axes)
 ```
-
 
 
 

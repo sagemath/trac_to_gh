@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3561
 archive/issue_comments_025118.json:
 ```json
 {
-    "body": "The attached patch gets rid of a bunch of numpy imports.  However, according to \n\n```\n  sage -timeup\n```\n\n(see #3559) there is still some mysterious numpy import that gets triggered in real_double_vector.pyx.  I'm very confused by that since there is no python \"import numpy\" anywhere there.  Fixing that can be another ticket for later.",
+    "body": "The attached patch gets rid of a bunch of numpy imports.  However, according to \n\n```\n  sage -timeup\n```\n(see #3559) there is still some mysterious numpy import that gets triggered in real_double_vector.pyx.  I'm very confused by that since there is no python \"import numpy\" anywhere there.  Fixing that can be another ticket for later.",
     "created_at": "2008-07-06T09:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3561",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ The attached patch gets rid of a bunch of numpy imports.  However, according to
 ```
   sage -timeup
 ```
-
 (see #3559) there is still some mysterious numpy import that gets triggered in real_double_vector.pyx.  I'm very confused by that since there is no python "import numpy" anywhere there.  Fixing that can be another ticket for later.
 
 

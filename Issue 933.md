@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/933
 archive/issue_comments_005681.json:
 ```json
 {
-    "body": "> calculate a Groebner basis \n\nover which field?",
+    "body": "> calculate a Groebner basis \n\n\nover which field?",
     "created_at": "2008-09-17T14:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/933",
     "type": "issue_comment",
@@ -71,6 +71,7 @@ archive/issue_comments_005681.json:
 ```
 
 > calculate a Groebner basis 
+
 
 over which field?
 
@@ -200,7 +201,7 @@ archive/issue_events_002570.json:
 archive/issue_comments_005682.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> > calculate a Groebner basis \n> \n> over which field?\n\n`ZZ`. You want the `0-1` solutions and the `x = x^2` guarantees exactly that.",
+    "body": "Replying to [comment:3 malb]:\n> > calculate a Groebner basis \n\n> \n> over which field?\n\n\n`ZZ`. You want the `0-1` solutions and the `x = x^2` guarantees exactly that.",
     "created_at": "2015-08-17T12:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/933",
     "type": "issue_comment",
@@ -211,7 +212,9 @@ archive/issue_comments_005682.json:
 
 Replying to [comment:3 malb]:
 > > calculate a Groebner basis 
+
 > 
 > over which field?
+
 
 `ZZ`. You want the `0-1` solutions and the `x = x^2` guarantees exactly that.

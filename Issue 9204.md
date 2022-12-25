@@ -3,7 +3,7 @@
 archive/issues_009204.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @gvol @fchapoton\n\nSay we have a cell like this:\n\n\n```\n%hide\n1+1\n```\n\n\nafter Shift+Enter it would grey out the input but would **not** collapse the input cell to one line. If I click on the cell and then click somewhere else %hide works as expected and actually reduces the size of the input cell to one line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9204\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @gvol @fchapoton\n\nSay we have a cell like this:\n\n```\n%hide\n1+1\n```\n\nafter Shift+Enter it would grey out the input but would **not** collapse the input cell to one line. If I click on the cell and then click somewhere else %hide works as expected and actually reduces the size of the input cell to one line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9204\n\n",
     "created_at": "2010-06-10T14:10:24Z",
     "labels": [
         "component: notebook",
@@ -23,12 +23,10 @@ CC:  @gvol @fchapoton
 
 Say we have a cell like this:
 
-
 ```
 %hide
 1+1
 ```
-
 
 after Shift+Enter it would grey out the input but would **not** collapse the input cell to one line. If I click on the cell and then click somewhere else %hide works as expected and actually reduces the size of the input cell to one line.
 

@@ -3,7 +3,7 @@
 archive/issues_002430.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn 2.10.2 and 2.10.3.rc2:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\n```\n\n\nI looked to whether any of Sage's rings would ever return True for this function, and came up with pAdicRingGeneric and no others:\n\n```\nsage: is_EuclideanDomain(pAdicRing(7))\nTrue\n```\n\n\nSo this idea (to have EuclideanDomains as a class) just has not been properly implemented.\nAs a start we could make rings which are certainly Euclidean (e,g, ZZ and univariate polynomials over a field) be derived from EuclideanDomain instead of PrincipalIdealDomain as they are now.\n\nThat would not be a complete solution, since (for example) some rings of integers of number fields are Euclidean, though it is not easy to say which;  and there is no functionality to answer the question \"is R Euclidean\" except to see if R's class is (derived from) EuclideanDomain, which for rings of integers it never will be!\n\nOne other puzzling -- and inconsistent -- thing is that EuclideanDomainElement has a broader scope than EuclideanDomain:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\nsage: is_EuclideanDomainElement(ZZ(1))\nTrue\n\nsage: is_EuclideanDomain(R)\nFalse\nsage: is_EuclideanDomainElement(x)\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2430\n\n",
+    "body": "Assignee: mabshoff\n\nIn 2.10.2 and 2.10.3.rc2:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\n```\n\nI looked to whether any of Sage's rings would ever return True for this function, and came up with pAdicRingGeneric and no others:\n\n```\nsage: is_EuclideanDomain(pAdicRing(7))\nTrue\n```\n\nSo this idea (to have EuclideanDomains as a class) just has not been properly implemented.\nAs a start we could make rings which are certainly Euclidean (e,g, ZZ and univariate polynomials over a field) be derived from EuclideanDomain instead of PrincipalIdealDomain as they are now.\n\nThat would not be a complete solution, since (for example) some rings of integers of number fields are Euclidean, though it is not easy to say which;  and there is no functionality to answer the question \"is R Euclidean\" except to see if R's class is (derived from) EuclideanDomain, which for rings of integers it never will be!\n\nOne other puzzling -- and inconsistent -- thing is that EuclideanDomainElement has a broader scope than EuclideanDomain:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\nsage: is_EuclideanDomainElement(ZZ(1))\nTrue\n\nsage: is_EuclideanDomain(R)\nFalse\nsage: is_EuclideanDomainElement(x)\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2430\n\n",
     "created_at": "2008-03-08T20:35:42Z",
     "labels": [
         "component: cygwin",
@@ -25,14 +25,12 @@ sage: is_EuclideanDomain(ZZ)
 False
 ```
 
-
 I looked to whether any of Sage's rings would ever return True for this function, and came up with pAdicRingGeneric and no others:
 
 ```
 sage: is_EuclideanDomain(pAdicRing(7))
 True
 ```
-
 
 So this idea (to have EuclideanDomains as a class) just has not been properly implemented.
 As a start we could make rings which are certainly Euclidean (e,g, ZZ and univariate polynomials over a field) be derived from EuclideanDomain instead of PrincipalIdealDomain as they are now.
@@ -52,7 +50,6 @@ False
 sage: is_EuclideanDomainElement(x)
 True
 ```
-
 
 
 

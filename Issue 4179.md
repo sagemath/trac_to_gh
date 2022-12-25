@@ -155,7 +155,7 @@ archive/issue_events_009482.json:
 archive/issue_comments_030265.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> PS this ticket also duplicates #3760.\n\nOk, I agree with John here and am closing this as a duplicate of #3760. I did comment on that ticket and mentioned this ticket, so the info should not get lost.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 cremona]:\n> PS this ticket also duplicates #3760.\n\n\nOk, I agree with John here and am closing this as a duplicate of #3760. I did comment on that ticket and mentioned this ticket, so the info should not get lost.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T08:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4179",
     "type": "issue_comment",
@@ -166,6 +166,7 @@ archive/issue_comments_030265.json:
 
 Replying to [comment:4 cremona]:
 > PS this ticket also duplicates #3760.
+
 
 Ok, I agree with John here and am closing this as a duplicate of #3760. I did comment on that ticket and mentioned this ticket, so the info should not get lost.
 

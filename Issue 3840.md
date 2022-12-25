@@ -3,7 +3,7 @@
 archive/issues_003840.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following (and all similar conversions) fail:\n\n```\nRR(RR[x,y](0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/<ipython console> in <module>()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3408)()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/multi_polynomial.pyx in sage.rings.polynomial.multi_polynomial.MPolynomial._mpfr_ (sage/rings/polynomial/multi_polynomial.c:1656)()\n```\n\nThe attached patch provides doctests and fixes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3840\n\n",
+    "body": "Assignee: somebody\n\nThe following (and all similar conversions) fail:\n\n```\nRR(RR[x,y](0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/<ipython console> in <module>()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3408)()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/multi_polynomial.pyx in sage.rings.polynomial.multi_polynomial.MPolynomial._mpfr_ (sage/rings/polynomial/multi_polynomial.c:1656)()\n```\nThe attached patch provides doctests and fixes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3840\n\n",
     "created_at": "2008-08-13T17:30:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,7 +31,6 @@ TypeError                                 Traceback (most recent call last)
 
 /home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/multi_polynomial.pyx in sage.rings.polynomial.multi_polynomial.MPolynomial._mpfr_ (sage/rings/polynomial/multi_polynomial.c:1656)()
 ```
-
 The attached patch provides doctests and fixes.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/3840
@@ -45,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3840
 archive/issue_comments_027246.json:
 ```json
 {
-    "body": "Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by @williamstein created at 2008-08-13 18:06:21\n\nREVIEW:\n\nThis should be redone by changing the == to <= like this.  This is much nicer than using an if statement like in the patch.  Redo it. \n\n```\ndiff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx\n--- a/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 09:54:40 2008 +0100\n+++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 11:02:59 2008 -0700\n@@ -15,7 +15,7 @@ cdef class MPolynomial(CommutativeRingEl\n     # Some standard conversions\n     ####################\n     def __int__(self):\n-        if self.degree() == 0:\n+        if self.degree() <= 0:\n             return int(self.constant_coefficient())\n         else:\n             raise TypeError\n```\n",
+    "body": "Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by @williamstein created at 2008-08-13 18:06:21\n\nREVIEW:\n\nThis should be redone by changing the == to <= like this.  This is much nicer than using an if statement like in the patch.  Redo it. \n\n```\ndiff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx\n--- a/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 09:54:40 2008 +0100\n+++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 11:02:59 2008 -0700\n@@ -15,7 +15,7 @@ cdef class MPolynomial(CommutativeRingEl\n     # Some standard conversions\n     ####################\n     def __int__(self):\n-        if self.degree() == 0:\n+        if self.degree() <= 0:\n             return int(self.constant_coefficient())\n         else:\n             raise TypeError\n```",
     "created_at": "2008-08-13T18:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_comment",
@@ -74,7 +73,6 @@ diff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx
          else:
              raise TypeError
 ```
-
 
 
 

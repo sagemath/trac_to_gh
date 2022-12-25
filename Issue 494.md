@@ -3,7 +3,7 @@
 archive/issues_000494.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHello,\n\nlocal/bin/sage-env shipped with Sage 2.8.2 is officially a sh shell script. So it should run flawlessly with a tcsh. But\n\n```\n[mabshoff@m940 sage-2.8.2]# /bin/tcsh local/bin/sage-env\nSAVEDIR=/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2: Command not found.\nif: Expression Syntax.\n```\n\n\nThis was originally mentioned to me \"dropdrive\" in #sage-devel\n\nWhile we are at it: all spkg-install seem to use /bin/bash as shebang. While it is very uncommen to find a Unixy system these days without a bash it might still happen. We should consider fixing those scripts, too, or make it a requirement that users have a bash installed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/494\n\n",
+    "body": "Assignee: @williamstein\n\nHello,\n\nlocal/bin/sage-env shipped with Sage 2.8.2 is officially a sh shell script. So it should run flawlessly with a tcsh. But\n\n```\n[mabshoff@m940 sage-2.8.2]# /bin/tcsh local/bin/sage-env\nSAVEDIR=/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2: Command not found.\nif: Expression Syntax.\n```\n\nThis was originally mentioned to me \"dropdrive\" in #sage-devel\n\nWhile we are at it: all spkg-install seem to use /bin/bash as shebang. While it is very uncommen to find a Unixy system these days without a bash it might still happen. We should consider fixing those scripts, too, or make it a requirement that users have a bash installed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/494\n\n",
     "created_at": "2007-08-26T19:54:51Z",
     "labels": [
         "component: packages: standard",
@@ -27,7 +27,6 @@ local/bin/sage-env shipped with Sage 2.8.2 is officially a sh shell script. So i
 SAVEDIR=/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2: Command not found.
 if: Expression Syntax.
 ```
-
 
 This was originally mentioned to me "dropdrive" in #sage-devel
 

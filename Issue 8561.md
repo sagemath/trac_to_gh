@@ -3,7 +3,7 @@
 archive/issues_008561.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: Pickling, lambda, interactively defined functions\n\nExtend sage.misc.fpickle.pyx with a PicklableFunction class wrapping\ninteractively defined (simple) functions to make them picklable:\n\n\n```\n    sage: f = lambda x: x^2\n    sage: loads(dumps(f))\n    ------------------------------------------------------------\n    Traceback (most recent call last):\n      File \"<ipython console>\", line 1, in <module>\n      File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8357)\n    PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed\n\n    sage: f = PicklableFunction(f)\n    sage: f(3)\n    9\n    sage: f == loads(dumps(f))\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8561\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: Pickling, lambda, interactively defined functions\n\nExtend sage.misc.fpickle.pyx with a PicklableFunction class wrapping\ninteractively defined (simple) functions to make them picklable:\n\n```\n    sage: f = lambda x: x^2\n    sage: loads(dumps(f))\n    ------------------------------------------------------------\n    Traceback (most recent call last):\n      File \"<ipython console>\", line 1, in <module>\n      File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8357)\n    PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed\n\n    sage: f = PicklableFunction(f)\n    sage: f(3)\n    9\n    sage: f == loads(dumps(f))\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8561\n\n",
     "created_at": "2010-03-19T15:52:59Z",
     "labels": [
         "component: pickling"
@@ -23,7 +23,6 @@ Keywords: Pickling, lambda, interactively defined functions
 Extend sage.misc.fpickle.pyx with a PicklableFunction class wrapping
 interactively defined (simple) functions to make them picklable:
 
-
 ```
     sage: f = lambda x: x^2
     sage: loads(dumps(f))
@@ -39,7 +38,6 @@ interactively defined (simple) functions to make them picklable:
     sage: f == loads(dumps(f))
     True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8561

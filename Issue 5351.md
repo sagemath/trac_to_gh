@@ -3,7 +3,7 @@
 archive/issues_005351.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen unpacking a Sage 3.3 binary the update of easy-install.pth is broken:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\nWarning: something went wrong updating the easy-install.pth file.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5351\n\n",
+    "body": "Assignee: mabshoff\n\nWhen unpacking a Sage 3.3 binary the update of easy-install.pth is broken:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\nWarning: something went wrong updating the easy-install.pth file.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5351\n\n",
     "created_at": "2009-02-23T19:06:18Z",
     "labels": [
         "component: build",
@@ -30,7 +30,6 @@ most a few minutes)...
 Do not interrupt this.
 Warning: something went wrong updating the easy-install.pth file.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5351
 

@@ -177,7 +177,7 @@ archive/issue_events_012048.json:
 archive/issue_comments_039789.json:
 ```json
 {
-    "body": "> I can supply you with the config.guess output of all the machines above in case you want it for the MPFR website. I can also test on MIPS64/Linux.\n\nyes please supply it for configurations not already listed for mpfr-2.4.0.\n\nPaul",
+    "body": "> I can supply you with the config.guess output of all the machines above in case you want it for the MPFR website. I can also test on MIPS64/Linux.\n\n\nyes please supply it for configurations not already listed for mpfr-2.4.0.\n\nPaul",
     "created_at": "2009-02-08T09:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5202",
     "type": "issue_comment",
@@ -187,6 +187,7 @@ archive/issue_comments_039789.json:
 ```
 
 > I can supply you with the config.guess output of all the machines above in case you want it for the MPFR website. I can also test on MIPS64/Linux.
+
 
 yes please supply it for configurations not already listed for mpfr-2.4.0.
 

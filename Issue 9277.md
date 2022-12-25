@@ -69,7 +69,7 @@ Changing assignee from @aghitza to GeorgSWeber.
 archive/issue_comments_087243.json:
 ```json
 {
-    "body": "Here's an updated package\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/flint-1.5.0.p5.spkg\n\nwhich has a trivial fix to remove the OS X restriction. \n\nIt was also desirable to remove these 3 lines from spkg-install, since if SAGE_CHECK was set to yes, the test suite got executed twice, which just wastes time. \n\n\n```\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\n\n\nAfter that change, on my Sun Ultra 27 running OpenSolaris x64, the test suite builds, runs once, and passes all the tests. \n\n\n\n```\nTesting zmod_poly_factor()... Cpu = 2060 ms  Wall = 2061 ms ... ok\nTesting zmod_poly_2x2_mat_mul_classical_strassen()... Cpu = 330 ms  Wall = 326 ms ... ok\nTesting zmod_poly_2x2_mat_mul()... Cpu = 1070 ms  Wall = 1073 ms ... ok\n\nAll tests passed\nTesting zmod_mat_row_reduce_gauss()... Cpu = 470 ms  Wall = 473 ms ... ok\n\nAll tests passed\nTesting ZZ_to_fmpz()... Cpu = 530 ms  Wall = 536 ms ... ok\nTesting ZZ_to_F_mpz()... Cpu = 460 ms  Wall = 457 ms ... ok\nTesting ZZX_to_fmpz_poly()... Cpu = 1710 ms  Wall = 1710 ms ... ok\n\nAll tests passed\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/flint-1.5.0.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing flint-1.5.0.p5.spkg\n```\n",
+    "body": "Here's an updated package\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/flint-1.5.0.p5.spkg\n\nwhich has a trivial fix to remove the OS X restriction. \n\nIt was also desirable to remove these 3 lines from spkg-install, since if SAGE_CHECK was set to yes, the test suite got executed twice, which just wastes time. \n\n```\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\n\nAfter that change, on my Sun Ultra 27 running OpenSolaris x64, the test suite builds, runs once, and passes all the tests. \n\n\n```\nTesting zmod_poly_factor()... Cpu = 2060 ms  Wall = 2061 ms ... ok\nTesting zmod_poly_2x2_mat_mul_classical_strassen()... Cpu = 330 ms  Wall = 326 ms ... ok\nTesting zmod_poly_2x2_mat_mul()... Cpu = 1070 ms  Wall = 1073 ms ... ok\n\nAll tests passed\nTesting zmod_mat_row_reduce_gauss()... Cpu = 470 ms  Wall = 473 ms ... ok\n\nAll tests passed\nTesting ZZ_to_fmpz()... Cpu = 530 ms  Wall = 536 ms ... ok\nTesting ZZ_to_F_mpz()... Cpu = 460 ms  Wall = 457 ms ... ok\nTesting ZZX_to_fmpz_poly()... Cpu = 1710 ms  Wall = 1710 ms ... ok\n\nAll tests passed\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/flint-1.5.0.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing flint-1.5.0.p5.spkg\n```",
     "created_at": "2010-06-19T23:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
@@ -86,16 +86,13 @@ which has a trivial fix to remove the OS X restriction.
 
 It was also desirable to remove these 3 lines from spkg-install, since if SAGE_CHECK was set to yes, the test suite got executed twice, which just wastes time. 
 
-
 ```
 if [ "$SAGE_CHECK" = "yes" ]; then
     cd ..; ./spkg-check
 fi
 ```
 
-
 After that change, on my Sun Ultra 27 running OpenSolaris x64, the test suite builds, runs once, and passes all the tests. 
-
 
 
 ```
@@ -119,7 +116,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing flint-1.5.0.p5.spkg
 ```
-
 
 
 

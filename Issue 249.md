@@ -3,7 +3,7 @@
 archive/issues_000249.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nprint preparse(\"\"\"\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n\"\"\")\n///\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+Integer(1)\n    for j in range(i+(Integer(1)-n)/Integer(2),i+(n+Integer(1))/Integer(2))] for i in range(n)]\n```\n\n\n\n```\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n```\n\n\n\n```\ntime a=m(201)\n///\nCPU time: 0.63 s,  Wall time: 0.65 s\n```\n\n\n\n```\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n\n\n```\ntime a=m(201)\n///\nCPU time: 0.60 s,  Wall time: 0.61 s\n```\n\n\n\n```\ndef m(n):\n  one = 1r; two=2r\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n\n\n```\ntime a=m(201)\n///\nCPU time: 0.75 s,  Wall time: 0.79 s\n```\n\n\n\n```\n%python\n\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n\n\n```\ntime a=m(201r)\n///\nCPU time: 0.03 s,  Wall time: 0.03 s\n```\n\n\n\n```\ndef m(n):\n  one = 1r; two=2r; n=int(n)\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n\n\n```\ntime a=m(201)\n///\nCPU time: 0.02 s,  Wall time: 0.02 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/249\n\n",
+    "body": "Assignee: somebody\n\n```\nprint preparse(\"\"\"\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n\"\"\")\n///\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+Integer(1)\n    for j in range(i+(Integer(1)-n)/Integer(2),i+(n+Integer(1))/Integer(2))] for i in range(n)]\n```\n\n```\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.63 s,  Wall time: 0.65 s\n```\n\n```\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.60 s,  Wall time: 0.61 s\n```\n\n```\ndef m(n):\n  one = 1r; two=2r\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.75 s,  Wall time: 0.79 s\n```\n\n```\n%python\n\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201r)\n///\nCPU time: 0.03 s,  Wall time: 0.03 s\n```\n\n```\ndef m(n):\n  one = 1r; two=2r; n=int(n)\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.02 s,  Wall time: 0.02 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/249\n\n",
     "created_at": "2007-02-07T06:39:19Z",
     "labels": [
         "component: basic arithmetic"
@@ -17,7 +17,6 @@ archive/issues_000249.json:
 ```
 Assignee: somebody
 
-
 ```
 print preparse("""
 def m(n):
@@ -30,23 +29,17 @@ def m(n):
     for j in range(i+(Integer(1)-n)/Integer(2),i+(n+Integer(1))/Integer(2))] for i in range(n)]
 ```
 
-
-
 ```
 def m(n):
   return [[j%n*n+(j+j-i)%n+1
     for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]
 ```
 
-
-
 ```
 time a=m(201)
 ///
 CPU time: 0.63 s,  Wall time: 0.65 s
 ```
-
-
 
 ```
 def m(n):
@@ -55,15 +48,11 @@ def m(n):
     for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
 ```
 
-
-
 ```
 time a=m(201)
 ///
 CPU time: 0.60 s,  Wall time: 0.61 s
 ```
-
-
 
 ```
 def m(n):
@@ -72,15 +61,11 @@ def m(n):
     for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
 ```
 
-
-
 ```
 time a=m(201)
 ///
 CPU time: 0.75 s,  Wall time: 0.79 s
 ```
-
-
 
 ```
 %python
@@ -91,15 +76,11 @@ def m(n):
     for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
 ```
 
-
-
 ```
 time a=m(201r)
 ///
 CPU time: 0.03 s,  Wall time: 0.03 s
 ```
-
-
 
 ```
 def m(n):
@@ -108,14 +89,11 @@ def m(n):
     for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
 ```
 
-
-
 ```
 time a=m(201)
 ///
 CPU time: 0.02 s,  Wall time: 0.02 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/249
 
@@ -237,7 +215,7 @@ I have strong concerns about this messing up things with side effects.  It is fa
 archive/issue_comments_001093.json:
 ```json
 {
-    "body": "It makes even more of a difference for real numbers. \n\nBefore \n\n\n```\n%time\nx = 0\nwhile x < 1e5:\n    x += 1.5\nCPU time: 0.71 s,  Wall time: 0.73 s\n```\n\n\nAfter\n\n\n```\n%time\nx = 0\nwhile x < 1e5:\n    x += 1.5\nCPU time: 0.06 s,  Wall time: 0.06 s\n```\n",
+    "body": "It makes even more of a difference for real numbers. \n\nBefore \n\n```\n%time\nx = 0\nwhile x < 1e5:\n    x += 1.5\nCPU time: 0.71 s,  Wall time: 0.73 s\n```\n\nAfter\n\n```\n%time\nx = 0\nwhile x < 1e5:\n    x += 1.5\nCPU time: 0.06 s,  Wall time: 0.06 s\n```",
     "created_at": "2008-09-23T21:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
@@ -250,7 +228,6 @@ It makes even more of a difference for real numbers.
 
 Before 
 
-
 ```
 %time
 x = 0
@@ -259,9 +236,7 @@ while x < 1e5:
 CPU time: 0.71 s,  Wall time: 0.73 s
 ```
 
-
 After
-
 
 ```
 %time
@@ -270,7 +245,6 @@ while x < 1e5:
     x += 1.5
 CPU time: 0.06 s,  Wall time: 0.06 s
 ```
-
 
 
 

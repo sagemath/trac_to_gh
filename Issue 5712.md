@@ -186,7 +186,7 @@ Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments
 archive/issue_comments_044551.json:
 ```json
 {
-    "body": "To note, the patch series for this is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\ntrac_5712-interrupt-notification.patch\n```\n",
+    "body": "To note, the patch series for this is:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\ntrac_5712-interrupt-notification.patch\n```",
     "created_at": "2010-01-18T07:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -196,7 +196,6 @@ archive/issue_comments_044551.json:
 ```
 
 To note, the patch series for this is:
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -223,7 +222,6 @@ trac_7962-link-worksheets-zip-file.patch
 trac_5177-delete-cell-dirs.patch
 trac_5712-interrupt-notification.patch
 ```
-
 
 
 
@@ -258,7 +256,7 @@ archive/issue_comments_044552.json:
 archive/issue_comments_044553.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n>  * I get a doctest failure from `Worksheet.interrupt`.\n> \n>  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.\n\nYes. Sure, I'll do so.\n\n> \n>  * Interrupting an idle worksheet also brings up the alert.\n\nGood catch.\n\n> \n>  * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.\n> \n\nThe point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.\n\n>  * When we do show the alert (with #7702's example or a different one), maybe we should add, e.g., \"Please try again in a few seconds.  If that doesn't work, please try restarting the worksheet.\"?",
+    "body": "Replying to [comment:7 mpatel]:\n>  * I get a doctest failure from `Worksheet.interrupt`.\n \n> \n>  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.\n\n\nYes. Sure, I'll do so.\n\n> \n>    * Interrupting an idle worksheet also brings up the alert.\n\n\nGood catch.\n\n> \n> * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.\n> \n\n\nThe point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.\n\n>  * When we do show the alert (with #7702's example or a different one), maybe we should add, e.g., \"Please try again in a few seconds.  If that doesn't work, please try restarting the worksheet.\"?",
     "created_at": "2010-01-20T11:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -269,19 +267,23 @@ archive/issue_comments_044553.json:
 
 Replying to [comment:7 mpatel]:
 >  * I get a doctest failure from `Worksheet.interrupt`.
+ 
 > 
 >  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.
+
 
 Yes. Sure, I'll do so.
 
 > 
->  * Interrupting an idle worksheet also brings up the alert.
+>    * Interrupting an idle worksheet also brings up the alert.
+
 
 Good catch.
 
 > 
->  * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.
+> * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.
 > 
+
 
 The point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.
 
@@ -294,7 +296,7 @@ The point of #7702 is not to interrupt uninterruptible calculations, but to reco
 archive/issue_comments_044554.json:
 ```json
 {
-    "body": "Replying to [comment:8 timdumol]:\n> Replying to [comment:7 mpatel]:\n> >  * I get a doctest failure from `Worksheet.interrupt`.\n> > \n> >  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.\n> \n> Yes. Sure, I'll do so.\n\nIn another ticket, that is.\n\n> \n> > \n> >  * Interrupting an idle worksheet also brings up the alert.\n> \n> Good catch.\n> \n> > \n> >  * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.\n> > \n> \n> The point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.\n> \n> >  * When we do show the alert (with #7702's example or a different one), maybe we should add, e.g., \"Please try again in a few seconds.  If that doesn't work, please try restarting the worksheet.\"?\n\nWill do so.",
+    "body": "Replying to [comment:8 timdumol]:\n> Replying to [comment:7 mpatel]:\n> >  * I get a doctest failure from `Worksheet.interrupt`.\n \n> > \n> >  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.\n \n> \n> Yes. Sure, I'll do so.\n\n\nIn another ticket, that is.\n\n> \n> > \n> > * Interrupting an idle worksheet also brings up the alert.\n\n> \n> Good catch.\n> \n> > \n> > * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.\n> > \n\n> \n> The point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.\n> \n> >  * When we do show the alert (with #7702's example or a different one), maybe we should add, e.g., \"Please try again in a few seconds.  If that doesn't work, please try restarting the worksheet.\"?\n\n\nWill do so.",
     "created_at": "2010-01-20T11:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
@@ -306,26 +308,32 @@ archive/issue_comments_044554.json:
 Replying to [comment:8 timdumol]:
 > Replying to [comment:7 mpatel]:
 > >  * I get a doctest failure from `Worksheet.interrupt`.
+ 
 > > 
 > >  * Just to check: Is `_ui-achtung.sass` just `ui.achtung.css` run through `css2sass`?  I suggest describing the conversion method briefly in `sass/readme.txt`.
+ 
 > 
 > Yes. Sure, I'll do so.
+
 
 In another ticket, that is.
 
 > 
 > > 
-> >  * Interrupting an idle worksheet also brings up the alert.
+> > * Interrupting an idle worksheet also brings up the alert.
+
 > 
 > Good catch.
 > 
 > > 
-> >  * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.
+> > * V2 does not fix #7702's example (`interrupt test.sws`).  A new alert appears every time I try to interrupt the calculation, but the calculation keeps going (e.g., according to `top`).  (I stopped after about 10 attempts.)  Restarting the worksheet does stop the calculation.  But this need not hold up this ticket, as I can interrupt other examples, such as `import time; time.sleep(10)` and `factor(factorial(100000000))`.
 > > 
+
 > 
 > The point of #7702 is not to interrupt uninterruptible calculations, but to recognize that a calculation cannot be interrupted and display an appropriate alert.
 > 
 > >  * When we do show the alert (with #7702's example or a different one), maybe we should add, e.g., "Please try again in a few seconds.  If that doesn't work, please try restarting the worksheet."?
+
 
 Will do so.
 

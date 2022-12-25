@@ -70,7 +70,7 @@ Changing status from new to needs_work.
 archive/issue_comments_064420.json:
 ```json
 {
-    "body": "I get the following failures with this patch:\n\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed\n```\n",
+    "body": "I get the following failures with this patch:\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed\n```",
     "created_at": "2009-12-02T13:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7577",
     "type": "issue_comment",
@@ -81,14 +81,12 @@ archive/issue_comments_064420.json:
 
 I get the following failures with this patch:
 
-
 ```
         sage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed
         sage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault
         sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed
         sage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed
 ```
-
 
 
 
@@ -133,7 +131,7 @@ On sage.math.  This is with the new Singular spkg from 7194.
 archive/issue_comments_064423.json:
 ```json
 {
-    "body": "I can reproduce\n\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed\nsage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault\nsage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed\n```\n\n\nbut not\n\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n```\n\n\nI am attaching a fix for the failures I can reproduce.",
+    "body": "I can reproduce\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed\nsage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault\nsage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed\n```\n\nbut not\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n```\n\nI am attaching a fix for the failures I can reproduce.",
     "created_at": "2009-12-02T14:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7577",
     "type": "issue_comment",
@@ -144,21 +142,17 @@ archive/issue_comments_064423.json:
 
 I can reproduce
 
-
 ```
 sage -t  devel/sage-main/sage/matrix/matrix_sparse.pyx # 1 doctests failed
 sage -t  devel/sage-main/sage/calculus/desolvers.py # Segfault
 sage -t  devel/sage-main/sage/matrix/matrix_mpolynomial_dense.pyx # 2 doctests failed
 ```
 
-
 but not
-
 
 ```
 sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed
 ```
-
 
 I am attaching a fix for the failures I can reproduce.
 

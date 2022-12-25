@@ -105,7 +105,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074657.json:
 ```json
 {
-    "body": "Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by @robert-marik created at 2010-03-04 16:33:22\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
+    "body": "Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by @robert-marik created at 2010-03-04 16:33:22\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
     "created_at": "2010-03-04T16:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -127,13 +127,11 @@ Traceback (click to the left of this block for traceback)
 KeyError: 'linewidths'
 ```
 
-
 did you try this?
 
 ```
 ./sage -t devel/sage/sage/plot/contour_plot.py
 ```
-
 
 My patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).
 
@@ -164,7 +162,7 @@ Jason, thank you for this patch and thank you also for the patch to #8368. I hop
 archive/issue_comments_074659.json:
 ```json
 {
-    "body": "Replying to [comment:3 robert.marik]:\n> Jason, thank you for this patch and thank you also for the patch to #8368. I hope that the issue above could be fixed easily. I suggest you to include the ticket #8368 to this one -- this could make the life of our release manager easier :) \n\nI'm afraid I would get in trouble with our (wonderfully!) picky release manager for combining tickets which arguably have different issues.  (I really appreciate Minh's reminders about the details we need to follow!)",
+    "body": "Replying to [comment:3 robert.marik]:\n> Jason, thank you for this patch and thank you also for the patch to #8368. I hope that the issue above could be fixed easily. I suggest you to include the ticket #8368 to this one -- this could make the life of our release manager easier :) \n\n\nI'm afraid I would get in trouble with our (wonderfully!) picky release manager for combining tickets which arguably have different issues.  (I really appreciate Minh's reminders about the details we need to follow!)",
     "created_at": "2010-03-04T18:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -175,6 +173,7 @@ archive/issue_comments_074659.json:
 
 Replying to [comment:3 robert.marik]:
 > Jason, thank you for this patch and thank you also for the patch to #8368. I hope that the issue above could be fixed easily. I suggest you to include the ticket #8368 to this one -- this could make the life of our release manager easier :) 
+
 
 I'm afraid I would get in trouble with our (wonderfully!) picky release manager for combining tickets which arguably have different issues.  (I really appreciate Minh's reminders about the details we need to follow!)
 
@@ -223,7 +222,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074662.json:
 ```json
 {
-    "body": "Replying to [comment:2 robert.marik]:\n> did you try this?\n> {{{\n> ./sage -t devel/sage/sage/plot/contour_plot.py\n> }}}\n\n\nWeird---I thought I did.  Well, the new patch fixes this error.\n\n> One suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?\n\nThe new patch addresses this issue as well.\n\nCan you look at this and review it again?\n\nThanks",
+    "body": "Replying to [comment:2 robert.marik]:\n> did you try this?\n> \n> ```\n> ./sage -t devel/sage/sage/plot/contour_plot.py\n> ```\n\n\n\nWeird---I thought I did.  Well, the new patch fixes this error.\n\n> One suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?\n\n\nThe new patch addresses this issue as well.\n\nCan you look at this and review it again?\n\nThanks",
     "created_at": "2010-04-15T03:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
@@ -234,14 +233,17 @@ archive/issue_comments_074662.json:
 
 Replying to [comment:2 robert.marik]:
 > did you try this?
-> {{{
+> 
+> ```
 > ./sage -t devel/sage/sage/plot/contour_plot.py
-> }}}
+> ```
+
 
 
 Weird---I thought I did.  Well, the new patch fixes this error.
 
 > One suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?
+
 
 The new patch addresses this issue as well.
 

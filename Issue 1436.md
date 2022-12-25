@@ -3,7 +3,7 @@
 archive/issues_001436.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI got the following on bsd:\n\n```\nTesting _fmpz_poly_scalar_mul_si()... ok\nTesting fmpz_poly_scalar_mul_si()... ok\nTesting _fmpz_poly_scalar_mul_fmpz()... ok\nTesting fmpz_poly_scalar_mul_fmpz()... ./spkg-check: line 16: 94786\nFloating point exception./fmpz_poly-test\n\nreal    4m39.394s\nuser    4m44.254s\nsys     0m6.256s\nsage: An error occurred while installing flint-1.01\n```\n\n\nFLINT 1.0 build and tested fine.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1436\n\n",
+    "body": "Assignee: mabshoff\n\nI got the following on bsd:\n\n```\nTesting _fmpz_poly_scalar_mul_si()... ok\nTesting fmpz_poly_scalar_mul_si()... ok\nTesting _fmpz_poly_scalar_mul_fmpz()... ok\nTesting fmpz_poly_scalar_mul_fmpz()... ./spkg-check: line 16: 94786\nFloating point exception./fmpz_poly-test\n\nreal    4m39.394s\nuser    4m44.254s\nsys     0m6.256s\nsage: An error occurred while installing flint-1.01\n```\n\nFLINT 1.0 build and tested fine.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1436\n\n",
     "created_at": "2007-12-09T16:12:45Z",
     "labels": [
         "component: packages: standard",
@@ -32,7 +32,6 @@ user    4m44.254s
 sys     0m6.256s
 sage: An error occurred while installing flint-1.01
 ```
-
 
 FLINT 1.0 build and tested fine.
 

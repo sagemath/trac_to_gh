@@ -122,7 +122,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086803.json:
 ```json
 {
-    "body": "These are definite improvements, well implemented, and doctests pass.  Just one remark:\n\nThe eventuality envisaged in the comment at line 95 of the patched\u00a0`class_group.py` (which should be referring to ideal classes rather ideals) ought to have its own doctest, such as:\n\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^2 - 2)\nsage: CK = K.class_group()\nsage: CL = L.class_group()\nsage: [CL(I).list() for I in CK]\n[[0], [2], [4]]\n```\n",
+    "body": "These are definite improvements, well implemented, and doctests pass.  Just one remark:\n\nThe eventuality envisaged in the comment at line 95 of the patched\u00a0`class_group.py` (which should be referring to ideal classes rather ideals) ought to have its own doctest, such as:\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^2 - 2)\nsage: CK = K.class_group()\nsage: CL = L.class_group()\nsage: [CL(I).list() for I in CK]\n[[0], [2], [4]]\n```",
     "created_at": "2010-06-26T11:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -135,7 +135,6 @@ These are definite improvements, well implemented, and doctests pass.  Just one 
 
 The eventuality envisaged in the comment at line 95 of the patched `class_group.py` (which should be referring to ideal classes rather ideals) ought to have its own doctest, such as:
 
-
 ```
 sage: K.<a> = QuadraticField(-23)
 sage: L.<b> = K.extension(x^2 - 2)
@@ -144,7 +143,6 @@ sage: CL = L.class_group()
 sage: [CL(I).list() for I in CK]
 [[0], [2], [4]]
 ```
-
 
 
 
@@ -207,7 +205,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086807.json:
 ```json
 {
-    "body": "Jim and I have looked at this too (we are working on #9332) and think this is nearly good to go.  (We could not see any random doctests!)\n\nThis is the only failure (we tested all of sage/rings/number_fields):\n\n\n```\n\nsage -t  \"sage/rings/number_field/class_group.py\"           \n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 144:\n    sage: C.gen(0)\nExpected:\n    Fractional ideal class (130, 1/2*a + 137/2)\nGot:\n    Fractional ideal class (41, a - 10)\n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 146:\n    sage: C.gen(1)\nExpected:\n    Fractional ideal class (7, a)\nGot:\n    Fractional ideal class (17, a)\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_class_group.py\n\t [3.1 s]\n\n```\n",
+    "body": "Jim and I have looked at this too (we are working on #9332) and think this is nearly good to go.  (We could not see any random doctests!)\n\nThis is the only failure (we tested all of sage/rings/number_fields):\n\n```\n\nsage -t  \"sage/rings/number_field/class_group.py\"           \n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 144:\n    sage: C.gen(0)\nExpected:\n    Fractional ideal class (130, 1/2*a + 137/2)\nGot:\n    Fractional ideal class (41, a - 10)\n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 146:\n    sage: C.gen(1)\nExpected:\n    Fractional ideal class (7, a)\nGot:\n    Fractional ideal class (17, a)\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_class_group.py\n\t [3.1 s]\n\n```",
     "created_at": "2010-06-27T01:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -219,7 +217,6 @@ archive/issue_comments_086807.json:
 Jim and I have looked at this too (we are working on #9332) and think this is nearly good to go.  (We could not see any random doctests!)
 
 This is the only failure (we tested all of sage/rings/number_fields):
-
 
 ```
 
@@ -249,13 +246,12 @@ For whitespace errors, see the file /home/john/.sage//tmp/.doctest_class_group.p
 
 
 
-
 ---
 
 archive/issue_comments_086808.json:
 ```json
 {
-    "body": "I've double-checked the failure. It's just a different choice of generators for the class group ( C250 x C2 for those keeping track)\n\n\n```\nsage: i = C(C.number_field().gen(),7)                \nsage: j = C(C.number_field().gen(),17)               \nsage: k = C((1/2)*C.number_field().gen() + 137/2,130)\nsage: l = C(C.number_field().gen() - 10,41)          \nsage: i.list()                                       \n[0, 1]\nsage: j.list()\n[125, 1]\nsage: k.list()\n[1, 0]\nsage: l.list()\n[88, 1]\nsage: l.order()\n250\nsage: (j*(l^125)).order()\n2\n```\n",
+    "body": "I've double-checked the failure. It's just a different choice of generators for the class group ( C250 x C2 for those keeping track)\n\n```\nsage: i = C(C.number_field().gen(),7)                \nsage: j = C(C.number_field().gen(),17)               \nsage: k = C((1/2)*C.number_field().gen() + 137/2,130)\nsage: l = C(C.number_field().gen() - 10,41)          \nsage: i.list()                                       \n[0, 1]\nsage: j.list()\n[125, 1]\nsage: k.list()\n[1, 0]\nsage: l.list()\n[88, 1]\nsage: l.order()\n250\nsage: (j*(l^125)).order()\n2\n```",
     "created_at": "2010-06-27T05:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -265,7 +261,6 @@ archive/issue_comments_086808.json:
 ```
 
 I've double-checked the failure. It's just a different choice of generators for the class group ( C250 x C2 for those keeping track)
-
 
 ```
 sage: i = C(C.number_field().gen(),7)                
@@ -285,7 +280,6 @@ sage: l.order()
 sage: (j*(l^125)).order()
 2
 ```
-
 
 
 
@@ -330,7 +324,7 @@ My bad, I forgot to qrefresh before exporting. Here's a new patch with the #rand
 archive/issue_comments_086811.json:
 ```json
 {
-    "body": "Replying to [comment:8 davidloeffler]:\n\n> Here's a new patch with the #random flags.\n\nSince this sorts out the failure that John and Jim found (but which I can't reproduce), it's a positive review.",
+    "body": "Replying to [comment:8 davidloeffler]:\n\n> Here's a new patch with the #random flags.\n\n\nSince this sorts out the failure that John and Jim found (but which I can't reproduce), it's a positive review.",
     "created_at": "2010-06-27T09:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -342,6 +336,7 @@ archive/issue_comments_086811.json:
 Replying to [comment:8 davidloeffler]:
 
 > Here's a new patch with the #random flags.
+
 
 Since this sorts out the failure that John and Jim found (but which I can't reproduce), it's a positive review.
 
@@ -460,7 +455,7 @@ Sorry, I made a mess of uploading that. Patches `trac_9244_new.patch` and `trac_
 archive/issue_comments_086818.json:
 ```json
 {
-    "body": "Replying to [comment:11 davidloeffler]:\n> This patch handles the \"proof\" argument in a slightly different way in order to make sure that bnfcertify isn't called unnecessarily.\n\nI don't think this is quite right.  I think the last two lines of the code for `_ideal_class_log` need to read\n\n```\n            self.__ideal_class_log[proof] = list(v[0])\n            return self.__ideal_class_log[proof]\n```\n",
+    "body": "Replying to [comment:11 davidloeffler]:\n> This patch handles the \"proof\" argument in a slightly different way in order to make sure that bnfcertify isn't called unnecessarily.\n\n\nI don't think this is quite right.  I think the last two lines of the code for `_ideal_class_log` need to read\n\n```\n            self.__ideal_class_log[proof] = list(v[0])\n            return self.__ideal_class_log[proof]\n```",
     "created_at": "2010-06-28T18:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -472,13 +467,13 @@ archive/issue_comments_086818.json:
 Replying to [comment:11 davidloeffler]:
 > This patch handles the "proof" argument in a slightly different way in order to make sure that bnfcertify isn't called unnecessarily.
 
+
 I don't think this is quite right.  I think the last two lines of the code for `_ideal_class_log` need to read
 
 ```
             self.__ideal_class_log[proof] = list(v[0])
             return self.__ideal_class_log[proof]
 ```
-
 
 
 
@@ -541,7 +536,7 @@ Good point; thanks for spotting that. Here's a third attempt, which corrects the
 archive/issue_comments_086822.json:
 ```json
 {
-    "body": "Is there something wrong with the new doctest?  Because\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1) \nsage: K.class_number()\n1\n```\n",
+    "body": "Is there something wrong with the new doctest?  Because\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1) \nsage: K.class_number()\n1\n```",
     "created_at": "2010-06-28T21:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -557,7 +552,6 @@ sage: K.<a> = NumberField(x^3 - x + 1)
 sage: K.class_number()
 1
 ```
-
 
 
 
@@ -584,7 +578,7 @@ replaces all previous attempts
 archive/issue_comments_086824.json:
 ```json
 {
-    "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by @loefflerd created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
+    "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by @loefflerd created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
     "created_at": "2010-06-29T07:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
@@ -600,7 +594,6 @@ Nothing wrong with the code, just my brain, apparently. It should have been
 ```
 K.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])
 ```
-
 which has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.
 
 Apologies for the complete mess I have been making of this ticket from start to finish.

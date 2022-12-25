@@ -162,7 +162,7 @@ key_down =
 archive/issue_comments_029116.json:
 ```json
 {
-    "body": "From ddrake:\n\n```\nWhen using the notebook with Google Chrome, tab completion does not seem to work; when one hits tab, you just get an orange box around the \"evaluate\" link. It seems to be using tab in the usual way (to move from one input box to another, etc) instead of doing the completion.\n\nOf course, Chrome is so new that this may very well be a bug on their part, but it's worth investigating. \n```\n",
+    "body": "From ddrake:\n\n```\nWhen using the notebook with Google Chrome, tab completion does not seem to work; when one hits tab, you just get an orange box around the \"evaluate\" link. It seems to be using tab in the usual way (to move from one input box to another, etc) instead of doing the completion.\n\nOf course, Chrome is so new that this may very well be a bug on their part, but it's worth investigating. \n```",
     "created_at": "2008-09-04T03:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
@@ -178,7 +178,6 @@ When using the notebook with Google Chrome, tab completion does not seem to work
 
 Of course, Chrome is so new that this may very well be a bug on their part, but it's worth investigating. 
 ```
-
 
 
 
@@ -305,7 +304,7 @@ What should be merged and in what order?
 archive/issue_comments_029123.json:
 ```json
 {
-    "body": "Replying to [comment:6 mvngu]:\n> What should be merged and in what order?\nJust [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *might* be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.",
+    "body": "Replying to [comment:6 mvngu]:\n> What should be merged and in what order?\n\nJust [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *might* be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.",
     "created_at": "2009-09-24T18:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
@@ -316,6 +315,7 @@ archive/issue_comments_029123.json:
 
 Replying to [comment:6 mvngu]:
 > What should be merged and in what order?
+
 Just [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *might* be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.
 
 

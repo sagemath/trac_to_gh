@@ -138,7 +138,7 @@ archive/issue_events_021702.json:
 archive/issue_comments_081640.json:
 ```json
 {
-    "body": "Even though the patch applies (with fuzz and large offset), you should rebase it to sage-4.6.2.alpha0:\n\n```\npatching file sage/graphs/graph.py\nHunk #1 succeeded at 2960 with fuzz 2 (offset 461 lines).\n```\n",
+    "body": "Even though the patch applies (with fuzz and large offset), you should rebase it to sage-4.6.2.alpha0:\n\n```\npatching file sage/graphs/graph.py\nHunk #1 succeeded at 2960 with fuzz 2 (offset 461 lines).\n```",
     "created_at": "2011-01-18T13:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
@@ -153,7 +153,6 @@ Even though the patch applies (with fuzz and large offset), you should rebase it
 patching file sage/graphs/graph.py
 Hunk #1 succeeded at 2960 with fuzz 2 (offset 461 lines).
 ```
-
 
 
 

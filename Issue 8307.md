@@ -113,7 +113,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073572.json:
 ```json
 {
-    "body": "Based on a freshly compiled Sage 4.3.3.alpha1, I made a source distribution called sage-4.3.3.alpha1.1, which is essentially the same as Sage 4.3.3.alpha1. From a Sage 4.3.3.alpha1 binary, I upgraded it to sage-4.3.3.alpha1.1 and received the following upgrade message:\n\n```\nThe following packages will be upgraded:\n  examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 gfan-0.4plu sage-4.3.3.alpha1.1 sage_scripts-4.3.3.alpha1.1\n```\n\nI didn't make any changes to the gfan spkg and yet it is slated for upgrading. After upgrading the Sage library, I received the following message about upgrading gfan:\n\n```\nDone\nThe following packages will be upgraded:\n  gfan-0.4plu\n```\n\nAnswering yes to the upgrade, the install log shows this line:\n\n```\ngfan-0.4plus.spkg already present\n```\n\nYep, it's redudant and annoying that gfan is upgraded everytime one does a source upgrade.\n\n\n\n\nHere's another try. With a freshly compiled Sage 4.3.3.alpha1, I applied [trac_8307-update_sage-update.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8307/trac_8307-update_sage-update.patch) to the scripts repository and produced a source distribution sage-4.3.3.alpha1.1. I then applied that same patch on top of a binary version of Sage 4.3.3.alpha1 and upgraded that binary distribution to sage-4.3.3.alpha1.1. This time the upgrade message reads:\n\n```\nThe following packages will be upgraded:\n\n    examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 sage-4.3.3.alpha1.1\n    sage_scripts-4.3.3.alpha1.1\n```\n\nwith no gfan within sight. The upgrade process didn't upgrade gfan.\n\n\n\n\nThe patch moves some code to the following conditional at the end of `sage-update`:\n\n```\nif __name__ == '__main__':\n   <SNIP>\n```\n\nThere are some clean up of docstrings and clean up conforming to PEP8. The real change is in adding the new function `chop()` and using it as follows:\n\n```\n-    installed = set(os.listdir(\"%s/installed/\"%SPKG_ROOT))\n-    to_download = [x for x in packages if not x.rstrip('.spkg') in installed]\n+    installed = set(os.listdir(\"%s/installed/\" % SPKG_ROOT))\n+    to_download = [x for x in packages if not chop(x, '.spkg') in installed]\n\n```\n\nPreviously, the script `sage-update` used `rstrip()` for finding a list of spkg's to upgrade. This function won't work as intended for spkg's that has an \"s\" at the end of their names just before the extension \".spkg\". The new function `chop()` does this better by testing that the name of an spkg actually ends in \".spkg\". That's why the update script wants to upgrade \"gfan-0.4plu\" when the gfan spkg is named \"gfan-0.4plus\".",
+    "body": "Based on a freshly compiled Sage 4.3.3.alpha1, I made a source distribution called sage-4.3.3.alpha1.1, which is essentially the same as Sage 4.3.3.alpha1. From a Sage 4.3.3.alpha1 binary, I upgraded it to sage-4.3.3.alpha1.1 and received the following upgrade message:\n\n```\nThe following packages will be upgraded:\n  examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 gfan-0.4plu sage-4.3.3.alpha1.1 sage_scripts-4.3.3.alpha1.1\n```\nI didn't make any changes to the gfan spkg and yet it is slated for upgrading. After upgrading the Sage library, I received the following message about upgrading gfan:\n\n```\nDone\nThe following packages will be upgraded:\n  gfan-0.4plu\n```\nAnswering yes to the upgrade, the install log shows this line:\n\n```\ngfan-0.4plus.spkg already present\n```\nYep, it's redudant and annoying that gfan is upgraded everytime one does a source upgrade.\n\n\n\n\nHere's another try. With a freshly compiled Sage 4.3.3.alpha1, I applied [trac_8307-update_sage-update.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8307/trac_8307-update_sage-update.patch) to the scripts repository and produced a source distribution sage-4.3.3.alpha1.1. I then applied that same patch on top of a binary version of Sage 4.3.3.alpha1 and upgraded that binary distribution to sage-4.3.3.alpha1.1. This time the upgrade message reads:\n\n```\nThe following packages will be upgraded:\n\n    examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 sage-4.3.3.alpha1.1\n    sage_scripts-4.3.3.alpha1.1\n```\nwith no gfan within sight. The upgrade process didn't upgrade gfan.\n\n\n\n\nThe patch moves some code to the following conditional at the end of `sage-update`:\n\n```\nif __name__ == '__main__':\n   <SNIP>\n```\nThere are some clean up of docstrings and clean up conforming to PEP8. The real change is in adding the new function `chop()` and using it as follows:\n\n```\n-    installed = set(os.listdir(\"%s/installed/\"%SPKG_ROOT))\n-    to_download = [x for x in packages if not x.rstrip('.spkg') in installed]\n+    installed = set(os.listdir(\"%s/installed/\" % SPKG_ROOT))\n+    to_download = [x for x in packages if not chop(x, '.spkg') in installed]\n\n```\nPreviously, the script `sage-update` used `rstrip()` for finding a list of spkg's to upgrade. This function won't work as intended for spkg's that has an \"s\" at the end of their names just before the extension \".spkg\". The new function `chop()` does this better by testing that the name of an spkg actually ends in \".spkg\". That's why the update script wants to upgrade \"gfan-0.4plu\" when the gfan spkg is named \"gfan-0.4plus\".",
     "created_at": "2010-02-20T10:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8307",
     "type": "issue_comment",
@@ -128,7 +128,6 @@ Based on a freshly compiled Sage 4.3.3.alpha1, I made a source distribution call
 The following packages will be upgraded:
   examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 gfan-0.4plu sage-4.3.3.alpha1.1 sage_scripts-4.3.3.alpha1.1
 ```
-
 I didn't make any changes to the gfan spkg and yet it is slated for upgrading. After upgrading the Sage library, I received the following message about upgrading gfan:
 
 ```
@@ -136,13 +135,11 @@ Done
 The following packages will be upgraded:
   gfan-0.4plu
 ```
-
 Answering yes to the upgrade, the install log shows this line:
 
 ```
 gfan-0.4plus.spkg already present
 ```
-
 Yep, it's redudant and annoying that gfan is upgraded everytime one does a source upgrade.
 
 
@@ -156,7 +153,6 @@ The following packages will be upgraded:
     examples-4.3.3.alpha1.1 extcode-4.3.3.alpha1.1 sage-4.3.3.alpha1.1
     sage_scripts-4.3.3.alpha1.1
 ```
-
 with no gfan within sight. The upgrade process didn't upgrade gfan.
 
 
@@ -168,7 +164,6 @@ The patch moves some code to the following conditional at the end of `sage-updat
 if __name__ == '__main__':
    <SNIP>
 ```
-
 There are some clean up of docstrings and clean up conforming to PEP8. The real change is in adding the new function `chop()` and using it as follows:
 
 ```
@@ -178,7 +173,6 @@ There are some clean up of docstrings and clean up conforming to PEP8. The real 
 +    to_download = [x for x in packages if not chop(x, '.spkg') in installed]
 
 ```
-
 Previously, the script `sage-update` used `rstrip()` for finding a list of spkg's to upgrade. This function won't work as intended for spkg's that has an "s" at the end of their names just before the extension ".spkg". The new function `chop()` does this better by testing that the name of an spkg actually ends in ".spkg". That's why the update script wants to upgrade "gfan-0.4plu" when the gfan spkg is named "gfan-0.4plus".
 
 

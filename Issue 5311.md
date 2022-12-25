@@ -3,7 +3,7 @@
 archive/issues_005311.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nClint writes:\n\n```\nI have released 3.8.3.  This is, of course, mainly a bugfix release.\nHowever, I have also backported some assembly kernels from the 3.9 series\nfor the Core2 and AMD64K10h architectures.  We have architectural defaults\nfor these systems, as well as the new Corei7 (64 bit only).  For Core2-based\nsystems, the speedup is substantial (K10h speedup is modest).\n\nYou should also be aware of one error, *which has not been fixed in 3.8.3*\n  http://math-atlas.sourceforge.net/errata.html#scal0\n\nCheers,\nClint\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5311\n\n",
+    "body": "Assignee: mabshoff\n\nClint writes:\n\n```\nI have released 3.8.3.  This is, of course, mainly a bugfix release.\nHowever, I have also backported some assembly kernels from the 3.9 series\nfor the Core2 and AMD64K10h architectures.  We have architectural defaults\nfor these systems, as well as the new Corei7 (64 bit only).  For Core2-based\nsystems, the speedup is substantial (K10h speedup is modest).\n\nYou should also be aware of one error, *which has not been fixed in 3.8.3*\n  http://math-atlas.sourceforge.net/errata.html#scal0\n\nCheers,\nClint\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5311\n\n",
     "created_at": "2009-02-19T05:16:09Z",
     "labels": [
         "component: packages: standard",
@@ -34,7 +34,6 @@ You should also be aware of one error, *which has not been fixed in 3.8.3*
 Cheers,
 Clint
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5311
 

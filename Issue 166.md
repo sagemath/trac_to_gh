@@ -3,7 +3,7 @@
 archive/issues_000166.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: -Mod(0, 5)\n 5\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/166\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: -Mod(0, 5)\n 5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/166\n\n",
     "created_at": "2006-11-01T22:55:52Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,12 +17,10 @@ archive/issues_000166.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: -Mod(0, 5)
  5
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/166

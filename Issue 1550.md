@@ -133,7 +133,7 @@ how to check functions with non-deterministic output?
 archive/issue_comments_009862.json:
 ```json
 {
-    "body": "Here's an example (whenever 'random' occurs, the output is not checked against the expected output):\n\n\n```\nsage: ecmfactor(1022117, 10.0) # random output\n(True, 1022117)\n```\n",
+    "body": "Here's an example (whenever 'random' occurs, the output is not checked against the expected output):\n\n```\nsage: ecmfactor(1022117, 10.0) # random output\n(True, 1022117)\n```",
     "created_at": "2008-01-22T17:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
@@ -144,12 +144,10 @@ archive/issue_comments_009862.json:
 
 Here's an example (whenever 'random' occurs, the output is not checked against the expected output):
 
-
 ```
 sage: ecmfactor(1022117, 10.0) # random output
 (True, 1022117)
 ```
-
 
 
 

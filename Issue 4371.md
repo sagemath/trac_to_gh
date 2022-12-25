@@ -73,7 +73,7 @@ It's more of a request for comments!
 archive/issue_comments_032067.json:
 ```json
 {
-    "body": "Replying to [comment:1 nthiery]:\n> In case I did not make myself clear: this patch is *not* ready for insertion in sage.\n> It's more of a request for comments!\n\n\nHere are some possible fixes for improving the documentation of the patch **lazy_attributes-4371-nt.patch**:\n\n\n\n1.\n\n```\n-easilly override a given attribute; you don't need to call the\n+easily override a given attribute; you don't need to call the\n```\n\n\n\n\n2.\n\n```\n-the internal dictionnary of the object:\n+the internal dictionary of the object:\n```\n\n\n\nOtherwise, the doc looks OK to me.",
+    "body": "Replying to [comment:1 nthiery]:\n> In case I did not make myself clear: this patch is *not* ready for insertion in sage.\n> It's more of a request for comments!\n\n\n\nHere are some possible fixes for improving the documentation of the patch **lazy_attributes-4371-nt.patch**:\n\n\n\n1.\n\n```\n-easilly override a given attribute; you don't need to call the\n+easily override a given attribute; you don't need to call the\n```\n\n\n\n2.\n\n```\n-the internal dictionnary of the object:\n+the internal dictionary of the object:\n```\n\n\nOtherwise, the doc looks OK to me.",
     "created_at": "2008-10-26T23:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
@@ -85,6 +85,7 @@ archive/issue_comments_032067.json:
 Replying to [comment:1 nthiery]:
 > In case I did not make myself clear: this patch is *not* ready for insertion in sage.
 > It's more of a request for comments!
+
 
 
 Here are some possible fixes for improving the documentation of the patch **lazy_attributes-4371-nt.patch**:
@@ -100,14 +101,12 @@ Here are some possible fixes for improving the documentation of the patch **lazy
 
 
 
-
 2.
 
 ```
 -the internal dictionnary of the object:
 +the internal dictionary of the object:
 ```
-
 
 
 Otherwise, the doc looks OK to me.
@@ -139,7 +138,7 @@ http://sage.math.washington.edu:2144/file/03b4130fb25d/lazy_attributes-4371-nt.p
 archive/issue_comments_032069.json:
 ```json
 {
-    "body": "Replying to [comment:3 nthiery]:\n> Fixes applied. Thanks. Lazy attributes now work well with new style classes:\n> \n> http://sage.math.washington.edu:2144/file/03b4130fb25d/lazy_attributes-4371-nt.patch\n\n\nFor your new patch at the above URL, here's a fix to improve your documentation:\n\n```\n-Invoking Descriptors in the python reference manual).\n+Invoking Descriptors in the Python reference manual).\n```\n",
+    "body": "Replying to [comment:3 nthiery]:\n> Fixes applied. Thanks. Lazy attributes now work well with new style classes:\n> \n> http://sage.math.washington.edu:2144/file/03b4130fb25d/lazy_attributes-4371-nt.patch\n\n\n\nFor your new patch at the above URL, here's a fix to improve your documentation:\n\n```\n-Invoking Descriptors in the python reference manual).\n+Invoking Descriptors in the Python reference manual).\n```",
     "created_at": "2008-10-27T11:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
@@ -154,13 +153,13 @@ Replying to [comment:3 nthiery]:
 > http://sage.math.washington.edu:2144/file/03b4130fb25d/lazy_attributes-4371-nt.patch
 
 
+
 For your new patch at the above URL, here's a fix to improve your documentation:
 
 ```
 -Invoking Descriptors in the python reference manual).
 +Invoking Descriptors in the Python reference manual).
 ```
-
 
 
 

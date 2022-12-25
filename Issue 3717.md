@@ -3,7 +3,7 @@
 archive/issues_003717.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n\n```\n> sage: var('c x y t')\n> (c, x, y, t)\n> sage: x=function('x',t)\n> sage: y=function('y',t)\n> sage: f=c*x*y\n> sage: diff(f,t)\n> c*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\n>\n> In the above example, x and y are some functions of t while c is\n> independent of t. If I take the derivative of f=c*x(t)*y(t), I\n> correctly obtain diff(f(t),t)=c*x(t)*diff(y(t), t) + c*y(t)*diff(x(t),\n> t), but for the result looks a bit ugly and does not show well in\n> latex. Can diff(x(t), t) be expressed in a shorter way, such as x'(t),\n> similarly to Mathematica?\n\nTry using \"print\" for a much nicer \"ascii art\" view of symbolic expressions:\n\nsage: print diff(f,t)\n\n                           d                    d\n                   c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                           dt                   dt\n\n(Hopefully the \"rich text formatting\" of this email works for you... or\njust try it out.)\n\n> Is there a way of getting derivatives\n> translated into latex code?\n\nYes, this would be easy for us to implement.\n\n\n> Something similar would apply to integrals.\n\nYep, same with my comments.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3717\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\n> sage: var('c x y t')\n> (c, x, y, t)\n> sage: x=function('x',t)\n> sage: y=function('y',t)\n> sage: f=c*x*y\n> sage: diff(f,t)\n> c*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\n>\n> In the above example, x and y are some functions of t while c is\n> independent of t. If I take the derivative of f=c*x(t)*y(t), I\n> correctly obtain diff(f(t),t)=c*x(t)*diff(y(t), t) + c*y(t)*diff(x(t),\n> t), but for the result looks a bit ugly and does not show well in\n> latex. Can diff(x(t), t) be expressed in a shorter way, such as x'(t),\n> similarly to Mathematica?\n\nTry using \"print\" for a much nicer \"ascii art\" view of symbolic expressions:\n\nsage: print diff(f,t)\n\n                           d                    d\n                   c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                           dt                   dt\n\n(Hopefully the \"rich text formatting\" of this email works for you... or\njust try it out.)\n\n> Is there a way of getting derivatives\n> translated into latex code?\n\nYes, this would be easy for us to implement.\n\n\n> Something similar would apply to integrals.\n\nYep, same with my comments.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3717\n\n",
     "created_at": "2008-07-24T10:06:46Z",
     "labels": [
         "component: calculus"
@@ -16,7 +16,6 @@ archive/issues_003717.json:
 }
 ```
 Assignee: @garyfurnish
-
 
 ```
 > sage: var('c x y t')
@@ -58,7 +57,6 @@ Yep, same with my comments.
 William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3717
 
 
@@ -88,7 +86,7 @@ Changing keywords from "" to "latex, calculus".
 archive/issue_comments_026319.json:
 ```json
 {
-    "body": "With f as above, if I do `latex(diff(f,t))`, I get\n\n```\n{{c x\\left(t\\right)} {{d}\\over{d\\,t}}\\,y\\left(t\\right)} + {{c y\\left(t\\right)} {{d}\\over{d\\,t}}\\,x\\left(t\\right)}\n```\n\nSo is there anything to be done here?  I suppose one could quibble about the spacing between the \"d\" and the \"t\", but otherwise, it already looks okay to me.",
+    "body": "With f as above, if I do `latex(diff(f,t))`, I get\n\n```\n{{c x\\left(t\\right)} {{d}\\over{d\\,t}}\\,y\\left(t\\right)} + {{c y\\left(t\\right)} {{d}\\over{d\\,t}}\\,x\\left(t\\right)}\n```\nSo is there anything to be done here?  I suppose one could quibble about the spacing between the \"d\" and the \"t\", but otherwise, it already looks okay to me.",
     "created_at": "2008-10-31T03:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3717",
     "type": "issue_comment",
@@ -102,7 +100,6 @@ With f as above, if I do `latex(diff(f,t))`, I get
 ```
 {{c x\left(t\right)} {{d}\over{d\,t}}\,y\left(t\right)} + {{c y\left(t\right)} {{d}\over{d\,t}}\,x\left(t\right)}
 ```
-
 So is there anything to be done here?  I suppose one could quibble about the spacing between the "d" and the "t", but otherwise, it already looks okay to me.
 
 
@@ -165,7 +162,7 @@ archive/issue_events_008506.json:
 archive/issue_comments_026322.json:
 ```json
 {
-    "body": "With Sage 3.3.alpha0 this now works:\n\n```\nsage: k\nc*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\nsage: print(k)\n\n                            d                    d\n                    c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                            dt                   dt\nsage: latex(k)\n{{c x\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,y\\left(t\\right)} + \n{{c y\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,x\\left(t\\right)}\n```\n\n\nI am closing this ticket as fixed. \n\nCheers,\n\nMichael",
+    "body": "With Sage 3.3.alpha0 this now works:\n\n```\nsage: k\nc*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\nsage: print(k)\n\n                            d                    d\n                    c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                            dt                   dt\nsage: latex(k)\n{{c x\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,y\\left(t\\right)} + \n{{c y\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,x\\left(t\\right)}\n```\n\nI am closing this ticket as fixed. \n\nCheers,\n\nMichael",
     "created_at": "2009-01-18T04:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3717",
     "type": "issue_comment",
@@ -188,7 +185,6 @@ sage: latex(k)
 {{c x\left(t\right)} {{{\it \partial}}\over{{\it \partial}\,t}}\,y\left(t\right)} + 
 {{c y\left(t\right)} {{{\it \partial}}\over{{\it \partial}\,t}}\,x\left(t\right)}
 ```
-
 
 I am closing this ticket as fixed. 
 

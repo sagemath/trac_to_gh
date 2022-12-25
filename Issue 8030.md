@@ -3,7 +3,7 @@
 archive/issues_008030.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  sage-combinat\n\nMy fault from #6647\n\nThe method from Gap work only for transitive group.\n\n\n```\nsage: G = PermutationGroup([[(3,4)]])\nsage: G.strong_generating_system()\n[[()], [()], [()], [()]]\nsage: G.strong_generating_system(base_of_group=[3,1,2,4])\n[[(), (3,4)], [()], [()], [()]]\n```\n\n\nIf the first position is not moved by the permutation Group. Errors appears...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8030\n\n",
+    "body": "Assignee: joyner\n\nCC:  sage-combinat\n\nMy fault from #6647\n\nThe method from Gap work only for transitive group.\n\n```\nsage: G = PermutationGroup([[(3,4)]])\nsage: G.strong_generating_system()\n[[()], [()], [()], [()]]\nsage: G.strong_generating_system(base_of_group=[3,1,2,4])\n[[(), (3,4)], [()], [()], [()]]\n```\n\nIf the first position is not moved by the permutation Group. Errors appears...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8030\n\n",
     "created_at": "2010-01-21T19:37:01Z",
     "labels": [
         "component: group theory",
@@ -25,7 +25,6 @@ My fault from #6647
 
 The method from Gap work only for transitive group.
 
-
 ```
 sage: G = PermutationGroup([[(3,4)]])
 sage: G.strong_generating_system()
@@ -33,7 +32,6 @@ sage: G.strong_generating_system()
 sage: G.strong_generating_system(base_of_group=[3,1,2,4])
 [[(), (3,4)], [()], [()], [()]]
 ```
-
 
 If the first position is not moved by the permutation Group. Errors appears...
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8030
 archive/issue_comments_070018.json:
 ```json
 {
-    "body": "I added a patch which solve the problem...\n\nI just changed the stabilizer method because the old version probably didn't point the right record of GAP for StabChain. The new stabilizer method is based form the Schreier's subgroup lemma.\n\nI ran some:\n\n```\nsage: G = SymmetricGroup(10)\nsage: H = PermutationGroup([G.random_element() for i in range(randrange(1,3,1))])\nsage: prod(map(lambda x : len(x), H.strong_generating_system()),1) == H.cardinality()\nTrue\n```\n\neverytimes, it was ok... For the speed, the method strong_generating_system is pretty slow! But I have no better idea and I still misunderstand records from GAP.",
+    "body": "I added a patch which solve the problem...\n\nI just changed the stabilizer method because the old version probably didn't point the right record of GAP for StabChain. The new stabilizer method is based form the Schreier's subgroup lemma.\n\nI ran some:\n\n```\nsage: G = SymmetricGroup(10)\nsage: H = PermutationGroup([G.random_element() for i in range(randrange(1,3,1))])\nsage: prod(map(lambda x : len(x), H.strong_generating_system()),1) == H.cardinality()\nTrue\n```\neverytimes, it was ok... For the speed, the method strong_generating_system is pretty slow! But I have no better idea and I still misunderstand records from GAP.",
     "created_at": "2010-01-23T20:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ sage: H = PermutationGroup([G.random_element() for i in range(randrange(1,3,1))]
 sage: prod(map(lambda x : len(x), H.strong_generating_system()),1) == H.cardinality()
 True
 ```
-
 everytimes, it was ok... For the speed, the method strong_generating_system is pretty slow! But I have no better idea and I still misunderstand records from GAP.
 
 
@@ -150,7 +147,7 @@ I change the title hoping someone will pass to check that...
 archive/issue_comments_070022.json:
 ```json
 {
-    "body": "Hi Nicolas!\n\nThe tests are running.\n\nFor the record: I tried to compare the results in the new doctests\nwith GAP, and I get the following difference:\n\n\n```\ngap> G := Group([ (1,2) (3,4), (1,2,3,4,10) ]);\nGroup([ (1,2)(3,4), (1,2,3,4,10) ])\ngap> Stabilizer(G, 10);                        \nGroup([ (1,2)(3,4), (2,3,4) ])\n```\n\n\n\n```\nsage: G = PermutationGroup([[(1,2),(3,4)], [(1,2,3,4,10)]]) \nsage: G.stabilizer(10) \nPermutation Group with generators [(), (1,2)(3,4), (1,2,3), (1,2,4), (1,3,2), (1,3,4), (1,4,2)] \n```\n\n\nWell, in fact the results are equal:\n\n\n```\nsage: G2 = PermutationGroup( [ [(1,2),(3,4)], [(2,3,4)] ])\nsage: G.stabilizer(10) == G2\nTrue\n```\n\n\nbut GAP's result is nicer.",
+    "body": "Hi Nicolas!\n\nThe tests are running.\n\nFor the record: I tried to compare the results in the new doctests\nwith GAP, and I get the following difference:\n\n```\ngap> G := Group([ (1,2) (3,4), (1,2,3,4,10) ]);\nGroup([ (1,2)(3,4), (1,2,3,4,10) ])\ngap> Stabilizer(G, 10);                        \nGroup([ (1,2)(3,4), (2,3,4) ])\n```\n\n```\nsage: G = PermutationGroup([[(1,2),(3,4)], [(1,2,3,4,10)]]) \nsage: G.stabilizer(10) \nPermutation Group with generators [(), (1,2)(3,4), (1,2,3), (1,2,4), (1,3,2), (1,3,4), (1,4,2)] \n```\n\nWell, in fact the results are equal:\n\n```\nsage: G2 = PermutationGroup( [ [(1,2),(3,4)], [(2,3,4)] ])\nsage: G.stabilizer(10) == G2\nTrue\n```\n\nbut GAP's result is nicer.",
     "created_at": "2010-04-18T16:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -166,7 +163,6 @@ The tests are running.
 For the record: I tried to compare the results in the new doctests
 with GAP, and I get the following difference:
 
-
 ```
 gap> G := Group([ (1,2) (3,4), (1,2,3,4,10) ]);
 Group([ (1,2)(3,4), (1,2,3,4,10) ])
@@ -174,24 +170,19 @@ gap> Stabilizer(G, 10);
 Group([ (1,2)(3,4), (2,3,4) ])
 ```
 
-
-
 ```
 sage: G = PermutationGroup([[(1,2),(3,4)], [(1,2,3,4,10)]]) 
 sage: G.stabilizer(10) 
 Permutation Group with generators [(), (1,2)(3,4), (1,2,3), (1,2,4), (1,3,2), (1,3,4), (1,4,2)] 
 ```
 
-
 Well, in fact the results are equal:
-
 
 ```
 sage: G2 = PermutationGroup( [ [(1,2),(3,4)], [(2,3,4)] ])
 sage: G.stabilizer(10) == G2
 True
 ```
-
 
 but GAP's result is nicer.
 
@@ -412,7 +403,7 @@ Resolution: fixed
 archive/issue_comments_070033.json:
 ```json
 {
-    "body": "It seems that [attachment:trac_8030-reviewer-doc-edit.patch] made it into 4.4.3.alpha2.  From building the PDF reference manual:\n\n```\n[2668] [2669] [2670] [2671] [2672] [2673] [2674] [2675] [2676] [2677]\n! Undefined control sequence.\nl.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant\n                                                   i \\leqslant n}$\n? \n```\n\nI suppose #9102 is the place to fix this?",
+    "body": "It seems that [attachment:trac_8030-reviewer-doc-edit.patch] made it into 4.4.3.alpha2.  From building the PDF reference manual:\n\n```\n[2668] [2669] [2670] [2671] [2672] [2673] [2674] [2675] [2676] [2677]\n! Undefined control sequence.\nl.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant\n                                                   i \\leqslant n}$\n? \n```\nI suppose #9102 is the place to fix this?",
     "created_at": "2010-06-03T09:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -430,7 +421,6 @@ l.217693 ...als}(\mathrm{pos}_{i+1})]_{1 \leqslant
                                                    i \leqslant n}$
 ? 
 ```
-
 I suppose #9102 is the place to fix this?
 
 
@@ -440,7 +430,7 @@ I suppose #9102 is the place to fix this?
 archive/issue_comments_070034.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> It seems that [attachment:trac_8030-reviewer-doc-edit.patch] made it into 4.4.3.alpha2.  From building the PDF reference manual:\n> {{{\n> [2668] [2669] [2670] [2671] [2672] [2673] [2674] [2675] [2676] [2677]\n> ! Undefined control sequence.\n> l.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant\n>                                                    i \\leqslant n}$\n> ? \n> }}}\n> I suppose #9102 is the place to fix this?\n\nHi Misha,\n\nThat was a new macro to me, and worked fine in the HTML version of the docs.  Looks like it is part of the AMS packages.  I'll work on a patch as part of #9102, but long-term, does the PDF version need  amsmath or amssymb  packages to be included?  I can investigate later, but have a busy day today, so I'll get a quick fix up first.\n\nRob",
+    "body": "Replying to [comment:10 mpatel]:\n> It seems that [attachment:trac_8030-reviewer-doc-edit.patch] made it into 4.4.3.alpha2.  From building the PDF reference manual:\n> \n> ```\n> [2668] [2669] [2670] [2671] [2672] [2673] [2674] [2675] [2676] [2677]\n> ! Undefined control sequence.\n> l.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant\n>                                                    i \\leqslant n}$\n> ? \n> ```\n> I suppose #9102 is the place to fix this?\n\n\nHi Misha,\n\nThat was a new macro to me, and worked fine in the HTML version of the docs.  Looks like it is part of the AMS packages.  I'll work on a patch as part of #9102, but long-term, does the PDF version need  amsmath or amssymb  packages to be included?  I can investigate later, but have a busy day today, so I'll get a quick fix up first.\n\nRob",
     "created_at": "2010-06-03T15:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
@@ -451,14 +441,16 @@ archive/issue_comments_070034.json:
 
 Replying to [comment:10 mpatel]:
 > It seems that [attachment:trac_8030-reviewer-doc-edit.patch] made it into 4.4.3.alpha2.  From building the PDF reference manual:
-> {{{
+> 
+> ```
 > [2668] [2669] [2670] [2671] [2672] [2673] [2674] [2675] [2676] [2677]
 > ! Undefined control sequence.
 > l.217693 ...als}(\mathrm{pos}_{i+1})]_{1 \leqslant
 >                                                    i \leqslant n}$
 > ? 
-> }}}
+> ```
 > I suppose #9102 is the place to fix this?
+
 
 Hi Misha,
 

@@ -85,7 +85,7 @@ Resolution: duplicate
 archive/issue_comments_083048.json:
 ```json
 {
-    "body": "Replying to [comment:1 robertwb]:\n> Dupe of #8995 (though this description is slightly more informative). If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique. \n\nI agree. I use my email address as a username for the same reasons.",
+    "body": "Replying to [comment:1 robertwb]:\n> Dupe of #8995 (though this description is slightly more informative). If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique. \n\n\nI agree. I use my email address as a username for the same reasons.",
     "created_at": "2010-05-20T02:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8996",
     "type": "issue_comment",
@@ -96,6 +96,7 @@ archive/issue_comments_083048.json:
 
 Replying to [comment:1 robertwb]:
 > Dupe of #8995 (though this description is slightly more informative). If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique. 
+
 
 I agree. I use my email address as a username for the same reasons.
 

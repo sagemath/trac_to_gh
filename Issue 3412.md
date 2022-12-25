@@ -3,7 +3,7 @@
 archive/issues_003412.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nAfter building sage-3.0.3.alpha2:\n\n```\nsage: hg_sage()\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\n? sage/misc/allocator.h\n? sage/server/notebook/a.txt\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3412\n\n",
+    "body": "Assignee: cwitty\n\nAfter building sage-3.0.3.alpha2:\n\n```\nsage: hg_sage()\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\n? sage/misc/allocator.h\n? sage/server/notebook/a.txt\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3412\n\n",
     "created_at": "2008-06-13T14:16:21Z",
     "labels": [
         "component: misc",
@@ -28,7 +28,6 @@ cd "/home/was/build/sage-3.0.3.alpha2/devel/sage" && hg status
 ? sage/server/notebook/a.txt
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3412
 

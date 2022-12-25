@@ -3,7 +3,7 @@
 archive/issues_004072.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
+    "body": "Assignee: @williamstein\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
     "created_at": "2008-09-07T18:23:43Z",
     "labels": [
         "component: interfaces",
@@ -18,7 +18,6 @@ archive/issues_004072.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 File "/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py", line 164:
@@ -70,7 +69,6 @@ exit code: 1024
 The following tests failed:
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4072
 
@@ -137,7 +135,7 @@ Changing status from new to assigned.
 archive/issue_comments_029330.json:
 ```json
 {
-    "body": "I seem to have another (unrelated?) problem which isn't fixed in rc0 + this patch:\n\n\n```\nsage -t  devel/sage/sage/interfaces/sage0.py                **********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 276:\n    sage: sage0.eval('2+2')\nExpected:\n    '4'\nGot:\n    '\\x1b[0;31m\\x1b[0m4'\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 317:\n    sage: sage0.get('x')\nExpected:\n    \"...NameError: name 'x' is not defined\"\nGot:\n    \"\\x1b[0;31m---------------------------------------------------------------------------\\x1b[0m\\n\\x1b[0;31mNameError\\x1b[0m                                 Traceback (most recent call last)\\n\\n\\x1b[0;32m/usr/local/sage-3.1.2.rc0/data/extcode/sage/<ipython console>\\x1b[0m in \\x1b[0;36m<module>\\x1b[0;34m()\\x1b[0m\\n\\n\\x1b[0;31mNameError\\x1b[0m: name 'x' is not defined\"\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 326:\n    sage: sage0._contains('2', 'QQ')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 432:\n    sage: sage0(4).gcd\nExpected:\n    <built-in method gcd of sage.rings.integer.Integer object at 0x...>\nGot:\n    <built-in method gcd of sage.rings.integer.Integer object at 0x33f2d80>\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 177:\n    sage: s.eval('2+2')\nExpected:\n    '4'\nGot:\n    '\\x1b[0;31m\\x1b[0m4'\n**********************************************************************\n5 items had failures:\n   1 of   3 in __main__.example_10\n   1 of   6 in __main__.example_13\n   1 of   3 in __main__.example_14\n   1 of   3 in __main__.example_22\n   1 of   5 in __main__.example_5\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /usr/local/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [8.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/interfaces/sage0.py\n```\n",
+    "body": "I seem to have another (unrelated?) problem which isn't fixed in rc0 + this patch:\n\n```\nsage -t  devel/sage/sage/interfaces/sage0.py                **********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 276:\n    sage: sage0.eval('2+2')\nExpected:\n    '4'\nGot:\n    '\\x1b[0;31m\\x1b[0m4'\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 317:\n    sage: sage0.get('x')\nExpected:\n    \"...NameError: name 'x' is not defined\"\nGot:\n    \"\\x1b[0;31m---------------------------------------------------------------------------\\x1b[0m\\n\\x1b[0;31mNameError\\x1b[0m                                 Traceback (most recent call last)\\n\\n\\x1b[0;32m/usr/local/sage-3.1.2.rc0/data/extcode/sage/<ipython console>\\x1b[0m in \\x1b[0;36m<module>\\x1b[0;34m()\\x1b[0m\\n\\n\\x1b[0;31mNameError\\x1b[0m: name 'x' is not defined\"\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 326:\n    sage: sage0._contains('2', 'QQ')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 432:\n    sage: sage0(4).gcd\nExpected:\n    <built-in method gcd of sage.rings.integer.Integer object at 0x...>\nGot:\n    <built-in method gcd of sage.rings.integer.Integer object at 0x33f2d80>\n**********************************************************************\nFile \"/usr/local/sage-3.1.2.rc0/tmp/sage0.py\", line 177:\n    sage: s.eval('2+2')\nExpected:\n    '4'\nGot:\n    '\\x1b[0;31m\\x1b[0m4'\n**********************************************************************\n5 items had failures:\n   1 of   3 in __main__.example_10\n   1 of   6 in __main__.example_13\n   1 of   3 in __main__.example_14\n   1 of   3 in __main__.example_22\n   1 of   5 in __main__.example_5\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /usr/local/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [8.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/interfaces/sage0.py\n```",
     "created_at": "2008-09-07T19:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
@@ -147,7 +145,6 @@ archive/issue_comments_029330.json:
 ```
 
 I seem to have another (unrelated?) problem which isn't fixed in rc0 + this patch:
-
 
 ```
 sage -t  devel/sage/sage/interfaces/sage0.py                **********************************************************************
@@ -206,13 +203,12 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_029331.json:
 ```json
 {
-    "body": "\n```\n[20:02] <mabshoff> malb: The failure you are seeing with http://trac.sagemath.org/sage_trac/ticket/4072 is related to ipython and its color handling on the shell.\n```\n\n\nSo I disabled colors in iPython and all is good.",
+    "body": "```\n[20:02] <mabshoff> malb: The failure you are seeing with http://trac.sagemath.org/sage_trac/ticket/4072 is related to ipython and its color handling on the shell.\n```\n\nSo I disabled colors in iPython and all is good.",
     "created_at": "2008-09-07T19:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
@@ -221,11 +217,9 @@ archive/issue_comments_029331.json:
 }
 ```
 
-
 ```
 [20:02] <mabshoff> malb: The failure you are seeing with http://trac.sagemath.org/sage_trac/ticket/4072 is related to ipython and its color handling on the shell.
 ```
-
 
 So I disabled colors in iPython and all is good.
 

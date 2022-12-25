@@ -3,7 +3,7 @@
 archive/issues_001858.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
+    "body": "Assignee: @williamstein\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
     "created_at": "2008-01-20T00:33:52Z",
     "labels": [
         "component: graphics",
@@ -27,7 +27,6 @@ plot.py
 ERROR: Please define a s == loads(dumps(s)) doctest.
 SCORE plot.py: 13% (25 of 185)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1858
@@ -59,7 +58,7 @@ Changing status from new to assigned.
 archive/issue_comments_011725.json:
 ```json
 {
-    "body": "after:\n\n```\nteragon:plot was$ sage -coverage plot.py|more\n----------------------------------------------------------------------\nplot.py\nSCORE plot.py: 35% (64 of 180)\n```\n\n\nIt's a start at least.",
+    "body": "after:\n\n```\nteragon:plot was$ sage -coverage plot.py|more\n----------------------------------------------------------------------\nplot.py\nSCORE plot.py: 35% (64 of 180)\n```\n\nIt's a start at least.",
     "created_at": "2008-01-20T04:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
@@ -76,7 +75,6 @@ teragon:plot was$ sage -coverage plot.py|more
 plot.py
 SCORE plot.py: 35% (64 of 180)
 ```
-
 
 It's a start at least.
 
@@ -105,7 +103,7 @@ Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/tra
 archive/issue_comments_011727.json:
 ```json
 {
-    "body": "The following docstring is probably wrong -- each entry is probably a float between 0 and 1, inclusive.\n\n\n```\n467\t        INPUT: \n468\t            c -- an rgb color 3-tuple, where each tuple entry is an \n469\t                 integer between 0 and 1 \n```\n\n\nBut I think this should be applied.",
+    "body": "The following docstring is probably wrong -- each entry is probably a float between 0 and 1, inclusive.\n\n```\n467\t        INPUT: \n468\t            c -- an rgb color 3-tuple, where each tuple entry is an \n469\t                 integer between 0 and 1 \n```\n\nBut I think this should be applied.",
     "created_at": "2008-01-20T21:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
@@ -116,13 +114,11 @@ archive/issue_comments_011727.json:
 
 The following docstring is probably wrong -- each entry is probably a float between 0 and 1, inclusive.
 
-
 ```
 467	        INPUT: 
 468	            c -- an rgb color 3-tuple, where each tuple entry is an 
 469	                 integer between 0 and 1 
 ```
-
 
 But I think this should be applied.
 

@@ -3,7 +3,7 @@
 archive/issues_007419.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis does not produce half of a sphere:\n\n\n```\nimplicit_plot3d((x^2)/2+(y^2)/2+(z^2)/2,(x,-5,5),(y,-5,5),(z,\n0,5),contour=2)\n```\n\n\nThe problem and solution were found in http://groups.google.com/group/sage-support/browse_thread/thread/69efe89a6aa97473\n\nReported by Micah (I don't see a last name on the email post reporting this)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7419\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis does not produce half of a sphere:\n\n```\nimplicit_plot3d((x^2)/2+(y^2)/2+(z^2)/2,(x,-5,5),(y,-5,5),(z,\n0,5),contour=2)\n```\n\nThe problem and solution were found in http://groups.google.com/group/sage-support/browse_thread/thread/69efe89a6aa97473\n\nReported by Micah (I don't see a last name on the email post reporting this)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7419\n\n",
     "created_at": "2009-11-09T17:44:29Z",
     "labels": [
         "component: graphics",
@@ -22,12 +22,10 @@ CC:  wcauchois
 
 This does not produce half of a sphere:
 
-
 ```
 implicit_plot3d((x^2)/2+(y^2)/2+(z^2)/2,(x,-5,5),(y,-5,5),(z,
 0,5),contour=2)
 ```
-
 
 The problem and solution were found in http://groups.google.com/group/sage-support/browse_thread/thread/69efe89a6aa97473
 

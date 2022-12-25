@@ -3,7 +3,7 @@
 archive/issues_000368.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this\n\n\n```\nvar('x a b')\nshow(solve(x^3 + c*x + b ==0, x)[0])\n```\n\n\nThen eval, click edit and save.\nIt doesn't work since the output of show\nhas }}} in it -- it's part of valid latex.\n\nWhat are we to do?\n\nIssue created by migration from https://trac.sagemath.org/ticket/368\n\n",
+    "body": "Assignee: boothby\n\nTry this\n\n```\nvar('x a b')\nshow(solve(x^3 + c*x + b ==0, x)[0])\n```\n\nThen eval, click edit and save.\nIt doesn't work since the output of show\nhas }}} in it -- it's part of valid latex.\n\nWhat are we to do?\n\nIssue created by migration from https://trac.sagemath.org/ticket/368\n\n",
     "created_at": "2007-05-18T16:12:13Z",
     "labels": [
         "component: notebook",
@@ -19,12 +19,10 @@ Assignee: boothby
 
 Try this
 
-
 ```
 var('x a b')
 show(solve(x^3 + c*x + b ==0, x)[0])
 ```
-
 
 Then eval, click edit and save.
 It doesn't work since the output of show

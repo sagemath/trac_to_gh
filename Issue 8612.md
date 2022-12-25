@@ -3,7 +3,7 @@
 archive/issues_008612.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
+    "body": "Assignee: @williamstein\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
     "created_at": "2010-03-26T05:46:26Z",
     "labels": [
         "component: linear algebra",
@@ -34,7 +34,6 @@ These lines are in misc.pyx:
         M = prod * p*p*p
 
 ```
-
 
 Notice the "if True" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.
 
@@ -87,7 +86,7 @@ Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/tra
 archive/issue_comments_077908.json:
 ```json
 {
-    "body": "In \n\n\n```\nd   = E.denominator()\nhdE = long(E.height())\nif True or hdE * self.ncols() * height < prod:\n    break\n```\n\n\ndoes  d  need to multiply  E.height()  at some point in the computation of hdE?  \n\nIt seems so in the algorithm as outlined in step (5) in the docstring.  And if not, does  d  then not need to be computed?  Hopefully, there's something mildly amiss here, but I've not studied the whole routine carefully.\n\nRob",
+    "body": "In \n\n```\nd   = E.denominator()\nhdE = long(E.height())\nif True or hdE * self.ncols() * height < prod:\n    break\n```\n\ndoes  d  need to multiply  E.height()  at some point in the computation of hdE?  \n\nIt seems so in the algorithm as outlined in step (5) in the docstring.  And if not, does  d  then not need to be computed?  Hopefully, there's something mildly amiss here, but I've not studied the whole routine carefully.\n\nRob",
     "created_at": "2010-03-28T23:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
@@ -98,14 +97,12 @@ archive/issue_comments_077908.json:
 
 In 
 
-
 ```
 d   = E.denominator()
 hdE = long(E.height())
 if True or hdE * self.ncols() * height < prod:
     break
 ```
-
 
 does  d  need to multiply  E.height()  at some point in the computation of hdE?  
 
@@ -120,7 +117,7 @@ Rob
 archive/issue_comments_077909.json:
 ```json
 {
-    "body": "Yes, you're right, it needs to be \n\n```\nhdE = long((d*E).height())\n```\n\n\nThe algorithm is described with proof here: http://wstein.org/books/modform/modform/linear_algebra.html#echelon-forms-over\n\nI've posted a part2 patch that fixes the issue you've pointed out.",
+    "body": "Yes, you're right, it needs to be \n\n```\nhdE = long((d*E).height())\n```\n\nThe algorithm is described with proof here: http://wstein.org/books/modform/modform/linear_algebra.html#echelon-forms-over\n\nI've posted a part2 patch that fixes the issue you've pointed out.",
     "created_at": "2010-03-29T04:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
@@ -134,7 +131,6 @@ Yes, you're right, it needs to be
 ```
 hdE = long((d*E).height())
 ```
-
 
 The algorithm is described with proof here: http://wstein.org/books/modform/modform/linear_algebra.html#echelon-forms-over
 

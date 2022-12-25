@@ -3,7 +3,7 @@
 archive/issues_004873.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nwstein@sage:~$ /usr/local/bin/sage -optional\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list\n[Errno 13] Permission denied: '/usr/local/sage/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/optional/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4873\n\n",
+    "body": "Assignee: mabshoff\n\n```\nwstein@sage:~$ /usr/local/bin/sage -optional\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list\n[Errno 13] Permission denied: '/usr/local/sage/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/optional/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4873\n\n",
     "created_at": "2008-12-24T18:36:36Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_004873.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 wstein@sage:~$ /usr/local/bin/sage -optional
@@ -46,7 +45,6 @@ then try again.
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4873
 

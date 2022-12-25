@@ -3,7 +3,7 @@
 archive/issues_006953.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ylchapuy @malb\n\nThis is a follow-up to ticket #6950. I got the following warning when building the reference manual with the patch at #6950:\n\n```\nWARNING: inline latex u'f(x)g(x) = 0 \\x0corall x.\\n\\n': latex exited with error:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6953\n\n",
+    "body": "Assignee: tba\n\nCC:  ylchapuy @malb\n\nThis is a follow-up to ticket #6950. I got the following warning when building the reference manual with the patch at #6950:\n\n```\nWARNING: inline latex u'f(x)g(x) = 0 \\x0corall x.\\n\\n': latex exited with error:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6953\n\n",
     "created_at": "2009-09-17T23:35:08Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,6 @@ This is a follow-up to ticket #6950. I got the following warning when building t
 ```
 WARNING: inline latex u'f(x)g(x) = 0 \x0corall x.\n\n': latex exited with error:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6953
 

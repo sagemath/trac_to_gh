@@ -3,7 +3,7 @@
 archive/issues_007441.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n>> I go to \"upload\", and try to upload a worksheet from url in a public\n>> notebook --- so it's an https://... I guess that's why it fails (the\n>> page itself is a published worksheet, so password is not required, but\n>> I guess the upload can't pull a worksheet from an https url).\n>\n> Upload from a URL can't upload from a published worksheet that is\n> published as http or https, actually.  It never occurred to me to\n> implement that.  It's meant for uploading sws files, which might be\n> sitting on the web somewhere.     Uploading from the URL of a\n> published worksheet is an interesting idea.\n>\n\n+1 to this.  More than once, I've tried it, and found out again and\nagain that it didn't work.\n\n -- Jason\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7441\n\n",
+    "body": "Assignee: boothby\n\n```\n>> I go to \"upload\", and try to upload a worksheet from url in a public\n>> notebook --- so it's an https://... I guess that's why it fails (the\n>> page itself is a published worksheet, so password is not required, but\n>> I guess the upload can't pull a worksheet from an https url).\n>\n> Upload from a URL can't upload from a published worksheet that is\n> published as http or https, actually.  It never occurred to me to\n> implement that.  It's meant for uploading sws files, which might be\n> sitting on the web somewhere.     Uploading from the URL of a\n> published worksheet is an interesting idea.\n>\n\n+1 to this.  More than once, I've tried it, and found out again and\nagain that it didn't work.\n\n -- Jason\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7441\n\n",
     "created_at": "2009-11-12T06:40:03Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_007441.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 >> I go to "upload", and try to upload a worksheet from url in a public
@@ -37,7 +36,6 @@ again that it didn't work.
 
  -- Jason
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7441
 
@@ -76,7 +74,7 @@ Some kind of magic incantation in the html would also allow people to use random
 archive/issue_comments_062527.json:
 ```json
 {
-    "body": "Well, that's my \"don't forget to use preview\" lesson for today...\n\nReplying to [comment:1 ddrake]:\n> published worksheets have something like this in their html source:\n\nI meant to follow that with:\n\n\n```\n<li><a href=\"download/blargle floomp.sws\">Download.</a></li>\n```\n",
+    "body": "Well, that's my \"don't forget to use preview\" lesson for today...\n\nReplying to [comment:1 ddrake]:\n> published worksheets have something like this in their html source:\n\n\nI meant to follow that with:\n\n```\n<li><a href=\"download/blargle floomp.sws\">Download.</a></li>\n```",
     "created_at": "2010-03-02T09:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
@@ -90,13 +88,12 @@ Well, that's my "don't forget to use preview" lesson for today...
 Replying to [comment:1 ddrake]:
 > published worksheets have something like this in their html source:
 
-I meant to follow that with:
 
+I meant to follow that with:
 
 ```
 <li><a href="download/blargle floomp.sws">Download.</a></li>
 ```
-
 
 
 
@@ -105,7 +102,7 @@ I meant to follow that with:
 archive/issue_comments_062528.json:
 ```json
 {
-    "body": "I think we can implement the \"magic incantation\" with something very simple, just like RSS autodiscovery. In the `<head>` of any HTML document that wishes to advertise a link to a related Sage worksheet, just put:\n\n```\n<link rel=\"alternate\" type=\"application/sage\" title=\"the title of the worksheet\"\n      href=\"http://url.to.worksheet.sws\">\n```\n\nThe \"application/sage\" mimics what the notebook server gives when downloading a worksheet from the \"Download\" link on a published worksheet. I don't know if that's a proper MIME type.\n\nMore info: http://www.rssboard.org/rss-autodiscovery and http://www.w3schools.com/tags/tag_link.asp. The rel=\"alternate\" specifies that the link is to an alternate version of the content, which is exactly what we want.\n\nWe just need to put that link into published worksheets, and then get the \"upload worksheet from URL\" stuff to look for that link.\n\nRSS autodiscovery is well-established and works very well, so using the same mechanism for our own purposes seems like a good idea, and is very easy for anyone to use on any web page.",
+    "body": "I think we can implement the \"magic incantation\" with something very simple, just like RSS autodiscovery. In the `<head>` of any HTML document that wishes to advertise a link to a related Sage worksheet, just put:\n\n```\n<link rel=\"alternate\" type=\"application/sage\" title=\"the title of the worksheet\"\n      href=\"http://url.to.worksheet.sws\">\n```\nThe \"application/sage\" mimics what the notebook server gives when downloading a worksheet from the \"Download\" link on a published worksheet. I don't know if that's a proper MIME type.\n\nMore info: http://www.rssboard.org/rss-autodiscovery and http://www.w3schools.com/tags/tag_link.asp. The rel=\"alternate\" specifies that the link is to an alternate version of the content, which is exactly what we want.\n\nWe just need to put that link into published worksheets, and then get the \"upload worksheet from URL\" stuff to look for that link.\n\nRSS autodiscovery is well-established and works very well, so using the same mechanism for our own purposes seems like a good idea, and is very easy for anyone to use on any web page.",
     "created_at": "2010-03-26T01:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
@@ -120,7 +117,6 @@ I think we can implement the "magic incantation" with something very simple, jus
 <link rel="alternate" type="application/sage" title="the title of the worksheet"
       href="http://url.to.worksheet.sws">
 ```
-
 The "application/sage" mimics what the notebook server gives when downloading a worksheet from the "Download" link on a published worksheet. I don't know if that's a proper MIME type.
 
 More info: http://www.rssboard.org/rss-autodiscovery and http://www.w3schools.com/tags/tag_link.asp. The rel="alternate" specifies that the link is to an alternate version of the content, which is exactly what we want.
@@ -240,7 +236,7 @@ Changing status from new to needs_work.
 archive/issue_comments_062534.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n>  Dan, does the second patch also parse OLD published worksheets, and links in the form `http://www.sagenb.org/home/pub/2423` (that is, the directory)?  I assume that the first patch only will make it easier to upload html links on worksheets published *after* this patch is incorporated, not older published worksheets.\n\nThat's correct. My intent here is to only affect worksheets published *after* these patches are put in. Users can always republish a worksheet to get the new stuff included in the published version.",
+    "body": "Replying to [comment:5 kcrisman]:\n>  Dan, does the second patch also parse OLD published worksheets, and links in the form `http://www.sagenb.org/home/pub/2423` (that is, the directory)?  I assume that the first patch only will make it easier to upload html links on worksheets published *after* this patch is incorporated, not older published worksheets.\n\n\nThat's correct. My intent here is to only affect worksheets published *after* these patches are put in. Users can always republish a worksheet to get the new stuff included in the published version.",
     "created_at": "2011-01-19T05:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
@@ -251,6 +247,7 @@ archive/issue_comments_062534.json:
 
 Replying to [comment:5 kcrisman]:
 >  Dan, does the second patch also parse OLD published worksheets, and links in the form `http://www.sagenb.org/home/pub/2423` (that is, the directory)?  I assume that the first patch only will make it easier to upload html links on worksheets published *after* this patch is incorporated, not older published worksheets.
+
 
 That's correct. My intent here is to only affect worksheets published *after* these patches are put in. Users can always republish a worksheet to get the new stuff included in the published version.
 

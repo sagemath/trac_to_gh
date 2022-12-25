@@ -429,7 +429,7 @@ Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/so
 archive/issue_comments_075706.json:
 ```json
 {
-    "body": "I have uploaded the patch trac_8442-lie-rebased-to-4.4.2.alpha0.\n\nThis contains the three patches:\n\n\n```\ntrac_8442-lie-rebased.patch \ntrac_8442-reviewer.patch-reviewer patch\ntrac_8442-weyl_groups-revision.patch\n```\n\n\nThe purpose of this patch is simply to address mjordan's comment that the patch does not apply cleanly. In order to accomplish a clean this the patch\nadds files doc/en/thematic_tutorials/index.rst and bibliography.rst.\nThese files presume that three other thematic tutorials will also be included in sage - otherwise they will produce broken links. \n\nThe release manager may prefer to work with the original three patches.\n\nNote that in addition to the patch three .png files must be included.",
+    "body": "I have uploaded the patch trac_8442-lie-rebased-to-4.4.2.alpha0.\n\nThis contains the three patches:\n\n```\ntrac_8442-lie-rebased.patch \ntrac_8442-reviewer.patch-reviewer patch\ntrac_8442-weyl_groups-revision.patch\n```\n\nThe purpose of this patch is simply to address mjordan's comment that the patch does not apply cleanly. In order to accomplish a clean this the patch\nadds files doc/en/thematic_tutorials/index.rst and bibliography.rst.\nThese files presume that three other thematic tutorials will also be included in sage - otherwise they will produce broken links. \n\nThe release manager may prefer to work with the original three patches.\n\nNote that in addition to the patch three .png files must be included.",
     "created_at": "2010-05-15T04:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -442,13 +442,11 @@ I have uploaded the patch trac_8442-lie-rebased-to-4.4.2.alpha0.
 
 This contains the three patches:
 
-
 ```
 trac_8442-lie-rebased.patch 
 trac_8442-reviewer.patch-reviewer patch
 trac_8442-weyl_groups-revision.patch
 ```
-
 
 The purpose of this patch is simply to address mjordan's comment that the patch does not apply cleanly. In order to accomplish a clean this the patch
 adds files doc/en/thematic_tutorials/index.rst and bibliography.rst.
@@ -537,7 +535,7 @@ In addition to applying cleanly, the thematic tutorials must also show up on the
 archive/issue_comments_075711.json:
 ```json
 {
-    "body": "This is a very impressive contribution to the documentation and will be a great example for the thematic section.  Applied #8464, the two patches, and the added the three PNG's.  Everything applied and built cleanly, once I caught the proper location for the three PNG files.\n\nHowever, running doctests produced 22 errors across several of the files.  On 4.4.2.rc0\n\n\n```\nsage -t doc/en/thematic_tutorials/lie\n```\n\n\nyields\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weyl_groups.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weight_ring.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/crystals.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weyl_character_ring.rst\" # Exception from doctest framework\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/branching_rules.rst\"\n```\n\n\nI did not investigate the source of the failures very carefully, Many of them were of the \"name 'foo' not defined\" variety rather than mis-matched outputs.  Hopefully this isn't a false alarm.\n\nI'd be happy to give this another look after somebody investigates/fixes the doctests.\n\nRob",
+    "body": "This is a very impressive contribution to the documentation and will be a great example for the thematic section.  Applied #8464, the two patches, and the added the three PNG's.  Everything applied and built cleanly, once I caught the proper location for the three PNG files.\n\nHowever, running doctests produced 22 errors across several of the files.  On 4.4.2.rc0\n\n```\nsage -t doc/en/thematic_tutorials/lie\n```\n\nyields\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weyl_groups.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weight_ring.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/crystals.rst\"\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/weyl_character_ring.rst\" # Exception from doctest framework\n        sage -t  \"devel/sage-main/doc/en/thematic_tutorials/lie/branching_rules.rst\"\n```\n\nI did not investigate the source of the failures very carefully, Many of them were of the \"name 'foo' not defined\" variety rather than mis-matched outputs.  Hopefully this isn't a false alarm.\n\nI'd be happy to give this another look after somebody investigates/fixes the doctests.\n\nRob",
     "created_at": "2010-05-24T03:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -550,14 +548,11 @@ This is a very impressive contribution to the documentation and will be a great 
 
 However, running doctests produced 22 errors across several of the files.  On 4.4.2.rc0
 
-
 ```
 sage -t doc/en/thematic_tutorials/lie
 ```
 
-
 yields
-
 
 ```
 The following tests failed:
@@ -569,7 +564,6 @@ The following tests failed:
         sage -t  "devel/sage-main/doc/en/thematic_tutorials/lie/weyl_character_ring.rst" # Exception from doctest framework
         sage -t  "devel/sage-main/doc/en/thematic_tutorials/lie/branching_rules.rst"
 ```
-
 
 I did not investigate the source of the failures very carefully, Many of them were of the "name 'foo' not defined" variety rather than mis-matched outputs.  Hopefully this isn't a false alarm.
 
@@ -602,7 +596,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075713.json:
 ```json
 {
-    "body": "In addition to the doctest failures, here are some other issues:\n\nThe documentation page that you get by clicking \"help\" in the notebook, then \"fast static versions ...\", does not look good with the new section on thematic tutorials: I don't think the three-column layout looks good.\n\nThe command `\\mathfrak` is not recognized by jsMath, so if you make the documentation with the `--jsmath` flag, it has a lot of errors.\n\nAlso, I would suggest creating a directory `doc/en/thematic_tutorials/media/` (just like in the `reference` directory, and we put pictures there.   Wherever the pictures go, they need to be included in SAGE_ROOT/devel/sage/MANIFEST.in so they get included in the Sage library spkg -- you need a line like\n\n```\nrecursive-include doc/en/thematic_tutorials/media *\n```\n\n\nBy the way, you can include the png files in the patch by using the command\n\n```\n$ hg add (path to file)/standard1.png\n$ hg commit ...\n$ hg export -g ...\n```\n\n(See [http://trac.sagemath.org/sage_trac/ticket/9074#comment:4](http://trac.sagemath.org/sage_trac/ticket/9074#comment:4) for a similar explanation.)",
+    "body": "In addition to the doctest failures, here are some other issues:\n\nThe documentation page that you get by clicking \"help\" in the notebook, then \"fast static versions ...\", does not look good with the new section on thematic tutorials: I don't think the three-column layout looks good.\n\nThe command `\\mathfrak` is not recognized by jsMath, so if you make the documentation with the `--jsmath` flag, it has a lot of errors.\n\nAlso, I would suggest creating a directory `doc/en/thematic_tutorials/media/` (just like in the `reference` directory, and we put pictures there.   Wherever the pictures go, they need to be included in SAGE_ROOT/devel/sage/MANIFEST.in so they get included in the Sage library spkg -- you need a line like\n\n```\nrecursive-include doc/en/thematic_tutorials/media *\n```\n\nBy the way, you can include the png files in the patch by using the command\n\n```\n$ hg add (path to file)/standard1.png\n$ hg commit ...\n$ hg export -g ...\n```\n(See [http://trac.sagemath.org/sage_trac/ticket/9074#comment:4](http://trac.sagemath.org/sage_trac/ticket/9074#comment:4) for a similar explanation.)",
     "created_at": "2010-06-23T17:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -623,7 +617,6 @@ Also, I would suggest creating a directory `doc/en/thematic_tutorials/media/` (j
 recursive-include doc/en/thematic_tutorials/media *
 ```
 
-
 By the way, you can include the png files in the patch by using the command
 
 ```
@@ -631,7 +624,6 @@ $ hg add (path to file)/standard1.png
 $ hg commit ...
 $ hg export -g ...
 ```
-
 (See [http://trac.sagemath.org/sage_trac/ticket/9074#comment:4](http://trac.sagemath.org/sage_trac/ticket/9074#comment:4) for a similar explanation.)
 
 
@@ -677,7 +669,7 @@ Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-u
 archive/issue_comments_075716.json:
 ```json
 {
-    "body": "Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by @dwbump created at 2010-08-22 16:04:48\n\nI have added two revised patches:\n\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
+    "body": "Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by @dwbump created at 2010-08-22 16:04:48\n\nI have added two revised patches:\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
     "created_at": "2010-08-22T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -690,12 +682,10 @@ Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some
 
 I have added two revised patches:
 
-
 ```
 trac_8442-lie-rebased-4.5.2.patch
 trac_8442-png-files.patch
 ```
-
 
 By mistake I added the first patch twice.
 
@@ -736,7 +726,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075718.json:
 ```json
 {
-    "body": "Replying to [comment:20 bump]:\n> The one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?\n\nMathJAX is slated to replace jsMath.  It has been released, but I can't guess at how much work it will be to get it into the notebook.\nhttp://trac.sagemath.org/sage_trac/ticket/9774\n\nIt would appear from the discussion below that Fraktur fonts will be possible (maybe standard) then.\nhttp://meta.mathoverflow.net/discussion/473/help-test-mathjax/\n\nIt seems Fraktur is available now for jsMath, but maybe we don't ship that with the notebook?\nhttp://www.math.union.edu/~dpvc/jsMath/download/extra-fonts/welcome.html\n\nI'll look closer at reviewing this again when I've got a bit more time.\n\nRob",
+    "body": "Replying to [comment:20 bump]:\n> The one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?\n\n\nMathJAX is slated to replace jsMath.  It has been released, but I can't guess at how much work it will be to get it into the notebook.\nhttp://trac.sagemath.org/sage_trac/ticket/9774\n\nIt would appear from the discussion below that Fraktur fonts will be possible (maybe standard) then.\nhttp://meta.mathoverflow.net/discussion/473/help-test-mathjax/\n\nIt seems Fraktur is available now for jsMath, but maybe we don't ship that with the notebook?\nhttp://www.math.union.edu/~dpvc/jsMath/download/extra-fonts/welcome.html\n\nI'll look closer at reviewing this again when I've got a bit more time.\n\nRob",
     "created_at": "2010-08-22T20:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -747,6 +737,7 @@ archive/issue_comments_075718.json:
 
 Replying to [comment:20 bump]:
 > The one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?
+
 
 MathJAX is slated to replace jsMath.  It has been released, but I can't guess at how much work it will be to get it into the notebook.
 http://trac.sagemath.org/sage_trac/ticket/9774
@@ -881,7 +872,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075724.json:
 ```json
 {
-    "body": "Replying to [comment:25 bump]:\n> Matrices of size > 2 look awful with jsmath, and in the section crystals.rst there are some tableaux. I tried two different methods of creating these in tex. One failed since jsmath doesn't know \\raisebox, and the other (based on arrays) failed since jsmath doesn't know \\hline.\n\nHi Dan,\n\nI've had good luck with jsMath if I use \\begin{tabular}\\end{tabular} and then wrap individual entries with dollar signs.  Then the \\hline's seem to workout OK.  The PDF doesn't really seem to suffer too much from this abuse.\n\nI don't know if MathJAX or jsMath will ever be too happy about a \\raisebox - the notion of a precise length doesn't always translate from printed page to web page very well.\n\nAnyway, I didn't even look at your tableau, but you might experiment with a single one using the tabular environment and decide from there.\n\nRob",
+    "body": "Replying to [comment:25 bump]:\n> Matrices of size > 2 look awful with jsmath, and in the section crystals.rst there are some tableaux. I tried two different methods of creating these in tex. One failed since jsmath doesn't know \\raisebox, and the other (based on arrays) failed since jsmath doesn't know \\hline.\n\n\nHi Dan,\n\nI've had good luck with jsMath if I use \\begin{tabular}\\end{tabular} and then wrap individual entries with dollar signs.  Then the \\hline's seem to workout OK.  The PDF doesn't really seem to suffer too much from this abuse.\n\nI don't know if MathJAX or jsMath will ever be too happy about a \\raisebox - the notion of a precise length doesn't always translate from printed page to web page very well.\n\nAnyway, I didn't even look at your tableau, but you might experiment with a single one using the tabular environment and decide from there.\n\nRob",
     "created_at": "2010-09-09T00:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -892,6 +883,7 @@ archive/issue_comments_075724.json:
 
 Replying to [comment:25 bump]:
 > Matrices of size > 2 look awful with jsmath, and in the section crystals.rst there are some tableaux. I tried two different methods of creating these in tex. One failed since jsmath doesn't know \raisebox, and the other (based on arrays) failed since jsmath doesn't know \hline.
+
 
 Hi Dan,
 
@@ -910,7 +902,7 @@ Rob
 archive/issue_comments_075725.json:
 ```json
 {
-    "body": "> I've had good luck with jsMath if I use \\begin{tabular}\\end{tabular} and then wrap individual entries with dollar signs. Then the \\hline's seem to workout OK. The PDF doesn't really seem to suffer too much from this abuse.\n\nCan you give an example?\n\nMy hope is that the patch can be reviewed without making jsmath a prerequisite. The doc looks good with dvipng, but not so good with jsmath. I could substitute another font for fraktur (I tried mathbf), and I could try again with your suggestion for making tableaux, and I could try to overlook the fact that the large matrices really awful with mathjs, but given that the dvipng doc looks fine, I'd rather leave it as it is and revisit the issue when mathjax rolls in.\n\nDan",
+    "body": "> I've had good luck with jsMath if I use \\begin{tabular}\\end{tabular} and then wrap individual entries with dollar signs. Then the \\hline's seem to workout OK. The PDF doesn't really seem to suffer too much from this abuse.\n\n\nCan you give an example?\n\nMy hope is that the patch can be reviewed without making jsmath a prerequisite. The doc looks good with dvipng, but not so good with jsmath. I could substitute another font for fraktur (I tried mathbf), and I could try again with your suggestion for making tableaux, and I could try to overlook the fact that the large matrices really awful with mathjs, but given that the dvipng doc looks fine, I'd rather leave it as it is and revisit the issue when mathjax rolls in.\n\nDan",
     "created_at": "2010-09-09T04:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -920,6 +912,7 @@ archive/issue_comments_075725.json:
 ```
 
 > I've had good luck with jsMath if I use \begin{tabular}\end{tabular} and then wrap individual entries with dollar signs. Then the \hline's seem to workout OK. The PDF doesn't really seem to suffer too much from this abuse.
+
 
 Can you give an example?
 
@@ -1170,7 +1163,7 @@ archive/issue_events_020243.json:
 archive/issue_comments_075736.json:
 ```json
 {
-    "body": "This looks like an amazing document to include with Sage.  Thanks for working on it.\n\nFirst, all doctests pass for me.\n\nI get three warnings when building the docs, two of which anyone can fix:\n\n```\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_character_ring.rst:397: (WARNING/2) Title underline too short.\n\nIntegration\n-------\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_character_ring.rst:397: (WARNING/2) Title underline too short.\n\nIntegration\n-------\n```\n\nThe third one I think Dan has to do:\n\n```\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_groups.rst:: WARNING: citation not found: BumpNakasuji2010\n```\n\n\nA few questions and comments about the text: first, the style in the Sage documentation is to use `\\Bold{C`} for the complex numbers, and similarly for R and Q.  This is more of an issue for docstrings for methods, functions, etc., but you might consider changing it.\n\nIn introduction.rst, \n\n```\nFor example, we could take `G = SU(n)`,\n`\\mathfrak{g} = \\mathfrak{sl}(n, \\mathbb{R})`,\n`\\mathfrak{g}_{\\mathbb{C}} = \\mathfrak{sl}(n, \\mathbb{C})` and\n`G = SL(n, \\mathbb{C})`.\n```\n\nShould the last \"G\" be \"G_{\\mathbb{C}}\" (or \"G_{\\Bold{C}}\")?\n\nIn lie_basics.rst, on line 141: `However Parabolic subgroups do not exist for compact Lie groups.`  Don't capitalize \"Parabolic\".\n\nOn line 150: \n\n```\nSuch a type is implemented in Sage as a pair ``[`X`,r]``\n```\n  \nI would use plain quotes around the X, not backquotes: ```['X',r]```\n\nA few lines later:\n\n```\nThe exceptional types are::\n\n    ['G',2],  ['F',4],  ['E',6], ['E',7] or ['E',8].\n```\n\nThe indented block is verbatim text, so spacing matters.  The inconsistency between double-spacing and single-spacing looks odd to me, and I would just put single spaces after all of the commas.\n\nweyl_character_ring.rst, line 239, `with Cartan type `['B',r]``: I would use double back quotes here instead of single ones.",
+    "body": "This looks like an amazing document to include with Sage.  Thanks for working on it.\n\nFirst, all doctests pass for me.\n\nI get three warnings when building the docs, two of which anyone can fix:\n\n```\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_character_ring.rst:397: (WARNING/2) Title underline too short.\n\nIntegration\n-------\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_character_ring.rst:397: (WARNING/2) Title underline too short.\n\nIntegration\n-------\n```\nThe third one I think Dan has to do:\n\n```\n/Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_groups.rst:: WARNING: citation not found: BumpNakasuji2010\n```\n\nA few questions and comments about the text: first, the style in the Sage documentation is to use `\\Bold{C`} for the complex numbers, and similarly for R and Q.  This is more of an issue for docstrings for methods, functions, etc., but you might consider changing it.\n\nIn introduction.rst, \n\n```\nFor example, we could take `G = SU(n)`,\n`\\mathfrak{g} = \\mathfrak{sl}(n, \\mathbb{R})`,\n`\\mathfrak{g}_{\\mathbb{C}} = \\mathfrak{sl}(n, \\mathbb{C})` and\n`G = SL(n, \\mathbb{C})`.\n```\nShould the last \"G\" be \"G_{\\mathbb{C}}\" (or \"G_{\\Bold{C}}\")?\n\nIn lie_basics.rst, on line 141: `However Parabolic subgroups do not exist for compact Lie groups.`  Don't capitalize \"Parabolic\".\n\nOn line 150: \n\n```\nSuch a type is implemented in Sage as a pair ``[`X`,r]``\n```  \nI would use plain quotes around the X, not backquotes: ```['X',r]```\n\nA few lines later:\n\n```\nThe exceptional types are::\n\n    ['G',2],  ['F',4],  ['E',6], ['E',7] or ['E',8].\n```\nThe indented block is verbatim text, so spacing matters.  The inconsistency between double-spacing and single-spacing looks odd to me, and I would just put single spaces after all of the commas.\n\nweyl_character_ring.rst, line 239, `with Cartan type `['B',r]``: I would use double back quotes here instead of single ones.",
     "created_at": "2010-11-02T20:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1195,13 +1188,11 @@ Integration
 Integration
 -------
 ```
-
 The third one I think Dan has to do:
 
 ```
 /Applications/sage/devel/sage/doc/en/thematic_tutorials/lie/weyl_groups.rst:: WARNING: citation not found: BumpNakasuji2010
 ```
-
 
 A few questions and comments about the text: first, the style in the Sage documentation is to use `\Bold{C`} for the complex numbers, and similarly for R and Q.  This is more of an issue for docstrings for methods, functions, etc., but you might consider changing it.
 
@@ -1213,7 +1204,6 @@ For example, we could take `G = SU(n)`,
 `\mathfrak{g}_{\mathbb{C}} = \mathfrak{sl}(n, \mathbb{C})` and
 `G = SL(n, \mathbb{C})`.
 ```
-
 Should the last "G" be "G_{\mathbb{C}}" (or "G_{\Bold{C}}")?
 
 In lie_basics.rst, on line 141: `However Parabolic subgroups do not exist for compact Lie groups.`  Don't capitalize "Parabolic".
@@ -1222,8 +1212,7 @@ On line 150:
 
 ```
 Such a type is implemented in Sage as a pair ``[`X`,r]``
-```
-  
+```  
 I would use plain quotes around the X, not backquotes: ```['X',r]```
 
 A few lines later:
@@ -1233,7 +1222,6 @@ The exceptional types are::
 
     ['G',2],  ['F',4],  ['E',6], ['E',7] or ['E',8].
 ```
-
 The indented block is verbatim text, so spacing matters.  The inconsistency between double-spacing and single-spacing looks odd to me, and I would just put single spaces after all of the commas.
 
 weyl_character_ring.rst, line 239, `with Cartan type `['B',r]``: I would use double back quotes here instead of single ones.
@@ -1391,7 +1379,7 @@ Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_075745.json:
 ```json
 {
-    "body": "It appears that the buildbot is trying to apply all 17 patches.\n\nhttp://sage.math.washington.edu:21100/ticket/8442/\n\nMost of these are superceded, though only admin can actually remove them. As far as I know the three patches\n\n\n```\n trac_8442-rebased-4.6.1.patch\n trac_8442-png-files.patch\n trac_8442-ref-spacing.patch\n```\n\n\nshould apply cleanly.",
+    "body": "It appears that the buildbot is trying to apply all 17 patches.\n\nhttp://sage.math.washington.edu:21100/ticket/8442/\n\nMost of these are superceded, though only admin can actually remove them. As far as I know the three patches\n\n```\n trac_8442-rebased-4.6.1.patch\n trac_8442-png-files.patch\n trac_8442-ref-spacing.patch\n```\n\nshould apply cleanly.",
     "created_at": "2010-12-09T13:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1406,13 +1394,11 @@ http://sage.math.washington.edu:21100/ticket/8442/
 
 Most of these are superceded, though only admin can actually remove them. As far as I know the three patches
 
-
 ```
  trac_8442-rebased-4.6.1.patch
  trac_8442-png-files.patch
  trac_8442-ref-spacing.patch
 ```
-
 
 should apply cleanly.
 
@@ -1489,7 +1475,7 @@ Dmitrii
 archive/issue_comments_075749.json:
 ```json
 {
-    "body": "> One is about a way to connecting Lie functionality in GAP to the one in Sage. Anything on this?\n\nOne issue with GAP on Sage is that the interface needs a lot of work. There is a lot of power in GAP that can't be accessed from Sage because of this.\n\nThe Lie theory in Sage is mostly written from scratch. But here is an example where GAP is\ninvolved in the background. We have a class for WeylGroups in weyl_group.py. This\nclass inherits from MatrixGroup_gens which in turn inherits from MatrixGroup_gap. So\nGAP is involved in Weyl Groups.\n\n> It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).\n\nI am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:\n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie/weyl_character_ring.html#tensor-products-of-representations\n\nHave a look also at the branching rules.\n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie/branching_rules.html\n\nLiE has some functionality for working with Kazhdan-Lusztig polynomials, but that is in Sage, as fast as LiE (though not as fast as Coxeter3). LiE has alternate methods of computing Weyl Characters including use of Demazure characters. Some version of the Demazure character is in the crystal code, but it would also be easy and perhaps useful to add a method to the WeightRing. But it is not urgently needed. Sage uses the Freudenthal multiplicity formula to compute the character.",
+    "body": "> One is about a way to connecting Lie functionality in GAP to the one in Sage. Anything on this?\n\n\nOne issue with GAP on Sage is that the interface needs a lot of work. There is a lot of power in GAP that can't be accessed from Sage because of this.\n\nThe Lie theory in Sage is mostly written from scratch. But here is an example where GAP is\ninvolved in the background. We have a class for WeylGroups in weyl_group.py. This\nclass inherits from MatrixGroup_gens which in turn inherits from MatrixGroup_gap. So\nGAP is involved in Weyl Groups.\n\n> It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).\n\n\nI am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:\n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie/weyl_character_ring.html#tensor-products-of-representations\n\nHave a look also at the branching rules.\n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie/branching_rules.html\n\nLiE has some functionality for working with Kazhdan-Lusztig polynomials, but that is in Sage, as fast as LiE (though not as fast as Coxeter3). LiE has alternate methods of computing Weyl Characters including use of Demazure characters. Some version of the Demazure character is in the crystal code, but it would also be easy and perhaps useful to add a method to the WeightRing. But it is not urgently needed. Sage uses the Freudenthal multiplicity formula to compute the character.",
     "created_at": "2010-12-16T13:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1500,6 +1486,7 @@ archive/issue_comments_075749.json:
 
 > One is about a way to connecting Lie functionality in GAP to the one in Sage. Anything on this?
 
+
 One issue with GAP on Sage is that the interface needs a lot of work. There is a lot of power in GAP that can't be accessed from Sage because of this.
 
 The Lie theory in Sage is mostly written from scratch. But here is an example where GAP is
@@ -1508,6 +1495,7 @@ class inherits from MatrixGroup_gens which in turn inherits from MatrixGroup_gap
 GAP is involved in Weyl Groups.
 
 > It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).
+
 
 I am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:
 
@@ -1526,7 +1514,7 @@ LiE has some functionality for working with Kazhdan-Lusztig polynomials, but tha
 archive/issue_comments_075750.json:
 ```json
 {
-    "body": "Replying to [comment:45 bump]:\n\n\n> > It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).\n> \n> I am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:\n> \n> http://match.stanford.edu/bump/thematic_tutorials-js/lie/weyl_character_ring.html#tensor-products-of-representations\n\n\nOne particular thing I was able to do using Lie was to compute things in classical invariant theory, such as the dimension of the space of invariants of degree k\nof the m-ary form of degree d (for fixed k,m,d). Basically, that meant computing certain symmetric power of certain representation of GL_m (or SL_m), and finding out whether there was a 1-dimensional sub-representation.\n\nIs this doable in Sage?\nThanks!",
+    "body": "Replying to [comment:45 bump]:\n\n\n> > It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).\n\n> \n> I am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:\n> \n> http://match.stanford.edu/bump/thematic_tutorials-js/lie/weyl_character_ring.html#tensor-products-of-representations\n\n\n\nOne particular thing I was able to do using Lie was to compute things in classical invariant theory, such as the dimension of the space of invariants of degree k\nof the m-ary form of degree d (for fixed k,m,d). Basically, that meant computing certain symmetric power of certain representation of GL_m (or SL_m), and finding out whether there was a 1-dimensional sub-representation.\n\nIs this doable in Sage?\nThanks!",
     "created_at": "2010-12-16T14:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1539,10 +1527,12 @@ Replying to [comment:45 bump]:
 
 
 > > It would also be good if anything is said regarding the optional Sage package lie (by Marc van Leeuween). Is it right that basically anything doable in lie can be done in Sage? In particular, lie can compute decompositions of, say, a tensor product of two representations into irreducibles. It's not clear to me whether one can do this in Sage (without lie).
+
 > 
 > I am not sure whether everything that is doable with LiE is doable with Sage but I do think that anything that is needed from LiE is either in Sage already or (if needed) should be reimplemented. What is in Sage is a pretty complete toolkit for finite-dimensional representations of Lie groups. Decomposing a tensor product into irreducibles is just the multiplication in the WeylCharacterRing. This is addressed in the tutorial. See:
 > 
 > http://match.stanford.edu/bump/thematic_tutorials-js/lie/weyl_character_ring.html#tensor-products-of-representations
+
 
 
 One particular thing I was able to do using Lie was to compute things in classical invariant theory, such as the dimension of the space of invariants of degree k
@@ -1558,7 +1548,7 @@ Thanks!
 archive/issue_comments_075751.json:
 ```json
 {
-    "body": "> Basically, that meant computing certain symmetric power of certain representation of GL_m (or SL_m), and finding out whether there was a 1-dimensional sub-representation. \n\nFor symmetric (or exterior) square you can use the frobenius_schur_indicator method. For higher symmetric powers, here is a way. Suppose we want to compute the symmetric 5-th power of the 8-dimensional adjoint representation of SL(3). The relevant groups are SL(3) and SL(8), so we need Weyl Character rings A2 and A7.\n\n\n```\nsage: A2=WeylCharacterRing(\"A2\",style=\"coroots\")\nsage: A7=WeylCharacterRing(\"A7\",style=\"coroots\",cache=\"true\")\nsage: s = A7.fundamental_weights()[1]\nsage: A7(5*s)\nA7(5,0,0,0,0,0,0)\nsage: A7(5*s)\nA7(5,0,0,0,0,0,0)\nsage: A7(5*s).degree()\n792\n```\n\n\nThis is the symmetric 5-th power of the standard representation of SL(8), which we want to branch down to SL(3) along the adjoint representation, which is a homomorphism SL(3) --> SL(8). So we create the adjoint representation, then branch the symmetric 5-th power representation of SL(8) down to SL(3).\n\n\n```\nsage: ad=A2(1,1); ad.degree()\n8\nsage: A7(5*s).branch(A2,rule=branching_rule_from_plethysm(ad,\"A7\"))\nA2(0,0) + 2*A2(1,1) + A2(0,3) + A2(3,0) + 2*A2(2,2) + A2(1,4) + A2(4,1) + 2*A2(3,3) + A2(2,5) + A2(5,2) + A2(4,4) + A2(5,5)\n```\n\n\nThere is your decomposition into irreducibles. You can see that there is a copy of the trivial representation.",
+    "body": "> Basically, that meant computing certain symmetric power of certain representation of GL_m (or SL_m), and finding out whether there was a 1-dimensional sub-representation. \n\n\nFor symmetric (or exterior) square you can use the frobenius_schur_indicator method. For higher symmetric powers, here is a way. Suppose we want to compute the symmetric 5-th power of the 8-dimensional adjoint representation of SL(3). The relevant groups are SL(3) and SL(8), so we need Weyl Character rings A2 and A7.\n\n```\nsage: A2=WeylCharacterRing(\"A2\",style=\"coroots\")\nsage: A7=WeylCharacterRing(\"A7\",style=\"coroots\",cache=\"true\")\nsage: s = A7.fundamental_weights()[1]\nsage: A7(5*s)\nA7(5,0,0,0,0,0,0)\nsage: A7(5*s)\nA7(5,0,0,0,0,0,0)\nsage: A7(5*s).degree()\n792\n```\n\nThis is the symmetric 5-th power of the standard representation of SL(8), which we want to branch down to SL(3) along the adjoint representation, which is a homomorphism SL(3) --> SL(8). So we create the adjoint representation, then branch the symmetric 5-th power representation of SL(8) down to SL(3).\n\n```\nsage: ad=A2(1,1); ad.degree()\n8\nsage: A7(5*s).branch(A2,rule=branching_rule_from_plethysm(ad,\"A7\"))\nA2(0,0) + 2*A2(1,1) + A2(0,3) + A2(3,0) + 2*A2(2,2) + A2(1,4) + A2(4,1) + 2*A2(3,3) + A2(2,5) + A2(5,2) + A2(4,4) + A2(5,5)\n```\n\nThere is your decomposition into irreducibles. You can see that there is a copy of the trivial representation.",
     "created_at": "2010-12-16T16:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1569,8 +1559,8 @@ archive/issue_comments_075751.json:
 
 > Basically, that meant computing certain symmetric power of certain representation of GL_m (or SL_m), and finding out whether there was a 1-dimensional sub-representation. 
 
-For symmetric (or exterior) square you can use the frobenius_schur_indicator method. For higher symmetric powers, here is a way. Suppose we want to compute the symmetric 5-th power of the 8-dimensional adjoint representation of SL(3). The relevant groups are SL(3) and SL(8), so we need Weyl Character rings A2 and A7.
 
+For symmetric (or exterior) square you can use the frobenius_schur_indicator method. For higher symmetric powers, here is a way. Suppose we want to compute the symmetric 5-th power of the 8-dimensional adjoint representation of SL(3). The relevant groups are SL(3) and SL(8), so we need Weyl Character rings A2 and A7.
 
 ```
 sage: A2=WeylCharacterRing("A2",style="coroots")
@@ -1584,9 +1574,7 @@ sage: A7(5*s).degree()
 792
 ```
 
-
 This is the symmetric 5-th power of the standard representation of SL(8), which we want to branch down to SL(3) along the adjoint representation, which is a homomorphism SL(3) --> SL(8). So we create the adjoint representation, then branch the symmetric 5-th power representation of SL(8) down to SL(3).
-
 
 ```
 sage: ad=A2(1,1); ad.degree()
@@ -1594,7 +1582,6 @@ sage: ad=A2(1,1); ad.degree()
 sage: A7(5*s).branch(A2,rule=branching_rule_from_plethysm(ad,"A7"))
 A2(0,0) + 2*A2(1,1) + A2(0,3) + A2(3,0) + 2*A2(2,2) + A2(1,4) + A2(4,1) + 2*A2(3,3) + A2(2,5) + A2(5,2) + A2(4,4) + A2(5,5)
 ```
-
 
 There is your decomposition into irreducibles. You can see that there is a copy of the trivial representation.
 
@@ -1663,7 +1650,7 @@ Dmitrii
 archive/issue_comments_075755.json:
 ```json
 {
-    "body": "> Replying to bump: Very nice! Positive review. (IMHO it would be nice to have your last example included in the tutorial, but I'd leave it to you to decide whether to do this.)\n\nI will make a patch for this. Perhaps it should be a separate ticket so as not to further delay this one.",
+    "body": "> Replying to bump: Very nice! Positive review. (IMHO it would be nice to have your last example included in the tutorial, but I'd leave it to you to decide whether to do this.)\n\n\nI will make a patch for this. Perhaps it should be a separate ticket so as not to further delay this one.",
     "created_at": "2010-12-18T13:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1673,6 +1660,7 @@ archive/issue_comments_075755.json:
 ```
 
 > Replying to bump: Very nice! Positive review. (IMHO it would be nice to have your last example included in the tutorial, but I'd leave it to you to decide whether to do this.)
+
 
 I will make a patch for this. Perhaps it should be a separate ticket so as not to further delay this one.
 
@@ -1850,7 +1838,7 @@ archive/issue_events_020247.json:
 archive/issue_comments_075761.json:
 ```json
 {
-    "body": "> Setting milestone to sage-feature because of #8470.\n\nAt some point Minh Nguyen added the words \"needs to be coordinated with #8470\" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.\n\nI propose that the milestone for this patch should be changed back to 4.6.2.",
+    "body": "> Setting milestone to sage-feature because of #8470.\n\n\nAt some point Minh Nguyen added the words \"needs to be coordinated with #8470\" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.\n\nI propose that the milestone for this patch should be changed back to 4.6.2.",
     "created_at": "2011-01-13T13:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1860,6 +1848,7 @@ archive/issue_comments_075761.json:
 ```
 
 > Setting milestone to sage-feature because of #8470.
+
 
 At some point Minh Nguyen added the words "needs to be coordinated with #8470" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.
 
@@ -1872,7 +1861,7 @@ I propose that the milestone for this patch should be changed back to 4.6.2.
 archive/issue_comments_075762.json:
 ```json
 {
-    "body": "Replying to [comment:57 bump]:\n> > Setting milestone to sage-feature because of #8470.\n> \n> At some point Minh Nguyen added the words \"needs to be coordinated with #8470\" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.\n> \n> I propose that the milestone for this patch should be changed back to 4.6.2.\n> \n> \nI second this. #8470 is a meta-ticket meant for coordinating documentation. Closing the current ticket is a prereq to closing it. So, please close the current ticket, which in no ways depends on #8470.",
+    "body": "Replying to [comment:57 bump]:\n> > Setting milestone to sage-feature because of #8470.\n\n> \n> At some point Minh Nguyen added the words \"needs to be coordinated with #8470\" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.\n> \n> I propose that the milestone for this patch should be changed back to 4.6.2.\n> \n> \n\nI second this. #8470 is a meta-ticket meant for coordinating documentation. Closing the current ticket is a prereq to closing it. So, please close the current ticket, which in no ways depends on #8470.",
     "created_at": "2011-01-13T17:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -1883,12 +1872,14 @@ archive/issue_comments_075762.json:
 
 Replying to [comment:57 bump]:
 > > Setting milestone to sage-feature because of #8470.
+
 > 
 > At some point Minh Nguyen added the words "needs to be coordinated with #8470" to the description. However #8470 has not been touched for 8 months. It appears to me that #8470 is an orphaned ticket.
 > 
 > I propose that the milestone for this patch should be changed back to 4.6.2.
 > 
 > 
+
 I second this. #8470 is a meta-ticket meant for coordinating documentation. Closing the current ticket is a prereq to closing it. So, please close the current ticket, which in no ways depends on #8470.
 
 
@@ -2006,7 +1997,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_075767.json:
 ```json
 {
-    "body": "> Please add ticket number to commit message of trac_8442-png-files.patch\n\nDone.",
+    "body": "> Please add ticket number to commit message of trac_8442-png-files.patch\n\n\nDone.",
     "created_at": "2011-01-23T19:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -2016,6 +2007,7 @@ archive/issue_comments_075767.json:
 ```
 
 > Please add ticket number to commit message of trac_8442-png-files.patch
+
 
 Done.
 
@@ -2098,7 +2090,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075772.json:
 ```json
 {
-    "body": "Replying to [comment:64 jdemeyer]:\n> Added [attachment:8442_manifest.patch], still needs testing.\n\njust tested, it works. I also edited the description to mention this patch too.",
+    "body": "Replying to [comment:64 jdemeyer]:\n> Added [attachment:8442_manifest.patch], still needs testing.\n\n\njust tested, it works. I also edited the description to mention this patch too.",
     "created_at": "2011-01-27T15:04:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
@@ -2109,6 +2101,7 @@ archive/issue_comments_075772.json:
 
 Replying to [comment:64 jdemeyer]:
 > Added [attachment:8442_manifest.patch], still needs testing.
+
 
 just tested, it works. I also edited the description to mention this patch too.
 

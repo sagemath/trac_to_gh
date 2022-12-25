@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9445
 archive/issue_comments_090360.json:
 ```json
 {
-    "body": "I did not notice this ticket, but this is giving a different error on a Solaris 10 system (t2.math). See #9490. It's basically crashing:\n\n\n```\nsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"     \n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n\t [18.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"\nTotal time for all tests: 18.0 seconds\n```\n\n\nI guess this was tested on Linux!\n\nDave",
+    "body": "I did not notice this ticket, but this is giving a different error on a Solaris 10 system (t2.math). See #9490. It's basically crashing:\n\n```\nsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"     \n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n\t [18.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"\nTotal time for all tests: 18.0 seconds\n```\n\nI guess this was tested on Linux!\n\nDave",
     "created_at": "2010-07-13T14:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9445",
     "type": "issue_comment",
@@ -56,7 +56,6 @@ archive/issue_comments_090360.json:
 ```
 
 I did not notice this ticket, but this is giving a different error on a Solaris 10 system (t2.math). See #9490. It's basically crashing:
-
 
 ```
 sage -t -long "devel/sage/sage/libs/galrep/wrapper.pyx"     
@@ -81,7 +80,6 @@ The following tests failed:
 	sage -t -long "devel/sage/sage/libs/galrep/wrapper.pyx"
 Total time for all tests: 18.0 seconds
 ```
-
 
 I guess this was tested on Linux!
 

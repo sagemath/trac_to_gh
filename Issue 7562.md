@@ -3,7 +3,7 @@
 archive/issues_007562.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  hgranath\n\nFrom sage-devel:\n\n```\nIn [143]: [binomial(1,1),binomial(1,2),binomial(1,3),binomial(1,4)] \nOut[143]: [1, 0, 0, 0] \nIn [144]: [binomial(1.0,1),binomial(1.0,2),binomial(1.0,3),binomial \n(1.0,4)] \nOut[144]: [1.00000000000000, 0.000000000000000, NaN, NaN] \n```\n\nThe problem is this:\n\n```\nsage: x = RealNumber('1.0')\nsage: P = x.parent()\nsage: P\nReal Field with 53 bits of precision\nsage: gamma(x+1)/gamma(P(Integer(4)+1))/gamma(x-Integer(4)+1)\nNaN\nsage: gamma(x-Integer(4)+1)\nNaN\n```\n\nSo we'll have to put in yet another check...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7562\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  hgranath\n\nFrom sage-devel:\n\n```\nIn [143]: [binomial(1,1),binomial(1,2),binomial(1,3),binomial(1,4)] \nOut[143]: [1, 0, 0, 0] \nIn [144]: [binomial(1.0,1),binomial(1.0,2),binomial(1.0,3),binomial \n(1.0,4)] \nOut[144]: [1.00000000000000, 0.000000000000000, NaN, NaN] \n```\nThe problem is this:\n\n```\nsage: x = RealNumber('1.0')\nsage: P = x.parent()\nsage: P\nReal Field with 53 bits of precision\nsage: gamma(x+1)/gamma(P(Integer(4)+1))/gamma(x-Integer(4)+1)\nNaN\nsage: gamma(x-Integer(4)+1)\nNaN\n```\nSo we'll have to put in yet another check...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7562\n\n",
     "created_at": "2009-11-30T18:16:36Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ In [144]: [binomial(1.0,1),binomial(1.0,2),binomial(1.0,3),binomial
 (1.0,4)] 
 Out[144]: [1.00000000000000, 0.000000000000000, NaN, NaN] 
 ```
-
 The problem is this:
 
 ```
@@ -42,7 +41,6 @@ NaN
 sage: gamma(x-Integer(4)+1)
 NaN
 ```
-
 So we'll have to put in yet another check...
 
 Issue created by migration from https://trac.sagemath.org/ticket/7562
@@ -134,7 +132,7 @@ Sorry, my patch is off for negative x. I will send an updated patch later.
 archive/issue_comments_064225.json:
 ```json
 {
-    "body": "> By the way, is the cc field above supposed to notify me by mail?\n> I did not get any.\n\nYes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.",
+    "body": "> By the way, is the cc field above supposed to notify me by mail?\n> I did not get any.\n\n\nYes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.",
     "created_at": "2009-12-02T14:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
@@ -146,6 +144,7 @@ archive/issue_comments_064225.json:
 > By the way, is the cc field above supposed to notify me by mail?
 > I did not get any.
 
+
 Yes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.
 
 
@@ -155,7 +154,7 @@ Yes, and it does usually work, but perhaps you don't have a correct email associ
 archive/issue_comments_064226.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n\n> Yes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.\n\nThanks for the info, I found some place to enter my email so probably it will work now.",
+    "body": "Replying to [comment:3 kcrisman]:\n\n> Yes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.\n\n\nThanks for the info, I found some place to enter my email so probably it will work now.",
     "created_at": "2009-12-02T14:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
@@ -167,6 +166,7 @@ archive/issue_comments_064226.json:
 Replying to [comment:3 kcrisman]:
 
 > Yes, and it does usually work, but perhaps you don't have a correct email associated to your account.  I don't know how to fix this, you may want to ask on sage-devel.
+
 
 Thanks for the info, I found some place to enter my email so probably it will work now.
 
@@ -195,7 +195,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064228.json:
 ```json
 {
-    "body": "This seems to work fine, and agrees with integer calculations.  Obviously passes tests.\n\nBut:\n\n```\nsage: binomial(0,0)\n1\nsage: binomial(0.,0)\nNaN\n```\n\n\nI don't know which is the usual convention, but they should probably agree.",
+    "body": "This seems to work fine, and agrees with integer calculations.  Obviously passes tests.\n\nBut:\n\n```\nsage: binomial(0,0)\n1\nsage: binomial(0.,0)\nNaN\n```\n\nI don't know which is the usual convention, but they should probably agree.",
     "created_at": "2009-12-04T15:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
@@ -214,7 +214,6 @@ sage: binomial(0,0)
 sage: binomial(0.,0)
 NaN
 ```
-
 
 I don't know which is the usual convention, but they should probably agree.
 

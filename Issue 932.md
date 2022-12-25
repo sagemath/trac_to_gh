@@ -3,7 +3,7 @@
 archive/issues_000932.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nHi William. Before you go ahead and make a big official table like that,\nyou should upgrade to the latest lcalc. I'll be releasing that in a few\ndays. It has a more efficient zero finding routine and also gets rid of\nannoying warning message that sometimes appears when it ought not to...\nthe message might interfere with the preparation of your table. Also,\ncurrently not all digits outputed are guaranteed. For low conductor I\ndon't think that will be an issue, but as the conductor increases\nthat will be a bit relevant.\n\nI'm currently implementing something to verify the precision and adjust the\noutput accordingly.\n\nIt also has other improvements, though not relevant for the table you\nmention.\n\nMike}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/932\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nHi William. Before you go ahead and make a big official table like that,\nyou should upgrade to the latest lcalc. I'll be releasing that in a few\ndays. It has a more efficient zero finding routine and also gets rid of\nannoying warning message that sometimes appears when it ought not to...\nthe message might interfere with the preparation of your table. Also,\ncurrently not all digits outputed are guaranteed. For low conductor I\ndon't think that will be an issue, but as the conductor increases\nthat will be a bit relevant.\n\nI'm currently implementing something to verify the precision and adjust the\noutput accordingly.\n\nIt also has other improvements, though not relevant for the table you\nmention.\n\nMike}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/932\n\n",
     "created_at": "2007-10-19T18:58:49Z",
     "labels": [
         "component: packages: standard"
@@ -16,7 +16,6 @@ archive/issues_000932.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -121,7 +120,7 @@ archive/issue_events_002561.json:
 archive/issue_comments_005675.json:
 ```json
 {
-    "body": "Mike Rubinstein says:\n\n```\nDear Colleagues,\n\nI've released a new version of lcalc.\n\nThis release fixes some bugs (so please update), has improvements to\nsome of the key\nroutines, especially for higher degree L-functions (i.e. deg >=3, and\nalso for Maass forms),\nand better handling of output precision.\n\nThe code can be downloaded from:\nhttp://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/\n\nPlease email me any bugs you notice.\n\nThanks,\nMike\n```\n\n\nCheers,\n\nMichael",
+    "body": "Mike Rubinstein says:\n\n```\nDear Colleagues,\n\nI've released a new version of lcalc.\n\nThis release fixes some bugs (so please update), has improvements to\nsome of the key\nroutines, especially for higher degree L-functions (i.e. deg >=3, and\nalso for Maass forms),\nand better handling of output precision.\n\nThe code can be downloaded from:\nhttp://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/\n\nPlease email me any bugs you notice.\n\nThanks,\nMike\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T17:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/932",
     "type": "issue_comment",
@@ -151,7 +150,6 @@ Please email me any bugs you notice.
 Thanks,
 Mike
 ```
-
 
 Cheers,
 

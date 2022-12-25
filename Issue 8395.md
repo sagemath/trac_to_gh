@@ -3,7 +3,7 @@
 archive/issues_008395.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @nathanncohen\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @nathanncohen\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
     "created_at": "2010-02-28T14:52:11Z",
     "labels": [
         "component: graph theory",
@@ -51,7 +51,6 @@ The size of G is 1 because there is one edge, i.e. the single
 self-loop. As shown by the above session, Sage reports the size of G
 as 0. I believe this is a bug. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8395
 

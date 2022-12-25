@@ -3,7 +3,7 @@
 archive/issues_007681.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nKeywords: pexpect, interface, R\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\n\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\n\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nKeywords: pexpect, interface, R\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
     "created_at": "2009-12-14T19:43:23Z",
     "labels": [
         "component: packages",
@@ -42,13 +42,11 @@ sage: r.vector('c(1,2,3,4,3)')
 sage: r.vector('c(1,2,3,4,3)')
 Error: object 'sage49' not found
 ```
-
 Somehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden 
 
 ```
 [1] 1 2 3 4 3
 ```
-
 showed up - as the answer to something else!  Where it had been hiding, I can only guess.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7681
@@ -62,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7681
 archive/issue_comments_065765.json:
 ```json
 {
-    "body": "This interface to R (which is entirely different from the rpy2 python module) is rather hard to do and still needs work. I think the problem is that \"vector\" in R does something differently than you imagine. I.e. an error happens which isn't shown and the pexpect interface is confused.\n\n\n```\nsage: x = r.c(1,2,3)\nsage: r.as_vector(x)\n[1] 1 2 3\nsage: r.is_vector(r.as_vector(x))\n[1] TRUE\n```\n\n\nworks for me.\n\nHere what really happens in R:\n\n\n```\n> length(c(1,2,3,4))\n[1] 4\n> vector(c(1,2,3,4,3))\nError in vector(c(1, 2, 3, 4, 3)) : \n  vector: cannot make a vector of mode '1'.\n> as.vector(c(1,2,3,4,3))\n[1] 1 2 3 4 3\n```\n",
+    "body": "This interface to R (which is entirely different from the rpy2 python module) is rather hard to do and still needs work. I think the problem is that \"vector\" in R does something differently than you imagine. I.e. an error happens which isn't shown and the pexpect interface is confused.\n\n```\nsage: x = r.c(1,2,3)\nsage: r.as_vector(x)\n[1] 1 2 3\nsage: r.is_vector(r.as_vector(x))\n[1] TRUE\n```\n\nworks for me.\n\nHere what really happens in R:\n\n```\n> length(c(1,2,3,4))\n[1] 4\n> vector(c(1,2,3,4,3))\nError in vector(c(1, 2, 3, 4, 3)) : \n  vector: cannot make a vector of mode '1'.\n> as.vector(c(1,2,3,4,3))\n[1] 1 2 3 4 3\n```",
     "created_at": "2009-12-14T20:00:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
@@ -73,7 +71,6 @@ archive/issue_comments_065765.json:
 
 This interface to R (which is entirely different from the rpy2 python module) is rather hard to do and still needs work. I think the problem is that "vector" in R does something differently than you imagine. I.e. an error happens which isn't shown and the pexpect interface is confused.
 
-
 ```
 sage: x = r.c(1,2,3)
 sage: r.as_vector(x)
@@ -82,11 +79,9 @@ sage: r.is_vector(r.as_vector(x))
 [1] TRUE
 ```
 
-
 works for me.
 
 Here what really happens in R:
-
 
 ```
 > length(c(1,2,3,4))
@@ -97,7 +92,6 @@ Error in vector(c(1, 2, 3, 4, 3)) :
 > as.vector(c(1,2,3,4,3))
 [1] 1 2 3 4 3
 ```
-
 
 
 
@@ -126,7 +120,7 @@ Should we not use the R interface and use rpy2 instead?  But it looks rather mor
 archive/issue_comments_065767.json:
 ```json
 {
-    "body": "And here's just something randomly annoying:\n\n```\nsage: r([1,1/2,1/2])\n[1] 1.0 0.5 0.5\nsage: r([0,sqrt(3)/2,sqrt(3)/2])\nError: object 'sage10' not found\n```\n\nEven though R knows what sqrt(3) is natively:\n\n```\n> sqrt(3)/2\n[1] 0.8660254\n```\n\nI'm not saying this is really related to the summary of the ticket, but it's not unrelated, either.",
+    "body": "And here's just something randomly annoying:\n\n```\nsage: r([1,1/2,1/2])\n[1] 1.0 0.5 0.5\nsage: r([0,sqrt(3)/2,sqrt(3)/2])\nError: object 'sage10' not found\n```\nEven though R knows what sqrt(3) is natively:\n\n```\n> sqrt(3)/2\n[1] 0.8660254\n```\nI'm not saying this is really related to the summary of the ticket, but it's not unrelated, either.",
     "created_at": "2009-12-14T20:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
@@ -143,14 +137,12 @@ sage: r([1,1/2,1/2])
 sage: r([0,sqrt(3)/2,sqrt(3)/2])
 Error: object 'sage10' not found
 ```
-
 Even though R knows what sqrt(3) is natively:
 
 ```
 > sqrt(3)/2
 [1] 0.8660254
 ```
-
 I'm not saying this is really related to the summary of the ticket, but it's not unrelated, either.
 
 
@@ -198,7 +190,7 @@ Changing summary to be more accurate - hopefully fixing this will fix the issues
 archive/issue_comments_065770.json:
 ```json
 {
-    "body": "Okay, the problem is that instead of handling errors, we are ignoring them:\n\n```\n        # don't abort on errors, just raise them! \n        # necessary for non-interactive execution\n        self.eval('options(error = expression(NULL))') \n```\n\nBut see [here](http://stat.ethz.ch/R-manual/R-patched/library/base/html/stop.html) - it turns out that this is R's way of just totally ignoring them, not just 'raising' them.  This should be fixed.",
+    "body": "Okay, the problem is that instead of handling errors, we are ignoring them:\n\n```\n        # don't abort on errors, just raise them! \n        # necessary for non-interactive execution\n        self.eval('options(error = expression(NULL))') \n```\nBut see [here](http://stat.ethz.ch/R-manual/R-patched/library/base/html/stop.html) - it turns out that this is R's way of just totally ignoring them, not just 'raising' them.  This should be fixed.",
     "created_at": "2010-04-30T16:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
@@ -214,7 +206,6 @@ Okay, the problem is that instead of handling errors, we are ignoring them:
         # necessary for non-interactive execution
         self.eval('options(error = expression(NULL))') 
 ```
-
 But see [here](http://stat.ethz.ch/R-manual/R-patched/library/base/html/stop.html) - it turns out that this is R's way of just totally ignoring them, not just 'raising' them.  This should be fixed.
 
 

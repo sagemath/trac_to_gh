@@ -607,7 +607,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055993.json:
 ```json
 {
-    "body": "Any reason why you don't just use the tests but with this?\n\n```\nsage: long_test() # long time\n```\n\nIt's too much work to remove all the #s anyway if one wanted to try them out.\n\nI like the splitting things into pyx and not.  Also, any reason not to incorporate the pyx file into the documentation?  \n\nYou might want to add a couple examples to the cdef'd functions.  I realize this isn't required, but why not? :) \n\nWhat happens when you `list()` one of the infinite classes?  That should raise an error - I feel like we just had something like this somewhere else, but I can't remember where.  Also, you should put an example of how to get elements of the infinite class in the main class, since people may not ever read the documentation for something other than `IntegerVectorsModPermutationGroup`, which is the one intended to be used by people, right?  (It's the only one imported into the global namespace, at any rate.)  For this one, I put 'needs work'.\n\nFinally, you are right about the English; there are a few places where I'm not quite sure what is intended, even.  But that can be fixed.  Keep it up - this will be great!  (And very useful for me once I figure out how to use it correctly in my situation.)",
+    "body": "Any reason why you don't just use the tests but with this?\n\n```\nsage: long_test() # long time\n```\nIt's too much work to remove all the #s anyway if one wanted to try them out.\n\nI like the splitting things into pyx and not.  Also, any reason not to incorporate the pyx file into the documentation?  \n\nYou might want to add a couple examples to the cdef'd functions.  I realize this isn't required, but why not? :) \n\nWhat happens when you `list()` one of the infinite classes?  That should raise an error - I feel like we just had something like this somewhere else, but I can't remember where.  Also, you should put an example of how to get elements of the infinite class in the main class, since people may not ever read the documentation for something other than `IntegerVectorsModPermutationGroup`, which is the one intended to be used by people, right?  (It's the only one imported into the global namespace, at any rate.)  For this one, I put 'needs work'.\n\nFinally, you are right about the English; there are a few places where I'm not quite sure what is intended, even.  But that can be fixed.  Keep it up - this will be great!  (And very useful for me once I figure out how to use it correctly in my situation.)",
     "created_at": "2011-04-05T15:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -621,7 +621,6 @@ Any reason why you don't just use the tests but with this?
 ```
 sage: long_test() # long time
 ```
-
 It's too much work to remove all the #s anyway if one wanted to try them out.
 
 I like the splitting things into pyx and not.  Also, any reason not to incorporate the pyx file into the documentation?  
@@ -639,7 +638,7 @@ Finally, you are right about the English; there are a few places where I'm not q
 archive/issue_comments_055994.json:
 ```json
 {
-    "body": "Thanks a lot for having regarded this...\n\nFor # long time, I do not know. I think I will select a subpart of the tests and include them with long time. The developer guide say : \"These will not be run regularly during Sage development, but will get run before major releases. No example should take more than about 30 seconds.\". Currently, on my three years old macbook, all tests take something like 6 minutes. Especially, there are also # optional - gap_database tests here. I will select some groups and add some tests with long time.\n\nI didn't know we can add pyx file in the doctree, I will add it. I will also add comments on the fact that the is_canonical test is polymorph. I just checked the only thing required is a comparison test:\n\n```\nsage: from sage.combinat.enumeration_mod_permgroup import is_canonical\nsage: G = PermutationGroup([[(1,2,3,4,5,6)]])\nsage: sgs = [map(lambda x: Permutation(x), trans) for trans in G.strong_generating_system()]\nsage: is_canonical(sgs, ['c','b','a','b','b','a'])\nTrue\nsage: is_canonical(sgs, [3,2,1,2,2,1])\nTrue\n```\n\nAs string can be compared with `<` and `>`, the function can be also used on such object.\n\nI think that examples in cdef functions aren't required just because one cannot import them in the sage console. Try from file.pyx import <tab>. There is perhaps another way to import them, but I don't know...\n\nFor the behavior of list(), I think it is ok. The category framework do the job:\n\n```\nsage: I = IntegerVectorsModPermutationGroup(PermutationGroup([[(1,2,3,4)]]))\nsage: list(I)\n...\nNotImplementedError: infinite list\nsage: I = IntegerRange(1,+Infinity, 5)\nsage: I\n{1, 6, ..}\nsage: list(I)\n...\nNotImplementedError: infinite list\nsage: I = InfiniteEnumeratedSets().example()\nsage: I\nAn example of an infinite enumerated set: the non negative integers\nsage: list(I)\n...\nNotImplementedError: infinite list\n```\n\n\nI going to improve the doc of IntegerVectorsModPermutationGroup. You're definitely right and I think it deserves to stay the only entrance point for this module.\n\nThanks for your comments.",
+    "body": "Thanks a lot for having regarded this...\n\nFor # long time, I do not know. I think I will select a subpart of the tests and include them with long time. The developer guide say : \"These will not be run regularly during Sage development, but will get run before major releases. No example should take more than about 30 seconds.\". Currently, on my three years old macbook, all tests take something like 6 minutes. Especially, there are also # optional - gap_database tests here. I will select some groups and add some tests with long time.\n\nI didn't know we can add pyx file in the doctree, I will add it. I will also add comments on the fact that the is_canonical test is polymorph. I just checked the only thing required is a comparison test:\n\n```\nsage: from sage.combinat.enumeration_mod_permgroup import is_canonical\nsage: G = PermutationGroup([[(1,2,3,4,5,6)]])\nsage: sgs = [map(lambda x: Permutation(x), trans) for trans in G.strong_generating_system()]\nsage: is_canonical(sgs, ['c','b','a','b','b','a'])\nTrue\nsage: is_canonical(sgs, [3,2,1,2,2,1])\nTrue\n```\nAs string can be compared with `<` and `>`, the function can be also used on such object.\n\nI think that examples in cdef functions aren't required just because one cannot import them in the sage console. Try from file.pyx import <tab>. There is perhaps another way to import them, but I don't know...\n\nFor the behavior of list(), I think it is ok. The category framework do the job:\n\n```\nsage: I = IntegerVectorsModPermutationGroup(PermutationGroup([[(1,2,3,4)]]))\nsage: list(I)\n...\nNotImplementedError: infinite list\nsage: I = IntegerRange(1,+Infinity, 5)\nsage: I\n{1, 6, ..}\nsage: list(I)\n...\nNotImplementedError: infinite list\nsage: I = InfiniteEnumeratedSets().example()\nsage: I\nAn example of an infinite enumerated set: the non negative integers\nsage: list(I)\n...\nNotImplementedError: infinite list\n```\n\nI going to improve the doc of IntegerVectorsModPermutationGroup. You're definitely right and I think it deserves to stay the only entrance point for this module.\n\nThanks for your comments.",
     "created_at": "2011-04-05T16:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -663,7 +662,6 @@ True
 sage: is_canonical(sgs, [3,2,1,2,2,1])
 True
 ```
-
 As string can be compared with `<` and `>`, the function can be also used on such object.
 
 I think that examples in cdef functions aren't required just because one cannot import them in the sage console. Try from file.pyx import <tab>. There is perhaps another way to import them, but I don't know...
@@ -688,7 +686,6 @@ sage: list(I)
 ...
 NotImplementedError: infinite list
 ```
-
 
 I going to improve the doc of IntegerVectorsModPermutationGroup. You're definitely right and I think it deserves to stay the only entrance point for this module.
 
@@ -815,7 +812,7 @@ As SearchForest as been integrated, let me one or two weeks (and FPSAC...) to fi
 archive/issue_comments_056001.json:
 ```json
 {
-    "body": "I cleaned the imports, I improved a little the documentation...\n\nI am very sorry but it needs a STRONG REVIEW OF ENGLISH. My flyspell is well configured in my emacs but I feel that there are probably some not very well expressed sentences in my documentation. I tried to do my best... About the code, it is strongly tested, there is a lot of tests of consistences with other parts of combinat.\n\n\n```\nnicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/integer_vectors_mod_permgroup.py -optional -long\nsage -t -optional -long \"devel/sage-combinat/sage/combinat/integer_vectors_mod_permgroup.py\"\n\t [10.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 10.3 seconds\nnicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/enumeration_mod_permgroup.pyx -optional -long\nsage -t -optional -long \"devel/sage-combinat/sage/combinat/enumeration_mod_permgroup.pyx\"\n\t [38.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 38.5 seconds\n```\n\n\napply trac_6812_integer_vectors_mod_permgroup.patch (only)",
+    "body": "I cleaned the imports, I improved a little the documentation...\n\nI am very sorry but it needs a STRONG REVIEW OF ENGLISH. My flyspell is well configured in my emacs but I feel that there are probably some not very well expressed sentences in my documentation. I tried to do my best... About the code, it is strongly tested, there is a lot of tests of consistences with other parts of combinat.\n\n```\nnicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/integer_vectors_mod_permgroup.py -optional -long\nsage -t -optional -long \"devel/sage-combinat/sage/combinat/integer_vectors_mod_permgroup.py\"\n\t [10.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 10.3 seconds\nnicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/enumeration_mod_permgroup.pyx -optional -long\nsage -t -optional -long \"devel/sage-combinat/sage/combinat/enumeration_mod_permgroup.pyx\"\n\t [38.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 38.5 seconds\n```\n\napply trac_6812_integer_vectors_mod_permgroup.patch (only)",
     "created_at": "2011-06-07T15:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -827,7 +824,6 @@ archive/issue_comments_056001.json:
 I cleaned the imports, I improved a little the documentation...
 
 I am very sorry but it needs a STRONG REVIEW OF ENGLISH. My flyspell is well configured in my emacs but I feel that there are probably some not very well expressed sentences in my documentation. I tried to do my best... About the code, it is strongly tested, there is a lot of tests of consistences with other parts of combinat.
-
 
 ```
 nicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/integer_vectors_mod_permgroup.py -optional -long
@@ -845,7 +841,6 @@ sage -t -optional -long "devel/sage-combinat/sage/combinat/enumeration_mod_permg
 All tests passed!
 Total time for all tests: 38.5 seconds
 ```
-
 
 apply trac_6812_integer_vectors_mod_permgroup.patch (only)
 
@@ -928,7 +923,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056006.json:
 ```json
 {
-    "body": "Ok, it depends on #10335\n\n\n```\nla pile de patchs est maintenant vide\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_10334-permgroup_cleanup-rebase-mh.patch\nactuellement \u00e0 : trac_10334-permgroup_cleanup-rebase-mh.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_10335-permgroup_domain-mh.patch\nactuellement \u00e0 : trac_10335-permgroup_domain-mh.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_6812_integer_vectors_mod_permgroup.patch\nactuellement \u00e0 : trac_6812_integer_vectors_mod_permgroup.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -b\n...\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/enumeration_mod_permgroup.pyx \nsage -t  \"devel/sage-review/sage/combinat/enumeration_mod_permgroup.pyx\"\n\t [14.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 14.3 seconds\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/integer_vectors_mod_permgroup.py \nsage -t  \"devel/sage-review/sage/combinat/integer_vectors_mod_permgroup.py\"\n\t [5.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.7 seconds\n```\n",
+    "body": "Ok, it depends on #10335\n\n```\nla pile de patchs est maintenant vide\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_10334-permgroup_cleanup-rebase-mh.patch\nactuellement \u00e0 : trac_10334-permgroup_cleanup-rebase-mh.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_10335-permgroup_domain-mh.patch\nactuellement \u00e0 : trac_10335-permgroup_domain-mh.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush\napplication de trac_6812_integer_vectors_mod_permgroup.patch\nactuellement \u00e0 : trac_6812_integer_vectors_mod_permgroup.patch\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -b\n...\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/enumeration_mod_permgroup.pyx \nsage -t  \"devel/sage-review/sage/combinat/enumeration_mod_permgroup.pyx\"\n\t [14.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 14.3 seconds\nnicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/integer_vectors_mod_permgroup.py \nsage -t  \"devel/sage-review/sage/combinat/integer_vectors_mod_permgroup.py\"\n\t [5.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.7 seconds\n```",
     "created_at": "2011-06-07T18:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -938,7 +933,6 @@ archive/issue_comments_056006.json:
 ```
 
 Ok, it depends on #10335
-
 
 ```
 la pile de patchs est maintenant vide
@@ -968,7 +962,6 @@ sage -t  "devel/sage-review/sage/combinat/integer_vectors_mod_permgroup.py"
 All tests passed!
 Total time for all tests: 5.7 seconds
 ```
-
 
 
 
@@ -1355,7 +1348,7 @@ If no problem come to me before, I will update a new version before the end of t
 archive/issue_comments_056027.json:
 ```json
 {
-    "body": "Replying to [comment:47 nborie]:\n> \n> The latest version of the patch is in the combinat queue.\n\nThat means, including our discussion of last November, I guess.\n\nCould you remind me how I can obtain the current version of the patch?",
+    "body": "Replying to [comment:47 nborie]:\n> \n> The latest version of the patch is in the combinat queue.\n\n\nThat means, including our discussion of last November, I guess.\n\nCould you remind me how I can obtain the current version of the patch?",
     "created_at": "2012-05-18T15:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1367,6 +1360,7 @@ archive/issue_comments_056027.json:
 Replying to [comment:47 nborie]:
 > 
 > The latest version of the patch is in the combinat queue.
+
 
 That means, including our discussion of last November, I guess.
 
@@ -1426,7 +1420,7 @@ I will begin to compile the 5.0 in 5 minutes...
 archive/issue_comments_056030.json:
 ```json
 {
-    "body": "Replying to [comment:49 nborie]:\n> I need to download the 5.0, update the combinat queue and probably rebase my patch...\n\nAt least the patch from here smoothly applies to sage-5.0. And since there are only few changes to existing files, I don't think there will be conflicts.\n\n> Possibly, you can have access to it browsing the sources at : http://combinat.sagemath.org/patches/ \n\nNo, I can't. I was searching for \"Borie\", and all I got was\n\n```\n3 weeks ago \tNicolas Borie \tGuards the refactor of integer vectors and dependencies...\n3 weeks ago \tNicolas Borie \tSome changes for integer vectors\n6 weeks ago \tNicolas Borie \tMove in Series and fold of the import fix made by florent (thanks you one more time!)\n6 weeks ago \tNicolas Borie \tMove in series\n7 weeks ago \tNicolas Borie \tSmall changes in integer vector experimental patch\n3 months ago \tNicolas Borie \tRefactoring IntegerVectors using SetFactories...\n3 months ago \tNicolas Borie \tFirst implementation of Schur/Schubert decomposition for multivariate polynomials\n3 months ago \tNicolas Borie \tFirst implementation od Schur / Schubert Decomposition of multivariate polynomials\n3 months ago \tNicolas Borie \tMerge\n3 months ago \tNicolas Borie \tFix two patch in the series (delete a name patch qremoved and replace a name qnewed)\n```\n\n\nSearching for \"integer vectors modulo permgroup\" (the commit message of the patch) didn't help either.\n\nSo, please provide an exact reference.",
+    "body": "Replying to [comment:49 nborie]:\n> I need to download the 5.0, update the combinat queue and probably rebase my patch...\n\n\nAt least the patch from here smoothly applies to sage-5.0. And since there are only few changes to existing files, I don't think there will be conflicts.\n\n> Possibly, you can have access to it browsing the sources at : http://combinat.sagemath.org/patches/ \n\n\nNo, I can't. I was searching for \"Borie\", and all I got was\n\n```\n3 weeks ago \tNicolas Borie \tGuards the refactor of integer vectors and dependencies...\n3 weeks ago \tNicolas Borie \tSome changes for integer vectors\n6 weeks ago \tNicolas Borie \tMove in Series and fold of the import fix made by florent (thanks you one more time!)\n6 weeks ago \tNicolas Borie \tMove in series\n7 weeks ago \tNicolas Borie \tSmall changes in integer vector experimental patch\n3 months ago \tNicolas Borie \tRefactoring IntegerVectors using SetFactories...\n3 months ago \tNicolas Borie \tFirst implementation of Schur/Schubert decomposition for multivariate polynomials\n3 months ago \tNicolas Borie \tFirst implementation od Schur / Schubert Decomposition of multivariate polynomials\n3 months ago \tNicolas Borie \tMerge\n3 months ago \tNicolas Borie \tFix two patch in the series (delete a name patch qremoved and replace a name qnewed)\n```\n\nSearching for \"integer vectors modulo permgroup\" (the commit message of the patch) didn't help either.\n\nSo, please provide an exact reference.",
     "created_at": "2012-05-18T20:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1438,9 +1432,11 @@ archive/issue_comments_056030.json:
 Replying to [comment:49 nborie]:
 > I need to download the 5.0, update the combinat queue and probably rebase my patch...
 
+
 At least the patch from here smoothly applies to sage-5.0. And since there are only few changes to existing files, I don't think there will be conflicts.
 
 > Possibly, you can have access to it browsing the sources at : http://combinat.sagemath.org/patches/ 
+
 
 No, I can't. I was searching for "Borie", and all I got was
 
@@ -1456,7 +1452,6 @@ No, I can't. I was searching for "Borie", and all I got was
 3 months ago 	Nicolas Borie 	Merge
 3 months ago 	Nicolas Borie 	Fix two patch in the series (delete a name patch qremoved and replace a name qnewed)
 ```
-
 
 Searching for "integer vectors modulo permgroup" (the commit message of the patch) didn't help either.
 
@@ -1531,7 +1526,7 @@ Too bad. Apparently, it has another dependency, namely one that creates the modu
 archive/issue_comments_056034.json:
 ```json
 {
-    "body": "Replying to [comment:54 SimonKing]:\n> What are the dependencies?\n\nSorry, now I see that you name refactor_integer_vectors_clonableintarray-nb.patch as a dependency. Anyway, if you intend to lift that dependency, I'll just wait the few days until you previde a new patch.",
+    "body": "Replying to [comment:54 SimonKing]:\n> What are the dependencies?\n\n\nSorry, now I see that you name refactor_integer_vectors_clonableintarray-nb.patch as a dependency. Anyway, if you intend to lift that dependency, I'll just wait the few days until you previde a new patch.",
     "created_at": "2012-05-18T21:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1542,6 +1537,7 @@ archive/issue_comments_056034.json:
 
 Replying to [comment:54 SimonKing]:
 > What are the dependencies?
+
 
 Sorry, now I see that you name refactor_integer_vectors_clonableintarray-nb.patch as a dependency. Anyway, if you intend to lift that dependency, I'll just wait the few days until you previde a new patch.
 
@@ -1570,7 +1566,7 @@ Yes, I will follow your comments done before... I will propose a new version thi
 archive/issue_comments_056036.json:
 ```json
 {
-    "body": "Replying to [comment:56 nborie]:\n> I will propose a new version this week end and the possible ameliorations will be part of separate tickets. The use of Clonable integer array is ok and fine because all is in Sage.\n\nGreat! And will the Cython stuff we discussed in Paris also be part of that patch?\n\nFor the record: I finally re-implemented my algorithm for the computation of fundamental invariants of non-modular invariant rings of finite groups for the special case of permutation groups, using your implementation of orbits. I should have done that earlier. After all, thanks to your work on enumerating orbits, it will probably be a lot faster than my original implementation in Singular (which dealt very inefficiently with orbits).",
+    "body": "Replying to [comment:56 nborie]:\n> I will propose a new version this week end and the possible ameliorations will be part of separate tickets. The use of Clonable integer array is ok and fine because all is in Sage.\n\n\nGreat! And will the Cython stuff we discussed in Paris also be part of that patch?\n\nFor the record: I finally re-implemented my algorithm for the computation of fundamental invariants of non-modular invariant rings of finite groups for the special case of permutation groups, using your implementation of orbits. I should have done that earlier. After all, thanks to your work on enumerating orbits, it will probably be a lot faster than my original implementation in Singular (which dealt very inefficiently with orbits).",
     "created_at": "2012-05-18T22:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1581,6 +1577,7 @@ archive/issue_comments_056036.json:
 
 Replying to [comment:56 nborie]:
 > I will propose a new version this week end and the possible ameliorations will be part of separate tickets. The use of Clonable integer array is ok and fine because all is in Sage.
+
 
 Great! And will the Cython stuff we discussed in Paris also be part of that patch?
 
@@ -1611,7 +1608,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056038.json:
 ```json
 {
-    "body": "Ok, here is a last version :\n\n- Including categories of quotient of set and (In)finite enumerated set\n- Using the cython data structure based on C array\n- Tests of coherences with others features from combinat (Partition, monomials, graphs)\n- Handling of 0-1 enumeration (like adjacent matrix of graph)\n\nOn this last Patch, all tests pass with --long and --optional for the two new files. I didn't run all tests of Sage but this new feature is orthogonal with other part of Sage. The docbuild produce no warning and the doc looks clean.\n\nTo present one other test, here is the way to build all unlabeled graphs over 7 vertices :\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: G.cardinality() == factorial(7)\nTrue\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: S._cardinality_from_iterator()\n1044\n```\n\nThis module, not optimized for the graphs do that in less than 1 minutes on my 4 years old macbook. As improvement for the future, the code is trivially \"parallelizable\". But this parallelization should be done on SearchForest and not on this module.\n\nFor the reviewer, please be careful with my English. I still try to correct myself as much but I am sure some sentences are not full-sense and there are probably some mistakes that flyspell (and me) didn't catch.\n\napply trac_6812_integer_vectors_mod_permgroup.patch",
+    "body": "Ok, here is a last version :\n\n- Including categories of quotient of set and (In)finite enumerated set\n- Using the cython data structure based on C array\n- Tests of coherences with others features from combinat (Partition, monomials, graphs)\n- Handling of 0-1 enumeration (like adjacent matrix of graph)\n\nOn this last Patch, all tests pass with --long and --optional for the two new files. I didn't run all tests of Sage but this new feature is orthogonal with other part of Sage. The docbuild produce no warning and the doc looks clean.\n\nTo present one other test, here is the way to build all unlabeled graphs over 7 vertices :\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: G.cardinality() == factorial(7)\nTrue\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: S._cardinality_from_iterator()\n1044\n```\nThis module, not optimized for the graphs do that in less than 1 minutes on my 4 years old macbook. As improvement for the future, the code is trivially \"parallelizable\". But this parallelization should be done on SearchForest and not on this module.\n\nFor the reviewer, please be careful with my English. I still try to correct myself as much but I am sure some sentences are not full-sense and there are probably some mistakes that flyspell (and me) didn't catch.\n\napply trac_6812_integer_vectors_mod_permgroup.patch",
     "created_at": "2012-05-20T09:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1639,7 +1636,6 @@ sage: S = IntegerVectorsModPermutationGroup(G, max_part=1)
 sage: S._cardinality_from_iterator()
 1044
 ```
-
 This module, not optimized for the graphs do that in less than 1 minutes on my 4 years old macbook. As improvement for the future, the code is trivially "parallelizable". But this parallelization should be done on SearchForest and not on this module.
 
 For the reviewer, please be careful with my English. I still try to correct myself as much but I am sure some sentences are not full-sense and there are probably some mistakes that flyspell (and me) didn't catch.
@@ -1711,7 +1707,7 @@ apply trac_6812_integer_vectors_mod_permgroup.patch
 archive/issue_comments_056042.json:
 ```json
 {
-    "body": "We have\n\n```\n    def orbit(self, v):\n        assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n        try:\n            if v.parent() is self:\n                return orbit(self._sgs, v)\n        except:\n            return orbit(self._sgs, self.element_class(self, v, check=False))\n```\n\n\nBy consequence, if the input is a clonable int array that belongs to a different parent, None is returned. I think there should better an error be raised.",
+    "body": "We have\n\n```\n    def orbit(self, v):\n        assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n        try:\n            if v.parent() is self:\n                return orbit(self._sgs, v)\n        except:\n            return orbit(self._sgs, self.element_class(self, v, check=False))\n```\n\nBy consequence, if the input is a clonable int array that belongs to a different parent, None is returned. I think there should better an error be raised.",
     "created_at": "2012-05-20T12:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1731,7 +1727,6 @@ We have
         except:
             return orbit(self._sgs, self.element_class(self, v, check=False))
 ```
-
 
 By consequence, if the input is a clonable int array that belongs to a different parent, None is returned. I think there should better an error be raised.
 
@@ -1796,7 +1791,7 @@ that should clearly be on a different ticket.
 archive/issue_comments_056045.json:
 ```json
 {
-    "body": "> There should not only be a fast `ClonableIntArray.list()`, but also a fast\n> `ClonableIntArray.tuple()`: Sometimes, one needs a tuple, not a list, and it\n> would be awkward and slow to first transfrom the clonable int array into a list\n> and transform that into a tuple.\n\nAdded on the todo list... But not mine todo list in fact. Florent Hivert (clone C array structure author) is going to patch his module. I will ask him if he can do something. The conversion to tuple should be implemented on the ClonableArray class in sage/structure/list_clone.pyx and thus we will get the fast conversion by inheritance. If we can optimize the conversion for integer, we will override it on the ClonableIntArray class. To avoid any conflict on merging, I will tell some words to Florent.\n\n> You know that my application of your work would be: Compute non-modular\n> invariant rings of permutation groups. For that purpose, it would be good if\n> clonable int arrays could be used to define exponent vectors of a monomial. But\n> that should clearly be on a different ticket.\n\nYep, I had to deal the same problem. For information, for the case I managed to compute with symmetric polynomials as homogeneous set of parameter (the powersums polynomials), selecting only the canonical monomials under staircase whose automorphism group is not the whole symmetric group (the orbit sum over G of the monomial is not trivially a symmetric polynomial), the enumeration engine make you find NEW secondary invariants with an average of 70% of chance. So, I can imagine your algorithmic will really save a lot of normal form computation. This rate is ok until 10 variables but falls at 30% for the only case at 14 variables (TransitiveGroup(14,61)) my algorithmic managed to compute. (you can see my algorithmic verbose here http://www.math.u-psud.fr/~borie/papers/14_61.txt)",
+    "body": "> There should not only be a fast `ClonableIntArray.list()`, but also a fast\n> `ClonableIntArray.tuple()`: Sometimes, one needs a tuple, not a list, and it\n> would be awkward and slow to first transfrom the clonable int array into a list\n> and transform that into a tuple.\n\n\nAdded on the todo list... But not mine todo list in fact. Florent Hivert (clone C array structure author) is going to patch his module. I will ask him if he can do something. The conversion to tuple should be implemented on the ClonableArray class in sage/structure/list_clone.pyx and thus we will get the fast conversion by inheritance. If we can optimize the conversion for integer, we will override it on the ClonableIntArray class. To avoid any conflict on merging, I will tell some words to Florent.\n\n> You know that my application of your work would be: Compute non-modular\n> invariant rings of permutation groups. For that purpose, it would be good if\n> clonable int arrays could be used to define exponent vectors of a monomial. But\n> that should clearly be on a different ticket.\n\n\nYep, I had to deal the same problem. For information, for the case I managed to compute with symmetric polynomials as homogeneous set of parameter (the powersums polynomials), selecting only the canonical monomials under staircase whose automorphism group is not the whole symmetric group (the orbit sum over G of the monomial is not trivially a symmetric polynomial), the enumeration engine make you find NEW secondary invariants with an average of 70% of chance. So, I can imagine your algorithmic will really save a lot of normal form computation. This rate is ok until 10 variables but falls at 30% for the only case at 14 variables (TransitiveGroup(14,61)) my algorithmic managed to compute. (you can see my algorithmic verbose here http://www.math.u-psud.fr/~borie/papers/14_61.txt)",
     "created_at": "2012-05-20T16:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1810,12 +1805,14 @@ archive/issue_comments_056045.json:
 > would be awkward and slow to first transfrom the clonable int array into a list
 > and transform that into a tuple.
 
+
 Added on the todo list... But not mine todo list in fact. Florent Hivert (clone C array structure author) is going to patch his module. I will ask him if he can do something. The conversion to tuple should be implemented on the ClonableArray class in sage/structure/list_clone.pyx and thus we will get the fast conversion by inheritance. If we can optimize the conversion for integer, we will override it on the ClonableIntArray class. To avoid any conflict on merging, I will tell some words to Florent.
 
 > You know that my application of your work would be: Compute non-modular
 > invariant rings of permutation groups. For that purpose, it would be good if
 > clonable int arrays could be used to define exponent vectors of a monomial. But
 > that should clearly be on a different ticket.
+
 
 Yep, I had to deal the same problem. For information, for the case I managed to compute with symmetric polynomials as homogeneous set of parameter (the powersums polynomials), selecting only the canonical monomials under staircase whose automorphism group is not the whole symmetric group (the orbit sum over G of the monomial is not trivially a symmetric polynomial), the enumeration engine make you find NEW secondary invariants with an average of 70% of chance. So, I can imagine your algorithmic will really save a lot of normal form computation. This rate is ok until 10 variables but falls at 30% for the only case at 14 variables (TransitiveGroup(14,61)) my algorithmic managed to compute. (you can see my algorithmic verbose here http://www.math.u-psud.fr/~borie/papers/14_61.txt)
 
@@ -1844,7 +1841,7 @@ Out of interest, I am trying to use my algorithm to find fundamental invariants 
 archive/issue_comments_056047.json:
 ```json
 {
-    "body": "Replying to [comment:65 SimonKing]:\n> Out of interest, I am trying to use my algorithm to find fundamental invariants for `TransitiveGroup(14,61)` over the rationals. The main bottleneck is the reduction of orbit sums modulo the previously found fundamental reductions (if the reduction is non-zero then the orbit sum is a new fundamental invariant). For some orbit sums in degree 8, the reduction takes several minutes!\n\nYup. That's the purpose of Nicolas's algorithm: to handle large groups by avoiding such reductions.\n\nSpeaking of comparison of algorithms: we just got a Magma license to run systematic benchmarks on our computation server in Orsay in the coming months for Nicolas's paper. We should do this benchmark all together to get the best of all systems/algorithms.",
+    "body": "Replying to [comment:65 SimonKing]:\n> Out of interest, I am trying to use my algorithm to find fundamental invariants for `TransitiveGroup(14,61)` over the rationals. The main bottleneck is the reduction of orbit sums modulo the previously found fundamental reductions (if the reduction is non-zero then the orbit sum is a new fundamental invariant). For some orbit sums in degree 8, the reduction takes several minutes!\n\n\nYup. That's the purpose of Nicolas's algorithm: to handle large groups by avoiding such reductions.\n\nSpeaking of comparison of algorithms: we just got a Magma license to run systematic benchmarks on our computation server in Orsay in the coming months for Nicolas's paper. We should do this benchmark all together to get the best of all systems/algorithms.",
     "created_at": "2012-05-20T20:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1855,6 +1852,7 @@ archive/issue_comments_056047.json:
 
 Replying to [comment:65 SimonKing]:
 > Out of interest, I am trying to use my algorithm to find fundamental invariants for `TransitiveGroup(14,61)` over the rationals. The main bottleneck is the reduction of orbit sums modulo the previously found fundamental reductions (if the reduction is non-zero then the orbit sum is a new fundamental invariant). For some orbit sums in degree 8, the reduction takes several minutes!
+
 
 Yup. That's the purpose of Nicolas's algorithm: to handle large groups by avoiding such reductions.
 
@@ -1867,7 +1865,7 @@ Speaking of comparison of algorithms: we just got a Magma license to run systema
 archive/issue_comments_056048.json:
 ```json
 {
-    "body": "What still needs review here?  Any English help still needed?\n\nA couple points on the built doc:\n* Some inconsistency in formatting, e.g. \n\n```\nIf sum is an integer, it returns a finite enumerated set containing all integer vectors maximum in their orbit for the lexicographic order and whose entries sum to `sum`.\n```\n\n  should pick `sum` or sum, preferably `sum`, I guess?\n* Similarly, sometimes there are no links, as in \n\n```\nTo get the orbit of any integer vector  under the action of the group, use the method orbit:\n```\n\n  but others are indeed hyperlinked.  Might as well get it all done for ease of browsing.\n* `last corner case :` should be `last corner case:`\n* There are lots of missing periods at ends of sentences.  That is, at the ends of sentences which are not ended by colons, which is fine.",
+    "body": "What still needs review here?  Any English help still needed?\n\nA couple points on the built doc:\n* Some inconsistency in formatting, e.g. \n\n```\nIf sum is an integer, it returns a finite enumerated set containing all integer vectors maximum in their orbit for the lexicographic order and whose entries sum to `sum`.\n```\n  should pick `sum` or sum, preferably `sum`, I guess?\n* Similarly, sometimes there are no links, as in \n\n```\nTo get the orbit of any integer vector  under the action of the group, use the method orbit:\n```\n  but others are indeed hyperlinked.  Might as well get it all done for ease of browsing.\n* `last corner case :` should be `last corner case:`\n* There are lots of missing periods at ends of sentences.  That is, at the ends of sentences which are not ended by colons, which is fine.",
     "created_at": "2012-05-24T23:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1884,14 +1882,12 @@ A couple points on the built doc:
 ```
 If sum is an integer, it returns a finite enumerated set containing all integer vectors maximum in their orbit for the lexicographic order and whose entries sum to `sum`.
 ```
-
   should pick `sum` or sum, preferably `sum`, I guess?
 * Similarly, sometimes there are no links, as in 
 
 ```
 To get the orbit of any integer vector  under the action of the group, use the method orbit:
 ```
-
   but others are indeed hyperlinked.  Might as well get it all done for ease of browsing.
 * `last corner case :` should be `last corner case:`
 * There are lots of missing periods at ends of sentences.  That is, at the ends of sentences which are not ended by colons, which is fine.
@@ -1903,7 +1899,7 @@ To get the orbit of any integer vector  under the action of the group, use the m
 archive/issue_comments_056049.json:
 ```json
 {
-    "body": "Replying to [comment:67 kcrisman]:\n> What still needs review here?  Any English help still needed?\n\nSorry, I really should have focused on reviewing. Instead, I tried to use the patch in order to provide a better implementation of my algorithm on computing fundamental invariants of non-modular representations of finite groups, in the case of permutation groups.\n\nYes, the patch basically works (as confirmed by the patch bot). However, I will do some checks: My impression is that the combinat people tend to keep the most recent patch versions in the combinat queue, rather than posting them on trac.\n\nAnyway, the plan is that I provide a reviewer patch. But since I am no native speaker either, some additional help with English is certainly appreciated.",
+    "body": "Replying to [comment:67 kcrisman]:\n> What still needs review here?  Any English help still needed?\n\n\nSorry, I really should have focused on reviewing. Instead, I tried to use the patch in order to provide a better implementation of my algorithm on computing fundamental invariants of non-modular representations of finite groups, in the case of permutation groups.\n\nYes, the patch basically works (as confirmed by the patch bot). However, I will do some checks: My impression is that the combinat people tend to keep the most recent patch versions in the combinat queue, rather than posting them on trac.\n\nAnyway, the plan is that I provide a reviewer patch. But since I am no native speaker either, some additional help with English is certainly appreciated.",
     "created_at": "2012-05-25T06:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1914,6 +1910,7 @@ archive/issue_comments_056049.json:
 
 Replying to [comment:67 kcrisman]:
 > What still needs review here?  Any English help still needed?
+
 
 Sorry, I really should have focused on reviewing. Instead, I tried to use the patch in order to provide a better implementation of my algorithm on computing fundamental invariants of non-modular representations of finite groups, in the case of permutation groups.
 
@@ -1946,7 +1943,7 @@ I am puzzled: Is there anything special to do in order to build the combinat doc
 archive/issue_comments_056051.json:
 ```json
 {
-    "body": "> I am puzzled: Is there anything special to do in order to build the combinat documentation? I tried sage -docbuild reference html, but even though integer_vectors_mod_permgroup is part of combinat/index.rst, I don't see it in the resulting documentation.\nTry `sage -b` first (maybe after touching the file); sometimes I forget to do that.",
+    "body": "> I am puzzled: Is there anything special to do in order to build the combinat documentation? I tried sage -docbuild reference html, but even though integer_vectors_mod_permgroup is part of combinat/index.rst, I don't see it in the resulting documentation.\n\nTry `sage -b` first (maybe after touching the file); sometimes I forget to do that.",
     "created_at": "2012-05-25T14:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1956,6 +1953,7 @@ archive/issue_comments_056051.json:
 ```
 
 > I am puzzled: Is there anything special to do in order to build the combinat documentation? I tried sage -docbuild reference html, but even though integer_vectors_mod_permgroup is part of combinat/index.rst, I don't see it in the resulting documentation.
+
 Try `sage -b` first (maybe after touching the file); sometimes I forget to do that.
 
 
@@ -1965,7 +1963,7 @@ Try `sage -b` first (maybe after touching the file); sometimes I forget to do th
 archive/issue_comments_056052.json:
 ```json
 {
-    "body": "Replying to [comment:70 kcrisman]:\n> Try `sage -b` first (maybe after touching the file);\n\nI had done that. But it seems I was simply stupid. For whatever reason, I did not find the html file, even though it was present. Anyway, I am now reading it...",
+    "body": "Replying to [comment:70 kcrisman]:\n> Try `sage -b` first (maybe after touching the file);\n\n\nI had done that. But it seems I was simply stupid. For whatever reason, I did not find the html file, even though it was present. Anyway, I am now reading it...",
     "created_at": "2012-05-25T14:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -1976,6 +1974,7 @@ archive/issue_comments_056052.json:
 
 Replying to [comment:70 kcrisman]:
 > Try `sage -b` first (maybe after touching the file);
+
 
 I had done that. But it seems I was simply stupid. For whatever reason, I did not find the html file, even though it was present. Anyway, I am now reading it...
 
@@ -2008,7 +2007,7 @@ I suppose the corresponding change will be part of my reviewer patch, but I'd ap
 archive/issue_comments_056054.json:
 ```json
 {
-    "body": "Still in lex_cmp_partial: If the two list segments are equal, then each pair of items is compared twice, namely:\n\n```\n    for i in range(step):\n        if v1[i] > v2[i]:\n            return 1\n        if v1[i] < v2[i]:\n            return -1\n```\n\nHence, if they coincide in the first 10 positions and differ in the 11th, then 21 or 22 comparisons are needed to find the bigger vector. But if one does\n\n```\n    for i in range(step):\n        if v1[i] != v2[i]:\n            break\n    if i<step:\n        if v1[i]<v2[i]:\n            return -1\n        else:\n            return 1\n    return 0\n```\n\nthen only 11 or 12 comparisons are needed.",
+    "body": "Still in lex_cmp_partial: If the two list segments are equal, then each pair of items is compared twice, namely:\n\n```\n    for i in range(step):\n        if v1[i] > v2[i]:\n            return 1\n        if v1[i] < v2[i]:\n            return -1\n```\nHence, if they coincide in the first 10 positions and differ in the 11th, then 21 or 22 comparisons are needed to find the bigger vector. But if one does\n\n```\n    for i in range(step):\n        if v1[i] != v2[i]:\n            break\n    if i<step:\n        if v1[i]<v2[i]:\n            return -1\n        else:\n            return 1\n    return 0\n```\nthen only 11 or 12 comparisons are needed.",
     "created_at": "2012-05-25T16:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2026,7 +2025,6 @@ Still in lex_cmp_partial: If the two list segments are equal, then each pair of 
         if v1[i] < v2[i]:
             return -1
 ```
-
 Hence, if they coincide in the first 10 positions and differ in the 11th, then 21 or 22 comparisons are needed to find the bigger vector. But if one does
 
 ```
@@ -2040,7 +2038,6 @@ Hence, if they coincide in the first 10 positions and differ in the 11th, then 2
             return 1
     return 0
 ```
-
 then only 11 or 12 comparisons are needed.
 
 
@@ -2050,7 +2047,7 @@ then only 11 or 12 comparisons are needed.
 archive/issue_comments_056055.json:
 ```json
 {
-    "body": "For example:\n\n```\nsage: cython(\"\"\"\n....: def test1(list L1, list L2, int step):\n....:     cdef int i\n....:     for i in range(step):\n....:         if L1[i]>L2[i]:\n....:             return 1\n....:         if L1[i]<L2[i]:\n....:             return -1\n....:     return 0\n....: def test2(list L1, list L2, int step):\n....:     cdef int i\n....:     for i in range(step):\n....:         if L1[i]!=L2[i]:\n....:             break\n....:     if i<step:\n....:         if L1[i]<L2[i]:\n....:             return -1\n....:         if L1[i]>L2[i]:\n....:             return 1\n....:     return 0\n....: \"\"\")\nsage: L1 = [1]*10+[1,2,3,4,5]\nsage: L2 = [1]*10+[5,4,3,2,1,0]\nsage: test1(L1,L2,9)\n0\nsage: test2(L1,L2,9)\n0\nsage: test1(L1,L2,14)\n-1\nsage: test2(L1,L2,14)\n-1\nsage: test1(L2,L1,14)\n1\nsage: test2(L2,L1,14)\n1\nsage: %timeit test1(L1,L2,14)\n625 loops, best of 3: 1.41 \u00b5s per loop\nsage: %timeit test2(L1,L2,14)\n625 loops, best of 3: 872 ns per loop\nsage: %timeit test1(L2,L1,14)\n625 loops, best of 3: 1.22 \u00b5s per loop\nsage: %timeit test2(L2,L1,14)\n625 loops, best of 3: 976 ns per loop\nsage: %timeit test1(L1,L2,10)\n625 loops, best of 3: 1.17 \u00b5s per loop\nsage: %timeit test2(L1,L2,10)\n625 loops, best of 3: 872 ns per loop\n```\n\nSo, it seems to make a small but noticeable difference.",
+    "body": "For example:\n\n```\nsage: cython(\"\"\"\n....: def test1(list L1, list L2, int step):\n....:     cdef int i\n....:     for i in range(step):\n....:         if L1[i]>L2[i]:\n....:             return 1\n....:         if L1[i]<L2[i]:\n....:             return -1\n....:     return 0\n....: def test2(list L1, list L2, int step):\n....:     cdef int i\n....:     for i in range(step):\n....:         if L1[i]!=L2[i]:\n....:             break\n....:     if i<step:\n....:         if L1[i]<L2[i]:\n....:             return -1\n....:         if L1[i]>L2[i]:\n....:             return 1\n....:     return 0\n....: \"\"\")\nsage: L1 = [1]*10+[1,2,3,4,5]\nsage: L2 = [1]*10+[5,4,3,2,1,0]\nsage: test1(L1,L2,9)\n0\nsage: test2(L1,L2,9)\n0\nsage: test1(L1,L2,14)\n-1\nsage: test2(L1,L2,14)\n-1\nsage: test1(L2,L1,14)\n1\nsage: test2(L2,L1,14)\n1\nsage: %timeit test1(L1,L2,14)\n625 loops, best of 3: 1.41 \u00b5s per loop\nsage: %timeit test2(L1,L2,14)\n625 loops, best of 3: 872 ns per loop\nsage: %timeit test1(L2,L1,14)\n625 loops, best of 3: 1.22 \u00b5s per loop\nsage: %timeit test2(L2,L1,14)\n625 loops, best of 3: 976 ns per loop\nsage: %timeit test1(L1,L2,10)\n625 loops, best of 3: 1.17 \u00b5s per loop\nsage: %timeit test2(L1,L2,10)\n625 loops, best of 3: 872 ns per loop\n```\nSo, it seems to make a small but noticeable difference.",
     "created_at": "2012-05-25T16:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2110,7 +2107,6 @@ sage: %timeit test1(L1,L2,10)
 sage: %timeit test2(L1,L2,10)
 625 loops, best of 3: 872 ns per loop
 ```
-
 So, it seems to make a small but noticeable difference.
 
 
@@ -2120,7 +2116,7 @@ So, it seems to make a small but noticeable difference.
 archive/issue_comments_056056.json:
 ```json
 {
-    "body": "When I see\n\n```\n            for child in children:\n                if child not in new_to_analyse:\n                    new_to_analyse.append(child)\n```\n\nin the cpdef function \"orbit\" in sage.combinat.enumeration_mod_permgroup.pyx, it seems to me that new_to_analyse should rather be a set, not a list, since the containment test \"child not in new_to_analyse\" works a *lot* faster on (long) sets than lists.\n\nCreate a relatively large set of random ints, and get the corresponding list (unsorted, apparently):\n\n```\nsage: S = set(randint(1,20000) for _ in range(5000))\nsage: L = list(S)\nsage: L[:10]\n[16384, 5019, 16203, 8195, 16388, 8197, 16391, 600, 16394, 8204]\n```\n\nNow, define one function operating on lists and another operating on sets that add the integers from 0 to 10000 to the list or set - but only if it isn't in the list/set yet.\n\n```\nsage: cython(\"\"\"\n....: def test1(list L):\n....:     cdef int i\n....:     for i in range(10000):\n....:         if i not in L:\n....:             L.append(i)\n....: def test2(set S):\n....:     cdef int i\n....:     for i in range(10000):\n....:         S.add(i)\n....: \"\"\")\nsage: len(L)\n4426\nsage: %time test1(L)\nCPU times: user 2.11 s, sys: 0.00 s, total: 2.12 s\nWall time: 2.12 s\nsage: len(L)\n12240\n```\n\nThe operation on the set is so much faster that I'm measuring it with timeit, also taking the time to copy the set (so that the length is preserved when running the loop for the timing):\n\n```\nsage: len(S)\n4426\nsage: %timeit test2(copy(S))\n625 loops, best of 3: 1.12 ms per loop\nsage: len(S)\n4426\n```\n\n\nHence, the same operation (at least in my proof-of-concept) is roughly 2000 times faster on sets than on lists.\n\nThe disadvantage is that the output of orbit() would be in a random order, so that to the very least it has to be sorted in the doc tests. Do you want that the output of orbit() is a sorted list (which would of course be easy to implement)?",
+    "body": "When I see\n\n```\n            for child in children:\n                if child not in new_to_analyse:\n                    new_to_analyse.append(child)\n```\nin the cpdef function \"orbit\" in sage.combinat.enumeration_mod_permgroup.pyx, it seems to me that new_to_analyse should rather be a set, not a list, since the containment test \"child not in new_to_analyse\" works a *lot* faster on (long) sets than lists.\n\nCreate a relatively large set of random ints, and get the corresponding list (unsorted, apparently):\n\n```\nsage: S = set(randint(1,20000) for _ in range(5000))\nsage: L = list(S)\nsage: L[:10]\n[16384, 5019, 16203, 8195, 16388, 8197, 16391, 600, 16394, 8204]\n```\nNow, define one function operating on lists and another operating on sets that add the integers from 0 to 10000 to the list or set - but only if it isn't in the list/set yet.\n\n```\nsage: cython(\"\"\"\n....: def test1(list L):\n....:     cdef int i\n....:     for i in range(10000):\n....:         if i not in L:\n....:             L.append(i)\n....: def test2(set S):\n....:     cdef int i\n....:     for i in range(10000):\n....:         S.add(i)\n....: \"\"\")\nsage: len(L)\n4426\nsage: %time test1(L)\nCPU times: user 2.11 s, sys: 0.00 s, total: 2.12 s\nWall time: 2.12 s\nsage: len(L)\n12240\n```\nThe operation on the set is so much faster that I'm measuring it with timeit, also taking the time to copy the set (so that the length is preserved when running the loop for the timing):\n\n```\nsage: len(S)\n4426\nsage: %timeit test2(copy(S))\n625 loops, best of 3: 1.12 ms per loop\nsage: len(S)\n4426\n```\n\nHence, the same operation (at least in my proof-of-concept) is roughly 2000 times faster on sets than on lists.\n\nThe disadvantage is that the output of orbit() would be in a random order, so that to the very least it has to be sorted in the doc tests. Do you want that the output of orbit() is a sorted list (which would of course be easy to implement)?",
     "created_at": "2012-05-25T17:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2136,7 +2132,6 @@ When I see
                 if child not in new_to_analyse:
                     new_to_analyse.append(child)
 ```
-
 in the cpdef function "orbit" in sage.combinat.enumeration_mod_permgroup.pyx, it seems to me that new_to_analyse should rather be a set, not a list, since the containment test "child not in new_to_analyse" works a *lot* faster on (long) sets than lists.
 
 Create a relatively large set of random ints, and get the corresponding list (unsorted, apparently):
@@ -2147,7 +2142,6 @@ sage: L = list(S)
 sage: L[:10]
 [16384, 5019, 16203, 8195, 16388, 8197, 16391, 600, 16394, 8204]
 ```
-
 Now, define one function operating on lists and another operating on sets that add the integers from 0 to 10000 to the list or set - but only if it isn't in the list/set yet.
 
 ```
@@ -2170,7 +2164,6 @@ Wall time: 2.12 s
 sage: len(L)
 12240
 ```
-
 The operation on the set is so much faster that I'm measuring it with timeit, also taking the time to copy the set (so that the length is preserved when running the loop for the timing):
 
 ```
@@ -2181,7 +2174,6 @@ sage: %timeit test2(copy(S))
 sage: len(S)
 4426
 ```
-
 
 Hence, the same operation (at least in my proof-of-concept) is roughly 2000 times faster on sets than on lists.
 
@@ -2262,7 +2254,7 @@ Old results of speed
 archive/issue_comments_056060.json:
 ```json
 {
-    "body": "I just added two files providing a good k-test (especially for invariant theory):\n\nThe function to use is: TEST_generation_orbit_sum\nThe function is in the file: benchmarks_generating_orbit_sum.py\n\nThe good tests to run are the following (depending the size you want to test):\n* TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True) (~2 sec)\n* TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True) (~20 sec)\n* TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True) (~3 min)\n\nAll the complexity are contained in such examples.\n\nFor graphs lovers and the change from list to set, you should use a test including vector with large automorphism group like :\n\n```\nsage: G = TransitiveGroup(15,28)          \nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 1.3 s per loop\n```\n\nThis test build the 156 graphs over 6 vertices enumerated up to an isomorphism. And vectors whose entries are 0 or 1 have 'often' large automorphism group.\n\nComparing the old implementation with Python list (and 2 years of development of Sage), the module is currently 3 or 4 times faster.",
+    "body": "I just added two files providing a good k-test (especially for invariant theory):\n\nThe function to use is: TEST_generation_orbit_sum\nThe function is in the file: benchmarks_generating_orbit_sum.py\n\nThe good tests to run are the following (depending the size you want to test):\n* TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True) (~2 sec)\n* TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True) (~20 sec)\n* TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True) (~3 min)\n\nAll the complexity are contained in such examples.\n\nFor graphs lovers and the change from list to set, you should use a test including vector with large automorphism group like :\n\n```\nsage: G = TransitiveGroup(15,28)          \nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 1.3 s per loop\n```\nThis test build the 156 graphs over 6 vertices enumerated up to an isomorphism. And vectors whose entries are 0 or 1 have 'often' large automorphism group.\n\nComparing the old implementation with Python list (and 2 years of development of Sage), the module is currently 3 or 4 times faster.",
     "created_at": "2012-05-25T19:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2291,7 +2283,6 @@ sage: S = IntegerVectorsModPermutationGroup(G, max_part=1)
 sage: timeit('S._cardinality_from_iterator()')
 5 loops, best of 3: 1.3 s per loop
 ```
-
 This test build the 156 graphs over 6 vertices enumerated up to an isomorphism. And vectors whose entries are 0 or 1 have 'often' large automorphism group.
 
 Comparing the old implementation with Python list (and 2 years of development of Sage), the module is currently 3 or 4 times faster.
@@ -2303,7 +2294,7 @@ Comparing the old implementation with Python list (and 2 years of development of
 archive/issue_comments_056061.json:
 ```json
 {
-    "body": "Replying to [comment:76 nborie]:\n> From my point of view, orbit() should return a set and not a list (mathematically and computationally speaking). Sorting it deserve to be only the choice of the user.\n\nOK. What I had a few minutes ago was: Compute with sets internally and return an ordered list. But if you agree that a set is nicer then I can change it (means: Change the doc tests and the specification of the output).\n\nAnd thank you for the benchmarks!",
+    "body": "Replying to [comment:76 nborie]:\n> From my point of view, orbit() should return a set and not a list (mathematically and computationally speaking). Sorting it deserve to be only the choice of the user.\n\n\nOK. What I had a few minutes ago was: Compute with sets internally and return an ordered list. But if you agree that a set is nicer then I can change it (means: Change the doc tests and the specification of the output).\n\nAnd thank you for the benchmarks!",
     "created_at": "2012-05-25T19:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2314,6 +2305,7 @@ archive/issue_comments_056061.json:
 
 Replying to [comment:76 nborie]:
 > From my point of view, orbit() should return a set and not a list (mathematically and computationally speaking). Sorting it deserve to be only the choice of the user.
+
 
 OK. What I had a few minutes ago was: Compute with sets internally and return an ordered list. But if you agree that a set is nicer then I can change it (means: Change the doc tests and the specification of the output).
 
@@ -2326,7 +2318,7 @@ And thank you for the benchmarks!
 archive/issue_comments_056062.json:
 ```json
 {
-    "body": "There are two problems with the orbit() method:\n\n```\n        assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n        try:\n            if v.parent() is self:\n                return orbit(self._sgs, v)\n        except:\n            return orbit(self._sgs, self.element_class(self, v, check=False))\n```\n\nThat means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?\n\nAnd is it really a good idea to convert v into an element of `self` without checking?",
+    "body": "There are two problems with the orbit() method:\n\n```\n        assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n        try:\n            if v.parent() is self:\n                return orbit(self._sgs, v)\n        except:\n            return orbit(self._sgs, self.element_class(self, v, check=False))\n```\nThat means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?\n\nAnd is it really a good idea to convert v into an element of `self` without checking?",
     "created_at": "2012-05-25T20:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2345,7 +2337,6 @@ There are two problems with the orbit() method:
         except:
             return orbit(self._sgs, self.element_class(self, v, check=False))
 ```
-
 That means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?
 
 And is it really a good idea to convert v into an element of `self` without checking?
@@ -2357,7 +2348,7 @@ And is it really a good idea to convert v into an element of `self` without chec
 archive/issue_comments_056063.json:
 ```json
 {
-    "body": "Here is orbit() returning None:\n\n```\nsage: I =  IntegerVectorsModPermutationGroup(SymmetricGroup(5),5)\nsage: J =  IntegerVectorsModPermutationGroup(AlternatingGroup(5),5)\nsage: v = J([1,1,1,2,0], check=False)\nsage: print I.orbit(v)\nNone\n```\n",
+    "body": "Here is orbit() returning None:\n\n```\nsage: I =  IntegerVectorsModPermutationGroup(SymmetricGroup(5),5)\nsage: J =  IntegerVectorsModPermutationGroup(AlternatingGroup(5),5)\nsage: v = J([1,1,1,2,0], check=False)\nsage: print I.orbit(v)\nNone\n```",
     "created_at": "2012-05-25T20:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2378,13 +2369,12 @@ None
 
 
 
-
 ---
 
 archive/issue_comments_056064.json:
 ```json
 {
-    "body": "With the patch that I almost finished (not posted yet), I get\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.49698710442\n ------------------------------------- \n(1.4969871044158936, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 13.5961458683\n ------------------------------------- \n(13.596145868301392, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 140.386005878\n ------------------------------------- \n(140.3860058784485, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 415 ms per loop\n```\n\n\nWithout the patch, I get\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.58537387848\n ------------------------------------- \n(1.585373878479004, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 15.0423038006\n ------------------------------------- \n(15.042303800582886, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 162.007292032\n ------------------------------------- \n(162.00729203224182, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 933 ms per loop\n```\n\n\nSo, it is roughly 10% to 50% improvement (even though I am currently still converting the set to sorted lists).",
+    "body": "With the patch that I almost finished (not posted yet), I get\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.49698710442\n ------------------------------------- \n(1.4969871044158936, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 13.5961458683\n ------------------------------------- \n(13.596145868301392, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 140.386005878\n ------------------------------------- \n(140.3860058784485, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 415 ms per loop\n```\n\nWithout the patch, I get\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.58537387848\n ------------------------------------- \n(1.585373878479004, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 15.0423038006\n ------------------------------------- \n(15.042303800582886, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 162.007292032\n ------------------------------------- \n(162.00729203224182, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 933 ms per loop\n```\n\nSo, it is roughly 10% to 50% improvement (even though I am currently still converting the set to sorted lists).",
     "created_at": "2012-05-25T20:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2429,7 +2419,6 @@ sage: timeit('S._cardinality_from_iterator()')
 5 loops, best of 3: 415 ms per loop
 ```
 
-
 Without the patch, I get
 
 ```
@@ -2466,7 +2455,6 @@ sage: timeit('S._cardinality_from_iterator()')
 5 loops, best of 3: 933 ms per loop
 ```
 
-
 So, it is roughly 10% to 50% improvement (even though I am currently still converting the set to sorted lists).
 
 
@@ -2476,7 +2464,7 @@ So, it is roughly 10% to 50% improvement (even though I am currently still conve
 archive/issue_comments_056065.json:
 ```json
 {
-    "body": "Replying to [comment:79 SimonKing]:\n> There are two problems with the orbit() method:\n> {{{\n>         assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n>         try:\n>             if v.parent() is self:\n>                 return orbit(self._sgs, v)\n>         except:\n>             return orbit(self._sgs, self.element_class(self, v, check=False))\n> }}}\n> That means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?\n> \n> And is it really a good idea to convert v into an element of `self` without checking?\n\nYes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). \n\nAfter for safety, I don't know the consequence of such a choice on the lung run.\n\nAnyway, the test is_canonical should be very very much faster than the full expansion of an orbit and a user who want just an orbit can also compute his own function.",
+    "body": "Replying to [comment:79 SimonKing]:\n> There are two problems with the orbit() method:\n> \n> ```\n>         assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)\n>         try:\n>             if v.parent() is self:\n>                 return orbit(self._sgs, v)\n>         except:\n>             return orbit(self._sgs, self.element_class(self, v, check=False))\n> ```\n> That means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?\n> \n> And is it really a good idea to convert v into an element of `self` without checking?\n\n\nYes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). \n\nAfter for safety, I don't know the consequence of such a choice on the lung run.\n\nAnyway, the test is_canonical should be very very much faster than the full expansion of an orbit and a user who want just an orbit can also compute his own function.",
     "created_at": "2012-05-25T20:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2487,17 +2475,19 @@ archive/issue_comments_056065.json:
 
 Replying to [comment:79 SimonKing]:
 > There are two problems with the orbit() method:
-> {{{
+> 
+> ```
 >         assert isinstance(v, (list, ClonableIntArray)), '%s shoud be a Python list or an element of %s'%(v, self)
 >         try:
 >             if v.parent() is self:
 >                 return orbit(self._sgs, v)
 >         except:
 >             return orbit(self._sgs, self.element_class(self, v, check=False))
-> }}}
+> ```
 > That means that *None* is returned if v happens to be a ClonableIntArray with a different parent. Shouldn't v be transformed into an element of `self` instead?
 > 
 > And is it really a good idea to convert v into an element of `self` without checking?
+
 
 Yes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). 
 
@@ -2512,7 +2502,7 @@ Anyway, the test is_canonical should be very very much faster than the full expa
 archive/issue_comments_056066.json:
 ```json
 {
-    "body": "Replying to [comment:82 nborie]:\n> Yes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). \n\nAgreed. So, check=False should be fine.\n\nBut I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return \"None\".\n\n> Anyway, the test is_canonical should be very very much faster than the full expansion of an orbit\n\nOf course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return \"False\" before finishing the computation of the whole orbit.\n\nBy the way, I made some further tweaks and am now down to\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.43067121506\n ------------------------------------- \n(1.430671215057373, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 12.9384939671\n ------------------------------------- \n(12.938493967056274, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 134.613152981\n ------------------------------------- \n(134.61315298080444, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 408 ms per loop\n```\n",
+    "body": "Replying to [comment:82 nborie]:\n> Yes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). \n\n\nAgreed. So, check=False should be fine.\n\nBut I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return \"None\".\n\n> Anyway, the test is_canonical should be very very much faster than the full expansion of an orbit\n\n\nOf course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return \"False\" before finishing the computation of the whole orbit.\n\nBy the way, I made some further tweaks and am now down to\n\n```\nsage: TEST_generation_orbit_sum(TransitiveGroup(8,1), verbose=True)\nFor G be the transitive group number 1 of degree 8\nCardinality of G : 8\n  \nCardinality of secondary invariants : 5040\nNumber of canonical monomials under staircase : 18297\nTotal time : 1.43067121506\n ------------------------------------- \n(1.430671215057373, 18297, 8)\nsage: TEST_generation_orbit_sum(TransitiveGroup(9,1), verbose=True)\nFor G be the transitive group number 1 of degree 9\nCardinality of G : 9\n  \nCardinality of secondary invariants : 40320\nNumber of canonical monomials under staircase : 153974\nTotal time : 12.9384939671\n ------------------------------------- \n(12.938493967056274, 153974, 9)\nsage: TEST_generation_orbit_sum(TransitiveGroup(10,1), verbose=True)\nFor G be the transitive group number 1 of degree 10\nCardinality of G : 10\n  \nCardinality of secondary invariants : 362880\nNumber of canonical monomials under staircase : 1452325\nTotal time : 134.613152981\n ------------------------------------- \n(134.61315298080444, 1452325, 10)\nsage: G = TransitiveGroup(15,28)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: timeit('S._cardinality_from_iterator()')\n5 loops, best of 3: 408 ms per loop\n```",
     "created_at": "2012-05-25T21:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2524,11 +2514,13 @@ archive/issue_comments_056066.json:
 Replying to [comment:82 nborie]:
 > Yes, this piece of code is horribly ugly... The point is that the orbit method will work with any integer vector. v doesn't need to be canonical. I don't have a use case but I was thinking it would be more convenient to allow the user to use this method for any integer vector (canonical or not). 
 
+
 Agreed. So, check=False should be fine.
 
 But I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return "None".
 
 > Anyway, the test is_canonical should be very very much faster than the full expansion of an orbit
+
 
 Of course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return "False" before finishing the computation of the whole orbit.
 
@@ -2570,13 +2562,12 @@ sage: timeit('S._cardinality_from_iterator()')
 
 
 
-
 ---
 
 archive/issue_comments_056067.json:
 ```json
 {
-    "body": "Replying to [comment:83 SimonKing]:\n> But I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return \"None\".\n\nYes! None is not an option here. It must return a set or raise an error.\n\n> Of course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return \"False\" before finishing the computation of the whole orbit.\n\nAnd more than that, there is a king of gardener lemma inside the is_canonical method, the partial_lex comparison cut some branches of the orbit just by reading the first entries.\n\nI also think the change from list to set produce more than x2 speedup, it is probably an exponential optimization, you should try before and after with graphs over 7 vertices :\n\n```\nsage: G = TransitiveGroup(21,38)          \nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: time S._cardinality_from_iterator()\n1044\nTime: CPU 128.64 s, Wall: 136.10 s\n```\n\nIt become to be a large test for this last one. (1044 symmetric matrices of size 7)\n\nA student of Florent Hivert had to master project to parallelize SearchForest. Imagine what such module can need by inheritance... (with possible adaptations according changes of SearchForest)",
+    "body": "Replying to [comment:83 SimonKing]:\n> But I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return \"None\".\n\n\nYes! None is not an option here. It must return a set or raise an error.\n\n> Of course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return \"False\" before finishing the computation of the whole orbit.\n\n\nAnd more than that, there is a king of gardener lemma inside the is_canonical method, the partial_lex comparison cut some branches of the orbit just by reading the first entries.\n\nI also think the change from list to set produce more than x2 speedup, it is probably an exponential optimization, you should try before and after with graphs over 7 vertices :\n\n```\nsage: G = TransitiveGroup(21,38)          \nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: time S._cardinality_from_iterator()\n1044\nTime: CPU 128.64 s, Wall: 136.10 s\n```\nIt become to be a large test for this last one. (1044 symmetric matrices of size 7)\n\nA student of Florent Hivert had to master project to parallelize SearchForest. Imagine what such module can need by inheritance... (with possible adaptations according changes of SearchForest)",
     "created_at": "2012-05-25T21:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2588,9 +2579,11 @@ archive/issue_comments_056067.json:
 Replying to [comment:83 SimonKing]:
 > But I do think that the orbit method should try to convert the input vector from a different parent into self, and should certainly not return "None".
 
+
 Yes! None is not an option here. It must return a set or raise an error.
 
 > Of course. The algorithm for is_canonical looks almost the same as the full expansion of an orbit, but if it is in fact non-canonical then the function will return "False" before finishing the computation of the whole orbit.
+
 
 And more than that, there is a king of gardener lemma inside the is_canonical method, the partial_lex comparison cut some branches of the orbit just by reading the first entries.
 
@@ -2603,7 +2596,6 @@ sage: time S._cardinality_from_iterator()
 1044
 Time: CPU 128.64 s, Wall: 136.10 s
 ```
-
 It become to be a large test for this last one. (1044 symmetric matrices of size 7)
 
 A student of Florent Hivert had to master project to parallelize SearchForest. Imagine what such module can need by inheritance... (with possible adaptations according changes of SearchForest)
@@ -2615,7 +2607,7 @@ A student of Florent Hivert had to master project to parallelize SearchForest. I
 archive/issue_comments_056068.json:
 ```json
 {
-    "body": "Without patch\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: %time S._cardinality_from_iterator()\nCPU times: user 54.56 s, sys: 0.02 s, total: 54.58 s\nWall time: 54.64 s\n1044\n```\n\nWith patch\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: %time S._cardinality_from_iterator()\nCPU times: user 9.36 s, sys: 0.01 s, total: 9.37 s\nWall time: 9.38 s\n1044\n```\n\nSo, yes, it scales well...",
+    "body": "Without patch\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: %time S._cardinality_from_iterator()\nCPU times: user 54.56 s, sys: 0.02 s, total: 54.58 s\nWall time: 54.64 s\n1044\n```\nWith patch\n\n```\nsage: G = TransitiveGroup(21,38)\nsage: S = IntegerVectorsModPermutationGroup(G, max_part=1)\nsage: %time S._cardinality_from_iterator()\nCPU times: user 9.36 s, sys: 0.01 s, total: 9.37 s\nWall time: 9.38 s\n1044\n```\nSo, yes, it scales well...",
     "created_at": "2012-05-25T21:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2634,7 +2626,6 @@ CPU times: user 54.56 s, sys: 0.02 s, total: 54.58 s
 Wall time: 54.64 s
 1044
 ```
-
 With patch
 
 ```
@@ -2645,7 +2636,6 @@ CPU times: user 9.36 s, sys: 0.01 s, total: 9.37 s
 Wall time: 9.38 s
 1044
 ```
-
 So, yes, it scales well...
 
 
@@ -2825,7 +2815,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_056077.json:
 ```json
 {
-    "body": "I'm adding a very minor review patch for a few issues.  This is an amazing contribution!\n\nAlso, can you fix this?\n\n```\n# User \"sage-combinat script\"\n```\n",
+    "body": "I'm adding a very minor review patch for a few issues.  This is an amazing contribution!\n\nAlso, can you fix this?\n\n```\n# User \"sage-combinat script\"\n```",
     "created_at": "2012-05-26T15:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -2841,7 +2831,6 @@ Also, can you fix this?
 ```
 # User "sage-combinat script"
 ```
-
 
 
 

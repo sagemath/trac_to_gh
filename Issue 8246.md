@@ -130,7 +130,7 @@ comparison between old (blue) and new (red) implementations
 archive/issue_comments_072813.json:
 ```json
 {
-    "body": "Attachment [benchmark-carmichael.png](tarball://root/attachments/some-uuid/ticket8246/benchmark-carmichael.png) by mvngu created at 2010-02-13 04:29:02\n\nThe attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):\n\n```\nsage: load(\"/home/mvngu/BBScrypto.sage\")\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael(n)\n....:     T.append(t.stats[3])\n....:     \nsage: f = open(\"/home/mvngu/carmichael.old\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nThe following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):\n\n```\nsage: from sage.crypto.util import carmichael_lambda\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael_lambda(n)\n....:     T.append(t.stats[3])\n....:     \nsage: # First 10 elements of T are timings in nanoseconds. \nsage: # So convert them to microseconds.\nsage: for i in xrange(10):\n....:     T[i] = T[i] / 1000\n....:     \nsage: f = open(\"/home/mvngu/carmichael.new\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nNow plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.\n\n```\nsage: X = [1..1000]\nsage: Yold = []\nsage: f = open(\"/home/mvngu/carmichael.old\", \"r\")\nsage: for t in f:\n....:     Yold.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Ynew = []\nsage: f = open(\"/home/mvngu/carmichael.new\", \"r\")\nsage: for t in f:\n....:     Ynew.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Pold = line2d(zip(X, Yold), color=\"blue\", thickness=1)\nsage: Pnew = line2d(zip(X, Ynew), color=\"red\", thickness=1)\nsage: Pold + Pnew\n```\n\nFirst apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
+    "body": "Attachment [benchmark-carmichael.png](tarball://root/attachments/some-uuid/ticket8246/benchmark-carmichael.png) by mvngu created at 2010-02-13 04:29:02\n\nThe attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):\n\n```\nsage: load(\"/home/mvngu/BBScrypto.sage\")\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael(n)\n....:     T.append(t.stats[3])\n....:     \nsage: f = open(\"/home/mvngu/carmichael.old\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\nThe following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):\n\n```\nsage: from sage.crypto.util import carmichael_lambda\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael_lambda(n)\n....:     T.append(t.stats[3])\n....:     \nsage: # First 10 elements of T are timings in nanoseconds. \nsage: # So convert them to microseconds.\nsage: for i in xrange(10):\n....:     T[i] = T[i] / 1000\n....:     \nsage: f = open(\"/home/mvngu/carmichael.new\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\nNow plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.\n\n```\nsage: X = [1..1000]\nsage: Yold = []\nsage: f = open(\"/home/mvngu/carmichael.old\", \"r\")\nsage: for t in f:\n....:     Yold.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Ynew = []\nsage: f = open(\"/home/mvngu/carmichael.new\", \"r\")\nsage: for t in f:\n....:     Ynew.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Pold = line2d(zip(X, Yold), color=\"blue\", thickness=1)\nsage: Pnew = line2d(zip(X, Ynew), color=\"red\", thickness=1)\nsage: Pold + Pnew\n```\nFirst apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
     "created_at": "2010-02-13T04:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -157,7 +157,6 @@ sage: for t in T:
 sage: f.close()
 ```
 
-
 The following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):
 
 ```
@@ -179,7 +178,6 @@ sage: for t in T:
 sage: f.close()
 ```
 
-
 Now plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.
 
 ```
@@ -200,7 +198,6 @@ sage: Pold = line2d(zip(X, Yold), color="blue", thickness=1)
 sage: Pnew = line2d(zip(X, Ynew), color="red", thickness=1)
 sage: Pold + Pnew
 ```
-
 First apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).
 
 
@@ -322,7 +319,7 @@ archive/issue_events_019720.json:
 archive/issue_comments_072819.json:
 ```json
 {
-    "body": "Sorry to comment that late, but there are a few things in this patch I dislike:\n\n* Why hard code the first ten values?\n* `carmichael_lambda(16)` is of type `sage.rings.rational.Rational`\n* why use generic_power to compute the power of an integer?\n\nhere's my 2-cents implementation:\n\n\n```\n\ndef carmichael_lambda(n):\n    n = Integer(n)\n\n    if n < 1: \n        raise ValueError(\"Input n must be a positive integer.\")\n\n    F = n.factor()\n    L = []\n\n    # first get rid of the even part\n    if n & 1 == 0:\n        e = F[0][1]\n        F = F[1:]\n        if e < 3:\n            e = e-1\n        else:\n            e = e-2\n        L.append(1<<e)\n    \n    # then other prime factors\n    L += [ p**(k-1)*(p-1) for p,k in F]\n\n    # finish the job\n    return lcm(L)\n\n```\n",
+    "body": "Sorry to comment that late, but there are a few things in this patch I dislike:\n\n* Why hard code the first ten values?\n* `carmichael_lambda(16)` is of type `sage.rings.rational.Rational`\n* why use generic_power to compute the power of an integer?\n\nhere's my 2-cents implementation:\n\n```\n\ndef carmichael_lambda(n):\n    n = Integer(n)\n\n    if n < 1: \n        raise ValueError(\"Input n must be a positive integer.\")\n\n    F = n.factor()\n    L = []\n\n    # first get rid of the even part\n    if n & 1 == 0:\n        e = F[0][1]\n        F = F[1:]\n        if e < 3:\n            e = e-1\n        else:\n            e = e-2\n        L.append(1<<e)\n    \n    # then other prime factors\n    L += [ p**(k-1)*(p-1) for p,k in F]\n\n    # finish the job\n    return lcm(L)\n\n```",
     "created_at": "2010-02-15T17:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -338,7 +335,6 @@ Sorry to comment that late, but there are a few things in this patch I dislike:
 * why use generic_power to compute the power of an integer?
 
 here's my 2-cents implementation:
-
 
 ```
 
@@ -371,13 +367,12 @@ def carmichael_lambda(n):
 
 
 
-
 ---
 
 archive/issue_comments_072820.json:
 ```json
 {
-    "body": "Replying to [comment:4 ylchapuy]:\n> Sorry to comment that late, but there are a few things in this patch I dislike:\n> ...\n\nDid you test to see if your implementation was faster than the current one. If so, what were the results?",
+    "body": "Replying to [comment:4 ylchapuy]:\n> Sorry to comment that late, but there are a few things in this patch I dislike:\n> ...\n\n\nDid you test to see if your implementation was faster than the current one. If so, what were the results?",
     "created_at": "2010-02-15T17:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -390,6 +385,7 @@ Replying to [comment:4 ylchapuy]:
 > Sorry to comment that late, but there are a few things in this patch I dislike:
 > ...
 
+
 Did you test to see if your implementation was faster than the current one. If so, what were the results?
 
 
@@ -399,7 +395,7 @@ Did you test to see if your implementation was faster than the current one. If s
 archive/issue_comments_072821.json:
 ```json
 {
-    "body": "Replying to [comment:5 wdj]:\n> Replying to [comment:4 ylchapuy]:\n> > Sorry to comment that late, but there are a few things in this patch I dislike:\n> > ...\n> \n> Did you test to see if your implementation was faster than the current one. If so, what were the results?\n\nExcept if n<=10, timings are very similar, mine being slightly faster.\nTo obtain an even faster version one can replace the final lcm with `sage.rings.integer.LCM_list(L)`.\n\ne.g.\n\n```\nsage: %timeit carmichael_lambda(1000)     # Minh's version\n625 loops, best of 3: 270 \u00b5s per loop\nsage: %timeit my_carmichael_lambda(1000)  # mine with lcm\n625 loops, best of 3: 244 \u00b5s per loop\nsage: %timeit my_carmichael_lambda2(1000) # mine with sage.rings.integer.LCM_list\n625 loops, best of 3: 214 \u00b5s per loop\nsage: %timeit factor(1000)                # just to compare\n625 loops, best of 3: 177 \u00b5s per loop\n```\n\n\nwe can see that most of the time is spent factoring.",
+    "body": "Replying to [comment:5 wdj]:\n> Replying to [comment:4 ylchapuy]:\n> > Sorry to comment that late, but there are a few things in this patch I dislike:\n> > ...\n\n> \n> Did you test to see if your implementation was faster than the current one. If so, what were the results?\n\n\nExcept if n<=10, timings are very similar, mine being slightly faster.\nTo obtain an even faster version one can replace the final lcm with `sage.rings.integer.LCM_list(L)`.\n\ne.g.\n\n```\nsage: %timeit carmichael_lambda(1000)     # Minh's version\n625 loops, best of 3: 270 \u00b5s per loop\nsage: %timeit my_carmichael_lambda(1000)  # mine with lcm\n625 loops, best of 3: 244 \u00b5s per loop\nsage: %timeit my_carmichael_lambda2(1000) # mine with sage.rings.integer.LCM_list\n625 loops, best of 3: 214 \u00b5s per loop\nsage: %timeit factor(1000)                # just to compare\n625 loops, best of 3: 177 \u00b5s per loop\n```\n\nwe can see that most of the time is spent factoring.",
     "created_at": "2010-02-15T19:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -412,8 +408,10 @@ Replying to [comment:5 wdj]:
 > Replying to [comment:4 ylchapuy]:
 > > Sorry to comment that late, but there are a few things in this patch I dislike:
 > > ...
+
 > 
 > Did you test to see if your implementation was faster than the current one. If so, what were the results?
+
 
 Except if n<=10, timings are very similar, mine being slightly faster.
 To obtain an even faster version one can replace the final lcm with `sage.rings.integer.LCM_list(L)`.
@@ -430,7 +428,6 @@ sage: %timeit my_carmichael_lambda2(1000) # mine with sage.rings.integer.LCM_lis
 sage: %timeit factor(1000)                # just to compare
 625 loops, best of 3: 177 µs per loop
 ```
-
 
 we can see that most of the time is spent factoring.
 
@@ -459,7 +456,7 @@ For me, a small speed up does not matter. The function is used theoretically in 
 archive/issue_comments_072823.json:
 ```json
 {
-    "body": "Replying to [comment:7 wdj]:\n> For me, a small speed up does not matter. The function is used theoretically in security estimates for the BBS stream cipher. \n\nI totally agree on this, but you asked for speed results! I didn't mentionned speed at all in my first message.\n\n> I'm not saying that you should not try to speed things up,\n\nIt's definitely not what I'm trying to do.\n\n> it is just that it is more important for the function to exist in Sage that for it to be fast. But if someone wants me to referee a new patch, that is fine too.\n\nMy point was:\n\n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.",
+    "body": "Replying to [comment:7 wdj]:\n> For me, a small speed up does not matter. The function is used theoretically in security estimates for the BBS stream cipher. \n\n\nI totally agree on this, but you asked for speed results! I didn't mentionned speed at all in my first message.\n\n> I'm not saying that you should not try to speed things up,\n\n\nIt's definitely not what I'm trying to do.\n\n> it is just that it is more important for the function to exist in Sage that for it to be fast. But if someone wants me to referee a new patch, that is fine too.\n\n\nMy point was:\n\n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.",
     "created_at": "2010-02-15T21:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -471,13 +468,16 @@ archive/issue_comments_072823.json:
 Replying to [comment:7 wdj]:
 > For me, a small speed up does not matter. The function is used theoretically in security estimates for the BBS stream cipher. 
 
+
 I totally agree on this, but you asked for speed results! I didn't mentionned speed at all in my first message.
 
 > I'm not saying that you should not try to speed things up,
 
+
 It's definitely not what I'm trying to do.
 
 > it is just that it is more important for the function to exist in Sage that for it to be fast. But if someone wants me to referee a new patch, that is fine too.
+
 
 My point was:
 
@@ -492,7 +492,7 @@ My point was:
 archive/issue_comments_072824.json:
 ```json
 {
-    "body": "Replying to [comment:8 ylchapuy]:\n> My point was:\n> \n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.\n>\nThe patch is already merged. To reopen this ticket would result in confusion for release managers. Can I persuade you to open a ticket to get your implementation into Sage? It's always nice to have an expert look over a novice's work.",
+    "body": "Replying to [comment:8 ylchapuy]:\n> My point was:\n> \n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.\n>\n\nThe patch is already merged. To reopen this ticket would result in confusion for release managers. Can I persuade you to open a ticket to get your implementation into Sage? It's always nice to have an expert look over a novice's work.",
     "created_at": "2010-02-16T04:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -508,6 +508,7 @@ Replying to [comment:8 ylchapuy]:
 * a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;
 * my code is IMHO just easier to read.
 >
+
 The patch is already merged. To reopen this ticket would result in confusion for release managers. Can I persuade you to open a ticket to get your implementation into Sage? It's always nice to have an expert look over a novice's work.
 
 
@@ -517,7 +518,7 @@ The patch is already merged. To reopen this ticket would result in confusion for
 archive/issue_comments_072825.json:
 ```json
 {
-    "body": "Replying to [comment:9 mvngu]:\n> Replying to [comment:8 ylchapuy]:\n\n...\n\n> Can I persuade you to open a ticket to get your implementation into Sage? \n\nI'll try to remember to do this myself later today.",
+    "body": "Replying to [comment:9 mvngu]:\n> Replying to [comment:8 ylchapuy]:\n\n\n...\n\n> Can I persuade you to open a ticket to get your implementation into Sage? \n\n\nI'll try to remember to do this myself later today.",
     "created_at": "2010-02-16T12:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
@@ -529,9 +530,11 @@ archive/issue_comments_072825.json:
 Replying to [comment:9 mvngu]:
 > Replying to [comment:8 ylchapuy]:
 
+
 ...
 
 > Can I persuade you to open a ticket to get your implementation into Sage? 
+
 
 I'll try to remember to do this myself later today.
 

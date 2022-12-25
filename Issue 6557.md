@@ -3,7 +3,7 @@
 archive/issues_006557.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHere are two independent Sage 4.1 sessions which demonstrate that the\nconstruction of NumberField's is context dependent:\n\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1 over its base field\n\n       sage: W1 = NumberField(x^2+1,'a')\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1\n\nIn fact:\n\n       sage: W1 is W0\n       True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6557\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHere are two independent Sage 4.1 sessions which demonstrate that the\nconstruction of NumberField's is context dependent:\n\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1 over its base field\n\n       sage: W1 = NumberField(x^2+1,'a')\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1\n\nIn fact:\n\n       sage: W1 is W0\n       True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6557\n\n",
     "created_at": "2009-07-18T22:07:13Z",
     "labels": [
         "component: number theory",
@@ -17,7 +17,6 @@ archive/issues_006557.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Here are two independent Sage 4.1 sessions which demonstrate that the
@@ -39,7 +38,6 @@ In fact:
        sage: W1 is W0
        True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6557
 

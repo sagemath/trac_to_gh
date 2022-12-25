@@ -3,7 +3,7 @@
 archive/issues_008378.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @jasongrout\n\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\n\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @jasongrout\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
     "created_at": "2010-02-26T10:14:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,20 +21,17 @@ Assignee: @aghitza
 
 CC:  @JohnCremona @jasongrout
 
-
 ```
 sage: crt(15,1,30,4)
 ...
 ValueError: arguments a and b must be coprime
 ```
-
 However in the documentation of `crt` a, b are the residues,
 and the moduli are called m, n. Thus the message should be:
 
 ```
 ValueError: arguments m and n must be coprime
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8378
 
@@ -128,7 +125,7 @@ Paul, if you fancy upgrading your patch, go ahead.  Or you could ask me to do it
 archive/issue_comments_074784.json:
 ```json
 {
-    "body": "John,\n\n> Or you could ask me to do it since I'm the one who has made difficulties!\n\nplease go ahead! By the way, I noticed this while writing a textbook in french about Sage.\nThe textbook currently proposes a function `mycrt` which implements the general case:\n\n```\ndef mycrt(a,b,m,n):\n   g = gcd(m,n)\n   x0 = a % g                                                                   \n   y0 = b % g                                                                   \n   if x0 <> y0:\n      raise ValueError, \"no solution\"\n   return (x0 + g * crt((a-x0)//g,(b-x0)//g,m//g,n//g)) % (n*m//g)              \nsage: mycrt(15,1,30,4)\n45\nsage: mycrt(15,2,30,4)\nTraceback (most recent call last):\n...\nValueError: no solution\n```\n\nIf you implement the general case, I will need to revise the textbook, but this is not a\nproblem... I will be happy to review your patch, but maybe a separate ticket is needed,\notherwise we would both appear as author+reviewer, and I'm not sure the release manager\nwill be happy with that.",
+    "body": "John,\n\n> Or you could ask me to do it since I'm the one who has made difficulties!\n\n\nplease go ahead! By the way, I noticed this while writing a textbook in french about Sage.\nThe textbook currently proposes a function `mycrt` which implements the general case:\n\n```\ndef mycrt(a,b,m,n):\n   g = gcd(m,n)\n   x0 = a % g                                                                   \n   y0 = b % g                                                                   \n   if x0 <> y0:\n      raise ValueError, \"no solution\"\n   return (x0 + g * crt((a-x0)//g,(b-x0)//g,m//g,n//g)) % (n*m//g)              \nsage: mycrt(15,1,30,4)\n45\nsage: mycrt(15,2,30,4)\nTraceback (most recent call last):\n...\nValueError: no solution\n```\nIf you implement the general case, I will need to revise the textbook, but this is not a\nproblem... I will be happy to review your patch, but maybe a separate ticket is needed,\notherwise we would both appear as author+reviewer, and I'm not sure the release manager\nwill be happy with that.",
     "created_at": "2010-04-23T11:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
@@ -140,6 +137,7 @@ archive/issue_comments_074784.json:
 John,
 
 > Or you could ask me to do it since I'm the one who has made difficulties!
+
 
 please go ahead! By the way, I noticed this while writing a textbook in french about Sage.
 The textbook currently proposes a function `mycrt` which implements the general case:
@@ -159,7 +157,6 @@ Traceback (most recent call last):
 ...
 ValueError: no solution
 ```
-
 If you implement the general case, I will need to revise the textbook, but this is not a
 problem... I will be happy to review your patch, but maybe a separate ticket is needed,
 otherwise we would both appear as author+reviewer, and I'm not sure the release manager

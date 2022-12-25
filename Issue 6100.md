@@ -113,7 +113,7 @@ Known issues:  If S is a simplicial complex, S.homology(generators=true) has not
 archive/issue_comments_048576.json:
 ```json
 {
-    "body": "Replying to [comment:2 sault]:\n\nThanks for working on this; I hope we can get it into shape soon, and then into Sage.\n\n> Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  \n\nI know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).\n\n> Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.\n\nI wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.\n\nThere are three problems with this patch: the main one is that it doesn't work with field coefficients:\n\n```\nsage: T = simplicial_complexes.Torus()\nsage: C = T.chain_complex()\nsage: C.homology(base_ring=QQ, generators=True)\n{0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}\n```\n\nIt only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like\n\n```\nsage: T = simplicial_complexes.Torus()\nsage: C = T.chain_complex()\nsage: C.homology(1, base_ring=QQ, generators=True)\n???\n```\n\n\nThe second problem is the documentation: you should explain (briefly) the format of the output when \"generators\" is True: it's giving a matrix, and you should say exactly what this matrix represents.\n\nThe third issue is minor: the indentation in the docstrings is important, but you changed it, so it gives errors when producing the reference manual.  The docstring itself also looks bad: from the notebook, define a chain complex C and evaluate \"C.homology?\" to see what the formatted docstring looks like.  Or do `browse_sage_doc(C.homology)` from the command line.",
+    "body": "Replying to [comment:2 sault]:\n\nThanks for working on this; I hope we can get it into shape soon, and then into Sage.\n\n> Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  \n\n\nI know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).\n\n> Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.\n\n\nI wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.\n\nThere are three problems with this patch: the main one is that it doesn't work with field coefficients:\n\n```\nsage: T = simplicial_complexes.Torus()\nsage: C = T.chain_complex()\nsage: C.homology(base_ring=QQ, generators=True)\n{0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}\n```\nIt only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like\n\n```\nsage: T = simplicial_complexes.Torus()\nsage: C = T.chain_complex()\nsage: C.homology(1, base_ring=QQ, generators=True)\n???\n```\n\nThe second problem is the documentation: you should explain (briefly) the format of the output when \"generators\" is True: it's giving a matrix, and you should say exactly what this matrix represents.\n\nThe third issue is minor: the indentation in the docstrings is important, but you changed it, so it gives errors when producing the reference manual.  The docstring itself also looks bad: from the notebook, define a chain complex C and evaluate \"C.homology?\" to see what the formatted docstring looks like.  Or do `browse_sage_doc(C.homology)` from the command line.",
     "created_at": "2010-02-03T18:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
@@ -128,9 +128,11 @@ Thanks for working on this; I hope we can get it into shape soon, and then into 
 
 > Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  
 
+
 I know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).
 
 > Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.
+
 
 I wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.
 
@@ -142,7 +144,6 @@ sage: C = T.chain_complex()
 sage: C.homology(base_ring=QQ, generators=True)
 {0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}
 ```
-
 It only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like
 
 ```
@@ -151,7 +152,6 @@ sage: C = T.chain_complex()
 sage: C.homology(1, base_ring=QQ, generators=True)
 ???
 ```
-
 
 The second problem is the documentation: you should explain (briefly) the format of the output when "generators" is True: it's giving a matrix, and you should say exactly what this matrix represents.
 
@@ -182,7 +182,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_048578.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n\nThanks John, for reviewing this patch and for spotting the bugs/omissions.  I'll be working on this today and I hope to get it up to speed soon.  \n\n-S\n\n\n> Replying to [comment:2 sault]:\n> \n> Thanks for working on this; I hope we can get it into shape soon, and then into Sage.\n> \n> > Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  \n> \n> I know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).\n> \n> > Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.\n> \n> I wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.\n> \n> There are three problems with this patch: the main one is that it doesn't work with field coefficients:\n> {{{\n> sage: T = simplicial_complexes.Torus()\n> sage: C = T.chain_complex()\n> sage: C.homology(base_ring=QQ, generators=True)\n> {0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}\n> }}}\n> It only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like\n> {{{\n> sage: T = simplicial_complexes.Torus()\n> sage: C = T.chain_complex()\n> sage: C.homology(1, base_ring=QQ, generators=True)\n> ???\n> }}}\n> \n> The second problem is the documentation: you should explain (briefly) the format of the output when \"generators\" is True: it's giving a matrix, and you should say exactly what this matrix represents.\n> \n> The third issue is minor: the indentation in the docstrings is important, but you changed it, so it gives errors when producing the reference manual.  The docstring itself also looks bad: from the notebook, define a chain complex C and evaluate \"C.homology?\" to see what the formatted docstring looks like.  Or do `browse_sage_doc(C.homology)` from the command line.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n\nThanks John, for reviewing this patch and for spotting the bugs/omissions.  I'll be working on this today and I hope to get it up to speed soon.  \n\n-S\n\n\n> Replying to [comment:2 sault]:\n> \n> Thanks for working on this; I hope we can get it into shape soon, and then into Sage.\n> \n> > Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  \n\n> \n> I know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).\n> \n> > Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.\n\n> \n> I wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.\n> \n> There are three problems with this patch: the main one is that it doesn't work with field coefficients:\n> \n> ```\n> sage: T = simplicial_complexes.Torus()\n> sage: C = T.chain_complex()\n> sage: C.homology(base_ring=QQ, generators=True)\n> {0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}\n> ```\n> It only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like\n> \n> ```\n> sage: T = simplicial_complexes.Torus()\n> sage: C = T.chain_complex()\n> sage: C.homology(1, base_ring=QQ, generators=True)\n> ???\n> ```\n> \n> The second problem is the documentation: you should explain (briefly) the format of the output when \"generators\" is True: it's giving a matrix, and you should say exactly what this matrix represents.\n> \n> The third issue is minor: the indentation in the docstrings is important, but you changed it, so it gives errors when producing the reference manual.  The docstring itself also looks bad: from the notebook, define a chain complex C and evaluate \"C.homology?\" to see what the formatted docstring looks like.  Or do `browse_sage_doc(C.homology)` from the command line.",
     "created_at": "2010-02-26T20:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
@@ -203,27 +203,31 @@ Thanks John, for reviewing this patch and for spotting the bugs/omissions.  I'll
 > Thanks for working on this; I hope we can get it into shape soon, and then into Sage.
 > 
 > > Known issues:  If S is a simplicial complex, S.homology(generators=true) has not been directly implemented.  
+
 > 
 > I know a good way to deal with this, and I'll eventually submit a patch on another ticket that takes care of it (as part of an implementation of cubical complexes and Delta-complexes, among other things).
 > 
 > > Furthermore, S.chain_complex().homology(generators=true) computes the generators based on the order in which simplices are chosen for computing S.chain_complex() -- which is not guaranteed to be the same order in which simplices are listed in S.
+
 > 
 > I wonder what we can do to fix this.  It might be a lot of work; I'm not sure.  Maybe when we build the chain complex, modify the cached list of simplices of S?  This is something to think about for another ticket, not this one.
 > 
 > There are three problems with this patch: the main one is that it doesn't work with field coefficients:
-> {{{
+> 
+> ```
 > sage: T = simplicial_complexes.Torus()
 > sage: C = T.chain_complex()
 > sage: C.homology(base_ring=QQ, generators=True)
 > {0: Vector space of dimension 1 over Rational Field, 1: Vector space of dimension 2 over Rational Field, 2: (Vector space of dimension 1 over Rational Field, [ 1 -1 -1 -1  1 -1 -1  1  1  1  1  1 -1 -1])}
-> }}}
+> ```
 > It only returns generators in dimensions where there is no incoming differential. When you fix this, add a doctest like
-> {{{
+> 
+> ```
 > sage: T = simplicial_complexes.Torus()
 > sage: C = T.chain_complex()
 > sage: C.homology(1, base_ring=QQ, generators=True)
 > ???
-> }}}
+> ```
 > 
 > The second problem is the documentation: you should explain (briefly) the format of the output when "generators" is True: it's giving a matrix, and you should say exactly what this matrix represents.
 > 

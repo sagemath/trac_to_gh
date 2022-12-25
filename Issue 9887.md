@@ -3,7 +3,7 @@
 archive/issues_009887.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 45.6 ms per loop\n```\n\n\n(That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)\n\nHere is the problem:\n\n```\nsage: R = Integers(3^20)\nsage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 877 ms per loop\n```\n\n\nIn other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9888\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 45.6 ms per loop\n```\n\n(That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)\n\nHere is the problem:\n\n```\nsage: R = Integers(3^20)\nsage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 877 ms per loop\n```\n\nIn other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9888\n\n",
     "created_at": "2010-09-09T16:21:26Z",
     "labels": [
         "component: performance",
@@ -28,7 +28,6 @@ sage: timeit("M3 = M1 * M2")
 5 loops, best of 3: 45.6 ms per loop
 ```
 
-
 (That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)
 
 Here is the problem:
@@ -40,7 +39,6 @@ sage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)]
 sage: timeit("M3 = M1 * M2")
 5 loops, best of 3: 877 ms per loop
 ```
-
 
 In other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!
 
@@ -74,7 +72,7 @@ I don't think anything has gone into non-word-sized modulus, so this is probably
 archive/issue_comments_097852.json:
 ```json
 {
-    "body": "I just tried the timings again:\n\n```\nsage: sage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n125 loops, best of 3: 5.62 ms per loop\nsage: sage: R = Integers(3^20)\nsage: sage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 530 ms per loop\n```\n\nso now the discrepancy is up to a factor of 100!\n\nMy recollection is that lifting the multiplication up to Z is in fact the correct algorithmic approach. In practice, this hands the problem off to FLINT, where (in this size range) the multiplication is done multimodular.",
+    "body": "I just tried the timings again:\n\n```\nsage: sage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n125 loops, best of 3: 5.62 ms per loop\nsage: sage: R = Integers(3^20)\nsage: sage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 530 ms per loop\n```\nso now the discrepancy is up to a factor of 100!\n\nMy recollection is that lifting the multiplication up to Z is in fact the correct algorithmic approach. In practice, this hands the problem off to FLINT, where (in this size range) the multiplication is done multimodular.",
     "created_at": "2016-04-10T04:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ sage: sage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range
 sage: sage: timeit("M3 = M1 * M2")
 5 loops, best of 3: 530 ms per loop
 ```
-
 so now the discrepancy is up to a factor of 100!
 
 My recollection is that lifting the multiplication up to Z is in fact the correct algorithmic approach. In practice, this hands the problem off to FLINT, where (in this size range) the multiplication is done multimodular.

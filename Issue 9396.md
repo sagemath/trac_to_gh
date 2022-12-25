@@ -153,7 +153,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_089335.json:
 ```json
 {
-    "body": "Replying to [comment:1 mariah]:\n> Further investigation revealed that the problem only\n> occurs when SAGE_FAT_BINARY is used, libicuuc exists\n> on the build computer, but not on the computer where\n> sage executes.\n\nGiven $SAGE_ROOT/README.txt says\n\n\n```\n3. Fat Binaries: To make a binary that will run on the widest range of\n   target machines, set the SAGE_FAT_BINARY environment variable to\n   \"yes\" before building Sage:\n\n       export SAGE_FAT_BINARY=\"yes\"\n       make\n       ./sage -bdist x.y.z-fat\n```\n\n\nthen it seems perfectly reasonable that if one wants Sage to run on the widest range of platforms, that this library is disabled. \n\nIf you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\nDave",
+    "body": "Replying to [comment:1 mariah]:\n> Further investigation revealed that the problem only\n> occurs when SAGE_FAT_BINARY is used, libicuuc exists\n> on the build computer, but not on the computer where\n> sage executes.\n\n\nGiven $SAGE_ROOT/README.txt says\n\n```\n3. Fat Binaries: To make a binary that will run on the widest range of\n   target machines, set the SAGE_FAT_BINARY environment variable to\n   \"yes\" before building Sage:\n\n       export SAGE_FAT_BINARY=\"yes\"\n       make\n       ./sage -bdist x.y.z-fat\n```\n\nthen it seems perfectly reasonable that if one wants Sage to run on the widest range of platforms, that this library is disabled. \n\nIf you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\nDave",
     "created_at": "2010-07-03T14:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -168,8 +168,8 @@ Replying to [comment:1 mariah]:
 > on the build computer, but not on the computer where
 > sage executes.
 
-Given $SAGE_ROOT/README.txt says
 
+Given $SAGE_ROOT/README.txt says
 
 ```
 3. Fat Binaries: To make a binary that will run on the widest range of
@@ -180,7 +180,6 @@ Given $SAGE_ROOT/README.txt says
        make
        ./sage -bdist x.y.z-fat
 ```
-
 
 then it seems perfectly reasonable that if one wants Sage to run on the widest range of platforms, that this library is disabled. 
 
@@ -195,7 +194,7 @@ Dave
 archive/issue_comments_089336.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> If you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\nhttp://sage.math.washington.edu/home/rlmill/r-2.10.1.p3.spkg",
+    "body": "Replying to [comment:5 drkirkby]:\n> If you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\n\nhttp://sage.math.washington.edu/home/rlmill/r-2.10.1.p3.spkg",
     "created_at": "2010-07-09T09:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -206,6 +205,7 @@ archive/issue_comments_089336.json:
 
 Replying to [comment:5 drkirkby]:
 > If you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. 
+
 
 http://sage.math.washington.edu/home/rlmill/r-2.10.1.p3.spkg
 
@@ -234,7 +234,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_089338.json:
 ```json
 {
-    "body": "SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, and took the patch level 2 number. \n\n\n```\n### r-2.10.1.p2 (Mitesh Patel, June 8th 2010)\n * #9186: Set an empty MAKEFLAGS variable before \"make install\".  On\n   OS X, at least, this fixes building multiple spkgs in parallel (cf.\n   #8306).\n\n### r-2.10.1.p2 (Mariah Lenox, 30 Jun 2010)\n * added \"--with-ICU=no\" to configure line of spkg-install (#9396)\n\n### r-2.10.1.p1 (Karl-Dieter Crisman, April 12th 2010)\n * Re-enable Aqua support on OSX\n```\n\n\nThe entry for Mariah's code should now be r-2.10.1.p3, not r-2.10.1.p2. \n\nI've just started a build on sage.math with this package and SAGE_FAT_BINARY=yes and will look over it. I can't see any reason this should fail, but I am going to check it. I should be back in an hour or two with a definitive decision. \n\nBTW, I know William has offered Mariah an account, which she has accepted, so soon she should have an account and be able to put packages on sage.math herself. \n\nDave",
+    "body": "SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, and took the patch level 2 number. \n\n```\n### r-2.10.1.p2 (Mitesh Patel, June 8th 2010)\n * #9186: Set an empty MAKEFLAGS variable before \"make install\".  On\n   OS X, at least, this fixes building multiple spkgs in parallel (cf.\n   #8306).\n\n### r-2.10.1.p2 (Mariah Lenox, 30 Jun 2010)\n * added \"--with-ICU=no\" to configure line of spkg-install (#9396)\n\n### r-2.10.1.p1 (Karl-Dieter Crisman, April 12th 2010)\n * Re-enable Aqua support on OSX\n```\n\nThe entry for Mariah's code should now be r-2.10.1.p3, not r-2.10.1.p2. \n\nI've just started a build on sage.math with this package and SAGE_FAT_BINARY=yes and will look over it. I can't see any reason this should fail, but I am going to check it. I should be back in an hour or two with a definitive decision. \n\nBTW, I know William has offered Mariah an account, which she has accepted, so soon she should have an account and be able to put packages on sage.math herself. \n\nDave",
     "created_at": "2010-07-09T11:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -244,7 +244,6 @@ archive/issue_comments_089338.json:
 ```
 
 SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, and took the patch level 2 number. 
-
 
 ```
 ### r-2.10.1.p2 (Mitesh Patel, June 8th 2010)
@@ -258,7 +257,6 @@ SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, an
 ### r-2.10.1.p1 (Karl-Dieter Crisman, April 12th 2010)
  * Re-enable Aqua support on OSX
 ```
-
 
 The entry for Mariah's code should now be r-2.10.1.p3, not r-2.10.1.p2. 
 
@@ -349,7 +347,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089343.json:
 ```json
 {
-    "body": "Em, I thought this one was a formality, but glad I checked, since R fails to build on sage.math with SAGE_FAT_BINARY=yes (I've not tried with that unset). \n\n\n```\nr-2.10.1.p3/.hg/branch.cache\nr-2.10.1.p3/SPKG.txt\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n./spkg-install: line 114: syntax error near unexpected token `else'\n./spkg-install: line 114: `     else'\n\nreal\t0m0.028s\nuser\t0m0.000s\nsys\t0m0.000s\nsage: An error occurred while installing r-2.10.1.p3\n```\n\n\n\nDave",
+    "body": "Em, I thought this one was a formality, but glad I checked, since R fails to build on sage.math with SAGE_FAT_BINARY=yes (I've not tried with that unset). \n\n```\nr-2.10.1.p3/.hg/branch.cache\nr-2.10.1.p3/SPKG.txt\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n./spkg-install: line 114: syntax error near unexpected token `else'\n./spkg-install: line 114: `     else'\n\nreal\t0m0.028s\nuser\t0m0.000s\nsys\t0m0.000s\nsage: An error occurred while installing r-2.10.1.p3\n```\n\n\nDave",
     "created_at": "2010-07-09T12:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -359,7 +357,6 @@ archive/issue_comments_089343.json:
 ```
 
 Em, I thought this one was a formality, but glad I checked, since R fails to build on sage.math with SAGE_FAT_BINARY=yes (I've not tried with that unset). 
-
 
 ```
 r-2.10.1.p3/.hg/branch.cache
@@ -389,7 +386,6 @@ sage: An error occurred while installing r-2.10.1.p3
 ```
 
 
-
 Dave
 
 
@@ -399,7 +395,7 @@ Dave
 archive/issue_comments_089344.json:
 ```json
 {
-    "body": "I think the problem is:\n\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ];\n```\n\n\nshould be:\n\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ]; then\n```\n\n\nI've just made that change, and it at least starts to compile now. However, I don't have time to do any more on this for a few hours, since I have a chess game scheduled in a few minutes. \n\nThere is another ticket I've just created for R (#9464), since R has Fortran code, but a Fortran dependency is not listed. I'll test these later today. \n\nDave",
+    "body": "I think the problem is:\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ];\n```\n\nshould be:\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ]; then\n```\n\nI've just made that change, and it at least starts to compile now. However, I don't have time to do any more on this for a few hours, since I have a chess game scheduled in a few minutes. \n\nThere is another ticket I've just created for R (#9464), since R has Fortran code, but a Fortran dependency is not listed. I'll test these later today. \n\nDave",
     "created_at": "2010-07-09T12:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -410,19 +406,15 @@ archive/issue_comments_089344.json:
 
 I think the problem is:
 
-
 ```
      if [ "$SAGE_FAT_BINARY" = "yes" ];
 ```
 
-
 should be:
-
 
 ```
      if [ "$SAGE_FAT_BINARY" = "yes" ]; then
 ```
-
 
 I've just made that change, and it at least starts to compile now. However, I don't have time to do any more on this for a few hours, since I have a chess game scheduled in a few minutes. 
 
@@ -437,7 +429,7 @@ Dave
 archive/issue_comments_089345.json:
 ```json
 {
-    "body": "OK, here's a patch which corrects the syntax error. With this addition, R builds without the library. config.log shows R building with the option --with-icu=no. \n\n\n```\nThis file contains any messages produced by compilers while\nrunning configure, to aid debugging if configure makes a mistake.\n\nIt was created by R configure 2.10.1, which was\ngenerated by GNU Autoconf 2.61.  Invocation command line was\n\n  $ ./configure --prefix=/home/kirkby/sage-4.5.alpha4/local --enable-R-shlib --with-x=yes --with-readline=/home/kirkby/sage-4.5.alpha4/local --with-blas=-L/home/kirkby/sage-4.5.alpha4/local/lib -lf77blas -latlas --with-lapack=-L/home/kirkby/sage-4.5.alpha4/local/lib -llapack -lcblas --with-ICU=no\n\n## --------- ##\n## Platform. ##\n## --------- ##\n\nhostname = sage.math.washington.edu\n```\n\n\nA revised .spkg may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/r-2.10.1.p3.spkg\n\nDave",
+    "body": "OK, here's a patch which corrects the syntax error. With this addition, R builds without the library. config.log shows R building with the option --with-icu=no. \n\n```\nThis file contains any messages produced by compilers while\nrunning configure, to aid debugging if configure makes a mistake.\n\nIt was created by R configure 2.10.1, which was\ngenerated by GNU Autoconf 2.61.  Invocation command line was\n\n  $ ./configure --prefix=/home/kirkby/sage-4.5.alpha4/local --enable-R-shlib --with-x=yes --with-readline=/home/kirkby/sage-4.5.alpha4/local --with-blas=-L/home/kirkby/sage-4.5.alpha4/local/lib -lf77blas -latlas --with-lapack=-L/home/kirkby/sage-4.5.alpha4/local/lib -llapack -lcblas --with-ICU=no\n\n## --------- ##\n## Platform. ##\n## --------- ##\n\nhostname = sage.math.washington.edu\n```\n\nA revised .spkg may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/r-2.10.1.p3.spkg\n\nDave",
     "created_at": "2010-07-09T15:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -447,7 +439,6 @@ archive/issue_comments_089345.json:
 ```
 
 OK, here's a patch which corrects the syntax error. With this addition, R builds without the library. config.log shows R building with the option --with-icu=no. 
-
 
 ```
 This file contains any messages produced by compilers while
@@ -464,7 +455,6 @@ generated by GNU Autoconf 2.61.  Invocation command line was
 
 hostname = sage.math.washington.edu
 ```
-
 
 A revised .spkg may be found at 
 
@@ -555,7 +545,7 @@ I'm also removing myself from the author block, since I did virtually nothing.
 archive/issue_comments_089350.json:
 ```json
 {
-    "body": "With a fresh sage build, sage can't even start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",\nline 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\",\nline 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\",\nline 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\",\nline 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```\n",
+    "body": "With a fresh sage build, sage can't even start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",\nline 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\",\nline 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\",\nline 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\",\nline 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```",
     "created_at": "2010-07-18T20:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -584,7 +574,6 @@ ImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-
 undefined symbol: mzd_lqup
 Sage failed to startup.
 ```
-
 
 
 
@@ -647,7 +636,7 @@ Sorry, totally wrong ticket.
 archive/issue_comments_089354.json:
 ```json
 {
-    "body": "Replying to [comment:14 rlm]:\n> Sorry, totally wrong ticket.\n\nI was just about to ask what the connection was! When I Gooogled the error you showed, it looked more like an M4RI issue. Anyway, I'm glad it's not this ticket. \n\nDave",
+    "body": "Replying to [comment:14 rlm]:\n> Sorry, totally wrong ticket.\n\n\nI was just about to ask what the connection was! When I Gooogled the error you showed, it looked more like an M4RI issue. Anyway, I'm glad it's not this ticket. \n\nDave",
     "created_at": "2010-07-18T20:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
@@ -658,6 +647,7 @@ archive/issue_comments_089354.json:
 
 Replying to [comment:14 rlm]:
 > Sorry, totally wrong ticket.
+
 
 I was just about to ask what the connection was! When I Gooogled the error you showed, it looked more like an M4RI issue. Anyway, I'm glad it's not this ticket. 
 

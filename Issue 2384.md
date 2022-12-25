@@ -3,7 +3,7 @@
 archive/issues_002384.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  dmharvey @ncalexan @koffie\n\n\n```\n[Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?\n[Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.\n```\n\n\nI propose:\n* implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). \n* kill `FiniteField_ext_pari` \n\nThis would leave us with two implementations: one for small extension fields and one for larger (in terms of the order)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2384\n\n",
+    "body": "Assignee: @malb\n\nCC:  dmharvey @ncalexan @koffie\n\n```\n[Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?\n[Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.\n```\n\nI propose:\n* implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). \n* kill `FiniteField_ext_pari` \n\nThis would leave us with two implementations: one for small extension fields and one for larger (in terms of the order)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2384\n\n",
     "created_at": "2008-03-04T11:38:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,12 +20,10 @@ Assignee: @malb
 
 CC:  dmharvey @ncalexan @koffie
 
-
 ```
 [Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?
 [Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.
 ```
-
 
 I propose:
 * implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). 
@@ -78,7 +76,7 @@ Possible the first one needs to be split into two, one for "small" moduli (word-
 archive/issue_comments_016048.json:
 ```json
 {
-    "body": "> So I propose the following. As malb says, kill FiniteField_ext_pari. \n\nHi, I wrote FiniteField_ext_pari long ago and only ever meant it is\na \"reference implementation\" to fix the API.  I'm very happy that you're\ntalking about doing a real fast implementation as you suggest above. \n\nWilliam",
+    "body": "> So I propose the following. As malb says, kill FiniteField_ext_pari. \n\n\nHi, I wrote FiniteField_ext_pari long ago and only ever meant it is\na \"reference implementation\" to fix the API.  I'm very happy that you're\ntalking about doing a real fast implementation as you suggest above. \n\nWilliam",
     "created_at": "2008-03-04T15:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -88,6 +86,7 @@ archive/issue_comments_016048.json:
 ```
 
 > So I propose the following. As malb says, kill FiniteField_ext_pari. 
+
 
 Hi, I wrote FiniteField_ext_pari long ago and only ever meant it is
 a "reference implementation" to fix the API.  I'm very happy that you're
@@ -102,7 +101,7 @@ William
 archive/issue_comments_016049.json:
 ```json
 {
-    "body": "> Actually, malb, I retract my statement. The problem is not that we have way too \n> many implementations of finite fields (and your proposed solution wouldn't fix\n> that anyway, because FiniteField_ntl would need to split into three underlying\n> implementations, so it's just window-dressing).\n\nMaybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.\n\n> I think the real problem is just that the PARI version is slow! It's slow because:\n>  * it's in python\n>  * it uses crazy decimal-string formats internally for all kinds of operations\n>  * PARI does not use asymptotically fast algorithms for arithmetic. (This is not a problem for small fields, but it's precisely when the fields become large that it's a problem, and this is precisely when we're using PARI.)\n\nThis is #417\n\n> Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.\n\nThe field is Python but the elements are not:\n\n\n```\nsage: k = IntegerModRing(7)\nsage: type(k)\n<class 'sage.rings.integer_mod_ring.IntegerModRing_generic'>\nsage: type(k.random_element())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n\nsage: k = GF(7)\nsage: type(k)\n<class 'sage.rings.finite_field.FiniteField_prime_modn'>\nsage: type(k.random_element())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n```\n",
+    "body": "> Actually, malb, I retract my statement. The problem is not that we have way too \n> many implementations of finite fields (and your proposed solution wouldn't fix\n> that anyway, because FiniteField_ntl would need to split into three underlying\n> implementations, so it's just window-dressing).\n\n\nMaybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.\n\n> I think the real problem is just that the PARI version is slow! It's slow because:\n> * it's in python\n> * it uses crazy decimal-string formats internally for all kinds of operations\n> * PARI does not use asymptotically fast algorithms for arithmetic. (This is not a problem for small fields, but it's precisely when the fields become large that it's a problem, and this is precisely when we're using PARI.)\n\n\nThis is #417\n\n> Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.\n\n\nThe field is Python but the elements are not:\n\n```\nsage: k = IntegerModRing(7)\nsage: type(k)\n<class 'sage.rings.integer_mod_ring.IntegerModRing_generic'>\nsage: type(k.random_element())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n\nsage: k = GF(7)\nsage: type(k)\n<class 'sage.rings.finite_field.FiniteField_prime_modn'>\nsage: type(k.random_element())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n```",
     "created_at": "2008-03-04T15:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -116,19 +115,21 @@ archive/issue_comments_016049.json:
 > that anyway, because FiniteField_ntl would need to split into three underlying
 > implementations, so it's just window-dressing).
 
+
 Maybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.
 
 > I think the real problem is just that the PARI version is slow! It's slow because:
->  * it's in python
->  * it uses crazy decimal-string formats internally for all kinds of operations
->  * PARI does not use asymptotically fast algorithms for arithmetic. (This is not a problem for small fields, but it's precisely when the fields become large that it's a problem, and this is precisely when we're using PARI.)
+> * it's in python
+> * it uses crazy decimal-string formats internally for all kinds of operations
+> * PARI does not use asymptotically fast algorithms for arithmetic. (This is not a problem for small fields, but it's precisely when the fields become large that it's a problem, and this is precisely when we're using PARI.)
+
 
 This is #417
 
 > Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.
 
-The field is Python but the elements are not:
 
+The field is Python but the elements are not:
 
 ```
 sage: k = IntegerModRing(7)
@@ -146,13 +147,12 @@ sage: type(k.random_element())
 
 
 
-
 ---
 
 archive/issue_comments_016050.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> > Actually, malb, I retract my statement. The problem is not that we have way too \n> > many implementations of finite fields (and your proposed solution wouldn't fix\n> > that anyway, because FiniteField_ntl would need to split into three underlying\n> > implementations, so it's just window-dressing).\n> \n> Maybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.\n\nI don't understand. If `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` all should be covered by the same class `FiniteField_ntl`, why shouldn't the givaro implementation also be covered there? What do the NTL classes have in common that makes them different from e.g. givaro?\n\n> > I think the real problem is just that the PARI version is slow! It's slow because:\n> This is #417\n\nok thanks\n\n> > Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.\n> \n> The field is Python but the elements are not:\n\nok I missed that.",
+    "body": "Replying to [comment:3 malb]:\n> > Actually, malb, I retract my statement. The problem is not that we have way too \n> > many implementations of finite fields (and your proposed solution wouldn't fix\n> > that anyway, because FiniteField_ntl would need to split into three underlying\n> > implementations, so it's just window-dressing).\n\n> \n> Maybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.\n\n\nI don't understand. If `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` all should be covered by the same class `FiniteField_ntl`, why shouldn't the givaro implementation also be covered there? What do the NTL classes have in common that makes them different from e.g. givaro?\n\n> > I think the real problem is just that the PARI version is slow! It's slow because:\n\n> This is #417\n\nok thanks\n\n> > Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.\n\n> \n> The field is Python but the elements are not:\n\n\nok I missed that.",
     "created_at": "2008-03-04T15:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -166,19 +166,24 @@ Replying to [comment:3 malb]:
 > > many implementations of finite fields (and your proposed solution wouldn't fix
 > > that anyway, because FiniteField_ntl would need to split into three underlying
 > > implementations, so it's just window-dressing).
+
 > 
 > Maybe we should still consider this window-dressing to keep the number of classes down and make writing fast code easier. With this cosmetic change the author only needs to check for one rather than three types.
+
 
 I don't understand. If `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` all should be covered by the same class `FiniteField_ntl`, why shouldn't the givaro implementation also be covered there? What do the NTL classes have in common that makes them different from e.g. givaro?
 
 > > I think the real problem is just that the PARI version is slow! It's slow because:
+
 > This is #417
 
 ok thanks
 
 > > Another problem is that for prime fields, we still use the python implementation `FiniteField_prime_modn`.
+
 > 
 > The field is Python but the elements are not:
+
 
 ok I missed that.
 
@@ -189,7 +194,7 @@ ok I missed that.
 archive/issue_comments_016051.json:
 ```json
 {
-    "body": "> I don't understand. If `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` all \n> should be covered by the same class `FiniteField_ntl`, why shouldn't the\n> givaro implementation also be covered there? What do the NTL classes have in\n> common that makes them different from e.g. givaro?\n\nThey have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.",
+    "body": "> I don't understand. If `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` all \n> should be covered by the same class `FiniteField_ntl`, why shouldn't the\n> givaro implementation also be covered there? What do the NTL classes have in\n> common that makes them different from e.g. givaro?\n\n\nThey have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.",
     "created_at": "2008-03-04T15:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -203,6 +208,7 @@ archive/issue_comments_016051.json:
 > givaro implementation also be covered there? What do the NTL classes have in
 > common that makes them different from e.g. givaro?
 
+
 They have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.
 
 
@@ -212,7 +218,7 @@ They have the same C++ interface, i.e. it should be easy to setup a struct of fu
 archive/issue_comments_016052.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> They have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.\n\nI don't think they have the same C++ interface. Well, syntactically they're pretty close, like for example `add(x, y)` works for all NTL types. But there are syntactic differences: for example `ZZ_pContext` and `zz_pContext` have different names. And the underlying types are totally unrelated (e.g. `ZZ_pX` and `zz_pX`), so I don't see how you can do anything safely with function pointers.",
+    "body": "Replying to [comment:5 malb]:\n> They have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.\n\n\nI don't think they have the same C++ interface. Well, syntactically they're pretty close, like for example `add(x, y)` works for all NTL types. But there are syntactic differences: for example `ZZ_pContext` and `zz_pContext` have different names. And the underlying types are totally unrelated (e.g. `ZZ_pX` and `zz_pX`), so I don't see how you can do anything safely with function pointers.",
     "created_at": "2008-03-04T15:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -223,6 +229,7 @@ archive/issue_comments_016052.json:
 
 Replying to [comment:5 malb]:
 > They have the same C++ interface, i.e. it should be easy to setup a struct of function pointers for arithmetic and other stuff. I'm not pushing for it though. Also, for Givaro the extra pointer lookup would hurt but for the NTL classes probably not.
+
 
 I don't think they have the same C++ interface. Well, syntactically they're pretty close, like for example `add(x, y)` works for all NTL types. But there are syntactic differences: for example `ZZ_pContext` and `zz_pContext` have different names. And the underlying types are totally unrelated (e.g. `ZZ_pX` and `zz_pX`), so I don't see how you can do anything safely with function pointers.
 
@@ -275,7 +282,7 @@ On another note, I think I remember hearing somewhere that magma uses zech logs 
 archive/issue_comments_016055.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> On another note, I think I remember hearing somewhere that magma uses zech logs as coefficients, e.g. GF(p^n) is implemented as a relative extension of GF(p^d) where p^d is small enough for the log representation. Would this be worth looking at? \n\nThis would only work when n is sufficiently composite, but in that case I think it's a great idea. Still, you need to have very good generic polynomial arithmetic to make this work. I think this is something to work on later.",
+    "body": "Replying to [comment:8 robertwb]:\n> On another note, I think I remember hearing somewhere that magma uses zech logs as coefficients, e.g. GF(p^n) is implemented as a relative extension of GF(p^d) where p^d is small enough for the log representation. Would this be worth looking at? \n\n\nThis would only work when n is sufficiently composite, but in that case I think it's a great idea. Still, you need to have very good generic polynomial arithmetic to make this work. I think this is something to work on later.",
     "created_at": "2008-03-06T01:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
@@ -286,6 +293,7 @@ archive/issue_comments_016055.json:
 
 Replying to [comment:8 robertwb]:
 > On another note, I think I remember hearing somewhere that magma uses zech logs as coefficients, e.g. GF(p^n) is implemented as a relative extension of GF(p^d) where p^d is small enough for the log representation. Would this be worth looking at? 
+
 
 This would only work when n is sufficiently composite, but in that case I think it's a great idea. Still, you need to have very good generic polynomial arithmetic to make this work. I think this is something to work on later.
 

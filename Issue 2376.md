@@ -3,7 +3,7 @@
 archive/issues_002376.json:
 ```json
 {
-    "body": "Assignee: failure\n\nWe have various doctest failures in\n\n```\nsage -t -long devel/sage-main/sage/modular/abvar/abvar.py\nsage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py\nsage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py\n```\n\n\nThe attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2376\n\n",
+    "body": "Assignee: failure\n\nWe have various doctest failures in\n\n```\nsage -t -long devel/sage-main/sage/modular/abvar/abvar.py\nsage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py\nsage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py\n```\n\nThe attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2376\n\n",
     "created_at": "2008-03-03T16:54:38Z",
     "labels": [
         "component: doctest coverage",
@@ -26,7 +26,6 @@ sage -t -long devel/sage-main/sage/modular/abvar/abvar.py
 sage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py
 sage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py
 ```
-
 
 The attached patch fixes those.
 

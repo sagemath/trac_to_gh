@@ -3,7 +3,7 @@
 archive/issues_007560.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  rnelsonchem@gmail.com\n\nKeywords: t_span\n\nFrom: Ryan\n\n\n```\nHello all,\n\nI've just started using Sage, and I'm currently trying to use the\node_solver class to solve some simple differential equations. I was\nhaving some problems setting up my own program based on this class\nuntil I realized that the number of points in the solution does not\nmatch the number of points requested by the t_span variable. For\nexample, when I run this script:\n_________\n#!/usr/bin/env sage-python\nfrom sage.all import ode_solver\n\ndef f(t, y):\n   return [y[1], -y[0]]\nT = ode_solver()\nT.function=f\nT.y_0=[1, 1]\nT.ode_solve(t_span=[0, 10], num_points=100)\nprint len(T.solution)\nT.ode_solve(t_span=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint len(T.solution)\n_________\n\nI get returned values of 101 and 10, where I would expect 100 and 11.\n\nI don't know about the first case, but for the second case, the\nsolution for the last value (10) is missing. I was able to circumvent\nthis problem by appending a dummy variable to the end of t_span, but\nI'm wondering if this is the expected behavior. Is there something\nabout the solution that I'm missing? I am currently using Sage 4.2.1\nthat I built from source in a Gentoo Linux distro.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7560\n\n",
+    "body": "Assignee: jkantor\n\nCC:  rnelsonchem@gmail.com\n\nKeywords: t_span\n\nFrom: Ryan\n\n```\nHello all,\n\nI've just started using Sage, and I'm currently trying to use the\node_solver class to solve some simple differential equations. I was\nhaving some problems setting up my own program based on this class\nuntil I realized that the number of points in the solution does not\nmatch the number of points requested by the t_span variable. For\nexample, when I run this script:\n_________\n#!/usr/bin/env sage-python\nfrom sage.all import ode_solver\n\ndef f(t, y):\n   return [y[1], -y[0]]\nT = ode_solver()\nT.function=f\nT.y_0=[1, 1]\nT.ode_solve(t_span=[0, 10], num_points=100)\nprint len(T.solution)\nT.ode_solve(t_span=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint len(T.solution)\n_________\n\nI get returned values of 101 and 10, where I would expect 100 and 11.\n\nI don't know about the first case, but for the second case, the\nsolution for the last value (10) is missing. I was able to circumvent\nthis problem by appending a dummy variable to the end of t_span, but\nI'm wondering if this is the expected behavior. Is there something\nabout the solution that I'm missing? I am currently using Sage 4.2.1\nthat I built from source in a Gentoo Linux distro.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7560\n\n",
     "created_at": "2009-11-30T16:46:19Z",
     "labels": [
         "component: numerical",
@@ -24,7 +24,6 @@ CC:  rnelsonchem@gmail.com
 Keywords: t_span
 
 From: Ryan
-
 
 ```
 Hello all,
@@ -59,7 +58,6 @@ I'm wondering if this is the expected behavior. Is there something
 about the solution that I'm missing? I am currently using Sage 4.2.1
 that I built from source in a Gentoo Linux distro.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7560
 
@@ -150,7 +148,7 @@ Please fill in your real name as Author.
 archive/issue_comments_064196.json:
 ```json
 {
-    "body": "Replying to [comment:2 jdemeyer]:\n> Please fill in your real name as Author.\n\nI'm not sure what exactly you're asking for.  My real name is Jan Medlock.  It's already in the patch.",
+    "body": "Replying to [comment:2 jdemeyer]:\n> Please fill in your real name as Author.\n\n\nI'm not sure what exactly you're asking for.  My real name is Jan Medlock.  It's already in the patch.",
     "created_at": "2012-07-27T23:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -161,6 +159,7 @@ archive/issue_comments_064196.json:
 
 Replying to [comment:2 jdemeyer]:
 > Please fill in your real name as Author.
+
 
 I'm not sure what exactly you're asking for.  My real name is Jan Medlock.  It's already in the patch.
 
@@ -226,7 +225,7 @@ I agree with what you say about the documentation being a bit unclear about the 
 archive/issue_comments_064199.json:
 ```json
 {
-    "body": "Replying to [comment:6 tkluck]:\n> I tested this and it seems to work well.\n> \n> I agree with what you say about the documentation being a bit unclear about the interpretation of `num_points`. I also agree that it is nicest to interpret it as the number of intervals. Maybe you can update the documentation in you patch? I'll give it a positive review after that.\n\ntkluck, I updated the patch with clarification of the documentation.  I'd appreciate if you would have a look.",
+    "body": "Replying to [comment:6 tkluck]:\n> I tested this and it seems to work well.\n> \n> I agree with what you say about the documentation being a bit unclear about the interpretation of `num_points`. I also agree that it is nicest to interpret it as the number of intervals. Maybe you can update the documentation in you patch? I'll give it a positive review after that.\n\n\ntkluck, I updated the patch with clarification of the documentation.  I'd appreciate if you would have a look.",
     "created_at": "2013-01-05T23:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -240,6 +239,7 @@ Replying to [comment:6 tkluck]:
 > 
 > I agree with what you say about the documentation being a bit unclear about the interpretation of `num_points`. I also agree that it is nicest to interpret it as the number of intervals. Maybe you can update the documentation in you patch? I'll give it a positive review after that.
 
+
 tkluck, I updated the patch with clarification of the documentation.  I'd appreciate if you would have a look.
 
 
@@ -249,7 +249,7 @@ tkluck, I updated the patch with clarification of the documentation.  I'd apprec
 archive/issue_comments_064200.json:
 ```json
 {
-    "body": "This is a very clear explanation in the doctext, thanks.\n\nThis part is not entirely right, though:\n\n```\n    * If ``t_span`` is a tuple with more than 2 values, then (...)\n\n    * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n      ``num_points``.\n```\n\n\nIn the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\nI would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?",
+    "body": "This is a very clear explanation in the doctext, thanks.\n\nThis part is not entirely right, though:\n\n```\n    * If ``t_span`` is a tuple with more than 2 values, then (...)\n\n    * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n      ``num_points``.\n```\n\nIn the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\nI would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?",
     "created_at": "2013-01-06T17:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -269,7 +269,6 @@ This part is not entirely right, though:
       ``num_points``.
 ```
 
-
 In the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)
 
 I would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?
@@ -281,7 +280,7 @@ I would also be tempted to change the name of the parameter `num_points` to `num
 archive/issue_comments_064201.json:
 ```json
 {
-    "body": "Replying to [comment:8 tkluck]:\n> This is a very clear explanation in the doctext, thanks.\n> \n> This part is not entirely right, though:\n> {{{\n>     * If ``t_span`` is a tuple with more than 2 values, then (...)\n> \n>     * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n>       ``num_points``.\n> }}}\n> \n> In the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\nI'm not sure I understand what you're saying.  I believe what I've written is exactly correct.  The code in question is:\n\n```\nif len(self.t_span)==2 and num_points!=False:\n    # Solve at num_points time steps.\n\nelif len(self.t_span) > 2:\n     # Solve using t_span as the times.\n```\n\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L495\n&\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L538\n\nI agree that it is not ideal: the second condition should be `len(self.t_span) >= 2` and there should be an `else` clause to catch mis-specified `self.t_span`.  As for what to do if `len(self.t_span) > 2` and `num_points` is defined, I think the best thing to do is to use the values in `self.t_span` and ignore `num_points`.  I will put together a patch with this addition.\n\n> I would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?\n\nI personally find points more natural than intervals in this setting, even though intervals don't have the +1 issue.",
+    "body": "Replying to [comment:8 tkluck]:\n> This is a very clear explanation in the doctext, thanks.\n> \n> This part is not entirely right, though:\n> \n> ```\n>     * If ``t_span`` is a tuple with more than 2 values, then (...)\n> \n>     * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n>       ``num_points``.\n> ```\n> \n> In the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\n\nI'm not sure I understand what you're saying.  I believe what I've written is exactly correct.  The code in question is:\n\n```\nif len(self.t_span)==2 and num_points!=False:\n    # Solve at num_points time steps.\n\nelif len(self.t_span) > 2:\n     # Solve using t_span as the times.\n```\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L495\n&\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L538\n\nI agree that it is not ideal: the second condition should be `len(self.t_span) >= 2` and there should be an `else` clause to catch mis-specified `self.t_span`.  As for what to do if `len(self.t_span) > 2` and `num_points` is defined, I think the best thing to do is to use the values in `self.t_span` and ignore `num_points`.  I will put together a patch with this addition.\n\n> I would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?\n\n\nI personally find points more natural than intervals in this setting, even though intervals don't have the +1 issue.",
     "created_at": "2013-01-06T19:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -294,14 +293,16 @@ Replying to [comment:8 tkluck]:
 > This is a very clear explanation in the doctext, thanks.
 > 
 > This part is not entirely right, though:
-> {{{
+> 
+> ```
 >     * If ``t_span`` is a tuple with more than 2 values, then (...)
 > 
 >     * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify
 >       ``num_points``.
-> }}}
+> ```
 > 
 > In the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)
+
 
 I'm not sure I understand what you're saying.  I believe what I've written is exactly correct.  The code in question is:
 
@@ -312,7 +313,6 @@ if len(self.t_span)==2 and num_points!=False:
 elif len(self.t_span) > 2:
      # Solve using t_span as the times.
 ```
-
 http://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L495
 &
 http://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L538
@@ -320,6 +320,7 @@ http://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L538
 I agree that it is not ideal: the second condition should be `len(self.t_span) >= 2` and there should be an `else` clause to catch mis-specified `self.t_span`.  As for what to do if `len(self.t_span) > 2` and `num_points` is defined, I think the best thing to do is to use the values in `self.t_span` and ignore `num_points`.  I will put together a patch with this addition.
 
 > I would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?
+
 
 I personally find points more natural than intervals in this setting, even though intervals don't have the +1 issue.
 
@@ -330,7 +331,7 @@ I personally find points more natural than intervals in this setting, even thoug
 archive/issue_comments_064202.json:
 ```json
 {
-    "body": "> I'm not sure I understand what you're saying. I believe what I've written is exactly correct. \n\nI'm sorry, you're right. I think the `elif` condition needs to be changed to `>= 2` as you suggest, even though I realize it's technically a different issue. If we don't, this will really bite people. \n\n> As for what to do if len(self.t_span) > 2 and num_points is defined, I think the best thing to do is to use the values in self.t_span and ignore num_points.\n\nI agree.\n\n> I personally find points more natural than intervals in this setting,\n\nI'll trust your judgment since I haven't actually used this.",
+    "body": "> I'm not sure I understand what you're saying. I believe what I've written is exactly correct. \n\n\nI'm sorry, you're right. I think the `elif` condition needs to be changed to `>= 2` as you suggest, even though I realize it's technically a different issue. If we don't, this will really bite people. \n\n> As for what to do if len(self.t_span) > 2 and num_points is defined, I think the best thing to do is to use the values in self.t_span and ignore num_points.\n\n\nI agree.\n\n> I personally find points more natural than intervals in this setting,\n\n\nI'll trust your judgment since I haven't actually used this.",
     "created_at": "2013-01-06T22:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -341,13 +342,16 @@ archive/issue_comments_064202.json:
 
 > I'm not sure I understand what you're saying. I believe what I've written is exactly correct. 
 
+
 I'm sorry, you're right. I think the `elif` condition needs to be changed to `>= 2` as you suggest, even though I realize it's technically a different issue. If we don't, this will really bite people. 
 
 > As for what to do if len(self.t_span) > 2 and num_points is defined, I think the best thing to do is to use the values in self.t_span and ignore num_points.
 
+
 I agree.
 
 > I personally find points more natural than intervals in this setting,
+
 
 I'll trust your judgment since I haven't actually used this.
 
@@ -401,7 +405,7 @@ Updated patch (v3).
 archive/issue_comments_064205.json:
 ```json
 {
-    "body": "Replying to [comment:11 tkluck]:\n> Actually, why restrict to `len(t_span) >= 2` at all? I think we should just:\n> \n>  * return only the initial condition as a list with one element if `len(t_span) == 1`;\n>  * return an empty list `[]` if we get `t_span == []`.\n> \n> For example, this can be useful if someone wants to find solutions on the intersection of two sets. Then s/he does not have to treat an empty intersection as a special case.\n\nPatch updated.\n\nThanks for your comments.  I implemented `len(t_span) == 2` and `num_points` not specified.  I also implemented `len(t_span) == 1` because it was very easy.\n\nI did not implement `len(t_span) == 0` because it would have required a separate `if-then` branch.  My further reasoning was that the initial condition `y_0` is required, so `t_span[0]` is also required, although I do see your point about how one could end up with `t_span` being empty.\n\nI have a big rewriting of this file in the works: I hope you'll be able to have a look.",
+    "body": "Replying to [comment:11 tkluck]:\n> Actually, why restrict to `len(t_span) >= 2` at all? I think we should just:\n> \n> * return only the initial condition as a list with one element if `len(t_span) == 1`;\n> * return an empty list `[]` if we get `t_span == []`.\n> \n> For example, this can be useful if someone wants to find solutions on the intersection of two sets. Then s/he does not have to treat an empty intersection as a special case.\n\n\nPatch updated.\n\nThanks for your comments.  I implemented `len(t_span) == 2` and `num_points` not specified.  I also implemented `len(t_span) == 1` because it was very easy.\n\nI did not implement `len(t_span) == 0` because it would have required a separate `if-then` branch.  My further reasoning was that the initial condition `y_0` is required, so `t_span[0]` is also required, although I do see your point about how one could end up with `t_span` being empty.\n\nI have a big rewriting of this file in the works: I hope you'll be able to have a look.",
     "created_at": "2013-01-07T04:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
@@ -413,10 +417,11 @@ archive/issue_comments_064205.json:
 Replying to [comment:11 tkluck]:
 > Actually, why restrict to `len(t_span) >= 2` at all? I think we should just:
 > 
->  * return only the initial condition as a list with one element if `len(t_span) == 1`;
->  * return an empty list `[]` if we get `t_span == []`.
+> * return only the initial condition as a list with one element if `len(t_span) == 1`;
+> * return an empty list `[]` if we get `t_span == []`.
 > 
 > For example, this can be useful if someone wants to find solutions on the intersection of two sets. Then s/he does not have to treat an empty intersection as a special case.
+
 
 Patch updated.
 

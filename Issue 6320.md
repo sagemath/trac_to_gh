@@ -3,7 +3,7 @@
 archive/issues_006320.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @tscrim\n\nI have dot2tex installed but this doctest in combinat still fails:\n\n```\nwstein@sage:~/build/sage-4.0.2.alpha3$ which dot2tex\n/usr/bin/dot2tex\nwstein@sage:~/build/sage-4.0.2.alpha3$ ./sage -t -long --optional devel/sage/sage/combinat/crystals/crystals.py\nsage -t -long --optional \"devel/sage/sage/combinat/crystals/crystals.py\"\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage/sage/combinat/crystals/crystals.py\", line 344:\n    sage: C.latex_file('/tmp/test.tex') #optional requires dot2tex\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        C.latex_file('/tmp/test.tex') #optional requires dot2tex###line 344:\n    sage: C.latex_file('/tmp/test.tex') #optional requires dot2tex\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/combinat/crystals/crystals.py\", line 363, in latex_file\n        f.write(header + self.latex() + footer)\n    TypeError: cannot concatenate 'str' and 'NoneType' objects\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage/sage/combinat/crystals/crystals.py\", line 422:\n    sage: C.latex() #optional requires dot2tex\nExpected nothing\nGot:\n    dot2tex not available.  Install after running 'sage -sh'\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_10\n   1 of   4 in __main__.example_13\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_crystals.py\n         [7.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long --optional \"devel/sage/sage/combinat/crystals/crystals.py\"\nTotal time for all tests: 7.2 seconds\nwstein@sage:~/build/sage-4.0.2.alpha3$ \n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6320\n\n",
+    "body": "Assignee: tbd\n\nCC:  @tscrim\n\nI have dot2tex installed but this doctest in combinat still fails:\n\n```\nwstein@sage:~/build/sage-4.0.2.alpha3$ which dot2tex\n/usr/bin/dot2tex\nwstein@sage:~/build/sage-4.0.2.alpha3$ ./sage -t -long --optional devel/sage/sage/combinat/crystals/crystals.py\nsage -t -long --optional \"devel/sage/sage/combinat/crystals/crystals.py\"\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage/sage/combinat/crystals/crystals.py\", line 344:\n    sage: C.latex_file('/tmp/test.tex') #optional requires dot2tex\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        C.latex_file('/tmp/test.tex') #optional requires dot2tex###line 344:\n    sage: C.latex_file('/tmp/test.tex') #optional requires dot2tex\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/combinat/crystals/crystals.py\", line 363, in latex_file\n        f.write(header + self.latex() + footer)\n    TypeError: cannot concatenate 'str' and 'NoneType' objects\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage/sage/combinat/crystals/crystals.py\", line 422:\n    sage: C.latex() #optional requires dot2tex\nExpected nothing\nGot:\n    dot2tex not available.  Install after running 'sage -sh'\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_10\n   1 of   4 in __main__.example_13\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_crystals.py\n         [7.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long --optional \"devel/sage/sage/combinat/crystals/crystals.py\"\nTotal time for all tests: 7.2 seconds\nwstein@sage:~/build/sage-4.0.2.alpha3$ \n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6320\n\n",
     "created_at": "2009-06-16T14:50:46Z",
     "labels": [
         "component: packages: optional",
@@ -70,7 +70,6 @@ wstein@sage:~/build/sage-4.0.2.alpha3$
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6320
 
@@ -280,7 +279,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050346.json:
 ```json
 {
-    "body": "On 7.4.beta5, running\n\n\n```\n./sage -t -l --optional=sage,dot2tex,graphviz src/sage/combinat/crystals/crystals.py\n```\n\n\ngives\n\n\n```\nRunning doctests with ID 2016-09-26-15-08-12-8d82066d.\nGit branch: 21490\nUsing --optional=dot2tex,graphviz,sage\nDoctesting 1 file.\nsage -t --long --warn-long 42.7 src/sage/combinat/crystals/crystals.py\n    [25 tests, 0.75 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 0.8 seconds\n    cpu time: 1.0 seconds\n    cumulative wall time: 0.7 seconds\n```\n\n\nShould we close this ticket?",
+    "body": "On 7.4.beta5, running\n\n```\n./sage -t -l --optional=sage,dot2tex,graphviz src/sage/combinat/crystals/crystals.py\n```\n\ngives\n\n```\nRunning doctests with ID 2016-09-26-15-08-12-8d82066d.\nGit branch: 21490\nUsing --optional=dot2tex,graphviz,sage\nDoctesting 1 file.\nsage -t --long --warn-long 42.7 src/sage/combinat/crystals/crystals.py\n    [25 tests, 0.75 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 0.8 seconds\n    cpu time: 1.0 seconds\n    cumulative wall time: 0.7 seconds\n```\n\nShould we close this ticket?",
     "created_at": "2016-09-26T13:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6320",
     "type": "issue_comment",
@@ -291,14 +290,11 @@ archive/issue_comments_050346.json:
 
 On 7.4.beta5, running
 
-
 ```
 ./sage -t -l --optional=sage,dot2tex,graphviz src/sage/combinat/crystals/crystals.py
 ```
 
-
 gives
-
 
 ```
 Running doctests with ID 2016-09-26-15-08-12-8d82066d.
@@ -314,7 +310,6 @@ Total time for all tests: 0.8 seconds
     cpu time: 1.0 seconds
     cumulative wall time: 0.7 seconds
 ```
-
 
 Should we close this ticket?
 

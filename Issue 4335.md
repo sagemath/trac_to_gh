@@ -3,7 +3,7 @@
 archive/issues_004335.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
+    "body": "Assignee: @craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
     "created_at": "2008-10-21T19:15:07Z",
     "labels": [
         "component: modular forms",
@@ -27,7 +27,6 @@ sage: S.newforms('b')
 [q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]
 ```
 
-
 I think that the newforms code should be changed to something like:
 
 ```
@@ -48,7 +47,6 @@ def newforms(self, names=None):
         return [ element.Newform(self, factors[i], names=(names+str(i)) )
                  for i in range(len(factors)) ]
 ```
-
 (removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4335
@@ -158,7 +156,7 @@ I personally find the fact that one has to manually assign a variable name reall
 archive/issue_comments_031729.json:
 ```json
 {
-    "body": "> I personally find the fact that one has to manually assign a variable \n> name really annoying, but if that's the design decision you've taken\n> then fair enough (I can see your reasons; I just disagree).\n\nWe've systematically made that decision throughout all Sage, so we should stick with that here.\n\nThat said, we have also talked about making it so one can specify a uniform default throughout sage, e.g., a function f(n) that takes as input an integer n and outputs a variable name.  You could define it to be anything you want and everywhere in Sage that requires variables would call it -- if specified instead of giving an error, when you forget to give a variable name.",
+    "body": "> I personally find the fact that one has to manually assign a variable \n> name really annoying, but if that's the design decision you've taken\n> then fair enough (I can see your reasons; I just disagree).\n\n\nWe've systematically made that decision throughout all Sage, so we should stick with that here.\n\nThat said, we have also talked about making it so one can specify a uniform default throughout sage, e.g., a function f(n) that takes as input an integer n and outputs a variable name.  You could define it to be anything you want and everywhere in Sage that requires variables would call it -- if specified instead of giving an error, when you forget to give a variable name.",
     "created_at": "2008-10-22T20:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
@@ -170,6 +168,7 @@ archive/issue_comments_031729.json:
 > I personally find the fact that one has to manually assign a variable 
 > name really annoying, but if that's the design decision you've taken
 > then fair enough (I can see your reasons; I just disagree).
+
 
 We've systematically made that decision throughout all Sage, so we should stick with that here.
 
@@ -200,7 +199,7 @@ Good point. The request for a system-wide variable default is now trac #4345.
 archive/issue_comments_031731.json:
 ```json
 {
-    "body": "Unfortunately other patches mandate a rebase of this patch:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4335.patch \npatching file sage/modular/modform/space.py\nHunk #1 FAILED at 1571.\n1 out of 1 hunk FAILED -- saving rejects to file sage/modular/modform/space.py.rej\n```\n\nPlease try either my current merge tree on sage.math or alternatively wait for 3.2.alpha1 out in the next 12 hours\n\nCheers,\n\nMichael",
+    "body": "Unfortunately other patches mandate a rebase of this patch:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4335.patch \npatching file sage/modular/modform/space.py\nHunk #1 FAILED at 1571.\n1 out of 1 hunk FAILED -- saving rejects to file sage/modular/modform/space.py.rej\n```\nPlease try either my current merge tree on sage.math or alternatively wait for 3.2.alpha1 out in the next 12 hours\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T02:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
@@ -217,7 +216,6 @@ patching file sage/modular/modform/space.py
 Hunk #1 FAILED at 1571.
 1 out of 1 hunk FAILED -- saving rejects to file sage/modular/modform/space.py.rej
 ```
-
 Please try either my current merge tree on sage.math or alternatively wait for 3.2.alpha1 out in the next 12 hours
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_003771.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHundreds of times people have been very annoyed when the install a fresh binary sage install, change something in the core library and type\n\n```\n  sage -br\n```\n\nonly to find that everything has to be built.   It turns out there is a trivial 2-line fix to make this not be the case.  That's attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3771\n\n",
+    "body": "Assignee: mabshoff\n\nHundreds of times people have been very annoyed when the install a fresh binary sage install, change something in the core library and type\n\n```\n  sage -br\n```\nonly to find that everything has to be built.   It turns out there is a trivial 2-line fix to make this not be the case.  That's attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3771\n\n",
     "created_at": "2008-08-04T00:35:32Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ Hundreds of times people have been very annoyed when the install a fresh binary 
 ```
   sage -br
 ```
-
 only to find that everything has to be built.   It turns out there is a trivial 2-line fix to make this not be the case.  That's attached to this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3771

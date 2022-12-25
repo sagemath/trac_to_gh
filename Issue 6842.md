@@ -3,7 +3,7 @@
 archive/issues_006842.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: ordinals\n\nThe following is incorrect, if I am not mistaken (but I am not a native speaker):\n\n```\nsage: n = 113\nsage: n.ordinal_str()\n'113rd'\nsage: n = 112\nsage: n.ordinal_str()\n'112nd'\nsage: n = 111\nsage: n.ordinal_str()\n'111st'\n```\n\n\nWith my patch, one gets\n\n```\nsage: n = 111\nsage: n.ordinal_str()\n'111th'\nsage: n = 112\nsage: n.ordinal_str()\n'112th'\nsage: n = 113\nsage: n.ordinal_str()\n'113th'\n```\n\nwhile one still has\n\n```\nsage: n = 121\nsage: n.ordinal_str()\n'121st'\nsage: n = 122\nsage: n.ordinal_str()\n'122nd'\nsage: n = 123\nsage: n.ordinal_str()\n'123rd'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6842\n\n",
+    "body": "Assignee: somebody\n\nKeywords: ordinals\n\nThe following is incorrect, if I am not mistaken (but I am not a native speaker):\n\n```\nsage: n = 113\nsage: n.ordinal_str()\n'113rd'\nsage: n = 112\nsage: n.ordinal_str()\n'112nd'\nsage: n = 111\nsage: n.ordinal_str()\n'111st'\n```\n\nWith my patch, one gets\n\n```\nsage: n = 111\nsage: n.ordinal_str()\n'111th'\nsage: n = 112\nsage: n.ordinal_str()\n'112th'\nsage: n = 113\nsage: n.ordinal_str()\n'113th'\n```\nwhile one still has\n\n```\nsage: n = 121\nsage: n.ordinal_str()\n'121st'\nsage: n = 122\nsage: n.ordinal_str()\n'122nd'\nsage: n = 123\nsage: n.ordinal_str()\n'123rd'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6842\n\n",
     "created_at": "2009-08-29T11:29:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -35,7 +35,6 @@ sage: n.ordinal_str()
 '111st'
 ```
 
-
 With my patch, one gets
 
 ```
@@ -49,7 +48,6 @@ sage: n = 113
 sage: n.ordinal_str()
 '113th'
 ```
-
 while one still has
 
 ```
@@ -63,7 +61,6 @@ sage: n = 123
 sage: n.ordinal_str()
 '123rd'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6842
 

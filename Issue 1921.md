@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1921
 archive/issue_comments_012149.json:
 ```json
 {
-    "body": "I greatly prefer random_element to random.  I think random is unclear about what it does, and of course inconsistent.  random_element is crystal clear.  I also use to use random in various places, since in Magma the command is `Random`. \n\nThere are current 28 instances of the random function in Sage:\n\n```\nsage: search_src('def random(')\n```\n\n\nThere are 36 instances of random_element.\n\n```\nsage: search_src('def random_element(')\n```\n\n\nIt would make the most sense to remove all the random(...) methods and\nreplace them by random_element throughout.  If we make all the random(...)\nmethods do a \n\n```\n    raise Deprecated\n```\n\nthen I hope those really do disappear completely within 2 months (say). ??",
+    "body": "I greatly prefer random_element to random.  I think random is unclear about what it does, and of course inconsistent.  random_element is crystal clear.  I also use to use random in various places, since in Magma the command is `Random`. \n\nThere are current 28 instances of the random function in Sage:\n\n```\nsage: search_src('def random(')\n```\n\nThere are 36 instances of random_element.\n\n```\nsage: search_src('def random_element(')\n```\n\nIt would make the most sense to remove all the random(...) methods and\nreplace them by random_element throughout.  If we make all the random(...)\nmethods do a \n\n```\n    raise Deprecated\n```\nthen I hope those really do disappear completely within 2 months (say). ??",
     "created_at": "2008-01-25T06:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
@@ -55,13 +55,11 @@ There are current 28 instances of the random function in Sage:
 sage: search_src('def random(')
 ```
 
-
 There are 36 instances of random_element.
 
 ```
 sage: search_src('def random_element(')
 ```
-
 
 It would make the most sense to remove all the random(...) methods and
 replace them by random_element throughout.  If we make all the random(...)
@@ -70,7 +68,6 @@ methods do a
 ```
     raise Deprecated
 ```
-
 then I hope those really do disappear completely within 2 months (say). ??
 
 

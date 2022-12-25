@@ -285,7 +285,7 @@ archive/issue_events_015376.json:
 archive/issue_comments_052972.json:
 ```json
 {
-    "body": "Merged patches in this order:\n\n1. `trac_6514_BooleanFunction.patch`\n2. `trac_6514_review.patch`\n \nRunning the test suite gave me some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py # 3 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 1 doctests failed\n```\n\nA full log is attached. These doctest failures have nothing to do with the above patches; they have been reported before in Sage 4.1.1.",
+    "body": "Merged patches in this order:\n\n1. `trac_6514_BooleanFunction.patch`\n2. `trac_6514_review.patch`\n \nRunning the test suite gave me some doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py # 3 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 1 doctests failed\n```\nA full log is attached. These doctest failures have nothing to do with the above patches; they have been reported before in Sage 4.1.1.",
     "created_at": "2009-09-02T08:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
@@ -305,7 +305,6 @@ Running the test suite gave me some doctest failures:
 sage -t -long devel/sage-main/sage/server/simple/twist.py # 3 doctests failed
 sage -t -long devel/sage-main/sage/server/notebook/notebook.py # 1 doctests failed
 ```
-
 A full log is attached. These doctest failures have nothing to do with the above patches; they have been reported before in Sage 4.1.1.
 
 

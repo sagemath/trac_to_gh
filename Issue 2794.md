@@ -3,7 +3,7 @@
 archive/issues_002794.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori, magma\n\nThis now works:\n\n```\nsage: B.<a,b,z> = BooleanPolynomialRing(3)\nsage: B._magma_()\n\nAffine Algebra of rank 3 over GF(2)\nLexicographical Order\nVariables: a, b, z\nQuotient relations:\n[\na^2 + a,\nb^2 + b,\nz^2 + z\n]\nsage: magma(a+b)\na + b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2794\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori, magma\n\nThis now works:\n\n```\nsage: B.<a,b,z> = BooleanPolynomialRing(3)\nsage: B._magma_()\n\nAffine Algebra of rank 3 over GF(2)\nLexicographical Order\nVariables: a, b, z\nQuotient relations:\n[\na^2 + a,\nb^2 + b,\nz^2 + z\n]\nsage: magma(a+b)\na + b\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2794\n\n",
     "created_at": "2008-04-04T09:50:44Z",
     "labels": [
         "component: interfaces"
@@ -39,7 +39,6 @@ z^2 + z
 sage: magma(a+b)
 a + b
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2794
 

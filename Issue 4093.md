@@ -3,7 +3,7 @@
 archive/issues_004093.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve period lattice\n\n3.1.2.rc1 has this doctest failure:\n\n```\nFile \"/home/john/sage-3.1.2.rc1/tmp/period_lattice.py\", line 281:\n    sage: EllipticCurve('389a1').period_lattice().sigma(CC(2,1))\nExpected:\n    2.609121635701083769 - 0.20086508082458695134*I\nGot:\n    2.609121635701083769 - 0.20086508082458695200*I\n```\n\n\nThe patch fixes this by replacin the last 3 digits above by \"...\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4093\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve period lattice\n\n3.1.2.rc1 has this doctest failure:\n\n```\nFile \"/home/john/sage-3.1.2.rc1/tmp/period_lattice.py\", line 281:\n    sage: EllipticCurve('389a1').period_lattice().sigma(CC(2,1))\nExpected:\n    2.609121635701083769 - 0.20086508082458695134*I\nGot:\n    2.609121635701083769 - 0.20086508082458695200*I\n```\n\nThe patch fixes this by replacin the last 3 digits above by \"...\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4093\n\n",
     "created_at": "2008-09-09T19:28:19Z",
     "labels": [
         "component: number theory",
@@ -31,7 +31,6 @@ Expected:
 Got:
     2.609121635701083769 - 0.20086508082458695200*I
 ```
-
 
 The patch fixes this by replacin the last 3 digits above by "...".
 

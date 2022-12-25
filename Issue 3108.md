@@ -3,7 +3,7 @@
 archive/issues_003108.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve(GF(5),[1..5])\nsage: P = E.lift_x(0)\nsage: P\n(0 : 2 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/papers/submitted/kolyconj/<ipython console> in <module>()\n\n/Users/was/papers/submitted/kolyconj/element.pyx in sage.structure.element.ModuleElement.additive_order()\n\n<type 'exceptions.NotImplementedError'>: \nsage: P.order()\n3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3108\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve(GF(5),[1..5])\nsage: P = E.lift_x(0)\nsage: P\n(0 : 2 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/papers/submitted/kolyconj/<ipython console> in <module>()\n\n/Users/was/papers/submitted/kolyconj/element.pyx in sage.structure.element.ModuleElement.additive_order()\n\n<type 'exceptions.NotImplementedError'>: \nsage: P.order()\n3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3108\n\n",
     "created_at": "2008-05-06T01:53:51Z",
     "labels": [
         "component: number theory",
@@ -17,7 +17,6 @@ archive/issues_003108.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: E = EllipticCurve(GF(5),[1..5])
@@ -36,7 +35,6 @@ sage: P.additive_order()
 sage: P.order()
 3
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3108
 

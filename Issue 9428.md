@@ -329,7 +329,7 @@ The new translations are found in `sagenb.po`.
 archive/issue_comments_089822.json:
 ```json
 {
-    "body": "Hi, thank you for the patch\n\n1. Installs fine, works as expected\n\n2. sage -t -sagenb passed\n\n3. I was not able to configure selenium tests, got errors like \"unable to start browser\". Do I need to run these tests to give a positive review to this ticket?\n\n4. It seems that the issue \"XX <time units> ago\" has not been resolved. The workseet.py still contains\n\n```\n    def _saved_by_info(self, x, username=None):\n        try:\n            u = self.__saved_by_info[x]\n            return ' '+_('ago by %s', username)%u\n        except (KeyError,AttributeError):\n            return ' '+_('ago', username)\n```\n\nand I do not have possibility to put internationalized text on the front of the number, like \n\"pred 10 sekundami\". But no matter, can be resolved later on a ticket which adds Czech translation which is also finished.",
+    "body": "Hi, thank you for the patch\n\n1. Installs fine, works as expected\n\n2. sage -t -sagenb passed\n\n3. I was not able to configure selenium tests, got errors like \"unable to start browser\". Do I need to run these tests to give a positive review to this ticket?\n\n4. It seems that the issue \"XX <time units> ago\" has not been resolved. The workseet.py still contains\n\n```\n    def _saved_by_info(self, x, username=None):\n        try:\n            u = self.__saved_by_info[x]\n            return ' '+_('ago by %s', username)%u\n        except (KeyError,AttributeError):\n            return ' '+_('ago', username)\n```\nand I do not have possibility to put internationalized text on the front of the number, like \n\"pred 10 sekundami\". But no matter, can be resolved later on a ticket which adds Czech translation which is also finished.",
     "created_at": "2010-08-27T21:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -356,7 +356,6 @@ Hi, thank you for the patch
         except (KeyError,AttributeError):
             return ' '+_('ago', username)
 ```
-
 and I do not have possibility to put internationalized text on the front of the number, like 
 "pred 10 sekundami". But no matter, can be resolved later on a ticket which adds Czech translation which is also finished.
 
@@ -738,7 +737,7 @@ robert.marik, it seems that some strings re: the notebook settings are left untr
 archive/issue_comments_089840.json:
 ```json
 {
-    "body": "Replying to [comment:20 timdumol]:\n\n> robert.marik, it seems that some strings re: the notebook settings are left untranslated (Doc pool size, Type of challenge, etc.) in the cs_CZ locale.\n\nYes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names. This should avoid some uncertainties. Do you accept this point of view?\n\nIs the new package ready for review?",
+    "body": "Replying to [comment:20 timdumol]:\n\n> robert.marik, it seems that some strings re: the notebook settings are left untranslated (Doc pool size, Type of challenge, etc.) in the cs_CZ locale.\n\n\nYes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names. This should avoid some uncertainties. Do you accept this point of view?\n\nIs the new package ready for review?",
     "created_at": "2010-09-15T16:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -751,6 +750,7 @@ Replying to [comment:20 timdumol]:
 
 > robert.marik, it seems that some strings re: the notebook settings are left untranslated (Doc pool size, Type of challenge, etc.) in the cs_CZ locale.
 
+
 Yes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names. This should avoid some uncertainties. Do you accept this point of view?
 
 Is the new package ready for review?
@@ -762,7 +762,7 @@ Is the new package ready for review?
 archive/issue_comments_089841.json:
 ```json
 {
-    "body": "Replying to [comment:20 timdumol]:\n> Thank you for pointing out these issues. I have posted a new patch, and a new package at the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) addressing these issues.\n> \n\nThank you for solve those issues!\n\nBut, it seems we have another new ones:\n\n- When we click on the link \"New Worksheet\" at the \"Home\" page, the\nnew worksheet is created with a title in the default language and not in the user one. So, if the default language is \"en_US\" and the user one is \"pt_BR\", then when we click on \"Nova Planilha\" (New Worksheet) the worksheet will have the title \"Untitled\" and not \"Sem t\u00edtulo\".\n\n- When we plot a surface (using the function plot3d), the text \"Get Image\" (at the side of the plot window) and \"To save this image (...)\" (that appears when we click on \"Get Image\") are in English no matter what is the user language or default language.",
+    "body": "Replying to [comment:20 timdumol]:\n> Thank you for pointing out these issues. I have posted a new patch, and a new package at the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) addressing these issues.\n> \n\n\nThank you for solve those issues!\n\nBut, it seems we have another new ones:\n\n- When we click on the link \"New Worksheet\" at the \"Home\" page, the\nnew worksheet is created with a title in the default language and not in the user one. So, if the default language is \"en_US\" and the user one is \"pt_BR\", then when we click on \"Nova Planilha\" (New Worksheet) the worksheet will have the title \"Untitled\" and not \"Sem t\u00edtulo\".\n\n- When we plot a surface (using the function plot3d), the text \"Get Image\" (at the side of the plot window) and \"To save this image (...)\" (that appears when we click on \"Get Image\") are in English no matter what is the user language or default language.",
     "created_at": "2010-09-15T19:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -774,6 +774,7 @@ archive/issue_comments_089841.json:
 Replying to [comment:20 timdumol]:
 > Thank you for pointing out these issues. I have posted a new patch, and a new package at the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) addressing these issues.
 > 
+
 
 Thank you for solve those issues!
 
@@ -791,7 +792,7 @@ new worksheet is created with a title in the default language and not in the use
 archive/issue_comments_089842.json:
 ```json
 {
-    "body": "Replying to [comment:21 robert.marik]:\n\n> Yes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names.\n\nEven for a \"skilled person\", I think is more comfortable to use a software in your native language.\n\nAnd you're assuming that a \"skilled person\" is someone that knows English, but it isn't necessarily true.",
+    "body": "Replying to [comment:21 robert.marik]:\n\n> Yes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names.\n\n\nEven for a \"skilled person\", I think is more comfortable to use a software in your native language.\n\nAnd you're assuming that a \"skilled person\" is someone that knows English, but it isn't necessarily true.",
     "created_at": "2010-09-15T19:26:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -803,6 +804,7 @@ archive/issue_comments_089842.json:
 Replying to [comment:21 robert.marik]:
 
 > Yes, I think that only admin (skilled person) can see these strings and he (she) is more familiar with the English terminology than the localized names.
+
 
 Even for a "skilled person", I think is more comfortable to use a software in your native language.
 
@@ -855,7 +857,7 @@ I personally prefer using software in English, but I happen to be somewhat weak 
 archive/issue_comments_089845.json:
 ```json
 {
-    "body": "Replying to [comment:24 timdumol]:\n> I have attache a new patch, and uploaded a new package at once again the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) solving the new issues. Sorry for all the bugs! I did not notice the other gettext instances.\n>\n\nYou're making a great job, Tim Dumol! All the last issues are solved.\n\nBut, unfortunately I realize more three (minor) issues:\n\n- The text \"evaluate\" below the first cell in a worksheet is in the default language and not in the user one.\n\n- We have two more strings to translate:\n\n* data/sage/html/notebook/base.html, line 71: \"Click to rename this worksheet\"\n\n* data/sage/html/notebook/base.html, line 112 -> \"Select an attached file\"\n\nWe are not using the function gettext() in these strings.\n\n- It's not a big deal, but the date below the title of a worksheet (at the worksheet page) is in English.\n\nI updated the pt_BR localization files. Please add this to the next package:\n\nhttp://sites.google.com/site/lcmaquino/sage/sagenb_pt_BR.tar.gz?attredirects=0&d=1\n\nRobert Marik, could you update the cs_CZ localization files to translate the new strings?\n\nI think that after solve these issues we are ready to ask for another localization files! I hope that sage will be available in a lot of languages very soon!",
+    "body": "Replying to [comment:24 timdumol]:\n> I have attache a new patch, and uploaded a new package at once again the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) solving the new issues. Sorry for all the bugs! I did not notice the other gettext instances.\n\n>\n\nYou're making a great job, Tim Dumol! All the last issues are solved.\n\nBut, unfortunately I realize more three (minor) issues:\n\n- The text \"evaluate\" below the first cell in a worksheet is in the default language and not in the user one.\n\n- We have two more strings to translate:\n\n* data/sage/html/notebook/base.html, line 71: \"Click to rename this worksheet\"\n\n* data/sage/html/notebook/base.html, line 112 -> \"Select an attached file\"\n\nWe are not using the function gettext() in these strings.\n\n- It's not a big deal, but the date below the title of a worksheet (at the worksheet page) is in English.\n\nI updated the pt_BR localization files. Please add this to the next package:\n\nhttp://sites.google.com/site/lcmaquino/sage/sagenb_pt_BR.tar.gz?attredirects=0&d=1\n\nRobert Marik, could you update the cs_CZ localization files to translate the new strings?\n\nI think that after solve these issues we are ready to ask for another localization files! I hope that sage will be available in a lot of languages very soon!",
     "created_at": "2010-09-16T14:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -866,6 +868,7 @@ archive/issue_comments_089845.json:
 
 Replying to [comment:24 timdumol]:
 > I have attache a new patch, and uploaded a new package at once again the same url (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) solving the new issues. Sorry for all the bugs! I did not notice the other gettext instances.
+
 >
 
 You're making a great job, Tim Dumol! All the last issues are solved.
@@ -899,7 +902,7 @@ I think that after solve these issues we are ready to ask for another localizati
 archive/issue_comments_089846.json:
 ```json
 {
-    "body": "Replying to [comment:25 LuizAquino]:\n> \n> Robert Marik, could you update the cs_CZ localization files to translate the new strings?\n\nI merged my po file with the pot file from the last sagenb spg and translated untranslated string. Added also translations for \"Click to rename this worksheet\"  and \"Select an attached file\". The file with Czech translations is at http://user.mendelu.cz/marik/sage/sagenb.po \n\nI think that the pot file distributed in spkg package is not up-to-date but running pybabel gives error on my installation (Debian Lenny)\n\n\n```\nmarik@um-bc107:/opt/sage/spkg/build/sagenb-0.8.2-dev-i18n/src/sagenb/sagenb$ pybabel extract -F ./babel.cfg . -o output.pot\nextracting messages from data/sage/html/base.html (encoding=\"utf-8\")\nTraceback (most recent call last):\n  File \"/usr/bin/pybabel\", line 8, in <module>\n    load_entry_point('Babel==0.9.1', 'console_scripts', 'pybabel')()\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 1072, in main\n    return CommandLineInterface().run(sys.argv)\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 645, in run\n    return getattr(self, cmdname)(args[1:])\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 879, in extract\n    for filename, lineno, message, comments in extracted:\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 153, in extract_from_dir\n    options=options):\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 179, in extract_from_file\n    return list(extract(method, fileobj, keywords, comment_tags, options))\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 238, in extract\n    if func is None:\nUnboundLocalError: local variable 'func' referenced before assignment\n\n\n```\n",
+    "body": "Replying to [comment:25 LuizAquino]:\n> \n> Robert Marik, could you update the cs_CZ localization files to translate the new strings?\n\n\nI merged my po file with the pot file from the last sagenb spg and translated untranslated string. Added also translations for \"Click to rename this worksheet\"  and \"Select an attached file\". The file with Czech translations is at http://user.mendelu.cz/marik/sage/sagenb.po \n\nI think that the pot file distributed in spkg package is not up-to-date but running pybabel gives error on my installation (Debian Lenny)\n\n```\nmarik@um-bc107:/opt/sage/spkg/build/sagenb-0.8.2-dev-i18n/src/sagenb/sagenb$ pybabel extract -F ./babel.cfg . -o output.pot\nextracting messages from data/sage/html/base.html (encoding=\"utf-8\")\nTraceback (most recent call last):\n  File \"/usr/bin/pybabel\", line 8, in <module>\n    load_entry_point('Babel==0.9.1', 'console_scripts', 'pybabel')()\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 1072, in main\n    return CommandLineInterface().run(sys.argv)\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 645, in run\n    return getattr(self, cmdname)(args[1:])\n  File \"/var/lib/python-support/python2.5/babel/messages/frontend.py\", line 879, in extract\n    for filename, lineno, message, comments in extracted:\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 153, in extract_from_dir\n    options=options):\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 179, in extract_from_file\n    return list(extract(method, fileobj, keywords, comment_tags, options))\n  File \"/var/lib/python-support/python2.5/babel/messages/extract.py\", line 238, in extract\n    if func is None:\nUnboundLocalError: local variable 'func' referenced before assignment\n\n\n```",
     "created_at": "2010-09-16T18:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -912,10 +915,10 @@ Replying to [comment:25 LuizAquino]:
 > 
 > Robert Marik, could you update the cs_CZ localization files to translate the new strings?
 
+
 I merged my po file with the pot file from the last sagenb spg and translated untranslated string. Added also translations for "Click to rename this worksheet"  and "Select an attached file". The file with Czech translations is at http://user.mendelu.cz/marik/sage/sagenb.po 
 
 I think that the pot file distributed in spkg package is not up-to-date but running pybabel gives error on my installation (Debian Lenny)
-
 
 ```
 marik@um-bc107:/opt/sage/spkg/build/sagenb-0.8.2-dev-i18n/src/sagenb/sagenb$ pybabel extract -F ./babel.cfg . -o output.pot
@@ -939,7 +942,6 @@ UnboundLocalError: local variable 'func' referenced before assignment
 
 
 ```
-
 
 
 
@@ -972,7 +974,7 @@ But, we have to take care about the .js files. In the new version of the package
 archive/issue_comments_089848.json:
 ```json
 {
-    "body": "Hi Tim,\n\nIt seems you updated the package. I tried to install it and I got some errors. To solve them, I changed the files:\n\n#sagenb/notebook/template.py, line 142\n\nFrom: \n\n```\nenv.filters['_'] = lambda x: return x\n```\n\nTo:\n\n```\nenv.filters['_'] = lambda x: x\n```\n \n\n#sagenb/data/sage/js/localization.js, line 5\n\nThere is a open comment tag \"{#\", but there isn't a close comment tag \"#}\". So, I typed \"#}\" in the line 7.\n\nI notice that you forgot to put the strings \"Problem inserting new input cell before current input cell.\" and \"Problem inserting new text cell before current input cell.\" in the files localization.js and translated-messages.js.\n\nAfter install, I notice that the date below the title of a worksheet (at the worksheet page) appears as \"None\". To solve it, I changed the file:\n\n#sagenb/notebook/worksheet.js\n\nline 4166: I commented this line.\n\nline 4168 (solve an 'exceptions.UnicodeEncodeError' in Czech and the text \"None\" below the title of a worksheet):\n\nFrom:\n\n```\ntime.strftime(month+' %d, %Y %I:%M %p', time.localtime(float(t)))\n```\n\nTo:\n\n```\nreturn month + time.strftime(' %d, %Y %I:%M %p', time.localtime(float(t)))\n```\n\n\nAfter all, it seems that the issues pointed in above comment 26 are solved! :)\n\nI updated the pt_BR localization files (translating the name of months) and the .pot file. Please add this to the next package:\n\nhttp://sites.google.com/site/lcmaquino/sage/sagenb_pt_BR.tar.gz?attredirects=0&d=1\n\nhttps://sites.google.com/site/lcmaquino/sage/sagenb.pot?attredirects=0&d=1\n\nBy the way, please remove the file \"sagenb/notebook/conf_lcma.py\" (as you did before).\n\nI think we're ready to ask for another localization files! What do you think?",
+    "body": "Hi Tim,\n\nIt seems you updated the package. I tried to install it and I got some errors. To solve them, I changed the files:\n\n#sagenb/notebook/template.py, line 142\n\nFrom: \n\n```\nenv.filters['_'] = lambda x: return x\n```\nTo:\n\n```\nenv.filters['_'] = lambda x: x\n``` \n\n#sagenb/data/sage/js/localization.js, line 5\n\nThere is a open comment tag \"{#\", but there isn't a close comment tag \"#}\". So, I typed \"#}\" in the line 7.\n\nI notice that you forgot to put the strings \"Problem inserting new input cell before current input cell.\" and \"Problem inserting new text cell before current input cell.\" in the files localization.js and translated-messages.js.\n\nAfter install, I notice that the date below the title of a worksheet (at the worksheet page) appears as \"None\". To solve it, I changed the file:\n\n#sagenb/notebook/worksheet.js\n\nline 4166: I commented this line.\n\nline 4168 (solve an 'exceptions.UnicodeEncodeError' in Czech and the text \"None\" below the title of a worksheet):\n\nFrom:\n\n```\ntime.strftime(month+' %d, %Y %I:%M %p', time.localtime(float(t)))\n```\nTo:\n\n```\nreturn month + time.strftime(' %d, %Y %I:%M %p', time.localtime(float(t)))\n```\n\nAfter all, it seems that the issues pointed in above comment 26 are solved! :)\n\nI updated the pt_BR localization files (translating the name of months) and the .pot file. Please add this to the next package:\n\nhttp://sites.google.com/site/lcmaquino/sage/sagenb_pt_BR.tar.gz?attredirects=0&d=1\n\nhttps://sites.google.com/site/lcmaquino/sage/sagenb.pot?attredirects=0&d=1\n\nBy the way, please remove the file \"sagenb/notebook/conf_lcma.py\" (as you did before).\n\nI think we're ready to ask for another localization files! What do you think?",
     "created_at": "2010-09-30T17:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -992,13 +994,11 @@ From:
 ```
 env.filters['_'] = lambda x: return x
 ```
-
 To:
 
 ```
 env.filters['_'] = lambda x: x
-```
- 
+``` 
 
 #sagenb/data/sage/js/localization.js, line 5
 
@@ -1019,13 +1019,11 @@ From:
 ```
 time.strftime(month+' %d, %Y %I:%M %p', time.localtime(float(t)))
 ```
-
 To:
 
 ```
 return month + time.strftime(' %d, %Y %I:%M %p', time.localtime(float(t)))
 ```
-
 
 After all, it seems that the issues pointed in above comment 26 are solved! :)
 
@@ -1104,7 +1102,7 @@ Since you approve of my changes, and your changes count as a reviewer patch, sha
 archive/issue_comments_089852.json:
 ```json
 {
-    "body": "It installed ok. But, you didn't comment (or remove) the line 4166 in \"sagenb/notebook/worksheet.js\". Without this change, I got an error when I tried to save a new worksheet. The last messages about this error were:\n\n\n```\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/twist.py\", line 864, in render\n\t    self.worksheet.save_snapshot(self.username)\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/worksheet.py\", line 1964, in save_snapshot\n\t    self.limit_snapshots()\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/worksheet.py\", line 2060, in limit_snapshots\n\t    amnesty = int(calendar.timegm(time.strptime(\"01 May 2009\", \"%d %b %Y\")))\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python/_strptime.py\", line 454, in _strptime_time\n\t    return _strptime(data_string, format)[0]\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python/_strptime.py\", line 325, in _strptime\n\t    (data_string, format))\n\texceptions.ValueError: time data '01 May 2009' does not match format '%d %b %Y'\n```\n\n\nBy the way, you forgot to put the strings in the files \"localization.js\" and \"translated-messages.js\" as pointed above.\n\nWhen we finish the work with this package, how do you think to instruct another user to add new localization files? Do you think to ask them to send to you the localization files and then you add it to the package?",
+    "body": "It installed ok. But, you didn't comment (or remove) the line 4166 in \"sagenb/notebook/worksheet.js\". Without this change, I got an error when I tried to save a new worksheet. The last messages about this error were:\n\n```\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/twist.py\", line 864, in render\n\t    self.worksheet.save_snapshot(self.username)\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/worksheet.py\", line 1964, in save_snapshot\n\t    self.limit_snapshots()\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/worksheet.py\", line 2060, in limit_snapshots\n\t    amnesty = int(calendar.timegm(time.strptime(\"01 May 2009\", \"%d %b %Y\")))\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python/_strptime.py\", line 454, in _strptime_time\n\t    return _strptime(data_string, format)[0]\n\t  File \"/home/lcaquino/Instaladores/sage/sage/local/lib/python/_strptime.py\", line 325, in _strptime\n\t    (data_string, format))\n\texceptions.ValueError: time data '01 May 2009' does not match format '%d %b %Y'\n```\n\nBy the way, you forgot to put the strings in the files \"localization.js\" and \"translated-messages.js\" as pointed above.\n\nWhen we finish the work with this package, how do you think to instruct another user to add new localization files? Do you think to ask them to send to you the localization files and then you add it to the package?",
     "created_at": "2010-10-02T13:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -1114,7 +1112,6 @@ archive/issue_comments_089852.json:
 ```
 
 It installed ok. But, you didn't comment (or remove) the line 4166 in "sagenb/notebook/worksheet.js". Without this change, I got an error when I tried to save a new worksheet. The last messages about this error were:
-
 
 ```
 	  File "/home/lcaquino/Instaladores/sage/sage/local/lib/python2.6/site-packages/sagenb-0.8.2_dev_i18n-py2.6.egg/sagenb/notebook/twist.py", line 864, in render
@@ -1129,7 +1126,6 @@ It installed ok. But, you didn't comment (or remove) the line 4166 in "sagenb/no
 	    (data_string, format))
 	exceptions.ValueError: time data '01 May 2009' does not match format '%d %b %Y'
 ```
-
 
 By the way, you forgot to put the strings in the files "localization.js" and "translated-messages.js" as pointed above.
 
@@ -1160,7 +1156,7 @@ By the way, please add the .pot file to the next package. I think it should be i
 archive/issue_comments_089854.json:
 ```json
 {
-    "body": "> Since you approve of my changes, and your changes count as a reviewer patch, shall we mark this positive review?\n\nUnfortunately we can't mark this as \"positive review\" yet. But we're very close to do so! :)",
+    "body": "> Since you approve of my changes, and your changes count as a reviewer patch, shall we mark this positive review?\n\n\nUnfortunately we can't mark this as \"positive review\" yet. But we're very close to do so! :)",
     "created_at": "2010-10-02T14:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -1171,6 +1167,7 @@ archive/issue_comments_089854.json:
 
 > Since you approve of my changes, and your changes count as a reviewer patch, shall we mark this positive review?
 
+
 Unfortunately we can't mark this as "positive review" yet. But we're very close to do so! :)
 
 
@@ -1180,7 +1177,7 @@ Unfortunately we can't mark this as "positive review" yet. But we're very close 
 archive/issue_comments_089855.json:
 ```json
 {
-    "body": "Replying to [comment:32 LuizAquino]:\n> Unfortunately we can't mark this as \"positive review\" yet. But we're very close to do so! :)\n\nWhere is the problem? Can I help to finish this useful ticket?",
+    "body": "Replying to [comment:32 LuizAquino]:\n> Unfortunately we can't mark this as \"positive review\" yet. But we're very close to do so! :)\n\n\nWhere is the problem? Can I help to finish this useful ticket?",
     "created_at": "2010-11-07T05:54:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -1192,6 +1189,7 @@ archive/issue_comments_089855.json:
 Replying to [comment:32 LuizAquino]:
 > Unfortunately we can't mark this as "positive review" yet. But we're very close to do so! :)
 
+
 Where is the problem? Can I help to finish this useful ticket?
 
 
@@ -1201,7 +1199,7 @@ Where is the problem? Can I help to finish this useful ticket?
 archive/issue_comments_089856.json:
 ```json
 {
-    "body": "Replying to [comment:33 robert.marik]:\n> \n> Where is the problem? Can I help to finish this useful ticket?\n> \n\nWe should implement the solutions pointed in comments 28 and 30 and update the package. But, where you read \"sagenb/notebook/worksheet.js\", please understand \"sagenb/notebook/worksheet.py\".",
+    "body": "Replying to [comment:33 robert.marik]:\n> \n> Where is the problem? Can I help to finish this useful ticket?\n> \n\n\nWe should implement the solutions pointed in comments 28 and 30 and update the package. But, where you read \"sagenb/notebook/worksheet.js\", please understand \"sagenb/notebook/worksheet.py\".",
     "created_at": "2010-11-07T20:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
@@ -1214,6 +1212,7 @@ Replying to [comment:33 robert.marik]:
 > 
 > Where is the problem? Can I help to finish this useful ticket?
 > 
+
 
 We should implement the solutions pointed in comments 28 and 30 and update the package. But, where you read "sagenb/notebook/worksheet.js", please understand "sagenb/notebook/worksheet.py".
 

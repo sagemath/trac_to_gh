@@ -3,7 +3,7 @@
 archive/issues_005613.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nThe command\n\n```\n\n  sage: hg_sage.send('foo.hg')\n```\n\nwas broken because http://www.sagemath.org/hg/sage-main on the new server is now at http://hg.sagemath.org/sage-main/.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5613\n\n",
+    "body": "Assignee: @haraldschilly\n\nThe command\n\n```\n\n  sage: hg_sage.send('foo.hg')\n```\nwas broken because http://www.sagemath.org/hg/sage-main on the new server is now at http://hg.sagemath.org/sage-main/.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5613\n\n",
     "created_at": "2009-03-26T02:32:40Z",
     "labels": [
         "component: website/wiki",
@@ -24,7 +24,6 @@ The command
 
   sage: hg_sage.send('foo.hg')
 ```
-
 was broken because http://www.sagemath.org/hg/sage-main on the new server is now at http://hg.sagemath.org/sage-main/.  The attached patch fixes this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5613

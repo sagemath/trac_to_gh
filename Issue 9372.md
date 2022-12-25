@@ -124,7 +124,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088921.json:
 ```json
 {
-    "body": "I'm getting a couple of doctest failures -- something is off by a sign in the `height_pairing_matrix` code:\n\n```\nsage -t -long ell_number_field.py\n**********************************************************************\nFile \"/storage/masiao/sage-4.4.4/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 308:\n    sage: E.height_pairing_matrix([P,Q])\nExpected:\n    [ 0.686667083305587 -0.268478098806726]\n    [-0.268478098806726  0.327000773651605]\nGot:\n    [0.686667083305587 0.268478098806726]\n    [0.268478098806726 0.327000773651605]\n**********************************************************************\nFile \"/storage/masiao/sage-4.4.4/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 317:\n    sage: EK.height_pairing_matrix([EK(P),EK(Q)])\nExpected:\n    [ 0.686667083305586 -0.268478098806726]\n    [-0.268478098806726  0.327000773651605]\nGot:\n    [0.686667083305586 0.268478098806726]\n    [0.268478098806726 0.327000773651605]\n**********************************************************************\n1 items had failures:\n   2 of  23 in __main__.example_4\n***Test Failed*** 2 failures.\n```\n\n\nAlso, a very tiny quibble: the second argument \"precision\" to `height_pairing_matrix` is missing its bullet point in the docstring.",
+    "body": "I'm getting a couple of doctest failures -- something is off by a sign in the `height_pairing_matrix` code:\n\n```\nsage -t -long ell_number_field.py\n**********************************************************************\nFile \"/storage/masiao/sage-4.4.4/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 308:\n    sage: E.height_pairing_matrix([P,Q])\nExpected:\n    [ 0.686667083305587 -0.268478098806726]\n    [-0.268478098806726  0.327000773651605]\nGot:\n    [0.686667083305587 0.268478098806726]\n    [0.268478098806726 0.327000773651605]\n**********************************************************************\nFile \"/storage/masiao/sage-4.4.4/devel/sage-reviewing/sage/schemes/elliptic_curves/ell_number_field.py\", line 317:\n    sage: EK.height_pairing_matrix([EK(P),EK(Q)])\nExpected:\n    [ 0.686667083305586 -0.268478098806726]\n    [-0.268478098806726  0.327000773651605]\nGot:\n    [0.686667083305586 0.268478098806726]\n    [0.268478098806726 0.327000773651605]\n**********************************************************************\n1 items had failures:\n   2 of  23 in __main__.example_4\n***Test Failed*** 2 failures.\n```\n\nAlso, a very tiny quibble: the second argument \"precision\" to `height_pairing_matrix` is missing its bullet point in the docstring.",
     "created_at": "2010-06-29T13:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
@@ -160,7 +160,6 @@ Got:
    2 of  23 in __main__.example_4
 ***Test Failed*** 2 failures.
 ```
-
 
 Also, a very tiny quibble: the second argument "precision" to `height_pairing_matrix` is missing its bullet point in the docstring.
 
@@ -209,7 +208,7 @@ No time to fix now, about to leave SD22 for home.... but thanks all the same!  P
 archive/issue_comments_088924.json:
 ```json
 {
-    "body": "`@`cremona: You did you E.gens().  I get:\n\n```\nsage: E = EllipticCurve('389a1')\nsage: E.gens()\n[(-1 : 1 : 1), (0 : -1 : 1)]\n```\n\n\nShould I change the doc test to the following?\n\n\n```\nsage: E = EllipticCurve('389a1')\nsage: P,Q = E.point([-1,1,1]),E.point([0,-1,1])\nsage: E.height_pairing_matrix([P,Q])\n[0.686667083305587 0.268478098806726]\n[0.268478098806726 0.327000773651605]\n```\n\n\n}}}",
+    "body": "`@`cremona: You did you E.gens().  I get:\n\n```\nsage: E = EllipticCurve('389a1')\nsage: E.gens()\n[(-1 : 1 : 1), (0 : -1 : 1)]\n```\n\nShould I change the doc test to the following?\n\n```\nsage: E = EllipticCurve('389a1')\nsage: P,Q = E.point([-1,1,1]),E.point([0,-1,1])\nsage: E.height_pairing_matrix([P,Q])\n[0.686667083305587 0.268478098806726]\n[0.268478098806726 0.327000773651605]\n```\n\n}}}",
     "created_at": "2010-06-29T23:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
@@ -226,9 +225,7 @@ sage: E.gens()
 [(-1 : 1 : 1), (0 : -1 : 1)]
 ```
 
-
 Should I change the doc test to the following?
-
 
 ```
 sage: E = EllipticCurve('389a1')
@@ -237,7 +234,6 @@ sage: E.height_pairing_matrix([P,Q])
 [0.686667083305587 0.268478098806726]
 [0.268478098806726 0.327000773651605]
 ```
-
 
 }}}
 

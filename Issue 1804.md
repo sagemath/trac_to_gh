@@ -3,7 +3,7 @@
 archive/issues_001804.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is LAME:\n\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F*F\nx^6 * y^4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1804\n\n",
+    "body": "Assignee: somebody\n\nThis is LAME:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F*F\nx^6 * y^4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1804\n\n",
     "created_at": "2008-01-17T19:52:14Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 This is LAME:
 
-
 ```
 sage: R.<x,y> = FreeAlgebra(QQ, 2)
 sage: F = Factorization([(x,3), (y,2)]); F
@@ -28,7 +27,6 @@ x^3 * y^2
 sage: F*F
 x^6 * y^4
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1804
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1804
 archive/issue_comments_011373.json:
 ```json
 {
-    "body": "Same comments apply to __invert__ in the file factorization.py.  \n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F^(-1)\nx^-3 * y^-2\n\n```\n",
+    "body": "Same comments apply to __invert__ in the file factorization.py.  \n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F^(-1)\nx^-3 * y^-2\n\n```",
     "created_at": "2008-01-17T19:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1804",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ sage: F^(-1)
 x^-3 * y^-2
 
 ```
-
 
 
 

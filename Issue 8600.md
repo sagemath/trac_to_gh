@@ -49,7 +49,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077754.json:
 ```json
 {
-    "body": "I find the placement of the nodes strange (and even more if the tree is big).\n\nI would prefer an implementation using Fibonacci numbers all over the construction:\n\n\n```\ndef FibonacciTree(n):\n    T = Graph(name=\"Fibonacci-Tree-%d\"%n)\n    if n==1: T.add_vertex(0)\n    if n<2: return T\n\n    F = list(fibonacci_sequence(n + 2))\n    s = 2.0 ** (n / 2.0 - 2)\n    pos = {}\n\n    def fib(level, node, y):\n        pos[node] = (node, y)\n        if level < 2: return\n        level -= 1\n        y -= s\n        diff = F[level]\n        T.add_edge(node, node-diff)\n        if level == 1: # only one child\n            pos[node - diff] = (node, y)\n            return\n        T.add_edge(node, node + diff)\n        fib(level, node - diff, y)\n        fib(level - 1, node + diff, y)\n\n    T.add_vertices(xrange(sum(F[:-1])))\n    fib(n, F[n + 1] - 1, 0)\n    T.set_pos(pos)\n\n    return T\n```\n\n\nbut maybe it's just a matter of taste.\n\nWith `n=7` you obtain the same graph as http://www.delorie.com/gnu/docs/avl/avlmuchbal.png .\nNotice that the name of each node is also it's x-coordinate (except for the only children where I prefer to put them under their father).",
+    "body": "I find the placement of the nodes strange (and even more if the tree is big).\n\nI would prefer an implementation using Fibonacci numbers all over the construction:\n\n```\ndef FibonacciTree(n):\n    T = Graph(name=\"Fibonacci-Tree-%d\"%n)\n    if n==1: T.add_vertex(0)\n    if n<2: return T\n\n    F = list(fibonacci_sequence(n + 2))\n    s = 2.0 ** (n / 2.0 - 2)\n    pos = {}\n\n    def fib(level, node, y):\n        pos[node] = (node, y)\n        if level < 2: return\n        level -= 1\n        y -= s\n        diff = F[level]\n        T.add_edge(node, node-diff)\n        if level == 1: # only one child\n            pos[node - diff] = (node, y)\n            return\n        T.add_edge(node, node + diff)\n        fib(level, node - diff, y)\n        fib(level - 1, node + diff, y)\n\n    T.add_vertices(xrange(sum(F[:-1])))\n    fib(n, F[n + 1] - 1, 0)\n    T.set_pos(pos)\n\n    return T\n```\n\nbut maybe it's just a matter of taste.\n\nWith `n=7` you obtain the same graph as http://www.delorie.com/gnu/docs/avl/avlmuchbal.png .\nNotice that the name of each node is also it's x-coordinate (except for the only children where I prefer to put them under their father).",
     "created_at": "2010-03-25T17:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ archive/issue_comments_077754.json:
 I find the placement of the nodes strange (and even more if the tree is big).
 
 I would prefer an implementation using Fibonacci numbers all over the construction:
-
 
 ```
 def FibonacciTree(n):
@@ -93,7 +92,6 @@ def FibonacciTree(n):
 
     return T
 ```
-
 
 but maybe it's just a matter of taste.
 
@@ -161,7 +159,7 @@ I like it too, and the golden_ratio is indeed well suited. I would give it a pos
 archive/issue_comments_077758.json:
 ```json
 {
-    "body": "Replying to [comment:4 ylchapuy]:\n> I would give it a positive review...\n\ngood! now we just need a third party.",
+    "body": "Replying to [comment:4 ylchapuy]:\n> I would give it a positive review...\n\n\ngood! now we just need a third party.",
     "created_at": "2010-03-25T19:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
@@ -172,6 +170,7 @@ archive/issue_comments_077758.json:
 
 Replying to [comment:4 ylchapuy]:
 > I would give it a positive review...
+
 
 good! now we just need a third party.
 
@@ -218,7 +217,7 @@ Is there a reason that the milestone for this is version 5.0 rather than 4.4?  S
 archive/issue_comments_077761.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> Is there a reason that the milestone for this is version 5.0 rather than 4.4? \n\nNo, I think there was no 4.4 when i created it, that's all. It's really trivial and just a small addition.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> Is there a reason that the milestone for this is version 5.0 rather than 4.4? \n\n\nNo, I think there was no 4.4 when i created it, that's all. It's really trivial and just a small addition.",
     "created_at": "2010-04-15T08:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
@@ -229,6 +228,7 @@ archive/issue_comments_077761.json:
 
 Replying to [comment:7 jhpalmieri]:
 > Is there a reason that the milestone for this is version 5.0 rather than 4.4? 
+
 
 No, I think there was no 4.4 when i created it, that's all. It's really trivial and just a small addition.
 

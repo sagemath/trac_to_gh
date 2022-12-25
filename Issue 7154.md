@@ -3,7 +3,7 @@
 archive/issues_007154.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: point arrow thickness\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: point arrow thickness\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
     "created_at": "2009-10-08T11:07:33Z",
     "labels": [
         "component: graphics",
@@ -27,7 +27,6 @@ There should be a consistent naming scheme for the "thickness" of graphics objec
 
 The current status is:
 
-
 ```
   sage: point([0,0], pointsize = 5)
   sage: point3d((0,0,0), thickness=5)                      
@@ -38,7 +37,6 @@ The current status is:
   sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      
   sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7154
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7154
 archive/issue_comments_059153.json:
 ```json
 {
-    "body": "Also, the arrow3d thickness behaves differently than the thickness of point3d and line3d: If you zoom in, the arrow becomes bigger and bigger like a physical object. The line3d and point3d stay the same apparent size, about thickness pixels wide on screen. Since the arrow3d is usually used to indicate a direction it would be nice if it would scale (or, rather, not scale) just like point3d and line3d.\n\n\n```\n  sage: scene = \\\n  ....: line3d([[1,0,0],[1,3,0]],thickness=5) + \\\n  ....: arrow3d([2,0,0],[2,3,0],thickness=5) + \\\n  ....: point3d([3,2,0],thickness=5)\n  sage: scene.show( aspect_ratio=[1,1,1])\n```\n\n\nand then zoom in/out in the Jmol viewer.",
+    "body": "Also, the arrow3d thickness behaves differently than the thickness of point3d and line3d: If you zoom in, the arrow becomes bigger and bigger like a physical object. The line3d and point3d stay the same apparent size, about thickness pixels wide on screen. Since the arrow3d is usually used to indicate a direction it would be nice if it would scale (or, rather, not scale) just like point3d and line3d.\n\n```\n  sage: scene = \\\n  ....: line3d([[1,0,0],[1,3,0]],thickness=5) + \\\n  ....: arrow3d([2,0,0],[2,3,0],thickness=5) + \\\n  ....: point3d([3,2,0],thickness=5)\n  sage: scene.show( aspect_ratio=[1,1,1])\n```\n\nand then zoom in/out in the Jmol viewer.",
     "created_at": "2009-10-09T09:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -63,7 +61,6 @@ archive/issue_comments_059153.json:
 
 Also, the arrow3d thickness behaves differently than the thickness of point3d and line3d: If you zoom in, the arrow becomes bigger and bigger like a physical object. The line3d and point3d stay the same apparent size, about thickness pixels wide on screen. Since the arrow3d is usually used to indicate a direction it would be nice if it would scale (or, rather, not scale) just like point3d and line3d.
 
-
 ```
   sage: scene = \
   ....: line3d([[1,0,0],[1,3,0]],thickness=5) + \
@@ -71,7 +68,6 @@ Also, the arrow3d thickness behaves differently than the thickness of point3d an
   ....: point3d([3,2,0],thickness=5)
   sage: scene.show( aspect_ratio=[1,1,1])
 ```
-
 
 and then zoom in/out in the Jmol viewer.
 
@@ -230,7 +226,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059162.json:
 ```json
 {
-    "body": "Thanks!  Fixing things like this really add to the polish and ease-of-use of Sage, and make it much more user-friendly.\n\nThree comments:\n\n1. I think the rename_keyword works the other way.  See this example from the docs:\n\n\n```\nrename_keyword(deprecated='Sage version 4.2', deprecated_option='new_option')\n```\n\n\nDon't you want it to be thickness='width'?  Also, the actual keyword in the function should be changed in the function declaration (you can probably then search and replace in the function definition to replace 'thickness' with 'width'.\n\n2. Could you add a deprecation by using the deprecation feature of rename_keyword?\n\n3. Could you add a short doctest showing the deprecation warning and the new option?  The deprecation warning should probably be in a TESTS: section, while the new option should definitely be in the EXAMPLES section.\n\nThanks for working on this!",
+    "body": "Thanks!  Fixing things like this really add to the polish and ease-of-use of Sage, and make it much more user-friendly.\n\nThree comments:\n\n1. I think the rename_keyword works the other way.  See this example from the docs:\n\n```\nrename_keyword(deprecated='Sage version 4.2', deprecated_option='new_option')\n```\n\nDon't you want it to be thickness='width'?  Also, the actual keyword in the function should be changed in the function declaration (you can probably then search and replace in the function definition to replace 'thickness' with 'width'.\n\n2. Could you add a deprecation by using the deprecation feature of rename_keyword?\n\n3. Could you add a short doctest showing the deprecation warning and the new option?  The deprecation warning should probably be in a TESTS: section, while the new option should definitely be in the EXAMPLES section.\n\nThanks for working on this!",
     "created_at": "2010-08-21T23:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -245,11 +241,9 @@ Three comments:
 
 1. I think the rename_keyword works the other way.  See this example from the docs:
 
-
 ```
 rename_keyword(deprecated='Sage version 4.2', deprecated_option='new_option')
 ```
-
 
 Don't you want it to be thickness='width'?  Also, the actual keyword in the function should be changed in the function declaration (you can probably then search and replace in the function definition to replace 'thickness' with 'width'.
 
@@ -360,7 +354,7 @@ Wow, that is a huge patch.  It looks like a lot of whitespace changes.  Is that 
 archive/issue_comments_059168.json:
 ```json
 {
-    "body": "Replying to [comment:10 jason]:\n> Wow, that is a huge patch.  It looks like a lot of whitespace changes.  Is that right?\n\nI was also puzzled at why it was so big.  Most likely it has something to do with my python editor removing trailing spaces on save.",
+    "body": "Replying to [comment:10 jason]:\n> Wow, that is a huge patch.  It looks like a lot of whitespace changes.  Is that right?\n\n\nI was also puzzled at why it was so big.  Most likely it has something to do with my python editor removing trailing spaces on save.",
     "created_at": "2010-08-29T04:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
@@ -371,6 +365,7 @@ archive/issue_comments_059168.json:
 
 Replying to [comment:10 jason]:
 > Wow, that is a huge patch.  It looks like a lot of whitespace changes.  Is that right?
+
 
 I was also puzzled at why it was so big.  Most likely it has something to do with my python editor removing trailing spaces on save.
 

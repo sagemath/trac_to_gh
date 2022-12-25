@@ -3,7 +3,7 @@
 archive/issues_007461.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
+    "body": "Assignee: @mwhansen\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
     "created_at": "2009-11-14T18:38:48Z",
     "labels": [
         "component: combinatorics",
@@ -30,7 +30,6 @@ sage -t --long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.py
          [1387.2 s]
  
 ```
-
 
 Doing the same with --verbose dosn't necessarily time out. 
 
@@ -99,7 +98,7 @@ Is this consistently reproducible, or something you hit randomly?
 archive/issue_comments_062729.json:
 ```json
 {
-    "body": "> Is this consistently reproducible, or something you hit randomly? \n\nIt *always* happens on I think every single 32-bit Linux platform with non-verbose doctests.",
+    "body": "> Is this consistently reproducible, or something you hit randomly? \n\n\nIt *always* happens on I think every single 32-bit Linux platform with non-verbose doctests.",
     "created_at": "2009-11-17T06:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
@@ -110,6 +109,7 @@ archive/issue_comments_062729.json:
 
 > Is this consistently reproducible, or something you hit randomly? 
 
+
 It *always* happens on I think every single 32-bit Linux platform with non-verbose doctests.
 
 
@@ -119,7 +119,7 @@ It *always* happens on I think every single 32-bit Linux platform with non-verbo
 archive/issue_comments_062730.json:
 ```json
 {
-    "body": "On my virtual machine, 32-bit Ubuntu with non-verbose doctests:\n\n```\nrlmill@rlm32ubu:~/sage-4.2.1-linux-Ubuntu_9.10-i686-Linux$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\ninit.sage does not exist ... creating\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\t [228.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 228.4 seconds\n```\n\nThey passed three times in a row.\n\nAny ideas where to try next?",
+    "body": "On my virtual machine, 32-bit Ubuntu with non-verbose doctests:\n\n```\nrlmill@rlm32ubu:~/sage-4.2.1-linux-Ubuntu_9.10-i686-Linux$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\ninit.sage does not exist ... creating\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\t [228.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 228.4 seconds\n```\nThey passed three times in a row.\n\nAny ideas where to try next?",
     "created_at": "2009-11-18T18:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
@@ -140,7 +140,6 @@ sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
 All tests passed!
 Total time for all tests: 228.4 seconds
 ```
-
 They passed three times in a row.
 
 Any ideas where to try next?
@@ -152,7 +151,7 @@ Any ideas where to try next?
 archive/issue_comments_062731.json:
 ```json
 {
-    "body": "I think I am seeing this on centos32 on boxen. On this machine, the trouble is that the walltime is somehow severely messed up.\n\n\n```\nsage: walltime()\n1256774719.748621\n```\n\n\n*Exactly* ten seconds later:\n\n\n```\nsage: walltime()\n1256774720.2823999\n```\n\n\nThe difference is only 0.533. At that rate, what is supposed to be a 180 second doctest would take 3,374 seconds.\n\nI'm noticing other strange behavior here too. To debug, I had the code writing to a file. When I kill the doctest, I get my terminal back. But, in the other terminal which I am using to \"tail\" the file, I watch things continue to be written. Also, running the doctest for one minute, and sending a keyboard interrupt, gives the following:\n\n\n```\nwstein@centos53-32:/tmp/wstein/farm/sage-4.2.1$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nKeyboardInterrupt -- interrupted after 3.99422097206 seconds!\n\t [4.5 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nTotal time for all tests: 4.5 seconds\n```\n\n\nHuh!?!",
+    "body": "I think I am seeing this on centos32 on boxen. On this machine, the trouble is that the walltime is somehow severely messed up.\n\n```\nsage: walltime()\n1256774719.748621\n```\n\n*Exactly* ten seconds later:\n\n```\nsage: walltime()\n1256774720.2823999\n```\n\nThe difference is only 0.533. At that rate, what is supposed to be a 180 second doctest would take 3,374 seconds.\n\nI'm noticing other strange behavior here too. To debug, I had the code writing to a file. When I kill the doctest, I get my terminal back. But, in the other terminal which I am using to \"tail\" the file, I watch things continue to be written. Also, running the doctest for one minute, and sending a keyboard interrupt, gives the following:\n\n```\nwstein@centos53-32:/tmp/wstein/farm/sage-4.2.1$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nKeyboardInterrupt -- interrupted after 3.99422097206 seconds!\n\t [4.5 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nTotal time for all tests: 4.5 seconds\n```\n\nHuh!?!",
     "created_at": "2009-11-19T09:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
@@ -163,26 +162,21 @@ archive/issue_comments_062731.json:
 
 I think I am seeing this on centos32 on boxen. On this machine, the trouble is that the walltime is somehow severely messed up.
 
-
 ```
 sage: walltime()
 1256774719.748621
 ```
 
-
 *Exactly* ten seconds later:
-
 
 ```
 sage: walltime()
 1256774720.2823999
 ```
 
-
 The difference is only 0.533. At that rate, what is supposed to be a 180 second doctest would take 3,374 seconds.
 
 I'm noticing other strange behavior here too. To debug, I had the code writing to a file. When I kill the doctest, I get my terminal back. But, in the other terminal which I am using to "tail" the file, I watch things continue to be written. Also, running the doctest for one minute, and sending a keyboard interrupt, gives the following:
-
 
 ```
 wstein@centos53-32:/tmp/wstein/farm/sage-4.2.1$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
@@ -197,7 +191,6 @@ The following tests failed:
 	sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 Total time for all tests: 4.5 seconds
 ```
-
 
 Huh!?!
 

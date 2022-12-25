@@ -66,7 +66,7 @@ Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket51
 archive/issue_comments_039416.json:
 ```json
 {
-    "body": "Applied to 3.3.alpha2, I get the following errors:\n\n\n```\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4033:\n    sage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\nExpected:\n    (-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            \nGot:\n    (-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4036:\n    sage: P.division_points(2)\nExpected:\n    [(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   \nGot:\n    [(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]\n**********************************************************************\n```\n",
+    "body": "Applied to 3.3.alpha2, I get the following errors:\n\n```\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4033:\n    sage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\nExpected:\n    (-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            \nGot:\n    (-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4036:\n    sage: P.division_points(2)\nExpected:\n    [(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   \nGot:\n    [(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]\n**********************************************************************\n```",
     "created_at": "2009-02-05T18:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ archive/issue_comments_039416.json:
 ```
 
 Applied to 3.3.alpha2, I get the following errors:
-
 
 ```
 **********************************************************************
@@ -95,7 +94,6 @@ Got:
     [(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]
 **********************************************************************
 ```
-
 
 
 
@@ -162,7 +160,7 @@ Fyi those are harmless errors since choice of basis is not well defined; ie prob
 archive/issue_comments_039420.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Fyi those are harmless errors since choice of basis is not well defined; ie prob. A 64 vs 32 bit problem.  I will post update once i get computer access. Rlm, could you finish the review?\n\nDoes that mean that `E.0` etc. are not canonically defined? I didn't know that 32/64 bit made a difference there...\n\nOther than this failure, I give it a positive review.",
+    "body": "Replying to [comment:6 was]:\n> Fyi those are harmless errors since choice of basis is not well defined; ie prob. A 64 vs 32 bit problem.  I will post update once i get computer access. Rlm, could you finish the review?\n\n\nDoes that mean that `E.0` etc. are not canonically defined? I didn't know that 32/64 bit made a difference there...\n\nOther than this failure, I give it a positive review.",
     "created_at": "2009-02-07T23:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -173,6 +171,7 @@ archive/issue_comments_039420.json:
 
 Replying to [comment:6 was]:
 > Fyi those are harmless errors since choice of basis is not well defined; ie prob. A 64 vs 32 bit problem.  I will post update once i get computer access. Rlm, could you finish the review?
+
 
 Does that mean that `E.0` etc. are not canonically defined? I didn't know that 32/64 bit made a difference there...
 
@@ -185,7 +184,7 @@ Other than this failure, I give it a positive review.
 archive/issue_comments_039421.json:
 ```json
 {
-    "body": "> Does that mean that E.0 etc. are not canonically defined? \n\nYes. They depend on how the algorithm to compute them runs.  They're just some basis for some abstract-ish abelian group.  \n\n> I didn't know that 32/64 bit made a difference there... \n\nNot surprisingly, mwrank runs differently on 32 and 64-bit computers.",
+    "body": "> Does that mean that E.0 etc. are not canonically defined? \n\n\nYes. They depend on how the algorithm to compute them runs.  They're just some basis for some abstract-ish abelian group.  \n\n> I didn't know that 32/64 bit made a difference there... \n\n\nNot surprisingly, mwrank runs differently on 32 and 64-bit computers.",
     "created_at": "2009-02-09T15:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -196,9 +195,11 @@ archive/issue_comments_039421.json:
 
 > Does that mean that E.0 etc. are not canonically defined? 
 
+
 Yes. They depend on how the algorithm to compute them runs.  They're just some basis for some abstract-ish abelian group.  
 
 > I didn't know that 32/64 bit made a difference there... 
+
 
 Not surprisingly, mwrank runs differently on 32 and 64-bit computers.
 
@@ -231,7 +232,7 @@ Michael
 archive/issue_comments_039423.json:
 ```json
 {
-    "body": "The offending doctest is this one:\n\n\n```\nsage: F = E.quadratic_twist(-7)\nsage: K = QuadraticField(-7,'a')\nsage: G = E.change_ring(K) \nsage: phi = F.change_ring(K).isomorphism_to(G)\nsage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\n(-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            # 32-bit\n(-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)     # 64-bit\nsage: P.division_points(2)\n[(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   # 32-bit\n[(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]                                # 64-bit\n```\n\n\nOn both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are there any machines where the 32-bit answer occurs?",
+    "body": "The offending doctest is this one:\n\n```\nsage: F = E.quadratic_twist(-7)\nsage: K = QuadraticField(-7,'a')\nsage: G = E.change_ring(K) \nsage: phi = F.change_ring(K).isomorphism_to(G)\nsage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\n(-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            # 32-bit\n(-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)     # 64-bit\nsage: P.division_points(2)\n[(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   # 32-bit\n[(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]                                # 64-bit\n```\n\nOn both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are there any machines where the 32-bit answer occurs?",
     "created_at": "2009-02-10T20:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -241,7 +242,6 @@ archive/issue_comments_039423.json:
 ```
 
 The offending doctest is this one:
-
 
 ```
 sage: F = E.quadratic_twist(-7)
@@ -256,7 +256,6 @@ sage: P.division_points(2)
 [(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]                                # 64-bit
 ```
 
-
 On both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are there any machines where the 32-bit answer occurs?
 
 
@@ -266,7 +265,7 @@ On both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are
 archive/issue_comments_039424.json:
 ```json
 {
-    "body": "On my 32-bit machine I get the so-called 64-bit answer.\n\nI ought to be able to say what might cause mwrank to produce different gens, but I cannot.  As this curve is in the database, then IF you have the large database installed (with gens) it will use those gens and be deterministic, while ELSE it will compute them.\n\nFor this doctest I suggest killing the display of P and changing the last line into \n\n```\nsage: len(P.division_points(2))\n1\n```\n\n\nBy the way, I am worried that part of this patch will conflict with #4274 which affects the same file, parsing the mwrank output, which I reviewed and repatched earlier today, and which mabshoff has already merged.",
+    "body": "On my 32-bit machine I get the so-called 64-bit answer.\n\nI ought to be able to say what might cause mwrank to produce different gens, but I cannot.  As this curve is in the database, then IF you have the large database installed (with gens) it will use those gens and be deterministic, while ELSE it will compute them.\n\nFor this doctest I suggest killing the display of P and changing the last line into \n\n```\nsage: len(P.division_points(2))\n1\n```\n\nBy the way, I am worried that part of this patch will conflict with #4274 which affects the same file, parsing the mwrank output, which I reviewed and repatched earlier today, and which mabshoff has already merged.",
     "created_at": "2009-02-15T17:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -285,7 +284,6 @@ For this doctest I suggest killing the display of P and changing the last line i
 sage: len(P.division_points(2))
 1
 ```
-
 
 By the way, I am worried that part of this patch will conflict with #4274 which affects the same file, parsing the mwrank output, which I reviewed and repatched earlier today, and which mabshoff has already merged.
 
@@ -340,7 +338,7 @@ Michael
 archive/issue_comments_039427.json:
 ```json
 {
-    "body": "This patch needs to be rebased:\n\n```\nsage-3.4.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_5156.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 1350.\nHunk #2 succeeded at 4683 (offset 533 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch needs to be rebased:\n\n```\nsage-3.4.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_5156.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 1350.\nHunk #2 succeeded at 4683 (offset 533 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
@@ -358,7 +356,6 @@ Hunk #1 FAILED at 1350.
 Hunk #2 succeeded at 4683 (offset 533 lines).
 1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej
 ```
-
 
 Cheers,
 

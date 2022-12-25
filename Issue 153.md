@@ -3,7 +3,7 @@
 archive/issues_000153.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAdd the following:\n\n\n```\n  sage -i -t packagename.spkg\n```\n\n\nwill build and install the package and run whatever the standard tests are\nfor that package.  The tests will be run by running \n\n```\n  spkg-test\n```\n\nif that script is in the package.  Otherwise, it always reports failure.\nThen I go through and figure out what the test suite is for each package,\nand get it to work. \n\nHave a \"make safe\" which does build of all of SAGE but at each point\nrunning the tests.\n\nWilliam\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/153\n\n",
+    "body": "Assignee: @williamstein\n\nAdd the following:\n\n```\n  sage -i -t packagename.spkg\n```\n\nwill build and install the package and run whatever the standard tests are\nfor that package.  The tests will be run by running \n\n```\n  spkg-test\n```\nif that script is in the package.  Otherwise, it always reports failure.\nThen I go through and figure out what the test suite is for each package,\nand get it to work. \n\nHave a \"make safe\" which does build of all of SAGE but at each point\nrunning the tests.\n\nWilliam\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/153\n\n",
     "created_at": "2006-10-25T21:53:14Z",
     "labels": [
         "component: packages: standard"
@@ -18,11 +18,9 @@ Assignee: @williamstein
 
 Add the following:
 
-
 ```
   sage -i -t packagename.spkg
 ```
-
 
 will build and install the package and run whatever the standard tests are
 for that package.  The tests will be run by running 
@@ -30,7 +28,6 @@ for that package.  The tests will be run by running
 ```
   spkg-test
 ```
-
 if that script is in the package.  Otherwise, it always reports failure.
 Then I go through and figure out what the test suite is for each package,
 and get it to work. 

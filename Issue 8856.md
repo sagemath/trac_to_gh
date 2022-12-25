@@ -3,7 +3,7 @@
 archive/issues_008856.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: cached one_basis\n\nFrom `algebra_with_basis.py`:\n\n```\n#@cached_method   # todo: reinstate once #5843 is fixed\ndef one_from_one_basis(self):\n    \"\"\"\n    Returns the one of the algebra, as per\n            ``Monoids.ParentMethods.one``\n    [...]\n    \"\"\"\n    return self.monomial(self.one_basis()) #.\n```\n\nSo I'm removing the comment since #5843 is fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8856\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: cached one_basis\n\nFrom `algebra_with_basis.py`:\n\n```\n#@cached_method   # todo: reinstate once #5843 is fixed\ndef one_from_one_basis(self):\n    \"\"\"\n    Returns the one of the algebra, as per\n            ``Monoids.ParentMethods.one``\n    [...]\n    \"\"\"\n    return self.monomial(self.one_basis()) #.\n```\nSo I'm removing the comment since #5843 is fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8856\n\n",
     "created_at": "2010-05-03T14:39:53Z",
     "labels": [
         "component: categories"
@@ -33,7 +33,6 @@ def one_from_one_basis(self):
     """
     return self.monomial(self.one_basis()) #.
 ```
-
 So I'm removing the comment since #5843 is fixed.
 
 

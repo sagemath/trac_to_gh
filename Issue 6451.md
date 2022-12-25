@@ -3,7 +3,7 @@
 archive/issues_006451.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris GNUism\n\nI noticed a problem when building 'sage-4.1.alpha2.spkg'. It complains\n\n```\nld: fatal: library -lflint: not found\n```\n\n\nBut the flint package indicates it was installed. However, when I tried to build flint again, I see this error message:\n\n\n```\nDeleting old FLINT\nInstalling new library file\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n        cp [-f] [-i] [-p] [-@] f1 ... fn d1\n        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\n\nIt's clear flint is making use of some GNU-specific option to 'cp' The fact the copy fails means of course the library does not get installed.\n\nI'll post a fix later - it should be trivial \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6451\n\n",
+    "body": "Assignee: tbd\n\nKeywords: solaris GNUism\n\nI noticed a problem when building 'sage-4.1.alpha2.spkg'. It complains\n\n```\nld: fatal: library -lflint: not found\n```\n\nBut the flint package indicates it was installed. However, when I tried to build flint again, I see this error message:\n\n```\nDeleting old FLINT\nInstalling new library file\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n        cp [-f] [-i] [-p] [-@] f1 ... fn d1\n        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\nIt's clear flint is making use of some GNU-specific option to 'cp' The fact the copy fails means of course the library does not get installed.\n\nI'll post a fix later - it should be trivial \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6451\n\n",
     "created_at": "2009-06-30T16:16:14Z",
     "labels": [
         "component: porting: solaris",
@@ -26,9 +26,7 @@ I noticed a problem when building 'sage-4.1.alpha2.spkg'. It complains
 ld: fatal: library -lflint: not found
 ```
 
-
 But the flint package indicates it was installed. However, when I tried to build flint again, I see this error message:
-
 
 ```
 Deleting old FLINT
@@ -38,7 +36,6 @@ Usage: cp [-f] [-i] [-p] [-@] f1 f2
         cp [-f] [-i] [-p] [-@] f1 ... fn d1
         cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 ```
-
 
 It's clear flint is making use of some GNU-specific option to 'cp' The fact the copy fails means of course the library does not get installed.
 
@@ -56,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6451
 archive/issue_comments_051792.json:
 ```json
 {
-    "body": "One of the easier patches - it just needed one byte changed. In spkg-install:\n\n\n\n\n```\n  $CP -a libflint* \"$SAGE_LOCAL/lib/\"\n```\n\n\nwas changed to\n\n\n```\n  $CP -p libflint* \"$SAGE_LOCAL/lib/\"\n```\n\n\n\nSee http://sage.math.washington.edu/home/kirkby/Solaris-fixes/flint/",
+    "body": "One of the easier patches - it just needed one byte changed. In spkg-install:\n\n\n\n```\n  $CP -a libflint* \"$SAGE_LOCAL/lib/\"\n```\n\nwas changed to\n\n```\n  $CP -p libflint* \"$SAGE_LOCAL/lib/\"\n```\n\n\nSee http://sage.math.washington.edu/home/kirkby/Solaris-fixes/flint/",
     "created_at": "2009-06-30T17:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6451",
     "type": "issue_comment",
@@ -69,19 +66,15 @@ One of the easier patches - it just needed one byte changed. In spkg-install:
 
 
 
-
 ```
   $CP -a libflint* "$SAGE_LOCAL/lib/"
 ```
 
-
 was changed to
-
 
 ```
   $CP -p libflint* "$SAGE_LOCAL/lib/"
 ```
-
 
 
 See http://sage.math.washington.edu/home/kirkby/Solaris-fixes/flint/

@@ -89,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097038.json:
 ```json
 {
-    "body": "Huh, this was fixed at some point in the recent past.   At any rate, it is in the released 4.7.1.\n\n```\n  -maxima [...]       -- run Sage's Maxima with given arguments\n  -mwrank [...]       -- run Sage's mwrank with given arguments\n  -python [...]       -- run the Python interpreter\n  -R [...]            -- run Sage's R with given arguments\n  -scons [...]        -- run Sage's scons\n```\n\nIn fact, it even shows up in `./sage -help`.",
+    "body": "Huh, this was fixed at some point in the recent past.   At any rate, it is in the released 4.7.1.\n\n```\n  -maxima [...]       -- run Sage's Maxima with given arguments\n  -mwrank [...]       -- run Sage's mwrank with given arguments\n  -python [...]       -- run the Python interpreter\n  -R [...]            -- run Sage's R with given arguments\n  -scons [...]        -- run Sage's scons\n```\nIn fact, it even shows up in `./sage -help`.",
     "created_at": "2011-08-19T13:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
@@ -107,7 +107,6 @@ Huh, this was fixed at some point in the recent past.   At any rate, it is in th
   -R [...]            -- run Sage's R with given arguments
   -scons [...]        -- run Sage's scons
 ```
-
 In fact, it even shows up in `./sage -help`.
 
 

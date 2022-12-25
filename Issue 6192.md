@@ -3,7 +3,7 @@
 archive/issues_006192.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t  \"devel/sage/sage/calculus/calculus.py\"\n**********************************************************************\nFile \"/home/wstein/build-4.4.0/cicero/sage-4.0.1.alpha0/devel/sage/sage/calculus/calculus.py\", line 700:\n    sage: numerical_integral(f, 0, 1)\nExpected:\n    (0.52848223225314706, 6.8392846084921134e-07)\nGot:\n    (0.52848223225314706, 6.8392846078917534e-07)\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_2\n```\n\n\nNoise or a bug?\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n**********************************************************************\nFile \"/home/wstein/build-4.4.0/cicero/sage-4.0.1.alpha0/devel/sage/sage/rings/number_field/number_field_element.pyx\", line \n766:\n    sage: CDF(a)\nExpected:\n    1.0*I\nGot:\n    -2.88668828424e-18 - 1.0*I\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6192\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t  \"devel/sage/sage/calculus/calculus.py\"\n**********************************************************************\nFile \"/home/wstein/build-4.4.0/cicero/sage-4.0.1.alpha0/devel/sage/sage/calculus/calculus.py\", line 700:\n    sage: numerical_integral(f, 0, 1)\nExpected:\n    (0.52848223225314706, 6.8392846084921134e-07)\nGot:\n    (0.52848223225314706, 6.8392846078917534e-07)\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_2\n```\n\nNoise or a bug?\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n**********************************************************************\nFile \"/home/wstein/build-4.4.0/cicero/sage-4.0.1.alpha0/devel/sage/sage/rings/number_field/number_field_element.pyx\", line \n766:\n    sage: CDF(a)\nExpected:\n    1.0*I\nGot:\n    -2.88668828424e-18 - 1.0*I\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6192\n\n",
     "created_at": "2009-06-02T21:56:13Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_006192.json:
 ```
 Assignee: tbd
 
-
 ```
 sage -t  "devel/sage/sage/calculus/calculus.py"
 **********************************************************************
@@ -33,7 +32,6 @@ Got:
 1 items had failures:
    1 of  16 in __main__.example_2
 ```
-
 
 Noise or a bug?
 
@@ -52,7 +50,6 @@ Got:
    1 of   4 in __main__.example_21
 ***Test Failed*** 1 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6192
 

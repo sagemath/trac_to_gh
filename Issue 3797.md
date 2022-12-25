@@ -93,7 +93,7 @@ Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uui
 archive/issue_comments_026944.json:
 ```json
 {
-    "body": "From the submission:\n\n\n```\nThis patch:\n\n   1. Fixes a bug in sparse6 strings for n=0.\n```\n\n\nI think this bugfix looks good.\n\n\n```\n   2. Implements generation of graphs with loops.\n```\n\n\nThis looks good -- I can't guarantee that it works, but it looks fine.\n\n\n```\n   3. Implements generation of graphs with specified degree sequence.\n```\n\n\nIt's not clear what degree sequence means.  I can derive it from the code, but maybe change\n\n```\n \t241\t        deg_seq -- a sequence of degrees for the graph to have. If specified, \n \t242\t            augment, property and size are all ignored. \n```\n\nto something like\n\n```\n \t241\t        deg_seq -- a sequence of non-negative integers.  The degrees of the vertices of the generated graph will be the specified integers, in some order.  If specified, \n \t242\t            augment, property and size are all ignored. \n```\n\n\nIs that even clearer?",
+    "body": "From the submission:\n\n```\nThis patch:\n\n   1. Fixes a bug in sparse6 strings for n=0.\n```\n\nI think this bugfix looks good.\n\n```\n   2. Implements generation of graphs with loops.\n```\n\nThis looks good -- I can't guarantee that it works, but it looks fine.\n\n```\n   3. Implements generation of graphs with specified degree sequence.\n```\n\nIt's not clear what degree sequence means.  I can derive it from the code, but maybe change\n\n```\n \t241\t        deg_seq -- a sequence of degrees for the graph to have. If specified, \n \t242\t            augment, property and size are all ignored. \n```\nto something like\n\n```\n \t241\t        deg_seq -- a sequence of non-negative integers.  The degrees of the vertices of the generated graph will be the specified integers, in some order.  If specified, \n \t242\t            augment, property and size are all ignored. \n```\n\nIs that even clearer?",
     "created_at": "2008-08-10T06:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
@@ -104,29 +104,23 @@ archive/issue_comments_026944.json:
 
 From the submission:
 
-
 ```
 This patch:
 
    1. Fixes a bug in sparse6 strings for n=0.
 ```
 
-
 I think this bugfix looks good.
-
 
 ```
    2. Implements generation of graphs with loops.
 ```
 
-
 This looks good -- I can't guarantee that it works, but it looks fine.
-
 
 ```
    3. Implements generation of graphs with specified degree sequence.
 ```
-
 
 It's not clear what degree sequence means.  I can derive it from the code, but maybe change
 
@@ -134,14 +128,12 @@ It's not clear what degree sequence means.  I can derive it from the code, but m
  	241	        deg_seq -- a sequence of degrees for the graph to have. If specified, 
  	242	            augment, property and size are all ignored. 
 ```
-
 to something like
 
 ```
  	241	        deg_seq -- a sequence of non-negative integers.  The degrees of the vertices of the generated graph will be the specified integers, in some order.  If specified, 
  	242	            augment, property and size are all ignored. 
 ```
-
 
 Is that even clearer?
 

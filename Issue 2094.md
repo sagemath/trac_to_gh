@@ -177,7 +177,7 @@ Changing keywords from "" to "editor_craigcitro".
 archive/issue_comments_013509.json:
 ```json
 {
-    "body": "use the following to test:\n\n\n```\nimport gd, os, cStringIO, urllib2\n\n\ndef simple():\n    im = gd.image((200, 200))\n\n    white = im.colorAllocate((255, 255, 255))\n    black = im.colorAllocate((0, 0, 0))\n    red = im.colorAllocate((255, 0, 0))\n    blue = im.colorAllocate((0, 0, 255))\n\n    im.colorTransparent(white)\n    im.interlace(1)\n\n    im.rectangle((0,0),(199,199),black)\n    im.arc((100,100),(195,175),0,360,blue)\n    im.fill((100,100),red)\n\n    f=open(\"xx.png\",\"w\")\n    im.writePng(f)\n    f.close()\n\n    f=open(\"xx.jpg\", \"w\")\n    im.writeJpeg(f,100)\n    f.close()\n\n    f=cStringIO.StringIO()\n    im.writePng(f)\n    print \"PNG size:\", len(f.getvalue())\n    f.close()\n    \n    f = urllib2.urlopen(\"http://www.gnu.org/graphics/gnu-head-sm.jpg\")\n    im = gd.image(f, \"jpg\")\n    f.close()\n    im.writePng(\"xy.png\")\n    print \"GNU Image Size:\", im.size()\n\nsimple()\n```\n",
+    "body": "use the following to test:\n\n```\nimport gd, os, cStringIO, urllib2\n\n\ndef simple():\n    im = gd.image((200, 200))\n\n    white = im.colorAllocate((255, 255, 255))\n    black = im.colorAllocate((0, 0, 0))\n    red = im.colorAllocate((255, 0, 0))\n    blue = im.colorAllocate((0, 0, 255))\n\n    im.colorTransparent(white)\n    im.interlace(1)\n\n    im.rectangle((0,0),(199,199),black)\n    im.arc((100,100),(195,175),0,360,blue)\n    im.fill((100,100),red)\n\n    f=open(\"xx.png\",\"w\")\n    im.writePng(f)\n    f.close()\n\n    f=open(\"xx.jpg\", \"w\")\n    im.writeJpeg(f,100)\n    f.close()\n\n    f=cStringIO.StringIO()\n    im.writePng(f)\n    print \"PNG size:\", len(f.getvalue())\n    f.close()\n    \n    f = urllib2.urlopen(\"http://www.gnu.org/graphics/gnu-head-sm.jpg\")\n    im = gd.image(f, \"jpg\")\n    f.close()\n    im.writePng(\"xy.png\")\n    print \"GNU Image Size:\", im.size()\n\nsimple()\n```",
     "created_at": "2008-06-16T20:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
@@ -187,7 +187,6 @@ archive/issue_comments_013509.json:
 ```
 
 use the following to test:
-
 
 ```
 import gd, os, cStringIO, urllib2
@@ -229,7 +228,6 @@ def simple():
 
 simple()
 ```
-
 
 
 
@@ -383,7 +381,7 @@ Michael
 archive/issue_comments_013517.json:
 ```json
 {
-    "body": "I am now having problems different from before.  The jpeg spkg seems to install OK, and when installing the gd spkg I get the following encouraging message from the configuring:\n\n```\n** Configuration summary for gd 2.0.33:\n\n   Support for PNG library:          yes\n   Support for JPEG library:         yes\n   Support for Freetype 2.x library: yes\n   Support for Fontconfig library:   no\n   Support for Xpm library:          no\n   Support for pthreads:             yes\n```\n\n...but then the build fails, and there is a message:\n\n\n```\n*** Warning: linker path does not have real file for library -ljpeg.\n*** I have the capability to make that library automatically link in when\n*** you link to this library.  But I can only do this if you have a\n*** shared version of the library, which you do not appear to have\n*** because I did check the linker path looking for a file starting\n*** with libjpeg and none of the candidates passed a file format test\n*** using a file magic. Last file checked: /Volumes/D/sage-3.1.2/local/lib//libjpeg.a\n*** The inter-library dependencies that have been dropped here will be\n*** automatically added whenever a program is linked with this library\n*** or is declared to -dlopen it.\n```\n\n\n...which occurs before the actual error:\n\n```\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: Undefined symbols:\n_gdImageCreateFromJpeg\n_gdImageJpeg\ncollect2: ld returned 1 exit status\nmake[2]: *** [annotate] Error 1\nmake[2]: Leaving directory `/Volumes/D/sage-3.1.2/spkg/build/gd-2.0.33.p7/src'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/Volumes/D/sage-3.1.2/spkg/build/gd-2.0.33.p7/src'\nmake: *** [all] Error 2\nError building gd.\n```\n\n\nIt would be very nice to have this stuff working; being able to quickly import images as matrices is something matlab and mathematica users take for granted.  Unfortunately I don't think I have the skills needed to fix this.",
+    "body": "I am now having problems different from before.  The jpeg spkg seems to install OK, and when installing the gd spkg I get the following encouraging message from the configuring:\n\n```\n** Configuration summary for gd 2.0.33:\n\n   Support for PNG library:          yes\n   Support for JPEG library:         yes\n   Support for Freetype 2.x library: yes\n   Support for Fontconfig library:   no\n   Support for Xpm library:          no\n   Support for pthreads:             yes\n```\n...but then the build fails, and there is a message:\n\n```\n*** Warning: linker path does not have real file for library -ljpeg.\n*** I have the capability to make that library automatically link in when\n*** you link to this library.  But I can only do this if you have a\n*** shared version of the library, which you do not appear to have\n*** because I did check the linker path looking for a file starting\n*** with libjpeg and none of the candidates passed a file format test\n*** using a file magic. Last file checked: /Volumes/D/sage-3.1.2/local/lib//libjpeg.a\n*** The inter-library dependencies that have been dropped here will be\n*** automatically added whenever a program is linked with this library\n*** or is declared to -dlopen it.\n```\n\n...which occurs before the actual error:\n\n```\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: Undefined symbols:\n_gdImageCreateFromJpeg\n_gdImageJpeg\ncollect2: ld returned 1 exit status\nmake[2]: *** [annotate] Error 1\nmake[2]: Leaving directory `/Volumes/D/sage-3.1.2/spkg/build/gd-2.0.33.p7/src'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/Volumes/D/sage-3.1.2/spkg/build/gd-2.0.33.p7/src'\nmake: *** [all] Error 2\nError building gd.\n```\n\nIt would be very nice to have this stuff working; being able to quickly import images as matrices is something matlab and mathematica users take for granted.  Unfortunately I don't think I have the skills needed to fix this.",
     "created_at": "2008-09-21T02:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
@@ -404,9 +402,7 @@ I am now having problems different from before.  The jpeg spkg seems to install 
    Support for Xpm library:          no
    Support for pthreads:             yes
 ```
-
 ...but then the build fails, and there is a message:
-
 
 ```
 *** Warning: linker path does not have real file for library -ljpeg.
@@ -420,7 +416,6 @@ I am now having problems different from before.  The jpeg spkg seems to install 
 *** automatically added whenever a program is linked with this library
 *** or is declared to -dlopen it.
 ```
-
 
 ...which occurs before the actual error:
 
@@ -437,7 +432,6 @@ make: *** [all] Error 2
 Error building gd.
 ```
 
-
 It would be very nice to have this stuff working; being able to quickly import images as matrices is something matlab and mathematica users take for granted.  Unfortunately I don't think I have the skills needed to fix this.
 
 
@@ -447,7 +441,7 @@ It would be very nice to have this stuff working; being able to quickly import i
 archive/issue_comments_013518.json:
 ```json
 {
-    "body": "One more note: since gd has evolved to 2.0.35, I tried installing that and it seemed to work but the suggested test still crashed with \n\n```\nsage: import gd, os, cStringIO, urllib2\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Volumes/D/sage-3.1.2/<ipython console> in <module>()\n\n/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/gd.py in <module>()\n      8 library.\"\"\"\n      9 \n---> 10 import _gd\n     11 from _gd import *\n     12 del image\n\nImportError: dlopen(/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _gdImageCreateFromJpeg\n  Referenced from: /Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.so\n  Expected in: dynamic lookup\n```\n\n\nalthough I might have messed up in manually installing gd-2.0.35.",
+    "body": "One more note: since gd has evolved to 2.0.35, I tried installing that and it seemed to work but the suggested test still crashed with \n\n```\nsage: import gd, os, cStringIO, urllib2\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Volumes/D/sage-3.1.2/<ipython console> in <module>()\n\n/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/gd.py in <module>()\n      8 library.\"\"\"\n      9 \n---> 10 import _gd\n     11 from _gd import *\n     12 del image\n\nImportError: dlopen(/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _gdImageCreateFromJpeg\n  Referenced from: /Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.so\n  Expected in: dynamic lookup\n```\n\nalthough I might have messed up in manually installing gd-2.0.35.",
     "created_at": "2008-09-21T03:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
@@ -476,7 +470,6 @@ ImportError: dlopen(/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.
   Referenced from: /Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/_gd.so
   Expected in: dynamic lookup
 ```
-
 
 although I might have messed up in manually installing gd-2.0.35.
 
@@ -529,7 +522,7 @@ OK, I have gotten this working as well, using gd-2.0.35.  I messed up previously
 archive/issue_comments_013521.json:
 ```json
 {
-    "body": "Replying to [comment:19 mhampton]:\n> OK, I have gotten this working as well, using gd-2.0.35.  I messed up previously when trying to install it.  I can make a spkg if you want, but you'd probably have to edit my attempts anyway.\n> \n> -M.Hampton\n\nWe are already using gd-2.0.35, so what changes do you propose to make? Either way, an jpeg.spkg would have to be voted in anyway.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:19 mhampton]:\n> OK, I have gotten this working as well, using gd-2.0.35.  I messed up previously when trying to install it.  I can make a spkg if you want, but you'd probably have to edit my attempts anyway.\n> \n> -M.Hampton\n\n\nWe are already using gd-2.0.35, so what changes do you propose to make? Either way, an jpeg.spkg would have to be voted in anyway.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-22T18:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
@@ -542,6 +535,7 @@ Replying to [comment:19 mhampton]:
 > OK, I have gotten this working as well, using gd-2.0.35.  I messed up previously when trying to install it.  I can make a spkg if you want, but you'd probably have to edit my attempts anyway.
 > 
 > -M.Hampton
+
 
 We are already using gd-2.0.35, so what changes do you propose to make? Either way, an jpeg.spkg would have to be voted in anyway.
 

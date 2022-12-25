@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6447
 archive/issue_comments_051703.json:
 ```json
 {
-    "body": "The attached patch implements the feature as described, although it currently only renders in wireframe.\n\nTry it out for yourself:\n\n```\nx, y = var('x y')\nplot3d(sin(pi*(x^2+y^2))/2,(x,-1,1),(y,-1,1), viewer='canvas3d', plot_points=(20, 20))\n```\n\n\nA couple of issues need to be addressed:\n\n* Doctests. As well as documentation to make this feature visible to an end-user.\n* Solid polygons. Here we run into problems like depth-testing and shading. I'm sure there are JavaScript libraries available for 3D rendering using canvas. Could we plug one of these in?\n* I am somewhat unsatisfied with the mechanism for rotating the model. Currently, the X and Y position of the mouse are used to rotate the model about the Y and X axes. But this can result in unexpected rotations, due to the inadequacy of Euler angles (wherein one rotation configuration can be represented in multiple ways). I'm aware of a better method for user interaction with a 3D viewer called [Arcball](http://rainwarrior.thenoos.net/dragon/arcball.html), but that looks too complicated to do in JavaScript.",
+    "body": "The attached patch implements the feature as described, although it currently only renders in wireframe.\n\nTry it out for yourself:\n\n```\nx, y = var('x y')\nplot3d(sin(pi*(x^2+y^2))/2,(x,-1,1),(y,-1,1), viewer='canvas3d', plot_points=(20, 20))\n```\n\nA couple of issues need to be addressed:\n\n* Doctests. As well as documentation to make this feature visible to an end-user.\n* Solid polygons. Here we run into problems like depth-testing and shading. I'm sure there are JavaScript libraries available for 3D rendering using canvas. Could we plug one of these in?\n* I am somewhat unsatisfied with the mechanism for rotating the model. Currently, the X and Y position of the mouse are used to rotate the model about the Y and X axes. But this can result in unexpected rotations, due to the inadequacy of Euler angles (wherein one rotation configuration can be represented in multiple ways). I'm aware of a better method for user interaction with a 3D viewer called [Arcball](http://rainwarrior.thenoos.net/dragon/arcball.html), but that looks too complicated to do in JavaScript.",
     "created_at": "2009-06-29T18:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -54,7 +54,6 @@ Try it out for yourself:
 x, y = var('x y')
 plot3d(sin(pi*(x^2+y^2))/2,(x,-1,1),(y,-1,1), viewer='canvas3d', plot_points=(20, 20))
 ```
-
 
 A couple of issues need to be addressed:
 
@@ -147,7 +146,7 @@ Very nice!  Worked very smoothly for me.
 archive/issue_comments_051708.json:
 ```json
 {
-    "body": "Comments:\n\n(1) I don't think you should worry too much about wireframe versus solid polygons yet.   This is javascript/canvas, after all.  I think it would be much better to focus on rendering a wider range of objects, e.g., make it so \n\n```\nicosahedron(color='red', viewer='canvas3d') + sphere(viewer='canvas3d')\n```\n\nworks. \n\n(2) I notice that you're \"I'm sure there are JavaScript? libraries available for 3D rendering using canvas. Could we plug one of these in?\"  I tried googling for some of those words, and the first thing that pops up is:\n   http://www.nihilogic.dk/labs/canvas3dtexture_0.2/\nIf you turn off the texture in that link and render some of the models (select from the list on the right), you'll see that indeed you are right, there are now 3d canvas javascript libraries. \n\nWilliam",
+    "body": "Comments:\n\n(1) I don't think you should worry too much about wireframe versus solid polygons yet.   This is javascript/canvas, after all.  I think it would be much better to focus on rendering a wider range of objects, e.g., make it so \n\n```\nicosahedron(color='red', viewer='canvas3d') + sphere(viewer='canvas3d')\n```\nworks. \n\n(2) I notice that you're \"I'm sure there are JavaScript? libraries available for 3D rendering using canvas. Could we plug one of these in?\"  I tried googling for some of those words, and the first thing that pops up is:\n   http://www.nihilogic.dk/labs/canvas3dtexture_0.2/\nIf you turn off the texture in that link and render some of the models (select from the list on the right), you'll see that indeed you are right, there are now 3d canvas javascript libraries. \n\nWilliam",
     "created_at": "2009-06-30T13:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -163,7 +162,6 @@ Comments:
 ```
 icosahedron(color='red', viewer='canvas3d') + sphere(viewer='canvas3d')
 ```
-
 works. 
 
 (2) I notice that you're "I'm sure there are JavaScript? libraries available for 3D rendering using canvas. Could we plug one of these in?"  I tried googling for some of those words, and the first thing that pops up is:
@@ -217,7 +215,7 @@ Can people with different systems/browsers give this a try?
 archive/issue_comments_051711.json:
 ```json
 {
-    "body": "Yes, the patch applied fine but then I got this (amd64, ubuntu 9.04):\n\n\n```\nwdj@hera:~/sagefiles/sage-4.1.rc0$ ./sage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\nsage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.1 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\n```\n\nIt seems related but I'm not sure.",
+    "body": "Yes, the patch applied fine but then I got this (amd64, ubuntu 9.04):\n\n```\nwdj@hera:~/sagefiles/sage-4.1.rc0$ ./sage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\nsage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.1 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/plot/plot3d/implicit_plot3d.py\"\n```\nIt seems related but I'm not sure.",
     "created_at": "2009-07-15T19:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -227,7 +225,6 @@ archive/issue_comments_051711.json:
 ```
 
 Yes, the patch applied fine but then I got this (amd64, ubuntu 9.04):
-
 
 ```
 wdj@hera:~/sagefiles/sage-4.1.rc0$ ./sage -t  "devel/sage/sage/plot/plot3d/implicit_plot3d.py"
@@ -244,7 +241,6 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/plot/plot3d/implicit_plot3d.py"
 ```
-
 It seems related but I'm not sure.
 
 
@@ -366,7 +362,7 @@ I would give this a positive review but I am unsure of the requirements for exam
 archive/issue_comments_051718.json:
 ```json
 {
-    "body": "Replying to [comment:15 wdj]:\n> Same here, on an amd64 ubuntu 9.04 machine. Applies fine and passes sage -testall.\n> \n> I would give this a positive review but I am unsure of the requirements for examples in the docstrings for plotting functions. If this did not return a plot but a number (say) then it would be necessary to have an example illustrating the new method. (There are example docstrings but none that return a plot.) Does anyone know what the standard is here?\n\nI can add an example to the documentation for show(), but other than that I can't think of any place where more documentation would be appropriate.",
+    "body": "Replying to [comment:15 wdj]:\n> Same here, on an amd64 ubuntu 9.04 machine. Applies fine and passes sage -testall.\n> \n> I would give this a positive review but I am unsure of the requirements for examples in the docstrings for plotting functions. If this did not return a plot but a number (say) then it would be necessary to have an example illustrating the new method. (There are example docstrings but none that return a plot.) Does anyone know what the standard is here?\n\n\nI can add an example to the documentation for show(), but other than that I can't think of any place where more documentation would be appropriate.",
     "created_at": "2009-07-16T17:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -379,6 +375,7 @@ Replying to [comment:15 wdj]:
 > Same here, on an amd64 ubuntu 9.04 machine. Applies fine and passes sage -testall.
 > 
 > I would give this a positive review but I am unsure of the requirements for examples in the docstrings for plotting functions. If this did not return a plot but a number (say) then it would be necessary to have an example illustrating the new method. (There are example docstrings but none that return a plot.) Does anyone know what the standard is here?
+
 
 I can add an example to the documentation for show(), but other than that I can't think of any place where more documentation would be appropriate.
 
@@ -522,7 +519,7 @@ I attached a self-contained patch where I've moved the JavaScript code into a se
 archive/issue_comments_051726.json:
 ```json
 {
-    "body": "This applies fine to 4.1.1.a1 and pases sage -testall (amd64, ubuntu 9.04) except for the already reported failures at \n\n\n```\n\n        sage -t  \"devel/sage/sage/misc/abstract_method.py\"\n        sage -t  \"devel/sage/sage/misc/lazy_attribute.py\"\n```\n\n\nAgain, a positive test from me.",
+    "body": "This applies fine to 4.1.1.a1 and pases sage -testall (amd64, ubuntu 9.04) except for the already reported failures at \n\n```\n\n        sage -t  \"devel/sage/sage/misc/abstract_method.py\"\n        sage -t  \"devel/sage/sage/misc/lazy_attribute.py\"\n```\n\nAgain, a positive test from me.",
     "created_at": "2009-07-28T22:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -533,13 +530,11 @@ archive/issue_comments_051726.json:
 
 This applies fine to 4.1.1.a1 and pases sage -testall (amd64, ubuntu 9.04) except for the already reported failures at 
 
-
 ```
 
         sage -t  "devel/sage/sage/misc/abstract_method.py"
         sage -t  "devel/sage/sage/misc/lazy_attribute.py"
 ```
-
 
 Again, a positive test from me.
 
@@ -570,7 +565,7 @@ Quick questions:
 archive/issue_comments_051728.json:
 ```json
 {
-    "body": "Replying to [comment:23 mpatel]:\n> Quick questions:\n>  * Should the default view angle for the new viewer match that for tachyon and jmol?\n\nThat's a good idea. I found a tuple called \"orientation\" in Graphics3d.export_jmol, so I think I can copy the values from that.\n\n>  * Is it possible to enable axes?\n\nAxes are not currently implemented, although they can be. I think all that's necessary is to add support for arrow3d.",
+    "body": "Replying to [comment:23 mpatel]:\n> Quick questions:\n> * Should the default view angle for the new viewer match that for tachyon and jmol?\n\n\nThat's a good idea. I found a tuple called \"orientation\" in Graphics3d.export_jmol, so I think I can copy the values from that.\n\n>  * Is it possible to enable axes?\n\n\nAxes are not currently implemented, although they can be. I think all that's necessary is to add support for arrow3d.",
     "created_at": "2009-08-12T00:10:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -581,11 +576,13 @@ archive/issue_comments_051728.json:
 
 Replying to [comment:23 mpatel]:
 > Quick questions:
->  * Should the default view angle for the new viewer match that for tachyon and jmol?
+> * Should the default view angle for the new viewer match that for tachyon and jmol?
+
 
 That's a good idea. I found a tuple called "orientation" in Graphics3d.export_jmol, so I think I can copy the values from that.
 
 >  * Is it possible to enable axes?
+
 
 Axes are not currently implemented, although they can be. I think all that's necessary is to add support for arrow3d.
 
@@ -618,7 +615,7 @@ Another question, possibly very naive:  Would it be less taxing on the browser t
 archive/issue_comments_051730.json:
 ```json
 {
-    "body": "Replying to [comment:25 mpatel]:\n> I think that axes are, perhaps, more important, since they give a sense of scale of a plot's \"landscape.\"\n> \n> But I'm happy to defer to D. Joyner on reviewing this ticket. \n> \n> Another question, possibly very naive:  Would it be less taxing on the browser to use \"quads\" instead of triangles as mesh elements, at least in some circumstances?  \n\n\nWhen I gave this my positive review, I'm not saying that this patch is in it's final form. I'm sure that there are lots of improvements possible. But as a patch implementing an important new idea, it is excellent I think. The problem with me changing \"neds\" to \"positive\" is that I do not know javascript. William Stein said he would look this code over. But if someone else wants to (eg, mpatel) then I'm sure William won't mind:-)",
+    "body": "Replying to [comment:25 mpatel]:\n> I think that axes are, perhaps, more important, since they give a sense of scale of a plot's \"landscape.\"\n> \n> But I'm happy to defer to D. Joyner on reviewing this ticket. \n> \n> Another question, possibly very naive:  Would it be less taxing on the browser to use \"quads\" instead of triangles as mesh elements, at least in some circumstances?  \n\n\n\nWhen I gave this my positive review, I'm not saying that this patch is in it's final form. I'm sure that there are lots of improvements possible. But as a patch implementing an important new idea, it is excellent I think. The problem with me changing \"neds\" to \"positive\" is that I do not know javascript. William Stein said he would look this code over. But if someone else wants to (eg, mpatel) then I'm sure William won't mind:-)",
     "created_at": "2009-08-17T10:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
@@ -633,6 +630,7 @@ Replying to [comment:25 mpatel]:
 > But I'm happy to defer to D. Joyner on reviewing this ticket. 
 > 
 > Another question, possibly very naive:  Would it be less taxing on the browser to use "quads" instead of triangles as mesh elements, at least in some circumstances?  
+
 
 
 When I gave this my positive review, I'm not saying that this patch is in it's final form. I'm sure that there are lots of improvements possible. But as a patch implementing an important new idea, it is excellent I think. The problem with me changing "neds" to "positive" is that I do not know javascript. William Stein said he would look this code over. But if someone else wants to (eg, mpatel) then I'm sure William won't mind:-)

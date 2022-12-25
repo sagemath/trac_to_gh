@@ -295,7 +295,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_056701.json:
 ```json
 {
-    "body": "Replying to [comment:16 mstreng]:\n> Not 100% doctest coverage, and there is a doctest that fails.\nShould be okay now.",
+    "body": "Replying to [comment:16 mstreng]:\n> Not 100% doctest coverage, and there is a doctest that fails.\n\nShould be okay now.",
     "created_at": "2015-12-16T23:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -306,6 +306,7 @@ archive/issue_comments_056701.json:
 
 Replying to [comment:16 mstreng]:
 > Not 100% doctest coverage, and there is a doctest that fails.
+
 Should be okay now.
 
 
@@ -441,7 +442,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_056709.json:
 ```json
 {
-    "body": "All tests pass. Documentation looks good.\n\nThe functions do not work perfectly in all cases due to #20003, but after bypassing `squarefree_decomposition`, I get:\n\n\n\n\n```\nsage: K.<t> = PolynomialRing(GF(7))\nsage: C = Conic([5*t^2+4, t^2+3*t+3, 6*t^2+3*t+2, 5*t^2+5, 4*t+3, 4*t^2+t+5])\nsage: C.has_rational_point()\nTrue\n```\n\n\nand\n\n\n```\nsage: F = FiniteField(7)\nsage: P.<t> = F[]                                                               \nsage: K = P.fraction_field()\nsage: for i in range(50):                                                       \n    c = [K.random_element() for j in range(6)]\n    C = Conic(c)\n    C.has_rational_point(point=True)\n....:     \n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^8 + 5*t^7 + 6*t^6 + 5*t^5 + 4*t^4 + 5*t^2 + 3*t + 2)/(t^8 + 5*t^7 + 5*t^6\n + 4*t^5 + 3*t^4 + 2*t^3 + t^2 + 5*t + 6) : (t^8 + 2*t^7 + t^5 + t^4 + 2*t^3 + 2\n*t^2 + 4*t + 4)/(t^8 + 6*t^7 + t^6 + 4*t^5 + t^4 + 2*t^2 + 5*t + 3) : 1))\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^8 + t^7 + 6*t^6 + 4*t^5 + 6*t^4 + 5*t^2 + 1)/(t^8 + 2*t^7 + 6*t^6 + 3*t^5\n + 3*t^4 + 6*t^3 + 6*t^2 + 6*t) : (2*t^8 + 4*t^7 + 5*t^6 + 3*t^5 + t^4 + 5*t + 1\n)/(t^8 + 2*t^7 + 6*t^6 + 3*t^5 + 3*t^4 + 6*t^3 + 6*t^2 + 6*t) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^4 + 2*t^3 + 3*t^2)/(t^7 + t^6 + 5*t^4 + t^2 + t + 4) : (5*t^7 + 3*t^6 + t\n^5 + 5*t^4 + 6*t^3 + 2*t^2 + 4*t)/(t^7 + t^6 + 5*t^4 + t^2 + t + 4) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((t^8 + 5*t^7 + 2*t^6 + 2*t^5 + 3*t^3 + t^2 + 3)/(t^7 + t^6 + 6*t^4 + 5*t^3 + 6\n*t^2 + 2*t + 2) : (4*t^5 + 2*t^4 + 5*t^3 + 4*t^2 + 5*t + 2)/(t^4 + 2*t^3 + 5*t^2\n + 4*t + 5) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^11 + 3*t^10 + 6*t^9 + t^8 + 6*t^7 + 4*t^6 + t^5 + 4*t^4 + 2*t^3 + 3*t + 5\n)/(t^11 + 5*t^10 + 5*t^9 + t^8 + t^7 + 6*t^6 + 6*t^5 + 4*t^4 + 6*t^3 + 4*t) : (2\n*t^9 + 4*t^8 + 4*t^7 + 6*t^6 + 5*t^5 + 5*t^4 + 4*t^3 + t^2 + 6*t + 1)/(t^10 + 5*\nt^8 + 4*t^7 + 2*t^6 + 3*t^5 + 5*t^4 + 6*t^2 + 5*t) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n```\n",
+    "body": "All tests pass. Documentation looks good.\n\nThe functions do not work perfectly in all cases due to #20003, but after bypassing `squarefree_decomposition`, I get:\n\n\n\n```\nsage: K.<t> = PolynomialRing(GF(7))\nsage: C = Conic([5*t^2+4, t^2+3*t+3, 6*t^2+3*t+2, 5*t^2+5, 4*t+3, 4*t^2+t+5])\nsage: C.has_rational_point()\nTrue\n```\n\nand\n\n```\nsage: F = FiniteField(7)\nsage: P.<t> = F[]                                                               \nsage: K = P.fraction_field()\nsage: for i in range(50):                                                       \n    c = [K.random_element() for j in range(6)]\n    C = Conic(c)\n    C.has_rational_point(point=True)\n....:     \n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^8 + 5*t^7 + 6*t^6 + 5*t^5 + 4*t^4 + 5*t^2 + 3*t + 2)/(t^8 + 5*t^7 + 5*t^6\n + 4*t^5 + 3*t^4 + 2*t^3 + t^2 + 5*t + 6) : (t^8 + 2*t^7 + t^5 + t^4 + 2*t^3 + 2\n*t^2 + 4*t + 4)/(t^8 + 6*t^7 + t^6 + 4*t^5 + t^4 + 2*t^2 + 5*t + 3) : 1))\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^8 + t^7 + 6*t^6 + 4*t^5 + 6*t^4 + 5*t^2 + 1)/(t^8 + 2*t^7 + 6*t^6 + 3*t^5\n + 3*t^4 + 6*t^3 + 6*t^2 + 6*t) : (2*t^8 + 4*t^7 + 5*t^6 + 3*t^5 + t^4 + 5*t + 1\n)/(t^8 + 2*t^7 + 6*t^6 + 3*t^5 + 3*t^4 + 6*t^3 + 6*t^2 + 6*t) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^4 + 2*t^3 + 3*t^2)/(t^7 + t^6 + 5*t^4 + t^2 + t + 4) : (5*t^7 + 3*t^6 + t\n^5 + 5*t^4 + 6*t^3 + 2*t^2 + 4*t)/(t^7 + t^6 + 5*t^4 + t^2 + t + 4) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((t^8 + 5*t^7 + 2*t^6 + 2*t^5 + 3*t^3 + t^2 + 3)/(t^7 + t^6 + 6*t^4 + 5*t^3 + 6\n*t^2 + 2*t + 2) : (4*t^5 + 2*t^4 + 5*t^3 + 4*t^2 + 5*t + 2)/(t^4 + 2*t^3 + 5*t^2\n + 4*t + 5) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n(True,\n ((2*t^11 + 3*t^10 + 6*t^9 + t^8 + 6*t^7 + 4*t^6 + t^5 + 4*t^4 + 2*t^3 + 3*t + 5\n)/(t^11 + 5*t^10 + 5*t^9 + t^8 + t^7 + 6*t^6 + 6*t^5 + 4*t^4 + 6*t^3 + 4*t) : (2\n*t^9 + 4*t^8 + 4*t^7 + 6*t^6 + 5*t^5 + 5*t^4 + 4*t^3 + t^2 + 6*t + 1)/(t^10 + 5*\nt^8 + 4*t^7 + 2*t^6 + 3*t^5 + 5*t^4 + 6*t^2 + 5*t) : 1))\n(False, None)\n(False, None)\n(False, None)\n(False, None)\n```",
     "created_at": "2016-02-05T12:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -456,7 +457,6 @@ The functions do not work perfectly in all cases due to #20003, but after bypass
 
 
 
-
 ```
 sage: K.<t> = PolynomialRing(GF(7))
 sage: C = Conic([5*t^2+4, t^2+3*t+3, 6*t^2+3*t+2, 5*t^2+5, 4*t+3, 4*t^2+t+5])
@@ -464,9 +464,7 @@ sage: C.has_rational_point()
 True
 ```
 
-
 and
-
 
 ```
 sage: F = FiniteField(7)
@@ -546,7 +544,6 @@ t^8 + 4*t^7 + 2*t^6 + 3*t^5 + 5*t^4 + 6*t^2 + 5*t) : 1))
 
 
 
-
 ---
 
 archive/issue_comments_056710.json:
@@ -590,7 +587,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_056712.json:
 ```json
 {
-    "body": "You might also want to fix these `pyflakes` warnings:\n\n```\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:25: 'NumberField' imported but unused\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:26: 'identity_matrix' imported but unused\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:32: redefinition of unused 'vector' from line 30\n```\n",
+    "body": "You might also want to fix these `pyflakes` warnings:\n\n```\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:25: 'NumberField' imported but unused\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:26: 'identity_matrix' imported but unused\nsrc/sage/schemes/plane_conics/con_rational_function_field.py:32: redefinition of unused 'vector' from line 30\n```",
     "created_at": "2016-02-05T13:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -606,7 +603,6 @@ src/sage/schemes/plane_conics/con_rational_function_field.py:25: 'NumberField' i
 src/sage/schemes/plane_conics/con_rational_function_field.py:26: 'identity_matrix' imported but unused
 src/sage/schemes/plane_conics/con_rational_function_field.py:32: redefinition of unused 'vector' from line 30
 ```
-
 
 
 
@@ -687,7 +683,7 @@ archive/issue_comments_056716.json:
 archive/issue_comments_056717.json:
 ```json
 {
-    "body": "This is malformatted:\n\n```\nEXAMPLES:\n    \n    Create a conic::\n\n        sage: K = FractionField(PolynomialRing(QQ, 't'))\n```\n\nIt should be\n\n```\nEXAMPLES:\n    \nCreate a conic::\n\n    sage: K = FractionField(PolynomialRing(QQ, 't'))\n```\n",
+    "body": "This is malformatted:\n\n```\nEXAMPLES:\n    \n    Create a conic::\n\n        sage: K = FractionField(PolynomialRing(QQ, 't'))\n```\nIt should be\n\n```\nEXAMPLES:\n    \nCreate a conic::\n\n    sage: K = FractionField(PolynomialRing(QQ, 't'))\n```",
     "created_at": "2016-02-08T07:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -705,7 +701,6 @@ EXAMPLES:
 
         sage: K = FractionField(PolynomialRing(QQ, 't'))
 ```
-
 It should be
 
 ```
@@ -715,7 +710,6 @@ Create a conic::
 
     sage: K = FractionField(PolynomialRing(QQ, 't'))
 ```
-
 
 
 
@@ -763,7 +757,7 @@ Replying to [comment:25 jdemeyer]:
 archive/issue_comments_056720.json:
 ```json
 {
-    "body": "Replying to [comment:29 jdemeyer]:\n> 10 new commits? Sorry, but this needs to be reviewed (not by me).\nOnly the last 3 are new",
+    "body": "Replying to [comment:29 jdemeyer]:\n> 10 new commits? Sorry, but this needs to be reviewed (not by me).\n\nOnly the last 3 are new",
     "created_at": "2016-02-08T11:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -774,6 +768,7 @@ archive/issue_comments_056720.json:
 
 Replying to [comment:29 jdemeyer]:
 > 10 new commits? Sorry, but this needs to be reviewed (not by me).
+
 Only the last 3 are new
 
 
@@ -819,7 +814,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056723.json:
 ```json
 {
-    "body": "Replying to [comment:31 jdemeyer]:\n> Please do this:\n> \n> Replying to [comment:25 jdemeyer]:\n> > use the [standard copyright template](http://doc.sagemath.org/html/en/developer/coding_basics.html#headings-of-sage-library-code-files) for the newly added file.\n\nSorry, I misunderstood your last comment. All should be okay now.",
+    "body": "Replying to [comment:31 jdemeyer]:\n> Please do this:\n> \n> Replying to [comment:25 jdemeyer]:\n> > use the [standard copyright template](http://doc.sagemath.org/html/en/developer/coding_basics.html#headings-of-sage-library-code-files) for the newly added file.\n\n\nSorry, I misunderstood your last comment. All should be okay now.",
     "created_at": "2016-02-08T11:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
@@ -833,6 +828,7 @@ Replying to [comment:31 jdemeyer]:
 > 
 > Replying to [comment:25 jdemeyer]:
 > > use the [standard copyright template](http://doc.sagemath.org/html/en/developer/coding_basics.html#headings-of-sage-library-code-files) for the newly added file.
+
 
 Sorry, I misunderstood your last comment. All should be okay now.
 

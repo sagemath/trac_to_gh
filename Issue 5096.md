@@ -309,7 +309,7 @@ Assuming the patches apply and pass tests, I think these can go in.  All of the 
 archive/issue_comments_038800.json:
 ```json
 {
-    "body": "With the new spkg and all nine patches applied I am seeing two doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed\n```\n\nThey all seem to be of the kind\n\n```\nsage -t -long \"devel/sage/sage/modules/free_module_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/modules/free_module_element.pyx\", line 1637:\n    sage: g(x=3, y=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_52[11]>\", line 1, in <module>\n        g(x=Integer(3), y=Integer(2))###line 1637:\n    sage: g(x=3, y=2)\n      File \"free_module_element.pyx\", line 1640, in sage.modules.free_module_element.FreeModuleElement_generic_dense.__call__ (sage/modules/free_module_element.c:13259)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6044, in __call__\n        raise ValueError, \"Expected %s arguments, got %s\"%(len(myvars),len(args))\n    ValueError: Expected 2 arguments, got 0\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the new spkg and all nine patches applied I am seeing two doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed\n```\nThey all seem to be of the kind\n\n```\nsage -t -long \"devel/sage/sage/modules/free_module_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/modules/free_module_element.pyx\", line 1637:\n    sage: g(x=3, y=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_52[11]>\", line 1, in <module>\n        g(x=Integer(3), y=Integer(2))###line 1637:\n    sage: g(x=3, y=2)\n      File \"free_module_element.pyx\", line 1640, in sage.modules.free_module_element.FreeModuleElement_generic_dense.__call__ (sage/modules/free_module_element.c:13259)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6044, in __call__\n        raise ValueError, \"Expected %s arguments, got %s\"%(len(myvars),len(args))\n    ValueError: Expected 2 arguments, got 0\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T07:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
@@ -324,7 +324,6 @@ With the new spkg and all nine patches applied I am seeing two doctest failures:
 	sage -t -long devel/sage/sage/calculus/calculus.py # 6 doctests failed
 	sage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed
 ```
-
 They all seem to be of the kind
 
 ```
@@ -349,7 +348,6 @@ Exception raised:
     ValueError: Expected 2 arguments, got 0
 **********************************************************************
 ```
-
 
 Cheers,
 

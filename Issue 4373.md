@@ -3,7 +3,7 @@
 archive/issues_004373.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\n\n```\nsage -t  devel/sage/sage/algebras/group_algebra.py          \n********************************************************************** \nFile \"/home/jaap/downloads/sage-3.2.alpha0/tmp/group_algebra.py\", line 230: \n     sage: OG(FormalSum([ (1, G(2)), (2, RR(0.77)) ]), check=False) \nExpected: \n     [2 0] \n     [0 2] + 2*0.770000000000000 \nGot: \n     2*0.770000000000000 + [2 0] \n     [0 2] \n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4373\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\n```\nsage -t  devel/sage/sage/algebras/group_algebra.py          \n********************************************************************** \nFile \"/home/jaap/downloads/sage-3.2.alpha0/tmp/group_algebra.py\", line 230: \n     sage: OG(FormalSum([ (1, G(2)), (2, RR(0.77)) ]), check=False) \nExpected: \n     [2 0] \n     [0 2] + 2*0.770000000000000 \nGot: \n     2*0.770000000000000 + [2 0] \n     [0 2] \n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4373\n\n",
     "created_at": "2008-10-27T05:35:02Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 CC:  @mwhansen
 
-
 ```
 sage -t  devel/sage/sage/algebras/group_algebra.py          
 ********************************************************************** 
@@ -34,7 +33,6 @@ Got:
      [0 2] 
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4373
 

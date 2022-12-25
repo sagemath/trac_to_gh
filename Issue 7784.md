@@ -3,7 +3,7 @@
 archive/issues_007784.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik\n\nObserve in sagenb-0.4.8:\n\n```\nflat:src wstein$ hg status\nM setup.py\n? release_notes.txt\n? setup.cfg\nflat:src wstein$ more setup.cfg\n[egg_info]\ntag_build =\ntag_date = 0\ntag_svn_revision = 0\n```\n\n\n\nThis makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik\n\nObserve in sagenb-0.4.8:\n\n```\nflat:src wstein$ hg status\nM setup.py\n? release_notes.txt\n? setup.cfg\nflat:src wstein$ more setup.cfg\n[egg_info]\ntag_build =\ntag_date = 0\ntag_svn_revision = 0\n```\n\n\nThis makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
     "created_at": "2009-12-29T08:26:16Z",
     "labels": [
         "component: notebook"
@@ -32,7 +32,6 @@ tag_build =
 tag_date = 0
 tag_svn_revision = 0
 ```
-
 
 
 This makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html
@@ -160,7 +159,7 @@ Include `pull` and `push`.  Replaces previous.
 archive/issue_comments_067011.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> I think I should restore `push` and `pull`.\nV2 does this.",
+    "body": "Replying to [comment:3 mpatel]:\n> I think I should restore `push` and `pull`.\n\nV2 does this.",
     "created_at": "2010-01-25T04:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
@@ -171,6 +170,7 @@ archive/issue_comments_067011.json:
 
 Replying to [comment:3 mpatel]:
 > I think I should restore `push` and `pull`.
+
 V2 does this.
 
 
@@ -272,7 +272,7 @@ I haven't decided yet what to do about `release_notes.txt`, so I haven't updated
 archive/issue_comments_067017.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> I haven't decided yet what to do about `release_notes.txt`, so I haven't updated it.  If we can auto-generate it, that would be great.\n\nI have been using the script at the following site to generate release notes for Sage:\n\nhttp://bitbucket.org/mvngu/rnotes/\n\nI think an option could be added to that script to generate release notes for sagenb. The current usage for the script is\n\n```\n./generate_release_notes sage-x.y.z\n```\n\nA possible option for generating sagenb specific release notes is\n\n```\n./generate_release_notes sage-x.y.z -sagenb\n```\n\nThis would generate a release note for all sagenb specific tickets closed in the Sage x.y.z milestone. It's possible that during a particular milestone, more than one version of sagenb is released and integrated into Sage. Another possibility is \n\n```\n./generate_release_notes sagenb-x.y.z\n```\n\nThis would generate a release note for sagenb x.y.z.",
+    "body": "Replying to [comment:7 mpatel]:\n> I haven't decided yet what to do about `release_notes.txt`, so I haven't updated it.  If we can auto-generate it, that would be great.\n\n\nI have been using the script at the following site to generate release notes for Sage:\n\nhttp://bitbucket.org/mvngu/rnotes/\n\nI think an option could be added to that script to generate release notes for sagenb. The current usage for the script is\n\n```\n./generate_release_notes sage-x.y.z\n```\nA possible option for generating sagenb specific release notes is\n\n```\n./generate_release_notes sage-x.y.z -sagenb\n```\nThis would generate a release note for all sagenb specific tickets closed in the Sage x.y.z milestone. It's possible that during a particular milestone, more than one version of sagenb is released and integrated into Sage. Another possibility is \n\n```\n./generate_release_notes sagenb-x.y.z\n```\nThis would generate a release note for sagenb x.y.z.",
     "created_at": "2010-02-01T04:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
@@ -284,6 +284,7 @@ archive/issue_comments_067017.json:
 Replying to [comment:7 mpatel]:
 > I haven't decided yet what to do about `release_notes.txt`, so I haven't updated it.  If we can auto-generate it, that would be great.
 
+
 I have been using the script at the following site to generate release notes for Sage:
 
 http://bitbucket.org/mvngu/rnotes/
@@ -293,19 +294,16 @@ I think an option could be added to that script to generate release notes for sa
 ```
 ./generate_release_notes sage-x.y.z
 ```
-
 A possible option for generating sagenb specific release notes is
 
 ```
 ./generate_release_notes sage-x.y.z -sagenb
 ```
-
 This would generate a release note for all sagenb specific tickets closed in the Sage x.y.z milestone. It's possible that during a particular milestone, more than one version of sagenb is released and integrated into Sage. Another possibility is 
 
 ```
 ./generate_release_notes sagenb-x.y.z
 ```
-
 This would generate a release note for sagenb x.y.z.
 
 

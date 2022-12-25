@@ -3,7 +3,7 @@
 archive/issues_009107.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  simonking @zabrocki\n\nIn the following class tree:\n\n```\nclass Bla(UniqueRepresentation):\n    class Bla1(UniqueRepresentation):\n        class Bla11:\n\t    Pass\n    class Bla2:\n        class Bla21:\n\t    Pass\n```\n\nThe names are set to\n\n```\n        sage: Bla.Bla1.__name__\n        'Bla.Bla1'\n        sage: Bla.Bla2.__name__\n        'Bla.Bla2'\n        sage: Bla.Bla2.Bla21.__name__\n        'Bla.Bla2.Bla21'\n```\n\nBut\n\n```\n        sage: Bla.Bla1.Bla11.__name__\n        'Bla1.Bla11'\n```\n\nwhereas one would expect `'Bla.Bla1.Bla11'`\nThis breaks a lot of doc in categories and in particular in functorial constructions.\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/9107\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  simonking @zabrocki\n\nIn the following class tree:\n\n```\nclass Bla(UniqueRepresentation):\n    class Bla1(UniqueRepresentation):\n        class Bla11:\n\t    Pass\n    class Bla2:\n        class Bla21:\n\t    Pass\n```\nThe names are set to\n\n```\n        sage: Bla.Bla1.__name__\n        'Bla.Bla1'\n        sage: Bla.Bla2.__name__\n        'Bla.Bla2'\n        sage: Bla.Bla2.Bla21.__name__\n        'Bla.Bla2.Bla21'\n```\nBut\n\n```\n        sage: Bla.Bla1.Bla11.__name__\n        'Bla1.Bla11'\n```\nwhereas one would expect `'Bla.Bla1.Bla11'`\nThis breaks a lot of doc in categories and in particular in functorial constructions.\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/9107\n\n",
     "created_at": "2010-05-31T20:52:31Z",
     "labels": [
         "component: categories",
@@ -31,7 +31,6 @@ class Bla(UniqueRepresentation):
         class Bla21:
 	    Pass
 ```
-
 The names are set to
 
 ```
@@ -42,14 +41,12 @@ The names are set to
         sage: Bla.Bla2.Bla21.__name__
         'Bla.Bla2.Bla21'
 ```
-
 But
 
 ```
         sage: Bla.Bla1.Bla11.__name__
         'Bla1.Bla11'
 ```
-
 whereas one would expect `'Bla.Bla1.Bla11'`
 This breaks a lot of doc in categories and in particular in functorial constructions.
 
@@ -89,7 +86,7 @@ Here is my analysis:
 archive/issue_comments_084484.json:
 ```json
 {
-    "body": "I think the attached patch solves the problem. I get:\n\n```\nsage: class Bla(UniqueRepresentation):\n....:     class Bla1(UniqueRepresentation):\n....:         class Bla11:\n....:             pass\n....:     class Bla2:                   \n....:         class Bla21:   \n....:             pass\n....:         \nsage: Bla.Bla1.Bla11\n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\n```\n\n\nThe change is in `modify_for_nested_pickle`, which is called recursively. The idea is that the function should have an extra argument `first_run`, that is True by default. If the extra argument is False, then it is assumed that it is not applied for the first time.\n\nHere: Since Bla.Bla1 is an instance of `NestedClassMetaclass`, `modify_for_nested_pickle` is called on `Bla.Bla1.Bla11`, resulting in `Bla.Bla1.Bla11.__name__=='Bla1.Bla11'`. However, since Bla is an instance of `NestedClassMetaclass` as well, the function is applied to `Bla.Bla1` and thus recursively to `Bla.Bla1.Bla11` another time.\n\nNow, without my patch, in the second run, `modify_for_nested_pickle` would be confused by the fact that `Bla.Bla1.__dict__` lists `Bla.Bla1.Bla11` under the name `Bla11`, but `Bla11.__name__=='Bla1.Bla11'`. With my patch, `modify_for_nested_pickle` expects exactly that naming scheme, and is thus changing `Bla.Bla1.Bla11.__name__` into `\"Bla.Bla1.Bla11\"`.\n\nMuch BlaBla, but I think it works...\n\n**__Potential problems__**\n\n\n```\nsage: module = sys.modules['__main__']\nsage: getattr(module, 'Bla1.Bla11')                      \n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\nsage: getattr(module, 'Bla.Bla1.Bla11')\n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\n```\n\nHence, Bla.Bla1.Bla11 is listed in the module under two different names. If you think it is bad, then one could probably modify the function when first_run is false, such that the name given in the first run is erased from the module.\n\nMoreover, the reviewer will likely find a speed regression, when excessively creating nested unique representations. But that's hardly realistic...",
+    "body": "I think the attached patch solves the problem. I get:\n\n```\nsage: class Bla(UniqueRepresentation):\n....:     class Bla1(UniqueRepresentation):\n....:         class Bla11:\n....:             pass\n....:     class Bla2:                   \n....:         class Bla21:   \n....:             pass\n....:         \nsage: Bla.Bla1.Bla11\n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\n```\n\nThe change is in `modify_for_nested_pickle`, which is called recursively. The idea is that the function should have an extra argument `first_run`, that is True by default. If the extra argument is False, then it is assumed that it is not applied for the first time.\n\nHere: Since Bla.Bla1 is an instance of `NestedClassMetaclass`, `modify_for_nested_pickle` is called on `Bla.Bla1.Bla11`, resulting in `Bla.Bla1.Bla11.__name__=='Bla1.Bla11'`. However, since Bla is an instance of `NestedClassMetaclass` as well, the function is applied to `Bla.Bla1` and thus recursively to `Bla.Bla1.Bla11` another time.\n\nNow, without my patch, in the second run, `modify_for_nested_pickle` would be confused by the fact that `Bla.Bla1.__dict__` lists `Bla.Bla1.Bla11` under the name `Bla11`, but `Bla11.__name__=='Bla1.Bla11'`. With my patch, `modify_for_nested_pickle` expects exactly that naming scheme, and is thus changing `Bla.Bla1.Bla11.__name__` into `\"Bla.Bla1.Bla11\"`.\n\nMuch BlaBla, but I think it works...\n\n**__Potential problems__**\n\n```\nsage: module = sys.modules['__main__']\nsage: getattr(module, 'Bla1.Bla11')                      \n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\nsage: getattr(module, 'Bla.Bla1.Bla11')\n<class __main__.Bla.Bla1.Bla11 at 0x46e7808>\n```\nHence, Bla.Bla1.Bla11 is listed in the module under two different names. If you think it is bad, then one could probably modify the function when first_run is false, such that the name given in the first run is erased from the module.\n\nMoreover, the reviewer will likely find a speed regression, when excessively creating nested unique representations. But that's hardly realistic...",
     "created_at": "2012-05-02T16:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -113,7 +110,6 @@ sage: Bla.Bla1.Bla11
 <class __main__.Bla.Bla1.Bla11 at 0x46e7808>
 ```
 
-
 The change is in `modify_for_nested_pickle`, which is called recursively. The idea is that the function should have an extra argument `first_run`, that is True by default. If the extra argument is False, then it is assumed that it is not applied for the first time.
 
 Here: Since Bla.Bla1 is an instance of `NestedClassMetaclass`, `modify_for_nested_pickle` is called on `Bla.Bla1.Bla11`, resulting in `Bla.Bla1.Bla11.__name__=='Bla1.Bla11'`. However, since Bla is an instance of `NestedClassMetaclass` as well, the function is applied to `Bla.Bla1` and thus recursively to `Bla.Bla1.Bla11` another time.
@@ -124,7 +120,6 @@ Much BlaBla, but I think it works...
 
 **__Potential problems__**
 
-
 ```
 sage: module = sys.modules['__main__']
 sage: getattr(module, 'Bla1.Bla11')                      
@@ -132,7 +127,6 @@ sage: getattr(module, 'Bla1.Bla11')
 sage: getattr(module, 'Bla.Bla1.Bla11')
 <class __main__.Bla.Bla1.Bla11 at 0x46e7808>
 ```
-
 Hence, Bla.Bla1.Bla11 is listed in the module under two different names. If you think it is bad, then one could probably modify the function when first_run is false, such that the name given in the first run is erased from the module.
 
 Moreover, the reviewer will likely find a speed regression, when excessively creating nested unique representations. But that's hardly realistic...
@@ -162,7 +156,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084486.json:
 ```json
 {
-    "body": "Another problem: Source inspection does not work yet in the following example.\n\n```\nsage: cython_code = [\n... \"from sage.structure.unique_representation import UniqueRepresentation\",\n... \"class A1(UniqueRepresentation):\",\n... \"    class B1(UniqueRepresentation):\",\n... \"        class C1: pass\",\n... \"    class B2:\",\n... \"        class C2: pass\"]\nsage: import os\nsage: cython(os.linesep.join(cython_code))\nsage: A1.B1.C1??          \nError getting source: class A1.B1.C1 has no attribute '__class__'\nType:\t\tclassobj\nString Form:\t_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.A1.B1.C1\nNamespace:\tInteractive\nLoaded File:\t/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so\nSource File:\t/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so\n```\n\nEven #11768 does not solve the problem.\n\nShall that be dealt with on a different ticket? Or in one go?\n\nProbably on a different ticket, since I just find that even source inspection for A1 (which has a usual name) does not work...",
+    "body": "Another problem: Source inspection does not work yet in the following example.\n\n```\nsage: cython_code = [\n... \"from sage.structure.unique_representation import UniqueRepresentation\",\n... \"class A1(UniqueRepresentation):\",\n... \"    class B1(UniqueRepresentation):\",\n... \"        class C1: pass\",\n... \"    class B2:\",\n... \"        class C2: pass\"]\nsage: import os\nsage: cython(os.linesep.join(cython_code))\nsage: A1.B1.C1??          \nError getting source: class A1.B1.C1 has no attribute '__class__'\nType:\t\tclassobj\nString Form:\t_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.A1.B1.C1\nNamespace:\tInteractive\nLoaded File:\t/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so\nSource File:\t/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so\n```\nEven #11768 does not solve the problem.\n\nShall that be dealt with on a different ticket? Or in one go?\n\nProbably on a different ticket, since I just find that even source inspection for A1 (which has a usual name) does not work...",
     "created_at": "2012-05-02T16:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -191,7 +185,6 @@ Namespace:	Interactive
 Loaded File:	/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so
 Source File:	/mnt/local/king/.sage/temp/mpc622/6475/spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx/_mnt_local_king__sage_temp_mpc622_6475_tmp_0_spyx_0.so
 ```
-
 Even #11768 does not solve the problem.
 
 Shall that be dealt with on a different ticket? Or in one go?
@@ -299,7 +292,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084492.json:
 ```json
 {
-    "body": "This causes trouble when building the documentation from scratch (i.e. after deleting 'devel/sage/doc/output`):\n\n```\n/usr/local/src/sage-5.5.rc1/local/lib/python2.7/site-packages/sage/categories/algebras_with_basis.py:docstring of sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis:3: WARNING: more than one target found for cross-reference u'one_basis': sage.combinat.sf.new_kschur.KBoundedSubspaceBases.ParentMethods.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.ParentMethods.one_basis, sage.combinat.ncsf_qsym.generic_basis_code.BasesOfQSymOrNCSF.ParentMethods.one_basis, sage.algebras.steenrod.steenrod_algebra.SteenrodAlgebra_generic.one_basis, sage.categories.examples.with_realizations.SubsetAlgebra.Fundamental.one_basis, sage.combinat.root_system.weyl_characters.WeightRing.one_basis, sage.categories.monoids.Monoids.Algebras.ParentMethods.one_basis, sage.categories.examples.hopf_algebras_with_basis.MyGroupAlgebra.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.TensorProducts.ParentMethods.one_basis, sage.algebras.affine_nil_temperley_lieb.AffineNilTemperleyLiebTypeA.one_basis, sage.categories.examples.algebras_with_basis.FreeAlgebra.one_basis, sage.combinat.symmetric_group_algebra.SymmetricGroupAlgebra_n.one_basis, sage.algebras.iwahori_hecke_algebra.IwahoriHeckeAlgebraT.one_basis, sage.algebras.group_algebra_new.GroupAlgebra.one_basis, sage.combinat.sf.sfa.SymmetricFunctionsBases.ParentMethods.one_basis, sage.combinat.root_system.weyl_characters.WeylCharacterRing.one_basis, sage.combinat.combinatorial_algebra.CombinatorialAlgebra.one_basis\n```\n",
+    "body": "This causes trouble when building the documentation from scratch (i.e. after deleting 'devel/sage/doc/output`):\n\n```\n/usr/local/src/sage-5.5.rc1/local/lib/python2.7/site-packages/sage/categories/algebras_with_basis.py:docstring of sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis:3: WARNING: more than one target found for cross-reference u'one_basis': sage.combinat.sf.new_kschur.KBoundedSubspaceBases.ParentMethods.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.ParentMethods.one_basis, sage.combinat.ncsf_qsym.generic_basis_code.BasesOfQSymOrNCSF.ParentMethods.one_basis, sage.algebras.steenrod.steenrod_algebra.SteenrodAlgebra_generic.one_basis, sage.categories.examples.with_realizations.SubsetAlgebra.Fundamental.one_basis, sage.combinat.root_system.weyl_characters.WeightRing.one_basis, sage.categories.monoids.Monoids.Algebras.ParentMethods.one_basis, sage.categories.examples.hopf_algebras_with_basis.MyGroupAlgebra.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.TensorProducts.ParentMethods.one_basis, sage.algebras.affine_nil_temperley_lieb.AffineNilTemperleyLiebTypeA.one_basis, sage.categories.examples.algebras_with_basis.FreeAlgebra.one_basis, sage.combinat.symmetric_group_algebra.SymmetricGroupAlgebra_n.one_basis, sage.algebras.iwahori_hecke_algebra.IwahoriHeckeAlgebraT.one_basis, sage.algebras.group_algebra_new.GroupAlgebra.one_basis, sage.combinat.sf.sfa.SymmetricFunctionsBases.ParentMethods.one_basis, sage.combinat.root_system.weyl_characters.WeylCharacterRing.one_basis, sage.combinat.combinatorial_algebra.CombinatorialAlgebra.one_basis\n```",
     "created_at": "2012-12-19T15:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -313,7 +306,6 @@ This causes trouble when building the documentation from scratch (i.e. after del
 ```
 /usr/local/src/sage-5.5.rc1/local/lib/python2.7/site-packages/sage/categories/algebras_with_basis.py:docstring of sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis:3: WARNING: more than one target found for cross-reference u'one_basis': sage.combinat.sf.new_kschur.KBoundedSubspaceBases.ParentMethods.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.ParentMethods.one_basis, sage.combinat.ncsf_qsym.generic_basis_code.BasesOfQSymOrNCSF.ParentMethods.one_basis, sage.algebras.steenrod.steenrod_algebra.SteenrodAlgebra_generic.one_basis, sage.categories.examples.with_realizations.SubsetAlgebra.Fundamental.one_basis, sage.combinat.root_system.weyl_characters.WeightRing.one_basis, sage.categories.monoids.Monoids.Algebras.ParentMethods.one_basis, sage.categories.examples.hopf_algebras_with_basis.MyGroupAlgebra.one_basis, sage.categories.algebras_with_basis.AlgebrasWithBasis.TensorProducts.ParentMethods.one_basis, sage.algebras.affine_nil_temperley_lieb.AffineNilTemperleyLiebTypeA.one_basis, sage.categories.examples.algebras_with_basis.FreeAlgebra.one_basis, sage.combinat.symmetric_group_algebra.SymmetricGroupAlgebra_n.one_basis, sage.algebras.iwahori_hecke_algebra.IwahoriHeckeAlgebraT.one_basis, sage.algebras.group_algebra_new.GroupAlgebra.one_basis, sage.combinat.sf.sfa.SymmetricFunctionsBases.ParentMethods.one_basis, sage.combinat.root_system.weyl_characters.WeylCharacterRing.one_basis, sage.combinat.combinatorial_algebra.CombinatorialAlgebra.one_basis
 ```
-
 
 
 
@@ -376,7 +368,7 @@ Aha, now I see that the very long single line contains warnings about cross refe
 archive/issue_comments_084496.json:
 ```json
 {
-    "body": "Aha, here is an example:\n\nThe docstring of `sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis` is as follows:\n\n```\n            @cached_method   # todo: reinstate once #5843 is fixed\n            def one_from_cartesian_product_of_one_basis(self):\n                \"\"\"\n                Returns the one of this cartesian product of algebras, as per ``Monoids.ParentMethods.one``\n\n                It is constructed as the cartesian product of the ones of the\n                summands, using their :meth:`.one_basis` methods.\n\n                This implementation does not require multiplication by\n                scalars nor calling cartesian_product. This might help keeping\n                things as lazy as possible upon initialization.\n...\n```\n\n\nCould this simply be a misspelling? Note that it is written\n\n```\n:meth:`.one_basis`\n```\n\nbut should certainly be\n\n```\n:meth:`one_basis`\n```\n\n\nIf that's the case for the other warnings as well, then my patch would just uncover mistakes that happened earlier.",
+    "body": "Aha, here is an example:\n\nThe docstring of `sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis` is as follows:\n\n```\n            @cached_method   # todo: reinstate once #5843 is fixed\n            def one_from_cartesian_product_of_one_basis(self):\n                \"\"\"\n                Returns the one of this cartesian product of algebras, as per ``Monoids.ParentMethods.one``\n\n                It is constructed as the cartesian product of the ones of the\n                summands, using their :meth:`.one_basis` methods.\n\n                This implementation does not require multiplication by\n                scalars nor calling cartesian_product. This might help keeping\n                things as lazy as possible upon initialization.\n...\n```\n\nCould this simply be a misspelling? Note that it is written\n\n```\n:meth:`.one_basis`\n```\nbut should certainly be\n\n```\n:meth:`one_basis`\n```\n\nIf that's the case for the other warnings as well, then my patch would just uncover mistakes that happened earlier.",
     "created_at": "2013-01-19T20:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -404,19 +396,16 @@ The docstring of `sage.categories.algebras_with_basis.AlgebrasWithBasis.Cartesia
 ...
 ```
 
-
 Could this simply be a misspelling? Note that it is written
 
 ```
 :meth:`.one_basis`
 ```
-
 but should certainly be
 
 ```
 :meth:`one_basis`
 ```
-
 
 If that's the case for the other warnings as well, then my patch would just uncover mistakes that happened earlier.
 
@@ -445,7 +434,7 @@ The same issue arose in #13851 (see [comment 10](http://trac.sagemath.org/sage_t
 archive/issue_comments_084498.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> The same issue arose in #13851 (see [comment 10](http://trac.sagemath.org/sage_trac/ticket/13851#comment:10)). I'm not sure why those dots are there, and I personally think they should be removed, but someone intentionally put them there.\n\nI think the dot is simply wrong - or is it ignored by Sphinx?\n\nActually here it is even worse. The text is documentation of a functorial construction, but refers to a parent method - that can't possibly work without an explicit reference to the method which must include the class which the method belongs to.",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> The same issue arose in #13851 (see [comment 10](http://trac.sagemath.org/sage_trac/ticket/13851#comment:10)). I'm not sure why those dots are there, and I personally think they should be removed, but someone intentionally put them there.\n\n\nI think the dot is simply wrong - or is it ignored by Sphinx?\n\nActually here it is even worse. The text is documentation of a functorial construction, but refers to a parent method - that can't possibly work without an explicit reference to the method which must include the class which the method belongs to.",
     "created_at": "2013-01-19T20:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -456,6 +445,7 @@ archive/issue_comments_084498.json:
 
 Replying to [comment:14 jhpalmieri]:
 > The same issue arose in #13851 (see [comment 10](http://trac.sagemath.org/sage_trac/ticket/13851#comment:10)). I'm not sure why those dots are there, and I personally think they should be removed, but someone intentionally put them there.
+
 
 I think the dot is simply wrong - or is it ignored by Sphinx?
 
@@ -714,7 +704,7 @@ Apply trac9107_nesting_nested_classes.patch trac_9107_fix_cross_reference.patch
 archive/issue_comments_084512.json:
 ```json
 {
-    "body": "Replying to [comment:22 SimonKing]:\n> Building the docs works for me\nAlso the PDF docs?",
+    "body": "Replying to [comment:22 SimonKing]:\n> Building the docs works for me\n\nAlso the PDF docs?",
     "created_at": "2013-05-22T15:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -725,6 +715,7 @@ archive/issue_comments_084512.json:
 
 Replying to [comment:22 SimonKing]:
 > Building the docs works for me
+
 Also the PDF docs?
 
 
@@ -734,7 +725,7 @@ Also the PDF docs?
 archive/issue_comments_084513.json:
 ```json
 {
-    "body": "There is a problem with latex and the fact that the docbuilder *hangs* is a bug in the new docbuilder: #14626\n\n```\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.27819 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n? \nImplicit mode ON; LaTeX internals redefined\n(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty\n(/usr/share/texmf-texlive/tex/latex/base/t1enc.def)\n! Emergency stop.\n ...                                              \n                                                  \nl.27819 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on categories.log.\n)make[1]: *** [categories.pdf] Error 1\n```\n",
+    "body": "There is a problem with latex and the fact that the docbuilder *hangs* is a bug in the new docbuilder: #14626\n\n```\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.27819 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n? \nImplicit mode ON; LaTeX internals redefined\n(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty\n(/usr/share/texmf-texlive/tex/latex/base/t1enc.def)\n! Emergency stop.\n ...                                              \n                                                  \nl.27819 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on categories.log.\n)make[1]: *** [categories.pdf] Error 1\n```",
     "created_at": "2013-05-22T15:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -767,7 +758,6 @@ l.27819 \begin{Verbatim}[commandchars=\\\{\}]
 Transcript written on categories.log.
 )make[1]: *** [categories.pdf] Error 1
 ```
-
 
 
 
@@ -816,7 +806,7 @@ Do you have any clue what object is being processed when things hang?
 archive/issue_comments_084516.json:
 ```json
 {
-    "body": "Replying to [comment:26 SimonKing]:\n> The second problem is independent, namely if latex fails, then the docbuilder hangs.\nWhich is #14626 and indeed has nothing to do with this ticket.\n\n> Do you have any clue what object is being processed when things hang?\nNot yet, I will reproduce the `.tex` file and then it should be clear.",
+    "body": "Replying to [comment:26 SimonKing]:\n> The second problem is independent, namely if latex fails, then the docbuilder hangs.\n\nWhich is #14626 and indeed has nothing to do with this ticket.\n\n> Do you have any clue what object is being processed when things hang?\n\nNot yet, I will reproduce the `.tex` file and then it should be clear.",
     "created_at": "2013-05-22T15:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -827,9 +817,11 @@ archive/issue_comments_084516.json:
 
 Replying to [comment:26 SimonKing]:
 > The second problem is independent, namely if latex fails, then the docbuilder hangs.
+
 Which is #14626 and indeed has nothing to do with this ticket.
 
 > Do you have any clue what object is being processed when things hang?
+
 Not yet, I will reproduce the `.tex` file and then it should be clear.
 
 
@@ -839,7 +831,7 @@ Not yet, I will reproduce the `.tex` file and then it should be clear.
 archive/issue_comments_084517.json:
 ```json
 {
-    "body": "Offending `.tex` file: [http://boxen.math.washington.edu/home/jdemeyer/badlatex/categories.tex](http://boxen.math.washington.edu/home/jdemeyer/badlatex/categories.tex)\n\nThe relevant lines are\n\n```\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\strong{class }\\bfcode{ParentMethods}}~\\index{Sets.WithRealizations.ParentMethods.Realizations (class in sage.categories.sets\\_cat)}\n\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\nBases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n\nTESTS:\n\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]\n\\PYG{g+gp}{sage: }\\PYG{k+kn}{from} \\PYG{n+nn}{sage.categories.realizations} \\PYG{k+kn}{import} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{C} \\PYG{o}{=} \\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{C}\n\\PYG{g+go}{Category of realizations of The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n+nb}{isinstance}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{,} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\\PYG{p}{)}\n\\PYG{g+go}{True}\n\\PYG{g+gp}{sage: }\\PYG{n}{C}\\PYG{o}{.}\\PYG{n}{parent\\PYGZus{}with\\PYGZus{}realization}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{TestSuite}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{run}\\PYG{p}{(}\\PYG{p}{)}\n\\end{Verbatim}\n\\index{super\\_categories() (sage.categories.sets\\_cat.Sets.WithRealizations.ParentMethods.Realizations method)}\n\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations.super_categories}\\pysiglinewithargsret{\\bfcode{super\\_categories}}{}{}\nEXAMPLES:\n\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]   %% PROBLEM IS THIS LINE %%\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{super\\PYGZus{}categories}\\PYG{p}{(}\\PYG{p}{)}\n\\PYG{g+go}{[Category of realizations of sets]}\n\\end{Verbatim}\n\n\\end{fulllineitems}\n\n\n\\end{fulllineitems}\n\n\\index{facade\\_for() (sage.categories.sets\\_cat.Sets.WithRealizations.ParentMethods method)}\n```\n",
+    "body": "Offending `.tex` file: [http://boxen.math.washington.edu/home/jdemeyer/badlatex/categories.tex](http://boxen.math.washington.edu/home/jdemeyer/badlatex/categories.tex)\n\nThe relevant lines are\n\n```\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\strong{class }\\bfcode{ParentMethods}}~\\index{Sets.WithRealizations.ParentMethods.Realizations (class in sage.categories.sets\\_cat)}\n\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\nBases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n\nTESTS:\n\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]\n\\PYG{g+gp}{sage: }\\PYG{k+kn}{from} \\PYG{n+nn}{sage.categories.realizations} \\PYG{k+kn}{import} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{C} \\PYG{o}{=} \\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{C}\n\\PYG{g+go}{Category of realizations of The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n+nb}{isinstance}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{,} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\\PYG{p}{)}\n\\PYG{g+go}{True}\n\\PYG{g+gp}{sage: }\\PYG{n}{C}\\PYG{o}{.}\\PYG{n}{parent\\PYGZus{}with\\PYGZus{}realization}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{TestSuite}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{run}\\PYG{p}{(}\\PYG{p}{)}\n\\end{Verbatim}\n\\index{super\\_categories() (sage.categories.sets\\_cat.Sets.WithRealizations.ParentMethods.Realizations method)}\n\n\\begin{fulllineitems}\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations.super_categories}\\pysiglinewithargsret{\\bfcode{super\\_categories}}{}{}\nEXAMPLES:\n\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]   %% PROBLEM IS THIS LINE %%\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{super\\PYGZus{}categories}\\PYG{p}{(}\\PYG{p}{)}\n\\PYG{g+go}{[Category of realizations of sets]}\n\\end{Verbatim}\n\n\\end{fulllineitems}\n\n\n\\end{fulllineitems}\n\n\\index{facade\\_for() (sage.categories.sets\\_cat.Sets.WithRealizations.ParentMethods method)}\n```",
     "created_at": "2013-05-22T15:48:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -897,13 +889,12 @@ EXAMPLES:
 
 
 
-
 ---
 
 archive/issue_comments_084518.json:
 ```json
 {
-    "body": "**before** this patch (good):\n\n```\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\bfcode{ParentMethods}}\nalias of \\code{WithRealizations.ParentMethods}\n```\n\n**after** this patch (bad):\n\n```\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\nBases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n```\n",
+    "body": "**before** this patch (good):\n\n```\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\bfcode{ParentMethods}}\nalias of \\code{WithRealizations.ParentMethods}\n```\n**after** this patch (bad):\n\n```\n\\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\nBases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n```",
     "created_at": "2013-05-22T15:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -918,7 +909,6 @@ archive/issue_comments_084518.json:
 \phantomsection\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\pysigline{\bfcode{ParentMethods}}
 alias of \code{WithRealizations.ParentMethods}
 ```
-
 **after** this patch (bad):
 
 ```
@@ -928,13 +918,12 @@ Bases: {\hyperref[sage/categories/realizations:sage.categories.realizations.Cate
 
 
 
-
 ---
 
 archive/issue_comments_084519.json:
 ```json
 {
-    "body": "Replying to [comment:29 jdemeyer]:\n> **before** this patch (good):\n> {{{\n> \\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\bfcode{ParentMethods}}\n> alias of \\code{WithRealizations.ParentMethods}\n> }}}\n> **after** this patch (bad):\n> {{{\n> \\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\n> Bases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n> }}}\n\nThree questions:\n\n1. Why is it bad? I don't see why latex should have a problem with it.\n2. Isn't the \"good\" output without my patch just plain wrong? After all, we do have\n   {{{\nsage: sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations.__bases__\n(sage.categories.realizations.Category_realization_of_parent,)\n   }}}\n   and also `sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations` is certainly *not* simply an alias of `WithRealizations.ParentMethods`.\n3. Can you also point me to the code that created the latex output?",
+    "body": "Replying to [comment:29 jdemeyer]:\n> **before** this patch (good):\n> \n> ```\n> \\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\\pysigline{\\bfcode{ParentMethods}}\n> alias of \\code{WithRealizations.ParentMethods}\n> ```\n> **after** this patch (bad):\n> \n> ```\n> \\phantomsection\\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\\pysiglinewithargsret{\\strong{class }\\bfcode{Realizations}}{\\emph{parent\\_with\\_realization}}{}\n> Bases: {\\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\\code{sage.categories.realizations.Category\\_realization\\_of\\_parent}}}\n> ```\n\n\nThree questions:\n\n1. Why is it bad? I don't see why latex should have a problem with it.\n2. Isn't the \"good\" output without my patch just plain wrong? After all, we do have\n   {{{\nsage: sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations.__bases__\n(sage.categories.realizations.Category_realization_of_parent,)\n   }}}\n   and also `sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations` is certainly *not* simply an alias of `WithRealizations.ParentMethods`.\n3. Can you also point me to the code that created the latex output?",
     "created_at": "2013-05-22T19:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -945,15 +934,18 @@ archive/issue_comments_084519.json:
 
 Replying to [comment:29 jdemeyer]:
 > **before** this patch (good):
-> {{{
+> 
+> ```
 > \phantomsection\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods}\pysigline{\bfcode{ParentMethods}}
 > alias of \code{WithRealizations.ParentMethods}
-> }}}
+> ```
 > **after** this patch (bad):
-> {{{
+> 
+> ```
 > \phantomsection\label{sage/categories/sets_cat:sage.categories.sets_cat.Sets.WithRealizations.ParentMethods.Realizations}\pysiglinewithargsret{\strong{class }\bfcode{Realizations}}{\emph{parent\_with\_realization}}{}
 > Bases: {\hyperref[sage/categories/realizations:sage.categories.realizations.Category_realization_of_parent]{\code{sage.categories.realizations.Category\_realization\_of\_parent}}}
-> }}}
+> ```
+
 
 Three questions:
 
@@ -993,7 +985,7 @@ Edit: maybe I'm seeing the failure now. Never mind.
 archive/issue_comments_084521.json:
 ```json
 {
-    "body": "OK, I see it, too.\n\n```\n../../sage -docbuild reference pdf\n...\nOutput written on tensor.pdf (24 pages, 144532 bytes).\nTranscript written on tensor.log.\nBuild finished.  The built documents can be found in /home/simon/SAGE/prerelease/sage-5.9.rc0/devel/sage/doc/output/pdf/en/reference/tensor\n```\n\nand then it hangs.\n\nNevertheless, I have no clue what is happening here. See my three questions in comment:30.",
+    "body": "OK, I see it, too.\n\n```\n../../sage -docbuild reference pdf\n...\nOutput written on tensor.pdf (24 pages, 144532 bytes).\nTranscript written on tensor.log.\nBuild finished.  The built documents can be found in /home/simon/SAGE/prerelease/sage-5.9.rc0/devel/sage/doc/output/pdf/en/reference/tensor\n```\nand then it hangs.\n\nNevertheless, I have no clue what is happening here. See my three questions in comment:30.",
     "created_at": "2013-05-23T05:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1011,7 +1003,6 @@ Output written on tensor.pdf (24 pages, 144532 bytes).
 Transcript written on tensor.log.
 Build finished.  The built documents can be found in /home/simon/SAGE/prerelease/sage-5.9.rc0/devel/sage/doc/output/pdf/en/reference/tensor
 ```
-
 and then it hangs.
 
 Nevertheless, I have no clue what is happening here. See my three questions in comment:30.
@@ -1023,7 +1014,7 @@ Nevertheless, I have no clue what is happening here. See my three questions in c
 archive/issue_comments_084522.json:
 ```json
 {
-    "body": "Replying to [comment:30 SimonKing]:\n> 1. Why is it bad?\nI just used \"bad\" because `latex` doesn't compile it correctly.\n\n> 3. Can you also point me to the code that created the latex output?\nI guess that's Sphinx, but I don't know much about it.",
+    "body": "Replying to [comment:30 SimonKing]:\n> 1. Why is it bad?\n  \nI just used \"bad\" because `latex` doesn't compile it correctly.\n\n> 3. Can you also point me to the code that created the latex output?\n  \nI guess that's Sphinx, but I don't know much about it.",
     "created_at": "2013-05-23T08:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1034,9 +1025,11 @@ archive/issue_comments_084522.json:
 
 Replying to [comment:30 SimonKing]:
 > 1. Why is it bad?
+  
 I just used "bad" because `latex` doesn't compile it correctly.
 
 > 3. Can you also point me to the code that created the latex output?
+  
 I guess that's Sphinx, but I don't know much about it.
 
 
@@ -1046,7 +1039,7 @@ I guess that's Sphinx, but I don't know much about it.
 archive/issue_comments_084523.json:
 ```json
 {
-    "body": "Replying to [comment:33 jdemeyer]:\n> Replying to [comment:30 SimonKing]:\n> > 1. Why is it bad?\n> I just used \"bad\" because `latex` doesn't compile it correctly.\n\nThat was my question: Why does `latex` not compile it correctly?\n\nAnd we should keep in mind that the old output has simply been wrong.",
+    "body": "Replying to [comment:33 jdemeyer]:\n> Replying to [comment:30 SimonKing]:\n> > 1. Why is it bad?\n  \n> I just used \"bad\" because `latex` doesn't compile it correctly.\n\nThat was my question: Why does `latex` not compile it correctly?\n\nAnd we should keep in mind that the old output has simply been wrong.",
     "created_at": "2013-05-23T09:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1058,6 +1051,7 @@ archive/issue_comments_084523.json:
 Replying to [comment:33 jdemeyer]:
 > Replying to [comment:30 SimonKing]:
 > > 1. Why is it bad?
+  
 > I just used "bad" because `latex` doesn't compile it correctly.
 
 That was my question: Why does `latex` not compile it correctly?
@@ -1071,7 +1065,7 @@ And we should keep in mind that the old output has simply been wrong.
 archive/issue_comments_084524.json:
 ```json
 {
-    "body": "I think that the first line in the LaTeX error message is correct:\n\n```\n! LaTeX Error: Too deeply nested.\n```\n\nI think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.",
+    "body": "I think that the first line in the LaTeX error message is correct:\n\n```\n! LaTeX Error: Too deeply nested.\n```\nI think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.",
     "created_at": "2013-05-23T19:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1085,7 +1079,6 @@ I think that the first line in the LaTeX error message is correct:
 ```
 ! LaTeX Error: Too deeply nested.
 ```
-
 I think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.
 
 
@@ -1095,7 +1088,7 @@ I think that there are too many levels of nesting of lists (from the `fulllineit
 archive/issue_comments_084525.json:
 ```json
 {
-    "body": "Replying to [comment:35 jhpalmieri]:\n> I think that the first line in the LaTeX error message is correct:\n> {{{\n> ! LaTeX Error: Too deeply nested.\n> }}}\n> I think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.\n\nPlease, where is the nesting? I suppose by \"comment out the `Verbatim` environment that it's complaining about\", you mean one of two `Verbatim` environments that were cited in comment:28.\n\nThe first is\n\n```\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]\n\\PYG{g+gp}{sage: }\\PYG{k+kn}{from} \\PYG{n+nn}{sage.categories.realizations} \\PYG{k+kn}{import} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{C} \\PYG{o}{=} \\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{C}\n\\PYG{g+go}{Category of realizations of The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n+nb}{isinstance}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{,} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\\PYG{p}{)}\n\\PYG{g+go}{True}\n\\PYG{g+gp}{sage: }\\PYG{n}{C}\\PYG{o}{.}\\PYG{n}{parent\\PYGZus{}with\\PYGZus{}realization}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{TestSuite}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{run}\\PYG{p}{(}\\PYG{p}{)}\n\\end{Verbatim}\n```\n\nthe second is\n\n```\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]   %% PROBLEM IS THIS LINE %%\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{super\\PYGZus{}categories}\\PYG{p}{(}\\PYG{p}{)}\n\\PYG{g+go}{[Category of realizations of sets]}\n\\end{Verbatim}\n```\n\n\nI suppose `%% PROBLEM IS THIS LINE %%` in the second environment was Jeroen's addition.\n\nSo, what is \"too deeply nested\"? I can't believe that such a short piece of text has even enough characters to nest too deeply for latex!",
+    "body": "Replying to [comment:35 jhpalmieri]:\n> I think that the first line in the LaTeX error message is correct:\n> \n> ```\n> ! LaTeX Error: Too deeply nested.\n> ```\n> I think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.\n\n\nPlease, where is the nesting? I suppose by \"comment out the `Verbatim` environment that it's complaining about\", you mean one of two `Verbatim` environments that were cited in comment:28.\n\nThe first is\n\n```\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]\n\\PYG{g+gp}{sage: }\\PYG{k+kn}{from} \\PYG{n+nn}{sage.categories.realizations} \\PYG{k+kn}{import} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{C} \\PYG{o}{=} \\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{C}\n\\PYG{g+go}{Category of realizations of The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n+nb}{isinstance}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{,} \\PYG{n}{Category\\PYGZus{}realization\\PYGZus{}of\\PYGZus{}parent}\\PYG{p}{)}\n\\PYG{g+go}{True}\n\\PYG{g+gp}{sage: }\\PYG{n}{C}\\PYG{o}{.}\\PYG{n}{parent\\PYGZus{}with\\PYGZus{}realization}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{TestSuite}\\PYG{p}{(}\\PYG{n}{C}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{run}\\PYG{p}{(}\\PYG{p}{)}\n\\end{Verbatim}\n```\nthe second is\n\n```\n\\begin{Verbatim}[commandchars=\\\\\\{\\}]   %% PROBLEM IS THIS LINE %%\n\\PYG{g+gp}{sage: }\\PYG{n}{A} \\PYG{o}{=} \\PYG{n}{Sets}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{WithRealizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{example}\\PYG{p}{(}\\PYG{p}{)}\\PYG{p}{;} \\PYG{n}{A}\n\\PYG{g+go}{The subset algebra of \\PYGZob{}1, 2, 3\\PYGZcb{} over Rational Field}\n\\PYG{g+gp}{sage: }\\PYG{n}{A}\\PYG{o}{.}\\PYG{n}{Realizations}\\PYG{p}{(}\\PYG{p}{)}\\PYG{o}{.}\\PYG{n}{super\\PYGZus{}categories}\\PYG{p}{(}\\PYG{p}{)}\n\\PYG{g+go}{[Category of realizations of sets]}\n\\end{Verbatim}\n```\n\nI suppose `%% PROBLEM IS THIS LINE %%` in the second environment was Jeroen's addition.\n\nSo, what is \"too deeply nested\"? I can't believe that such a short piece of text has even enough characters to nest too deeply for latex!",
     "created_at": "2013-05-23T20:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1106,10 +1099,12 @@ archive/issue_comments_084525.json:
 
 Replying to [comment:35 jhpalmieri]:
 > I think that the first line in the LaTeX error message is correct:
-> {{{
+> 
+> ```
 > ! LaTeX Error: Too deeply nested.
-> }}}
+> ```
 > I think that there are too many levels of nesting of lists (from the `fulllineitems` environment). If I comment out the `Verbatim` environment that it's complaining about, I don't get an error message any more.
+
 
 Please, where is the nesting? I suppose by "comment out the `Verbatim` environment that it's complaining about", you mean one of two `Verbatim` environments that were cited in comment:28.
 
@@ -1129,7 +1124,6 @@ The first is
 \PYG{g+gp}{sage: }\PYG{n}{TestSuite}\PYG{p}{(}\PYG{n}{C}\PYG{p}{)}\PYG{o}{.}\PYG{n}{run}\PYG{p}{(}\PYG{p}{)}
 \end{Verbatim}
 ```
-
 the second is
 
 ```
@@ -1140,7 +1134,6 @@ the second is
 \PYG{g+go}{[Category of realizations of sets]}
 \end{Verbatim}
 ```
-
 
 I suppose `%% PROBLEM IS THIS LINE %%` in the second environment was Jeroen's addition.
 
@@ -1153,7 +1146,7 @@ So, what is "too deeply nested"? I can't believe that such a short piece of text
 archive/issue_comments_084526.json:
 ```json
 {
-    "body": "If I take the file categories.tex in `SAGE_ROOT/devel/sage/doc/output/latex/en/reference/categories/` and truncate it just before the line starting `\\index{facade\\_for() ...`, then I need to add in a few lines of the form\n\n```\n\\end{fulllineitems}\n```\n\nto get it to compile (after I comment out the last Verbatim block before the line `\\index{facade\\_for() ...`). So there are several `fulllineitems` environments nested within each other. Maybe too many, and maybe that's the problem. That's my current guess.",
+    "body": "If I take the file categories.tex in `SAGE_ROOT/devel/sage/doc/output/latex/en/reference/categories/` and truncate it just before the line starting `\\index{facade\\_for() ...`, then I need to add in a few lines of the form\n\n```\n\\end{fulllineitems}\n```\nto get it to compile (after I comment out the last Verbatim block before the line `\\index{facade\\_for() ...`). So there are several `fulllineitems` environments nested within each other. Maybe too many, and maybe that's the problem. That's my current guess.",
     "created_at": "2013-05-23T23:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1167,7 +1160,6 @@ If I take the file categories.tex in `SAGE_ROOT/devel/sage/doc/output/latex/en/r
 ```
 \end{fulllineitems}
 ```
-
 to get it to compile (after I comment out the last Verbatim block before the line `\index{facade\_for() ...`). So there are several `fulllineitems` environments nested within each other. Maybe too many, and maybe that's the problem. That's my current guess.
 
 
@@ -1194,7 +1186,7 @@ archive/issue_events_022346.json:
 archive/issue_comments_084527.json:
 ```json
 {
-    "body": "Hey Nicolas and Simon,\n\nThe problem comes from the fact that there is a 4 level deep class nesting with a method (which is 5 levels deep) in the `Sets.WithRealizations.ParentMethods.Realizations.super_categories`. I've tried moving this subclass into a separate class, and this solves the pdf build issue but introduces some doctesting errors. I don't think there is a  to extend the nesting level since that is a latex thing, nor do I think we should try since 4 nested classes is a lot IMO. I'm guessing beforehand because of the improper naming, latex did the environments differently...?\n\nAnyways the fix for the pdf build is to remove a level (or two) of class nesting.\n\nBest,\n\nTravis\n\nEdit: Here are the errors I get when I move `Sets.WithRealizations` out as a separate class and then assign it into `Sets`:\n\n```\nsage -t ../categories/sets_cat.py\n**********************************************************************\nFile \"../categories/sets_cat.py\", line 1408, in sage.categories.sets_cat.ParentMethodsForWithRealizations.realizations\nFailed example:\n    A.realizations()\nExpected:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis]\nGot:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis, The subset algebra of {1, 2, 3} over Rational Field in the realization Blah]\n**********************************************************************\nFile \"../categories/sets_cat.py\", line 1428, in sage.categories.sets_cat.ParentMethodsForWithRealizations.facade_for\nFailed example:\n    A.facade_for()\nExpected:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis]\nGot:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis, The subset algebra of {1, 2, 3} over Rational Field in the realization Blah]\n**********************************************************************\n2 items had failures:\n   1 of   8 in sage.categories.sets_cat.ParentMethodsForWithRealizations.facade_for\n   1 of   3 in sage.categories.sets_cat.ParentMethodsForWithRealizations.realizations\n    [241 tests, 2 failures, 0.76 s]\n----------------------------------------------------------------------\nsage -t ../categories/sets_cat.py  # 2 doctests failed\n----------------------------------------------------------------------\n```\n\nAny ideas why moving the class out of the nesting doesn't work?",
+    "body": "Hey Nicolas and Simon,\n\nThe problem comes from the fact that there is a 4 level deep class nesting with a method (which is 5 levels deep) in the `Sets.WithRealizations.ParentMethods.Realizations.super_categories`. I've tried moving this subclass into a separate class, and this solves the pdf build issue but introduces some doctesting errors. I don't think there is a  to extend the nesting level since that is a latex thing, nor do I think we should try since 4 nested classes is a lot IMO. I'm guessing beforehand because of the improper naming, latex did the environments differently...?\n\nAnyways the fix for the pdf build is to remove a level (or two) of class nesting.\n\nBest,\n\nTravis\n\nEdit: Here are the errors I get when I move `Sets.WithRealizations` out as a separate class and then assign it into `Sets`:\n\n```\nsage -t ../categories/sets_cat.py\n**********************************************************************\nFile \"../categories/sets_cat.py\", line 1408, in sage.categories.sets_cat.ParentMethodsForWithRealizations.realizations\nFailed example:\n    A.realizations()\nExpected:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis]\nGot:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis, The subset algebra of {1, 2, 3} over Rational Field in the realization Blah]\n**********************************************************************\nFile \"../categories/sets_cat.py\", line 1428, in sage.categories.sets_cat.ParentMethodsForWithRealizations.facade_for\nFailed example:\n    A.facade_for()\nExpected:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis]\nGot:\n    [The subset algebra of {1, 2, 3} over Rational Field in the Fundamental basis, The subset algebra of {1, 2, 3} over Rational Field in the In basis, The subset algebra of {1, 2, 3} over Rational Field in the Out basis, The subset algebra of {1, 2, 3} over Rational Field in the realization Blah]\n**********************************************************************\n2 items had failures:\n   1 of   8 in sage.categories.sets_cat.ParentMethodsForWithRealizations.facade_for\n   1 of   3 in sage.categories.sets_cat.ParentMethodsForWithRealizations.realizations\n    [241 tests, 2 failures, 0.76 s]\n----------------------------------------------------------------------\nsage -t ../categories/sets_cat.py  # 2 doctests failed\n----------------------------------------------------------------------\n```\nAny ideas why moving the class out of the nesting doesn't work?",
     "created_at": "2013-08-22T19:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1242,7 +1234,6 @@ Got:
 sage -t ../categories/sets_cat.py  # 2 doctests failed
 ----------------------------------------------------------------------
 ```
-
 Any ideas why moving the class out of the nesting doesn't work?
 
 
@@ -1252,7 +1243,7 @@ Any ideas why moving the class out of the nesting doesn't work?
 archive/issue_comments_084528.json:
 ```json
 {
-    "body": "Replying to [comment:39 tscrim]:\n> I don't think there is a  to extend the nesting level since that is a latex thing,\n\nShame on LaTeX!\n\n> Anyways the fix for the pdf build is to remove a level (or two) of class nesting.\n\nWhat exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?\n\nInterestingly, there is the comment\n\n```\n# Do we really want this feature?\n```\n\n\nSo, can we do without this feature? Nicolas?",
+    "body": "Replying to [comment:39 tscrim]:\n> I don't think there is a  to extend the nesting level since that is a latex thing,\n\n\nShame on LaTeX!\n\n> Anyways the fix for the pdf build is to remove a level (or two) of class nesting.\n\n\nWhat exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?\n\nInterestingly, there is the comment\n\n```\n# Do we really want this feature?\n```\n\nSo, can we do without this feature? Nicolas?",
     "created_at": "2013-08-22T19:27:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1264,9 +1255,11 @@ archive/issue_comments_084528.json:
 Replying to [comment:39 tscrim]:
 > I don't think there is a  to extend the nesting level since that is a latex thing,
 
+
 Shame on LaTeX!
 
 > Anyways the fix for the pdf build is to remove a level (or two) of class nesting.
+
 
 What exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?
 
@@ -1275,7 +1268,6 @@ Interestingly, there is the comment
 ```
 # Do we really want this feature?
 ```
-
 
 So, can we do without this feature? Nicolas?
 
@@ -1286,7 +1278,7 @@ So, can we do without this feature? Nicolas?
 archive/issue_comments_084529.json:
 ```json
 {
-    "body": "Replying to [comment:40 SimonKing]:\n> Replying to [comment:39 tscrim]:\n> > Anyways the fix for the pdf build is to remove a level (or two) of class nesting.\n> \n> What exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?\n\nYes. Removing a level of nesting allowed the pdf for categories to build for me.",
+    "body": "Replying to [comment:40 SimonKing]:\n> Replying to [comment:39 tscrim]:\n> > Anyways the fix for the pdf build is to remove a level (or two) of class nesting.\n\n> \n> What exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?\n\n\nYes. Removing a level of nesting allowed the pdf for categories to build for me.",
     "created_at": "2013-08-23T04:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1298,8 +1290,10 @@ archive/issue_comments_084529.json:
 Replying to [comment:40 SimonKing]:
 > Replying to [comment:39 tscrim]:
 > > Anyways the fix for the pdf build is to remove a level (or two) of class nesting.
+
 > 
 > What exactly are we talking about? `Sets.WithRealizations.ParentMethods.Realizations`?
+
 
 Yes. Removing a level of nesting allowed the pdf for categories to build for me.
 
@@ -1310,7 +1304,7 @@ Yes. Removing a level of nesting allowed the pdf for categories to build for me.
 archive/issue_comments_084530.json:
 ```json
 {
-    "body": "Thanks much Travis for investigating!\n\nI agree that there should be a recommendation for not nesting classes\ntoo deep, for the sake of readability. But having a hard arbitrary\nlimit -- especially that small -- is annoying. Shame on LaTeX. Of\ncourse, one can always spin off a subtree of nested classes into a\nseparate tree, but there are cases where one has a deep tree with very\nfew lines and no natural splitting point. For example, #10963\nintroduces\n\n```\n    DistributiveMagmasAndAdditiveMagmas.AdditiveAssociative.AdditiveCommutative.AdditiveUnital.AdditiveInverse\n```\n\n\nHmm. Altogether, I would call this a LaTeX arbitrary hard\nlimitation. Luckily there seems to be an easy solution to increase\nthis limitation to something large enough to cover our current use\ncases, namely to use the package enumitem [1]. By itself, it brings\nthe nesting level to 6, and we could even increase it further (10\nshould be really safe) using \\setlistdepth{9}.\n\nI have attached the little latex file I used for testing.\n\nWhat do you think? Shall we add enumitems to the list of latex\npackages loaded by Sphinx? Is this standard enough, or shall we add\nenumitem.sty to the Sage distribution?\n\nCheers,\n                                     Nicolas\n\n[1] http://stackoverflow.com/questions/1935952/maximum-nesting-level-of-lists-in-latex",
+    "body": "Thanks much Travis for investigating!\n\nI agree that there should be a recommendation for not nesting classes\ntoo deep, for the sake of readability. But having a hard arbitrary\nlimit -- especially that small -- is annoying. Shame on LaTeX. Of\ncourse, one can always spin off a subtree of nested classes into a\nseparate tree, but there are cases where one has a deep tree with very\nfew lines and no natural splitting point. For example, #10963\nintroduces\n\n```\n    DistributiveMagmasAndAdditiveMagmas.AdditiveAssociative.AdditiveCommutative.AdditiveUnital.AdditiveInverse\n```\n\nHmm. Altogether, I would call this a LaTeX arbitrary hard\nlimitation. Luckily there seems to be an easy solution to increase\nthis limitation to something large enough to cover our current use\ncases, namely to use the package enumitem [1]. By itself, it brings\nthe nesting level to 6, and we could even increase it further (10\nshould be really safe) using \\setlistdepth{9}.\n\nI have attached the little latex file I used for testing.\n\nWhat do you think? Shall we add enumitems to the list of latex\npackages loaded by Sphinx? Is this standard enough, or shall we add\nenumitem.sty to the Sage distribution?\n\nCheers,\n                                     Nicolas\n\n[1] http://stackoverflow.com/questions/1935952/maximum-nesting-level-of-lists-in-latex",
     "created_at": "2013-08-23T08:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1332,7 +1326,6 @@ introduces
 ```
     DistributiveMagmasAndAdditiveMagmas.AdditiveAssociative.AdditiveCommutative.AdditiveUnital.AdditiveInverse
 ```
-
 
 Hmm. Altogether, I would call this a LaTeX arbitrary hard
 limitation. Luckily there seems to be an easy solution to increase
@@ -1395,7 +1388,7 @@ archive/issue_comments_084532.json:
 archive/issue_comments_084533.json:
 ```json
 {
-    "body": "Replying to [comment:43 jdemeyer]:\n> `enumitem.sty` looks pretty standard, so I'd say it's fine to use it.\n\n... which means there should be a separate ticket for adding it?",
+    "body": "Replying to [comment:43 jdemeyer]:\n> `enumitem.sty` looks pretty standard, so I'd say it's fine to use it.\n\n\n... which means there should be a separate ticket for adding it?",
     "created_at": "2013-08-23T10:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1407,6 +1400,7 @@ archive/issue_comments_084533.json:
 Replying to [comment:43 jdemeyer]:
 > `enumitem.sty` looks pretty standard, so I'd say it's fine to use it.
 
+
 ... which means there should be a separate ticket for adding it?
 
 
@@ -1416,7 +1410,7 @@ Replying to [comment:43 jdemeyer]:
 archive/issue_comments_084534.json:
 ```json
 {
-    "body": "Replying to [comment:44 SimonKing]:\n\n> ... which means there should be a separate ticket for adding it?\nAdding an `\\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.",
+    "body": "Replying to [comment:44 SimonKing]:\n\n> ... which means there should be a separate ticket for adding it?\n  \nAdding an `\\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.",
     "created_at": "2013-08-23T11:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1428,6 +1422,7 @@ archive/issue_comments_084534.json:
 Replying to [comment:44 SimonKing]:
 
 > ... which means there should be a separate ticket for adding it?
+  
 Adding an `\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.
 
 
@@ -1437,7 +1432,7 @@ Adding an `\usepackage{}` somewhere (don't ask me where) should be trivial enoug
 archive/issue_comments_084535.json:
 ```json
 {
-    "body": "Replying to [comment:45 jdemeyer]:\n> Replying to [comment:44 SimonKing]:\n> > ... which means there should be a separate ticket for adding it?\n> Adding an `\\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.\n\nSo, whom *do* we ask?",
+    "body": "Replying to [comment:45 jdemeyer]:\n> Replying to [comment:44 SimonKing]:\n> > ... which means there should be a separate ticket for adding it?\n  \n> Adding an `\\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.\n\nSo, whom *do* we ask?",
     "created_at": "2013-08-23T11:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1449,6 +1444,7 @@ archive/issue_comments_084535.json:
 Replying to [comment:45 jdemeyer]:
 > Replying to [comment:44 SimonKing]:
 > > ... which means there should be a separate ticket for adding it?
+  
 > Adding an `\usepackage{}` somewhere (don't ask me where) should be trivial enough that it can be done on this ticket.
 
 So, whom *do* we ask?
@@ -1478,7 +1474,7 @@ Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.p
 archive/issue_comments_084537.json:
 ```json
 {
-    "body": "Replying to [comment:47 tscrim]:\n> Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.\n\nAre you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.",
+    "body": "Replying to [comment:47 tscrim]:\n> Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.\n\n\nAre you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.",
     "created_at": "2013-08-23T19:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1490,6 +1486,7 @@ archive/issue_comments_084537.json:
 Replying to [comment:47 tscrim]:
 > Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.
 
+
 Are you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.
 
 
@@ -1499,7 +1496,7 @@ Are you saying that the problem is fixed by #14787? Then I suggest to add it as 
 archive/issue_comments_084538.json:
 ```json
 {
-    "body": "Replying to [comment:48 SimonKing]:\n> Replying to [comment:47 tscrim]:\n> > Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.\n> \n> Are you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.\n\nSorry, that was phrased badly. Ben and I added a latex package to the pdf builder in #14787, but it was not `enumitem.sty`.",
+    "body": "Replying to [comment:48 SimonKing]:\n> Replying to [comment:47 tscrim]:\n> > Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.\n\n> \n> Are you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.\n\n\nSorry, that was phrased badly. Ben and I added a latex package to the pdf builder in #14787, but it was not `enumitem.sty`.",
     "created_at": "2013-08-23T23:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1511,8 +1508,10 @@ archive/issue_comments_084538.json:
 Replying to [comment:48 SimonKing]:
 > Replying to [comment:47 tscrim]:
 > > Me; I just did this with Ben on #14787. You need to add it to `doc/common/conf.py`, and we also added it to `misc/latex.py`, which might be some overkill, but it doesn't really hurt to be extra safe here.
+
 > 
 > Are you saying that the problem is fixed by #14787? Then I suggest to add it as dependency.
+
 
 Sorry, that was phrased badly. Ben and I added a latex package to the pdf builder in #14787, but it was not `enumitem.sty`.
 
@@ -1562,7 +1561,7 @@ Attachment [categories.tex](tarball://root/attachments/some-uuid/ticket9107/cate
 archive/issue_comments_084541.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\nReplying to [comment:51 nthiery]:\n> For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.\n\nWhat exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n\nCould it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?\n\n```\nHowever this requires version 3.0 of enumitem, which doesn't yet ship\nwith many linux latex distributions.\n```\n",
+    "body": "Hi Nicolas,\n\nReplying to [comment:51 nthiery]:\n> For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.\n\n\nWhat exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n\nCould it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?\n\n```\nHowever this requires version 3.0 of enumitem, which doesn't yet ship\nwith many linux latex distributions.\n```",
     "created_at": "2013-08-27T11:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1576,6 +1575,7 @@ Hi Nicolas,
 Replying to [comment:51 nthiery]:
 > For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.
 
+
 What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?
 
 Could it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?
@@ -1587,13 +1587,12 @@ with many linux latex distributions.
 
 
 
-
 ---
 
 archive/issue_comments_084542.json:
 ```json
 {
-    "body": "Replying to [comment:52 SimonKing]:\n> Replying to [comment:51 nthiery]:\n> > For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.\n> \n> What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n\nI changed conf.py which properly added it to the generated\ncategories.tex file (see the top of that file).\n\n> Could it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?\n> {{{\n> However this requires version 3.0 of enumitem, which doesn't yet ship\n> with many linux latex distributions.\n> }}}\n> \n\nI have 3.5.2 ...",
+    "body": "Replying to [comment:52 SimonKing]:\n> Replying to [comment:51 nthiery]:\n> > For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.\n\n> \n> What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n\n\nI changed conf.py which properly added it to the generated\ncategories.tex file (see the top of that file).\n\n> Could it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?\n> \n> ```\n> However this requires version 3.0 of enumitem, which doesn't yet ship\n> with many linux latex distributions.\n> ```\n> \n\n\nI have 3.5.2 ...",
     "created_at": "2013-08-27T12:36:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1605,18 +1604,22 @@ archive/issue_comments_084542.json:
 Replying to [comment:52 SimonKing]:
 > Replying to [comment:51 nthiery]:
 > > For the record: someone else got a similar issue when using sphinx [1], and suggested the same fix. Alas this fix does not seem to be enough.
+
 > 
 > What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?
+
 
 I changed conf.py which properly added it to the generated
 categories.tex file (see the top of that file).
 
 > Could it be that the following comment from [the page you are citing](http://mail.scipy.org/pipermail/ipython-user/2012-May/010144.html) applies?
-> {{{
+> 
+> ```
 > However this requires version 3.0 of enumitem, which doesn't yet ship
 > with many linux latex distributions.
-> }}}
+> ```
 > 
+
 
 I have 3.5.2 ...
 
@@ -1627,7 +1630,7 @@ I have 3.5.2 ...
 archive/issue_comments_084543.json:
 ```json
 {
-    "body": "Replying to [comment:53 nthiery]:\n> Replying to [comment:52 SimonKing]:\n> > What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n> \n> I changed conf.py which properly added it to the generated\n> categories.tex file (see the top of that file).\n\nHm. Then, we are back to the question: What the heck is going wrong? Could we\nperhaps ask on some `LaTeX` forum about the problem? I mean, if we have a tex\nfile that does not compile, even though nesting should not be the problem any\nmore, then I think `LaTeX` people should be made aware.",
+    "body": "Replying to [comment:53 nthiery]:\n> Replying to [comment:52 SimonKing]:\n> > What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?\n\n> \n> I changed conf.py which properly added it to the generated\n> categories.tex file (see the top of that file).\n\n\nHm. Then, we are back to the question: What the heck is going wrong? Could we\nperhaps ask on some `LaTeX` forum about the problem? I mean, if we have a tex\nfile that does not compile, even though nesting should not be the problem any\nmore, then I think `LaTeX` people should be made aware.",
     "created_at": "2013-08-27T12:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1639,9 +1642,11 @@ archive/issue_comments_084543.json:
 Replying to [comment:53 nthiery]:
 > Replying to [comment:52 SimonKing]:
 > > What exactly did you do? Change sphinx.sty, as in the source you are giving? Or change doc/common/conf.py and misc/latex.py, as advised by Travis in comment:47?
+
 > 
 > I changed conf.py which properly added it to the generated
 > categories.tex file (see the top of that file).
+
 
 Hm. Then, we are back to the question: What the heck is going wrong? Could we
 perhaps ask on some `LaTeX` forum about the problem? I mean, if we have a tex
@@ -1673,7 +1678,7 @@ How can one test [attachment:categories.tex]? I can not run pdflatex on it, beca
 archive/issue_comments_084545.json:
 ```json
 {
-    "body": "Replying to [comment:55 SimonKing]:\n> How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?\n\nWhen I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n\nSo, please tell me how one is supposed to run pdflatex on this file, so that I can reproduce the problem.",
+    "body": "Replying to [comment:55 SimonKing]:\n> How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?\n\n\nWhen I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n\nSo, please tell me how one is supposed to run pdflatex on this file, so that I can reproduce the problem.",
     "created_at": "2013-08-27T14:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1684,6 +1689,7 @@ archive/issue_comments_084545.json:
 
 Replying to [comment:55 SimonKing]:
 > How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?
+
 
 When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.
 
@@ -1696,7 +1702,7 @@ So, please tell me how one is supposed to run pdflatex on this file, so that I c
 archive/issue_comments_084546.json:
 ```json
 {
-    "body": "Replying to [comment:56 SimonKing]:\n> Replying to [comment:55 SimonKing]:\n> > How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?\n\n> When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n\nYou are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). \n\nOr you can just be lazy and put the categories.tex file in the directory \n\n```\n        <SAGE>/devel/sage/doc/output/latex/en/reference/categories\n```\n\nand run pdflatex from there.",
+    "body": "Replying to [comment:56 SimonKing]:\n> Replying to [comment:55 SimonKing]:\n> > How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?\n\n\n> When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n\n\nYou are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). \n\nOr you can just be lazy and put the categories.tex file in the directory \n\n```\n        <SAGE>/devel/sage/doc/output/latex/en/reference/categories\n```\nand run pdflatex from there.",
     "created_at": "2013-08-28T09:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1709,7 +1715,9 @@ Replying to [comment:56 SimonKing]:
 > Replying to [comment:55 SimonKing]:
 > > How can one test [attachment:categories.tex]? I can not run pdflatex on it, because it can't find `sphinxmanual.cls`. Where do I get this file (and probably other files) from?
 
+
 > When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.
+
 
 You are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). 
 
@@ -1718,7 +1726,6 @@ Or you can just be lazy and put the categories.tex file in the directory
 ```
         <SAGE>/devel/sage/doc/output/latex/en/reference/categories
 ```
-
 and run pdflatex from there.
 
 
@@ -1728,7 +1735,7 @@ and run pdflatex from there.
 archive/issue_comments_084547.json:
 ```json
 {
-    "body": "Replying to [comment:57 nthiery]:\n> Replying to [comment:56 SimonKing]:\n> > When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n>\n> You are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). \n\nNope. After\n\n```\ndeclare -x TEXINPUTS=.:~/SAGE/prerelease/sage-5.11.beta3/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/:\n```\n\n`pdflatex categories.tex` results in\n\n```\n! Undefined control sequence.\n<recently read> \\setlistdepth \n                              \nl.19 \\setlistdepth\n                  {9}\n? \n! Emergency stop.\n<recently read> \\setlistdepth \n                              \nl.19 \\setlistdepth\n                  {9}\n!  ==> Fatal error occurred, no output PDF file produced!\n```\n\n\n > Or you can just be lazy and put the categories.tex file in the directory \n> {{{\n>         <SAGE>/devel/sage/doc/output/latex/en/reference/categories\n> }}}\n> and run pdflatex from there.\n\nNope, because this folder doesn't exist. Do I need to attempt building the pdf documentation first?",
+    "body": "Replying to [comment:57 nthiery]:\n> Replying to [comment:56 SimonKing]:\n> > When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.\n\n>\n> You are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). \n\n\nNope. After\n\n```\ndeclare -x TEXINPUTS=.:~/SAGE/prerelease/sage-5.11.beta3/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/:\n```\n`pdflatex categories.tex` results in\n\n```\n! Undefined control sequence.\n<recently read> \\setlistdepth \n                              \nl.19 \\setlistdepth\n                  {9}\n? \n! Emergency stop.\n<recently read> \\setlistdepth \n                              \nl.19 \\setlistdepth\n                  {9}\n!  ==> Fatal error occurred, no output PDF file produced!\n```\n\n > Or you can just be lazy and put the categories.tex file in the directory \n> {{{\n>         <SAGE>/devel/sage/doc/output/latex/en/reference/categories\n> }}}\n> and run pdflatex from there.\n\n\nNope, because this folder doesn't exist. Do I need to attempt building the pdf documentation first?",
     "created_at": "2013-08-28T09:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1740,15 +1747,16 @@ archive/issue_comments_084547.json:
 Replying to [comment:57 nthiery]:
 > Replying to [comment:56 SimonKing]:
 > > When I do `declare -x TEXINPUTS=.:$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/` then it does find sphinxmanual.cls, but the next attempt to call pdflatex on categories.tex fails as well. This time, it can't find `report.cls`.
+
 >
 > You are missing a : at the end of TEXINPUT to let latex use its own library (report.cls is a standard class). 
+
 
 Nope. After
 
 ```
 declare -x TEXINPUTS=.:~/SAGE/prerelease/sage-5.11.beta3/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/texinputs/:
 ```
-
 `pdflatex categories.tex` results in
 
 ```
@@ -1766,12 +1774,12 @@ l.19 \setlistdepth
 !  ==> Fatal error occurred, no output PDF file produced!
 ```
 
-
  > Or you can just be lazy and put the categories.tex file in the directory 
 > {{{
 >         <SAGE>/devel/sage/doc/output/latex/en/reference/categories
 > }}}
 > and run pdflatex from there.
+
 
 Nope, because this folder doesn't exist. Do I need to attempt building the pdf documentation first?
 
@@ -1782,7 +1790,7 @@ Nope, because this folder doesn't exist. Do I need to attempt building the pdf d
 archive/issue_comments_084548.json:
 ```json
 {
-    "body": "PS: Changing\n\n```\n\\RequirePackage{enumitem}\n```\n\ninto\n\n```\n\\usepackage{enumitem}\n```\n\ndid not help.",
+    "body": "PS: Changing\n\n```\n\\RequirePackage{enumitem}\n```\ninto\n\n```\n\\usepackage{enumitem}\n```\ndid not help.",
     "created_at": "2013-08-28T09:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1796,13 +1804,11 @@ PS: Changing
 ```
 \RequirePackage{enumitem}
 ```
-
 into
 
 ```
 \usepackage{enumitem}
 ```
-
 did not help.
 
 
@@ -1812,7 +1818,7 @@ did not help.
 archive/issue_comments_084549.json:
 ```json
 {
-    "body": "Aha. The log shows:\n\n```\nenumitem 2009/05/18 v2.2 Customized lists\n```\n\nand I guess that's too old.",
+    "body": "Aha. The log shows:\n\n```\nenumitem 2009/05/18 v2.2 Customized lists\n```\nand I guess that's too old.",
     "created_at": "2013-08-28T10:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1826,7 +1832,6 @@ Aha. The log shows:
 ```
 enumitem 2009/05/18 v2.2 Customized lists
 ```
-
 and I guess that's too old.
 
 
@@ -1836,7 +1841,7 @@ and I guess that's too old.
 archive/issue_comments_084550.json:
 ```json
 {
-    "body": "OK, after getting a more recent version of the enumitem package, I first get a \"too deeply nested\" error on [attachment:categories.tex]. However, after doing\n\n```\n\\setlistdepth{10}\n```\n\n(and not just depth 9), it compiles fine.\n\nSo, in other words, the problem *can* be solved. But I really wonder about the requirement that the user has to have a latex installation with a very recent enumitem. Can this be really required? Or would we be allowed to ship enumitem.sty with Sage?",
+    "body": "OK, after getting a more recent version of the enumitem package, I first get a \"too deeply nested\" error on [attachment:categories.tex]. However, after doing\n\n```\n\\setlistdepth{10}\n```\n(and not just depth 9), it compiles fine.\n\nSo, in other words, the problem *can* be solved. But I really wonder about the requirement that the user has to have a latex installation with a very recent enumitem. Can this be really required? Or would we be allowed to ship enumitem.sty with Sage?",
     "created_at": "2013-08-28T10:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1850,7 +1855,6 @@ OK, after getting a more recent version of the enumitem package, I first get a "
 ```
 \setlistdepth{10}
 ```
-
 (and not just depth 9), it compiles fine.
 
 So, in other words, the problem *can* be solved. But I really wonder about the requirement that the user has to have a latex installation with a very recent enumitem. Can this be really required? Or would we be allowed to ship enumitem.sty with Sage?
@@ -1900,7 +1904,7 @@ Well, it does compile, but it does not work. Look at the ugly output in [attachm
 archive/issue_comments_084553.json:
 ```json
 {
-    "body": "Replying to [comment:61 SimonKing]:\n> OK, after getting a more recent version of the enumitem package, I first get a \"too deeply nested\" error on [attachment:categories.tex]. However, after doing\n> {{{\n> \\setlistdepth{10}\n> }}}\n> (and not just depth 9), it compiles fine.\n> So, in other words, the problem *can* be solved.\n\nWhat? Really? I thought I had tried that. Ah, I see, the level that\nyou have to put seems to actually have nothing to do with the actual\ndepth of your itemize. Now I can compile the full categories\ndocumentation, but that requires `\\setlistdepth{275`}!!! There\nmust be something wrong in the depth-counting logic of enumitem ...\n\n> But I really wonder about the requirement that the user has to have\n> a latex installation with a very recent enumitem. Can this be really\n> required? Or would we be allowed to ship enumitem.sty with Sage?\n\nI would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in\n`/opt/sage-dev/local/share/texmf/tex/generic` ?\n\n\nCheers,\n                                Nicolas",
+    "body": "Replying to [comment:61 SimonKing]:\n> OK, after getting a more recent version of the enumitem package, I first get a \"too deeply nested\" error on [attachment:categories.tex]. However, after doing\n> \n> ```\n> \\setlistdepth{10}\n> ```\n> (and not just depth 9), it compiles fine.\n> So, in other words, the problem *can* be solved.\n\n\nWhat? Really? I thought I had tried that. Ah, I see, the level that\nyou have to put seems to actually have nothing to do with the actual\ndepth of your itemize. Now I can compile the full categories\ndocumentation, but that requires `\\setlistdepth{275`}!!! There\nmust be something wrong in the depth-counting logic of enumitem ...\n\n> But I really wonder about the requirement that the user has to have\n> a latex installation with a very recent enumitem. Can this be really\n> required? Or would we be allowed to ship enumitem.sty with Sage?\n\n\nI would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in\n`/opt/sage-dev/local/share/texmf/tex/generic` ?\n\n\nCheers,\n                                Nicolas",
     "created_at": "2013-08-28T12:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1911,11 +1915,13 @@ archive/issue_comments_084553.json:
 
 Replying to [comment:61 SimonKing]:
 > OK, after getting a more recent version of the enumitem package, I first get a "too deeply nested" error on [attachment:categories.tex]. However, after doing
-> {{{
+> 
+> ```
 > \setlistdepth{10}
-> }}}
+> ```
 > (and not just depth 9), it compiles fine.
 > So, in other words, the problem *can* be solved.
+
 
 What? Really? I thought I had tried that. Ah, I see, the level that
 you have to put seems to actually have nothing to do with the actual
@@ -1926,6 +1932,7 @@ must be something wrong in the depth-counting logic of enumitem ...
 > But I really wonder about the requirement that the user has to have
 > a latex installation with a very recent enumitem. Can this be really
 > required? Or would we be allowed to ship enumitem.sty with Sage?
+
 
 I would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in
 `/opt/sage-dev/local/share/texmf/tex/generic` ?
@@ -1941,7 +1948,7 @@ Cheers,
 archive/issue_comments_084554.json:
 ```json
 {
-    "body": "Replying to [comment:62 SimonKing]:\n> Well, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].\n\nNothing to worry about: this filed was obtained by stripping lots of stuff from an actual tex file; I am not surprised it does not look good. On the other hand, I had a look at the full categories.pdf produced by sphinx, and it looked reasonable.",
+    "body": "Replying to [comment:62 SimonKing]:\n> Well, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].\n\n\nNothing to worry about: this filed was obtained by stripping lots of stuff from an actual tex file; I am not surprised it does not look good. On the other hand, I had a look at the full categories.pdf produced by sphinx, and it looked reasonable.",
     "created_at": "2013-08-28T12:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1953,6 +1960,7 @@ archive/issue_comments_084554.json:
 Replying to [comment:62 SimonKing]:
 > Well, it does compile, but it does not work. Look at the ugly output in [attachment:categories.pdf].
 
+
 Nothing to worry about: this filed was obtained by stripping lots of stuff from an actual tex file; I am not surprised it does not look good. On the other hand, I had a look at the full categories.pdf produced by sphinx, and it looked reasonable.
 
 
@@ -1962,7 +1970,7 @@ Nothing to worry about: this filed was obtained by stripping lots of stuff from 
 archive/issue_comments_084555.json:
 ```json
 {
-    "body": "Replying to [comment:63 nthiery]:\n> Now I can compile the full categories\n> documentation, but that requires `\\setlistdepth{275`}!!! There\n> must be something wrong in the depth-counting logic of enumitem ...\n\nOuch. So, if it really turns out that the depth-counting is broken (did you check that the nesting of lists in the created tex file are not broken?), then we should perhaps consider to search for an alternative solution.\n\nFor example, is it really needed to use nesting in the resulting tex file? Or could one create a nice layout without nesting? If I understand correctly, *we* (i.e., Sage) are creating the tex file. Hence, we can control what happens.\n\n> I would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in\n> `/opt/sage-dev/local/share/texmf/tex/generic` ?\n\nI have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...",
+    "body": "Replying to [comment:63 nthiery]:\n> Now I can compile the full categories\n> documentation, but that requires `\\setlistdepth{275`}!!! There\n> must be something wrong in the depth-counting logic of enumitem ...\n\n\nOuch. So, if it really turns out that the depth-counting is broken (did you check that the nesting of lists in the created tex file are not broken?), then we should perhaps consider to search for an alternative solution.\n\nFor example, is it really needed to use nesting in the resulting tex file? Or could one create a nice layout without nesting? If I understand correctly, *we* (i.e., Sage) are creating the tex file. Hence, we can control what happens.\n\n> I would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in\n> `/opt/sage-dev/local/share/texmf/tex/generic` ?\n\n\nI have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...",
     "created_at": "2013-08-28T13:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -1976,12 +1984,14 @@ Replying to [comment:63 nthiery]:
 > documentation, but that requires `\setlistdepth{275`}!!! There
 > must be something wrong in the depth-counting logic of enumitem ...
 
+
 Ouch. So, if it really turns out that the depth-counting is broken (did you check that the nesting of lists in the created tex file are not broken?), then we should perhaps consider to search for an alternative solution.
 
 For example, is it really needed to use nesting in the resulting tex file? Or could one create a nice layout without nesting? If I understand correctly, *we* (i.e., Sage) are creating the tex file. Hence, we can control what happens.
 
 > I would vote for shipping enumitem.sty if that's easy. Jeroen/Volker/..., can we just throw it in
 > `/opt/sage-dev/local/share/texmf/tex/generic` ?
+
 
 I have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...
 
@@ -1992,7 +2002,7 @@ I have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sag
 archive/issue_comments_084556.json:
 ```json
 {
-    "body": "Replying to [comment:65 SimonKing]:\n> I have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...\n\nThanks for the pointer. I answered there.",
+    "body": "Replying to [comment:65 SimonKing]:\n> I have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...\n\n\nThanks for the pointer. I answered there.",
     "created_at": "2013-08-29T16:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2003,6 +2013,7 @@ archive/issue_comments_084556.json:
 
 Replying to [comment:65 SimonKing]:
 > I have already asked on [sage-devel](https://groups.google.com/forum/#!topic/sage-devel/8Q-I0e2OESE)...
+
 
 Thanks for the pointer. I answered there.
 
@@ -2122,7 +2133,7 @@ Cheers,
 archive/issue_comments_084559.json:
 ```json
 {
-    "body": "Replying to [comment:69 vbraun]:\n> Just require enumitems, geez... \n\nWhat exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}` (I have not heard about the plural, `enumitems`), or will we also need to change the latex code emitted for nested classes? And how?",
+    "body": "Replying to [comment:69 vbraun]:\n> Just require enumitems, geez... \n\n\nWhat exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}` (I have not heard about the plural, `enumitems`), or will we also need to change the latex code emitted for nested classes? And how?",
     "created_at": "2014-06-12T15:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2134,6 +2145,7 @@ archive/issue_comments_084559.json:
 Replying to [comment:69 vbraun]:
 > Just require enumitems, geez... 
 
+
 What exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}` (I have not heard about the plural, `enumitems`), or will we also need to change the latex code emitted for nested classes? And how?
 
 
@@ -2143,7 +2155,7 @@ What exactly do you mean? Would it be sufficient to let Sage insert `usepackage{
 archive/issue_comments_084560.json:
 ```json
 {
-    "body": "Replying to [comment:72 SimonKing]:\n> What exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}`\n\nThat's my understanding and what I did in my latest commit. Plus raising the depth limit to a stupidly high value.\n\nThere seems to still be some compilation issue, but I guess they are just due to more stuff getting compiled, hence catching glitches that had gone unnoticed so far. I'll check this out tomorrow.\n\nCheers,\n                                Nicolas",
+    "body": "Replying to [comment:72 SimonKing]:\n> What exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}`\n\n\nThat's my understanding and what I did in my latest commit. Plus raising the depth limit to a stupidly high value.\n\nThere seems to still be some compilation issue, but I guess they are just due to more stuff getting compiled, hence catching glitches that had gone unnoticed so far. I'll check this out tomorrow.\n\nCheers,\n                                Nicolas",
     "created_at": "2014-06-12T21:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2154,6 +2166,7 @@ archive/issue_comments_084560.json:
 
 Replying to [comment:72 SimonKing]:
 > What exactly do you mean? Would it be sufficient to let Sage insert `usepackage{enumitem}`
+
 
 That's my understanding and what I did in my latest commit. Plus raising the depth limit to a stupidly high value.
 
@@ -2169,7 +2182,7 @@ Cheers,
 archive/issue_comments_084561.json:
 ```json
 {
-    "body": "Gosh, it turned out that using `\\setlistdepth{275}` was not sufficient\nanymore: I had to use `\\setlistdepth{2000}`! This meant the problem\nwould just keep going to be worst and worst with time.\n\nSo I investigated a further and got lucky this time: if we replace\nlist by trivlist in the customized Verbatim defined by `sphinx.sty`,\nthen our documenation compiles smoothly, without even using enumitem.\n\nI proposed this fix upstream:\n\nhttps://bitbucket.org/birkenfeld/sphinx/issue/777/latex-output-too-deeply-nested\n\nFor the time being, I tweaked our conf.py to redefine and fix sphinx's\nVerbatim.\n\nOk, now there just remains to check that all tests pass, and this will\nbe a needs review.\n\nCheers,\n                              Nicolas\n----\nNew commits:",
+    "body": "Gosh, it turned out that using `\\setlistdepth{275}` was not sufficient\nanymore: I had to use `\\setlistdepth{2000}`! This meant the problem\nwould just keep going to be worst and worst with time.\n\nSo I investigated a further and got lucky this time: if we replace\nlist by trivlist in the customized Verbatim defined by `sphinx.sty`,\nthen our documenation compiles smoothly, without even using enumitem.\n\nI proposed this fix upstream:\n\nhttps://bitbucket.org/birkenfeld/sphinx/issue/777/latex-output-too-deeply-nested\n\nFor the time being, I tweaked our conf.py to redefine and fix sphinx's\nVerbatim.\n\nOk, now there just remains to check that all tests pass, and this will\nbe a needs review.\n\nCheers,\n                              Nicolas\n\n---\nNew commits:",
     "created_at": "2014-06-13T09:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2198,7 +2211,8 @@ be a needs review.
 
 Cheers,
                               Nicolas
-----
+
+---
 New commits:
 
 
@@ -2226,7 +2240,7 @@ Is there a reason why you don't patch the sphinx spkg directly?
 archive/issue_comments_084563.json:
 ```json
 {
-    "body": "Replying to [comment:76 tscrim]:\n> Is there a reason why you don't patch the sphinx spkg directly?\n\nLazyness mostly. If someone whats to create a patch, adapt the spkg, ... please go ahead!",
+    "body": "Replying to [comment:76 tscrim]:\n> Is there a reason why you don't patch the sphinx spkg directly?\n\n\nLazyness mostly. If someone whats to create a patch, adapt the spkg, ... please go ahead!",
     "created_at": "2014-06-13T19:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2237,6 +2251,7 @@ archive/issue_comments_084563.json:
 
 Replying to [comment:76 tscrim]:
 > Is there a reason why you don't patch the sphinx spkg directly?
+
 
 Lazyness mostly. If someone whats to create a patch, adapt the spkg, ... please go ahead!
 
@@ -2301,7 +2316,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084567.json:
 ```json
 {
-    "body": "Here's a version with a patched version of the sphinx spkg. Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).\n----\nNew commits:",
+    "body": "Here's a version with a patched version of the sphinx spkg. Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).\n\n---\nNew commits:",
     "created_at": "2014-06-13T21:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2311,7 +2326,8 @@ archive/issue_comments_084567.json:
 ```
 
 Here's a version with a patched version of the sphinx spkg. Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).
-----
+
+---
 New commits:
 
 
@@ -2339,7 +2355,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_084569.json:
 ```json
 {
-    "body": "Replying to [comment:80 tscrim]:\n> Here's a version with a patched version of the sphinx spkg.\n\nAh, that's nice: modifying standard spkgs is much simpler now that we have a single repository. Thanks!\n\n> Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).\n\nIt seems to apply as it's supposed to (modulo trivial line offset).\n\nI have made some minor improvement to the patch description.\n\nI am a bit nervous about the removal of the former change log in SPKG.txt. But if someone can confirm that this is the right thing to do, that's ok for me.\n\nOther than this, this sounds good to go!\n\nThanks again,\n                                            Nicolas",
+    "body": "Replying to [comment:80 tscrim]:\n> Here's a version with a patched version of the sphinx spkg.\n\n\nAh, that's nice: modifying standard spkgs is much simpler now that we have a single repository. Thanks!\n\n> Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).\n\n\nIt seems to apply as it's supposed to (modulo trivial line offset).\n\nI have made some minor improvement to the patch description.\n\nI am a bit nervous about the removal of the former change log in SPKG.txt. But if someone can confirm that this is the right thing to do, that's ok for me.\n\nOther than this, this sounds good to go!\n\nThanks again,\n                                            Nicolas",
     "created_at": "2014-06-16T20:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2351,9 +2367,11 @@ archive/issue_comments_084569.json:
 Replying to [comment:80 tscrim]:
 > Here's a version with a patched version of the sphinx spkg.
 
+
 Ah, that's nice: modifying standard spkgs is much simpler now that we have a single repository. Thanks!
 
 > Although I think your pull request is based on v1.2 (but it still applied (for me) to our current v1.1). Could someone check to make sure I created the patch correctly (and tell me what I should do instead if it isn't right).
+
 
 It seems to apply as it's supposed to (modulo trivial line offset).
 
@@ -2373,7 +2391,7 @@ Thanks again,
 archive/issue_comments_084570.json:
 ```json
 {
-    "body": "Replying to [comment:82 nthiery]:\n> I am a bit nervous about the removal of the former change log in SPKG.txt. But if someone can confirm that this is the right thing to do, that's ok for me.\n\nDo it! ;-)",
+    "body": "Replying to [comment:82 nthiery]:\n> I am a bit nervous about the removal of the former change log in SPKG.txt. But if someone can confirm that this is the right thing to do, that's ok for me.\n\n\nDo it! ;-)",
     "created_at": "2014-06-16T21:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9107",
     "type": "issue_comment",
@@ -2384,6 +2402,7 @@ archive/issue_comments_084570.json:
 
 Replying to [comment:82 nthiery]:
 > I am a bit nervous about the removal of the former change log in SPKG.txt. But if someone can confirm that this is the right thing to do, that's ok for me.
+
 
 Do it! ;-)
 

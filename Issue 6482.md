@@ -3,7 +3,7 @@
 archive/issues_006482.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nOn Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:\n>\n> Hi,\n>\n> I was surprised to see\n>\n> sage: R.<x,y>=QQ[]\n> sage: g=x+y\n> sage: g.subs({x:x+1,y:x*y})\n> x*y + x + y + 1\n>\n> So the order of substitution matters...unfortunately.\n>\n> sage: g.subs({x:x+1}).subs({y:x*y})\n> x*y + x + 1\n> sage: g.subs({y:x*y}).subs({x:x+1})\n> x*y + x + y + 1\n>\n> So the order seems to be from right to left. This seems to me\n> unnatural. Anyway this is undocumented. \n\nActually, i guess it is documented.  However, I consider it a serious design flaw.\nMany thanks for pointing this out!!\n\nI consider this a serious design flaw for the following reasons:\n\n (1) it is too hard to understand the above behavior, since it depends on the hash values symbolic variables, which might possibly be system-dependent.\n\n (2) it is totally inconsistent with the behavior for symbolic expressions, where things are done right.\n\n (3) it is totally inconsistent with the behavior of *homomorphisms*, where things are also done right.\n\nHere is a session to illustrate the above points:\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + y + 1\n\n# GOOD\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: phi(g)\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + 1\n        \n\n> What should be done to this?\n\n1. I suggest that for now you use Hom, as illustrated above, as a workaround.  \n\n2. I think subs should be reimplemented using Hom ASAP.  Note that this could break existing code, so will have to be done carefully.    We can leave the old behavior in for speed, but as a non-default option.\n\n3. Come up with a fast way to implement the new behavior. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6482\n\n",
+    "body": "Assignee: @malb\n\n```\nOn Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:\n>\n> Hi,\n>\n> I was surprised to see\n>\n> sage: R.<x,y>=QQ[]\n> sage: g=x+y\n> sage: g.subs({x:x+1,y:x*y})\n> x*y + x + y + 1\n>\n> So the order of substitution matters...unfortunately.\n>\n> sage: g.subs({x:x+1}).subs({y:x*y})\n> x*y + x + 1\n> sage: g.subs({y:x*y}).subs({x:x+1})\n> x*y + x + y + 1\n>\n> So the order seems to be from right to left. This seems to me\n> unnatural. Anyway this is undocumented. \n\nActually, i guess it is documented.  However, I consider it a serious design flaw.\nMany thanks for pointing this out!!\n\nI consider this a serious design flaw for the following reasons:\n\n (1) it is too hard to understand the above behavior, since it depends on the hash values symbolic variables, which might possibly be system-dependent.\n\n (2) it is totally inconsistent with the behavior for symbolic expressions, where things are done right.\n\n (3) it is totally inconsistent with the behavior of *homomorphisms*, where things are also done right.\n\nHere is a session to illustrate the above points:\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + y + 1\n\n# GOOD\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: phi(g)\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + 1\n        \n\n> What should be done to this?\n\n1. I suggest that for now you use Hom, as illustrated above, as a workaround.  \n\n2. I think subs should be reimplemented using Hom ASAP.  Note that this could break existing code, so will have to be done carefully.    We can leave the old behavior in for speed, but as a non-default option.\n\n3. Come up with a fast way to implement the new behavior. \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6482\n\n",
     "created_at": "2009-07-08T13:08:58Z",
     "labels": [
         "component: commutative algebra",
@@ -18,7 +18,6 @@ archive/issues_006482.json:
 }
 ```
 Assignee: @malb
-
 
 ```
 On Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:
@@ -97,7 +96,6 @@ x*y + x + 1
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6482
 
 
@@ -109,7 +107,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6482
 archive/issue_comments_052304.json:
 ```json
 {
-    "body": "the main use-case for which I wrote it is (which **must** be fast):\n\n\n```\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: %timeit g.subs({x:2,y:1})\n10000 loops, best of 3: 62.9 \u00b5s per loop\n```\n\n\nThe performance for elements in R is:\n\n\n```\nsage: %timeit g.subs({x:x+1,y:x*y})\n10000 loops, best of 3: 153 \u00b5s per loop\n```\n\n\nHowever, to my surprise `hom` is faster:\n\n\n```\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: %timeit phi(g)\n10000 loops, best of 3: 45.8 \u00b5s per loop\n```\n\n\n\nIs it because it caches or is really just better code?",
+    "body": "the main use-case for which I wrote it is (which **must** be fast):\n\n```\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: %timeit g.subs({x:2,y:1})\n10000 loops, best of 3: 62.9 \u00b5s per loop\n```\n\nThe performance for elements in R is:\n\n```\nsage: %timeit g.subs({x:x+1,y:x*y})\n10000 loops, best of 3: 153 \u00b5s per loop\n```\n\nHowever, to my surprise `hom` is faster:\n\n```\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: %timeit phi(g)\n10000 loops, best of 3: 45.8 \u00b5s per loop\n```\n\n\nIs it because it caches or is really just better code?",
     "created_at": "2009-07-08T13:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -120,7 +118,6 @@ archive/issue_comments_052304.json:
 
 the main use-case for which I wrote it is (which **must** be fast):
 
-
 ```
 sage: R.<x,y>=QQ[]
 sage: g=x+y
@@ -128,18 +125,14 @@ sage: %timeit g.subs({x:2,y:1})
 10000 loops, best of 3: 62.9 µs per loop
 ```
 
-
 The performance for elements in R is:
-
 
 ```
 sage: %timeit g.subs({x:x+1,y:x*y})
 10000 loops, best of 3: 153 µs per loop
 ```
 
-
 However, to my surprise `hom` is faster:
-
 
 ```
 sage: R.<x,y>=QQ[]
@@ -148,7 +141,6 @@ sage: g=x+y
 sage: %timeit phi(g)
 10000 loops, best of 3: 45.8 µs per loop
 ```
-
 
 
 Is it because it caches or is really just better code?
@@ -160,7 +152,7 @@ Is it because it caches or is really just better code?
 archive/issue_comments_052305.json:
 ```json
 {
-    "body": "> Is it because it caches or is really just better code? \n\nHom is implemented by Singular when the base ring is a singular ring. \n\n```\nsage: R.<x,y>=GF(next_prime(10^9))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n625 loops, best of 3: 39.7 \u00b5s per loop\nsage: R.<x,y>=GF(next_prime(10^10))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>\n625 loops, best of 3: 305 \u00b5s per loop     \n```\n",
+    "body": "> Is it because it caches or is really just better code? \n\n\nHom is implemented by Singular when the base ring is a singular ring. \n\n```\nsage: R.<x,y>=GF(next_prime(10^9))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n625 loops, best of 3: 39.7 \u00b5s per loop\nsage: R.<x,y>=GF(next_prime(10^10))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>\n625 loops, best of 3: 305 \u00b5s per loop     \n```",
     "created_at": "2009-07-08T21:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -170,6 +162,7 @@ archive/issue_comments_052305.json:
 ```
 
 > Is it because it caches or is really just better code? 
+
 
 Hom is implemented by Singular when the base ring is a singular ring. 
 
@@ -192,13 +185,12 @@ sage: timeit('phi(g)')
 
 
 
-
 ---
 
 archive/issue_comments_052306.json:
 ```json
 {
-    "body": "So it is `_im_gens_` in `MPolynomial_libsingular` then (sorry for not checking myself earlier). \n\nIt seems the most straight-forward implementation possible including the comment `#TODO: very slow` in `_im_gens_` wins for small examples, but for bigger ones we get:\n\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n10000 loops, best of 3: 138 \u00b5s per loop\n```\n\n\n\n```\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 893 \u00b5s per loop\n```\n",
+    "body": "So it is `_im_gens_` in `MPolynomial_libsingular` then (sorry for not checking myself earlier). \n\nIt seems the most straight-forward implementation possible including the comment `#TODO: very slow` in `_im_gens_` wins for small examples, but for bigger ones we get:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n10000 loops, best of 3: 138 \u00b5s per loop\n```\n\n```\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 893 \u00b5s per loop\n```",
     "created_at": "2009-07-08T22:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -211,7 +203,6 @@ So it is `_im_gens_` in `MPolynomial_libsingular` then (sorry for not checking m
 
 It seems the most straight-forward implementation possible including the comment `#TODO: very slow` in `_im_gens_` wins for small examples, but for bigger ones we get:
 
-
 ```
 sage: P.<a,b,c,d,e> = PolynomialRing(QQ)
 sage: f = P.random_element(degree=3,terms=50)
@@ -219,8 +210,6 @@ sage: g = {a:b,b:c,c:d,d:e,e:a}
 sage: %timeit f.subs(g)
 10000 loops, best of 3: 138 µs per loop
 ```
-
-
 
 ```
 sage: phi = P.hom([b,c,d,e,a])
@@ -230,13 +219,12 @@ sage: %timeit phi(f)
 
 
 
-
 ---
 
 archive/issue_comments_052307.json:
 ```json
 {
-    "body": "Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by @malb created at 2009-09-09 20:12:43\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
+    "body": "Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by @malb created at 2009-09-09 20:12:43\n\n**Performance**\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```",
     "created_at": "2009-09-09T20:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -249,7 +237,6 @@ Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket648
 
 **Performance**
 
-
 ```python
 sage: P.<a,b,c,d,e> = PolynomialRing(QQ)
 sage: f = P.random_element(degree=3,terms=50)
@@ -258,15 +245,11 @@ sage: %timeit f.subs(g)
 1000 loops, best of 3: 271 µs per loop
 ```
 
-
-
 ```python
 sage: phi = P.hom([b,c,d,e,a])
 sage: %timeit phi(f)
 1000 loops, best of 3: 939 µs per loop
 ```
-
-
 
 ```python
 sage: phi(f)
@@ -276,7 +259,6 @@ f.sub_m_mul_q  f.subs         f.substitute
 sage: f.subs(g)
 -a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2
 ```
-
 
 
 
@@ -305,7 +287,7 @@ Note that this also means that there is no distinction between these calls: ` g(
 archive/issue_comments_052309.json:
 ```json
 {
-    "body": "To emphasize the point, here is the result after applying the patch:\n\n\n```\nsage: R.<x,y>=QQ[] \nsage: g=x+y \nsage: g.subs({x:x+1,y:x*y}) \nx*y + x + 1\nsage: g.subs({y:x*y, x:x+1})\nx*y + x + 1\n```\n\n\nNote that things are *not* in order in the second example.\n\nI think this is probably hopeless as stated.  If the substitutions were given as a list of tuples, then you could depend on the order.  In other words, if you had something like `g.subs([(y,x*y), (x,x+1)])` then you could say something about doing the substitutions in order.  Or even if you did something like `g.subs((y,x*y), (x,x+1))` you could do something in order, since *args is a list that preserves the order of the arguments.",
+    "body": "To emphasize the point, here is the result after applying the patch:\n\n```\nsage: R.<x,y>=QQ[] \nsage: g=x+y \nsage: g.subs({x:x+1,y:x*y}) \nx*y + x + 1\nsage: g.subs({y:x*y, x:x+1})\nx*y + x + 1\n```\n\nNote that things are *not* in order in the second example.\n\nI think this is probably hopeless as stated.  If the substitutions were given as a list of tuples, then you could depend on the order.  In other words, if you had something like `g.subs([(y,x*y), (x,x+1)])` then you could say something about doing the substitutions in order.  Or even if you did something like `g.subs((y,x*y), (x,x+1))` you could do something in order, since *args is a list that preserves the order of the arguments.",
     "created_at": "2009-09-19T02:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
@@ -316,7 +298,6 @@ archive/issue_comments_052309.json:
 
 To emphasize the point, here is the result after applying the patch:
 
-
 ```
 sage: R.<x,y>=QQ[] 
 sage: g=x+y 
@@ -325,7 +306,6 @@ x*y + x + 1
 sage: g.subs({y:x*y, x:x+1})
 x*y + x + 1
 ```
-
 
 Note that things are *not* in order in the second example.
 

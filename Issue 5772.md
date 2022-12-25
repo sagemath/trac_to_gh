@@ -3,7 +3,7 @@
 archive/issues_005772.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\t  File \"/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 379, in callback\n\t    return HTMLRespone(stream = message(s, '/'))\n\texceptions.NameError: global name 'HTMLRespone' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5772\n\n",
+    "body": "Assignee: boothby\n\n```\n\t  File \"/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 379, in callback\n\t    return HTMLRespone(stream = message(s, '/'))\n\texceptions.NameError: global name 'HTMLRespone' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5772\n\n",
     "created_at": "2009-04-13T04:10:42Z",
     "labels": [
         "component: notebook",
@@ -19,13 +19,11 @@ archive/issues_005772.json:
 ```
 Assignee: boothby
 
-
 ```
 	  File "/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 379, in callback
 	    return HTMLRespone(stream = message(s, '/'))
 	exceptions.NameError: global name 'HTMLRespone' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5772
 

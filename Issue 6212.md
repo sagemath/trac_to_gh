@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6212
 archive/issue_comments_049534.json:
 ```json
 {
-    "body": "Even better:\n\n\n```\n[1:38pm] jason-: you have patches that are applied using mercurial queues.  Do you want to pop all of the patches? [y/n]\n[1:38pm] jason-: yes would pop and continue the upgrae\n[1:39pm] jason-: no would quit the upgrade\n```\n",
+    "body": "Even better:\n\n```\n[1:38pm] jason-: you have patches that are applied using mercurial queues.  Do you want to pop all of the patches? [y/n]\n[1:38pm] jason-: yes would pop and continue the upgrae\n[1:39pm] jason-: no would quit the upgrade\n```",
     "created_at": "2009-06-04T20:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
@@ -46,13 +46,11 @@ archive/issue_comments_049534.json:
 
 Even better:
 
-
 ```
 [1:38pm] jason-: you have patches that are applied using mercurial queues.  Do you want to pop all of the patches? [y/n]
 [1:38pm] jason-: yes would pop and continue the upgrae
 [1:39pm] jason-: no would quit the upgrade
 ```
-
 
 
 

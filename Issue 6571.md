@@ -3,7 +3,7 @@
 archive/issues_006571.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola\n\nKeywords: words morphisms\n\nRight now, we can iterate over word morphisms with specific image lengths :\n\n\n```\n    Iterator over morphisms with specific image lengths::\n\n\tsage: map(str, W.iter_morphisms([2, 1]))\n\t['WordMorphism: a->aa, b->a',\n\t 'WordMorphism: a->aa, b->b',\n\t 'WordMorphism: a->ab, b->a',\n\t 'WordMorphism: a->ab, b->b',\n\t 'WordMorphism: a->ba, b->a',\n\t 'WordMorphism: a->ba, b->b',\n\t 'WordMorphism: a->bb, b->a',\n\t 'WordMorphism: a->bb, b->b']\n\tsage: map(str, W.iter_morphisms([2, 2]))\n\t['WordMorphism: a->aa, b->aa',\n\t 'WordMorphism: a->aa, b->ab',\n\t 'WordMorphism: a->aa, b->ba',\n\t 'WordMorphism: a->aa, b->bb',\n\t 'WordMorphism: a->ab, b->aa',\n\t 'WordMorphism: a->ab, b->ab',\n\t 'WordMorphism: a->ab, b->ba',\n\t 'WordMorphism: a->ab, b->bb',\n\t 'WordMorphism: a->ba, b->aa',\n\t 'WordMorphism: a->ba, b->ab',\n\t 'WordMorphism: a->ba, b->ba',\n\t 'WordMorphism: a->ba, b->bb',\n\t 'WordMorphism: a->bb, b->aa',\n\t 'WordMorphism: a->bb, b->ab',\n\t 'WordMorphism: a->bb, b->ba',\n\t 'WordMorphism: a->bb, b->bb']\n\tsage: map(str, W.iter_morphisms([0, 0]))\n\t['WordMorphism: a->, b->']\n\tsage: map(str, W.iter_morphisms([0, 1]))\n\t['WordMorphism: a->, b->a', 'WordMorphism: a->, b->b']\n```\n\n\nI want to iterate over all (non erasing) morphisms! In particuliar, I want the following to work :\n\n\n```\n    sage: W = Words('ab')                 \n    sage: it = W.iter_morphisms()\n    sage: for _ in range(10): print it.next()\n    WordMorphism: a->a, b->a\n    WordMorphism: a->a, b->b\n    WordMorphism: a->b, b->a\n    WordMorphism: a->b, b->b\n    WordMorphism: a->aa, b->a\n    WordMorphism: a->aa, b->b\n    WordMorphism: a->ab, b->a\n    WordMorphism: a->ab, b->b\n    WordMorphism: a->ba, b->a\n    WordMorphism: a->ba, b->b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6571\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola\n\nKeywords: words morphisms\n\nRight now, we can iterate over word morphisms with specific image lengths :\n\n```\n    Iterator over morphisms with specific image lengths::\n\n\tsage: map(str, W.iter_morphisms([2, 1]))\n\t['WordMorphism: a->aa, b->a',\n\t 'WordMorphism: a->aa, b->b',\n\t 'WordMorphism: a->ab, b->a',\n\t 'WordMorphism: a->ab, b->b',\n\t 'WordMorphism: a->ba, b->a',\n\t 'WordMorphism: a->ba, b->b',\n\t 'WordMorphism: a->bb, b->a',\n\t 'WordMorphism: a->bb, b->b']\n\tsage: map(str, W.iter_morphisms([2, 2]))\n\t['WordMorphism: a->aa, b->aa',\n\t 'WordMorphism: a->aa, b->ab',\n\t 'WordMorphism: a->aa, b->ba',\n\t 'WordMorphism: a->aa, b->bb',\n\t 'WordMorphism: a->ab, b->aa',\n\t 'WordMorphism: a->ab, b->ab',\n\t 'WordMorphism: a->ab, b->ba',\n\t 'WordMorphism: a->ab, b->bb',\n\t 'WordMorphism: a->ba, b->aa',\n\t 'WordMorphism: a->ba, b->ab',\n\t 'WordMorphism: a->ba, b->ba',\n\t 'WordMorphism: a->ba, b->bb',\n\t 'WordMorphism: a->bb, b->aa',\n\t 'WordMorphism: a->bb, b->ab',\n\t 'WordMorphism: a->bb, b->ba',\n\t 'WordMorphism: a->bb, b->bb']\n\tsage: map(str, W.iter_morphisms([0, 0]))\n\t['WordMorphism: a->, b->']\n\tsage: map(str, W.iter_morphisms([0, 1]))\n\t['WordMorphism: a->, b->a', 'WordMorphism: a->, b->b']\n```\n\nI want to iterate over all (non erasing) morphisms! In particuliar, I want the following to work :\n\n```\n    sage: W = Words('ab')                 \n    sage: it = W.iter_morphisms()\n    sage: for _ in range(10): print it.next()\n    WordMorphism: a->a, b->a\n    WordMorphism: a->a, b->b\n    WordMorphism: a->b, b->a\n    WordMorphism: a->b, b->b\n    WordMorphism: a->aa, b->a\n    WordMorphism: a->aa, b->b\n    WordMorphism: a->ab, b->a\n    WordMorphism: a->ab, b->b\n    WordMorphism: a->ba, b->a\n    WordMorphism: a->ba, b->b\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6571\n\n",
     "created_at": "2009-07-20T19:27:05Z",
     "labels": [
         "component: algebra"
@@ -22,7 +22,6 @@ CC:  sage-combinat @saliola
 Keywords: words morphisms
 
 Right now, we can iterate over word morphisms with specific image lengths :
-
 
 ```
     Iterator over morphisms with specific image lengths::
@@ -59,9 +58,7 @@ Right now, we can iterate over word morphisms with specific image lengths :
 	['WordMorphism: a->, b->a', 'WordMorphism: a->, b->b']
 ```
 
-
 I want to iterate over all (non erasing) morphisms! In particuliar, I want the following to work :
-
 
 ```
     sage: W = Words('ab')                 
@@ -78,7 +75,6 @@ I want to iterate over all (non erasing) morphisms! In particuliar, I want the f
     WordMorphism: a->ba, b->a
     WordMorphism: a->ba, b->b
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6571
 

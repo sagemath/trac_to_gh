@@ -3,7 +3,7 @@
 archive/issues_007687.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWe ship a Linux *binary* `leonconv` with every copy of Sage.  This is bad and a potential security issue.  Delete this.  \n\n\n```\nwstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ls -lh\ntotal 36K\ndrwxr-xr-x 2 wstein wstein 4.0K 2008-03-31 03:55 ctjhai\n-rw-r--r-- 1 wstein wstein  147 2008-03-17 14:40 defs.h\ndrwxr-xr-x 4 wstein wstein 4.0K 2008-03-31 03:55 leon\n-rwxr-xr-x 1 wstein wstein  15K 2008-03-17 14:40 leonconv\n-rw-r--r-- 1 wstein wstein 4.0K 2008-03-17 14:40 leonconv.c\n-rwxr-xr-x 1 wstein wstein  262 2008-03-17 14:44 Makefile\nwstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ./leonconv\nError, usage: leonconv <switch> <inputfile> <outputfile>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7687\n\n",
+    "body": "Assignee: tbd\n\nWe ship a Linux *binary* `leonconv` with every copy of Sage.  This is bad and a potential security issue.  Delete this.  \n\n```\nwstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ls -lh\ntotal 36K\ndrwxr-xr-x 2 wstein wstein 4.0K 2008-03-31 03:55 ctjhai\n-rw-r--r-- 1 wstein wstein  147 2008-03-17 14:40 defs.h\ndrwxr-xr-x 4 wstein wstein 4.0K 2008-03-31 03:55 leon\n-rwxr-xr-x 1 wstein wstein  15K 2008-03-17 14:40 leonconv\n-rw-r--r-- 1 wstein wstein 4.0K 2008-03-17 14:40 leonconv.c\n-rwxr-xr-x 1 wstein wstein  262 2008-03-17 14:44 Makefile\nwstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ./leonconv\nError, usage: leonconv <switch> <inputfile> <outputfile>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7687\n\n",
     "created_at": "2009-12-15T19:24:16Z",
     "labels": [
         "component: distribution",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 We ship a Linux *binary* `leonconv` with every copy of Sage.  This is bad and a potential security issue.  Delete this.  
 
-
 ```
 wstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ls -lh
 total 36K
@@ -33,7 +32,6 @@ drwxr-xr-x 4 wstein wstein 4.0K 2008-03-31 03:55 leon
 wstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ./leonconv
 Error, usage: leonconv <switch> <inputfile> <outputfile>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7687
 

@@ -203,7 +203,7 @@ See the attached patch.  It is advisable to first merge the patch at #4218.
 archive/issue_comments_036604.json:
 ```json
 {
-    "body": "The patch applies fine (over 3.2.2 + #4218).  Just one thing:  for an absolute extension we can create an element from a polynomial over the base field, but not for a relative extension:\n\n```\nsage: K.<z>=CyclotomicField(7)\nsage: Ky.<y>=PolynomialRing(K)\nsage: L.<a>=K.extension(y^2+1)\nsage: K(K.polynomial_ring().random_element())\nz + 1\nsage: L(L.polynomial_ring().random_element())\n---------------------------------------------------------------------------\nTypeError           \n...\nTypeError: Unable to coerce 7/2*z^5 + 1/2*z^4 + z^3 - 37/2*z to a rational\n```\n\nI'm sure this will cause complaints before long, so can we make the new constructor slightly more flexible?  Of course if your replace `polynomial_ring()` with `polynomial_quotient_ring()` it works fine thanks to the new code.",
+    "body": "The patch applies fine (over 3.2.2 + #4218).  Just one thing:  for an absolute extension we can create an element from a polynomial over the base field, but not for a relative extension:\n\n```\nsage: K.<z>=CyclotomicField(7)\nsage: Ky.<y>=PolynomialRing(K)\nsage: L.<a>=K.extension(y^2+1)\nsage: K(K.polynomial_ring().random_element())\nz + 1\nsage: L(L.polynomial_ring().random_element())\n---------------------------------------------------------------------------\nTypeError           \n...\nTypeError: Unable to coerce 7/2*z^5 + 1/2*z^4 + z^3 - 37/2*z to a rational\n```\nI'm sure this will cause complaints before long, so can we make the new constructor slightly more flexible?  Of course if your replace `polynomial_ring()` with `polynomial_quotient_ring()` it works fine thanks to the new code.",
     "created_at": "2008-12-23T12:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
@@ -226,7 +226,6 @@ TypeError
 ...
 TypeError: Unable to coerce 7/2*z^5 + 1/2*z^4 + z^3 - 37/2*z to a rational
 ```
-
 I'm sure this will cause complaints before long, so can we make the new constructor slightly more flexible?  Of course if your replace `polynomial_ring()` with `polynomial_quotient_ring()` it works fine thanks to the new code.
 
 
@@ -272,7 +271,7 @@ OK, given the new ticket I'm happy to give this the positive review it has been 
 archive/issue_comments_036607.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> Sorry to be fussy, Alex!\n\nNo need to apologise, I quite appreciate a careful reviewing; in this instance, I had noticed the problem with polynomial rings earlier in the process, but since it wasn't the main point I put it aside, then forgot about it.  This way we have it properly reported.",
+    "body": "Replying to [comment:11 cremona]:\n> Sorry to be fussy, Alex!\n\n\nNo need to apologise, I quite appreciate a careful reviewing; in this instance, I had noticed the problem with polynomial rings earlier in the process, but since it wasn't the main point I put it aside, then forgot about it.  This way we have it properly reported.",
     "created_at": "2008-12-25T08:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
@@ -283,6 +282,7 @@ archive/issue_comments_036607.json:
 
 Replying to [comment:11 cremona]:
 > Sorry to be fussy, Alex!
+
 
 No need to apologise, I quite appreciate a careful reviewing; in this instance, I had noticed the problem with polynomial rings earlier in the process, but since it wasn't the main point I put it aside, then forgot about it.  This way we have it properly reported.
 

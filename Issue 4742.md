@@ -107,7 +107,7 @@ I guess so....
 archive/issue_comments_035806.json:
 ```json
 {
-    "body": "I don't see how this is fixed?\n\nIt doesn't look to me that `nfsnf` or `nfsmith` is used anywhere in the sage library, and calling elementary_divisors on a matrix over a non-PID can fail, the following example is from the smith_form docstring\n\n\n```\n        Some examples over non-PID's work anyway::\n\n            sage: R.<s> = EquationOrder(x^2 + 5) # class number 2\n            sage: A = matrix(R, 2, 2, [s-1,-s,-s,2*s+1])\n            sage: D, U, V = A.smith_form()\n            sage: D, U, V\n            (\n            [     1      0]  [    4 s + 4]  [       1 -5*s + 6]\n            [     0 -s - 6], [    s s - 1], [       0        1]\n            )\n            sage: D == U*A*V\n            True\n\n        Others don't, but they fail quite constructively::\n\n            sage: matrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).smith_form()\n            Traceback (most recent call last):\n            ...\n            ArithmeticError: Ideal Fractional ideal (2, s + 1) not principal\n```\n\n\nI assume the point of this ticket is that\n\n\n```\nmatrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).elementary_divisors() # or .generalized_elementary_divisors()\n```\n\n\nshould return the output of PARI nfsnf called on the base field and the appropriate` Z_K` module?\n\nCurrently it tries to use Sage's generic algorithm which will only work if it runs on inputs where the ideals",
+    "body": "I don't see how this is fixed?\n\nIt doesn't look to me that `nfsnf` or `nfsmith` is used anywhere in the sage library, and calling elementary_divisors on a matrix over a non-PID can fail, the following example is from the smith_form docstring\n\n```\n        Some examples over non-PID's work anyway::\n\n            sage: R.<s> = EquationOrder(x^2 + 5) # class number 2\n            sage: A = matrix(R, 2, 2, [s-1,-s,-s,2*s+1])\n            sage: D, U, V = A.smith_form()\n            sage: D, U, V\n            (\n            [     1      0]  [    4 s + 4]  [       1 -5*s + 6]\n            [     0 -s - 6], [    s s - 1], [       0        1]\n            )\n            sage: D == U*A*V\n            True\n\n        Others don't, but they fail quite constructively::\n\n            sage: matrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).smith_form()\n            Traceback (most recent call last):\n            ...\n            ArithmeticError: Ideal Fractional ideal (2, s + 1) not principal\n```\n\nI assume the point of this ticket is that\n\n```\nmatrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).elementary_divisors() # or .generalized_elementary_divisors()\n```\n\nshould return the output of PARI nfsnf called on the base field and the appropriate` Z_K` module?\n\nCurrently it tries to use Sage's generic algorithm which will only work if it runs on inputs where the ideals",
     "created_at": "2019-11-03T19:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
@@ -119,7 +119,6 @@ archive/issue_comments_035806.json:
 I don't see how this is fixed?
 
 It doesn't look to me that `nfsnf` or `nfsmith` is used anywhere in the sage library, and calling elementary_divisors on a matrix over a non-PID can fail, the following example is from the smith_form docstring
-
 
 ```
         Some examples over non-PID's work anyway::
@@ -143,14 +142,11 @@ It doesn't look to me that `nfsnf` or `nfsmith` is used anywhere in the sage lib
             ArithmeticError: Ideal Fractional ideal (2, s + 1) not principal
 ```
 
-
 I assume the point of this ticket is that
-
 
 ```
 matrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).elementary_divisors() # or .generalized_elementary_divisors()
 ```
-
 
 should return the output of PARI nfsnf called on the base field and the appropriate` Z_K` module?
 
@@ -181,7 +177,7 @@ I was wondering, whether or not it is fixed in pari.
 archive/issue_comments_035808.json:
 ```json
 {
-    "body": "Oh I see, thank you. Sorry for the noise!\n\nBy way of an apology, I did some digging, the last time nfsnf was changed in pari was 2015 to fix a GC bug, and in 2008-12-06 `123- completely wrong results in nfsnf` was merged (also in 2014 `67- possibly wrong result in nfsnf`).\n\nSo I'd say definitely yes it was fixed, probably the Dec 08 commit.\n\nLooking at the original message of Davids to the Pari list https://pari.math.u-bordeaux.fr/archives/pari-users-0812/msg00004.html and Karim's simplified version of his example I can run his example under `sage -gp`\n\n\n```\n+? E = nfinit(x^2 - x + 2);\n+? M = [1, 0, x; 0, x, 0; 0,0,2+x];\n+?   MM = matalgtobasis(E, M);\n+? N = [[1, 0; 0, 1], [1, 0; 0, 1], [1, 0; 0, 1]];\n+? nfsnf(E, [MM, N, N])\n%7 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n\n\n```\n  E = nfinit(x^2 - x + 2);\n  M = [1, 0, x; 0, x, 0; 0,0,2+x];\n  N = [1, 1, 1];\n  nfsnf(E, [M, N, N])\n %16 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n\n\ntl; dr: yes!",
+    "body": "Oh I see, thank you. Sorry for the noise!\n\nBy way of an apology, I did some digging, the last time nfsnf was changed in pari was 2015 to fix a GC bug, and in 2008-12-06 `123- completely wrong results in nfsnf` was merged (also in 2014 `67- possibly wrong result in nfsnf`).\n\nSo I'd say definitely yes it was fixed, probably the Dec 08 commit.\n\nLooking at the original message of Davids to the Pari list https://pari.math.u-bordeaux.fr/archives/pari-users-0812/msg00004.html and Karim's simplified version of his example I can run his example under `sage -gp`\n\n```\n+? E = nfinit(x^2 - x + 2);\n+? M = [1, 0, x; 0, x, 0; 0,0,2+x];\n+?   MM = matalgtobasis(E, M);\n+? N = [[1, 0; 0, 1], [1, 0; 0, 1], [1, 0; 0, 1]];\n+? nfsnf(E, [MM, N, N])\n%7 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n```\n  E = nfinit(x^2 - x + 2);\n  M = [1, 0, x; 0, x, 0; 0,0,2+x];\n  N = [1, 1, 1];\n  nfsnf(E, [M, N, N])\n %16 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n\ntl; dr: yes!",
     "created_at": "2019-11-07T23:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
@@ -198,7 +194,6 @@ So I'd say definitely yes it was fixed, probably the Dec 08 commit.
 
 Looking at the original message of Davids to the Pari list https://pari.math.u-bordeaux.fr/archives/pari-users-0812/msg00004.html and Karim's simplified version of his example I can run his example under `sage -gp`
 
-
 ```
 +? E = nfinit(x^2 - x + 2);
 +? M = [1, 0, x; 0, x, 0; 0,0,2+x];
@@ -208,8 +203,6 @@ Looking at the original message of Davids to the Pari list https://pari.math.u-b
 %7 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]
 ```
 
-
-
 ```
   E = nfinit(x^2 - x + 2);
   M = [1, 0, x; 0, x, 0; 0,0,2+x];
@@ -217,7 +210,6 @@ Looking at the original message of Davids to the Pari list https://pari.math.u-b
   nfsnf(E, [M, N, N])
  %16 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]
 ```
-
 
 
 tl; dr: yes!

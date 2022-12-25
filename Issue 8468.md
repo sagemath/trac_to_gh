@@ -266,7 +266,7 @@ Rob
 archive/issue_comments_076142.json:
 ```json
 {
-    "body": "Replying to [comment:9 rbeezer]:\n\n...\n\n> \n> Anything else anybody would want to see in an \"advanced\" section?\n\n\nSince you ask:-)\nOther topics could be \n\n* automorphism groups of various structures (graphs, designs, codes, ...) \n\n* Cayley graphs of groups\n \n* actions of groups on sets, \n\n* action of groups on polynomials and invariant theory.\n\n* applications to the Rubik's cube.\n\nI'm not saying you *should* do this or that it really needs to be done but you asked:-)\n\n> \n> Rob",
+    "body": "Replying to [comment:9 rbeezer]:\n\n...\n\n> \n> Anything else anybody would want to see in an \"advanced\" section?\n\n\n\nSince you ask:-)\nOther topics could be \n\n* automorphism groups of various structures (graphs, designs, codes, ...) \n\n* Cayley graphs of groups\n \n* actions of groups on sets, \n\n* action of groups on polynomials and invariant theory.\n\n* applications to the Rubik's cube.\n\nI'm not saying you *should* do this or that it really needs to be done but you asked:-)\n\n> \n> Rob",
     "created_at": "2010-03-13T14:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
@@ -281,6 +281,7 @@ Replying to [comment:9 rbeezer]:
 
 > 
 > Anything else anybody would want to see in an "advanced" section?
+
 
 
 Since you ask:-)
@@ -308,7 +309,7 @@ I'm not saying you *should* do this or that it really needs to be done but you a
 archive/issue_comments_076143.json:
 ```json
 {
-    "body": "> The attachment  trac_8468-groups.patch is a ReSTified version of Rob's group theory primer. This patch depends on ticket #8469. So only the patch needs review by anyone but me.\n\nTo summarize the thread, the tutorial could be expanded later but that is not the purpose of this patch. I have built the html and pdf documentation. The only defect I see is long lines in the pdf file.\nI would suggest breaking these even though Sage output does not. However I don't think this is a prerequisite to\nmerging the patch and I am changing status to positive review.",
+    "body": "> The attachment  trac_8468-groups.patch is a ReSTified version of Rob's group theory primer. This patch depends on ticket #8469. So only the patch needs review by anyone but me.\n\n\nTo summarize the thread, the tutorial could be expanded later but that is not the purpose of this patch. I have built the html and pdf documentation. The only defect I see is long lines in the pdf file.\nI would suggest breaking these even though Sage output does not. However I don't think this is a prerequisite to\nmerging the patch and I am changing status to positive review.",
     "created_at": "2010-03-15T23:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
@@ -318,6 +319,7 @@ archive/issue_comments_076143.json:
 ```
 
 > The attachment  trac_8468-groups.patch is a ReSTified version of Rob's group theory primer. This patch depends on ticket #8469. So only the patch needs review by anyone but me.
+
 
 To summarize the thread, the tutorial could be expanded later but that is not the purpose of this patch. I have built the html and pdf documentation. The only defect I see is long lines in the pdf file.
 I would suggest breaking these even though Sage output does not. However I don't think this is a prerequisite to

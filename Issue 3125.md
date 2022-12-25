@@ -3,7 +3,7 @@
 archive/issues_003125.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nTry this:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n[control-c]\n```\n\n\ncontrol-c is ignored.  Probably somebody doesn't understand _sig_on/_sig_off!\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3125\n\n",
+    "body": "Assignee: @mwhansen\n\nTry this:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n[control-c]\n```\n\ncontrol-c is ignored.  Probably somebody doesn't understand _sig_on/_sig_off!\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3125\n\n",
     "created_at": "2008-05-07T16:14:33Z",
     "labels": [
         "component: combinatorics",
@@ -24,7 +24,6 @@ Try this:
 sage: graphs.CubeGraph(5).chromatic_polynomial()
 [control-c]
 ```
-
 
 control-c is ignored.  Probably somebody doesn't understand _sig_on/_sig_off!
 
@@ -60,7 +59,7 @@ Changing assignee from @mwhansen to @rlmill.
 archive/issue_comments_021610.json:
 ```json
 {
-    "body": "Attachment [trac3125-chrompoly_sig.patch](tarball://root/attachments/some-uuid/ticket3125/trac3125-chrompoly_sig.patch) by @rlmill created at 2008-05-07 23:22:01\n\nAfter attached patch:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n^C---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.1/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.1/local/lib/python/site-packages/sage/graphs/graph.py in chromatic_polynomial(self)\n   7099         \"\"\"\n   7100         from sage.graphs.chrompoly import chromatic_polynomial\n-> 7101         return chromatic_polynomial(self)\n   7102 \n   7103     def chromatic_number(self):\n\n<type 'exceptions.KeyboardInterrupt'>: \n```\n",
+    "body": "Attachment [trac3125-chrompoly_sig.patch](tarball://root/attachments/some-uuid/ticket3125/trac3125-chrompoly_sig.patch) by @rlmill created at 2008-05-07 23:22:01\n\nAfter attached patch:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n^C---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.1/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.1/local/lib/python/site-packages/sage/graphs/graph.py in chromatic_polynomial(self)\n   7099         \"\"\"\n   7100         from sage.graphs.chrompoly import chromatic_polynomial\n-> 7101         return chromatic_polynomial(self)\n   7102 \n   7103     def chromatic_number(self):\n\n<type 'exceptions.KeyboardInterrupt'>: \n```",
     "created_at": "2008-05-07T23:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3125",
     "type": "issue_comment",
@@ -89,7 +88,6 @@ sage: graphs.CubeGraph(5).chromatic_polynomial()
 
 <type 'exceptions.KeyboardInterrupt'>: 
 ```
-
 
 
 

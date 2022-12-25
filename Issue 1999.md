@@ -3,7 +3,7 @@
 archive/issues_001999.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\n\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
+    "body": "Assignee: @williamstein\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
     "created_at": "2008-01-31T05:16:17Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ The code in
 ```
  devel/sage-main/sage/plot/mpl3d
 ```
-
 should all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1999
@@ -37,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1999
 archive/issue_comments_012897.json:
 ```json
 {
-    "body": "The code in \n\n```\ndevel/sage/sage/server/server1\n```\n\nshould all be deleted.",
+    "body": "The code in \n\n```\ndevel/sage/sage/server/server1\n```\nshould all be deleted.",
     "created_at": "2008-01-31T05:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
@@ -51,7 +50,6 @@ The code in
 ```
 devel/sage/sage/server/server1
 ```
-
 should all be deleted.
 
 

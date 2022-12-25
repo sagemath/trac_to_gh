@@ -422,7 +422,7 @@ Changed the status so the bugfix could get a review.
 archive/issue_comments_008738.json:
 ```json
 {
-    "body": "The same testcase still fails (but in a different way now).  When I touch sage/rings/mpfi.pxi, and then run \"sage -b\", it now dumps me into a debugger.  Then, when I press Ctrl-D to exit the debugger, I get a backtrace.\n\n```\ncwitty@magnetar:~/sage-2.10.1$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\n> /home/cwitty/sage-2.10.1/devel/sage-review2/setup.py(1040)search_all_includes()\n-> C = [x.strip() for x in S if 'cimport' in x]\n(Pdb) \nTraceback (most recent call last):\n  File \"setup.py\", line 1155, in <module>\n    deps = create_deps(ext_modules)\n  File \"setup.py\", line 1146, in create_deps\n    deps_graph(deps, f, visited)\n  File \"setup.py\", line 1113, in deps_graph\n    this_deps = search_all_includes(f)\n  File \"setup.py\", line 1040, in search_all_includes\n    C = [x.strip() for x in S if 'cimport' in x]\n  File \"setup.py\", line 1040, in search_all_includes\n    C = [x.strip() for x in S if 'cimport' in x]\n  File \"/home/cwitty/sage-2.10.1/local/lib/python2.5/bdb.py\", line 48, in trace_dispatch\n    return self.dispatch_line(frame)\n  File \"/home/cwitty/sage-2.10.1/local/lib/python2.5/bdb.py\", line 67, in dispatch_line\n    if self.quitting: raise BdbQuit\nbdb.BdbQuit\nsage: There was an error installing modified sage library code.\n```\n",
+    "body": "The same testcase still fails (but in a different way now).  When I touch sage/rings/mpfi.pxi, and then run \"sage -b\", it now dumps me into a debugger.  Then, when I press Ctrl-D to exit the debugger, I get a backtrace.\n\n```\ncwitty@magnetar:~/sage-2.10.1$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\n> /home/cwitty/sage-2.10.1/devel/sage-review2/setup.py(1040)search_all_includes()\n-> C = [x.strip() for x in S if 'cimport' in x]\n(Pdb) \nTraceback (most recent call last):\n  File \"setup.py\", line 1155, in <module>\n    deps = create_deps(ext_modules)\n  File \"setup.py\", line 1146, in create_deps\n    deps_graph(deps, f, visited)\n  File \"setup.py\", line 1113, in deps_graph\n    this_deps = search_all_includes(f)\n  File \"setup.py\", line 1040, in search_all_includes\n    C = [x.strip() for x in S if 'cimport' in x]\n  File \"setup.py\", line 1040, in search_all_includes\n    C = [x.strip() for x in S if 'cimport' in x]\n  File \"/home/cwitty/sage-2.10.1/local/lib/python2.5/bdb.py\", line 48, in trace_dispatch\n    return self.dispatch_line(frame)\n  File \"/home/cwitty/sage-2.10.1/local/lib/python2.5/bdb.py\", line 67, in dispatch_line\n    if self.quitting: raise BdbQuit\nbdb.BdbQuit\nsage: There was an error installing modified sage library code.\n```",
     "created_at": "2008-02-08T04:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
@@ -463,7 +463,6 @@ Traceback (most recent call last):
 bdb.BdbQuit
 sage: There was an error installing modified sage library code.
 ```
-
 
 
 

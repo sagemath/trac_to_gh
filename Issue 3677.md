@@ -3,7 +3,7 @@
 archive/issues_003677.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nAt the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:\n\n\n```\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/ambient_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\n\nwhen it should be giving output like \n\n\n```\n\tsage -t  ambient_space.py\n\tsage -t  root_lattice_realization.py\n\tsage -t  root_space.py\n\tsage -t  root_system.py\n\tsage -t  weight_space.py\n```\n\n\nif I am in $SAGE_ROOT/devel/sage-combinat/sage/combinat/root_system .\n\nIssue created by migration from https://trac.sagemath.org/ticket/3677\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nAt the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:\n\n```\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/ambient_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\nwhen it should be giving output like \n\n```\n\tsage -t  ambient_space.py\n\tsage -t  root_lattice_realization.py\n\tsage -t  root_space.py\n\tsage -t  root_system.py\n\tsage -t  weight_space.py\n```\n\nif I am in $SAGE_ROOT/devel/sage-combinat/sage/combinat/root_system .\n\nIssue created by migration from https://trac.sagemath.org/ticket/3677\n\n",
     "created_at": "2008-07-19T01:48:02Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ CC:  @mwhansen
 
 At the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:
 
-
 ```
 	sage -t  devel/sage-combinat/sage/combinat/root_system/ambient_space.py
 	sage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py
@@ -32,9 +31,7 @@ At the end of testing when reporting the results, sage -t does not take into acc
 	sage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py
 ```
 
-
 when it should be giving output like 
-
 
 ```
 	sage -t  ambient_space.py
@@ -43,7 +40,6 @@ when it should be giving output like
 	sage -t  root_system.py
 	sage -t  weight_space.py
 ```
-
 
 if I am in $SAGE_ROOT/devel/sage-combinat/sage/combinat/root_system .
 

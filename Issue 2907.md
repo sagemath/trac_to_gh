@@ -3,7 +3,7 @@
 archive/issues_002907.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nATM, there is no efficient way of getting the content of a polynomial in Sage.\n\n\n```\ngcd(p.list())\n```\n\n\nis a workaround, but this can be done much more efficiently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2907\n\n",
+    "body": "Assignee: somebody\n\nATM, there is no efficient way of getting the content of a polynomial in Sage.\n\n```\ngcd(p.list())\n```\n\nis a workaround, but this can be done much more efficiently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2907\n\n",
     "created_at": "2008-04-13T17:46:06Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,11 +20,9 @@ Assignee: somebody
 
 ATM, there is no efficient way of getting the content of a polynomial in Sage.
 
-
 ```
 gcd(p.list())
 ```
-
 
 is a workaround, but this can be done much more efficiently.
 
@@ -228,7 +226,7 @@ Changing status from new to needs_review.
 archive/issue_comments_019995.json:
 ```json
 {
-    "body": "That is not true anymore!\n\n\n```python\nsage: R.<x> = ZZ[]\nsage: p = R.random_element(10)\nsage: p.content()\n1\nsage: p *= 13\nsage: p.content()\n13\n```\n\n\n(There is a consistency problem though between different implementations of `content()`, see #16613, but this ticket can be closed now I think.)",
+    "body": "That is not true anymore!\n\n```python\nsage: R.<x> = ZZ[]\nsage: p = R.random_element(10)\nsage: p.content()\n1\nsage: p *= 13\nsage: p.content()\n13\n```\n\n(There is a consistency problem though between different implementations of `content()`, see #16613, but this ticket can be closed now I think.)",
     "created_at": "2014-12-17T11:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
@@ -239,7 +237,6 @@ archive/issue_comments_019995.json:
 
 That is not true anymore!
 
-
 ```python
 sage: R.<x> = ZZ[]
 sage: p = R.random_element(10)
@@ -249,7 +246,6 @@ sage: p *= 13
 sage: p.content()
 13
 ```
-
 
 (There is a consistency problem though between different implementations of `content()`, see #16613, but this ticket can be closed now I think.)
 

@@ -3,7 +3,7 @@
 archive/issues_008753.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nRight now:\n\n```\nfunction.cpp:1886:29: warning: deprecated conversion from string constant to \u2018char*\u2019\nfunction.cpp: In member function \u2018GiNaC::ex GiNaC::function::power(const GiNaC::ex&) const\u2019:\nfunction.cpp:2186:15: error: expected type-specifier\nfunction.cpp:2186:15: error: expected \u2018)\u2019\nfunction.cpp:2187:72: error: conversion from \u2018int*\u2019 to \u2018GiNaC::ex\u2019 is ambiguous\nex.h:297:1: note: candidates are: GiNaC::ex::ex(long unsigned int) <near match>\nex.h:291:1: note:                 GiNaC::ex::ex(long int) <near match>\nex.h:285:1: note:                 GiNaC::ex::ex(unsigned int) <near match>\nex.h:273:1: note:                 GiNaC::ex::ex(int) <near match>\nmv -f .deps/color.Tpo .deps/color.Plo\n\n\n```\n\n\nThere is a new spkg posted on trac, but it doesn't fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8753\n\n",
+    "body": "Assignee: GeorgSWeber\n\nRight now:\n\n```\nfunction.cpp:1886:29: warning: deprecated conversion from string constant to \u2018char*\u2019\nfunction.cpp: In member function \u2018GiNaC::ex GiNaC::function::power(const GiNaC::ex&) const\u2019:\nfunction.cpp:2186:15: error: expected type-specifier\nfunction.cpp:2186:15: error: expected \u2018)\u2019\nfunction.cpp:2187:72: error: conversion from \u2018int*\u2019 to \u2018GiNaC::ex\u2019 is ambiguous\nex.h:297:1: note: candidates are: GiNaC::ex::ex(long unsigned int) <near match>\nex.h:291:1: note:                 GiNaC::ex::ex(long int) <near match>\nex.h:285:1: note:                 GiNaC::ex::ex(unsigned int) <near match>\nex.h:273:1: note:                 GiNaC::ex::ex(int) <near match>\nmv -f .deps/color.Tpo .deps/color.Plo\n\n\n```\n\nThere is a new spkg posted on trac, but it doesn't fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8753\n\n",
     "created_at": "2010-04-23T22:50:04Z",
     "labels": [
         "component: build",
@@ -35,7 +35,6 @@ mv -f .deps/color.Tpo .deps/color.Plo
 
 ```
 
-
 There is a new spkg posted on trac, but it doesn't fix this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8753
@@ -49,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8753
 archive/issue_comments_079945.json:
 ```json
 {
-    "body": "The fix is to replace the one instance (around line 2000) of\n\n```\npower::power\n```\n\nin src/ginac/functions.cpp with\n\n```\nGiNaC::power\n```\n\nThis is evidently due to *better* checking of the proper namespace/scoping rules in GCC-4.5.0.\n\nI made the above change, and Ginac builds fine.  Moreover, I ran this code:\n\n```\nsage: 1/tan(x)\n```\n\nand\n\n```\nsage: derivative(1/tan(x)).integrate(x)\n1/tan(x)\n```\n\n\nAccording to the print statements I inserted into functions.cpp, the code that called power::power before is activated and is working correctly (no weird infinite recursions or anything).\n\nI'm hoping this can just be given a positive review by Burcin and the fix rolled into the spkg at #8644, with a link from #8644 to this ticket.",
+    "body": "The fix is to replace the one instance (around line 2000) of\n\n```\npower::power\n```\nin src/ginac/functions.cpp with\n\n```\nGiNaC::power\n```\nThis is evidently due to *better* checking of the proper namespace/scoping rules in GCC-4.5.0.\n\nI made the above change, and Ginac builds fine.  Moreover, I ran this code:\n\n```\nsage: 1/tan(x)\n```\nand\n\n```\nsage: derivative(1/tan(x)).integrate(x)\n1/tan(x)\n```\n\nAccording to the print statements I inserted into functions.cpp, the code that called power::power before is activated and is working correctly (no weird infinite recursions or anything).\n\nI'm hoping this can just be given a positive review by Burcin and the fix rolled into the spkg at #8644, with a link from #8644 to this ticket.",
     "created_at": "2010-04-26T17:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
@@ -63,13 +62,11 @@ The fix is to replace the one instance (around line 2000) of
 ```
 power::power
 ```
-
 in src/ginac/functions.cpp with
 
 ```
 GiNaC::power
 ```
-
 This is evidently due to *better* checking of the proper namespace/scoping rules in GCC-4.5.0.
 
 I made the above change, and Ginac builds fine.  Moreover, I ran this code:
@@ -77,14 +74,12 @@ I made the above change, and Ginac builds fine.  Moreover, I ran this code:
 ```
 sage: 1/tan(x)
 ```
-
 and
 
 ```
 sage: derivative(1/tan(x)).integrate(x)
 1/tan(x)
 ```
-
 
 According to the print statements I inserted into functions.cpp, the code that called power::power before is activated and is working correctly (no weird infinite recursions or anything).
 

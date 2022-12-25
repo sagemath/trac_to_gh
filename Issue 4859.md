@@ -70,7 +70,7 @@ archive/issue_events_011173.json:
 archive/issue_comments_036756.json:
 ```json
 {
-    "body": "Two minor comments:\n\n(1) I'm confused by this docstring\n\n\n```\nA $(v,k,t)$ covering design $C$ is an incidence structure ...\n```\n\n\ncombined with this behaviour:\n\n\n\n```\nsage: C = best_known_covering_design_www(7, 3, 2); C\n<class 'sage.combinat.designs.covering_design.CoveringDesign'>\nsage: D = C.incidence_structure\nsage: type(D)\n<class 'sage.combinat.designs.incidence_structures.IncidenceStructure'>\n```\n\n\nD is an incidence structure but the way of creating D seems slightly nonstandard.\nWhy not\n\n\n```\nsage: D = C.incidence_structure()\n```\n\ninstead? I'm not saying change this, just wondering why it is the way it is.\n\n(2) For future reference, the patch naming is slightly non-standard (trac_4859-covering-designs.patch or something like that is more typical).",
+    "body": "Two minor comments:\n\n(1) I'm confused by this docstring\n\n```\nA $(v,k,t)$ covering design $C$ is an incidence structure ...\n```\n\ncombined with this behaviour:\n\n\n```\nsage: C = best_known_covering_design_www(7, 3, 2); C\n<class 'sage.combinat.designs.covering_design.CoveringDesign'>\nsage: D = C.incidence_structure\nsage: type(D)\n<class 'sage.combinat.designs.incidence_structures.IncidenceStructure'>\n```\n\nD is an incidence structure but the way of creating D seems slightly nonstandard.\nWhy not\n\n```\nsage: D = C.incidence_structure()\n```\ninstead? I'm not saying change this, just wondering why it is the way it is.\n\n(2) For future reference, the patch naming is slightly non-standard (trac_4859-covering-designs.patch or something like that is more typical).",
     "created_at": "2008-12-23T21:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
@@ -83,14 +83,11 @@ Two minor comments:
 
 (1) I'm confused by this docstring
 
-
 ```
 A $(v,k,t)$ covering design $C$ is an incidence structure ...
 ```
 
-
 combined with this behaviour:
-
 
 
 ```
@@ -101,15 +98,12 @@ sage: type(D)
 <class 'sage.combinat.designs.incidence_structures.IncidenceStructure'>
 ```
 
-
 D is an incidence structure but the way of creating D seems slightly nonstandard.
 Why not
-
 
 ```
 sage: D = C.incidence_structure()
 ```
-
 instead? I'm not saying change this, just wondering why it is the way it is.
 
 (2) For future reference, the patch naming is slightly non-standard (trac_4859-covering-designs.patch or something like that is more typical).
@@ -139,7 +133,7 @@ Got an email from Dan that he plans to go some minor modifications, after while 
 archive/issue_comments_036758.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThe overall style of the code looks really good.\n\n* This worries me:\n\n```\n        82\t    bound = 1.0 \n \t83\t    for i in range(t-1,-1,-1): \n \t84\t        bound = (bound*RDF(v-i)/RDF(k-i)).ceiling() \n \t85\t \n \t86\t    return bound \n```\n\nI'm worried about overflow.  Maybe using interval arithmetic would be better, i.e., the real interval field.  You could make a comment about why precision isn't an issue, but I sort of wonder. \n\n\n*  I think it might be nice to avoid confusion if you make all the attributes private (i.e., put an underscore (or two) in the beginning of their names), then have methods to access them, e.g., \n\n```\nThis is bad:\nsage:  C=CoveringDesign(7,3,2,7,range(7),[[0, 1, 2], [0, 3, 4], [0, 5, 6], [1, 3, 5], [1, 4, 6], [2, 3, 6], [2, 4, 5]],0, 'Projective Plane')\nsage: C.method\n'Projective Plane'\nsage: C.method = 'foo bar'\nsage: C.method\n'foo bar'\n\nThis is better:\nsage: C.method()\n'Projective Plane'\nsage: C.method?\nlots of nice documentation about what the C.__method *means* and how to use it. \n```\n\nDo the same with all the other attributes.   This is for consistency with the rest of Sage, and because it is easier for users. \n\n* You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. \n\n* change ` requires internet, optional ` to `optional -- requires internet`.  Doing that isn't documented anywhere, but it's the \"new way\" now that I wrote an optional doctesting framework that really singles out various components. \n\n\nWith the above issues addressed, this code should go into sage.",
+    "body": "REFEREE REPORT:\n\nThe overall style of the code looks really good.\n\n* This worries me:\n\n```\n        82\t    bound = 1.0 \n \t83\t    for i in range(t-1,-1,-1): \n \t84\t        bound = (bound*RDF(v-i)/RDF(k-i)).ceiling() \n \t85\t \n \t86\t    return bound \n```\nI'm worried about overflow.  Maybe using interval arithmetic would be better, i.e., the real interval field.  You could make a comment about why precision isn't an issue, but I sort of wonder. \n\n\n*  I think it might be nice to avoid confusion if you make all the attributes private (i.e., put an underscore (or two) in the beginning of their names), then have methods to access them, e.g., \n\n```\nThis is bad:\nsage:  C=CoveringDesign(7,3,2,7,range(7),[[0, 1, 2], [0, 3, 4], [0, 5, 6], [1, 3, 5], [1, 4, 6], [2, 3, 6], [2, 4, 5]],0, 'Projective Plane')\nsage: C.method\n'Projective Plane'\nsage: C.method = 'foo bar'\nsage: C.method\n'foo bar'\n\nThis is better:\nsage: C.method()\n'Projective Plane'\nsage: C.method?\nlots of nice documentation about what the C.__method *means* and how to use it. \n```\nDo the same with all the other attributes.   This is for consistency with the rest of Sage, and because it is easier for users. \n\n* You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. \n\n* change ` requires internet, optional ` to `optional -- requires internet`.  Doing that isn't documented anywhere, but it's the \"new way\" now that I wrote an optional doctesting framework that really singles out various components. \n\n\nWith the above issues addressed, this code should go into sage.",
     "created_at": "2009-01-20T07:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
@@ -161,7 +155,6 @@ The overall style of the code looks really good.
  	85	 
  	86	    return bound 
 ```
-
 I'm worried about overflow.  Maybe using interval arithmetic would be better, i.e., the real interval field.  You could make a comment about why precision isn't an issue, but I sort of wonder. 
 
 
@@ -182,7 +175,6 @@ sage: C.method()
 sage: C.method?
 lots of nice documentation about what the C.__method *means* and how to use it. 
 ```
-
 Do the same with all the other attributes.   This is for consistency with the rest of Sage, and because it is easier for users. 
 
 * You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. 

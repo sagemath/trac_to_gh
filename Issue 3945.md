@@ -3,7 +3,7 @@
 archive/issues_003945.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
     "created_at": "2008-08-24T18:47:11Z",
     "labels": [
         "component: misc",
@@ -32,7 +32,6 @@ Here's the temporary workaround I've been using when I need it:
 #sage.server.notebook.gnutls_socket_ssl.require_SSL()
 ```
 
-
 2. Type this:
 
 ```
@@ -43,7 +42,6 @@ r
 ...
 >>> from sage.all import *
 ```
-
 
 I'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. 
 
@@ -81,7 +79,7 @@ Michael
 archive/issue_comments_028261.json:
 ```json
 {
-    "body": "Ok, I think I am now hitting the same problem. On sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/bin/sage-gdb-pythonstartup\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\n[Thread debugging using libthread_db enabled]\n[New Thread 46983635287904 (LWP 15466)]\nPython 2.5.2 (r252:60911, Sep 30 2008, 17:45:52) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram exited normally.\n(gdb) \n```\n\nBy best guess would be that this is ipython related, specifically in `local/bin/sage-gdb-pythonstartup` we have\n\n```\nfrom sage.all import *\nimport os, sys\nsys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\nimport IPython\nIPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n```\n\n\nCheers,\n\nMichael",
+    "body": "Ok, I think I am now hitting the same problem. On sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/bin/sage-gdb-pythonstartup\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\n[Thread debugging using libthread_db enabled]\n[New Thread 46983635287904 (LWP 15466)]\nPython 2.5.2 (r252:60911, Sep 30 2008, 17:45:52) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram exited normally.\n(gdb) \n```\nBy best guess would be that this is ipython related, specifically in `local/bin/sage-gdb-pythonstartup` we have\n\n```\nfrom sage.all import *\nimport os, sys\nsys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\nimport IPython\nIPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T22:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
@@ -119,7 +117,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 Program exited normally.
 (gdb) 
 ```
-
 By best guess would be that this is ipython related, specifically in `local/bin/sage-gdb-pythonstartup` we have
 
 ```
@@ -130,7 +127,6 @@ sys.argv = ['', '-rc', os.environ['IPYTHONRC'], \
 import IPython
 IPython.Shell.IPShell().mainloop(sys_exit=1, banner='')
 ```
-
 
 Cheers,
 
@@ -143,7 +139,7 @@ Michael
 archive/issue_comments_028262.json:
 ```json
 {
-    "body": "The following patchlet gets us a Python prompt, but this is obviously not the real solution:\n\n```\ndiff -r cdf30964f1fe sage-gdb-pythonstartup\n--- a/sage-gdb-pythonstartup    Tue Sep 30 16:55:34 2008 -0700\n+++ b/sage-gdb-pythonstartup    Tue Oct 07 15:21:02 2008 -0700\n@@ -3,5 +3,5 @@\n sys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                 '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\n import IPython\n-IPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n+IPython.Shell.IPShell().mainloop(banner='')\n```\n\n\nMike Hansen added to the CC.\n\nCheers,\n\nMichael",
+    "body": "The following patchlet gets us a Python prompt, but this is obviously not the real solution:\n\n```\ndiff -r cdf30964f1fe sage-gdb-pythonstartup\n--- a/sage-gdb-pythonstartup    Tue Sep 30 16:55:34 2008 -0700\n+++ b/sage-gdb-pythonstartup    Tue Oct 07 15:21:02 2008 -0700\n@@ -3,5 +3,5 @@\n sys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                 '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\n import IPython\n-IPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n+IPython.Shell.IPShell().mainloop(banner='')\n```\n\nMike Hansen added to the CC.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T22:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
@@ -165,7 +161,6 @@ diff -r cdf30964f1fe sage-gdb-pythonstartup
 -IPython.Shell.IPShell().mainloop(sys_exit=1, banner='')
 +IPython.Shell.IPShell().mainloop(banner='')
 ```
-
 
 Mike Hansen added to the CC.
 

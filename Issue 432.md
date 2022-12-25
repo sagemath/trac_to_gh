@@ -66,7 +66,7 @@ Changing assignee from @williamstein to boothby.
 archive/issue_comments_002158.json:
 ```json
 {
-    "body": "Just a remark from a user:\n\n```\n\n> But, when I archived all trash content, it hangs... Closed Firefox,\n> VMware Player, reboot - everything was to-o-o-oo slow and buggy,\n> almost any loading of saved file caused an error.\n> \n> I ended up deleting all sage files and unpacking them again from\n> distribution ZIP. Now everything is fast again.\n```\n",
+    "body": "Just a remark from a user:\n\n```\n\n> But, when I archived all trash content, it hangs... Closed Firefox,\n> VMware Player, reboot - everything was to-o-o-oo slow and buggy,\n> almost any loading of saved file caused an error.\n> \n> I ended up deleting all sage files and unpacking them again from\n> distribution ZIP. Now everything is fast again.\n```",
     "created_at": "2007-12-13T18:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ Just a remark from a user:
 > I ended up deleting all sage files and unpacking them again from
 > distribution ZIP. Now everything is fast again.
 ```
-
 
 
 

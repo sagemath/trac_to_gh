@@ -51,7 +51,7 @@ This patch refactors the subgraph code into two functions, and then tries to int
 archive/issue_comments_053598.json:
 ```json
 {
-    "body": "Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by @jasongrout created at 2009-07-21 11:41:40\n\nTiming comparison:\n\n\n```\nsage: g=graphs.PathGraph(100000)                     \nsage: %time g.subgraph(range(20), algorithm='add')   \nCPU times: user 0.61 s, sys: 0.01 s, total: 0.62 s\nWall time: 0.68 s\nSubgraph of (Path Graph): Graph on 20 vertices\nsage: %time g.subgraph(range(20), algorithm='delete') # the old algorithm\nCPU times: user 3.96 s, sys: 0.04 s, total: 4.00 s\nWall time: 4.15 s\nSubgraph of (Path Graph): Graph on 20 vertices\n```\n",
+    "body": "Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by @jasongrout created at 2009-07-21 11:41:40\n\nTiming comparison:\n\n```\nsage: g=graphs.PathGraph(100000)                     \nsage: %time g.subgraph(range(20), algorithm='add')   \nCPU times: user 0.61 s, sys: 0.01 s, total: 0.62 s\nWall time: 0.68 s\nSubgraph of (Path Graph): Graph on 20 vertices\nsage: %time g.subgraph(range(20), algorithm='delete') # the old algorithm\nCPU times: user 3.96 s, sys: 0.04 s, total: 4.00 s\nWall time: 4.15 s\nSubgraph of (Path Graph): Graph on 20 vertices\n```",
     "created_at": "2009-07-21T11:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/som
 
 Timing comparison:
 
-
 ```
 sage: g=graphs.PathGraph(100000)                     
 sage: %time g.subgraph(range(20), algorithm='add')   
@@ -76,7 +75,6 @@ CPU times: user 3.96 s, sys: 0.04 s, total: 4.00 s
 Wall time: 4.15 s
 Subgraph of (Path Graph): Graph on 20 vertices
 ```
-
 
 
 
@@ -105,7 +103,7 @@ Do you have any examples where `delete` is actually faster than `add`? I ask bec
 archive/issue_comments_053600.json:
 ```json
 {
-    "body": "Most of the time delete is faster than add; that's why I set the factor so that if we want more than 5% of the vertices, it does delete.\n\nI think delete copies the graph, which doesn't *add* every edge, but probably just copies the edge dictionary, which should be *way* faster.\n\nThe tests I was taking my data from was doing\n\n\n```\nsage: g=graphs.PathGraph(1000)\n```\n\n\nand then doing `g.subgraph(range(i)` using each of the algorithms.  The breakeven point seemed to be between 50 and 100.  I also did this with the complete graph, and got similar results.",
+    "body": "Most of the time delete is faster than add; that's why I set the factor so that if we want more than 5% of the vertices, it does delete.\n\nI think delete copies the graph, which doesn't *add* every edge, but probably just copies the edge dictionary, which should be *way* faster.\n\nThe tests I was taking my data from was doing\n\n```\nsage: g=graphs.PathGraph(1000)\n```\n\nand then doing `g.subgraph(range(i)` using each of the algorithms.  The breakeven point seemed to be between 50 and 100.  I also did this with the complete graph, and got similar results.",
     "created_at": "2009-07-22T02:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
@@ -120,11 +118,9 @@ I think delete copies the graph, which doesn't *add* every edge, but probably ju
 
 The tests I was taking my data from was doing
 
-
 ```
 sage: g=graphs.PathGraph(1000)
 ```
-
 
 and then doing `g.subgraph(range(i)` using each of the algorithms.  The breakeven point seemed to be between 50 and 100.  I also did this with the complete graph, and got similar results.
 
@@ -135,7 +131,7 @@ and then doing `g.subgraph(range(i)` using each of the algorithms.  The breakeve
 archive/issue_comments_053601.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> I think delete copies the graph, which doesn't *add* every edge, but probably just copies the edge dictionary, which should be *way* faster.\n\nWhat is this opinion based on? If it's not an inplace subgraph then it creates a copy, which calls networkx_graph, which calls NX's copy, which has the following lines:\n\n```\n        for e in self.edges_iter():\n            H.add_edge(e)\n```\n\n\nSo we're definitely not using the adjacency dictionary there. The crossover between add and delete you observed above is most likely due to overhead from the fact that calling Sage's add_edge is using several layers of Python functions.\n\nI expect this to change drastically once the graph backends are optimized. This may be a while in the future, but you should keep this in mind for when that does eventually happen. In general, this patch is an improvement, since it provides both options, but thinking in terms of optimization at this stage is going to result in wasted effort, since the floor is about to drop out from underneath any current timings.\n\nAnyway, everything looks good here (especially, applies to 4.1.1.alpha0 and passes tests), so let's go ahead and merge it!",
+    "body": "Replying to [comment:4 jason]:\n> I think delete copies the graph, which doesn't *add* every edge, but probably just copies the edge dictionary, which should be *way* faster.\n\n\nWhat is this opinion based on? If it's not an inplace subgraph then it creates a copy, which calls networkx_graph, which calls NX's copy, which has the following lines:\n\n```\n        for e in self.edges_iter():\n            H.add_edge(e)\n```\n\nSo we're definitely not using the adjacency dictionary there. The crossover between add and delete you observed above is most likely due to overhead from the fact that calling Sage's add_edge is using several layers of Python functions.\n\nI expect this to change drastically once the graph backends are optimized. This may be a while in the future, but you should keep this in mind for when that does eventually happen. In general, this patch is an improvement, since it provides both options, but thinking in terms of optimization at this stage is going to result in wasted effort, since the floor is about to drop out from underneath any current timings.\n\nAnyway, everything looks good here (especially, applies to 4.1.1.alpha0 and passes tests), so let's go ahead and merge it!",
     "created_at": "2009-07-22T02:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
@@ -147,13 +143,13 @@ archive/issue_comments_053601.json:
 Replying to [comment:4 jason]:
 > I think delete copies the graph, which doesn't *add* every edge, but probably just copies the edge dictionary, which should be *way* faster.
 
+
 What is this opinion based on? If it's not an inplace subgraph then it creates a copy, which calls networkx_graph, which calls NX's copy, which has the following lines:
 
 ```
         for e in self.edges_iter():
             H.add_edge(e)
 ```
-
 
 So we're definitely not using the adjacency dictionary there. The crossover between add and delete you observed above is most likely due to overhead from the fact that calling Sage's add_edge is using several layers of Python functions.
 

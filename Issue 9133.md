@@ -3,7 +3,7 @@
 archive/issues_009133.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\n\n```\n\ncd . && /bin/sh /home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src/missing --run autoconf\n/home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src/missing: line 54: autoconf: command not found\nWARNING: `autoconf' is missing on your system.  You should only need it if\n         you modified `configure.ac'.  You might want to install the\n         `Autoconf' and `GNU m4' packages.  Grab them from any GNU\n         archive site.\n/bin/sh ./config.status --recheck\nrunning CONFIG_SHELL=/bin/sh /bin/sh ./configure --disable-static --prefix=/home/wstein/screen/iras/sage-4.4.3.alpha2/local CC=gcc LDFL\nAGS= CXX=g++ --no-create --no-recursion\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking whether build environment is sane... configure: error: newly created file is older than distributed files!\nCheck your system clock\nmake[2]: *** [config.status] Error 1\nmake[2]: Leaving directory `/home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src'\nError building pynac.\n\nreal    0m13.248s\nuser    0m5.660s\nsys     0m2.400s\nsage: An error occurred while installing pynac-0.2.0.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9133\n\n",
+    "body": "Assignee: GeorgSWeber\n\n```\n\ncd . && /bin/sh /home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src/missing --run autoconf\n/home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src/missing: line 54: autoconf: command not found\nWARNING: `autoconf' is missing on your system.  You should only need it if\n         you modified `configure.ac'.  You might want to install the\n         `Autoconf' and `GNU m4' packages.  Grab them from any GNU\n         archive site.\n/bin/sh ./config.status --recheck\nrunning CONFIG_SHELL=/bin/sh /bin/sh ./configure --disable-static --prefix=/home/wstein/screen/iras/sage-4.4.3.alpha2/local CC=gcc LDFL\nAGS= CXX=g++ --no-create --no-recursion\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking whether build environment is sane... configure: error: newly created file is older than distributed files!\nCheck your system clock\nmake[2]: *** [config.status] Error 1\nmake[2]: Leaving directory `/home/wstein/screen/iras/sage-4.4.3.alpha2/spkg/build/pynac-0.2.0.p1/src'\nError building pynac.\n\nreal    0m13.248s\nuser    0m5.660s\nsys     0m2.400s\nsage: An error occurred while installing pynac-0.2.0.p1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9133\n\n",
     "created_at": "2010-06-03T16:08:35Z",
     "labels": [
         "component: build",
@@ -18,7 +18,6 @@ archive/issues_009133.json:
 }
 ```
 Assignee: GeorgSWeber
-
 
 ```
 
@@ -43,7 +42,6 @@ user    0m5.660s
 sys     0m2.400s
 sage: An error occurred while installing pynac-0.2.0.p1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9133
 
@@ -96,7 +94,7 @@ All I did was type "autoreconf" in src, and also update the SPKG.txt.
 archive/issue_comments_084990.json:
 ```json
 {
-    "body": "The above package builds fine on iras:\n\n```\nDone installing pynac.\n\nreal    7m5.748s\nuser    6m28.244s\nsys     0m9.272s\nSuccessfully installed pynac-0.2.0.p2\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pynac-0.2.0.p2.spkg\nwstein@iras:~/screen/iras/sage-4.4.3.alpha2>  \n```\n",
+    "body": "The above package builds fine on iras:\n\n```\nDone installing pynac.\n\nreal    7m5.748s\nuser    6m28.244s\nsys     0m9.272s\nSuccessfully installed pynac-0.2.0.p2\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pynac-0.2.0.p2.spkg\nwstein@iras:~/screen/iras/sage-4.4.3.alpha2>  \n```",
     "created_at": "2010-06-03T16:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
@@ -120,7 +118,6 @@ Making script relocatable
 Finished installing pynac-0.2.0.p2.spkg
 wstein@iras:~/screen/iras/sage-4.4.3.alpha2>  
 ```
-
 
 
 

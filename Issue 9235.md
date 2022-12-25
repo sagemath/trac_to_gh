@@ -3,7 +3,7 @@
 archive/issues_009235.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  @nilesjohnson\n\nKeywords: doctest coverage homset\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @nilesjohnson\n\nKeywords: doctest coverage homset\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
     "created_at": "2010-06-14T09:59:42Z",
     "labels": [
         "component: categories",
@@ -28,7 +28,6 @@ The doctest coverage for sage.categories.homset was
 ```
 SCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)
 ```
-
 
 My patch covers all but two methods:
 
@@ -200,7 +199,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086552.json:
 ```json
 {
-    "body": "Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by @nilesjohnson created at 2011-05-29 06:59:58\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
+    "body": "Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by @nilesjohnson created at 2011-05-29 06:59:58\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
     "created_at": "2011-05-29T06:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
@@ -216,7 +215,6 @@ You're right -- this shouldn't have to wait so long!  I've looked through all th
 I used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.
 
 The only issue I have with `9235_doctest_homset.patch` is the following block:
-
 
 ```
     if category is None:
@@ -246,7 +244,6 @@ The only issue I have with `9235_doctest_homset.patch` is the following block:
                 raise TypeError, "No suitable category found for Hom from %s to %s."%(X,Y)
 ```
 
-
 If there's no reason to include the second "`category is None`" test, then it and the previous comments should simply be deleted.  And there is a third "`category is None`" test in this block which also looks redundant.
 
 
@@ -256,7 +253,7 @@ If there's no reason to include the second "`category is None`" test, then it an
 archive/issue_comments_086553.json:
 ```json
 {
-    "body": "I see that issuing the deprecation warning causes some failures in `modular/abvar/homspace.py`, because the deprecation message is printed.  A minimal example to produce the message is:\n\n\n```\nsage: J = J0(37)\nsage: E = J.endomorphism_ring()\nsage: x = -1*E.gens()[0]\n```\n\n\nBut I don't understand any more about this, so maybe it's better not to include the deprecation warning.  One could simply include tests of the form\n\n\n```\nsage: H = Hom(ZZ^2, ZZ^3)\nsage: H.get_action_c(ZZ,operator.add,ZZ) is None\nTrue\n\nsage: H = Hom(ZZ^2, ZZ^3)\nsage: H.coerce_map_from_c(ZZ) is None\nTrue\n```\n\n\nwithout a deprecation warning.\n\nNote that *removing* the methods `get_action_c` and `coerce_map_from_c` causes all tests in `modular/abvar/homspace.py` to pass (of course it should, since these don't do anything anyway).  No other bit of Sage code even caused the deprecation warning to be raised, so perhaps removing them really is a good idea (in which case a deprecation warning would be the first step).  But maybe this should be left for another ticket -- I'll leave it up to you at this point, Simon.",
+    "body": "I see that issuing the deprecation warning causes some failures in `modular/abvar/homspace.py`, because the deprecation message is printed.  A minimal example to produce the message is:\n\n```\nsage: J = J0(37)\nsage: E = J.endomorphism_ring()\nsage: x = -1*E.gens()[0]\n```\n\nBut I don't understand any more about this, so maybe it's better not to include the deprecation warning.  One could simply include tests of the form\n\n```\nsage: H = Hom(ZZ^2, ZZ^3)\nsage: H.get_action_c(ZZ,operator.add,ZZ) is None\nTrue\n\nsage: H = Hom(ZZ^2, ZZ^3)\nsage: H.coerce_map_from_c(ZZ) is None\nTrue\n```\n\nwithout a deprecation warning.\n\nNote that *removing* the methods `get_action_c` and `coerce_map_from_c` causes all tests in `modular/abvar/homspace.py` to pass (of course it should, since these don't do anything anyway).  No other bit of Sage code even caused the deprecation warning to be raised, so perhaps removing them really is a good idea (in which case a deprecation warning would be the first step).  But maybe this should be left for another ticket -- I'll leave it up to you at this point, Simon.",
     "created_at": "2011-05-31T03:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
@@ -267,16 +264,13 @@ archive/issue_comments_086553.json:
 
 I see that issuing the deprecation warning causes some failures in `modular/abvar/homspace.py`, because the deprecation message is printed.  A minimal example to produce the message is:
 
-
 ```
 sage: J = J0(37)
 sage: E = J.endomorphism_ring()
 sage: x = -1*E.gens()[0]
 ```
 
-
 But I don't understand any more about this, so maybe it's better not to include the deprecation warning.  One could simply include tests of the form
-
 
 ```
 sage: H = Hom(ZZ^2, ZZ^3)
@@ -287,7 +281,6 @@ sage: H = Hom(ZZ^2, ZZ^3)
 sage: H.coerce_map_from_c(ZZ) is None
 True
 ```
-
 
 without a deprecation warning.
 

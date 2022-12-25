@@ -77,7 +77,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059210.json:
 ```json
 {
-    "body": "Great minds think alike ;-)\nI just made a ticket ( #7304 ) for edge contraction, but this ticket is more general, so closing mine as a duplicate.\n\nHowever, there is something wrong in your patch, as my first try revealed this:\n\n```\nsage: P=graphs.PetersenGraph()\nsage: P.merge_vertices([5,7])\nsage: P.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n```\n",
+    "body": "Great minds think alike ;-)\nI just made a ticket ( #7304 ) for edge contraction, but this ticket is more general, so closing mine as a duplicate.\n\nHowever, there is something wrong in your patch, as my first try revealed this:\n\n```\nsage: P=graphs.PetersenGraph()\nsage: P.merge_vertices([5,7])\nsage: P.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n```",
     "created_at": "2009-10-25T21:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ sage: P.merge_vertices([5,7])
 sage: P.vertices()
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-
 
 
 
@@ -164,7 +163,7 @@ By the way, I can not find your email on the internet... It's good to see new pe
 archive/issue_comments_059214.json:
 ```json
 {
-    "body": "I have looked at your new patch, and it seems good. The only thing I found to object against was\n\n```\nif (v in vertices) and not (u in vertices) and v != vertices[0]:\n```\n\nIf edge_boundary works as expected, the second test should not be needed as u and v can never be in vertices at the same time. I attach a patch to remove the unneeded test. It applies on top of your patch.\n\nIf you agree with this, you can count this as a positive review.\n\n\n\n\nReplying to [comment:4 ncohen]:\n> By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?\n\nI'm a student in mathematics and a bit of computer science. I use Sage for diverse calculations in graph theory, and when I find that Sage can't do all that I want it to, I have to do something about it ;-P",
+    "body": "I have looked at your new patch, and it seems good. The only thing I found to object against was\n\n```\nif (v in vertices) and not (u in vertices) and v != vertices[0]:\n```\nIf edge_boundary works as expected, the second test should not be needed as u and v can never be in vertices at the same time. I attach a patch to remove the unneeded test. It applies on top of your patch.\n\nIf you agree with this, you can count this as a positive review.\n\n\n\n\nReplying to [comment:4 ncohen]:\n> By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?\n\n\nI'm a student in mathematics and a bit of computer science. I use Sage for diverse calculations in graph theory, and when I find that Sage can't do all that I want it to, I have to do something about it ;-P",
     "created_at": "2009-10-26T18:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -178,7 +177,6 @@ I have looked at your new patch, and it seems good. The only thing I found to ob
 ```
 if (v in vertices) and not (u in vertices) and v != vertices[0]:
 ```
-
 If edge_boundary works as expected, the second test should not be needed as u and v can never be in vertices at the same time. I attach a patch to remove the unneeded test. It applies on top of your patch.
 
 If you agree with this, you can count this as a positive review.
@@ -188,6 +186,7 @@ If you agree with this, you can count this as a positive review.
 
 Replying to [comment:4 ncohen]:
 > By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?
+
 
 I'm a student in mathematics and a bit of computer science. I use Sage for diverse calculations in graph theory, and when I find that Sage can't do all that I want it to, I have to do something about it ;-P
 
@@ -274,7 +273,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_059219.json:
 ```json
 {
-    "body": "I read the trac guidelines more closely and there is a last tiny issue before this patch can be said to be perfect:\n\n\"Bug Fixes Must Be Doctested: The patch that fixes an issue must also contain a doctest specifically to test the problem.\"\n\nSo all that is missing is a test that displays the expected behavior of edge_boundary(), and that would fail without your patch. For example something like this:\n\n```\nsage: G=graphs.DiamondGraph()\nsage: G.edge_boundary([0,1])\n[(0, 2, None), (1, 2, None), (1, 3, None)]\n```\n",
+    "body": "I read the trac guidelines more closely and there is a last tiny issue before this patch can be said to be perfect:\n\n\"Bug Fixes Must Be Doctested: The patch that fixes an issue must also contain a doctest specifically to test the problem.\"\n\nSo all that is missing is a test that displays the expected behavior of edge_boundary(), and that would fail without your patch. For example something like this:\n\n```\nsage: G=graphs.DiamondGraph()\nsage: G.edge_boundary([0,1])\n[(0, 2, None), (1, 2, None), (1, 3, None)]\n```",
     "created_at": "2009-10-31T09:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -294,7 +293,6 @@ sage: G=graphs.DiamondGraph()
 sage: G.edge_boundary([0,1])
 [(0, 2, None), (1, 2, None), (1, 3, None)]
 ```
-
 
 
 
@@ -377,7 +375,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059224.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> Perhaps the last one ? :-)\n\nLet's hope so :-)\n\nAll looks fine to me. Positive review.",
+    "body": "Replying to [comment:8 ncohen]:\n> Perhaps the last one ? :-)\n\n\nLet's hope so :-)\n\nAll looks fine to me. Positive review.",
     "created_at": "2009-10-31T18:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
@@ -388,6 +386,7 @@ archive/issue_comments_059224.json:
 
 Replying to [comment:8 ncohen]:
 > Perhaps the last one ? :-)
+
 
 Let's hope so :-)
 

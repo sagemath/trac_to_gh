@@ -89,7 +89,7 @@ Please see #6495 for a tentative approach to parallel doc builds
 archive/issue_comments_049865.json:
 ```json
 {
-    "body": "I made an attempt to have parallel doc build. It seems that I have it for the **write** part of the doc generation process. Here is the diff\n\n```diff\ndiff --git a/builders/__init__.py b/builders/__init__.py\n--- a/builders/__init__.py\n+++ b/builders/__init__.py\n@@ -286,14 +286,27 @@ class Builder(object):\n         # write target files\n         warnings = []\n         self.env.set_warnfunc(lambda *args: warnings.append(args))\n+        #for docname in self.status_iterator(\n+        #    sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n+        #    doctree = self.env.get_and_resolve_doctree(docname, self)\n+        #    self.write_doc(docname, doctree)\n+        from sage.parallel.decorate import parallel\n+        import itertools\n+        worker = parallel('fork')(self.write_doc_parallel_worker)\n+        pariter = itertools.imap(lambda x:x[1], worker(sorted(docnames)))\n         for docname in self.status_iterator(\n-            sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n-            doctree = self.env.get_and_resolve_doctree(docname, self)\n-            self.write_doc(docname, doctree)\n+            pariter, 'writing output... ', darkgreen, len(docnames)):\n+            # done in the iterator !!!\n+            pass\n         for warning in warnings:\n             self.warn(*warning)\n         self.env.set_warnfunc(self.warn)\n \n+    def write_doc_parallel_worker(self, docname):\n+        doctree = self.env.get_and_resolve_doctree(docname, self)\n+        self.write_doc(docname, doctree)\n+        return docname\n+\n     def prepare_writing(self, docnames):\n         raise NotImplementedError\n```\n \n\nThe read part could be more tricky but it doesn't seems unfeasible. Note that I may be dreaming here.",
+    "body": "I made an attempt to have parallel doc build. It seems that I have it for the **write** part of the doc generation process. Here is the diff\n\n```diff\ndiff --git a/builders/__init__.py b/builders/__init__.py\n--- a/builders/__init__.py\n+++ b/builders/__init__.py\n@@ -286,14 +286,27 @@ class Builder(object):\n         # write target files\n         warnings = []\n         self.env.set_warnfunc(lambda *args: warnings.append(args))\n+        #for docname in self.status_iterator(\n+        #    sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n+        #    doctree = self.env.get_and_resolve_doctree(docname, self)\n+        #    self.write_doc(docname, doctree)\n+        from sage.parallel.decorate import parallel\n+        import itertools\n+        worker = parallel('fork')(self.write_doc_parallel_worker)\n+        pariter = itertools.imap(lambda x:x[1], worker(sorted(docnames)))\n         for docname in self.status_iterator(\n-            sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n-            doctree = self.env.get_and_resolve_doctree(docname, self)\n-            self.write_doc(docname, doctree)\n+            pariter, 'writing output... ', darkgreen, len(docnames)):\n+            # done in the iterator !!!\n+            pass\n         for warning in warnings:\n             self.warn(*warning)\n         self.env.set_warnfunc(self.warn)\n \n+    def write_doc_parallel_worker(self, docname):\n+        doctree = self.env.get_and_resolve_doctree(docname, self)\n+        self.write_doc(docname, doctree)\n+        return docname\n+\n     def prepare_writing(self, docnames):\n         raise NotImplementedError\n``` \n\nThe read part could be more tricky but it doesn't seems unfeasible. Note that I may be dreaming here.",
     "created_at": "2012-04-20T22:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
@@ -134,8 +134,7 @@ diff --git a/builders/__init__.py b/builders/__init__.py
 +
      def prepare_writing(self, docnames):
          raise NotImplementedError
-```
- 
+``` 
 
 The read part could be more tricky but it doesn't seems unfeasible. Note that I may be dreaming here.
 
@@ -184,7 +183,7 @@ Experimental parallel doc output patch
 archive/issue_comments_049868.json:
 ```json
 {
-    "body": "Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by @hivert created at 2012-04-21 16:09:56\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
+    "body": "Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by @hivert created at 2012-04-21 16:09:56\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\nFlorent",
     "created_at": "2012-04-21T16:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
@@ -202,7 +201,6 @@ I just attached two patches. They need to be applied in
 ```
 $SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/
 ```
-
 (I didn't regenerate a spkg yet). Those two packages are very experimental and
 they certainly break a lot of things. The goal of `timing.patch` is to
 improve Sphinx timning and progress report. The second one uses
@@ -216,14 +214,12 @@ On a intel i7 8 multithreaded core:
 reading sources...  Elapsed time = 385.334967136
 writing output...  Elapsed time = 1903.10733795
 ```
-
 - parallel:
 
 ```
 reading sources...  Elapsed time = 418.675282001
 writing output...  Elapsed time = 253.907614946
 ```
-
 On a 24 core server:
 - serie:
 
@@ -231,14 +227,12 @@ On a 24 core server:
 reading sources...  Elapsed time = 243.982397079
 writing output...  Elapsed time = 1366.98643208
 ```
-
 - parallel:
 
 ```
 reading sources...  Elapsed time = 243.729380131
 writing output...  Elapsed time = 176.76424408
 ```
-
 
 Florent
 
@@ -249,7 +243,7 @@ Florent
 archive/issue_comments_049869.json:
 ```json
 {
-    "body": "With a little tunning I managed to have\n\n```\nserie    writing output...  Elapsed time = 1366.98643208\nparallel writing output...  Elapsed time = 106.421586037\n```\n\nLooks efficient !",
+    "body": "With a little tunning I managed to have\n\n```\nserie    writing output...  Elapsed time = 1366.98643208\nparallel writing output...  Elapsed time = 106.421586037\n```\nLooks efficient !",
     "created_at": "2012-04-21T20:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
@@ -264,7 +258,6 @@ With a little tunning I managed to have
 serie    writing output...  Elapsed time = 1366.98643208
 parallel writing output...  Elapsed time = 106.421586037
 ```
-
 Looks efficient !
 
 

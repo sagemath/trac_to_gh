@@ -3,7 +3,7 @@
 archive/issues_003024.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe Traceback thing gets all messed up by worksheet.py or cell.py below:\n\n\n```\nsage: help(VectorSpace)\n          \t\n\nHelp on function VectorSpace in module sage.modules.free_module:\n\nVectorSpace(K, dimension, sparse=False, inner_product_matrix=None)\n    EXAMPLES:\n    The base can be complicated, as long as it is a field. \n        sage: V = VectorSpace(FractionField(PolynomialRing(ZZ,'x')),3)\n        sage: V\n        Vector space of dimension 3 over Fraction Field of Univariate\nPolynomial Ring in x over Integer Ring\n        sage: V.basis()\n        [\n        (1, 0, 0),\n        (0, 1, 0),\n        (0, 0, 1)\n        ]\n    \n    The base must be a field or a \\code{TypeError} is raised.\n        sage: VectorSpace(ZZ,5)\nTraceback (click to the left for traceback)\n...\n        TypeError: K must be a field\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3024\n\n",
+    "body": "Assignee: boothby\n\nThe Traceback thing gets all messed up by worksheet.py or cell.py below:\n\n```\nsage: help(VectorSpace)\n          \t\n\nHelp on function VectorSpace in module sage.modules.free_module:\n\nVectorSpace(K, dimension, sparse=False, inner_product_matrix=None)\n    EXAMPLES:\n    The base can be complicated, as long as it is a field. \n        sage: V = VectorSpace(FractionField(PolynomialRing(ZZ,'x')),3)\n        sage: V\n        Vector space of dimension 3 over Fraction Field of Univariate\nPolynomial Ring in x over Integer Ring\n        sage: V.basis()\n        [\n        (1, 0, 0),\n        (0, 1, 0),\n        (0, 0, 1)\n        ]\n    \n    The base must be a field or a \\code{TypeError} is raised.\n        sage: VectorSpace(ZZ,5)\nTraceback (click to the left for traceback)\n...\n        TypeError: K must be a field\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3024\n\n",
     "created_at": "2008-04-25T17:32:45Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_003024.json:
 Assignee: boothby
 
 The Traceback thing gets all messed up by worksheet.py or cell.py below:
-
 
 ```
 sage: help(VectorSpace)
@@ -48,7 +47,6 @@ Traceback (click to the left for traceback)
         TypeError: K must be a field
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3024
 

@@ -69,7 +69,7 @@ Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/f
 archive/issue_comments_005336.json:
 ```json
 {
-    "body": "Hello,\n\nI ran Ifti's code with 3 iterations (see ticket #501) and there is a problem in __repr__:\n\n```\n==6721== 1,337,726 bytes in 97,087 blocks are definitely lost in loss record 2,181 of 2,187\n==6721==    at 0x4A1BFE4: operator new[](unsigned long) (vg_replace_malloc.c:271)\n==6721==    by 0x5FE0769: ZZ_pX_repr (in /tmp/Work-mabshoff/sage-2.8.6/devel/sage-main/c_lib/libcsage.so)\n==6721==    by 0xCBE62C0: __pyx_f_9ntl_ZZ_pX_9ntl_ZZ_pX___repr__(_object*) (ntl_ZZ_pX.cpp:1020)\n==6721==    by 0x443299: _PyObject_Str (object.c:406)\n==6721==    by 0x44333A: PyObject_Str (object.c:426)\n==6721==    by 0x44DC7F: string_new (stringobject.c:3892)\n==6721==    by 0x459172: type_call (typeobject.c:422)\n==6721==    by 0x415522: PyObject_Call (abstract.c:1860)\n==6721==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6721==    by 0xF1773F3: __pyx_f_25polynomial_modn_dense_ntl_22Polynomial_dense_mod_n_int_list(_object*, _object*) (polynom\nial_modn_dense_ntl.cpp:1831)\n==6721==    by 0x415522: PyObject_Call (abstract.c:1860)\n==6721==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n```\n\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\nI ran Ifti's code with 3 iterations (see ticket #501) and there is a problem in __repr__:\n\n```\n==6721== 1,337,726 bytes in 97,087 blocks are definitely lost in loss record 2,181 of 2,187\n==6721==    at 0x4A1BFE4: operator new[](unsigned long) (vg_replace_malloc.c:271)\n==6721==    by 0x5FE0769: ZZ_pX_repr (in /tmp/Work-mabshoff/sage-2.8.6/devel/sage-main/c_lib/libcsage.so)\n==6721==    by 0xCBE62C0: __pyx_f_9ntl_ZZ_pX_9ntl_ZZ_pX___repr__(_object*) (ntl_ZZ_pX.cpp:1020)\n==6721==    by 0x443299: _PyObject_Str (object.c:406)\n==6721==    by 0x44333A: PyObject_Str (object.c:426)\n==6721==    by 0x44DC7F: string_new (stringobject.c:3892)\n==6721==    by 0x459172: type_call (typeobject.c:422)\n==6721==    by 0x415522: PyObject_Call (abstract.c:1860)\n==6721==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6721==    by 0xF1773F3: __pyx_f_25polynomial_modn_dense_ntl_22Polynomial_dense_mod_n_int_list(_object*, _object*) (polynom\nial_modn_dense_ntl.cpp:1831)\n==6721==    by 0x415522: PyObject_Call (abstract.c:1860)\n==6721==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-10-13T01:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
@@ -99,7 +99,6 @@ ial_modn_dense_ntl.cpp:1831)
 ==6721==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)
 ```
 
-
 Cheers,
 
 Michael
@@ -111,7 +110,7 @@ Michael
 archive/issue_comments_005337.json:
 ```json
 {
-    "body": "Hello,\n\n__repr__ in ntl_ZZ_pX.pyx leaks. With the following (ugly) patch this problem is solved:\n\n```\n==7976== LEAK SUMMARY:\n==7976==    definitely lost: 616 bytes in 50 blocks.\n==7976==      possibly lost: 325,454 bytes in 776 blocks.\n==7976==    still reachable: 36,843,962 bytes in 19,920 blocks.\n==7976==         suppressed: 0 bytes in 0 blocks.\n```\n\nIt was only one round instead of three, but the problem is gone.\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\n__repr__ in ntl_ZZ_pX.pyx leaks. With the following (ugly) patch this problem is solved:\n\n```\n==7976== LEAK SUMMARY:\n==7976==    definitely lost: 616 bytes in 50 blocks.\n==7976==      possibly lost: 325,454 bytes in 776 blocks.\n==7976==    still reachable: 36,843,962 bytes in 19,920 blocks.\n==7976==         suppressed: 0 bytes in 0 blocks.\n```\nIt was only one round instead of three, but the problem is gone.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-13T02:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
@@ -131,7 +130,6 @@ __repr__ in ntl_ZZ_pX.pyx leaks. With the following (ugly) patch this problem is
 ==7976==    still reachable: 36,843,962 bytes in 19,920 blocks.
 ==7976==         suppressed: 0 bytes in 0 blocks.
 ```
-
 It was only one round instead of three, but the problem is gone.
 
 Cheers,

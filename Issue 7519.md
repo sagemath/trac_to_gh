@@ -3,7 +3,7 @@
 archive/issues_007519.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  @videlec @saliola\n\nBy default, the image of a word under a morphism is given by a iterator which is good because it is returned in constant time but which is bad because it is not directly picklable.\n\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: print m\nWordMorphism: 0->01, 1->1001\nsage: W = m.domain()\nsage: w = W([0,1,1,1])\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: z = m(w)\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_iter_with_caching'>\nsage: loads(dumps(z))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\n\nThis patch allows one to suggest under which datatype to represent the word :\n\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: z = m([0,1,1,1], datatype='list')\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: loads(dumps(z))\nword: 01100110011001\n```\n\n\nIt also leaves the current default behavior :\n\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: m([0,1,1,1])\nword: 01100110011001\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_iter_with_caching'>\n```\n\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7519\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @videlec @saliola\n\nBy default, the image of a word under a morphism is given by a iterator which is good because it is returned in constant time but which is bad because it is not directly picklable.\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: print m\nWordMorphism: 0->01, 1->1001\nsage: W = m.domain()\nsage: w = W([0,1,1,1])\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: z = m(w)\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_iter_with_caching'>\nsage: loads(dumps(z))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\nThis patch allows one to suggest under which datatype to represent the word :\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: z = m([0,1,1,1], datatype='list')\nsage: type(z)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: loads(dumps(z))\nword: 01100110011001\n```\n\nIt also leaves the current default behavior :\n\n```\nsage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})\nsage: m([0,1,1,1])\nword: 01100110011001\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_iter_with_caching'>\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7519\n\n",
     "created_at": "2009-11-23T12:38:31Z",
     "labels": [
         "component: combinatorics"
@@ -20,7 +20,6 @@ Assignee: @seblabbe
 CC:  @videlec @saliola
 
 By default, the image of a word under a morphism is given by a iterator which is good because it is returned in constant time but which is bad because it is not directly picklable.
-
 
 ```
 sage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})
@@ -39,9 +38,7 @@ Traceback (most recent call last):
 PicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed
 ```
 
-
 This patch allows one to suggest under which datatype to represent the word :
-
 
 ```
 sage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})
@@ -52,9 +49,7 @@ sage: loads(dumps(z))
 word: 01100110011001
 ```
 
-
 It also leaves the current default behavior :
-
 
 ```
 sage: m = WordMorphism({0:[0,1], 1:[1,0,0,1]})
@@ -63,7 +58,6 @@ word: 01100110011001
 sage: type(_)
 <class 'sage.combinat.words.word.FiniteWord_iter_with_caching'>
 ```
-
 
 
 

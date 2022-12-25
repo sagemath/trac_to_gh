@@ -3,7 +3,7 @@
 archive/issues_003811.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: number field comparison cmp\n\nThe doctests describe it best, but it was the case that\n\n\n```\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')\nTrue\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\nsage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\n```\n\n\nNot good.  The variable of the defining polynomial should not matter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3811\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field comparison cmp\n\nThe doctests describe it best, but it was the case that\n\n```\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')\nTrue\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\nsage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\n```\n\nNot good.  The variable of the defining polynomial should not matter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3811\n\n",
     "created_at": "2008-08-12T05:06:52Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ Keywords: number field comparison cmp
 
 The doctests describe it best, but it was the case that
 
-
 ```
 sage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')
 True
@@ -31,7 +30,6 @@ False
 sage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')
 False
 ```
-
 
 Not good.  The variable of the defining polynomial should not matter.
 

@@ -161,7 +161,7 @@ Also note the somewhat arbitrary choice to support delete(edges=e) and delete(ve
 archive/issue_comments_006627.json:
 ```json
 {
-    "body": "I support removing all other delete methods -- tab completion on a graph produces a formidable list, and having a bunch of redundant functions adds to the clutter.  That said, there are some strange things about this patch that I could do without:\n\n\n```\nG.delete(1)       #deletes a node\nG.delete(1,2)     #deletes an edge\nG.delete(1,2,3)   #deletes three nodes\nG.delete(1,2,3,4) #deletes four nodes\n```\n\n\none of these is not like the other... maybe you could balance it out, so if they pass in an even number of arguments, it removes the edges between successive pairs; odd number of arguments deletes nodes?",
+    "body": "I support removing all other delete methods -- tab completion on a graph produces a formidable list, and having a bunch of redundant functions adds to the clutter.  That said, there are some strange things about this patch that I could do without:\n\n```\nG.delete(1)       #deletes a node\nG.delete(1,2)     #deletes an edge\nG.delete(1,2,3)   #deletes three nodes\nG.delete(1,2,3,4) #deletes four nodes\n```\n\none of these is not like the other... maybe you could balance it out, so if they pass in an even number of arguments, it removes the edges between successive pairs; odd number of arguments deletes nodes?",
     "created_at": "2008-01-28T15:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -172,14 +172,12 @@ archive/issue_comments_006627.json:
 
 I support removing all other delete methods -- tab completion on a graph produces a formidable list, and having a bunch of redundant functions adds to the clutter.  That said, there are some strange things about this patch that I could do without:
 
-
 ```
 G.delete(1)       #deletes a node
 G.delete(1,2)     #deletes an edge
 G.delete(1,2,3)   #deletes three nodes
 G.delete(1,2,3,4) #deletes four nodes
 ```
-
 
 one of these is not like the other... maybe you could balance it out, so if they pass in an even number of arguments, it removes the edges between successive pairs; odd number of arguments deletes nodes?
 
@@ -334,7 +332,7 @@ That patch should be much simpler and should make much more sense in the long ru
 archive/issue_comments_006634.json:
 ```json
 {
-    "body": "> with a single non-list argument deleting a single vertex or edge.\n\nTo clarify, if there is only one argument, and it is either a list or of type types.GeneratorType...",
+    "body": "> with a single non-list argument deleting a single vertex or edge.\n\n\nTo clarify, if there is only one argument, and it is either a list or of type types.GeneratorType...",
     "created_at": "2008-01-29T00:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
@@ -344,6 +342,7 @@ archive/issue_comments_006634.json:
 ```
 
 > with a single non-list argument deleting a single vertex or edge.
+
 
 To clarify, if there is only one argument, and it is either a list or of type types.GeneratorType...
 

@@ -3,7 +3,7 @@
 archive/issues_003791.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @kiwifb jpflori\n\n\n```\nI was told that this line means that altivec was not detected.\nFor atlas on linux ppc with altivec, we should use the options\n--cflags='-mregnames' -D c -DATL_AVgcc\nfor configure ( http://math-atlas.sourceforge.net/errata.html#G4gcc ).\n\nWith these options, I had \"Vector ISA Extension configured as  AltiVec (1,2)\".\n\nBest regards,\nBin \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3791\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kiwifb jpflori\n\n```\nI was told that this line means that altivec was not detected.\nFor atlas on linux ppc with altivec, we should use the options\n--cflags='-mregnames' -D c -DATL_AVgcc\nfor configure ( http://math-atlas.sourceforge.net/errata.html#G4gcc ).\n\nWith these options, I had \"Vector ISA Extension configured as  AltiVec (1,2)\".\n\nBest regards,\nBin \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3791\n\n",
     "created_at": "2008-08-08T16:15:19Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 CC:  @kiwifb jpflori
 
-
 ```
 I was told that this line means that altivec was not detected.
 For atlas on linux ppc with altivec, we should use the options
@@ -32,7 +31,6 @@ With these options, I had "Vector ISA Extension configured as  AltiVec (1,2)".
 Best regards,
 Bin 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3791
 
@@ -273,7 +271,7 @@ Is this for your project of building a last tiger ppc binary?
 archive/issue_comments_026900.json:
 ```json
 {
-    "body": ">Is this for your project of building a last tiger ppc binary?\n\nNo, although that is going fine.  This is just me seeing random tickets that possibly could be closed as wontfix/invalid... I can't say whether it would but if you both agree then I say you should do so :)",
+    "body": ">Is this for your project of building a last tiger ppc binary?\n\n\nNo, although that is going fine.  This is just me seeing random tickets that possibly could be closed as wontfix/invalid... I can't say whether it would but if you both agree then I say you should do so :)",
     "created_at": "2015-01-05T20:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
@@ -283,6 +281,7 @@ archive/issue_comments_026900.json:
 ```
 
 >Is this for your project of building a last tiger ppc binary?
+
 
 No, although that is going fine.  This is just me seeing random tickets that possibly could be closed as wontfix/invalid... I can't say whether it would but if you both agree then I say you should do so :)
 

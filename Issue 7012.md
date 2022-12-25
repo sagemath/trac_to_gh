@@ -3,7 +3,7 @@
 archive/issues_007012.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @nathanncohen @mwhansen\n\nAs the subject says. This is a follow up to #6869 to address mhansen's suggestions:\n\n```\n\n\nAfter going through this patch, I think it would be best to revert it before 4.1.2 is released. There is still a lot of things that need to be done to get it cleaned up. Some of the things,\n\n1. Almost all of the docstrings are incorrectly formatted.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI have some code that addresses some of these things that I'll put up shortly.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7012\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen @mwhansen\n\nAs the subject says. This is a follow up to #6869 to address mhansen's suggestions:\n\n```\n\n\nAfter going through this patch, I think it would be best to revert it before 4.1.2 is released. There is still a lot of things that need to be done to get it cleaned up. Some of the things,\n\n1. Almost all of the docstrings are incorrectly formatted.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI have some code that addresses some of these things that I'll put up shortly.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7012\n\n",
     "created_at": "2009-09-25T08:04:10Z",
     "labels": [
         "component: numerical"
@@ -36,7 +36,6 @@ After going through this patch, I think it would be best to revert it before 4.1
 
 I have some code that addresses some of these things that I'll put up shortly.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7012
 
@@ -92,7 +91,7 @@ Nathann
 archive/issue_comments_057869.json:
 ```json
 {
-    "body": "Replying to [comment:1 ncohen]:\n> Hello !!!\n> \n> Could I have more information about some points :\n> \n> 1. Almost all of the docstrings are incorrectly formatted.\n> \n> Could you tell me in which way ? I am still learning how to write these, and may have learnt a few things since this patch but I would like to know what you have in mind.\n\nThe Developers' Guide has a section on [docstring](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). You should follow the conventions listed in that section.\n\n\n\n\n\n> 1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n> \n> - I understand that there may be very few reasons left ( now ) for keeping this as a Cython module. Here is the reason why I built it this way : initially, I thought the GLPK package would be merged immediately merged to standard Sage, and the function sending the LP problem to the solver GLPK ( necessarily written in Cython as it uses C functions ) was at this time contained in the file numerical.mip. I did not know how to change this when I learnt GLPK was to be optional for a while, and this is the reason why I just moved the function solveGLPK to the optional package. This, though, is way less handy when I need to improve functions like solveGLPK or solveCBC, as I always need to update the whole package.. I intended to move function solveGLPK to the file numerical.MIP as soon as GLPK is accepted as a standard spkg.\nIn light of the recent discussion about making a package standard, a package that is to be a standard spkg must satisfy at minimum the following requirements:\n\n1. Build as 32-bit with GCC on SPARC\n2. Build as 64-bit with GCC on SPARC\n3. Build as 32-bit with Sun's compiler on SPARC\n4. Build as 64-bit with Sun's compiler on SPARC\n5. Build as 32-bit with GCC on x86\n6. Build as 64-bit with GCC on x86_64\n7. Build as 32-bit with Sun's compiler on x86\n8. Build as 64-bit with Sun's compiler on x86_64\n\nNote that satisfying the first four would likely satisfy the remaining criteria. It much less work to have GLPK and CBC be optional packages and hence improve on the MIP module. As far as I can tell, both of these packages are already optional spkg's and they satisfy the minimum of being optional packages, namely they build on supported Linux distributions and Mac OS X 10.5. I have not tried building and using them on OS X 10.6 yet. But if you have an account on bsd.math which runs OS X 10.6 now, you could test on that machine. See [here](http://groups.google.com/group/sage-devel/browse_thread/thread/15c461b1355a8460/d9660e265ad982d8) and [here](http://groups.google.com/group/sage-devel/browse_thread/thread/b54a6b4317add033/bf7224be375df49f) for the discussions about making a package standard.\n\n\n\n\n\n> 1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n> \n> I wrote to many people to get informations about how best these things should be done. I am not happy either with the way it is now... What would you advise ? I know nothing of ctypes-glpk ! I just visited its front page and I can only see that it makes C functions available under python, which Cython can already do.\nI have little experience with Cython and much less with maintaining an optional package. Since I'm busy with release management in the next week or so, I won't have time to investigate this issue. After finishing the 4.1.2 release, I won't be able to work on anything but my thesis project.\n\n\n\n\n\n> On top of all this, I have a \"personal\" request.... I intend to write a lot of things that will be added to the MIP class ( soon to be MixedIntegerProgram ), but I initially wrote this class just to write new Graph-related functions. I have still a lot of patches waiting to be reviewed/accepted ( #6764 #6763 #6680 #6679 #6765 #6962 ), all using this class. Each time a modification is brought to the main class MIP, I have to rewrite patches for all of these tickets to make them coherent with the \"current\" state of the MIP Class. Could this ticket wait for these patches to be merged ? It would be easier, later, to change MIP to MixedIntegerProgram, isbinary to is_binary, and many other problems/bugs I already noticed in an unique patch to correct them all at once.... :-)\nI think a good way about this is to look through how Simon King produced his optional p_group_cohomology package. You should ask Simon about his experiences with writing a self-contained package.\n\n\n\n\nI do intend to clean up the MIP class before releasing Sage 4.1.2. Any help is appreciated.",
+    "body": "Replying to [comment:1 ncohen]:\n> Hello !!!\n> \n> Could I have more information about some points :\n> \n> 1. Almost all of the docstrings are incorrectly formatted.\n> \n> Could you tell me in which way ? I am still learning how to write these, and may have learnt a few things since this patch but I would like to know what you have in mind.\n\n\nThe Developers' Guide has a section on [docstring](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). You should follow the conventions listed in that section.\n\n\n\n\n\n> 1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n> \n> - I understand that there may be very few reasons left ( now ) for keeping this as a Cython module. Here is the reason why I built it this way : initially, I thought the GLPK package would be merged immediately merged to standard Sage, and the function sending the LP problem to the solver GLPK ( necessarily written in Cython as it uses C functions ) was at this time contained in the file numerical.mip. I did not know how to change this when I learnt GLPK was to be optional for a while, and this is the reason why I just moved the function solveGLPK to the optional package. This, though, is way less handy when I need to improve functions like solveGLPK or solveCBC, as I always need to update the whole package.. I intended to move function solveGLPK to the file numerical.MIP as soon as GLPK is accepted as a standard spkg.\n \nIn light of the recent discussion about making a package standard, a package that is to be a standard spkg must satisfy at minimum the following requirements:\n\n  1. Build as 32-bit with GCC on SPARC\n  2. Build as 64-bit with GCC on SPARC\n  3. Build as 32-bit with Sun's compiler on SPARC\n  4. Build as 64-bit with Sun's compiler on SPARC\n  5. Build as 32-bit with GCC on x86\n  6. Build as 64-bit with GCC on x86_64\n  7. Build as 32-bit with Sun's compiler on x86\n  8. Build as 64-bit with Sun's compiler on x86_64\n\nNote that satisfying the first four would likely satisfy the remaining criteria. It much less work to have GLPK and CBC be optional packages and hence improve on the MIP module. As far as I can tell, both of these packages are already optional spkg's and they satisfy the minimum of being optional packages, namely they build on supported Linux distributions and Mac OS X 10.5. I have not tried building and using them on OS X 10.6 yet. But if you have an account on bsd.math which runs OS X 10.6 now, you could test on that machine. See [here](http://groups.google.com/group/sage-devel/browse_thread/thread/15c461b1355a8460/d9660e265ad982d8) and [here](http://groups.google.com/group/sage-devel/browse_thread/thread/b54a6b4317add033/bf7224be375df49f) for the discussions about making a package standard.\n\n\n\n\n\n> 1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n> \n> I wrote to many people to get informations about how best these things should be done. I am not happy either with the way it is now... What would you advise ? I know nothing of ctypes-glpk ! I just visited its front page and I can only see that it makes C functions available under python, which Cython can already do.\n\nI have little experience with Cython and much less with maintaining an optional package. Since I'm busy with release management in the next week or so, I won't have time to investigate this issue. After finishing the 4.1.2 release, I won't be able to work on anything but my thesis project.\n\n\n\n\n\n> On top of all this, I have a \"personal\" request.... I intend to write a lot of things that will be added to the MIP class ( soon to be MixedIntegerProgram ), but I initially wrote this class just to write new Graph-related functions. I have still a lot of patches waiting to be reviewed/accepted ( #6764 #6763 #6680 #6679 #6765 #6962 ), all using this class. Each time a modification is brought to the main class MIP, I have to rewrite patches for all of these tickets to make them coherent with the \"current\" state of the MIP Class. Could this ticket wait for these patches to be merged ? It would be easier, later, to change MIP to MixedIntegerProgram, isbinary to is_binary, and many other problems/bugs I already noticed in an unique patch to correct them all at once.... :-)\n\nI think a good way about this is to look through how Simon King produced his optional p_group_cohomology package. You should ask Simon about his experiences with writing a self-contained package.\n\n\n\n\nI do intend to clean up the MIP class before releasing Sage 4.1.2. Any help is appreciated.",
     "created_at": "2009-09-26T22:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -110,6 +109,7 @@ Replying to [comment:1 ncohen]:
 > 
 > Could you tell me in which way ? I am still learning how to write these, and may have learnt a few things since this patch but I would like to know what you have in mind.
 
+
 The Developers' Guide has a section on [docstring](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). You should follow the conventions listed in that section.
 
 
@@ -119,16 +119,17 @@ The Developers' Guide has a section on [docstring](http://www.sagemath.org/doc/d
 > 1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.
 > 
 > - I understand that there may be very few reasons left ( now ) for keeping this as a Cython module. Here is the reason why I built it this way : initially, I thought the GLPK package would be merged immediately merged to standard Sage, and the function sending the LP problem to the solver GLPK ( necessarily written in Cython as it uses C functions ) was at this time contained in the file numerical.mip. I did not know how to change this when I learnt GLPK was to be optional for a while, and this is the reason why I just moved the function solveGLPK to the optional package. This, though, is way less handy when I need to improve functions like solveGLPK or solveCBC, as I always need to update the whole package.. I intended to move function solveGLPK to the file numerical.MIP as soon as GLPK is accepted as a standard spkg.
+ 
 In light of the recent discussion about making a package standard, a package that is to be a standard spkg must satisfy at minimum the following requirements:
 
-1. Build as 32-bit with GCC on SPARC
-2. Build as 64-bit with GCC on SPARC
-3. Build as 32-bit with Sun's compiler on SPARC
-4. Build as 64-bit with Sun's compiler on SPARC
-5. Build as 32-bit with GCC on x86
-6. Build as 64-bit with GCC on x86_64
-7. Build as 32-bit with Sun's compiler on x86
-8. Build as 64-bit with Sun's compiler on x86_64
+  1. Build as 32-bit with GCC on SPARC
+  2. Build as 64-bit with GCC on SPARC
+  3. Build as 32-bit with Sun's compiler on SPARC
+  4. Build as 64-bit with Sun's compiler on SPARC
+  5. Build as 32-bit with GCC on x86
+  6. Build as 64-bit with GCC on x86_64
+  7. Build as 32-bit with Sun's compiler on x86
+  8. Build as 64-bit with Sun's compiler on x86_64
 
 Note that satisfying the first four would likely satisfy the remaining criteria. It much less work to have GLPK and CBC be optional packages and hence improve on the MIP module. As far as I can tell, both of these packages are already optional spkg's and they satisfy the minimum of being optional packages, namely they build on supported Linux distributions and Mac OS X 10.5. I have not tried building and using them on OS X 10.6 yet. But if you have an account on bsd.math which runs OS X 10.6 now, you could test on that machine. See [here](http://groups.google.com/group/sage-devel/browse_thread/thread/15c461b1355a8460/d9660e265ad982d8) and [here](http://groups.google.com/group/sage-devel/browse_thread/thread/b54a6b4317add033/bf7224be375df49f) for the discussions about making a package standard.
 
@@ -139,6 +140,7 @@ Note that satisfying the first four would likely satisfy the remaining criteria.
 > 1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.
 > 
 > I wrote to many people to get informations about how best these things should be done. I am not happy either with the way it is now... What would you advise ? I know nothing of ctypes-glpk ! I just visited its front page and I can only see that it makes C functions available under python, which Cython can already do.
+
 I have little experience with Cython and much less with maintaining an optional package. Since I'm busy with release management in the next week or so, I won't have time to investigate this issue. After finishing the 4.1.2 release, I won't be able to work on anything but my thesis project.
 
 
@@ -146,6 +148,7 @@ I have little experience with Cython and much less with maintaining an optional 
 
 
 > On top of all this, I have a "personal" request.... I intend to write a lot of things that will be added to the MIP class ( soon to be MixedIntegerProgram ), but I initially wrote this class just to write new Graph-related functions. I have still a lot of patches waiting to be reviewed/accepted ( #6764 #6763 #6680 #6679 #6765 #6962 ), all using this class. Each time a modification is brought to the main class MIP, I have to rewrite patches for all of these tickets to make them coherent with the "current" state of the MIP Class. Could this ticket wait for these patches to be merged ? It would be easier, later, to change MIP to MixedIntegerProgram, isbinary to is_binary, and many other problems/bugs I already noticed in an unique patch to correct them all at once.... :-)
+
 I think a good way about this is to look through how Simon King produced his optional p_group_cohomology package. You should ask Simon about his experiences with writing a self-contained package.
 
 
@@ -182,7 +185,7 @@ Nathann
 archive/issue_comments_057871.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> Ok... I will be trying to send some coherent patch in the next few days, so it would be better if I am the only one working on this so our modification do not overlap. \n\nThanks letting me know. I'll leave it to you to clean up MIP. Inform me when it's ready and I'll take a look.\n\n\n\n\n\n> I changed some methods like setmin to set_min to let them be more Sage-like, and this involves modifying once more the packages CBC and GLPK ( which will have to be reviewed again... )\n\nInform me when it's ready and I'll take a look.\n\n\n\n\n\n> I may bring several other modifications too, while I'm at it. How close is next release ?\n\nThe upcoming rc0 is in about 3 days or so.",
+    "body": "Replying to [comment:3 ncohen]:\n> Ok... I will be trying to send some coherent patch in the next few days, so it would be better if I am the only one working on this so our modification do not overlap. \n\n\nThanks letting me know. I'll leave it to you to clean up MIP. Inform me when it's ready and I'll take a look.\n\n\n\n\n\n> I changed some methods like setmin to set_min to let them be more Sage-like, and this involves modifying once more the packages CBC and GLPK ( which will have to be reviewed again... )\n\n\nInform me when it's ready and I'll take a look.\n\n\n\n\n\n> I may bring several other modifications too, while I'm at it. How close is next release ?\n\n\nThe upcoming rc0 is in about 3 days or so.",
     "created_at": "2009-09-28T08:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -194,6 +197,7 @@ archive/issue_comments_057871.json:
 Replying to [comment:3 ncohen]:
 > Ok... I will be trying to send some coherent patch in the next few days, so it would be better if I am the only one working on this so our modification do not overlap. 
 
+
 Thanks letting me know. I'll leave it to you to clean up MIP. Inform me when it's ready and I'll take a look.
 
 
@@ -202,6 +206,7 @@ Thanks letting me know. I'll leave it to you to clean up MIP. Inform me when it'
 
 > I changed some methods like setmin to set_min to let them be more Sage-like, and this involves modifying once more the packages CBC and GLPK ( which will have to be reviewed again... )
 
+
 Inform me when it's ready and I'll take a look.
 
 
@@ -209,6 +214,7 @@ Inform me when it's ready and I'll take a look.
 
 
 > I may bring several other modifications too, while I'm at it. How close is next release ?
+
 
 The upcoming rc0 is in about 3 days or so.
 
@@ -334,7 +340,7 @@ rebased against Sage 4.1.2.rc0
 archive/issue_comments_057878.json:
 ```json
 {
-    "body": "Attachment [trac_7012-rebased.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-rebased.patch) by mvngu created at 2009-10-01 11:33:53\n\nApplying the patch `trac_7012.patch` results in a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush\nadding trac_7012.patch to series file\napplying trac_7012.patch\npatching file sage/numerical/knapsack.py\nHunk #1 FAILED at 640\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/knapsack.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_7012.patch\n```\n\nThe hunk in question is:\n\n```\n[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej\n--- knapsack.py\n+++ knapsack.py\n@@ -641,16 +641,16 @@\n     if reals:\n         seq=[(x,1) for x in seq]\n \n-    from sage.numerical.mip import MIP\n-    p=MIP(sense=1)\n-    present=p.newvar()\n-    p.setobj(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n-    p.addconstraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n+    from sage.numerical.mip import MixedIntegerLinearProgram\n+    p=MixedIntegerLinearProgram(sense=1)\n+    present=p.new_variable()\n+    p.set_objective(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n+    p.add_constraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n \n     if binary:\n-        p.setbinary(present)\n+        p.set_binary(present)\n     else:\n-        p.setinteger(present)\n+        p.set_integer(present)\n \n     if value_only:\n         return p.solve(objective_only=True)\n```\n\nI have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.",
+    "body": "Attachment [trac_7012-rebased.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-rebased.patch) by mvngu created at 2009-10-01 11:33:53\n\nApplying the patch `trac_7012.patch` results in a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush\nadding trac_7012.patch to series file\napplying trac_7012.patch\npatching file sage/numerical/knapsack.py\nHunk #1 FAILED at 640\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/knapsack.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_7012.patch\n```\nThe hunk in question is:\n\n```\n[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej\n--- knapsack.py\n+++ knapsack.py\n@@ -641,16 +641,16 @@\n     if reals:\n         seq=[(x,1) for x in seq]\n \n-    from sage.numerical.mip import MIP\n-    p=MIP(sense=1)\n-    present=p.newvar()\n-    p.setobj(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n-    p.addconstraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n+    from sage.numerical.mip import MixedIntegerLinearProgram\n+    p=MixedIntegerLinearProgram(sense=1)\n+    present=p.new_variable()\n+    p.set_objective(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n+    p.add_constraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n \n     if binary:\n-        p.setbinary(present)\n+        p.set_binary(present)\n     else:\n-        p.setinteger(present)\n+        p.set_integer(present)\n \n     if value_only:\n         return p.solve(objective_only=True)\n```\nI have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.",
     "created_at": "2009-10-01T11:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -358,7 +364,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_7012.patch
 ```
-
 The hunk in question is:
 
 ```
@@ -390,7 +395,6 @@ The hunk in question is:
      if value_only:
          return p.solve(objective_only=True)
 ```
-
 I have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.
 
 
@@ -566,7 +570,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_057887.json:
 ```json
 {
-    "body": "I applied patches against Sage 4.2.alpha0 in the following order:\n\n1. `trac_7012-flattened.patch`\n2. `trac_7012-details.patch`\n \nThese two patches touch modules under `sage/numerical`. All doctests under this directory pass with the two patches. Doctesting the whole Sage library results in the following failure:\n\n```\n[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx\nsage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.1 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nTotal time for all tests: 3.1 seconds\n```\n\nThis is a known failure and has been reported before at ticket #6825. I then installed the optional GLPK package at #7049. All doctests passed when doctesting the whole Sage library. If the above two patches are merged, then the updated GLPK package at #7049 should also be merged in the optional spkg repository.",
+    "body": "I applied patches against Sage 4.2.alpha0 in the following order:\n\n1. `trac_7012-flattened.patch`\n2. `trac_7012-details.patch`\n \nThese two patches touch modules under `sage/numerical`. All doctests under this directory pass with the two patches. Doctesting the whole Sage library results in the following failure:\n\n```\n[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx\nsage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.1 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nTotal time for all tests: 3.1 seconds\n```\nThis is a known failure and has been reported before at ticket #6825. I then installed the optional GLPK package at #7049. All doctests passed when doctesting the whole Sage library. If the above two patches are merged, then the updated GLPK package at #7049 should also be merged in the optional spkg repository.",
     "created_at": "2009-10-21T22:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
@@ -596,7 +600,6 @@ The following tests failed:
         sage -t -long "devel/sage-main/sage/modules/vector_real_double_dense.pyx"
 Total time for all tests: 3.1 seconds
 ```
-
 This is a known failure and has been reported before at ticket #6825. I then installed the optional GLPK package at #7049. All doctests passed when doctesting the whole Sage library. If the above two patches are merged, then the updated GLPK package at #7049 should also be merged in the optional spkg repository.
 
 

@@ -3,7 +3,7 @@
 archive/issues_004756.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: a = matrix(CDF,2,[1,2,4,7])\nsage: a.eigenmatrix_right()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:18170)()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:17965)()\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4756\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: a = matrix(CDF,2,[1,2,4,7])\nsage: a.eigenmatrix_right()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:18170)()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:17965)()\n\nIndexError: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4756\n\n",
     "created_at": "2008-12-11T05:11:14Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  @jasongrout
 
-
 ```
 sage: a = matrix(CDF,2,[1,2,4,7])
 sage: a.eigenmatrix_right()
@@ -35,7 +34,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4756
 
@@ -190,7 +188,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_035952.json:
 ```json
 {
-    "body": "Great job!\n\nI think these changes would make the code easier to read:\n\n\n```\n \t662\t        for k in range(len(spectrum)): \n \t663\t            evalue = spectrum[k][0] \n \t664\t            evector = spectrum[k][1][0] \n \t665\t            pairs.append((evalue, evector.parent().span_of_basis([evector],check=False))) \n\nchanged to\n\nfor eval,evectors in spectrum:\n    evec = evectors[0]\n    evector = evec.parent().span_of_basis([evec],check=False)\n    pairs.append((evalue, evector))\n\n```\n\n\n(similarly on lines 722-725)\n\nAlso:\n\n\n```\nB = matrix(CDF, [spectrum[i][1][0] for i in range(len(spectrum))]).transpose() \n\nchanged to\n\nB = matrix(CDF, [evecs[0] for _,evecs in spectrum]).transpose() \n\n```\n",
+    "body": "Great job!\n\nI think these changes would make the code easier to read:\n\n```\n \t662\t        for k in range(len(spectrum)): \n \t663\t            evalue = spectrum[k][0] \n \t664\t            evector = spectrum[k][1][0] \n \t665\t            pairs.append((evalue, evector.parent().span_of_basis([evector],check=False))) \n\nchanged to\n\nfor eval,evectors in spectrum:\n    evec = evectors[0]\n    evector = evec.parent().span_of_basis([evec],check=False)\n    pairs.append((evalue, evector))\n\n```\n\n(similarly on lines 722-725)\n\nAlso:\n\n```\nB = matrix(CDF, [spectrum[i][1][0] for i in range(len(spectrum))]).transpose() \n\nchanged to\n\nB = matrix(CDF, [evecs[0] for _,evecs in spectrum]).transpose() \n\n```",
     "created_at": "2010-01-24T01:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -202,7 +200,6 @@ archive/issue_comments_035952.json:
 Great job!
 
 I think these changes would make the code easier to read:
-
 
 ```
  	662	        for k in range(len(spectrum)): 
@@ -219,11 +216,9 @@ for eval,evectors in spectrum:
 
 ```
 
-
 (similarly on lines 722-725)
 
 Also:
-
 
 ```
 B = matrix(CDF, [spectrum[i][1][0] for i in range(len(spectrum))]).transpose() 
@@ -233,7 +228,6 @@ changed to
 B = matrix(CDF, [evecs[0] for _,evecs in spectrum]).transpose() 
 
 ```
-
 
 
 
@@ -480,7 +474,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_035965.json:
 ```json
 {
-    "body": "Replying to [comment:10 drkirkby]:\n> Has this been checked on Solaris? \n\nHi Dave,\n\nNot that I know of.  I develop with KUbuntu.\n\nMaybe a reviewer with Solaris experience can put it through its paces.  Totally Python, so I'd guess numerical issues might be the only distinction.\n\nThanks,\nRob",
+    "body": "Replying to [comment:10 drkirkby]:\n> Has this been checked on Solaris? \n\n\nHi Dave,\n\nNot that I know of.  I develop with KUbuntu.\n\nMaybe a reviewer with Solaris experience can put it through its paces.  Totally Python, so I'd guess numerical issues might be the only distinction.\n\nThanks,\nRob",
     "created_at": "2010-03-17T20:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
@@ -491,6 +485,7 @@ archive/issue_comments_035965.json:
 
 Replying to [comment:10 drkirkby]:
 > Has this been checked on Solaris? 
+
 
 Hi Dave,
 

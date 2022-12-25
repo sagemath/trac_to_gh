@@ -3,7 +3,7 @@
 archive/issues_008786.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThis is in devel/sage/sage/graphs/graph.py:\n\n```\nclass Graph(GenericGraph):\n    r\"\"\"\n    Undirected graph.\n\n    A graph is a set of vertices connected by edges\n    (cf. http://en.wikipedia.org/wiki/Graph_(mathematics) ).\n```\n\n\nIf you look at http://sagemath.org/doc/reference/sage/graphs/graph.html and search for \"mathematics\", then click the link, you'll see it is broken.  Fix this by:\n\n1. fixing sphinx?  too tricky, maybe\n\n2. finding sphinx docs and figuring out how to explicitly specify a URL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8786\n\n",
+    "body": "Assignee: mvngu\n\nThis is in devel/sage/sage/graphs/graph.py:\n\n```\nclass Graph(GenericGraph):\n    r\"\"\"\n    Undirected graph.\n\n    A graph is a set of vertices connected by edges\n    (cf. http://en.wikipedia.org/wiki/Graph_(mathematics) ).\n```\n\nIf you look at http://sagemath.org/doc/reference/sage/graphs/graph.html and search for \"mathematics\", then click the link, you'll see it is broken.  Fix this by:\n\n1. fixing sphinx?  too tricky, maybe\n\n2. finding sphinx docs and figuring out how to explicitly specify a URL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8786\n\n",
     "created_at": "2010-04-27T22:19:35Z",
     "labels": [
         "component: documentation",
@@ -28,7 +28,6 @@ class Graph(GenericGraph):
     A graph is a set of vertices connected by edges
     (cf. http://en.wikipedia.org/wiki/Graph_(mathematics) ).
 ```
-
 
 If you look at http://sagemath.org/doc/reference/sage/graphs/graph.html and search for "mathematics", then click the link, you'll see it is broken.  Fix this by:
 
@@ -83,7 +82,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080314.json:
 ```json
 {
-    "body": "Attachment [trac_8786-wikipedia-links.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-wikipedia-links.patch) by mvngu created at 2010-04-28 06:22:00\n\nThe attached patch should fix the broken links in `graph.py` to Wikipedia. Any URL can be encapsulated using the markup:\n\n```\n`descriptive-name <valid-URL>`_\n```\n",
+    "body": "Attachment [trac_8786-wikipedia-links.patch](tarball://root/attachments/some-uuid/ticket8786/trac_8786-wikipedia-links.patch) by mvngu created at 2010-04-28 06:22:00\n\nThe attached patch should fix the broken links in `graph.py` to Wikipedia. Any URL can be encapsulated using the markup:\n\n```\n`descriptive-name <valid-URL>`_\n```",
     "created_at": "2010-04-28T06:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -102,13 +101,12 @@ The attached patch should fix the broken links in `graph.py` to Wikipedia. Any U
 
 
 
-
 ---
 
 archive/issue_comments_080315.json:
 ```json
 {
-    "body": "And here are a few more corrections (to be applied on top of Minh's)... Some were not a problem as they contained no parenthesis, but as I had an Emacs macro available... :-)\n\nBy the way, I noticed something funny while working on this patch :\n\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\n\nIt must have occurred during the splitting of graph.py... I'll create another ticket to take care of it :-)\n\nNathann",
+    "body": "And here are a few more corrections (to be applied on top of Minh's)... Some were not a problem as they contained no parenthesis, but as I had an Emacs macro available... :-)\n\nBy the way, I noticed something funny while working on this patch :\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\nIt must have occurred during the splitting of graph.py... I'll create another ticket to take care of it :-)\n\nNathann",
     "created_at": "2010-04-28T08:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ And here are a few more corrections (to be applied on top of Minh's)... Some wer
 
 By the way, I noticed something funny while working on this patch :
 
-
 ```
 ~/sage/sage-doc/sage/graphs$ grep -e "def.*eedback" *
 digraph.py:    def feedback_edge_set(self,value_only=False):
@@ -130,7 +127,6 @@ generic_graph.py:    def feedback_edge_set(self,value_only=False):
 generic_graph.py:    def feedback_vertex_set(self,value_only=False):
 ~/sage/sage-doc/sage/graphs$ 
 ```
-
 
 It must have occurred during the splitting of graph.py... I'll create another ticket to take care of it :-)
 
@@ -207,7 +203,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080319.json:
 ```json
 {
-    "body": "> So only the following patches now need review by anyone but me:\n> \n>  * [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n>  * [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)\n\nThen let this ticket be positively reviewed ! The patches are to be applied in this order :\n\n* [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n*  [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch)\n* [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)\n\nAnd there is nothing wrong to report on alpha2. And I did not notice any other link we could have missed in the documentation :-)\n\nThank you very much, Minh !!\n\nNathann",
+    "body": "> So only the following patches now need review by anyone but me:\n> \n> * [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n> * [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)\n\n\nThen let this ticket be positively reviewed ! The patches are to be applied in this order :\n\n* [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)\n*  [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch)\n* [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)\n\nAnd there is nothing wrong to report on alpha2. And I did not notice any other link we could have missed in the documentation :-)\n\nThank you very much, Minh !!\n\nNathann",
     "created_at": "2010-04-29T16:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8786",
     "type": "issue_comment",
@@ -218,8 +214,9 @@ archive/issue_comments_080319.json:
 
 > So only the following patches now need review by anyone but me:
 > 
->  * [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)
->  * [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)
+> * [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)
+> * [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)
+
 
 Then let this ticket be positively reviewed ! The patches are to be applied in this order :
 

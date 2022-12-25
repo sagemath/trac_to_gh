@@ -3,7 +3,7 @@
 archive/issues_003912.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mvngu\n\nsage -t can check stuff in \n\n```\n\\begin{verbatim}\nsage: 2 + 3\n5\n\\end{verbatim}\n```\n\n\nI propose to also support \n\n```\n\\begin{lstlisting}\nsage: 2 + 3\n5\n\\end{llstisting}\n```\n\nwhich looks so much nicer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3912\n\n",
+    "body": "Assignee: tba\n\nCC:  mvngu\n\nsage -t can check stuff in \n\n```\n\\begin{verbatim}\nsage: 2 + 3\n5\n\\end{verbatim}\n```\n\nI propose to also support \n\n```\n\\begin{lstlisting}\nsage: 2 + 3\n5\n\\end{llstisting}\n```\nwhich looks so much nicer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3912\n\n",
     "created_at": "2008-08-20T14:31:47Z",
     "labels": [
         "component: documentation",
@@ -29,7 +29,6 @@ sage: 2 + 3
 \end{verbatim}
 ```
 
-
 I propose to also support 
 
 ```
@@ -38,7 +37,6 @@ sage: 2 + 3
 5
 \end{llstisting}
 ```
-
 which looks so much nicer.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3912

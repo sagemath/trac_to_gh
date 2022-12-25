@@ -3,7 +3,7 @@
 archive/issues_002044.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/e88f02da4c345cb7 Phil reports the following problem:\n\n```\nHello,\n\nI had many troubles getting the upgrade through a caching proxy on\nwhich I've no control.\nWhen running sage -upgrade, the proxy didn't let me getting the latest\nversions, which made troubles with the critical files:\nhttp://www.sagemath.org/packages/standard/list\nhttp://www.sagemath.org/packages/standard/deps\nhttp://www.sagemath.org/packages/standard/newest_version\nhttp://www.sagemath.org/packages/standard/README\nhttp://www.sagemath.org/packages/install\n\nI could get around by providing manually the files and skipping the\ndownload in local/bin/sage-update\n\nBut would it be possible to add some anti-caching headers to the\nofficial sage server for those files?\nIt'd help a lot all people like me with a sage install behind caching\nproxy.\nSth like:\n Expires: Mon, 26 Jul 1997 05:00:00 GMT\"\n Cache-Control: no-store, no-cache, must-revalidate\"\n Cache-Control: post-check=0, pre-check=0\", false\n Pragma: no-cache\n\nPhil \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2044\n\n",
+    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/e88f02da4c345cb7 Phil reports the following problem:\n\n```\nHello,\n\nI had many troubles getting the upgrade through a caching proxy on\nwhich I've no control.\nWhen running sage -upgrade, the proxy didn't let me getting the latest\nversions, which made troubles with the critical files:\nhttp://www.sagemath.org/packages/standard/list\nhttp://www.sagemath.org/packages/standard/deps\nhttp://www.sagemath.org/packages/standard/newest_version\nhttp://www.sagemath.org/packages/standard/README\nhttp://www.sagemath.org/packages/install\n\nI could get around by providing manually the files and skipping the\ndownload in local/bin/sage-update\n\nBut would it be possible to add some anti-caching headers to the\nofficial sage server for those files?\nIt'd help a lot all people like me with a sage install behind caching\nproxy.\nSth like:\n Expires: Mon, 26 Jul 1997 05:00:00 GMT\"\n Cache-Control: no-store, no-cache, must-revalidate\"\n Cache-Control: post-check=0, pre-check=0\", false\n Pragma: no-cache\n\nPhil \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2044\n\n",
     "created_at": "2008-02-04T04:39:10Z",
     "labels": [
         "component: distribution",
@@ -49,7 +49,6 @@ Sth like:
 Phil 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2044
 
 
@@ -61,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2044
 archive/issue_comments_013209.json:
 ```json
 {
-    "body": "Some more info from Phil:\n\n```\nApparently your server is an Apache so after googling myself I found\nthose pages:\nhttp://www.askapache.com/htaccess/speed-up-sites-with-htaccess-cachin...\nhttp://httpd.apache.org/docs/2.0/mod/mod_expires.html\nhttp://httpd.apache.org/docs/2.0/mod/mod_headers.html#header\nhttp://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9\n\nSo I guess having a .htaccess in packages/ with sth like that is good\nenough\n(be sure to have modules expire and headers and to allow .htaccess\nfiles)\n<FilesMatch \"(list|deps|newest_version|README)$\">\n<IfModule mod_expires.c>\n  # any Expires Directives go here\n  ExpiresActive On\n  ExpiresDefault access\n</IfModule>\n<IfModule mod_headers.c>\n  # any Header directives go here\n  Header set Cache-Control \"no-store, no-cache, must-revalidate, max-\nage=0\"\n  Header set Pragma \"no-cache\"\n</IfModule>\n</FilesMatch>\n\nAnd same for ../install\n\nTo be tested with sth like:\n wget -O /dev/null -S http://www.sagemath.org/packages/standard/list\nto see the headers returned by the Apache server \n```\n\n\nCheers,\n\nMichael",
+    "body": "Some more info from Phil:\n\n```\nApparently your server is an Apache so after googling myself I found\nthose pages:\nhttp://www.askapache.com/htaccess/speed-up-sites-with-htaccess-cachin...\nhttp://httpd.apache.org/docs/2.0/mod/mod_expires.html\nhttp://httpd.apache.org/docs/2.0/mod/mod_headers.html#header\nhttp://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9\n\nSo I guess having a .htaccess in packages/ with sth like that is good\nenough\n(be sure to have modules expire and headers and to allow .htaccess\nfiles)\n<FilesMatch \"(list|deps|newest_version|README)$\">\n<IfModule mod_expires.c>\n  # any Expires Directives go here\n  ExpiresActive On\n  ExpiresDefault access\n</IfModule>\n<IfModule mod_headers.c>\n  # any Header directives go here\n  Header set Cache-Control \"no-store, no-cache, must-revalidate, max-\nage=0\"\n  Header set Pragma \"no-cache\"\n</IfModule>\n</FilesMatch>\n\nAnd same for ../install\n\nTo be tested with sth like:\n wget -O /dev/null -S http://www.sagemath.org/packages/standard/list\nto see the headers returned by the Apache server \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-08T21:33:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2044",
     "type": "issue_comment",
@@ -104,7 +103,6 @@ To be tested with sth like:
  wget -O /dev/null -S http://www.sagemath.org/packages/standard/list
 to see the headers returned by the Apache server 
 ```
-
 
 Cheers,
 

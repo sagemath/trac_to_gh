@@ -3,7 +3,7 @@
 archive/issues_003927.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: factorization\n\nThis works:\n\n```\nsage: factor(10)*factor(15)^(-1)             \n2 * 3^-1\n```\n\nand so does this:\n\n```\nsage: factor(10/15)        \n2 * 3^-1\n```\n\nbut not this:\n\n```\nsage: factor(10)/factor(15)     \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/john/sage-3.1.test/spkg/build/python-2.5.2.p3/tmp/<ipython console> in <module>()\n\nTypeError: unsupported operand type(s) for /: 'Factorization' and 'Factorization'\n```\n\n\nSo: Factorizations can be multiplied and inverted but not divided, which is a bit silly.  I suggest adding a `__div___()` method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3927\n\n",
+    "body": "Assignee: somebody\n\nKeywords: factorization\n\nThis works:\n\n```\nsage: factor(10)*factor(15)^(-1)             \n2 * 3^-1\n```\nand so does this:\n\n```\nsage: factor(10/15)        \n2 * 3^-1\n```\nbut not this:\n\n```\nsage: factor(10)/factor(15)     \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/john/sage-3.1.test/spkg/build/python-2.5.2.p3/tmp/<ipython console> in <module>()\n\nTypeError: unsupported operand type(s) for /: 'Factorization' and 'Factorization'\n```\n\nSo: Factorizations can be multiplied and inverted but not divided, which is a bit silly.  I suggest adding a `__div___()` method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3927\n\n",
     "created_at": "2008-08-22T12:33:08Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,14 +26,12 @@ This works:
 sage: factor(10)*factor(15)^(-1)             
 2 * 3^-1
 ```
-
 and so does this:
 
 ```
 sage: factor(10/15)        
 2 * 3^-1
 ```
-
 but not this:
 
 ```
@@ -45,7 +43,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand type(s) for /: 'Factorization' and 'Factorization'
 ```
-
 
 So: Factorizations can be multiplied and inverted but not divided, which is a bit silly.  I suggest adding a `__div___()` method.
 

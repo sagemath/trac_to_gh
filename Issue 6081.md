@@ -3,7 +3,7 @@
 archive/issues_006081.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAs reported [on sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/ea99b379e5b1b8ab): \n\n```\nsage: RingModules(ZZ).is_abelian() \nFalse \nsage: AbelianGroups().is_abelian()\nFalse\n```\n\nThe attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6081\n\n",
+    "body": "Assignee: tbd\n\nAs reported [on sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/ea99b379e5b1b8ab): \n\n```\nsage: RingModules(ZZ).is_abelian() \nFalse \nsage: AbelianGroups().is_abelian()\nFalse\n```\nThe attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6081\n\n",
     "created_at": "2009-05-19T03:53:34Z",
     "labels": [
         "component: algebra",
@@ -27,7 +27,6 @@ False
 sage: AbelianGroups().is_abelian()
 False
 ```
-
 The attached patch should fix this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6081

@@ -117,7 +117,7 @@ Changing keywords from "" to "planar graph, triangulation".
 archive/issue_comments_048263.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> Related subject, recently published : Uniform random sampling of planar graphs in linear time \n> \n> The paper and a Java implementation are available on :\n> http://algo.inria.fr/fusy/\n\nFor future reference, Eric Fusy's page is now at:\nhttp://www.lix.polytechnique.fr/Labo/Eric.Fusy/\n\nExcerpt of that page about that paper and Java implementation:\n\n> **Uniform random sampling of planar graphs in linear time.**\n>\n> Random Structures and Algorithms 35(4): 464-522 (2009).\n> [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/Fusy08_planar_graphs.pdf)\n>\n> Short version, under the title \"Quadratic exact-size and linear approximate-size random generation of planar graphs\": Proceedings of the AofA'05 Conference (Analysis of Algorithms-2005), published in Discrete Mathematics and Theoretical Computer Science (DMTCS) Proceedings, vol AD, pp. 125-138 (2005).\n> [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/FusyAofa.pdf)\n>\n> Implementation (in java) [tar.gz](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Programs/BoltzmannPlanarGraphs.tar.gz)\n\nRegarding plantri, one can now install it as an optional package by running the following in a terminal\n\n```\nsage -i plantri\n```\n\n(not sure if one needs to then run `make` from the directory where Sage is installed).",
+    "body": "Replying to [comment:2 ncohen]:\n> Related subject, recently published : Uniform random sampling of planar graphs in linear time \n> \n> The paper and a Java implementation are available on :\n> http://algo.inria.fr/fusy/\n\n\nFor future reference, Eric Fusy's page is now at:\nhttp://www.lix.polytechnique.fr/Labo/Eric.Fusy/\n\nExcerpt of that page about that paper and Java implementation:\n\n> **Uniform random sampling of planar graphs in linear time.**\n\n>\n> Random Structures and Algorithms 35(4): 464-522 (2009).\n> [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/Fusy08_planar_graphs.pdf)\n\n>\n> Short version, under the title \"Quadratic exact-size and linear approximate-size random generation of planar graphs\": Proceedings of the AofA'05 Conference (Analysis of Algorithms-2005), published in Discrete Mathematics and Theoretical Computer Science (DMTCS) Proceedings, vol AD, pp. 125-138 (2005).\n> [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/FusyAofa.pdf)\n\n>\n> Implementation (in java) [tar.gz](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Programs/BoltzmannPlanarGraphs.tar.gz)\n\n\nRegarding plantri, one can now install it as an optional package by running the following in a terminal\n\n```\nsage -i plantri\n```\n(not sure if one needs to then run `make` from the directory where Sage is installed).",
     "created_at": "2018-06-27T07:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6074",
     "type": "issue_comment",
@@ -132,25 +132,29 @@ Replying to [comment:2 ncohen]:
 > The paper and a Java implementation are available on :
 > http://algo.inria.fr/fusy/
 
+
 For future reference, Eric Fusy's page is now at:
 http://www.lix.polytechnique.fr/Labo/Eric.Fusy/
 
 Excerpt of that page about that paper and Java implementation:
 
 > **Uniform random sampling of planar graphs in linear time.**
+
 >
 > Random Structures and Algorithms 35(4): 464-522 (2009).
 > [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/Fusy08_planar_graphs.pdf)
+
 >
 > Short version, under the title "Quadratic exact-size and linear approximate-size random generation of planar graphs": Proceedings of the AofA'05 Conference (Analysis of Algorithms-2005), published in Discrete Mathematics and Theoretical Computer Science (DMTCS) Proceedings, vol AD, pp. 125-138 (2005).
 > [pdf](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Articles/FusyAofa.pdf)
+
 >
 > Implementation (in java) [tar.gz](http://www.lix.polytechnique.fr/Labo/Eric.Fusy/Programs/BoltzmannPlanarGraphs.tar.gz)
+
 
 Regarding plantri, one can now install it as an optional package by running the following in a terminal
 
 ```
 sage -i plantri
 ```
-
 (not sure if one needs to then run `make` from the directory where Sage is installed).

@@ -3,7 +3,7 @@
 archive/issues_001193.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nWhen I attempt to apply a patch under VMware, I get an error:\n\n\n```\n _dispatch\n    ret = _runcommand(ui, options, cmd, d)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 401, in\n _runcommand\n    return checkargs()\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 357, in\n checkargs\n    return cmdfunc()\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 340, in\n <lambda>\n    d = lambda: func(ui, repo, *args, **cmdoptions)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/commands.py\", line 2691, i\nn unbundle\n    modheads = repo.addchangegroup(gen, 'unbundle', 'bundle:', + fname)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/localrepo.py\", line 1849, \nin addchangegroup\n    if cl.addgroup(chunkiter, csmap, trp, 1) is None:\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 1201, in\naddgroup\n    ifh, dfh)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 1026, in\n_addrevision\n    ptext = self.revision(self.node(prev))\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 948, in r\nevision\n    text = mdiff.patches(text, bins)\nmpatch.mpatchError: invalid patch\n```\n\n\nThis occurred most recently when I applied Yi's latest DSage patch, but it occurs even when I make a patch recording a trivial modification to a file.  \n\n(Shouldn't there be a \"mercurial\" component in the drop-down below?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1193\n\n",
+    "body": "Assignee: cwitty\n\nWhen I attempt to apply a patch under VMware, I get an error:\n\n```\n _dispatch\n    ret = _runcommand(ui, options, cmd, d)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 401, in\n _runcommand\n    return checkargs()\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 357, in\n checkargs\n    return cmdfunc()\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/dispatch.py\", line 340, in\n <lambda>\n    d = lambda: func(ui, repo, *args, **cmdoptions)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/commands.py\", line 2691, i\nn unbundle\n    modheads = repo.addchangegroup(gen, 'unbundle', 'bundle:', + fname)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/localrepo.py\", line 1849, \nin addchangegroup\n    if cl.addgroup(chunkiter, csmap, trp, 1) is None:\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 1201, in\naddgroup\n    ifh, dfh)\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 1026, in\n_addrevision\n    ptext = self.revision(self.node(prev))\n  File \"/usr/local/sage/local/lib/python2.5/mercurial/revlog.py\", line 948, in r\nevision\n    text = mdiff.patches(text, bins)\nmpatch.mpatchError: invalid patch\n```\n\nThis occurred most recently when I applied Yi's latest DSage patch, but it occurs even when I make a patch recording a trivial modification to a file.  \n\n(Shouldn't there be a \"mercurial\" component in the drop-down below?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1193\n\n",
     "created_at": "2007-11-17T16:37:02Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ archive/issues_001193.json:
 Assignee: cwitty
 
 When I attempt to apply a patch under VMware, I get an error:
-
 
 ```
  _dispatch
@@ -51,7 +50,6 @@ evision
     text = mdiff.patches(text, bins)
 mpatch.mpatchError: invalid patch
 ```
-
 
 This occurred most recently when I applied Yi's latest DSage patch, but it occurs even when I make a patch recording a trivial modification to a file.  
 

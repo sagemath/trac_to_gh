@@ -3,7 +3,7 @@
 archive/issues_007963.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @jasongrout\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n2. click the checkboxes next to a few worksheets\n3. hit the \"Download\" button\n\nand I get an error:\n\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @jasongrout\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n2. click the checkboxes next to a few worksheets\n3. hit the \"Download\" button\n\nand I get an error:\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
     "created_at": "2010-01-17T10:18:51Z",
     "labels": [
         "component: notebook",
@@ -28,11 +28,9 @@ I do the following:
 
 and I get an error:
 
-
 ```
 The resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7963
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7963
 archive/issue_comments_069362.json:
 ```json
 {
-    "body": "I think this is a matter of\n\n```diff\n--- a/sagenb/data/sage/js/notebook_lib.js\n+++ b/sagenb/data/sage/js/notebook_lib.js\n@@ -1515,7 +1515,7 @@ function download_worksheets_button() {\n     /*\n     Downloads the set of checked worksheets as a zip file.\n     */\n-    window.location.replace(\"/download_worksheets?filenames=\" +\n+    window.location.replace(\"/download_worksheets.zip?filenames=\" +\n                             checked_worksheet_filenames() + \"&sep=\" + SEP);\n }\n```\n\nbut I haven't posted a patch, since #7908 and some of its dependencies make a lot of changes to `notebook_lib.js`.",
+    "body": "I think this is a matter of\n\n```diff\n--- a/sagenb/data/sage/js/notebook_lib.js\n+++ b/sagenb/data/sage/js/notebook_lib.js\n@@ -1515,7 +1515,7 @@ function download_worksheets_button() {\n     /*\n     Downloads the set of checked worksheets as a zip file.\n     */\n-    window.location.replace(\"/download_worksheets?filenames=\" +\n+    window.location.replace(\"/download_worksheets.zip?filenames=\" +\n                             checked_worksheet_filenames() + \"&sep=\" + SEP);\n }\n```\nbut I haven't posted a patch, since #7908 and some of its dependencies make a lot of changes to `notebook_lib.js`.",
     "created_at": "2010-01-17T15:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
@@ -68,7 +66,6 @@ I think this is a matter of
                              checked_worksheet_filenames() + "&sep=" + SEP);
  }
 ```
-
 but I haven't posted a patch, since #7908 and some of its dependencies make a lot of changes to `notebook_lib.js`.
 
 

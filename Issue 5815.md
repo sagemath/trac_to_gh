@@ -153,7 +153,7 @@ I noticed that copying or printing a docbrowser worksheet omits Sphinx' styleshe
 archive/issue_comments_045607.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> I noticed that copying or printing a docbrowser worksheet omits Sphinx' stylesheet.  One-cell mode also appears to be broken.  Of course, these are separate issues, and I can open new tickets.\nOops!  One-cell mode is fine.  Sorry.",
+    "body": "Replying to [comment:4 mpatel]:\n> I noticed that copying or printing a docbrowser worksheet omits Sphinx' stylesheet.  One-cell mode also appears to be broken.  Of course, these are separate issues, and I can open new tickets.\n\nOops!  One-cell mode is fine.  Sorry.",
     "created_at": "2009-04-22T03:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5815",
     "type": "issue_comment",
@@ -164,6 +164,7 @@ archive/issue_comments_045607.json:
 
 Replying to [comment:4 mpatel]:
 > I noticed that copying or printing a docbrowser worksheet omits Sphinx' stylesheet.  One-cell mode also appears to be broken.  Of course, these are separate issues, and I can open new tickets.
+
 Oops!  One-cell mode is fine.  Sorry.
 
 

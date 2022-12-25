@@ -97,7 +97,7 @@ Applied find and passed sage -testall to 4.5.2.rc0 on a 10.6.4 mac. Testing on u
 archive/issue_comments_091330.json:
 ```json
 {
-    "body": "Replying to [comment:3 wdj]:\n> Replying to [comment:2 malb]:\n> \n> Applied find and passed sage -testall to 4.5.2.rc0 on a 10.6.4 mac. Testing on ubuntu now.\n\nApplied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall.\n\nAre there other tests needed, such as solaris or cygwin?",
+    "body": "Replying to [comment:3 wdj]:\n> Replying to [comment:2 malb]:\n> \n> Applied find and passed sage -testall to 4.5.2.rc0 on a 10.6.4 mac. Testing on ubuntu now.\n\n\nApplied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall.\n\nAre there other tests needed, such as solaris or cygwin?",
     "created_at": "2010-08-10T16:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
@@ -111,6 +111,7 @@ Replying to [comment:3 wdj]:
 > 
 > Applied find and passed sage -testall to 4.5.2.rc0 on a 10.6.4 mac. Testing on ubuntu now.
 
+
 Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall.
 
 Are there other tests needed, such as solaris or cygwin?
@@ -122,7 +123,7 @@ Are there other tests needed, such as solaris or cygwin?
 archive/issue_comments_091331.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n\n> Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?\n\nI doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.",
+    "body": "Replying to [comment:4 wdj]:\n\n> Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?\n\n\nI doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.",
     "created_at": "2010-08-10T17:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
@@ -135,6 +136,7 @@ Replying to [comment:4 wdj]:
 
 > Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?
 
+
 I doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.
 
 
@@ -144,7 +146,7 @@ I doubt it, since (a) this is a pure Python package and (b) this is an optional 
 archive/issue_comments_091332.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> Replying to [comment:4 wdj]:\n> \n> > Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?\n> \n> I doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.\n\nI also checked that the SPKG.txt and\nspkg-install file follow the conventions in \nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nI have emailed D Kirkby separately regarding the solaris issue. I'm\nabout to give this a positive review after hearing back from him.",
+    "body": "Replying to [comment:5 malb]:\n> Replying to [comment:4 wdj]:\n> \n> > Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?\n\n> \n> I doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.\n\n\nI also checked that the SPKG.txt and\nspkg-install file follow the conventions in \nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nI have emailed D Kirkby separately regarding the solaris issue. I'm\nabout to give this a positive review after hearing back from him.",
     "created_at": "2010-08-10T17:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
@@ -157,8 +159,10 @@ Replying to [comment:5 malb]:
 > Replying to [comment:4 wdj]:
 > 
 > > Applied fine to 4.5.2 on 32bit ubuntu 10.04 and passed sage -testall. Are there other tests needed, such as solaris or cygwin?
+
 > 
 > I doubt it, since (a) this is a pure Python package and (b) this is an optional SPKG anyway.
+
 
 I also checked that the SPKG.txt and
 spkg-install file follow the conventions in 
@@ -192,7 +196,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091334.json:
 ```json
 {
-    "body": "Replying to [comment:6 wdj]:\n\n> \n> I have emailed D Kirkby separately regarding the solaris issue. I'm\n> about to give this a positive review after hearing back from him.\n> \n\n\nDave Kirkby replied that the script will run on solaris as well.",
+    "body": "Replying to [comment:6 wdj]:\n\n> \n> I have emailed D Kirkby separately regarding the solaris issue. I'm\n> about to give this a positive review after hearing back from him.\n> \n\n\n\nDave Kirkby replied that the script will run on solaris as well.",
     "created_at": "2010-08-10T18:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
@@ -207,6 +211,7 @@ Replying to [comment:6 wdj]:
 > I have emailed D Kirkby separately regarding the solaris issue. I'm
 > about to give this a positive review after hearing back from him.
 > 
+
 
 
 Dave Kirkby replied that the script will run on solaris as well.
@@ -238,7 +243,7 @@ Mike, Minh, or William, could one of you merge this package into the optional sp
 archive/issue_comments_091336.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> Mike, Minh, or William, could one of you merge this package into the optional spkg repository?  I don't have the privileges to do this.\n\nDone. See the updated page\n\nhttp://www.sagemath.org/packages/optional/",
+    "body": "Replying to [comment:8 mpatel]:\n> Mike, Minh, or William, could one of you merge this package into the optional spkg repository?  I don't have the privileges to do this.\n\n\nDone. See the updated page\n\nhttp://www.sagemath.org/packages/optional/",
     "created_at": "2010-08-15T04:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
@@ -249,6 +254,7 @@ archive/issue_comments_091336.json:
 
 Replying to [comment:8 mpatel]:
 > Mike, Minh, or William, could one of you merge this package into the optional spkg repository?  I don't have the privileges to do this.
+
 
 Done. See the updated page
 

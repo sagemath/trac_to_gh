@@ -148,7 +148,7 @@ If there are no objections, I will remove the second patch.
 archive/issue_comments_071304.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> I could not get \"\\times\" to work instead (which is what I normally use for this) but * does, so I put that in.\n\nActually, it looks like someone changed this to `\\times` in rc0, so I've updated the patch to change `\\times` instead of `\\cross` to `*`.",
+    "body": "Replying to [comment:3 cremona]:\n> I could not get \"\\times\" to work instead (which is what I normally use for this) but * does, so I put that in.\n\n\nActually, it looks like someone changed this to `\\times` in rc0, so I've updated the patch to change `\\times` instead of `\\cross` to `*`.",
     "created_at": "2010-02-04T19:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
@@ -159,6 +159,7 @@ archive/issue_comments_071304.json:
 
 Replying to [comment:3 cremona]:
 > I could not get "\times" to work instead (which is what I normally use for this) but * does, so I put that in.
+
 
 Actually, it looks like someone changed this to `\times` in rc0, so I've updated the patch to change `\times` instead of `\cross` to `*`.
 
@@ -209,7 +210,7 @@ The tag was already at review, and I'm happy to leave it there.
 archive/issue_comments_071307.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> Patch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n> \n> The tag was already at review, and I'm happy to leave it there.\n\nThat should have said \"positive review\".\n\nI checked that this applies fine to 4.3.2 + #8184 spkg & patches + #8155 patches;  all tests pass (on 64-bit).",
+    "body": "Replying to [comment:7 cremona]:\n> Patch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n> \n> The tag was already at review, and I'm happy to leave it there.\n\n\nThat should have said \"positive review\".\n\nI checked that this applies fine to 4.3.2 + #8184 spkg & patches + #8155 patches;  all tests pass (on 64-bit).",
     "created_at": "2010-02-06T17:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
@@ -222,6 +223,7 @@ Replying to [comment:7 cremona]:
 > Patch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!
 > 
 > The tag was already at review, and I'm happy to leave it there.
+
 
 That should have said "positive review".
 

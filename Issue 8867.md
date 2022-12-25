@@ -219,7 +219,7 @@ So I don't think this depends on #5572 anymore.
 archive/issue_comments_081363.json:
 ```json
 {
-    "body": "Did all of the tests work for you? The riemann tests go fine, but the interpolators do this:\n\n\n```\nFile \"/home/ethan/sage-4.5.3/devel/sage/sage/calculus/interpolators.pyx\", line 52:\n\n  sage: m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],0)\n\nException raised:\n\n  Traceback (most recent call last):\n    File \"/home/ethan/sage-4.5.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n      self.run_one_example(test, example, filename, compileflags)\n    File \"/home/ethan/sage-4.5.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n      OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n    File \"/home/ethan/sage-4.5.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n      compileflags, 1) in test.globs\n    File \"<doctest __main__.example_1[7]>\", line 1, in <module>\n      m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],Integer(0))###line 52:\n  sage: m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],0)\n    File \"riemann.pyx\", line 164, in sage.calculus.riemann.Riemann_Map.__init__ (sage/calculus/riemann.c:1443) File \"fast_callable.pyx\", line 399, in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:2668)\n  AttributeError: 'function' object has no attribute 'variables'\n```\n\n\nI can solve this by wrapping the fast-callable casts in a try except block, but of course that means that it isn't using them for unusual functions like the interpolators.",
+    "body": "Did all of the tests work for you? The riemann tests go fine, but the interpolators do this:\n\n```\nFile \"/home/ethan/sage-4.5.3/devel/sage/sage/calculus/interpolators.pyx\", line 52:\n\n  sage: m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],0)\n\nException raised:\n\n  Traceback (most recent call last):\n    File \"/home/ethan/sage-4.5.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n      self.run_one_example(test, example, filename, compileflags)\n    File \"/home/ethan/sage-4.5.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n      OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n    File \"/home/ethan/sage-4.5.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n      compileflags, 1) in test.globs\n    File \"<doctest __main__.example_1[7]>\", line 1, in <module>\n      m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],Integer(0))###line 52:\n  sage: m = Riemann_Map([lambda x: ps.value(real(x))], [lambda x: ps.derivative(real(x))],0)\n    File \"riemann.pyx\", line 164, in sage.calculus.riemann.Riemann_Map.__init__ (sage/calculus/riemann.c:1443) File \"fast_callable.pyx\", line 399, in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:2668)\n  AttributeError: 'function' object has no attribute 'variables'\n```\n\nI can solve this by wrapping the fast-callable casts in a try except block, but of course that means that it isn't using them for unusual functions like the interpolators.",
     "created_at": "2010-12-17T19:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ archive/issue_comments_081363.json:
 ```
 
 Did all of the tests work for you? The riemann tests go fine, but the interpolators do this:
-
 
 ```
 File "/home/ethan/sage-4.5.3/devel/sage/sage/calculus/interpolators.pyx", line 52:
@@ -251,7 +250,6 @@ Exception raised:
     File "riemann.pyx", line 164, in sage.calculus.riemann.Riemann_Map.__init__ (sage/calculus/riemann.c:1443) File "fast_callable.pyx", line 399, in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:2668)
   AttributeError: 'function' object has no attribute 'variables'
 ```
-
 
 I can solve this by wrapping the fast-callable casts in a try except block, but of course that means that it isn't using them for unusual functions like the interpolators.
 
@@ -354,7 +352,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081369.json:
 ```json
 {
-    "body": "This seems to be faster and less buggy than before, although I still have a pretty easy time tripping it up.  For example, the following crescent region causes problems if its not translated as I do below, but even when its translated so that 0 is in the interior the spiderweb plot looks wrong:\n\n\n```\nnpi = N(pi)\ncrescent = [(cos(t)+.9,sin(t)) for t in srange(npi/2,3*npi/2,npi/12)]\ncrescent = crescent + [(5.0*cos(t)/6+.9,sin(t)) for t in srange(3*npi/2,npi/2,-npi/12)]\nps = polygon_spline(crescent) \nf = lambda t: ps.value(real(t)) \nfprime = lambda t: ps.derivative(real(t)) \nm = Riemann_Map([f], [fprime], 0.25, ncorners=24) \nshow(m.plot_colored() + m.plot_spiderweb(pts=100),figsize=[6,6])\n```\n \n\nBut maybe that sort of problem should be in a seperate ticket.",
+    "body": "This seems to be faster and less buggy than before, although I still have a pretty easy time tripping it up.  For example, the following crescent region causes problems if its not translated as I do below, but even when its translated so that 0 is in the interior the spiderweb plot looks wrong:\n\n```\nnpi = N(pi)\ncrescent = [(cos(t)+.9,sin(t)) for t in srange(npi/2,3*npi/2,npi/12)]\ncrescent = crescent + [(5.0*cos(t)/6+.9,sin(t)) for t in srange(3*npi/2,npi/2,-npi/12)]\nps = polygon_spline(crescent) \nf = lambda t: ps.value(real(t)) \nfprime = lambda t: ps.derivative(real(t)) \nm = Riemann_Map([f], [fprime], 0.25, ncorners=24) \nshow(m.plot_colored() + m.plot_spiderweb(pts=100),figsize=[6,6])\n``` \n\nBut maybe that sort of problem should be in a seperate ticket.",
     "created_at": "2011-04-27T22:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
@@ -365,7 +363,6 @@ archive/issue_comments_081369.json:
 
 This seems to be faster and less buggy than before, although I still have a pretty easy time tripping it up.  For example, the following crescent region causes problems if its not translated as I do below, but even when its translated so that 0 is in the interior the spiderweb plot looks wrong:
 
-
 ```
 npi = N(pi)
 crescent = [(cos(t)+.9,sin(t)) for t in srange(npi/2,3*npi/2,npi/12)]
@@ -375,8 +372,7 @@ f = lambda t: ps.value(real(t))
 fprime = lambda t: ps.derivative(real(t)) 
 m = Riemann_Map([f], [fprime], 0.25, ncorners=24) 
 show(m.plot_colored() + m.plot_spiderweb(pts=100),figsize=[6,6])
-```
- 
+``` 
 
 But maybe that sort of problem should be in a seperate ticket.
 

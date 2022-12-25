@@ -3,7 +3,7 @@
 archive/issues_001646.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe code \n\n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
+    "body": "Assignee: @williamstein\n\nThe code \n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
     "created_at": "2007-12-31T17:18:19Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 The code 
 
 
-
 ```
 G = SL(2,ZZ)                 
 M = matrix([[1,0],[0,1]])    
@@ -29,13 +28,11 @@ M in G
 ```
 
 
-
 runs possibly forever inside GAP. same for
 
 ```
 M = matrix(ZZ,[[1,0],[0,1]])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1646
 
@@ -155,7 +152,7 @@ I've reported this to GAP support.
 archive/issue_comments_010445.json:
 ```json
 {
-    "body": "from\tLaurent Bartholdi <laurent.bartholdi`@`gmail.com>\nto\tDavid Joyner <wdjoyner`@`gmail.com>,\ncc\tGAP Support <support`@`gap-system.org>,\ndate\tJan 24, 2008 5:36 PM\nsubject\tRe: [GAP Support] membership in SL(2,Z)\nmailed-by\tgmail.com\n\t\nhide details 5:36 PM (27 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nIt's not intentional, and should be fixed. Here's a quick solution:\n\nInstallMethod(\\in,[IsMatrix,IsSpecialLinearGroup],\n function(g,G)\n   return Length(g)=Length(One(G)) and\n             ForAll(g,row->Length(row)=Length(One(g)) and\n             IsOne(DeterminantMat(g));\n end);\n\nneedless to say, there must be lots of other missing methods; e.g. for\ngeneral, symplectic etc. linear groups.\n- Hide quoted text -\n\nOn Jan 24, 2008 9:16 PM, David Joyner <wdjoyner`@`gmail.com> wrote:\n> Hi:\n>\n> I wonder if the behavior of\n>\n> gap> G := SL(2,Integers);\n> SL(2,Integers)\n> gap> g := [[1,0],[0,1]];\n> [ [ 1, 0 ], [ 0, 1 ] ]\n> gap> g in G;\n> user interrupt at ....\n>\n> is intentional: it just hangs, as far as I can tell.\n> Unless I'm doing something wrong, I wonder if\n> an error message should be returned? Perhaps \"method not\n> implemented\" or something?\n>\n> - David Joyner\n>\n> _______________________________________________\n> Support mailing list\n> Support`@`gap-system.org\n> http://mail.gap-system.org/mailman/listinfo/support\n>\n\n\n\n--\nLaurent Bartholdi          \\  laurent.bartholdi<at>gmail<dot>com\nEPFL SB SMA IMB MAD         \\    T\u00e9l\u00e9phone: +41 21-6935458\nStation 8                    \\ Secr\u00e9taire: +41 21-6935471\nCH-1015 Lausanne, Switzerland \\      Fax: +41 21-6930339\nHome address: http://f34.com/68",
+    "body": "from\tLaurent Bartholdi <laurent.bartholdi`@`gmail.com>\nto\tDavid Joyner <wdjoyner`@`gmail.com>,\ncc\tGAP Support <support`@`gap-system.org>,\ndate\tJan 24, 2008 5:36 PM\nsubject\tRe: [GAP Support] membership in SL(2,Z)\nmailed-by\tgmail.com\n\t\nhide details 5:36 PM (27 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nIt's not intentional, and should be fixed. Here's a quick solution:\n\nInstallMethod(\\in,[IsMatrix,IsSpecialLinearGroup],\n function(g,G)\n   return Length(g)=Length(One(G)) and\n             ForAll(g,row->Length(row)=Length(One(g)) and\n             IsOne(DeterminantMat(g));\n end);\n\nneedless to say, there must be lots of other missing methods; e.g. for\ngeneral, symplectic etc. linear groups.\n- Hide quoted text -\n\nOn Jan 24, 2008 9:16 PM, David Joyner <wdjoyner`@`gmail.com> wrote:\n> Hi:\n\n>\n> I wonder if the behavior of\n\n>\n> gap> G := SL(2,Integers);\n> SL(2,Integers)\n> gap> g := [[1,0],[0,1]];\n> [ [ 1, 0 ], [ 0, 1 ] ]\n> gap> g in G;\n> user interrupt at ....\n\n>\n> is intentional: it just hangs, as far as I can tell.\n> Unless I'm doing something wrong, I wonder if\n> an error message should be returned? Perhaps \"method not\n> implemented\" or something?\n\n>\n> - David Joyner\n \n>\n> _______________________________________________\n> Support mailing list\n> Support`@`gap-system.org\n> http://mail.gap-system.org/mailman/listinfo/support\n\n>\n\n\n\n--\nLaurent Bartholdi          \\  laurent.bartholdi<at>gmail<dot>com\nEPFL SB SMA IMB MAD         \\    T\u00e9l\u00e9phone: +41 21-6935458\nStation 8                    \\ Secr\u00e9taire: +41 21-6935471\nCH-1015 Lausanne, Switzerland \\      Fax: +41 21-6930339\nHome address: http://f34.com/68",
     "created_at": "2008-01-24T23:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
@@ -193,8 +190,10 @@ general, symplectic etc. linear groups.
 
 On Jan 24, 2008 9:16 PM, David Joyner <wdjoyner`@`gmail.com> wrote:
 > Hi:
+
 >
 > I wonder if the behavior of
+
 >
 > gap> G := SL(2,Integers);
 > SL(2,Integers)
@@ -202,18 +201,22 @@ On Jan 24, 2008 9:16 PM, David Joyner <wdjoyner`@`gmail.com> wrote:
 > [ [ 1, 0 ], [ 0, 1 ] ]
 > gap> g in G;
 > user interrupt at ....
+
 >
 > is intentional: it just hangs, as far as I can tell.
 > Unless I'm doing something wrong, I wonder if
 > an error message should be returned? Perhaps "method not
 > implemented" or something?
+
 >
 > - David Joyner
+ 
 >
 > _______________________________________________
 > Support mailing list
 > Support`@`gap-system.org
 > http://mail.gap-system.org/mailman/listinfo/support
+
 >
 
 

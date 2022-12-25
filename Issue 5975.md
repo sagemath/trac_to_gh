@@ -52,7 +52,7 @@ Changing assignee from @rlmill to @rbeezer.
 archive/issue_comments_047292.json:
 ```json
 {
-    "body": "latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session\n\n\n```\ng = graphs.PetersenGraph()\nlatex(g)\n```\n\n\nproduces\n\n\n```\n\\begin{tikzpicture}\n\\GraphInit[vstyle=Dijkstra]\n\n\\SetVertexNoLabel\n\\SetVertexMath   \n\n\\Vertex[x=2.5cm,y=4.7553cm]{a0}\n\\Vertex[x=0.0cm,y=2.9389cm]{a1}\n\\Vertex[x=0.9549cm,y=0.0cm]{a2}\n\\Vertex[x=4.0451cm,y=0.0cm]{a3}\n\\Vertex[x=5.0cm,y=2.9389cm]{a4}\n\\Vertex[x=2.5cm,y=3.441cm]{a5} \n\\Vertex[x=1.25cm,y=2.5328cm]{a6}\n\\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n\\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n\\Vertex[x=3.75cm,y=2.5328cm]{a9}\n\n\\AssignVertexLabel{a}{10}{\n$0$,\n$1$,\n$2$,\n$3$,\n$4$,\n$5$,\n$6$,\n$7$,\n$8$,\n$9$\n}\n\n\\Edge(a0)(a1)\n\\Edge(a0)(a4)\n\\Edge(a0)(a5)\n\\Edge(a1)(a2)\n\\Edge(a1)(a6)\n\\Edge(a2)(a3)\n\\Edge(a2)(a7)\n\\Edge(a3)(a4)\n\\Edge(a3)(a8)\n\\Edge(a4)(a9)\n\\Edge(a5)(a7)\n\\Edge(a5)(a8)\n\\Edge(a6)(a8)\n\\Edge(a6)(a9)\n\\Edge(a7)(a9)\n\n\\end{tikzpicture}\n```\n\n\nwhich when run through Latex produces the attached PDF.",
+    "body": "latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session\n\n```\ng = graphs.PetersenGraph()\nlatex(g)\n```\n\nproduces\n\n```\n\\begin{tikzpicture}\n\\GraphInit[vstyle=Dijkstra]\n\n\\SetVertexNoLabel\n\\SetVertexMath   \n\n\\Vertex[x=2.5cm,y=4.7553cm]{a0}\n\\Vertex[x=0.0cm,y=2.9389cm]{a1}\n\\Vertex[x=0.9549cm,y=0.0cm]{a2}\n\\Vertex[x=4.0451cm,y=0.0cm]{a3}\n\\Vertex[x=5.0cm,y=2.9389cm]{a4}\n\\Vertex[x=2.5cm,y=3.441cm]{a5} \n\\Vertex[x=1.25cm,y=2.5328cm]{a6}\n\\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n\\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n\\Vertex[x=3.75cm,y=2.5328cm]{a9}\n\n\\AssignVertexLabel{a}{10}{\n$0$,\n$1$,\n$2$,\n$3$,\n$4$,\n$5$,\n$6$,\n$7$,\n$8$,\n$9$\n}\n\n\\Edge(a0)(a1)\n\\Edge(a0)(a4)\n\\Edge(a0)(a5)\n\\Edge(a1)(a2)\n\\Edge(a1)(a6)\n\\Edge(a2)(a3)\n\\Edge(a2)(a7)\n\\Edge(a3)(a4)\n\\Edge(a3)(a8)\n\\Edge(a4)(a9)\n\\Edge(a5)(a7)\n\\Edge(a5)(a8)\n\\Edge(a6)(a8)\n\\Edge(a6)(a9)\n\\Edge(a7)(a9)\n\n\\end{tikzpicture}\n```\n\nwhich when run through Latex produces the attached PDF.",
     "created_at": "2009-05-05T05:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -63,15 +63,12 @@ archive/issue_comments_047292.json:
 
 latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session
 
-
 ```
 g = graphs.PetersenGraph()
 latex(g)
 ```
 
-
 produces
-
 
 ```
 \begin{tikzpicture}
@@ -122,7 +119,6 @@ $9$
 
 \end{tikzpicture}
 ```
-
 
 which when run through Latex produces the attached PDF.
 
@@ -187,7 +183,7 @@ Second test to latex graphs. Includes more options than first test.
 archive/issue_comments_047296.json:
 ```json
 {
-    "body": "Attachment [latex-test-2.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-2.patch) by fidelbarrera created at 2009-05-08 01:27:28\n\nReplying to [comment:2 rbeezer]:\n> latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session\n> \n> {{{\n> g = graphs.PetersenGraph()\n> latex(g)\n> }}}\n> \n> produces\n> \n> {{{\n> \\begin{tikzpicture}\n> \\GraphInit[vstyle=Dijkstra]\n> \n> \\SetVertexNoLabel\n> \\SetVertexMath   \n> \n> \\Vertex[x=2.5cm,y=4.7553cm]{a0}\n> \\Vertex[x=0.0cm,y=2.9389cm]{a1}\n> \\Vertex[x=0.9549cm,y=0.0cm]{a2}\n> \\Vertex[x=4.0451cm,y=0.0cm]{a3}\n> \\Vertex[x=5.0cm,y=2.9389cm]{a4}\n> \\Vertex[x=2.5cm,y=3.441cm]{a5} \n> \\Vertex[x=1.25cm,y=2.5328cm]{a6}\n> \\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n> \\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n> \\Vertex[x=3.75cm,y=2.5328cm]{a9}\n> \n> \\AssignVertexLabel{a}{10}{\n> $0$,\n> $1$,\n> $2$,\n> $3$,\n> $4$,\n> $5$,\n> $6$,\n> $7$,\n> $8$,\n> $9$\n> }\n> \n> \\Edge(a0)(a1)\n> \\Edge(a0)(a4)\n> \\Edge(a0)(a5)\n> \\Edge(a1)(a2)\n> \\Edge(a1)(a6)\n> \\Edge(a2)(a3)\n> \\Edge(a2)(a7)\n> \\Edge(a3)(a4)\n> \\Edge(a3)(a8)\n> \\Edge(a4)(a9)\n> \\Edge(a5)(a7)\n> \\Edge(a5)(a8)\n> \\Edge(a6)(a8)\n> \\Edge(a6)(a9)\n> \\Edge(a7)(a9)\n> \n> \\end{tikzpicture}\n> }}}\n> \n> which when run through Latex produces the attached PDF.\nThis new test version supports colors in vertices, labels and vertices. One can also choose among the different styles offered by tkz-graph, 'Art', 'Shade', 'Welsh', 'Classic', etc. A sample session:\n\n\n```\nG=graphs.PetersenGraph()\nlatex(G)\n```\n\nThis should give:\n\n\n```\n\\begin{tikzpicture}\n%\n\\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a2}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a3}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a4}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a5}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a6}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a7}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a8}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a9}{rgb}{1.0,1.0,1.0}\n%\n%\n\\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a2}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a3}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a5}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a6}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a9}{rgb}{0.0,0.0,0.0}\n%\n%\n\\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a0-a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a0-a5}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a1-a2}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a1-a6}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a2-a3}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a2-a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a3-a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a3-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a4-a9}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a5-a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a5-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a6-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a6-a9}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a7-a9}{rgb}{0.0,0.0,0.0}\n%\n%\n\\GraphInit[vstyle=Normal]\n%\n\\SetVertexMath\n%\n\\SetVertexNoLabel\n%\n\\renewcommand*{\\VertexLightFillColor}{col_a0}\n\\Vertex[x=2.5cm,y=4.7553cm]{a0}\n\\renewcommand*{\\VertexLightFillColor}{col_a1}\n\\Vertex[x=0.0cm,y=2.9389cm]{a1}\n\\renewcommand*{\\VertexLightFillColor}{col_a2}\n\\Vertex[x=0.9549cm,y=0.0cm]{a2}\n\\renewcommand*{\\VertexLightFillColor}{col_a3}\n\\Vertex[x=4.0451cm,y=0.0cm]{a3}\n\\renewcommand*{\\VertexLightFillColor}{col_a4}\n\\Vertex[x=5.0cm,y=2.9389cm]{a4}\n\\renewcommand*{\\VertexLightFillColor}{col_a5}\n\\Vertex[x=2.5cm,y=3.441cm]{a5}\n\\renewcommand*{\\VertexLightFillColor}{col_a6}\n\\Vertex[x=1.25cm,y=2.5328cm]{a6}\n\\renewcommand*{\\VertexLightFillColor}{col_a7}\n\\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n\\renewcommand*{\\VertexLightFillColor}{col_a8}\n\\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n\\renewcommand*{\\VertexLightFillColor}{col_a9}\n\\Vertex[x=3.75cm,y=2.5328cm]{a9}\n%\n%\n\\AssignVertexLabel{a}{10}{\n\\color{col_lab_a0}{$0$},\n\\color{col_lab_a1}{$1$},\n\\color{col_lab_a2}{$2$},\n\\color{col_lab_a3}{$3$},\n\\color{col_lab_a4}{$4$},\n\\color{col_lab_a5}{$5$},\n\\color{col_lab_a6}{$6$},\n\\color{col_lab_a7}{$7$},\n\\color{col_lab_a8}{$8$},\n\\color{col_lab_a9}{$9$}\n}\n%\n%\n\\renewcommand*{\\EdgeColor}{col_a0-a1}\n\\Edge(a0)(a1)\n\\renewcommand*{\\EdgeColor}{col_a0-a4}\n\\Edge(a0)(a4)\n\\renewcommand*{\\EdgeColor}{col_a0-a5}\n\\Edge(a0)(a5)\n\\renewcommand*{\\EdgeColor}{col_a1-a2}\n\\Edge(a1)(a2)\n\\renewcommand*{\\EdgeColor}{col_a1-a6}\n\\Edge(a1)(a6)\n\\renewcommand*{\\EdgeColor}{col_a2-a3}\n\\Edge(a2)(a3)\n\\renewcommand*{\\EdgeColor}{col_a2-a7}\n\\Edge(a2)(a7)\n\\renewcommand*{\\EdgeColor}{col_a3-a4}\n\\Edge(a3)(a4)\n\\renewcommand*{\\EdgeColor}{col_a3-a8}\n\\Edge(a3)(a8)\n\\renewcommand*{\\EdgeColor}{col_a4-a9}\n\\Edge(a4)(a9)\n\\renewcommand*{\\EdgeColor}{col_a5-a7}\n\\Edge(a5)(a7)\n\\renewcommand*{\\EdgeColor}{col_a5-a8}\n\\Edge(a5)(a8)\n\\renewcommand*{\\EdgeColor}{col_a6-a8}\n\\Edge(a6)(a8)\n\\renewcommand*{\\EdgeColor}{col_a6-a9}\n\\Edge(a6)(a9)\n\\renewcommand*{\\EdgeColor}{col_a7-a9}\n\\Edge(a7)(a9)\n%\n%\n\\end{tikzpicture}\n```\n\nwhich should still produce the same output as in sage-petersen.pdf when processed by LaTeX.\n\nThe '%' were added to avoid doctest errors.",
+    "body": "Attachment [latex-test-2.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-2.patch) by fidelbarrera created at 2009-05-08 01:27:28\n\nReplying to [comment:2 rbeezer]:\n> latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session\n> \n> \n> ```\n> g = graphs.PetersenGraph()\n> latex(g)\n> ```\n> \n> produces\n> \n> \n> ```\n> \\begin{tikzpicture}\n> \\GraphInit[vstyle=Dijkstra]\n> \n> \\SetVertexNoLabel\n> \\SetVertexMath   \n> \n> \\Vertex[x=2.5cm,y=4.7553cm]{a0}\n> \\Vertex[x=0.0cm,y=2.9389cm]{a1}\n> \\Vertex[x=0.9549cm,y=0.0cm]{a2}\n> \\Vertex[x=4.0451cm,y=0.0cm]{a3}\n> \\Vertex[x=5.0cm,y=2.9389cm]{a4}\n> \\Vertex[x=2.5cm,y=3.441cm]{a5} \n> \\Vertex[x=1.25cm,y=2.5328cm]{a6}\n> \\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n> \\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n> \\Vertex[x=3.75cm,y=2.5328cm]{a9}\n> \n> \\AssignVertexLabel{a}{10}{\n> $0$,\n> $1$,\n> $2$,\n> $3$,\n> $4$,\n> $5$,\n> $6$,\n> $7$,\n> $8$,\n> $9$\n> }\n> \n> \\Edge(a0)(a1)\n> \\Edge(a0)(a4)\n> \\Edge(a0)(a5)\n> \\Edge(a1)(a2)\n> \\Edge(a1)(a6)\n> \\Edge(a2)(a3)\n> \\Edge(a2)(a7)\n> \\Edge(a3)(a4)\n> \\Edge(a3)(a8)\n> \\Edge(a4)(a9)\n> \\Edge(a5)(a7)\n> \\Edge(a5)(a8)\n> \\Edge(a6)(a8)\n> \\Edge(a6)(a9)\n> \\Edge(a7)(a9)\n> \n> \\end{tikzpicture}\n> ```\n> \n> which when run through Latex produces the attached PDF.\n\nThis new test version supports colors in vertices, labels and vertices. One can also choose among the different styles offered by tkz-graph, 'Art', 'Shade', 'Welsh', 'Classic', etc. A sample session:\n\n```\nG=graphs.PetersenGraph()\nlatex(G)\n```\nThis should give:\n\n```\n\\begin{tikzpicture}\n%\n\\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a2}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a3}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a4}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a5}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a6}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a7}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a8}{rgb}{1.0,1.0,1.0}\n\\definecolor{col_a9}{rgb}{1.0,1.0,1.0}\n%\n%\n\\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a2}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a3}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a5}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a6}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_lab_a9}{rgb}{0.0,0.0,0.0}\n%\n%\n\\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a0-a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a0-a5}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a1-a2}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a1-a6}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a2-a3}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a2-a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a3-a4}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a3-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a4-a9}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a5-a7}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a5-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a6-a8}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a6-a9}{rgb}{0.0,0.0,0.0}\n\\definecolor{col_a7-a9}{rgb}{0.0,0.0,0.0}\n%\n%\n\\GraphInit[vstyle=Normal]\n%\n\\SetVertexMath\n%\n\\SetVertexNoLabel\n%\n\\renewcommand*{\\VertexLightFillColor}{col_a0}\n\\Vertex[x=2.5cm,y=4.7553cm]{a0}\n\\renewcommand*{\\VertexLightFillColor}{col_a1}\n\\Vertex[x=0.0cm,y=2.9389cm]{a1}\n\\renewcommand*{\\VertexLightFillColor}{col_a2}\n\\Vertex[x=0.9549cm,y=0.0cm]{a2}\n\\renewcommand*{\\VertexLightFillColor}{col_a3}\n\\Vertex[x=4.0451cm,y=0.0cm]{a3}\n\\renewcommand*{\\VertexLightFillColor}{col_a4}\n\\Vertex[x=5.0cm,y=2.9389cm]{a4}\n\\renewcommand*{\\VertexLightFillColor}{col_a5}\n\\Vertex[x=2.5cm,y=3.441cm]{a5}\n\\renewcommand*{\\VertexLightFillColor}{col_a6}\n\\Vertex[x=1.25cm,y=2.5328cm]{a6}\n\\renewcommand*{\\VertexLightFillColor}{col_a7}\n\\Vertex[x=1.7275cm,y=1.0633cm]{a7}\n\\renewcommand*{\\VertexLightFillColor}{col_a8}\n\\Vertex[x=3.2725cm,y=1.0633cm]{a8}\n\\renewcommand*{\\VertexLightFillColor}{col_a9}\n\\Vertex[x=3.75cm,y=2.5328cm]{a9}\n%\n%\n\\AssignVertexLabel{a}{10}{\n\\color{col_lab_a0}{$0$},\n\\color{col_lab_a1}{$1$},\n\\color{col_lab_a2}{$2$},\n\\color{col_lab_a3}{$3$},\n\\color{col_lab_a4}{$4$},\n\\color{col_lab_a5}{$5$},\n\\color{col_lab_a6}{$6$},\n\\color{col_lab_a7}{$7$},\n\\color{col_lab_a8}{$8$},\n\\color{col_lab_a9}{$9$}\n}\n%\n%\n\\renewcommand*{\\EdgeColor}{col_a0-a1}\n\\Edge(a0)(a1)\n\\renewcommand*{\\EdgeColor}{col_a0-a4}\n\\Edge(a0)(a4)\n\\renewcommand*{\\EdgeColor}{col_a0-a5}\n\\Edge(a0)(a5)\n\\renewcommand*{\\EdgeColor}{col_a1-a2}\n\\Edge(a1)(a2)\n\\renewcommand*{\\EdgeColor}{col_a1-a6}\n\\Edge(a1)(a6)\n\\renewcommand*{\\EdgeColor}{col_a2-a3}\n\\Edge(a2)(a3)\n\\renewcommand*{\\EdgeColor}{col_a2-a7}\n\\Edge(a2)(a7)\n\\renewcommand*{\\EdgeColor}{col_a3-a4}\n\\Edge(a3)(a4)\n\\renewcommand*{\\EdgeColor}{col_a3-a8}\n\\Edge(a3)(a8)\n\\renewcommand*{\\EdgeColor}{col_a4-a9}\n\\Edge(a4)(a9)\n\\renewcommand*{\\EdgeColor}{col_a5-a7}\n\\Edge(a5)(a7)\n\\renewcommand*{\\EdgeColor}{col_a5-a8}\n\\Edge(a5)(a8)\n\\renewcommand*{\\EdgeColor}{col_a6-a8}\n\\Edge(a6)(a8)\n\\renewcommand*{\\EdgeColor}{col_a6-a9}\n\\Edge(a6)(a9)\n\\renewcommand*{\\EdgeColor}{col_a7-a9}\n\\Edge(a7)(a9)\n%\n%\n\\end{tikzpicture}\n```\nwhich should still produce the same output as in sage-petersen.pdf when processed by LaTeX.\n\nThe '%' were added to avoid doctest errors.",
     "created_at": "2009-05-08T01:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -201,14 +197,16 @@ Attachment [latex-test-2.patch](tarball://root/attachments/some-uuid/ticket5975/
 Replying to [comment:2 rbeezer]:
 > latex-test-1.patch is just that, a test.  Code by Fidel Barrera-Cruz, which I've got working in this patch.  Strictly experimental for discussion purposes.  The session
 > 
-> {{{
+> 
+> ```
 > g = graphs.PetersenGraph()
 > latex(g)
-> }}}
+> ```
 > 
 > produces
 > 
-> {{{
+> 
+> ```
 > \begin{tikzpicture}
 > \GraphInit[vstyle=Dijkstra]
 > 
@@ -256,19 +254,17 @@ Replying to [comment:2 rbeezer]:
 > \Edge(a7)(a9)
 > 
 > \end{tikzpicture}
-> }}}
+> ```
 > 
 > which when run through Latex produces the attached PDF.
-This new test version supports colors in vertices, labels and vertices. One can also choose among the different styles offered by tkz-graph, 'Art', 'Shade', 'Welsh', 'Classic', etc. A sample session:
 
+This new test version supports colors in vertices, labels and vertices. One can also choose among the different styles offered by tkz-graph, 'Art', 'Shade', 'Welsh', 'Classic', etc. A sample session:
 
 ```
 G=graphs.PetersenGraph()
 latex(G)
 ```
-
 This should give:
-
 
 ```
 \begin{tikzpicture}
@@ -390,7 +386,6 @@ This should give:
 %
 \end{tikzpicture}
 ```
-
 which should still produce the same output as in sage-petersen.pdf when processed by LaTeX.
 
 The '%' were added to avoid doctest errors.
@@ -554,7 +549,7 @@ Apply on top of previous
 archive/issue_comments_047304.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by @jasongrout created at 2009-05-30 04:55:44\n\nA doctest failure after applying the above two patches on (roughly) 4.0.rc1\n\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/home/jason/download/sage-sage-4.0.alpha0.5/devel/sage-main/sage/graphs/graph.py\", line 615:\n    sage: print g._latex_()\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\nGot:\n    Warning: tkz-graph.sty is required.\n    Warning: tkz-berge.sty is required.\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jason/download/sage-sage-4.0.alpha0.5/tmp/.doctest_graph.py\n\t [148.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/graphs/graph.py\"\nTotal time for all tests: 148.9 seconds\n```\n",
+    "body": "Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by @jasongrout created at 2009-05-30 04:55:44\n\nA doctest failure after applying the above two patches on (roughly) 4.0.rc1\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/home/jason/download/sage-sage-4.0.alpha0.5/devel/sage-main/sage/graphs/graph.py\", line 615:\n    sage: print g._latex_()\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\nGot:\n    Warning: tkz-graph.sty is required.\n    Warning: tkz-berge.sty is required.\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jason/download/sage-sage-4.0.alpha0.5/tmp/.doctest_graph.py\n\t [148.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/graphs/graph.py\"\nTotal time for all tests: 148.9 seconds\n```",
     "created_at": "2009-05-30T04:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -566,7 +561,6 @@ archive/issue_comments_047304.json:
 Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by @jasongrout created at 2009-05-30 04:55:44
 
 A doctest failure after applying the above two patches on (roughly) 4.0.rc1
-
 
 ```
 sage -t  "devel/sage-main/sage/graphs/graph.py"             
@@ -667,7 +661,6 @@ Total time for all tests: 148.9 seconds
 
 
 
-
 ---
 
 archive/issue_comments_047305.json:
@@ -691,7 +684,7 @@ I also got similar multiple failures in graph_latex.py.
 archive/issue_comments_047306.json:
 ```json
 {
-    "body": "From a high-level review:\n\nThis is fantastic and very, very cool!  rbeezer says he is going to make another pass through things (so I'm changing it to needs work).  After installing the tkz-berge.sty and tkz-graph.sty files into my local tex installation, I could do:\n\n\n```\nsage: G=graphs.PetersenGraph()\nsage: view(G, pdflatex=True)\n```\n\n\nand the tikz graph popped up.  This will be really cool when combined with sagetex.\n\nWhen I just did `view(G)`, a dvi popped up, which did not contain the graph.\n\nI am posting a small referee patch touching the docs on a function or two.",
+    "body": "From a high-level review:\n\nThis is fantastic and very, very cool!  rbeezer says he is going to make another pass through things (so I'm changing it to needs work).  After installing the tkz-berge.sty and tkz-graph.sty files into my local tex installation, I could do:\n\n```\nsage: G=graphs.PetersenGraph()\nsage: view(G, pdflatex=True)\n```\n\nand the tikz graph popped up.  This will be really cool when combined with sagetex.\n\nWhen I just did `view(G)`, a dvi popped up, which did not contain the graph.\n\nI am posting a small referee patch touching the docs on a function or two.",
     "created_at": "2009-05-30T05:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -704,12 +697,10 @@ From a high-level review:
 
 This is fantastic and very, very cool!  rbeezer says he is going to make another pass through things (so I'm changing it to needs work).  After installing the tkz-berge.sty and tkz-graph.sty files into my local tex installation, I could do:
 
-
 ```
 sage: G=graphs.PetersenGraph()
 sage: view(G, pdflatex=True)
 ```
-
 
 and the tikz graph popped up.  This will be really cool when combined with sagetex.
 
@@ -916,7 +907,7 @@ aply on top of trac_5975_graph_latex_3.patch
 archive/issue_comments_047317.json:
 ```json
 {
-    "body": "I think this is almost ready to go.  I'm attaching a patch with a bunch of trivial fixes (changing \"EXAMPLE::\" to \"EXAMPLES::\" lots of places, for instance), one medium fix (since methods beginning with underscore are not included in the reference manual, I moved the docstring from the init method for `GraphLatex` to the class itself), and one more major fix: why not add to the LaTeX preamble when the graph itself is initialized?  My patch does this, but it's easy enough to take out if you think it's a bad idea.  I don't think that adding those two packages will slow any latex process down that much, so I think it's okay.  Oh, and I forgot to add the appropriate strings to avoid_jsmath_..., and this should be done in the same place (this should have no impact on speed).  This last change would make this ticket depend on #6089, but because of your positive review, that shouldn't be a big deal.\n\nOther comments: if have_tkz_graph returns false, then should tkz_picture return an error, or return a string which tells the user why they're not getting a nice picture?  That's what the docstring says, more or less, but that's not what actually happens, I think.  The docstring should not say anything about strings being added to the latex_preamble, by the way.\n\nThe following doesn't do anything.  Should it?\n\n```\nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n```\n\n\nIn the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:\n\n```\nsage: g = graphs.CompleteBipartiteGraph(1,15)\nsage: view(g)\n```\n\n\nFinally, I found the documentation not as helpful as it could be, partly because it was scattered around.  I think one solution is to add stuff about \"view(g)\" and \"latex(g)\" (etc.) to the \"Visualization\" section at the top of graph.py.  You might include information about how to test (in Sage) whether your system has tkz-graph and tkz-berge installed, where to get them if they're not installed, and maybe brief descriptions, or at least a list, of the available tkz_styles.  When more options get added, they can go here, too.  You could also expand the documentation in graph_latex.py, either at the top of the file or for the class `GraphLatex`, with some more examples and then a pointer to the Visualization section.  You could also put a \"See also\" in the docstring for plot and other related methods.",
+    "body": "I think this is almost ready to go.  I'm attaching a patch with a bunch of trivial fixes (changing \"EXAMPLE::\" to \"EXAMPLES::\" lots of places, for instance), one medium fix (since methods beginning with underscore are not included in the reference manual, I moved the docstring from the init method for `GraphLatex` to the class itself), and one more major fix: why not add to the LaTeX preamble when the graph itself is initialized?  My patch does this, but it's easy enough to take out if you think it's a bad idea.  I don't think that adding those two packages will slow any latex process down that much, so I think it's okay.  Oh, and I forgot to add the appropriate strings to avoid_jsmath_..., and this should be done in the same place (this should have no impact on speed).  This last change would make this ticket depend on #6089, but because of your positive review, that shouldn't be a big deal.\n\nOther comments: if have_tkz_graph returns false, then should tkz_picture return an error, or return a string which tells the user why they're not getting a nice picture?  That's what the docstring says, more or less, but that's not what actually happens, I think.  The docstring should not say anything about strings being added to the latex_preamble, by the way.\n\nThe following doesn't do anything.  Should it?\n\n```\nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n```\n\nIn the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:\n\n```\nsage: g = graphs.CompleteBipartiteGraph(1,15)\nsage: view(g)\n```\n\nFinally, I found the documentation not as helpful as it could be, partly because it was scattered around.  I think one solution is to add stuff about \"view(g)\" and \"latex(g)\" (etc.) to the \"Visualization\" section at the top of graph.py.  You might include information about how to test (in Sage) whether your system has tkz-graph and tkz-berge installed, where to get them if they're not installed, and maybe brief descriptions, or at least a list, of the available tkz_styles.  When more options get added, they can go here, too.  You could also expand the documentation in graph_latex.py, either at the top of the file or for the class `GraphLatex`, with some more examples and then a pointer to the Visualization section.  You could also put a \"See also\" in the docstring for plot and other related methods.",
     "created_at": "2009-06-09T03:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -936,14 +927,12 @@ sage: g = graphs.CompleteBipartiteGraph(1,3)
 sage: g.latex_options(tkz_style = 'Art')  
 ```
 
-
 In the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:
 
 ```
 sage: g = graphs.CompleteBipartiteGraph(1,15)
 sage: view(g)
 ```
-
 
 Finally, I found the documentation not as helpful as it could be, partly because it was scattered around.  I think one solution is to add stuff about "view(g)" and "latex(g)" (etc.) to the "Visualization" section at the top of graph.py.  You might include information about how to test (in Sage) whether your system has tkz-graph and tkz-berge installed, where to get them if they're not installed, and maybe brief descriptions, or at least a list, of the available tkz_styles.  When more options get added, they can go here, too.  You could also expand the documentation in graph_latex.py, either at the top of the file or for the class `GraphLatex`, with some more examples and then a pointer to the Visualization section.  You could also put a "See also" in the docstring for plot and other related methods.
 
@@ -954,7 +943,7 @@ Finally, I found the documentation not as helpful as it could be, partly because
 archive/issue_comments_047318.json:
 ```json
 {
-    "body": "Replying to [comment:18 jhpalmieri]:\n\nSome answers.\n\n1.  Even if the right tkz-graph packages are not present on a system, then I'd still like the user to be able to get out a proper string.  I often use Sage as a sort of Latex assistant - build an object `obj` and run `latex(obj)` and cut/paste the string into a document.  So a warning should be useful, but an error would be too severe I feel.  You ought to be able to get legitimate Latex snippets from Sage, even if you have no tex on your system.  But if you are asking for a rendering in `view()` or the notebook, then errors and warnings are in order.\n\n2.  Yes, I think the documentation is out-of-sync with the above, since I pulled some warnings at the last minute.  I'll fix that.\n\n3.  The code snippet \n>\n\n``` \nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n```\n\n\nshould have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built \"Art\" style, rather than the default \"Normal\" style.\n\n4.\n> In the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:\n\n```\nsage: g = graphs.CompleteBipartiteGraph(1,15)\nsage: view(g)\n```\n\n\nEventually the user will have control over vertex sizes, bounding boxes, and vertex locations.  The intent of this patch is to get the infrastructure right for changing options, then many, more localized changes, will open up more control.  So I think this can slide for now, but this sort of control should be first on the list of changes.\n\n\n\n5.\n> Finally, I found the documentation not as helpful as it could be, partly because it was scattered around.\n\nGreat suggestions.  I'll spruce up the documentation when its not so late in the evening sometime tomorrow night and get up a patch with that, plus other suggestions.\n\nThanks,\nRob",
+    "body": "Replying to [comment:18 jhpalmieri]:\n\nSome answers.\n\n1.  Even if the right tkz-graph packages are not present on a system, then I'd still like the user to be able to get out a proper string.  I often use Sage as a sort of Latex assistant - build an object `obj` and run `latex(obj)` and cut/paste the string into a document.  So a warning should be useful, but an error would be too severe I feel.  You ought to be able to get legitimate Latex snippets from Sage, even if you have no tex on your system.  But if you are asking for a rendering in `view()` or the notebook, then errors and warnings are in order.\n\n2.  Yes, I think the documentation is out-of-sync with the above, since I pulled some warnings at the last minute.  I'll fix that.\n\n3.  The code snippet \n>\n  \n{{{ \nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n}}}\n\nshould have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built \"Art\" style, rather than the default \"Normal\" style.\n\n4.\n> In the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:\n\n{{{\nsage: g = graphs.CompleteBipartiteGraph(1,15)\nsage: view(g)\n}}}\n\nEventually the user will have control over vertex sizes, bounding boxes, and vertex locations.  The intent of this patch is to get the infrastructure right for changing options, then many, more localized changes, will open up more control.  So I think this can slide for now, but this sort of control should be first on the list of changes.\n\n\n\n5.\n> Finally, I found the documentation not as helpful as it could be, partly because it was scattered around.\n\n\nGreat suggestions.  I'll spruce up the documentation when its not so late in the evening sometime tomorrow night and get up a patch with that, plus other suggestions.\n\nThanks,\nRob",
     "created_at": "2009-06-11T06:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -973,23 +962,21 @@ Some answers.
 
 3.  The code snippet 
 >
-
-``` 
+  
+{{{ 
 sage: g = graphs.CompleteBipartiteGraph(1,3)
 sage: g.latex_options(tkz_style = 'Art')  
-```
-
+}}}
 
 should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built "Art" style, rather than the default "Normal" style.
 
 4.
 > In the following, the nodes are overlapping, and it doesn't look good.  It looks like there is room to space them out more:
 
-```
+{{{
 sage: g = graphs.CompleteBipartiteGraph(1,15)
 sage: view(g)
-```
-
+}}}
 
 Eventually the user will have control over vertex sizes, bounding boxes, and vertex locations.  The intent of this patch is to get the infrastructure right for changing options, then many, more localized changes, will open up more control.  So I think this can slide for now, but this sort of control should be first on the list of changes.
 
@@ -997,6 +984,7 @@ Eventually the user will have control over vertex sizes, bounding boxes, and ver
 
 5.
 > Finally, I found the documentation not as helpful as it could be, partly because it was scattered around.
+
 
 Great suggestions.  I'll spruce up the documentation when its not so late in the evening sometime tomorrow night and get up a patch with that, plus other suggestions.
 
@@ -1010,7 +998,7 @@ Rob
 archive/issue_comments_047319.json:
 ```json
 {
-    "body": "Replying to [comment:19 rbeezer]:\n> Replying to [comment:18 jhpalmieri]:\n> \n3.  \n> The code snippet \n> >\n\n``` \nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n```\n\n> \n> should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built \"Art\" style, rather than the default \"Normal\" style.\n\nI think at the moment it doesn't do this: it only changes the options if the options are None.  `g.set_latex_options()` behaves as it should, but either `g.latex_options()` should behave the same way, or it should not accept any arguments.  The documentation suggests the second choice.",
+    "body": "Replying to [comment:19 rbeezer]:\n> Replying to [comment:18 jhpalmieri]:\n> \n3.  \n> The code snippet \n> >\n\n{{{ \nsage: g = graphs.CompleteBipartiteGraph(1,3)\nsage: g.latex_options(tkz_style = 'Art')  \n}}}\n> \n> should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built \"Art\" style, rather than the default \"Normal\" style.\n\n\nI think at the moment it doesn't do this: it only changes the options if the options are None.  `g.set_latex_options()` behaves as it should, but either `g.latex_options()` should behave the same way, or it should not accept any arguments.  The documentation suggests the second choice.",
     "created_at": "2009-06-11T14:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1026,13 +1014,13 @@ Replying to [comment:19 rbeezer]:
 > The code snippet 
 > >
 
-``` 
+{{{ 
 sage: g = graphs.CompleteBipartiteGraph(1,3)
 sage: g.latex_options(tkz_style = 'Art')  
-```
-
+}}}
 > 
 > should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built "Art" style, rather than the default "Normal" style.
+
 
 I think at the moment it doesn't do this: it only changes the options if the options are None.  `g.set_latex_options()` behaves as it should, but either `g.latex_options()` should behave the same way, or it should not accept any arguments.  The documentation suggests the second choice.
 
@@ -1192,7 +1180,7 @@ Release manager: Apply #6089, revision 4 patch, then latest reviewer patch.  Tha
 archive/issue_comments_047326.json:
 ```json
 {
-    "body": "Can I make one small suggestion?\n\nThis line:\n\n```\ncheck_tkz_graph()  # random - depends on TeX installation \n```\n\nought to be\n\n```\ncheck_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>\n```\n\n\nWe really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.\n\nSince we have at least one other spkg installing .sty files (sagetex), maybe (in a different ticket) we could have a small spkg that installs the needed .sty files for this into the sage local tex tree.",
+    "body": "Can I make one small suggestion?\n\nThis line:\n\n```\ncheck_tkz_graph()  # random - depends on TeX installation \n```\nought to be\n\n```\ncheck_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>\n```\n\nWe really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.\n\nSince we have at least one other spkg installing .sty files (sagetex), maybe (in a different ticket) we could have a small spkg that installs the needed .sty files for this into the sage local tex tree.",
     "created_at": "2009-06-13T14:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1208,13 +1196,11 @@ This line:
 ```
 check_tkz_graph()  # random - depends on TeX installation 
 ```
-
 ought to be
 
 ```
 check_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>
 ```
-
 
 We really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.
 
@@ -1227,7 +1213,7 @@ Since we have at least one other spkg installing .sty files (sagetex), maybe (in
 archive/issue_comments_047327.json:
 ```json
 {
-    "body": "Hi Jason,\n\nThe purpose of the line in question is not really a doctest of the existence of the packages.\n\nThe function `check_tkz_graph()` will emit a warning *once* per session, if needed, and then be silent.  In order to doctest the latex output, I need to be sure that the warning doesn't get mixed in.  So I call this function in the doctest, which *may* produce a warning.  Then the latex output will be \"pure.\"\n\nSo I need to be certain this line runs, and I don't want to test its (variable) output.  If it is tagged \"optional\" will it always be run in testing, no matter what?\n\nIn any event, if there is a change here, I'll make it as part of some other revision, so I don't want this to hold up getting this merged.\n\nRob\n\nReplying to [comment:24 jason]:\n> Can I make one small suggestion?\n> \n> This line:\n> {{{\n> check_tkz_graph()  # random - depends on TeX installation \n> }}}\n> ought to be\n> {{{\n> check_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>\n> }}}\n> \n> We really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.\n> \n> Since we have at least one other spkg installing .sty files (sagetex), maybe (in a different ticket) we could have a small spkg that installs the needed .sty files for this into the sage local tex tree.",
+    "body": "Hi Jason,\n\nThe purpose of the line in question is not really a doctest of the existence of the packages.\n\nThe function `check_tkz_graph()` will emit a warning *once* per session, if needed, and then be silent.  In order to doctest the latex output, I need to be sure that the warning doesn't get mixed in.  So I call this function in the doctest, which *may* produce a warning.  Then the latex output will be \"pure.\"\n\nSo I need to be certain this line runs, and I don't want to test its (variable) output.  If it is tagged \"optional\" will it always be run in testing, no matter what?\n\nIn any event, if there is a change here, I'll make it as part of some other revision, so I don't want this to hold up getting this merged.\n\nRob\n\nReplying to [comment:24 jason]:\n> Can I make one small suggestion?\n> \n> This line:\n> \n> ```\n> check_tkz_graph()  # random - depends on TeX installation \n> ```\n> ought to be\n> \n> ```\n> check_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>\n> ```\n> \n> We really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.\n> \n> Since we have at least one other spkg installing .sty files (sagetex), maybe (in a different ticket) we could have a small spkg that installs the needed .sty files for this into the sage local tex tree.",
     "created_at": "2009-06-13T21:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1252,13 +1238,15 @@ Replying to [comment:24 jason]:
 > Can I make one small suggestion?
 > 
 > This line:
-> {{{
+> 
+> ```
 > check_tkz_graph()  # random - depends on TeX installation 
-> }}}
+> ```
 > ought to be
-> {{{
+> 
+> ```
 > check_tkz_graph()  # optional - depends on the TeX installation containing <whatever tex files you need>
-> }}}
+> ```
 > 
 > We really don't like #random doctests if we can help it, and this doctest is really testing the existence of an optional program.  I guess one argument against this is that it is not testing the installation of an optional spkg.
 > 
@@ -1271,7 +1259,7 @@ Replying to [comment:24 jason]:
 archive/issue_comments_047328.json:
 ```json
 {
-    "body": "Replying to [comment:25 rbeezer]:\n> Hi Jason,\n> \n> The purpose of the line in question is not really a doctest of the existence of the packages.\n> \n> The function `check_tkz_graph()` will emit a warning *once* per session, if needed, and then be silent.  In order to doctest the latex output, I need to be sure that the warning doesn't get mixed in.  So I call this function in the doctest, which *may* produce a warning.  Then the latex output will be \"pure.\"\n> \n> So I need to be certain this line runs, and I don't want to test its (variable) output.  If it is tagged \"optional\" will it always be run in testing, no matter what?\n\n\nah, good point.  If it's tagged optional, it won't always run.\n\nI retract my comment.\n\nThe right way to do something like this is to disable the warnings for that module before the doctest.  But that's probably the subject of another ticket, as I don't have time to make the patch now, and I'd rather not hold this up any more.",
+    "body": "Replying to [comment:25 rbeezer]:\n> Hi Jason,\n> \n> The purpose of the line in question is not really a doctest of the existence of the packages.\n> \n> The function `check_tkz_graph()` will emit a warning *once* per session, if needed, and then be silent.  In order to doctest the latex output, I need to be sure that the warning doesn't get mixed in.  So I call this function in the doctest, which *may* produce a warning.  Then the latex output will be \"pure.\"\n> \n> So I need to be certain this line runs, and I don't want to test its (variable) output.  If it is tagged \"optional\" will it always be run in testing, no matter what?\n\n\n\nah, good point.  If it's tagged optional, it won't always run.\n\nI retract my comment.\n\nThe right way to do something like this is to disable the warnings for that module before the doctest.  But that's probably the subject of another ticket, as I don't have time to make the patch now, and I'd rather not hold this up any more.",
     "created_at": "2009-06-13T21:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1288,6 +1276,7 @@ Replying to [comment:25 rbeezer]:
 > The function `check_tkz_graph()` will emit a warning *once* per session, if needed, and then be silent.  In order to doctest the latex output, I need to be sure that the warning doesn't get mixed in.  So I call this function in the doctest, which *may* produce a warning.  Then the latex output will be "pure."
 > 
 > So I need to be certain this line runs, and I don't want to test its (variable) output.  If it is tagged "optional" will it always be run in testing, no matter what?
+
 
 
 ah, good point.  If it's tagged optional, it won't always run.
@@ -1337,7 +1326,7 @@ archive/issue_events_014020.json:
 archive/issue_comments_047330.json:
 ```json
 {
-    "body": "> ah, good point. If it's tagged optional, it won't always run.\n\nMore precisely, it will never ever run, except in the exceedingly rare case anybody every runs any optional doctests (which is basically never).",
+    "body": "> ah, good point. If it's tagged optional, it won't always run.\n\n\nMore precisely, it will never ever run, except in the exceedingly rare case anybody every runs any optional doctests (which is basically never).",
     "created_at": "2009-06-14T10:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1347,6 +1336,7 @@ archive/issue_comments_047330.json:
 ```
 
 > ah, good point. If it's tagged optional, it won't always run.
+
 
 More precisely, it will never ever run, except in the exceedingly rare case anybody every runs any optional doctests (which is basically never).
 
@@ -1375,7 +1365,7 @@ Sample output for release tour
 archive/issue_comments_047332.json:
 ```json
 {
-    "body": "Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by @rbeezer created at 2009-06-15 04:56:22\n\nMinh,\n\nFor the release tour.\n\nSee PNG screenshot of PDF output.  Complete code required to get the PDF:\n\n\n```\ng = graphs.PetersenGraph()\ng.set_latex_options(tkz_style='Art')\nview(g, pdflatex=True)\n```\n\n\nMostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.",
+    "body": "Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by @rbeezer created at 2009-06-15 04:56:22\n\nMinh,\n\nFor the release tour.\n\nSee PNG screenshot of PDF output.  Complete code required to get the PDF:\n\n```\ng = graphs.PetersenGraph()\ng.set_latex_options(tkz_style='Art')\nview(g, pdflatex=True)\n```\n\nMostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.",
     "created_at": "2009-06-15T04:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
@@ -1392,13 +1382,11 @@ For the release tour.
 
 See PNG screenshot of PDF output.  Complete code required to get the PDF:
 
-
 ```
 g = graphs.PetersenGraph()
 g.set_latex_options(tkz_style='Art')
 view(g, pdflatex=True)
 ```
-
 
 Mostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.
 

@@ -3,7 +3,7 @@
 archive/issues_003897.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n\n```\nE = EllipticCurve([1,1])\nE.local_information(3)\n```\n\n\nyields\n\n\n```\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/local/pmzcw/prog/sage-3.1.1/<ipython console> in <module>()\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in local_information(self, P, proof)\n    375         if isinstance(P, RingElement):\n    376             P = self.base_ring().ideal(P)\n--> 377         return self.integral_model()[0]._tate(P, proof)\n    378\n    379     def local_minimal_model(self, P, proof = None):\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in _tate(self, P, proof)\n    517         OK = K.maximal_order()\n    518         t = verbose(\"Running Tate's algorithm with P = %s\"%P, level=1)\n--> 519         F = OK.residue_field(P)\n    520         p = F.characteristic()\n    521         if P.is_principal():\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'\n```\n\n\nThe problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3897\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n```\nE = EllipticCurve([1,1])\nE.local_information(3)\n```\n\nyields\n\n```\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/local/pmzcw/prog/sage-3.1.1/<ipython console> in <module>()\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in local_information(self, P, proof)\n    375         if isinstance(P, RingElement):\n    376             P = self.base_ring().ideal(P)\n--> 377         return self.integral_model()[0]._tate(P, proof)\n    378\n    379     def local_minimal_model(self, P, proof = None):\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in _tate(self, P, proof)\n    517         OK = K.maximal_order()\n    518         t = verbose(\"Running Tate's algorithm with P = %s\"%P, level=1)\n--> 519         F = OK.residue_field(P)\n    520         p = F.characteristic()\n    521         if P.is_principal():\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'\n```\n\nThe problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3897\n\n",
     "created_at": "2008-08-19T15:19:07Z",
     "labels": [
         "component: number theory",
@@ -21,15 +21,12 @@ Assignee: @williamstein
 
 CC:  alexghitza
 
-
 ```
 E = EllipticCurve([1,1])
 E.local_information(3)
 ```
 
-
 yields
-
 
 ```
 ---------------------------------------------------------------------------
@@ -53,7 +50,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'
 ```
-
 
 The problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.
 
@@ -185,7 +181,7 @@ Oops!  I take that back.  I noticed that there is no doctest checking if the rep
 archive/issue_comments_027807.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexGhitza]:\n> Oops!  I take that back.  I noticed that there is no doctest checking if the reported bug was fixed, and running that example still does not work (although in a new way).  I'll see if I can track down what's happening.\n\nAlex: this patch is intended only to fix the residue field for ZZ issue;  now I have done that I am still working on getting local information to work properly.  So this is really two tickets.\n\nCould we merge and close this one and open a new one for the local info problem?  Or put the ZZ residue fields into a new patch which can be closed right away, with a cross-reference from this one?",
+    "body": "Replying to [comment:6 AlexGhitza]:\n> Oops!  I take that back.  I noticed that there is no doctest checking if the reported bug was fixed, and running that example still does not work (although in a new way).  I'll see if I can track down what's happening.\n\n\nAlex: this patch is intended only to fix the residue field for ZZ issue;  now I have done that I am still working on getting local information to work properly.  So this is really two tickets.\n\nCould we merge and close this one and open a new one for the local info problem?  Or put the ZZ residue fields into a new patch which can be closed right away, with a cross-reference from this one?",
     "created_at": "2008-09-21T10:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
@@ -196,6 +192,7 @@ archive/issue_comments_027807.json:
 
 Replying to [comment:6 AlexGhitza]:
 > Oops!  I take that back.  I noticed that there is no doctest checking if the reported bug was fixed, and running that example still does not work (although in a new way).  I'll see if I can track down what's happening.
+
 
 Alex: this patch is intended only to fix the residue field for ZZ issue;  now I have done that I am still working on getting local information to work properly.  So this is really two tickets.
 
@@ -320,7 +317,7 @@ Michael
 archive/issue_comments_027813.json:
 ```json
 {
-    "body": "Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by @JohnCremona created at 2008-09-23 09:58:52\n\nReplying to [comment:12 mabshoff]:\n> Alex,\n> \n> the deprecated routine should still call the new function, i.e. a warning is issues, but the code still works.\n> \n> Cheers,\n> \n> Michael\n\nI added a line to do that.  Trac would not let me replace Alex's, but it is a replacement.",
+    "body": "Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by @JohnCremona created at 2008-09-23 09:58:52\n\nReplying to [comment:12 mabshoff]:\n> Alex,\n> \n> the deprecated routine should still call the new function, i.e. a warning is issues, but the code still works.\n> \n> Cheers,\n> \n> Michael\n\n\nI added a line to do that.  Trac would not let me replace Alex's, but it is a replacement.",
     "created_at": "2008-09-23T09:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
@@ -339,6 +336,7 @@ Replying to [comment:12 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 I added a line to do that.  Trac would not let me replace Alex's, but it is a replacement.
 

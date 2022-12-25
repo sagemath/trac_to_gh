@@ -3,7 +3,7 @@
 archive/issues_005694.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the notebook we have the following confusing bug, which caused a lot of trouble during my last Sage tutorial:\n\n\n```\nsage: 2 + 3\n5\nsage: _\n5\nsage: f(x,y) = x+y\nsage: 2 + 10\n12\nsage: _\n(x, y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5694\n\n",
+    "body": "Assignee: boothby\n\nIn the notebook we have the following confusing bug, which caused a lot of trouble during my last Sage tutorial:\n\n```\nsage: 2 + 3\n5\nsage: _\n5\nsage: f(x,y) = x+y\nsage: 2 + 10\n12\nsage: _\n(x, y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5694\n\n",
     "created_at": "2009-04-06T18:05:33Z",
     "labels": [
         "component: notebook",
@@ -21,7 +21,6 @@ Assignee: boothby
 
 In the notebook we have the following confusing bug, which caused a lot of trouble during my last Sage tutorial:
 
-
 ```
 sage: 2 + 3
 5
@@ -33,7 +32,6 @@ sage: 2 + 10
 sage: _
 (x, y)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5694
 

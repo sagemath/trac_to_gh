@@ -3,7 +3,7 @@
 archive/issues_007495.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nUploading or attaching an empty file or a file that doesn't exist, etc. can cause internal server errors instead of a proper error message.\n\nMoreover, notice these lines in twist.py:\n\n```\nclass Worksheet_do_upload_data\n...\n        dest = os.path.join(self.worksheet.data_directory(), name)\n        if os.path.exists(dest):\n            os.unlink(dest)\n```\n\n\nWith a properly crafted URL I bet name could contain .. and hence one could make the notebook *server* delete any file it has access to!  This is a critical security vulnerability. \n\nSee also #3849 for similar issues when uploading a worksheet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7495\n\n",
+    "body": "Assignee: boothby\n\nUploading or attaching an empty file or a file that doesn't exist, etc. can cause internal server errors instead of a proper error message.\n\nMoreover, notice these lines in twist.py:\n\n```\nclass Worksheet_do_upload_data\n...\n        dest = os.path.join(self.worksheet.data_directory(), name)\n        if os.path.exists(dest):\n            os.unlink(dest)\n```\n\nWith a properly crafted URL I bet name could contain .. and hence one could make the notebook *server* delete any file it has access to!  This is a critical security vulnerability. \n\nSee also #3849 for similar issues when uploading a worksheet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7495\n\n",
     "created_at": "2009-11-20T00:34:35Z",
     "labels": [
         "component: notebook",
@@ -31,7 +31,6 @@ class Worksheet_do_upload_data
             os.unlink(dest)
 ```
 
-
 With a properly crafted URL I bet name could contain .. and hence one could make the notebook *server* delete any file it has access to!  This is a critical security vulnerability. 
 
 See also #3849 for similar issues when uploading a worksheet. 
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7495
 archive/issue_comments_063228.json:
 ```json
 {
-    "body": "Yes, this is fully exploitable and allows one to delete any file on the server:\nE.g., on my laptop I created a file tmp/xyz, then pasted in this url, and that file was deleted. \n\n\n```\nhttp://localhost:8000/home/admin/13/do_upload_data?urlField=%27%27&nameField=../../../../../../../../tmp/xyz\n```\n\n\nWith a little more work, one could not only delete any file, but I think *replace* it by a file of ones choice.  That's a pretty massive exploit.  \n\nSo I'm upping this to a blocker and fixing it now.",
+    "body": "Yes, this is fully exploitable and allows one to delete any file on the server:\nE.g., on my laptop I created a file tmp/xyz, then pasted in this url, and that file was deleted. \n\n```\nhttp://localhost:8000/home/admin/13/do_upload_data?urlField=%27%27&nameField=../../../../../../../../tmp/xyz\n```\n\nWith a little more work, one could not only delete any file, but I think *replace* it by a file of ones choice.  That's a pretty massive exploit.  \n\nSo I'm upping this to a blocker and fixing it now.",
     "created_at": "2009-11-20T01:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
@@ -59,11 +58,9 @@ archive/issue_comments_063228.json:
 Yes, this is fully exploitable and allows one to delete any file on the server:
 E.g., on my laptop I created a file tmp/xyz, then pasted in this url, and that file was deleted. 
 
-
 ```
 http://localhost:8000/home/admin/13/do_upload_data?urlField=%27%27&nameField=../../../../../../../../tmp/xyz
 ```
-
 
 With a little more work, one could not only delete any file, but I think *replace* it by a file of ones choice.  That's a pretty massive exploit.  
 
@@ -166,7 +163,7 @@ Creating a new file with name `&` raises an OSError.
 archive/issue_comments_063234.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Creating a new file with name `&` raises an OSError.\nActually, clicking to delete this file raises the error:\n\n```\n        exceptions.OSError: [Errno 21] Is a directory: '/home/apps/.sage/sage_notebook.sagenb/home/admin/88/data/'\n\n```\n",
+    "body": "Replying to [comment:4 mpatel]:\n> Creating a new file with name `&` raises an OSError.\n\nActually, clicking to delete this file raises the error:\n\n```\n        exceptions.OSError: [Errno 21] Is a directory: '/home/apps/.sage/sage_notebook.sagenb/home/admin/88/data/'\n\n```",
     "created_at": "2009-11-20T03:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
@@ -177,13 +174,13 @@ archive/issue_comments_063234.json:
 
 Replying to [comment:4 mpatel]:
 > Creating a new file with name `&` raises an OSError.
+
 Actually, clicking to delete this file raises the error:
 
 ```
         exceptions.OSError: [Errno 21] Is a directory: '/home/apps/.sage/sage_notebook.sagenb/home/admin/88/data/'
 
 ```
-
 
 
 
@@ -248,7 +245,7 @@ Anyway, my digression aside, my review is positive, as far as it goes.
 archive/issue_comments_063238.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> I think the `OSError` above is a separate URI encoding problem.\nThis is now #7500.",
+    "body": "Replying to [comment:6 mpatel]:\n> I think the `OSError` above is a separate URI encoding problem.\n\nThis is now #7500.",
     "created_at": "2009-11-20T07:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
@@ -259,6 +256,7 @@ archive/issue_comments_063238.json:
 
 Replying to [comment:6 mpatel]:
 > I think the `OSError` above is a separate URI encoding problem.
+
 This is now #7500.
 
 

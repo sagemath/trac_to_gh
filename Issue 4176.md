@@ -3,7 +3,7 @@
 archive/issues_004176.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jaapspies\n\n\n```\nBUILDING MATPLOTLIB \n            matplotlib: 0.98.3 \n                python: 2.5.2 (r252:60911, Sep 23 2008, 17:09:57) \n[GCC \n                        4.3.0 20080428 (Red Hat 4.3.0-8)] \n              platform: linux2 \nREQUIRED DEPENDENCIES \n                 numpy: 1.1.0 \n             freetype2: 9.16.3 \nOPTIONAL BACKEND DEPENDENCIES \n                libpng: 1.2.29 \nTraceback (most recent call last): \n  File \"setup.py\", line 125, in <module> \n    if check_for_tk() or (options['build_tkagg'] is True): \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 846, in check_for_tk \n    explanation = add_tk_flags(module) \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 1106, in add_tk_flags \n    module.libraries.extend(['tk' + tk_ver, 'tcl' + tk_ver]) \nUnboundLocalError: local variable 'tk_ver' referenced before \nassignment \nError building matplotlib package. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4176\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jaapspies\n\n```\nBUILDING MATPLOTLIB \n            matplotlib: 0.98.3 \n                python: 2.5.2 (r252:60911, Sep 23 2008, 17:09:57) \n[GCC \n                        4.3.0 20080428 (Red Hat 4.3.0-8)] \n              platform: linux2 \nREQUIRED DEPENDENCIES \n                 numpy: 1.1.0 \n             freetype2: 9.16.3 \nOPTIONAL BACKEND DEPENDENCIES \n                libpng: 1.2.29 \nTraceback (most recent call last): \n  File \"setup.py\", line 125, in <module> \n    if check_for_tk() or (options['build_tkagg'] is True): \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 846, in check_for_tk \n    explanation = add_tk_flags(module) \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 1106, in add_tk_flags \n    module.libraries.extend(['tk' + tk_ver, 'tcl' + tk_ver]) \nUnboundLocalError: local variable 'tk_ver' referenced before \nassignment \nError building matplotlib package. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4176\n\n",
     "created_at": "2008-09-23T18:12:53Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_004176.json:
 Assignee: mabshoff
 
 CC:  @jaapspies
-
 
 ```
 BUILDING MATPLOTLIB 
@@ -46,7 +45,6 @@ UnboundLocalError: local variable 'tk_ver' referenced before
 assignment 
 Error building matplotlib package. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4176
 
@@ -95,7 +93,7 @@ Changing status from new to assigned.
 archive/issue_comments_030237.json:
 ```json
 {
-    "body": "The issue has also been reported in http://groups.google.com/group/sage-support/t/a44e084a94b72724\n\nSome more info: This also happens with\n\n```\nit's scientific linux 4.2, but have seen it on newer systems (will \nhave alook again) \nMachine: Linux fwnc7122.wks.gorlaeus.net 2.6.9-67.0.15.ELsmp #1 SMP \nWed May 7 04:33:01 CDT 2008 i686 i686 i386 GNU/Linux \nif you want I can send the install.log \n-eiso\n```\n\n\nCheers,\n\nMichael",
+    "body": "The issue has also been reported in http://groups.google.com/group/sage-support/t/a44e084a94b72724\n\nSome more info: This also happens with\n\n```\nit's scientific linux 4.2, but have seen it on newer systems (will \nhave alook again) \nMachine: Linux fwnc7122.wks.gorlaeus.net 2.6.9-67.0.15.ELsmp #1 SMP \nWed May 7 04:33:01 CDT 2008 i686 i686 i386 GNU/Linux \nif you want I can send the install.log \n-eiso\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T20:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4176",
     "type": "issue_comment",
@@ -117,7 +115,6 @@ if you want I can send the install.log
 -eiso
 ```
 
-
 Cheers,
 
 Michael
@@ -129,7 +126,7 @@ Michael
 archive/issue_comments_030238.json:
 ```json
 {
-    "body": "And it is also broken on the freshly release Fedora Core 10:\n\n```\nBUILDING MATPLOTLIB \n             matplotlib: 0.98.3 \n                 python: 2.5.2 (r252:60911, Nov 25 2008, 20:08:09)  [GCC \n                         4.3.2 20081105 (Red Hat 4.3.2-7)] \n               platform: linux2 \nREQUIRED DEPENDENCIES \n                  numpy: 1.2.0 \n              freetype2: 9.18.3 \nOPTIONAL BACKEND DEPENDENCIES \n                 libpng: 1.2.33 \nTraceback (most recent call last): \n   File \"setup.py\", line 125, in <module> \n     if check_for_tk() or (options['build_tkagg'] is True): \n   File \"/home/jaap/Download/sage-3.2.1.alpha0/spkg/build/matplotlib-0.98.3.p2/src/ setupext.py\", \nline 846, in check_for_tk \n     explanation = add_tk_flags(module) \n   File \"/home/jaap/Download/sage-3.2.1.alpha0/spkg/build/matplotlib-0.98.3.p2/src/ setupext.py\", \nline 1106, in add_tk_flags \n     module.libraries.extend(['tk' + tk_ver, 'tcl' + tk_ver]) \nUnboundLocalError: local variable 'tk_ver' referenced before assignment \nError building matplotlib package. \n```\n\nSo let's make this a blocker.\n\nCheers,\n\nMichael",
+    "body": "And it is also broken on the freshly release Fedora Core 10:\n\n```\nBUILDING MATPLOTLIB \n             matplotlib: 0.98.3 \n                 python: 2.5.2 (r252:60911, Nov 25 2008, 20:08:09)  [GCC \n                         4.3.2 20081105 (Red Hat 4.3.2-7)] \n               platform: linux2 \nREQUIRED DEPENDENCIES \n                  numpy: 1.2.0 \n              freetype2: 9.18.3 \nOPTIONAL BACKEND DEPENDENCIES \n                 libpng: 1.2.33 \nTraceback (most recent call last): \n   File \"setup.py\", line 125, in <module> \n     if check_for_tk() or (options['build_tkagg'] is True): \n   File \"/home/jaap/Download/sage-3.2.1.alpha0/spkg/build/matplotlib-0.98.3.p2/src/ setupext.py\", \nline 846, in check_for_tk \n     explanation = add_tk_flags(module) \n   File \"/home/jaap/Download/sage-3.2.1.alpha0/spkg/build/matplotlib-0.98.3.p2/src/ setupext.py\", \nline 1106, in add_tk_flags \n     module.libraries.extend(['tk' + tk_ver, 'tcl' + tk_ver]) \nUnboundLocalError: local variable 'tk_ver' referenced before assignment \nError building matplotlib package. \n```\nSo let's make this a blocker.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-25T20:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4176",
     "type": "issue_comment",
@@ -163,7 +160,6 @@ line 1106, in add_tk_flags
 UnboundLocalError: local variable 'tk_ver' referenced before assignment 
 Error building matplotlib package. 
 ```
-
 So let's make this a blocker.
 
 Cheers,
@@ -261,7 +257,7 @@ Michael
 archive/issue_comments_030243.json:
 ```json
 {
-    "body": "The spkg worked for me!\n\n\n\n```\nreal\t2m8.649s\nuser\t1m32.105s\nsys\t0m5.449s\nSuccessfully installed matplotlib-0.98.3.p3\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing matplotlib-0.98.3.p3.spkg\n\n\n\n```\n\n\nJaap\n\nSo positive review!",
+    "body": "The spkg worked for me!\n\n\n```\nreal\t2m8.649s\nuser\t1m32.105s\nsys\t0m5.449s\nSuccessfully installed matplotlib-0.98.3.p3\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing matplotlib-0.98.3.p3.spkg\n\n\n\n```\n\nJaap\n\nSo positive review!",
     "created_at": "2008-11-26T16:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4176",
     "type": "issue_comment",
@@ -271,7 +267,6 @@ archive/issue_comments_030243.json:
 ```
 
 The spkg worked for me!
-
 
 
 ```
@@ -287,7 +282,6 @@ Finished installing matplotlib-0.98.3.p3.spkg
 
 
 ```
-
 
 Jaap
 

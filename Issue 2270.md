@@ -93,7 +93,7 @@ Moved spkg to http://sage.math.washington.edu/home/gfurnish/glib-2.14.0.spkg
 archive/issue_comments_015012.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. There is no .hg directory in the spkg.\n\n2. The SPKG.txt is empty (and doesn't following the official format).\n\n3. This code should all be completely deleted; it doesn't make any sense to include.\n\n```\n #NOTE: Be sure to also update patches/gap*\n\n\n# Indicate that glib has somehow been updated, which invalidates all workspaces.\ntouch \"$SAGE_LOCAL/bin/glib_stamp\"\n```\n\n\nThat stamp stuff is *only* for Gap, and not for any other spkg.  See #527.\n\n4. It's bad form and error prone to have the explicit version and package\nnumber of the glib directory in the spkg-install.  In particularly, doing\n\n```\nTARGET=\"glib-2.14.0\"  \nINSTALL_DIR=$SAGE_LOCAL/lib/$TARGET\n```\n\nlooks really suspicious to me.  Why install to glib-2.14.0?  \n\n5. I think these two lines could delete a users Sage install if\nthere is a space in the install directory ($SAGE_LOCAL).  I haven't\ntested this.  \n\n```\n    INSTALL_DIR=$SAGE_LOCAL/lib/$TARGET\n    rm -rf $INSTALL_DIR\n```\n\nThere *will* eventually be users with spaces in \ntheir install directory names -- we try hard to support this, and\nshould in fact start testing it.   Basically just do the above\nbut put quotes around things.   Also, is it really necessary\nto remove the old install directory?  We do that in other spkg's\nonly when it turns out that not doing so leads to serious breakage\nproblems on upgrades. \n\n6. There is a set of quotes missing here:\n\n```\n    ./configure --prefix=$SAGE_LOCAL PREFIX=\"$SAGE_LOCAL\" CC=\"$CC\" CXX=\"$CXX\"\n```\n\n\n7. Is it really necessary to do all these explicit copies\ninstead of `make install`?  Is make install broken for glibc?\n\n```\n    $CP ./glib/*.la .\n    $CP ./gthread/*.la .\n    $CP ./gobject/*.la .\n    $CP ./gmodule/*.la .\n\n    $MKDIR $INSTALL_DIR\n    $CP -r * $INSTALL_DIR\n```\n\nAlso, the above would break if $INSTALL_DIR had spaces in it. \n\n8. There's no really good test that make install actually worked.\n\n[[I realized you probably made that spkg-install by just copying\nsomething *I* did a long time ago, which was probably a mess.  I'm just\npointing out all the problems in it for the record.]]\n\n9. OK, so I deleted everything that makes me nervous above and\ncame up with:\n\n```/bin/sh\n###########################################\n## GLIB\n###########################################\n\ncd src\n./configure --prefix=\"$SAGE_LOCAL\" PREFIX=\"$SAGE_LOCAL\" CC=\"$CC\" CXX=\"$CXX\"    \nif [ $? -ne 0 ]; then\n    echo \"Configuration of glib failed.\"\n    exit 1\nfi\necho \"Building and installing $TARGET\"\n$MAKE    \nif [ $? -ne 0 ]; then\n    echo \"Error building glib.\"\n    exit 1\nfi\n$MAKE install\nif [ $? -ne 0 ]; then\n    echo \"Error installing glib.\"\n    exit 1\nfi\n```\n\nI made a new spkg like this and put it here:\n\nhttp://sage.math.washington.edu/home/was/tmp/glib-2.14.0.p0.spkg\n\n10. For the record, half of glib-2.14.0.spkg is the src/docs subdirectory.  This can probably go for the spkg.  \n\n21. Build testing:\n\nOn OS X 10.5.1 intel *and* OS X 10.4 ppc:\n\n```\n...\nchecking for special C compiler options needed for large files... no\nchecking for _FILE_OFFSET_BITS value needed for large files... no\nchecking for _LARGE_FILES value needed for large files... no\nchecking for pkg-config... no\nconfigure: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/\nConfiguration of glib failed.\n\nreal\t0m8.123s\nuser\t0m1.253s\nsys\t0m1.581s\nsage: An error occurred while installing glib-2.14.0.p0\n```\n\n\nOn Linux (sage.math):\n\n```\nchecking for _LARGE_FILES value needed for large files... no\nchecking for pkg-config... no\nconfigure: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/\nConfiguration of glib failed.\n\nreal    0m3.598s\nuser    0m0.824s\nsys     0m1.120s\nsage: An error occurred while installing glib-2.14.0.p0\n```\n\n\nOK, so I do:\n\n```\nwas@sage:~/build/sage-2.10.3.alpha0$ sudo apt-get install pkg-config\n```\n\n\nThe build completes successfuly on sage.math in 2m8.136s real time, which isn't bad. \n(This is with my simplified spkg-install.)  After doing that there are files such as `SAGE_ROOT/local/lib/libglib-2.0.so`, so all that explicit copying you were doing in spkg-install wasn't necessary. \n\n12. Thus glib depends on pkg-config.  I looked for a few minutes but couldn't find much about pkg-config.  What is it?  License?  Size?  Dependencies?  Sage would also have to include it if it includes glib. \n\nI'll need a pkg-config spkg in order to test further on OS X...",
+    "body": "REFEREE REPORT:\n\n1. There is no .hg directory in the spkg.\n\n2. The SPKG.txt is empty (and doesn't following the official format).\n\n3. This code should all be completely deleted; it doesn't make any sense to include.\n\n```\n #NOTE: Be sure to also update patches/gap*\n\n\n# Indicate that glib has somehow been updated, which invalidates all workspaces.\ntouch \"$SAGE_LOCAL/bin/glib_stamp\"\n```\n\nThat stamp stuff is *only* for Gap, and not for any other spkg.  See #527.\n\n4. It's bad form and error prone to have the explicit version and package\nnumber of the glib directory in the spkg-install.  In particularly, doing\n\n```\nTARGET=\"glib-2.14.0\"  \nINSTALL_DIR=$SAGE_LOCAL/lib/$TARGET\n```\nlooks really suspicious to me.  Why install to glib-2.14.0?  \n\n5. I think these two lines could delete a users Sage install if\nthere is a space in the install directory ($SAGE_LOCAL).  I haven't\ntested this.  \n\n```\n    INSTALL_DIR=$SAGE_LOCAL/lib/$TARGET\n    rm -rf $INSTALL_DIR\n```\nThere *will* eventually be users with spaces in \ntheir install directory names -- we try hard to support this, and\nshould in fact start testing it.   Basically just do the above\nbut put quotes around things.   Also, is it really necessary\nto remove the old install directory?  We do that in other spkg's\nonly when it turns out that not doing so leads to serious breakage\nproblems on upgrades. \n\n6. There is a set of quotes missing here:\n\n```\n    ./configure --prefix=$SAGE_LOCAL PREFIX=\"$SAGE_LOCAL\" CC=\"$CC\" CXX=\"$CXX\"\n```\n\n7. Is it really necessary to do all these explicit copies\ninstead of `make install`?  Is make install broken for glibc?\n\n```\n    $CP ./glib/*.la .\n    $CP ./gthread/*.la .\n    $CP ./gobject/*.la .\n    $CP ./gmodule/*.la .\n\n    $MKDIR $INSTALL_DIR\n    $CP -r * $INSTALL_DIR\n```\nAlso, the above would break if $INSTALL_DIR had spaces in it. \n\n8. There's no really good test that make install actually worked.\n\n[[I realized you probably made that spkg-install by just copying\nsomething *I* did a long time ago, which was probably a mess.  I'm just\npointing out all the problems in it for the record.]]\n\n9. OK, so I deleted everything that makes me nervous above and\ncame up with:\n\n```/bin/sh\n###########################################\n## GLIB\n###########################################\n\ncd src\n./configure --prefix=\"$SAGE_LOCAL\" PREFIX=\"$SAGE_LOCAL\" CC=\"$CC\" CXX=\"$CXX\"    \nif [ $? -ne 0 ]; then\n    echo \"Configuration of glib failed.\"\n    exit 1\nfi\necho \"Building and installing $TARGET\"\n$MAKE    \nif [ $? -ne 0 ]; then\n    echo \"Error building glib.\"\n    exit 1\nfi\n$MAKE install\nif [ $? -ne 0 ]; then\n    echo \"Error installing glib.\"\n    exit 1\nfi\n```\nI made a new spkg like this and put it here:\n\nhttp://sage.math.washington.edu/home/was/tmp/glib-2.14.0.p0.spkg\n\n10. For the record, half of glib-2.14.0.spkg is the src/docs subdirectory.  This can probably go for the spkg.  \n\n21. Build testing:\n\nOn OS X 10.5.1 intel *and* OS X 10.4 ppc:\n\n```\n...\nchecking for special C compiler options needed for large files... no\nchecking for _FILE_OFFSET_BITS value needed for large files... no\nchecking for _LARGE_FILES value needed for large files... no\nchecking for pkg-config... no\nconfigure: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/\nConfiguration of glib failed.\n\nreal\t0m8.123s\nuser\t0m1.253s\nsys\t0m1.581s\nsage: An error occurred while installing glib-2.14.0.p0\n```\n\nOn Linux (sage.math):\n\n```\nchecking for _LARGE_FILES value needed for large files... no\nchecking for pkg-config... no\nconfigure: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/\nConfiguration of glib failed.\n\nreal    0m3.598s\nuser    0m0.824s\nsys     0m1.120s\nsage: An error occurred while installing glib-2.14.0.p0\n```\n\nOK, so I do:\n\n```\nwas@sage:~/build/sage-2.10.3.alpha0$ sudo apt-get install pkg-config\n```\n\nThe build completes successfuly on sage.math in 2m8.136s real time, which isn't bad. \n(This is with my simplified spkg-install.)  After doing that there are files such as `SAGE_ROOT/local/lib/libglib-2.0.so`, so all that explicit copying you were doing in spkg-install wasn't necessary. \n\n12. Thus glib depends on pkg-config.  I looked for a few minutes but couldn't find much about pkg-config.  What is it?  License?  Size?  Dependencies?  Sage would also have to include it if it includes glib. \n\nI'll need a pkg-config spkg in order to test further on OS X...",
     "created_at": "2008-03-01T05:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
@@ -118,7 +118,6 @@ REFEREE REPORT:
 touch "$SAGE_LOCAL/bin/glib_stamp"
 ```
 
-
 That stamp stuff is *only* for Gap, and not for any other spkg.  See #527.
 
 4. It's bad form and error prone to have the explicit version and package
@@ -128,7 +127,6 @@ number of the glib directory in the spkg-install.  In particularly, doing
 TARGET="glib-2.14.0"  
 INSTALL_DIR=$SAGE_LOCAL/lib/$TARGET
 ```
-
 looks really suspicious to me.  Why install to glib-2.14.0?  
 
 5. I think these two lines could delete a users Sage install if
@@ -139,7 +137,6 @@ tested this.
     INSTALL_DIR=$SAGE_LOCAL/lib/$TARGET
     rm -rf $INSTALL_DIR
 ```
-
 There *will* eventually be users with spaces in 
 their install directory names -- we try hard to support this, and
 should in fact start testing it.   Basically just do the above
@@ -154,7 +151,6 @@ problems on upgrades.
     ./configure --prefix=$SAGE_LOCAL PREFIX="$SAGE_LOCAL" CC="$CC" CXX="$CXX"
 ```
 
-
 7. Is it really necessary to do all these explicit copies
 instead of `make install`?  Is make install broken for glibc?
 
@@ -167,7 +163,6 @@ instead of `make install`?  Is make install broken for glibc?
     $MKDIR $INSTALL_DIR
     $CP -r * $INSTALL_DIR
 ```
-
 Also, the above would break if $INSTALL_DIR had spaces in it. 
 
 8. There's no really good test that make install actually worked.
@@ -202,7 +197,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 ```
-
 I made a new spkg like this and put it here:
 
 http://sage.math.washington.edu/home/was/tmp/glib-2.14.0.p0.spkg
@@ -228,7 +222,6 @@ sys	0m1.581s
 sage: An error occurred while installing glib-2.14.0.p0
 ```
 
-
 On Linux (sage.math):
 
 ```
@@ -243,13 +236,11 @@ sys     0m1.120s
 sage: An error occurred while installing glib-2.14.0.p0
 ```
 
-
 OK, so I do:
 
 ```
 was@sage:~/build/sage-2.10.3.alpha0$ sudo apt-get install pkg-config
 ```
-
 
 The build completes successfuly on sage.math in 2m8.136s real time, which isn't bad. 
 (This is with my simplified spkg-install.)  After doing that there are files such as `SAGE_ROOT/local/lib/libglib-2.0.so`, so all that explicit copying you were doing in spkg-install wasn't necessary. 
@@ -283,7 +274,7 @@ http://sage.math.washington.edu/home/gfurnish/spkg/pkgconfig-0.18.spkg is the gp
 archive/issue_comments_015014.json:
 ```json
 {
-    "body": "gfurnish posted an spkg for pkg-config here:\n\n   http://sage.math.washington.edu/home/gfurnish/spkg/\n\nIt works. \n\nUnfortunately, that's not enough.   Now  on OSX we get libintl.h missing:\n\n```\nchecking for LC_MESSAGES... yes\nchecking libintl.h usability... no\nchecking libintl.h presence... no\nchecking for libintl.h... no\nconfigure: error:\n*** You must have either have gettext support in your C library, or use the\n*** GNU gettext library. (http://www.gnu.org/software/gettext/gettext.html\n\nConfiguration of glib failed.\n\nreal\t0m8.201s\n```\n",
+    "body": "gfurnish posted an spkg for pkg-config here:\n\n   http://sage.math.washington.edu/home/gfurnish/spkg/\n\nIt works. \n\nUnfortunately, that's not enough.   Now  on OSX we get libintl.h missing:\n\n```\nchecking for LC_MESSAGES... yes\nchecking libintl.h usability... no\nchecking libintl.h presence... no\nchecking for libintl.h... no\nconfigure: error:\n*** You must have either have gettext support in your C library, or use the\n*** GNU gettext library. (http://www.gnu.org/software/gettext/gettext.html\n\nConfiguration of glib failed.\n\nreal\t0m8.201s\n```",
     "created_at": "2008-03-01T07:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
@@ -316,7 +307,6 @@ real	0m8.201s
 
 
 
-
 ---
 
 archive/issue_comments_015015.json:
@@ -340,7 +330,7 @@ New glib spkg for mac os.  It probably won't fully work, but it will get farther
 archive/issue_comments_015016.json:
 ```json
 {
-    "body": "You're right -- it doesn't work on OS X:\n\n```\n gcc -DHAVE_CONFIG_H -I. -I. -I.. -I.. -DG_LOG_DOMAIN=\\\"GLib\\\" -DG_DISABLE_CAST_CHECKS -DG_DISABLE_DEPRECATED -DGLIB_COMPILATION -D_REENTRANT -g -O2 -Wall -MT gregex.lo -MD -MP -MF .deps/gregex.Tpo -c gregex.c  -fno-common -DPIC -o .libs/gregex.o\nIn file included from gregex.c:27:\n../glib/gi18n.h:23:21: error: libintl.h: No such file or directory\ngregex.c: In function 'match_error':\ngregex.c:126: warning: implicit declaration of function 'gettext'\ngregex.c:126: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:174: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_match_info_next':\ngregex.c:319: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_regex_new':\ngregex.c:884: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:893: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:936: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:958: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_regex_match_all_full':\ngregex.c:1354: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'expand_escape':\ngregex.c:1782: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1798: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1838: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1847: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1854: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1865: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1883: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1945: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1959: warning: incompatible implicit declaration of built-in function 'gettext'\nmake[4]: *** [gregex.lo] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2\nmake[1]: *** [all-recursive] Error 1\nmake: *** [all] Error 2\nError building glib.\n\nreal\t1m9.648s\n```\n",
+    "body": "You're right -- it doesn't work on OS X:\n\n```\n gcc -DHAVE_CONFIG_H -I. -I. -I.. -I.. -DG_LOG_DOMAIN=\\\"GLib\\\" -DG_DISABLE_CAST_CHECKS -DG_DISABLE_DEPRECATED -DGLIB_COMPILATION -D_REENTRANT -g -O2 -Wall -MT gregex.lo -MD -MP -MF .deps/gregex.Tpo -c gregex.c  -fno-common -DPIC -o .libs/gregex.o\nIn file included from gregex.c:27:\n../glib/gi18n.h:23:21: error: libintl.h: No such file or directory\ngregex.c: In function 'match_error':\ngregex.c:126: warning: implicit declaration of function 'gettext'\ngregex.c:126: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:174: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_match_info_next':\ngregex.c:319: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_regex_new':\ngregex.c:884: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:893: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:936: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:958: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'g_regex_match_all_full':\ngregex.c:1354: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c: In function 'expand_escape':\ngregex.c:1782: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1798: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1838: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1847: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1854: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1865: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1883: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1945: warning: incompatible implicit declaration of built-in function 'gettext'\ngregex.c:1959: warning: incompatible implicit declaration of built-in function 'gettext'\nmake[4]: *** [gregex.lo] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2\nmake[1]: *** [all-recursive] Error 1\nmake: *** [all] Error 2\nError building glib.\n\nreal\t1m9.648s\n```",
     "created_at": "2008-03-01T18:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
@@ -390,7 +380,6 @@ real	1m9.648s
 
 
 
-
 ---
 
 archive/issue_comments_015017.json:
@@ -416,7 +405,7 @@ http://sage.math.washington.edu/home/gfurnish/spkg/glib-2.14.5.spkg
 archive/issue_comments_015018.json:
 ```json
 {
-    "body": "ISSUES:\n\n1. One must also install\n\n   http://sage.math.washington.edu/home/gfurnish/spkg/gettext-0.16.spkg\n\nThis is 5.8MB and take 6 minutes to compile on my 2.6Ghz laptop.  And it succeeds!\n\n2. But, glib still fails to compile:\n\n```\nchecking for LC_MESSAGES... yes\nchecking libintl.h usability... no\nchecking libintl.h presence... no\nchecking for libintl.h... no\nconfigure: error:\n*** You must have either have gettext support in your C library, or use the\n*** GNU gettext library. (http://www.gnu.org/software/gettext/gettext.html\n\nConfiguration of glib failed.\n\nreal\t0m5.354s\nuser\t0m1.573s\nsys\t0m2.044s\n```\n",
+    "body": "ISSUES:\n\n1. One must also install\n\n   http://sage.math.washington.edu/home/gfurnish/spkg/gettext-0.16.spkg\n\nThis is 5.8MB and take 6 minutes to compile on my 2.6Ghz laptop.  And it succeeds!\n\n2. But, glib still fails to compile:\n\n```\nchecking for LC_MESSAGES... yes\nchecking libintl.h usability... no\nchecking libintl.h presence... no\nchecking for libintl.h... no\nconfigure: error:\n*** You must have either have gettext support in your C library, or use the\n*** GNU gettext library. (http://www.gnu.org/software/gettext/gettext.html\n\nConfiguration of glib failed.\n\nreal\t0m5.354s\nuser\t0m1.573s\nsys\t0m2.044s\n```",
     "created_at": "2008-03-02T00:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
@@ -450,7 +439,6 @@ real	0m5.354s
 user	0m1.573s
 sys	0m2.044s
 ```
-
 
 
 

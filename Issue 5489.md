@@ -88,7 +88,7 @@ Patch applies cleanly to Sage 4.0.1 and doctests pass on my Mac.
 archive/issue_comments_042536.json:
 ```json
 {
-    "body": "**Review**\n\n* the docstrings are not according to the current Sage standard.\n* IMHO one should update the experimental 4ti2 spkg in parallel with accepting this patch\n* how much hassle would it be to replace docs like \n\n```\nRuns the 4ti2 program ``qsolve`` on the parameters. See ``http://www.4ti2.de/`` for details. \n```\n\n   with docs which describe the program somewhat?\n* patch applies cleanly against 4.1.1.\n* `devel/sage/sage/interfaces/four_ti_2.py # 9 doctests failed` if 4ti2 is not installed, because `#optional` tag is missing",
+    "body": "**Review**\n\n* the docstrings are not according to the current Sage standard.\n* IMHO one should update the experimental 4ti2 spkg in parallel with accepting this patch\n* how much hassle would it be to replace docs like \n\n```\nRuns the 4ti2 program ``qsolve`` on the parameters. See ``http://www.4ti2.de/`` for details. \n```\n   with docs which describe the program somewhat?\n* patch applies cleanly against 4.1.1.\n* `devel/sage/sage/interfaces/four_ti_2.py # 9 doctests failed` if 4ti2 is not installed, because `#optional` tag is missing",
     "created_at": "2009-08-18T10:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ archive/issue_comments_042536.json:
 ```
 Runs the 4ti2 program ``qsolve`` on the parameters. See ``http://www.4ti2.de/`` for details. 
 ```
-
    with docs which describe the program somewhat?
 * patch applies cleanly against 4.1.1.
 * `devel/sage/sage/interfaces/four_ti_2.py # 9 doctests failed` if 4ti2 is not installed, because `#optional` tag is missing
@@ -140,7 +139,7 @@ I agree it would be good to update the experimental 4ti2 spkg, which is however 
 archive/issue_comments_042538.json:
 ```json
 {
-    "body": "Replying to [comment:3 broune]:\n> Thank you for the review. Could you tell me what needs to change in the docstring format? I'm willing to fix this, as well as add the #optional tags, if that is all that is needed for acceptance of the patch.\n\nI don't have answers for your other questions, but for this one:\n\n(1) \"EXAMPLES:\" should be changed to \"EXAMPLES::\"  (double colon), and it should be followed by a blank line.\n\n(2) In the `__init__` method at the beginning of the file, the INPUT block is not formatted correctly: after the first line, the other lines should be indented so that they line up with ```directory``` (as you've done later).\n\n(3) In all of your INPUT blocks, the leading hyphens should not be indented: they should line up with the \"I\" in \"INPUT\".\n\n(4) A few methods have blank lines after the initial `r\"\"\"`.  I think those should be deleted.",
+    "body": "Replying to [comment:3 broune]:\n> Thank you for the review. Could you tell me what needs to change in the docstring format? I'm willing to fix this, as well as add the #optional tags, if that is all that is needed for acceptance of the patch.\n\n\nI don't have answers for your other questions, but for this one:\n\n(1) \"EXAMPLES:\" should be changed to \"EXAMPLES::\"  (double colon), and it should be followed by a blank line.\n\n(2) In the `__init__` method at the beginning of the file, the INPUT block is not formatted correctly: after the first line, the other lines should be indented so that they line up with ```directory``` (as you've done later).\n\n(3) In all of your INPUT blocks, the leading hyphens should not be indented: they should line up with the \"I\" in \"INPUT\".\n\n(4) A few methods have blank lines after the initial `r\"\"\"`.  I think those should be deleted.",
     "created_at": "2009-11-19T22:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -151,6 +150,7 @@ archive/issue_comments_042538.json:
 
 Replying to [comment:3 broune]:
 > Thank you for the review. Could you tell me what needs to change in the docstring format? I'm willing to fix this, as well as add the #optional tags, if that is all that is needed for acceptance of the patch.
+
 
 I don't have answers for your other questions, but for this one:
 
@@ -247,7 +247,7 @@ Apply trac_5489_4ti2_interface.patch
 archive/issue_comments_042543.json:
 ```json
 {
-    "body": "The code looks good, the doc coverage is 100% and the tests pass. I am almost ready to give a positive review.\n\nI have only some basic comments:\n\n* there is a typo here in \"does\" (in the method directory)\n\n\n```\n# method since apparently importing sage.misc.misc oes not\n```\n\n\n* Why not gather these import statements at the beginning ?\n\n\n```\n from sage.matrix.constructor import matrix \n from sage.matrix.matrix import is_Matrix \n from sage.rings.integer_ring import ZZ \n import subprocess\n```\n\n\nIf there is no technical difficulty (as for sage.misc.misc), it seems better to import them once and for all. At least those about matrices and integers ?\n\n* There seem to be some 'trailing whitespaces' that could be removed. All the lines just after an EXAMPLES:: should rather be empty.\n\n* The minimize method is NotImplemented. This can of course wait for another ticket.",
+    "body": "The code looks good, the doc coverage is 100% and the tests pass. I am almost ready to give a positive review.\n\nI have only some basic comments:\n\n* there is a typo here in \"does\" (in the method directory)\n\n```\n# method since apparently importing sage.misc.misc oes not\n```\n\n* Why not gather these import statements at the beginning ?\n\n```\n from sage.matrix.constructor import matrix \n from sage.matrix.matrix import is_Matrix \n from sage.rings.integer_ring import ZZ \n import subprocess\n```\n\nIf there is no technical difficulty (as for sage.misc.misc), it seems better to import them once and for all. At least those about matrices and integers ?\n\n* There seem to be some 'trailing whitespaces' that could be removed. All the lines just after an EXAMPLES:: should rather be empty.\n\n* The minimize method is NotImplemented. This can of course wait for another ticket.",
     "created_at": "2012-07-24T20:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
@@ -262,14 +262,11 @@ I have only some basic comments:
 
 * there is a typo here in "does" (in the method directory)
 
-
 ```
 # method since apparently importing sage.misc.misc oes not
 ```
 
-
 * Why not gather these import statements at the beginning ?
-
 
 ```
  from sage.matrix.constructor import matrix 
@@ -277,7 +274,6 @@ I have only some basic comments:
  from sage.rings.integer_ring import ZZ 
  import subprocess
 ```
-
 
 If there is no technical difficulty (as for sage.misc.misc), it seems better to import them once and for all. At least those about matrices and integers ?
 

@@ -3,7 +3,7 @@
 archive/issues_008967.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @mstreng\n\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nand\n\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\n\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mstreng\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\nand\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
     "created_at": "2010-05-14T18:28:12Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 CC:  @mstreng
 
-
 ```
 sage: P.<t> = GF(5)[]
 sage: GF(5).extension(t^2 - 2, name='a')
@@ -30,9 +29,7 @@ Traceback (most recent call last)
 ...
 ValueError: variable names must be alphanumeric, but one is '('a' which is not.
 ```
-
 and
-
 
 ```
 sage: GF(5).extension(x^2 - 2, name='a')
@@ -40,7 +37,6 @@ Traceback (most recent call last)
 ...
 AttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'
 ```
-
 The patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension("not_a_poly", name='a'),` by  splicing in code from the number field version.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8967
@@ -143,7 +139,7 @@ Yes
 archive/issue_comments_082512.json:
 ```json
 {
-    "body": "This patch does what it says. It did however take over a bad habit of \"extension\" for number fields. See the examples below, where I think the behavior of QQ is preferred.\n\n```\nsage: QQ.extension(x^2-2, ('a', 'b'))\nIndexError: the number of names must equal the number of generators\nsage: GF(3).extension(x^2-2, ('a', 'b'))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', 'b'))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n\nsage: QQ.extension(x^2 - 2, ('a', QQ))\nValueError: variable names must be alphanumeric, but one is 'Rational Field' which is not.\nsage: GF(3).extension(x^2 - 2, ('a', QQ))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', QQ))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n```\n",
+    "body": "This patch does what it says. It did however take over a bad habit of \"extension\" for number fields. See the examples below, where I think the behavior of QQ is preferred.\n\n```\nsage: QQ.extension(x^2-2, ('a', 'b'))\nIndexError: the number of names must equal the number of generators\nsage: GF(3).extension(x^2-2, ('a', 'b'))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', 'b'))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n\nsage: QQ.extension(x^2 - 2, ('a', QQ))\nValueError: variable names must be alphanumeric, but one is 'Rational Field' which is not.\nsage: GF(3).extension(x^2 - 2, ('a', QQ))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', QQ))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n```",
     "created_at": "2010-07-12T14:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
@@ -169,7 +165,6 @@ Univariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulu
 sage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', QQ))
 Number Field in a with defining polynomial x^2 - 2 over its base field
 ```
-
 
 
 

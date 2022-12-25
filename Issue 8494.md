@@ -3,7 +3,7 @@
 archive/issues_008494.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nOne can use the `digits()` method to go from an integer to a list of digits, but it would be nice if the docstring explained how to do the inverse:\n\n```\nZ(x.digits(base), base)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8494\n\n",
+    "body": "Assignee: mvngu\n\nOne can use the `digits()` method to go from an integer to a list of digits, but it would be nice if the docstring explained how to do the inverse:\n\n```\nZ(x.digits(base), base)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8494\n\n",
     "created_at": "2010-03-11T05:40:42Z",
     "labels": [
         "component: documentation"
@@ -22,7 +22,6 @@ One can use the `digits()` method to go from an integer to a list of digits, but
 ```
 Z(x.digits(base), base)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8494
 

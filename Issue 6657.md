@@ -3,7 +3,7 @@
 archive/issues_006657.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
+    "body": "Assignee: @williamstein\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
     "created_at": "2009-07-29T23:06:58Z",
     "labels": [
         "component: number theory",
@@ -18,7 +18,6 @@ archive/issues_006657.json:
 ```
 Assignee: @williamstein
 
-
 ```
 I found the following to be rather unexpected:
 
@@ -30,7 +29,6 @@ Elliptic Curve defined by y^2 = x^3 - x over Rational Field
 [I understand that 1728 is considered an Integer, yet the first
 argument seems to be ignored]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6657
 
@@ -117,7 +115,7 @@ Changing assignee from @williamstein to @JohnCremona.
 archive/issue_comments_054549.json:
 ```json
 {
-    "body": "Chris,\n\nYou are not quite right.  What is deprecated is EllipticCurve(j0), not EllipticCurve(j=j0):\n\n```\nsage: EllipticCurve(GF(101)(1728))\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1: DeprecationWarning: 'EllipticCurve(j)' is deprecated; use 'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n  #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\nsage: EllipticCurve(j=GF(101)(1728))\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\n```\n\nNow I cannot remember when that deprecation was put in, hence when it should be removed.\n\nAnyway, Victor's point is a valid one, and I'll put up a patch!",
+    "body": "Chris,\n\nYou are not quite right.  What is deprecated is EllipticCurve(j0), not EllipticCurve(j=j0):\n\n```\nsage: EllipticCurve(GF(101)(1728))\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1: DeprecationWarning: 'EllipticCurve(j)' is deprecated; use 'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n  #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\nsage: EllipticCurve(j=GF(101)(1728))\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\n```\nNow I cannot remember when that deprecation was put in, hence when it should be removed.\n\nAnyway, Victor's point is a valid one, and I'll put up a patch!",
     "created_at": "2010-01-12T20:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
@@ -138,7 +136,6 @@ Elliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101
 sage: EllipticCurve(j=GF(101)(1728))
 Elliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101
 ```
-
 Now I cannot remember when that deprecation was put in, hence when it should be removed.
 
 Anyway, Victor's point is a valid one, and I'll put up a patch!

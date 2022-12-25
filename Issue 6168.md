@@ -3,7 +3,7 @@
 archive/issues_006168.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nFalse\nsage: f.degree()\n1\n```\n\n\nInternally the coefficient 5 is not reduced, but it prints as reduced.\n\nThis bug is probably the main cause of #5817.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6168\n\n",
+    "body": "Assignee: tbd\n\nIt is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nFalse\nsage: f.degree()\n1\n```\n\nInternally the coefficient 5 is not reduced, but it prints as reduced.\n\nThis bug is probably the main cause of #5817.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6168\n\n",
     "created_at": "2009-05-31T05:40:26Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 It is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:
 
-
 ```
 sage: R.<x> = PolynomialRing(Integers(15))
 sage: S.<y> = PolynomialRing(Integers(5))
@@ -32,7 +31,6 @@ False
 sage: f.degree()
 1
 ```
-
 
 Internally the coefficient 5 is not reduced, but it prints as reduced.
 
@@ -159,7 +157,7 @@ Changing priority from major to critical.
 archive/issue_comments_049115.json:
 ```json
 {
-    "body": "The patch applies against 4.0, and fixes the bug:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nTrue\nsage: f.degree()\n-1\n```\n\nMoreover, with this patch in, the spkg at #5817 passes all doctests. Positive review.",
+    "body": "The patch applies against 4.0, and fixes the bug:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nTrue\nsage: f.degree()\n-1\n```\nMoreover, with this patch in, the spkg at #5817 passes all doctests. Positive review.",
     "created_at": "2009-06-02T01:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
@@ -181,7 +179,6 @@ True
 sage: f.degree()
 -1
 ```
-
 Moreover, with this patch in, the spkg at #5817 passes all doctests. Positive review.
 
 

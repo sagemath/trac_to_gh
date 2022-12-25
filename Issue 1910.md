@@ -66,7 +66,7 @@ archive/issue_events_004599.json:
 archive/issue_comments_012073.json:
 ```json
 {
-    "body": "The file in question does not exist any more in Sage 3.2.2.alpha2, so I am closing this as wontfix:\n\n```\nsage-3.2.2.alpha2/devel/sage$ ls -al sage/matrix/matrix_dense*\n-rw-r--r-- 1 mabshoff 1090 264468 2008-12-10 06:41 sage/matrix/matrix_dense.c\n-rw-r--r-- 1 mabshoff 1090     66 2008-12-08 02:44 sage/matrix/matrix_dense.pxd\n-rw-r--r-- 1 mabshoff 1090  10782 2008-12-10 06:40 sage/matrix/matrix_dense.pyx\n```\n\nI also used find to locate the file elsewhere in the tree and it isn't there any more :)\n\nCheers,\n\nMichael",
+    "body": "The file in question does not exist any more in Sage 3.2.2.alpha2, so I am closing this as wontfix:\n\n```\nsage-3.2.2.alpha2/devel/sage$ ls -al sage/matrix/matrix_dense*\n-rw-r--r-- 1 mabshoff 1090 264468 2008-12-10 06:41 sage/matrix/matrix_dense.c\n-rw-r--r-- 1 mabshoff 1090     66 2008-12-08 02:44 sage/matrix/matrix_dense.pxd\n-rw-r--r-- 1 mabshoff 1090  10782 2008-12-10 06:40 sage/matrix/matrix_dense.pyx\n```\nI also used find to locate the file elsewhere in the tree and it isn't there any more :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-11T16:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1910",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ sage-3.2.2.alpha2/devel/sage$ ls -al sage/matrix/matrix_dense*
 -rw-r--r-- 1 mabshoff 1090     66 2008-12-08 02:44 sage/matrix/matrix_dense.pxd
 -rw-r--r-- 1 mabshoff 1090  10782 2008-12-10 06:40 sage/matrix/matrix_dense.pyx
 ```
-
 I also used find to locate the file elsewhere in the tree and it isn't there any more :)
 
 Cheers,

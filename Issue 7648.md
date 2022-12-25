@@ -3,7 +3,7 @@
 archive/issues_007648.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn 11/27/2009 05:47 AM, Minh Nguyen wrote:\n> On Fri, Nov 27, 2009 at 9:10 PM, Yotam Avital <> wrote:\n>> for i in range (1,5):\n>>     print '%6s %6s %6s'%(i, i^2, i^3)\n\nI think *part* of the problem could be line 294 of sagenb.interfaces.expect:\n\n       s = s.strip().rstrip(self._prompt)\n\n\nReplacing this with\n\n       s = s.rstrip(self._prompt)\n\nappears to restore the expected spacing.  But quitting and reopening the\nworksheet puts\n\n1      1      1\n    2      4      8\n    3      9     27\n    4     16     64\n\nin the output cell.  I think the problem here is line 910 (or so) of\nsagenb.notebook.cell:\n\n           out = '///\\n' + out.strip()\n\n\nReplacing this with\n\n           out = '///\\n' + out.strip('\\n')\n\nseems to solve this problem.  It also makes the text representation of\nthe worksheet more compact.\n\nNote: I haven't tested these changes extensively.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7648\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 11/27/2009 05:47 AM, Minh Nguyen wrote:\n> On Fri, Nov 27, 2009 at 9:10 PM, Yotam Avital <> wrote:\n>> for i in range (1,5):\n>>     print '%6s %6s %6s'%(i, i^2, i^3)\n\nI think *part* of the problem could be line 294 of sagenb.interfaces.expect:\n\n       s = s.strip().rstrip(self._prompt)\n\n\nReplacing this with\n\n       s = s.rstrip(self._prompt)\n\nappears to restore the expected spacing.  But quitting and reopening the\nworksheet puts\n\n1      1      1\n    2      4      8\n    3      9     27\n    4     16     64\n\nin the output cell.  I think the problem here is line 910 (or so) of\nsagenb.notebook.cell:\n\n           out = '///\\n' + out.strip()\n\n\nReplacing this with\n\n           out = '///\\n' + out.strip('\\n')\n\nseems to solve this problem.  It also makes the text representation of\nthe worksheet more compact.\n\nNote: I haven't tested these changes extensively.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7648\n\n",
     "created_at": "2009-12-10T01:19:32Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_007648.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On 11/27/2009 05:47 AM, Minh Nguyen wrote:
@@ -58,7 +57,6 @@ the worksheet more compact.
 
 Note: I haven't tested these changes extensively.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7648
 
@@ -109,7 +107,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065267.json:
 ```json
 {
-    "body": "The Se tests pass.  Unfortunately, `sage -t sagenb/notebook` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nPlease see #7650.",
+    "body": "The Se tests pass.  Unfortunately, `sage -t sagenb/notebook` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\nPlease see #7650.",
     "created_at": "2009-12-10T03:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
@@ -123,7 +121,6 @@ The Se tests pass.  Unfortunately, `sage -t sagenb/notebook` yields several
 ```
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 Please see #7650.
 
 

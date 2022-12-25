@@ -57,7 +57,7 @@ Mercurial patch to add an spkg-check file for Python
 archive/issue_comments_087387.json:
 ```json
 {
-    "body": "Attachment [9295.patch](tarball://root/attachments/some-uuid/ticket9295/9295.patch) by drkirkby created at 2010-06-21 12:54:29\n\nHere's the revised package. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/revised-patches/python-2.6.4.p9.spkg\n\nWith those changes, and SAGE_CHECK exported to \"yes\", so the test suite is run: \n\n\n```\nSleeping for three seconds before testing python\nmath module OK\nhashlib module imported\n\nreal\t1m30.977s\nuser\t1m13.338s\nsys\t0m11.943s\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\nrunning build\nrunning build_ext\n<snip>\ntest_grammar\ntest_opcodes\ntest_dict\ntest_builtin\ntest_exceptions\ntest_types\ntest_unittest\ntest_doctest\ntest_doctest2\ntest_MimeWriter\ntest_SimpleHTTPServer\n```\n\n\nOn my Sun Ultra 27 (OpenSolaris 06/2009), there are a few failures\n\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src'\nAn error occured whilst testing Python\n*************************************\n```\n\n\nso it was useful to know about these. \n\n**Note, failures detected by the test routine do NOT stop stage building unless SAGE_CHECK is set to yes, so the fact the test suite finds failures has no detrimental effect on Sage, but should highlight areas where we should be concerned**\n\nDave",
+    "body": "Attachment [9295.patch](tarball://root/attachments/some-uuid/ticket9295/9295.patch) by drkirkby created at 2010-06-21 12:54:29\n\nHere's the revised package. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/revised-patches/python-2.6.4.p9.spkg\n\nWith those changes, and SAGE_CHECK exported to \"yes\", so the test suite is run: \n\n```\nSleeping for three seconds before testing python\nmath module OK\nhashlib module imported\n\nreal\t1m30.977s\nuser\t1m13.338s\nsys\t0m11.943s\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\nrunning build\nrunning build_ext\n<snip>\ntest_grammar\ntest_opcodes\ntest_dict\ntest_builtin\ntest_exceptions\ntest_types\ntest_unittest\ntest_doctest\ntest_doctest2\ntest_MimeWriter\ntest_SimpleHTTPServer\n```\n\nOn my Sun Ultra 27 (OpenSolaris 06/2009), there are a few failures\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src'\nAn error occured whilst testing Python\n*************************************\n```\n\nso it was useful to know about these. \n\n**Note, failures detected by the test routine do NOT stop stage building unless SAGE_CHECK is set to yes, so the fact the test suite finds failures has no detrimental effect on Sage, but should highlight areas where we should be concerned**\n\nDave",
     "created_at": "2010-06-21T12:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9295",
     "type": "issue_comment",
@@ -74,7 +74,6 @@ Here's the revised package.
 http://boxen.math.washington.edu/home/kirkby/revised-patches/python-2.6.4.p9.spkg
 
 With those changes, and SAGE_CHECK exported to "yes", so the test suite is run: 
-
 
 ```
 Sleeping for three seconds before testing python
@@ -103,9 +102,7 @@ test_MimeWriter
 test_SimpleHTTPServer
 ```
 
-
 On my Sun Ultra 27 (OpenSolaris 06/2009), there are a few failures
-
 
 ```
 322 tests OK.
@@ -130,7 +127,6 @@ An error occured whilst testing Python
 *************************************
 ```
 
-
 so it was useful to know about these. 
 
 **Note, failures detected by the test routine do NOT stop stage building unless SAGE_CHECK is set to yes, so the fact the test suite finds failures has no detrimental effect on Sage, but should highlight areas where we should be concerned**
@@ -144,7 +140,7 @@ Dave
 archive/issue_comments_087388.json:
 ```json
 {
-    "body": "Is this ready for review?\n\nGiven the positive review for #9041, this basically looks good to me.  On my mac, I get test failures also:\n\n```\n5 tests failed:\n    test_asynchat test_ctypes test_distutils test_locale test_smtplib\n39 tests skipped:\n    test__locale test_aepack test_al test_applesingle test_bsddb\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dl test_epoll test_gdbm test_gl test_imageop test_imgfile\n    test_largefile test_linuxaudiodev test_macos test_macostools\n    test_normalization test_ossaudiodev test_pep277 test_py3kwarn\n    test_scriptpackages test_smtpnet test_socketserver test_startfile\n    test_sunaudiodev test_timeout test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n5 skips unexpected on darwin:\n    test_macos test_applesingle test_dl test_aepack\n    test_scriptpackages\n```\n\nTwo comments: if I set SAGE_CHECK to \"yes\" and run \"sage -i python...\", then it tells me that an error occurred, but then I get\n\n```\n$ echo ?$\n0\n```\n\nI think this is a problem with how the script sage-sage is written, not this patch.\n\nAlso, \"occurred\" is misspelled in sage-check: it's missing an \"r\". Please fix this. The use of \"whilst\" looks a little strange to me, since it is followed a few lines later with \"while\" (from the script sage-spkg):\n\n```\nAn error occured whilst testing Python\n*************************************\nError testing package ** python-2.6.4.p9 **\n*************************************\nsage: An error occurred while testing python-2.6.4.p9\n```\n\nBut that doesn't need to be changed.",
+    "body": "Is this ready for review?\n\nGiven the positive review for #9041, this basically looks good to me.  On my mac, I get test failures also:\n\n```\n5 tests failed:\n    test_asynchat test_ctypes test_distutils test_locale test_smtplib\n39 tests skipped:\n    test__locale test_aepack test_al test_applesingle test_bsddb\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dl test_epoll test_gdbm test_gl test_imageop test_imgfile\n    test_largefile test_linuxaudiodev test_macos test_macostools\n    test_normalization test_ossaudiodev test_pep277 test_py3kwarn\n    test_scriptpackages test_smtpnet test_socketserver test_startfile\n    test_sunaudiodev test_timeout test_urllib2net test_urllibnet\n    test_winreg test_winsound test_zipfile64\n5 skips unexpected on darwin:\n    test_macos test_applesingle test_dl test_aepack\n    test_scriptpackages\n```\nTwo comments: if I set SAGE_CHECK to \"yes\" and run \"sage -i python...\", then it tells me that an error occurred, but then I get\n\n```\n$ echo ?$\n0\n```\nI think this is a problem with how the script sage-sage is written, not this patch.\n\nAlso, \"occurred\" is misspelled in sage-check: it's missing an \"r\". Please fix this. The use of \"whilst\" looks a little strange to me, since it is followed a few lines later with \"while\" (from the script sage-spkg):\n\n```\nAn error occured whilst testing Python\n*************************************\nError testing package ** python-2.6.4.p9 **\n*************************************\nsage: An error occurred while testing python-2.6.4.p9\n```\nBut that doesn't need to be changed.",
     "created_at": "2010-06-21T17:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9295",
     "type": "issue_comment",
@@ -174,14 +170,12 @@ Given the positive review for #9041, this basically looks good to me.  On my mac
     test_macos test_applesingle test_dl test_aepack
     test_scriptpackages
 ```
-
 Two comments: if I set SAGE_CHECK to "yes" and run "sage -i python...", then it tells me that an error occurred, but then I get
 
 ```
 $ echo ?$
 0
 ```
-
 I think this is a problem with how the script sage-sage is written, not this patch.
 
 Also, "occurred" is misspelled in sage-check: it's missing an "r". Please fix this. The use of "whilst" looks a little strange to me, since it is followed a few lines later with "while" (from the script sage-spkg):
@@ -193,7 +187,6 @@ Error testing package ** python-2.6.4.p9 **
 *************************************
 sage: An error occurred while testing python-2.6.4.p9
 ```
-
 But that doesn't need to be changed.
 
 

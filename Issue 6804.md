@@ -3,7 +3,7 @@
 archive/issues_006804.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @orlitzky\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @orlitzky\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
     "created_at": "2009-08-22T17:16:29Z",
     "labels": [
         "component: combinatorics",
@@ -22,18 +22,14 @@ CC:  @orlitzky
 
 Either code or docstring is wrong in 4.1.1, "=" vs. ">=":
 
-
 ```
 Returns all the numbers self[i] such that self[i] = i+1
 ```
-
-
 
 ```
 if self[i] >= i + 1:
     res.append(self[i])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6804
 

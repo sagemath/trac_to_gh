@@ -3,7 +3,7 @@
 archive/issues_004258.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @ClementPernet @burcin @jasongrout simonking\n\nKeywords: linbox, linear algebra\n\n\n```\nsage: A = random_matrix(GF(3),2000,2000)\nsage: %time A*A\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 14.69 s,  Wall time: 15.08 s\n```\n\n\n\n```\nsage: %time A._multiply_linbox(A)\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 2.47 s,  Wall time: 2.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4258\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ClementPernet @burcin @jasongrout simonking\n\nKeywords: linbox, linear algebra\n\n```\nsage: A = random_matrix(GF(3),2000,2000)\nsage: %time A*A\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 14.69 s,  Wall time: 15.08 s\n```\n\n```\nsage: %time A._multiply_linbox(A)\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 2.47 s,  Wall time: 2.55 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4258\n\n",
     "created_at": "2008-10-10T08:50:02Z",
     "labels": [
         "component: linear algebra"
@@ -21,7 +21,6 @@ CC:  @ClementPernet @burcin @jasongrout simonking
 
 Keywords: linbox, linear algebra
 
-
 ```
 sage: A = random_matrix(GF(3),2000,2000)
 sage: %time A*A
@@ -29,14 +28,11 @@ sage: %time A*A
 CPU time: 14.69 s,  Wall time: 15.08 s
 ```
 
-
-
 ```
 sage: %time A._multiply_linbox(A)
 2000 x 2000 dense matrix over Finite Field of size 3
 CPU time: 2.47 s,  Wall time: 2.55 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4258
 

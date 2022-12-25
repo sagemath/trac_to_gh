@@ -69,7 +69,7 @@ Attachment [trac-5151-decoder.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_039335.json:
 ```json
 {
-    "body": "Some suggestions:\n\n* The function `weight_order` doesn't get used anywhere, and should probably be removed from the patch. Also, you should remove the commented lines in `syndrome`.\n\n* The docs for `coset_leader` are identical to those for `syndrome` up to the examples. Perhaps this needs to be updated.\n\n* The patch file itself looks funny, since the\n\n```\n# HG changeset patch\n# User David Joyner <wdjoyner@gmail.com>\n# Date 1233523816 18000\n# Node ID d5554b7ab8b14d7b369a200284355d135f319271\n# Parent  d949d3b0e84312be26ede6df676eece1bac738f0\nadded decoder - wdj\n```\n\n   block shows up twice.",
+    "body": "Some suggestions:\n\n* The function `weight_order` doesn't get used anywhere, and should probably be removed from the patch. Also, you should remove the commented lines in `syndrome`.\n\n* The docs for `coset_leader` are identical to those for `syndrome` up to the examples. Perhaps this needs to be updated.\n\n* The patch file itself looks funny, since the\n\n```\n# HG changeset patch\n# User David Joyner <wdjoyner@gmail.com>\n# Date 1233523816 18000\n# Node ID d5554b7ab8b14d7b369a200284355d135f319271\n# Parent  d949d3b0e84312be26ede6df676eece1bac738f0\nadded decoder - wdj\n```\n   block shows up twice.",
     "created_at": "2009-02-04T23:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5151",
     "type": "issue_comment",
@@ -94,7 +94,6 @@ Some suggestions:
 # Parent  d949d3b0e84312be26ede6df676eece1bac738f0
 added decoder - wdj
 ```
-
    block shows up twice.
 
 

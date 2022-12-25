@@ -3,7 +3,7 @@
 archive/issues_002741.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n> >\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n\n> >\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
     "created_at": "2008-03-31T18:19:49Z",
     "labels": [
         "component: graphics"
@@ -21,6 +21,7 @@ CC:  timothyclemans
 
 > >  Is there an easy way to get mesh lines in a plot3d surface?
 
+
 This is not implemented.  I wish you would implement it  :-) 
 
 Robert Bradshaw might have some useful advise.
@@ -28,17 +29,23 @@ Robert Bradshaw might have some useful advise.
 > > Sometimes
 > >  it is hard to visualize the plot (especially when it is printed) without
 > >  the mesh lines.
+
 > >
 > >  If that is easy, what about the possibility of doing some of things that
 > >  Mma does with different types of meshes?  For reference, see:
+
 > >
 > >  http://reference.wolfram.com/mathematica/ref/Mesh.html
+
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html
+
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshShading.html
+
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html
+
 > >
 
 Issue created by migration from https://trac.sagemath.org/ticket/2741
@@ -52,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2741
 archive/issue_comments_018806.json:
 ```json
 {
-    "body": "Well, he already answered my question in the source.\n\nIn sage/sage/plot/plot3d/index_set.pyx, starting at line 658 (in 2.10.4):\n\n```\n        # If we wanted to turn on display of the mesh lines or dots\n        # we would uncomment thse.  This should be determined by\n        # render_params, probably. \n        #s += '\\npmesh %s mesh\\n'%name\n        #s += '\\npmesh %s dots\\n'%name\n```\n\n\nUncommenting the appropriate line does indeed give a mesh in JMOL.  So now the question is how to expose this to the user.  And how to extend it to do nontrivial mesh functions.",
+    "body": "Well, he already answered my question in the source.\n\nIn sage/sage/plot/plot3d/index_set.pyx, starting at line 658 (in 2.10.4):\n\n```\n        # If we wanted to turn on display of the mesh lines or dots\n        # we would uncomment thse.  This should be determined by\n        # render_params, probably. \n        #s += '\\npmesh %s mesh\\n'%name\n        #s += '\\npmesh %s dots\\n'%name\n```\n\nUncommenting the appropriate line does indeed give a mesh in JMOL.  So now the question is how to expose this to the user.  And how to extend it to do nontrivial mesh functions.",
     "created_at": "2008-03-31T18:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2741",
     "type": "issue_comment",
@@ -72,7 +79,6 @@ In sage/sage/plot/plot3d/index_set.pyx, starting at line 658 (in 2.10.4):
         #s += '\npmesh %s mesh\n'%name
         #s += '\npmesh %s dots\n'%name
 ```
-
 
 Uncommenting the appropriate line does indeed give a mesh in JMOL.  So now the question is how to expose this to the user.  And how to extend it to do nontrivial mesh functions.
 

@@ -131,7 +131,7 @@ Nathann
 archive/issue_comments_065378.json:
 ```json
 {
-    "body": "Oh. Actually I already did and he advised to use this very piece of code \n\n```\n#ifdef __GNUC__\n /* Make use of GCC extensions here. */\n#else\n/* Add portable version here */\n#endif\n```\n\n\nGive to Caesar [..] `:-)`\n\nNathann",
+    "body": "Oh. Actually I already did and he advised to use this very piece of code \n\n```\n#ifdef __GNUC__\n /* Make use of GCC extensions here. */\n#else\n/* Add portable version here */\n#endif\n```\n\nGive to Caesar [..] `:-)`\n\nNathann",
     "created_at": "2011-05-03T12:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7656",
     "type": "issue_comment",
@@ -149,7 +149,6 @@ Oh. Actually I already did and he advised to use this very piece of code
 /* Add portable version here */
 #endif
 ```
-
 
 Give to Caesar [..] `:-)`
 

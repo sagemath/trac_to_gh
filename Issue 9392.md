@@ -279,7 +279,7 @@ Well, if GLPK gets a standard package, we should **definitely** remove the `opti
 archive/issue_comments_089285.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n> Well, if GLPK gets a standard package, we should **definitely** remove the `optional` tags, since otherwise these tests are omitted in the usual test process.\n\nThis is addressed at #9432.",
+    "body": "Replying to [comment:9 leif]:\n> Well, if GLPK gets a standard package, we should **definitely** remove the `optional` tags, since otherwise these tests are omitted in the usual test process.\n\n\nThis is addressed at #9432.",
     "created_at": "2010-07-06T04:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
@@ -290,5 +290,6 @@ archive/issue_comments_089285.json:
 
 Replying to [comment:9 leif]:
 > Well, if GLPK gets a standard package, we should **definitely** remove the `optional` tags, since otherwise these tests are omitted in the usual test process.
+
 
 This is addressed at #9432.

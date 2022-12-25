@@ -3,7 +3,7 @@
 archive/issues_004875.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
     "created_at": "2008-12-24T18:51:50Z",
     "labels": [
         "component: graphics",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  wcauchois abergeron mhampton
 
 This is what I get:
-
 
 ```
 sage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)
@@ -47,7 +46,6 @@ RuntimeError                              Traceback (most recent call last)
 RuntimeError: 
 
 ```
-
 
 I will investigate after Christmas, unless someone fixes this by then.
 
@@ -88,7 +86,7 @@ Also this bug seems intermittent.  I often have to repeat the offending line 3 o
 archive/issue_comments_036835.json:
 ```json
 {
-    "body": "This bug was hard to track down! But I believe the root cause is in Polyhedron.render_solid(), when the method gives invalid faces to IndexFaceSet. This causes issues later on, inside IndexFaceSet, when certain CPython methods with little to no error checking index into those faces.\n\nThese faces are incorrect because Polyhedron.triangulated_facial_incidences() does not properly triangulate the facial incidences. Look at this:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).triangulated_facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\n\nTriangles in 3-space should consist of 3 vertices, not 2!\n\ntriangulated_facial_incidences() naively handles the case where `vert_number != self.dim()` (see polyhedra.py:678) by simply appending the original facial incidence.\n\nThe output from facial_incidences() looks like this:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\n\nJust FYI, the facial incidences are computed using cddlib. Here's a log of Sage's interaction with cddlib:\n\n\n```\nsage: P = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nsage: vert_to_ieq(P._vertices, rays=P._rays, cdd_type=P._cdd_type, verbose=True)\nV-representation\nbegin\n3 4 rational\n1 1 2 3 \n1 0 1 0 \n1 1 1 1 \nend\n\n\nInput is a V-representation\nH-representation\nlinearity 1  4\nbegin\n 4 4 rational\n 1 -1 0 0\n 1 1 -1 0\n -1 0 1 0\n 2 -1 -2 1\nend\n\nV-representation\nbegin\n 3 4 rational\n 1 1 2 3\n 1 0 1 0\n 1 1 1 1\nend\n\nHere is the incidence list:\nbegin\n  4    3\n 1 2 : 1 3 \n 2 2 : 1 2 \n 3 2 : 2 3 \n 4 3 : 1 2 3 \nend\n\nHere is the adjacency list:\nbegin\n  4    4\n 1 2 : 2 3 \n 2 2 : 1 3 \n 3 2 : 1 2 \n 4 0 : \nend\n\nA Polyhedron with 3 vertices.\n```\n\n\nI would love to fix this bug, but unfortunately I don't have the mathematical knowledge to improve triangulated_facial_incidences(). Hopefully now that the source of the bug is clear, someone with more intimate knowledge of polyhedra can fix it!",
+    "body": "This bug was hard to track down! But I believe the root cause is in Polyhedron.render_solid(), when the method gives invalid faces to IndexFaceSet. This causes issues later on, inside IndexFaceSet, when certain CPython methods with little to no error checking index into those faces.\n\nThese faces are incorrect because Polyhedron.triangulated_facial_incidences() does not properly triangulate the facial incidences. Look at this:\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).triangulated_facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\nTriangles in 3-space should consist of 3 vertices, not 2!\n\ntriangulated_facial_incidences() naively handles the case where `vert_number != self.dim()` (see polyhedra.py:678) by simply appending the original facial incidence.\n\nThe output from facial_incidences() looks like this:\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\nJust FYI, the facial incidences are computed using cddlib. Here's a log of Sage's interaction with cddlib:\n\n```\nsage: P = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nsage: vert_to_ieq(P._vertices, rays=P._rays, cdd_type=P._cdd_type, verbose=True)\nV-representation\nbegin\n3 4 rational\n1 1 2 3 \n1 0 1 0 \n1 1 1 1 \nend\n\n\nInput is a V-representation\nH-representation\nlinearity 1  4\nbegin\n 4 4 rational\n 1 -1 0 0\n 1 1 -1 0\n -1 0 1 0\n 2 -1 -2 1\nend\n\nV-representation\nbegin\n 3 4 rational\n 1 1 2 3\n 1 0 1 0\n 1 1 1 1\nend\n\nHere is the incidence list:\nbegin\n  4    3\n 1 2 : 1 3 \n 2 2 : 1 2 \n 3 2 : 2 3 \n 4 3 : 1 2 3 \nend\n\nHere is the adjacency list:\nbegin\n  4    4\n 1 2 : 2 3 \n 2 2 : 1 3 \n 3 2 : 1 2 \n 4 0 : \nend\n\nA Polyhedron with 3 vertices.\n```\n\nI would love to fix this bug, but unfortunately I don't have the mathematical knowledge to improve triangulated_facial_incidences(). Hopefully now that the source of the bug is clear, someone with more intimate knowledge of polyhedra can fix it!",
     "created_at": "2009-03-04T07:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
@@ -101,12 +99,10 @@ This bug was hard to track down! But I believe the root cause is in Polyhedron.r
 
 These faces are incorrect because Polyhedron.triangulated_facial_incidences() does not properly triangulate the facial incidences. Look at this:
 
-
 ```
 sage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).triangulated_facial_incidences()
 [[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]
 ```
-
 
 Triangles in 3-space should consist of 3 vertices, not 2!
 
@@ -114,15 +110,12 @@ triangulated_facial_incidences() naively handles the case where `vert_number != 
 
 The output from facial_incidences() looks like this:
 
-
 ```
 sage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).facial_incidences()
 [[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]
 ```
 
-
 Just FYI, the facial incidences are computed using cddlib. Here's a log of Sage's interaction with cddlib:
-
 
 ```
 sage: P = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])
@@ -176,7 +169,6 @@ end
 A Polyhedron with 3 vertices.
 ```
 
-
 I would love to fix this bug, but unfortunately I don't have the mathematical knowledge to improve triangulated_facial_incidences(). Hopefully now that the source of the bug is clear, someone with more intimate knowledge of polyhedra can fix it!
 
 
@@ -186,7 +178,7 @@ I would love to fix this bug, but unfortunately I don't have the mathematical kn
 archive/issue_comments_036836.json:
 ```json
 {
-    "body": "Oh, here's an example of manually altering triangulated_facial_incidences() so that show(fill=True) works:\n\n```\nP = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nP.triangulated_facial_incidences()\n# the method caches its result in this private variable\nP._triangulated_facial_incidences = [[0, [0, 1, 2]]]\nP.show(fill=True)\n```\n",
+    "body": "Oh, here's an example of manually altering triangulated_facial_incidences() so that show(fill=True) works:\n\n```\nP = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nP.triangulated_facial_incidences()\n# the method caches its result in this private variable\nP._triangulated_facial_incidences = [[0, [0, 1, 2]]]\nP.show(fill=True)\n```",
     "created_at": "2009-03-04T07:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
@@ -204,7 +196,6 @@ P.triangulated_facial_incidences()
 P._triangulated_facial_incidences = [[0, [0, 1, 2]]]
 P.show(fill=True)
 ```
-
 
 
 

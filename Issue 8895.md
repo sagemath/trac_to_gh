@@ -3,7 +3,7 @@
 archive/issues_008895.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nThis seems wrong to me:\n\n\n```\nsage: (x * units.length.meter).convert(units.length.mile)\nTraceback (most recent call last):\n...\nValueError: Incompatible units\nsage: (10 * units.length.meter).convert(units.length.mile)\n625/100584*mile\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8895\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nThis seems wrong to me:\n\n```\nsage: (x * units.length.meter).convert(units.length.mile)\nTraceback (most recent call last):\n...\nValueError: Incompatible units\nsage: (10 * units.length.meter).convert(units.length.mile)\n625/100584*mile\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8895\n\n",
     "created_at": "2010-05-05T19:59:18Z",
     "labels": [
         "component: calculus",
@@ -23,7 +23,6 @@ CC:  @jdemeyer
 
 This seems wrong to me:
 
-
 ```
 sage: (x * units.length.meter).convert(units.length.mile)
 Traceback (most recent call last):
@@ -32,7 +31,6 @@ ValueError: Incompatible units
 sage: (10 * units.length.meter).convert(units.length.mile)
 625/100584*mile
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8895
 
@@ -152,7 +150,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081651.json:
 ```json
 {
-    "body": "Still fixed in 5.7:\n\n```\nsage: (x*units.length.meter).convert(units.length.mile)\n(125/201168*x)*mile\nsage: (10*units.length.meter).convert(units.length.mile)\n625/100584*mile\n```\n",
+    "body": "Still fixed in 5.7:\n\n```\nsage: (x*units.length.meter).convert(units.length.mile)\n(125/201168*x)*mile\nsage: (10*units.length.meter).convert(units.length.mile)\n625/100584*mile\n```",
     "created_at": "2013-03-20T23:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8895",
     "type": "issue_comment",
@@ -169,7 +167,6 @@ sage: (x*units.length.meter).convert(units.length.mile)
 sage: (10*units.length.meter).convert(units.length.mile)
 625/100584*mile
 ```
-
 
 
 

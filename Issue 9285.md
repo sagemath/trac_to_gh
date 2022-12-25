@@ -79,7 +79,7 @@ Although it is taking more time. it is not showing now error insufficient memory
 archive/issue_comments_087319.json:
 ```json
 {
-    "body": "On my Asus with i7 quad-core (hyperthreaded to 8) and 8GB RAM and #19821 (and doing other things), I get the following running serially (on 1 thread):\n\n```\nsage: W = CoxeterGroup(['E',6], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 11.2 s, sys: 32 ms, total: 11.2 s\nWall time: 11.2 s\n\nsage: W = CoxeterGroup(['E',7], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 5min 47s, sys: 14.4 ms, total: 5min 47s\nWall time: 5min 46s\n```\n\nSince E<sub>8</sub> is 240 times larger than E<sub>7</sub>, I expect it to take roughly 240 times longer (although from E<sub>6</sub> to E<sub>7</sub>, it only took 31x longer whereas there is a 56x size difference). That is roughly 23 hours... (in reality, it is probably a lot less, but still on the order of hours).",
+    "body": "On my Asus with i7 quad-core (hyperthreaded to 8) and 8GB RAM and #19821 (and doing other things), I get the following running serially (on 1 thread):\n\n```\nsage: W = CoxeterGroup(['E',6], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 11.2 s, sys: 32 ms, total: 11.2 s\nWall time: 11.2 s\n\nsage: W = CoxeterGroup(['E',7], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 5min 47s, sys: 14.4 ms, total: 5min 47s\nWall time: 5min 46s\n```\nSince E<sub>8</sub> is 240 times larger than E<sub>7</sub>, I expect it to take roughly 240 times longer (although from E<sub>6</sub> to E<sub>7</sub>, it only took 31x longer whereas there is a 56x size difference). That is roughly 23 hours... (in reality, it is probably a lot less, but still on the order of hours).",
     "created_at": "2016-01-03T10:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
@@ -101,7 +101,6 @@ sage: %time for x in W: pass
 CPU times: user 5min 47s, sys: 14.4 ms, total: 5min 47s
 Wall time: 5min 46s
 ```
-
 Since E<sub>8</sub> is 240 times larger than E<sub>7</sub>, I expect it to take roughly 240 times longer (although from E<sub>6</sub> to E<sub>7</sub>, it only took 31x longer whereas there is a 56x size difference). That is roughly 23 hours... (in reality, it is probably a lot less, but still on the order of hours).
 
 
@@ -111,7 +110,7 @@ Since E<sub>8</sub> is 240 times larger than E<sub>7</sub>, I expect it to take 
 archive/issue_comments_087320.json:
 ```json
 {
-    "body": "With the recent changes to #19821, I now get:\n\n```\nsage: sage: W = CoxeterGroup(['E',6], base_ring=ZZ)\nsage: sage: %time for x in W: pass\nCPU times: user 4.28 s, sys: 36.1 ms, total: 4.31 s\nWall time: 4.23 s\n\nsage: sage: W = CoxeterGroup(['E',7], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 4min 28s, sys: 20 ms, total: 4min 28s\nWall time: 4min 28s\n```\n",
+    "body": "With the recent changes to #19821, I now get:\n\n```\nsage: sage: W = CoxeterGroup(['E',6], base_ring=ZZ)\nsage: sage: %time for x in W: pass\nCPU times: user 4.28 s, sys: 36.1 ms, total: 4.31 s\nWall time: 4.23 s\n\nsage: sage: W = CoxeterGroup(['E',7], base_ring=ZZ)\nsage: %time for x in W: pass\nCPU times: user 4min 28s, sys: 20 ms, total: 4min 28s\nWall time: 4min 28s\n```",
     "created_at": "2016-01-03T11:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
@@ -136,13 +135,12 @@ Wall time: 4min 28s
 
 
 
-
 ---
 
 archive/issue_comments_087321.json:
 ```json
 {
-    "body": "With #11187, on my laptop (see comment:4) I get\n\n```\nsage: W = ReflectionGroup(['E',8])\nsage: %time for x in W.iteration('depth', False): pas\nCPU times: user 8min 44s, sys: 38.2 ms, total: 8min 44s\nWall time: 8min 43s\n```\n\nThere are a number of changes from #11187 (the cythonization) that could be lifted up to be used for the general Coxeter group iteration.",
+    "body": "With #11187, on my laptop (see comment:4) I get\n\n```\nsage: W = ReflectionGroup(['E',8])\nsage: %time for x in W.iteration('depth', False): pas\nCPU times: user 8min 44s, sys: 38.2 ms, total: 8min 44s\nWall time: 8min 43s\n```\nThere are a number of changes from #11187 (the cythonization) that could be lifted up to be used for the general Coxeter group iteration.",
     "created_at": "2016-04-10T13:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
@@ -159,7 +157,6 @@ sage: %time for x in W.iteration('depth', False): pas
 CPU times: user 8min 44s, sys: 38.2 ms, total: 8min 44s
 Wall time: 8min 43s
 ```
-
 There are a number of changes from #11187 (the cythonization) that could be lifted up to be used for the general Coxeter group iteration.
 
 
@@ -169,7 +166,7 @@ There are a number of changes from #11187 (the cythonization) that could be lift
 archive/issue_comments_087322.json:
 ```json
 {
-    "body": "With Gap3 in Sage, it took 6m20s to go through E<sub>8</sub> on my laptop (serially, comment:4):\n\n```\ngap> i:=0;;\ngap> W:=CoxeterGroup(\"E\",7);;\ngap> ForEachElement(W,function(x)i:=i+1;end);\n```\n",
+    "body": "With Gap3 in Sage, it took 6m20s to go through E<sub>8</sub> on my laptop (serially, comment:4):\n\n```\ngap> i:=0;;\ngap> W:=CoxeterGroup(\"E\",7);;\ngap> ForEachElement(W,function(x)i:=i+1;end);\n```",
     "created_at": "2016-04-10T18:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
@@ -185,4 +182,3 @@ gap> i:=0;;
 gap> W:=CoxeterGroup("E",7);;
 gap> ForEachElement(W,function(x)i:=i+1;end);
 ```
-

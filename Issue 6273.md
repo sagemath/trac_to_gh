@@ -88,7 +88,7 @@ archive/issue_events_014680.json:
 archive/issue_comments_050010.json:
 ```json
 {
-    "body": "REVIEW:\n\nI think it would be better to do\n\n```\n def random_element(self, *args, **kwds)\n```\n\nthen in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n\nThen in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n\n -- William",
+    "body": "REVIEW:\n\nI think it would be better to do\n\n```\n def random_element(self, *args, **kwds)\n```\nthen in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n\nThen in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n\n -- William",
     "created_at": "2009-06-14T10:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ I think it would be better to do
 ```
  def random_element(self, *args, **kwds)
 ```
-
 then in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. 
 
 Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.
@@ -118,7 +117,7 @@ Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).
 archive/issue_comments_050011.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> REVIEW:\n> \n> I think it would be better to do\n> {{{\n>  def random_element(self, *args, **kwds)\n> }}}\n> then in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n> \n> Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n> \n>  -- William\n\nOK, I'll do that.  John",
+    "body": "Replying to [comment:3 was]:\n> REVIEW:\n> \n> I think it would be better to do\n> \n> ```\n>  def random_element(self, *args, **kwds)\n> ```\n> then in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n> \n> Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n> \n>  -- William\n\n\nOK, I'll do that.  John",
     "created_at": "2009-06-14T15:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
@@ -131,14 +130,16 @@ Replying to [comment:3 was]:
 > REVIEW:
 > 
 > I think it would be better to do
-> {{{
+> 
+> ```
 >  def random_element(self, *args, **kwds)
-> }}}
+> ```
 > then in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. 
 > 
 > Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.
 > 
 >  -- William
+
 
 OK, I'll do that.  John
 
@@ -205,7 +206,7 @@ Sorry about that.  I'll review your fix as soon as I can.  John
 archive/issue_comments_050015.json:
 ```json
 {
-    "body": "Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by @JohnCremona created at 2009-06-15 21:53:37\n\nThe new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n\nSo I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n\nUnfortunately:\n\n```\nsage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n    sage: I.basis()\nExpected:\n    [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\nGot:\n    [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n```\n\nso it's still \"needs work\"",
+    "body": "Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by @JohnCremona created at 2009-06-15 21:53:37\n\nThe new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n\nSo I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n\nUnfortunately:\n\n```\nsage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n    sage: I.basis()\nExpected:\n    [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\nGot:\n    [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n```\nso it's still \"needs work\"",
     "created_at": "2009-06-15T21:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
@@ -232,7 +233,6 @@ Expected:
 Got:
     [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]
 ```
-
 so it's still "needs work"
 
 
@@ -242,7 +242,7 @@ so it's still "needs work"
 archive/issue_comments_050016.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> The new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n> \n> So I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n> \n> Unfortunately:\n> {{{\n> sage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n> **********************************************************************\n> File \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n>     sage: I.basis()\n> Expected:\n>     [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\n> Got:\n>     [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n> }}}\n> so it's still \"needs work\"\n\nLet's just comment out both basis lines (since basis works, and it's essentially random).  Can you make non-maximal orders work with the previous code?  If so, do it and I will review.",
+    "body": "Replying to [comment:8 cremona]:\n> The new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n> \n> So I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n> \n> Unfortunately:\n> \n> ```\n> sage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n> **********************************************************************\n> File \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n>     sage: I.basis()\n> Expected:\n>     [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\n> Got:\n>     [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n> ```\n> so it's still \"needs work\"\n\n\nLet's just comment out both basis lines (since basis works, and it's essentially random).  Can you make non-maximal orders work with the previous code?  If so, do it and I will review.",
     "created_at": "2009-06-15T22:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
@@ -257,7 +257,8 @@ Replying to [comment:8 cremona]:
 > So I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.
 > 
 > Unfortunately:
-> {{{
+> 
+> ```
 > sage -t  "devel/sage-6273/sage/rings/number_field/number_field_ideal.py"
 > **********************************************************************
 > File "/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py", line 1045:
@@ -266,8 +267,9 @@ Replying to [comment:8 cremona]:
 >     [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]
 > Got:
 >     [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]
-> }}}
+> ```
 > so it's still "needs work"
+
 
 Let's just comment out both basis lines (since basis works, and it's essentially random).  Can you make non-maximal orders work with the previous code?  If so, do it and I will review.
 

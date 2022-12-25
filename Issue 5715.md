@@ -88,7 +88,7 @@ Resolution: duplicate
 archive/issue_comments_044575.json:
 ```json
 {
-    "body": "Needs work.  There is a *very good* reason that there is a str method for GF(2) -- it's for speed!  Check this out:\n\n```\nBEFORE YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\n```\n\n\n```\nAFTER YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 5.02 s, sys: 0.86 s, total: 5.88 s\nWall time: 5.89 s\n```\n",
+    "body": "Needs work.  There is a *very good* reason that there is a str method for GF(2) -- it's for speed!  Check this out:\n\n```\nBEFORE YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\n```\n\n```\nAFTER YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 5.02 s, sys: 0.86 s, total: 5.88 s\nWall time: 5.89 s\n```",
     "created_at": "2009-04-08T19:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
@@ -107,7 +107,6 @@ CPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s
 Wall time: 0.42 s
 ```
 
-
 ```
 AFTER YOUR PATCH:
 sage: a = random_matrix(GF(2),1000)
@@ -115,7 +114,6 @@ sage: time b = a.str()
 CPU times: user 5.02 s, sys: 0.86 s, total: 5.88 s
 Wall time: 5.89 s
 ```
-
 
 
 
@@ -144,7 +142,7 @@ apply only this patch
 archive/issue_comments_044577.json:
 ```json
 {
-    "body": "I posted a new patch that handles subdivisions. I went ahead and sped up the str method while I was there too. \n\nBefore\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.48 s, sys: 0.01 s, total: 0.49 s\nWall time: 0.50 s\n```\n\n\nAfter\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.02 s\n```\n",
+    "body": "I posted a new patch that handles subdivisions. I went ahead and sped up the str method while I was there too. \n\nBefore\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.48 s, sys: 0.01 s, total: 0.49 s\nWall time: 0.50 s\n```\n\nAfter\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.02 s\n```",
     "created_at": "2009-04-09T07:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
@@ -164,7 +162,6 @@ CPU times: user 0.48 s, sys: 0.01 s, total: 0.49 s
 Wall time: 0.50 s
 ```
 
-
 After
 
 ```
@@ -173,7 +170,6 @@ sage: time b = a.str()
 CPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s
 Wall time: 0.02 s
 ```
-
 
 
 

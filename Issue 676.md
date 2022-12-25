@@ -3,7 +3,7 @@
 archive/issues_000676.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: Solaris 10, python\n\nWe need to add\n\n```\n --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'\n```\n\non Solaris 10 only. It is not needed on Solaris 9.\n\nIssue created by migration from https://trac.sagemath.org/ticket/676\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: Solaris 10, python\n\nWe need to add\n\n```\n --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'\n```\non Solaris 10 only. It is not needed on Solaris 9.\n\nIssue created by migration from https://trac.sagemath.org/ticket/676\n\n",
     "created_at": "2007-09-17T00:44:11Z",
     "labels": [
         "component: packages: standard",
@@ -25,7 +25,6 @@ We need to add
 ```
  --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'
 ```
-
 on Solaris 10 only. It is not needed on Solaris 9.
 
 Issue created by migration from https://trac.sagemath.org/ticket/676
@@ -57,7 +56,7 @@ Changing status from new to assigned.
 archive/issue_comments_003493.json:
 ```json
 {
-    "body": "The problem seems to be Solaris 10 on amd64 specific. See \n\nhttp://www.mail-archive.com/openpkg-cvs`@`openpkg.org/msg13989.html\n\nfor a workaround like:\n\n```\nif [ \".`isainfo -k`\" = .amd64 ]; then\n ADD extra configure flags\nfi\n```\n\n\nCheers,\n\nMichael",
+    "body": "The problem seems to be Solaris 10 on amd64 specific. See \n\nhttp://www.mail-archive.com/openpkg-cvs`@`openpkg.org/msg13989.html\n\nfor a workaround like:\n\n```\nif [ \".`isainfo -k`\" = .amd64 ]; then\n ADD extra configure flags\nfi\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-09-17T15:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/676",
     "type": "issue_comment",
@@ -77,7 +76,6 @@ if [ ".`isainfo -k`" = .amd64 ]; then
  ADD extra configure flags
 fi
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_009652.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @mstreng @lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mstreng @lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
     "created_at": "2010-07-31T20:35:45Z",
     "labels": [
         "component: algebra",
@@ -23,7 +23,6 @@ CC:  @mstreng @lftabera
 
 This code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:
 
-
 ```
 def valuation(m, p):
     if hasattr(m, 'valuation'):
@@ -40,7 +39,6 @@ def valuation(m, p):
         power *= p
     return r
 ```
-
 
 Putting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable "p" as it should.
 
@@ -73,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093481.json:
 ```json
 {
-    "body": "Two questions:\n\n* Is there any case in which any code after `return infinity` is executed and succesful?\n* Is there any case in which any code after `return m.valuation(...)` is executed and useful?\n\nCan't you remove a lot more while you are at it? The code seems to be there to catch off weird unexpected cases that don't have a valuation attribute, but\n\n1. if the case is weird enough, then nothing guarantees that this function terminates\n2. if the case happens to have a negative valuation, then the function returns 0 instead of a negative number\n\nWhile you are at it, I found that the function doesn't handle the valuation attribute of power series well (because it doesn't allow you to specify the (unique) prime p).\n\n\n```\nx = QQ[['x']].gen()\nvaluation(x^2, x)\nTypeError: valuation() takes no arguments (1 given)\nvaluation(x^2)\nTypeError: valuation() takes exactly 2 arguments (1 given)\n```\n\nThe first error is because `PowerSeries.valuation()` takes no arguments; the second is because the global function takes exactly 2 arguments.\n\nHow about defining the global function simply as follows?\n\n```\ndef valuation(m, *args1, **args2):\n    return m.valuation(*args1, **args2)\n```\n\nor\n\n```\ndef valuation(m, *args1, **args2):\n    if m == 0:\n        return sage.rings.all.infinity\n    return m.valuation(*args1, **args2)\n```\n\nI haven't tried and/or ran any doctests with this, but anything that is broken by this isn't good coding practice, as you said :) Plus this fixes my example with `valuation(x^2)`.",
+    "body": "Two questions:\n\n* Is there any case in which any code after `return infinity` is executed and succesful?\n* Is there any case in which any code after `return m.valuation(...)` is executed and useful?\n\nCan't you remove a lot more while you are at it? The code seems to be there to catch off weird unexpected cases that don't have a valuation attribute, but\n\n1. if the case is weird enough, then nothing guarantees that this function terminates\n2. if the case happens to have a negative valuation, then the function returns 0 instead of a negative number\n\nWhile you are at it, I found that the function doesn't handle the valuation attribute of power series well (because it doesn't allow you to specify the (unique) prime p).\n\n```\nx = QQ[['x']].gen()\nvaluation(x^2, x)\nTypeError: valuation() takes no arguments (1 given)\nvaluation(x^2)\nTypeError: valuation() takes exactly 2 arguments (1 given)\n```\nThe first error is because `PowerSeries.valuation()` takes no arguments; the second is because the global function takes exactly 2 arguments.\n\nHow about defining the global function simply as follows?\n\n```\ndef valuation(m, *args1, **args2):\n    return m.valuation(*args1, **args2)\n```\nor\n\n```\ndef valuation(m, *args1, **args2):\n    if m == 0:\n        return sage.rings.all.infinity\n    return m.valuation(*args1, **args2)\n```\nI haven't tried and/or ran any doctests with this, but anything that is broken by this isn't good coding practice, as you said :) Plus this fixes my example with `valuation(x^2)`.",
     "created_at": "2010-08-02T14:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -94,7 +92,6 @@ Can't you remove a lot more while you are at it? The code seems to be there to c
 
 While you are at it, I found that the function doesn't handle the valuation attribute of power series well (because it doesn't allow you to specify the (unique) prime p).
 
-
 ```
 x = QQ[['x']].gen()
 valuation(x^2, x)
@@ -102,7 +99,6 @@ TypeError: valuation() takes no arguments (1 given)
 valuation(x^2)
 TypeError: valuation() takes exactly 2 arguments (1 given)
 ```
-
 The first error is because `PowerSeries.valuation()` takes no arguments; the second is because the global function takes exactly 2 arguments.
 
 How about defining the global function simply as follows?
@@ -111,7 +107,6 @@ How about defining the global function simply as follows?
 def valuation(m, *args1, **args2):
     return m.valuation(*args1, **args2)
 ```
-
 or
 
 ```
@@ -120,7 +115,6 @@ def valuation(m, *args1, **args2):
         return sage.rings.all.infinity
     return m.valuation(*args1, **args2)
 ```
-
 I haven't tried and/or ran any doctests with this, but anything that is broken by this isn't good coding practice, as you said :) Plus this fixes my example with `valuation(x^2)`.
 
 
@@ -152,7 +146,7 @@ I guess your remark about just passing all the aruments to the class method inst
 archive/issue_comments_093483.json:
 ```json
 {
-    "body": "The code is indeed for python integers, and produces the right output in that case as the following shows.\n\n\n```\nsage: a=344r\nsage: type(a)\n<type 'int'>\nsage: hasattr(a,\"valuation\")\nFalse\nsage: valuation(a,2)\n3\n```\n\n\nI agree with you that that code should not be excecuted on general ring elements.\n\nIt crashes on local elements of the symbolic ring for example.\n\n```\nsage: var(\"z\")\nz\nsage: valuation(z^2,z)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Applications/sage/devel/sage-mderickx/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/arith.pyc in valuation(m, p)\n    604     r = 0\n    605     power = p\n--> 606     while not (m % power): # m % power == 0\n    607         r += 1\n    608         power *= p\n\nTypeError: unsupported operand type(s) for %: 'sage.symbolic.expression.Expression' and 'sage.symbolic.expression.Expression'\n```\n\n.\n\nIn your remark 2. The code could also crash, for example try (1/2) % 2.\nI tried to find some real examples in sage, but I can't seem to find how to localize rings in sage. Maybe it's not implemented yet. The only thing I could find is: http://www.sagemath.org/doc/reference/coercion.html#example.\n\nMy failing quest to find other examples than python integers lead me to believe that this code should indeed only be excecuted on python integers.",
+    "body": "The code is indeed for python integers, and produces the right output in that case as the following shows.\n\n```\nsage: a=344r\nsage: type(a)\n<type 'int'>\nsage: hasattr(a,\"valuation\")\nFalse\nsage: valuation(a,2)\n3\n```\n\nI agree with you that that code should not be excecuted on general ring elements.\n\nIt crashes on local elements of the symbolic ring for example.\n\n```\nsage: var(\"z\")\nz\nsage: valuation(z^2,z)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Applications/sage/devel/sage-mderickx/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/arith.pyc in valuation(m, p)\n    604     r = 0\n    605     power = p\n--> 606     while not (m % power): # m % power == 0\n    607         r += 1\n    608         power *= p\n\nTypeError: unsupported operand type(s) for %: 'sage.symbolic.expression.Expression' and 'sage.symbolic.expression.Expression'\n```\n.\n\nIn your remark 2. The code could also crash, for example try (1/2) % 2.\nI tried to find some real examples in sage, but I can't seem to find how to localize rings in sage. Maybe it's not implemented yet. The only thing I could find is: http://www.sagemath.org/doc/reference/coercion.html#example.\n\nMy failing quest to find other examples than python integers lead me to believe that this code should indeed only be excecuted on python integers.",
     "created_at": "2010-08-02T16:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -163,7 +157,6 @@ archive/issue_comments_093483.json:
 
 The code is indeed for python integers, and produces the right output in that case as the following shows.
 
-
 ```
 sage: a=344r
 sage: type(a)
@@ -173,7 +166,6 @@ False
 sage: valuation(a,2)
 3
 ```
-
 
 I agree with you that that code should not be excecuted on general ring elements.
 
@@ -197,7 +189,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand type(s) for %: 'sage.symbolic.expression.Expression' and 'sage.symbolic.expression.Expression'
 ```
-
 .
 
 In your remark 2. The code could also crash, for example try (1/2) % 2.
@@ -248,7 +239,7 @@ archive/issue_comments_093485.json:
 archive/issue_comments_093486.json:
 ```json
 {
-    "body": "Ok so the code behaves buggy for valuation(1r,1r).  I really think we should just let sage integers handle it. I really don't like having unneccery double code. Especially if one of the two is buggy.\n\nBy the way, the problem with valuation(0r,0r) is not just a problem of this code, it also happes with valuation on sage ints. Should we report that as a bug?\n\n\n```\nsage: 0.valuation(0)\n+Infinity\nsage: 8.valuation(0)\nValueError                                Traceback (most recent call last)\n...\nValueError: You can only compute the valuation with respect to a integer larger than 1.\n```\n\nps. if you want a number to not be converted to a sage integer by the preparser you should just put an r behind the number. Or else the preparser will generate the following silly code:\n\n\n```\nsage: preparse(\"valuation(int(1),int(1)\")\n'valuation(int(Integer(1)),int(Integer(1))'\n```\n\nWhat you want is this:\n\n\n```\nsage: preparse(\"valuation(1r,1r)\")\n'valuation(1,1)'\n```\n",
+    "body": "Ok so the code behaves buggy for valuation(1r,1r).  I really think we should just let sage integers handle it. I really don't like having unneccery double code. Especially if one of the two is buggy.\n\nBy the way, the problem with valuation(0r,0r) is not just a problem of this code, it also happes with valuation on sage ints. Should we report that as a bug?\n\n```\nsage: 0.valuation(0)\n+Infinity\nsage: 8.valuation(0)\nValueError                                Traceback (most recent call last)\n...\nValueError: You can only compute the valuation with respect to a integer larger than 1.\n```\nps. if you want a number to not be converted to a sage integer by the preparser you should just put an r behind the number. Or else the preparser will generate the following silly code:\n\n```\nsage: preparse(\"valuation(int(1),int(1)\")\n'valuation(int(Integer(1)),int(Integer(1))'\n```\nWhat you want is this:\n\n```\nsage: preparse(\"valuation(1r,1r)\")\n'valuation(1,1)'\n```",
     "created_at": "2010-08-02T18:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -261,7 +252,6 @@ Ok so the code behaves buggy for valuation(1r,1r).  I really think we should jus
 
 By the way, the problem with valuation(0r,0r) is not just a problem of this code, it also happes with valuation on sage ints. Should we report that as a bug?
 
-
 ```
 sage: 0.valuation(0)
 +Infinity
@@ -270,23 +260,18 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: You can only compute the valuation with respect to a integer larger than 1.
 ```
-
 ps. if you want a number to not be converted to a sage integer by the preparser you should just put an r behind the number. Or else the preparser will generate the following silly code:
-
 
 ```
 sage: preparse("valuation(int(1),int(1)")
 'valuation(int(Integer(1)),int(Integer(1))'
 ```
-
 What you want is this:
-
 
 ```
 sage: preparse("valuation(1r,1r)")
 'valuation(1,1)'
 ```
-
 
 
 
@@ -313,7 +298,7 @@ Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uui
 archive/issue_comments_093488.json:
 ```json
 {
-    "body": "You have added the extra arguments but have not documented them, or given any examples where they might be used.  That's not good!\n\nFor the main code, why not do\n\n```\ntry:\n  return m.valuation(p)\nexcept AttributeError:\n   pass\ntry:\n   return Integer(m).valuation(Integer(p))\nexcept (something):\n   raise an error\n```\n",
+    "body": "You have added the extra arguments but have not documented them, or given any examples where they might be used.  That's not good!\n\nFor the main code, why not do\n\n```\ntry:\n  return m.valuation(p)\nexcept AttributeError:\n   pass\ntry:\n   return Integer(m).valuation(Integer(p))\nexcept (something):\n   raise an error\n```",
     "created_at": "2010-08-22T13:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -336,7 +321,6 @@ try:
 except (something):
    raise an error
 ```
-
 
 
 
@@ -363,7 +347,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_093490.json:
 ```json
 {
-    "body": "Wasn't the whole point of the extra arguments *args1, **args2 to make the global function `valuation` also work for power series? It doesn't in the current Sage, and it wouldn't with John's suggestion, but actually, it also doesn't with Maarten's patch.\n\nTo make it work, remove p. That is, replace \"`p,*args1, **args2`\" by \"`*args1, **args2`\" or simply \"`*args1`\" both times it occurs in your patch.\n\nIn the EXAMPLES block, you could add\n\n```\nsage: y = QQ['y'].gen()\nsage: valuation(y^3, y)\n3\nsage: x = QQ[['x']].gen()\nsage: valuation(x^2)\n2\n```\n\n\nThis doesn't really belong to the topic of this patch, but as you are rewriting the function anyway...",
+    "body": "Wasn't the whole point of the extra arguments *args1, **args2 to make the global function `valuation` also work for power series? It doesn't in the current Sage, and it wouldn't with John's suggestion, but actually, it also doesn't with Maarten's patch.\n\nTo make it work, remove p. That is, replace \"`p,*args1, **args2`\" by \"`*args1, **args2`\" or simply \"`*args1`\" both times it occurs in your patch.\n\nIn the EXAMPLES block, you could add\n\n```\nsage: y = QQ['y'].gen()\nsage: valuation(y^3, y)\n3\nsage: x = QQ[['x']].gen()\nsage: valuation(x^2)\n2\n```\n\nThis doesn't really belong to the topic of this patch, but as you are rewriting the function anyway...",
     "created_at": "2010-08-22T19:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -386,7 +370,6 @@ sage: x = QQ[['x']].gen()
 sage: valuation(x^2)
 2
 ```
-
 
 This doesn't really belong to the topic of this patch, but as you are rewriting the function anyway...
 
@@ -415,7 +398,7 @@ That looks better!
 archive/issue_comments_093492.json:
 ```json
 {
-    "body": "I added a second patch which takes most of the comments into account. (please only apply the second patch, it got added as a second patch since I forgot to check the \"replace existing file\" box).\n\nI didn't do anything with the \"For the main code, why not !do:\" suggestion since to me it seemed to do the same thing but then with a different coding style. (My version is the \"look before you leap version\", and yours the \"Easier to ask for forgiveness than permission.\"). If there are reasons to chose one above the other I would certainly do that. I know that my code will raise an attribute error sometimes, an error that you would rewrite in your case. But I guess that error should be not confusing at all to the enduser.\n\n\n```\n\nsage: valuation(graphs.!PetersenGraph())\n\n---------------------------------------------------------------------------\n\n!AttributeError \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Traceback (most recent call last)\n\n/Users/maarten/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/arith.pyc in valuation(m, *args1, **args2)\n\n\u00a0\u00a0 \u00a0600 \u00a0 \u00a0 if isinstance(m,(int,long)):\n\n\u00a0\u00a0 \u00a0601 \u00a0 \u00a0 \u00a0 \u00a0 m=Integer(m)\n\n--> 602 \u00a0 \u00a0 return m.valuation(*args1, **args2)\n\n\u00a0\u00a0 \u00a0603\u00a0\n\n\u00a0\u00a0 \u00a0604 def prime_powers(start, stop=None):\n\n!AttributeError: 'Graph' object has no attribute 'valuation'\n\nsage:\u00a0\n\n```\n",
+    "body": "I added a second patch which takes most of the comments into account. (please only apply the second patch, it got added as a second patch since I forgot to check the \"replace existing file\" box).\n\nI didn't do anything with the \"For the main code, why not !do:\" suggestion since to me it seemed to do the same thing but then with a different coding style. (My version is the \"look before you leap version\", and yours the \"Easier to ask for forgiveness than permission.\"). If there are reasons to chose one above the other I would certainly do that. I know that my code will raise an attribute error sometimes, an error that you would rewrite in your case. But I guess that error should be not confusing at all to the enduser.\n\n```\n\nsage: valuation(graphs.!PetersenGraph())\n\n---------------------------------------------------------------------------\n\n!AttributeError \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Traceback (most recent call last)\n\n/Users/maarten/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/arith.pyc in valuation(m, *args1, **args2)\n\n\u00a0\u00a0 \u00a0600 \u00a0 \u00a0 if isinstance(m,(int,long)):\n\n\u00a0\u00a0 \u00a0601 \u00a0 \u00a0 \u00a0 \u00a0 m=Integer(m)\n\n--> 602 \u00a0 \u00a0 return m.valuation(*args1, **args2)\n\n\u00a0\u00a0 \u00a0603\u00a0\n\n\u00a0\u00a0 \u00a0604 def prime_powers(start, stop=None):\n\n!AttributeError: 'Graph' object has no attribute 'valuation'\n\nsage:\u00a0\n\n```",
     "created_at": "2010-09-06T17:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -427,7 +410,6 @@ archive/issue_comments_093492.json:
 I added a second patch which takes most of the comments into account. (please only apply the second patch, it got added as a second patch since I forgot to check the "replace existing file" box).
 
 I didn't do anything with the "For the main code, why not !do:" suggestion since to me it seemed to do the same thing but then with a different coding style. (My version is the "look before you leap version", and yours the "Easier to ask for forgiveness than permission."). If there are reasons to chose one above the other I would certainly do that. I know that my code will raise an attribute error sometimes, an error that you would rewrite in your case. But I guess that error should be not confusing at all to the enduser.
-
 
 ```
 
@@ -459,7 +441,6 @@ sage: 
 
 
 
-
 ---
 
 archive/issue_comments_093493.json:
@@ -483,7 +464,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093494.json:
 ```json
 {
-    "body": "You have to import \"Integer\" somewhere in the code:\n\n\n```\nsage: a=int(3)\nsage: valuation(a,2)\n...\n--> 695         m=Integer(m)\n...\nNameError: global name 'Integer' is not defined\n```\n\n\nAdd a doctest that uses an 'int' as argument to check that the previous code will work.\n\nIn the documentation, it says that valuation os zero is +Infinity but valuation with respect to zero is an error. However:\n\n\n```\nsage: valuation(0,0)\n+Infinity\nsage: K=QQ['x']\nsage: x=K.gen()\nsage: valuation(x,K(0))\n...\nPariError\nsage: valuation(K(0),K(0))\n+Infinity\n```\n",
+    "body": "You have to import \"Integer\" somewhere in the code:\n\n```\nsage: a=int(3)\nsage: valuation(a,2)\n...\n--> 695         m=Integer(m)\n...\nNameError: global name 'Integer' is not defined\n```\n\nAdd a doctest that uses an 'int' as argument to check that the previous code will work.\n\nIn the documentation, it says that valuation os zero is +Infinity but valuation with respect to zero is an error. However:\n\n```\nsage: valuation(0,0)\n+Infinity\nsage: K=QQ['x']\nsage: x=K.gen()\nsage: valuation(x,K(0))\n...\nPariError\nsage: valuation(K(0),K(0))\n+Infinity\n```",
     "created_at": "2010-09-08T13:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -494,7 +475,6 @@ archive/issue_comments_093494.json:
 
 You have to import "Integer" somewhere in the code:
 
-
 ```
 sage: a=int(3)
 sage: valuation(a,2)
@@ -504,11 +484,9 @@ sage: valuation(a,2)
 NameError: global name 'Integer' is not defined
 ```
 
-
 Add a doctest that uses an 'int' as argument to check that the previous code will work.
 
 In the documentation, it says that valuation os zero is +Infinity but valuation with respect to zero is an error. However:
-
 
 ```
 sage: valuation(0,0)
@@ -521,7 +499,6 @@ PariError
 sage: valuation(K(0),K(0))
 +Infinity
 ```
-
 
 
 
@@ -566,7 +543,7 @@ Why do you let the code work for float, but not for RealNumber? (I wouldn't let 
 archive/issue_comments_093497.json:
 ```json
 {
-    "body": "Replying to [comment:14 mstreng]:\n> Why do you let the code work for float, but not for RealNumber? (I wouldn't let it work for float at all.)\n\nCould you elaborate that? For me, the code fails for floats with an AttributeError exception (as well as RealNumber).",
+    "body": "Replying to [comment:14 mstreng]:\n> Why do you let the code work for float, but not for RealNumber? (I wouldn't let it work for float at all.)\n\n\nCould you elaborate that? For me, the code fails for floats with an AttributeError exception (as well as RealNumber).",
     "created_at": "2010-09-08T15:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -577,6 +554,7 @@ archive/issue_comments_093497.json:
 
 Replying to [comment:14 mstreng]:
 > Why do you let the code work for float, but not for RealNumber? (I wouldn't let it work for float at all.)
+
 
 Could you elaborate that? For me, the code fails for floats with an AttributeError exception (as well as RealNumber).
 
@@ -724,7 +702,7 @@ Is there somewhere in the math literature a definition of what a valuation shoul
 archive/issue_comments_093504.json:
 ```json
 {
-    "body": "oops, now with the right formatting:\n\n```\n\n sage: for i in R: \n....:     for j in R: \n....:         if not valuation(i,Integer(3))+valuation(j,Integer(3))==valuation(i*j,Integer(3)):\n....:             print i,j\n....:             \n3 3\n3 6\n6 3\n6 6\n```\n",
+    "body": "oops, now with the right formatting:\n\n```\n\n sage: for i in R: \n....:     for j in R: \n....:         if not valuation(i,Integer(3))+valuation(j,Integer(3))==valuation(i*j,Integer(3)):\n....:             print i,j\n....:             \n3 3\n3 6\n6 3\n6 6\n```",
     "created_at": "2010-09-10T12:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
@@ -747,7 +725,6 @@ oops, now with the right formatting:
 6 3
 6 6
 ```
-
 
 
 

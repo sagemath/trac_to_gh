@@ -3,7 +3,7 @@
 archive/issues_002523.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
     "created_at": "2008-03-15T00:01:36Z",
     "labels": [
         "component: number theory",
@@ -18,14 +18,12 @@ archive/issues_002523.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()
 Traceback (most recent call last):
 ...
 KeyError: 11
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2523
 
@@ -74,7 +72,7 @@ Changing assignee from @williamstein to @craigcitro.
 archive/issue_comments_017171.json:
 ```json
 {
-    "body": "I've done a bit of digging and gotten a bit closer to the source of the problem (which I think is actually in congroup.py):\n\n\n```\nsage: G = GammaH(6, [5])\nsage: M = ModularSymbols(G, 2)\nsage: B = M.boundary_space()\nsage: bas = M.basis(); bas\n((1,0), (3,2), (4,1))\nsage: B(bas[0])\n[Infinity] - [0]\nsage: B(bas[2])\n[0] - [-1/2]\nsage: B(bas[1])\nTraceback (most recent call last):\n...\nKeyError: 3\n```\n",
+    "body": "I've done a bit of digging and gotten a bit closer to the source of the problem (which I think is actually in congroup.py):\n\n```\nsage: G = GammaH(6, [5])\nsage: M = ModularSymbols(G, 2)\nsage: B = M.boundary_space()\nsage: bas = M.basis(); bas\n((1,0), (3,2), (4,1))\nsage: B(bas[0])\n[Infinity] - [0]\nsage: B(bas[2])\n[0] - [-1/2]\nsage: B(bas[1])\nTraceback (most recent call last):\n...\nKeyError: 3\n```",
     "created_at": "2008-04-23T02:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ archive/issue_comments_017171.json:
 ```
 
 I've done a bit of digging and gotten a bit closer to the source of the problem (which I think is actually in congroup.py):
-
 
 ```
 sage: G = GammaH(6, [5])
@@ -101,7 +98,6 @@ Traceback (most recent call last):
 ...
 KeyError: 3
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008509.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\n## Hardware\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs.\n* 2 GB RAM\n \n == Software ==\n* Solaris 10 03/2005 (the first release)\n* Sage 4.3.4.alpha1 (The first Sage release to build and pass all doctests on Solaris)\n\n## The problem\n\nDespite the fact that Sage builds and pass all doctests (including the long ones), installing optional packages is problematic, as it would appear something is calling 'grep' with the '-o' option which is not POSIX compatible\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html\n\nThis causes the problems below:\n\n\n```\nsage: for X in optional_packages()[1]:  install_package(X)\n....: \nForce installing ace-5.0.p0\nCalling sage-spkg on ace-5.0.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nace-5.0.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of ace-5.0.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file ace-5.0.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of ace-5.0.p0\nCould not find a version for ace-5.0.p0.\n\nForce installing biopython-1.53.p0\nCalling sage-spkg on biopython-1.53.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nbiopython-1.53.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of biopython-1.53.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file biopython-1.53.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of biopython-1.53.p0\nCould not find a version for biopython-1.53.p0.\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8509\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\n## Hardware\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs.\n* 2 GB RAM\n \n == Software ==\n* Solaris 10 03/2005 (the first release)\n* Sage 4.3.4.alpha1 (The first Sage release to build and pass all doctests on Solaris)\n\n## The problem\n\nDespite the fact that Sage builds and pass all doctests (including the long ones), installing optional packages is problematic, as it would appear something is calling 'grep' with the '-o' option which is not POSIX compatible\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html\n\nThis causes the problems below:\n\n```\nsage: for X in optional_packages()[1]:  install_package(X)\n....: \nForce installing ace-5.0.p0\nCalling sage-spkg on ace-5.0.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nace-5.0.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of ace-5.0.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file ace-5.0.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of ace-5.0.p0\nCould not find a version for ace-5.0.p0.\n\nForce installing biopython-1.53.p0\nCalling sage-spkg on biopython-1.53.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nbiopython-1.53.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of biopython-1.53.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file biopython-1.53.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of biopython-1.53.p0\nCould not find a version for biopython-1.53.p0.\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8509\n\n",
     "created_at": "2010-03-12T17:55:33Z",
     "labels": [
         "component: porting: solaris",
@@ -37,7 +37,6 @@ http://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html
 
 This causes the problems below:
 
-
 ```
 sage: for X in optional_packages()[1]:  install_package(X)
 ....: 
@@ -69,7 +68,6 @@ Usage: grep -hblcnsviw pattern file . . .
 Searching for latest version of biopython-1.53.p0
 Could not find a version for biopython-1.53.p0.
 ```
-
 
 
 
@@ -198,7 +196,7 @@ Mercurial patch (replaces the earlier one, which was just from 'diff')
 archive/issue_comments_076708.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n> Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch\n\nDave, $SAGE_ROOT/local/bin is not under hg.\nYou should create a  patch for the corresponding source place, i.e. \nfor a script in sage_scripts-4.3.4.alpha1.spkg\n\nThat's the only way to make it into the release, AFAIK.",
+    "body": "Replying to [comment:3 drkirkby]:\n> Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch\n\n\nDave, $SAGE_ROOT/local/bin is not under hg.\nYou should create a  patch for the corresponding source place, i.e. \nfor a script in sage_scripts-4.3.4.alpha1.spkg\n\nThat's the only way to make it into the release, AFAIK.",
     "created_at": "2010-03-15T07:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
@@ -209,6 +207,7 @@ archive/issue_comments_076708.json:
 
 Replying to [comment:3 drkirkby]:
 > Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch
+
 
 Dave, $SAGE_ROOT/local/bin is not under hg.
 You should create a  patch for the corresponding source place, i.e. 
@@ -259,7 +258,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076711.json:
 ```json
 {
-    "body": "Replying to [comment:4 dimpase]:\n> Replying to [comment:3 drkirkby]:\n> > Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch\n> \n> Dave, $SAGE_ROOT/local/bin is not under hg.\n\nIt is, actually; as I said before, it's the \"scripts\" repository discussed [in the Sage developer's guide](http://www.sagemath.org/doc/developer/producing_patches.html#using-mercurial-with-other-sage-repositories).",
+    "body": "Replying to [comment:4 dimpase]:\n> Replying to [comment:3 drkirkby]:\n> > Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch\n\n> \n> Dave, $SAGE_ROOT/local/bin is not under hg.\n\n\nIt is, actually; as I said before, it's the \"scripts\" repository discussed [in the Sage developer's guide](http://www.sagemath.org/doc/developer/producing_patches.html#using-mercurial-with-other-sage-repositories).",
     "created_at": "2010-03-15T14:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
@@ -271,8 +270,10 @@ archive/issue_comments_076711.json:
 Replying to [comment:4 dimpase]:
 > Replying to [comment:3 drkirkby]:
 > > Oops, my mistake. I was not aware of that. I'm attaching a Mercurial patch
+
 > 
 > Dave, $SAGE_ROOT/local/bin is not under hg.
+
 
 It is, actually; as I said before, it's the "scripts" repository discussed [in the Sage developer's guide](http://www.sagemath.org/doc/developer/producing_patches.html#using-mercurial-with-other-sage-repositories).
 
@@ -367,7 +368,7 @@ archive/issue_comments_076715.json:
 archive/issue_comments_076716.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n\n> \n> All we need now is someone to review it! Since it was your idea, and I tested and wrote it, then neither of us can review it. \n> \n\nWorks on t2 (and on a Linux install, just to check it doesn't break anything badly). \nSo, thumbs up!",
+    "body": "Replying to [comment:8 drkirkby]:\n\n> \n> All we need now is someone to review it! Since it was your idea, and I tested and wrote it, then neither of us can review it. \n> \n\n\nWorks on t2 (and on a Linux install, just to check it doesn't break anything badly). \nSo, thumbs up!",
     "created_at": "2010-03-17T03:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
@@ -381,6 +382,7 @@ Replying to [comment:8 drkirkby]:
 > 
 > All we need now is someone to review it! Since it was your idea, and I tested and wrote it, then neither of us can review it. 
 > 
+
 
 Works on t2 (and on a Linux install, just to check it doesn't break anything badly). 
 So, thumbs up!

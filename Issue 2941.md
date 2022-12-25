@@ -108,7 +108,7 @@ archive/issue_events_006725.json:
 archive/issue_comments_020216.json:
 ```json
 {
-    "body": "Replying to [comment:1 certik]:\n> **Important note**: execute this command\n> \n> rm -r sage/local/lib/python2.5/site-packages/sympy*\n> \n> before installing the spkg, otherwise sympy will be broken.\n\nHi Ondrej,\n\nthis must be done in spkg-install, otherwise it will break people's install. \n\nOn another note: There already way #1633 assigned to you as the sympy upgrade ticket. I have closed that as a duplicate.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 certik]:\n> **Important note**: execute this command\n> \n> rm -r sage/local/lib/python2.5/site-packages/sympy*\n> \n> before installing the spkg, otherwise sympy will be broken.\n\n\nHi Ondrej,\n\nthis must be done in spkg-install, otherwise it will break people's install. \n\nOn another note: There already way #1633 assigned to you as the sympy upgrade ticket. I have closed that as a duplicate.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-16T09:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
@@ -123,6 +123,7 @@ Replying to [comment:1 certik]:
 > rm -r sage/local/lib/python2.5/site-packages/sympy*
 > 
 > before installing the spkg, otherwise sympy will be broken.
+
 
 Hi Ondrej,
 
@@ -195,7 +196,7 @@ diff -r 029e5541f507 -r 2111fce6f538 spkg-install
 archive/issue_comments_020219.json:
 ```json
 {
-    "body": "The patch got screwed up, so again:\n\n\n```\ndiff -r 029e5541f507 -r 2111fce6f538 spkg-install\n--- a/spkg-install\tWed Apr 16 11:28:19 2008 +0200\n+++ b/spkg-install\tWed Apr 16 13:44:47 2008 +0200\n@@ -1,4 +1,14 @@\n #!/bin/sh\n+\n+# We need to delete the old path, so that there are no leftovers from the\n+# previous installation, otherwise sympy could get broken (for example by\n+# importing some local files instead of the standard library ones...)\n+if [ \"$SAGE_ROOT\" = \"\" ]; then\n+    echo \"Please set the SAGE_ROOT variable\"\n+    exit 1\n+fi\n+echo \"Deleting $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\"\n+rm -rf $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\n \n cd src/\n```\n",
+    "body": "The patch got screwed up, so again:\n\n```\ndiff -r 029e5541f507 -r 2111fce6f538 spkg-install\n--- a/spkg-install\tWed Apr 16 11:28:19 2008 +0200\n+++ b/spkg-install\tWed Apr 16 13:44:47 2008 +0200\n@@ -1,4 +1,14 @@\n #!/bin/sh\n+\n+# We need to delete the old path, so that there are no leftovers from the\n+# previous installation, otherwise sympy could get broken (for example by\n+# importing some local files instead of the standard library ones...)\n+if [ \"$SAGE_ROOT\" = \"\" ]; then\n+    echo \"Please set the SAGE_ROOT variable\"\n+    exit 1\n+fi\n+echo \"Deleting $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\"\n+rm -rf $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\n \n cd src/\n```",
     "created_at": "2008-04-16T11:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
@@ -205,7 +206,6 @@ archive/issue_comments_020219.json:
 ```
 
 The patch got screwed up, so again:
-
 
 ```
 diff -r 029e5541f507 -r 2111fce6f538 spkg-install
@@ -226,7 +226,6 @@ diff -r 029e5541f507 -r 2111fce6f538 spkg-install
  
  cd src/
 ```
-
 
 
 

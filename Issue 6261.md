@@ -50,7 +50,7 @@ Attachment [trac-6261.patch](tarball://root/attachments/some-uuid/ticket6261/tra
 archive/issue_comments_049898.json:
 ```json
 {
-    "body": "This looks good to me.  One question:  in the line\n\n```\nppart = p**Integer(a).exact_log(p)\n```\n\ndo you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?\nIf so, please change this to \"positive review\".\n\nRemark:  I have a Magma implementation of an algorithm to determine when a polynomial over ZZ is cyclotomic (algorithm of Smyth and Beukers).  That could be used to extend this function to matrices over ZZ, at least.",
+    "body": "This looks good to me.  One question:  in the line\n\n```\nppart = p**Integer(a).exact_log(p)\n```\ndo you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?\nIf so, please change this to \"positive review\".\n\nRemark:  I have a Magma implementation of an algorithm to determine when a polynomial over ZZ is cyclotomic (algorithm of Smyth and Beukers).  That could be used to extend this function to matrices over ZZ, at least.",
     "created_at": "2009-06-14T16:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6261",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ This looks good to me.  One question:  in the line
 ```
 ppart = p**Integer(a).exact_log(p)
 ```
-
 do you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?
 If so, please change this to "positive review".
 
@@ -77,7 +76,7 @@ Remark:  I have a Magma implementation of an algorithm to determine when a polyn
 archive/issue_comments_049899.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> This looks good to me.  One question:  in the line\n> {{{\n> ppart = p**Integer(a).exact_log(p)\n> }}}\n> do you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?\n> If so, please change this to \"positive review\".\n\nYes, it's what I mean. Thanks for the review.",
+    "body": "Replying to [comment:2 cremona]:\n> This looks good to me.  One question:  in the line\n> \n> ```\n> ppart = p**Integer(a).exact_log(p)\n> ```\n> do you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?\n> If so, please change this to \"positive review\".\n\n\nYes, it's what I mean. Thanks for the review.",
     "created_at": "2009-06-16T20:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6261",
     "type": "issue_comment",
@@ -88,11 +87,13 @@ archive/issue_comments_049899.json:
 
 Replying to [comment:2 cremona]:
 > This looks good to me.  One question:  in the line
-> {{{
+> 
+> ```
 > ppart = p**Integer(a).exact_log(p)
-> }}}
+> ```
 > do you really mean ppart to be the largest power of p which is <= a, rather than the pargest power which divides a?
 > If so, please change this to "positive review".
+
 
 Yes, it's what I mean. Thanks for the review.
 

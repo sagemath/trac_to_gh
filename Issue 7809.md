@@ -69,7 +69,7 @@ Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uui
 archive/issue_comments_067443.json:
 ```json
 {
-    "body": "Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n\n```\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n```\n\nAlso, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n\n```\nsage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\nTypeError: reduce() of empty sequence with no initial value\n```\n",
+    "body": "Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n\n```\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n```\nAlso, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n\n```\nsage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\nTypeError: reduce() of empty sequence with no initial value\n```",
     "created_at": "2010-01-04T16:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -84,14 +84,12 @@ Looks like this is the only place equify is used, so I think this does not requi
 sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
 sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
 ```
-
 Also, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?
 
 ```
 sage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))
 TypeError: reduce() of empty sequence with no initial value
 ```
-
 
 
 
@@ -118,7 +116,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067445.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> {{{\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> }}}\n\n\nDoes this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n\n\n> Also, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n> {{{\n> sage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\n> TypeError: reduce() of empty sequence with no initial value\n> }}}\n\nThis is not related to this ticket.  The error is caused by a bug in fast_callable--see #7810.",
+    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> \n> ```\n> sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> ```\n\n\n\nDoes this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n\n\n> Also, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n> \n> ```\n> sage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\n> TypeError: reduce() of empty sequence with no initial value\n> ```\n\n\nThis is not related to this ticket.  The error is caused by a bug in fast_callable--see #7810.",
     "created_at": "2010-01-04T16:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -129,20 +127,24 @@ archive/issue_comments_067445.json:
 
 Replying to [comment:2 kcrisman]:
 > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
-> {{{
-> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> }}}
+> 
+> ```
+> sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> ```
+
 
 
 Does this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.
 
 
 > Also, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?
-> {{{
+> 
+> ```
 > sage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))
 > TypeError: reduce() of empty sequence with no initial value
-> }}}
+> ```
+
 
 This is not related to this ticket.  The error is caused by a bug in fast_callable--see #7810.
 
@@ -153,7 +155,7 @@ This is not related to this ticket.  The error is caused by a bug in fast_callab
 archive/issue_comments_067446.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> Replying to [comment:2 kcrisman]:\n> > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> > {{{\n> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > }}}\n> \n> \n> Does this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n> \n\nI didn't bother to check, but it seems like this was the concern, or?  At any rate there should be something documented that didn't work before and now does.  Otherwise I don't quite get why we are removing the potential for passing in the variables here.",
+    "body": "Replying to [comment:3 jason]:\n> Replying to [comment:2 kcrisman]:\n> > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> > \n> > ```\n> > sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > ```\n\n> \n> \n> Does this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n> \n\n\nI didn't bother to check, but it seems like this was the concern, or?  At any rate there should be something documented that didn't work before and now does.  Otherwise I don't quite get why we are removing the potential for passing in the variables here.",
     "created_at": "2010-01-04T16:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -165,14 +167,17 @@ archive/issue_comments_067446.json:
 Replying to [comment:3 jason]:
 > Replying to [comment:2 kcrisman]:
 > > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
-> > {{{
-> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> > }}}
+> > 
+> > ```
+> > sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> > sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> > ```
+
 > 
 > 
 > Does this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.
 > 
+
 
 I didn't bother to check, but it seems like this was the concern, or?  At any rate there should be something documented that didn't work before and now does.  Otherwise I don't quite get why we are removing the potential for passing in the variables here.
 
@@ -183,7 +188,7 @@ I didn't bother to check, but it seems like this was the concern, or?  At any ra
 archive/issue_comments_067447.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> {{{\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> }}}\n\nActually, the second example above produces the wrong image even after the patch is applied!",
+    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> \n> ```\n> sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> ```\n\n\nActually, the second example above produces the wrong image even after the patch is applied!",
     "created_at": "2010-01-04T16:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -194,10 +199,12 @@ archive/issue_comments_067447.json:
 
 Replying to [comment:2 kcrisman]:
 > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
-> {{{
-> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
-> }}}
+> 
+> ```
+> sage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> sage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)
+> ```
+
 
 Actually, the second example above produces the wrong image even after the patch is applied!
 
@@ -284,7 +291,7 @@ Well, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a secon
 archive/issue_comments_067452.json:
 ```json
 {
-    "body": "Before the simplify-negative-code:\n\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.96 s, sys: 0.08 s, total: 2.04 s\nWall time: 2.38 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 5.92 s, sys: 0.08 s, total: 5.99 s\nWall time: 6.30 s\n```\n\n\nAfter:\n\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.27 s, sys: 0.02 s, total: 1.29 s\nWall time: 1.36 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 2.49 s, sys: 0.04 s, total: 2.53 s\nWall time: 2.67 s\n```\n",
+    "body": "Before the simplify-negative-code:\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.96 s, sys: 0.08 s, total: 2.04 s\nWall time: 2.38 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 5.92 s, sys: 0.08 s, total: 5.99 s\nWall time: 6.30 s\n```\n\nAfter:\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.27 s, sys: 0.02 s, total: 1.29 s\nWall time: 1.36 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 2.49 s, sys: 0.04 s, total: 2.53 s\nWall time: 2.67 s\n```",
     "created_at": "2010-01-04T18:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -295,7 +302,6 @@ archive/issue_comments_067452.json:
 
 Before the simplify-negative-code:
 
-
 ```
 sage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)
 CPU times: user 1.96 s, sys: 0.08 s, total: 2.04 s
@@ -305,9 +311,7 @@ CPU times: user 5.92 s, sys: 0.08 s, total: 5.99 s
 Wall time: 6.30 s
 ```
 
-
 After:
-
 
 ```
 sage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)
@@ -317,7 +321,6 @@ sage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot
 CPU times: user 2.49 s, sys: 0.04 s, total: 2.53 s
 Wall time: 2.67 s
 ```
-
 
 
 
@@ -368,7 +371,7 @@ Other than that, positive review.
 archive/issue_comments_067455.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n\n> Be sure to include some test where the order of coordinates is switched. \n\nThe old code gave the correct result too, I think.  I consider this patch more a refactoring of code.  The error that I corrected didn't show up because I think we were more careful in another part of the code.\n\nJason",
+    "body": "Replying to [comment:11 kcrisman]:\n\n> Be sure to include some test where the order of coordinates is switched. \n\n\nThe old code gave the correct result too, I think.  I consider this patch more a refactoring of code.  The error that I corrected didn't show up because I think we were more careful in another part of the code.\n\nJason",
     "created_at": "2010-01-04T19:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
@@ -380,6 +383,7 @@ archive/issue_comments_067455.json:
 Replying to [comment:11 kcrisman]:
 
 > Be sure to include some test where the order of coordinates is switched. 
+
 
 The old code gave the correct result too, I think.  I consider this patch more a refactoring of code.  The error that I corrected didn't show up because I think we were more careful in another part of the code.
 

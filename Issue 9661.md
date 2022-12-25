@@ -3,7 +3,7 @@
 archive/issues_009661.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\nsage: pari('kill(x)')\n0\n```\n\n\nIt should be possible to fix this by checking for `gnil` as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
+    "body": "Assignee: @williamstein\n\nWhen executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\nsage: pari('kill(x)')\n0\n```\n\nIt should be possible to fix this by checking for `gnil` as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
     "created_at": "2010-08-01T16:47:28Z",
     "labels": [
         "component: interfaces",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 When executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
 
-
 ```
 gp> kill(x)   /* No output */
 ```
-
 
 But in Sage:
 
@@ -34,7 +32,6 @@ sage: gp('kill(x)')
 sage: pari('kill(x)')
 0
 ```
-
 
 It should be possible to fix this by checking for `gnil` as return value.
 
@@ -157,7 +154,7 @@ Tests all pass on 4.5.2.rc0 (64-bit ubuntu).
 archive/issue_comments_093622.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> I'm testing this now on 4.5.2.rc0.  Can you say why you included _sig_off ?  (I do not claim to understand how Sage/pari signal handling works.)  Without this patch there is a return with no _sig_off (unless the call to new_gen does that.)\n\nIt's exactly as you say, new_gen() calls _sig_off.",
+    "body": "Replying to [comment:5 cremona]:\n> I'm testing this now on 4.5.2.rc0.  Can you say why you included _sig_off ?  (I do not claim to understand how Sage/pari signal handling works.)  Without this patch there is a return with no _sig_off (unless the call to new_gen does that.)\n\n\nIt's exactly as you say, new_gen() calls _sig_off.",
     "created_at": "2010-08-03T07:07:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
@@ -168,6 +165,7 @@ archive/issue_comments_093622.json:
 
 Replying to [comment:5 cremona]:
 > I'm testing this now on 4.5.2.rc0.  Can you say why you included _sig_off ?  (I do not claim to understand how Sage/pari signal handling works.)  Without this patch there is a return with no _sig_off (unless the call to new_gen does that.)
+
 
 It's exactly as you say, new_gen() calls _sig_off.
 

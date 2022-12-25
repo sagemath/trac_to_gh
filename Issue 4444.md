@@ -3,7 +3,7 @@
 archive/issues_004444.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nIn `setup.py`, there are several source files which appear in the `sources` list more than once. For instance, the entry for `sage.rings.rational` looks like:\n\n\n```\nExtension('sage.rings.rational',\n           sources = ['sage/rings/rational.pyx',\n                      'sage/ext/arith.pyx', \\\n                      'sage/rings/integer.pyx'],\n           libraries=['ntl', 'gmp'])\n```\n\n\nThe other two `.pyx` files that appear there were added in the old days, when Pyrex needed us to do this in order to compile `rational.pyx` correctly. Note that because of this, several files in the Sage library get compiled multiple times. (For instance, try changing `sage/ext/arith.pyx` and doing a `sage -br`.) We should fix this.\n\nI've already made the changes to `setup.py`, but I really need to do a `sage -ba` to feel like I've appropriately tested this. I'll do that tomorrow. I'm going to make this ticket dependent on #4443, since I already fixed the situation for `sage/ext/arith.pyx` while working on that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4444\n\n",
+    "body": "Assignee: @craigcitro\n\nIn `setup.py`, there are several source files which appear in the `sources` list more than once. For instance, the entry for `sage.rings.rational` looks like:\n\n```\nExtension('sage.rings.rational',\n           sources = ['sage/rings/rational.pyx',\n                      'sage/ext/arith.pyx', \\\n                      'sage/rings/integer.pyx'],\n           libraries=['ntl', 'gmp'])\n```\n\nThe other two `.pyx` files that appear there were added in the old days, when Pyrex needed us to do this in order to compile `rational.pyx` correctly. Note that because of this, several files in the Sage library get compiled multiple times. (For instance, try changing `sage/ext/arith.pyx` and doing a `sage -br`.) We should fix this.\n\nI've already made the changes to `setup.py`, but I really need to do a `sage -ba` to feel like I've appropriately tested this. I'll do that tomorrow. I'm going to make this ticket dependent on #4443, since I already fixed the situation for `sage/ext/arith.pyx` while working on that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4444\n\n",
     "created_at": "2008-11-05T10:21:20Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ Assignee: @craigcitro
 
 In `setup.py`, there are several source files which appear in the `sources` list more than once. For instance, the entry for `sage.rings.rational` looks like:
 
-
 ```
 Extension('sage.rings.rational',
            sources = ['sage/rings/rational.pyx',
@@ -28,7 +27,6 @@ Extension('sage.rings.rational',
                       'sage/rings/integer.pyx'],
            libraries=['ntl', 'gmp'])
 ```
-
 
 The other two `.pyx` files that appear there were added in the old days, when Pyrex needed us to do this in order to compile `rational.pyx` correctly. Note that because of this, several files in the Sage library get compiled multiple times. (For instance, try changing `sage/ext/arith.pyx` and doing a `sage -br`.) We should fix this.
 

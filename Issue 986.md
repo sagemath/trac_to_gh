@@ -3,7 +3,7 @@
 archive/issues_000986.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis doctest fails on 32-bit x86 Linux:\n\n```\nFile \"multi_polynomial_ideal.py\", line 1078:\n    sage: V = I.variety(); V\nExpected:\n    [{y: w^2 + 2, x: 2*w}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + w, x: 2*w + 1}]\nGot:\n    [{y: w^2 + w, x: 2*w + 1}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + 2, x: 2*w}]\n```\n\n\nHowever, the doctest succeeds on 64-bit x86 Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/986\n\n",
+    "body": "Assignee: @williamstein\n\nThis doctest fails on 32-bit x86 Linux:\n\n```\nFile \"multi_polynomial_ideal.py\", line 1078:\n    sage: V = I.variety(); V\nExpected:\n    [{y: w^2 + 2, x: 2*w}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + w, x: 2*w + 1}]\nGot:\n    [{y: w^2 + w, x: 2*w + 1}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + 2, x: 2*w}]\n```\n\nHowever, the doctest succeeds on 64-bit x86 Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/986\n\n",
     "created_at": "2007-10-25T00:57:33Z",
     "labels": [
         "component: algebraic geometry",
@@ -29,7 +29,6 @@ Expected:
 Got:
     [{y: w^2 + w, x: 2*w + 1}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + 2, x: 2*w}]
 ```
-
 
 However, the doctest succeeds on 64-bit x86 Linux.
 

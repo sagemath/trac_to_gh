@@ -389,7 +389,7 @@ What I meant to say was, I don't know if its normal to attach those 3 files to t
 archive/issue_comments_089628.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> I think its only necessary to update the one in spkg, which makes me wonder whats the point of the one in the sage_scripts package.\n\nAt some point during the installation (or during sdist maybe?), the `install` from the `sage_scripts` package gets copied to `spkg/install`.  Also, `sage-spkg`, `sage-env`, `sage-make_relative` are copied to `spkg/base`.  Don't ask me why, but that's the way it is.",
+    "body": "Replying to [comment:5 drkirkby]:\n> I think its only necessary to update the one in spkg, which makes me wonder whats the point of the one in the sage_scripts package.\n\n\nAt some point during the installation (or during sdist maybe?), the `install` from the `sage_scripts` package gets copied to `spkg/install`.  Also, `sage-spkg`, `sage-env`, `sage-make_relative` are copied to `spkg/base`.  Don't ask me why, but that's the way it is.",
     "created_at": "2010-11-14T09:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -400,6 +400,7 @@ archive/issue_comments_089628.json:
 
 Replying to [comment:5 drkirkby]:
 > I think its only necessary to update the one in spkg, which makes me wonder whats the point of the one in the sage_scripts package.
+
 
 At some point during the installation (or during sdist maybe?), the `install` from the `sage_scripts` package gets copied to `spkg/install`.  Also, `sage-spkg`, `sage-env`, `sage-make_relative` are copied to `spkg/base`.  Don't ask me why, but that's the way it is.
 
@@ -446,7 +447,7 @@ Proof-of-concept spkg using patch: [http://sage.math.washington.edu/home/jdemeye
 archive/issue_comments_089631.json:
 ```json
 {
-    "body": "Replying to [comment:12 jdemeyer]:\n> David: instead of adding $(INST)/$(PATCH) as a dependency for every package, would it not be better to do it on a \"as-needed\" basis?  I mean that, whenever a spkg gets upgraded to use `patch`, we add `PATCH` as a dependency?\nI do not think that would be a good idea. Every time someone wants to add a patch, they would need to create one for 'deps' too. A lot of people don't know how to use that file. Note even my initial comments I noted there were several tickets touching 'deps' and these would need to be coordinated. To make matters even more complicated, the 'deps' file is not under revision control, which make s updating that file more problematic. \n\nIf the `patch` package took a long time to build, then I could see it would slow the build of Sage, as it introduces a sometimes unnecessary dependency. But for a package which takes less than 4 seconds to build **and** run all the self tests, I think it is better to add it to 'deps' now, so every package could use it now. \n\nIt also avoids the very real risk someone will create a patch, which will work on their system since either\n* patch has already benn built.\n* There's a suitable version of patch on their system.\n\nThe patch would fail to install on another computer, because patch is not built at that point in time. Since the order of building packages is not fixed. \n\nIMHO, `patch` should be built early, so it can be used with the minimum amount of effort.\n\n\nDave",
+    "body": "Replying to [comment:12 jdemeyer]:\n> David: instead of adding $(INST)/$(PATCH) as a dependency for every package, would it not be better to do it on a \"as-needed\" basis?  I mean that, whenever a spkg gets upgraded to use `patch`, we add `PATCH` as a dependency?\n\nI do not think that would be a good idea. Every time someone wants to add a patch, they would need to create one for 'deps' too. A lot of people don't know how to use that file. Note even my initial comments I noted there were several tickets touching 'deps' and these would need to be coordinated. To make matters even more complicated, the 'deps' file is not under revision control, which make s updating that file more problematic. \n\nIf the `patch` package took a long time to build, then I could see it would slow the build of Sage, as it introduces a sometimes unnecessary dependency. But for a package which takes less than 4 seconds to build **and** run all the self tests, I think it is better to add it to 'deps' now, so every package could use it now. \n\nIt also avoids the very real risk someone will create a patch, which will work on their system since either\n* patch has already benn built.\n* There's a suitable version of patch on their system.\n\nThe patch would fail to install on another computer, because patch is not built at that point in time. Since the order of building packages is not fixed. \n\nIMHO, `patch` should be built early, so it can be used with the minimum amount of effort.\n\n\nDave",
     "created_at": "2010-11-14T10:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -457,6 +458,7 @@ archive/issue_comments_089631.json:
 
 Replying to [comment:12 jdemeyer]:
 > David: instead of adding $(INST)/$(PATCH) as a dependency for every package, would it not be better to do it on a "as-needed" basis?  I mean that, whenever a spkg gets upgraded to use `patch`, we add `PATCH` as a dependency?
+
 I do not think that would be a good idea. Every time someone wants to add a patch, they would need to create one for 'deps' too. A lot of people don't know how to use that file. Note even my initial comments I noted there were several tickets touching 'deps' and these would need to be coordinated. To make matters even more complicated, the 'deps' file is not under revision control, which make s updating that file more problematic. 
 
 If the `patch` package took a long time to build, then I could see it would slow the build of Sage, as it introduces a sometimes unnecessary dependency. But for a package which takes less than 4 seconds to build **and** run all the self tests, I think it is better to add it to 'deps' now, so every package could use it now. 
@@ -499,7 +501,7 @@ Added ticket number to file name
 archive/issue_comments_089633.json:
 ```json
 {
-    "body": "I suggest a small \"sanity check\" at the end of `spkg-install` to check that the `patch` in the PATH is the right one.  Something like\n\n```\nif ! patch --version | grep >/dev/null 'patch 2.6.1'; then\n    echo \"Cannot to find the patch program we just installed\"\n    exit 1\nfi\n```\n\n\nI know you like `grep >/dev/null`  ;-)",
+    "body": "I suggest a small \"sanity check\" at the end of `spkg-install` to check that the `patch` in the PATH is the right one.  Something like\n\n```\nif ! patch --version | grep >/dev/null 'patch 2.6.1'; then\n    echo \"Cannot to find the patch program we just installed\"\n    exit 1\nfi\n```\n\nI know you like `grep >/dev/null`  ;-)",
     "created_at": "2010-11-14T23:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -516,7 +518,6 @@ if ! patch --version | grep >/dev/null 'patch 2.6.1'; then
     exit 1
 fi
 ```
-
 
 I know you like `grep >/dev/null`  ;-)
 
@@ -617,7 +618,7 @@ Dave, I agree with all of your post above.
 archive/issue_comments_089638.json:
 ```json
 {
-    "body": "Replying to [comment:20 drkirkby]:\n> With few exceptions, where we know there has been issues (like readline), we normally trust the result of `make install` and don't actually check the packages work. But I see nothing wrong with your suggestion. So I'm find on adding that. \n\nYou can also consider it to be a sanity check that SAGE_LOCAL and PATH have sensible values.",
+    "body": "Replying to [comment:20 drkirkby]:\n> With few exceptions, where we know there has been issues (like readline), we normally trust the result of `make install` and don't actually check the packages work. But I see nothing wrong with your suggestion. So I'm find on adding that. \n\n\nYou can also consider it to be a sanity check that SAGE_LOCAL and PATH have sensible values.",
     "created_at": "2010-11-15T09:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -629,6 +630,7 @@ archive/issue_comments_089638.json:
 Replying to [comment:20 drkirkby]:
 > With few exceptions, where we know there has been issues (like readline), we normally trust the result of `make install` and don't actually check the packages work. But I see nothing wrong with your suggestion. So I'm find on adding that. 
 
+
 You can also consider it to be a sanity check that SAGE_LOCAL and PATH have sensible values.
 
 
@@ -638,7 +640,7 @@ You can also consider it to be a sanity check that SAGE_LOCAL and PATH have sens
 archive/issue_comments_089639.json:
 ```json
 {
-    "body": "\n```\nSAGE_CHECK='yes' sage -f http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n```\n\nworked fine on 64-bit ubuntu and 32-bit Suse, with 4.6.1.alpha1 and 4.6.1.alpha0 respectively.\n\nFor a positive review is it enough that this spkg builds fine on all supported systems, or do we also need to have at least one other spkg converted to use it and build ok?",
+    "body": "```\nSAGE_CHECK='yes' sage -f http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n```\nworked fine on 64-bit ubuntu and 32-bit Suse, with 4.6.1.alpha1 and 4.6.1.alpha0 respectively.\n\nFor a positive review is it enough that this spkg builds fine on all supported systems, or do we also need to have at least one other spkg converted to use it and build ok?",
     "created_at": "2010-11-15T11:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -647,11 +649,9 @@ archive/issue_comments_089639.json:
 }
 ```
 
-
 ```
 SAGE_CHECK='yes' sage -f http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg
 ```
-
 worked fine on 64-bit ubuntu and 32-bit Suse, with 4.6.1.alpha1 and 4.6.1.alpha0 respectively.
 
 For a positive review is it enough that this spkg builds fine on all supported systems, or do we also need to have at least one other spkg converted to use it and build ok?
@@ -708,7 +708,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089642.json:
 ```json
 {
-    "body": "On the 64-bit ubuntu system, I installed the new version of the Sphinx package (with -f) and did a full test.  All OK except this:\n\n```\nsage -t -long ./sage/misc/sagedoc.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 891:\n    sage: len(search_doc('tree', interact=False).splitlines()) > 2000\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    False\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 893:\n    sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 200\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    True\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 496:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    False\n**********************************************************************\n```\n\nBefore installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?",
+    "body": "On the 64-bit ubuntu system, I installed the new version of the Sphinx package (with -f) and did a full test.  All OK except this:\n\n```\nsage -t -long ./sage/misc/sagedoc.py\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 891:\n    sage: len(search_doc('tree', interact=False).splitlines()) > 2000\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    False\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 893:\n    sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 200\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    True\n**********************************************************************\nFile \"/home/jec/sage-4.6.1.alpha1/devel/sage-main/sage/misc/sagedoc.py\", line 496:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /home/jec/sage-current/devel/sage/doc/output/html/en/website\n    /home/jec/sage-current/devel/sage/doc/output/html/en/developer\n    /home/jec/sage-current/devel/sage/doc/output/html/en/installation\n    /home/jec/sage-current/devel/sage/doc/output/html/en/constructions\n    /home/jec/sage-current/devel/sage/doc/output/html/en/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/numerical_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/en/faq\n    /home/jec/sage-current/devel/sage/doc/output/html/en/thematic_tutorials\n    /home/jec/sage-current/devel/sage/doc/output/html/en/reference\n    /home/jec/sage-current/devel/sage/doc/output/html/en/bordeaux_2008\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/a_tour_of_sage\n    /home/jec/sage-current/devel/sage/doc/output/html/fr/tutorial\n    <BLANKLINE>\n    You can build these with 'sage -docbuild DOCUMENT html',\n    where DOCUMENT is one of 'website', 'developer', 'installation', 'constructions', 'a_tour_of_sage', 'numerical_sage', 'faq', 'thematic_tutorials', 'reference', 'bordeaux_2008', 'a_tour_of_sage', 'tutorial', \n    or you can use 'sage -docbuild all html' to build all of the missing documentation.\n    False\n**********************************************************************\n```\nBefore installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?",
     "created_at": "2010-11-15T12:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -801,7 +801,6 @@ Got:
     False
 **********************************************************************
 ```
-
 Before installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?
 
 
@@ -873,7 +872,7 @@ dave
 archive/issue_comments_089646.json:
 ```json
 {
-    "body": "Replying to [comment:26 cremona]:\n> Before installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?\n\nIn any case, I doubt this is an issue regarding *patch*.  The main point was to test whether the spkg installed.",
+    "body": "Replying to [comment:26 cremona]:\n> Before installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?\n\n\nIn any case, I doubt this is an issue regarding *patch*.  The main point was to test whether the spkg installed.",
     "created_at": "2010-11-15T13:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -885,6 +884,7 @@ archive/issue_comments_089646.json:
 Replying to [comment:26 cremona]:
 > Before installing the patch spkg and sphinx I had built the docs, but I had not rebuilt them, so perhaps this is harmless?
 
+
 In any case, I doubt this is an issue regarding *patch*.  The main point was to test whether the spkg installed.
 
 
@@ -894,7 +894,7 @@ In any case, I doubt this is an issue regarding *patch*.  The main point was to 
 archive/issue_comments_089647.json:
 ```json
 {
-    "body": "Replying to [comment:27 drkirkby]:\n> I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\nThat would be a colour patch, I presume?",
+    "body": "Replying to [comment:27 drkirkby]:\n> I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\n\nThat would be a colour patch, I presume?",
     "created_at": "2010-11-15T14:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -906,6 +906,7 @@ archive/issue_comments_089647.json:
 Replying to [comment:27 drkirkby]:
 > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. 
 
+
 That would be a colour patch, I presume?
 
 
@@ -915,7 +916,7 @@ That would be a colour patch, I presume?
 archive/issue_comments_089648.json:
 ```json
 {
-    "body": "Replying to [comment:29 cremona]:\n> Replying to [comment:27 drkirkby]:\n> > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n> \n> That would be a colour patch, I presume?\n> \nI think it will be showed as red and green in the browser, though the paint was white!\n\ndave",
+    "body": "Replying to [comment:29 cremona]:\n> Replying to [comment:27 drkirkby]:\n> > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\n> \n> That would be a colour patch, I presume?\n> \n\nI think it will be showed as red and green in the browser, though the paint was white!\n\ndave",
     "created_at": "2010-11-15T15:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -927,9 +928,11 @@ archive/issue_comments_089648.json:
 Replying to [comment:29 cremona]:
 > Replying to [comment:27 drkirkby]:
 > > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. 
+
 > 
 > That would be a colour patch, I presume?
 > 
+
 I think it will be showed as red and green in the browser, though the paint was white!
 
 dave
@@ -981,7 +984,7 @@ I also added the sanity check that I mentioned, not yet the `make check`.
 archive/issue_comments_089651.json:
 ```json
 {
-    "body": "Replying to [comment:33 jdemeyer]:\n> I created a spkg with patch 2.5.9 which works on OS X 10.4: [http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg)\n> \n> I also added the sanity check that I mentioned, not yet the `make check`.\n\nI built it on OpenSolaris OK. There's a `make check` which I had created. \n\nHowever, the version you have now used has no test facility, so `make-check` should simply be removed. The developers must have added the facility to test on more recent versions only. \n\nI've created a version at \n\nhttp://boxen.math.washington.edu/home/kirkby/older/patch-2.5.9.spkg\n\nwhich has the spkg-check file removed, and so notes to say not to update to 2.6 or 2.6.1. I will add a Mecurial patch in a minute. \n\n\nDave",
+    "body": "Replying to [comment:33 jdemeyer]:\n> I created a spkg with patch 2.5.9 which works on OS X 10.4: [http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg)\n> \n> I also added the sanity check that I mentioned, not yet the `make check`.\n\n\nI built it on OpenSolaris OK. There's a `make check` which I had created. \n\nHowever, the version you have now used has no test facility, so `make-check` should simply be removed. The developers must have added the facility to test on more recent versions only. \n\nI've created a version at \n\nhttp://boxen.math.washington.edu/home/kirkby/older/patch-2.5.9.spkg\n\nwhich has the spkg-check file removed, and so notes to say not to update to 2.6 or 2.6.1. I will add a Mecurial patch in a minute. \n\n\nDave",
     "created_at": "2010-11-16T16:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -994,6 +997,7 @@ Replying to [comment:33 jdemeyer]:
 > I created a spkg with patch 2.5.9 which works on OS X 10.4: [http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg)
 > 
 > I also added the sanity check that I mentioned, not yet the `make check`.
+
 
 I built it on OpenSolaris OK. There's a `make check` which I had created. 
 
@@ -1178,7 +1182,7 @@ Dave
 archive/issue_comments_089659.json:
 ```json
 {
-    "body": "Replying to [comment:39 drkirkby]:\n> Will the sphinx package that has been used as a test be in the next alpha? If so, that will test not only the build, but also the functionality. \n\nYes, it will be in the next alpha (unless there is major breakage on my own testing systems), but it still needs_review (#10118).",
+    "body": "Replying to [comment:39 drkirkby]:\n> Will the sphinx package that has been used as a test be in the next alpha? If so, that will test not only the build, but also the functionality. \n\n\nYes, it will be in the next alpha (unless there is major breakage on my own testing systems), but it still needs_review (#10118).",
     "created_at": "2010-11-16T19:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -1189,6 +1193,7 @@ archive/issue_comments_089659.json:
 
 Replying to [comment:39 drkirkby]:
 > Will the sphinx package that has been used as a test be in the next alpha? If so, that will test not only the build, but also the functionality. 
+
 
 Yes, it will be in the next alpha (unless there is major breakage on my own testing systems), but it still needs_review (#10118).
 
@@ -1311,7 +1316,7 @@ See #10299 for a follow-up.
 archive/issue_comments_089665.json:
 ```json
 {
-    "body": "Replying to [comment:30 drkirkby]:\n> Replying to [comment:29 cremona]:\n> > Replying to [comment:27 drkirkby]:\n> > > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n> > \n> > That would be a colour patch, I presume?\n> > \n> I think it will be showed as red and green in the browser, though the paint was white!\n\nShould we ask Microsoft if we can make `paint` a standard spkg as well?\n\n----\n\nStop environmental pollution...\n\nWe already have nice environment variables like \"`R`\" and \"`PYTHON`\"; can we rename it to e.g. `GNU_PATCH` in `spkg/install` and `spkg/standard/deps`?\n\n----\n\nP.S.: Why not add the `patch` spkg to `$(BASE)` (and make it depend on the previous three `$(BASE)` packages)?\n\nAs is, **all** standard spkgs will get rebuilt on an upgrade (to a version of Sage with `patch` \"newly\" included) anyway. (Therefore I would actually prefer adding `patch` as a dependency selectively. `spkg/standard/deps` will be under revision control soon...)",
+    "body": "Replying to [comment:30 drkirkby]:\n> Replying to [comment:29 cremona]:\n> > Replying to [comment:27 drkirkby]:\n> > > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. \n\n> > \n> > That would be a colour patch, I presume?\n> > \n\n> I think it will be showed as red and green in the browser, though the paint was white!\n\nShould we ask Microsoft if we can make `paint` a standard spkg as well?\n\n---\n\nStop environmental pollution...\n\nWe already have nice environment variables like \"`R`\" and \"`PYTHON`\"; can we rename it to e.g. `GNU_PATCH` in `spkg/install` and `spkg/standard/deps`?\n\n---\n\nP.S.: Why not add the `patch` spkg to `$(BASE)` (and make it depend on the previous three `$(BASE)` packages)?\n\nAs is, **all** standard spkgs will get rebuilt on an upgrade (to a version of Sage with `patch` \"newly\" included) anyway. (Therefore I would actually prefer adding `patch` as a dependency selectively. `spkg/standard/deps` will be under revision control soon...)",
     "created_at": "2010-11-21T22:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9418",
     "type": "issue_comment",
@@ -1324,20 +1329,22 @@ Replying to [comment:30 drkirkby]:
 > Replying to [comment:29 cremona]:
 > > Replying to [comment:27 drkirkby]:
 > > > I've updated deps and the patch for it. The package will have to wait though, as I need to do some painting. 
+
 > > 
 > > That would be a colour patch, I presume?
 > > 
+
 > I think it will be showed as red and green in the browser, though the paint was white!
 
 Should we ask Microsoft if we can make `paint` a standard spkg as well?
 
-----
+---
 
 Stop environmental pollution...
 
 We already have nice environment variables like "`R`" and "`PYTHON`"; can we rename it to e.g. `GNU_PATCH` in `spkg/install` and `spkg/standard/deps`?
 
-----
+---
 
 P.S.: Why not add the `patch` spkg to `$(BASE)` (and make it depend on the previous three `$(BASE)` packages)?
 

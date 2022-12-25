@@ -108,7 +108,7 @@ What was this updated to?  I get conflicts applying it to 3.3alpha3.
 archive/issue_comments_037075.json:
 ```json
 {
-    "body": "I tried applying it to 3.3rc0:\n\n\n```\njason@sage:~$ patch contour_plot.py < trac_4898.patch \npatching file contour_plot.py\nHunk #2 FAILED at 53.\nHunk #3 FAILED at 75.\nHunk #4 FAILED at 136.\nHunk #5 succeeded at 167 (offset -1 lines).\nHunk #6 succeeded at 180 (offset -1 lines).\nHunk #7 FAILED at 226.\nHunk #8 succeeded at 272 (offset -2 lines).\nHunk #9 succeeded at 293 (offset -2 lines).\nHunk #10 succeeded at 308 (offset -2 lines).\nHunk #11 succeeded at 317 (offset -2 lines).\nHunk #12 succeeded at 345 (offset -2 lines).\n4 out of 12 hunks FAILED -- saving rejects to file contour_plot.py.rej\n```\n",
+    "body": "I tried applying it to 3.3rc0:\n\n```\njason@sage:~$ patch contour_plot.py < trac_4898.patch \npatching file contour_plot.py\nHunk #2 FAILED at 53.\nHunk #3 FAILED at 75.\nHunk #4 FAILED at 136.\nHunk #5 succeeded at 167 (offset -1 lines).\nHunk #6 succeeded at 180 (offset -1 lines).\nHunk #7 FAILED at 226.\nHunk #8 succeeded at 272 (offset -2 lines).\nHunk #9 succeeded at 293 (offset -2 lines).\nHunk #10 succeeded at 308 (offset -2 lines).\nHunk #11 succeeded at 317 (offset -2 lines).\nHunk #12 succeeded at 345 (offset -2 lines).\n4 out of 12 hunks FAILED -- saving rejects to file contour_plot.py.rej\n```",
     "created_at": "2009-02-11T06:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -118,7 +118,6 @@ archive/issue_comments_037075.json:
 ```
 
 I tried applying it to 3.3rc0:
-
 
 ```
 jason@sage:~$ patch contour_plot.py < trac_4898.patch 
@@ -136,7 +135,6 @@ Hunk #11 succeeded at 317 (offset -2 lines).
 Hunk #12 succeeded at 345 (offset -2 lines).
 4 out of 12 hunks FAILED -- saving rejects to file contour_plot.py.rej
 ```
-
 
 
 
@@ -223,7 +221,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_037080.json:
 ```json
 {
-    "body": "Unfortunately, it still needs more rebasing.  Here is the result of applying it to 4.1.2.rc0:\n\n\n```\njason@sage:~/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage$ hg qpush\napplying trac_4898-contour-labels-rebase.patch\npatching file sage/plot/contour_plot.py\nHunk #11 succeeded at 517 with fuzz 1 (offset 3 lines).\nHunk #12 FAILED at 549\n1 out of 12 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_4898-contour-labels-rebase.patch\n```\n\n\nI'm excited for this to get in!",
+    "body": "Unfortunately, it still needs more rebasing.  Here is the result of applying it to 4.1.2.rc0:\n\n```\njason@sage:~/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage$ hg qpush\napplying trac_4898-contour-labels-rebase.patch\npatching file sage/plot/contour_plot.py\nHunk #11 succeeded at 517 with fuzz 1 (offset 3 lines).\nHunk #12 FAILED at 549\n1 out of 12 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_4898-contour-labels-rebase.patch\n```\n\nI'm excited for this to get in!",
     "created_at": "2009-10-06T20:52:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
@@ -233,7 +231,6 @@ archive/issue_comments_037080.json:
 ```
 
 Unfortunately, it still needs more rebasing.  Here is the result of applying it to 4.1.2.rc0:
-
 
 ```
 jason@sage:~/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage$ hg qpush
@@ -246,7 +243,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_4898-contour-labels-rebase.patch
 ```
-
 
 I'm excited for this to get in!
 

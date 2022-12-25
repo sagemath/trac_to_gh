@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8105
 archive/issue_comments_070995.json:
 ```json
 {
-    "body": "Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by @rbeezer created at 2010-01-28 06:43:02\n\nCode like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)\n\nNote that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.\n\n\n```\nsage: nb = sage.server.notebook.notebook.Notebook(\"/tmp\")\nsage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')\nsage: W.edit_save('Weirder Title\\n`2+3\\n///\\n5\\n`')\nsage: W\n[Cell 0; in=2+3, out=\n5]\nsage: nb.export_worksheet(W.filename(), \"/tmp/weird.sws\", verbose=False)\nsage: nb.delete()\n```\n",
+    "body": "Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by @rbeezer created at 2010-01-28 06:43:02\n\nCode like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)\n\nNote that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.\n\n```\nsage: nb = sage.server.notebook.notebook.Notebook(\"/tmp\")\nsage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')\nsage: W.edit_save('Weirder Title\\n`2+3\\n///\\n5\\n`')\nsage: W\n[Cell 0; in=2+3, out=\n5]\nsage: nb.export_worksheet(W.filename(), \"/tmp/weird.sws\", verbose=False)\nsage: nb.delete()\n```",
     "created_at": "2010-01-28T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ Code like the following, added to the Python script, will automate the cut/paste
 
 Note that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.
 
-
 ```
 sage: nb = sage.server.notebook.notebook.Notebook("/tmp")
 sage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')
@@ -66,13 +65,12 @@ sage: nb.delete()
 
 
 
-
 ---
 
 archive/issue_comments_070996.json:
 ```json
 {
-    "body": "This is nice! It worked on the example file.\n\nNow you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n\nI am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n\n```\nsage -tex2sws foo.tex\n```\n\nwhich would spit out a proper .sws file. Sound right?",
+    "body": "This is nice! It worked on the example file.\n\nNow you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n\nI am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n\n```\nsage -tex2sws foo.tex\n```\nwhich would spit out a proper .sws file. Sound right?",
     "created_at": "2010-01-28T09:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -90,7 +88,6 @@ I am guessing that you'd like this to eventually be an optional spkg, which migh
 ```
 sage -tex2sws foo.tex
 ```
-
 which would spit out a proper .sws file. Sound right?
 
 
@@ -124,7 +121,7 @@ There's now a Mercurial repo in the archive, and I'll work on a bitbucket site s
 archive/issue_comments_070998.json:
 ```json
 {
-    "body": "Dan,\n\nThanks for the testing!  Yes, some sort of optional package that allows for a simple one-step conversion should be the eventual goal.  Next step will be to hack up something that will allow for cross-worksheet links to work and try to convert something book-length.\n\nCan you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\nRob\n\nReplying to [comment:2 ddrake]:\n> This is nice! It worked on the example file.\n> \n> Now you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n> \n> I am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n> {{{\n> sage -tex2sws foo.tex\n> }}}\n> which would spit out a proper .sws file. Sound right?",
+    "body": "Dan,\n\nThanks for the testing!  Yes, some sort of optional package that allows for a simple one-step conversion should be the eventual goal.  Next step will be to hack up something that will allow for cross-worksheet links to work and try to convert something book-length.\n\nCan you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\nRob\n\nReplying to [comment:2 ddrake]:\n> This is nice! It worked on the example file.\n> \n> Now you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n> \n> I am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n> \n> ```\n> sage -tex2sws foo.tex\n> ```\n> which would spit out a proper .sws file. Sound right?",
     "created_at": "2010-01-30T07:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -147,9 +144,10 @@ Replying to [comment:2 ddrake]:
 > Now you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)
 > 
 > I am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like
-> {{{
+> 
+> ```
 > sage -tex2sws foo.tex
-> }}}
+> ```
 > which would spit out a proper .sws file. Sound right?
 
 
@@ -159,7 +157,7 @@ Replying to [comment:2 ddrake]:
 archive/issue_comments_070999.json:
 ```json
 {
-    "body": "Replying to [comment:4 rbeezer]:\n> Can you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\nI have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLive includes its own little package manager (\"tlmgr\") and I used that to install tex4ht -- I just searched for it, and hit \"install\".",
+    "body": "Replying to [comment:4 rbeezer]:\n> Can you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\n\nI have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLive includes its own little package manager (\"tlmgr\") and I used that to install tex4ht -- I just searched for it, and hit \"install\".",
     "created_at": "2010-01-30T14:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -170,6 +168,7 @@ archive/issue_comments_070999.json:
 
 Replying to [comment:4 rbeezer]:
 > Can you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.
+
 
 I have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLive includes its own little package manager ("tlmgr") and I used that to install tex4ht -- I just searched for it, and hit "install".
 
@@ -343,7 +342,7 @@ I looked briefly at the converter. Two ideas:
 archive/issue_comments_071008.json:
 ```json
 {
-    "body": "Replying to [comment:12 robert.marik]:\n> * $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)\n\nthis second problem seems to be limited to older installations of TeX, texlive2009 works fine.",
+    "body": "Replying to [comment:12 robert.marik]:\n> * $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)\n\n\nthis second problem seems to be limited to older installations of TeX, texlive2009 works fine.",
     "created_at": "2010-02-01T15:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -354,6 +353,7 @@ archive/issue_comments_071008.json:
 
 Replying to [comment:12 robert.marik]:
 > * $\lim_{x\to\infty}$ hangs the compilation. Commenting out \usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)
+
 
 this second problem seems to be limited to older installations of TeX, texlive2009 works fine.
 
@@ -400,7 +400,7 @@ Begin with latex source that includes tikz graphics, use the tools here, and the
 archive/issue_comments_071011.json:
 ```json
 {
-    "body": "Replying to [comment:13 robert.marik]:\n> this second problem seems to be limited to older installations of TeX, texlive2009 works fine.\n\nHi Robert,\n\nThanks for testing this out.  I've been basically using tex4ht from source, for the reasons you mentioned above.\n\nMy current example uses some tkz-graph code, which builds on the tikz package.\n\ntex4ht complains about some of this code (which I do not think is a surprise since I have no reason to believe tex4ht has any extra support for tkz-graph)\n\n\n```\nl.197 --- TeX4ht warning --- missing \\Configure{HColor}{col_lab_a11}{...} (in LaTeX: rgb 0 0 0) --- \n```\n\n\nthis is tkz-graph code to color a vertex label (I think).  I get garbage in the CSS file produced by tex4ht, but everything seems to work - but the labels are absent from the SVG graphics meant for the worksheet.\n\nDo you have lots of experience configuring tex4ht?  It seems a bit of a black art to me sometimes.\n\nRob",
+    "body": "Replying to [comment:13 robert.marik]:\n> this second problem seems to be limited to older installations of TeX, texlive2009 works fine.\n\n\nHi Robert,\n\nThanks for testing this out.  I've been basically using tex4ht from source, for the reasons you mentioned above.\n\nMy current example uses some tkz-graph code, which builds on the tikz package.\n\ntex4ht complains about some of this code (which I do not think is a surprise since I have no reason to believe tex4ht has any extra support for tkz-graph)\n\n```\nl.197 --- TeX4ht warning --- missing \\Configure{HColor}{col_lab_a11}{...} (in LaTeX: rgb 0 0 0) --- \n```\n\nthis is tkz-graph code to color a vertex label (I think).  I get garbage in the CSS file produced by tex4ht, but everything seems to work - but the labels are absent from the SVG graphics meant for the worksheet.\n\nDo you have lots of experience configuring tex4ht?  It seems a bit of a black art to me sometimes.\n\nRob",
     "created_at": "2010-02-04T05:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -412,6 +412,7 @@ archive/issue_comments_071011.json:
 Replying to [comment:13 robert.marik]:
 > this second problem seems to be limited to older installations of TeX, texlive2009 works fine.
 
+
 Hi Robert,
 
 Thanks for testing this out.  I've been basically using tex4ht from source, for the reasons you mentioned above.
@@ -420,11 +421,9 @@ My current example uses some tkz-graph code, which builds on the tikz package.
 
 tex4ht complains about some of this code (which I do not think is a surprise since I have no reason to believe tex4ht has any extra support for tkz-graph)
 
-
 ```
 l.197 --- TeX4ht warning --- missing \Configure{HColor}{col_lab_a11}{...} (in LaTeX: rgb 0 0 0) --- 
 ```
-
 
 this is tkz-graph code to color a vertex label (I think).  I get garbage in the CSS file produced by tex4ht, but everything seems to work - but the labels are absent from the SVG graphics meant for the worksheet.
 
@@ -513,7 +512,7 @@ Rob
 archive/issue_comments_071015.json:
 ```json
 {
-    "body": "Rob, \n\nI sent you the answer to your email. In short: disable \n\n```\n\\SetVertexNoLabel\n```\n\nFor example, adding something like \n\n```\n\\let\\SetVertexNoLabel\\relax\n```\n\nnear the end of preamble helps. \n\nAdding the same to the config file for tex4ht should help as well (config fie not tested).\n\nI wonder, if it is possible to check Typeset button and execute all cells in worksheet before saving into sws file.",
+    "body": "Rob, \n\nI sent you the answer to your email. In short: disable \n\n```\n\\SetVertexNoLabel\n```\nFor example, adding something like \n\n```\n\\let\\SetVertexNoLabel\\relax\n```\nnear the end of preamble helps. \n\nAdding the same to the config file for tex4ht should help as well (config fie not tested).\n\nI wonder, if it is possible to check Typeset button and execute all cells in worksheet before saving into sws file.",
     "created_at": "2010-02-09T18:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -529,13 +528,11 @@ I sent you the answer to your email. In short: disable
 ```
 \SetVertexNoLabel
 ```
-
 For example, adding something like 
 
 ```
 \let\SetVertexNoLabel\relax
 ```
-
 near the end of preamble helps. 
 
 Adding the same to the config file for tex4ht should help as well (config fie not tested).
@@ -549,7 +546,7 @@ I wonder, if it is possible to check Typeset button and execute all cells in wor
 archive/issue_comments_071016.json:
 ```json
 {
-    "body": "Concerning Typeset button and my previous message:\n\n```\nW.set_pretty_print('true')\n```\n\nprobably [does](http://www.sagemath.org/doc/reference/sagenb/notebook/worksheet.html#sagenb.notebook.worksheet.Worksheet.set_pretty_print) the magic.\n\nI asked about evaluating all cells in sagenb [forum](http://groups.google.cz/group/sage-notebook/browse_thread/thread/649c845f39a0a528#)",
+    "body": "Concerning Typeset button and my previous message:\n\n```\nW.set_pretty_print('true')\n```\nprobably [does](http://www.sagemath.org/doc/reference/sagenb/notebook/worksheet.html#sagenb.notebook.worksheet.Worksheet.set_pretty_print) the magic.\n\nI asked about evaluating all cells in sagenb [forum](http://groups.google.cz/group/sage-notebook/browse_thread/thread/649c845f39a0a528#)",
     "created_at": "2010-02-10T10:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -563,7 +560,6 @@ Concerning Typeset button and my previous message:
 ```
 W.set_pretty_print('true')
 ```
-
 probably [does](http://www.sagemath.org/doc/reference/sagenb/notebook/worksheet.html#sagenb.notebook.worksheet.Worksheet.set_pretty_print) the magic.
 
 I asked about evaluating all cells in sagenb [forum](http://groups.google.cz/group/sage-notebook/browse_thread/thread/649c845f39a0a528#)
@@ -575,7 +571,7 @@ I asked about evaluating all cells in sagenb [forum](http://groups.google.cz/gro
 archive/issue_comments_071017.json:
 ```json
 {
-    "body": "New [tex4ht-sage.cfg](http://user.mendelu.cz/marik/sage/tex4ht-sage.cfg) file\n\nWith this file the input is the same as for SageTeX. See\n[example.tex](http://user.mendelu.cz/marik/sage/example.tex) (from SageTeX distribution, fixed only some whitespaces), [PDF](http://user.mendelu.cz/marik/sage/example.pdf) produced by pdflatex and [sws](http://user.mendelu.cz/marik/sage/example.sws) produced by \n\n```\nlatex -interaction=nonstopmode example\nsage example.sage\nhtlatex example.tex \"tex4ht-sage.cfg\"\n./tex2sws.py\n```\n\nYou get input fileds from commands like \\sage{},  \\sagestr{}, \\sageplot{}. You get also dolars as delimiters for inline math.",
+    "body": "New [tex4ht-sage.cfg](http://user.mendelu.cz/marik/sage/tex4ht-sage.cfg) file\n\nWith this file the input is the same as for SageTeX. See\n[example.tex](http://user.mendelu.cz/marik/sage/example.tex) (from SageTeX distribution, fixed only some whitespaces), [PDF](http://user.mendelu.cz/marik/sage/example.pdf) produced by pdflatex and [sws](http://user.mendelu.cz/marik/sage/example.sws) produced by \n\n```\nlatex -interaction=nonstopmode example\nsage example.sage\nhtlatex example.tex \"tex4ht-sage.cfg\"\n./tex2sws.py\n```\nYou get input fileds from commands like \\sage{},  \\sagestr{}, \\sageplot{}. You get also dolars as delimiters for inline math.",
     "created_at": "2010-02-17T22:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -595,7 +591,6 @@ sage example.sage
 htlatex example.tex "tex4ht-sage.cfg"
 ./tex2sws.py
 ```
-
 You get input fileds from commands like \sage{},  \sagestr{}, \sageplot{}. You get also dolars as delimiters for inline math.
 
 
@@ -643,7 +638,7 @@ Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105
 archive/issue_comments_071020.json:
 ```json
 {
-    "body": "Replying to [comment:21 robert.marik]:\n> Using the attached file jsmath-noexpand.4ht and adding \\input{jsmath-noexpand.4ht} to tex4ht-sage.cfg prevents TeX4ht to replace expressions like \\int or \\alpha by unicode characters and functions like \\cos remain intact and are not replaced by \\mathop{cos}. \n> \n> All this gives better rendering in the browser.\n\nThanks, Robert.  that sounds great.  I'll try to get it incorporated later today.  I'm close to having something stable put together for others to test, and which I'll use to add a few more examples to the wiki.\n\nRob",
+    "body": "Replying to [comment:21 robert.marik]:\n> Using the attached file jsmath-noexpand.4ht and adding \\input{jsmath-noexpand.4ht} to tex4ht-sage.cfg prevents TeX4ht to replace expressions like \\int or \\alpha by unicode characters and functions like \\cos remain intact and are not replaced by \\mathop{cos}. \n> \n> All this gives better rendering in the browser.\n\n\nThanks, Robert.  that sounds great.  I'll try to get it incorporated later today.  I'm close to having something stable put together for others to test, and which I'll use to add a few more examples to the wiki.\n\nRob",
     "created_at": "2010-02-20T21:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
@@ -656,6 +651,7 @@ Replying to [comment:21 robert.marik]:
 > Using the attached file jsmath-noexpand.4ht and adding \input{jsmath-noexpand.4ht} to tex4ht-sage.cfg prevents TeX4ht to replace expressions like \int or \alpha by unicode characters and functions like \cos remain intact and are not replaced by \mathop{cos}. 
 > 
 > All this gives better rendering in the browser.
+
 
 Thanks, Robert.  that sounds great.  I'll try to get it incorporated later today.  I'm close to having something stable put together for others to test, and which I'll use to add a few more examples to the wiki.
 

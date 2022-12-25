@@ -3,7 +3,7 @@
 archive/issues_007960.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @videlec\n\nOne should be able to do \n\n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQBar(a)\n-1.324717957244746?\n```\n\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @videlec\n\nOne should be able to do \n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQBar(a)\n-1.324717957244746?\n```\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
     "created_at": "2010-01-17T00:26:12Z",
     "labels": [
         "component: number theory"
@@ -21,13 +21,11 @@ CC:  @videlec
 
 One should be able to do 
 
-
 ```
 sage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)
 sage: QQBar(a)
 -1.324717957244746?
 ```
-
 
 Followup to #4621
 
@@ -251,7 +249,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069344.json:
 ```json
 {
-    "body": "The requested example now works.  It would be even nicer to also have a coercion map from `K` to `QQbar`, but currently we do not have this:\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1, embedding=-1.32)\nsage: QQbar(a)\n-1.324717957244746?\nsage: QQbar.coerce_map_from(K) is None\nTrue\n```\n",
+    "body": "The requested example now works.  It would be even nicer to also have a coercion map from `K` to `QQbar`, but currently we do not have this:\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1, embedding=-1.32)\nsage: QQbar(a)\n-1.324717957244746?\nsage: QQbar.coerce_map_from(K) is None\nTrue\n```",
     "created_at": "2018-11-09T13:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
@@ -272,13 +270,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_069345.json:
 ```json
 {
-    "body": "Replying to [comment:8 pbruin]:\n> It would be even nicer to also have a coercion map from `K` to `QQbar`\nOK, there is already a ticket for this: #5355.  Positive review for this one.",
+    "body": "Replying to [comment:8 pbruin]:\n> It would be even nicer to also have a coercion map from `K` to `QQbar`\n\nOK, there is already a ticket for this: #5355.  Positive review for this one.",
     "created_at": "2018-11-09T13:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
@@ -289,6 +286,7 @@ archive/issue_comments_069345.json:
 
 Replying to [comment:8 pbruin]:
 > It would be even nicer to also have a coercion map from `K` to `QQbar`
+
 OK, there is already a ticket for this: #5355.  Positive review for this one.
 
 

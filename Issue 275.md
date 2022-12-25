@@ -3,7 +3,7 @@
 archive/issues_000275.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: matrix groups\n\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix groups\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
     "created_at": "2007-02-21T20:34:05Z",
     "labels": [
         "component: algebraic geometry",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 Keywords: matrix groups
 
-
 ```
 sage: G = SL(2, CC)
 sage: G.gens()
@@ -34,7 +33,6 @@ $sage17:=SL(2, Complex Field with 53 bits of precision);;
 
    executing $sage17:=SL(2, Complex Field with 53 bits of precision);;
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/275
 

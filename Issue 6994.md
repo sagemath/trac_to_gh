@@ -71,7 +71,7 @@ archive/issue_comments_057740.json:
 archive/issue_comments_057741.json:
 ```json
 {
-    "body": "Hmm, well, it seems to be working fine on my copy of OSX.5.8.  Maybe someone else who knows something about makefiles should comment on this...\n\nMaybe this would be a good time to improve that documentation about things like\n\n```\nsage: plot(x^3,-10,-1)\n```\n\nwhich almost looks like they should intersect but they don't... that's already a ticket somewhere.\n\nAnyway, I don't have time to finish a review now, but so far everything looks fine, and as I said it built fine.",
+    "body": "Hmm, well, it seems to be working fine on my copy of OSX.5.8.  Maybe someone else who knows something about makefiles should comment on this...\n\nMaybe this would be a good time to improve that documentation about things like\n\n```\nsage: plot(x^3,-10,-1)\n```\nwhich almost looks like they should intersect but they don't... that's already a ticket somewhere.\n\nAnyway, I don't have time to finish a review now, but so far everything looks fine, and as I said it built fine.",
     "created_at": "2009-09-22T20:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6994",
     "type": "issue_comment",
@@ -87,7 +87,6 @@ Maybe this would be a good time to improve that documentation about things like
 ```
 sage: plot(x^3,-10,-1)
 ```
-
 which almost looks like they should intersect but they don't... that's already a ticket somewhere.
 
 Anyway, I don't have time to finish a review now, but so far everything looks fine, and as I said it built fine.
@@ -99,7 +98,7 @@ Anyway, I don't have time to finish a review now, but so far everything looks fi
 archive/issue_comments_057742.json:
 ```json
 {
-    "body": "I get the following failure, probably due to a deprecated module...\n\n```\nsage -t  \"devel/sage/sage/plot/colors.py\"                   \n**********************************************************************\nFile \"/Users/.../sage-4.1.2.alpha2/devel/sage/sage/plot/colors.py\", line 193:\n    sage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)\nException raised:\n    Traceback (most recent call last):\n<snip>\n      File \"/Users/.../sage-4.1.2.alpha2/local/lib/python/site-packages/matplotlib/backends/tkagg.py\", line 1, in <module>\n        import _tkagg\n    ImportError: No module named _tkagg\n*****************************************************************\n```\n\nSimilar ones in plot.py in lines 213 ff. and around line 1960, as well as in scatterplot.py. \n\nThere are also a couple failures in plot.py related to savefig and fig.  Otherwise everything seem okay.",
+    "body": "I get the following failure, probably due to a deprecated module...\n\n```\nsage -t  \"devel/sage/sage/plot/colors.py\"                   \n**********************************************************************\nFile \"/Users/.../sage-4.1.2.alpha2/devel/sage/sage/plot/colors.py\", line 193:\n    sage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)\nException raised:\n    Traceback (most recent call last):\n<snip>\n      File \"/Users/.../sage-4.1.2.alpha2/local/lib/python/site-packages/matplotlib/backends/tkagg.py\", line 1, in <module>\n        import _tkagg\n    ImportError: No module named _tkagg\n*****************************************************************\n```\nSimilar ones in plot.py in lines 213 ff. and around line 1960, as well as in scatterplot.py. \n\nThere are also a couple failures in plot.py related to savefig and fig.  Otherwise everything seem okay.",
     "created_at": "2009-09-22T20:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6994",
     "type": "issue_comment",
@@ -123,7 +122,6 @@ Exception raised:
     ImportError: No module named _tkagg
 *****************************************************************
 ```
-
 Similar ones in plot.py in lines 213 ff. and around line 1960, as well as in scatterplot.py. 
 
 There are also a couple failures in plot.py related to savefig and fig.  Otherwise everything seem okay.

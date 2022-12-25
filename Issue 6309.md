@@ -71,7 +71,7 @@ tweak to be compatibe with #6141, which changes facets to facets().
 archive/issue_comments_050256.json:
 ```json
 {
-    "body": "Attachment [6309-2.patch](tarball://root/attachments/some-uuid/ticket6309/6309-2.patch) by @jhpalmieri created at 2009-06-17 17:19:24\n\nThe patch doesn't apply cleanly; does this depend on #6099?\n\nThe `remove_facet` method needs some doctests.  It also seems to have a line using self.facets, not self.facets().  Would it in fact make sense to just combine this with `remove_face`?  That is, rewrite `remove_face`: first check if the face being removed is a facet, in which case use your code.  Otherwise, use the old, presumably slower, code. I don't think we need two separate methods.  And before removing it, you should probably check that it's actually a facet: make sure it's not a face of any other facet.\n\nSimilarly, the `is_connected` method might fail if the complex was constructed with `maximality_check` False.\n\nYou might check your `is_connected` method for speed -- compare to this:\n\n```\nreturn self.graph().is_connected()\n```\n\nI expect that yours will be faster, even after the maximality check.  If you keep your code, you could put in a doctest like\n\n```\nsage: K = simplicial_complexes.RandomComplex(8,1)     [or some other simplicial complex]\nsage: K.is_connected() == K.graph().is_connected()\nTrue\n```\n",
+    "body": "Attachment [6309-2.patch](tarball://root/attachments/some-uuid/ticket6309/6309-2.patch) by @jhpalmieri created at 2009-06-17 17:19:24\n\nThe patch doesn't apply cleanly; does this depend on #6099?\n\nThe `remove_facet` method needs some doctests.  It also seems to have a line using self.facets, not self.facets().  Would it in fact make sense to just combine this with `remove_face`?  That is, rewrite `remove_face`: first check if the face being removed is a facet, in which case use your code.  Otherwise, use the old, presumably slower, code. I don't think we need two separate methods.  And before removing it, you should probably check that it's actually a facet: make sure it's not a face of any other facet.\n\nSimilarly, the `is_connected` method might fail if the complex was constructed with `maximality_check` False.\n\nYou might check your `is_connected` method for speed -- compare to this:\n\n```\nreturn self.graph().is_connected()\n```\nI expect that yours will be faster, even after the maximality check.  If you keep your code, you could put in a doctest like\n\n```\nsage: K = simplicial_complexes.RandomComplex(8,1)     [or some other simplicial complex]\nsage: K.is_connected() == K.graph().is_connected()\nTrue\n```",
     "created_at": "2009-06-17T17:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -93,7 +93,6 @@ You might check your `is_connected` method for speed -- compare to this:
 ```
 return self.graph().is_connected()
 ```
-
 I expect that yours will be faster, even after the maximality check.  If you keep your code, you could put in a doctest like
 
 ```
@@ -104,13 +103,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_050257.json:
 ```json
 {
-    "body": "It does not (shouldn't) rely on 6099. It applied cleanly for me to 4.0.2.rc1 once I created the second patch.\n\nI agree with merging remove_facet() with remove_face(). And, I will try to make things robust with the maximality_check=False.\n\nAs for is_connected(), consider the following behavior:\n\n```\nsage: T = SimplicialComplex(5,[[1,2,3],[4]])\nsage: T.graph().is_connected()\nTrue\nsage: T.is_connected()\nFalse\n```\n\nWhich should be correct?",
+    "body": "It does not (shouldn't) rely on 6099. It applied cleanly for me to 4.0.2.rc1 once I created the second patch.\n\nI agree with merging remove_facet() with remove_face(). And, I will try to make things robust with the maximality_check=False.\n\nAs for is_connected(), consider the following behavior:\n\n```\nsage: T = SimplicialComplex(5,[[1,2,3],[4]])\nsage: T.graph().is_connected()\nTrue\nsage: T.is_connected()\nFalse\n```\nWhich should be correct?",
     "created_at": "2009-06-17T19:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -132,7 +130,6 @@ True
 sage: T.is_connected()
 False
 ```
-
 Which should be correct?
 
 
@@ -142,7 +139,7 @@ Which should be correct?
 archive/issue_comments_050258.json:
 ```json
 {
-    "body": "It looks like there's a bug in the graph method -- it shouldn't ignore isolated vertices.  I'll attach a patch for it.  \n\nWhen I applied the patch, the last part didn't apply because it couldn't find the line\n\n```\n     return SimplicialComplex(sub_vertex_set,faces,maximality_check=True) \n```\n\nwhich I think is added by #6099.",
+    "body": "It looks like there's a bug in the graph method -- it shouldn't ignore isolated vertices.  I'll attach a patch for it.  \n\nWhen I applied the patch, the last part didn't apply because it couldn't find the line\n\n```\n     return SimplicialComplex(sub_vertex_set,faces,maximality_check=True) \n```\nwhich I think is added by #6099.",
     "created_at": "2009-06-17T19:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6309",
     "type": "issue_comment",
@@ -158,7 +155,6 @@ When I applied the patch, the last part didn't apply because it couldn't find th
 ```
      return SimplicialComplex(sub_vertex_set,faces,maximality_check=True) 
 ```
-
 which I think is added by #6099.
 
 

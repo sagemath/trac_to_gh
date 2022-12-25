@@ -55,7 +55,7 @@ Michael
 archive/issue_comments_025225.json:
 ```json
 {
-    "body": "Moved the `import` further in, which was fine (didn't slow things down).\n\nMichael, should we add the following as a doctest somewhere?\n\n\n```\nsage: search_src(\"^import\", \"numpy\")\n\nsage: search_src(\"^from\", \"numpy\")\n\n```\n",
+    "body": "Moved the `import` further in, which was fine (didn't slow things down).\n\nMichael, should we add the following as a doctest somewhere?\n\n```\nsage: search_src(\"^import\", \"numpy\")\n\nsage: search_src(\"^from\", \"numpy\")\n\n```",
     "created_at": "2008-11-07T18:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
@@ -68,14 +68,12 @@ Moved the `import` further in, which was fine (didn't slow things down).
 
 Michael, should we add the following as a doctest somewhere?
 
-
 ```
 sage: search_src("^import", "numpy")
 
 sage: search_src("^from", "numpy")
 
 ```
-
 
 
 
@@ -205,7 +203,7 @@ Changing priority from major to blocker.
 archive/issue_comments_025231.json:
 ```json
 {
-    "body": "There is a slight problem:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_data.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/rings/number_field/totallyreal_data.pyx\", line 200:\n    sage: [RealField(10)(x) for x in ls]\nExpected:\n    [-1.0000, -1.0000]\nGot:\n    [-1.0, -1.0]\n**********************************************************************\n1 items had failures:\n```\n",
+    "body": "There is a slight problem:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_data.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/rings/number_field/totallyreal_data.pyx\", line 200:\n    sage: [RealField(10)(x) for x in ls]\nExpected:\n    [-1.0000, -1.0000]\nGot:\n    [-1.0, -1.0]\n**********************************************************************\n1 items had failures:\n```",
     "created_at": "2008-11-09T08:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
@@ -228,7 +226,6 @@ Got:
 **********************************************************************
 1 items had failures:
 ```
-
 
 
 

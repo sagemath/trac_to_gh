@@ -226,7 +226,7 @@ I am collecting these ideas and include then in a reviewer patch which comes (ho
 archive/issue_comments_093073.json:
 ```json
 {
-    "body": "Replying to [comment:9 robert.marik]:\n> practice_differentiating_polynomials does not work as expected\n\nI know, it's something odd about the state transitions and I just did not have enough patience ...\n\n> \n> I think that it is better to enter limits from keyboard for trapezoidal and Simpson integration rather than input from slider.\n\nOk, well, I like the range slider better. It's a matter of taste but the reason for that is that I tried to make it as intuitive as possible and that includes using mouse handles than having to type in numbers.\n\nI'm fine with your other comments.",
+    "body": "Replying to [comment:9 robert.marik]:\n> practice_differentiating_polynomials does not work as expected\n\n\nI know, it's something odd about the state transitions and I just did not have enough patience ...\n\n> \n> I think that it is better to enter limits from keyboard for trapezoidal and Simpson integration rather than input from slider.\n\n\nOk, well, I like the range slider better. It's a matter of taste but the reason for that is that I tried to make it as intuitive as possible and that includes using mouse handles than having to type in numbers.\n\nI'm fine with your other comments.",
     "created_at": "2010-08-16T10:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -238,10 +238,12 @@ archive/issue_comments_093073.json:
 Replying to [comment:9 robert.marik]:
 > practice_differentiating_polynomials does not work as expected
 
+
 I know, it's something odd about the state transitions and I just did not have enough patience ...
 
 > 
 > I think that it is better to enter limits from keyboard for trapezoidal and Simpson integration rather than input from slider.
+
 
 Ok, well, I like the range slider better. It's a matter of taste but the reason for that is that I tried to make it as intuitive as possible and that includes using mouse handles than having to type in numbers.
 
@@ -254,7 +256,7 @@ I'm fine with your other comments.
 archive/issue_comments_093074.json:
 ```json
 {
-    "body": "Replying to [comment:10 schilly]:\n> \n> Ok, well, I like the range slider better. \n\nOn the other hand, with sliders you cannot integrate from 0 to 1. I changed the interacts for trapezoidal and simpson rule and they accept both input from slider and keyboard. I hope, this is intuitive enough. \n\nI tested all interacts and give a positive review (removed practice_differentiating_polynomials which does not work as expected)\n\nAdded interact for bisection, since it is close to secant method and newton method.\n\nAdded interact for definition of Riemann integral, which is close to trapezoidal rule and Simpson formula, removed. \n\nFixed one deprecation warning. Added titles to (most) of the interacts. Added tables for computation related to Simpson and trapezoidal rule.\n\nPositive review for 9623-interact-examples.patch! Thank you for the patch. I wonder if the layout parameter in interact can be used also with library_interact.\n\nI included reviewer patch in 9623-interact-examples2.patch. Could you or someone else review my changes?",
+    "body": "Replying to [comment:10 schilly]:\n> \n> Ok, well, I like the range slider better. \n\n\nOn the other hand, with sliders you cannot integrate from 0 to 1. I changed the interacts for trapezoidal and simpson rule and they accept both input from slider and keyboard. I hope, this is intuitive enough. \n\nI tested all interacts and give a positive review (removed practice_differentiating_polynomials which does not work as expected)\n\nAdded interact for bisection, since it is close to secant method and newton method.\n\nAdded interact for definition of Riemann integral, which is close to trapezoidal rule and Simpson formula, removed. \n\nFixed one deprecation warning. Added titles to (most) of the interacts. Added tables for computation related to Simpson and trapezoidal rule.\n\nPositive review for 9623-interact-examples.patch! Thank you for the patch. I wonder if the layout parameter in interact can be used also with library_interact.\n\nI included reviewer patch in 9623-interact-examples2.patch. Could you or someone else review my changes?",
     "created_at": "2010-08-17T14:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -266,6 +268,7 @@ archive/issue_comments_093074.json:
 Replying to [comment:10 schilly]:
 > 
 > Ok, well, I like the range slider better. 
+
 
 On the other hand, with sliders you cannot integrate from 0 to 1. I changed the interacts for trapezoidal and simpson rule and they accept both input from slider and keyboard. I hope, this is intuitive enough. 
 
@@ -517,7 +520,7 @@ Apply only this patch; using Jason's idea from #10622
 archive/issue_comments_093086.json:
 ```json
 {
-    "body": "Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by @kcrisman created at 2011-01-13 19:12:48\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
+    "body": "Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by @kcrisman created at 2011-01-13 19:12:48\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\n\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
     "created_at": "2011-01-13T19:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -530,6 +533,7 @@ Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachme
 
 Agreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.
 > Also, did we ever get the issue about how these are doctested figured out?
+
 I can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.
 
 
@@ -628,7 +632,7 @@ archive/issue_events_023983.json:
 archive/issue_comments_093089.json:
 ```json
 {
-    "body": "Replying to [comment:20 jason]:\n> No, I don't think we ever had any conclusion about doctesting them.\nOkay, then I would say a prerequisite for positive review is opening a ticket for figuring out what to do about that.  Do you (or anyone else) have any objections to incorporating this nonetheless?  I think it's far more useful than whatever bitrot may occur in the interacts themselves over time, to be honest, and at least provides a nice place to put them all.",
+    "body": "Replying to [comment:20 jason]:\n> No, I don't think we ever had any conclusion about doctesting them.\n\nOkay, then I would say a prerequisite for positive review is opening a ticket for figuring out what to do about that.  Do you (or anyone else) have any objections to incorporating this nonetheless?  I think it's far more useful than whatever bitrot may occur in the interacts themselves over time, to be honest, and at least provides a nice place to put them all.",
     "created_at": "2011-01-14T01:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -639,6 +643,7 @@ archive/issue_comments_093089.json:
 
 Replying to [comment:20 jason]:
 > No, I don't think we ever had any conclusion about doctesting them.
+
 Okay, then I would say a prerequisite for positive review is opening a ticket for figuring out what to do about that.  Do you (or anyone else) have any objections to incorporating this nonetheless?  I think it's far more useful than whatever bitrot may occur in the interacts themselves over time, to be honest, and at least provides a nice place to put them all.
 
 
@@ -705,7 +710,7 @@ Actually, maybe the best thing to do is put the hemisphere and coin interacts on
 archive/issue_comments_093093.json:
 ```json
 {
-    "body": "Replying to [comment:26 jason]:\n> Actually, maybe the best thing to do is put the hemisphere and coin interacts on another ticket, and let everything else go in.  That would be better than contributing interacts that clearly need work.\nOkay, if someone else doesn't, I'll try to take care of that tonight.  We certainly want the interacts in the library to be top-notch.",
+    "body": "Replying to [comment:26 jason]:\n> Actually, maybe the best thing to do is put the hemisphere and coin interacts on another ticket, and let everything else go in.  That would be better than contributing interacts that clearly need work.\n\nOkay, if someone else doesn't, I'll try to take care of that tonight.  We certainly want the interacts in the library to be top-notch.",
     "created_at": "2011-01-15T20:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -716,6 +721,7 @@ archive/issue_comments_093093.json:
 
 Replying to [comment:26 jason]:
 > Actually, maybe the best thing to do is put the hemisphere and coin interacts on another ticket, and let everything else go in.  That would be better than contributing interacts that clearly need work.
+
 Okay, if someone else doesn't, I'll try to take care of that tonight.  We certainly want the interacts in the library to be top-notch.
 
 
@@ -743,7 +749,7 @@ Getting rid of the hemisphere and coin interacts sounds good to me.  I like the 
 archive/issue_comments_093095.json:
 ```json
 {
-    "body": "Replying to [comment:28 mhampton]:\n> Getting rid of the hemisphere and coin interacts sounds good to me.  I like the coin one, thought it was totally self-explanatory, but clearly I'm in the minority.\n\nI agree in that I can think of only one interpretation for the y-axis.  Explaining what it must be could be a good exercise when using it.",
+    "body": "Replying to [comment:28 mhampton]:\n> Getting rid of the hemisphere and coin interacts sounds good to me.  I like the coin one, thought it was totally self-explanatory, but clearly I'm in the minority.\n\n\nI agree in that I can think of only one interpretation for the y-axis.  Explaining what it must be could be a good exercise when using it.",
     "created_at": "2011-01-15T21:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -754,6 +760,7 @@ archive/issue_comments_093095.json:
 
 Replying to [comment:28 mhampton]:
 > Getting rid of the hemisphere and coin interacts sounds good to me.  I like the coin one, thought it was totally self-explanatory, but clearly I'm in the minority.
+
 
 I agree in that I can think of only one interpretation for the y-axis.  Explaining what it must be could be a good exercise when using it.
 
@@ -916,7 +923,7 @@ This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, wit
 archive/issue_comments_093101.json:
 ```json
 {
-    "body": "Replying to [comment:33 mhampton]:\n> This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, with all its faults, and incrementally improve through more tickets.  From that standpoint, not showing up in the reference manual might be a good thing in the short term.  \n\nI just needed someone to review my changes - I agree totally!  I just had to make the most needed changes, and there were enough that I didn't feel comfortable giving positive review.\n\nSo if you think it's fine, do positive review!  Please feel free to open all these followup tickets too :)",
+    "body": "Replying to [comment:33 mhampton]:\n> This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, with all its faults, and incrementally improve through more tickets.  From that standpoint, not showing up in the reference manual might be a good thing in the short term.  \n\n\nI just needed someone to review my changes - I agree totally!  I just had to make the most needed changes, and there were enough that I didn't feel comfortable giving positive review.\n\nSo if you think it's fine, do positive review!  Please feel free to open all these followup tickets too :)",
     "created_at": "2011-03-29T13:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -927,6 +934,7 @@ archive/issue_comments_093101.json:
 
 Replying to [comment:33 mhampton]:
 > This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, with all its faults, and incrementally improve through more tickets.  From that standpoint, not showing up in the reference manual might be a good thing in the short term.  
+
 
 I just needed someone to review my changes - I agree totally!  I just had to make the most needed changes, and there were enough that I didn't feel comfortable giving positive review.
 
@@ -1089,7 +1097,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_093110.json:
 ```json
 {
-    "body": "Replying to [comment:40 kcrisman]:\n> This is an example of the kind of not-really-necessary thing that really delays tickets.  When it was written, it was 2010!\n\nNote that changing the year was only a trivial change, I made the headers compliant with the developers manual [http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files)",
+    "body": "Replying to [comment:40 kcrisman]:\n> This is an example of the kind of not-really-necessary thing that really delays tickets.  When it was written, it was 2010!\n\n\nNote that changing the year was only a trivial change, I made the headers compliant with the developers manual [http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files)",
     "created_at": "2011-04-12T12:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1100,6 +1108,7 @@ archive/issue_comments_093110.json:
 
 Replying to [comment:40 kcrisman]:
 > This is an example of the kind of not-really-necessary thing that really delays tickets.  When it was written, it was 2010!
+
 
 Note that changing the year was only a trivial change, I made the headers compliant with the developers manual [http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files)
 
@@ -1308,7 +1317,7 @@ Resolution: fixed
 archive/issue_comments_093119.json:
 ```json
 {
-    "body": "A question for anyone who contributed to this ticket: the file `library_cython.pyx` has this code in it:\n\n```\ncpdef cellular(rule, int N):\n    '''\n    Cythonized helper function for the callular_automata fractal.\n    Yields a matrix showing the evolution of a Wolfram's cellular automaton.\n    Based on work by Pablo Angulo.\n    http://wiki.sagemath.org/interact/misc#CellularAutomata\n    \n    INPUT:\n\n        - `rule` -- determines how a cell's value is updated, depending on its neighbors\n        - `N` -- number of iterations\n\n    TESTS::\n\n        sage: from sage.interacts.library_cython import cellular\n        sage: rule = [1, 0, 1, 0, 0, 1, 1, 0]\n        sage: N = 3\n        sage: print cellular(rule, 3)\n\n    '''\n```\n\nNote that the output from the last line of the doctest is missing.  Since the docstring is enclosed in triple single quotes instead of triple double quotes, doctesting skipped this altogether.  At #8708, there is a patch which will now run doctests within triple single quotes, in which case this file has one failure.\n\nSo the question is: what is the output supposed to be?  When I run this command, I get\n\n```\n        sage: print cellular(rule, 3)\n        [[0 0 0 1 0 0 0]\n         [0 0 0 1 0 0 0]\n         [0 1 0 1 0 1 0]]\n```\n\nIs this right?  I don't know what the mathematics here is trying to do, so I really have no idea...",
+    "body": "A question for anyone who contributed to this ticket: the file `library_cython.pyx` has this code in it:\n\n```\ncpdef cellular(rule, int N):\n    '''\n    Cythonized helper function for the callular_automata fractal.\n    Yields a matrix showing the evolution of a Wolfram's cellular automaton.\n    Based on work by Pablo Angulo.\n    http://wiki.sagemath.org/interact/misc#CellularAutomata\n    \n    INPUT:\n\n        - `rule` -- determines how a cell's value is updated, depending on its neighbors\n        - `N` -- number of iterations\n\n    TESTS::\n\n        sage: from sage.interacts.library_cython import cellular\n        sage: rule = [1, 0, 1, 0, 0, 1, 1, 0]\n        sage: N = 3\n        sage: print cellular(rule, 3)\n\n    '''\n```\nNote that the output from the last line of the doctest is missing.  Since the docstring is enclosed in triple single quotes instead of triple double quotes, doctesting skipped this altogether.  At #8708, there is a patch which will now run doctests within triple single quotes, in which case this file has one failure.\n\nSo the question is: what is the output supposed to be?  When I run this command, I get\n\n```\n        sage: print cellular(rule, 3)\n        [[0 0 0 1 0 0 0]\n         [0 0 0 1 0 0 0]\n         [0 1 0 1 0 1 0]]\n```\nIs this right?  I don't know what the mathematics here is trying to do, so I really have no idea...",
     "created_at": "2011-09-29T05:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1341,7 +1350,6 @@ cpdef cellular(rule, int N):
 
     '''
 ```
-
 Note that the output from the last line of the doctest is missing.  Since the docstring is enclosed in triple single quotes instead of triple double quotes, doctesting skipped this altogether.  At #8708, there is a patch which will now run doctests within triple single quotes, in which case this file has one failure.
 
 So the question is: what is the output supposed to be?  When I run this command, I get
@@ -1352,7 +1360,6 @@ So the question is: what is the output supposed to be?  When I run this command,
          [0 0 0 1 0 0 0]
          [0 1 0 1 0 1 0]]
 ```
-
 Is this right?  I don't know what the mathematics here is trying to do, so I really have no idea...
 
 
@@ -1362,7 +1369,7 @@ Is this right?  I don't know what the mathematics here is trying to do, so I rea
 archive/issue_comments_093120.json:
 ```json
 {
-    "body": "There's also a typo - \"callular\" isn't an adjective I'm familiar with in Wolfram's work :)  And `N` is not actually used in the rule.\n\nSee [this MathWorld site](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) for the descriptions.  The rule is given by binary, so this rule is `2+4+32+128=166`.  It looks like there is in fact an error; I'm having a lot of trouble getting the rules to do what they should with things like rules 1 or 2.  \n\nHere's the problem:\n\n```\n        for k in range(N-j, N+j+1):\n```\n\ninstead of \n\n```\n for k in range(0,2*N):\n```\n\nas on the wiki.  Someone thought they'd be smart and only update the cells that \"need\" updating... but that totally screws it up, as ALL cells might need updating if e.g. the rule has the final binary digit = 1.  \n\nI'm opening a ticket for this.  Thanks a lot for catching this, John.",
+    "body": "There's also a typo - \"callular\" isn't an adjective I'm familiar with in Wolfram's work :)  And `N` is not actually used in the rule.\n\nSee [this MathWorld site](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) for the descriptions.  The rule is given by binary, so this rule is `2+4+32+128=166`.  It looks like there is in fact an error; I'm having a lot of trouble getting the rules to do what they should with things like rules 1 or 2.  \n\nHere's the problem:\n\n```\n        for k in range(N-j, N+j+1):\n```\ninstead of \n\n```\n for k in range(0,2*N):\n```\nas on the wiki.  Someone thought they'd be smart and only update the cells that \"need\" updating... but that totally screws it up, as ALL cells might need updating if e.g. the rule has the final binary digit = 1.  \n\nI'm opening a ticket for this.  Thanks a lot for catching this, John.",
     "created_at": "2011-09-29T13:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1380,13 +1387,11 @@ Here's the problem:
 ```
         for k in range(N-j, N+j+1):
 ```
-
 instead of 
 
 ```
  for k in range(0,2*N):
 ```
-
 as on the wiki.  Someone thought they'd be smart and only update the cells that "need" updating... but that totally screws it up, as ALL cells might need updating if e.g. the rule has the final binary digit = 1.  
 
 I'm opening a ticket for this.  Thanks a lot for catching this, John.
@@ -1416,7 +1421,7 @@ This is now #11871.  John, if you want that ticket to "fix" the quoting issue as
 archive/issue_comments_093122.json:
 ```json
 {
-    "body": "Replying to [comment:30 kcrisman]:\n>  * Polar prime spiral plot point issue.\n\nSee #22665 for a follow-up on this.",
+    "body": "Replying to [comment:30 kcrisman]:\n>  * Polar prime spiral plot point issue.\n\n\nSee #22665 for a follow-up on this.",
     "created_at": "2017-03-21T13:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1428,6 +1433,7 @@ archive/issue_comments_093122.json:
 Replying to [comment:30 kcrisman]:
 >  * Polar prime spiral plot point issue.
 
+
 See #22665 for a follow-up on this.
 
 
@@ -1437,7 +1443,7 @@ See #22665 for a follow-up on this.
 archive/issue_comments_093123.json:
 ```json
 {
-    "body": "Replying to [comment:30 kcrisman]:\n>  * Figuring out how to truly doctest them.  For instance, there could at least be a search for deprecation warnings, or even random input typed... but at least more than just checking that an html block is formed.\n\nSee #22644 for some real tests using Jupyter.",
+    "body": "Replying to [comment:30 kcrisman]:\n>  * Figuring out how to truly doctest them.  For instance, there could at least be a search for deprecation warnings, or even random input typed... but at least more than just checking that an html block is formed.\n\n\nSee #22644 for some real tests using Jupyter.",
     "created_at": "2017-03-21T13:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
@@ -1448,5 +1454,6 @@ archive/issue_comments_093123.json:
 
 Replying to [comment:30 kcrisman]:
 >  * Figuring out how to truly doctest them.  For instance, there could at least be a search for deprecation warnings, or even random input typed... but at least more than just checking that an html block is formed.
+
 
 See #22644 for some real tests using Jupyter.

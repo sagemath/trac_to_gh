@@ -192,7 +192,7 @@ archive/issue_events_001827.json:
 archive/issue_comments_003543.json:
 ```json
 {
-    "body": "Do we want any more functionality than in the following example?\n\n```\nsage: G=DirichletGroup(4)\nsage: chi=G[1]\nsage: E=EisensteinForms(chi,1)\nsage: f=E.eisenstein_series()[0]\nsage: f.q_expansion(40)\n1/4 + q + q^2 + q^4 + 2*q^5 + q^8 + q^9 + 2*q^10 + 2*q^13 + q^16 + 2*q^17 + q^18 + 2*q^20 + 3*q^25 + 2*q^26 + 2*q^29 + q^32 + 2*q^34 + q^36 + 2*q^37 + O(q^40)\n```\n\nIf not, maybe we can close this as fixed/wontfix/whatever_is_appropriate.",
+    "body": "Do we want any more functionality than in the following example?\n\n```\nsage: G=DirichletGroup(4)\nsage: chi=G[1]\nsage: E=EisensteinForms(chi,1)\nsage: f=E.eisenstein_series()[0]\nsage: f.q_expansion(40)\n1/4 + q + q^2 + q^4 + 2*q^5 + q^8 + q^9 + 2*q^10 + 2*q^13 + q^16 + 2*q^17 + q^18 + 2*q^20 + 3*q^25 + 2*q^26 + 2*q^29 + q^32 + 2*q^34 + q^36 + 2*q^37 + O(q^40)\n```\nIf not, maybe we can close this as fixed/wontfix/whatever_is_appropriate.",
     "created_at": "2014-04-24T20:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
@@ -211,7 +211,6 @@ sage: f=E.eisenstein_series()[0]
 sage: f.q_expansion(40)
 1/4 + q + q^2 + q^4 + 2*q^5 + q^8 + q^9 + 2*q^10 + 2*q^13 + q^16 + 2*q^17 + q^18 + 2*q^20 + 3*q^25 + 2*q^26 + 2*q^29 + q^32 + 2*q^34 + q^36 + 2*q^37 + O(q^40)
 ```
-
 If not, maybe we can close this as fixed/wontfix/whatever_is_appropriate.
 
 

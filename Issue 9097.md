@@ -3,7 +3,7 @@
 archive/issues_009097.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies f.r.bissey@massey.ac.nz\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n\n```\n#error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\nERROR installing SAGE\n\nreal\t0m4.020s\nuser\t0m1.014s\nsys\t0m2.138s\nsage: An error occurred while installing sage-4.4.2\n```\n\n\n## Likely cause\nIt looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9097\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies f.r.bissey@massey.ac.nz\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n```\n#error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\nERROR installing SAGE\n\nreal\t0m4.020s\nuser\t0m1.014s\nsys\t0m2.138s\nsage: An error occurred while installing sage-4.4.2\n```\n\n## Likely cause\nIt looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9097\n\n",
     "created_at": "2010-05-31T00:49:01Z",
     "labels": [
         "component: porting: solaris",
@@ -29,7 +29,6 @@ CC:  @jaapspies f.r.bissey@massey.ac.nz
 ## How gcc 4.4.4 was configured
 Since the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. 
 
-
 ```
 drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
@@ -39,11 +38,9 @@ Thread model: posix
 gcc version 4.4.4 (GCC) 
 ```
 
-
 gcc 4.3.4 was failing to build iconv. 
 
 ## The problem
-
 
 ```
 #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
@@ -80,7 +77,6 @@ user	0m1.014s
 sys	0m2.138s
 sage: An error occurred while installing sage-4.4.2
 ```
-
 
 ## Likely cause
 It looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. 
@@ -189,7 +185,7 @@ Log file of building on OpenSolaris x64. The section where files are extracted f
 archive/issue_comments_084387.json:
 ```json
 {
-    "body": "Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097/sage-4.5.alpha1.log) by drkirkby created at 2010-07-01 00:09:43\n\nI'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines\n\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\": \n    env.Append( CFLAGS=\"-O2 -g -m64\" ) \n    env.Append( CXXFLAGS=\"-O2 -g -m64\" ) \n    env.Append( LINKFLAGS=\"-m64\" ) \n```\n\n\nthe build fails after only 40 lines or so. \n\nThere are some remaining issues to resolve, but this patch, which is only implemented if SAGE64 is set to yes and the operating system is **not** OS X, goes a long way towards helping a 64-bit port to OpenSolaris. \n\nDave",
+    "body": "Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097/sage-4.5.alpha1.log) by drkirkby created at 2010-07-01 00:09:43\n\nI'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\": \n    env.Append( CFLAGS=\"-O2 -g -m64\" ) \n    env.Append( CXXFLAGS=\"-O2 -g -m64\" ) \n    env.Append( LINKFLAGS=\"-m64\" ) \n```\n\nthe build fails after only 40 lines or so. \n\nThere are some remaining issues to resolve, but this patch, which is only implemented if SAGE64 is set to yes and the operating system is **not** OS X, goes a long way towards helping a 64-bit port to OpenSolaris. \n\nDave",
     "created_at": "2010-07-01T00:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -202,14 +198,12 @@ Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097
 
 I'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines
 
-
 ```
 if env['PLATFORM'] != "darwin" and os.environ['SAGE64']=="yes": 
     env.Append( CFLAGS="-O2 -g -m64" ) 
     env.Append( CXXFLAGS="-O2 -g -m64" ) 
     env.Append( LINKFLAGS="-m64" ) 
 ```
-
 
 the build fails after only 40 lines or so. 
 
@@ -224,7 +218,7 @@ Dave
 archive/issue_comments_084388.json:
 ```json
 {
-    "body": "I think the patch does the job. But I want to suggest the following patch (sorry I\nhave broken browsers right now because of a messy libpng update and I cannot use the\nattachment form):\n\n\n```\n--- SConstruct.orig\t2010-05-26 12:13:50.000000000 +1200\n+++ SConstruct\t2010-07-01 13:28:53.605754354 +1200\n@@ -105,15 +105,15 @@\n ## The other two options control the way the linker creates a namespace\n ## for the dynamic library; check the man page for ld on a mac to see\n ## the details.\n+if os.environ['SAGE64']==\"yes\":\n+    # We want the debug and optimization flags, since debug symbols are so useful, etc.\n+    print \"MacIntel in 64 bit mode\"\n+    env.Append( CFLAGS=\"-O2 -g -m64\" )\n+    env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n+    env.Append( LINKFLAGS=\"-m64\" )\n+\n if env['PLATFORM']==\"darwin\":\n-    if os.environ['SAGE64']==\"yes\":\n-        # We want the debug and optimization flags, since debug symbols are so useful, etc.\n-        print \"MacIntel in 64 bit mode\"\n-        env.Append( CFLAGS=\"-O2 -g -m64\" )\n-        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n-        env.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n-    else:\n-        env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n+    env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n \n # SCons doesn't automatically pull in system environment variables\n # However, we only need SAGE_LOCAL, so that's easy.\n```\n\nI think this simplify the logic. The building of extension afterwards is separate.",
+    "body": "I think the patch does the job. But I want to suggest the following patch (sorry I\nhave broken browsers right now because of a messy libpng update and I cannot use the\nattachment form):\n\n```\n--- SConstruct.orig\t2010-05-26 12:13:50.000000000 +1200\n+++ SConstruct\t2010-07-01 13:28:53.605754354 +1200\n@@ -105,15 +105,15 @@\n ## The other two options control the way the linker creates a namespace\n ## for the dynamic library; check the man page for ld on a mac to see\n ## the details.\n+if os.environ['SAGE64']==\"yes\":\n+    # We want the debug and optimization flags, since debug symbols are so useful, etc.\n+    print \"MacIntel in 64 bit mode\"\n+    env.Append( CFLAGS=\"-O2 -g -m64\" )\n+    env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n+    env.Append( LINKFLAGS=\"-m64\" )\n+\n if env['PLATFORM']==\"darwin\":\n-    if os.environ['SAGE64']==\"yes\":\n-        # We want the debug and optimization flags, since debug symbols are so useful, etc.\n-        print \"MacIntel in 64 bit mode\"\n-        env.Append( CFLAGS=\"-O2 -g -m64\" )\n-        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n-        env.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n-    else:\n-        env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n+    env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n \n # SCons doesn't automatically pull in system environment variables\n # However, we only need SAGE_LOCAL, so that's easy.\n```\nI think this simplify the logic. The building of extension afterwards is separate.",
     "created_at": "2010-07-01T01:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -236,7 +230,6 @@ archive/issue_comments_084388.json:
 I think the patch does the job. But I want to suggest the following patch (sorry I
 have broken browsers right now because of a messy libpng update and I cannot use the
 attachment form):
-
 
 ```
 --- SConstruct.orig	2010-05-26 12:13:50.000000000 +1200
@@ -266,7 +259,6 @@ attachment form):
  # SCons doesn't automatically pull in system environment variables
  # However, we only need SAGE_LOCAL, so that's easy.
 ```
-
 I think this simplify the logic. The building of extension afterwards is separate.
 
 
@@ -312,7 +304,7 @@ Cleaner and proper patch with the same ideas previously shown
 archive/issue_comments_084391.json:
 ```json
 {
-    "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by @kiwifb created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
+    "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by @kiwifb created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
     "created_at": "2010-07-01T09:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -328,7 +320,6 @@ Note that the space in
 ```
 LINKFLAGS=" -single_module -flat_namespace -undefined dynamic_lookup"
 ```
-
 is on purpose as scons concatenate strings. We don't want to end
 up with "-m64-single_module".
 
@@ -422,7 +413,7 @@ that could try it? 32/64 bit should be irrelevant.
 archive/issue_comments_084396.json:
 ```json
 {
-    "body": "Replying to [comment:8 fbissey]:\n> Since this touch the OSX build as well do we have a tester for OSX \n> that could try it? 32/64 bit should be irrelevant.\n\nI've tested this on OS X, and it works fine:\n\n\n```\n[kirkby@bsd sage-4.5.alpha1]$ uname -a \nDarwin bsd.local 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n[kirkby@bsd sage-4.5.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: 1+1\n2\nsage: Quit\nExiting Sage (CPU time 0m0.04s, Wall time 0m4.44s).\n[kirkby@bsd sage-4.5.alpha1]$ \n```\n\n| Sage Version 4.5.alpha1, Release Date: 2010-06-29                  |\n| Type notebook() for the GUI, and license() for information.        |\nI agree your solution was cleaner than mine, but the reason I wrote it the way I did, was to guarantee that it could have no effect on OS X. \n\nI've also tested it on Linux (sage.math). \n\nDave",
+    "body": "Replying to [comment:8 fbissey]:\n> Since this touch the OSX build as well do we have a tester for OSX \n> that could try it? 32/64 bit should be irrelevant.\n\n\nI've tested this on OS X, and it works fine:\n\n```\n[kirkby@bsd sage-4.5.alpha1]$ uname -a \nDarwin bsd.local 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n[kirkby@bsd sage-4.5.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: 1+1\n2\nsage: Quit\nExiting Sage (CPU time 0m0.04s, Wall time 0m4.44s).\n[kirkby@bsd sage-4.5.alpha1]$ \n```\n| Sage Version 4.5.alpha1, Release Date: 2010-06-29                  |\n| Type notebook() for the GUI, and license() for information.        |\nI agree your solution was cleaner than mine, but the reason I wrote it the way I did, was to guarantee that it could have no effect on OS X. \n\nI've also tested it on Linux (sage.math). \n\nDave",
     "created_at": "2010-07-05T15:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
@@ -435,8 +426,8 @@ Replying to [comment:8 fbissey]:
 > Since this touch the OSX build as well do we have a tester for OSX 
 > that could try it? 32/64 bit should be irrelevant.
 
-I've tested this on OS X, and it works fine:
 
+I've tested this on OS X, and it works fine:
 
 ```
 [kirkby@bsd sage-4.5.alpha1]$ uname -a 
@@ -455,7 +446,6 @@ sage: Quit
 Exiting Sage (CPU time 0m0.04s, Wall time 0m4.44s).
 [kirkby@bsd sage-4.5.alpha1]$ 
 ```
-
 | Sage Version 4.5.alpha1, Release Date: 2010-06-29                  |
 | Type notebook() for the GUI, and license() for information.        |
 I agree your solution was cleaner than mine, but the reason I wrote it the way I did, was to guarantee that it could have no effect on OS X. 

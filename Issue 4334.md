@@ -106,7 +106,7 @@ Jaap
 archive/issue_comments_031719.json:
 ```json
 {
-    "body": "Just to move this toward being optional (not experimental), some comments.\n\n1. The spkg-install is\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ more spkg-install \n#!/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i cmake-2.4.8\nsage -i vtk-5.2\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*\n```\n\n\nEach comment, e.g., the \"sage -i\"'s should have some test that it actually worked before going further.  You could check error codes, or check that the appropriate spkg/installed file exists.\n\n2. The format of the changelog in SPKG.txt is wrong:\n\n```\n## Changelog\n * Initial release mayvi2_2.0.20080106 - Jan. 6th, 2008 - Jaap Spies\n * mayavi2_2.0.20080117 - Jan. 17th, 2008 - Jaap Spies\n```\n\nJust see any SPKG.txt that is standard for the right format. \n\n3. spkg-install and SPKG.txt should be in an .hg repo:\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ ls -a\n.  ..  spkg-install  SPKG.txt  src\n```\n\nOne should do \n\n```\nhg init\nhg add spkg-install SPKG.txt\nhg ci\n```\n\n\nI didn't actually test this though...",
+    "body": "Just to move this toward being optional (not experimental), some comments.\n\n1. The spkg-install is\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ more spkg-install \n#!/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i cmake-2.4.8\nsage -i vtk-5.2\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*\n```\n\nEach comment, e.g., the \"sage -i\"'s should have some test that it actually worked before going further.  You could check error codes, or check that the appropriate spkg/installed file exists.\n\n2. The format of the changelog in SPKG.txt is wrong:\n\n```\n## Changelog\n * Initial release mayvi2_2.0.20080106 - Jan. 6th, 2008 - Jaap Spies\n * mayavi2_2.0.20080117 - Jan. 17th, 2008 - Jaap Spies\n```\nJust see any SPKG.txt that is standard for the right format. \n\n3. spkg-install and SPKG.txt should be in an .hg repo:\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ ls -a\n.  ..  spkg-install  SPKG.txt  src\n```\nOne should do \n\n```\nhg init\nhg add spkg-install SPKG.txt\nhg ci\n```\n\nI didn't actually test this though...",
     "created_at": "2008-11-29T03:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
@@ -135,7 +135,6 @@ python egg_builder.py -r -v
 easy_install -f dist -H dist enthought.mayavi*
 ```
 
-
 Each comment, e.g., the "sage -i"'s should have some test that it actually worked before going further.  You could check error codes, or check that the appropriate spkg/installed file exists.
 
 2. The format of the changelog in SPKG.txt is wrong:
@@ -145,7 +144,6 @@ Each comment, e.g., the "sage -i"'s should have some test that it actually worke
  * Initial release mayvi2_2.0.20080106 - Jan. 6th, 2008 - Jaap Spies
  * mayavi2_2.0.20080117 - Jan. 17th, 2008 - Jaap Spies
 ```
-
 Just see any SPKG.txt that is standard for the right format. 
 
 3. spkg-install and SPKG.txt should be in an .hg repo:
@@ -154,7 +152,6 @@ Just see any SPKG.txt that is standard for the right format.
 was@sage:~/tmp/mayavi_2.2.1$ ls -a
 .  ..  spkg-install  SPKG.txt  src
 ```
-
 One should do 
 
 ```
@@ -162,7 +159,6 @@ hg init
 hg add spkg-install SPKG.txt
 hg ci
 ```
-
 
 I didn't actually test this though...
 
@@ -264,7 +260,7 @@ archive/issue_events_009809.json:
 archive/issue_comments_031723.json:
 ```json
 {
-    "body": "\n```\nHi William,\n\nThanks for your comments.\nA problem for moving to optional is lacking a mac version of wxPython and vtk.\nThis is certainly doable. The enthought people are doing this all the time.\n\n\n    Do you know anybody besides you who uses mayavi etc. via sage?\n\n\nIn the past Marshal Hampton, Jason Grout, Joshua Kantor and Carl Witty\nshowed interest. Some of them even installed the package.\n\nI'm now testing a comlete Enthought Tools Suite ETS-3.0.3.\nIncluding a newer version of mayavi_2.\n```\n",
+    "body": "```\nHi William,\n\nThanks for your comments.\nA problem for moving to optional is lacking a mac version of wxPython and vtk.\nThis is certainly doable. The enthought people are doing this all the time.\n\n\n    Do you know anybody besides you who uses mayavi etc. via sage?\n\n\nIn the past Marshal Hampton, Jason Grout, Joshua Kantor and Carl Witty\nshowed interest. Some of them even installed the package.\n\nI'm now testing a comlete Enthought Tools Suite ETS-3.0.3.\nIncluding a newer version of mayavi_2.\n```",
     "created_at": "2008-11-29T18:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
@@ -272,7 +268,6 @@ archive/issue_comments_031723.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Hi William,
@@ -291,4 +286,3 @@ showed interest. Some of them even installed the package.
 I'm now testing a comlete Enthought Tools Suite ETS-3.0.3.
 Including a newer version of mayavi_2.
 ```
-

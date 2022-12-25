@@ -326,7 +326,7 @@ As for the distinction  between polynomial_element and polynomial_element_generi
 archive/issue_comments_079450.json:
 ```json
 {
-    "body": "> [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]\n\nYes, in my experience this is ok and actually happens frequently.",
+    "body": "> [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]\n\n\nYes, in my experience this is ok and actually happens frequently.",
     "created_at": "2012-02-08T18:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
@@ -336,6 +336,7 @@ archive/issue_comments_079450.json:
 ```
 
 > [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]
+
 
 Yes, in my experience this is ok and actually happens frequently.
 
@@ -420,7 +421,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_079455.json:
 ```json
 {
-    "body": "Replying to [comment:12 saraedum]:\n> I wonder if this \"new base ring\" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?\n\nThat is a good idea, we should implement that. So the strategy would be the following: If a new base ring is given, then we use it, otherwise, we check if the function knowns its codomain and if yes use it, otherwise we do not change the base ring.",
+    "body": "Replying to [comment:12 saraedum]:\n> I wonder if this \"new base ring\" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?\n\n\nThat is a good idea, we should implement that. So the strategy would be the following: If a new base ring is given, then we use it, otherwise, we check if the function knowns its codomain and if yes use it, otherwise we do not change the base ring.",
     "created_at": "2012-02-10T12:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
@@ -431,6 +432,7 @@ archive/issue_comments_079455.json:
 
 Replying to [comment:12 saraedum]:
 > I wonder if this "new base ring" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?
+
 
 That is a good idea, we should implement that. So the strategy would be the following: If a new base ring is given, then we use it, otherwise, we check if the function knowns its codomain and if yes use it, otherwise we do not change the base ring.
 

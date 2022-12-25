@@ -3,7 +3,7 @@
 archive/issues_004770.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis should work:\n\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
+    "body": "Assignee: @malb\n\nThis should work:\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
     "created_at": "2008-12-12T16:34:29Z",
     "labels": [
         "component: calculus"
@@ -19,14 +19,12 @@ Assignee: @malb
 
 This should work:
 
-
 ```
 sage: t = maxima.cputime()
 sage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])
 sage: maxima.cputime(t)
 0.568913
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4770
 

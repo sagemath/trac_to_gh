@@ -239,7 +239,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_006193.json:
 ```json
 {
-    "body": "This needs to be rebased to sage-5.0.beta9:\n\n```\napplying trac_1013-whitespace_removed.patch\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #1 succeeded at 3268 with fuzz 2 (offset 1875 lines).\n```\n",
+    "body": "This needs to be rebased to sage-5.0.beta9:\n\n```\napplying trac_1013-whitespace_removed.patch\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #1 succeeded at 3268 with fuzz 2 (offset 1875 lines).\n```",
     "created_at": "2012-03-23T16:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -255,7 +255,6 @@ applying trac_1013-whitespace_removed.patch
 patching file sage/matrix/matrix_double_dense.pyx
 Hunk #1 succeeded at 3268 with fuzz 2 (offset 1875 lines).
 ```
-
 
 
 
@@ -322,7 +321,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_006197.json:
 ```json
 {
-    "body": "Replying to [comment:8 davidloeffler]:\n> Apply trac_1013-rebase.patch\n> \n> Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.\n...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.",
+    "body": "Replying to [comment:8 davidloeffler]:\n> Apply trac_1013-rebase.patch\n> \n> Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.\n\n...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.",
     "created_at": "2012-03-26T13:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -335,6 +334,7 @@ Replying to [comment:8 davidloeffler]:
 > Apply trac_1013-rebase.patch
 > 
 > Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.
+
 ...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.
 
 
@@ -344,7 +344,7 @@ Replying to [comment:8 davidloeffler]:
 archive/issue_comments_006198.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 davidloeffler]:\n> > Apply trac_1013-rebase.patch\n> > \n> > Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.\n> ...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.\n\nIt did, and I did, and it was fine. :-)",
+    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 davidloeffler]:\n> > Apply trac_1013-rebase.patch\n> > \n> > Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.\n\n> ...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.\n\nIt did, and I did, and it was fine. :-)",
     "created_at": "2012-03-26T13:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1013",
     "type": "issue_comment",
@@ -358,6 +358,7 @@ Replying to [comment:9 jdemeyer]:
 > > Apply trac_1013-rebase.patch
 > > 
 > > Here's the rebase. Since I didn't actually do anything, just hg import / qpush / refresh / export, I think it's valid for me just to restate the positive review.
+
 > ...provided you did a sanity check that the patch was applied correctly.  1875 lines of offset certainly should raise your eyebrows.
 
 It did, and I did, and it was fine. :-)

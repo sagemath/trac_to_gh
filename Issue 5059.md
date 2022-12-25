@@ -89,7 +89,7 @@ Looks good and works great.
 archive/issue_comments_038463.json:
 ```json
 {
-    "body": "Unfortunately this patch breaks two doctests:\n\n```\n        sage -t -long devel/sage/sage/modular/congroup.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/congroup_element.py # 1 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "Unfortunately this patch breaks two doctests:\n\n```\n        sage -t -long devel/sage/sage/modular/congroup.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/congroup_element.py # 1 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T09:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Unfortunately this patch breaks two doctests:
         sage -t -long devel/sage/sage/modular/congroup.py # 5 doctests failed
         sage -t -long devel/sage/sage/modular/congroup_element.py # 1 doctests failed
 ```
-
 
 Cheers,
 

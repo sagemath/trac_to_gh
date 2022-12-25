@@ -3,7 +3,7 @@
 archive/issues_005384.json:
 ```json
 {
-    "body": "In sage 3.4.alpha0 (and sage 3.3):\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5384\n\n",
+    "body": "In sage 3.4.alpha0 (and sage 3.3):\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5384\n\n",
     "created_at": "2009-02-26T05:19:16Z",
     "labels": [
         "component: symbolics",
@@ -25,7 +25,6 @@ y
 sage: (y-1)*(y-2)
 (y - 2)^2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5384
 
@@ -74,7 +73,7 @@ doctests for the fix
 archive/issue_comments_041388.json:
 ```json
 {
-    "body": "Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by @burcin created at 2009-02-26 13:25:27\n\nThere is a new pynac package which includes the fix for this here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.3.spkg\n\nTo make the review easier, here is the patch for pynac\n\n\n```\ndiff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp\n--- a/ginac/expairseq.cpp\n+++ b/ginac/expairseq.cpp\n@@ -510,13 +510,6 @@\n \tif (seq.size() != o.seq.size())\n \t\treturn (seq.size()<o.seq.size()) ? -1 : 1;\n \n-\t// compare overall_coeff\n-\t/*\n-\tcmpval = overall_coeff.compare(o.overall_coeff);\n-\tif (cmpval!=0)\n-\t\treturn cmpval;\n-\t\t*/\n-\t\n #if EXPAIRSEQ_USE_HASHTAB\n \tGINAC_ASSERT(hashtabsize==o.hashtabsize);\n \tif (hashtabsize==0) {\n@@ -534,6 +527,11 @@\n \t\tGINAC_ASSERT(cit1==last1);\n \t\tGINAC_ASSERT(cit2==last2);\n \t\n+\t\t// compare overall_coeff\n+\t\tcmpval = overall_coeff.compare(o.overall_coeff);\n+\t\tif (cmpval!=0)\n+\t\t\treturn cmpval;\n+\t\n \t\treturn 0;\n #if EXPAIRSEQ_USE_HASHTAB\n \t}\n```\n\n\nattachment:trac_5384-pynac_compare_add.patch adds the example in the description as a doctest.",
+    "body": "Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by @burcin created at 2009-02-26 13:25:27\n\nThere is a new pynac package which includes the fix for this here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.3.spkg\n\nTo make the review easier, here is the patch for pynac\n\n```\ndiff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp\n--- a/ginac/expairseq.cpp\n+++ b/ginac/expairseq.cpp\n@@ -510,13 +510,6 @@\n \tif (seq.size() != o.seq.size())\n \t\treturn (seq.size()<o.seq.size()) ? -1 : 1;\n \n-\t// compare overall_coeff\n-\t/*\n-\tcmpval = overall_coeff.compare(o.overall_coeff);\n-\tif (cmpval!=0)\n-\t\treturn cmpval;\n-\t\t*/\n-\t\n #if EXPAIRSEQ_USE_HASHTAB\n \tGINAC_ASSERT(hashtabsize==o.hashtabsize);\n \tif (hashtabsize==0) {\n@@ -534,6 +527,11 @@\n \t\tGINAC_ASSERT(cit1==last1);\n \t\tGINAC_ASSERT(cit2==last2);\n \t\n+\t\t// compare overall_coeff\n+\t\tcmpval = overall_coeff.compare(o.overall_coeff);\n+\t\tif (cmpval!=0)\n+\t\t\treturn cmpval;\n+\t\n \t\treturn 0;\n #if EXPAIRSEQ_USE_HASHTAB\n \t}\n```\n\nattachment:trac_5384-pynac_compare_add.patch adds the example in the description as a doctest.",
     "created_at": "2009-02-26T13:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
@@ -90,7 +89,6 @@ There is a new pynac package which includes the fix for this here:
 http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.3.spkg
 
 To make the review easier, here is the patch for pynac
-
 
 ```
 diff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp
@@ -124,7 +122,6 @@ diff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp
  	}
 ```
 
-
 attachment:trac_5384-pynac_compare_add.patch adds the example in the description as a doctest.
 
 
@@ -152,7 +149,7 @@ Changing status from new to assigned.
 archive/issue_comments_041390.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch **trac_5384-pynac_compare_add.patch** applied OK against 3.4.alpha0. I upgraded to the new Pynac spkg with this command\n\n```\nsage -i -f /path/to/pynac-0.1.3.spkg\n```\n\nand ran all doctests with\n\n```\nsage -t -long -optional /path/to/devel/sage-main/sage/symbolic/\n```\n\nand received these results:\n\n```\nsage -t -long -optional \"devel/sage-main/sage/symbolic/pynac.pyx\"\n         [2.8 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/expression.pyx\"\n         [9.0 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/constants.pyx\"\n         [0.1 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/ring.pyx\"\n         [2.1 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/function.pyx\"\n         [3.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.0 seconds\n```\n\nThe above patch adds this new doctest:\n\n```\n# check if comparison of constant terms in pynac add objects work \nsage: (y-1)*(y-2) \n(y - 2)*(y - 1)\n```\n\nto `sage.symbolic.expression.pyx`, but on #5384 I see this reported bug:\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\n\nJust to make sure, again I tested the last 2 lines after having applied the patch and upgraded to the new spkg:\n\n```\nsage: var(\"y\", ns=1)\ny\nsage: (y - 1) * (y - 2)\n(y - 2)*(y - 1)\n```\n\nLooks to me that the patch and the new spkg fixes the reported problem. So positive review on my part.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch **trac_5384-pynac_compare_add.patch** applied OK against 3.4.alpha0. I upgraded to the new Pynac spkg with this command\n\n```\nsage -i -f /path/to/pynac-0.1.3.spkg\n```\nand ran all doctests with\n\n```\nsage -t -long -optional /path/to/devel/sage-main/sage/symbolic/\n```\nand received these results:\n\n```\nsage -t -long -optional \"devel/sage-main/sage/symbolic/pynac.pyx\"\n         [2.8 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/expression.pyx\"\n         [9.0 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/constants.pyx\"\n         [0.1 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/ring.pyx\"\n         [2.1 s]\nsage -t -long -optional \"devel/sage-main/sage/symbolic/function.pyx\"\n         [3.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.0 seconds\n```\nThe above patch adds this new doctest:\n\n```\n# check if comparison of constant terms in pynac add objects work \nsage: (y-1)*(y-2) \n(y - 2)*(y - 1)\n```\nto `sage.symbolic.expression.pyx`, but on #5384 I see this reported bug:\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\nJust to make sure, again I tested the last 2 lines after having applied the patch and upgraded to the new spkg:\n\n```\nsage: var(\"y\", ns=1)\ny\nsage: (y - 1) * (y - 2)\n(y - 2)*(y - 1)\n```\nLooks to me that the patch and the new spkg fixes the reported problem. So positive review on my part.",
     "created_at": "2009-02-28T03:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
@@ -170,13 +167,11 @@ The patch **trac_5384-pynac_compare_add.patch** applied OK against 3.4.alpha0. I
 ```
 sage -i -f /path/to/pynac-0.1.3.spkg
 ```
-
 and ran all doctests with
 
 ```
 sage -t -long -optional /path/to/devel/sage-main/sage/symbolic/
 ```
-
 and received these results:
 
 ```
@@ -195,7 +190,6 @@ sage -t -long -optional "devel/sage-main/sage/symbolic/function.pyx"
 All tests passed!
 Total time for all tests: 17.0 seconds
 ```
-
 The above patch adds this new doctest:
 
 ```
@@ -203,7 +197,6 @@ The above patch adds this new doctest:
 sage: (y-1)*(y-2) 
 (y - 2)*(y - 1)
 ```
-
 to `sage.symbolic.expression.pyx`, but on #5384 I see this reported bug:
 
 ```
@@ -212,7 +205,6 @@ y
 sage: (y-1)*(y-2)
 (y - 2)^2
 ```
-
 Just to make sure, again I tested the last 2 lines after having applied the patch and upgraded to the new spkg:
 
 ```
@@ -221,7 +213,6 @@ y
 sage: (y - 1) * (y - 2)
 (y - 2)*(y - 1)
 ```
-
 Looks to me that the patch and the new spkg fixes the reported problem. So positive review on my part.
 
 

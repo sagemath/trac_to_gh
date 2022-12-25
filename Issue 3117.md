@@ -3,7 +3,7 @@
 archive/issues_003117.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nHi,\n\nWhether or not an element of R/I is zero must not depend on the term order. However, behold:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='neglex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\n0\n```\n\n\nwhereas\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='lex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\nxbar\nsage: xbar != 0\nTrue\n```\n\n\nNOTE: I don't even know what neglex is (\"negative lex\", whatever that is). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3117\n\n",
+    "body": "Assignee: @malb\n\nHi,\n\nWhether or not an element of R/I is zero must not depend on the term order. However, behold:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='neglex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\n0\n```\n\nwhereas\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='lex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\nxbar\nsage: xbar != 0\nTrue\n```\n\nNOTE: I don't even know what neglex is (\"negative lex\", whatever that is). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3117\n\n",
     "created_at": "2008-05-07T03:08:55Z",
     "labels": [
         "component: commutative algebra",
@@ -29,7 +29,6 @@ sage: xbar
 0
 ```
 
-
 whereas
 
 ```
@@ -40,7 +39,6 @@ xbar
 sage: xbar != 0
 True
 ```
-
 
 NOTE: I don't even know what neglex is ("negative lex", whatever that is). 
 
@@ -96,7 +94,7 @@ Resolution: invalid
 archive/issue_comments_021536.json:
 ```json
 {
-    "body": "Michael Brickenstein wrote (my translation):\n\n```\ny^2 - x^3 - x -1\nis a unit in Singular if you calculate in 'ls'. If you take a quotient of \nthat zero is the answer.\n\nSingular there works with the localisation of the polynomial ring \nby all polynomials with constant leading term. Check a commutative \nalgebra book about localisation.\n```\n",
+    "body": "Michael Brickenstein wrote (my translation):\n\n```\ny^2 - x^3 - x -1\nis a unit in Singular if you calculate in 'ls'. If you take a quotient of \nthat zero is the answer.\n\nSingular there works with the localisation of the polynomial ring \nby all polynomials with constant leading term. Check a commutative \nalgebra book about localisation.\n```",
     "created_at": "2008-06-03T14:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3117",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ Singular there works with the localisation of the polynomial ring
 by all polynomials with constant leading term. Check a commutative 
 algebra book about localisation.
 ```
-
 
 
 

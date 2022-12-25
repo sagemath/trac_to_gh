@@ -3,7 +3,7 @@
 archive/issues_001124.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: zero_subspace\n\nHere is a bug in modular symbols code:\n\n``` \nsage: M=ModularSymbols(11,2,1)\nsage: M.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/ambient_module.py in complement(self)\n     96         Return the largest Hecke-stable complement of this space.\n     97         \"\"\"\n---> 98         return self.zero_subspace()\n     99\n    100     def decomposition_matrix(self):\n\n<type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'\n```\n\n\nThe problem is that zero_subspace is not implemented. Although zero_submodule is.\nOne possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1124\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: zero_subspace\n\nHere is a bug in modular symbols code:\n\n``` \nsage: M=ModularSymbols(11,2,1)\nsage: M.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/ambient_module.py in complement(self)\n     96         Return the largest Hecke-stable complement of this space.\n     97         \"\"\"\n---> 98         return self.zero_subspace()\n     99\n    100     def decomposition_matrix(self):\n\n<type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'\n```\n\nThe problem is that zero_subspace is not implemented. Although zero_submodule is.\nOne possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1124\n\n",
     "created_at": "2007-11-07T18:07:46Z",
     "labels": [
         "component: modular forms",
@@ -40,7 +40,6 @@ sage: M.complement()
 
 <type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'
 ```
-
 
 The problem is that zero_subspace is not implemented. Although zero_submodule is.
 One possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.

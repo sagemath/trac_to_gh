@@ -89,7 +89,7 @@ Resolution: duplicate
 archive/issue_comments_031523.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> This is a dupe of #4313\n\nThanks.  One day I'll succeed in creating a new ticket with a pre-existing patch without causing a duplication!",
+    "body": "Replying to [comment:1 mhansen]:\n> This is a dupe of #4313\n\n\nThanks.  One day I'll succeed in creating a new ticket with a pre-existing patch without causing a duplication!",
     "created_at": "2008-10-18T14:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4314",
     "type": "issue_comment",
@@ -100,5 +100,6 @@ archive/issue_comments_031523.json:
 
 Replying to [comment:1 mhansen]:
 > This is a dupe of #4313
+
 
 Thanks.  One day I'll succeed in creating a new ticket with a pre-existing patch without causing a duplication!

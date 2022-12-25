@@ -110,7 +110,7 @@ Apply only this one (ignore the next one)
 archive/issue_comments_062178.json:
 ```json
 {
-    "body": "Since it's not yet integrated, I take the chance to solve this stupid bug:\n\n```\nsage: FiniteEnumeratedSet([1])\n{1,}\n```\n\nI'm re-uploading a patch with the following folded in\n\n```\ndiff --git a/sage/sets/finite_enumerated_set.py b/sage/sets/finite_enumerated_set.py\n--- a/sage/sets/finite_enumerated_set.py\n+++ b/sage/sets/finite_enumerated_set.py\n@@ -123,8 +123,13 @@ class FiniteEnumeratedSet(UniqueRepresen\n             sage: S = FiniteEnumeratedSet([1,2,3])\n             sage: repr(S)\n             '{1, 2, 3}'\n+            sage: S = FiniteEnumeratedSet([1])\n+            sage: repr(S)\n+            '{1}'\n         \"\"\"\n-        return \"{\"+str(self._elements)[1:-1] + '}'\n+        if len(self._elements) == 1: # avoid printing '{1,}'\n+            return \"{\" + str(self._elements[0]) + '}'\n+        return \"{\" + str(self._elements)[1:-1] + '}'\n \n     def __contains__(self, x):\n         \"\"\"\n```\n\n\nFlorent",
+    "body": "Since it's not yet integrated, I take the chance to solve this stupid bug:\n\n```\nsage: FiniteEnumeratedSet([1])\n{1,}\n```\nI'm re-uploading a patch with the following folded in\n\n```\ndiff --git a/sage/sets/finite_enumerated_set.py b/sage/sets/finite_enumerated_set.py\n--- a/sage/sets/finite_enumerated_set.py\n+++ b/sage/sets/finite_enumerated_set.py\n@@ -123,8 +123,13 @@ class FiniteEnumeratedSet(UniqueRepresen\n             sage: S = FiniteEnumeratedSet([1,2,3])\n             sage: repr(S)\n             '{1, 2, 3}'\n+            sage: S = FiniteEnumeratedSet([1])\n+            sage: repr(S)\n+            '{1}'\n         \"\"\"\n-        return \"{\"+str(self._elements)[1:-1] + '}'\n+        if len(self._elements) == 1: # avoid printing '{1,}'\n+            return \"{\" + str(self._elements[0]) + '}'\n+        return \"{\" + str(self._elements)[1:-1] + '}'\n \n     def __contains__(self, x):\n         \"\"\"\n```\n\nFlorent",
     "created_at": "2009-11-09T07:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ Since it's not yet integrated, I take the chance to solve this stupid bug:
 sage: FiniteEnumeratedSet([1])
 {1,}
 ```
-
 I'm re-uploading a patch with the following folded in
 
 ```
@@ -148,7 +147,6 @@ diff --git a/sage/sets/finite_enumerated_set.py b/sage/sets/finite_enumerated_se
      def __contains__(self, x):
          """
 ```
-
 
 Florent
 

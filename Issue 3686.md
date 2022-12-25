@@ -60,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3686
 archive/issue_comments_026076.json:
 ```json
 {
-    "body": "Let's display that readably:\n\n# Scripts missing #!/bin/sh lines in extcode-3.0.5.spkg:\n\n```\nmirror\npari/dokchitser/testall\nspkg-dist\n```\n\n\n# Files unnecessarily marked as executable in extcode-3.0.5.spkg\n\n```\njavascript/jsmath/plugins/autoload.js\njavascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/jsmath/plugins/autoload.js\nnotebook/javascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/farbtastic/marker.png\n```\n\n\n# Empty directories in extcode-3.0.5.spkg\n# (These look like they might have a purpose, but I'm not sure)\n\n```\ndist/\ngap/user/\ngenus2reduction/\ngnuplot/\nmacaulay2/user/\nmaple/user/\nmathematica/user/\nmatlab/user/\noctave/user/\nsage/user/\nsingular/user/\nsobj/\n```\n",
+    "body": "Let's display that readably:\n\n# Scripts missing #!/bin/sh lines in extcode-3.0.5.spkg:\n\n```\nmirror\npari/dokchitser/testall\nspkg-dist\n```\n\n# Files unnecessarily marked as executable in extcode-3.0.5.spkg\n\n```\njavascript/jsmath/plugins/autoload.js\njavascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/jsmath/plugins/autoload.js\nnotebook/javascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/farbtastic/marker.png\n```\n\n# Empty directories in extcode-3.0.5.spkg\n# (These look like they might have a purpose, but I'm not sure)\n\n```\ndist/\ngap/user/\ngenus2reduction/\ngnuplot/\nmacaulay2/user/\nmaple/user/\nmathematica/user/\nmatlab/user/\noctave/user/\nsage/user/\nsingular/user/\nsobj/\n```",
     "created_at": "2008-07-21T05:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3686",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ pari/dokchitser/testall
 spkg-dist
 ```
 
-
 # Files unnecessarily marked as executable in extcode-3.0.5.spkg
 
 ```
@@ -89,7 +88,6 @@ notebook/javascript/jsmath/plugins/autoload.js
 notebook/javascript/jsmath/plugins/CHMmode.js
 notebook/javascript/farbtastic/marker.png
 ```
-
 
 # Empty directories in extcode-3.0.5.spkg
 # (These look like they might have a purpose, but I'm not sure)
@@ -108,7 +106,6 @@ sage/user/
 singular/user/
 sobj/
 ```
-
 
 
 
@@ -139,7 +136,7 @@ By the way, the empty directories in the extcode spkg are for the Sage pexpect w
 archive/issue_comments_026078.json:
 ```json
 {
-    "body": "As well as applying the attached patch, one should run\n\n```\nchmod -x notebook/javascript/farbtastic/marker.png javascript/jsmath/plugins/CHMmode.js \nchmod -x javascript/jsmath/plugins/autoload.js notebook/javascript/jsmath/plugins/CHMmode.js \nchmod -x javascript/jsmath/plugins/CHMmode.js\n```\n\nfrom the root of the extcode spkg in order to close this ticket.",
+    "body": "As well as applying the attached patch, one should run\n\n```\nchmod -x notebook/javascript/farbtastic/marker.png javascript/jsmath/plugins/CHMmode.js \nchmod -x javascript/jsmath/plugins/autoload.js notebook/javascript/jsmath/plugins/CHMmode.js \nchmod -x javascript/jsmath/plugins/CHMmode.js\n```\nfrom the root of the extcode spkg in order to close this ticket.",
     "created_at": "2009-04-26T05:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3686",
     "type": "issue_comment",
@@ -155,7 +152,6 @@ chmod -x notebook/javascript/farbtastic/marker.png javascript/jsmath/plugins/CHM
 chmod -x javascript/jsmath/plugins/autoload.js notebook/javascript/jsmath/plugins/CHMmode.js 
 chmod -x javascript/jsmath/plugins/CHMmode.js
 ```
-
 from the root of the extcode spkg in order to close this ticket.
 
 

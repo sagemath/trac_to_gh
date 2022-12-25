@@ -72,7 +72,7 @@ Craig's ticket request is #2711.
 archive/issue_comments_018645.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncalexan]:\n> Craig's ticket request is #2711.\n\nThis was posted to the wrong ticket.",
+    "body": "Replying to [comment:2 ncalexan]:\n> Craig's ticket request is #2711.\n\n\nThis was posted to the wrong ticket.",
     "created_at": "2008-03-28T22:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_018645.json:
 
 Replying to [comment:2 ncalexan]:
 > Craig's ticket request is #2711.
+
 
 This was posted to the wrong ticket.
 

@@ -186,7 +186,7 @@ archive/issue_events_018545.json:
 archive/issue_comments_066669.json:
 ```json
 {
-    "body": "Replying to [comment:2 bump]:\n> It is a very substantial speed-up. It cuts a few \n> seconds off `sage -t weyl_groups.py` but more importantly it about doubles the speed of computing the reduced word of a Weyl group element, which is the basis of most combinatorial algorithms.\n\nHi Dan and Nicolas,\n\n\n\nI'm doing a release tour of the features of this ticket, see the [Sage wiki](http://wiki.sagemath.org/ReleaseTours/sage-4.3.1) page. Is there some sample code I could use to show the speed-up implemented by this ticket?",
+    "body": "Replying to [comment:2 bump]:\n> It is a very substantial speed-up. It cuts a few \n> seconds off `sage -t weyl_groups.py` but more importantly it about doubles the speed of computing the reduced word of a Weyl group element, which is the basis of most combinatorial algorithms.\n\n\nHi Dan and Nicolas,\n\n\n\nI'm doing a release tour of the features of this ticket, see the [Sage wiki](http://wiki.sagemath.org/ReleaseTours/sage-4.3.1) page. Is there some sample code I could use to show the speed-up implemented by this ticket?",
     "created_at": "2010-01-12T03:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
@@ -198,6 +198,7 @@ archive/issue_comments_066669.json:
 Replying to [comment:2 bump]:
 > It is a very substantial speed-up. It cuts a few 
 > seconds off `sage -t weyl_groups.py` but more importantly it about doubles the speed of computing the reduced word of a Weyl group element, which is the basis of most combinatorial algorithms.
+
 
 Hi Dan and Nicolas,
 
@@ -212,7 +213,7 @@ I'm doing a release tour of the features of this ticket, see the [Sage wiki](htt
 archive/issue_comments_066670.json:
 ```json
 {
-    "body": "> Hi Dan and Nicolas,\n> \n\n\n> I'm doing a release tour of the features of this ticket, see the [Sage wiki](http://wiki.sagemath.org/ReleaseTours/sage-4.3.1) page. Is there some sample code I could use to show the speed-up implemented by this ticket?\n\nYup, see the updated description!",
+    "body": "> Hi Dan and Nicolas,\n> \n\n\n\n> I'm doing a release tour of the features of this ticket, see the [Sage wiki](http://wiki.sagemath.org/ReleaseTours/sage-4.3.1) page. Is there some sample code I could use to show the speed-up implemented by this ticket?\n\n\nYup, see the updated description!",
     "created_at": "2010-01-12T10:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
@@ -225,6 +226,8 @@ archive/issue_comments_066670.json:
 > 
 
 
+
 > I'm doing a release tour of the features of this ticket, see the [Sage wiki](http://wiki.sagemath.org/ReleaseTours/sage-4.3.1) page. Is there some sample code I could use to show the speed-up implemented by this ticket?
+
 
 Yup, see the updated description!

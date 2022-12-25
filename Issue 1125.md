@@ -3,7 +3,7 @@
 archive/issues_001125.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> \n> Compiling from source using gcc-4.2.2, I get\n> \n> ***\n> x86-Linux, ia64-Linux\n> ***\n> While compiling cvxopt-0.8.2.p4, I get\n> \n> gcc -pthread -shared build/temp.linux-i686-2.5/C/base.o\n> build/temp.linux-i686-2.5/C/dense.o\n> build/temp.linux-i686-2.5/C/sparse.o\n> -L/home/kate/sage/sage-2.8.12-x86-Linux/local/lib\n> -L/home/kate/sage/sage-2.8.12-x86-Linux/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\n> -lm -llapack -lblas -lf95 -o build/lib.linux-i686-2.5/cvxopt/base.so\n> /usr/local/binutils-2.17/x86-Linux-gcc-4.1.1/bin/ld: cannot find -lf95\n\nThat's because you're using gfortran.  Evidently Josh's fix for cvxopt not fully working\nfails for people using gfortran.  I'll open a trac ticket. \n\n```\n\n\n\nThis either has to be properly fixed, or cvxopt has to be removed or something.\nWe need to make sure we fully support using gfortran.  Perhaps we should just\ncompletely switch to using gfortran and make having gfortran installed a requirement for building sage.  Tempting.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1125\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> \n> Compiling from source using gcc-4.2.2, I get\n> \n> ***\n> x86-Linux, ia64-Linux\n> ***\n> While compiling cvxopt-0.8.2.p4, I get\n> \n> gcc -pthread -shared build/temp.linux-i686-2.5/C/base.o\n> build/temp.linux-i686-2.5/C/dense.o\n> build/temp.linux-i686-2.5/C/sparse.o\n> -L/home/kate/sage/sage-2.8.12-x86-Linux/local/lib\n> -L/home/kate/sage/sage-2.8.12-x86-Linux/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\n> -lm -llapack -lblas -lf95 -o build/lib.linux-i686-2.5/cvxopt/base.so\n> /usr/local/binutils-2.17/x86-Linux-gcc-4.1.1/bin/ld: cannot find -lf95\n\nThat's because you're using gfortran.  Evidently Josh's fix for cvxopt not fully working\nfails for people using gfortran.  I'll open a trac ticket. \n\n```\n\n\nThis either has to be properly fixed, or cvxopt has to be removed or something.\nWe need to make sure we fully support using gfortran.  Perhaps we should just\ncompletely switch to using gfortran and make having gfortran installed a requirement for building sage.  Tempting.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1125\n\n",
     "created_at": "2007-11-07T19:06:15Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_001125.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 > 
@@ -41,7 +40,6 @@ That's because you're using gfortran.  Evidently Josh's fix for cvxopt not fully
 fails for people using gfortran.  I'll open a trac ticket. 
 
 ```
-
 
 
 This either has to be properly fixed, or cvxopt has to be removed or something.

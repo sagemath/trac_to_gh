@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3155
 archive/issue_comments_021843.json:
 ```json
 {
-    "body": "Knoboo deals with this problem by redirecting the user to the bookshelf. See http://trac.knoboo.com/browser/trunk/knoboo/knoboo/resources/user.py\n\n\n```\ndef render(self, request):\n    response = http.RedirectResponse(\"/bookshelf\")\n    response.headers.setHeader(\"set-cookie\", [http_headers.Cookie(\"sid\", self.cookie)])\n    return response\n```\n",
+    "body": "Knoboo deals with this problem by redirecting the user to the bookshelf. See http://trac.knoboo.com/browser/trunk/knoboo/knoboo/resources/user.py\n\n```\ndef render(self, request):\n    response = http.RedirectResponse(\"/bookshelf\")\n    response.headers.setHeader(\"set-cookie\", [http_headers.Cookie(\"sid\", self.cookie)])\n    return response\n```",
     "created_at": "2008-05-11T13:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3155",
     "type": "issue_comment",
@@ -53,14 +53,12 @@ archive/issue_comments_021843.json:
 
 Knoboo deals with this problem by redirecting the user to the bookshelf. See http://trac.knoboo.com/browser/trunk/knoboo/knoboo/resources/user.py
 
-
 ```
 def render(self, request):
     response = http.RedirectResponse("/bookshelf")
     response.headers.setHeader("set-cookie", [http_headers.Cookie("sid", self.cookie)])
     return response
 ```
-
 
 
 

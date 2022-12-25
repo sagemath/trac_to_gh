@@ -3,7 +3,7 @@
 archive/issues_002789.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis example from Genya Zaytman:\n\n\n```\nsage: F1.<u> = NumberField(x^6 + 6*x^5 + 124*x^4 + 452*x^3 + 4336*x^2 + 8200*x + 42316)\nsage: reduct_id = F1.factor_integer(47)[0][0]\nsage: Rf = F1.residue_field(reduct_id)   # = GF(47^3)\nsage: R1.<X,Y> = PolynomialRing(Rf)\nsage: ubar = Rf(u)\nsage: I = ideal([ubar*X+Y])\nsage: I.groebner_basis()\n[boom]\n```\n\n\nBasically all we're doing is working with polynomials over a finite field. Perhaps the singular interface can't handle the way the field is presented, or something like that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2789\n\n",
+    "body": "Assignee: somebody\n\nThis example from Genya Zaytman:\n\n```\nsage: F1.<u> = NumberField(x^6 + 6*x^5 + 124*x^4 + 452*x^3 + 4336*x^2 + 8200*x + 42316)\nsage: reduct_id = F1.factor_integer(47)[0][0]\nsage: Rf = F1.residue_field(reduct_id)   # = GF(47^3)\nsage: R1.<X,Y> = PolynomialRing(Rf)\nsage: ubar = Rf(u)\nsage: I = ideal([ubar*X+Y])\nsage: I.groebner_basis()\n[boom]\n```\n\nBasically all we're doing is working with polynomials over a finite field. Perhaps the singular interface can't handle the way the field is presented, or something like that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2789\n\n",
     "created_at": "2008-04-03T03:50:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 This example from Genya Zaytman:
 
-
 ```
 sage: F1.<u> = NumberField(x^6 + 6*x^5 + 124*x^4 + 452*x^3 + 4336*x^2 + 8200*x + 42316)
 sage: reduct_id = F1.factor_integer(47)[0][0]
@@ -31,7 +30,6 @@ sage: I = ideal([ubar*X+Y])
 sage: I.groebner_basis()
 [boom]
 ```
-
 
 Basically all we're doing is working with polynomials over a finite field. Perhaps the singular interface can't handle the way the field is presented, or something like that.
 

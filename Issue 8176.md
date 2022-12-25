@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071913.json:
 ```json
 {
-    "body": "Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by @jaapspies created at 2010-02-03 18:19:44\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by @jaapspies created at 2010-02-03 18:19:44\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\nJaap",
     "created_at": "2010-02-03T18:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
@@ -72,14 +72,12 @@ An spkgs can be found here:
 
 
 
-
 ```
 lib/libpng12.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 lib/libpng12.so.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 lib/libpng12.so.0.35.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 
 ```
-
 
 Jaap
 
@@ -90,7 +88,7 @@ Jaap
 archive/issue_comments_071914.json:
 ```json
 {
-    "body": "This line makes no sence whatsovever\n\n\n```\nif [ `uname` = \"x$SAGE64\" = xyes ]; then \n```\n\n\nYou must have a typo there. uname will return SunOS, not yes. \n\nDave",
+    "body": "This line makes no sence whatsovever\n\n```\nif [ `uname` = \"x$SAGE64\" = xyes ]; then \n```\n\nYou must have a typo there. uname will return SunOS, not yes. \n\nDave",
     "created_at": "2010-02-04T17:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
@@ -101,11 +99,9 @@ archive/issue_comments_071914.json:
 
 This line makes no sence whatsovever
 
-
 ```
 if [ `uname` = "x$SAGE64" = xyes ]; then 
 ```
-
 
 You must have a typo there. uname will return SunOS, not yes. 
 
@@ -180,7 +176,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071918.json:
 ```json
 {
-    "body": "That looks fine now. I see the -m64 flag is added, and it builds as 64-bit. I even checked it on a 64-bit SPARC, and see it builds as 64-bit there too. \n\n\n```\ndrkirkby@swan:[~/sage-4.3.2.rc0] $ file  local/lib/libpng12.so.0.35.0\nlocal/lib/libpng12.so.0.35.0:   ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\n\nso positive review. \n\nPS, for future reference, someone mentioned the other day it would be useful if the patch number was in the Mercurial commit message. That sounds quite logical to me. But there is nothing wrong with this.",
+    "body": "That looks fine now. I see the -m64 flag is added, and it builds as 64-bit. I even checked it on a 64-bit SPARC, and see it builds as 64-bit there too. \n\n```\ndrkirkby@swan:[~/sage-4.3.2.rc0] $ file  local/lib/libpng12.so.0.35.0\nlocal/lib/libpng12.so.0.35.0:   ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\nso positive review. \n\nPS, for future reference, someone mentioned the other day it would be useful if the patch number was in the Mercurial commit message. That sounds quite logical to me. But there is nothing wrong with this.",
     "created_at": "2010-02-04T19:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
@@ -191,12 +187,10 @@ archive/issue_comments_071918.json:
 
 That looks fine now. I see the -m64 flag is added, and it builds as 64-bit. I even checked it on a 64-bit SPARC, and see it builds as 64-bit there too. 
 
-
 ```
 drkirkby@swan:[~/sage-4.3.2.rc0] $ file  local/lib/libpng12.so.0.35.0
 local/lib/libpng12.so.0.35.0:   ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped
 ```
-
 
 so positive review. 
 

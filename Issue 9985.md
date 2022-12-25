@@ -3,7 +3,7 @@
 archive/issues_009985.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  cwitty@newtonlabs.com @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\nMPFI fails to build. The important part of the error message is:\n\n\n```\nchecking for gmp.h... yes\nchecking for valid GMP... yes\nchecking for mpfr.h... yes\nchecking MPFR library... configure: error: /home/users/drkirkby/sage-4.6.alpha1/local/lib/libmpfr.so or libmpfr.dylib not found\nError configuring mpfi\n\nreal    4m28.501s\nuser    0m52.337s\nsys     0m27.257s\nsage: An error occurred while installing mpfi-1.3.4-cvs20071125.p8\n```\n\n\nThe extension for shared libraries on AIX is .a - not .so or .dylib.\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9986\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  cwitty@newtonlabs.com @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\nMPFI fails to build. The important part of the error message is:\n\n```\nchecking for gmp.h... yes\nchecking for valid GMP... yes\nchecking for mpfr.h... yes\nchecking MPFR library... configure: error: /home/users/drkirkby/sage-4.6.alpha1/local/lib/libmpfr.so or libmpfr.dylib not found\nError configuring mpfi\n\nreal    4m28.501s\nuser    0m52.337s\nsys     0m27.257s\nsage: An error occurred while installing mpfi-1.3.4-cvs20071125.p8\n```\n\nThe extension for shared libraries on AIX is .a - not .so or .dylib.\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9986\n\n",
     "created_at": "2010-09-23T21:00:39Z",
     "labels": [
         "component: porting: aix or hp-ux",
@@ -34,7 +34,6 @@ Using the following system:
 
 MPFI fails to build. The important part of the error message is:
 
-
 ```
 checking for gmp.h... yes
 checking for valid GMP... yes
@@ -47,7 +46,6 @@ user    0m52.337s
 sys     0m27.257s
 sage: An error occurred while installing mpfi-1.3.4-cvs20071125.p8
 ```
-
 
 The extension for shared libraries on AIX is .a - not .so or .dylib.
 
@@ -122,7 +120,7 @@ Changing status from new to needs_info.
 archive/issue_comments_100170.json:
 ```json
 {
-    "body": "Replying to [comment:1 Snark]:\n> Could you give MPFI's latest svn a try (outside of sage, I mean)?\n> \n> I have looked at their latest sources just this morning, and it looked pretty good ; but I have no AIX box and only read the configure.ac...\n\nSure, my AIX box is not on now, but I'll try later. \n\nI later found out that .so is a permitted extension for the libraries on AIX, though all the systems libraries are .a. It appears the .a files can have both static and shared objects in the same library - I don't fully understand it, and are no AIX guru. I just have an old machine I bought long ago to ensure my code was portable. \n\nI'll give the svn a go later today after I've woke up properly and powered up the RS/6000. \n\nBTW, I'm not sure if you are an MPFI developer, but if so, and the latest svn does not work, you are welcome to have an account on the AIX box to try. Either way, on AIX, I think it would be useful if you permitted the .a extension too. \n\n\nDave",
+    "body": "Replying to [comment:1 Snark]:\n> Could you give MPFI's latest svn a try (outside of sage, I mean)?\n> \n> I have looked at their latest sources just this morning, and it looked pretty good ; but I have no AIX box and only read the configure.ac...\n\n\nSure, my AIX box is not on now, but I'll try later. \n\nI later found out that .so is a permitted extension for the libraries on AIX, though all the systems libraries are .a. It appears the .a files can have both static and shared objects in the same library - I don't fully understand it, and are no AIX guru. I just have an old machine I bought long ago to ensure my code was portable. \n\nI'll give the svn a go later today after I've woke up properly and powered up the RS/6000. \n\nBTW, I'm not sure if you are an MPFI developer, but if so, and the latest svn does not work, you are welcome to have an account on the AIX box to try. Either way, on AIX, I think it would be useful if you permitted the .a extension too. \n\n\nDave",
     "created_at": "2011-05-03T06:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9985",
     "type": "issue_comment",
@@ -135,6 +133,7 @@ Replying to [comment:1 Snark]:
 > Could you give MPFI's latest svn a try (outside of sage, I mean)?
 > 
 > I have looked at their latest sources just this morning, and it looked pretty good ; but I have no AIX box and only read the configure.ac...
+
 
 Sure, my AIX box is not on now, but I'll try later. 
 
@@ -154,7 +153,7 @@ Dave
 archive/issue_comments_100171.json:
 ```json
 {
-    "body": "Replying to [comment:1 Snark]:\n> Could you give MPFI's latest svn a try (outside of sage, I mean)?\n\nCan you please give me the command to get the latest svn snapshot. I tried googling, but can only find links to download stable versions, not snapshots. \n\nDave",
+    "body": "Replying to [comment:1 Snark]:\n> Could you give MPFI's latest svn a try (outside of sage, I mean)?\n\n\nCan you please give me the command to get the latest svn snapshot. I tried googling, but can only find links to download stable versions, not snapshots. \n\nDave",
     "created_at": "2011-05-03T06:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9985",
     "type": "issue_comment",
@@ -165,6 +164,7 @@ archive/issue_comments_100171.json:
 
 Replying to [comment:1 Snark]:
 > Could you give MPFI's latest svn a try (outside of sage, I mean)?
+
 
 Can you please give me the command to get the latest svn snapshot. I tried googling, but can only find links to download stable versions, not snapshots. 
 

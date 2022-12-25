@@ -72,7 +72,7 @@ archive/issue_events_000488.json:
 archive/issue_comments_001029.json:
 ```json
 {
-    "body": "Hello,\n\nI assume this has been done, due to the fact that we have\n\n```\n-rw-rw-r--  1 mabshoff mabshoff 436943 Aug 22 09:22 real_rqdf.cpp\n-rw-r--r--  1 mabshoff mabshoff   3592 Jun 30 09:09 real_rqdf.pxd\n-rw-r--r--  1 mabshoff mabshoff  49291 Aug 18 06:41 real_rqdf.pyx\n```\n\nin sage-2.8.2.rc3/devel/sage/sage/rings.\n\nFeel free to correct me.\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\nI assume this has been done, due to the fact that we have\n\n```\n-rw-rw-r--  1 mabshoff mabshoff 436943 Aug 22 09:22 real_rqdf.cpp\n-rw-r--r--  1 mabshoff mabshoff   3592 Jun 30 09:09 real_rqdf.pxd\n-rw-r--r--  1 mabshoff mabshoff  49291 Aug 18 06:41 real_rqdf.pyx\n```\nin sage-2.8.2.rc3/devel/sage/sage/rings.\n\nFeel free to correct me.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T20:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ I assume this has been done, due to the fact that we have
 -rw-r--r--  1 mabshoff mabshoff   3592 Jun 30 09:09 real_rqdf.pxd
 -rw-r--r--  1 mabshoff mabshoff  49291 Aug 18 06:41 real_rqdf.pyx
 ```
-
 in sage-2.8.2.rc3/devel/sage/sage/rings.
 
 Feel free to correct me.

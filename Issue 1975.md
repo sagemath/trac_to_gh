@@ -3,7 +3,7 @@
 archive/issues_001975.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
     "created_at": "2008-01-30T03:38:42Z",
     "labels": [
         "component: number theory",
@@ -17,7 +17,6 @@ archive/issues_001975.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -39,7 +38,6 @@ goes boom but didn't used to...
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1975
 
@@ -142,7 +140,7 @@ See also this [sage-support discussion](http://groups.google.com/group/sage-supp
 archive/issue_comments_012769.json:
 ```json
 {
-    "body": "The simplest workaround, I think, is to set \n\n```\nE._point_class = sage.schemes.elliptic_curves.ell_field.EllipticCurve_field\n```\n\nafter creating E and before attempting to create points.",
+    "body": "The simplest workaround, I think, is to set \n\n```\nE._point_class = sage.schemes.elliptic_curves.ell_field.EllipticCurve_field\n```\nafter creating E and before attempting to create points.",
     "created_at": "2010-05-04T17:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
@@ -156,7 +154,6 @@ The simplest workaround, I think, is to set
 ```
 E._point_class = sage.schemes.elliptic_curves.ell_field.EllipticCurve_field
 ```
-
 after creating E and before attempting to create points.
 
 
@@ -242,7 +239,7 @@ I'd really like to see this behavior, but I'm not sure this is the right fix--pr
 archive/issue_comments_012774.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> I'd really like to see this behavior, but I'm not sure this is the right fix--probably what should happen is that most of the generic, missing code should be moved up to a higher level. That would probably be a bit more invasive though. \n\nI rather expected this reaction -- but look, the *only* cases where this makes any difference is precisely the case of an \"elliptic curve over Z/NZ\".  Since ECM is something many people want to teach, why not allow this in now, pending a more rigorous implementation?  There is absolutely no effect from this patch on any elliptic curve defined over a field;  and I think this is much less dangerous than William's fix of telling a non-field to pretend that it is a field, surely?\n\nWe could ask for a vote...",
+    "body": "Replying to [comment:7 robertwb]:\n> I'd really like to see this behavior, but I'm not sure this is the right fix--probably what should happen is that most of the generic, missing code should be moved up to a higher level. That would probably be a bit more invasive though. \n\n\nI rather expected this reaction -- but look, the *only* cases where this makes any difference is precisely the case of an \"elliptic curve over Z/NZ\".  Since ECM is something many people want to teach, why not allow this in now, pending a more rigorous implementation?  There is absolutely no effect from this patch on any elliptic curve defined over a field;  and I think this is much less dangerous than William's fix of telling a non-field to pretend that it is a field, surely?\n\nWe could ask for a vote...",
     "created_at": "2010-05-05T21:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
@@ -253,6 +250,7 @@ archive/issue_comments_012774.json:
 
 Replying to [comment:7 robertwb]:
 > I'd really like to see this behavior, but I'm not sure this is the right fix--probably what should happen is that most of the generic, missing code should be moved up to a higher level. That would probably be a bit more invasive though. 
+
 
 I rather expected this reaction -- but look, the *only* cases where this makes any difference is precisely the case of an "elliptic curve over Z/NZ".  Since ECM is something many people want to teach, why not allow this in now, pending a more rigorous implementation?  There is absolutely no effect from this patch on any elliptic curve defined over a field;  and I think this is much less dangerous than William's fix of telling a non-field to pretend that it is a field, surely?
 

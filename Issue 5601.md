@@ -3,7 +3,7 @@
 archive/issues_005601.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
     "created_at": "2009-03-24T21:26:24Z",
     "labels": [
         "component: graphics",
@@ -37,7 +37,6 @@ See the end of http://groups.google.com/group/sage-support/browse_thread/thread/
     "grey"  : (.5,.5,.5) 
 ```
 
-
 * predefine a huge number of colors (all x11 or html color strings?), but stick them in the color
 namespace, so they would be accessed like color.goldenrod
 
@@ -52,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5601
 archive/issue_comments_043586.json:
 ```json
 {
-    "body": "Just for clarification, we do *NOT* want even red, orange, etc. all defined in the global namespace.  It would be OK for something like the following to work though:\n\n```\n sage: plot(sin(x), (x,0,1), color = colors.red)\n```\n\n\nMorever, I definitely definitely do not see any advantage at all to predefining a huge number of colors (Jason suggests all HTML -- that's 16777216 different colors!).  Instead one should be able to easily make colors... like you can already do right now.\n\n -- William",
+    "body": "Just for clarification, we do *NOT* want even red, orange, etc. all defined in the global namespace.  It would be OK for something like the following to work though:\n\n```\n sage: plot(sin(x), (x,0,1), color = colors.red)\n```\n\nMorever, I definitely definitely do not see any advantage at all to predefining a huge number of colors (Jason suggests all HTML -- that's 16777216 different colors!).  Instead one should be able to easily make colors... like you can already do right now.\n\n -- William",
     "created_at": "2009-03-25T04:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -67,7 +66,6 @@ Just for clarification, we do *NOT* want even red, orange, etc. all defined in t
  sage: plot(sin(x), (x,0,1), color = colors.red)
 ```
 
-
 Morever, I definitely definitely do not see any advantage at all to predefining a huge number of colors (Jason suggests all HTML -- that's 16777216 different colors!).  Instead one should be able to easily make colors... like you can already do right now.
 
  -- William
@@ -79,7 +77,7 @@ Morever, I definitely definitely do not see any advantage at all to predefining 
 archive/issue_comments_043587.json:
 ```json
 {
-    "body": "Possibilities:\n\n* CSS3 / SVG colors [alphabetically](http://www.w3.org/TR/css3-color/#svg-color) or [by hue](http://en.wikipedia.org/wiki/Web_colors#X11_color_names) - About 110.\n* [X11 colors](http://en.wikipedia.org/wiki/X11_color_names) - About 500.\n* [Wikipedia's list](http://en.wikipedia.org/wiki/List_of_colors).\n\nWe can make these available as in the comment above.  In effect:\n\n```\nsage.plot.colors.colors['aliceblue'] = (240.0/255.0, 248.0/255.0, 255.0/255.0)\nsage.plot.colors.aliceblue = Color(sage.plot.colors.colors['aliceblue'])\n```\n\n\nShould we define just the official CSS3 / SVG colors?  The X11 colors include four shades for about 75 colors (e.g., `goldenrod1`, `goldenrod2`, `goldenrod3`, and `goldenrod4`), as well as 100 shades of `gray`/`grey` (from black to white).  They may be convenient.  Or we could suggest using `.lighter()` and `.darker()` (cf. #5602).",
+    "body": "Possibilities:\n\n* CSS3 / SVG colors [alphabetically](http://www.w3.org/TR/css3-color/#svg-color) or [by hue](http://en.wikipedia.org/wiki/Web_colors#X11_color_names) - About 110.\n* [X11 colors](http://en.wikipedia.org/wiki/X11_color_names) - About 500.\n* [Wikipedia's list](http://en.wikipedia.org/wiki/List_of_colors).\n\nWe can make these available as in the comment above.  In effect:\n\n```\nsage.plot.colors.colors['aliceblue'] = (240.0/255.0, 248.0/255.0, 255.0/255.0)\nsage.plot.colors.aliceblue = Color(sage.plot.colors.colors['aliceblue'])\n```\n\nShould we define just the official CSS3 / SVG colors?  The X11 colors include four shades for about 75 colors (e.g., `goldenrod1`, `goldenrod2`, `goldenrod3`, and `goldenrod4`), as well as 100 shades of `gray`/`grey` (from black to white).  They may be convenient.  Or we could suggest using `.lighter()` and `.darker()` (cf. #5602).",
     "created_at": "2009-11-14T09:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ We can make these available as in the comment above.  In effect:
 sage.plot.colors.colors['aliceblue'] = (240.0/255.0, 248.0/255.0, 255.0/255.0)
 sage.plot.colors.aliceblue = Color(sage.plot.colors.colors['aliceblue'])
 ```
-
 
 Should we define just the official CSS3 / SVG colors?  The X11 colors include four shades for about 75 colors (e.g., `goldenrod1`, `goldenrod2`, `goldenrod3`, and `goldenrod4`), as well as 100 shades of `gray`/`grey` (from black to white).  They may be convenient.  Or we could suggest using `.lighter()` and `.darker()` (cf. #5602).
 
@@ -175,7 +172,7 @@ Add CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors
 archive/issue_comments_043591.json:
 ```json
 {
-    "body": "The attached patch should add:\n\n* CSS3 / SVG colors - #5601.  Actually, this replaces the previous colors.\n* `Color.lighter` and `Color.darker` - #5602.\n* HSV and HSL/HLS `Color` constructors - #5605.\n\nPredefined palette:\n\n```python\nimport sage.plot.colors as cc\np = Graphics()\nfor i, color in enumerate(cc.colors.keys()):\n    x = floor(i / 12) + 1\n    y = i % 12 + x * 0.5 + 1\n    p += point((x, y), pointsize=500, faceted=True, color=color)\n    p += text(color, (x + 0.15, y), rgbcolor='black', fontsize=10, horizontal_alignment='left')\nshow(p, figsize=[25,10], ymin=0, xmax=14, ymax=19, axes=False)\n```\n",
+    "body": "The attached patch should add:\n\n* CSS3 / SVG colors - #5601.  Actually, this replaces the previous colors.\n* `Color.lighter` and `Color.darker` - #5602.\n* HSV and HSL/HLS `Color` constructors - #5605.\n\nPredefined palette:\n\n```python\nimport sage.plot.colors as cc\np = Graphics()\nfor i, color in enumerate(cc.colors.keys()):\n    x = floor(i / 12) + 1\n    y = i % 12 + x * 0.5 + 1\n    p += point((x, y), pointsize=500, faceted=True, color=color)\n    p += text(color, (x + 0.15, y), rgbcolor='black', fontsize=10, horizontal_alignment='left')\nshow(p, figsize=[25,10], ymin=0, xmax=14, ymax=19, axes=False)\n```",
     "created_at": "2009-11-18T04:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -202,7 +199,6 @@ for i, color in enumerate(cc.colors.keys()):
     p += text(color, (x + 0.15, y), rgbcolor='black', fontsize=10, horizontal_alignment='left')
 show(p, figsize=[25,10], ymin=0, xmax=14, ymax=19, axes=False)
 ```
-
 
 
 
@@ -247,7 +243,7 @@ The patch should also address [comment:2:ticket:5605 this comment] at #5605.
 archive/issue_comments_043594.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?\n\nAlmost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\n> We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> \n> colors.winter[0]\n> \n> colors.winter[1]\n> \n> etc. for a nice set of colors that go well together.\n\nOops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n\n\n```python\nfrom matplotlib import cm\nsummer = []\nfor i in xrange(cm.summer.N):\n    summer.append(tuple(cm.summer(i)[0:3]))\n```\n\n\n`N = 256` for all of them.  Should we make our lists the same length?",
+    "body": "Replying to [comment:3 jason]:\n> I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?\n\n\nAlmost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\n> We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> \n> colors.winter[0]\n> \n> colors.winter[1]\n> \n> etc. for a nice set of colors that go well together.\n\n\nOops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n\n```python\nfrom matplotlib import cm\nsummer = []\nfor i in xrange(cm.summer.N):\n    summer.append(tuple(cm.summer(i)[0:3]))\n```\n\n`N = 256` for all of them.  Should we make our lists the same length?",
     "created_at": "2009-11-18T05:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -259,6 +255,7 @@ archive/issue_comments_043594.json:
 Replying to [comment:3 jason]:
 > I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?
 
+
 Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).
 
 > We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do
@@ -269,8 +266,8 @@ Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_tha
 > 
 > etc. for a nice set of colors that go well together.
 
-Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?
 
+Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?
 
 ```python
 from matplotlib import cm
@@ -278,7 +275,6 @@ summer = []
 for i in xrange(cm.summer.N):
     summer.append(tuple(cm.summer(i)[0:3]))
 ```
-
 
 `N = 256` for all of them.  Should we make our lists the same length?
 
@@ -289,7 +285,7 @@ for i in xrange(cm.summer.N):
 archive/issue_comments_043595.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> \n> Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\nInteresting--I didn't know that HTML green was not #00FF00\n\n\n\n> \n> > We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> > \n> > colors.winter[0]\n> > \n> > colors.winter[1]\n> > \n> > etc. for a nice set of colors that go well together.\n> \n> Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n> \n> {{{\n> #!python\n> from matplotlib import cm\n> summer = []\n> for i in xrange(cm.summer.N):\n>     summer.append(tuple(cm.summer(i)[0:3]))\n> }}}\n> \n> `N = 256` for all of them.  Should we make our lists the same length?\n\n\nHow much do we want to invent/wrap things versus just using their classes directly?  Maybe we should just import their colormaps into our color namespace, so people just have to remember colors.winter, rather than having to import matplotlib?\n\nA *really* cool thing we could do with the gradients, though, is somehow helping people pick gradients according to the criteria here:\n\nhttp://colorbrewer2.org/\n\n(note that lots of the matplotlib color maps came from that website).\n\nNote that on that website, you can easily pick gradients that are color-blind safe, that are safe for photocopying, that are print-friendly, etc.  It would be really cool to have basically the functionality of that flash applet at a user's disposal in Sage.  So, for example:\n\ncolors.gradients(num_colors=5,color_blind=True,print_friendly=True)\n\nwould return a dictionary of gradients that satisfy the criteria (like clicking the boxes on that flash applet).  Additionally, we should incorporate the recommendations from the phd thesis studying the color-blind aspects of the schemes---see p. 87 of http://www.personal.psu.edu/cab38/ColorBrewer/Steve_Gardner_thesis_PSU.pdf\n\n\nThat said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)",
+    "body": "Replying to [comment:8 mpatel]:\n> \n> Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\n\nInteresting--I didn't know that HTML green was not #00FF00\n\n\n\n> \n> > We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> > \n> > colors.winter[0]\n> > \n> > colors.winter[1]\n> > \n> > etc. for a nice set of colors that go well together.\n  \n> \n> Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n> \n> \n> ```\n> #!python\n> from matplotlib import cm\n> summer = []\n> for i in xrange(cm.summer.N):\n>     summer.append(tuple(cm.summer(i)[0:3]))\n> ```\n> \n> `N = 256` for all of them.  Should we make our lists the same length?\n\n\n\nHow much do we want to invent/wrap things versus just using their classes directly?  Maybe we should just import their colormaps into our color namespace, so people just have to remember colors.winter, rather than having to import matplotlib?\n\nA *really* cool thing we could do with the gradients, though, is somehow helping people pick gradients according to the criteria here:\n\nhttp://colorbrewer2.org/\n\n(note that lots of the matplotlib color maps came from that website).\n\nNote that on that website, you can easily pick gradients that are color-blind safe, that are safe for photocopying, that are print-friendly, etc.  It would be really cool to have basically the functionality of that flash applet at a user's disposal in Sage.  So, for example:\n\ncolors.gradients(num_colors=5,color_blind=True,print_friendly=True)\n\nwould return a dictionary of gradients that satisfy the criteria (like clicking the boxes on that flash applet).  Additionally, we should incorporate the recommendations from the phd thesis studying the color-blind aspects of the schemes---see p. 87 of http://www.personal.psu.edu/cab38/ColorBrewer/Steve_Gardner_thesis_PSU.pdf\n\n\nThat said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)",
     "created_at": "2009-11-18T06:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -301,6 +297,7 @@ archive/issue_comments_043595.json:
 Replying to [comment:8 mpatel]:
 > 
 > Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).
+
 
 Interesting--I didn't know that HTML green was not #00FF00
 
@@ -314,18 +311,21 @@ Interesting--I didn't know that HTML green was not #00FF00
 > > colors.winter[1]
 > > 
 > > etc. for a nice set of colors that go well together.
+  
 > 
 > Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?
 > 
-> {{{
+> 
+> ```
 > #!python
 > from matplotlib import cm
 > summer = []
 > for i in xrange(cm.summer.N):
 >     summer.append(tuple(cm.summer(i)[0:3]))
-> }}}
+> ```
 > 
 > `N = 256` for all of them.  Should we make our lists the same length?
+
 
 
 How much do we want to invent/wrap things versus just using their classes directly?  Maybe we should just import their colormaps into our color namespace, so people just have to remember colors.winter, rather than having to import matplotlib?
@@ -352,7 +352,7 @@ That said, what I describe above is probably work for another ticket (unless you
 archive/issue_comments_043596.json:
 ```json
 {
-    "body": "Replying to [comment:9 jason]:\n> That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)\n\nVersion 2 adds the matplotlib colormaps.  Otherwise: Agreed!",
+    "body": "Replying to [comment:9 jason]:\n> That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)\n\n\nVersion 2 adds the matplotlib colormaps.  Otherwise: Agreed!",
     "created_at": "2009-11-18T09:08:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -363,6 +363,7 @@ archive/issue_comments_043596.json:
 
 Replying to [comment:9 jason]:
 > That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)
+
 
 Version 2 adds the matplotlib colormaps.  Otherwise: Agreed!
 
@@ -469,7 +470,7 @@ Is there a way to do some of this lazily, e.g. not import matplotlib at startup?
 archive/issue_comments_043602.json:
 ```json
 {
-    "body": "Replying to [comment:14 robertwb]:\n> Is there a way to do some of this lazily, e.g. not import matplotlib at startup? \nThe following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the *end* of `sage.plot.colors` I added\n\n```python\n# matplotlib color maps, loaded on-demand.\nclass ColormapLoader(object):\n    def __init__(self, globs):\n        self.cm = None\n        for key in globs:\n            self.__setattr__(key, globs[key])\n\n    def __getattr__(self, name):\n        if name == '__path__':\n            return __path__\n\n        if not self.cm:\n            print 'loading matplotlib.cm'\n            from matplotlib import cm            \n            self.cm = cm\n\n        try:\n            cmap = self.cm.__getattribute__(name)\n        except AttributeError:\n            raise AttributeError, 'no colormap with name %s' % name\n\n        self.__setattr__(name, cmap)\n        return cmap\n\ncolormaps = ColormapLoader(vars())\n\nimport sys\nsys.modules['sage.plot.colors'] = colormaps\n```\n",
+    "body": "Replying to [comment:14 robertwb]:\n> Is there a way to do some of this lazily, e.g. not import matplotlib at startup? \n\nThe following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the *end* of `sage.plot.colors` I added\n\n```python\n# matplotlib color maps, loaded on-demand.\nclass ColormapLoader(object):\n    def __init__(self, globs):\n        self.cm = None\n        for key in globs:\n            self.__setattr__(key, globs[key])\n\n    def __getattr__(self, name):\n        if name == '__path__':\n            return __path__\n\n        if not self.cm:\n            print 'loading matplotlib.cm'\n            from matplotlib import cm            \n            self.cm = cm\n\n        try:\n            cmap = self.cm.__getattribute__(name)\n        except AttributeError:\n            raise AttributeError, 'no colormap with name %s' % name\n\n        self.__setattr__(name, cmap)\n        return cmap\n\ncolormaps = ColormapLoader(vars())\n\nimport sys\nsys.modules['sage.plot.colors'] = colormaps\n```",
     "created_at": "2009-11-20T10:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -480,6 +481,7 @@ archive/issue_comments_043602.json:
 
 Replying to [comment:14 robertwb]:
 > Is there a way to do some of this lazily, e.g. not import matplotlib at startup? 
+
 The following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the *end* of `sage.plot.colors` I added
 
 ```python
@@ -515,13 +517,12 @@ sys.modules['sage.plot.colors'] = colormaps
 
 
 
-
 ---
 
 archive/issue_comments_043603.json:
 ```json
 {
-    "body": "You can also look how we import numpy/scipy in matrix/matrix_double_dense.pyx:\n\nAt the top, we have:\n\nnumpy=None\n\nwhen we need to use it, we have code like:\n\n```\n        global numpy\n        if numpy is None:\n            import numpy\n```\n",
+    "body": "You can also look how we import numpy/scipy in matrix/matrix_double_dense.pyx:\n\nAt the top, we have:\n\nnumpy=None\n\nwhen we need to use it, we have code like:\n\n```\n        global numpy\n        if numpy is None:\n            import numpy\n```",
     "created_at": "2009-11-20T10:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -543,7 +544,6 @@ when we need to use it, we have code like:
         if numpy is None:
             import numpy
 ```
-
 
 
 
@@ -628,7 +628,7 @@ I should have entered 'kcrisman' in the "Cc" field.  Sorry about that!  Or, if y
 archive/issue_comments_043608.json:
 ```json
 {
-    "body": "From `sage.plot.colors.float_to_html`'s docstring:\n\n```\nThis may not seem necessary, but there are some odd cases where matplotlib is just plain schizophrenic \u2013 for an example, do\n\nsage: vertex_colors = {(1.0, 0.8571428571428571, 0.0): [4, 5, 6], (0.28571428571428559, 0.0, 1.0): [14, 15, 16], (1.0, 0.0, 0.0): [0, 1, 2, 3], (0.0, 0.57142857142857162, 1.0): [12, 13], (1.0, 0.0, 0.85714285714285676): [17, 18, 19], (0.0, 1.0, 0.57142857142857162): [10, 11], (0.28571428571428581, 1.0, 0.0): [7, 8, 9]}\nsage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)\n\nNotice how the colors don\u2019t respect the partition at all.....\n```\n\nIs this still true?  The example appears to work for me, but I could be misinterpreting it.",
+    "body": "From `sage.plot.colors.float_to_html`'s docstring:\n\n```\nThis may not seem necessary, but there are some odd cases where matplotlib is just plain schizophrenic \u2013 for an example, do\n\nsage: vertex_colors = {(1.0, 0.8571428571428571, 0.0): [4, 5, 6], (0.28571428571428559, 0.0, 1.0): [14, 15, 16], (1.0, 0.0, 0.0): [0, 1, 2, 3], (0.0, 0.57142857142857162, 1.0): [12, 13], (1.0, 0.0, 0.85714285714285676): [17, 18, 19], (0.0, 1.0, 0.57142857142857162): [10, 11], (0.28571428571428581, 1.0, 0.0): [7, 8, 9]}\nsage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)\n\nNotice how the colors don\u2019t respect the partition at all.....\n```\nIs this still true?  The example appears to work for me, but I could be misinterpreting it.",
     "created_at": "2009-11-22T03:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -647,7 +647,6 @@ sage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)
 
 Notice how the colors don’t respect the partition at all.....
 ```
-
 Is this still true?  The example appears to work for me, but I could be misinterpreting it.
 
 
@@ -723,7 +722,7 @@ I do like the pink/punk and grassmann things, that's a little fun but also shows
 archive/issue_comments_043612.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> One thing I don't like is that the diff is very hard to read for some reason - [...]\n\nThis may stem from my changing the order of some definitions.",
+    "body": "Replying to [comment:22 kcrisman]:\n> One thing I don't like is that the diff is very hard to read for some reason - [...]\n\n\nThis may stem from my changing the order of some definitions.",
     "created_at": "2009-11-24T08:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -734,6 +733,7 @@ archive/issue_comments_043612.json:
 
 Replying to [comment:22 kcrisman]:
 > One thing I don't like is that the diff is very hard to read for some reason - [...]
+
 
 This may stem from my changing the order of some definitions.
 
@@ -785,7 +785,7 @@ Attribute access for colors and color maps.  Apply only this patch.
 archive/issue_comments_043615.json:
 ```json
 {
-    "body": "Replying to [comment:24 mpatel]:\n> To do:\n> \n>  * Make `colormaps.<TAB>` list the colormaps, too.\n>  * Make `colors.<TAB>` list the colors.\n\nVersion 5 does both.",
+    "body": "Replying to [comment:24 mpatel]:\n> To do:\n> \n> * Make `colormaps.<TAB>` list the colormaps, too.\n> * Make `colors.<TAB>` list the colors.\n\n\nVersion 5 does both.",
     "created_at": "2009-11-26T05:38:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -797,8 +797,9 @@ archive/issue_comments_043615.json:
 Replying to [comment:24 mpatel]:
 > To do:
 > 
->  * Make `colormaps.<TAB>` list the colormaps, too.
->  * Make `colors.<TAB>` list the colors.
+> * Make `colormaps.<TAB>` list the colormaps, too.
+> * Make `colors.<TAB>` list the colors.
+
 
 Version 5 does both.
 
@@ -998,7 +999,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_043625.json:
 ```json
 {
-    "body": "Replying to [comment:33 kcrisman]:\n\n> Anyway, I think this is all doable, but it's a shame this would hold up the excellent refactoring and improvement of colors and colormaps.  Why not just remove the not properly working things, and keep their tickets open, but do the base stuff here?\n\nI agree.  Let's remove (or at least comment out) the addition stuff right now until we have a better grasp of what we want and how to get it.\n\nI believe MMA just implements a Blend function, and then makes lighter and darker just blending with black or white, and it's also consistent with blending other colors.\n\n\n> And as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.\n\nI don't think the colormaps in matplotlib have been touched in a long time.  I wouldn't worry too much about having to fix things up very often.  And it's much better to fix it up than to have it not doctested by putting a #random there.",
+    "body": "Replying to [comment:33 kcrisman]:\n\n> Anyway, I think this is all doable, but it's a shame this would hold up the excellent refactoring and improvement of colors and colormaps.  Why not just remove the not properly working things, and keep their tickets open, but do the base stuff here?\n\n\nI agree.  Let's remove (or at least comment out) the addition stuff right now until we have a better grasp of what we want and how to get it.\n\nI believe MMA just implements a Blend function, and then makes lighter and darker just blending with black or white, and it's also consistent with blending other colors.\n\n\n> And as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.\n\n\nI don't think the colormaps in matplotlib have been touched in a long time.  I wouldn't worry too much about having to fix things up very often.  And it's much better to fix it up than to have it not doctested by putting a #random there.",
     "created_at": "2009-12-10T18:30:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1011,12 +1012,14 @@ Replying to [comment:33 kcrisman]:
 
 > Anyway, I think this is all doable, but it's a shame this would hold up the excellent refactoring and improvement of colors and colormaps.  Why not just remove the not properly working things, and keep their tickets open, but do the base stuff here?
 
+
 I agree.  Let's remove (or at least comment out) the addition stuff right now until we have a better grasp of what we want and how to get it.
 
 I believe MMA just implements a Blend function, and then makes lighter and darker just blending with black or white, and it's also consistent with blending other colors.
 
 
 > And as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.
+
 
 I don't think the colormaps in matplotlib have been touched in a long time.  I wouldn't worry too much about having to fix things up very often.  And it's much better to fix it up than to have it not doctested by putting a #random there.
 
@@ -1182,7 +1185,7 @@ def lighter(self, times=1, fraction=1.0/3.0):
 archive/issue_comments_043633.json:
 ```json
 {
-    "body": "Of course:\n\n```\ndef lighter(self, times=1, fraction=1.0/3.0):\n    fraction=float(fraction) \n    c = self \n    for i in range(times):\n        c = c.blend((1.0, 1.0, 1.0), fraction)\n    return c\n```\n",
+    "body": "Of course:\n\n```\ndef lighter(self, times=1, fraction=1.0/3.0):\n    fraction=float(fraction) \n    c = self \n    for i in range(times):\n        c = c.blend((1.0, 1.0, 1.0), fraction)\n    return c\n```",
     "created_at": "2009-12-11T01:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1201,7 +1204,6 @@ def lighter(self, times=1, fraction=1.0/3.0):
         c = c.blend((1.0, 1.0, 1.0), fraction)
     return c
 ```
-
 
 
 
@@ -1290,7 +1292,7 @@ I've added Bill Cauchois to the Cc: list, since I've updated some tests in `sage
 archive/issue_comments_043638.json:
 ```json
 {
-    "body": "Replying to [comment:43 mpatel]:\n> Please review, experiment, blend, plot, test, etc., and let me know if there are problems!\nOr fix them. :)",
+    "body": "Replying to [comment:43 mpatel]:\n> Please review, experiment, blend, plot, test, etc., and let me know if there are problems!\n\nOr fix them. :)",
     "created_at": "2010-02-22T01:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
@@ -1301,6 +1303,7 @@ archive/issue_comments_043638.json:
 
 Replying to [comment:43 mpatel]:
 > Please review, experiment, blend, plot, test, etc., and let me know if there are problems!
+
 Or fix them. :)
 
 

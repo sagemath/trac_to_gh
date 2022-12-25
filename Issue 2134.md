@@ -160,7 +160,7 @@ Looks good to me. I've created a ticket for phasing NetworkX out of the graph pl
 archive/issue_comments_013968.json:
 ```json
 {
-    "body": "Robert, the patch currently doesn't apply cleanly any more due to\n\n```\nchangeset:   8329:657c0727bbd2\nuser:        Robert L. Miller <rlm@rlmiller.org>\ndate:        Thu Feb 07 00:18:51 2008 -0800\nsummary:     plot loops.\n```\n\nThe issue is with the second hunk in `sage/graphs/graph.py`, so could you rebase the patch with your plot loop patch applied?\n\nCheers,\n\nMichael",
+    "body": "Robert, the patch currently doesn't apply cleanly any more due to\n\n```\nchangeset:   8329:657c0727bbd2\nuser:        Robert L. Miller <rlm@rlmiller.org>\ndate:        Thu Feb 07 00:18:51 2008 -0800\nsummary:     plot loops.\n```\nThe issue is with the second hunk in `sage/graphs/graph.py`, so could you rebase the patch with your plot loop patch applied?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-14T09:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
@@ -177,7 +177,6 @@ user:        Robert L. Miller <rlm@rlmiller.org>
 date:        Thu Feb 07 00:18:51 2008 -0800
 summary:     plot loops.
 ```
-
 The issue is with the second hunk in `sage/graphs/graph.py`, so could you rebase the patch with your plot loop patch applied?
 
 Cheers,

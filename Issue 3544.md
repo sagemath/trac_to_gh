@@ -3,7 +3,7 @@
 archive/issues_003544.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  alexghitza\n\n\n```\nsage: G = Graph({0:[1],1:[2]}); G.num_verts()\n3\nsage: A = G.automorphism_group(); A\nPermutation Group with generators [(2,3)]\nsage: A.is_transitive()\nTrue\nsage: A.gens()[0].list()\n[1,3,2]\n```\n\n\nHuh?  The cyclic group of order 2 acting on 3 letters is transitive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3544\n\n",
+    "body": "Assignee: tbd\n\nCC:  alexghitza\n\n```\nsage: G = Graph({0:[1],1:[2]}); G.num_verts()\n3\nsage: A = G.automorphism_group(); A\nPermutation Group with generators [(2,3)]\nsage: A.is_transitive()\nTrue\nsage: A.gens()[0].list()\n[1,3,2]\n```\n\nHuh?  The cyclic group of order 2 acting on 3 letters is transitive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3544\n\n",
     "created_at": "2008-07-03T17:57:05Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 CC:  alexghitza
 
-
 ```
 sage: G = Graph({0:[1],1:[2]}); G.num_verts()
 3
@@ -31,7 +30,6 @@ True
 sage: A.gens()[0].list()
 [1,3,2]
 ```
-
 
 Huh?  The cyclic group of order 2 acting on 3 letters is transitive?
 
@@ -64,7 +62,7 @@ This is closely related to #3404. See #3545.
 archive/issue_comments_025020.json:
 ```json
 {
-    "body": "This wraps IsTransitive, which is assuming that the degree is 2:\n\n\n```\nsage: G = Graph({0:[1],1:[2]})\nsage: A = G.automorphism_group(); A\nAPermutation Group with generators [(2,3)]\nsage: GA = gap(A)\nsage: GA.Transitivity()\n2\nsage: GA.IsTransitive()\ntrue\n```\n\n\nHowever, the docstring for is_transitive is wrong. There is no method A.set() implemented.",
+    "body": "This wraps IsTransitive, which is assuming that the degree is 2:\n\n```\nsage: G = Graph({0:[1],1:[2]})\nsage: A = G.automorphism_group(); A\nAPermutation Group with generators [(2,3)]\nsage: GA = gap(A)\nsage: GA.Transitivity()\n2\nsage: GA.IsTransitive()\ntrue\n```\n\nHowever, the docstring for is_transitive is wrong. There is no method A.set() implemented.",
     "created_at": "2008-07-03T18:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
@@ -74,7 +72,6 @@ archive/issue_comments_025020.json:
 ```
 
 This wraps IsTransitive, which is assuming that the degree is 2:
-
 
 ```
 sage: G = Graph({0:[1],1:[2]})
@@ -86,7 +83,6 @@ sage: GA.Transitivity()
 sage: GA.IsTransitive()
 true
 ```
-
 
 However, the docstring for is_transitive is wrong. There is no method A.set() implemented.
 

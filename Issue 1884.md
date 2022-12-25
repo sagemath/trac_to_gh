@@ -3,7 +3,7 @@
 archive/issues_001884.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis leaks like a sieve in 2.10:\n\n\n```\nt = 0.0\nwhile True:\n    t = t * 2.0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1884\n\n",
+    "body": "Assignee: mabshoff\n\nThis leaks like a sieve in 2.10:\n\n```\nt = 0.0\nwhile True:\n    t = t * 2.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1884\n\n",
     "created_at": "2008-01-22T02:53:16Z",
     "labels": [
         "component: memleak",
@@ -20,13 +20,11 @@ Assignee: mabshoff
 
 This leaks like a sieve in 2.10:
 
-
 ```
 t = 0.0
 while True:
     t = t * 2.0
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1884
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1884
 archive/issue_comments_011898.json:
 ```json
 {
-    "body": "I ran 10000 loops with 2.9.3 and I got:\n\n```\n==5050== 2,807,000 bytes in 10,025 blocks are still reachable in loss record 8,029 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x964A11F: __pyx_pf_4sage_9structure_6parent_6Parent___init__ (parent.c:404)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9537A94: __pyx_pf_4sage_9structure_11parent_base_14ParentWithBase___init__ (parent_base.c:388)\n==5050==\n==5050== 2,807,560 bytes in 10,027 blocks are still reachable in loss record 8,030 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x964A873: __pyx_pf_4sage_9structure_6parent_6Parent___init__ (parent.c:553)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9537A94: __pyx_pf_4sage_9structure_11parent_base_14ParentWithBase___init__ (parent_base.c:388)\n==5050==\n==5050==\n==5050== 2,812,600 bytes in 10,045 blocks are still reachable in loss record 8,031 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x98C03B6: __pyx_pf_4sage_9structure_11parent_gens_14ParentWithGens___init__ (parent_gens.c:1552)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0xBD5AF19: __pyx_pf_4sage_5rings_9real_mpfr_9RealField___init__ (real_mpfr.c:2798)\n```\n\n\nI am running the same code under omega now, but that might take an hour or two.\n\nCheers,\n\nMichael",
+    "body": "I ran 10000 loops with 2.9.3 and I got:\n\n```\n==5050== 2,807,000 bytes in 10,025 blocks are still reachable in loss record 8,029 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x964A11F: __pyx_pf_4sage_9structure_6parent_6Parent___init__ (parent.c:404)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9537A94: __pyx_pf_4sage_9structure_11parent_base_14ParentWithBase___init__ (parent_base.c:388)\n==5050==\n==5050== 2,807,560 bytes in 10,027 blocks are still reachable in loss record 8,030 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x964A873: __pyx_pf_4sage_9structure_6parent_6Parent___init__ (parent.c:553)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9537A94: __pyx_pf_4sage_9structure_11parent_base_14ParentWithBase___init__ (parent_base.c:388)\n==5050==\n==5050==\n==5050== 2,812,600 bytes in 10,045 blocks are still reachable in loss record 8,031 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x4B01AC: _PyObject_GC_New (gcmodule.c:1343)\n==5050==    by 0x441339: PyDict_New (dictobject.c:216)\n==5050==    by 0x98C03B6: __pyx_pf_4sage_9structure_11parent_gens_14ParentWithGens___init__ (parent_gens.c:1552)\n==5050==    by 0x453A9B: wrap_init (typeobject.c:3962)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x4CAF84: wrapperdescr_call (descrobject.c:304)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0xBD5AF19: __pyx_pf_4sage_5rings_9real_mpfr_9RealField___init__ (real_mpfr.c:2798)\n```\n\nI am running the same code under omega now, but that might take an hour or two.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-22T03:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ I ran 10000 loops with 2.9.3 and I got:
 ==5050==    by 0xBD5AF19: __pyx_pf_4sage_5rings_9real_mpfr_9RealField___init__ (real_mpfr.c:2798)
 ```
 
-
 I am running the same code under omega now, but that might take an hour or two.
 
 Cheers,
@@ -110,7 +107,7 @@ Michael
 archive/issue_comments_011899.json:
 ```json
 {
-    "body": "Hmm, this might be the real culprit:\n\n```\n==5050== 800,000 bytes in 10,000 blocks are still reachable in loss record 8,010 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x454C29: PyType_GenericAlloc (typeobject.c:454)\n==5050==    by 0x9762350: __pyx_tp_new_4sage_9structure_7element_Element (element.c:22358)\n==5050==    by 0x9D27AF0: __pyx_tp_new_4sage_10categories_8morphism_Morphism (morphism.c:4733)\n==5050==    by 0x9D27F30: __pyx_tp_new_4sage_10categories_8morphism_CallMorphism (morphism.c:5232)\n==5050==    by 0x458D92: type_call (typeobject.c:422)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9647DE9: __pyx_f_4sage_9structure_6parent_6Parent_coerce_map_from_c (parent.c:1015)\n==5050==    by 0x99E25B4: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_discover_coercion_c (coerce.c:7583)\n==5050==    by 0x99DBBD5: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_coercion_maps_c (coerce.c:7350)\n```\n\n\nCheers,\n\nMichael",
+    "body": "Hmm, this might be the real culprit:\n\n```\n==5050== 800,000 bytes in 10,000 blocks are still reachable in loss record 8,010 of 8,033\n==5050==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==5050==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)\n==5050==    by 0x454C29: PyType_GenericAlloc (typeobject.c:454)\n==5050==    by 0x9762350: __pyx_tp_new_4sage_9structure_7element_Element (element.c:22358)\n==5050==    by 0x9D27AF0: __pyx_tp_new_4sage_10categories_8morphism_Morphism (morphism.c:4733)\n==5050==    by 0x9D27F30: __pyx_tp_new_4sage_10categories_8morphism_CallMorphism (morphism.c:5232)\n==5050==    by 0x458D92: type_call (typeobject.c:422)\n==5050==    by 0x415542: PyObject_Call (abstract.c:1860)\n==5050==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5050==    by 0x9647DE9: __pyx_f_4sage_9structure_6parent_6Parent_coerce_map_from_c (parent.c:1015)\n==5050==    by 0x99E25B4: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_discover_coercion_c (coerce.c:7583)\n==5050==    by 0x99DBBD5: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_coercion_maps_c (coerce.c:7350)\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-22T03:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -136,7 +133,6 @@ Hmm, this might be the real culprit:
 ==5050==    by 0x99E25B4: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_discover_coercion_c (coerce.c:7583)
 ==5050==    by 0x99DBBD5: __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_coercion_maps_c (coerce.c:7350)
 ```
-
 
 Cheers,
 
@@ -266,7 +262,7 @@ Changing assignee from mabshoff to @robertwb.
 archive/issue_comments_011905.json:
 ```json
 {
-    "body": "This is due to non-uniqueness of real fields. \n\n\n```\nsage: parent(2.0) == parent(2.0)\nTrue\nsage: parent(2.0) is parent(2.0)\nFalse\n```\n\n\nIt's making a new parent for the constant in the loop, and adding it to the coercion model. I will fix this now.",
+    "body": "This is due to non-uniqueness of real fields. \n\n```\nsage: parent(2.0) == parent(2.0)\nTrue\nsage: parent(2.0) is parent(2.0)\nFalse\n```\n\nIt's making a new parent for the constant in the loop, and adding it to the coercion model. I will fix this now.",
     "created_at": "2008-01-29T19:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -277,14 +273,12 @@ archive/issue_comments_011905.json:
 
 This is due to non-uniqueness of real fields. 
 
-
 ```
 sage: parent(2.0) == parent(2.0)
 True
 sage: parent(2.0) is parent(2.0)
 False
 ```
-
 
 It's making a new parent for the constant in the loop, and adding it to the coercion model. I will fix this now.
 
@@ -349,7 +343,7 @@ The first patch fixes the issue (with a doctest), and the second ensures uniquen
 archive/issue_comments_011909.json:
 ```json
 {
-    "body": "Ok, after applying both patches I get \n\n```\nExiting SAGE (CPU time 0m0.00s, Wall time 0m1.00s).\n*** glibc detected *** double free or corruption (out): 0x0000000000ec69a0 ***\n```\n\non exit each time I start Sage. The valgrind log points to #1337.\n\nCheers,\n\nMichael",
+    "body": "Ok, after applying both patches I get \n\n```\nExiting SAGE (CPU time 0m0.00s, Wall time 0m1.00s).\n*** glibc detected *** double free or corruption (out): 0x0000000000ec69a0 ***\n```\non exit each time I start Sage. The valgrind log points to #1337.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-30T04:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -364,7 +358,6 @@ Ok, after applying both patches I get
 Exiting SAGE (CPU time 0m0.00s, Wall time 0m1.00s).
 *** glibc detected *** double free or corruption (out): 0x0000000000ec69a0 ***
 ```
-
 on exit each time I start Sage. The valgrind log points to #1337.
 
 Cheers,
@@ -396,7 +389,7 @@ I have no idea--this must be exposing some previously undetected bug. I don't al
 archive/issue_comments_011911.json:
 ```json
 {
-    "body": "Replying to [comment:10 robertwb]:\n> I have no idea--this must be exposing some previously undetected bug. I don't allocate or free anything here, in fact most of the patch is Python code...\n\nI agree that the bug is not in your patches, but it is exposed by the code. I have attempted to track this issue, i.e. #1337 before, but failed. Maybe we can sit down at SD7 and see if we can come up with a solution.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 robertwb]:\n> I have no idea--this must be exposing some previously undetected bug. I don't allocate or free anything here, in fact most of the patch is Python code...\n\n\nI agree that the bug is not in your patches, but it is exposed by the code. I have attempted to track this issue, i.e. #1337 before, but failed. Maybe we can sit down at SD7 and see if we can come up with a solution.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-30T06:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
@@ -407,6 +400,7 @@ archive/issue_comments_011911.json:
 
 Replying to [comment:10 robertwb]:
 > I have no idea--this must be exposing some previously undetected bug. I don't allocate or free anything here, in fact most of the patch is Python code...
+
 
 I agree that the bug is not in your patches, but it is exposed by the code. I have attempted to track this issue, i.e. #1337 before, but failed. Maybe we can sit down at SD7 and see if we can come up with a solution.
 

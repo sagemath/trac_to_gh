@@ -186,7 +186,7 @@ Part A just adds CodeMirror to the repository.  Part B configures it for the dat
 archive/issue_comments_063296.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n>  * Includes `codemirror.js` on every page.\n\nOr more pages than necessary, at least.",
+    "body": "Replying to [comment:7 mpatel]:\n>  * Includes `codemirror.js` on every page.\n\n\nOr more pages than necessary, at least.",
     "created_at": "2010-02-07T12:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7501",
     "type": "issue_comment",
@@ -197,6 +197,7 @@ archive/issue_comments_063296.json:
 
 Replying to [comment:7 mpatel]:
 >  * Includes `codemirror.js` on every page.
+
 
 Or more pages than necessary, at least.
 
@@ -243,7 +244,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_063299.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n> Has any of this been tested on Solaris? \nI haven't.  But if you have a spare moment, please test the patches and let us know!  \n\nNote: CodeMirror runs entirely in the browser.",
+    "body": "Replying to [comment:9 drkirkby]:\n> Has any of this been tested on Solaris? \n\nI haven't.  But if you have a spare moment, please test the patches and let us know!  \n\nNote: CodeMirror runs entirely in the browser.",
     "created_at": "2010-02-22T00:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7501",
     "type": "issue_comment",
@@ -254,6 +255,7 @@ archive/issue_comments_063299.json:
 
 Replying to [comment:9 drkirkby]:
 > Has any of this been tested on Solaris? 
+
 I haven't.  But if you have a spare moment, please test the patches and let us know!  
 
 Note: CodeMirror runs entirely in the browser.

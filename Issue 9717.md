@@ -74,7 +74,7 @@ Changing status from new to needs_work.
 archive/issue_comments_094649.json:
 ```json
 {
-    "body": "The attached patch + SPKG fix the original problem, however I'm getting segfaults now:\n\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\nlinalg_step_modified (polys=<value optimized out>, terms=<value optimized out>, \n    leads_from_strat=<value optimized out>, log=<value optimized out>, \n    optDrawMatrices=<value optimized out>, matrixPrefix=<value optimized out>)\n    at groebner/src/nf.cc:2270\n2270    groebner/src/nf.cc: No such file or directory.\n        in groebner/src/nf.cc\nCurrent language:  auto\nThe current source language is \"auto; currently c++\".\n(gdb) bt\n#0  linalg_step_modified (polys=<value optimized out>, terms=<value optimized out>, \n    leads_from_strat=<value optimized out>, log=<value optimized out>, \n    optDrawMatrices=<value optimized out>, matrixPrefix=<value optimized out>)\n    at groebner/src/nf.cc:2270\n#1  0x00007fffcf4f6c56 in polybori::groebner::GroebnerStrategy::faugereStepDense (\n    this=<value optimized out>, orig_system=<value optimized out>) at groebner/src/nf.cc:2386\n#2  0x00007fffcf3e2a0d in __pyx_pf_4sage_5rings_10polynomial_5pbori_16GroebnerStrategy_faugere_step_dense (__pyx_v_self=0x5997520, __pyx_v_v=0x12bf3500) at sage/rings/polynomial/pbori.cpp:31846\n#3  0x00007ffff7b11316 in call_function (f=0x418a900, throwflag=<value optimized out>)\n    at Python/ceval.c:3694\n\n```\n",
+    "body": "The attached patch + SPKG fix the original problem, however I'm getting segfaults now:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\nlinalg_step_modified (polys=<value optimized out>, terms=<value optimized out>, \n    leads_from_strat=<value optimized out>, log=<value optimized out>, \n    optDrawMatrices=<value optimized out>, matrixPrefix=<value optimized out>)\n    at groebner/src/nf.cc:2270\n2270    groebner/src/nf.cc: No such file or directory.\n        in groebner/src/nf.cc\nCurrent language:  auto\nThe current source language is \"auto; currently c++\".\n(gdb) bt\n#0  linalg_step_modified (polys=<value optimized out>, terms=<value optimized out>, \n    leads_from_strat=<value optimized out>, log=<value optimized out>, \n    optDrawMatrices=<value optimized out>, matrixPrefix=<value optimized out>)\n    at groebner/src/nf.cc:2270\n#1  0x00007fffcf4f6c56 in polybori::groebner::GroebnerStrategy::faugereStepDense (\n    this=<value optimized out>, orig_system=<value optimized out>) at groebner/src/nf.cc:2386\n#2  0x00007fffcf3e2a0d in __pyx_pf_4sage_5rings_10polynomial_5pbori_16GroebnerStrategy_faugere_step_dense (__pyx_v_self=0x5997520, __pyx_v_v=0x12bf3500) at sage/rings/polynomial/pbori.cpp:31846\n#3  0x00007ffff7b11316 in call_function (f=0x418a900, throwflag=<value optimized out>)\n    at Python/ceval.c:3694\n\n```",
     "created_at": "2010-08-10T12:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ archive/issue_comments_094649.json:
 ```
 
 The attached patch + SPKG fix the original problem, however I'm getting segfaults now:
-
 
 ```
 Program received signal SIGSEGV, Segmentation fault.
@@ -108,7 +107,6 @@ The current source language is "auto; currently c++".
     at Python/ceval.c:3694
 
 ```
-
 
 
 
@@ -235,7 +233,7 @@ Alexander's patch looks reasonable, though libm4ri (and the GD library) were pre
 archive/issue_comments_094656.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n\n> `SPKG.txt` has to be updated for p4.\n\nI have a new SPKG which does exactly that. I'll upload it later.\n\n> Alexander's patch looks reasonable, though libm4ri (and the GD library) were previously found (in the second attempt)... (The only issue I'm aware of is with updating from 4.5.2 on MacOS X 10.6, which Mitesh Patel couldn't reproduce either; see #9721.) (The change to p4 is of course unrelated to the original intent of this ticket; perhaps adapt its title, too.)",
+    "body": "Replying to [comment:8 leif]:\n\n> `SPKG.txt` has to be updated for p4.\n\n\nI have a new SPKG which does exactly that. I'll upload it later.\n\n> Alexander's patch looks reasonable, though libm4ri (and the GD library) were previously found (in the second attempt)... (The only issue I'm aware of is with updating from 4.5.2 on MacOS X 10.6, which Mitesh Patel couldn't reproduce either; see #9721.) (The change to p4 is of course unrelated to the original intent of this ticket; perhaps adapt its title, too.)",
     "created_at": "2010-08-11T13:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -247,6 +245,7 @@ archive/issue_comments_094656.json:
 Replying to [comment:8 leif]:
 
 > `SPKG.txt` has to be updated for p4.
+
 
 I have a new SPKG which does exactly that. I'll upload it later.
 
@@ -475,7 +474,7 @@ The updated `SPKG.txt` is ok, too. (And the upstream fixes also look reasonable 
 archive/issue_comments_094668.json:
 ```json
 {
-    "body": "Replying to [comment:18 leif]:\n> The updated `SPKG.txt` is ok, too.\n\n... except for the date(s), but I'll assume the intention was to avoid naming Friday 13th and accept it. ;-)",
+    "body": "Replying to [comment:18 leif]:\n> The updated `SPKG.txt` is ok, too.\n\n\n... except for the date(s), but I'll assume the intention was to avoid naming Friday 13th and accept it. ;-)",
     "created_at": "2010-08-13T10:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -486,6 +485,7 @@ archive/issue_comments_094668.json:
 
 Replying to [comment:18 leif]:
 > The updated `SPKG.txt` is ok, too.
+
 
 ... except for the date(s), but I'll assume the intention was to avoid naming Friday 13th and accept it. ;-)
 
@@ -514,7 +514,7 @@ So we have a positive review then?
 archive/issue_comments_094670.json:
 ```json
 {
-    "body": "Replying to [comment:20 malb]:\n> So we have a positive review then?\n\nOnce Alexander's `testall` has finished, I think yes. :)\n\nI'll perhaps test later on a 64-bit platform, although I don't expect any issues.",
+    "body": "Replying to [comment:20 malb]:\n> So we have a positive review then?\n\n\nOnce Alexander's `testall` has finished, I think yes. :)\n\nI'll perhaps test later on a 64-bit platform, although I don't expect any issues.",
     "created_at": "2010-08-13T12:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -525,6 +525,7 @@ archive/issue_comments_094670.json:
 
 Replying to [comment:20 malb]:
 > So we have a positive review then?
+
 
 Once Alexander's `testall` has finished, I think yes. :)
 
@@ -537,7 +538,7 @@ I'll perhaps test later on a 64-bit platform, although I don't expect any issues
 archive/issue_comments_094671.json:
 ```json
 {
-    "body": "Replying to [comment:21 leif]:\n> I'll perhaps test later on a 64-bit platform, although I don't expect any issues.\n\nPassed all long tests in `sage/matrix`; currently running `make testlong`, but this will take some time since the system is already fully loaded... (Ubuntu 9.04 x86_64, Core2, gcc 4.3.3)",
+    "body": "Replying to [comment:21 leif]:\n> I'll perhaps test later on a 64-bit platform, although I don't expect any issues.\n\n\nPassed all long tests in `sage/matrix`; currently running `make testlong`, but this will take some time since the system is already fully loaded... (Ubuntu 9.04 x86_64, Core2, gcc 4.3.3)",
     "created_at": "2010-08-13T12:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -549,6 +550,7 @@ archive/issue_comments_094671.json:
 Replying to [comment:21 leif]:
 > I'll perhaps test later on a 64-bit platform, although I don't expect any issues.
 
+
 Passed all long tests in `sage/matrix`; currently running `make testlong`, but this will take some time since the system is already fully loaded... (Ubuntu 9.04 x86_64, Core2, gcc 4.3.3)
 
 
@@ -558,7 +560,7 @@ Passed all long tests in `sage/matrix`; currently running `make testlong`, but t
 archive/issue_comments_094672.json:
 ```json
 {
-    "body": "> Once Alexander's `testall` has finished, I think yes. :)\nThey have successfully finished (SuSE 11.1 64 Bits). So we have the positive review now",
+    "body": "> Once Alexander's `testall` has finished, I think yes. :)\n\nThey have successfully finished (SuSE 11.1 64 Bits). So we have the positive review now",
     "created_at": "2010-08-13T14:13:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -568,6 +570,7 @@ archive/issue_comments_094672.json:
 ```
 
 > Once Alexander's `testall` has finished, I think yes. :)
+
 They have successfully finished (SuSE 11.1 64 Bits). So we have the positive review now
 
 
@@ -657,7 +660,7 @@ Perhaps you could add Joan Daemen's example to the ticket.
 archive/issue_comments_094677.json:
 ```json
 {
-    "body": "Replying to [comment:26 leif]:\n\n> Ooops, I just noticed the [attached patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9717/polybori-0.6.4.p2.patch) is to the *Sage library* (I assumed it is an *spkg* patch). So I did **not** apply that patch in any of the tests I made, which despite that all passed... Martin, is that patch now obsolete or do we just not test an example which would fail without it?\n\nThe patch is necessary, Sage will SIGSEGV in some cases otherwise. I'll try to update the patch with an example.\n\n> Or is it platform-specific? (Btw, the patch's commit message lacks a ticket number; also, a back-reference/comment in the code wouldn't be bad.)\n\nI'll add the ticket number.\n\n> Perhaps you could add Joan Daemen's example to the ticket.\n\nThe problem is a bit bigger and I have no permission to publish it, sorry.",
+    "body": "Replying to [comment:26 leif]:\n\n> Ooops, I just noticed the [attached patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9717/polybori-0.6.4.p2.patch) is to the *Sage library* (I assumed it is an *spkg* patch). So I did **not** apply that patch in any of the tests I made, which despite that all passed... Martin, is that patch now obsolete or do we just not test an example which would fail without it?\n\n\nThe patch is necessary, Sage will SIGSEGV in some cases otherwise. I'll try to update the patch with an example.\n\n> Or is it platform-specific? (Btw, the patch's commit message lacks a ticket number; also, a back-reference/comment in the code wouldn't be bad.)\n\n\nI'll add the ticket number.\n\n> Perhaps you could add Joan Daemen's example to the ticket.\n\n\nThe problem is a bit bigger and I have no permission to publish it, sorry.",
     "created_at": "2010-08-14T12:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -670,13 +673,16 @@ Replying to [comment:26 leif]:
 
 > Ooops, I just noticed the [attached patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9717/polybori-0.6.4.p2.patch) is to the *Sage library* (I assumed it is an *spkg* patch). So I did **not** apply that patch in any of the tests I made, which despite that all passed... Martin, is that patch now obsolete or do we just not test an example which would fail without it?
 
+
 The patch is necessary, Sage will SIGSEGV in some cases otherwise. I'll try to update the patch with an example.
 
 > Or is it platform-specific? (Btw, the patch's commit message lacks a ticket number; also, a back-reference/comment in the code wouldn't be bad.)
 
+
 I'll add the ticket number.
 
 > Perhaps you could add Joan Daemen's example to the ticket.
+
 
 The problem is a bit bigger and I have no permission to publish it, sorry.
 
@@ -705,7 +711,7 @@ I've updated the patch with an example and this ticket's number.
 archive/issue_comments_094679.json:
 ```json
 {
-    "body": "Replying to [comment:28 malb]:\n> I've updated the patch with an example and this ticket's number.\n\nOk, I'll rerun some of the tests later. Currently all machines busy with new PARI testing... ;-)\n\n(I don't see the ticket number in the patched code though.)",
+    "body": "Replying to [comment:28 malb]:\n> I've updated the patch with an example and this ticket's number.\n\n\nOk, I'll rerun some of the tests later. Currently all machines busy with new PARI testing... ;-)\n\n(I don't see the ticket number in the patched code though.)",
     "created_at": "2010-08-14T12:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -716,6 +722,7 @@ archive/issue_comments_094679.json:
 
 Replying to [comment:28 malb]:
 > I've updated the patch with an example and this ticket's number.
+
 
 Ok, I'll rerun some of the tests later. Currently all machines busy with new PARI testing... ;-)
 
@@ -728,7 +735,7 @@ Ok, I'll rerun some of the tests later. Currently all machines busy with new PAR
 archive/issue_comments_094680.json:
 ```json
 {
-    "body": "\n```\n#9717 fixing parent ring in substitute_variable() (fix due to Alexander Dreyer)\n```\n\nThat's the commit message, is that alright?",
+    "body": "```\n#9717 fixing parent ring in substitute_variable() (fix due to Alexander Dreyer)\n```\nThat's the commit message, is that alright?",
     "created_at": "2010-08-14T12:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -737,11 +744,9 @@ archive/issue_comments_094680.json:
 }
 ```
 
-
 ```
 #9717 fixing parent ring in substitute_variable() (fix due to Alexander Dreyer)
 ```
-
 That's the commit message, is that alright?
 
 
@@ -751,7 +756,7 @@ That's the commit message, is that alright?
 archive/issue_comments_094681.json:
 ```json
 {
-    "body": "And an attachment comment would be nice... (\"Sage library patch - ...\")\n\nI HATE TRAC! [concurrent \"editing\" grrrrr...]\n\n----\n\nI meant putting the ticket number also into a comment **in the code**; you don't see the commit messages when looking just at source files. E.g.\n\n```\n        ... # fixes #9717\n```\n\nor in the `TESTS::` section:\n\n```\n    Substitution is (now) also allowed with different rings (cf. #9717)::\n```\n\nSomething like that.",
+    "body": "And an attachment comment would be nice... (\"Sage library patch - ...\")\n\nI HATE TRAC! [concurrent \"editing\" grrrrr...]\n\n---\n\nI meant putting the ticket number also into a comment **in the code**; you don't see the commit messages when looking just at source files. E.g.\n\n```\n        ... # fixes #9717\n```\nor in the `TESTS::` section:\n\n```\n    Substitution is (now) also allowed with different rings (cf. #9717)::\n```\nSomething like that.",
     "created_at": "2010-08-14T13:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9717",
     "type": "issue_comment",
@@ -764,20 +769,18 @@ And an attachment comment would be nice... ("Sage library patch - ...")
 
 I HATE TRAC! [concurrent "editing" grrrrr...]
 
-----
+---
 
 I meant putting the ticket number also into a comment **in the code**; you don't see the commit messages when looking just at source files. E.g.
 
 ```
         ... # fixes #9717
 ```
-
 or in the `TESTS::` section:
 
 ```
     Substitution is (now) also allowed with different rings (cf. #9717)::
 ```
-
 Something like that.
 
 

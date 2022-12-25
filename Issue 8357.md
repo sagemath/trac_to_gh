@@ -3,7 +3,7 @@
 archive/issues_008357.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.  However, I can't figure out how this file gets there.  In\nparticular, if I delete the following doctests from the rank method,\nthen the file is not produced:\n\n{{{\ndiff -r 23241bd151e3 sage/schemes/elliptic_curves/\nell_rational_field.py\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu\nFeb 18 14:25:25 2010 -0800\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed\nFeb 24 20:37:09 2010 -0800\n@@ -1679,14 +1679,6 @@\n             sage: E.minimal_model().rank()\n             1\n\n-        A large example where mwrank doesn't determine the result\nwith certainty::\n-\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n-            0\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n-            Traceback (most recent call last):\n-            ...\n-            RuntimeError: Rank not provably correct.\n         \"\"\"\n         if proof is None:\n             from sage.structure.proof.proof import get_flag\n\n}}}\n\nIf I run these by hand from the command line, though, I don't see the\nfile PRIMES anywhere.  Can someone familiar with the elliptic curves\ncode open a ticket, chase this down, and fix it?\n```\n\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
+    "body": "Assignee: @JohnCremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.  However, I can't figure out how this file gets there.  In\nparticular, if I delete the following doctests from the rank method,\nthen the file is not produced:\n\n{{{\ndiff -r 23241bd151e3 sage/schemes/elliptic_curves/\nell_rational_field.py\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu\nFeb 18 14:25:25 2010 -0800\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed\nFeb 24 20:37:09 2010 -0800\n@@ -1679,14 +1679,6 @@\n             sage: E.minimal_model().rank()\n             1\n\n-        A large example where mwrank doesn't determine the result\nwith certainty::\n-\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n-            0\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n-            Traceback (most recent call last):\n-            ...\n-            RuntimeError: Rank not provably correct.\n         \"\"\"\n         if proof is None:\n             from sage.structure.proof.proof import get_flag\n\n}}}\n\nIf I run these by hand from the command line, though, I don't see the\nfile PRIMES anywhere.  Can someone familiar with the elliptic curves\ncode open a ticket, chase this down, and fix it?\n```\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
     "created_at": "2010-02-25T06:05:03Z",
     "labels": [
         "component: elliptic curves",
@@ -58,7 +58,6 @@ If I run these by hand from the command line, though, I don't see the
 file PRIMES anywhere.  Can someone familiar with the elliptic curves
 code open a ticket, chase this down, and fix it?
 ```
-
 
 This is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.
 
@@ -184,7 +183,7 @@ Tweak `MAKEFILE`s for parallel builds.  eclib src repo.
 archive/issue_comments_074532.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n\n> There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).\n\nI think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.",
+    "body": "Replying to [comment:3 mpatel]:\n\n> There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).\n\n\nI think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.",
     "created_at": "2010-02-28T13:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -197,6 +196,7 @@ Replying to [comment:3 mpatel]:
 
 > There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).
 
+
 I think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the "makefiles" patch and spkg with a fix that I'm testing now.
 
 
@@ -206,7 +206,7 @@ I think the problem is that make sometimes attempts to build a target in `progs`
 archive/issue_comments_074533.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Replying to [comment:3 mpatel]:\n> \n> > There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).\n> \n> I think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.\n\nThat sounds likely.  We (I) should probably tidy this up;  there are several useful executables which are built, but the only one actually used by and accessible from Sage after the build is mwrank.  So i should change the targets so that the other progs are only built when doing a make check.",
+    "body": "Replying to [comment:4 mpatel]:\n> Replying to [comment:3 mpatel]:\n> \n> > There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).\n\n> \n> I think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.\n\n\nThat sounds likely.  We (I) should probably tidy this up;  there are several useful executables which are built, but the only one actually used by and accessible from Sage after the build is mwrank.  So i should change the targets so that the other progs are only built when doing a make check.",
     "created_at": "2010-02-28T13:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -219,8 +219,10 @@ Replying to [comment:4 mpatel]:
 > Replying to [comment:3 mpatel]:
 > 
 > > There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.log)).
+
 > 
 > I think the problem is that make sometimes attempts to build a target in `progs` before it's done building a requisite shared library, e.g., `install_so`.  I've updated the "makefiles" patch and spkg with a fix that I'm testing now.
+
 
 That sounds likely.  We (I) should probably tidy this up;  there are several useful executables which are built, but the only one actually used by and accessible from Sage after the build is mwrank.  So i should change the targets so that the other progs are only built when doing a make check.
 
@@ -231,7 +233,7 @@ That sounds likely.  We (I) should probably tidy this up;  there are several use
 archive/issue_comments_074534.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> [...] I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.\nIt seems to work and it survives a stress test on sage.math, e.g.,\n\n```sh\nexport MAKE=\"make -j20\"  # And NTL_PREFIX, etc.\nmake veryclean && make && make so && make veryclean && make && make so && [lots of reps] && ls\n```\n",
+    "body": "Replying to [comment:4 mpatel]:\n> [...] I've updated the \"makefiles\" patch and spkg with a fix that I'm testing now.\n\nIt seems to work and it survives a stress test on sage.math, e.g.,\n\n```sh\nexport MAKE=\"make -j20\"  # And NTL_PREFIX, etc.\nmake veryclean && make && make so && make veryclean && make && make so && [lots of reps] && ls\n```",
     "created_at": "2010-02-28T14:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -242,6 +244,7 @@ archive/issue_comments_074534.json:
 
 Replying to [comment:4 mpatel]:
 > [...] I've updated the "makefiles" patch and spkg with a fix that I'm testing now.
+
 It seems to work and it survives a stress test on sage.math, e.g.,
 
 ```sh
@@ -251,13 +254,12 @@ make veryclean && make && make so && make veryclean && make && make so && [lots 
 
 
 
-
 ---
 
 archive/issue_comments_074535.json:
 ```json
 {
-    "body": "mpatel:  if possible could you make he following additional edits to src/procs/Makefile (in eclib...p10):\n\n```\ndiff -r 809e34b4c146 procs/Makefile\n--- a/procs/Makefile\tSat Feb 27 15:42:31 2010 -0800\n+++ b/procs/Makefile\tSun Feb 28 20:08:44 2010 +0000\n@@ -105,7 +105,7 @@\n \tgzip procs.tar\n \n check: $(TESTS)\n-\trm -f PRIMES t\n+\trm -f PRIMES t 1\n \t./vectest1 < vectest.in >  t && diff t vectest.out\n \t./vectest2 < vectest.in >  t && diff t vectest.out\n \t./mattest1 < mattest.in >  t && diff t mattest.out\n@@ -128,7 +128,7 @@\n \t./rcubic < rcubic.in > t && diff t rcubic.out\n \t./lcubic < lcubic.in > t && diff t lcubic.out\n \t./tp2points < tp2points.in > t && diff t tp2points.out\n-\trm -f PRIMES t\n+\trm -f PRIMES t 1\n```\n\nIt's another temp file which gets left behind, this time after \"make check\".\n\nIf that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.",
+    "body": "mpatel:  if possible could you make he following additional edits to src/procs/Makefile (in eclib...p10):\n\n```\ndiff -r 809e34b4c146 procs/Makefile\n--- a/procs/Makefile\tSat Feb 27 15:42:31 2010 -0800\n+++ b/procs/Makefile\tSun Feb 28 20:08:44 2010 +0000\n@@ -105,7 +105,7 @@\n \tgzip procs.tar\n \n check: $(TESTS)\n-\trm -f PRIMES t\n+\trm -f PRIMES t 1\n \t./vectest1 < vectest.in >  t && diff t vectest.out\n \t./vectest2 < vectest.in >  t && diff t vectest.out\n \t./mattest1 < mattest.in >  t && diff t mattest.out\n@@ -128,7 +128,7 @@\n \t./rcubic < rcubic.in > t && diff t rcubic.out\n \t./lcubic < lcubic.in > t && diff t lcubic.out\n \t./tp2points < tp2points.in > t && diff t tp2points.out\n-\trm -f PRIMES t\n+\trm -f PRIMES t 1\n```\nIt's another temp file which gets left behind, this time after \"make check\".\n\nIf that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.",
     "created_at": "2010-02-28T20:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -288,7 +290,6 @@ diff -r 809e34b4c146 procs/Makefile
 -	rm -f PRIMES t
 +	rm -f PRIMES t 1
 ```
-
 It's another temp file which gets left behind, this time after "make check".
 
 If that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.
@@ -338,7 +339,7 @@ Don't write `PRIMES`. Delete `1` after check.  eclib src repo
 archive/issue_comments_074538.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> If that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.\nDone!  I've updated spkg and two patches.",
+    "body": "Replying to [comment:7 cremona]:\n> If that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.\n\nDone!  I've updated spkg and two patches.",
     "created_at": "2010-03-01T00:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -349,6 +350,7 @@ archive/issue_comments_074538.json:
 
 Replying to [comment:7 cremona]:
 > If that's too much hassle I'll do it next time I make changes to the eclib spkg, but it would be convenient to do it now.
+
 Done!  I've updated spkg and two patches.
 
 
@@ -376,7 +378,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074540.json:
 ```json
 {
-    "body": "I noticed a different problem with `make check` on t2:\n\n```\nmake[3]: Entering directory `/scratch/mpatel/sage-4.3.0.1/spkg/build/eclib-20080310.p10/src/g0n'\nrm -f PRIMES t\n./modtest < modtest.in > t 2>/dev/null && diff t modtest.out \n./homtest < homtest.in > t && diff t homtest.out\n./hecketest < hecketest.in > t 2>/dev/null && diff t hecketest.out \n./mhcount < mhcount.in > t && diff t  mhcount.out\nrm -rf tmp_nf_dir\nmkdir tmp_nf_dir\nexport NF_DIR=tmp_nf_dir && ./tmanin < tmanin.in > t 2>/dev/null && diff t tmanin.out\n/bin/sh: NF_DIR=tmp_nf_dir: is not an identifier\nmake[3]: *** [check] Error 1\nmake[3]: Leaving directory `/scratch/mpatel/sage-4.3.0.1/spkg/build/eclib-20080310.p10/src/g0n'\n```\n\nI think we can fix this with, e.g.,\n\n```sh\nenv NF_DIR=tmp_nf_dir ./tmanin < tmanin.in > t 2>/dev/null && diff t tmanin.out\n```\n",
+    "body": "I noticed a different problem with `make check` on t2:\n\n```\nmake[3]: Entering directory `/scratch/mpatel/sage-4.3.0.1/spkg/build/eclib-20080310.p10/src/g0n'\nrm -f PRIMES t\n./modtest < modtest.in > t 2>/dev/null && diff t modtest.out \n./homtest < homtest.in > t && diff t homtest.out\n./hecketest < hecketest.in > t 2>/dev/null && diff t hecketest.out \n./mhcount < mhcount.in > t && diff t  mhcount.out\nrm -rf tmp_nf_dir\nmkdir tmp_nf_dir\nexport NF_DIR=tmp_nf_dir && ./tmanin < tmanin.in > t 2>/dev/null && diff t tmanin.out\n/bin/sh: NF_DIR=tmp_nf_dir: is not an identifier\nmake[3]: *** [check] Error 1\nmake[3]: Leaving directory `/scratch/mpatel/sage-4.3.0.1/spkg/build/eclib-20080310.p10/src/g0n'\n```\nI think we can fix this with, e.g.,\n\n```sh\nenv NF_DIR=tmp_nf_dir ./tmanin < tmanin.in > t 2>/dev/null && diff t tmanin.out\n```",
     "created_at": "2010-03-01T04:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -401,13 +403,11 @@ export NF_DIR=tmp_nf_dir && ./tmanin < tmanin.in > t 2>/dev/null && diff t tmani
 make[3]: *** [check] Error 1
 make[3]: Leaving directory `/scratch/mpatel/sage-4.3.0.1/spkg/build/eclib-20080310.p10/src/g0n'
 ```
-
 I think we can fix this with, e.g.,
 
 ```sh
 env NF_DIR=tmp_nf_dir ./tmanin < tmanin.in > t 2>/dev/null && diff t tmanin.out
 ```
-
 
 
 
@@ -495,7 +495,7 @@ replacement src/g0n/Makefile
 archive/issue_comments_074545.json:
 ```json
 {
-    "body": "Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by @JohnCremona created at 2010-03-01 22:04:17\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\nI have attached the replacement Makefile -- could you update the spkg with it?",
+    "body": "Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by @JohnCremona created at 2010-03-01 22:04:17\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\n\nI have attached the replacement Makefile -- could you update the spkg with it?",
     "created_at": "2010-03-01T22:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
@@ -508,6 +508,7 @@ Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) 
 
 Replying to [comment:12 mpatel]:
 > Sure, that sounds good.
+
 I have attached the replacement Makefile -- could you update the spkg with it?
 
 

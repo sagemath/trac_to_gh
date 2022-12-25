@@ -3,7 +3,7 @@
 archive/issues_001175.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen building sage-2.8.12, there are two circular links in sage/local/lib/python2.5:\n\n```\nachille% pwd\n/net/achille/localdisk/zimmerma/sage-2.8.12/local/lib/python2.5\nachille% ls -l pyt*\nlrwxrwxrwx 1 zimmerma spaces 6 2007-11-14 09:53 python -> python\nlrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1175\n\n",
+    "body": "Assignee: mabshoff\n\nWhen building sage-2.8.12, there are two circular links in sage/local/lib/python2.5:\n\n```\nachille% pwd\n/net/achille/localdisk/zimmerma/sage-2.8.12/local/lib/python2.5\nachille% ls -l pyt*\nlrwxrwxrwx 1 zimmerma spaces 6 2007-11-14 09:53 python -> python\nlrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1175\n\n",
     "created_at": "2007-11-15T08:27:09Z",
     "labels": [
         "component: distribution",
@@ -28,7 +28,6 @@ achille% ls -l pyt*
 lrwxrwxrwx 1 zimmerma spaces 6 2007-11-14 09:53 python -> python
 lrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1175
 

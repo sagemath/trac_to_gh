@@ -3,7 +3,7 @@
 archive/issues_004030.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe motivation here is being able to evaluate the gradient of a function at a point.\n\n\n```\nThe desired behavior is\n    sage: x, y = var('x, y')\n    sage: f = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(x=3,y=2)\n    (6,4)\n\nCurrently, however\n    sage: g(x=3,y=2)\n    Traceback (most recent call last):\n    ...\n    TypeError:\n    'sage.modules.free_module_element.FreeModuleElement_generic_dense'\n    object is not callable\n\nCalls should also work for a vector of callable symbolic expressions.\nNote that the gradient part will only work once #2547 is applied.\n    sage: f(x,y) = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(3,2)\n    (6,4)\n    sage: g(y=2,x=3)\n    (6,4)\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4030\n\n",
+    "body": "Assignee: tbd\n\nThe motivation here is being able to evaluate the gradient of a function at a point.\n\n```\nThe desired behavior is\n    sage: x, y = var('x, y')\n    sage: f = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(x=3,y=2)\n    (6,4)\n\nCurrently, however\n    sage: g(x=3,y=2)\n    Traceback (most recent call last):\n    ...\n    TypeError:\n    'sage.modules.free_module_element.FreeModuleElement_generic_dense'\n    object is not callable\n\nCalls should also work for a vector of callable symbolic expressions.\nNote that the gradient part will only work once #2547 is applied.\n    sage: f(x,y) = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(3,2)\n    (6,4)\n    sage: g(y=2,x=3)\n    (6,4)\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4030\n\n",
     "created_at": "2008-09-01T05:13:17Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_004030.json:
 Assignee: tbd
 
 The motivation here is being able to evaluate the gradient of a function at a point.
-
 
 ```
 The desired behavior is
@@ -76,7 +75,7 @@ Changing component from algebra to calculus.
 archive/issue_comments_029015.json:
 ```json
 {
-    "body": "Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by @jicama created at 2008-09-01 05:23:47\n\nThe attached patch solves all the cases above except the last, which returns\n\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
+    "body": "Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by @jicama created at 2008-09-01 05:23:47\n\nThe attached patch solves all the cases above except the last, which returns\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
     "created_at": "2008-09-01T05:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
@@ -89,14 +88,12 @@ Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4
 
 The attached patch solves all the cases above except the last, which returns
 
-
 ```
 sage: g(y=2,x=3)
 Traceback (most recent call last):
 ...
 TypeError: __call__() got an unexpected keyword argument 'y'
 ```
-
 
 Not sure what the deal is with that.
 

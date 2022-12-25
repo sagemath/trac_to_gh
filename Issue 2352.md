@@ -3,7 +3,7 @@
 archive/issues_002352.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial homogenize\n\nTicket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):\n\n\n```\nsage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(Zmod(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\nsage: x = GF(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2352\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial homogenize\n\nTicket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):\n\n```\nsage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(Zmod(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\nsage: x = GF(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2352\n\n",
     "created_at": "2008-02-29T08:24:09Z",
     "labels": [
         "component: commutative algebra",
@@ -23,7 +23,6 @@ CC:  @ncalexan
 Keywords: univariate polynomial homogenize
 
 Ticket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):
-
 
 ```
 sage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()
@@ -45,7 +44,6 @@ sage: x = GF(3)['x'].0; (x^2 + x).homogenize()
 sage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()
 x^2 + x*h
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2352
 
@@ -161,7 +159,7 @@ archive/issue_events_005547.json:
 archive/issue_comments_015774.json:
 ```json
 {
-    "body": "One step more to unify some methods of univariate and multivariate polynomials.\n----\nNew commits:",
+    "body": "One step more to unify some methods of univariate and multivariate polynomials.\n\n---\nNew commits:",
     "created_at": "2014-07-24T14:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
@@ -171,7 +169,8 @@ archive/issue_comments_015774.json:
 ```
 
 One step more to unify some methods of univariate and multivariate polynomials.
-----
+
+---
 New commits:
 
 
@@ -253,7 +252,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_015779.json:
 ```json
 {
-    "body": "I tried to clarify the behaviour in the docstrings. I hope you do not mind my changes.\n----\nNew commits:",
+    "body": "I tried to clarify the behaviour in the docstrings. I hope you do not mind my changes.\n\n---\nNew commits:",
     "created_at": "2014-07-28T23:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
@@ -263,7 +262,8 @@ archive/issue_comments_015779.json:
 ```
 
 I tried to clarify the behaviour in the docstrings. I hope you do not mind my changes.
-----
+
+---
 New commits:
 
 

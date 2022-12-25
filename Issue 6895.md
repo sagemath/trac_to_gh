@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6895
 archive/issue_comments_056847.json:
 ```json
 {
-    "body": "*detect_poles* is only meant for the case when the left/right side limits of the function are +/-Infinity.\nIt was never intended to detect other discontinuities.\n\nBut ticket #6878 implements something like this. It does not automatically detect the discontinuities but\nlets you specify which points to exclude from the plot.\n\nThe following would have the effect you want:\n\n\n```\nsage: plot(ceil(x), (x, 1, 10), exclude = [1..10])\n```\n",
+    "body": "*detect_poles* is only meant for the case when the left/right side limits of the function are +/-Infinity.\nIt was never intended to detect other discontinuities.\n\nBut ticket #6878 implements something like this. It does not automatically detect the discontinuities but\nlets you specify which points to exclude from the plot.\n\nThe following would have the effect you want:\n\n```\nsage: plot(ceil(x), (x, 1, 10), exclude = [1..10])\n```",
     "created_at": "2009-09-07T10:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6895",
     "type": "issue_comment",
@@ -50,11 +50,9 @@ lets you specify which points to exclude from the plot.
 
 The following would have the effect you want:
 
-
 ```
 sage: plot(ceil(x), (x, 1, 10), exclude = [1..10])
 ```
-
 
 
 

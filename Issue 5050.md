@@ -90,7 +90,7 @@ Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/t
 archive/issue_comments_038410.json:
 ```json
 {
-    "body": "One positive review.  It's probably important enough that at least one other person ought to review it as well.\n\nMike and I stepped through the changes, they all look good, and I tested for about 20 minutes with various combinations of the directives and things seemed to work.  I had one glitch, but I can't reproduce it.  I had a cell that looked like:\n\n\n```\n%hide\n%hideall\nprint \"hi\"\n```\n\n\nI closed the cell, reopened it, then deleted all output, then did a few more things I can't remember.  At one point, the cell changed to:\n\n\n```\n%hide\n%hid\n```\n\n\nIf we can't reproduce something like this, though, I give it a positive review.",
+    "body": "One positive review.  It's probably important enough that at least one other person ought to review it as well.\n\nMike and I stepped through the changes, they all look good, and I tested for about 20 minutes with various combinations of the directives and things seemed to work.  I had one glitch, but I can't reproduce it.  I had a cell that looked like:\n\n```\n%hide\n%hideall\nprint \"hi\"\n```\n\nI closed the cell, reopened it, then deleted all output, then did a few more things I can't remember.  At one point, the cell changed to:\n\n```\n%hide\n%hid\n```\n\nIf we can't reproduce something like this, though, I give it a positive review.",
     "created_at": "2009-01-22T16:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
@@ -103,22 +103,18 @@ One positive review.  It's probably important enough that at least one other per
 
 Mike and I stepped through the changes, they all look good, and I tested for about 20 minutes with various combinations of the directives and things seemed to work.  I had one glitch, but I can't reproduce it.  I had a cell that looked like:
 
-
 ```
 %hide
 %hideall
 print "hi"
 ```
 
-
 I closed the cell, reopened it, then deleted all output, then did a few more things I can't remember.  At one point, the cell changed to:
-
 
 ```
 %hide
 %hid
 ```
-
 
 If we can't reproduce something like this, though, I give it a positive review.
 

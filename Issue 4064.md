@@ -3,7 +3,7 @@
 archive/issues_004064.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nJohn Cremona found this:\n\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\n\nSo we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4064\n\n",
+    "body": "Assignee: @williamstein\n\nJohn Cremona found this:\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\nSo we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4064\n\n",
     "created_at": "2008-09-04T23:34:40Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 John Cremona found this:
 
-
 ```
 sage: E = EllipticCurve('37a')                     
 sage: E.period_lattice().basis(prec=30)[0].parent()
@@ -28,7 +27,6 @@ Real Field with 896 bits of precision
 sage: E.period_lattice().basis(prec=100)[0].parent()
 Real Field with 3136 bits of precision
 ```
-
 
 So we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4064
 archive/issue_comments_029254.json:
 ```json
 {
-    "body": "Replying to [ticket:4064 AlexGhitza]:\n> John Cremona found this:\n> \n> {{{\n> sage: E = EllipticCurve('37a')                     \n> sage: E.period_lattice().basis(prec=30)[0].parent()\n> Real Field with 896 bits of precision\n> sage: E.period_lattice().basis(prec=100)[0].parent()\n> Real Field with 3136 bits of precision\n> }}}\n> \n> So we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIn fact when I rewrote the precision-handling in period lattice functions, I intended the prec parameter to be Sage-precision (in bits) and not pari-precision (in digits).  I suggested on sage-devel that if parameters represent decimal precision their name should reflect that and be called (for example) prec10.\n\nThis does not alter the substance of this ticket, and I hope to look into it today.",
+    "body": "Replying to [ticket:4064 AlexGhitza]:\n> John Cremona found this:\n> \n> \n> ```\n> sage: E = EllipticCurve('37a')                     \n> sage: E.period_lattice().basis(prec=30)[0].parent()\n> Real Field with 896 bits of precision\n> sage: E.period_lattice().basis(prec=100)[0].parent()\n> Real Field with 3136 bits of precision\n> ```\n> \n> So we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\n\nIn fact when I rewrote the precision-handling in period lattice functions, I intended the prec parameter to be Sage-precision (in bits) and not pari-precision (in digits).  I suggested on sage-devel that if parameters represent decimal precision their name should reflect that and be called (for example) prec10.\n\nThis does not alter the substance of this ticket, and I hope to look into it today.",
     "created_at": "2008-09-05T08:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -55,15 +53,17 @@ archive/issue_comments_029254.json:
 Replying to [ticket:4064 AlexGhitza]:
 > John Cremona found this:
 > 
-> {{{
+> 
+> ```
 > sage: E = EllipticCurve('37a')                     
 > sage: E.period_lattice().basis(prec=30)[0].parent()
 > Real Field with 896 bits of precision
 > sage: E.period_lattice().basis(prec=100)[0].parent()
 > Real Field with 3136 bits of precision
-> }}}
+> ```
 > 
 > So we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.
+
 
 In fact when I rewrote the precision-handling in period lattice functions, I intended the prec parameter to be Sage-precision (in bits) and not pari-precision (in digits).  I suggested on sage-devel that if parameters represent decimal precision their name should reflect that and be called (for example) prec10.
 
@@ -94,7 +94,7 @@ I actually figured out what's wrong and fixed it today, but I haven't had time t
 archive/issue_comments_029256.json:
 ```json
 {
-    "body": "Replying to [comment:2 AlexGhitza]:\n> I actually figured out what's wrong and fixed it today, but I haven't had time to write doctests.  I will try to get to it soon and post a patch.\n\nAlex, please tell me what you have done a.s.a.p. since I have looking into this in some detail too...\n\nThe main point is that converting from pari to Sage using .python() has a precision parameter which is *not* the desired Sage precision, and in fact is a useless parameter since it changes the precision of the pari object, which is rather a stupid thing to do after the object has been created.  Add to that the fact that there are at least *three* different precision scales in ues (bits, digits, and words) and we can see how it is easy for the precision to suddenly go up by a factor of 32 or 64!",
+    "body": "Replying to [comment:2 AlexGhitza]:\n> I actually figured out what's wrong and fixed it today, but I haven't had time to write doctests.  I will try to get to it soon and post a patch.\n\n\nAlex, please tell me what you have done a.s.a.p. since I have looking into this in some detail too...\n\nThe main point is that converting from pari to Sage using .python() has a precision parameter which is *not* the desired Sage precision, and in fact is a useless parameter since it changes the precision of the pari object, which is rather a stupid thing to do after the object has been created.  Add to that the fact that there are at least *three* different precision scales in ues (bits, digits, and words) and we can see how it is easy for the precision to suddenly go up by a factor of 32 or 64!",
     "created_at": "2008-09-05T13:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -105,6 +105,7 @@ archive/issue_comments_029256.json:
 
 Replying to [comment:2 AlexGhitza]:
 > I actually figured out what's wrong and fixed it today, but I haven't had time to write doctests.  I will try to get to it soon and post a patch.
+
 
 Alex, please tell me what you have done a.s.a.p. since I have looking into this in some detail too...
 
@@ -181,7 +182,7 @@ I can never work out what time of day it is for you, but I hope to work on this 
 archive/issue_comments_029260.json:
 ```json
 {
-    "body": "I successfully applied the whole sequence of patches ending with 4064-ell_pari_precision.patch to fresh 3.1.2.alpha4 builds on two machines, a 32-bit and a 64-bit.  \n\nTesting all of sage.schemes.elliptic_curves, the only failure on 32-bit was (as Alex reported) in ell_number_field.py:\n\n```\nFile \"/home/jec/sage-current/tmp/ell_number_field.py\", line 1133:\n    sage: L.basis(prec=10)\nExpected:\n    (4.1310718527050167743096955262475367...,\n    -2.0655359263525083871548477631237683... + 0.98863042446910777236901069433960633...*I)\nGot:\n    (4.13107185270501677, -2.06553592635250838 + 0.988630424469107772*I)\n```\n\n\nOn the 64-bit I also had stuff in period_lattice.py and in ell_rational_field.py this:\n\n```\nFile \"/home/jec/sage-current/tmp/ell_rational_field.py\", line 448:\n    sage: [a.precision() for a in E]\nExpected:\n    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3]\n```\n\n\nThis is just on account of differing behaviour on 64-bit machines which Alex had not tested, so I'll edit the doctests accorsingly and come back with an additional patch.",
+    "body": "I successfully applied the whole sequence of patches ending with 4064-ell_pari_precision.patch to fresh 3.1.2.alpha4 builds on two machines, a 32-bit and a 64-bit.  \n\nTesting all of sage.schemes.elliptic_curves, the only failure on 32-bit was (as Alex reported) in ell_number_field.py:\n\n```\nFile \"/home/jec/sage-current/tmp/ell_number_field.py\", line 1133:\n    sage: L.basis(prec=10)\nExpected:\n    (4.1310718527050167743096955262475367...,\n    -2.0655359263525083871548477631237683... + 0.98863042446910777236901069433960633...*I)\nGot:\n    (4.13107185270501677, -2.06553592635250838 + 0.988630424469107772*I)\n```\n\nOn the 64-bit I also had stuff in period_lattice.py and in ell_rational_field.py this:\n\n```\nFile \"/home/jec/sage-current/tmp/ell_rational_field.py\", line 448:\n    sage: [a.precision() for a in E]\nExpected:\n    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3]\n```\n\nThis is just on account of differing behaviour on 64-bit machines which Alex had not tested, so I'll edit the doctests accorsingly and come back with an additional patch.",
     "created_at": "2008-09-06T16:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -204,7 +205,6 @@ Got:
     (4.13107185270501677, -2.06553592635250838 + 0.988630424469107772*I)
 ```
 
-
 On the 64-bit I also had stuff in period_lattice.py and in ell_rational_field.py this:
 
 ```
@@ -215,7 +215,6 @@ Expected:
 Got:
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3]
 ```
-
 
 This is just on account of differing behaviour on 64-bit machines which Alex had not tested, so I'll edit the doctests accorsingly and come back with an additional patch.
 
@@ -268,7 +267,7 @@ I guess that now we need a review who is neither Alex nor me.  (Note that the de
 archive/issue_comments_029263.json:
 ```json
 {
-    "body": "ok, there's some numeric fuzz in one doctest on 32-bit:\n\n```\nFile \"/home/john/sage-3.1.2.alpha4/tmp/period_lattice.py\", line 281:\n    sage: EllipticCurve('389a1').period_lattice().sigma(CC(2,1))\nExpected:\n    2.609121635701083769 - 0.20086508082458695134*I\nGot:\n    2.609121635701083769 - 0.20086508082458695200*I\n```\n\nbut I'll leave it for now since there may be more of the same.  That's what comes of adding doctests to functions which have never had them (this files now has 100% coverage!)",
+    "body": "ok, there's some numeric fuzz in one doctest on 32-bit:\n\n```\nFile \"/home/john/sage-3.1.2.alpha4/tmp/period_lattice.py\", line 281:\n    sage: EllipticCurve('389a1').period_lattice().sigma(CC(2,1))\nExpected:\n    2.609121635701083769 - 0.20086508082458695134*I\nGot:\n    2.609121635701083769 - 0.20086508082458695200*I\n```\nbut I'll leave it for now since there may be more of the same.  That's what comes of adding doctests to functions which have never had them (this files now has 100% coverage!)",
     "created_at": "2008-09-06T19:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -287,7 +286,6 @@ Expected:
 Got:
     2.609121635701083769 - 0.20086508082458695200*I
 ```
-
 but I'll leave it for now since there may be more of the same.  That's what comes of adding doctests to functions which have never had them (this files now has 100% coverage!)
 
 
@@ -397,7 +395,7 @@ I'm happy with John's patch.
 archive/issue_comments_029269.json:
 ```json
 {
-    "body": "Replying to [comment:12 AlexGhitza]:\n> I'm happy with John's patch.\n\n.. and I am more than happy with Alex's.  It has been a very good collaborative effort, and knowing that two of us have got to grips with the issue is very good to know.\n\nI'll put the next patch concerning pari precision issues onto a new ticket;  it will certainly depend on all these,",
+    "body": "Replying to [comment:12 AlexGhitza]:\n> I'm happy with John's patch.\n\n\n.. and I am more than happy with Alex's.  It has been a very good collaborative effort, and knowing that two of us have got to grips with the issue is very good to know.\n\nI'll put the next patch concerning pari precision issues onto a new ticket;  it will certainly depend on all these,",
     "created_at": "2008-09-07T10:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
@@ -408,6 +406,7 @@ archive/issue_comments_029269.json:
 
 Replying to [comment:12 AlexGhitza]:
 > I'm happy with John's patch.
+
 
 .. and I am more than happy with Alex's.  It has been a very good collaborative effort, and knowing that two of us have got to grips with the issue is very good to know.
 

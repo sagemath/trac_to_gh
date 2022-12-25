@@ -3,7 +3,7 @@
 archive/issues_005319.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nThis is in \"3.1 Steps to Install from Source\"\n\n```\nrootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source from http://www.sagemath.org/dist/src/ but I get a 404.\n[02:52am] mabs: oops\n[02:52am] mabs: That moved around, I will open a ticket.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5319\n\n",
+    "body": "Assignee: @haraldschilly\n\nThis is in \"3.1 Steps to Install from Source\"\n\n```\nrootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source from http://www.sagemath.org/dist/src/ but I get a 404.\n[02:52am] mabs: oops\n[02:52am] mabs: That moved around, I will open a ticket.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5319\n\n",
     "created_at": "2009-02-20T10:53:28Z",
     "labels": [
         "component: documentation",
@@ -25,7 +25,6 @@ rootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source
 [02:52am] mabs: oops
 [02:52am] mabs: That moved around, I will open a ticket.
 ```
-
 
 Cheers,
 

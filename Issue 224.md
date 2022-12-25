@@ -3,7 +3,7 @@
 archive/issues_000224.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nTimothy clemens:\nWhy is some code just as on\nhttp://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html\nnon-excutable in that worksheet?\n```\n\n\nBecause the doc parser doesn't know about \"notebook input format\",\nironically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/224\n\n",
+    "body": "Assignee: boothby\n\n```\nTimothy clemens:\nWhy is some code just as on\nhttp://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html\nnon-excutable in that worksheet?\n```\n\nBecause the doc parser doesn't know about \"notebook input format\",\nironically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/224\n\n",
     "created_at": "2007-01-28T04:54:42Z",
     "labels": [
         "component: notebook",
@@ -18,14 +18,12 @@ archive/issues_000224.json:
 ```
 Assignee: boothby
 
-
 ```
 Timothy clemens:
 Why is some code just as on
 http://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html
 non-excutable in that worksheet?
 ```
-
 
 Because the doc parser doesn't know about "notebook input format",
 ironically.
@@ -137,7 +135,7 @@ Replying to [ticket:224 was]:
 archive/issue_comments_000996.json:
 ```json
 {
-    "body": "Could we do the following:\n\n  a verbatim environment with both ` and ` in it is converted to a notebook cell,\n  unless %nocell appears in the previous line?  In the vast majority of cases, in the\n  long run, we'll want verbatim cells with {{{'s to be converted directly to notebook cells.\n\nE.g., where below the {{ should be thought of as {{{:\n\n\n```\nThis is how to write notebook mode:\n%nocell\n\\begin{verbatim}\n{{\n2+2\n///\n4\n}}\n\\end{verbatim}\n```\n",
+    "body": "Could we do the following:\n\n  a verbatim environment with both ` and ` in it is converted to a notebook cell,\n  unless %nocell appears in the previous line?  In the vast majority of cases, in the\n  long run, we'll want verbatim cells with {{{'s to be converted directly to notebook cells.\n\nE.g., where below the {{ should be thought of as {{{:\n\n```\nThis is how to write notebook mode:\n%nocell\n\\begin{verbatim}\n{{\n2+2\n///\n4\n}}\n\\end{verbatim}\n```",
     "created_at": "2007-09-09T15:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
@@ -154,7 +152,6 @@ Could we do the following:
 
 E.g., where below the {{ should be thought of as {{{:
 
-
 ```
 This is how to write notebook mode:
 %nocell
@@ -166,7 +163,6 @@ This is how to write notebook mode:
 }}
 \end{verbatim}
 ```
-
 
 
 

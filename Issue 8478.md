@@ -64,7 +64,7 @@ A better way of handling the `#!` problem might be to use `#!/usr/bin/env sage-p
 archive/issue_comments_076287.json:
 ```json
 {
-    "body": "Here's a version which should work correctly (at least with sage 5.8):\n\n\n\n```/usr/bin/env sage\n\nimport sys\nfrom sage.all import *\n\nif len(sys.argv) != 2:\n    print \"Usage: %s <n>\"%sys.argv[0]\n    print \"Outputs the prime factorization of n.\"\n    sys.exit(1)\n    \ntry:\n    e = sage_eval(sys.argv[1])\nexcept NameError:\n    e = symbolic_expression(sys.argv[1])\n\nprint factor(e)\n\n```\n",
+    "body": "Here's a version which should work correctly (at least with sage 5.8):\n\n\n```/usr/bin/env sage\n\nimport sys\nfrom sage.all import *\n\nif len(sys.argv) != 2:\n    print \"Usage: %s <n>\"%sys.argv[0]\n    print \"Outputs the prime factorization of n.\"\n    sys.exit(1)\n    \ntry:\n    e = sage_eval(sys.argv[1])\nexcept NameError:\n    e = symbolic_expression(sys.argv[1])\n\nprint factor(e)\n\n```",
     "created_at": "2011-08-08T22:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8478",
     "type": "issue_comment",
@@ -74,7 +74,6 @@ archive/issue_comments_076287.json:
 ```
 
 Here's a version which should work correctly (at least with sage 5.8):
-
 
 
 ```/usr/bin/env sage
@@ -95,7 +94,6 @@ except NameError:
 print factor(e)
 
 ```
-
 
 
 

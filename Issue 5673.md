@@ -159,7 +159,7 @@ The only suggestion I have is that it might be better to return `False` rather t
 archive/issue_comments_044296.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> The only suggestion I have is that it might be better to return `False` rather than `0` for non-twists. \n\nI did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n\nIt's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\nOne advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.",
+    "body": "Replying to [comment:3 robertwb]:\n> The only suggestion I have is that it might be better to return `False` rather than `0` for non-twists. \n\n\nI did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n\nIt's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\nOne advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.",
     "created_at": "2009-04-12T09:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -170,6 +170,7 @@ archive/issue_comments_044296.json:
 
 Replying to [comment:3 robertwb]:
 > The only suggestion I have is that it might be better to return `False` rather than `0` for non-twists. 
+
 
 I did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).
 
@@ -184,7 +185,7 @@ One advantage of the current setup is that if you do not need the parameter you 
 archive/issue_comments_044297.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> \n> I did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n> \n> It's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\nOne could do this, but then it gets really messy to use. \n \n> One advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.\n\nYes, that will work. Actually, I think the most Pythonic thing to do here would perhaps be to return None, but I think the current behavior is fine as well.",
+    "body": "Replying to [comment:4 cremona]:\n> \n> I did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n> \n> It's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\n\nOne could do this, but then it gets really messy to use. \n \n> One advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.\n\n\nYes, that will work. Actually, I think the most Pythonic thing to do here would perhaps be to return None, but I think the current behavior is fine as well.",
     "created_at": "2009-04-12T10:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -199,9 +200,11 @@ Replying to [comment:4 cremona]:
 > 
 > It's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter "return_parameter" is set to True returns a tuple either (True, param) or (False,).
 
+
 One could do this, but then it gets really messy to use. 
  
 > One advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.
+
 
 Yes, that will work. Actually, I think the most Pythonic thing to do here would perhaps be to return None, but I think the current behavior is fine as well.
 
@@ -212,7 +215,7 @@ Yes, that will work. Actually, I think the most Pythonic thing to do here would 
 archive/issue_comments_044298.json:
 ```json
 {
-    "body": "Unfortunately there are a few doctest failures in \n\n```\nsage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 1 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests failed\nsage -t -long devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed\nsage -t -long devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed\n```\n\nOne issue here is certainly that **make check** does not doctest the ReST documentation - see #5702 for the ticket for that problem which I intend to fix before 3.4.1 is done. \n\nTo test **everything** run \n\n```\nsage -tp 1 devel/sage\n```\n\nwhich is what I use :)\n\nCheers,\n\nMichael",
+    "body": "Unfortunately there are a few doctest failures in \n\n```\nsage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 1 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests failed\nsage -t -long devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed\nsage -t -long devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed\n```\nOne issue here is certainly that **make check** does not doctest the ReST documentation - see #5702 for the ticket for that problem which I intend to fix before 3.4.1 is done. \n\nTo test **everything** run \n\n```\nsage -tp 1 devel/sage\n```\nwhich is what I use :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T07:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
@@ -229,7 +232,6 @@ sage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests f
 sage -t -long devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed
 sage -t -long devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed
 ```
-
 One issue here is certainly that **make check** does not doctest the ReST documentation - see #5702 for the ticket for that problem which I intend to fix before 3.4.1 is done. 
 
 To test **everything** run 
@@ -237,7 +239,6 @@ To test **everything** run
 ```
 sage -tp 1 devel/sage
 ```
-
 which is what I use :)
 
 Cheers,

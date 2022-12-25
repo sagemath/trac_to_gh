@@ -131,7 +131,7 @@ Note to Nicolas: This changes some things in combinat/ and structure/.  Do you w
 archive/issue_comments_050758.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?\n\nThanks for the notice! Will do, but probably not before Monday!",
+    "body": "Replying to [comment:4 mhansen]:\n> Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?\n\n\nThanks for the notice! Will do, but probably not before Monday!",
     "created_at": "2009-06-20T05:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -142,6 +142,7 @@ archive/issue_comments_050758.json:
 
 Replying to [comment:4 mhansen]:
 > Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?
+
 
 Thanks for the notice! Will do, but probably not before Monday!
 
@@ -170,7 +171,7 @@ er... can I ask you to upload the python-2.6.2.spkg somewhere?
 archive/issue_comments_050760.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?\n\nThis commutes with the sage-combinat patches, so it's all good for me.",
+    "body": "Replying to [comment:4 mhansen]:\n> Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?\n\n\nThis commutes with the sage-combinat patches, so it's all good for me.",
     "created_at": "2009-06-22T19:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -181,6 +182,7 @@ archive/issue_comments_050760.json:
 
 Replying to [comment:4 mhansen]:
 > Note to Nicolas: This changes some things in combinat/ and structure/.  Do you want to have a look at them to decide what to do?
+
 
 This commutes with the sage-combinat patches, so it's all good for me.
 
@@ -211,7 +213,7 @@ I've updated the python-2.6.2.spkg to copy over site-packages from 2.5 to 2.6.  
 archive/issue_comments_050762.json:
 ```json
 {
-    "body": "Replying to [comment:8 mhansen]:\n> I've updated the python-2.6.2.spkg to copy over site-packages from 2.5 to 2.6.  I think this should do okay on upgrades.  I also added the ipython spkg update which was needed.\n\nWon't some packages need to have Python 2.6 actually do the installing? I am dubious that just copying over will work (although, of course, I wouldn't know).\n\nWell, on top of alpha0, trac_6359-1.patch fails to apply, although I can't tell why at all- when I went in to fix the rejects (which weren't produced in the working directory like hg said they were), everything looked exactly the same. So after fixing the rest of the patch by hand, I repackaged Sage and forced the above packages to build.\n\nTelling Sage to build very quickly fails, as it cannot find Jinja. So I force setuptools and jinja to build. The next problem is numpy. \nForcing numpy to build does not solve the problem, either:\n\n\n```\nTraceback (most recent call last):\n  File \"setup.py\", line 704, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 664, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 579, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 560, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 542, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 532, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency sage/plot/numpy.pxd included in sage/plot/complex_plot.pyx.\nsage: There was an error installing modified sage library code.\n```\n\n\nDo we need to bump the version numbers for all the packages that go into site-packages (I can do this by hand if necessary)? This would make upgrading work for sure.\n\nAlso, your step 4) above is a bit lacking. What did you have to do, exactly, to get things up and running?",
+    "body": "Replying to [comment:8 mhansen]:\n> I've updated the python-2.6.2.spkg to copy over site-packages from 2.5 to 2.6.  I think this should do okay on upgrades.  I also added the ipython spkg update which was needed.\n\n\nWon't some packages need to have Python 2.6 actually do the installing? I am dubious that just copying over will work (although, of course, I wouldn't know).\n\nWell, on top of alpha0, trac_6359-1.patch fails to apply, although I can't tell why at all- when I went in to fix the rejects (which weren't produced in the working directory like hg said they were), everything looked exactly the same. So after fixing the rest of the patch by hand, I repackaged Sage and forced the above packages to build.\n\nTelling Sage to build very quickly fails, as it cannot find Jinja. So I force setuptools and jinja to build. The next problem is numpy. \nForcing numpy to build does not solve the problem, either:\n\n```\nTraceback (most recent call last):\n  File \"setup.py\", line 704, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 664, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 579, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 560, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 542, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 532, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency sage/plot/numpy.pxd included in sage/plot/complex_plot.pyx.\nsage: There was an error installing modified sage library code.\n```\n\nDo we need to bump the version numbers for all the packages that go into site-packages (I can do this by hand if necessary)? This would make upgrading work for sure.\n\nAlso, your step 4) above is a bit lacking. What did you have to do, exactly, to get things up and running?",
     "created_at": "2009-06-25T01:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
@@ -223,13 +225,13 @@ archive/issue_comments_050762.json:
 Replying to [comment:8 mhansen]:
 > I've updated the python-2.6.2.spkg to copy over site-packages from 2.5 to 2.6.  I think this should do okay on upgrades.  I also added the ipython spkg update which was needed.
 
+
 Won't some packages need to have Python 2.6 actually do the installing? I am dubious that just copying over will work (although, of course, I wouldn't know).
 
 Well, on top of alpha0, trac_6359-1.patch fails to apply, although I can't tell why at all- when I went in to fix the rejects (which weren't produced in the working directory like hg said they were), everything looked exactly the same. So after fixing the rest of the patch by hand, I repackaged Sage and forced the above packages to build.
 
 Telling Sage to build very quickly fails, as it cannot find Jinja. So I force setuptools and jinja to build. The next problem is numpy. 
 Forcing numpy to build does not solve the problem, either:
-
 
 ```
 Traceback (most recent call last):
@@ -248,7 +250,6 @@ Traceback (most recent call last):
 IOError: could not find dependency sage/plot/numpy.pxd included in sage/plot/complex_plot.pyx.
 sage: There was an error installing modified sage library code.
 ```
-
 
 Do we need to bump the version numbers for all the packages that go into site-packages (I can do this by hand if necessary)? This would make upgrading work for sure.
 

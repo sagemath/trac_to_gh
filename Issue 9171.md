@@ -3,7 +3,7 @@
 archive/issues_009171.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\n\n```\n\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 891:\n    sage: len(search_doc('tree', interact=False).splitlines()) > 2000\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 496:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    False\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9171\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 891:\n    sage: len(search_doc('tree', interact=False).splitlines()) > 2000\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 496:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    False\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9171\n\n",
     "created_at": "2010-06-07T04:36:13Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009171.json:
 Assignee: tbd
 
 CC:  jpflori
-
 
 ```
 
@@ -40,7 +39,6 @@ Got:
     False
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9171
 

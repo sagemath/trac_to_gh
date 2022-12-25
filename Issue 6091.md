@@ -3,7 +3,7 @@
 archive/issues_006091.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAt present\n\n```\nsage: C.<z> = CyclotomicField(20)\nsage: D.<w>, phi = C.subfield(z^4)\n```\n\nfails.\n\nThis is simply because the code uses the name `name` instead of the name `names`.  The patch fixes this, and does the same for `change_generator` (with doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6091\n\n",
+    "body": "Assignee: tbd\n\nAt present\n\n```\nsage: C.<z> = CyclotomicField(20)\nsage: D.<w>, phi = C.subfield(z^4)\n```\nfails.\n\nThis is simply because the code uses the name `name` instead of the name `names`.  The patch fixes this, and does the same for `change_generator` (with doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6091\n\n",
     "created_at": "2009-05-20T06:41:06Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ At present
 sage: C.<z> = CyclotomicField(20)
 sage: D.<w>, phi = C.subfield(z^4)
 ```
-
 fails.
 
 This is simply because the code uses the name `name` instead of the name `names`.  The patch fixes this, and does the same for `change_generator` (with doctests).
@@ -135,7 +134,7 @@ There is a decorator at sage.plot.misc.rename_keyword that could be use to renam
 archive/issue_comments_048448.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> This will break all old code that uses the name= syntax.\nPoint taken.\n\n> There is a decorator at sage.plot.misc.rename_keyword that could be use to rename a 'name' keyword argument to 'names'.  A useful thing to do would be to add a flag to that decorator so that a deprecation warning would be thrown whenever a rename is done.\n\nI think in this case there's a simpler solution,  already used in the `NumberField`function, which allows either `name` or `names`; see the replacement patch.",
+    "body": "Replying to [comment:2 mhansen]:\n> This will break all old code that uses the name= syntax.\n\nPoint taken.\n\n> There is a decorator at sage.plot.misc.rename_keyword that could be use to rename a 'name' keyword argument to 'names'.  A useful thing to do would be to add a flag to that decorator so that a deprecation warning would be thrown whenever a rename is done.\n\n\nI think in this case there's a simpler solution,  already used in the `NumberField`function, which allows either `name` or `names`; see the replacement patch.",
     "created_at": "2009-06-01T21:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
@@ -146,9 +145,11 @@ archive/issue_comments_048448.json:
 
 Replying to [comment:2 mhansen]:
 > This will break all old code that uses the name= syntax.
+
 Point taken.
 
 > There is a decorator at sage.plot.misc.rename_keyword that could be use to rename a 'name' keyword argument to 'names'.  A useful thing to do would be to add a flag to that decorator so that a deprecation warning would be thrown whenever a rename is done.
+
 
 I think in this case there's a simpler solution,  already used in the `NumberField`function, which allows either `name` or `names`; see the replacement patch.
 

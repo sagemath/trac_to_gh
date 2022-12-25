@@ -3,7 +3,7 @@
 archive/issues_005186.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.\n\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\n\nconfig.log and cpuinfo available at:\n\n```\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_config.log\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5186\n\n",
+    "body": "Assignee: mabshoff\n\nWhen building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\nconfig.log and cpuinfo available at:\n\n```\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_config.log\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5186\n\n",
     "created_at": "2009-02-05T08:39:01Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 When building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.
 
-
 ```
 [root@localhost src]# bash config.guess
 athlon-unknown-linux-gnu
@@ -28,14 +27,12 @@ athlon-unknown-linux-gnu
 x86_64-unknown-linux-gnu
 ```
 
-
 config.log and cpuinfo available at:
 
 ```
 http://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_config.log
 http://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5186
 
@@ -48,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5186
 archive/issue_comments_039702.json:
 ```json
 {
-    "body": "For the record from the above urls:\n\n```\nprocessor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 6\nmodel\t\t: 2\nmodel name\t: QEMU Virtual CPU version 0.9.1\nstepping\t: 3\ncpu MHz\t\t: 2411.119\ncache size\t: 512 KB\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 2\nwp\t\t: yes\nflags\t\t: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm up pni\nbogomips\t: 4828.63\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management:\n```\n\nand\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\n\nCheers,\n\nMichael",
+    "body": "For the record from the above urls:\n\n```\nprocessor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 6\nmodel\t\t: 2\nmodel name\t: QEMU Virtual CPU version 0.9.1\nstepping\t: 3\ncpu MHz\t\t: 2411.119\ncache size\t: 512 KB\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 2\nwp\t\t: yes\nflags\t\t: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm up pni\nbogomips\t: 4828.63\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management:\n```\nand\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T08:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5186",
     "type": "issue_comment",
@@ -80,7 +77,6 @@ cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
 power management:
 ```
-
 and
 
 ```
@@ -89,7 +85,6 @@ athlon-unknown-linux-gnu
 [root@localhost src]# bash configfsf.guess
 x86_64-unknown-linux-gnu
 ```
-
 
 Cheers,
 

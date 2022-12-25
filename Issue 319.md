@@ -3,7 +3,7 @@
 archive/issues_000319.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: Matrix(QQ, 2, 2, [1, 1, 1, 1]) / 2\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/sage-2.2/<ipython console> in <module>()\n\n/home/dmharvey/sage-2.2/element.pyx in element.RingElement.__div__()\n\n/home/dmharvey/sage-2.2/element.pyx in element.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '/': 'Full MatrixSpace of 2 by 2 dense matrices over Rational Field' and 'Integer Ring'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/319\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: Matrix(QQ, 2, 2, [1, 1, 1, 1]) / 2\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/sage-2.2/<ipython console> in <module>()\n\n/home/dmharvey/sage-2.2/element.pyx in element.RingElement.__div__()\n\n/home/dmharvey/sage-2.2/element.pyx in element.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '/': 'Full MatrixSpace of 2 by 2 dense matrices over Rational Field' and 'Integer Ring'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/319\n\n",
     "created_at": "2007-03-12T05:16:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +16,6 @@ archive/issues_000319.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 sage: Matrix(QQ, 2, 2, [1, 1, 1, 1]) / 2
@@ -31,7 +30,6 @@ sage: Matrix(QQ, 2, 2, [1, 1, 1, 1]) / 2
 
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '/': 'Full MatrixSpace of 2 by 2 dense matrices over Rational Field' and 'Integer Ring'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/319

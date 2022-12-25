@@ -3,7 +3,7 @@
 archive/issues_007328.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @kcrisman\n\nCompare:\n\n\n```\nsage: latex(float(3e-10))\n3e-10\nsage: latex(RR(3e-10))\n3.00000000000000 \\times 10^{-10}\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7328\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @kcrisman\n\nCompare:\n\n```\nsage: latex(float(3e-10))\n3e-10\nsage: latex(RR(3e-10))\n3.00000000000000 \\times 10^{-10}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7328\n\n",
     "created_at": "2009-10-28T00:35:44Z",
     "labels": [
         "component: misc",
@@ -23,14 +23,12 @@ CC:  @kcrisman
 
 Compare:
 
-
 ```
 sage: latex(float(3e-10))
 3e-10
 sage: latex(RR(3e-10))
 3.00000000000000 \times 10^{-10}
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7328

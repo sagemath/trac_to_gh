@@ -3,7 +3,7 @@
 archive/issues_001864.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this in the notebook\n\n```\n# This is a question?\n```\n\nand hit shift enter.  You get introspection on the word \"question\".  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1864\n\n",
+    "body": "Assignee: boothby\n\nTry this in the notebook\n\n```\n# This is a question?\n```\nand hit shift enter.  You get introspection on the word \"question\".  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1864\n\n",
     "created_at": "2008-01-20T16:40:44Z",
     "labels": [
         "component: notebook",
@@ -23,7 +23,6 @@ Try this in the notebook
 ```
 # This is a question?
 ```
-
 and hit shift enter.  You get introspection on the word "question".  
 
 
@@ -112,7 +111,7 @@ Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sag
 archive/issue_comments_011777.json:
 ```json
 {
-    "body": "This breaks previously supported functionality (that I won't miss).  It used to be, one could type\n\n\n```\nfoo?\n```\n\n\nand press shift-enter to introspect.  I give this a positive review *if* that was an intended change.",
+    "body": "This breaks previously supported functionality (that I won't miss).  It used to be, one could type\n\n```\nfoo?\n```\n\nand press shift-enter to introspect.  I give this a positive review *if* that was an intended change.",
     "created_at": "2008-05-12T05:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
@@ -123,11 +122,9 @@ archive/issue_comments_011777.json:
 
 This breaks previously supported functionality (that I won't miss).  It used to be, one could type
 
-
 ```
 foo?
 ```
-
 
 and press shift-enter to introspect.  I give this a positive review *if* that was an intended change.
 
@@ -138,7 +135,7 @@ and press shift-enter to introspect.  I give this a positive review *if* that wa
 archive/issue_comments_011778.json:
 ```json
 {
-    "body": "The referee claims that say\n\n```\nlog?[shift-enter]\n```\n\ndoesn't work.  \n\nHowever it *does* work fine with this patch.  The referee needs to try again.",
+    "body": "The referee claims that say\n\n```\nlog?[shift-enter]\n```\ndoesn't work.  \n\nHowever it *does* work fine with this patch.  The referee needs to try again.",
     "created_at": "2008-05-15T02:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
@@ -152,7 +149,6 @@ The referee claims that say
 ```
 log?[shift-enter]
 ```
-
 doesn't work.  
 
 However it *does* work fine with this patch.  The referee needs to try again.

@@ -168,7 +168,7 @@ As to the corruption issues with a signal.  Huh?  It's the same story with virtu
 archive/issue_comments_009091.json:
 ```json
 {
-    "body": "Replying to [comment:8 jbmohler]:\n> I'm attaching another patch in response to mabshoff's review.  There is, in fact,\n> a pLength singular API.\n\nThis function also loops through the polynomial:\n\n\n```\nPINLINE0 int pLength(poly a)\n{\n  int l = 0;\n  while (a!=NULL) {\n    pIter(a);\n    l++;\n  }\n  return l;\n}\n```\n\n\nHowever, I'd say we should still apply this patch and see if something gets too slow. Also, all algorithms which involve `_sig_on`/`_sig_off` should be at least quadratic in the number of monomials so this linear operation shouldn't matter anyway, right?\n\n> Note that this does the _sig_xx stuff for the code in these methods:\n> __pow__,__floordiv__,factor,gcd,lcm,quo_rem,resultant\n> Obviously, it would be trivial to make data large enough so that any of these take an eternity to compute.\n\n> As to the corruption issues with a signal.  Huh?  It's the same story with\n> virtually every other _sig_on/_sig_off in the sage code.  One should *expect*\n> memory leaks and tolerate corruption with any of them.\n\nI second that.\n\nHowever, the patch fails to apply to 2.10.1.rc2\n\n\n```\napplying /home/malb/_sig_on_libsingular.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #2 succeeded at 3105 with fuzz 1 (offset 0 lines).\nHunk #3 FAILED at 3167\n1 out of 7 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "Replying to [comment:8 jbmohler]:\n> I'm attaching another patch in response to mabshoff's review.  There is, in fact,\n> a pLength singular API.\n\n\nThis function also loops through the polynomial:\n\n```\nPINLINE0 int pLength(poly a)\n{\n  int l = 0;\n  while (a!=NULL) {\n    pIter(a);\n    l++;\n  }\n  return l;\n}\n```\n\nHowever, I'd say we should still apply this patch and see if something gets too slow. Also, all algorithms which involve `_sig_on`/`_sig_off` should be at least quadratic in the number of monomials so this linear operation shouldn't matter anyway, right?\n\n> Note that this does the _sig_xx stuff for the code in these methods:\n> __pow__,__floordiv__,factor,gcd,lcm,quo_rem,resultant\n> Obviously, it would be trivial to make data large enough so that any of these take an eternity to compute.\n\n\n> As to the corruption issues with a signal.  Huh?  It's the same story with\n> virtually every other _sig_on/_sig_off in the sage code.  One should *expect*\n> memory leaks and tolerate corruption with any of them.\n\n\nI second that.\n\nHowever, the patch fails to apply to 2.10.1.rc2\n\n```\napplying /home/malb/_sig_on_libsingular.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #2 succeeded at 3105 with fuzz 1 (offset 0 lines).\nHunk #3 FAILED at 3167\n1 out of 7 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-01-31T21:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
@@ -181,8 +181,8 @@ Replying to [comment:8 jbmohler]:
 > I'm attaching another patch in response to mabshoff's review.  There is, in fact,
 > a pLength singular API.
 
-This function also loops through the polynomial:
 
+This function also loops through the polynomial:
 
 ```
 PINLINE0 int pLength(poly a)
@@ -196,21 +196,21 @@ PINLINE0 int pLength(poly a)
 }
 ```
 
-
 However, I'd say we should still apply this patch and see if something gets too slow. Also, all algorithms which involve `_sig_on`/`_sig_off` should be at least quadratic in the number of monomials so this linear operation shouldn't matter anyway, right?
 
 > Note that this does the _sig_xx stuff for the code in these methods:
 > __pow__,__floordiv__,factor,gcd,lcm,quo_rem,resultant
 > Obviously, it would be trivial to make data large enough so that any of these take an eternity to compute.
 
+
 > As to the corruption issues with a signal.  Huh?  It's the same story with
 > virtually every other _sig_on/_sig_off in the sage code.  One should *expect*
 > memory leaks and tolerate corruption with any of them.
 
+
 I second that.
 
 However, the patch fails to apply to 2.10.1.rc2
-
 
 ```
 applying /home/malb/_sig_on_libsingular.patch
@@ -220,7 +220,6 @@ Hunk #3 FAILED at 3167
 1 out of 7 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 

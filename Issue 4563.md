@@ -3,7 +3,7 @@
 archive/issues_004563.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis does not work:\n\n\n```\nsage: polar_plot(x, (x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: polar_plot() takes exactly 3 arguments (2 given)\n```\n\n\nBut this does:\n\n\n```\nsage: polar_plot(x,0, 1)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4563\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis does not work:\n\n```\nsage: polar_plot(x, (x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: polar_plot() takes exactly 3 arguments (2 given)\n```\n\nBut this does:\n\n```\nsage: polar_plot(x,0, 1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4563\n\n",
     "created_at": "2008-11-20T08:19:26Z",
     "labels": [
         "component: graphics",
@@ -22,7 +22,6 @@ CC:  @mwhansen
 
 This does not work:
 
-
 ```
 sage: polar_plot(x, (x, 0, 1))
 ---------------------------------------------------------------------------
@@ -33,14 +32,11 @@ TypeError                                 Traceback (most recent call last)
 TypeError: polar_plot() takes exactly 3 arguments (2 given)
 ```
 
-
 But this does:
-
 
 ```
 sage: polar_plot(x,0, 1)
 ```
-
 
 
 

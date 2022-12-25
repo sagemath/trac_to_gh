@@ -3,7 +3,7 @@
 archive/issues_008459.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\n```\n\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\n```\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
     "created_at": "2010-03-06T21:41:27Z",
     "labels": [
         "component: symbolics",
@@ -49,7 +49,6 @@ TypeError: cannot evaluate symbolic expresssion numerically
 
 ```
 
-
 patch comes soon
 
 Issue created by migration from https://trac.sagemath.org/ticket/8459
@@ -83,7 +82,7 @@ apply only this patch
 archive/issue_comments_076026.json:
 ```json
 {
-    "body": "Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by @robert-marik created at 2010-03-06 22:32:42\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\n\nAny idea what happens?",
+    "body": "Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by @robert-marik created at 2010-03-06 22:32:42\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\nAny idea what happens?",
     "created_at": "2010-03-06T22:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -124,7 +123,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: cannot evaluate symbolic expresssion numerically
 sage:
 ```
-
 Any idea what happens?
 
 
@@ -152,7 +150,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076028.json:
 ```json
 {
-    "body": "And anther issue which I do not understand:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: polylog\nsage: g(x)=integrate(ln(1-x^2)/x,x)\nsage: g(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3/<ipython console> in <module>()\n\n/opt/sage-4.3.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in                                              sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage: g(x)=eval(preparse(integrate(ln(1-x^2)/x,x)._repr_()))\nsage: g(1/2).n()\n0.688640713882747\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage:\n```\n\nwhy are eval and _repr_ necessary?",
+    "body": "And anther issue which I do not understand:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: polylog\nsage: g(x)=integrate(ln(1-x^2)/x,x)\nsage: g(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3/<ipython console> in <module>()\n\n/opt/sage-4.3.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in                                              sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage: g(x)=eval(preparse(integrate(ln(1-x^2)/x,x)._repr_()))\nsage: g(1/2).n()\n0.688640713882747\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage:\n```\nwhy are eval and _repr_ necessary?",
     "created_at": "2010-03-07T14:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -185,7 +183,6 @@ sage: g
 x |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)
 sage:
 ```
-
 why are eval and _repr_ necessary?
 
 
@@ -298,7 +295,7 @@ To the release manager: Apply only the patches trac-8459* , the first patch was 
 archive/issue_comments_076033.json:
 ```json
 {
-    "body": "After applying \"trac-8459.patch\" and \"trac_8459-doctest.patch\" to Sage 4.3.5, I get doctest errors for functions/log.py:\n\n```\nsage -t  \"devel/sage/sage/functions/log.py\"                 \n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/functions/log.py\", line 305:\n    sage: t.operator() == polylog\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/functions/log.py\", line 307:\n    sage: t.subs(x=.5).n()\nException raised:\n    Traceback (most recent call last):\n      File \"/Applications/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Applications/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Applications/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[17]>\", line 1, in <module>\n        t.subs(x=RealNumber('.5')).n()###line 307:\n    sage: t.subs(x=.5).n()\n      File \"expression.pyx\", line 3797, in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)\n    TypeError: cannot evaluate symbolic expression numerically\n**********************************************************************\n1 items had failures:\n   2 of  18 in __main__.example_5\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_log.py\n\t [7.6 s]\n```\n",
+    "body": "After applying \"trac-8459.patch\" and \"trac_8459-doctest.patch\" to Sage 4.3.5, I get doctest errors for functions/log.py:\n\n```\nsage -t  \"devel/sage/sage/functions/log.py\"                 \n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/functions/log.py\", line 305:\n    sage: t.operator() == polylog\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/functions/log.py\", line 307:\n    sage: t.subs(x=.5).n()\nException raised:\n    Traceback (most recent call last):\n      File \"/Applications/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Applications/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Applications/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[17]>\", line 1, in <module>\n        t.subs(x=RealNumber('.5')).n()###line 307:\n    sage: t.subs(x=.5).n()\n      File \"expression.pyx\", line 3797, in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)\n    TypeError: cannot evaluate symbolic expression numerically\n**********************************************************************\n1 items had failures:\n   2 of  18 in __main__.example_5\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_log.py\n\t [7.6 s]\n```",
     "created_at": "2010-04-15T23:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -344,7 +341,6 @@ For whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_log.py
 
 
 
-
 ---
 
 archive/issue_comments_076034.json:
@@ -368,7 +364,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076035.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> After applying \"trac-8459.patch\" and \"trac_8459-doctest.patch\" to Sage 4.3.5, I get doctest errors for functions/log.py:\n<snipped the error log>\n\nThese errors look like the patch attachment:trac_8459-doctest.patch was applied without #7661. That ticket was merged before this, so I have no idea what went wrong.\n\nI applied these patches to Sage-4.4.1 and ran the tests. There were no errors. Switching this back to positive review, and keeping fingers crossed that there is no subtle bug hiding somewhere.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> After applying \"trac-8459.patch\" and \"trac_8459-doctest.patch\" to Sage 4.3.5, I get doctest errors for functions/log.py:\n\n<snipped the error log>\n\nThese errors look like the patch attachment:trac_8459-doctest.patch was applied without #7661. That ticket was merged before this, so I have no idea what went wrong.\n\nI applied these patches to Sage-4.4.1 and ran the tests. There were no errors. Switching this back to positive review, and keeping fingers crossed that there is no subtle bug hiding somewhere.",
     "created_at": "2010-05-04T21:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
@@ -379,6 +375,7 @@ archive/issue_comments_076035.json:
 
 Replying to [comment:7 jhpalmieri]:
 > After applying "trac-8459.patch" and "trac_8459-doctest.patch" to Sage 4.3.5, I get doctest errors for functions/log.py:
+
 <snipped the error log>
 
 These errors look like the patch attachment:trac_8459-doctest.patch was applied without #7661. That ticket was merged before this, so I have no idea what went wrong.

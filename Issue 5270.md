@@ -216,7 +216,7 @@ Did you first apply the patches at #5267 and #5269?  This patch builds on those 
 archive/issue_comments_040378.json:
 ```json
 {
-    "body": "Replying to [comment:3 AlexGhitza]:\n> Hi John,\n> \n> Did you first apply the patches at #5267 and #5269?  This patch builds on those fixes.\n\nNo -- my mistake!  I saw those tickets were closed, but that's because they were merged in rc1 ans I was using rc0.  Sorry -- not time to do it again now.",
+    "body": "Replying to [comment:3 AlexGhitza]:\n> Hi John,\n> \n> Did you first apply the patches at #5267 and #5269?  This patch builds on those fixes.\n\n\nNo -- my mistake!  I saw those tickets were closed, but that's because they were merged in rc1 ans I was using rc0.  Sorry -- not time to do it again now.",
     "created_at": "2009-02-15T22:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
@@ -229,6 +229,7 @@ Replying to [comment:3 AlexGhitza]:
 > Hi John,
 > 
 > Did you first apply the patches at #5267 and #5269?  This patch builds on those fixes.
+
 
 No -- my mistake!  I saw those tickets were closed, but that's because they were merged in rc1 ans I was using rc0.  Sorry -- not time to do it again now.
 
@@ -275,7 +276,7 @@ No problem.  I should have been more precise about that -- I just didn't expect 
 archive/issue_comments_040381.json:
 ```json
 {
-    "body": "Alex, this needs to be rebased for sage-3.4:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/5270/trac_5270.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5270/trac_5270.patch\nLoading: [..]\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 2315\nHunk #2 succeeded at 2761 with fuzz 2 (offset 409 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #1 FAILED at 2517\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_generic.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 1\nHunk #2 FAILED at 77\n2 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Alex, this needs to be rebased for sage-3.4:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/5270/trac_5270.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5270/trac_5270.patch\nLoading: [..]\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 2315\nHunk #2 succeeded at 2761 with fuzz 2 (offset 409 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #1 FAILED at 2517\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_generic.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 1\nHunk #2 FAILED at 77\n2 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-03-15T22:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
@@ -307,7 +308,6 @@ Hunk #2 FAILED at 77
 2 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej
 abort: patch failed to apply
 ```
-
 
 
 

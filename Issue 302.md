@@ -84,7 +84,7 @@ This doesn't make sense.  If the notebook server is "messed up", then it can't d
 archive/issue_comments_001435.json:
 ```json
 {
-    "body": "\"chmod -w nb.sobj\" messes up the notebook.\n\n    self.save_notebook_every_so_often()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/server/notebook/server.py\", line 320, in save_notebook_every_so_often\n    notebook.save()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 750, in save\n    SageObject.save(self, F, compress=False)\n  File \"sage_object.pyx\", line 139, in sage_object.SageObject.save\nIOError: [Errno 13] Permission denied: '/home/Timothy/sage_notebook/nb.sobj'\n----------------------------------------\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET / HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /jsmath/plugins/noImageFonts.js HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /jsmath/jsMath.js HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /sagelogo.png HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /corner.png HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:38] \"GET /jsmath/jsMath-fallback-unix.js HTTP/1.1\" 200 -\n\n The notebook stops running computations, however it is still serving web pages. It should stop serving those pages and show an error.",
+    "body": "\"chmod -w nb.sobj\" messes up the notebook.\n\n    self.save_notebook_every_so_often()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/server/notebook/server.py\", line 320, in save_notebook_every_so_often\n    notebook.save()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 750, in save\n    SageObject.save(self, F, compress=False)\n  File \"sage_object.pyx\", line 139, in sage_object.SageObject.save\nIOError: [Errno 13] Permission denied: '/home/Timothy/sage_notebook/nb.sobj'\n\n---\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET / HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /jsmath/plugins/noImageFonts.js HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /jsmath/jsMath.js HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /sagelogo.png HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:37] \"GET /corner.png HTTP/1.1\" 200 -\nlocalhost.localdomain - - [01/Mar/2007 14:22:38] \"GET /jsmath/jsMath-fallback-unix.js HTTP/1.1\" 200 -\n\n The notebook stops running computations, however it is still serving web pages. It should stop serving those pages and show an error.",
     "created_at": "2007-03-01T22:27:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_comment",
@@ -102,7 +102,8 @@ archive/issue_comments_001435.json:
     SageObject.save(self, F, compress=False)
   File "sage_object.pyx", line 139, in sage_object.SageObject.save
 IOError: [Errno 13] Permission denied: '/home/Timothy/sage_notebook/nb.sobj'
-----------------------------------------
+
+---
 localhost.localdomain - - [01/Mar/2007 14:22:37] "GET / HTTP/1.1" 200 -
 localhost.localdomain - - [01/Mar/2007 14:22:37] "GET /jsmath/plugins/noImageFonts.js HTTP/1.1" 200 -
 localhost.localdomain - - [01/Mar/2007 14:22:37] "GET /jsmath/jsMath.js HTTP/1.1" 200 -

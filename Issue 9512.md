@@ -89,7 +89,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091306.json:
 ```json
 {
-    "body": "I'm added the commit string\n\n```\n#9512: Sage source editor.  Tom Boothby\n```\n\nfor the patch I'm merging into SageNB 0.8.2 (#9572).",
+    "body": "I'm added the commit string\n\n```\n#9512: Sage source editor.  Tom Boothby\n```\nfor the patch I'm merging into SageNB 0.8.2 (#9572).",
     "created_at": "2010-07-23T06:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9512",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ I'm added the commit string
 ```
 #9512: Sage source editor.  Tom Boothby
 ```
-
 for the patch I'm merging into SageNB 0.8.2 (#9572).
 
 
@@ -147,7 +146,7 @@ archive/issue_events_023617.json:
 archive/issue_comments_091308.json:
 ```json
 {
-    "body": "[comment:ticket:9572:6 C. Witty's comment] at #9572:\n> Actually, I found a bug: the \"source editor\" feature (#9512) converts line endings from Unix to DOS (so once you've edited the file, mercurial thinks every line has changed).\n\n> Given the total non-discoverability of #9512, I'm not sure this bug is worth holding up the new spkg; I'll let somebody else decide that.\n\nI also see this behavior.  I'm reopening this ticket, changing its status to \"needs work,\" and removing it, for now, from #9572's SageNB 0.8.2.",
+    "body": "[comment:ticket:9572:6 C. Witty's comment] at #9572:\n> Actually, I found a bug: the \"source editor\" feature (#9512) converts line endings from Unix to DOS (so once you've edited the file, mercurial thinks every line has changed).\n\n\n> Given the total non-discoverability of #9512, I'm not sure this bug is worth holding up the new spkg; I'll let somebody else decide that.\n\n\nI also see this behavior.  I'm reopening this ticket, changing its status to \"needs work,\" and removing it, for now, from #9572's SageNB 0.8.2.",
     "created_at": "2010-07-25T07:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9512",
     "type": "issue_comment",
@@ -159,7 +158,9 @@ archive/issue_comments_091308.json:
 [comment:ticket:9572:6 C. Witty's comment] at #9572:
 > Actually, I found a bug: the "source editor" feature (#9512) converts line endings from Unix to DOS (so once you've edited the file, mercurial thinks every line has changed).
 
+
 > Given the total non-discoverability of #9512, I'm not sure this bug is worth holding up the new spkg; I'll let somebody else decide that.
+
 
 I also see this behavior.  I'm reopening this ticket, changing its status to "needs work," and removing it, for now, from #9572's SageNB 0.8.2.
 

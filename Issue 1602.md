@@ -3,7 +3,7 @@
 archive/issues_001602.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\n\n```\n\non this page\n\nhttp://www.sagemath.org/doc/html/tut/node24.html\n\nin the table there is what appears to be raw latex rather than\ntypeset material.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1602\n\n",
+    "body": "Assignee: wdjoyner\n\n```\n\non this page\n\nhttp://www.sagemath.org/doc/html/tut/node24.html\n\nin the table there is what appears to be raw latex rather than\ntypeset material.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1602\n\n",
     "created_at": "2007-12-27T01:19:06Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_001602.json:
 ```
 Assignee: wdjoyner
 
-
 ```
 
 on this page
@@ -28,7 +27,6 @@ http://www.sagemath.org/doc/html/tut/node24.html
 in the table there is what appears to be raw latex rather than
 typeset material.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1602
 

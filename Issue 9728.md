@@ -124,7 +124,7 @@ adds capability for user to set the matrix defining the transformation
 archive/issue_comments_094929.json:
 ```json
 {
-    "body": "I want to propose some changes to this interact:\n\n* Adding a 2x3 transformation (affine, I guess) does not fit with plotting vectors, IMHO. I'd stick to linear transformations and possibly add a second interact for affine transformations.\n* Use input_grid instead of input_box for the matrix.\n* Why plot two concentric circles? It is useful to communicate that the aspect_ratio is 1, but if the axes are present, I don't think it's necessary.\n* Why not plot the unit sphere, and its image under A, instead? Using the same colors as with the vectors, this makes the idea more clear.\n\nSo how about using the following code instead:\n\n```\n@interact \ndef linear_transformation(\n    theta = slider(0, 2*pi, .1), \n    r     = slider(0.1,  2, .1, default=1),\n    A     = input_grid(2, 2, default = [[1,-1],[-1,1/2]],\n                             to_value=matrix)):\n    \"\"\"An interact which illustrates ...\n    \"\"\"\n    v=vector([r*cos(theta), r*sin(theta)]) \n    w = A*v\n\n    unit_sphere = circle((0,0), radius = 1, rgbcolor = (1,0,0))\n    var('t')\n    image_of_sphere = parametric_plot(A*vector([sin(t),cos(t)]), \n                         (t, 0, 2*pi), rgbcolor=(0,0,1))\n    \n    html(\"$v = %s,; %s w=%s$\"%(v.n(4),latex(A),w.n(4)))     \n    show(v.plot(rgbcolor=(1,0,0)) +\n         w.plot(rgbcolor=(0,0,1)) +\n         unit_sphere + image_of_sphere,\n         aspect_ratio=1)\n```\n",
+    "body": "I want to propose some changes to this interact:\n\n* Adding a 2x3 transformation (affine, I guess) does not fit with plotting vectors, IMHO. I'd stick to linear transformations and possibly add a second interact for affine transformations.\n* Use input_grid instead of input_box for the matrix.\n* Why plot two concentric circles? It is useful to communicate that the aspect_ratio is 1, but if the axes are present, I don't think it's necessary.\n* Why not plot the unit sphere, and its image under A, instead? Using the same colors as with the vectors, this makes the idea more clear.\n\nSo how about using the following code instead:\n\n```\n@interact \ndef linear_transformation(\n    theta = slider(0, 2*pi, .1), \n    r     = slider(0.1,  2, .1, default=1),\n    A     = input_grid(2, 2, default = [[1,-1],[-1,1/2]],\n                             to_value=matrix)):\n    \"\"\"An interact which illustrates ...\n    \"\"\"\n    v=vector([r*cos(theta), r*sin(theta)]) \n    w = A*v\n\n    unit_sphere = circle((0,0), radius = 1, rgbcolor = (1,0,0))\n    var('t')\n    image_of_sphere = parametric_plot(A*vector([sin(t),cos(t)]), \n                         (t, 0, 2*pi), rgbcolor=(0,0,1))\n    \n    html(\"$v = %s,; %s w=%s$\"%(v.n(4),latex(A),w.n(4)))     \n    show(v.plot(rgbcolor=(1,0,0)) +\n         w.plot(rgbcolor=(0,0,1)) +\n         unit_sphere + image_of_sphere,\n         aspect_ratio=1)\n```",
     "created_at": "2010-11-18T09:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9728",
     "type": "issue_comment",
@@ -165,7 +165,6 @@ def linear_transformation(
          unit_sphere + image_of_sphere,
          aspect_ratio=1)
 ```
-
 
 
 

@@ -245,7 +245,7 @@ Michael
 archive/issue_comments_031548.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> So, is this fixed via the ReST patches or not?\n\nBoth this and #5337 are fixed in the current version of the French tutorial available from \nhttp://algo.inria.fr/mezzarobba/sagetutfr/sagetut-fr.tgz\nBut (afaik) the French translation has never been merged into the main Sage documentation, so I reopened this ticket following Mike Hansen's comment (see #5337).",
+    "body": "Replying to [comment:5 mabshoff]:\n> So, is this fixed via the ReST patches or not?\n\n\nBoth this and #5337 are fixed in the current version of the French tutorial available from \nhttp://algo.inria.fr/mezzarobba/sagetutfr/sagetut-fr.tgz\nBut (afaik) the French translation has never been merged into the main Sage documentation, so I reopened this ticket following Mike Hansen's comment (see #5337).",
     "created_at": "2009-03-08T14:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
@@ -256,6 +256,7 @@ archive/issue_comments_031548.json:
 
 Replying to [comment:5 mabshoff]:
 > So, is this fixed via the ReST patches or not?
+
 
 Both this and #5337 are fixed in the current version of the French tutorial available from 
 http://algo.inria.fr/mezzarobba/sagetutfr/sagetut-fr.tgz
@@ -268,7 +269,7 @@ But (afaik) the French translation has never been merged into the main Sage docu
 archive/issue_comments_031549.json:
 ```json
 {
-    "body": "Replying to [comment:6 mmezzarobba]:\n> But (afaik) the French translation has never been merged into the main Sage documentation\n\nHmm, I had not noticed it, but in fact there is a version of the French translation in the main repository since since the end of February, and this seems to be fixed there.",
+    "body": "Replying to [comment:6 mmezzarobba]:\n> But (afaik) the French translation has never been merged into the main Sage documentation\n\n\nHmm, I had not noticed it, but in fact there is a version of the French translation in the main repository since since the end of February, and this seems to be fixed there.",
     "created_at": "2009-04-27T21:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
@@ -279,6 +280,7 @@ archive/issue_comments_031549.json:
 
 Replying to [comment:6 mmezzarobba]:
 > But (afaik) the French translation has never been merged into the main Sage documentation
+
 
 Hmm, I had not noticed it, but in fact there is a version of the French translation in the main repository since since the end of February, and this seems to be fixed there.
 
@@ -309,7 +311,7 @@ http://www.sagemath.org/fr/tutorial/
 archive/issue_comments_031551.json:
 ```json
 {
-    "body": "Replying to [comment:8 mvngu]:\n> Someone who knows French needs to verify that the issue reported by this ticket has been fixed in the latest version of the French tutorial at\n> \n> http://www.sagemath.org/fr/tutorial/\n\nI think there is no need to know French: if I understand correctly, all this ticket asks for is that the output of the first example of the section\n\nhttp://www.sagemath.org/fr/tutorial/tour_algebra.html#section-systems\n\nagrees with that of the English version\n\nhttp://www.sagemath.org/doc/tutorial/tour_algebra.html#section-systems\n\n(which is indeed the case).",
+    "body": "Replying to [comment:8 mvngu]:\n> Someone who knows French needs to verify that the issue reported by this ticket has been fixed in the latest version of the French tutorial at\n> \n> http://www.sagemath.org/fr/tutorial/\n\n\nI think there is no need to know French: if I understand correctly, all this ticket asks for is that the output of the first example of the section\n\nhttp://www.sagemath.org/fr/tutorial/tour_algebra.html#section-systems\n\nagrees with that of the English version\n\nhttp://www.sagemath.org/doc/tutorial/tour_algebra.html#section-systems\n\n(which is indeed the case).",
     "created_at": "2009-09-09T16:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
@@ -322,6 +324,7 @@ Replying to [comment:8 mvngu]:
 > Someone who knows French needs to verify that the issue reported by this ticket has been fixed in the latest version of the French tutorial at
 > 
 > http://www.sagemath.org/fr/tutorial/
+
 
 I think there is no need to know French: if I understand correctly, all this ticket asks for is that the output of the first example of the section
 

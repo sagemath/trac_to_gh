@@ -175,7 +175,7 @@ Diff to previous version of the patch
 archive/issue_comments_081489.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> One last remark, otherwise I'm ready to give positive review: there is a slight naming inconsistency:\n>  - `CartesianProductFunctor, CartesianProducts, CartesianProductsCategory, cartesian_product`\n>  - `TensorFunctor, TensorProducts, TensorProductsCategory, tensor`\n> \n> I'm just not 100% sure that we don't want `TensorProductFunctor` and `tensor_product`...\n> \n> Any arguments ?\n\nYup, we had discussed this with David Roe during the review of the\ncategory patches. And we had agreed that `tensor([A,B,C])` was\nshorter and more practical than `tensor_product([A,B,C])`, yet\nclear and unambiguous. On the other hand `cartesian([A,B,C])`\nwasn't that clear. So we decided to favor here practicality over\nconsistency.\n\nOn the other hand, I fixed TensorFunctor to TensorProductFunctor in\nthe updated patch.",
+    "body": "Replying to [comment:3 hivert]:\n> One last remark, otherwise I'm ready to give positive review: there is a slight naming inconsistency:\n> - `CartesianProductFunctor, CartesianProducts, CartesianProductsCategory, cartesian_product`\n> - `TensorFunctor, TensorProducts, TensorProductsCategory, tensor`\n> \n> I'm just not 100% sure that we don't want `TensorProductFunctor` and `tensor_product`...\n> \n> Any arguments ?\n\n\nYup, we had discussed this with David Roe during the review of the\ncategory patches. And we had agreed that `tensor([A,B,C])` was\nshorter and more practical than `tensor_product([A,B,C])`, yet\nclear and unambiguous. On the other hand `cartesian([A,B,C])`\nwasn't that clear. So we decided to favor here practicality over\nconsistency.\n\nOn the other hand, I fixed TensorFunctor to TensorProductFunctor in\nthe updated patch.",
     "created_at": "2010-06-02T08:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -186,12 +186,13 @@ archive/issue_comments_081489.json:
 
 Replying to [comment:3 hivert]:
 > One last remark, otherwise I'm ready to give positive review: there is a slight naming inconsistency:
->  - `CartesianProductFunctor, CartesianProducts, CartesianProductsCategory, cartesian_product`
->  - `TensorFunctor, TensorProducts, TensorProductsCategory, tensor`
+> - `CartesianProductFunctor, CartesianProducts, CartesianProductsCategory, cartesian_product`
+> - `TensorFunctor, TensorProducts, TensorProductsCategory, tensor`
 > 
 > I'm just not 100% sure that we don't want `TensorProductFunctor` and `tensor_product`...
 > 
 > Any arguments ?
+
 
 Yup, we had discussed this with David Roe during the review of the
 category patches. And we had agreed that `tensor([A,B,C])` was
@@ -246,7 +247,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081492.json:
 ```json
 {
-    "body": "Replying to [comment:5 hivert]:\n> Excellent ! Positive review unless Massena find a new bug (which is VeryUnlikely(TM)). \n\nThanks for all your work on this!",
+    "body": "Replying to [comment:5 hivert]:\n> Excellent ! Positive review unless Massena find a new bug (which is VeryUnlikely(TM)). \n\n\nThanks for all your work on this!",
     "created_at": "2010-06-02T13:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -257,6 +258,7 @@ archive/issue_comments_081492.json:
 
 Replying to [comment:5 hivert]:
 > Excellent ! Positive review unless Massena find a new bug (which is VeryUnlikely(TM)). 
+
 
 Thanks for all your work on this!
 
@@ -285,7 +287,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081494.json:
 ```json
 {
-    "body": "This causes doctest failures, including the following. \n\n```\n\nsage -t  sage/categories/sets_cat.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 624:\n    sage: A = Monoids().example().algebra(QQ); A\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_16[4]>\", line 1, in <module>\n        A = Monoids().example().algebra(QQ); A###line 624:\n    sage: A = Monoids().example().algebra(QQ); A\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/sets_cat.py\", line 637, in algebra\n        return CombinatorialFreeModule(base_ring, self, category = category.Algebras(base_ring))\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/misc/classcall_metaclass.py\", line 256, in __call__\n        return cls.__classcall_private__(cls, *args, **options)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 850, in __classcall_private__\n        return super(CombinatorialFreeModule, cls).__classcall__(cls, *args, **keywords)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/misc/cachefunc.py\", line 115, in __call__\n        w = self.f(*args, **kwds)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/structure/unique_representation.py\", line 447, in __classcall__\n        instance = type.__call__(cls, *args, **options)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 892, in __init__\n        element_constructor = self._element_constructor_)\n      File \"parent.pyx\", line 457, in sage.structure.parent.Parent.__init__ (sage/structure/parent.c:3851)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/magmas.py\", line 115, in __init_extra__\n        if (self.product != self.product_from_element_class_mul) and hasattr(self, \"element_class\") and hasattr(self.element_class, \"_mul_parent\"):\n      File \"element.pyx\", line 860, in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7061)\n      File \"element.pyx\", line 801, in sage.structure.element.Element._richcmp (sage/structure/element.c:6441)\n      File \"coerce.pyx\", line 907, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:8537)\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/homset.py\", line 302, in _repr_\n        self._domain, self._codomain, self.__category)\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 1163, in _repr_\n        return self._name + \" over %s\"%self.base_ring()\n      File \"parent.pyx\", line 676, in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5239)\n      File \"parent.pyx\", line 263, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2753)\n      File \"parent.pyx\", line 171, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2625)\n    AttributeError: 'CombinatorialFreeModule_with_category' object has no attribute '_name'\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 626:\n    sage: A.category()\nExpected:\n    Category of monoid algebras over Rational Field\nGot:\n    Category of set algebras over Rational Field\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_16\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_sets_cat.py\n```\n",
+    "body": "This causes doctest failures, including the following. \n\n```\n\nsage -t  sage/categories/sets_cat.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 624:\n    sage: A = Monoids().example().algebra(QQ); A\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_16[4]>\", line 1, in <module>\n        A = Monoids().example().algebra(QQ); A###line 624:\n    sage: A = Monoids().example().algebra(QQ); A\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/sets_cat.py\", line 637, in algebra\n        return CombinatorialFreeModule(base_ring, self, category = category.Algebras(base_ring))\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/misc/classcall_metaclass.py\", line 256, in __call__\n        return cls.__classcall_private__(cls, *args, **options)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 850, in __classcall_private__\n        return super(CombinatorialFreeModule, cls).__classcall__(cls, *args, **keywords)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/misc/cachefunc.py\", line 115, in __call__\n        w = self.f(*args, **kwds)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/structure/unique_representation.py\", line 447, in __classcall__\n        instance = type.__call__(cls, *args, **options)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 892, in __init__\n        element_constructor = self._element_constructor_)\n      File \"parent.pyx\", line 457, in sage.structure.parent.Parent.__init__ (sage/structure/parent.c:3851)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/magmas.py\", line 115, in __init_extra__\n        if (self.product != self.product_from_element_class_mul) and hasattr(self, \"element_class\") and hasattr(self.element_class, \"_mul_parent\"):\n      File \"element.pyx\", line 860, in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7061)\n      File \"element.pyx\", line 801, in sage.structure.element.Element._richcmp (sage/structure/element.c:6441)\n      File \"coerce.pyx\", line 907, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:8537)\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/categories/homset.py\", line 302, in _repr_\n        self._domain, self._codomain, self.__category)\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/lib/python/site-packages/sage/combinat/free_module.py\", line 1163, in _repr_\n        return self._name + \" over %s\"%self.base_ring()\n      File \"parent.pyx\", line 676, in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5239)\n      File \"parent.pyx\", line 263, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2753)\n      File \"parent.pyx\", line 171, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2625)\n    AttributeError: 'CombinatorialFreeModule_with_category' object has no attribute '_name'\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 626:\n    sage: A.category()\nExpected:\n    Category of monoid algebras over Rational Field\nGot:\n    Category of set algebras over Rational Field\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_16\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_sets_cat.py\n```",
     "created_at": "2010-06-03T04:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -357,7 +359,6 @@ For whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_sets_cat.
 
 
 
-
 ---
 
 archive/issue_comments_081495.json:
@@ -381,7 +382,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081496.json:
 ```json
 {
-    "body": "Replying to [comment:7 was]:\n> This causes doctest failures, including the following. \n\n```\n> \n> sage -t  sage/categories/sets_cat.py\n> **********************************************************************\n> File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 624:\n>     sage: A = Monoids().example().algebra(QQ); A\n> Exception raised:\n. [...]\n>     AttributeError: 'CombinatorialFreeModule_with_category' object has no attribute '_name'\n> **********************************************************************\n> File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 626:\n>     sage: A.category()\n> Expected:\n>     Category of monoid algebras over Rational Field\n> Got:\n>     Category of set algebras over Rational Field\n> **********************************************************************\n```\n\n\nThis bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this.",
+    "body": "Replying to [comment:7 was]:\n> This causes doctest failures, including the following. \n\n{{{\n> \n> sage -t  sage/categories/sets_cat.py\n> **********************************************************************\n> File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 624:\n>     sage: A = Monoids().example().algebra(QQ); A\n> Exception raised:\n\n. [...]\n>     AttributeError: 'CombinatorialFreeModule_with_category' object has no attribute '_name'\n\n> **********************************************************************\n> File \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py\", line 626:\n>     sage: A.category()\n> Expected:\n>     Category of monoid algebras over Rational Field\n> Got:\n>     Category of set algebras over Rational Field\n> **********************************************************************\n\n}}}\n\nThis bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this.",
     "created_at": "2010-06-03T06:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -393,15 +394,17 @@ archive/issue_comments_081496.json:
 Replying to [comment:7 was]:
 > This causes doctest failures, including the following. 
 
-```
+{{{
 > 
 > sage -t  sage/categories/sets_cat.py
 > **********************************************************************
 > File "/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py", line 624:
 >     sage: A = Monoids().example().algebra(QQ); A
 > Exception raised:
+
 . [...]
 >     AttributeError: 'CombinatorialFreeModule_with_category' object has no attribute '_name'
+
 > **********************************************************************
 > File "/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/devel/sage-main/sage/categories/sets_cat.py", line 626:
 >     sage: A.category()
@@ -410,8 +413,8 @@ Replying to [comment:7 was]:
 > Got:
 >     Category of set algebras over Rational Field
 > **********************************************************************
-```
 
+}}}
 
 This bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this.
 
@@ -458,7 +461,7 @@ Note: I put back positive review though I had no chance to test on `sage-4.4.3.a
 archive/issue_comments_081499.json:
 ```json
 {
-    "body": "Replying to [comment:8 hivert]:\n> This bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this. \n\nActually it did (see the note there), but I completely forgot about it. My mistake.",
+    "body": "Replying to [comment:8 hivert]:\n> This bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this. \n\n\nActually it did (see the note there), but I completely forgot about it. My mistake.",
     "created_at": "2010-06-03T06:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8881",
     "type": "issue_comment",
@@ -469,6 +472,7 @@ archive/issue_comments_081499.json:
 
 Replying to [comment:8 hivert]:
 > This bug is fixed in #9104 but it does appear on 4.4.2 so I didn't think about a dependency. Sorry for this. 
+
 
 Actually it did (see the note there), but I completely forgot about it. My mistake.
 

@@ -3,7 +3,7 @@
 archive/issues_004366.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nHi, Emmanuel Thom\u00e9 noted that\nthere is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.\nIf in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like\n\n```\nsage: time for i in range(10): float(1)/2\n```\n\nand looks at the same at the system call activity of this python \"sage.bin\" process (in another terminal with something like \"strace -p 'pidof sage.bin' -e trace='stat'\" under Linux, or using \"sudo fs_usage 4711\" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:\n\nThe (sage/python) sys.path is searched by the system call \"stat\" for \"coerce.pyx\", \"coerce_maps.pyx\", \"parent.pyx\" and \"integer.pyx\" many times, that whole path, and over and over again.\n\nThis does not happen under Sage 3.0.5.\n\nWillem Jan Palenstijn proposed this code fragment, which triggers the behaviour in Sage 3.2.alpha0, too:\n\n```\nsage: cm=sage.structure.element.get_coercion_model()\nsage: cm.canonical_coercion(float(1),1)\n```\n\nand noted that\n\n\"This seems to be the _record_exception() function in the coercion model.\"\n\n(See also the recent sage_devel thread started by Emmanuel Thom\u00e9 about this.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4366\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nHi, Emmanuel Thom\u00e9 noted that\nthere is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.\nIf in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like\n\n```\nsage: time for i in range(10): float(1)/2\n```\nand looks at the same at the system call activity of this python \"sage.bin\" process (in another terminal with something like \"strace -p 'pidof sage.bin' -e trace='stat'\" under Linux, or using \"sudo fs_usage 4711\" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:\n\nThe (sage/python) sys.path is searched by the system call \"stat\" for \"coerce.pyx\", \"coerce_maps.pyx\", \"parent.pyx\" and \"integer.pyx\" many times, that whole path, and over and over again.\n\nThis does not happen under Sage 3.0.5.\n\nWillem Jan Palenstijn proposed this code fragment, which triggers the behaviour in Sage 3.2.alpha0, too:\n\n```\nsage: cm=sage.structure.element.get_coercion_model()\nsage: cm.canonical_coercion(float(1),1)\n```\nand noted that\n\n\"This seems to be the _record_exception() function in the coercion model.\"\n\n(See also the recent sage_devel thread started by Emmanuel Thom\u00e9 about this.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4366\n\n",
     "created_at": "2008-10-24T21:05:30Z",
     "labels": [
         "component: coercion",
@@ -27,7 +27,6 @@ If in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like
 ```
 sage: time for i in range(10): float(1)/2
 ```
-
 and looks at the same at the system call activity of this python "sage.bin" process (in another terminal with something like "strace -p 'pidof sage.bin' -e trace='stat'" under Linux, or using "sudo fs_usage 4711" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:
 
 The (sage/python) sys.path is searched by the system call "stat" for "coerce.pyx", "coerce_maps.pyx", "parent.pyx" and "integer.pyx" many times, that whole path, and over and over again.
@@ -40,7 +39,6 @@ Willem Jan Palenstijn proposed this code fragment, which triggers the behaviour 
 sage: cm=sage.structure.element.get_coercion_model()
 sage: cm.canonical_coercion(float(1),1)
 ```
-
 and noted that
 
 "This seems to be the _record_exception() function in the coercion model."
@@ -77,7 +75,7 @@ Changing assignee from somebody to GeorgSWeber.
 archive/issue_comments_032008.json:
 ```json
 {
-    "body": "I know now how to change the code so that when we had before:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 17.72 s, sys: 13.44 s, total: 31.16 s\nWall time: 31.20 s\n```\n\nthen after the changes we get:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 0.37 s, sys: 0.00 s, total: 0.37 s\nWall time: 0.37 s\n```\n\nwhich is quite impressive, I think (the sys time is used up only by these insanely many calls to \"stat\")!\n\nEssentially all one has to do is not to call \"sys.exc_info()\" in \"_record_exception\" (file: sage/structure/coerce.pyx) unless you really want to do so. But to fix that nicely (e.g. not leaving a broken doctest) will take me another evening or two.",
+    "body": "I know now how to change the code so that when we had before:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 17.72 s, sys: 13.44 s, total: 31.16 s\nWall time: 31.20 s\n```\nthen after the changes we get:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 0.37 s, sys: 0.00 s, total: 0.37 s\nWall time: 0.37 s\n```\nwhich is quite impressive, I think (the sys time is used up only by these insanely many calls to \"stat\")!\n\nEssentially all one has to do is not to call \"sys.exc_info()\" in \"_record_exception\" (file: sage/structure/coerce.pyx) unless you really want to do so. But to fix that nicely (e.g. not leaving a broken doctest) will take me another evening or two.",
     "created_at": "2008-10-26T21:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -93,7 +91,6 @@ sage: time for i in range(10^4): float(1)/2
 CPU times: user 17.72 s, sys: 13.44 s, total: 31.16 s
 Wall time: 31.20 s
 ```
-
 then after the changes we get:
 
 ```
@@ -101,7 +98,6 @@ sage: time for i in range(10^4): float(1)/2
 CPU times: user 0.37 s, sys: 0.00 s, total: 0.37 s
 Wall time: 0.37 s
 ```
-
 which is quite impressive, I think (the sys time is used up only by these insanely many calls to "stat")!
 
 Essentially all one has to do is not to call "sys.exc_info()" in "_record_exception" (file: sage/structure/coerce.pyx) unless you really want to do so. But to fix that nicely (e.g. not leaving a broken doctest) will take me another evening or two.
@@ -170,7 +166,7 @@ archive/issue_events_009875.json:
 archive/issue_comments_032011.json:
 ```json
 {
-    "body": "Coincidentally, I just responded to this thread on sage-devel. I'll repost here \n\n\n```\nThanks for tracking this down. Just out of curiosity, how does one decide if one \"really wants to.\" Ideally one could snapshot the traceback without touching every file involved.\n\nBTW, using RDF rather than float will be 10x faster in this case even after your speedup.\n\nsage: sage: time for i in range(10^4): RDF(1)/2\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\n- Robert\n\n```\n\n\nThe point is that when something goes wrong, one wants to be able to ask \"what happened\" which is why these tracebacks are stored. Re-running the command may not give you all the information because of the caching involved. Is there a better way to get the traceback information than invoking sys.exc_info?",
+    "body": "Coincidentally, I just responded to this thread on sage-devel. I'll repost here \n\n```\nThanks for tracking this down. Just out of curiosity, how does one decide if one \"really wants to.\" Ideally one could snapshot the traceback without touching every file involved.\n\nBTW, using RDF rather than float will be 10x faster in this case even after your speedup.\n\nsage: sage: time for i in range(10^4): RDF(1)/2\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\n- Robert\n\n```\n\nThe point is that when something goes wrong, one wants to be able to ask \"what happened\" which is why these tracebacks are stored. Re-running the command may not give you all the information because of the caching involved. Is there a better way to get the traceback information than invoking sys.exc_info?",
     "created_at": "2008-10-27T16:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -180,7 +176,6 @@ archive/issue_comments_032011.json:
 ```
 
 Coincidentally, I just responded to this thread on sage-devel. I'll repost here 
-
 
 ```
 Thanks for tracking this down. Just out of curiosity, how does one decide if one "really wants to." Ideally one could snapshot the traceback without touching every file involved.
@@ -194,7 +189,6 @@ Wall time: 0.03 s
 - Robert
 
 ```
-
 
 The point is that when something goes wrong, one wants to be able to ask "what happened" which is why these tracebacks are stored. Re-running the command may not give you all the information because of the caching involved. Is there a better way to get the traceback information than invoking sys.exc_info?
 
@@ -273,7 +267,7 @@ One should be able to cache the exceptions *without* stating every file in the p
 archive/issue_comments_032015.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> The coercion model caching what the right action is is essential to its speed, so the behavior remains the same but it remembers to not go down (all) the failed code paths the next time around. The only exceptions are float+ZZ and float+QQ. There's a ticket to handle these better. \n\nWhich ticket would that be?\n\n> One should be able to cache the exceptions *without* stating every file in the path, and I think this is what we should do. \n\nI agree. The patch might solve the problem, but Robert's suggestion to solve the problem should be preferred.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 robertwb]:\n> The coercion model caching what the right action is is essential to its speed, so the behavior remains the same but it remembers to not go down (all) the failed code paths the next time around. The only exceptions are float+ZZ and float+QQ. There's a ticket to handle these better. \n\n\nWhich ticket would that be?\n\n> One should be able to cache the exceptions *without* stating every file in the path, and I think this is what we should do. \n\n\nI agree. The patch might solve the problem, but Robert's suggestion to solve the problem should be preferred.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T02:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -285,9 +279,11 @@ archive/issue_comments_032015.json:
 Replying to [comment:7 robertwb]:
 > The coercion model caching what the right action is is essential to its speed, so the behavior remains the same but it remembers to not go down (all) the failed code paths the next time around. The only exceptions are float+ZZ and float+QQ. There's a ticket to handle these better. 
 
+
 Which ticket would that be?
 
 > One should be able to cache the exceptions *without* stating every file in the path, and I think this is what we should do. 
+
 
 I agree. The patch might solve the problem, but Robert's suggestion to solve the problem should be preferred.
 
@@ -386,7 +382,7 @@ gsw
 archive/issue_comments_032020.json:
 ```json
 {
-    "body": "With RobertWB's patch applied I am seeing one easy to fix doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage -t -long devel/sage/sage/structure/coerce.pyx\nsage -t -long devel/sage/sage/structure/coerce.pyx          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/coerce.py\", line 331:\n    sage: cm.exception_stack()\nExpected:\n    [(<type 'exceptions.TypeError'>,  TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",),  <traceback object at ...>)]\nGot:\n    [(<type 'exceptions.TypeError'>, TypeError(\"BUG: the base_extend method must be defined for 'Monoid of ideals of Integer Ring' (class '<class 'sage.rings.ideal_monoid.IdealMonoid_c'>')\",), <traceback object at 0x2b75e90e8ef0>), (<type 'exceptions.TypeError'>, TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",), <traceback object at 0x2b75fd781950>)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/.doctest_coerce.py\n\t [2.9 s]\nexit code: 1024\n```\n",
+    "body": "With RobertWB's patch applied I am seeing one easy to fix doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage -t -long devel/sage/sage/structure/coerce.pyx\nsage -t -long devel/sage/sage/structure/coerce.pyx          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/coerce.py\", line 331:\n    sage: cm.exception_stack()\nExpected:\n    [(<type 'exceptions.TypeError'>,  TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",),  <traceback object at ...>)]\nGot:\n    [(<type 'exceptions.TypeError'>, TypeError(\"BUG: the base_extend method must be defined for 'Monoid of ideals of Integer Ring' (class '<class 'sage.rings.ideal_monoid.IdealMonoid_c'>')\",), <traceback object at 0x2b75e90e8ef0>), (<type 'exceptions.TypeError'>, TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",), <traceback object at 0x2b75fd781950>)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/.doctest_coerce.py\n\t [2.9 s]\nexit code: 1024\n```",
     "created_at": "2008-10-28T12:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
@@ -415,7 +411,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alp
 	 [2.9 s]
 exit code: 1024
 ```
-
 
 
 

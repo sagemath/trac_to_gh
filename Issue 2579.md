@@ -100,7 +100,7 @@ If we want a.div(b) to be floor(a/b) (which I agree we probably do, if we want t
 archive/issue_comments_017604.json:
 ```json
 {
-    "body": "I think the basis logic should be as below. Since this will make the remainder always positive.\n\n\n```\nif mpz_sgn(_other.value) == 1:\n            mpz_fdiv_q(q.value, _self.value, _other.value)        \nelse:\n            mpz_cdiv_q(q.value, _self.value, _other.value)\n```\n",
+    "body": "I think the basis logic should be as below. Since this will make the remainder always positive.\n\n```\nif mpz_sgn(_other.value) == 1:\n            mpz_fdiv_q(q.value, _self.value, _other.value)        \nelse:\n            mpz_cdiv_q(q.value, _self.value, _other.value)\n```",
     "created_at": "2008-03-18T03:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
@@ -111,14 +111,12 @@ archive/issue_comments_017604.json:
 
 I think the basis logic should be as below. Since this will make the remainder always positive.
 
-
 ```
 if mpz_sgn(_other.value) == 1:
             mpz_fdiv_q(q.value, _self.value, _other.value)        
 else:
             mpz_cdiv_q(q.value, _self.value, _other.value)
 ```
-
 
 
 

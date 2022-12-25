@@ -102,7 +102,7 @@ hunk is.
 archive/issue_comments_009626.json:
 ```json
 {
-    "body": "Looks good to me.  \n\nTo apply: Attempt to apply the patch as usual.  Ignore the error message:\n\n```\nHunk #2 FAILED at 127\n1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\n\nThen do `hg_sage.ci()`, to check in the half-applied patch.",
+    "body": "Looks good to me.  \n\nTo apply: Attempt to apply the patch as usual.  Ignore the error message:\n\n```\nHunk #2 FAILED at 127\n1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\nThen do `hg_sage.ci()`, to check in the half-applied patch.",
     "created_at": "2007-12-15T06:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1507",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ Hunk #2 FAILED at 127
 1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 abort: patch failed to apply
 ```
-
 
 Then do `hg_sage.ci()`, to check in the half-applied patch.
 

@@ -3,7 +3,7 @@
 archive/issues_007331.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @rlmill\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @rlmill\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
     "created_at": "2009-10-28T09:56:17Z",
     "labels": [
         "component: elliptic curves",
@@ -25,12 +25,10 @@ Keywords: sha, tate-shafarevich group,  primary bound
 
 `p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.
 
-
 ```
 E = EllipticCurve('270b')
 E.sha().p_primary_bound(5)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7331
 
@@ -117,7 +115,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061192.json:
 ```json
 {
-    "body": "For `p=3`, an error is getting triggered in computation of the p-adic regulator:\n\n\n```\nsage: E = EllipticCurve('148a')\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nTrue\nsage: E.is_ordinary(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nBOOM\n```\n\n\nI have a feeling that this just means that the documentation needs to include the rank 0 condition when `p=3`:\n\n\n```\nE.rank()\n1\n```\n",
+    "body": "For `p=3`, an error is getting triggered in computation of the p-adic regulator:\n\n```\nsage: E = EllipticCurve('148a')\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nTrue\nsage: E.is_ordinary(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nBOOM\n```\n\nI have a feeling that this just means that the documentation needs to include the rank 0 condition when `p=3`:\n\n```\nE.rank()\n1\n```",
     "created_at": "2009-10-28T16:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
@@ -127,7 +125,6 @@ archive/issue_comments_061192.json:
 ```
 
 For `p=3`, an error is getting triggered in computation of the p-adic regulator:
-
 
 ```
 sage: E = EllipticCurve('148a')
@@ -145,9 +142,7 @@ sage: E.sha().p_primary_bound(3)
 BOOM
 ```
 
-
 I have a feeling that this just means that the documentation needs to include the rank 0 condition when `p=3`:
-
 
 ```
 E.rank()
@@ -156,13 +151,12 @@ E.rank()
 
 
 
-
 ---
 
 archive/issue_comments_061193.json:
 ```json
 {
-    "body": "This one is a different failure:\n\n```\nsage: E = EllipticCurve('336c')\nsage: E.rank()\n0\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nFalse\nsage: E.is_ordinary(3)\nTrue\nsage: E.has_split_multiplicative_reduction(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nTraceback (most recent call last):\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in p_primary_bound(self, p)\n    588             if not su :\n    589                 raise ValueError, \"The mod-p Galois representation is not surjective. Current knowledge about Euler systems does not provide an upper bound in this case. Try an_padic for a conjectural bound.\"\n--> 590             shan = self.an_padic(p,prec = 0,use_twists=True)\n    591             if shan == 0:\n    592                 raise RuntimeError, \"There is a bug in an_padic.\"\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in an_padic(self, p, prec, use_twists)\n    450             not_yet_enough_prec = True\n    451             while not_yet_enough_prec:\n--> 452                 lps = lp.series(n,quadratic_twist=D,prec=r+1)\n    453                 lstar = lps[r]\n    454                 if (lstar != 0) or (prec != 0):\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/padic_lseries.pyc in series(self, n, quadratic_twist, prec)\n    762                 for ell in prime_divisors(D):\n    763                     if valuation(self._E.conductor(),ell) > valuation(D,ell) :\n--> 764                         raise ValueError, \"can not twist a curve of conductor (=%s) by the quadratic twist (=%s).\"%(self._E.conductor(),D)\n    765\n    766\n\nValueError: can not twist a curve of conductor (=168) by the quadratic twist (=-4).\n```\n",
+    "body": "This one is a different failure:\n\n```\nsage: E = EllipticCurve('336c')\nsage: E.rank()\n0\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nFalse\nsage: E.is_ordinary(3)\nTrue\nsage: E.has_split_multiplicative_reduction(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nTraceback (most recent call last):\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in p_primary_bound(self, p)\n    588             if not su :\n    589                 raise ValueError, \"The mod-p Galois representation is not surjective. Current knowledge about Euler systems does not provide an upper bound in this case. Try an_padic for a conjectural bound.\"\n--> 590             shan = self.an_padic(p,prec = 0,use_twists=True)\n    591             if shan == 0:\n    592                 raise RuntimeError, \"There is a bug in an_padic.\"\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in an_padic(self, p, prec, use_twists)\n    450             not_yet_enough_prec = True\n    451             while not_yet_enough_prec:\n--> 452                 lps = lp.series(n,quadratic_twist=D,prec=r+1)\n    453                 lstar = lps[r]\n    454                 if (lstar != 0) or (prec != 0):\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/padic_lseries.pyc in series(self, n, quadratic_twist, prec)\n    762                 for ell in prime_divisors(D):\n    763                     if valuation(self._E.conductor(),ell) > valuation(D,ell) :\n--> 764                         raise ValueError, \"can not twist a curve of conductor (=%s) by the quadratic twist (=%s).\"%(self._E.conductor(),D)\n    765\n    766\n\nValueError: can not twist a curve of conductor (=168) by the quadratic twist (=-4).\n```",
     "created_at": "2009-10-28T16:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
@@ -214,7 +208,6 @@ Traceback (most recent call last):
 
 ValueError: can not twist a curve of conductor (=168) by the quadratic twist (=-4).
 ```
-
 
 
 

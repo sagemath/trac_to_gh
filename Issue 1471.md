@@ -3,7 +3,7 @@
 archive/issues_001471.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMoving a Sage install breaks clisp. I moved `sage-2.9.alpha5` to `sage-2.9.alpha5-vg` and it broke clisp:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp\nclisp: /tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/clisp/base/lisp.run: No such file or directory\n```\n\nI have no clue how Maxima still manages to work, but there must be a fix somehow.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1471\n\n",
+    "body": "Assignee: mabshoff\n\nMoving a Sage install breaks clisp. I moved `sage-2.9.alpha5` to `sage-2.9.alpha5-vg` and it broke clisp:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp\nclisp: /tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/clisp/base/lisp.run: No such file or directory\n```\nI have no clue how Maxima still manages to work, but there must be a fix somehow.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1471\n\n",
     "created_at": "2007-12-12T09:36:13Z",
     "labels": [
         "component: distribution",
@@ -25,7 +25,6 @@ Moving a Sage install breaks clisp. I moved `sage-2.9.alpha5` to `sage-2.9.alpha
 mabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp
 clisp: /tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/clisp/base/lisp.run: No such file or directory
 ```
-
 I have no clue how Maxima still manages to work, but there must be a fix somehow.
 
 Cheers,

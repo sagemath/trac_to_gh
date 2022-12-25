@@ -3,7 +3,7 @@
 archive/issues_001942.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nJaap reports the following on 32 bit FC7/8 with Sage 2.10.1.rc0:\n\n```\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[0]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 143:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.3517939999999999\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 147:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.726736\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [6.9 s]\nexit code: 256 \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1942\n\n",
+    "body": "Assignee: mabshoff\n\nJaap reports the following on 32 bit FC7/8 with Sage 2.10.1.rc0:\n\n```\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[0]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 143:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.3517939999999999\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 147:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.726736\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [6.9 s]\nexit code: 256 \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1942\n\n",
     "created_at": "2008-01-26T23:10:50Z",
     "labels": [
         "component: packages: standard",
@@ -64,7 +64,6 @@ For whitespace errors, see the file .doctest_sage0.py
 exit code: 256 
 ```
 
-
 Cheers,
 
 Michael
@@ -120,7 +119,7 @@ This is ./sage -t -verbose of .../sage0.py on Fedora7
 archive/issue_comments_012300.json:
 ```json
 {
-    "body": "Attachment [test_sage0.log](tarball://root/attachments/some-uuid/ticket1942/test_sage0.log) by @jaapspies created at 2008-01-27 13:13:20\n\n\n```\n> > Also, could you try replacing the line 150 by\n> >           s = self.eval('cputime(%s)'%t)\n> >           print \"'%s'\"%s\n> >           return 0\n> > in case my above suggestion doesn't work, and report what gets printed.\n> > \n\nExiting SAGE (CPU time 0m0.00s, Wall time 0m8.03s).\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.360792\n     '\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.7347349999999999\n     '\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [7.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/interfaces/sage0.py\nTotal time for all tests: 7.0 seconds\n[jaap@paix sage-2.10.1.rc0]$\n\n```\n",
+    "body": "Attachment [test_sage0.log](tarball://root/attachments/some-uuid/ticket1942/test_sage0.log) by @jaapspies created at 2008-01-27 13:13:20\n\n```\n> > Also, could you try replacing the line 150 by\n> >           s = self.eval('cputime(%s)'%t)\n> >           print \"'%s'\"%s\n> >           return 0\n> > in case my above suggestion doesn't work, and report what gets printed.\n> > \n\nExiting SAGE (CPU time 0m0.00s, Wall time 0m8.03s).\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.360792\n     '\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nExpected nothing\nGot:\n     ' 1.7347349999999999\n     '\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [7.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/interfaces/sage0.py\nTotal time for all tests: 7.0 seconds\n[jaap@paix sage-2.10.1.rc0]$\n\n```",
     "created_at": "2008-01-27T13:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1942",
     "type": "issue_comment",
@@ -130,7 +129,6 @@ archive/issue_comments_012300.json:
 ```
 
 Attachment [test_sage0.log](tarball://root/attachments/some-uuid/ticket1942/test_sage0.log) by @jaapspies created at 2008-01-27 13:13:20
-
 
 ```
 > > Also, could you try replacing the line 150 by
@@ -176,13 +174,12 @@ Total time for all tests: 7.0 seconds
 
 
 
-
 ---
 
 archive/issue_comments_012301.json:
 ```json
 {
-    "body": "As William suspected there are some control characters in there, which Jaap confirmed:\n\n```\n> I have to say -- I just don't get why this doesn't work on your FC7 machine.\n> All that it is doing is eval'ing a correct float constant...  I wonder if there\n> are weird hidden invisible control codes in the output or something.\n> \n\nThis is from the log file:\n     ValueError: invalid literal for float(): ^[[0;31m ^[[0m1.8237209999999999\n```\n\n\nCheers,\n\nMichael",
+    "body": "As William suspected there are some control characters in there, which Jaap confirmed:\n\n```\n> I have to say -- I just don't get why this doesn't work on your FC7 machine.\n> All that it is doing is eval'ing a correct float constant...  I wonder if there\n> are weird hidden invisible control codes in the output or something.\n> \n\nThis is from the log file:\n     ValueError: invalid literal for float(): ^[[0;31m ^[[0m1.8237209999999999\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T14:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1942",
     "type": "issue_comment",
@@ -202,7 +199,6 @@ As William suspected there are some control characters in there, which Jaap conf
 This is from the log file:
      ValueError: invalid literal for float(): ^[[0;31m ^[[0m1.8237209999999999
 ```
-
 
 Cheers,
 

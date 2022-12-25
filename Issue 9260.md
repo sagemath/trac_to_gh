@@ -3,7 +3,7 @@
 archive/issues_009260.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\n\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
     "created_at": "2010-06-18T09:52:05Z",
     "labels": [
         "component: documentation",
@@ -27,14 +27,12 @@ The documentation from `RealIntervalField` says:
        See the documentation for ``RealIntervalField_class`` for many more
        examples.
 ```
-
 However there is no documentation for `RealIntervalField_class`:
 
 ```
 sage: RealIntervalField_class?
 Object `RealIntervalField_class` not found.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9260
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9260
 archive/issue_comments_086992.json:
 ```json
 {
-    "body": "Current code is actually\n\n```\n\n    See the documentation for :class:`RealIntervalField_class` for many more\n    examples.\n\n```\n\n\nSo this would just have to add a little so that users at the command line could see where to find this; in the documentation it would still look the same and have the right link.",
+    "body": "Current code is actually\n\n```\n\n    See the documentation for :class:`RealIntervalField_class` for many more\n    examples.\n\n```\n\nSo this would just have to add a little so that users at the command line could see where to find this; in the documentation it would still look the same and have the right link.",
     "created_at": "2012-01-12T15:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ Current code is actually
 
 ```
 
-
 So this would just have to add a little so that users at the command line could see where to find this; in the documentation it would still look the same and have the right link.
 
 
@@ -75,7 +72,7 @@ So this would just have to add a little so that users at the command line could 
 archive/issue_comments_086993.json:
 ```json
 {
-    "body": "Karl-Dieter,\ndo you know how to find the documentation from the command line?\n\n```\nsage: :class:RealIntervalField_class?\nObject `:class:RealIntervalField_class` not found.\n```\n\nPaul",
+    "body": "Karl-Dieter,\ndo you know how to find the documentation from the command line?\n\n```\nsage: :class:RealIntervalField_class?\nObject `:class:RealIntervalField_class` not found.\n```\nPaul",
     "created_at": "2012-01-13T08:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
@@ -91,7 +88,6 @@ do you know how to find the documentation from the command line?
 sage: :class:RealIntervalField_class?
 Object `:class:RealIntervalField_class` not found.
 ```
-
 Paul
 
 
@@ -119,7 +115,7 @@ Yes, and I thought one of my students had made a patch for this.  It turns out t
 archive/issue_comments_086995.json:
 ```json
 {
-    "body": "I see what you were asking now in comment:3.  Most Sage documentation now has these hyperlinks, but it does mean one has to ignore the backticks and things like `:class` or `:meth:`.  I think this is standard now.\n\n```\nsage.rings.real_mpfi.RealIntervalField_class?\n```\n\nis the correct command, and the patch coming up changes the doc so that this can at least be found, modulo the extra formatting.",
+    "body": "I see what you were asking now in comment:3.  Most Sage documentation now has these hyperlinks, but it does mean one has to ignore the backticks and things like `:class` or `:meth:`.  I think this is standard now.\n\n```\nsage.rings.real_mpfi.RealIntervalField_class?\n```\nis the correct command, and the patch coming up changes the doc so that this can at least be found, modulo the extra formatting.",
     "created_at": "2012-05-26T19:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
@@ -133,7 +129,6 @@ I see what you were asking now in comment:3.  Most Sage documentation now has th
 ```
 sage.rings.real_mpfi.RealIntervalField_class?
 ```
-
 is the correct command, and the patch coming up changes the doc so that this can at least be found, modulo the extra formatting.
 
 

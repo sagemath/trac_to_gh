@@ -3,7 +3,7 @@
 archive/issues_008695.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: UniqueRepresentation, equality\n\nPython manuals says:\n\n    There are no implied relationships among the comparison operators. The truth of x==y does not imply that x!=y is false. Accordingly, when defining __eq__(), one should also define __ne__() so that the operators will behave as expected.\n\nUniqueRepresentation fails to comply with this. As a consequence:\n\n```\nsage: G6 = GL(6, QQ)\nsage: G6 == G6\nTrue\nsage: G6 != G6\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8695\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: UniqueRepresentation, equality\n\nPython manuals says:\n\n    There are no implied relationships among the comparison operators. The truth of x==y does not imply that x!=y is false. Accordingly, when defining __eq__(), one should also define __ne__() so that the operators will behave as expected.\n\nUniqueRepresentation fails to comply with this. As a consequence:\n\n```\nsage: G6 = GL(6, QQ)\nsage: G6 == G6\nTrue\nsage: G6 != G6\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8695\n\n",
     "created_at": "2010-04-16T15:13:49Z",
     "labels": [
         "component: misc",
@@ -38,7 +38,6 @@ NotImplementedError                       Traceback (most recent call last)
 ...
 NotImplementedError: Matrix group over Rational Field not implemented.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8695
 
@@ -196,7 +195,7 @@ Also, this would have been caught by a _test_eq, which we should implement! See 
 archive/issue_comments_079085.json:
 ```json
 {
-    "body": "Replying to [comment:5 nthiery]:\n> Also, this would have been caught by a _test_eq, which we should implement! See #8697!\n\nActually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.",
+    "body": "Replying to [comment:5 nthiery]:\n> Also, this would have been caught by a _test_eq, which we should implement! See #8697!\n\n\nActually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.",
     "created_at": "2010-04-16T23:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -208,6 +207,7 @@ archive/issue_comments_079085.json:
 Replying to [comment:5 nthiery]:
 > Also, this would have been caught by a _test_eq, which we should implement! See #8697!
 
+
 Actually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.
 
 
@@ -217,7 +217,7 @@ Actually that exactly how I caught it except that it was with _test_self_equal w
 archive/issue_comments_079086.json:
 ```json
 {
-    "body": "Replying to [comment:4 nthiery]:\n> I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.\n\nThe only thing that inheriting from object does is make it a \"new-style\" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html",
+    "body": "Replying to [comment:4 nthiery]:\n> I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.\n\n\nThe only thing that inheriting from object does is make it a \"new-style\" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html",
     "created_at": "2010-04-17T01:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -229,6 +229,7 @@ archive/issue_comments_079086.json:
 Replying to [comment:4 nthiery]:
 > I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.
 
+
 The only thing that inheriting from object does is make it a "new-style" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html
 
 
@@ -238,7 +239,7 @@ The only thing that inheriting from object does is make it a "new-style" class i
 archive/issue_comments_079087.json:
 ```json
 {
-    "body": "Replying to [comment:6 hivert]:\n> Replying to [comment:5 nthiery]:\n> > Also, this would have been caught by a _test_eq, which we should implement! See #8697!\n> \n> Actually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.\n\nOops, right. I looked for that one and somehow missed it.",
+    "body": "Replying to [comment:6 hivert]:\n> Replying to [comment:5 nthiery]:\n> > Also, this would have been caught by a _test_eq, which we should implement! See #8697!\n\n> \n> Actually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.\n\n\nOops, right. I looked for that one and somehow missed it.",
     "created_at": "2010-04-17T20:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -250,8 +251,10 @@ archive/issue_comments_079087.json:
 Replying to [comment:6 hivert]:
 > Replying to [comment:5 nthiery]:
 > > Also, this would have been caught by a _test_eq, which we should implement! See #8697!
+
 > 
 > Actually that exactly how I caught it except that it was with _test_self_equal which is implemented in #8402. I think #8697 should be closed as a duplicate of #8402.
+
 
 Oops, right. I looked for that one and somehow missed it.
 
@@ -262,7 +265,7 @@ Oops, right. I looked for that one and somehow missed it.
 archive/issue_comments_079088.json:
 ```json
 {
-    "body": "Replying to [comment:7 mhansen]:\n> Replying to [comment:4 nthiery]:\n> > I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.\n> \n> The only thing that inheriting from object does is make it a \"new-style\" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html\n\nYup! So there is particularly no point about forcing it explicitly, since it will be automatically the case later, and in the mean time there is no reason to fix something that ain't broken.\n\nWe discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.",
+    "body": "Replying to [comment:7 mhansen]:\n> Replying to [comment:4 nthiery]:\n> > I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.\n\n> \n> The only thing that inheriting from object does is make it a \"new-style\" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html\n\n\nYup! So there is particularly no point about forcing it explicitly, since it will be automatically the case later, and in the mean time there is no reason to fix something that ain't broken.\n\nWe discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.",
     "created_at": "2010-04-17T20:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -274,8 +277,10 @@ archive/issue_comments_079088.json:
 Replying to [comment:7 mhansen]:
 > Replying to [comment:4 nthiery]:
 > > I am just not sure about forcing UniqueRepresentation to inherit from object. Let's discuss this over the phone.
+
 > 
 > The only thing that inheriting from object does is make it a "new-style" class in Python, which is what everything should be now.  In the 3.x series, old-style classes are removed.  http://docs.python.org/reference/datamodel.html
+
 
 Yup! So there is particularly no point about forcing it explicitly, since it will be automatically the case later, and in the mean time there is no reason to fix something that ain't broken.
 
@@ -306,7 +311,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079090.json:
 ```json
 {
-    "body": "Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by @hivert created at 2010-04-17 20:45:09\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\nDone !",
+    "body": "Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by @hivert created at 2010-04-17 20:45:09\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\n\nDone !",
     "created_at": "2010-04-17T20:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -318,6 +323,7 @@ archive/issue_comments_079090.json:
 Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by @hivert created at 2010-04-17 20:45:09
 
 > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.
+
 
 Done !
 
@@ -346,7 +352,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079092.json:
 ```json
 {
-    "body": "Replying to [comment:10 hivert]:\n> > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n> \n> Done !\n\nAt put back to positive review.",
+    "body": "Replying to [comment:10 hivert]:\n> > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\n> \n> Done !\n\n\nAt put back to positive review.",
     "created_at": "2010-04-17T20:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
@@ -357,8 +363,10 @@ archive/issue_comments_079092.json:
 
 Replying to [comment:10 hivert]:
 > > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.
+
 > 
 > Done !
+
 
 At put back to positive review.
 

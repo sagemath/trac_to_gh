@@ -3,7 +3,7 @@
 archive/issues_003833.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThis is stupid\n\n```\nsage: uniq([x-x, -x+x])\n[0, 0]\n```\n\n\nThis patch fixes this idiocy.\n\nThis was persisently reported by Rolandb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3833\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis is stupid\n\n```\nsage: uniq([x-x, -x+x])\n[0, 0]\n```\n\nThis patch fixes this idiocy.\n\nThis was persisently reported by Rolandb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3833\n\n",
     "created_at": "2008-08-13T05:15:04Z",
     "labels": [
         "component: calculus",
@@ -24,7 +24,6 @@ This is stupid
 sage: uniq([x-x, -x+x])
 [0, 0]
 ```
-
 
 This patch fixes this idiocy.
 

@@ -3,7 +3,7 @@
 archive/issues_009258.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFricas seems to have an api change which breaks a few tests in fricas.py.\n\n\n```\n\n\"\"\"\n        A helper function for converting FriCAS domains to the corresponding\n        Sage object.\n        \n        EXAMPLES::\n        \n            sage: fricas('Integer').sage() #optional - fricas\n            Integer Ring\n            sage: fricas('Fraction Integer').sage() #optional - fricas\n            Rational Field\n            sage: fricas('DoubleFloat').sage() #optional - fricas\n            Real Double Field\n\n        \"\"\"\n```\n\n\nThese now give either a different return value or simply results in raising a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9258\n\n",
+    "body": "Assignee: tbd\n\nFricas seems to have an api change which breaks a few tests in fricas.py.\n\n```\n\n\"\"\"\n        A helper function for converting FriCAS domains to the corresponding\n        Sage object.\n        \n        EXAMPLES::\n        \n            sage: fricas('Integer').sage() #optional - fricas\n            Integer Ring\n            sage: fricas('Fraction Integer').sage() #optional - fricas\n            Rational Field\n            sage: fricas('DoubleFloat').sage() #optional - fricas\n            Real Double Field\n\n        \"\"\"\n```\n\nThese now give either a different return value or simply results in raising a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9258\n\n",
     "created_at": "2010-06-18T07:11:40Z",
     "labels": [
         "component: packages: optional",
@@ -20,7 +20,6 @@ archive/issues_009258.json:
 Assignee: tbd
 
 Fricas seems to have an api change which breaks a few tests in fricas.py.
-
 
 ```
 
@@ -39,7 +38,6 @@ Fricas seems to have an api change which breaks a few tests in fricas.py.
 
         """
 ```
-
 
 These now give either a different return value or simply results in raising a NotImplementedError.
 

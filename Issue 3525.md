@@ -138,7 +138,7 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_024807.json:
 ```json
 {
-    "body": "From Harald Schilly:\n\n\n```\nLooks good, yes. Just small remarks what I would change...\n\n1) The border around the sign-in formular is thin. Why not the same as\nthose two below? I would suggest to make all three borders small...\n\n2) The top header is an image. The serif-italic letters don't look\nvery well on my screen. (no subpixel hinting compared to directly\nrendered italic letters on my lcd) .. I would suggest to not use an\nimage, just the text string with a fixed font size (16pt?, italic,\nserif) and absolute placement.\n\n3) The forgot password page does not exist. I think, it should look\nthe same, except the login box and the middle content replaced by an\nexplanation and so on.\n\n4) maybe less screenshots (just a 3x2 matrix) but with larger images?\nso that someone could see more!\n\n5) it's not xhtml valid\nI strongly suggest to use xhtml transitional, since this is better for\ncompatibility and browsers like ie6 work better with that. xhtml\nstrict is just some sort of a more theoretical wish that will never\ncome true ;)\nbut anyways, ending a formular input tag with /> is not ok. browsers\ndon't understand real xml ...\n\n6) maybe more margin-borders on the left and right side of the middle\ncontent, to give everything a bit more \"air\" so that it looks less\ntight...\n\ngreetings Harald\n\n\nOn Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:\n> What do you think of\n>\n> http://timothyclemans.com/nb_homepage/\n>\n> --\n> William Stein\n> Associate Professor of Mathematics\n> University of Washington\n> http://wstein.org\n>\n```\n",
+    "body": "From Harald Schilly:\n\n```\nLooks good, yes. Just small remarks what I would change...\n\n1) The border around the sign-in formular is thin. Why not the same as\nthose two below? I would suggest to make all three borders small...\n\n2) The top header is an image. The serif-italic letters don't look\nvery well on my screen. (no subpixel hinting compared to directly\nrendered italic letters on my lcd) .. I would suggest to not use an\nimage, just the text string with a fixed font size (16pt?, italic,\nserif) and absolute placement.\n\n3) The forgot password page does not exist. I think, it should look\nthe same, except the login box and the middle content replaced by an\nexplanation and so on.\n\n4) maybe less screenshots (just a 3x2 matrix) but with larger images?\nso that someone could see more!\n\n5) it's not xhtml valid\nI strongly suggest to use xhtml transitional, since this is better for\ncompatibility and browsers like ie6 work better with that. xhtml\nstrict is just some sort of a more theoretical wish that will never\ncome true ;)\nbut anyways, ending a formular input tag with /> is not ok. browsers\ndon't understand real xml ...\n\n6) maybe more margin-borders on the left and right side of the middle\ncontent, to give everything a bit more \"air\" so that it looks less\ntight...\n\ngreetings Harald\n\n\nOn Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:\n> What do you think of\n>\n> http://timothyclemans.com/nb_homepage/\n>\n> --\n> William Stein\n> Associate Professor of Mathematics\n> University of Washington\n> http://wstein.org\n>\n```",
     "created_at": "2008-06-28T10:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -148,7 +148,6 @@ archive/issue_comments_024807.json:
 ```
 
 From Harald Schilly:
-
 
 ```
 Looks good, yes. Just small remarks what I would change...
@@ -196,7 +195,6 @@ On Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:
 > http://wstein.org
 >
 ```
-
 
 
 
@@ -331,7 +329,7 @@ forgot to change which images are preloaded (the ones for signup and published w
 archive/issue_comments_024814.json:
 ```json
 {
-    "body": "In extcode-3525_3.patch I see \n\n\n```\ndiff -r 84e3731cc21b -r 40c4b0aa9491 notebook/images/head.gif\nBinary file notebook/images/head.gif has changed\n```\n\n\nIs the actual image stored in the patch? If not then how do I put package images for inclusion?",
+    "body": "In extcode-3525_3.patch I see \n\n```\ndiff -r 84e3731cc21b -r 40c4b0aa9491 notebook/images/head.gif\nBinary file notebook/images/head.gif has changed\n```\n\nIs the actual image stored in the patch? If not then how do I put package images for inclusion?",
     "created_at": "2008-06-28T21:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -342,12 +340,10 @@ archive/issue_comments_024814.json:
 
 In extcode-3525_3.patch I see 
 
-
 ```
 diff -r 84e3731cc21b -r 40c4b0aa9491 notebook/images/head.gif
 Binary file notebook/images/head.gif has changed
 ```
-
 
 Is the actual image stored in the patch? If not then how do I put package images for inclusion?
 

@@ -3,7 +3,7 @@
 archive/issues_005324.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIf you create a block like this:\n\n```\n%time \n2+2\n```\n\nin the notebook, then you get the following output:\n\n```\nTraceback (click to the left for traceback)\n...\nNameError: name 'time' is not defined\n```\n\n\nIMPORTANT: There is a single space right immediately after %time in the input!  Without the space things are fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5324\n\n",
+    "body": "Assignee: boothby\n\nIf you create a block like this:\n\n```\n%time \n2+2\n```\nin the notebook, then you get the following output:\n\n```\nTraceback (click to the left for traceback)\n...\nNameError: name 'time' is not defined\n```\n\nIMPORTANT: There is a single space right immediately after %time in the input!  Without the space things are fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5324\n\n",
     "created_at": "2009-02-20T20:00:08Z",
     "labels": [
         "component: notebook",
@@ -24,7 +24,6 @@ If you create a block like this:
 %time 
 2+2
 ```
-
 in the notebook, then you get the following output:
 
 ```
@@ -32,7 +31,6 @@ Traceback (click to the left for traceback)
 ...
 NameError: name 'time' is not defined
 ```
-
 
 IMPORTANT: There is a single space right immediately after %time in the input!  Without the space things are fine. 
 
@@ -209,7 +207,7 @@ Looks good and seems to fix the problem.  What's the point of setting i=-1 in th
 archive/issue_comments_040913.json:
 ```json
 {
-    "body": "> Is that just so i is defined as an integer if text has no elements when \n> reaching the line: return\n\nYes.    splitlines and split('\\n') have different semantics.  I changed to splitlines in anticipation of windows. \n\nYou're right, using i=0 makes more sense, though of course won't make any difference since in this special case the list we're slicing is empty.",
+    "body": "> Is that just so i is defined as an integer if text has no elements when \n> reaching the line: return\n\n\nYes.    splitlines and split('\\n') have different semantics.  I changed to splitlines in anticipation of windows. \n\nYou're right, using i=0 makes more sense, though of course won't make any difference since in this special case the list we're slicing is empty.",
     "created_at": "2009-11-09T17:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
@@ -220,6 +218,7 @@ archive/issue_comments_040913.json:
 
 > Is that just so i is defined as an integer if text has no elements when 
 > reaching the line: return
+
 
 Yes.    splitlines and split('\n') have different semantics.  I changed to splitlines in anticipation of windows. 
 

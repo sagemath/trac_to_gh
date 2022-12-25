@@ -74,7 +74,7 @@ But it doesn't have to though: #5877 fixes an issue that is required for the `to
 archive/issue_comments_046350.json:
 ```json
 {
-    "body": "Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\n```\n[mvngu@sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py\n<LOTS_OF_BOOM!>\n```\n\n[Here's](http://sage.math.washington.edu/home/mvngu/patch/5878/log.txt) the full (but very long) error log from the doctests.",
+    "body": "Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\n```\n[mvngu@sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py\n<LOTS_OF_BOOM!>\n```\n[Here's](http://sage.math.washington.edu/home/mvngu/patch/5878/log.txt) the full (but very long) error log from the doctests.",
     "created_at": "2009-05-19T05:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` 
 [mvngu@sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py
 <LOTS_OF_BOOM!>
 ```
-
 [Here's](http://sage.math.washington.edu/home/mvngu/patch/5878/log.txt) the full (but very long) error log from the doctests.
 
 
@@ -99,7 +98,7 @@ Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` 
 archive/issue_comments_046351.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\nI can't reproduce this. When I run the tests, with or without #6048, I get no failures:\n\n\n```\nkarkwa: sage-4.0 -version\n| Sage Version 4.0.alpha0, Release Date: 2009-05-15                  |\nkarkwa: hg qapplied \nnon-ascii.patch\ntrac_5878.patch\n\nkarkwa: sage-4.0 -b && sage-4.0 -t -long symmetric_group_representations.py yang_baxter_graph.py \n...\nreal    0m1.263s\nuser    0m1.004s\nsys     0m0.244s\nsage -t -long \"devel/sage-main/sage/combinat/symmetric_group_representations.py\"\n         [5.8 s]\nsage -t -long \"devel/sage-main/sage/combinat/yang_baxter_graph.py\"\n         [3.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.2 seconds\n```\n\n\nCan you re-check this?\n\nThanks,\nFranco",
+    "body": "Replying to [comment:3 mvngu]:\n> Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\n\nI can't reproduce this. When I run the tests, with or without #6048, I get no failures:\n\n```\nkarkwa: sage-4.0 -version\n| Sage Version 4.0.alpha0, Release Date: 2009-05-15                  |\nkarkwa: hg qapplied \nnon-ascii.patch\ntrac_5878.patch\n\nkarkwa: sage-4.0 -b && sage-4.0 -t -long symmetric_group_representations.py yang_baxter_graph.py \n...\nreal    0m1.263s\nuser    0m1.004s\nsys     0m0.244s\nsage -t -long \"devel/sage-main/sage/combinat/symmetric_group_representations.py\"\n         [5.8 s]\nsage -t -long \"devel/sage-main/sage/combinat/yang_baxter_graph.py\"\n         [3.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.2 seconds\n```\n\nCan you re-check this?\n\nThanks,\nFranco",
     "created_at": "2009-05-19T08:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
@@ -111,8 +110,8 @@ archive/issue_comments_046351.json:
 Replying to [comment:3 mvngu]:
 > Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:
 
-I can't reproduce this. When I run the tests, with or without #6048, I get no failures:
 
+I can't reproduce this. When I run the tests, with or without #6048, I get no failures:
 
 ```
 karkwa: sage-4.0 -version
@@ -135,7 +134,6 @@ sage -t -long "devel/sage-main/sage/combinat/yang_baxter_graph.py"
 All tests passed!
 Total time for all tests: 9.2 seconds
 ```
-
 
 Can you re-check this?
 
@@ -207,7 +205,7 @@ Franco, can you just check over these?
 archive/issue_comments_046355.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n> \n> Franco, can you just check over these?\n\nChecked. They are correct.\n\nPositive review for the reviewer patch.",
+    "body": "Replying to [comment:5 mhansen]:\n> Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n> \n> Franco, can you just check over these?\n\n\nChecked. They are correct.\n\nPositive review for the reviewer patch.",
     "created_at": "2009-06-04T22:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
@@ -220,6 +218,7 @@ Replying to [comment:5 mhansen]:
 > Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.
 > 
 > Franco, can you just check over these?
+
 
 Checked. They are correct.
 

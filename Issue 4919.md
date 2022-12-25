@@ -134,7 +134,7 @@ Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/t
 archive/issue_comments_037255.json:
 ```json
 {
-    "body": "Great, except you missed (in hg.py):\n\n>   lines 415-419: this should be an itemized list (it's been garbled in the conversion)\n\n(You got the other six instances that I mentioned.)",
+    "body": "Great, except you missed (in hg.py):\n\n>   lines 415-419: this should be an itemized list (it's been garbled in the conversion)\n\n\n(You got the other six instances that I mentioned.)",
     "created_at": "2009-01-11T06:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
@@ -146,6 +146,7 @@ archive/issue_comments_037255.json:
 Great, except you missed (in hg.py):
 
 >   lines 415-419: this should be an itemized list (it's been garbled in the conversion)
+
 
 (You got the other six instances that I mentioned.)
 

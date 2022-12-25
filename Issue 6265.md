@@ -3,7 +3,7 @@
 archive/issues_006265.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb @tscrim @kedlaya simonking\n\nAs discussed at #6051.  Line 91 of sage/rings/polynomial/toy_d_basis.py needs to be unrandomed when this is fixed.\n\n\n```\nHowever, when we compute the Groebner basis of I (defined over `\\ZZ`), we note that there is a certain integer in the ideal which is not 1.::\n\n    sage: d_basis(I) # random -- waiting on upstream singular fixes at #6051\n    [x + 170269749119, y + 2149906854, z + ..., 282687803443]                                \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6265\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb @tscrim @kedlaya simonking\n\nAs discussed at #6051.  Line 91 of sage/rings/polynomial/toy_d_basis.py needs to be unrandomed when this is fixed.\n\n```\nHowever, when we compute the Groebner basis of I (defined over `\\ZZ`), we note that there is a certain integer in the ideal which is not 1.::\n\n    sage: d_basis(I) # random -- waiting on upstream singular fixes at #6051\n    [x + 170269749119, y + 2149906854, z + ..., 282687803443]                                \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6265\n\n",
     "created_at": "2009-06-12T08:01:59Z",
     "labels": [
         "component: commutative algebra",
@@ -22,14 +22,12 @@ CC:  @malb @tscrim @kedlaya simonking
 
 As discussed at #6051.  Line 91 of sage/rings/polynomial/toy_d_basis.py needs to be unrandomed when this is fixed.
 
-
 ```
 However, when we compute the Groebner basis of I (defined over `\ZZ`), we note that there is a certain integer in the ideal which is not 1.::
 
     sage: d_basis(I) # random -- waiting on upstream singular fixes at #6051
     [x + 170269749119, y + 2149906854, z + ..., 282687803443]                                
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6265
 
@@ -431,7 +429,7 @@ Hmm...I'm now not so sure what the point of the doctest is. From the description
 archive/issue_comments_049936.json:
 ```json
 {
-    "body": "Replying to [comment:15 tscrim]:\n> Hmm...I'm now not so sure what the point of the doctest is. From the description above it looks more like the minimal integer that is in the ideal is the important point rather than the integers that are part of the binomial generators. I'm cc-ing Simon to see if he has a thought on this.\n\nI don't know anything about the theory of d-Gr\u00f6bner bases. However, from the explanation in the doctest, it seems to me that the integers in the binomial generators do not matter (at least not for the test). It seems to me that the point of the example is to show that\n- there is an integer in the d_basis, and\n- the prime factors of that integer have the property that the original system has solutions modulo that prime.",
+    "body": "Replying to [comment:15 tscrim]:\n> Hmm...I'm now not so sure what the point of the doctest is. From the description above it looks more like the minimal integer that is in the ideal is the important point rather than the integers that are part of the binomial generators. I'm cc-ing Simon to see if he has a thought on this.\n\n\nI don't know anything about the theory of d-Gr\u00f6bner bases. However, from the explanation in the doctest, it seems to me that the integers in the binomial generators do not matter (at least not for the test). It seems to me that the point of the example is to show that\n- there is an integer in the d_basis, and\n- the prime factors of that integer have the property that the original system has solutions modulo that prime.",
     "created_at": "2017-04-04T19:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6265",
     "type": "issue_comment",
@@ -442,6 +440,7 @@ archive/issue_comments_049936.json:
 
 Replying to [comment:15 tscrim]:
 > Hmm...I'm now not so sure what the point of the doctest is. From the description above it looks more like the minimal integer that is in the ideal is the important point rather than the integers that are part of the binomial generators. I'm cc-ing Simon to see if he has a thought on this.
+
 
 I don't know anything about the theory of d-Gröbner bases. However, from the explanation in the doctest, it seems to me that the integers in the binomial generators do not matter (at least not for the test). It seems to me that the point of the example is to show that
 - there is an integer in the d_basis, and

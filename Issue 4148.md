@@ -118,7 +118,7 @@ Michael
 archive/issue_comments_030046.json:
 ```json
 {
-    "body": "Hhm, this spkg blows up on OSX 10.4 PPC as well as OSX 10.5 Intel with\n\n```\nMaking install in rational\n/bin/sh ../../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../.. -I../../..   -I../../../src/kernel/integer -I../../../src/kernel -I../../../src/kernel/system -I../../../src/kernel/memory   -I/Users/mabshoff/sage-3.1.2.rc2/local//include  -fPIC -I\"/Users/mabshoff/sage-3.1.2.rc2/local/include\" -MT givratcstor.lo -MD -MP -MF .deps/givratcstor.Tpo -c -o givratcstor.lo givratcstor.C\n g++ -DHAVE_CONFIG_H -I. -I../../.. -I../../.. -I../../../src/kernel/integer -I../../../src/kernel -I../../../src/kernel/system -I../../../src/kernel/memory -I/Users/mabshoff/sage-3.1.2.rc2/local//include -fPIC -I/Users/mabshoff/sage-3.1.2.rc2/local/include -MT givratcstor.lo -MD -MP -MF .deps/givratcstor.Tpo -c givratcstor.C  -fno-common -DPIC -o .libs/givratcstor.o\ngivratcstor.C:45: error: declaration of \u2018uint64 ieee::mantissa\u2019\ngivratcstor.C:42: error: conflicts with previous declaration \u2018uint64 ieee::mantissa\u2019\ngivratcstor.C:46: error: declaration of \u2018uint64 ieee::exponent\u2019\ngivratcstor.C:41: error: conflicts with previous declaration \u2018uint64 ieee::exponent\u2019\ngivratcstor.C:47: error: declaration of \u2018uint64 ieee::negative\u2019\ngivratcstor.C:40: error: conflicts with previous declaration \u2018uint64 ieee::negative\u2019\nmake[5]: *** [givratcstor.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [install-recursive] Error 1\nmake[2]: *** [install-recursive] Error 1\nError installing givaro\n```\n\nPlease make sure to base this spkg off the one I link above by the same name as yours.\n\nCheers,\n\nMichael",
+    "body": "Hhm, this spkg blows up on OSX 10.4 PPC as well as OSX 10.5 Intel with\n\n```\nMaking install in rational\n/bin/sh ../../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../.. -I../../..   -I../../../src/kernel/integer -I../../../src/kernel -I../../../src/kernel/system -I../../../src/kernel/memory   -I/Users/mabshoff/sage-3.1.2.rc2/local//include  -fPIC -I\"/Users/mabshoff/sage-3.1.2.rc2/local/include\" -MT givratcstor.lo -MD -MP -MF .deps/givratcstor.Tpo -c -o givratcstor.lo givratcstor.C\n g++ -DHAVE_CONFIG_H -I. -I../../.. -I../../.. -I../../../src/kernel/integer -I../../../src/kernel -I../../../src/kernel/system -I../../../src/kernel/memory -I/Users/mabshoff/sage-3.1.2.rc2/local//include -fPIC -I/Users/mabshoff/sage-3.1.2.rc2/local/include -MT givratcstor.lo -MD -MP -MF .deps/givratcstor.Tpo -c givratcstor.C  -fno-common -DPIC -o .libs/givratcstor.o\ngivratcstor.C:45: error: declaration of \u2018uint64 ieee::mantissa\u2019\ngivratcstor.C:42: error: conflicts with previous declaration \u2018uint64 ieee::mantissa\u2019\ngivratcstor.C:46: error: declaration of \u2018uint64 ieee::exponent\u2019\ngivratcstor.C:41: error: conflicts with previous declaration \u2018uint64 ieee::exponent\u2019\ngivratcstor.C:47: error: declaration of \u2018uint64 ieee::negative\u2019\ngivratcstor.C:40: error: conflicts with previous declaration \u2018uint64 ieee::negative\u2019\nmake[5]: *** [givratcstor.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [install-recursive] Error 1\nmake[2]: *** [install-recursive] Error 1\nError installing givaro\n```\nPlease make sure to base this spkg off the one I link above by the same name as yours.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T02:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4148",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ make[3]: *** [install-recursive] Error 1
 make[2]: *** [install-recursive] Error 1
 Error installing givaro
 ```
-
 Please make sure to base this spkg off the one I link above by the same name as yours.
 
 Cheers,
@@ -159,7 +158,7 @@ Michael
 archive/issue_comments_030047.json:
 ```json
 {
-    "body": "Ok, the problem boils down to byte order detection being broken on OSX it seems:\n\n```\n#if     __BYTE_ORDER == __BIG_ENDIAN\n            uint64 negative:1;\n            uint64 exponent:11;\n            uint64 mantissa:52;\n#endif                          /* Big endian.  */\n#if     __BYTE_ORDER == __LITTLE_ENDIAN\n            uint64 mantissa:52;\n            uint64 exponent:11;\n            uint64 negative:1;\n#endif                          /* Little endian.  */\n```\n\n\nCheers,\n\nMichael",
+    "body": "Ok, the problem boils down to byte order detection being broken on OSX it seems:\n\n```\n#if     __BYTE_ORDER == __BIG_ENDIAN\n            uint64 negative:1;\n            uint64 exponent:11;\n            uint64 mantissa:52;\n#endif                          /* Big endian.  */\n#if     __BYTE_ORDER == __LITTLE_ENDIAN\n            uint64 mantissa:52;\n            uint64 exponent:11;\n            uint64 negative:1;\n#endif                          /* Little endian.  */\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T02:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4148",
     "type": "issue_comment",
@@ -182,7 +181,6 @@ Ok, the problem boils down to byte order detection being broken on OSX it seems:
             uint64 negative:1;
 #endif                          /* Little endian.  */
 ```
-
 
 Cheers,
 

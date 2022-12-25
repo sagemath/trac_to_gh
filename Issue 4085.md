@@ -3,7 +3,7 @@
 archive/issues_004085.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nBefore \n\n\n```\nsage: RealField(256)(1.2)\n1.199999999999999955591079014993738383054733276367187500000000000000000000000\n```\n\n\nAfter\n\n\n```\nsage: RealField(256)(1.2)\n1.200000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\n\nWhile I was in there I made several optimizations. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4085\n\n",
+    "body": "Assignee: jkantor\n\nBefore \n\n```\nsage: RealField(256)(1.2)\n1.199999999999999955591079014993738383054733276367187500000000000000000000000\n```\n\nAfter\n\n```\nsage: RealField(256)(1.2)\n1.200000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nWhile I was in there I made several optimizations. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4085\n\n",
     "created_at": "2008-09-09T05:46:07Z",
     "labels": [
         "component: numerical",
@@ -20,21 +20,17 @@ Assignee: jkantor
 
 Before 
 
-
 ```
 sage: RealField(256)(1.2)
 1.199999999999999955591079014993738383054733276367187500000000000000000000000
 ```
 
-
 After
-
 
 ```
 sage: RealField(256)(1.2)
 1.200000000000000000000000000000000000000000000000000000000000000000000000000
 ```
-
 
 While I was in there I made several optimizations. 
 
@@ -67,7 +63,7 @@ Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_029415.json:
 ```json
 {
-    "body": "Technically, this looks good to me and it's definitely a change for the better.  There will be some doctest failures as Sage is now more accurate, but I'll let mabshoff test the tree, and then I can make the clean up patch.\n\nWe also have this nice behavior:\n\n```\nsage: ComplexField(200)(1.1,0.1)\n1.1000000000000000000000000000000000000000000000000000000000 + 0.10000000000000000000000000000000000000000000000000000000000*I\n```\n\n\nNice work Robert!",
+    "body": "Technically, this looks good to me and it's definitely a change for the better.  There will be some doctest failures as Sage is now more accurate, but I'll let mabshoff test the tree, and then I can make the clean up patch.\n\nWe also have this nice behavior:\n\n```\nsage: ComplexField(200)(1.1,0.1)\n1.1000000000000000000000000000000000000000000000000000000000 + 0.10000000000000000000000000000000000000000000000000000000000*I\n```\n\nNice work Robert!",
     "created_at": "2008-09-09T08:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
@@ -84,7 +80,6 @@ We also have this nice behavior:
 sage: ComplexField(200)(1.1,0.1)
 1.1000000000000000000000000000000000000000000000000000000000 + 0.10000000000000000000000000000000000000000000000000000000000*I
 ```
-
 
 Nice work Robert!
 

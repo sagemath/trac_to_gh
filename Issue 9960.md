@@ -3,7 +3,7 @@
 archive/issues_009960.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\n\nunder assumptions \n\n```\nx>0,y>0\n```\n\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\n\npasses\n\n```\nassume(y(x)>0)\n```\n\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
+    "body": "Assignee: @burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\nunder assumptions \n\n```\nx>0,y>0\n```\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\npasses\n\n```\nassume(y(x)>0)\n```\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
     "created_at": "2010-09-21T19:29:55Z",
     "labels": [
         "component: symbolics",
@@ -23,13 +23,11 @@ Sage should be able to solve ODE
 ```
 x*diff(y,x)-x*sqrt(y^2+x^2)-y == 0
 ```
-
 under assumptions 
 
 ```
 x>0,y>0
 ```
-
 
 Now 
 
@@ -37,13 +35,11 @@ Now
 y=function('y',x)
 assume(y>0)
 ```
-
 passes
 
 ```
 assume(y(x)>0)
 ```
-
 to Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,
 
 
@@ -245,7 +241,7 @@ apply only this patch
 archive/issue_comments_099589.json:
 ```json
 {
-    "body": "I uploaded a new patch attachment:trac_9961-assume_function.take2.patch. The previous version caused doctest failures like:\n\n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/calculus/wester.py\", line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[131]>\", line 1, in <module>\n        assume(real(x) > Integer(0), real(y) > Integer(0))###line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/symbolic/assumptions.py\", line 357, in assume\n        x.assume()\n      File \"expression.pyx\", line 1214, in sage.symbolic.expression.Expression.assume (sage/symbolic/expression.cpp:6320)\n    ValueError: Assumption is redundant\n```\n\n\nor \n\n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_170[21]>\", line 1, in <module>\n        (a*q**k).sum(k, Integer(0), oo)###line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\n      File \"expression.pyx\", line 7717, in sage.symbolic.expression.Expression.sum (sage/symbolic/expression.cpp:30994)\n        Mathematica, so even if the chosen backend can perform the summation the\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/calculus/calculus.py\", line 503, in symbolic_sum\n        result = maxima.simplify_sum(sum)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1387, in __call__\n        return self._parent.function_call(self._name, list(args), kwds)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1322, in function_call\n        return self.new(s)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1097, in new\n        return self(code)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n        return cls(self, x, name=name)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1457, in __init__\n        raise TypeError, x\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(abs(q)-1>0)' before integral or limit evaluation, for example):\n    Is  abs(q)-1  positive, negative, or zero?\n```\n\n\nThis patch restricts the special treatment to user defined functions.\n\nThis passes all the symbolics related doctests, I think it's ready for review.",
+    "body": "I uploaded a new patch attachment:trac_9961-assume_function.take2.patch. The previous version caused doctest failures like:\n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/calculus/wester.py\", line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[131]>\", line 1, in <module>\n        assume(real(x) > Integer(0), real(y) > Integer(0))###line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/symbolic/assumptions.py\", line 357, in assume\n        x.assume()\n      File \"expression.pyx\", line 1214, in sage.symbolic.expression.Expression.assume (sage/symbolic/expression.cpp:6320)\n    ValueError: Assumption is redundant\n```\n\nor \n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_170[21]>\", line 1, in <module>\n        (a*q**k).sum(k, Integer(0), oo)###line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\n      File \"expression.pyx\", line 7717, in sage.symbolic.expression.Expression.sum (sage/symbolic/expression.cpp:30994)\n        Mathematica, so even if the chosen backend can perform the summation the\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/calculus/calculus.py\", line 503, in symbolic_sum\n        result = maxima.simplify_sum(sum)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1387, in __call__\n        return self._parent.function_call(self._name, list(args), kwds)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1322, in function_call\n        return self.new(s)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1097, in new\n        return self(code)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n        return cls(self, x, name=name)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1457, in __init__\n        raise TypeError, x\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(abs(q)-1>0)' before integral or limit evaluation, for example):\n    Is  abs(q)-1  positive, negative, or zero?\n```\n\nThis patch restricts the special treatment to user defined functions.\n\nThis passes all the symbolics related doctests, I think it's ready for review.",
     "created_at": "2010-09-22T16:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
@@ -255,7 +251,6 @@ archive/issue_comments_099589.json:
 ```
 
 I uploaded a new patch attachment:trac_9961-assume_function.take2.patch. The previous version caused doctest failures like:
-
 
 ```
 File "/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/calculus/wester.py", line 386:
@@ -277,9 +272,7 @@ Exception raised:
     ValueError: Assumption is redundant
 ```
 
-
 or 
-
 
 ```
 File "/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/symbolic/expression.pyx", line 7691:
@@ -312,7 +305,6 @@ Exception raised:
     TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(abs(q)-1>0)' before integral or limit evaluation, for example):
     Is  abs(q)-1  positive, negative, or zero?
 ```
-
 
 This patch restricts the special treatment to user defined functions.
 

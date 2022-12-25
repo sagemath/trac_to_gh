@@ -3,7 +3,7 @@
 archive/issues_007412.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nHere is the problem:\n\n\n```\nsage: L = [0,0,0]\nsage: sage.combinat.permutation.from_lehmer_code( L )\n[1, 2, 3]\nsage: L\n[1, 1, 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7412\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nHere is the problem:\n\n```\nsage: L = [0,0,0]\nsage: sage.combinat.permutation.from_lehmer_code( L )\n[1, 2, 3]\nsage: L\n[1, 1, 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7412\n\n",
     "created_at": "2009-11-08T16:32:34Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  @hivert
 
 Here is the problem:
 
-
 ```
 sage: L = [0,0,0]
 sage: sage.combinat.permutation.from_lehmer_code( L )
@@ -30,7 +29,6 @@ sage: sage.combinat.permutation.from_lehmer_code( L )
 sage: L
 [1, 1, 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7412
 

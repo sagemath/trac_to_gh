@@ -149,7 +149,7 @@ for reviewing such an out of sage-library/ issue ?
 archive/issue_comments_041151.json:
 ```json
 {
-    "body": "Replying to [comment:4 rochelol2]:\n> Patch tested successfully on 4.6.1, however (beginner question) what is the correct procedure\n> for reviewing such an out of sage-library/ issue ?\n\nThere is a repository, referred to as the script repository, in `$SAGE_LOCAL/bin`. The patch should apply cleanly to this repo, have proper mercurial headers, etc.\n\nAttached patch does not fix all the problem places. The script `sage-valgrind` still refers to `$HOME/.sage`. Could you fix that and use \"hg export\" to create the patch?",
+    "body": "Replying to [comment:4 rochelol2]:\n> Patch tested successfully on 4.6.1, however (beginner question) what is the correct procedure\n> for reviewing such an out of sage-library/ issue ?\n\n\nThere is a repository, referred to as the script repository, in `$SAGE_LOCAL/bin`. The patch should apply cleanly to this repo, have proper mercurial headers, etc.\n\nAttached patch does not fix all the problem places. The script `sage-valgrind` still refers to `$HOME/.sage`. Could you fix that and use \"hg export\" to create the patch?",
     "created_at": "2011-05-31T13:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
@@ -161,6 +161,7 @@ archive/issue_comments_041151.json:
 Replying to [comment:4 rochelol2]:
 > Patch tested successfully on 4.6.1, however (beginner question) what is the correct procedure
 > for reviewing such an out of sage-library/ issue ?
+
 
 There is a repository, referred to as the script repository, in `$SAGE_LOCAL/bin`. The patch should apply cleanly to this repo, have proper mercurial headers, etc.
 
@@ -227,7 +228,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041155.json:
 ```json
 {
-    "body": "I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`. As is,\n\n\n```\n$ ./local/bin/sage-valgrind \n/local/bin/sage-ipython\nmkdir: cannot create directory `/valgrind': Permission denied\n```\n",
+    "body": "I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`. As is,\n\n```\n$ ./local/bin/sage-valgrind \n/local/bin/sage-ipython\nmkdir: cannot create directory `/valgrind': Permission denied\n```",
     "created_at": "2011-12-04T03:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
@@ -238,13 +239,11 @@ archive/issue_comments_041155.json:
 
 I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`. As is,
 
-
 ```
 $ ./local/bin/sage-valgrind 
 /local/bin/sage-ipython
 mkdir: cannot create directory `/valgrind': Permission denied
 ```
-
 
 
 
@@ -289,7 +288,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041158.json:
 ```json
 {
-    "body": "Replying to [comment:7 mjo]:\n> I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`.\n\nAfter RTFMing, I see that I shouldn't be running the script from bash anyway, so this criticism is invalid.",
+    "body": "Replying to [comment:7 mjo]:\n> I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`.\n\n\nAfter RTFMing, I see that I shouldn't be running the script from bash anyway, so this criticism is invalid.",
     "created_at": "2011-12-04T17:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
@@ -300,6 +299,7 @@ archive/issue_comments_041158.json:
 
 Replying to [comment:7 mjo]:
 > I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`.
+
 
 After RTFMing, I see that I shouldn't be running the script from bash anyway, so this criticism is invalid.
 

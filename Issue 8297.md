@@ -3,7 +3,7 @@
 archive/issues_008297.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nOn Wed, 17 Feb 2010 23:16:13 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> A minor inconvenience is the extra set of parentheses that appear\n> when typesetting QQ elements as arguments of functions, e.g.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.2, Release Date: 2010-02-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: latex(gamma(1/4))\n> \\Gamma\\left(\\left(\\frac{1}{4}\\right)\\right)\n> \n> \n> Unfortunately I can not create a patch myself to fix this since\n> I could not figure out where the problem comes from.\n> \n> /H\u00e5kan\n```\n\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/d068d2fd544eadde\n\nIssue created by migration from https://trac.sagemath.org/ticket/8297\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n```\nOn Wed, 17 Feb 2010 23:16:13 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> A minor inconvenience is the extra set of parentheses that appear\n> when typesetting QQ elements as arguments of functions, e.g.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.2, Release Date: 2010-02-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: latex(gamma(1/4))\n> \\Gamma\\left(\\left(\\frac{1}{4}\\right)\\right)\n> \n> \n> Unfortunately I can not create a patch myself to fix this since\n> I could not figure out where the problem comes from.\n> \n> /H\u00e5kan\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/d068d2fd544eadde\n\nIssue created by migration from https://trac.sagemath.org/ticket/8297\n\n",
     "created_at": "2010-02-18T09:30:19Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Assignee: @burcin
 Keywords: pynac
 
 From sage-devel:
-
 
 ```
 On Wed, 17 Feb 2010 23:16:13 -0800 (PST)
@@ -43,7 +42,6 @@ Håkan Granath <hakan.granath@googlemail.com> wrote:
 > 
 > /Håkan
 ```
-
 
 Here is the thread:
 

@@ -3,7 +3,7 @@
 archive/issues_009958.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\n\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
+    "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
     "created_at": "2010-09-21T13:36:14Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ I still am getting the known behavior below when exiting Sage.
 Exiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). 
 Exiting spawned GP/PARI interpreter process. 
 ```
-
 It's not exactly a bug, but it's also annoying and potentially 
 confusing to a non-Pari user.  We should stop it.
 
@@ -81,7 +80,7 @@ Rewrite the class `sage.interfaces.gp.Gp` to lazily start the interpreter, or in
 archive/issue_comments_099462.json:
 ```json
 {
-    "body": "I believe this in `Gp.__init__` is the culprit:\n\n```\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n```\n\n\nIf this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.",
+    "body": "I believe this in `Gp.__init__` is the culprit:\n\n```\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n```\n\nIf this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.",
     "created_at": "2010-09-21T20:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -97,7 +96,6 @@ I believe this in `Gp.__init__` is the culprit:
 self.set_default('breakloop',0)
 ```
 
-
 If this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.
 
 
@@ -107,7 +105,7 @@ If this is the case, an easy solution is to add a patch to the pari spkg to set 
 archive/issue_comments_099463.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> Oh, I thought you just meant \"GP/PARI\" should read \"PARI/GP\"...\nThis should also be changed.",
+    "body": "Replying to [comment:1 leif]:\n> Oh, I thought you just meant \"GP/PARI\" should read \"PARI/GP\"...\n\nThis should also be changed.",
     "created_at": "2010-09-21T20:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -118,6 +116,7 @@ archive/issue_comments_099463.json:
 
 Replying to [comment:1 leif]:
 > Oh, I thought you just meant "GP/PARI" should read "PARI/GP"...
+
 This should also be changed.
 
 
@@ -127,7 +126,7 @@ This should also be changed.
 archive/issue_comments_099464.json:
 ```json
 {
-    "body": "Replying to [comment:3 jdemeyer]:\n> I believe this in `Gp.__init__` is the culprit:\n\n```\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n```\n\n\nGood catch. I read this a dozen times without noticing that this actually calls `gp`... 8/\n\n> If this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.\n\nTry it...",
+    "body": "Replying to [comment:3 jdemeyer]:\n> I believe this in `Gp.__init__` is the culprit:\n\n{{{\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n}}}\n\nGood catch. I read this a dozen times without noticing that this actually calls `gp`... 8/\n\n> If this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.\n\n\nTry it...",
     "created_at": "2010-09-21T20:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -139,15 +138,15 @@ archive/issue_comments_099464.json:
 Replying to [comment:3 jdemeyer]:
 > I believe this in `Gp.__init__` is the culprit:
 
-```
+{{{
 # gp starts up with this set to 1, which makes pexpect hang: 
 self.set_default('breakloop',0)
-```
-
+}}}
 
 Good catch. I read this a dozen times without noticing that this actually calls `gp`... 8/
 
 > If this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.
+
 
 Try it...
 
@@ -232,7 +231,7 @@ Changing priority from major to minor.
 archive/issue_comments_099469.json:
 ```json
 {
-    "body": "Wow, *a lot* of places where \"GP/PARI\" had to be changed... (well done)\n\nWe have two similar instances in the scripts repo:\n\n```\nlocal/bin/sage-sage:    echo \"  -gp <..>      -- run Sage's GP (Pari) with given arguments\"\nlocal/bin/sage-sage.py:                     help=\"run Sage's GP (Pari), passing it all remaining arguments\")\n```\n\nBut I think we don't need to change these on this ticket.\n\nPatches look fine, will test them later (with the new spkg of course).",
+    "body": "Wow, *a lot* of places where \"GP/PARI\" had to be changed... (well done)\n\nWe have two similar instances in the scripts repo:\n\n```\nlocal/bin/sage-sage:    echo \"  -gp <..>      -- run Sage's GP (Pari) with given arguments\"\nlocal/bin/sage-sage.py:                     help=\"run Sage's GP (Pari), passing it all remaining arguments\")\n```\nBut I think we don't need to change these on this ticket.\n\nPatches look fine, will test them later (with the new spkg of course).",
     "created_at": "2010-09-21T22:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -249,7 +248,6 @@ We have two similar instances in the scripts repo:
 local/bin/sage-sage:    echo "  -gp <..>      -- run Sage's GP (Pari) with given arguments"
 local/bin/sage-sage.py:                     help="run Sage's GP (Pari), passing it all remaining arguments")
 ```
-
 But I think we don't need to change these on this ticket.
 
 Patches look fine, will test them later (with the new spkg of course).
@@ -339,7 +337,7 @@ It should at least not hurt to keep the second `set_default('breakloop',0)` in `
 archive/issue_comments_099474.json:
 ```json
 {
-    "body": "Replying to [comment:12 leif]:\n> It should at least not hurt to keep the second `set_default('breakloop',0)` in `Gp._start()`.\n\nAs far as I can see, we don't need it there, since `gp` will of course (re)start with the hard-coded defaults whenever `_start()` is called.\n\n(This is different to setting it \"manually\" from the Expect interface each time `gp` is [re]started.) \n\nSo we can IMHO drop `Gp._start()` completely, as John noted.",
+    "body": "Replying to [comment:12 leif]:\n> It should at least not hurt to keep the second `set_default('breakloop',0)` in `Gp._start()`.\n\n\nAs far as I can see, we don't need it there, since `gp` will of course (re)start with the hard-coded defaults whenever `_start()` is called.\n\n(This is different to setting it \"manually\" from the Expect interface each time `gp` is [re]started.) \n\nSo we can IMHO drop `Gp._start()` completely, as John noted.",
     "created_at": "2010-09-22T22:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -350,6 +348,7 @@ archive/issue_comments_099474.json:
 
 Replying to [comment:12 leif]:
 > It should at least not hurt to keep the second `set_default('breakloop',0)` in `Gp._start()`.
+
 
 As far as I can see, we don't need it there, since `gp` will of course (re)start with the hard-coded defaults whenever `_start()` is called.
 
@@ -364,7 +363,7 @@ So we can IMHO drop `Gp._start()` completely, as John noted.
 archive/issue_comments_099475.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> Are you both sure that it is safe to delete the one in `_start` as well?  Does that not cause gp to enter the breakloop on encountering an error, which is not what you want?\n\nThe new spkg patches the `gp` source code to disable the breakloop by default, so we can remove all references to `breakloop` from Sage.  Note also that the patch [attachment:9959_gp_error_doctest.patch] actually acts a doctest to check this.",
+    "body": "Replying to [comment:11 cremona]:\n> Are you both sure that it is safe to delete the one in `_start` as well?  Does that not cause gp to enter the breakloop on encountering an error, which is not what you want?\n\n\nThe new spkg patches the `gp` source code to disable the breakloop by default, so we can remove all references to `breakloop` from Sage.  Note also that the patch [attachment:9959_gp_error_doctest.patch] actually acts a doctest to check this.",
     "created_at": "2010-09-23T07:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -375,6 +374,7 @@ archive/issue_comments_099475.json:
 
 Replying to [comment:11 cremona]:
 > Are you both sure that it is safe to delete the one in `_start` as well?  Does that not cause gp to enter the breakloop on encountering an error, which is not what you want?
+
 
 The new spkg patches the `gp` source code to disable the breakloop by default, so we can remove all references to `breakloop` from Sage.  Note also that the patch [attachment:9959_gp_error_doctest.patch] actually acts a doctest to check this.
 
@@ -423,7 +423,7 @@ Add doctest for error recovery
 archive/issue_comments_099478.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> And by the way, the *only* reason I created a `_start` function for Gp different from the default one in PExpect was to add this line in `_start`;  so if that line is not needed, you can probably delete the while `_start` function for class Gp.\n\nDone",
+    "body": "Replying to [comment:11 cremona]:\n> And by the way, the *only* reason I created a `_start` function for Gp different from the default one in PExpect was to add this line in `_start`;  so if that line is not needed, you can probably delete the while `_start` function for class Gp.\n\n\nDone",
     "created_at": "2010-09-23T07:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -434,6 +434,7 @@ archive/issue_comments_099478.json:
 
 Replying to [comment:11 cremona]:
 > And by the way, the *only* reason I created a `_start` function for Gp different from the default one in PExpect was to add this line in `_start`;  so if that line is not needed, you can probably delete the while `_start` function for class Gp.
+
 
 Done
 
@@ -482,7 +483,7 @@ Patch for the PARI spkg .p7 to .p8 (for review)
 archive/issue_comments_099481.json:
 ```json
 {
-    "body": "Replying to [comment:16 cremona]:\n> It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n\nIf one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.",
+    "body": "Replying to [comment:16 cremona]:\n> It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n\n\nIf one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.",
     "created_at": "2010-09-23T08:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -494,6 +495,7 @@ archive/issue_comments_099481.json:
 Replying to [comment:16 cremona]:
 > It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.
 
+
 If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.
 
 
@@ -503,7 +505,7 @@ If one would add an option to `gp`, add an option for non-interactive (script) u
 archive/issue_comments_099482.json:
 ```json
 {
-    "body": "Replying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n> \n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\nI suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!",
+    "body": "Replying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n\n> \n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\n\nI suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!",
     "created_at": "2010-09-23T08:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -515,8 +517,10 @@ archive/issue_comments_099482.json:
 Replying to [comment:17 jdemeyer]:
 > Replying to [comment:16 cremona]:
 > > It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.
+
 > 
 > If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.
+
 
 I suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!
 
@@ -527,7 +531,7 @@ I suppose that from their point of view it makes no sense to use gp non-interact
 archive/issue_comments_099483.json:
 ```json
 {
-    "body": "**Alternative solution**:\n\nWhen `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n\nThen, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n```\nbreakloop =  0\n```\n",
+    "body": "**Alternative solution**:\n\nWhen `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n\nThen, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n```\nbreakloop =  0\n```",
     "created_at": "2010-09-23T09:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -548,13 +552,12 @@ breakloop =  0
 
 
 
-
 ---
 
 archive/issue_comments_099484.json:
 ```json
 {
-    "body": "Replying to [comment:18 cremona]:\n> I suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!\n\nGood point :-)",
+    "body": "Replying to [comment:18 cremona]:\n> I suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!\n\n\nGood point :-)",
     "created_at": "2010-09-23T09:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -566,6 +569,7 @@ archive/issue_comments_099484.json:
 Replying to [comment:18 cremona]:
 > I suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!
 
+
 Good point :-)
 
 
@@ -575,7 +579,7 @@ Good point :-)
 archive/issue_comments_099485.json:
 ```json
 {
-    "body": "Replying to [comment:19 jdemeyer]:\n> **Alternative solution**:\n> \n> When `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n> \n> Then, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n```\nbreakloop =  0\n```\n\n\nI was just going to suggest that, too.\n\nNote that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.",
+    "body": "Replying to [comment:19 jdemeyer]:\n> **Alternative solution**:\n> \n> When `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n> \n> Then, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n{{{\nbreakloop =  0\n}}}\n\nI was just going to suggest that, too.\n\nNote that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.",
     "created_at": "2010-09-23T09:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -591,10 +595,9 @@ Replying to [comment:19 jdemeyer]:
 > 
 > Then, the file `$HOME/.sage/gp/gprc` should contain a line:
 
-```
+{{{
 breakloop =  0
-```
-
+}}}
 
 I was just going to suggest that, too.
 
@@ -625,7 +628,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099487.json:
 ```json
 {
-    "body": "Replying to [comment:21 leif]:\n> Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n\nI think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\nSetting this to needs_work to implement the alternative solution.",
+    "body": "Replying to [comment:21 leif]:\n> Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n\n\nI think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\nSetting this to needs_work to implement the alternative solution.",
     "created_at": "2010-09-23T09:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -636,6 +639,7 @@ archive/issue_comments_099487.json:
 
 Replying to [comment:21 leif]:
 > Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.
+
 
 I think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.
 
@@ -648,7 +652,7 @@ Setting this to needs_work to implement the alternative solution.
 archive/issue_comments_099488.json:
 ```json
 {
-    "body": "Replying to [comment:17 jdemeyer]:\n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\nPerhaps they meanwhile chnaged their minds.. ;-)\n\nThere's some stuff in it for using `gp` from Emacs or TeXmacs, but only as a *compile time* option IIRC. Also some kind of \"non-interactive\" `gp` use.",
+    "body": "Replying to [comment:17 jdemeyer]:\n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\n\nPerhaps they meanwhile chnaged their minds.. ;-)\n\nThere's some stuff in it for using `gp` from Emacs or TeXmacs, but only as a *compile time* option IIRC. Also some kind of \"non-interactive\" `gp` use.",
     "created_at": "2010-09-23T09:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -659,6 +663,7 @@ archive/issue_comments_099488.json:
 
 Replying to [comment:17 jdemeyer]:
 > If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.
+
 
 Perhaps they meanwhile chnaged their minds.. ;-)
 
@@ -671,7 +676,7 @@ There's some stuff in it for using `gp` from Emacs or TeXmacs, but only as a *co
 archive/issue_comments_099489.json:
 ```json
 {
-    "body": "Replying to [comment:22 jdemeyer]:\n> Replying to [comment:21 leif]:\n> > Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n> \n> I think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\nRight, but we should take care not to use the other one (i.e. by setting `GPRC` and therefore overriding `$HOME/.gprc`) if we start the interactive `gp`.",
+    "body": "Replying to [comment:22 jdemeyer]:\n> Replying to [comment:21 leif]:\n> > Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n\n> \n> I think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\n\nRight, but we should take care not to use the other one (i.e. by setting `GPRC` and therefore overriding `$HOME/.gprc`) if we start the interactive `gp`.",
     "created_at": "2010-09-23T09:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -683,8 +688,10 @@ archive/issue_comments_099489.json:
 Replying to [comment:22 jdemeyer]:
 > Replying to [comment:21 leif]:
 > > Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.
+
 > 
 > I think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.
+
 
 Right, but we should take care not to use the other one (i.e. by setting `GPRC` and therefore overriding `$HOME/.gprc`) if we start the interactive `gp`.
 
@@ -841,7 +848,7 @@ Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that be
 archive/issue_comments_099498.json:
 ```json
 {
-    "body": "Replying to [comment:30 leif]:\n> Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that before it starts `gp`?\n\n`gp` does that.",
+    "body": "Replying to [comment:30 leif]:\n> Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that before it starts `gp`?\n\n\n`gp` does that.",
     "created_at": "2010-09-24T14:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -852,6 +859,7 @@ archive/issue_comments_099498.json:
 
 Replying to [comment:30 leif]:
 > Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that before it starts `gp`?
+
 
 `gp` does that.
 
@@ -996,7 +1004,7 @@ Of course, someone else who knows how to do this reliably is welcome to get in f
 archive/issue_comments_099506.json:
 ```json
 {
-    "body": "Replying to [comment:35 cremona]:\n> The sagelib patch looks good to me.\n> \n> For review, please could you give instructions for the simple-minded as to how to apply the patch which converts .p7 to .p9?\n\nWell, the easiest is to install the new spkg:\n\n```\nsage -i http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg\n```\n\n\n> And then how to rebuild?\nI personally do not know the most reliable way to rebuild a complete Sage installation.  One thing which works for sure is the following:\n* download sage-4.6.alpha3.tar and extract it so we have a clean, uncompiled sage-4.6.alpha3.\n* rm spkg/standard/pari-*.spkg\n* download [ttp://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg] and and put it in spkg/standard\n* now `make` Sage as usual",
+    "body": "Replying to [comment:35 cremona]:\n> The sagelib patch looks good to me.\n> \n> For review, please could you give instructions for the simple-minded as to how to apply the patch which converts .p7 to .p9?\n\n\nWell, the easiest is to install the new spkg:\n\n```\nsage -i http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg\n```\n\n> And then how to rebuild?\n\nI personally do not know the most reliable way to rebuild a complete Sage installation.  One thing which works for sure is the following:\n* download sage-4.6.alpha3.tar and extract it so we have a clean, uncompiled sage-4.6.alpha3.\n* rm spkg/standard/pari-*.spkg\n* download [ttp://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg] and and put it in spkg/standard\n* now `make` Sage as usual",
     "created_at": "2010-10-09T18:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
@@ -1010,14 +1018,15 @@ Replying to [comment:35 cremona]:
 > 
 > For review, please could you give instructions for the simple-minded as to how to apply the patch which converts .p7 to .p9?
 
+
 Well, the easiest is to install the new spkg:
 
 ```
 sage -i http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg
 ```
 
-
 > And then how to rebuild?
+
 I personally do not know the most reliable way to rebuild a complete Sage installation.  One thing which works for sure is the following:
 * download sage-4.6.alpha3.tar and extract it so we have a clean, uncompiled sage-4.6.alpha3.
 * rm spkg/standard/pari-*.spkg

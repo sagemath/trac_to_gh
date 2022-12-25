@@ -3,7 +3,7 @@
 archive/issues_000264.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere is the output of this type of coercion:\n\nsage: float axiom(1.7)\n----> float(axiom(RealNumber('1.7')))\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/greg/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py in __float__(self)\n    422 \n    423     def __float__(self):\n--> 424         return float(str(self.numer()))\n    425 \n    426     def __len__(self):\n\n<type 'exceptions.ValueError'>: invalid literal for float(): float(250875719402449901978,-67,2)\n\nThe problem is that the Axiom Float is coerced to InputForm and in this format (actually) the internal representation of this Float is obtained : 250875719402449901978*2**-67.\n\nIssue created by migration from https://trac.sagemath.org/ticket/264\n\n",
+    "body": "Assignee: @williamstein\n\nHere is the output of this type of coercion:\n\nsage: float axiom(1.7)\n\n---\n\n---\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/greg/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py in __float__(self)\n    422 \n    423     def __float__(self):\n--> 424         return float(str(self.numer()))\n    425 \n    426     def __len__(self):\n\n<type 'exceptions.ValueError'>: invalid literal for float(): float(250875719402449901978,-67,2)\n\nThe problem is that the Axiom Float is coerced to InputForm and in this format (actually) the internal representation of this Float is obtained : 250875719402449901978*2**-67.\n\nIssue created by migration from https://trac.sagemath.org/ticket/264\n\n",
     "created_at": "2007-02-15T22:32:46Z",
     "labels": [
         "component: interfaces",
@@ -21,8 +21,10 @@ Assignee: @williamstein
 Here is the output of this type of coercion:
 
 sage: float axiom(1.7)
-----> float(axiom(RealNumber('1.7')))
----------------------------------------------------------------------------
+
+---
+
+---
 <type 'exceptions.ValueError'>            Traceback (most recent call last)
 
 /home/greg/<ipython console> in <module>()

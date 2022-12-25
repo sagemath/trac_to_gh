@@ -3,7 +3,7 @@
 archive/issues_002381.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: plot vector quiver\n\nIs the a way to produce \"quiver plots\" for 2d vector fields? plot_vector_field should accept functions of two parameters, but doesn't:\n\nUsage example:\n\n```\nsage: vf1 = plot_vector_field((lambda x:sin(x), lambda y:cos(y)), (-3,3), (-3,3))\n```\n\n\nWith 2 arguments:\n\n```\nsage: plot_vector_field((lambda x,y:y,lambda x,y:(cos(x)-2)*sin(x)),(-pi,pi),(-pi,pi))\n<type 'exceptions.TypeError'>: <lambda>() takes exactly 2 arguments (1 given)\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/13e52e07c7d7a7f9/ca8623384c7a1f55\n\nIssue created by migration from https://trac.sagemath.org/ticket/2381\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot vector quiver\n\nIs the a way to produce \"quiver plots\" for 2d vector fields? plot_vector_field should accept functions of two parameters, but doesn't:\n\nUsage example:\n\n```\nsage: vf1 = plot_vector_field((lambda x:sin(x), lambda y:cos(y)), (-3,3), (-3,3))\n```\n\nWith 2 arguments:\n\n```\nsage: plot_vector_field((lambda x,y:y,lambda x,y:(cos(x)-2)*sin(x)),(-pi,pi),(-pi,pi))\n<type 'exceptions.TypeError'>: <lambda>() takes exactly 2 arguments (1 given)\n```\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/13e52e07c7d7a7f9/ca8623384c7a1f55\n\nIssue created by migration from https://trac.sagemath.org/ticket/2381\n\n",
     "created_at": "2008-03-04T04:15:15Z",
     "labels": [
         "component: graphics",
@@ -28,14 +28,12 @@ Usage example:
 sage: vf1 = plot_vector_field((lambda x:sin(x), lambda y:cos(y)), (-3,3), (-3,3))
 ```
 
-
 With 2 arguments:
 
 ```
 sage: plot_vector_field((lambda x,y:y,lambda x,y:(cos(x)-2)*sin(x)),(-pi,pi),(-pi,pi))
 <type 'exceptions.TypeError'>: <lambda>() takes exactly 2 arguments (1 given)
 ```
-
 
 See http://groups.google.com/group/sage-support/browse_thread/thread/13e52e07c7d7a7f9/ca8623384c7a1f55
 

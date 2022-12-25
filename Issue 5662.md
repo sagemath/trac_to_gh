@@ -3,7 +3,7 @@
 archive/issues_005662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI've spent the past few days tracking down a very nasty issue in my recently installed sage notebook server. I have the problem nailed down, and I can reproduce it with relative ease. This seems a timing issue between threads running in parallel, so a heisenbug, but I have a way to reproduce it with high chance (with expected time in the order of a minute) in the actual hardware, and with *extremely* high chance in the KVM virtual machine.\n\nI have no idea how to fix the issue, but I have a (quite unsatisfactory) workaround: use a KVM with one processor only, or pin sage and its children processes to a fixed core (read below for more info). In the real hardware, pinning sage to a couple of processors which share L2 seems to completely \"fix\" the issue, while pinning sage to a couple processors with different L2 seems to hit the issue more often.\n\nI wasn't able to reproduce any of this on a core 2 duo -- I don't remember something like this happening to me before, but these days I've been trying harder with the specific things which hang the core 2 quad.\n\nAdditionally, I discussed the issue on IRC with Dan Drake, who also had the same issue after switching to a core 2 quad.\n\nI've been unable to reproduce this on sage.math either.\n\n### Hardware\n\n- real: core 2 quad Q9550. This is a pair of two core chips with 6Mb L2 each, in a single package. IOW, cpus 0 and 1 share 6MB of L2, while cpus 2 and 3 share another 6MB of L2. There's no L3 cache. The main memory is 8Gb of DDR-2 in two channels (4 x 2Gb modules). The clock speed is 2.83GHz (no overclocking) and the FSB should be 1333 according to cpu and mb specs (I don't know how to tell).\n\n I can't reproduce the issues described here in the real hardware using only the pair of cpus 0,1 (which share L2), neither using only the pair of cpus 2,3 (also share L2). OTOH, using a pair of processors with different L2 seems to make the issue easier to reproduce. Also, 0,2 and 0,3 seem to cause the issue more often than 1,2 or 1,3.\n\n To pin sage and subprocesses to a specific cpuset, I use taskset(1).\n\n- virtual: KVM version 72, for the notebook server with 2GB ram and 2 cpu.\n\n I can't reproduce any of this in a virtual machine with only 1 virtual cpu, and neither with a virtual machine with 2 virtual cpus but pinning sage to a unique virtual cpu.\n\n OTOH, I tried pinning the KVM process (with 2 virtual cpus) in the real hardware to cpus 0,1 or alternatively to cpus 2,3, but this doesn't seem to prevent the issue inside the VM.\n\n\n### Sage version\n\n Everything here is based on sage-3.4. This was compiled in the real hardware and -bdist'ed to the vitual CPUs, and I've also tried with trees compiled inside the virtual machines themselves.\n\n\n### Original symptoms (nastyness factor of this issue)\n\na. **the notebook**: random hangs which cannot be interrupted (sometimes not even \"restart the worksheet\" will work, it seems the worksheet can be stopped from the home page only). Empirically seems to always be related to symbolic stuff. \n\n This affects me a lot in the notebook server for the department, which I run inside a KVM machine as described above. Starting today, as a workaround, I'm trying to use taskset to run the sage notebook process group pinned to cpu=1 exclusively (I don't know if this will stick or change when processes get renewed).\n\n This is a very unsatisfactory workaround... OTOH I could try with the server_pool option to use two users -- one pinned to cpu=0, the other to cpu=1, which could be a more satisfactory setup.\n\nb. **doctest**: many doctests failures by timeout --- a particular doctest hangs for 360s before being killed --- no CPU time is used while the doctest is hung. This happens much less often in the real hardware, but it happens nevertheless.\n\n Here's a typical run of the -testall in the real hardware (no cpu pinning). Failed tests:\n\n```\nsage -t  \"devel/sage/sage/rings/power_series_ring.py\"\nsage -t  \"devel/sage/sage/calculus/calculus.py\"\n```\n\n with total time for all tests: 2935.1 seconds.\n\n A run of -testall inside the KVM may have the following failed tests:\n\n```\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_plotting.rst\"\n        sage -t  \"devel/sage/sage/functions/piecewise.py\"\n        sage -t  \"devel/sage/sage/functions/special.py\"\n        sage -t  \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n        sage -t  \"devel/sage/sage/rings/arith.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/order.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\n        sage -t  \"devel/sage/sage/libs/fplll/fplll.pyx\"\n        sage -t  \"devel/sage/sage/libs/pari/gen.pyx\"\n        sage -t  \"devel/sage/sage/interfaces/lisp.py\"\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/calculus/wester.py\"\n        sage -t  \"devel/sage/sage/calculus/tests.py\"\n        sage -t  \"devel/sage/sage/calculus/calculus.py\"\n        sage -t  \"devel/sage/sage/calculus/equations.py\"\n        sage -t  \"devel/sage/sage/combinat/partition.py\"\n        sage -t  \"devel/sage/sage/plot/tachyon.py\"\n        sage -t  \"devel/sage/sage/plot/line.py\"\n        sage -t  \"devel/sage/sage/plot/plot.py\"\n        sage -t  \"devel/sage/sage/plot/animate.py\"\n        sage -t  \"devel/sage/sage/plot/plot3d/parametric_plot3d.py\"\n        sage -t  \"devel/sage/sage/plot/plot3d/plot3d.py\"\n        sage -t  \"devel/sage/sage/tests/book_stein_ent.py\"\n        sage -t  \"devel/sage/sage/gsl/integration.pyx\"\n        sage -t  \"devel/sage/sage/quadratic_forms/extras.py\"\n```\n\n with total time for all tests: 13042.9 seconds. This is quite long, but 29 timed out tests at 360 seconds each accounts for 10440 seconds...\n\n Note that the actual doctests which fail vary among runs of the test suite. I'd expect all of them to have symbolics of some sort used.\n\n### How I reproduce the issue\n\n Choosing randomly from one of the failed doctests, I settled on this sage line as a trigger:\n\n```\nL = [(i/100.0, maxima.eval(\"jacobi_sn (%s/100.0,2.0)\" % i)) for i in range(-300,300)]\n```\n\n This line takes less than 5-10 seconds to evaluate --- when it finishes. If it hangs, it will hang forever --- using 0% cpu time. It only uses about 1 second or less of cpu before hanging.\n\n I use the following script to repeatedly test to failure (up to 1000 times):\n\n```\nCPU=0,2\nfor i in {0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}\ndo\n  echo\n  echo RUN \"$i ($CPU):\"\n  /usr/bin/time taskset -c $CPU ./sage -c 'L = [(i/100.0, maxima.eval(\"jacobi_sn (%s/100.0,2.0)\" % i)) for i in range(-300,300)]' || break\ndone\n```\n\n This uses `taskset -c 0,2` to force running on a couple of cores with different L2 cache, as described above. If the CPU variable is set to 0,1 or 2,3 instead, the issue doesn't happen \n\n In typical tests on the real hardware, this hangs in less than 10 runs for CPU=0,2 or CPU=0,3, but it only hung in run 28 for a test with CPU=1,2. It completes 1000 runs with CPU=0,1 or CPU=2,3.\n\n On the KVM with 2 virtual cpus, this hangs much more often when using two processors (CPU=0,1, or don't use taskset). When using a single processor (either taskset inside 2 virtual cpus, or just run KVM with 1 virtual cpu) it completes the 1000 runs without failure.\n\n I did some tests in `sage.math`, but there are many more pairs of cpus to try... I tried using CPU=2,14 ; CPU=2,15 ; CPU=2,16 without failure on a run of 1000 as above (these 2,14,15,16 are 4 of the 6 cores in the physical unit = 2, if I correctly interpreted `/proc/cpuinfo`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5662\n\n",
+    "body": "Assignee: @williamstein\n\nI've spent the past few days tracking down a very nasty issue in my recently installed sage notebook server. I have the problem nailed down, and I can reproduce it with relative ease. This seems a timing issue between threads running in parallel, so a heisenbug, but I have a way to reproduce it with high chance (with expected time in the order of a minute) in the actual hardware, and with *extremely* high chance in the KVM virtual machine.\n\nI have no idea how to fix the issue, but I have a (quite unsatisfactory) workaround: use a KVM with one processor only, or pin sage and its children processes to a fixed core (read below for more info). In the real hardware, pinning sage to a couple of processors which share L2 seems to completely \"fix\" the issue, while pinning sage to a couple processors with different L2 seems to hit the issue more often.\n\nI wasn't able to reproduce any of this on a core 2 duo -- I don't remember something like this happening to me before, but these days I've been trying harder with the specific things which hang the core 2 quad.\n\nAdditionally, I discussed the issue on IRC with Dan Drake, who also had the same issue after switching to a core 2 quad.\n\nI've been unable to reproduce this on sage.math either.\n\n### Hardware\n\n- real: core 2 quad Q9550. This is a pair of two core chips with 6Mb L2 each, in a single package. IOW, cpus 0 and 1 share 6MB of L2, while cpus 2 and 3 share another 6MB of L2. There's no L3 cache. The main memory is 8Gb of DDR-2 in two channels (4 x 2Gb modules). The clock speed is 2.83GHz (no overclocking) and the FSB should be 1333 according to cpu and mb specs (I don't know how to tell).\n\n I can't reproduce the issues described here in the real hardware using only the pair of cpus 0,1 (which share L2), neither using only the pair of cpus 2,3 (also share L2). OTOH, using a pair of processors with different L2 seems to make the issue easier to reproduce. Also, 0,2 and 0,3 seem to cause the issue more often than 1,2 or 1,3.\n\n To pin sage and subprocesses to a specific cpuset, I use taskset(1).\n\n- virtual: KVM version 72, for the notebook server with 2GB ram and 2 cpu.\n\n I can't reproduce any of this in a virtual machine with only 1 virtual cpu, and neither with a virtual machine with 2 virtual cpus but pinning sage to a unique virtual cpu.\n\n OTOH, I tried pinning the KVM process (with 2 virtual cpus) in the real hardware to cpus 0,1 or alternatively to cpus 2,3, but this doesn't seem to prevent the issue inside the VM.\n\n\n### Sage version\n\n Everything here is based on sage-3.4. This was compiled in the real hardware and -bdist'ed to the vitual CPUs, and I've also tried with trees compiled inside the virtual machines themselves.\n\n\n### Original symptoms (nastyness factor of this issue)\n\na. **the notebook**: random hangs which cannot be interrupted (sometimes not even \"restart the worksheet\" will work, it seems the worksheet can be stopped from the home page only). Empirically seems to always be related to symbolic stuff. \n\n This affects me a lot in the notebook server for the department, which I run inside a KVM machine as described above. Starting today, as a workaround, I'm trying to use taskset to run the sage notebook process group pinned to cpu=1 exclusively (I don't know if this will stick or change when processes get renewed).\n\n This is a very unsatisfactory workaround... OTOH I could try with the server_pool option to use two users -- one pinned to cpu=0, the other to cpu=1, which could be a more satisfactory setup.\n\nb. **doctest**: many doctests failures by timeout --- a particular doctest hangs for 360s before being killed --- no CPU time is used while the doctest is hung. This happens much less often in the real hardware, but it happens nevertheless.\n\n Here's a typical run of the -testall in the real hardware (no cpu pinning). Failed tests:\n\n```\nsage -t  \"devel/sage/sage/rings/power_series_ring.py\"\nsage -t  \"devel/sage/sage/calculus/calculus.py\"\n```\n with total time for all tests: 2935.1 seconds.\n\n A run of -testall inside the KVM may have the following failed tests:\n\n```\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_plotting.rst\"\n        sage -t  \"devel/sage/sage/functions/piecewise.py\"\n        sage -t  \"devel/sage/sage/functions/special.py\"\n        sage -t  \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\"\n        sage -t  \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n        sage -t  \"devel/sage/sage/rings/arith.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/order.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\n        sage -t  \"devel/sage/sage/libs/fplll/fplll.pyx\"\n        sage -t  \"devel/sage/sage/libs/pari/gen.pyx\"\n        sage -t  \"devel/sage/sage/interfaces/lisp.py\"\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/calculus/wester.py\"\n        sage -t  \"devel/sage/sage/calculus/tests.py\"\n        sage -t  \"devel/sage/sage/calculus/calculus.py\"\n        sage -t  \"devel/sage/sage/calculus/equations.py\"\n        sage -t  \"devel/sage/sage/combinat/partition.py\"\n        sage -t  \"devel/sage/sage/plot/tachyon.py\"\n        sage -t  \"devel/sage/sage/plot/line.py\"\n        sage -t  \"devel/sage/sage/plot/plot.py\"\n        sage -t  \"devel/sage/sage/plot/animate.py\"\n        sage -t  \"devel/sage/sage/plot/plot3d/parametric_plot3d.py\"\n        sage -t  \"devel/sage/sage/plot/plot3d/plot3d.py\"\n        sage -t  \"devel/sage/sage/tests/book_stein_ent.py\"\n        sage -t  \"devel/sage/sage/gsl/integration.pyx\"\n        sage -t  \"devel/sage/sage/quadratic_forms/extras.py\"\n```\n with total time for all tests: 13042.9 seconds. This is quite long, but 29 timed out tests at 360 seconds each accounts for 10440 seconds...\n\n Note that the actual doctests which fail vary among runs of the test suite. I'd expect all of them to have symbolics of some sort used.\n\n### How I reproduce the issue\n\n Choosing randomly from one of the failed doctests, I settled on this sage line as a trigger:\n\n```\nL = [(i/100.0, maxima.eval(\"jacobi_sn (%s/100.0,2.0)\" % i)) for i in range(-300,300)]\n```\n This line takes less than 5-10 seconds to evaluate --- when it finishes. If it hangs, it will hang forever --- using 0% cpu time. It only uses about 1 second or less of cpu before hanging.\n\n I use the following script to repeatedly test to failure (up to 1000 times):\n\n```\nCPU=0,2\nfor i in {0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}\ndo\n  echo\n  echo RUN \"$i ($CPU):\"\n  /usr/bin/time taskset -c $CPU ./sage -c 'L = [(i/100.0, maxima.eval(\"jacobi_sn (%s/100.0,2.0)\" % i)) for i in range(-300,300)]' || break\ndone\n```\n This uses `taskset -c 0,2` to force running on a couple of cores with different L2 cache, as described above. If the CPU variable is set to 0,1 or 2,3 instead, the issue doesn't happen \n\n In typical tests on the real hardware, this hangs in less than 10 runs for CPU=0,2 or CPU=0,3, but it only hung in run 28 for a test with CPU=1,2. It completes 1000 runs with CPU=0,1 or CPU=2,3.\n\n On the KVM with 2 virtual cpus, this hangs much more often when using two processors (CPU=0,1, or don't use taskset). When using a single processor (either taskset inside 2 virtual cpus, or just run KVM with 1 virtual cpu) it completes the 1000 runs without failure.\n\n I did some tests in `sage.math`, but there are many more pairs of cpus to try... I tried using CPU=2,14 ; CPU=2,15 ; CPU=2,16 without failure on a run of 1000 as above (these 2,14,15,16 are 4 of the 6 cores in the physical unit = 2, if I correctly interpreted `/proc/cpuinfo`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5662\n\n",
     "created_at": "2009-04-01T22:02:15Z",
     "labels": [
         "component: interfaces",
@@ -65,7 +65,6 @@ b. **doctest**: many doctests failures by timeout --- a particular doctest hangs
 sage -t  "devel/sage/sage/rings/power_series_ring.py"
 sage -t  "devel/sage/sage/calculus/calculus.py"
 ```
-
  with total time for all tests: 2935.1 seconds.
 
  A run of -testall inside the KVM may have the following failed tests:
@@ -101,7 +100,6 @@ sage -t  "devel/sage/sage/calculus/calculus.py"
         sage -t  "devel/sage/sage/gsl/integration.pyx"
         sage -t  "devel/sage/sage/quadratic_forms/extras.py"
 ```
-
  with total time for all tests: 13042.9 seconds. This is quite long, but 29 timed out tests at 360 seconds each accounts for 10440 seconds...
 
  Note that the actual doctests which fail vary among runs of the test suite. I'd expect all of them to have symbolics of some sort used.
@@ -113,7 +111,6 @@ sage -t  "devel/sage/sage/calculus/calculus.py"
 ```
 L = [(i/100.0, maxima.eval("jacobi_sn (%s/100.0,2.0)" % i)) for i in range(-300,300)]
 ```
-
  This line takes less than 5-10 seconds to evaluate --- when it finishes. If it hangs, it will hang forever --- using 0% cpu time. It only uses about 1 second or less of cpu before hanging.
 
  I use the following script to repeatedly test to failure (up to 1000 times):
@@ -127,7 +124,6 @@ do
   /usr/bin/time taskset -c $CPU ./sage -c 'L = [(i/100.0, maxima.eval("jacobi_sn (%s/100.0,2.0)" % i)) for i in range(-300,300)]' || break
 done
 ```
-
  This uses `taskset -c 0,2` to force running on a couple of cores with different L2 cache, as described above. If the CPU variable is set to 0,1 or 2,3 instead, the issue doesn't happen 
 
  In typical tests on the real hardware, this hangs in less than 10 runs for CPU=0,2 or CPU=0,3, but it only hung in run 28 for a test with CPU=1,2. It completes 1000 runs with CPU=0,1 or CPU=2,3.
@@ -147,7 +143,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5662
 archive/issue_comments_044178.json:
 ```json
 {
-    "body": "Running\n\n```\ntaskset -c 0 /usr/bin/time ./sage -testall\n```\n\nIn a KVM with 2 cpus, yielded the following test failures and timing:\n\n```\n        sage -t  \"devel/sage/sage/interfaces/r.py\"\nTotal time for all tests: 2873.7 seconds\nPlease see /home/tornaria/sage-3.4/tmp/test.log for the complete log from this test.\n1933.32user 665.16system 47:59.33elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k\n152272inputs+530048outputs (326major+61934226minor)pagefaults 0swaps\n```\n\nI don't know what's with the `r.py` doctests, but it seems inocuous... (something about missing documentation).",
+    "body": "Running\n\n```\ntaskset -c 0 /usr/bin/time ./sage -testall\n```\nIn a KVM with 2 cpus, yielded the following test failures and timing:\n\n```\n        sage -t  \"devel/sage/sage/interfaces/r.py\"\nTotal time for all tests: 2873.7 seconds\nPlease see /home/tornaria/sage-3.4/tmp/test.log for the complete log from this test.\n1933.32user 665.16system 47:59.33elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k\n152272inputs+530048outputs (326major+61934226minor)pagefaults 0swaps\n```\nI don't know what's with the `r.py` doctests, but it seems inocuous... (something about missing documentation).",
     "created_at": "2009-04-01T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -161,7 +157,6 @@ Running
 ```
 taskset -c 0 /usr/bin/time ./sage -testall
 ```
-
 In a KVM with 2 cpus, yielded the following test failures and timing:
 
 ```
@@ -171,7 +166,6 @@ Please see /home/tornaria/sage-3.4/tmp/test.log for the complete log from this t
 1933.32user 665.16system 47:59.33elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k
 152272inputs+530048outputs (326major+61934226minor)pagefaults 0swaps
 ```
-
 I don't know what's with the `r.py` doctests, but it seems inocuous... (something about missing documentation).
 
 
@@ -216,7 +210,7 @@ archive/issue_events_013309.json:
 archive/issue_comments_044180.json:
 ```json
 {
-    "body": "WRT doctesting, here's a more careful comparision in the actual hardware:\na. using `taskset -c 0,1`\n\n```\nAll tests passed!\nTotal time for all tests: 2194.2 seconds\nPlease see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from this test.\n1749.80user 243.11system 36:40.26elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k\n141736inputs+448744outputs (365major+62065374minor)pagefaults 0swaps\n```\n\nb. using `taskset -c 0,2`\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\n        sage -t  \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t  \"devel/sage/sage/calculus/var.pyx\"\n        sage -t  \"devel/sage/sage/misc/functional.py\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\"\n        sage -t  \"devel/sage/sage/functions/piecewise.py\"\nTotal time for all tests: 4299.8 seconds\nPlease see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from this test.\n1685.06user 257.93system 1:11:45elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k\n616inputs+447160outputs (0major+61392473minor)pagefaults 0swaps\n```\n\nThe 6 failed tests where due to timeout after 360 sec, making up for 2160 secs in the total time.",
+    "body": "WRT doctesting, here's a more careful comparision in the actual hardware:\na. using `taskset -c 0,1`\n\n```\nAll tests passed!\nTotal time for all tests: 2194.2 seconds\nPlease see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from this test.\n1749.80user 243.11system 36:40.26elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k\n141736inputs+448744outputs (365major+62065374minor)pagefaults 0swaps\n```\nb. using `taskset -c 0,2`\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\n        sage -t  \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t  \"devel/sage/sage/calculus/var.pyx\"\n        sage -t  \"devel/sage/sage/misc/functional.py\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\"\n        sage -t  \"devel/sage/sage/functions/piecewise.py\"\nTotal time for all tests: 4299.8 seconds\nPlease see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from this test.\n1685.06user 257.93system 1:11:45elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k\n616inputs+447160outputs (0major+61392473minor)pagefaults 0swaps\n```\nThe 6 failed tests where due to timeout after 360 sec, making up for 2160 secs in the total time.",
     "created_at": "2009-04-02T00:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -235,7 +229,6 @@ Please see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from t
 1749.80user 243.11system 36:40.26elapsed 90%CPU (0avgtext+0avgdata 0maxresident)k
 141736inputs+448744outputs (365major+62065374minor)pagefaults 0swaps
 ```
-
 b. using `taskset -c 0,2`
 
 ```
@@ -253,7 +246,6 @@ Please see /home/tornaria/sage/sage-3.4/tmp/test.log for the complete log from t
 1685.06user 257.93system 1:11:45elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k
 616inputs+447160outputs (0major+61392473minor)pagefaults 0swaps
 ```
-
 The 6 failed tests where due to timeout after 360 sec, making up for 2160 secs in the total time.
 
 
@@ -317,7 +309,7 @@ Expect script to demonstrate the maxima hang outside of sage/python
 archive/issue_comments_044184.json:
 ```json
 {
-    "body": "Attachment [maxima_expect](tarball://root/attachments/some-uuid/ticket5662/maxima_expect) by @tornaria created at 2009-04-03 14:34:34\n\nThanks Dan for your testing.\n\nI have two new developments on this story:\n\na. I kind of understand what is happening (but not why!), and I am able to reproduce the hang outside of sage with a small expect script ([attachment:maxima_expect maxima_expect]). Just `apt-get install expect` if you don't already have it installed, and run\n\n```\ntaskset -c 0,2 expect -f maxima_expect > /dev/null\n```\n\n Using this taskset seems to maximize the chances to hit the bug. The expect is quite verbose, so it's wise to redirect the output -- besides, the race condition seems to hit easier when redirecting to /dev/null; but it still happens when echoing to the console (it may help to pipe the output through cat for buffering).\nb. I have a *very* preliminary workaround in sage -- the idea is to add a timeout at the exact point where the hang happens, and if so resynchronize everything and reissue the command. This has the potential to affect slow hardware which misses the timeout. In my tests with timeout=0.05 I can miss the timeout for long input strings running inside a VM -- I'm suggesting timeout=0.5. In any case, missing the timeout should reissue the computation, so...\n\n Here's the patch, in case someone wants to try; all tests pass for me with this --- either `taskset -c 0,2` on the real hardware, or inside a 2 cpu virtual machine.\n\n```\ndiff -r 5c72dbb92d82 sage/interfaces/maxima.py\n--- a/sage/interfaces/maxima.py\tWed Mar 11 21:57:15 2009 -0700\n+++ b/sage/interfaces/maxima.py\tFri Apr 03 11:57:29 2009 -0300\n@@ -708,7 +708,14 @@\n         if not wait_for_prompt:\n             return\n \n-        self._expect_expr(self._display_prompt)\n+        try:\n+            self._expect_expr(self._display_prompt, timeout=0.5)\n+        except pexpect.TIMEOUT:\n+            #see trac #5662\n+            #print \"RESEND (%s)\" % line\n+            self._synchronize()\n+            self._sendline(line)\n+\n         self._expect_expr()\n         out = self._before()\n         if error_check:\n```\n\n I'm not proposing this as a fix (yet), but it may be useful to test it (a. on quad cores where the issue is found and b. on other machines/slow machines to see if this affects them somehow).\n In the end, as suggested by (a) above, the true bug may lie either in maxima or clisp, and it would be nice to have it fixed there --- but reading lisp makes me sick... (it always has, it's an innate virtue of mine).",
+    "body": "Attachment [maxima_expect](tarball://root/attachments/some-uuid/ticket5662/maxima_expect) by @tornaria created at 2009-04-03 14:34:34\n\nThanks Dan for your testing.\n\nI have two new developments on this story:\n\na. I kind of understand what is happening (but not why!), and I am able to reproduce the hang outside of sage with a small expect script ([attachment:maxima_expect maxima_expect]). Just `apt-get install expect` if you don't already have it installed, and run\n\n```\ntaskset -c 0,2 expect -f maxima_expect > /dev/null\n```\n Using this taskset seems to maximize the chances to hit the bug. The expect is quite verbose, so it's wise to redirect the output -- besides, the race condition seems to hit easier when redirecting to /dev/null; but it still happens when echoing to the console (it may help to pipe the output through cat for buffering).\nb. I have a *very* preliminary workaround in sage -- the idea is to add a timeout at the exact point where the hang happens, and if so resynchronize everything and reissue the command. This has the potential to affect slow hardware which misses the timeout. In my tests with timeout=0.05 I can miss the timeout for long input strings running inside a VM -- I'm suggesting timeout=0.5. In any case, missing the timeout should reissue the computation, so...\n\n Here's the patch, in case someone wants to try; all tests pass for me with this --- either `taskset -c 0,2` on the real hardware, or inside a 2 cpu virtual machine.\n\n```\ndiff -r 5c72dbb92d82 sage/interfaces/maxima.py\n--- a/sage/interfaces/maxima.py\tWed Mar 11 21:57:15 2009 -0700\n+++ b/sage/interfaces/maxima.py\tFri Apr 03 11:57:29 2009 -0300\n@@ -708,7 +708,14 @@\n         if not wait_for_prompt:\n             return\n \n-        self._expect_expr(self._display_prompt)\n+        try:\n+            self._expect_expr(self._display_prompt, timeout=0.5)\n+        except pexpect.TIMEOUT:\n+            #see trac #5662\n+            #print \"RESEND (%s)\" % line\n+            self._synchronize()\n+            self._sendline(line)\n+\n         self._expect_expr()\n         out = self._before()\n         if error_check:\n```\n I'm not proposing this as a fix (yet), but it may be useful to test it (a. on quad cores where the issue is found and b. on other machines/slow machines to see if this affects them somehow).\n In the end, as suggested by (a) above, the true bug may lie either in maxima or clisp, and it would be nice to have it fixed there --- but reading lisp makes me sick... (it always has, it's an innate virtue of mine).",
     "created_at": "2009-04-03T14:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -337,7 +329,6 @@ a. I kind of understand what is happening (but not why!), and I am able to repro
 ```
 taskset -c 0,2 expect -f maxima_expect > /dev/null
 ```
-
  Using this taskset seems to maximize the chances to hit the bug. The expect is quite verbose, so it's wise to redirect the output -- besides, the race condition seems to hit easier when redirecting to /dev/null; but it still happens when echoing to the console (it may help to pipe the output through cat for buffering).
 b. I have a *very* preliminary workaround in sage -- the idea is to add a timeout at the exact point where the hang happens, and if so resynchronize everything and reissue the command. This has the potential to affect slow hardware which misses the timeout. In my tests with timeout=0.05 I can miss the timeout for long input strings running inside a VM -- I'm suggesting timeout=0.5. In any case, missing the timeout should reissue the computation, so...
 
@@ -364,7 +355,6 @@ diff -r 5c72dbb92d82 sage/interfaces/maxima.py
          out = self._before()
          if error_check:
 ```
-
  I'm not proposing this as a fix (yet), but it may be useful to test it (a. on quad cores where the issue is found and b. on other machines/slow machines to see if this affects them somehow).
  In the end, as suggested by (a) above, the true bug may lie either in maxima or clisp, and it would be nice to have it fixed there --- but reading lisp makes me sick... (it always has, it's an innate virtue of mine).
 
@@ -502,7 +492,7 @@ Michael
 archive/issue_comments_044191.json:
 ```json
 {
-    "body": "Wow:\n\n```\nRUN 999 (0,2):\n1.20user 0.61system 0:04.02elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k\n0inputs+8outputs (0major+54195minor)pagefaults 0swaps\n```\n\nIt completed when running on cores 0 and 2!",
+    "body": "Wow:\n\n```\nRUN 999 (0,2):\n1.20user 0.61system 0:04.02elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k\n0inputs+8outputs (0major+54195minor)pagefaults 0swaps\n```\nIt completed when running on cores 0 and 2!",
     "created_at": "2009-04-06T01:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -518,7 +508,6 @@ RUN 999 (0,2):
 1.20user 0.61system 0:04.02elapsed 45%CPU (0avgtext+0avgdata 0maxresident)k
 0inputs+8outputs (0major+54195minor)pagefaults 0swaps
 ```
-
 It completed when running on cores 0 and 2!
 
 
@@ -528,7 +517,7 @@ It completed when running on cores 0 and 2!
 archive/issue_comments_044192.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> After talking to William about this: We will merge the fix, but use a different solution to the env variable problem by creating a special maxima-no-readline script that just sets the env variable before calling Maxima.\n\nSounds like the proper way to do this. It will avoid the \"quirk\" I mentioned above.\n\nInstead of adding a new script, I suggest adding a command line option --disable-readline to the maxima script. This will make a lot of sense since \"maxima --help\" indeed lists --disable-readline as an option.\n\n**Also note** that the same issue with *maxima interface* arises with *lisp interface*. I've been doing lots of testing, and I've finally been hit by a timeout in `sage/interfaces/lisp.py` which is clearly due to the same issue. *We should apply the same fix to that interface as well!!!*\n\nThis (lisp.py) is the only timeout that I've got since I applied the proposed fix.",
+    "body": "Replying to [comment:12 mabshoff]:\n> After talking to William about this: We will merge the fix, but use a different solution to the env variable problem by creating a special maxima-no-readline script that just sets the env variable before calling Maxima.\n\n\nSounds like the proper way to do this. It will avoid the \"quirk\" I mentioned above.\n\nInstead of adding a new script, I suggest adding a command line option --disable-readline to the maxima script. This will make a lot of sense since \"maxima --help\" indeed lists --disable-readline as an option.\n\n**Also note** that the same issue with *maxima interface* arises with *lisp interface*. I've been doing lots of testing, and I've finally been hit by a timeout in `sage/interfaces/lisp.py` which is clearly due to the same issue. *We should apply the same fix to that interface as well!!!*\n\nThis (lisp.py) is the only timeout that I've got since I applied the proposed fix.",
     "created_at": "2009-04-06T03:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -539,6 +528,7 @@ archive/issue_comments_044192.json:
 
 Replying to [comment:12 mabshoff]:
 > After talking to William about this: We will merge the fix, but use a different solution to the env variable problem by creating a special maxima-no-readline script that just sets the env variable before calling Maxima.
+
 
 Sounds like the proper way to do this. It will avoid the "quirk" I mentioned above.
 
@@ -596,7 +586,7 @@ Auch... disabling readline in lisp pexpect interface causes some issues (doctest
 archive/issue_comments_044195.json:
 ```json
 {
-    "body": "Note that the lisp interface had a couple of issues before, which were not tested. The part2 patch above adds two doctests which *fail* in sage-3.4, and fixes those as well. Somebody should read the documentation for function `str.lstrip()` more carefully :-)\n\nHint: try\n\n```\n\"20.085537\".strip(\"sage2\")\n```\n\n\nThe following exhibits these bugs, as tested on sage.math /usr/local/bin/sage which is stock 3.4:\n\n```\nsage: lisp.eval(\"2\")\n''\nsage: lisp.set(\"x\", 2)\nsage: lisp.get(\"x\")\n'2'\nsage: lisp.eval(\"x\")\n'x\\n2'\n```\n",
+    "body": "Note that the lisp interface had a couple of issues before, which were not tested. The part2 patch above adds two doctests which *fail* in sage-3.4, and fixes those as well. Somebody should read the documentation for function `str.lstrip()` more carefully :-)\n\nHint: try\n\n```\n\"20.085537\".strip(\"sage2\")\n```\n\nThe following exhibits these bugs, as tested on sage.math /usr/local/bin/sage which is stock 3.4:\n\n```\nsage: lisp.eval(\"2\")\n''\nsage: lisp.set(\"x\", 2)\nsage: lisp.get(\"x\")\n'2'\nsage: lisp.eval(\"x\")\n'x\\n2'\n```",
     "created_at": "2009-04-06T16:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -613,7 +603,6 @@ Hint: try
 "20.085537".strip("sage2")
 ```
 
-
 The following exhibits these bugs, as tested on sage.math /usr/local/bin/sage which is stock 3.4:
 
 ```
@@ -625,7 +614,6 @@ sage: lisp.get("x")
 sage: lisp.eval("x")
 'x\n2'
 ```
-
 
 
 
@@ -754,7 +742,7 @@ Cheers, gsw
 archive/issue_comments_044200.json:
 ```json
 {
-    "body": "Replying to [comment:21 GeorgSWeber]:\n\n> But --- trying to \"hg import\" the two patches \"trac_5662.patch\" and \"trac_5662-part2.patch\" prompts me both times to write some commit message; and neither of the two linked spkgs has a clean \"hg status\": in both cases, too, a \"hg commit -A -m \"trac #5662: some message\"\" (in the respective package root directories) would have been needed before the \"sage -pkg\" command.\n\nNone of the above patches will go in unchanged aside from the clisp one that patches out readline dynamically. I will also commit a diff in the posters name.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:21 GeorgSWeber]:\n\n> But --- trying to \"hg import\" the two patches \"trac_5662.patch\" and \"trac_5662-part2.patch\" prompts me both times to write some commit message; and neither of the two linked spkgs has a clean \"hg status\": in both cases, too, a \"hg commit -A -m \"trac #5662: some message\"\" (in the respective package root directories) would have been needed before the \"sage -pkg\" command.\n\n\nNone of the above patches will go in unchanged aside from the clisp one that patches out readline dynamically. I will also commit a diff in the posters name.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T22:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5662",
     "type": "issue_comment",
@@ -766,6 +754,7 @@ archive/issue_comments_044200.json:
 Replying to [comment:21 GeorgSWeber]:
 
 > But --- trying to "hg import" the two patches "trac_5662.patch" and "trac_5662-part2.patch" prompts me both times to write some commit message; and neither of the two linked spkgs has a clean "hg status": in both cases, too, a "hg commit -A -m "trac #5662: some message"" (in the respective package root directories) would have been needed before the "sage -pkg" command.
+
 
 None of the above patches will go in unchanged aside from the clisp one that patches out readline dynamically. I will also commit a diff in the posters name.
 

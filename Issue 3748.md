@@ -3,7 +3,7 @@
 archive/issues_003748.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nthis was reported to me by Emmanuel Thome with Sage 3.0.3:\n\n```\nsage: R=Integers(17^5)\nsage: R\nRing of integers modulo 1419857\nsage: R(17)^5\n1419857\nsage: R(17)^5==0\nFalse\nsage: R(R(17)^5)\n0\n```\n\nClearly R(17)^5 is not in canonical form, which is what we would expect... However:\n\n```\nsage: R(17)*R(17)*R(17)*R(17)*R(17)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3748\n\n",
+    "body": "Assignee: somebody\n\nthis was reported to me by Emmanuel Thome with Sage 3.0.3:\n\n```\nsage: R=Integers(17^5)\nsage: R\nRing of integers modulo 1419857\nsage: R(17)^5\n1419857\nsage: R(17)^5==0\nFalse\nsage: R(R(17)^5)\n0\n```\nClearly R(17)^5 is not in canonical form, which is what we would expect... However:\n\n```\nsage: R(17)*R(17)*R(17)*R(17)*R(17)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3748\n\n",
     "created_at": "2008-07-30T15:29:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,14 +31,12 @@ False
 sage: R(R(17)^5)
 0
 ```
-
 Clearly R(17)^5 is not in canonical form, which is what we would expect... However:
 
 ```
 sage: R(17)*R(17)*R(17)*R(17)*R(17)
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3748
 

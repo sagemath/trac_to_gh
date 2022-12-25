@@ -3,7 +3,7 @@
 archive/issues_003424.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nmat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.\n\n\n```\nsage: m                            \n\n[1 1]\n[0 1]\nsage: m.jordan_form()              \n\n[1 1]\n[0 1]\nsage: m.jordan_form(CDF)\n\n[1.0|  0]\n[---+---]\n[  0|1.0]\nsage: m.jordan_form(CDF, digits=2)\n\n[1.0 1.0]\n[  0 1.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3424\n\n",
+    "body": "Assignee: @williamstein\n\nmat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.\n\n```\nsage: m                            \n\n[1 1]\n[0 1]\nsage: m.jordan_form()              \n\n[1 1]\n[0 1]\nsage: m.jordan_form(CDF)\n\n[1.0|  0]\n[---+---]\n[  0|1.0]\nsage: m.jordan_form(CDF, digits=2)\n\n[1.0 1.0]\n[  0 1.0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3424\n\n",
     "created_at": "2008-06-14T20:17:47Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ archive/issues_003424.json:
 Assignee: @williamstein
 
 mat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.
-
 
 ```
 sage: m                            
@@ -41,7 +40,6 @@ sage: m.jordan_form(CDF, digits=2)
 [1.0 1.0]
 [  0 1.0]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3424
 
@@ -107,7 +105,7 @@ I think that rounding is a bad way to do this... this would not merge roots 1.44
 archive/issue_comments_024047.json:
 ```json
 {
-    "body": "I'm not sure I follow you. Using the rounding method from the patch:\n\n```\nsage: def do_round(eval, digits):\n....:     eval = CDF(eval) \n....:     r = CDF(round(eval.real(), digits), round(eval.imag(), digits))\n....:     return r\n....: \nsage: do_round(1.44999999, 3)\n1.45\nsage: do_round(1.45000001, 3)\n1.45\nsage: do_round(1.54999999, 3)\n1.55\n```\n\n\nThis seems to be the desired behavior.",
+    "body": "I'm not sure I follow you. Using the rounding method from the patch:\n\n```\nsage: def do_round(eval, digits):\n....:     eval = CDF(eval) \n....:     r = CDF(round(eval.real(), digits), round(eval.imag(), digits))\n....:     return r\n....: \nsage: do_round(1.44999999, 3)\n1.45\nsage: do_round(1.45000001, 3)\n1.45\nsage: do_round(1.54999999, 3)\n1.55\n```\n\nThis seems to be the desired behavior.",
     "created_at": "2008-06-15T07:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
@@ -132,7 +130,6 @@ sage: do_round(1.54999999, 3)
 1.55
 ```
 
-
 This seems to be the desired behavior.
 
 
@@ -142,7 +139,7 @@ This seems to be the desired behavior.
 archive/issue_comments_024048.json:
 ```json
 {
-    "body": "It depends on how many digits you round to.\n\n```\nsage: do_round(1.44999999, 1)\n1.4\nsage: do_round(1.45000001, 1)\n1.5\nsage: do_round(1.54999999, 1)\n1.5\nsage: 1.45000001 - 1.44999999\n1.99999998784506e-8\nsage: 1.54999999 - 1.45000001\n0.0999999800000002\n```\n\n\nHere the first and second numbers round differently, even though they differ by about 2e-8; and the second and third numbers round the same, even though they differ by about 0.1.  Similar examples could be found for rounding to any number of digits.",
+    "body": "It depends on how many digits you round to.\n\n```\nsage: do_round(1.44999999, 1)\n1.4\nsage: do_round(1.45000001, 1)\n1.5\nsage: do_round(1.54999999, 1)\n1.5\nsage: 1.45000001 - 1.44999999\n1.99999998784506e-8\nsage: 1.54999999 - 1.45000001\n0.0999999800000002\n```\n\nHere the first and second numbers round differently, even though they differ by about 2e-8; and the second and third numbers round the same, even though they differ by about 0.1.  Similar examples could be found for rounding to any number of digits.",
     "created_at": "2008-06-15T07:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
@@ -166,7 +163,6 @@ sage: 1.54999999 - 1.45000001
 0.0999999800000002
 ```
 
-
 Here the first and second numbers round differently, even though they differ by about 2e-8; and the second and third numbers round the same, even though they differ by about 0.1.  Similar examples could be found for rounding to any number of digits.
 
 
@@ -176,7 +172,7 @@ Here the first and second numbers round differently, even though they differ by 
 archive/issue_comments_024049.json:
 ```json
 {
-    "body": "Replying to [comment:4 cwitty]:\n> It depends on how many digits you round to.\n\nI see what you mean now, and that does seem like a significant problem. However, I can't see a way of using the distance between roots without using a more complicated clustering algorithm that introduces its own problems. So for example, suppose we start with the roots 1.45, 1.50, and 1.55, and the user specifies an error tolerance of 0.05. It's not clear to be what the correct way to group the roots would be. Do we treat them all as the same root? Do we arbitrarily put them into two different categories, or leave them all separate?",
+    "body": "Replying to [comment:4 cwitty]:\n> It depends on how many digits you round to.\n\n\nI see what you mean now, and that does seem like a significant problem. However, I can't see a way of using the distance between roots without using a more complicated clustering algorithm that introduces its own problems. So for example, suppose we start with the roots 1.45, 1.50, and 1.55, and the user specifies an error tolerance of 0.05. It's not clear to be what the correct way to group the roots would be. Do we treat them all as the same root? Do we arbitrarily put them into two different categories, or leave them all separate?",
     "created_at": "2008-06-20T00:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
@@ -187,6 +183,7 @@ archive/issue_comments_024049.json:
 
 Replying to [comment:4 cwitty]:
 > It depends on how many digits you round to.
+
 
 I see what you mean now, and that does seem like a significant problem. However, I can't see a way of using the distance between roots without using a more complicated clustering algorithm that introduces its own problems. So for example, suppose we start with the roots 1.45, 1.50, and 1.55, and the user specifies an error tolerance of 0.05. It's not clear to be what the correct way to group the roots would be. Do we treat them all as the same root? Do we arbitrarily put them into two different categories, or leave them all separate?
 

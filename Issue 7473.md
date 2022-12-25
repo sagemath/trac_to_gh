@@ -53,7 +53,7 @@ What if we run `hg clone`, then `cp -pr` just the files Sphinx checks?
 archive/issue_comments_062846.json:
 ```json
 {
-    "body": "What if we capture `stderr` and `stdin`, too, in\n\n```python\n    proc = subprocess.Popen([cmd], stdout=subprocess.PIPE, shell=True)\n```\n\n?  Or do the opposite?  For example, `builder.py` issues `subprocess.call(build_command, shell=True)`, which is shorthand for `subprocess.Popen(build_command, shell=True).wait()`.   But this may not be relevant.\n\nI'll try to take a closer look soon.",
+    "body": "What if we capture `stderr` and `stdin`, too, in\n\n```python\n    proc = subprocess.Popen([cmd], stdout=subprocess.PIPE, shell=True)\n```\n?  Or do the opposite?  For example, `builder.py` issues `subprocess.call(build_command, shell=True)`, which is shorthand for `subprocess.Popen(build_command, shell=True).wait()`.   But this may not be relevant.\n\nI'll try to take a closer look soon.",
     "created_at": "2009-11-18T22:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ What if we capture `stderr` and `stdin`, too, in
 ```python
     proc = subprocess.Popen([cmd], stdout=subprocess.PIPE, shell=True)
 ```
-
 ?  Or do the opposite?  For example, `builder.py` issues `subprocess.call(build_command, shell=True)`, which is shorthand for `subprocess.Popen(build_command, shell=True).wait()`.   But this may not be relevant.
 
 I'll try to take a closer look soon.
@@ -97,7 +96,7 @@ I've noticed that switching among *existing branches* via `sage -b`, even if I'v
 archive/issue_comments_062848.json:
 ```json
 {
-    "body": "It strange that\n\n```sh\ncd SAGE_ROOT/devel\nls -lsFi `find -name environment.pickle`|grep ref\n```\n\nshows the clones to have different Sphinx pickles --- their inodes (the first column on sage.math) are distinct.  Compare with\n\n```sh\nls -lsFi `find -name steenrod_algebra.html`\nls -lsFi `find -name steenrod_algebra.py`|grep -v build\n```\n\nBut aren't the pickles hard linked?",
+    "body": "It strange that\n\n```sh\ncd SAGE_ROOT/devel\nls -lsFi `find -name environment.pickle`|grep ref\n```\nshows the clones to have different Sphinx pickles --- their inodes (the first column on sage.math) are distinct.  Compare with\n\n```sh\nls -lsFi `find -name steenrod_algebra.html`\nls -lsFi `find -name steenrod_algebra.py`|grep -v build\n```\nBut aren't the pickles hard linked?",
     "created_at": "2009-11-20T00:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -112,14 +111,12 @@ It strange that
 cd SAGE_ROOT/devel
 ls -lsFi `find -name environment.pickle`|grep ref
 ```
-
 shows the clones to have different Sphinx pickles --- their inodes (the first column on sage.math) are distinct.  Compare with
 
 ```sh
 ls -lsFi `find -name steenrod_algebra.html`
 ls -lsFi `find -name steenrod_algebra.py`|grep -v build
 ```
-
 But aren't the pickles hard linked?
 
 
@@ -415,7 +412,7 @@ Nathann
 archive/issue_comments_062862.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,\n> \n>  * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.\n>  * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.\n> \n> If this is yet another false positive, I apologize.\n\nI tried sage -combinat install (which calls clone), and it worked smoothly (ubuntu 9.4, sage 4.2.1, macbook pro)!\n\nThanks!",
+    "body": "Replying to [comment:11 mpatel]:\n> nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,\n> \n> * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.\n> * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.\n> \n> If this is yet another false positive, I apologize.\n\n\nI tried sage -combinat install (which calls clone), and it worked smoothly (ubuntu 9.4, sage 4.2.1, macbook pro)!\n\nThanks!",
     "created_at": "2009-11-24T12:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
@@ -427,10 +424,11 @@ archive/issue_comments_062862.json:
 Replying to [comment:11 mpatel]:
 > nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,
 > 
->  * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.
->  * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.
+> * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.
+> * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.
 > 
 > If this is yet another false positive, I apologize.
+
 
 I tried sage -combinat install (which calls clone), and it worked smoothly (ubuntu 9.4, sage 4.2.1, macbook pro)!
 

@@ -3,7 +3,7 @@
 archive/issues_003490.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nThis is a follow up to #3483.\n\nis_valid_username should be upgraded to follow this rule:\n\n```\nYour username must start with a letter and be between 4 and 32 characters long. You may only use letters, numbers, underscores, and one dot (.).\n```\n\n\nA new function, is_valid_password, should be added that follows this rule:\n\n```\nYour password must be between 6 and 32 characters long. Your password can not contain your username nor spaces.\n```\n\n\nCheck to make sure the input for password and retype_password are the same.\n\nCurrently only one error is reported even if there is several of them. Report all errors to the user.\n\nDon't loose the user's input except for password/retype_password when returning error reports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3490\n\n",
+    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nThis is a follow up to #3483.\n\nis_valid_username should be upgraded to follow this rule:\n\n```\nYour username must start with a letter and be between 4 and 32 characters long. You may only use letters, numbers, underscores, and one dot (.).\n```\n\nA new function, is_valid_password, should be added that follows this rule:\n\n```\nYour password must be between 6 and 32 characters long. Your password can not contain your username nor spaces.\n```\n\nCheck to make sure the input for password and retype_password are the same.\n\nCurrently only one error is reported even if there is several of them. Report all errors to the user.\n\nDon't loose the user's input except for password/retype_password when returning error reports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3490\n\n",
     "created_at": "2008-06-21T04:48:49Z",
     "labels": [
         "component: notebook"
@@ -27,13 +27,11 @@ is_valid_username should be upgraded to follow this rule:
 Your username must start with a letter and be between 4 and 32 characters long. You may only use letters, numbers, underscores, and one dot (.).
 ```
 
-
 A new function, is_valid_password, should be added that follows this rule:
 
 ```
 Your password must be between 6 and 32 characters long. Your password can not contain your username nor spaces.
 ```
-
 
 Check to make sure the input for password and retype_password are the same.
 

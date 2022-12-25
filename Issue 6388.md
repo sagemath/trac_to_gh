@@ -3,7 +3,7 @@
 archive/issues_006388.json:
 ```json
 {
-    "body": "Keywords: negative argument, log\n\nAlthough log(x) function in new symbolics is appeared to be defined for entire complex plane, it throws out error sometime \n\n(1) Negative argument\n\n\n```\nsage: log(-1 + 0*I)\nI*pi\nsage: log(-1)\n...\nValueError: self must be positive\n```\n\nIt behaves differently for mathematically equivalent arguments.\n\n\n(2) Value of log(x) at x=0\n\n\n```\nsage: log(0)\n...\nValueError: self must be positive\n```\n\n\nlog(0) should throw out an unevaluated symbolic expression \"log(0)\" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6388\n\n",
+    "body": "Keywords: negative argument, log\n\nAlthough log(x) function in new symbolics is appeared to be defined for entire complex plane, it throws out error sometime \n\n(1) Negative argument\n\n```\nsage: log(-1 + 0*I)\nI*pi\nsage: log(-1)\n...\nValueError: self must be positive\n```\nIt behaves differently for mathematically equivalent arguments.\n\n\n(2) Value of log(x) at x=0\n\n```\nsage: log(0)\n...\nValueError: self must be positive\n```\n\nlog(0) should throw out an unevaluated symbolic expression \"log(0)\" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6388\n\n",
     "created_at": "2009-06-23T12:36:04Z",
     "labels": [
         "component: symbolics",
@@ -22,7 +22,6 @@ Although log(x) function in new symbolics is appeared to be defined for entire c
 
 (1) Negative argument
 
-
 ```
 sage: log(-1 + 0*I)
 I*pi
@@ -30,19 +29,16 @@ sage: log(-1)
 ...
 ValueError: self must be positive
 ```
-
 It behaves differently for mathematically equivalent arguments.
 
 
 (2) Value of log(x) at x=0
-
 
 ```
 sage: log(0)
 ...
 ValueError: self must be positive
 ```
-
 
 log(0) should throw out an unevaluated symbolic expression "log(0)" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.
 
@@ -98,7 +94,7 @@ Based on 4.1.1
 archive/issue_comments_051050.json:
 ```json
 {
-    "body": "Attach either patch, they are the same - things timed out on me and I wasn't sure if it uploaded the first time.  I can't figure out how to remove the redundant one.\n\nPlease note that there should now be NO log(-1) that return an error (including log(RIF(-1)), log(float(-1)), and log(complex(-1))) and there should be NO log(0) that return a symbol or NaN (including the same types).  This is a change, but presumably will not break anything.  It does change the error message for \n\n```\nsage: plot(log,-1,1)\n```\n\nto something about complexes rather than math domain error, but that is not a big deal since it still plots.  It passed all tests for me.",
+    "body": "Attach either patch, they are the same - things timed out on me and I wasn't sure if it uploaded the first time.  I can't figure out how to remove the redundant one.\n\nPlease note that there should now be NO log(-1) that return an error (including log(RIF(-1)), log(float(-1)), and log(complex(-1))) and there should be NO log(0) that return a symbol or NaN (including the same types).  This is a change, but presumably will not break anything.  It does change the error message for \n\n```\nsage: plot(log,-1,1)\n```\nto something about complexes rather than math domain error, but that is not a big deal since it still plots.  It passed all tests for me.",
     "created_at": "2009-09-02T13:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -114,7 +110,6 @@ Please note that there should now be NO log(-1) that return an error (including 
 ```
 sage: plot(log,-1,1)
 ```
-
 to something about complexes rather than math domain error, but that is not a big deal since it still plots.  It passed all tests for me.
 
 
@@ -184,7 +179,7 @@ Requires regular patch, based on 4.1.1
 archive/issue_comments_051054.json:
 ```json
 {
-    "body": "Hi,\n\nThanks, you have added more features than I had wanted. Here are my last comments before\nI give positive review:\n\n\n```\nsage: log(SR(-1), e)\nI*pi\nsage: log(CDF(-1), e)\n3.14159265359*I\n```\n\n\nworks but it doesn't work or CC, RR, CIF...\n\nI think, it would be better if you could change this two lines in log() \n\n```\nexcept AttributeError:\n    return ln(x) / ln(base)\n```\n\n\nto\n\n\n```\nexcept (AttributeError, TypeError):\n    return log(x) / log(base)\n```\n\n\nWe should call log() recursively so that it can take advantage of\nthe features that you have added. Another supplementary patch should be fine too.",
+    "body": "Hi,\n\nThanks, you have added more features than I had wanted. Here are my last comments before\nI give positive review:\n\n```\nsage: log(SR(-1), e)\nI*pi\nsage: log(CDF(-1), e)\n3.14159265359*I\n```\n\nworks but it doesn't work or CC, RR, CIF...\n\nI think, it would be better if you could change this two lines in log() \n\n```\nexcept AttributeError:\n    return ln(x) / ln(base)\n```\n\nto\n\n```\nexcept (AttributeError, TypeError):\n    return log(x) / log(base)\n```\n\nWe should call log() recursively so that it can take advantage of\nthe features that you have added. Another supplementary patch should be fine too.",
     "created_at": "2009-09-05T15:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
@@ -198,14 +193,12 @@ Hi,
 Thanks, you have added more features than I had wanted. Here are my last comments before
 I give positive review:
 
-
 ```
 sage: log(SR(-1), e)
 I*pi
 sage: log(CDF(-1), e)
 3.14159265359*I
 ```
-
 
 works but it doesn't work or CC, RR, CIF...
 
@@ -216,15 +209,12 @@ except AttributeError:
     return ln(x) / ln(base)
 ```
 
-
 to
-
 
 ```
 except (AttributeError, TypeError):
     return log(x) / log(base)
 ```
-
 
 We should call log() recursively so that it can take advantage of
 the features that you have added. Another supplementary patch should be fine too.

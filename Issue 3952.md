@@ -103,7 +103,7 @@ I've read through this patch, and it looks good to me.  Positive review, assumin
 archive/issue_comments_028315.json:
 ```json
 {
-    "body": "With the patch applied I am seeing one doctest failure:\n\n```\nsage -t -long devel/sage/sage/calculus/desolvers.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/desolvers.py\", line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[17]>\", line 1, in <module>\n        P2 = parametric_plot((solnx,solny),Integer(0),Integer(1))###line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3735, in parametric_plot\n        raise ValueError, \"there must be exactly one free variable in funcs\"\n    ValueError: there must be exactly one free variable in funcs \n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the patch applied I am seeing one doctest failure:\n\n```\nsage -t -long devel/sage/sage/calculus/desolvers.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/desolvers.py\", line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[17]>\", line 1, in <module>\n        P2 = parametric_plot((solnx,solny),Integer(0),Integer(1))###line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3735, in parametric_plot\n        raise ValueError, \"there must be exactly one free variable in funcs\"\n    ValueError: there must be exactly one free variable in funcs \n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T04:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ Exception raised:
     ValueError: there must be exactly one free variable in funcs 
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -186,7 +185,7 @@ I've attached a new patch which fixes the issue.
 archive/issue_comments_028318.json:
 ```json
 {
-    "body": "Positive review on the patch. The affected doctest now passes and Mike did explain to me in IRC what was fixed:\n\n```\n[2:41pm] mabshoff: mhansen: #3592 - what is changed?\n[2:41pm] mabshoff: Did you fix the doctest or did you do more?\n[2:42pm] mhansen: Oh, I changed a \"!= 1\" to a \" > 1\" in the new code (which is what is should have been).\n[2:42pm] mabshoff: ok\n```\n\n\nCheers,\n\nMichael",
+    "body": "Positive review on the patch. The affected doctest now passes and Mike did explain to me in IRC what was fixed:\n\n```\n[2:41pm] mabshoff: mhansen: #3592 - what is changed?\n[2:41pm] mabshoff: Did you fix the doctest or did you do more?\n[2:42pm] mhansen: Oh, I changed a \"!= 1\" to a \" > 1\" in the new code (which is what is should have been).\n[2:42pm] mabshoff: ok\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T21:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
@@ -203,7 +202,6 @@ Positive review on the patch. The affected doctest now passes and Mike did expla
 [2:42pm] mhansen: Oh, I changed a "!= 1" to a " > 1" in the new code (which is what is should have been).
 [2:42pm] mabshoff: ok
 ```
-
 
 Cheers,
 

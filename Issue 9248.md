@@ -3,7 +3,7 @@
 archive/issues_009248.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAt comment:2:ticket:9240, we see someone get confused about the docstring for `factorial`, which claims it takes as input an integer or symbolic expression. However, it takes non-integer, non-SR inputs:\n\n```\nsage: x = 1.5; parent(x)\nReal Field with 53 bits of precision\nsage: factorial(x)\n1.32934038817914\nsage: x = 3/2; parent(x)\nRational Field\nsage: factorial(x)      \n3/4*sqrt(pi)\nsage: x = CC(1+I); parent(x)\nComplex Field with 53 bits of precision\nsage: factorial(x)\n0.652965496420167 + 0.343065839816545*I\n```\n\nI understand that there is coercion going on, but we should specify that the function takes pretty much any complex number (except of course negative integers) and evaluates (something akin to) gamma(1+x).\n\nHowever, it doesn't exactly do gamma(1+x):\n\n```\nsage: x = I; parent(x)  \nSymbolic Ring\nsage: factorial(x)    \n0.498015668118356 - 0.154949828301811*I\nsage: gamma(x+1)      \ngamma(I + 1)\nsage: parent(factorial(x))  \nSymbolic Ring\nsage: gamma(x+1).n() \n0.498015668118356 - 0.154949828301811*I\nsage: parent(gamma(x+1).n())\nComplex Field with 53 bits of precision\n```\n\nThe factorial function clearly is not simply calling gamma(x+1) when x is not an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9248\n\n",
+    "body": "Assignee: mvngu\n\nAt comment:2:ticket:9240, we see someone get confused about the docstring for `factorial`, which claims it takes as input an integer or symbolic expression. However, it takes non-integer, non-SR inputs:\n\n```\nsage: x = 1.5; parent(x)\nReal Field with 53 bits of precision\nsage: factorial(x)\n1.32934038817914\nsage: x = 3/2; parent(x)\nRational Field\nsage: factorial(x)      \n3/4*sqrt(pi)\nsage: x = CC(1+I); parent(x)\nComplex Field with 53 bits of precision\nsage: factorial(x)\n0.652965496420167 + 0.343065839816545*I\n```\nI understand that there is coercion going on, but we should specify that the function takes pretty much any complex number (except of course negative integers) and evaluates (something akin to) gamma(1+x).\n\nHowever, it doesn't exactly do gamma(1+x):\n\n```\nsage: x = I; parent(x)  \nSymbolic Ring\nsage: factorial(x)    \n0.498015668118356 - 0.154949828301811*I\nsage: gamma(x+1)      \ngamma(I + 1)\nsage: parent(factorial(x))  \nSymbolic Ring\nsage: gamma(x+1).n() \n0.498015668118356 - 0.154949828301811*I\nsage: parent(gamma(x+1).n())\nComplex Field with 53 bits of precision\n```\nThe factorial function clearly is not simply calling gamma(x+1) when x is not an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9248\n\n",
     "created_at": "2010-06-16T01:55:29Z",
     "labels": [
         "component: documentation",
@@ -34,7 +34,6 @@ Complex Field with 53 bits of precision
 sage: factorial(x)
 0.652965496420167 + 0.343065839816545*I
 ```
-
 I understand that there is coercion going on, but we should specify that the function takes pretty much any complex number (except of course negative integers) and evaluates (something akin to) gamma(1+x).
 
 However, it doesn't exactly do gamma(1+x):
@@ -53,7 +52,6 @@ sage: gamma(x+1).n()
 sage: parent(gamma(x+1).n())
 Complex Field with 53 bits of precision
 ```
-
 The factorial function clearly is not simply calling gamma(x+1) when x is not an integer.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9248
@@ -121,7 +119,7 @@ Notice also that factorial does not accept all sorts of input, which leads to pr
 archive/issue_comments_086894.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Notice also that factorial does not accept all sorts of input, which leads to problems in [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/119eafbfe3b69500).  \nWhich for some reason I still posted even after realizing this is just #9240. Sorry for the noise.",
+    "body": "Replying to [comment:2 kcrisman]:\n> Notice also that factorial does not accept all sorts of input, which leads to problems in [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/119eafbfe3b69500).  \n\nWhich for some reason I still posted even after realizing this is just #9240. Sorry for the noise.",
     "created_at": "2010-12-02T02:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
@@ -132,6 +130,7 @@ archive/issue_comments_086894.json:
 
 Replying to [comment:2 kcrisman]:
 > Notice also that factorial does not accept all sorts of input, which leads to problems in [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/119eafbfe3b69500).  
+
 Which for some reason I still posted even after realizing this is just #9240. Sorry for the noise.
 
 
@@ -260,7 +259,7 @@ archive/issue_events_022776.json:
 archive/issue_comments_086895.json:
 ```json
 {
-    "body": "Replying to [comment:1 ddrake]:\n> Also, factorial doesn't seem to accept the algorithm keyword anymore, even though the docstring says it does!\nWrong doc read. The problem is fixed in #17489.",
+    "body": "Replying to [comment:1 ddrake]:\n> Also, factorial doesn't seem to accept the algorithm keyword anymore, even though the docstring says it does!\n\nWrong doc read. The problem is fixed in #17489.",
     "created_at": "2014-12-13T08:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
@@ -271,6 +270,7 @@ archive/issue_comments_086895.json:
 
 Replying to [comment:1 ddrake]:
 > Also, factorial doesn't seem to accept the algorithm keyword anymore, even though the docstring says it does!
+
 Wrong doc read. The problem is fixed in #17489.
 
 
@@ -422,7 +422,7 @@ On the other hand, closing a ticket without review is much less bad than merging
 archive/issue_comments_086902.json:
 ```json
 {
-    "body": "> The same person should not both set it to wontfix and give it a positive review as it skips the review process.\nBut the invalid and duplicate I think this is okay for.  I often give a positive review to dups or obviously now-functioning tickets.\n> And essentially nobody reviews sage-duplicate/invalid/wontfix tickets.\nYeah, probably also true.\n\nI do have to say that perhaps we should have a separate wontfix that would require *two* reviewers, maybe?  I have occasionally set some notebook tickets to wontfix but that is a fairly unusual situation.",
+    "body": "> The same person should not both set it to wontfix and give it a positive review as it skips the review process.\n\nBut the invalid and duplicate I think this is okay for.  I often give a positive review to dups or obviously now-functioning tickets.\n> And essentially nobody reviews sage-duplicate/invalid/wontfix tickets.\n\nYeah, probably also true.\n\nI do have to say that perhaps we should have a separate wontfix that would require *two* reviewers, maybe?  I have occasionally set some notebook tickets to wontfix but that is a fairly unusual situation.",
     "created_at": "2015-01-03T21:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
@@ -432,8 +432,10 @@ archive/issue_comments_086902.json:
 ```
 
 > The same person should not both set it to wontfix and give it a positive review as it skips the review process.
+
 But the invalid and duplicate I think this is okay for.  I often give a positive review to dups or obviously now-functioning tickets.
 > And essentially nobody reviews sage-duplicate/invalid/wontfix tickets.
+
 Yeah, probably also true.
 
 I do have to say that perhaps we should have a separate wontfix that would require *two* reviewers, maybe?  I have occasionally set some notebook tickets to wontfix but that is a fairly unusual situation.

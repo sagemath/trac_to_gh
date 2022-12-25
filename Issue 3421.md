@@ -3,7 +3,7 @@
 archive/issues_003421.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
     "created_at": "2008-06-13T22:08:37Z",
     "labels": [
         "component: commutative algebra",
@@ -28,7 +28,6 @@ sage: P("111111111111111111111111111111111111111111111111111111111")
 111111111111111111111111111111111111111111111111111111111
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3421
 
 
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3421
 archive/issue_comments_024030.json:
 ```json
 {
-    "body": "This still fails on sage.math:\n\n\n```\nsage: P(\"31367566080\")\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/burcin/sage-3.0.2/<ipython console> in <module>()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4707)()\n\n/home/burcin/sage-3.0.2/parent.pyx in sage.structure.parent.Parent._coerce_c (sage/structure/parent.c:3400)()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular._coerce_c_impl (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4283)()\n\nOverflowError: value too large to convert to int\n```\n",
+    "body": "This still fails on sage.math:\n\n```\nsage: P(\"31367566080\")\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/burcin/sage-3.0.2/<ipython console> in <module>()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4707)()\n\n/home/burcin/sage-3.0.2/parent.pyx in sage.structure.parent.Parent._coerce_c (sage/structure/parent.c:3400)()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular._coerce_c_impl (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4283)()\n\nOverflowError: value too large to convert to int\n```",
     "created_at": "2008-06-14T00:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
@@ -50,7 +49,6 @@ archive/issue_comments_024030.json:
 ```
 
 This still fails on sage.math:
-
 
 ```
 sage: P("31367566080")
@@ -67,7 +65,6 @@ OverflowError                             Traceback (most recent call last)
 
 OverflowError: value too large to convert to int
 ```
-
 
 
 

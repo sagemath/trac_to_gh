@@ -3,7 +3,7 @@
 archive/issues_004142.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
+    "body": "Assignee: @burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
     "created_at": "2008-09-18T06:14:18Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 As discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:
 
-
 ```
 sage: f = sqrt(1-x^2)
 sage: g = diff(f, x); g
@@ -28,7 +27,6 @@ sage: g = diff(f, x); g
 sage: limit(g, x=1, dir='below')
 +Infinity
 ```
-
 
 The last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). 
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4142
 archive/issue_comments_030013.json:
 ```json
 {
-    "body": "As it happens, this is still a problem in Sage 4.1.x - but the problem is somewhat more subtle than just some Maxima bug, or Sage incorrectly parsing Maxima output:\n\n```\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                            infinity\n```\n\nBUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If the answer is +infinity, Maxima would return 'inf'.   I've asked the Maxima list about this, so we'll see what happens.",
+    "body": "As it happens, this is still a problem in Sage 4.1.x - but the problem is somewhat more subtle than just some Maxima bug, or Sage incorrectly parsing Maxima output:\n\n```\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                            infinity\n```\nBUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If the answer is +infinity, Maxima would return 'inf'.   I've asked the Maxima list about this, so we'll see what happens.",
     "created_at": "2009-09-29T16:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ As it happens, this is still a problem in Sage 4.1.x - but the problem is somewh
 (%i1) limit(-x/sqrt(1-x^2),x,1,minus);
 (%o1)                                            infinity
 ```
-
 BUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If the answer is +infinity, Maxima would return 'inf'.   I've asked the Maxima list about this, so we'll see what happens.
 
 
@@ -68,7 +65,7 @@ BUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If th
 archive/issue_comments_030014.json:
 ```json
 {
-    "body": "This is fixed in the latest Maxima CVS version, so whenever we upgrade again, this one will hopefully be closed.\n\n```\nMaxima 5.19post http://maxima.sourceforge.net\nusing Lisp SBCL 1.0.24\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                minf\n```\n",
+    "body": "This is fixed in the latest Maxima CVS version, so whenever we upgrade again, this one will hopefully be closed.\n\n```\nMaxima 5.19post http://maxima.sourceforge.net\nusing Lisp SBCL 1.0.24\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                minf\n```",
     "created_at": "2009-10-05T18:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
@@ -88,7 +85,6 @@ The function bug_report() provides bug reporting information.
 (%i1) limit(-x/sqrt(1-x^2),x,1,minus);
 (%o1)                                minf
 ```
-
 
 
 

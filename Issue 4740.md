@@ -3,7 +3,7 @@
 archive/issues_004740.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @burcin @robertwb simonking\n\nBurcin reported at #4639:\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```\n\nSince the patch by RobertWB at that ticket fixes the issue Burcin reported, but not the original one I am moving it over to this ticket.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4740\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @burcin @robertwb simonking\n\nBurcin reported at #4639:\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```\nSince the patch by RobertWB at that ticket fixes the issue Burcin reported, but not the original one I am moving it over to this ticket.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4740\n\n",
     "created_at": "2008-12-08T11:23:21Z",
     "labels": [
         "component: memleak",
@@ -42,7 +42,6 @@ sage: for _ in xrange(100000):
 sage: get_memory_usage()
 1136.35546875
 ```
-
 Since the patch by RobertWB at that ticket fixes the issue Burcin reported, but not the original one I am moving it over to this ticket.
 
 Cheers,
@@ -102,7 +101,7 @@ Michael
 archive/issue_comments_035722.json:
 ```json
 {
-    "body": "This patch causes a failure with the pickle jar:\n\n```\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/structure/sage_object.pyx\", line 371, in __main__.example_16\nFailed example:\n    sage.structure.sage_object.unpickle_all(std)###line 682:_sage_    >>> sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    ** failed:  _class__sage_rings_finite_field_morphism_FiniteFieldHomset__.sobj\n    Failed:\n    _class__sage_rings_finite_field_morphism_FiniteFieldHomset__.sobj\n    Successfully unpickled 453 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes a failure with the pickle jar:\n\n```\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/structure/sage_object.pyx\", line 371, in __main__.example_16\nFailed example:\n    sage.structure.sage_object.unpickle_all(std)###line 682:_sage_    >>> sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    ** failed:  _class__sage_rings_finite_field_morphism_FiniteFieldHomset__.sobj\n    Failed:\n    _class__sage_rings_finite_field_morphism_FiniteFieldHomset__.sobj\n    Successfully unpickled 453 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-08T11:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -133,7 +132,6 @@ Got:
 1 items had failures:
    1 of   7 in __main__.example_16
 ```
-
 
 Cheers,
 
@@ -237,7 +235,7 @@ archive/issue_events_010831.json:
 archive/issue_comments_035725.json:
 ```json
 {
-    "body": "Robert,\n\nthe leak seems to be gone in 3.2.2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F = GF(13)\nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(100000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(100000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: \n```\n\nShould we close this ticket as won't fix or is the patch her still relevant? In that case we should update the ticket to reflect the actual issue being fixed here.\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "Robert,\n\nthe leak seems to be gone in 3.2.2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F = GF(13)\nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(100000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: for _ in xrange(100000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n689.02734375\nsage: \n```\nShould we close this ticket as won't fix or is the patch her still relevant? In that case we should update the ticket to reflect the actual issue being fixed here.\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
     "created_at": "2008-12-21T00:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -273,7 +271,6 @@ sage: get_memory_usage()
 689.02734375
 sage: 
 ```
-
 Should we close this ticket as won't fix or is the patch her still relevant? In that case we should update the ticket to reflect the actual issue being fixed here.
 | Sage Version 3.2.2, Release Date: 2008-12-18                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -366,7 +363,7 @@ Michael
 archive/issue_comments_035728.json:
 ```json
 {
-    "body": "Hi Robert,\n\naccidentally I found this rather old ticket.\n\nReplying to [comment:5 robertwb]:\n> The patch is still relevant here. What is going on is every time coerce is called, a new homset is created. Creating a new homset doesn't leak anymore, but it's still sub-optimal. \n\nIs this still the case? In what situation is the homset created? Is it not cached? In what files does it occur?\n\nCheers,\nSimon",
+    "body": "Hi Robert,\n\naccidentally I found this rather old ticket.\n\nReplying to [comment:5 robertwb]:\n> The patch is still relevant here. What is going on is every time coerce is called, a new homset is created. Creating a new homset doesn't leak anymore, but it's still sub-optimal. \n\n\nIs this still the case? In what situation is the homset created? Is it not cached? In what files does it occur?\n\nCheers,\nSimon",
     "created_at": "2010-06-14T08:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -381,6 +378,7 @@ accidentally I found this rather old ticket.
 
 Replying to [comment:5 robertwb]:
 > The patch is still relevant here. What is going on is every time coerce is called, a new homset is created. Creating a new homset doesn't leak anymore, but it's still sub-optimal. 
+
 
 Is this still the case? In what situation is the homset created? Is it not cached? In what files does it occur?
 
@@ -430,7 +428,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_035731.json:
 ```json
 {
-    "body": "I think homesets are still created each time.  We could try the following patch which does fix the issue.  The timings also improved:\n\nBefore:\n\n```\nsage: %timeit t = F.coerce(F(234234))\n10000 loops, best of 3: 197 us per loop\n```\n\n\nAfter:\n\n```\nsage: %timeit t = F.coerce(F(234234))\n10000 loops, best of 3: 23.4 us per loop\n```\n\n\nSimon -- see any issues here?",
+    "body": "I think homesets are still created each time.  We could try the following patch which does fix the issue.  The timings also improved:\n\nBefore:\n\n```\nsage: %timeit t = F.coerce(F(234234))\n10000 loops, best of 3: 197 us per loop\n```\n\nAfter:\n\n```\nsage: %timeit t = F.coerce(F(234234))\n10000 loops, best of 3: 23.4 us per loop\n```\n\nSimon -- see any issues here?",
     "created_at": "2013-07-22T15:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -448,14 +446,12 @@ sage: %timeit t = F.coerce(F(234234))
 10000 loops, best of 3: 197 us per loop
 ```
 
-
 After:
 
 ```
 sage: %timeit t = F.coerce(F(234234))
 10000 loops, best of 3: 23.4 us per loop
 ```
-
 
 Simon -- see any issues here?
 
@@ -504,7 +500,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_035734.json:
 ```json
 {
-    "body": "Replying to [comment:9 mhansen]:\n> Simon -- see any issues here?\n\nYes, and a quite severe issue.\n\nThe problem is, as often, unique versus non-unique parent structures. For coercion, we need that the domain and codomain of a coercion from A to B are not just equal but identical to A and B. But with `UniqueRepresentation`, the given input arguments are compared by equality, not by identity. That's why it was a conscious decision to use `TripleDict` for caching homsets.\n\nThe cache is provided by the `Hom()` function in sage.categories.homset. If homsets are really created over and over again, then there seems to be a rogue call to `Homset(...)`. The solution is not to make `Homset` a cached class, but to call the `Hom()` function instead.",
+    "body": "Replying to [comment:9 mhansen]:\n> Simon -- see any issues here?\n\n\nYes, and a quite severe issue.\n\nThe problem is, as often, unique versus non-unique parent structures. For coercion, we need that the domain and codomain of a coercion from A to B are not just equal but identical to A and B. But with `UniqueRepresentation`, the given input arguments are compared by equality, not by identity. That's why it was a conscious decision to use `TripleDict` for caching homsets.\n\nThe cache is provided by the `Hom()` function in sage.categories.homset. If homsets are really created over and over again, then there seems to be a rogue call to `Homset(...)`. The solution is not to make `Homset` a cached class, but to call the `Hom()` function instead.",
     "created_at": "2013-07-22T16:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -515,6 +511,7 @@ archive/issue_comments_035734.json:
 
 Replying to [comment:9 mhansen]:
 > Simon -- see any issues here?
+
 
 Yes, and a quite severe issue.
 
@@ -549,7 +546,7 @@ I think we should first find out where the homset constructor is called when Hom
 archive/issue_comments_035736.json:
 ```json
 {
-    "body": "Interesting. I found the following, by inserting a print statement into `Homset.__init__`:\n\n```\nsage: F = GF(13)\nsage: x = F(234234)\ncalling Homset Integer Ring Finite Field of size 13 Category of euclidean domains\nsage: x = F(234234)   # the homset is created only once, which is fine\nsage: t = F.coerce(F(234234))   # there is a homset created...\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))   # ... repeatedly\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: I = F.coerce_map_from(F)  # creating a coerce map, the homset is created again, but...\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))   # ... now the problem is fixed!\nsage: t = F.coerce(F(234234))\n```\n\n\nThis seems to suggest that\n1. `F.coerce` seems to use a cached coerce map from F to F, but if it isn't cached, it would create the coerce map repeatedly.\n2. It re-creates the coercion map such that the parent of the coercion map is re-created as well.",
+    "body": "Interesting. I found the following, by inserting a print statement into `Homset.__init__`:\n\n```\nsage: F = GF(13)\nsage: x = F(234234)\ncalling Homset Integer Ring Finite Field of size 13 Category of euclidean domains\nsage: x = F(234234)   # the homset is created only once, which is fine\nsage: t = F.coerce(F(234234))   # there is a homset created...\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))   # ... repeatedly\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: I = F.coerce_map_from(F)  # creating a coerce map, the homset is created again, but...\ncalling Homset Finite Field of size 13 Finite Field of size 13 Category of rings\nsage: t = F.coerce(F(234234))   # ... now the problem is fixed!\nsage: t = F.coerce(F(234234))\n```\n\nThis seems to suggest that\n1. `F.coerce` seems to use a cached coerce map from F to F, but if it isn't cached, it would create the coerce map repeatedly.\n2. It re-creates the coercion map such that the parent of the coercion map is re-created as well.",
     "created_at": "2013-07-22T16:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -576,7 +573,6 @@ calling Homset Finite Field of size 13 Finite Field of size 13 Category of rings
 sage: t = F.coerce(F(234234))   # ... now the problem is fixed!
 sage: t = F.coerce(F(234234))
 ```
-
 
 This seems to suggest that
 1. `F.coerce` seems to use a cached coerce map from F to F, but if it isn't cached, it would create the coerce map repeatedly.
@@ -627,7 +623,7 @@ The homset is stored in the cache, but it is then immediately erased again. Appa
 archive/issue_comments_035739.json:
 ```json
 {
-    "body": "Next observation: If one creates\n\n```\nsage: I = F.coerce_map_from(F)\n```\n\nand then does `del I`, the homset is again erased from the cache.\n\nBut this must not happen! Namely, `F.coerce_map_from(...)` is supposed to use a cache. Granted, the cache is again using weak keys (via `MonoDict`), but as long as `F` is kept in memory, the coercion from F to F must not vanish.",
+    "body": "Next observation: If one creates\n\n```\nsage: I = F.coerce_map_from(F)\n```\nand then does `del I`, the homset is again erased from the cache.\n\nBut this must not happen! Namely, `F.coerce_map_from(...)` is supposed to use a cache. Granted, the cache is again using weak keys (via `MonoDict`), but as long as `F` is kept in memory, the coercion from F to F must not vanish.",
     "created_at": "2013-07-22T17:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -641,7 +637,6 @@ Next observation: If one creates
 ```
 sage: I = F.coerce_map_from(F)
 ```
-
 and then does `del I`, the homset is again erased from the cache.
 
 But this must not happen! Namely, `F.coerce_map_from(...)` is supposed to use a cache. Granted, the cache is again using weak keys (via `MonoDict`), but as long as `F` is kept in memory, the coercion from F to F must not vanish.
@@ -653,7 +648,7 @@ But this must not happen! Namely, `F.coerce_map_from(...)` is supposed to use a 
 archive/issue_comments_035740.json:
 ```json
 {
-    "body": "Look at the following snippet from `Parent.coerce_map_from(self,S)`:\n\n```python\n        if S == self:\n            # non-unique parents\n            if unique_parent_warnings:\n                print \"Warning: non-unique parents %s\"%(type(S))\n            return self._generic_convert_map(S)\n```\n\n`self._generic_convert_map(S)` does not do caching.\n\nHence, the general problem is: A coercion from self to self will never be cached.",
+    "body": "Look at the following snippet from `Parent.coerce_map_from(self,S)`:\n\n```python\n        if S == self:\n            # non-unique parents\n            if unique_parent_warnings:\n                print \"Warning: non-unique parents %s\"%(type(S))\n            return self._generic_convert_map(S)\n```\n`self._generic_convert_map(S)` does not do caching.\n\nHence, the general problem is: A coercion from self to self will never be cached.",
     "created_at": "2013-07-22T17:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -671,7 +666,6 @@ Look at the following snippet from `Parent.coerce_map_from(self,S)`:
                 print "Warning: non-unique parents %s"%(type(S))
             return self._generic_convert_map(S)
 ```
-
 `self._generic_convert_map(S)` does not do caching.
 
 Hence, the general problem is: A coercion from self to self will never be cached.
@@ -726,7 +720,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_035743.json:
 ```json
 {
-    "body": "I didn't notice that `self.coerce_map_from(S)` also has a special case when `S is self`. However, the result is again not cached.\n\n```python\n        if S is self:\n            from sage.categories.homset import Hom\n            return Hom(self, self).identity()\n```\n",
+    "body": "I didn't notice that `self.coerce_map_from(S)` also has a special case when `S is self`. However, the result is again not cached.\n\n```python\n        if S is self:\n            from sage.categories.homset import Hom\n            return Hom(self, self).identity()\n```",
     "created_at": "2013-07-22T18:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -745,13 +739,12 @@ I didn't notice that `self.coerce_map_from(S)` also has a special case when `S i
 
 
 
-
 ---
 
 archive/issue_comments_035744.json:
 ```json
 {
-    "body": "Replying to [comment:19 SimonKing]:\n>  2. let `F.coerce(x)` avoid creating a morphism, if the parent of x is F.\n\nHm. On second thought, do we really want that `F.coerce(x) is x`? I guess it is better to preserve the current behaviour and return a copy of x.",
+    "body": "Replying to [comment:19 SimonKing]:\n>  2. let `F.coerce(x)` avoid creating a morphism, if the parent of x is F.\n\n\nHm. On second thought, do we really want that `F.coerce(x) is x`? I guess it is better to preserve the current behaviour and return a copy of x.",
     "created_at": "2013-07-22T18:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -762,6 +755,7 @@ archive/issue_comments_035744.json:
 
 Replying to [comment:19 SimonKing]:
 >  2. let `F.coerce(x)` avoid creating a morphism, if the parent of x is F.
+
 
 Hm. On second thought, do we really want that `F.coerce(x) is x`? I guess it is better to preserve the current behaviour and return a copy of x.
 
@@ -790,7 +784,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_035746.json:
 ```json
 {
-    "body": "What do people think about the patch that I just attached?\n\nWe now have\n\n```\nsage: F = GF(13)\nsage: F.coerce_map_from(F) is F.coerce_map_from(F)\nTrue\nsage: x = F(234234)\nsage: %timeit t = F.coerce(x)\n1000000 loops, best of 3: 862 ns per loop\n```\n\nand used to have\n\n```\nsage: F = GF(13)\nsage: F.coerce_map_from(F) is F.coerce_map_from(F)\nFalse\nsage: x = F(234234)\nsage: %timeit t = F.coerce(x)\n10000 loops, best of 3: 132 us per loop\n```\n\n\nApply trac4740-cache_coerce_from_self.patch\u200b",
+    "body": "What do people think about the patch that I just attached?\n\nWe now have\n\n```\nsage: F = GF(13)\nsage: F.coerce_map_from(F) is F.coerce_map_from(F)\nTrue\nsage: x = F(234234)\nsage: %timeit t = F.coerce(x)\n1000000 loops, best of 3: 862 ns per loop\n```\nand used to have\n\n```\nsage: F = GF(13)\nsage: F.coerce_map_from(F) is F.coerce_map_from(F)\nFalse\nsage: x = F(234234)\nsage: %timeit t = F.coerce(x)\n10000 loops, best of 3: 132 us per loop\n```\n\nApply trac4740-cache_coerce_from_self.patch\u200b",
     "created_at": "2013-07-22T18:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4740",
     "type": "issue_comment",
@@ -811,7 +805,6 @@ sage: x = F(234234)
 sage: %timeit t = F.coerce(x)
 1000000 loops, best of 3: 862 ns per loop
 ```
-
 and used to have
 
 ```
@@ -822,7 +815,6 @@ sage: x = F(234234)
 sage: %timeit t = F.coerce(x)
 10000 loops, best of 3: 132 us per loop
 ```
-
 
 Apply trac4740-cache_coerce_from_self.patch​
 

@@ -3,7 +3,7 @@
 archive/issues_004759.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMerging the sage library with local changes can often break -upgrade. The new behavior would rename the sage-main directory if it wasn't pristine. \n\nSee the end of http://groups.google.com/group/sage-devel/browse_thread/thread/5b566397731862d/e4b19771599e2afd?lnk=gst&q=3.2.2.alpha0#e4b19771599e2afd for the full discussion. \n\n\n```\nOn Dec 8, 2008, at 12:25 PM, William Stein wrote:\n\n> On Mon, Dec 8, 2008 at 12:22 PM, Robert Bradshaw\n> What about an option to the upgrade script, e.g.\n>\n> sage -upgrade [-b branch]\n>\n> which would upgrade specified branch inplace if specified?\n\nThat sounds like a reasonable compromise.\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4759\n\n",
+    "body": "Assignee: mabshoff\n\nMerging the sage library with local changes can often break -upgrade. The new behavior would rename the sage-main directory if it wasn't pristine. \n\nSee the end of http://groups.google.com/group/sage-devel/browse_thread/thread/5b566397731862d/e4b19771599e2afd?lnk=gst&q=3.2.2.alpha0#e4b19771599e2afd for the full discussion. \n\n```\nOn Dec 8, 2008, at 12:25 PM, William Stein wrote:\n\n> On Mon, Dec 8, 2008 at 12:22 PM, Robert Bradshaw\n> What about an option to the upgrade script, e.g.\n>\n> sage -upgrade [-b branch]\n>\n> which would upgrade specified branch inplace if specified?\n\nThat sounds like a reasonable compromise.\n\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4759\n\n",
     "created_at": "2008-12-11T10:34:45Z",
     "labels": [
         "component: build",
@@ -22,7 +22,6 @@ Merging the sage library with local changes can often break -upgrade. The new be
 
 See the end of http://groups.google.com/group/sage-devel/browse_thread/thread/5b566397731862d/e4b19771599e2afd?lnk=gst&q=3.2.2.alpha0#e4b19771599e2afd for the full discussion. 
 
-
 ```
 On Dec 8, 2008, at 12:25 PM, William Stein wrote:
 
@@ -38,7 +37,6 @@ That sounds like a reasonable compromise.
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4759
 

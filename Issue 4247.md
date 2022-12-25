@@ -3,7 +3,7 @@
 archive/issues_004247.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')\n```\n\nbut this doesn't (big confusing traceback):\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\n\n\nThe fix will be to make sure text (or whatever) normalizes the rgb input\nparams to all be of type float. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4247\n\n",
+    "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')\n```\nbut this doesn't (big confusing traceback):\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\n\nThe fix will be to make sure text (or whatever) normalizes the rgb input\nparams to all be of type float. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4247\n\n",
     "created_at": "2008-10-06T21:25:32Z",
     "labels": [
         "component: graphics",
@@ -23,13 +23,11 @@ This works:
 ```
 sage: text("sage", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')
 ```
-
 but this doesn't (big confusing traceback):
 
 ```
 sage: text("sage", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')
 ```
-
 
 The fix will be to make sure text (or whatever) normalizes the rgb input
 params to all be of type float. 

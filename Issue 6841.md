@@ -50,7 +50,7 @@ The patch `trac_6841-shift-cipher.patch` implements the shift cryptosystem. It a
 archive/issue_comments_056333.json:
 ```json
 {
-    "body": "Here are some of rbeezer's comments on sanity checking the key value:\n\n```\n23:24 < mvngu-6971> rbeezer: Going back to shift cipher: The callable of \n                    ShiftCryptosystem (i.e. __call__) takes care of converting \n                    any value of key to 0 <= key < alphabet_size.\n23:24 < mvngu-6971> rbeezer: Perhaps I should make that clear in the \n                    documentation.\n23:27 < rbeezer> mvngu-6971: yes, I see it being Mod'ed, but I think you should \n                 disallow bad keys on input\n23:27 < rbeezer> S(29) for \"regular\" alphabet just churns along, I'd prefer an \n                 error\n23:27 < mvngu-6971> rbeezer: New patch coming up... in a hour or so. I'm still \n                    doing some release manage work...\n23:28 < mvngu-6971> rbeezer: Thank you *very* much for the valuable feedback!\n23:28 < rbeezer> For example with binary strings, my S(5) could have thrown an \n                 error, and I would have had to think about it right then, \n                 instead of looking for a positional shift of 5.  ;-)\n23:29 < rbeezer> mvngu-6971: no rush, probably be tomorrow night before I get \n                 to it\n23:29 < mvngu-6971> rbeezer: Cool.\n```\n",
+    "body": "Here are some of rbeezer's comments on sanity checking the key value:\n\n```\n23:24 < mvngu-6971> rbeezer: Going back to shift cipher: The callable of \n                    ShiftCryptosystem (i.e. __call__) takes care of converting \n                    any value of key to 0 <= key < alphabet_size.\n23:24 < mvngu-6971> rbeezer: Perhaps I should make that clear in the \n                    documentation.\n23:27 < rbeezer> mvngu-6971: yes, I see it being Mod'ed, but I think you should \n                 disallow bad keys on input\n23:27 < rbeezer> S(29) for \"regular\" alphabet just churns along, I'd prefer an \n                 error\n23:27 < mvngu-6971> rbeezer: New patch coming up... in a hour or so. I'm still \n                    doing some release manage work...\n23:28 < mvngu-6971> rbeezer: Thank you *very* much for the valuable feedback!\n23:28 < rbeezer> For example with binary strings, my S(5) could have thrown an \n                 error, and I would have had to think about it right then, \n                 instead of looking for a positional shift of 5.  ;-)\n23:29 < rbeezer> mvngu-6971: no rush, probably be tomorrow night before I get \n                 to it\n23:29 < mvngu-6971> rbeezer: Cool.\n```",
     "created_at": "2009-09-23T06:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6841",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ Here are some of rbeezer's comments on sanity checking the key value:
                  to it
 23:29 < mvngu-6971> rbeezer: Cool.
 ```
-
 
 
 
@@ -150,7 +149,7 @@ Positive review, either way.
 archive/issue_comments_056337.json:
 ```json
 {
-    "body": "Replying to [comment:7 rbeezer]:\n> Would you want to put similar input protections on `inverse_key()`?  Your call.\nYes, I like your idea: be consistent. Please see ticket #7010 for sanity checking the value of the inverse key.",
+    "body": "Replying to [comment:7 rbeezer]:\n> Would you want to put similar input protections on `inverse_key()`?  Your call.\n\nYes, I like your idea: be consistent. Please see ticket #7010 for sanity checking the value of the inverse key.",
     "created_at": "2009-09-25T07:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6841",
     "type": "issue_comment",
@@ -161,6 +160,7 @@ archive/issue_comments_056337.json:
 
 Replying to [comment:7 rbeezer]:
 > Would you want to put similar input protections on `inverse_key()`?  Your call.
+
 Yes, I like your idea: be consistent. Please see ticket #7010 for sanity checking the value of the inverse key.
 
 

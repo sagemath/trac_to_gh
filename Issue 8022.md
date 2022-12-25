@@ -3,7 +3,7 @@
 archive/issues_008022.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nWhen building the reference manual, I get this warning (among others):\n\n```\n.../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nThe fix is easy: delete (by hand) the file `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst`.  (This file is not under revision control, so can't be removed by a patch.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8022\n\n",
+    "body": "Assignee: mvngu\n\nWhen building the reference manual, I get this warning (among others):\n\n```\n.../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\nThe fix is easy: delete (by hand) the file `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst`.  (This file is not under revision control, so can't be removed by a patch.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8022\n\n",
     "created_at": "2010-01-21T06:31:45Z",
     "labels": [
         "component: documentation",
@@ -24,7 +24,6 @@ When building the reference manual, I get this warning (among others):
 ```
 .../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree
 ```
-
 The fix is easy: delete (by hand) the file `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst`.  (This file is not under revision control, so can't be removed by a patch.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8022
@@ -92,7 +91,7 @@ Also, `polytope.rst`?  To be sure, do `rm -rf SAGE_DOC/en/reference/sage*` and r
 archive/issue_comments_069973.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Also, `polytope.rst`?  To be sure, do `rm -rf SAGE_DOC/en/reference/sage*` and rebuild...\n\nYes, it looks like polytope.rst was removed from the reference manual in #7109.  Let's delete that file, too; I'll change the description of this ticket to reflect this.",
+    "body": "Replying to [comment:3 mpatel]:\n> Also, `polytope.rst`?  To be sure, do `rm -rf SAGE_DOC/en/reference/sage*` and rebuild...\n\n\nYes, it looks like polytope.rst was removed from the reference manual in #7109.  Let's delete that file, too; I'll change the description of this ticket to reflect this.",
     "created_at": "2010-01-31T06:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_comment",
@@ -103,6 +102,7 @@ archive/issue_comments_069973.json:
 
 Replying to [comment:3 mpatel]:
 > Also, `polytope.rst`?  To be sure, do `rm -rf SAGE_DOC/en/reference/sage*` and rebuild...
+
 
 Yes, it looks like polytope.rst was removed from the reference manual in #7109.  Let's delete that file, too; I'll change the description of this ticket to reflect this.
 

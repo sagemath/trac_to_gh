@@ -3,7 +3,7 @@
 archive/issues_009367.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @orlitzky\n\nKeywords: S_units\n\nHere is a sample error:\n\n```\nsage: _.<x>=QQ[]\nsage: L.<alpha>=NumberField(x^3+x+1)\nsage: p=L.S_units([ L.ideal(7) ] )\nsage: p[0].parent()\nRational Field\n```\n\nThe correct output should be\n\n```\nNumber Field in alpha with defining polynomial x^3 + x + 1\n```\n\n\nThe attached patch solves this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9367\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @orlitzky\n\nKeywords: S_units\n\nHere is a sample error:\n\n```\nsage: _.<x>=QQ[]\nsage: L.<alpha>=NumberField(x^3+x+1)\nsage: p=L.S_units([ L.ideal(7) ] )\nsage: p[0].parent()\nRational Field\n```\nThe correct output should be\n\n```\nNumber Field in alpha with defining polynomial x^3 + x + 1\n```\n\nThe attached patch solves this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9367\n\n",
     "created_at": "2010-06-28T21:54:48Z",
     "labels": [
         "component: number fields",
@@ -31,13 +31,11 @@ sage: p=L.S_units([ L.ideal(7) ] )
 sage: p[0].parent()
 Rational Field
 ```
-
 The correct output should be
 
 ```
 Number Field in alpha with defining polynomial x^3 + x + 1
 ```
-
 
 The attached patch solves this problem.
 

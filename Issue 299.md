@@ -70,7 +70,7 @@ archive/issue_events_000693.json:
 archive/issue_comments_001419.json:
 ```json
 {
-    "body": "The following come from #153 (which I have just closed as a duplicate)\n\nIt would also be nice to use the \"-t\" flag to run spkg-check when building packages:\n\n```\n  sage -i -t packagename.spkg\n```\n\n\nCheers,\n\nMichael",
+    "body": "The following come from #153 (which I have just closed as a duplicate)\n\nIt would also be nice to use the \"-t\" flag to run spkg-check when building packages:\n\n```\n  sage -i -t packagename.spkg\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-23T11:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/299",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ It would also be nice to use the "-t" flag to run spkg-check when building packa
 ```
   sage -i -t packagename.spkg
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_002650.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis ticket depends on the patch from ticket #2649, without which an exception is raised.\n\nThe following code\n\n```\nsage: matrix({})\n```\n\nreturns the matrix [0].  I think it should return [].\n\nIssue created by migration from https://trac.sagemath.org/ticket/2650\n\n",
+    "body": "Assignee: @williamstein\n\nThis ticket depends on the patch from ticket #2649, without which an exception is raised.\n\nThe following code\n\n```\nsage: matrix({})\n```\nreturns the matrix [0].  I think it should return [].\n\nIssue created by migration from https://trac.sagemath.org/ticket/2650\n\n",
     "created_at": "2008-03-22T19:31:04Z",
     "labels": [
         "component: linear algebra",
@@ -25,7 +25,6 @@ The following code
 ```
 sage: matrix({})
 ```
-
 returns the matrix [0].  I think it should return [].
 
 Issue created by migration from https://trac.sagemath.org/ticket/2650

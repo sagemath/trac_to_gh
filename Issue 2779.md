@@ -3,7 +3,7 @@
 archive/issues_002779.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIf I have a notebook server already running, and I start a new one, I get something like this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the SAGE Notebook server starts...\n...\nThe notebook files are stored in: /Users/justin/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nAnother twistd server is running, PID 19662\n\nThis could either be a previously started instance of your application or a\ndifferent application entirely. To start a new one, either run it in some other\ndirectory, or use the --pidfile and --logfile parameters to avoid clashes.\n```\n\n\nIt's not clear how to use the second suggestion (using the additional parameters), and I sure couldn't get it to work.\n\nUsing an alternate directory does work, but that somehow didn't come through in this error message.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2779\n\n",
+    "body": "Assignee: boothby\n\nIf I have a notebook server already running, and I start a new one, I get something like this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11, Release Date: 2008-03-30                        |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the SAGE Notebook server starts...\n...\nThe notebook files are stored in: /Users/justin/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nAnother twistd server is running, PID 19662\n\nThis could either be a previously started instance of your application or a\ndifferent application entirely. To start a new one, either run it in some other\ndirectory, or use the --pidfile and --logfile parameters to avoid clashes.\n```\n\nIt's not clear how to use the second suggestion (using the additional parameters), and I sure couldn't get it to work.\n\nUsing an alternate directory does work, but that somehow didn't come through in this error message.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2779\n\n",
     "created_at": "2008-04-02T20:38:45Z",
     "labels": [
         "component: notebook",
@@ -44,7 +44,6 @@ This could either be a previously started instance of your application or a
 different application entirely. To start a new one, either run it in some other
 directory, or use the --pidfile and --logfile parameters to avoid clashes.
 ```
-
 
 It's not clear how to use the second suggestion (using the additional parameters), and I sure couldn't get it to work.
 
@@ -98,7 +97,7 @@ Could you suggest a specific better error message?  Oh, and post a patch :-)
 archive/issue_comments_019047.json:
 ```json
 {
-    "body": "This new patch should do it. It outputs the following message instead:\n\n\n```\nAnother Sage Notebook server is running, PID 13463.\n\nPlease either stop the old server or run the new server in a different directory.\n```\n",
+    "body": "This new patch should do it. It outputs the following message instead:\n\n```\nAnother Sage Notebook server is running, PID 13463.\n\nPlease either stop the old server or run the new server in a different directory.\n```",
     "created_at": "2010-01-16T20:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
@@ -109,13 +108,11 @@ archive/issue_comments_019047.json:
 
 This new patch should do it. It outputs the following message instead:
 
-
 ```
 Another Sage Notebook server is running, PID 13463.
 
 Please either stop the old server or run the new server in a different directory.
 ```
-
 
 
 

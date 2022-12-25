@@ -246,7 +246,7 @@ Resolution: fixed
 archive/issue_comments_081825.json:
 ```json
 {
-    "body": "Despite Mike's comments on #9037, this does not resolve the issue there, as it still has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nI'll have to create a new package based on this one and apply the fix again. \n\nDave",
+    "body": "Despite Mike's comments on #9037, this does not resolve the issue there, as it still has:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nI'll have to create a new package based on this one and apply the fix again. \n\nDave",
     "created_at": "2010-05-30T12:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8903",
     "type": "issue_comment",
@@ -257,7 +257,6 @@ archive/issue_comments_081825.json:
 
 Despite Mike's comments on #9037, this does not resolve the issue there, as it still has:
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
     echo "64 bit MacIntel"
@@ -265,7 +264,6 @@ if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
     LDFLAGS="-m64"; export LDFLAGS
 fi
 ```
-
 
 I'll have to create a new package based on this one and apply the fix again. 
 
@@ -306,7 +304,7 @@ might do. I believe the version included in the release is the latter.
 archive/issue_comments_081827.json:
 ```json
 {
-    "body": "Replying to [comment:12 burcin]:\n> Hi Dave,\n> \n> Which package are you looking at. Unfortunately, there are several packages named pynac-0.2.0.spkg floating around. My version at\n> \n> http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n> \n> doesn't have the said fix, but Mike's version at \n> \n> http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg\n> \n> might do. I believe the version included in the release is the latter.\n\nI often wish there was a central repository, as having different versions and constant rebasing does get a bit annoying. \n\nMike's version at http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg does have the fix, but the only version mentioned on this trac ticket was yours at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which does not have the fix. The comment from William was \n\n\"I merged in  http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\"\n\nso I can only assume your version, and not Mikes is merged. \n\nActually, it appears changing\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\nto \n\n```\nif [ \"$SAGE64\" = \"yes\" ]; then\n```\n\n\n(as in Mike's version), does not fully solve the 64-bit build issue on OpenSolaris. However, it is certainly a desirable change, so if you make any more changes to pynac, can you change that one line. \n\nIn the mean time, I'll work on trying to resolve why that is not a complete fix for the 64-bit OpenSolaris issue, but it is certainly a necessary change. \n\nDave",
+    "body": "Replying to [comment:12 burcin]:\n> Hi Dave,\n> \n> Which package are you looking at. Unfortunately, there are several packages named pynac-0.2.0.spkg floating around. My version at\n> \n> http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n> \n> doesn't have the said fix, but Mike's version at \n> \n> http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg\n> \n> might do. I believe the version included in the release is the latter.\n\n\nI often wish there was a central repository, as having different versions and constant rebasing does get a bit annoying. \n\nMike's version at http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg does have the fix, but the only version mentioned on this trac ticket was yours at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which does not have the fix. The comment from William was \n\n\"I merged in  http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\"\n\nso I can only assume your version, and not Mikes is merged. \n\nActually, it appears changing\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\nto \n\n```\nif [ \"$SAGE64\" = \"yes\" ]; then\n```\n\n(as in Mike's version), does not fully solve the 64-bit build issue on OpenSolaris. However, it is certainly a desirable change, so if you make any more changes to pynac, can you change that one line. \n\nIn the mean time, I'll work on trying to resolve why that is not a complete fix for the 64-bit OpenSolaris issue, but it is certainly a necessary change. \n\nDave",
     "created_at": "2010-05-30T12:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8903",
     "type": "issue_comment",
@@ -328,6 +326,7 @@ Replying to [comment:12 burcin]:
 > 
 > might do. I believe the version included in the release is the latter.
 
+
 I often wish there was a central repository, as having different versions and constant rebasing does get a bit annoying. 
 
 Mike's version at http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg does have the fix, but the only version mentioned on this trac ticket was yours at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which does not have the fix. The comment from William was 
@@ -341,13 +340,11 @@ Actually, it appears changing
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
 ```
-
 to 
 
 ```
 if [ "$SAGE64" = "yes" ]; then
 ```
-
 
 (as in Mike's version), does not fully solve the 64-bit build issue on OpenSolaris. However, it is certainly a desirable change, so if you make any more changes to pynac, can you change that one line. 
 
@@ -380,7 +377,7 @@ I'll make sure that mine is the one in 4.4.3.alpha1.
 archive/issue_comments_081829.json:
 ```json
 {
-    "body": "Replying to [comment:14 mhansen]:\n> I'll make sure that mine is the one in 4.4.3.alpha1.\n\nThe ticket says Burchin's package has already been merged in sage-4.4.3.alpha1 - whether it is possible to reverse that easily I don't know. \n\nDave",
+    "body": "Replying to [comment:14 mhansen]:\n> I'll make sure that mine is the one in 4.4.3.alpha1.\n\n\nThe ticket says Burchin's package has already been merged in sage-4.4.3.alpha1 - whether it is possible to reverse that easily I don't know. \n\nDave",
     "created_at": "2010-05-30T18:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8903",
     "type": "issue_comment",
@@ -391,6 +388,7 @@ archive/issue_comments_081829.json:
 
 Replying to [comment:14 mhansen]:
 > I'll make sure that mine is the one in 4.4.3.alpha1.
+
 
 The ticket says Burchin's package has already been merged in sage-4.4.3.alpha1 - whether it is possible to reverse that easily I don't know. 
 

@@ -105,7 +105,7 @@ Changing status from new to needs_work.
 archive/issue_comments_085907.json:
 ```json
 {
-    "body": "Attachment [trac_9199_plot_fill.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.patch) by ryan created at 2010-08-03 06:34:10\n\nhere is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).\n\nInteresting issue...when running the doctests for this patch, the doctest timed out and then crashed.\n---------------------------------------\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n--------------------------------------- \nwhen plotting this in sagenb, it works fine.",
+    "body": "Attachment [trac_9199_plot_fill.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.patch) by ryan created at 2010-08-03 06:34:10\n\nhere is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).\n\nInteresting issue...when running the doctests for this patch, the doctest timed out and then crashed.\n\n---\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n\n---\nwhen plotting this in sagenb, it works fine.",
     "created_at": "2010-08-03T06:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -119,7 +119,8 @@ Attachment [trac_9199_plot_fill.patch](tarball://root/attachments/some-uuid/tick
 here is the patch that fixes the fill=False issue.  It breaks fill=None (however, fill=None isn't really that natural).
 
 Interesting issue...when running the doctests for this patch, the doctest timed out and then crashed.
----------------------------------------
+
+---
 Trying:
 plot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line
 2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not
@@ -127,7 +128,8 @@ Expecting nothing
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***
 [361.7 s]
---------------------------------------- 
+
+---
 when plotting this in sagenb, it works fine.
 
 
@@ -137,7 +139,7 @@ when plotting this in sagenb, it works fine.
 archive/issue_comments_085908.json:
 ```json
 {
-    "body": "Oops, here it is with better formatting.\n\n\n```\n---------------------------------------\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n--------------------------------------- \n```\n",
+    "body": "Oops, here it is with better formatting.\n\n```\n---------------------------------------\nTrying:\nplot(x**Integer(3),(x,Integer(1),Integer(2))) # this one does not###line\n2276:_sage_ >>> plot(x^3,(x,1,2)) # this one does not\nExpecting nothing\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n[361.7 s]\n--------------------------------------- \n```",
     "created_at": "2010-08-03T06:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -148,7 +150,6 @@ archive/issue_comments_085908.json:
 
 Oops, here it is with better formatting.
 
-
 ```
 ---------------------------------------
 Trying:
@@ -160,7 +161,6 @@ Expecting nothing
 [361.7 s]
 --------------------------------------- 
 ```
-
 
 
 
@@ -189,7 +189,7 @@ More important is whether anyone relies somewhere else in the code on fill=None 
 archive/issue_comments_085910.json:
 ```json
 {
-    "body": "well...about sage -t.  Every doctest I run crashes (they all time out and then crash at about 360 seconds).  It even crashes with my sage-main branch (which is my clean sage 4.5.1).  It's strange because with my last patch, the doctests work fine.  I'll try undoing the changes and see it changes anything.\n\nAs far as handling fill both False and None, not anything big.\njust need to change \n\n```\nif fill is not False:\n\nto\n\nif fill is not False and fill is not None:\n```\n\n\nI originally had it the second way, but I removed in the hopes that it would fix the doctest crashes (it didn't).\n\nI'll add it back as soon as I get back to my sage computer.",
+    "body": "well...about sage -t.  Every doctest I run crashes (they all time out and then crash at about 360 seconds).  It even crashes with my sage-main branch (which is my clean sage 4.5.1).  It's strange because with my last patch, the doctests work fine.  I'll try undoing the changes and see it changes anything.\n\nAs far as handling fill both False and None, not anything big.\njust need to change \n\n```\nif fill is not False:\n\nto\n\nif fill is not False and fill is not None:\n```\n\nI originally had it the second way, but I removed in the hopes that it would fix the doctest crashes (it didn't).\n\nI'll add it back as soon as I get back to my sage computer.",
     "created_at": "2010-08-03T15:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -210,7 +210,6 @@ to
 
 if fill is not False and fill is not None:
 ```
-
 
 I originally had it the second way, but I removed in the hopes that it would fix the doctest crashes (it didn't).
 
@@ -299,7 +298,7 @@ Rebased to 4.5.2; apply only this patch
 archive/issue_comments_085915.json:
 ```json
 {
-    "body": "I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n\n\n```\nplot(x^2,(x,-1,1), fill=None)\n\n```\n\n\nI get filling (where I didn't before the patch).",
+    "body": "I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n\n```\nplot(x^2,(x,-1,1), fill=None)\n\n```\n\nI get filling (where I didn't before the patch).",
     "created_at": "2010-08-29T02:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -310,12 +309,10 @@ archive/issue_comments_085915.json:
 
 I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:
 
-
 ```
 plot(x^2,(x,-1,1), fill=None)
 
 ```
-
 
 I get filling (where I didn't before the patch).
 
@@ -362,7 +359,7 @@ Updated patch (with Sage 4.5.3)
 archive/issue_comments_085918.json:
 ```json
 {
-    "body": "Attachment [trac_9199_plot_fill.3.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.3.patch) by ryan created at 2010-09-11 05:22:02\n\nReplying to [comment:8 jason]:\n> I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n> \n> {{{\n> plot(x^2,(x,-1,1), fill=None)\n> \n> }}}\n> \n> I get filling (where I didn't before the patch).\n\nUpdated patch should fix this.",
+    "body": "Attachment [trac_9199_plot_fill.3.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill.3.patch) by ryan created at 2010-09-11 05:22:02\n\nReplying to [comment:8 jason]:\n> I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:\n> \n> \n> ```\n> plot(x^2,(x,-1,1), fill=None)\n> \n> ```\n> \n> I get filling (where I didn't before the patch).\n\n\nUpdated patch should fix this.",
     "created_at": "2010-09-11T05:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
@@ -376,12 +373,14 @@ Attachment [trac_9199_plot_fill.3.patch](tarball://root/attachments/some-uuid/ti
 Replying to [comment:8 jason]:
 > I rebased your patch (your patch had the default color to be rgbcolor=(0,0,0) for some reason), and combined your two patches into one patch.  However, when I do:
 > 
-> {{{
+> 
+> ```
 > plot(x^2,(x,-1,1), fill=None)
 > 
-> }}}
+> ```
 > 
 > I get filling (where I didn't before the patch).
+
 
 Updated patch should fix this.
 

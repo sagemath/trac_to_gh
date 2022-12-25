@@ -111,7 +111,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061075.json:
 ```json
 {
-    "body": "Replying to [comment:1 jhpalmieri]:\n> I skimmed the patch but I'm not going to proofread it carefully; I'm assuming that you just took the new source code for jsMath 3.6c and replaced the old source code for jsMath 3.6b.\n\nIndeed. That's all I did.",
+    "body": "Replying to [comment:1 jhpalmieri]:\n> I skimmed the patch but I'm not going to proofread it carefully; I'm assuming that you just took the new source code for jsMath 3.6c and replaced the old source code for jsMath 3.6b.\n\n\nIndeed. That's all I did.",
     "created_at": "2009-10-30T14:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
@@ -122,6 +122,7 @@ archive/issue_comments_061075.json:
 
 Replying to [comment:1 jhpalmieri]:
 > I skimmed the patch but I'm not going to proofread it carefully; I'm assuming that you just took the new source code for jsMath 3.6c and replaced the old source code for jsMath 3.6b.
+
 
 Indeed. That's all I did.
 

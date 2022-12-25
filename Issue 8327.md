@@ -3,7 +3,7 @@
 archive/issues_008327.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat cwitty\n\nKeywords: Cyclotomic field, Zumbroich basis\n\nHere is a user story for this feature.\n\nWe construct the universal cyclotomic field::\n\n\n```\n    sage: F = CyclotomicField()\n```\n\n\nThis field contains all roots of unity:\n\n\n```\n    sage: z3 = F.zeta(3)\n    sage: z3\n    E(3)\n    sage: z3^3\n    1\n    sage: z5 = F.zeta(5)\n    sage: z5\n    E(5)\n    sage: z5^5\n    1\n```\n\n\nIt comes equipped with a distinguished basis, called the Zumbroich\nbasis, which consists of a strict subset of all roots of unity::\n\n\n```\n    sage: z9 = F.zeta(9)\n    -E(9)^4-E(9)^7\n    sage: z3 * z5\n    sage: E(15)^8\n    sage: z3 + z5\n    -E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n    sage: [z9^i for i in range(0,9)]\n    [1, -E(9)^4-E(9)^7, E(9)^2, E(3), E(9)^4, E(9)^5, E(3)^2, E(9)^7, -E(9)^2-E(9)^5 ]\n```\n\n\nNote: we might want some other style of pretty printing.\n\nThe following is called AsRootOfUnity in Chevie; we might want instead\nto use (z1*z3).multiplicative_order()::\n\n\n```\n    sage: (z1*z3).as_root_of_unity()\n    11/18\n```\n\n\nDepending on the progress on #6391 (lib gap), we might want to\nimplement this directly in Sage or to instead expose GAP's\nimplementation, creating elements as in::\n\n\n```\nsage: z5 = gap(\"E(5)\")\nsage: z3 = gap(\"E(3)\")\nsage: z3+z5\n-E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8327\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat cwitty\n\nKeywords: Cyclotomic field, Zumbroich basis\n\nHere is a user story for this feature.\n\nWe construct the universal cyclotomic field::\n\n```\n    sage: F = CyclotomicField()\n```\n\nThis field contains all roots of unity:\n\n```\n    sage: z3 = F.zeta(3)\n    sage: z3\n    E(3)\n    sage: z3^3\n    1\n    sage: z5 = F.zeta(5)\n    sage: z5\n    E(5)\n    sage: z5^5\n    1\n```\n\nIt comes equipped with a distinguished basis, called the Zumbroich\nbasis, which consists of a strict subset of all roots of unity::\n\n```\n    sage: z9 = F.zeta(9)\n    -E(9)^4-E(9)^7\n    sage: z3 * z5\n    sage: E(15)^8\n    sage: z3 + z5\n    -E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n    sage: [z9^i for i in range(0,9)]\n    [1, -E(9)^4-E(9)^7, E(9)^2, E(3), E(9)^4, E(9)^5, E(3)^2, E(9)^7, -E(9)^2-E(9)^5 ]\n```\n\nNote: we might want some other style of pretty printing.\n\nThe following is called AsRootOfUnity in Chevie; we might want instead\nto use (z1*z3).multiplicative_order()::\n\n```\n    sage: (z1*z3).as_root_of_unity()\n    11/18\n```\n\nDepending on the progress on #6391 (lib gap), we might want to\nimplement this directly in Sage or to instead expose GAP's\nimplementation, creating elements as in::\n\n```\nsage: z5 = gap(\"E(5)\")\nsage: z3 = gap(\"E(3)\")\nsage: z3+z5\n-E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8327\n\n",
     "created_at": "2010-02-22T17:48:55Z",
     "labels": [
         "component: number fields"
@@ -25,14 +25,11 @@ Here is a user story for this feature.
 
 We construct the universal cyclotomic field::
 
-
 ```
     sage: F = CyclotomicField()
 ```
 
-
 This field contains all roots of unity:
-
 
 ```
     sage: z3 = F.zeta(3)
@@ -47,10 +44,8 @@ This field contains all roots of unity:
     1
 ```
 
-
 It comes equipped with a distinguished basis, called the Zumbroich
 basis, which consists of a strict subset of all roots of unity::
-
 
 ```
     sage: z9 = F.zeta(9)
@@ -63,23 +58,19 @@ basis, which consists of a strict subset of all roots of unity::
     [1, -E(9)^4-E(9)^7, E(9)^2, E(3), E(9)^4, E(9)^5, E(3)^2, E(9)^7, -E(9)^2-E(9)^5 ]
 ```
 
-
 Note: we might want some other style of pretty printing.
 
 The following is called AsRootOfUnity in Chevie; we might want instead
 to use (z1*z3).multiplicative_order()::
-
 
 ```
     sage: (z1*z3).as_root_of_unity()
     11/18
 ```
 
-
 Depending on the progress on #6391 (lib gap), we might want to
 implement this directly in Sage or to instead expose GAP's
 implementation, creating elements as in::
-
 
 ```
 sage: z5 = gap("E(5)")
@@ -87,7 +78,6 @@ sage: z3 = gap("E(3)")
 sage: z3+z5
 -E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8327
 
@@ -120,7 +110,7 @@ However, I'd like to suggest we might want to use a different convention for the
 archive/issue_comments_073804.json:
 ```json
 {
-    "body": "Replying to [comment:2 craigcitro]:\n> So this seems interesting (I'd never heard of the Zumbrioch basis before). I don't have anything useful to say about the utility of this, or implementing it.\n> \n> However, I'd like to suggest we might want to use a different convention for the constructor -- I don't like the idea of `CyclotomicField()` working. That seems like something that's too easy for a user to accidentally do (leave out the `n` they intended to use), and I'd much rather they see an error than have it quietly succeed, only to discover that their cyclotomic field isn't quite what they expected (and likely slower to boot). Maybe something like `F = CyclotomicField(n=Infinity)`?\n\nI indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.",
+    "body": "Replying to [comment:2 craigcitro]:\n> So this seems interesting (I'd never heard of the Zumbrioch basis before). I don't have anything useful to say about the utility of this, or implementing it.\n> \n> However, I'd like to suggest we might want to use a different convention for the constructor -- I don't like the idea of `CyclotomicField()` working. That seems like something that's too easy for a user to accidentally do (leave out the `n` they intended to use), and I'd much rather they see an error than have it quietly succeed, only to discover that their cyclotomic field isn't quite what they expected (and likely slower to boot). Maybe something like `F = CyclotomicField(n=Infinity)`?\n\n\nI indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.",
     "created_at": "2010-02-22T21:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -134,6 +124,7 @@ Replying to [comment:2 craigcitro]:
 > 
 > However, I'd like to suggest we might want to use a different convention for the constructor -- I don't like the idea of `CyclotomicField()` working. That seems like something that's too easy for a user to accidentally do (leave out the `n` they intended to use), and I'd much rather they see an error than have it quietly succeed, only to discover that their cyclotomic field isn't quite what they expected (and likely slower to boot). Maybe something like `F = CyclotomicField(n=Infinity)`?
 
+
 I indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.
 
 
@@ -143,7 +134,7 @@ I indeed take any better suggestion! In Gap that would be Cyclotomics, but it do
 archive/issue_comments_073805.json:
 ```json
 {
-    "body": "Replying to [comment:3 nthiery]:\n> I indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.\n\nTrue. Maybe it's a bit too \"cutesy,\" but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.",
+    "body": "Replying to [comment:3 nthiery]:\n> I indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.\n\n\nTrue. Maybe it's a bit too \"cutesy,\" but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.",
     "created_at": "2010-02-22T21:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -155,6 +146,7 @@ archive/issue_comments_073805.json:
 Replying to [comment:3 nthiery]:
 > I indeed take any better suggestion! In Gap that would be Cyclotomics, but it does sound good in Field in the name. n=infinity might be misleading, since it's not about infinite roots of unity.
 
+
 True. Maybe it's a bit too "cutesy," but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.
 
 
@@ -164,7 +156,7 @@ True. Maybe it's a bit too "cutesy," but using `n=0` might be nice -- after all,
 archive/issue_comments_073806.json:
 ```json
 {
-    "body": "Replying to [comment:4 craigcitro]:\n> True. Maybe it's a bit too \"cutesy,\" but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.\n\nMmm, any complex number is a 0-th root of unity, isn't it?",
+    "body": "Replying to [comment:4 craigcitro]:\n> True. Maybe it's a bit too \"cutesy,\" but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.\n\n\nMmm, any complex number is a 0-th root of unity, isn't it?",
     "created_at": "2010-03-08T14:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -175,6 +167,7 @@ archive/issue_comments_073806.json:
 
 Replying to [comment:4 craigcitro]:
 > True. Maybe it's a bit too "cutesy," but using `n=0` might be nice -- after all, the `n`th cyclotomic field has roots of unity for all divisors of `n`, so this would still hold for the universal cyclotomic field and `n=0`.
+
 
 Mmm, any complex number is a 0-th root of unity, isn't it?
 
@@ -348,7 +341,7 @@ I've looked at the patchbot logs, and it gets worse -- the Cython code isn't val
 archive/issue_comments_073814.json:
 ```json
 {
-    "body": "Replying to [comment:13 davidloeffler]:\n> I've looked at the patchbot logs, and it gets worse -- the Cython code isn't valid apparently.\n\nThis was only as cython booleans changed in the meantime. Beside that, the code was always working properly. I changed this minor problem, and it should be working now again.\n\nI improved the documentation but there are still some things to be done...",
+    "body": "Replying to [comment:13 davidloeffler]:\n> I've looked at the patchbot logs, and it gets worse -- the Cython code isn't valid apparently.\n\n\nThis was only as cython booleans changed in the meantime. Beside that, the code was always working properly. I changed this minor problem, and it should be working now again.\n\nI improved the documentation but there are still some things to be done...",
     "created_at": "2011-01-26T03:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -359,6 +352,7 @@ archive/issue_comments_073814.json:
 
 Replying to [comment:13 davidloeffler]:
 > I've looked at the patchbot logs, and it gets worse -- the Cython code isn't valid apparently.
+
 
 This was only as cython booleans changed in the meantime. Beside that, the code was always working properly. I changed this minor problem, and it should be working now again.
 
@@ -611,7 +605,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073826.json:
 ```json
 {
-    "body": "Replying to [comment:26 nthiery]:\n> When applying the sage-combinat queue on sage 4.8.alpha0, we got a compilation error on universal_cyclotomic_field_c.pyx, most likely due to the updated cython (#11761)\n\nMy patch seems to fix the problem. At least, when one uses the new Cython spkg and applies the combinat queue up to and including Christian's patch and adds my patch as well (which is also in the combinat queue, I think), then sage builds and starts.\n\nNote that the my patch does not add the new  Cython as a dependency - it should run with the old Cython as well.\n\nHowever, I already get a doctest error in `devel/sage-combinat/doc/en/thematic_tutorials/sandpile.rst`. Now it is needed to test whether this error is due to the patches from here, or due to some other patch in the combinat queue.\n\nSince it is not sure whether THIS ticket is the culprit, and since it builds with the new cython, I am promiting it to \"needs review\".\n\n\nApply trac_8327_universal_cyclotomic_field-cs.patch trac_8327_universal_cyclotomic_field_new_cython-sk.patch",
+    "body": "Replying to [comment:26 nthiery]:\n> When applying the sage-combinat queue on sage 4.8.alpha0, we got a compilation error on universal_cyclotomic_field_c.pyx, most likely due to the updated cython (#11761)\n\n\nMy patch seems to fix the problem. At least, when one uses the new Cython spkg and applies the combinat queue up to and including Christian's patch and adds my patch as well (which is also in the combinat queue, I think), then sage builds and starts.\n\nNote that the my patch does not add the new  Cython as a dependency - it should run with the old Cython as well.\n\nHowever, I already get a doctest error in `devel/sage-combinat/doc/en/thematic_tutorials/sandpile.rst`. Now it is needed to test whether this error is due to the patches from here, or due to some other patch in the combinat queue.\n\nSince it is not sure whether THIS ticket is the culprit, and since it builds with the new cython, I am promiting it to \"needs review\".\n\n\nApply trac_8327_universal_cyclotomic_field-cs.patch trac_8327_universal_cyclotomic_field_new_cython-sk.patch",
     "created_at": "2011-11-15T20:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -622,6 +616,7 @@ archive/issue_comments_073826.json:
 
 Replying to [comment:26 nthiery]:
 > When applying the sage-combinat queue on sage 4.8.alpha0, we got a compilation error on universal_cyclotomic_field_c.pyx, most likely due to the updated cython (#11761)
+
 
 My patch seems to fix the problem. At least, when one uses the new Cython spkg and applies the combinat queue up to and including Christian's patch and adds my patch as well (which is also in the combinat queue, I think), then sage builds and starts.
 
@@ -735,7 +730,7 @@ So, apparently there is a dependency in the combinat queue. It should be named a
 archive/issue_comments_073832.json:
 ```json
 {
-    "body": "Replying to [comment:30 SimonKing]:\n> Gosh. And my patch fails to apply as well, in both hunks.\n\nO dear, where is my mind? I had accidentally reverted the order of the patches when I tried to apply my patch.\n\nSo, for the record: The first patch does need to be rebased (or a dependency must be given). The second patch applies cleanly.",
+    "body": "Replying to [comment:30 SimonKing]:\n> Gosh. And my patch fails to apply as well, in both hunks.\n\n\nO dear, where is my mind? I had accidentally reverted the order of the patches when I tried to apply my patch.\n\nSo, for the record: The first patch does need to be rebased (or a dependency must be given). The second patch applies cleanly.",
     "created_at": "2011-11-15T20:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -746,6 +741,7 @@ archive/issue_comments_073832.json:
 
 Replying to [comment:30 SimonKing]:
 > Gosh. And my patch fails to apply as well, in both hunks.
+
 
 O dear, where is my mind? I had accidentally reverted the order of the patches when I tried to apply my patch.
 
@@ -758,7 +754,7 @@ So, for the record: The first patch does need to be rebased (or a dependency mus
 archive/issue_comments_073833.json:
 ```json
 {
-    "body": "There are several doctest errors, even when one just has\n\n```\n11761-cython-0.15-rebased.patch\ntrac12029_clonable_int_array_2_list.patch\ntrac_8327_universal_cyclotomic_field-cs.patch\ntrac_8327_universal_cyclotomic_field_new_cython-sk.patch\n```\n\nwith the obvious modification on `trac_8327_universal_cyclotomic_field-cs.patch`.\n\nNamely:\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix2.pyx # 25 doctests failed\n        sage -t  devel/sage-main/sage/modules/free_module.py # 2 doctests failed\n        sage -t  devel/sage-main/sage/modular/modsym/p1list_nf.py # 5 doctests failed\n        sage -t  devel/sage-main/sage/tests/startup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx # 1 doctests failed\n```\n\n\nThis one here\n\n```\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\", line 239:\n    sage: ZumbroichDecomposition_list( 6, 1 )\nExpected:\n    array([1, 1])\nGot:\n    [1, 1]\n```\n\ncould be caused by my patch, which touches `ZumbroichDecomposition`. However, I have no idea about the other errors.",
+    "body": "There are several doctest errors, even when one just has\n\n```\n11761-cython-0.15-rebased.patch\ntrac12029_clonable_int_array_2_list.patch\ntrac_8327_universal_cyclotomic_field-cs.patch\ntrac_8327_universal_cyclotomic_field_new_cython-sk.patch\n```\nwith the obvious modification on `trac_8327_universal_cyclotomic_field-cs.patch`.\n\nNamely:\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix2.pyx # 25 doctests failed\n        sage -t  devel/sage-main/sage/modules/free_module.py # 2 doctests failed\n        sage -t  devel/sage-main/sage/modular/modsym/p1list_nf.py # 5 doctests failed\n        sage -t  devel/sage-main/sage/tests/startup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx # 1 doctests failed\n```\n\nThis one here\n\n```\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\", line 239:\n    sage: ZumbroichDecomposition_list( 6, 1 )\nExpected:\n    array([1, 1])\nGot:\n    [1, 1]\n```\ncould be caused by my patch, which touches `ZumbroichDecomposition`. However, I have no idea about the other errors.",
     "created_at": "2011-11-15T21:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -775,7 +771,6 @@ trac12029_clonable_int_array_2_list.patch
 trac_8327_universal_cyclotomic_field-cs.patch
 trac_8327_universal_cyclotomic_field_new_cython-sk.patch
 ```
-
 with the obvious modification on `trac_8327_universal_cyclotomic_field-cs.patch`.
 
 Namely:
@@ -788,7 +783,6 @@ Namely:
         sage -t  devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx # 1 doctests failed
 ```
 
-
 This one here
 
 ```
@@ -799,7 +793,6 @@ Expected:
 Got:
     [1, 1]
 ```
-
 could be caused by my patch, which touches `ZumbroichDecomposition`. However, I have no idea about the other errors.
 
 
@@ -829,7 +822,7 @@ Best, Christian
 archive/issue_comments_073835.json:
 ```json
 {
-    "body": "Replying to [comment:33 stumpc5]:\n> Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...\n\nI guess, I should first compile 4.7.2; that will take a while first...",
+    "body": "Replying to [comment:33 stumpc5]:\n> Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...\n\n\nI guess, I should first compile 4.7.2; that will take a while first...",
     "created_at": "2011-11-16T07:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -841,6 +834,7 @@ archive/issue_comments_073835.json:
 Replying to [comment:33 stumpc5]:
 > Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...
 
+
 I guess, I should first compile 4.7.2; that will take a while first...
 
 
@@ -850,7 +844,7 @@ I guess, I should first compile 4.7.2; that will take a while first...
 archive/issue_comments_073836.json:
 ```json
 {
-    "body": "> > Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...\n\nCool!\n\n> I guess, I should first compile 4.7.2; that will take a while first...\n\n4_8 alpha0 actually\n\nCheers,",
+    "body": "> > Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...\n\n\nCool!\n\n> I guess, I should first compile 4.7.2; that will take a while first...\n\n\n4_8 alpha0 actually\n\nCheers,",
     "created_at": "2011-11-16T07:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -861,9 +855,11 @@ archive/issue_comments_073836.json:
 
 > > Thanks for working in this patch -- I will have a look at it this morning and see what the issues are...
 
+
 Cool!
 
 > I guess, I should first compile 4.7.2; that will take a while first...
+
 
 4_8 alpha0 actually
 
@@ -914,7 +910,7 @@ What about "needs more doctests and Sphinxified docstrings"? I agree that the cy
 archive/issue_comments_073839.json:
 ```json
 {
-    "body": "Replying to [comment:36 stumpc5]:\n> I found the bug and fixed it, all the above doctests now work (but only on 4.7.1, the other version is still building and will take more time).\n\nGood! I'll test it a bit later.\n\n> What about \"needs more doctests and Sphinxified docstrings\"? I agree that the cython part is still not well documented. Could you be specific where I should explain better what's going on?\n\nIf by \"you\" you mean me, then I can't: The statement \"needs more doctests ...\" has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.",
+    "body": "Replying to [comment:36 stumpc5]:\n> I found the bug and fixed it, all the above doctests now work (but only on 4.7.1, the other version is still building and will take more time).\n\n\nGood! I'll test it a bit later.\n\n> What about \"needs more doctests and Sphinxified docstrings\"? I agree that the cython part is still not well documented. Could you be specific where I should explain better what's going on?\n\n\nIf by \"you\" you mean me, then I can't: The statement \"needs more doctests ...\" has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.",
     "created_at": "2011-11-16T09:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -926,9 +922,11 @@ archive/issue_comments_073839.json:
 Replying to [comment:36 stumpc5]:
 > I found the bug and fixed it, all the above doctests now work (but only on 4.7.1, the other version is still building and will take more time).
 
+
 Good! I'll test it a bit later.
 
 > What about "needs more doctests and Sphinxified docstrings"? I agree that the cython part is still not well documented. Could you be specific where I should explain better what's going on?
+
 
 If by "you" you mean me, then I can't: The statement "needs more doctests ..." has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.
 
@@ -939,7 +937,7 @@ If by "you" you mean me, then I can't: The statement "needs more doctests ..." h
 archive/issue_comments_073840.json:
 ```json
 {
-    "body": "Replying to [comment:37 SimonKing]:\n\n> If by \"you\" you mean me, then I can't: The statement \"needs more doctests ...\" has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.\n> \n\n(That was 10 months ago and applied to a much earlier version of the patch.)",
+    "body": "Replying to [comment:37 SimonKing]:\n\n> If by \"you\" you mean me, then I can't: The statement \"needs more doctests ...\" has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.\n> \n\n\n(That was 10 months ago and applied to a much earlier version of the patch.)",
     "created_at": "2011-11-16T09:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -953,6 +951,7 @@ Replying to [comment:37 SimonKing]:
 > If by "you" you mean me, then I can't: The statement "needs more doctests ..." has been there before and is due to David Loeffler. I didn't come that far in reading the patch, I was first testing whether it applies, builds and passes tests.
 > 
 
+
 (That was 10 months ago and applied to a much earlier version of the patch.)
 
 
@@ -962,7 +961,7 @@ Replying to [comment:37 SimonKing]:
 archive/issue_comments_073841.json:
 ```json
 {
-    "body": "> (That was 10 months ago and applied to a much earlier version of the patch.)\n\nI now remember seeing it back then, the patch indeed changed substantially since then. So I guess it simply needs a new review.",
+    "body": "> (That was 10 months ago and applied to a much earlier version of the patch.)\n\n\nI now remember seeing it back then, the patch indeed changed substantially since then. So I guess it simply needs a new review.",
     "created_at": "2011-11-16T09:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -972,6 +971,7 @@ archive/issue_comments_073841.json:
 ```
 
 > (That was 10 months ago and applied to a much earlier version of the patch.)
+
 
 I now remember seeing it back then, the patch indeed changed substantially since then. So I guess it simply needs a new review.
 
@@ -1040,7 +1040,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073845.json:
 ```json
 {
-    "body": "Replying to [comment:41 SimonKing]:\n> When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> \n> I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n> \n> Well, I understand that you are building 4.7.2 anyway, aren't you\n\nI am building 4.7.2 and 4.8, but te later just failed to build... l will do the rebase after 4.7.2 has finished (or you do it, if \nyou want to, it will basically take the whole day until the building is done)",
+    "body": "Replying to [comment:41 SimonKing]:\n> When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> \n> I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n> \n> Well, I understand that you are building 4.7.2 anyway, aren't you\n\n\nI am building 4.7.2 and 4.8, but te later just failed to build... l will do the rebase after 4.7.2 has finished (or you do it, if \nyou want to, it will basically take the whole day until the building is done)",
     "created_at": "2011-11-16T11:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1056,6 +1056,7 @@ Replying to [comment:41 SimonKing]:
 > 
 > Well, I understand that you are building 4.7.2 anyway, aren't you
 
+
 I am building 4.7.2 and 4.8, but te later just failed to build... l will do the rebase after 4.7.2 has finished (or you do it, if 
 you want to, it will basically take the whole day until the building is done)
 
@@ -1066,7 +1067,7 @@ you want to, it will basically take the whole day until the building is done)
 archive/issue_comments_073846.json:
 ```json
 {
-    "body": "Replying to [comment:42 stumpc5]:\n> I am building 4.7.2 and 4.8, but te later just failed to build...\n\nWhat, 4.8.alpha0 (or alpha1) failed to build?? That should not happen. Perhaps you can report on sage-release?",
+    "body": "Replying to [comment:42 stumpc5]:\n> I am building 4.7.2 and 4.8, but te later just failed to build...\n\n\nWhat, 4.8.alpha0 (or alpha1) failed to build?? That should not happen. Perhaps you can report on sage-release?",
     "created_at": "2011-11-16T11:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1078,6 +1079,7 @@ archive/issue_comments_073846.json:
 Replying to [comment:42 stumpc5]:
 > I am building 4.7.2 and 4.8, but te later just failed to build...
 
+
 What, 4.8.alpha0 (or alpha1) failed to build?? That should not happen. Perhaps you can report on sage-release?
 
 
@@ -1087,7 +1089,7 @@ What, 4.8.alpha0 (or alpha1) failed to build?? That should not happen. Perhaps y
 archive/issue_comments_073847.json:
 ```json
 {
-    "body": "Replying to [comment:41 SimonKing]:\n> When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> \n> I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n\nIIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.",
+    "body": "Replying to [comment:41 SimonKing]:\n> When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> \n> I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n\n\nIIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.",
     "created_at": "2011-11-16T12:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1101,6 +1103,7 @@ Replying to [comment:41 SimonKing]:
 > 
 > I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.
 
+
 IIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.
 
 
@@ -1110,7 +1113,7 @@ IIRC, this patch already applies on 4.7.2: I already rebased it last week upon 1
 archive/issue_comments_073848.json:
 ```json
 {
-    "body": "Replying to [comment:44 nthiery]:\n> Replying to [comment:41 SimonKing]:\n> > When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> > \n> > I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n> \n> IIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.\n\nI did the same mistake the other way round: I did changes about 5 weeks ago, and only putted it on trac but not on the combinat queue...\n\nI just merged both versions, and the doctest should pass now, and it should be rebased (both only if I didn't do any mistakes...).",
+    "body": "Replying to [comment:44 nthiery]:\n> Replying to [comment:41 SimonKing]:\n> > When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.\n> > \n> > I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.\n\n> \n> IIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.\n\n\nI did the same mistake the other way round: I did changes about 5 weeks ago, and only putted it on trac but not on the combinat queue...\n\nI just merged both versions, and the doctest should pass now, and it should be rebased (both only if I didn't do any mistakes...).",
     "created_at": "2011-11-16T13:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1124,8 +1127,10 @@ Replying to [comment:44 nthiery]:
 > > When starting with sage-4.8.alpha0 plus the stuff from #11761 (new cython), one quite big hunk of your new patch fails to apply. It concerns sage/categories/fields.py.
 > > 
 > > I found at least one reason for the mismatch: By trac ticket #10771 (sorry, it's one of mine...), `Fields()` has some `ElementMethods` (your patch assumes that there are none). Since #10771 has been merged in sage-4.7.2, I make this a dependency.
+
 > 
 > IIRC, this patch already applies on 4.7.2: I already rebased it last week upon 10771. Ah ah, I was in a hurry, and probably forgot to upload it on trac, sorry. Please take the latest version from the sage-combinat patch server.
+
 
 I did the same mistake the other way round: I did changes about 5 weeks ago, and only putted it on trac but not on the combinat queue...
 
@@ -1138,7 +1143,7 @@ I just merged both versions, and the doctest should pass now, and it should be r
 archive/issue_comments_073849.json:
 ```json
 {
-    "body": "The new patch does not apply, because of the hunk\n\n```\n--- all.py\n+++ all.py\n@@ -1,3 +1,5 @@\n+from sage.misc.lazy_import import lazy_import\n+\n from category import    is_Category, Category, HomCategory\n\n```\n\n\nThe point is that this hunk shold be totally removed, because lazy import is not needed in sage/categories/all.py.\n\nFor testing, I'm doing this change myself. But please post a patch without that hunk",
+    "body": "The new patch does not apply, because of the hunk\n\n```\n--- all.py\n+++ all.py\n@@ -1,3 +1,5 @@\n+from sage.misc.lazy_import import lazy_import\n+\n from category import    is_Category, Category, HomCategory\n\n```\n\nThe point is that this hunk shold be totally removed, because lazy import is not needed in sage/categories/all.py.\n\nFor testing, I'm doing this change myself. But please post a patch without that hunk",
     "created_at": "2011-11-16T14:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1158,7 +1163,6 @@ The new patch does not apply, because of the hunk
  from category import    is_Category, Category, HomCategory
 
 ```
-
 
 The point is that this hunk shold be totally removed, because lazy import is not needed in sage/categories/all.py.
 
@@ -1189,7 +1193,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073851.json:
 ```json
 {
-    "body": "Sorry, lazy_import *is* used. So, don't delete the patch. However, it does not apply. Reason: The first line of sage/categories/all.py currently is\n\n```\nfrom category import    is_Category, Category, HomCategory, AbstractCategory\n```\n\nMy guess is that you worked on top of Nicolas's \"multiple realizations\" patch.\n\nSo, either submit a patch on trac that differs from the one in the combinat queue, or name #7980 as a dependency.\n\nSuggestion: I can manually rebase your patch, so that I can test (and review) it now. The merge conflict is trivial and can be sorted out later.",
+    "body": "Sorry, lazy_import *is* used. So, don't delete the patch. However, it does not apply. Reason: The first line of sage/categories/all.py currently is\n\n```\nfrom category import    is_Category, Category, HomCategory, AbstractCategory\n```\nMy guess is that you worked on top of Nicolas's \"multiple realizations\" patch.\n\nSo, either submit a patch on trac that differs from the one in the combinat queue, or name #7980 as a dependency.\n\nSuggestion: I can manually rebase your patch, so that I can test (and review) it now. The merge conflict is trivial and can be sorted out later.",
     "created_at": "2011-11-16T14:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1203,7 +1207,6 @@ Sorry, lazy_import *is* used. So, don't delete the patch. However, it does not a
 ```
 from category import    is_Category, Category, HomCategory, AbstractCategory
 ```
-
 My guess is that you worked on top of Nicolas's "multiple realizations" patch.
 
 So, either submit a patch on trac that differs from the one in the combinat queue, or name #7980 as a dependency.
@@ -1217,7 +1220,7 @@ Suggestion: I can manually rebase your patch, so that I can test (and review) it
 archive/issue_comments_073852.json:
 ```json
 {
-    "body": "Replying to [comment:47 SimonKing]:\n> Suggestion: I can manually rebase your patch, so that I can test (and review) it now. The merge conflict is trivial and can be sorted out later.\n\nI am a little lost now: you don't want the current patch but the one I\nhad before without Nicolas' rebase?",
+    "body": "Replying to [comment:47 SimonKing]:\n> Suggestion: I can manually rebase your patch, so that I can test (and review) it now. The merge conflict is trivial and can be sorted out later.\n\n\nI am a little lost now: you don't want the current patch but the one I\nhad before without Nicolas' rebase?",
     "created_at": "2011-11-16T14:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1229,6 +1232,7 @@ archive/issue_comments_073852.json:
 Replying to [comment:47 SimonKing]:
 > Suggestion: I can manually rebase your patch, so that I can test (and review) it now. The merge conflict is trivial and can be sorted out later.
 
+
 I am a little lost now: you don't want the current patch but the one I
 had before without Nicolas' rebase?
 
@@ -1239,7 +1243,7 @@ had before without Nicolas' rebase?
 archive/issue_comments_073853.json:
 ```json
 {
-    "body": "Replying to [comment:48 stumpc5]:\n> I am a little lost now: you don't want the current patch but the one I\n> had before without Nicolas' rebase?\n\nThe patch that is attached here does not apply on pure sage-4.7.2 or sage-4.8.alpha0. The reason is that this patch depends on Nicolas's patch from #7980.\n\nSo, at some point, the merge conflict has to be sorted out. However, for my review I don't need that you rebase it now.",
+    "body": "Replying to [comment:48 stumpc5]:\n> I am a little lost now: you don't want the current patch but the one I\n> had before without Nicolas' rebase?\n\n\nThe patch that is attached here does not apply on pure sage-4.7.2 or sage-4.8.alpha0. The reason is that this patch depends on Nicolas's patch from #7980.\n\nSo, at some point, the merge conflict has to be sorted out. However, for my review I don't need that you rebase it now.",
     "created_at": "2011-11-16T15:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1252,6 +1256,7 @@ Replying to [comment:48 stumpc5]:
 > I am a little lost now: you don't want the current patch but the one I
 > had before without Nicolas' rebase?
 
+
 The patch that is attached here does not apply on pure sage-4.7.2 or sage-4.8.alpha0. The reason is that this patch depends on Nicolas's patch from #7980.
 
 So, at some point, the merge conflict has to be sorted out. However, for my review I don't need that you rebase it now.
@@ -1263,7 +1268,7 @@ So, at some point, the merge conflict has to be sorted out. However, for my revi
 archive/issue_comments_073854.json:
 ```json
 {
-    "body": "I get one error in startup.py:\n\n```\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/tests/startup.py\", line 13:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n```\n\n\nDo you import numpy at startup? Nicolas has just found that ticket #11714 explicitly avoids numpy being loaded at startup.",
+    "body": "I get one error in startup.py:\n\n```\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/tests/startup.py\", line 13:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n```\n\nDo you import numpy at startup? Nicolas has just found that ticket #11714 explicitly avoids numpy being loaded at startup.",
     "created_at": "2011-11-16T16:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1282,7 +1287,6 @@ Expected:
 Got:
     True
 ```
-
 
 Do you import numpy at startup? Nicolas has just found that ticket #11714 explicitly avoids numpy being loaded at startup.
 
@@ -1329,7 +1333,7 @@ archive/issue_comments_073856.json:
 archive/issue_comments_073857.json:
 ```json
 {
-    "body": "OK, done.\n\nWhen applying both patches, one gets\n\n```\nsage: 'numpy' in sys.modules\nFalse\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\nsage: UCF\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: 'numpy' in sys.modules\nTrue\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\n```\n\nSo, numpy is only imported when needed, and this is what #11714 was about.\n\nApply trac_8327_universal_cyclotomic_field-cs.patch trac8327_lazy_import_UCF.patch",
+    "body": "OK, done.\n\nWhen applying both patches, one gets\n\n```\nsage: 'numpy' in sys.modules\nFalse\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\nsage: UCF\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: 'numpy' in sys.modules\nTrue\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\n```\nSo, numpy is only imported when needed, and this is what #11714 was about.\n\nApply trac_8327_universal_cyclotomic_field-cs.patch trac8327_lazy_import_UCF.patch",
     "created_at": "2011-11-16T16:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1354,7 +1358,6 @@ True
 sage: sage0("'numpy' in sys.modules")
 False
 ```
-
 So, numpy is only imported when needed, and this is what #11714 was about.
 
 Apply trac_8327_universal_cyclotomic_field-cs.patch trac8327_lazy_import_UCF.patch
@@ -1384,7 +1387,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073859.json:
 ```json
 {
-    "body": "Starting with sage-4.8.alpha0 plus the new Cython plus your patch (rebased in the obvious way) plus the lazy_import patch, we are down to one error:\n\n```\nsage -t  \"devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\"\n**********************************************************************\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\", line 274:\n    sage: UCF.is_subring(UCF)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/universal_cyclotomic_field_4421.py\n         [3.3 s]\n```\n\nAny idea why that occurs?",
+    "body": "Starting with sage-4.8.alpha0 plus the new Cython plus your patch (rebased in the obvious way) plus the lazy_import patch, we are down to one error:\n\n```\nsage -t  \"devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\"\n**********************************************************************\nFile \"/mnt/local/king/SAGE/rebase/sage-4.8.alpha0/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\", line 274:\n    sage: UCF.is_subring(UCF)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/universal_cyclotomic_field_4421.py\n         [3.3 s]\n```\nAny idea why that occurs?",
     "created_at": "2011-11-16T22:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1411,7 +1414,6 @@ Got:
 For whitespace errors, see the file /mnt/local/king/.sage/tmp/universal_cyclotomic_field_4421.py
          [3.3 s]
 ```
-
 Any idea why that occurs?
 
 
@@ -1421,7 +1423,7 @@ Any idea why that occurs?
 archive/issue_comments_073860.json:
 ```json
 {
-    "body": "Replying to [comment:54 SimonKing]:\n>     sage: UCF.is_subring(UCF)\n> Expected:\n>     True\n> Got:\n>     False\n\nUCF.is_subring(UCF) just returns\n\n```\nsage: UCF is UCF\n```\n\nand as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`. I don't know if this error might come from some lazy import which makes UCF not unique, or if something changed in `UniqueRepresentation`? Nicolas might know...",
+    "body": "Replying to [comment:54 SimonKing]:\n>     sage: UCF.is_subring(UCF)\n\n> Expected:\n>     True\n\n> Got:\n>     False\n\n\nUCF.is_subring(UCF) just returns\n\n```\nsage: UCF is UCF\n```\nand as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`. I don't know if this error might come from some lazy import which makes UCF not unique, or if something changed in `UniqueRepresentation`? Nicolas might know...",
     "created_at": "2011-11-17T08:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1432,17 +1434,19 @@ archive/issue_comments_073860.json:
 
 Replying to [comment:54 SimonKing]:
 >     sage: UCF.is_subring(UCF)
+
 > Expected:
 >     True
+
 > Got:
 >     False
+
 
 UCF.is_subring(UCF) just returns
 
 ```
 sage: UCF is UCF
 ```
-
 and as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`. I don't know if this error might come from some lazy import which makes UCF not unique, or if something changed in `UniqueRepresentation`? Nicolas might know...
 
 
@@ -1452,7 +1456,7 @@ and as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this sho
 archive/issue_comments_073861.json:
 ```json
 {
-    "body": "Replying to [comment:55 stumpc5]:\n> UCF.is_subring(UCF) just returns\n> {{{\n> sage: UCF is UCF\n> }}}\n> and as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`.\n\nThat's independent of UniqueRepresentation: ``X is X`` is true for any\nPython object X.\n\nSo the test above breaks, my best bet is that the is_ring method that\ngets called is the wrong one.\n\nGood chase!\n\t\t\t\tNicolas",
+    "body": "Replying to [comment:55 stumpc5]:\n> UCF.is_subring(UCF) just returns\n> \n> ```\n> sage: UCF is UCF\n> ```\n> and as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`.\n\n\nThat's independent of UniqueRepresentation: ``X is X`` is true for any\nPython object X.\n\nSo the test above breaks, my best bet is that the is_ring method that\ngets called is the wrong one.\n\nGood chase!\n\t\t\t\tNicolas",
     "created_at": "2011-11-17T13:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1463,10 +1467,12 @@ archive/issue_comments_073861.json:
 
 Replying to [comment:55 stumpc5]:
 > UCF.is_subring(UCF) just returns
-> {{{
+> 
+> ```
 > sage: UCF is UCF
-> }}}
+> ```
 > and as `UniversalCyclotomicField` inherits from `UniqueRepresentation`, this should return `True`.
+
 
 That's independent of UniqueRepresentation: ``X is X`` is true for any
 Python object X.
@@ -1484,7 +1490,7 @@ Good chase!
 archive/issue_comments_073862.json:
 ```json
 {
-    "body": "Replying to [comment:56 nthiery]:\n> Replying to [comment:55 stumpc5]:\n> So the test above breaks, my best bet is that the is_ring method that\n> gets called is the wrong one.\n\nI found the problem with building sage (see #11970).\n\n4.7.2 has finished, and I now build 4.8.alpha1. I will investigate the above problem as soon as it is finished...",
+    "body": "Replying to [comment:56 nthiery]:\n> Replying to [comment:55 stumpc5]:\n> So the test above breaks, my best bet is that the is_ring method that\n> gets called is the wrong one.\n\n\nI found the problem with building sage (see #11970).\n\n4.7.2 has finished, and I now build 4.8.alpha1. I will investigate the above problem as soon as it is finished...",
     "created_at": "2011-11-18T11:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1497,6 +1503,7 @@ Replying to [comment:56 nthiery]:
 > Replying to [comment:55 stumpc5]:
 > So the test above breaks, my best bet is that the is_ring method that
 > gets called is the wrong one.
+
 
 I found the problem with building sage (see #11970).
 
@@ -1527,7 +1534,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073864.json:
 ```json
 {
-    "body": "It is rebased and applies now on a new 4.8.alpha1 (NOT alpha0, but alpha1!)\n\nThere was a syntax error on the plain 4.8.alpha1, which I first had to get rid off.\n\nConcerning the is_subring method, I get the following behaviour:\n\n\n```\nsage: UCF is UCF\nTrue\n\nsage: UCF.is_subring??\n    def is_subring(self,other):\n        r\"\"\"\n        Returns currently True if ``self`` and ``other`` coincide.\n\n        EXAMPLES::\n\n            sage: UCF.is_subring(UCF)\n            True\n        \"\"\"\n        return other is self\n\nsage: UCF.is_subring(UCF)\nFalse\n```\n\n\nThis behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!",
+    "body": "It is rebased and applies now on a new 4.8.alpha1 (NOT alpha0, but alpha1!)\n\nThere was a syntax error on the plain 4.8.alpha1, which I first had to get rid off.\n\nConcerning the is_subring method, I get the following behaviour:\n\n```\nsage: UCF is UCF\nTrue\n\nsage: UCF.is_subring??\n    def is_subring(self,other):\n        r\"\"\"\n        Returns currently True if ``self`` and ``other`` coincide.\n\n        EXAMPLES::\n\n            sage: UCF.is_subring(UCF)\n            True\n        \"\"\"\n        return other is self\n\nsage: UCF.is_subring(UCF)\nFalse\n```\n\nThis behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!",
     "created_at": "2011-11-18T17:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1541,7 +1548,6 @@ It is rebased and applies now on a new 4.8.alpha1 (NOT alpha0, but alpha1!)
 There was a syntax error on the plain 4.8.alpha1, which I first had to get rid off.
 
 Concerning the is_subring method, I get the following behaviour:
-
 
 ```
 sage: UCF is UCF
@@ -1563,7 +1569,6 @@ sage: UCF.is_subring(UCF)
 False
 ```
 
-
 This behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!
 
 
@@ -1573,7 +1578,7 @@ This behaviour seems to be wired! But when replacing the lazy import of the UCF 
 archive/issue_comments_073865.json:
 ```json
 {
-    "body": "Replying to [comment:58 stumpc5]:\n> {{{\n> sage: UCF.is_subring(UCF)\n> False\n> }}}\n> \n> This behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!\n\nAch ja! Sorry, I should have thought about this: it is an instance of\n#10906: \"lazy import can break unique representation\". So UCF should\nnot be lazy imported. One probably can't lazy cimport numpy in\nuniversal_cyclotomic_field_c.pyx. Hopefully one could replace, in\nuniversal_cyclotomic_field.py:\n\n\n```\nfrom sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c import * \n```\n\n\nby explicit lazy imports of the various functions:\n\n\n```\nlazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')\n```\n\n\nor maybe just lazy import that module as, say, ucfc, and qualify all\nits functions with it.\n\nI don't have a working Sage in which I could insert the UCF patch\nright now. But let me know if you need help!\n\nCheers,\n\t\t\t\tNicolas",
+    "body": "Replying to [comment:58 stumpc5]:\n> {{{\n> sage: UCF.is_subring(UCF)\n> False\n> }}}\n> \n> This behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!\n\n\nAch ja! Sorry, I should have thought about this: it is an instance of\n#10906: \"lazy import can break unique representation\". So UCF should\nnot be lazy imported. One probably can't lazy cimport numpy in\nuniversal_cyclotomic_field_c.pyx. Hopefully one could replace, in\nuniversal_cyclotomic_field.py:\n\n```\nfrom sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c import * \n```\n\nby explicit lazy imports of the various functions:\n\n```\nlazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')\n```\n\nor maybe just lazy import that module as, say, ucfc, and qualify all\nits functions with it.\n\nI don't have a working Sage in which I could insert the UCF patch\nright now. But let me know if you need help!\n\nCheers,\n\t\t\t\tNicolas",
     "created_at": "2011-11-18T22:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1590,25 +1595,22 @@ Replying to [comment:58 stumpc5]:
 > 
 > This behaviour seems to be wired! But when replacing the lazy import of the UCF by a proper import in sage.rings.all, the wired behaviour disappears, so the problem must be something with the lazy import!
 
+
 Ach ja! Sorry, I should have thought about this: it is an instance of
 #10906: "lazy import can break unique representation". So UCF should
 not be lazy imported. One probably can't lazy cimport numpy in
 universal_cyclotomic_field_c.pyx. Hopefully one could replace, in
 universal_cyclotomic_field.py:
 
-
 ```
 from sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c import * 
 ```
 
-
 by explicit lazy imports of the various functions:
-
 
 ```
 lazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')
 ```
-
 
 or maybe just lazy import that module as, say, ucfc, and qualify all
 its functions with it.
@@ -1626,7 +1628,7 @@ Cheers,
 archive/issue_comments_073866.json:
 ```json
 {
-    "body": "Replying to [comment:59 nthiery]:\n> Replying to [comment:58 stumpc5]:\n> {{{\n> lazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')\n> }}}\n\nI now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?",
+    "body": "Replying to [comment:59 nthiery]:\n> Replying to [comment:58 stumpc5]:\n> \n> ```\n> lazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')\n> ```\n\n\nI now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?",
     "created_at": "2011-11-18T23:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1637,9 +1639,11 @@ archive/issue_comments_073866.json:
 
 Replying to [comment:59 nthiery]:
 > Replying to [comment:58 stumpc5]:
-> {{{
+> 
+> ```
 > lazy_import('sage.rings.universal_cyclotomic_field.universal_cyclotomic_field_c', 'ZumbroichBasis...')
-> }}}
+> ```
+
 
 I now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?
 
@@ -1650,7 +1654,7 @@ I now do that, and all tests pass -- but I somehow missed why we want to lazy im
 archive/issue_comments_073867.json:
 ```json
 {
-    "body": "Replying to [comment:60 stumpc5]:\n> I now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?\n\nApparently, there was a patch recently merged that explicitly had the purpose of \"do not import numpy at startup\". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.",
+    "body": "Replying to [comment:60 stumpc5]:\n> I now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?\n\n\nApparently, there was a patch recently merged that explicitly had the purpose of \"do not import numpy at startup\". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.",
     "created_at": "2011-11-18T23:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1662,6 +1666,7 @@ archive/issue_comments_073867.json:
 Replying to [comment:60 stumpc5]:
 > I now do that, and all tests pass -- but I somehow missed why we want to lazy import anything; is it about importing numpy?
 
+
 Apparently, there was a patch recently merged that explicitly had the purpose of "do not import numpy at startup". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.
 
 
@@ -1671,7 +1676,7 @@ Apparently, there was a patch recently merged that explicitly had the purpose of
 archive/issue_comments_073868.json:
 ```json
 {
-    "body": "Replying to [comment:61 SimonKing]:\n> Replying to [comment:60 stumpc5]:\n> Apparently, there was a patch recently merged that explicitly had the purpose of \"do not import numpy at startup\". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.\n\nI see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...",
+    "body": "Replying to [comment:61 SimonKing]:\n> Replying to [comment:60 stumpc5]:\n> Apparently, there was a patch recently merged that explicitly had the purpose of \"do not import numpy at startup\". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.\n\n\nI see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...",
     "created_at": "2011-11-19T08:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1684,6 +1689,7 @@ Replying to [comment:61 SimonKing]:
 > Replying to [comment:60 stumpc5]:
 > Apparently, there was a patch recently merged that explicitly had the purpose of "do not import numpy at startup". SO, I guess it would be better to not re-introduce the numpy import, unless we *really* need it.
 
+
 I see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...
 
 
@@ -1693,7 +1699,7 @@ I see -- I made some mistake last night, but now, the cython part is lazy import
 archive/issue_comments_073869.json:
 ```json
 {
-    "body": "Replying to [comment:62 stumpc5]:\n> I see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...\n\nCool. Thanks! This is as much saved for Sage's startup.\n\nCheers,\n                     Nicolas",
+    "body": "Replying to [comment:62 stumpc5]:\n> I see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...\n\n\nCool. Thanks! This is as much saved for Sage's startup.\n\nCheers,\n                     Nicolas",
     "created_at": "2011-11-19T09:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1704,6 +1710,7 @@ archive/issue_comments_073869.json:
 
 Replying to [comment:62 stumpc5]:
 > I see -- I made some mistake last night, but now, the cython part is lazy imported, and all tests pass...
+
 
 Cool. Thanks! This is as much saved for Sage's startup.
 
@@ -1735,7 +1742,7 @@ Ping.  I think we should try to get this in shortly.
 archive/issue_comments_073871.json:
 ```json
 {
-    "body": "Replying to [comment:64 mhansen]:\n> Ping.  I think we should try to get this in shortly.\n\n+1.\n\nSimon, are you planning to review it? Or anyone else volunteering?\n\nChristian",
+    "body": "Replying to [comment:64 mhansen]:\n> Ping.  I think we should try to get this in shortly.\n\n\n+1.\n\nSimon, are you planning to review it? Or anyone else volunteering?\n\nChristian",
     "created_at": "2011-12-18T13:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1746,6 +1753,7 @@ archive/issue_comments_073871.json:
 
 Replying to [comment:64 mhansen]:
 > Ping.  I think we should try to get this in shortly.
+
 
 +1.
 
@@ -1784,7 +1792,7 @@ Also, there are two work issues mentioned. Are these fixed? I.e., is it really "
 archive/issue_comments_073873.json:
 ```json
 {
-    "body": "Replying to [comment:66 SimonKing]:\n> I'm a bit lost. I am listed as an author, and some comments mention a patch of mine. But where is that patch? I'm talking about trac_8327_universal_cyclotomic_field_new_cython-sk.patch \n> \n> Similarly, where is trac8327_lazy_import_UCF.patch ?\n\nAs your patches were only a few lines, I folded them into mine so the whole ticket is easier to handle (and then deleted your patches to not confuse the patchbot).\n\n> I thought it is impossible (unless for administrators) to remove an attachment from trac?\n\nI guess, I have admin rights then.\n\n> Also, there are two work issues mentioned. Are these fixed? I.e., is it really \"needs review\", or is it \"needs work\"?\n\nsorry for not deleting them, I fixed both 4 weeks ago (though I don't know if there is another rebase needed for \nsage-4.8.alpha4).\n\nBest, Christian",
+    "body": "Replying to [comment:66 SimonKing]:\n> I'm a bit lost. I am listed as an author, and some comments mention a patch of mine. But where is that patch? I'm talking about trac_8327_universal_cyclotomic_field_new_cython-sk.patch \n> \n> Similarly, where is trac8327_lazy_import_UCF.patch ?\n\n\nAs your patches were only a few lines, I folded them into mine so the whole ticket is easier to handle (and then deleted your patches to not confuse the patchbot).\n\n> I thought it is impossible (unless for administrators) to remove an attachment from trac?\n\n\nI guess, I have admin rights then.\n\n> Also, there are two work issues mentioned. Are these fixed? I.e., is it really \"needs review\", or is it \"needs work\"?\n\n\nsorry for not deleting them, I fixed both 4 weeks ago (though I don't know if there is another rebase needed for \nsage-4.8.alpha4).\n\nBest, Christian",
     "created_at": "2011-12-18T14:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1798,13 +1806,16 @@ Replying to [comment:66 SimonKing]:
 > 
 > Similarly, where is trac8327_lazy_import_UCF.patch ?
 
+
 As your patches were only a few lines, I folded them into mine so the whole ticket is easier to handle (and then deleted your patches to not confuse the patchbot).
 
 > I thought it is impossible (unless for administrators) to remove an attachment from trac?
 
+
 I guess, I have admin rights then.
 
 > Also, there are two work issues mentioned. Are these fixed? I.e., is it really "needs review", or is it "needs work"?
+
 
 sorry for not deleting them, I fixed both 4 weeks ago (though I don't know if there is another rebase needed for 
 sage-4.8.alpha4).
@@ -1818,7 +1829,7 @@ Best, Christian
 archive/issue_comments_073874.json:
 ```json
 {
-    "body": "Replying to [comment:67 stumpc5]:\n> (though I don't know if there is another rebase needed for sage-4.8.alpha4).\n\nNo need -- patch applies fine to 4.8.alpha4. The new files pass their doctests (I haven't run a full doctest cycle).",
+    "body": "Replying to [comment:67 stumpc5]:\n> (though I don't know if there is another rebase needed for sage-4.8.alpha4).\n\n\nNo need -- patch applies fine to 4.8.alpha4. The new files pass their doctests (I haven't run a full doctest cycle).",
     "created_at": "2011-12-18T14:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1830,6 +1841,7 @@ archive/issue_comments_073874.json:
 Replying to [comment:67 stumpc5]:
 > (though I don't know if there is another rebase needed for sage-4.8.alpha4).
 
+
 No need -- patch applies fine to 4.8.alpha4. The new files pass their doctests (I haven't run a full doctest cycle).
 
 
@@ -1839,7 +1851,7 @@ No need -- patch applies fine to 4.8.alpha4. The new files pass their doctests (
 archive/issue_comments_073875.json:
 ```json
 {
-    "body": "Replying to [comment:67 stumpc5]:\n> > I thought it is impossible (unless for administrators) to remove an attachment from trac?\n> \n> I guess, I have admin rights then.\n\nIf you just didn't want to confuse the patchbot, you should insert a line in some comment, stating what patches have to be applied in what order:\n\nApply trac_8327_universal_cyclotomic_field-cs.patch\n\nBut then, what is the status of your \"syntax error\" patch?",
+    "body": "Replying to [comment:67 stumpc5]:\n> > I thought it is impossible (unless for administrators) to remove an attachment from trac?\n\n> \n> I guess, I have admin rights then.\n\n\nIf you just didn't want to confuse the patchbot, you should insert a line in some comment, stating what patches have to be applied in what order:\n\nApply trac_8327_universal_cyclotomic_field-cs.patch\n\nBut then, what is the status of your \"syntax error\" patch?",
     "created_at": "2011-12-18T14:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1850,8 +1862,10 @@ archive/issue_comments_073875.json:
 
 Replying to [comment:67 stumpc5]:
 > > I thought it is impossible (unless for administrators) to remove an attachment from trac?
+
 > 
 > I guess, I have admin rights then.
+
 
 If you just didn't want to confuse the patchbot, you should insert a line in some comment, stating what patches have to be applied in what order:
 
@@ -1866,7 +1880,7 @@ But then, what is the status of your "syntax error" patch?
 archive/issue_comments_073876.json:
 ```json
 {
-    "body": "Replying to [comment:69 SimonKing]:\n> But then, what is the status of your \"syntax error\" patch?\n\nI wasn't able to run 4.8.alpha1 due to a non-ascii character in /rings/arith.py. The patch only deletes this character -- I don't know if it is still present in 4.8.alpha4, but I will check after it has finished building.",
+    "body": "Replying to [comment:69 SimonKing]:\n> But then, what is the status of your \"syntax error\" patch?\n\n\nI wasn't able to run 4.8.alpha1 due to a non-ascii character in /rings/arith.py. The patch only deletes this character -- I don't know if it is still present in 4.8.alpha4, but I will check after it has finished building.",
     "created_at": "2011-12-18T14:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -1877,6 +1891,7 @@ archive/issue_comments_073876.json:
 
 Replying to [comment:69 SimonKing]:
 > But then, what is the status of your "syntax error" patch?
+
 
 I wasn't able to run 4.8.alpha1 due to a non-ascii character in /rings/arith.py. The patch only deletes this character -- I don't know if it is still present in 4.8.alpha4, but I will check after it has finished building.
 
@@ -2112,7 +2127,7 @@ I think it would be rather counterproductive to erase a patch that applies to th
 archive/issue_comments_073888.json:
 ```json
 {
-    "body": "Replying to [comment:81 davidloeffler]:\n> I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.\n\nAlright, I will then first build and do attach another version tomorrow then.",
+    "body": "Replying to [comment:81 davidloeffler]:\n> I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.\n\n\nAlright, I will then first build and do attach another version tomorrow then.",
     "created_at": "2012-03-30T10:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2124,6 +2139,7 @@ archive/issue_comments_073888.json:
 Replying to [comment:81 davidloeffler]:
 > I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.
 
+
 Alright, I will then first build and do attach another version tomorrow then.
 
 
@@ -2133,7 +2149,7 @@ Alright, I will then first build and do attach another version tomorrow then.
 archive/issue_comments_073889.json:
 ```json
 {
-    "body": "Replying to [comment:82 stumpc5]:\n> Replying to [comment:81 davidloeffler]:\n> > I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.\n> \n> Alright, I will then first build and do attach another version tomorrow then.\n\nFor the record: if Christian's latest version is that on the sage-combinat patch server, then it should be already based on #7980 and likely to apply smoothly.",
+    "body": "Replying to [comment:82 stumpc5]:\n> Replying to [comment:81 davidloeffler]:\n> > I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.\n\n> \n> Alright, I will then first build and do attach another version tomorrow then.\n\n\nFor the record: if Christian's latest version is that on the sage-combinat patch server, then it should be already based on #7980 and likely to apply smoothly.",
     "created_at": "2012-03-30T16:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2145,8 +2161,10 @@ archive/issue_comments_073889.json:
 Replying to [comment:82 stumpc5]:
 > Replying to [comment:81 davidloeffler]:
 > > I think it would be rather counterproductive to erase a patch that applies to the current beta, and replace it with one that almost certainly wouldn't. The most recent bout of conflicts was caused by #7980, which was only merged in beta11. So please build a copy of beta11 before you do any further work on this.
+
 > 
 > Alright, I will then first build and do attach another version tomorrow then.
+
 
 For the record: if Christian's latest version is that on the sage-combinat patch server, then it should be already based on #7980 and likely to apply smoothly.
 
@@ -2195,7 +2213,7 @@ Apply trac_8327_universal_cyclotomic_field-cs.patch
 archive/issue_comments_073892.json:
 ```json
 {
-    "body": "\n```\nsage -t  -force_lib devel/sage-8327/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\", line 239:\n    sage: ZumbroichDecomposition_list( 6, 1 )\nExpected:\n    array([1, 1])\nGot:\n    [1, 1]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage/tmp/fermat-21656/universal_cyclotomic_field_c_22797.py\n\t [1.7 s]\nsage -t  -force_lib devel/sage-8327/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/rings/polynomial/polynomial_quotient_ring.py\", line 262:\n    sage: [s for s in dir(Q.category().element_class) if not s.startswith('_')]\nExpected:\n    ['cartesian_product', 'gcd', 'is_idempotent', 'is_one', 'lcm', 'lift']\nGot:\n    ['cartesian_product', 'gcd', 'is_idempotent', 'is_one', 'is_unit', 'lcm', 'lift']\n**********************************************************************\n1 items had failures:\n   1 of  30 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage/tmp/fermat-21656/polynomial_quotient_ring_22987.py\n\t [42.5 s]\nsage -t  -force_lib devel/sage-8327/sage/tests/startup.py\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/tests/startup.py\", line 13:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\n\n(All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)",
+    "body": "```\nsage -t  -force_lib devel/sage-8327/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx\", line 239:\n    sage: ZumbroichDecomposition_list( 6, 1 )\nExpected:\n    array([1, 1])\nGot:\n    [1, 1]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage/tmp/fermat-21656/universal_cyclotomic_field_c_22797.py\n\t [1.7 s]\nsage -t  -force_lib devel/sage-8327/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/rings/polynomial/polynomial_quotient_ring.py\", line 262:\n    sage: [s for s in dir(Q.category().element_class) if not s.startswith('_')]\nExpected:\n    ['cartesian_product', 'gcd', 'is_idempotent', 'is_one', 'lcm', 'lift']\nGot:\n    ['cartesian_product', 'gcd', 'is_idempotent', 'is_one', 'is_unit', 'lcm', 'lift']\n**********************************************************************\n1 items had failures:\n   1 of  30 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage/tmp/fermat-21656/polynomial_quotient_ring_22987.py\n\t [42.5 s]\nsage -t  -force_lib devel/sage-8327/sage/tests/startup.py\n**********************************************************************\nFile \"/storage/masiao/sage-5.0.beta11-patchbot/devel/sage-8327/sage/tests/startup.py\", line 13:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\n(All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)",
     "created_at": "2012-03-30T20:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2203,7 +2221,6 @@ archive/issue_comments_073892.json:
     "user": "https://github.com/loefflerd"
 }
 ```
-
 
 ```
 sage -t  -force_lib devel/sage-8327/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field_c.pyx
@@ -2245,7 +2262,6 @@ Got:
 **********************************************************************
 ```
 
-
 (All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)
 
 
@@ -2273,7 +2289,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073894.json:
 ```json
 {
-    "body": "Replying to [comment:87 davidloeffler]:\n> (All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)\n\nThese were not fixed in the docfix patch but in the rebase patch, so I didn't see them. (I actually fixed the first, but forgot to refresh the patch afterwards.)\n\nI now attached the new version that should have the issues fixed. including the last which seems to me like not related to this patch, is it?",
+    "body": "Replying to [comment:87 davidloeffler]:\n> (All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)\n\n\nThese were not fixed in the docfix patch but in the rebase patch, so I didn't see them. (I actually fixed the first, but forgot to refresh the patch afterwards.)\n\nI now attached the new version that should have the issues fixed. including the last which seems to me like not related to this patch, is it?",
     "created_at": "2012-03-31T07:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2284,6 +2300,7 @@ archive/issue_comments_073894.json:
 
 Replying to [comment:87 davidloeffler]:
 > (All three of these failures had already been reported, and fixed, before this latest patch re-broke them.)
+
 
 These were not fixed in the docfix patch but in the rebase patch, so I didn't see them. (I actually fixed the first, but forgot to refresh the patch afterwards.)
 
@@ -2296,7 +2313,7 @@ I now attached the new version that should have the issues fixed. including the 
 archive/issue_comments_073895.json:
 ```json
 {
-    "body": "Replying to [comment:88 stumpc5]:\n>\n> I now attached the new version that should have the issues fixed. including the last which seems to me like not related to this patch, is it?\n\nIt is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.",
+    "body": "Replying to [comment:88 stumpc5]:\n>\n> I now attached the new version that should have the issues fixed. including the last which seems to me like not related to this patch, is it?\n\n\nIt is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.",
     "created_at": "2012-03-31T08:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2309,6 +2326,7 @@ Replying to [comment:88 stumpc5]:
 >
 > I now attached the new version that should have the issues fixed. including the last which seems to me like not related to this patch, is it?
 
+
 It is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.
 
 
@@ -2318,7 +2336,7 @@ It is related to your patch, as discussed in the comment thread above. It is imp
 archive/issue_comments_073896.json:
 ```json
 {
-    "body": "Replying to [comment:89 davidloeffler]:\n> Replying to [comment:88 stumpc5]:\n\n> It is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.\n\nWere is my mind, thanks for telling me again! -- The patch attached here and the one I had on the combinat queue were both changed, I now made numpy got lazy imported again. I will post the patch as soon as there are no further test failures.",
+    "body": "Replying to [comment:89 davidloeffler]:\n> Replying to [comment:88 stumpc5]:\n\n\n> It is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.\n\n\nWere is my mind, thanks for telling me again! -- The patch attached here and the one I had on the combinat queue were both changed, I now made numpy got lazy imported again. I will post the patch as soon as there are no further test failures.",
     "created_at": "2012-03-31T08:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2330,7 +2348,9 @@ archive/issue_comments_073896.json:
 Replying to [comment:89 davidloeffler]:
 > Replying to [comment:88 stumpc5]:
 
+
 > It is related to your patch, as discussed in the comment thread above. It is important that Sage **must not** import numpy at startup, because it takes a very long time to load (cf. tickets #11714, #6494, and several others I think). Your patch causes numpy to be imported at startup; Nicolas and Simon put in a fair bit of work using `lazy_import` to stop this happening (see comments 50-53). You will see that [attachment:trac_8327-rebased_for_v5.patch] does not need to disable this test in startup.py as you have done.
+
 
 Were is my mind, thanks for telling me again! -- The patch attached here and the one I had on the combinat queue were both changed, I now made numpy got lazy imported again. I will post the patch as soon as there are no further test failures.
 
@@ -2359,7 +2379,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073898.json:
 ```json
 {
-    "body": "numpy is now lazy imported:\n\n\n```\nsage: 'numpy' in sys.modules\nFalse\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\nsage: UCF\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: 'numpy' in sys.modules\nFalse\nsage: E(5)\nE(5)\nsage: 'numpy' in sys.modules\nTrue\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\n```\n\n\nI hope I haven't forgotten any further things!",
+    "body": "numpy is now lazy imported:\n\n```\nsage: 'numpy' in sys.modules\nFalse\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\nsage: UCF\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: 'numpy' in sys.modules\nFalse\nsage: E(5)\nE(5)\nsage: 'numpy' in sys.modules\nTrue\nsage: sage0(\"'numpy' in sys.modules\")\nFalse\n```\n\nI hope I haven't forgotten any further things!",
     "created_at": "2012-03-31T09:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2369,7 +2389,6 @@ archive/issue_comments_073898.json:
 ```
 
 numpy is now lazy imported:
-
 
 ```
 sage: 'numpy' in sys.modules
@@ -2387,7 +2406,6 @@ True
 sage: sage0("'numpy' in sys.modules")
 False
 ```
-
 
 I hope I haven't forgotten any further things!
 
@@ -2418,7 +2436,7 @@ Apply trac_8327_universal_cyclotomic_field-cs.patch
 archive/issue_comments_073900.json:
 ```json
 {
-    "body": "Right, so now we have a patch which actually works, we can start testing it. And we find the following bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: z1 = E(3)\nsage: z2 = UCF(CyclotomicField(3).gen())\nsage: z1 == z2\nFalse\nsage: z1 + z2 \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n| Sage Version 5.0.beta11, Release Date: 2012-03-28                  |\n| Type notebook() for the GUI, and license() for information.        |\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11990)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement._add_ (sage/structure/element.c:8612)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.pyc in _add_(self, other)\n    890                 E(12)^4 - E(12)^7 - E(12)^11\n    891             \"\"\"\n--> 892             n,m = self.field_order(),other.field_order()\n    893             l = cached_lcm( [ n, m ] )\n    894 \n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.pyc in field_order(self)\n   1020                 3\n   1021             \"\"\"\n-> 1022             if bool(self.value._monomial_coefficients):\n   1023                 return iter(self.value._monomial_coefficients).next()[0]\n   1024             else:\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2919)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:3329)()\n\nAttributeError: 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic' object has no attribute '_monomial_coefficients'\n```\n\n\nThis is even worse, since the element involved isn't cyclotomic in the first place:\n\n```\nsage: K.<a> = NumberField(x^3 - 7)\nsage: UCF(a)                      \na\nsage: UCF(a) in UCF\nTrue\n```\n\n\nIn fact UCF will attempt to construct an element from anything whatsoever:\n\n```\nsage: UCF(None)\nNone\nsage: UCF(QQ)\nRational Field\nsage: UCF('hello')\n'hello'\n```\n\n\nThe following are not great either:\n\n```\nsage: UCF.has_coerce_map_from(CyclotomicField(3))\nFalse\nsage: QQbar.has_coerce_map_from(UCF)\nFalse\n```\n",
+    "body": "Right, so now we have a patch which actually works, we can start testing it. And we find the following bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: z1 = E(3)\nsage: z2 = UCF(CyclotomicField(3).gen())\nsage: z1 == z2\nFalse\nsage: z1 + z2 \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n| Sage Version 5.0.beta11, Release Date: 2012-03-28                  |\n| Type notebook() for the GUI, and license() for information.        |\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11990)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement._add_ (sage/structure/element.c:8612)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.pyc in _add_(self, other)\n    890                 E(12)^4 - E(12)^7 - E(12)^11\n    891             \"\"\"\n--> 892             n,m = self.field_order(),other.field_order()\n    893             l = cached_lcm( [ n, m ] )\n    894 \n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.pyc in field_order(self)\n   1020                 3\n   1021             \"\"\"\n-> 1022             if bool(self.value._monomial_coefficients):\n   1023                 return iter(self.value._monomial_coefficients).next()[0]\n   1024             else:\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2919)()\n\n/storage/masiao/sage-5.0.beta11/local/lib/python2.7/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:3329)()\n\nAttributeError: 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic' object has no attribute '_monomial_coefficients'\n```\n\nThis is even worse, since the element involved isn't cyclotomic in the first place:\n\n```\nsage: K.<a> = NumberField(x^3 - 7)\nsage: UCF(a)                      \na\nsage: UCF(a) in UCF\nTrue\n```\n\nIn fact UCF will attempt to construct an element from anything whatsoever:\n\n```\nsage: UCF(None)\nNone\nsage: UCF(QQ)\nRational Field\nsage: UCF('hello')\n'hello'\n```\n\nThe following are not great either:\n\n```\nsage: UCF.has_coerce_map_from(CyclotomicField(3))\nFalse\nsage: QQbar.has_coerce_map_from(UCF)\nFalse\n```",
     "created_at": "2012-03-31T16:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2473,7 +2491,6 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic' object has no attribute '_monomial_coefficients'
 ```
 
-
 This is even worse, since the element involved isn't cyclotomic in the first place:
 
 ```
@@ -2483,7 +2500,6 @@ a
 sage: UCF(a) in UCF
 True
 ```
-
 
 In fact UCF will attempt to construct an element from anything whatsoever:
 
@@ -2496,7 +2512,6 @@ sage: UCF('hello')
 'hello'
 ```
 
-
 The following are not great either:
 
 ```
@@ -2505,7 +2520,6 @@ False
 sage: QQbar.has_coerce_map_from(UCF)
 False
 ```
-
 
 
 
@@ -2532,7 +2546,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073902.json:
 ```json
 {
-    "body": "Replying to [comment:93 davidloeffler]:\n\n> In fact UCF will attempt to construct an element from anything whatsoever:\n> {{{\n> sage: UCF(None)\n> None\n> sage: UCF(QQ)\n> Rational Field\n> sage: UCF('hello')\n> 'hello'\n> }}}\n\nI didn't implement the `__call__` method - what is the behaviour you would expect here?\n\n> The following are not great either:\n> {{{\n> sage: UCF.has_coerce_map_from(CyclotomicField(3))\n> False\n> }}}\n\nhow can I get a coerce from `CyclotomicField(n)` for all `n`?\n\n> {{{\n> sage: QQbar.has_coerce_map_from(UCF)\n> False\n> }}}\n\nI fixed this.",
+    "body": "Replying to [comment:93 davidloeffler]:\n\n> In fact UCF will attempt to construct an element from anything whatsoever:\n> \n> ```\n> sage: UCF(None)\n> None\n> sage: UCF(QQ)\n> Rational Field\n> sage: UCF('hello')\n> 'hello'\n> ```\n\n\nI didn't implement the `__call__` method - what is the behaviour you would expect here?\n\n> The following are not great either:\n> \n> ```\n> sage: UCF.has_coerce_map_from(CyclotomicField(3))\n> False\n> ```\n\n\nhow can I get a coerce from `CyclotomicField(n)` for all `n`?\n\n> {{{\n> sage: QQbar.has_coerce_map_from(UCF)\n> False\n> }}}\n\n\nI fixed this.",
     "created_at": "2012-03-31T17:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2544,22 +2558,26 @@ archive/issue_comments_073902.json:
 Replying to [comment:93 davidloeffler]:
 
 > In fact UCF will attempt to construct an element from anything whatsoever:
-> {{{
+> 
+> ```
 > sage: UCF(None)
 > None
 > sage: UCF(QQ)
 > Rational Field
 > sage: UCF('hello')
 > 'hello'
-> }}}
+> ```
+
 
 I didn't implement the `__call__` method - what is the behaviour you would expect here?
 
 > The following are not great either:
-> {{{
+> 
+> ```
 > sage: UCF.has_coerce_map_from(CyclotomicField(3))
 > False
-> }}}
+> ```
+
 
 how can I get a coerce from `CyclotomicField(n)` for all `n`?
 
@@ -2567,6 +2585,7 @@ how can I get a coerce from `CyclotomicField(n)` for all `n`?
 > sage: QQbar.has_coerce_map_from(UCF)
 > False
 > }}}
+
 
 I fixed this.
 
@@ -2577,7 +2596,7 @@ I fixed this.
 archive/issue_comments_073903.json:
 ```json
 {
-    "body": "Replying to [comment:94 stumpc5]:\n> \n> I didn't implement the `__call__` method - what is the behaviour you would expect here?\n\nOh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.\n\nYou should also set the attribute wrapped_class for your element class to something other than the default (which is \"object\"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.\n\n> \n> how can I get a coerce from `CyclotomicField(n)` for all `n`?\n>\n\nI don't quite understand the question, but if you're going to implement a class and call it \"universal cyclotomic field\", surely it had better satisfy a universal property with respect to cyclotomic fields? If your question is \"how do I recognise a cyclotomic field\", you might find ` isinstance(K, sage.rings.number_field.number_field.NumberField_cyclotomic) ` or perhaps ` sage.rings.number_field.number_field.is_CyclotomicField(K) ` helpful. You should also check ` K.coerce_embedding`, since it's possible to create cyclotomic fields with complex embeddings other than the standard one.",
+    "body": "Replying to [comment:94 stumpc5]:\n> \n> I didn't implement the `__call__` method - what is the behaviour you would expect here?\n\n\nOh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.\n\nYou should also set the attribute wrapped_class for your element class to something other than the default (which is \"object\"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.\n\n> \n> how can I get a coerce from `CyclotomicField(n)` for all `n`?\n\n>\n\nI don't quite understand the question, but if you're going to implement a class and call it \"universal cyclotomic field\", surely it had better satisfy a universal property with respect to cyclotomic fields? If your question is \"how do I recognise a cyclotomic field\", you might find ` isinstance(K, sage.rings.number_field.number_field.NumberField_cyclotomic) ` or perhaps ` sage.rings.number_field.number_field.is_CyclotomicField(K) ` helpful. You should also check ` K.coerce_embedding`, since it's possible to create cyclotomic fields with complex embeddings other than the standard one.",
     "created_at": "2012-04-01T11:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2590,12 +2609,14 @@ Replying to [comment:94 stumpc5]:
 > 
 > I didn't implement the `__call__` method - what is the behaviour you would expect here?
 
+
 Oh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.
 
 You should also set the attribute wrapped_class for your element class to something other than the default (which is "object"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.
 
 > 
 > how can I get a coerce from `CyclotomicField(n)` for all `n`?
+
 >
 
 I don't quite understand the question, but if you're going to implement a class and call it "universal cyclotomic field", surely it had better satisfy a universal property with respect to cyclotomic fields? If your question is "how do I recognise a cyclotomic field", you might find ` isinstance(K, sage.rings.number_field.number_field.NumberField_cyclotomic) ` or perhaps ` sage.rings.number_field.number_field.is_CyclotomicField(K) ` helpful. You should also check ` K.coerce_embedding`, since it's possible to create cyclotomic fields with complex embeddings other than the standard one.
@@ -2607,7 +2628,7 @@ I don't quite understand the question, but if you're going to implement a class 
 archive/issue_comments_073904.json:
 ```json
 {
-    "body": "Replying to [comment:95 davidloeffler]:\n> Replying to [comment:94 stumpc5]:\n> Oh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.\n\nThe idea is that one should *not* construct elements of the universal cyclotomic field using `UCF(arg)` but only through the function `E`, e.g., `E(5)`. So `UCF(arg)` should only be called for coercion.\n\nI could overwrite `_element_constructor_` by\n\n\n```\ndef _element_constructor_(self,arg):\n    raise TypeError, \"No coercion found for %s\"%str(arg)\n```\n\n\nThis would prevent `UCF` from ever constructing any element, and only using the coercion model to coerce objects if possible.\n\n> You should also set the attribute wrapped_class for your element class to something other than the default (which is \"object\"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.\n\nDo I see it right that this would then also be obsolete?\n\n> > \n> > how can I get a coerce from `CyclotomicField(n)` for all `n`?\n> >\n> \n> I don't quite understand the question, but if you're going to implement a class and call it \"universal cyclotomic field\", surely it had better satisfy a universal property with respect to cyclotomic fields?\n\nLet me define one coercion:\n\n\n```\nsage: from sage.rings.number_field.number_field_morphisms import NumberFieldEmbedding\nsage: n = 5\nsage: X = CyclotomicField(n)\nsage: f = NumberFieldEmbedding(X,UCF,E(n))\nsage: UCF.register_coercion(f)\nsage: x = X.gen()\nsage: UCF(x)\nE(5)\n```\n\n\nFirst, how can I register this coercion for all `n`? Second, are there further number fields I should have a coercion from?",
+    "body": "Replying to [comment:95 davidloeffler]:\n> Replying to [comment:94 stumpc5]:\n> Oh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.\n\n\nThe idea is that one should *not* construct elements of the universal cyclotomic field using `UCF(arg)` but only through the function `E`, e.g., `E(5)`. So `UCF(arg)` should only be called for coercion.\n\nI could overwrite `_element_constructor_` by\n\n```\ndef _element_constructor_(self,arg):\n    raise TypeError, \"No coercion found for %s\"%str(arg)\n```\n\nThis would prevent `UCF` from ever constructing any element, and only using the coercion model to coerce objects if possible.\n\n> You should also set the attribute wrapped_class for your element class to something other than the default (which is \"object\"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.\n\n\nDo I see it right that this would then also be obsolete?\n\n> > \n> > how can I get a coerce from `CyclotomicField(n)` for all `n`?\n\n> >\n> \n> I don't quite understand the question, but if you're going to implement a class and call it \"universal cyclotomic field\", surely it had better satisfy a universal property with respect to cyclotomic fields?\n\n\nLet me define one coercion:\n\n```\nsage: from sage.rings.number_field.number_field_morphisms import NumberFieldEmbedding\nsage: n = 5\nsage: X = CyclotomicField(n)\nsage: f = NumberFieldEmbedding(X,UCF,E(n))\nsage: UCF.register_coercion(f)\nsage: x = X.gen()\nsage: UCF(x)\nE(5)\n```\n\nFirst, how can I register this coercion for all `n`? Second, are there further number fields I should have a coercion from?",
     "created_at": "2012-04-01T12:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2620,31 +2641,32 @@ Replying to [comment:95 davidloeffler]:
 > Replying to [comment:94 stumpc5]:
 > Oh, I don't know, maybe the same behaviour as every other parent object in the Sage library? The default ` __call__ ` calls ` _element_constructor_ `, which you should override, in order to create an element of self from the given arguments. This includes checking whether the given arguments are reasonable, and raising a TypeError otherwise.
 
+
 The idea is that one should *not* construct elements of the universal cyclotomic field using `UCF(arg)` but only through the function `E`, e.g., `E(5)`. So `UCF(arg)` should only be called for coercion.
 
 I could overwrite `_element_constructor_` by
-
 
 ```
 def _element_constructor_(self,arg):
     raise TypeError, "No coercion found for %s"%str(arg)
 ```
 
-
 This would prevent `UCF` from ever constructing any element, and only using the coercion model to coerce objects if possible.
 
 > You should also set the attribute wrapped_class for your element class to something other than the default (which is "object"), so the ` __init__` it inherits from ElementWrapper knows what it's supposed to be wrapping and doesn't wrap obviously bogus objects as in the examples above.
+
 
 Do I see it right that this would then also be obsolete?
 
 > > 
 > > how can I get a coerce from `CyclotomicField(n)` for all `n`?
+
 > >
 > 
 > I don't quite understand the question, but if you're going to implement a class and call it "universal cyclotomic field", surely it had better satisfy a universal property with respect to cyclotomic fields?
 
-Let me define one coercion:
 
+Let me define one coercion:
 
 ```
 sage: from sage.rings.number_field.number_field_morphisms import NumberFieldEmbedding
@@ -2656,7 +2678,6 @@ sage: x = X.gen()
 sage: UCF(x)
 E(5)
 ```
-
 
 First, how can I register this coercion for all `n`? Second, are there further number fields I should have a coercion from?
 
@@ -2687,7 +2708,7 @@ I think I've had enough of this ticket; perhaps someone else can take over "revi
 archive/issue_comments_073906.json:
 ```json
 {
-    "body": "Replying to [comment:97 davidloeffler]:\n> Aargh! This is so disastrously wrong I don't even know where to start. For heavens' sake, go and read the Sage reference manual -- there's a whole huge tutorial on how to implement coercions properly. \n> \n> I think I've had enough of this ticket; perhaps someone else can take over \"reviewing\" it from here onwards.\n\nFirst, I consider this strongly unfriendly.\n\nSecond, after looking again at the coercion section of the reference manual, I still don't see what is so disastrously wrong (which obviously doesn't mean that it is not wrong), and how to tell a parent to register coercion from an infinite family of other parents.",
+    "body": "Replying to [comment:97 davidloeffler]:\n> Aargh! This is so disastrously wrong I don't even know where to start. For heavens' sake, go and read the Sage reference manual -- there's a whole huge tutorial on how to implement coercions properly. \n> \n> I think I've had enough of this ticket; perhaps someone else can take over \"reviewing\" it from here onwards.\n\n\nFirst, I consider this strongly unfriendly.\n\nSecond, after looking again at the coercion section of the reference manual, I still don't see what is so disastrously wrong (which obviously doesn't mean that it is not wrong), and how to tell a parent to register coercion from an infinite family of other parents.",
     "created_at": "2012-04-01T14:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2700,6 +2721,7 @@ Replying to [comment:97 davidloeffler]:
 > Aargh! This is so disastrously wrong I don't even know where to start. For heavens' sake, go and read the Sage reference manual -- there's a whole huge tutorial on how to implement coercions properly. 
 > 
 > I think I've had enough of this ticket; perhaps someone else can take over "reviewing" it from here onwards.
+
 
 First, I consider this strongly unfriendly.
 
@@ -2732,7 +2754,7 @@ See [http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement](h
 archive/issue_comments_073908.json:
 ```json
 {
-    "body": "Replying to [comment:99 davidloeffler]:\n> See [http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement](http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement). The magic routines here are\n\n` _coerce_map_from_ `\n\nThanks, I now see how I can do the coercion here - except that I do not know how to handle non-standard embeddings. I do not know how to test if a non-standard embedding is used, and if so, I also do not know how to coerce then into the `UCF`.\n\n` _element_constructor_`\n\nI want that an element of `UCF` is never constructed using the `__call__` method but only using the function `E`. In the 4 steps in http://www.sagemath.org/doc/reference/coercion.html#provided-methods `__call__`, I want the first 3 to proceed, and if no coercion is found, that an error is raised. The idea here is that `UCF` has an infinite number of generators, and the easiest to play with them seems to be the same way this is done in `GAP`; simply doing things like\n\n```\nsage: E(3)     \nE(3)\nsage: E(3)+E(4)\nE(12)^4 - E(12)^7 - E(12)^11\n```\n\n\nAlso, I want to see\n\n```\nsage: UCF(5)\n5\nsage: UCF(5).parent()\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: X = CyclotomicField(6)\nsage: UCF(X.gen())\n-E(3)^2\n```\n\n\nIs this generally wrong, or is the way I proposed to define `_element_constructor_` in my last comment just not the way to do that?",
+    "body": "Replying to [comment:99 davidloeffler]:\n> See [http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement](http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement). The magic routines here are\n\n\n` _coerce_map_from_ `\n\nThanks, I now see how I can do the coercion here - except that I do not know how to handle non-standard embeddings. I do not know how to test if a non-standard embedding is used, and if so, I also do not know how to coerce then into the `UCF`.\n\n` _element_constructor_`\n\nI want that an element of `UCF` is never constructed using the `__call__` method but only using the function `E`. In the 4 steps in http://www.sagemath.org/doc/reference/coercion.html#provided-methods `__call__`, I want the first 3 to proceed, and if no coercion is found, that an error is raised. The idea here is that `UCF` has an infinite number of generators, and the easiest to play with them seems to be the same way this is done in `GAP`; simply doing things like\n\n```\nsage: E(3)     \nE(3)\nsage: E(3)+E(4)\nE(12)^4 - E(12)^7 - E(12)^11\n```\n\nAlso, I want to see\n\n```\nsage: UCF(5)\n5\nsage: UCF(5).parent()\nUniversal Cyclotomic Field endowed with the Zumbroich basis\nsage: X = CyclotomicField(6)\nsage: UCF(X.gen())\n-E(3)^2\n```\n\nIs this generally wrong, or is the way I proposed to define `_element_constructor_` in my last comment just not the way to do that?",
     "created_at": "2012-04-01T19:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2743,6 +2765,7 @@ archive/issue_comments_073908.json:
 
 Replying to [comment:99 davidloeffler]:
 > See [http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement](http://www.sagemath.org/doc/reference/coercion.html#methods-to-implement). The magic routines here are
+
 
 ` _coerce_map_from_ `
 
@@ -2759,7 +2782,6 @@ sage: E(3)+E(4)
 E(12)^4 - E(12)^7 - E(12)^11
 ```
 
-
 Also, I want to see
 
 ```
@@ -2771,7 +2793,6 @@ sage: X = CyclotomicField(6)
 sage: UCF(X.gen())
 -E(3)^2
 ```
-
 
 Is this generally wrong, or is the way I proposed to define `_element_constructor_` in my last comment just not the way to do that?
 
@@ -2802,7 +2823,7 @@ Let us first try to get a full green light from the bot. Could you please upload
 archive/issue_comments_073910.json:
 ```json
 {
-    "body": "Replying to [comment:101 chapoton]:\n> Ok, I am willing to try a review. I am not sure to be competent enough. We will see.\n> \n> Let us first try to get a full green light from the bot. Could you please upload the latest version, rebased on a recent copy of sage ?\n\nThat would be really great! I will do that now (and also get the documentation into a good state-of-the-art shape), and let you know once the patch is ready for you to look at.",
+    "body": "Replying to [comment:101 chapoton]:\n> Ok, I am willing to try a review. I am not sure to be competent enough. We will see.\n> \n> Let us first try to get a full green light from the bot. Could you please upload the latest version, rebased on a recent copy of sage ?\n\n\nThat would be really great! I will do that now (and also get the documentation into a good state-of-the-art shape), and let you know once the patch is ready for you to look at.",
     "created_at": "2012-11-20T09:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2815,6 +2836,7 @@ Replying to [comment:101 chapoton]:
 > Ok, I am willing to try a review. I am not sure to be competent enough. We will see.
 > 
 > Let us first try to get a full green light from the bot. Could you please upload the latest version, rebased on a recent copy of sage ?
+
 
 That would be really great! I will do that now (and also get the documentation into a good state-of-the-art shape), and let you know once the patch is ready for you to look at.
 
@@ -2883,7 +2905,7 @@ I uploaded a new version of the patch - let's see what the patchbot says.
 archive/issue_comments_073914.json:
 ```json
 {
-    "body": "Replying to [comment:107 stumpc5]:\n> I uploaded a new version of the patch - let's see what the patchbot says.\n\nI don't quite understand what it is complaining about; some files that get rejected are not even contained in the patch. Any ideas what I do wrong?",
+    "body": "Replying to [comment:107 stumpc5]:\n> I uploaded a new version of the patch - let's see what the patchbot says.\n\n\nI don't quite understand what it is complaining about; some files that get rejected are not even contained in the patch. Any ideas what I do wrong?",
     "created_at": "2012-11-20T12:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2895,6 +2917,7 @@ archive/issue_comments_073914.json:
 Replying to [comment:107 stumpc5]:
 > I uploaded a new version of the patch - let's see what the patchbot says.
 
+
 I don't quite understand what it is complaining about; some files that get rejected are not even contained in the patch. Any ideas what I do wrong?
 
 
@@ -2904,7 +2927,7 @@ I don't quite understand what it is complaining about; some files that get rejec
 archive/issue_comments_073915.json:
 ```json
 {
-    "body": "Really strange. For the record: The patchbot says\n\n```\napplying trac_8327_universal_cyclotomic_field-cs.patch\npatching file doc/en/reference/categories.rst\nHunk #1 FAILED at 9\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/categories.rst.rej\npatching file doc/en/reference/rings_numerical.rst\nHunk #1 FAILED at 26\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/rings_numerical.rst.rej\npatching file sage/categories/fields.py\n```\n\nbut if you search the string \".rst\" in attachment:trac_8327_universal_cyclotomic_field-cs.patch, you only find that `doc/en/reference/rings_standard.rst` is touched.",
+    "body": "Really strange. For the record: The patchbot says\n\n```\napplying trac_8327_universal_cyclotomic_field-cs.patch\npatching file doc/en/reference/categories.rst\nHunk #1 FAILED at 9\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/categories.rst.rej\npatching file doc/en/reference/rings_numerical.rst\nHunk #1 FAILED at 26\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/rings_numerical.rst.rej\npatching file sage/categories/fields.py\n```\nbut if you search the string \".rst\" in attachment:trac_8327_universal_cyclotomic_field-cs.patch, you only find that `doc/en/reference/rings_standard.rst` is touched.",
     "created_at": "2012-11-20T12:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2925,7 +2948,6 @@ Hunk #1 FAILED at 26
 1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/rings_numerical.rst.rej
 patching file sage/categories/fields.py
 ```
-
 but if you search the string ".rst" in attachment:trac_8327_universal_cyclotomic_field-cs.patch, you only find that `doc/en/reference/rings_standard.rst` is touched.
 
 
@@ -2953,7 +2975,7 @@ well, looks like a strange problem in the building of the doc. Maybe one could t
 archive/issue_comments_073917.json:
 ```json
 {
-    "body": "Replying to [comment:110 chapoton]:\n> well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.\n\nI now divides the patch in three parts, only the last touching the documentation...",
+    "body": "Replying to [comment:110 chapoton]:\n> well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.\n\n\nI now divides the patch in three parts, only the last touching the documentation...",
     "created_at": "2012-11-21T08:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2965,6 +2987,7 @@ archive/issue_comments_073917.json:
 Replying to [comment:110 chapoton]:
 > well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.
 
+
 I now divides the patch in three parts, only the last touching the documentation...
 
 
@@ -2974,7 +2997,7 @@ I now divides the patch in three parts, only the last touching the documentation
 archive/issue_comments_073918.json:
 ```json
 {
-    "body": "Replying to [comment:111 stumpc5]:\n> Replying to [comment:110 chapoton]:\n> > well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.\n> \n> I now divides the patch in three parts, only the last touching the documentation...\n\nOkay, it seems to work now -- I will take care now of the startup modules and the trailing whitespaces. Getting the coverage and no test failures will take a little longer (due to nasty cython functions that I can only test indirectly).",
+    "body": "Replying to [comment:111 stumpc5]:\n> Replying to [comment:110 chapoton]:\n> > well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.\n\n> \n> I now divides the patch in three parts, only the last touching the documentation...\n\n\nOkay, it seems to work now -- I will take care now of the startup modules and the trailing whitespaces. Getting the coverage and no test failures will take a little longer (due to nasty cython functions that I can only test indirectly).",
     "created_at": "2012-11-21T09:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -2986,8 +3009,10 @@ archive/issue_comments_073918.json:
 Replying to [comment:111 stumpc5]:
 > Replying to [comment:110 chapoton]:
 > > well, looks like a strange problem in the building of the doc. Maybe one could try a patch which does not touch the doc at all, just to see.
+
 > 
 > I now divides the patch in three parts, only the last touching the documentation...
+
 
 Okay, it seems to work now -- I will take care now of the startup modules and the trailing whitespaces. Getting the coverage and no test failures will take a little longer (due to nasty cython functions that I can only test indirectly).
 
@@ -2998,7 +3023,7 @@ Okay, it seems to work now -- I will take care now of the startup modules and th
 archive/issue_comments_073919.json:
 ```json
 {
-    "body": "Replying to [comment:112 stumpc5]:\n\n> it seems to work now\n\nThe patch is finally ready for review. The only issue with the patchbot is currently that I do load the module at startup - which is what I'd prefer (as long as no one else has a better idea of how to handle it).\n\nBeside that, I added 100% coverage everywhere, and excluded 4 very small side tickets to be reviewed directly.\n\nCheers, Christian",
+    "body": "Replying to [comment:112 stumpc5]:\n\n> it seems to work now\n\n\nThe patch is finally ready for review. The only issue with the patchbot is currently that I do load the module at startup - which is what I'd prefer (as long as no one else has a better idea of how to handle it).\n\nBeside that, I added 100% coverage everywhere, and excluded 4 very small side tickets to be reviewed directly.\n\nCheers, Christian",
     "created_at": "2012-11-21T14:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3010,6 +3035,7 @@ archive/issue_comments_073919.json:
 Replying to [comment:112 stumpc5]:
 
 > it seems to work now
+
 
 The patch is finally ready for review. The only issue with the patchbot is currently that I do load the module at startup - which is what I'd prefer (as long as no one else has a better idea of how to handle it).
 
@@ -3066,7 +3092,7 @@ That's all for today.
 archive/issue_comments_073921.json:
 ```json
 {
-    "body": "Replying to [comment:115 chapoton]:\n\nThanks for your first look!\n\n- I deleted the two later dependencies, since they are not really necessary (I only needed them at some point to work with the universal cyclotomics).\n\n- I took your remarks into account:\n\n> - why are we changing the import of hecke_modules in this patch ?\n\nbecause the import of hecke_modules and of universal_cyclotomic_field causes an import loop. Since we want to use `UCF`, it was easier and cleaner to lazily import hecke_modules.\n\n> - is_unit should be removed, as already implemented in the class of Field elements\n\nthe inherited `is_unit` method is not capturing the situation. It's implementation is\n\n```\n    def is_unit(self):\n        if self == 1 or self == -1:\n            return True\n        raise NotImplementedError\n```\n\n\n> - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe\n\nnot yet done!\n\n> - maybe consider a coercion of real elements to the field AA ?\n\nThis is impossible, isn't it? Here is a quote from the documentation:\n\n\"Another consequence of the consistency condition is that coercions can only go from exact rings (e.g., the rationals QQ) to inexact rings (e.g., real numbers with a fixed precision RR), but not the other way around.\"\n\nOr am I misunderstanding something?\n\n>   1 the field UCF is contained in the complex field\n\nThis coercion is going through QQbar, so I only documented the later.\n\nBest, Christian",
+    "body": "Replying to [comment:115 chapoton]:\n\nThanks for your first look!\n\n- I deleted the two later dependencies, since they are not really necessary (I only needed them at some point to work with the universal cyclotomics).\n\n- I took your remarks into account:\n\n> - why are we changing the import of hecke_modules in this patch ?\n\n\nbecause the import of hecke_modules and of universal_cyclotomic_field causes an import loop. Since we want to use `UCF`, it was easier and cleaner to lazily import hecke_modules.\n\n> - is_unit should be removed, as already implemented in the class of Field elements\n\n\nthe inherited `is_unit` method is not capturing the situation. It's implementation is\n\n```\n    def is_unit(self):\n        if self == 1 or self == -1:\n            return True\n        raise NotImplementedError\n```\n\n> - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe\n\n\nnot yet done!\n\n> - maybe consider a coercion of real elements to the field AA ?\n\n\nThis is impossible, isn't it? Here is a quote from the documentation:\n\n\"Another consequence of the consistency condition is that coercions can only go from exact rings (e.g., the rationals QQ) to inexact rings (e.g., real numbers with a fixed precision RR), but not the other way around.\"\n\nOr am I misunderstanding something?\n\n>   1 the field UCF is contained in the complex field\n\n\nThis coercion is going through QQbar, so I only documented the later.\n\nBest, Christian",
     "created_at": "2012-11-21T19:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3085,9 +3111,11 @@ Thanks for your first look!
 
 > - why are we changing the import of hecke_modules in this patch ?
 
+
 because the import of hecke_modules and of universal_cyclotomic_field causes an import loop. Since we want to use `UCF`, it was easier and cleaner to lazily import hecke_modules.
 
 > - is_unit should be removed, as already implemented in the class of Field elements
+
 
 the inherited `is_unit` method is not capturing the situation. It's implementation is
 
@@ -3098,12 +3126,13 @@ the inherited `is_unit` method is not capturing the situation. It's implementati
         raise NotImplementedError
 ```
 
-
 > - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe
+
 
 not yet done!
 
 > - maybe consider a coercion of real elements to the field AA ?
+
 
 This is impossible, isn't it? Here is a quote from the documentation:
 
@@ -3112,6 +3141,7 @@ This is impossible, isn't it? Here is a quote from the documentation:
 Or am I misunderstanding something?
 
 >   1 the field UCF is contained in the complex field
+
 
 This coercion is going through QQbar, so I only documented the later.
 
@@ -3124,7 +3154,7 @@ Best, Christian
 archive/issue_comments_073922.json:
 ```json
 {
-    "body": "> > - is_unit should be removed, as already implemented in the class of Field elements\n> \n> the inherited `is_unit` method is not capturing the situation. It's implementation is\n> {{{\n>     def is_unit(self):\n>         if self == 1 or self == -1:\n>             return True\n>         raise NotImplementedError\n> }}}\n\nI do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! \n \n> > - maybe consider a coercion of real elements to the field AA ?\n> \n> This is impossible, isn't it? Here is a quote from the documentation:\n> \n> \"Another consequence of the consistency condition is that coercions can only go from exact rings (e.g., the rationals QQ) to inexact rings (e.g., real numbers with a fixed precision RR), but not the other way around.\"\n> \n> Or am I misunderstanding something?\n\nWell, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..\n\n\n```\nsage: toto=E(6)\nsage: QQbar(toto)\n0.500000000000000? + 0.866025403784439?*I\nsage: riri=QQbar(toto)\nsage: riri in AA\nFalse\nsage: riri+riri.conjugate() in AA\nTrue\nsage: QQbar(toto+toto.conjugate()) in AA\nTrue\nsage: AA(riri+riri.conjugate()).parent()\nAlgebraic Real Field\n```\n\n\n\n> >   1 the field UCF is contained in the complex field\n> \n> This coercion is going through QQbar, so I only documented the later.\n\nYes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..",
+    "body": "> > - is_unit should be removed, as already implemented in the class of Field elements\n \n> \n> the inherited `is_unit` method is not capturing the situation. It's implementation is\n> \n> ```\n>     def is_unit(self):\n>         if self == 1 or self == -1:\n>             return True\n>         raise NotImplementedError\n> ```\n\n\nI do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! \n \n> > - maybe consider a coercion of real elements to the field AA ?\n \n> \n> This is impossible, isn't it? Here is a quote from the documentation:\n> \n> \"Another consequence of the consistency condition is that coercions can only go from exact rings (e.g., the rationals QQ) to inexact rings (e.g., real numbers with a fixed precision RR), but not the other way around.\"\n> \n> Or am I misunderstanding something?\n\n\nWell, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..\n\n```\nsage: toto=E(6)\nsage: QQbar(toto)\n0.500000000000000? + 0.866025403784439?*I\nsage: riri=QQbar(toto)\nsage: riri in AA\nFalse\nsage: riri+riri.conjugate() in AA\nTrue\nsage: QQbar(toto+toto.conjugate()) in AA\nTrue\nsage: AA(riri+riri.conjugate()).parent()\nAlgebraic Real Field\n```\n\n\n> >   1 the field UCF is contained in the complex field\n\n> \n> This coercion is going through QQbar, so I only documented the later.\n\n\nYes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..",
     "created_at": "2012-11-21T20:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3134,18 +3164,22 @@ archive/issue_comments_073922.json:
 ```
 
 > > - is_unit should be removed, as already implemented in the class of Field elements
+ 
 > 
 > the inherited `is_unit` method is not capturing the situation. It's implementation is
-> {{{
+> 
+> ```
 >     def is_unit(self):
 >         if self == 1 or self == -1:
 >             return True
 >         raise NotImplementedError
-> }}}
+> ```
+
 
 I do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! 
  
 > > - maybe consider a coercion of real elements to the field AA ?
+ 
 > 
 > This is impossible, isn't it? Here is a quote from the documentation:
 > 
@@ -3153,8 +3187,8 @@ I do not understand : if one look at Ticket #13728, the method is_unit does chec
 > 
 > Or am I misunderstanding something?
 
-Well, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..
 
+Well, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..
 
 ```
 sage: toto=E(6)
@@ -3172,10 +3206,11 @@ Algebraic Real Field
 ```
 
 
-
 > >   1 the field UCF is contained in the complex field
+
 > 
 > This coercion is going through QQbar, so I only documented the later.
+
 
 Yes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..
 
@@ -3186,7 +3221,7 @@ Yes, But I rather meant the mathematical point : the field is defined as an embe
 archive/issue_comments_073923.json:
 ```json
 {
-    "body": "Replying to [comment:117 chapoton]:\n\n> I do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! \n\nThat's right, but even though UCF knows that it is a field, its elements do not know that they are field elements. Do you happen to know how to solve that?\n\n> Well, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..\n\n(I thought you meant the other way round...) It was easy to implement the conversion to QQ and ZZ, and to set the coercion to QQbar. But I don't quite know how to do conversion to AA.\n\n```\nsage: AA(QQbar(E(5) + E(5)^4))  \n0.618033988749895?\n```\n\nworks, but one currently has to pass through QQbar.\n\n> Yes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..\n\nOkay, I will add a sentence in the beginning.",
+    "body": "Replying to [comment:117 chapoton]:\n\n> I do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! \n\n\nThat's right, but even though UCF knows that it is a field, its elements do not know that they are field elements. Do you happen to know how to solve that?\n\n> Well, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..\n\n\n(I thought you meant the other way round...) It was easy to implement the conversion to QQ and ZZ, and to set the coercion to QQbar. But I don't quite know how to do conversion to AA.\n\n```\nsage: AA(QQbar(E(5) + E(5)^4))  \n0.618033988749895?\n```\nworks, but one currently has to pass through QQbar.\n\n> Yes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..\n\n\nOkay, I will add a sentence in the beginning.",
     "created_at": "2012-11-21T20:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3199,9 +3234,11 @@ Replying to [comment:117 chapoton]:
 
 > I do not understand : if one look at Ticket #13728, the method is_unit does check that an element is not zero ! 
 
+
 That's right, but even though UCF knows that it is a field, its elements do not know that they are field elements. Do you happen to know how to solve that?
 
 > Well, I do not know. The point is that we can currently use QQbar(z) for z in UCF. I wonder wether one could do AA(z) for z in UCF and real, because AA is just the set of real elements of QQbar. But maybe I do not understand something..
+
 
 (I thought you meant the other way round...) It was easy to implement the conversion to QQ and ZZ, and to set the coercion to QQbar. But I don't quite know how to do conversion to AA.
 
@@ -3209,10 +3246,10 @@ That's right, but even though UCF knows that it is a field, its elements do not 
 sage: AA(QQbar(E(5) + E(5)^4))  
 0.618033988749895?
 ```
-
 works, but one currently has to pass through QQbar.
 
 > Yes, But I rather meant the mathematical point : the field is defined as an embedded field, not as an abstract field..
+
 
 Okay, I will add a sentence in the beginning.
 
@@ -3243,7 +3280,7 @@ As a general comment: we have been discussing the overall design with Christian 
 archive/issue_comments_073925.json:
 ```json
 {
-    "body": "Replying to [comment:115 chapoton]:\n\n> - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe\n\nI added implementations of those, and I also improved the documentation here and there a bit.",
+    "body": "Replying to [comment:115 chapoton]:\n\n> - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe\n\n\nI added implementations of those, and I also improved the documentation here and there a bit.",
     "created_at": "2012-11-22T08:58:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3256,6 +3293,7 @@ Replying to [comment:115 chapoton]:
 
 > - it would be worth adding some of the methods of QQbar elements : minpoly and abs maybe
 
+
 I added implementations of those, and I also improved the documentation here and there a bit.
 
 
@@ -3265,7 +3303,7 @@ I added implementations of those, and I also improved the documentation here and
 archive/issue_comments_073926.json:
 ```json
 {
-    "body": "A few more comments\n\n* this import is apparently not used :\n\nfrom sage.rings.complex_field import ComplexField \n\n* the sort of elements is backwards compared to the order for cyclotomic fields\n\n```\nsage: v=UCF.random_element(7);v\n-5*E(7) - 4*E(7)^3 + 4*E(7)^4 + E(7)^5\nsage: v.to_cyclotomic_field()\nzeta7^5 + 4*zeta7^4 - 4*zeta7^3 - 5*zeta7\n```\n\nmaybe it would be better to go the same way ? but maybe this is the same as gap ?\n\n* Is the is_subring method necessary ? it is almost empty !\n\n* in the element constructor, maybe one could answer by something like\n\n\"no coercion found for elements of XXX\"\n\nwith XXX the parent of the argument ? It would be more informative, no ?\n\n* maybe zumbroich_basis should be called zumbroich_basis_indices ? I would expect that something called zumbroich_basis would return elements of the field, which is not really the case. Well, this is not that important..\n\n* why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n\n* in _invert_, one should rather raise a ZeroDivisionError when trying to invert 0 ?\n\n* more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\n* I have not read seriously the cython part, but found a typo :\n\ninverse for the univeral\n\nThat's all for today",
+    "body": "A few more comments\n\n* this import is apparently not used :\n\nfrom sage.rings.complex_field import ComplexField \n\n* the sort of elements is backwards compared to the order for cyclotomic fields\n\n```\nsage: v=UCF.random_element(7);v\n-5*E(7) - 4*E(7)^3 + 4*E(7)^4 + E(7)^5\nsage: v.to_cyclotomic_field()\nzeta7^5 + 4*zeta7^4 - 4*zeta7^3 - 5*zeta7\n```\nmaybe it would be better to go the same way ? but maybe this is the same as gap ?\n\n* Is the is_subring method necessary ? it is almost empty !\n\n* in the element constructor, maybe one could answer by something like\n\n\"no coercion found for elements of XXX\"\n\nwith XXX the parent of the argument ? It would be more informative, no ?\n\n* maybe zumbroich_basis should be called zumbroich_basis_indices ? I would expect that something called zumbroich_basis would return elements of the field, which is not really the case. Well, this is not that important..\n\n* why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n\n* in _invert_, one should rather raise a ZeroDivisionError when trying to invert 0 ?\n\n* more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\n* I have not read seriously the cython part, but found a typo :\n\ninverse for the univeral\n\nThat's all for today",
     "created_at": "2012-11-22T20:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3288,7 +3326,6 @@ sage: v=UCF.random_element(7);v
 sage: v.to_cyclotomic_field()
 zeta7^5 + 4*zeta7^4 - 4*zeta7^3 - 5*zeta7
 ```
-
 maybe it would be better to go the same way ? but maybe this is the same as gap ?
 
 * Is the is_subring method necessary ? it is almost empty !
@@ -3320,7 +3357,7 @@ That's all for today
 archive/issue_comments_073927.json:
 ```json
 {
-    "body": "Replying to [comment:121 chapoton]:\n> A few more comments\n\nThanks a lot!\n\n> * the sort of elements is backwards compared to the order for cyclotomic fields\n> maybe it would be better to go the same way ? but maybe this is the same as gap ?\n\nI used the same order as gap (the increasing ordering on the exponents). I think I would prefer this ordering...\n\n> * Is the is_subring method necessary ? it is almost empty !\n\nI don't quite remember where but I needed this (indeed trivially implemented) method at some point to not catch an error. Maybe it was when working with matrices over UCF?\n\n> \"no coercion found for elements of XXX\"\n\ndone, I had to distinguish between objects having a parent and those not having one.\n\n> * maybe zumbroich_basis should be called zumbroich_basis_indices ? I would expect that something called zumbroich_basis would return elements of the field, which is not really the case. Well, this is not that important..\n\ndone\n\n> * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n\nIf I am not mistaken, the hash is only unique in a given Sage session.\n\n> * in _invert_, one should rather raise a ZeroDivisionError when trying to invert 0 ?\n> * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\ngood point, done!\n\nBest, Christian",
+    "body": "Replying to [comment:121 chapoton]:\n> A few more comments\n\n\nThanks a lot!\n\n> * the sort of elements is backwards compared to the order for cyclotomic fields\n> maybe it would be better to go the same way ? but maybe this is the same as gap ?\n\n\nI used the same order as gap (the increasing ordering on the exponents). I think I would prefer this ordering...\n\n> * Is the is_subring method necessary ? it is almost empty !\n\n\nI don't quite remember where but I needed this (indeed trivially implemented) method at some point to not catch an error. Maybe it was when working with matrices over UCF?\n\n> \"no coercion found for elements of XXX\"\n\n\ndone, I had to distinguish between objects having a parent and those not having one.\n\n> * maybe zumbroich_basis should be called zumbroich_basis_indices ? I would expect that something called zumbroich_basis would return elements of the field, which is not really the case. Well, this is not that important..\n\n\ndone\n\n> * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n\n\nIf I am not mistaken, the hash is only unique in a given Sage session.\n\n> * in _invert_, one should rather raise a ZeroDivisionError when trying to invert 0 ?\n> * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\n\ngood point, done!\n\nBest, Christian",
     "created_at": "2012-11-23T08:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3332,31 +3369,38 @@ archive/issue_comments_073927.json:
 Replying to [comment:121 chapoton]:
 > A few more comments
 
+
 Thanks a lot!
 
 > * the sort of elements is backwards compared to the order for cyclotomic fields
 > maybe it would be better to go the same way ? but maybe this is the same as gap ?
 
+
 I used the same order as gap (the increasing ordering on the exponents). I think I would prefer this ordering...
 
 > * Is the is_subring method necessary ? it is almost empty !
+
 
 I don't quite remember where but I needed this (indeed trivially implemented) method at some point to not catch an error. Maybe it was when working with matrices over UCF?
 
 > "no coercion found for elements of XXX"
 
+
 done, I had to distinguish between objects having a parent and those not having one.
 
 > * maybe zumbroich_basis should be called zumbroich_basis_indices ? I would expect that something called zumbroich_basis would return elements of the field, which is not really the case. Well, this is not that important..
+
 
 done
 
 > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?
 
+
 If I am not mistaken, the hash is only unique in a given Sage session.
 
 > * in _invert_, one should rather raise a ZeroDivisionError when trying to invert 0 ?
 > * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?
+
 
 good point, done!
 
@@ -3369,7 +3413,7 @@ Best, Christian
 archive/issue_comments_073928.json:
 ```json
 {
-    "body": "Replying to [comment:122 stumpc5]:\n> > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n> \n> If I am not mistaken, the hash is only unique in a given Sage session.\n\nIt is not required that the hash value of an object be unique across\nSage session. However the implementation usually guarantees this,\nwhich is a good feature. In fact, most of the time in Sage, the hash\nvalue only depends on the architecture (32bits/64bits) and when this\nis the case, it is good to test it explicitly in order to get noticed\nin case the hash value would change for some reason (which could be a\nbug or a long distance consequence of something else), as in:\n\n            sage: e = RootSystem(['A',2]).ambient_space()\n            sage: hash(e.simple_root(0))\n            -4601450286177489034          # 64-bit\n            549810038                     # 32-bit \n\nCheers,\n\t\t\t\t\tNicolas",
+    "body": "Replying to [comment:122 stumpc5]:\n> > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n \n> \n> If I am not mistaken, the hash is only unique in a given Sage session.\n\n\nIt is not required that the hash value of an object be unique across\nSage session. However the implementation usually guarantees this,\nwhich is a good feature. In fact, most of the time in Sage, the hash\nvalue only depends on the architecture (32bits/64bits) and when this\nis the case, it is good to test it explicitly in order to get noticed\nin case the hash value would change for some reason (which could be a\nbug or a long distance consequence of something else), as in:\n\n            sage: e = RootSystem(['A',2]).ambient_space()\n            sage: hash(e.simple_root(0))\n            -4601450286177489034          # 64-bit\n            549810038                     # 32-bit \n\nCheers,\n\t\t\t\t\tNicolas",
     "created_at": "2012-11-23T08:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3380,8 +3424,10 @@ archive/issue_comments_073928.json:
 
 Replying to [comment:122 stumpc5]:
 > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?
+ 
 > 
 > If I am not mistaken, the hash is only unique in a given Sage session.
+
 
 It is not required that the hash value of an object be unique across
 Sage session. However the implementation usually guarantees this,
@@ -3406,7 +3452,7 @@ Cheers,
 archive/issue_comments_073929.json:
 ```json
 {
-    "body": "Replying to [comment:121 chapoton]:\n> * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\nJust a side note: as discussed on sage-combinat-devel, assertions are\npreferable in the following situations:\n\n- For checking the internal state of the program\n- When the caller should *not* catch the exception\n- In time critical locations\n\nBeside, nothing prevents from writing a meaningful message in an\nassertion check.\n\nCheers,\n                      Nicolas",
+    "body": "Replying to [comment:121 chapoton]:\n> * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?\n\n\nJust a side note: as discussed on sage-combinat-devel, assertions are\npreferable in the following situations:\n\n- For checking the internal state of the program\n- When the caller should *not* catch the exception\n- In time critical locations\n\nBeside, nothing prevents from writing a meaningful message in an\nassertion check.\n\nCheers,\n                      Nicolas",
     "created_at": "2012-11-23T08:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3417,6 +3463,7 @@ archive/issue_comments_073929.json:
 
 Replying to [comment:121 chapoton]:
 > * more generally, maybe one could try to avoid using assert, and better raise precise Exceptions ?
+
 
 Just a side note: as discussed on sage-combinat-devel, assertions are
 preferable in the following situations:
@@ -3438,7 +3485,7 @@ Cheers,
 archive/issue_comments_073930.json:
 ```json
 {
-    "body": "Replying to [comment:123 nthiery]:\n> Replying to [comment:122 stumpc5]:\n> > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n> > \n> > If I am not mistaken, the hash is only unique in a given Sage session.\n> \n> It is not required that the hash value of an object be unique across\n> Sage session. However the implementation usually guarantees this,\n> which is a good feature. In fact, most of the time in Sage, the hash\n> value only depends on the architecture (32bits/64bits) and when this\n> is the case, it is good to test it explicitly in order to get noticed\n> in case the hash value would change for some reason\n\nThanks for the clarification!\n\nDo you also happen to know how to handle the real conversion as in `AA(QQbar(E(5) + E(5)^4))` in comment:118 ?",
+    "body": "Replying to [comment:123 nthiery]:\n> Replying to [comment:122 stumpc5]:\n> > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n \n> > \n> > If I am not mistaken, the hash is only unique in a given Sage session.\n\n> \n> It is not required that the hash value of an object be unique across\n> Sage session. However the implementation usually guarantees this,\n> which is a good feature. In fact, most of the time in Sage, the hash\n> value only depends on the architecture (32bits/64bits) and when this\n> is the case, it is good to test it explicitly in order to get noticed\n> in case the hash value would change for some reason\n\n\nThanks for the clarification!\n\nDo you also happen to know how to handle the real conversion as in `AA(QQbar(E(5) + E(5)^4))` in comment:118 ?",
     "created_at": "2012-11-23T08:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3450,8 +3497,10 @@ archive/issue_comments_073930.json:
 Replying to [comment:123 nthiery]:
 > Replying to [comment:122 stumpc5]:
 > > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?
+ 
 > > 
 > > If I am not mistaken, the hash is only unique in a given Sage session.
+
 > 
 > It is not required that the hash value of an object be unique across
 > Sage session. However the implementation usually guarantees this,
@@ -3459,6 +3508,7 @@ Replying to [comment:123 nthiery]:
 > value only depends on the architecture (32bits/64bits) and when this
 > is the case, it is good to test it explicitly in order to get noticed
 > in case the hash value would change for some reason
+
 
 Thanks for the clarification!
 
@@ -3471,7 +3521,7 @@ Do you also happen to know how to handle the real conversion as in `AA(QQbar(E(5
 archive/issue_comments_073931.json:
 ```json
 {
-    "body": "Replying to [comment:125 stumpc5]:\n> Replying to [comment:123 nthiery]:\n> > Replying to [comment:122 stumpc5]:\n> > > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n> > > \n> > > If I am not mistaken, the hash is only unique in a given Sage session.\n> > \n> > It is not required that the hash value of an object be unique across\n> > Sage session. However the implementation usually guarantees this,\n> > which is a good feature. In fact, most of the time in Sage, the hash\n> > value only depends on the architecture (32bits/64bits) and when this\n> > is the case, it is good to test it explicitly in order to get noticed\n> > in case the hash value would change for some reason\n> \n> Thanks for the clarification!\n> \n> Do you also happen to know how to handle the real conversion as in `AA(QQbar(E(5) + E(5)^4))` in comment:118 ?\n\nDid you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?\n\nIf yes, this could possibly be done during the initialization of UCF.",
+    "body": "Replying to [comment:125 stumpc5]:\n> Replying to [comment:123 nthiery]:\n> > Replying to [comment:122 stumpc5]:\n> > > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?\n \n> > > \n> > > If I am not mistaken, the hash is only unique in a given Sage session.\n\n> > \n> > It is not required that the hash value of an object be unique across\n> > Sage session. However the implementation usually guarantees this,\n> > which is a good feature. In fact, most of the time in Sage, the hash\n> > value only depends on the architecture (32bits/64bits) and when this\n> > is the case, it is good to test it explicitly in order to get noticed\n> > in case the hash value would change for some reason\n\n> \n> Thanks for the clarification!\n> \n> Do you also happen to know how to handle the real conversion as in `AA(QQbar(E(5) + E(5)^4))` in comment:118 ?\n\n\nDid you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?\n\nIf yes, this could possibly be done during the initialization of UCF.",
     "created_at": "2012-11-23T09:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3484,8 +3534,10 @@ Replying to [comment:125 stumpc5]:
 > Replying to [comment:123 nthiery]:
 > > Replying to [comment:122 stumpc5]:
 > > > > * why is the hash function test tagged with random ? does it depend on the computer or something like that ?
+ 
 > > > 
 > > > If I am not mistaken, the hash is only unique in a given Sage session.
+
 > > 
 > > It is not required that the hash value of an object be unique across
 > > Sage session. However the implementation usually guarantees this,
@@ -3493,10 +3545,12 @@ Replying to [comment:125 stumpc5]:
 > > value only depends on the architecture (32bits/64bits) and when this
 > > is the case, it is good to test it explicitly in order to get noticed
 > > in case the hash value would change for some reason
+
 > 
 > Thanks for the clarification!
 > 
 > Do you also happen to know how to handle the real conversion as in `AA(QQbar(E(5) + E(5)^4))` in comment:118 ?
+
 
 Did you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?
 
@@ -3509,7 +3563,7 @@ If yes, this could possibly be done during the initialization of UCF.
 archive/issue_comments_073932.json:
 ```json
 {
-    "body": "Replying to [comment:126 nthiery]:\n\n> Did you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?\n\nGood call, it works now! Thanks!\n\nBtw: It would be nice to include this in the documentation, if not already done. At least if I google for `\"sage SetMorphism SetsWithPartialMaps\"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.",
+    "body": "Replying to [comment:126 nthiery]:\n\n> Did you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?\n\n\nGood call, it works now! Thanks!\n\nBtw: It would be nice to include this in the documentation, if not already done. At least if I google for `\"sage SetMorphism SetsWithPartialMaps\"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.",
     "created_at": "2012-11-23T10:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3522,6 +3576,7 @@ Replying to [comment:126 nthiery]:
 
 > Did you try implementing the (partial) morphism from UCF to AA (using SetMorphism and the category of SetsWithPartialMaps), and register it as a conversion?
 
+
 Good call, it works now! Thanks!
 
 Btw: It would be nice to include this in the documentation, if not already done. At least if I google for `"sage SetMorphism SetsWithPartialMaps"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.
@@ -3533,7 +3588,7 @@ Btw: It would be nice to include this in the documentation, if not already done.
 archive/issue_comments_073933.json:
 ```json
 {
-    "body": "Replying to [comment:127 stumpc5]:\n\n> Replying to [comment:126 nthiery] :\n\n> Good call, it works now! Thanks!\n\nOne more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like\n\n\n```\n        SetMorphism(\n                Hom(self, CyclotomicField(n), SetsWithPartialMaps()),\n                lambda elem: elem.to_cyclotomic_field()\n            ).register_as_conversion()\n```\n\n\nThe problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.",
+    "body": "Replying to [comment:127 stumpc5]:\n\n> Replying to [comment:126 nthiery] :\n\n\n> Good call, it works now! Thanks!\n\n\nOne more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like\n\n```\n        SetMorphism(\n                Hom(self, CyclotomicField(n), SetsWithPartialMaps()),\n                lambda elem: elem.to_cyclotomic_field()\n            ).register_as_conversion()\n```\n\nThe problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.",
     "created_at": "2012-11-23T10:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3546,10 +3601,11 @@ Replying to [comment:127 stumpc5]:
 
 > Replying to [comment:126 nthiery] :
 
+
 > Good call, it works now! Thanks!
 
-One more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like
 
+One more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like
 
 ```
         SetMorphism(
@@ -3557,7 +3613,6 @@ One more thing: do you also know how to do the same for the cyclotomic fields ? 
                 lambda elem: elem.to_cyclotomic_field()
             ).register_as_conversion()
 ```
-
 
 The problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.
 
@@ -3592,7 +3647,7 @@ This is great that you managed to coerce to AA !
 archive/issue_comments_073935.json:
 ```json
 {
-    "body": "I am glad that it worked out!\n\n\n> Btw: It would be nice to include this in the documentation, if not already done. At least if I google for `\"sage SetMorphism SetsWithPartialMaps\"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.\n\nIndeed! A good spot might be Simon's tutorial worksheet on coercion:\n\nhttps://groups.google.com/forum/#!topic/sage-devel/CJEUEghnQx8\n\nSimon?",
+    "body": "I am glad that it worked out!\n\n\n> Btw: It would be nice to include this in the documentation, if not already done. At least if I google for `\"sage SetMorphism SetsWithPartialMaps\"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.\n\n\nIndeed! A good spot might be Simon's tutorial worksheet on coercion:\n\nhttps://groups.google.com/forum/#!topic/sage-devel/CJEUEghnQx8\n\nSimon?",
     "created_at": "2012-11-23T10:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3605,6 +3660,7 @@ I am glad that it worked out!
 
 
 > Btw: It would be nice to include this in the documentation, if not already done. At least if I google for `"sage SetMorphism SetsWithPartialMaps"`, I only get the file `root_space.py` which is perfectly fine to explain how to do it, but I only found it after you telling me what to look for.
+
 
 Indeed! A good spot might be Simon's tutorial worksheet on coercion:
 
@@ -3619,7 +3675,7 @@ Simon?
 archive/issue_comments_073936.json:
 ```json
 {
-    "body": "Replying to [comment:128 stumpc5]:\n> One more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like\n> \n> {{{\n>         SetMorphism(\n>                 Hom(self, CyclotomicField(n), SetsWithPartialMaps()),\n>                 lambda elem: elem.to_cyclotomic_field()\n>             ).register_as_conversion()\n> }}}\n> \n> The problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.\n\nThere is no perfect support for this. But I guess you could change the initializtion of CyclotomicField so that, when the n-th Cyclotomic field F is constructed, the partial conversion UCF->F is constructed and registered as a conversion (and possibly the reverse coercion as well).",
+    "body": "Replying to [comment:128 stumpc5]:\n> One more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like\n> \n> \n> ```\n>         SetMorphism(\n>                 Hom(self, CyclotomicField(n), SetsWithPartialMaps()),\n>                 lambda elem: elem.to_cyclotomic_field()\n>             ).register_as_conversion()\n> ```\n> \n> The problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.\n\n\nThere is no perfect support for this. But I guess you could change the initializtion of CyclotomicField so that, when the n-th Cyclotomic field F is constructed, the partial conversion UCF->F is constructed and registered as a conversion (and possibly the reverse coercion as well).",
     "created_at": "2012-11-23T10:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3631,14 +3687,16 @@ archive/issue_comments_073936.json:
 Replying to [comment:128 stumpc5]:
 > One more thing: do you also know how to do the same for the cyclotomic fields ? What I would need is something like
 > 
-> {{{
+> 
+> ```
 >         SetMorphism(
 >                 Hom(self, CyclotomicField(n), SetsWithPartialMaps()),
 >                 lambda elem: elem.to_cyclotomic_field()
 >             ).register_as_conversion()
-> }}}
+> ```
 > 
 > The problem is that the parameter `n` is not determined a priori, and I want the conversion to exist for any `n`.
+
 
 There is no perfect support for this. But I guess you could change the initializtion of CyclotomicField so that, when the n-th Cyclotomic field F is constructed, the partial conversion UCF->F is constructed and registered as a conversion (and possibly the reverse coercion as well).
 
@@ -3697,7 +3755,7 @@ Hum, the patch has become so much bigger, and the html preview does no longer wo
 archive/issue_comments_073939.json:
 ```json
 {
-    "body": "Replying to [comment:132 stumpc5]:\n> Hi --\n> \n> I think we are now some big steps forward!\n> \n> - I took care of everything Fred was asking for, in particular the partial conversion to `AA`.\n> \n> and\n> \n> - I implemented conversion to the cyclotomic field ! There is still an issue left, which I cannot take care off. Namely, the embedding of the cyclotomic field into the complex numbers can be given in the constructor. But I didn't find a way to capture this embedding to send an element of the universal cyclotomics into the cyclotomic field AND preserve the embedding.\n\nCool!\n\nI guess it's fair if you only provide conversions to-from those cyclotomic field that use the default embedding.",
+    "body": "Replying to [comment:132 stumpc5]:\n> Hi --\n> \n> I think we are now some big steps forward!\n> \n> - I took care of everything Fred was asking for, in particular the partial conversion to `AA`.\n> \n> and\n> \n> - I implemented conversion to the cyclotomic field ! There is still an issue left, which I cannot take care off. Namely, the embedding of the cyclotomic field into the complex numbers can be given in the constructor. But I didn't find a way to capture this embedding to send an element of the universal cyclotomics into the cyclotomic field AND preserve the embedding.\n\n\nCool!\n\nI guess it's fair if you only provide conversions to-from those cyclotomic field that use the default embedding.",
     "created_at": "2012-11-23T14:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3717,6 +3775,7 @@ Replying to [comment:132 stumpc5]:
 > 
 > - I implemented conversion to the cyclotomic field ! There is still an issue left, which I cannot take care off. Namely, the embedding of the cyclotomic field into the complex numbers can be given in the constructor. But I didn't find a way to capture this embedding to send an element of the universal cyclotomics into the cyclotomic field AND preserve the embedding.
 
+
 Cool!
 
 I guess it's fair if you only provide conversions to-from those cyclotomic field that use the default embedding.
@@ -3728,7 +3787,7 @@ I guess it's fair if you only provide conversions to-from those cyclotomic field
 archive/issue_comments_073940.json:
 ```json
 {
-    "body": "Replying to [comment:133 chapoton]:\n> Hum, the patch has become so much bigger, and the html preview does no longer work. It seems that you are now touching many more files. This will make my work much more difficult. There seem to be a huge number of whitespace-removal, which is a bit perturbing. I am not happy with this latest version, indeed..\n> \n\nI do agree, I didn't check that carefully. All I did was to add a 5 line method to `rings/number_field/number_field.py` that does the conversion from UCF to CF.\n\nIn order to not get trailing white space errors, I removed them all (and this did in the end modify the complete file, unfortunately). Should I just leave the white spaces in order to keep the readability of the patch?",
+    "body": "Replying to [comment:133 chapoton]:\n> Hum, the patch has become so much bigger, and the html preview does no longer work. It seems that you are now touching many more files. This will make my work much more difficult. There seem to be a huge number of whitespace-removal, which is a bit perturbing. I am not happy with this latest version, indeed..\n> \n\n\nI do agree, I didn't check that carefully. All I did was to add a 5 line method to `rings/number_field/number_field.py` that does the conversion from UCF to CF.\n\nIn order to not get trailing white space errors, I removed them all (and this did in the end modify the complete file, unfortunately). Should I just leave the white spaces in order to keep the readability of the patch?",
     "created_at": "2012-11-23T14:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3740,6 +3799,7 @@ archive/issue_comments_073940.json:
 Replying to [comment:133 chapoton]:
 > Hum, the patch has become so much bigger, and the html preview does no longer work. It seems that you are now touching many more files. This will make my work much more difficult. There seem to be a huge number of whitespace-removal, which is a bit perturbing. I am not happy with this latest version, indeed..
 > 
+
 
 I do agree, I didn't check that carefully. All I did was to add a 5 line method to `rings/number_field/number_field.py` that does the conversion from UCF to CF.
 
@@ -3770,7 +3830,7 @@ yes, please try to make a cleaner/shorter patch. I think it is good to never int
 archive/issue_comments_073942.json:
 ```json
 {
-    "body": "Replying to [comment:136 chapoton]:\n> yes, please try to make a cleaner/shorter patch. I think it is good to never introduce new trailing whitespaces, but bad to remove them everywhere else in the files you touch, as this makes ugly patches. Maybe you can without much work restart from an untouched file rings/number_field/number_field.py ?\n\nDo you accept it now as only a little change (which I actually consider a bit improvement), see my changes in `number_field.py` ?",
+    "body": "Replying to [comment:136 chapoton]:\n> yes, please try to make a cleaner/shorter patch. I think it is good to never introduce new trailing whitespaces, but bad to remove them everywhere else in the files you touch, as this makes ugly patches. Maybe you can without much work restart from an untouched file rings/number_field/number_field.py ?\n\n\nDo you accept it now as only a little change (which I actually consider a bit improvement), see my changes in `number_field.py` ?",
     "created_at": "2012-11-23T14:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3781,6 +3841,7 @@ archive/issue_comments_073942.json:
 
 Replying to [comment:136 chapoton]:
 > yes, please try to make a cleaner/shorter patch. I think it is good to never introduce new trailing whitespaces, but bad to remove them everywhere else in the files you touch, as this makes ugly patches. Maybe you can without much work restart from an untouched file rings/number_field/number_field.py ?
+
 
 Do you accept it now as only a little change (which I actually consider a bit improvement), see my changes in `number_field.py` ?
 
@@ -3811,7 +3872,7 @@ yes, much better.
 archive/issue_comments_073944.json:
 ```json
 {
-    "body": "Replying to [comment:138 chapoton]:\n> yes, much better. \n> \n> * there is still the typo \"the univeral cyclotomic\"\n\nOh, I wasn't seeing this typo when you pointed at it in your comment. So I thought you were disliking the wordings, which I then changed.\n\nIt's fixed now and will be in the next version of the patch as soon as I have more things to change.",
+    "body": "Replying to [comment:138 chapoton]:\n> yes, much better. \n> \n> * there is still the typo \"the univeral cyclotomic\"\n\n\nOh, I wasn't seeing this typo when you pointed at it in your comment. So I thought you were disliking the wordings, which I then changed.\n\nIt's fixed now and will be in the next version of the patch as soon as I have more things to change.",
     "created_at": "2012-11-23T15:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3825,6 +3886,7 @@ Replying to [comment:138 chapoton]:
 > 
 > * there is still the typo "the univeral cyclotomic"
 
+
 Oh, I wasn't seeing this typo when you pointed at it in your comment. So I thought you were disliking the wordings, which I then changed.
 
 It's fixed now and will be in the next version of the patch as soon as I have more things to change.
@@ -3836,7 +3898,7 @@ It's fixed now and will be in the next version of the patch as soon as I have mo
 archive/issue_comments_073945.json:
 ```json
 {
-    "body": "Replying to [comment:139 stumpc5]:\n> Replying to [comment:138 chapoton]:\n\n> It's fixed now and will be in the next version of the patch as soon as I have more things to change.\n\nOkay, done -- I fixed this and added more documentation on getting to the cyclotomics.",
+    "body": "Replying to [comment:139 stumpc5]:\n> Replying to [comment:138 chapoton]:\n\n\n> It's fixed now and will be in the next version of the patch as soon as I have more things to change.\n\n\nOkay, done -- I fixed this and added more documentation on getting to the cyclotomics.",
     "created_at": "2012-11-23T16:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3848,7 +3910,9 @@ archive/issue_comments_073945.json:
 Replying to [comment:139 stumpc5]:
 > Replying to [comment:138 chapoton]:
 
+
 > It's fixed now and will be in the next version of the patch as soon as I have more things to change.
+
 
 Okay, done -- I fixed this and added more documentation on getting to the cyclotomics.
 
@@ -3950,7 +4014,7 @@ I suspect (without a really good reason) that the choice of the letter E, which 
 archive/issue_comments_073950.json:
 ```json
 {
-    "body": "Replying to [comment:144 chapoton]:\n> I suspect (without a really good reason) that the choice of the letter E, which is a traditional name for elliptic curves, may be involved.. \n\nPossibly, if E occurs explicitly in the doctest. Otherwise it should not interfer, as it is only imported by default in the intepreter and not in the sage sources. An alternative possibility is that some coercion involving cyclotomic fields now goes through UCF and causes trouble. You could rerun the failing tests with all the UCF coercions disabled.\n\n> By the way, is it reasonable to use a single letter ? I myself do not like the fact that the letter R stands for something I do not care about.. Maybe one could ask the question on sage-devel : can we use the name E for the generators of the universal cyclotomic field ?\n\nThat's a good point. The average Sage user is indeed different from the average GAP user. An alternative would be to use UCF.E, and to implement:\n\n```\n    sage: UCF.inject_shorthands()\n    sage: E(3)\n```\n\n(as for symmetric functions)",
+    "body": "Replying to [comment:144 chapoton]:\n> I suspect (without a really good reason) that the choice of the letter E, which is a traditional name for elliptic curves, may be involved.. \n\n\nPossibly, if E occurs explicitly in the doctest. Otherwise it should not interfer, as it is only imported by default in the intepreter and not in the sage sources. An alternative possibility is that some coercion involving cyclotomic fields now goes through UCF and causes trouble. You could rerun the failing tests with all the UCF coercions disabled.\n\n> By the way, is it reasonable to use a single letter ? I myself do not like the fact that the letter R stands for something I do not care about.. Maybe one could ask the question on sage-devel : can we use the name E for the generators of the universal cyclotomic field ?\n\n\nThat's a good point. The average Sage user is indeed different from the average GAP user. An alternative would be to use UCF.E, and to implement:\n\n```\n    sage: UCF.inject_shorthands()\n    sage: E(3)\n```\n(as for symmetric functions)",
     "created_at": "2012-11-24T18:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3962,9 +4026,11 @@ archive/issue_comments_073950.json:
 Replying to [comment:144 chapoton]:
 > I suspect (without a really good reason) that the choice of the letter E, which is a traditional name for elliptic curves, may be involved.. 
 
+
 Possibly, if E occurs explicitly in the doctest. Otherwise it should not interfer, as it is only imported by default in the intepreter and not in the sage sources. An alternative possibility is that some coercion involving cyclotomic fields now goes through UCF and causes trouble. You could rerun the failing tests with all the UCF coercions disabled.
 
 > By the way, is it reasonable to use a single letter ? I myself do not like the fact that the letter R stands for something I do not care about.. Maybe one could ask the question on sage-devel : can we use the name E for the generators of the universal cyclotomic field ?
+
 
 That's a good point. The average Sage user is indeed different from the average GAP user. An alternative would be to use UCF.E, and to implement:
 
@@ -3972,7 +4038,6 @@ That's a good point. The average Sage user is indeed different from the average 
     sage: UCF.inject_shorthands()
     sage: E(3)
 ```
-
 (as for symmetric functions)
 
 
@@ -3982,7 +4047,7 @@ That's a good point. The average Sage user is indeed different from the average 
 archive/issue_comments_073951.json:
 ```json
 {
-    "body": "Replying to [comment:143 chapoton]:\n> sage -t -force_lib \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n> Segmentation fault (core dumped)\n> \n> with the patch applied, and it disappears when the patch is removed.\n\nI just rechecked on my machine, and I get `All tests passed!` in both cases. So, what might be the difference between Fr\u00e9d\u00e9rics and my machine? I am running 5.5.rc0 on a 64bit Linux machine.\n\nI forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.",
+    "body": "Replying to [comment:143 chapoton]:\n> sage -t -force_lib \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n> Segmentation fault (core dumped)\n> \n> with the patch applied, and it disappears when the patch is removed.\n\n\nI just rechecked on my machine, and I get `All tests passed!` in both cases. So, what might be the difference between Fr\u00e9d\u00e9rics and my machine? I am running 5.5.rc0 on a 64bit Linux machine.\n\nI forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.",
     "created_at": "2012-11-25T18:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -3997,6 +4062,7 @@ Replying to [comment:143 chapoton]:
 > 
 > with the patch applied, and it disappears when the patch is removed.
 
+
 I just rechecked on my machine, and I get `All tests passed!` in both cases. So, what might be the difference between Frédérics and my machine? I am running 5.5.rc0 on a 64bit Linux machine.
 
 I forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.
@@ -4008,7 +4074,7 @@ I forwarded the question on the point of entry to the sage-devel mailing list, s
 archive/issue_comments_073952.json:
 ```json
 {
-    "body": "Replying to [comment:146 stumpc5]:\n> I forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.\n\nI updated the patch according to changes discussed at sage-devel. The only thing missing is to decide how to handle possible embeddings.",
+    "body": "Replying to [comment:146 stumpc5]:\n> I forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.\n\n\nI updated the patch according to changes discussed at sage-devel. The only thing missing is to decide how to handle possible embeddings.",
     "created_at": "2012-11-27T13:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4019,6 +4085,7 @@ archive/issue_comments_073952.json:
 
 Replying to [comment:146 stumpc5]:
 > I forwarded the question on the point of entry to the sage-devel mailing list, see https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/rJ6Y_-a__d8.
+
 
 I updated the patch according to changes discussed at sage-devel. The only thing missing is to decide how to handle possible embeddings.
 
@@ -4115,7 +4182,7 @@ Some comments:
 archive/issue_comments_073956.json:
 ```json
 {
-    "body": "Replying to [comment:151 robertwb]:\n> * ... (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)\n\nSmall remark: `UniqueRepresentation` currently uses a permanent cache, but will hopefully use a weak cache at some point in the future - see #12215. I think the `UniqueFactory` already has a weak cache - but please verify.",
+    "body": "Replying to [comment:151 robertwb]:\n> * ... (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)\n\n\nSmall remark: `UniqueRepresentation` currently uses a permanent cache, but will hopefully use a weak cache at some point in the future - see #12215. I think the `UniqueFactory` already has a weak cache - but please verify.",
     "created_at": "2012-12-01T08:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4127,6 +4194,7 @@ archive/issue_comments_073956.json:
 Replying to [comment:151 robertwb]:
 > * ... (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)
 
+
 Small remark: `UniqueRepresentation` currently uses a permanent cache, but will hopefully use a weak cache at some point in the future - see #12215. I think the `UniqueFactory` already has a weak cache - but please verify.
 
 
@@ -4136,7 +4204,7 @@ Small remark: `UniqueRepresentation` currently uses a permanent cache, but will 
 archive/issue_comments_073957.json:
 ```json
 {
-    "body": "Hi Robert,\n\nReplying to [comment:151 robertwb]:\n> * Any reason not to inherit from Field?\n\nI told him to :-)\n\nWe want to move away from the static class hierarchy (Monoid, Field,\n...) when there is not a strong compelling reason to use it (i.e. it\nmakes a difference speed wise, e.g. for element arithmetic), since\nthat duplicates the far more flexible category hierarchy.\n\nCheers,\n                                 Nicolas",
+    "body": "Hi Robert,\n\nReplying to [comment:151 robertwb]:\n> * Any reason not to inherit from Field?\n\n\nI told him to :-)\n\nWe want to move away from the static class hierarchy (Monoid, Field,\n...) when there is not a strong compelling reason to use it (i.e. it\nmakes a difference speed wise, e.g. for element arithmetic), since\nthat duplicates the far more flexible category hierarchy.\n\nCheers,\n                                 Nicolas",
     "created_at": "2012-12-01T12:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4149,6 +4217,7 @@ Hi Robert,
 
 Replying to [comment:151 robertwb]:
 > * Any reason not to inherit from Field?
+
 
 I told him to :-)
 
@@ -4167,7 +4236,7 @@ Cheers,
 archive/issue_comments_073958.json:
 ```json
 {
-    "body": "Replying to [comment:153 nthiery]:\n> \tHi Robert,\n> \n> Replying to [comment:151 robertwb]:\n> > * Any reason not to inherit from Field?\n> \n> I told him to :-)\n> \n> We want to move away from the static class hierarchy (Monoid, Field,\n> ...) when there is not a strong compelling reason to use it (i.e. it\n> makes a difference speed wise, e.g. for element arithmetic), since\n> that duplicates the far more flexible category hierarchy.\n\n+1 to this. Then why is is_Field not obtained by default?  I think there's performance benefit in moving to Ring at least, for multiplication (but I'd have to check that this is still the case).",
+    "body": "Replying to [comment:153 nthiery]:\n> \tHi Robert,\n\n> \n> Replying to [comment:151 robertwb]:\n> > * Any reason not to inherit from Field?\n \n> \n> I told him to :-)\n> \n> We want to move away from the static class hierarchy (Monoid, Field,\n> ...) when there is not a strong compelling reason to use it (i.e. it\n> makes a difference speed wise, e.g. for element arithmetic), since\n> that duplicates the far more flexible category hierarchy.\n\n\n+1 to this. Then why is is_Field not obtained by default?  I think there's performance benefit in moving to Ring at least, for multiplication (but I'd have to check that this is still the case).",
     "created_at": "2012-12-01T18:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4178,9 +4247,11 @@ archive/issue_comments_073958.json:
 
 Replying to [comment:153 nthiery]:
 > 	Hi Robert,
+
 > 
 > Replying to [comment:151 robertwb]:
 > > * Any reason not to inherit from Field?
+ 
 > 
 > I told him to :-)
 > 
@@ -4188,6 +4259,7 @@ Replying to [comment:153 nthiery]:
 > ...) when there is not a strong compelling reason to use it (i.e. it
 > makes a difference speed wise, e.g. for element arithmetic), since
 > that duplicates the far more flexible category hierarchy.
+
 
 +1 to this. Then why is is_Field not obtained by default?  I think there's performance benefit in moving to Ring at least, for multiplication (but I'd have to check that this is still the case).
 
@@ -4198,7 +4270,7 @@ Replying to [comment:153 nthiery]:
 archive/issue_comments_073959.json:
 ```json
 {
-    "body": "Thanks for your comments!\n\nReplying to [comment:150 nbruin]:\n> (but really, unless you can argue the argument set here is going to be very limited, I don't think you can afford to build this cache)\n\nI removed this cache (and also some of the others)\n\nReplying to [comment:151 robertwb]:\n> Lots of good code here!\n\nsome positive words are always appreciated, thanks!\n\n> * Why is get_parent_of_embedding in the pyx file when it's only used in the py file?\n\ndone\n\n> * No need to lazily import universal_cyclotomic_field_c, it's already behind another lazy import.\n\ndone\n\n> * CyclotomicField._coerce_map_from_ # TODO: use the embedding of other properly: you could use the method introduced in #13765, but if you don't want to do that then at least check it has the \"standard\" embedding sending the generator to the primitive root of unity CC or return None rather than silently producing wrong answers.\n\nWhat I now do is to take embeddings of CyclotomicFields into account, but do not coerce if the UCF doesn't have the standard embedding. Please recheck that it does what it properly...\n\n> * Shouldn't _coerce_map_from_ accept QQ?\n\nThis is captured in `_from_base_ring`.\n\n> * Does \"endowed with the Zumbroich basis\" need to be part of the printed name?\n\nremoved.\n\n> Also, what about a nice _latex_ representation?\n\nstill open.\n\n> * Using `<>` for != is deprecated, and I think goes away in python 3.\n\ndone.\n\n> * Any reason not to inherit from Field?\n\nI now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.\n\n> * The `if bracket == ...` list might be better done with a dictionary mapping left to right, with a good exception on KeyError. Even better, IMHO, is to accept any even-character string (so one would pass \"\" or \"[]\" or \"<<>>\" or whatever one wanted). \n\ndone.\n\n> * `_gap_init = _repr_`  Not now that we've allowed different printing options.\n\ndone.\n\n> * `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.\n\nstill open.\n\n> * is ZumbroichBasisIndices really a Parent?\n\nI am not the specialist here, so feel free to modify this. Now, ZBI is a parent, and the tuples `(n,k)` are indeed elements thereof.\n\n> * I agree with nbruin, there's a lot of caching going on that never gets freed. I would suggest having capped size caches, if you determine that you really need them. (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)\n\ndone.\n\nBest, Christian",
+    "body": "Thanks for your comments!\n\nReplying to [comment:150 nbruin]:\n> (but really, unless you can argue the argument set here is going to be very limited, I don't think you can afford to build this cache)\n\n\nI removed this cache (and also some of the others)\n\nReplying to [comment:151 robertwb]:\n> Lots of good code here!\n\n\nsome positive words are always appreciated, thanks!\n\n> * Why is get_parent_of_embedding in the pyx file when it's only used in the py file?\n\n\ndone\n\n> * No need to lazily import universal_cyclotomic_field_c, it's already behind another lazy import.\n\n\ndone\n\n> * CyclotomicField._coerce_map_from_ # TODO: use the embedding of other properly: you could use the method introduced in #13765, but if you don't want to do that then at least check it has the \"standard\" embedding sending the generator to the primitive root of unity CC or return None rather than silently producing wrong answers.\n\n\nWhat I now do is to take embeddings of CyclotomicFields into account, but do not coerce if the UCF doesn't have the standard embedding. Please recheck that it does what it properly...\n\n> * Shouldn't _coerce_map_from_ accept QQ?\n\n\nThis is captured in `_from_base_ring`.\n\n> * Does \"endowed with the Zumbroich basis\" need to be part of the printed name?\n\n\nremoved.\n\n> Also, what about a nice _latex_ representation?\n\n\nstill open.\n\n> * Using `<>` for != is deprecated, and I think goes away in python 3.\n\n\ndone.\n\n> * Any reason not to inherit from Field?\n\n\nI now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.\n\n> * The `if bracket == ...` list might be better done with a dictionary mapping left to right, with a good exception on KeyError. Even better, IMHO, is to accept any even-character string (so one would pass \"\" or \"[]\" or \"<<>>\" or whatever one wanted). \n\n\ndone.\n\n> * `_gap_init = _repr_`  Not now that we've allowed different printing options.\n\n\ndone.\n\n> * `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.\n\n\nstill open.\n\n> * is ZumbroichBasisIndices really a Parent?\n\n\nI am not the specialist here, so feel free to modify this. Now, ZBI is a parent, and the tuples `(n,k)` are indeed elements thereof.\n\n> * I agree with nbruin, there's a lot of caching going on that never gets freed. I would suggest having capped size caches, if you determine that you really need them. (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)\n\n\ndone.\n\nBest, Christian",
     "created_at": "2012-12-02T19:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4212,62 +4284,77 @@ Thanks for your comments!
 Replying to [comment:150 nbruin]:
 > (but really, unless you can argue the argument set here is going to be very limited, I don't think you can afford to build this cache)
 
+
 I removed this cache (and also some of the others)
 
 Replying to [comment:151 robertwb]:
 > Lots of good code here!
 
+
 some positive words are always appreciated, thanks!
 
 > * Why is get_parent_of_embedding in the pyx file when it's only used in the py file?
+
 
 done
 
 > * No need to lazily import universal_cyclotomic_field_c, it's already behind another lazy import.
 
+
 done
 
 > * CyclotomicField._coerce_map_from_ # TODO: use the embedding of other properly: you could use the method introduced in #13765, but if you don't want to do that then at least check it has the "standard" embedding sending the generator to the primitive root of unity CC or return None rather than silently producing wrong answers.
+
 
 What I now do is to take embeddings of CyclotomicFields into account, but do not coerce if the UCF doesn't have the standard embedding. Please recheck that it does what it properly...
 
 > * Shouldn't _coerce_map_from_ accept QQ?
 
+
 This is captured in `_from_base_ring`.
 
 > * Does "endowed with the Zumbroich basis" need to be part of the printed name?
+
 
 removed.
 
 > Also, what about a nice _latex_ representation?
 
+
 still open.
 
 > * Using `<>` for != is deprecated, and I think goes away in python 3.
+
 
 done.
 
 > * Any reason not to inherit from Field?
 
+
 I now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.
 
 > * The `if bracket == ...` list might be better done with a dictionary mapping left to right, with a good exception on KeyError. Even better, IMHO, is to accept any even-character string (so one would pass "" or "[]" or "<<>>" or whatever one wanted). 
+
 
 done.
 
 > * `_gap_init = _repr_`  Not now that we've allowed different printing options.
 
+
 done.
 
 > * `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.
+
 
 still open.
 
 > * is ZumbroichBasisIndices really a Parent?
 
+
 I am not the specialist here, so feel free to modify this. Now, ZBI is a parent, and the tuples `(n,k)` are indeed elements thereof.
 
 > * I agree with nbruin, there's a lot of caching going on that never gets freed. I would suggest having capped size caches, if you determine that you really need them. (Also, for CyclotomicFieldCached, better to fix this to make CyclotomicField faster, possibly using a weakref cache or one of the unique parent factories.)
+
 
 done.
 
@@ -4280,7 +4367,7 @@ Best, Christian
 archive/issue_comments_073960.json:
 ```json
 {
-    "body": "Replying to [comment:156 stumpc5]:\n> I now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.\n\nIt would be best to move those almost empty methods to the Fields\ncategory. That being said, I totally understand if you prefer to get\ndone with this patch without risking conflicts with ongoing category\ndevelopment. Can you just leave a quick note in the code like:\n\n\n```\n    .. TODO::\n\n       Remove the inheritance from Field and FieldElement as soon as\n       the methods X,Y,Z are implemented in the Fields category.\n```\n\n\nIdeally you would also make a quick benchmark to check my guess that\ninheriting from FieldElement does not make a speed difference.\n\nThanks!\n\n                               Nicolas",
+    "body": "Replying to [comment:156 stumpc5]:\n> I now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.\n\n\nIt would be best to move those almost empty methods to the Fields\ncategory. That being said, I totally understand if you prefer to get\ndone with this patch without risking conflicts with ongoing category\ndevelopment. Can you just leave a quick note in the code like:\n\n```\n    .. TODO::\n\n       Remove the inheritance from Field and FieldElement as soon as\n       the methods X,Y,Z are implemented in the Fields category.\n```\n\nIdeally you would also make a quick benchmark to check my guess that\ninheriting from FieldElement does not make a speed difference.\n\nThanks!\n\n                               Nicolas",
     "created_at": "2012-12-02T20:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4292,11 +4379,11 @@ archive/issue_comments_073960.json:
 Replying to [comment:156 stumpc5]:
 > I now do inherit from Field and from FieldElement. This way, I got rid of several almost empty methods. If Nicolas prefers to have it again the other way round, we can as well undo that.
 
+
 It would be best to move those almost empty methods to the Fields
 category. That being said, I totally understand if you prefer to get
 done with this patch without risking conflicts with ongoing category
 development. Can you just leave a quick note in the code like:
-
 
 ```
     .. TODO::
@@ -4304,7 +4391,6 @@ development. Can you just leave a quick note in the code like:
        Remove the inheritance from Field and FieldElement as soon as
        the methods X,Y,Z are implemented in the Fields category.
 ```
-
 
 Ideally you would also make a quick benchmark to check my guess that
 inheriting from FieldElement does not make a speed difference.
@@ -4320,7 +4406,7 @@ Thanks!
 archive/issue_comments_073961.json:
 ```json
 {
-    "body": "> * Does \"endowed with the Zumbroich basis\" need to be part of the printed name? Also, what about a nice _latex_ representation?\n\nThis is actually taken care of in #13734\n\n> `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.\n\n??? What do you want me to do here? Are you talking about the hash for the parent of the elements?",
+    "body": "> * Does \"endowed with the Zumbroich basis\" need to be part of the printed name? Also, what about a nice _latex_ representation?\n\n\nThis is actually taken care of in #13734\n\n> `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.\n\n\n??? What do you want me to do here? Are you talking about the hash for the parent of the elements?",
     "created_at": "2012-12-03T16:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4331,9 +4417,11 @@ archive/issue_comments_073961.json:
 
 > * Does "endowed with the Zumbroich basis" need to be part of the printed name? Also, what about a nice _latex_ representation?
 
+
 This is actually taken care of in #13734
 
 > `__hash__` will fail on a 32-bit machine. Instead, test making a dict with UCF items then retrieving one.
+
 
 ??? What do you want me to do here? Are you talking about the hash for the parent of the elements?
 
@@ -4344,7 +4432,7 @@ This is actually taken care of in #13734
 archive/issue_comments_073962.json:
 ```json
 {
-    "body": "Replying to [comment:158 stumpc5]:\n> ??? What do you want me to do here? Are you talking about the hash for the parent of the elements?\nI only found hashes for elements in your patch. Hash values are supposed to be machine-length integers associated to an object, consistent within one session, equal for objects that compare as equal (and preferably not equal to much else) [sage has to violate this due to equality being too lax and not transitive in the presence of coercion] and very little structure otherwise. In particular, the actual numerical values returned don't matter. It's better to check the properties that actually matter than particular values that are produced (which should be dependent on 32/64 bits because otherwise you're creating unnecessarily weak hashes on 64 bit)\n\nDon't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):\n\n```\nsage: a = ...\nsage: b = ...\nsage: c = ...\nsage: V = set([a,b])\nsage: <definition for a> in V\ntrue\nsage: b in V\ntrue\nsage: c in V\nfalse\n```\n\nand perhaps test your hash function is not the constant function and has a reasonable distribution:\n\n```\nsage: L = [<object> for i in [1..100]]\nsage: set(hash(x) for x in L).len() >= 98\ntrue\n```\n\nYou did mark the tests as `64 bit` which may or may not elicit the right action from the doctesting framework, but it would be way better if your test actually did work (and did test) on 32 bit as well, which you can do by testing functionality, not value.",
+    "body": "Replying to [comment:158 stumpc5]:\n> ??? What do you want me to do here? Are you talking about the hash for the parent of the elements?\n\nI only found hashes for elements in your patch. Hash values are supposed to be machine-length integers associated to an object, consistent within one session, equal for objects that compare as equal (and preferably not equal to much else) [sage has to violate this due to equality being too lax and not transitive in the presence of coercion] and very little structure otherwise. In particular, the actual numerical values returned don't matter. It's better to check the properties that actually matter than particular values that are produced (which should be dependent on 32/64 bits because otherwise you're creating unnecessarily weak hashes on 64 bit)\n\nDon't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):\n\n```\nsage: a = ...\nsage: b = ...\nsage: c = ...\nsage: V = set([a,b])\nsage: <definition for a> in V\ntrue\nsage: b in V\ntrue\nsage: c in V\nfalse\n```\nand perhaps test your hash function is not the constant function and has a reasonable distribution:\n\n```\nsage: L = [<object> for i in [1..100]]\nsage: set(hash(x) for x in L).len() >= 98\ntrue\n```\nYou did mark the tests as `64 bit` which may or may not elicit the right action from the doctesting framework, but it would be way better if your test actually did work (and did test) on 32 bit as well, which you can do by testing functionality, not value.",
     "created_at": "2012-12-03T17:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4355,6 +4443,7 @@ archive/issue_comments_073962.json:
 
 Replying to [comment:158 stumpc5]:
 > ??? What do you want me to do here? Are you talking about the hash for the parent of the elements?
+
 I only found hashes for elements in your patch. Hash values are supposed to be machine-length integers associated to an object, consistent within one session, equal for objects that compare as equal (and preferably not equal to much else) [sage has to violate this due to equality being too lax and not transitive in the presence of coercion] and very little structure otherwise. In particular, the actual numerical values returned don't matter. It's better to check the properties that actually matter than particular values that are produced (which should be dependent on 32/64 bits because otherwise you're creating unnecessarily weak hashes on 64 bit)
 
 Don't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):
@@ -4371,7 +4460,6 @@ true
 sage: c in V
 false
 ```
-
 and perhaps test your hash function is not the constant function and has a reasonable distribution:
 
 ```
@@ -4379,7 +4467,6 @@ sage: L = [<object> for i in [1..100]]
 sage: set(hash(x) for x in L).len() >= 98
 true
 ```
-
 You did mark the tests as `64 bit` which may or may not elicit the right action from the doctesting framework, but it would be way better if your test actually did work (and did test) on 32 bit as well, which you can do by testing functionality, not value.
 
 
@@ -4389,7 +4476,7 @@ You did mark the tests as `64 bit` which may or may not elicit the right action 
 archive/issue_comments_073963.json:
 ```json
 {
-    "body": "Replying to [comment:159 nbruin]:\n> Replying to [comment:158 stumpc5]:\n\nThanks for the clarification!\n\n> I only found hashes for elements in your patch.\n\nRight, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\nBtw: As with the hash for elements in the CyclotomicField, it does not depend on the embedding of the parent. Do you think this might cause problems?\n\nFinally, some functionalities become slower (e.g. matrix multiplication where addition or multiplication of UCF elements are done multiple times). Do you think, it is appropriate to cache (in the parent) the multipliciation or addition in UCF.Elements ?",
+    "body": "Replying to [comment:159 nbruin]:\n> Replying to [comment:158 stumpc5]:\n\n\nThanks for the clarification!\n\n> I only found hashes for elements in your patch.\n\n\nRight, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\nBtw: As with the hash for elements in the CyclotomicField, it does not depend on the embedding of the parent. Do you think this might cause problems?\n\nFinally, some functionalities become slower (e.g. matrix multiplication where addition or multiplication of UCF elements are done multiple times). Do you think, it is appropriate to cache (in the parent) the multipliciation or addition in UCF.Elements ?",
     "created_at": "2012-12-03T18:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4401,9 +4488,11 @@ archive/issue_comments_073963.json:
 Replying to [comment:159 nbruin]:
 > Replying to [comment:158 stumpc5]:
 
+
 Thanks for the clarification!
 
 > I only found hashes for elements in your patch.
+
 
 Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?
 
@@ -4418,7 +4507,7 @@ Finally, some functionalities become slower (e.g. matrix multiplication where ad
 archive/issue_comments_073964.json:
 ```json
 {
-    "body": "Replying to [comment:160 stumpc5]:\n> Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\nI guess for parents that would be OK, because they are unique. Otherwise, most elements in sage can be equal to non-identical elements, so `id` doesn't make for a valid hash on them. Using `id` as a hash isn't consistent across sessions and won't survive pickling, but I'd hope that's OK.\n\n> Btw: As with the hash for elements in the CyclotomicField, it does not depend on the embedding of the parent. Do you think this might cause problems?\n\nNo. The constant function would make a valid hash function. It would just lead to horrible performance on dictionaries and sets.\n\n> Finally, some functionalities become slower (e.g. matrix multiplication where addition or multiplication of UCF elements are done multiple times). Do you think, it is appropriate to cache (in the parent) the multipliciation or addition in UCF.Elements ?\n\n??? I hope you're not proposing caching by essentially building up addition and multiplication tables. That'll be horrible on memory and rarely result in speedup.\n\nI'd say this is all optimization. First you want to have the functionality in (that'll already be great!). Once you have a stable platform, you can test where the bottlenecks are and optimize those, if required (with a minimum of caching).",
+    "body": "Replying to [comment:160 stumpc5]:\n> Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\n\nI guess for parents that would be OK, because they are unique. Otherwise, most elements in sage can be equal to non-identical elements, so `id` doesn't make for a valid hash on them. Using `id` as a hash isn't consistent across sessions and won't survive pickling, but I'd hope that's OK.\n\n> Btw: As with the hash for elements in the CyclotomicField, it does not depend on the embedding of the parent. Do you think this might cause problems?\n\n\nNo. The constant function would make a valid hash function. It would just lead to horrible performance on dictionaries and sets.\n\n> Finally, some functionalities become slower (e.g. matrix multiplication where addition or multiplication of UCF elements are done multiple times). Do you think, it is appropriate to cache (in the parent) the multipliciation or addition in UCF.Elements ?\n\n\n??? I hope you're not proposing caching by essentially building up addition and multiplication tables. That'll be horrible on memory and rarely result in speedup.\n\nI'd say this is all optimization. First you want to have the functionality in (that'll already be great!). Once you have a stable platform, you can test where the bottlenecks are and optimize those, if required (with a minimum of caching).",
     "created_at": "2012-12-03T18:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4430,13 +4519,16 @@ archive/issue_comments_073964.json:
 Replying to [comment:160 stumpc5]:
 > Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?
 
+
 I guess for parents that would be OK, because they are unique. Otherwise, most elements in sage can be equal to non-identical elements, so `id` doesn't make for a valid hash on them. Using `id` as a hash isn't consistent across sessions and won't survive pickling, but I'd hope that's OK.
 
 > Btw: As with the hash for elements in the CyclotomicField, it does not depend on the embedding of the parent. Do you think this might cause problems?
 
+
 No. The constant function would make a valid hash function. It would just lead to horrible performance on dictionaries and sets.
 
 > Finally, some functionalities become slower (e.g. matrix multiplication where addition or multiplication of UCF elements are done multiple times). Do you think, it is appropriate to cache (in the parent) the multipliciation or addition in UCF.Elements ?
+
 
 ??? I hope you're not proposing caching by essentially building up addition and multiplication tables. That'll be horrible on memory and rarely result in speedup.
 
@@ -4449,7 +4541,7 @@ I'd say this is all optimization. First you want to have the functionality in (t
 archive/issue_comments_073965.json:
 ```json
 {
-    "body": "Replying to [comment:159 nbruin]:\n> Don't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):\n> {{{\n> sage: a = ...\n> sage: b = ...\n> sage: c = ...\n> sage: V = set([a,b])\n> sage: <definition for a> in V\n> true\n> sage: b in V\n> true\n> sage: c in V\n> false\n> }}}\n> and perhaps test your hash function is not the constant function and has a reasonable distribution:\n> {{{\n> sage: L = [<object> for i in [1..100]]\n> sage: set(hash(x) for x in L).len() >= 98\n> true\n> }}}\n\nJust a remark: those would make good candidates for a generic _test_hash method for parents.",
+    "body": "Replying to [comment:159 nbruin]:\n> Don't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):\n> \n> ```\n> sage: a = ...\n> sage: b = ...\n> sage: c = ...\n> sage: V = set([a,b])\n> sage: <definition for a> in V\n> true\n> sage: b in V\n> true\n> sage: c in V\n> false\n> ```\n> and perhaps test your hash function is not the constant function and has a reasonable distribution:\n> \n> ```\n> sage: L = [<object> for i in [1..100]]\n> sage: set(hash(x) for x in L).len() >= 98\n> true\n> ```\n\n\nJust a remark: those would make good candidates for a generic _test_hash method for parents.",
     "created_at": "2012-12-03T20:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4460,7 +4552,8 @@ archive/issue_comments_073965.json:
 
 Replying to [comment:159 nbruin]:
 > Don't test the actual value returned by hash, but test its functionality. Something like (do we have some example that exercises hashes appropriately?):
-> {{{
+> 
+> ```
 > sage: a = ...
 > sage: b = ...
 > sage: c = ...
@@ -4471,13 +4564,15 @@ Replying to [comment:159 nbruin]:
 > true
 > sage: c in V
 > false
-> }}}
+> ```
 > and perhaps test your hash function is not the constant function and has a reasonable distribution:
-> {{{
+> 
+> ```
 > sage: L = [<object> for i in [1..100]]
 > sage: set(hash(x) for x in L).len() >= 98
 > true
-> }}}
+> ```
+
 
 Just a remark: those would make good candidates for a generic _test_hash method for parents.
 
@@ -4488,7 +4583,7 @@ Just a remark: those would make good candidates for a generic _test_hash method 
 archive/issue_comments_073966.json:
 ```json
 {
-    "body": "Replying to [comment:160 stumpc5]:\n\n> > I only found hashes for elements in your patch.\n> \n> Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\nThat hash function for the parent, you inherit from UniqueRepresentation, right? In that case, there is no real need to retest it here.\n\nCheers,\n                    Nicolas",
+    "body": "Replying to [comment:160 stumpc5]:\n\n> > I only found hashes for elements in your patch.\n\n> \n> Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?\n\n\nThat hash function for the parent, you inherit from UniqueRepresentation, right? In that case, there is no real need to retest it here.\n\nCheers,\n                    Nicolas",
     "created_at": "2012-12-03T20:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4500,8 +4595,10 @@ archive/issue_comments_073966.json:
 Replying to [comment:160 stumpc5]:
 
 > > I only found hashes for elements in your patch.
+
 > 
 > Right, but there is a `__hash__` function returning the id, that's why I wasn't quite sure... I now do test the hash by functionality, do you think it's better now?
+
 
 That hash function for the parent, you inherit from UniqueRepresentation, right? In that case, there is no real need to retest it here.
 
@@ -4515,7 +4612,7 @@ Cheers,
 archive/issue_comments_073967.json:
 ```json
 {
-    "body": "Hi Christian,\n\nSorry that your code review is devolving into a kind of \"how to vet newly introduced parents\" experiment. Please don't take it personally! I think we're still getting useful contributions to Sage at large from this for now, though.\n\nFor doing good (generic) tests for how hash performs:\n\n```\nsage: any( E(n) in L for n in [1001..2000] ) \nFalse\n```\n\nThis test doesn't really test the non-constantness of hashes. This code would still work if `hash(E(n))==0` would hold for all `n`. After equality of hash value, `in` will still fall back on `__eq__`, with one exception: identical objects will be found with `in`:\n\n```\nsage: n = float(NaN)\nsage: n == n\nFalse\nsage: n in set([n])\nTrue\nsage: m = float(NaN)\nsage: m in set([n])\nFalse\n```\n\nIt's an optimization that is necessary for python to have reasonable performance that leads to nasty consequences for objects that are not equal to themselves (which is really an odd edgecase anyway)",
+    "body": "Hi Christian,\n\nSorry that your code review is devolving into a kind of \"how to vet newly introduced parents\" experiment. Please don't take it personally! I think we're still getting useful contributions to Sage at large from this for now, though.\n\nFor doing good (generic) tests for how hash performs:\n\n```\nsage: any( E(n) in L for n in [1001..2000] ) \nFalse\n```\nThis test doesn't really test the non-constantness of hashes. This code would still work if `hash(E(n))==0` would hold for all `n`. After equality of hash value, `in` will still fall back on `__eq__`, with one exception: identical objects will be found with `in`:\n\n```\nsage: n = float(NaN)\nsage: n == n\nFalse\nsage: n in set([n])\nTrue\nsage: m = float(NaN)\nsage: m in set([n])\nFalse\n```\nIt's an optimization that is necessary for python to have reasonable performance that leads to nasty consequences for objects that are not equal to themselves (which is really an odd edgecase anyway)",
     "created_at": "2012-12-03T20:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4534,7 +4631,6 @@ For doing good (generic) tests for how hash performs:
 sage: any( E(n) in L for n in [1001..2000] ) 
 False
 ```
-
 This test doesn't really test the non-constantness of hashes. This code would still work if `hash(E(n))==0` would hold for all `n`. After equality of hash value, `in` will still fall back on `__eq__`, with one exception: identical objects will be found with `in`:
 
 ```
@@ -4547,7 +4643,6 @@ sage: m = float(NaN)
 sage: m in set([n])
 False
 ```
-
 It's an optimization that is necessary for python to have reasonable performance that leads to nasty consequences for objects that are not equal to themselves (which is really an odd edgecase anyway)
 
 
@@ -4557,7 +4652,7 @@ It's an optimization that is necessary for python to have reasonable performance
 archive/issue_comments_073968.json:
 ```json
 {
-    "body": "Replying to [comment:164 nbruin]:\n> {{{\n> sage: any( E(n) in L for n in [1001..2000] ) \n> False\n> }}}\n\nThanks, I deleted it...",
+    "body": "Replying to [comment:164 nbruin]:\n> {{{\n> sage: any( E(n) in L for n in [1001..2000] ) \n> False\n> }}}\n\n\nThanks, I deleted it...",
     "created_at": "2012-12-03T21:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4571,6 +4666,7 @@ Replying to [comment:164 nbruin]:
 > sage: any( E(n) in L for n in [1001..2000] ) 
 > False
 > }}}
+
 
 Thanks, I deleted it...
 
@@ -4609,7 +4705,7 @@ Fred
 archive/issue_comments_073970.json:
 ```json
 {
-    "body": "Replying to [comment:166 chapoton]:\n\nHi Fred,\n\n> Can be ``None``, ``\"(\"``, or ``\"[\"``, with \n> this is not consistent with the documentation in UCF, where it is an even-length chain\n\nThanks for pointing this out!\n\n> Do you think there are still important problems that need to be solved ?\n\nI fixed everything people were complaining about (or, to say it differently, where they saw possible improvements). I don't know if someone is still not happy with the current state...\n\n> Maybe some caching questions ? And of course the patchbot is not happy with latest version.\n\nThis is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\nI will update and upload the patch,\n\nChristian",
+    "body": "Replying to [comment:166 chapoton]:\n\nHi Fred,\n\n> Can be ``None``, ``\"(\"``, or ``\"[\"``, with \n> this is not consistent with the documentation in UCF, where it is an even-length chain\n\n\nThanks for pointing this out!\n\n> Do you think there are still important problems that need to be solved ?\n\n\nI fixed everything people were complaining about (or, to say it differently, where they saw possible improvements). I don't know if someone is still not happy with the current state...\n\n> Maybe some caching questions ? And of course the patchbot is not happy with latest version.\n\n\nThis is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\nI will update and upload the patch,\n\nChristian",
     "created_at": "2012-12-05T13:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4625,13 +4721,16 @@ Hi Fred,
 > Can be ``None``, ``"("``, or ``"["``, with 
 > this is not consistent with the documentation in UCF, where it is an even-length chain
 
+
 Thanks for pointing this out!
 
 > Do you think there are still important problems that need to be solved ?
 
+
 I fixed everything people were complaining about (or, to say it differently, where they saw possible improvements). I don't know if someone is still not happy with the current state...
 
 > Maybe some caching questions ? And of course the patchbot is not happy with latest version.
+
 
 This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.
 
@@ -4646,7 +4745,7 @@ Christian
 archive/issue_comments_073971.json:
 ```json
 {
-    "body": "Replying to [comment:167 stumpc5]:\n> This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\nThat could be a severe and difficult-to-debug problem. On a different ticket, I also had \"0 tests failed\", and the problem was that Sage crashed while quitting: No test broke, but the test *framework* broke. It would make sense to repeat the failing tests, both \"normally\" and in verbose mode, and on different platforms.",
+    "body": "Replying to [comment:167 stumpc5]:\n> This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\n\nThat could be a severe and difficult-to-debug problem. On a different ticket, I also had \"0 tests failed\", and the problem was that Sage crashed while quitting: No test broke, but the test *framework* broke. It would make sense to repeat the failing tests, both \"normally\" and in verbose mode, and on different platforms.",
     "created_at": "2012-12-05T14:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4658,6 +4757,7 @@ archive/issue_comments_073971.json:
 Replying to [comment:167 stumpc5]:
 > This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.
 
+
 That could be a severe and difficult-to-debug problem. On a different ticket, I also had "0 tests failed", and the problem was that Sage crashed while quitting: No test broke, but the test *framework* broke. It would make sense to repeat the failing tests, both "normally" and in verbose mode, and on different platforms.
 
 
@@ -4667,7 +4767,7 @@ That could be a severe and difficult-to-debug problem. On a different ticket, I 
 archive/issue_comments_073972.json:
 ```json
 {
-    "body": "Replying to [comment:167 stumpc5]:\n> This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\nIn those cases, don't just look at the summary at the bottom.\nThere is a bit more info in the log file (use text search on the file name to find the relevant locations. The errors that arise are of the form:\n\n```\n  File \"/mnt/storage2TB/patchbot/Sage/sage-5.5.rc0/local/lib/python/site-packages/sage/rings/all.py\", line 169, in <module>\n    lazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n  File \"lazy_import.pyx\", line 850, in sage.misc.lazy_import.lazy_import (sage/misc/lazy_import.c:5168)\n  File \"lazy_import.pyx\", line 900, in sage.misc.lazy_import.get_star_imports (sage/misc/lazy_import.c:5924)\nEOFError\n```\n\nso apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.",
+    "body": "Replying to [comment:167 stumpc5]:\n> This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.\n\n\nIn those cases, don't just look at the summary at the bottom.\nThere is a bit more info in the log file (use text search on the file name to find the relevant locations. The errors that arise are of the form:\n\n```\n  File \"/mnt/storage2TB/patchbot/Sage/sage-5.5.rc0/local/lib/python/site-packages/sage/rings/all.py\", line 169, in <module>\n    lazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n  File \"lazy_import.pyx\", line 850, in sage.misc.lazy_import.lazy_import (sage/misc/lazy_import.c:5168)\n  File \"lazy_import.pyx\", line 900, in sage.misc.lazy_import.get_star_imports (sage/misc/lazy_import.c:5924)\nEOFError\n```\nso apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.",
     "created_at": "2012-12-07T20:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4679,6 +4779,7 @@ archive/issue_comments_073972.json:
 Replying to [comment:167 stumpc5]:
 > This is just a patchbot issue, I hope -- it says that 0 tests failed in several files.
 
+
 In those cases, don't just look at the summary at the bottom.
 There is a bit more info in the log file (use text search on the file name to find the relevant locations. The errors that arise are of the form:
 
@@ -4689,7 +4790,6 @@ There is a bit more info in the log file (use text search on the file name to fi
   File "lazy_import.pyx", line 900, in sage.misc.lazy_import.get_star_imports (sage/misc/lazy_import.c:5924)
 EOFError
 ```
-
 so apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.
 
 
@@ -4699,7 +4799,7 @@ so apparently the lazy import fails for some reason. If it's a real issue, perha
 archive/issue_comments_073973.json:
 ```json
 {
-    "body": "Replying to [comment:169 nbruin]:\n> so apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.\n\nAnd am I able to figure out if this is an issue which I can solve?",
+    "body": "Replying to [comment:169 nbruin]:\n> so apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.\n\n\nAnd am I able to figure out if this is an issue which I can solve?",
     "created_at": "2012-12-08T13:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4711,6 +4811,7 @@ archive/issue_comments_073973.json:
 Replying to [comment:169 nbruin]:
 > so apparently the lazy import fails for some reason. If it's a real issue, perhaps it's due to the order in which the lazy imports get triggered? Otherwise it might just be a temporary issue with that particular patchbot.
 
+
 And am I able to figure out if this is an issue which I can solve?
 
 
@@ -4720,7 +4821,7 @@ And am I able to figure out if this is an issue which I can solve?
 archive/issue_comments_073974.json:
 ```json
 {
-    "body": "Replying to [comment:170 stumpc5]:\n> And am I able to figure out if this is an issue which I can solve?\nWell, given that you can't reproduce the errors (you have tried?) and that the patchbot reports errors in different tests each time, I'd assume a problem with the bot, unless evidence otherwise is supplied. Random `EOFError`s smell more like an I/O problem than an issue with the code.",
+    "body": "Replying to [comment:170 stumpc5]:\n> And am I able to figure out if this is an issue which I can solve?\n\nWell, given that you can't reproduce the errors (you have tried?) and that the patchbot reports errors in different tests each time, I'd assume a problem with the bot, unless evidence otherwise is supplied. Random `EOFError`s smell more like an I/O problem than an issue with the code.",
     "created_at": "2012-12-09T17:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4731,6 +4832,7 @@ archive/issue_comments_073974.json:
 
 Replying to [comment:170 stumpc5]:
 > And am I able to figure out if this is an issue which I can solve?
+
 Well, given that you can't reproduce the errors (you have tried?) and that the patchbot reports errors in different tests each time, I'd assume a problem with the bot, unless evidence otherwise is supplied. Random `EOFError`s smell more like an I/O problem than an issue with the code.
 
 
@@ -4740,7 +4842,7 @@ Well, given that you can't reproduce the errors (you have tried?) and that the p
 archive/issue_comments_073975.json:
 ```json
 {
-    "body": "Replying to [comment:171 nbruin]:\n> Replying to [comment:170 stumpc5]:\n> > And am I able to figure out if this is an issue which I can solve?\n> Well, given that you can't reproduce the errors (you have tried?)\n\nSorry for still being (maybe too) ignorant concerning these things: can I do anything other than starting sage and running the doctests?",
+    "body": "Replying to [comment:171 nbruin]:\n> Replying to [comment:170 stumpc5]:\n> > And am I able to figure out if this is an issue which I can solve?\n\n> Well, given that you can't reproduce the errors (you have tried?)\n\nSorry for still being (maybe too) ignorant concerning these things: can I do anything other than starting sage and running the doctests?",
     "created_at": "2012-12-10T08:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4752,6 +4854,7 @@ archive/issue_comments_073975.json:
 Replying to [comment:171 nbruin]:
 > Replying to [comment:170 stumpc5]:
 > > And am I able to figure out if this is an issue which I can solve?
+
 > Well, given that you can't reproduce the errors (you have tried?)
 
 Sorry for still being (maybe too) ignorant concerning these things: can I do anything other than starting sage and running the doctests?
@@ -4847,7 +4950,7 @@ I just want to test #13826. Feel free to give this ticket a positive review. Hum
 archive/issue_comments_073980.json:
 ```json
 {
-    "body": "Replying to [comment:173 chapoton]:\n> Nicolas, would it be possible to have a patchbot running for the combinat patches on one server somewhere ?\n\nYes, that's indeed the plan and the purpose of the combinat server!  I\nwanted to work on it but it's buried in my todo pile; so please anyone\ntake over the task! Volker has posted instructions recently and it\nseemed fairly straightforward.\n\nCheers,\n                          Nicolas",
+    "body": "Replying to [comment:173 chapoton]:\n> Nicolas, would it be possible to have a patchbot running for the combinat patches on one server somewhere ?\n\n\nYes, that's indeed the plan and the purpose of the combinat server!  I\nwanted to work on it but it's buried in my todo pile; so please anyone\ntake over the task! Volker has posted instructions recently and it\nseemed fairly straightforward.\n\nCheers,\n                          Nicolas",
     "created_at": "2012-12-13T09:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4858,6 +4961,7 @@ archive/issue_comments_073980.json:
 
 Replying to [comment:173 chapoton]:
 > Nicolas, would it be possible to have a patchbot running for the combinat patches on one server somewhere ?
+
 
 Yes, that's indeed the plan and the purpose of the combinat server!  I
 wanted to work on it but it's buried in my todo pile; so please anyone
@@ -4892,7 +4996,7 @@ Robert Bradshaw wrote the patchbot and posted instructions, not me. Everybody ca
 archive/issue_comments_073982.json:
 ```json
 {
-    "body": "Could someone please investigate what is going wrong now? I do\n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n```\n\nin `sage.rings.all` but nevertheless, it seems that the UCF and also all the numpy stuff in the pyx file is imported at startup. When I do the import of `sage.rings.universal_cyclotomic_field.all` directly but then do the lazy import of `UniversalCyclotomicField` in there, everything runs as expected.\n\nIs this something not treated properly in #13826 ?\n\nThanks, Christian",
+    "body": "Could someone please investigate what is going wrong now? I do\n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n```\nin `sage.rings.all` but nevertheless, it seems that the UCF and also all the numpy stuff in the pyx file is imported at startup. When I do the import of `sage.rings.universal_cyclotomic_field.all` directly but then do the lazy import of `UniversalCyclotomicField` in there, everything runs as expected.\n\nIs this something not treated properly in #13826 ?\n\nThanks, Christian",
     "created_at": "2013-01-07T12:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4906,7 +5010,6 @@ Could someone please investigate what is going wrong now? I do
 ```
 lazy_import("sage.rings.universal_cyclotomic_field.all","*")
 ```
-
 in `sage.rings.all` but nevertheless, it seems that the UCF and also all the numpy stuff in the pyx file is imported at startup. When I do the import of `sage.rings.universal_cyclotomic_field.all` directly but then do the lazy import of `UniversalCyclotomicField` in there, everything runs as expected.
 
 Is this something not treated properly in #13826 ?
@@ -4920,7 +5023,7 @@ Thanks, Christian
 archive/issue_comments_073983.json:
 ```json
 {
-    "body": "What is your problem, precisely? The lazy import does work:\n\n```\nsage: type(UniversalCyclotomicField)\n<type 'sage.misc.lazy_import.LazyImport'>\n```\n\nI also don't see any instances being created elsewhere during Sage startup.",
+    "body": "What is your problem, precisely? The lazy import does work:\n\n```\nsage: type(UniversalCyclotomicField)\n<type 'sage.misc.lazy_import.LazyImport'>\n```\nI also don't see any instances being created elsewhere during Sage startup.",
     "created_at": "2013-01-07T13:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4935,7 +5038,6 @@ What is your problem, precisely? The lazy import does work:
 sage: type(UniversalCyclotomicField)
 <type 'sage.misc.lazy_import.LazyImport'>
 ```
-
 I also don't see any instances being created elsewhere during Sage startup.
 
 
@@ -4945,7 +5047,7 @@ I also don't see any instances being created elsewhere during Sage startup.
 archive/issue_comments_073984.json:
 ```json
 {
-    "body": "Replying to [comment:181 vbraun]:\n> What is your problem, precisely?\n\nWhen I do the lazy import of `sage.rings.universal_cyclotomic_field.all.*` in `sage.rings.all` (as in the current version of the patch on trac), I get\n\n\n```\n$ sage -t sage/tests/startup.py \nsage -t  \"devel/sage-UCF/sage/tests/startup.py\"             \n**********************************************************************\nFile \"/home/stumpc5/progs/sage-5.5.rc0/devel/sage-UCF/sage/tests/startup.py\", line 17:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\n\nand this test doesn't fail if I do the lazy import of `UniversalCyclotomicField` within `sage.rings.universal_cyclotomic_field.all`. Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing \n\n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n```\n\n\nbut not when doing\n\n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.universal_cyclotomic_field\",\"UniversalCyclotomicField\")\n```\n\nDo you know what goes wrong there?",
+    "body": "Replying to [comment:181 vbraun]:\n> What is your problem, precisely?\n\n\nWhen I do the lazy import of `sage.rings.universal_cyclotomic_field.all.*` in `sage.rings.all` (as in the current version of the patch on trac), I get\n\n```\n$ sage -t sage/tests/startup.py \nsage -t  \"devel/sage-UCF/sage/tests/startup.py\"             \n**********************************************************************\nFile \"/home/stumpc5/progs/sage-5.5.rc0/devel/sage-UCF/sage/tests/startup.py\", line 17:\n    sage: sage0(\"'numpy' in sys.modules\")\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n\nand this test doesn't fail if I do the lazy import of `UniversalCyclotomicField` within `sage.rings.universal_cyclotomic_field.all`. Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing \n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n```\n\nbut not when doing\n\n```\nlazy_import(\"sage.rings.universal_cyclotomic_field.universal_cyclotomic_field\",\"UniversalCyclotomicField\")\n```\nDo you know what goes wrong there?",
     "created_at": "2013-01-07T14:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -4957,8 +5059,8 @@ archive/issue_comments_073984.json:
 Replying to [comment:181 vbraun]:
 > What is your problem, precisely?
 
-When I do the lazy import of `sage.rings.universal_cyclotomic_field.all.*` in `sage.rings.all` (as in the current version of the patch on trac), I get
 
+When I do the lazy import of `sage.rings.universal_cyclotomic_field.all.*` in `sage.rings.all` (as in the current version of the patch on trac), I get
 
 ```
 $ sage -t sage/tests/startup.py 
@@ -4973,22 +5075,17 @@ Got:
 **********************************************************************
 ```
 
-
 and this test doesn't fail if I do the lazy import of `UniversalCyclotomicField` within `sage.rings.universal_cyclotomic_field.all`. Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing 
-
 
 ```
 lazy_import("sage.rings.universal_cyclotomic_field.all","*")
 ```
 
-
 but not when doing
-
 
 ```
 lazy_import("sage.rings.universal_cyclotomic_field.universal_cyclotomic_field","UniversalCyclotomicField")
 ```
-
 Do you know what goes wrong there?
 
 
@@ -4998,7 +5095,7 @@ Do you know what goes wrong there?
 archive/issue_comments_073985.json:
 ```json
 {
-    "body": "Replying to [comment:182 stumpc5]:\n> Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing \n> \n> {{{\n> lazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n> }}}\n> \n> but not when doing\n> \n> {{{\n> lazy_import(\"sage.rings.universal_cyclotomic_field.universal_cyclotomic_field\",\"UniversalCyclotomicField\")\n> }}}\n\nHave you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.\n\nThis caching strategy has its flaws, but presently we'll have to live with it.",
+    "body": "Replying to [comment:182 stumpc5]:\n> Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing \n> \n> \n> ```\n> lazy_import(\"sage.rings.universal_cyclotomic_field.all\",\"*\")\n> ```\n> \n> but not when doing\n> \n> \n> ```\n> lazy_import(\"sage.rings.universal_cyclotomic_field.universal_cyclotomic_field\",\"UniversalCyclotomicField\")\n> ```\n\n\nHave you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.\n\nThis caching strategy has its flaws, but presently we'll have to live with it.",
     "created_at": "2013-01-07T17:24:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5010,15 +5107,18 @@ archive/issue_comments_073985.json:
 Replying to [comment:182 stumpc5]:
 > Numpy is imported in the cython file for the UCF, and seems to be imported on startup when doing 
 > 
-> {{{
+> 
+> ```
 > lazy_import("sage.rings.universal_cyclotomic_field.all","*")
-> }}}
+> ```
 > 
 > but not when doing
 > 
-> {{{
+> 
+> ```
 > lazy_import("sage.rings.universal_cyclotomic_field.universal_cyclotomic_field","UniversalCyclotomicField")
-> }}}
+> ```
+
 
 Have you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.
 
@@ -5031,7 +5131,7 @@ This caching strategy has its flaws, but presently we'll have to live with it.
 archive/issue_comments_073986.json:
 ```json
 {
-    "body": "Replying to [comment:183 nbruin]:\n> Replying to [comment:182 stumpc5]:\n\n> Have you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.\n> \n> This caching strategy has its flaws, but presently we'll have to live with it.\n\nThanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?",
+    "body": "Replying to [comment:183 nbruin]:\n> Replying to [comment:182 stumpc5]:\n\n\n> Have you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.\n> \n> This caching strategy has its flaws, but presently we'll have to live with it.\n\n\nThanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?",
     "created_at": "2013-01-07T17:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5043,9 +5143,11 @@ archive/issue_comments_073986.json:
 Replying to [comment:183 nbruin]:
 > Replying to [comment:182 stumpc5]:
 
+
 > Have you taken into account that the first time running, lazy star imports are not lazy at all? It executes the actual import to cache which symbols get defined by the star import (the files in `.sage/cache`). I think this cache presently always gets deleted after `sage -b`. If testing `startup.py` is the first sage run after that, you cannot expect lazy behaviour.
 > 
 > This caching strategy has its flaws, but presently we'll have to live with it.
+
 
 Thanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?
 
@@ -5056,7 +5158,7 @@ Thanks for the explanation -- what am I now supposed to do to get things in orde
 archive/issue_comments_073987.json:
 ```json
 {
-    "body": "Replying to [comment:184 stumpc5]:\n> Thanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?\n\nWell, if two consecutive runs still show the same behaviour, it's not the caching. Anyway, if you can avoid star-import altogether, caching doesn't come into play at all. I think it's more likely anyway that after the lazy import, something investigates the namespace in which the lazy import was done to such detail that it triggers the actual import, e.g., a `from module.name import *` when `module.name` contains a lazy import may well trigger actual importation (I haven't checked).\n\nYou'll have to avoid importing numpy on startup, since that has caused big startup delays previously (hence that doctest).\n\nI think the main thing you're finding now is that we don't have much experience in how to use lazy import in more complicated scenarios, in particular in the whole `from ...all import *` scenarios that sage seems to use everywhere upon startup.",
+    "body": "Replying to [comment:184 stumpc5]:\n> Thanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?\n\n\nWell, if two consecutive runs still show the same behaviour, it's not the caching. Anyway, if you can avoid star-import altogether, caching doesn't come into play at all. I think it's more likely anyway that after the lazy import, something investigates the namespace in which the lazy import was done to such detail that it triggers the actual import, e.g., a `from module.name import *` when `module.name` contains a lazy import may well trigger actual importation (I haven't checked).\n\nYou'll have to avoid importing numpy on startup, since that has caused big startup delays previously (hence that doctest).\n\nI think the main thing you're finding now is that we don't have much experience in how to use lazy import in more complicated scenarios, in particular in the whole `from ...all import *` scenarios that sage seems to use everywhere upon startup.",
     "created_at": "2013-01-07T18:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5067,6 +5169,7 @@ archive/issue_comments_073987.json:
 
 Replying to [comment:184 stumpc5]:
 > Thanks for the explanation -- what am I now supposed to do to get things in order? Should I keep the lazy star import and change doctest in startup.py, or should I rather not do the star import?
+
 
 Well, if two consecutive runs still show the same behaviour, it's not the caching. Anyway, if you can avoid star-import altogether, caching doesn't come into play at all. I think it's more likely anyway that after the lazy import, something investigates the namespace in which the lazy import was done to such detail that it triggers the actual import, e.g., a `from module.name import *` when `module.name` contains a lazy import may well trigger actual importation (I haven't checked).
 
@@ -5245,7 +5348,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073993.json:
 ```json
 {
-    "body": "There is a lot of\n\n```\nexcept:\n```\n\nin the patch.  Don't use this, as it will catch all exceptions, including stuff like `KeyboardInterrupt`.  If you really want a catch-all, use\n\n```\nexcept StandardError:\n```\n\nbut try to use specific exceptions where applicable.",
+    "body": "There is a lot of\n\n```\nexcept:\n```\nin the patch.  Don't use this, as it will catch all exceptions, including stuff like `KeyboardInterrupt`.  If you really want a catch-all, use\n\n```\nexcept StandardError:\n```\nbut try to use specific exceptions where applicable.",
     "created_at": "2013-01-30T17:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5259,13 +5362,11 @@ There is a lot of
 ```
 except:
 ```
-
 in the patch.  Don't use this, as it will catch all exceptions, including stuff like `KeyboardInterrupt`.  If you really want a catch-all, use
 
 ```
 except StandardError:
 ```
-
 but try to use specific exceptions where applicable.
 
 
@@ -5293,7 +5394,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073995.json:
 ```json
 {
-    "body": "Replying to [comment:192 jdemeyer]:\n> There is a lot of\n> {{{\n> except:\n> }}}\n> in the patch.\n\nThanks for the comment, I fixed this by removing some of the `except`'s, and used `KeyError`'s in two remaining places. I also fixed a bug, namely\n\n```\nsage: UCF(0).is_rational()\nFalse\n```\n\nand added the doctests rechecking this. Since the patchbot doesn't like to apply #13765 (which was merged in 5.7.beta2), I wonder if you could have another look and either rebase the patch, or - if you don't plan to merge it - to wait until I have a new version compiled to rebase it myself.\n\nThanks, Christian",
+    "body": "Replying to [comment:192 jdemeyer]:\n> There is a lot of\n> \n> ```\n> except:\n> ```\n> in the patch.\n\n\nThanks for the comment, I fixed this by removing some of the `except`'s, and used `KeyError`'s in two remaining places. I also fixed a bug, namely\n\n```\nsage: UCF(0).is_rational()\nFalse\n```\nand added the doctests rechecking this. Since the patchbot doesn't like to apply #13765 (which was merged in 5.7.beta2), I wonder if you could have another look and either rebase the patch, or - if you don't plan to merge it - to wait until I have a new version compiled to rebase it myself.\n\nThanks, Christian",
     "created_at": "2013-01-30T21:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5304,10 +5405,12 @@ archive/issue_comments_073995.json:
 
 Replying to [comment:192 jdemeyer]:
 > There is a lot of
-> {{{
+> 
+> ```
 > except:
-> }}}
+> ```
 > in the patch.
+
 
 Thanks for the comment, I fixed this by removing some of the `except`'s, and used `KeyError`'s in two remaining places. I also fixed a bug, namely
 
@@ -5315,7 +5418,6 @@ Thanks for the comment, I fixed this by removing some of the `except`'s, and use
 sage: UCF(0).is_rational()
 False
 ```
-
 and added the doctests rechecking this. Since the patchbot doesn't like to apply #13765 (which was merged in 5.7.beta2), I wonder if you could have another look and either rebase the patch, or - if you don't plan to merge it - to wait until I have a new version compiled to rebase it myself.
 
 Thanks, Christian
@@ -5327,7 +5429,7 @@ Thanks, Christian
 archive/issue_comments_073996.json:
 ```json
 {
-    "body": "Replying to [comment:193 stumpc5]:\n> I wonder if you could have another look and either rebase the patch\nWhy should it be rebased?  The fact that the patchbot is struggling is a bug with the patchbot, I don't think this ticket is to blame.\n\nAnyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work), but it should be easy for the original reviewer.  Fr\u00e9d\u00e9ric, can you do it?",
+    "body": "Replying to [comment:193 stumpc5]:\n> I wonder if you could have another look and either rebase the patch\n\nWhy should it be rebased?  The fact that the patchbot is struggling is a bug with the patchbot, I don't think this ticket is to blame.\n\nAnyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work), but it should be easy for the original reviewer.  Fr\u00e9d\u00e9ric, can you do it?",
     "created_at": "2013-01-30T21:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5338,6 +5440,7 @@ archive/issue_comments_073996.json:
 
 Replying to [comment:193 stumpc5]:
 > I wonder if you could have another look and either rebase the patch
+
 Why should it be rebased?  The fact that the patchbot is struggling is a bug with the patchbot, I don't think this ticket is to blame.
 
 Anyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work), but it should be easy for the original reviewer.  Frédéric, can you do it?
@@ -5349,7 +5452,7 @@ Anyway, I don't want to review this ticket (simply because I cannot review every
 archive/issue_comments_073997.json:
 ```json
 {
-    "body": "Replying to [comment:194 jdemeyer]:\n> Replying to [comment:193 stumpc5]:\n> Anyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work)\n\nSorry, I didn't want to say you should actually review the patch again (though my message sounded like that), but only to possibly rebase it in case this would be the only modification needed to finally get this patch merged...",
+    "body": "Replying to [comment:194 jdemeyer]:\n> Replying to [comment:193 stumpc5]:\n> Anyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work)\n\n\nSorry, I didn't want to say you should actually review the patch again (though my message sounded like that), but only to possibly rebase it in case this would be the only modification needed to finally get this patch merged...",
     "created_at": "2013-01-30T21:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5362,6 +5465,7 @@ Replying to [comment:194 jdemeyer]:
 > Replying to [comment:193 stumpc5]:
 > Anyway, I don't want to review this ticket (simply because I cannot review every ticket that I put to needs_work)
 
+
 Sorry, I didn't want to say you should actually review the patch again (though my message sounded like that), but only to possibly rebase it in case this would be the only modification needed to finally get this patch merged...
 
 
@@ -5371,7 +5475,7 @@ Sorry, I didn't want to say you should actually review the patch again (though m
 archive/issue_comments_073998.json:
 ```json
 {
-    "body": "There remains 2 raise with the old syntax\n\n\n```\nraise ValueError, \"n (=%s) must be a positive integer\"%n \n```\n\n\n\n\n```\nraise TypeError, \"Embedding (type %s) must be an element.\" % type(embedding) \n```\n\n\nPlease convert them to the Python 3 syntax.",
+    "body": "There remains 2 raise with the old syntax\n\n```\nraise ValueError, \"n (=%s) must be a positive integer\"%n \n```\n\n\n```\nraise TypeError, \"Embedding (type %s) must be an element.\" % type(embedding) \n```\n\nPlease convert them to the Python 3 syntax.",
     "created_at": "2013-01-31T09:18:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5382,18 +5486,14 @@ archive/issue_comments_073998.json:
 
 There remains 2 raise with the old syntax
 
-
 ```
 raise ValueError, "n (=%s) must be a positive integer"%n 
 ```
 
 
-
-
 ```
 raise TypeError, "Embedding (type %s) must be an element." % type(embedding) 
 ```
-
 
 Please convert them to the Python 3 syntax.
 
@@ -5480,7 +5580,7 @@ Set assignee to @jdemeyer.
 archive/issue_comments_074003.json:
 ```json
 {
-    "body": "Replying to [comment:199 stumpc5]:\n> I am not going to go into interruption handling in cython.\nNo problem, note that I purposely did not set the status to needs_work for this.  Your code is certainly not the only part of Sage with this problem.\n\n> Finally: I already spent much too much time on this ticket (i.e., I implemented the stuff I actually needed for my research 2 years ago, all further hours and days were not spent anymore for my primary research).\nIt's simply a fact that going from proof-of-concept-research-code to actual good code to be included in Sage is a non-trivial step.  You could say it's unfortunate, but that's the way it is.",
+    "body": "Replying to [comment:199 stumpc5]:\n> I am not going to go into interruption handling in cython.\n\nNo problem, note that I purposely did not set the status to needs_work for this.  Your code is certainly not the only part of Sage with this problem.\n\n> Finally: I already spent much too much time on this ticket (i.e., I implemented the stuff I actually needed for my research 2 years ago, all further hours and days were not spent anymore for my primary research).\n\nIt's simply a fact that going from proof-of-concept-research-code to actual good code to be included in Sage is a non-trivial step.  You could say it's unfortunate, but that's the way it is.",
     "created_at": "2013-01-31T20:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5491,9 +5591,11 @@ archive/issue_comments_074003.json:
 
 Replying to [comment:199 stumpc5]:
 > I am not going to go into interruption handling in cython.
+
 No problem, note that I purposely did not set the status to needs_work for this.  Your code is certainly not the only part of Sage with this problem.
 
 > Finally: I already spent much too much time on this ticket (i.e., I implemented the stuff I actually needed for my research 2 years ago, all further hours and days were not spent anymore for my primary research).
+
 It's simply a fact that going from proof-of-concept-research-code to actual good code to be included in Sage is a non-trivial step.  You could say it's unfortunate, but that's the way it is.
 
 
@@ -5521,7 +5623,7 @@ I actually do think the code here is pretty good, so please don't take everythin
 archive/issue_comments_074005.json:
 ```json
 {
-    "body": "Now that you have changed the exceptions, also the doctests for the exceptions need to changed.  I see various failures along the lines of\n\n```\n**********************************************************************\nFile \"/release/merger/sage-5.7.beta3/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\", line 1755:\n    sage: E(6).galois_conjugates(5)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: the given integer (5) is not a multiple of the field order of -E(3)^2\nGot:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.7.beta3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.beta3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.beta3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_61[10]>\", line 1, in <module>\n        E(Integer(6)).galois_conjugates(Integer(5))###line 1755:\n    sage: E(6).galois_conjugates(5)\n      File \"/release/merger/sage-5.7.beta3/local/lib/python/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field\n.py\", line 1765, in galois_conjugates\n        raise ValueError(\"The given integer (%s) is not a multiple of the field order of %s\"%(m,self))\n    ValueError: The given integer (5) is not a multiple of the field order of -E(3)^2\n**********************************************************************\n```\n",
+    "body": "Now that you have changed the exceptions, also the doctests for the exceptions need to changed.  I see various failures along the lines of\n\n```\n**********************************************************************\nFile \"/release/merger/sage-5.7.beta3/devel/sage-main/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.py\", line 1755:\n    sage: E(6).galois_conjugates(5)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: the given integer (5) is not a multiple of the field order of -E(3)^2\nGot:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.7.beta3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.beta3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.beta3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_61[10]>\", line 1, in <module>\n        E(Integer(6)).galois_conjugates(Integer(5))###line 1755:\n    sage: E(6).galois_conjugates(5)\n      File \"/release/merger/sage-5.7.beta3/local/lib/python/site-packages/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field\n.py\", line 1765, in galois_conjugates\n        raise ValueError(\"The given integer (%s) is not a multiple of the field order of %s\"%(m,self))\n    ValueError: The given integer (5) is not a multiple of the field order of -E(3)^2\n**********************************************************************\n```",
     "created_at": "2013-02-01T07:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5557,7 +5659,6 @@ Got:
     ValueError: The given integer (5) is not a multiple of the field order of -E(3)^2
 **********************************************************************
 ```
-
 
 
 
@@ -5602,7 +5703,7 @@ Attachment [trac_8327-universal_cyclotomic_field-cs.patch](tarball://root/attach
 archive/issue_comments_074008.json:
 ```json
 {
-    "body": "Replying to [comment:202 jdemeyer]:\n> Now that you have changed the exceptions, also the doctests for the exceptions need to changed.\n\nSorry, I exported the patch before qrefreshing...",
+    "body": "Replying to [comment:202 jdemeyer]:\n> Now that you have changed the exceptions, also the doctests for the exceptions need to changed.\n\n\nSorry, I exported the patch before qrefreshing...",
     "created_at": "2013-02-01T08:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5613,6 +5714,7 @@ archive/issue_comments_074008.json:
 
 Replying to [comment:202 jdemeyer]:
 > Now that you have changed the exceptions, also the doctests for the exceptions need to changed.
+
 
 Sorry, I exported the patch before qrefreshing...
 
@@ -5734,7 +5836,7 @@ Thanks!
 archive/issue_comments_074014.json:
 ```json
 {
-    "body": "Replying to [comment:207 nthiery]:\n> Yippee!\n\n+1!!!",
+    "body": "Replying to [comment:207 nthiery]:\n> Yippee!\n\n\n+1!!!",
     "created_at": "2013-02-06T09:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8327",
     "type": "issue_comment",
@@ -5745,6 +5847,7 @@ archive/issue_comments_074014.json:
 
 Replying to [comment:207 nthiery]:
 > Yippee!
+
 
 +1!!!
 

@@ -3,7 +3,7 @@
 archive/issues_002077.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a=matrix([[1,2],[3,4]])\nsage: a.column(0)\n(1, 3)\nsage: a.column(1)\n(2, 4)\nsage: a.column(3)\n(2, 4)\nsage: a.column(2)\n(1, 3)\n```\n\n\nThe documentation for a.column says that it behaves like list indexing when given a negative index.  We should probably also act like list indexing for positive indices that are too big and throw an error:\n\n\n```\nsage: l=range(3); l\n[0, 1, 2]\nsage: l[3]\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/grout/downloads/cython-callback/<ipython console> in <module>()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2077\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a=matrix([[1,2],[3,4]])\nsage: a.column(0)\n(1, 3)\nsage: a.column(1)\n(2, 4)\nsage: a.column(3)\n(2, 4)\nsage: a.column(2)\n(1, 3)\n```\n\nThe documentation for a.column says that it behaves like list indexing when given a negative index.  We should probably also act like list indexing for positive indices that are too big and throw an error:\n\n```\nsage: l=range(3); l\n[0, 1, 2]\nsage: l[3]\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/grout/downloads/cython-callback/<ipython console> in <module>()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2077\n\n",
     "created_at": "2008-02-06T23:29:16Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_002077.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: a=matrix([[1,2],[3,4]])
 sage: a.column(0)
@@ -31,9 +30,7 @@ sage: a.column(2)
 (1, 3)
 ```
 
-
 The documentation for a.column says that it behaves like list indexing when given a negative index.  We should probably also act like list indexing for positive indices that are too big and throw an error:
-
 
 ```
 sage: l=range(3); l
@@ -46,7 +43,6 @@ sage: l[3]
 
 <type 'exceptions.IndexError'>: list index out of range
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2077

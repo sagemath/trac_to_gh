@@ -88,7 +88,7 @@ attachment:trac_8708-doctest_quotes.patch fixes this problem.
 archive/issue_comments_079300.json:
 ```json
 {
-    "body": "This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n\n```\nmin_ind = min(dq_ind, sq_ind)\n```\n\nwhich means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\nI also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\nI'm attaching a new patch which uses regular expressions instead, and which doesn't modify `doc_prefix` and `doc_suffix`.  I'm also attaching a small file for testing purposes; testing on this file should produce three failures, and if you add some print statements to the function `extract_doc`, it should extract the correct string.",
+    "body": "This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n\n```\nmin_ind = min(dq_ind, sq_ind)\n```\nwhich means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\nI also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\nI'm attaching a new patch which uses regular expressions instead, and which doesn't modify `doc_prefix` and `doc_suffix`.  I'm also attaching a small file for testing purposes; testing on this file should produce three failures, and if you add some print statements to the function `extract_doc`, it should extract the correct string.",
     "created_at": "2011-08-15T22:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ This doesn't work for me: it skips all doctests in a typical file.  The issue is
 ```
 min_ind = min(dq_ind, sq_ind)
 ```
-
 which means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.
 
 I also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `"""`?
@@ -116,7 +115,7 @@ I'm attaching a new patch which uses regular expressions instead, and which does
 archive/issue_comments_079301.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n> {{{\n> min_ind = min(dq_ind, sq_ind)\n> }}}\n> which means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\nGood catch! Thanks for looking into this.\n\n> I also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\nWhat happens if you have something like:\n\n\n```\ndef f(arg):\n    '''\n    some text\n        \n    \"\"\"\n    some more text\n    \"\"\"\n\n    '''\n```\n",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n> \n> ```\n> min_ind = min(dq_ind, sq_ind)\n> ```\n> which means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\n\nGood catch! Thanks for looking into this.\n\n> I also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\n\nWhat happens if you have something like:\n\n```\ndef f(arg):\n    '''\n    some text\n        \n    \"\"\"\n    some more text\n    \"\"\"\n\n    '''\n```",
     "created_at": "2011-08-16T09:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -127,17 +126,19 @@ archive/issue_comments_079301.json:
 
 Replying to [comment:2 jhpalmieri]:
 > This doesn't work for me: it skips all doctests in a typical file.  The issue is the line
-> {{{
+> 
+> ```
 > min_ind = min(dq_ind, sq_ind)
-> }}}
+> ```
 > which means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.
+
 
 Good catch! Thanks for looking into this.
 
 > I also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `"""`?
 
-What happens if you have something like:
 
+What happens if you have something like:
 
 ```
 def f(arg):
@@ -153,13 +154,12 @@ def f(arg):
 
 
 
-
 ---
 
 archive/issue_comments_079302.json:
 ```json
 {
-    "body": "Oh, you're right.  I'm replacing my patch with a new one, the difference being\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -452,8 +452,10 @@ def change_warning_output(file):\n             tmpfiles.append(os.path.join(SAGE_TESTDIR, name + '.pyc'))\n \n     # Prefix/suffix for all doctests replacing the starting/ending \"\"\"\n-    doc_prefix = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n-    doc_suffix = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_prefix_dq = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n+    doc_prefix_sq = doc_prefix_dq.replace('\"\"\"',\"'''\")\n+    doc_suffix_dq = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_suffix_sq = doc_suffix_dq.replace('\"\"\"',\"'''\")\n \n     n = 0\n     # Now extract the docstring by using a regular expression search\n@@ -499,7 +501,10 @@ def change_warning_output(file):\n             name = \"example\"\n             s += \"def %s_%s():\"%(name,n_str)\n             n += 1\n-            s += \"\\t\"+ doc_prefix + doc + doc_suffix + \"\\n\\n\"\n+            if m.groups()[0].find(\"'\") > -1: # single quotes\n+                s += \"\\t\"+ doc_prefix_sq + doc + doc_suffix_sq + \"\\n\\n\"\n+            else:\n+                s += \"\\t\"+ doc_prefix_dq + doc + doc_suffix_dq + \"\\n\\n\"\n \n     if n == 0:\n         return  ''\n```\n\nI'll also add an example like this to the testing file.",
+    "body": "Oh, you're right.  I'm replacing my patch with a new one, the difference being\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -452,8 +452,10 @@ def change_warning_output(file):\n             tmpfiles.append(os.path.join(SAGE_TESTDIR, name + '.pyc'))\n \n     # Prefix/suffix for all doctests replacing the starting/ending \"\"\"\n-    doc_prefix = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n-    doc_suffix = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_prefix_dq = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n+    doc_prefix_sq = doc_prefix_dq.replace('\"\"\"',\"'''\")\n+    doc_suffix_dq = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_suffix_sq = doc_suffix_dq.replace('\"\"\"',\"'''\")\n \n     n = 0\n     # Now extract the docstring by using a regular expression search\n@@ -499,7 +501,10 @@ def change_warning_output(file):\n             name = \"example\"\n             s += \"def %s_%s():\"%(name,n_str)\n             n += 1\n-            s += \"\\t\"+ doc_prefix + doc + doc_suffix + \"\\n\\n\"\n+            if m.groups()[0].find(\"'\") > -1: # single quotes\n+                s += \"\\t\"+ doc_prefix_sq + doc + doc_suffix_sq + \"\\n\\n\"\n+            else:\n+                s += \"\\t\"+ doc_prefix_dq + doc + doc_suffix_dq + \"\\n\\n\"\n \n     if n == 0:\n         return  ''\n```\nI'll also add an example like this to the testing file.",
     "created_at": "2011-08-16T15:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -200,7 +200,6 @@ diff --git a/sage-doctest b/sage-doctest
      if n == 0:
          return  ''
 ```
-
 I'll also add an example like this to the testing file.
 
 
@@ -340,7 +339,7 @@ Changing priority from minor to blocker.
 archive/issue_comments_079310.json:
 ```json
 {
-    "body": "We missed an or two issue in #9739: with non-library files, first we just had a bug, using \"source\" instead of \"file_name\" or \"root_name\" or something.  Second, in the import statement added to the file,\n\n```\ns += \"from %s import *\\n\\n\" % target_name\n```\n\nwe need to replace `target_name` with `os.path.basename(target_name)`.\n\nIn the new patch, I've made these two changes and also rebased.  Given that there is actually new content, this needs a new review.  Without the new content, doctesting .py non-library files completely fails, so I'm marking this as a blocker.  Feel free to downgrade if you think it's appropriate.\n\nOh, I also realized that the attached file for testing purposes has a bad name: replace the hyphen with an underscore.\n\nThe part needing review:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,7 +510,7 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'name', but\n             target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base'\n \n             if ext == '.sage':\n@@ -528,9 +528,9 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n-            s += \"from %s import *\\n\\n\" % target_name\n+            s += \"from %s import *\\n\\n\" % os.path.basename(target_name)\n \n             tmpfiles.append(target_base + \".py\") # preparsed or copied original\n             tmpfiles.append(target_base + \".pyc\") # compiled version of it\n```\n",
+    "body": "We missed an or two issue in #9739: with non-library files, first we just had a bug, using \"source\" instead of \"file_name\" or \"root_name\" or something.  Second, in the import statement added to the file,\n\n```\ns += \"from %s import *\\n\\n\" % target_name\n```\nwe need to replace `target_name` with `os.path.basename(target_name)`.\n\nIn the new patch, I've made these two changes and also rebased.  Given that there is actually new content, this needs a new review.  Without the new content, doctesting .py non-library files completely fails, so I'm marking this as a blocker.  Feel free to downgrade if you think it's appropriate.\n\nOh, I also realized that the attached file for testing purposes has a bad name: replace the hyphen with an underscore.\n\nThe part needing review:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,7 +510,7 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'name', but\n             target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base'\n \n             if ext == '.sage':\n@@ -528,9 +528,9 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n-            s += \"from %s import *\\n\\n\" % target_name\n+            s += \"from %s import *\\n\\n\" % os.path.basename(target_name)\n \n             tmpfiles.append(target_base + \".py\") # preparsed or copied original\n             tmpfiles.append(target_base + \".pyc\") # compiled version of it\n```",
     "created_at": "2011-09-27T18:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -354,7 +353,6 @@ We missed an or two issue in #9739: with non-library files, first we just had a 
 ```
 s += "from %s import *\n\n" % target_name
 ```
-
 we need to replace `target_name` with `os.path.basename(target_name)`.
 
 In the new patch, I've made these two changes and also rebased.  Given that there is actually new content, this needs a new review.  Without the new content, doctesting .py non-library files completely fails, so I'm marking this as a blocker.  Feel free to downgrade if you think it's appropriate.
@@ -392,7 +390,6 @@ diff --git a/sage-doctest b/sage-doctest
 
 
 
-
 ---
 
 archive/issue_comments_079311.json:
@@ -416,7 +413,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079312.json:
 ```json
 {
-    "body": "Sorry, here's a new version.  The relevant changes:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,8 +510,9 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but unique\n-            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base', also unique\n+            root_name = os.path.basename(root_name)\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'root_name', but unique\n+            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'target_name' but with full path\n \n             if ext == '.sage':\n                 # TODO: preparse \"<file>.sage\" with a Sage library call\n@@ -528,7 +529,7 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n             s += \"from %s import *\\n\\n\" % target_name\n```\n\nChanging \"source\" to \"file_name\" is necessary: doctesting non-library py files fails otherwise.  The other change is to avoid failures if you specify a path name for the file to be tested: `sage -t ./test.py` will fail without this, as compared to `sage -t test.py`.",
+    "body": "Sorry, here's a new version.  The relevant changes:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,8 +510,9 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but unique\n-            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base', also unique\n+            root_name = os.path.basename(root_name)\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'root_name', but unique\n+            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'target_name' but with full path\n \n             if ext == '.sage':\n                 # TODO: preparse \"<file>.sage\" with a Sage library call\n@@ -528,7 +529,7 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n             s += \"from %s import *\\n\\n\" % target_name\n```\nChanging \"source\" to \"file_name\" is necessary: doctesting non-library py files fails otherwise.  The other change is to avoid failures if you specify a path name for the file to be tested: `sage -t ./test.py` will fail without this, as compared to `sage -t test.py`.",
     "created_at": "2011-09-27T19:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -452,7 +449,6 @@ diff --git a/sage-doctest b/sage-doctest
  
              s += "from %s import *\n\n" % target_name
 ```
-
 Changing "source" to "file_name" is necessary: doctesting non-library py files fails otherwise.  The other change is to avoid failures if you specify a path name for the file to be tested: `sage -t ./test.py` will fail without this, as compared to `sage -t test.py`.
 
 
@@ -525,7 +521,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079316.json:
 ```json
 {
-    "body": "I now get the following doctest failures, certainly due to the triple single quote patch / modification:\n\n```\nThe following tests failed:\n\n\tsage -t  -long -force_lib devel/sagenb-main/sagenb/notebook/worksheet.py # Exception from doctest framework\n\tsage -t  -long -force_lib devel/sage/sage/interacts/library_cython.pyx # 1 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/misc/sageinspect.py # Exception from doctest framework\n```\n\n\nWith `-verbose`:\n\n```sh\n$ ./sage -t -long -verbose devel/sagenb-main/sagenb/notebook/worksheet.py\nsage -t -long -verbose \"devel/sagenb-main/sagenb/notebook/worksheet.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/worksheet_15100.py\", line 3046, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 11 of the docstring for __main__.example_109 has inconsistent leading whitespace: '    \"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/misc/sageinspect.py\nsage -t -long -verbose \"devel/sage/sage/misc/sageinspect.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/sageinspect_15131.py\", line 1327, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 53 of the docstring for __main__.example_28 has inconsistent leading whitespace: '    \"\"\"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/interacts/library_cython.pyxsage -t -long -verbose \"devel/sage/sage/interacts/library_cython.pyx\"\n\n...\n\nTrying:\n    from sage.interacts.library_cython import cellular###line 91:_sage_    >>> from sage.interacts.library_cython import cellular\nExpecting nothing\nok\nTrying:\n    rule = [Integer(1), Integer(0), Integer(1), Integer(0), Integer(0), Integer(1), Integer(1), Integer(0)]###line 92:_sage_    >>> rule = [1, 0, 1, 0, 0, 1, 1, 0]\nExpecting nothing\nok\nTrying:\n    N = Integer(3)###line 93:_sage_    >>> N = 3\nExpecting nothing\nok\nTrying:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpecting nothing\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/devel/sage/sage/interacts/library_cython.pyx\", line ?, in __main__.example_3\nFailed example:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpected nothing\nGot:\n    [[0 0 0 1 0 0 0]\n     [0 0 0 1 0 0 0]\n     [0 1 0 1 0 1 0]]\nTrying:\n    sig_on_count()\nExpecting:\n    0\nok\n4 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.check_with_tolerance\n    __main__.warning_function\n3 items passed all tests:\n   3 tests in __main__.example_0\n   9 tests in __main__.example_1\n   8 tests in __main__.example_2\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_3\n27 tests in 8 items.\n26 passed and 1 failed.\n***Test Failed*** 1 failures.\n```\n",
+    "body": "I now get the following doctest failures, certainly due to the triple single quote patch / modification:\n\n```\nThe following tests failed:\n\n\tsage -t  -long -force_lib devel/sagenb-main/sagenb/notebook/worksheet.py # Exception from doctest framework\n\tsage -t  -long -force_lib devel/sage/sage/interacts/library_cython.pyx # 1 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/misc/sageinspect.py # Exception from doctest framework\n```\n\nWith `-verbose`:\n\n```sh\n$ ./sage -t -long -verbose devel/sagenb-main/sagenb/notebook/worksheet.py\nsage -t -long -verbose \"devel/sagenb-main/sagenb/notebook/worksheet.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/worksheet_15100.py\", line 3046, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 11 of the docstring for __main__.example_109 has inconsistent leading whitespace: '    \"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/misc/sageinspect.py\nsage -t -long -verbose \"devel/sage/sage/misc/sageinspect.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/sageinspect_15131.py\", line 1327, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 53 of the docstring for __main__.example_28 has inconsistent leading whitespace: '    \"\"\"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/interacts/library_cython.pyxsage -t -long -verbose \"devel/sage/sage/interacts/library_cython.pyx\"\n\n...\n\nTrying:\n    from sage.interacts.library_cython import cellular###line 91:_sage_    >>> from sage.interacts.library_cython import cellular\nExpecting nothing\nok\nTrying:\n    rule = [Integer(1), Integer(0), Integer(1), Integer(0), Integer(0), Integer(1), Integer(1), Integer(0)]###line 92:_sage_    >>> rule = [1, 0, 1, 0, 0, 1, 1, 0]\nExpecting nothing\nok\nTrying:\n    N = Integer(3)###line 93:_sage_    >>> N = 3\nExpecting nothing\nok\nTrying:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpecting nothing\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/devel/sage/sage/interacts/library_cython.pyx\", line ?, in __main__.example_3\nFailed example:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpected nothing\nGot:\n    [[0 0 0 1 0 0 0]\n     [0 0 0 1 0 0 0]\n     [0 1 0 1 0 1 0]]\nTrying:\n    sig_on_count()\nExpecting:\n    0\nok\n4 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.check_with_tolerance\n    __main__.warning_function\n3 items passed all tests:\n   3 tests in __main__.example_0\n   9 tests in __main__.example_1\n   8 tests in __main__.example_2\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_3\n27 tests in 8 items.\n26 passed and 1 failed.\n***Test Failed*** 1 failures.\n```",
     "created_at": "2011-09-28T00:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -543,7 +539,6 @@ The following tests failed:
 	sage -t  -long -force_lib devel/sage/sage/interacts/library_cython.pyx # 1 doctests failed
 	sage -t  -long -force_lib devel/sage/sage/misc/sageinspect.py # Exception from doctest framework
 ```
-
 
 With `-verbose`:
 
@@ -579,8 +574,6 @@ ValueError: line 11 of the docstring for __main__.example_109 has inconsistent l
 Exception raised by doctesting framework. Use -verbose for details.
 ```
 
-
-
 ```sh
 $ ./sage -t -long -verbose devel/sage/sage/misc/sageinspect.py
 sage -t -long -verbose "devel/sage/sage/misc/sageinspect.py"
@@ -612,8 +605,6 @@ Traceback (most recent call last):
 ValueError: line 53 of the docstring for __main__.example_28 has inconsistent leading whitespace: '    """'
 Exception raised by doctesting framework. Use -verbose for details.
 ```
-
-
 
 ```sh
 $ ./sage -t -long -verbose devel/sage/sage/interacts/library_cython.pyxsage -t -long -verbose "devel/sage/sage/interacts/library_cython.pyx"
@@ -665,7 +656,6 @@ ok
 26 passed and 1 failed.
 ***Test Failed*** 1 failures.
 ```
-
 
 
 
@@ -748,7 +738,7 @@ apply to scripts repo
 archive/issue_comments_079321.json:
 ```json
 {
-    "body": "Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.v2.patch) by @nexttime created at 2011-09-28 01:05:48\n\nReplying to [comment:15 jhpalmieri]:\n> Okay, I've done that now.\n\nThanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.\n\n> #9739 is still marked as closed, by the way.  I didn't reopen it.\n\nUnless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.\n\nReopening tickets IMHO only makes sense if I'm going to actually back it out.",
+    "body": "Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.v2.patch) by @nexttime created at 2011-09-28 01:05:48\n\nReplying to [comment:15 jhpalmieri]:\n> Okay, I've done that now.\n\n\nThanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.\n\n> #9739 is still marked as closed, by the way.  I didn't reopen it.\n\n\nUnless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.\n\nReopening tickets IMHO only makes sense if I'm going to actually back it out.",
     "created_at": "2011-09-28T01:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -762,9 +752,11 @@ Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8
 Replying to [comment:15 jhpalmieri]:
 > Okay, I've done that now.
 
+
 Thanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.
 
 > #9739 is still marked as closed, by the way.  I didn't reopen it.
+
 
 Unless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.
 
@@ -837,7 +829,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_079325.json:
 ```json
 {
-    "body": "For the sagenb problem, this patch seems to fix things:\n\n```diff\n\ndiff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py\n--- a/sagenb/notebook/worksheet.py\n+++ b/sagenb/notebook/worksheet.py\n@@ -3881,15 +3881,7 @@ except (KeyError, IOError):\n             C.delete_output()\n \n \n-__internal_test1 = '''\n-def foo(x):\n-    \"\n-    EXAMPLES:\n-        sage: 2+2\n-        4\n-    \"\n-    return x\n-'''.lstrip()\n+__internal_test1 = '\\ndef foo(x):\\n    \"\\n    EXAMPLES:\\n        sage: 2+2\\n        4\\n    \"\\n    return x'.lstrip()\n \n __internal_test2 = '''\n sage: 2 + 2\n```\n\nI don't know if it's the best approach.  Why does this use single double quotes, anyway?  Shouldn't the EXAMPLES block be surrounded by `\"\"\"`?  Modifying the patch here to use `\"\"\"` still passes doctests.",
+    "body": "For the sagenb problem, this patch seems to fix things:\n\n```diff\n\ndiff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py\n--- a/sagenb/notebook/worksheet.py\n+++ b/sagenb/notebook/worksheet.py\n@@ -3881,15 +3881,7 @@ except (KeyError, IOError):\n             C.delete_output()\n \n \n-__internal_test1 = '''\n-def foo(x):\n-    \"\n-    EXAMPLES:\n-        sage: 2+2\n-        4\n-    \"\n-    return x\n-'''.lstrip()\n+__internal_test1 = '\\ndef foo(x):\\n    \"\\n    EXAMPLES:\\n        sage: 2+2\\n        4\\n    \"\\n    return x'.lstrip()\n \n __internal_test2 = '''\n sage: 2 + 2\n```\nI don't know if it's the best approach.  Why does this use single double quotes, anyway?  Shouldn't the EXAMPLES block be surrounded by `\"\"\"`?  Modifying the patch here to use `\"\"\"` still passes doctests.",
     "created_at": "2011-09-28T05:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
@@ -871,7 +863,6 @@ diff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py
  __internal_test2 = '''
  sage: 2 + 2
 ```
-
 I don't know if it's the best approach.  Why does this use single double quotes, anyway?  Shouldn't the EXAMPLES block be surrounded by `"""`?  Modifying the patch here to use `"""` still passes doctests.
 
 

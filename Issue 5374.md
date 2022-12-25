@@ -69,7 +69,7 @@ Changing component from misc to documentation.
 archive/issue_comments_041313.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch **hg-rst.patch** applied fine against 3.4.alpha0 and all doctests passed with the options\n\n```\n-t -long -optional\n```\n\nWell, one doesn't need to run doctests on `sage/misc/` since this is just a minor formatting fix, but I did so anyway just to make sure... The reference manual built OK with this command\n\n```\nsage -docbuild reference html\n```\n\nChecking the relevant file\n\n```\n/path/to/html/en/reference/sage/misc/hg.html\n```\n\nI see that the formatting of both `import_patch()` and `patch()` is consistent with each other. So positive review.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch **hg-rst.patch** applied fine against 3.4.alpha0 and all doctests passed with the options\n\n```\n-t -long -optional\n```\nWell, one doesn't need to run doctests on `sage/misc/` since this is just a minor formatting fix, but I did so anyway just to make sure... The reference manual built OK with this command\n\n```\nsage -docbuild reference html\n```\nChecking the relevant file\n\n```\n/path/to/html/en/reference/sage/misc/hg.html\n```\nI see that the formatting of both `import_patch()` and `patch()` is consistent with each other. So positive review.",
     "created_at": "2009-02-27T09:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5374",
     "type": "issue_comment",
@@ -87,19 +87,16 @@ The patch **hg-rst.patch** applied fine against 3.4.alpha0 and all doctests pass
 ```
 -t -long -optional
 ```
-
 Well, one doesn't need to run doctests on `sage/misc/` since this is just a minor formatting fix, but I did so anyway just to make sure... The reference manual built OK with this command
 
 ```
 sage -docbuild reference html
 ```
-
 Checking the relevant file
 
 ```
 /path/to/html/en/reference/sage/misc/hg.html
 ```
-
 I see that the formatting of both `import_patch()` and `patch()` is consistent with each other. So positive review.
 
 

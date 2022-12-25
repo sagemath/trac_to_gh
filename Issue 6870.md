@@ -3,7 +3,7 @@
 archive/issues_006870.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: binomial\n\nHere are two cases where binomial fails. I think it is not\nproperly converting its arguments to Integers in all cases where\nit should.\n\n\n```\nsage: binomial(1/2,1/1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2602             except AttributeError:\n   2603                 pass\n-> 2604             raise TypeError, 'Either m or x-m must be an integer'\n   2605     if isinstance(x, (int, long, integer.Integer)):\n   2606         if x >= 0 and (m < 0 or m > x):\n\nTypeError: Either m or x-m must be an integer\n```\n\n\n\n```\nsage: binomial(10^20+1/1,10^20) \n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2625         from sage.functions.all import gamma\n   2626         return gamma(x+1)/gamma(P(m+1))/gamma(x-m+1)\n-> 2627     return misc.prod([x-i for i in xrange(m)]) / P(factorial(m))\n   2628 \n   2629 def multinomial(*ks):\n\nOverflowError: long int too large to convert to int\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6870\n\n",
+    "body": "Assignee: somebody\n\nKeywords: binomial\n\nHere are two cases where binomial fails. I think it is not\nproperly converting its arguments to Integers in all cases where\nit should.\n\n```\nsage: binomial(1/2,1/1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2602             except AttributeError:\n   2603                 pass\n-> 2604             raise TypeError, 'Either m or x-m must be an integer'\n   2605     if isinstance(x, (int, long, integer.Integer)):\n   2606         if x >= 0 and (m < 0 or m > x):\n\nTypeError: Either m or x-m must be an integer\n```\n\n```\nsage: binomial(10^20+1/1,10^20) \n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2625         from sage.functions.all import gamma\n   2626         return gamma(x+1)/gamma(P(m+1))/gamma(x-m+1)\n-> 2627     return misc.prod([x-i for i in xrange(m)]) / P(factorial(m))\n   2628 \n   2629 def multinomial(*ks):\n\nOverflowError: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6870\n\n",
     "created_at": "2009-09-02T20:20:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ Here are two cases where binomial fails. I think it is not
 properly converting its arguments to Integers in all cases where
 it should.
 
-
 ```
 sage: binomial(1/2,1/1)
 ---------------------------------------------------------------------------
@@ -43,8 +42,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: Either m or x-m must be an integer
 ```
 
-
-
 ```
 sage: binomial(10^20+1/1,10^20) 
 ---------------------------------------------------------------------------
@@ -61,7 +58,6 @@ OverflowError                             Traceback (most recent call last)
 
 OverflowError: long int too large to convert to int
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6870
@@ -93,7 +89,7 @@ Attachment [binomial_bug.patch](tarball://root/attachments/some-uuid/ticket6870/
 archive/issue_comments_056594.json:
 ```json
 {
-    "body": "This is a good idea, and somewhat surprisingly it speeds up very small binomials without slowing down biggish ones.  However, it does seem to slow down symbolic binomials:\n\nBefore:\n\n```\nsage: timeit('binomial(100,10)')\n625 loops, best of 3: 21.9 \u00b5s per loop\nsage: timeit('binomial(10^7,252525)')\n5 loops, best of 3: 1.35 s per loop\nsage: timeit('binomial(2*n,n)')\n625 loops, best of 3: 60.3 \u00b5s per loop\nsage: timeit('binomial(n+1,n)')\n625 loops, best of 3: 78.4 \u00b5s per loop\n```\n\n\nAfter:\n\n```\nsage: timeit('binomial(100,10)')\n625 loops, best of 3: 18.9 \u00b5s per loop\nsage: sage: timeit('binomial(10^7,252525)')\n5 loops, best of 3: 1.34 s per loop\nsage: timeit('binomial(2*n,n)')\n625 loops, best of 3: 76.2 \u00b5s per loop\nsage: timeit('binomial(n+1,n)')\n625 loops, best of 3: 137 \u00b5s per loop\n```\n\n\nI imagine that in some applications with a lot of symbolic stuff that could be a problem, but I'm not sure.  Is it possible to put a catch in for expressions that would keep things more or less as they were there, without making the numeric ones much slower?",
+    "body": "This is a good idea, and somewhat surprisingly it speeds up very small binomials without slowing down biggish ones.  However, it does seem to slow down symbolic binomials:\n\nBefore:\n\n```\nsage: timeit('binomial(100,10)')\n625 loops, best of 3: 21.9 \u00b5s per loop\nsage: timeit('binomial(10^7,252525)')\n5 loops, best of 3: 1.35 s per loop\nsage: timeit('binomial(2*n,n)')\n625 loops, best of 3: 60.3 \u00b5s per loop\nsage: timeit('binomial(n+1,n)')\n625 loops, best of 3: 78.4 \u00b5s per loop\n```\n\nAfter:\n\n```\nsage: timeit('binomial(100,10)')\n625 loops, best of 3: 18.9 \u00b5s per loop\nsage: sage: timeit('binomial(10^7,252525)')\n5 loops, best of 3: 1.34 s per loop\nsage: timeit('binomial(2*n,n)')\n625 loops, best of 3: 76.2 \u00b5s per loop\nsage: timeit('binomial(n+1,n)')\n625 loops, best of 3: 137 \u00b5s per loop\n```\n\nI imagine that in some applications with a lot of symbolic stuff that could be a problem, but I'm not sure.  Is it possible to put a catch in for expressions that would keep things more or less as they were there, without making the numeric ones much slower?",
     "created_at": "2009-09-14T20:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -117,7 +113,6 @@ sage: timeit('binomial(n+1,n)')
 625 loops, best of 3: 78.4 µs per loop
 ```
 
-
 After:
 
 ```
@@ -130,7 +125,6 @@ sage: timeit('binomial(2*n,n)')
 sage: timeit('binomial(n+1,n)')
 625 loops, best of 3: 137 µs per loop
 ```
-
 
 I imagine that in some applications with a lot of symbolic stuff that could be a problem, but I'm not sure.  Is it possible to put a catch in for expressions that would keep things more or less as they were there, without making the numeric ones much slower?
 
@@ -194,7 +188,7 @@ Attachment [binomial_bug_v2.patch](tarball://root/attachments/some-uuid/ticket68
 archive/issue_comments_056597.json:
 ```json
 {
-    "body": "No, we should be able to compute the second type too, so don't jettison that.  But can't you combine the two?  Checking type is not so bad to do, and then you can still always try to coerce later.  After all, at the bottom there is a special case check for reals and floats.  So maybe you could do something like\n\n```\nif isinstance(m or x-m,whatever.rational):\n   convert to integer if possible\n```\n\n\nI did check, and the slowdown for symbolic ones is because of that check.  Checking for an instance takes about 1/10 the time.\n\n```\nsage: def f():\n....:     try:\n....:         m=ZZ(a)\n....:     except:\n....:         pass\n....:     \nsage: timeit('f()')\n625 loops, best of 3: 34.4 \u00b5s per loop\nsage: def g():\n....:     isinstance(a,(int,long,Integer))\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 2.57 \u00b5s per loop\n```\n\nwhere a = n+1\n\nI guess the point is that we should definitely have as many correct answers as possible, but that the slowdown should be on these admittedly unusual cases with rationals, which are less likely to come up than the usual cases.",
+    "body": "No, we should be able to compute the second type too, so don't jettison that.  But can't you combine the two?  Checking type is not so bad to do, and then you can still always try to coerce later.  After all, at the bottom there is a special case check for reals and floats.  So maybe you could do something like\n\n```\nif isinstance(m or x-m,whatever.rational):\n   convert to integer if possible\n```\n\nI did check, and the slowdown for symbolic ones is because of that check.  Checking for an instance takes about 1/10 the time.\n\n```\nsage: def f():\n....:     try:\n....:         m=ZZ(a)\n....:     except:\n....:         pass\n....:     \nsage: timeit('f()')\n625 loops, best of 3: 34.4 \u00b5s per loop\nsage: def g():\n....:     isinstance(a,(int,long,Integer))\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 2.57 \u00b5s per loop\n```\nwhere a = n+1\n\nI guess the point is that we should definitely have as many correct answers as possible, but that the slowdown should be on these admittedly unusual cases with rationals, which are less likely to come up than the usual cases.",
     "created_at": "2009-09-16T14:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -209,7 +203,6 @@ No, we should be able to compute the second type too, so don't jettison that.  B
 if isinstance(m or x-m,whatever.rational):
    convert to integer if possible
 ```
-
 
 I did check, and the slowdown for symbolic ones is because of that check.  Checking for an instance takes about 1/10 the time.
 
@@ -228,7 +221,6 @@ sage: def g():
 sage: timeit('g()')
 625 loops, best of 3: 2.57 µs per loop
 ```
-
 where a = n+1
 
 I guess the point is that we should definitely have as many correct answers as possible, but that the slowdown should be on these admittedly unusual cases with rationals, which are less likely to come up than the usual cases.
@@ -265,7 +257,7 @@ it will slow down case A?
 archive/issue_comments_056599.json:
 ```json
 {
-    "body": "Maybe this?\n\n```\nsage: var('n')\nn\nsage: a = n+1\nsage: from sage.symbolic.expression import Expression\nsage: isinstance(a,Expression)\nTrue\nsage: def g():\n....:     isinstance(a,Expression)\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 573 ns per loop\nsage: a=SR(10**7)\nsage: timeit('g()')\n625 loops, best of 3: 595 ns per loop\nsage: timeit('f()')\n625 loops, best of 3: 1.59 \u00b5s per loop\n```\n\nYou can still use try: ZZ(x), it just makes sense to check type first, since it adds only nanoseconds, and then if someone is silly enough to use SR(10**7) instead of 10**7, they'll have to pay the microsecond penalty.  I jest a little, but I think you should try something like this to see if it would work.  If not, the first patch is probably better than allowing rational things to get through.  You could also add a check for rationals instead:\n\n```\nsage: from sage.rings.rational import Rational\nsage: def g():\n....:     isinstance(a,Rational)\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 1.23 \u00b5s per loop\nsage: a = 10**7-1/1\nsage: type(a)\n<type 'sage.rings.rational.Rational'>\nsage: timeit('g()')\n625 loops, best of 3: 570 ns per loop\n```\n\nSo even if a isn't rational, you lose very little time by checking that before you coerce.",
+    "body": "Maybe this?\n\n```\nsage: var('n')\nn\nsage: a = n+1\nsage: from sage.symbolic.expression import Expression\nsage: isinstance(a,Expression)\nTrue\nsage: def g():\n....:     isinstance(a,Expression)\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 573 ns per loop\nsage: a=SR(10**7)\nsage: timeit('g()')\n625 loops, best of 3: 595 ns per loop\nsage: timeit('f()')\n625 loops, best of 3: 1.59 \u00b5s per loop\n```\nYou can still use try: ZZ(x), it just makes sense to check type first, since it adds only nanoseconds, and then if someone is silly enough to use SR(10**7) instead of 10**7, they'll have to pay the microsecond penalty.  I jest a little, but I think you should try something like this to see if it would work.  If not, the first patch is probably better than allowing rational things to get through.  You could also add a check for rationals instead:\n\n```\nsage: from sage.rings.rational import Rational\nsage: def g():\n....:     isinstance(a,Rational)\n....:     \nsage: timeit('g()')\n625 loops, best of 3: 1.23 \u00b5s per loop\nsage: a = 10**7-1/1\nsage: type(a)\n<type 'sage.rings.rational.Rational'>\nsage: timeit('g()')\n625 loops, best of 3: 570 ns per loop\n```\nSo even if a isn't rational, you lose very little time by checking that before you coerce.",
     "created_at": "2009-09-17T13:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -294,7 +286,6 @@ sage: timeit('g()')
 sage: timeit('f()')
 625 loops, best of 3: 1.59 µs per loop
 ```
-
 You can still use try: ZZ(x), it just makes sense to check type first, since it adds only nanoseconds, and then if someone is silly enough to use SR(10**7) instead of 10**7, they'll have to pay the microsecond penalty.  I jest a little, but I think you should try something like this to see if it would work.  If not, the first patch is probably better than allowing rational things to get through.  You could also add a check for rationals instead:
 
 ```
@@ -310,7 +301,6 @@ sage: type(a)
 sage: timeit('g()')
 625 loops, best of 3: 570 ns per loop
 ```
-
 So even if a isn't rational, you lose very little time by checking that before you coerce.
 
 
@@ -402,7 +392,7 @@ I hope that these comments are not frustrating; this is overall a good fix to a 
 archive/issue_comments_056604.json:
 ```json
 {
-    "body": "I really have no idea what to do. So assume we have something like\n\n\n```\nif isinstance(x,Expression):\n```\n\n\nthen what to do? We have no idea at this point if x happens to be something\nlike SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If\nthat try should fail, it is already too late to avoid the time penalty\nthat is the point of this discussion.",
+    "body": "I really have no idea what to do. So assume we have something like\n\n```\nif isinstance(x,Expression):\n```\n\nthen what to do? We have no idea at this point if x happens to be something\nlike SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If\nthat try should fail, it is already too late to avoid the time penalty\nthat is the point of this discussion.",
     "created_at": "2009-09-21T17:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -413,11 +403,9 @@ archive/issue_comments_056604.json:
 
 I really have no idea what to do. So assume we have something like
 
-
 ```
 if isinstance(x,Expression):
 ```
-
 
 then what to do? We have no idea at this point if x happens to be something
 like SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If
@@ -431,7 +419,7 @@ that is the point of this discussion.
 archive/issue_comments_056605.json:
 ```json
 {
-    "body": "Replying to [comment:8 hgranath]:\n> I really have no idea what to do. So assume we have something like\n> \n> {{{\n> if isinstance(x,Expression):\n> }}}\n> \n> then what to do? We have no idea at this point if x happens to be something\n> like SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If\n> that try should fail, it is already too late to avoid the time penalty\n> that is the point of this discussion.\n\nUnderstood; I think I didn't catch what the salient point was in your earlier comment, but now I do, and I agree that there is no easy way around it.  My apologies.  \n\nHere is my last idea.  I think that the .pyobject() method of Expression can catch this - because it returns an error for anything which is not a bare coefficient:\n\n```\nsage: def h():\n    try:\n        a.pyobject()\n        return ZZ(a)\n    except:\n            return a\nsage: a = n+1\nsage: h()\nn + 1\nsage: timeit('h()')\n625 loops, best of 3: 5.98 \u00b5s per loop\nsage: a = SR(10^7)\nsage: timeit('h()')\n625 loops, best of 3: 1.89 \u00b5s per loop\n```\n\nThe docstring confirms this performs as advertised.  If that doesn't speed things up, then I guess it's not possible :(\n\nSo if that doesn't work, your original solution stands as a definite improvement, with the changes you noted - put the rational check inside the already existing not isinstance(m, int etc.) check, before trying m = ZZ(m), do the floating point fix where you have it.  Oh yeah, be sure to add doctests for the SR(10**7) etc. \n\nBecause in the long run, we should have more correct cases, I think.  If someone notices a really bad slowdown, we will have to write a very fast symbolic binomial or something.  But all of these are an improvement on before.  Thanks for all of it!",
+    "body": "Replying to [comment:8 hgranath]:\n> I really have no idea what to do. So assume we have something like\n> \n> \n> ```\n> if isinstance(x,Expression):\n> ```\n> \n> then what to do? We have no idea at this point if x happens to be something\n> like SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If\n> that try should fail, it is already too late to avoid the time penalty\n> that is the point of this discussion.\n\n\nUnderstood; I think I didn't catch what the salient point was in your earlier comment, but now I do, and I agree that there is no easy way around it.  My apologies.  \n\nHere is my last idea.  I think that the .pyobject() method of Expression can catch this - because it returns an error for anything which is not a bare coefficient:\n\n```\nsage: def h():\n    try:\n        a.pyobject()\n        return ZZ(a)\n    except:\n            return a\nsage: a = n+1\nsage: h()\nn + 1\nsage: timeit('h()')\n625 loops, best of 3: 5.98 \u00b5s per loop\nsage: a = SR(10^7)\nsage: timeit('h()')\n625 loops, best of 3: 1.89 \u00b5s per loop\n```\nThe docstring confirms this performs as advertised.  If that doesn't speed things up, then I guess it's not possible :(\n\nSo if that doesn't work, your original solution stands as a definite improvement, with the changes you noted - put the rational check inside the already existing not isinstance(m, int etc.) check, before trying m = ZZ(m), do the floating point fix where you have it.  Oh yeah, be sure to add doctests for the SR(10**7) etc. \n\nBecause in the long run, we should have more correct cases, I think.  If someone notices a really bad slowdown, we will have to write a very fast symbolic binomial or something.  But all of these are an improvement on before.  Thanks for all of it!",
     "created_at": "2009-09-21T18:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -443,14 +431,16 @@ archive/issue_comments_056605.json:
 Replying to [comment:8 hgranath]:
 > I really have no idea what to do. So assume we have something like
 > 
-> {{{
+> 
+> ```
 > if isinstance(x,Expression):
-> }}}
+> ```
 > 
 > then what to do? We have no idea at this point if x happens to be something
 > like SR(10**7) or n+1, and we will not know until we try x=ZZ(x). If
 > that try should fail, it is already too late to avoid the time penalty
 > that is the point of this discussion.
+
 
 Understood; I think I didn't catch what the salient point was in your earlier comment, but now I do, and I agree that there is no easy way around it.  My apologies.  
 
@@ -472,7 +462,6 @@ sage: a = SR(10^7)
 sage: timeit('h()')
 625 loops, best of 3: 1.89 µs per loop
 ```
-
 The docstring confirms this performs as advertised.  If that doesn't speed things up, then I guess it's not possible :(
 
 So if that doesn't work, your original solution stands as a definite improvement, with the changes you noted - put the rational check inside the already existing not isinstance(m, int etc.) check, before trying m = ZZ(m), do the floating point fix where you have it.  Oh yeah, be sure to add doctests for the SR(10**7) etc. 
@@ -507,7 +496,7 @@ I hope I finally got everything right in version 5 of the patch!
 archive/issue_comments_056607.json:
 ```json
 {
-    "body": "Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by @kcrisman created at 2009-09-22 15:36:52\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\n\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\n\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
+    "body": "Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by @kcrisman created at 2009-09-22 15:36:52\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
     "created_at": "2009-09-22T15:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -525,14 +514,12 @@ However, what does this patch do with this?
 ```
 sage: binomial(SR(3/2),SR(1/1))?
 ```
-
 Trying x-m won't work on this.   Note that 
 
 ```
 sage: type(SR(1/1).pyobject())
 <type 'sage.rings.rational.Rational'>
 ```
-
 which means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.
 
 As for a trivial point, there is a misspelling of "coerce" as well.
@@ -581,7 +568,7 @@ Attachment [binomial_bug_v6.patch](tarball://root/attachments/some-uuid/ticket68
 archive/issue_comments_056610.json:
 ```json
 {
-    "body": "I get an odd doctest failure:\n\n\n```\n**********************************************************************\nFile \"/Users/.../crypto/boolean_function.pyx\", line 1013:\n    sage: B.nonlinearity()\nExpected:\n    222\nGot:\n    217\n**********************************************************************\n```\n\nOne might as well add a doctest for that last case you mentioned, too.  I'm rebasing your last patch to fix these, and putting positive review since I only changed the doctests so they pass.  I think we finally got it!",
+    "body": "I get an odd doctest failure:\n\n```\n**********************************************************************\nFile \"/Users/.../crypto/boolean_function.pyx\", line 1013:\n    sage: B.nonlinearity()\nExpected:\n    222\nGot:\n    217\n**********************************************************************\n```\nOne might as well add a doctest for that last case you mentioned, too.  I'm rebasing your last patch to fix these, and putting positive review since I only changed the doctests so they pass.  I think we finally got it!",
     "created_at": "2009-09-22T18:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -591,7 +578,6 @@ archive/issue_comments_056610.json:
 ```
 
 I get an odd doctest failure:
-
 
 ```
 **********************************************************************
@@ -603,7 +589,6 @@ Got:
     217
 **********************************************************************
 ```
-
 One might as well add a doctest for that last case you mentioned, too.  I'm rebasing your last patch to fix these, and putting positive review since I only changed the doctests so they pass.  I think we finally got it!
 
 
@@ -689,7 +674,7 @@ The patch `trac_6870-final-v2.patch` is the same as `trac_6870-final.patch`. The
 archive/issue_comments_056615.json:
 ```json
 {
-    "body": "With `trac_6870-final-v2.patch`, I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/crypto/boolean_function.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/crypto/boolean_function.pyx\", line 1013:\n    sage: B.nonlinearity()\nExpected:\n    217\nGot:\n    222\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_boolean_function.py\n\t [5.3 s]\n```\n",
+    "body": "With `trac_6870-final-v2.patch`, I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/crypto/boolean_function.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/crypto/boolean_function.pyx\", line 1013:\n    sage: B.nonlinearity()\nExpected:\n    217\nGot:\n    222\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_boolean_function.py\n\t [5.3 s]\n```",
     "created_at": "2009-09-24T11:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -716,7 +701,6 @@ Got:
 For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_boolean_function.py
 	 [5.3 s]
 ```
-
 
 
 
@@ -821,7 +805,7 @@ fix 32- vs. 64-bit issue
 archive/issue_comments_056621.json:
 ```json
 {
-    "body": "Replying to [comment:20 kcrisman]:\n> Minh, I tried this again in a branch with no binomial changes, and it is still there.  I am restoring positive review, and suggest that one looks at #6950 and friends for this.  \nThe doctest failure I got above is due to a 32- vs. 64-bit issue. On a 32-bit system, it would report 217. But on a 64-bit system, it would report 222. These results are consistent for all the machines I have tested on. See my doctest reports for Sage 4.1.2.alpha2:\n\n* 32- and 64-bit [Ubuntu](http://groups.google.com/group/sage-devel/browse_thread/thread/ec8e2958f394eb5b)\n* 32- and 64-bit [Mandriva](http://groups.google.com/group/sage-devel/browse_thread/thread/e61bb57a2637ba2e)\n* 32- and 64-bit [Debian](http://groups.google.com/group/sage-devel/browse_thread/thread/55d756fb80c94780)\n* 32- and 64-bit [Fedora](http://groups.google.com/group/sage-devel/browse_thread/thread/ff85e2965dc9e59b), [Red Hat, CentOS](http://groups.google.com/group/sage-devel/browse_thread/thread/4ddf1b90690d4cfa)\n* 32- and 64-bit [openSUSE](http://groups.google.com/group/sage-devel/browse_thread/thread/792bb7c3d1f662ef)\n* 32- and 64-bit [Mac OS X 10.5.8](http://groups.google.com/group/sage-devel/browse_thread/thread/954ecbadeb7676a8)\n \nIn all of the above reports, the doctest in question pass on 64-bit platforms, but fail on 32-bit platforms. I have attached the patch `trac_6870-bitness-issue.patch` which takes care of this bitness issue. It should be applied on top of `trac_6870-final-v2.patch`. If my patch is good, then everything is ready to be merged.",
+    "body": "Replying to [comment:20 kcrisman]:\n> Minh, I tried this again in a branch with no binomial changes, and it is still there.  I am restoring positive review, and suggest that one looks at #6950 and friends for this.  \n\nThe doctest failure I got above is due to a 32- vs. 64-bit issue. On a 32-bit system, it would report 217. But on a 64-bit system, it would report 222. These results are consistent for all the machines I have tested on. See my doctest reports for Sage 4.1.2.alpha2:\n\n* 32- and 64-bit [Ubuntu](http://groups.google.com/group/sage-devel/browse_thread/thread/ec8e2958f394eb5b)\n* 32- and 64-bit [Mandriva](http://groups.google.com/group/sage-devel/browse_thread/thread/e61bb57a2637ba2e)\n* 32- and 64-bit [Debian](http://groups.google.com/group/sage-devel/browse_thread/thread/55d756fb80c94780)\n* 32- and 64-bit [Fedora](http://groups.google.com/group/sage-devel/browse_thread/thread/ff85e2965dc9e59b), [Red Hat, CentOS](http://groups.google.com/group/sage-devel/browse_thread/thread/4ddf1b90690d4cfa)\n* 32- and 64-bit [openSUSE](http://groups.google.com/group/sage-devel/browse_thread/thread/792bb7c3d1f662ef)\n* 32- and 64-bit [Mac OS X 10.5.8](http://groups.google.com/group/sage-devel/browse_thread/thread/954ecbadeb7676a8)\n \nIn all of the above reports, the doctest in question pass on 64-bit platforms, but fail on 32-bit platforms. I have attached the patch `trac_6870-bitness-issue.patch` which takes care of this bitness issue. It should be applied on top of `trac_6870-final-v2.patch`. If my patch is good, then everything is ready to be merged.",
     "created_at": "2009-09-26T05:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -832,6 +816,7 @@ archive/issue_comments_056621.json:
 
 Replying to [comment:20 kcrisman]:
 > Minh, I tried this again in a branch with no binomial changes, and it is still there.  I am restoring positive review, and suggest that one looks at #6950 and friends for this.  
+
 The doctest failure I got above is due to a 32- vs. 64-bit issue. On a 32-bit system, it would report 217. But on a 64-bit system, it would report 222. These results are consistent for all the machines I have tested on. See my doctest reports for Sage 4.1.2.alpha2:
 
 * 32- and 64-bit [Ubuntu](http://groups.google.com/group/sage-devel/browse_thread/thread/ec8e2958f394eb5b)
@@ -870,7 +855,7 @@ In any case, I an unable to review that part of your patch.  I'm sorry :(
 archive/issue_comments_056623.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> I believe you, though I have no way of testing this, as I don't plan to build a 64-bit Sage any time soon.  My point is that, as far as I can tell, it should be the subject of its own ticket, not this one.  \n> \n> In any case, I an unable to review that part of your patch.  I'm sorry :(\nWhat you can do is get the patch `trac_6870-final-v2.patch` and remove the hunk:\n\n```\n1011\t1011\t        sage: B.nvariables() \n1012\t1012\t        9 \n1013\t1013\t        sage: B.nonlinearity() \n1014\t \t        222 \n \t1014\t        217 \n1015\t1015\t    \"\"\" \n1016\t1016\t    from sage.misc.randstate import current_randstate \n1017\t1017\t    r = current_randstate().python_random() \n```\n\nfrom that patch. The new patch would be the same as the original, only with changes to the file `sage/rings/arith.py`. As for my patch, you could open another ticket and put the patch there. That way, the patch won't be lost to history, and you could still review Hakan's changes to `sage/rings/arith.py`. As for the doctest failure in `sage/crypto/boolean_function.pyx`, you reference the new ticket from this ticket. How does that sound?",
+    "body": "Replying to [comment:22 kcrisman]:\n> I believe you, though I have no way of testing this, as I don't plan to build a 64-bit Sage any time soon.  My point is that, as far as I can tell, it should be the subject of its own ticket, not this one.  \n> \n> In any case, I an unable to review that part of your patch.  I'm sorry :(\n\nWhat you can do is get the patch `trac_6870-final-v2.patch` and remove the hunk:\n\n```\n1011\t1011\t        sage: B.nvariables() \n1012\t1012\t        9 \n1013\t1013\t        sage: B.nonlinearity() \n1014\t \t        222 \n \t1014\t        217 \n1015\t1015\t    \"\"\" \n1016\t1016\t    from sage.misc.randstate import current_randstate \n1017\t1017\t    r = current_randstate().python_random() \n```\nfrom that patch. The new patch would be the same as the original, only with changes to the file `sage/rings/arith.py`. As for my patch, you could open another ticket and put the patch there. That way, the patch won't be lost to history, and you could still review Hakan's changes to `sage/rings/arith.py`. As for the doctest failure in `sage/crypto/boolean_function.pyx`, you reference the new ticket from this ticket. How does that sound?",
     "created_at": "2009-09-27T00:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
@@ -883,6 +868,7 @@ Replying to [comment:22 kcrisman]:
 > I believe you, though I have no way of testing this, as I don't plan to build a 64-bit Sage any time soon.  My point is that, as far as I can tell, it should be the subject of its own ticket, not this one.  
 > 
 > In any case, I an unable to review that part of your patch.  I'm sorry :(
+
 What you can do is get the patch `trac_6870-final-v2.patch` and remove the hunk:
 
 ```
@@ -895,7 +881,6 @@ What you can do is get the patch `trac_6870-final-v2.patch` and remove the hunk:
 1016	1016	    from sage.misc.randstate import current_randstate 
 1017	1017	    r = current_randstate().python_random() 
 ```
-
 from that patch. The new patch would be the same as the original, only with changes to the file `sage/rings/arith.py`. As for my patch, you could open another ticket and put the patch there. That way, the patch won't be lost to history, and you could still review Hakan's changes to `sage/rings/arith.py`. As for the doctest failure in `sage/crypto/boolean_function.pyx`, you reference the new ticket from this ticket. How does that sound?
 
 

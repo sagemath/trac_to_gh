@@ -3,7 +3,7 @@
 archive/issues_001752.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nWhen calling \n\n```\nDESTDIR=$sagedir make install\n```\n\nthe following library files will be created with 555 permissions. When causes problems when trying to strip those files. To change that, deliver the files with 755 permissions.\n\n$sagedir/sage/local/lib/libhistory.so.*\n$sagedir/sage/local/lib/libreadline.so.*\n\nIssue created by migration from https://trac.sagemath.org/ticket/1752\n\n",
+    "body": "Assignee: cwitty\n\nWhen calling \n\n```\nDESTDIR=$sagedir make install\n```\nthe following library files will be created with 555 permissions. When causes problems when trying to strip those files. To change that, deliver the files with 755 permissions.\n\n$sagedir/sage/local/lib/libhistory.so.*\n$sagedir/sage/local/lib/libreadline.so.*\n\nIssue created by migration from https://trac.sagemath.org/ticket/1752\n\n",
     "created_at": "2008-01-10T22:14:38Z",
     "labels": [
         "component: relocation",
@@ -24,7 +24,6 @@ When calling
 ```
 DESTDIR=$sagedir make install
 ```
-
 the following library files will be created with 555 permissions. When causes problems when trying to strip those files. To change that, deliver the files with 755 permissions.
 
 $sagedir/sage/local/lib/libhistory.so.*

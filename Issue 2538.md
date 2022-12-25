@@ -3,7 +3,7 @@
 archive/issues_002538.json:
 ```json
 {
-    "body": "Assignee: wstein\n\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
+    "body": "Assignee: wstein\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
     "created_at": "2008-03-16T01:24:51Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002538.json:
 }
 ```
 Assignee: wstein
-
 
 ```
 sage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py
@@ -41,7 +40,6 @@ exit code: 256
 ----------------------------------------------------------------------
 The following tests failed:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2538
 

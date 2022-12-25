@@ -3,7 +3,7 @@
 archive/issues_001147.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen running \n\n``` \n  sage -valgrind\n```\n\n\nthe output files are all over in $HOME/.sage.  They should be put in a file \n\n```\n  $HOME/.sage/valgrind\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1147\n\n",
+    "body": "Assignee: mabshoff\n\nWhen running \n\n``` \n  sage -valgrind\n```\n\nthe output files are all over in $HOME/.sage.  They should be put in a file \n\n```\n  $HOME/.sage/valgrind\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1147\n\n",
     "created_at": "2007-11-11T14:44:26Z",
     "labels": [
         "component: packages: standard",
@@ -24,13 +24,11 @@ When running
   sage -valgrind
 ```
 
-
 the output files are all over in $HOME/.sage.  They should be put in a file 
 
 ```
   $HOME/.sage/valgrind
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1147

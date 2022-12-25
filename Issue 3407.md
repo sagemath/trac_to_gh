@@ -106,7 +106,7 @@ Yep -- I'll do it in the next hour.
 archive/issue_comments_023852.json:
 ```json
 {
-    "body": "I am seeing doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 13 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 13 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed\n```\n\n#3406 shows issue in similar areas.\n\nCheers,\n\nMichael",
+    "body": "I am seeing doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 13 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 13 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed\n```\n#3406 shows issue in similar areas.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-23T08:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
@@ -122,7 +122,6 @@ I am seeing doctest failures:
         sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 13 doctests failed
         sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed
 ```
-
 #3406 shows issue in similar areas.
 
 Cheers,
@@ -153,7 +152,7 @@ archive/issue_events_007684.json:
 archive/issue_comments_023853.json:
 ```json
 {
-    "body": "After fixing #3406.\n\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py\nsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nSince this patch depends on #3406 anyway, I'll add the positive review back.",
+    "body": "After fixing #3406.\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py\nsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\n----------------------------------------------------------------------\nAll tests passed!\n```\n\nSince this patch depends on #3406 anyway, I'll add the positive review back.",
     "created_at": "2008-06-23T17:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
@@ -164,7 +163,6 @@ archive/issue_comments_023853.json:
 
 After fixing #3406.
 
-
 ```
 sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
 sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py
@@ -172,7 +170,6 @@ sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
 ----------------------------------------------------------------------
 All tests passed!
 ```
-
 
 Since this patch depends on #3406 anyway, I'll add the positive review back.
 

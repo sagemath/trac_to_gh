@@ -214,7 +214,7 @@ I think the change in the random_test is because the patched sage/schemes/generi
 archive/issue_comments_082894.json:
 ```json
 {
-    "body": "I've read through the code and it looks good. \n\nOne minor issue is that the `_repr_()` is not very descriptive. For example\n\n```\nsage: p0 = P1xP1.affine_patch(0)\nsage: p0\nToric variety of dimension 2\nsage: p0.embedding_morphism()\nScheme morphism:\n  From: Toric variety of dimension 2\n  To:   Toric variety of dimension 2\n  Defn: Defined on coordinates by sending [z0 : z3] to\n        [z0 : 1 : 1 : z3]\n```\n\nMaybe we could return `Toric variety (dim=2, #cones=4)` or so and include the number of generating cones to be able to distinguish the different varieties.\n\nApart from that I'd be happy to review it positively once the rewritten `Fan` is incorporated!",
+    "body": "I've read through the code and it looks good. \n\nOne minor issue is that the `_repr_()` is not very descriptive. For example\n\n```\nsage: p0 = P1xP1.affine_patch(0)\nsage: p0\nToric variety of dimension 2\nsage: p0.embedding_morphism()\nScheme morphism:\n  From: Toric variety of dimension 2\n  To:   Toric variety of dimension 2\n  Defn: Defined on coordinates by sending [z0 : z3] to\n        [z0 : 1 : 1 : z3]\n```\nMaybe we could return `Toric variety (dim=2, #cones=4)` or so and include the number of generating cones to be able to distinguish the different varieties.\n\nApart from that I'd be happy to review it positively once the rewritten `Fan` is incorporated!",
     "created_at": "2010-06-13T21:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -238,7 +238,6 @@ Scheme morphism:
   Defn: Defined on coordinates by sending [z0 : z3] to
         [z0 : 1 : 1 : z3]
 ```
-
 Maybe we could return `Toric variety (dim=2, #cones=4)` or so and include the number of generating cones to be able to distinguish the different varieties.
 
 Apart from that I'd be happy to review it positively once the rewritten `Fan` is incorporated!
@@ -250,7 +249,7 @@ Apart from that I'd be happy to review it positively once the rewritten `Fan` is
 archive/issue_comments_082895.json:
 ```json
 {
-    "body": "How about this?\n\n```\nToric variety of dimension 2 with 4 affine patches\n```\n\nI would like to have a description in \"plain English\" and also patches seem to be more intrinsic to varieties than cones.\n\nIt may be good also to add an option for \"extra\" name, so that varieties from a named database (which is not there yet but I hope to have it eventually based on your code) can print as \n\n```\nToric variety of dimension 2 with 4 affine patches (P1xP1)\n```\n\nor maybe\n\n```\nP1xP1 (Toric variety of dimension 2 with 4 affine patches)\n```\n\nwill be better. There is a way to rename anything in Sage, so\n\n```\nP1xP1\n```\n\nis very easy to do, but seems to be too different from the default one. Which one of three do you prefer?\n\nIt is also possible to print the base field, but I deliberately didn't do it so far because I always think of toric varieties as being defined over complex field. Plus, when the base field is a fraction field of a multivariable polynomial ring (as is the case with ambient spaces of anticanonical hypersurfaces in the next patch), the the description of the field gets really big and distracts from the toric variety itself.",
+    "body": "How about this?\n\n```\nToric variety of dimension 2 with 4 affine patches\n```\nI would like to have a description in \"plain English\" and also patches seem to be more intrinsic to varieties than cones.\n\nIt may be good also to add an option for \"extra\" name, so that varieties from a named database (which is not there yet but I hope to have it eventually based on your code) can print as \n\n```\nToric variety of dimension 2 with 4 affine patches (P1xP1)\n```\nor maybe\n\n```\nP1xP1 (Toric variety of dimension 2 with 4 affine patches)\n```\nwill be better. There is a way to rename anything in Sage, so\n\n```\nP1xP1\n```\nis very easy to do, but seems to be too different from the default one. Which one of three do you prefer?\n\nIt is also possible to print the base field, but I deliberately didn't do it so far because I always think of toric varieties as being defined over complex field. Plus, when the base field is a fraction field of a multivariable polynomial ring (as is the case with ambient spaces of anticanonical hypersurfaces in the next patch), the the description of the field gets really big and distracts from the toric variety itself.",
     "created_at": "2010-06-13T21:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -264,7 +263,6 @@ How about this?
 ```
 Toric variety of dimension 2 with 4 affine patches
 ```
-
 I would like to have a description in "plain English" and also patches seem to be more intrinsic to varieties than cones.
 
 It may be good also to add an option for "extra" name, so that varieties from a named database (which is not there yet but I hope to have it eventually based on your code) can print as 
@@ -272,19 +270,16 @@ It may be good also to add an option for "extra" name, so that varieties from a 
 ```
 Toric variety of dimension 2 with 4 affine patches (P1xP1)
 ```
-
 or maybe
 
 ```
 P1xP1 (Toric variety of dimension 2 with 4 affine patches)
 ```
-
 will be better. There is a way to rename anything in Sage, so
 
 ```
 P1xP1
 ```
-
 is very easy to do, but seems to be too different from the default one. Which one of three do you prefer?
 
 It is also possible to print the base field, but I deliberately didn't do it so far because I always think of toric varieties as being defined over complex field. Plus, when the base field is a fraction field of a multivariable polynomial ring (as is the case with ambient spaces of anticanonical hypersurfaces in the next patch), the the description of the field gets really big and distracts from the toric variety itself.
@@ -296,7 +291,7 @@ It is also possible to print the base field, but I deliberately didn't do it so 
 archive/issue_comments_082896.json:
 ```json
 {
-    "body": "And in your example the first variety should probably print as\n\n```\nAffine toric variety of dimension 2\n```\n",
+    "body": "And in your example the first variety should probably print as\n\n```\nAffine toric variety of dimension 2\n```",
     "created_at": "2010-06-13T21:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -310,7 +305,6 @@ And in your example the first variety should probably print as
 ```
 Affine toric variety of dimension 2
 ```
-
 
 
 
@@ -375,7 +369,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082900.json:
 ```json
 {
-    "body": "In the spirit of planned changes to cones and fans I propose printing toric varieties as\n\n```\n2-d toric variety covered by 4 affine patches\n```\n\nand\n\n```\n2-d affine toric variety\n```\n\nfor those generated by a single cone.",
+    "body": "In the spirit of planned changes to cones and fans I propose printing toric varieties as\n\n```\n2-d toric variety covered by 4 affine patches\n```\nand\n\n```\n2-d affine toric variety\n```\nfor those generated by a single cone.",
     "created_at": "2010-06-17T06:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -389,13 +383,11 @@ In the spirit of planned changes to cones and fans I propose printing toric vari
 ```
 2-d toric variety covered by 4 affine patches
 ```
-
 and
 
 ```
 2-d affine toric variety
 ```
-
 for those generated by a single cone.
 
 
@@ -501,7 +493,7 @@ In the singular case the `Kaehler_cone` method actually computes the cone in the
 archive/issue_comments_082906.json:
 ```json
 {
-    "body": "Another thought: It would be nice if `ToricVariety_field.fan()` would take an optional argument and pass it on to the fan so one could write\n\n```\nX = ToricVariety(...)\nX.fan(dim=1)\n```\n\ninstead of\n\n```\nX.fan()(dim=1)\n```\n",
+    "body": "Another thought: It would be nice if `ToricVariety_field.fan()` would take an optional argument and pass it on to the fan so one could write\n\n```\nX = ToricVariety(...)\nX.fan(dim=1)\n```\ninstead of\n\n```\nX.fan()(dim=1)\n```",
     "created_at": "2010-06-23T14:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -516,13 +508,11 @@ Another thought: It would be nice if `ToricVariety_field.fan()` would take an op
 X = ToricVariety(...)
 X.fan(dim=1)
 ```
-
 instead of
 
 ```
 X.fan()(dim=1)
 ```
-
 
 
 
@@ -869,7 +859,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082923.json:
 ```json
 {
-    "body": "I couldn't get this patch to apply unless I applied #9062, #8986, #9188 and #8987 beforehand. With these installed on top of 4.5.alpha1 (and no others), I got a doctest failure:\n\n```\n> sage -hg qapplied\ntrac_9062_add_support_for_toric_lattices.patch\ntrac_8986_add_support_for_convex_rational_polyhedral_cones.patch\ntrac_9188_fix_facet_normal.patch\ntrac_9188_fix_facet_normal_reviewer.patch\ntrac_8987_add_support_for_rational_polyhedral_fans.patch\ntrac_8987_add_enhanced_cones_and_fans.patch\ntrac_8987_review_changes.patch\ntrac_8987_repr_changes.patch\ntrac_8988_add_support_for_toric_varieties.patch\ntrac_8988_doctest_fix_for_symbolic_random_tests.patch\n> sage -t sage/misc/sageinspect.py\nsage -t  \"devel/sage-reviewing/sage/misc/sageinspect.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/misc/sageinspect.py\", line 983:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_sageinspect.py\n         [2.9 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-reviewing/sage/misc/sageinspect.py\"\nTotal time for all tests: 2.9 seconds\n```\n\n\nI have not got the foggiest clue why toric varieties can possibly have anything to do with this; it just looks like the doctests for sageinspect are sensitive to exactly what memory addresses things get stored at. I will put this back to \"needs review\" for now, but upload a tiny patch that sorts the variable name list; if you folks agree that it looks harmless, then we can go back to positive review.",
+    "body": "I couldn't get this patch to apply unless I applied #9062, #8986, #9188 and #8987 beforehand. With these installed on top of 4.5.alpha1 (and no others), I got a doctest failure:\n\n```\n> sage -hg qapplied\ntrac_9062_add_support_for_toric_lattices.patch\ntrac_8986_add_support_for_convex_rational_polyhedral_cones.patch\ntrac_9188_fix_facet_normal.patch\ntrac_9188_fix_facet_normal_reviewer.patch\ntrac_8987_add_support_for_rational_polyhedral_fans.patch\ntrac_8987_add_enhanced_cones_and_fans.patch\ntrac_8987_review_changes.patch\ntrac_8987_repr_changes.patch\ntrac_8988_add_support_for_toric_varieties.patch\ntrac_8988_doctest_fix_for_symbolic_random_tests.patch\n> sage -t sage/misc/sageinspect.py\nsage -t  \"devel/sage-reviewing/sage/misc/sageinspect.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/misc/sageinspect.py\", line 983:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_sageinspect.py\n         [2.9 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-reviewing/sage/misc/sageinspect.py\"\nTotal time for all tests: 2.9 seconds\n```\n\nI have not got the foggiest clue why toric varieties can possibly have anything to do with this; it just looks like the doctests for sageinspect are sensitive to exactly what memory addresses things get stored at. I will put this back to \"needs review\" for now, but upload a tiny patch that sorts the variable name list; if you folks agree that it looks harmless, then we can go back to positive review.",
     "created_at": "2010-07-01T08:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -915,7 +905,6 @@ The following tests failed:
         sage -t  "devel/sage-reviewing/sage/misc/sageinspect.py"
 Total time for all tests: 2.9 seconds
 ```
-
 
 I have not got the foggiest clue why toric varieties can possibly have anything to do with this; it just looks like the doctests for sageinspect are sensitive to exactly what memory addresses things get stored at. I will put this back to "needs review" for now, but upload a tiny patch that sorts the variable name list; if you folks agree that it looks harmless, then we can go back to positive review.
 
@@ -1274,7 +1263,7 @@ archive/issue_events_022000.json:
 archive/issue_comments_082942.json:
 ```json
 {
-    "body": "There's a doctest failure in SageNB's `sageinspect.py`:\n\n```python\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\nI'm closing this ticket as fixed but have opened #9554 as a blocker for 4.5.2.",
+    "body": "There's a doctest failure in SageNB's `sageinspect.py`:\n\n```python\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\nI'm closing this ticket as fixed but have opened #9554 as a blocker for 4.5.2.",
     "created_at": "2010-07-20T08:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
@@ -1300,5 +1289,4 @@ Got:
    1 of   8 in __main__.example_22
 ***Test Failed*** 1 failures.
 ```
-
 I'm closing this ticket as fixed but have opened #9554 as a blocker for 4.5.2.

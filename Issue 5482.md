@@ -3,7 +3,7 @@
 archive/issues_005482.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\n\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\n\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
+    "body": "Assignee: @williamstein\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
     "created_at": "2009-03-11T06:44:39Z",
     "labels": [
         "component: algebraic geometry",
@@ -25,7 +25,6 @@ sage: R.<x> = PolynomialRing(QQ)
 sage: f = x^2-1
 sage: S = R.quotient_by_principal_ideal(f)
 ```
-
 but then this fails:
 
 ```
@@ -37,7 +36,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: variable names have not yet been set using self._assign_names(...)
 ```
-
 The routine should require that the name(s) be provided.
 
 
@@ -166,7 +164,7 @@ Changing assignee from @williamstein to justin.
 archive/issue_comments_042454.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> REFEREE REPORT:\n> \n>  1. It *must* be \"names\" not \"name\", so the R.<x> = foo notation works.\n\nI discovered that while adding doctests.  I'll reverse that change.\n\n>  2. Every patch has to have a doctest that illustrates that it fixes the bug.\n\nDoctests?",
+    "body": "Replying to [comment:4 was]:\n> REFEREE REPORT:\n> \n> 1. It *must* be \"names\" not \"name\", so the R.<x> = foo notation works.\n\n\nI discovered that while adding doctests.  I'll reverse that change.\n\n>  2. Every patch has to have a doctest that illustrates that it fixes the bug.\n\n\nDoctests?",
     "created_at": "2009-03-16T03:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
@@ -178,11 +176,13 @@ archive/issue_comments_042454.json:
 Replying to [comment:4 was]:
 > REFEREE REPORT:
 > 
->  1. It *must* be "names" not "name", so the R.<x> = foo notation works.
+> 1. It *must* be "names" not "name", so the R.<x> = foo notation works.
+
 
 I discovered that while adding doctests.  I'll reverse that change.
 
 >  2. Every patch has to have a doctest that illustrates that it fixes the bug.
+
 
 Doctests?
 

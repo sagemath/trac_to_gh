@@ -3,7 +3,7 @@
 archive/issues_007112.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/misc/latex.py\"\n        sage -t -long \"devel/sage/sage/rings/number_field/totallyreal_rel.py\"\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n        sage -t -long \"devel/sage/sage/server/notebook/notebook.py\"\n        sage -t -long \"devel/sage/sage/server/simple/twist.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 23343.5 seconds\npdlc424:~ wstein$  \n```\n\n\nThe complete testlog is here:\n\nhttp://sage.math.washington.edu/home/wstein/patches/testlong-os10.5-ppc.log\n\nIssue created by migration from https://trac.sagemath.org/ticket/7112\n\n",
+    "body": "Assignee: tbd\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/misc/latex.py\"\n        sage -t -long \"devel/sage/sage/rings/number_field/totallyreal_rel.py\"\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n        sage -t -long \"devel/sage/sage/server/notebook/notebook.py\"\n        sage -t -long \"devel/sage/sage/server/simple/twist.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 23343.5 seconds\npdlc424:~ wstein$  \n```\n\nThe complete testlog is here:\n\nhttp://sage.math.washington.edu/home/wstein/patches/testlong-os10.5-ppc.log\n\nIssue created by migration from https://trac.sagemath.org/ticket/7112\n\n",
     "created_at": "2009-10-04T17:28:34Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_007112.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 ----------------------------------------------------------------------
@@ -35,7 +34,6 @@ The following tests failed:
 Total time for all tests: 23343.5 seconds
 pdlc424:~ wstein$  
 ```
-
 
 The complete testlog is here:
 
@@ -254,7 +252,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058841.json:
 ```json
 {
-    "body": "From just reading the patch(es), this is a positive review. The\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py\n```\n\nwill still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.\n\nAll I need is to really test the whole patch(es) on my PPC, but #7186 was holding me up (the very first file, calculus.py, did show a very nasty doctest output ...), so I have to postpone this for yet another day (i.e. night, sigh ...).",
+    "body": "From just reading the patch(es), this is a positive review. The\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py\n```\nwill still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.\n\nAll I need is to really test the whole patch(es) on my PPC, but #7186 was holding me up (the very first file, calculus.py, did show a very nasty doctest output ...), so I have to postpone this for yet another day (i.e. night, sigh ...).",
     "created_at": "2009-10-10T20:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
@@ -268,7 +266,6 @@ From just reading the patch(es), this is a positive review. The
 ```
 sage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py
 ```
-
 will still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.
 
 All I need is to really test the whole patch(es) on my PPC, but #7186 was holding me up (the very first file, calculus.py, did show a very nasty doctest output ...), so I have to postpone this for yet another day (i.e. night, sigh ...).

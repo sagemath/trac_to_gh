@@ -3,7 +3,7 @@
 archive/issues_008585.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat nborie\n\nKeywords: Empty Set, PermutationGroup\n\nSage can't properly work with SymmetricGroup(0) or PermutationsGroup on the\nempty set.\n\n```\nsage: SymmetricGroup(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n[...]\nValueError: min() arg is an empty sequence\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8585\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat nborie\n\nKeywords: Empty Set, PermutationGroup\n\nSage can't properly work with SymmetricGroup(0) or PermutationsGroup on the\nempty set.\n\n```\nsage: SymmetricGroup(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n[...]\nValueError: min() arg is an empty sequence\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8585\n\n",
     "created_at": "2010-03-23T09:01:45Z",
     "labels": [
         "component: group theory",
@@ -32,7 +32,6 @@ ValueError                                Traceback (most recent call last)
 [...]
 ValueError: min() arg is an empty sequence
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8585
@@ -82,7 +81,7 @@ Changing status from new to needs_review.
 archive/issue_comments_077625.json:
 ```json
 {
-    "body": "A comment by e-mail from Nicolas Borie:\n\n> 1. Est-ce qu'on change ce comportement ?\n\nTrans: Should we change this behavior\n\n```\n> sage: SymmetricGroup(-12)\n> Symmetric group of order 0! as a permutation group\n```\n\n\n> 2. Ce serait bien de changer ce message d'erreur :\n\nTrans: This error message is wrong:\n\n```\n> sage: SymmetricGroup('bla')\n>[...]\n> ValueError: n (=bla) must be an integer >= 1 or a list (but n has type\n> <type 'str'>)\n```\n\n\n> --> n must be an integer >= 0 now !!!",
+    "body": "A comment by e-mail from Nicolas Borie:\n\n> 1. Est-ce qu'on change ce comportement ?\n\n\nTrans: Should we change this behavior\n\n```\n> sage: SymmetricGroup(-12)\n> Symmetric group of order 0! as a permutation group\n```\n\n> 2. Ce serait bien de changer ce message d'erreur :\n\n\nTrans: This error message is wrong:\n\n```\n> sage: SymmetricGroup('bla')\n>[...]\n> ValueError: n (=bla) must be an integer >= 1 or a list (but n has type\n> <type 'str'>)\n```\n\n> --> n must be an integer >= 0 now !!!",
     "created_at": "2010-03-31T10:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
@@ -95,6 +94,7 @@ A comment by e-mail from Nicolas Borie:
 
 > 1. Est-ce qu'on change ce comportement ?
 
+
 Trans: Should we change this behavior
 
 ```
@@ -102,8 +102,8 @@ Trans: Should we change this behavior
 > Symmetric group of order 0! as a permutation group
 ```
 
-
 > 2. Ce serait bien de changer ce message d'erreur :
+
 
 Trans: This error message is wrong:
 
@@ -113,7 +113,6 @@ Trans: This error message is wrong:
 > ValueError: n (=bla) must be an integer >= 1 or a list (but n has type
 > <type 'str'>)
 ```
-
 
 > --> n must be an integer >= 0 now !!!
 

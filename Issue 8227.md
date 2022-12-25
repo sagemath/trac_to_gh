@@ -106,7 +106,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_072523.json:
 ```json
 {
-    "body": "1. I think the patch should follow the python behavior (i.e. return -1)\n\n\n```\nsage: '0123456789'.find('4566')\n-1\nsage: '0123456789'.rfind('4566')\n-1\n```\n\n\nfor those functions :\n\n\n```\nsage: Word(range(10)).rfind(Word([4,5,6,6]))\nsage: Word(range(10)).find(Word([4,5,6,6]))\n```\n\n\n2. The following comment found in the doc of `find` and `rfind` \n\n\n```\nThis function is different for Word_str objects:\n```\n\n\nillustrates a problem : the behavior for `Word_str` should be the same (`Word_str` is wrong). Can you fix it? You may consult #8127 for an idea of how to handle it. Make sure to ask the parent using super if type of other is not an str or a `Word_str`.\n\n\n3. An enumeration in the doc of the iterator function is broken as seen in the result of :\n\n\n```\nsage: w = Word(range(10))\nsage: browse_sage_doc(w._iterated_right_palindromic_closure_recursive_iterator)\n```\n\n\nAdding a blank line before the itemize should repair the problem. I also suggest to put `WordMorphism`,  `'recursive'` and `_iterative_righ...iterator()` inside double backquotes (like input arguments).\n\n4. Looking the function below but also how naive is the code of `find`, maybe the function `find` could use the function `first_pos_in` instead? This makes me realize that the function `first_pos_in` was probably a bad choice of name.... Using the new deprecation warning introduced recently by Florent Hivert this (name modif) can be done more easily now (but not in this ticket).\n\n\n```\nsage: %timeit Word([990,991,992,993]).first_pos_in(Word(range(1000)))\n125 loops, best of 3: 1.65 ms per loop\nsage: %timeit Word(range(1000)).find(Word([990,991,992,993]))\n5 loops, best of 3: 48 ms per loop\n```\n\n\n5. Could `rfind` could be improved easily using `_pos_in` and other good suffix table already implemented? If so, it can be good to do it now. But if you don't care now, it is fine. The function could be improved later if it is valuable. Anyway, the next step for all those search stuff is to be cythoned...\n\nThat's all for my comments.",
+    "body": "1. I think the patch should follow the python behavior (i.e. return -1)\n\n```\nsage: '0123456789'.find('4566')\n-1\nsage: '0123456789'.rfind('4566')\n-1\n```\n\nfor those functions :\n\n```\nsage: Word(range(10)).rfind(Word([4,5,6,6]))\nsage: Word(range(10)).find(Word([4,5,6,6]))\n```\n\n2. The following comment found in the doc of `find` and `rfind` \n\n```\nThis function is different for Word_str objects:\n```\n\nillustrates a problem : the behavior for `Word_str` should be the same (`Word_str` is wrong). Can you fix it? You may consult #8127 for an idea of how to handle it. Make sure to ask the parent using super if type of other is not an str or a `Word_str`.\n\n\n3. An enumeration in the doc of the iterator function is broken as seen in the result of :\n\n```\nsage: w = Word(range(10))\nsage: browse_sage_doc(w._iterated_right_palindromic_closure_recursive_iterator)\n```\n\nAdding a blank line before the itemize should repair the problem. I also suggest to put `WordMorphism`,  `'recursive'` and `_iterative_righ...iterator()` inside double backquotes (like input arguments).\n\n4. Looking the function below but also how naive is the code of `find`, maybe the function `find` could use the function `first_pos_in` instead? This makes me realize that the function `first_pos_in` was probably a bad choice of name.... Using the new deprecation warning introduced recently by Florent Hivert this (name modif) can be done more easily now (but not in this ticket).\n\n```\nsage: %timeit Word([990,991,992,993]).first_pos_in(Word(range(1000)))\n125 loops, best of 3: 1.65 ms per loop\nsage: %timeit Word(range(1000)).find(Word([990,991,992,993]))\n5 loops, best of 3: 48 ms per loop\n```\n\n5. Could `rfind` could be improved easily using `_pos_in` and other good suffix table already implemented? If so, it can be good to do it now. But if you don't care now, it is fine. The function could be improved later if it is valuable. Anyway, the next step for all those search stuff is to be cythoned...\n\nThat's all for my comments.",
     "created_at": "2010-02-11T00:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
@@ -117,7 +117,6 @@ archive/issue_comments_072523.json:
 
 1. I think the patch should follow the python behavior (i.e. return -1)
 
-
 ```
 sage: '0123456789'.find('4566')
 -1
@@ -125,40 +124,32 @@ sage: '0123456789'.rfind('4566')
 -1
 ```
 
-
 for those functions :
-
 
 ```
 sage: Word(range(10)).rfind(Word([4,5,6,6]))
 sage: Word(range(10)).find(Word([4,5,6,6]))
 ```
 
-
 2. The following comment found in the doc of `find` and `rfind` 
-
 
 ```
 This function is different for Word_str objects:
 ```
-
 
 illustrates a problem : the behavior for `Word_str` should be the same (`Word_str` is wrong). Can you fix it? You may consult #8127 for an idea of how to handle it. Make sure to ask the parent using super if type of other is not an str or a `Word_str`.
 
 
 3. An enumeration in the doc of the iterator function is broken as seen in the result of :
 
-
 ```
 sage: w = Word(range(10))
 sage: browse_sage_doc(w._iterated_right_palindromic_closure_recursive_iterator)
 ```
 
-
 Adding a blank line before the itemize should repair the problem. I also suggest to put `WordMorphism`,  `'recursive'` and `_iterative_righ...iterator()` inside double backquotes (like input arguments).
 
 4. Looking the function below but also how naive is the code of `find`, maybe the function `find` could use the function `first_pos_in` instead? This makes me realize that the function `first_pos_in` was probably a bad choice of name.... Using the new deprecation warning introduced recently by Florent Hivert this (name modif) can be done more easily now (but not in this ticket).
-
 
 ```
 sage: %timeit Word([990,991,992,993]).first_pos_in(Word(range(1000)))
@@ -166,7 +157,6 @@ sage: %timeit Word([990,991,992,993]).first_pos_in(Word(range(1000)))
 sage: %timeit Word(range(1000)).find(Word([990,991,992,993]))
 5 loops, best of 3: 48 ms per loop
 ```
-
 
 5. Could `rfind` could be improved easily using `_pos_in` and other good suffix table already implemented? If so, it can be good to do it now. But if you don't care now, it is fine. The function could be improved later if it is valuable. Anyway, the next step for all those search stuff is to be cythoned...
 
@@ -215,7 +205,7 @@ Thank you Sébastien for all those comments ! I agree with you on items 4 and 5,
 archive/issue_comments_072526.json:
 ```json
 {
-    "body": "Replying to [comment:5 abmasse]:\n> Thank you S\u00e9bastien for all those comments ! I agree with you on items 4 and 5, but I think these issues should be addressed in another ticket. \n\nWell, ok for 5 : `rfind` could be improved later. But for 4, I would like your new find function to make use of `first_pos_in` since it is already there and is faster. If you want to keep your implementation there, I suggest you use a parameter `algorithm` that defaults to `suffix_table` or a similar word and that make use of `first_pos_in`.\n\n> As for item 1, I agree with you as well, but I think it would be better if ``find()`` and ``rfind()`` functions could allow the user to choose between different string search algorithms (Boyer-Moore, KMP, etc.), so that it is maybe not necessary to make them look like the Python functions (what do you think?). \n\nI think both are possible (Je ne crois pas que l'un emp\u00eache l'autre) : one may selec the algorithm and the function can still behave like python. For example, \n\n\n```\nsage: w = Word(range(10))\nsage: u = Word(range(5, 8))\nsage: w.find(u)\n5\nsage: w.find(u, algorithm='KMP')\n5\nsage: w.find(u*u)\n-1\n```\n\n\n> If I understand you well in item 2, you would like me to change the ``find()`` and ``rfind()`` functions for Word_str objects or only to detect it in the algorithm computing the iterated palindromic closure? Finally, I will correct item 3 and the other problems as soon as you answer me.\n\nOk, so let's open a new ticket to clean up find and rfind.",
+    "body": "Replying to [comment:5 abmasse]:\n> Thank you S\u00e9bastien for all those comments ! I agree with you on items 4 and 5, but I think these issues should be addressed in another ticket. \n\n\nWell, ok for 5 : `rfind` could be improved later. But for 4, I would like your new find function to make use of `first_pos_in` since it is already there and is faster. If you want to keep your implementation there, I suggest you use a parameter `algorithm` that defaults to `suffix_table` or a similar word and that make use of `first_pos_in`.\n\n> As for item 1, I agree with you as well, but I think it would be better if ``find()`` and ``rfind()`` functions could allow the user to choose between different string search algorithms (Boyer-Moore, KMP, etc.), so that it is maybe not necessary to make them look like the Python functions (what do you think?). \n\n\nI think both are possible (Je ne crois pas que l'un emp\u00eache l'autre) : one may selec the algorithm and the function can still behave like python. For example, \n\n```\nsage: w = Word(range(10))\nsage: u = Word(range(5, 8))\nsage: w.find(u)\n5\nsage: w.find(u, algorithm='KMP')\n5\nsage: w.find(u*u)\n-1\n```\n\n> If I understand you well in item 2, you would like me to change the ``find()`` and ``rfind()`` functions for Word_str objects or only to detect it in the algorithm computing the iterated palindromic closure? Finally, I will correct item 3 and the other problems as soon as you answer me.\n\n\nOk, so let's open a new ticket to clean up find and rfind.",
     "created_at": "2010-02-14T18:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
@@ -227,12 +217,13 @@ archive/issue_comments_072526.json:
 Replying to [comment:5 abmasse]:
 > Thank you Sébastien for all those comments ! I agree with you on items 4 and 5, but I think these issues should be addressed in another ticket. 
 
+
 Well, ok for 5 : `rfind` could be improved later. But for 4, I would like your new find function to make use of `first_pos_in` since it is already there and is faster. If you want to keep your implementation there, I suggest you use a parameter `algorithm` that defaults to `suffix_table` or a similar word and that make use of `first_pos_in`.
 
 > As for item 1, I agree with you as well, but I think it would be better if ``find()`` and ``rfind()`` functions could allow the user to choose between different string search algorithms (Boyer-Moore, KMP, etc.), so that it is maybe not necessary to make them look like the Python functions (what do you think?). 
 
-I think both are possible (Je ne crois pas que l'un empêche l'autre) : one may selec the algorithm and the function can still behave like python. For example, 
 
+I think both are possible (Je ne crois pas que l'un empêche l'autre) : one may selec the algorithm and the function can still behave like python. For example, 
 
 ```
 sage: w = Word(range(10))
@@ -245,8 +236,8 @@ sage: w.find(u*u)
 -1
 ```
 
-
 > If I understand you well in item 2, you would like me to change the ``find()`` and ``rfind()`` functions for Word_str objects or only to detect it in the algorithm computing the iterated palindromic closure? Finally, I will correct item 3 and the other problems as soon as you answer me.
+
 
 Ok, so let's open a new ticket to clean up find and rfind.
 

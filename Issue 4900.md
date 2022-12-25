@@ -80,7 +80,7 @@ archive/issue_comments_037097.json:
 archive/issue_comments_037098.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n>  * it seems the docstring for the option 'all' lacks a mention of 'bsgs' (it only mentions 'pari' and 'sea'\n\nOK.  Actually the 'all' option does not work at all as advertised since the cached value is used.  I had to comment out the cache retrieval lines to test.\n\nI think a better way of managing this would be for the individual methods to have separate functions which do _not_ use the cached value (as in the new functions cardinality_bsgs()) and then the main user function cardinality() can call whichever version the user wants (but use the cached value if available; perhaps only if the user does not specify an algorithm to use).\n\n>  * I'm not sure about the current policy w.r.t. renaming stuff ('bsgs' -> 'pari'). Would this break existing code?\n\nI checked and there's nothing in Sage itself affected.  In other places algorithm=pari is used and it makes more sense to me than to second-guess what algorithm the current version of pari uses.\n\n>  * maybe the debug printing should be handled using `verbose()`?\n>  * is the `if debug` around `assert foo` necessary?\n\nI have no strong feelings.  The assertions are there for debugging purposes.  I prefer this way of commenting lines out;  I could delete them, but then it will be more hassle next time there is a bug.",
+    "body": "Replying to [comment:2 malb]:\n>  * it seems the docstring for the option 'all' lacks a mention of 'bsgs' (it only mentions 'pari' and 'sea'\n\n\nOK.  Actually the 'all' option does not work at all as advertised since the cached value is used.  I had to comment out the cache retrieval lines to test.\n\nI think a better way of managing this would be for the individual methods to have separate functions which do _not_ use the cached value (as in the new functions cardinality_bsgs()) and then the main user function cardinality() can call whichever version the user wants (but use the cached value if available; perhaps only if the user does not specify an algorithm to use).\n\n>  * I'm not sure about the current policy w.r.t. renaming stuff ('bsgs' -> 'pari'). Would this break existing code?\n\n\nI checked and there's nothing in Sage itself affected.  In other places algorithm=pari is used and it makes more sense to me than to second-guess what algorithm the current version of pari uses.\n\n>  * maybe the debug printing should be handled using `verbose()`?\n>  * is the `if debug` around `assert foo` necessary?\n\n\nI have no strong feelings.  The assertions are there for debugging purposes.  I prefer this way of commenting lines out;  I could delete them, but then it will be more hassle next time there is a bug.",
     "created_at": "2009-01-01T22:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
@@ -92,16 +92,19 @@ archive/issue_comments_037098.json:
 Replying to [comment:2 malb]:
 >  * it seems the docstring for the option 'all' lacks a mention of 'bsgs' (it only mentions 'pari' and 'sea'
 
+
 OK.  Actually the 'all' option does not work at all as advertised since the cached value is used.  I had to comment out the cache retrieval lines to test.
 
 I think a better way of managing this would be for the individual methods to have separate functions which do _not_ use the cached value (as in the new functions cardinality_bsgs()) and then the main user function cardinality() can call whichever version the user wants (but use the cached value if available; perhaps only if the user does not specify an algorithm to use).
 
 >  * I'm not sure about the current policy w.r.t. renaming stuff ('bsgs' -> 'pari'). Would this break existing code?
 
+
 I checked and there's nothing in Sage itself affected.  In other places algorithm=pari is used and it makes more sense to me than to second-guess what algorithm the current version of pari uses.
 
 >  * maybe the debug printing should be handled using `verbose()`?
 >  * is the `if debug` around `assert foo` necessary?
+
 
 I have no strong feelings.  The assertions are there for debugging purposes.  I prefer this way of commenting lines out;  I could delete them, but then it will be more hassle next time there is a bug.
 
@@ -130,7 +133,7 @@ I made this "not ready for review" since Drew has made some very helpful suggest
 archive/issue_comments_037100.json:
 ```json
 {
-    "body": "Testing has revealed a bug (an embarrassing one in code of mine) in _p_primary_torsion_basis() as exemplified here:\n\n```\n sage: p=10^60+3201\nsage: K=GF(p)\nsage: a=804515977734860566494239770982282063895480484302363715494873\nsage: b=584772221603632866665682322899297141793188252000674256662071\nsage: E=EllipticCurve(K,[0,a,0,b,0])\nsage: E.cardinality().factor()\n2^17 * 13115567671 * 581705246972988608203110387504181554514650287\nsage: E._p_primary_torsion_basis(2)\n\n[[(656068448840236768725810484116830935925716002501543862440466 : 324360550482744921974063628110267202720852104214117741680354 : 1),\n  2],\n [(21059802536298599082171845328893691100757301985761775129713 : 0 : 1), 1]]\n```\n\nHere the 2-sylow subgroup has structure 2^16 * 2 but E._p_primary_torsion_basis(2) only gives 2<sup>2*2</sup>1.  I know what the problem is and am working out how to fix it.\n\nNB This function is called in ell_torsion.py in computing torsion groups over number fields, which is rather likely to give wrong answers (though not over Q where pari is used ;)) until this is fixed.  So I will make this a separate ticket marked \"major defect\"!",
+    "body": "Testing has revealed a bug (an embarrassing one in code of mine) in _p_primary_torsion_basis() as exemplified here:\n\n```\n sage: p=10^60+3201\nsage: K=GF(p)\nsage: a=804515977734860566494239770982282063895480484302363715494873\nsage: b=584772221603632866665682322899297141793188252000674256662071\nsage: E=EllipticCurve(K,[0,a,0,b,0])\nsage: E.cardinality().factor()\n2^17 * 13115567671 * 581705246972988608203110387504181554514650287\nsage: E._p_primary_torsion_basis(2)\n\n[[(656068448840236768725810484116830935925716002501543862440466 : 324360550482744921974063628110267202720852104214117741680354 : 1),\n  2],\n [(21059802536298599082171845328893691100757301985761775129713 : 0 : 1), 1]]\n```\nHere the 2-sylow subgroup has structure 2^16 * 2 but E._p_primary_torsion_basis(2) only gives 2<sup>2*2</sup>1.  I know what the problem is and am working out how to fix it.\n\nNB This function is called in ell_torsion.py in computing torsion groups over number fields, which is rather likely to give wrong answers (though not over Q where pari is used ;)) until this is fixed.  So I will make this a separate ticket marked \"major defect\"!",
     "created_at": "2009-01-04T19:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
@@ -155,7 +158,6 @@ sage: E._p_primary_torsion_basis(2)
   2],
  [(21059802536298599082171845328893691100757301985761775129713 : 0 : 1), 1]]
 ```
-
 Here the 2-sylow subgroup has structure 2^16 * 2 but E._p_primary_torsion_basis(2) only gives 2<sup>2*2</sup>1.  I know what the problem is and am working out how to fix it.
 
 NB This function is called in ell_torsion.py in computing torsion groups over number fields, which is rather likely to give wrong answers (though not over Q where pari is used ;)) until this is fixed.  So I will make this a separate ticket marked "major defect"!
@@ -268,7 +270,7 @@ Same as previous without the typo
 archive/issue_comments_037106.json:
 ```json
 {
-    "body": "Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by @JohnCremona created at 2009-01-24 17:46:09\n\nReplying to [comment:8 roed]:\n> Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.\n\nThanks.  I added a patch which corrects the typo, otherwise is identical to the last one.",
+    "body": "Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by @JohnCremona created at 2009-01-24 17:46:09\n\nReplying to [comment:8 roed]:\n> Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.\n\n\nThanks.  I added a patch which corrects the typo, otherwise is identical to the last one.",
     "created_at": "2009-01-24T17:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
@@ -281,6 +283,7 @@ Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket490
 
 Replying to [comment:8 roed]:
 > Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.
+
 
 Thanks.  I added a patch which corrects the typo, otherwise is identical to the last one.
 

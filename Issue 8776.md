@@ -3,7 +3,7 @@
 archive/issues_008776.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman schymans @JohnCremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman schymans @JohnCremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
     "created_at": "2010-04-27T04:38:16Z",
     "labels": [
         "component: notebook",
@@ -42,7 +42,6 @@ Any suggestions welcome!
 
 John Cremona
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8776
 
@@ -111,7 +110,7 @@ Will it be relatively easy to remove the dependency on #9428?  I would imagine s
 archive/issue_comments_080215.json:
 ```json
 {
-    "body": "Maybe it was a stupid thing to try, but the patch does not apply to sage 4.7.1. Here is the output I get:\n\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\ninternal patcher failed\nplease report details to http://mercurial.selenic.com/bts/\nor mercurial@selenic.com\n/home/uname/Programs/sage-test/local/bin/patch: **** Only garbage was found in the patch input.\nabort: patch command failed: exited with status 512\n```\n\n\nIs this a problem with mercurial as suggested in the output, or with the patch under the current sage?\n\nCheers\nStan",
+    "body": "Maybe it was a stupid thing to try, but the patch does not apply to sage 4.7.1. Here is the output I get:\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\ninternal patcher failed\nplease report details to http://mercurial.selenic.com/bts/\nor mercurial@selenic.com\n/home/uname/Programs/sage-test/local/bin/patch: **** Only garbage was found in the patch input.\nabort: patch command failed: exited with status 512\n```\n\nIs this a problem with mercurial as suggested in the output, or with the patch under the current sage?\n\nCheers\nStan",
     "created_at": "2011-10-12T07:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -121,7 +120,6 @@ archive/issue_comments_080215.json:
 ```
 
 Maybe it was a stupid thing to try, but the patch does not apply to sage 4.7.1. Here is the output I get:
-
 
 ```
 sage: hg_sage.apply("/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch")
@@ -135,7 +133,6 @@ or mercurial@selenic.com
 /home/uname/Programs/sage-test/local/bin/patch: **** Only garbage was found in the patch input.
 abort: patch command failed: exited with status 512
 ```
-
 
 Is this a problem with mercurial as suggested in the output, or with the patch under the current sage?
 
@@ -169,7 +166,7 @@ Oh, I see what happened.  You applied the file you found at [http://trac.sagemat
 archive/issue_comments_080217.json:
 ```json
 {
-    "body": "Thanks, Jason!\n\nI did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\nunable to find 'sagenb/notebook/worksheet.py' for patching\n3 out of 3 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\n\n```\n\n/home/uname/Programs/sage-test is my sage directory, in which I created a clone called sage-test. I tried to apply the patch to the clone, which should be in /home/uname/Programs/sage-test/devel/sage-test/..., but there is indeed no worksheet.py.\n\nI found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note the nested sagenb/sagenb/), whereas the directory ~/Programs/sage-test/devel/sage-test/sagenb/notebook/ in my sandbox only contains worksheet.py.rej. There is also no ~/Programs/sage-test/devel/sage-test/sagenb/sagenb/, so the clone does not seem to have the same directory structure as the original. Anyway, even if I try to apply the patch to the main branch, I get the same error message, probably because it is looking in devel/sagenb/notebook/ and not in devel/sagenb/sagenb/notebook/. I'm confused.",
+    "body": "Thanks, Jason!\n\nI did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\nunable to find 'sagenb/notebook/worksheet.py' for patching\n3 out of 3 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\n\n```\n/home/uname/Programs/sage-test is my sage directory, in which I created a clone called sage-test. I tried to apply the patch to the clone, which should be in /home/uname/Programs/sage-test/devel/sage-test/..., but there is indeed no worksheet.py.\n\nI found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note the nested sagenb/sagenb/), whereas the directory ~/Programs/sage-test/devel/sage-test/sagenb/notebook/ in my sandbox only contains worksheet.py.rej. There is also no ~/Programs/sage-test/devel/sage-test/sagenb/sagenb/, so the clone does not seem to have the same directory structure as the original. Anyway, even if I try to apply the patch to the main branch, I get the same error message, probably because it is looking in devel/sagenb/notebook/ and not in devel/sagenb/sagenb/notebook/. I'm confused.",
     "created_at": "2011-10-13T08:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -182,7 +179,6 @@ Thanks, Jason!
 
 I did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?
 
-
 ```
 sage: hg_sage.apply("/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch")
 applying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch
@@ -194,7 +190,6 @@ cd "/home/uname/Programs/sage-test/devel/sage" && hg status
 cd "/home/uname/Programs/sage-test/devel/sage" && hg import   "/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch"
 
 ```
-
 /home/uname/Programs/sage-test is my sage directory, in which I created a clone called sage-test. I tried to apply the patch to the clone, which should be in /home/uname/Programs/sage-test/devel/sage-test/..., but there is indeed no worksheet.py.
 
 I found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note the nested sagenb/sagenb/), whereas the directory ~/Programs/sage-test/devel/sage-test/sagenb/notebook/ in my sandbox only contains worksheet.py.rej. There is also no ~/Programs/sage-test/devel/sage-test/sagenb/sagenb/, so the clone does not seem to have the same directory structure as the original. Anyway, even if I try to apply the patch to the main branch, I get the same error message, probably because it is looking in devel/sagenb/notebook/ and not in devel/sagenb/sagenb/notebook/. I'm confused.
@@ -206,7 +201,7 @@ I found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note
 archive/issue_comments_080218.json:
 ```json
 {
-    "body": "> Thanks, Jason!\n\nThis is kcrisman :)\n\n> I did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\nYes, because you didn't follow my instructions exactly ;-) though those were on the sage-notebook list, not this ticket.\n\n* Log in to a command line Sage.\n* type **exactly** the following:\n\n```\nhg_sagenb.import_patch(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch\")\n```\n\n   and see what happens.  \n\nNote the \"hg_sagenb\" instead of \"hg_sage\".  We moved a lot of stuff outside of the devel/sage/ directory into the devel/sagenb directory a while ago, so this is necessary.  Hopefully this will at least give a more informative message.  Thanks for trying it out - you're on your way to becoming a Sage developer!",
+    "body": "> Thanks, Jason!\n\n\nThis is kcrisman :)\n\n> I did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\n\nYes, because you didn't follow my instructions exactly ;-) though those were on the sage-notebook list, not this ticket.\n\n* Log in to a command line Sage.\n* type **exactly** the following:\n\n```\nhg_sagenb.import_patch(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch\")\n```\n   and see what happens.  \n\nNote the \"hg_sagenb\" instead of \"hg_sage\".  We moved a lot of stuff outside of the devel/sage/ directory into the devel/sagenb directory a while ago, so this is necessary.  Hopefully this will at least give a more informative message.  Thanks for trying it out - you're on your way to becoming a Sage developer!",
     "created_at": "2011-10-13T13:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -217,9 +212,11 @@ archive/issue_comments_080218.json:
 
 > Thanks, Jason!
 
+
 This is kcrisman :)
 
 > I did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?
+
 
 Yes, because you didn't follow my instructions exactly ;-) though those were on the sage-notebook list, not this ticket.
 
@@ -229,7 +226,6 @@ Yes, because you didn't follow my instructions exactly ;-) though those were on 
 ```
 hg_sagenb.import_patch("http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch")
 ```
-
    and see what happens.  
 
 Note the "hg_sagenb" instead of "hg_sage".  We moved a lot of stuff outside of the devel/sage/ directory into the devel/sagenb directory a while ago, so this is necessary.  Hopefully this will at least give a more informative message.  Thanks for trying it out - you're on your way to becoming a Sage developer!
@@ -241,7 +237,7 @@ Note the "hg_sagenb" instead of "hg_sage".  We moved a lot of stuff outside of t
 archive/issue_comments_080219.json:
 ```json
 {
-    "body": "I still don't understand why downloading the raw patch and then patching did not work, whereas using the link did, but thanks for the explicit tip, kcrisman! Here is the output:\n\n\n```\napplying /home/uname/.sage/temp/cname/14067/tmp_0.patch\npatching file sagenb/notebook/worksheet.py\nHunk #3 succeeded at 1986 with fuzz 2 (offset -8 lines).\n\n```\n\nDoes this imply that the patch is applied now? If it does, then it also implies that the patch does not solve the issue of identical snapshots, as they are still all identical if I create a few while making changes to a worksheet.",
+    "body": "I still don't understand why downloading the raw patch and then patching did not work, whereas using the link did, but thanks for the explicit tip, kcrisman! Here is the output:\n\n```\napplying /home/uname/.sage/temp/cname/14067/tmp_0.patch\npatching file sagenb/notebook/worksheet.py\nHunk #3 succeeded at 1986 with fuzz 2 (offset -8 lines).\n\n```\nDoes this imply that the patch is applied now? If it does, then it also implies that the patch does not solve the issue of identical snapshots, as they are still all identical if I create a few while making changes to a worksheet.",
     "created_at": "2011-10-13T14:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -252,14 +248,12 @@ archive/issue_comments_080219.json:
 
 I still don't understand why downloading the raw patch and then patching did not work, whereas using the link did, but thanks for the explicit tip, kcrisman! Here is the output:
 
-
 ```
 applying /home/uname/.sage/temp/cname/14067/tmp_0.patch
 patching file sagenb/notebook/worksheet.py
 Hunk #3 succeeded at 1986 with fuzz 2 (offset -8 lines).
 
 ```
-
 Does this imply that the patch is applied now? If it does, then it also implies that the patch does not solve the issue of identical snapshots, as they are still all identical if I create a few while making changes to a worksheet.
 
 
@@ -269,7 +263,7 @@ Does this imply that the patch is applied now? If it does, then it also implies 
 archive/issue_comments_080220.json:
 ```json
 {
-    "body": "Yes, the patch should be applied.  However, you may still have to build Sage again.  Do the following (this is also in the devel instructions).\n\n* Quit Sage.\n* Instead of calling Sage however you usually do (e.g., \n\n``` \n/path/to/sage\n```\n\n   do \n\n```\n/path/to/sage -br\n```\n\n* Now open the notebook from within Sage again (e.g, with \n\n```\nsage: notebook()\n```\n\n   and see what happens.  I give no guarantees!  But at least it's worth trying.",
+    "body": "Yes, the patch should be applied.  However, you may still have to build Sage again.  Do the following (this is also in the devel instructions).\n\n* Quit Sage.\n* Instead of calling Sage however you usually do (e.g., \n\n``` \n/path/to/sage\n```\n   do \n\n```\n/path/to/sage -br\n```\n* Now open the notebook from within Sage again (e.g, with \n\n```\nsage: notebook()\n```\n   and see what happens.  I give no guarantees!  But at least it's worth trying.",
     "created_at": "2011-10-13T14:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -286,19 +280,16 @@ Yes, the patch should be applied.  However, you may still have to build Sage aga
 ``` 
 /path/to/sage
 ```
-
    do 
 
 ```
 /path/to/sage -br
 ```
-
 * Now open the notebook from within Sage again (e.g, with 
 
 ```
 sage: notebook()
 ```
-
    and see what happens.  I give no guarantees!  But at least it's worth trying.
 
 
@@ -346,7 +337,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080223.json:
 ```json
 {
-    "body": "Replying to [comment:10 schymans]:\n> I already rebuilt it using ./sage -b (as suggested in the devel instructions), but I tried again using ./sage -br. No change, all snapshots are still identical. \n\nOkay, good to know.  I assume that you are referring to snapshots \"created\" *after* the time you applied the patch; obviously, previous snapshots wouldn't magically change!\n\n> Is it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it imply that the patch was not fully applied and lingers somewhere in the queue? Is there a way to check from within sage that the new code is actually used? E.g. by typing \"sagenb-undo??\" or something along these lines?\n\nNo, this is actually what is supposed to happen.   I wouldn't worry about whether the code is used; that's the job of those writing patches :)",
+    "body": "Replying to [comment:10 schymans]:\n> I already rebuilt it using ./sage -b (as suggested in the devel instructions), but I tried again using ./sage -br. No change, all snapshots are still identical. \n\n\nOkay, good to know.  I assume that you are referring to snapshots \"created\" *after* the time you applied the patch; obviously, previous snapshots wouldn't magically change!\n\n> Is it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it imply that the patch was not fully applied and lingers somewhere in the queue? Is there a way to check from within sage that the new code is actually used? E.g. by typing \"sagenb-undo??\" or something along these lines?\n\n\nNo, this is actually what is supposed to happen.   I wouldn't worry about whether the code is used; that's the job of those writing patches :)",
     "created_at": "2011-10-13T15:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
@@ -358,9 +349,11 @@ archive/issue_comments_080223.json:
 Replying to [comment:10 schymans]:
 > I already rebuilt it using ./sage -b (as suggested in the devel instructions), but I tried again using ./sage -br. No change, all snapshots are still identical. 
 
+
 Okay, good to know.  I assume that you are referring to snapshots "created" *after* the time you applied the patch; obviously, previous snapshots wouldn't magically change!
 
 > Is it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it imply that the patch was not fully applied and lingers somewhere in the queue? Is there a way to check from within sage that the new code is actually used? E.g. by typing "sagenb-undo??" or something along these lines?
+
 
 No, this is actually what is supposed to happen.   I wouldn't worry about whether the code is used; that's the job of those writing patches :)
 

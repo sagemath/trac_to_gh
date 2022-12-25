@@ -3,7 +3,7 @@
 archive/issues_007071.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
     "created_at": "2009-09-29T13:27:04Z",
     "labels": [
         "component: build",
@@ -50,7 +50,6 @@ gcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat
 gcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7071
 
@@ -285,7 +284,7 @@ I've switched the old ticket #12055 to invalid to not make Jeroen replace the sp
 archive/issue_comments_058383.json:
 ```json
 {
-    "body": "Replying to [comment:2 mjo]:\n> Can we pass CFLAGS, too? That will allow us to get rid of that horrible `sed`. Might as well fix the \"xyes\" test also\n\nThe \"xyes\" test, as it is called above, is the safest, most portable way to test for a string, as other methods, like the proposed change, can fail under obscure conditions. One might argue they don't fail with modern versions of bash, but IMHO is it worthwhile to write scripts which will always work under all conditions. The original code will always work - the proposed change is less portable. I suggest you take a look at the scripts created by autoconf. You will find they use a similar method to what was in Sage, as it is known to always work. \n\nAs such, I believe the change is a retrograde step. \n\nDave",
+    "body": "Replying to [comment:2 mjo]:\n> Can we pass CFLAGS, too? That will allow us to get rid of that horrible `sed`. Might as well fix the \"xyes\" test also\n\n\nThe \"xyes\" test, as it is called above, is the safest, most portable way to test for a string, as other methods, like the proposed change, can fail under obscure conditions. One might argue they don't fail with modern versions of bash, but IMHO is it worthwhile to write scripts which will always work under all conditions. The original code will always work - the proposed change is less portable. I suggest you take a look at the scripts created by autoconf. You will find they use a similar method to what was in Sage, as it is known to always work. \n\nAs such, I believe the change is a retrograde step. \n\nDave",
     "created_at": "2012-02-28T22:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
@@ -296,6 +295,7 @@ archive/issue_comments_058383.json:
 
 Replying to [comment:2 mjo]:
 > Can we pass CFLAGS, too? That will allow us to get rid of that horrible `sed`. Might as well fix the "xyes" test also
+
 
 The "xyes" test, as it is called above, is the safest, most portable way to test for a string, as other methods, like the proposed change, can fail under obscure conditions. One might argue they don't fail with modern versions of bash, but IMHO is it worthwhile to write scripts which will always work under all conditions. The original code will always work - the proposed change is less portable. I suggest you take a look at the scripts created by autoconf. You will find they use a similar method to what was in Sage, as it is known to always work. 
 

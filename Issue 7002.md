@@ -100,7 +100,7 @@ Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_057781.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> Probably, though I'm not sure how we would do a deprecation, since it is the notebook feature that is deprecated, not something in the Sage process doing the calculations.\n> \n> \"#auto\" used to be the way to do things before Mike Hansen refactored things (in January or February, I believe).  \n> \n> What I am suggesting is just that the documentation be changed to reflect the new way.  The \"#auto\" still works.  I'd just like to get new people using \"%auto\".\n\nOh, if it still works and we aren't getting rid of it, then probably just making the change is okay.  \n\nIncidentally, this doesn't apply cleanly due to someone having added something about HTML above the Shell scripts thingie.  Does this patch depend on something?",
+    "body": "Replying to [comment:3 jason]:\n> Probably, though I'm not sure how we would do a deprecation, since it is the notebook feature that is deprecated, not something in the Sage process doing the calculations.\n> \n> \"#auto\" used to be the way to do things before Mike Hansen refactored things (in January or February, I believe).  \n> \n> What I am suggesting is just that the documentation be changed to reflect the new way.  The \"#auto\" still works.  I'd just like to get new people using \"%auto\".\n\n\nOh, if it still works and we aren't getting rid of it, then probably just making the change is okay.  \n\nIncidentally, this doesn't apply cleanly due to someone having added something about HTML above the Shell scripts thingie.  Does this patch depend on something?",
     "created_at": "2009-09-23T16:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -115,6 +115,7 @@ Replying to [comment:3 jason]:
 > "#auto" used to be the way to do things before Mike Hansen refactored things (in January or February, I believe).  
 > 
 > What I am suggesting is just that the documentation be changed to reflect the new way.  The "#auto" still works.  I'd just like to get new people using "%auto".
+
 
 Oh, if it still works and we aren't getting rid of it, then probably just making the change is okay.  
 
@@ -306,7 +307,7 @@ archive/issue_events_016430.json:
 archive/issue_comments_057790.json:
 ```json
 {
-    "body": "Replying to [comment:11 jason]:\n> I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.\n\nCorrect.  Thanks for checking on this also, Jeroen.\n\nI do remember that there is a different ticket open for \"really\" doing this, isn't there?   Unfortunately I just came back on the grid for the first time in a week so I don't have time to search for it.",
+    "body": "Replying to [comment:11 jason]:\n> I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.\n\n\nCorrect.  Thanks for checking on this also, Jeroen.\n\nI do remember that there is a different ticket open for \"really\" doing this, isn't there?   Unfortunately I just came back on the grid for the first time in a week so I don't have time to search for it.",
     "created_at": "2011-06-01T03:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -317,6 +318,7 @@ archive/issue_comments_057790.json:
 
 Replying to [comment:11 jason]:
 > I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.
+
 
 Correct.  Thanks for checking on this also, Jeroen.
 
@@ -329,7 +331,7 @@ I do remember that there is a different ticket open for "really" doing this, isn
 archive/issue_comments_057791.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> Replying to [comment:11 jason]:\n> > I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.\n> \n> Correct.  Thanks for checking on this also, Jeroen.\n> \n> I do remember that there is a different ticket open for \"really\" doing this, isn't there?   Unfortunately I just came back on the grid for the first time in a week so I don't have time to search for it.\n\nIt's #8956, apparently.  I've requested that one be closed, since the issue is dealt with here.",
+    "body": "Replying to [comment:13 kcrisman]:\n> Replying to [comment:11 jason]:\n> > I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.\n\n> \n> Correct.  Thanks for checking on this also, Jeroen.\n> \n> I do remember that there is a different ticket open for \"really\" doing this, isn't there?   Unfortunately I just came back on the grid for the first time in a week so I don't have time to search for it.\n\n\nIt's #8956, apparently.  I've requested that one be closed, since the issue is dealt with here.",
     "created_at": "2011-06-20T15:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
@@ -341,9 +343,11 @@ archive/issue_comments_057791.json:
 Replying to [comment:13 kcrisman]:
 > Replying to [comment:11 jason]:
 > > I just checked the help in 4.6.2 and it appears that these changes do *not* appear in the help text.
+
 > 
 > Correct.  Thanks for checking on this also, Jeroen.
 > 
 > I do remember that there is a different ticket open for "really" doing this, isn't there?   Unfortunately I just came back on the grid for the first time in a week so I don't have time to search for it.
+
 
 It's #8956, apparently.  I've requested that one be closed, since the issue is dealt with here.

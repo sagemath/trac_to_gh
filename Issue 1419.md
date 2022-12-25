@@ -3,7 +3,7 @@
 archive/issues_001419.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nWhen my laptop is disconnected from the Internet, I can still run a local notebook on https://localhost:8000/ and access it with almost full functionality.  However, the java3d plotting fails.  In the Java console, I get a backtrace:\n\n```\njava.net.ConnectException: Network is unreachable\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)\n\tat java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)\n\tat java.net.Socket.connect(Socket.java:519)\n\tat sun.net.NetworkClient.doConnect(NetworkClient.java:155)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:388)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:500)\n\tat sun.net.www.http.HttpClient.<init>(HttpClient.java:233)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:306)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:318)\n\tat sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:792)\n\tat sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:733)\n\tat sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:658)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.processNativeJar(JNLPAppletLauncher.java:1527)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initResources(JNLPAppletLauncher.java:1342)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initAndStartApplet(JNLPAppletLauncher.java:1246)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.access$000(JNLPAppletLauncher.java:650)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher$1.run(JNLPAppletLauncher.java:899)\nDec 7, 2007 8:11:30 AM org.jdesktop.applet.util.JNLPAppletLauncher displayError\nSEVERE: java.net.ConnectException: Network is unreachable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1419\n\n",
+    "body": "Assignee: @robertwb\n\nWhen my laptop is disconnected from the Internet, I can still run a local notebook on https://localhost:8000/ and access it with almost full functionality.  However, the java3d plotting fails.  In the Java console, I get a backtrace:\n\n```\njava.net.ConnectException: Network is unreachable\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)\n\tat java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)\n\tat java.net.Socket.connect(Socket.java:519)\n\tat sun.net.NetworkClient.doConnect(NetworkClient.java:155)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:388)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:500)\n\tat sun.net.www.http.HttpClient.<init>(HttpClient.java:233)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:306)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:318)\n\tat sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:792)\n\tat sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:733)\n\tat sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:658)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.processNativeJar(JNLPAppletLauncher.java:1527)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initResources(JNLPAppletLauncher.java:1342)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initAndStartApplet(JNLPAppletLauncher.java:1246)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.access$000(JNLPAppletLauncher.java:650)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher$1.run(JNLPAppletLauncher.java:899)\nDec 7, 2007 8:11:30 AM org.jdesktop.applet.util.JNLPAppletLauncher displayError\nSEVERE: java.net.ConnectException: Network is unreachable\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1419\n\n",
     "created_at": "2007-12-07T16:31:39Z",
     "labels": [
         "component: packages: standard",
@@ -45,7 +45,6 @@ Dec 7, 2007 8:11:30 AM org.jdesktop.applet.util.JNLPAppletLauncher displayError
 SEVERE: java.net.ConnectException: Network is unreachable
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1419
 
 
@@ -85,7 +84,7 @@ If I'm in the middle of a notebook session, and then disconnect from the Interne
 archive/issue_comments_009132.json:
 ```json
 {
-    "body": "\n```\n13:47 < wstein-2813> re: 1419 -- that java3d plotting is completely different than jmol.\n13:47 < wstein-2813> I think it's deprecated, though robertwb might think differently.\n```\n",
+    "body": "```\n13:47 < wstein-2813> re: 1419 -- that java3d plotting is completely different than jmol.\n13:47 < wstein-2813> I think it's deprecated, though robertwb might think differently.\n```",
     "created_at": "2008-04-05T20:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1419",
     "type": "issue_comment",
@@ -94,12 +93,10 @@ archive/issue_comments_009132.json:
 }
 ```
 
-
 ```
 13:47 < wstein-2813> re: 1419 -- that java3d plotting is completely different than jmol.
 13:47 < wstein-2813> I think it's deprecated, though robertwb might think differently.
 ```
-
 
 
 

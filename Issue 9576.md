@@ -3,7 +3,7 @@
 archive/issues_009576.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nKeywords: operator & for submodule intersection\n\nThere is already the operatror & for Sets intersections : S1 & S2.\n\nThere is also the operator + for submodules sum : F+G.\n\nI propose to expand the operator & over submodules and subspaces,\nand add theses lines in free_modules.py\n\n\n```\n## allow the \"intersection\" operator & for submodules.\n \n     def __and__ (self, other) : return self.intersection (other)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9576\n\n",
+    "body": "Assignee: jason, was\n\nKeywords: operator & for submodule intersection\n\nThere is already the operatror & for Sets intersections : S1 & S2.\n\nThere is also the operator + for submodules sum : F+G.\n\nI propose to expand the operator & over submodules and subspaces,\nand add theses lines in free_modules.py\n\n```\n## allow the \"intersection\" operator & for submodules.\n \n     def __and__ (self, other) : return self.intersection (other)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9576\n\n",
     "created_at": "2010-07-22T07:45:59Z",
     "labels": [
         "component: linear algebra",
@@ -27,13 +27,11 @@ There is also the operator + for submodules sum : F+G.
 I propose to expand the operator & over submodules and subspaces,
 and add theses lines in free_modules.py
 
-
 ```
 ## allow the "intersection" operator & for submodules.
  
      def __and__ (self, other) : return self.intersection (other)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9576
 

@@ -51,7 +51,7 @@ Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket47
 archive/issue_comments_035910.json:
 ```json
 {
-    "body": "One issue is that in the patch, it should actually be \n\n\n```\n            sage: type(c)\n            <type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>\n```\n\n\nAlso, I'm curious as to where the big speedup comes from?  For example,\n\n\n```\nsage: %time a*a\nCPU times: user 3.13 s, sys: 0.00 s, total: 3.13 s\nWall time: 3.25 s\n100 x 100 sparse matrix over Finite Field of size 10007\nsage: %time a._matrix_times_matrix_dense(a)\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.17 s\n100 x 100 dense matrix over Finite Field of size 10007\n```\n\n\nIs it because you have a faster, more specialized underlying data structure?  Wouldn't it make more sense to add an optimized _mul_ method to matrix_modn_sparse and then have it do a normal (naive) conversion?",
+    "body": "One issue is that in the patch, it should actually be \n\n```\n            sage: type(c)\n            <type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>\n```\n\nAlso, I'm curious as to where the big speedup comes from?  For example,\n\n```\nsage: %time a*a\nCPU times: user 3.13 s, sys: 0.00 s, total: 3.13 s\nWall time: 3.25 s\n100 x 100 sparse matrix over Finite Field of size 10007\nsage: %time a._matrix_times_matrix_dense(a)\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.17 s\n100 x 100 dense matrix over Finite Field of size 10007\n```\n\nIs it because you have a faster, more specialized underlying data structure?  Wouldn't it make more sense to add an optimized _mul_ method to matrix_modn_sparse and then have it do a normal (naive) conversion?",
     "created_at": "2008-12-11T08:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -62,15 +62,12 @@ archive/issue_comments_035910.json:
 
 One issue is that in the patch, it should actually be 
 
-
 ```
             sage: type(c)
             <type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>
 ```
 
-
 Also, I'm curious as to where the big speedup comes from?  For example,
-
 
 ```
 sage: %time a*a
@@ -82,7 +79,6 @@ CPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s
 Wall time: 0.17 s
 100 x 100 dense matrix over Finite Field of size 10007
 ```
-
 
 Is it because you have a faster, more specialized underlying data structure?  Wouldn't it make more sense to add an optimized _mul_ method to matrix_modn_sparse and then have it do a normal (naive) conversion?
 
@@ -111,7 +107,7 @@ This code wasn't ready for review yet -- William posted an initial patch after q
 archive/issue_comments_035912.json:
 ```json
 {
-    "body": "Replying to [comment:5 craigcitro]:\n> This code wasn't ready for review yet -- William posted an initial patch after quickly writing some code in his office, and I'm going to clean it up and implement a few more things and post a patch tomorrow ...\n\nI saw the patch, changed the subject, but did ping William about whether this code was supposed to be reviewed yet and didn't get an answer, so my bad :(\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 craigcitro]:\n> This code wasn't ready for review yet -- William posted an initial patch after quickly writing some code in his office, and I'm going to clean it up and implement a few more things and post a patch tomorrow ...\n\n\nI saw the patch, changed the subject, but did ping William about whether this code was supposed to be reviewed yet and didn't get an answer, so my bad :(\n\nCheers,\n\nMichael",
     "created_at": "2008-12-11T09:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -122,6 +118,7 @@ archive/issue_comments_035912.json:
 
 Replying to [comment:5 craigcitro]:
 > This code wasn't ready for review yet -- William posted an initial patch after quickly writing some code in his office, and I'm going to clean it up and implement a few more things and post a patch tomorrow ...
+
 
 I saw the patch, changed the subject, but did ping William about whether this code was supposed to be reviewed yet and didn't get an answer, so my bad :(
 
@@ -136,7 +133,7 @@ Michael
 archive/issue_comments_035913.json:
 ```json
 {
-    "body": "> Is it because you have a faster, more specialized underlying data structure? \n> Wouldn't  it make more sense to add an optimized _mul_ method to\n> matrix_modn_sparse and then have it do a normal (naive) conversion?\n\nDefinitely *not*.  Much of the time would likely be spent with setting and inserting entries in the sparse output, which is an insanely expensive datastructure compared to the super-fast dense data structure. \n\nThat said, obviously a fast sparse*sparse = sparse should also be implemented, which would just be an easy cut and paste from Matrix_rational_sparse.\n\n -- william",
+    "body": "> Is it because you have a faster, more specialized underlying data structure? \n> Wouldn't  it make more sense to add an optimized _mul_ method to\n> matrix_modn_sparse and then have it do a normal (naive) conversion?\n\n\nDefinitely *not*.  Much of the time would likely be spent with setting and inserting entries in the sparse output, which is an insanely expensive datastructure compared to the super-fast dense data structure. \n\nThat said, obviously a fast sparse*sparse = sparse should also be implemented, which would just be an easy cut and paste from Matrix_rational_sparse.\n\n -- william",
     "created_at": "2008-12-12T00:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -148,6 +145,7 @@ archive/issue_comments_035913.json:
 > Is it because you have a faster, more specialized underlying data structure? 
 > Wouldn't  it make more sense to add an optimized _mul_ method to
 > matrix_modn_sparse and then have it do a normal (naive) conversion?
+
 
 Definitely *not*.  Much of the time would likely be spent with setting and inserting entries in the sparse output, which is an insanely expensive datastructure compared to the super-fast dense data structure. 
 
@@ -203,7 +201,7 @@ Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket47
 archive/issue_comments_035916.json:
 ```json
 {
-    "body": "As Michael pointed out, it wouldn't hurt to have some comparison code.\n\nBEFORE:\n\n```\nsage: m = random_matrix(GF(10007), 100, 100, sparse=True)\n\nsage: %time m*m\nCPU times: user 3.36 s, sys: 0.03 s, total: 3.39 s\nWall time: 3.42 s\n100 x 100 sparse matrix over Finite Field of size 10007\n```\n\n\nAFTER:\n\n```\nsage: m = random_matrix(GF(10007), 100, 100, sparse=True)\n\nsage: %time m*m\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.09 s\n100 x 100 sparse matrix over Finite Field of size 10007\n```\n",
+    "body": "As Michael pointed out, it wouldn't hurt to have some comparison code.\n\nBEFORE:\n\n```\nsage: m = random_matrix(GF(10007), 100, 100, sparse=True)\n\nsage: %time m*m\nCPU times: user 3.36 s, sys: 0.03 s, total: 3.39 s\nWall time: 3.42 s\n100 x 100 sparse matrix over Finite Field of size 10007\n```\n\nAFTER:\n\n```\nsage: m = random_matrix(GF(10007), 100, 100, sparse=True)\n\nsage: %time m*m\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.09 s\n100 x 100 sparse matrix over Finite Field of size 10007\n```",
     "created_at": "2009-01-10T12:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -225,7 +223,6 @@ Wall time: 3.42 s
 100 x 100 sparse matrix over Finite Field of size 10007
 ```
 
-
 AFTER:
 
 ```
@@ -236,7 +233,6 @@ CPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s
 Wall time: 0.09 s
 100 x 100 sparse matrix over Finite Field of size 10007
 ```
-
 
 
 
@@ -263,7 +259,7 @@ Changing priority from major to critical.
 archive/issue_comments_035918.json:
 ```json
 {
-    "body": "This patch set causes one doctest failure:\n\n```\nsage -t  \"devel/sage/sage/modular/modsym/ambient.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.2.4.alpha0/devel/sage/sage/modular/modsym/ambient.py\", line 20:\n    sage: M.T(2).matrix().fcp('x')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1, in <module>\n        M.T(Integer(2)).matrix().fcp('x')###line 20:\n    sage: M.T(2).matrix().fcp('x')\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/hecke_operator.py\", line 459, in matrix\n        self.__matrix = self.parent().hecke_matrix(self.__n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py\", line 201, in hecke_matrix\n        return self.__M.hecke_matrix(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 917, in hecke_matrix\n        T = self._compute_hecke_matrix(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 117, in _compute_hecke_matrix\n        return self._compute_hecke_matrix_prime(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 653, in _compute_hecke_matrix_prime\n        Tp = W._matrix_times_matrix_dense(R)\n      File \"matrix_modn_sparse.pyx\", line 370, in sage.matrix.matrix_modn_sparse.Matrix_modn_sparse._matrix_times_matrix_dense (sage/matrix/matrix_modn_sparse.c:6236)\n    TypeError: Cannot convert sage.matrix.matrix_mod2_dense.Matrix_mod2_dense to sage.matrix.matrix_modn_dense.Matrix_modn_dense\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch set causes one doctest failure:\n\n```\nsage -t  \"devel/sage/sage/modular/modsym/ambient.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.2.4.alpha0/devel/sage/sage/modular/modsym/ambient.py\", line 20:\n    sage: M.T(2).matrix().fcp('x')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1, in <module>\n        M.T(Integer(2)).matrix().fcp('x')###line 20:\n    sage: M.T(2).matrix().fcp('x')\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/hecke_operator.py\", line 459, in matrix\n        self.__matrix = self.parent().hecke_matrix(self.__n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py\", line 201, in hecke_matrix\n        return self.__M.hecke_matrix(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 917, in hecke_matrix\n        T = self._compute_hecke_matrix(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 117, in _compute_hecke_matrix\n        return self._compute_hecke_matrix_prime(n)\n      File \"/scratch/mabshoff/sage-3.2.4.alpha0/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 653, in _compute_hecke_matrix_prime\n        Tp = W._matrix_times_matrix_dense(R)\n      File \"matrix_modn_sparse.pyx\", line 370, in sage.matrix.matrix_modn_sparse.Matrix_modn_sparse._matrix_times_matrix_dense (sage/matrix/matrix_modn_sparse.c:6236)\n    TypeError: Cannot convert sage.matrix.matrix_mod2_dense.Matrix_mod2_dense to sage.matrix.matrix_modn_dense.Matrix_modn_dense\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-10T13:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -304,7 +300,6 @@ Exception raised:
     TypeError: Cannot convert sage.matrix.matrix_mod2_dense.Matrix_mod2_dense to sage.matrix.matrix_modn_dense.Matrix_modn_dense
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -353,7 +348,7 @@ Ok, new patch should fix that. The problem was fairly straightforward: we didn't
 archive/issue_comments_035921.json:
 ```json
 {
-    "body": "i applied all three patches to a clean sage-3.2.3 on sage.math and doctested matrix and got:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/matrix/matrix_modn_sparse.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 111.4 seconds\n```\n",
+    "body": "i applied all three patches to a clean sage-3.2.3 on sage.math and doctested matrix and got:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/matrix/matrix_modn_sparse.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 111.4 seconds\n```",
     "created_at": "2009-01-11T20:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
@@ -372,7 +367,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 111.4 seconds
 ```
-
 
 
 

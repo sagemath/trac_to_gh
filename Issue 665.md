@@ -119,7 +119,7 @@ Resolution: fixed
 archive/issue_comments_003440.json:
 ```json
 {
-    "body": "Start the SAGE console and type\n\n```\n  sage: notebook.setup()\n```\n",
+    "body": "Start the SAGE console and type\n\n```\n  sage: notebook.setup()\n```",
     "created_at": "2007-09-21T00:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/665",
     "type": "issue_comment",
@@ -133,4 +133,3 @@ Start the SAGE console and type
 ```
   sage: notebook.setup()
 ```
-

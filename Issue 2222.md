@@ -3,7 +3,7 @@
 archive/issues_002222.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage -t  const.tex                                          **********************************************************************\nFile \"const.py\", line 4626:\n    : bessel_K(3,2,100)\nExpected:\n    0.64738539094863415315923557097\nGot:\n    0.647385390948634\n```\n\n\nNote that the later 100 input is totally ignored.  I think this is due\nto some use of scipy or something for some special functions by David\nJoyner recently??\n\nIssue created by migration from https://trac.sagemath.org/ticket/2222\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage -t  const.tex                                          **********************************************************************\nFile \"const.py\", line 4626:\n    : bessel_K(3,2,100)\nExpected:\n    0.64738539094863415315923557097\nGot:\n    0.647385390948634\n```\n\nNote that the later 100 input is totally ignored.  I think this is due\nto some use of scipy or something for some special functions by David\nJoyner recently??\n\nIssue created by migration from https://trac.sagemath.org/ticket/2222\n\n",
     "created_at": "2008-02-20T06:46:29Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_002222.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage -t  const.tex                                          **********************************************************************
 File "const.py", line 4626:
@@ -29,7 +28,6 @@ Expected:
 Got:
     0.647385390948634
 ```
-
 
 Note that the later 100 input is totally ignored.  I think this is due
 to some use of scipy or something for some special functions by David

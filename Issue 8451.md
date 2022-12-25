@@ -195,7 +195,7 @@ Are these the only cases that would be incorrect with the code as it is now?
 archive/issue_comments_075905.json:
 ```json
 {
-    "body": "Thanks a lot for looking at it.\n\n> For reducible primes, not sure whether you need is_prime(p) -- doesn't isogeny_class only list prime degree isogenies?\n\nThat may be redudant, but it does not harm.\n\n> Can we get rid of the \"irregardless\" in is_surjective? I hate that non-word!\n\nAgree.\n \n> Replace \"Borel\" with \"Borel subgroup\" in image_type\n\nAgreed, too.\n\n> I'm not entirely confident enough to give this a positive review on my own, maybe someone else could look it over too?\n\nSure, any candidate in mind ?\n\n> Also, a question: if I run over all curves where the code in this ticket gives one of \n> \n> The image could not be determined, it is likely that the image in PGL_2 is A_4\n> \n> The image could not be determined, it is likely that the image in PGL_2 is S_4\n> \n> or \n> \n> The image could not be determined, it is likely that the image in PGL_2 is A_5\n> \n> Are these the only cases that would be incorrect with the code as it is now?\n\nYes, I believe so. It is not a frequent error. I was just puzzled why the original implementation missed this. Had I not rewritten it, I guess no one would have ever found out.\n\nI hope I have time to add a little patch for the above issues by tomorrow.\n\nChris.",
+    "body": "Thanks a lot for looking at it.\n\n> For reducible primes, not sure whether you need is_prime(p) -- doesn't isogeny_class only list prime degree isogenies?\n\n\nThat may be redudant, but it does not harm.\n\n> Can we get rid of the \"irregardless\" in is_surjective? I hate that non-word!\n\n\nAgree.\n \n> Replace \"Borel\" with \"Borel subgroup\" in image_type\n\n\nAgreed, too.\n\n> I'm not entirely confident enough to give this a positive review on my own, maybe someone else could look it over too?\n\n\nSure, any candidate in mind ?\n\n> Also, a question: if I run over all curves where the code in this ticket gives one of \n> \n> The image could not be determined, it is likely that the image in PGL_2 is A_4\n> \n> The image could not be determined, it is likely that the image in PGL_2 is S_4\n> \n> or \n> \n> The image could not be determined, it is likely that the image in PGL_2 is A_5\n> \n> Are these the only cases that would be incorrect with the code as it is now?\n\n\nYes, I believe so. It is not a frequent error. I was just puzzled why the original implementation missed this. Had I not rewritten it, I guess no one would have ever found out.\n\nI hope I have time to add a little patch for the above issues by tomorrow.\n\nChris.",
     "created_at": "2010-04-12T18:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -208,17 +208,21 @@ Thanks a lot for looking at it.
 
 > For reducible primes, not sure whether you need is_prime(p) -- doesn't isogeny_class only list prime degree isogenies?
 
+
 That may be redudant, but it does not harm.
 
 > Can we get rid of the "irregardless" in is_surjective? I hate that non-word!
+
 
 Agree.
  
 > Replace "Borel" with "Borel subgroup" in image_type
 
+
 Agreed, too.
 
 > I'm not entirely confident enough to give this a positive review on my own, maybe someone else could look it over too?
+
 
 Sure, any candidate in mind ?
 
@@ -233,6 +237,7 @@ Sure, any candidate in mind ?
 > The image could not be determined, it is likely that the image in PGL_2 is A_5
 > 
 > Are these the only cases that would be incorrect with the code as it is now?
+
 
 Yes, I believe so. It is not a frequent error. I was just puzzled why the original implementation missed this. Had I not rewritten it, I guess no one would have ever found out.
 
@@ -301,7 +306,7 @@ scond patch to be applied after the first
 archive/issue_comments_075908.json:
 ```json
 {
-    "body": "I applied this to sage-4.4.alpha0 and get:\n\n```\nsage: rho = EllipticCurve('225a').galois_representation() \n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/<ipython console> in <module>()\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in galois_representation(self)\n   4625             return self.__rho\n   4626         except AttributeError:\n-> 4627             from gal_reps import GaloisRepresentation\n   4628             self.__rho = GaloisRepresentation(self)\n   4629         return self.__rho\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/gal_reps.py in <module>()\n    133 import sage.misc.misc as misc\n    134 import sage.rings.all as rings\n--> 135 from sage.rings.finite_field import GF\n    136 from sage.rings.all import RealField\n    137 from math import sqrt\n\nImportError: No module named finite_field\nsage: \n```\n\nThat seems to be a conflict, because there is no finite_field module in sage.rings anymore.    There is:\n\n```\ndevel/sage/sage/rings/finite_rings/\n```\n\n\nSo this patch needs to be rebased for 4.4 to have finite_field changed to finite_rings... or much better -- *only* use sage.rings.all, which is massively better.   I.e., just do:\n\n\n```\ndiff -r 35160a4d594a sage/schemes/elliptic_curves/gal_reps.py\n--- a/sage/schemes/elliptic_curves/gal_reps.py  Tue Mar 30 15:26:20 2010 -0700\n+++ b/sage/schemes/elliptic_curves/gal_reps.py  Tue Apr 20 15:04:12 2010 -0700\n@@ -132,8 +132,7 @@\n import sage.rings.arith as arith\n import sage.misc.misc as misc\n import sage.rings.all as rings\n-from sage.rings.finite_field import GF\n-from sage.rings.all import RealField\n+from sage.rings.all import RealField, GF\n```\n\nand then everything seems fine.  This is trac_8541_3.patch.",
+    "body": "I applied this to sage-4.4.alpha0 and get:\n\n```\nsage: rho = EllipticCurve('225a').galois_representation() \n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/<ipython console> in <module>()\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in galois_representation(self)\n   4625             return self.__rho\n   4626         except AttributeError:\n-> 4627             from gal_reps import GaloisRepresentation\n   4628             self.__rho = GaloisRepresentation(self)\n   4629         return self.__rho\n\n/mnt/usb1/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/gal_reps.py in <module>()\n    133 import sage.misc.misc as misc\n    134 import sage.rings.all as rings\n--> 135 from sage.rings.finite_field import GF\n    136 from sage.rings.all import RealField\n    137 from math import sqrt\n\nImportError: No module named finite_field\nsage: \n```\nThat seems to be a conflict, because there is no finite_field module in sage.rings anymore.    There is:\n\n```\ndevel/sage/sage/rings/finite_rings/\n```\n\nSo this patch needs to be rebased for 4.4 to have finite_field changed to finite_rings... or much better -- *only* use sage.rings.all, which is massively better.   I.e., just do:\n\n```\ndiff -r 35160a4d594a sage/schemes/elliptic_curves/gal_reps.py\n--- a/sage/schemes/elliptic_curves/gal_reps.py  Tue Mar 30 15:26:20 2010 -0700\n+++ b/sage/schemes/elliptic_curves/gal_reps.py  Tue Apr 20 15:04:12 2010 -0700\n@@ -132,8 +132,7 @@\n import sage.rings.arith as arith\n import sage.misc.misc as misc\n import sage.rings.all as rings\n-from sage.rings.finite_field import GF\n-from sage.rings.all import RealField\n+from sage.rings.all import RealField, GF\n```\nand then everything seems fine.  This is trac_8541_3.patch.",
     "created_at": "2010-04-20T22:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -336,16 +341,13 @@ ImportError                               Traceback (most recent call last)
 ImportError: No module named finite_field
 sage: 
 ```
-
 That seems to be a conflict, because there is no finite_field module in sage.rings anymore.    There is:
 
 ```
 devel/sage/sage/rings/finite_rings/
 ```
 
-
 So this patch needs to be rebased for 4.4 to have finite_field changed to finite_rings... or much better -- *only* use sage.rings.all, which is massively better.   I.e., just do:
-
 
 ```
 diff -r 35160a4d594a sage/schemes/elliptic_curves/gal_reps.py
@@ -359,7 +361,6 @@ diff -r 35160a4d594a sage/schemes/elliptic_curves/gal_reps.py
 -from sage.rings.all import RealField
 +from sage.rings.all import RealField, GF
 ```
-
 and then everything seems fine.  This is trac_8541_3.patch.
 
 
@@ -387,7 +388,7 @@ Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/t
 archive/issue_comments_075910.json:
 ```json
 {
-    "body": "\n```\n[the point of this is to help get this reviewed promptly]\n\nHi Drew,\n\nIf you look in /scratch/drew you'll find a Sage install I created for you:\n\ndrew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ pwd\n/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux\n\nIt has both #8617, your code, and http://trac.sagemath.org/sage_trac/ticket/8451 which is the patch you're refereeing. \n\nThe file test.out in that directory will soon contain the output of running the full sage testsuite with those patches applied:\n\ndrew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ ./sage -tp 20 devel/sage/sage/ > test.out&\n[1] 12438\n\n\nHere's using some code:\n\nsage: rho = EllipticCurve('225a').galois_representation() \nsage: rho.reducible_primes()\n[3]\nsage: rho.is_crystalline(3)\nFalse\nsage: rho.is_crystalline(5)\nFalse\n\nand your code:\n\nsage: E = EllipticCurve('225a')\nsage: E.short_weierstrass_model()\nElliptic Curve defined by y^2 = x^3 + 80 over Rational Field\nsage: galrep = sage.libs.galrep.all.GalRep()\nsage: galrep.non_surjective_primes(0,80)\n[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\n\nAnother example:\n\nsage: E = EllipticCurve('11a')\nsage: E = E.short_weierstrass_model(); E\nElliptic Curve defined by y^2 = x^3 - 13392*x - 1080432 over Rational Field\nsage: galrep.non_surjective_primes(ZZ(E.a4()), ZZ(E.a6()))\n[5]\nsage: rho = E.galois_representation() \nsage: rho.non_surjective()\n[5]\n```\n",
+    "body": "```\n[the point of this is to help get this reviewed promptly]\n\nHi Drew,\n\nIf you look in /scratch/drew you'll find a Sage install I created for you:\n\ndrew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ pwd\n/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux\n\nIt has both #8617, your code, and http://trac.sagemath.org/sage_trac/ticket/8451 which is the patch you're refereeing. \n\nThe file test.out in that directory will soon contain the output of running the full sage testsuite with those patches applied:\n\ndrew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ ./sage -tp 20 devel/sage/sage/ > test.out&\n[1] 12438\n\n\nHere's using some code:\n\nsage: rho = EllipticCurve('225a').galois_representation() \nsage: rho.reducible_primes()\n[3]\nsage: rho.is_crystalline(3)\nFalse\nsage: rho.is_crystalline(5)\nFalse\n\nand your code:\n\nsage: E = EllipticCurve('225a')\nsage: E.short_weierstrass_model()\nElliptic Curve defined by y^2 = x^3 + 80 over Rational Field\nsage: galrep = sage.libs.galrep.all.GalRep()\nsage: galrep.non_surjective_primes(0,80)\n[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\n\nAnother example:\n\nsage: E = EllipticCurve('11a')\nsage: E = E.short_weierstrass_model(); E\nElliptic Curve defined by y^2 = x^3 - 13392*x - 1080432 over Rational Field\nsage: galrep.non_surjective_primes(ZZ(E.a4()), ZZ(E.a6()))\n[5]\nsage: rho = E.galois_representation() \nsage: rho.non_surjective()\n[5]\n```",
     "created_at": "2010-04-20T22:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
@@ -395,7 +396,6 @@ archive/issue_comments_075910.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 [the point of this is to help get this reviewed promptly]
@@ -445,7 +445,6 @@ sage: rho = E.galois_representation()
 sage: rho.non_surjective()
 [5]
 ```
-
 
 
 

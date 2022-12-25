@@ -3,7 +3,7 @@
 archive/issues_004365.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFrom Kevin Buzzard:\n\n```\nIf I type\n\nlicense()\n\nfrom a window then I get a huge text file. About 12 lines down it says\n\n\"...However, SAGE not have any link to jsmath\"\n\nwhich is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4365\n\n",
+    "body": "Assignee: cwitty\n\nFrom Kevin Buzzard:\n\n```\nIf I type\n\nlicense()\n\nfrom a window then I get a huge text file. About 12 lines down it says\n\n\"...However, SAGE not have any link to jsmath\"\n\nwhich is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4365\n\n",
     "created_at": "2008-10-24T19:13:46Z",
     "labels": [
         "component: misc",
@@ -33,7 +33,6 @@ from a window then I get a huge text file. About 12 lines down it says
 which is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4365
 
 
@@ -45,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4365
 archive/issue_comments_032004.json:
 ```json
 {
-    "body": "Replying to [ticket:4365 was]:\n> From Kevin Buzzard:\n> If I type\n> \n> license()\n> \n> from a window then I get a huge text file. About 12 lines down it says\n> \n> \"...However, SAGE not have any link to jsmath\"\n> \n> which is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.\n\n\nI think the said typo has been fixed in #1389 by the patch **copying.patch**. All patches attached with that ticket have received positive review. As to whether every patch from #1389 has been merged, I don't know.",
+    "body": "Replying to [ticket:4365 was]:\n> From Kevin Buzzard:\n> If I type\n> \n> license()\n> \n> from a window then I get a huge text file. About 12 lines down it says\n> \n> \"...However, SAGE not have any link to jsmath\"\n> \n> which is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.\n\n\n\nI think the said typo has been fixed in #1389 by the patch **copying.patch**. All patches attached with that ticket have received positive review. As to whether every patch from #1389 has been merged, I don't know.",
     "created_at": "2008-10-25T02:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4365",
     "type": "issue_comment",
@@ -65,6 +64,7 @@ Replying to [ticket:4365 was]:
 > "...However, SAGE not have any link to jsmath"
 > 
 > which is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.
+
 
 
 I think the said typo has been fixed in #1389 by the patch **copying.patch**. All patches attached with that ticket have received positive review. As to whether every patch from #1389 has been merged, I don't know.

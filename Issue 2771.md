@@ -52,7 +52,7 @@ Attachment [pbori_54.patch](tarball://root/attachments/some-uuid/ticket2771/pbor
 archive/issue_comments_019007.json:
 ```json
 {
-    "body": "Hi malb,\n\nI skimmed the code, so no final review yet. But I noticed that you use\n\n```\nsage: from polybori import BooleSet \n```\n\nfor imports. This will cause trouble once  #2746, i.e. \"Support for writing test-related files in SAGE_TESTDIR\", is applied. \n\nCheers,\n\nMichael",
+    "body": "Hi malb,\n\nI skimmed the code, so no final review yet. But I noticed that you use\n\n```\nsage: from polybori import BooleSet \n```\nfor imports. This will cause trouble once  #2746, i.e. \"Support for writing test-related files in SAGE_TESTDIR\", is applied. \n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T15:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2771",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ I skimmed the code, so no final review yet. But I noticed that you use
 ```
 sage: from polybori import BooleSet 
 ```
-
 for imports. This will cause trouble once  #2746, i.e. "Support for writing test-related files in SAGE_TESTDIR", is applied. 
 
 Cheers,
@@ -82,7 +81,7 @@ Michael
 archive/issue_comments_019008.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> Hi malb,\n> \n> I skimmed the code, so no final review yet. But I noticed that you use\n> {{{\n> sage: from polybori import BooleSet \n> }}}\n> for imports. This will cause trouble once  #2746, i.e. \"Support for writing test-related files in SAGE_TESTDIR\", is applied. \n\nIt won't. There is `sage.rings.polynomial.pbori` and there is `polybori`. `polybori` is indeed at the global top-level.\n\n\n```\nmalb@XXX:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: polybori\nsage: from polybori import *\nsage:\n```\n",
+    "body": "Replying to [comment:1 mabshoff]:\n> Hi malb,\n> \n> I skimmed the code, so no final review yet. But I noticed that you use\n> \n> ```\n> sage: from polybori import BooleSet \n> ```\n> for imports. This will cause trouble once  #2746, i.e. \"Support for writing test-related files in SAGE_TESTDIR\", is applied. \n\n\nIt won't. There is `sage.rings.polynomial.pbori` and there is `polybori`. `polybori` is indeed at the global top-level.\n\n```\nmalb@XXX:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: polybori\nsage: from polybori import *\nsage:\n```",
     "created_at": "2008-04-02T15:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2771",
     "type": "issue_comment",
@@ -95,13 +94,14 @@ Replying to [comment:1 mabshoff]:
 > Hi malb,
 > 
 > I skimmed the code, so no final review yet. But I noticed that you use
-> {{{
+> 
+> ```
 > sage: from polybori import BooleSet 
-> }}}
+> ```
 > for imports. This will cause trouble once  #2746, i.e. "Support for writing test-related files in SAGE_TESTDIR", is applied. 
 
-It won't. There is `sage.rings.polynomial.pbori` and there is `polybori`. `polybori` is indeed at the global top-level.
 
+It won't. There is `sage.rings.polynomial.pbori` and there is `polybori`. `polybori` is indeed at the global top-level.
 
 ```
 malb@XXX:~$ sage
@@ -111,7 +111,6 @@ Loading SAGE library. Current Mercurial branch is: polybori
 sage: from polybori import *
 sage:
 ```
-
 
 
 

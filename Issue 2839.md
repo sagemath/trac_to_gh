@@ -122,7 +122,7 @@ Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.pat
 archive/issue_comments_019435.json:
 ```json
 {
-    "body": "The patch also includes a speed up for change of bases over QQ.\n\nBefore:\n\n```\nsage: time s(p(s([17,11])))\nCPU times: user 1252.31 s, sys: 8.24 s, total: 1260.55 s\nWall time: 1259.90\ns[17, 11]\nsage: time a = s([10,10]).itensor(s([10,10]))\nCPU times: user 30.87 s, sys: 0.21 s, total: 31.09 s\nWall time: 31.09\n```\n\n\nAfter:\n\n```\nsage: time s(p(s([17,11])))\nCPU times: user 257.11 s, sys: 0.03 s, total: 257.14 s\nWall time: 257.15\ns[17, 11]\nsage: time a = s([10,10]).itensor(s([10,10]))\nCPU times: user 3.60 s, sys: 0.00 s, total: 3.60 s\nWall time: 3.60\n```\n",
+    "body": "The patch also includes a speed up for change of bases over QQ.\n\nBefore:\n\n```\nsage: time s(p(s([17,11])))\nCPU times: user 1252.31 s, sys: 8.24 s, total: 1260.55 s\nWall time: 1259.90\ns[17, 11]\nsage: time a = s([10,10]).itensor(s([10,10]))\nCPU times: user 30.87 s, sys: 0.21 s, total: 31.09 s\nWall time: 31.09\n```\n\nAfter:\n\n```\nsage: time s(p(s([17,11])))\nCPU times: user 257.11 s, sys: 0.03 s, total: 257.14 s\nWall time: 257.15\ns[17, 11]\nsage: time a = s([10,10]).itensor(s([10,10]))\nCPU times: user 3.60 s, sys: 0.00 s, total: 3.60 s\nWall time: 3.60\n```",
     "created_at": "2008-04-07T07:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ CPU times: user 30.87 s, sys: 0.21 s, total: 31.09 s
 Wall time: 31.09
 ```
 
-
 After:
 
 ```
@@ -157,7 +156,6 @@ sage: time a = s([10,10]).itensor(s([10,10]))
 CPU times: user 3.60 s, sys: 0.00 s, total: 3.60 s
 Wall time: 3.60
 ```
-
 
 
 

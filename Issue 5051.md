@@ -3,7 +3,7 @@
 archive/issues_005051.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFor example, a clean build of sage-3.3.alpha0 or sage-3.2 on sage.math:\n\n\n```\nwstein@sage:/space/wstein/build/sage-3.3.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 1/0\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1507, 0))\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/16649/_scratch_wstein_sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)()\n   1180 \n   1181 \n-> 1182 \n   1183 \n   1184 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9516)()\n   1175 \n   1176 \n-> 1177 \n   1178 \n   1179 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/rings/integer_ring.so in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)()\n    228 \n    229 \n--> 230 \n    231 \n    232 \n\nZeroDivisionError: Rational division by zero\n```\n\n\nIn the notebook the traceback looks like this (i.e. we never show the actual lines, only the numbers).  So this is definitely some sort of ipython problem. \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/space/wstein/build/sage-3.3.alpha0/here/worksheets/admin/1/code/1.py\", line 9, in <module>\n    _sage_const_1 /_sage_const_0\n  File \"/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1182, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)\n  File \"integer.pyx\", line 1177, in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9516)\n  File \"integer_ring.pyx\", line 230, in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)\nZeroDivisionError: Rational division by zero\n```\n\n\nOne possible solution would be to tone down the default traceback of ipython to not show 5 lines of context at every step, which is kind of nuts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5051\n\n",
+    "body": "Assignee: cwitty\n\nFor example, a clean build of sage-3.3.alpha0 or sage-3.2 on sage.math:\n\n```\nwstein@sage:/space/wstein/build/sage-3.3.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 1/0\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1507, 0))\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/16649/_scratch_wstein_sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)()\n   1180 \n   1181 \n-> 1182 \n   1183 \n   1184 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9516)()\n   1175 \n   1176 \n-> 1177 \n   1178 \n   1179 \n\n/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/rings/integer_ring.so in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)()\n    228 \n    229 \n--> 230 \n    231 \n    232 \n\nZeroDivisionError: Rational division by zero\n```\n\nIn the notebook the traceback looks like this (i.e. we never show the actual lines, only the numbers).  So this is definitely some sort of ipython problem. \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/space/wstein/build/sage-3.3.alpha0/here/worksheets/admin/1/code/1.py\", line 9, in <module>\n    _sage_const_1 /_sage_const_0\n  File \"/space/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1182, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)\n  File \"integer.pyx\", line 1177, in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9516)\n  File \"integer_ring.pyx\", line 230, in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)\nZeroDivisionError: Rational division by zero\n```\n\nOne possible solution would be to tone down the default traceback of ipython to not show 5 lines of context at every step, which is kind of nuts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5051\n\n",
     "created_at": "2009-01-22T07:49:06Z",
     "labels": [
         "component: misc",
@@ -19,7 +19,6 @@ archive/issues_005051.json:
 Assignee: cwitty
 
 For example, a clean build of sage-3.3.alpha0 or sage-3.2 on sage.math:
-
 
 ```
 wstein@sage:/space/wstein/build/sage-3.3.alpha0$ ./sage
@@ -65,7 +64,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 ZeroDivisionError: Rational division by zero
 ```
 
-
 In the notebook the traceback looks like this (i.e. we never show the actual lines, only the numbers).  So this is definitely some sort of ipython problem. 
 
 ```
@@ -81,7 +79,6 @@ Traceback (most recent call last):
 ZeroDivisionError: Rational division by zero
 ```
 
-
 One possible solution would be to tone down the default traceback of ipython to not show 5 lines of context at every step, which is kind of nuts. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5051
@@ -95,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5051
 archive/issue_comments_038415.json:
 ```json
 {
-    "body": "I was wrong.  The tracebacks never showed the code:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases$ sage-2.10/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: 1/0\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/disk/scratch/mabshoff-sage-releases/<ipython console> in <module>()\n\n/disk/scratch/mabshoff-sage-releases/element.pyx in sage.structure.element.RingElement.__div__()\n\n/disk/scratch/mabshoff-sage-releases/coerce.pxi in sage.structure.element._div_c()\n\n/disk/scratch/mabshoff-sage-releases/integer.pyx in sage.rings.integer.Integer._div_c_impl()\n\n/disk/scratch/mabshoff-sage-releases/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div()\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n",
+    "body": "I was wrong.  The tracebacks never showed the code:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases$ sage-2.10/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: 1/0\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/disk/scratch/mabshoff-sage-releases/<ipython console> in <module>()\n\n/disk/scratch/mabshoff-sage-releases/element.pyx in sage.structure.element.RingElement.__div__()\n\n/disk/scratch/mabshoff-sage-releases/coerce.pxi in sage.structure.element._div_c()\n\n/disk/scratch/mabshoff-sage-releases/integer.pyx in sage.rings.integer.Integer._div_c_impl()\n\n/disk/scratch/mabshoff-sage-releases/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div()\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```",
     "created_at": "2009-01-23T00:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
@@ -128,7 +125,6 @@ sage: 1/0
 
 <type 'exceptions.ZeroDivisionError'>: Rational division by zero
 ```
-
 
 
 
@@ -191,7 +187,7 @@ This is fixed in the patch at #5073.
 archive/issue_comments_038419.json:
 ```json
 {
-    "body": "Fixed via #5073.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 1/0\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1503, 0))\n| Sage Version 3.3.alpha5, Release Date: 2009-02-03                  |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/mabshoff/.sage/temp/geom/20328/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9522)()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/rings/integer_ring.so in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)()\n\nZeroDivisionError: Rational division by zero\n```\n\nCheers,\n\nMichael",
+    "body": "Fixed via #5073.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 1/0\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1503, 0))\n| Sage Version 3.3.alpha5, Release Date: 2009-02-03                  |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/mabshoff/.sage/temp/geom/20328/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer._div_ (sage/rings/integer.c:9522)()\n\n/scratch/mabshoff/sage-3.3.alpha6/local/lib/python2.5/site-packages/sage/rings/integer_ring.so in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:4745)()\n\nZeroDivisionError: Rational division by zero\n```\nCheers,\n\nMichael",
     "created_at": "2009-02-07T01:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
@@ -224,7 +220,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Rational division by zero
 ```
-
 Cheers,
 
 Michael

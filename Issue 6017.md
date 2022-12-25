@@ -135,7 +135,7 @@ Michael
 archive/issue_comments_047785.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> No, this is not obsolete and this is not how we do things around here ;).\n\nUnderstood.  It was a severely flawed attempt to save you some work.  ;-)",
+    "body": "Replying to [comment:2 mabshoff]:\n> No, this is not obsolete and this is not how we do things around here ;).\n\n\nUnderstood.  It was a severely flawed attempt to save you some work.  ;-)",
     "created_at": "2009-05-20T17:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6017",
     "type": "issue_comment",
@@ -146,6 +146,7 @@ archive/issue_comments_047785.json:
 
 Replying to [comment:2 mabshoff]:
 > No, this is not obsolete and this is not how we do things around here ;).
+
 
 Understood.  It was a severely flawed attempt to save you some work.  ;-)
 

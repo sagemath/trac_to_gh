@@ -144,7 +144,7 @@ This looks good. I started adding a few changes while refereeing, and then I got
 archive/issue_comments_045213.json:
 ```json
 {
-    "body": "Replying to [comment:3 craigcitro]:\n> This looks good. I started adding a few changes while refereeing, and then I got motivated and went ahead and finished doctesting `sage/modular/hecke`. So positive review for David's part, and now someone needs to review my (much shorter) patch. After this, the only part of `sage/modular` still needing any doctesting is the `modsym` directory. \n\nI think it would be better for David to review Craig's extra patch rather than a newcomer.\n\nLast docdays I started properly doctesting modsym, but only got two of the files done.  I do intend to do more.",
+    "body": "Replying to [comment:3 craigcitro]:\n> This looks good. I started adding a few changes while refereeing, and then I got motivated and went ahead and finished doctesting `sage/modular/hecke`. So positive review for David's part, and now someone needs to review my (much shorter) patch. After this, the only part of `sage/modular` still needing any doctesting is the `modsym` directory. \n\n\nI think it would be better for David to review Craig's extra patch rather than a newcomer.\n\nLast docdays I started properly doctesting modsym, but only got two of the files done.  I do intend to do more.",
     "created_at": "2009-05-09T17:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ archive/issue_comments_045213.json:
 
 Replying to [comment:3 craigcitro]:
 > This looks good. I started adding a few changes while refereeing, and then I got motivated and went ahead and finished doctesting `sage/modular/hecke`. So positive review for David's part, and now someone needs to review my (much shorter) patch. After this, the only part of `sage/modular` still needing any doctesting is the `modsym` directory. 
+
 
 I think it would be better for David to review Craig's extra patch rather than a newcomer.
 

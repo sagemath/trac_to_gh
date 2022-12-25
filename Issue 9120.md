@@ -152,7 +152,7 @@ Do you think it would be good to factor the block of code from line 236 to line 
 archive/issue_comments_084686.json:
 ```json
 {
-    "body": "Replying to [comment:5 wcauchois]:\n\n> Well, this all looks good and it seems to do what you're describing. Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake\n>\n\nCan we make that another ticket?",
+    "body": "Replying to [comment:5 wcauchois]:\n\n> Well, this all looks good and it seems to do what you're describing. Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake\n\n>\n\nCan we make that another ticket?",
     "created_at": "2010-06-03T15:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -164,6 +164,7 @@ archive/issue_comments_084686.json:
 Replying to [comment:5 wcauchois]:
 
 > Well, this all looks good and it seems to do what you're describing. Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake
+
 >
 
 Can we make that another ticket?
@@ -175,7 +176,7 @@ Can we make that another ticket?
 archive/issue_comments_084687.json:
 ```json
 {
-    "body": "Replying to [comment:4 wcauchois]:\n\n\n> Have you been using plot3d transformations, in your class or otherwise?\n\nIt was merged too late to use in my class this last semester, but I do plan to use it in my class next semester.",
+    "body": "Replying to [comment:4 wcauchois]:\n\n\n> Have you been using plot3d transformations, in your class or otherwise?\n\n\nIt was merged too late to use in my class this last semester, but I do plan to use it in my class next semester.",
     "created_at": "2010-06-03T15:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -188,6 +189,7 @@ Replying to [comment:4 wcauchois]:
 
 
 > Have you been using plot3d transformations, in your class or otherwise?
+
 
 It was merged too late to use in my class this last semester, but I do plan to use it in my class next semester.
 
@@ -216,7 +218,7 @@ apply on top of previous patches
 archive/issue_comments_084689.json:
 ```json
 {
-    "body": "Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by @jasongrout created at 2010-06-03 15:33:08\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
+    "body": "Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by @jasongrout created at 2010-06-03 15:33:08\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
     "created_at": "2010-06-03T15:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
@@ -231,6 +233,7 @@ Replying to [comment:5 wcauchois]:
 > Well, this all looks good and it seems to do what you're describing.
 > 
 > Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?
+
 
 On second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.
 

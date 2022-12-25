@@ -3,7 +3,7 @@
 archive/issues_006339.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polynomial content\n\n\n```\nsage: QQ['x, y'].random_element().content()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/8651/_home_ncalexan__sage_init_sage_0.py in <module>()\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynom\\\nial.MPolynomial.content (sage/rings/polynomial/multi_polynomial.c:9118)()\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/arith.pyc in gcd(a, b, **kwargs)\n   1209     if U is ZZ or U is int or U is long:# ZZ.has_coerce_map_from(U):\n   1210         return sage.rings.integer.GCD_list(a)\n-> 1211     return __GCD_sequence(seq, **kwargs)\n   1212\n   1213 GCD = gcd\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/arith.pyc in __GCD_sequence(v, **kwargs)\n   1249     one = v.universe()(1)\n   1250     for vi in v:\n-> 1251         g = vi.gcd(g, **kwargs)\n   1252         if g == one:\n   1253             return g\n\nTypeError: gcd() takes no keyword arguments\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6339\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polynomial content\n\n```\nsage: QQ['x, y'].random_element().content()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/8651/_home_ncalexan__sage_init_sage_0.py in <module>()\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynom\\\nial.MPolynomial.content (sage/rings/polynomial/multi_polynomial.c:9118)()\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/arith.pyc in gcd(a, b, **kwargs)\n   1209     if U is ZZ or U is int or U is long:# ZZ.has_coerce_map_from(U):\n   1210         return sage.rings.integer.GCD_list(a)\n-> 1211     return __GCD_sequence(seq, **kwargs)\n   1212\n   1213 GCD = gcd\n\n/scratch/ncalexan/sage-4.0.2.alpha1/local/lib/python2.5/site-packages/sage/rings/arith.pyc in __GCD_sequence(v, **kwargs)\n   1249     one = v.universe()(1)\n   1250     for vi in v:\n-> 1251         g = vi.gcd(g, **kwargs)\n   1252         if g == one:\n   1253             return g\n\nTypeError: gcd() takes no keyword arguments\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6339\n\n",
     "created_at": "2009-06-16T19:05:07Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ Assignee: @malb
 CC:  @malb
 
 Keywords: polynomial content
-
 
 ```
 sage: QQ['x, y'].random_element().content()
@@ -50,7 +49,6 @@ ial.MPolynomial.content (sage/rings/polynomial/multi_polynomial.c:9118)()
 
 TypeError: gcd() takes no keyword arguments
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6339
 

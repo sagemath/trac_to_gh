@@ -185,7 +185,7 @@ Yes, please close this.
 archive/issue_comments_002136.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Yes, please close this.\n\nThanks John, this will be closed once the ReST patches are in.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Yes, please close this.\n\n\nThanks John, this will be closed once the ReST patches are in.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-21T23:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
@@ -196,6 +196,7 @@ archive/issue_comments_002136.json:
 
 Replying to [comment:5 jhpalmieri]:
 > Yes, please close this.
+
 
 Thanks John, this will be closed once the ReST patches are in.
 

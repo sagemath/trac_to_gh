@@ -186,7 +186,7 @@ apply trac_6666-rebased-5.12.patch
 archive/issue_comments_054614.json:
 ```json
 {
-    "body": "Replying to [comment:6 chapoton]:\n> Thanks William. I am in algebra and combinatorics, not a number theorist, but I am trying to help nevertheless.\n> \n\nThanks.  I'm in number theory, not algebra/combinatorics, but I hope Sage has been helpful to people in algebra/combinatorics :-)",
+    "body": "Replying to [comment:6 chapoton]:\n> Thanks William. I am in algebra and combinatorics, not a number theorist, but I am trying to help nevertheless.\n> \n\n\nThanks.  I'm in number theory, not algebra/combinatorics, but I hope Sage has been helpful to people in algebra/combinatorics :-)",
     "created_at": "2013-10-17T19:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
@@ -198,6 +198,7 @@ archive/issue_comments_054614.json:
 Replying to [comment:6 chapoton]:
 > Thanks William. I am in algebra and combinatorics, not a number theorist, but I am trying to help nevertheless.
 > 
+
 
 Thanks.  I'm in number theory, not algebra/combinatorics, but I hope Sage has been helpful to people in algebra/combinatorics :-)
 
@@ -552,7 +553,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_054628.json:
 ```json
 {
-    "body": "Looks good to me.\n\nI allowed myself a few minor changes.\n----\nNew commits:",
+    "body": "Looks good to me.\n\nI allowed myself a few minor changes.\n\n---\nNew commits:",
     "created_at": "2015-01-24T17:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
@@ -564,7 +565,8 @@ archive/issue_comments_054628.json:
 Looks good to me.
 
 I allowed myself a few minor changes.
-----
+
+---
 New commits:
 
 
@@ -574,7 +576,7 @@ New commits:
 archive/issue_comments_054629.json:
 ```json
 {
-    "body": "Replying to [comment:22 chapoton]:\n> Looks good to me.\nThanks for the review!\n> I allowed myself a few minor changes.\nI'm not disputing your changes to the whitespace here, but note that PEP 8 does not say that there should be spaces around *all* operators, only the relational ones.  From https://www.python.org/dev/peps/pep-0008/:\n\n>> If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.\n>> Yes:\n>> {{{\n>> i = i + 1\n>> submitted += 1\n>> x = x*2 - 1\n>> hypot2 = x*x + y*y\n>> c = (a+b) * (a-b)\n>> }}}\n>> No:\n>> {{{\n>> i=i+1\n>> submitted +=1\n>> x = x * 2 - 1\n>> hypot2 = x * x + y * y\n>> c = (a + b) * (a - b)\n>> }}}\nActually, in the case of `c = ...`, I would personally prefer the \"no\" option or even `(a + b)*(a - b)`, which is closer to standard mathematical typesetting, but in any case this is a matter of taste.",
+    "body": "Replying to [comment:22 chapoton]:\n> Looks good to me.\n\nThanks for the review!\n> I allowed myself a few minor changes.\n\nI'm not disputing your changes to the whitespace here, but note that PEP 8 does not say that there should be spaces around *all* operators, only the relational ones.  From https://www.python.org/dev/peps/pep-0008/:\n\n>> If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.\n>> Yes:\n>> \n>> ```\n>> i = i + 1\n>> submitted += 1\n>> x = x*2 - 1\n>> hypot2 = x*x + y*y\n>> c = (a+b) * (a-b)\n>> ```\n>> No:\n>> \n>> ```\n>> i=i+1\n>> submitted +=1\n>> x = x * 2 - 1\n>> hypot2 = x * x + y * y\n>> c = (a + b) * (a - b)\n>> ```\n\nActually, in the case of `c = ...`, I would personally prefer the \"no\" option or even `(a + b)*(a - b)`, which is closer to standard mathematical typesetting, but in any case this is a matter of taste.",
     "created_at": "2015-01-24T22:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
@@ -585,27 +587,32 @@ archive/issue_comments_054629.json:
 
 Replying to [comment:22 chapoton]:
 > Looks good to me.
+
 Thanks for the review!
 > I allowed myself a few minor changes.
+
 I'm not disputing your changes to the whitespace here, but note that PEP 8 does not say that there should be spaces around *all* operators, only the relational ones.  From https://www.python.org/dev/peps/pep-0008/:
 
 >> If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.
 >> Yes:
->> {{{
+>> 
+>> ```
 >> i = i + 1
 >> submitted += 1
 >> x = x*2 - 1
 >> hypot2 = x*x + y*y
 >> c = (a+b) * (a-b)
->> }}}
+>> ```
 >> No:
->> {{{
+>> 
+>> ```
 >> i=i+1
 >> submitted +=1
 >> x = x * 2 - 1
 >> hypot2 = x * x + y * y
 >> c = (a + b) * (a - b)
->> }}}
+>> ```
+
 Actually, in the case of `c = ...`, I would personally prefer the "no" option or even `(a + b)*(a - b)`, which is closer to standard mathematical typesetting, but in any case this is a matter of taste.
 
 

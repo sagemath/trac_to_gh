@@ -3,7 +3,7 @@
 archive/issues_003327.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe generic .divides() implementation doesn't work for FieldElement; this causes the following problem:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g')[]\n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*y+b) \n```\n\ngoes BOOM (as reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/76dd56341dc29b1b#76dd56341dc29b1b)\n\nThe attached patch adds the missing method and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3327\n\n",
+    "body": "Assignee: somebody\n\nThe generic .divides() implementation doesn't work for FieldElement; this causes the following problem:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g')[]\n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*y+b) \n```\ngoes BOOM (as reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/76dd56341dc29b1b#76dd56341dc29b1b)\n\nThe attached patch adds the missing method and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3327\n\n",
     "created_at": "2008-05-29T03:18:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ The generic .divides() implementation doesn't work for FieldElement; this causes
   S.<y> = R.fraction_field()[]
   xgcd(y^2, a*y+b) 
 ```
-
 goes BOOM (as reported by Gaëtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/76dd56341dc29b1b#76dd56341dc29b1b)
 
 The attached patch adds the missing method and some doctests.

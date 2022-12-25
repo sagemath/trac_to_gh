@@ -320,7 +320,7 @@ Somewhere I gained the impression that doctests for a ticket should mention the 
 archive/issue_comments_027766.json:
 ```json
 {
-    "body": "Replying to [comment:3 niles]:\n\n> Thanks for taking a look! Somewhere I gained the impression that doctests for a ticket should mention the ticket number--is that not necessarily the case?  I don't really have a strong opinion, but since it may be non-obvious functionality I'm in favor of keeping these tests in the EXAMPLES:: section.  How about rewording the description to something like the following? `Passes extra positional or keyword arguments through (Trac #3893)::`\n\nI'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers, what information do they communicate that is relevant? I am very much in favour of having \"`Passes extra positional or keyword arguments through::`\". I leave it up to you, so you have a positive review, i.e. toggle it yourself if you don't want to change it.",
+    "body": "Replying to [comment:3 niles]:\n\n> Thanks for taking a look! Somewhere I gained the impression that doctests for a ticket should mention the ticket number--is that not necessarily the case?  I don't really have a strong opinion, but since it may be non-obvious functionality I'm in favor of keeping these tests in the EXAMPLES:: section.  How about rewording the description to something like the following? `Passes extra positional or keyword arguments through (Trac #3893)::`\n\n\nI'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers, what information do they communicate that is relevant? I am very much in favour of having \"`Passes extra positional or keyword arguments through::`\". I leave it up to you, so you have a positive review, i.e. toggle it yourself if you don't want to change it.",
     "created_at": "2010-08-24T16:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -332,6 +332,7 @@ archive/issue_comments_027766.json:
 Replying to [comment:3 niles]:
 
 > Thanks for taking a look! Somewhere I gained the impression that doctests for a ticket should mention the ticket number--is that not necessarily the case?  I don't really have a strong opinion, but since it may be non-obvious functionality I'm in favor of keeping these tests in the EXAMPLES:: section.  How about rewording the description to something like the following? `Passes extra positional or keyword arguments through (Trac #3893)::`
+
 
 I'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers, what information do they communicate that is relevant? I am very much in favour of having "`Passes extra positional or keyword arguments through::`". I leave it up to you, so you have a positive review, i.e. toggle it yourself if you don't want to change it.
 
@@ -362,7 +363,7 @@ clarified docstrings
 archive/issue_comments_027768.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n\n> \n> I'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers\n\nfair enough; I also can't find any mention of a policy like this in the developer guide, so I've changed the docstring as you suggested.  Since I don't have 4.5.3a2 installed, will you re-verify that the patch applies cleanly before hitting \"positive review\"? (Since the changes were easy, I just made them directly to the rebased patch file itself.)",
+    "body": "Replying to [comment:4 malb]:\n\n> \n> I'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers\n\n\nfair enough; I also can't find any mention of a policy like this in the developer guide, so I've changed the docstring as you suggested.  Since I don't have 4.5.3a2 installed, will you re-verify that the patch applies cleanly before hitting \"positive review\"? (Since the changes were easy, I just made them directly to the rebased patch file itself.)",
     "created_at": "2010-08-24T21:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -375,6 +376,7 @@ Replying to [comment:4 malb]:
 
 > 
 > I'm not sure what the official policy is, but I'd say it would be a bit odd when in a few years time the docstring is cluttered with trac ticket numbers
+
 
 fair enough; I also can't find any mention of a policy like this in the developer guide, so I've changed the docstring as you suggested.  Since I don't have 4.5.3a2 installed, will you re-verify that the patch applies cleanly before hitting "positive review"? (Since the changes were easy, I just made them directly to the rebased patch file itself.)
 
@@ -441,7 +443,7 @@ rebased patch applies cleanly to 4.5.3; switching to positive review, as per Mar
 archive/issue_comments_027772.json:
 ```json
 {
-    "body": "With the latest patch applied to a trial 4.6.alpha2, I get two doctest failures:\n\n```python\nsage -t -long \"devel/sage/sage/rings/contfrac.py\"           \n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/sage/rings/contfrac.py\", line 40:\n    sage: a\nExpected:\n    [    [-1, 2] [-1, 1, 94]      [0, 2]       [-12]]\n    [       [-1]      [0, 2]  [-1, 1, 3]   [0, 1, 2]]\n    [    [-3, 2]   [0, 1, 2]        [-1]         [1]]\n    [       [-1]      [0, 3]         [1]        [-1]]\nGot:\n    [    [-1, 2] [-1, 1, 94]      [0, 2]       [-12]]\n    [       [-1]      [0, 2]  [-1, 1, 3]   [0, 1, 2]]\n    [    [-3, 2]         [0]   [0, 1, 2]        [-1]]\n    [        [1]        [-1]      [0, 3]         [1]]\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/sage/rings/contfrac.py\", line 46:\n    sage: f\nExpected:\n    [1]*x^4 + [2]*x^3 + ([-12, 1, 14, 7, 1, 1, 7])*x^2 + ([-40, 2, 32, 2, 1, 1, 2])*x + [8, 1, 5, 2, 14, 1, 1, 3]\nGot:\n    [1]*x^4 + ([-2, 3])*x^3 + [14, 1, 1, 1, 9, 1, 8]*x^2 + ([-13, 4, 1, 2, 1, 1, 1, 1, 1, 2, 2])*x + [-6, 1, 5, 9, 1, 5]\n**********************************************************************\n```\n\nPerhaps there's an interaction with one of the [already merged tickets](http://trac.sagemath.org/sage_trac/query?order=priority&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&merged=~sage-4.6.alpha2)?",
+    "body": "With the latest patch applied to a trial 4.6.alpha2, I get two doctest failures:\n\n```python\nsage -t -long \"devel/sage/sage/rings/contfrac.py\"           \n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/sage/rings/contfrac.py\", line 40:\n    sage: a\nExpected:\n    [    [-1, 2] [-1, 1, 94]      [0, 2]       [-12]]\n    [       [-1]      [0, 2]  [-1, 1, 3]   [0, 1, 2]]\n    [    [-3, 2]   [0, 1, 2]        [-1]         [1]]\n    [       [-1]      [0, 3]         [1]        [-1]]\nGot:\n    [    [-1, 2] [-1, 1, 94]      [0, 2]       [-12]]\n    [       [-1]      [0, 2]  [-1, 1, 3]   [0, 1, 2]]\n    [    [-3, 2]         [0]   [0, 1, 2]        [-1]]\n    [        [1]        [-1]      [0, 3]         [1]]\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1-working/devel/sage/sage/rings/contfrac.py\", line 46:\n    sage: f\nExpected:\n    [1]*x^4 + [2]*x^3 + ([-12, 1, 14, 7, 1, 1, 7])*x^2 + ([-40, 2, 32, 2, 1, 1, 2])*x + [8, 1, 5, 2, 14, 1, 1, 3]\nGot:\n    [1]*x^4 + ([-2, 3])*x^3 + [14, 1, 1, 1, 9, 1, 8]*x^2 + ([-13, 4, 1, 2, 1, 1, 1, 1, 1, 2, 2])*x + [-6, 1, 5, 9, 1, 5]\n**********************************************************************\n```\nPerhaps there's an interaction with one of the [already merged tickets](http://trac.sagemath.org/sage_trac/query?order=priority&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&merged=~sage-4.6.alpha2)?",
     "created_at": "2010-09-30T02:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3893",
     "type": "issue_comment",
@@ -476,7 +478,6 @@ Got:
     [1]*x^4 + ([-2, 3])*x^3 + [14, 1, 1, 1, 9, 1, 8]*x^2 + ([-13, 4, 1, 2, 1, 1, 1, 1, 1, 2, 2])*x + [-6, 1, 5, 9, 1, 5]
 **********************************************************************
 ```
-
 Perhaps there's an interaction with one of the [already merged tickets](http://trac.sagemath.org/sage_trac/query?order=priority&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&merged=~sage-4.6.alpha2)?
 
 

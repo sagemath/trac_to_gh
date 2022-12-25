@@ -3,7 +3,7 @@
 archive/issues_005078.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: R1 = PolynomialRing(QQ, 'x,y,z')\nsage: R1.0\nTraceback (most recent call last):\n...\nNameError: name 'R1_sage_const_p0' is not defined\nsage: R1.gen(0)\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5078\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: R1 = PolynomialRing(QQ, 'x,y,z')\nsage: R1.0\nTraceback (most recent call last):\n...\nNameError: name 'R1_sage_const_p0' is not defined\nsage: R1.gen(0)\nx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5078\n\n",
     "created_at": "2009-01-23T22:23:39Z",
     "labels": [
         "component: misc",
@@ -18,7 +18,6 @@ archive/issues_005078.json:
 ```
 Assignee: cwitty
 
-
 ```
 sage: R1 = PolynomialRing(QQ, 'x,y,z')
 sage: R1.0
@@ -28,7 +27,6 @@ NameError: name 'R1_sage_const_p0' is not defined
 sage: R1.gen(0)
 x
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5078
 

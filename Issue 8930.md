@@ -69,7 +69,7 @@ There was a failing doctest and I also discovered some typos in the doc of the C
 archive/issue_comments_082118.json:
 ```json
 {
-    "body": "From Nicolas on combinat-series file:\n\n```\ntrac_8930-enumerated_set_deprecate-fh.patch       # Positive review, assuming tests pass (NT)\n```\n\nI got a all test pass on massena. I'll just reupload from the queue, can you put a positive review ?",
+    "body": "From Nicolas on combinat-series file:\n\n```\ntrac_8930-enumerated_set_deprecate-fh.patch       # Positive review, assuming tests pass (NT)\n```\nI got a all test pass on massena. I'll just reupload from the queue, can you put a positive review ?",
     "created_at": "2010-05-31T10:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ From Nicolas on combinat-series file:
 ```
 trac_8930-enumerated_set_deprecate-fh.patch       # Positive review, assuming tests pass (NT)
 ```
-
 I got a all test pass on massena. I'll just reupload from the queue, can you put a positive review ?
 
 

@@ -3,7 +3,7 @@
 archive/issues_003841.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThis patch makes symbolic polynomials use libsingular via the ring interface by default.\nIt also contains a large number of doctest changes because polynomials in Sage have a better ordering.\n\n\n```\n%cython\nfrom sage.calculus.calculus import var\nfrom sage.rings.integer cimport Integer\nfrom random import random\ndef blah(rng):\n    global five\n    x,y = var('x,y')\n    foo = x\n    cdef i\n    for i from 0<=i<rng:\n        foo+= x**int(random()*1000)+y**int(random()*10000)+x+1\n    return foo\n\nThe python code used to test maxima was:\nsage: def blah(rng):\n   foo = x\n   for i in xrange(0, rng):\n       foo+=x^int(random()*10000)+y^int(random()*10000)+x+1; foo = simplify(foo)             \n   return foo\n\nI'm well aware that I'm comparing cython timings to python timings.. but the cython overhead isn't the dominating factor here.\nThe simplify exists to force it to go to maxima to evaluate the expression between additions (as singular does).  Otherwise this is not a very fair/real world comparison if Maxima gets to build the entire addition and send it to Maxima as one batch (and only do the addition once as opposed to rng times).  \n\n%timeit blah(10)\n\n125 loops, best of 3: 1.98 ms per loop\n\nMaxima: \nCPU times: user 0.14 s, sys: 0.05 s, total: 0.18 s\nWall time: 1.97 s\n\n%timeit blah(100)\n \t\n25 loops, best of 3: 20.8 ms per loop\n\nMaxima:\nCPU times: user 3.30 s, sys: 1.16 s, total: 4.47 s\nWall time: 28.89 s\n\n\n%timeit blah(1000)\n\t\n5 loops, best of 3: 214 ms per loop\n\nMaxima: Raises exception\n\n%timeit blah(10000)\n\n5 loops, best of 3: 2.09 s per loop\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3841\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis patch makes symbolic polynomials use libsingular via the ring interface by default.\nIt also contains a large number of doctest changes because polynomials in Sage have a better ordering.\n\n```\n%cython\nfrom sage.calculus.calculus import var\nfrom sage.rings.integer cimport Integer\nfrom random import random\ndef blah(rng):\n    global five\n    x,y = var('x,y')\n    foo = x\n    cdef i\n    for i from 0<=i<rng:\n        foo+= x**int(random()*1000)+y**int(random()*10000)+x+1\n    return foo\n\nThe python code used to test maxima was:\nsage: def blah(rng):\n   foo = x\n   for i in xrange(0, rng):\n       foo+=x^int(random()*10000)+y^int(random()*10000)+x+1; foo = simplify(foo)             \n   return foo\n\nI'm well aware that I'm comparing cython timings to python timings.. but the cython overhead isn't the dominating factor here.\nThe simplify exists to force it to go to maxima to evaluate the expression between additions (as singular does).  Otherwise this is not a very fair/real world comparison if Maxima gets to build the entire addition and send it to Maxima as one batch (and only do the addition once as opposed to rng times).  \n\n%timeit blah(10)\n\n125 loops, best of 3: 1.98 ms per loop\n\nMaxima: \nCPU times: user 0.14 s, sys: 0.05 s, total: 0.18 s\nWall time: 1.97 s\n\n%timeit blah(100)\n \t\n25 loops, best of 3: 20.8 ms per loop\n\nMaxima:\nCPU times: user 3.30 s, sys: 1.16 s, total: 4.47 s\nWall time: 28.89 s\n\n\n%timeit blah(1000)\n\t\n5 loops, best of 3: 214 ms per loop\n\nMaxima: Raises exception\n\n%timeit blah(10000)\n\n5 loops, best of 3: 2.09 s per loop\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3841\n\n",
     "created_at": "2008-08-13T18:31:46Z",
     "labels": [
         "component: calculus"
@@ -19,7 +19,6 @@ Assignee: @garyfurnish
 
 This patch makes symbolic polynomials use libsingular via the ring interface by default.
 It also contains a large number of doctest changes because polynomials in Sage have a better ordering.
-
 
 ```
 %cython
@@ -74,7 +73,6 @@ Maxima: Raises exception
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3841
 
@@ -258,7 +256,7 @@ archive/issue_comments_027260.json:
 archive/issue_comments_027261.json:
 ```json
 {
-    "body": "Replying to [comment:2 gfurnish]:\n> 2) I disagree, but will comply.  Symbolic polynomials be default still printed in this ordering.  However, before most polynomials were not actually constructed as polynomials.  This is what the ordering should have been.\n\nYou disagree with the need to discuss one of your proposed changes? Perhaps you should then be developing your own project, to avoid the inconvenience of other's opinions.",
+    "body": "Replying to [comment:2 gfurnish]:\n> 2) I disagree, but will comply.  Symbolic polynomials be default still printed in this ordering.  However, before most polynomials were not actually constructed as polynomials.  This is what the ordering should have been.\n\n\nYou disagree with the need to discuss one of your proposed changes? Perhaps you should then be developing your own project, to avoid the inconvenience of other's opinions.",
     "created_at": "2008-08-14T23:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -269,6 +267,7 @@ archive/issue_comments_027261.json:
 
 Replying to [comment:2 gfurnish]:
 > 2) I disagree, but will comply.  Symbolic polynomials be default still printed in this ordering.  However, before most polynomials were not actually constructed as polynomials.  This is what the ordering should have been.
+
 
 You disagree with the need to discuss one of your proposed changes? Perhaps you should then be developing your own project, to avoid the inconvenience of other's opinions.
 
@@ -297,7 +296,7 @@ I don't see why fixing a bug (and yes, it is a bug.  Symbolic Polynomials have a
 archive/issue_comments_027263.json:
 ```json
 {
-    "body": "> I don't see why fixing a bug (and yes, it is a bug.  ...) has suddenly become a new feature.\n\nThis isn't a bug or a new feature: it is a convention. Based on William's comments in the lab today, I don't think there will be a huge amount of support for printing polynomials the way they are here. The point is that it is just a convention, and in changing such, you are not doing things the way people expect them to be done. If you make a change in conventions, there had better be a very good reason for it, and the Sage community must support it. Probably \"Symbolic Polynomials alway use the same representation as the underlying object\" should change if this is going to fly (also, this is hardly a justification of anything...).\n\nApplied to sage-3.1.alpha2, the following test fails, aside from the two (now) resolved issues for coercion:\n\n```\nsage -t  devel/sage/sage/structure/coerce_maps.pyx\n**********************************************************************\nFile \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/tmp/coerce_maps.py\", line 113:\n    sage: mor(x^2/4+1)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        mor(x**Integer(2)/Integer(4)+Integer(1))###line 113:    sage: mor(x^2/4+1)\n      File \"map.pyx\", line 128, in sage.categories.map.Map.__call__ (sage/categories/map.c:2676)\n      File \"coerce_maps.pyx\", line 146, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:3333)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1833, in _polynomial_\n        return self.substitute_over_ring(dict(sub), ring=R)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3682, in substitute_over_ring\n        return self._recursive_sub_over_ring(kwds, ring)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4591, in _recursive_sub_over_ring\n        return ring(f(kwds[v]))\n      File \"polynomial_element.pyx\", line 489, in sage.rings.polynomial.polynomial_element.Polynomial.__call__ (sage/rings/polynomial/polynomial_element.c:4775)\n      File \"element.pyx\", line 1382, in sage.structure.element.RingElement.__mul__(sage/structure/element.c:9190)\n      File \"coerce.pyx\", line 662, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6288)\n    TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Power Series Ring in t over Finite Field of size 7'\n```\n\n\nHere is the original docstring:\n\n```\n\"\"\"\nEXAMPLES: \n    sage: from sage.structure.coerce_maps import NamedConvertMap\n    sage: mor = NamedConvertMap(SR, QQ['t'], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1/4*t^2 + 1\n    sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1 + 2*t^2\n\"\"\"\n```\n",
+    "body": "> I don't see why fixing a bug (and yes, it is a bug.  ...) has suddenly become a new feature.\n\n\nThis isn't a bug or a new feature: it is a convention. Based on William's comments in the lab today, I don't think there will be a huge amount of support for printing polynomials the way they are here. The point is that it is just a convention, and in changing such, you are not doing things the way people expect them to be done. If you make a change in conventions, there had better be a very good reason for it, and the Sage community must support it. Probably \"Symbolic Polynomials alway use the same representation as the underlying object\" should change if this is going to fly (also, this is hardly a justification of anything...).\n\nApplied to sage-3.1.alpha2, the following test fails, aside from the two (now) resolved issues for coercion:\n\n```\nsage -t  devel/sage/sage/structure/coerce_maps.pyx\n**********************************************************************\nFile \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/tmp/coerce_maps.py\", line 113:\n    sage: mor(x^2/4+1)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        mor(x**Integer(2)/Integer(4)+Integer(1))###line 113:    sage: mor(x^2/4+1)\n      File \"map.pyx\", line 128, in sage.categories.map.Map.__call__ (sage/categories/map.c:2676)\n      File \"coerce_maps.pyx\", line 146, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:3333)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1833, in _polynomial_\n        return self.substitute_over_ring(dict(sub), ring=R)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3682, in substitute_over_ring\n        return self._recursive_sub_over_ring(kwds, ring)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4591, in _recursive_sub_over_ring\n        return ring(f(kwds[v]))\n      File \"polynomial_element.pyx\", line 489, in sage.rings.polynomial.polynomial_element.Polynomial.__call__ (sage/rings/polynomial/polynomial_element.c:4775)\n      File \"element.pyx\", line 1382, in sage.structure.element.RingElement.__mul__(sage/structure/element.c:9190)\n      File \"coerce.pyx\", line 662, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6288)\n    TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Power Series Ring in t over Finite Field of size 7'\n```\n\nHere is the original docstring:\n\n```\n\"\"\"\nEXAMPLES: \n    sage: from sage.structure.coerce_maps import NamedConvertMap\n    sage: mor = NamedConvertMap(SR, QQ['t'], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1/4*t^2 + 1\n    sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1 + 2*t^2\n\"\"\"\n```",
     "created_at": "2008-08-15T14:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
@@ -307,6 +306,7 @@ archive/issue_comments_027263.json:
 ```
 
 > I don't see why fixing a bug (and yes, it is a bug.  ...) has suddenly become a new feature.
+
 
 This isn't a bug or a new feature: it is a convention. Based on William's comments in the lab today, I don't think there will be a huge amount of support for printing polynomials the way they are here. The point is that it is just a convention, and in changing such, you are not doing things the way people expect them to be done. If you make a change in conventions, there had better be a very good reason for it, and the Sage community must support it. Probably "Symbolic Polynomials alway use the same representation as the underlying object" should change if this is going to fly (also, this is hardly a justification of anything...).
 
@@ -337,7 +337,6 @@ Exception raised:
     TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Power Series Ring in t over Finite Field of size 7'
 ```
 
-
 Here is the original docstring:
 
 ```
@@ -352,7 +351,6 @@ EXAMPLES:
     1 + 2*t^2
 """
 ```
-
 
 
 

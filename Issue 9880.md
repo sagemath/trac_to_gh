@@ -3,7 +3,7 @@
 archive/issues_009880.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nOur wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:\n\n\n```\n  /** Return the complex half-plane (left or right) in which the number lies.\n   *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,\n   *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.\n   *  */\n```\n\n\nFix this and add doctests.\n\nWe should also consider using GiNaC's `csgn()` function for the top level `sgn()` and `sign()` functions. This should be on a different ticket though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9881\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nOur wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:\n\n```\n  /** Return the complex half-plane (left or right) in which the number lies.\n   *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,\n   *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.\n   *  */\n```\n\nFix this and add doctests.\n\nWe should also consider using GiNaC's `csgn()` function for the top level `sgn()` and `sign()` functions. This should be on a different ticket though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9881\n\n",
     "created_at": "2010-09-09T09:04:30Z",
     "labels": [
         "component: symbolics",
@@ -22,14 +22,12 @@ Keywords: pynac
 
 Our wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:
 
-
 ```
   /** Return the complex half-plane (left or right) in which the number lies.
    *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,
    *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.
    *  */
 ```
-
 
 Fix this and add doctests.
 
@@ -102,7 +100,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097779.json:
 ```json
 {
-    "body": "Replying to [comment:1 burcin]:\n> The new pynac package at #9201 changes the `csgn()` function according to the description. \n\nThat should have been \"at #9901\".",
+    "body": "Replying to [comment:1 burcin]:\n> The new pynac package at #9201 changes the `csgn()` function according to the description. \n\n\nThat should have been \"at #9901\".",
     "created_at": "2010-09-12T12:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
@@ -113,6 +111,7 @@ archive/issue_comments_097779.json:
 
 Replying to [comment:1 burcin]:
 > The new pynac package at #9201 changes the `csgn()` function according to the description. 
+
 
 That should have been "at #9901".
 

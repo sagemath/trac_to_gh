@@ -3,7 +3,7 @@
 archive/issues_001816.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nJust as symbolic variables behave (and what is the Python-way IIRC):\n\n```\nsage: f = x/var('y')\nsage: f\nx/y\nsage: str(f)\n'                                       x\\r\\n                                       -\\r\\n                                       y'\nsage: print str(f)\n                                       x\n                                       -\n                                       y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1816\n\n",
+    "body": "Assignee: @malb\n\nJust as symbolic variables behave (and what is the Python-way IIRC):\n\n```\nsage: f = x/var('y')\nsage: f\nx/y\nsage: str(f)\n'                                       x\\r\\n                                       -\\r\\n                                       y'\nsage: print str(f)\n                                       x\n                                       -\n                                       y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1816\n\n",
     "created_at": "2008-01-17T23:38:32Z",
     "labels": [
         "component: commutative algebra",
@@ -31,7 +31,6 @@ sage: print str(f)
                                        -
                                        y
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1816
 
@@ -62,7 +61,7 @@ Attachment [trac_1816.patch](tarball://root/attachments/some-uuid/ticket1816/tra
 archive/issue_comments_011447.json:
 ```json
 {
-    "body": "The patch is fine, and does what it says, but it makes it look like printing a polynomial ring will give this verbose output:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,order=TermOrder('degrevlex',1)+TermOrder('lex',2)) \nsage: print P\nMultivariate Polynomial Ring\nBase Ring : Rational Field \nSize : 3 Variables \nBlock  0 : Ordering : degrevlex \n```\n\nThat's *not* okay -- way too much by default!",
+    "body": "The patch is fine, and does what it says, but it makes it look like printing a polynomial ring will give this verbose output:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,order=TermOrder('degrevlex',1)+TermOrder('lex',2)) \nsage: print P\nMultivariate Polynomial Ring\nBase Ring : Rational Field \nSize : 3 Variables \nBlock  0 : Ordering : degrevlex \n```\nThat's *not* okay -- way too much by default!",
     "created_at": "2008-01-20T07:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
@@ -81,7 +80,6 @@ Base Ring : Rational Field
 Size : 3 Variables 
 Block  0 : Ordering : degrevlex 
 ```
-
 That's *not* okay -- way too much by default!
 
 

@@ -156,7 +156,7 @@ You're right that #2189 is related, but that patch will have to be rewritten so 
 archive/issue_comments_095183.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> Before:\n> \n>  * axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix\n\nI don't remember seeing that.\n\n>  * matrices were plotted upside-down, where the first row was on the bottom of the matrix.\n\nHuh, that is weird, because I definitely didn't have that experience.\n\nAttached is a screenshot of what I get.  The top row is all the powers of 1 mod 7 (which are all 1), and the left row is all the 0th powers of a mod 7 (which are all 1).  The right row is Fermat's Little Theorem, that the 6th powers are also 1 mod 7.  The matrix itself is\n\n```\nsage: p=7\nsage: matrix(p-1,[mod(a,p)^b for a in range(1,p) for b in srange(p)])\n[1 1 1 1 1 1 1]\n[1 2 4 1 2 4 1]\n[1 3 2 6 4 5 1]\n[1 4 2 1 4 2 1]\n[1 5 4 6 2 3 1]\n[1 6 1 6 1 6 1]\n```\n\nI feel like I must be missing something.",
+    "body": "Replying to [comment:4 jason]:\n> Before:\n> \n> * axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix\n\n\nI don't remember seeing that.\n\n>  * matrices were plotted upside-down, where the first row was on the bottom of the matrix.\n\n\nHuh, that is weird, because I definitely didn't have that experience.\n\nAttached is a screenshot of what I get.  The top row is all the powers of 1 mod 7 (which are all 1), and the left row is all the 0th powers of a mod 7 (which are all 1).  The right row is Fermat's Little Theorem, that the 6th powers are also 1 mod 7.  The matrix itself is\n\n```\nsage: p=7\nsage: matrix(p-1,[mod(a,p)^b for a in range(1,p) for b in srange(p)])\n[1 1 1 1 1 1 1]\n[1 2 4 1 2 4 1]\n[1 3 2 6 4 5 1]\n[1 4 2 1 4 2 1]\n[1 5 4 6 2 3 1]\n[1 6 1 6 1 6 1]\n```\nI feel like I must be missing something.",
     "created_at": "2010-08-13T15:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -168,11 +168,13 @@ archive/issue_comments_095183.json:
 Replying to [comment:4 jason]:
 > Before:
 > 
->  * axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix
+> * axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix
+
 
 I don't remember seeing that.
 
 >  * matrices were plotted upside-down, where the first row was on the bottom of the matrix.
+
 
 Huh, that is weird, because I definitely didn't have that experience.
 
@@ -188,7 +190,6 @@ sage: matrix(p-1,[mod(a,p)^b for a in range(1,p) for b in srange(p)])
 [1 5 4 6 2 3 1]
 [1 6 1 6 1 6 1]
 ```
-
 I feel like I must be missing something.
 
 
@@ -258,7 +259,7 @@ archive/issue_comments_095186.json:
 archive/issue_comments_095187.json:
 ```json
 {
-    "body": "> matrix_plot(identity_matrix(100))\nLooks fine, diagonal is from upper left to lower right, like the matrix. 0 (lowest input) is black, 1 (highest input) is white, I think this is as usual.  With cmap='jet' I get something I like :)  What do *you* get for this one?\n> matrix_plot(identity_matrix(100, sparse=True))\nYikes!  Two issues.  First, it is definitely flipped.  Second, what's up with the colors?  I get white for the off-diagonal zeros and blue for the diagonal.  My diagnosis: something going on with all that special code for sparse matrices.\n\nAnd now I see what you mean about the axes showing up.  I thought that was just part of the frame because my matrices tend to have blue or black around the edges, since the values are one!  Good catch with making axes=False in the future.",
+    "body": "> matrix_plot(identity_matrix(100))\n\nLooks fine, diagonal is from upper left to lower right, like the matrix. 0 (lowest input) is black, 1 (highest input) is white, I think this is as usual.  With cmap='jet' I get something I like :)  What do *you* get for this one?\n> matrix_plot(identity_matrix(100, sparse=True))\n\nYikes!  Two issues.  First, it is definitely flipped.  Second, what's up with the colors?  I get white for the off-diagonal zeros and blue for the diagonal.  My diagnosis: something going on with all that special code for sparse matrices.\n\nAnd now I see what you mean about the axes showing up.  I thought that was just part of the frame because my matrices tend to have blue or black around the edges, since the values are one!  Good catch with making axes=False in the future.",
     "created_at": "2010-08-13T16:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -268,8 +269,10 @@ archive/issue_comments_095187.json:
 ```
 
 > matrix_plot(identity_matrix(100))
+
 Looks fine, diagonal is from upper left to lower right, like the matrix. 0 (lowest input) is black, 1 (highest input) is white, I think this is as usual.  With cmap='jet' I get something I like :)  What do *you* get for this one?
 > matrix_plot(identity_matrix(100, sparse=True))
+
 Yikes!  Two issues.  First, it is definitely flipped.  Second, what's up with the colors?  I get white for the off-diagonal zeros and blue for the diagonal.  My diagnosis: something going on with all that special code for sparse matrices.
 
 And now I see what you mean about the axes showing up.  I thought that was just part of the frame because my matrices tend to have blue or black around the edges, since the values are one!  Good catch with making axes=False in the future.
@@ -301,7 +304,7 @@ For sparse matrices---the correct picture is whote for off-diagonal and blue for
 archive/issue_comments_095189.json:
 ```json
 {
-    "body": "Got it.  And sure enough, in my top directory (i.e., above my user account) there is one, probably placed there eons ago by some primitive Sage installation, with\n\n```\nimage.origin : upper             # lower | upper\n```\n\nIs that it?\n\nI hate to be picky, but I have another question.\n\n```\nGenerally matrices are plotted with the (0,0) entry in the upper \nright.  However, sometimes if we are plotting an image, we'd like \nthe (0,0) entry to be in the lower left. \n```\n\nShould the first word in the second line be 'left'?  And if not, please explain.",
+    "body": "Got it.  And sure enough, in my top directory (i.e., above my user account) there is one, probably placed there eons ago by some primitive Sage installation, with\n\n```\nimage.origin : upper             # lower | upper\n```\nIs that it?\n\nI hate to be picky, but I have another question.\n\n```\nGenerally matrices are plotted with the (0,0) entry in the upper \nright.  However, sometimes if we are plotting an image, we'd like \nthe (0,0) entry to be in the lower left. \n```\nShould the first word in the second line be 'left'?  And if not, please explain.",
     "created_at": "2010-08-13T16:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -315,7 +318,6 @@ Got it.  And sure enough, in my top directory (i.e., above my user account) ther
 ```
 image.origin : upper             # lower | upper
 ```
-
 Is that it?
 
 I hate to be picky, but I have another question.
@@ -325,7 +327,6 @@ Generally matrices are plotted with the (0,0) entry in the upper
 right.  However, sometimes if we are plotting an image, we'd like 
 the (0,0) entry to be in the lower left. 
 ```
-
 Should the first word in the second line be 'left'?  And if not, please explain.
 
 
@@ -484,7 +485,7 @@ ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets 
 archive/issue_comments_095198.json:
 ```json
 {
-    "body": "Explain `axes_integer`.  Also, the options for the locators weren't always\n\n```\nlocator_options=dict(nbins=9,steps=[1,2,5,10],integer=axes_integer)\n```\n\nin all cases - will this make anything different, particularly the `steps` addition?  That stuff should have been a separate ticket, or maybe on #9221 ;)\n\nExplain\n\n```\nlimits[k]-=0.5\n```\n\nI assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\nGood catch on the complex guys.\n\nJust point of information to other readers; very minor doc issues are corrected in #9746.",
+    "body": "Explain `axes_integer`.  Also, the options for the locators weren't always\n\n```\nlocator_options=dict(nbins=9,steps=[1,2,5,10],integer=axes_integer)\n```\nin all cases - will this make anything different, particularly the `steps` addition?  That stuff should have been a separate ticket, or maybe on #9221 ;)\n\nExplain\n\n```\nlimits[k]-=0.5\n```\nI assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\nGood catch on the complex guys.\n\nJust point of information to other readers; very minor doc issues are corrected in #9746.",
     "created_at": "2010-09-28T19:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -498,7 +499,6 @@ Explain `axes_integer`.  Also, the options for the locators weren't always
 ```
 locator_options=dict(nbins=9,steps=[1,2,5,10],integer=axes_integer)
 ```
-
 in all cases - will this make anything different, particularly the `steps` addition?  That stuff should have been a separate ticket, or maybe on #9221 ;)
 
 Explain
@@ -506,7 +506,6 @@ Explain
 ```
 limits[k]-=0.5
 ```
-
 I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.
 
 Good catch on the complex guys.
@@ -520,7 +519,7 @@ Just point of information to other readers; very minor doc issues are corrected 
 archive/issue_comments_095199.json:
 ```json
 {
-    "body": "Replying to [comment:18 kcrisman]:\n> Explain `axes_integer`.  \n> Explain\n> {{{\n> limits[k]-=0.5\n> }}}\n> I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\nOkay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n\nI still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n\n```\nsage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\nsage: matrix_plot(b)\n\nsage: b=random_matrix(GF(2),12,density=0.99)\nsage: matrix_plot(b)\n```\n\n\nAlso, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n\n```\nsage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\nsage: matrix_plot(M)\nsage: matrix_plot(M,ticks=[1,2,3,4])\nERROR: An unexpected error occurred while tokenizing input\n<snip>\n   1992 \n   1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n-> 1994             x_locator, y_locator = ticks\n   1995             if x_locator is None:\n   1996                 x_locator = MaxNLocator(**locator_options)\n\nValueError: too many values to unpack\n```\n\n\nI should be able to finish reviewing this later on today.",
+    "body": "Replying to [comment:18 kcrisman]:\n> Explain `axes_integer`.  \n> Explain\n> \n> ```\n> limits[k]-=0.5\n> ```\n> I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\n\nOkay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n\nI still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n\n```\nsage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\nsage: matrix_plot(b)\n\nsage: b=random_matrix(GF(2),12,density=0.99)\nsage: matrix_plot(b)\n```\n\nAlso, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n\n```\nsage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\nsage: matrix_plot(M)\nsage: matrix_plot(M,ticks=[1,2,3,4])\nERROR: An unexpected error occurred while tokenizing input\n<snip>\n   1992 \n   1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n-> 1994             x_locator, y_locator = ticks\n   1995             if x_locator is None:\n   1996                 x_locator = MaxNLocator(**locator_options)\n\nValueError: too many values to unpack\n```\n\nI should be able to finish reviewing this later on today.",
     "created_at": "2010-09-28T20:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -532,10 +531,12 @@ archive/issue_comments_095199.json:
 Replying to [comment:18 kcrisman]:
 > Explain `axes_integer`.  
 > Explain
-> {{{
+> 
+> ```
 > limits[k]-=0.5
-> }}}
+> ```
 > I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.
+
 
 Okay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.
 
@@ -548,7 +549,6 @@ sage: matrix_plot(b)
 sage: b=random_matrix(GF(2),12,density=0.99)
 sage: matrix_plot(b)
 ```
-
 
 Also, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!
 
@@ -566,7 +566,6 @@ ERROR: An unexpected error occurred while tokenizing input
 
 ValueError: too many values to unpack
 ```
-
 
 I should be able to finish reviewing this later on today.
 
@@ -615,7 +614,7 @@ I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/tick
 archive/issue_comments_095202.json:
 ```json
 {
-    "body": "Replying to [comment:19 kcrisman]:\n> Replying to [comment:18 kcrisman]:\n> > Explain `axes_integer`.  \n> > Explain\n> > {{{\n> > limits[k]-=0.5\n> > }}}\n> > I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n> \n> Okay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n> \n> I still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n> {{{\n> sage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\n> sage: matrix_plot(b)\n> \n> sage: b=random_matrix(GF(2),12,density=0.99)\n> sage: matrix_plot(b)\n> }}}\n\nYes; you can choose the marker used in sparse matrices.  Aside from the fact that this is a fundamental difference in matplotlib, it does also make sense.  In dense matrices, most entries are nonzero, so you color every pixel/square.  In sparse matrices, most entries are zero, so you only put a marker where there is a nonzero.\n\n\n> \n> Also, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n> {{{\n> sage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\n> sage: matrix_plot(M)\n> sage: matrix_plot(M,ticks=[1,2,3,4])\n> ERROR: An unexpected error occurred while tokenizing input\n> <snip>\n>    1992 \n>    1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n> -> 1994             x_locator, y_locator = ticks\n>    1995             if x_locator is None:\n>    1996                 x_locator = MaxNLocator(**locator_options)\n> \n> ValueError: too many values to unpack\n> }}}\n\nYes, definitely another ticket.",
+    "body": "Replying to [comment:19 kcrisman]:\n> Replying to [comment:18 kcrisman]:\n> > Explain `axes_integer`.  \n> > Explain\n> > \n> > ```\n> > limits[k]-=0.5\n> > ```\n> > I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\n> \n> Okay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n> \n> I still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n> \n> ```\n> sage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\n> sage: matrix_plot(b)\n> \n> sage: b=random_matrix(GF(2),12,density=0.99)\n> sage: matrix_plot(b)\n> ```\n\n\nYes; you can choose the marker used in sparse matrices.  Aside from the fact that this is a fundamental difference in matplotlib, it does also make sense.  In dense matrices, most entries are nonzero, so you color every pixel/square.  In sparse matrices, most entries are zero, so you only put a marker where there is a nonzero.\n\n\n> \n> Also, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n> \n> ```\n> sage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\n> sage: matrix_plot(M)\n> sage: matrix_plot(M,ticks=[1,2,3,4])\n> ERROR: An unexpected error occurred while tokenizing input\n> <snip>\n>    1992 \n>    1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n> -> 1994             x_locator, y_locator = ticks\n>    1995             if x_locator is None:\n>    1996                 x_locator = MaxNLocator(**locator_options)\n> \n> ValueError: too many values to unpack\n> ```\n\n\nYes, definitely another ticket.",
     "created_at": "2010-09-28T20:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -628,28 +627,33 @@ Replying to [comment:19 kcrisman]:
 > Replying to [comment:18 kcrisman]:
 > > Explain `axes_integer`.  
 > > Explain
-> > {{{
+> > 
+> > ```
 > > limits[k]-=0.5
-> > }}}
+> > ```
 > > I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.
+
 > 
 > Okay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.
 > 
 > I still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of 
-> {{{
+> 
+> ```
 > sage: b=random_matrix(GF(2),12,sparse=True,density=0.99)
 > sage: matrix_plot(b)
 > 
 > sage: b=random_matrix(GF(2),12,density=0.99)
 > sage: matrix_plot(b)
-> }}}
+> ```
+
 
 Yes; you can choose the marker used in sparse matrices.  Aside from the fact that this is a fundamental difference in matplotlib, it does also make sense.  In dense matrices, most entries are nonzero, so you color every pixel/square.  In sparse matrices, most entries are zero, so you only put a marker where there is a nonzero.
 
 
 > 
 > Also, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!
-> {{{
+> 
+> ```
 > sage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])
 > sage: matrix_plot(M)
 > sage: matrix_plot(M,ticks=[1,2,3,4])
@@ -662,7 +666,8 @@ Yes; you can choose the marker used in sparse matrices.  Aside from the fact tha
 >    1996                 x_locator = MaxNLocator(**locator_options)
 > 
 > ValueError: too many values to unpack
-> }}}
+> ```
+
 
 Yes, definitely another ticket.
 
@@ -691,7 +696,7 @@ of course, your ticks example above does *not* label the first row 1; it would o
 archive/issue_comments_095204.json:
 ```json
 {
-    "body": "Replying to [comment:21 jason]:\n> I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/ticket/9740#comment:19, though.\nThat's okay, they are preexisting behavior and still similar, so can be discussed elsewhere.\n\nYou beat me to realizing the rebase needed now in #4342.  Luckily I could just roll that back... someday I'll use queues.",
+    "body": "Replying to [comment:21 jason]:\n> I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/ticket/9740#comment:19, though.\n\nThat's okay, they are preexisting behavior and still similar, so can be discussed elsewhere.\n\nYou beat me to realizing the rebase needed now in #4342.  Luckily I could just roll that back... someday I'll use queues.",
     "created_at": "2010-09-28T20:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -702,6 +707,7 @@ archive/issue_comments_095204.json:
 
 Replying to [comment:21 jason]:
 > I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/ticket/9740#comment:19, though.
+
 That's okay, they are preexisting behavior and still similar, so can be discussed elsewhere.
 
 You beat me to realizing the rebase needed now in #4342.  Luckily I could just roll that back... someday I'll use queues.
@@ -713,7 +719,7 @@ You beat me to realizing the rebase needed now in #4342.  Luckily I could just r
 archive/issue_comments_095205.json:
 ```json
 {
-    "body": "Okay, in general this is great!  I love the live documentation for testing, by the way - don't know why I never thought of that before.\n\nTwo things, which perhaps should still be addressed - what do you think?\n\nFirst, the error message with the `matrix_plot(A,marker=',')` is not very helpful when you choose a different marker (for instance, '<' works (and is cool with small matrices) but ';' doesn't).  I realize this isn't part of the ticket per se, so maybe this should be a followup.\n\nSecond, there are two instances of \n\n```\nExtra options will get passed on to show(), as long as they are valid:\n```\n\nin the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\n\nI like that the error message for when `vmin` and `vmax` clash is actually helpful, even though it's an mpl error.\n\nI also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.",
+    "body": "Okay, in general this is great!  I love the live documentation for testing, by the way - don't know why I never thought of that before.\n\nTwo things, which perhaps should still be addressed - what do you think?\n\nFirst, the error message with the `matrix_plot(A,marker=',')` is not very helpful when you choose a different marker (for instance, '<' works (and is cool with small matrices) but ';' doesn't).  I realize this isn't part of the ticket per se, so maybe this should be a followup.\n\nSecond, there are two instances of \n\n```\nExtra options will get passed on to show(), as long as they are valid:\n```\nin the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\n\nI like that the error message for when `vmin` and `vmax` clash is actually helpful, even though it's an mpl error.\n\nI also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.",
     "created_at": "2010-09-29T03:10:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -733,7 +739,6 @@ Second, there are two instances of
 ```
 Extra options will get passed on to show(), as long as they are valid:
 ```
-
 in the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.
 
 I like that the error message for when `vmin` and `vmax` clash is actually helpful, even though it's an mpl error.
@@ -765,7 +770,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095207.json:
 ```json
 {
-    "body": "> Second, there are two instances of \n> {{{\n> Extra options will get passed on to show(), as long as they are valid:\n> }}}\n> in the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\nOr in #9746?\n\n> I also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.\nAfter thinking about it, since the ticket says to wrap more mpl options, this should be addressed on this ticket.",
+    "body": "> Second, there are two instances of \n> \n> ```\n> Extra options will get passed on to show(), as long as they are valid:\n> ```\n> in the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\n\nOr in #9746?\n\n> I also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.\n\nAfter thinking about it, since the ticket says to wrap more mpl options, this should be addressed on this ticket.",
     "created_at": "2010-09-29T03:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
@@ -775,13 +780,16 @@ archive/issue_comments_095207.json:
 ```
 
 > Second, there are two instances of 
-> {{{
+> 
+> ```
 > Extra options will get passed on to show(), as long as they are valid:
-> }}}
+> ```
 > in the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.
+
 Or in #9746?
 
 > I also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.
+
 After thinking about it, since the ticket says to wrap more mpl options, this should be addressed on this ticket.
 
 

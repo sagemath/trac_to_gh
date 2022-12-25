@@ -3,7 +3,7 @@
 archive/issues_008973.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @benjaminfjones @dimpase\n\nThe experimental spkg \"surf-1.1\" does not build with gcc-4.4.4. The following patch works for me.\n\n\n```\ndiff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc\n--- a/surf/draw/SurfaceCalc.cc  2004-11-08 11:00:43.000000000 +0100\n+++ b/surf-1.1/surf/draw/SurfaceCalc.cc 2010-05-15 17:48:38.663596876 +0200\n@@ -38,6 +38,7 @@\n #include <IO.h>\n \n #include <math.h>\n+#include <cstring>\n \n extern double Y_AXIS_LR_ROTATE;\n \ndiff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExtension.cc\n--- a/surf/image-formats/ByExtension.cc 2003-04-14 17:12:37.000000000 +0200\n+++ b/surf-1.1/surf/image-formats/ByExtension.cc        2010-05-15 17:47:47.707096842 +0200\n@@ -26,7 +26,8 @@\n \n #include <AvailableImageFormats.h>\n \n-#include<iostream>\n+#include <iostream>\n+#include <cstring>\n \n namespace ImageFormats {\n \n@@ -87,7 +88,7 @@\n                }\n \n                // just look for \"*.extension\"\n-               char* ext = strrchr(filename, '.');\n+               const char* ext = strrchr(filename, '.');\n                if (ext == 0) {\n                        return 0;\n                }\ndiff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc\n--- a/surf/misc/IO.cc   2006-02-12 14:36:26.000000000 +0100\n+++ b/surf-1.1/surf/misc/IO.cc  2010-05-15 17:49:12.939096803 +0200\n@@ -27,6 +27,8 @@\n \n #include <errno.h>\n \n+#include <cstdlib>\n+\n #ifdef HAVE_UNISTD_H\n #  include <unistd.h>\n #endif\ndiff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc\n--- a/surf/src/init_parser.cc   2002-06-09 15:29:17.000000000 +0200\n+++ b/surf-1.1/surf/src/init_parser.cc  2010-05-15 17:45:32.318586702 +0200\n@@ -32,8 +32,8 @@\n #include <monomarith.h>\n #include <AvailableImageFormats.h>\n \n-#include<cstdio>\n-#include<string>\n+#include <cstdio>\n+#include <cstring>\n \n using namespace ScriptVar;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8973\n\n",
+    "body": "Assignee: tbd\n\nCC:  @benjaminfjones @dimpase\n\nThe experimental spkg \"surf-1.1\" does not build with gcc-4.4.4. The following patch works for me.\n\n```\ndiff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc\n--- a/surf/draw/SurfaceCalc.cc  2004-11-08 11:00:43.000000000 +0100\n+++ b/surf-1.1/surf/draw/SurfaceCalc.cc 2010-05-15 17:48:38.663596876 +0200\n@@ -38,6 +38,7 @@\n #include <IO.h>\n \n #include <math.h>\n+#include <cstring>\n \n extern double Y_AXIS_LR_ROTATE;\n \ndiff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExtension.cc\n--- a/surf/image-formats/ByExtension.cc 2003-04-14 17:12:37.000000000 +0200\n+++ b/surf-1.1/surf/image-formats/ByExtension.cc        2010-05-15 17:47:47.707096842 +0200\n@@ -26,7 +26,8 @@\n \n #include <AvailableImageFormats.h>\n \n-#include<iostream>\n+#include <iostream>\n+#include <cstring>\n \n namespace ImageFormats {\n \n@@ -87,7 +88,7 @@\n                }\n \n                // just look for \"*.extension\"\n-               char* ext = strrchr(filename, '.');\n+               const char* ext = strrchr(filename, '.');\n                if (ext == 0) {\n                        return 0;\n                }\ndiff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc\n--- a/surf/misc/IO.cc   2006-02-12 14:36:26.000000000 +0100\n+++ b/surf-1.1/surf/misc/IO.cc  2010-05-15 17:49:12.939096803 +0200\n@@ -27,6 +27,8 @@\n \n #include <errno.h>\n \n+#include <cstdlib>\n+\n #ifdef HAVE_UNISTD_H\n #  include <unistd.h>\n #endif\ndiff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc\n--- a/surf/src/init_parser.cc   2002-06-09 15:29:17.000000000 +0200\n+++ b/surf-1.1/surf/src/init_parser.cc  2010-05-15 17:45:32.318586702 +0200\n@@ -32,8 +32,8 @@\n #include <monomarith.h>\n #include <AvailableImageFormats.h>\n \n-#include<cstdio>\n-#include<string>\n+#include <cstdio>\n+#include <cstring>\n \n using namespace ScriptVar;\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8973\n\n",
     "created_at": "2010-05-15T16:01:44Z",
     "labels": [
         "component: packages: experimental",
@@ -21,7 +21,6 @@ Assignee: tbd
 CC:  @benjaminfjones @dimpase
 
 The experimental spkg "surf-1.1" does not build with gcc-4.4.4. The following patch works for me.
-
 
 ```
 diff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc
@@ -84,7 +83,6 @@ diff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc
  using namespace ScriptVar;
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8973
 
 
@@ -114,7 +112,7 @@ Changing keywords from "" to "sd40.5".
 archive/issue_comments_082639.json:
 ```json
 {
-    "body": "I've produced a new spkg for surf-1.1 called surf-1.1.p0. \n\nhttp://sage.math.washington.edu/home/bjones/surf-1.1.p0.spkg\n\nThis the first spkg I've \"packaged\", but I followed the developer's guide so I think it's close to being proper. The existing surf-1.1.spkg was produced in 2006 and doesn't conform at all to the current standards (including not having any hg repo, no SPKG.txt, etc..) I've checked that it builds successfully on Mac OS X, sage-5.1.beta0. \n\nOn debian linux, there is a problem during `./configure`. I don't have much experience with autotools, so need some help there.\n\n```\nconfigure: error: cannot find install-sh or install.sh in \".\" \"./..\" \"./../..\"\n```\n\n\nPlease test and report back.",
+    "body": "I've produced a new spkg for surf-1.1 called surf-1.1.p0. \n\nhttp://sage.math.washington.edu/home/bjones/surf-1.1.p0.spkg\n\nThis the first spkg I've \"packaged\", but I followed the developer's guide so I think it's close to being proper. The existing surf-1.1.spkg was produced in 2006 and doesn't conform at all to the current standards (including not having any hg repo, no SPKG.txt, etc..) I've checked that it builds successfully on Mac OS X, sage-5.1.beta0. \n\nOn debian linux, there is a problem during `./configure`. I don't have much experience with autotools, so need some help there.\n\n```\nconfigure: error: cannot find install-sh or install.sh in \".\" \"./..\" \"./../..\"\n```\n\nPlease test and report back.",
     "created_at": "2012-05-29T04:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ On debian linux, there is a problem during `./configure`. I don't have much expe
 ```
 configure: error: cannot find install-sh or install.sh in "." "./.." "./../.."
 ```
-
 
 Please test and report back.
 
@@ -165,7 +162,7 @@ Testing nonetheless...
 archive/issue_comments_082641.json:
 ```json
 {
-    "body": "On sage.math:\n\n```\nMaking all in docs\nmake[2]: Entering directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/docs'\nUpdating ./version.texi\nrestore=: && backupdir=\".am$$\" && \\\n\tam__cwd=`pwd` && cd . && \\\n\trm -rf $backupdir && mkdir $backupdir && \\\n\tif (/bin/bash /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing --run makeinfo --version) >/dev/null 2>&1; then \\\n\t  for f in surf.info surf.info-[0-9] surf.info-[0-9][0-9] surf.i[0-9] surf.i[0-9][0-9]; do \\\n\t    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \\\n\t  done; \\\n\telse :; fi && \\\n\tcd \"$am__cwd\"; \\\n\tif /bin/bash /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing --run makeinfo   -I . \\\n\t -o surf.info surf.texi; \\\n\tthen \\\n\t  rc=0; \\\n\t  cd .; \\\n\telse \\\n\t  rc=$?; \\\n\t  cd . && \\\n\t  $restore $backupdir/* `echo \"./surf.info\" | sed 's|[^/]*$||'`; \\\n\tfi; \\\n\trm -rf $backupdir; exit $rc\n/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing: line 54: makeinfo: command not found\nWARNING: `makeinfo' is missing on your system.  You should only need it if\n         you modified a `.texi' or `.texinfo' file, or any other file\n         indirectly affecting the aspect of the manual.  The spurious\n         call might also be the consequence of using a buggy `make' (AIX,\n         DU, IRIX).  You might want to install the `Texinfo' package or\n         the `GNU make' package.  Grab either from any GNU archive site.\nmake[2]: *** [surf.info] Error 1\nmake[2]: Leaving directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/docs'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src'\nmake: *** [all] Error 2\nError building PACKAGE_NAME.\n\nreal\t0m33.030s\nuser\t0m19.410s\nsys\t0m8.280s\n************************************************************************\nError installing package surf-1.1.p0\n************************************************************************\n```\n\nBut the package itself built.",
+    "body": "On sage.math:\n\n```\nMaking all in docs\nmake[2]: Entering directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/docs'\nUpdating ./version.texi\nrestore=: && backupdir=\".am$$\" && \\\n\tam__cwd=`pwd` && cd . && \\\n\trm -rf $backupdir && mkdir $backupdir && \\\n\tif (/bin/bash /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing --run makeinfo --version) >/dev/null 2>&1; then \\\n\t  for f in surf.info surf.info-[0-9] surf.info-[0-9][0-9] surf.i[0-9] surf.i[0-9][0-9]; do \\\n\t    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \\\n\t  done; \\\n\telse :; fi && \\\n\tcd \"$am__cwd\"; \\\n\tif /bin/bash /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing --run makeinfo   -I . \\\n\t -o surf.info surf.texi; \\\n\tthen \\\n\t  rc=0; \\\n\t  cd .; \\\n\telse \\\n\t  rc=$?; \\\n\t  cd . && \\\n\t  $restore $backupdir/* `echo \"./surf.info\" | sed 's|[^/]*$||'`; \\\n\tfi; \\\n\trm -rf $backupdir; exit $rc\n/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/missing: line 54: makeinfo: command not found\nWARNING: `makeinfo' is missing on your system.  You should only need it if\n         you modified a `.texi' or `.texinfo' file, or any other file\n         indirectly affecting the aspect of the manual.  The spurious\n         call might also be the consequence of using a buggy `make' (AIX,\n         DU, IRIX).  You might want to install the `Texinfo' package or\n         the `GNU make' package.  Grab either from any GNU archive site.\nmake[2]: *** [surf.info] Error 1\nmake[2]: Leaving directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src/docs'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/spkg/build/surf-1.1.p0/src'\nmake: *** [all] Error 2\nError building PACKAGE_NAME.\n\nreal\t0m33.030s\nuser\t0m19.410s\nsys\t0m8.280s\n************************************************************************\nError installing package surf-1.1.p0\n************************************************************************\n```\nBut the package itself built.",
     "created_at": "2012-05-29T04:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
@@ -221,7 +218,6 @@ sys	0m8.280s
 Error installing package surf-1.1.p0
 ************************************************************************
 ```
-
 But the package itself built.
 
 

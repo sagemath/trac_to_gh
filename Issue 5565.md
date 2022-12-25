@@ -3,7 +3,7 @@
 archive/issues_005565.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nit seems a stacksize of 10M is not enough to run Sage, at least under\nFedora 10 (I typed <tab> after Poly):\n\n```\npatate% limit stacksize 10m\npatate% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Poly\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n/usr/local/sage-3.4-core2/sage/local/bin/sage-sage: line 197:   816 Segmentation fault      sage-ipython \"$@\" -i\n```\n\nIn addition there is a typo in the above error message, where\n\"occured\" should be \"occurred\". Should I open a separate ticket\nfor that?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5565\n\n",
+    "body": "Assignee: cwitty\n\nit seems a stacksize of 10M is not enough to run Sage, at least under\nFedora 10 (I typed <tab> after Poly):\n\n```\npatate% limit stacksize 10m\npatate% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Poly\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n/usr/local/sage-3.4-core2/sage/local/bin/sage-sage: line 197:   816 Segmentation fault      sage-ipython \"$@\" -i\n```\nIn addition there is a typo in the above error message, where\n\"occured\" should be \"occurred\". Should I open a separate ticket\nfor that?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5565\n\n",
     "created_at": "2009-03-19T13:25:00Z",
     "labels": [
         "component: misc",
@@ -40,7 +40,6 @@ SAGE will now terminate (sorry).
 
 /usr/local/sage-3.4-core2/sage/local/bin/sage-sage: line 197:   816 Segmentation fault      sage-ipython "$@" -i
 ```
-
 In addition there is a typo in the above error message, where
 "occured" should be "occurred". Should I open a separate ticket
 for that?
@@ -102,7 +101,7 @@ Michael
 archive/issue_comments_043243.json:
 ```json
 {
-    "body": "> It seems to be either a csh or a tcsh. \n\nNo, both Pierrick Gaudry and Emmanuel Thome had the problem with bash (I'm the only dinosaur in the\ngroup still using tcsh).",
+    "body": "> It seems to be either a csh or a tcsh. \n\n\nNo, both Pierrick Gaudry and Emmanuel Thome had the problem with bash (I'm the only dinosaur in the\ngroup still using tcsh).",
     "created_at": "2009-03-26T07:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
@@ -112,6 +111,7 @@ archive/issue_comments_043243.json:
 ```
 
 > It seems to be either a csh or a tcsh. 
+
 
 No, both Pierrick Gaudry and Emmanuel Thome had the problem with bash (I'm the only dinosaur in the
 group still using tcsh).

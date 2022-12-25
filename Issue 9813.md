@@ -89,7 +89,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_096617.json:
 ```json
 {
-    "body": "seems to work as advertised, but I get lots of doctest failures with -testall, typical example is like this:\n\n\n```\nFile \"/Users/david/sage-4.5.2/devel/sage/sage/rings/padics/padic_generic_element.pyx\", line 1002:\n    sage: R3(-1).square_root() == R3.teichmuller(2) or R3(-1).square_root() == R3.teichmuller(3)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/david/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/david/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/david/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[33]>\", line 1, in <module>\n        R3(-Integer(1)).square_root() == R3.teichmuller(Integer(2)) or R3(-Integer(1)).square_root() == R3.teichmuller(Integer(3))###line 1002:\n    sage: R3(-1).square_root() == R3.teichmuller(2) or R3(-1).square_root() == R3.teichmuller(3)\n      File \"/Users/david/sage-4.5.2/local/lib/python/site-packages/sage/rings/padics/padic_generic.py\", line 377, in teichmuller\n        ans = self(x, prec)\n      File \"parent.pyx\", line 861, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6427)\n      File \"map.pyx\", line 478, in sage.categories.map.Map._call_with_args (sage/categories/map.c:3666)\n    NotImplementedError: _call_with_args not overridden to accept arguments for <type 'sage.rings.padics.padic_base_coercion.pAdicCoercion_ZZ_CR'>\n```\n",
+    "body": "seems to work as advertised, but I get lots of doctest failures with -testall, typical example is like this:\n\n```\nFile \"/Users/david/sage-4.5.2/devel/sage/sage/rings/padics/padic_generic_element.pyx\", line 1002:\n    sage: R3(-1).square_root() == R3.teichmuller(2) or R3(-1).square_root() == R3.teichmuller(3)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/david/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/david/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/david/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[33]>\", line 1, in <module>\n        R3(-Integer(1)).square_root() == R3.teichmuller(Integer(2)) or R3(-Integer(1)).square_root() == R3.teichmuller(Integer(3))###line 1002:\n    sage: R3(-1).square_root() == R3.teichmuller(2) or R3(-1).square_root() == R3.teichmuller(3)\n      File \"/Users/david/sage-4.5.2/local/lib/python/site-packages/sage/rings/padics/padic_generic.py\", line 377, in teichmuller\n        ans = self(x, prec)\n      File \"parent.pyx\", line 861, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6427)\n      File \"map.pyx\", line 478, in sage.categories.map.Map._call_with_args (sage/categories/map.c:3666)\n    NotImplementedError: _call_with_args not overridden to accept arguments for <type 'sage.rings.padics.padic_base_coercion.pAdicCoercion_ZZ_CR'>\n```",
     "created_at": "2010-08-28T02:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
@@ -99,7 +99,6 @@ archive/issue_comments_096617.json:
 ```
 
 seems to work as advertised, but I get lots of doctest failures with -testall, typical example is like this:
-
 
 ```
 File "/Users/david/sage-4.5.2/devel/sage/sage/rings/padics/padic_generic_element.pyx", line 1002:
@@ -121,7 +120,6 @@ Exception raised:
       File "map.pyx", line 478, in sage.categories.map.Map._call_with_args (sage/categories/map.c:3666)
     NotImplementedError: _call_with_args not overridden to accept arguments for <type 'sage.rings.padics.padic_base_coercion.pAdicCoercion_ZZ_CR'>
 ```
-
 
 
 

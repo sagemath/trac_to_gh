@@ -3,7 +3,7 @@
 archive/issues_003891.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nJohn Cremona requests a sqrt for polynomial rings:\n\n\n```\nI have needed the following.  g(x) is a univariate polynomial which I\nknow to be a square, and i want its square root.  g.factor() does too\nmuch, as does g.squarefree_decomposition().  I can get the sqrt via\ng.gcd(g.derivative()), which works in my case since I know that the\nsqrt is itself square-free.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3891\n\n",
+    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nJohn Cremona requests a sqrt for polynomial rings:\n\n```\nI have needed the following.  g(x) is a univariate polynomial which I\nknow to be a square, and i want its square root.  g.factor() does too\nmuch, as does g.squarefree_decomposition().  I can get the sqrt via\ng.gcd(g.derivative()), which works in my case since I know that the\nsqrt is itself square-free.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3891\n\n",
     "created_at": "2008-08-18T14:00:37Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ CC:  @JohnCremona
 
 John Cremona requests a sqrt for polynomial rings:
 
-
 ```
 I have needed the following.  g(x) is a univariate polynomial which I
 know to be a square, and i want its square root.  g.factor() does too
@@ -30,7 +29,6 @@ much, as does g.squarefree_decomposition().  I can get the sqrt via
 g.gcd(g.derivative()), which works in my case since I know that the
 sqrt is itself square-free.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3891

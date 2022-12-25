@@ -112,7 +112,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095804.json:
 ```json
 {
-    "body": "> Nathann: The edits you made are fine. Thanks. I set this to \"positive review\". What's next? -Ed\nPeacefully waiting for the release managers to find it ? `:-)`\n\nNathann",
+    "body": "> Nathann: The edits you made are fine. Thanks. I set this to \"positive review\". What's next? -Ed\n\nPeacefully waiting for the release managers to find it ? `:-)`\n\nNathann",
     "created_at": "2010-09-03T21:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -122,6 +122,7 @@ archive/issue_comments_095804.json:
 ```
 
 > Nathann: The edits you made are fine. Thanks. I set this to "positive review". What's next? -Ed
+
 Peacefully waiting for the release managers to find it ? `:-)`
 
 Nathann
@@ -368,7 +369,7 @@ Rebased for a working 4.6.alpha2.  Apply only this patch.
 archive/issue_comments_095817.json:
 ```json
 {
-    "body": "I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject in `sage/graphs/graph_generators.py.rej`:\n\n```diff\n--- graph_generators.py\n+++ graph_generators.py\n@@ -196,6 +199,8 @@\n - Harald Schilly and Yann Laigle-Chapuy (2010-03-24): added Fibonacci Tree\n \n - Jason Grout (2010-06-04): cospectral_graphs\n+\n+- Ed Scheinerman (2010-08-21): added Grotzsch graph and Mycielski graphs \n \"\"\"\n \n ###########################################################################\n```\n",
+    "body": "I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject in `sage/graphs/graph_generators.py.rej`:\n\n```diff\n--- graph_generators.py\n+++ graph_generators.py\n@@ -196,6 +199,8 @@\n - Harald Schilly and Yann Laigle-Chapuy (2010-03-24): added Fibonacci Tree\n \n - Jason Grout (2010-06-04): cospectral_graphs\n+\n+- Ed Scheinerman (2010-08-21): added Grotzsch graph and Mycielski graphs \n \"\"\"\n \n ###########################################################################\n```",
     "created_at": "2010-09-29T09:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
@@ -392,7 +393,6 @@ I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject
  
  ###########################################################################
 ```
-
 
 
 

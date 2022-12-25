@@ -3,7 +3,7 @@
 archive/issues_000638.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\n> 2) Also it would be nice if the first line in the text of a\n>    worksheet was allowed to be a comment.  At the moment the\n>    first line is always assumed to be the title even if it\n>    starts with \"<!--\".\n\nThat's quite reasonable. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/638\n\n",
+    "body": "Assignee: boothby\n\n```\n\n> 2) Also it would be nice if the first line in the text of a\n>    worksheet was allowed to be a comment.  At the moment the\n>    first line is always assumed to be the title even if it\n>    starts with \"<!--\".\n\nThat's quite reasonable. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/638\n\n",
     "created_at": "2007-09-11T04:40:35Z",
     "labels": [
         "component: notebook"
@@ -17,7 +17,6 @@ archive/issues_000638.json:
 ```
 Assignee: boothby
 
-
 ```
 
 > 2) Also it would be nice if the first line in the text of a
@@ -27,7 +26,6 @@ Assignee: boothby
 
 That's quite reasonable. 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/638

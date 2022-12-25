@@ -153,7 +153,7 @@ but a lot of that is explained by monsky_washnitzer.py: 23% (25 of 107) whci som
 archive/issue_comments_016803.json:
 ```json
 {
-    "body": "I think this patch should be applied, because it is mostly good, but it's not perfect.  I've noted a few nits below, only one of which (the KeyError) should be addressed before application.\n\nThanks for your effort, John!\n\nThis is probably not your bug, John, but it doesn't look right.\n\n\n```\n606\t        EXAMPLES: \n607\t            sage: E=EllipticCurve(GF(5),[1,1]) \n608\t            sage: E._homset_class(GF(5^10,'a'),GF(5)) \n609\t            Abelian group of points on Finite Field in a of size 5^10\n```\n\n\nAlso, I really worry about double underscore functions at all -- I say replace with single underscore; then doctesting isn't so strange.\n\n\n```\n \t632\t            sage: E=EllipticCurve(QQ,[1,1]) \n \t633\t            sage: E._EllipticCurve_generic__is_over_RationalField() \n \t634\t            True \n```\n\n\nThis comment looks outdated, and should be removed:\n\n```\n \t521\t        def _pval(x):   # cannot be used for x=0 \n \t522\t            \"\"\" \n \t523\t            Local function returning the valuation of x at P \n \t524\t            \"\"\" \n522\t525\t            if x==0: return Infinity \n```\n\n\nI think things like\n\n```\n1809\t2264\t    def label(self): \n1810\t2265\t        r\"\"\" \n1811\t2266\t        Exactly the same as the \\code{cremona_label()} command. \n \t2267\t \n \t2268\t        EXAMPLES: \n \t2269\t            sage: E=EllipticCurve('389a1') \n \t2270\t            sage: E.label() \n \t2271\t            '389a1' \n \t2272\t \n1812\t2273\t        \"\"\" \n1813\t2274\t        return self.cremona_label() \n```\n\n\nshould be replaced with `label = cremona_label`.\n\nThis is not very helpful -- I would prefer, \"A ValueError is raised...\"\n\n```\n        2390\t        An error is raised if the curve does not have CM (see the \n \t2391\t        function has_cm()) \n```\n\nand change the code to raise ValueError; it seems more appropriate than KeyError.",
+    "body": "I think this patch should be applied, because it is mostly good, but it's not perfect.  I've noted a few nits below, only one of which (the KeyError) should be addressed before application.\n\nThanks for your effort, John!\n\nThis is probably not your bug, John, but it doesn't look right.\n\n```\n606\t        EXAMPLES: \n607\t            sage: E=EllipticCurve(GF(5),[1,1]) \n608\t            sage: E._homset_class(GF(5^10,'a'),GF(5)) \n609\t            Abelian group of points on Finite Field in a of size 5^10\n```\n\nAlso, I really worry about double underscore functions at all -- I say replace with single underscore; then doctesting isn't so strange.\n\n```\n \t632\t            sage: E=EllipticCurve(QQ,[1,1]) \n \t633\t            sage: E._EllipticCurve_generic__is_over_RationalField() \n \t634\t            True \n```\n\nThis comment looks outdated, and should be removed:\n\n```\n \t521\t        def _pval(x):   # cannot be used for x=0 \n \t522\t            \"\"\" \n \t523\t            Local function returning the valuation of x at P \n \t524\t            \"\"\" \n522\t525\t            if x==0: return Infinity \n```\n\nI think things like\n\n```\n1809\t2264\t    def label(self): \n1810\t2265\t        r\"\"\" \n1811\t2266\t        Exactly the same as the \\code{cremona_label()} command. \n \t2267\t \n \t2268\t        EXAMPLES: \n \t2269\t            sage: E=EllipticCurve('389a1') \n \t2270\t            sage: E.label() \n \t2271\t            '389a1' \n \t2272\t \n1812\t2273\t        \"\"\" \n1813\t2274\t        return self.cremona_label() \n```\n\nshould be replaced with `label = cremona_label`.\n\nThis is not very helpful -- I would prefer, \"A ValueError is raised...\"\n\n```\n        2390\t        An error is raised if the curve does not have CM (see the \n \t2391\t        function has_cm()) \n```\nand change the code to raise ValueError; it seems more appropriate than KeyError.",
     "created_at": "2008-03-14T18:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
@@ -168,7 +168,6 @@ Thanks for your effort, John!
 
 This is probably not your bug, John, but it doesn't look right.
 
-
 ```
 606	        EXAMPLES: 
 607	            sage: E=EllipticCurve(GF(5),[1,1]) 
@@ -176,16 +175,13 @@ This is probably not your bug, John, but it doesn't look right.
 609	            Abelian group of points on Finite Field in a of size 5^10
 ```
 
-
 Also, I really worry about double underscore functions at all -- I say replace with single underscore; then doctesting isn't so strange.
-
 
 ```
  	632	            sage: E=EllipticCurve(QQ,[1,1]) 
  	633	            sage: E._EllipticCurve_generic__is_over_RationalField() 
  	634	            True 
 ```
-
 
 This comment looks outdated, and should be removed:
 
@@ -196,7 +192,6 @@ This comment looks outdated, and should be removed:
  	524	            """ 
 522	525	            if x==0: return Infinity 
 ```
-
 
 I think things like
 
@@ -214,7 +209,6 @@ I think things like
 1813	2274	        return self.cremona_label() 
 ```
 
-
 should be replaced with `label = cremona_label`.
 
 This is not very helpful -- I would prefer, "A ValueError is raised..."
@@ -223,7 +217,6 @@ This is not very helpful -- I would prefer, "A ValueError is raised..."
         2390	        An error is raised if the curve does not have CM (see the 
  	2391	        function has_cm()) 
 ```
-
 and change the code to raise ValueError; it seems more appropriate than KeyError.
 
 

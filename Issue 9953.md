@@ -3,7 +3,7 @@
 archive/issues_009953.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nFor a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:\n\nINPUT\n\n```\nPolyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()\n```\n\n\nOUTPUT\n\n```\n[1, 3, 3, 1, 1]\n```\n\n\nExpected Output\n\n```\n[1, 3, 3, 1]\n```\n\n\nNote, this was reported by the \"report a problem\" form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9954\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nFor a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:\n\nINPUT\n\n```\nPolyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()\n```\n\nOUTPUT\n\n```\n[1, 3, 3, 1, 1]\n```\n\nExpected Output\n\n```\n[1, 3, 3, 1]\n```\n\nNote, this was reported by the \"report a problem\" form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9954\n\n",
     "created_at": "2010-09-20T18:17:56Z",
     "labels": [
         "component: geometry",
@@ -28,20 +28,17 @@ INPUT
 Polyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()
 ```
 
-
 OUTPUT
 
 ```
 [1, 3, 3, 1, 1]
 ```
 
-
 Expected Output
 
 ```
 [1, 3, 3, 1]
 ```
-
 
 Note, this was reported by the "report a problem" form.
 
@@ -330,7 +327,7 @@ One last pick - since `cone` module does not provide `Hasse_diagram` function an
 archive/issue_comments_099125.json:
 ```json
 {
-    "body": "\n```\napplying trac_9954_fix_face_lattice.patch\npatching file sage/geometry/polyhedra.py\nHunk #2 succeeded at 129 with fuzz 2 (offset 0 lines).\n```\n\n\n(I have #10024 and #10148 applied, since they are already merged.)",
+    "body": "```\napplying trac_9954_fix_face_lattice.patch\npatching file sage/geometry/polyhedra.py\nHunk #2 succeeded at 129 with fuzz 2 (offset 0 lines).\n```\n\n(I have #10024 and #10148 applied, since they are already merged.)",
     "created_at": "2010-11-08T20:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
@@ -339,13 +336,11 @@ archive/issue_comments_099125.json:
 }
 ```
 
-
 ```
 applying trac_9954_fix_face_lattice.patch
 patching file sage/geometry/polyhedra.py
 Hunk #2 succeeded at 129 with fuzz 2 (offset 0 lines).
 ```
-
 
 (I have #10024 and #10148 applied, since they are already merged.)
 

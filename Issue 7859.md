@@ -3,7 +3,7 @@
 archive/issues_007859.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nThe code\n\nR.<x> = AA[]\nv1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nv2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsqrt(v2 - 1)\n\nyields the error\n\nNameError: global name 'AlgebriacNumber' is not defined\n\nApparently there is a small typo in line 3394 of the file qqbar.py\n\nBest regards,\n\n/H\u00e5kan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7859\n\n",
+    "body": "Assignee: @aghitza\n\n```\nThe code\n\nR.<x> = AA[]\nv1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nv2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsqrt(v2 - 1)\n\nyields the error\n\nNameError: global name 'AlgebriacNumber' is not defined\n\nApparently there is a small typo in line 3394 of the file qqbar.py\n\nBest regards,\n\n/H\u00e5kan\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7859\n\n",
     "created_at": "2010-01-06T19:45:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_007859.json:
 }
 ```
 Assignee: @aghitza
-
 
 ```
 The code
@@ -39,7 +38,6 @@ Best regards,
 
 /Håkan
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7859
 
@@ -70,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068004.json:
 ```json
 {
-    "body": "\n```\n\nThat's known.  And it was  fixed by an earlier version of the patch at\n#6887 which was merged in 4.3.1.alpha1.  But I now see that that fix\nhas got lost, very strange.  It will need fixing again....\n\nJohn\n```\n",
+    "body": "```\n\nThat's known.  And it was  fixed by an earlier version of the patch at\n#6887 which was merged in 4.3.1.alpha1.  But I now see that that fix\nhas got lost, very strange.  It will need fixing again....\n\nJohn\n```",
     "created_at": "2010-01-06T20:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ archive/issue_comments_068004.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -88,7 +85,6 @@ has got lost, very strange.  It will need fixing again....
 
 John
 ```
-
 
 
 
@@ -223,7 +219,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_068012.json:
 ```json
 {
-    "body": "\n```\npatching file sage/rings/qqbar.py\nHunk #2 FAILED at 3392\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/qqbar.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7859.patch\n```\n",
+    "body": "```\npatching file sage/rings/qqbar.py\nHunk #2 FAILED at 3392\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/qqbar.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7859.patch\n```",
     "created_at": "2010-01-13T08:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -231,7 +227,6 @@ archive/issue_comments_068012.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 patching file sage/rings/qqbar.py
@@ -244,13 +239,12 @@ errors during apply, please fix and refresh trac_7859.patch
 
 
 
-
 ---
 
 archive/issue_comments_068013.json:
 ```json
 {
-    "body": "This issue seems to be fixed already in 4.3.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x> = AA[]\nsage: v1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n....:  CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n....:  RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nsage: \nsage: v2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsage: sqrt(v2 - 1)\n0\n```\n",
+    "body": "This issue seems to be fixed already in 4.3.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x> = AA[]\nsage: v1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n....:  CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n....:  RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nsage: \nsage: v2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsage: sqrt(v2 - 1)\n0\n```",
     "created_at": "2010-02-05T21:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -276,13 +270,12 @@ sage: sqrt(v2 - 1)
 
 
 
-
 ---
 
 archive/issue_comments_068014.json:
 ```json
 {
-    "body": "I agree.  This is fixed.  Possibly the doctest should be added, though.\n\n\n```\n~/sage/devel/sage/sage/rings% grep AlgebriacNumber *\n~/sage/devel/sage/sage/rings%\n```\n",
+    "body": "I agree.  This is fixed.  Possibly the doctest should be added, though.\n\n```\n~/sage/devel/sage/sage/rings% grep AlgebriacNumber *\n~/sage/devel/sage/sage/rings%\n```",
     "created_at": "2010-05-26T15:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
@@ -293,12 +286,10 @@ archive/issue_comments_068014.json:
 
 I agree.  This is fixed.  Possibly the doctest should be added, though.
 
-
 ```
 ~/sage/devel/sage/sage/rings% grep AlgebriacNumber *
 ~/sage/devel/sage/sage/rings%
 ```
-
 
 
 

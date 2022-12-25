@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9777
 archive/issue_comments_095777.json:
 ```json
 {
-    "body": "Here is a branch.\n\nBut is this still pertinent ?\n----\nNew commits:",
+    "body": "Here is a branch.\n\nBut is this still pertinent ?\n\n---\nNew commits:",
     "created_at": "2021-08-11T14:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
@@ -60,7 +60,8 @@ archive/issue_comments_095777.json:
 Here is a branch.
 
 But is this still pertinent ?
-----
+
+---
 New commits:
 
 
@@ -106,7 +107,7 @@ any opinion on the pertinence ?
 archive/issue_comments_095780.json:
 ```json
 {
-    "body": "Is this doctest checking the right function?\n\n\n```patch\n+\n+def padic_field():\n+    \"\"\"\n+    Return a random p-adic field modulo n with p at most 10000\n+    and precision between 10 and 100.\n+\n+    EXAMPLES::\n+\n+        sage: import sage.rings.tests\n+        sage: sage.rings.tests.integer_mod_ring()\n+        Ring of integers modulo 30029\n+    \"\"\"\n+    from sage.all import ZZ, Qp\n+    prec = ZZ.random_element(x=10, y=100)\n+    p = ZZ.random_element(x=2, y=10**4 - 30).next_prime()\n+    return Qp(p, prec)\n+\n+\n```\n\n\nIn any case, it would be nice to avoid adding *new* tests that require a specific random seed. We're pretty close to making all testing random testing.",
+    "body": "Is this doctest checking the right function?\n\n```patch\n+\n+def padic_field():\n+    \"\"\"\n+    Return a random p-adic field modulo n with p at most 10000\n+    and precision between 10 and 100.\n+\n+    EXAMPLES::\n+\n+        sage: import sage.rings.tests\n+        sage: sage.rings.tests.integer_mod_ring()\n+        Ring of integers modulo 30029\n+    \"\"\"\n+    from sage.all import ZZ, Qp\n+    prec = ZZ.random_element(x=10, y=100)\n+    p = ZZ.random_element(x=2, y=10**4 - 30).next_prime()\n+    return Qp(p, prec)\n+\n+\n```\n\nIn any case, it would be nice to avoid adding *new* tests that require a specific random seed. We're pretty close to making all testing random testing.",
     "created_at": "2021-08-19T23:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
@@ -116,7 +117,6 @@ archive/issue_comments_095780.json:
 ```
 
 Is this doctest checking the right function?
-
 
 ```patch
 +
@@ -138,7 +138,6 @@ Is this doctest checking the right function?
 +
 +
 ```
-
 
 In any case, it would be nice to avoid adding *new* tests that require a specific random seed. We're pretty close to making all testing random testing.
 

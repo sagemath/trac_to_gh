@@ -110,7 +110,7 @@ Very good work here.
 archive/issue_comments_017013.json:
 ```json
 {
-    "body": "Oops,\n\n```\nsage: C = LinearCode(Matrix(GF(2),[[0,1]]))\nsage: C.permutation_automorphism_group()\n*BOOM*\n```\n\nThis is probably just not checking for trivial generators or something. I don't think these patches introduced this, but it's very closely related...",
+    "body": "Oops,\n\n```\nsage: C = LinearCode(Matrix(GF(2),[[0,1]]))\nsage: C.permutation_automorphism_group()\n*BOOM*\n```\nThis is probably just not checking for trivial generators or something. I don't think these patches introduced this, but it's very closely related...",
     "created_at": "2008-03-15T23:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -126,7 +126,6 @@ sage: C = LinearCode(Matrix(GF(2),[[0,1]]))
 sage: C.permutation_automorphism_group()
 *BOOM*
 ```
-
 This is probably just not checking for trivial generators or something. I don't think these patches introduced this, but it's very closely related...
 
 
@@ -154,7 +153,7 @@ In fact, the problem above is caused by exactly that: in this case, `gens` is an
 archive/issue_comments_017015.json:
 ```json
 {
-    "body": "Thank you very much for finding this! I can fix this easily. \n\nThere still is the problem of the example\n\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: C.automorphism_group_binary_code()\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nI am forced to \"kill -9\" the entire process in this example.\nThe group is not trivial:\n\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: C\nLinear code of length 22, dimension 11 over Finite Field of size 2\nsage: C.is_self_dual()\nTrue\nsage: C.permutation_automorphism_group()\nPermutation Group with generators [(6,9)(8,17)(10,19)(11,16)(12,20)(13,22)(14,15), (5,8)(7,16)(9,18)(10,15)(12,21)(13,14)(19,22), (4,6)(7,14)(9,18)(10,12)(11,20)(13,16)(15,21)(19,22), (4,7)(6,14)(9,15)(10,19)(11,16)(12,22)(13,20)(18,21), (3,4)(5,7)(8,16)(10,19)(11,17)(13,14)(15,22), (2,3)(7,21)(10,13)(11,20)(12,16)(14,15)(19,22), (1,2)(6,12)(8,17)(9,20)(11,16)(13,15)(14,22)(18,21)]\n```\n",
+    "body": "Thank you very much for finding this! I can fix this easily. \n\nThere still is the problem of the example\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: C.automorphism_group_binary_code()\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nI am forced to \"kill -9\" the entire process in this example.\nThe group is not trivial:\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: C\nLinear code of length 22, dimension 11 over Finite Field of size 2\nsage: C.is_self_dual()\nTrue\nsage: C.permutation_automorphism_group()\nPermutation Group with generators [(6,9)(8,17)(10,19)(11,16)(12,20)(13,22)(14,15), (5,8)(7,16)(9,18)(10,15)(12,21)(13,14)(19,22), (4,6)(7,14)(9,18)(10,12)(11,20)(13,16)(15,21)(19,22), (4,7)(6,14)(9,15)(10,19)(11,16)(12,22)(13,20)(18,21), (3,4)(5,7)(8,16)(10,19)(11,17)(13,14)(15,22), (2,3)(7,21)(10,13)(11,20)(12,16)(14,15)(19,22), (1,2)(6,12)(8,17)(9,20)(11,16)(13,15)(14,22)(18,21)]\n```",
     "created_at": "2008-03-16T01:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -166,7 +165,6 @@ archive/issue_comments_017015.json:
 Thank you very much for finding this! I can fix this easily. 
 
 There still is the problem of the example
-
 
 ```
 sage: C = QuasiQuadraticResidueCode(11)
@@ -182,10 +180,8 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 I am forced to "kill -9" the entire process in this example.
 The group is not trivial:
-
 
 ```
 sage: C = QuasiQuadraticResidueCode(11)
@@ -196,7 +192,6 @@ True
 sage: C.permutation_automorphism_group()
 Permutation Group with generators [(6,9)(8,17)(10,19)(11,16)(12,20)(13,22)(14,15), (5,8)(7,16)(9,18)(10,15)(12,21)(13,14)(19,22), (4,6)(7,14)(9,18)(10,12)(11,20)(13,16)(15,21)(19,22), (4,7)(6,14)(9,15)(10,19)(11,16)(12,22)(13,20)(18,21), (3,4)(5,7)(8,16)(10,19)(11,17)(13,14)(15,22), (2,3)(7,21)(10,13)(11,20)(12,16)(14,15)(19,22), (1,2)(6,12)(8,17)(9,20)(11,16)(13,15)(14,22)(18,21)]
 ```
-
 
 
 
@@ -223,7 +218,7 @@ Regarding the `QuasiQuadraticResidueCode`, see #2541.
 archive/issue_comments_017017.json:
 ```json
 {
-    "body": "Michael Abshoff also noticed that this code is not very consistent. There are further issues with the `permutation_automorphism_group` function, but I'm not sure what's going on. Here is the traceback (if you just call this on random binary codes, it comes up pretty quickly):\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/rlmill/sage-2.10.3/<ipython console> in <module>()\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/coding/linear_code.py in permutation_automorphism_group(self, mode)\n   1447           gap.eval(\"Cwt:=Filtered(eltsC,c->WeightCodeword(c)=%s)\"%wt)   ## bottleneck 2 (repeated \n   1448           gap.eval(\"matCwt:=List(Cwt,c->VectorCodeword(c))\")            ##        for each i until stop = 1) \n-> 1449           gap.eval(\"A:=MatrixAutomorphisms(matCwt); GG:=Intersection(Gp,A)\")    ## bottleneck 3\n   1450           #print i,\" = i \\n\",gap.eval(\"matCwt\"),\" = matCwt\\n\"\n   1451           #print gap.eval(\"A\"),\" = A \\n\",gap.eval(\"GG\"),\" = GG\\n\\n\"\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)\n    307         if len(x) == 0 or x[len(x) - 1] != ';':\n    308             x += ';'\n--> 309         s = Expect.eval(self, x)\n    310         if newlines:\n    311             return s\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, **kwds)\n    705         try:\n    706             with gc_disabled():\n--> 707                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    708         except KeyboardInterrupt:\n    709             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    508                         return ''\n    509                 else:\n--> 510                     raise RuntimeError, message\n    511 \n    512         except KeyboardInterrupt:\n\n<type 'exceptions.RuntimeError'>: Gap produced error output\nLists Assignment: <list> must be a mutable list\n\n   executing A:=MatrixAutomorphisms(matCwt); GG:=Intersection(Gp,A);\n```\n",
+    "body": "Michael Abshoff also noticed that this code is not very consistent. There are further issues with the `permutation_automorphism_group` function, but I'm not sure what's going on. Here is the traceback (if you just call this on random binary codes, it comes up pretty quickly):\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/rlmill/sage-2.10.3/<ipython console> in <module>()\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/coding/linear_code.py in permutation_automorphism_group(self, mode)\n   1447           gap.eval(\"Cwt:=Filtered(eltsC,c->WeightCodeword(c)=%s)\"%wt)   ## bottleneck 2 (repeated \n   1448           gap.eval(\"matCwt:=List(Cwt,c->VectorCodeword(c))\")            ##        for each i until stop = 1) \n-> 1449           gap.eval(\"A:=MatrixAutomorphisms(matCwt); GG:=Intersection(Gp,A)\")    ## bottleneck 3\n   1450           #print i,\" = i \\n\",gap.eval(\"matCwt\"),\" = matCwt\\n\"\n   1451           #print gap.eval(\"A\"),\" = A \\n\",gap.eval(\"GG\"),\" = GG\\n\\n\"\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)\n    307         if len(x) == 0 or x[len(x) - 1] != ';':\n    308             x += ';'\n--> 309         s = Expect.eval(self, x)\n    310         if newlines:\n    311             return s\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, **kwds)\n    705         try:\n    706             with gc_disabled():\n--> 707                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    708         except KeyboardInterrupt:\n    709             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-2.10.3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    508                         return ''\n    509                 else:\n--> 510                     raise RuntimeError, message\n    511 \n    512         except KeyboardInterrupt:\n\n<type 'exceptions.RuntimeError'>: Gap produced error output\nLists Assignment: <list> must be a mutable list\n\n   executing A:=MatrixAutomorphisms(matCwt); GG:=Intersection(Gp,A);\n```",
     "created_at": "2008-03-16T03:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -273,7 +268,6 @@ Lists Assignment: <list> must be a mutable list
 
    executing A:=MatrixAutomorphisms(matCwt); GG:=Intersection(Gp,A);
 ```
-
 
 
 
@@ -387,7 +381,7 @@ Also, the instructions "apply 8916+8917 to 2.10.4.alpha0" omit that you also nee
 archive/issue_comments_017023.json:
 ```json
 {
-    "body": "Replying to [comment:14 rlm]:\n> Also, the instructions \"apply 8916+8917 to 2.10.4.alpha0\" omit that you also need to apply 8868.patch, or else Sage will not even start up properly! sd_codes was not added to the \"flattened\" patches...\n\nThe patches at this ticket seem to become very messy. rlm: Can you delete patches that are no longer valid?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:14 rlm]:\n> Also, the instructions \"apply 8916+8917 to 2.10.4.alpha0\" omit that you also need to apply 8868.patch, or else Sage will not even start up properly! sd_codes was not added to the \"flattened\" patches...\n\n\nThe patches at this ticket seem to become very messy. rlm: Can you delete patches that are no longer valid?\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T18:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -398,6 +392,7 @@ archive/issue_comments_017023.json:
 
 Replying to [comment:14 rlm]:
 > Also, the instructions "apply 8916+8917 to 2.10.4.alpha0" omit that you also need to apply 8868.patch, or else Sage will not even start up properly! sd_codes was not added to the "flattened" patches...
+
 
 The patches at this ticket seem to become very messy. rlm: Can you delete patches that are no longer valid?
 
@@ -642,7 +637,7 @@ I'll try again...
 archive/issue_comments_017036.json:
 ```json
 {
-    "body": "The attached patch I think does what you want.\n\n(a) It passes sage -testall on sage-2.10.4+your two patches above,\n(b) all \"## blah\" and \"#blah\" were replaced by \"# blah\",\n(c) it contains the fixed version of perm_aut_gp - for example\n\n\n```\nsage: for i in range(100):\n....:     C = RandomLinearCode( 20, 10, GF(2) )\n....:     print i, \", G= \", C.permutation_automorphism_group()\n....:\n0 , G=  Permutation Group with generators [()]\n1 , G=  Permutation Group with generators [()]\n2 , G=  Permutation Group with generators [()]\n3 , G=  Permutation Group with generators [(12,15), (2,12)]\n...\n```\n\nruns without crashing,\n(d) regarding your comment:\n\n\n```\nIn sd_codes.py, you have a function to return the codes of a certain length, yet when the function is called, the data for *all* lengths is prepared, before the data of the specified length is returned (and the rest thrown away). Why doesn't this style of coding bother you!?\n```\n\nI need further explanation. I wrote that file with the following goals in mind:\n(i) the file should be human readable,\n(ii)the entries should contain enough information to determine the sd codes uniquely\n(iii) the entries should contain all the \"expensive\" computations (eg, spectrum, aut gp order)\n(iv) a new entry should be easy to add by *someone else*.\nSo, that is the (subjective) basis for the data structures. If I understand your comment correctly, you are implying that\n\n```\nsage: C = self_dual_codes_binary(10)\n```\n\ncomputes information for (as an example) the sd codes of length n=8 and throws that out before returning the output. I simply do not understand how that is correct. The program is simply a case-by-case program which, in this example, reads off n as 10 and then proceeds to construct the dictionary of inequivalent self-dual binary codes of length 10 (and only 10). At least, unless I'm misunderstanding how Python works, that is what I think it does.\n\nHope this works this time!",
+    "body": "The attached patch I think does what you want.\n\n(a) It passes sage -testall on sage-2.10.4+your two patches above,\n(b) all \"## blah\" and \"#blah\" were replaced by \"# blah\",\n(c) it contains the fixed version of perm_aut_gp - for example\n\n```\nsage: for i in range(100):\n....:     C = RandomLinearCode( 20, 10, GF(2) )\n....:     print i, \", G= \", C.permutation_automorphism_group()\n....:\n0 , G=  Permutation Group with generators [()]\n1 , G=  Permutation Group with generators [()]\n2 , G=  Permutation Group with generators [()]\n3 , G=  Permutation Group with generators [(12,15), (2,12)]\n...\n```\nruns without crashing,\n(d) regarding your comment:\n\n```\nIn sd_codes.py, you have a function to return the codes of a certain length, yet when the function is called, the data for *all* lengths is prepared, before the data of the specified length is returned (and the rest thrown away). Why doesn't this style of coding bother you!?\n```\nI need further explanation. I wrote that file with the following goals in mind:\n(i) the file should be human readable,\n(ii)the entries should contain enough information to determine the sd codes uniquely\n(iii) the entries should contain all the \"expensive\" computations (eg, spectrum, aut gp order)\n(iv) a new entry should be easy to add by *someone else*.\nSo, that is the (subjective) basis for the data structures. If I understand your comment correctly, you are implying that\n\n```\nsage: C = self_dual_codes_binary(10)\n```\ncomputes information for (as an example) the sd codes of length n=8 and throws that out before returning the output. I simply do not understand how that is correct. The program is simply a case-by-case program which, in this example, reads off n as 10 and then proceeds to construct the dictionary of inequivalent self-dual binary codes of length 10 (and only 10). At least, unless I'm misunderstanding how Python works, that is what I think it does.\n\nHope this works this time!",
     "created_at": "2008-03-20T10:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -657,7 +652,6 @@ The attached patch I think does what you want.
 (b) all "## blah" and "#blah" were replaced by "# blah",
 (c) it contains the fixed version of perm_aut_gp - for example
 
-
 ```
 sage: for i in range(100):
 ....:     C = RandomLinearCode( 20, 10, GF(2) )
@@ -669,15 +663,12 @@ sage: for i in range(100):
 3 , G=  Permutation Group with generators [(12,15), (2,12)]
 ...
 ```
-
 runs without crashing,
 (d) regarding your comment:
-
 
 ```
 In sd_codes.py, you have a function to return the codes of a certain length, yet when the function is called, the data for *all* lengths is prepared, before the data of the specified length is returned (and the rest thrown away). Why doesn't this style of coding bother you!?
 ```
-
 I need further explanation. I wrote that file with the following goals in mind:
 (i) the file should be human readable,
 (ii)the entries should contain enough information to determine the sd codes uniquely
@@ -688,7 +679,6 @@ So, that is the (subjective) basis for the data structures. If I understand your
 ```
 sage: C = self_dual_codes_binary(10)
 ```
-
 computes information for (as an example) the sd codes of length n=8 and throws that out before returning the output. I simply do not understand how that is correct. The program is simply a case-by-case program which, in this example, reads off n as 10 and then proceeds to construct the dictionary of inequivalent self-dual binary codes of length 10 (and only 10). At least, unless I'm misunderstanding how Python works, that is what I think it does.
 
 Hope this works this time!
@@ -764,7 +754,7 @@ apply all 4 (in order) to 2.10.4
 archive/issue_comments_017040.json:
 ```json
 {
-    "body": "Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2514/8965.patch) by @wdjoyner created at 2008-03-20 14:28:16\n\nrlm:\n\n```\nI guess the real thing is that the code is very hard to read. There are several databases included with Sage, and they are not source-code databases. That is a very strange choice to me.\n```\n\nwdj:\nI wanted it human-readable (maybe I can get a student to work on it, if I'm lucky) since it is so incomplete. I needed a table of data to test certain conjectures against. This fit the bill. When it is more complete, another format might be more suitable.\n\nrlm:\n\n```\nSome of your doctests have <BLANKLINE>'s after the commands. Things look better, and you'll be more consistent with the rest of the source code in Sage, if you simply remove these lines. The doctests should still pass the same. It's a little jarring for someone reading the docs.\n\nWhy are the minimum distance bound functions commented out? \n```\n\nwdj:\nThe BLANKLINES are all removed and the patch has been retested (and passes). I removed the\ncommented out minimum distance bound functions several versions ago. (I think someone else commented them out when Brouwer's tables went down some time ago. I never bothered to delete them until recently.)\n\nrlm:\n\n```\nThe rest of the code looks pretty good. As I've indicated, I give this patch a positive review, modulo the few issues mentioned, but you're going to need to get a second opinion from someone else.\n```\n\nwdj:\nSorry, I misunderstood again. When I asked you if you objected to a \"code bomb\", I was assuming that you were the only referee. Since you said no, you didn't mind, I submitted it.",
+    "body": "Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2514/8965.patch) by @wdjoyner created at 2008-03-20 14:28:16\n\nrlm:\n\n```\nI guess the real thing is that the code is very hard to read. There are several databases included with Sage, and they are not source-code databases. That is a very strange choice to me.\n```\nwdj:\nI wanted it human-readable (maybe I can get a student to work on it, if I'm lucky) since it is so incomplete. I needed a table of data to test certain conjectures against. This fit the bill. When it is more complete, another format might be more suitable.\n\nrlm:\n\n```\nSome of your doctests have <BLANKLINE>'s after the commands. Things look better, and you'll be more consistent with the rest of the source code in Sage, if you simply remove these lines. The doctests should still pass the same. It's a little jarring for someone reading the docs.\n\nWhy are the minimum distance bound functions commented out? \n```\nwdj:\nThe BLANKLINES are all removed and the patch has been retested (and passes). I removed the\ncommented out minimum distance bound functions several versions ago. (I think someone else commented them out when Brouwer's tables went down some time ago. I never bothered to delete them until recently.)\n\nrlm:\n\n```\nThe rest of the code looks pretty good. As I've indicated, I give this patch a positive review, modulo the few issues mentioned, but you're going to need to get a second opinion from someone else.\n```\nwdj:\nSorry, I misunderstood again. When I asked you if you objected to a \"code bomb\", I was assuming that you were the only referee. Since you said no, you didn't mind, I submitted it.",
     "created_at": "2008-03-20T14:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -780,7 +770,6 @@ rlm:
 ```
 I guess the real thing is that the code is very hard to read. There are several databases included with Sage, and they are not source-code databases. That is a very strange choice to me.
 ```
-
 wdj:
 I wanted it human-readable (maybe I can get a student to work on it, if I'm lucky) since it is so incomplete. I needed a table of data to test certain conjectures against. This fit the bill. When it is more complete, another format might be more suitable.
 
@@ -791,7 +780,6 @@ Some of your doctests have <BLANKLINE>'s after the commands. Things look better,
 
 Why are the minimum distance bound functions commented out? 
 ```
-
 wdj:
 The BLANKLINES are all removed and the patch has been retested (and passes). I removed the
 commented out minimum distance bound functions several versions ago. (I think someone else commented them out when Brouwer's tables went down some time ago. I never bothered to delete them until recently.)
@@ -801,7 +789,6 @@ rlm:
 ```
 The rest of the code looks pretty good. As I've indicated, I give this patch a positive review, modulo the few issues mentioned, but you're going to need to get a second opinion from someone else.
 ```
-
 wdj:
 Sorry, I misunderstood again. When I asked you if you objected to a "code bomb", I was assuming that you were the only referee. Since you said no, you didn't mind, I submitted it.
 
@@ -812,7 +799,7 @@ Sorry, I misunderstood again. When I asked you if you objected to a "code bomb",
 archive/issue_comments_017041.json:
 ```json
 {
-    "body": "\n```\nSorry, I misunderstood again. When I asked you if you\nobjected to a \"code bomb\", I was assuming that you were\nthe only referee. Since you said no, you didn't mind, I\nsubmitted it.\n```\n\n\nThis isn't *that* much of a code bomb-- the problem is really that my judgment has kind of fuzzed over, due to exhaustion. I give things as they are a positive review, so all you need is another set of eyes to go over the code and make sure there aren't any blatant issues I might have missed.",
+    "body": "```\nSorry, I misunderstood again. When I asked you if you\nobjected to a \"code bomb\", I was assuming that you were\nthe only referee. Since you said no, you didn't mind, I\nsubmitted it.\n```\n\nThis isn't *that* much of a code bomb-- the problem is really that my judgment has kind of fuzzed over, due to exhaustion. I give things as they are a positive review, so all you need is another set of eyes to go over the code and make sure there aren't any blatant issues I might have missed.",
     "created_at": "2008-03-20T19:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",
     "type": "issue_comment",
@@ -821,14 +808,12 @@ archive/issue_comments_017041.json:
 }
 ```
 
-
 ```
 Sorry, I misunderstood again. When I asked you if you
 objected to a "code bomb", I was assuming that you were
 the only referee. Since you said no, you didn't mind, I
 submitted it.
 ```
-
 
 This isn't *that* much of a code bomb-- the problem is really that my judgment has kind of fuzzed over, due to exhaustion. I give things as they are a positive review, so all you need is another set of eyes to go over the code and make sure there aren't any blatant issues I might have missed.
 

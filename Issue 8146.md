@@ -3,7 +3,7 @@
 archive/issues_008146.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @qed777\n\nKeywords: French tutorial\n\nTicket #8036 fixes some issues with non-ASCII characters in the reference manual. But it breaks the building of the HTML version of the French tutorial:\n\n```\nsphinx-build -b html -d /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/doctrees/fr/tutorial    /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\nRunning Sphinx v0.6.3\n\nException occurred:\n  File \"/scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial/conf.py\", line 38, in <module>\n    latex_preamble += '\\\\DeclareUnicodeCharacter{00A0}{\\\\nobreakspace}\\n'\nNameError: name 'latex_preamble' is not defined\nThe full traceback has been saved in /tmp/sphinx-err-6XQBIT.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nSend reports to sphinx-dev@googlegroups.com. Thanks!\nBuild finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\n```\n\nThis is due to the deletion of the line\n\n```\nlatex_preamble = '\\usepackage{amsmath}\\n\\usepackage{amsfonts}\\n' \n```\n\nin [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch). I'm making this a blocker against Sage 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8146\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @qed777\n\nKeywords: French tutorial\n\nTicket #8036 fixes some issues with non-ASCII characters in the reference manual. But it breaks the building of the HTML version of the French tutorial:\n\n```\nsphinx-build -b html -d /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/doctrees/fr/tutorial    /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\nRunning Sphinx v0.6.3\n\nException occurred:\n  File \"/scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial/conf.py\", line 38, in <module>\n    latex_preamble += '\\\\DeclareUnicodeCharacter{00A0}{\\\\nobreakspace}\\n'\nNameError: name 'latex_preamble' is not defined\nThe full traceback has been saved in /tmp/sphinx-err-6XQBIT.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nSend reports to sphinx-dev@googlegroups.com. Thanks!\nBuild finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\n```\nThis is due to the deletion of the line\n\n```\nlatex_preamble = '\\usepackage{amsmath}\\n\\usepackage{amsfonts}\\n' \n```\nin [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch). I'm making this a blocker against Sage 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8146\n\n",
     "created_at": "2010-02-02T02:02:41Z",
     "labels": [
         "component: documentation",
@@ -38,13 +38,11 @@ Please also report this if it was a user error, so that a better error message c
 Send reports to sphinx-dev@googlegroups.com. Thanks!
 Build finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial
 ```
-
 This is due to the deletion of the line
 
 ```
 latex_preamble = '\usepackage{amsmath}\n\usepackage{amsfonts}\n' 
 ```
-
 in [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch). I'm making this a blocker against Sage 4.3.2.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8146

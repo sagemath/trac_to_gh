@@ -124,7 +124,7 @@ See what's new at: http://matplotlib.sourceforge.net/users/whats_new.html
 archive/issue_comments_086281.json:
 ```json
 {
-    "body": "This was in the log, so I think this should compile on Solaris now:\n\n\n```\n2010-07-02 Modified CXX/WrapPython.h to fix \"swab bug\" on solaris so\n           mpl can compile on Solaris with CXX6 in the trunk.  Closes\n           tracker bug 3022815 - JDH\n```\n",
+    "body": "This was in the log, so I think this should compile on Solaris now:\n\n```\n2010-07-02 Modified CXX/WrapPython.h to fix \"swab bug\" on solaris so\n           mpl can compile on Solaris with CXX6 in the trunk.  Closes\n           tracker bug 3022815 - JDH\n```",
     "created_at": "2010-07-07T05:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -135,13 +135,11 @@ archive/issue_comments_086281.json:
 
 This was in the log, so I think this should compile on Solaris now:
 
-
 ```
 2010-07-02 Modified CXX/WrapPython.h to fix "swab bug" on solaris so
            mpl can compile on Solaris with CXX6 in the trunk.  Closes
            tracker bug 3022815 - JDH
 ```
-
 
 
 
@@ -168,7 +166,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_086283.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> This was in the log, so I think this should compile on Solaris now:\n> \n> {{{\n> 2010-07-02 Modified CXX/WrapPython.h to fix \"swab bug\" on solaris so\n>            mpl can compile on Solaris with CXX6 in the trunk.  Closes\n>            tracker bug 3022815 - JDH\n> }}}\n\nNo such luck. I've tried on both Solaris 10 on SPARC, and OpenSolaris on x64. It looks like a mix of compilation modes is causing them to get two different definitions for *swab*. \n\nThe bug tracker suggests this was a very recent fix, so may not have made it into 1.0. If if did make it into 1.0, then it failed to solve the problem. \n\n## Solaris 10 update with Sun UltraSPARC T2+ processors\n\n* Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler. \n* A build of sage-4.5.alpha4 was used to test matplotlib-1.0.0.spkg\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f \n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used. \n\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c agg24/src/agg_vcgen_dash.cpp -o build/temp.solaris-2.10-sun4v-2.6/agg24/src/agg_vcgen_dash.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c agg24/src/agg_image_filters.cpp -o build/temp.solaris-2.10-sun4v-2.6/agg24/src/agg_image_filters.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c src/backend_agg.cpp -o build/temp.solaris-2.10-sun4v-2.6/src/backend_agg.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/pyconfig.h:1013:1: warning: \"_FILE_OFFSET_BITS\" redefined\nIn file included from /usr/include/sys/types.h:18,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/zconf.h:364,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/zlib.h:34,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/png.h:470,\n                 from src/backend_agg.cpp:3:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:197:1: warning: this is the location of the previous definition\nIn file included from /tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:42,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/usr/include/stdlib.h:144: error: declaration of C function \u2018void swab(const char*, char*, ssize_t)\u2019 conflicts with\n/usr/include/unistd.h:496: error: previous declaration \u2018void swab(const void*, void*, ssize_t)\u2019 here\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\nreal    3m35.224s\nuser    3m20.924s\nsys     0m9.504s\nsage: An error occurred while installing matplotlib-1.0.0\n```\n\n\n## OpenSolaris 2009.06 on x64 hardware\n\n* Sun Ultra 27 \n* 1 x 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads.\n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* gcc 4.4.4 configured to use the Sun linker and GNU assembler. \n* A build of sage-4.5.alpha4 was used to test matplotlib-1.0.0.spkg\n* 64-bit build. OpenSolaris defaults to 32-bit, but the environment variable `SAGE64=yes` was used.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n\n```\ngcc -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -O2 -g -m64 -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.alpha4/local/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.alpha4/local/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -Isrc/freetype2 -Iagg24/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/python2.6 -c src/backend_agg.cpp -o build/temp.solaris-2.11-i86pc-2.6/src/backend_agg.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /export/home/drkirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:42,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/usr/include/stdlib.h:159: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with\n/usr/include/unistd.h:513: error: previous declaration 'void swab(const void*, void*, ssize_t)' here\nsrc/backend_agg.cpp: In member function 'Py::Object RendererAgg::draw_markers(const Py::Tuple&)':\nsrc/backend_agg.cpp:727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:763: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:763: warning: dereferencing type-punned pointer will break strict-aliasing rules\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\nreal\t0m19.778s\nuser\t0m17.826s\nsys\t0m1.441s\nsage: An error occurred while installing matplotlib-1.0.0\n```\n",
+    "body": "Replying to [comment:6 jason]:\n> This was in the log, so I think this should compile on Solaris now:\n> \n> \n> ```\n> 2010-07-02 Modified CXX/WrapPython.h to fix \"swab bug\" on solaris so\n>            mpl can compile on Solaris with CXX6 in the trunk.  Closes\n>            tracker bug 3022815 - JDH\n> ```\n\n\nNo such luck. I've tried on both Solaris 10 on SPARC, and OpenSolaris on x64. It looks like a mix of compilation modes is causing them to get two different definitions for *swab*. \n\nThe bug tracker suggests this was a very recent fix, so may not have made it into 1.0. If if did make it into 1.0, then it failed to solve the problem. \n\n## Solaris 10 update with Sun UltraSPARC T2+ processors\n\n* Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler. \n* A build of sage-4.5.alpha4 was used to test matplotlib-1.0.0.spkg\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f \n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used. \n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c agg24/src/agg_vcgen_dash.cpp -o build/temp.solaris-2.10-sun4v-2.6/agg24/src/agg_vcgen_dash.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c agg24/src/agg_image_filters.cpp -o build/temp.solaris-2.10-sun4v-2.6/agg24/src/agg_image_filters.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c src/backend_agg.cpp -o build/temp.solaris-2.10-sun4v-2.6/src/backend_agg.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/pyconfig.h:1013:1: warning: \"_FILE_OFFSET_BITS\" redefined\nIn file included from /usr/include/sys/types.h:18,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/zconf.h:364,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/zlib.h:34,\n                 from /tmp/kirkby/sage-4.5.alpha4/local/include/png.h:470,\n                 from src/backend_agg.cpp:3:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:197:1: warning: this is the location of the previous definition\nIn file included from /tmp/kirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:42,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/usr/include/stdlib.h:144: error: declaration of C function \u2018void swab(const char*, char*, ssize_t)\u2019 conflicts with\n/usr/include/unistd.h:496: error: previous declaration \u2018void swab(const void*, void*, ssize_t)\u2019 here\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\nreal    3m35.224s\nuser    3m20.924s\nsys     0m9.504s\nsage: An error occurred while installing matplotlib-1.0.0\n```\n\n## OpenSolaris 2009.06 on x64 hardware\n\n* Sun Ultra 27 \n* 1 x 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads.\n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* gcc 4.4.4 configured to use the Sun linker and GNU assembler. \n* A build of sage-4.5.alpha4 was used to test matplotlib-1.0.0.spkg\n* 64-bit build. OpenSolaris defaults to 32-bit, but the environment variable `SAGE64=yes` was used.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n\n```\ngcc -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -O2 -g -m64 -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.alpha4/local/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.alpha4/local/include -I. -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -Isrc/freetype2 -Iagg24/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include/freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/freetype2 -I./freetype2 -I/export/home/drkirkby/sage-4.5.alpha4/local/include/python2.6 -c src/backend_agg.cpp -o build/temp.solaris-2.11-i86pc-2.6/src/backend_agg.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /export/home/drkirkby/sage-4.5.alpha4/local/include/python2.6/Python.h:42,\n                 from ./CXX/WrapPython.h:61,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/backend_agg.cpp:10:\n/usr/include/stdlib.h:159: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with\n/usr/include/unistd.h:513: error: previous declaration 'void swab(const void*, void*, ssize_t)' here\nsrc/backend_agg.cpp: In member function 'Py::Object RendererAgg::draw_markers(const Py::Tuple&)':\nsrc/backend_agg.cpp:727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:727: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:763: warning: dereferencing type-punned pointer will break strict-aliasing rules\nsrc/backend_agg.cpp:763: warning: dereferencing type-punned pointer will break strict-aliasing rules\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\nreal\t0m19.778s\nuser\t0m17.826s\nsys\t0m1.441s\nsage: An error occurred while installing matplotlib-1.0.0\n```",
     "created_at": "2010-07-07T08:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -180,11 +178,13 @@ archive/issue_comments_086283.json:
 Replying to [comment:6 jason]:
 > This was in the log, so I think this should compile on Solaris now:
 > 
-> {{{
+> 
+> ```
 > 2010-07-02 Modified CXX/WrapPython.h to fix "swab bug" on solaris so
 >            mpl can compile on Solaris with CXX6 in the trunk.  Closes
 >            tracker bug 3022815 - JDH
-> }}}
+> ```
+
 
 No such luck. I've tried on both Solaris 10 on SPARC, and OpenSolaris on x64. It looks like a mix of compilation modes is causing them to get two different definitions for *swab*. 
 
@@ -201,7 +201,6 @@ The bug tracker suggests this was a very recent fix, so may not have made it int
 * A build of sage-4.5.alpha4 was used to test matplotlib-1.0.0.spkg
 * MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f 
 * 32-bit build (This is the default). The environment variable `SAGE64` was **not** used. 
-
 
 ```
 gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -Isrc -Iagg24/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/site-packages/numpy/core/include -I/tmp/kirkby/sage-4.5.alpha4/local/include/freetype2 -I/tmp/kirkby/sage-4.5.alpha4/local/include -I. -I/tmp/kirkby/sage-4.5.alpha4/local/include/python2.6 -c agg24/src/agg_vcgen_dash.cpp -o build/temp.solaris-2.10-sun4v-2.6/agg24/src/agg_vcgen_dash.o
@@ -237,7 +236,6 @@ user    3m20.924s
 sys     0m9.504s
 sage: An error occurred while installing matplotlib-1.0.0
 ```
-
 
 ## OpenSolaris 2009.06 on x64 hardware
 
@@ -276,7 +274,6 @@ sage: An error occurred while installing matplotlib-1.0.0
 
 
 
-
 ---
 
 archive/issue_comments_086284.json:
@@ -307,7 +304,7 @@ before it is officially ready for review.
 archive/issue_comments_086285.json:
 ```json
 {
-    "body": "David,\n\nI verified that the md5 you reported is for the right spkg and contains the fix.  If you have time, could you download the vanilla matplotlib source and try compiling that, just to make sure it isn't a problem with the Sage environment?  The 1.0.0 source is here:\n\nhttps://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.0/  (I can't test this URL; it isn't loading for me...)\n\nThe installation instructions are here:\n\nhttp://matplotlib.sourceforge.net/users/installing.html\n\nand basically are:\n\n\n```\ncd matplotlib\npython setup.py build\npython setup.py install\n```\n\n\nI've also posted a report to https://sourceforge.net/mailarchive/forum.php?thread_name=4C349BDE.4020604%40creativetrax.com&forum_name=matplotlib-devel",
+    "body": "David,\n\nI verified that the md5 you reported is for the right spkg and contains the fix.  If you have time, could you download the vanilla matplotlib source and try compiling that, just to make sure it isn't a problem with the Sage environment?  The 1.0.0 source is here:\n\nhttps://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.0/  (I can't test this URL; it isn't loading for me...)\n\nThe installation instructions are here:\n\nhttp://matplotlib.sourceforge.net/users/installing.html\n\nand basically are:\n\n```\ncd matplotlib\npython setup.py build\npython setup.py install\n```\n\nI've also posted a report to https://sourceforge.net/mailarchive/forum.php?thread_name=4C349BDE.4020604%40creativetrax.com&forum_name=matplotlib-devel",
     "created_at": "2010-07-07T15:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -328,13 +325,11 @@ http://matplotlib.sourceforge.net/users/installing.html
 
 and basically are:
 
-
 ```
 cd matplotlib
 python setup.py build
 python setup.py install
 ```
-
 
 I've also posted a report to https://sourceforge.net/mailarchive/forum.php?thread_name=4C349BDE.4020604%40creativetrax.com&forum_name=matplotlib-devel
 
@@ -385,7 +380,7 @@ before and after to check this.
 archive/issue_comments_086288.json:
 ```json
 {
-    "body": "David,\n\nCould you test compiling the vanilla matplotlib 1.0 source on solaris to see if the issue is in the vanilla upstream package?\n\nJust download from http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.0/matplotlib-1.0.0.tar.gz/download\n\nThen untar and do:\n\n\n```\ncd matplotlib\npython setup.py build\npython setup.py install\n```\n\n\n(or use `sage -python` if you want to install into a Sage version of python).",
+    "body": "David,\n\nCould you test compiling the vanilla matplotlib 1.0 source on solaris to see if the issue is in the vanilla upstream package?\n\nJust download from http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.0/matplotlib-1.0.0.tar.gz/download\n\nThen untar and do:\n\n```\ncd matplotlib\npython setup.py build\npython setup.py install\n```\n\n(or use `sage -python` if you want to install into a Sage version of python).",
     "created_at": "2010-08-14T05:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -402,13 +397,11 @@ Just download from http://sourceforge.net/projects/matplotlib/files/matplotlib/m
 
 Then untar and do:
 
-
 ```
 cd matplotlib
 python setup.py build
 python setup.py install
 ```
-
 
 (or use `sage -python` if you want to install into a Sage version of python).
 
@@ -437,7 +430,7 @@ For reference, here is the mailing list post where John Hunter discusses the fix
 archive/issue_comments_086290.json:
 ```json
 {
-    "body": "It's not so easy to test the upstream source code directly, as there are dependencies which are not provided on Solaris. On 't2.math' I get:\n\n\n```\nkirkby@t2:32 ~/matplotlib-1.0.0$ python setup.py build\nbasedirlist is: ['/usr/local']\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 1.0.0\n                python: 2.4.4 (#1, Jan 10 2007, 01:25:01) [C]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\n\nBut Numpy has a whole list of dependencies of its own, so I don't want to spend a long time setting that lot up. \n\nBut I just retried your .spkg on 't2' using a working copy of the latest `sage-4.5.3.alpha0` and find exactly the same problem. \n\nI also tried on my OpenSolaris machine inside a slightly modified version of `sage-4.5.3.alpha0`. Again, I get the same problem as before. \n\nTo me this looks like an upstream bug, and not anything introduced in Sage. \n\nI just checked the source code, and see the code is actually in matplotlib-1.0.0. \n\n\n```\n// Prevent multiple conflicting definitions of swab from stdlib.h and unistd.h\n#if defined(__sun) || defined(sun)\n#if defined(_XPG4)\n#undef _XPG4\n#endif\n#if defined(_XPG3)\n#undef _XPG3\n#endif\n#endif\n```\n\n\nIt seems a bit of a hack to me. If `_XPG4` or `_XPG3` are defined, there were defined for good reason, and I doubt simply undefining them is the right way to tackle this. I could imagine this could cause a whole lot more problems than it solves. \n\nAccording to http://en.wikipedia.org/wiki/X/Open the [Single UNIX Specification](http://en.wikipedia.org/wiki/Single_UNIX_Specification) was based on the XPG4 standard, so I would not be surprised that undefining `_XPG4` will cause problems as the behavior of hundreds of header files will be changed.",
+    "body": "It's not so easy to test the upstream source code directly, as there are dependencies which are not provided on Solaris. On 't2.math' I get:\n\n```\nkirkby@t2:32 ~/matplotlib-1.0.0$ python setup.py build\nbasedirlist is: ['/usr/local']\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 1.0.0\n                python: 2.4.4 (#1, Jan 10 2007, 01:25:01) [C]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\nBut Numpy has a whole list of dependencies of its own, so I don't want to spend a long time setting that lot up. \n\nBut I just retried your .spkg on 't2' using a working copy of the latest `sage-4.5.3.alpha0` and find exactly the same problem. \n\nI also tried on my OpenSolaris machine inside a slightly modified version of `sage-4.5.3.alpha0`. Again, I get the same problem as before. \n\nTo me this looks like an upstream bug, and not anything introduced in Sage. \n\nI just checked the source code, and see the code is actually in matplotlib-1.0.0. \n\n```\n// Prevent multiple conflicting definitions of swab from stdlib.h and unistd.h\n#if defined(__sun) || defined(sun)\n#if defined(_XPG4)\n#undef _XPG4\n#endif\n#if defined(_XPG3)\n#undef _XPG3\n#endif\n#endif\n```\n\nIt seems a bit of a hack to me. If `_XPG4` or `_XPG3` are defined, there were defined for good reason, and I doubt simply undefining them is the right way to tackle this. I could imagine this could cause a whole lot more problems than it solves. \n\nAccording to http://en.wikipedia.org/wiki/X/Open the [Single UNIX Specification](http://en.wikipedia.org/wiki/Single_UNIX_Specification) was based on the XPG4 standard, so I would not be surprised that undefining `_XPG4` will cause problems as the behavior of hundreds of header files will be changed.",
     "created_at": "2010-08-14T07:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -447,7 +440,6 @@ archive/issue_comments_086290.json:
 ```
 
 It's not so easy to test the upstream source code directly, as there are dependencies which are not provided on Solaris. On 't2.math' I get:
-
 
 ```
 kirkby@t2:32 ~/matplotlib-1.0.0$ python setup.py build
@@ -464,7 +456,6 @@ REQUIRED DEPENDENCIES
                         * matplotlib.
 ```
 
-
 But Numpy has a whole list of dependencies of its own, so I don't want to spend a long time setting that lot up. 
 
 But I just retried your .spkg on 't2' using a working copy of the latest `sage-4.5.3.alpha0` and find exactly the same problem. 
@@ -474,7 +465,6 @@ I also tried on my OpenSolaris machine inside a slightly modified version of `sa
 To me this looks like an upstream bug, and not anything introduced in Sage. 
 
 I just checked the source code, and see the code is actually in matplotlib-1.0.0. 
-
 
 ```
 // Prevent multiple conflicting definitions of swab from stdlib.h and unistd.h
@@ -488,7 +478,6 @@ I just checked the source code, and see the code is actually in matplotlib-1.0.0
 #endif
 ```
 
-
 It seems a bit of a hack to me. If `_XPG4` or `_XPG3` are defined, there were defined for good reason, and I doubt simply undefining them is the right way to tackle this. I could imagine this could cause a whole lot more problems than it solves. 
 
 According to http://en.wikipedia.org/wiki/X/Open the [Single UNIX Specification](http://en.wikipedia.org/wiki/Single_UNIX_Specification) was based on the XPG4 standard, so I would not be surprised that undefining `_XPG4` will cause problems as the behavior of hundreds of header files will be changed.
@@ -500,7 +489,7 @@ According to http://en.wikipedia.org/wiki/X/Open the [Single UNIX Specification]
 archive/issue_comments_086291.json:
 ```json
 {
-    "body": "BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n\n\n```\ndrkirkby@hawk:~$ cat test.c\n#include <stdio.h>\n#include <unistd.h>\n#include <stdlib.h>\n\nint main() {\n   printf(\"Hello world\\n\");\n   exit(0);\n}\n\ndrkirkby@hawk:~$ gcc -Wall test.c\ndrkirkby@hawk:~$ ./a.out\nHello world\n```\n",
+    "body": "BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n\n```\ndrkirkby@hawk:~$ cat test.c\n#include <stdio.h>\n#include <unistd.h>\n#include <stdlib.h>\n\nint main() {\n   printf(\"Hello world\\n\");\n   exit(0);\n}\n\ndrkirkby@hawk:~$ gcc -Wall test.c\ndrkirkby@hawk:~$ ./a.out\nHello world\n```",
     "created_at": "2010-08-14T08:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -510,7 +499,6 @@ archive/issue_comments_086291.json:
 ```
 
 BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a "hello world" that does just that. 
-
 
 ```
 drkirkby@hawk:~$ cat test.c
@@ -527,7 +515,6 @@ drkirkby@hawk:~$ gcc -Wall test.c
 drkirkby@hawk:~$ ./a.out
 Hello world
 ```
-
 
 
 
@@ -556,7 +543,7 @@ With the patch, all doctests in plot/*.py pass with matplotlib 1.0.
 archive/issue_comments_086293.json:
 ```json
 {
-    "body": "Replying to [comment:16 drkirkby]:\n> BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n> \n> {{{\n> drkirkby`@`hawk:~$ cat test.c\n> #include <stdio.h>\n> #include <unistd.h>\n> #include <stdlib.h>\n> \n> int main() {\n>    printf(\"Hello world\\n\");\n>    exit(0);\n> }\n> \n> drkirkby`@`hawk:~$ gcc -Wall test.c\n> drkirkby`@`hawk:~$ ./a.out\n> Hello world\n> }}}\n\n\nInteresting.  In this case, it seems like they want to include Python.h.\n\nBy default, which of _XPG4 or _XPG3 is defined in your compiler?  From the code in stdlib.h, it looks like setting _XPG4, but undefining _XPG3, should work.",
+    "body": "Replying to [comment:16 drkirkby]:\n> BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n> \n> \n> ```\n> drkirkby@hawk:~$ cat test.c\n> #include <stdio.h>\n> #include <unistd.h>\n> #include <stdlib.h>\n> \n> int main() {\n>    printf(\"Hello world\\n\");\n>    exit(0);\n> }\n> \n> drkirkby@hawk:~$ gcc -Wall test.c\n> drkirkby@hawk:~$ ./a.out\n> Hello world\n> ```\n\n\n\nInteresting.  In this case, it seems like they want to include Python.h.\n\nBy default, which of _XPG4 or _XPG3 is defined in your compiler?  From the code in stdlib.h, it looks like setting _XPG4, but undefining _XPG3, should work.",
     "created_at": "2010-08-14T16:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -568,8 +555,9 @@ archive/issue_comments_086293.json:
 Replying to [comment:16 drkirkby]:
 > BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a "hello world" that does just that. 
 > 
-> {{{
-> drkirkby`@`hawk:~$ cat test.c
+> 
+> ```
+> drkirkby@hawk:~$ cat test.c
 > #include <stdio.h>
 > #include <unistd.h>
 > #include <stdlib.h>
@@ -579,10 +567,11 @@ Replying to [comment:16 drkirkby]:
 >    exit(0);
 > }
 > 
-> drkirkby`@`hawk:~$ gcc -Wall test.c
-> drkirkby`@`hawk:~$ ./a.out
+> drkirkby@hawk:~$ gcc -Wall test.c
+> drkirkby@hawk:~$ ./a.out
 > Hello world
-> }}}
+> ```
+
 
 
 Interesting.  In this case, it seems like they want to include Python.h.
@@ -596,7 +585,7 @@ By default, which of _XPG4 or _XPG3 is defined in your compiler?  From the code 
 archive/issue_comments_086294.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> Replying to [comment:16 drkirkby]:\n> > BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n> > \n> > {{{\n> > drkirkby`@`hawk:~$ cat test.c\n> > #include <stdio.h>\n> > #include <unistd.h>\n> > #include <stdlib.h>\n> > \n> > int main() {\n> >    printf(\"Hello world\\n\");\n> >    exit(0);\n> > }\n> > \n> > drkirkby`@`hawk:~$ gcc -Wall test.c\n> > drkirkby`@`hawk:~$ ./a.out\n> > Hello world\n> > }}}\n> \n> \n> Interesting.  In this case, it seems like they want to include Python.h.\n\nI've no idea. \n\n> By default, which of _XPG4 or _XPG3 is defined in your compiler?  \n\nNeither of them. \n\nOne can see what gets defined with any combination of C and header files by pre-processing a file, and using the -dM options. To get the defaults, just use an empty file or /dev/null. This is a very useful trick some times. \n\n\n```\ndrkirkby@laptop:~$ gcc -dM -E - </dev/null  \n#define __DBL_MIN_EXP__ (-1021)\n#define __FLT_MIN__ 1.17549435e-38F\n#define __CHAR_BIT__ 8\n#define __WCHAR_MAX__ 2147483647\n#define __DBL_DENORM_MIN__ 4.9406564584124654e-324\n#define __FLT_EVAL_METHOD__ 2\n\netc etc\n```\n\n\nFor the case of a test file where both unistd.h and stdlib.h are defined, we see both `_XOPEN_XPG3` and `_XOPEN_XPG4` get defined, but not `_XPG3` or `_XPG4`. \n\n\n```\ndrkirkby@laptop:~$ gcc -dM -E  test.c | grep XPG\n#define _XOPEN_XPG3 \n#define _XOPEN_XPG4 \n```\n\n\n> From the code in stdlib.h, it looks like setting _XPG4, but undefining _XPG3, should work.\n\nI don't think one should go defining `_XPG3` and `_XPG4`  directly, but if one does do that, then one can induce the error depending on what you define and what header files you include. I leave it for you to prove that to yourself. (Try it on 't2.math') \n\nI can suggest a few resources that might shed some light on it. \n\n* http://www.opengroup.org/forums/\n* gcc-help mailing list. (The mainly Linux crowd are bound to blame Sun, but worth asking anyway.)\n* comp.unix.solaris newsgroup http://groups.google.com/group/comp.unix.solaris\n* comp.lang.c newsgroup http://groups.google.co.uk/group/comp.lang.c \n\nThere's probably a few more. Sorry I don't know the answer, but I doubt it needs on to go around defining `_XPG4` or similar. \n\n\nDave",
+    "body": "Replying to [comment:18 jason]:\n> Replying to [comment:16 drkirkby]:\n> > BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a \"hello world\" that does just that. \n> > \n> > \n> > ```\n> > drkirkby@hawk:~$ cat test.c\n> > #include <stdio.h>\n> > #include <unistd.h>\n> > #include <stdlib.h>\n> > \n> > int main() {\n> >    printf(\"Hello world\\n\");\n> >    exit(0);\n> > }\n> > \n> > drkirkby@hawk:~$ gcc -Wall test.c\n> > drkirkby@hawk:~$ ./a.out\n> > Hello world\n> > ```\n\n> \n> \n> Interesting.  In this case, it seems like they want to include Python.h.\n\n\nI've no idea. \n\n> By default, which of _XPG4 or _XPG3 is defined in your compiler?  \n\n\nNeither of them. \n\nOne can see what gets defined with any combination of C and header files by pre-processing a file, and using the -dM options. To get the defaults, just use an empty file or /dev/null. This is a very useful trick some times. \n\n```\ndrkirkby@laptop:~$ gcc -dM -E - </dev/null  \n#define __DBL_MIN_EXP__ (-1021)\n#define __FLT_MIN__ 1.17549435e-38F\n#define __CHAR_BIT__ 8\n#define __WCHAR_MAX__ 2147483647\n#define __DBL_DENORM_MIN__ 4.9406564584124654e-324\n#define __FLT_EVAL_METHOD__ 2\n\netc etc\n```\n\nFor the case of a test file where both unistd.h and stdlib.h are defined, we see both `_XOPEN_XPG3` and `_XOPEN_XPG4` get defined, but not `_XPG3` or `_XPG4`. \n\n```\ndrkirkby@laptop:~$ gcc -dM -E  test.c | grep XPG\n#define _XOPEN_XPG3 \n#define _XOPEN_XPG4 \n```\n\n> From the code in stdlib.h, it looks like setting _XPG4, but undefining _XPG3, should work.\n\n\nI don't think one should go defining `_XPG3` and `_XPG4`  directly, but if one does do that, then one can induce the error depending on what you define and what header files you include. I leave it for you to prove that to yourself. (Try it on 't2.math') \n\nI can suggest a few resources that might shed some light on it. \n\n* http://www.opengroup.org/forums/\n* gcc-help mailing list. (The mainly Linux crowd are bound to blame Sun, but worth asking anyway.)\n* comp.unix.solaris newsgroup http://groups.google.com/group/comp.unix.solaris\n* comp.lang.c newsgroup http://groups.google.co.uk/group/comp.lang.c \n\nThere's probably a few more. Sorry I don't know the answer, but I doubt it needs on to go around defining `_XPG4` or similar. \n\n\nDave",
     "created_at": "2010-08-14T17:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -609,8 +598,9 @@ Replying to [comment:18 jason]:
 > Replying to [comment:16 drkirkby]:
 > > BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` included in the one source file - here's a "hello world" that does just that. 
 > > 
-> > {{{
-> > drkirkby`@`hawk:~$ cat test.c
+> > 
+> > ```
+> > drkirkby@hawk:~$ cat test.c
 > > #include <stdio.h>
 > > #include <unistd.h>
 > > #include <stdlib.h>
@@ -620,22 +610,24 @@ Replying to [comment:18 jason]:
 > >    exit(0);
 > > }
 > > 
-> > drkirkby`@`hawk:~$ gcc -Wall test.c
-> > drkirkby`@`hawk:~$ ./a.out
+> > drkirkby@hawk:~$ gcc -Wall test.c
+> > drkirkby@hawk:~$ ./a.out
 > > Hello world
-> > }}}
+> > ```
+
 > 
 > 
 > Interesting.  In this case, it seems like they want to include Python.h.
+
 
 I've no idea. 
 
 > By default, which of _XPG4 or _XPG3 is defined in your compiler?  
 
+
 Neither of them. 
 
 One can see what gets defined with any combination of C and header files by pre-processing a file, and using the -dM options. To get the defaults, just use an empty file or /dev/null. This is a very useful trick some times. 
-
 
 ```
 drkirkby@laptop:~$ gcc -dM -E - </dev/null  
@@ -649,9 +641,7 @@ drkirkby@laptop:~$ gcc -dM -E - </dev/null
 etc etc
 ```
 
-
 For the case of a test file where both unistd.h and stdlib.h are defined, we see both `_XOPEN_XPG3` and `_XOPEN_XPG4` get defined, but not `_XPG3` or `_XPG4`. 
-
 
 ```
 drkirkby@laptop:~$ gcc -dM -E  test.c | grep XPG
@@ -659,8 +649,8 @@ drkirkby@laptop:~$ gcc -dM -E  test.c | grep XPG
 #define _XOPEN_XPG4 
 ```
 
-
 > From the code in stdlib.h, it looks like setting _XPG4, but undefining _XPG3, should work.
+
 
 I don't think one should go defining `_XPG3` and `_XPG4`  directly, but if one does do that, then one can induce the error depending on what you define and what header files you include. I leave it for you to prove that to yourself. (Try it on 't2.math') 
 
@@ -737,7 +727,7 @@ Can I get an account on a Solaris box and instructions for reproducing this prob
 archive/issue_comments_086298.json:
 ```json
 {
-    "body": "Replying to [comment:22 jason]:\n> Can I get an account on a Solaris box and instructions for reproducing this problem?  This is getting hard to debug without access to the hardware.\n\nAsk William - he can give you an account on t2.math, which is a Solaris 10 SPARC system. \n\nDave",
+    "body": "Replying to [comment:22 jason]:\n> Can I get an account on a Solaris box and instructions for reproducing this problem?  This is getting hard to debug without access to the hardware.\n\n\nAsk William - he can give you an account on t2.math, which is a Solaris 10 SPARC system. \n\nDave",
     "created_at": "2010-09-08T16:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -748,6 +738,7 @@ archive/issue_comments_086298.json:
 
 Replying to [comment:22 jason]:
 > Can I get an account on a Solaris box and instructions for reproducing this problem?  This is getting hard to debug without access to the hardware.
+
 
 Ask William - he can give you an account on t2.math, which is a Solaris 10 SPARC system. 
 
@@ -760,7 +751,7 @@ Dave
 archive/issue_comments_086299.json:
 ```json
 {
-    "body": "I'm trying it out on t2 right now.  I logged into t2, extracted {{{/usr/local/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS.tar.gz}} to /scratch/grout, and then tried (as a control) to install the current matplotlib spkg:\n\n\n```\n./sage -f spkg/standard/matplotlib-0.99.3.spkg\n```\n\n\ngave errors like these:\n\n\n```\n\nbuilding 'matplotlib.ft2font' extension\ncreating build/temp.solaris-2.10-sun4v-2.6\ncreating build/temp.solaris-2.10-sun4v-2.6/src\ncreating build/temp.solaris-2.10-sun4v-2.6/CXX\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.1/local/include/freetype2 -I/export/home/drkirkby/sage-4.5.1/local/include -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/ -I/usr/local/include -I. -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/python2.6 -c src/ft2font.cpp -o build/temp.solaris-2.10-sun4v-2.6/src/ft2font.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ext/hash_map:59,\n                 from ./CXX/Extensions.hxx:68,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/backward/backward_warning.h:28:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated.\nIn file included from src/ft2font.h:13,\n                 from src/ft2font.cpp:1:\n/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/ft2build.h:56:38: error: freetype/config/ftheader.h: No such file or directory\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:14:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:15:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:16:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:17:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:18:10: error: #include expects \"FILENAME\" or <FILENAME>\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:31: error: \u2018FT_Bitmap\u2019 has not been declared\nsrc/ft2font.h:31: error: \u2018FT_Int\u2019 has not been declared\nsrc/ft2font.h:31: error: \u2018FT_Int\u2019 has not been declared\nsrc/ft2font.h:77: error: ISO C++ forbids declaration of \u2018FT_Face\u2019 with no type\nsrc/ft2font.h:77: error: expected \u2018,\u2019 or \u2018...\u2019 before \u2018&\u2019 token\nsrc/ft2font.h:83: error: ISO C++ forbids declaration of \u2018FT_Face\u2019 with no type\nsrc/ft2font.h:83: error: expected \u2018,\u2019 or \u2018...\u2019 before \u2018&\u2019 token\nsrc/ft2font.h:122: error: \u2018FT_Face\u2019 does not name a type\nsrc/ft2font.h:123: error: \u2018FT_Matrix\u2019 does not name a type\nsrc/ft2font.h:124: error: \u2018FT_Vector\u2019 does not name a type\nsrc/ft2font.h:125: error: \u2018FT_Error\u2019 does not name a type\nsrc/ft2font.h:126: error: \u2018FT_Glyph\u2019 was not declared in this scope\nsrc/ft2font.h:126: error: template argument 1 is invalid\nsrc/ft2font.h:126: error: template argument 2 is invalid\nsrc/ft2font.h:127: error: \u2018FT_Vector\u2019 was not declared in this scope\nsrc/ft2font.h:127: error: template argument 1 is invalid\nsrc/ft2font.h:127: error: template argument 2 is invalid\nsrc/ft2font.h:133: error: \u2018FT_BBox\u2019 does not name a type\nsrc/ft2font.cpp:45: error: \u2018FT_Library\u2019 does not name a type\nsrc/ft2font.cpp:96: error: variable or field \u2018draw_bitmap\u2019 declared void\nsrc/ft2font.cpp:96: error: \u2018FT_Bitmap\u2019 was not declared in this scope\nsrc/ft2font.cpp:96: error: \u2018bitmap\u2019 was not declared in this scope\nsrc/ft2font.cpp:97: error: \u2018FT_Int\u2019 was not declared in this scope\nsrc/ft2font.cpp:98: error: \u2018FT_Int\u2019 was not declared in this scope\n/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/python2.6/site-packages/numpy/core/include/numpy/__multiarray_api.h:968: warning: \u2018int _import_array()\u2019 defined but not used\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\n```\n\n\nDo you know how I can get up to at least installing the current matplotlib spkg on t2?  When I tried my updated 1.0 spkg, I also got these errors.",
+    "body": "I'm trying it out on t2 right now.  I logged into t2, extracted {{{/usr/local/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS.tar.gz}} to /scratch/grout, and then tried (as a control) to install the current matplotlib spkg:\n\n```\n./sage -f spkg/standard/matplotlib-0.99.3.spkg\n```\n\ngave errors like these:\n\n```\n\nbuilding 'matplotlib.ft2font' extension\ncreating build/temp.solaris-2.10-sun4v-2.6\ncreating build/temp.solaris-2.10-sun4v-2.6/src\ncreating build/temp.solaris-2.10-sun4v-2.6/CXX\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/python2.6/site-packages/numpy/core/include -I/export/home/drkirkby/sage-4.5.1/local/include/freetype2 -I/export/home/drkirkby/sage-4.5.1/local/include -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/ -I/usr/local/include -I. -I/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/python2.6 -c src/ft2font.cpp -o build/temp.solaris-2.10-sun4v-2.6/src/ft2font.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ext/hash_map:59,\n                 from ./CXX/Extensions.hxx:68,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/backward/backward_warning.h:28:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated.\nIn file included from src/ft2font.h:13,\n                 from src/ft2font.cpp:1:\n/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/include/ft2build.h:56:38: error: freetype/config/ftheader.h: No such file or directory\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:14:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:15:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:16:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:17:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:18:10: error: #include expects \"FILENAME\" or <FILENAME>\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:31: error: \u2018FT_Bitmap\u2019 has not been declared\nsrc/ft2font.h:31: error: \u2018FT_Int\u2019 has not been declared\nsrc/ft2font.h:31: error: \u2018FT_Int\u2019 has not been declared\nsrc/ft2font.h:77: error: ISO C++ forbids declaration of \u2018FT_Face\u2019 with no type\nsrc/ft2font.h:77: error: expected \u2018,\u2019 or \u2018...\u2019 before \u2018&\u2019 token\nsrc/ft2font.h:83: error: ISO C++ forbids declaration of \u2018FT_Face\u2019 with no type\nsrc/ft2font.h:83: error: expected \u2018,\u2019 or \u2018...\u2019 before \u2018&\u2019 token\nsrc/ft2font.h:122: error: \u2018FT_Face\u2019 does not name a type\nsrc/ft2font.h:123: error: \u2018FT_Matrix\u2019 does not name a type\nsrc/ft2font.h:124: error: \u2018FT_Vector\u2019 does not name a type\nsrc/ft2font.h:125: error: \u2018FT_Error\u2019 does not name a type\nsrc/ft2font.h:126: error: \u2018FT_Glyph\u2019 was not declared in this scope\nsrc/ft2font.h:126: error: template argument 1 is invalid\nsrc/ft2font.h:126: error: template argument 2 is invalid\nsrc/ft2font.h:127: error: \u2018FT_Vector\u2019 was not declared in this scope\nsrc/ft2font.h:127: error: template argument 1 is invalid\nsrc/ft2font.h:127: error: template argument 2 is invalid\nsrc/ft2font.h:133: error: \u2018FT_BBox\u2019 does not name a type\nsrc/ft2font.cpp:45: error: \u2018FT_Library\u2019 does not name a type\nsrc/ft2font.cpp:96: error: variable or field \u2018draw_bitmap\u2019 declared void\nsrc/ft2font.cpp:96: error: \u2018FT_Bitmap\u2019 was not declared in this scope\nsrc/ft2font.cpp:96: error: \u2018bitmap\u2019 was not declared in this scope\nsrc/ft2font.cpp:97: error: \u2018FT_Int\u2019 was not declared in this scope\nsrc/ft2font.cpp:98: error: \u2018FT_Int\u2019 was not declared in this scope\n/scratch/grout/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/python2.6/site-packages/numpy/core/include/numpy/__multiarray_api.h:968: warning: \u2018int _import_array()\u2019 defined but not used\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n\n```\n\nDo you know how I can get up to at least installing the current matplotlib spkg on t2?  When I tried my updated 1.0 spkg, I also got these errors.",
     "created_at": "2010-09-09T18:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -771,14 +762,11 @@ archive/issue_comments_086299.json:
 
 I'm trying it out on t2 right now.  I logged into t2, extracted {{{/usr/local/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS.tar.gz}} to /scratch/grout, and then tried (as a control) to install the current matplotlib spkg:
 
-
 ```
 ./sage -f spkg/standard/matplotlib-0.99.3.spkg
 ```
 
-
 gave errors like these:
-
 
 ```
 
@@ -833,7 +821,6 @@ Error building matplotlib package.
 
 ```
 
-
 Do you know how I can get up to at least installing the current matplotlib spkg on t2?  When I tried my updated 1.0 spkg, I also got these errors.
 
 
@@ -861,7 +848,7 @@ FYI, I did do the recommended `. /usr/local/gcc-4.4.1-sun-linker/gcc441sun` firs
 archive/issue_comments_086301.json:
 ```json
 {
-    "body": "It appears that the problem is in sage-location.  Note that the local/lib/pkgconfig/freetype2.pc file is\n\n```\nprefix=/export/home/drkirkby/sage-4.5.1/local\nexec_prefix=${prefix}\nlibdir=${exec_prefix}/lib\nincludedir=${prefix}/include\n\nName: FreeType 2\nDescription: A free, high-quality, and portable font engine.\nVersion: 9.16.3\nRequires:\nLibs: -L${libdir} -lfreetype -lz \nCflags: -I${includedir}/freetype2 -I${includedir}\n```\n\n\nwhich means it points to totally the wrong place once Sage is moved.  This should be fixed over on #9210.",
+    "body": "It appears that the problem is in sage-location.  Note that the local/lib/pkgconfig/freetype2.pc file is\n\n```\nprefix=/export/home/drkirkby/sage-4.5.1/local\nexec_prefix=${prefix}\nlibdir=${exec_prefix}/lib\nincludedir=${prefix}/include\n\nName: FreeType 2\nDescription: A free, high-quality, and portable font engine.\nVersion: 9.16.3\nRequires:\nLibs: -L${libdir} -lfreetype -lz \nCflags: -I${includedir}/freetype2 -I${includedir}\n```\n\nwhich means it points to totally the wrong place once Sage is moved.  This should be fixed over on #9210.",
     "created_at": "2010-09-09T19:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -886,7 +873,6 @@ Libs: -L${libdir} -lfreetype -lz
 Cflags: -I${includedir}/freetype2 -I${includedir}
 ```
 
-
 which means it points to totally the wrong place once Sage is moved.  This should be fixed over on #9210.
 
 
@@ -896,7 +882,7 @@ which means it points to totally the wrong place once Sage is moved.  This shoul
 archive/issue_comments_086302.json:
 ```json
 {
-    "body": "Jason,\n\nI have no idea why this did not work for you. That binary was not built on 't2' but on another machine, with the expectation it would work on any SPARC. However, I am aware moving Sage does not always work. \n\nI can only suggest you build the latest Sage from source. Just remember to set something like\n\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=yes\nexport MAKE=\"make -j8\"\n```\n\n\notherwise it will take ages to build. \n\nDave",
+    "body": "Jason,\n\nI have no idea why this did not work for you. That binary was not built on 't2' but on another machine, with the expectation it would work on any SPARC. However, I am aware moving Sage does not always work. \n\nI can only suggest you build the latest Sage from source. Just remember to set something like\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=yes\nexport MAKE=\"make -j8\"\n```\n\notherwise it will take ages to build. \n\nDave",
     "created_at": "2010-09-09T19:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -911,12 +897,10 @@ I have no idea why this did not work for you. That binary was not built on 't2' 
 
 I can only suggest you build the latest Sage from source. Just remember to set something like
 
-
 ```
 export SAGE_PARALLEL_SPKG_BUILD=yes
 export MAKE="make -j8"
 ```
-
 
 otherwise it will take ages to build. 
 
@@ -929,7 +913,7 @@ Dave
 archive/issue_comments_086303.json:
 ```json
 {
-    "body": "BTW, there's a binary at \n\n\n```\n/scratch/sage-4.5.3.rc0-binary.tar\n```\n\n\nyou could try extracting that. \n\nBut again, it has been moved, though in that case the binary was built on t2.math. \n\nDave",
+    "body": "BTW, there's a binary at \n\n```\n/scratch/sage-4.5.3.rc0-binary.tar\n```\n\nyou could try extracting that. \n\nBut again, it has been moved, though in that case the binary was built on t2.math. \n\nDave",
     "created_at": "2010-09-09T19:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -940,11 +924,9 @@ archive/issue_comments_086303.json:
 
 BTW, there's a binary at 
 
-
 ```
 /scratch/sage-4.5.3.rc0-binary.tar
 ```
-
 
 you could try extracting that. 
 
@@ -959,7 +941,7 @@ Dave
 archive/issue_comments_086304.json:
 ```json
 {
-    "body": "Replying to [comment:27 drkirkby]:\n> Jason,\n> \n> I have no idea why this did not work for you. That binary was not built on 't2' but on another machine, with the expectation it would work on any SPARC. However, I am aware moving Sage does not always work. \n> \n> I can only suggest you build the latest Sage from source. Just remember to set something like\n> \n> {{{\n> export SAGE_PARALLEL_SPKG_BUILD=yes\n> export MAKE=\"make -j8\"\n> }}}\n> \n> otherwise it will take ages to build. \n> \n\nThanks; I'll do that.  I'm 99% sure my problem is caused by a Sage directory move.",
+    "body": "Replying to [comment:27 drkirkby]:\n> Jason,\n> \n> I have no idea why this did not work for you. That binary was not built on 't2' but on another machine, with the expectation it would work on any SPARC. However, I am aware moving Sage does not always work. \n> \n> I can only suggest you build the latest Sage from source. Just remember to set something like\n> \n> \n> ```\n> export SAGE_PARALLEL_SPKG_BUILD=yes\n> export MAKE=\"make -j8\"\n> ```\n> \n> otherwise it will take ages to build. \n> \n\n\nThanks; I'll do that.  I'm 99% sure my problem is caused by a Sage directory move.",
     "created_at": "2010-09-09T20:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -975,13 +957,15 @@ Replying to [comment:27 drkirkby]:
 > 
 > I can only suggest you build the latest Sage from source. Just remember to set something like
 > 
-> {{{
+> 
+> ```
 > export SAGE_PARALLEL_SPKG_BUILD=yes
 > export MAKE="make -j8"
-> }}}
+> ```
 > 
 > otherwise it will take ages to build. 
 > 
+
 
 Thanks; I'll do that.  I'm 99% sure my problem is caused by a Sage directory move.
 
@@ -1010,7 +994,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086306.json:
 ```json
 {
-    "body": "Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n\nhttp://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n\nCan people try it?  Basically, I just deleted in CXX/WrapPython.h any fudging with the defines, based on drkirkby's idea above that it ought not have to do that.  The new WrapPython.h is:\n\n\n```\n#ifndef __PyCXX_wrap_python_hxx__\n#define __PyCXX_wrap_python_hxx__\n\n// On some platforms we have to include time.h to get select defined\n#if !defined(__WIN32__) && !defined(WIN32) && !defined(_WIN32) && !defined(_WIN64)\n#include <sys/time.h>\n#endif\n\n// pull in python definitions\n#include <Python.h>\n\n#endif\n```\n\n\nHere it passes the matplotlib test suite:\n\n\n```\nIn [1]: import matplotlib\nIn [2]: matplotlib.__version__\nOut[2]: '1.0.0'\n\nIn [3]: matplotlib.test()\n/scratch/grout/sage-4.5.3/local/lib/python2.6/site-packages/matplotlib/axes.py:2369: UserWarning: Attempting to set identical left==right results\nin singular transformations; automatically expanding.\nleft=730139.0, right=730139.0\n  + 'left=%s, right=%s') % (left, right))\n----------------------------------------------------------------------\nRan 138 tests in 755.419s\n\nOK (KNOWNFAIL=42)\nOut[3]: True\n```\n",
+    "body": "Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n\nhttp://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n\nCan people try it?  Basically, I just deleted in CXX/WrapPython.h any fudging with the defines, based on drkirkby's idea above that it ought not have to do that.  The new WrapPython.h is:\n\n```\n#ifndef __PyCXX_wrap_python_hxx__\n#define __PyCXX_wrap_python_hxx__\n\n// On some platforms we have to include time.h to get select defined\n#if !defined(__WIN32__) && !defined(WIN32) && !defined(_WIN32) && !defined(_WIN64)\n#include <sys/time.h>\n#endif\n\n// pull in python definitions\n#include <Python.h>\n\n#endif\n```\n\nHere it passes the matplotlib test suite:\n\n```\nIn [1]: import matplotlib\nIn [2]: matplotlib.__version__\nOut[2]: '1.0.0'\n\nIn [3]: matplotlib.test()\n/scratch/grout/sage-4.5.3/local/lib/python2.6/site-packages/matplotlib/axes.py:2369: UserWarning: Attempting to set identical left==right results\nin singular transformations; automatically expanding.\nleft=730139.0, right=730139.0\n  + 'left=%s, right=%s') % (left, right))\n----------------------------------------------------------------------\nRan 138 tests in 755.419s\n\nOK (KNOWNFAIL=42)\nOut[3]: True\n```",
     "created_at": "2010-09-16T18:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1024,7 +1008,6 @@ Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib te
 http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg
 
 Can people try it?  Basically, I just deleted in CXX/WrapPython.h any fudging with the defines, based on drkirkby's idea above that it ought not have to do that.  The new WrapPython.h is:
-
 
 ```
 #ifndef __PyCXX_wrap_python_hxx__
@@ -1041,9 +1024,7 @@ Can people try it?  Basically, I just deleted in CXX/WrapPython.h any fudging wi
 #endif
 ```
 
-
 Here it passes the matplotlib test suite:
-
 
 ```
 In [1]: import matplotlib
@@ -1064,13 +1045,12 @@ Out[3]: True
 
 
 
-
 ---
 
 archive/issue_comments_086307.json:
 ```json
 {
-    "body": "Replying to [comment:30 jason]:\n> Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> \n> http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> \n> Can people try it? \n\nI should be able to try this on OS X 10.4 PPC today or tomorrow.",
+    "body": "Replying to [comment:30 jason]:\n> Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> \n> http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> \n> Can people try it? \n\n\nI should be able to try this on OS X 10.4 PPC today or tomorrow.",
     "created_at": "2010-09-16T18:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1085,6 +1065,7 @@ Replying to [comment:30 jason]:
 > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg
 > 
 > Can people try it? 
+
 
 I should be able to try this on OS X 10.4 PPC today or tomorrow.
 
@@ -1115,7 +1096,7 @@ http://sourceforge.net/mailarchive/message.php?msg_name=4C9262A9.5040901%40creat
 archive/issue_comments_086309.json:
 ```json
 {
-    "body": "Replying to [comment:31 kcrisman]:\n> Replying to [comment:30 jason]:\n> > Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> > \n> > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> > \n> > Can people try it? \n> \n> I should be able to try this on OS X 10.4 PPC today or tomorrow.\n\nSeems to be working a-ok here, no issues.\n\nBy the way, to drkirkby, looks like matplotlib also uses `nose` to run their tests, like scipy and numpy.  I get no indication that `SAGE_CHECK=yes` does anything - or would - because of that.  \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: import mat \nmath        matplotlib  \nsage: import matplotlib\nsage: matplotlib.test()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n| Sage Version 4.6.prealpha4, Release Date: 2010-09-07               |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/student/<ipython console> in <module>()\n\n/Users/student/Desktop/sage-4.6.prealpha4/local/lib/python2.6/site-packages/matplotlib/__init__.pyc in test(verbosity)\n    922 def test(verbosity=0):\n    923     \"\"\"run the matplotlib test suite\"\"\"\n--> 924     import nose\n    925     import nose.plugins.builtin\n    926     from testing.noseclasses import KnownFailure\n\nImportError: No module named nose\n```\n\nIf we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.",
+    "body": "Replying to [comment:31 kcrisman]:\n> Replying to [comment:30 jason]:\n> > Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> > \n> > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> > \n> > Can people try it? \n\n> \n> I should be able to try this on OS X 10.4 PPC today or tomorrow.\n\n\nSeems to be working a-ok here, no issues.\n\nBy the way, to drkirkby, looks like matplotlib also uses `nose` to run their tests, like scipy and numpy.  I get no indication that `SAGE_CHECK=yes` does anything - or would - because of that.  \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: import mat \nmath        matplotlib  \nsage: import matplotlib\nsage: matplotlib.test()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n| Sage Version 4.6.prealpha4, Release Date: 2010-09-07               |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/student/<ipython console> in <module>()\n\n/Users/student/Desktop/sage-4.6.prealpha4/local/lib/python2.6/site-packages/matplotlib/__init__.pyc in test(verbosity)\n    922 def test(verbosity=0):\n    923     \"\"\"run the matplotlib test suite\"\"\"\n--> 924     import nose\n    925     import nose.plugins.builtin\n    926     from testing.noseclasses import KnownFailure\n\nImportError: No module named nose\n```\nIf we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.",
     "created_at": "2010-09-16T20:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1131,8 +1112,10 @@ Replying to [comment:31 kcrisman]:
 > > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg
 > > 
 > > Can people try it? 
+
 > 
 > I should be able to try this on OS X 10.4 PPC today or tomorrow.
+
 
 Seems to be working a-ok here, no issues.
 
@@ -1165,7 +1148,6 @@ ImportError                               Traceback (most recent call last)
 
 ImportError: No module named nose
 ```
-
 If we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.
 
 
@@ -1193,7 +1175,7 @@ Sorry; I should have CCd you on this: #9221
 archive/issue_comments_086311.json:
 ```json
 {
-    "body": "> Sorry; I should have CCd you on this: #9221\n???  That's this ticket, which I'm obviously already cc:ed on.  Did you mean something else related to nose?",
+    "body": "> Sorry; I should have CCd you on this: #9221\n\n???  That's this ticket, which I'm obviously already cc:ed on.  Did you mean something else related to nose?",
     "created_at": "2010-09-16T21:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1203,6 +1185,7 @@ archive/issue_comments_086311.json:
 ```
 
 > Sorry; I should have CCd you on this: #9221
+
 ???  That's this ticket, which I'm obviously already cc:ed on.  Did you mean something else related to nose?
 
 
@@ -1230,7 +1213,7 @@ Yes: #9921.  Notice that it's convenient that related tickets have numbers so si
 archive/issue_comments_086313.json:
 ```json
 {
-    "body": "Replying to [comment:33 kcrisman]:\n> Replying to [comment:31 kcrisman]:\n> > Replying to [comment:30 jason]:\n> > > Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> > > \n> > > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> > > \n> > > Can people try it? \n> > \n> > I should be able to try this on OS X 10.4 PPC today or tomorrow.\n> \n> Seems to be working a-ok here, no issues.\n> \n> By the way, to drkirkby, looks like matplotlib also uses `nose` to run their tests, like scipy and numpy.  I get no indication that `SAGE_CHECK=yes` does anything - or would - because of that.  \n\nSee \n\n#9921\n\nwhere only today I suggested we make 'nose' a **standard** package. \n\n> If we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.\n\nAs far as I can see, adding nose as a stranded package would be very low risk, as nothing would depend on it except during testing. So it can't hardly screw Sage up, as long as nose builds reliably itself. Even if it was totally non-functional, it would not hurt sage. \n\nWhat we need is a list of packages that use nose, then request it is added as standard on the basis we can't test otherwise. It might be able to escape the 'experimental' stage. \n\nDave",
+    "body": "Replying to [comment:33 kcrisman]:\n> Replying to [comment:31 kcrisman]:\n> > Replying to [comment:30 jason]:\n> > > Okay, I've updated the spkg so that it works on t2 (and passes all matplotlib tests):\n> > > \n> > > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg\n> > > \n> > > Can people try it? \n\n> > \n> > I should be able to try this on OS X 10.4 PPC today or tomorrow.\n\n> \n> Seems to be working a-ok here, no issues.\n> \n> By the way, to drkirkby, looks like matplotlib also uses `nose` to run their tests, like scipy and numpy.  I get no indication that `SAGE_CHECK=yes` does anything - or would - because of that.  \n\n\nSee \n\n#9921\n\nwhere only today I suggested we make 'nose' a **standard** package. \n\n> If we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.\n\n\nAs far as I can see, adding nose as a stranded package would be very low risk, as nothing would depend on it except during testing. So it can't hardly screw Sage up, as long as nose builds reliably itself. Even if it was totally non-functional, it would not hurt sage. \n\nWhat we need is a list of packages that use nose, then request it is added as standard on the basis we can't test otherwise. It might be able to escape the 'experimental' stage. \n\nDave",
     "created_at": "2010-09-16T22:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1247,12 +1230,15 @@ Replying to [comment:33 kcrisman]:
 > > > http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg
 > > > 
 > > > Can people try it? 
+
 > > 
 > > I should be able to try this on OS X 10.4 PPC today or tomorrow.
+
 > 
 > Seems to be working a-ok here, no issues.
 > 
 > By the way, to drkirkby, looks like matplotlib also uses `nose` to run their tests, like scipy and numpy.  I get no indication that `SAGE_CHECK=yes` does anything - or would - because of that.  
+
 
 See 
 
@@ -1261,6 +1247,7 @@ See
 where only today I suggested we make 'nose' a **standard** package. 
 
 > If we want to test these automatically, we need nose; just adding the lines to `spkg-check` or `spkg-install` won't help.  Obviously this is a different ticket, but I wanted to point it out.  And I'd support adding this to Sage if it improved things overall.
+
 
 As far as I can see, adding nose as a stranded package would be very low risk, as nothing would depend on it except during testing. So it can't hardly screw Sage up, as long as nose builds reliably itself. Even if it was totally non-functional, it would not hurt sage. 
 
@@ -1349,7 +1336,7 @@ Another friendly ping to people to look at this ticket and review it...
 archive/issue_comments_086318.json:
 ```json
 {
-    "body": "> Another friendly ping to people to look at this ticket and review it...\nI'd love to, but there is too much technical shell stuff mentioned in the comments so I don't want to be responsible for breaking something somewhere.",
+    "body": "> Another friendly ping to people to look at this ticket and review it...\n\nI'd love to, but there is too much technical shell stuff mentioned in the comments so I don't want to be responsible for breaking something somewhere.",
     "created_at": "2010-09-28T15:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1359,6 +1346,7 @@ archive/issue_comments_086318.json:
 ```
 
 > Another friendly ping to people to look at this ticket and review it...
+
 I'd love to, but there is too much technical shell stuff mentioned in the comments so I don't want to be responsible for breaking something somewhere.
 
 
@@ -1388,7 +1376,7 @@ David, can you confirm that this spkg now works on Solaris?  If not, kcrisman, c
 archive/issue_comments_086320.json:
 ```json
 {
-    "body": "Replying to [comment:43 jason]:\n> As I see it, the only outstanding problem was that it didn't compile on Solaris.  We fixed that (I compiled it on t2), but it doesn't seem appropriate for me to set the ticket to positive review.  I was hoping for someone to give it one last try on their standard platform.\n> \n> David, can you confirm that this spkg now works on Solaris?  If not, kcrisman, can you just check that it works on your platform still?\nJason, that was the version I tried!\n\nSeems to be working fine on OS X 10.6 right now, tested the live documentation and the output at various spots.  Currently running doctests.",
+    "body": "Replying to [comment:43 jason]:\n> As I see it, the only outstanding problem was that it didn't compile on Solaris.  We fixed that (I compiled it on t2), but it doesn't seem appropriate for me to set the ticket to positive review.  I was hoping for someone to give it one last try on their standard platform.\n> \n> David, can you confirm that this spkg now works on Solaris?  If not, kcrisman, can you just check that it works on your platform still?\n\nJason, that was the version I tried!\n\nSeems to be working fine on OS X 10.6 right now, tested the live documentation and the output at various spots.  Currently running doctests.",
     "created_at": "2010-09-28T16:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1401,6 +1389,7 @@ Replying to [comment:43 jason]:
 > As I see it, the only outstanding problem was that it didn't compile on Solaris.  We fixed that (I compiled it on t2), but it doesn't seem appropriate for me to set the ticket to positive review.  I was hoping for someone to give it one last try on their standard platform.
 > 
 > David, can you confirm that this spkg now works on Solaris?  If not, kcrisman, can you just check that it works on your platform still?
+
 Jason, that was the version I tried!
 
 Seems to be working fine on OS X 10.6 right now, tested the live documentation and the output at various spots.  Currently running doctests.
@@ -1538,7 +1527,7 @@ I haven't tested that configuration.  Can you post some of these errors here?
 archive/issue_comments_086327.json:
 ```json
 {
-    "body": "I made a source distribution from 4.6.alpha1 + #9221 and built it in a directory named `sage-4.6.alpha2-9221`.  The long doctests pass.  I moved the directory to a different place.\n\nI made a source distribution from the latest trial 4.6.alpha2 + #9221 and built it in a directory named `sage-4.6.alpha2pre2`, i.e., it's different from the previous build directory.  Many tests fail with\n\n```\nRuntimeError: Could not open facefile /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf; Cannot_Open_Resource\n```\n\nThe full log is [here](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2.log).  I think the problem is that\n\n```sh\n$ grep 9221 $HOME/.matplotlib/fontList.cache | grep Vera.ttf\nS'/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf'\naS'/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf'\n$ grep 9221 $HOME/.matplotlib/fontList.cache | wc\n    128     128   16666\n```\n",
+    "body": "I made a source distribution from 4.6.alpha1 + #9221 and built it in a directory named `sage-4.6.alpha2-9221`.  The long doctests pass.  I moved the directory to a different place.\n\nI made a source distribution from the latest trial 4.6.alpha2 + #9221 and built it in a directory named `sage-4.6.alpha2pre2`, i.e., it's different from the previous build directory.  Many tests fail with\n\n```\nRuntimeError: Could not open facefile /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf; Cannot_Open_Resource\n```\nThe full log is [here](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2.log).  I think the problem is that\n\n```sh\n$ grep 9221 $HOME/.matplotlib/fontList.cache | grep Vera.ttf\nS'/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf'\naS'/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf'\n$ grep 9221 $HOME/.matplotlib/fontList.cache | wc\n    128     128   16666\n```",
     "created_at": "2010-09-30T02:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1554,7 +1543,6 @@ I made a source distribution from the latest trial 4.6.alpha2 + #9221 and built 
 ```
 RuntimeError: Could not open facefile /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha2-9221/local/lib/python/site-packages/matplotlib/mpl-data/fonts/ttf/Vera.ttf; Cannot_Open_Resource
 ```
-
 The full log is [here](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2.log).  I think the problem is that
 
 ```sh
@@ -1567,13 +1555,12 @@ $ grep 9221 $HOME/.matplotlib/fontList.cache | wc
 
 
 
-
 ---
 
 archive/issue_comments_086328.json:
 ```json
 {
-    "body": "After moving `$HOME/.matplotlib` to a different place, I've rerun the tests in `sage-4.6.alpha2pre2`.  I see many failures with\n\n```\nAttributeError: 'module' object has no attribute 'cbook'\n```\n\nSee [this log](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2-take2.log).  (I stopped the tests early.)\n\nI've started the tests again and now they appear to be passing.",
+    "body": "After moving `$HOME/.matplotlib` to a different place, I've rerun the tests in `sage-4.6.alpha2pre2`.  I see many failures with\n\n```\nAttributeError: 'module' object has no attribute 'cbook'\n```\nSee [this log](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2-take2.log).  (I stopped the tests early.)\n\nI've started the tests again and now they appear to be passing.",
     "created_at": "2010-09-30T03:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1587,7 +1574,6 @@ After moving `$HOME/.matplotlib` to a different place, I've rerun the tests in `
 ```
 AttributeError: 'module' object has no attribute 'cbook'
 ```
-
 See [this log](http://sage.math.washington.edu/home/mpatel/trac/9221/ptestlong-4.6.alpha2pre2-take2.log).  (I stopped the tests early.)
 
 I've started the tests again and now they appear to be passing.
@@ -1779,7 +1765,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_086338.json:
 ```json
 {
-    "body": "Replying to [comment:50 mpatel]:\n> I made a source distribution from 4.6.alpha1 + #9221 and built it in a directory named `sage-4.6.alpha2-9221`.  The long doctests pass.  I moved the directory to a different place.\n> \n> I made a source distribution from the latest trial 4.6.alpha2 + #9221 and built it in a directory named `sage-4.6.alpha2pre2`, i.e., it's different from the previous build directory.  Many tests fail with\n\n\nI assume this is on sage.math?  Can you make the latest trial 4.6.alpha2 tarball available somewhere so I can try to reproduce what you did?",
+    "body": "Replying to [comment:50 mpatel]:\n> I made a source distribution from 4.6.alpha1 + #9221 and built it in a directory named `sage-4.6.alpha2-9221`.  The long doctests pass.  I moved the directory to a different place.\n> \n> I made a source distribution from the latest trial 4.6.alpha2 + #9221 and built it in a directory named `sage-4.6.alpha2pre2`, i.e., it's different from the previous build directory.  Many tests fail with\n\n\n\nI assume this is on sage.math?  Can you make the latest trial 4.6.alpha2 tarball available somewhere so I can try to reproduce what you did?",
     "created_at": "2010-09-30T05:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1792,6 +1778,7 @@ Replying to [comment:50 mpatel]:
 > I made a source distribution from 4.6.alpha1 + #9221 and built it in a directory named `sage-4.6.alpha2-9221`.  The long doctests pass.  I moved the directory to a different place.
 > 
 > I made a source distribution from the latest trial 4.6.alpha2 + #9221 and built it in a directory named `sage-4.6.alpha2pre2`, i.e., it's different from the previous build directory.  Many tests fail with
+
 
 
 I assume this is on sage.math?  Can you make the latest trial 4.6.alpha2 tarball available somewhere so I can try to reproduce what you did?
@@ -1839,7 +1826,7 @@ I'm going to try to reproduce this first on sage.math.  Do I just replace the m
 archive/issue_comments_086341.json:
 ```json
 {
-    "body": "Replying to [comment:60 jason]:\n> I'm going to try to reproduce this first on sage.math.\u00a0 Do I just replace the matplotlib-0.99.3 spkg with my spkg in the source tarball, then build?\u00a0 Is there something more I need to do?\n\nThat should work.  The colormap tests fixed by the patch will fail, but if the errors I saw show up --- i.e., they're not part of the \"fog of merge\" --- they'll be easy to distinguish.",
+    "body": "Replying to [comment:60 jason]:\n> I'm going to try to reproduce this first on sage.math.\u00a0 Do I just replace the matplotlib-0.99.3 spkg with my spkg in the source tarball, then build?\u00a0 Is there something more I need to do?\n\n\nThat should work.  The colormap tests fixed by the patch will fail, but if the errors I saw show up --- i.e., they're not part of the \"fog of merge\" --- they'll be easy to distinguish.",
     "created_at": "2010-10-01T06:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1850,6 +1837,7 @@ archive/issue_comments_086341.json:
 
 Replying to [comment:60 jason]:
 > I'm going to try to reproduce this first on sage.math.  Do I just replace the matplotlib-0.99.3 spkg with my spkg in the source tarball, then build?  Is there something more I need to do?
+
 
 That should work.  The colormap tests fixed by the patch will fail, but if the errors I saw show up --- i.e., they're not part of the "fog of merge" --- they'll be easy to distinguish.
 
@@ -1934,7 +1922,7 @@ I'm putting this as needs review so that one or two others can double-check this
 archive/issue_comments_086346.json:
 ```json
 {
-    "body": "> I'm putting this as needs review so that one or two others can double-check this.\u00a0 kcrisman?\nI'll do my best, but might not be able to test it on something you don't have access to already (you have OS X 10.6, and access to sage.math) until after the weekend.",
+    "body": "> I'm putting this as needs review so that one or two others can double-check this.\u00a0 kcrisman?\n\nI'll do my best, but might not be able to test it on something you don't have access to already (you have OS X 10.6, and access to sage.math) until after the weekend.",
     "created_at": "2010-10-01T19:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -1944,6 +1932,7 @@ archive/issue_comments_086346.json:
 ```
 
 > I'm putting this as needs review so that one or two others can double-check this.  kcrisman?
+
 I'll do my best, but might not be able to test it on something you don't have access to already (you have OS X 10.6, and access to sage.math) until after the weekend.
 
 
@@ -2045,7 +2034,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086352.json:
 ```json
 {
-    "body": "There are uncommitted changes\n\n```sh\nmatplotlib-1.0.0$ hg stat\n? patches/WrapPython.h\n? patches/WrapPython.h.diff\n```\n\nBy the way, is this the patch that fixes the font cache problem?",
+    "body": "There are uncommitted changes\n\n```sh\nmatplotlib-1.0.0$ hg stat\n? patches/WrapPython.h\n? patches/WrapPython.h.diff\n```\nBy the way, is this the patch that fixes the font cache problem?",
     "created_at": "2010-10-02T23:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2061,7 +2050,6 @@ matplotlib-1.0.0$ hg stat
 ? patches/WrapPython.h
 ? patches/WrapPython.h.diff
 ```
-
 By the way, is this the patch that fixes the font cache problem?
 
 
@@ -2221,7 +2209,7 @@ Thanks, Jason!  The `fontList.cache` is now quietly regenerated and the tests pa
 archive/issue_comments_086360.json:
 ```json
 {
-    "body": "Replying to [comment:74 jason]:\n> BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n\nAren't these worth an spkg patch level? This also avoids confusion with previous versions.",
+    "body": "Replying to [comment:74 jason]:\n> BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n\n\nAren't these worth an spkg patch level? This also avoids confusion with previous versions.",
     "created_at": "2010-10-20T14:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2233,6 +2221,7 @@ archive/issue_comments_086360.json:
 Replying to [comment:74 jason]:
 > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.
 
+
 Aren't these worth an spkg patch level? This also avoids confusion with previous versions.
 
 
@@ -2242,7 +2231,7 @@ Aren't these worth an spkg patch level? This also avoids confusion with previous
 archive/issue_comments_086361.json:
 ```json
 {
-    "body": "Replying to [comment:79 leif]:\n> Replying to [comment:74 jason]:\n> > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n> \n> Aren't these worth an spkg patch level? This also avoids confusion with previous versions.\n>  \n\nI viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).",
+    "body": "Replying to [comment:79 leif]:\n> Replying to [comment:74 jason]:\n> > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n\n> \n> Aren't these worth an spkg patch level? This also avoids confusion with previous versions.\n>  \n\n\nI viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).",
     "created_at": "2010-10-20T15:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2254,9 +2243,11 @@ archive/issue_comments_086361.json:
 Replying to [comment:79 leif]:
 > Replying to [comment:74 jason]:
 > > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.
+
 > 
 > Aren't these worth an spkg patch level? This also avoids confusion with previous versions.
 >  
+
 
 I viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).
 
@@ -2267,7 +2258,7 @@ I viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.
 archive/issue_comments_086362.json:
 ```json
 {
-    "body": "Replying to [comment:80 jason]:\n> Replying to [comment:79 leif]:\n> > Replying to [comment:74 jason]:\n> > > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n> > \n> > Aren't these worth an spkg patch level? This also avoids confusion with previous versions.\n> >  \n> \n> I viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).\n\n:-) IMHO every spkg that's not almost vanilla upstream should carry a patch level, since the (Sage) package version (without the patch level) is not a Sage but the upstream version, but this appears to be an endless discussion...",
+    "body": "Replying to [comment:80 jason]:\n> Replying to [comment:79 leif]:\n> > Replying to [comment:74 jason]:\n> > > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.\n\n> > \n> > Aren't these worth an spkg patch level? This also avoids confusion with previous versions.\n> >  \n\n> \n> I viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).\n\n\n:-) IMHO every spkg that's not almost vanilla upstream should carry a patch level, since the (Sage) package version (without the patch level) is not a Sage but the upstream version, but this appears to be an endless discussion...",
     "created_at": "2010-10-20T15:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2280,11 +2271,14 @@ Replying to [comment:80 jason]:
 > Replying to [comment:79 leif]:
 > > Replying to [comment:74 jason]:
 > > > BTW, WrapPython.h fixes the Solaris problem, and the font_manager.py patch fixes the font cache problem.
+
 > > 
 > > Aren't these worth an spkg patch level? This also avoids confusion with previous versions.
 > >  
+
 > 
 > I viewed this as part of the 1.0.0 spkg (these patches were necessary for the 1.0.0 spkg to be accepted and used).
+
 
 :-) IMHO every spkg that's not almost vanilla upstream should carry a patch level, since the (Sage) package version (without the patch level) is not a Sage but the upstream version, but this appears to be an endless discussion...
 
@@ -2295,7 +2289,7 @@ Replying to [comment:80 jason]:
 archive/issue_comments_086363.json:
 ```json
 {
-    "body": "I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n\n* installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n* the current spkg / alpha3 **again** breaks upgrading (cf. #9896) if the original Sage installation has been moved (copied / renamed), which apparently is common user practice.\n\n\nUnless one e.g. deletes `$HOME/.matplotlib/`, the following happens with **other** Sage installations (and perhaps other software):\n\n```\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/devel/sage/sage/plot/plot.py\", line 210:\n    sage: P    # show the result\nException raised:\n    Traceback (most recent call last):\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[55]>\", line 1, in <module>\n        P    # show the result###line 210:\n    sage: P    # show the result\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 915, in _repr_\n        self.show()\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 1437, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 1973, in save\n        figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/figure.py\", line 1032, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backend_bases.py\", line 1455, in print_figure\n        **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 358, in print_png\n        FigureCanvasAgg.draw(self)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 314, in draw\n        self.figure.draw(self.renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/artist.py\", line 46, in draw_wrapper\n        draw(artist, renderer, *args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/figure.py\", line 773, in draw\n        for a in self.axes: a.draw(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/artist.py\", line 46, in draw_wrapper\n        draw(artist, renderer, *args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/axes.py\", line 1735, in draw\n        a.draw(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/text.py\", line 518, in draw\n        bbox, info = self._get_layout(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/text.py\", line 280, in _get_layout\n        clean_line, self._fontproperties, ismath=ismath)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 156, in get_text_width_height_descent\n        self.mathtext_parser.parse(s, self.dpi, prop)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 2797, in parse\n        font_output = fontset_class(prop, backend)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 658, in __init__\n        self._stix_fallback = StixFonts(*args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 900, in __init__\n        fullpath = findfont(name)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/font_manager.py\", line 1306, in findfont\n        if not os.path.exists(font):\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python2.6/genericpath.py\", line 18, in exists\n        st = os.stat(path)\n    TypeError: coercing to Unicode: need string or buffer, dict found\n**********************************************************************\n...\n[same exception in other examples]\n...\n**********************************************************************\n5 items had failures:\n   1 of  71 in __main__.example_0\n   1 of   7 in __main__.example_13\n   1 of   8 in __main__.example_14\n   1 of  45 in __main__.example_30\n   1 of  89 in __main__.example_43\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_plot.py\n```\n\n\n\nWhen trying to upgrade to 4.6.alpha3 in a *renamed* directory, installing matplotlib 1.0.0 fails with\n\n```\n...\nrunning build_ext\nbuilding 'matplotlib.ft2font' extension\ncreating build/temp.linux-x86_64-2.6\ncreating build/temp.linux-x86_64-2.6/src\ncreating build/temp.linux-x86_64-2.6/CXX\ngcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -march=native -O3 -fno-strict-aliasing -fomit-frame-pointer -DHONORS_CFLAGS -march=native -O3 -DHONORS_CPPFLAGS -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/lib/python2.6/site-packages/numpy/core/include -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/include/freetype2 -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/include -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include -I. -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6 -c src/ft2font.cpp -o build/temp.linux-x86_64-2.6/src/ft2font.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:47,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/pyconfig.h:1028:1: warning: \"_POSIX_C_SOURCE\" redefined\nIn file included from /usr/include/sys/time.h:23,\n                 from ./CXX/WrapPython.h:43,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/include/features.h:158:1: warning: this is the location of the previous definition\nIn file included from /home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:47,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/pyconfig.h:1037:1: warning: \"_XOPEN_SOURCE\" redefined\nIn file included from /usr/include/sys/time.h:23,\n                 from ./CXX/WrapPython.h:43,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/include/features.h:160:1: warning: this is the location of the previous definition\nIn file included from src/ft2font.h:14,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/ft2build.h:56:38: error: freetype/config/ftheader.h: No such file or directory\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:15:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:16:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:17:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:18:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:19:10: error: #include expects \"FILENAME\" or <FILENAME>\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:33: error: 'FT_Bitmap' has not been declared\nsrc/ft2font.h:33: error: 'FT_Int' has not been declared\nsrc/ft2font.h:33: error: 'FT_Int' has not been declared\nsrc/ft2font.h:89: error: ISO C++ forbids declaration of 'FT_Face' with no type\nsrc/ft2font.h:89: error: expected ',' or '...' before '&' token\nsrc/ft2font.h:95: error: ISO C++ forbids declaration of 'FT_Face' with no type\nsrc/ft2font.h:95: error: expected ',' or '...' before '&' token\nsrc/ft2font.h:137: error: 'FT_Face' does not name a type\nsrc/ft2font.h:138: error: 'FT_Matrix' does not name a type\nsrc/ft2font.h:139: error: 'FT_Vector' does not name a type\nsrc/ft2font.h:140: error: 'FT_Error' does not name a type\nsrc/ft2font.h:141: error: 'FT_Glyph' was not declared in this scope\nsrc/ft2font.h:141: error: template argument 1 is invalid\nsrc/ft2font.h:141: error: template argument 2 is invalid\nsrc/ft2font.h:142: error: 'FT_Vector' was not declared in this scope\nsrc/ft2font.h:142: error: template argument 1 is invalid\nsrc/ft2font.h:142: error: template argument 2 is invalid\nsrc/ft2font.h:148: error: 'FT_BBox' does not name a type\nsrc/ft2font.cpp:45: error: 'FT_Library' does not name a type\nsrc/ft2font.cpp:108: error: variable or field 'draw_bitmap' declared void\nsrc/ft2font.cpp:108: error: 'FT_Bitmap' was not declared in this scope\nsrc/ft2font.cpp:108: error: 'bitmap' was not declared in this scope\nsrc/ft2font.cpp:109: error: 'FT_Int' was not declared in this scope\nsrc/ft2font.cpp:110: error: 'FT_Int' was not declared in this scope\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/lib/python2.6/site-packages/numpy/core/include/numpy/__multiarray_api.h:968: warning: 'int _import_array()' defined but not used\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n```\n",
+    "body": "I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n\n* installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n* the current spkg / alpha3 **again** breaks upgrading (cf. #9896) if the original Sage installation has been moved (copied / renamed), which apparently is common user practice.\n\n\nUnless one e.g. deletes `$HOME/.matplotlib/`, the following happens with **other** Sage installations (and perhaps other software):\n\n```\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/devel/sage/sage/plot/plot.py\", line 210:\n    sage: P    # show the result\nException raised:\n    Traceback (most recent call last):\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[55]>\", line 1, in <module>\n        P    # show the result###line 210:\n    sage: P    # show the result\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 915, in _repr_\n        self.show()\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 1437, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/sage/plot/plot.py\", line 1973, in save\n        figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/figure.py\", line 1032, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backend_bases.py\", line 1455, in print_figure\n        **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 358, in print_png\n        FigureCanvasAgg.draw(self)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 314, in draw\n        self.figure.draw(self.renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/artist.py\", line 46, in draw_wrapper\n        draw(artist, renderer, *args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/figure.py\", line 773, in draw\n        for a in self.axes: a.draw(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/artist.py\", line 46, in draw_wrapper\n        draw(artist, renderer, *args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/axes.py\", line 1735, in draw\n        a.draw(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/text.py\", line 518, in draw\n        bbox, info = self._get_layout(renderer)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/text.py\", line 280, in _get_layout\n        clean_line, self._fontproperties, ismath=ismath)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 156, in get_text_width_height_descent\n        self.mathtext_parser.parse(s, self.dpi, prop)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 2797, in parse\n        font_output = fontset_class(prop, backend)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 658, in __init__\n        self._stix_fallback = StixFonts(*args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/mathtext.py\", line 900, in __init__\n        fullpath = findfont(name)\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python/site-packages/matplotlib/font_manager.py\", line 1306, in findfont\n        if not os.path.exists(font):\n      File \"/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/lib/python2.6/genericpath.py\", line 18, in exists\n        st = os.stat(path)\n    TypeError: coercing to Unicode: need string or buffer, dict found\n**********************************************************************\n...\n[same exception in other examples]\n...\n**********************************************************************\n5 items had failures:\n   1 of  71 in __main__.example_0\n   1 of   7 in __main__.example_13\n   1 of   8 in __main__.example_14\n   1 of  45 in __main__.example_30\n   1 of  89 in __main__.example_43\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_plot.py\n```\n\n\nWhen trying to upgrade to 4.6.alpha3 in a *renamed* directory, installing matplotlib 1.0.0 fails with\n\n```\n...\nrunning build_ext\nbuilding 'matplotlib.ft2font' extension\ncreating build/temp.linux-x86_64-2.6\ncreating build/temp.linux-x86_64-2.6/src\ncreating build/temp.linux-x86_64-2.6/CXX\ngcc -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -march=native -O3 -fno-strict-aliasing -fomit-frame-pointer -DHONORS_CFLAGS -march=native -O3 -DHONORS_CPPFLAGS -fPIC -DPY_ARRAY_UNIQUE_SYMBOL=MPL_ARRAY_API -DPYCXX_ISO_CPP_LIB=1 -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/lib/python2.6/site-packages/numpy/core/include -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/include/freetype2 -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-to-rename/local/include -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include -I. -I/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6 -c src/ft2font.cpp -o build/temp.linux-x86_64-2.6/src/ft2font.o\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:47,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/pyconfig.h:1028:1: warning: \"_POSIX_C_SOURCE\" redefined\nIn file included from /usr/include/sys/time.h:23,\n                 from ./CXX/WrapPython.h:43,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/include/features.h:158:1: warning: this is the location of the previous definition\nIn file included from /home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/Python.h:8,\n                 from ./CXX/WrapPython.h:47,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/python2.6/pyconfig.h:1037:1: warning: \"_XOPEN_SOURCE\" redefined\nIn file included from /usr/include/sys/time.h:23,\n                 from ./CXX/WrapPython.h:43,\n                 from ./CXX/Extensions.hxx:37,\n                 from src/ft2font.h:4,\n                 from src/ft2font.cpp:1:\n/usr/include/features.h:160:1: warning: this is the location of the previous definition\nIn file included from src/ft2font.h:14,\n                 from src/ft2font.cpp:1:\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/include/ft2build.h:56:38: error: freetype/config/ftheader.h: No such file or directory\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:15:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:16:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:17:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:18:10: error: #include expects \"FILENAME\" or <FILENAME>\nsrc/ft2font.h:19:10: error: #include expects \"FILENAME\" or <FILENAME>\nIn file included from src/ft2font.cpp:1:\nsrc/ft2font.h:33: error: 'FT_Bitmap' has not been declared\nsrc/ft2font.h:33: error: 'FT_Int' has not been declared\nsrc/ft2font.h:33: error: 'FT_Int' has not been declared\nsrc/ft2font.h:89: error: ISO C++ forbids declaration of 'FT_Face' with no type\nsrc/ft2font.h:89: error: expected ',' or '...' before '&' token\nsrc/ft2font.h:95: error: ISO C++ forbids declaration of 'FT_Face' with no type\nsrc/ft2font.h:95: error: expected ',' or '...' before '&' token\nsrc/ft2font.h:137: error: 'FT_Face' does not name a type\nsrc/ft2font.h:138: error: 'FT_Matrix' does not name a type\nsrc/ft2font.h:139: error: 'FT_Vector' does not name a type\nsrc/ft2font.h:140: error: 'FT_Error' does not name a type\nsrc/ft2font.h:141: error: 'FT_Glyph' was not declared in this scope\nsrc/ft2font.h:141: error: template argument 1 is invalid\nsrc/ft2font.h:141: error: template argument 2 is invalid\nsrc/ft2font.h:142: error: 'FT_Vector' was not declared in this scope\nsrc/ft2font.h:142: error: template argument 1 is invalid\nsrc/ft2font.h:142: error: template argument 2 is invalid\nsrc/ft2font.h:148: error: 'FT_BBox' does not name a type\nsrc/ft2font.cpp:45: error: 'FT_Library' does not name a type\nsrc/ft2font.cpp:108: error: variable or field 'draw_bitmap' declared void\nsrc/ft2font.cpp:108: error: 'FT_Bitmap' was not declared in this scope\nsrc/ft2font.cpp:108: error: 'bitmap' was not declared in this scope\nsrc/ft2font.cpp:109: error: 'FT_Int' was not declared in this scope\nsrc/ft2font.cpp:110: error: 'FT_Int' was not declared in this scope\n/home/leif/Sage/sage-4.5.3-for-4.6.alpha3-renamed/local/lib/python2.6/site-packages/numpy/core/include/numpy/__multiarray_api.h:968: warning: 'int _import_array()' defined but not used\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n```",
     "created_at": "2010-10-20T18:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2388,7 +2382,6 @@ For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_plot.py
 ```
 
 
-
 When trying to upgrade to 4.6.alpha3 in a *renamed* directory, installing matplotlib 1.0.0 fails with
 
 ```
@@ -2465,13 +2458,12 @@ Error building matplotlib package.
 
 
 
-
 ---
 
 archive/issue_comments_086364.json:
 ```json
 {
-    "body": "Replying to [comment:82 leif]:\n> I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n> \n>  * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n\nAre you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)\n\nOr wait.  Are you saying that the font cache file created by the new(est) spkg here is causing problems with older versions of matplotlib?",
+    "body": "Replying to [comment:82 leif]:\n> I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n> \n> * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n\n\nAre you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)\n\nOr wait.  Are you saying that the font cache file created by the new(est) spkg here is causing problems with older versions of matplotlib?",
     "created_at": "2010-10-20T21:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2483,7 +2475,8 @@ archive/issue_comments_086364.json:
 Replying to [comment:82 leif]:
 > I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since
 > 
->  * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),
+> * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),
+
 
 Are you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)
 
@@ -2496,7 +2489,7 @@ Or wait.  Are you saying that the font cache file created by the new(est) spkg h
 archive/issue_comments_086365.json:
 ```json
 {
-    "body": "Replying to [comment:83 jason]:\n> Replying to [comment:82 leif]:\n> > I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n> > \n> >  * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n> \n> Are you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)\n\nI only have the current 1.0.0 one, but that doesn't solve the problems older MPL installations have. ;-)\n \n> Or wait.  Are you saying that the font cache file created by the new(est) spkg here is causing problems with older versions of matplotlib?\n\nExactly that. It seems they've changed the format s.t. older MPL versions expecting an older format (without doing any consistency / type / error checking) pass a dictionary to `os.path.exists()`.",
+    "body": "Replying to [comment:83 jason]:\n> Replying to [comment:82 leif]:\n> > I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since\n> > \n> > * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),\n\n> \n> Are you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)\n\n\nI only have the current 1.0.0 one, but that doesn't solve the problems older MPL installations have. ;-)\n \n> Or wait.  Are you saying that the font cache file created by the new(est) spkg here is causing problems with older versions of matplotlib?\n\n\nExactly that. It seems they've changed the format s.t. older MPL versions expecting an older format (without doing any consistency / type / error checking) pass a dictionary to `os.path.exists()`.",
     "created_at": "2010-10-20T21:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2509,13 +2502,16 @@ Replying to [comment:83 jason]:
 > Replying to [comment:82 leif]:
 > > I'm not the release manager, but **IMHO** either this ticket **needs work**, or #6235 / #9210? should be blockers for Sage 4.6, since
 > > 
-> >  * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),
+> > * installing Sage 4.6.alpha3 / matplotlib 1.0.0 breaks other Sage installations (cf. doctest errors in `sage/plot/plot.py` below, which even occur after rebuilding e.g. Sage 4.5.3 from scratch),
+
 > 
 > Are you sure that you have the most recent (i.e., the merged) 1.0.0 spkg from this ticket?  Can you try sage -f just in case (you see that there have been updates to the 1.0.0 spkg on this ticket as time went on)
+
 
 I only have the current 1.0.0 one, but that doesn't solve the problems older MPL installations have. ;-)
  
 > Or wait.  Are you saying that the font cache file created by the new(est) spkg here is causing problems with older versions of matplotlib?
+
 
 Exactly that. It seems they've changed the format s.t. older MPL versions expecting an older format (without doing any consistency / type / error checking) pass a dictionary to `os.path.exists()`.
 
@@ -2544,7 +2540,7 @@ Leif, do the current patches at #6235 and #9210 fix the problems you've found?
 archive/issue_comments_086367.json:
 ```json
 {
-    "body": "Replying to [comment:85 mpatel]:\n> Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\nI'm pretty sure #6235 fixes (at least Sage's) MPL 1.0.0 breaking older installations.\n\nModifying `$SAGE_ROOT/local/lib/pkgconfig/freetype2.pc` on Sage relocations perhaps fixes later build errors (including upgrades) of dependent packages like MPL; I haven't looked at nor tested the patch though. (Forcing reinstallation of freetype after moving Sage fixes it; but that's of course just a work-around, cf. #9896.)\n\nAt least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)",
+    "body": "Replying to [comment:85 mpatel]:\n> Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\n\nI'm pretty sure #6235 fixes (at least Sage's) MPL 1.0.0 breaking older installations.\n\nModifying `$SAGE_ROOT/local/lib/pkgconfig/freetype2.pc` on Sage relocations perhaps fixes later build errors (including upgrades) of dependent packages like MPL; I haven't looked at nor tested the patch though. (Forcing reinstallation of freetype after moving Sage fixes it; but that's of course just a work-around, cf. #9896.)\n\nAt least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)",
     "created_at": "2010-10-21T01:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2555,6 +2551,7 @@ archive/issue_comments_086367.json:
 
 Replying to [comment:85 mpatel]:
 > Leif, do the current patches at #6235 and #9210 fix the problems you've found?
+
 
 I'm pretty sure #6235 fixes (at least Sage's) MPL 1.0.0 breaking older installations.
 
@@ -2569,7 +2566,7 @@ At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LO
 archive/issue_comments_086368.json:
 ```json
 {
-    "body": "Replying to [comment:86 leif]:\n> At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n\n\n```\nprefix=${SAGE_LOCAL}\nexec_prefix=${prefix}\nlibdir=${exec_prefix}/lib\nincludedir=${prefix}/include\n\nName: FreeType 2\nDescription: A free, high-quality, and portable font engine.\nVersion: 9.16.3\nRequires:\nLibs: -L${libdir} -lfreetype\nCflags: -I${includedir}/freetype2 -I${includedir}\n```\n\nworks for me. (The curly braces are mandatory.)",
+    "body": "Replying to [comment:86 leif]:\n> At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n\n\n```\nprefix=${SAGE_LOCAL}\nexec_prefix=${prefix}\nlibdir=${exec_prefix}/lib\nincludedir=${prefix}/include\n\nName: FreeType 2\nDescription: A free, high-quality, and portable font engine.\nVersion: 9.16.3\nRequires:\nLibs: -L${libdir} -lfreetype\nCflags: -I${includedir}/freetype2 -I${includedir}\n```\nworks for me. (The curly braces are mandatory.)",
     "created_at": "2010-10-21T01:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2595,7 +2592,6 @@ Requires:
 Libs: -L${libdir} -lfreetype
 Cflags: -I${includedir}/freetype2 -I${includedir}
 ```
-
 works for me. (The curly braces are mandatory.)
 
 
@@ -2605,7 +2601,7 @@ works for me. (The curly braces are mandatory.)
 archive/issue_comments_086369.json:
 ```json
 {
-    "body": "Replying to [comment:85 mpatel]:\n> Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\nObviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n\nAgain hard-coding `SAGE_ROOT` into the `.pc` files is IMHO superfluous btw.",
+    "body": "Replying to [comment:85 mpatel]:\n> Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\n\nObviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n\nAgain hard-coding `SAGE_ROOT` into the `.pc` files is IMHO superfluous btw.",
     "created_at": "2010-10-21T04:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2616,6 +2612,7 @@ archive/issue_comments_086369.json:
 
 Replying to [comment:85 mpatel]:
 > Leif, do the current patches at #6235 and #9210 fix the problems you've found?
+
 
 Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).
 
@@ -2628,7 +2625,7 @@ Again hard-coding `SAGE_ROOT` into the `.pc` files is IMHO superfluous btw.
 archive/issue_comments_086370.json:
 ```json
 {
-    "body": "Replying to [comment:88 leif]:\n> Replying to [comment:85 mpatel]:\n> > Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n> \n> Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n\nFor 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?",
+    "body": "Replying to [comment:88 leif]:\n> Replying to [comment:85 mpatel]:\n> > Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\n> \n> Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n\n\nFor 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?",
     "created_at": "2010-10-21T07:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2640,8 +2637,10 @@ archive/issue_comments_086370.json:
 Replying to [comment:88 leif]:
 > Replying to [comment:85 mpatel]:
 > > Leif, do the current patches at #6235 and #9210 fix the problems you've found?
+
 > 
 > Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).
+
 
 For 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?
 
@@ -2652,7 +2651,7 @@ For 4.6, I suggest we just bump up the patch level for freetype.  Could you do t
 archive/issue_comments_086371.json:
 ```json
 {
-    "body": "Replying to [comment:89 mpatel]:\n> Replying to [comment:88 leif]:\n> > Replying to [comment:85 mpatel]:\n> > > Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n> > \n> > Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n> \n> For 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?\n\nI've put an \"updated\" spkg at\n\n http://sage.math.washington.edu/home/mpatel/trac/9221/freetype-2.3.5.p3.spkg",
+    "body": "Replying to [comment:89 mpatel]:\n> Replying to [comment:88 leif]:\n> > Replying to [comment:85 mpatel]:\n> > > Leif, do the current patches at #6235 and #9210 fix the problems you've found?\n\n> > \n> > Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).\n\n> \n> For 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?\n\n\nI've put an \"updated\" spkg at\n\n http://sage.math.washington.edu/home/mpatel/trac/9221/freetype-2.3.5.p3.spkg",
     "created_at": "2010-10-21T09:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2665,10 +2664,13 @@ Replying to [comment:89 mpatel]:
 > Replying to [comment:88 leif]:
 > > Replying to [comment:85 mpatel]:
 > > > Leif, do the current patches at #6235 and #9210 fix the problems you've found?
+
 > > 
 > > Obviously #9210 doesn't help with upgrades from older versions, i.e. upgrading **to** 4.6. So for 4.6, it's perhaps better to fix the freetype spkg (though even preparing a fake new spkg would suffice for the moment).
+
 > 
 > For 4.6, I suggest we just bump up the patch level for freetype.  Could you do this and add a link to the new spkg here?
+
 
 I've put an "updated" spkg at
 
@@ -2681,7 +2683,7 @@ I've put an "updated" spkg at
 archive/issue_comments_086372.json:
 ```json
 {
-    "body": "Replying to [comment:86 leif]:\n\n> At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n\nThat's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.",
+    "body": "Replying to [comment:86 leif]:\n\n> At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n\n\nThat's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.",
     "created_at": "2010-10-21T12:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2694,6 +2696,7 @@ Replying to [comment:86 leif]:
 
 > At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)
 
+
 That's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.
 
 
@@ -2703,7 +2706,7 @@ That's fantastic!  It sounds like we should investigate doing that for the other
 archive/issue_comments_086373.json:
 ```json
 {
-    "body": "Replying to [comment:91 jason]:\n> Replying to [comment:86 leif]:\n> \n> > At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n> \n> That's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.\n\nI've made this idea #10202.  Leif, do you think we can do this at compile time, or do we have to fix up the pkgconfig file after the spkg is installed?  I'm guessing the latter.",
+    "body": "Replying to [comment:91 jason]:\n> Replying to [comment:86 leif]:\n> \n> > At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)\n\n> \n> That's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.\n\n\nI've made this idea #10202.  Leif, do you think we can do this at compile time, or do we have to fix up the pkgconfig file after the spkg is installed?  I'm guessing the latter.",
     "created_at": "2010-11-02T14:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9221",
     "type": "issue_comment",
@@ -2716,7 +2719,9 @@ Replying to [comment:91 jason]:
 > Replying to [comment:86 leif]:
 > 
 > > At least for freetype, it should be possible to simply set `prefix` to `$SAGE_LOCAL` (unexpanded) rather than a hard-coded absolute path. (Done once, e.g. in its `spkg-install`.)
+
 > 
 > That's fantastic!  It sounds like we should investigate doing that for the other packages as well (like libpng, etc.)  There are some places in the pkgconfig files where the path is used in places other than the prefix, so doing this trick may not solve everything, but probably would solve a lot of the issues with pkgconfig files.
+
 
 I've made this idea #10202.  Leif, do you think we can do this at compile time, or do we have to fix up the pkgconfig file after the spkg is installed?  I'm guessing the latter.

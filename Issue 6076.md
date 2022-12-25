@@ -3,7 +3,7 @@
 archive/issues_006076.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nThe problem is that Sage notebook doesn't allow the user to redefine the \"python\" symbol. \n\nAs a consequence,\n\n\n```\nfrom sympy import *\n```\n\n\nfails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ed5db1f344ed6371/\n\nIssue created by migration from https://trac.sagemath.org/ticket/6076\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nThe problem is that Sage notebook doesn't allow the user to redefine the \"python\" symbol. \n\nAs a consequence,\n\n```\nfrom sympy import *\n```\n\nfails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ed5db1f344ed6371/\n\nIssue created by migration from https://trac.sagemath.org/ticket/6076\n\n",
     "created_at": "2009-05-18T21:20:07Z",
     "labels": [
         "component: notebook",
@@ -24,11 +24,9 @@ The problem is that Sage notebook doesn't allow the user to redefine the "python
 
 As a consequence,
 
-
 ```
 from sympy import *
 ```
-
 
 fails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:
 

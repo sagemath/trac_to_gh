@@ -3,7 +3,7 @@
 archive/issues_004217.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/642313d7270e789f it was reported:\n\n```\nAs of version 3.1.2, plots are saved correctly in notebooks. Thanks to \nthose that fixed it. However, I noticed that the formatting of cells \nbeginning with \"%hide %html\" is not saved. I need to re-evaluate all \nof those cells to get the formatting back. Is this a bug in SAGE or \ndoes it have something to do with the web browser (Firefox 3.0.3 on \nMac OS X 10.4)? \nThanks again for the great effort! \n\nStan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4217\n\n",
+    "body": "Assignee: boothby\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/642313d7270e789f it was reported:\n\n```\nAs of version 3.1.2, plots are saved correctly in notebooks. Thanks to \nthose that fixed it. However, I noticed that the formatting of cells \nbeginning with \"%hide %html\" is not saved. I need to re-evaluate all \nof those cells to get the formatting back. Is this a bug in SAGE or \ndoes it have something to do with the web browser (Firefox 3.0.3 on \nMac OS X 10.4)? \nThanks again for the great effort! \n\nStan\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4217\n\n",
     "created_at": "2008-09-29T18:17:11Z",
     "labels": [
         "component: notebook",
@@ -31,7 +31,6 @@ Thanks again for the great effort!
 
 Stan
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4217
 
@@ -196,7 +195,7 @@ Rebase on new
 archive/issue_comments_030585.json:
 ```json
 {
-    "body": "That comment was suppoesd to be \"Rebase on new patch sent\"\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\n```\n\n\nSorry for the immense patch queue.",
+    "body": "That comment was suppoesd to be \"Rebase on new patch sent\"\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\n```\n\nSorry for the immense patch queue.",
     "created_at": "2010-01-17T21:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
@@ -206,7 +205,6 @@ archive/issue_comments_030585.json:
 ```
 
 That comment was suppoesd to be "Rebase on new patch sent"
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -229,7 +227,6 @@ trac_7969-escaped-backslash.patch
 trac_7937-sass_manifest.patch
 trac_4217-html-system-formatting.patch
 ```
-
 
 Sorry for the immense patch queue.
 

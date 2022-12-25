@@ -3,7 +3,7 @@
 archive/issues_006805.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nIt is possible now to create a lattice polytope with rational vertices, which allows things to work, but causes wrong answers:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\n[0 1]\n```\n\nThis patch adds an extra check/conversion to the constructor to prevent this:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\nTraceback (most recent call last):\n...\nValueError: Points must be integral!\nGiven:\n[1/2 3/2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6805\n\n",
+    "body": "Assignee: mhampton\n\nIt is possible now to create a lattice polytope with rational vertices, which allows things to work, but causes wrong answers:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\n[0 1]\n```\nThis patch adds an extra check/conversion to the constructor to prevent this:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\nTraceback (most recent call last):\n...\nValueError: Points must be integral!\nGiven:\n[1/2 3/2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6805\n\n",
     "created_at": "2009-08-22T20:25:59Z",
     "labels": [
         "component: geometry",
@@ -27,7 +27,6 @@ sage: m
 sage: LatticePolytope(m).points()
 [0 1]
 ```
-
 This patch adds an extra check/conversion to the constructor to prevent this:
 
 ```
@@ -41,7 +40,6 @@ ValueError: Points must be integral!
 Given:
 [1/2 3/2]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6805
 

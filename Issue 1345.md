@@ -3,7 +3,7 @@
 archive/issues_001345.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nThis behavior seems strange:\n\n```\n sage: foo = I+I\n sage: foo._operands\n [I, I]\n sage: [type(i) for i in foo._operands]\n [<class 'sage.calculus.calculus.SymbolicConstant'>,\n  <class 'sage.functions.constants.I_class'>]\n```\n\nAnd here's another strange thing (probably the same bug):\n\n```\n sage: is_SymbolicExpression(SR(I))\n False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1345\n\n",
+    "body": "Assignee: @mwhansen\n\nThis behavior seems strange:\n\n```\n sage: foo = I+I\n sage: foo._operands\n [I, I]\n sage: [type(i) for i in foo._operands]\n [<class 'sage.calculus.calculus.SymbolicConstant'>,\n  <class 'sage.functions.constants.I_class'>]\n```\nAnd here's another strange thing (probably the same bug):\n\n```\n sage: is_SymbolicExpression(SR(I))\n False\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1345\n\n",
     "created_at": "2007-11-30T22:20:45Z",
     "labels": [
         "component: calculus",
@@ -28,14 +28,12 @@ This behavior seems strange:
  [<class 'sage.calculus.calculus.SymbolicConstant'>,
   <class 'sage.functions.constants.I_class'>]
 ```
-
 And here's another strange thing (probably the same bug):
 
 ```
  sage: is_SymbolicExpression(SR(I))
  False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1345
 

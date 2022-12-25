@@ -69,7 +69,7 @@ Yes, I agree, those three functions *definitely* need to be refactored into a si
 archive/issue_comments_017870.json:
 ```json
 {
-    "body": "Since you're doing just arithmetic, it just occurred to me that in the interest of speed one could use the specialized 2x2 integer matrix class that Robert Bradshaw wrote, which is ten times faster.  For example: \n\n\n```\nsage: import sage.matrix.matrix_integer_2x2\nsage: A = sage.matrix.matrix_integer_2x2.Matrix_integer_2x2(MatrixSpace(ZZ,2),[1,2,3,4],False,False)\nsage: time for _ in xrange(10^5): B = A*A\nCPU times: user 0.23 s, sys: 0.00 s, total: 0.23 s\nWall time: 0.24\nsage: A = matrix(ZZ,2,[1,2,3,4])sage: time for _ in xrange(10^5): B = A*A\nCPU times: user 1.81 s, sys: 0.21 s, total: 2.02 s\nWall time: 2.04\n```\n",
+    "body": "Since you're doing just arithmetic, it just occurred to me that in the interest of speed one could use the specialized 2x2 integer matrix class that Robert Bradshaw wrote, which is ten times faster.  For example: \n\n```\nsage: import sage.matrix.matrix_integer_2x2\nsage: A = sage.matrix.matrix_integer_2x2.Matrix_integer_2x2(MatrixSpace(ZZ,2),[1,2,3,4],False,False)\nsage: time for _ in xrange(10^5): B = A*A\nCPU times: user 0.23 s, sys: 0.00 s, total: 0.23 s\nWall time: 0.24\nsage: A = matrix(ZZ,2,[1,2,3,4])sage: time for _ in xrange(10^5): B = A*A\nCPU times: user 1.81 s, sys: 0.21 s, total: 2.02 s\nWall time: 2.04\n```",
     "created_at": "2008-03-22T19:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_017870.json:
 ```
 
 Since you're doing just arithmetic, it just occurred to me that in the interest of speed one could use the specialized 2x2 integer matrix class that Robert Bradshaw wrote, which is ten times faster.  For example: 
-
 
 ```
 sage: import sage.matrix.matrix_integer_2x2
@@ -91,7 +90,6 @@ sage: A = matrix(ZZ,2,[1,2,3,4])sage: time for _ in xrange(10^5): B = A*A
 CPU times: user 1.81 s, sys: 0.21 s, total: 2.02 s
 Wall time: 2.04
 ```
-
 
 
 
@@ -118,7 +116,7 @@ The replacement patch certainly answers my point made earlier.  So I would have 
 archive/issue_comments_017872.json:
 ```json
 {
-    "body": "was:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.50 s, sys: 0.04 s, total: 0.54 s\nWall time: 0.54\n```\n\nis:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\n```\n",
+    "body": "was:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.50 s, sys: 0.04 s, total: 0.54 s\nWall time: 0.54\n```\nis:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\n```",
     "created_at": "2008-03-23T00:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ sage: time L = Gamma0(389).generators()
 CPU times: user 0.50 s, sys: 0.04 s, total: 0.54 s
 Wall time: 0.54
 ```
-
 is:
 
 ```
@@ -142,7 +139,6 @@ sage: time L = Gamma0(389).generators()
 CPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s
 Wall time: 0.05
 ```
-
 
 
 

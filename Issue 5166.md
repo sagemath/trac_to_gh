@@ -3,7 +3,7 @@
 archive/issues_005166.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/function.pyx\"       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 377:\n    sage: f_list[8] # indices here depend on the GiNaC library\nExpected:\n    gamma\nGot nothing\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 379:\n    sage: f_list[12]\nExpected:\n    exp\nGot:\n    <function O at 0x8210170>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 442:\n    sage: f_list[14]\nExpected:\n    sin\nGot:\n    <function log at 0xa2a8b30>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 444:\n    sage: f_list[15]\nExpected:\n    cos\nGot:\n    sin\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_6\n   2 of   6 in __main__.example_7\n***Test Failed*** 4 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5166\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage -t -long \"devel/sage/sage/symbolic/function.pyx\"       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 377:\n    sage: f_list[8] # indices here depend on the GiNaC library\nExpected:\n    gamma\nGot nothing\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 379:\n    sage: f_list[12]\nExpected:\n    exp\nGot:\n    <function O at 0x8210170>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 442:\n    sage: f_list[14]\nExpected:\n    sin\nGot:\n    <function log at 0xa2a8b30>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 444:\n    sage: f_list[15]\nExpected:\n    cos\nGot:\n    sin\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_6\n   2 of   6 in __main__.example_7\n***Test Failed*** 4 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5166\n\n",
     "created_at": "2009-02-03T17:32:50Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_005166.json:
 }
 ```
 Assignee: @burcin
-
 
 ```
 sage -t -long "devel/sage/sage/symbolic/function.pyx"       
@@ -55,7 +54,6 @@ Got:
    2 of   6 in __main__.example_7
 ***Test Failed*** 4 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5166
 

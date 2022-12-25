@@ -72,7 +72,7 @@ Michael
 archive/issue_comments_032442.json:
 ```json
 {
-    "body": "The patch needs fixes for doc.text, const.tex and tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 2240:\n    : V.irreducible_components()\nExpected:\n        [\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y\n          x - 1,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y - 1\n          x,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          x + y + 2\n          2*y^2 + 4*y + 3\n        ]\nGot:\n    [\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y - 1\n      x,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y\n      x - 1,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x + y + 2\n      2*y^2 + 4*y + 3\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 1654:\n    : B = I.groebner_basis(); B\nExpected:\n    [x^2*y^2, x^6]\nGot:\n    [x^6, x^2*y^2]\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_100\n   1 of  12 in __main__.example_78\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_tut.py\n\n\t [23.2 s]\nsage -t -long devel/doc/const/const.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2847:\n    : B = I.groebner_basis(); B\nExpected:\n    [b^2 - 1, a - 2*b]\nGot:\n    [a - 2*b, b^2 - 1]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2864:\n    : B = I.groebner_basis(); B\nExpected:\n    [c^2*d^6 - c^2*d^2 - d^4 + 1,\n     c^3*d^2 + c^2*d^3 - c - d,\n     b*d^4 - b + d^5 - d,\n     b*c - b*d + c^2*d^4 + c*d - 2*d^2,\n     b^2 + 2*b*d + d^2,\n     a + b + c + d]\nGot:\n    [a + b + c + d, b^2 + 2*b*d + d^2, b*c - b*d + c^2*d^4 + c*d - 2*d^2, b*d^4 - b + d^5 - d, c^3*d^2 + c^2*d^3 - c - d, c^2*d^6 - c^2*d^2 - d^4 + 1]\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_95\n   1 of   6 in __main__.example_96\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_const.py\n\n\t [30.0 s]\n```\n\nTrivial patch coming up unless malb beats me to it :)\n\nCheers,\n\nMichael",
+    "body": "The patch needs fixes for doc.text, const.tex and tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 2240:\n    : V.irreducible_components()\nExpected:\n        [\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y\n          x - 1,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y - 1\n          x,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          x + y + 2\n          2*y^2 + 4*y + 3\n        ]\nGot:\n    [\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y - 1\n      x,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y\n      x - 1,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x + y + 2\n      2*y^2 + 4*y + 3\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 1654:\n    : B = I.groebner_basis(); B\nExpected:\n    [x^2*y^2, x^6]\nGot:\n    [x^6, x^2*y^2]\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_100\n   1 of  12 in __main__.example_78\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_tut.py\n\n\t [23.2 s]\nsage -t -long devel/doc/const/const.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2847:\n    : B = I.groebner_basis(); B\nExpected:\n    [b^2 - 1, a - 2*b]\nGot:\n    [a - 2*b, b^2 - 1]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2864:\n    : B = I.groebner_basis(); B\nExpected:\n    [c^2*d^6 - c^2*d^2 - d^4 + 1,\n     c^3*d^2 + c^2*d^3 - c - d,\n     b*d^4 - b + d^5 - d,\n     b*c - b*d + c^2*d^4 + c*d - 2*d^2,\n     b^2 + 2*b*d + d^2,\n     a + b + c + d]\nGot:\n    [a + b + c + d, b^2 + 2*b*d + d^2, b*c - b*d + c^2*d^4 + c*d - 2*d^2, b*d^4 - b + d^5 - d, c^3*d^2 + c^2*d^3 - c - d, c^2*d^6 - c^2*d^2 - d^4 + 1]\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_95\n   1 of   6 in __main__.example_96\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_const.py\n\n\t [30.0 s]\n```\nTrivial patch coming up unless malb beats me to it :)\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T02:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alp
 
 	 [30.0 s]
 ```
-
 Trivial patch coming up unless malb beats me to it :)
 
 Cheers,
@@ -170,7 +169,7 @@ Michael
 archive/issue_comments_032443.json:
 ```json
 {
-    "body": "Another odd thing: With -t -long the tests pass after applying this patch, but with -t -long -optional I reproducibly get the following failure:\n\n```\nsage -t -optional -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/multi_polynomial_ideal.py\", line 144:\n    sage: I.groebner_basis()\nExpected:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\nGot:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n```\n\nAlso: the surf doctests fail since surf was removed from the singular.spkg. We might want to package the surf jars into an optinonal spkg.\n\nCheers,\n\nMichael",
+    "body": "Another odd thing: With -t -long the tests pass after applying this patch, but with -t -long -optional I reproducibly get the following failure:\n\n```\nsage -t -optional -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/multi_polynomial_ideal.py\", line 144:\n    sage: I.groebner_basis()\nExpected:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\nGot:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n```\nAlso: the surf doctests fail since surf was removed from the singular.spkg. We might want to package the surf jars into an optinonal spkg.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T02:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -191,7 +190,6 @@ Expected:
 Got:
     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]
 ```
-
 Also: the surf doctests fail since surf was removed from the singular.spkg. We might want to package the surf jars into an optinonal spkg.
 
 Cheers,
@@ -205,7 +203,7 @@ Michael
 archive/issue_comments_032444.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> Expected:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\n> Got:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n\nThat's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.",
+    "body": "Replying to [comment:3 mabshoff]:\n> Expected:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\n> Got:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n\n\nThat's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.",
     "created_at": "2008-11-02T02:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -219,6 +217,7 @@ Replying to [comment:3 mabshoff]:
 >     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]
 > Got:
 >     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]
+
 
 That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.
 
@@ -251,7 +250,7 @@ Michael
 archive/issue_comments_032446.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n\n> That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.\n\nDoes the GB computation over ZZ default to M2 if it is available? I guess in that case we should use some optional parameter to select the default one and make the one selecting the M2 engine optional. Once the documentation is fixed I will give this patch a positive review despite the M2 issue since as is due to the missing surf bits for Singular we have optional doctest failures. As you pointed out we can deal with that later.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 malb]:\n\n> That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.\n\n\nDoes the GB computation over ZZ default to M2 if it is available? I guess in that case we should use some optional parameter to select the default one and make the one selecting the M2 engine optional. Once the documentation is fixed I will give this patch a positive review despite the M2 issue since as is due to the missing surf bits for Singular we have optional doctest failures. As you pointed out we can deal with that later.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T02:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
@@ -263,6 +262,7 @@ archive/issue_comments_032446.json:
 Replying to [comment:4 malb]:
 
 > That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.
+
 
 Does the GB computation over ZZ default to M2 if it is available? I guess in that case we should use some optional parameter to select the default one and make the one selecting the M2 engine optional. Once the documentation is fixed I will give this patch a positive review despite the M2 issue since as is due to the missing surf bits for Singular we have optional doctest failures. As you pointed out we can deal with that later.
 

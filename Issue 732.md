@@ -3,7 +3,7 @@
 archive/issues_000732.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe enum() function for graphs will change behavior depending on if the boundary is set and if 'quick' is passed.\n\n\n```\nsage: from sage.graphs.graph import enum\nsage: g=Graph({0:[1,2],1:[3]})\nsage: g.set_boundary([1])\nsage: enum(g)\n23112\nsage: enum(g,quick=True)\n27012\n```\n\n\nThis unexpected behavior happens because g.vertices() returns the boundary vertices first, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/732\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe enum() function for graphs will change behavior depending on if the boundary is set and if 'quick' is passed.\n\n```\nsage: from sage.graphs.graph import enum\nsage: g=Graph({0:[1,2],1:[3]})\nsage: g.set_boundary([1])\nsage: enum(g)\n23112\nsage: enum(g,quick=True)\n27012\n```\n\nThis unexpected behavior happens because g.vertices() returns the boundary vertices first, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/732\n\n",
     "created_at": "2007-09-21T19:03:06Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ Keywords: graphs
 
 The enum() function for graphs will change behavior depending on if the boundary is set and if 'quick' is passed.
 
-
 ```
 sage: from sage.graphs.graph import enum
 sage: g=Graph({0:[1,2],1:[3]})
@@ -32,7 +31,6 @@ sage: enum(g)
 sage: enum(g,quick=True)
 27012
 ```
-
 
 This unexpected behavior happens because g.vertices() returns the boundary vertices first, I think.
 

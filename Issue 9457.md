@@ -3,7 +3,7 @@
 archive/issues_009457.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
     "created_at": "2010-07-08T15:35:20Z",
     "labels": [
         "component: commutative algebra",
@@ -23,7 +23,6 @@ CC:  simonking @categorie
 
 Comparison of power series uses list instead of padded_list; this means that power series equality can fail:
 
-
 ```
 sage: A.<t> = PowerSeriesRing(ZZ)
 sage: g = t + t^3 + t^5 + O(t^6); g
@@ -35,7 +34,6 @@ sage: g.add_bigoh(3).list()
 sage: g.add_bigoh(3).padded_list()
 [1, 0, 0]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9457
 
@@ -86,7 +84,7 @@ change list to padded_list in _richcmp_c_impl
 archive/issue_comments_090487.json:
 ```json
 {
-    "body": "Replaced padded_list() with padded_list(prec) because of\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nFalse\nsage: f.truncate().padded_list()\n[0, 1, 1]\n```\n\n\nThis brought up a problem with padded_list(infinity), which is also now patched\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t**10)\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': '<type 'list'>' and 'The Infinity Ring'\n```\n",
+    "body": "Replaced padded_list() with padded_list(prec) because of\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nFalse\nsage: f.truncate().padded_list()\n[0, 1, 1]\n```\n\nThis brought up a problem with padded_list(infinity), which is also now patched\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t**10)\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': '<type 'list'>' and 'The Infinity Ring'\n```",
     "created_at": "2010-07-08T19:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -97,7 +95,6 @@ archive/issue_comments_090487.json:
 
 Replaced padded_list() with padded_list(prec) because of
 
-
 ```
 sage: A.<t> = PowerSeriesRing(ZZ)
 sage: f = t + t^2 + O(t^10)
@@ -107,9 +104,7 @@ sage: f.truncate().padded_list()
 [0, 1, 1]
 ```
 
-
 This brought up a problem with padded_list(infinity), which is also now patched
-
 
 ```
 sage: A.<t> = PowerSeriesRing(ZZ)
@@ -124,13 +119,12 @@ TypeError: unsupported operand parent(s) for '*': '<type 'list'>' and 'The Infin
 
 
 
-
 ---
 
 archive/issue_comments_090488.json:
 ```json
 {
-    "body": "Replying to [comment:4 niles]: Code in the previous description made no sense; my apologies.  Here's what we have after applying the patch:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n\n\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nTrue\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\n[0, 1, 1]\n```\n",
+    "body": "Replying to [comment:4 niles]: Code in the previous description made no sense; my apologies.  Here's what we have after applying the patch:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n\n\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nTrue\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\n[0, 1, 1]\n```",
     "created_at": "2010-07-09T12:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -140,7 +134,6 @@ archive/issue_comments_090488.json:
 ```
 
 Replying to [comment:4 niles]: Code in the previous description made no sense; my apologies.  Here's what we have after applying the patch:
-
 
 ```
 sage: A.<t> = PowerSeriesRing(ZZ)
@@ -158,7 +151,6 @@ sage: f.padded_list()
 sage: f.padded_list(infinity)
 [0, 1, 1]
 ```
-
 
 
 
@@ -203,7 +195,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090491.json:
 ```json
 {
-    "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by @simon-king-jena created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
+    "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by @simon-king-jena created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
     "created_at": "2010-07-30T16:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -229,7 +221,6 @@ sage: [g == g.add_bigoh(i) for i in range(7)]
 [True, True, True, True, True, True, True]
 ```
 
-
 The code looks good to me. I am now running doctests.
 
 One minor problem: Please mention the ticket number in the commit messages. So, please add something like "#9457: " to the commit messages of both patches
@@ -241,7 +232,7 @@ One minor problem: Please mention the ticket number in the commit messages. So, 
 archive/issue_comments_090492.json:
 ```json
 {
-    "body": "First, I applied the patches from #9443 and found that all doctests pass. Then, I applied the tickets from here, and got one doctest failure:\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;\npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\nFile \"/home/king/SAGE/sage-4.4.2/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[13]>\", line 1, in <module>\n        EllipticCurve('53a1').sha().an_padic(Integer(5)) # rank 1    (long time)###line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\n      File \"/home/king/SAGE/sage-4.4.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 567, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n```\n\n\nSo, there will be some bug hunt needed.",
+    "body": "First, I applied the patches from #9443 and found that all doctests pass. Then, I applied the tickets from here, and got one doctest failure:\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;\npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\nFile \"/home/king/SAGE/sage-4.4.2/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[13]>\", line 1, in <module>\n        EllipticCurve('53a1').sha().an_padic(Integer(5)) # rank 1    (long time)###line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\n      File \"/home/king/SAGE/sage-4.4.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 567, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n```\n\nSo, there will be some bug hunt needed.",
     "created_at": "2010-07-30T22:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -278,7 +269,6 @@ Exception raised:
     RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.
 ```
 
-
 So, there will be some bug hunt needed.
 
 
@@ -288,7 +278,7 @@ So, there will be some bug hunt needed.
 archive/issue_comments_090493.json:
 ```json
 {
-    "body": "Here's the problem.\n\nWithout the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nFalse\n```\n\n\nWith the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nTrue\n```\n\n\nI guess that the second answer is correct. Unfortunately, Sha.an_padic relies on the wrong answer.",
+    "body": "Here's the problem.\n\nWithout the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nFalse\n```\n\nWith the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nTrue\n```\n\nI guess that the second answer is correct. Unfortunately, Sha.an_padic relies on the wrong answer.",
     "created_at": "2010-07-31T12:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -309,7 +299,6 @@ sage: O(T^2) == 0
 False
 ```
 
-
 With the patch:
 
 ```
@@ -320,7 +309,6 @@ sage: O(T^2) == 0
 True
 ```
 
-
 I guess that the second answer is correct. Unfortunately, Sha.an_padic relies on the wrong answer.
 
 
@@ -330,7 +318,7 @@ I guess that the second answer is correct. Unfortunately, Sha.an_padic relies on
 archive/issue_comments_090494.json:
 ```json
 {
-    "body": "Thanks, but I'm not sure I can tell how to fix this . . . I see in the code for `Sha.an_padic` the following lines:\n\n\n```\n# check consistency (the first two are only here to avoid a bug in the p-adic L-series\n# (namely the coefficients of zero-relative precision are treated as zero)\nif shan0 != 0 and shan1 != 0 and shan0 - shan1 != 0:\n    raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n```\n\n\nI suppose this is part of the problem but I don't see how to fix it . . . the two variables `shan0` and `shan1` are printed in the verbose output as \"the two values for Sha\"; the value of `shan1` is different depending on whether or not the patch is applied, but I have no idea which value is correct:\n\nWithout the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```\n\n\n\nWith the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 4 + O(5)]\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nRuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n\n```\n\n\nNote that simply removing the conditions `shan0 != 0 and shan1 != 0` (as implied by the inline comment) does not resolve the problem, since `shan0 != shan1` is `True` with the patch.  The values of `shan0` and `shan1` are computed by the function `pAdicLseriesSupersingular.Dp_valued_series`, which gives different output with and without the patch; again I have no idea which is correct.\n\n\nWithout the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(T^4))\n```\n\n\nWith the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(5^5) + (4*5 + O(5^2))*T + O(5^2)*T^2 + (2*5 + O(5^2))*T^3 + O(T^4))\n```\n\n\nNote that every line of `pAdicLseriesSupersingular.Dp_valued_series` gives the same output with or without the patch, except for the very last one, which computes `lpv*eps.transpose()` where (with or without the patch)\n\n\n```\nlpv = (O(5^3) + (2*5^-1 + O(5^0))*T + O(5^0)*T^2 + (5^-1 + O(5^0))*T^3 + O(T^4), O(T^4))\n```\n\n\nand\n\n\n```\neps.transpose() = \n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nBefore I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\np.s. I haven't forgotten about fixing the commit messages; I'll do it after this is sorted out.",
+    "body": "Thanks, but I'm not sure I can tell how to fix this . . . I see in the code for `Sha.an_padic` the following lines:\n\n```\n# check consistency (the first two are only here to avoid a bug in the p-adic L-series\n# (namely the coefficients of zero-relative precision are treated as zero)\nif shan0 != 0 and shan1 != 0 and shan0 - shan1 != 0:\n    raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n```\n\nI suppose this is part of the problem but I don't see how to fix it . . . the two variables `shan0` and `shan1` are printed in the verbose output as \"the two values for Sha\"; the value of `shan1` is different depending on whether or not the patch is applied, but I have no idea which value is correct:\n\nWithout the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```\n\n\nWith the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 4 + O(5)]\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nRuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n\n```\n\nNote that simply removing the conditions `shan0 != 0 and shan1 != 0` (as implied by the inline comment) does not resolve the problem, since `shan0 != shan1` is `True` with the patch.  The values of `shan0` and `shan1` are computed by the function `pAdicLseriesSupersingular.Dp_valued_series`, which gives different output with and without the patch; again I have no idea which is correct.\n\n\nWithout the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(T^4))\n```\n\nWith the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(5^5) + (4*5 + O(5^2))*T + O(5^2)*T^2 + (2*5 + O(5^2))*T^3 + O(T^4))\n```\n\nNote that every line of `pAdicLseriesSupersingular.Dp_valued_series` gives the same output with or without the patch, except for the very last one, which computes `lpv*eps.transpose()` where (with or without the patch)\n\n```\nlpv = (O(5^3) + (2*5^-1 + O(5^0))*T + O(5^0)*T^2 + (5^-1 + O(5^0))*T^3 + O(T^4), O(T^4))\n```\n\nand\n\n```\neps.transpose() = \n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nBefore I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\np.s. I haven't forgotten about fixing the commit messages; I'll do it after this is sorted out.",
     "created_at": "2010-08-01T14:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -341,14 +329,12 @@ archive/issue_comments_090494.json:
 
 Thanks, but I'm not sure I can tell how to fix this . . . I see in the code for `Sha.an_padic` the following lines:
 
-
 ```
 # check consistency (the first two are only here to avoid a bug in the p-adic L-series
 # (namely the coefficients of zero-relative precision are treated as zero)
 if shan0 != 0 and shan1 != 0 and shan0 - shan1 != 0:
     raise RuntimeError, "There must be a bug in the supersingular routines for the p-adic BSD."
 ```
-
 
 I suppose this is part of the problem but I don't see how to fix it . . . the two variables `shan0` and `shan1` are printed in the verbose output as "the two values for Sha"; the value of `shan1` is different depending on whether or not the patch is applied, but I have no idea which value is correct:
 
@@ -362,7 +348,6 @@ verbose 1 (316: sha_tate.py, an_padic) ...putting things together
 verbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]
 1 + O(5)
 ```
-
 
 
 With the patch:
@@ -380,7 +365,6 @@ RuntimeError: There must be a bug in the supersingular routines for the p-adic B
 
 ```
 
-
 Note that simply removing the conditions `shan0 != 0 and shan1 != 0` (as implied by the inline comment) does not resolve the problem, since `shan0 != shan1` is `True` with the patch.  The values of `shan0` and `shan1` are computed by the function `pAdicLseriesSupersingular.Dp_valued_series`, which gives different output with and without the patch; again I have no idea which is correct.
 
 
@@ -395,7 +379,6 @@ sage: lps
 (O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(T^4))
 ```
 
-
 With the patch:
 
 ```
@@ -407,24 +390,19 @@ sage: lps
 (O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(5^5) + (4*5 + O(5^2))*T + O(5^2)*T^2 + (2*5 + O(5^2))*T^3 + O(T^4))
 ```
 
-
 Note that every line of `pAdicLseriesSupersingular.Dp_valued_series` gives the same output with or without the patch, except for the very last one, which computes `lpv*eps.transpose()` where (with or without the patch)
-
 
 ```
 lpv = (O(5^3) + (2*5^-1 + O(5^0))*T + O(5^0)*T^2 + (5^-1 + O(5^0))*T^3 + O(T^4), O(T^4))
 ```
 
-
 and
-
 
 ```
 eps.transpose() = 
 [  5/9 25/18]
 [-5/18   5/9]
 ```
-
 
 Before I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?
 
@@ -437,7 +415,7 @@ p.s. I haven't forgotten about fixing the commit messages; I'll do it after this
 archive/issue_comments_090495.json:
 ```json
 {
-    "body": "Hi niles!\n\nReplying to [comment:9 niles]:\n> Thanks, but I'm not sure I can tell how to fix this . . . \n\nAt least your bug hunting was much deeper than mine.\n\n> Before I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.\n\nProbably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\n>  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\nI inserted some print statements into an_padic, I don't recall exactly where. And it told me that just before the error occured, `O(T^2)` occured and was tested for being zero. As this is something that the patch changed, I conluded that there is a problem (but perhaps not the only problem).",
+    "body": "Hi niles!\n\nReplying to [comment:9 niles]:\n> Thanks, but I'm not sure I can tell how to fix this . . . \n\n\nAt least your bug hunting was much deeper than mine.\n\n> Before I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.\n\n\nProbably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\n>  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\n\nI inserted some print statements into an_padic, I don't recall exactly where. And it told me that just before the error occured, `O(T^2)` occured and was tested for being zero. As this is something that the patch changed, I conluded that there is a problem (but perhaps not the only problem).",
     "created_at": "2010-08-01T15:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -451,13 +429,16 @@ Hi niles!
 Replying to [comment:9 niles]:
 > Thanks, but I'm not sure I can tell how to fix this . . . 
 
+
 At least your bug hunting was much deeper than mine.
 
 > Before I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.
 
+
 Probably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.
 
 >  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?
+
 
 I inserted some print statements into an_padic, I don't recall exactly where. And it told me that just before the error occured, `O(T^2)` occured and was tested for being zero. As this is something that the patch changed, I conluded that there is a problem (but perhaps not the only problem).
 
@@ -468,7 +449,7 @@ I inserted some print statements into an_padic, I don't recall exactly where. An
 archive/issue_comments_090496.json:
 ```json
 {
-    "body": "Hi Simon, thanks for the quick reply :)\n\nReplying to [comment:10 SimonKing]:\n> Probably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\nThat's my guess too; I'll write an e-mail to sage-devel and see if someone can help",
+    "body": "Hi Simon, thanks for the quick reply :)\n\nReplying to [comment:10 SimonKing]:\n> Probably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\n\nThat's my guess too; I'll write an e-mail to sage-devel and see if someone can help",
     "created_at": "2010-08-01T15:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -482,6 +463,7 @@ Hi Simon, thanks for the quick reply :)
 Replying to [comment:10 SimonKing]:
 > Probably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.
 
+
 That's my guess too; I'll write an e-mail to sage-devel and see if someone can help
 
 
@@ -491,7 +473,7 @@ That's my guess too; I'll write an e-mail to sage-devel and see if someone can h
 archive/issue_comments_090497.json:
 ```json
 {
-    "body": "Replying to [comment:10 SimonKing]:\n\nHi Simon,\n\nI believe I have identified the problem; I think it is a problem with negative valuation for p-adics.  First, here is what `Dp_valued_series` does:\n\nWith or without the patch, we have\n\n```\nsage: import sage.matrix.all as matrix\nsage: p = 5\nsage: prec = 2\nsage: E = EllipticCurve('53a1')\nsage: L = E.padic_lseries(5)\nsage: lps = L.series(4)\nsage: R = lps.base_ring().base_ring()\nsage: QpT, T = PowerSeriesRing(R,'T',2).objgen()\nsage: G = QpT([lps[n][0] for n in range(0,lps.prec())], prec)\nsage: H = QpT([lps[n][1] for n in range(0,lps.prec())], prec)\nsage: phi = matrix.matrix([[0,-1/p],[1,E.ap(p)/p]])\nsage: lpv = vector([G  + (E.ap(p))*H  , - R(p) * H ])\nsage: eps = (1-phi)**(-2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nNow `Dp_valued_series` ends by returning `lpv*eps.transpose()`.\n\nWithout the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(T^2))\n```\n\n\nAnd with the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^5) + (4*5 + O(5^2))*T + O(T^2))\n```\n\n\nI had thought the with-patch answer was clearly right, until I tried the following (without the patch):\n\n\n```\nsage: a = vector([O(5^3) + (R(2/5).add_bigoh(0))*T + O(T^2), O(T^2)])\nsage: M = matrix.matrix([[  0, 1],[0,  1]]); M\n[0 1]\n[0 1]\nsage: a\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: a*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\nsage: lpv*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\n\nsage: M = matrix.matrix([[  0, 5],[0,  1]])\nsage: a*M\n(0, O(5^4) + (2 + O(5))*T + O(T^2))\nsage: lpv*M\n(0, O(T^2))\n```\n\n\nNow note the way `lpv[1]` is constructed: pull certain coefficients from `lps` and make a power series (of precision 2) in `QpT` with them.  Here is the list of coefficients for `H`:\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\nsage: H\nO(T^2)\n```\n\n\nSo the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\nHere is a more direct test that passing to the power series ring over 5-adic field does not remember negative precision of 0 (this is without the patch):\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0\nsage: R(0).add_bigoh(-1).precision_absolute()\n-1\nsage: QpT(R(0).add_bigoh(-1))[0].precision_absolute()\n+Infinity\nsage: QpT(R(1/25).add_bigoh(-1))\n5^-2 + O(5^-1)\nsage: QpT(R(1/25).add_bigoh(-1))[0].precision_absolute()\n-1\n```\n\n\nI believe the correct arithmetic should be as follows:\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^2) + O(5^-1)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nshould be\n\n```\n(O(5^3) + O(5^0)*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))\n```\n\nDoes this seem right?  If this were the output of `Dp_valued_series`, then `EllipticCurve('53a1').sha().an_padic(5)` would increase the precision of `Dp_valued_series` from 2 to 3 and run it again; I tested this, and with this precision `EllipticCurve('53a1').sha().an_padic(5)` succeeds (with the patch applied!) and gives the expected answer.\n \nSo I believe the problem is a bug with power series over p-adics, rather than with this patch or with the elliptic curves code.  Does this seem right to you?  If so, one possible route at this stage is to modify the `an_padic` code so that rather than throwing the error it first runs another loop with additional precision, and then submit a separate trac ticket for the p-adic problem.  This is sort of dodging the issue, but helps keep the individual bugs separated.",
+    "body": "Replying to [comment:10 SimonKing]:\n\nHi Simon,\n\nI believe I have identified the problem; I think it is a problem with negative valuation for p-adics.  First, here is what `Dp_valued_series` does:\n\nWith or without the patch, we have\n\n```\nsage: import sage.matrix.all as matrix\nsage: p = 5\nsage: prec = 2\nsage: E = EllipticCurve('53a1')\nsage: L = E.padic_lseries(5)\nsage: lps = L.series(4)\nsage: R = lps.base_ring().base_ring()\nsage: QpT, T = PowerSeriesRing(R,'T',2).objgen()\nsage: G = QpT([lps[n][0] for n in range(0,lps.prec())], prec)\nsage: H = QpT([lps[n][1] for n in range(0,lps.prec())], prec)\nsage: phi = matrix.matrix([[0,-1/p],[1,E.ap(p)/p]])\nsage: lpv = vector([G  + (E.ap(p))*H  , - R(p) * H ])\nsage: eps = (1-phi)**(-2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nNow `Dp_valued_series` ends by returning `lpv*eps.transpose()`.\n\nWithout the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(T^2))\n```\n\nAnd with the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^5) + (4*5 + O(5^2))*T + O(T^2))\n```\n\nI had thought the with-patch answer was clearly right, until I tried the following (without the patch):\n\n```\nsage: a = vector([O(5^3) + (R(2/5).add_bigoh(0))*T + O(T^2), O(T^2)])\nsage: M = matrix.matrix([[  0, 1],[0,  1]]); M\n[0 1]\n[0 1]\nsage: a\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: a*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\nsage: lpv*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\n\nsage: M = matrix.matrix([[  0, 5],[0,  1]])\nsage: a*M\n(0, O(5^4) + (2 + O(5))*T + O(T^2))\nsage: lpv*M\n(0, O(T^2))\n```\n\nNow note the way `lpv[1]` is constructed: pull certain coefficients from `lps` and make a power series (of precision 2) in `QpT` with them.  Here is the list of coefficients for `H`:\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\nsage: H\nO(T^2)\n```\n\nSo the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\nHere is a more direct test that passing to the power series ring over 5-adic field does not remember negative precision of 0 (this is without the patch):\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0\nsage: R(0).add_bigoh(-1).precision_absolute()\n-1\nsage: QpT(R(0).add_bigoh(-1))[0].precision_absolute()\n+Infinity\nsage: QpT(R(1/25).add_bigoh(-1))\n5^-2 + O(5^-1)\nsage: QpT(R(1/25).add_bigoh(-1))[0].precision_absolute()\n-1\n```\n\nI believe the correct arithmetic should be as follows:\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^2) + O(5^-1)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\nshould be\n\n```\n(O(5^3) + O(5^0)*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))\n```\nDoes this seem right?  If this were the output of `Dp_valued_series`, then `EllipticCurve('53a1').sha().an_padic(5)` would increase the precision of `Dp_valued_series` from 2 to 3 and run it again; I tested this, and with this precision `EllipticCurve('53a1').sha().an_padic(5)` succeeds (with the patch applied!) and gives the expected answer.\n \nSo I believe the problem is a bug with power series over p-adics, rather than with this patch or with the elliptic curves code.  Does this seem right to you?  If so, one possible route at this stage is to modify the `an_padic` code so that rather than throwing the error it first runs another loop with additional precision, and then submit a separate trac ticket for the p-adic problem.  This is sort of dodging the issue, but helps keep the individual bugs separated.",
     "created_at": "2010-08-03T13:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -529,7 +511,6 @@ sage: eps.transpose()
 [-5/18   5/9]
 ```
 
-
 Now `Dp_valued_series` ends by returning `lpv*eps.transpose()`.
 
 Without the patch:
@@ -539,7 +520,6 @@ sage: lpv*eps.transpose()
 (O(5^4) + (3 + O(5))*T + O(T^2), O(T^2))
 ```
 
-
 And with the patch:
 
 ```
@@ -547,9 +527,7 @@ sage: lpv*eps.transpose()
 (O(5^4) + (3 + O(5))*T + O(T^2), O(5^5) + (4*5 + O(5^2))*T + O(T^2))
 ```
 
-
 I had thought the with-patch answer was clearly right, until I tried the following (without the patch):
-
 
 ```
 sage: a = vector([O(5^3) + (R(2/5).add_bigoh(0))*T + O(T^2), O(T^2)])
@@ -572,7 +550,6 @@ sage: lpv*M
 (0, O(T^2))
 ```
 
-
 Now note the way `lpv[1]` is constructed: pull certain coefficients from `lps` and make a power series (of precision 2) in `QpT` with them.  Here is the list of coefficients for `H`:
 
 ```
@@ -581,7 +558,6 @@ sage: [lps[n][1] for n in range(0,lps.prec())]
 sage: H
 O(T^2)
 ```
-
 
 So the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).
 
@@ -602,7 +578,6 @@ sage: QpT(R(1/25).add_bigoh(-1))[0].precision_absolute()
 -1
 ```
 
-
 I believe the correct arithmetic should be as follows:
 
 ```
@@ -610,13 +585,11 @@ I believe the correct arithmetic should be as follows:
 [  5/9 25/18]
 [-5/18   5/9]
 ```
-
 should be
 
 ```
 (O(5^3) + O(5^0)*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))
 ```
-
 Does this seem right?  If this were the output of `Dp_valued_series`, then `EllipticCurve('53a1').sha().an_padic(5)` would increase the precision of `Dp_valued_series` from 2 to 3 and run it again; I tested this, and with this precision `EllipticCurve('53a1').sha().an_padic(5)` succeeds (with the patch applied!) and gives the expected answer.
  
 So I believe the problem is a bug with power series over p-adics, rather than with this patch or with the elliptic curves code.  Does this seem right to you?  If so, one possible route at this stage is to modify the `an_padic` code so that rather than throwing the error it first runs another loop with additional precision, and then submit a separate trac ticket for the p-adic problem.  This is sort of dodging the issue, but helps keep the individual bugs separated.
@@ -628,7 +601,7 @@ So I believe the problem is a bug with power series over p-adics, rather than wi
 archive/issue_comments_090498.json:
 ```json
 {
-    "body": "Replying to [comment:12 niles]:\n\n> So the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\noops, `lpv[1]` is `(-R(p)) * H`, so I guess it should be `O(5^3) + O(5^0)*T + O(T^2)`\n\nand the arithmetic is:\n\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nshould be\n\n```\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^4) + O(5)*T + O(T^2))\n```\n\nwhich will cause `an_padic` to still throw the error :(\n\nIn any case, computing with a higher precision does give the right answer with or without the patch.  I noticed there is an optional argument for this:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5, prec=5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) the algebraic leading terms : (3 + 5 + 2*5^3 + 3*5^4 + 3*5^6 + 4*5^7 + 2*5^8 + 5^10 + 4*5^11 + 4*5^12 + 5^13 + 3*5^15 + 4*5^16 + 4*5^17 + 3*5^18 + 4*5^19 + O(5^20), 5 + 5^2 + 3*5^3 + 4*5^4 + 5^5 + 2*5^6 + 3*5^7 + 2*5^8 + 4*5^9 + 2*5^10 + 4*5^12 + 3*5^13 + 3*5^14 + 4*5^15 + 3*5^16 + 2*5^17 + 3*5^18 + 5^19 + O(5^20))\nverbose 1 (316: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (316: sha_tate.py, an_padic) r = 1\nverbose 1 (881: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (881: padic_lseries.py, series) Now iterating over 2500 summands\nverbose 1 (316: sha_tate.py, an_padic) the leading terms : [3 + O(5), 5 + O(5^2)]\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 1 + O(5)]\n1 + O(5)\n```\n",
+    "body": "Replying to [comment:12 niles]:\n\n> So the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\n\noops, `lpv[1]` is `(-R(p)) * H`, so I guess it should be `O(5^3) + O(5^0)*T + O(T^2)`\n\nand the arithmetic is:\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\nshould be\n\n```\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^4) + O(5)*T + O(T^2))\n```\nwhich will cause `an_padic` to still throw the error :(\n\nIn any case, computing with a higher precision does give the right answer with or without the patch.  I noticed there is an optional argument for this:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5, prec=5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) the algebraic leading terms : (3 + 5 + 2*5^3 + 3*5^4 + 3*5^6 + 4*5^7 + 2*5^8 + 5^10 + 4*5^11 + 4*5^12 + 5^13 + 3*5^15 + 4*5^16 + 4*5^17 + 3*5^18 + 4*5^19 + O(5^20), 5 + 5^2 + 3*5^3 + 4*5^4 + 5^5 + 2*5^6 + 3*5^7 + 2*5^8 + 4*5^9 + 2*5^10 + 4*5^12 + 3*5^13 + 3*5^14 + 4*5^15 + 3*5^16 + 2*5^17 + 3*5^18 + 5^19 + O(5^20))\nverbose 1 (316: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (316: sha_tate.py, an_padic) r = 1\nverbose 1 (881: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (881: padic_lseries.py, series) Now iterating over 2500 summands\nverbose 1 (316: sha_tate.py, an_padic) the leading terms : [3 + O(5), 5 + O(5^2)]\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 1 + O(5)]\n1 + O(5)\n```",
     "created_at": "2010-08-03T18:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -641,23 +614,21 @@ Replying to [comment:12 niles]:
 
 > So the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).
 
+
 oops, `lpv[1]` is `(-R(p)) * H`, so I guess it should be `O(5^3) + O(5^0)*T + O(T^2)`
 
 and the arithmetic is:
-
 
 ```
 (O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))*
 [  5/9 25/18]
 [-5/18   5/9]
 ```
-
 should be
 
 ```
 (O(5^4) + (3 + O(5))*T + O(T^2), O(5^4) + O(5)*T + O(T^2))
 ```
-
 which will cause `an_padic` to still throw the error :(
 
 In any case, computing with a higher precision does give the right answer with or without the patch.  I noticed there is an optional argument for this:
@@ -676,7 +647,6 @@ verbose 1 (316: sha_tate.py, an_padic) ...putting things together
 verbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 1 + O(5)]
 1 + O(5)
 ```
-
 
 
 
@@ -796,7 +766,7 @@ Patchbot: apply trac_9457_power_series_eq_rebase.patch
 archive/issue_comments_090504.json:
 ```json
 {
-    "body": "Oh bother!  When switching from `padded_list` to \n\n\n```\nx += [0]*(prec - len(x)) # x.list() does not include trailing zeroes \nx = x[:prec] # truncate x to common prec \n```\n\n\nI seem to be triggering the problem in `sha_tate.py` again . . .",
+    "body": "Oh bother!  When switching from `padded_list` to \n\n```\nx += [0]*(prec - len(x)) # x.list() does not include trailing zeroes \nx = x[:prec] # truncate x to common prec \n```\n\nI seem to be triggering the problem in `sha_tate.py` again . . .",
     "created_at": "2012-05-03T15:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -807,12 +777,10 @@ archive/issue_comments_090504.json:
 
 Oh bother!  When switching from `padded_list` to 
 
-
 ```
 x += [0]*(prec - len(x)) # x.list() does not include trailing zeroes 
 x = x[:prec] # truncate x to common prec 
 ```
-
 
 I seem to be triggering the problem in `sha_tate.py` again . . .
 
@@ -967,7 +935,7 @@ Interesting. I just started to look at #4656 again this morning. And then I disc
 archive/issue_comments_090511.json:
 ```json
 {
-    "body": "Replying to [comment:26 wuthrich]:\n> Of course, I offer my help with this as I am at the origin of the code that causes troubles.\n\nThanks :)  The last real progress I made in understanding this is up in comments [comment:13] and [comment:14], where I worked through the offending doctest by hand -- see [the block starting on line 632](https://github.com/sagemath/sage/blob/master/src/sage/schemes/elliptic_curves/sha_tate.py#L632).  \n\nOne helpful thing would be to verify the calculations below:\n\nUsing the objects constructed in comment [comment:13], sage says\n\n\n```\nsage: G\nO(5^3) + (2*5^-1 + O(5^0))*T + O(T^2)\nsage: H\nO(T^2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nI think that `H` is not correct, as it it built from the following list of coefficients\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\n```\n\n\nSo I think the correct value should be `H = O(5^2) + O(5^-1)*T + O(T^2)` and hence \n`-R(p) * H = O(5^3) + O(5^0)*T + O(T^2)`.  Converting `eps.transpose()` to the 5-adics `R`, so that I can check `lpv * eps.transpose()` by hand, I have\n\n\n```\nsage: Matrix(R,2,2,[R(_) for _ in eps.transpose().list()])\n[      4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)     2*5^2 + 5^3 + 3*5^5 + 3*5^6 + O(5^7)]\n[3*5 + 3*5^2 + 4*5^3 + 5^4 + 5^5 + O(5^6)       4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)]\n```\n\n\nTherefore `lpv * eps.transpose()` should be\n\n```\n( O(5^3) + (3 + O(5))*T + O(T^2) , O(5^4) + O(5^1)*T + O(T^2) )\n```\n\n\nCan you verify these calculations, and verify that if this were the output of `lpv*eps.transpose()`, then the rest of the code would work correctly and return `1`, as expected?  (I think I was confused about this last point when I made my comment [comment:14]; but this value for `lpv * eps.transpose()` should make `shan0 = 1` and `shan1 = 0`, and if I read the rest of that block correctly then this will lead to the expected output).\n\n\n----------\n\nIf the analysis above is right, then the only problem remaining to solve is why `H` is not computed correctly.  The problem seems to be that the power series ring over p-adics does not keep track of negative precision when there are no non-zero coefficients:\n\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0   # should be same as line above\n\nsage: QpT(1/25 + R(0).add_bigoh(-1))\n5^-2 + O(5^-1)  # precision remembered when non-zero coefficients are present\n```\n\n\nI guess there is some problem with positive precision too:\n\n```\nsage: QpT(R(0).add_bigoh(1))\n0\nsage: QpT(1 + R(0).add_bigoh(1))\n1 + O(5)\n```\n\n\nIs this issue already part of one of the other padic bug tickets?",
+    "body": "Replying to [comment:26 wuthrich]:\n> Of course, I offer my help with this as I am at the origin of the code that causes troubles.\n\n\nThanks :)  The last real progress I made in understanding this is up in comments [comment:13] and [comment:14], where I worked through the offending doctest by hand -- see [the block starting on line 632](https://github.com/sagemath/sage/blob/master/src/sage/schemes/elliptic_curves/sha_tate.py#L632).  \n\nOne helpful thing would be to verify the calculations below:\n\nUsing the objects constructed in comment [comment:13], sage says\n\n```\nsage: G\nO(5^3) + (2*5^-1 + O(5^0))*T + O(T^2)\nsage: H\nO(T^2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nI think that `H` is not correct, as it it built from the following list of coefficients\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\n```\n\nSo I think the correct value should be `H = O(5^2) + O(5^-1)*T + O(T^2)` and hence \n`-R(p) * H = O(5^3) + O(5^0)*T + O(T^2)`.  Converting `eps.transpose()` to the 5-adics `R`, so that I can check `lpv * eps.transpose()` by hand, I have\n\n```\nsage: Matrix(R,2,2,[R(_) for _ in eps.transpose().list()])\n[      4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)     2*5^2 + 5^3 + 3*5^5 + 3*5^6 + O(5^7)]\n[3*5 + 3*5^2 + 4*5^3 + 5^4 + 5^5 + O(5^6)       4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)]\n```\n\nTherefore `lpv * eps.transpose()` should be\n\n```\n( O(5^3) + (3 + O(5))*T + O(T^2) , O(5^4) + O(5^1)*T + O(T^2) )\n```\n\nCan you verify these calculations, and verify that if this were the output of `lpv*eps.transpose()`, then the rest of the code would work correctly and return `1`, as expected?  (I think I was confused about this last point when I made my comment [comment:14]; but this value for `lpv * eps.transpose()` should make `shan0 = 1` and `shan1 = 0`, and if I read the rest of that block correctly then this will lead to the expected output).\n\n\n---\n\nIf the analysis above is right, then the only problem remaining to solve is why `H` is not computed correctly.  The problem seems to be that the power series ring over p-adics does not keep track of negative precision when there are no non-zero coefficients:\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0   # should be same as line above\n\nsage: QpT(1/25 + R(0).add_bigoh(-1))\n5^-2 + O(5^-1)  # precision remembered when non-zero coefficients are present\n```\n\nI guess there is some problem with positive precision too:\n\n```\nsage: QpT(R(0).add_bigoh(1))\n0\nsage: QpT(1 + R(0).add_bigoh(1))\n1 + O(5)\n```\n\nIs this issue already part of one of the other padic bug tickets?",
     "created_at": "2014-01-30T19:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -979,12 +947,12 @@ archive/issue_comments_090511.json:
 Replying to [comment:26 wuthrich]:
 > Of course, I offer my help with this as I am at the origin of the code that causes troubles.
 
+
 Thanks :)  The last real progress I made in understanding this is up in comments [comment:13] and [comment:14], where I worked through the offending doctest by hand -- see [the block starting on line 632](https://github.com/sagemath/sage/blob/master/src/sage/schemes/elliptic_curves/sha_tate.py#L632).  
 
 One helpful thing would be to verify the calculations below:
 
 Using the objects constructed in comment [comment:13], sage says
-
 
 ```
 sage: G
@@ -998,7 +966,6 @@ sage: eps.transpose()
 [-5/18   5/9]
 ```
 
-
 I think that `H` is not correct, as it it built from the following list of coefficients
 
 ```
@@ -1006,10 +973,8 @@ sage: [lps[n][1] for n in range(0,lps.prec())]
 [O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]
 ```
 
-
 So I think the correct value should be `H = O(5^2) + O(5^-1)*T + O(T^2)` and hence 
 `-R(p) * H = O(5^3) + O(5^0)*T + O(T^2)`.  Converting `eps.transpose()` to the 5-adics `R`, so that I can check `lpv * eps.transpose()` by hand, I have
-
 
 ```
 sage: Matrix(R,2,2,[R(_) for _ in eps.transpose().list()])
@@ -1017,21 +982,18 @@ sage: Matrix(R,2,2,[R(_) for _ in eps.transpose().list()])
 [3*5 + 3*5^2 + 4*5^3 + 5^4 + 5^5 + O(5^6)       4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)]
 ```
 
-
 Therefore `lpv * eps.transpose()` should be
 
 ```
 ( O(5^3) + (3 + O(5))*T + O(T^2) , O(5^4) + O(5^1)*T + O(T^2) )
 ```
 
-
 Can you verify these calculations, and verify that if this were the output of `lpv*eps.transpose()`, then the rest of the code would work correctly and return `1`, as expected?  (I think I was confused about this last point when I made my comment [comment:14]; but this value for `lpv * eps.transpose()` should make `shan0 = 1` and `shan1 = 0`, and if I read the rest of that block correctly then this will lead to the expected output).
 
 
-----------
+---
 
 If the analysis above is right, then the only problem remaining to solve is why `H` is not computed correctly.  The problem seems to be that the power series ring over p-adics does not keep track of negative precision when there are no non-zero coefficients:
-
 
 ```
 sage: R(0).add_bigoh(-1)
@@ -1043,7 +1005,6 @@ sage: QpT(1/25 + R(0).add_bigoh(-1))
 5^-2 + O(5^-1)  # precision remembered when non-zero coefficients are present
 ```
 
-
 I guess there is some problem with positive precision too:
 
 ```
@@ -1052,7 +1013,6 @@ sage: QpT(R(0).add_bigoh(1))
 sage: QpT(1 + R(0).add_bigoh(1))
 1 + O(5)
 ```
-
 
 Is this issue already part of one of the other padic bug tickets?
 
@@ -1129,7 +1089,7 @@ We could take the out the doc-string in sha-tate out for now, so that this and #
 archive/issue_comments_090513.json:
 ```json
 {
-    "body": "Replying to [comment:29 wuthrich]:\n\n> I try to remember what happened 4 years ago. \n\nThanks for putting this together :)\n\n> \n> So let's make a list - as there are several overlapping tickets and issues:\n> \n> * (see #4656) is_zero is broken for power series. This causes your `QpT( O(5^-1))` to print as zero. It remembers that it is not, if you have .list you see its first coefficient is still `O(5^-1)`. We should change `__nonzero__` in power_series_poly.pyx\n> \n\n#5075 addresses this too -- the patch there introduces 3 concepts of zero: exact zero (infinite precision), maximally zero (zero to maximal precision allowed by parent ring), and inexact zero (zero to precision less than maximal precision).  These are used to define some functions that are equal to degree for polynomials over exact rings, but more subtle over inexact rings, and these functions, in turn, are used to fix other functions . . . \n\nIn short, that ticket seems to me like a good place to start.\n\n> * (see #4656, too) power series compare wrongly. Your suggestion to use padded_list above is better than what I tried to do in the other ticket. That is cmp in power_series_ring_element.pyx\n\n`padded_list` works, but is substantially slower.  In the latest commit here, I have a more direct fix.  The patch at #5075 also has a fix that looks similar to mine, but I didn't compare them closely.\n\n> \n> * (see #4656) power series also print wrongly. You would expect the inexact coefficients of the form `O(p^2)` to print, too. I tried to change that in the other ticket. That is `_repr_` in power_series_ring_element.pyx\n> \n\n#5075 may address this too, at least judging by how some of the new doctests appear.\n\n> * (see #8198) Matrix multiplication on p-adics looses precision. I believe that is the heart of the problem for getting the right answer for this Dp_series. If I understand correctly you have spotted the same thing above.\n\nThis might be right . . . in my calculation above, the input to the vector*matrix multiplication is wrong, so I can't tell whether the matrix multiplication would also go wrong or not.\n\n> \n> * There is also #5075 which I have never looked at myself.\n\nI think we should go there :)\n\n> \n> We could take the out the doc-string in sha-tate out for now, so that this and #4656 can be closed. Then reintroduce it if we can fix #8198.\n\nHmmm . . . that doctest is holding up some pretty reasonable fixes, but it's also the only reason that we noticed these padic problems in the first place so I'm extremely reluctant to take it out.  I think it is especially bad to take it out before we fully understand where the problems are coming from.",
+    "body": "Replying to [comment:29 wuthrich]:\n\n> I try to remember what happened 4 years ago. \n\n\nThanks for putting this together :)\n\n> \n> So let's make a list - as there are several overlapping tickets and issues:\n> \n> * (see #4656) is_zero is broken for power series. This causes your `QpT( O(5^-1))` to print as zero. It remembers that it is not, if you have .list you see its first coefficient is still `O(5^-1)`. We should change `__nonzero__` in power_series_poly.pyx\n> \n\n\n#5075 addresses this too -- the patch there introduces 3 concepts of zero: exact zero (infinite precision), maximally zero (zero to maximal precision allowed by parent ring), and inexact zero (zero to precision less than maximal precision).  These are used to define some functions that are equal to degree for polynomials over exact rings, but more subtle over inexact rings, and these functions, in turn, are used to fix other functions . . . \n\nIn short, that ticket seems to me like a good place to start.\n\n> * (see #4656, too) power series compare wrongly. Your suggestion to use padded_list above is better than what I tried to do in the other ticket. That is cmp in power_series_ring_element.pyx\n\n\n`padded_list` works, but is substantially slower.  In the latest commit here, I have a more direct fix.  The patch at #5075 also has a fix that looks similar to mine, but I didn't compare them closely.\n\n> \n> * (see #4656) power series also print wrongly. You would expect the inexact coefficients of the form `O(p^2)` to print, too. I tried to change that in the other ticket. That is `_repr_` in power_series_ring_element.pyx\n> \n\n\n#5075 may address this too, at least judging by how some of the new doctests appear.\n\n> * (see #8198) Matrix multiplication on p-adics looses precision. I believe that is the heart of the problem for getting the right answer for this Dp_series. If I understand correctly you have spotted the same thing above.\n\n\nThis might be right . . . in my calculation above, the input to the vector*matrix multiplication is wrong, so I can't tell whether the matrix multiplication would also go wrong or not.\n\n> \n> * There is also #5075 which I have never looked at myself.\n\n\nI think we should go there :)\n\n> \n> We could take the out the doc-string in sha-tate out for now, so that this and #4656 can be closed. Then reintroduce it if we can fix #8198.\n\n\nHmmm . . . that doctest is holding up some pretty reasonable fixes, but it's also the only reason that we noticed these padic problems in the first place so I'm extremely reluctant to take it out.  I think it is especially bad to take it out before we fully understand where the problems are coming from.",
     "created_at": "2014-02-03T13:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -1142,6 +1102,7 @@ Replying to [comment:29 wuthrich]:
 
 > I try to remember what happened 4 years ago. 
 
+
 Thanks for putting this together :)
 
 > 
@@ -1150,11 +1111,13 @@ Thanks for putting this together :)
 > * (see #4656) is_zero is broken for power series. This causes your `QpT( O(5^-1))` to print as zero. It remembers that it is not, if you have .list you see its first coefficient is still `O(5^-1)`. We should change `__nonzero__` in power_series_poly.pyx
 > 
 
+
 #5075 addresses this too -- the patch there introduces 3 concepts of zero: exact zero (infinite precision), maximally zero (zero to maximal precision allowed by parent ring), and inexact zero (zero to precision less than maximal precision).  These are used to define some functions that are equal to degree for polynomials over exact rings, but more subtle over inexact rings, and these functions, in turn, are used to fix other functions . . . 
 
 In short, that ticket seems to me like a good place to start.
 
 > * (see #4656, too) power series compare wrongly. Your suggestion to use padded_list above is better than what I tried to do in the other ticket. That is cmp in power_series_ring_element.pyx
+
 
 `padded_list` works, but is substantially slower.  In the latest commit here, I have a more direct fix.  The patch at #5075 also has a fix that looks similar to mine, but I didn't compare them closely.
 
@@ -1162,19 +1125,23 @@ In short, that ticket seems to me like a good place to start.
 > * (see #4656) power series also print wrongly. You would expect the inexact coefficients of the form `O(p^2)` to print, too. I tried to change that in the other ticket. That is `_repr_` in power_series_ring_element.pyx
 > 
 
+
 #5075 may address this too, at least judging by how some of the new doctests appear.
 
 > * (see #8198) Matrix multiplication on p-adics looses precision. I believe that is the heart of the problem for getting the right answer for this Dp_series. If I understand correctly you have spotted the same thing above.
+
 
 This might be right . . . in my calculation above, the input to the vector*matrix multiplication is wrong, so I can't tell whether the matrix multiplication would also go wrong or not.
 
 > 
 > * There is also #5075 which I have never looked at myself.
 
+
 I think we should go there :)
 
 > 
 > We could take the out the doc-string in sha-tate out for now, so that this and #4656 can be closed. Then reintroduce it if we can fix #8198.
+
 
 Hmmm . . . that doctest is holding up some pretty reasonable fixes, but it's also the only reason that we noticed these padic problems in the first place so I'm extremely reluctant to take it out.  I think it is especially bad to take it out before we fully understand where the problems are coming from.
 
@@ -1221,7 +1188,7 @@ The first commit in comment:21 shows `Bad object id: 83d1220`.
 archive/issue_comments_090516.json:
 ```json
 {
-    "body": "Replying to [comment:33 rws]:\n> The first commit in comment:21 shows `Bad object id: 83d1220`.\n\n\nWeird; The commit linked by trac seems wrong, although the \"Commit\" field is correct.  The branch should point to [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791).  Here are some other links you can look at, which seem to have the branch pointing at the correct commit:\n\n* [log graph with u/niles/ticket/9457 at the top](http://git.sagemath.org/sage.git/log/?h=u/niles/ticket/9457)\n* [commit labeled u/niles/ticket/9457](http://git.sagemath.org/sage.git/commit/?h=u/niles/ticket/9457)\n\nI think the changes listed in comment [comment:21] came from trying to merge some other ticket branches with this one, which I think I should not have done.  Or rather, I should not have deleted that branch and replaced it with a new one having the same name -- that's probably causing confusion for trac.\n\nCommit [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791) makes just the changes necessary for fixing this ticket, so that's the correct starting point.  Later today I'll make a new branch pointing to it and fix the trac branch field.",
+    "body": "Replying to [comment:33 rws]:\n> The first commit in comment:21 shows `Bad object id: 83d1220`.\n\n\n\nWeird; The commit linked by trac seems wrong, although the \"Commit\" field is correct.  The branch should point to [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791).  Here are some other links you can look at, which seem to have the branch pointing at the correct commit:\n\n* [log graph with u/niles/ticket/9457 at the top](http://git.sagemath.org/sage.git/log/?h=u/niles/ticket/9457)\n* [commit labeled u/niles/ticket/9457](http://git.sagemath.org/sage.git/commit/?h=u/niles/ticket/9457)\n\nI think the changes listed in comment [comment:21] came from trying to merge some other ticket branches with this one, which I think I should not have done.  Or rather, I should not have deleted that branch and replaced it with a new one having the same name -- that's probably causing confusion for trac.\n\nCommit [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791) makes just the changes necessary for fixing this ticket, so that's the correct starting point.  Later today I'll make a new branch pointing to it and fix the trac branch field.",
     "created_at": "2014-03-01T12:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -1232,6 +1199,7 @@ archive/issue_comments_090516.json:
 
 Replying to [comment:33 rws]:
 > The first commit in comment:21 shows `Bad object id: 83d1220`.
+
 
 
 Weird; The commit linked by trac seems wrong, although the "Commit" field is correct.  The branch should point to [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791).  Here are some other links you can look at, which seem to have the branch pointing at the correct commit:
@@ -1250,7 +1218,7 @@ Commit [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f46
 archive/issue_comments_090517.json:
 ```json
 {
-    "body": "rebased to 6.2.beta2 and put changes on a completely new branch: u/niles/ticket/9457.2\n----\nNew commits:",
+    "body": "rebased to 6.2.beta2 and put changes on a completely new branch: u/niles/ticket/9457.2\n\n---\nNew commits:",
     "created_at": "2014-03-02T01:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -1260,7 +1228,8 @@ archive/issue_comments_090517.json:
 ```
 
 rebased to 6.2.beta2 and put changes on a completely new branch: u/niles/ticket/9457.2
-----
+
+---
 New commits:
 
 
@@ -1308,7 +1277,7 @@ In any case, I start looking into the issue.
 archive/issue_comments_090520.json:
 ```json
 {
-    "body": "Replying to [comment:37 wuthrich]:\n> Yes, that is mine now. That may take me soem time to fix. This is really a new bug, which was not apparent with the bug fixed here.\nI'm not sure you interpreted my comment correctly.  I meant I merged #8198 and the branch for this, ran `make ptestlong`, and got NO doctest failures; I hope I made no mistakes there.  I.e. if that (former, after #8198) doctest failure in `sha_tate.py` was the only problem with this ticket, then there should be nothing stopping us from positively reviewing this one.",
+    "body": "Replying to [comment:37 wuthrich]:\n> Yes, that is mine now. That may take me soem time to fix. This is really a new bug, which was not apparent with the bug fixed here.\n\nI'm not sure you interpreted my comment correctly.  I meant I merged #8198 and the branch for this, ran `make ptestlong`, and got NO doctest failures; I hope I made no mistakes there.  I.e. if that (former, after #8198) doctest failure in `sha_tate.py` was the only problem with this ticket, then there should be nothing stopping us from positively reviewing this one.",
     "created_at": "2014-04-12T19:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -1319,6 +1288,7 @@ archive/issue_comments_090520.json:
 
 Replying to [comment:37 wuthrich]:
 > Yes, that is mine now. That may take me soem time to fix. This is really a new bug, which was not apparent with the bug fixed here.
+
 I'm not sure you interpreted my comment correctly.  I meant I merged #8198 and the branch for this, ran `make ptestlong`, and got NO doctest failures; I hope I made no mistakes there.  I.e. if that (former, after #8198) doctest failure in `sha_tate.py` was the only problem with this ticket, then there should be nothing stopping us from positively reviewing this one.
 
 
@@ -1402,7 +1372,7 @@ OK, all tests still pass. 8-)  Just a reviewer patch, as promised.  I mostly edi
 archive/issue_comments_090525.json:
 ```json
 {
-    "body": "This is fantastic!!  Thanks for seeing it through :)\n\n`padded_list` is indeed slower -- I just suggested it as a simple workaround for the stopgap warning.\n\nThe confounding doctest seems to be behaving correctly now -- the intermediate steps are consistent with my calculations by hand above, and the verbose output is as expected (given that there are still other problems with padics):\n\n\n```\nsage: EllipticCurve('53a1').sha().an_padic(5)\n...\nverbose 1 (431: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 4\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 100 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [0, 0]\nverbose 1 (431: sha_tate.py, an_padic) increased precision to 4\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 500 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [3 + O(5), 0]\nverbose 1 (431: sha_tate.py, an_padic) ...putting things together\nverbose 1 (431: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```\n",
+    "body": "This is fantastic!!  Thanks for seeing it through :)\n\n`padded_list` is indeed slower -- I just suggested it as a simple workaround for the stopgap warning.\n\nThe confounding doctest seems to be behaving correctly now -- the intermediate steps are consistent with my calculations by hand above, and the verbose output is as expected (given that there are still other problems with padics):\n\n```\nsage: EllipticCurve('53a1').sha().an_padic(5)\n...\nverbose 1 (431: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 4\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 100 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [0, 0]\nverbose 1 (431: sha_tate.py, an_padic) increased precision to 4\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 500 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [3 + O(5), 0]\nverbose 1 (431: sha_tate.py, an_padic) ...putting things together\nverbose 1 (431: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```",
     "created_at": "2014-04-14T16:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
@@ -1416,7 +1386,6 @@ This is fantastic!!  Thanks for seeing it through :)
 `padded_list` is indeed slower -- I just suggested it as a simple workaround for the stopgap warning.
 
 The confounding doctest seems to be behaving correctly now -- the intermediate steps are consistent with my calculations by hand above, and the verbose output is as expected (given that there are still other problems with padics):
-
 
 ```
 sage: EllipticCurve('53a1').sha().an_padic(5)
@@ -1433,7 +1402,6 @@ verbose 1 (431: sha_tate.py, an_padic) ...putting things together
 verbose 1 (431: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]
 1 + O(5)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009783.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nKeywords: list_plot, plotting, dictionaries\n\nIf I give the following dictionary to `list_plot`, it seems very obvious what I want it to do:\n\n```\n{67: 1770, 52: 2735, 37: 3135, 22: 3365, 72: 1560, 57: 2550, 42: 3020,\n27: 3295, 62: 1960, 47: 2880}\n```\n\n...especially since list_plot plots functions with a finite domain, and dictionaries in Python are called \"mapping types\"! We should make `list_plot` be able to deal with dictionaries with numeric keys and values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9784\n\n",
+    "body": "Assignee: jason, was\n\nKeywords: list_plot, plotting, dictionaries\n\nIf I give the following dictionary to `list_plot`, it seems very obvious what I want it to do:\n\n```\n{67: 1770, 52: 2735, 37: 3135, 22: 3365, 72: 1560, 57: 2550, 42: 3020,\n27: 3295, 62: 1960, 47: 2880}\n```\n...especially since list_plot plots functions with a finite domain, and dictionaries in Python are called \"mapping types\"! We should make `list_plot` be able to deal with dictionaries with numeric keys and values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9784\n\n",
     "created_at": "2010-08-23T01:53:27Z",
     "labels": [
         "component: graphics"
@@ -25,7 +25,6 @@ If I give the following dictionary to `list_plot`, it seems very obvious what I 
 {67: 1770, 52: 2735, 37: 3135, 22: 3365, 72: 1560, 57: 2550, 42: 3020,
 27: 3295, 62: 1960, 47: 2880}
 ```
-
 ...especially since list_plot plots functions with a finite domain, and dictionaries in Python are called "mapping types"! We should make `list_plot` be able to deal with dictionaries with numeric keys and values.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9784

@@ -66,7 +66,7 @@ Changing status from new to assigned.
 archive/issue_comments_024376.json:
 ```json
 {
-    "body": "Attachment [3463_1.patch](tarball://root/attachments/some-uuid/ticket3463/3463_1.patch) by TimothyClemans created at 2008-06-18 20:50:47\n\nI'm getting the following import error and haven't been able to figure it out.\n\n\n```\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/application/app.py\", line 412, in getApplication\n    application = service.loadApplication(filename, style, passphrase)\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/application/service.py\", line 340, in loadApplication\n    application = sob.loadValueFromFile(filename, 'application', passphrase)\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/persisted/sob.py\", line 214, in loadValueFromFile\n    exec fileObj in d, d\n  File \"sage_notebook/twistedconf.tac\", line 47, in <module>\n    import sage.server.notebook.avatars as avatars\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/avatars.py\", line 20, in <module>\n    import resources.toplevels as toplevels\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/resources/toplevels.py\", line 3, in <module>\n    import sage.server.notebook.avatars as avatars\nexceptions.AttributeError: 'module' object has no attribute 'avatars'\n\nFailed to load application: 'module' object has no attribute 'avatars'\n```\n",
+    "body": "Attachment [3463_1.patch](tarball://root/attachments/some-uuid/ticket3463/3463_1.patch) by TimothyClemans created at 2008-06-18 20:50:47\n\nI'm getting the following import error and haven't been able to figure it out.\n\n```\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/application/app.py\", line 412, in getApplication\n    application = service.loadApplication(filename, style, passphrase)\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/application/service.py\", line 340, in loadApplication\n    application = sob.loadValueFromFile(filename, 'application', passphrase)\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/persisted/sob.py\", line 214, in loadValueFromFile\n    exec fileObj in d, d\n  File \"sage_notebook/twistedconf.tac\", line 47, in <module>\n    import sage.server.notebook.avatars as avatars\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/avatars.py\", line 20, in <module>\n    import resources.toplevels as toplevels\n  File \"/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/resources/toplevels.py\", line 3, in <module>\n    import sage.server.notebook.avatars as avatars\nexceptions.AttributeError: 'module' object has no attribute 'avatars'\n\nFailed to load application: 'module' object has no attribute 'avatars'\n```",
     "created_at": "2008-06-18T20:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3463",
     "type": "issue_comment",
@@ -78,7 +78,6 @@ archive/issue_comments_024376.json:
 Attachment [3463_1.patch](tarball://root/attachments/some-uuid/ticket3463/3463_1.patch) by TimothyClemans created at 2008-06-18 20:50:47
 
 I'm getting the following import error and haven't been able to figure it out.
-
 
 ```
   File "/home/tclemans/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/twisted/application/app.py", line 412, in getApplication
@@ -97,7 +96,6 @@ exceptions.AttributeError: 'module' object has no attribute 'avatars'
 
 Failed to load application: 'module' object has no attribute 'avatars'
 ```
-
 
 
 

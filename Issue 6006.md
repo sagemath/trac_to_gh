@@ -123,7 +123,7 @@ See [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031
 archive/issue_comments_047695.json:
 ```json
 {
-    "body": "On line 43, the constructor for `Point(GraphicPrimitive_xydata)` is\n\n```\n43\t    def __init__(self, xdata, ydata, options)\n```\n\nCurrently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32. Another issue is, the constructor arguments `xdata, ydata, options` on line 43 are not documented in the docstring for `Point(GraphicPrimitive_xydata)`. Constructor arguments must be documented to explain what they are, and how to properly use them.",
+    "body": "On line 43, the constructor for `Point(GraphicPrimitive_xydata)` is\n\n```\n43\t    def __init__(self, xdata, ydata, options)\n```\nCurrently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32. Another issue is, the constructor arguments `xdata, ydata, options` on line 43 are not documented in the docstring for `Point(GraphicPrimitive_xydata)`. Constructor arguments must be documented to explain what they are, and how to properly use them.",
     "created_at": "2009-05-13T04:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
@@ -137,7 +137,6 @@ On line 43, the constructor for `Point(GraphicPrimitive_xydata)` is
 ```
 43	    def __init__(self, xdata, ydata, options)
 ```
-
 Currently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32. Another issue is, the constructor arguments `xdata, ydata, options` on line 43 are not documented in the docstring for `Point(GraphicPrimitive_xydata)`. Constructor arguments must be documented to explain what they are, and how to properly use them.
 
 
@@ -165,7 +164,7 @@ I was not aware of this.  I would be happy to improve this, and copying examples
 archive/issue_comments_047697.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n}\n> Currently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32.\n\nNo, do not do this. It will be fixed in the future. This is still \"needs work\" due to the other issue.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 mvngu]:\n}\n> Currently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32.\n\n\nNo, do not do this. It will be fixed in the future. This is still \"needs work\" due to the other issue.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-13T17:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
@@ -177,6 +176,7 @@ archive/issue_comments_047697.json:
 Replying to [comment:4 mvngu]:
 }
 > Currently with Sphinx, any docstring of `__init__` will not be shown in the documentation for `Point(GraphicPrimitive_xydata)`. The situation is the same for every class. So one issue to fix is to copy the examples in `__init__(self, xdata, ydata, options)` and paste them within the docstring for `Point(GraphicPrimitive_xydata)` after line 32.
+
 
 No, do not do this. It will be fixed in the future. This is still "needs work" due to the other issue.
 

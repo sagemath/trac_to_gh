@@ -51,7 +51,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064398.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. For proper Sphinx the indention has to be consistent. Your docstring is wrong:\n\n```\n        INPUT:\n\n            - ``verbosity`` - int, how much information about the proof to print.\n\n                - 0 - print nothing\n                - 1 - print sketch of proof\n                - 2 - print information about remaining primes\n\n            - ``simon`` - bool (default False), whether to use two_descent or\n              simon_two_descent at p=2.\n\n            -  ``proof`` - bool or None (default: None, see\n              proof.elliptic_curve or sage.structure.proof). If False, this\n              function just immediately returns the empty list.\n\n            - ``secs_hi`` - how many seconds to try to compute the Heegner index\n              before switching over to trying to compute the Heegner index bound.\n              (Rank 0 only!)\n```\n\n\nE.g., the proof one should be:\n\n```\n            - ``proof`` - bool or None (default: None, see\n              proof.elliptic_curve or sage.structure.proof). If False, this\n              function just immediately returns the empty list.\n```\n\n\nI find it useful to try making a simple function with the given docstring in the notebook, then evaluate and introspect that, to see what Sphinx does.\n\n\n2. ```secs_hi`` - how many seconds to try to compute the Heegner index` -- change \"how many seconds\" to \"maximum number of seconds\", which is more precise. \n\n3. Add something to the verbose output when secs_hi interrupts a calculation.  \n\n4. Once you have 3, add an example that illustrates it.   \n\n5. Unfortunately, evidently hitting control-c doesn't work for some reason:\n\n```\nfor E in cremona_optimal_curves([1..1000]):\n     if E.rank() == 0:\n         print E.label(), E.prove_BSD(secs_hi=0.1, verbosity=1)\n\n....\n<try hitting control-c -- ignored. :-(>\n....\n```\n         \nThis might be related to how you setup the alarm.  It's hard to tell.\n\n6. The multiple uses of D here seems potentially confusing:\n\n```\n        5993\t                for D in self.heegner_discriminants_list(100): \n \t5994\t                    heegner_primes, D = self.heegner_index_bound(D, verbose=False) \n \t5995\t                    if isinstance(heegner_primes, list): \n \t5996\t                        break \n```\n\n\nAlso, the above hard-coded 100 makes me a little nervous.  What happens if we go through the whole list of 100 and don't find one that works?  (Highly unlikely in practice, of course.) Then we think the last one we looked at does work.  Not good.  \n\n7. What is the point of this line?:\n\n```\n6157\t                print '    ord_p(#Sha) >= 0' \n```\n\nIt's trivial that `ord_p(#Sha)>=0`, since `#Sha` is an integer, and `ord_p(n)>=0` for any integer n. \n\n8. In the docstring you should give precise references for the results you're using later.  E.g., instead of just \"by Jetchev\", you could explain that this means \"by Theorem xyz\" in his Compositio paper xxx.  \"by Mazur\" you mean theorem blah of blah, etc.   This could just go in the docstring, not the actual output (your choice).",
+    "body": "REFEREE REPORT:\n\n1. For proper Sphinx the indention has to be consistent. Your docstring is wrong:\n\n```\n        INPUT:\n\n            - ``verbosity`` - int, how much information about the proof to print.\n\n                - 0 - print nothing\n                - 1 - print sketch of proof\n                - 2 - print information about remaining primes\n\n            - ``simon`` - bool (default False), whether to use two_descent or\n              simon_two_descent at p=2.\n\n            -  ``proof`` - bool or None (default: None, see\n              proof.elliptic_curve or sage.structure.proof). If False, this\n              function just immediately returns the empty list.\n\n            - ``secs_hi`` - how many seconds to try to compute the Heegner index\n              before switching over to trying to compute the Heegner index bound.\n              (Rank 0 only!)\n```\n\nE.g., the proof one should be:\n\n```\n            - ``proof`` - bool or None (default: None, see\n              proof.elliptic_curve or sage.structure.proof). If False, this\n              function just immediately returns the empty list.\n```\n\nI find it useful to try making a simple function with the given docstring in the notebook, then evaluate and introspect that, to see what Sphinx does.\n\n\n2. ```secs_hi`` - how many seconds to try to compute the Heegner index` -- change \"how many seconds\" to \"maximum number of seconds\", which is more precise. \n\n3. Add something to the verbose output when secs_hi interrupts a calculation.  \n\n4. Once you have 3, add an example that illustrates it.   \n\n5. Unfortunately, evidently hitting control-c doesn't work for some reason:\n\n```\nfor E in cremona_optimal_curves([1..1000]):\n     if E.rank() == 0:\n         print E.label(), E.prove_BSD(secs_hi=0.1, verbosity=1)\n\n....\n<try hitting control-c -- ignored. :-(>\n....\n```         \nThis might be related to how you setup the alarm.  It's hard to tell.\n\n6. The multiple uses of D here seems potentially confusing:\n\n```\n        5993\t                for D in self.heegner_discriminants_list(100): \n \t5994\t                    heegner_primes, D = self.heegner_index_bound(D, verbose=False) \n \t5995\t                    if isinstance(heegner_primes, list): \n \t5996\t                        break \n```\n\nAlso, the above hard-coded 100 makes me a little nervous.  What happens if we go through the whole list of 100 and don't find one that works?  (Highly unlikely in practice, of course.) Then we think the last one we looked at does work.  Not good.  \n\n7. What is the point of this line?:\n\n```\n6157\t                print '    ord_p(#Sha) >= 0' \n```\nIt's trivial that `ord_p(#Sha)>=0`, since `#Sha` is an integer, and `ord_p(n)>=0` for any integer n. \n\n8. In the docstring you should give precise references for the results you're using later.  E.g., instead of just \"by Jetchev\", you could explain that this means \"by Theorem xyz\" in his Compositio paper xxx.  \"by Mazur\" you mean theorem blah of blah, etc.   This could just go in the docstring, not the actual output (your choice).",
     "created_at": "2010-01-03T19:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ REFEREE REPORT:
               (Rank 0 only!)
 ```
 
-
 E.g., the proof one should be:
 
 ```
@@ -93,7 +92,6 @@ E.g., the proof one should be:
               proof.elliptic_curve or sage.structure.proof). If False, this
               function just immediately returns the empty list.
 ```
-
 
 I find it useful to try making a simple function with the given docstring in the notebook, then evaluate and introspect that, to see what Sphinx does.
 
@@ -114,8 +112,7 @@ for E in cremona_optimal_curves([1..1000]):
 ....
 <try hitting control-c -- ignored. :-(>
 ....
-```
-         
+```         
 This might be related to how you setup the alarm.  It's hard to tell.
 
 6. The multiple uses of D here seems potentially confusing:
@@ -127,7 +124,6 @@ This might be related to how you setup the alarm.  It's hard to tell.
  	5996	                        break 
 ```
 
-
 Also, the above hard-coded 100 makes me a little nervous.  What happens if we go through the whole list of 100 and don't find one that works?  (Highly unlikely in practice, of course.) Then we think the last one we looked at does work.  Not good.  
 
 7. What is the point of this line?:
@@ -135,7 +131,6 @@ Also, the above hard-coded 100 makes me a little nervous.  What happens if we go
 ```
 6157	                print '    ord_p(#Sha) >= 0' 
 ```
-
 It's trivial that `ord_p(#Sha)>=0`, since `#Sha` is an integer, and `ord_p(n)>=0` for any integer n. 
 
 8. In the docstring you should give precise references for the results you're using later.  E.g., instead of just "by Jetchev", you could explain that this means "by Theorem xyz" in his Compositio paper xxx.  "by Mazur" you mean theorem blah of blah, etc.   This could just go in the docstring, not the actual output (your choice).
@@ -219,7 +214,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064403.json:
 ```json
 {
-    "body": "New report:\n\n1. The alarm doesn't work perfectly.  On boxen.math with this patch applied to a clean sage-4.3, this fails on the command line (and when doctesting):\n\n```\n            sage: E = EllipticCurve('198b')\n            sage: E.prove_BSD(verbosity=1, secs_hi=1)\n```\n\n\nOtherwise, everse looks good.",
+    "body": "New report:\n\n1. The alarm doesn't work perfectly.  On boxen.math with this patch applied to a clean sage-4.3, this fails on the command line (and when doctesting):\n\n```\n            sage: E = EllipticCurve('198b')\n            sage: E.prove_BSD(verbosity=1, secs_hi=1)\n```\n\nOtherwise, everse looks good.",
     "created_at": "2010-01-12T22:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -236,7 +231,6 @@ New report:
             sage: E = EllipticCurve('198b')
             sage: E.prove_BSD(verbosity=1, secs_hi=1)
 ```
-
 
 Otherwise, everse looks good.
 
@@ -301,7 +295,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_064407.json:
 ```json
 {
-    "body": "For 438e1 and 960d1, we get:\n\n```\nRuntimeError                              Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc\nin prove_BSD(self, verbosity, simon, proof, secs_hi)\n  6372                 print 'p = 2: true by 2-descent'\n  6373         else:\n-> 6374             raise RuntimeError(\"ord2(#Sha) was computed to be\n%d, but ord2(#Sha_an) is %d for this curve (%s)! This may be a\ncounterexample to BSD, but is more likely a\nbug.\"%(sha_ord_2,sha_an.ord(2),self))\n  6375\n  6376         # reduce set of remaining primes to a finite set\n\nRuntimeError: ord2(#Sha) was computed to be 1, but ord2(#Sha_an) is 0\nfor this curve (Elliptic Curve defined by y^2 + x*y + y = x^3 - 130*x\n- 556 over Rational Field)! This may be a counterexample to BSD, but\nis more likely a bug.\n```\n",
+    "body": "For 438e1 and 960d1, we get:\n\n```\nRuntimeError                              Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc\nin prove_BSD(self, verbosity, simon, proof, secs_hi)\n  6372                 print 'p = 2: true by 2-descent'\n  6373         else:\n-> 6374             raise RuntimeError(\"ord2(#Sha) was computed to be\n%d, but ord2(#Sha_an) is %d for this curve (%s)! This may be a\ncounterexample to BSD, but is more likely a\nbug.\"%(sha_ord_2,sha_an.ord(2),self))\n  6375\n  6376         # reduce set of remaining primes to a finite set\n\nRuntimeError: ord2(#Sha) was computed to be 1, but ord2(#Sha_an) is 0\nfor this curve (Elliptic Curve defined by y^2 + x*y + y = x^3 - 130*x\n- 556 over Rational Field)! This may be a counterexample to BSD, but\nis more likely a bug.\n```",
     "created_at": "2010-01-13T05:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -336,13 +330,12 @@ is more likely a bug.
 
 
 
-
 ---
 
 archive/issue_comments_064408.json:
 ```json
 {
-    "body": "Copying from Facebook again:\n\n```\nJamie Weigandt\nI read that Robert has implemented a fast 2-isogeny descent. Can this compute the honest 2-Selmer group of a given elliptic curve?\n\nI thought these bugs might be arising from the fact that mwrank does not always do this.\n\nWith 438e, it erroneously computes the rank bound to be 1, while it should be 0.\n\nWith 960d the optimal curve has sha of order 4 while sha is trivial for an isogenous \ncurve, so mwrank returns a rank bound of 0.\n```\n",
+    "body": "Copying from Facebook again:\n\n```\nJamie Weigandt\nI read that Robert has implemented a fast 2-isogeny descent. Can this compute the honest 2-Selmer group of a given elliptic curve?\n\nI thought these bugs might be arising from the fact that mwrank does not always do this.\n\nWith 438e, it erroneously computes the rank bound to be 1, while it should be 0.\n\nWith 960d the optimal curve has sha of order 4 while sha is trivial for an isogenous \ncurve, so mwrank returns a rank bound of 0.\n```",
     "created_at": "2010-01-13T14:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -364,7 +357,6 @@ With 438e, it erroneously computes the rank bound to be 1, while it should be 0.
 With 960d the optimal curve has sha of order 4 while sha is trivial for an isogenous 
 curve, so mwrank returns a rank bound of 0.
 ```
-
 
 
 
@@ -393,7 +385,7 @@ I should send rlm the example he sent me.
 archive/issue_comments_064410.json:
 ```json
 {
-    "body": "Needs work:\n\n\n```\nsage: for E in cremona_optimal_curves([1001..2000]):\n    print E.cremona_label(); print E.prove_BSD(verbosity=1, secs_hi=1)\n\n...\n\n1014g1\np = 2: Unverified since it is difficult to access the rank bound for Sha[2] computed by MWrank\nInterrupting Mwrank...\nTimeout stopped Heegner index computation...\nProceeding to use heegner_index_bound instead.\nTrue for p not in {2, 5} by Kolyvagin.\nKolyvagin's bound for p = 5 applies by Stein et al.\nALERT: p = 5 left in Kolyvagin bound\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.alpha2/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in prove_BSD(self, verbosity, simon, proof, secs_hi)\n   6603             if verbosity > 0:\n   6604                 print 'ALERT: p = %d left in Kolyvagin bound'%p\n-> 6605                 print '    0 <= ord_p(#Sha) <= %d'%ord_p_bound\n   6606                 print '    ord_p(#Sha_an) =', sha_an.ord(p)\n   6607         for p in primes_to_remove:\n\nUnboundLocalError: local variable 'ord_p_bound' referenced before assignment\n```\n",
+    "body": "Needs work:\n\n```\nsage: for E in cremona_optimal_curves([1001..2000]):\n    print E.cremona_label(); print E.prove_BSD(verbosity=1, secs_hi=1)\n\n...\n\n1014g1\np = 2: Unverified since it is difficult to access the rank bound for Sha[2] computed by MWrank\nInterrupting Mwrank...\nTimeout stopped Heegner index computation...\nProceeding to use heegner_index_bound instead.\nTrue for p not in {2, 5} by Kolyvagin.\nKolyvagin's bound for p = 5 applies by Stein et al.\nALERT: p = 5 left in Kolyvagin bound\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.alpha2/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in prove_BSD(self, verbosity, simon, proof, secs_hi)\n   6603             if verbosity > 0:\n   6604                 print 'ALERT: p = %d left in Kolyvagin bound'%p\n-> 6605                 print '    0 <= ord_p(#Sha) <= %d'%ord_p_bound\n   6606                 print '    ord_p(#Sha_an) =', sha_an.ord(p)\n   6607         for p in primes_to_remove:\n\nUnboundLocalError: local variable 'ord_p_bound' referenced before assignment\n```",
     "created_at": "2010-01-13T23:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
@@ -403,7 +395,6 @@ archive/issue_comments_064410.json:
 ```
 
 Needs work:
-
 
 ```
 sage: for E in cremona_optimal_curves([1001..2000]):
@@ -433,7 +424,6 @@ UnboundLocalError                         Traceback (most recent call last)
 
 UnboundLocalError: local variable 'ord_p_bound' referenced before assignment
 ```
-
 
 
 

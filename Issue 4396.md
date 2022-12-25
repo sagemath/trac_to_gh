@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4396
 archive/issue_comments_032287.json:
 ```json
 {
-    "body": "\n```\n[3:04pm] mabshoff: #4396 looks a lot like #4629 to me.\n[3:04pm] wstein-4629 is now known as wstein-463.\n[3:05pm] wstein-463: I disagree.\n[3:05pm] wstein-463: I think #4396 could be implemented using #463 partly.\n[3:05pm] wstein-463: But it isn't the same.\n[3:05pm] mabshoff: ok\n```\n",
+    "body": "```\n[3:04pm] mabshoff: #4396 looks a lot like #4629 to me.\n[3:04pm] wstein-4629 is now known as wstein-463.\n[3:05pm] wstein-463: I disagree.\n[3:05pm] wstein-463: I think #4396 could be implemented using #463 partly.\n[3:05pm] wstein-463: But it isn't the same.\n[3:05pm] mabshoff: ok\n```",
     "created_at": "2008-11-26T23:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4396",
     "type": "issue_comment",
@@ -38,7 +38,6 @@ archive/issue_comments_032287.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [3:04pm] mabshoff: #4396 looks a lot like #4629 to me.
@@ -48,7 +47,6 @@ archive/issue_comments_032287.json:
 [3:05pm] wstein-463: But it isn't the same.
 [3:05pm] mabshoff: ok
 ```
-
 
 
 

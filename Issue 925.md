@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_005651.json:
 ```json
 {
-    "body": "A suggested fix for this is to check if some environment variable\n\n```\nSAGE_VALGRIND_OPTIONS\n```\n\nand use the content of that if it is defined. I plan to work on this during Bug Day 4.\n\nCheers,\n\nMichael",
+    "body": "A suggested fix for this is to check if some environment variable\n\n```\nSAGE_VALGRIND_OPTIONS\n```\nand use the content of that if it is defined. I plan to work on this during Bug Day 4.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-19T06:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/925",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ A suggested fix for this is to check if some environment variable
 ```
 SAGE_VALGRIND_OPTIONS
 ```
-
 and use the content of that if it is defined. I plan to work on this during Bug Day 4.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_007213.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
     "created_at": "2009-10-14T20:28:16Z",
     "labels": [
         "component: build",
@@ -31,7 +31,6 @@ real    1m55.950s
 user    1m38.540s
 sys     0m12.430s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7213
 
@@ -140,7 +139,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059740.json:
 ```json
 {
-    "body": "This can be closed now. The updated ECL spkg is up in the standard spkg repository on sagemath.org and has been mirrored out. See\n\nhttp://mirror.switch.ch/mirror/sagemath/spkg/standard/ecl-9.8.4-20090913cvs.p3.spkg\n\n```\n07:39 < mvngu> schilly: But you should note ticket #7213.\n07:40 < mvngu> schilly: If people upgrade to Sage 4.1.2 and they have problem\n               with ECL, then ticket #7213\n07:40 < mvngu> is the answer.\n07:40 < mvngu> schilly: I just gave it a postive review.\n07:41 < mvngu> schilly: So the standard packages respository on sagemath.org\n               should have that updated ECL spkg.\n07:41 < mvngu> schilly: Otherwise upgrade would result in a path error with ECL.\n07:42 < schilly> mhm, ok ...\n07:42 < schilly> if it is updated in the usual place, it will be on the mirrors\n07:43 < mvngu> schilly: I mean update the standard spkg on sagemath.org with\n               that ECL spkg, and mirror out this updated spkg.\n07:43 < schilly> ok, filename is the same\n07:43 < schilly> yes, just looked at www-files/packages/standard ... it's the\n                 same\n07:44 < mvngu> schilly: It says \".p3\"?\n07:44 < schilly> http://mirror.switch.ch/mirror/sagemath/spkg/standard/\n07:45 < mvngu> schilly: cool.\n07:45 < schilly> ;)\n07:45 < mvngu> schilly: Maybe wstein took care of updating that repo.\n07:46 < schilly> he copied over to the usual place\n                 (www-files/packages/standard) and that's all he has to do\n07:46 < schilly> then he mirrored it together with the new source\n07:46 < schilly> or i did it when i checked the mirror-ing earlier this day\n07:47 < schilly> so, it's already on the servers\n07:47 < mvngu> That's good to know.\n07:48 < schilly> the only thing i don't understand is, why the source tarball \n                 of 4.1.1 is newer than the newer one for 4.1.2\n07:48 < schilly> probably some copy-activity or replacement. i'll move 4.1.1 to \n                 the older files anyways\n```\n",
+    "body": "This can be closed now. The updated ECL spkg is up in the standard spkg repository on sagemath.org and has been mirrored out. See\n\nhttp://mirror.switch.ch/mirror/sagemath/spkg/standard/ecl-9.8.4-20090913cvs.p3.spkg\n\n```\n07:39 < mvngu> schilly: But you should note ticket #7213.\n07:40 < mvngu> schilly: If people upgrade to Sage 4.1.2 and they have problem\n               with ECL, then ticket #7213\n07:40 < mvngu> is the answer.\n07:40 < mvngu> schilly: I just gave it a postive review.\n07:41 < mvngu> schilly: So the standard packages respository on sagemath.org\n               should have that updated ECL spkg.\n07:41 < mvngu> schilly: Otherwise upgrade would result in a path error with ECL.\n07:42 < schilly> mhm, ok ...\n07:42 < schilly> if it is updated in the usual place, it will be on the mirrors\n07:43 < mvngu> schilly: I mean update the standard spkg on sagemath.org with\n               that ECL spkg, and mirror out this updated spkg.\n07:43 < schilly> ok, filename is the same\n07:43 < schilly> yes, just looked at www-files/packages/standard ... it's the\n                 same\n07:44 < mvngu> schilly: It says \".p3\"?\n07:44 < schilly> http://mirror.switch.ch/mirror/sagemath/spkg/standard/\n07:45 < mvngu> schilly: cool.\n07:45 < schilly> ;)\n07:45 < mvngu> schilly: Maybe wstein took care of updating that repo.\n07:46 < schilly> he copied over to the usual place\n                 (www-files/packages/standard) and that's all he has to do\n07:46 < schilly> then he mirrored it together with the new source\n07:46 < schilly> or i did it when i checked the mirror-ing earlier this day\n07:47 < schilly> so, it's already on the servers\n07:47 < mvngu> That's good to know.\n07:48 < schilly> the only thing i don't understand is, why the source tarball \n                 of 4.1.1 is newer than the newer one for 4.1.2\n07:48 < schilly> probably some copy-activity or replacement. i'll move 4.1.1 to \n                 the older files anyways\n```",
     "created_at": "2009-10-15T14:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7213",
     "type": "issue_comment",
@@ -185,7 +184,6 @@ http://mirror.switch.ch/mirror/sagemath/spkg/standard/ecl-9.8.4-20090913cvs.p3.s
 07:48 < schilly> probably some copy-activity or replacement. i'll move 4.1.1 to 
                  the older files anyways
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009822.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system fails for a system with only one equation:\n\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de1 = diff(x,t) + 1 == 0\nsage: desolve_system([de1], [x]) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9823\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system fails for a system with only one equation:\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de1 = diff(x,t) + 1 == 0\nsage: desolve_system([de1], [x]) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9823\n\n",
     "created_at": "2010-08-27T16:40:56Z",
     "labels": [
         "component: calculus",
@@ -24,14 +24,12 @@ Keywords: calculus, maxima, symbolics
 
 desolve_system fails for a system with only one equation:
 
-
 ```
 sage: t = var('t')
 sage: x = function('x', t)
 sage: de1 = diff(x,t) + 1 == 0
 sage: desolve_system([de1], [x]) 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9823
 
@@ -102,7 +100,7 @@ Depends on Ticket #9835
 archive/issue_comments_096718.json:
 ```json
 {
-    "body": "Attachment [trac_9823.patch](tarball://root/attachments/some-uuid/ticket9823/trac_9823.patch) by @robert-marik created at 2010-08-30 06:31:40\n\nUpdated the patch - removed plotting picture from testing, since Sage complains \n\n```\nverbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n```\n\non one of my computers (Debian, AMD 64 bit).",
+    "body": "Attachment [trac_9823.patch](tarball://root/attachments/some-uuid/ticket9823/trac_9823.patch) by @robert-marik created at 2010-08-30 06:31:40\n\nUpdated the patch - removed plotting picture from testing, since Sage complains \n\n```\nverbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n```\non one of my computers (Debian, AMD 64 bit).",
     "created_at": "2010-08-30T06:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9822",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ Updated the patch - removed plotting picture from testing, since Sage complains
 ```
 verbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.
 ```
-
 on one of my computers (Debian, AMD 64 bit).
 
 

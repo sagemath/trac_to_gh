@@ -3,7 +3,7 @@
 archive/issues_008123.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nIt seems that the notebook is close to serving \"SVG\" files in a way usable for SVG capable browser, but is not quite there:\nIf I try\n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\n\nin the notebook, Firefox 3.5.2 gives me a \"plugin needed\" message and where the picture is supposed to be, I only get a placeholder.\nIf I save `xsquared.svg` and point my browser directly to it, firefox displays the picture, so Firefox 3.5.2 can understand the SVG produced. HTML code that succeeds in displaying the picture:\n\n```\n<html>\n<body>\n<object data=\"xsquared.svg\">\n</body>\n</html>\n```\n\nSo, it may be that the notebook simply needs to generate different HTML for including SVG files it finds. Alternatively, it may be a matter of serving the SVG file with the appropriate MIME type.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8123\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nIt seems that the notebook is close to serving \"SVG\" files in a way usable for SVG capable browser, but is not quite there:\nIf I try\n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\nin the notebook, Firefox 3.5.2 gives me a \"plugin needed\" message and where the picture is supposed to be, I only get a placeholder.\nIf I save `xsquared.svg` and point my browser directly to it, firefox displays the picture, so Firefox 3.5.2 can understand the SVG produced. HTML code that succeeds in displaying the picture:\n\n```\n<html>\n<body>\n<object data=\"xsquared.svg\">\n</body>\n</html>\n```\nSo, it may be that the notebook simply needs to generate different HTML for including SVG files it finds. Alternatively, it may be a matter of serving the SVG file with the appropriate MIME type.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8123\n\n",
     "created_at": "2010-01-29T19:24:04Z",
     "labels": [
         "component: notebook",
@@ -28,7 +28,6 @@ If I try
 sage: p = plot(x^2, -2, 2)
 sage: p.save('xsquared.svg')
 ```
-
 in the notebook, Firefox 3.5.2 gives me a "plugin needed" message and where the picture is supposed to be, I only get a placeholder.
 If I save `xsquared.svg` and point my browser directly to it, firefox displays the picture, so Firefox 3.5.2 can understand the SVG produced. HTML code that succeeds in displaying the picture:
 
@@ -39,7 +38,6 @@ If I save `xsquared.svg` and point my browser directly to it, firefox displays t
 </body>
 </html>
 ```
-
 So, it may be that the notebook simply needs to generate different HTML for including SVG files it finds. Alternatively, it may be a matter of serving the SVG file with the appropriate MIME type.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8123
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8123
 archive/issue_comments_071287.json:
 ```json
 {
-    "body": "Try adding\n\n```\nimage/svg+xml   svg svgz\n```\n\nto `/etc/mime.times`, then restarting the notebook server and the browser.  This works for me in Firefox 3.5.6 on 64-bit Fedora 10 Linux.",
+    "body": "Try adding\n\n```\nimage/svg+xml   svg svgz\n```\nto `/etc/mime.times`, then restarting the notebook server and the browser.  This works for me in Firefox 3.5.6 on 64-bit Fedora 10 Linux.",
     "created_at": "2010-02-04T14:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ Try adding
 ```
 image/svg+xml   svg svgz
 ```
-
 to `/etc/mime.times`, then restarting the notebook server and the browser.  This works for me in Firefox 3.5.6 on 64-bit Fedora 10 Linux.
 
 
@@ -202,7 +199,7 @@ archive/issue_events_019456.json:
 archive/issue_comments_071294.json:
 ```json
 {
-    "body": "Could be worth checking out whether this works in Jupyter first - most of the other sagenb ones are definitely sagenb specific, but could be worth seeing whether \n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\n\n\"works\" as expected in Jupyter.  (I would hope all browsers would now support this though!)",
+    "body": "Could be worth checking out whether this works in Jupyter first - most of the other sagenb ones are definitely sagenb specific, but could be worth seeing whether \n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\n\"works\" as expected in Jupyter.  (I would hope all browsers would now support this though!)",
     "created_at": "2020-05-18T17:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
@@ -217,7 +214,6 @@ Could be worth checking out whether this works in Jupyter first - most of the ot
 sage: p = plot(x^2, -2, 2)
 sage: p.save('xsquared.svg')
 ```
-
 "works" as expected in Jupyter.  (I would hope all browsers would now support this though!)
 
 

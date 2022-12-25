@@ -3,7 +3,7 @@
 archive/issues_003341.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Partition([2,1])/Partition([1])\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/partition.py in __div__(self, p)\n    325             \n    326         \"\"\"\n--> 327         if not self.dominates(Partition_class(p)):\n    328             raise ValueError, \"the partition must dominate p\"\n    329 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/combinat.py in __init__(self, l)\n    546         \"\"\"\n    547         if not isinstance(l, list):\n--> 548             raise ValueError, 'l must be a list'\n    549         self._list = l\n    550         self._hash = None\n\nValueError: l must be a list\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3341\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: Partition([2,1])/Partition([1])\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/partition.py in __div__(self, p)\n    325             \n    326         \"\"\"\n--> 327         if not self.dominates(Partition_class(p)):\n    328             raise ValueError, \"the partition must dominate p\"\n    329 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/combinat.py in __init__(self, l)\n    546         \"\"\"\n    547         if not isinstance(l, list):\n--> 548             raise ValueError, 'l must be a list'\n    549         self._list = l\n    550         self._hash = None\n\nValueError: l must be a list\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3341\n\n",
     "created_at": "2008-05-31T06:56:01Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +20,6 @@ archive/issues_003341.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
-
 
 ```
 sage: Partition([2,1])/Partition([1])
@@ -40,7 +39,6 @@ sage: Partition([2,1])/Partition([1])
 
 ValueError: l must be a list
 ```
-
 
 
 

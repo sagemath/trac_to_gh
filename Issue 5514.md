@@ -3,7 +3,7 @@
 archive/issues_005514.json:
 ```json
 {
-    "body": "Assignee: wcauchois\n\nCC:  @jasongrout @rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\n\nThis would draw a paraboloid with a circle cut out of the middle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
+    "body": "Assignee: wcauchois\n\nCC:  @jasongrout @rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\nThis would draw a paraboloid with a circle cut out of the middle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
     "created_at": "2009-03-13T23:23:11Z",
     "labels": [
         "component: graphics"
@@ -27,7 +27,6 @@ The syntax would look something like this:
 var('u,v')
 parametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)
 ```
-
 This would draw a paraboloid with a circle cut out of the middle.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5514
@@ -138,7 +137,7 @@ apply instead of previous patch.
 archive/issue_comments_042775.json:
 ```json
 {
-    "body": "You're right that it is really choppy.  I had a go at it: apply trac-5514-region-function.patch instead of the first patch.\n\nThis implements region_function for indexed face sets, as well as a specialized version for parametric surfaces.  The nice thing about making it available for indexed face sets is that *any* surface can use it now, and it will be easier after some more glue code is written.\n\nTo encourage reviews, here is what is possible (and it looks a lot smoother now; I don't just delete faces, I just delete bad vertices and redefine faces):\n\n\n```\n    We use a region function to plot a figure with a circular region (in u,v coordinates) excluded\n    from its center::\n\n        sage: u, v = var('u, v')\n        sage: parametric_plot3d([u, v*u, u^2 + v^2], (u, -2, 2), (v, -2, 2), region_function=lambda u,v: u^2+v^2>3, plot_points=(150,150)) \n\n    Plot part of a sphere (using spherical coordinates):\n        sage: theta, phi = var('theta, phi')\n        sage: p=parametric_plot3d([cos(theta)*sin(phi), sin(theta)*sin(phi), cos(phi)], (theta, 0, 2*pi), (phi, 0, pi), region_function=lambda theta, phi: phi<math.pi/2, plot_points=(100,100))\n        sage: show(p)\n        sage: p.clip_region(lambda theta,phi: theta<math.pi/2)\n        sage: show(p)\n        sage: p.clip_region(lambda x,y,z: z<0.5)\n        sage: show(p)\n\n    A region of a function::\n        sage: var('x,y')\n        (x,y)\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x<y^2, plot_points=(100,100))     \n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y,z: z<0 and not x>y, plot_points=(100,100))\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x^2+y^2<1 or x^2+y^2>4 , plot_points=(100,100))\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x^2+y^2>1 and x^2+y^2<4 , plot_points=(100,100))\n        \n    A region of the xy plane::\n        sage: var('x,y')\n        sage: plot3d(1, (x,-3,3), (y,-3,3), region_function=lambda x,y: x^2+y^2<7 and x<y, plot_points=(100,100))\n        sage: plot3d(1, (x,-3,3), (y,-3,3), region_function=lambda x,y: x^2+y^2<7 and x<y, adaptive=True, initial_depth=7)\n\n```\n\n\nAlso, with some glue code written, this should be possible\n\n```\na=sphere()\na.clip_region(lambda x,y,z:z<0)\nshow(a)\n```\n\n\n\nTHIS PATCH IS NOT READY YET.\n\nHere are some things that still need to be done:\n\n* Several functions need doctests (like the indexed face set clip_region)\n* I had to comment out _clean_point_list() in line ~300 of parametric_surface.pyx because it destroyed the relationship between the vertices and the u,v coordinates that generated the vertex.  We really ought to maintain that information separately for a parametric surface, and then update it.  Once we have a way of retrieving that information (i.e, for a vertex, give me the u and v that generated the vertex), we can enable _clean_point_list().  This should probably be done before this patch is merged.",
+    "body": "You're right that it is really choppy.  I had a go at it: apply trac-5514-region-function.patch instead of the first patch.\n\nThis implements region_function for indexed face sets, as well as a specialized version for parametric surfaces.  The nice thing about making it available for indexed face sets is that *any* surface can use it now, and it will be easier after some more glue code is written.\n\nTo encourage reviews, here is what is possible (and it looks a lot smoother now; I don't just delete faces, I just delete bad vertices and redefine faces):\n\n```\n    We use a region function to plot a figure with a circular region (in u,v coordinates) excluded\n    from its center::\n\n        sage: u, v = var('u, v')\n        sage: parametric_plot3d([u, v*u, u^2 + v^2], (u, -2, 2), (v, -2, 2), region_function=lambda u,v: u^2+v^2>3, plot_points=(150,150)) \n\n    Plot part of a sphere (using spherical coordinates):\n        sage: theta, phi = var('theta, phi')\n        sage: p=parametric_plot3d([cos(theta)*sin(phi), sin(theta)*sin(phi), cos(phi)], (theta, 0, 2*pi), (phi, 0, pi), region_function=lambda theta, phi: phi<math.pi/2, plot_points=(100,100))\n        sage: show(p)\n        sage: p.clip_region(lambda theta,phi: theta<math.pi/2)\n        sage: show(p)\n        sage: p.clip_region(lambda x,y,z: z<0.5)\n        sage: show(p)\n\n    A region of a function::\n        sage: var('x,y')\n        (x,y)\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x<y^2, plot_points=(100,100))     \n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y,z: z<0 and not x>y, plot_points=(100,100))\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x^2+y^2<1 or x^2+y^2>4 , plot_points=(100,100))\n        sage: plot3d(sin(x)*cos(y),(x,-3,3),(y,-3,3), region_function=lambda x,y: x^2+y^2>1 and x^2+y^2<4 , plot_points=(100,100))\n        \n    A region of the xy plane::\n        sage: var('x,y')\n        sage: plot3d(1, (x,-3,3), (y,-3,3), region_function=lambda x,y: x^2+y^2<7 and x<y, plot_points=(100,100))\n        sage: plot3d(1, (x,-3,3), (y,-3,3), region_function=lambda x,y: x^2+y^2<7 and x<y, adaptive=True, initial_depth=7)\n\n```\n\nAlso, with some glue code written, this should be possible\n\n```\na=sphere()\na.clip_region(lambda x,y,z:z<0)\nshow(a)\n```\n\n\nTHIS PATCH IS NOT READY YET.\n\nHere are some things that still need to be done:\n\n* Several functions need doctests (like the indexed face set clip_region)\n* I had to comment out _clean_point_list() in line ~300 of parametric_surface.pyx because it destroyed the relationship between the vertices and the u,v coordinates that generated the vertex.  We really ought to maintain that information separately for a parametric surface, and then update it.  Once we have a way of retrieving that information (i.e, for a vertex, give me the u and v that generated the vertex), we can enable _clean_point_list().  This should probably be done before this patch is merged.",
     "created_at": "2009-04-22T19:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -152,7 +151,6 @@ You're right that it is really choppy.  I had a go at it: apply trac-5514-region
 This implements region_function for indexed face sets, as well as a specialized version for parametric surfaces.  The nice thing about making it available for indexed face sets is that *any* surface can use it now, and it will be easier after some more glue code is written.
 
 To encourage reviews, here is what is possible (and it looks a lot smoother now; I don't just delete faces, I just delete bad vertices and redefine faces):
-
 
 ```
     We use a region function to plot a figure with a circular region (in u,v coordinates) excluded
@@ -185,7 +183,6 @@ To encourage reviews, here is what is possible (and it looks a lot smoother now;
 
 ```
 
-
 Also, with some glue code written, this should be possible
 
 ```
@@ -193,7 +190,6 @@ a=sphere()
 a.clip_region(lambda x,y,z:z<0)
 show(a)
 ```
-
 
 
 THIS PATCH IS NOT READY YET.
@@ -328,7 +324,7 @@ Rob
 archive/issue_comments_042781.json:
 ```json
 {
-    "body": "Replying to [comment:12 rbeezer]:\n> Great progress on this, Bill and Jason!  I had a go with a few of the commands in the doctests and a couple of my own.  Two thoughts.\n\nThanks for looking at this!\n\n> 1.  The JMOL bounding box may be computed pre-clip?  Compare\n\n> `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -10, 10), (y, -10, 10), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n> with\n\n> `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n> \n> The former would seem to use the unseen faces near inputs like (-10,10) to compute the vertical axis and the plot is then a really, really insignificant portion of the bounding box.\n\nIndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).\n\n> 2.  I thought maybe something like\n\n> `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n> would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.\n> \n> OK, thinking while I write - here's a hack - insert an absolute value, then trim:\n\n> `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\nThat's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.\n\n> Nicely done.  Holler if I can provide more testing as you finish this up.\n> \n> Rob\n\nI'm uploading a patch that makes some cosmetic changes, including renaming \"clip_region\" to \"clip\" and \"region_function\" to \"region\" (following the convention adopted in implicit_plot3d). I'm hoping to get some work done on this ticket this week!",
+    "body": "Replying to [comment:12 rbeezer]:\n> Great progress on this, Bill and Jason!  I had a go with a few of the commands in the doctests and a couple of my own.  Two thoughts.\n\n\nThanks for looking at this!\n\n> 1.  The JMOL bounding box may be computed pre-clip?  Compare\n\n\n> `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -10, 10), (y, -10, 10), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n\n> with\n\n\n> `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n> \n> The former would seem to use the unseen faces near inputs like (-10,10) to compute the vertical axis and the plot is then a really, really insignificant portion of the bounding box.\n\n\nIndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).\n\n> 2.  I thought maybe something like\n\n\n> `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n\n> would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.\n> \n> OK, thinking while I write - here's a hack - insert an absolute value, then trim:\n\n\n> `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n\nThat's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.\n\n> Nicely done.  Holler if I can provide more testing as you finish this up.\n> \n> Rob\n\n\nI'm uploading a patch that makes some cosmetic changes, including renaming \"clip_region\" to \"clip\" and \"region_function\" to \"region\" (following the convention adopted in implicit_plot3d). I'm hoping to get some work done on this ticket this week!",
     "created_at": "2009-05-11T22:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -340,35 +336,45 @@ archive/issue_comments_042781.json:
 Replying to [comment:12 rbeezer]:
 > Great progress on this, Bill and Jason!  I had a go with a few of the commands in the doctests and a couple of my own.  Two thoughts.
 
+
 Thanks for looking at this!
 
 > 1.  The JMOL bounding box may be computed pre-clip?  Compare
 
+
 > `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -10, 10), (y, -10, 10), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
 
+
 > with
+
 
 > `plot3d(6-2*x<sup>2-5*y</sup>2, (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
 > 
 > The former would seem to use the unseen faces near inputs like (-10,10) to compute the vertical axis and the plot is then a really, really insignificant portion of the bounding box.
 
+
 IndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).
 
 > 2.  I thought maybe something like
 
+
 > `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
+
 
 > would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.
 > 
 > OK, thinking while I write - here's a hack - insert an absolute value, then trim:
 
+
 > `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
+
 
 That's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.
 
 > Nicely done.  Holler if I can provide more testing as you finish this up.
 > 
 > Rob
+
 
 I'm uploading a patch that makes some cosmetic changes, including renaming "clip_region" to "clip" and "region_function" to "region" (following the convention adopted in implicit_plot3d). I'm hoping to get some work done on this ticket this week!
 
@@ -397,7 +403,7 @@ Attachment [trac-5514-cosmetic-changes.patch](tarball://root/attachments/some-uu
 archive/issue_comments_042783.json:
 ```json
 {
-    "body": "Replying to [comment:13 wcauchois]:\n> \n> IndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).\n\n\nI believe the `_clean_point_list` function clears out unused points (implementing the functionality that Bill describes above).  However, we don't call this (i.e., we commented out the existing call to this) so that we can still get an easy correspondence between the parameter values and the points generated (i.e., the points are still in a grid of parameter values, as long as none are missing).  \n\n* We could bolt one more thing on---a bitset of the points that are used.  We could use the bitset class in misc/bitset.pxi for that.  \n* Or we could just store the parameter values with each point.  This would also make us more flexible in handling the situation below.\n\nWe need this correspondence between vertices and parameter values so that we can clip based on the parameter values.\n\n> \n> > 2.  I thought maybe something like\n\n> > `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n> > would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.\n> > \n> > OK, thinking while I write - here's a hack - insert an absolute value, then trim:\n\n> > `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n> \n> That's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.\n\nSo, we could:\n\n* make it so that the region passed into the plot3d command is used during the initial evaluation; if the point passes the region function, then a vertex is calculated from it.  This would probably save time anyway.  If we do this, we need to take into account the different signatures of region functions.  For a two-argument function, check before the vertex is calculated, and for a three- or five-argument region function, check after the vertex is calculated (because the arguments to the region function include the vertex coordinates).  Because of this last possibility, we probably also want to also\n* make the indexed face sets handle evaluations which throw errors, in a similar way that 2d plotting handles undefined values.  This would also probably necessitate storing the parameter values with the vertices.\n\nEither way, we violate the assumption that the vertices are from a grid of parameter values.  We probably will have to store the parameter values that generate each vertex.",
+    "body": "Replying to [comment:13 wcauchois]:\n> \n> IndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).\n\n\n\nI believe the `_clean_point_list` function clears out unused points (implementing the functionality that Bill describes above).  However, we don't call this (i.e., we commented out the existing call to this) so that we can still get an easy correspondence between the parameter values and the points generated (i.e., the points are still in a grid of parameter values, as long as none are missing).  \n\n* We could bolt one more thing on---a bitset of the points that are used.  We could use the bitset class in misc/bitset.pxi for that.  \n* Or we could just store the parameter values with each point.  This would also make us more flexible in handling the situation below.\n\nWe need this correspondence between vertices and parameter values so that we can clip based on the parameter values.\n\n> \n> > 2.  I thought maybe something like\n\n\n> > `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n\n> > would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.\n> > \n> > OK, thinking while I write - here's a hack - insert an absolute value, then trim:\n\n\n> > `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`\n\n> \n> That's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.\n\n\nSo, we could:\n\n* make it so that the region passed into the plot3d command is used during the initial evaluation; if the point passes the region function, then a vertex is calculated from it.  This would probably save time anyway.  If we do this, we need to take into account the different signatures of region functions.  For a two-argument function, check before the vertex is calculated, and for a three- or five-argument region function, check after the vertex is calculated (because the arguments to the region function include the vertex coordinates).  Because of this last possibility, we probably also want to also\n* make the indexed face sets handle evaluations which throw errors, in a similar way that 2d plotting handles undefined values.  This would also probably necessitate storing the parameter values with the vertices.\n\nEither way, we violate the assumption that the vertices are from a grid of parameter values.  We probably will have to store the parameter values that generate each vertex.",
     "created_at": "2009-05-12T12:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -411,6 +417,7 @@ Replying to [comment:13 wcauchois]:
 > IndexFaceSet computes the bounding box by finding the min/max of its vertices. The problem you describe appears to occur because we don't remove all of the unused vertices. The issue is somewhat subtle since if we remove a face, that does not necessarily mean the vertices that it references are not in use by another face. One way to solve this problem would be to maintain an array of reference counts for every vertex while we are clipping the region. At the end of the method, we could delete vertices with a reference count of 0. This seems like overkill though -- perhaps we can use assumptions about the structure of the parametric surface (a rectangular grid).
 
 
+
 I believe the `_clean_point_list` function clears out unused points (implementing the functionality that Bill describes above).  However, we don't call this (i.e., we commented out the existing call to this) so that we can still get an easy correspondence between the parameter values and the points generated (i.e., the points are still in a grid of parameter values, as long as none are missing).  
 
 * We could bolt one more thing on---a bitset of the points that are used.  We could use the bitset class in misc/bitset.pxi for that.  
@@ -421,15 +428,20 @@ We need this correspondence between vertices and parameter values so that we can
 > 
 > > 2.  I thought maybe something like
 
+
 > > `plot3d(sqrt(6-2*x<sup>2-5*y</sup>2), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
+
 
 > > would now be possible, but it appears the clip comes after the evaluations, thus this raises an error for the negatives in the square root.  So maybe this should be handled with some sort of piecewise definition for the function and then the excess would be clipped by a `region_function` before showing it.
 > > 
 > > OK, thinking while I write - here's a hack - insert an absolute value, then trim:
 
+
 > > `plot3d(sqrt(abs(6-2*x<sup>2-5*y</sup>2)), (x, -sqrt(3), sqrt(3)), (y, -1, 1), region_function=lambda x,y: 6-2*x<sup>2-6*y</sup>2>0)`
+
 > 
 > That's because the clipping is done after the function is evaluated at every (u,v) coordinate. Maybe we should modify eval_grid so that it does not perform this unecessary (and sometimes troublesome) computation.
+
 
 So, we could:
 
@@ -445,7 +457,7 @@ Either way, we violate the assumption that the vertices are from a grid of param
 archive/issue_comments_042784.json:
 ```json
 {
-    "body": "Replying to [comment:14 jason]:\n\nI had overlooked `_clean_point_list`; the solution was right there under my nose :). I agree that keeping track of the (u,v) coordinates for every vertex will be necessary.\n\n> make it so that the region passed into the plot3d command is used during the initial evaluation; if the point passes the region function, then a vertex is calculated from it. This would probably save time anyway. If we do this, we need to take into account the different signatures of region functions. For a two-argument function, check before the vertex is calculated, and for a three- or five-argument region function, check after the vertex is calculated (because the arguments to the region function include the vertex coordinates). Because of this last possibility, we probably also want to also make the indexed face sets handle evaluations which throw errors, in a similar way that 2d plotting handles undefined values. This would also probably necessitate storing the parameter values with the vertices.\n\nOne concern I have about implementing this is, have you seen ParametricSurface.eval_grid? There's a lot of duplicated code, since it branches for every type of function and then replicates the nested loop. I feel like I would have to implement this logic in several places. Do you have any ideas for how to factor eval_grid? Or any general suggestions?",
+    "body": "Replying to [comment:14 jason]:\n\nI had overlooked `_clean_point_list`; the solution was right there under my nose :). I agree that keeping track of the (u,v) coordinates for every vertex will be necessary.\n\n> make it so that the region passed into the plot3d command is used during the initial evaluation; if the point passes the region function, then a vertex is calculated from it. This would probably save time anyway. If we do this, we need to take into account the different signatures of region functions. For a two-argument function, check before the vertex is calculated, and for a three- or five-argument region function, check after the vertex is calculated (because the arguments to the region function include the vertex coordinates). Because of this last possibility, we probably also want to also make the indexed face sets handle evaluations which throw errors, in a similar way that 2d plotting handles undefined values. This would also probably necessitate storing the parameter values with the vertices.\n\n\nOne concern I have about implementing this is, have you seen ParametricSurface.eval_grid? There's a lot of duplicated code, since it branches for every type of function and then replicates the nested loop. I feel like I would have to implement this logic in several places. Do you have any ideas for how to factor eval_grid? Or any general suggestions?",
     "created_at": "2009-05-14T03:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
@@ -459,6 +471,7 @@ Replying to [comment:14 jason]:
 I had overlooked `_clean_point_list`; the solution was right there under my nose :). I agree that keeping track of the (u,v) coordinates for every vertex will be necessary.
 
 > make it so that the region passed into the plot3d command is used during the initial evaluation; if the point passes the region function, then a vertex is calculated from it. This would probably save time anyway. If we do this, we need to take into account the different signatures of region functions. For a two-argument function, check before the vertex is calculated, and for a three- or five-argument region function, check after the vertex is calculated (because the arguments to the region function include the vertex coordinates). Because of this last possibility, we probably also want to also make the indexed face sets handle evaluations which throw errors, in a similar way that 2d plotting handles undefined values. This would also probably necessitate storing the parameter values with the vertices.
+
 
 One concern I have about implementing this is, have you seen ParametricSurface.eval_grid? There's a lot of duplicated code, since it branches for every type of function and then replicates the nested loop. I feel like I would have to implement this logic in several places. Do you have any ideas for how to factor eval_grid? Or any general suggestions?
 

@@ -3,7 +3,7 @@
 archive/issues_008385.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCurrently, if one runs \n\n\n```\n$ make test\n```\n\n\na file\n\n\n```\n$HOME/.sage/tmp/test.log\n```\n\n\nis created with the results of the tests. However, this stops testing two versions of Sage at the same time - even if the tests take place on different machines. \n\nHence it would be useful if the log file had the hostname, date and time in it. \n\nI would suggest a name like\n\n\n```\ntest.log-redstart-23:22:57-02:26:2010\n```\n\n\nwould be useful to indicate\n\n* The hostname was \"redstart\"\n* The time the tests started was \"23:22:57\"\n* The date the tests started was \"02:26:2010\"\n\nThis would allow multiple versions of Sage to be tested on multiple computers at the same time. \n\nAdding the Sage version would be nice too, as below for Sage 4.3.3\n\n\n```\ntest.log-4.3.3-redstart-23:22:57-02:26:2010\n```\n\n\n\nDave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8385\n\n",
+    "body": "Assignee: tbd\n\nCurrently, if one runs \n\n```\n$ make test\n```\n\na file\n\n```\n$HOME/.sage/tmp/test.log\n```\n\nis created with the results of the tests. However, this stops testing two versions of Sage at the same time - even if the tests take place on different machines. \n\nHence it would be useful if the log file had the hostname, date and time in it. \n\nI would suggest a name like\n\n```\ntest.log-redstart-23:22:57-02:26:2010\n```\n\nwould be useful to indicate\n\n* The hostname was \"redstart\"\n* The time the tests started was \"23:22:57\"\n* The date the tests started was \"02:26:2010\"\n\nThis would allow multiple versions of Sage to be tested on multiple computers at the same time. \n\nAdding the Sage version would be nice too, as below for Sage 4.3.3\n\n```\ntest.log-4.3.3-redstart-23:22:57-02:26:2010\n```\n\n\nDave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8385\n\n",
     "created_at": "2010-02-26T23:35:43Z",
     "labels": [
         "component: doctest"
@@ -19,19 +19,15 @@ Assignee: tbd
 
 Currently, if one runs 
 
-
 ```
 $ make test
 ```
 
-
 a file
-
 
 ```
 $HOME/.sage/tmp/test.log
 ```
-
 
 is created with the results of the tests. However, this stops testing two versions of Sage at the same time - even if the tests take place on different machines. 
 
@@ -39,11 +35,9 @@ Hence it would be useful if the log file had the hostname, date and time in it.
 
 I would suggest a name like
 
-
 ```
 test.log-redstart-23:22:57-02:26:2010
 ```
-
 
 would be useful to indicate
 
@@ -55,11 +49,9 @@ This would allow multiple versions of Sage to be tested on multiple computers at
 
 Adding the Sage version would be nice too, as below for Sage 4.3.3
 
-
 ```
 test.log-4.3.3-redstart-23:22:57-02:26:2010
 ```
-
 
 
 Dave 

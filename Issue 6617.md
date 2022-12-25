@@ -214,7 +214,7 @@ archive/issue_events_015620.json:
 archive/issue_comments_054122.json:
 ```json
 {
-    "body": "Deleted `SAGE_ROOT/examples/latex_embed/.example.sage.py` by hand, not using\n\n```\nhg remove\n```\n",
+    "body": "Deleted `SAGE_ROOT/examples/latex_embed/.example.sage.py` by hand, not using\n\n```\nhg remove\n```",
     "created_at": "2009-07-25T20:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
@@ -228,4 +228,3 @@ Deleted `SAGE_ROOT/examples/latex_embed/.example.sage.py` by hand, not using
 ```
 hg remove
 ```
-

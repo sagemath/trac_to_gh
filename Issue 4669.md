@@ -3,7 +3,7 @@
 archive/issues_004669.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
     "created_at": "2008-12-01T15:31:59Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_004669.json:
 ```
 Assignee: @williamstein
 
-
 ```
 > What is really confusing me is that the docstring for
 > matrix_complex_double_dense.pyx
@@ -29,7 +28,6 @@ Assignee: @williamstein
 > docstring for
 > matrix_complex_double_dense.pyx, which seems odd.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4669

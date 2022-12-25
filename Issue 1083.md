@@ -3,7 +3,7 @@
 archive/issues_001083.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: number fields matrix trace norm extension\n\nThe following is not correct:\n\nsage: K.<a> = NumberField(ZZ['x'].0^2 + 2, 'a')\nsage: L.<b> = K.extension(ZZ['x'].0 - a, 'b')\nsage: L\nNumber Field in b with defining polynomial x - a over its base field\nsage: L(a)\n0\n\nThis is the root of the following bugs:\n\nsage: a.trace(K)\nsage: a.norm(K)\nsage: a.matrix(K)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n... (snipped) ...\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in relativize(self, alpha, names)\n   2902                     # self --> M that sends alpha to\n   2903                     # the generator of the intermediate field.\n-> 2904                     from_M = M.hom([self.gen()], self, check=True)\n   2905                     M._set_structure(from_M, to_M)  # don't have to\n   2906                                                     # worry about caching since relative number fields aren't cached.\n\n/Users/ncalexan/Documents/School/MATH235/groebner/parent_gens.pyx in sage.structure.parent_gens.ParentWithGens.hom()\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in __call__(self, im_gen, base_hom, check)\n    172         if check:\n    173             im_gen = self.codomain()(im_gen)\n--> 174         return self._from_im(im_gen, base_hom)\n    175 \n    176     def _coerce_impl(self, x):\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in _from_im(self, im_gen, base_hom)\n    197         f = R([base_hom(x) for x in a.list()])\n    198         b = f(im_gen)\n--> 199         abs_hom = K.hom([b])\n    200         return RelativeNumberFieldHomomorphism_from_abs(self, abs_hom)\n    201 \n\n/Users/ncalexan/Documents/School/MATH235/groebner/parent_gens.pyx in sage.structure.parent_gens.ParentWithGens.hom()\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in __call__(self, im_gens, check)\n     30                 return self._coerce_impl(im_gens)\n     31             except TypeError:\n---> 32                 raise TypeError, \"images do not define a valid homomorphism\"\n     33         \n     34     def _coerce_impl(self, x):\n\n<type 'exceptions.TypeError'>: images do not define a valid homomorphism\n\nIssue created by migration from https://trac.sagemath.org/ticket/1083\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number fields matrix trace norm extension\n\nThe following is not correct:\n\nsage: K.<a> = NumberField(ZZ['x'].0^2 + 2, 'a')\nsage: L.<b> = K.extension(ZZ['x'].0 - a, 'b')\nsage: L\nNumber Field in b with defining polynomial x - a over its base field\nsage: L(a)\n0\n\nThis is the root of the following bugs:\n\nsage: a.trace(K)\nsage: a.norm(K)\nsage: a.matrix(K)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n... (snipped) ...\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in relativize(self, alpha, names)\n   2902                     # self --> M that sends alpha to\n   2903                     # the generator of the intermediate field.\n-> 2904                     from_M = M.hom([self.gen()], self, check=True)\n   2905                     M._set_structure(from_M, to_M)  # don't have to\n   2906                                                     # worry about caching since relative number fields aren't cached.\n\n/Users/ncalexan/Documents/School/MATH235/groebner/parent_gens.pyx in sage.structure.parent_gens.ParentWithGens.hom()\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in __call__(self, im_gen, base_hom, check)\n    172         if check:\n    173             im_gen = self.codomain()(im_gen)\n--> 174         return self._from_im(im_gen, base_hom)\n    175 \n    176     def _coerce_impl(self, x):\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in _from_im(self, im_gen, base_hom)\n    197         f = R([base_hom(x) for x in a.list()])\n    198         b = f(im_gen)\n--> 199         abs_hom = K.hom([b])\n    200         return RelativeNumberFieldHomomorphism_from_abs(self, abs_hom)\n    201 \n\n/Users/ncalexan/Documents/School/MATH235/groebner/parent_gens.pyx in sage.structure.parent_gens.ParentWithGens.hom()\n\n/Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/morphism.py in __call__(self, im_gens, check)\n     30                 return self._coerce_impl(im_gens)\n     31             except TypeError:\n---> 32                 raise TypeError, \"images do not define a valid homomorphism\"\n     33         \n     34     def _coerce_impl(self, x):\n\n<type 'exceptions.TypeError'>: images do not define a valid homomorphism\n\nIssue created by migration from https://trac.sagemath.org/ticket/1083\n\n",
     "created_at": "2007-11-03T20:06:48Z",
     "labels": [
         "component: number theory",
@@ -35,7 +35,8 @@ This is the root of the following bugs:
 sage: a.trace(K)
 sage: a.norm(K)
 sage: a.matrix(K)
----------------------------------------------------------------------------
+
+---
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 ... (snipped) ...
 /Users/ncalexan/sage/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in relativize(self, alpha, names)
@@ -83,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1083
 archive/issue_comments_006524.json:
 ```json
 {
-    "body": "Argh, that should be\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 + 2, 'a')\nsage: L.<b> = K.extension(ZZ['x'].0 - a, 'b')\nsage: L\nNumber Field in b with defining polynomial x - a over its base field\nsage: L(a)\n0\n```\n",
+    "body": "Argh, that should be\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^2 + 2, 'a')\nsage: L.<b> = K.extension(ZZ['x'].0 - a, 'b')\nsage: L\nNumber Field in b with defining polynomial x - a over its base field\nsage: L(a)\n0\n```",
     "created_at": "2007-11-03T20:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1083",
     "type": "issue_comment",
@@ -94,7 +95,6 @@ archive/issue_comments_006524.json:
 
 Argh, that should be
 
-
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^2 + 2, 'a')
 sage: L.<b> = K.extension(ZZ['x'].0 - a, 'b')
@@ -103,7 +103,6 @@ Number Field in b with defining polynomial x - a over its base field
 sage: L(a)
 0
 ```
-
 
 
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9774
 archive/issue_comments_095633.json:
 ```json
 {
-    "body": "I've been experimenting a bit with `MathJax`, outside of the notebook.  Mostly thinking about how it will handle tex4ht output in jsMath mode, but here are some some observations that might be useful:\n\n1.  Easier in most ways to structure a page to use `MathJax`.  Just insert something like\n\n\n```\n<script type=\"text/javascript\" src=\"path-to-MathJax/MathJax.js\"></script>\n```\n\n\nNo need for a \"process()\" call at the end, etc.\n\n\n2.  Default is to not recognize single dollar-signs as delimiters.  Alternative is  `\\(..\\)`.  This would be a good thing, since if a user adds text (via TinyMCE) right now jsMath tries to parse the following as math.  `$$..$$` and  `\\[..\\]` both work for display math.  We would break lots of old worksheets if we stopped recognizing `$..$`.\n\n3.  There is a jsMath compatibility mode.  I believe I've found one bug in this already (reported upstream).  I'd imagine this is not a development priority, but who knows?\n\n4.  Modes and configuration is controlled globally by  `config/MathJax.js`  which is just one huge well-commented Javascript object.  It can be overridden in a web page by adding a new version into the script block mentioned above.  Maybe we want to make this easy for users to access, or maybe it is easy already, or maybe we don't want to bother.\n\n5.  This looks to me like the best introduction to the types of decisions we will want to make about what to cut over to:\nhttp://www.mathjax.org/resources/docs/?configuration.html\n\n6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n\n7.  I just noticed this morning that `html.table()` uses  `class=\"math\"` which is a jsMath way to tag span's or div's for processing.  I haven't found how to do something similiar in `MathJax`, though this will work in jsMath compatibility mode.  A very small test would indicate that the two modes can be used at the same time.\n\n8.  Consonant with (2) and (7), I'd love to see the notebook formatting move to something closer to rigorous XML (ie XHTML, I guess).  Certain types of processing would be easier if we did, but that is not really what this ticket is all about.",
+    "body": "I've been experimenting a bit with `MathJax`, outside of the notebook.  Mostly thinking about how it will handle tex4ht output in jsMath mode, but here are some some observations that might be useful:\n\n1.  Easier in most ways to structure a page to use `MathJax`.  Just insert something like\n\n```\n<script type=\"text/javascript\" src=\"path-to-MathJax/MathJax.js\"></script>\n```\n\nNo need for a \"process()\" call at the end, etc.\n\n\n2.  Default is to not recognize single dollar-signs as delimiters.  Alternative is  `\\(..\\)`.  This would be a good thing, since if a user adds text (via TinyMCE) right now jsMath tries to parse the following as math.  `$$..$$` and  `\\[..\\]` both work for display math.  We would break lots of old worksheets if we stopped recognizing `$..$`.\n\n3.  There is a jsMath compatibility mode.  I believe I've found one bug in this already (reported upstream).  I'd imagine this is not a development priority, but who knows?\n\n4.  Modes and configuration is controlled globally by  `config/MathJax.js`  which is just one huge well-commented Javascript object.  It can be overridden in a web page by adding a new version into the script block mentioned above.  Maybe we want to make this easy for users to access, or maybe it is easy already, or maybe we don't want to bother.\n\n5.  This looks to me like the best introduction to the types of decisions we will want to make about what to cut over to:\nhttp://www.mathjax.org/resources/docs/?configuration.html\n\n6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n\n7.  I just noticed this morning that `html.table()` uses  `class=\"math\"` which is a jsMath way to tag span's or div's for processing.  I haven't found how to do something similiar in `MathJax`, though this will work in jsMath compatibility mode.  A very small test would indicate that the two modes can be used at the same time.\n\n8.  Consonant with (2) and (7), I'd love to see the notebook formatting move to something closer to rigorous XML (ie XHTML, I guess).  Certain types of processing would be easier if we did, but that is not really what this ticket is all about.",
     "created_at": "2010-08-24T18:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -45,11 +45,9 @@ I've been experimenting a bit with `MathJax`, outside of the notebook.  Mostly t
 
 1.  Easier in most ways to structure a page to use `MathJax`.  Just insert something like
 
-
 ```
 <script type="text/javascript" src="path-to-MathJax/MathJax.js"></script>
 ```
-
 
 No need for a "process()" call at the end, etc.
 
@@ -94,7 +92,7 @@ Thanks for comment, I feel that MathJax is much slower on cheap/older computer. 
 archive/issue_comments_095635.json:
 ```json
 {
-    "body": "Replying to [comment:2 rbeezer]:\n\n> 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n\n\nI think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.",
+    "body": "Replying to [comment:2 rbeezer]:\n\n> 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n\n\n\nI think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.",
     "created_at": "2010-08-25T22:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -106,6 +104,7 @@ archive/issue_comments_095635.json:
 Replying to [comment:2 rbeezer]:
 
 > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.
+
 
 
 I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.
@@ -135,7 +134,7 @@ Changing status from new to needs_work.
 archive/issue_comments_095637.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> Replying to [comment:2 rbeezer]:\n> \n> > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n> \n> \n> I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.\n\nJust in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.",
+    "body": "Replying to [comment:4 jason]:\n> Replying to [comment:2 rbeezer]:\n> \n> > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n  \n> \n> \n> I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.\n\n\nJust in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.",
     "created_at": "2010-10-21T20:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -148,9 +147,11 @@ Replying to [comment:4 jason]:
 > Replying to [comment:2 rbeezer]:
 > 
 > > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.
+  
 > 
 > 
 > I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.
+
 
 Just in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.
 
@@ -161,7 +162,7 @@ Just in case you haven't thought of this, what Gollum (the [GitHub](GitHub) foru
 archive/issue_comments_095638.json:
 ```json
 {
-    "body": "Replying to [comment:10 rminer]:\n> Replying to [comment:4 jason]:\n> > Replying to [comment:2 rbeezer]:\n> > \n> > > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n> > \n> > \n> > I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.\n> \n> Just in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.\n\nThat's a very interesting solution.  I suppose we could host them on the main sage webserver, for example.  Or maybe Google Code or something like that so we had redundant sources.",
+    "body": "Replying to [comment:10 rminer]:\n> Replying to [comment:4 jason]:\n> > Replying to [comment:2 rbeezer]:\n> > \n> > > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.\n  \n> > \n> > \n> > I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.\n\n> \n> Just in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.\n\n\nThat's a very interesting solution.  I suppose we could host them on the main sage webserver, for example.  Or maybe Google Code or something like that so we had redundant sources.",
     "created_at": "2010-10-21T20:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -175,11 +176,14 @@ Replying to [comment:10 rminer]:
 > > Replying to [comment:2 rbeezer]:
 > > 
 > > > 6.  `MathJax` is HUGE.  Fonts for lots of Unicode points, I guess.  SVN checkout is 53 MB, after unzipping  fonts.zip  it all occupies  171 MB.
+  
 > > 
 > > 
 > > I think MathJax includes the equivalent of our jsmath-image-fonts spkg.  If we added MathJax to Sage, it might be good to strip out the image fonts and distribute them separately as a mathjax-image-fonts spkg (mathjax faq tells how to do this, I believe).  Somewhere I have a half-finished prototype of this solution.
+
 > 
 > Just in case you haven't thought of this, what Gollum (the [GitHub](GitHub) forum) folks did was host the MathJax fonts on Amazon S3, and then not include them in their distribution.  I don't know if that would work for you, but I wanted to point it out.
+
 
 That's a very interesting solution.  I suppose we could host them on the main sage webserver, for example.  Or maybe Google Code or something like that so we had redundant sources.
 
@@ -266,7 +270,7 @@ Screenshot of matrix
 archive/issue_comments_095643.json:
 ```json
 {
-    "body": "Steps that will install `MathJax` with the new Flask notebook.  \n\n1. Install the Flask version of the notebook.\n   {{{\n   http://code.google.com/r/rkirov-flask/\n   }}}\n\n2. Download v1.1 of `MathJax` as zip file (from bottom of page).\n   {{{\n   http://www.mathjax.org/download/\n   }}}\n\n3.  Unzip the MathJax distribution into\n\n   $SAGE_ROOT/devel/sagenb/sagenb/data\n\n   and\n\n   rename the new directory: `mathjax-MathJax-5a7e4d7` (or whatever)\n\n   to be just the directory:  `MathJax`\n\n4.  jsmath compatibility.  Edit\n   {{{\n   $SAGE_ROOT/devel/sagenb/sagenb/data/MathJax/config/default.js\n   }}}\n   by adding \"`jsMath2jax.js`\" as the first entry of the \"extensions\" list, so it becomes\n   {{{\n   extensions: [\"jsMath2jax.js\", \"tex2jax.js\"]\n   }}}\n\n5. Edit\n   {{{\n   $SAGE_ROOT/devel/sagenb/sagenb/data/sage/html/notebook/base.html\n   }}}\n   and change\n   {{{\n   <script type=\"text/javascript\" src=\"/javascript/sage/jsmath.js\"></script>\n   }}}\n   to\n   {{{\n   <script type=\"text/javascript\" src=\"/static/MathJax/MathJax.js?config=default\"></script>\n   }}}\n\n\nThis will install `MathJax` and the notebook will use it.  But the setup is buggy, so needs work.  I'm sure there is some configuration on the Sage side and/or the `MathJax` side that will need changes.\n\n* A mix of black and green symbols.\n\n* Only renders on a reload - adding new TeX via TinyMCE returns with an error about not finding fonts.\n\n* Some stray tags are being rendered, or something.\n\nScreenshots attached:\n\nDouble Integral:\n\nhttp://wiki.math.toronto.edu/TorontoMathWiki/index.php/JsMath/MathJax_%28TeX_for_Web%29\n\n```\n$$ (2\\pi h)^{-d}\\iint_{\\{H(x,\\xi) <\\tau\\}} dx d\\xi $$\n```\n\n\nMatrix:\n\n```\n$\\begin{bmatrix}\nx^2 & y^2\\\\\nx^3 & \\cos(z)\n\\end{bmatrix}$\n```\n",
+    "body": "Steps that will install `MathJax` with the new Flask notebook.  \n\n1. Install the Flask version of the notebook.\n   {{{\n   http://code.google.com/r/rkirov-flask/\n   }}}\n\n2. Download v1.1 of `MathJax` as zip file (from bottom of page).\n   {{{\n   http://www.mathjax.org/download/\n   }}}\n\n3.  Unzip the MathJax distribution into\n\n   $SAGE_ROOT/devel/sagenb/sagenb/data\n\n   and\n\n   rename the new directory: `mathjax-MathJax-5a7e4d7` (or whatever)\n\n   to be just the directory:  `MathJax`\n\n4.  jsmath compatibility.  Edit\n   {{{\n   $SAGE_ROOT/devel/sagenb/sagenb/data/MathJax/config/default.js\n   }}}\n   by adding \"`jsMath2jax.js`\" as the first entry of the \"extensions\" list, so it becomes\n   {{{\n   extensions: [\"jsMath2jax.js\", \"tex2jax.js\"]\n   }}}\n\n5. Edit\n   {{{\n   $SAGE_ROOT/devel/sagenb/sagenb/data/sage/html/notebook/base.html\n   }}}\n   and change\n   {{{\n   <script type=\"text/javascript\" src=\"/javascript/sage/jsmath.js\"></script>\n   }}}\n   to\n   {{{\n   <script type=\"text/javascript\" src=\"/static/MathJax/MathJax.js?config=default\"></script>\n   }}}\n\n\nThis will install `MathJax` and the notebook will use it.  But the setup is buggy, so needs work.  I'm sure there is some configuration on the Sage side and/or the `MathJax` side that will need changes.\n\n* A mix of black and green symbols.\n\n* Only renders on a reload - adding new TeX via TinyMCE returns with an error about not finding fonts.\n\n* Some stray tags are being rendered, or something.\n\nScreenshots attached:\n\nDouble Integral:\n\nhttp://wiki.math.toronto.edu/TorontoMathWiki/index.php/JsMath/MathJax_%28TeX_for_Web%29\n\n```\n$$ (2\\pi h)^{-d}\\iint_{\\{H(x,\\xi) <\\tau\\}} dx d\\xi $$\n```\n\nMatrix:\n\n```\n$\\begin{bmatrix}\nx^2 & y^2\\\\\nx^3 & \\cos(z)\n\\end{bmatrix}$\n```",
     "created_at": "2011-03-22T22:53:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -338,7 +342,6 @@ http://wiki.math.toronto.edu/TorontoMathWiki/index.php/JsMath/MathJax_%28TeX_for
 $$ (2\pi h)^{-d}\iint_{\{H(x,\xi) <\tau\}} dx d\xi $$
 ```
 
-
 Matrix:
 
 ```
@@ -347,7 +350,6 @@ x^2 & y^2\\
 x^3 & \cos(z)
 \end{bmatrix}$
 ```
-
 
 
 
@@ -414,7 +416,7 @@ Added patch to Flask notebook code to support `MathJax`, built with Davide Cervo
 archive/issue_comments_095647.json:
 ```json
 {
-    "body": "John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?\n\n\n```\napplying mathjax.patch\npatching file sage/misc/latex.py\nHunk #15 succeeded at 1750 with fuzz 2 (offset 2 lines).\nHunk #23 FAILED at 2382\n1 out of 25 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh mathjax.patch\n\n\n```\n",
+    "body": "John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?\n\n```\napplying mathjax.patch\npatching file sage/misc/latex.py\nHunk #15 succeeded at 1750 with fuzz 2 (offset 2 lines).\nHunk #23 FAILED at 2382\n1 out of 25 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh mathjax.patch\n\n\n```",
     "created_at": "2011-06-16T04:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -424,7 +426,6 @@ archive/issue_comments_095647.json:
 ```
 
 John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?
-
 
 ```
 applying mathjax.patch
@@ -441,13 +442,12 @@ errors during apply, please fix and refresh mathjax.patch
 
 
 
-
 ---
 
 archive/issue_comments_095648.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?\n\nYes.\n\n\n```\nrob@tiger:/sage/dev/devel/sage$ ../../sage -version\n* Warning: this is a prerelease version, and it may be unstable.     *\nrob@tiger:/sage/dev/devel/sage$ hg qimport -P http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/mathjax.patch\nadding mathjax.patch to series file\napplying mathjax.patch\nnow at: mathjax.patch\n```\n",
+    "body": "Replying to [comment:18 jason]:\n> John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?\n\n\nYes.\n\n```\nrob@tiger:/sage/dev/devel/sage$ ../../sage -version\n* Warning: this is a prerelease version, and it may be unstable.     *\nrob@tiger:/sage/dev/devel/sage$ hg qimport -P http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/mathjax.patch\nadding mathjax.patch to series file\napplying mathjax.patch\nnow at: mathjax.patch\n```",
     "created_at": "2011-06-16T05:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -459,8 +459,8 @@ archive/issue_comments_095648.json:
 Replying to [comment:18 jason]:
 > John's patch doesn't apply cleanly to stock 4.7; does it apply to the most recent alpha of 4.7.1?
 
-Yes.
 
+Yes.
 
 ```
 rob@tiger:/sage/dev/devel/sage$ ../../sage -version
@@ -470,7 +470,6 @@ adding mathjax.patch to series file
 applying mathjax.patch
 now at: mathjax.patch
 ```
-
 
 
 
@@ -537,7 +536,7 @@ We did not delete the latter, but I think it can safely go away.
 archive/issue_comments_095652.json:
 ```json
 {
-    "body": "Replying to [comment:20 jason]:\n> Don't we need the actual MathJax spkg or files somewhere?  Rob: do you have instructions for putting these in the directory, or do we use my half-finished patch mentioned in the description, or something else?\n\nWe need an spkg to be Internet-independent.  \n\nWe did not experiment with your old one.  I think it would be best to make a new one.  This requires a small edit (once you are sure all works with CDN version).\n\nFont suggestions coming up.",
+    "body": "Replying to [comment:20 jason]:\n> Don't we need the actual MathJax spkg or files somewhere?  Rob: do you have instructions for putting these in the directory, or do we use my half-finished patch mentioned in the description, or something else?\n\n\nWe need an spkg to be Internet-independent.  \n\nWe did not experiment with your old one.  I think it would be best to make a new one.  This requires a small edit (once you are sure all works with CDN version).\n\nFont suggestions coming up.",
     "created_at": "2011-06-16T05:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -548,6 +547,7 @@ archive/issue_comments_095652.json:
 
 Replying to [comment:20 jason]:
 > Don't we need the actual MathJax spkg or files somewhere?  Rob: do you have instructions for putting these in the directory, or do we use my half-finished patch mentioned in the description, or something else?
+
 
 We need an spkg to be Internet-independent.  
 
@@ -562,7 +562,7 @@ Font suggestions coming up.
 archive/issue_comments_095653.json:
 ```json
 {
-    "body": "Davide Cervone says for an spkg we need only keep font subdirectories called\n\n\n```\notf,  eot,  svg\n```\n\n\nIn particular `png` subdirectories are huge-est and can go away.\n\nRob",
+    "body": "Davide Cervone says for an spkg we need only keep font subdirectories called\n\n```\notf,  eot,  svg\n```\n\nIn particular `png` subdirectories are huge-est and can go away.\n\nRob",
     "created_at": "2011-06-16T05:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -573,11 +573,9 @@ archive/issue_comments_095653.json:
 
 Davide Cervone says for an spkg we need only keep font subdirectories called
 
-
 ```
 otf,  eot,  svg
 ```
-
 
 In particular `png` subdirectories are huge-est and can go away.
 
@@ -644,7 +642,7 @@ Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/
 archive/issue_comments_095657.json:
 ```json
 {
-    "body": "Replying to [comment:25 jason]:\n> Is this another file that didn't get added to the patch?\n\nYes, same situation - \"old\" file could be removed.\n\n\"file-add-two\" should create the missing file.  Sorry about all the problems - my `hg status` is useless with the hg mess-up.\n\nThis file will require an edit when we move from CDN to spkg.\n\nThank-you!!!!!!!!!!!!!!",
+    "body": "Replying to [comment:25 jason]:\n> Is this another file that didn't get added to the patch?\n\n\nYes, same situation - \"old\" file could be removed.\n\n\"file-add-two\" should create the missing file.  Sorry about all the problems - my `hg status` is useless with the hg mess-up.\n\nThis file will require an edit when we move from CDN to spkg.\n\nThank-you!!!!!!!!!!!!!!",
     "created_at": "2011-06-16T06:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -655,6 +653,7 @@ archive/issue_comments_095657.json:
 
 Replying to [comment:25 jason]:
 > Is this another file that didn't get added to the patch?
+
 
 Yes, same situation - "old" file could be removed.
 
@@ -707,7 +706,7 @@ apply to sagenb repository; apply on top of previous patches
 archive/issue_comments_095660.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by @rbeezer created at 2011-06-17 17:37:44\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```\n",
+    "body": "Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by @rbeezer created at 2011-06-17 17:37:44\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```",
     "created_at": "2011-06-17T17:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -720,14 +719,12 @@ Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachment
 
 The problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:
 
-
 ```
 In sagenb/data/sage/js/notebook_lib.js:
 
 eval_script_tags
 separate_script_tags
 ```
-
 
 
 
@@ -794,7 +791,7 @@ In the page source of a page of the html documentation, I see a script in a file
 archive/issue_comments_095664.json:
 ```json
 {
-    "body": "OK, I can force `mathjax_sage.js` to be created by totally trashing some of the documentation output with\n\n\n```\ndevel/sage/doc/output/html$ rm -rf en\n```\n\n\nbefore rebuilding the HTML reference documentation. It comes from a template file `mathjax_sage.js_t` that one of the patches creates properly.\n\nMathematics still does not render, but I think the MathJax configuration is looking locally.  Time for a local MathJax install, I think.",
+    "body": "OK, I can force `mathjax_sage.js` to be created by totally trashing some of the documentation output with\n\n```\ndevel/sage/doc/output/html$ rm -rf en\n```\n\nbefore rebuilding the HTML reference documentation. It comes from a template file `mathjax_sage.js_t` that one of the patches creates properly.\n\nMathematics still does not render, but I think the MathJax configuration is looking locally.  Time for a local MathJax install, I think.",
     "created_at": "2011-06-20T21:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -805,11 +802,9 @@ archive/issue_comments_095664.json:
 
 OK, I can force `mathjax_sage.js` to be created by totally trashing some of the documentation output with
 
-
 ```
 devel/sage/doc/output/html$ rm -rf en
 ```
-
 
 before rebuilding the HTML reference documentation. It comes from a template file `mathjax_sage.js_t` that one of the patches creates properly.
 
@@ -822,7 +817,7 @@ Mathematics still does not render, but I think the MathJax configuration is look
 archive/issue_comments_095665.json:
 ```json
 {
-    "body": "In a page of the documentation, I inserted manually\n\n\n```\n<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full\">\n```\n\n\nand the mathematics rendered properly with MathJax.\n\nThen I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and used\n\n\n```\n<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full\">\n```\n\n\nwhich also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)\n\nIn both cases the fonts did not look too great to my eye.\n\nQuestions:\n\n(a) How do we get these scripts commands to be placed properly in each page of the docs, with a proper relative path?\n\n(b) Is there really a clean separation between Sage and the notebook if  --mathjax  mode for documentation requires the MathJax code from the notebook?",
+    "body": "In a page of the documentation, I inserted manually\n\n```\n<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full\">\n```\n\nand the mathematics rendered properly with MathJax.\n\nThen I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and used\n\n```\n<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full\">\n```\n\nwhich also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)\n\nIn both cases the fonts did not look too great to my eye.\n\nQuestions:\n\n(a) How do we get these scripts commands to be placed properly in each page of the docs, with a proper relative path?\n\n(b) Is there really a clean separation between Sage and the notebook if  --mathjax  mode for documentation requires the MathJax code from the notebook?",
     "created_at": "2011-06-20T23:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -833,21 +828,17 @@ archive/issue_comments_095665.json:
 
 In a page of the documentation, I inserted manually
 
-
 ```
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 ```
-
 
 and the mathematics rendered properly with MathJax.
 
 Then I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and used
 
-
 ```
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 ```
-
 
 which also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)
 
@@ -866,7 +857,7 @@ Questions:
 archive/issue_comments_095666.json:
 ```json
 {
-    "body": "Replying to [comment:33 rbeezer]:\n> Then I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and \n\n> which also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)\n\nOops, the incantation for a local install of MathJax should have been\n\n\n```\n<script type=\"text/javascript\" src=\"/sage/notebook/devel/rkirov-flask/sagenb/data/mathjax/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```\n",
+    "body": "Replying to [comment:33 rbeezer]:\n> Then I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and \n\n\n> which also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)\n\n\nOops, the incantation for a local install of MathJax should have been\n\n```\n<script type=\"text/javascript\" src=\"/sage/notebook/devel/rkirov-flask/sagenb/data/mathjax/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```",
     "created_at": "2011-06-21T00:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -878,15 +869,15 @@ archive/issue_comments_095666.json:
 Replying to [comment:33 rbeezer]:
 > Then I installed the mathjax 1.1a distribution alongside jsmath in the Flask notebook tree and 
 
+
 > which also caused the math to render properly.  (/sage/notebook is my `SAGE_ROOT`)
 
-Oops, the incantation for a local install of MathJax should have been
 
+Oops, the incantation for a local install of MathJax should have been
 
 ```
 <script type="text/javascript" src="/sage/notebook/devel/rkirov-flask/sagenb/data/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
 ```
-
 
 
 
@@ -935,7 +926,7 @@ Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathj
 archive/issue_comments_095669.json:
 ```json
 {
-    "body": "By the way, one comment about the latest version of my patch: it fixes the problem Rob mentioned about getting the appropriate invocation to MathJax in each piece of documentation.  It does this by setting the variable `mathjax_path` to\n\n```\nfile://[path to MathJax.js]?config=TeX-AMS_HTML-full,file://[path to mathjax_sage.js]\n```\n\nThe paths here are absolute ones, in `SAGE_ROOT/devel/sage/doc/output/html/en/_static/`.  This directory is created by `sage -docbuild website html`, so now if you build the docs with the `-j` flag (to enable MathJax), it first builds the website target, then builds whatever you requested.  There might be a better way to do this, using relative paths, but I couldn't get it to work.    For example, using \n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```\n\nsuccessfully turns on MathJax, but without the local configuration turning on the custom macros.  Using\n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full,mathjax_sage.js\"></script>\n```\n\ndoesn't work, nor does any variation of it that I tried.  (Note that when you change the path specifying the local configuration file, you also need to change the last line of that configuration file to match it, according to [http://www.mathjax.org/docs/1.1/configuration.html](http://www.mathjax.org/docs/1.1/configuration.html).)  If we could copy the file `mathjax_sage.js` to `_static/config/local/`, then we could use \n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full,local/mathjax_sage.js\"></script>\n```\n\nfor the invocation, and \n\n```\nMathJax.Ajax.loadComplete(\"[MathJax]/config/local/mathjax_sage.js\")\n```\n\nfor the last line in mathjax_sage.js.  But I don't know how to put this file in the right place: it's autogenerated, so we can't put it in the MathJax local directory ahead of time, and I can't figure out how to get Sphinx to do it when it's building the documentation.\n\nAnother option would be to try to get Sphinx to write this into each html file:\n\n```\n<script type=\"text/x-mathjax-config\">\n[contents of mathjax_sage.js]\n</script>\n<script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```\n\nWe can get the last line by specifing mathjax_path in conf.py, but I don't know how to get the first part.\n\nI'll keep working on it...",
+    "body": "By the way, one comment about the latest version of my patch: it fixes the problem Rob mentioned about getting the appropriate invocation to MathJax in each piece of documentation.  It does this by setting the variable `mathjax_path` to\n\n```\nfile://[path to MathJax.js]?config=TeX-AMS_HTML-full,file://[path to mathjax_sage.js]\n```\nThe paths here are absolute ones, in `SAGE_ROOT/devel/sage/doc/output/html/en/_static/`.  This directory is created by `sage -docbuild website html`, so now if you build the docs with the `-j` flag (to enable MathJax), it first builds the website target, then builds whatever you requested.  There might be a better way to do this, using relative paths, but I couldn't get it to work.    For example, using \n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```\nsuccessfully turns on MathJax, but without the local configuration turning on the custom macros.  Using\n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full,mathjax_sage.js\"></script>\n```\ndoesn't work, nor does any variation of it that I tried.  (Note that when you change the path specifying the local configuration file, you also need to change the last line of that configuration file to match it, according to [http://www.mathjax.org/docs/1.1/configuration.html](http://www.mathjax.org/docs/1.1/configuration.html).)  If we could copy the file `mathjax_sage.js` to `_static/config/local/`, then we could use \n\n```\n    <script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full,local/mathjax_sage.js\"></script>\n```\nfor the invocation, and \n\n```\nMathJax.Ajax.loadComplete(\"[MathJax]/config/local/mathjax_sage.js\")\n```\nfor the last line in mathjax_sage.js.  But I don't know how to put this file in the right place: it's autogenerated, so we can't put it in the MathJax local directory ahead of time, and I can't figure out how to get Sphinx to do it when it's building the documentation.\n\nAnother option would be to try to get Sphinx to write this into each html file:\n\n```\n<script type=\"text/x-mathjax-config\">\n[contents of mathjax_sage.js]\n</script>\n<script type=\"text/javascript\" src=\"_static/MathJax.js?config=TeX-AMS_HTML-full\"></script>\n```\nWe can get the last line by specifing mathjax_path in conf.py, but I don't know how to get the first part.\n\nI'll keep working on it...",
     "created_at": "2011-07-01T03:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -949,31 +940,26 @@ By the way, one comment about the latest version of my patch: it fixes the probl
 ```
 file://[path to MathJax.js]?config=TeX-AMS_HTML-full,file://[path to mathjax_sage.js]
 ```
-
 The paths here are absolute ones, in `SAGE_ROOT/devel/sage/doc/output/html/en/_static/`.  This directory is created by `sage -docbuild website html`, so now if you build the docs with the `-j` flag (to enable MathJax), it first builds the website target, then builds whatever you requested.  There might be a better way to do this, using relative paths, but I couldn't get it to work.    For example, using 
 
 ```
     <script type="text/javascript" src="_static/MathJax.js?config=TeX-AMS_HTML-full"></script>
 ```
-
 successfully turns on MathJax, but without the local configuration turning on the custom macros.  Using
 
 ```
     <script type="text/javascript" src="_static/MathJax.js?config=TeX-AMS_HTML-full,mathjax_sage.js"></script>
 ```
-
 doesn't work, nor does any variation of it that I tried.  (Note that when you change the path specifying the local configuration file, you also need to change the last line of that configuration file to match it, according to [http://www.mathjax.org/docs/1.1/configuration.html](http://www.mathjax.org/docs/1.1/configuration.html).)  If we could copy the file `mathjax_sage.js` to `_static/config/local/`, then we could use 
 
 ```
     <script type="text/javascript" src="_static/MathJax.js?config=TeX-AMS_HTML-full,local/mathjax_sage.js"></script>
 ```
-
 for the invocation, and 
 
 ```
 MathJax.Ajax.loadComplete("[MathJax]/config/local/mathjax_sage.js")
 ```
-
 for the last line in mathjax_sage.js.  But I don't know how to put this file in the right place: it's autogenerated, so we can't put it in the MathJax local directory ahead of time, and I can't figure out how to get Sphinx to do it when it's building the documentation.
 
 Another option would be to try to get Sphinx to write this into each html file:
@@ -984,7 +970,6 @@ Another option would be to try to get Sphinx to write this into each html file:
 </script>
 <script type="text/javascript" src="_static/MathJax.js?config=TeX-AMS_HTML-full"></script>
 ```
-
 We can get the last line by specifing mathjax_path in conf.py, but I don't know how to get the first part.
 
 I'll keep working on it...
@@ -1402,7 +1387,7 @@ If you don't have it, I'll just diff the two patches, but that's a little harder
 archive/issue_comments_095690.json:
 ```json
 {
-    "body": "I wonder if the reported problems with \"<\" and \">\" are due to line 1685 in latex.py:\n\n```\nx = x.replace('<', '&lt;').replace('>', '&gt;')\n```\n\nThis was put in for use with jsMath, but maybe MathJax doesn't have the same issues.",
+    "body": "I wonder if the reported problems with \"<\" and \">\" are due to line 1685 in latex.py:\n\n```\nx = x.replace('<', '&lt;').replace('>', '&gt;')\n```\nThis was put in for use with jsMath, but maybe MathJax doesn't have the same issues.",
     "created_at": "2012-01-14T18:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1416,7 +1401,6 @@ I wonder if the reported problems with "<" and ">" are due to line 1685 in latex
 ```
 x = x.replace('<', '&lt;').replace('>', '&gt;')
 ```
-
 This was put in for use with jsMath, but maybe MathJax doesn't have the same issues.
 
 
@@ -1448,7 +1432,7 @@ I've updated test.sagenb.org with the newest mathjax changes.
 archive/issue_comments_095692.json:
 ```json
 {
-    "body": "Replying to [comment:55 jason]:\n> You don't happen to have your changes as a separate patch on top of mine, do you?  I'd love to review your changes, but it's a bit hard to see where your additions are.\n> \n> If you don't have it, I'll just diff the two patches, but that's a little harder to read than a separate patch.\n\nEr, no, I don't, unfortunately. You can get such a diff by doing `hg qfinish` on my patch on top of 4.8.alpha6, then `hg up 4.8.alpha4`, then `hg qimport -P [your patch]`, then `hg diff -r tip -r [revid of my patch]` (you would probably want to `hg strip [revid of my patch]` later).\n\nBut I don't see how that's very useful to you since it will be some gigantic patch subsuming everything that was merged in alpha5 and alpha6. In your position I would just diff the two patches, but maybe I don't understand what you're asking for. If you just want diffs for the files touched by the patch, that would also be possible, but maybe a bit messier. Do as above, except also qfinish your patch, and then merge the two qfinished patches' commits into a new commit, with your patch as the primary parent. Then do `hg log -r [the merge commit] -p [the file names]`. (I think that should work.) Or I guess you could just make the gigantic patch and ignore the parts that are on irrelevant files.",
+    "body": "Replying to [comment:55 jason]:\n> You don't happen to have your changes as a separate patch on top of mine, do you?  I'd love to review your changes, but it's a bit hard to see where your additions are.\n> \n> If you don't have it, I'll just diff the two patches, but that's a little harder to read than a separate patch.\n\n\nEr, no, I don't, unfortunately. You can get such a diff by doing `hg qfinish` on my patch on top of 4.8.alpha6, then `hg up 4.8.alpha4`, then `hg qimport -P [your patch]`, then `hg diff -r tip -r [revid of my patch]` (you would probably want to `hg strip [revid of my patch]` later).\n\nBut I don't see how that's very useful to you since it will be some gigantic patch subsuming everything that was merged in alpha5 and alpha6. In your position I would just diff the two patches, but maybe I don't understand what you're asking for. If you just want diffs for the files touched by the patch, that would also be possible, but maybe a bit messier. Do as above, except also qfinish your patch, and then merge the two qfinished patches' commits into a new commit, with your patch as the primary parent. Then do `hg log -r [the merge commit] -p [the file names]`. (I think that should work.) Or I guess you could just make the gigantic patch and ignore the parts that are on irrelevant files.",
     "created_at": "2012-01-15T07:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1461,6 +1445,7 @@ Replying to [comment:55 jason]:
 > You don't happen to have your changes as a separate patch on top of mine, do you?  I'd love to review your changes, but it's a bit hard to see where your additions are.
 > 
 > If you don't have it, I'll just diff the two patches, but that's a little harder to read than a separate patch.
+
 
 Er, no, I don't, unfortunately. You can get such a diff by doing `hg qfinish` on my patch on top of 4.8.alpha6, then `hg up 4.8.alpha4`, then `hg qimport -P [your patch]`, then `hg diff -r tip -r [revid of my patch]` (you would probably want to `hg strip [revid of my patch]` later).
 
@@ -1509,7 +1494,7 @@ kini: your try4 patch looks fine to me.  It applies cleanly on 5.0.some_version_
 archive/issue_comments_095695.json:
 ```json
 {
-    "body": "I seem to have a broken install here (2nd try). I followed this sequence of steps to install mathjax + jmol (output of `history` in zsh).\n\n```\n  663  local/bin\n  664  ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/trac_9774-scripts-mathjax.patch\n  ***  ../../sage -hg qpush  # This line is missing because of my zsh setup\n  666  ../../\n  667  l\n  668  cd devel/sage\n  669  ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/trac_9774-mathjax-try4.patch\n  670  ../../sage -hg qpush\n  671  ../../sage -b\n  672  ../..\n  674  ./sage -f http://sage.math.washington.edu/home/jason/mathjax/sagenb-0.9.0.spkg\n  675  ./sage -f http://sage.math.washington.edu/home/jason/jmol/jmol-12.0.45.p4.spkg\n  676  ./sage -b\n  678  ./sage -n\n  679  BROWSER=\"firefox\" ./sage -n\n```\n\nMathjax is broken and so is jmol. Do I need to install something extra for mathjax + jmol to work? These steps were followed on a freshly compiled sage-4.8. Screenshot: http://i.imgur.com/A6wrQ.png",
+    "body": "I seem to have a broken install here (2nd try). I followed this sequence of steps to install mathjax + jmol (output of `history` in zsh).\n\n```\n  663  local/bin\n  664  ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/trac_9774-scripts-mathjax.patch\n  ***  ../../sage -hg qpush  # This line is missing because of my zsh setup\n  666  ../../\n  667  l\n  668  cd devel/sage\n  669  ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/trac_9774-mathjax-try4.patch\n  670  ../../sage -hg qpush\n  671  ../../sage -b\n  672  ../..\n  674  ./sage -f http://sage.math.washington.edu/home/jason/mathjax/sagenb-0.9.0.spkg\n  675  ./sage -f http://sage.math.washington.edu/home/jason/jmol/jmol-12.0.45.p4.spkg\n  676  ./sage -b\n  678  ./sage -n\n  679  BROWSER=\"firefox\" ./sage -n\n```\nMathjax is broken and so is jmol. Do I need to install something extra for mathjax + jmol to work? These steps were followed on a freshly compiled sage-4.8. Screenshot: http://i.imgur.com/A6wrQ.png",
     "created_at": "2012-02-06T13:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1537,7 +1522,6 @@ I seem to have a broken install here (2nd try). I followed this sequence of step
   678  ./sage -n
   679  BROWSER="firefox" ./sage -n
 ```
-
 Mathjax is broken and so is jmol. Do I need to install something extra for mathjax + jmol to work? These steps were followed on a freshly compiled sage-4.8. Screenshot: http://i.imgur.com/A6wrQ.png
 
 
@@ -1603,7 +1587,7 @@ There seems to be some problem with mathjax rendering with `LatexExpr`. Compare 
 archive/issue_comments_095699.json:
 ```json
 {
-    "body": "Some doctest failures with this patch:\n\n```\n...sage-5.0.beta2/devel/sage> ../../sage -t sage/misc/latex.py \nsage -t  \"devel/sage-main-backup/sage/misc/latex.py\"        \n**********************************************************************\nFile \"/home/punarbasu/Installations/sage-5.0.beta2/devel/sage-main-backup/sage/misc/latex.py\", line 1765:\n    sage: MathJax().eval(type(3), mode='inline')\nExpected:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\hbox{ < type 'sage.rings.integer.Integer' > }</script></html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\verb|&lt;type|\\phantom{\\verb!x!}\\verb|'sage.rings.integer.Integer'&gt;|</script></html>\n**********************************************************************\nFile \"/home/punarbasu/Installations/sage-5.0.beta2/devel/sage-main-backup/sage/misc/latex.py\", line 2199:\n    sage: sys.displayhook\nExpected:\n    <html>...\\verb|&lt;function|\\phantom{x}\\verb|pretty_print|...</html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\verb|&lt;function|\\phantom{\\verb!x!}\\verb|pretty_print|\\phantom{\\verb!x!}\\verb|at|\\phantom{\\verb!x!}\\verb|0x150b050&gt;|</script></html>\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_52\n   1 of   7 in __main__.example_59\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/punarbasu/.sage//tmp/latex_7938.py\n\t [3.1 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main-backup/sage/misc/latex.py\"\nTotal time for all tests: 3.1 seconds\n```\n",
+    "body": "Some doctest failures with this patch:\n\n```\n...sage-5.0.beta2/devel/sage> ../../sage -t sage/misc/latex.py \nsage -t  \"devel/sage-main-backup/sage/misc/latex.py\"        \n**********************************************************************\nFile \"/home/punarbasu/Installations/sage-5.0.beta2/devel/sage-main-backup/sage/misc/latex.py\", line 1765:\n    sage: MathJax().eval(type(3), mode='inline')\nExpected:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\hbox{ < type 'sage.rings.integer.Integer' > }</script></html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\verb|&lt;type|\\phantom{\\verb!x!}\\verb|'sage.rings.integer.Integer'&gt;|</script></html>\n**********************************************************************\nFile \"/home/punarbasu/Installations/sage-5.0.beta2/devel/sage-main-backup/sage/misc/latex.py\", line 2199:\n    sage: sys.displayhook\nExpected:\n    <html>...\\verb|&lt;function|\\phantom{x}\\verb|pretty_print|...</html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\verb|&lt;function|\\phantom{\\verb!x!}\\verb|pretty_print|\\phantom{\\verb!x!}\\verb|at|\\phantom{\\verb!x!}\\verb|0x150b050&gt;|</script></html>\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_52\n   1 of   7 in __main__.example_59\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/punarbasu/.sage//tmp/latex_7938.py\n\t [3.1 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main-backup/sage/misc/latex.py\"\nTotal time for all tests: 3.1 seconds\n```",
     "created_at": "2012-02-25T16:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1649,7 +1633,6 @@ Total time for all tests: 3.1 seconds
 
 
 
-
 ---
 
 archive/issue_comments_095700.json:
@@ -1691,7 +1674,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095702.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by @ppurka created at 2012-06-09 10:05:13\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
+    "body": "Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by @ppurka created at 2012-06-09 10:05:13\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
     "created_at": "2012-06-09T10:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1712,13 +1695,11 @@ There is however a very weird problem with mathjax, both 1.0 and 2.0 branches. T
 ```
 sage -n directory=/tmp/a.sagenb
 ```
-
 4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)
 
 ```
 SyntaxError: at index 0 in "\newcommand{\Bold}[1]{\mathbf{#1}}?": invalid character escape sequence
 ```
-
 
 In firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.
 
@@ -1747,7 +1728,7 @@ It looks like Samuel Ainsworth has independently got MathJax working in his "new
 archive/issue_comments_095704.json:
 ```json
 {
-    "body": "Replying to [comment:67 kini]:\n> It looks like Samuel Ainsworth has independently got MathJax working in his \"newui\" branch (I haven't tested it). At a glance it seems he's using the MathJax CDN.\n\nHas he applied the mathjax patches to the sage repo? Without those patches it won't work. And these patches were not applying for quite sometime. I just updated one today.\n\nThere are more changes to make actually. `SAGE_ROOT/devel/sage/doc` has lots of jsmath references, which all need to be converted to mathjax.\n\nIf you can independently confirm the behavior in comment:65 then it will be good.",
+    "body": "Replying to [comment:67 kini]:\n> It looks like Samuel Ainsworth has independently got MathJax working in his \"newui\" branch (I haven't tested it). At a glance it seems he's using the MathJax CDN.\n\n\nHas he applied the mathjax patches to the sage repo? Without those patches it won't work. And these patches were not applying for quite sometime. I just updated one today.\n\nThere are more changes to make actually. `SAGE_ROOT/devel/sage/doc` has lots of jsmath references, which all need to be converted to mathjax.\n\nIf you can independently confirm the behavior in comment:65 then it will be good.",
     "created_at": "2012-06-09T19:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1758,6 +1739,7 @@ archive/issue_comments_095704.json:
 
 Replying to [comment:67 kini]:
 > It looks like Samuel Ainsworth has independently got MathJax working in his "newui" branch (I haven't tested it). At a glance it seems he's using the MathJax CDN.
+
 
 Has he applied the mathjax patches to the sage repo? Without those patches it won't work. And these patches were not applying for quite sometime. I just updated one today.
 
@@ -1882,7 +1864,7 @@ Just checking on this - Jason, will this indeed fix #1608?  That is, will we be 
 archive/issue_comments_095709.json:
 ```json
 {
-    "body": "We have doctest failures:\n\n```\n        sage -t  --long -force_lib devel/sagenb-main/sagenb/notebook/jsmath.py # 5 doctests failed\n        sage -t  --long -force_lib devel/sagenb-main/sagenb/misc/sphinxify.py # 1 doctests failed\n        sage -t  --long -force_lib devel/sage/doc/de/tutorial/latex.rst # 27 doctests failed\n        sage -t  --long -force_lib devel/sage/doc/en/tutorial/latex.rst # 27 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/matrix/matrix0.pyx # 1 doctests failed\n```\n\nThe problem with sphinxify is easy to fix. Should we delete jsmath.py, or is it still needed for something?\n\nThe problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.\n\nI don't understand the matrix0.pyx problem at all, at least not yet.",
+    "body": "We have doctest failures:\n\n```\n        sage -t  --long -force_lib devel/sagenb-main/sagenb/notebook/jsmath.py # 5 doctests failed\n        sage -t  --long -force_lib devel/sagenb-main/sagenb/misc/sphinxify.py # 1 doctests failed\n        sage -t  --long -force_lib devel/sage/doc/de/tutorial/latex.rst # 27 doctests failed\n        sage -t  --long -force_lib devel/sage/doc/en/tutorial/latex.rst # 27 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/matrix/matrix0.pyx # 1 doctests failed\n```\nThe problem with sphinxify is easy to fix. Should we delete jsmath.py, or is it still needed for something?\n\nThe problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.\n\nI don't understand the matrix0.pyx problem at all, at least not yet.",
     "created_at": "2012-06-12T23:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1900,7 +1882,6 @@ We have doctest failures:
         sage -t  --long -force_lib devel/sage/doc/en/tutorial/latex.rst # 27 doctests failed
         sage -t  --long -force_lib devel/sage/sage/matrix/matrix0.pyx # 1 doctests failed
 ```
-
 The problem with sphinxify is easy to fix. Should we delete jsmath.py, or is it still needed for something?
 
 The problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.
@@ -1932,7 +1913,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095711.json:
 ```json
 {
-    "body": "> The problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.\nThere are a number of Sage folks who do, though, so hopefully the second one won't be a problem.  Once you fix the English one let us know. \n\nI wonder why the other tutorial versions don't cause problems?  In particular, there is a tutorial in Russian and one in French in 5.1.beta3 that you don't mention as having caused problems - maybe they're based on different versions of the English tutorial.",
+    "body": "> The problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.\n\nThere are a number of Sage folks who do, though, so hopefully the second one won't be a problem.  Once you fix the English one let us know. \n\nI wonder why the other tutorial versions don't cause problems?  In particular, there is a tutorial in Russian and one in French in 5.1.beta3 that you don't mention as having caused problems - maybe they're based on different versions of the English tutorial.",
     "created_at": "2012-06-12T23:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1942,6 +1923,7 @@ archive/issue_comments_095711.json:
 ```
 
 > The problems with the tutorial are a bit more involved, since (a) it explicitly discusses using JSMath and (b) I don't speak German.
+
 There are a number of Sage folks who do, though, so hopefully the second one won't be a problem.  Once you fix the English one let us know. 
 
 I wonder why the other tutorial versions don't cause problems?  In particular, there is a tutorial in Russian and one in French in 5.1.beta3 that you don't mention as having caused problems - maybe they're based on different versions of the English tutorial.
@@ -1971,7 +1953,7 @@ Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_095713.json:
 ```json
 {
-    "body": "Here is a patch fixing the doctests in the Sage library. For the English tutorial, I did a little bit more than a search-and-replace, changing \"JSMath\" to \"MathJax\". For the German tutorial, that's essentially all I did. \n\nsagenb also needs fixing, and I don't have the energy to do this right now. If someone else wants to, that would be great. Here's what I think should be done: delete notebook/jsmath.py, and patch misc/sphinxify.py:\n\n```diff\ndiff --git a/sagenb/misc/sphinxify.py b/sagenb/misc/sphinxify.py\nindex 837b40a..85c9f4d 100644\n--- a/sagenb/misc/sphinxify.py\n+++ b/sagenb/misc/sphinxify.py\n@@ -71,7 +71,7 @@ def sphinxify(docstring, format='html'):\n         sage: sphinxify('**Testing**\\n`monospace`')\n         '\\n<div class=\"docstring\"...<strong>Testing</strong>\\n<span class=\"math\"...</p>\\n\\n\\n</div\n         sage: sphinxify('`x=y`')\n-        '\\n<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">x=y</span></p>\\n\\n\\n</div>'\n+        '\\n<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">\\\\(x=y\\\\)</span></p>\\n\\n\\n</div>\n         sage: sphinxify('`x=y`', format='text')\n         'x=y\\n'\n         sage: sphinxify(':math:`x=y`', format='text')\n```\n",
+    "body": "Here is a patch fixing the doctests in the Sage library. For the English tutorial, I did a little bit more than a search-and-replace, changing \"JSMath\" to \"MathJax\". For the German tutorial, that's essentially all I did. \n\nsagenb also needs fixing, and I don't have the energy to do this right now. If someone else wants to, that would be great. Here's what I think should be done: delete notebook/jsmath.py, and patch misc/sphinxify.py:\n\n```diff\ndiff --git a/sagenb/misc/sphinxify.py b/sagenb/misc/sphinxify.py\nindex 837b40a..85c9f4d 100644\n--- a/sagenb/misc/sphinxify.py\n+++ b/sagenb/misc/sphinxify.py\n@@ -71,7 +71,7 @@ def sphinxify(docstring, format='html'):\n         sage: sphinxify('**Testing**\\n`monospace`')\n         '\\n<div class=\"docstring\"...<strong>Testing</strong>\\n<span class=\"math\"...</p>\\n\\n\\n</div\n         sage: sphinxify('`x=y`')\n-        '\\n<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">x=y</span></p>\\n\\n\\n</div>'\n+        '\\n<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">\\\\(x=y\\\\)</span></p>\\n\\n\\n</div>\n         sage: sphinxify('`x=y`', format='text')\n         'x=y\\n'\n         sage: sphinxify(':math:`x=y`', format='text')\n```",
     "created_at": "2012-06-13T05:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -1999,7 +1981,6 @@ index 837b40a..85c9f4d 100644
          'x=y\n'
          sage: sphinxify(':math:`x=y`', format='text')
 ```
-
 
 
 
@@ -2062,7 +2043,7 @@ Regarding my comment about sagenb: apparently jsmath.py is already gone in the n
 archive/issue_comments_095717.json:
 ```json
 {
-    "body": "> Here is a patch fixing the doctests in the Sage library. For the English tutorial, I did a little bit more than a search-and-replace, changing \"JSMath\" to \"MathJax\". For the German tutorial, that's essentially all I did. \n\nThat looks to have been enough.  I have no idea if all the stuff in English is actually *true* any more, of course.  As long as\n\n```\nIn the \ncase of Sage, the notebook is always connected to a server used to \nexecute the Sage commands, and this server also provides the necessary \njsMath fonts.  So there is nothing extra to set up to have typeset \nmathematics in your web browser when you use the Sage notebook.\n```\n\nis still true for MathJax you should be fine.",
+    "body": "> Here is a patch fixing the doctests in the Sage library. For the English tutorial, I did a little bit more than a search-and-replace, changing \"JSMath\" to \"MathJax\". For the German tutorial, that's essentially all I did. \n\n\nThat looks to have been enough.  I have no idea if all the stuff in English is actually *true* any more, of course.  As long as\n\n```\nIn the \ncase of Sage, the notebook is always connected to a server used to \nexecute the Sage commands, and this server also provides the necessary \njsMath fonts.  So there is nothing extra to set up to have typeset \nmathematics in your web browser when you use the Sage notebook.\n```\nis still true for MathJax you should be fine.",
     "created_at": "2012-06-13T18:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2073,6 +2054,7 @@ archive/issue_comments_095717.json:
 
 > Here is a patch fixing the doctests in the Sage library. For the English tutorial, I did a little bit more than a search-and-replace, changing "JSMath" to "MathJax". For the German tutorial, that's essentially all I did. 
 
+
 That looks to have been enough.  I have no idea if all the stuff in English is actually *true* any more, of course.  As long as
 
 ```
@@ -2082,7 +2064,6 @@ execute the Sage commands, and this server also provides the necessary
 jsMath fonts.  So there is nothing extra to set up to have typeset 
 mathematics in your web browser when you use the Sage notebook.
 ```
-
 is still true for MathJax you should be fine.
 
 
@@ -2146,7 +2127,7 @@ All tests pass with the new patches.
 archive/issue_comments_095721.json:
 ```json
 {
-    "body": "Replying to [comment:80 kcrisman]:\n> As long as\n> {{{\n> In the \n> case of Sage, the notebook is always connected to a server used to \n> execute the Sage commands, and this server also provides the necessary \n> jsMath fonts.  So there is nothing extra to set up to have typeset \n> mathematics in your web browser when you use the Sage notebook.\n> }}}\n> is still true for MathJax you should be fine.\n\nAs far as I can tell, it still is. If it's not, it's close enough.",
+    "body": "Replying to [comment:80 kcrisman]:\n> As long as\n> \n> ```\n> In the \n> case of Sage, the notebook is always connected to a server used to \n> execute the Sage commands, and this server also provides the necessary \n> jsMath fonts.  So there is nothing extra to set up to have typeset \n> mathematics in your web browser when you use the Sage notebook.\n> ```\n> is still true for MathJax you should be fine.\n\n\nAs far as I can tell, it still is. If it's not, it's close enough.",
     "created_at": "2012-06-13T22:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2157,14 +2138,16 @@ archive/issue_comments_095721.json:
 
 Replying to [comment:80 kcrisman]:
 > As long as
-> {{{
+> 
+> ```
 > In the 
 > case of Sage, the notebook is always connected to a server used to 
 > execute the Sage commands, and this server also provides the necessary 
 > jsMath fonts.  So there is nothing extra to set up to have typeset 
 > mathematics in your web browser when you use the Sage notebook.
-> }}}
+> ```
 > is still true for MathJax you should be fine.
+
 
 As far as I can tell, it still is. If it's not, it's close enough.
 
@@ -2505,7 +2488,7 @@ Can you tell which part is "weird"? Is it the braces around ``\mapsto``? If I re
 archive/issue_comments_095738.json:
 ```json
 {
-    "body": "> Can you tell which part is \"weird\"? Is it the braces around ``\\mapsto``? If I remove those braces, it works with both jsMath and MathJax.\nI wish I could tell you!  I didn't write it.  I was just trying to point this out, in case it was clear to someone else.  If it's not clear what the problem is, maybe we leave the comment in?  Maybe Jason can explain.\n\nAlso, both representations have the braces, and braces are fine for demarcating things in TeX, so I don't think that's the issue.  hg blame says that this dates from before the symbolics switch to Pynac.\n\nAnyway, not a huge deal, but pointing it out.",
+    "body": "> Can you tell which part is \"weird\"? Is it the braces around ``\\mapsto``? If I remove those braces, it works with both jsMath and MathJax.\n\nI wish I could tell you!  I didn't write it.  I was just trying to point this out, in case it was clear to someone else.  If it's not clear what the problem is, maybe we leave the comment in?  Maybe Jason can explain.\n\nAlso, both representations have the braces, and braces are fine for demarcating things in TeX, so I don't think that's the issue.  hg blame says that this dates from before the symbolics switch to Pynac.\n\nAnyway, not a huge deal, but pointing it out.",
     "created_at": "2012-07-05T17:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2515,6 +2498,7 @@ archive/issue_comments_095738.json:
 ```
 
 > Can you tell which part is "weird"? Is it the braces around ``\mapsto``? If I remove those braces, it works with both jsMath and MathJax.
+
 I wish I could tell you!  I didn't write it.  I was just trying to point this out, in case it was clear to someone else.  If it's not clear what the problem is, maybe we leave the comment in?  Maybe Jason can explain.
 
 Also, both representations have the braces, and braces are fine for demarcating things in TeX, so I don't think that's the issue.  hg blame says that this dates from before the symbolics switch to Pynac.
@@ -2600,7 +2584,7 @@ Hmm. There is a failing doctest caused by #11775. Did you attempt to fix doctest
 archive/issue_comments_095743.json:
 ```json
 {
-    "body": "In particular this doctest fails, on Sage 5.2.rc1: \n\n\n```\n[3] fs@boone /opt/sage/devel/sage $ sage -t --long --force_lib sage/misc/latex.py\nsage -t --long --force_lib \"devel/sage-main/sage/misc/latex.py\"\n**********************************************************************\nFile \"/opt/sage-5.2.rc1/devel/sage-main/sage/misc/latex.py\", line 1972:\n    sage: view((x,2), combine_all=True) # trac 11775\nExpected:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\left(x, 2\\right)</script></html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}x 2</script></html>\n**********************************************************************\n1 items had failures:\n   1 of  17 in __main__.example_54\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/fs/.sage//tmp/latex_17232.py\n         [1.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t --long --force_lib \"devel/sage-main/sage/misc/latex.py\"\nTotal time for all tests: 1.3 seconds\n```\n",
+    "body": "In particular this doctest fails, on Sage 5.2.rc1: \n\n```\n[3] fs@boone /opt/sage/devel/sage $ sage -t --long --force_lib sage/misc/latex.py\nsage -t --long --force_lib \"devel/sage-main/sage/misc/latex.py\"\n**********************************************************************\nFile \"/opt/sage-5.2.rc1/devel/sage-main/sage/misc/latex.py\", line 1972:\n    sage: view((x,2), combine_all=True) # trac 11775\nExpected:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}\\left(x, 2\\right)</script></html>\nGot:\n    <html><script type=\"math/tex\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}x 2</script></html>\n**********************************************************************\n1 items had failures:\n   1 of  17 in __main__.example_54\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/fs/.sage//tmp/latex_17232.py\n         [1.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t --long --force_lib \"devel/sage-main/sage/misc/latex.py\"\nTotal time for all tests: 1.3 seconds\n```",
     "created_at": "2012-07-26T11:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2610,7 +2594,6 @@ archive/issue_comments_095743.json:
 ```
 
 In particular this doctest fails, on Sage 5.2.rc1: 
-
 
 ```
 [3] fs@boone /opt/sage/devel/sage $ sage -t --long --force_lib sage/misc/latex.py
@@ -2636,7 +2619,6 @@ The following tests failed:
         sage -t --long --force_lib "devel/sage-main/sage/misc/latex.py"
 Total time for all tests: 1.3 seconds
 ```
-
 
 
 
@@ -2913,7 +2895,7 @@ archive/issue_events_024509.json:
 archive/issue_comments_095756.json:
 ```json
 {
-    "body": "This document does not compile anymore with SageTeX\n\n```\n\\documentclass[12pt,letterpaper]{article}\n\\usepackage[utf8]{inputenc}\n\\usepackage[english]{babel}\n\\usepackage{sagetex}\n\\begin{document}\n$\\sage{\"1 2\"}$\n\\end{document}\n```\n\nbecause someone has replaced a verbatim spacer with a version that does not work, as was explicitly explained in the surrounding comment, and then deleted the comment altogether:\n\n```diff\n--- a/sage/misc/latex.py\n+++ b/sage/misc/latex.py\n@@ -323,11 +323,7 @@\n     # 2) wrap each line into \\verb;\n     # 3) assemble lines into a left-justified array.\n     \n-    # There is a bug in verb-space treatment in jsMath...\n-    spacer = \"\\\\phantom{%s}\"\n-    # \\phantom{\\verb!%s!} is more accurate and it works, but it is not a valid\n-    # LaTeX and may cause problems, so let's live with the above variant until\n-    # spaces are properly treated in jsMath/MathJax and we don't need to worry.\n+    spacer = r\"\\phantom{\\verb!%s!}\"\n     lines = []\n     for line in x.split(\"\\n\"):\n         parts = []\n```\n\nWhat was the motivation for this???",
+    "body": "This document does not compile anymore with SageTeX\n\n```\n\\documentclass[12pt,letterpaper]{article}\n\\usepackage[utf8]{inputenc}\n\\usepackage[english]{babel}\n\\usepackage{sagetex}\n\\begin{document}\n$\\sage{\"1 2\"}$\n\\end{document}\n```\nbecause someone has replaced a verbatim spacer with a version that does not work, as was explicitly explained in the surrounding comment, and then deleted the comment altogether:\n\n```diff\n--- a/sage/misc/latex.py\n+++ b/sage/misc/latex.py\n@@ -323,11 +323,7 @@\n     # 2) wrap each line into \\verb;\n     # 3) assemble lines into a left-justified array.\n     \n-    # There is a bug in verb-space treatment in jsMath...\n-    spacer = \"\\\\phantom{%s}\"\n-    # \\phantom{\\verb!%s!} is more accurate and it works, but it is not a valid\n-    # LaTeX and may cause problems, so let's live with the above variant until\n-    # spaces are properly treated in jsMath/MathJax and we don't need to worry.\n+    spacer = r\"\\phantom{\\verb!%s!}\"\n     lines = []\n     for line in x.split(\"\\n\"):\n         parts = []\n```\nWhat was the motivation for this???",
     "created_at": "2012-09-19T16:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
@@ -2933,7 +2915,6 @@ This document does not compile anymore with SageTeX
 $\sage{"1 2"}$
 \end{document}
 ```
-
 because someone has replaced a verbatim spacer with a version that does not work, as was explicitly explained in the surrounding comment, and then deleted the comment altogether:
 
 ```diff
@@ -2953,7 +2934,6 @@ because someone has replaced a verbatim spacer with a version that does not work
      for line in x.split("\n"):
          parts = []
 ```
-
 What was the motivation for this???
 
 

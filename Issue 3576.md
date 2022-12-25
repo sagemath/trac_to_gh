@@ -3,7 +3,7 @@
 archive/issues_003576.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is sad:\n\n\n```\nsage: RDF(-1).nth_root(2)\n```\n\n\nLook at the dumb code in real_double.pyx:\n\n```\n    def nth_root(self, int n):\n        \"\"\"\n        Returns the $n^{th}$ root of self.\n        EXAMPLES:\n            sage: r = RDF(-125.0); r.nth_root(3)\n            -5.0\n            sage: r.nth_root(5)\n            -2.6265278044\n        \"\"\"\n        if n == 0:\n            return RealDoubleElement(float('nan'))\n        if self._value < 0 and GSL_IS_EVEN(n):\n            pass #return self._complex_double_().pow(1.0/n)\n        else:\n            return RealDoubleElement(self.__nth_root(n))\n```\n\n\nAmazingly this was introduced in the very first patch by Tom Boothby in 2006 and nobody ever noticed!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3576\n\n",
+    "body": "Assignee: somebody\n\nThis is sad:\n\n```\nsage: RDF(-1).nth_root(2)\n```\n\nLook at the dumb code in real_double.pyx:\n\n```\n    def nth_root(self, int n):\n        \"\"\"\n        Returns the $n^{th}$ root of self.\n        EXAMPLES:\n            sage: r = RDF(-125.0); r.nth_root(3)\n            -5.0\n            sage: r.nth_root(5)\n            -2.6265278044\n        \"\"\"\n        if n == 0:\n            return RealDoubleElement(float('nan'))\n        if self._value < 0 and GSL_IS_EVEN(n):\n            pass #return self._complex_double_().pow(1.0/n)\n        else:\n            return RealDoubleElement(self.__nth_root(n))\n```\n\nAmazingly this was introduced in the very first patch by Tom Boothby in 2006 and nobody ever noticed!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3576\n\n",
     "created_at": "2008-07-06T22:22:32Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,11 +21,9 @@ Assignee: somebody
 
 This is sad:
 
-
 ```
 sage: RDF(-1).nth_root(2)
 ```
-
 
 Look at the dumb code in real_double.pyx:
 
@@ -47,7 +45,6 @@ Look at the dumb code in real_double.pyx:
             return RealDoubleElement(self.__nth_root(n))
 ```
 
-
 Amazingly this was introduced in the very first patch by Tom Boothby in 2006 and nobody ever noticed!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/3576
@@ -61,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3576
 archive/issue_comments_025205.json:
 ```json
 {
-    "body": "This is also bad, bad, bad:\n\n```\nsage: RDF(-1).nth_root(5)^(5)\n-1.35861063971\n```\n",
+    "body": "This is also bad, bad, bad:\n\n```\nsage: RDF(-1).nth_root(5)^(5)\n-1.35861063971\n```",
     "created_at": "2008-07-06T23:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_comment",
@@ -76,7 +73,6 @@ This is also bad, bad, bad:
 sage: RDF(-1).nth_root(5)^(5)
 -1.35861063971
 ```
-
 
 
 

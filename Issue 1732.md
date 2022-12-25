@@ -3,7 +3,7 @@
 archive/issues_001732.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n\n```\nIs there a way to construct block matrices in SAGE?\nNot just the \"block_sum\", \"augment\" and \"stack\" functions.\n\nAs an example, let A, B, C, D be matrices and i want to construct a\nmatrix like E=[[A,B],[C,D]]\n\nSuch a feature would be very nice.\n\n-vgermrk-\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1732\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n```\nIs there a way to construct block matrices in SAGE?\nNot just the \"block_sum\", \"augment\" and \"stack\" functions.\n\nAs an example, let A, B, C, D be matrices and i want to construct a\nmatrix like E=[[A,B],[C,D]]\n\nSuch a feature would be very nice.\n\n-vgermrk-\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1732\n\n",
     "created_at": "2008-01-09T08:24:23Z",
     "labels": [
         "component: linear algebra"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 CC:  dfdeshom@gmail.com
 
-
 ```
 Is there a way to construct block matrices in SAGE?
 Not just the "block_sum", "augment" and "stack" functions.
@@ -32,7 +31,6 @@ Such a feature would be very nice.
 -vgermrk-
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1732
 

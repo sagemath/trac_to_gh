@@ -3,7 +3,7 @@
 archive/issues_006949.json:
 ```json
 {
-    "body": "CC:  @jasongrout\n\nMatt Riesler wrote on sage-support:\n\n\n```\nIs it possible to have max behave as you would expect with a symbolic\nexpression, i.e. wait until you evaluate it or restrict the domain  to\ncheck what is the maximum of the two or more values.\n```\n\n\nThen kcrisman:\n\n\n```\nMight there be a way to do something that doesn't conflict with the\nbuiltin max function in the same way as the (nearly reviewed) #3587\nseems to avoid conflict with the builtin sum function?  This would be\npretty useful, as currently:\n\nsage: var('x,y')\n(x, y)\nsage: max(x,y)\nx\nsage: f(x)=1+x;g(x)=2-x\nsage: max(f,g)\nx |--> x + 1\n\nwhich last result is... debatable.\n```\n\n\nHere is a the thread, which has a simple minded implementation for symbolic max:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/aead15de586984d8\n\n\nWe should make sure the symbolic implementations don't slow down the current builtin python `max()` and `min()` too much. If they do, these functions should still be available under a different name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6949\n\n",
+    "body": "CC:  @jasongrout\n\nMatt Riesler wrote on sage-support:\n\n```\nIs it possible to have max behave as you would expect with a symbolic\nexpression, i.e. wait until you evaluate it or restrict the domain  to\ncheck what is the maximum of the two or more values.\n```\n\nThen kcrisman:\n\n```\nMight there be a way to do something that doesn't conflict with the\nbuiltin max function in the same way as the (nearly reviewed) #3587\nseems to avoid conflict with the builtin sum function?  This would be\npretty useful, as currently:\n\nsage: var('x,y')\n(x, y)\nsage: max(x,y)\nx\nsage: f(x)=1+x;g(x)=2-x\nsage: max(f,g)\nx |--> x + 1\n\nwhich last result is... debatable.\n```\n\nHere is a the thread, which has a simple minded implementation for symbolic max:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/aead15de586984d8\n\n\nWe should make sure the symbolic implementations don't slow down the current builtin python `max()` and `min()` too much. If they do, these functions should still be available under a different name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6949\n\n",
     "created_at": "2009-09-17T14:04:24Z",
     "labels": [
         "component: symbolics"
@@ -19,16 +19,13 @@ CC:  @jasongrout
 
 Matt Riesler wrote on sage-support:
 
-
 ```
 Is it possible to have max behave as you would expect with a symbolic
 expression, i.e. wait until you evaluate it or restrict the domain  to
 check what is the maximum of the two or more values.
 ```
 
-
 Then kcrisman:
-
 
 ```
 Might there be a way to do something that doesn't conflict with the
@@ -46,7 +43,6 @@ x |--> x + 1
 
 which last result is... debatable.
 ```
-
 
 Here is a the thread, which has a simple minded implementation for symbolic max:
 
@@ -176,7 +172,7 @@ I updated attachment:trac_6949-symbolic_min_max.patch to fix a minor doctest err
 archive/issue_comments_057353.json:
 ```json
 {
-    "body": "I applied the patch on top of 4.3.5:\n\n```\nsage: f(x) = max_symbolic(sin(x), cos(x))\nsage: f(0)\n1\nsage: f\nx |--> max(sin(x), cos(x))\nsage: f(1)\nmax(sin(1), cos(1))\n```\n\nSo far, so good. But:\n\n```\nsage: N(f(1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.5/<ipython console> in <module>()\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1161             prec = int((digits+1) * 3.32192) + 1\n   1162     try:\n-> 1163         return x.numerical_approx(prec)\n   1164     except AttributeError:\n   1165         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n",
+    "body": "I applied the patch on top of 4.3.5:\n\n```\nsage: f(x) = max_symbolic(sin(x), cos(x))\nsage: f(0)\n1\nsage: f\nx |--> max(sin(x), cos(x))\nsage: f(1)\nmax(sin(1), cos(1))\n```\nSo far, so good. But:\n\n```\nsage: N(f(1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.5/<ipython console> in <module>()\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1161             prec = int((digits+1) * 3.32192) + 1\n   1162     try:\n-> 1163         return x.numerical_approx(prec)\n   1164     except AttributeError:\n   1165         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```",
     "created_at": "2010-04-29T13:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
@@ -196,7 +192,6 @@ x |--> max(sin(x), cos(x))
 sage: f(1)
 max(sin(1), cos(1))
 ```
-
 So far, so good. But:
 
 ```
@@ -217,7 +212,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: cannot evaluate symbolic expression numerically
 ```
-
 
 
 
@@ -304,7 +298,7 @@ Can you take another look?
 archive/issue_comments_057358.json:
 ```json
 {
-    "body": "Thanks for the updated patch. I applied it on top of 4.4. I can verify the previously reported problem for numerical evaluation works. I have however a new problem:\n\n```\nsage: f(x) = max_symbolic(sin(x), cos(x))\nsage: N(integral(f, x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.4/<ipython console> in <module>()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1163             prec = int((digits+1) * 3.32192) + 1\n   1164     try:\n-> 1165         return x.numerical_approx(prec)\n   1166     except AttributeError:\n   1167         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:16928)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._convert (sage/symbolic/expression.cpp:4677)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in _evalf_(self, *args, **kwds)\n    155             TypeError: cannot evaluate symbolic expression numerically\n    156         \"\"\"\n--> 157         return max_symbolic(args)\n    158\n    159 max_symbolic = MaxSymbolic()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in __call__(self, *args, **kwds)\n     79                 return args\n     80\n---> 81         return BuiltinFunction.__call__(self, *args, **kwds)\n     82\n     83 class MaxSymbolic(MinMax_base):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4359)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in _eval_(self, *args)\n    136             ValueError: number of arguments must be > 0\n    137         \"\"\"\n--> 138         return self.eval_helper(max_symbolic, builtin_max, None, args)\n    139\n    140     def _evalf_(self, *args, **kwds):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in eval_helper(self, this_f, builtin_f, initial_val, args)\n     51\n     52         symb_args.append(res)\n---> 53         return this_f(*symb_args)\n     54\n     55     def __call__(self, *args, **kwds):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in __call__(self, *args, **kwds)\n     79                 return args\n     80\n---> 81         return BuiltinFunction.__call__(self, *args, **kwds)\n     82\n     83 class MaxSymbolic(MinMax_base):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4192)()\n\nTypeError: cannot coerce arguments: no canonical coercion from <type 'NoneType'> to Symbolic Ring\n```\n\nI don't know if the problem is with integrate or max_symbolic.",
+    "body": "Thanks for the updated patch. I applied it on top of 4.4. I can verify the previously reported problem for numerical evaluation works. I have however a new problem:\n\n```\nsage: f(x) = max_symbolic(sin(x), cos(x))\nsage: N(integral(f, x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.4/<ipython console> in <module>()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1163             prec = int((digits+1) * 3.32192) + 1\n   1164     try:\n-> 1165         return x.numerical_approx(prec)\n   1166     except AttributeError:\n   1167         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:16928)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._convert (sage/symbolic/expression.cpp:4677)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in _evalf_(self, *args, **kwds)\n    155             TypeError: cannot evaluate symbolic expression numerically\n    156         \"\"\"\n--> 157         return max_symbolic(args)\n    158\n    159 max_symbolic = MaxSymbolic()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in __call__(self, *args, **kwds)\n     79                 return args\n     80\n---> 81         return BuiltinFunction.__call__(self, *args, **kwds)\n     82\n     83 class MaxSymbolic(MinMax_base):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4359)()\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in _eval_(self, *args)\n    136             ValueError: number of arguments must be > 0\n    137         \"\"\"\n--> 138         return self.eval_helper(max_symbolic, builtin_max, None, args)\n    139\n    140     def _evalf_(self, *args, **kwds):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in eval_helper(self, this_f, builtin_f, initial_val, args)\n     51\n     52         symb_args.append(res)\n---> 53         return this_f(*symb_args)\n     54\n     55     def __call__(self, *args, **kwds):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/functions/min_max.pyc in __call__(self, *args, **kwds)\n     79                 return args\n     80\n---> 81         return BuiltinFunction.__call__(self, *args, **kwds)\n     82\n     83 class MaxSymbolic(MinMax_base):\n\n/opt/sage-4.4/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4192)()\n\nTypeError: cannot coerce arguments: no canonical coercion from <type 'NoneType'> to Symbolic Ring\n```\nI don't know if the problem is with integrate or max_symbolic.",
     "created_at": "2010-05-05T07:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
@@ -375,7 +369,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: cannot coerce arguments: no canonical coercion from <type 'NoneType'> to Symbolic Ring
 ```
-
 I don't know if the problem is with integrate or max_symbolic.
 
 

@@ -3,7 +3,7 @@
 archive/issues_006377.json:
 ```json
 {
-    "body": "Keywords: symbolic exp\n\nexponetial function exp(x) is broken at both x=-Infinity\nand x=Infinity\n\n\n```\nsage: exp(-Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\n\n\n\n```\nsage: exp(Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6377\n\n",
+    "body": "Keywords: symbolic exp\n\nexponetial function exp(x) is broken at both x=-Infinity\nand x=Infinity\n\n```\nsage: exp(-Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\n\n```\nsage: exp(Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6377\n\n",
     "created_at": "2009-06-21T17:56:25Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Keywords: symbolic exp
 exponetial function exp(x) is broken at both x=-Infinity
 and x=Infinity
 
-
 ```
 sage: exp(-Infinity)
 ---------------------------------------------------------------------------
@@ -31,8 +30,6 @@ RuntimeError: x*Infinity with non real x encountered.
 ```
 
 
-
-
 ```
 sage: exp(Infinity)
 ---------------------------------------------------------------------------
@@ -40,7 +37,6 @@ RuntimeError                              Traceback (most recent call last)
 ....
 RuntimeError: x*Infinity with non real x encountered.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6377
 
@@ -186,7 +182,7 @@ Please follow the instructions on that ticket to apply & test.
 archive/issue_comments_050937.json:
 ```json
 {
-    "body": "Hi Burcin,\n\nI tested this out. It looks fine to me. \n\nI guess, it would be good if we could follow some standard convention for \nvalues of these functions at their poles, brunch cuts. For example, following \nlooks odd to me\n\n```\nsage: arctan(-Infinity)\n-1/2*pi\nsage: tan(-pi/2)\nInfinity\n```\n\n\nMay be we should discuss this in sage-devel for adopting a convention for\nthese special values.\n\nThere are some other issues that would need future work. For example, you have\nfixed values of log at 0\n\n```\nsage: SR(0).log()\n-Infinity\n```\n\n\nHowever, following still raises error\n\n```\nsage: log(0)\nValueError ...\n```\n\n\nIn any case, this patch fixes lot of issues and should be included.\nThe remaining issues should be fixed later. I am going to give a positive\nreview shortly.",
+    "body": "Hi Burcin,\n\nI tested this out. It looks fine to me. \n\nI guess, it would be good if we could follow some standard convention for \nvalues of these functions at their poles, brunch cuts. For example, following \nlooks odd to me\n\n```\nsage: arctan(-Infinity)\n-1/2*pi\nsage: tan(-pi/2)\nInfinity\n```\n\nMay be we should discuss this in sage-devel for adopting a convention for\nthese special values.\n\nThere are some other issues that would need future work. For example, you have\nfixed values of log at 0\n\n```\nsage: SR(0).log()\n-Infinity\n```\n\nHowever, following still raises error\n\n```\nsage: log(0)\nValueError ...\n```\n\nIn any case, this patch fixes lot of issues and should be included.\nThe remaining issues should be fixed later. I am going to give a positive\nreview shortly.",
     "created_at": "2009-08-02T18:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
@@ -210,7 +206,6 @@ sage: tan(-pi/2)
 Infinity
 ```
 
-
 May be we should discuss this in sage-devel for adopting a convention for
 these special values.
 
@@ -222,14 +217,12 @@ sage: SR(0).log()
 -Infinity
 ```
 
-
 However, following still raises error
 
 ```
 sage: log(0)
 ValueError ...
 ```
-
 
 In any case, this patch fixes lot of issues and should be included.
 The remaining issues should be fixed later. I am going to give a positive

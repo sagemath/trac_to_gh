@@ -3,7 +3,7 @@
 archive/issues_002284.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
     "created_at": "2008-02-24T00:01:19Z",
     "labels": [
         "component: calculus",
@@ -19,14 +19,12 @@ archive/issues_002284.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: f(x,y,z) = 2*x + 3*z^3 - sin(y)
 sage: f._latex_()
 '\\left((x, y, z) \\right)\\ {\\mapsto}\\ {3 {z}^{3} } - \\sin \\left( y
 \\right) + {2 x}'
 ```
-
 (note the extra parens on the left of the arrow)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2284
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2284
 archive/issue_comments_015121.json:
 ```json
 {
-    "body": "Also note that _latex_() does not TeX the variable names on the left:\n\n``` \t\nsage: f(omega) = omega\nsage: f._latex_()\n'omega \\\\ {\\\\mapsto}\\\\ {2 \\\\omega}'\n```\n\n\n'omega' should be '\\\\omega'.",
+    "body": "Also note that _latex_() does not TeX the variable names on the left:\n\n``` \t\nsage: f(omega) = omega\nsage: f._latex_()\n'omega \\\\ {\\\\mapsto}\\\\ {2 \\\\omega}'\n```\n\n'omega' should be '\\\\omega'.",
     "created_at": "2008-02-24T00:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
@@ -56,7 +54,6 @@ sage: f(omega) = omega
 sage: f._latex_()
 'omega \\ {\\mapsto}\\ {2 \\omega}'
 ```
-
 
 'omega' should be '\\omega'.
 

@@ -3,7 +3,7 @@
 archive/issues_008719.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nThis patch makes the following work:\n\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nThis patch makes the following work:\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
     "created_at": "2010-04-20T00:07:17Z",
     "labels": [
         "component: linear algebra"
@@ -20,7 +20,6 @@ Assignee: jason, was
 CC:  @rbeezer
 
 This patch makes the following work:
-
 
 ```
             sage: import numpy
@@ -41,7 +40,6 @@ This patch makes the following work:
             sage: numpy.array(m).dtype            
             dtype('complex128')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8719
 
@@ -170,7 +168,7 @@ I updated the docs.
 archive/issue_comments_079468.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> I updated the docs.\n\nLooks good!  I'll finish this tomorrow night.",
+    "body": "Replying to [comment:7 jason]:\n> I updated the docs.\n\n\nLooks good!  I'll finish this tomorrow night.",
     "created_at": "2010-05-04T06:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
@@ -181,6 +179,7 @@ archive/issue_comments_079468.json:
 
 Replying to [comment:7 jason]:
 > I updated the docs.
+
 
 Looks good!  I'll finish this tomorrow night.
 

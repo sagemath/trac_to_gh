@@ -221,7 +221,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059971.json:
 ```json
 {
-    "body": "After applying the attachment [trac7240_Cunningham_factorization_application.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7240/trac7240_Cunningham_factorization_application.patch), I got the following doctest failures on Sage 4.3.1. In all of these cases, I didn't install the optional Cunningham spkg at #7239\n\n```\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t -long \"devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\", line 1349:\n    sage: b._gap_init_()\nExpected:\n    'Z(65536)^1'\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    'Z(65536)^1'\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_element.py\nsage -t -long \"devel/sage-main/sage/rings/finite_field_element.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_element.py\", line 375:\n    sage: a.multiplicative_order()\nExpected:\n    124\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    124\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ext_pari.py\nsage -t -long \"devel/sage-main/sage/rings/finite_field_ext_pari.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ext_pari.py\", line 103:\n    sage: z.multiplicative_order()\nExpected:\n    15\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    15\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long \"devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\", line 2860:\n    sage: f.is_irreducible(), f.is_primitive()\nExpected:\n    (True, False)\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    (True, False)\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/groups/generic.py\nsage -t -long \"devel/sage-main/sage/groups/generic.py\"      \n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/groups/generic.py\", line 774:\n    sage: discrete_log(u,g)\nExpected:\n    123456789\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    123456789\n```\n",
+    "body": "After applying the attachment [trac7240_Cunningham_factorization_application.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7240/trac7240_Cunningham_factorization_application.patch), I got the following doctest failures on Sage 4.3.1. In all of these cases, I didn't install the optional Cunningham spkg at #7239\n\n```\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t -long \"devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\", line 1349:\n    sage: b._gap_init_()\nExpected:\n    'Z(65536)^1'\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    'Z(65536)^1'\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_element.py\nsage -t -long \"devel/sage-main/sage/rings/finite_field_element.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_element.py\", line 375:\n    sage: a.multiplicative_order()\nExpected:\n    124\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    124\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ext_pari.py\nsage -t -long \"devel/sage-main/sage/rings/finite_field_ext_pari.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ext_pari.py\", line 103:\n    sage: z.multiplicative_order()\nExpected:\n    15\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    15\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long \"devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\", line 2860:\n    sage: f.is_irreducible(), f.is_primitive()\nExpected:\n    (True, False)\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    (True, False)\n\n[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/groups/generic.py\nsage -t -long \"devel/sage-main/sage/groups/generic.py\"      \n**********************************************************************\nFile \"/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/groups/generic.py\", line 774:\n    sage: discrete_log(u,g)\nExpected:\n    123456789\nGot:\n    doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``\n    123456789\n```",
     "created_at": "2010-01-22T17:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -291,7 +291,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_059972.json:
@@ -315,7 +314,7 @@ I think my positive review was dependent on the vote we had (yes we did!) to inc
 archive/issue_comments_059973.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional\n\nThank you for the clarification, John. The merging of this ticket can wait until:\n\n1. the (currently optional) Cunningham package becomes a standard spkg; or\n2. there is some code to test whether that spkg is installed.",
+    "body": "Replying to [comment:11 cremona]:\n> I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional\n\n\nThank you for the clarification, John. The merging of this ticket can wait until:\n\n1. the (currently optional) Cunningham package becomes a standard spkg; or\n2. there is some code to test whether that spkg is installed.",
     "created_at": "2010-01-22T18:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -326,6 +325,7 @@ archive/issue_comments_059973.json:
 
 Replying to [comment:11 cremona]:
 > I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional
+
 
 Thank you for the clarification, John. The merging of this ticket can wait until:
 
@@ -409,7 +409,7 @@ I could probably manage to port this to some SAGE functions in Python.  Once thi
 archive/issue_comments_059977.json:
 ```json
 {
-    "body": "Replying to [comment:14 jdemeyer]:\n> Dear everyone,\n> \n> I would like to add a few comments here.  If I understand things correctly, the Cunningham database in SAGE is now just a list of numbers without structure, right?\n\nYes right, this was just a quick and dirty solution to my problems.\n\n> I have written myself a PARI/GP-2.4 script (snip)\n> I could probably manage to port this to some SAGE functions in Python. (snip)\n\nThis would be great if you port your work to SAGE. My first thought was to include your script but currently SAGE is still shipping pari 2.3.3.\n\nYann",
+    "body": "Replying to [comment:14 jdemeyer]:\n> Dear everyone,\n> \n> I would like to add a few comments here.  If I understand things correctly, the Cunningham database in SAGE is now just a list of numbers without structure, right?\n\n\nYes right, this was just a quick and dirty solution to my problems.\n\n> I have written myself a PARI/GP-2.4 script (snip)\n> I could probably manage to port this to some SAGE functions in Python. (snip)\n\n\nThis would be great if you port your work to SAGE. My first thought was to include your script but currently SAGE is still shipping pari 2.3.3.\n\nYann",
     "created_at": "2010-02-11T17:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -423,10 +423,12 @@ Replying to [comment:14 jdemeyer]:
 > 
 > I would like to add a few comments here.  If I understand things correctly, the Cunningham database in SAGE is now just a list of numbers without structure, right?
 
+
 Yes right, this was just a quick and dirty solution to my problems.
 
 > I have written myself a PARI/GP-2.4 script (snip)
 > I could probably manage to port this to some SAGE functions in Python. (snip)
+
 
 This would be great if you port your work to SAGE. My first thought was to include your script but currently SAGE is still shipping pari 2.3.3.
 
@@ -990,7 +992,7 @@ Changing assignee from @roed314 to @rwst.
 archive/issue_comments_060004.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional -- it is very small and requires no building.  The spkg is attached to (sorry, linked to) the ticket #7239.  I'm sure I assumed that when that ticket was closed, the right thing would happen to its spkg!\n>  \nIt was voted that the new cunningham package would become standard.",
+    "body": "Replying to [comment:11 cremona]:\n> I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional -- it is very small and requires no building.  The spkg is attached to (sorry, linked to) the ticket #7239.  I'm sure I assumed that when that ticket was closed, the right thing would happen to its spkg!\n>  \n\nIt was voted that the new cunningham package would become standard.",
     "created_at": "2014-02-13T13:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -1002,6 +1004,7 @@ archive/issue_comments_060004.json:
 Replying to [comment:11 cremona]:
 > I think my positive review was dependent on the vote we had (yes we did!) to include the spkg as standard rather then optional -- it is very small and requires no building.  The spkg is attached to (sorry, linked to) the ticket #7239.  I'm sure I assumed that when that ticket was closed, the right thing would happen to its spkg!
 >  
+
 It was voted that the new cunningham package would become standard.
 
 
@@ -1029,7 +1032,7 @@ archive/issue_comments_060005.json:
 archive/issue_comments_060006.json:
 ```json
 {
-    "body": "Replying to [comment:43 jpflori]:\n> (And note that the data provided should surely be updated.)\n\nBut don't use $SAGE_DATA anymore, use $SAGE_SHARE or $SAGE_ROOT/share, see #15814",
+    "body": "Replying to [comment:43 jpflori]:\n> (And note that the data provided should surely be updated.)\n\n\nBut don't use $SAGE_DATA anymore, use $SAGE_SHARE or $SAGE_ROOT/share, see #15814",
     "created_at": "2014-02-14T08:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -1041,6 +1044,7 @@ archive/issue_comments_060006.json:
 Replying to [comment:43 jpflori]:
 > (And note that the data provided should surely be updated.)
 
+
 But don't use $SAGE_DATA anymore, use $SAGE_SHARE or $SAGE_ROOT/share, see #15814
 
 
@@ -1050,7 +1054,7 @@ But don't use $SAGE_DATA anymore, use $SAGE_SHARE or $SAGE_ROOT/share, see #1581
 archive/issue_comments_060007.json:
 ```json
 {
-    "body": "Separated from the SPKG install (#15813) and rebased on 6.2.base2.\n----\nNew commits:",
+    "body": "Separated from the SPKG install (#15813) and rebased on 6.2.base2.\n\n---\nNew commits:",
     "created_at": "2014-02-20T14:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -1060,7 +1064,8 @@ archive/issue_comments_060007.json:
 ```
 
 Separated from the SPKG install (#15813) and rebased on 6.2.base2.
-----
+
+---
 New commits:
 
 
@@ -1142,7 +1147,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060012.json:
 ```json
 {
-    "body": "Rebase on 6.2.beta6. Fix failing doctests.\n----\nNew commits:",
+    "body": "Rebase on 6.2.beta6. Fix failing doctests.\n\n---\nNew commits:",
     "created_at": "2014-04-04T16:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7240",
     "type": "issue_comment",
@@ -1152,7 +1157,8 @@ archive/issue_comments_060012.json:
 ```
 
 Rebase on 6.2.beta6. Fix failing doctests.
-----
+
+---
 New commits:
 
 

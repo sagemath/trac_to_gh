@@ -3,7 +3,7 @@
 archive/issues_007589.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  vripoll stumpc5 @tscrim\n\nThis should work automagically:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = CyclotomicField(3).random_element()\nsage: b = CyclotomicField(4).random_element()\nsage: a + b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:6989)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\nsage: a * b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10248)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\n```\n\n\nI think it's a coercion problem.  If someone knows better, please change the trac component accordingly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7589\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  vripoll stumpc5 @tscrim\n\nThis should work automagically:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = CyclotomicField(3).random_element()\nsage: b = CyclotomicField(4).random_element()\nsage: a + b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:6989)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\nsage: a * b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10248)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\n```\n\nI think it's a coercion problem.  If someone knows better, please change the trac component accordingly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7589\n\n",
     "created_at": "2009-12-03T09:45:31Z",
     "labels": [
         "component: coercion",
@@ -21,7 +21,6 @@ Assignee: @robertwb
 CC:  vripoll stumpc5 @tscrim
 
 This should work automagically:
-
 
 ```
 ----------------------------------------------------------------------
@@ -52,7 +51,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'
 ```
-
 
 I think it's a coercion problem.  If someone knows better, please change the trac component accordingly.
 
@@ -119,7 +117,7 @@ archive/issue_events_018008.json:
 archive/issue_comments_064580.json:
 ```json
 {
-    "body": "Has anyone looked at this ticket? I ran into this today and discover that the issue has been reported 4 years ago... This bug is particularly confusing for the user, especially when you read the doc that says \"Due to their default embedding into CC, cyclotomic number fields are all compatible\", and goes on to show the following example:\n\n```\n      sage: cf30 = CyclotomicField(30)\n      sage: cf5 = CyclotomicField(5)\n      sage: cf3 = CyclotomicField(3)\n      sage: cf30.gen() + cf5.gen() + cf3.gen()\n      zeta30^6 + zeta30^5 + zeta30 - 1\n```\n\nIt turns out Sage is able to compute that only because the first field contains the next two! Note the following test:\n\n```\n      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n      \u2502 Sage Version 6.2.beta7, Release Date: 2014-04-08                   \u2502\n      \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n      \u2502 Type \"help()\" for help.                                            \u2502\n      \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n      sage: cf15=CyclotomicField(15)\n      sage: cf5=CyclotomicField(5)\n      sage: cf3=CyclotomicField(3)\n      \n      sage: cf15.gen()+cf5.gen()+cf3.gen()\n      zeta15^5 + zeta15^3 + zeta15\n      \n      sage: cf5.gen()+cf3.gen()+cf15.gen()\n      Traceback (most recent call last)\n      ...\n      TypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 5 and degree 4'   and 'Cyclotomic Field of order 3 and degree 2'\n      \n      sage: cf5.gen()+cf3.gen()\n      Traceback (most recent call last)\n      ...\n      TypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 5 and degree 4' and 'Cyclotomic Field of order 3 and degree 2'\n      \n      sage: 0*cf15.gen()+cf5.gen()+cf3.gen()\n      zeta15^5 + zeta15^3\n```\n",
+    "body": "Has anyone looked at this ticket? I ran into this today and discover that the issue has been reported 4 years ago... This bug is particularly confusing for the user, especially when you read the doc that says \"Due to their default embedding into CC, cyclotomic number fields are all compatible\", and goes on to show the following example:\n\n```\n      sage: cf30 = CyclotomicField(30)\n      sage: cf5 = CyclotomicField(5)\n      sage: cf3 = CyclotomicField(3)\n      sage: cf30.gen() + cf5.gen() + cf3.gen()\n      zeta30^6 + zeta30^5 + zeta30 - 1\n```\nIt turns out Sage is able to compute that only because the first field contains the next two! Note the following test:\n\n```\n      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n      \u2502 Sage Version 6.2.beta7, Release Date: 2014-04-08                   \u2502\n      \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n      \u2502 Type \"help()\" for help.                                            \u2502\n      \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n      sage: cf15=CyclotomicField(15)\n      sage: cf5=CyclotomicField(5)\n      sage: cf3=CyclotomicField(3)\n      \n      sage: cf15.gen()+cf5.gen()+cf3.gen()\n      zeta15^5 + zeta15^3 + zeta15\n      \n      sage: cf5.gen()+cf3.gen()+cf15.gen()\n      Traceback (most recent call last)\n      ...\n      TypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 5 and degree 4'   and 'Cyclotomic Field of order 3 and degree 2'\n      \n      sage: cf5.gen()+cf3.gen()\n      Traceback (most recent call last)\n      ...\n      TypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 5 and degree 4' and 'Cyclotomic Field of order 3 and degree 2'\n      \n      sage: 0*cf15.gen()+cf5.gen()+cf3.gen()\n      zeta15^5 + zeta15^3\n```",
     "created_at": "2014-04-11T00:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
@@ -137,7 +135,6 @@ Has anyone looked at this ticket? I ran into this today and discover that the is
       sage: cf30.gen() + cf5.gen() + cf3.gen()
       zeta30^6 + zeta30^5 + zeta30 - 1
 ```
-
 It turns out Sage is able to compute that only because the first field contains the next two! Note the following test:
 
 ```
@@ -166,7 +163,6 @@ It turns out Sage is able to compute that only because the first field contains 
       sage: 0*cf15.gen()+cf5.gen()+cf3.gen()
       zeta15^5 + zeta15^3
 ```
-
 
 
 
@@ -331,7 +327,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064584.json:
 ```json
 {
-    "body": "first tentative, let us see what patchbot says\n----\nNew commits:",
+    "body": "first tentative, let us see what patchbot says\n\n---\nNew commits:",
     "created_at": "2018-04-30T16:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
@@ -341,7 +337,8 @@ archive/issue_comments_064584.json:
 ```
 
 first tentative, let us see what patchbot says
-----
+
+---
 New commits:
 
 
@@ -439,7 +436,7 @@ Well. What we just add here is the information that we need to go through CF(lcm
 archive/issue_comments_064588.json:
 ```json
 {
-    "body": "As Frederic said, this does not change the (canonical) coercions between cyclotomic fields but allows the analogous computation to\n\n```\nsage: R.<x,y> = ZZ[]\nsage: S.<y> = QQ[]\nsage: R.an_element() + S.an_element()\nx + y\nsage: _.parent()\nMultivariate Polynomial Ring in x, y over Rational Field\n```\n",
+    "body": "As Frederic said, this does not change the (canonical) coercions between cyclotomic fields but allows the analogous computation to\n\n```\nsage: R.<x,y> = ZZ[]\nsage: S.<y> = QQ[]\nsage: R.an_element() + S.an_element()\nx + y\nsage: _.parent()\nMultivariate Polynomial Ring in x, y over Rational Field\n```",
     "created_at": "2018-04-30T23:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
@@ -458,7 +455,6 @@ x + y
 sage: _.parent()
 Multivariate Polynomial Ring in x, y over Rational Field
 ```
-
 
 
 

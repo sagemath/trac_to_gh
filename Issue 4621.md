@@ -3,7 +3,7 @@
 archive/issues_004621.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\n\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\n\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
     "created_at": "2008-11-26T11:26:25Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ Keywords: canonical embedding subfield
 
 Reported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903
 
-
 ```
 sage: F.<a>= NumberField(x^2-2)
 sage: a^2
@@ -36,14 +35,12 @@ False
 sage: 2 in QQbar
 True 
 ```
-
 or more directly
 
 ```
 sage: F(2) in QQbar
 False
 ```
-
 
 Perhaps related to this is
 
@@ -54,7 +51,6 @@ True
 sage: F.is_subring(QQbar)
 False 
 ```
-
 
 Robert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.
 
@@ -72,14 +68,12 @@ Then, in the original example, we probably have
 sage: F.max_subfield_coercing_into(QQbar)
 Rational Field
 ```
-
 and then `x in QQbar` would answer True, since 
 
 ```
 sage: x in F_1.max_subfield_coercing_into(QQbar)
 True
 ```
-
 
 Sorry if that idea is not realistic.
 
@@ -132,7 +126,7 @@ Changing status from new to needs_review.
 archive/issue_comments_034674.json:
 ```json
 {
-    "body": "A side effect of this patch is the following because it now tries to explicitly convert its argument to QQ. Is that desirable?\n\n\n```\nsage: GF(7)(2) in QQbar\nTrue\n```\n\n\n(Related 'in's:\n\n```\nsage: GF(7)(2) in ZZ\nTrue\nsage: GF(7)(2) in QQ\nFalse\nsage: GF(7)(2) in QQbar\nTrue\n```\n\n)",
+    "body": "A side effect of this patch is the following because it now tries to explicitly convert its argument to QQ. Is that desirable?\n\n```\nsage: GF(7)(2) in QQbar\nTrue\n```\n\n(Related 'in's:\n\n```\nsage: GF(7)(2) in ZZ\nTrue\nsage: GF(7)(2) in QQ\nFalse\nsage: GF(7)(2) in QQbar\nTrue\n```\n)",
     "created_at": "2010-01-17T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -143,12 +137,10 @@ archive/issue_comments_034674.json:
 
 A side effect of this patch is the following because it now tries to explicitly convert its argument to QQ. Is that desirable?
 
-
 ```
 sage: GF(7)(2) in QQbar
 True
 ```
-
 
 (Related 'in's:
 
@@ -160,7 +152,6 @@ False
 sage: GF(7)(2) in QQbar
 True
 ```
-
 )
 
 
@@ -188,7 +179,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_034676.json:
 ```json
 {
-    "body": "This exposes a separate but that == for QQbar is not symetric...\n\n\n```\nsage: GF(7)(2) == QQbar(2)\nFalse\nsage: QQbar(2) == GF(7)(2)\nTrue # after the patch, BOOM before, should be False\n```\n",
+    "body": "This exposes a separate but that == for QQbar is not symetric...\n\n```\nsage: GF(7)(2) == QQbar(2)\nFalse\nsage: QQbar(2) == GF(7)(2)\nTrue # after the patch, BOOM before, should be False\n```",
     "created_at": "2010-01-18T19:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -199,14 +190,12 @@ archive/issue_comments_034676.json:
 
 This exposes a separate but that == for QQbar is not symetric...
 
-
 ```
 sage: GF(7)(2) == QQbar(2)
 False
 sage: QQbar(2) == GF(7)(2)
 True # after the patch, BOOM before, should be False
 ```
-
 
 
 
@@ -424,7 +413,7 @@ archive/issue_events_010524.json:
 archive/issue_comments_034682.json:
 ```json
 {
-    "body": "The reason why this fails is\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: two = F(2)\nsage: QQbar(two)\nTraceback (most recent call last):\n...\nTypeError: Illegal initializer for algebraic number\n```\n\nOne way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\nVincent",
+    "body": "The reason why this fails is\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: two = F(2)\nsage: QQbar(two)\nTraceback (most recent call last):\n...\nTypeError: Illegal initializer for algebraic number\n```\nOne way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\nVincent",
     "created_at": "2015-04-08T22:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -443,7 +432,6 @@ Traceback (most recent call last):
 ...
 TypeError: Illegal initializer for algebraic number
 ```
-
 One way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.
 
 Vincent
@@ -455,7 +443,7 @@ Vincent
 archive/issue_comments_034683.json:
 ```json
 {
-    "body": "Replying to [comment:12 vdelecroix]:\n> The reason why this fails is\n> {{{\n> sage: F.<a>= NumberField(x^2-2)\n> sage: two = F(2)\n> sage: QQbar(two)\n> Traceback (most recent call last):\n> ...\n> TypeError: Illegal initializer for algebraic number\n> }}}\n> One way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\nthe above is fixed in #14485 and #20400 but it does not solve the containment test!",
+    "body": "Replying to [comment:12 vdelecroix]:\n> The reason why this fails is\n> \n> ```\n> sage: F.<a>= NumberField(x^2-2)\n> sage: two = F(2)\n> sage: QQbar(two)\n> Traceback (most recent call last):\n> ...\n> TypeError: Illegal initializer for algebraic number\n> ```\n> One way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\n\nthe above is fixed in #14485 and #20400 but it does not solve the containment test!",
     "created_at": "2016-04-27T22:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -466,15 +454,17 @@ archive/issue_comments_034683.json:
 
 Replying to [comment:12 vdelecroix]:
 > The reason why this fails is
-> {{{
+> 
+> ```
 > sage: F.<a>= NumberField(x^2-2)
 > sage: two = F(2)
 > sage: QQbar(two)
 > Traceback (most recent call last):
 > ...
 > TypeError: Illegal initializer for algebraic number
-> }}}
+> ```
 > One way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.
+
 
 the above is fixed in #14485 and #20400 but it does not solve the containment test!
 
@@ -553,7 +543,7 @@ archive/issue_events_010528.json:
 archive/issue_comments_034684.json:
 ```json
 {
-    "body": "To put it another way.\n\nIn Sage 9.3.rc0:\n\n```\nsage: root2 = QuadraticField(2).gen()\nsage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n(False, False)\n```\n",
+    "body": "To put it another way.\n\nIn Sage 9.3.rc0:\n\n```\nsage: root2 = QuadraticField(2).gen()\nsage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n(False, False)\n```",
     "created_at": "2021-03-27T16:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -574,13 +564,12 @@ sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)
 
 
 
-
 ---
 
 archive/issue_comments_034685.json:
 ```json
 {
-    "body": "Replying to [comment:16 slelievre]:\n> To put it another way.\n> \n> In Sage 9.3.rc0:\n> {{{\n> sage: root2 = QuadraticField(2).gen()\n> sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n> (False, False)\n> }}}\n\nThe embedding is not set by writing only `QuadraticField(2)` (see also [#30518 comment:10](https://trac.sagemath.org/ticket/30518#comment:10)). You can compare with\n\n```\nsage: root2 = QuadraticField(2, embedding=AA(2).sqrt()).gen()\nsage: root2 in QQbar, root2^2 in QQbar\n(True, True)\n```\n\nThough the following is definitely annoying\n\n```\nsage: QuadraticField(2).one() in QQbar  # would better be true\nFalse\n```\n",
+    "body": "Replying to [comment:16 slelievre]:\n> To put it another way.\n> \n> In Sage 9.3.rc0:\n> \n> ```\n> sage: root2 = QuadraticField(2).gen()\n> sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n> (False, False)\n> ```\n\n\nThe embedding is not set by writing only `QuadraticField(2)` (see also [#30518 comment:10](https://trac.sagemath.org/ticket/30518#comment:10)). You can compare with\n\n```\nsage: root2 = QuadraticField(2, embedding=AA(2).sqrt()).gen()\nsage: root2 in QQbar, root2^2 in QQbar\n(True, True)\n```\nThough the following is definitely annoying\n\n```\nsage: QuadraticField(2).one() in QQbar  # would better be true\nFalse\n```",
     "created_at": "2021-03-27T16:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -593,11 +582,13 @@ Replying to [comment:16 slelievre]:
 > To put it another way.
 > 
 > In Sage 9.3.rc0:
-> {{{
+> 
+> ```
 > sage: root2 = QuadraticField(2).gen()
 > sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)
 > (False, False)
-> }}}
+> ```
+
 
 The embedding is not set by writing only `QuadraticField(2)` (see also [#30518 comment:10](https://trac.sagemath.org/ticket/30518#comment:10)). You can compare with
 
@@ -606,7 +597,6 @@ sage: root2 = QuadraticField(2, embedding=AA(2).sqrt()).gen()
 sage: root2 in QQbar, root2^2 in QQbar
 (True, True)
 ```
-
 Though the following is definitely annoying
 
 ```
@@ -616,13 +606,12 @@ False
 
 
 
-
 ---
 
 archive/issue_comments_034686.json:
 ```json
 {
-    "body": "Note that it will quickly become annoying with extensions\n\n```\nsage: K.<a> = QuadraticField(2, embedding=AA(2).sqrt())\nsage: x = polygen(ZZ)\nsage: L.<b> = K.extension(x**3 - x**2 - x - 1) \n```\n\n\n- Do you expect `QQbar(L(a))` to work?\n- What should be the result of `L(a) in QQbar`?",
+    "body": "Note that it will quickly become annoying with extensions\n\n```\nsage: K.<a> = QuadraticField(2, embedding=AA(2).sqrt())\nsage: x = polygen(ZZ)\nsage: L.<b> = K.extension(x**3 - x**2 - x - 1) \n```\n\n- Do you expect `QQbar(L(a))` to work?\n- What should be the result of `L(a) in QQbar`?",
     "created_at": "2021-03-27T16:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -639,7 +628,6 @@ sage: x = polygen(ZZ)
 sage: L.<b> = K.extension(x**3 - x**2 - x - 1) 
 ```
 
-
 - Do you expect `QQbar(L(a))` to work?
 - What should be the result of `L(a) in QQbar`?
 
@@ -650,7 +638,7 @@ sage: L.<b> = K.extension(x**3 - x**2 - x - 1)
 archive/issue_comments_034687.json:
 ```json
 {
-    "body": "Note also that `1 == 1` does not hold in the following situation\n\n```\nsage: QuadraticField(2).one() == QuadraticField(3).one()\nTrue\n```\n\nAgain, with properly set embeddings it compares as a user might expect\n\n```\nsage: K2 = QuadraticField(2, embedding=AA(2).sqrt())\nsage: K3 = QuadraticField(3, embedding=AA(3).sqrt())\nsage: K2.one() == K3.one()\nTrue\n```\n",
+    "body": "Note also that `1 == 1` does not hold in the following situation\n\n```\nsage: QuadraticField(2).one() == QuadraticField(3).one()\nTrue\n```\nAgain, with properly set embeddings it compares as a user might expect\n\n```\nsage: K2 = QuadraticField(2, embedding=AA(2).sqrt())\nsage: K3 = QuadraticField(3, embedding=AA(3).sqrt())\nsage: K2.one() == K3.one()\nTrue\n```",
     "created_at": "2021-03-27T17:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
@@ -665,7 +653,6 @@ Note also that `1 == 1` does not hold in the following situation
 sage: QuadraticField(2).one() == QuadraticField(3).one()
 True
 ```
-
 Again, with properly set embeddings it compares as a user might expect
 
 ```
@@ -674,7 +661,6 @@ sage: K3 = QuadraticField(3, embedding=AA(3).sqrt())
 sage: K2.one() == K3.one()
 True
 ```
-
 
 
 

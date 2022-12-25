@@ -70,7 +70,7 @@ Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.pat
 archive/issue_comments_020981.json:
 ```json
 {
-    "body": "Is this based on 3.0? I got:\n\n\n```\n\napplying /Users/wdj/sagefiles/9607.patch\nabort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crystals/crystals.py for patching\n```\n",
+    "body": "Is this based on 3.0? I got:\n\n```\n\napplying /Users/wdj/sagefiles/9607.patch\nabort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crystals/crystals.py for patching\n```",
     "created_at": "2008-04-29T00:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -81,13 +81,11 @@ archive/issue_comments_020981.json:
 
 Is this based on 3.0? I got:
 
-
 ```
 
 applying /Users/wdj/sagefiles/9607.patch
 abort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crystals/crystals.py for patching
 ```
-
 
 
 
@@ -113,7 +111,7 @@ archive/issue_events_006914.json:
 archive/issue_comments_020982.json:
 ```json
 {
-    "body": "Things work perfectly to me:\n\n```\nsage$ patch -p1 --dry-run < 9607.patch\\?format\\=raw\npatching file sage/combinat/crystals/crystals.py\npatching file sage/combinat/root_system/all.py\npatching file sage/combinat/root_system/cartan_type.py\npatching file sage/combinat/root_system/weyl_characters.py\n```\n\nThis is against 3.0.1.alpha1.\n\nCheers,\n\nMichael",
+    "body": "Things work perfectly to me:\n\n```\nsage$ patch -p1 --dry-run < 9607.patch\\?format\\=raw\npatching file sage/combinat/crystals/crystals.py\npatching file sage/combinat/root_system/all.py\npatching file sage/combinat/root_system/cartan_type.py\npatching file sage/combinat/root_system/weyl_characters.py\n```\nThis is against 3.0.1.alpha1.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-29T00:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -131,7 +129,6 @@ patching file sage/combinat/root_system/all.py
 patching file sage/combinat/root_system/cartan_type.py
 patching file sage/combinat/root_system/weyl_characters.py
 ```
-
 This is against 3.0.1.alpha1.
 
 Cheers,
@@ -183,7 +180,7 @@ Thanks. It's working now. I'm running sage -testall now but want to point out th
 archive/issue_comments_020985.json:
 ```json
 {
-    "body": "Applies cleanly to a 3.0 base and passes sage -testall on an ubuntu 7.10amd64 machine. (It did not apply cleanly on a macbook but possibly I made a mistake somewhere.) \n\n(1) This character theory stuff is a *great* contribution and I think that SAGE is lucky to have someone of Dan's abilities contributing code like this. However, I have some unfavorable comments.\n\n(2) There is this capitalization issue. I think capitalizing the functions IrreducibleCharacterFreudenthal and Branch is confusing. (There may be other examples I am missing as well.) Classes are capitalized, not functions. Possibly you could drop \n\n```\nirreducible_character_freudenthal = IrreducibleCharacterFreudenthal\nbranch = Branch\n```\n\nat the bottom of the file but even that I think is not enough. \n\n(3) Actually, I think branch is too generic to use and would prefer something like branch_character or something. (Who knows, maybe someone will write a Tableau class for characters of the symmetric group and friends and wants to use it in their module too. Who wins?)\n\n(4) I think the documentation is great on one hand and lacking references on the other. I really hope the author will consider adding somewhere a REFERENCES: section to his docstrings (possibly to books or papers of his own) and specific (I mean page or Theorem or Definition numbers) citations thoughout his code. That way people will learn from it and be able to maintain it better, since with proper citations everyone will be one the same page.\n \nI realize these are a little excessive and am happy to be over-ruled. But I don't yet give this a positive review.",
+    "body": "Applies cleanly to a 3.0 base and passes sage -testall on an ubuntu 7.10amd64 machine. (It did not apply cleanly on a macbook but possibly I made a mistake somewhere.) \n\n(1) This character theory stuff is a *great* contribution and I think that SAGE is lucky to have someone of Dan's abilities contributing code like this. However, I have some unfavorable comments.\n\n(2) There is this capitalization issue. I think capitalizing the functions IrreducibleCharacterFreudenthal and Branch is confusing. (There may be other examples I am missing as well.) Classes are capitalized, not functions. Possibly you could drop \n\n```\nirreducible_character_freudenthal = IrreducibleCharacterFreudenthal\nbranch = Branch\n```\nat the bottom of the file but even that I think is not enough. \n\n(3) Actually, I think branch is too generic to use and would prefer something like branch_character or something. (Who knows, maybe someone will write a Tableau class for characters of the symmetric group and friends and wants to use it in their module too. Who wins?)\n\n(4) I think the documentation is great on one hand and lacking references on the other. I really hope the author will consider adding somewhere a REFERENCES: section to his docstrings (possibly to books or papers of his own) and specific (I mean page or Theorem or Definition numbers) citations thoughout his code. That way people will learn from it and be able to maintain it better, since with proper citations everyone will be one the same page.\n \nI realize these are a little excessive and am happy to be over-ruled. But I don't yet give this a positive review.",
     "created_at": "2008-04-29T11:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -202,7 +199,6 @@ Applies cleanly to a 3.0 base and passes sage -testall on an ubuntu 7.10amd64 ma
 irreducible_character_freudenthal = IrreducibleCharacterFreudenthal
 branch = Branch
 ```
-
 at the bottom of the file but even that I think is not enough. 
 
 (3) Actually, I think branch is too generic to use and would prefer something like branch_character or something. (Who knows, maybe someone will write a Tableau class for characters of the symmetric group and friends and wants to use it in their module too. Who wins?)
@@ -557,7 +553,7 @@ Don't worry about that. If you want to make a new unified patch, do so and let m
 archive/issue_comments_021002.json:
 ```json
 {
-    "body": "Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by @dwbump created at 2008-05-08 14:41:24\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
+    "body": "Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by @dwbump created at 2008-05-08 14:41:24\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
     "created_at": "2008-05-08T14:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -569,6 +565,7 @@ archive/issue_comments_021002.json:
 Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by @dwbump created at 2008-05-08 14:41:24
 
 > Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.
+
 
 Thanks.
 
@@ -582,7 +579,7 @@ crystals.py. This goes on top of 3051-1.unified.
 archive/issue_comments_021003.json:
 ```json
 {
-    "body": "This patch 3051-1, applied on top of the 3051-unified patch, applies cleanly to 3.0.1. sage -testall \nfailed on one module but then testing that module separately passes. \n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nTotal time for all tests: 5283.6 seconds\nPlease see /home/wdj/wdj/sagefiles/sage-3.0.1/tmp/test.log for the complete log from this test.\nwdj@wooster:~/wdj/sagefiles/sage-3.0.1$ ./sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nsage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\n         [4.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.8 seconds\n```\n\nI'm guessing that this failure is spurious. (It was done on an older machine, which has had\nlots of such failures before.) I'll keep looking at this patch, but wanted to report this issue ASAP.",
+    "body": "This patch 3051-1, applied on top of the 3051-unified patch, applies cleanly to 3.0.1. sage -testall \nfailed on one module but then testing that module separately passes. \n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nTotal time for all tests: 5283.6 seconds\nPlease see /home/wdj/wdj/sagefiles/sage-3.0.1/tmp/test.log for the complete log from this test.\nwdj@wooster:~/wdj/sagefiles/sage-3.0.1$ ./sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nsage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\n         [4.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.8 seconds\n```\nI'm guessing that this failure is spurious. (It was done on an older machine, which has had\nlots of such failures before.) I'll keep looking at this patch, but wanted to report this issue ASAP.",
     "created_at": "2008-05-08T17:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -593,7 +590,6 @@ archive/issue_comments_021003.json:
 
 This patch 3051-1, applied on top of the 3051-unified patch, applies cleanly to 3.0.1. sage -testall 
 failed on one module but then testing that module separately passes. 
-
 
 ```
 ----------------------------------------------------------------------
@@ -611,7 +607,6 @@ sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx
 All tests passed!
 Total time for all tests: 4.8 seconds
 ```
-
 I'm guessing that this failure is spurious. (It was done on an older machine, which has had
 lots of such failures before.) I'll keep looking at this patch, but wanted to report this issue ASAP.
 
@@ -648,7 +643,7 @@ So, modulo (1) above, I give this a positive review, but would like to hear what
 archive/issue_comments_021005.json:
 ```json
 {
-    "body": "> 1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming \"standard\". Better would be WeightRingElement? (or WeightAlgebraElement??).\n\nI agree and will change it to WeightRingElement.\n\n> 2. Perhaps this is a very minor point since this appears common with lots of other modules, but I think that legally when you simply license code under the GPL, the default is the latest version (which of course is GPLv3). Better is to specify \"GPLv2 or later (at your preference)\".\n\nThe copyright header is the same as the other files in the combinat directory.\n\n> 3. IMHO, this is a fantastic contribution by a leader in the field. Not to look a gift horse in the mouth, but I repeat that references to the literature would add value. I don't want to make a big deal of it though. If no one else does, I will add them myself later when I can get near my repn theory books (due to some home construction, those books are behind mounds of furniture at the moment).\n\nDynkin's paper is already cited, where maximal subgroups of Lie groups are classified. Also Humpfrey's book on Lie algebras is already cited. However I will add some references. I can add references to books of Goodman and Wallach and Bump and a further citation of Humpfrey's book(for highest weight theory) and (for branching rules) papers of Howe, Chye and Willenbring and of R.C. King.\n\nCan you (or anyone) think of anything else that would be good to cite?\n\nI'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2) since the comment applies systematically in combinat/.",
+    "body": "> 1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming \"standard\". Better would be WeightRingElement? (or WeightAlgebraElement??).\n\n\nI agree and will change it to WeightRingElement.\n\n> 2. Perhaps this is a very minor point since this appears common with lots of other modules, but I think that legally when you simply license code under the GPL, the default is the latest version (which of course is GPLv3). Better is to specify \"GPLv2 or later (at your preference)\".\n\n\nThe copyright header is the same as the other files in the combinat directory.\n\n> 3. IMHO, this is a fantastic contribution by a leader in the field. Not to look a gift horse in the mouth, but I repeat that references to the literature would add value. I don't want to make a big deal of it though. If no one else does, I will add them myself later when I can get near my repn theory books (due to some home construction, those books are behind mounds of furniture at the moment).\n\n\nDynkin's paper is already cited, where maximal subgroups of Lie groups are classified. Also Humpfrey's book on Lie algebras is already cited. However I will add some references. I can add references to books of Goodman and Wallach and Bump and a further citation of Humpfrey's book(for highest weight theory) and (for branching rules) papers of Howe, Chye and Willenbring and of R.C. King.\n\nCan you (or anyone) think of anything else that would be good to cite?\n\nI'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2) since the comment applies systematically in combinat/.",
     "created_at": "2008-05-08T20:33:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -659,13 +654,16 @@ archive/issue_comments_021005.json:
 
 > 1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming "standard". Better would be WeightRingElement? (or WeightAlgebraElement??).
 
+
 I agree and will change it to WeightRingElement.
 
 > 2. Perhaps this is a very minor point since this appears common with lots of other modules, but I think that legally when you simply license code under the GPL, the default is the latest version (which of course is GPLv3). Better is to specify "GPLv2 or later (at your preference)".
 
+
 The copyright header is the same as the other files in the combinat directory.
 
 > 3. IMHO, this is a fantastic contribution by a leader in the field. Not to look a gift horse in the mouth, but I repeat that references to the literature would add value. I don't want to make a big deal of it though. If no one else does, I will add them myself later when I can get near my repn theory books (due to some home construction, those books are behind mounds of furniture at the moment).
+
 
 Dynkin's paper is already cited, where maximal subgroups of Lie groups are classified. Also Humpfrey's book on Lie algebras is already cited. However I will add some references. I can add references to books of Goodman and Wallach and Bump and a further citation of Humpfrey's book(for highest weight theory) and (for branching rules) papers of Howe, Chye and Willenbring and of R.C. King.
 
@@ -834,7 +832,7 @@ I realized that I'd forgotten to revise the doctest in crystals.py after the not
 archive/issue_comments_021014.json:
 ```json
 {
-    "body": "Really, or someone should look at this instead of me but to help out a little, I thought I'd at least do some testing. Oddly enough, I had trouble applying it to a newly made clone:\n\n\n```\nwdj@wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2.alpha1, Release Date: 2008-05-11                |\n| Type notebook() for the GUI, and license() for information.        |\nLoading SAGE library. Current Mercurial branch is: weyl2\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/3051-unified-2.patch\")\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/3051-unified-2.patch\"\napplying /home/wdj/wdj/sagefiles/3051-unified-2.patch\npatching file sage/combinat/crystals/crystals.py\nHunk #1 FAILED at 103\nHunk #2 succeeded at 231 with fuzz 2 (offset 1 line).\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n1 out of 1 hunk FAILED -- saving rejects to file sage/combinat/root_system/weyl_characters.py.rej\nabort: patch failed to apply\nsage:                               \n```\n\n\nThe previous version of this patch applied and  passed sage -testall except for crystal, as you already pointed out.",
+    "body": "Really, or someone should look at this instead of me but to help out a little, I thought I'd at least do some testing. Oddly enough, I had trouble applying it to a newly made clone:\n\n```\nwdj@wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2.alpha1, Release Date: 2008-05-11                |\n| Type notebook() for the GUI, and license() for information.        |\nLoading SAGE library. Current Mercurial branch is: weyl2\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/3051-unified-2.patch\")\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/3051-unified-2.patch\"\napplying /home/wdj/wdj/sagefiles/3051-unified-2.patch\npatching file sage/combinat/crystals/crystals.py\nHunk #1 FAILED at 103\nHunk #2 succeeded at 231 with fuzz 2 (offset 1 line).\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n1 out of 1 hunk FAILED -- saving rejects to file sage/combinat/root_system/weyl_characters.py.rej\nabort: patch failed to apply\nsage:                               \n```\n\nThe previous version of this patch applied and  passed sage -testall except for crystal, as you already pointed out.",
     "created_at": "2008-05-17T14:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -844,7 +842,6 @@ archive/issue_comments_021014.json:
 ```
 
 Really, or someone should look at this instead of me but to help out a little, I thought I'd at least do some testing. Oddly enough, I had trouble applying it to a newly made clone:
-
 
 ```
 wdj@wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage
@@ -868,7 +865,6 @@ abort: patch failed to apply
 sage:                               
 ```
 
-
 The previous version of this patch applied and  passed sage -testall except for crystal, as you already pointed out.
 
 
@@ -878,7 +874,7 @@ The previous version of this patch applied and  passed sage -testall except for 
 archive/issue_comments_021015.json:
 ```json
 {
-    "body": "You must have had a leftover weyl_characters.py in your directory since I don't think this file is in\nthe repository. At least it's not in sage-3.0.2.alpha0. The patch creates this file.\n\n\n```\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n```\n",
+    "body": "You must have had a leftover weyl_characters.py in your directory since I don't think this file is in\nthe repository. At least it's not in sage-3.0.2.alpha0. The patch creates this file.\n\n```\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n```",
     "created_at": "2008-05-17T18:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
@@ -890,12 +886,10 @@ archive/issue_comments_021015.json:
 You must have had a leftover weyl_characters.py in your directory since I don't think this file is in
 the repository. At least it's not in sage-3.0.2.alpha0. The patch creates this file.
 
-
 ```
 1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej
 file sage/combinat/root_system/weyl_characters.py already exists
 ```
-
 
 
 

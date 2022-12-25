@@ -3,7 +3,7 @@
 archive/issues_009635.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n0\nsage: (n,j)=(5,3)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j) for k in range(j\n+1,n+1))\n1 \n```\n\nThe above sum should be 1 for n>=j and 0 otherwise.\n\nFrom kcrisman:\nThis appears to be a bug in Maxima. \n\n```\n(%i1) load(simplify_sum);\n<snip>\n(%i3) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j\n+1,n));\n\n(%o3)                                  0\n(%i4) simplify_sum(sum(binomial(5,k)*binomial(k-1,3)*(-1)**(k-1-3),k,\n4,5));\n(%o4)                                  1\n(%i5) 5*1*1+1*4*(-1);\n(%o5)                                  1 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9635\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n0\nsage: (n,j)=(5,3)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j) for k in range(j\n+1,n+1))\n1 \n```\nThe above sum should be 1 for n>=j and 0 otherwise.\n\nFrom kcrisman:\nThis appears to be a bug in Maxima. \n\n```\n(%i1) load(simplify_sum);\n<snip>\n(%i3) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j\n+1,n));\n\n(%o3)                                  0\n(%i4) simplify_sum(sum(binomial(5,k)*binomial(k-1,3)*(-1)**(k-1-3),k,\n4,5));\n(%o4)                                  1\n(%i5) 5*1*1+1*4*(-1);\n(%o5)                                  1 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9635\n\n",
     "created_at": "2010-07-29T07:34:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_009635.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: (n,k,j)=var('n,k,j')
 sage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)
@@ -28,7 +27,6 @@ sage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j) for k in range(j
 +1,n+1))
 1 
 ```
-
 The above sum should be 1 for n>=j and 0 otherwise.
 
 From kcrisman:
@@ -47,7 +45,6 @@ This appears to be a bug in Maxima.
 (%i5) 5*1*1+1*4*(-1);
 (%o5)                                  1 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9635
 
@@ -132,7 +129,7 @@ Maxima 5.23.2 still has this, and no movement on the original bug report.
 archive/issue_comments_093243.json:
 ```json
 {
-    "body": "The [bug report](http://sourceforge.net/tracker/?func=detail&aid=3036579&group_id=4933&atid=104933) got updated over a year ago.\n\nIn the current Sage:\n\n```\n(%i1) load(simplify_sum); \n(%o1) /Users/karl-dietercrisman/Downloads/sage-5.0/local/share/maxima/5.26.0/s\\\nhare/contrib/solve_rec/simplify_sum.mac\n(%i2) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j +1,n)); \n\nIs  j + 1  positive, negative, or zero?\n\npos;\n(%o2)                                  1\n```\n\nSo just need a doctest.\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\nsage: assume(j>-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n1\nsage: forget()\nsage: assume(n>=j)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\nsage: forget()\nsage: assume(j==-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n1\nsage: forget()\nsage: assume(j<-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\n```\n\nWas the original report here wrong?  Maxima currently says that the sign of `j+1` is all that matters, which sort of makes sense",
+    "body": "The [bug report](http://sourceforge.net/tracker/?func=detail&aid=3036579&group_id=4933&atid=104933) got updated over a year ago.\n\nIn the current Sage:\n\n```\n(%i1) load(simplify_sum); \n(%o1) /Users/karl-dietercrisman/Downloads/sage-5.0/local/share/maxima/5.26.0/s\\\nhare/contrib/solve_rec/simplify_sum.mac\n(%i2) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j +1,n)); \n\nIs  j + 1  positive, negative, or zero?\n\npos;\n(%o2)                                  1\n```\nSo just need a doctest.\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\nsage: assume(j>-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n1\nsage: forget()\nsage: assume(n>=j)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\nsage: forget()\nsage: assume(j==-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n1\nsage: forget()\nsage: assume(j<-1)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n-sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)\n```\nWas the original report here wrong?  Maxima currently says that the sign of `j+1` is all that matters, which sort of makes sense",
     "created_at": "2012-07-07T03:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9635",
     "type": "issue_comment",
@@ -156,7 +153,6 @@ Is  j + 1  positive, negative, or zero?
 pos;
 (%o2)                                  1
 ```
-
 So just need a doctest.
 
 ```
@@ -179,7 +175,6 @@ sage: assume(j<-1)
 sage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)
 -sum((-1)^(-j + k)*binomial(k - 1, j)*binomial(n, k), k, j + 1, n)
 ```
-
 Was the original report here wrong?  Maxima currently says that the sign of `j+1` is all that matters, which sort of makes sense
 
 
@@ -348,7 +343,7 @@ archive/issue_events_024028.json:
 archive/issue_comments_093250.json:
 ```json
 {
-    "body": "Actually, in this case the doctest I pasted above is absolutely correct.  One still has to *assume* the right thing for it to return anything other than the original sum!  Your part is fine, you can just review the additional ones (unless you think they are too much).\n----\nNew commits:",
+    "body": "Actually, in this case the doctest I pasted above is absolutely correct.  One still has to *assume* the right thing for it to return anything other than the original sum!  Your part is fine, you can just review the additional ones (unless you think they are too much).\n\n---\nNew commits:",
     "created_at": "2015-02-03T02:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9635",
     "type": "issue_comment",
@@ -358,7 +353,8 @@ archive/issue_comments_093250.json:
 ```
 
 Actually, in this case the doctest I pasted above is absolutely correct.  One still has to *assume* the right thing for it to return anything other than the original sum!  Your part is fine, you can just review the additional ones (unless you think they are too much).
-----
+
+---
 New commits:
 
 
@@ -422,7 +418,7 @@ Tests OK, is fine.
 archive/issue_comments_093254.json:
 ```json
 {
-    "body": "> Somehow I still expect results like a (for x<0); b (for x==0); c (else) but I digress...\n\nThat isn't possible with the current Maxima setup (at least not in a useful way, given the crazy number of branches Maxima gives us) but perhaps via sympy?  That would be a very, very good improvement.",
+    "body": "> Somehow I still expect results like a (for x<0); b (for x==0); c (else) but I digress...\n\n\nThat isn't possible with the current Maxima setup (at least not in a useful way, given the crazy number of branches Maxima gives us) but perhaps via sympy?  That would be a very, very good improvement.",
     "created_at": "2015-02-03T13:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9635",
     "type": "issue_comment",
@@ -432,6 +428,7 @@ archive/issue_comments_093254.json:
 ```
 
 > Somehow I still expect results like a (for x<0); b (for x==0); c (else) but I digress...
+
 
 That isn't possible with the current Maxima setup (at least not in a useful way, given the crazy number of branches Maxima gives us) but perhaps via sympy?  That would be a very, very good improvement.
 

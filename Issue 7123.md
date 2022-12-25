@@ -103,7 +103,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058930.json:
 ```json
 {
-    "body": "Replying to [comment:2 rbeezer]:\n> 1.  Is there any infrastructure planned for frequency tables - ie perhaps given an alphabet and a language, a dictionary from \"letters\" to their probabilities in that language?  I could see this being veryuseful for some of the cryptanalysis, especially of the classical ciphers.\nFrequency distribution is already implemented for the following alphabets: `AlphabeticStrings`, `BinaryStrings`, `HexadecimalStrings`, `OctalStrings`, `Radix64Strings`. The relevant method is `frequency_distribution()` in the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`. Here is an example:\n\n```\n[mvngu@sage sage-4.1.2.rc0-7123-shift]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcd\")\nsage: M.frequency_distribution()\nDiscrete probability space defined by {A: 0.250000000000000, C: 0.250000000000000, B: 0.250000000000000, D: 0.250000000000000}\n```\n\nAs you can see, the default behaviour is to return the string representation of a frequency distribution. This can be difficult to parse, especially if one wants to do further processing with the returned distribution.\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n\n\n\n> 2.  Could you build on the exhaustive search in this patch, together with frequency information, to rank more likely keys first, and present more likely decipherments first?\nIs there a way to determine likely keys? One way I can think of is to use an existing frequency distribution table T of the letters of the English alphabet. Given the frequency distribution of the ciphertext, sort the ciphertext letters in non-descending order in terms of probability values. Do the same sorting for the table T. Then map the ciphertext letter with the highest probability to its counterpart in T, etc. Can use the frequency table from the text:\n\n* Robert Edward Lewand. \"Cryptological Mathematics\". The Mathematical Association of America, 2000, p.36.\n\nThe same table can also be found on [wikipedia](http://en.wikipedia.org/wiki/Letter_frequencies). For digrams, trigrams, etc., one can use the US Army's field manual at\n\nhttp://www.umich.edu/~umich/fm-34-40-2/",
+    "body": "Replying to [comment:2 rbeezer]:\n> 1.  Is there any infrastructure planned for frequency tables - ie perhaps given an alphabet and a language, a dictionary from \"letters\" to their probabilities in that language?  I could see this being veryuseful for some of the cryptanalysis, especially of the classical ciphers.\n  \nFrequency distribution is already implemented for the following alphabets: `AlphabeticStrings`, `BinaryStrings`, `HexadecimalStrings`, `OctalStrings`, `Radix64Strings`. The relevant method is `frequency_distribution()` in the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`. Here is an example:\n\n```\n[mvngu@sage sage-4.1.2.rc0-7123-shift]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcd\")\nsage: M.frequency_distribution()\nDiscrete probability space defined by {A: 0.250000000000000, C: 0.250000000000000, B: 0.250000000000000, D: 0.250000000000000}\n```\nAs you can see, the default behaviour is to return the string representation of a frequency distribution. This can be difficult to parse, especially if one wants to do further processing with the returned distribution.\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n\n\n\n> 2.  Could you build on the exhaustive search in this patch, together with frequency information, to rank more likely keys first, and present more likely decipherments first?\n  \nIs there a way to determine likely keys? One way I can think of is to use an existing frequency distribution table T of the letters of the English alphabet. Given the frequency distribution of the ciphertext, sort the ciphertext letters in non-descending order in terms of probability values. Do the same sorting for the table T. Then map the ciphertext letter with the highest probability to its counterpart in T, etc. Can use the frequency table from the text:\n\n   * Robert Edward Lewand. \"Cryptological Mathematics\". The Mathematical Association of America, 2000, p.36.\n\nThe same table can also be found on [wikipedia](http://en.wikipedia.org/wiki/Letter_frequencies). For digrams, trigrams, etc., one can use the US Army's field manual at\n\nhttp://www.umich.edu/~umich/fm-34-40-2/",
     "created_at": "2009-10-08T16:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -114,6 +114,7 @@ archive/issue_comments_058930.json:
 
 Replying to [comment:2 rbeezer]:
 > 1.  Is there any infrastructure planned for frequency tables - ie perhaps given an alphabet and a language, a dictionary from "letters" to their probabilities in that language?  I could see this being veryuseful for some of the cryptanalysis, especially of the classical ciphers.
+  
 Frequency distribution is already implemented for the following alphabets: `AlphabeticStrings`, `BinaryStrings`, `HexadecimalStrings`, `OctalStrings`, `Radix64Strings`. The relevant method is `frequency_distribution()` in the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`. Here is an example:
 
 ```
@@ -125,7 +126,6 @@ sage: M = A.encoding("abcd")
 sage: M.frequency_distribution()
 Discrete probability space defined by {A: 0.250000000000000, C: 0.250000000000000, B: 0.250000000000000, D: 0.250000000000000}
 ```
-
 As you can see, the default behaviour is to return the string representation of a frequency distribution. This can be difficult to parse, especially if one wants to do further processing with the returned distribution.
 | Sage Version 4.1.1, Release Date: 2009-08-14                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -134,9 +134,10 @@ As you can see, the default behaviour is to return the string representation of 
 
 
 > 2.  Could you build on the exhaustive search in this patch, together with frequency information, to rank more likely keys first, and present more likely decipherments first?
+  
 Is there a way to determine likely keys? One way I can think of is to use an existing frequency distribution table T of the letters of the English alphabet. Given the frequency distribution of the ciphertext, sort the ciphertext letters in non-descending order in terms of probability values. Do the same sorting for the table T. Then map the ciphertext letter with the highest probability to its counterpart in T, etc. Can use the frequency table from the text:
 
-* Robert Edward Lewand. "Cryptological Mathematics". The Mathematical Association of America, 2000, p.36.
+   * Robert Edward Lewand. "Cryptological Mathematics". The Mathematical Association of America, 2000, p.36.
 
 The same table can also be found on [wikipedia](http://en.wikipedia.org/wiki/Letter_frequencies). For digrams, trigrams, etc., one can use the US Army's field manual at
 
@@ -275,7 +276,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058936.json:
 ```json
 {
-    "body": "Replying to [comment:7 rbeezer]:\n> 1.  For a chi-square used for goodness-of-fit between distributions see Hogg and Tannis, Probbilit and Stastical Inference, 6th Ed., Section 8.4.  Use the actual counts of each letter in a candidate decipher and call these \"observed.\"\n\nLet's call these actual counts the \"character count\".\n\n\n\n\n\n> Then multiply frequences from `frequency_distribution()` times the length of the message.  \n\nThere are two types of frequencies. The characteristic frequency distribution (or characteristic frequency, for short) of an alphabet is the expected frequency probability distribution for that alphabet. The book by Beker and Piper 1982 contains a table describing this probability distribution. The book by Lewand 2000 also contains such a table. The frequency distribution of a message `M` (or frequency distribution, for short) gives the ratio `R` of character occurrences over message length:\n\n```\nR = (number of occurrences of a character) / (message length)\n```\n\nThe characteristic frequency can be thought of as the expected probability, while the frequency distribution is the observed probability.\n\n\n\n\n\n> Call these theoretical counts the \"expected\" and carry them as non-integers, even if we know they should be integral.\n \nWith the above distinction between characteristic frequency (of an alphabet) and frequency distribution (of a message), I interpret the theoretical counts you mention here as the result of multiplying each probability value in the characteristic frequency by the message length. For example:\n\n```\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcabf\")\nsage: L = len(M); L\n6\nsage: CF = A.characteristic_frequency()\nsage: sorted(CF.items())\n\n[('A', 0.0820000000000000),\n ('B', 0.0150000000000000),\n ('C', 0.0280000000000000),\n ('D', 0.0430000000000000),\n ('E', 0.127000000000000),\n ('F', 0.0220000000000000),\n ('G', 0.0200000000000000),\n ('H', 0.0610000000000000),\n ('I', 0.0700000000000000),\n ('J', 0.00200000000000000),\n ('K', 0.00800000000000000),\n ('L', 0.0400000000000000),\n ('M', 0.0240000000000000),\n ('N', 0.0670000000000000),\n ('O', 0.0750000000000000),\n ('P', 0.0190000000000000),\n ('Q', 0.00100000000000000),\n ('R', 0.0600000000000000),\n ('S', 0.0630000000000000),\n ('T', 0.0910000000000000),\n ('U', 0.0280000000000000),\n ('V', 0.0100000000000000),\n ('W', 0.0230000000000000),\n ('X', 0.00100000000000000),\n ('Y', 0.0200000000000000),\n ('Z', 0.00100000000000000)]\nsage: keys = CF.keys()\nsage: for k in keys:\n....:     CF[k] *= L\n....:     \nsage: sorted(CF.items())\n\n[('A', 0.492000000000000),\n ('B', 0.0900000000000000),\n ('C', 0.168000000000000),\n ('D', 0.258000000000000),\n ('E', 0.762000000000000),\n ('F', 0.132000000000000),\n ('G', 0.120000000000000),\n ('H', 0.366000000000000),\n ('I', 0.420000000000000),\n ('J', 0.0120000000000000),\n ('K', 0.0480000000000000),\n ('L', 0.240000000000000),\n ('M', 0.144000000000000),\n ('N', 0.402000000000000),\n ('O', 0.450000000000000),\n ('P', 0.114000000000000),\n ('Q', 0.00600000000000000),\n ('R', 0.360000000000000),\n ('S', 0.378000000000000),\n ('T', 0.546000000000000),\n ('U', 0.168000000000000),\n ('V', 0.0600000000000000),\n ('W', 0.138000000000000),\n ('X', 0.00600000000000000),\n ('Y', 0.120000000000000),\n ('Z', 0.00600000000000000)]\n```\n\n\nMultiplying each probability value in the frequency distribution by the message length would result in the counts of character occurrences:\n\n```\nsage: char_counts = M.character_count()\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\nsage: FD = M.frequency_distribution()\nsage: sorted(FD.items())\n\n[(A, 0.333333333333333),\n (B, 0.333333333333333),\n (C, 0.166666666666667),\n (F, 0.166666666666667)]\nsage: keys = FD.keys()\nsage: for k in keys:\n....:     FD[k] *= L\n....:     \nsage: sorted(FD.items())\n\n[(A, 2.00000000000000),\n (B, 2.00000000000000),\n (C, 1.00000000000000),\n (F, 1.00000000000000)]\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\n```\n\n\n\n\n\n\n>  Then the statistic is the sum over all the letters of\n> \n> `(observed - expected)^2/expected`\n\nThis agrees with Pearson's chi-square test at\n\nhttp://en.wikipedia.org/wiki/Goodness_of_fit\n\n\n\n\n\n> I would use the keyword \"chisquare\" for this.\n\nNo problem.\n\n\n\n\n\n> 2.  The sum of squared differences should probably be computed as the sum over all letters using counts, not frequencies, ie\n> \n> `(observed - expected)^2`\n\nNo problem.\n\n\n\n\n\n> This is equivalent in this case to the coefficient of determination, or more informally \"r-squared.\"  Another name is \"residual sum of squares.\"\n> \n> 3.  Not at all clear to me how [SavHar99] justifies the use of their expression and naming it a chi-square statistic.  If anything, it looks to me like a noncentral chisquare statistic.  But it may do a good job of \"scoring\" candidate decipherments.  Can you be sure if they mean to square just the numerator of each term (`FD^2/CD`), or square the whole fraction (`FD/CF`)?\nThe description at\n\nhttp://starbase.trincoll.edu/~crypto/historical/caesar.html\n\nis mostly textual and ambiguous. I would implement the above statistics you suggested as they are much more concrete and well specified, instead of spending time teasing out the \"right\" formula from the textual description.",
+    "body": "Replying to [comment:7 rbeezer]:\n> 1.  For a chi-square used for goodness-of-fit between distributions see Hogg and Tannis, Probbilit and Stastical Inference, 6th Ed., Section 8.4.  Use the actual counts of each letter in a candidate decipher and call these \"observed.\"\n\n\nLet's call these actual counts the \"character count\".\n\n\n\n\n\n> Then multiply frequences from `frequency_distribution()` times the length of the message.  \n\n\nThere are two types of frequencies. The characteristic frequency distribution (or characteristic frequency, for short) of an alphabet is the expected frequency probability distribution for that alphabet. The book by Beker and Piper 1982 contains a table describing this probability distribution. The book by Lewand 2000 also contains such a table. The frequency distribution of a message `M` (or frequency distribution, for short) gives the ratio `R` of character occurrences over message length:\n\n```\nR = (number of occurrences of a character) / (message length)\n```\nThe characteristic frequency can be thought of as the expected probability, while the frequency distribution is the observed probability.\n\n\n\n\n\n> Call these theoretical counts the \"expected\" and carry them as non-integers, even if we know they should be integral.\n\n \nWith the above distinction between characteristic frequency (of an alphabet) and frequency distribution (of a message), I interpret the theoretical counts you mention here as the result of multiplying each probability value in the characteristic frequency by the message length. For example:\n\n```\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcabf\")\nsage: L = len(M); L\n6\nsage: CF = A.characteristic_frequency()\nsage: sorted(CF.items())\n\n[('A', 0.0820000000000000),\n ('B', 0.0150000000000000),\n ('C', 0.0280000000000000),\n ('D', 0.0430000000000000),\n ('E', 0.127000000000000),\n ('F', 0.0220000000000000),\n ('G', 0.0200000000000000),\n ('H', 0.0610000000000000),\n ('I', 0.0700000000000000),\n ('J', 0.00200000000000000),\n ('K', 0.00800000000000000),\n ('L', 0.0400000000000000),\n ('M', 0.0240000000000000),\n ('N', 0.0670000000000000),\n ('O', 0.0750000000000000),\n ('P', 0.0190000000000000),\n ('Q', 0.00100000000000000),\n ('R', 0.0600000000000000),\n ('S', 0.0630000000000000),\n ('T', 0.0910000000000000),\n ('U', 0.0280000000000000),\n ('V', 0.0100000000000000),\n ('W', 0.0230000000000000),\n ('X', 0.00100000000000000),\n ('Y', 0.0200000000000000),\n ('Z', 0.00100000000000000)]\nsage: keys = CF.keys()\nsage: for k in keys:\n....:     CF[k] *= L\n....:     \nsage: sorted(CF.items())\n\n[('A', 0.492000000000000),\n ('B', 0.0900000000000000),\n ('C', 0.168000000000000),\n ('D', 0.258000000000000),\n ('E', 0.762000000000000),\n ('F', 0.132000000000000),\n ('G', 0.120000000000000),\n ('H', 0.366000000000000),\n ('I', 0.420000000000000),\n ('J', 0.0120000000000000),\n ('K', 0.0480000000000000),\n ('L', 0.240000000000000),\n ('M', 0.144000000000000),\n ('N', 0.402000000000000),\n ('O', 0.450000000000000),\n ('P', 0.114000000000000),\n ('Q', 0.00600000000000000),\n ('R', 0.360000000000000),\n ('S', 0.378000000000000),\n ('T', 0.546000000000000),\n ('U', 0.168000000000000),\n ('V', 0.0600000000000000),\n ('W', 0.138000000000000),\n ('X', 0.00600000000000000),\n ('Y', 0.120000000000000),\n ('Z', 0.00600000000000000)]\n```\n\nMultiplying each probability value in the frequency distribution by the message length would result in the counts of character occurrences:\n\n```\nsage: char_counts = M.character_count()\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\nsage: FD = M.frequency_distribution()\nsage: sorted(FD.items())\n\n[(A, 0.333333333333333),\n (B, 0.333333333333333),\n (C, 0.166666666666667),\n (F, 0.166666666666667)]\nsage: keys = FD.keys()\nsage: for k in keys:\n....:     FD[k] *= L\n....:     \nsage: sorted(FD.items())\n\n[(A, 2.00000000000000),\n (B, 2.00000000000000),\n (C, 1.00000000000000),\n (F, 1.00000000000000)]\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\n```\n\n\n\n\n\n>  Then the statistic is the sum over all the letters of\n\n> \n> `(observed - expected)^2/expected`\n\n\nThis agrees with Pearson's chi-square test at\n\nhttp://en.wikipedia.org/wiki/Goodness_of_fit\n\n\n\n\n\n> I would use the keyword \"chisquare\" for this.\n\n\nNo problem.\n\n\n\n\n\n> 2.  The sum of squared differences should probably be computed as the sum over all letters using counts, not frequencies, ie\n> \n> `(observed - expected)^2`\n\n\nNo problem.\n\n\n\n\n\n> This is equivalent in this case to the coefficient of determination, or more informally \"r-squared.\"  Another name is \"residual sum of squares.\"\n> \n> 3.  Not at all clear to me how [SavHar99] justifies the use of their expression and naming it a chi-square statistic.  If anything, it looks to me like a noncentral chisquare statistic.  But it may do a good job of \"scoring\" candidate decipherments.  Can you be sure if they mean to square just the numerator of each term (`FD^2/CD`), or square the whole fraction (`FD/CF`)?\n  \nThe description at\n\nhttp://starbase.trincoll.edu/~crypto/historical/caesar.html\n\nis mostly textual and ambiguous. I would implement the above statistics you suggested as they are much more concrete and well specified, instead of spending time teasing out the \"right\" formula from the textual description.",
     "created_at": "2009-10-10T14:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -287,6 +288,7 @@ archive/issue_comments_058936.json:
 Replying to [comment:7 rbeezer]:
 > 1.  For a chi-square used for goodness-of-fit between distributions see Hogg and Tannis, Probbilit and Stastical Inference, 6th Ed., Section 8.4.  Use the actual counts of each letter in a candidate decipher and call these "observed."
 
+
 Let's call these actual counts the "character count".
 
 
@@ -295,12 +297,12 @@ Let's call these actual counts the "character count".
 
 > Then multiply frequences from `frequency_distribution()` times the length of the message.  
 
+
 There are two types of frequencies. The characteristic frequency distribution (or characteristic frequency, for short) of an alphabet is the expected frequency probability distribution for that alphabet. The book by Beker and Piper 1982 contains a table describing this probability distribution. The book by Lewand 2000 also contains such a table. The frequency distribution of a message `M` (or frequency distribution, for short) gives the ratio `R` of character occurrences over message length:
 
 ```
 R = (number of occurrences of a character) / (message length)
 ```
-
 The characteristic frequency can be thought of as the expected probability, while the frequency distribution is the observed probability.
 
 
@@ -308,6 +310,7 @@ The characteristic frequency can be thought of as the expected probability, whil
 
 
 > Call these theoretical counts the "expected" and carry them as non-integers, even if we know they should be integral.
+
  
 With the above distinction between characteristic frequency (of an alphabet) and frequency distribution (of a message), I interpret the theoretical counts you mention here as the result of multiplying each probability value in the characteristic frequency by the message length. For example:
 
@@ -379,7 +382,6 @@ sage: sorted(CF.items())
  ('Z', 0.00600000000000000)]
 ```
 
-
 Multiplying each probability value in the frequency distribution by the message length would result in the counts of character occurrences:
 
 ```
@@ -411,10 +413,11 @@ sage: sorted(char_counts.items())
 
 
 
-
 >  Then the statistic is the sum over all the letters of
+
 > 
 > `(observed - expected)^2/expected`
+
 
 This agrees with Pearson's chi-square test at
 
@@ -426,6 +429,7 @@ http://en.wikipedia.org/wiki/Goodness_of_fit
 
 > I would use the keyword "chisquare" for this.
 
+
 No problem.
 
 
@@ -436,6 +440,7 @@ No problem.
 > 
 > `(observed - expected)^2`
 
+
 No problem.
 
 
@@ -445,6 +450,7 @@ No problem.
 > This is equivalent in this case to the coefficient of determination, or more informally "r-squared."  Another name is "residual sum of squares."
 > 
 > 3.  Not at all clear to me how [SavHar99] justifies the use of their expression and naming it a chi-square statistic.  If anything, it looks to me like a noncentral chisquare statistic.  But it may do a good job of "scoring" candidate decipherments.  Can you be sure if they mean to square just the numerator of each term (`FD^2/CD`), or square the whole fraction (`FD/CF`)?
+  
 The description at
 
 http://starbase.trincoll.edu/~crypto/historical/caesar.html
@@ -516,7 +522,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058940.json:
 ```json
 {
-    "body": "\n```\n22:11 < rbeezer> found the problem - you are decrypting/shifting too much\n22:12 < rbeezer> try this - change     AlphShifted = self.enciphering(key, Alph)\n22:12 < rbeezer> to  AlphShifted = self.enciphering(0, Alph)\n22:22 -!- homerj [n=homerj@207-255-12-114-dhcp.jst.pa.atlanticbb.net] has left #sage-devel [\"Leaving\"]\n22:41 < rbeezer> mvngu: any luck?\n23:00 < mvngu> rbeezer: I'm not convinced about the change.\n23:01 < rbeezer> mvngu: Ideally, I think you want   RMk = [(OM[AlphShifted[StrAlph.index(e)]] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> to read more like:  RMk = [(OM[e] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> but when I made this change, the indices of OM and EM were different types and I got errors\n23:02 < mvngu> rbeezer: That's what I thought, and originally implemented for the method at http://starbase.trincoll.edu/~crypto/historical/caesar.html\n23:03 < rbeezer> changing the statement before  (key -> 0)  was just a hack to negate the whole shifting in AlphShifted\n23:03 < rbeezer> With  key->0  I was getting good results with short test phrases\n23:05 < mvngu> rbeezer: Have you looked at the formula for RMk? See the formula at http://sage.math.washington.edu/home/mvngu/reference-7123-shift/sage/crypto/classical.html#sage.crypto.classical.ShiftCryptosystem.rank_by_chi_square  I was following that formula.\n23:06 < mvngu> In particular, this formula  http://sage.math.washington.edu/home/mvngu/reference-7123-shift/_images/math/d8a2fd0995ed8152cfa73a6e16fcab0ef367a993.png\n23:06 < rbeezer> mvngu: the formula in that doc shouldn't have the +k, I think\n23:07 < rbeezer> mvngu: the starbase stuff is using the +k to decrypt, I think\n23:07 < rbeezer> mvngu: while you have the brute_force output as an input to your routine, so the decryption has already happened\n23:08 < rbeezer> the starbase stuff is not complete enough, or careful enough, to give me any confidence\n23:09 < mvngu> rbeezer: What's \"starbase stuff\"?\n23:09 < rbeezer> did you test my original hackish change?\n23:09 < mvngu> rbeezer: \"*=\"\n23:09 < mvngu> ?\n23:09 < rbeezer> the link at starbase.trincoll.edu  ;-)\n23:10 < mvngu> rbeezer: testing your change now...\n23:14 < williamstein> I made a lot of progress on the notebook \"rewrite\" today...\n23:14 < williamstein> and finally those VirtualBox machines are working!\n23:14 < williamstein> There are also now 8949 sagenb.org users.\n23:15 < williamstein> Only 51 more to 9000.\n23:18 < mvngu> rbeezer: Your change certainly gives better results now. See my transcript at http://sage.math.washington.edu/home/mvngu/chi-square-rbeezer-hack.txt\n23:19 -!- wormsxulla [i=chatzill@unaffiliated/wormsxulla] has quit [Read error: 110 (Connection timed out)]\n23:19 -!- wormsxulla_ [i=chatzill@unaffiliated/wormsxulla] has joined #sage-devel\n23:19 -!- wormsxulla_ is now known as wormsxulla\n23:19 < rbeezer> mvngu: that's what I was seeing\n23:19 < mvngu> rbeezer: Now for a text file...\n23:20 < rbeezer> mvngu: your strings from brute_force() have already been shifted, you just want the one whose letter distribution most closely matches that of English\n23:21 < rbeezer> but right now OM and EM are indexed by letters versus one-character stings, or somthing like that\n23:21 < rbeezer> s/strings/stings/\n23:23 < mvngu> rbeezer: Result from using a file... Looks good. See transcript at http://sage.pastebin.com/m6e4d8df4\n23:24 < rbeezer> yep, that's it - the Pearson chi-square should give good results for short and long messages\n\n```\n",
+    "body": "```\n22:11 < rbeezer> found the problem - you are decrypting/shifting too much\n22:12 < rbeezer> try this - change     AlphShifted = self.enciphering(key, Alph)\n22:12 < rbeezer> to  AlphShifted = self.enciphering(0, Alph)\n22:22 -!- homerj [n=homerj@207-255-12-114-dhcp.jst.pa.atlanticbb.net] has left #sage-devel [\"Leaving\"]\n22:41 < rbeezer> mvngu: any luck?\n23:00 < mvngu> rbeezer: I'm not convinced about the change.\n23:01 < rbeezer> mvngu: Ideally, I think you want   RMk = [(OM[AlphShifted[StrAlph.index(e)]] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> to read more like:  RMk = [(OM[e] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> but when I made this change, the indices of OM and EM were different types and I got errors\n23:02 < mvngu> rbeezer: That's what I thought, and originally implemented for the method at http://starbase.trincoll.edu/~crypto/historical/caesar.html\n23:03 < rbeezer> changing the statement before  (key -> 0)  was just a hack to negate the whole shifting in AlphShifted\n23:03 < rbeezer> With  key->0  I was getting good results with short test phrases\n23:05 < mvngu> rbeezer: Have you looked at the formula for RMk? See the formula at http://sage.math.washington.edu/home/mvngu/reference-7123-shift/sage/crypto/classical.html#sage.crypto.classical.ShiftCryptosystem.rank_by_chi_square  I was following that formula.\n23:06 < mvngu> In particular, this formula  http://sage.math.washington.edu/home/mvngu/reference-7123-shift/_images/math/d8a2fd0995ed8152cfa73a6e16fcab0ef367a993.png\n23:06 < rbeezer> mvngu: the formula in that doc shouldn't have the +k, I think\n23:07 < rbeezer> mvngu: the starbase stuff is using the +k to decrypt, I think\n23:07 < rbeezer> mvngu: while you have the brute_force output as an input to your routine, so the decryption has already happened\n23:08 < rbeezer> the starbase stuff is not complete enough, or careful enough, to give me any confidence\n23:09 < mvngu> rbeezer: What's \"starbase stuff\"?\n23:09 < rbeezer> did you test my original hackish change?\n23:09 < mvngu> rbeezer: \"*=\"\n23:09 < mvngu> ?\n23:09 < rbeezer> the link at starbase.trincoll.edu  ;-)\n23:10 < mvngu> rbeezer: testing your change now...\n23:14 < williamstein> I made a lot of progress on the notebook \"rewrite\" today...\n23:14 < williamstein> and finally those VirtualBox machines are working!\n23:14 < williamstein> There are also now 8949 sagenb.org users.\n23:15 < williamstein> Only 51 more to 9000.\n23:18 < mvngu> rbeezer: Your change certainly gives better results now. See my transcript at http://sage.math.washington.edu/home/mvngu/chi-square-rbeezer-hack.txt\n23:19 -!- wormsxulla [i=chatzill@unaffiliated/wormsxulla] has quit [Read error: 110 (Connection timed out)]\n23:19 -!- wormsxulla_ [i=chatzill@unaffiliated/wormsxulla] has joined #sage-devel\n23:19 -!- wormsxulla_ is now known as wormsxulla\n23:19 < rbeezer> mvngu: that's what I was seeing\n23:19 < mvngu> rbeezer: Now for a text file...\n23:20 < rbeezer> mvngu: your strings from brute_force() have already been shifted, you just want the one whose letter distribution most closely matches that of English\n23:21 < rbeezer> but right now OM and EM are indexed by letters versus one-character stings, or somthing like that\n23:21 < rbeezer> s/strings/stings/\n23:23 < mvngu> rbeezer: Result from using a file... Looks good. See transcript at http://sage.pastebin.com/m6e4d8df4\n23:24 < rbeezer> yep, that's it - the Pearson chi-square should give good results for short and long messages\n\n```",
     "created_at": "2009-10-11T07:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -524,7 +530,6 @@ archive/issue_comments_058940.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-
 
 ```
 22:11 < rbeezer> found the problem - you are decrypting/shifting too much
@@ -571,7 +576,6 @@ archive/issue_comments_058940.json:
 
 
 
-
 ---
 
 archive/issue_comments_058941.json:
@@ -595,7 +599,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058942.json:
 ```json
 {
-    "body": "\n```\n22:43 < rbeezer> mvngu: but I did have one suggestion - the first paragraph of\n                 each ranking method\n22:43 < mvngu> rbeezer: Fire away your suggestion.\n22:43 < rbeezer> calls FM the frequency for an encrypted message, when what you\n                 are really doing is getting a pile of candidate decrypted\n22:44 < rbeezer> messages from the brute_force() method and analyzing their\n                 freguencies\n22:44 < rbeezer> You want the key that makes a decrypt with frequencey most\n                 like english\n22:45 < rbeezer> So maybe before FM you say it is for a \"decrypted\" or\n                 \"candidate decrypted\" message\n22:46 -!- Serica [i=815dcecd@gateway/web/freenode/x-awudwwybpvbxuikl] has quit \n          [Ping timeout: 180 seconds]\n22:47 < mvngu> rbeezer: That sounds logical; I'll put it in now.\n22:47 < rbeezer> Or you can wait until I do a full review and take care of \n                 everything at once\n22:47 < mvngu> rbeezer: OK. Let's work on the Mercurial issue now.\n```\n",
+    "body": "```\n22:43 < rbeezer> mvngu: but I did have one suggestion - the first paragraph of\n                 each ranking method\n22:43 < mvngu> rbeezer: Fire away your suggestion.\n22:43 < rbeezer> calls FM the frequency for an encrypted message, when what you\n                 are really doing is getting a pile of candidate decrypted\n22:44 < rbeezer> messages from the brute_force() method and analyzing their\n                 freguencies\n22:44 < rbeezer> You want the key that makes a decrypt with frequencey most\n                 like english\n22:45 < rbeezer> So maybe before FM you say it is for a \"decrypted\" or\n                 \"candidate decrypted\" message\n22:46 -!- Serica [i=815dcecd@gateway/web/freenode/x-awudwwybpvbxuikl] has quit \n          [Ping timeout: 180 seconds]\n22:47 < mvngu> rbeezer: That sounds logical; I'll put it in now.\n22:47 < rbeezer> Or you can wait until I do a full review and take care of \n                 everything at once\n22:47 < mvngu> rbeezer: OK. Let's work on the Mercurial issue now.\n```",
     "created_at": "2009-10-12T05:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -603,7 +607,6 @@ archive/issue_comments_058942.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-
 
 ```
 22:43 < rbeezer> mvngu: but I did have one suggestion - the first paragraph of
@@ -624,7 +627,6 @@ archive/issue_comments_058942.json:
                  everything at once
 22:47 < mvngu> rbeezer: OK. Let's work on the Mercurial issue now.
 ```
-
 
 
 
@@ -719,7 +721,7 @@ Rob
 archive/issue_comments_058947.json:
 ```json
 {
-    "body": "Replying to [comment:17 rbeezer]:\n> This is looking real good.  Just some details and questions:\n\nI'm now addressing your comments.",
+    "body": "Replying to [comment:17 rbeezer]:\n> This is looking real good.  Just some details and questions:\n\n\nI'm now addressing your comments.",
     "created_at": "2009-10-13T05:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -730,6 +732,7 @@ archive/issue_comments_058947.json:
 
 Replying to [comment:17 rbeezer]:
 > This is looking real good.  Just some details and questions:
+
 
 I'm now addressing your comments.
 
@@ -780,7 +783,7 @@ apply on top of previous
 archive/issue_comments_058950.json:
 ```json
 {
-    "body": "Replying to [comment:17 rbeezer]:\n> 1.  In the first paragraph of the doc string for `characteristic_frequency()` you talk about plaintext and ciphertext.  Not sure somebody looking at this monoid code will be doing crypto.  Could you make the description more confined to properties of the monoid - just describe it as a property of letters in English usage?  The distinction with the `frequency_distribution()` is very good, so retain that.\n\nDone. The documentation for `characteristic_frequency()` has been re-written to describe properties of a monoid. No more mentions of plaintext or ciphertext. I have also made a slight coding change to that function to increase its readability.\n\n\n\n\n\n> 2.  Does `frequency_distribution()` need documentation on its inputs?  \n\nDone. I have documented the parameters of the method `frequency_distribution()` and provided an example illustrating how to use the key word \"length\".\n\n\n\n\n\n> And should you change the nature of the output?  Perhaps you should stick to returning a probability space, and then just call `function()` on it as needed to get the dictionary you want.  Maybe somebody else will want to get something different from the probability distribution and want the more general object?  In any event, the first line of the docstring doesn't match the behavior.\n\nDone. The method `frequency_distribution()` now returns a probability space. In order to get the frequency probability distribution, use `frequency_distribution().function()`.\n\n\n\n\n\n> 3.  Looked like there were some stray commented-out code statements in the cryptanalysis code?  Maybe you could review those and take out any that might be misleading.\n\nFixed.\n\n\n\n\n\n> 4.  You probably don't need to give me credit for the chi-square and squared-differences stuff, they are pretty standard measures of differences.  I also found the [SavHar99] reference more misleading than helpful.\n\nFixed. I now only reference the Wikipedia articles on the Pearson chi-square test, and the residual sum of squares measure.",
+    "body": "Replying to [comment:17 rbeezer]:\n> 1.  In the first paragraph of the doc string for `characteristic_frequency()` you talk about plaintext and ciphertext.  Not sure somebody looking at this monoid code will be doing crypto.  Could you make the description more confined to properties of the monoid - just describe it as a property of letters in English usage?  The distinction with the `frequency_distribution()` is very good, so retain that.\n\n\nDone. The documentation for `characteristic_frequency()` has been re-written to describe properties of a monoid. No more mentions of plaintext or ciphertext. I have also made a slight coding change to that function to increase its readability.\n\n\n\n\n\n> 2.  Does `frequency_distribution()` need documentation on its inputs?  \n\n\nDone. I have documented the parameters of the method `frequency_distribution()` and provided an example illustrating how to use the key word \"length\".\n\n\n\n\n\n> And should you change the nature of the output?  Perhaps you should stick to returning a probability space, and then just call `function()` on it as needed to get the dictionary you want.  Maybe somebody else will want to get something different from the probability distribution and want the more general object?  In any event, the first line of the docstring doesn't match the behavior.\n\n\nDone. The method `frequency_distribution()` now returns a probability space. In order to get the frequency probability distribution, use `frequency_distribution().function()`.\n\n\n\n\n\n> 3.  Looked like there were some stray commented-out code statements in the cryptanalysis code?  Maybe you could review those and take out any that might be misleading.\n\n\nFixed.\n\n\n\n\n\n> 4.  You probably don't need to give me credit for the chi-square and squared-differences stuff, they are pretty standard measures of differences.  I also found the [SavHar99] reference more misleading than helpful.\n\n\nFixed. I now only reference the Wikipedia articles on the Pearson chi-square test, and the residual sum of squares measure.",
     "created_at": "2009-10-13T22:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -792,6 +795,7 @@ archive/issue_comments_058950.json:
 Replying to [comment:17 rbeezer]:
 > 1.  In the first paragraph of the doc string for `characteristic_frequency()` you talk about plaintext and ciphertext.  Not sure somebody looking at this monoid code will be doing crypto.  Could you make the description more confined to properties of the monoid - just describe it as a property of letters in English usage?  The distinction with the `frequency_distribution()` is very good, so retain that.
 
+
 Done. The documentation for `characteristic_frequency()` has been re-written to describe properties of a monoid. No more mentions of plaintext or ciphertext. I have also made a slight coding change to that function to increase its readability.
 
 
@@ -799,6 +803,7 @@ Done. The documentation for `characteristic_frequency()` has been re-written to 
 
 
 > 2.  Does `frequency_distribution()` need documentation on its inputs?  
+
 
 Done. I have documented the parameters of the method `frequency_distribution()` and provided an example illustrating how to use the key word "length".
 
@@ -808,6 +813,7 @@ Done. I have documented the parameters of the method `frequency_distribution()` 
 
 > And should you change the nature of the output?  Perhaps you should stick to returning a probability space, and then just call `function()` on it as needed to get the dictionary you want.  Maybe somebody else will want to get something different from the probability distribution and want the more general object?  In any event, the first line of the docstring doesn't match the behavior.
 
+
 Done. The method `frequency_distribution()` now returns a probability space. In order to get the frequency probability distribution, use `frequency_distribution().function()`.
 
 
@@ -816,6 +822,7 @@ Done. The method `frequency_distribution()` now returns a probability space. In 
 
 > 3.  Looked like there were some stray commented-out code statements in the cryptanalysis code?  Maybe you could review those and take out any that might be misleading.
 
+
 Fixed.
 
 
@@ -823,6 +830,7 @@ Fixed.
 
 
 > 4.  You probably don't need to give me credit for the chi-square and squared-differences stuff, they are pretty standard measures of differences.  I also found the [SavHar99] reference more misleading than helpful.
+
 
 Fixed. I now only reference the Wikipedia articles on the Pearson chi-square test, and the residual sum of squares measure.
 
@@ -1005,7 +1013,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_058960.json:
 ```json
 {
-    "body": "The patch `trac_7123-iter.patch` looks good. Doctesting the whole Sage library, the only failure I got is the following:\n\n```\nsage -t -long devel/sage/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/sage-4.2.alpha0-sage.math/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_vector_double_dense.py\n         [2.5 s]\n```\n\nThis doctest passed on a second try.",
+    "body": "The patch `trac_7123-iter.patch` looks good. Doctesting the whole Sage library, the only failure I got is the following:\n\n```\nsage -t -long devel/sage/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/sage-4.2.alpha0-sage.math/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_vector_double_dense.py\n         [2.5 s]\n```\nThis doctest passed on a second try.",
     "created_at": "2009-10-19T08:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
@@ -1033,7 +1041,6 @@ Got:
 For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_vector_double_dense.py
          [2.5 s]
 ```
-
 This doctest passed on a second try.
 
 

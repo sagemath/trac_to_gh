@@ -3,7 +3,7 @@
 archive/issues_009056.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n\n```\nsage: SemiRings()\nsage: Category of semi rings\nsage: NN = NonNegativeIntegers()\nsage: NN.category()\nCategory of semi rings\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n```\nsage: SemiRings()\nsage: Category of semi rings\nsage: NN = NonNegativeIntegers()\nsage: NN.category()\nCategory of semi rings\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
     "created_at": "2010-05-26T14:26:00Z",
     "labels": [
         "component: categories"
@@ -23,7 +23,6 @@ Keywords: semiring
 
 All is in the title, we want :
 
-
 ```
 sage: SemiRings()
 sage: Category of semi rings
@@ -31,7 +30,6 @@ sage: NN = NonNegativeIntegers()
 sage: NN.category()
 Category of semi rings
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9056
 
@@ -157,7 +155,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083878.json:
 ```json
 {
-    "body": "Replying to [comment:5 nthiery]:\n> There are a couple failures in the category tests (due to the new test and new category); please fix them. Note that I made a small change to your patch, so you should make sure to first pull.\n\nA couple failures in combinat/sf as well due to the new _test_distributivity.",
+    "body": "Replying to [comment:5 nthiery]:\n> There are a couple failures in the category tests (due to the new test and new category); please fix them. Note that I made a small change to your patch, so you should make sure to first pull.\n\n\nA couple failures in combinat/sf as well due to the new _test_distributivity.",
     "created_at": "2010-05-27T16:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -168,6 +166,7 @@ archive/issue_comments_083878.json:
 
 Replying to [comment:5 nthiery]:
 > There are a couple failures in the category tests (due to the new test and new category); please fix them. Note that I made a small change to your patch, so you should make sure to first pull.
+
 
 A couple failures in combinat/sf as well due to the new _test_distributivity.
 
@@ -450,7 +449,7 @@ Nicolas: please fold, and reupload, and set positive review on my behalf!
 archive/issue_comments_083891.json:
 ```json
 {
-    "body": "Arr, here is the list of patches in a more readable format:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\ntrac_9056_semirings_category-nb.patch\ntrac_9056_semirings_category-review-nt.patch\n```\n",
+    "body": "Arr, here is the list of patches in a more readable format:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\ntrac_9056_semirings_category-nb.patch\ntrac_9056_semirings_category-review-nt.patch\n```",
     "created_at": "2010-06-07T20:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -495,7 +494,6 @@ trac_9056_semirings_category-review-nt.patch
 
 
 
-
 ---
 
 archive/issue_comments_083892.json:
@@ -537,7 +535,7 @@ Things look good to me.  Could I get a quick review of the patch I just posted. 
 archive/issue_comments_083894.json:
 ```json
 {
-    "body": "Replying to [comment:17 mhansen]:\n> Things look good to me.  Could I get a quick review of the patch I just posted.  Without this, llt.py times out.\n\nOn my copy of 4.4.4.alpha0, with attachment:trac_9056_semirings_category-nb.patch applied, I got the timeout without your reviewer patch, and it takes about 8 seconds with your patch. I don't like disabling our doctest coverage, but this seems reasonable. Positive review to your reviewer patch. I'm leaving this as needs_review; Mike, you can change this if everything else is okay.",
+    "body": "Replying to [comment:17 mhansen]:\n> Things look good to me.  Could I get a quick review of the patch I just posted.  Without this, llt.py times out.\n\n\nOn my copy of 4.4.4.alpha0, with attachment:trac_9056_semirings_category-nb.patch applied, I got the timeout without your reviewer patch, and it takes about 8 seconds with your patch. I don't like disabling our doctest coverage, but this seems reasonable. Positive review to your reviewer patch. I'm leaving this as needs_review; Mike, you can change this if everything else is okay.",
     "created_at": "2010-06-09T03:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -548,6 +546,7 @@ archive/issue_comments_083894.json:
 
 Replying to [comment:17 mhansen]:
 > Things look good to me.  Could I get a quick review of the patch I just posted.  Without this, llt.py times out.
+
 
 On my copy of 4.4.4.alpha0, with attachment:trac_9056_semirings_category-nb.patch applied, I got the timeout without your reviewer patch, and it takes about 8 seconds with your patch. I don't like disabling our doctest coverage, but this seems reasonable. Positive review to your reviewer patch. I'm leaving this as needs_review; Mike, you can change this if everything else is okay.
 
@@ -628,7 +627,7 @@ Just as a little data point, on my machine, without Mike's patch, doctesting llt
 archive/issue_comments_083898.json:
 ```json
 {
-    "body": "Thanks Mike for the fix!\n\nFor now, I still don't really manage to integrate completely such patch which touch so many things in Sage. Dependencies are not trivial when you begin to modify categories.\n\nFor Nicolas Thi\u00e9ry : This patch go in Sage before I fold your second reviewer patch :\n\n```\ndiff --git a/sage/categories/primer.py b/sage/categories/primer.py\n--- a/sage/categories/primer.py\n+++ b/sage/categories/primer.py\n@@ -122,6 +122,7 @@ Example of mathematical information::\n          Category of rings,\n          Category of rngs,\n          Category of commutative additive groups,\n+         Category of semirings,\n          Category of commutative additive monoids,\n          Category of commutative additive semigroups,\n          Category of additive magmas,\n@@ -503,6 +504,7 @@ This gives the following order::\n      Category of algebras over Rational Field,\n      Category of rings,\n      Category of rngs,\n+     Category of semirings,\n      Category of monoids,\n      Category of semigroups,\n      Category of magmas,\n```\n\n\nI don't no the status about your improvements of the category primer but be aware about this fact. As I don't want to produce some chaos in the queue, I didn't touch your reviewer patch \"trac_9056_semirings_category-review-nt.patch\".\n\nSorry to being late to fold it.\n\nNicolas (the little).",
+    "body": "Thanks Mike for the fix!\n\nFor now, I still don't really manage to integrate completely such patch which touch so many things in Sage. Dependencies are not trivial when you begin to modify categories.\n\nFor Nicolas Thi\u00e9ry : This patch go in Sage before I fold your second reviewer patch :\n\n```\ndiff --git a/sage/categories/primer.py b/sage/categories/primer.py\n--- a/sage/categories/primer.py\n+++ b/sage/categories/primer.py\n@@ -122,6 +122,7 @@ Example of mathematical information::\n          Category of rings,\n          Category of rngs,\n          Category of commutative additive groups,\n+         Category of semirings,\n          Category of commutative additive monoids,\n          Category of commutative additive semigroups,\n          Category of additive magmas,\n@@ -503,6 +504,7 @@ This gives the following order::\n      Category of algebras over Rational Field,\n      Category of rings,\n      Category of rngs,\n+     Category of semirings,\n      Category of monoids,\n      Category of semigroups,\n      Category of magmas,\n```\n\nI don't no the status about your improvements of the category primer but be aware about this fact. As I don't want to produce some chaos in the queue, I didn't touch your reviewer patch \"trac_9056_semirings_category-review-nt.patch\".\n\nSorry to being late to fold it.\n\nNicolas (the little).",
     "created_at": "2010-06-09T07:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -665,7 +664,6 @@ diff --git a/sage/categories/primer.py b/sage/categories/primer.py
       Category of magmas,
 ```
 
-
 I don't no the status about your improvements of the category primer but be aware about this fact. As I don't want to produce some chaos in the queue, I didn't touch your reviewer patch "trac_9056_semirings_category-review-nt.patch".
 
 Sorry to being late to fold it.
@@ -679,7 +677,7 @@ Nicolas (the little).
 archive/issue_comments_083899.json:
 ```json
 {
-    "body": "Replying to [comment:21 nborie]:\n> For now, I still don't really manage to integrate completely such patch which touch so many things in Sage. Dependencies are not trivial when you begin to modify categories.\n\nDon't worry, you are doing a great job.\n\n> For Nicolas Thi\u00e9ry : This patch go in Sage before I fold your second reviewer patch :\n\nMike said above that he took the two patches right away from the Sage-Combinat queue and folded them together. So all is fine.",
+    "body": "Replying to [comment:21 nborie]:\n> For now, I still don't really manage to integrate completely such patch which touch so many things in Sage. Dependencies are not trivial when you begin to modify categories.\n\n\nDon't worry, you are doing a great job.\n\n> For Nicolas Thi\u00e9ry : This patch go in Sage before I fold your second reviewer patch :\n\n\nMike said above that he took the two patches right away from the Sage-Combinat queue and folded them together. So all is fine.",
     "created_at": "2010-06-09T08:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -691,9 +689,11 @@ archive/issue_comments_083899.json:
 Replying to [comment:21 nborie]:
 > For now, I still don't really manage to integrate completely such patch which touch so many things in Sage. Dependencies are not trivial when you begin to modify categories.
 
+
 Don't worry, you are doing a great job.
 
 > For Nicolas Thiéry : This patch go in Sage before I fold your second reviewer patch :
+
 
 Mike said above that he took the two patches right away from the Sage-Combinat queue and folded them together. So all is fine.
 
@@ -704,7 +704,7 @@ Mike said above that he took the two patches right away from the Sage-Combinat q
 archive/issue_comments_083900.json:
 ```json
 {
-    "body": "Replying to [comment:19 mhansen]:\n> I've folded together the two #9056 patches on the combinat server together and merged the llt patch here.\n\nThanks Mike!\n\nFor later reference, do you mind uploading here the exact patches that you merged, if you still have them under hand?",
+    "body": "Replying to [comment:19 mhansen]:\n> I've folded together the two #9056 patches on the combinat server together and merged the llt patch here.\n\n\nThanks Mike!\n\nFor later reference, do you mind uploading here the exact patches that you merged, if you still have them under hand?",
     "created_at": "2010-06-09T08:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
@@ -715,6 +715,7 @@ archive/issue_comments_083900.json:
 
 Replying to [comment:19 mhansen]:
 > I've folded together the two #9056 patches on the combinat server together and merged the llt patch here.
+
 
 Thanks Mike!
 

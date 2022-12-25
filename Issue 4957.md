@@ -3,7 +3,7 @@
 archive/issues_004957.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: z = 18446462603027742720\nsage: hash(z)\n66912258\nsage: hash(int(z))\n-131071\nsage: hash(long(z))\n-131071\n```\n\n\nThis causes problems with looking up values in hashtables...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4957\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: z = 18446462603027742720\nsage: hash(z)\n66912258\nsage: hash(int(z))\n-131071\nsage: hash(long(z))\n-131071\n```\n\nThis causes problems with looking up values in hashtables...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4957\n\n",
     "created_at": "2009-01-09T02:26:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_004957.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: z = 18446462603027742720
 sage: hash(z)
@@ -29,7 +28,6 @@ sage: hash(int(z))
 sage: hash(long(z))
 -131071
 ```
-
 
 This causes problems with looking up values in hashtables...
 
@@ -135,7 +133,7 @@ Excellent. I haven't been able to break it, and the code (and comment) look good
 archive/issue_comments_037609.json:
 ```json
 {
-    "body": "This is broken on 64 bit linux:\n\n```\nsage -t -long \"devel/sage/sage/rings/integer.pyx\"           \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2085:\n    sage: n = -920390823904823094890238490238484; n.__hash__()\nExpected:\n    6874330978542788722   \nGot:\n    6917515397235318898\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2101:\n    sage: hash(n)\nExpected:\n    -9223372036854767616      \nGot:\n    8192\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2104:\n    sage: hash(n) == hash(int(n))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
+    "body": "This is broken on 64 bit linux:\n\n```\nsage -t -long \"devel/sage/sage/rings/integer.pyx\"           \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2085:\n    sage: n = -920390823904823094890238490238484; n.__hash__()\nExpected:\n    6874330978542788722   \nGot:\n    6917515397235318898\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2101:\n    sage: hash(n)\nExpected:\n    -9223372036854767616      \nGot:\n    8192\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/integer.pyx\", line 2104:\n    sage: hash(n) == hash(int(n))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```",
     "created_at": "2009-01-24T14:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
@@ -171,7 +169,6 @@ Got:
     False
 **********************************************************************
 ```
-
 
 
 

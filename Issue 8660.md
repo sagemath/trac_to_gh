@@ -284,7 +284,7 @@ Simon
 archive/issue_comments_078481.json:
 ```json
 {
-    "body": "Replying to [comment:9 SimonKing]:\n> Can someone please tell me what commands are needed to produce the German documentation (in html or pdf), so that I can do some proof reading?\n\nApply the patch [trac_8660-installation-de.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8660/trac_8660-installation-de.patch), then issue the following command to build the HTML version:\n\n\n```\n./sage -docbuild de/installation html\n```\n\n\nOr do the following to get the PDF version:\n\n\n```\n./sage -docbuild de/installation pdf\n```\n\n\n\n\n\n> Should one post a patch that builds on top of the original patch?\n\nYes, something like that. In that case, you would be posting a reviewer patch.",
+    "body": "Replying to [comment:9 SimonKing]:\n> Can someone please tell me what commands are needed to produce the German documentation (in html or pdf), so that I can do some proof reading?\n\n\nApply the patch [trac_8660-installation-de.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8660/trac_8660-installation-de.patch), then issue the following command to build the HTML version:\n\n```\n./sage -docbuild de/installation html\n```\n\nOr do the following to get the PDF version:\n\n```\n./sage -docbuild de/installation pdf\n```\n\n\n\n\n> Should one post a patch that builds on top of the original patch?\n\n\nYes, something like that. In that case, you would be posting a reviewer patch.",
     "created_at": "2010-04-17T13:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -296,16 +296,14 @@ archive/issue_comments_078481.json:
 Replying to [comment:9 SimonKing]:
 > Can someone please tell me what commands are needed to produce the German documentation (in html or pdf), so that I can do some proof reading?
 
-Apply the patch [trac_8660-installation-de.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8660/trac_8660-installation-de.patch), then issue the following command to build the HTML version:
 
+Apply the patch [trac_8660-installation-de.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8660/trac_8660-installation-de.patch), then issue the following command to build the HTML version:
 
 ```
 ./sage -docbuild de/installation html
 ```
 
-
 Or do the following to get the PDF version:
-
 
 ```
 ./sage -docbuild de/installation pdf
@@ -314,8 +312,8 @@ Or do the following to get the PDF version:
 
 
 
-
 > Should one post a patch that builds on top of the original patch?
+
 
 Yes, something like that. In that case, you would be posting a reviewer patch.
 
@@ -326,7 +324,7 @@ Yes, something like that. In that case, you would be posting a reviewer patch.
 archive/issue_comments_078482.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> Sorry to say, but this translation **really** needs (more) work.\n> \n> There are still lots of typos, inconsistently chosen terms and style, ...\n\nI agree. I read introduction.rst (which describes the components of Sage) and found several mathematical notions that are different in German. Just two examples: \n* \"toric varieties\" are not \"Torus-Varianten\" but \"torische Variet\u00e4ten\".\n* \"ghmm: Modellbibliothek f\u00fcr versteckte Markov-Prozesse\": ghmm is in fact a library that is concerned with hidden Markov models (so, the word \"model\" refers to Markov and not to the library). \n\nI hope that Monday I can provide a patch on top of trac_8660-installation-de.patch.\n\nBest regards,\nSimon",
+    "body": "Replying to [comment:3 leif]:\n> Sorry to say, but this translation **really** needs (more) work.\n> \n> There are still lots of typos, inconsistently chosen terms and style, ...\n\n\nI agree. I read introduction.rst (which describes the components of Sage) and found several mathematical notions that are different in German. Just two examples: \n* \"toric varieties\" are not \"Torus-Varianten\" but \"torische Variet\u00e4ten\".\n* \"ghmm: Modellbibliothek f\u00fcr versteckte Markov-Prozesse\": ghmm is in fact a library that is concerned with hidden Markov models (so, the word \"model\" refers to Markov and not to the library). \n\nI hope that Monday I can provide a patch on top of trac_8660-installation-de.patch.\n\nBest regards,\nSimon",
     "created_at": "2010-04-17T18:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -339,6 +337,7 @@ Replying to [comment:3 leif]:
 > Sorry to say, but this translation **really** needs (more) work.
 > 
 > There are still lots of typos, inconsistently chosen terms and style, ...
+
 
 I agree. I read introduction.rst (which describes the components of Sage) and found several mathematical notions that are different in German. Just two examples: 
 * "toric varieties" are not "Torus-Varianten" but "torische Varietäten".
@@ -462,7 +461,7 @@ Sorry, regarding #8698, I was mistaken: I thought that the text of #8698 is a su
 archive/issue_comments_078488.json:
 ```json
 {
-    "body": "Replying to [comment:12 SimonKing]:\n> Earlier than I thought, I can provide a reviewer patch trac_8660-installation-de_reviewer.patch, which is to be applied after trac_8660-installation-de.patch\n\nHabe den Patch lediglich ueberflogen, sieht aber schon ganz gut aus.\n\nEinige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (schilly) bemerkte, sollte man vielleicht die Uebersetzung einiger Begriffe abklaeren.\n\n(But don't ask for a patch now.)\n\n-Leif",
+    "body": "Replying to [comment:12 SimonKing]:\n> Earlier than I thought, I can provide a reviewer patch trac_8660-installation-de_reviewer.patch, which is to be applied after trac_8660-installation-de.patch\n\n\nHabe den Patch lediglich ueberflogen, sieht aber schon ganz gut aus.\n\nEinige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (schilly) bemerkte, sollte man vielleicht die Uebersetzung einiger Begriffe abklaeren.\n\n(But don't ask for a patch now.)\n\n-Leif",
     "created_at": "2010-04-19T05:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -473,6 +472,7 @@ archive/issue_comments_078488.json:
 
 Replying to [comment:12 SimonKing]:
 > Earlier than I thought, I can provide a reviewer patch trac_8660-installation-de_reviewer.patch, which is to be applied after trac_8660-installation-de.patch
+
 
 Habe den Patch lediglich ueberflogen, sieht aber schon ganz gut aus.
 
@@ -489,7 +489,7 @@ Einige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (sch
 archive/issue_comments_078489.json:
 ```json
 {
-    "body": "Replying to [comment:14 leif]:\n> Einige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (schilly) bemerkte, sollte man vielleicht die Uebersetzung einiger Begriffe abklaeren.\n\nIf you can't do a patch for now: Can you make a list of these notions and flaws?",
+    "body": "Replying to [comment:14 leif]:\n> Einige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (schilly) bemerkte, sollte man vielleicht die Uebersetzung einiger Begriffe abklaeren.\n\n\nIf you can't do a patch for now: Can you make a list of these notions and flaws?",
     "created_at": "2010-04-19T07:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -501,6 +501,7 @@ archive/issue_comments_078489.json:
 Replying to [comment:14 leif]:
 > Einige Ungereimtheiten und Fehler sind allerdings noch drin, und wie Harald (schilly) bemerkte, sollte man vielleicht die Uebersetzung einiger Begriffe abklaeren.
 
+
 If you can't do a patch for now: Can you make a list of these notions and flaws?
 
 
@@ -510,7 +511,7 @@ If you can't do a patch for now: Can you make a list of these notions and flaws?
 archive/issue_comments_078490.json:
 ```json
 {
-    "body": "Replying to [comment:15 SimonKing]:\n> If you can't do a patch for now: Can you make a list of these notions and flaws?\n\nSorry, both alternatives require some time (as I'd like to change a lot of things), so be patient...\n\nYou're currently focussing on the translation of the tutorial anyway?\n\n-Leif",
+    "body": "Replying to [comment:15 SimonKing]:\n> If you can't do a patch for now: Can you make a list of these notions and flaws?\n\n\nSorry, both alternatives require some time (as I'd like to change a lot of things), so be patient...\n\nYou're currently focussing on the translation of the tutorial anyway?\n\n-Leif",
     "created_at": "2010-04-21T01:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -521,6 +522,7 @@ archive/issue_comments_078490.json:
 
 Replying to [comment:15 SimonKing]:
 > If you can't do a patch for now: Can you make a list of these notions and flaws?
+
 
 Sorry, both alternatives require some time (as I'd like to change a lot of things), so be patient...
 
@@ -535,7 +537,7 @@ You're currently focussing on the translation of the tutorial anyway?
 archive/issue_comments_078491.json:
 ```json
 {
-    "body": "Replying to [comment:16 leif]:\n> ... \n> You're currently focussing on the translation of the tutorial anyway?\n\nYes.",
+    "body": "Replying to [comment:16 leif]:\n> ... \n> You're currently focussing on the translation of the tutorial anyway?\n\n\nYes.",
     "created_at": "2010-04-21T07:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -548,6 +550,7 @@ Replying to [comment:16 leif]:
 > ... 
 > You're currently focussing on the translation of the tutorial anyway?
 
+
 Yes.
 
 
@@ -557,7 +560,7 @@ Yes.
 archive/issue_comments_078492.json:
 ```json
 {
-    "body": "I was not able to apply the patch to my sage 4.7 on my 64bit mac:\n\n\n```\nsage: hg_sage.apply(\"/Users/hedtke/trac_8660-installation-de.patch\")\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg status\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg status\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg import   \"/Users/hedtke/trac_8660-installation-de.patch\"\napplying /Users/hedtke/trac_8660-installation-de.patch\npatching file doc/common/builder.py\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/common/builder.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "I was not able to apply the patch to my sage 4.7 on my 64bit mac:\n\n```\nsage: hg_sage.apply(\"/Users/hedtke/trac_8660-installation-de.patch\")\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg status\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg status\n\nWARNING:\nMake sure to create a ~/.hgrc file:\n----------------------------------------------------------------------\n[ui]\nusername = William Stein <wstein@gmail.com>\n----------------------------------------------------------------------\n\n\ncd \"/Users/hedtke/sage/devel/sage\" && hg import   \"/Users/hedtke/trac_8660-installation-de.patch\"\napplying /Users/hedtke/trac_8660-installation-de.patch\npatching file doc/common/builder.py\nHunk #1 FAILED at 13\n1 out of 1 hunks FAILED -- saving rejects to file doc/common/builder.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2011-07-17T10:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -567,7 +570,6 @@ archive/issue_comments_078492.json:
 ```
 
 I was not able to apply the patch to my sage 4.7 on my 64bit mac:
-
 
 ```
 sage: hg_sage.apply("/Users/hedtke/trac_8660-installation-de.patch")
@@ -610,7 +612,6 @@ abort: patch failed to apply
 
 
 
-
 ---
 
 archive/issue_comments_078493.json:
@@ -634,7 +635,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078494.json:
 ```json
 {
-    "body": "> I was not able to apply the patch to my sage 4.7 on my 64bit mac:\n\nI think that the patch to the file 'builder.py' is no longer necessary, so that part of the patch file can be deleted.",
+    "body": "> I was not able to apply the patch to my sage 4.7 on my 64bit mac:\n\n\nI think that the patch to the file 'builder.py' is no longer necessary, so that part of the patch file can be deleted.",
     "created_at": "2011-07-17T14:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -645,6 +646,7 @@ archive/issue_comments_078494.json:
 
 > I was not able to apply the patch to my sage 4.7 on my 64bit mac:
 
+
 I think that the patch to the file 'builder.py' is no longer necessary, so that part of the patch file can be deleted.
 
 
@@ -654,7 +656,7 @@ I think that the patch to the file 'builder.py' is no longer necessary, so that 
 archive/issue_comments_078495.json:
 ```json
 {
-    "body": "Ok. After deletion of the \"builder.py\" part of the patch I am able to apply both patches. But the docbuild failed:\n\n\n```\nnoname:graphs hedtke$ sage -docbuild de/installation pdf\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n'de/installation' is not a recognized document. Type 'sage -docbuild -D' for a list\nof documents, or 'sage -docbuild --help' for more help.\n```\n\n\nWhat I did:\n1. build a sage clone\n2. hg_sage.apply() with the modified first patch and the original second patch\n3. sage -b\n4. sage -docbuild de/installation pdf\n\nbut the files are there:\n\n\n```\nnoname:installation hedtke$ pwd\n/Users/hedtke/sage/devel/sage-test/doc/de/installation\nnoname:installation hedtke$ ls\nbinary.rst\t\ticon.rst\t\tquick-guide.rst\nconf.py\t\t\tindex.rst\t\tsagetex.rst\ndocumentation.rst\tintroduction.rst\tsource.rst\n```\n",
+    "body": "Ok. After deletion of the \"builder.py\" part of the patch I am able to apply both patches. But the docbuild failed:\n\n```\nnoname:graphs hedtke$ sage -docbuild de/installation pdf\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n'de/installation' is not a recognized document. Type 'sage -docbuild -D' for a list\nof documents, or 'sage -docbuild --help' for more help.\n```\n\nWhat I did:\n1. build a sage clone\n2. hg_sage.apply() with the modified first patch and the original second patch\n3. sage -b\n4. sage -docbuild de/installation pdf\n\nbut the files are there:\n\n```\nnoname:installation hedtke$ pwd\n/Users/hedtke/sage/devel/sage-test/doc/de/installation\nnoname:installation hedtke$ ls\nbinary.rst\t\ticon.rst\t\tquick-guide.rst\nconf.py\t\t\tindex.rst\t\tsagetex.rst\ndocumentation.rst\tintroduction.rst\tsource.rst\n```",
     "created_at": "2011-07-17T18:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -665,7 +667,6 @@ archive/issue_comments_078495.json:
 
 Ok. After deletion of the "builder.py" part of the patch I am able to apply both patches. But the docbuild failed:
 
-
 ```
 noname:graphs hedtke$ sage -docbuild de/installation pdf
 Detected SAGE64 flag
@@ -674,7 +675,6 @@ Building Sage on OS X in 64-bit mode
 of documents, or 'sage -docbuild --help' for more help.
 ```
 
-
 What I did:
 1. build a sage clone
 2. hg_sage.apply() with the modified first patch and the original second patch
@@ -682,7 +682,6 @@ What I did:
 4. sage -docbuild de/installation pdf
 
 but the files are there:
-
 
 ```
 noname:installation hedtke$ pwd
@@ -695,13 +694,12 @@ documentation.rst	introduction.rst	source.rst
 
 
 
-
 ---
 
 archive/issue_comments_078496.json:
 ```json
 {
-    "body": "I think I see the problem: I was sort of wrong about the patch to builder.py not being necessary.  It's not necessary in the prelease versions of Sage 4.7.1, but a variant of it is necessary in Sage 4.7.  In particular, you need to apply this part of the patch from #9725:\n\n```diff\ndiff -r 361a4ad7d52c -r aad4d26889c1 doc/common/build_options.py\n--- a/doc/common/build_options.py\tFri Feb 25 18:56:01 2011 +0000\n+++ b/doc/common/build_options.py\tWed May 11 20:19:52 2011 +0200\n@@ -4,7 +4,7 @@\n \n import os\n SAGE_DOC = os.environ['SAGE_DOC']\n-LANGUAGES = ['en', 'fr']\n+LANGUAGES = ['de', 'en', 'fr']\n SPHINXOPTS = \"\"\n PAPER = \"\"\n OMIT = [\"introspect\"]  # docs/dirs to omit when listing and building 'all'\n```\n\nYou can certainly just do this by hand if you want.  (Or if you want, you can apply all of the patches from #9725 in order to build the German tutorial.)",
+    "body": "I think I see the problem: I was sort of wrong about the patch to builder.py not being necessary.  It's not necessary in the prelease versions of Sage 4.7.1, but a variant of it is necessary in Sage 4.7.  In particular, you need to apply this part of the patch from #9725:\n\n```diff\ndiff -r 361a4ad7d52c -r aad4d26889c1 doc/common/build_options.py\n--- a/doc/common/build_options.py\tFri Feb 25 18:56:01 2011 +0000\n+++ b/doc/common/build_options.py\tWed May 11 20:19:52 2011 +0200\n@@ -4,7 +4,7 @@\n \n import os\n SAGE_DOC = os.environ['SAGE_DOC']\n-LANGUAGES = ['en', 'fr']\n+LANGUAGES = ['de', 'en', 'fr']\n SPHINXOPTS = \"\"\n PAPER = \"\"\n OMIT = [\"introspect\"]  # docs/dirs to omit when listing and building 'all'\n```\nYou can certainly just do this by hand if you want.  (Or if you want, you can apply all of the patches from #9725 in order to build the German tutorial.)",
     "created_at": "2011-07-17T18:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -726,7 +724,6 @@ diff -r 361a4ad7d52c -r aad4d26889c1 doc/common/build_options.py
  PAPER = ""
  OMIT = ["introspect"]  # docs/dirs to omit when listing and building 'all'
 ```
-
 You can certainly just do this by hand if you want.  (Or if you want, you can apply all of the patches from #9725 in order to build the German tutorial.)
 
 
@@ -965,7 +962,7 @@ Die "Eingabezeile" ist jetzt raus ;-)
 archive/issue_comments_078509.json:
 ```json
 {
-    "body": "Replying to [comment:30 hedtke]:\n> In meinem Dokument kommt \"Installationsf\u00fchrer\" nicht vor. Welche Version hast Du Dir angesehen?\n\n\u00c4hem, habe nur das komplette Attachment \u00fcberflogen, der F\u00fchrer ist noch in `doc/de/installation/index.rst` zu finden.\n\nBin mir jetzt nicht sicher welche Teile neu oder von Dir \u00fcberarbeitet sind.",
+    "body": "Replying to [comment:30 hedtke]:\n> In meinem Dokument kommt \"Installationsf\u00fchrer\" nicht vor. Welche Version hast Du Dir angesehen?\n\n\n\u00c4hem, habe nur das komplette Attachment \u00fcberflogen, der F\u00fchrer ist noch in `doc/de/installation/index.rst` zu finden.\n\nBin mir jetzt nicht sicher welche Teile neu oder von Dir \u00fcberarbeitet sind.",
     "created_at": "2011-07-19T21:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -976,6 +973,7 @@ archive/issue_comments_078509.json:
 
 Replying to [comment:30 hedtke]:
 > In meinem Dokument kommt "Installationsführer" nicht vor. Welche Version hast Du Dir angesehen?
+
 
 Ähem, habe nur das komplette Attachment überflogen, der Führer ist noch in `doc/de/installation/index.rst` zu finden.
 
@@ -1026,7 +1024,7 @@ Vielen lieben Dank. Diese Datei produziert keinen Output in der PDF und in der H
 archive/issue_comments_078512.json:
 ```json
 {
-    "body": "John, we really have to get rid of these odd messages:\n\n```\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n# HG changeset patch\n# User Ivo Hedtke <hedtke@me.com>\n# Date 1311110488 -7200\n# Node ID 3348063a50bb0129e20520811c459b799eca49b9\n# Parent  7bf76cfce2b3dabf5aeaf7a47d985b2204ad5cc0\n```\n\n(That's from [attachment:trac_8660_restart_p2.patch], the other two patches have it as well.)",
+    "body": "John, we really have to get rid of these odd messages:\n\n```\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n# HG changeset patch\n# User Ivo Hedtke <hedtke@me.com>\n# Date 1311110488 -7200\n# Node ID 3348063a50bb0129e20520811c459b799eca49b9\n# Parent  7bf76cfce2b3dabf5aeaf7a47d985b2204ad5cc0\n```\n(That's from [attachment:trac_8660_restart_p2.patch], the other two patches have it as well.)",
     "created_at": "2011-07-19T21:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1046,7 +1044,6 @@ Building Sage on OS X in 64-bit mode
 # Node ID 3348063a50bb0129e20520811c459b799eca49b9
 # Parent  7bf76cfce2b3dabf5aeaf7a47d985b2204ad5cc0
 ```
-
 (That's from [attachment:trac_8660_restart_p2.patch], the other two patches have it as well.)
 
 
@@ -1056,7 +1053,7 @@ Building Sage on OS X in 64-bit mode
 archive/issue_comments_078513.json:
 ```json
 {
-    "body": "Replying to [comment:34 leif]:\n> John, we really have to get rid of these odd messages:\n\nAs far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)",
+    "body": "Replying to [comment:34 leif]:\n> John, we really have to get rid of these odd messages:\n\n\nAs far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)",
     "created_at": "2011-07-19T22:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1068,6 +1065,7 @@ archive/issue_comments_078513.json:
 Replying to [comment:34 leif]:
 > John, we really have to get rid of these odd messages:
 
+
 As far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)
 
 
@@ -1077,7 +1075,7 @@ As far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1. 
 archive/issue_comments_078514.json:
 ```json
 {
-    "body": "Replying to [comment:36 jhpalmieri]:\n> As far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)\n\nAh, ok. Never was a victim of them.",
+    "body": "Replying to [comment:36 jhpalmieri]:\n> As far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)\n\n\nAh, ok. Never was a victim of them.",
     "created_at": "2011-07-20T02:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1088,6 +1086,7 @@ archive/issue_comments_078514.json:
 
 Replying to [comment:36 jhpalmieri]:
 > As far as I can tell, they *are* gone in the prerelease versions of Sage 4.7.1.  (They are still present in 4.7, though.)
+
 
 Ah, ok. Never was a victim of them.
 
@@ -1140,7 +1139,7 @@ Dann sollten wir vielleicht einfach "kurz" streichen. Siehst Du Möglichkeiten/B
 archive/issue_comments_078517.json:
 ```json
 {
-    "body": "Replying to [comment:39 hedtke]:\n> Dann sollten wir vielleicht einfach \"kurz\" streichen. Siehst Du M\u00f6glichkeiten/Bedarf irgendwo signifikant zu k\u00fcrzen?\n\nNaja das Problem ist vorallem auch die Formatierung. \"kurz\" zu streichen w\u00e4re schon sinnvoll.\n\nMan k\u00f6nnte auch die Reihenfolge \u00e4ndern, sodass die wichtigen Punkte (baumfreundlich ausdruckbar) am Anfang stehen. Die Paketliste k\u00f6nnte man beispielsweise in einen Anhang verfrachten.\n\nDenke aber eher, eine zus\u00e4tzliche, *wirklich kurze* Installationsanleitung (1 bis 2 DIN-A4-Seiten) zum Ausdrucken w\u00e4re praktischer. Auf besonderen, f\u00fcr den 08/15-Benutzer eher irrelevanten Kram k\u00f6nnte man dort einfach verweisen.",
+    "body": "Replying to [comment:39 hedtke]:\n> Dann sollten wir vielleicht einfach \"kurz\" streichen. Siehst Du M\u00f6glichkeiten/Bedarf irgendwo signifikant zu k\u00fcrzen?\n\n\nNaja das Problem ist vorallem auch die Formatierung. \"kurz\" zu streichen w\u00e4re schon sinnvoll.\n\nMan k\u00f6nnte auch die Reihenfolge \u00e4ndern, sodass die wichtigen Punkte (baumfreundlich ausdruckbar) am Anfang stehen. Die Paketliste k\u00f6nnte man beispielsweise in einen Anhang verfrachten.\n\nDenke aber eher, eine zus\u00e4tzliche, *wirklich kurze* Installationsanleitung (1 bis 2 DIN-A4-Seiten) zum Ausdrucken w\u00e4re praktischer. Auf besonderen, f\u00fcr den 08/15-Benutzer eher irrelevanten Kram k\u00f6nnte man dort einfach verweisen.",
     "created_at": "2011-07-20T07:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1151,6 +1150,7 @@ archive/issue_comments_078517.json:
 
 Replying to [comment:39 hedtke]:
 > Dann sollten wir vielleicht einfach "kurz" streichen. Siehst Du Möglichkeiten/Bedarf irgendwo signifikant zu kürzen?
+
 
 Naja das Problem ist vorallem auch die Formatierung. "kurz" zu streichen wäre schon sinnvoll.
 
@@ -1203,7 +1203,7 @@ Apply trac_8660_restart.patch, trac_8660_restart_p1.patch, trac_8660_restart_p2.
 archive/issue_comments_078520.json:
 ```json
 {
-    "body": "Die ersten zwei Zeilen in trac_8660_restart.patch gehoeren da nicht hin:\n\n```\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n# HG changeset patch\n...\n```\n\nDer Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...\n\nThe perfect is the enemy of the good",
+    "body": "Die ersten zwei Zeilen in trac_8660_restart.patch gehoeren da nicht hin:\n\n```\nDetected SAGE64 flag\nBuilding Sage on OS X in 64-bit mode\n# HG changeset patch\n...\n```\nDer Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...\n\nThe perfect is the enemy of the good",
     "created_at": "2013-01-13T11:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1220,7 +1220,6 @@ Building Sage on OS X in 64-bit mode
 # HG changeset patch
 ...
 ```
-
 Der Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...
 
 The perfect is the enemy of the good
@@ -1232,7 +1231,7 @@ The perfect is the enemy of the good
 archive/issue_comments_078521.json:
 ```json
 {
-    "body": "Replying to [comment:43 vbraun]:\n> The perfect is the enemy of the good\n\nDer Feind des Guten ist das bessere they say.",
+    "body": "Replying to [comment:43 vbraun]:\n> The perfect is the enemy of the good\n\n\nDer Feind des Guten ist das bessere they say.",
     "created_at": "2013-01-13T14:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1244,6 +1243,7 @@ archive/issue_comments_078521.json:
 Replying to [comment:43 vbraun]:
 > The perfect is the enemy of the good
 
+
 Der Feind des Guten ist das bessere they say.
 
 
@@ -1253,7 +1253,7 @@ Der Feind des Guten ist das bessere they say.
 archive/issue_comments_078522.json:
 ```json
 {
-    "body": "> Der Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...\n\"mergen sollen\" - schon wieder so was eingedeutscht... Ist \"Installationsf\u00fchrer\" denn so viel schlimmer als Airport BER/FRA/...? ;-)\n\n#9725 ist auch l\u00e4ngst \"eingemergt\", falls man es so formulieren kann...\n\nIch habe die \"patches\" \"rebasiert\", d.h. die zwei \u00fcberfl\u00fcssigen Zeilen entfernt.   Volkers Kommentar betrachte ich als Erlaubnis, \"positive review\" zu \"clicken\".  Ich sehe keine schlimme Formatierung in die \"gebaute\" Dokumentation.",
+    "body": "> Der Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...\n\n\"mergen sollen\" - schon wieder so was eingedeutscht... Ist \"Installationsf\u00fchrer\" denn so viel schlimmer als Airport BER/FRA/...? ;-)\n\n#9725 ist auch l\u00e4ngst \"eingemergt\", falls man es so formulieren kann...\n\nIch habe die \"patches\" \"rebasiert\", d.h. die zwei \u00fcberfl\u00fcssigen Zeilen entfernt.   Volkers Kommentar betrachte ich als Erlaubnis, \"positive review\" zu \"clicken\".  Ich sehe keine schlimme Formatierung in die \"gebaute\" Dokumentation.",
     "created_at": "2013-01-17T13:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1263,6 +1263,7 @@ archive/issue_comments_078522.json:
 ```
 
 > Der Inhalt sieht OK aus, haetten wir schon laengst mergen sollen. Falls Leif noch etwas an der Formulierung schrauben will dann kann er ja selbst noch einen patch dazufuegen...
+
 "mergen sollen" - schon wieder so was eingedeutscht... Ist "Installationsführer" denn so viel schlimmer als Airport BER/FRA/...? ;-)
 
 #9725 ist auch längst "eingemergt", falls man es so formulieren kann...
@@ -1365,7 +1366,7 @@ archive/issue_events_020954.json:
 archive/issue_comments_078527.json:
 ```json
 {
-    "body": "It's a very nitpicking detail, but you should not use TABs for indentation.  Here is a TAB used:\n\n```\nZur \u00dcberpr\u00fcfung of ``perl`` installiert ist, tippt man\n\n::\n\n   command -v perl\n\n```\n",
+    "body": "It's a very nitpicking detail, but you should not use TABs for indentation.  Here is a TAB used:\n\n```\nZur \u00dcberpr\u00fcfung of ``perl`` installiert ist, tippt man\n\n::\n\n   command -v perl\n\n```",
     "created_at": "2013-01-19T09:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1384,7 +1385,6 @@ Zur Überprüfung of ``perl`` installiert ist, tippt man
    command -v perl
 
 ```
-
 
 
 
@@ -1411,7 +1411,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_078529.json:
 ```json
 {
-    "body": "I am afraid this is a translation of an **outdated version** of the installation manual, a lot has changed and is in fact quite wrong, in particular the \"installing from source\" part.  It even causes:\n\n```\nsage -t  --long -force_lib devel/sage/doc/de/installation/source.rst\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/devel/sage-main/doc/de/installation/source.rst\", line 166:\n    sage: import _tkinter\nException raised:\n    Traceback (most recent call last):\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        import _tkinter###line 166:\n    sage: import _tkinter\n    ImportError: No module named _tkinter\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/devel/sage-main/doc/de/installation/source.rst\", line 167:\n    sage: import Tkinter\nException raised:\n    Traceback (most recent call last):\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        import Tkinter###line 167:\n    sage: import Tkinter\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/lib/python2.7/lib-tk/Tkinter.py\", line 39, in <module>\n        import _tkinter # If this fails your Python may not be configured for Tk\n    ImportError: No module named _tkinter\n**********************************************************************\n```\n",
+    "body": "I am afraid this is a translation of an **outdated version** of the installation manual, a lot has changed and is in fact quite wrong, in particular the \"installing from source\" part.  It even causes:\n\n```\nsage -t  --long -force_lib devel/sage/doc/de/installation/source.rst\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/devel/sage-main/doc/de/installation/source.rst\", line 166:\n    sage: import _tkinter\nException raised:\n    Traceback (most recent call last):\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        import _tkinter###line 166:\n    sage: import _tkinter\n    ImportError: No module named _tkinter\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/devel/sage-main/doc/de/installation/source.rst\", line 167:\n    sage: import Tkinter\nException raised:\n    Traceback (most recent call last):\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        import Tkinter###line 167:\n    sage: import Tkinter\n      File \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.7.beta0/local/lib/python2.7/lib-tk/Tkinter.py\", line 39, in <module>\n        import _tkinter # If this fails your Python may not be configured for Tk\n    ImportError: No module named _tkinter\n**********************************************************************\n```",
     "created_at": "2013-01-20T08:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",
     "type": "issue_comment",
@@ -1458,7 +1458,6 @@ Exception raised:
     ImportError: No module named _tkinter
 **********************************************************************
 ```
-
 
 
 

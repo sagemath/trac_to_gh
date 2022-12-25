@@ -3,7 +3,7 @@
 archive/issues_001679.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nFabio Tonti to sage-devel\n\t\nshow details 12:56 AM (20 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nThe page numbers are numbers in the pdf version (in parentheses the printed page numbers)\nI'm actually not sure about how to reference the page numbers...\n\npage 175 (162): ** instead of ^;\nthe pyx example says: \"sage: y(x) = x*sin(x**2)\"\nusing the \"**\" is nice for python, but isn't Sage emphasizing to use \"^\" instead?\n\npage 1843 (1830): ncols()... return number of \"rows\" instead of \"coloumns\";\nthe description for ncols() reads \"number of rows\" instead of \"number of coloumns\"\n\n\n\nBest wishes, Fabio\n```\n\n\nNOTES:\n   The first sin(x**2) above this from plot.py, and I agree with changing it to sin(x^2)\n\n   The second listed problem seems like a clear mistake. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1679\n\n",
+    "body": "Assignee: tba\n\n```\nFabio Tonti to sage-devel\n\t\nshow details 12:56 AM (20 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nThe page numbers are numbers in the pdf version (in parentheses the printed page numbers)\nI'm actually not sure about how to reference the page numbers...\n\npage 175 (162): ** instead of ^;\nthe pyx example says: \"sage: y(x) = x*sin(x**2)\"\nusing the \"**\" is nice for python, but isn't Sage emphasizing to use \"^\" instead?\n\npage 1843 (1830): ncols()... return number of \"rows\" instead of \"coloumns\";\nthe description for ncols() reads \"number of rows\" instead of \"number of coloumns\"\n\n\n\nBest wishes, Fabio\n```\n\nNOTES:\n   The first sin(x**2) above this from plot.py, and I agree with changing it to sin(x^2)\n\n   The second listed problem seems like a clear mistake. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1679\n\n",
     "created_at": "2008-01-04T09:20:27Z",
     "labels": [
         "component: documentation",
@@ -17,7 +17,6 @@ archive/issues_001679.json:
 }
 ```
 Assignee: tba
-
 
 ```
 Fabio Tonti to sage-devel
@@ -43,7 +42,6 @@ the description for ncols() reads "number of rows" instead of "number of coloumn
 
 Best wishes, Fabio
 ```
-
 
 NOTES:
    The first sin(x**2) above this from plot.py, and I agree with changing it to sin(x^2)

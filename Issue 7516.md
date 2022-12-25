@@ -3,7 +3,7 @@
 archive/issues_007516.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is from the \"report a problem\" link in the notebook:\n\nIf you have a vector space, that is a quotient of a subspace of\nanother vector space, then after coercing elements into it, something\ngoes wrong in (un)pickling it.\n\n\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/bosman/sage/<ipython console> in <module>()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.loads\n(sage/structure/sage_object.c:8769)()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/modules/free_module.pyc\nin __hash__(self)\n  4576             True\n  4577         \"\"\"\n-> 4578         return hash(self.__basis)\n  4579\n  4580     def construction(self):\n\nAttributeError: 'FreeModule_submodule_field' object has no attribute\n'_FreeModule_submodule_with_basis_pid__basis'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7516\n\n",
+    "body": "Assignee: @williamstein\n\nThis is from the \"report a problem\" link in the notebook:\n\nIf you have a vector space, that is a quotient of a subspace of\nanother vector space, then after coercing elements into it, something\ngoes wrong in (un)pickling it.\n\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/bosman/sage/<ipython console> in <module>()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.loads\n(sage/structure/sage_object.c:8769)()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/modules/free_module.pyc\nin __hash__(self)\n  4576             True\n  4577         \"\"\"\n-> 4578         return hash(self.__basis)\n  4579\n  4580     def construction(self):\n\nAttributeError: 'FreeModule_submodule_field' object has no attribute\n'_FreeModule_submodule_with_basis_pid__basis'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7516\n\n",
     "created_at": "2009-11-23T04:56:05Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ This is from the "report a problem" link in the notebook:
 If you have a vector space, that is a quotient of a subspace of
 another vector space, then after coercing elements into it, something
 goes wrong in (un)pickling it.
-
 
 ```
 sage: V = VectorSpace(QQ, 2)
@@ -56,7 +55,6 @@ AttributeError: 'FreeModule_submodule_field' object has no attribute
 
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7516
 
 
@@ -68,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7516
 archive/issue_comments_063549.json:
 ```json
 {
-    "body": "NOTE:  This bug does not happen for Free modules over ZZ.  It's only over a field where the issue happens.  \n\n```\nsage: V = FreeModule(ZZ, 2)\nsage: W = V.submodule([V([1,1])])\nsage: Z = W.submodule([])\nsage: WmodZ = W / Z\nsage: loads(dumps(WmodZ))\nFinitely generated module V/W over Integer Ring with invariants (0)\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\nFinitely generated module V/W over Integer Ring with invariants (0)\n```\n",
+    "body": "NOTE:  This bug does not happen for Free modules over ZZ.  It's only over a field where the issue happens.  \n\n```\nsage: V = FreeModule(ZZ, 2)\nsage: W = V.submodule([V([1,1])])\nsage: Z = W.submodule([])\nsage: WmodZ = W / Z\nsage: loads(dumps(WmodZ))\nFinitely generated module V/W over Integer Ring with invariants (0)\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\nFinitely generated module V/W over Integer Ring with invariants (0)\n```",
     "created_at": "2010-01-19T12:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
@@ -91,7 +89,6 @@ sage: WmodZ(W(0))
 sage: loads(dumps(WmodZ))
 Finitely generated module V/W over Integer Ring with invariants (0)
 ```
-
 
 
 
@@ -297,7 +294,7 @@ archive/issue_events_017833.json:
 archive/issue_comments_063554.json:
 ```json
 {
-    "body": "\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n\nVector space quotient V/W of dimension 1 over Rational Field where\nV: Vector space of degree 2 and dimension 1 over Rational Field\nBasis matrix:\n[1 1]\nW: Vector space of degree 2 and dimension 0 over Rational Field\nBasis matrix:\n[]\n```\n\n\nWorks for me. Add a doctest and close?",
+    "body": "```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n\nVector space quotient V/W of dimension 1 over Rational Field where\nV: Vector space of degree 2 and dimension 1 over Rational Field\nBasis matrix:\n[1 1]\nW: Vector space of degree 2 and dimension 0 over Rational Field\nBasis matrix:\n[]\n```\n\nWorks for me. Add a doctest and close?",
     "created_at": "2017-10-06T07:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
@@ -305,7 +302,6 @@ archive/issue_comments_063554.json:
     "user": "https://github.com/simonbrandhorst"
 }
 ```
-
 
 ```
 sage: V = VectorSpace(QQ, 2)
@@ -325,7 +321,6 @@ Basis matrix:
 []
 ```
 
-
 Works for me. Add a doctest and close?
 
 
@@ -335,7 +330,7 @@ Works for me. Add a doctest and close?
 archive/issue_comments_063555.json:
 ```json
 {
-    "body": "Replying to [comment:8 sbrandhorst]:\n> Works for me. Add a doctest and close?\n\nYep. Addendum - Also works for me.",
+    "body": "Replying to [comment:8 sbrandhorst]:\n> Works for me. Add a doctest and close?\n\n\nYep. Addendum - Also works for me.",
     "created_at": "2017-10-09T04:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
@@ -346,6 +341,7 @@ archive/issue_comments_063555.json:
 
 Replying to [comment:8 sbrandhorst]:
 > Works for me. Add a doctest and close?
+
 
 Yep. Addendum - Also works for me.
 

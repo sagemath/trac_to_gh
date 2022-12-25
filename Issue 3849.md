@@ -244,7 +244,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_027326.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> [...]\n> My review, to the extent it counts, is positive.\n\nI'm giving this a positive review. Everything works fine.",
+    "body": "Replying to [comment:7 mpatel]:\n> [...]\n> My review, to the extent it counts, is positive.\n\n\nI'm giving this a positive review. Everything works fine.",
     "created_at": "2009-12-06T07:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
@@ -256,6 +256,7 @@ archive/issue_comments_027326.json:
 Replying to [comment:7 mpatel]:
 > [...]
 > My review, to the extent it counts, is positive.
+
 
 I'm giving this a positive review. Everything works fine.
 

@@ -3,7 +3,7 @@
 archive/issues_009967.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: dancing links\n\nThe Dancing Links class defines a bunch of random integer variables (LEFT, RIGHT, UP, DOWN, ROOTNODE) and exports these to the global namespace. This is kind of sloppy and unprofessional: \n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: hacking\nsage: UP\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9968\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: dancing links\n\nThe Dancing Links class defines a bunch of random integer variables (LEFT, RIGHT, UP, DOWN, ROOTNODE) and exports these to the global namespace. This is kind of sloppy and unprofessional: \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: hacking\nsage: UP\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9968\n\n",
     "created_at": "2010-09-22T10:13:36Z",
     "labels": [
         "component: combinatorics",
@@ -23,7 +23,6 @@ Keywords: dancing links
 
 The Dancing Links class defines a bunch of random integer variables (LEFT, RIGHT, UP, DOWN, ROOTNODE) and exports these to the global namespace. This is kind of sloppy and unprofessional: 
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -36,7 +35,6 @@ Loading Sage library. Current Mercurial branch is: hacking
 sage: UP
 2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9968
 

@@ -3,7 +3,7 @@
 archive/issues_000194.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<x> = ZZ['x']\nsage: x^3 % 2\nDivRem: quotient undefined over ZZ\n/Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 13174 Abort\ntrap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n \nYikes!\nNick\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/194\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x> = ZZ['x']\nsage: x^3 % 2\nDivRem: quotient undefined over ZZ\n/Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 13174 Abort\ntrap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n \nYikes!\nNick\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/194\n\n",
     "created_at": "2007-01-16T05:45:56Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_000194.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<x> = ZZ['x']
 sage: x^3 % 2
@@ -29,7 +28,6 @@ trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 Yikes!
 Nick
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/194
 

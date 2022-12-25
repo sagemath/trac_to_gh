@@ -3,7 +3,7 @@
 archive/issues_006897.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>   (1) getting familiar with Django, if you don't already know it.\n> \n>   (2) reading through the current codenode codebase\n> \n>   (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
+    "body": "Assignee: boothby\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>    (1) getting familiar with Django, if you don't already know it.\n> \n>    (2) reading through the current codenode codebase\n> \n>    (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
     "created_at": "2009-09-06T03:18:54Z",
     "labels": [
         "component: notebook"
@@ -35,11 +35,11 @@ Moving Notebook to Django will abstract the server and  user authentication, and
 > So if you want to help as you describe above, perhaps you could accelerate
 > this.  This involves:
 > 
->   (1) getting familiar with Django, if you don't already know it.
+>    (1) getting familiar with Django, if you don't already know it.
 > 
->   (2) reading through the current codenode codebase
+>    (2) reading through the current codenode codebase
 > 
->   (3) then formulating a plan to replace server/notebook/twist.py with
+>    (3) then formulating a plan to replace server/notebook/twist.py with
 > something based either directly on Django, or possibly using codenode in
 > some way.
 > 
@@ -266,7 +266,7 @@ Apparently, we need the Twisted-trunk to run on Django. Twisted-trunk has some f
 archive/issue_comments_056869.json:
 ```json
 {
-    "body": "Doesn't Twisted.web2 officially support WSGI?  That was my naive understanding, though I haven't tested it.   This is a good sign:\n\n```\nsage: import twisted.web2.wsgi\nsage: help(twisted.web2.wsgi)\n    class WSGIResource(__builtin__.object)\n     |  A web2 Resource which wraps the given WSGI application callable.\n     |  \n     |  The WSGI application will be called in a separate thread (using\n     |  the reactor threadpool) whenever a request for this resource or\n     |  any lower part of the url hierarchy is received.\n     |  \n     |  Methods defined here:\n```\n",
+    "body": "Doesn't Twisted.web2 officially support WSGI?  That was my naive understanding, though I haven't tested it.   This is a good sign:\n\n```\nsage: import twisted.web2.wsgi\nsage: help(twisted.web2.wsgi)\n    class WSGIResource(__builtin__.object)\n     |  A web2 Resource which wraps the given WSGI application callable.\n     |  \n     |  The WSGI application will be called in a separate thread (using\n     |  the reactor threadpool) whenever a request for this resource or\n     |  any lower part of the url hierarchy is received.\n     |  \n     |  Methods defined here:\n```",
     "created_at": "2009-11-18T09:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
@@ -289,7 +289,6 @@ sage: help(twisted.web2.wsgi)
      |  
      |  Methods defined here:
 ```
-
 
 
 
@@ -334,7 +333,7 @@ Twisted 9.0 has finally been released, which means that WSGI is now supported by
 archive/issue_comments_056872.json:
 ```json
 {
-    "body": "Replying to [comment:13 timdumol]:\n> As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.web, though. I was/am under the impression that Twisted.web2 is not supported upstream anymore, and thus we should avoid using it.\n\nTrue.  We should port the notebook back from Twisted.web2 to Twisted.web.  This will be some significant work but it should get done.",
+    "body": "Replying to [comment:13 timdumol]:\n> As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.web, though. I was/am under the impression that Twisted.web2 is not supported upstream anymore, and thus we should avoid using it.\n\n\nTrue.  We should port the notebook back from Twisted.web2 to Twisted.web.  This will be some significant work but it should get done.",
     "created_at": "2009-12-10T01:22:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
@@ -345,6 +344,7 @@ archive/issue_comments_056872.json:
 
 Replying to [comment:13 timdumol]:
 > As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.web, though. I was/am under the impression that Twisted.web2 is not supported upstream anymore, and thus we should avoid using it.
+
 
 True.  We should port the notebook back from Twisted.web2 to Twisted.web.  This will be some significant work but it should get done.
 

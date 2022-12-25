@@ -417,7 +417,7 @@ I'm happy with less changes in partn_ref. Thanks for offering to do that.
 archive/issue_comments_045381.json:
 ```json
 {
-    "body": "Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by @jasongrout created at 2009-04-16 18:55:38\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
+    "body": "Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by @jasongrout created at 2009-04-16 18:55:38\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
     "created_at": "2009-04-16T18:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -436,7 +436,6 @@ You can delete all patches prior to the .3.patch.
 
 Furthermore, after the patch:
 
-
 ```
 sage: search_src('bitset_clear')
 misc/misc_c.pyx:    bitset_clear(r)
@@ -450,7 +449,6 @@ misc/bitset.pxi:    bitset_clear(bits)
 misc/bitset.pxi:        bitset_clear(r)
 misc/bitset.pxi:        bitset_clear(r)
 ```
-
 
 So I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).
 
@@ -483,7 +481,7 @@ I reaffirm my positive review, and think it's even better now.
 archive/issue_comments_045383.json:
 ```json
 {
-    "body": "Replying to [comment:18 robertwb]:\n> I was just writing a comment to that effect. I think we should definitely keep the xor, etc. methods around (somehow I missed that you were going to get rid of them). \n> \n> I reaffirm my positive review, and think it's even better now. \n\nI second.",
+    "body": "Replying to [comment:18 robertwb]:\n> I was just writing a comment to that effect. I think we should definitely keep the xor, etc. methods around (somehow I missed that you were going to get rid of them). \n> \n> I reaffirm my positive review, and think it's even better now. \n\n\nI second.",
     "created_at": "2009-04-16T20:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -496,6 +494,7 @@ Replying to [comment:18 robertwb]:
 > I was just writing a comment to that effect. I think we should definitely keep the xor, etc. methods around (somehow I missed that you were going to get rid of them). 
 > 
 > I reaffirm my positive review, and think it's even better now. 
+
 
 I second.
 
@@ -622,7 +621,7 @@ archive/issue_events_013602.json:
 archive/issue_comments_045388.json:
 ```json
 {
-    "body": "Unfortunately with both patches applied on sage.math I get one doctest failure in \n\n```\nsage -t -long devel/sage/sage/misc/misc_c.pyx\n```\n\n\nCheers,\n\nMichael",
+    "body": "Unfortunately with both patches applied on sage.math I get one doctest failure in \n\n```\nsage -t -long devel/sage/sage/misc/misc_c.pyx\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T02:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
@@ -636,7 +635,6 @@ Unfortunately with both patches applied on sage.math I get one doctest failure i
 ```
 sage -t -long devel/sage/sage/misc/misc_c.pyx
 ```
-
 
 Cheers,
 

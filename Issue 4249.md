@@ -3,7 +3,7 @@
 archive/issues_004249.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  \"maite aranes\" <m.t.aranes@warwick.ac.uk>\n\nKeywords: number fields\n\nThis is unacceptable (in  my opinion):\n\n```\nsage: K.<a>=NumberField(x^2+23)\nsage: K.integral_basis()\n[1, 1/2*a + 1/2]\nsage: K.ring_of_integers().basis()\n[1/2*a + 1/2, a]\n```\n\n\nI think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!\n\nSuggested solution:  make the existing integral_basis() function an internal one used by the ring_of_integers() function only, and have K.integra_basis() return the basis of the ring of integers instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4249\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  \"maite aranes\" <m.t.aranes@warwick.ac.uk>\n\nKeywords: number fields\n\nThis is unacceptable (in  my opinion):\n\n```\nsage: K.<a>=NumberField(x^2+23)\nsage: K.integral_basis()\n[1, 1/2*a + 1/2]\nsage: K.ring_of_integers().basis()\n[1/2*a + 1/2, a]\n```\n\nI think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!\n\nSuggested solution:  make the existing integral_basis() function an internal one used by the ring_of_integers() function only, and have K.integra_basis() return the basis of the ring of integers instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4249\n\n",
     "created_at": "2008-10-07T11:21:35Z",
     "labels": [
         "component: number theory",
@@ -31,7 +31,6 @@ sage: K.integral_basis()
 sage: K.ring_of_integers().basis()
 [1/2*a + 1/2, a]
 ```
-
 
 I think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!
 
@@ -158,7 +157,7 @@ JV
 archive/issue_comments_030832.json:
 ```json
 {
-    "body": "When I apply my patch to 3.1.3 I get this (testing all files in number_field):\n\n```\n******************************\nFile \"/home/john/sage-3.1.3/tmp/totallyreal_rel.py\", line 658:\n    sage: [ f[0] for f in ls ]\nExpected:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7225, 7600, 7625, 8000, 8525, 8725, 9225]\nGot:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7600, 7625, 8000, 8525, 8725, 9225]\n**********************************************************************\nFile \"/home/john/sage-3.1.3/tmp/totallyreal_rel.py\", line 661:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nExpected:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, True, False, False, True, False, False, False]\nGot:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, False, False, True, False, False, False]\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/john/sage-3.1.3/tmp/.doctest_totallyreal_rel.py\n```\n",
+    "body": "When I apply my patch to 3.1.3 I get this (testing all files in number_field):\n\n```\n******************************\nFile \"/home/john/sage-3.1.3/tmp/totallyreal_rel.py\", line 658:\n    sage: [ f[0] for f in ls ]\nExpected:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7225, 7600, 7625, 8000, 8525, 8725, 9225]\nGot:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7600, 7625, 8000, 8525, 8725, 9225]\n**********************************************************************\nFile \"/home/john/sage-3.1.3/tmp/totallyreal_rel.py\", line 661:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nExpected:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, True, False, False, True, False, False, False]\nGot:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, False, False, True, False, False, False]\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/john/sage-3.1.3/tmp/.doctest_totallyreal_rel.py\n```",
     "created_at": "2008-10-16T05:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -190,7 +189,6 @@ Got:
 ***Test Failed*** 2 failures.
 For whitespace errors, see the file /home/john/sage-3.1.3/tmp/.doctest_totallyreal_rel.py
 ```
-
 
 
 
@@ -264,7 +262,7 @@ I downloaded a clean 3.1.3 and installed it on a 32-bit Ubuntu and it again work
 archive/issue_comments_030836.json:
 ```json
 {
-    "body": "Replying to [comment:10 jvoight]:\n> I downloaded a clean 3.1.3 and installed it on a 32-bit Ubuntu and it again worked fine.  I'm not sure what's going on.  JV\n\nNor me.  I just tried again on a fresh 3.1.4 and got the same problem as before.\n\nI think we need to ask someone else to help with this!  JEC",
+    "body": "Replying to [comment:10 jvoight]:\n> I downloaded a clean 3.1.3 and installed it on a 32-bit Ubuntu and it again worked fine.  I'm not sure what's going on.  JV\n\n\nNor me.  I just tried again on a fresh 3.1.4 and got the same problem as before.\n\nI think we need to ask someone else to help with this!  JEC",
     "created_at": "2008-10-20T11:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -275,6 +273,7 @@ archive/issue_comments_030836.json:
 
 Replying to [comment:10 jvoight]:
 > I downloaded a clean 3.1.3 and installed it on a 32-bit Ubuntu and it again worked fine.  I'm not sure what's going on.  JV
+
 
 Nor me.  I just tried again on a fresh 3.1.4 and got the same problem as before.
 
@@ -309,7 +308,7 @@ JV
 archive/issue_comments_030838.json:
 ```json
 {
-    "body": "Replying to [comment:12 jvoight]:\n> Hi John,\n> \n> I'm hoping to tackle this at Sage Days 11, or at least find someone willing to help.  What system are you using?  Maybe I can find someone with the same system so as to reproduce the bug...\n> \n> JV\n\nIt was probably my laptop (ubuntu linux 8.04 etc).  As I have just built 3.2.alpha3 on a couple of other machines, I'll test my patch on those and see what happens.  Watch this space...",
+    "body": "Replying to [comment:12 jvoight]:\n> Hi John,\n> \n> I'm hoping to tackle this at Sage Days 11, or at least find someone willing to help.  What system are you using?  Maybe I can find someone with the same system so as to reproduce the bug...\n> \n> JV\n\n\nIt was probably my laptop (ubuntu linux 8.04 etc).  As I have just built 3.2.alpha3 on a couple of other machines, I'll test my patch on those and see what happens.  Watch this space...",
     "created_at": "2008-11-06T15:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -325,6 +324,7 @@ Replying to [comment:12 jvoight]:
 > 
 > JV
 
+
 It was probably my laptop (ubuntu linux 8.04 etc).  As I have just built 3.2.alpha3 on a couple of other machines, I'll test my patch on those and see what happens.  Watch this space...
 
 
@@ -334,7 +334,7 @@ It was probably my laptop (ubuntu linux 8.04 etc).  As I have just built 3.2.alp
 archive/issue_comments_030839.json:
 ```json
 {
-    "body": "I applied my patch to 3.2.alpha3 on two machines, a 32-bit Suse linux and a 64-bit ubuntu.\nOn both machines two files failed doctests:\n\n1.  sage -t  devel/sage-intpts/sage/rings/number_field/number_field.py\n2.  sage -t  devel/sage-intpts/sage/rings/number_field/totallyreal_rel.py\n\nIn totallrel_rel.py we get this:\n\n```\nsage -t  devel/sage-intpts/sage/rings/number_field/totallyreal_rel.py**********************************************************************\nFile \"/home/jec/sage-3.2.alpha3/tmp/totallyreal_rel.py\", line 658:\n    sage: [ f[0] for f in ls ]\nExpected:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7225, 7600, 7625, 8000, 8525, 8725, 9225]\nGot:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7600, 7625, 8000, 8525, 8725, 9225]\n**********************************************************************\nFile \"/home/jec/sage-3.2.alpha3/tmp/totallyreal_rel.py\", line 661:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nExpected:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, True, False, False, True, False, False, False]\nGot:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, False, False, True, False, False, False]\n**********************************************************************\n```\n\nwhich looks like what I got before.  In number_field.py we get this:\n\n```\nsage -t  local/sage-3.2.alpha3/devel/sage-intbasis/sage/rings/number_field//number_field.py**********************************************************************\nFile \"/local/jec/sage-3.2.alpha3/tmp/number_field.py\", line 2742:\n    sage: F.reduced_gram_matrix(prec=128)\nExpected:\n    [   4.0000000000000000000000000000000000000   0.00000000000000000000000000000000000000    1.9999999999999999999999999999999999037 -1.0684680000000000000000000000000000000e6]\n    [  0.00000000000000000000000000000000000000    46721.539331563218381658483353092335550    11488.910026551724275122749703614966768 -1.1228558200864828963821803781091898982e7]\n    [   1.9999999999999999999999999999999999037    11488.910026551724275122749703614966768  5.5658915310500611768713076521847709187e8  8.0619179090987317435751641503958312826e9]\n    [-1.0684680000000000000000000000000000000e6 -1.1228558200864828963821803781091898982e7  8.0619179090987317435751641503958312826e9 5.8711879006497804783677635022079228656e12]\nGot:\n    [   4.0000000000000000000000000000000000000   0.00000000000000000000000000000000000000 -2.1369320000000000000000000000000000000e6 -3.3122478000000000000000000000000000000e7]\n    [  0.00000000000000000000000000000000000000    46721.539331563218381658483353092335550 -2.2467769057394530109094755223395819322e7 -3.4807276041138450473611629088647496430e8]\n    [-2.1369320000000000000000000000000000000e6 -2.2467769057394530109094755223395819322e7 7.0704243186034907491782135494859351061e12 1.1256636615786237006027526953641297995e14]\n    [-3.3122478000000000000000000000000000000e7 -3.4807276041138450473611629088647496430e8 1.1256636615786237006027526953641297995e14 1.7923838231014970520503146603069479547e15]\n\n```\n\nwhich is new.  I find it slightly encouraging that my 32- and 64-bit tests both give exactly the same above (as each other).  I guess that this second discrepancy will be fixed by just changing the Expected doctest output, but the first one really is a bug since a field which should be returned is not.",
+    "body": "I applied my patch to 3.2.alpha3 on two machines, a 32-bit Suse linux and a 64-bit ubuntu.\nOn both machines two files failed doctests:\n\n1.  sage -t  devel/sage-intpts/sage/rings/number_field/number_field.py\n2.  sage -t  devel/sage-intpts/sage/rings/number_field/totallyreal_rel.py\n\nIn totallrel_rel.py we get this:\n\n```\nsage -t  devel/sage-intpts/sage/rings/number_field/totallyreal_rel.py**********************************************************************\nFile \"/home/jec/sage-3.2.alpha3/tmp/totallyreal_rel.py\", line 658:\n    sage: [ f[0] for f in ls ]\nExpected:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7225, 7600, 7625, 8000, 8525, 8725, 9225]\nGot:\n    [725, 1125, 1600, 2000, 2225, 2525, 3600, 4225, 4400, 4525, 5125, 5225, 5725, 6125, 7600, 7625, 8000, 8525, 8725, 9225]\n**********************************************************************\nFile \"/home/jec/sage-3.2.alpha3/tmp/totallyreal_rel.py\", line 661:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nExpected:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, True, False, False, True, False, False, False]\nGot:\n    [False, True, True, True, False, False, True, True, False, False, False, False, False, True, False, False, True, False, False, False]\n**********************************************************************\n```\nwhich looks like what I got before.  In number_field.py we get this:\n\n```\nsage -t  local/sage-3.2.alpha3/devel/sage-intbasis/sage/rings/number_field//number_field.py**********************************************************************\nFile \"/local/jec/sage-3.2.alpha3/tmp/number_field.py\", line 2742:\n    sage: F.reduced_gram_matrix(prec=128)\nExpected:\n    [   4.0000000000000000000000000000000000000   0.00000000000000000000000000000000000000    1.9999999999999999999999999999999999037 -1.0684680000000000000000000000000000000e6]\n    [  0.00000000000000000000000000000000000000    46721.539331563218381658483353092335550    11488.910026551724275122749703614966768 -1.1228558200864828963821803781091898982e7]\n    [   1.9999999999999999999999999999999999037    11488.910026551724275122749703614966768  5.5658915310500611768713076521847709187e8  8.0619179090987317435751641503958312826e9]\n    [-1.0684680000000000000000000000000000000e6 -1.1228558200864828963821803781091898982e7  8.0619179090987317435751641503958312826e9 5.8711879006497804783677635022079228656e12]\nGot:\n    [   4.0000000000000000000000000000000000000   0.00000000000000000000000000000000000000 -2.1369320000000000000000000000000000000e6 -3.3122478000000000000000000000000000000e7]\n    [  0.00000000000000000000000000000000000000    46721.539331563218381658483353092335550 -2.2467769057394530109094755223395819322e7 -3.4807276041138450473611629088647496430e8]\n    [-2.1369320000000000000000000000000000000e6 -2.2467769057394530109094755223395819322e7 7.0704243186034907491782135494859351061e12 1.1256636615786237006027526953641297995e14]\n    [-3.3122478000000000000000000000000000000e7 -3.4807276041138450473611629088647496430e8 1.1256636615786237006027526953641297995e14 1.7923838231014970520503146603069479547e15]\n\n```\nwhich is new.  I find it slightly encouraging that my 32- and 64-bit tests both give exactly the same above (as each other).  I guess that this second discrepancy will be fixed by just changing the Expected doctest output, but the first one really is a bug since a field which should be returned is not.",
     "created_at": "2008-11-06T15:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -368,7 +368,6 @@ Got:
     [False, True, True, True, False, False, True, True, False, False, False, False, False, True, False, False, True, False, False, False]
 **********************************************************************
 ```
-
 which looks like what I got before.  In number_field.py we get this:
 
 ```
@@ -387,7 +386,6 @@ Got:
     [-3.3122478000000000000000000000000000000e7 -3.4807276041138450473611629088647496430e8 1.1256636615786237006027526953641297995e14 1.7923838231014970520503146603069479547e15]
 
 ```
-
 which is new.  I find it slightly encouraging that my 32- and 64-bit tests both give exactly the same above (as each other).  I guess that this second discrepancy will be fixed by just changing the Expected doctest output, but the first one really is a bug since a field which should be returned is not.
 
 
@@ -397,7 +395,7 @@ which is new.  I find it slightly encouraging that my 32- and 64-bit tests both 
 archive/issue_comments_030840.json:
 ```json
 {
-    "body": "Argh!  Tried the patch on sage.math on 3.2.alpha3, still can't reproduce the error!  \n\n\n```\njvoight@sage:~/sage-3.2.alpha3$ ./sage -t ./devel/sage/sage/rings/number_field/totallyreal_rel.py\nsage -t  devel/sage/sage/rings/number_field/totallyreal_rel.py\n         [4.5 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.5 seconds}}}\n\nI'll see if I can find someone here in Austin.  (I have some ideas about what may be going on, but I can't check any of them!)  JV",
+    "body": "Argh!  Tried the patch on sage.math on 3.2.alpha3, still can't reproduce the error!  \n\n```\njvoight@sage:~/sage-3.2.alpha3$ ./sage -t ./devel/sage/sage/rings/number_field/totallyreal_rel.py\nsage -t  devel/sage/sage/rings/number_field/totallyreal_rel.py\n         [4.5 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.5 seconds}}}\n\nI'll see if I can find someone here in Austin.  (I have some ideas about what may be going on, but I can't check any of them!)  JV",
     "created_at": "2008-11-09T00:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -407,7 +405,6 @@ archive/issue_comments_030840.json:
 ```
 
 Argh!  Tried the patch on sage.math on 3.2.alpha3, still can't reproduce the error!  
-
 
 ```
 jvoight@sage:~/sage-3.2.alpha3$ ./sage -t ./devel/sage/sage/rings/number_field/totallyreal_rel.py
@@ -483,7 +480,7 @@ Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/
 archive/issue_comments_030844.json:
 ```json
 {
-    "body": "Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by @craigcitro created at 2008-11-14 09:22:08\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
+    "body": "Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by @craigcitro created at 2008-11-14 09:22:08\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
     "created_at": "2008-11-14T09:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -498,13 +495,11 @@ This looks good!
 
 The only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:
 
-
 ```
 sage-4249.patch
 trac-4249-1a.patch
 trac-4249-pt2a.patch
 ```
-
 
 in order. (I've deleted the old pt2 patch, just to help avoid confusion.)
 
@@ -555,7 +550,7 @@ Yes, definitely I agree.  Positive review.  JV
 archive/issue_comments_030847.json:
 ```json
 {
-    "body": "There are some slight doctest failures to fix:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/sage/sage/rings/number_field/number_field.py\", line 2653:\n    sage: F.reduced_basis(prec=96)\nExpected:\n    [1, alpha, alpha^2 - 15*alpha, alpha^3 - 16*alpha^2 + 469*alpha + 267109] \nGot:\n    [1, alpha, alpha^3 - 2*alpha^2 + 15*alpha, 16*alpha^3 - 31*alpha^2 + 469*alpha + 267109]\n\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_73\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [29.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/sage/sage/rings/number_field/number_field.py\nTotal time for all tests: 29.4 seconds\nsage -t -long devel/doc/tut/tut.tex                         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/doc/tut/tut.tex\", line 2179:\n    : K.integral_basis()\nExpected:\n    [1, a, 1/2*a^2 + 1/2*a]\nGot:\n    [1, 1/2*a^2 + 1/2*a, a^2]\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_99\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_tut.py\n\t [25.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/doc/tut/tut.tex\nTotal time for all tests: 25.2 seconds\nsage -t -long devel/doc/const/const.tex                     **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/doc/const/const.tex\", line 3450:\n    : K.integral_basis()\nExpected:\n    [1, a, 1/2*a^2 + 1/2*a]\nGot:\n    [1, 1/2*a^2 + 1/2*a, a^2]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_123\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_const.py\n\t [31.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/doc/const/const.tex\nTotal time for all tests: 31.0 seconds\n```\n",
+    "body": "There are some slight doctest failures to fix:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/sage/sage/rings/number_field/number_field.py\", line 2653:\n    sage: F.reduced_basis(prec=96)\nExpected:\n    [1, alpha, alpha^2 - 15*alpha, alpha^3 - 16*alpha^2 + 469*alpha + 267109] \nGot:\n    [1, alpha, alpha^3 - 2*alpha^2 + 15*alpha, 16*alpha^3 - 31*alpha^2 + 469*alpha + 267109]\n\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_73\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [29.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/sage/sage/rings/number_field/number_field.py\nTotal time for all tests: 29.4 seconds\nsage -t -long devel/doc/tut/tut.tex                         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/doc/tut/tut.tex\", line 2179:\n    : K.integral_basis()\nExpected:\n    [1, a, 1/2*a^2 + 1/2*a]\nGot:\n    [1, 1/2*a^2 + 1/2*a, a^2]\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_99\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_tut.py\n\t [25.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/doc/tut/tut.tex\nTotal time for all tests: 25.2 seconds\nsage -t -long devel/doc/const/const.tex                     **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/doc/const/const.tex\", line 3450:\n    : K.integral_basis()\nExpected:\n    [1, a, 1/2*a^2 + 1/2*a]\nGot:\n    [1, 1/2*a^2 + 1/2*a, a^2]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_123\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc1/tmp/.doctest_const.py\n\t [31.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long devel/doc/const/const.tex\nTotal time for all tests: 31.0 seconds\n```",
     "created_at": "2008-11-14T20:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -637,7 +632,6 @@ The following tests failed:
 	sage -t -long devel/doc/const/const.tex
 Total time for all tests: 31.0 seconds
 ```
-
 
 
 
@@ -766,7 +760,7 @@ I'm not sure if the original patch was written with Aranes Maite.
 archive/issue_comments_030854.json:
 ```json
 {
-    "body": "Replying to [comment:25 craigcitro]:\n> I think John C wrote sage-4249.patch, I wrote trac-4249-1a.patch as part of the review, John Voight and I each wrote half of trac-4249-pt2a.patch and reviewed the other, and John Cremona also reviewed this patch. Then John Cremona wrote pt3 and the doc patch.\n> \n\nThat is accurate as far as I am concerned.\n\n> Either that, or it was Col. Mustard in the study, with the candlestick. (I would be completely in favor of that actually appearing in the release notes.)\n> \n> I'm not sure if the original patch was written with Aranes Maite.\n\nNo, but she (my student) was the one who alerted me to the problem in the first place.",
+    "body": "Replying to [comment:25 craigcitro]:\n> I think John C wrote sage-4249.patch, I wrote trac-4249-1a.patch as part of the review, John Voight and I each wrote half of trac-4249-pt2a.patch and reviewed the other, and John Cremona also reviewed this patch. Then John Cremona wrote pt3 and the doc patch.\n> \n\n\nThat is accurate as far as I am concerned.\n\n> Either that, or it was Col. Mustard in the study, with the candlestick. (I would be completely in favor of that actually appearing in the release notes.)\n> \n> I'm not sure if the original patch was written with Aranes Maite.\n\n\nNo, but she (my student) was the one who alerted me to the problem in the first place.",
     "created_at": "2008-11-15T10:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
@@ -779,11 +773,13 @@ Replying to [comment:25 craigcitro]:
 > I think John C wrote sage-4249.patch, I wrote trac-4249-1a.patch as part of the review, John Voight and I each wrote half of trac-4249-pt2a.patch and reviewed the other, and John Cremona also reviewed this patch. Then John Cremona wrote pt3 and the doc patch.
 > 
 
+
 That is accurate as far as I am concerned.
 
 > Either that, or it was Col. Mustard in the study, with the candlestick. (I would be completely in favor of that actually appearing in the release notes.)
 > 
 > I'm not sure if the original patch was written with Aranes Maite.
+
 
 No, but she (my student) was the one who alerted me to the problem in the first place.
 

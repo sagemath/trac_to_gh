@@ -102,7 +102,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081200.json:
 ```json
 {
-    "body": "This gives the following doctest failures on my 64-bit T9300 Core 2 Duo laptop, with `gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4` and glibc-2.10.1. I have no idea what is relevant, so I give some random information. :)\n\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/functions/other.py\", line 428:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n```\n\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/symbolic/expression.pyx\", line 5318:\n    sage: SR(10.0r).gamma()\nExpected:\n    362880.0\nGot:\n    362880.00000000047\n**********************************************************************\n```\n",
+    "body": "This gives the following doctest failures on my 64-bit T9300 Core 2 Duo laptop, with `gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4` and glibc-2.10.1. I have no idea what is relevant, so I give some random information. :)\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/functions/other.py\", line 428:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n```\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/symbolic/expression.pyx\", line 5318:\n    sage: SR(10.0r).gamma()\nExpected:\n    362880.0\nGot:\n    362880.00000000047\n**********************************************************************\n```",
     "created_at": "2010-05-05T02:26:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ archive/issue_comments_081200.json:
 ```
 
 This gives the following doctest failures on my 64-bit T9300 Core 2 Duo laptop, with `gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4` and glibc-2.10.1. I have no idea what is relevant, so I give some random information. :)
-
 
 ```
 **********************************************************************
@@ -125,7 +124,6 @@ Got:
 **********************************************************************
 ```
 
-
 ```
 **********************************************************************
 File "/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/symbolic/expression.pyx", line 5318:
@@ -136,7 +134,6 @@ Got:
     362880.00000000047
 **********************************************************************
 ```
-
 
 
 

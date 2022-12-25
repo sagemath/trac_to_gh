@@ -3,7 +3,7 @@
 archive/issues_008237.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nAs subject says:\n\n```\nsage: maxima('inf').sage()\n+Infinity\nsage: maxima('infinity').sage()\n+Infinity\n```\n\n\nFrom Maxima manual\n\n```\nConstant: inf\n    inf represents real positive infinity.\n\nConstant: infinity\n    infinity represents complex infinity.\n\nConstant: minf\n    minf represents real minus (i.e., negative) infinity. \n```\n\nAs a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)\n\n```\nsage: maxima('limit(1/x,x,0)')\ninfinity\nsage: maxima('limit(1/x,x,0)').sage()\n+Infinity\nsage: limit(1/x,x=0)\n+Infinity\nsage: maxima('limit(1/x,x,0,plus)')\ninf\nsage: maxima('limit(1/x,x,0,plus)').sage()\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8237\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nAs subject says:\n\n```\nsage: maxima('inf').sage()\n+Infinity\nsage: maxima('infinity').sage()\n+Infinity\n```\n\nFrom Maxima manual\n\n```\nConstant: inf\n    inf represents real positive infinity.\n\nConstant: infinity\n    infinity represents complex infinity.\n\nConstant: minf\n    minf represents real minus (i.e., negative) infinity. \n```\nAs a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)\n\n```\nsage: maxima('limit(1/x,x,0)')\ninfinity\nsage: maxima('limit(1/x,x,0)').sage()\n+Infinity\nsage: limit(1/x,x=0)\n+Infinity\nsage: maxima('limit(1/x,x,0,plus)')\ninf\nsage: maxima('limit(1/x,x,0,plus)').sage()\n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8237\n\n",
     "created_at": "2010-02-11T17:09:35Z",
     "labels": [
         "component: symbolics",
@@ -29,7 +29,6 @@ sage: maxima('infinity').sage()
 +Infinity
 ```
 
-
 From Maxima manual
 
 ```
@@ -42,7 +41,6 @@ Constant: infinity
 Constant: minf
     minf represents real minus (i.e., negative) infinity. 
 ```
-
 As a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)
 
 ```
@@ -57,7 +55,6 @@ inf
 sage: maxima('limit(1/x,x,0,plus)').sage()
 +Infinity
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8237
 
@@ -124,7 +121,7 @@ Changing assignee from @robert-marik to @burcin.
 archive/issue_comments_072639.json:
 ```json
 {
-    "body": "Right now, there doesn't seem to be a lot of distinction in Sage between unsigned and signed infinity, though of course as you point out there should be.  From sage.rings.infinity.py:\n\n```\n    Note: the shorthand oo is predefined in Sage to be the same as\n    +Infinity in the infinity ring. It is considered equal to, but not\n    the same as Infinity in the UnsignedInfinityRing::\n    \n        sage: oo\n        +Infinity\n        sage: oo is InfinityRing.0\n        True\n        sage: oo is UnsignedInfinityRing.0\n        False\n        sage: oo == UnsignedInfinityRing.0\n        True\n    \n```\n\nThere is unsigned_infinity, but the following seems problematic:\n\n```\nsage: unsigned_infinity\nInfinity\nsage: Infinity\n+Infinity\n```\n\nWhat the heck?",
+    "body": "Right now, there doesn't seem to be a lot of distinction in Sage between unsigned and signed infinity, though of course as you point out there should be.  From sage.rings.infinity.py:\n\n```\n    Note: the shorthand oo is predefined in Sage to be the same as\n    +Infinity in the infinity ring. It is considered equal to, but not\n    the same as Infinity in the UnsignedInfinityRing::\n    \n        sage: oo\n        +Infinity\n        sage: oo is InfinityRing.0\n        True\n        sage: oo is UnsignedInfinityRing.0\n        False\n        sage: oo == UnsignedInfinityRing.0\n        True\n    \n```\nThere is unsigned_infinity, but the following seems problematic:\n\n```\nsage: unsigned_infinity\nInfinity\nsage: Infinity\n+Infinity\n```\nWhat the heck?",
     "created_at": "2010-02-11T19:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -150,7 +147,6 @@ Right now, there doesn't seem to be a lot of distinction in Sage between unsigne
         True
     
 ```
-
 There is unsigned_infinity, but the following seems problematic:
 
 ```
@@ -159,7 +155,6 @@ Infinity
 sage: Infinity
 +Infinity
 ```
-
 What the heck?
 
 
@@ -260,7 +255,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072644.json:
 ```json
 {
-    "body": "Looks good, but does it duplicate some of lines 1841ff of sage/calculus/calculus.py?\n\n```\nfrom sage.rings.infinity import infinity, minus_infinity\nregister_symbol(infinity, dict(maxima='inf'))\nregister_symbol(minus_infinity, dict(maxima='minf'))\n```\n\nSince \n\n```\nsage: type(infinity)\n<class 'sage.rings.infinity.PlusInfinity'>\nsage: type(SR(infinity))\n<type 'sage.symbolic.expression.Expression'>\n```\n\nmy guess is that, at least for completeness, calculus.py should also import unsigned_infinity and have a line added with \n\n```\nregister_symbol(unsigned_infinity, dict(maxima='infinity'))\n```\n\n\nAlso, my taste in doctests is to also include the original example, not (only) the underlying cause:\n\n```\nsage: limit(1/x,x=0)\nInfinity\nsage: limit(1/x,x=0,dir='above')\n+Infinity\nsage: limit(1/x,x=0,dir='below')\n-Infinity\n```\n\nwhich of course works great now.  These are very minor quibbles, of course, but might as well be done.\n\nAlso, in doctesting it doesn't like sage: sage: as the prefix (though one could argue this is a bug itself), and \n\n```\ndevel/sage/sage/calculus/functional.py\", line 313:\n    sage: lim(1/x, x=0)\nExpected:\n    +Infinity\nGot:\n    Infinity\n```\n",
+    "body": "Looks good, but does it duplicate some of lines 1841ff of sage/calculus/calculus.py?\n\n```\nfrom sage.rings.infinity import infinity, minus_infinity\nregister_symbol(infinity, dict(maxima='inf'))\nregister_symbol(minus_infinity, dict(maxima='minf'))\n```\nSince \n\n```\nsage: type(infinity)\n<class 'sage.rings.infinity.PlusInfinity'>\nsage: type(SR(infinity))\n<type 'sage.symbolic.expression.Expression'>\n```\nmy guess is that, at least for completeness, calculus.py should also import unsigned_infinity and have a line added with \n\n```\nregister_symbol(unsigned_infinity, dict(maxima='infinity'))\n```\n\nAlso, my taste in doctests is to also include the original example, not (only) the underlying cause:\n\n```\nsage: limit(1/x,x=0)\nInfinity\nsage: limit(1/x,x=0,dir='above')\n+Infinity\nsage: limit(1/x,x=0,dir='below')\n-Infinity\n```\nwhich of course works great now.  These are very minor quibbles, of course, but might as well be done.\n\nAlso, in doctesting it doesn't like sage: sage: as the prefix (though one could argue this is a bug itself), and \n\n```\ndevel/sage/sage/calculus/functional.py\", line 313:\n    sage: lim(1/x, x=0)\nExpected:\n    +Infinity\nGot:\n    Infinity\n```",
     "created_at": "2010-02-12T02:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -276,7 +271,6 @@ from sage.rings.infinity import infinity, minus_infinity
 register_symbol(infinity, dict(maxima='inf'))
 register_symbol(minus_infinity, dict(maxima='minf'))
 ```
-
 Since 
 
 ```
@@ -285,13 +279,11 @@ sage: type(infinity)
 sage: type(SR(infinity))
 <type 'sage.symbolic.expression.Expression'>
 ```
-
 my guess is that, at least for completeness, calculus.py should also import unsigned_infinity and have a line added with 
 
 ```
 register_symbol(unsigned_infinity, dict(maxima='infinity'))
 ```
-
 
 Also, my taste in doctests is to also include the original example, not (only) the underlying cause:
 
@@ -303,7 +295,6 @@ sage: limit(1/x,x=0,dir='above')
 sage: limit(1/x,x=0,dir='below')
 -Infinity
 ```
-
 which of course works great now.  These are very minor quibbles, of course, but might as well be done.
 
 Also, in doctesting it doesn't like sage: sage: as the prefix (though one could argue this is a bug itself), and 
@@ -316,7 +307,6 @@ Expected:
 Got:
     Infinity
 ```
-
 
 
 
@@ -383,7 +373,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072648.json:
 ```json
 {
-    "body": "By exercising a number of arithmetic use cases, viz. \n\n```\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, k + Infinity , k + +Infinity, k + -Infinity\n\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, Infinity -k , +Infinity -k, -Infinity -k\n\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, k / Infinity , k / +Infinity, k / -Infinity\n\nfor k in (1, 1.0, 1/2, x, -1, -1.0, -1/2, -x):\n    print k, k * Infinity , k * +Infinity, k * -Infinity\n```\n\nthere were a small number of things to note\n\n\n(a) the same answer resulted, regardless of whether (unsigned) Infinity or +Infinity was used. Query: Just to make sure we are getting the results we designed for...  Currently +Infinity (or -Infinity) is being returned regardless of whether a signed or unsigned infinity is used. Should (unsigned) Infinity be returned when (unsigned) Infinity is used?\n\n\n(b) what seems to be an inconsistency occurs when mixing Infinity with complex numbers (same thing holds when we replace Infinity with +Infinity or with -Infinity)\n\n```\n# the following combinations of complex and infinity are ok\nI + Infinity # +Infinity\nI - Infinity # -Infinity\nI / Infinity # 0\n\n# the following crash with Arithmetic Error \nInfinity / I  \nInfinity * I\nI * Infinity\n\n# isnt I+Infinity (for example) just as meaningful/less as I*Infinity ? \n```\n\n\n(c) Im curious about the following expressions\n\n```\nx * Infinity\n-x * Infinity\n```\n\nThese return `+Infinity` and `-Infinity` respectively. But what if x is negative real? (should be opposite answers). The following tries to demonstrate this for two vars (z and x), both declared real in two different ways\n\n```\nsage: var('z',domain='real')\nz\nsage: assume(x,'real',x<0,z<0)\nsage: assumptions()\n[x is real, x < 0, z < 0]\nsage: x*+Infinity\n+Infinity\nsage: z*+Infinity\n+Infinity\n```\n\n(is this another ticket \"make Infinity work with assumptions/declarations\"?)",
+    "body": "By exercising a number of arithmetic use cases, viz. \n\n```\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, k + Infinity , k + +Infinity, k + -Infinity\n\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, Infinity -k , +Infinity -k, -Infinity -k\n\nfor k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):\n    print k, k / Infinity , k / +Infinity, k / -Infinity\n\nfor k in (1, 1.0, 1/2, x, -1, -1.0, -1/2, -x):\n    print k, k * Infinity , k * +Infinity, k * -Infinity\n```\nthere were a small number of things to note\n\n\n(a) the same answer resulted, regardless of whether (unsigned) Infinity or +Infinity was used. Query: Just to make sure we are getting the results we designed for...  Currently +Infinity (or -Infinity) is being returned regardless of whether a signed or unsigned infinity is used. Should (unsigned) Infinity be returned when (unsigned) Infinity is used?\n\n\n(b) what seems to be an inconsistency occurs when mixing Infinity with complex numbers (same thing holds when we replace Infinity with +Infinity or with -Infinity)\n\n```\n# the following combinations of complex and infinity are ok\nI + Infinity # +Infinity\nI - Infinity # -Infinity\nI / Infinity # 0\n\n# the following crash with Arithmetic Error \nInfinity / I  \nInfinity * I\nI * Infinity\n\n# isnt I+Infinity (for example) just as meaningful/less as I*Infinity ? \n```\n\n(c) Im curious about the following expressions\n\n```\nx * Infinity\n-x * Infinity\n```\nThese return `+Infinity` and `-Infinity` respectively. But what if x is negative real? (should be opposite answers). The following tries to demonstrate this for two vars (z and x), both declared real in two different ways\n\n```\nsage: var('z',domain='real')\nz\nsage: assume(x,'real',x<0,z<0)\nsage: assumptions()\n[x is real, x < 0, z < 0]\nsage: x*+Infinity\n+Infinity\nsage: z*+Infinity\n+Infinity\n```\n(is this another ticket \"make Infinity work with assumptions/declarations\"?)",
     "created_at": "2010-02-24T12:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
@@ -407,7 +397,6 @@ for k in (1, 1.0, 1/2, x, 1+I, -1, -1.0, -1/2, -x, -1-I):
 for k in (1, 1.0, 1/2, x, -1, -1.0, -1/2, -x):
     print k, k * Infinity , k * +Infinity, k * -Infinity
 ```
-
 there were a small number of things to note
 
 
@@ -430,14 +419,12 @@ I * Infinity
 # isnt I+Infinity (for example) just as meaningful/less as I*Infinity ? 
 ```
 
-
 (c) Im curious about the following expressions
 
 ```
 x * Infinity
 -x * Infinity
 ```
-
 These return `+Infinity` and `-Infinity` respectively. But what if x is negative real? (should be opposite answers). The following tries to demonstrate this for two vars (z and x), both declared real in two different ways
 
 ```
@@ -451,7 +438,6 @@ sage: x*+Infinity
 sage: z*+Infinity
 +Infinity
 ```
-
 (is this another ticket "make Infinity work with assumptions/declarations"?)
 
 

@@ -172,7 +172,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077413.json:
 ```json
 {
-    "body": "This seems fine, works well and tests the appropriate thing (i.e. not arctan2(2,3), but the symbolic thing).  Positive review to both.\n\nQuestion about the Sympy doctest file Ondrej mentions above - it doesn't have \n\n```\ncheck_expression(\"atan2(y,x)\", \"y x\")\n```\n\nor whatever would work, in test_functions or something like that.  Should it?",
+    "body": "This seems fine, works well and tests the appropriate thing (i.e. not arctan2(2,3), but the symbolic thing).  Positive review to both.\n\nQuestion about the Sympy doctest file Ondrej mentions above - it doesn't have \n\n```\ncheck_expression(\"atan2(y,x)\", \"y x\")\n```\nor whatever would work, in test_functions or something like that.  Should it?",
     "created_at": "2010-06-10T01:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
@@ -188,7 +188,6 @@ Question about the Sympy doctest file Ondrej mentions above - it doesn't have
 ```
 check_expression("atan2(y,x)", "y x")
 ```
-
 or whatever would work, in test_functions or something like that.  Should it?
 
 

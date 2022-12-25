@@ -514,7 +514,7 @@ Looks good to me, though I haven't had time to run all tests yet.
 archive/issue_comments_097910.json:
 ```json
 {
-    "body": "Replying to [comment:15 robertwb]:\n> Looks good to me\nThanks!",
+    "body": "Replying to [comment:15 robertwb]:\n> Looks good to me\n\nThanks!",
     "created_at": "2010-11-05T08:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
     "type": "issue_comment",
@@ -525,6 +525,7 @@ archive/issue_comments_097910.json:
 
 Replying to [comment:15 robertwb]:
 > Looks good to me
+
 Thanks!
 
 

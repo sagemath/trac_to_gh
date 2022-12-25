@@ -3,7 +3,7 @@
 archive/issues_005739.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb fredrik\n\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb fredrik\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
     "created_at": "2009-04-10T23:09:59Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_005739.json:
 Assignee: @williamstein
 
 CC:  @robertwb fredrik
-
 
 ```
 wstein@bsd:~/build/sage-3.4.1.rc1$ uname -a
@@ -43,7 +42,6 @@ SAGE will now terminate (sorry).
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5739
 
 
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5739
 archive/issue_comments_044776.json:
 ```json
 {
-    "body": "I think Robert Bradshaw massively optimized CDF special functions, and that's where this comes from.  Changing the code for zeta in complex_double.pyx to:\n\n```\n        cdef pari_sp sp\n        sp = avma\n        _sig_on\n        x = self._new_from_gen_c(  gzeta(self._gen(), PREC),   sp)\n        _sig_off\n        return x\n```\n\nsomewhat fixes the problem, though doing \n\n```\nsage: zeta(CDF(0))\n```\n\nthen raises a RuntimeError.   Unfortunately, doing this doesn't work because the _sig_on/_sig_off stuff doesn't play well with Cython exceptions:\n\n```\n        cdef pari_sp sp\n        sp = avma\n        try:\n           _sig_on\n           x = self._new_from_gen_c(  gzeta(self._gen(), PREC),   sp)\n           _sig_off\n        except:\n           raise ValueError\n        return x\n```\n\n\nSo I'm not sure how to fix this in general in a nice way with the right exception, but definitely adding _sig_on/_sig_off's around all the calls to pari is a very very good idea.",
+    "body": "I think Robert Bradshaw massively optimized CDF special functions, and that's where this comes from.  Changing the code for zeta in complex_double.pyx to:\n\n```\n        cdef pari_sp sp\n        sp = avma\n        _sig_on\n        x = self._new_from_gen_c(  gzeta(self._gen(), PREC),   sp)\n        _sig_off\n        return x\n```\nsomewhat fixes the problem, though doing \n\n```\nsage: zeta(CDF(0))\n```\nthen raises a RuntimeError.   Unfortunately, doing this doesn't work because the _sig_on/_sig_off stuff doesn't play well with Cython exceptions:\n\n```\n        cdef pari_sp sp\n        sp = avma\n        try:\n           _sig_on\n           x = self._new_from_gen_c(  gzeta(self._gen(), PREC),   sp)\n           _sig_off\n        except:\n           raise ValueError\n        return x\n```\n\nSo I'm not sure how to fix this in general in a nice way with the right exception, but definitely adding _sig_on/_sig_off's around all the calls to pari is a very very good idea.",
     "created_at": "2009-04-11T05:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -74,13 +72,11 @@ I think Robert Bradshaw massively optimized CDF special functions, and that's wh
         _sig_off
         return x
 ```
-
 somewhat fixes the problem, though doing 
 
 ```
 sage: zeta(CDF(0))
 ```
-
 then raises a RuntimeError.   Unfortunately, doing this doesn't work because the _sig_on/_sig_off stuff doesn't play well with Cython exceptions:
 
 ```
@@ -94,7 +90,6 @@ then raises a RuntimeError.   Unfortunately, doing this doesn't work because the
            raise ValueError
         return x
 ```
-
 
 So I'm not sure how to fix this in general in a nice way with the right exception, but definitely adding _sig_on/_sig_off's around all the calls to pari is a very very good idea.
 
@@ -253,7 +248,7 @@ I added an alternative patch that special cases the one pole at s=1 (returning t
 archive/issue_comments_044785.json:
 ```json
 {
-    "body": "I hate to send this back to the drawing board again, but let's just fix things once and for all...\n\n```\nsage: zeta(CDF(1))\nInfinity\nsage: zeta(CC(1))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/.../<ipython console> in <module>()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/functions/transcendental.pyc in zeta(s)\n    153     \"\"\"\n    154     try:\n--> 155         return s.zeta()\n    156     except AttributeError:\n    157         return ComplexField()(s).zeta()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/rings/complex_number.so in sage.rings.complex_number.ComplexNumber.zeta (sage/rings/complex_number.c:12174)()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44110)()\n\nPariError:  (8)\n```\n\nCan we think of any other places where this needs to be checked?  For instance, zeta(1) returns this error too, though I think it inherits it from the CC example.  \n\nAlso, regarding whether it should be Infinity or some signed infinity:\n\n```\nsage: zeta(RR(1))\n+infinity\nsage: zeta(RDF(1))\n+infinity\n```\n\nI'm not saying which one is better, just what the current behavior is.  What do folks think?",
+    "body": "I hate to send this back to the drawing board again, but let's just fix things once and for all...\n\n```\nsage: zeta(CDF(1))\nInfinity\nsage: zeta(CC(1))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/.../<ipython console> in <module>()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/functions/transcendental.pyc in zeta(s)\n    153     \"\"\"\n    154     try:\n--> 155         return s.zeta()\n    156     except AttributeError:\n    157         return ComplexField()(s).zeta()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/rings/complex_number.so in sage.rings.complex_number.ComplexNumber.zeta (sage/rings/complex_number.c:12174)()\n\n/Users/.../sage-4.3.1.alpha2/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44110)()\n\nPariError:  (8)\n```\nCan we think of any other places where this needs to be checked?  For instance, zeta(1) returns this error too, though I think it inherits it from the CC example.  \n\nAlso, regarding whether it should be Infinity or some signed infinity:\n\n```\nsage: zeta(RR(1))\n+infinity\nsage: zeta(RDF(1))\n+infinity\n```\nI'm not saying which one is better, just what the current behavior is.  What do folks think?",
     "created_at": "2010-01-19T18:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -286,7 +281,6 @@ PariError                                 Traceback (most recent call last)
 
 PariError:  (8)
 ```
-
 Can we think of any other places where this needs to be checked?  For instance, zeta(1) returns this error too, though I think it inherits it from the CC example.  
 
 Also, regarding whether it should be Infinity or some signed infinity:
@@ -297,7 +291,6 @@ sage: zeta(RR(1))
 sage: zeta(RDF(1))
 +infinity
 ```
-
 I'm not saying which one is better, just what the current behavior is.  What do folks think?
 
 
@@ -389,7 +382,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_044790.json:
 ```json
 {
-    "body": "I fixed CC. As to whether it should be a signed or unsigned infinity, I went with unsigned because it has a simple pole there. \n\n\n```\n10000.5772229475\nsage: zeta(.9999)\n-9999.42279161783\n```\n\n\nWhen the new mpmath gets released, we could open a ticket with timings and accuracy comparison. Generally we favor correctness over speed.",
+    "body": "I fixed CC. As to whether it should be a signed or unsigned infinity, I went with unsigned because it has a simple pole there. \n\n```\n10000.5772229475\nsage: zeta(.9999)\n-9999.42279161783\n```\n\nWhen the new mpmath gets released, we could open a ticket with timings and accuracy comparison. Generally we favor correctness over speed.",
     "created_at": "2010-01-24T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -400,13 +393,11 @@ archive/issue_comments_044790.json:
 
 I fixed CC. As to whether it should be a signed or unsigned infinity, I went with unsigned because it has a simple pole there. 
 
-
 ```
 10000.5772229475
 sage: zeta(.9999)
 -9999.42279161783
 ```
-
 
 When the new mpmath gets released, we could open a ticket with timings and accuracy comparison. Generally we favor correctness over speed.
 
@@ -417,7 +408,7 @@ When the new mpmath gets released, we could open a ticket with timings and accur
 archive/issue_comments_044791.json:
 ```json
 {
-    "body": "Patch applies cleanly to 4.5.alpha1 and builds fine, but some doctests fail:\n\n```\nsage -t  sage/rings/real_mpfr.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/real_mpfr.pyx\", line 4487:\n    sage: R(1).zeta()\nExpected:\n    Infinity\nGot:\n    +infinity\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_149\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_real_mpfr.py\n         [10.2 s]\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/complex_number.pyx\", line 2093:\n    sage: zeta(1)\nExpected:\n    Infinity\nGot:\n    zeta(1)\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_72\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_complex_number.py\n         [8.6 s]\n```\n\n\nMoreover, it doesn't seem to live up to the promise in the title of making the return value of zeta(1) consistent:\n\n\n```\nsage: zeta(RR(1))\n+infinity\nsage: zeta(RDF(1))\nInfinity\n```\n",
+    "body": "Patch applies cleanly to 4.5.alpha1 and builds fine, but some doctests fail:\n\n```\nsage -t  sage/rings/real_mpfr.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/real_mpfr.pyx\", line 4487:\n    sage: R(1).zeta()\nExpected:\n    Infinity\nGot:\n    +infinity\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_149\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_real_mpfr.py\n         [10.2 s]\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/complex_number.pyx\", line 2093:\n    sage: zeta(1)\nExpected:\n    Infinity\nGot:\n    zeta(1)\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_72\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_complex_number.py\n         [8.6 s]\n```\n\nMoreover, it doesn't seem to live up to the promise in the title of making the return value of zeta(1) consistent:\n\n```\nsage: zeta(RR(1))\n+infinity\nsage: zeta(RDF(1))\nInfinity\n```",
     "created_at": "2010-07-02T19:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -458,9 +449,7 @@ For whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_complex_num
          [8.6 s]
 ```
 
-
 Moreover, it doesn't seem to live up to the promise in the title of making the return value of zeta(1) consistent:
-
 
 ```
 sage: zeta(RR(1))
@@ -468,7 +457,6 @@ sage: zeta(RR(1))
 sage: zeta(RDF(1))
 Infinity
 ```
-
 
 
 
@@ -551,7 +539,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_044796.json:
 ```json
 {
-    "body": "It's really sad we still have this trivial-to-fix hard crash after over a year!\n\nI've attached a patch that fixes the behavior of CDF(1).zeta() and CC(1).zeta(). It leaves the real fields alone, which I think is fine 'cause they have reasonable representations of (an) infinity, and we usually try to return something of the same type. (IN the complex case, infinity is a lot messier without a lot of special casing that's beyond the scope of this ticket...)\n\n\n```\nsage: RR(1).zeta(), RDF(1).zeta(), CC(1).zeta(), CDF(1).zeta()\n(+infinity, +infinity, Infinity, Infinity)\n```\n",
+    "body": "It's really sad we still have this trivial-to-fix hard crash after over a year!\n\nI've attached a patch that fixes the behavior of CDF(1).zeta() and CC(1).zeta(). It leaves the real fields alone, which I think is fine 'cause they have reasonable representations of (an) infinity, and we usually try to return something of the same type. (IN the complex case, infinity is a lot messier without a lot of special casing that's beyond the scope of this ticket...)\n\n```\nsage: RR(1).zeta(), RDF(1).zeta(), CC(1).zeta(), CDF(1).zeta()\n(+infinity, +infinity, Infinity, Infinity)\n```",
     "created_at": "2010-07-29T06:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
@@ -564,12 +552,10 @@ It's really sad we still have this trivial-to-fix hard crash after over a year!
 
 I've attached a patch that fixes the behavior of CDF(1).zeta() and CC(1).zeta(). It leaves the real fields alone, which I think is fine 'cause they have reasonable representations of (an) infinity, and we usually try to return something of the same type. (IN the complex case, infinity is a lot messier without a lot of special casing that's beyond the scope of this ticket...)
 
-
 ```
 sage: RR(1).zeta(), RDF(1).zeta(), CC(1).zeta(), CDF(1).zeta()
 (+infinity, +infinity, Infinity, Infinity)
 ```
-
 
 
 

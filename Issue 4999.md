@@ -3,7 +3,7 @@
 archive/issues_004999.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t  \"devel/sage/sage/gsl/integration.pyx\"              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3/sage-3.2.3-mark/devel/sage/sage/gsl/integration.pyx\", line 163:\n    sage: numerical_integral(exp(-1/x), 1, 2)\nExpected:\n    (0.50479221787318407, 5.6043194293440744e-15)\nGot:\n    (0.50479221787318396, 5.6043194293440728e-15)\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4999\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  \"devel/sage/sage/gsl/integration.pyx\"              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3/sage-3.2.3-mark/devel/sage/sage/gsl/integration.pyx\", line 163:\n    sage: numerical_integral(exp(-1/x), 1, 2)\nExpected:\n    (0.50479221787318407, 5.6043194293440744e-15)\nGot:\n    (0.50479221787318396, 5.6043194293440728e-15)\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4999\n\n",
     "created_at": "2009-01-17T16:02:24Z",
     "labels": [
         "component: porting: solaris",
@@ -18,7 +18,6 @@ archive/issues_004999.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage -t  "devel/sage/sage/gsl/integration.pyx"              
 **********************************************************************
@@ -30,7 +29,6 @@ Got:
     (0.50479221787318396, 5.6043194293440728e-15)
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4999
 

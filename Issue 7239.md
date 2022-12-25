@@ -126,7 +126,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059946.json:
 ```json
 {
-    "body": "I tried to install using \"sage -i cunningham_tables-1.0.spkg\" after downloading it, but I had error messages:\n\n```\n...\nFinished extraction\nsage: After decompressing the directory cunningham_tables-1.0 does not exist\nThis means that the corresponding .spkg needs to be downloaded\n...\n```\n\nShould I have applied the patch first?  It would help to give more detailed instructions!\n\nSeparate question:  did you ask Jeroen Demeyer about using his data?",
+    "body": "I tried to install using \"sage -i cunningham_tables-1.0.spkg\" after downloading it, but I had error messages:\n\n```\n...\nFinished extraction\nsage: After decompressing the directory cunningham_tables-1.0 does not exist\nThis means that the corresponding .spkg needs to be downloaded\n...\n```\nShould I have applied the patch first?  It would help to give more detailed instructions!\n\nSeparate question:  did you ask Jeroen Demeyer about using his data?",
     "created_at": "2009-11-22T17:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -144,7 +144,6 @@ sage: After decompressing the directory cunningham_tables-1.0 does not exist
 This means that the corresponding .spkg needs to be downloaded
 ...
 ```
-
 Should I have applied the patch first?  It would help to give more detailed instructions!
 
 Separate question:  did you ask Jeroen Demeyer about using his data?
@@ -220,7 +219,7 @@ I expect Jeroen will be amenable (if necessary I could also ask him as I know hi
 archive/issue_comments_059950.json:
 ```json
 {
-    "body": "the new spkg is at the same address.\nI tested it again and it works for me now.\n\nThe previous one was creating a directory named \"cunningham_tables\" when decompressed, then only difference with the new one is that the directory is now named \"cunningham_tables-1.0\".\nYou might check you have the right one by trying for yourself:\n\n`tar tjf cunningham_tables-1.0.spkg` should answer\n\n```\ncunningham_tables-1.0/\ncunningham_tables-1.0/.hg/\ncunningham_tables-1.0/.hg/store/\ncunningham_tables-1.0/.hg/store/fncache\ncunningham_tables-1.0/.hg/store/undo\ncunningham_tables-1.0/.hg/store/00manifest.i\ncunningham_tables-1.0/.hg/store/00changelog.i\ncunningham_tables-1.0/.hg/store/data/\ncunningham_tables-1.0/.hg/store/data/_s_p_k_g.txt.i\ncunningham_tables-1.0/.hg/store/data/read__cunningham__prime__factors.py.i\ncunningham_tables-1.0/.hg/store/data/spkg-install.i\ncunningham_tables-1.0/.hg/requires\ncunningham_tables-1.0/.hg/dirstate\ncunningham_tables-1.0/.hg/undo.dirstate\ncunningham_tables-1.0/.hg/00changelog.i\ncunningham_tables-1.0/.hg/branch\ncunningham_tables-1.0/.hg/undo.branch\ncunningham_tables-1.0/src/\ncunningham_tables-1.0/src/cunningham_tables/\ncunningham_tables-1.0/src/cunningham_tables/cunningham_prime_factors.sobj\ncunningham_tables-1.0/spkg-install\ncunningham_tables-1.0/SPKG.txt\ncunningham_tables-1.0/read_cunningham_prime_factors.py\n```\n",
+    "body": "the new spkg is at the same address.\nI tested it again and it works for me now.\n\nThe previous one was creating a directory named \"cunningham_tables\" when decompressed, then only difference with the new one is that the directory is now named \"cunningham_tables-1.0\".\nYou might check you have the right one by trying for yourself:\n\n`tar tjf cunningham_tables-1.0.spkg` should answer\n\n```\ncunningham_tables-1.0/\ncunningham_tables-1.0/.hg/\ncunningham_tables-1.0/.hg/store/\ncunningham_tables-1.0/.hg/store/fncache\ncunningham_tables-1.0/.hg/store/undo\ncunningham_tables-1.0/.hg/store/00manifest.i\ncunningham_tables-1.0/.hg/store/00changelog.i\ncunningham_tables-1.0/.hg/store/data/\ncunningham_tables-1.0/.hg/store/data/_s_p_k_g.txt.i\ncunningham_tables-1.0/.hg/store/data/read__cunningham__prime__factors.py.i\ncunningham_tables-1.0/.hg/store/data/spkg-install.i\ncunningham_tables-1.0/.hg/requires\ncunningham_tables-1.0/.hg/dirstate\ncunningham_tables-1.0/.hg/undo.dirstate\ncunningham_tables-1.0/.hg/00changelog.i\ncunningham_tables-1.0/.hg/branch\ncunningham_tables-1.0/.hg/undo.branch\ncunningham_tables-1.0/src/\ncunningham_tables-1.0/src/cunningham_tables/\ncunningham_tables-1.0/src/cunningham_tables/cunningham_prime_factors.sobj\ncunningham_tables-1.0/spkg-install\ncunningham_tables-1.0/SPKG.txt\ncunningham_tables-1.0/read_cunningham_prime_factors.py\n```",
     "created_at": "2009-11-23T21:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -262,7 +261,6 @@ cunningham_tables-1.0/spkg-install
 cunningham_tables-1.0/SPKG.txt
 cunningham_tables-1.0/read_cunningham_prime_factors.py
 ```
-
 
 
 
@@ -312,7 +310,7 @@ Jeroen."
 archive/issue_comments_059952.json:
 ```json
 {
-    "body": "Replying to [comment:9 ylchapuy]:\n> the new spkg is at the same address.\n> I tested it again and it works for me now.\n> \n> The previous one was creating a directory named \"cunningham_tables\" when decompressed, then only difference with the new one is that the directory is now named \"cunningham_tables-1.0\".\n> You might check you have the right one by trying for yourself:\n\nOK, what was apparently happening is that when I downloaded the new file, firefox was only getting the cached version -- I had to manually clear the cache!  now I get the correct new version and it installs fine.  I will continue to review this by applying the patch, etc, soon but cannot right now.",
+    "body": "Replying to [comment:9 ylchapuy]:\n> the new spkg is at the same address.\n> I tested it again and it works for me now.\n> \n> The previous one was creating a directory named \"cunningham_tables\" when decompressed, then only difference with the new one is that the directory is now named \"cunningham_tables-1.0\".\n> You might check you have the right one by trying for yourself:\n\n\nOK, what was apparently happening is that when I downloaded the new file, firefox was only getting the cached version -- I had to manually clear the cache!  now I get the correct new version and it installs fine.  I will continue to review this by applying the patch, etc, soon but cannot right now.",
     "created_at": "2009-11-23T22:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -327,6 +325,7 @@ Replying to [comment:9 ylchapuy]:
 > 
 > The previous one was creating a directory named "cunningham_tables" when decompressed, then only difference with the new one is that the directory is now named "cunningham_tables-1.0".
 > You might check you have the right one by trying for yourself:
+
 
 OK, what was apparently happening is that when I downloaded the new file, firefox was only getting the cached version -- I had to manually clear the cache!  now I get the correct new version and it installs fine.  I will continue to review this by applying the patch, etc, soon but cannot right now.
 
@@ -415,7 +414,7 @@ The name `_factor_cunningham` was just intended to be like the existing `_factor
 archive/issue_comments_059957.json:
 ```json
 {
-    "body": "Replying to [comment:13 ylchapuy]:\n> The name `_factor_cunningham` was just intended to be like the existing `_factor_trial_division`.\n\nSure -- but that is used internally by factor() so it is more reasonable to have it hidden from the user.  You could add a \"use_cunningham\" flag to the integer factor function?",
+    "body": "Replying to [comment:13 ylchapuy]:\n> The name `_factor_cunningham` was just intended to be like the existing `_factor_trial_division`.\n\n\nSure -- but that is used internally by factor() so it is more reasonable to have it hidden from the user.  You could add a \"use_cunningham\" flag to the integer factor function?",
     "created_at": "2009-12-18T20:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -426,6 +425,7 @@ archive/issue_comments_059957.json:
 
 Replying to [comment:13 ylchapuy]:
 > The name `_factor_cunningham` was just intended to be like the existing `_factor_trial_division`.
+
 
 Sure -- but that is used internally by factor() so it is more reasonable to have it hidden from the user.  You could add a "use_cunningham" flag to the integer factor function?
 
@@ -488,7 +488,7 @@ Is the optional package [cunningham_tables-1.0.spkg](http://yann.laiglechapuy.ne
 archive/issue_comments_059960.json:
 ```json
 {
-    "body": "Replying to [comment:17 mvngu]:\n> Is the optional package [cunningham_tables-1.0.spkg](http://yann.laiglechapuy.net/spkg/cunningham_tables-1.0.spkg) meant to be in the optional spkg repository at http://www.sagemath.org/packages/optional? I don't see it there at all.\n\nThere's a link to it above:  can the release manager take it from there and put it in the correct place?",
+    "body": "Replying to [comment:17 mvngu]:\n> Is the optional package [cunningham_tables-1.0.spkg](http://yann.laiglechapuy.net/spkg/cunningham_tables-1.0.spkg) meant to be in the optional spkg repository at http://www.sagemath.org/packages/optional? I don't see it there at all.\n\n\nThere's a link to it above:  can the release manager take it from there and put it in the correct place?",
     "created_at": "2010-01-22T17:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -500,6 +500,7 @@ archive/issue_comments_059960.json:
 Replying to [comment:17 mvngu]:
 > Is the optional package [cunningham_tables-1.0.spkg](http://yann.laiglechapuy.net/spkg/cunningham_tables-1.0.spkg) meant to be in the optional spkg repository at http://www.sagemath.org/packages/optional? I don't see it there at all.
 
+
 There's a link to it above:  can the release manager take it from there and put it in the correct place?
 
 
@@ -509,7 +510,7 @@ There's a link to it above:  can the release manager take it from there and put 
 archive/issue_comments_059961.json:
 ```json
 {
-    "body": "Replying to [comment:18 cremona]:\n> There's a link to it above:  can the release manager take it from there and put it in the correct place?\n\nDone. See http://www.sagemath.org/packages/optional.",
+    "body": "Replying to [comment:18 cremona]:\n> There's a link to it above:  can the release manager take it from there and put it in the correct place?\n\n\nDone. See http://www.sagemath.org/packages/optional.",
     "created_at": "2010-01-22T17:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7239",
     "type": "issue_comment",
@@ -520,5 +521,6 @@ archive/issue_comments_059961.json:
 
 Replying to [comment:18 cremona]:
 > There's a link to it above:  can the release manager take it from there and put it in the correct place?
+
 
 Done. See http://www.sagemath.org/packages/optional.

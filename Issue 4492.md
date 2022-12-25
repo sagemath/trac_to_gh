@@ -3,7 +3,7 @@
 archive/issues_004492.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @craigcitro @jasongrout @loefflerd\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\n\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @jasongrout @loefflerd\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
     "created_at": "2008-11-11T15:17:25Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  @craigcitro @jasongrout @loefflerd
 
 Using ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.
 
-
 ```
 sage: i=MatrixSpace(ZZ,2,2)(1)
 sage: i
@@ -40,7 +39,6 @@ sage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special
 ...
 ValueError: Insufficient information to determine dimensions.
 ```
-
 This feels to me like a hazardous inconsistency.
 
 Perhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.
@@ -283,7 +281,7 @@ it should be a 3x2 zero matrix, but that can only be deduced after processing th
 archive/issue_comments_033125.json:
 ```json
 {
-    "body": "Oops, sorry for the broken formatting. Clean version:\n\n\n```\nsage: B = Matrix(ZZ,3,2,[1,2,3,4,5,6])\nsage: block_matrix([0,1,B,1]) \n```\n",
+    "body": "Oops, sorry for the broken formatting. Clean version:\n\n```\nsage: B = Matrix(ZZ,3,2,[1,2,3,4,5,6])\nsage: block_matrix([0,1,B,1]) \n```",
     "created_at": "2010-01-26T19:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -294,12 +292,10 @@ archive/issue_comments_033125.json:
 
 Oops, sorry for the broken formatting. Clean version:
 
-
 ```
 sage: B = Matrix(ZZ,3,2,[1,2,3,4,5,6])
 sage: block_matrix([0,1,B,1]) 
 ```
-
 
 
 
@@ -308,7 +304,7 @@ sage: block_matrix([0,1,B,1])
 archive/issue_comments_033126.json:
 ```json
 {
-    "body": "I tried to write a patch for this, but ran into some trouble with the last doctest:\n\n\n```\n        sage: B = matrix(QQ, 2, 3, range(6))\n        sage: block_matrix([~A, B, B, ~A], subdivide=False)\n        [-5/12   3/8     0     1     2]\n        [  1/4  -1/8     3     4     5]\n        [    0     1     2 -5/12   3/8]\n        [    3     4     5   1/4  -1/8]\n```\n\n\nIn this case there are no real columns as such, and I'm not sure how we should behave if there were an extra row with `'1 0'` below the `'~A B'` and `'B ~A'` rows. Should that give a 3x3 identity matrix and a 3x2 zero matrix, or a 2x2 identity matrix and a 2x2 identity matrix? Maybe undefined behaviour, or an exception?\n\nMy current attempt raises an exception for this doctest that the column widths are inconsistent.",
+    "body": "I tried to write a patch for this, but ran into some trouble with the last doctest:\n\n```\n        sage: B = matrix(QQ, 2, 3, range(6))\n        sage: block_matrix([~A, B, B, ~A], subdivide=False)\n        [-5/12   3/8     0     1     2]\n        [  1/4  -1/8     3     4     5]\n        [    0     1     2 -5/12   3/8]\n        [    3     4     5   1/4  -1/8]\n```\n\nIn this case there are no real columns as such, and I'm not sure how we should behave if there were an extra row with `'1 0'` below the `'~A B'` and `'B ~A'` rows. Should that give a 3x3 identity matrix and a 3x2 zero matrix, or a 2x2 identity matrix and a 2x2 identity matrix? Maybe undefined behaviour, or an exception?\n\nMy current attempt raises an exception for this doctest that the column widths are inconsistent.",
     "created_at": "2010-01-29T10:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -319,7 +315,6 @@ archive/issue_comments_033126.json:
 
 I tried to write a patch for this, but ran into some trouble with the last doctest:
 
-
 ```
         sage: B = matrix(QQ, 2, 3, range(6))
         sage: block_matrix([~A, B, B, ~A], subdivide=False)
@@ -328,7 +323,6 @@ I tried to write a patch for this, but ran into some trouble with the last docte
         [    0     1     2 -5/12   3/8]
         [    3     4     5   1/4  -1/8]
 ```
-
 
 In this case there are no real columns as such, and I'm not sure how we should behave if there were an extra row with `'1 0'` below the `'~A B'` and `'B ~A'` rows. Should that give a 3x3 identity matrix and a 3x2 zero matrix, or a 2x2 identity matrix and a 2x2 identity matrix? Maybe undefined behaviour, or an exception?
 
@@ -417,7 +411,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033131.json:
 ```json
 {
-    "body": "The following tests failed:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage/sage/matrix/matrix2.pyx # 2 doctests failed\n\tsage -t  devel/sage/sage/combinat/designs/incidence_structures.py # 1 doctests failed\n\tsage -t  devel/sage/sage/crypto/lattice.py # 9 doctests failed\n\tsage -t  devel/sage/sage/combinat/matrices/hadamard_matrix.py # 1 doctests failed\n----------------------------------------------------------------------\n\n```\n",
+    "body": "The following tests failed:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage/sage/matrix/matrix2.pyx # 2 doctests failed\n\tsage -t  devel/sage/sage/combinat/designs/incidence_structures.py # 1 doctests failed\n\tsage -t  devel/sage/sage/crypto/lattice.py # 9 doctests failed\n\tsage -t  devel/sage/sage/combinat/matrices/hadamard_matrix.py # 1 doctests failed\n----------------------------------------------------------------------\n\n```",
     "created_at": "2011-01-12T21:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
@@ -427,7 +421,6 @@ archive/issue_comments_033131.json:
 ```
 
 The following tests failed:
-
 
 ```
 ----------------------------------------------------------------------
@@ -441,7 +434,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 
 ```
-
 
 
 

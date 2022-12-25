@@ -3,7 +3,7 @@
 archive/issues_000887.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAll three errors are essentially the same; here's one of them:\n\n```\nFile \"real_roots.pyx\", line 797:\n    sage: str(dbp)\nExpected:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1; slope_err [-24.000000000000000 .. 24.000000000000000]>'\nGot:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1>'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/887\n\n",
+    "body": "Assignee: failure\n\nAll three errors are essentially the same; here's one of them:\n\n```\nFile \"real_roots.pyx\", line 797:\n    sage: str(dbp)\nExpected:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1; slope_err [-24.000000000000000 .. 24.000000000000000]>'\nGot:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/887\n\n",
     "created_at": "2007-10-13T20:31:31Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ Expected:
 Got:
     '<IBP: (-1, 148, 901) + [0 .. 4); level 1>'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/887

@@ -151,7 +151,7 @@ archive/issue_comments_012327.json:
 archive/issue_comments_012328.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n>  8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!\n> \n\nThe parent of the patch is in 2.10.2.alpha0 and the trac installations uses the release branch. You can still download the patch and look at it \"manually\".\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 cremona]:\n>  8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!\n\n> \n\nThe parent of the patch is in 2.10.2.alpha0 and the trac installations uses the release branch. You can still download the patch and look at it \"manually\".\n\nCheers,\n\nMichael",
     "created_at": "2008-02-18T19:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -162,6 +162,7 @@ archive/issue_comments_012328.json:
 
 Replying to [comment:5 cremona]:
 >  8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!
+
 > 
 
 The parent of the patch is in 2.10.2.alpha0 and the trac installations uses the release branch. You can still download the patch and look at it "manually".
@@ -281,7 +282,7 @@ apply all three patches, including this one
 archive/issue_comments_012334.json:
 ```json
 {
-    "body": "I am getting more rejects if I apply against my current version of 2.10.2.alpha1 (which will be alpha2 in about 30 minutes):\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 8089.patch\npatching file sage/rings/ideal.py\npatching file sage/rings/number_field/all.py\nHunk #1 succeeded at 6 with fuzz 1.\npatching file sage/rings/number_field/number_field.py\nHunk #1 succeeded at 162 (offset 5 lines).\nHunk #2 succeeded at 1248 (offset 24 lines).\nHunk #3 succeeded at 1259 (offset 24 lines).\nHunk #4 succeeded at 1289 (offset 24 lines).\npatching file sage/rings/number_field/number_field_element.pyx\nHunk #1 succeeded at 1550 (offset 12 lines).\nHunk #2 succeeded at 1563 with fuzz 1 (offset 12 lines).\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/number_field_ideal_rel.py\npatching file sage/schemes/elliptic_curves/cm.py\npatching file sage/schemes/elliptic_curves/ell_field.py\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #1 FAILED at 42.\nHunk #2 FAILED at 66.\nHunk #3 FAILED at 81.\nHunk #4 FAILED at 142.\nHunk #5 FAILED at 211.\nHunk #6 FAILED at 241.\nHunk #7 FAILED at 298.\nHunk #8 FAILED at 400.\nHunk #9 succeeded at 783 with fuzz 2 (offset 359 lines).\nHunk #10 FAILED at 801.\n9 out of 10 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #3 succeeded at 1483 (offset 23 lines).\nHunk #4 succeeded at 1629 (offset 23 lines).\npatching file sage/schemes/elliptic_curves/ell_number_field.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 succeeded at 1519 (offset 11 lines).\nHunk #3 succeeded at 1574 (offset 11 lines).\nHunk #4 succeeded at 1607 (offset 11 lines).\nHunk #5 succeeded at 1680 (offset 11 lines).\nHunk #6 succeeded at 2176 (offset 11 lines).\nHunk #7 succeeded at 2886 (offset 46 lines).\npatching file sage/schemes/elliptic_curves/padics.py\nHunk #1 succeeded at 36 (offset 1 line).\nHunk #2 succeeded at 1195 (offset 210 lines).\nHunk #3 succeeded at 1244 (offset 210 lines).\npatching file sage/schemes/elliptic_curves/weierstrass_morphism.py\n```\n\nI suggest rebasing against 2.10.2.alpha2.\n\nCheers,\n\nMichael",
+    "body": "I am getting more rejects if I apply against my current version of 2.10.2.alpha1 (which will be alpha2 in about 30 minutes):\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 8089.patch\npatching file sage/rings/ideal.py\npatching file sage/rings/number_field/all.py\nHunk #1 succeeded at 6 with fuzz 1.\npatching file sage/rings/number_field/number_field.py\nHunk #1 succeeded at 162 (offset 5 lines).\nHunk #2 succeeded at 1248 (offset 24 lines).\nHunk #3 succeeded at 1259 (offset 24 lines).\nHunk #4 succeeded at 1289 (offset 24 lines).\npatching file sage/rings/number_field/number_field_element.pyx\nHunk #1 succeeded at 1550 (offset 12 lines).\nHunk #2 succeeded at 1563 with fuzz 1 (offset 12 lines).\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/number_field_ideal_rel.py\npatching file sage/schemes/elliptic_curves/cm.py\npatching file sage/schemes/elliptic_curves/ell_field.py\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #1 FAILED at 42.\nHunk #2 FAILED at 66.\nHunk #3 FAILED at 81.\nHunk #4 FAILED at 142.\nHunk #5 FAILED at 211.\nHunk #6 FAILED at 241.\nHunk #7 FAILED at 298.\nHunk #8 FAILED at 400.\nHunk #9 succeeded at 783 with fuzz 2 (offset 359 lines).\nHunk #10 FAILED at 801.\n9 out of 10 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #3 succeeded at 1483 (offset 23 lines).\nHunk #4 succeeded at 1629 (offset 23 lines).\npatching file sage/schemes/elliptic_curves/ell_number_field.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 succeeded at 1519 (offset 11 lines).\nHunk #3 succeeded at 1574 (offset 11 lines).\nHunk #4 succeeded at 1607 (offset 11 lines).\nHunk #5 succeeded at 1680 (offset 11 lines).\nHunk #6 succeeded at 2176 (offset 11 lines).\nHunk #7 succeeded at 2886 (offset 46 lines).\npatching file sage/schemes/elliptic_curves/padics.py\nHunk #1 succeeded at 36 (offset 1 line).\nHunk #2 succeeded at 1195 (offset 210 lines).\nHunk #3 succeeded at 1244 (offset 210 lines).\npatching file sage/schemes/elliptic_curves/weierstrass_morphism.py\n```\nI suggest rebasing against 2.10.2.alpha2.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-19T17:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -338,7 +339,6 @@ Hunk #2 succeeded at 1195 (offset 210 lines).
 Hunk #3 succeeded at 1244 (offset 210 lines).
 patching file sage/schemes/elliptic_curves/weierstrass_morphism.py
 ```
-
 I suggest rebasing against 2.10.2.alpha2.
 
 Cheers,
@@ -372,7 +372,7 @@ http://sage.math.washington.edu/home/was/tmp/1946.hg
 archive/issue_comments_012336.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n> Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:\n> \n> http://sage.math.washington.edu/home/was/tmp/1946.hg\n\nEven that bundle does not apply cleanly against my 2.10.2.a1 or 2.10.2.a2. It looks like a whole bunch of trivial, white space related rejects. One exception is the fixed doctest, but that is easy to fix.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 was]:\n> Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:\n> \n> http://sage.math.washington.edu/home/was/tmp/1946.hg\n\n\nEven that bundle does not apply cleanly against my 2.10.2.a1 or 2.10.2.a2. It looks like a whole bunch of trivial, white space related rejects. One exception is the fixed doctest, but that is easy to fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T13:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
@@ -385,6 +385,7 @@ Replying to [comment:9 was]:
 > Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:
 > 
 > http://sage.math.washington.edu/home/was/tmp/1946.hg
+
 
 Even that bundle does not apply cleanly against my 2.10.2.a1 or 2.10.2.a2. It looks like a whole bunch of trivial, white space related rejects. One exception is the fixed doctest, but that is easy to fix.
 

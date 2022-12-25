@@ -3,7 +3,7 @@
 archive/issues_000270.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis was found by Mike Hansen\n\n\n```\nsage: g1 = PermutationGroupElement([(1,2),(3,4,5)])\nsage: g1.parent()   # => Symmetric group of order 5! as a permutation group\nSymmetric group of order 5! as a permutation group\nsage: g2 = PermutationGroupElement([(1,2)])\nsage: g2.parent()   # => Symmetric group of order 2! as a permutation group\nSymmetric group of order 2! as a permutation group\nsage: g1*g2  # => (3,4,5)\n(3,4,5)\nsage: g2*g2\n()\nsage: g2*g1\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.MonoidElement.__mul__()\n\n/home/was/element.pyx in element.bin_op_c()\n\n/home/was/element.pyx in element.canonical_coercion_c()\n\n/home/was/element.pyx in element._verify_canonical_coercion_c()\n\n<type 'exceptions.RuntimeError'>: There is a bug in the coercion code in SAGE.\nBoth x (=(1,2)) and y (=None) are supposed to have identical parents but they don't.\nIn fact, x has parent 'SymmetricGroup(2)'\nwhereas y has parent '<type 'NoneType'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/270\n\n",
+    "body": "Assignee: somebody\n\nThis was found by Mike Hansen\n\n```\nsage: g1 = PermutationGroupElement([(1,2),(3,4,5)])\nsage: g1.parent()   # => Symmetric group of order 5! as a permutation group\nSymmetric group of order 5! as a permutation group\nsage: g2 = PermutationGroupElement([(1,2)])\nsage: g2.parent()   # => Symmetric group of order 2! as a permutation group\nSymmetric group of order 2! as a permutation group\nsage: g1*g2  # => (3,4,5)\n(3,4,5)\nsage: g2*g2\n()\nsage: g2*g1\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.MonoidElement.__mul__()\n\n/home/was/element.pyx in element.bin_op_c()\n\n/home/was/element.pyx in element.canonical_coercion_c()\n\n/home/was/element.pyx in element._verify_canonical_coercion_c()\n\n<type 'exceptions.RuntimeError'>: There is a bug in the coercion code in SAGE.\nBoth x (=(1,2)) and y (=None) are supposed to have identical parents but they don't.\nIn fact, x has parent 'SymmetricGroup(2)'\nwhereas y has parent '<type 'NoneType'>'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/270\n\n",
     "created_at": "2007-02-20T18:13:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_000270.json:
 Assignee: somebody
 
 This was found by Mike Hansen
-
 
 ```
 sage: g1 = PermutationGroupElement([(1,2),(3,4,5)])
@@ -51,7 +50,6 @@ Both x (=(1,2)) and y (=None) are supposed to have identical parents but they do
 In fact, x has parent 'SymmetricGroup(2)'
 whereas y has parent '<type 'NoneType'>'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/270
 

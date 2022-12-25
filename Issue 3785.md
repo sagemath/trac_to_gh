@@ -174,7 +174,7 @@ archive/issue_events_008688.json:
 archive/issue_comments_026855.json:
 ```json
 {
-    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/atlas-3.8.2.spkg\n\nfixes the following problems:\n\n* update to 3.8.2\n* better detection of Pentium D and E\n* detect more Core2Duos cores\n* properly detect Dunnington cores\n\nIn addition the spkg has been cleaned up. Build time:\n\n* on the new sage.math down from 180 minutes to \n\n```\nreal\t11m36.903s\nuser\t9m58.840s\nsys\t1m17.870s\n```\n\n* On cleo/iras, i.e. Itanium2 machines on SkyNet:\n\n```\nreal\t37m34.354s\nuser\t34m18.232s\nsys\t1m20.748s\n```\n\n\nThis also fixes #3787\n\nCheers,\n\nMichael",
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/atlas-3.8.2.spkg\n\nfixes the following problems:\n\n* update to 3.8.2\n* better detection of Pentium D and E\n* detect more Core2Duos cores\n* properly detect Dunnington cores\n\nIn addition the spkg has been cleaned up. Build time:\n\n* on the new sage.math down from 180 minutes to \n\n```\nreal\t11m36.903s\nuser\t9m58.840s\nsys\t1m17.870s\n```\n* On cleo/iras, i.e. Itanium2 machines on SkyNet:\n\n```\nreal\t37m34.354s\nuser\t34m18.232s\nsys\t1m20.748s\n```\n\nThis also fixes #3787\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T05:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3785",
     "type": "issue_comment",
@@ -203,7 +203,6 @@ real	11m36.903s
 user	9m58.840s
 sys	1m17.870s
 ```
-
 * On cleo/iras, i.e. Itanium2 machines on SkyNet:
 
 ```
@@ -211,7 +210,6 @@ real	37m34.354s
 user	34m18.232s
 sys	1m20.748s
 ```
-
 
 This also fixes #3787
 
@@ -244,7 +242,7 @@ Michael, do I have to wait until there's a 3.2.3.alpha before testing this?  I h
 archive/issue_comments_026857.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> Michael, do I have to wait until there's a 3.2.3.alpha before testing this?  I have been using 3.2.2 for a while now.  John\n\nThis can be tested with any recent Sage release. William did some complete build of Sage with this ATLAS.spkg, so hopefully it will get a review soon :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 cremona]:\n> Michael, do I have to wait until there's a 3.2.3.alpha before testing this?  I have been using 3.2.2 for a while now.  John\n\n\nThis can be tested with any recent Sage release. William did some complete build of Sage with this ATLAS.spkg, so hopefully it will get a review soon :)\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T15:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3785",
     "type": "issue_comment",
@@ -255,6 +253,7 @@ archive/issue_comments_026857.json:
 
 Replying to [comment:5 cremona]:
 > Michael, do I have to wait until there's a 3.2.3.alpha before testing this?  I have been using 3.2.2 for a while now.  John
+
 
 This can be tested with any recent Sage release. William did some complete build of Sage with this ATLAS.spkg, so hopefully it will get a review soon :)
 

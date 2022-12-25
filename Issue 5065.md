@@ -3,7 +3,7 @@
 archive/issues_005065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,\n\n\n```\nsage: E = EllipticCurve(1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n...\n...\nTypeError: Argument x (= 0) is of wrong type.\n```\n\n\nfurther, it returns a mysterious 1 when coercing in a 1\n\n\n```\nsage: a = T(1); a\n1\nsage: b = T.gens()[0]-T.gens()[0]; b\n(0 : 1 : 0)\nsage: a+b\nTypeError: unsupported operand parent(s) for '+': 'Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field' and 'Torsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 x C2 associated to the Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field'\n```\n\n\nYet, it's all cool with the original curve.\n\n```\nsage: E(0)\n(0 : 1 : 0)\nsage: E(1)\n...\n...\nTypeError: v (=(1,)) must have 3 components\nsage: \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5065\n\n",
+    "body": "Assignee: @williamstein\n\nThe torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,\n\n```\nsage: E = EllipticCurve(1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n...\n...\nTypeError: Argument x (= 0) is of wrong type.\n```\n\nfurther, it returns a mysterious 1 when coercing in a 1\n\n```\nsage: a = T(1); a\n1\nsage: b = T.gens()[0]-T.gens()[0]; b\n(0 : 1 : 0)\nsage: a+b\nTypeError: unsupported operand parent(s) for '+': 'Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field' and 'Torsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 x C2 associated to the Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field'\n```\n\nYet, it's all cool with the original curve.\n\n```\nsage: E(0)\n(0 : 1 : 0)\nsage: E(1)\n...\n...\nTypeError: v (=(1,)) must have 3 components\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5065\n\n",
     "created_at": "2009-01-23T08:29:47Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 The torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,
 
-
 ```
 sage: E = EllipticCurve(1)
 sage: T = E.torsion_subgroup()
@@ -31,9 +30,7 @@ sage: T(0)
 TypeError: Argument x (= 0) is of wrong type.
 ```
 
-
 further, it returns a mysterious 1 when coercing in a 1
-
 
 ```
 sage: a = T(1); a
@@ -43,7 +40,6 @@ sage: b = T.gens()[0]-T.gens()[0]; b
 sage: a+b
 TypeError: unsupported operand parent(s) for '+': 'Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field' and 'Torsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 x C2 associated to the Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field'
 ```
-
 
 Yet, it's all cool with the original curve.
 
@@ -56,7 +52,6 @@ sage: E(1)
 TypeError: v (=(1,)) must have 3 components
 sage: 
 ```
-
 
 
 
@@ -182,7 +177,7 @@ archive/issue_events_011680.json:
 archive/issue_comments_038515.json:
 ```json
 {
-    "body": "In 4.5.3.alpha3 this works fine:\n\n```\nsage: E = EllipticCurve(j=1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n(0 : 1 : 0)\n```\n\nthanks to the new Abelian Groups support.  So this ticket can be closed as fixed.",
+    "body": "In 4.5.3.alpha3 this works fine:\n\n```\nsage: E = EllipticCurve(j=1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n(0 : 1 : 0)\n```\nthanks to the new Abelian Groups support.  So this ticket can be closed as fixed.",
     "created_at": "2010-08-14T16:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5065",
     "type": "issue_comment",
@@ -199,7 +194,6 @@ sage: T = E.torsion_subgroup()
 sage: T(0)
 (0 : 1 : 0)
 ```
-
 thanks to the new Abelian Groups support.  So this ticket can be closed as fixed.
 
 

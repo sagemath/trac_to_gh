@@ -3,7 +3,7 @@
 archive/issues_006251.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\n\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
+    "body": "Assignee: boothby\n\nCC:  @robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
     "created_at": "2009-06-09T01:20:04Z",
     "labels": [
         "component: notebook",
@@ -53,7 +53,6 @@ ___S_A_G_E___
 
 ```
 
-
 But you can still issue compute commands and have them evaluated. In the same Python session:
 
 ```
@@ -68,7 +67,6 @@ ___S_A_G_E___
 9
 
 ```
-
 In the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove "session" from the sessions dictionary; is that something that should be done?
 
 
@@ -179,7 +177,7 @@ Actually, if you log into the notebook you will see these transient worksheets g
 archive/issue_comments_049830.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though. \n\nI don't see the transient worksheets in the usual web notebook, and if load `nb.sobj` after running some sessions, I don't see any worksheets there (but I might have missed something). I've tested this on my own machine, sage.math, and bsd.math.\n\nThe \"further-stuff\" patch removes the nodoctest, since the file does pass doctests. It also adds the server to the reference manual and improves the documentation a bit. It doesn't have anything to do with fixing the issue in this ticket, but while we're there, we might as well fix some things up.",
+    "body": "Replying to [comment:4 robertwb]:\n> Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though. \n\n\nI don't see the transient worksheets in the usual web notebook, and if load `nb.sobj` after running some sessions, I don't see any worksheets there (but I might have missed something). I've tested this on my own machine, sage.math, and bsd.math.\n\nThe \"further-stuff\" patch removes the nodoctest, since the file does pass doctests. It also adds the server to the reference manual and improves the documentation a bit. It doesn't have anything to do with fixing the issue in this ticket, but while we're there, we might as well fix some things up.",
     "created_at": "2009-06-09T09:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
@@ -190,6 +188,7 @@ archive/issue_comments_049830.json:
 
 Replying to [comment:4 robertwb]:
 > Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though. 
+
 
 I don't see the transient worksheets in the usual web notebook, and if load `nb.sobj` after running some sessions, I don't see any worksheets there (but I might have missed something). I've tested this on my own machine, sage.math, and bsd.math.
 
@@ -274,7 +273,7 @@ One quick comment: in "trac_6251-further-stuff.patch", you don't need to add the
 archive/issue_comments_049835.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> One quick comment: in \"trac_6251-further-stuff.patch\", you don't need to add the file \"twist.rst\": it is autogenerated (as it says) -- it is created automatically because of the line you added to \"doc/en/reference/notebook.rst\".\n\nOkay, thanks. I still don't really know what I'm doing with the documentation system. I'll get an updated version of this patch up.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> One quick comment: in \"trac_6251-further-stuff.patch\", you don't need to add the file \"twist.rst\": it is autogenerated (as it says) -- it is created automatically because of the line you added to \"doc/en/reference/notebook.rst\".\n\n\nOkay, thanks. I still don't really know what I'm doing with the documentation system. I'll get an updated version of this patch up.",
     "created_at": "2009-07-20T05:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
@@ -285,6 +284,7 @@ archive/issue_comments_049835.json:
 
 Replying to [comment:7 jhpalmieri]:
 > One quick comment: in "trac_6251-further-stuff.patch", you don't need to add the file "twist.rst": it is autogenerated (as it says) -- it is created automatically because of the line you added to "doc/en/reference/notebook.rst".
+
 
 Okay, thanks. I still don't really know what I'm doing with the documentation system. I'll get an updated version of this patch up.
 

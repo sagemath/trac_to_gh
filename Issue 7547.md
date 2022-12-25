@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7547
 archive/issue_comments_063987.json:
 ```json
 {
-    "body": "For the record:\n\n```\nsage: P = graphs.PetersenGraph()\nsage: D = graphs.DodecahedralGraph()\nsage: L = D.lexicographic_product(P) \nsage: L.allow_multiple_edges(True)\nsage: time L.has_multiple_edges()\n```\n\n\nBefore: Wall time: 39.56 s\n\nAfter: Wall time: 19.32 s\n\nI hope I did no mistake, it's 4 a.m here...",
+    "body": "For the record:\n\n```\nsage: P = graphs.PetersenGraph()\nsage: D = graphs.DodecahedralGraph()\nsage: L = D.lexicographic_product(P) \nsage: L.allow_multiple_edges(True)\nsage: time L.has_multiple_edges()\n```\n\nBefore: Wall time: 39.56 s\n\nAfter: Wall time: 19.32 s\n\nI hope I did no mistake, it's 4 a.m here...",
     "created_at": "2009-11-28T03:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
@@ -51,7 +51,6 @@ sage: L = D.lexicographic_product(P)
 sage: L.allow_multiple_edges(True)
 sage: time L.has_multiple_edges()
 ```
-
 
 Before: Wall time: 39.56 s
 

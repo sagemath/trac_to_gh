@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7379
 archive/issue_comments_061938.json:
 ```json
 {
-    "body": "Here is a patch to the sagenb directory which allows for the following:\n\n\n```\n@interact(layout=[['a','b'],['c','d']])\ndef _(a=(1,2),b=(3,10),c=[\"test\",\"button\"],d=x^2+1):\n    print a,b,c,d\n```\n\n\n\n```\ndiff -r 69309549b229 notebook/interact.py\n--- a/notebook/interact.py\tTue Nov 03 03:14:01 2009 -0600\n+++ b/notebook/interact.py\tTue Nov 03 03:48:40 2009 -0600\n@@ -1795,15 +1795,25 @@\n             sage: sagenb.notebook.interact.InteractCanvas([B], 3).render_controls()\n             '<table>...'\n         \"\"\"\n+        layout = self.__options.get('layout',None)\n         tbl_body = ''\n-        for c in self.__controls:\n-            if c.label() == '':\n-                tbl_body += '<tr><td colspan=2>%s</td></tr>\\n'%c.render()\n-            else:\n-                tbl_body += '<tr><td align=right><font color=\"black\">%s&nbsp;</font></td><td>%s</td></tr>\\n'%(\n-                c.label(), c.render())\n+        if layout is None:\n+            layout = [[c.var()] for c in self.__controls]\n+\n+        controls = dict([c.var(), c] for c in self.__controls)\n+        for row in layout:\n+            tbl_body += '<tr>'\n+            for c_name in row:\n+                c = controls[c_name]\n+                if c.label() == '':\n+                    tbl_body += '<td colspan=2>%s</td>\\n'%c.render()\n+                else:\n+                    tbl_body += '<td align=right><font color=\"black\">%s&nbsp;</font></td><td>%s</td>\\n'%(c.label(), c.render())\n+\n+            tbl_body += '</tr>'\n+                \n         return '<table>%s</table>'%tbl_body\n-\n+            \n     def wrap_in_outside_frame(self, inside):\n         \"\"\"\n         Return the entire HTML for the interactive canvas, obtained by\n@@ -1907,8 +1917,15 @@\n         \"\"\"\n         s = 'interact(%s, \"_interact_.recompute(%s)\")'%(cell_id, cell_id)\n         JavascriptCodeButton.__init__(self, \"Update\", s)                                     \n-        \n-def interact(f):\n+     \n+def interact(*args,**kwds):\n+    if len(kwds)==0 and len(args)==1:\n+        # call without parentheses\n+        return _interact(*args)\n+    else:\n+        return lambda f: _interact(f, **kwds)\n+   \n+def _interact(f,**kwds):\n     r\"\"\"\n     Use interact as a decorator to create interactive Sage notebook\n     cells with sliders, text boxes, radio buttons, check boxes, and\n@@ -2281,7 +2298,9 @@\n         i = args.index('auto_update')\n         controls[i] = UpdateButton(SAGE_CELL_ID)\n \n-    C = InteractCanvas(controls, SAGE_CELL_ID, auto_update=auto_update)\n+    layout = kwds.get('layout',None)\n+\n+    C = InteractCanvas(controls, SAGE_CELL_ID, auto_update=auto_update, layout=layout)\n     html(C.render())\n \n     def _():\n```\n",
+    "body": "Here is a patch to the sagenb directory which allows for the following:\n\n```\n@interact(layout=[['a','b'],['c','d']])\ndef _(a=(1,2),b=(3,10),c=[\"test\",\"button\"],d=x^2+1):\n    print a,b,c,d\n```\n\n```\ndiff -r 69309549b229 notebook/interact.py\n--- a/notebook/interact.py\tTue Nov 03 03:14:01 2009 -0600\n+++ b/notebook/interact.py\tTue Nov 03 03:48:40 2009 -0600\n@@ -1795,15 +1795,25 @@\n             sage: sagenb.notebook.interact.InteractCanvas([B], 3).render_controls()\n             '<table>...'\n         \"\"\"\n+        layout = self.__options.get('layout',None)\n         tbl_body = ''\n-        for c in self.__controls:\n-            if c.label() == '':\n-                tbl_body += '<tr><td colspan=2>%s</td></tr>\\n'%c.render()\n-            else:\n-                tbl_body += '<tr><td align=right><font color=\"black\">%s&nbsp;</font></td><td>%s</td></tr>\\n'%(\n-                c.label(), c.render())\n+        if layout is None:\n+            layout = [[c.var()] for c in self.__controls]\n+\n+        controls = dict([c.var(), c] for c in self.__controls)\n+        for row in layout:\n+            tbl_body += '<tr>'\n+            for c_name in row:\n+                c = controls[c_name]\n+                if c.label() == '':\n+                    tbl_body += '<td colspan=2>%s</td>\\n'%c.render()\n+                else:\n+                    tbl_body += '<td align=right><font color=\"black\">%s&nbsp;</font></td><td>%s</td>\\n'%(c.label(), c.render())\n+\n+            tbl_body += '</tr>'\n+                \n         return '<table>%s</table>'%tbl_body\n-\n+            \n     def wrap_in_outside_frame(self, inside):\n         \"\"\"\n         Return the entire HTML for the interactive canvas, obtained by\n@@ -1907,8 +1917,15 @@\n         \"\"\"\n         s = 'interact(%s, \"_interact_.recompute(%s)\")'%(cell_id, cell_id)\n         JavascriptCodeButton.__init__(self, \"Update\", s)                                     \n-        \n-def interact(f):\n+     \n+def interact(*args,**kwds):\n+    if len(kwds)==0 and len(args)==1:\n+        # call without parentheses\n+        return _interact(*args)\n+    else:\n+        return lambda f: _interact(f, **kwds)\n+   \n+def _interact(f,**kwds):\n     r\"\"\"\n     Use interact as a decorator to create interactive Sage notebook\n     cells with sliders, text boxes, radio buttons, check boxes, and\n@@ -2281,7 +2298,9 @@\n         i = args.index('auto_update')\n         controls[i] = UpdateButton(SAGE_CELL_ID)\n \n-    C = InteractCanvas(controls, SAGE_CELL_ID, auto_update=auto_update)\n+    layout = kwds.get('layout',None)\n+\n+    C = InteractCanvas(controls, SAGE_CELL_ID, auto_update=auto_update, layout=layout)\n     html(C.render())\n \n     def _():\n```",
     "created_at": "2009-11-03T09:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -43,14 +43,11 @@ archive/issue_comments_061938.json:
 
 Here is a patch to the sagenb directory which allows for the following:
 
-
 ```
 @interact(layout=[['a','b'],['c','d']])
 def _(a=(1,2),b=(3,10),c=["test","button"],d=x^2+1):
     print a,b,c,d
 ```
-
-
 
 ```
 diff -r 69309549b229 notebook/interact.py
@@ -119,7 +116,6 @@ diff -r 69309549b229 notebook/interact.py
  
      def _():
 ```
-
 
 
 
@@ -262,7 +258,7 @@ Please, please review the patch at #8959 after reviewing this patch.  The patch 
 archive/issue_comments_061946.json:
 ```json
 {
-    "body": "This is great, thanks very much for working on it.  The only problem I've seen so far is the following doctest failure for the notebook:\n\n\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\"\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2205:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/misc.py\", line 2632, in my_wrap\n        return func(*args)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2519, in interact\n        html(C.render())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2058, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 1994, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n\n```\n\n\nI'll try to do a little more testing and look at #8959 this weekend.",
+    "body": "This is great, thanks very much for working on it.  The only problem I've seen so far is the following doctest failure for the notebook:\n\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\"\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2205:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/misc.py\", line 2632, in my_wrap\n        return func(*args)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2519, in interact\n        html(C.render())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 2058, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py\", line 1994, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n\n```\n\nI'll try to do a little more testing and look at #8959 this weekend.",
     "created_at": "2010-05-15T21:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -272,7 +268,6 @@ archive/issue_comments_061946.json:
 ```
 
 This is great, thanks very much for working on it.  The only problem I've seen so far is the following doctest failure for the notebook:
-
 
 
 ```
@@ -304,7 +299,6 @@ Exception raised:
 
 ```
 
-
 I'll try to do a little more testing and look at #8959 this weekend.
 
 
@@ -314,7 +308,7 @@ I'll try to do a little more testing and look at #8959 this weekend.
 archive/issue_comments_061947.json:
 ```json
 {
-    "body": "mhampton: that's a corner case in the `@`interact functionality (a magic parameter).  I see two possible fixes: fix `@`interact to make this not a corner case (i.e., not a magic parameter), or move the auto_update switch into the `@`interact arguments:\n\n\n```\n@interact(auto_update=False)\ndef _(...)\n    ...\n```\n",
+    "body": "mhampton: that's a corner case in the `@`interact functionality (a magic parameter).  I see two possible fixes: fix `@`interact to make this not a corner case (i.e., not a magic parameter), or move the auto_update switch into the `@`interact arguments:\n\n```\n@interact(auto_update=False)\ndef _(...)\n    ...\n```",
     "created_at": "2010-05-15T21:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -325,13 +319,11 @@ archive/issue_comments_061947.json:
 
 mhampton: that's a corner case in the `@`interact functionality (a magic parameter).  I see two possible fixes: fix `@`interact to make this not a corner case (i.e., not a magic parameter), or move the auto_update switch into the `@`interact arguments:
 
-
 ```
 @interact(auto_update=False)
 def _(...)
     ...
 ```
-
 
 
 
@@ -470,7 +462,7 @@ OK, with the fix in 8959 I see no problems with this.  I've tested a bunch of in
 archive/issue_comments_061955.json:
 ```json
 {
-    "body": "The patch causes the followinger doctest error:\n\n\n```\nFile \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2209:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/opt/sage/local/lib/python/site-packages/sage/misc/misc.py\", line 2666, in my_wrap\n        return func(*args)\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2523, in interact\n        html(C.render())\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2062, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 1998, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n```\n\n\nMarking this as \"needs work.\"",
+    "body": "The patch causes the followinger doctest error:\n\n```\nFile \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2209:\n    sage: @interact\n    def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n        show(factor(x**n - Integer(1)))\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_99[9]>\", line 2, in <module>\n        def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):\n      File \"/opt/sage/local/lib/python/site-packages/sage/misc/misc.py\", line 2666, in my_wrap\n        return func(*args)\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2523, in interact\n        html(C.render())\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 2062, in render\n        s = \"%s%s\"%(self.render_controls(), self.render_output())\n      File \"/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py\", line 1998, in render_controls\n        layout = [[c.var()] for c in self.__controls]\n    AttributeError: 'UpdateButton' object has no attribute 'var'\n```\n\nMarking this as \"needs work.\"",
     "created_at": "2010-07-07T14:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
@@ -480,7 +472,6 @@ archive/issue_comments_061955.json:
 ```
 
 The patch causes the followinger doctest error:
-
 
 ```
 File "/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py", line 2209:
@@ -507,7 +498,6 @@ Exception raised:
         layout = [[c.var()] for c in self.__controls]
     AttributeError: 'UpdateButton' object has no attribute 'var'
 ```
-
 
 Marking this as "needs work."
 

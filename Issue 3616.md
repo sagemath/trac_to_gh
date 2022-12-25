@@ -3,7 +3,7 @@
 archive/issues_003616.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nUsing sage-3.0.4.rc0 on ia64 SUSE we have:\n\n```\n            sage: P.<x> = PolynomialRing(ZZ)\n            sage: F = (x^2 + 2)*x^3; G = (x^2+2)*(x-3)\n            sage: g, u, v = F.xgcd(G)\nHANG\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3616\n\n",
+    "body": "Assignee: somebody\n\nUsing sage-3.0.4.rc0 on ia64 SUSE we have:\n\n```\n            sage: P.<x> = PolynomialRing(ZZ)\n            sage: F = (x^2 + 2)*x^3; G = (x^2+2)*(x-3)\n            sage: g, u, v = F.xgcd(G)\nHANG\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3616\n\n",
     "created_at": "2008-07-08T19:13:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,7 +28,6 @@ Using sage-3.0.4.rc0 on ia64 SUSE we have:
 HANG
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3616
 
 
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3616
 archive/issue_comments_025468.json:
 ```json
 {
-    "body": "Recompiling with -O0 does *not* fix the problem.  The flint test suite *fails* on\nitanium even with -O0:\n\n\n```\nTesting fmpz_CRT_ui()... FAIL!\nTesting fmpz_sqrtrem()... ok\n\nAt least one test FAILED!\n```\n\n\nThat's the first failure.\n\nThis is flint-1.010.\n\nwilliam",
+    "body": "Recompiling with -O0 does *not* fix the problem.  The flint test suite *fails* on\nitanium even with -O0:\n\n```\nTesting fmpz_CRT_ui()... FAIL!\nTesting fmpz_sqrtrem()... ok\n\nAt least one test FAILED!\n```\n\nThat's the first failure.\n\nThis is flint-1.010.\n\nwilliam",
     "created_at": "2008-07-08T19:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3616",
     "type": "issue_comment",
@@ -52,14 +51,12 @@ archive/issue_comments_025468.json:
 Recompiling with -O0 does *not* fix the problem.  The flint test suite *fails* on
 itanium even with -O0:
 
-
 ```
 Testing fmpz_CRT_ui()... FAIL!
 Testing fmpz_sqrtrem()... ok
 
 At least one test FAILED!
 ```
-
 
 That's the first failure.
 
@@ -74,7 +71,7 @@ william
 archive/issue_comments_025469.json:
 ```json
 {
-    "body": "More test failures on iras (itanium box):\n\n\n```\nTesting fmpz_poly_CRT_unsigned()... FAIL!\nTesting fmpz_poly_CRT()... FAIL!\n```\n",
+    "body": "More test failures on iras (itanium box):\n\n```\nTesting fmpz_poly_CRT_unsigned()... FAIL!\nTesting fmpz_poly_CRT()... FAIL!\n```",
     "created_at": "2008-07-08T19:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3616",
     "type": "issue_comment",
@@ -85,12 +82,10 @@ archive/issue_comments_025469.json:
 
 More test failures on iras (itanium box):
 
-
 ```
 Testing fmpz_poly_CRT_unsigned()... FAIL!
 Testing fmpz_poly_CRT()... FAIL!
 ```
-
 
 
 

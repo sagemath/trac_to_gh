@@ -71,7 +71,7 @@ New version is out, 0.98.2 had compilation error on non-threaded builds and 0.98
 archive/issue_comments_040462.json:
 ```json
 {
-    "body": "The whole spkg really needs clean-up. (And Sage's **beta** version is out of date since at least 19 month; by now, the current one is [still] 0.98.9 - as in the ticket's title, last updated by Mariah.)\n\nI have absolutely no idea why `spkg-install` does the following on Linux:\n\n```sh\n    make linux-thr\n    if [ $? -ne 0 ]; then\n        echo \"Maybe your system is 64-bit; trying again.\"\n        if [ `uname -m` = \"ia64\" ]; then\n          echo \"ia64\"\n          make linux-ia64-thr\n        else\n          echo \"64-bit arch\"\n          make linux-64-thr\n        fi\n    fi\n```\n\nThis might even \"fail\" (building just a 32-bit version on 64-bit Linuces) when the required (multi-arch/32-bit) libraries are present. And if the 32-bit build fails for some reason on a real 32-bit system, it doesn't make sense to attempt a 64-bit build.",
+    "body": "The whole spkg really needs clean-up. (And Sage's **beta** version is out of date since at least 19 month; by now, the current one is [still] 0.98.9 - as in the ticket's title, last updated by Mariah.)\n\nI have absolutely no idea why `spkg-install` does the following on Linux:\n\n```sh\n    make linux-thr\n    if [ $? -ne 0 ]; then\n        echo \"Maybe your system is 64-bit; trying again.\"\n        if [ `uname -m` = \"ia64\" ]; then\n          echo \"ia64\"\n          make linux-ia64-thr\n        else\n          echo \"64-bit arch\"\n          make linux-64-thr\n        fi\n    fi\n```\nThis might even \"fail\" (building just a 32-bit version on 64-bit Linuces) when the required (multi-arch/32-bit) libraries are present. And if the 32-bit build fails for some reason on a real 32-bit system, it doesn't make sense to attempt a 64-bit build.",
     "created_at": "2010-08-26T19:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ I have absolutely no idea why `spkg-install` does the following on Linux:
         fi
     fi
 ```
-
 This might even "fail" (building just a 32-bit version on 64-bit Linuces) when the required (multi-arch/32-bit) libraries are present. And if the 32-bit build fails for some reason on a real 32-bit system, it doesn't make sense to attempt a 64-bit build.
 
 
@@ -145,7 +144,7 @@ I think you've already fixed the Solaris issues, but if Tachyon ever gets update
 archive/issue_comments_040465.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> Dave, sadly enough, this ticket is still \"new\".\n> \n> I think you've already fixed the Solaris issues, but if Tachyon ever gets updated in Sage, you should probably take a look at the new spkg, making sure it will still work on Solaris.\nThank you Leif, \n\npersonally I'm not going to look at updating this. I just hope whoever updates it does check it on Solaris. The code you showed is clearly dumb, though fortunately will not bother Solaris or any real Unix system. \n\nUnfortunately, having an f***ing clue what you are doing when it comes to writing software is not a perquisite to contributing to Sage's source code, or to reviewing the changes made by others with a similar lack of skill. \n\nMichael Abshoff should also be deleted as the package maintainer. Perhaps even William too, as he does not appear to be maintaining it. \n\nDave",
+    "body": "Replying to [comment:6 leif]:\n> Dave, sadly enough, this ticket is still \"new\".\n> \n> I think you've already fixed the Solaris issues, but if Tachyon ever gets updated in Sage, you should probably take a look at the new spkg, making sure it will still work on Solaris.\n\nThank you Leif, \n\npersonally I'm not going to look at updating this. I just hope whoever updates it does check it on Solaris. The code you showed is clearly dumb, though fortunately will not bother Solaris or any real Unix system. \n\nUnfortunately, having an f***ing clue what you are doing when it comes to writing software is not a perquisite to contributing to Sage's source code, or to reviewing the changes made by others with a similar lack of skill. \n\nMichael Abshoff should also be deleted as the package maintainer. Perhaps even William too, as he does not appear to be maintaining it. \n\nDave",
     "created_at": "2010-08-26T21:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -158,6 +157,7 @@ Replying to [comment:6 leif]:
 > Dave, sadly enough, this ticket is still "new".
 > 
 > I think you've already fixed the Solaris issues, but if Tachyon ever gets updated in Sage, you should probably take a look at the new spkg, making sure it will still work on Solaris.
+
 Thank you Leif, 
 
 personally I'm not going to look at updating this. I just hope whoever updates it does check it on Solaris. The code you showed is clearly dumb, though fortunately will not bother Solaris or any real Unix system. 
@@ -271,7 +271,7 @@ Changing status from new to needs_review.
 archive/issue_comments_040471.json:
 ```json
 {
-    "body": "Replying to [comment:11 mhampton]:\n> An attempt at a new package is here:\n> \n> http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg\n\nHmmm, you somehow omitted / deleted the Mercurial repository.\n\nI'll though give it a try...",
+    "body": "Replying to [comment:11 mhampton]:\n> An attempt at a new package is here:\n> \n> http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg\n\n\nHmmm, you somehow omitted / deleted the Mercurial repository.\n\nI'll though give it a try...",
     "created_at": "2010-09-04T01:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -284,6 +284,7 @@ Replying to [comment:11 mhampton]:
 > An attempt at a new package is here:
 > 
 > http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg
+
 
 Hmmm, you somehow omitted / deleted the Mercurial repository.
 
@@ -431,7 +432,7 @@ But please let us (me?) clean-up `spkg-install` further...
 archive/issue_comments_040478.json:
 ```json
 {
-    "body": "I just tried it on 32-bit OpenSolaris and it worked ok. It will clearly need checking on Solaris 10 on SPARC too, as that's a supported OS. \n\nThere are some directories:\n\n\n```\ntachyon-0.98.9/src/msvc/\ntachyon-0.98.9/src/msvc/CVS/\ntachyon-0.98.9/src/msvc/CVS/Entries\ntachyon-0.98.9/src/msvc/CVS/Repository\n```\n\n\nI think in a case like this, it would be worth deleting the Microsoft Visual C stuff. That could be added to the `Special Update/Build Instructions` Since Leif intends overhauling the package, he might consider that. \n\nI guess given it's been open 19 months, waiting until Monday should not be a major problem! \n\nDave",
+    "body": "I just tried it on 32-bit OpenSolaris and it worked ok. It will clearly need checking on Solaris 10 on SPARC too, as that's a supported OS. \n\nThere are some directories:\n\n```\ntachyon-0.98.9/src/msvc/\ntachyon-0.98.9/src/msvc/CVS/\ntachyon-0.98.9/src/msvc/CVS/Entries\ntachyon-0.98.9/src/msvc/CVS/Repository\n```\n\nI think in a case like this, it would be worth deleting the Microsoft Visual C stuff. That could be added to the `Special Update/Build Instructions` Since Leif intends overhauling the package, he might consider that. \n\nI guess given it's been open 19 months, waiting until Monday should not be a major problem! \n\nDave",
     "created_at": "2010-09-21T20:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -444,14 +445,12 @@ I just tried it on 32-bit OpenSolaris and it worked ok. It will clearly need che
 
 There are some directories:
 
-
 ```
 tachyon-0.98.9/src/msvc/
 tachyon-0.98.9/src/msvc/CVS/
 tachyon-0.98.9/src/msvc/CVS/Entries
 tachyon-0.98.9/src/msvc/CVS/Repository
 ```
-
 
 I think in a case like this, it would be worth deleting the Microsoft Visual C stuff. That could be added to the `Special Update/Build Instructions` Since Leif intends overhauling the package, he might consider that. 
 
@@ -466,7 +465,7 @@ Dave
 archive/issue_comments_040479.json:
 ```json
 {
-    "body": "Yes.\n\n```sh\nleif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src\n16K\tsrc/src/CVS\n680K\tsrc/src\n16K\tsrc/msvc/CVS\n16K\tsrc/msvc/tachyon/libtachyon/CVS\n4.0K\tsrc/msvc/tachyon/libtachyon/Debug\n1.4M\tsrc/msvc/tachyon/libtachyon/Release\n1.5M\tsrc/msvc/tachyon/libtachyon\n16K\tsrc/msvc/tachyon/CVS\n16K\tsrc/msvc/tachyon/tachyon/CVS\n4.0K\tsrc/msvc/tachyon/tachyon/Debug\n840K\tsrc/msvc/tachyon/tachyon/Release\n892K\tsrc/msvc/tachyon/tachyon\n4.0K\tsrc/msvc/tachyon/Debug\n16K\tsrc/msvc/tachyon/tachyon_ogl/CVS\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Debug\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Release\n36K\tsrc/msvc/tachyon/tachyon_ogl\n4.0K\tsrc/msvc/tachyon/Release\n2.8M\tsrc/msvc/tachyon\n2.8M\tsrc/msvc\n4.0K\tsrc/compile\n16K\tsrc/unix/CVS\n308K\tsrc/unix\n16K\tsrc/docs/CVS\n232K\tsrc/docs/tachyon\n808K\tsrc/docs\n16K\tsrc/librtvi/CVS\n44K\tsrc/librtvi\n16K\tsrc/demosrc/CVS\n248K\tsrc/demosrc\n4.9M\tsrc\n```\n",
+    "body": "Yes.\n\n```sh\nleif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src\n16K\tsrc/src/CVS\n680K\tsrc/src\n16K\tsrc/msvc/CVS\n16K\tsrc/msvc/tachyon/libtachyon/CVS\n4.0K\tsrc/msvc/tachyon/libtachyon/Debug\n1.4M\tsrc/msvc/tachyon/libtachyon/Release\n1.5M\tsrc/msvc/tachyon/libtachyon\n16K\tsrc/msvc/tachyon/CVS\n16K\tsrc/msvc/tachyon/tachyon/CVS\n4.0K\tsrc/msvc/tachyon/tachyon/Debug\n840K\tsrc/msvc/tachyon/tachyon/Release\n892K\tsrc/msvc/tachyon/tachyon\n4.0K\tsrc/msvc/tachyon/Debug\n16K\tsrc/msvc/tachyon/tachyon_ogl/CVS\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Debug\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Release\n36K\tsrc/msvc/tachyon/tachyon_ogl\n4.0K\tsrc/msvc/tachyon/Release\n2.8M\tsrc/msvc/tachyon\n2.8M\tsrc/msvc\n4.0K\tsrc/compile\n16K\tsrc/unix/CVS\n308K\tsrc/unix\n16K\tsrc/docs/CVS\n232K\tsrc/docs/tachyon\n808K\tsrc/docs\n16K\tsrc/librtvi/CVS\n44K\tsrc/librtvi\n16K\tsrc/demosrc/CVS\n248K\tsrc/demosrc\n4.9M\tsrc\n```",
     "created_at": "2010-09-21T21:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -511,7 +510,6 @@ leif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src
 248K	src/demosrc
 4.9M	src
 ```
-
 
 
 
@@ -574,7 +572,7 @@ I over-wrote my spkg at [http://sage.math.washington.edu/home/mhampton/tachyon-0
 archive/issue_comments_040483.json:
 ```json
 {
-    "body": "Replying to [comment:20 mhampton]:\n> Leif - are you going to work on this?\n\nI think over the weekend (unless alpha2 gets released ;-) ) or at least within the next days.\n\nOtherwise I'll open a follow-up.\n\n> I'd like to keep it rolling along with #9855 (which I need to work on a little more).\n\nDoesn't look as if #9855 depended on the new Tachyon, but did you test it with the new one?\n\n> I agree that the msvc folder can be deleted as long as we put a note in the SPKG.txt about it.\n\nYes. It's also IMHO compatible with the copyright, though I'm not a lawyer.",
+    "body": "Replying to [comment:20 mhampton]:\n> Leif - are you going to work on this?\n\n\nI think over the weekend (unless alpha2 gets released ;-) ) or at least within the next days.\n\nOtherwise I'll open a follow-up.\n\n> I'd like to keep it rolling along with #9855 (which I need to work on a little more).\n\n\nDoesn't look as if #9855 depended on the new Tachyon, but did you test it with the new one?\n\n> I agree that the msvc folder can be deleted as long as we put a note in the SPKG.txt about it.\n\n\nYes. It's also IMHO compatible with the copyright, though I'm not a lawyer.",
     "created_at": "2010-09-24T13:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -586,15 +584,18 @@ archive/issue_comments_040483.json:
 Replying to [comment:20 mhampton]:
 > Leif - are you going to work on this?
 
+
 I think over the weekend (unless alpha2 gets released ;-) ) or at least within the next days.
 
 Otherwise I'll open a follow-up.
 
 > I'd like to keep it rolling along with #9855 (which I need to work on a little more).
 
+
 Doesn't look as if #9855 depended on the new Tachyon, but did you test it with the new one?
 
 > I agree that the msvc folder can be deleted as long as we put a note in the SPKG.txt about it.
+
 
 Yes. It's also IMHO compatible with the copyright, though I'm not a lawyer.
 
@@ -623,7 +624,7 @@ Dave, are you attempting to make it build on AIX?
 archive/issue_comments_040485.json:
 ```json
 {
-    "body": "Replying to [comment:24 leif]:\n> Dave, are you attempting to make it build on AIX?\n\n(If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.)",
+    "body": "Replying to [comment:24 leif]:\n> Dave, are you attempting to make it build on AIX?\n\n\n(If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.)",
     "created_at": "2010-09-24T13:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -635,6 +636,7 @@ archive/issue_comments_040485.json:
 Replying to [comment:24 leif]:
 > Dave, are you attempting to make it build on AIX?
 
+
 (If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.)
 
 
@@ -644,7 +646,7 @@ Replying to [comment:24 leif]:
 archive/issue_comments_040486.json:
 ```json
 {
-    "body": "Replying to [comment:25 leif]:\n> Replying to [comment:24 leif]:\n> > Dave, are you attempting to make it build on AIX?\n> \n> (If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.) \n\nLeif, \n\nI've just looked - this will **not** build on AIX with gcc for two reasons. \n* There's nothing in `spkg-install` to handle AIX\n* The AIX targets in `src/unix/Make-arch`, which are `aix-thr`, `aix-64-thr`, `aix-mpi` and `aix` all assume an IBM compiler is used. \n\nThe same situation exists with HP-UX - the file `src/unix/Make-arch` assumes the use of the HP compiler for all the HP-UX targets. \n\nI will create two new targets for the file `patches/Make-arch`, which I will call\n\n* `aix-generic`\n* `hpux-generic`\n\nwhich will use $CC as a compiler, and not assume a propriety compiler with any special flags. Hopefully that will work with gcc and any reasonable set of flags. \n\nSince you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\nI might as well do the HP-UX targets at the same time as the AIX ones, though building on AIX looks a lot easier than building on HP-UX - at least with the hardware I own. \n\nNote there are already several targets been added various platforms, including, but not limited to Solaris. \n\nLet me know how you want to proceed. We might as well do AIX and HP-UX at the same time. \n\nDave",
+    "body": "Replying to [comment:25 leif]:\n> Replying to [comment:24 leif]:\n> > Dave, are you attempting to make it build on AIX?\n\n> \n> (If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.) \n\n\nLeif, \n\nI've just looked - this will **not** build on AIX with gcc for two reasons. \n* There's nothing in `spkg-install` to handle AIX\n* The AIX targets in `src/unix/Make-arch`, which are `aix-thr`, `aix-64-thr`, `aix-mpi` and `aix` all assume an IBM compiler is used. \n\nThe same situation exists with HP-UX - the file `src/unix/Make-arch` assumes the use of the HP compiler for all the HP-UX targets. \n\nI will create two new targets for the file `patches/Make-arch`, which I will call\n\n* `aix-generic`\n* `hpux-generic`\n\nwhich will use $CC as a compiler, and not assume a propriety compiler with any special flags. Hopefully that will work with gcc and any reasonable set of flags. \n\nSince you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\nI might as well do the HP-UX targets at the same time as the AIX ones, though building on AIX looks a lot easier than building on HP-UX - at least with the hardware I own. \n\nNote there are already several targets been added various platforms, including, but not limited to Solaris. \n\nLet me know how you want to proceed. We might as well do AIX and HP-UX at the same time. \n\nDave",
     "created_at": "2010-09-24T15:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -656,8 +658,10 @@ archive/issue_comments_040486.json:
 Replying to [comment:25 leif]:
 > Replying to [comment:24 leif]:
 > > Dave, are you attempting to make it build on AIX?
+
 > 
 > (If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.) 
+
 
 Leif, 
 
@@ -691,7 +695,7 @@ Dave
 archive/issue_comments_040487.json:
 ```json
 {
-    "body": "Replying to [comment:26 drkirkby]:\n> Since you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\nSure. If the HP-UX and / or AIX builds do not fully work, we can still open a follow-up for these platforms.",
+    "body": "Replying to [comment:26 drkirkby]:\n> Since you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\n\nSure. If the HP-UX and / or AIX builds do not fully work, we can still open a follow-up for these platforms.",
     "created_at": "2010-09-24T15:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -702,6 +706,7 @@ archive/issue_comments_040487.json:
 
 Replying to [comment:26 drkirkby]:
 > Since you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? 
+
 
 Sure. If the HP-UX and / or AIX builds do not fully work, we can still open a follow-up for these platforms.
 
@@ -835,7 +840,7 @@ Debian shared library patch for reference
 archive/issue_comments_040493.json:
 ```json
 {
-    "body": "Replying to [comment:31 vbraun]:\n> While we are at it, can we add the patch to build a shared library? Debian and Fedora both patch tachyon to produce a shared library. This would then enable us to write a reasonable previewer in cython without pushing temporary files around. Realtime raytracing is the future, they say :-)\n\nCertainly we could, but IMHO out of the scope of *this* ticket. I think we should first provide an spkg with just the current upstream (stand-alone) version, which has to be tested as well.\n\nThe patch needs to be tested on various systems; it e.g. calls `make` instead of `$(MAKE)` inside the Makefile, which one should never do.",
+    "body": "Replying to [comment:31 vbraun]:\n> While we are at it, can we add the patch to build a shared library? Debian and Fedora both patch tachyon to produce a shared library. This would then enable us to write a reasonable previewer in cython without pushing temporary files around. Realtime raytracing is the future, they say :-)\n\n\nCertainly we could, but IMHO out of the scope of *this* ticket. I think we should first provide an spkg with just the current upstream (stand-alone) version, which has to be tested as well.\n\nThe patch needs to be tested on various systems; it e.g. calls `make` instead of `$(MAKE)` inside the Makefile, which one should never do.",
     "created_at": "2010-09-26T15:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -846,6 +851,7 @@ archive/issue_comments_040493.json:
 
 Replying to [comment:31 vbraun]:
 > While we are at it, can we add the patch to build a shared library? Debian and Fedora both patch tachyon to produce a shared library. This would then enable us to write a reasonable previewer in cython without pushing temporary files around. Realtime raytracing is the future, they say :-)
+
 
 Certainly we could, but IMHO out of the scope of *this* ticket. I think we should first provide an spkg with just the current upstream (stand-alone) version, which has to be tested as well.
 
@@ -876,7 +882,7 @@ archive/issue_comments_040494.json:
 archive/issue_comments_040495.json:
 ```json
 {
-    "body": "The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n\nTo me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary:\n\n\n```\nkirkby@sage:~$ cat test.c\n#include <stdio.h>\n\nint main() {\nprintf(\"ddd\");\n}\nkirkby@sage:~$ gcc test.c\nkirkby@sage:~$ file a.out\na.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ gcc -m32 test.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\n```\n\n\nSo I would expect this to build 32-bit in most cases on Linux. \n\nOnly if the 32-bit build fails does it try a 64-bit build!! \n\nNote for AIX and HP-UX, I did not bother with any such flags, but just let it read CFLAGS, where one could add `-m64` or whatever flag one needs.",
+    "body": "The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n\nTo me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary:\n\n```\nkirkby@sage:~$ cat test.c\n#include <stdio.h>\n\nint main() {\nprintf(\"ddd\");\n}\nkirkby@sage:~$ gcc test.c\nkirkby@sage:~$ file a.out\na.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ gcc -m32 test.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\n```\n\nSo I would expect this to build 32-bit in most cases on Linux. \n\nOnly if the 32-bit build fails does it try a 64-bit build!! \n\nNote for AIX and HP-UX, I did not bother with any such flags, but just let it read CFLAGS, where one could add `-m64` or whatever flag one needs.",
     "created_at": "2010-09-26T18:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -888,7 +894,6 @@ archive/issue_comments_040495.json:
 The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. 
 
 To me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary:
-
 
 ```
 kirkby@sage:~$ cat test.c
@@ -905,7 +910,6 @@ kirkby@sage:~$ file a.out
 a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped
 ```
 
-
 So I would expect this to build 32-bit in most cases on Linux. 
 
 Only if the 32-bit build fails does it try a 64-bit build!! 
@@ -919,7 +923,7 @@ Note for AIX and HP-UX, I did not bother with any such flags, but just let it re
 archive/issue_comments_040496.json:
 ```json
 {
-    "body": "Replying to [comment:35 drkirkby]:\n> The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n> \n> To me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary.\n> [...]\n> So I would expect this to build 32-bit in most cases on Linux.\n\nNo. The necessary 32-bit libraries are rarely installed on 64-bit Linux systems.\n \n> Only if the 32-bit build fails does it try a 64-bit build!! \n\nSee [comment:4 this comment above]; that's what definitely has to be cleaned up (i.e., removed).",
+    "body": "Replying to [comment:35 drkirkby]:\n> The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n> \n> To me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary.\n> [...]\n> So I would expect this to build 32-bit in most cases on Linux.\n\n\nNo. The necessary 32-bit libraries are rarely installed on 64-bit Linux systems.\n \n> Only if the 32-bit build fails does it try a 64-bit build!! \n\n\nSee [comment:4 this comment above]; that's what definitely has to be cleaned up (i.e., removed).",
     "created_at": "2010-09-26T18:39:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -935,9 +939,11 @@ Replying to [comment:35 drkirkby]:
 > [...]
 > So I would expect this to build 32-bit in most cases on Linux.
 
+
 No. The necessary 32-bit libraries are rarely installed on 64-bit Linux systems.
  
 > Only if the 32-bit build fails does it try a 64-bit build!! 
+
 
 See [comment:4 this comment above]; that's what definitely has to be cleaned up (i.e., removed).
 
@@ -948,7 +954,7 @@ See [comment:4 this comment above]; that's what definitely has to be cleaned up 
 archive/issue_comments_040497.json:
 ```json
 {
-    "body": "This is the \"typical\" behavior:\n\n```sh\n$ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: cannot find -lgcc\ncollect2: ld returned 1 exit status\n```\n",
+    "body": "This is the \"typical\" behavior:\n\n```sh\n$ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: cannot find -lgcc\ncollect2: ld returned 1 exit status\n```",
     "created_at": "2010-09-26T18:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -969,13 +975,12 @@ collect2: ld returned 1 exit status
 
 
 
-
 ---
 
 archive/issue_comments_040498.json:
 ```json
 {
-    "body": "It should simply be:\n\n```sh\n    ...\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      *)\n        $MAKE linux-64-thr\n    esac\n    ...\n```\n",
+    "body": "It should simply be:\n\n```sh\n    ...\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      *)\n        $MAKE linux-64-thr\n    esac\n    ...\n```",
     "created_at": "2010-09-26T19:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -998,7 +1003,6 @@ It should simply be:
     esac
     ...
 ```
-
 
 
 
@@ -1025,7 +1029,7 @@ archive/issue_comments_040499.json:
 archive/issue_comments_040500.json:
 ```json
 {
-    "body": "Replying to [comment:37 leif]:\n> This is the \"typical\" behavior:\n> {{{\n> #!sh\n> $ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: cannot find -lgcc\n> collect2: ld returned 1 exit status\n> }}}\n\nWell,\nI don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta. \n\n\n```\nkirkby@sage:~$  echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ \n```\n\n\nI can see in some cases trying to build more than once might be sensible, but clearly what currently exists is absurd.",
+    "body": "Replying to [comment:37 leif]:\n> This is the \"typical\" behavior:\n> \n> ```\n> #!sh\n> $ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: cannot find -lgcc\n> collect2: ld returned 1 exit status\n> ```\n\n\nWell,\nI don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta. \n\n```\nkirkby@sage:~$  echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ \n```\n\nI can see in some cases trying to build more than once might be sensible, but clearly what currently exists is absurd.",
     "created_at": "2010-09-26T19:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1036,18 +1040,19 @@ archive/issue_comments_040500.json:
 
 Replying to [comment:37 leif]:
 > This is the "typical" behavior:
-> {{{
+> 
+> ```
 > #!sh
 > $ echo "int main(){return 0;}" > foo.c && gcc -m32 foo.c
 > /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc
 > /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc
 > /usr/bin/ld: cannot find -lgcc
 > collect2: ld returned 1 exit status
-> }}}
+> ```
+
 
 Well,
 I don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta. 
-
 
 ```
 kirkby@sage:~$  echo "int main(){return 0;}" > foo.c && gcc -m32 foo.c
@@ -1055,7 +1060,6 @@ kirkby@sage:~$ file a.out
 a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped
 kirkby@sage:~$ 
 ```
-
 
 I can see in some cases trying to build more than once might be sensible, but clearly what currently exists is absurd.
 
@@ -1066,7 +1070,7 @@ I can see in some cases trying to build more than once might be sensible, but cl
 archive/issue_comments_040501.json:
 ```json
 {
-    "body": "Replying to [comment:40 drkirkby]:\n> Well,\n> I don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta\n\nSo what? Some people configure GCC with multi-lib support, and some install the necessary 32-bit libraries. On such systems, the current scheme \"fails\" in that it builds a slower 32-bit executable instead of a 64-bit one, as I noted in one of my first comments here.\n\nBut I'm not aware of any Linux distribution (at least of the \"major\" ones) that ships with / installs these by default. So the \"typical\" scenario on 64-bit Linuces is that the 32-bit build fails and a 64-bit build is tried. Although that's odd by itself, it's irrelevant, since the scheme fails on other systems, like sage.math (or some of my machines). That's why I'd change it to what I've posted.",
+    "body": "Replying to [comment:40 drkirkby]:\n> Well,\n> I don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta\n\n\nSo what? Some people configure GCC with multi-lib support, and some install the necessary 32-bit libraries. On such systems, the current scheme \"fails\" in that it builds a slower 32-bit executable instead of a 64-bit one, as I noted in one of my first comments here.\n\nBut I'm not aware of any Linux distribution (at least of the \"major\" ones) that ships with / installs these by default. So the \"typical\" scenario on 64-bit Linuces is that the 32-bit build fails and a 64-bit build is tried. Although that's odd by itself, it's irrelevant, since the scheme fails on other systems, like sage.math (or some of my machines). That's why I'd change it to what I've posted.",
     "created_at": "2010-09-26T20:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1078,6 +1082,7 @@ archive/issue_comments_040501.json:
 Replying to [comment:40 drkirkby]:
 > Well,
 > I don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta
+
 
 So what? Some people configure GCC with multi-lib support, and some install the necessary 32-bit libraries. On such systems, the current scheme "fails" in that it builds a slower 32-bit executable instead of a 64-bit one, as I noted in one of my first comments here.
 
@@ -1108,7 +1113,7 @@ By the way, if you build a dynamically linked (which is the default) 32-bit exec
 archive/issue_comments_040503.json:
 ```json
 {
-    "body": "Replying to [comment:39 leif]:\n> (At least if we don't support Linux on SPARC, PPC etc.)\nAccording to the Sage installation guide:\n\nhttp://www.sagemath.com/doc/installation/source.html\n\n*As of this writing, Sage is known to work on Linux (32-bit x86, 64-bit x86-64, IA64, or 32-bit PPC)*\n\nhttp://wiki.sagemath.org/SupportedPlatforms\n\nsays Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them. But I would forget about Linux on SPARC - I can't imagine anyone wanting to port Sage to SPARC Linux. \n\nDave",
+    "body": "Replying to [comment:39 leif]:\n> (At least if we don't support Linux on SPARC, PPC etc.)\n\nAccording to the Sage installation guide:\n\nhttp://www.sagemath.com/doc/installation/source.html\n\n*As of this writing, Sage is known to work on Linux (32-bit x86, 64-bit x86-64, IA64, or 32-bit PPC)*\n\nhttp://wiki.sagemath.org/SupportedPlatforms\n\nsays Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them. But I would forget about Linux on SPARC - I can't imagine anyone wanting to port Sage to SPARC Linux. \n\nDave",
     "created_at": "2010-09-26T20:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1119,6 +1124,7 @@ archive/issue_comments_040503.json:
 
 Replying to [comment:39 leif]:
 > (At least if we don't support Linux on SPARC, PPC etc.)
+
 According to the Sage installation guide:
 
 http://www.sagemath.com/doc/installation/source.html
@@ -1138,7 +1144,7 @@ Dave
 archive/issue_comments_040504.json:
 ```json
 {
-    "body": "Replying to [comment:43 drkirkby]:\n> http://wiki.sagemath.org/SupportedPlatforms\n> \n> says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n\nYeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\nDoes anyone port Sage to the PS2?",
+    "body": "Replying to [comment:43 drkirkby]:\n> http://wiki.sagemath.org/SupportedPlatforms\n> \n> says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n\n\nYeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\nDoes anyone port Sage to the PS2?",
     "created_at": "2010-09-26T21:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1152,6 +1158,7 @@ Replying to [comment:43 drkirkby]:
 > 
 > says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.
 
+
 Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)
 
 Does anyone port Sage to the PS2?
@@ -1163,7 +1170,7 @@ Does anyone port Sage to the PS2?
 archive/issue_comments_040505.json:
 ```json
 {
-    "body": "Replying to [comment:44 leif]:\n> Replying to [comment:43 drkirkby]:\n> > http://wiki.sagemath.org/SupportedPlatforms\n> > \n> > says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n> \n> Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\nBut the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it. I'm not suggesting creating one if there is not already one there. \n\n> Does anyone port Sage to the PS2?\n\nNot to my knowledge, though nothing would surprise me. Some code I wrote, which is part of NetBSD, has binaries for the Playstation. So nothing would totally surprise me. \n\nDave",
+    "body": "Replying to [comment:44 leif]:\n> Replying to [comment:43 drkirkby]:\n> > http://wiki.sagemath.org/SupportedPlatforms\n> > \n> > says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n\n> \n> Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\n\nBut the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it. I'm not suggesting creating one if there is not already one there. \n\n> Does anyone port Sage to the PS2?\n\n\nNot to my knowledge, though nothing would surprise me. Some code I wrote, which is part of NetBSD, has binaries for the Playstation. So nothing would totally surprise me. \n\nDave",
     "created_at": "2010-09-26T23:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1177,12 +1184,15 @@ Replying to [comment:44 leif]:
 > > http://wiki.sagemath.org/SupportedPlatforms
 > > 
 > > says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.
+
 > 
 > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)
+
 
 But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it. I'm not suggesting creating one if there is not already one there. 
 
 > Does anyone port Sage to the PS2?
+
 
 Not to my knowledge, though nothing would surprise me. Some code I wrote, which is part of NetBSD, has binaries for the Playstation. So nothing would totally surprise me. 
 
@@ -1195,7 +1205,7 @@ Dave
 archive/issue_comments_040506.json:
 ```json
 {
-    "body": "Replying to [comment:45 drkirkby]:\n> Replying to [comment:44 leif]:\n> > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n> \n> But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n\nSure. There is one, so we can support it:\n\n```sh\n    ...\n    # Linux\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      amd64|x86_64)\n        $MAKE linux-64-thr;;\n      ppc)\n        $MAKE linux-ppc;;\n      *) # e.g. ppc64\n        echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n        exit 1\n    esac\n    ...\n```\n\n\nAlthough I doubt the Sage documentation is current, as always...",
+    "body": "Replying to [comment:45 drkirkby]:\n> Replying to [comment:44 leif]:\n> > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\n> \n> But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n\n\nSure. There is one, so we can support it:\n\n```sh\n    ...\n    # Linux\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      amd64|x86_64)\n        $MAKE linux-64-thr;;\n      ppc)\n        $MAKE linux-ppc;;\n      *) # e.g. ppc64\n        echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n        exit 1\n    esac\n    ...\n```\n\nAlthough I doubt the Sage documentation is current, as always...",
     "created_at": "2010-09-26T23:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1207,8 +1217,10 @@ archive/issue_comments_040506.json:
 Replying to [comment:45 drkirkby]:
 > Replying to [comment:44 leif]:
 > > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)
+
 > 
 > But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.
+
 
 Sure. There is one, so we can support it:
 
@@ -1231,7 +1243,6 @@ Sure. There is one, so we can support it:
     ...
 ```
 
-
 Although I doubt the Sage documentation is current, as always...
 
 
@@ -1241,7 +1252,7 @@ Although I doubt the Sage documentation is current, as always...
 archive/issue_comments_040507.json:
 ```json
 {
-    "body": "Replying to [comment:46 leif]:\n> Replying to [comment:45 drkirkby]:\n> > Replying to [comment:44 leif]:\n> > > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n> > \n> > But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n> \n> Sure. There is one, so we can support it:\n> {{{\n> #!sh\n>     ...\n>     # Linux\n>     case \"`uname -m`\" in\n>       i?86)\n>         $MAKE linux-thr;;\n>       ia64)\n>         $MAKE linux-ia64-thr;;\n>       amd64|x86_64)\n>         $MAKE linux-64-thr;;\n>       ppc)\n>         $MAKE linux-ppc;;\n>       *) # e.g. ppc64\n>         echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n>         exit 1\n>     esac\n>     ...\n> }}}\n> \n> Although I doubt the Sage documentation is current, as always...\n\nI doubt you will find any two Sage lists of \"supported platforms\" which agree with each other.",
+    "body": "Replying to [comment:46 leif]:\n> Replying to [comment:45 drkirkby]:\n> > Replying to [comment:44 leif]:\n> > > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\n> > \n> > But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n\n> \n> Sure. There is one, so we can support it:\n> \n> ```\n> #!sh\n>     ...\n>     # Linux\n>     case \"`uname -m`\" in\n>       i?86)\n>         $MAKE linux-thr;;\n>       ia64)\n>         $MAKE linux-ia64-thr;;\n>       amd64|x86_64)\n>         $MAKE linux-64-thr;;\n>       ppc)\n>         $MAKE linux-ppc;;\n>       *) # e.g. ppc64\n>         echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n>         exit 1\n>     esac\n>     ...\n> ```\n> \n> Although I doubt the Sage documentation is current, as always...\n\n\nI doubt you will find any two Sage lists of \"supported platforms\" which agree with each other.",
     "created_at": "2010-09-28T23:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
@@ -1254,11 +1265,14 @@ Replying to [comment:46 leif]:
 > Replying to [comment:45 drkirkby]:
 > > Replying to [comment:44 leif]:
 > > > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)
+
 > > 
 > > But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.
+
 > 
 > Sure. There is one, so we can support it:
-> {{{
+> 
+> ```
 > #!sh
 >     ...
 >     # Linux
@@ -1276,9 +1290,10 @@ Replying to [comment:46 leif]:
 >         exit 1
 >     esac
 >     ...
-> }}}
+> ```
 > 
 > Although I doubt the Sage documentation is current, as always...
+
 
 I doubt you will find any two Sage lists of "supported platforms" which agree with each other.
 

@@ -121,7 +121,7 @@ Changing status from new to needs_review.
 archive/issue_comments_081574.json:
 ```json
 {
-    "body": "From Nicolas on sage-combinat series file\n\n```\ntrac_8887-typo_monoid_prod-fh.patch               # Positive review, assuming tests pass (NT)\n```\n\nI got a all tests passes on massena: Positive review.",
+    "body": "From Nicolas on sage-combinat series file\n\n```\ntrac_8887-typo_monoid_prod-fh.patch               # Positive review, assuming tests pass (NT)\n```\nI got a all tests passes on massena: Positive review.",
     "created_at": "2010-05-31T10:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
@@ -135,7 +135,6 @@ From Nicolas on sage-combinat series file
 ```
 trac_8887-typo_monoid_prod-fh.patch               # Positive review, assuming tests pass (NT)
 ```
-
 I got a all tests passes on massena: Positive review.
 
 

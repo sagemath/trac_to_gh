@@ -3,7 +3,7 @@
 archive/issues_004059.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHere is the tail of the build log for libm4ri. \n\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\nError configuring libm4ri\n\nreal\t0m17.957s\nuser\t0m3.904s\nsys\t0m8.981s\nsage: An error occurred while installing libm4ri-20080901\n```\n\n\nThe first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have\n\n/sys/devices/system/cpu/cpu0/cache/index0/size\n\nwhich are gratuitously assumed to all be running x86 except if the cpu vendor is Intel in which case they are assumed to not have a cache.  \n\nAnd this leads us to the second problem, on non-x86 cpus, since the cache size cannot be discovered with cpuid, a later conversion of this cache size from hex fails miserably.\n\nThis is a mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4059\n\n",
+    "body": "Assignee: mabshoff\n\nHere is the tail of the build log for libm4ri. \n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\nError configuring libm4ri\n\nreal\t0m17.957s\nuser\t0m3.904s\nsys\t0m8.981s\nsage: An error occurred while installing libm4ri-20080901\n```\n\nThe first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have\n\n/sys/devices/system/cpu/cpu0/cache/index0/size\n\nwhich are gratuitously assumed to all be running x86 except if the cpu vendor is Intel in which case they are assumed to not have a cache.  \n\nAnd this leads us to the second problem, on non-x86 cpus, since the cache size cannot be discovered with cpuid, a later conversion of this cache size from hex fails miserably.\n\nThis is a mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4059\n\n",
     "created_at": "2008-09-04T05:52:37Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ archive/issues_004059.json:
 Assignee: mabshoff
 
 Here is the tail of the build log for libm4ri. 
-
 
 ```
 checking for a BSD-compatible install... /usr/bin/install -c
@@ -42,7 +41,6 @@ user	0m3.904s
 sys	0m8.981s
 sage: An error occurred while installing libm4ri-20080901
 ```
-
 
 The first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have
 
@@ -87,7 +85,7 @@ Michael
 archive/issue_comments_029207.json:
 ```json
 {
-    "body": "(I should have done a search before creating this one, damn you late hours of the night)\n\nYes with this spkg it builds fine, but it does not detect the amount of cache.  I don't know if this is critical for m4ri, but mine does detect it.\n\n\n```\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 0 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```\n\n\nI know that on this machine I have 32K L1 D-cache and 1M L2 cache.\n\nAlso the new package generates these warnings\n\n\n```\ngcc -DHAVE_CONFIG_H -I. -I./src -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -std=c99 -fPIC -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -L/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib -O2 -Wall -pedantic -g -MT brilliantrussian.lo -MD -MP -MF .deps/brilliantrussian.Tpo -c src/brilliantrussian.c  -fno-common -DPIC -o .libs/brilliantrussian.o\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:284:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:292:1: warning: \"CPU_L1_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:5:1: warning: this is the location of the previous definition\n```\n\n\nWhile the existence of the package at #4042 does lower the priority on this one, I think the cache detection parts should be merged. So I attached a patch against libm4ri-20080903 for the m4/ax_cache_size.m4 file to add the cache size detection code.  \n\nThere is also a test spkg here: http://celas.ath.cx/anakha/libm4ri-20080903.p0.spkg\n\nDo not merge this spkg as I think it is too late for me to figure out how to properly rebuild the configure script.  Thus, it rebuilds itself every time you build the package making you suffer two times the configuration phase.",
+    "body": "(I should have done a search before creating this one, damn you late hours of the night)\n\nYes with this spkg it builds fine, but it does not detect the amount of cache.  I don't know if this is critical for m4ri, but mine does detect it.\n\n```\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 0 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```\n\nI know that on this machine I have 32K L1 D-cache and 1M L2 cache.\n\nAlso the new package generates these warnings\n\n```\ngcc -DHAVE_CONFIG_H -I. -I./src -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -std=c99 -fPIC -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -L/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib -O2 -Wall -pedantic -g -MT brilliantrussian.lo -MD -MP -MF .deps/brilliantrussian.Tpo -c src/brilliantrussian.c  -fno-common -DPIC -o .libs/brilliantrussian.o\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:284:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:292:1: warning: \"CPU_L1_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:5:1: warning: this is the location of the previous definition\n```\n\nWhile the existence of the package at #4042 does lower the priority on this one, I think the cache detection parts should be merged. So I attached a patch against libm4ri-20080903 for the m4/ax_cache_size.m4 file to add the cache size detection code.  \n\nThere is also a test spkg here: http://celas.ath.cx/anakha/libm4ri-20080903.p0.spkg\n\nDo not merge this spkg as I think it is too late for me to figure out how to properly rebuild the configure script.  Thus, it rebuilds itself every time you build the package making you suffer two times the configuration phase.",
     "created_at": "2008-09-04T07:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ archive/issue_comments_029207.json:
 
 Yes with this spkg it builds fine, but it does not detect the amount of cache.  I don't know if this is critical for m4ri, but mine does detect it.
 
-
 ```
 checking for x86 cpuid 0x0 output... unknown
 checking for the processor vendor... Unknown
@@ -109,11 +106,9 @@ checking the L2 cache size... 0 Bytes
 checking whether make sets $(MAKE)... (cached) yes
 ```
 
-
 I know that on this machine I have 32K L1 D-cache and 1M L2 cache.
 
 Also the new package generates these warnings
-
 
 ```
 gcc -DHAVE_CONFIG_H -I. -I./src -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -std=c99 -fPIC -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -L/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib -O2 -Wall -pedantic -g -MT brilliantrussian.lo -MD -MP -MF .deps/brilliantrussian.Tpo -c src/brilliantrussian.c  -fno-common -DPIC -o .libs/brilliantrussian.o
@@ -128,7 +123,6 @@ In file included from src/misc.h:33,
                  from src/brilliantrussian.c:21:
 src/config.h:5:1: warning: this is the location of the previous definition
 ```
-
 
 While the existence of the package at #4042 does lower the priority on this one, I think the cache detection parts should be merged. So I attached a patch against libm4ri-20080903 for the m4/ax_cache_size.m4 file to add the cache size detection code.  
 
@@ -213,7 +207,7 @@ So it is still not perfect but should be better (OSX PPC support). I don't have 
 archive/issue_comments_029211.json:
 ```json
 {
-    "body": "It works on my machine (OS X, ppc G5) and all tests pass.\n\nA minor cosmetic change that it seems I forgot in my patch is to change the redirection in the sysctl lines to read:\n\n> /dev/null 2>&1\n\nbecause otherwise the cache size are printed on their own in the configure output.  This does not harm the results in any way but can be annoying when looking at the configure output (but who does that anyway :)",
+    "body": "It works on my machine (OS X, ppc G5) and all tests pass.\n\nA minor cosmetic change that it seems I forgot in my patch is to change the redirection in the sysctl lines to read:\n\n> /dev/null 2>&1\n\n\nbecause otherwise the cache size are printed on their own in the configure output.  This does not harm the results in any way but can be annoying when looking at the configure output (but who does that anyway :)",
     "created_at": "2008-09-04T14:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -227,6 +221,7 @@ It works on my machine (OS X, ppc G5) and all tests pass.
 A minor cosmetic change that it seems I forgot in my patch is to change the redirection in the sysctl lines to read:
 
 > /dev/null 2>&1
+
 
 because otherwise the cache size are printed on their own in the configure output.  This does not harm the results in any way but can be annoying when looking at the configure output (but who does that anyway :)
 
@@ -303,7 +298,7 @@ I've replaced the SPKG with an SPKG with that fix applied, could you test it?
 archive/issue_comments_029215.json:
 ```json
 {
-    "body": "On bsd the new m4ri reports:\n\n```\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... (cached) a:756e6547:6c65746e:49656e69\nchecking for the processor vendor... (cached) Intel\nchecking for x86 cpuid 0x80000006 output... 0:0:10008040:0\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 4194304 Bytes\n```\n\nBut on a PPC OSX 10.4 box it fails with\n\n```\n\nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n524288\n32768\nsecond level name l1cachesize in hw.l1cachesize is invalid\nsecond level name l1cachesize in hw.l1cachesize is invalid\n./configure: line 21633: / 1024: syntax error: operand expected (error token is \"/ 1024\")\nError configuring libm4ri\n```\n\n\nCheers,\n\nMichael",
+    "body": "On bsd the new m4ri reports:\n\n```\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... (cached) a:756e6547:6c65746e:49656e69\nchecking for the processor vendor... (cached) Intel\nchecking for x86 cpuid 0x80000006 output... 0:0:10008040:0\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 4194304 Bytes\n```\nBut on a PPC OSX 10.4 box it fails with\n\n```\n\nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n524288\n32768\nsecond level name l1cachesize in hw.l1cachesize is invalid\nsecond level name l1cachesize in hw.l1cachesize is invalid\n./configure: line 21633: / 1024: syntax error: operand expected (error token is \"/ 1024\")\nError configuring libm4ri\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T22:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -323,7 +318,6 @@ checking for x86 cpuid 0x80000006 output... 0:0:10008040:0
 checking the L1 cache size... 0 Bytes
 checking the L2 cache size... 4194304 Bytes
 ```
-
 But on a PPC OSX 10.4 box it fails with
 
 ```
@@ -340,7 +334,6 @@ second level name l1cachesize in hw.l1cachesize is invalid
 Error configuring libm4ri
 ```
 
-
 Cheers,
 
 Michael
@@ -352,7 +345,7 @@ Michael
 archive/issue_comments_029216.json:
 ```json
 {
-    "body": "Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\nAs for the other failure, could someone with 10.4 access run these commands and port the output:\n\n\n```\n$ sysctl -n hw.foo\n$ echo $?\n```\n",
+    "body": "Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\nAs for the other failure, could someone with 10.4 access run these commands and port the output:\n\n```\n$ sysctl -n hw.foo\n$ echo $?\n```",
     "created_at": "2008-09-05T03:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -365,12 +358,10 @@ Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should
 
 As for the other failure, could someone with 10.4 access run these commands and port the output:
 
-
 ```
 $ sysctl -n hw.foo
 $ echo $?
 ```
-
 
 
 
@@ -379,7 +370,7 @@ $ echo $?
 archive/issue_comments_029217.json:
 ```json
 {
-    "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by @malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
+    "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by @malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
     "created_at": "2008-09-05T10:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -392,9 +383,11 @@ Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/
 
 Replying to [comment:10 mabshoff]:
 > On bsd the new m4ri reports:
+
 ...
 > checking the L1 cache size... 0 Bytes
 > checking the L2 cache size... 4194304 Bytes
+
 
 That's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.
 
@@ -405,7 +398,7 @@ That's fine. Eventually, I should fix the L1 detection code though. IMHO, the wh
 archive/issue_comments_029218.json:
 ```json
 {
-    "body": "Replying to [comment:11 anakha]:\n> Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\nI've updated the SPKG at /home/malb/spkgs/libm4ri-20080904.spkg to include this patch.\n\n> As for the other failure, could someone with 10.4 access run these commands and port the output:\n> \n> {{{\n> $ sysctl -n hw.foo\n> $ echo $?\n> }}}\n\nYep, I can do that later today.",
+    "body": "Replying to [comment:11 anakha]:\n> Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\n\nI've updated the SPKG at /home/malb/spkgs/libm4ri-20080904.spkg to include this patch.\n\n> As for the other failure, could someone with 10.4 access run these commands and port the output:\n> \n> \n> ```\n> $ sysctl -n hw.foo\n> $ echo $?\n> ```\n\n\nYep, I can do that later today.",
     "created_at": "2008-09-05T10:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -417,14 +410,17 @@ archive/issue_comments_029218.json:
 Replying to [comment:11 anakha]:
 > Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.
 
+
 I've updated the SPKG at /home/malb/spkgs/libm4ri-20080904.spkg to include this patch.
 
 > As for the other failure, could someone with 10.4 access run these commands and port the output:
 > 
-> {{{
+> 
+> ```
 > $ sysctl -n hw.foo
 > $ echo $?
-> }}}
+> ```
+
 
 Yep, I can do that later today.
 
@@ -435,7 +431,7 @@ Yep, I can do that later today.
 archive/issue_comments_029219.json:
 ```json
 {
-    "body": "\n```\nmartin-albrechts-computer:~ martinalbrecht$ sysctl -n hw.foo\nsecond level name foo in hw.foo is invalid\nmartin-albrechts-computer:~ martinalbrecht$  echo $?\n0\n```\n",
+    "body": "```\nmartin-albrechts-computer:~ martinalbrecht$ sysctl -n hw.foo\nsecond level name foo in hw.foo is invalid\nmartin-albrechts-computer:~ martinalbrecht$  echo $?\n0\n```",
     "created_at": "2008-09-05T14:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
@@ -444,14 +440,12 @@ archive/issue_comments_029219.json:
 }
 ```
 
-
 ```
 martin-albrechts-computer:~ martinalbrecht$ sysctl -n hw.foo
 second level name foo in hw.foo is invalid
 martin-albrechts-computer:~ martinalbrecht$  echo $?
 0
 ```
-
 
 
 

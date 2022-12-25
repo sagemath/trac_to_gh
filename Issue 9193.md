@@ -122,7 +122,7 @@ Why do you write above that this "Depends on #9165"?  There is no code there, an
 archive/issue_comments_085876.json:
 ```json
 {
-    "body": "The dependency should have been #9156 (which is a tiny, now merged, ticket) rather than #9165. \n\nThis still needs work in two ways. Firstly, it needs more doctests/documentation (though most of the important/tricky functions are already done), and there is also a bug in computing the tail of the G-function summation that I'm still tracking down. I did some work towards this during Sage Days 22, and even thought about it a touch this week, but haven't quite gotten to the bottom of it. \n\n\n```\n$ sage -coverage sage/lfunctions/lfunction.py \n----------------------------------------------------------------------\nsage/lfunctions/lfunction.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/lfunctions/lfunction.py: 61% (19 of 31)\n\n$ sage -coverage sage/lfunctions/G_function.py \n----------------------------------------------------------------------\nsage/lfunctions/G_function.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/lfunctions/G_function.py: 59% (13 of 22)\n```\n",
+    "body": "The dependency should have been #9156 (which is a tiny, now merged, ticket) rather than #9165. \n\nThis still needs work in two ways. Firstly, it needs more doctests/documentation (though most of the important/tricky functions are already done), and there is also a bug in computing the tail of the G-function summation that I'm still tracking down. I did some work towards this during Sage Days 22, and even thought about it a touch this week, but haven't quite gotten to the bottom of it. \n\n```\n$ sage -coverage sage/lfunctions/lfunction.py \n----------------------------------------------------------------------\nsage/lfunctions/lfunction.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/lfunctions/lfunction.py: 61% (19 of 31)\n\n$ sage -coverage sage/lfunctions/G_function.py \n----------------------------------------------------------------------\nsage/lfunctions/G_function.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/lfunctions/G_function.py: 59% (13 of 22)\n```",
     "created_at": "2010-07-08T16:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -134,7 +134,6 @@ archive/issue_comments_085876.json:
 The dependency should have been #9156 (which is a tiny, now merged, ticket) rather than #9165. 
 
 This still needs work in two ways. Firstly, it needs more doctests/documentation (though most of the important/tricky functions are already done), and there is also a bug in computing the tail of the G-function summation that I'm still tracking down. I did some work towards this during Sage Days 22, and even thought about it a touch this week, but haven't quite gotten to the bottom of it. 
-
 
 ```
 $ sage -coverage sage/lfunctions/lfunction.py 
@@ -149,7 +148,6 @@ sage/lfunctions/G_function.py
 ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE sage/lfunctions/G_function.py: 59% (13 of 22)
 ```
-
 
 
 
@@ -212,7 +210,7 @@ archive/issue_comments_085879.json:
 archive/issue_comments_085880.json:
 ```json
 {
-    "body": "Attachment [9193-part4-proveable.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part4-proveable.patch) by @williamstein created at 2011-08-25 06:58:42\n\nAll patches apply (with a minor rebase) and mostly work.  However, there is one bug. \n\n\n```\nUnfortunately, this is wrong, since the coefficients of 1 and T have\nto be 0.0000?.  However, the output *is* correct to 10 bits of\nprecision, so the correct fix is just to truncate.::\n\n    sage: L = LFunction(EllipticCurve('389a'))\n    sage: L.taylor_series(RealField(10)(1), 3, proof=True)\n    -0.00002125? + 0.00001204?*T + 0.75933?*T^2 - 0.43032?*T^3 + O(T^4)\n```\n",
+    "body": "Attachment [9193-part4-proveable.patch](tarball://root/attachments/some-uuid/ticket9193/9193-part4-proveable.patch) by @williamstein created at 2011-08-25 06:58:42\n\nAll patches apply (with a minor rebase) and mostly work.  However, there is one bug. \n\n```\nUnfortunately, this is wrong, since the coefficients of 1 and T have\nto be 0.0000?.  However, the output *is* correct to 10 bits of\nprecision, so the correct fix is just to truncate.::\n\n    sage: L = LFunction(EllipticCurve('389a'))\n    sage: L.taylor_series(RealField(10)(1), 3, proof=True)\n    -0.00002125? + 0.00001204?*T + 0.75933?*T^2 - 0.43032?*T^3 + O(T^4)\n```",
     "created_at": "2011-08-25T06:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9193",
     "type": "issue_comment",
@@ -225,7 +223,6 @@ Attachment [9193-part4-proveable.patch](tarball://root/attachments/some-uuid/tic
 
 All patches apply (with a minor rebase) and mostly work.  However, there is one bug. 
 
-
 ```
 Unfortunately, this is wrong, since the coefficients of 1 and T have
 to be 0.0000?.  However, the output *is* correct to 10 bits of
@@ -235,7 +232,6 @@ precision, so the correct fix is just to truncate.::
     sage: L.taylor_series(RealField(10)(1), 3, proof=True)
     -0.00002125? + 0.00001204?*T + 0.75933?*T^2 - 0.43032?*T^3 + O(T^4)
 ```
-
 
 
 

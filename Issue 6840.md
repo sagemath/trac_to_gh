@@ -3,7 +3,7 @@
 archive/issues_006840.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: notebook documentation\n\nChange documentation of the notebook to a uniform format and complete notebook doctest/documentation coverage.\n\n* Some docstrings are improperly formatted.\n* The formatting of docstrings is inconsistent, e.g.:\n\nSome have:\n\n```\nOutput: footype\n\nDescription\n```\n\n\nWhile others have:\n\n```\nOutput:\n\n- footype -- description\n```\n\n\netc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6840\n\n",
+    "body": "Assignee: boothby\n\nKeywords: notebook documentation\n\nChange documentation of the notebook to a uniform format and complete notebook doctest/documentation coverage.\n\n* Some docstrings are improperly formatted.\n* The formatting of docstrings is inconsistent, e.g.:\n\nSome have:\n\n```\nOutput: footype\n\nDescription\n```\n\nWhile others have:\n\n```\nOutput:\n\n- footype -- description\n```\n\netc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6840\n\n",
     "created_at": "2009-08-29T07:30:36Z",
     "labels": [
         "component: notebook",
@@ -34,7 +34,6 @@ Output: footype
 Description
 ```
 
-
 While others have:
 
 ```
@@ -42,7 +41,6 @@ Output:
 
 - footype -- description
 ```
-
 
 etc.
 
@@ -291,7 +289,7 @@ I'll put this up for review, and we can work on the rest of the documentation an
 archive/issue_comments_056319.json:
 ```json
 {
-    "body": "The patch `trac_6840-notebook-documentation-v4.patch` applies OK against 4.1.1, but with one fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v4.patch && hg qpush\nadding trac_6840-notebook-documentation-v4.patch to series file\napplying trac_6840-notebook-documentation-v4.patch\npatching file sage/server/notebook/config.py\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\nNow at: trac_6840-notebook-documentation-v4.patch\n```\n\nBuilding the reference manual results in about 10 warnings:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.html:8: (WARNING/2) Inline literal start-string without end-string.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.html_out:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.is_interacting:8: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.output_text:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.parse_html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.html:8: (WARNING/2) Inline literal start-string without end-string.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.html_out:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.is_interacting:8: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.output_text:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.parse_html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\nThe test suite reports one doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/notebook/cell.py\", line 1598:\n    sage: C.introspect_html()\nExpected:\n    '<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">foobar</span></p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  \\n  <p><span class=\"math\">foobar</span></p>\\n\\n\\n</div>'\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_71\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_cell.py\n\t [26.4 s]\n```\n\nI'm marking this as \"needs work\", since at least the doctest failure must be resolved. The warnings from building the reference manual can be addressed via another ticket. However, it would be nice if both of these issues could be fixed here.",
+    "body": "The patch `trac_6840-notebook-documentation-v4.patch` applies OK against 4.1.1, but with one fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v4.patch && hg qpush\nadding trac_6840-notebook-documentation-v4.patch to series file\napplying trac_6840-notebook-documentation-v4.patch\npatching file sage/server/notebook/config.py\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\nNow at: trac_6840-notebook-documentation-v4.patch\n```\nBuilding the reference manual results in about 10 warnings:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.html:8: (WARNING/2) Inline literal start-string without end-string.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.html_out:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.is_interacting:8: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.output_text:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.Cell.parse_html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.html:8: (WARNING/2) Inline literal start-string without end-string.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.html_out:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.is_interacting:8: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.output_text:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.parse_html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\nThe test suite reports one doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/notebook/cell.py\", line 1598:\n    sage: C.introspect_html()\nExpected:\n    '<div class=\"docstring\">\\n    \\n  <p><span class=\"math\">foobar</span></p>\\n\\n\\n</div>'\nGot:\n    '<div class=\"docstring\">\\n    \\n  \\n  <p><span class=\"math\">foobar</span></p>\\n\\n\\n</div>'\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_71\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_cell.py\n\t [26.4 s]\n```\nI'm marking this as \"needs work\", since at least the doctest failure must be resolved. The warnings from building the reference manual can be addressed via another ticket. However, it would be nice if both of these issues could be fixed here.",
     "created_at": "2009-08-31T12:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
@@ -310,7 +308,6 @@ patching file sage/server/notebook/config.py
 Hunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).
 Now at: trac_6840-notebook-documentation-v4.patch
 ```
-
 Building the reference manual results in about 10 warnings:
 
 ```
@@ -325,7 +322,6 @@ WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sag
 WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.output_text:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/cell.py:docstring of sage.server.notebook.cell.ComputeCell.parse_html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 ```
-
 The test suite reports one doctest failure:
 
 ```
@@ -344,7 +340,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_cell.py
 	 [26.4 s]
 ```
-
 I'm marking this as "needs work", since at least the doctest failure must be resolved. The warnings from building the reference manual can be addressed via another ticket. However, it would be nice if both of these issues could be fixed here.
 
 
@@ -454,7 +449,7 @@ One way to placate Sphinx about the unused source file `doc/en/reference/sage/se
 archive/issue_comments_056325.json:
 ```json
 {
-    "body": "The patch `trac_6840-notebook-documentation-v6.patch` applies OK, but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v6.patch && hg qpush\nadding trac_6840-notebook-documentation-v6.patch to series file\napplying trac_6840-notebook-documentation-v6.patch\npatching file sage/server/notebook/config.py\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\nNow at: trac_6840-notebook-documentation-v6.patch\n```\n\nDon't worry too much about the fuzz. I have attached a reviewer patch that fixes typos introduced by the previous patch. If you're OK with that reviewer patch, then the ticket gets a positive review and patches should be merged in this order:\n\n1. `trac_6840-notebook-documentation-v6.patch`\n2. `trac_6840-reviewer.patch`",
+    "body": "The patch `trac_6840-notebook-documentation-v6.patch` applies OK, but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v6.patch && hg qpush\nadding trac_6840-notebook-documentation-v6.patch to series file\napplying trac_6840-notebook-documentation-v6.patch\npatching file sage/server/notebook/config.py\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\nNow at: trac_6840-notebook-documentation-v6.patch\n```\nDon't worry too much about the fuzz. I have attached a reviewer patch that fixes typos introduced by the previous patch. If you're OK with that reviewer patch, then the ticket gets a positive review and patches should be merged in this order:\n\n1. `trac_6840-notebook-documentation-v6.patch`\n2. `trac_6840-reviewer.patch`",
     "created_at": "2009-09-01T04:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
@@ -473,7 +468,6 @@ patching file sage/server/notebook/config.py
 Hunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).
 Now at: trac_6840-notebook-documentation-v6.patch
 ```
-
 Don't worry too much about the fuzz. I have attached a reviewer patch that fixes typos introduced by the previous patch. If you're OK with that reviewer patch, then the ticket gets a positive review and patches should be merged in this order:
 
 1. `trac_6840-notebook-documentation-v6.patch`
@@ -546,7 +540,7 @@ apply on top of previous patch
 archive/issue_comments_056329.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> Is it alright if we treat the \"PLANNING\" section near the top of `interact.py` as \"internal\" documentation, at least for now?  I haven't checked that it's current and Sphinx complains copiously about it.\nNew reviewer patch attached. Please use that one. That should get rid of the complaints by Sphinx.\n\n\n\n>  Either way, just let me know, and I'll attach v2 of the reviewer patch, since I found at least one more minor change to make (`2D` to `2-D`).\nThe updated reviewer patch also addresses this issue.\n\n\n\n\n> By the way, is there a reST alternative to double back-quotes that puts the enclosed text in a fixed-width font but does not change its background color?\nI don't know.\n\n\n\nReplying to [comment:14 mpatel]:\n> While I'm here I should ask whether we should put both side-effects, including possible exceptions, *and* return values in `OUTPUT` sections.  Mostly, I've mentioned just the return values in `OUTPUT`.  On occasion, I've noted significant effects in the blurb at the top of a docstring.\nThat's a good idea. Document what works and what doesn't. I usually have a \"TESTS:\" section for a method/function/class where I document exceptions that could be raised when using that method/function/class.",
+    "body": "Replying to [comment:13 mpatel]:\n> Is it alright if we treat the \"PLANNING\" section near the top of `interact.py` as \"internal\" documentation, at least for now?  I haven't checked that it's current and Sphinx complains copiously about it.\n\nNew reviewer patch attached. Please use that one. That should get rid of the complaints by Sphinx.\n\n\n\n>  Either way, just let me know, and I'll attach v2 of the reviewer patch, since I found at least one more minor change to make (`2D` to `2-D`).\n\nThe updated reviewer patch also addresses this issue.\n\n\n\n\n> By the way, is there a reST alternative to double back-quotes that puts the enclosed text in a fixed-width font but does not change its background color?\n\nI don't know.\n\n\n\nReplying to [comment:14 mpatel]:\n> While I'm here I should ask whether we should put both side-effects, including possible exceptions, *and* return values in `OUTPUT` sections.  Mostly, I've mentioned just the return values in `OUTPUT`.  On occasion, I've noted significant effects in the blurb at the top of a docstring.\n\nThat's a good idea. Document what works and what doesn't. I usually have a \"TESTS:\" section for a method/function/class where I document exceptions that could be raised when using that method/function/class.",
     "created_at": "2009-09-01T05:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
@@ -557,23 +551,27 @@ archive/issue_comments_056329.json:
 
 Replying to [comment:13 mpatel]:
 > Is it alright if we treat the "PLANNING" section near the top of `interact.py` as "internal" documentation, at least for now?  I haven't checked that it's current and Sphinx complains copiously about it.
+
 New reviewer patch attached. Please use that one. That should get rid of the complaints by Sphinx.
 
 
 
 >  Either way, just let me know, and I'll attach v2 of the reviewer patch, since I found at least one more minor change to make (`2D` to `2-D`).
+
 The updated reviewer patch also addresses this issue.
 
 
 
 
 > By the way, is there a reST alternative to double back-quotes that puts the enclosed text in a fixed-width font but does not change its background color?
+
 I don't know.
 
 
 
 Replying to [comment:14 mpatel]:
 > While I'm here I should ask whether we should put both side-effects, including possible exceptions, *and* return values in `OUTPUT` sections.  Mostly, I've mentioned just the return values in `OUTPUT`.  On occasion, I've noted significant effects in the blurb at the top of a docstring.
+
 That's a good idea. Document what works and what doesn't. I usually have a "TESTS:" section for a method/function/class where I document exceptions that could be raised when using that method/function/class.
 
 

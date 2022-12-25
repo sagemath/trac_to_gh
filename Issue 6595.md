@@ -3,7 +3,7 @@
 archive/issues_006595.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein david.kirkby@onetel.net\n\nKeywords: scons SUNWspro SunStudio\n\nThis failure was first observed in Sage 4.1.1.alpha0.\n\nIf the Sun Studio compiler suite is installed, the C++ compiler will be at /opt/SUNWspro/bin/CC. This causes the failure below. note in particular the line, which shows the Sun C++ compiler being used. But only a line or two before, the GNU C compiler was used. Mixing object files between the two compilers is unlikely to work. \n\nIt might be worth taking note of the error though. The Sun compiler is a lot more fussy than g++, so probably picks up bad code that g++ will accept. \n\n\n```\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\n\n```\n\nHere's the fuller output. I believe this is a SCons issue again. SCons on Solaris looks for /opt/SUNWspro/bin/CC and will use that sometimes. PolyBoRi did suffer this problem, but Alexander Dreyer has sorted that out.\n\n\n```\nDeleting the scons target.\nRemoved src/so_convert.o\nRemoved src/so_interrupt.o\nRemoved src/so_mpn_pylong.o\nRemoved src/so_mpz_pylong.o\nRemoved src/so_mpz_longlong.o\nRemoved src/so_stdsage.o\nRemoved src/so_gmp_globals.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/so_convert.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/convert.c\ngcc -o src/so_interrupt.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/so_mpn_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/so_mpz_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/so_mpz_longlong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/so_stdsage.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/so_gmp_globals.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/gmp_globals.c\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\nscons: *** [src/so_ZZ_pylong.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal    0m39.279s\nuser    0m33.652s\nsys     0m4.841s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m21.275s\nuser    2m2.010s\nsys     0m16.789s\nsage: An error occurred while installing sage-4.1.1.alpha0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6595\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein david.kirkby@onetel.net\n\nKeywords: scons SUNWspro SunStudio\n\nThis failure was first observed in Sage 4.1.1.alpha0.\n\nIf the Sun Studio compiler suite is installed, the C++ compiler will be at /opt/SUNWspro/bin/CC. This causes the failure below. note in particular the line, which shows the Sun C++ compiler being used. But only a line or two before, the GNU C compiler was used. Mixing object files between the two compilers is unlikely to work. \n\nIt might be worth taking note of the error though. The Sun compiler is a lot more fussy than g++, so probably picks up bad code that g++ will accept. \n\n```\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\n\n```\nHere's the fuller output. I believe this is a SCons issue again. SCons on Solaris looks for /opt/SUNWspro/bin/CC and will use that sometimes. PolyBoRi did suffer this problem, but Alexander Dreyer has sorted that out.\n\n```\nDeleting the scons target.\nRemoved src/so_convert.o\nRemoved src/so_interrupt.o\nRemoved src/so_mpn_pylong.o\nRemoved src/so_mpz_pylong.o\nRemoved src/so_mpz_longlong.o\nRemoved src/so_stdsage.o\nRemoved src/so_gmp_globals.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/so_convert.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/convert.c\ngcc -o src/so_interrupt.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/so_mpn_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/so_mpz_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/so_mpz_longlong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/so_stdsage.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/so_gmp_globals.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/gmp_globals.c\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\nscons: *** [src/so_ZZ_pylong.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal    0m39.279s\nuser    0m33.652s\nsys     0m4.841s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m21.275s\nuser    2m2.010s\nsys     0m16.789s\nsage: An error occurred while installing sage-4.1.1.alpha0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6595\n\n",
     "created_at": "2009-07-23T07:27:40Z",
     "labels": [
         "component: porting: solaris",
@@ -28,7 +28,6 @@ If the Sun Studio compiler suite is installed, the C++ compiler will be at /opt/
 
 It might be worth taking note of the error though. The Sun compiler is a lot more fussy than g++, so probably picks up bad code that g++ will accept. 
 
-
 ```
 /opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp
 CC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise
@@ -36,9 +35,7 @@ CC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise
 1 Error(s) detected.
 
 ```
-
 Here's the fuller output. I believe this is a SCons issue again. SCons on Solaris looks for /opt/SUNWspro/bin/CC and will use that sometimes. PolyBoRi did suffer this problem, but Alexander Dreyer has sorted that out.
-
 
 ```
 Deleting the scons target.
@@ -85,7 +82,6 @@ user    2m2.010s
 sys     0m16.789s
 sage: An error occurred while installing sage-4.1.1.alpha0
 ```
-
 
 
 
@@ -180,7 +176,7 @@ William
 archive/issue_comments_053869.json:
 ```json
 {
-    "body": "Hi William, \n\nUsing 't2' set the following environment up before starting to build sage. \n\n\n```\nkirkby@t2:[~] $ echo $SAGE_FORTRAN_LIB\n/usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so\nkirkby@t2:[~] $ echo $SAGE_FORTRAN\n/usr/local/gcc-4.4.1-sun-linker/bin/gfortran\nkirkby@t2:[~] $ echo $LD_LIBRARY_PATH\n/usr/local/gcc-4.4.1-sun-linker/lib:/usr/local/lib\nkirkby@t2:[~] $ echo $PATH\n/usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin\n```\n\n\nnote, if you try to run the Sun C or C++ compilers, you will find they do **not** work, since they are not in your path. \n\n\n```\nkirkby@t2:[~] $ cc\n-bash: cc: command not found\nkirkby@t2:[~] $ CC\n-bash: CC: command not found\n```\n\n\nThat is intensional, since for now at least, Sage will only build with gcc, so the Sun compilers are not in the path. \n\nType 'make' and you will find it fails at the point indicated, as the Sun C++ compiler (/opt/SUNWspro/bin/CC) will be used to try to compile the C++ files. This is despite your path does not include /opt/SUNWspro/bin/. The path /opt/SUNWspro/bin/ is hard-coded into SCons - it looks for the Sun tools there. Why the hell it uses the GNU C compiler, but the Sun C++ compiler is beyond me. \n\nI'm just about to go to bed, but will hang around for 20 minutes or so, therefore if you have any questions, get them to me asap. \n\nDave",
+    "body": "Hi William, \n\nUsing 't2' set the following environment up before starting to build sage. \n\n```\nkirkby@t2:[~] $ echo $SAGE_FORTRAN_LIB\n/usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so\nkirkby@t2:[~] $ echo $SAGE_FORTRAN\n/usr/local/gcc-4.4.1-sun-linker/bin/gfortran\nkirkby@t2:[~] $ echo $LD_LIBRARY_PATH\n/usr/local/gcc-4.4.1-sun-linker/lib:/usr/local/lib\nkirkby@t2:[~] $ echo $PATH\n/usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin\n```\n\nnote, if you try to run the Sun C or C++ compilers, you will find they do **not** work, since they are not in your path. \n\n```\nkirkby@t2:[~] $ cc\n-bash: cc: command not found\nkirkby@t2:[~] $ CC\n-bash: CC: command not found\n```\n\nThat is intensional, since for now at least, Sage will only build with gcc, so the Sun compilers are not in the path. \n\nType 'make' and you will find it fails at the point indicated, as the Sun C++ compiler (/opt/SUNWspro/bin/CC) will be used to try to compile the C++ files. This is despite your path does not include /opt/SUNWspro/bin/. The path /opt/SUNWspro/bin/ is hard-coded into SCons - it looks for the Sun tools there. Why the hell it uses the GNU C compiler, but the Sun C++ compiler is beyond me. \n\nI'm just about to go to bed, but will hang around for 20 minutes or so, therefore if you have any questions, get them to me asap. \n\nDave",
     "created_at": "2009-12-17T01:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -193,7 +189,6 @@ Hi William,
 
 Using 't2' set the following environment up before starting to build sage. 
 
-
 ```
 kirkby@t2:[~] $ echo $SAGE_FORTRAN_LIB
 /usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so
@@ -205,9 +200,7 @@ kirkby@t2:[~] $ echo $PATH
 /usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin
 ```
 
-
 note, if you try to run the Sun C or C++ compilers, you will find they do **not** work, since they are not in your path. 
-
 
 ```
 kirkby@t2:[~] $ cc
@@ -215,7 +208,6 @@ kirkby@t2:[~] $ cc
 kirkby@t2:[~] $ CC
 -bash: CC: command not found
 ```
-
 
 That is intensional, since for now at least, Sage will only build with gcc, so the Sun compilers are not in the path. 
 
@@ -354,7 +346,7 @@ Changing status from new to needs_review.
 archive/issue_comments_053875.json:
 ```json
 {
-    "body": "Great you have found those problems. The Sun compiler is quite fussy, which annoys some, but does show up bugs that other compilers ignore. \n\nHowever, building the Sage library with 'CC' will **not** produce a workable Sage, as the Sun and GNU C++ compilers use different name mangling. We must get this to build with g++. Hence hte library it must be made to respect CC and CXX. \n\nI've had some feedback from the SCons mailing list. It's 2:02 AM here, so I'm not going to implement any of these now, but hopefully later I'll look at resolving the issues. It would appear that SCons ignores CC and CXX, but there are things we can do. Some code snippets posted by two or three different people include the following. \n\n-----\nHi David,\n\nI believe your problem is the line:\n\n```\nenv = Environment(ENV = os.environ)\n```\n\nwhich imports wholesale everything from the shell environment. Try\nremoving this and your cxx=g++ override should work.\n-------------\nYour best technique is just to specify the GNU toolchain when setting  \nup the Environment: \n\n```\ntools=['gcc','g++','gnulink',WhateverElseYouNeed). \n```\n \n\nThat's portable across all platforms now, and will be into the future.\n\n-----------\n\nOr the toolchain you pass to the Environment when you set it up:\n\n```\n     if os.environ['CC'].contains('gcc'):\n         toolchain = ['gcc', 'g++', 'gnulink']\n     else:\n         toolchain = ['suncc', 'sunc++', 'sunlink']\n     env = Environment(tools = [toolchain, 'other', 'tools'])\n```\n\n--------",
+    "body": "Great you have found those problems. The Sun compiler is quite fussy, which annoys some, but does show up bugs that other compilers ignore. \n\nHowever, building the Sage library with 'CC' will **not** produce a workable Sage, as the Sun and GNU C++ compilers use different name mangling. We must get this to build with g++. Hence hte library it must be made to respect CC and CXX. \n\nI've had some feedback from the SCons mailing list. It's 2:02 AM here, so I'm not going to implement any of these now, but hopefully later I'll look at resolving the issues. It would appear that SCons ignores CC and CXX, but there are things we can do. Some code snippets posted by two or three different people include the following. \n\n---\nHi David,\n\nI believe your problem is the line:\n\n```\nenv = Environment(ENV = os.environ)\n```\nwhich imports wholesale everything from the shell environment. Try\nremoving this and your cxx=g++ override should work.\n\n---\nYour best technique is just to specify the GNU toolchain when setting  \nup the Environment: \n\n```\ntools=['gcc','g++','gnulink',WhateverElseYouNeed). \n``` \n\nThat's portable across all platforms now, and will be into the future.\n\n---\n\nOr the toolchain you pass to the Environment when you set it up:\n\n```\n     if os.environ['CC'].contains('gcc'):\n         toolchain = ['gcc', 'g++', 'gnulink']\n     else:\n         toolchain = ['suncc', 'sunc++', 'sunlink']\n     env = Environment(tools = [toolchain, 'other', 'tools'])\n```\n\n---",
     "created_at": "2009-12-23T02:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -369,7 +361,7 @@ However, building the Sage library with 'CC' will **not** produce a workable Sag
 
 I've had some feedback from the SCons mailing list. It's 2:02 AM here, so I'm not going to implement any of these now, but hopefully later I'll look at resolving the issues. It would appear that SCons ignores CC and CXX, but there are things we can do. Some code snippets posted by two or three different people include the following. 
 
------
+---
 Hi David,
 
 I believe your problem is the line:
@@ -377,21 +369,20 @@ I believe your problem is the line:
 ```
 env = Environment(ENV = os.environ)
 ```
-
 which imports wholesale everything from the shell environment. Try
 removing this and your cxx=g++ override should work.
--------------
+
+---
 Your best technique is just to specify the GNU toolchain when setting  
 up the Environment: 
 
 ```
 tools=['gcc','g++','gnulink',WhateverElseYouNeed). 
-```
- 
+``` 
 
 That's portable across all platforms now, and will be into the future.
 
------------
+---
 
 Or the toolchain you pass to the Environment when you set it up:
 
@@ -403,7 +394,7 @@ Or the toolchain you pass to the Environment when you set it up:
      env = Environment(tools = [toolchain, 'other', 'tools'])
 ```
 
---------
+---
 
 
 
@@ -532,7 +523,7 @@ merged into 4.3.rc2.
 archive/issue_comments_053881.json:
 ```json
 {
-    "body": "This patch breaks building Sage on OS X.  I'm re-opening it.  This will have to go in 4.3.1 when fixed.\n\n```\nrunning build_py\nrunning build_ext\nbuilding 'sage.algebras.quatalg.quaternion_algebra_element' extension\ng++ -L/Users/wstein/build/sage-4.3.rc2/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.3-i386-2.6/sage/algebras/quatalg/quaternion_algebra_element.o -L/Users/wstein/build/sage-4.3.rc2/local//lib -lcsage -lcsage -lflint -lgmp -lgmpxx -lm -lstdc++ -lntl -lstdc++ -lntl -o build/lib.macosx-10.3-i386-2.6/sage/algebras/quatalg/quaternion_algebra_element.so\nld: in /Users/wstein/build/sage-4.3.rc2/local/lib/libcsage.dylib, can't link with a main executable\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\n\nreal    0m2.029s\n```\n",
+    "body": "This patch breaks building Sage on OS X.  I'm re-opening it.  This will have to go in 4.3.1 when fixed.\n\n```\nrunning build_py\nrunning build_ext\nbuilding 'sage.algebras.quatalg.quaternion_algebra_element' extension\ng++ -L/Users/wstein/build/sage-4.3.rc2/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.3-i386-2.6/sage/algebras/quatalg/quaternion_algebra_element.o -L/Users/wstein/build/sage-4.3.rc2/local//lib -lcsage -lcsage -lflint -lgmp -lgmpxx -lm -lstdc++ -lntl -lstdc++ -lntl -o build/lib.macosx-10.3-i386-2.6/sage/algebras/quatalg/quaternion_algebra_element.so\nld: in /Users/wstein/build/sage-4.3.rc2/local/lib/libcsage.dylib, can't link with a main executable\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\n\nreal    0m2.029s\n```",
     "created_at": "2009-12-24T17:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -556,7 +547,6 @@ sage: There was an error installing modified sage library code.
 
 real    0m2.029s
 ```
-
 
 
 
@@ -599,7 +589,7 @@ archive/issue_events_015549.json:
 archive/issue_comments_053883.json:
 ```json
 {
-    "body": "> This patch breaks building Sage on OS X.\n\nIt breaks on OS X <= 10.5, not on 10.6.   Also, the problem is only the part2 patch.  The first patch with the genuine bug fixes is fine.",
+    "body": "> This patch breaks building Sage on OS X.\n\n\nIt breaks on OS X <= 10.5, not on 10.6.   Also, the problem is only the part2 patch.  The first patch with the genuine bug fixes is fine.",
     "created_at": "2009-12-24T17:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -609,6 +599,7 @@ archive/issue_comments_053883.json:
 ```
 
 > This patch breaks building Sage on OS X.
+
 
 It breaks on OS X <= 10.5, not on 10.6.   Also, the problem is only the part2 patch.  The first patch with the genuine bug fixes is fine.
 
@@ -637,7 +628,7 @@ That's very annoying, but one of those things I guess. Perhaps this bit of code 
 archive/issue_comments_053885.json:
 ```json
 {
-    "body": "> That's very annoying, but one of those things I guess.\n> Perhaps this bit of code needs to be Solaris-specific. \n\nThat's an excellent idea and would be easy to do.  Basically we just change\n\n```\nif os.environ['CC'].endswith('gcc'): \n```\n\nto\n\n```\nif os.uname()[0] == 'SunOS' and os.environ['CC'].endswith('gcc'): \n```\n\nand we're good to go.",
+    "body": "> That's very annoying, but one of those things I guess.\n> Perhaps this bit of code needs to be Solaris-specific. \n\n\nThat's an excellent idea and would be easy to do.  Basically we just change\n\n```\nif os.environ['CC'].endswith('gcc'): \n```\nto\n\n```\nif os.uname()[0] == 'SunOS' and os.environ['CC'].endswith('gcc'): \n```\nand we're good to go.",
     "created_at": "2009-12-24T20:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
@@ -649,18 +640,17 @@ archive/issue_comments_053885.json:
 > That's very annoying, but one of those things I guess.
 > Perhaps this bit of code needs to be Solaris-specific. 
 
+
 That's an excellent idea and would be easy to do.  Basically we just change
 
 ```
 if os.environ['CC'].endswith('gcc'): 
 ```
-
 to
 
 ```
 if os.uname()[0] == 'SunOS' and os.environ['CC'].endswith('gcc'): 
 ```
-
 and we're good to go.
 
 

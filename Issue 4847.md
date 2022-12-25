@@ -117,7 +117,7 @@ Marshall
 archive/issue_comments_036684.json:
 ```json
 {
-    "body": "\n```\n14:03 < wstein> The interval.py file I wrote, and can be safely deleted.\n14:03 < wstein> It was deprecated and it has been > 6 mnths.\n14:04 < mabs> Well, I had never seen that file, which should tell you something :)\n14:05 < wstein> The elementary functions thing is totally of a different nature.\n14:05 < wstein> I very much doubt it has been replaced by something newer.\n14:05 < wstein> And it's very useful for differential equations teaching.\n14:05 < wstein> At least that was the intention.\n14:05 < wstein> But I personally don't have interest in that.\n14:06 < wstein> Best thing would be to delete it and have David -- if he cares -- submit a new\n14:06 < wstein> patch that adds back a version that fully works.\n```\n",
+    "body": "```\n14:03 < wstein> The interval.py file I wrote, and can be safely deleted.\n14:03 < wstein> It was deprecated and it has been > 6 mnths.\n14:04 < mabs> Well, I had never seen that file, which should tell you something :)\n14:05 < wstein> The elementary functions thing is totally of a different nature.\n14:05 < wstein> I very much doubt it has been replaced by something newer.\n14:05 < wstein> And it's very useful for differential equations teaching.\n14:05 < wstein> At least that was the intention.\n14:05 < wstein> But I personally don't have interest in that.\n14:06 < wstein> Best thing would be to delete it and have David -- if he cares -- submit a new\n14:06 < wstein> patch that adds back a version that fully works.\n```",
     "created_at": "2008-12-22T22:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4847",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ archive/issue_comments_036684.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 14:03 < wstein> The interval.py file I wrote, and can be safely deleted.
@@ -139,7 +138,6 @@ archive/issue_comments_036684.json:
 14:06 < wstein> Best thing would be to delete it and have David -- if he cares -- submit a new
 14:06 < wstein> patch that adds back a version that fully works.
 ```
-
 
 
 

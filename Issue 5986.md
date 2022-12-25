@@ -110,7 +110,7 @@ This workaround it a bit to hackish for my taste, but it's been implemented and 
 archive/issue_comments_047481.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. \n\nDoes that mean that this ticket can be closed?",
+    "body": "Replying to [comment:4 robertwb]:\n> This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. \n\n\nDoes that mean that this ticket can be closed?",
     "created_at": "2009-09-22T17:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
@@ -122,6 +122,7 @@ archive/issue_comments_047481.json:
 Replying to [comment:4 robertwb]:
 > This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. 
 
+
 Does that mean that this ticket can be closed?
 
 
@@ -131,7 +132,7 @@ Does that mean that this ticket can be closed?
 archive/issue_comments_047482.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 robertwb]:\n> > This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. \n> \n> Does that mean that this ticket can be closed?\n\nNot before Robert or someone else writes a proof of concept patch upon the category code proving that #6121 is a usable replacement for this one to get pickling to work for parents and categories.\nSee discussion on Sage devel.",
+    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 robertwb]:\n> > This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. \n\n> \n> Does that mean that this ticket can be closed?\n\n\nNot before Robert or someone else writes a proof of concept patch upon the category code proving that #6121 is a usable replacement for this one to get pickling to work for parents and categories.\nSee discussion on Sage devel.",
     "created_at": "2009-09-22T20:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
@@ -143,8 +144,10 @@ archive/issue_comments_047482.json:
 Replying to [comment:5 jason]:
 > Replying to [comment:4 robertwb]:
 > > This workaround it a bit to hackish for my taste, but it's been implemented and tested. Followup at #6121. 
+
 > 
 > Does that mean that this ticket can be closed?
+
 
 Not before Robert or someone else writes a proof of concept patch upon the category code proving that #6121 is a usable replacement for this one to get pickling to work for parents and categories.
 See discussion on Sage devel.

@@ -3,7 +3,7 @@
 archive/issues_002057.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nBefore patch:\n\n```\n\nsage: (0/1) ^ (0/1)\n\n---------------------------------------------------------------------------\n<type 'exceptions.ArithmeticError'>       Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/rational.pyx in sage.rings.rational.Rational.__pow__()\n\n<type 'exceptions.ArithmeticError'>: 0^0 is undefined.\n```\n\n\nAfter patch:\n\n```\nsage: (0/1) ^ (0/1)\n1\nsage: type(_)\n<type 'sage.rings.rational.Rational'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2057\n\n",
+    "body": "Assignee: somebody\n\nBefore patch:\n\n```\n\nsage: (0/1) ^ (0/1)\n\n---------------------------------------------------------------------------\n<type 'exceptions.ArithmeticError'>       Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/rational.pyx in sage.rings.rational.Rational.__pow__()\n\n<type 'exceptions.ArithmeticError'>: 0^0 is undefined.\n```\n\nAfter patch:\n\n```\nsage: (0/1) ^ (0/1)\n1\nsage: type(_)\n<type 'sage.rings.rational.Rational'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2057\n\n",
     "created_at": "2008-02-05T15:25:10Z",
     "labels": [
         "component: basic arithmetic",
@@ -34,7 +34,6 @@ sage: (0/1) ^ (0/1)
 <type 'exceptions.ArithmeticError'>: 0^0 is undefined.
 ```
 
-
 After patch:
 
 ```
@@ -43,7 +42,6 @@ sage: (0/1) ^ (0/1)
 sage: type(_)
 <type 'sage.rings.rational.Rational'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2057
 

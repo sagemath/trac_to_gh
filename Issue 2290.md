@@ -49,7 +49,7 @@ Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.pat
 archive/issue_comments_015156.json:
 ```json
 {
-    "body": "Hmm, I am not convinced that the result is correct:\n\n```\n88\t88\t    We can also make \\class{CallableSymbolicExpressions}, which is a \\class{SymbolicExpression} \n89\t \t    that are functions of variables in a fixed order. Each \n \t89\t    that is function of variables in a fixed order. Each \n90\t90\t    \\class{SymbolicExpression} has a function() method used to create a \n91\t91\t    \\class{CallableSymbolicExpression}.\n```\n\nWhile I agree that it should be singular, I think an article is missing. I guess in British English the above without the article would be correct, but with my American English I would like to see an article there.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Hmm, I am not convinced that the result is correct:\n\n```\n88\t88\t    We can also make \\class{CallableSymbolicExpressions}, which is a \\class{SymbolicExpression} \n89\t \t    that are functions of variables in a fixed order. Each \n \t89\t    that is function of variables in a fixed order. Each \n90\t90\t    \\class{SymbolicExpression} has a function() method used to create a \n91\t91\t    \\class{CallableSymbolicExpression}.\n```\nWhile I agree that it should be singular, I think an article is missing. I guess in British English the above without the article would be correct, but with my American English I would like to see an article there.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T17:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ Hmm, I am not convinced that the result is correct:
 90	90	    \class{SymbolicExpression} has a function() method used to create a 
 91	91	    \class{CallableSymbolicExpression}.
 ```
-
 While I agree that it should be singular, I think an article is missing. I guess in British English the above without the article would be correct, but with my American English I would like to see an article there.
 
 Thoughts?

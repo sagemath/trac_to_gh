@@ -88,7 +88,7 @@ Michael
 archive/issue_comments_025108.json:
 ```json
 {
-    "body": "\n```\n    I was wondering if you'd be\n    willing to release your code under a GPL compatible license so that we\n    can include it with Sage to do regression testing with every release.\n\n\nCertainly.\n\nIf you believe that\n\n This work written by Andrew Dalke and released into the public domain\n in 2008.  No copyright protection is asserted.\n\nis sufficient then there you go.  Else\n\n Copyright Andrew Dalke, 2008. This software is provided 'as-is', without\n any express or implied warranty. In no event will the author be held\n liable for any damages arising from the use of this software.\n\n Permission is granted to anyone to use this software for any purpose,\n including commercial applications, and to alter it and redistribute it\n freely, subject to no restriction.\n\nI honestly think that the code needs enough modifications to be usable in SAGE or another tool that nothing of my code will remain.\n\nNow if had access to the code I wrote for a client, that would be much cooler.  It saved the imports to a format that kcachegrind could visualize.  :)\n\nCheers,\n\n\n                               Andrew\n                               dalke@dalkescientific.com\n```\n",
+    "body": "```\n    I was wondering if you'd be\n    willing to release your code under a GPL compatible license so that we\n    can include it with Sage to do regression testing with every release.\n\n\nCertainly.\n\nIf you believe that\n\n This work written by Andrew Dalke and released into the public domain\n in 2008.  No copyright protection is asserted.\n\nis sufficient then there you go.  Else\n\n Copyright Andrew Dalke, 2008. This software is provided 'as-is', without\n any express or implied warranty. In no event will the author be held\n liable for any damages arising from the use of this software.\n\n Permission is granted to anyone to use this software for any purpose,\n including commercial applications, and to alter it and redistribute it\n freely, subject to no restriction.\n\nI honestly think that the code needs enough modifications to be usable in SAGE or another tool that nothing of my code will remain.\n\nNow if had access to the code I wrote for a client, that would be much cooler.  It saved the imports to a format that kcachegrind could visualize.  :)\n\nCheers,\n\n\n                               Andrew\n                               dalke@dalkescientific.com\n```",
     "created_at": "2008-07-06T17:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3559",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_025108.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-
 
 ```
     I was wondering if you'd be
@@ -131,7 +130,6 @@ Cheers,
                                Andrew
                                dalke@dalkescientific.com
 ```
-
 
 
 

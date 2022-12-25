@@ -3,7 +3,7 @@
 archive/issues_006404.json:
 ```json
 {
-    "body": "In current Sage (4.0.2), while typesetting conjugate() of\nan symbolic expression, latex symbol \"\\bar\" is used\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\n\nThe problem with \"\\bar\" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions\n\n\n```\nsage: x,y=var('x,y')\nsage: f = function('psi',x,y)\nsage: latex(f.conjugate())\n\\bar{\\psi\\left(x, y\\right)\n```\n\n\nA better solution is to use \"\\overline\" instead of \"\\bar\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6404\n\n",
+    "body": "In current Sage (4.0.2), while typesetting conjugate() of\nan symbolic expression, latex symbol \"\\bar\" is used\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\nThe problem with \"\\bar\" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions\n\n```\nsage: x,y=var('x,y')\nsage: f = function('psi',x,y)\nsage: latex(f.conjugate())\n\\bar{\\psi\\left(x, y\\right)\n```\n\nA better solution is to use \"\\overline\" instead of \"\\bar\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6404\n\n",
     "created_at": "2009-06-25T14:22:31Z",
     "labels": [
         "component: symbolics",
@@ -24,9 +24,7 @@ sage: latex(x.conjugate())
 \bar{x}
 ```
 
-
 The problem with "\bar" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions
-
 
 ```
 sage: x,y=var('x,y')
@@ -34,7 +32,6 @@ sage: f = function('psi',x,y)
 sage: latex(f.conjugate())
 \bar{\psi\left(x, y\right)
 ```
-
 
 A better solution is to use "\overline" instead of "\bar".
 

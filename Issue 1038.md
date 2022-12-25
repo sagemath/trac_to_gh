@@ -3,7 +3,7 @@
 archive/issues_001038.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe problem was reported in this thread: http://groups.google.com/group/sage-support/browse_thread/thread/96a5f3d336285146#\n\nHere's the test case:\n\n```\nimport numpy as npy\n# With sage.rings.integer.Integer:\nx = npy.array([1])\nprint x\n  # [1]\nnpy.dot(x, npy.array([0]))\nprint x\n  # [0]\n```\n\n\nwhere we see that multiplying a matrix has modified its elements.\n\nThis is from Robert Bradshaw's arithmetic optimization that mutates normally-immutable values if no other references are held.  The optimization makes certain assumptions about the way the Python API is used that are true of normal Python bytecode and of Cython-generated code (with the appropriate command-line arguments, which we use); but these assumptions are not true of C extension code in general, and in particular are not followed by the C code in numpy.\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/175e1796069fd33c#, where a discussion has just started on this topic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1038\n\n",
+    "body": "Assignee: somebody\n\nThe problem was reported in this thread: http://groups.google.com/group/sage-support/browse_thread/thread/96a5f3d336285146#\n\nHere's the test case:\n\n```\nimport numpy as npy\n# With sage.rings.integer.Integer:\nx = npy.array([1])\nprint x\n  # [1]\nnpy.dot(x, npy.array([0]))\nprint x\n  # [0]\n```\n\nwhere we see that multiplying a matrix has modified its elements.\n\nThis is from Robert Bradshaw's arithmetic optimization that mutates normally-immutable values if no other references are held.  The optimization makes certain assumptions about the way the Python API is used that are true of normal Python bytecode and of Cython-generated code (with the appropriate command-line arguments, which we use); but these assumptions are not true of C extension code in general, and in particular are not followed by the C code in numpy.\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/175e1796069fd33c#, where a discussion has just started on this topic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1038\n\n",
     "created_at": "2007-10-31T02:55:14Z",
     "labels": [
         "component: basic arithmetic",
@@ -32,7 +32,6 @@ npy.dot(x, npy.array([0]))
 print x
   # [0]
 ```
-
 
 where we see that multiplying a matrix has modified its elements.
 

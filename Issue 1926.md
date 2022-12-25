@@ -56,7 +56,7 @@ fixes to the maple interface
 archive/issue_comments_012187.json:
 ```json
 {
-    "body": "Attachment [sage-maple_interface_fixes.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.patch) by @williamstein created at 2008-01-25 13:58:32\n\nThis patch is very good except I don't like:\n\n```\n \t581\t        # everything is supposed to be comparable in Python, so we define \n \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n```\n\n\nIt would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.",
+    "body": "Attachment [sage-maple_interface_fixes.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.patch) by @williamstein created at 2008-01-25 13:58:32\n\nThis patch is very good except I don't like:\n\n```\n \t581\t        # everything is supposed to be comparable in Python, so we define \n \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n```\n\nIt would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.",
     "created_at": "2008-01-25T13:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -74,7 +74,6 @@ This patch is very good except I don't like:
  	582	        # the comparison thus when no comparable in interfaced system. 
  	583	        return -1   
 ```
-
 
 It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.
 
@@ -103,7 +102,7 @@ fixes to the maple interface (new version, fixing __cmp__ problem)
 archive/issue_comments_012189.json:
 ```json
 {
-    "body": "Attachment [sage-maple_interface_fixes.2.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.2.patch) by @burcin created at 2008-01-25 16:27:26\n\nReplying to [comment:1 was]:\n> This patch is very good except I don't like:\n {{{\n  \t581\t        # everything is supposed to be comparable in Python, so we define \n  \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n }}}\n\nI copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, and this comment came with it. \n\n> It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.   \n\nYou're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with\n\n\n``` \nif hash(str(self)) < hash(str(other):\n    return -1\nelse:\n    return 1\n```\n\n\nHopefully making `__cmp__` behave more like an order relation.",
+    "body": "Attachment [sage-maple_interface_fixes.2.patch](tarball://root/attachments/some-uuid/ticket1926/sage-maple_interface_fixes.2.patch) by @burcin created at 2008-01-25 16:27:26\n\nReplying to [comment:1 was]:\n> This patch is very good except I don't like:\n\n {{{\n  \t581\t        # everything is supposed to be comparable in Python, so we define \n  \t582\t        # the comparison thus when no comparable in interfaced system. \n \t583\t        return -1   \n }}}\n\nI copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, and this comment came with it. \n\n> It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.   \n\n\nYou're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with\n\n``` \nif hash(str(self)) < hash(str(other):\n    return -1\nelse:\n    return 1\n```\n\nHopefully making `__cmp__` behave more like an order relation.",
     "created_at": "2008-01-25T16:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -116,6 +115,7 @@ Attachment [sage-maple_interface_fixes.2.patch](tarball://root/attachments/some-
 
 Replying to [comment:1 was]:
 > This patch is very good except I don't like:
+
  {{{
   	581	        # everything is supposed to be comparable in Python, so we define 
   	582	        # the comparison thus when no comparable in interfaced system. 
@@ -126,8 +126,8 @@ I copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, an
 
 > It would be better to compare something deterministic instead of always return -1, since you want that if a < b then it isn't the case that b < a; however your code will return that a < b *and* b < a, when the two aren't comparable.  Better would be to compare a hash of the string reps of the objects (can maple do that?!) or _something_ deterministic and easy.   
 
-You're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with
 
+You're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with
 
 ``` 
 if hash(str(self)) < hash(str(other):
@@ -135,7 +135,6 @@ if hash(str(self)) < hash(str(other):
 else:
     return 1
 ```
-
 
 Hopefully making `__cmp__` behave more like an order relation.
 
@@ -146,7 +145,7 @@ Hopefully making `__cmp__` behave more like an order relation.
 archive/issue_comments_012190.json:
 ```json
 {
-    "body": "> I copied the body of the __cmp__ function from sage/interfaces/expect.py, \n> and this comment came with it.\n\nI've certainly made the mistake of defining cmp to return -1 always, which \nis very stupid.  If __cmp__ currently does that in expect.py, please open\na ticket about it!\n\n> if hash(str(self)) < hash(str(other):\n>     return -1\n> else:\n>    return 1\n\n> Hopefully making __cmp__ behave more like an order relation. \n\nI do not like the above cmp (even though I used to write code\nlike that).  Imagine that self or orther is a 1000x1000 matrix,\nsay, which is completely reasonable.  Then the above would\nliterally take a very long time, since it would have to pull that matrix\nback to Sage, etc.   Much better would be to do a comparison\nthat involves a Maple hash function. \n\nWilliam",
+    "body": "> I copied the body of the __cmp__ function from sage/interfaces/expect.py, \n> and this comment came with it.\n\n\nI've certainly made the mistake of defining cmp to return -1 always, which \nis very stupid.  If __cmp__ currently does that in expect.py, please open\na ticket about it!\n\n> if hash(str(self)) < hash(str(other):\n>     return -1\n> else:\n>    return 1\n\n\n> Hopefully making __cmp__ behave more like an order relation. \n\n\nI do not like the above cmp (even though I used to write code\nlike that).  Imagine that self or orther is a 1000x1000 matrix,\nsay, which is completely reasonable.  Then the above would\nliterally take a very long time, since it would have to pull that matrix\nback to Sage, etc.   Much better would be to do a comparison\nthat involves a Maple hash function. \n\nWilliam",
     "created_at": "2008-01-25T17:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
     "type": "issue_comment",
@@ -158,6 +157,7 @@ archive/issue_comments_012190.json:
 > I copied the body of the __cmp__ function from sage/interfaces/expect.py, 
 > and this comment came with it.
 
+
 I've certainly made the mistake of defining cmp to return -1 always, which 
 is very stupid.  If __cmp__ currently does that in expect.py, please open
 a ticket about it!
@@ -167,7 +167,9 @@ a ticket about it!
 > else:
 >    return 1
 
+
 > Hopefully making __cmp__ behave more like an order relation. 
+
 
 I do not like the above cmp (even though I used to write code
 like that).  Imagine that self or orther is a 1000x1000 matrix,

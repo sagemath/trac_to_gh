@@ -3,7 +3,7 @@
 archive/issues_008095.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\n\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\n\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n\n------\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n---\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
     "created_at": "2010-01-27T13:59:46Z",
     "labels": [
         "component: combinatorics",
@@ -25,14 +25,12 @@ Let us define the following morphism over 3 letters:
 ```
 sage: substitution=WordMorphism('a->b,b->ac,c->a')
 ```
-
 Then we get
 
 ```
 sage: substitution.is_primitive()
 False
 ```
-
 but also
 
 ```
@@ -40,8 +38,7 @@ sage: (substitution^2).is_primitive()
 True
 ```
 
-
-------
+---
 
 expected behaviour:
 
@@ -65,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8095
 archive/issue_comments_070843.json:
 ```json
 {
-    "body": "I just posted a patch which solves the described problem. The solution uses the following algorithm:\n\n\n```\nALGORITHM: \n \n   Let `m` be the incidence matrix of a endomorphism on a monoid  \n   of `d` letters. The endomorphism is primitive if and only if \n   there exists `k` such that `1 \\leq k \\leq (d-1)^2+1` and `m^k`  \n   contains no zero. \n```\n\n\nAre we sure this is true? Is there a proof of that somewhere?",
+    "body": "I just posted a patch which solves the described problem. The solution uses the following algorithm:\n\n```\nALGORITHM: \n \n   Let `m` be the incidence matrix of a endomorphism on a monoid  \n   of `d` letters. The endomorphism is primitive if and only if \n   there exists `k` such that `1 \\leq k \\leq (d-1)^2+1` and `m^k`  \n   contains no zero. \n```\n\nAre we sure this is true? Is there a proof of that somewhere?",
     "created_at": "2010-01-27T15:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
@@ -76,7 +73,6 @@ archive/issue_comments_070843.json:
 
 I just posted a patch which solves the described problem. The solution uses the following algorithm:
 
-
 ```
 ALGORITHM: 
  
@@ -85,7 +81,6 @@ ALGORITHM:
    there exists `k` such that `1 \leq k \leq (d-1)^2+1` and `m^k`  
    contains no zero. 
 ```
-
 
 Are we sure this is true? Is there a proof of that somewhere?
 

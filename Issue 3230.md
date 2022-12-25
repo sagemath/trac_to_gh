@@ -3,7 +3,7 @@
 archive/issues_003230.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCygwin forgot this line in math.h: \n\n```\nextern double logb _PARAMS((double));\n```\n\n\nI put that line in the relevant file (see spkg-install) and now the build works fine. \n\nThe new spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/givaro-3.2.10.rc3.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3230\n\n",
+    "body": "Assignee: mabshoff\n\nCygwin forgot this line in math.h: \n\n```\nextern double logb _PARAMS((double));\n```\n\nI put that line in the relevant file (see spkg-install) and now the build works fine. \n\nThe new spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/givaro-3.2.10.rc3.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3230\n\n",
     "created_at": "2008-05-16T22:29:05Z",
     "labels": [
         "component: porting: cygwin",
@@ -23,7 +23,6 @@ Cygwin forgot this line in math.h:
 ```
 extern double logb _PARAMS((double));
 ```
-
 
 I put that line in the relevant file (see spkg-install) and now the build works fine. 
 

@@ -3,7 +3,7 @@
 archive/issues_008590.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThere is a failure in the test of the file\n\nsage.categories.hopf_algebras_with_basis\n\nThe problem occurs during the test suite of an hopf algebra and returns the error\n\n\n```\n   RuntimeError: `A` still using old coercion framework\n```\n\n\nI am unfortunately not able to solve really this problem, but, if the competent people have no time right now, I can write a small patch predicting the error in the test so that the tests pass\n\nIssue created by migration from https://trac.sagemath.org/ticket/8590\n\n",
+    "body": "Assignee: @aghitza\n\nThere is a failure in the test of the file\n\nsage.categories.hopf_algebras_with_basis\n\nThe problem occurs during the test suite of an hopf algebra and returns the error\n\n```\n   RuntimeError: `A` still using old coercion framework\n```\n\nI am unfortunately not able to solve really this problem, but, if the competent people have no time right now, I can write a small patch predicting the error in the test so that the tests pass\n\nIssue created by migration from https://trac.sagemath.org/ticket/8590\n\n",
     "created_at": "2010-03-23T17:40:36Z",
     "labels": [
         "component: algebra",
@@ -24,11 +24,9 @@ sage.categories.hopf_algebras_with_basis
 
 The problem occurs during the test suite of an hopf algebra and returns the error
 
-
 ```
    RuntimeError: `A` still using old coercion framework
 ```
-
 
 I am unfortunately not able to solve really this problem, but, if the competent people have no time right now, I can write a small patch predicting the error in the test so that the tests pass
 

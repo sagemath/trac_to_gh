@@ -3,7 +3,7 @@
 archive/issues_006116.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: RIF(21/10).diameter()\n2.11471052309554e-16\nsage: RIF(2.1).diameter()\n0.000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6116\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: RIF(21/10).diameter()\n2.11471052309554e-16\nsage: RIF(2.1).diameter()\n0.000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6116\n\n",
     "created_at": "2009-05-21T20:13:01Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,14 +18,12 @@ archive/issues_006116.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: RIF(21/10).diameter()
 2.11471052309554e-16
 sage: RIF(2.1).diameter()
 0.000000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6116
 
@@ -245,7 +243,7 @@ And if you really want the real literal `2.1` to behave like `21/10`, there are 
 archive/issue_comments_048784.json:
 ```json
 {
-    "body": "This is more about floating point rather than real literal\n\n```\nsage: a = 1.0 * RR(2.1)\nsage: type(a)\n<type 'sage.rings.real_mpfr.RealNumber'>\nsage: RIF(a).lower() == RIF(a).upper() == a\nTrue\n```\n\nAnd the last line would be true given **any** floating point (with 53 bits of precision).\n\nThough, it would be nice to explain the difference between `RIF(2.1)` and `RIF(21/10)` in the documentation of `RIF`. Don't you think?\n\nVincent",
+    "body": "This is more about floating point rather than real literal\n\n```\nsage: a = 1.0 * RR(2.1)\nsage: type(a)\n<type 'sage.rings.real_mpfr.RealNumber'>\nsage: RIF(a).lower() == RIF(a).upper() == a\nTrue\n```\nAnd the last line would be true given **any** floating point (with 53 bits of precision).\n\nThough, it would be nice to explain the difference between `RIF(2.1)` and `RIF(21/10)` in the documentation of `RIF`. Don't you think?\n\nVincent",
     "created_at": "2015-09-17T02:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
@@ -263,7 +261,6 @@ sage: type(a)
 sage: RIF(a).lower() == RIF(a).upper() == a
 True
 ```
-
 And the last line would be true given **any** floating point (with 53 bits of precision).
 
 Though, it would be nice to explain the difference between `RIF(2.1)` and `RIF(21/10)` in the documentation of `RIF`. Don't you think?
@@ -313,7 +310,7 @@ Resolution: worksforme
 archive/issue_comments_048787.json:
 ```json
 {
-    "body": "The docs for `RIF` currently state:\n\n\n```\n |      Values which can be represented as an exact floating-point number\n |      (of the precision of this ``RealIntervalField``) result in a precise\n |      interval, where the lower bound is equal to the upper bound (even\n |      if they print differently). Other values typically result in an\n |      interval where the lower and upper bounds are adjacent\n |      floating-point numbers.\n```\n\n\nand goes on to provide several examples, e.g. both with rational and floating point arguments.",
+    "body": "The docs for `RIF` currently state:\n\n```\n |      Values which can be represented as an exact floating-point number\n |      (of the precision of this ``RealIntervalField``) result in a precise\n |      interval, where the lower bound is equal to the upper bound (even\n |      if they print differently). Other values typically result in an\n |      interval where the lower and upper bounds are adjacent\n |      floating-point numbers.\n```\n\nand goes on to provide several examples, e.g. both with rational and floating point arguments.",
     "created_at": "2018-08-14T17:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
@@ -324,7 +321,6 @@ archive/issue_comments_048787.json:
 
 The docs for `RIF` currently state:
 
-
 ```
  |      Values which can be represented as an exact floating-point number
  |      (of the precision of this ``RealIntervalField``) result in a precise
@@ -333,7 +329,6 @@ The docs for `RIF` currently state:
  |      interval where the lower and upper bounds are adjacent
  |      floating-point numbers.
 ```
-
 
 and goes on to provide several examples, e.g. both with rational and floating point arguments.
 

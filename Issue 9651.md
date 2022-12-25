@@ -214,7 +214,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093474.json:
 ```json
 {
-    "body": "Positive review!\n\nThere is a thread about this patch in sage-combinat-devel\nresulting in the latest version.\n\nI tested this with sage-4.6.alpha3. After applying\n\n```\ntrac_9648_modulemorphism_codomain_extension.2.patch \ntrac_9651_CombinatorialFreeModule_Addition-cs.4.patch\n```\n\nall tests pass. I also confirmed that the test is a speedup.",
+    "body": "Positive review!\n\nThere is a thread about this patch in sage-combinat-devel\nresulting in the latest version.\n\nI tested this with sage-4.6.alpha3. After applying\n\n```\ntrac_9648_modulemorphism_codomain_extension.2.patch \ntrac_9651_CombinatorialFreeModule_Addition-cs.4.patch\n```\nall tests pass. I also confirmed that the test is a speedup.",
     "created_at": "2010-10-20T23:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -234,7 +234,6 @@ I tested this with sage-4.6.alpha3. After applying
 trac_9648_modulemorphism_codomain_extension.2.patch 
 trac_9651_CombinatorialFreeModule_Addition-cs.4.patch
 ```
-
 all tests pass. I also confirmed that the test is a speedup.
 
 
@@ -297,7 +296,7 @@ Please remove * * * from the commit message
 archive/issue_comments_093477.json:
 ```json
 {
-    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.5.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.5.patch) by stumpc5 created at 2010-10-23 17:04:22\n\nReplying to [comment:6 jdemeyer]:\n> Please remove * * * from the commit message\n\ndone!",
+    "body": "Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.5.patch](tarball://root/attachments/some-uuid/ticket9651/trac_9651_CombinatorialFreeModule_Addition-cs.5.patch) by stumpc5 created at 2010-10-23 17:04:22\n\nReplying to [comment:6 jdemeyer]:\n> Please remove * * * from the commit message\n\n\ndone!",
     "created_at": "2010-10-23T17:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9651",
     "type": "issue_comment",
@@ -310,6 +309,7 @@ Attachment [trac_9651_CombinatorialFreeModule_Addition-cs.5.patch](tarball://roo
 
 Replying to [comment:6 jdemeyer]:
 > Please remove * * * from the commit message
+
 
 done!
 

@@ -3,7 +3,7 @@
 archive/issues_004583.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI am going to implement exactly one thing for this ticket:\n\nI will add an option\n\n```\n   sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...\n```\n\n\nThis would run every doctest block where at least one line in the block contains \n\n```\n# optional - set of tags that must be subset of those above\n```\n\n\nThe complete block would run, but with any # optional's that don't have tags a subset of the input to sage -t removed. \n\nAlso, there is one special case:\n\n```\nsage -t only-optional\n```\n\nwith no tages.  In this case, every doctest block that contains any # optional's is run.  All others are skipped. \n\nThis design is joint work with Michael Abshoff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4583\n\n",
+    "body": "Assignee: mabshoff\n\nI am going to implement exactly one thing for this ticket:\n\nI will add an option\n\n```\n   sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...\n```\n\nThis would run every doctest block where at least one line in the block contains \n\n```\n# optional - set of tags that must be subset of those above\n```\n\nThe complete block would run, but with any # optional's that don't have tags a subset of the input to sage -t removed. \n\nAlso, there is one special case:\n\n```\nsage -t only-optional\n```\nwith no tages.  In this case, every doctest block that contains any # optional's is run.  All others are skipped. \n\nThis design is joint work with Michael Abshoff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4583\n\n",
     "created_at": "2008-11-22T20:25:48Z",
     "labels": [
         "component: doctest coverage"
@@ -25,13 +25,11 @@ I will add an option
    sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...
 ```
 
-
 This would run every doctest block where at least one line in the block contains 
 
 ```
 # optional - set of tags that must be subset of those above
 ```
-
 
 The complete block would run, but with any # optional's that don't have tags a subset of the input to sage -t removed. 
 
@@ -40,7 +38,6 @@ Also, there is one special case:
 ```
 sage -t only-optional
 ```
-
 with no tages.  In this case, every doctest block that contains any # optional's is run.  All others are skipped. 
 
 This design is joint work with Michael Abshoff.
@@ -134,7 +131,7 @@ this finishes the only_optional no args case
 archive/issue_comments_034306.json:
 ```json
 {
-    "body": "With the first two Sage repo patches applied I am seeing two issues #4590 and\n\n```\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2453:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the first two Sage repo patches applied I am seeing two issues #4590 and\n\n```\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2453:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T02:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ Got:
 
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -194,7 +190,7 @@ Michael
 archive/issue_comments_034308.json:
 ```json
 {
-    "body": "I really like this patch :)\n\nSo far everything I tried works well. The patch seems to expose some small issues like the ones below:\n\n```\nage -t -only-optional=magma devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2452:\n    sage: x = polygen(QQ)\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot nothing\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2455:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n**********************************************************************\n```\n\nI.e. the last test should depend on Magma and database_gap. But all these little bugs can be addressed via follow up patches, so I am giving this patch a positive review.\n\nCheers,\n\nMichael",
+    "body": "I really like this patch :)\n\nSo far everything I tried works well. The patch seems to expose some small issues like the ones below:\n\n```\nage -t -only-optional=magma devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2452:\n    sage: x = polygen(QQ)\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot nothing\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 2455:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n**********************************************************************\n```\nI.e. the last test should depend on Magma and database_gap. But all these little bugs can be addressed via follow up patches, so I am giving this patch a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T03:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
@@ -225,7 +221,6 @@ Got:
     Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1
 **********************************************************************
 ```
-
 I.e. the last test should depend on Magma and database_gap. But all these little bugs can be addressed via follow up patches, so I am giving this patch a positive review.
 
 Cheers,

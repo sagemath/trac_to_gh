@@ -144,7 +144,7 @@ Yes, I'll referee this patch...and comment after I'm done.
 archive/issue_comments_003217.json:
 ```json
 {
-    "body": "I'm slightly concerned about overheads on this one. By far the most common case for binomials is integer arguments. Already PARI beats Magma on the actual hard part of the computation, e.g.\n\n\n```\n> time for i := 1 to 10000 do x := Binomial(500, 250); end for;  \nTime: 1.550\n```\n\n\n```\nsage: time for i in range(10000): x = binomial(500, 250)\nWall time: 0.52\n```\n\n\nBUT the overheads are already an issue for smaller problems:\n\n```\n> time for i := 1 to 100000 do x := Binomial(20, 13); end for; \nTime: 0.070\n```\n\n\n```\nsage: time for i in range(100000): x = binomial(20, 13)\nWall time: 2.82\n```\n\n\nPerhaps this should be a new ticket, \"add fast pathway for binomials of integer arguments\"?",
+    "body": "I'm slightly concerned about overheads on this one. By far the most common case for binomials is integer arguments. Already PARI beats Magma on the actual hard part of the computation, e.g.\n\n```\n> time for i := 1 to 10000 do x := Binomial(500, 250); end for;  \nTime: 1.550\n```\n\n```\nsage: time for i in range(10000): x = binomial(500, 250)\nWall time: 0.52\n```\n\nBUT the overheads are already an issue for smaller problems:\n\n```\n> time for i := 1 to 100000 do x := Binomial(20, 13); end for; \nTime: 0.070\n```\n\n```\nsage: time for i in range(100000): x = binomial(20, 13)\nWall time: 2.82\n```\n\nPerhaps this should be a new ticket, \"add fast pathway for binomials of integer arguments\"?",
     "created_at": "2007-09-10T18:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
@@ -155,18 +155,15 @@ archive/issue_comments_003217.json:
 
 I'm slightly concerned about overheads on this one. By far the most common case for binomials is integer arguments. Already PARI beats Magma on the actual hard part of the computation, e.g.
 
-
 ```
 > time for i := 1 to 10000 do x := Binomial(500, 250); end for;  
 Time: 1.550
 ```
 
-
 ```
 sage: time for i in range(10000): x = binomial(500, 250)
 Wall time: 0.52
 ```
-
 
 BUT the overheads are already an issue for smaller problems:
 
@@ -175,12 +172,10 @@ BUT the overheads are already an issue for smaller problems:
 Time: 0.070
 ```
 
-
 ```
 sage: time for i in range(100000): x = binomial(20, 13)
 Wall time: 2.82
 ```
-
 
 Perhaps this should be a new ticket, "add fast pathway for binomials of integer arguments"?
 
@@ -224,7 +219,7 @@ Joel
 archive/issue_comments_003219.json:
 ```json
 {
-    "body": "Oops, sorry about the bad formatting:\n\nThis is the only code snippet which concerned me in the post-patch sage, but I've explained above why I don't think this matters.\n\n```\nsage: binomial(5/2,3/2)\n5/2\n```\n",
+    "body": "Oops, sorry about the bad formatting:\n\nThis is the only code snippet which concerned me in the post-patch sage, but I've explained above why I don't think this matters.\n\n```\nsage: binomial(5/2,3/2)\n5/2\n```",
     "created_at": "2007-09-10T20:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
@@ -241,7 +236,6 @@ This is the only code snippet which concerned me in the post-patch sage, but I'v
 sage: binomial(5/2,3/2)
 5/2
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000735.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHamptonio\n\nWere any of these ideas ever implemented? I am occaisonally messed up\nby the worksheet quietly restarting without my realizing it. (In that\nregard I believe there is a minor bug: when the notebook restarts, it\ndoes not add the red bars on the left to indicate an un-executed\ncell.)  I used to use the auto_restart option on a long enough setting\nthat I could intermittingly work on it all day without a restart\n(80000 seconds or so).  Will that option be added back in at some\npoint?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/735\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHamptonio\n\nWere any of these ideas ever implemented? I am occaisonally messed up\nby the worksheet quietly restarting without my realizing it. (In that\nregard I believe there is a minor bug: when the notebook restarts, it\ndoes not add the red bars on the left to indicate an un-executed\ncell.)  I used to use the auto_restart option on a long enough setting\nthat I could intermittingly work on it all day without a restart\n(80000 seconds or so).  Will that option be added back in at some\npoint?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/735\n\n",
     "created_at": "2007-09-21T22:35:04Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_000735.json:
 ```
 Assignee: @williamstein
 
-
 ```
 Hamptonio
 
@@ -31,7 +30,6 @@ that I could intermittingly work on it all day without a restart
 (80000 seconds or so).  Will that option be added back in at some
 point?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/735
 

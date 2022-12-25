@@ -3,7 +3,7 @@
 archive/issues_004496.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAll of the following work fine in 3.2.alpha0:\n\n```\nsage: plot(lambda x: x,(x,-1,1))\nsage: plot(lambda x: x,-1,1)\nsage: plot(x,x,-1,1)\nsage: plot(x,-1,1)\n```\n\nBut this doesn't:\n\n```\nsage: plot(lambda x: x,x,-1,1)\nverbose 0 (3400: plot.py, plot) there were 3 extra arguments (besides <function <lambda> at 0x11a22f70>)\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n<snip>\n.../sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   3601     if do_show:\n   3602         G.show()\n-> 3603     return G\n   3604 \n   3605 def _plot(funcs, xrange, parametric=False,\n\nUnboundLocalError: local variable 'G' referenced before assignment\n```\n\nUpon further examination, it seems that the culprit is that SymbolicVariable has a plot method, but lambda functions do not.  This is easy to fix, by changing plot() in plot.py to handle this, for the n==3 args case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4496\n\n",
+    "body": "Assignee: @williamstein\n\nAll of the following work fine in 3.2.alpha0:\n\n```\nsage: plot(lambda x: x,(x,-1,1))\nsage: plot(lambda x: x,-1,1)\nsage: plot(x,x,-1,1)\nsage: plot(x,-1,1)\n```\nBut this doesn't:\n\n```\nsage: plot(lambda x: x,x,-1,1)\nverbose 0 (3400: plot.py, plot) there were 3 extra arguments (besides <function <lambda> at 0x11a22f70>)\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n<snip>\n.../sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   3601     if do_show:\n   3602         G.show()\n-> 3603     return G\n   3604 \n   3605 def _plot(funcs, xrange, parametric=False,\n\nUnboundLocalError: local variable 'G' referenced before assignment\n```\nUpon further examination, it seems that the culprit is that SymbolicVariable has a plot method, but lambda functions do not.  This is easy to fix, by changing plot() in plot.py to handle this, for the n==3 args case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4496\n\n",
     "created_at": "2008-11-11T22:38:43Z",
     "labels": [
         "component: graphics",
@@ -26,7 +26,6 @@ sage: plot(lambda x: x,-1,1)
 sage: plot(x,x,-1,1)
 sage: plot(x,-1,1)
 ```
-
 But this doesn't:
 
 ```
@@ -44,7 +43,6 @@ UnboundLocalError                         Traceback (most recent call last)
 
 UnboundLocalError: local variable 'G' referenced before assignment
 ```
-
 Upon further examination, it seems that the culprit is that SymbolicVariable has a plot method, but lambda functions do not.  This is easy to fix, by changing plot() in plot.py to handle this, for the n==3 args case.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4496
@@ -150,7 +148,7 @@ Based on 3.2
 archive/issue_comments_033191.json:
 ```json
 {
-    "body": "Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by @kcrisman created at 2008-12-02 17:45:26\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\n\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
+    "body": "Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by @kcrisman created at 2008-12-02 17:45:26\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
     "created_at": "2008-12-02T17:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ Thanks for waiting - doctests are here.  A separate ticket will be opened for th
 ```
 sage: p = plot(lambda x: f,x,-1,1)
 ```
-
 won't work, which is because "evaluating" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.
 
 
@@ -211,7 +208,7 @@ sage:
 archive/issue_comments_033193.json:
 ```json
 {
-    "body": "Hi David,\n\nThis:\n\n```\nHunk #1 succeeded at 1474 with fuzz 1 (offset -2100 lines)\n```\n\nis harmless in this case since you applied the patch against a version of Sage that doe not have the plotting refactoring patch applied. I would highly recommend you update to 3.2.1 or 3.2.2.alpha0 once it is out since some rather invasive patches related to coercion will be merged in 3.2.2.a0.\n\nIn general a fuzz of thousands of lines always indicates something bad going on unless you get hit by missing refactoring patches like in this case.\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nThis:\n\n```\nHunk #1 succeeded at 1474 with fuzz 1 (offset -2100 lines)\n```\nis harmless in this case since you applied the patch against a version of Sage that doe not have the plotting refactoring patch applied. I would highly recommend you update to 3.2.1 or 3.2.2.alpha0 once it is out since some rather invasive patches related to coercion will be merged in 3.2.2.a0.\n\nIn general a fuzz of thousands of lines always indicates something bad going on unless you get hit by missing refactoring patches like in this case.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T00:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
@@ -227,7 +224,6 @@ This:
 ```
 Hunk #1 succeeded at 1474 with fuzz 1 (offset -2100 lines)
 ```
-
 is harmless in this case since you applied the patch against a version of Sage that doe not have the plotting refactoring patch applied. I would highly recommend you update to 3.2.1 or 3.2.2.alpha0 once it is out since some rather invasive patches related to coercion will be merged in 3.2.2.a0.
 
 In general a fuzz of thousands of lines always indicates something bad going on unless you get hit by missing refactoring patches like in this case.

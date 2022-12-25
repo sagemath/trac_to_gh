@@ -3,7 +3,7 @@
 archive/issues_003119.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
     "created_at": "2008-05-07T04:23:04Z",
     "labels": [
         "component: number theory"
@@ -37,7 +37,6 @@ sage: E.gens()
 <type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.
 ```
 
-
 See how trivial this will now be to implement:
 
 ```
@@ -46,7 +45,6 @@ sage: phi = F.isomorphism_to(E)
 sage: [phi(z) for z in F.gens()]
 [(10/9 : 29/54 : 1)]
 ```
-
 
 What could be easier?
 
@@ -62,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3119
 archive/issue_comments_021549.json:
 ```json
 {
-    "body": "In fact it is even easier than that!  For about 6 months mwrank has had the ability to deal with non-integral and non-minimal models.  In this case simply commenting out lines 1350 and 1351 in ell_rational_field.py produces this:\n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n[(10/9 : 29/54 : 1)]\n```\n\n\nPatch coming up.",
+    "body": "In fact it is even easier than that!  For about 6 months mwrank has had the ability to deal with non-integral and non-minimal models.  In this case simply commenting out lines 1350 and 1351 in ell_rational_field.py produces this:\n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n[(10/9 : 29/54 : 1)]\n```\n\nPatch coming up.",
     "created_at": "2008-05-26T13:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ sage: E = EllipticCurve([-3/8,-2/3])
 sage: E.gens()
 [(10/9 : 29/54 : 1)]
 ```
-
 
 Patch coming up.
 
@@ -133,7 +130,7 @@ Apply after first patch
 archive/issue_comments_021552.json:
 ```json
 {
-    "body": "Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by @JohnCremona created at 2008-05-26 17:49:03\n\nAnother patch (to be applied after previous) fixing two other things:\n\nFirst:  I finally got rid of the terrible behaviour of the mwrank_EllipticCurve constructor with non-integral input.  It now throws an error.  [Although mwrank can take non-integral elliptic curves in some circumstances, this will require more work.]\n\nSecond:  There was a bug in the gens() function for \n\nBefore:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm=\"mwrank_lib\")\n[(0 : 1 : 0), (0 : 1 : 0)]\n```\n\nwhich is not just wrong but very wrong!\n\nAfter:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm='mwrank_lib')\n[(-400 : 8000 : 1), (0 : -8000 : 1)]\n```\n",
+    "body": "Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by @JohnCremona created at 2008-05-26 17:49:03\n\nAnother patch (to be applied after previous) fixing two other things:\n\nFirst:  I finally got rid of the terrible behaviour of the mwrank_EllipticCurve constructor with non-integral input.  It now throws an error.  [Although mwrank can take non-integral elliptic curves in some circumstances, this will require more work.]\n\nSecond:  There was a bug in the gens() function for \n\nBefore:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm=\"mwrank_lib\")\n[(0 : 1 : 0), (0 : 1 : 0)]\n```\nwhich is not just wrong but very wrong!\n\nAfter:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm='mwrank_lib')\n[(-400 : 8000 : 1), (0 : -8000 : 1)]\n```",
     "created_at": "2008-05-26T17:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ sage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])
 sage: E.gens(algorithm="mwrank_lib")
 [(0 : 1 : 0), (0 : 1 : 0)]
 ```
-
 which is not just wrong but very wrong!
 
 After:
@@ -167,7 +163,6 @@ sage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])
 sage: E.gens(algorithm='mwrank_lib')
 [(-400 : 8000 : 1), (0 : -8000 : 1)]
 ```
-
 
 
 
@@ -274,7 +269,7 @@ this is the *fourth* patch to the sage main repo that has to be applied
 archive/issue_comments_021558.json:
 ```json
 {
-    "body": "Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by @williamstein created at 2008-06-16 00:35:57\n\nREFEREE REPORT:\n\nExcellent.  However there are several doctest failures after applying the patches:\n\n```\nD-69-91-137-77:~ was$ sage -t d/sage/sage/schemes/elliptic_curves/ell_rational_field.pysage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 145:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 147:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1413:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1538:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1540:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 252:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n5 items had failures:\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_35\n   1 of   6 in __main__.example_62\n   1 of   8 in __main__.example_7\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\t [47.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 47.8 seconds\n```\n\n\n}}}",
+    "body": "Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by @williamstein created at 2008-06-16 00:35:57\n\nREFEREE REPORT:\n\nExcellent.  However there are several doctest failures after applying the patches:\n\n```\nD-69-91-137-77:~ was$ sage -t d/sage/sage/schemes/elliptic_curves/ell_rational_field.pysage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 145:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 147:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1413:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1538:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1540:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 252:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n5 items had failures:\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_35\n   1 of   6 in __main__.example_62\n   1 of   8 in __main__.example_7\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\t [47.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 47.8 seconds\n```\n\n}}}",
     "created_at": "2008-06-16T00:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
@@ -353,7 +348,6 @@ The following tests failed:
 Total time for all tests: 47.8 seconds
 ```
 
-
 }}}
 
 
@@ -399,7 +393,7 @@ Yes, I had that fix applied.  Does everything *definitely* work for you with tha
 archive/issue_comments_021561.json:
 ```json
 {
-    "body": "I applied all 4 patches to a fresh install of 3.0.3.rc0, which I believe is the same as 3.0.3.  I did not apply the eclib patch which I assumed had been already applied to 3.0.3 (if Michael reads this could he confirm?).  And there were no problems:\n\n```\njohn@ubuntu%sage -t /home/john/sage-3.0.3.rc0/devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py \nsage -t  devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [112.5 s]\n```\n \nSo this is rather mysterious.\n\nIncidentally some of those tests are taking a bit long.",
+    "body": "I applied all 4 patches to a fresh install of 3.0.3.rc0, which I believe is the same as 3.0.3.  I did not apply the eclib patch which I assumed had been already applied to 3.0.3 (if Michael reads this could he confirm?).  And there were no problems:\n\n```\njohn@ubuntu%sage -t /home/john/sage-3.0.3.rc0/devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py \nsage -t  devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [112.5 s]\n``` \nSo this is rather mysterious.\n\nIncidentally some of those tests are taking a bit long.",
     "created_at": "2008-06-20T20:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
@@ -414,8 +408,7 @@ I applied all 4 patches to a fresh install of 3.0.3.rc0, which I believe is the 
 john@ubuntu%sage -t /home/john/sage-3.0.3.rc0/devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py 
 sage -t  devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py
 	 [112.5 s]
-```
- 
+``` 
 So this is rather mysterious.
 
 Incidentally some of those tests are taking a bit long.
@@ -572,7 +565,7 @@ Apply!
 archive/issue_comments_021569.json:
 ```json
 {
-    "body": "Patch looks good to me, but there is a minimal doctest issue related to numerical noise that I fixed:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha1/tmp/ell_rational_field.py\", line 1475:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.7905275701310\nGot:\n    14.7905275701311\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Patch looks good to me, but there is a minimal doctest issue related to numerical noise that I fixed:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha1/tmp/ell_rational_field.py\", line 1475:\n    sage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nExpected:\n    14.7905275701310\nGot:\n    14.7905275701311\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-11T01:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
@@ -594,7 +587,6 @@ Got:
     14.7905275701311
 **********************************************************************
 ```
-
 
 Cheers,
 

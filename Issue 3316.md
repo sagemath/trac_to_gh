@@ -3,7 +3,7 @@
 archive/issues_003316.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\nI submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx\n\n\n```\nsage: A=Matrix(CDF,[[1,-2],[2,-1]])\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\nAttributeError: 'NoneType' object has no attribute 'is_exact'\n\n```\n \n\n(second issue in ticket #3249)\n\nAfter this fix, the behavior will be:\n\n\n```\n\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20625)()\n\nValueError: cannot compute the transformation matrix due to lack of precision\n\n```\n\n\nthat it is what it is intendend in the code.\n\n(The bug was that base_ring.is_exact() was used, instead of self.base_ring().is_exact().\n\nBesides that, this patch improves the documentation of this method, by adding\n\"Transformation\" to the list of INPUT parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3316\n\n",
+    "body": "Assignee: @williamstein\n\n\nI submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx\n\n```\nsage: A=Matrix(CDF,[[1,-2],[2,-1]])\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\nAttributeError: 'NoneType' object has no attribute 'is_exact'\n\n``` \n\n(second issue in ticket #3249)\n\nAfter this fix, the behavior will be:\n\n```\n\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20625)()\n\nValueError: cannot compute the transformation matrix due to lack of precision\n\n```\n\nthat it is what it is intendend in the code.\n\n(The bug was that base_ring.is_exact() was used, instead of self.base_ring().is_exact().\n\nBesides that, this patch improves the documentation of this method, by adding\n\"Transformation\" to the list of INPUT parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3316\n\n",
     "created_at": "2008-05-27T23:36:32Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ Assignee: @williamstein
 
 I submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx
 
-
 ```
 sage: A=Matrix(CDF,[[1,-2],[2,-1]])
 sage: A.jordan_form(transformation=True)
@@ -35,13 +34,11 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'NoneType' object has no attribute 'is_exact'
 
-```
- 
+``` 
 
 (second issue in ticket #3249)
 
 After this fix, the behavior will be:
-
 
 ```
 
@@ -56,7 +53,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: cannot compute the transformation matrix due to lack of precision
 
 ```
-
 
 that it is what it is intendend in the code.
 
@@ -112,7 +108,7 @@ Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_022921.json:
 ```json
 {
-    "body": "There are some small doctest issues with the patch applied:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix2.pyx            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/tmp/matrix2.py\", line 3640:\n    sage: jf, p = b.jordan_form(RealField(15), transformation=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: cannot compute the transformation matrix due to lack of precision\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_71[12]>\", line 1, in <module>\n        jf, p = b.jordan_form(RealField(Integer(15)), transformation=True)###line 3640:\n    sage: jf, p = b.jordan_form(RealField(15), transformation=True)\n      File \"matrix2.pyx\", line 3714, in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20649)\n    ValueError: cannot compute the basis of the Jordan block of size 1 with eigenvalue -1.348\n**********************************************************************\n1 items had failures:\n   1 of  23 in __main__.example_71\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/tmp/.doctest_matrix2.py\n\t [7.8 s]\nexit code: 1024\n```\n\n\nCheers,\n\nMichael",
+    "body": "There are some small doctest issues with the patch applied:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix2.pyx            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/tmp/matrix2.py\", line 3640:\n    sage: jf, p = b.jordan_form(RealField(15), transformation=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: cannot compute the transformation matrix due to lack of precision\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_71[12]>\", line 1, in <module>\n        jf, p = b.jordan_form(RealField(Integer(15)), transformation=True)###line 3640:\n    sage: jf, p = b.jordan_form(RealField(15), transformation=True)\n      File \"matrix2.pyx\", line 3714, in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20649)\n    ValueError: cannot compute the basis of the Jordan block of size 1 with eigenvalue -1.348\n**********************************************************************\n1 items had failures:\n   1 of  23 in __main__.example_71\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/tmp/.doctest_matrix2.py\n\t [7.8 s]\nexit code: 1024\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-06-11T04:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
@@ -149,7 +145,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.3.a
 	 [7.8 s]
 exit code: 1024
 ```
-
 
 Cheers,
 

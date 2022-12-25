@@ -3,7 +3,7 @@
 archive/issues_006266.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris sqlite\n\nThe sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:\n\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_join@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_equal@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `close@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to \n`pthread_mutexattr_settype@SUNW_1.2'\n./.libs/libsqlite3.so: undefined reference to `read@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `sleep@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'\n```\n\nI've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:\n\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `dlerror@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'\n\n```\n\n\nA search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. \n\nThe developers of sqlite appear to be using a 3-year old version of libtool (1.5.24). \n\nI've downloaded that old version of libtool and found it fails 4 self-tests on t2. The latest version of libtool fails one test, suggesting sqlite would have more chance of working on Solaris if its developers used a later version of libtool. \n\nIf it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6266\n\n",
+    "body": "Assignee: tbd\n\nKeywords: solaris sqlite\n\nThe sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_join@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_equal@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `close@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to \n`pthread_mutexattr_settype@SUNW_1.2'\n./.libs/libsqlite3.so: undefined reference to `read@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `sleep@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'\n```\nI've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `dlerror@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'\n\n```\n\nA search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. \n\nThe developers of sqlite appear to be using a 3-year old version of libtool (1.5.24). \n\nI've downloaded that old version of libtool and found it fails 4 self-tests on t2. The latest version of libtool fails one test, suggesting sqlite would have more chance of working on Solaris if its developers used a later version of libtool. \n\nIf it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6266\n\n",
     "created_at": "2009-06-12T10:14:59Z",
     "labels": [
         "component: porting: solaris",
@@ -22,7 +22,6 @@ Keywords: solaris sqlite
 
 The sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:
 
-
 ```
 
 ./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'
@@ -38,9 +37,7 @@ The sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which ru
 ./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'
 ./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'
 ```
-
 I've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:
-
 
 ```
 
@@ -50,7 +47,6 @@ I've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build f
 ./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'
 
 ```
-
 
 A search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. 
 
@@ -156,7 +152,7 @@ http://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite/
 archive/issue_comments_049948.json:
 ```json
 {
-    "body": "This looks good, but I do have a comment about SPKG.txt: the stars are for an itemized list, so you just need one star for a single list item:\n\n```\n\n * Fixed a bug that prevented sqlite building on the Sun T5240\n t2.math.washington.edu running Solaris 10 update 4 with gcc version 4.4.0.\n \n Linking libpthread before libc caused the problem. Changing the \n order of linking avoided it, but is not easy to do, as the \n order is determined by libtool. \n However, libpthread is not necessary on Solaris 10. \n There is *probably* a libtool bug that is the real cause. \n The bug fix is implemented by striping libpthread out of the \n Makefile with sed. \n \n Thanks are due to Nicolas Williams (Nicolas.Williams@sun.com)\n who made me aware libpthread was not necessary, as its functionality\n was moved to libc in Solaris 10, with libpthread\n only provided for backwards compatibility. \n```\n\nIt also seems necessary to line up all the text below the star to get it all put into one item.",
+    "body": "This looks good, but I do have a comment about SPKG.txt: the stars are for an itemized list, so you just need one star for a single list item:\n\n```\n\n * Fixed a bug that prevented sqlite building on the Sun T5240\n t2.math.washington.edu running Solaris 10 update 4 with gcc version 4.4.0.\n \n Linking libpthread before libc caused the problem. Changing the \n order of linking avoided it, but is not easy to do, as the \n order is determined by libtool. \n However, libpthread is not necessary on Solaris 10. \n There is *probably* a libtool bug that is the real cause. \n The bug fix is implemented by striping libpthread out of the \n Makefile with sed. \n \n Thanks are due to Nicolas Williams (Nicolas.Williams@sun.com)\n who made me aware libpthread was not necessary, as its functionality\n was moved to libc in Solaris 10, with libpthread\n only provided for backwards compatibility. \n```\nIt also seems necessary to line up all the text below the star to get it all put into one item.",
     "created_at": "2009-06-14T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_comment",
@@ -185,7 +181,6 @@ This looks good, but I do have a comment about SPKG.txt: the stars are for an it
  was moved to libc in Solaris 10, with libpthread
  only provided for backwards compatibility. 
 ```
-
 It also seems necessary to line up all the text below the star to get it all put into one item.
 
 
@@ -235,7 +230,7 @@ William
 archive/issue_comments_049951.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Can you please post a link to the spkg?  I.e., you should make an sqlite-3.5.3.p4 spkg that has your updated spkg-install, SPKG.txt, and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory.  \n> \n> Given that both you and ddrake claim to have tested this, both of you must have made a sqlite-3.5.3.p4.spkg.\n\nUpdated spkg is at http://sage.math.washington.edu/home/drake/sqlite-3.5.3.p4.spkg .",
+    "body": "Replying to [comment:6 was]:\n> Can you please post a link to the spkg?  I.e., you should make an sqlite-3.5.3.p4 spkg that has your updated spkg-install, SPKG.txt, and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory.  \n> \n> Given that both you and ddrake claim to have tested this, both of you must have made a sqlite-3.5.3.p4.spkg.\n\n\nUpdated spkg is at http://sage.math.washington.edu/home/drake/sqlite-3.5.3.p4.spkg .",
     "created_at": "2009-06-14T23:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_comment",
@@ -248,6 +243,7 @@ Replying to [comment:6 was]:
 > Can you please post a link to the spkg?  I.e., you should make an sqlite-3.5.3.p4 spkg that has your updated spkg-install, SPKG.txt, and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory.  
 > 
 > Given that both you and ddrake claim to have tested this, both of you must have made a sqlite-3.5.3.p4.spkg.
+
 
 Updated spkg is at http://sage.math.washington.edu/home/drake/sqlite-3.5.3.p4.spkg .
 
@@ -278,7 +274,7 @@ Dave
 archive/issue_comments_049953.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> Thank you everyone for testing this. Sorry it was not in the exact format needed. Can someone explain what \"and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory.\" I'm not sure of the process there, so it would be good to know. Has someone actually done this stage now, or do I still need to do that bit? \n\n\"has them ci'd into the .hg repo\" means \"has them committed into the Mercurial repository\". I'm not sure how much you know about revision control software, but the idea is to record (\"commit\") the changes you've made. In the spkg I linked to above, I did that.\n\nWhen you're working on spkgs (patches, spkg-install, etc), the algorithm is more or less:\n\n* make your changes\n* increment the \"p number\" (here, 3.5.3.p3 -> 3.5.3.p4)\n* document them in SPKG.txt\n* do \"hg commit\" to commit the changes\n* tar up the directory with something like `tar jcf foo-1.2.3.p4.spkg foo-1.2.3.p4/`\n* post a link in a trac ticket for review\n\n(Anyone who knows more should correct me if there's a mistake there.)\n\nIf you'd like to learn more about Mercurial and source control, I recommend http://hgbook.red-bean.com/read/.",
+    "body": "Replying to [comment:8 drkirkby]:\n> Thank you everyone for testing this. Sorry it was not in the exact format needed. Can someone explain what \"and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory.\" I'm not sure of the process there, so it would be good to know. Has someone actually done this stage now, or do I still need to do that bit? \n\n\n\"has them ci'd into the .hg repo\" means \"has them committed into the Mercurial repository\". I'm not sure how much you know about revision control software, but the idea is to record (\"commit\") the changes you've made. In the spkg I linked to above, I did that.\n\nWhen you're working on spkgs (patches, spkg-install, etc), the algorithm is more or less:\n\n* make your changes\n* increment the \"p number\" (here, 3.5.3.p3 -> 3.5.3.p4)\n* document them in SPKG.txt\n* do \"hg commit\" to commit the changes\n* tar up the directory with something like `tar jcf foo-1.2.3.p4.spkg foo-1.2.3.p4/`\n* post a link in a trac ticket for review\n\n(Anyone who knows more should correct me if there's a mistake there.)\n\nIf you'd like to learn more about Mercurial and source control, I recommend http://hgbook.red-bean.com/read/.",
     "created_at": "2009-06-15T09:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_comment",
@@ -289,6 +285,7 @@ archive/issue_comments_049953.json:
 
 Replying to [comment:8 drkirkby]:
 > Thank you everyone for testing this. Sorry it was not in the exact format needed. Can someone explain what "and has them ci'd into the .hg repo that is in the sqlite-3.5.3.p3 directory." I'm not sure of the process there, so it would be good to know. Has someone actually done this stage now, or do I still need to do that bit? 
+
 
 "has them ci'd into the .hg repo" means "has them committed into the Mercurial repository". I'm not sure how much you know about revision control software, but the idea is to record ("commit") the changes you've made. In the spkg I linked to above, I did that.
 
@@ -451,7 +448,7 @@ Resolution: fixed
 archive/issue_comments_049960.json:
 ```json
 {
-    "body": "Replying to [comment:10 drkirkby]:\n> I've used CVS before, so am somewhat familiar with version control systems. There needs to be a server though, which tracks the changes. What's the username/password/location for the server? \n> \n> So would you in this case have typed\n> \n> $ cd /home/drake/\n> $ hg commit sqlite-3.5.3.p4.spkg\n> \n> The other thing is, where is hg? I don't see it in my path anywhere. I could obviously build it from source. \n\nMercurial is a \"distributed version control system\", which doesn't require a central server. I'll build it on t2 and see if one of the admins can install it system-wide.",
+    "body": "Replying to [comment:10 drkirkby]:\n> I've used CVS before, so am somewhat familiar with version control systems. There needs to be a server though, which tracks the changes. What's the username/password/location for the server? \n> \n> So would you in this case have typed\n> \n> $ cd /home/drake/\n> $ hg commit sqlite-3.5.3.p4.spkg\n> \n> The other thing is, where is hg? I don't see it in my path anywhere. I could obviously build it from source. \n\n\nMercurial is a \"distributed version control system\", which doesn't require a central server. I'll build it on t2 and see if one of the admins can install it system-wide.",
     "created_at": "2009-06-16T00:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_comment",
@@ -469,6 +466,7 @@ Replying to [comment:10 drkirkby]:
 > $ hg commit sqlite-3.5.3.p4.spkg
 > 
 > The other thing is, where is hg? I don't see it in my path anywhere. I could obviously build it from source. 
+
 
 Mercurial is a "distributed version control system", which doesn't require a central server. I'll build it on t2 and see if one of the admins can install it system-wide.
 
@@ -503,7 +501,7 @@ Dave
 archive/issue_comments_049962.json:
 ```json
 {
-    "body": "Replying to [comment:16 drkirkby]:\n> Thanks. \n> \n> If its not installed on t2, how have you been doing updating before? \n\nI just used a different machine; everyone has the same home directory on sage.math as on t2.\n\nAnd some admin person installed Mercurial, so it's now in /usr/local/bin...although it doesn't work unless you do \"`export  PYTHONPATH=/usr/local/lib/python2.4/site-packages/`\". Or some enterprising admin could edit /usr/local/bin/hg to have this before the first \"try:\" line:\n\n```\nimport sys\nsys.path.append('/usr/local/lib/python2.4/site-packages')\n```\n\nand then delete the \"import sys\" below.",
+    "body": "Replying to [comment:16 drkirkby]:\n> Thanks. \n> \n> If its not installed on t2, how have you been doing updating before? \n\n\nI just used a different machine; everyone has the same home directory on sage.math as on t2.\n\nAnd some admin person installed Mercurial, so it's now in /usr/local/bin...although it doesn't work unless you do \"`export  PYTHONPATH=/usr/local/lib/python2.4/site-packages/`\". Or some enterprising admin could edit /usr/local/bin/hg to have this before the first \"try:\" line:\n\n```\nimport sys\nsys.path.append('/usr/local/lib/python2.4/site-packages')\n```\nand then delete the \"import sys\" below.",
     "created_at": "2009-06-16T13:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6266",
     "type": "issue_comment",
@@ -517,6 +515,7 @@ Replying to [comment:16 drkirkby]:
 > 
 > If its not installed on t2, how have you been doing updating before? 
 
+
 I just used a different machine; everyone has the same home directory on sage.math as on t2.
 
 And some admin person installed Mercurial, so it's now in /usr/local/bin...although it doesn't work unless you do "`export  PYTHONPATH=/usr/local/lib/python2.4/site-packages/`". Or some enterprising admin could edit /usr/local/bin/hg to have this before the first "try:" line:
@@ -525,5 +524,4 @@ And some admin person installed Mercurial, so it's now in /usr/local/bin...altho
 import sys
 sys.path.append('/usr/local/lib/python2.4/site-packages')
 ```
-
 and then delete the "import sys" below.

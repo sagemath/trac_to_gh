@@ -3,7 +3,7 @@
 archive/issues_004610.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere are various doctests in Sage that take a while, chief among those is\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n\t [630.4 s]\n```\n\nWhen running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:\n\n```\nTotal time for all tests: 1287.6 seconds\n```\n\nMoving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4610\n\n",
+    "body": "Assignee: mabshoff\n\nThere are various doctests in Sage that take a while, chief among those is\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n\t [630.4 s]\n```\nWhen running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:\n\n```\nTotal time for all tests: 1287.6 seconds\n```\nMoving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4610\n\n",
     "created_at": "2008-11-25T01:06:11Z",
     "labels": [
         "component: doctest coverage",
@@ -25,13 +25,11 @@ There are various doctests in Sage that take a while, chief among those is
 sage -t -long devel/sage/sage/crypto/mq/sr.py
 	 [630.4 s]
 ```
-
 When running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:
 
 ```
 Total time for all tests: 1287.6 seconds
 ```
-
 Moving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.
 
 Cheers,
@@ -67,7 +65,7 @@ Changing status from new to assigned.
 archive/issue_comments_034532.json:
 ```json
 {
-    "body": "The following doctest take more than 100 seconds on sage.math with the current 3.2.1.a2:\n\n```\ndevel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\ndevel/sage/sage/rings/qqbar.py\ndevel/sage/sage/schemes/elliptic_curves/sha_tate.py\ndevel/sage/sage/functions/piecewise.py\ndevel/sage/sage/graphs/graph_generators.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_binary.pyx\ndevel/sage/sage/groups/matrix_gps/matrix_group.py\ndevel/sage/sage/graphs/graph.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/calculus/calculus.py\ndevel/sage/sage/crypto/mq/sr.py\n```\n\n\nCheers,\n\nMichael",
+    "body": "The following doctest take more than 100 seconds on sage.math with the current 3.2.1.a2:\n\n```\ndevel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\ndevel/sage/sage/rings/qqbar.py\ndevel/sage/sage/schemes/elliptic_curves/sha_tate.py\ndevel/sage/sage/functions/piecewise.py\ndevel/sage/sage/graphs/graph_generators.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_binary.pyx\ndevel/sage/sage/groups/matrix_gps/matrix_group.py\ndevel/sage/sage/graphs/graph.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/calculus/calculus.py\ndevel/sage/sage/crypto/mq/sr.py\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T02:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
@@ -94,7 +92,6 @@ devel/sage/sage/combinat/root_system/weyl_characters.py
 devel/sage/sage/calculus/calculus.py
 devel/sage/sage/crypto/mq/sr.py
 ```
-
 
 Cheers,
 
